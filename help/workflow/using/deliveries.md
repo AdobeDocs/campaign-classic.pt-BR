@@ -1,0 +1,88 @@
+---
+title: Entregas
+seo-title: Entregas
+description: Entregas
+seo-description: null
+page-status-flag: never-activated
+uuid: d323eb4d-937b-4b37-8400-942336f0a1b4
+contentOwner: sauviat
+products: SG_CAMPAIGN/CLASSIC
+audience: workflow
+content-type: reference
+topic-tags: technical-workflows
+discoiquuid: 37612f62-68c0-4f73-a9a1-6d017aab862f
+index: y
+internal: n
+snippet: y
+translation-type: tm+mt
+source-git-commit: cfb1b02a6261c001392b5cc6430f00206e802bb8
+
+---
+
+
+# Entregas{#deliveries}
+
+Os workflows detalhados abaixo são instalados por padrão.
+
+<table> 
+ <tbody> 
+  <tr> 
+   <td> <strong>Rótulo</strong><br /> </td> 
+   <td> <strong>Nome 
+								interno</strong><br /> </td> 
+   <td> <strong>Descrição</strong><br /> </td> 
+  </tr> 
+  <tr> 
+   <td> <span class="uicontrol">Agregados</span> de relatório <br /> </td> 
+   <td> <span class="uicontrol">reportingAggregates</span><br /> </td> 
+   <td> Este workflow atualiza agregados usados em relatórios. É acionado todos os dias às 2:00 AM por padrão.<br /> </td> 
+  </tr> 
+  <tr> 
+   <td> <span class="uicontrol">Cobrança</span><br /> </td> 
+   <td> <span class="uicontrol">faturamento</span><br /> </td> 
+   <td> Esse workflow envia o relatório de atividades do sistema para o operador 'faturamento' por email. É disparado todo dia 25 de cada mês por padrão.<br /> </td> 
+  </tr> 
+  <tr> 
+   <td> <span class="uicontrol">Número de perfis</span> de cobrança ativos <br /> </td> 
+   <td> <span class="uicontrol">billingActiveContactCount</span><br /> </td> 
+   <td> <p>Esse workflow conta o número de perfis ativos. É acionado todas as noites às 1:00 AM por padrão.</p> <p>“<strong>Perfil</strong>” significa um registro de informações (por exemplo: um registro na tabela nmsRecipient ou uma tabela externa contendo uma ID de cookie, ID do cliente, identificador móvel ou outras informações relevantes para um canal específico) representando um cliente final, um prospecto ou um cliente potencial. Faturamento só afeta Perfis que estão "ativos". Um Perfil é considerado "ativo" quando ele for alvo ou recebe comunicação nos últimos 12 meses por meio de qualquer canal.</p> <p>Os canais Facebook e Twitter não são considerados.</p> <p>You can have an overview of the <span class="uicontrol">Number of active profiles</span> from the <span class="uicontrol">Administration</span> &gt; <span class="uicontrol">Campaign Management</span> &gt; <span class="uicontrol">Customer metrics</span> menu.</p> </td> 
+  </tr> 
+  <tr> 
+   <td> <span class="uicontrol">Limpeza</span> de Alias <br /> </td> 
+   <td> <span class="uicontrol">aliasCleansing</span><br /> </td> 
+   <td> Esse workflow padroniza os valores de enumeração. É acionado todos os dias às 3:00 AM por padrão.<br /> </td> 
+  </tr> 
+  <tr> 
+   <td> <span class="uicontrol">Atualização para o material de entrega</span><br /> </td> 
+   <td> <span class="uicontrol">deliveryUpdate</span><br /> </td> 
+   <td> Esse workflow permite criar a lista de regras de qualificação de email de devolução, bem como a lista de domínios e MXs na plataforma. Este workflow funciona somente se a porta HTTPS estiver aberta. Essas listas não são atualizadas a menos que o módulo Deliverability esteja instalado.<br /> </td> 
+  </tr> 
+  <tr> 
+   <td> <span class="uicontrol">Limpeza</span> do banco de dados <br /> </td> 
+   <td> <span class="uicontrol">limpeza</span><br /> </td> 
+   <td> <p>Este workflow é o workflow de manutenção do banco de dados: faz diferentes cálculos das estatísticas e dos processos e exclui dados obsoletos do banco de dados de acordo com a configuração definida no assistente de implantação. É acionado todos os dias às 4:00 AM por padrão.</p> <p>Para obter mais informações, consulte esta <a href="../../production/using/database-cleanup-workflow.md">página</a>.</p> </td> 
+  </tr> 
+  <tr> 
+   <td> <span class="uicontrol">Limpeza</span> de fluxos de trabalho pausados <br /> </td> 
+   <td> <span class="uicontrol">cleanupPausedWorkflows</span><br /> </td> 
+   <td> <p>Esse workflow analisa workflows pausados que têm a severidade definida como normal e emite avisos e notificações quando ficam pausados por muito tempo. Após um mês, os workflows técnicos pausados são interrompidos definitivamente. Por padrão, é acionado toda segunda-feira às 5:00 AM.</p> <p>Para obter mais informações, consulte <a href="../../workflow/using/monitoring-workflow-execution.md#handling-of-paused-workflows" target="_blank">Manuseio de fluxos de trabalho</a>pausados.</p></td> 
+  </tr> 
+  <tr> 
+   <td> <span class="uicontrol">Notificação</span> da oferta <br /> </td> 
+   <td> <span class="uicontrol">offerMgt</span><br /> </td> 
+   <td> Esse workflow implanta ofertas aprovadas no ambiente online, bem como todas as categorias contidas no catálogo de oferta.<br /> </td> 
+  </tr> 
+  <tr> 
+   <td> <span class="uicontrol">Visualizar</span><br /> </td> 
+   <td> <span class="uicontrol">previsão</span><br /> </td> 
+   <td> Este workflow analisa os deliveries salvos no calendário provisional
+								(cria logs provisionais). É acionado todos os dias às 1:00 AM por padrão.<br /> </td> 
+  </tr> 
+  <tr> 
+   <td> <span class="uicontrol">Acompanhamento</span><br /> </td> 
+   <td> <span class="uicontrol">rastreamento</span><br /> </td> 
+   <td> Esse workflow realiza a recuperação e a consolidação de informações de rastreamento. Também garante o recálculo de rastreamento e estatísticas de delivery, principalmente aqueles usados pelos workflows de arquivamento do Centro de Mensagens. Por padrão, é acionado uma vez por hora. <br /> </td> 
+  </tr> 
+ </tbody> 
+</table>
+
