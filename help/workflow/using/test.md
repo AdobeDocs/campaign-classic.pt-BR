@@ -1,0 +1,37 @@
+---
+title: Teste
+seo-title: Teste
+description: Teste
+seo-description: null
+page-status-flag: never-activated
+uuid: 3522f4ac-3a72-4ff1-b3aa-1b4c283ef2bd
+contentOwner: sauviat
+products: SG_CAMPAIGN/CLASSIC
+audience: workflow
+content-type: reference
+topic-tags: flow-control-activities
+discoiquuid: 78c70ef4-807d-45d4-ac87-2b741c0ef5cb
+index: y
+internal: n
+snippet: y
+translation-type: tm+mt
+source-git-commit: c10a0a11c6e9952aa47da1f7a15188c79c62508d
+
+---
+
+
+# Teste{#test}
+
+Uma atividade de tipo **Test** ativa a primeira transição que satisfaz a condição associada a ela. If no condition is satisfied and if the **[!UICONTROL Use the default fork]** option is activated, the default transition will be activated.
+
+Uma condição é uma expressão JavaScript que deve ser avaliada como &quot;verdadeira&quot; ou &quot;falsa&quot;. To enter the expression, click the icon to the right of the name of the condition, and then select **[!UICONTROL Edit...]**.
+
+![](assets/edit_test.png)
+
+Para obter mais informações sobre todas as funções adicionais do JavaScript e métodos SOAP do servidor do aplicativo acessível via JavaScript de workflow, consulte a [documentação JSAPI](http://docs.campaign.adobe.com/doc/AC/en/jsapi/p-1.html).
+
+Também é possível inserir variáveis diretamente no editor.
+
+As condições podem ser adicionadas, excluídas ou ordenadas a partir da janela de edição da propriedade de atividade, mas também podem ser modificadas a partir da transição.
+
+Se o resultado de um cálculo for reutilizado por condições diferentes, é possível calculá-lo no script de inicialização da atividade. O resultado deve ser armazenado em uma variável da tarefa a ser acessada pelos scripts de condição (task.vars.xxx).
