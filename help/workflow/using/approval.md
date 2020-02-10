@@ -1,0 +1,84 @@
+---
+title: Aprovação
+seo-title: Aprovação
+description: Aprovação
+seo-description: null
+page-status-flag: never-activated
+uuid: 49285790-5aa7-4e15-a657-42e4f78be518
+contentOwner: sauviat
+products: SG_CAMPAIGN/CLASSIC
+audience: workflow
+content-type: reference
+topic-tags: flow-control-activities
+discoiquuid: a0090c78-5873-446d-8d5f-b0f94ff5d373
+index: y
+internal: n
+snippet: y
+translation-type: tm+mt
+source-git-commit: 20f835c357d016643ea1f3209ee4dfb6d3239f90
+
+---
+
+
+# Aprovação{#approval}
+
+Uma tarefa **Aprovação** necessita da participação de um operador. O operador é atribuído a uma tarefa e pode responder por e-mail, usando a página da Web vinculada na mensagem de e-mail ou através do console.
+
+## Atribuição de tarefa {#task-assignment}
+
+Uma tarefa é atribuída a um grupo de operadores. Este grupo representa uma função, por exemplo, &quot;Grupo de conteúdo informativo&quot; ou &quot;Grupo de direcionamento do boletim informativo&quot;. Cada operador no grupo pode responder, mas somente a primeira resposta é levada em conta (exceto no caso de várias aprovações).
+
+Se necessário, é possível atribuir a tarefa de aprovação a um único operador ou um conjunto de operadores definido por um filtro.
+
+* To select a single operator, select the **[!UICONTROL Operator]** value in the **[!UICONTROL Assignment type]** field and select the relevant operator in the drop-down list of the **[!UICONTROL Assignee]** field.
+
+   ![](assets/s_advuser_validation_box_assign.png)
+
+   >[!CAUTION]
+   >
+   >Somente o operador escolhido será autorizado a aprovar a tarefa.
+
+* É possível definir uma query para filtrar operadores de aprovação. To do this, select the **[!UICONTROL Filter]** value in the **[!UICONTROL Assignment type]** field and click the **[!UICONTROL Advanced parameters...]** link to define filtering conditions, as shown in the following example:
+
+   ![](assets/s_advuser_validation_box_filter.png)
+
+No caso de aprovação única, a transição correspondente à escolha do operador é ativada e a tarefa é concluída: os outros operadores não podem mais responder.
+
+No caso de várias aprovações, as transições correspondentes à escolha de cada operador são habilitadas. A tarefa é concluída quando todos os operadores do grupo responderam ou quando a tarefa expirou.
+
+Essa atividade não bloqueia o processamento e o workflow pode executar outras tarefas enquanto aguarda uma resposta.
+
+Um operador pode aprovar as tarefas atribuídas a esse operador a partir do console. Um operador com direitos de administrador pode exibir e excluir as tarefas atribuídas a qualquer operador, mas não pode responder a elas.
+
+A modificação do título ou do corpo da mensagem da atividade não afeta as tarefas atuais, mas, por outro lado, modificando as escolhas possíveis afeta diretamente as tarefas atuais, que herdam automaticamente a nova lista de opções.
+
+**As tarefas de tipo de aprovação** podem ser acessadas a partir do **[!UICONTROL Administration > Production > Objects created automatically > Approvals pending]** nó: os operadores podem acessar o formulário de aprovação diretamente por meio dessa exibição.
+
+![](assets/s_advuser_validation_from_console.png)
+
+## Propriedades {#properties}
+
+As variáveis de personalização podem ser usadas na mensagem enviada aos revisores. Elas podem ser inseridas no título da mensagem ou no corpo.
+
+![](assets/edit_validation.png)
+
+Este **[!UICONTROL Title]** campo contém o título da mensagem: Este é o assunto da mensagem de email enviada. O título, bem como o corpo da mensagem, são templates JavaScript e, portanto, podem conter valores calculados de acordo com o contexto do workflow.
+
+A seção inferior do editor permite definir a lista de respostas possíveis. Há uma transição correspondente a cada resposta. O nome é o identificador interno e o rótulo é o texto que será exibido na lista de opções.
+
+Click the **[!UICONTROL Advanced parameters...]** link to select the delivery template to be used to notify operators. O template padrão (nome interno &quot;notifyAssignee&quot;) pega o título e a mensagem e adiciona um link à página da Web usada para responder.
+
+Esse template pode ser modificado para personalizar o layout de mensagens, mas é preferível fazer uma cópia. O mecanismo do target (arquivo externo, mapeamento do target) não deve ser modificado porque é necessário para que as notificações funcionem corretamente.
+
+An approval example is shown in [Defining approvals](../../workflow/using/executing-a-workflow.md#defining-approvals).
+
+## Parâmetros de output {#output-parameters}
+
+* **[!UICONTROL response]**
+
+   Comentário relacionado à resposta
+
+* **[!UICONTROL responseOperator]**
+
+   Identificador do operador que respondeu. This field is a numerical value, but a **[!UICONTROL String]** field.
+
