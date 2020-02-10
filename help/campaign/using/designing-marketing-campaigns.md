@@ -1,0 +1,68 @@
+---
+title: Criar campanhas de marketing
+seo-title: Criar campanhas de marketing
+description: Criar campanhas de marketing
+seo-description: null
+page-status-flag: never-activated
+uuid: e0fd5df6-7516-4ca6-bbdf-243a264d0283
+contentOwner: sauviat
+products: SG_CAMPAIGN/CLASSIC
+audience: campaign
+content-type: reference
+topic-tags: about-marketing-campaigns
+discoiquuid: a9eb6627-2e51-42d0-9b29-5b798bdf5b33
+index: y
+internal: n
+snippet: y
+translation-type: tm+mt
+source-git-commit: b47dcfa0e4ee2e5e43e7aa14b94e12fd70ff9c2d
+
+---
+
+
+# Criar campanhas de marketing{#designing-marketing-campaigns}
+
+O Adobe Campaign permite que você defina, otimize, execute e analise campanhas de comunicação e marketing. O Adobe Campaign atua como uma central de execução e pedido unificada para estratégias de marketing. Para obter mais informações, consulte [Accessing campaigns](../../campaign/using/accessing-campaigns.md) and [Setting up marketing campaigns](../../campaign/using/setting-up-marketing-campaigns.md).
+
+In addition, the **Marketing Resource Management (MRM)** module lets you control marketing actions in a collaborative mode by providing complete management and real-time tracking of the tasks, budgets and marketing resources involved. O Gerenciamento de recursos de marketing permite otimizar e regular o gerenciamento de processos internos e externos, recursos e campanhas de marketing, bem como relações de terceiros (agências, impressoras etc.). Para obter mais informações, consulte [esta seção](../../campaign/using/about-marketing-resource-management.md).
+
+>[!NOTE]
+>
+>Para saber mais sobre as funcionalidades principais do Adobe Campaign, consulte a seção [Introdução](../../platform/using/about-adobe-campaign-classic.md) .\
+>Os recursos relacionados à definição de metas de população, personalização de mensagens e delivery de mensagens nos diversos canais são detalhados [nesta seção](../../delivery/using/communication-channels.md).
+
+## Conceitos principais {#core-concepts}
+
+Os seguintes conceitos precisam ser conhecidos no contexto do Campaign:
+
+* **Campanha**
+
+   Uma campanha centraliza todos os elementos relacionados a uma campanha de marketing: remessas, regras de definição de metas, custos, arquivos de exportação, documentos relacionados etc. Cada campanha é anexada a um programa.
+
+   For more on this, refer to [Adding a campaign](../../campaign/using/setting-up-marketing-campaigns.md#adding-a-campaign).
+
+* **Programa**
+
+   Um programa permite definir ações de marketing para um período de calendário: iniciar, prospecção, fidelização etc. Cada programa contém campanhas vinculadas a um calendário, que fornece uma visualização geral.
+
+* **Plano**
+
+   O plano de marketing pode conter vários programas. Ele está vinculado a um período de calendário, tem um orçamento alocado e também pode ser vinculado a documentos e objetivos.
+
+   For more on this, refer to [Campaign calendar](../../campaign/using/accessing-marketing-campaigns.md#campaign-calendar).
+
+* **Workflow**
+
+   Um workflow de campanha contém as mesmas atividades que para todos os workflows, mas é específico da campanha. Ele permite que você crie e configure fornecimentos para todos os canais disponíveis.
+
+   Para obter mais informações, consulte [esta seção](../../campaign/using/marketing-campaign-deliveries.md#building-the-main-target-in-a-workflow).
+
+* **Objetivos**
+
+   Dentro da campanha, programa ou plano, você pode declarar uma lista de objetivos. Esses valores são quantificados para serem alcançados. No final da campanha, do programa ou do plano, o módulo MRM permite que você compare os objetivos e os resultados em relatórios dedicados.
+
+* **Delivery outline**
+
+   Um delivery outline é uma descrição estruturada de um delivery. Cada delivery pode se referir a um delivery outline que contenha, por exemplo, as ofertas relacionadas, documentos a serem anexados ou um link para lojas. Uma oferta pode ser referida no delivery de acordo com o delivery outline selecionado.
+
+   Para obter mais informações, consulte [Associando e estruturando recursos vinculados por um outline](../../campaign/using/marketing-campaign-deliveries.md#associating-and-structuring-resources-linked-via-a-delivery-outline)de entrega.
