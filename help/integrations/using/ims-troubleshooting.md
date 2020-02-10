@@ -1,0 +1,90 @@
+---
+title: Solução de problemas com o IMS
+seo-title: Solução de problemas com o IMS
+description: Solução de problemas com o IMS
+seo-description: null
+page-status-flag: never-activated
+uuid: 5db95afc-8cbf-4ec3-b58f-504486fe4a40
+contentOwner: sauviat
+products: SG_CAMPAIGN/CLASSIC
+audience: integrations
+content-type: reference
+topic-tags: connecting-via-an-adobe-id
+discoiquuid: e31db11a-ad8e-4fd0-bab7-0df1079231c9
+index: y
+internal: n
+snippet: y
+translation-type: tm+mt
+source-git-commit: 0745b9c9d72538b8573ad18ff4054ecf788905f2
+
+---
+
+
+# Solução de problemas com o IMS{#ims-troubleshooting}
+
+As seguintes dicas de solução de problemas ajudarão os clientes **no local** a resolverem os problemas mais comuns que ocorrem ao usar a integração IMS. Para clientes **hospedados**, entre em contato com a Adobe.
+
+**Conta externa**
+
+Só deve existir **uma** conta externa com as seguintes configurações:
+
+* **Nome** interno: Adobe_Marketing_Cloud
+* **Tipo**: Adobe Marketing Cloud
+
+Exclua qualquer conta externa duplicada que tenha as mesmas configurações.
+
+**Contexto do produto**
+
+If the external account has a **Product Context** field, check that its value is set to: **dma_campaign_classic**
+
+Verifique se o contexto do produto é o mesmo para o Campaign e Experience Cloud.
+
+Por exemplo, se o **Contexto do Produto** não aparecer, o contexto padrão do produto deve ser **dma_campaign** tanto no Campaign quanto na Experience Cloud. Se o campo **Contexto do Produto** aparecer, o contexto padrão do produto deverá ser **dma_campaign_classic** tanto no Campaign quanto na Experience Cloud.
+
+**[!UICONTROL IMS Server URL]**
+
+In the Campaign **Adobe Marketing Cloud** external account, check that the **[!UICONTROL IMS Server URL]** is either [adobeid-na1.services.adobe.com](https://adobeid-na1.services.adobe.com/) or [ims-na1.adobelogin.com](http://ims-na1.adobelogin.com/). Verifique se as instâncias de estágio e de produção apontam para o mesmo ponto final de produção IMS.
+
+**Máscara de Associação**
+
+* Verifique se o usuário que está tentando fazer logon faz parte de um grupo de operadores no Painel Enterprise.
+* Check that the **[!UICONTROL Association Mask]** is a prefix of the user&#39;s operator group name in the Enterprise Dashboard.
+* Verifique se não há espaços em branco e erros de ortografia.
+* Verifique se os nomes dos grupos de operadores no Campaign não foram alterados e respeitam a seguinte sintaxe:
+
+```
+<Association Mask> + <Operator Group Name in Campaign> = Complete name of the operator group in Enterprise Dashboard
+```
+
+**Escopo**
+
+Os escopos definidos na conta externa do Campaign devem ser um subconjunto daqueles provisionados pelo IMS.
+
+**URL de retorno**
+
+A **URL de retorno** deve ser incluída na lista de permissões e começar com &quot;https://&quot;. Verifique se a **URL de Retorno** está vinculada à instância correspondente. Por exemplo, a instância de produção deve redirecionar para a URL de produção.
+
+**ID do cliente e segredo**
+
+A ID do cliente corresponde à conta externa do Campaign e a provisionada pela IMS.
+
+Verifique se o segredo do cliente inserido está correto.
+
+**Reinício do servidor**
+
+Reinicie o servidor se alguma alteração for feita nas configurações acima na conta externa do Campaign
+
+**Tipos de erros comuns e possíveis soluções**
+
+* O usuário é redirecionado para a página adobe.com:
+
+   There is a problem with the **[!UICONTROL Callback URL]**. Refer to the previous steps to check the **[!UICONTROL Callback URL]** configuration.
+
+* Mensagem &quot;O login não tem nenhum direito com a expressão correspondente&quot;:
+
+   Refer to the previous steps to check the **[!UICONTROL Association Mask]** and operator groups configuration.
+
+* O usuário não pode acessar a página de login da Adobe id:
+
+   Consulte as etapas anteriores para verificar a configuração do escopo.
+
