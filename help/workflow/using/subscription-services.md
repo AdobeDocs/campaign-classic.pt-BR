@@ -1,0 +1,78 @@
+---
+title: Serviços de assinatura
+seo-title: Serviços de assinatura
+description: Serviços de assinatura
+seo-description: null
+page-status-flag: never-activated
+uuid: f8c05f8a-0791-4294-8aa3-69b7325e4d43
+contentOwner: sauviat
+products: SG_CAMPAIGN/CLASSIC
+audience: workflow
+content-type: reference
+topic-tags: targeting-activities
+discoiquuid: 940bec7e-e3f0-4251-b7fe-72bf188743a7
+index: y
+internal: n
+snippet: y
+translation-type: tm+mt
+source-git-commit: c10a0a11c6e9952aa47da1f7a15188c79c62508d
+
+---
+
+
+# Serviços de assinatura{#subscription-services}
+
+Uma atividade tipo **Subscription services** permite criar ou excluir uma subscrição para um serviço de informações para a população especificada na transição.
+
+Para configurá-la, edite a atividade e insira seu rótulo, então selecione a ação a ser executada (Subscrição ou Unsubscription) e o serviço relacionado, como no exemplo a seguir:
+
+![](assets/edit_service_inscription.png)
+
+1. Insira o rótulo da atividade.
+1. Select **[!UICONTROL Generate an outbound transition]** if you wish to create a transition at the end of the execution.
+
+   Geralmente, a subscrição de um target em um serviço de informações marca o final do workflow para construção do target, por isso a opção não está ativada por padrão.
+
+1. Click **[!UICONTROL Subscription]** or **[!UICONTROL Unsubscription]** if you wish to subscribe or unsubscribe the specified population to or from the selected information service.
+1. Select **[!UICONTROL Send a confirmation message]** to notify recipients that they are subscribed to or unsubscribed from a service.
+
+   O conteúdo dessa mensagem é definido no template de delivery associado ao serviço de assinatura. Para obter mais informações, consulte esta [seção](../../delivery/using/managing-subscriptions.md).
+
+## Example: Subscribe a list of recipients to a newsletter {#example--subscribe-a-list-of-recipients-to-a-newsletter}
+
+Em uma única operação, o workflow a seguir visa fazer uma lista de recipients qualificados para um boletim informativo, destinado a pessoas que trabalham em Paris, a fim de subscrevê-las.
+
+Para fazer isso, também é necessário excluir os recipients que já estão subscritos.
+
+>[!CAUTION]
+>
+>Antes de subscrever recipients manualmente a um serviço, verifique se esses recipient aceitam receber comunicações.
+
+![](assets/subscription_services_example.png)
+
+1. Adicione as três queries a seguir:
+
+   * Uma voltada a recipients com idade entre 18 e 60 anos.
+   * Uma segunda direcionada a recipients que residem em Paris.
+   * Uma terceira direcionada a recipients que não se inscreveram no boletim informativo.
+
+1. Adicione uma atividade de interseção para cruzar os resultados diferentes.
+1. Se desejar, insira um list update para manter a lista de subscritos atualizada.
+1. Insira uma atividade de serviços de subscrição e clique duas vezes nesta opção para configurá-la.
+1. Enter the activity label and select **[!UICONTROL Subscription]**.
+
+   If you like, you can inform recipients of their newsletter subscription by checking the **[!UICONTROL Send a confirmation message]** box.
+
+1. Selecione a pasta em que o boletim informativo está e em seguida, selecione o boletim informativo na lista exibida.
+1. Leave the **[!UICONTROL Generate outbound transition]** unchecked so that this activity will mark the end of the workflow, then click **[!UICONTROL Ok]**.
+
+Durante a execução do workflow, os recipients que correspondem a todas as três queries são adicionados à lista e subscritos ao boletim informativo.
+
+You can check that the subscription was successful by going to the **[!UICONTROL Subscription]** tab for your recipients.
+
+## Parâmetros de entrada {#input-parameters}
+
+* tableName
+* schema
+
+Cada evento de entrada deve especificar um target definido por esses parâmetros.
