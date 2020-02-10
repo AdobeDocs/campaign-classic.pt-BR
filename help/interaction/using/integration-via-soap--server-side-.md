@@ -1,0 +1,123 @@
+---
+title: Integração via SOAP (lado do servidor)
+seo-title: Integração via SOAP (lado do servidor)
+description: Integração via SOAP (lado do servidor)
+seo-description: null
+page-status-flag: never-activated
+uuid: 678371c5-4246-4886-994e-30dbbc70f14a
+contentOwner: sauviat
+products: SG_CAMPAIGN/CLASSIC
+audience: interaction
+content-type: reference
+topic-tags: unitary-interactions
+discoiquuid: 477a2c31-0403-4db1-a372-c75dca58380d
+index: y
+internal: n
+snippet: y
+translation-type: tm+mt
+source-git-commit: 1c86322fa95aee024f6c691b61a10c21a9a22eb7
+
+---
+
+
+# Integração via SOAP (lado do servidor){#integration-via-soap-server-side}
+
+Os serviços da Web SOAP fornecidos para o gerenciamento de ofertas são diferentes daqueles normalmente usados no Adobe Campaign. Eles podem ser acessados por meio da URL de interação descrita na seção anterior e permitem apresentar ou atualizar ofertas para um determinado contato.
+
+## Apresentação de oferta {#offer-proposition}
+
+Para uma apresentação de oferta via SOAP, adicione o comando **nms:proposta#Propose** seguido pelos seguintes parâmetros:
+
+* **targetId**: chave primária do recipient (pode ser uma chave composta).
+* **maxCount**: especifica o número de apresentações de oferta para o contato.
+* **contexto**: permite adicionar informações de contexto no schema de espaço. If the schema used is **nms:interaction**, **`<empty>`** should be added.
+* **categories**: especifica a(s) categoria(s) que as ofertas devem pertencer.
+* **themes**: especifica o(s) tema(s) aos quais a(s) oferta(s) deve pertencer.
+* **uuid**: valor do cookie permanente do Adobe Campaign (&quot;uuid230&quot;).
+* **nli**: valor do cookie da sessão do Adobe Campaign (&quot;nlid&quot;).
+* **noProp**: use o valor &quot;true&quot; para desativar a inserção de proposta.
+
+>[!NOTE]
+>
+>As configurações **targetId** e **maxCount** são obrigatórias. As outras são opcionais.
+
+Em resposta à query, o serviço SOAP retorna os seguintes parâmetros:
+
+* **interventionId**: ID da interação.
+* **proposições**: O elemento XML contém a lista de proposições, cada uma com sua própria ID e representação HTML.
+
+## Atualização de oferta {#offer-update}
+
+Adicione o comando **nms:interação#UpdateStatus** à URL, seguido desses parâmetros:
+
+* **proposition**: cadeia de caracteres, ele contém o ID de proposta fornecida como uma saída durante uma apresentação de oferta. Consulte a proposta da [oferta](#offer-proposition).
+* **status**: tipo string, ele especifica o novo status da oferta. Os valores possíveis são listados na enumeração **propositionStatus** , no schema **nms:common.** Por exemplo, inicialmente, o número 3 corresponde ao status **Accepted**.
+* **contexto**: O elemento XML permite adicionar informações de contexto no esquema de espaço. If the schema used is **nms:interaction**, **`<empty>`** should be added.
+
+## Exemplo usando uma chamada SOAP {#example-using-a-soap-call}
+
+Veja um exemplo de código para uma imagem:
+
+```
+<%
+  var space = request.parameters.sp
+  var cnx = new HttpSoapConnection(
+    "https://" + request.serverName + ":" + request.serverPort + "/interaction/" + env + "/" + space,
+    "utf-8",
+    HttpSoapConnection.SOAP_12)
+  var session = new SoapService(cnx, "nms:interaction")
+  var action = request.parameters.a
+  if( action == undefined )
+    action = 'propose'
+
+  try
+  {
+    switch( action )
+    {
+    case "update":
+      var proposition = request.parameters.p
+      var status      = request.parameters.st
+      session.addMethod("UpdateStatus", "nms:interaction#UpdateStatus",
+       ["proposition", "string",
+        "status",      "string",
+        "context",     "NLElement"],
+       [])
+      session.UpdateStatus(proposition, status, <undef/>)
+      var redirect = request.parameters.r
+      if( redirect != undefined )
+        response.sendRedirect(redirect)
+      break;
+
+    case "propose":
+      var count = request.parameters.n
+      var target = request.parameters.t
+      var categorie = request.parameters.c
+      var theme = request.parameters.th
+      var layout = request.parameters.l
+      if( count == undefined )
+        count = 1
+      session.addMethod("Propose", "nms:proposition#Propose",
+       ["targetId",      "string",
+        "maxCount",      "string",
+         "categories",    "string",
+         "themes",        "string",
+        "context",       "NLElement"],
+       ["interactionId", "string",
+        "propositions",  "NLElement"])
+      response.setContentType("text/html")
+      var result = session.Propose(target, count, category, theme, <empty/>)
+      var props = result[1]
+  %><table><tr><%
+      for each( var propHtml in props.proposition.*.mdSource )
+      {
+        %><td><%=propHtml%></td><%
+      }
+  %></tr></table><%
+      break;
+    }
+  }
+  catch( e )
+  {
+  }
+  %>
+```
