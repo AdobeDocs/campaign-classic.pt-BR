@@ -1,0 +1,146 @@
+---
+title: Renderização da caixa de entrada
+seo-title: Renderização da caixa de entrada
+description: Renderização da caixa de entrada
+seo-description: null
+page-status-flag: never-activated
+uuid: 2025f5e9-8a19-407c-9e0a-378ba5a76208
+contentOwner: sauviat
+products: SG_CAMPAIGN/CLASSIC
+audience: delivery
+content-type: reference
+topic-tags: deliverability-management
+discoiquuid: 72e974b8-415a-47ab-9804-b15957787198
+index: y
+internal: n
+snippet: y
+translation-type: tm+mt
+source-git-commit: 30f313cecf1c3d7c65f6524a3f86a1c28b35f679
+
+---
+
+
+# Renderização da caixa de entrada{#inbox-rendering}
+
+## Sobre a renderização da caixa de entrada {#about-inbox-rendering}
+
+Antes de clicar no botão **Enviar**, verifique se a sua mensagem será exibida aos recipients de forma eficaz em uma variedade de clientes Web, Webmails e dispositivos.
+
+Para permitir isso, o Adobe Campaign aproveita a solução de teste de email baseada na Web [Litmus](https://litmus.com/email-testing) para capturar a renderização e disponibilizá-la em um relatório específico. Isso permite que você visualize a mensagem enviada nos diferentes contextos em que ela pode ser recebida e verificar a compatibilidade nos principais desktops e aplicativos.
+
+O Litmus é um aplicativo de validação e visualização de email com recursos completos. Ele permite que criadores de conteúdo de email visualizem o conteúdo de sua mensagem em mais de 70 renderizadores de email, como a caixa de entrada do Gmail ou o cliente Apple Mail.
+
+Os clientes de dispositivos móveis, mensagens e webmail disponíveis para a **Renderização da caixa de entrada** no Adobe Campaign estão listados no [site do Litmus](https://litmus.com/email-testing) (clique em **Exibir todos os clientes de email**).
+
+>[!NOTE]
+>
+>A renderização da caixa de entrada não é necessária para testar a personalização nos deliveries. Personalization can be checked with Adobe Campaign tools such as **[!UICONTROL Preview]** and [Proofs](../../delivery/using/steps-validating-the-delivery.md#sending-a-proof).
+
+## Ativando renderização da Caixa de entrada{#activating-inbox-rendering}
+
+Para clientes hospedados e híbridos, a renderização da Caixa de entrada é configurada em sua instância pelo suporte técnico e consultores da Adobe. Para obter mais informações, entre em contato com o executivo da sua conta Adobe.
+
+Para instalações no local, siga as etapas abaixo para configurar a renderização da Caixa de entrada.
+
+1. Instale o **[!UICONTROL Inbox rendering (IR)]** pacote usando o menu **[!UICONTROL Tools]** > **[!UICONTROL Advanced]** > **[!UICONTROL Import package]** . Para obter mais informações, consulte [Instalação de pacotes](../../installation/using/installing-campaign-standard-packages.md)padrão do Campaign Classic.
+1. Configure uma conta externa do tipo HTTP pelo nó **[!UICONTROL Administration]** > **[!UICONTROL Platform]** > **[!UICONTROL External Accounts]** . Para obter mais informações, consulte [Criação de uma conta](../../platform/using/external-accounts.md#creating-an-external-account)externa.
+1. Defina os parâmetros da conta externa da seguinte maneira:
+   * **[!UICONTROL Label]**: Informações do servidor de entrega
+   * **[!UICONTROL Internal name]**: DeliabilityInstance
+   * **[!UICONTROL Type]**:HTTP
+   * **[!UICONTROL Server]**: https://deliverability-app.neolane.net/deliverability
+   * **[!UICONTROL Encryption]**: Nenhum
+   * Marque a **[!UICONTROL Enabled]** opção.
+   ![](assets/s_tn_inbox_rendering_external-account.png)
+
+1. Vá para o nó **[!UICONTROL Administration]** > **[!UICONTROL Platform]** > **[!UICONTROL Options]** . Procure a **[!UICONTROL DmRendering_cuid]** opção e entre em contato com o suporte para obter o identificador dos relatórios de entrega que precisa ser copiado para o **[!UICONTROL Value (text)]** campo.
+1. Edite o arquivo **serverConf.xml** para permitir uma chamada para o servidor Litmus. Adicione a seguinte linha à `<urlPermission>` seção:
+
+   ```
+   <url dnsSuffix="deliverability-app.neolane.net" urlRegEx="https://.*"/>
+   ```
+
+1. Recarregue a configuração usando o seguinte comando:
+
+   ```
+   nlserver config -reload
+   ```
+
+>[!NOTE]
+>
+>Talvez seja necessário fazer logout do console e login novamente para poder usar a renderização da Caixa de entrada.
+
+## Sobre os tokens Litmus {#about-litmus-tokens}
+
+Como Litmus é um serviço de terceiros, ele funciona em um modelo credit-per-usage. Cada vez que um usuário chamar a funcionalidade Litmus, o crédito será deduzido.
+
+No Adobe Campaign, o crédito corresponde ao número de renderizações disponíveis (conhecidos como tokens).
+
+>[!NOTE]
+>
+>O número de tokens Litmus disponíveis depende da licença adquirida do Campaign. Verifique o contrato da licença.
+
+Each time you use the **[!UICONTROL Inbox rendering]** feature in a delivery, each rendering generated decreases your available tokens by one.
+
+>[!IMPORTANT]
+>
+>Os tokens são contabilizados para cada renderização individual e não para o relatório de renderização da Caixa de Entrada, significando que:
+>
+>* Cada vez que o relatório de renderização da Caixa de Entrada é gerado, é deduzido um token por cliente da mensagem: um token para a renderização do Outlook 2000, um para a renderização do Outlook 2010, um para a renderização do Apple Mail 9 e assim por diante.
+>* Para o mesmo delivery, se você gerar a renderização da Caixa de Entrada novamente, o número de tokens disponíveis será reduzido novamente pelo número de renderizações geradas.
+>
+
+
+
+O número de tokens disponíveis restantes é exibido no relatório **[!UICONTROL General summary]** de renderização [da](#inbox-rendering-report)Caixa de entrada.
+
+![](assets/s_tn_inbox_rendering_tokens.png)
+
+Normalmente, o recurso de renderização da Caixa de Entrada é usado para testar a estrutura HTML de um email recém-criado. Cada renderização requer aproximadamente até 70 tokens (dependendo do número de ambientes geralmente testados). No entanto, em alguns casos, podem ser necessários vários relatórios de renderização da caixa de entrada para testar totalmente seu delivery. Portanto, seriam necessários mais tokens para completar várias verificações.
+
+>[!NOTE]
+>
+>Se for um cliente Litmus, você poderá usar sua própria conta Litmus para provisionar e usar a renderização da caixa de entrada no Adobe Campaign. Para saber mais sobre isso, entre em contato com o executivo da sua conta da Adobe.
+>
+>Observe que alterar suas credenciais do Litmus pode causar problemas de autenticação no Adobe Campaign.
+
+## Acesso ao relatório de renderização da caixa de entrada {#accessing-the-inbox-rendering-report}
+
+Após criar seu delivery de email e definir seu conteúdo, assim como a população alvo, siga as etapas abaixo.
+
+Para obter mais informações sobre como criar, desenvolver e segmentar um delivery, consulte [esta seção](../../delivery/using/about-email-channel.md).
+
+1. On the top bar of the delivery, click the **[!UICONTROL Inbox rendering]** button.
+1. Select **[!UICONTROL Analyze]** to start the capture process.
+
+   ![](assets/s_tn_inbox_rendering_button.png)
+
+   Uma prova é enviada. Você pode acessar as miniaturas de renderização nessa prova alguns minutos após o envio dos emails. Para obter mais informações sobre o envio de provas, consulte [esta seção](../../delivery/using/steps-validating-the-delivery.md#sending-a-proof).
+
+1. Após ser enviada, a prova aparece na lista de delivery. Clique duas vezes nela.
+
+   ![](assets/s_tn_inbox_rendering_delivery_list.png)
+
+1. Vá para a guia **Renderização da caixa de entrada** da prova.
+
+   ![](assets/s_tn_inbox_rendering_tab.png)
+
+   O relatório de renderização da caixa de entrada é exibido.
+
+## Relatório de renderização da caixa de entrada {#inbox-rendering-report}
+
+Este relatório exibe as renderizações da caixa de entrada como são exibidas para o recipient. As renderizações podem ser diferentes com base em como o recipient abre o delivery de email: em um navegador, em um dispositivo móvel ou por um aplicativo de email.
+
+The **[!UICONTROL General summary]** presents the number of messages received, unwanted (spam), not received, or pending reception, as a list and through a graphical color-coded representation.
+
+![](assets/s_tn_inbox_rendering_summary.png)
+
+Passe o mouse sobre o gráfico para exibir os detalhes para cada cor.
+
+The body of the report is divided into three parts: **[!UICONTROL Mobile]**, **[!UICONTROL Messaging clients]**, and **[!UICONTROL Webmails]**. Role para baixo no relatório para exibir todas as renderizações agrupadas nessas três categorias.
+
+![](assets/s_tn_inbox_rendering_report.png)
+
+Para obter os detalhes de cada relatório, clique no cartão correspondente. A renderização é exibida para o método de recebimento selecionado.
+
+![](assets/s_tn_inbox_rendering_example.png)
