@@ -1,0 +1,57 @@
+---
+title: Relatórios sobre deliveries
+seo-title: Relatórios sobre deliveries
+description: Relatórios sobre deliveries
+seo-description: null
+page-status-flag: never-activated
+uuid: 83ea834e-08f7-441b-8f15-a25ec07c4aab
+contentOwner: sauviat
+products: SG_CAMPAIGN/CLASSIC
+audience: reporting
+content-type: reference
+topic-tags: accessing-built-in-reports
+discoiquuid: cc832666-ad18-49ce-afcc-f9169b683ae8
+index: y
+internal: n
+snippet: y
+translation-type: tm+mt
+source-git-commit: f7655cd93a7dc8ecd35cd379da350ad279cae725
+
+---
+
+
+# Sobre relatórios em entregas{#reports-on-deliveries}
+
+O Adobe Campaign oferece vários tipos de relatórios, acessíveis através do console do cliente ou de um navegador da Internet.
+
+Os seguintes tipos de relatório estão disponíveis:
+
+* Reports on the entire platform, see [Global reports](../../reporting/using/global-reports.md).
+* Relatórios de entrega, consulte Relatórios [de](../../reporting/using/delivery-reports.md)entrega.
+* Relatórios acumulados, consulte Relatórios [cumulativos](../../reporting/using/cumulative-reports.md).
+
+Você pode acessar relatórios na home page do console do cliente, do painel de relatórios ou da lista de delivery. O modo de exibição de um relatório depende de seu contexto. A lista de relatórios principais está disponível na home page e permite acessar os dados de delivery rapidamente. Essa lista pode ser alterada para atender às suas necessidades. Consulte [esta seção](../../reporting/using/about-reports-creation-in-campaign.md) para obter mais informações.
+
+## Uso de relatórios {#using-reports}
+
+Um campo de pesquisa está disponível no painel do relatório para acesso rápido a um dos relatórios na lista.
+
+![](assets/s_ncs_user_report_searchfield.png)
+
+Quando o relatório é gerado, é possível executar várias ações usando os ícones na barra de ferramentas à direita da janela do relatório.
+
+![](assets/s_ncs_user_report_toolbar.png)
+
+É possível:
+
+* Exportar o relatório para o Excel, PDF ou Open Document,
+* Imprimir o relatório,
+* Criar o histórico do relatório,
+* Exibir diferentes históricos de relatórios,
+* Atualizar os dados no relatório.
+
+>[!NOTE]
+>
+>Alguns relatórios apresentam gráficos (curva, barra, funil, etc.). Mova o cursor sobre um gráfico para exibir seus valores.
+
+Para obter mais informações sobre essas opções, consulte [esta seção](../../reporting/using/about-adobe-campaign-reporting-tools.md).
