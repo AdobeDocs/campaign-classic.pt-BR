@@ -1,0 +1,36 @@
+---
+title: Utilização de parâmetros avançados
+seo-title: Utilização de parâmetros avançados
+description: Utilização de parâmetros avançados
+seo-description: null
+page-status-flag: never-activated
+uuid: ae34c763-23fd-43ee-9784-4ea95027090b
+contentOwner: sauviat
+products: SG_CAMPAIGN/CLASSIC
+audience: interaction
+content-type: reference
+topic-tags: advanced-parameters
+discoiquuid: 2bb756a2-4aca-4195-9b7a-ec85028a8012
+index: y
+internal: n
+snippet: y
+translation-type: tm+mt
+source-git-commit: 20f835c357d016643ea1f3209ee4dfb6d3239f90
+
+---
+
+
+# Utilização de parâmetros avançados{#using-advanced-parameters}
+
+Este capítulo detalha os vários parâmetros avançados possíveis no Interaction.
+
+>[!CAUTION]
+>
+>O capítulo a seguir destina-se a **administradores técnicos**.
+
+* É possível usar dados contextuais adicionais. Consulte a seção Dados [](../../interaction/using/additional-data.md) adicionais.
+* É possível enriquecer os contextos de aplicativo das ofertas sugeridas por meio de um canal de entrada. Para fazer isso, o schema de interação **de nms:interação** deve ser estendido. Refer to the [Extension example](../../interaction/using/extension-example.md) section for the full procedure.
+* A criação de um ambiente de teste é detalhada na seção [Criação de um ambiente](../../interaction/using/creating-a-test-environment.md) de teste.
+* É possível modificar o comportamento do mecanismo padrão usando ganchos. For more on this, refer to the [Hooks](../../interaction/using/hooks.md) section
+* Finally, using Interaction with a distributed architecture is detailed in the [Distributed architectures](../../interaction/using/distributed-architectures.md) section.
+
