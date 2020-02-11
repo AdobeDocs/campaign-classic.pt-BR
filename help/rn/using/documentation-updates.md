@@ -13,7 +13,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 5f7f59e2341d7b68b8b28869efc5bfb04cd5ba14
+source-git-commit: c7521a076418d8f162d241cd883d10b1ed543d35
 
 ---
 
@@ -25,6 +25,10 @@ Saiba mais sobre todas as atualizações mais recentes da documentação do Adob
 Esta página lista todos os novos recursos e atualizações de documentação para cada versão do Adobe Campaign Classic.
 
 Você também pode consultar as Notas [de versão do](../../rn/using/latest-release.md)Adobe Campaign Classic.
+
+## Fevereiro de 2020 {#february-2020}
+
+A AMP para email agora é suportada por três provedores de email (Gmail, Outlook e Mail.ru), a seção que descreve como definir conteúdo interativo com AMP foi atualizada. [Leia mais](../../delivery/using/defining-interactive-content.md)
 
 ## January 2020 {#january-2020}
 
