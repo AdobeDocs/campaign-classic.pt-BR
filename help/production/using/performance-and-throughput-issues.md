@@ -1,0 +1,76 @@
+---
+title: Problemas de desempenho e throughput
+seo-title: Problemas de desempenho e throughput
+description: Problemas de desempenho e throughput
+seo-description: null
+page-status-flag: never-activated
+uuid: 28c35453-9a15-44a3-9961-f4c604c209c2
+contentOwner: sauviat
+products: SG_CAMPAIGN/CLASSIC
+audience: production
+content-type: reference
+topic-tags: troubleshooting
+discoiquuid: ec66e3e3-b09a-44a4-914d-e3b38c7643f8
+index: y
+internal: n
+snippet: y
+translation-type: tm+mt
+source-git-commit: 34cd6e6cf5652c9e2163848c2b1ef32f53ee6ca4
+
+---
+
+
+# Problemas de desempenho e throughput{#performance-and-throughput-issues}
+
+>[!NOTE]
+>
+>Primeiro, você deve verificar se tem a versão mais recente instalada. Isso garante que você tenha os recursos e as correções de erros mais recentes. Consulte as Notas [de](https://docs.campaign.adobe.com/doc/AC/en/RN.html) versão para obter mais informações sobre o conteúdo de cada versão.
+
+## Hardware e infraestrutura {#hardware-and-infrastructure}
+
+As diretrizes gerais para os requisitos de hardware do Campaign Classic no local estão detalhadas neste [artigo](https://helpx.adobe.com/campaign/kb/hardware-sizing-guide.html).
+
+A equipe de consultoria pode fornecer aos clientes hospedados uma ferramenta que permite que você visualize facilmente quanto espaço é usado por vários tipos de tabelas no banco de dados, bem como o espaço usado no site SFTP. Além disso, fornece ferramentas que permitem a limpeza de dados desnecessários. Entre em contato com as equipes de consultoria ou suporte se precisar que essa ferramenta seja implementada. Estas são algumas coisas importantes para verificar usando esta ferramenta:
+
+* Se o tamanho do índice for maior que o tamanho da tabela, será necessário haver vácuo.
+* Verifique as tabelas com o máximo de borrão. Se estas tabelas forem frequentemente utilizadas, devem ser aspiradas.
+* O bloqueio do banco de dados pode fazer com que emails parem de ser enviados.
+
+O Adobe Campaign também fornece uma [ferramenta](../../production/using/monitoring-processes.md#manual-monitoring) para verificar o uso da CPU e da RAM. Use essa ferramenta e observe indicadores específicos como: **Memória**, **Troque Memória**, **Disco**, Processos **** Ativos. Se os valores forem muito altos, tente reduzir o número de fluxos de trabalho ou programar fluxos de trabalho para iniciar em momentos diferentes.
+
+## Desempenho do banco de dados {#database-performances}
+
+Na maioria das vezes, os problemas de desempenho estão vinculados à manutenção do banco de dados. Estes são os itens principais a serem verificados:
+
+* Configuração: recomendamos verificar a configuração inicial da plataforma do Adobe Campaign e executar uma verificação completa de hardware.
+* Instalação e configuração da plataforma do Adobe Campaign: verifique as opções de configuração de rede e de fornecimento da plataforma.
+* Manutenção do banco de dados: verifique se a tarefa de limpeza do banco de dados está operacional e se a manutenção do banco de dados está programada e executada corretamente. Verifique o número e o tamanho das tabelas de trabalho.
+* Diagnóstico em tempo real: verifique os arquivos de registro do processo e da plataforma e monitore a atividade do banco de dados ao recriar o problema.
+
+>[!NOTE]
+>
+>For more information, refer to this section: [Database performances](../../production/using/database-performances.md).
+
+## Configuração do aplicativo {#application-configuration}
+
+Esta é uma lista de artigos relacionados às práticas recomendadas de configuração do aplicativo:
+
+* Processos e memória MTA e MTAChild: o módulo **mta** distribui mensagens para seus módulos filho **mtachild** . Cada **mtachild** prepara mensagens antes de solicitar uma autorização do servidor de estatísticas e enviá-las. Refer to this [page](../../installation/using/email-deliverability.md) for more information.
+* Configuração TLS: não é recomendável ativar o TLS globalmente, pois ele pode reduzir o throughput. Em vez disso, as configurações TLS por domínio, gerenciadas pela equipe de entrega, devem ser ajustadas, dependendo das necessidades. Refer to this [page](../../installation/using/email-deliverability.md#mx-configuration) for more information.
+* DKIM: para garantir o nível de segurança do DKIM, o tamanho de criptografia recomendado é 1024b. As chaves DKIM inferiores não serão consideradas válidas pela maioria dos provedores de acesso. Consulte esta [página](../../delivery/using/technical-recommendations.md#domainkeys-identified-mail--dkim-) e esta [nota técnica](https://helpx.adobe.com/campaign/kb/domain-name-delegation.html).
+
+## Problemas de produtividade {#deliverability-issues}
+
+Esta é uma lista de práticas recomendadas e artigos relacionados ao material de entrega:
+
+* reputação do IP: se a reputação do IP não for boa o suficiente, haverá um impacto no desempenho. O módulo de monitoramento **da** entrega oferece várias ferramentas para rastrear o desempenho da sua plataforma em termos de entrega. Consulte esta [página](../../delivery/using/technical-monitoring.md).
+* Aquecimento de IP: o aquecimento de IP é realizado pela equipe de entrega. Isso envolve aumentar gradualmente o número de emails por meio de novos IPs, durante um período de poucas semanas.
+* Configuração de afinidade IP: uma configuração incorreta de afinidade de IP pode parar completamente os emails (nome incorreto do operador/afinidade na configuração) ou reduzir o throughput (pequeno número de IPs na afinidade). Consulte esta [página](../../installation/using/email-deliverability.md#list-of-ip-addresses-to-use).
+* Tamanho do email: o tamanho do email desempenha um papel importante na throughput. O tamanho máximo de email recomendado é de 60 KB. Consulte esta [página](https://helpx.adobe.com/legal/product-descriptions/campaign.html). No relatório [de throughput](../../reporting/using/reports-on-deliveries.md#delivery-throughput) de entrega, verifique o número de bytes transferidos por hora.
+* Grande número de destinatários inválidos: quando há um grande número de destinatários inválidos, isso pode afetar o throughput. O MTA continua tentando enviar emails novamente para destinatários inválidos. Certifique-se de que seu banco de dados seja bem mantido.
+* Quantidade de personalização: se uma entrega continuar em &quot;Personalização em andamento&quot;, verifique o JavaScript usado em blocos de personalização.
+
+>[!NOTE]
+>
+>Não se esqueça de consultar o guia de introdução à [entrega](https://docs.campaign.adobe.com/doc/AC/getting_started/EN/deliverability.html) .
+
