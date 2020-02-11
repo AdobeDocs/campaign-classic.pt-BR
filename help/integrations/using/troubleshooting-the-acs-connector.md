@@ -1,0 +1,120 @@
+---
+title: Solução de problemas no ACS Connector
+seo-title: Solução de problemas no ACS Connector
+description: Solução de problemas no ACS Connector
+seo-description: null
+page-status-flag: never-activated
+uuid: aef85b74-0388-44f8-b864-21db136a692c
+contentOwner: sauviat
+products: SG_CAMPAIGN/CLASSIC
+audience: integrations
+content-type: reference
+topic-tags: acs-connector
+discoiquuid: 538d3b48-ff39-463f-878d-ebe085057129
+index: y
+internal: n
+snippet: y
+translation-type: tm+mt
+source-git-commit: 0745b9c9d72538b8573ad18ff4054ecf788905f2
+
+---
+
+
+# Solução de problemas no ACS Connector{#troubleshooting-the-acs-connector}
+
+Dependendo da sua implementação, você pode enfrentar vários problemas comuns.
+
+* **Quais são as diferenças da interface do usuário entre o Campaign Standard e o Campaign v7?**
+
+   O Campaign Standard e o Campaign v7 funcionam de formas semelhantes. A maioria dos conceitos é o mesmo, mas em alguns casos, a abordagem pode ser um pouco diferente. Aqui estão alguns dos conceitos que podem ser diferentes no contexto do ACS Connector:
+
+<table> 
+ <thead> 
+  <tr> 
+   <th> Campaign v7<br /> </th> 
+   <th> Campaign Standard<br /> </th> 
+  </tr> 
+ </thead> 
+ <tbody> 
+  <tr> 
+   <td> recipients (ou qualquer outra dimensão de perfil)<br /> </td> 
+   <td> perfis<br /> </td> 
+  </tr> 
+  <tr> 
+   <td> lista<br /> </td> 
+   <td> público-alvo<br /> </td> 
+  </tr> 
+  <tr> 
+   <td> workflows da campanha, workflows para construção do target<br /> </td> 
+   <td> workflows<br /> </td> 
+  </tr> 
+  <tr> 
+   <td> operações<br /> </td> 
+   <td> campanhas<br /> </td> 
+  </tr> 
+  <tr> 
+   <td> aplicações Web<br /> </td> 
+   <td> landing pages<br /> </td> 
+  </tr> 
+  <tr> 
+   <td> tabela e extensão de schema personalizadas<br /> </td> 
+   <td> recursos e extensão de recursos personalizados<br /> </td> 
+  </tr> 
+  <tr> 
+   <td> membros seed<br /> </td> 
+   <td> perfis de teste<br /> </td> 
+  </tr> 
+ </tbody> 
+</table>
+
+* **Os recipients da minha instância do Campaign v7 não são sincronizados nem visíveis no Campaign Standard.**
+
+   Esse caso pode ocorrer por motivos diferentes:
+
+   * Os recipients recém-criados ou atualizados no Campaign v7. A sincronização é acionada a cada 15 minutos. Isso significa que os recipients atualizados ou recém-criados estarão visíveis no Campaign Standard após a próxima sincronização.
+   * Sua implementação pode ter sido definida para sincronizar apenas recipients de pastas específicas. Os recipients de outras pastas não são sincronizados.
+   * O recipient pode ser sincronizado, mas está visível no Campaign Standard. Verifique os direitos de mapear pastas.
+
+* **Não encontro os campos de perfil que preciso para basear meu query no Campaign Standard.**
+
+   Por padrão, 20 campos da tabela nms:recipient são sincronizados com o Campaign Standard. Consulte a lista detalhada de campos sincronizados. Qualquer campo adicional que você precise recuperar no Campaign Standard deve ser mapeado e configurado pelo seu consultor.
+
+   To make sure the field you want to use is available, you can check the profile resource definition from **[!UICONTROL Administration > Development > Diagnosis > Data schemas]**.
+
+   Além disso, todos os dados anexados aos recipients e armazenados em tabelas relacionadas a nms:recipients não são sincronizados por padrão para o Campaign Standard.
+
+   To still be able to use related data, you can perform your targeting in Campaign v7 and add additional data as explained in the [Synchronizing audiences](../../integrations/using/synchronizing-audiences.md) section, or you can refer to your consultant to explore customization possibilities.
+
+* **Estou usando outra dimensão de perfil do nms:recipient no Campaign v7, como posso sincronizá-la com o Campaign Standard?**
+
+   O Campaign Standard usa um recurso de target exclusivo chamado **perfis**. A implementação básica do recurso Campaign Standard Connect fornece um mapeamento padrão entre os recipients do Campaign v7 e os perfis do Campaign Standard.
+
+   Se você usar outra dimensão de perfil no Campaign v7 ou se usar várias, elas deverão ser mapeadas com perfis do Campaign Standard. Entre em contato com seu consultor para abordar essa necessidade específica.
+
+* **Quero compartilhar uma lista de perfis com o Campaign Standard por meio de um workflow, mas não consigo encontrar meu público no Campaign Standard**.
+
+   Audiences can be found in the **[!UICONTROL Audiences]** menu in Campaign Standard. They have the label specified in the **[!UICONTROL List update]** activity in your Campaign v7 workflow. Eles estão sujeitos ao mapeamento de pastas definido durante a implementação.
+
+   A primeira coisa a verificar é se o workflow finalizou sem erro. If you notice an error on the **[!UICONTROL List update]** activity, it means that the synchronization with Campaign Standard may have failed. To be able to see more details about what went wrong, go to **[!UICONTROL Administration]** > **[!UICONTROL ACS Connector]** > **[!UICONTROL Process]** > **[!UICONTROL Diagnosis]**. This folder contains synchronization workflows triggered by the **[!UICONTROL List update]** activity execution.
+
+   Also, make sure that the **[!UICONTROL Share with ACS]** option is checked in the **[!UICONTROL List update]** activity and that the workflow was correctly executed.
+
+   Observe que os perfis de recipients contidos na lista devem ter sido sincronizados com o Campaign Standard antes da execução do workflow. Depois de compartilhado com o Campaign Standard, os recipients da lista são reconciliados com perfis do Campaign Standard, significando que eles devem existir lá. Os recipients da lista que não podem ser reconciliados com perfis do Campaign Standard são ignorados.
+
+   Se você compartilhar uma lista feita de perfis e se nenhuma for sincronizada com o Campaign Standard, ele criará um Query vazio de público no Campaign Standard que não pode ser usado.
+
+* **Recebi uma notificação informando que um workflow de sincronização está em estado de erro. O que devo fazer?**
+
+   Verifique a configuração da conta externa no Campaign Standard e Campaign v7 testando a conexão:
+
+   * **[!UICONTROL acsDefaultRelayAccount]** no Campaign Standard.
+   * **[!UICONTROL acsDefaultAccount]** no Campaign v7.
+
+* **Não tenho nenhum grupo de segurança disponível ao mapear pastas entre o Campaign v7 e o Campanha Standard.**
+
+   You need to first synchronize your security groups from **[!UICONTROL Administration > ACS Connector > Rights management > Security groups]**. Essa ação verifica os grupos de segurança disponíveis no Campaign Standard. Após a sincronização, você pode localizar os grupos de segurança ao configurar o mapeamento da pasta.
+
+* **Não consigo editar um perfil, um público ou uma landing page no Campaign Standard. O que isso significa?**
+
+   Os recursos sincronizados do Campaign v7 estão no modo somente leitura no Campaign Standard para garantir a consistência dos dados. Se você precisar editar um desses elementos, poderá fazer isso no Campaign v7 e depois replicar a alteração no Campaign Standard.
+
