@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 4869eb41f942a89c48bc213913c44b70ae777bfc
+source-git-commit: 5b9c57b3cba0e8c24300396c2abac613f6e1193a
 
 ---
 
@@ -31,9 +31,10 @@ Para fazer isso, os arquivos .eml correspondentes aos emails enviados são trans
 ## Recomendações e limitações {#recommendations-and-limitations}
 
 * O recurso de arquivamento de e-mails é opcional. Verifique o contrato de licença.
-* Para arquiteturas hospedadas e híbridas, entre em contato com o executivo da sua conta para ativá-la. Para instalações no local, siga as diretrizes abaixo - consulte as seções [Ativando o arquivamento de e-mails (no local)](#activating-email-archiving--on-premise-) e [Configurando o endereço de e-mail CCO (no local)](#configuring-the-bcc-email-address--on-premise-) .
-* Depois que o e-mail CCO for configurado, verifique se o recurso está ativado no modelo de entrega ou na entrega por meio da **[!UICONTROL Archive emails]** opção. For more on this, see [this section](../../delivery/using/sending-messages.md#archiving-emails).
+* Para arquiteturas **** hospedadas e híbridas, entre em contato com o executivo da sua conta para ativá-la. O endereço Cco de sua escolha deve ser fornecido à equipe da Adobe que o irá configurar para você.
+* Para instalações **** no local, siga as diretrizes abaixo para ativá-la - consulte as seções [Ativando o arquivamento de e-mails (no local)](#activating-email-archiving--on-premise-) e [Configurando o endereço de e-mail CCO (no local)](#configuring-the-bcc-email-address--on-premise-) .
 * Você só pode usar um endereço de email Cco.
+* Depois que o e-mail CCO for configurado, verifique se o recurso está ativado no modelo de entrega ou na entrega por meio da **[!UICONTROL Archive emails]** opção. For more on this, see [this section](../../delivery/using/sending-messages.md#archiving-emails).
 * Somente emails enviados com êxito são levados em conta, mas não rejeições.
 * O sistema de arquivamento de e-mails foi alterado com o Adobe Campaign 17.2 (build 8795). Se você já estava usando o arquivamento de e-mails, é necessário atualizar manualmente para o novo sistema de arquivamento de e-mails (BCC). Para obter mais informações, consulte a seção Sistema de arquivamento de e-mails [atualizado (BCC)](#updated-email-archiving-system--bcc-) .
 
