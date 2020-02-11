@@ -13,7 +13,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: bc248ef0eacb802b49295cbb1104a1d866bd355e
+source-git-commit: 1815f9fc6063ec86d6c12ef492396e5afb82b3e1
 
 ---
 
@@ -22,18 +22,17 @@ source-git-commit: bc248ef0eacb802b49295cbb1104a1d866bd355e
 
 O Adobe Campaign permite que você experimente o novo [AMP interativo para o formato de email](https://amp.dev/about/email/) , que permite o envio de emails dinâmicos, sob determinadas condições.
 
->[!CAUTION]
+>[!IMPORTANT]
 >
 >* Esse recurso é beta no Adobe Campaign.
->* AMP for Email é um novo formato de código aberto que permite aos desenvolvedores criar emails dinâmicos e interativos. Atualmente, ele é suportado por dois provedores de email: Gmail e Outlook.
->
->
-Consequentemente, você só pode:
->* Teste a entrega de emails AMP para endereços Gmail ou Outlook específicos configurados adequadamente.
->* Entregue emails AMP para qualquer endereço de Gmail depois de se registrar no Google e em qualquer endereço do Outlook depois de se registrar na Microsoft.
->
->
-Consulte [Direcionando um email](#targeting-amp-email)AMP.
+>* AMP for Email é um novo formato de código aberto que permite aos desenvolvedores criar emails dinâmicos e interativos. Atualmente, ele é suportado por alguns provedores de email: Gmail, Outlook e Mail.ru.
+
+
+Atualmente, você só pode:
+* Teste a entrega de emails AMP para endereços específicos configurados adequadamente.
+* Entregue emails AMP para endereços Gmail, Outlook ou Mail.ru depois de se registrar nos provedores correspondentes.
+
+Para obter mais informações sobre testes e envio de emails AMP, consulte [Definição de metas de emails](#targeting-amp-email)AMP.
 
 Esse recurso está disponível por meio de um pacote dedicado no Adobe Campaign. Para usá-lo, este pacote deve ser instalado. Depois de concluído, reinicie o servidor para que o pacote seja considerado.
 
@@ -59,21 +58,17 @@ Para obter mais informações sobre o formato, a especificação e os requisitos
 Para testar e enviar um email AMP com o Adobe Campaign, siga as etapas abaixo:
 1. Instale o **[!UICONTROL AMP support (Beta)]** pacote. Consulte [Instalação de pacotes](../../installation/using/installing-campaign-standard-packages.md)padrão do Campaign.
 1. Crie um email e crie seu conteúdo AMP no Adobe Campaign. Consulte [Criar conteúdo de email AMP com o Adobe Campaign](#build-amp-email-content).
-1. Siga todos os requisitos de entrega dos provedores de e-mail que suportam o formato AMP.
+1. Siga todos os requisitos de entrega dos provedores de e-mail que suportam o formato AMP. Consulte [AMP para obter os requisitos](#amp-for-email-delivery-requirements)de entrega por email.
 
    >[!NOTE]
    >
-   >O AMP for Email está disponível como um recurso beta para fins de teste. Atualmente, apenas dois provedores de e-mail suportam o teste deste formato (Gmail e Outlook).
+   >O AMP for Email está disponível como um recurso beta para fins de teste. Atualmente, apenas alguns provedores de e-mail suportam o teste deste formato.
 
-   Consulte [AMP para obter os requisitos](#amp-for-email-delivery-requirements)de entrega por email.
-
-1. Ao definir sua meta, selecione os destinatários que poderão exibir o formato AMP.
+1. Ao definir sua meta, selecione os destinatários que poderão exibir o formato AMP. Consulte [Direcionando um email](#targeting-amp-email)AMP.
 
    >[!NOTE]
    >
    >Atualmente, você só pode testar a entrega de emails AMP para endereços de email específicos configurados adequadamente ou após o registro nos provedores de email que participam do programa beta AMP.
-
-   Consulte [Direcionando um email](#targeting-amp-email)AMP.
 
 1. Envie seu e-mail como normalmente faria. Consulte [Envio de um email](#sending-amp-email)AMP.
 
@@ -81,7 +76,7 @@ Para testar e enviar um email AMP com o Adobe Campaign, siga as etapas abaixo:
 
 Para criar um email usando o formato AMP, siga as etapas abaixo.
 
->[!CAUTION]
+>[!IMPORTANT]
 >
 >Certifique-se de seguir a AMP para obter os requisitos e especificações de e-mail detalhados na documentação [do desenvolvedor da](https://amp.dev/documentation/guides-and-tutorials/learn/email_fundamentals/?format=email)AMP. Você também pode consultar a [AMP para obter as práticas](https://amp.dev/documentation/guides-and-tutorials/develop/amp_email_best_practices/?format=email)recomendadas por email.
 
@@ -141,7 +136,7 @@ Para criar um email usando o formato AMP, siga as etapas abaixo.
 
 1. Alterne para a guia **[!UICONTROL HTML content]** ou **[!UICONTROL Text content]** e defina o conteúdo para pelo menos um desses dois formatos.
 
-   >[!CAUTION]
+   >[!IMPORTANT]
    >
    >Se o seu email não contiver um HTML ou uma versão de texto sem formatação além do conteúdo AMP, ele não poderá ser enviado.
 
@@ -149,12 +144,12 @@ Para criar um email usando o formato AMP, siga as etapas abaixo.
 
 Ao criar seu conteúdo AMP no Adobe Campaign, você deve atender às condições para que um email dinâmico seja entregue, que são específicas aos provedores de email dos destinatários.
 
-Atualmente, dois provedores de e-mail suportam o teste deste formato: Gmail e Outlook.
+Atualmente, três provedores de e-mail suportam o teste deste formato: Gmail, Outlook e Mail.ru.
 
-Todas as etapas e especificações necessárias para testar a entrega com o formato AMP em contas Gmail estão detalhadas na documentação [do desenvolvedor do](https://developers.google.com/gmail/ampemail?) Gmail e na documentação [do desenvolvedor do](https://docs.microsoft.com/en-gb/outlook/amphtml/)Outlook.
+Todas as etapas e especificações necessárias para testar a entrega com o formato AMP em contas Gmail estão detalhadas nas documentações correspondentes do desenvolvedor [Gmail](https://developers.google.com/gmail/ampemail?), [Outlook ](https://docs.microsoft.com/en-gb/outlook/amphtml/) e [Mail.ru](https://postmaster.mail.ru/amp) .
 
 Devem, nomeadamente, ser cumpridos os seguintes requisitos:
-* Siga os requisitos de segurança da AMP específicos ao [Gmail](https://developers.google.com/gmail/ampemail/security-requirements) e ao [Outlook](https://docs.microsoft.com/en-gb/outlook/amphtml/security-requirements).
+* Siga os requisitos de segurança da AMP específicos para [Gmail](https://developers.google.com/gmail/ampemail/security-requirements), [Outlook](https://docs.microsoft.com/en-gb/outlook/amphtml/security-requirements) e [Mail.ru](https://postmaster.mail.ru/amp/?lang=en#howto).
 * A peça AMP MIME deve conter um documento [AMP](https://amp.dev/documentation/guides-and-tutorials/learn/validation-workflow/validate_emails/?format=email)válido.
 * A peça AMP MIME deve ser menor que 100KB.
 
@@ -173,18 +168,19 @@ Você pode testar o envio de mensagens dinâmicas do Adobe Campaign para endere�
 
 >[!NOTE]
 >
->Atualmente, apenas o Gmail e o Outlook suportam testes no formato AMP.
+>Atualmente, apenas o Gmail, o Outlook e o Mail.ru suportam testes no formato AMP.
 
-Antes de fazer isso, você deve adicionar os endereços do remetente à lista de permissão que está usando para entregar do Adobe Campaign para as contas do Gmail e do Outlook que está direcionando.
+Para o Gmail e o Outlook, primeiro é necessário adicionar os endereços do remetente que você está usando para fornecer do Adobe Campaign para as contas do Gmail e do Outlook que você está direcionando.
 
 Para fazer isso:
 1. Verifique se a opção que permite o email dinâmico está marcada para os provedores de email relevantes.
 1. Copie o endereço do remetente exibido no campo da entrega **[!UICONTROL From]** e cole-o na seção apropriada das configurações da conta do provedor de email.
 
-Para obter mais detalhes, consulte a documentação [do desenvolvedor do](https://developers.google.com/gmail/ampemail/testing-dynamic-email) Gmail e a documentação [do desenvolvedor do](https://docs.microsoft.com/en-gb/outlook/amphtml/register-outlook#individual-mailbox-registration)Outlook.
-
+Para obter mais detalhes, consulte a documentação do desenvolvedor do [Gmail](https://developers.google.com/gmail/ampemail/testing-dynamic-email) e [do Outlook](https://docs.microsoft.com/en-gb/outlook/amphtml/register-outlook#individual-mailbox-registration) .
 
 ![](assets/amp_from_field.png)
+
+Para testar o envio de um email AMP para um endereço Mail.ru, siga as etapas da documentação [do desenvolvedor do](https://postmaster.mail.ru/amp/?lang=en#howto) Mail.ru (**Se você for uma seção de usuário** ).
 
 ### Entregar emails AMP através de registro em um provedor de email {#delivering-amp-emails-by-registering}
 
@@ -192,19 +188,19 @@ Você pode experimentar a entrega de emails dinâmicos se registrando com os pro
 
 >[!NOTE]
 >
->Atualmente, apenas o Gmail e o Outlook oferecem suporte ao formato AMP.
+>Atualmente, somente Gmail, Outlook e Mail.ru oferecem suporte ao formato AMP.
 
-Depois de testado com alguns endereços, você pode enviar emails AMP para qualquer endereço do Gmail ou Outlook. Para fazer isso, você deve se registrar respeitosamente no Google ou na Microsoft e aguardar a resposta deles.
+Depois de testado com alguns endereços, você pode enviar emails AMP para qualquer endereço do Gmail ou Outlook. Para fazer isso, você deve se registrar respeitosamente no Google ou na Microsoft e aguardar a resposta deles. Siga as etapas apresentadas nas documentações do desenvolvedor do [Gmail](https://developers.google.com/gmail/ampemail/register) e [do Outlook](https://docs.microsoft.com/en-gb/outlook/amphtml/register-outlook#global-registration) . Após o registro bem-sucedido, você se torna um remetente autorizado.
 
-Siga as etapas apresentadas na documentação [do desenvolvedor do](https://developers.google.com/gmail/ampemail/register) Gmail e na documentação [do desenvolvedor do](https://docs.microsoft.com/en-gb/outlook/amphtml/register-outlook#global-registration)Outlook. Após o registro bem-sucedido, você se torna um remetente autorizado.
+Para enviar emails AMP para endereços Mail.ru, siga os requisitos e etapas listados na documentação [do desenvolvedor do](https://postmaster.mail.ru/amp/?lang=en#howto) Mail.ru (**Se você for uma seção de remetente** de email).
 
 ## Envio de um email AMP {#sending-amp-email}
 
 Quando o conteúdo e o fallback da AMP estiverem prontos e você definir um destino compatível, poderá enviar o email como faria normalmente.
 
-Atualmente, somente o Gmail e o Outlook oferecem suporte ao formato AMP, sob determinadas condições. Você pode direcionar endereços de outros provedores de e-mail, mas eles receberão a versão HTML ou texto simples do seu e-mail.
+Atualmente, somente Gmail, Outlook e Mail.ru oferecem suporte ao formato AMP, sob determinadas condições. Você pode direcionar endereços de outros provedores de e-mail, mas eles receberão a versão HTML ou texto simples do seu e-mail.
 
->[!NOTE]
+>[!IMPORTANT]
 >
 >Se o seu email não contiver um HTML ou uma versão de texto sem formatação além do conteúdo AMP, ele não poderá ser enviado.
 
