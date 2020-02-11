@@ -1,0 +1,56 @@
+---
+title: Gerenciamento de perfis
+seo-title: Gerenciamento de perfis
+description: Gerenciamento de perfis
+seo-description: null
+page-status-flag: never-activated
+uuid: f045dd5e-e069-4293-8c44-49d71071b041
+contentOwner: sauviat
+products: SG_CAMPAIGN/CLASSIC
+audience: platform
+content-type: reference
+topic-tags: profile-management
+discoiquuid: ef7aa3a0-249f-46eb-9300-5b97bce31c8c
+index: y
+internal: n
+snippet: y
+translation-type: tm+mt
+source-git-commit: 51e4d72abf3a1f48700ca38566dbf06dd24594b8
+
+---
+
+
+# Gerenciamento de perfis{#managing-profiles}
+
+## Árvore do destinatário {#recipient-tree}
+
+Para acessar as funcionalidades avançadas de gerenciamento de destinatários, é necessário editar a árvore do Adobe Campaign. Para fazer isso, clique no botão **[!UICONTROL Explorer]** na barra de ferramentas.
+
+Por padrão, os destinatários são armazenados no nó **[!UICONTROL Profiles and targets]** da árvore do Adobe Campaign. No mesmo nó, é possível criar uma ou mais pastas e subpastas para armazenar perfis de destinatários.
+
+Cada nó coincide com uma pasta. Os dados de cada pasta devem ser considerados particionados entre si. Isso significa que o gerenciamento de pares é mais complicado para várias pastas de destinatários.
+
+>[!NOTE]
+>
+>Para exibir a lista de todos os destinatários no banco de dados, crie uma visualização. Consulte [Pastas e exibições](../../platform/using/access-management.md#folders-and-views).
+
+## Movimentação de destinatários {#moving-recipients}
+
+É possível selecionar um ou mais destinatários, arrastá-los da lista de destinatários e soltá-los na pasta desejada. Uma mensagem de aviso solicita que você confirme esta ação.
+
+## Como copiar um destinatário {#copying-a-recipient}
+
+Para copiar um destinatário na mesma pasta, clique com o botão direito do mouse no destinatário desejado e selecione **[!UICONTROL Copy]**.
+
+## Como excluir destinatários {#deleting-recipients}
+
+Para excluir destinatários, mova-os para uma pasta específica e, em seguida, limpe o conteúdo dessa pasta. É **altamente recomendável não usar** a opção **[!UICONTROL Delete]** neste caso.
+
+Para limpar uma pasta, use o menu **[!UICONTROL Actions > Purge folder]**, acessível clicando com o botão direito do mouse na pasta desejada.
+
+![](assets/s_ncs_user_purge_folder.png)
+
+Clique em **[!UICONTROL Start]** para iniciar a operação. A seção do meio da janela exibe o status do progresso, conforme mostrado abaixo:
+
+![](assets/s_ncs_user_purge_folder_start.png)
+
