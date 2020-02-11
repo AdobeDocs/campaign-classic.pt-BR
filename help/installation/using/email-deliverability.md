@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 2ce2a1a55e244180a4e62d6f3b5a5ed5bb8aff6e
+source-git-commit: 0291f464c2b4db51e1e56cefe83aa9e751e680a9
 
 ---
 
@@ -28,10 +28,11 @@ A seção a seguir fornece uma visão geral da configuração necessária para c
 
 >[!NOTE]
 >
->Todas as recomendações técnicas referentes ao envio e recebimento eficientes de mensagens por uma plataforma do Adobe Campaign estão disponíveis na Nota técnica de **entrega** .
->
->Algumas configurações só podem ser executadas pela Adobe para implantações hospedadas pela Adobe. Por exemplo, para acessar os arquivos de configuração do servidor e da instância. Para saber mais sobre as diferentes implantações, consulte a seção Modelos [de](../../installation/using/hosting-models.md) hospedagem ou [este artigo](https://helpx.adobe.com/campaign/kb/acc-on-prem-vs-hosted.html).\
->Refer to the [getting started guide](https://docs.campaign.adobe.com/doc/AC/getting_started/EN/deliverability.html) that presents the concepts and best practices related to deliverability.
+>Algumas configurações só podem ser executadas pela Adobe para implantações hospedadas pela Adobe. Por exemplo, para acessar os arquivos de configuração do servidor e da instância. Para saber mais sobre as diferentes implantações, consulte a seção Modelos [de](../../installation/using/hosting-models.md) hospedagem ou [este artigo](https://helpx.adobe.com/campaign/kb/acc-on-prem-vs-hosted.html).
+
+Para obter mais informações sobre os conceitos e as práticas recomendadas relacionadas à entrega, consulte esta [seção](../../delivery/using/about-deliverability.md).
+
+Todas as recomendações técnicas referentes ao envio e recebimento eficientes de mensagens por uma plataforma do Adobe Campaign estão disponíveis nesta [seção](../../delivery/using/technical-recommendations.md).
 
 ## Princípio operacional {#operating-principle}
 
@@ -139,7 +140,7 @@ Por padrão, o servidor de estatísticas escuta na porta 7777. Essa porta pode s
 
 As regras MX (Mail eXchanger) são as regras que gerenciam a comunicação entre um servidor de envio e um servidor de recebimento.
 
->[!NOTE]
+>[!IMPORTANT]
 >
 >Para instalações hospedadas ou híbridas, se você atualizou para o MTA aprimorado, as regras de throughput de **[!UICONTROL MX management]** entrega não serão mais usadas. O MTA aprimorado usa suas próprias regras MX que permitem personalizar sua throughput por domínio com base na sua própria reputação histórica de email e no feedback em tempo real proveniente dos domínios em que você está enviando emails.
 >
