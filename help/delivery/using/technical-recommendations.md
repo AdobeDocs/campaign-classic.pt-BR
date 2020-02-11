@@ -13,7 +13,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 3a4eb0cf49b81d720fa3925d48cd250e0c3fde32
+source-git-commit: 0291f464c2b4db51e1e56cefe83aa9e751e680a9
 
 ---
 
@@ -78,7 +78,7 @@ O DKIM vem de uma combinação dos princípios de autenticação do DomainKeys, 
 
 O DKIM substituiu a autenticação **DomainKeys** .
 
->[!NOTE]
+>[!IMPORTANT]
 >
 >Para instalações hospedadas ou híbridas, se você atualizou para o MTA aprimorado, a assinatura de autenticação de email do DKIM é feita pelo MTA aprimorado. A assinatura DKIM pelo MTA nativo do Campaign será desativada na **[!UICONTROL Domain management]** tabela como parte da atualização do MTA aprimorada.
 >
