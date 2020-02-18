@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: f9b3508fee3b441752648258b1bc9d5d2b919791
+source-git-commit: dbff132e3bf88c408838f91e50e4b047947ee32a
 
 ---
 
@@ -123,7 +123,7 @@ Devem ser respeitadas as seguintes regras:
 
 * Cada **`<element>`** e **`<attribute>`** deve ser identificado pelo nome através do atributo **name** .
 
-   >[!CAUTION]
+   >[!IMPORTANT]
    >
    >O nome do elemento deve ser conciso, de preferência em inglês, e incluir somente caracteres autorizados de acordo com as regras de nomenclatura XML.
 
