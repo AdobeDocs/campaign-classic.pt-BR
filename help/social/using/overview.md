@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: dcefad5aade740c8f5e5a7a7f6602b4ee0bf5f8d
+source-git-commit: 2e18121e4094bc4cb215e5471091810df56b3ef5
 
 ---
 
@@ -24,7 +24,7 @@ source-git-commit: dcefad5aade740c8f5e5a7a7f6602b4ee0bf5f8d
 
 O Social Marketing permite que você envie entregas para suas várias páginas do Facebook e contas do Twitter em vez de perfis de destinatários. No Facebook, o conteúdo de entrega é exibido na forma de publicações nas paredes da página e também será exibido no feed de notícias de todos os fãs da página. No Twitter, o conteúdo de entrega é exibido como tweets e será exibido na página inicial dos seguidores da conta. Você também pode enviar mensagens diretas aos seguidores da conta que coletar.
 
->[!CAUTION]
+>[!IMPORTANT]
 >
 >O Adobe Campaign solicita que você cumpra os termos de serviço comunicados pelo Facebook e pelo Twitter em relação à entrega da mensagem.
 >
