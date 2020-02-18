@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 34cd6e6cf5652c9e2163848c2b1ef32f53ee6ca4
+source-git-commit: 40391fbea53757decb48fd937f5e74e8ba6fb207
 
 ---
 
@@ -45,8 +45,6 @@ Ao migrar para o Adobe Campaign v7, os seguintes elementos devem ser configurado
    Se quiser usar o modo &quot;vários fusos horários&quot;, consulte a seção [Fusos horários](../../migration/using/general-configurations.md#time-zones) .
 
    Se você usar o Oracle como um banco de dados, verifique se os arquivos de fuso horário Oracle foram sincronizados corretamente entre o servidor de aplicativos e o servidor de banco de dados. For more on this, refer to the [Oracle](../../migration/using/general-configurations.md#oracle) section.
-
-   Além disso, durante uma migração de uma plataforma v.5.11, no MySQL, é necessário executar configurações adicionais. For more information, refer to the [MySQL](../../migration/using/specific-configurations-in-v5-11.md#mysql) section.
 
 * Zonas de segurança
 
