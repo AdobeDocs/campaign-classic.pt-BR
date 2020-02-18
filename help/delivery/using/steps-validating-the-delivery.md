@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 62e6537ba306956cac3bf6e1dd18567bc1414917
+source-git-commit: 7bcf222f41c0e40368644b76197b07f2ded699f0
 
 ---
 
@@ -82,7 +82,7 @@ Essa guia fornece acesso às seguintes opções:
 
 * **[!UICONTROL Label and code of the delivery]** : as opções referentes a esta seção do ecrã são utilizadas para calcular os valores destes campos durante a fase de análise de entrega. The **[!UICONTROL Calculate the execution folder during the delivery analysis]** field computes the name of the folder that will contain this delivery action during the analysis phase.
 * **[!UICONTROL Approval mode]** : esse campo permite selecionar o tipo de aprovação de entrega. Os modos de aprovação são apresentados no processo de [validação com tipologias](../../delivery/using/steps-validating-the-delivery.md#validation-process-with-typologies).
-* **[!UICONTROL Prepare the personalization data with a workflow]** : essa opção permite preparar os dados de personalização contidos na entrega em um fluxo de trabalho automático. Ele permite melhorar o desempenho da análise de delivery quando muitos dados estão sendo processados, especialmente se os dados de personalização vêm de uma tabela externa por meio da FDA. Consulte a seção [Acessando um banco de dados externo (FDA)](../../platform/using/accessing-an-external-database.md#optimizing-email-personalization-with-external-data).
+* **[!UICONTROL Prepare the personalization data with a workflow]** : essa opção permite preparar os dados de personalização contidos na entrega em um fluxo de trabalho automático. Ele permite melhorar o desempenho da análise de delivery quando muitos dados estão sendo processados, especialmente se os dados de personalização vêm de uma tabela externa por meio da FDA. Consulte a seção [Acessando um banco de dados externo (FDA)](../../platform/using/additional-options.md#optimizing-email-personalization-with-external-data).
 * **[!UICONTROL Start job in a detached process]** : Essa opção permite iniciar a análise de delivery em um processo separado. A função de análise usa o processo do servidor de aplicativos Adobe Campaign (Web nlserver) por padrão. Ao selecionar essa opção, você garante que a análise será concluída mesmo no caso de falha do servidor de aplicativos.
 * **[!UICONTROL Log SQL queries generated during the analysis in the journal]** : essa opção adiciona os logs de consulta SQL ao diário de entrega durante a fase de análise.
 * **[!UICONTROL Ignore personalization scripts during sending]** : essa opção permite que você ignore a interpretação das diretivas JavaScript encontradas no conteúdo HTML. Eles serão exibidos como nos conteúdos entregues. These directives are introduced with the **&lt;%=** tag).
