@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 305906f001203f1922266ab370fcc942458f9e8d
+source-git-commit: 9f7cf3d530f141a661df5fcc8cbcf0bb4c8d3e89
 
 ---
 
@@ -26,7 +26,7 @@ Alguns aprimoramentos foram realizados no Adobe Campaign v7 para otimizar a segu
 
 Se você estiver migrando de uma plataforma 6.10 e seu console do cliente for mais antigo que a compilação 8104, é necessário atualizá-lo. Se isso não for feito antes da migração, você será solicitado a atualizar seu console do cliente ao reconectar-se. Clique em **[!UICONTROL Yes]**.
 
->[!CAUTION]
+>[!IMPORTANT]
 >
 >Se você rejeitar a atualização, não poderá se conectar.
 
