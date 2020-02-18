@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 62553344f557206443fa2de0499df42d8b771e21
+source-git-commit: ac3a0ca00591943d79563e9fd4d85d71fa0ba81a
 
 ---
 
@@ -30,7 +30,7 @@ Esses bancos de dados são chamados de RBLs (Listas de Buraco Negro em Tempo Rea
 * Por domínio remetente: lista domínios de remetente (domínio completo do endereço de email de devolução) enviando spam ou configurado incorretamente.
 * Por domínio da Web: lista os domínios (domínios de alto nível como registrados com os registradores) encontrados nas URLs dos links e imagens contidas no conteúdo de spam. No Adobe Campaign, o domínio a ser considerado em geral é o endereço usado para rastreamento.
 
-Veja a seguir uma lista das RBLs mais utilizadas. Para obter uma lista mais abrangente, consulte o formulário [https://www.declude.com/Articles.asp?ID=97](https://www.declude.com/Articles.asp?ID=97) ou [https://www.dnsstuff.com/](https://www.dnsstuff.com/) (seção &quot;Ferramentas IP&quot;, formulário &quot;Pesquisa no Banco de Dados de Spam&quot;).
+Veja a seguir uma lista das RBLs mais utilizadas. Para obter uma lista mais abrangente, consulte [https://www.dnsstuff.com/](https://tools.dnsstuff.com/) (formulário &quot;Spam Blacklist Lookup&quot;).
 
 * **Spamhaus**
 
