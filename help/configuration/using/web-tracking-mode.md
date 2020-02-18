@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 912507f25c5bc3c1ca7121b0df8182176900f4c0
+source-git-commit: dbff132e3bf88c408838f91e50e4b047947ee32a
 
 ---
 
@@ -30,7 +30,7 @@ Há três modos de rastreamento da Web disponíveis: **&quot;Rastreamento de ses
 
 Cada modo tem características específicas. O modo de rastreamento da Web &quot;permanente&quot; inclui as características do modo de rastreamento da Web &quot;sessão&quot;, enquanto o modo &quot;anônimo&quot; inclui as características dos modos &quot;permanente&quot; e &quot;sessão&quot;.
 
->[!CAUTION]
+>[!IMPORTANT]
 >
 >O modo &quot;anônimo&quot; de rastreamento da Web é ativado por padrão se o pacote &quot;Informações potenciais&quot; estiver ativado. Em todos os outros casos, o modo de rastreamento da Web &quot;sessão&quot; é ativado por padrão.
 >
