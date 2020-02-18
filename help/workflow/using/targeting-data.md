@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 1c86322fa95aee024f6c691b61a10c21a9a22eb7
+source-git-commit: 7bcf222f41c0e40368644b76197b07f2ded699f0
 
 ---
 
@@ -182,7 +182,7 @@ Para configurá-lo, primeiro é necessário selecionar os critérios:
 
    ![](assets/split-subset-config-add_external_data.png)
 
-   Para obter mais informações, consulte esta [seção](../../platform/using/accessing-an-external-database.md).
+   Para obter mais informações, consulte esta [seção](../../platform/using/about-fda.md).
 
 Em seguida, precisamos adicionar novos subconjuntos:
 
