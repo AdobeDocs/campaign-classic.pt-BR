@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 681e6ec5fc9ed8c7e46af04f0ed62927b30e1b2e
+source-git-commit: d2ffbd97a22839975293cc792d59f1ba73b7c877
 
 ---
 
@@ -27,7 +27,7 @@ source-git-commit: 681e6ec5fc9ed8c7e46af04f0ed62927b30e1b2e
 Comece a usar o Adobe Campaign consultando nossos intuitivos guias passo a passo.
 
 * [Edição de conteúdo de e-mail com o Adobe Experience Manager](https://docs.campaign.adobe.com/doc/AC/getting_started/EN/aem.html): conheça as noções básicas para começar a usar a integração entre o Adobe Campaign Manager e o Experience Manager.
-* [Regulamento Geral sobre a Proteção de Dados](https://docs.campaign.adobe.com/doc/AC/getting_started/EN/ACC_GDPR.html): descubra o que o Adobe Campaign Classic oferece para ajudá-lo a estar em conformidade com o GDPR ao usar nosso serviço.
+* [Gerenciamento](https://helpx.adobe.com/campaign/kb/acc-privacy.html)de privacidade: descubra o que o Adobe Campaign Classic oferece para ajudá-lo com sua conformidade com privacidade ao usar nosso serviço.
 * [Integração de conteúdo dinâmico em um e-mail](https://docs.campaign.adobe.com/doc/AC/getting_started/EN/target.html): descubra os conceitos básicos para começar a integração entre o Campaign Classic e o Target Standard.
 * [Gestão da capacidade de entrega](https://docs.campaign.adobe.com/doc/AC/getting_started/EN/deliverability.html): conheça os conceitos e as práticas recomendadas relacionadas à capacidade de entrega, bem como as ferramentas oferecidas pelo Adobe Campaign Classic para otimizar o envio de suas entregas.
 * [Práticas recomendadas de entrega](https://docs.campaign.adobe.com/doc/AC/getting_started/EN/deliveryBestPractices.html): conheça as práticas recomendadas relacionadas ao planejamento de entrega e envio com o Adobe Campaign Classic.
