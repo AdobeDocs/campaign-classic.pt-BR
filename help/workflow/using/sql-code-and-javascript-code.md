@@ -15,14 +15,18 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: cfb1b02a6261c001392b5cc6430f00206e802bb8
+source-git-commit: 16e35b62cdf42c04139cc17645095a3d1f6e0fa7
 
 ---
 
 
 # Código SQL e código JavaScript{#sql-code-and-javascript-code}
 
-Uma atividade de **código SQL** executa um script SQL. O script é um template JST.
+## Código SQL {#sql-code}
+
+Uma atividade **[!UICONTROL SQL code*]* executa um script SQL. O script é um template JST.
+
+![](assets/sql_code.png)
 
 * **[!UICONTROL Script]**
 
@@ -32,31 +36,28 @@ Uma atividade de **código SQL** executa um script SQL. O script é um template 
 
    Consulte Erros [de](../../workflow/using/monitoring-workflow-execution.md#processing-errors)processamento.
 
-As atividades de tipo **código JavaScript** executam um script JavaScript no contexto de um workflow. Para obter mais informações sobre scripts, consulte a seção scripts e modelos [do](../../workflow/using/javascript-scripts-and-templates.md) JavaScript.
+## Código JavaScript e código JavaScript avançado {#javascript-code}
 
-* **[!UICONTROL Script]**
+**[!UICONTROL JavaScript code]** e **[!UICONTROL Advanced JavaScript code]** as atividades executam um script JavaScript no contexto de um fluxo de trabalho. Para obter mais informações sobre scripts, consulte a seção scripts e modelos [do](../../workflow/using/javascript-scripts-and-templates.md) JavaScript.
 
-   A área central do editor contém o script a ser executado.
+>[!NOTE]
+>
+>Por padrão, a fase de execução das atividades **[!UICONTROL JavaScript code]** **[!UICONTROL Advanced JavaScript code]** e das atividades não pode exceder uma hora. Após esse atraso, o processo será abortado com uma mensagem de erro e a execução da atividade falhará.
+>
+>É possível alterar esse atraso no **[!UICONTROL Stop execution after]** campo disponível nas propriedades das atividades.
 
-* **[!UICONTROL Processing errors]**
+* **[!UICONTROL JavaScript code]**
 
-   Consulte Erros [de](../../workflow/using/monitoring-workflow-execution.md#processing-errors)processamento.
+   ![](assets/javascript_code.png)
 
-Uma atividade de **código JavaScript avançada** executa um script JavaScript no contexto de um workflow. Para obter mais informações sobre script, consulte scripts e modelos [](../../workflow/using/javascript-scripts-and-templates.md)JavaScript.
+   * **[!UICONTROL Script]**: A área central do editor contém o script a ser executado.
+   * **[!UICONTROL Processing errors]**:Consulte Erros [de](../../workflow/using/monitoring-workflow-execution.md#processing-errors)processamento.
 
-* **[!UICONTROL First call]**
+* **[!UICONTROL Advanced JavaScript code]**
 
-   A primeira zona do editor contém o script a ser executado durante a primeira chamada.
+   ![](assets/advanced_javascript_code.png)
 
-* **[!UICONTROL Next calls]**
-
-   A segunda zona do editor contém o script a ser executado durante as próximas chamadas.
-
-* **[!UICONTROL Transitions]**
-
-   Você pode definir várias transições de atividade de output.
-
-* **[!UICONTROL Schedule]**
-
-   The **[!UICONTROL Schedule]** tab lets you schedule when to trigger the activity.
-
+   * **[!UICONTROL First call]**: A primeira zona do editor contém o script a ser executado durante a primeira chamada.
+   * **[!UICONTROL Next calls]**: A segunda zona do editor contém o script a ser executado durante as próximas chamadas.
+   * **[!UICONTROL Transitions]**: Você pode definir várias transições de atividade de output.
+   * **[!UICONTROL Schedule]**:A **[!UICONTROL Schedule]** guia permite agendar quando a atividade será acionada.
