@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 1c86322fa95aee024f6c691b61a10c21a9a22eb7
+source-git-commit: 65043155ab6ff1fe556283991777964bb43c57ce
 
 ---
 
@@ -76,11 +76,15 @@ Para criar uma conta externa do tipo instância de execução, siga as etapas ab
 
    A coleta de dados ocorre por meio de um serviço Web que usa o acesso HTTP/HTTPS ou através do módulo Federated Data Access (FDA).
 
+   >[!NOTE]
+   >
+   >Observe que ao usar FDA em HTTP, somente as instâncias de execução usando um banco de dados Postgres são suportadas. Não há suporte para bancos de dados MSSQL ou Oracle.
+
    O segundo método é recomendado se a instância de controle tiver acesso direto ao banco de dados das instâncias de execução. Caso contrário, escolha o acesso do serviço Web. A conta FDA para especificar coincide com a conexão com os bancos de dados das várias instâncias de execução criadas na instância de controle.
 
    ![](assets/messagecenter_create_extaccount_008.png)
 
-   Para obter mais informações sobre o Federated Data Access (FDA), consulte [Acesso a um banco de dados externo](../../platform/using/accessing-an-external-database.md).
+   Para obter mais informações sobre o Federated Data Access (FDA), consulte [Acesso a um banco de dados externo](../../platform/using/about-fda.md).
 
 1. Click **[!UICONTROL Test the connection]** to make sure the control instance and the execution instance are linked up.
 
