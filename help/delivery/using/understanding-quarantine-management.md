@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 1c86322fa95aee024f6c691b61a10c21a9a22eb7
+source-git-commit: 16e7266a101b4abea3271c32fcc403e7d7fbaa2d
 
 ---
 
@@ -116,15 +116,23 @@ O Adobe Campaign gerencia a quarentena de acordo com o tipo de falha de entrega 
 
 * **Erro ignorado**: os erros ignorados não enviam um endereço para quarentena.
 * **Erro grave**: o endereço de email correspondente é enviado imediatamente para quarentena.
-* **Erro suave**: erros suaves não enviam um endereço imediatamente para quarentena, mas incrementam um contador de erros. Quando o contador de erros atinge o limite da cota, o endereço vai para a quarentena. Na configuração padrão, a cota é definida em cinco erros, onde dois erros são significativos se ocorrerem pelo menos em 24 horas de distância. O endereço é colocado em quarentena no sexto erro. O limite do contador de erros pode ser modificado. Para obter mais informações, consulte [Tentativas após uma falha](../../delivery/using/understanding-delivery-failures.md#retries-after-a-delivery-temporary-failure)temporária de entrega.
-
-   Quando um delivery é bem-sucedido após uma tentativa, o contador de erros do endereço anterior à quarentena é reinicializado. O status do endereço é alterado para **Válido** e excluído da lista de quarentena após dois dias pelo workflow de **limpeza do banco de dados** .
+* **Erro suave**: erros suaves não enviam um endereço imediatamente para quarentena, mas incrementam um contador de erros. Para obter mais informações, consulte Gerenciamento [de erros](#soft-error-management)Soft.
 
 Se um usuário qualificar um email como um spam (**Loop de feedback**), a mensagem será automaticamente redirecionada para uma caixa de entrada técnica gerenciada pela Adobe. O endereço de email do usuário é enviado automaticamente para quarentena.
 
 In the list of quarantined addresses, the **[!UICONTROL Error reason]** field indicates why the selected address was placed in quarantine. A quarentena no Adobe Campaign diferencia maiúsculas de minúsculas. Certifique-se de importar endereços de email em letras minúsculas, para que não sejam redirecionados posteriormente.
 
 ![](assets/tech_quarant_error_reasons.png)
+
+### Gerenciamento de erros de software {#soft-error-management}
+
+Ao contrário de erros rígidos, os erros de software não enviam imediatamente um endereço para quarentena, mas, em vez disso, incrementam um contador de erros.
+
+* Quando o contador de erros atinge o limite, o endereço entra em quarentena.
+* Na configuração padrão, a cota é definida em cinco erros, onde dois erros são significativos se ocorrerem pelo menos em 24 horas de distância. O endereço é colocado em quarentena no sexto erro.
+* O limite do contador de erros pode ser modificado. Para obter mais informações, consulte [Tentativas após uma falha](../../delivery/using/understanding-delivery-failures.md#retries-after-a-delivery-temporary-failure)temporária de entrega.
+
+O contador de erros será reinicializado se o último erro significativo ocorrer há mais de 10 dias. The address status then changes to **Valid** and it is deleted from the list of quarantines by the **Database cleanup** workflow.
 
 ## Notificação por push em quarentena {#push-notification-quarantines}
 
