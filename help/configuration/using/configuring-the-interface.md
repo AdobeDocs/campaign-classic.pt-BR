@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 20f835c357d016643ea1f3209ee4dfb6d3239f90
+source-git-commit: dbff132e3bf88c408838f91e50e4b047947ee32a
 
 ---
 
@@ -38,7 +38,7 @@ O Adobe Campaign usa uma variável global &quot;Nms_DefaultRcpSchema&quot; para 
 
 A criação de um novo formulário permitirá exibir e editar os dados da tabela de destinatários externos.
 
->[!CAUTION]
+>[!IMPORTANT]
 >
 >O nome do formulário deve ser idêntico ao nome do esquema a que se refere.
 
