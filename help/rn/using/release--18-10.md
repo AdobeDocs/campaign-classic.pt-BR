@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 12f4237c34560257901ae210d4e22a7d152a795d
+source-git-commit: a8c4face331ab6d646480322c0f53a7147251aa6
 
 ---
 
@@ -128,7 +128,7 @@ source-git-commit: 12f4237c34560257901ae210d4e22a7d152a795d
      <li> <p>Rastrear notificações silenciosas no iOS </p> </li> 
      <li> <p>Implementar feedback sobre chamadas de registro no iOS</p> </li> 
      <li> <p>Melhorar a velocidade da preparação de delivery no iOS</p> </li> 
-    </ul> <p>Como parte da depreciação do GCM pelo Google, o conector Android V2 agora permite conexões somente ao servidor FCM.</p><p>Para obter mais informações, consulte a <a href="../../delivery/using/setting-up-mobile-app-channel.md#integrating-campaign-sdk-into-the-mobile-application">documentação detalhada</a>. A atualização manual para o FCM é detalhado neste <a href="https://helpx.adobe.com/campaign/kb/migrate-to-fcm.html">artigo</a>. </p> </td> 
+    </ul> <p>Como parte da depreciação do GCM pelo Google, o conector Android V2 agora permite conexões somente ao servidor FCM.</p><p>Para obter mais informações, consulte a <a href="../../delivery/using/integrating-campaign-sdk-into-the-mobile-application.md">documentação detalhada</a>. A atualização manual para o FCM é detalhado neste <a href="https://helpx.adobe.com/campaign/kb/migrate-to-fcm.html">artigo</a>. </p> </td> 
   </tr> 
   <tr> 
    <td> Gestão de Dados SQL<br /> </td> 
