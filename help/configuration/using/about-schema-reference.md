@@ -13,7 +13,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 5130802f3723311bcd09e21fc405d298923dd20e
+source-git-commit: dbff132e3bf88c408838f91e50e4b047947ee32a
 
 ---
 
@@ -79,7 +79,7 @@ Um esquema de dados é identificado pelo nome e pelo namespace.
 
 Um namespace permite agrupar um conjunto de esquemas por área de interesse. Por exemplo, o namespace **cus** é usado para configuração específica do cliente (**clientes**).
 
->[!CAUTION]
+>[!IMPORTANT]
 >
 >Como padrão, o nome do namespace deve ser conciso e conter somente caracteres autorizados de acordo com as regras de nomenclatura XML.
 >
