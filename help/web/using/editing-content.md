@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 1c86322fa95aee024f6c691b61a10c21a9a22eb7
+source-git-commit: 7a0d82dfc6dc50026214d7d3b1094d45ffadbc03
 
 ---
 
@@ -135,13 +135,14 @@ Blocos de personalização e campos só podem ser inseridos em blocos de tipo de
 >Para cada tipo de link, você pode configurar o modo de abertura: selecione a janela de público alvo na lista suspensa **Público-alvo.** This value corresponds to the **`<target>`** HTML tag.
 >
 >A lista de **público alvo** disponíveis é a seguinte:
-
+>
 >* Outro (IFrame)
 >* Janela superior (_top)
-* Janela pai (_parent)
-* Nova janela (_blank)
-* Janela atual (_self)
-* Comportamento do navegador padrão
+>* Janela pai (_parent)
+>* Nova janela (_blank)
+>* Janela atual (_self)
+>* Comportamento do navegador padrão
+>
 
 
 
@@ -170,7 +171,8 @@ O **Link que define uma opção de ação** permite configurar uma ação ao cli
 ![](assets/dce_toolbar_imgblock_action.png)
 
 >[!NOTE]
-As ações disponíveis são detalhadas na seção [Adicionar uma ação a um botão](#adding-an-action-to-a-button) .
+>
+>As ações disponíveis são detalhadas na seção [Adicionar uma ação a um botão](#adding-an-action-to-a-button) .
 
 ### Excluir um link {#delete-a-link}
 
@@ -180,7 +182,8 @@ Quando um link é inserido, a barra de ferramentas oferece dois novos ícones: *
 * **[!UICONTROL Break the link]** permite excluir, após a confirmação, o link e todos os parâmetros relacionados.
 
 >[!NOTE]
-Se o link for excluído, o conteúdo ainda será mantido.
+>
+>Se o link for excluído, o conteúdo ainda será mantido.
 
 ## Alteração de atributos de fonte {#changing-font-attributes}
 
@@ -202,8 +205,10 @@ As opções disponíveis são as seguintes:
 * Ícone **Change text color**: permite alterar a cor do texto do bloco selecionado ou apenas o texto selecionado (`<span style="color: #CODE">`)
 
 >[!NOTE]
-* Ícone **Delete**: exclui o bloco e todo o conteúdo.
-
+>
+>* Ícone **Delete**: exclui o bloco e todo o conteúdo.
+   >
+   >
 * Ícone **Duplicate**: duplica o bloco e todos os estilos relacionados ao bloco.
 
 
@@ -223,7 +228,8 @@ Para ser compatível com o DCE, as **animações tipo &quot;** Flash&quot; devem
 ```
 
 >[!CAUTION]
-You must not call up external files in a **script** tag of the HTML page. Esses arquivos não serão importados para o servidor do Adobe Campaign.
+>
+>You must not call up external files in a **script** tag of the HTML page. Esses arquivos não serão importados para o servidor do Adobe Campaign.
 
 ### Adição / exclusão / duplicação de uma imagem {#adding---deleting---duplicating-an-image}
 
@@ -240,7 +246,8 @@ The **Delete** icon deletes the ![]() tag containing the image.
 The **Duplicate** icon duplicates the ![]() tag and its content.
 
 >[!CAUTION]
-Quando você duplica uma imagem, os identificadores relacionados à nova imagem são excluídos.
+>
+>Quando você duplica uma imagem, os identificadores relacionados à nova imagem são excluídos.
 
 ### Edição de propriedades da imagem {#editing-image-properties}
 
