@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 0745b9c9d72538b8573ad18ff4054ecf788905f2
+source-git-commit: ac3a0ca00591943d79563e9fd4d85d71fa0ba81a
 
 ---
 
@@ -26,9 +26,9 @@ Essa seção detalha as etapas a serem executadas no Adobe Campaign para integra
 
 Você deve executar as seguintes ações no Adobe Target previamente:
 
-* Crie uma ou várias [ofertas de redirecionamento](https://marketing.adobe.com/resources/help/en_US/tnt/help/t_Creating_a_Redirect_Offer.html), em que você deve especificar a URL da imagem que usará.
+* Crie uma ou várias [ofertas de redirecionamento](https://docs.adobe.com/help/en/target/using/experiences/offers/offer-redirect.html), em que você deve especificar a URL da imagem que usará.
 * Crie um ou vários [públicos](https://marketing.adobe.com/resources/help/en_US/target/target/t_create-audience.html)para definir o target da atividade.
-* Crie uma atividade [baseada no formulário de experiência de compositor](https://marketing.adobe.com/resources/help/en_US/tnt/help/t_Creating_an_A_B_Test.html) , na qual você deve selecionar um rawbox e especificar várias experiências, dependendo do número de ofertas de redirecionamento criadas. Para cada experiência, você deve selecionar uma das ofertas de redirecionamento criadas.
+* Crie uma atividade [baseada no formulário de experiência de compositor](https://docs.adobe.com/content/help/en/target/using/activities/abtest/create/test-create-ab.html) , na qual você deve selecionar um rawbox e especificar várias experiências, dependendo do número de ofertas de redirecionamento criadas. Para cada experiência, você deve selecionar uma das ofertas de redirecionamento criadas.
 
    Para especificar essas experiências, você pode criar segmentos usando informações do Adobe Campaign. Para usar dados do Adobe Campaign nas regras de seleção da oferta, especifique os dados no rawbox no Adobe Target.
 
