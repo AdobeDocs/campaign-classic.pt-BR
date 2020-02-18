@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: f5062117b5cefbdd2570018f6803f114c14a3fae
+source-git-commit: a37daa8e31afd3d2ab7d5b70bd8ae02c59ce9ee0
 
 ---
 
@@ -210,7 +210,7 @@ A tabela a seguir lista todos os pacotes padrão com sua descrição, o tipo de 
    <td> Renderização da caixa de entrada (IR)<br /> </td> 
    <td> Permite que você visualize a mensagem enviada em diferentes contextos nos quais ela pode ser recebida e verifique a compatibilidade em desktops e aplicativos principais. Você precisa de uma conta de Litmus.<br /> </td> 
    <td> Marketing<br /> </td> 
-   <td> Opcional, <a href="../../delivery/using/about-deliverability.md#inbox-rendering">saiba mais</a> </td> 
+   <td> Opcional, <a href="../../delivery/using/inbox-rendering.md">saiba mais</a> </td> 
   </tr> 
   <tr> 
    <td> Marketing Central/local (Marketing distribuído)<br /> </td> 
@@ -250,9 +250,9 @@ A tabela a seguir lista todos os pacotes padrão com sua descrição, o tipo de 
   </tr> 
   <tr> 
    <td> Regulamento de proteção de dados de privacidade<br /> </td> 
-   <td> Contém funcionalidade adicional para ajudar projetos a se tornarem compatíveis com o RGPD no Campaign Classic.<br /> </td> 
+   <td> Contém funcionalidade adicional para ajudar com a conformidade com sua privacidade no Campaign Classic.<br /> </td> 
    <td> Todos</td> 
-   <td> <a href="https://helpx.adobe.com/campaign/kb/how-to-install-gdpr-package-on-legacy-versions.html">Saiba mais</a> </td> 
+   <td> <a href="https://helpx.adobe.com/campaign/kb/acc-privacy.html">Saiba mais</a> </td> 
   </tr> 
   <tr> 
    <td> Transfer to Mid-Sourcing <br /> </td> 
