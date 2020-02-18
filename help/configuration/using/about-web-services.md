@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 34cd6e6cf5652c9e2163848c2b1ef32f53ee6ca4
+source-git-commit: dbff132e3bf88c408838f91e50e4b047947ee32a
 
 ---
 
@@ -28,7 +28,7 @@ O servidor de aplicativos do Adobe Campaign foi projetado para abertura e fácil
 
 As APIs do Adobe Campaign são usadas em JavaScript no aplicativo e em SOAP fora dele. Eles compõem uma biblioteca de funções genéricas que podem ser enriquecidas. Para obter mais informações, consulte [Implementação de métodos](../../configuration/using/implementing-soap-methods.md)SOAP.
 
->[!CAUTION]
+>[!IMPORTANT]
 >
 >O número de chamadas de mecanismo autorizadas por dia varia de acordo com o contrato de licença. Para obter mais informações, consulte [esta página](https://helpx.adobe.com/legal/product-descriptions/adobe-campaign-classic---product-description.html).\
 >Uma lista de todas as APIs, incluindo sua descrição completa, está disponível [nesta documentação](https://docs.campaign.adobe.com/doc/AC/en/jsapi/index.html)dedicada.
@@ -154,7 +154,7 @@ O `<soap-env:fault>` elemento no corpo da mensagem SOAP é usado para transmitir
 
 O sucesso ou a falha da chamada de serviço é identificada quando o `<faultcode>` elemento é verificado.
 
->[!CAUTION]
+>[!IMPORTANT]
 >
 >Todos os serviços da Web do Adobe Campaign lidam com erros. Portanto, é altamente recomendável testar cada chamada para lidar com os erros retornados.
 
