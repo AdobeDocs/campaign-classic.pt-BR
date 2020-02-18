@@ -14,7 +14,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: f46b499e4b81cf500baa84cf683a6e0273f802a7
+source-git-commit: 9a1db0fbced3550621c5520656a34344128ee13f
 
 ---
 
@@ -74,58 +74,3 @@ A Adobe leva em conta o DNS (Domain Name System) para entrega de email, que perm
 
 [Clique aqui para saber mais](https://helpx.adobe.com/campaign/kb/domain-name-delegation.html).
 
-Como um usuário administrador, você pode configurar a delegação completa de domínio para a Adobe por meio do Painel de controle da campanha. [Leia mais](https://docs.adobe.com/content/help/en/control-panel/using/subdomains-and-certificates/subdomains-branding.html).
-
-## 10. How to get emails in the recipient&#39;s inbox? {#how-to-get-emails-in-the-recipient-s-inbox-}
-
-Leia [Configurar a capacidade de entrega de e-mails](https://helpx.adobe.com/campaign/kb/acc-deliverability.html) e conheça os conceitos e as práticas recomendadas para esse procedimento, bem como as ferramentas que otimizam o envio de e-mails.
-
-## Mais como isto {#more-faq}
-
-Leia perguntas mais comuns sobre tópicos específicos.
-
-<table>
-<tr>
-<td>
-        <a href="../../platform/using/faq-key-concepts.md"><img alt="condições" src="assets/icon_start.png"/></a>
-        <div><a href="../../platform/using/faq-key-concepts.md"><strong>Principais conceitos</strong></a></div>
-        <em>Perguntas frequentes globais</em>
-    </td>
-    <td>
-        <a href="../../platform/using/faq-audiences.md"><img alt="condições" src="assets/icon_audience.png"/></a>
-        <div><a href="../../platform/using/faq-audiences.md"><strong>Recipientes</strong></a></div>
-        <em>Perguntas frequentes sobre o público-alvo</em>
-    </td>
-    <td>
-        <a href="../../platform/using/faq-designing.md"><img alt="condições" src="assets/icon_content.png"/></a>
-        <div><a href="../../platform/using/faq-designing.md"><strong>Design</strong></a></div>
-        <em>Perguntas frequentes sobre design de mensagens</em>
-    </td>
-    <td>
-        <a href="../../platform/using/faq-messages.md"><img alt="condições" src="assets/icon_delivery.png"/></a>
-        <div><a href="../../platform/using/faq-messages.md"><strong>Enviar</strong></a></div>
-        <br/><em>Teste de mensagem e envie perguntas frequentes</em>
-    </td>
-</tr>
-<tr>
-    <td>
-        <a href="../../platform/using/faq-workflows.md"><img alt="condições" src="assets/icon_process.png"/></a>
-        <div><a href="../../platform/using/faq-workflows.md"><strong>Fluxos de trabalho</strong></a></div>
-        <em>Perguntas frequentes sobre automação de processos</em>
-    </td>
-    <td>
-        <a href="../../platform/using/faq-reporting.md"><img alt="condições" src="assets/icon_report.png"/></a>
-        <div><a href="../../platform/using/faq-reporting.md"><strong>Relatório</strong></a></div>
-        <em>Perguntas frequentes sobre relatórios de campanha</em>
-    </td>
-    <td>
-        <a href="../../platform/using/faq-campaign-config.md"><img alt="condições" src="assets/icon_config.png"/></a>
-        <div><a href="../../platform/using/faq-campaign-config.md"><strong>Configuração</strong></a></div>
-        <em>Perguntas frequentes sobre configurações de instância</em>
-    </td>
-    <td>
-        <a href="../../platform/using/faq-developers.md"><img alt="condições" src="assets/icon_server.png"/></a>
-        <div><a href="../../platform/using/faq-developers.md"><strong>Desenvolvimento</strong></a></div>
-        <br/><em>Perguntas frequentes sobre desenvolvedores</em>
-    </td>
-    </tr></table>
