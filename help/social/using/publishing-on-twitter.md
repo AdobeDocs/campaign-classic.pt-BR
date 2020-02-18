@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 20174427735b90129cd4cbd9ee1ba5fd705fa302
+source-git-commit: 2e18121e4094bc4cb215e5471091810df56b3ef5
 
 ---
 
@@ -100,7 +100,7 @@ A configuração de rastreamento é a mesma de uma entrega de email. Para obter 
 >
 >No modelo de **[!UICONTROL Tweet]** entrega, o rastreamento é ativado por padrão.
 
->[!CAUTION]
+>[!IMPORTANT]
 >
 >Não podemos diferenciar entre robôs que analisam tweets e usuários que estão realmente clicando.
 
@@ -134,7 +134,7 @@ O **[!UICONTROL Synchronize Twitter accounts]** fluxo de trabalho (consulte [Sin
 
 ![](assets/social_twitter_visitors_001.png)
 
->[!CAUTION]
+>[!IMPORTANT]
 >
 >Para que o fluxo de trabalho recupere a lista de seguidores do Twitter, a **[!UICONTROL Synchronize Twitter accounts]** caixa deve ser marcada na tela Editar do serviço vinculado à conta. Para obter mais informações, consulte: [Delegando acesso de gravação ao Adobe Campaign](../../social/using/configuring-publishing-on-twitter.md#delegating-write-access-to-adobe-campaign).
 
@@ -181,7 +181,7 @@ Selecione os seguidores para os quais deseja enviar sua mensagem direta.
 
    * Selecione **[!UICONTROL Twitter subscribers]** para enviar uma mensagem direta a todos os seguidores da conta.
 
-      >[!CAUTION]
+      >[!IMPORTANT]
       >
       >Não é possível enviar mais de 250 mensagens por dia. Se sua conta do Twitter tem mais de 250 seguidores, recomendamos enviar em ondas. Isso envolve o mesmo processo que entregas por email. Consulte [esta seção](../../delivery/using/steps-sending-the-delivery.md#sending-using-multiple-waves).
 
