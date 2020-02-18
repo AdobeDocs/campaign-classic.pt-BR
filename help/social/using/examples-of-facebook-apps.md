@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 7f03e1fbb94bbd5b00fa0094a0b5e9be45629ec7
+source-git-commit: 2e18121e4094bc4cb215e5471091810df56b3ef5
 
 ---
 
@@ -30,7 +30,7 @@ Quando um usuário clica na guia de um aplicativo do Facebook, ela é exibida em
 
 ![](assets/social_webapp_fb_000.png)
 
->[!CAUTION]
+>[!IMPORTANT]
 >
 >Siga as etapas de configuração descritas em [Criar um aplicativo](../../social/using/creating-a-facebook-application.md)do Facebook.
 
@@ -44,7 +44,7 @@ Os exemplos de aplicativos da Web do tipo Facebook detalhados aqui são:
 * Como encaminhar configurações para um aplicativo do Facebook. Consulte [Como encaminhar configurações para um aplicativo do Facebook?](#how-to-forward-settings-to-a-facebook-application-).
 * Como adquirir dados do ventilador. Consulte [Como adquirir dados do ventilador?](#how-to-acquire-fan-data-).
 
->[!CAUTION]
+>[!IMPORTANT]
 >
 >Estes casos de uso simples são fornecidos como exemplos para ilustrar as funcionalidades de aplicativos da Web do tipo Facebook.
 
@@ -97,7 +97,7 @@ Verifique se a guia do aplicativo **App01** é exibida em sua página do Faceboo
 
 ## Como encaminhar configurações para um aplicativo do Facebook? {#how-to-forward-settings-to-a-facebook-application-}
 
->[!CAUTION]
+>[!IMPORTANT]
 >
 >Siga as etapas de configuração detalhadas em [Criação de um aplicativo](../../social/using/creating-a-facebook-application.md)do Facebook.
 
