@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: cf7c90f0ea9fbce3a4fd53f24189617cbd33fc40
+source-git-commit: eee744eb5bc7a43fd412ffb01f0546385146a978
 
 ---
 
@@ -72,7 +72,7 @@ O alvo principal de um delivery também pode ser definido no workflow de defini�
 
 O guia [Automating with workflows](../../workflow/using/executing-a-workflow.md#architecture) inclui uma descrição detalhada de como o módulo de workflow opera.
 
->[!CAUTION]
+>[!IMPORTANT]
 >
 >Você não pode configurar mais de 28 workflows na mesma campanha. Acima desse limite, os workflows adicionais não estão visíveis na interface e podem gerar erros.
 
@@ -233,7 +233,7 @@ Por padrão, a configuração do grupo de controle definida no nível da campanh
    ![](assets/s_ncs_user_edit_op_target_del.png)
 
 1. Clique na **[!UICONTROL Control group]** guia e selecione **[!UICONTROL Enable and edit control group configuration]**.
-1. Clique **[!UICONTROL Edit...]** para configurar o grupo de controle
+1. Clique em **[!UICONTROL Edit...]** para configurar o grupo de controle.
 
 O procedimento de configuração é apresentado em [Extrair o grupo de controle do alvo](#extracting-the-control-group-from-the-main-target) principal e [Adicionar uma população](#adding-a-population).
 
@@ -353,7 +353,7 @@ A extração de arquivo inicia duas operações: cálculo de orçamento e cálcu
 
 Você pode associar vários documentos a uma campanha: relatório, foto, página da Web, diagrama, etc. Esses documentos podem estar em qualquer formato (Microsoft Word, PowerPoint, PNG, JPG, Acrobat PDF etc.). To link documents with a campaign, see [Adding documents](#adding-documents).
 
->[!CAUTION]
+>[!IMPORTANT]
 >
 >Esse modo é reservado para documentos pequenos.
 
