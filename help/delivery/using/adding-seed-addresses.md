@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 7dbc876fae0bde78e3088ee1ab986cd09e9bcc38
+source-git-commit: 4ac96bf0e54268832b84b17c3cc577af038cc712
 
 ---
 
@@ -38,7 +38,7 @@ Há três modos de inserção possíveis:
 
    To do this, click the **[!UICONTROL Import seed templates...]** link and select the folder which contains the address templates. Para obter mais informações, consulte [Criação de modelos](../../delivery/using/creating-seed-addresses.md#creating-seed-address-templates)de endereço semente.
 
-   If necessary, once they are added, you can doucle-click them or click the **[!UICONTROL Detail...]** button to adapt the content of each address.
+   If necessary, once they are added, you can double-click them or click the **[!UICONTROL Detail...]** button to adapt the content of each address.
 
 1. Criação de uma condição para selecionar dinamicamente os endereços de controle a serem inseridos.
 
