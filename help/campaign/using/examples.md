@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 1c86322fa95aee024f6c691b61a10c21a9a22eb7
+source-git-commit: eee744eb5bc7a43fd412ffb01f0546385146a978
 
 ---
 
@@ -29,8 +29,6 @@ A interface Web tipo **By form** envolve o uso de uma **aplicação Web**. Depen
 >[!NOTE]
 >
 >As APIs são detalhadas em um documento dedicado, acesso ao qual depende do seu contrato. Consulte a [API](../../configuration/using/about-web-services.md).
-
->[!NOTE]
 >
 >A aplicação Web usada neste exemplo não é fornecida com o Adobe Campaign. Para usar um formulário em uma campanha, você deve criar a aplicação Web dedicada.
 
@@ -159,7 +157,7 @@ Depois que as verificações foram aprovadas, a campanha poderá iniciar automat
 
    * o conteúdo da mensagem que será enviado para entidades locais na notificação,
    * o lembrete de aprovação,
-   * o processamento esperado da campanha
+   * o processamento esperado da campanha.
    ![](assets/mkg_dist_use_case_target_valid7.png)
 
 1. Salve seu registro.
