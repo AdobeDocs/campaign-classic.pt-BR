@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 20174427735b90129cd4cbd9ee1ba5fd705fa302
+source-git-commit: 2e18121e4094bc4cb215e5471091810df56b3ef5
 
 ---
 
@@ -78,7 +78,7 @@ No entanto, também é possível usar os filtros de público-alvo usados pelo Fa
 * **[!UICONTROL Cities]**
 * **[!UICONTROL Languages]**
 
->[!CAUTION]
+>[!IMPORTANT]
 >
 >Use essa função com cuidado. Nos relatórios de entrega, o **[!UICONTROL Number of fans]** indicador não levará em conta esses filtros do Facebook.
 >
@@ -115,7 +115,7 @@ Uma entrega do tipo de status com um link pode conter texto, imagens e um link. 
 
 Insira os vários campos:
 
->[!CAUTION]
+>[!IMPORTANT]
 >
 >Todos os URLs devem começar com **&quot;http://&quot;** ou **&quot;https://&quot;**.
 
@@ -136,7 +136,7 @@ Insira os vários campos:
 
 1. No **[!UICONTROL Image]** campo, insira o URL da imagem que será exibida à esquerda da publicação.
 
-   >[!CAUTION]
+   >[!IMPORTANT]
    >
    >A imagem deve ser hospedada em um site público da internet para que o Facebook possa carregá-la.
 
