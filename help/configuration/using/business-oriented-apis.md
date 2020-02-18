@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 1c86322fa95aee024f6c691b61a10c21a9a22eb7
+source-git-commit: dbff132e3bf88c408838f91e50e4b047947ee32a
 
 ---
 
@@ -43,7 +43,7 @@ API comercial são específicas para cada tipo de objeto. Têm um efeito sobre:
 
 Esta seção detalha o uso dos serviços &quot;Assinar&quot;, &quot;Cancelar inscrição&quot; e &quot;SubmeterEntrega&quot;.
 
->[!CAUTION]
+>[!IMPORTANT]
 >
 >[A documentação](http://docs.campaign.adobe.com/doc/AC/en/jsapi/index.html) JSAPI da campanha contém informações adicionais sobre chamadas SOAP e uso do Javascript no Adobe Campaign, bem como uma referência completa a todos os métodos e funções usados no aplicativo.
 
