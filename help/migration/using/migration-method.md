@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 4437d2ea4e4044245a2b9a5a870267cd1f1c0bc9
+source-git-commit: 9f7cf3d530f141a661df5fcc8cbcf0bb4c8d3e89
 
 ---
 
@@ -30,7 +30,7 @@ Os bancos de dados de versão de 32 bits e os sistemas operacionais ainda são s
 
 Na v6.02, o modo &quot;multifuso horário&quot; estava disponível somente para mecanismos de banco de dados PostgreSQL. Agora, ele é oferecido independentemente do tipo de mecanismo de banco de dados usado. Recomendamos que você transforme sua base em uma base de &quot;vários fusos horários&quot;. Para obter mais informações sobre isso, consulte a seção [Fusos horários](../../migration/using/general-configurations.md#time-zones) .
 
->[!CAUTION]
+>[!IMPORTANT]
 >
 >Algumas versões de software compatíveis com o Adobe Campaign 5.11 e 6.02 não são mais compatíveis com o Adobe Campaign v7.
 >
