@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 2a11a73b0679c0a65dc10f71869bf2a6c6efc008
+source-git-commit: 7c57fb0f2d9867b5ea96185c1984e0b1baeb056a
 
 ---
 
@@ -116,7 +116,7 @@ Os elementos **`<rtevent>`** e **`<batchevent>`** têm um conjunto de atributos,
 
 The mandatory attributes of the **`<rtevent>`** and **`<batchevent>`** elements are @type and @email. O valor de @type deve ser igual ao valor da lista discriminada definido ao configurar a instância de execução. Esse valor permite definir o template a ser vinculado ao conteúdo do evento durante o delivery.
 
-`<rtevent>  configuration example: </rtevent>`
+`<rtevent> configuration example:`
 
 ```
 <rtEvent type="order_confirmation" email="john.doe@domain.com" origin="eCommerce" wishedChannel="0" externalId="1242" mobilePhone="+33620202020"> 
