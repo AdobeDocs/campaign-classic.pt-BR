@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 579329d9194115065dff2c192deb0376c75e67bd
+source-git-commit: dbff132e3bf88c408838f91e50e4b047947ee32a
 
 ---
 
@@ -55,7 +55,7 @@ Estas duas informações devem ser concatenadas com o identificador da página r
 tagid=<identifier>|<type>|<foldername>
 ```
 
->[!CAUTION]
+>[!IMPORTANT]
 >
 >Lembre-se de codificar o valor do parâmetro **tagid** quando ele for usado como um parâmetro de URL.
 
