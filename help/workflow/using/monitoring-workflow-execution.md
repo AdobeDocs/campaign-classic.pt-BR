@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 2e04eb83a7c2e29f8d3ea6458dd3f0e780dfb9c3
+source-git-commit: 202f571f5c348ca4ab617821cd1ec24cefa8c504
 
 ---
 
@@ -259,26 +259,23 @@ Os supervisores de workflow são notificados. O criador e o último usuário que
 
 ## Filtrar fluxos de trabalho de acordo com seu status{#filtering-workflows-status}
 
-A interface do Campaign Classic permite monitorar o status de execução de todos os fluxos de trabalho na sua instância usando **exibições** predefinidas. Para acessar essas exibições, abra o nó&#x200B;**Administração**/**Auditoria**/ Status **dos** fluxos de trabalho.
+A interface do Campaign Classic permite monitorar o status de execução de todos os fluxos de trabalho na sua instância usando **exibições** predefinidas. Para acessar essas exibições, abra o nó&#x200B;**[!UICONTROL Administration]**/**[!UICONTROL Audit]**/**[!UICONTROL Workflows Status]**.
 
 As seguintes exibições estão disponíveis:
 
-* **Em execução**: lista todos os fluxos de trabalho em execução.
-* **Pausado**: lista todos os fluxos de trabalho pausados.
-* **Falha**: lista todos os fluxos de trabalho com falha.
-
-<!--Start Pending: lists all workflows that are waiting to be started by the operationMgt process.-->
+* **[!UICONTROL Running]**: lista todos os fluxos de trabalho em execução.
+* **[!UICONTROL Paused]**: lista todos os fluxos de trabalho pausados.
+* **[!UICONTROL Failed]**: lista todos os fluxos de trabalho com falha.
+* **[!UICONTROL Start Pending]**: lista todos os fluxos de trabalho que estão aguardando para serem iniciados pelo processo operationMgt. Esta exibição está disponível apenas com o pacote de campanhas **de** marketing (consulte [Instalação de pacotes](../../installation/using/installing-campaign-standard-packages.md)padrão do Campaign).
 
 ![](assets/workflow-monitoring-views.png)
 
-<!--The Start Pending view is available with the Marketing campaigns package only. See Installing Campaign standard packages../../installation/using/installing-campaign-standard-packages.md.-->
-
-Por padrão, essas exibições estão acessíveis na pasta **Auditoria**. No entanto, você pode recriá-los no local de sua escolha na árvore de pastas. Dessa forma, eles estarão disponíveis para usuários padrão sem nenhum direito administrativo.
+Por padrão, essas exibições estão acessíveis na **[!UICONTROL Audit]** pasta. No entanto, você pode recriá-los no local de sua escolha na árvore de pastas. Dessa forma, eles estarão disponíveis para usuários padrão sem nenhum direito administrativo.
 
 Para fazer isso:
 
 1. Clique com o botão direito do mouse na pasta onde deseja adicionar a exibição.
-1. Em **Adicionar nova pasta**/**Administração**, selecione a exibição que deseja adicionar.
+1. Em **[!UICONTROL Add new folder]**/**[!UICONTROL Administration]**, selecione a exibição que deseja adicionar.
 1. Depois que a pasta for adicionada à árvore, certifique-se de configurá-la como uma exibição, para que ela exiba todos os fluxos de trabalho, qualquer que seja a pasta de origem.Para obter mais informações sobre como configurar exibições, consulte [esta seção](../../platform/using/access-management.md#adding-folders-and-creating-views).
 
 Além dessas exibições, você pode configurar pastas de filtros que permitirão filtrar a lista de fluxos de trabalho de acordo com o status de execução. Para fazer isso:
@@ -293,6 +290,3 @@ Para obter mais informações, consulte estas seções:
 
 * [Criação de filtros avançados](../../platform/using/creating-filters.md#creating-an-advanced-filter)
 * [Salvar filtros](../../platform/using/creating-filters.md#saving-a-filter)
-
-<!-- need to check if pending status filter will be implemented or not in january release, note, Additionally to these views, a prefedefined filter is available in workflow-type folders. It allows you to display in the list workflows that are waiting to be started by the operationMgt process only.This filter is available with the Marketing campaigns package only. See Installing Campaign standard packages../../installation/using/installing-campaign-standard-packages.md.-->
-
