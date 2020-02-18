@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 9d7cbe5f2407deb8fd2e00a60bf9e3789101e6ff
+source-git-commit: 09fa3751d94fd71a68470174dd0b4a48d94d3f44
 
 ---
 
@@ -1555,6 +1555,12 @@ Estes são os diferentes parâmetros do nó **mta** . Esta é a configuração d
    <td> Se não estiver definido, a versão mais recente será usada. <br /> </td> 
   </tr> 
   <tr> 
+   <td> useMomentum<br /> </td> 
+   <td> Se definido como "true", sua instância está usando o MTA <a href="https://helpx.adobe.com/campaign/kb/campaign-enhanced-mta.html" target="_blank">aprimorado</a>.<br /> </td> 
+   <td> Booleano<br /> </td> 
+   <td> <br /> </td>b 
+  </tr>
+  <tr> 
    <td> verifyMode<br /> </td> 
    <td> Modo de verificação: ativa o modo de verificação (sem transmissão física de mensagens; utilizados para simulação e ensaios).<br /> </td> 
    <td> Booleano<br /> </td> 
@@ -1571,7 +1577,7 @@ Estes são os diferentes parâmetros do nó **mta** . Esta é a configuração d
    <td> Campo X-Mailer: valor do campo 'X-Mailer' no cabeçalho de email SMTP.<br /> </td> 
    <td> Cadeia de caracteres<br /> </td> 
    <td> 'nlserver, Build $(PRODUCT_VERSION)'<br /> </td> 
-  </tr> 
+  </tr>  
  </tbody> 
 </table>
 
