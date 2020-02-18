@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 46f5bfb41bfe9c938ac0ffa767ead3e47a32047d
+source-git-commit: de04b5d3ceb883a571ee665f630be931a68a5a3e
 
 ---
 
@@ -52,16 +52,10 @@ Para baixar o Java JDK, conecte-se a: [https://www.oracle.com/technetwork/java/j
 
 Para instalar o JDSL em um ambiente Linux, é preferível usar um gerenciador de pacote.
 
-Em Debian 7 e 8, use o seguinte comando:
+Em Debian 8 e 9, use o seguinte comando:
 
 ```
-aptitude install openjdk-7-jdk
-```
-
-Para RHEL 6, use o seguinte comando:
-
-```
-yum install java-1.8.0-openjdk
+aptitude install openjdk-8-jdk
 ```
 
 Para RHEL 7, use o seguinte comando:
@@ -73,10 +67,6 @@ yum install java-1.8.0-openjdk
 ## OpenSSL {#openssl}
 
 No Linux, o OpenSSL deve estar instalado. As versões compatíveis com o Adobe Campaign são **OpenSSL 1.0.1** e **OpenSSL 0.9.8**. As subversões 0.9.8g a 0.9.8o são aceitas.
-
->[!NOTE]
->
->Para RHEL 6 e CentOS 6, é necessário abrirSSL 1.0.
 
 ## Exportação de relatórios {#exporting-reports}
 
@@ -92,7 +82,7 @@ O SpamAssassin permite que você atribua uma pontuação a emails para determina
 
 A qualificação de emails como indesejados pelo SpamAssassin é baseada inteiramente em regras de filtragem e pontuação. Essas regras devem, portanto, ser atualizadas pelo menos uma vez por dia para que sua instalação do SpamAssassin e sua integração ao Adobe Campaign estejam totalmente funcionais e para garantir a relevância das pontuações atribuídas às suas entregas antes do envio. Esta atualização é da responsabilidade do administrador do servidor que hospeda o SpamAssassin.
 
-As versões mínimas suportadas são: **3.2.5** e **3.3.2**.
+A versão mínima suportada é: **3,4**
 
 O SpamAssassin requer um acesso HTTP à Internet (tcp/80).
 
