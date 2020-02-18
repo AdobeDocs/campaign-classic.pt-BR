@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: ab2c133aaa2f754e56fe8fdfc76d10526d4d1ce2
+source-git-commit: f8cf2f72dcf2ab48a42faf7931ca831b6431548d
 
 ---
 
@@ -25,10 +25,11 @@ source-git-commit: ab2c133aaa2f754e56fe8fdfc76d10526d4d1ce2
 ## Criação de query {#creating-a-query}
 
 Um query permite selecionar um target de acordo com critérios. Você pode associar um código de segmento ao resultado do query e inserir dados adicionais nele.
+Para obter mais informações sobre amostras de consulta, consulte esta [seção](../../workflow/using/querying-recipient-table.md).
 
 >[!NOTE]
 >
->Exemplos de query são apresentados [nesta seção](../../workflow/using/querying-recipient-table.md).
+>Atividades de consulta não são compatíveis com campos CLOB ao usar o Oracle.
 
 ![](assets/s_user_segmentation_wizard_9.png)
 
@@ -112,7 +113,7 @@ Para adicionar uma coleção de informações vinculadas a um público alvo:
 
    * If a single element of the collection coincides with the filtering conditions for this collection, select **[!UICONTROL Single row]** in the **[!UICONTROL Data collected]** field.
 
-      >[!CAUTION]
+      >[!IMPORTANT]
       >
       >Esse modo otimiza o query SQL gerada graças a uma junção direta dos elementos de coleção.
       >
