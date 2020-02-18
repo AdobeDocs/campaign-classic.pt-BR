@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 579329d9194115065dff2c192deb0376c75e67bd
+source-git-commit: dbff132e3bf88c408838f91e50e4b047947ee32a
 
 ---
 
@@ -49,7 +49,7 @@ Para estender a tabela de destinatários do esquema **nms:receipt** , aplique o 
 
    Neste exemplo, um campo indexado (**fidelidade**) é adicionado e o elemento de **localização** (que já existia no esquema **nms:destinatário** ) é complementado com um campo enumerado (**área**).
 
-   >[!CAUTION]
+   >[!IMPORTANT]
    >
    >Lembre-se de adicionar o atributo **ExtendedSchema** para fazer referência ao esquema de extensão.
 
