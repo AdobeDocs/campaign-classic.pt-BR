@@ -1,6 +1,6 @@
 ---
 title: Versão mais recente
-description: Notas de versão do Campaign Classic 19.2
+description: Versão mais recente
 page-status-flag: never-activated
 uuid: 269d590c-5a6d-40b9-a879-02f5033863fc
 contentOwner: sauviat
@@ -13,14 +13,14 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: e091bab4032a0fe8292ea65100627fefab2a5e30
+source-git-commit: 78c94268723e172b4a4e3c3a965877978b075b82
 
 ---
 
 
 # Versão mais recente{#latest-release}
 
-[Criar atualização](https://helpx.adobe.com/campaign/kb/acc-build-upgrade.html) | Versões [do Painel](https://docs.adobe.com/content/help/en/control-panel/using/release-notes.html) de controle| Atualizações [da documentação](../../rn/using/documentation-updates.md) | [Versões anteriores](../../rn/using/release--19-1.md) | Recursos [obsoletos](https://helpx.adobe.com/campaign/kb/deprecated-and-removed-features.html)
+[Criar atualização](https://helpx.adobe.com/campaign/kb/acc-build-upgrade.html) | Versões [do Painel](https://docs.adobe.com/content/help/en/control-panel/using/release-notes.html) de controle| Atualizações [da documentação](../../rn/using/documentation-updates.md) | [Versões anteriores](../../rn/using/release--19-2.md) | Recursos [obsoletos](https://helpx.adobe.com/campaign/kb/deprecated-and-removed-features.html)
 
 <table> 
  <tbody> 
@@ -41,34 +41,23 @@ source-git-commit: e091bab4032a0fe8292ea65100627fefab2a5e30
 
 Clique [aqui](../../rn/using/release--19-1.md#release-19-1-4-build-9032) para exibir a **última compilação** estável (GA).
 
-## ![](assets/blue-2.png) Versão 19.2.3 - Build 9081 {#release-19-2-3-build-9081}
+## ![](assets/blue-2.png) Versão 20.1 - Build 9122 {#release-20-1-build-XXXX}
 
-_07 de fevereiro de 2020_
-
-**Aprimoramentos**
-
-* Corrigido um problema de regressão devido à implementação da certificação SSL que causava a falha da conexão do usuário no servidor Windows. (NEO-20629)
-* Correção de um problema que exibia um número de tag de versão incorreto no menu **Sobre** .
-
-## ![](assets/orange-2.png) Versão 19.2 - Build 9080 {#release-19-2-build-9080}
-
-_02 de dezembro de 2019_
+_17 de fevereiro de 2020_
 
 **Novidades**
 
 <table> 
  <thead> 
   <tr> 
-   <th> <strong>California Consumer Privacy Act (CCPA)</strong><br /> </th> 
+   <th> <strong>Conector FDA em floco de neve</strong><br /> </th> 
   </tr> 
  </thead> 
  <tbody> 
   <tr> 
-   <td> <p>CCPA é a nova lei de privacidade do estado da Califórnia que harmoniza e moderniza os requisitos de proteção de dados que entram em vigor em 1° de janeiro de 2020. O CCPA se aplica aos clientes do Adobe Campaign que detêm dados para pessoas de dados residentes na Califórnia.</p>
-    <p> Além dos recursos de privacidade já disponíveis (incluindo gerenciamento de consentimento, configurações de retenção de dados e funções de usuário), o Adobe Campaign ajuda a facilitar a preparação para CCPA:</p>
-    <ul>
-      <li>Direito de acesso e direito de exclusão: estamos aproveitando as capacidades que foram adicionadas ao RGPD. <a href="https://helpx.adobe.com/campaign/kb/acc-privacy.html#righttoaccess">Leia mais</a></li>
-      <li>Você pode rastrear se um consumidor optou pela venda de Informações pessoais. Para isso, é necessário estender a tabela Perfis e adicionar um campo <strong>Recusar para CCPA</strong> . <a href="https://helpx.adobe.com/campaign/kb/acc-privacy.html#ccpa">Leia mais</a></li></td> 
+   <td> <p>O Floco de neve é um data warehouse em nuvem totalmente gerenciado, criado para dimensionar no nível de armazenamento e de computação. Com esse novo conector, o Adobe Campaign agora pode aproveitar o poder do Floco de neve para executar a Segmentação de grandes dados. Esse conector está disponível para todos os clientes, inclusive hospedado pela Adobe.</p>
+    <p>Para obter mais informações, consulte a <a href="../../platform/using/specific-configuration-database.md#configure-access-to-snowflake">documentação detalhada</a>.</p>
+   </td> 
   </tr> 
  </tbody> 
 </table>
@@ -76,110 +65,146 @@ _02 de dezembro de 2019_
 <table> 
  <thead> 
   <tr> 
-   <th> <strong>Monitoramento ao vivo do fluxo de trabalho</strong><br /> </th> 
+   <th> <strong>Aprimoramentos do conector FDA Hadoop</strong><br /> </th> 
   </tr> 
  </thead> 
  <tbody> 
   <tr> 
-   <td> <p>Agora você pode monitorar o status de execução de todos os fluxos de trabalho na sua instância usando exibições predefinidas.</p>
-   <p>Para obter mais informações, consulte a <a href="../../workflow/using/monitoring-workflow-execution.md#filtering-workflows-status">documentação detalhada</a>.</p></td> 
-  </tr> 
- </tbody> 
-</table>
-
-
-<table> 
- <thead> 
-  <tr> 
-   <th> <strong>Conteúdo interativo com AMP</strong><br /> </th> 
-  </tr> 
- </thead> 
- <tbody> 
-  <tr> 
-<td> <p>O Adobe Campaign permite que você experimente o novo <a href="https://amp.dev/about/email/">AMP interativo para o formato de email</a> , que permite que os profissionais de marketing incluam componentes AMP dentro de mensagens para aprimorar a experiência de email com conteúdo avançado, dinâmico e interativo, acionável diretamente na própria mensagem.</p>
-   <p> Esse recurso é lançado como um beta público.</p>
-   <p>For more information, refer to the <a href="../../delivery/using/defining-interactive-content.md">detailed documentation</a> and the <a href="https://docs.adobe.com/content/help/en/campaign-learn/campaign-classic-tutorials/sending-messages/email-channel/defining-interactive-email-content-with-amp.html">tutorial video</a>.</p><br /></td> 
-  </tr> 
- </tbody> 
-</table>
-
-
-<table> 
- <thead> 
-  <tr> 
-   <th> <strong>Sistema de Mensagens Seguras de SMS (TLS)</strong><br /> </th> 
-  </tr> 
- </thead> 
- <tbody> 
-  <tr> 
-<td> <p>O SMS Seguro agora é suportado pelo Conector SMPP Genérico Estendido. Isto permite uma conexão codificada com o provedor.</p> <p><strong>Aviso</strong> Este recurso requer um certificado atualizado em todos os servidores. Certificados inválidos, revogados ou expirados gerarão erros que afetam os recursos gerais de envio de SMS.</p><p>Para obter mais informações, consulte a <a href="https://helpx.adobe.com/campaign/kb/sms-connector-protocol-and-settings.html">documentação detalhada</a>. </p> </td> 
+   <td> <p>O Conector FDA do Hadoop foi aprimorado para suportar o Hadoop 3.0 e a Cloudera.</p>
+    <p>Para obter mais informações, consulte a <a href="../../platform/using/specific-configuration-database.md#configure-access-to-hadoop-3">documentação detalhada</a>.</p>
+   </td> 
   </tr> 
  </tbody> 
 </table>
 
 **Aprimoramentos de segurança**
 
-* Corrigidas as vulnerabilidades de script entre sites armazenadas na interface do Campaign - validação de dados de entrada e codificação de saída. (NEO-16810)
-* Correção de um problema de segurança na autorização de perfil que poderia permitir o acesso a dados não autorizados ao reforçar a política de restrição de logon. (NEO-14445)
+* Segurança aprimorada na configuração do relatório para proteger contra clickjacking. Isso se aplica aos novos relatórios. Para relatórios antigos, é necessário republicá-los para aplicar as alterações. (NEO-13282)
+
+* Corrigido um pequeno problema de memória em cryptString. (NEO-20071)
+
+* JSP do monitor aprimorado para corrigir uma divulgação interna de IP. (NEO-16821)
+
+* Correção de um problema em que as informações de rastreamento de pilha podiam ser exibidas para usuários não administradores. (NEO-12388)
+
+* Gerenciamento de dados em cache aprimorado de sessões anteriores. (NEO-17039)
+
+* Correção de um problema que impedia o arquivo logins.log de registrar tentativas de login bem-sucedidas por meio do IMS. (NEO-11004)
 
 **Aprimoramentos**
 
-* Otimização do consumo de memória para notificações por push.
-* Para otimização de desempenho e armazenamento, a manipulação do arquivo **logins.log** foi aprimorada. O arquivo agora é dividido em vários arquivos, um a cada dia com um máximo de 365 arquivos retidos. [Leia mais](../../production/using/log-files.md)
-* A conta externa do Microsoft Dynamics CRM agora pode ser configurada usando credenciais de senha (senha + nome de usuário) ou certificado (chave privada). [Leia mais](../../platform/using/external-accounts.md#microsoft-dynamics-crm-external-account)
-* Alguns aprimoramentos foram adicionados ao conector Hadoop FDA para melhorar a confiabilidade
-* Uma garantia específica foi adicionada para verificar o espaço em disco antes de permitir o upload de recursos públicos no servidor.
-* Novas opções [de](../../installation/using/configuring-campaign-options.md) campanha foram adicionadas:
-   * A opção de configuração **WdbcKillSessionPolicy** permite que você afete o comportamento de Parada **** Incondicional em todos os fluxos de trabalho e consultas de banco de dados PostgreSQL.
-   * A opção **NmsOperation_DeliveryPreparationWindow** permite definir o número de dias acima dos quais as entregas com status inconsistente serão excluídas da contagem de entregas em execução.
-   * A opção **WdbcOptions_TempDbName** permite configurar um banco de dados separado para tabelas de trabalho no Microsoft SQL Server. Isso otimiza os backups e a replicação. [Leia mais](../../production/using/rdbms-specific-recommendations.md#microsoft-sql-server)
-   * A opção **XtkCleanup_NoStats** foi aprimorada para o PostgreSQL para controlar melhor o comportamento da etapa de otimização de armazenamento do fluxo de trabalho de limpeza do banco de dados. [Leia mais](../../production/using/database-cleanup-workflow.md#statistics-update)
-* Um mecanismo de bloqueio de conta foi adicionado à API **logon()** . Evita novas tentativas de login após um determinado número de tentativas consecutivas de falha de login em um período de tempo especificado.
-* Uma nova opção **Máximo de tempo** de execução de personalização nas propriedades de entrega permite definir um período de tempo limite para o tempo de execução de personalização, a fim de evitar que a fase de personalização seja executada por muito tempo. [Leia mais](../../delivery/using/personalization-fields.md#timing-out-personalization)
-* A opção de protocolo **** ftp foi adicionada para permitir que você use uma configuração proxy para conexões SFTP. [Leia mais](../../installation/using/configuring-campaign-server.md#proxy-connection-configuration)
-* Novo suporte de acesso proxy a um servidor externo SFTP para ambientes locais.
-* Uma garantia específica foi adicionada para impedir a instalação de pacotes que não são compatíveis com a instância da Campanha. [Leia mais](../../installation/using/installing-campaign-standard-packages.md)
+* O iOS 13 agora é compatível com o conector HTTP2.
 
-_Sistemas obsoletos_
+* Gerenciamento de quarentena e limpeza aprimorados das tabelas usadas pelo recurso de notificação por push (nms:address e nms:appSubscriptionRcp). No iOS (somente conector HTTP2), os tokens desativados agora são manipulados da mesma forma que no Android. O sinalizador disable agora está definido na tabela NmsAppSubscriptionRcp. [Leia mais](../../production/using/database-cleanup-workflow.md#subscription-cleanup--nmac-)
 
-Os seguintes sistemas foram [descontinuados](https://helpx.adobe.com/campaign/kb/deprecated-and-removed-features.html) para implementações do Campaign Classic:
-* Apache 2.2
-* Centos 6
+* Uma nova opção foi adicionada ao código **JavaScript e às atividades de fluxo de trabalho do código** JavaScript **** avançado para definir um período de tempo limite. Isso impede que a fase de execução do javascript seja executada por muito tempo. Se o período limite expirar, o fluxo de trabalho será interrompido. O tempo limite padrão é de 1 hora. [Leia mais](../../workflow/using/sql-code-and-javascript-code.md)
 
-Certifique-se de que você esteja usando as versões compatíveis de qualquer sistema listadas na matriz de compatibilidade de campanha mais recente. [Leia mais](https://helpx.adobe.com/campaign/kb/compatibility-matrix.html)
+* A análise de entrega agora é interrompida quando nenhuma afinidade correspondente é encontrada no servidor de mid-sourcing, com a mensagem de erro correspondente sendo exibida.
 
-_SDK do Campaign Mobile_
+* Agora há suporte para failover de banco de dados para Postgres: quando o servidor de banco de dados falha e é reiniciado, o Campaign agora se conecta a ele automaticamente.
 
-A compilação 1.0.26 do SDK do iOS está disponível. Nesta nova compilação, adicionamos o suporte do iOS 13. Esta nova versão agora suporta prioridade de notificação e o novo processo de gerenciamento de token de registro para notificações por push do iOS 13. Se você estiver executando aplicativos em uma versão anterior do SDK, será necessário recompilar seus aplicativos com o novo SDK. Para obter o SDK, entre em contato com o Atendimento ao cliente da Adobe.
+* A exibição **Iniciar pendente** foi adicionada ao nó Administração > Auditoria > Status dos fluxos de trabalho. Isso permite monitorar todos os fluxos de trabalho na sua instância que estão aguardando para serem iniciados pelo processo **operationMgt** . Esta exibição vem com o pacote de campanhas de marketing. [Leia mais](../../workflow/using/monitoring-workflow-execution.md#filtering-workflows-status)
+
+**Outras alterações**
+
+* No Linux, a inicialização do serviço nlserver agora usa uma unidade sistêmica em vez do script /etc/init.d/nlserver6. A migração para o novo esquema de inicialização é executada automaticamente quando você instala o pacote 20.1. O /etc/init.d/nlserver6 ainda é fornecido, mas para interagir com o serviço nlserver (iniciar, reiniciar, parar etc.), recomendamos que você use o comando systemctl diretamente.
+
+* As tabelas personalizadas mais consumentes foram movidas da sequência **xtkNewId** para sequências dedicadas. [Leia mais](https://helpx.adobe.com/campaign/kb/sequence_auto_generation.html#Switchtoadedicatedsequence)
+
+* Desempenho de consulta aprimorado que pode ser afetado por conexões desnecessárias ao banco de dados.
+
+* Aprimorado o desempenho do assistente de atualização de banco de dados.
+
+* O gerenciamento de registros do banco de dados foi aprimorado.
+
+* A robustez do pool de conexões foi aprimorada, o que pode impedir que falhas inesperadas de conexão ocorram com muita frequência.
+
+* As regras de validação de endereço de email para enviar um endereço para quarentena em caso de erro de software foram aprimoradas. [Leia mais](../../delivery/using/understanding-quarantine-management.md#soft-error-management)
+
+* Para Debian, o Campaign agora usa bibliotecas PCRE do sistema quando elas estão disponíveis.
+
+* A campanha agora permite o uso de uma biblioteca ODBC do sistema mais recente.
+
+* Foi adicionado um tempo limite ao servlet LINE ao abrir uma conexão para carregar uma imagem avançada. Se a imagem estiver demorando muito para carregar, o servlet interrompe a conexão para evitar um gargalo.
 
 **Correções**
 
-* Corrigida uma falha no console que ocorria ao adicionar uma tabela vinculada vazia na atividade de fluxo de trabalho **de Carregamento de dados (RDBMS)** . (NEO-12213)
-* Correção de um problema que resultava no não processamento de determinadas mensagens pelo servidor de Mid-Sourcing. (NEO-12395)
-* Correção de um problema no fluxo de trabalho de limpeza do banco de dados ao usar a opção de agrupamento de consulta com Teradata. (NEO-12399)
-* Correção de um problema que afetava a análise de entrega com a regra de tipologia, incluindo o domínio ne.jp. (NEO-12609)
-* Correção de um problema relacionado a atualizações de SMS sobre TLS que implicavam uma política de certificados mais restritiva. Essas atualizações podem levar a uma falha de conexão entre servidores de marketing e de mid-sourcing no caso de um certificado desatualizado. (NEO-17698)
-* Correção de um problema ao usar o botão **Testar conexão** em uma conta externa em um ambiente de mid-sourcing com autenticação Vault. (NEO-12722)
-* Correção de um problema em consultas que usavam funções de data com uma conexão FDA Hadoop. (NEO-12847)
-* Correção de um problema ao substituir uma imagem no editor de email. (NEO-13098)
-* Correção de um problema que resultava em erros de pós-atualização em pastas que tinham sido excluídas ou movidas para outro local. (NEO-13118)
-* Correção de um problema na exibição da imagem ao usar a opção **Definir imagem por tamanho** de tela do dispositivo nas mensagens LINE. (NEO-13228)
-* Correção de um problema de preparação de entrega quando a opção **Excluir endereço duplicado durante a entrega** não estava selecionada. (NEO-13240)
-* Correção de um problema nos fluxos de trabalho ao usar a atividade de transferência **de** Arquivo para baixar arquivos usando a opção **Excluir os arquivos de origem após a transferência** , com um nome que contém um caractere de espaço. (NEO-13411)
-* Correção de um problema com a limpeza do cache Tomcat, que pode levar a problemas de memória. (NEO-13456)
-* Correção de um problema ao instalar o **Controle do mecanismo de oferta com o pacote integrado da instância** de execução em uma instância de controle existente em execução no Microsoft SQL 2017. (NEO-13539)
-* Corrigida uma falha no console que ocorria ao desmarcar URLs rastreados em um email, na guia Conteúdo **de** texto. (NEO-13545)
-* Correção de um problema de codificação no nome do remetente chinês. (NEO-13837)
-* Correção de um erro que poderia levantar ao exibir dados de resposta da pesquisa do Explorer. (NEO-14590)
-* Correção de um problema que resultava em discrepância entre a classificação do log de entrega e a tabela de quarentena. (NEO-16547)
-* Correção de um problema com chaves DKIM que não eram incorporadas a emails. (NEO-16804)
-* Correção de um problema que exibia o código de erro incorreto quando um token de sessão inválido era usado no contexto de chamadas de API para acionar eventos. O código de erro era &#39;HTTP 200 OK&#39; em vez de &#39;HTTP 403 Proibido&#39;. (NEO-16826)
-* Correção de um problema ao exibir relatórios de entrega via acesso à Web. (NEO-17015)
-* Correção de um problema de autenticação IMS ao fazer logon no Adobe Campaign. (NEO-17312)
-* Correção de um problema que impedia que emails em quarentena fossem excluídos pelo processo de Gerenciamento de privacidade. (NEO-17314)
-* Correção de problemas de throughput após a atualização para o 9031 com o banco de dados SQL. (NEO-17558)
-* Correção de um problema que afetava o CRM Connector com Salesforce. (NEO-17712)
-* Correção de um problema de tempo limite ao importar dados de um SFTP externo. (NEO-19723)
-* Correção de um problema ao acessar modelos Preditivos. (NEO-19713)
-* Correção de um problema que afetava a amostragem aleatória na atividade do fluxo de trabalho **Dividir** com o banco de dados FDA do Hadoop. (NEO-16636)
+* Correção de um problema de criptografia de chave de conta ao usar o conector Hadoop.
 
+* Corrigido um problema de regressão devido à implementação da certificação SSL que causava a falha da conexão do usuário no servidor Windows. (NEO-20629)
+
+* Correção de um problema com a atividade de consulta incremental no caso de IDs de fluxo de trabalho negativas. (NEO-19779)
+
+* Correção de um problema de codificação ao executar consultas via conector Netezza FDA. (NEO-19594)
+
+* Correção de um problema que resultava em erro ao usar o método POST na atividade de evento de fluxo de trabalho de Download **da** Web.
+
+* Correção de um problema com a geração de proposta de oferta. (NEO-18176)
+
+* Correção de um problema de exibição de rodapé ao usar o modelo de formulário da Web de aquisição.
+
+* Correção de um problema ao analisar os URLs no conteúdo de entregas contínuas, o que poderia causar falhas. (NEO-16910)
+
+* Correção de um problema no qual os campos **Início** e **Fim** não eram calculados ao criar uma nova campanha.
+
+* Correção de um problema com a atividade do fluxo de trabalho Download **de** arquivo ao usar um URL.
+
+* Correção de um problema ao visualizar uma lista importada em uma atividade de consulta de um relatório. (NEO-13119)
+
+* Correção de um problema que exibia uma imagem desatualizada ao selecionar o bloco de personalização **Powered by Campaign** no editor de email.
+
+* A comunicação de rede entre o cliente e o servidor foi aprimorada.
+
+* Correção de um problema em que muitos fluxos de trabalho são criados na mesma campanha. Agora, você não pode criar mais de 28 fluxos de trabalho. Um aviso é exibido.
+
+* Correção de um problema ao usar a opção **Uma seleção de reconciliação de colunas** em uma atividade de fluxo de trabalho da **União** .
+
+* Correção de um problema de travamento do console que poderia ocorrer ao usar uma lista de enriquecimento corrompida em um fluxo de trabalho. (NEO-18096)
+
+* Correção de vários problemas de travamento do console que podem ocorrer em fluxos de trabalho (NEO-18010, NEO-18032)
+
+* Correção de um problema que permitia a execução de uma atividade de fluxo de trabalho de sinal **** externo mesmo quando ela estava desativada. (NEO-17524)
+
+* Correção de um problema ao criar um novo esquema.
+
+* Correção de um problema de rastreamento ao enviar mensagens SMS. (NEO-19595)
+
+* Correção de um problema que exibia um número de público-alvo direcionado incorreto nos indicadores de entrega.
+
+* Correção de um problema que exibia porcentagens incorretas ao gerar um relatório descritivo por meio de uma atividade de fluxo de trabalho. (NEO-14314)
+
+* Correção de um problema que fazia com que o relatório de throughput de entrega mostrasse números diferentes quando o parâmetro de visualização de tempo era exibido. (NEO-11783)
+
+* Correção de um problema que impedia que os indicadores de rastreamento de mensagens transacionais fossem atualizados pelo fluxo de trabalho de rastreamento. (NEO-17770)
+
+* Correção de um problema de regressão que resultava em falha e reinicialização do processo da Web ao solicitar uma oferta por meio do SOAP. (NEO-19482)
+
+* Correção de um problema que impedia o upload de dados para recursos públicos se o diretório de upload fosse um local compartilhado remoto. (NEO-19361)
+
+* Correção de um problema que causava a falha constante do fluxo de trabalho técnico **Importar públicos-alvo da Adobe Experience Cloud** . (NEO-18463)
+
+* Correção de um problema que impedia o envio de entregas ao usar modelos importados do Experience Manager. (NEO-17540)
+
+* Correção de um problema que ocorria após a atualização para a compilação 9032 e impedia a instância de se conectar ao servidor FTP pelo protocolo SSL. (NEO-20498)
+
+* Correção de um problema que ocorria ao excluir, inserir ou atualizar uma grande quantidade de dados com a atividade de dados **** Atualizar em um fluxo de trabalho usando um esquema FDA como dimensão de definição de metas. (NEO-13280)
+
+* Correção de um problema que impedia o envio de emails ao usar a declaração &quot;if&quot; fora da `body` tag .
+
+* Correção de um problema que ocorria ao tentar exibir a página espelhada dos registros de entrega de uma mensagem enviada. (NEO-17976)
+
+* Correção de um problema que impedia que o bloco de personalização **Link para espelhar página** fosse exibido na guia Conteúdo **de** texto depois de clicar em **Importar HTML** em uma entrega. (NEO-17568)
+
+* A mensagem de erro exibida ao clicar em um link para uma página espelhada que expirou foi esclarecida. (NEO-17340)
+
+* Correção de um problema que impedia que alguns botões fossem usados na tela de criação da distribuição **de** dados.
+
+* Correção de um problema que ocorria ao agendar uma atividade de entrega em uma instância com Ásia/Calcutá como fuso horário. (NEO-20001)
+
+* Um erro agora é exibido quando uma entrega tem um problema de configuração de afinidade.
+
+* Correção de um problema que exibia um número de tag de versão incorreto no menu **Sobre** .
+
+* Correção de um problema que ocorria ao tentar atualizar a conta de roteamento a partir das propriedades de uma entrega recorrente em um fluxo de trabalho. (NEO-18684)
+
+* Correção de um problema que ocorria ao conectar-se à instância por meio do módulo de redirecionamento, o que impedia que a conexão fosse limpa corretamente depois de fechada.
