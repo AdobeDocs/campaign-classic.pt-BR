@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 0291f464c2b4db51e1e56cefe83aa9e751e680a9
+source-git-commit: 21d808695bfde2fb3220964c066558ad30952443
 
 ---
 
@@ -28,7 +28,8 @@ A seção a seguir fornece uma visão geral da configuração necessária para c
 
 >[!NOTE]
 >
->Algumas configurações só podem ser executadas pela Adobe para implantações hospedadas pela Adobe. Por exemplo, para acessar os arquivos de configuração do servidor e da instância. Para saber mais sobre as diferentes implantações, consulte a seção Modelos [de](../../installation/using/hosting-models.md) hospedagem ou [este artigo](https://helpx.adobe.com/campaign/kb/acc-on-prem-vs-hosted.html).
+>Algumas configurações só podem ser executadas pela Adobe para implantações hospedadas pela Adobe. Por exemplo, para acessar os arquivos de configuração do servidor e da instância. Para saber mais sobre as diferentes implantações, consulte a seção Modelos [de](../../installation/using/hosting-models.md) hospedagem ou [este artigo](https://helpx.adobe.com/campaign/kb/acc-on-prem-vs-hosted.html).\
+>Refer to the [getting started guide](https://docs.campaign.adobe.com/doc/AC/getting_started/EN/deliverability.html) that presents the concepts and best practices related to deliverability.
 
 Para obter mais informações sobre os conceitos e as práticas recomendadas relacionadas à entrega, consulte esta [seção](../../delivery/using/about-deliverability.md).
 
@@ -379,19 +380,24 @@ Os parâmetros são os seguintes:
 
 * **endereço**: este é o endereço IP da máquina host MTA a ser usada.
 * **heloHost**: esse identificador representa o endereço IP como será visto pelo servidor SMTP.
+
 * **publicId**: essas informações são úteis quando um endereço IP é compartilhado por várias **mtas** do Adobe Campaign atrás de um roteador NAT. O servidor de estatísticas usa esse identificador para decorar a conexão e enviar estatísticas entre esse ponto de partida e o servidor de destino.
 * **peso**: permite definir a frequência relativa de uso do endereço. Por padrão, todos os endereços têm peso igual a 1.
 
-   No exemplo anterior, com condições normais, os endereços serão distribuídos da seguinte forma:
+>[!NOTE]
+>
+>No arquivo serverConf.xml, é necessário verificar se um IP corresponde a um único helohost com um identificador exclusivo (public_id). Não pode ser mapeado para vários helohosts, o que pode resultar em problemas de controle de entrega.
 
-   * &quot;1&quot;: 5 / (5+5+1) = 45%
-   * &quot;2&quot;: 5 / (5+5+1) = 45%
-   * &quot;3&quot;: 1 / (5+5+1) = 10%
-   Se, por exemplo, o primeiro endereço não puder ser usado para determinada MX, as mensagens serão enviadas da seguinte forma:
+No exemplo anterior, com condições normais, os endereços serão distribuídos da seguinte forma:
 
-   * &quot;2&quot;: 5 / (5+1) = 83%
-   * &quot;3&quot;: 1 / (5+1) = 17%
+    * &quot;1&quot;: 5 / (5+5+1) = 45%
+    * &quot;2&quot;: 5 / (5+5+1) = 45%
+    * &quot;3&quot;: 1 / (5+5+1) = 10%
 
+Se, por exemplo, o primeiro endereço não puder ser usado para determinada MX, as mensagens serão enviadas da seguinte forma:
+
+    * &quot;2&quot;: 5 / (5+1) = 83%
+    * &quot;3&quot;: 1 / (5+1) = 17%
 
 * **includeDomains**: permite que você reserve esse endereço IP para emails que pertencem a um domínio específico. Esta é uma lista de máscaras que podem conter um ou mais curingas (&#39;*&#39;). Se o atributo não for especificado, todos os domínios poderão usar esse endereço IP.
 
