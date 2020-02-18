@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 579329d9194115065dff2c192deb0376c75e67bd
+source-git-commit: 3801665574d0cdc9c0caf46fb2f0eede38f1b2cc
 
 ---
 
@@ -34,6 +34,6 @@ Não há impacto para os usuários do Apache se eles usarem o **apache_neolane.c
 
 Para usuários do IIS (no Windows), vários ícones aparecerão ausentes no console após a atualização da compilação. Etapas adicionais de atualização do IIS são necessárias:
 
-1. Após a atualização da compilação, clique duas vezes em **is_neolane_setup.vbs** localizado no diretório de instalação da Campanha. O caminho padrão é C:Arquivos de Programas (x86)AdobeAdobe Campaign v7tomcat-7conf
+1. Após a atualização da compilação, clique duas vezes em **is_neolane_setup.vbs** localizado no diretório de instalação da Campanha. O caminho padrão é C:\Program Files (x86)\Adobe\Adobe Campaign v7\tomcat-7\conf
 1. Reinicie o site do IIS que foi atualizado pela etapa anterior.
 
