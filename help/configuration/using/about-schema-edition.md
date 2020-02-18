@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 58b69ae83d0ff2bece26cb3ff0604cd92e3c20f4
+source-git-commit: dbff132e3bf88c408838f91e50e4b047947ee32a
 
 ---
 
@@ -90,7 +90,7 @@ Exemplos:
 
 O atributo **xpath** aponta para o campo no esquema que você deseja indexar.
 
->[!CAUTION]
+>[!IMPORTANT]
 >
 >É importante lembrar que os ganhos de desempenho de leitura da consulta SQL fornecidos por índices também vêm com uma ocorrência de desempenho nos registros de gravação. Por conseguinte, os índices devem ser utilizados com precaução.
 
@@ -112,7 +112,7 @@ Exemplo:
 
 Neste exemplo, em vez de permitir que o atributo **@autopk** crie uma chave primária padrão chamada &quot;id&quot;, estamos especificando nossa própria chave primária &quot;homeId&quot;.
 
->[!CAUTION]
+>[!IMPORTANT]
 >
 >Ao criar um novo schema ou durante uma extensão de schema, você precisa manter o mesmo valor de sequência da chave primária (@pkSequence) para todo o schema.
 
@@ -171,7 +171,7 @@ Exemplo de um campo XML também armazenado em um campo SQL e que tem um atributo
 <attribute name="secondaryEmail" label="Secondary email address" length="100" xml="true" sql="true" dataPolicy="email" />
 ```
 
->[!CAUTION]
+>[!IMPORTANT]
 >
 >Embora a maioria dos atributos esteja vinculada de acordo com uma cardinalidade de 1 a 1 a um campo físico do banco de dados, esse não é o caso dos campos XML ou computados.\
 >Um campo XML é armazenado em um campo de memorando (&quot;mData&quot;) da tabela.\
