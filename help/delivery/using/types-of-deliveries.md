@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 194d2263de0bf98afa0efc7e2e0b4ca433c95b6d
+source-git-commit: 4ac96bf0e54268832b84b17c3cc577af038cc712
 
 ---
 
@@ -30,7 +30,7 @@ Um **delivery** é um objeto de delivery independente executado uma vez. Ele pod
 
 Os deliveries podem ser criados a partir da lista de deliveries ou em um fluxo de trabalho através de uma atividade de [Delivery](../../workflow/using/delivery.md) .
 
-Os workflows também fornecem atividades de delivery específicas de acordo com o tipo de canal que você deseja usar. Para obter mais informações sobre essas atividades, consulte [esta seção](../../workflow/using/cross-channel-deliveries.md).
+Os workflows também fornecem atividades de delivery específicas de acordo com o tipo de canal que você deseja usar. For more on these activities, refer to [this section](../../workflow/using/cross-channel-deliveries.md).
 
 ## Delivery recorrente {#recurring-delivery}
 
