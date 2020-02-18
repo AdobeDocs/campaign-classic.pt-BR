@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: e7ff12260d875b85256c8678fa8d100fd355398e
+source-git-commit: dbff132e3bf88c408838f91e50e4b047947ee32a
 
 ---
 
@@ -304,7 +304,7 @@ Você pode especificar no esquema de origem o nome da sequência a ser usada com
 
 De ACC 18.10, **XtkNewId** não é mais o valor padrão para a sequência nos esquemas predefinidos. Agora você pode criar um esquema ou estender um esquema existente com uma sequência dedicada.
 
->[!CAUTION]
+>[!IMPORTANT]
 >
 >Ao criar um novo schema ou durante uma extensão de schema, você precisa manter o mesmo valor de sequência da chave primária (@pkSequence) para todo o schema.
 
@@ -346,7 +346,7 @@ O esquema gerado:
 
 Além da definição da chave e seu índice, um campo numérico chamado &quot;id&quot; foi adicionado ao esquema estendido para conter a chave primária gerada automaticamente.
 
->[!CAUTION]
+>[!IMPORTANT]
 >
 >Um registro com uma chave primária definida como 0 é automaticamente inserido na criação da tabela. Este registro é usado para evitar junções externas, que não são eficazes em tabelas de volume. Por padrão, todas as chaves estrangeiras são inicializadas com o valor 0 para que um resultado possa sempre ser retornado na junção quando o item de dados não for preenchido.
 
@@ -373,7 +373,7 @@ Para unir relações usando o Acesso ao Banco de Dados Federado:
 * ![](assets/join_fda_11.png) : Cardinalidade 1-1
 * ![](assets/join_fda_1m.png) : Cardinalidade 1-N
 
-For more information on FDA tables, refer to [Accessing an external database](../../platform/using/accessing-an-external-database.md).
+For more information on FDA tables, refer to [Accessing an external database](../../platform/using/about-fda.md).
 
 Um link deve ser declarado no esquema que contém a chave estrangeira da tabela vinculada pelo elemento principal:
 
