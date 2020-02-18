@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 579329d9194115065dff2c192deb0376c75e67bd
+source-git-commit: dbff132e3bf88c408838f91e50e4b047947ee32a
 
 ---
 
@@ -28,7 +28,7 @@ As características de um esquema que faz referência a uma tabela existente sã
 * Os nomes das tabelas e colunas devem ser explicitamente especificados,
 * Os índices devem ser declarados.
 
->[!CAUTION]
+>[!IMPORTANT]
 >
 >Não exclua os campos na tabela de destinatários padrão, mesmo que eles não sejam úteis. Isso pode causar erros de comportamento no banco de dados do Adobe Campaign.
 
