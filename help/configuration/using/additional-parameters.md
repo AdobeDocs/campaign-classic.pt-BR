@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 912507f25c5bc3c1ca7121b0df8182176900f4c0
+source-git-commit: dbff132e3bf88c408838f91e50e4b047947ee32a
 
 ---
 
@@ -53,7 +53,7 @@ Você pode exibir os valores desses parâmetros configurando a lista de log de r
 
 Na configuração do servidor, é possível definir o número máximo de caracteres a serem considerados para seus parâmetros de rastreamento da Web.
 
->[!CAUTION]
+>[!IMPORTANT]
 >
 >O aumento do número máximo de caracteres a serem considerados pode afetar o desempenho do rastreamento da Web de sua plataforma.
 
@@ -76,15 +76,25 @@ Quando a configuração for modificada, você deverá:
 
 * Pare o servidor Web que hospeda o módulo de redirecionamento (Apache, IIS etc.),
 * Pare o servidor do Adobe Campaign: **net stop nlserver6** in Windows, **/etc/init.d/nlserver6 stop** in Linux,
+
+   >[!NOTE]
+   >
+   >A partir do 20.1, recomendamos usar o seguinte comando (para Linux): nlserver **systemctl stop**
+
 * No Linux, exclua os segmentos de memória compartilhada usando o comando **ipcrm** ,
 * Reinicie o servidor do Adobe Campaign: iniciar **net nlserver6** no Windows, **/etc/init.d/nlserver6 iniciar** no Linux,
+
+   >[!NOTE]
+   >
+   >A partir do 20.1, recomendamos usar o seguinte comando (para Linux): nlserver de inicialização **do systemCtl**
+
 * Reinicie o servidor Web.
 
 **Exemplo**: tendo em conta a configuração no Linux.
 
 ```
-adobe@selma:~$ /etc/init.d/nlserver6 stop
-adobe@selma:~$ /etc/init.d/apache stop
+adobe@selma:~$ systemctl stop nlserver
+adobe@selma:~$ systemctl stop apache2
 adobe@selma:~$ ipcs shm
 
 ------ Shared Memory Segments --------
@@ -100,8 +110,8 @@ key        msqid      owner      perms      used-bytes   messages
 
 adobe@selma:~$ ipcrm shm 2097153                             
 1 resource(s) deleted
-adobe@selma:~$ /etc/init.d/nlserver6 start
-adobe@selma:~$ /etc/init.d/apache start
+adobe@selma:~$ systemctl start nlserver
+adobe@selma:~$ systemctl start apache2
 ```
 
 >[!NOTE]
