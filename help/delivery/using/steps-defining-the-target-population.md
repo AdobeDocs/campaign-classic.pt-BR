@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 62e6537ba306956cac3bf6e1dd18567bc1414917
+source-git-commit: 4ac96bf0e54268832b84b17c3cc577af038cc712
 
 ---
 
@@ -29,7 +29,7 @@ Para cada entrega, é possível definir vários tipos de populações-alvo. A se
 * **Os principais destinatários da entrega**. [Leia mais](../../delivery/using/steps-defining-the-target-population.md#selecting-the-main-target).
 * **Os destinatários das mensagens** de prova, para configurar um ciclo de validação. [Leia mais](../../delivery/using/steps-defining-the-target-population.md#defining-a-specific-proof-target).
 
-Além disso, também é possível definir endereços [](../../delivery/using/about-seed-addresses.md)semente e grupos [de](../../campaign/using/marketing-campaign-deliveries.md#defining-a-control-group)controle. se a entrega for incluída em uma campanha de marketing.
+Além disso, também é possível definir endereços [semente e grupos](../../delivery/using/about-seed-addresses.md)de [](../../campaign/using/marketing-campaign-deliveries.md#defining-a-control-group)controle. se a entrega for incluída em uma campanha de marketing.
 
 ## Selecionar os principais destinatários da entrega {#selecting-the-main-target}
 
