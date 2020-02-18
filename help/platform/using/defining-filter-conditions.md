@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: cf7c90f0ea9fbce3a4fd53f24189617cbd33fc40
+source-git-commit: a0698ad55afb391bdc652a00b43b20df6fb9851b
 
 ---
 
@@ -267,7 +267,7 @@ Vincular a uma tabela e elemento de coleção:
 >* Use the **[!UICONTROL Add]** button (above the side icon bar) to add an output column in which we wish to edit the expression. For more on editing an expression, refer to [Building expressions](#building-expressions).
 >* Exclua uma coluna de saída clicando no &#39;x&#39; vermelho (**Excluir**).
 >* Altere a ordem das colunas de saída usando as setas.
->* The **[!UICONTROL Distribution of values]** serves as a way to view the distributon of the values of the field selected (for example, the distributions linked to recipient towns, recipient languages, etc.).
+>* The **[!UICONTROL Distribution of values]** serves as a way to view the distribution of the values of the field selected (for example, the distributions linked to recipient towns, recipient languages, etc.).
 
 
 ## Criação de campos calculados {#creating-calculated-fields}
