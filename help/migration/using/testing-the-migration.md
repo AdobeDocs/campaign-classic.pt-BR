@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 4f8a13e3788b99ff4214e00dec1f88fdef0cb964
+source-git-commit: 9f7cf3d530f141a661df5fcc8cbcf0bb4c8d3e89
 
 ---
 
@@ -49,7 +49,7 @@ Você deve ter um ambiente de teste/desenvolvimento para realizar testes de migr
 
 1. Se a migração do ambiente de desenvolvimento for bem-sucedida, você poderá migrar o ambiente de produção.
 
->[!CAUTION]
+>[!IMPORTANT]
 >
 >Devido a alterações feitas na estrutura de dados, não é possível importar e exportar pacotes de dados entre uma plataforma v5 e uma plataforma v7.
 
