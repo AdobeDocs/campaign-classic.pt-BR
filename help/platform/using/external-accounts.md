@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 6ae45cbd87fc0152fc654202e03501fc8d2abd06
+source-git-commit: e7df1f73dd454f826096ce4d5fe430e10fe407ad
 
 ---
 
@@ -131,8 +131,8 @@ Os seguintes canais podem ser configurados:
 * [Facebook](../../social/using/publishing-on-facebook-walls.md#delegating-write-access-to-adobe-campaign)
 * [Twitter](../../social/using/configuring-publishing-on-twitter.md)
 * [Canal
-                           iOS](../../delivery/using/setting-up-mobile-app-channel.md#ios-connectors)
-* [Canal Android](../../delivery/using/setting-up-mobile-app-channel.md#android-connectors)
+                           iOS](../../delivery/using/configuring-the-mobile-application.md#configuring-the-mobile-application-ios)
+* [Canal Android](../../delivery/using/configuring-the-mobile-application.md#configuring-the-mobile-application-android)
 
 ## Conta externa FTP {#ftp-external-account}
 
@@ -178,10 +178,9 @@ O Adobe Campaign fornece vários conectores que permitem que você se comunique 
 
 Os seguintes tipos de conexão podem ser configurados:
 
-* Oracle. Para obter mais informações, consulte esta [página](../../platform/using/accessing-an-external-database.md#configure-access-to-oracle).
-* MySQL. Para configurar o acesso ao MYSQL, consulte esta [página](../../platform/using/accessing-an-external-database.md#configure-access-to-mysql).
-* Netezza. Para obter mais informações, consulte esta [página](../../platform/using/accessing-an-external-database.md#configure-access-to-netezza).
-* SAP HANA. Para obter mais informações, consulte esta [página](../../platform/using/accessing-an-external-database.md#configure-access-to-sap-hanaa).
+* Oracle. Para obter mais informações, consulte esta [página](../../platform/using/specific-configuration-database.md#configure-access-to-oracle).
+* Netezza. Para obter mais informações, consulte esta [página](../../platform/using/specific-configuration-database.md#configure-access-to-netezza).
+* SAP HANA. Para obter mais informações, consulte esta [página](../../platform/using/specific-configuration-database.md#configure-access-to-sap-hana).
 * InfiniDB
 * Microsoft SQL Server
 * AsterData
@@ -192,9 +191,33 @@ Os seguintes tipos de conexão podem ser configurados:
 * ODBC (Sybase ASE, Sybase IQ)
 * Retransmissão HTTP para uma instância remota
 
+### Conta externa em floco de neve {#snowflake-external-account}
+
+The **Snowflake** external account allows you to connect your Campaign instance to your Snowflake external database. For more information on how to configure Campaign Classic with Snowflake, refer to this [page](../../platform/using/specific-configuration-database.md#configure-access-to-snowflake).
+
+Para configurar essa conta externa para funcionar com o Adobe Campaign, você precisa fornecer os seguintes detalhes:
+
+* **[!UICONTROL Server]**
+
+       URL do servidor Snowflake.
+   
+* **[!UICONTROL Account]**
+
+       Nome do usuário.
+   
+* **[!UICONTROL Password]**
+
+       Senha da conta do usuário.
+   
+* **[!UICONTROL Database]**
+
+       Nome do banco de dados.
+   
+![](assets/snowflake.png)
+
 ### Conta externa Teradata {#teradata-external-account}
 
-A conta externa do **Teradata** permite conectar sua instância do Campaign ao banco de dados externo do Teradata. For more information on how to configure Campaign Classic with Teradata, refer to this [page](https://helpx.adobe.com/campaign/kb/campaign_fda_teradata.html) or this [section](../../platform/using/accessing-an-external-database.md#configure-access-to-teradata).
+A conta externa do **Teradata** permite conectar sua instância do Campaign ao banco de dados externo do Teradata. For more information on how to configure Campaign Classic with Teradata, refer to this [page](https://helpx.adobe.com/campaign/kb/campaign_fda_teradata.html) or this [section](../../platform/using/specific-configuration-database.md#configure-access-to-teradata).
 
 ![](assets/ext_account_19.png)
 
@@ -222,11 +245,11 @@ Para configurar essa conta externa para funcionar com o Adobe Campaign, você pr
 
 * **[!UICONTROL Options]**
 
-   Opções a serem passadas pelo Teradata
+   Opções a serem passadas pelo Teradata.
 
 * **[!UICONTROL Timezone]**
 
-   Fuso horário definido no Teradata
+   Fuso horário definido no Teradata.
 
 ![](assets/ext_account_20.png)
 
@@ -271,7 +294,7 @@ For each Facebook application, you need to create a **[!UICONTROL Facebook Conne
 
 * **[!UICONTROL Application secret]**
 
-   Segredo do aplicativo do seu aplicativo Facebook
+   Segredo do aplicativo do seu aplicativo Facebook.
 
 Se você escolheu o modo hospedado por este modo de instância, 
                 o Secure Canvas URL precisa ser colado no campo **jogos do 
@@ -325,12 +348,12 @@ To connect to the Adobe Campaign console using an Adobe ID, you must configure t
 
 * **[!UICONTROL IMS client secret]**
 
-   Credencial do segredo do cliente IMS
+   Credencial do segredo do cliente IMS.
 
 * **[!UICONTROL Callback server]**
 
    URL de acesso da instância do 
-                        Adobe Campaign
+                        Adobe Campaign.
 
 * **[!UICONTROL IMS organization ID]**
 
@@ -466,7 +489,7 @@ The **[!UICONTROL Azure]** external account enables a connection to a shared ext
 
 ## Conta externa do Hadoop {#hadoop-external-account}
 
-The **[!UICONTROL Hadoop]** external account enables a connection to a shared external database, as long as this connection is active, the database can be accessed via Adobe Campaign. Para obter mais informações sobre como configurar o acesso ao Hadoop, consulte esta [seção](../../platform/using/accessing-an-external-database.md#configure-access-to-hadoop).
+The **[!UICONTROL Hadoop]** external account enables a connection to a shared external database, as long as this connection is active, the database can be accessed via Adobe Campaign. Para obter mais informações sobre como configurar o acesso ao Hadoop, consulte esta [seção](../../platform/using/specific-configuration-database.md#configure-access-to-hadoop).
 
 ![](assets/ext_account_16.png)
 
