@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: d5813af76e3cad16d9094a19509dcb855e36c01f
+source-git-commit: 65043155ab6ff1fe556283991777964bb43c57ce
 
 ---
 
@@ -152,13 +152,13 @@ Esta tarefa limpa todas as entregas a serem excluídas ou recicladas.
 
       sendo **$(l)** o identificador da entrega.
 
-   * Nas tabelas de log de entrega (**NmsBroadlogXxx**), as exclusões em massa são executadas em lotes de 10.000 registros.
-   * Nas tabelas de proposta de oferta (**NmsPropositionXxx**), as exclusões em massa são executadas em lotes de 10.000 registros.
-   * Nas tabelas de log de rastreamento (**NmsTrackinglogXxx**), as exclusões em massa são executadas em lotes de 5.000 registros.
-   * Na tabela de fragmentos de entrega (**NmsDeliveryPart**), as exclusões em massa são executadas em lotes de 5.000 registros. Esta tabela contém informações de personalização sobre as mensagens restantes a serem entregues.
-   * Na tabela de fragmentos de dados da página espelhada (**NmsMirrorPageInfo**), as exclusões em massa são executadas em lotes de 5.000 registros. Esta tabela contém informações de personalização de todas as mensagens usadas para gerar páginas espelhadas.
-   * Na tabela de pesquisa da página espelhada (**NmsMirrorPageSearch**), as exclusões em massa são executadas em lotes de 5.000 registros. Esta tabela é um índice de pesquisa que fornece acesso às informações de personalização armazenadas na tabela **NmsMirrorPageInfo** .
-   * Na tabela de log do processo em lote (**XtkJobLog**), as exclusões em massa são executadas em lotes de 5.000 registros. Esta tabela contém o log de entregas a serem excluídas.
+   * Nas tabelas de log de entrega (**NmsBroadlogXxx**), as exclusões em massa são executadas em lotes de 20.000 registros.
+   * Nas tabelas de proposta de oferta (**NmsPropositionXxx**), as exclusões em massa são executadas em lotes de 20.000 registros.
+   * Nas tabelas de log de rastreamento (**NmsTrackinglogXxx**), as exclusões em massa são executadas em lotes de 20.000 registros.
+   * Na tabela de fragmentos de entrega (**NmsDeliveryPart**), as exclusões em massa são executadas em lotes de 500.000 registros. Esta tabela contém informações de personalização sobre as mensagens restantes a serem entregues.
+   * Na tabela de fragmentos de dados da página espelhada (**NmsMirrorPageInfo**), as exclusões em massa são executadas em lotes de 20.000 registros para partes de entrega expiradas e para partes concluídas ou canceladas. Esta tabela contém informações de personalização de todas as mensagens usadas para gerar páginas espelhadas.
+   * Na tabela de pesquisa da página espelhada (**NmsMirrorPageSearch**), as exclusões em massa são executadas em lotes de 20.000 registros. Esta tabela é um índice de pesquisa que fornece acesso às informações de personalização armazenadas na tabela **NmsMirrorPageInfo** .
+   * Na tabela de log do processo em lote (**XtkJobLog**), as exclusões em massa são executadas em lotes de 20.000 registros. Esta tabela contém o log de entregas a serem excluídas.
    * Na tabela de rastreamento de URL de entrega (**NmsTrackingUrl**), a seguinte consulta é usada:
 
       ```
@@ -576,6 +576,26 @@ Esta tarefa limpa tabelas de simulação órfãs (que não estão mais vinculada
    DROP TABLE wkSimu_456831_aggr
    ```
 
+### Limpeza da trilha de auditoria {#cleanup-of-audit-trail}
+
+A consulta a seguir é usada:
+
+```
+DELETE FROM XtkAudit WHERE tsChanged < $(tsDate)
+```
+
+em que **$(tsDate)** é a data atual do servidor a partir da qual o período definido para a opção **XtkCleanup_AuditTrailPurgeDelay** está substracto.
+
+### Limpeza de Nmsaddress {#cleanup-of-nmsaddress}
+
+A consulta a seguir é usada:
+
+```
+DELETE FROM NmsAddress WHERE iAddressId IN (SELECT iAddressId FROM NmsAddress WHERE iStatus=STATUS_QUARANTINE AND tsLastModified < $(NmsCleanup_AppSubscriptionRcpPurgeDelay + 5d) AND iType IN (MESSAGETYPE_IOS, MESSAGETYPE_ANDROID ) LIMIT 5000)
+```
+
+Essa consulta exclui todas as entradas relacionadas ao iOS e Android.
+
 ### Atualização de estatísticas e otimização do armazenamento {#statistics-update}
 
 A opção **XtkCleanup_NoStats** permite controlar o comportamento da etapa de otimização de armazenamento do fluxo de trabalho de limpeza.
@@ -590,13 +610,15 @@ Se o valor da opção for 2, isso executará a análise de armazenamento no modo
 
 Esta tarefa exclui qualquer assinatura relacionada a serviços ou aplicativos móveis excluídos.
 
-1. Para recuperar a lista de esquemas de catálogo, a consulta a seguir é usada:
+Para recuperar a lista de esquemas de catálogo, a consulta a seguir é usada:
 
-   ```
-   SELECT distinct(sBroadLogSchema) FROM NmsDeliveryMapping WHERE sBroadLogSchema IS NOT NULL
-   ```
+```
+SELECT distinct(sBroadLogSchema) FROM NmsDeliveryMapping WHERE sBroadLogSchema IS NOT NULL
+```
 
-1. Em seguida, a tarefa recupera os nomes das tabelas vinculadas ao link **appSubscription** e exclui essas tabelas.
+Em seguida, a tarefa recupera os nomes das tabelas vinculadas ao link **appSubscription** e exclui essas tabelas.
+
+Esse fluxo de trabalho de limpeza também exclui todas as entradas em que idisabled = 1 que não foram atualizadas desde o tempo definido na opção **NmsCleanup_AppSubscriptionRcpPurgeDelay** .
 
 ### Limpando informações da sessão {#cleansing-session-information}
 
@@ -613,13 +635,3 @@ Essa tarefa limpa os eventos recebidos e armazenados nas instâncias de execuç�
 ### Reações de limpeza {#cleansing-reactions}
 
 Esta tarefa limpa as reações (tabela **NmsRemaMatchRcp**) nas quais as hipóteses foram eliminadas.
-
-### Limpeza da trilha de auditoria {#cleanup-of-audit-trail}
-
-A consulta a seguir é usada:
-
-```
-DELETE FROM XtkAudit WHERE tsChanged < $(tsDate)
-```
-
-em que **$(tsDate)** é a data atual do servidor a partir da qual o período definido para a opção **XtkCleanup_AuditTrailPurgeDelay** está substracto.
