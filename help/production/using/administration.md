@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 779d9162b7296339a796512838612ede1186ddcc
+source-git-commit: 3801665574d0cdc9c0caf46fb2f0eede38f1b2cc
 
 ---
 
@@ -37,6 +37,10 @@ Os seguintes comandos são usados para iniciar e encerrar o serviço Adobe Campa
 
    * **/etc/init.dção do/nlserver6**
    * **/etc/init.dção de/nlserver6**
+
+>[!NOTE]
+>
+>A partir do 20.1, recomendamos usar o seguinte comando (para Linux): nlserver **/** **system ctl stop nlserver**
 
 Esta é uma lista dos comandos de administração comuns acessíveis no Linux (como o **Adobe Campaign**):
 
@@ -76,24 +80,22 @@ Esta é uma lista dos comandos de administração comuns acessíveis no Linux (c
    **Web de reinicialização do nlserver**
 
    >[!NOTE]
-
-   >* Se a instância não for especificada, a instância &quot;padrão&quot; será usada.
-   >    
-   >    
+   > 
+   >    * Se a instância não for especificada, a instância &quot;padrão&quot; será usada.
    >    * Em caso de emergência, use a opção **-imediata** para forçar uma interrupção imediata do processo (equivalente ao comando Unix **kill -9**).
-   * Use a opção **-noconsole** para garantir que o módulo iniciado não exiba nada no console. Seus registros serão gravados no disco por meio do módulo **syslogd** .
-   * Use a opção **-detalhado** para exibir informações adicionais sobre ações do processo.
-
-
+   >    * Use a opção **-noconsole** para garantir que o módulo iniciado não exiba nada no console. Seus registros serão gravados no disco por meio do módulo **syslogd** .
+   >    * Use a opção **-detalhado** para exibir informações adicionais sobre ações do processo.
+      >    
+      >      
       Exemplo:
-
-
+      >    
+      >      
       **nlserver restart web -verbose**
-
-
+      >    
+      >      
       **nlserver start mta@myinstance - verbose**
-
-
+      >    
+      >      
       Essa opção adiciona outros logs. Recomendamos iniciar os processos novamente sem a opção **-verbose** depois que você encontrar as informações desejadas, para evitar sobrecarregar os logs.
 
 
@@ -110,5 +112,6 @@ Esta é uma lista dos comandos de administração comuns acessíveis no Linux (c
    **nlserver config -reload**
 
    >[!NOTE]
-   Algumas alterações de configuração não são tomadas em consideração de forma dinâmica; O Adobe Campaign deve ser encerrado e reiniciado.
+   >
+   >Algumas alterações de configuração não são tomadas em consideração de forma dinâmica; O Adobe Campaign deve ser encerrado e reiniciado.
 
