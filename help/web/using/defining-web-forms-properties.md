@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: c9c9d5f96856ce9e19571bad032d2bf04eaa60bd
+source-git-commit: 7a0d82dfc6dc50026214d7d3b1094d45ffadbc03
 
 ---
 
@@ -141,7 +141,7 @@ Os seguintes parâmetros estão disponíveis por padrão:
 * **origin** para especificar a origem do entrevistado.
 * **_uuid** permite a exibição de formulário antes da publicação e do rastreamento de erros. Esse parâmetro é para uso interno (criação e depuração): quando você acessa o formulário web por meio dessa URL, os registros criados não são levados em consideração no rastreamento (relatórios). The origin is forced to the **[!UICONTROL Adobe Campaign]** value.
 
-   It is used with the **_preview** parameters and/or ** _debug**:
+   Ele é usado com os parâmetros **_preview** e/ou **_debug**:
 
    **_preview** para exibir a última versão salva. Esse parâmetro deve ser usado somente na fase de teste.
 
