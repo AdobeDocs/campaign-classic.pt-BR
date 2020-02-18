@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 20f835c357d016643ea1f3209ee4dfb6d3239f90
+source-git-commit: dbff132e3bf88c408838f91e50e4b047947ee32a
 
 ---
 
@@ -24,7 +24,7 @@ source-git-commit: 20f835c357d016643ea1f3209ee4dfb6d3239f90
 
 O Adobe Campaign permite que você vincule informações coletadas de rastreamento da Web a um destinatário quando ele navegar no site anonimamente. Quando um usuário navega nas páginas marcadas do seu site, essas informações de navegação são coletadas, de modo que, uma vez clicadas em um email enviado pelo Adobe Campaign, elas são identificadas e as informações são vinculadas automaticamente a elas.
 
->[!CAUTION]
+>[!IMPORTANT]
 >
 >Configurar o rastreamento anônimo em um site pode acionar a coleta de uma quantidade significativa de logs de rastreamento, afetando assim a operação do banco de dados. Configure-o com cuidado.\
 >Os logs de rastreamento são salvos no banco de dados até que os dados de rastreamento sejam removidos. Use o assistente de implantação para configurar a frequência de expurgação. Para obter mais informações, consulte [esta seção](../../installation/using/deploying-an-instance.md#purging-data).
