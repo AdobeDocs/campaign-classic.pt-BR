@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 209ac4d81d2d27c264ee6b288bcb7fcb1900ffc5
+source-git-commit: 2e18121e4094bc4cb215e5471091810df56b3ef5
 
 ---
 
@@ -59,7 +59,7 @@ Para que o Adobe Campaign possa publicar nas paredes de suas páginas, é necess
 1. Faça logon na conta do Facebook que você usa para administrar páginas.
 1. Digite o seguinte endereço no seu navegador: [https://developers.facebook.com/apps](https://developers.facebook.com/apps).
 
-   >[!CAUTION]
+   >[!IMPORTANT]
    >
    >Dependendo do tipo de conta que você possui, uma ou mais autorizações podem ser necessárias.
    >
@@ -87,7 +87,7 @@ Para delegar o acesso de gravação ao Adobe Campaign para publicação nas pare
 
 Esta etapa requer acesso ao console do Adobe Campaign e a um navegador da Internet conectado à conta do Facebook que você usa para a administração da página:
 
->[!CAUTION]
+>[!IMPORTANT]
 >
 >O operador do Adobe Campaign deve ter direitos administrativos para executar essa configuração.
 
@@ -107,7 +107,7 @@ Esta etapa requer acesso ao console do Adobe Campaign e a um navegador da Intern
 
    ![](assets/social_facebook_external_account_006.png)
 
-   >[!CAUTION]
+   >[!IMPORTANT]
    >
    >Você não deve usar o URL inseguro em nenhuma circunstância.
 
