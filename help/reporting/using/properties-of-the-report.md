@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: af768da6ee8cc0ca2ea1f24f297239b974c113a5
+source-git-commit: b2222b2997105801164f930428c7b05ae7d11336
 
 ---
 
@@ -86,7 +86,7 @@ As propriedades do formulário da Web são detalhadas [nesta página](../../web/
 
 ## Definição das configurações adicionais {#defining-additional-settings}
 
-The **[!UICONTROL Settings]** tab lets you create additional settings for the report: these settings will be passed into the URL during the call up.
+The **[!UICONTROL Parameters]** tab lets you create additional settings for the report: these settings will be passed into the URL during the call up.
 
 As propriedades do formulário da Web são detalhadas [nesta página](../../web/using/about-web-forms.md).
 
@@ -110,6 +110,14 @@ Para criar uma nova configuração:
    Os dados são recuperados diretamente no nível da entidade: **ctx/receipt/@account**.
 
    The **[!UICONTROL Variable]** option lets you create or select a variable which will be passed as a parameter of the URL and can be used in the filters.
+
+O **[!UICONTROL Response HTTP headers]** permite que você evite o recurso de clickjacking ao incluir a página do seu relatório em uma página HTML usando o iframe. Para evitar clickjacking, você pode escolher o **[!UICONTROL X-Frame-options header]** comportamento:
+
+* **[!UICONTROL None]**: O relatório não terá **[!UICONTROL X-Frame-options header]**.
+* **[!UICONTROL Same as origin]**: Definido por padrão para novos relatórios e relatórios republicados. O nome do host será igual ao URL do relatório.
+* **[!UICONTROL Deny]**: O relatório não pode ser incluído em uma página HTML usando iframe.
+
+![](assets/s_ncs_advuser_report_properties_09c.png)
 
 ## Adição de variáveis {#adding-variables}
 
