@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: c10a0a11c6e9952aa47da1f7a15188c79c62508d
+source-git-commit: 7bcf222f41c0e40368644b76197b07f2ded699f0
 
 ---
 
@@ -28,7 +28,7 @@ A atividade de **Gestão de Dados SQL** permite escrever seus próprios scripts 
 
 Antes de configurar a atividade, verifique se os pré-requisitos a seguir estão sendo cumpridos:
 
-* A atividade está disponível somente para fontes de dados remotas. The **[!UICONTROL FDA]** (Federated Data Access) package must therefore be installed on your instance (see [this section](../../platform/using/accessing-an-external-database.md)).
+* A atividade está disponível somente para fontes de dados remotas. The **[!UICONTROL FDA]** (Federated Data Access) package must therefore be installed on your instance (see [this section](../../platform/using/about-fda.md)).
 * O schema de saída deve existir no banco de dados e ser vinculado a um banco de dados do FDA (para obter mais informações sobre schemas de dados, consulte [esta seção](../../configuration/using/about-schema-reference.md)).
 * The operator executing the workflow must have the **[!UICONTROL USE SQL DATA MANAGEMENT ACTIVITY (useSqlDmActivity)]** named right. Para saber mais sobre direitos nomeados, consulte [esta seção](../../platform/using/access-management.md#named-rights).
 
