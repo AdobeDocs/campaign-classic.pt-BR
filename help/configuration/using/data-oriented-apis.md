@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: f9b3508fee3b441752648258b1bc9d5d2b919791
+source-git-commit: dbff132e3bf88c408838f91e50e4b047947ee32a
 
 ---
 
@@ -392,7 +392,7 @@ Quando uma consulta é construída, os valores &quot;vinculados&quot; são subst
 
 Para evitar vincular um parâmetro, o atributo &quot;noSqlBind&quot; deve ser preenchido com o valor &quot;true&quot;.
 
->[!CAUTION]
+>[!IMPORTANT]
 >
 >Se a consulta incluir instruções &quot;pedido por&quot; ou &quot;grupo por&quot;, os mecanismos do banco de dados não poderão &quot;vincular&quot; valores. Você deve colocar o atributo @noSqlBind=&quot;true&quot; nas instruções &quot;select&quot; e/ou &quot;where&quot; da consulta.
 
