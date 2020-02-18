@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 1c86322fa95aee024f6c691b61a10c21a9a22eb7
+source-git-commit: 2e18121e4094bc4cb215e5471091810df56b3ef5
 
 ---
 
@@ -84,7 +84,7 @@ Esta etapa requer acesso ao console do Adobe Campaign e a um navegador da Intern
 
    ![](assets/social_facebook_external_account_009.png)
 
-   >[!CAUTION]
+   >[!IMPORTANT]
    >
    >Você não deve usar o URL inseguro em nenhuma circunstância.
 
