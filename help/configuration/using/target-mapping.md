@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 8b3ab02d1fd90c3f14314508a8fa7d99df82436c
+source-git-commit: dbff132e3bf88c408838f91e50e4b047947ee32a
 
 ---
 
@@ -105,7 +105,7 @@ Para fazer isso, siga as etapas abaixo:
 
    ![](assets/mapping_diffusion_wizard_3.png)
 
-   >[!CAUTION]
+   >[!IMPORTANT]
    >
    >O Adobe Campaign não oferece suporte a vários esquemas de destinatários, conhecidos como esquemas de definição de metas, vinculados aos mesmos esquemas de registro de transmissão e/ou rastreamento. Caso contrário, isso pode resultar em anomalias na reconciliação de dados posteriormente. Para obter mais informações sobre isso, consulte a página [Recomendações e limitações](../../configuration/using/about-custom-recipient-table.md) .
 
