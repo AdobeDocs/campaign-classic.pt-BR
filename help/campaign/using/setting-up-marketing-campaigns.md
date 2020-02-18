@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: b47dcfa0e4ee2e5e43e7aa14b94e12fd70ff9c2d
+source-git-commit: eee744eb5bc7a43fd412ffb01f0546385146a978
 
 ---
 
@@ -148,14 +148,14 @@ Você pode usar o assistente de criação de agendamento para preencher todas as
 
 The configuration mode of the execution schedule coincides with the **[!UICONTROL Scheduler]** object of the Workflow. Para obter mais informações, consulte [esta seção](../../workflow/using/executing-a-workflow.md#architecture).
 
->[!CAUTION]
+>[!IMPORTANT]
 >
 >A configuração do agendamento de execução deve ser realizada cuidadosamente para evitar sobrecarga do banco de dados. As campanhas recorrentes duplicam o(s) fluxo(s) de trabalho de seu template dependendo do cronograma especificado. A implementação da criação de workflow excessivamente frequente pode dificultar a operação do banco de dados.
 
 1. Specify a value in the **[!UICONTROL Create in advance for]** field in order to create the corresponding workflows for the period indicated.
 1. Crie o template de workflow a ser usado em campanhas com base nesse template, com os parâmetros de definição de metas e uma ou mais remessas genéricas.
 
-   >[!CAUTION]
+   >[!NOTE]
    >
    >Esse workflow deve ser salvo como um template de workflow recorrente. To do this, edit the workflow properties and select the **[!UICONTROL Recurring workflow template]** option in the **[!UICONTROL Execution]** tab.
 
@@ -174,7 +174,7 @@ Para criar a campanha recorrente e executar os workflows de acordo com o agendam
 
    Para cada linha, você pode adicionar as seguintes opções adicionais:
 
-   * **[!UICONTROL To be approved]** : permite forçar as solicitações de aprovação de entrega no fluxo de trabalho
+   * **[!UICONTROL To be approved]** : permite forçar as solicitações de aprovação de entrega no fluxo de trabalho.
    * **[!UICONTROL To be started]** : permite que você inicie o fluxo de trabalho quando a data inicial for atingida.
    The **[!UICONTROL Create in advance for]** field lets you create all the workflows covering the period entered.
 
@@ -211,7 +211,7 @@ Uma campanha periódica é uma campanha baseada em um template específico que p
 
 1. Digite as propriedades do template.
 
-   >[!CAUTION]
+   >[!NOTE]
    >
    >O operador que o template está atribuído precisa ter os direitos apropriados para criar campanhas no programa selecionado.
 
@@ -227,7 +227,7 @@ Uma campanha periódica é uma campanha baseada em um template específico que p
 
    ![](assets/s_ncs_user_op_template_period_planning_add.png)
 
-   >[!CAUTION]
+   >[!IMPORTANT]
    >
    >Os templates de campanha periódicos criam novas campanhas de acordo com o agendamento definido acima. Portanto, deve ser concluída com cuidado, para evitar sobrecarga do banco de dados do Adobe Campaign.
 
