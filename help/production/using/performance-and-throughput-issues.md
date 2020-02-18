@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 34cd6e6cf5652c9e2163848c2b1ef32f53ee6ca4
+source-git-commit: 8fd9949ec03b7c2cdf88a9d5fcf5c8d8fd85f7d0
 
 ---
 
@@ -57,7 +57,7 @@ Esta é uma lista de artigos relacionados às práticas recomendadas de configur
 
 * Processos e memória MTA e MTAChild: o módulo **mta** distribui mensagens para seus módulos filho **mtachild** . Cada **mtachild** prepara mensagens antes de solicitar uma autorização do servidor de estatísticas e enviá-las. Refer to this [page](../../installation/using/email-deliverability.md) for more information.
 * Configuração TLS: não é recomendável ativar o TLS globalmente, pois ele pode reduzir o throughput. Em vez disso, as configurações TLS por domínio, gerenciadas pela equipe de entrega, devem ser ajustadas, dependendo das necessidades. Refer to this [page](../../installation/using/email-deliverability.md#mx-configuration) for more information.
-* DKIM: para garantir o nível de segurança do DKIM, o tamanho de criptografia recomendado é 1024b. As chaves DKIM inferiores não serão consideradas válidas pela maioria dos provedores de acesso. Consulte esta [página](../../delivery/using/technical-recommendations.md#domainkeys-identified-mail--dkim-) e esta [nota técnica](https://helpx.adobe.com/campaign/kb/domain-name-delegation.html).
+* DKIM: para garantir o nível de segurança do DKIM, o tamanho de criptografia recomendado é 1024b. As chaves DKIM inferiores não serão consideradas válidas pela maioria dos provedores de acesso. Consulte esta [página](../../delivery/using/technical-recommendations.md#dkim) e esta [nota técnica](https://helpx.adobe.com/campaign/kb/domain-name-delegation.html).
 
 ## Problemas de produtividade {#deliverability-issues}
 
@@ -66,7 +66,7 @@ Esta é uma lista de práticas recomendadas e artigos relacionados ao material d
 * reputação do IP: se a reputação do IP não for boa o suficiente, haverá um impacto no desempenho. O módulo de monitoramento **da** entrega oferece várias ferramentas para rastrear o desempenho da sua plataforma em termos de entrega. Consulte esta [página](../../delivery/using/technical-monitoring.md).
 * Aquecimento de IP: o aquecimento de IP é realizado pela equipe de entrega. Isso envolve aumentar gradualmente o número de emails por meio de novos IPs, durante um período de poucas semanas.
 * Configuração de afinidade IP: uma configuração incorreta de afinidade de IP pode parar completamente os emails (nome incorreto do operador/afinidade na configuração) ou reduzir o throughput (pequeno número de IPs na afinidade). Consulte esta [página](../../installation/using/email-deliverability.md#list-of-ip-addresses-to-use).
-* Tamanho do email: o tamanho do email desempenha um papel importante na throughput. O tamanho máximo de email recomendado é de 60 KB. Consulte esta [página](https://helpx.adobe.com/legal/product-descriptions/campaign.html). No relatório [de throughput](../../reporting/using/reports-on-deliveries.md#delivery-throughput) de entrega, verifique o número de bytes transferidos por hora.
+* Tamanho do email: o tamanho do email desempenha um papel importante na throughput. O tamanho máximo de email recomendado é de 60 KB. Consulte esta [página](https://helpx.adobe.com/legal/product-descriptions/campaign.html). No relatório [de throughput](../../reporting/using/delivery-reports.md#delivery-throughput) de entrega, verifique o número de bytes transferidos por hora.
 * Grande número de destinatários inválidos: quando há um grande número de destinatários inválidos, isso pode afetar o throughput. O MTA continua tentando enviar emails novamente para destinatários inválidos. Certifique-se de que seu banco de dados seja bem mantido.
 * Quantidade de personalização: se uma entrega continuar em &quot;Personalização em andamento&quot;, verifique o JavaScript usado em blocos de personalização.
 
