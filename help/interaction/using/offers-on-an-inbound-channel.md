@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 1c86322fa95aee024f6c691b61a10c21a9a22eb7
+source-git-commit: aa0eb7acfb5d3b622475544735aed37d6beea892
 
 ---
 
@@ -28,11 +28,11 @@ O site Neobank deseja exibir uma oferta destinada aos visitantes não identifica
 
 Para configurar essa interação, nós vamos:
 
-1. [Create an anonymous environement](#creating-an-anonymous-environment).
-1. [Create anonymous offer spaces](#creating-anonymous-offer-spaces).
-1. [Create an offer category and a theme.](#creating-an-offer-category-and-a-theme).
-1. [Create anonymous offers.](#creating-anonymous-offers).
-1. [Configure the web offer spaces on the website](#configure-the-web-offer-space-on-the-website).
+1. [Create an anonymous environement](#creating-an-anonymous-environment)
+1. [Create anonymous offer spaces](#creating-anonymous-offer-spaces)
+1. [Create an offer category and a theme](#creating-an-offer-category-and-a-theme)
+1. [Create anonymous offers.](#creating-anonymous-offers)
+1. [Configure the web offer spaces on the website](#configure-the-web-offer-space-on-the-website)
 
 ### Criação de um ambiente anônimo {#creating-an-anonymous-environment}
 
@@ -64,7 +64,7 @@ Follow the procedure detailed in [Creating an offer environment](../../interacti
    * Título
    * Conteúdo HTML
    * URL da imagem,
-   * URL de destino.
+   * URL de destino
    ![](assets/offer_inbound_anonymous_example_030.png)
 
 1. Edite a função de renderização HTML, por exemplo:
