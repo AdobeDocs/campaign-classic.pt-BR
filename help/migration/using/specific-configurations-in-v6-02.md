@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 1c86322fa95aee024f6c691b61a10c21a9a22eb7
+source-git-commit: 9f7cf3d530f141a661df5fcc8cbcf0bb4c8d3e89
 
 ---
 
@@ -44,9 +44,9 @@ Nlserver javascript -instance:[instance_name] -file [installation_path]/datakit/
 
 Se você modificou esses aplicativos da Web e deseja continuar usando-os na v7, ative a opção **allowSQLInjection** em suas diferentes zonas de segurança e reinicie a pós-atualização. Consulte a seção [SQLData](../../migration/using/general-configurations.md#sqldata) para obter mais informações.
 
-## Amizade do usuário: Página inicial e navegação {#user-friendliness--home-page-and-navigation}
+## Adequação ao usuário: Página inicial e navegação {#user-friendliness--home-page-and-navigation}
 
->[!CAUTION]
+>[!IMPORTANT]
 >
 >Se você quiser continuar usando aplicativos da Web do tipo visão geral v6.02, ative a opção **allowSQLInjection** em suas diferentes zonas de segurança antes da pós-atualização. Consulte aplicativos [da](#web-applications)Web.
 
