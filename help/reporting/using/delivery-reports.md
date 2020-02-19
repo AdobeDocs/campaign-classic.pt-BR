@@ -20,8 +20,7 @@ source-git-commit: f7655cd93a7dc8ecd35cd379da350ad279cae725
 ---
 
 
-# Relatórios de
-                        delivery {#delivery-reports}
+# Relatórios de delivery {#delivery-reports}
 
 Você pode acompanhar a execução de deliveries por meio de vários relatórios acessíveis a partir da visão geral de delivery. Para exibir relatórios, siga as etapas abaixo:
 
