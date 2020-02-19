@@ -13,7 +13,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 78c94268723e172b4a4e3c3a965877978b075b82
+source-git-commit: 1206b2dcee8a4b0e95a005e47b947b00388e7e43
 
 ---
 
@@ -56,7 +56,7 @@ _17 de fevereiro de 2020_
  <tbody> 
   <tr> 
    <td> <p>O Floco de neve é um data warehouse em nuvem totalmente gerenciado, criado para dimensionar no nível de armazenamento e de computação. Com esse novo conector, o Adobe Campaign agora pode aproveitar o poder do Floco de neve para executar a Segmentação de grandes dados. Esse conector está disponível para todos os clientes, inclusive hospedado pela Adobe.</p>
-    <p>Para obter mais informações, consulte a <a href="../../platform/using/specific-configuration-database.md#configure-access-to-snowflake">documentação detalhada</a>.</p>
+    <p>For more information, refer to the <a href="../../platform/using/specific-configuration-database.md#configure-access-to-snowflake">detailed documentation</a> and <a href="https://docs.adobe.com/content/help/en/campaign-learn/campaign-classic-tutorials/administrating/fda/big-data-segmentation-on-snowflake.html.">tutorial video</a>.</p>
    </td> 
   </tr> 
  </tbody> 
