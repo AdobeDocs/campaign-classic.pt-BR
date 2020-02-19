@@ -20,8 +20,7 @@ source-git-commit: c9c9d5f96856ce9e19571bad032d2bf04eaa60bd
 ---
 
 
-# Opt out
-                        de rastreamento da aplicação web{#web-application-tracking-opt-out}
+# Opt out de rastreamento da aplicação web{#web-application-tracking-opt-out}
 
 O Adobe Campaign permite que você interrompa o rastreamento de comportamentos da Web de usuários finais que usam o opt out do rastreamento comportamental por meio de cookies ou web beacons. O recurso inclui a habilidade de exibir um banner para apresentar ao usuário final essa opção; você pode adicionar esses banners em aplicações web ou landing pages.
 
