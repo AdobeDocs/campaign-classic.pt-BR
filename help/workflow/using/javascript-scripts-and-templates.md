@@ -128,29 +128,29 @@ Neste exemplo, uma variável de instância é usada para calcular dinamicamente 
 
 1. Pegue o workflow do exemplo anterior e substitua o script da atividade **JavaScript Code** pelo seguinte script:
 
-   ```
-   instance.vars.foo = "bar1"
-   vars.foo = "bar2"
-   task.vars.foo = "bar3"
-   ```
+    ```
+    instance.vars.foo = "bar1"
+    vars.foo = "bar2"
+    task.vars.foo = "bar3"
+    ```
 
 1. Adicione o script a seguir ao script de inicialização da atividade **End**:
 
-   ```
-   logInfo("instance.vars.foo = " + instance.vars.foo)
-   logInfo("vars.foo = " + vars.foo)
-   logInfo("task.vars.foo = " + task.vars.foo)
-   ```
+    ```
+    logInfo("instance.vars.foo = " + instance.vars.foo)
+    logInfo("vars.foo = " + vars.foo)
+    logInfo("task.vars.foo = " + task.vars.foo)
+    ```
 
 1. Inicie o workflow e examine o log.
 
-   ```
-   Workflow finished
-   task.vars.foo = undefined
-   vars.foo = bar2
-   instance.vars.foo = bar1
-   Starting workflow (operator 'admin')
-   ```
+    ```
+    Workflow finished
+    task.vars.foo = undefined
+    vars.foo = bar2
+    instance.vars.foo = bar1
+    Starting workflow (operator 'admin')
+    ```
 
 Este exemplo mostra que a atividade após o **JavaScript Code** acessa as variáveis de instância e as variáveis de evento, mas as variáveis de tarefa não estão acessíveis a partir do exterior (&#39;undefined&#39;).
 
