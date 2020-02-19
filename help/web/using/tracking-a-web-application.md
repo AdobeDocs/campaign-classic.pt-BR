@@ -20,8 +20,7 @@ source-git-commit: 36beb1eca48c698634c7548e0f931ab3fe17c021
 ---
 
 
-# Rastreamento de aplicação 
-                        web{#tracking-a-web-application}
+# Rastreamento de aplicação web{#tracking-a-web-application}
 
 O Adobe Campaign permite que você rastreie e avalie visitas em páginas de aplicativos da Web inserindo tags de rastreamento. Essa funcionalidade pode ser usada para todos os tipos de aplicações web (formulários, pesquisas online, páginas da Web criadas usando o DCE, etc.).
 
