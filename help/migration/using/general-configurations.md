@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 9f7cf3d530f141a661df5fcc8cbcf0bb4c8d3e89
+source-git-commit: 963aaa81971a8883b944bfcf4d1a00d729627916
 
 ---
 
@@ -61,7 +61,7 @@ Se você receber um erro **ORA 01805** durante o pós-upgrade, isso significa qu
 
 1. Verifique se os arquivos de fuso horário são idênticos em ambos os servidores.
 
-Para obter mais informações, visite: [https://download.oracle.com/docs/cd/E11882_01/server.112/e10729/ch4datetime.htm](http://download.oracle.com/docs/cd/E11882_01/server.112/e10729/ch4datetime.htm).
+Para obter mais informações, visite: [https://docs.oracle.com/cd/E11882_01/server.112/e10729/ch4datetime.htm#NLSPG004](https://docs.oracle.com/cd/E11882_01/server.112/e10729/ch4datetime.htm#NLSPG004).
 
 Um desalinhamento de fuso horário entre o cliente e o servidor também pode causar alguns atrasos. É por isso que recomendamos usar a mesma versão da biblioteca Oracle nos lados cliente e servidor, os dois fusos horários devem ser os mesmos.
 
