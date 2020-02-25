@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 4ac96bf0e54268832b84b17c3cc577af038cc712
+source-git-commit: a358da7c499b5ee780563b4aef0eb2f4463186cf
 
 ---
 
@@ -125,7 +125,7 @@ No exemplo a seguir, adicionamos **mediaURl** e **mediaExt** para criar notifica
 
 1. Clique em **[!UICONTROL Next]** para iniciar a configuração do aplicativo de desenvolvimento.
 
-1. Make sure the same **[!UICONTROL Integration key]** is defined in Adobe Campaign and in the application code via the SDK. Para obter mais informações, consulte: [Integração do SDK de campanha ao aplicativo](#integrating-campaign-sdk-into-the-mobile-application)móvel. Essa chave de integração, específica para cada aplicativo, permite vincular o aplicativo móvel à plataforma do Adobe Campaign.
+1. Make sure the same **[!UICONTROL Integration key]** is defined in Adobe Campaign and in the application code via the SDK. Para obter mais informações, consulte: [Integração do SDK de campanha ao aplicativo](../../delivery/using/integrating-campaign-sdk-into-the-mobile-application.md)móvel. Essa chave de integração, específica para cada aplicativo, permite vincular o aplicativo móvel à plataforma do Adobe Campaign.
 
    >[!NOTE]
    >
@@ -256,7 +256,7 @@ Para escolher qual conector deseja usar, siga estas etapas:
 
 1. Insira um **[!UICONTROL Label]**.
 
-1. Make sure the same **[!UICONTROL Integration key]** is defined in Adobe Campaign and in the application code via the SDK. Para obter mais informações, consulte: [Integração do SDK de campanha ao aplicativo](#integrating-campaign-sdk-into-the-mobile-application)móvel.
+1. Make sure the same **[!UICONTROL Integration key]** is defined in Adobe Campaign and in the application code via the SDK. Para obter mais informações, consulte: [Integração do SDK de campanha ao aplicativo](../../delivery/using/integrating-campaign-sdk-into-the-mobile-application.md)móvel.
 
    >[!NOTE]
    >
@@ -280,7 +280,7 @@ Por padrão, o Adobe Campaign salva uma chave no campo **[!UICONTROL User identi
 1. Defina o mapeamento na **[!UICONTROL Subscription parameters]** guia.
    >[!CAUTION]
    >
-   >Make sure the configuration names in the **[!UICONTROL Subscription parameters]** tab are the same as those in the mobile application code. Consulte a seção [Integração do SDK de campanha à seção do aplicativo](#integrating-campaign-sdk-into-the-mobile-application) móvel.
+   >Make sure the configuration names in the **[!UICONTROL Subscription parameters]** tab are the same as those in the mobile application code. Consulte a seção [Integração do SDK de campanha à seção do aplicativo](../../delivery/using/integrating-campaign-sdk-into-the-mobile-application.md) móvel.
 
 ### Etapa 4: Criar uma notificação avançada do Android {#creating-android-delivery}
 
