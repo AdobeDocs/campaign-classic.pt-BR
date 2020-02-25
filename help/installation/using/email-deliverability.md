@@ -15,25 +15,24 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 21d808695bfde2fb3220964c066558ad30952443
+source-git-commit: e8de8441303cb9d5102db2a95742ec7d38b16fc2
 
 ---
 
 
-# Email deliverability{#email-deliverability}
+# Configurações técnicas de email{#email-deliverability}
 
 ## Visão geral {#overview}
 
-A seção a seguir fornece uma visão geral da configuração necessária para controlar a saída das instâncias do Adobe Campaign ao entregar mensagens.
+A seção a seguir fornece uma visão geral da configuração necessária para controlar a saída das instâncias do Adobe Campaign ao entregar emails.
 
 >[!NOTE]
 >
->Algumas configurações só podem ser executadas pela Adobe para implantações hospedadas pela Adobe. Por exemplo, para acessar os arquivos de configuração do servidor e da instância. Para saber mais sobre as diferentes implantações, consulte a seção Modelos [de](../../installation/using/hosting-models.md) hospedagem ou [este artigo](https://helpx.adobe.com/campaign/kb/acc-on-prem-vs-hosted.html).\
->Refer to the [getting started guide](https://docs.campaign.adobe.com/doc/AC/getting_started/EN/deliverability.html) that presents the concepts and best practices related to deliverability.
+>Algumas configurações só podem ser executadas pela Adobe para implantações hospedadas pela Adobe, por exemplo, para acessar os arquivos de configuração do servidor e da instância. Para saber mais sobre as diferentes implantações, consulte a seção Modelos [de](../../installation/using/hosting-models.md) hospedagem ou [este artigo](https://helpx.adobe.com/campaign/kb/acc-on-prem-vs-hosted.html).
 
 Para obter mais informações sobre os conceitos e as práticas recomendadas relacionadas à entrega, consulte esta [seção](../../delivery/using/about-deliverability.md).
 
-Todas as recomendações técnicas referentes ao envio e recebimento eficientes de mensagens por uma plataforma do Adobe Campaign estão disponíveis nesta [seção](../../delivery/using/technical-recommendations.md).
+Todas as recomendações técnicas referentes ao envio e recebimento eficientes de emails por uma plataforma do Adobe Campaign estão disponíveis nesta [seção](../../delivery/using/technical-recommendations.md).
 
 ## Princípio operacional {#operating-principle}
 
