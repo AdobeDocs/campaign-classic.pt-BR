@@ -14,7 +14,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 994ec35e37a1c26e83a8dd2ae31f6594cadd4c45
+source-git-commit: 8ef56aa04a3ecc94e9e3dda24562760d6a93739d
 
 ---
 
@@ -106,7 +106,7 @@ Você pode usar o editor de conteúdo digital do Adobe Campaign para criar uma p
 
 ## Como posso rastrear entregas? {#how-can-i-track-deliveries-}
 
-Você pode rastrear e monitorar as entregas feitas com o Campaign Classic por meio de [relatórios de entrega](../../reporting/using/reports-on-deliveries.md#delivery-reports) exclusivos.
+Você pode rastrear e monitorar as entregas feitas com o Campaign Classic por meio de [relatórios de entrega](../../reporting/using/delivery-reports.md) exclusivos.
 
 Saiba mais sobre o gerenciamento de rastreamento no Campaign [nesta página](https://helpx.adobe.com/campaign/kb/acc-tracking.html).
 
