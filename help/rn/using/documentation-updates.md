@@ -13,7 +13,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: cc6f0f2989977c5a199dbfd413c6a2bac4628545
+source-git-commit: 230ff1a8453cf512b7da828cdcdd49edca59331c
 
 ---
 
@@ -25,6 +25,20 @@ Saiba mais sobre todas as atualizações mais recentes da documentação do Adob
 Esta página lista todos os novos recursos e atualizações de documentação para cada versão do Adobe Campaign Classic.
 
 Você também pode consultar as Notas [de versão do](../../rn/using/latest-release.md)Adobe Campaign Classic.
+
+## Fevereiro de 2020 {#february-2020}
+
+Uma nova seção que descreve as práticas recomendadas e as principais recomendações enquanto projeta o modelo de dados do Adobe Campaign está disponível. [Leia mais](../../configuration/using/data-model-best-practices.md)
+
+A seção &quot;Enviabilidade por email&quot; foi renomeada para &quot;Configurações de email técnico&quot;. [Leia mais](../../installation/using/email-deliverability.md)
+
+O documento Perguntas frequentes sobre a entrega foi atualizado com mais detalhes sobre a mensagem de erro &quot;cotas atendidas&quot;. [Leia mais](https://helpx.adobe.com/campaign/kb/acc-deliverability-faq.html#FAQ)
+
+A AMP para email agora é suportada por três provedores de email (Gmail, Outlook e Mail.ru), a seção que descreve como definir conteúdo interativo com AMP foi atualizada. [Leia mais](../../delivery/using/defining-interactive-content.md)
+
+A seção Arquivamento de email foi esclarecida. [Leia mais](../../installation/using/email-archiving.md#recommendations-and-limitations)
+
+
 
 ## 20.1 - 17/02/2020{#release-20-1}
 
@@ -67,12 +81,6 @@ Uma limitação foi adicionada ao usar uma atividade de consulta em um fluxo de 
 Uma nova seção foi adicionada para detalhar as regras aprimoradas de validação de endereço de email para enviar um endereço para quarentena em caso de erro de software. [Leia mais](../../delivery/using/understanding-quarantine-management.md#soft-error-management)
 
 O parâmetro do arquivo de configuração que indica que uma instância está usando o MTA aprimorado ou não está documentado. [Leia mais](../../installation/using/the-server-configuration-file.md#mta)
-
-## Fevereiro de 2020 {#february-2020}
-
-A AMP para email agora é suportada por três provedores de email (Gmail, Outlook e Mail.ru), a seção que descreve como definir conteúdo interativo com AMP foi atualizada. [Leia mais](../../delivery/using/defining-interactive-content.md)
-
-A seção Arquivamento de email foi esclarecida. [Leia mais](../../installation/using/email-archiving.md#recommendations-and-limitations)
 
 ## January 2020 {#january-2020}
 
