@@ -14,7 +14,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 7aa381654805798fcdd24f588160bed15e037a2b
+source-git-commit: b78db689958c9b240da9a0315060fe63bcb48e0a
 
 ---
 
@@ -45,7 +45,7 @@ Como um usuário especialista, você pode configurar recursos de rastreamento em
 
 ## Como configurar a capacidade de entrega de e-mails? {#how-to-configure-email-deliverability-}
 
-Além do [Guia de introdução à capacidade de entrega de e-mails](http://docs.campaign.adobe.com/doc/AC/getting_started/EN/deliverability.html), leia a seção sobre a configuração dessa capacidade para entender como configurar sua instância a fim de maximizá-la no Campaign.
+Além do [Guia de introdução à capacidade de entrega de e-mails](https://docs.adobe.com/content/help/en/campaign-classic/using/sending-messages/deliverability-management/about-deliverability.html), leia a seção sobre a configuração dessa capacidade para entender como configurar sua instância a fim de maximizá-la no Campaign.
 
 [Clique aqui para saber mais](../../installation/using/email-deliverability.md).
 
