@@ -15,14 +15,14 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 4ac96bf0e54268832b84b17c3cc577af038cc712
+source-git-commit: 3641e438784d40aa097f8c89ca19bdbb52f4bc7d
 
 ---
 
 
 # Canais de comunicação{#communication-channels}
 
-Com o Adobe Campaign, você pode enviar campanhas multicanal, incluindo emails, SMS, mensagens pelo LINE, notificações por push e mala direta, e medir sua eficácia usando vários [relatórios](../../reporting/using/reports-on-deliveries.md#accessing-existing-reports)dedicados. Essas mensagens são projetadas e enviadas por deliveries, além disso podem ser personalizadas para cada recipient.
+Com o Adobe Campaign, você pode enviar campanhas multicanal, incluindo emails, SMS, mensagens pelo LINE, notificações por push e mala direta, e medir sua eficácia usando vários [relatórios](../../reporting/using/delivery-reports.md)dedicados. Essas mensagens são projetadas e enviadas por deliveries, além disso podem ser personalizadas para cada recipient.
 
 As funcionalidades principais incluem definição de metas, definição e personalização de mensagens, execução de comunicações e relatórios operacionais associados. O principal ponto de acesso funcional é o assistente de delivery. Esse ponto de acesso leva a vários recursos cobertos pelo Adobe Campaign.
 
