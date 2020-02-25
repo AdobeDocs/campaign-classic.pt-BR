@@ -14,7 +14,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 994ec35e37a1c26e83a8dd2ae31f6594cadd4c45
+source-git-commit: 8ef56aa04a3ecc94e9e3dda24562760d6a93739d
 
 ---
 
@@ -106,7 +106,7 @@ Saiba como controlar suas entregas e entender o comportamento dos destinatários
 
 O Adobe Campaign vem com um conjunto de relatórios para monitorar suas entregas e rastrear suas mensagens.
 
-[Clique aqui para saber mais sobre relatórios internos](../../reporting/using/reports-on-deliveries.md#delivery-reports).
+[Clique aqui para saber mais sobre relatórios internos](../../reporting/using/delivery-reports.md).
 
 ### Como o Adobe Campaign qualifica e gerencia endereços em quarentena? {#how-does-adobe-campaign-qualify-and-manage-quarantine-addresses-}
 
