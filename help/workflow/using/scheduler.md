@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 7c4e4c7d7433f782f810fdc2ecdeeedacd72b6c6
+source-git-commit: 707352334144df86ae82aa51d595ae6bc751d1f2
 
 ---
 
@@ -52,6 +52,6 @@ Um assistente permite definir a frequência e o período de validade da atividad
 
    ![](assets/s_user_segmentation_scheduler5.png)
 
-O uso de uma atividade do agendador pode levar a várias execuções de um fluxo de trabalho em execução ao mesmo tempo. Por exemplo, você pode ter um scheduler acionando a execução do workflow a cada hora, mas, às vezes, a execução do workflow inteiro demora mais de uma hora. Talvez você queira ignorar a execução se o workflow já estiver em execução. Para obter mais informações sobre como evitar execuções simultâneas de um fluxo de trabalho, consulte [esta página](../../workflow/using/monitoring-workflow-execution.md#preventing-simultaneous-multiple-execution).
+O uso de uma atividade do agendador pode levar a várias execuções de um fluxo de trabalho em execução ao mesmo tempo. Por exemplo, você pode ter um scheduler acionando a execução do workflow a cada hora, mas, às vezes, a execução do workflow inteiro demora mais de uma hora. Talvez você queira ignorar a execução se o workflow já estiver em execução. Para obter mais informações sobre como evitar execuções simultâneas de um fluxo de trabalho, consulte [esta página](../../workflow/using/monitoring-workflow-execution.md#preventing-simultaneous-multiple-executions).
 
 Observe também que a transição pode ser ativada várias horas posteriormente se o workflow estava executando uma tarefa de longo prazo, como uma importação ou se o módulo wfserver foi interrompido por um tempo. Nesse caso, pode ser necessário restringir a execução da tarefa ativada pelo agendador para um determinado intervalo de tempo.
