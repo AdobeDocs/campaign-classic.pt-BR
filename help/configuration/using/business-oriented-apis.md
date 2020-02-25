@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: dbff132e3bf88c408838f91e50e4b047947ee32a
+source-git-commit: 963aaa81971a8883b944bfcf4d1a00d729627916
 
 ---
 
@@ -45,7 +45,7 @@ Esta seção detalha o uso dos serviços &quot;Assinar&quot;, &quot;Cancelar ins
 
 >[!IMPORTANT]
 >
->[A documentação](http://docs.campaign.adobe.com/doc/AC/en/jsapi/index.html) JSAPI da campanha contém informações adicionais sobre chamadas SOAP e uso do Javascript no Adobe Campaign, bem como uma referência completa a todos os métodos e funções usados no aplicativo.
+>[A documentação](https://docs.adobe.com/content/help/en/campaign-classic/technicalresources/api/index.html) JSAPI da campanha contém informações adicionais sobre chamadas SOAP e uso do Javascript no Adobe Campaign, bem como uma referência completa a todos os métodos e funções usados no aplicativo.
 
 ## Assinar (nms:assinatura) {#subscribe--nms-subscription-}
 
