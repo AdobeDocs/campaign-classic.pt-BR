@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 912507f25c5bc3c1ca7121b0df8182176900f4c0
+source-git-commit: 963aaa81971a8883b944bfcf4d1a00d729627916
 
 ---
 
@@ -96,7 +96,7 @@ Os comandos são exibidos na mesma ordem em que são declarados no documento XML
 
 Um separador de comando permite exibir uma barra de separação entre comandos. É identificado pelo valor **&#39;-&#39;** contido no rótulo do comando.
 
-A presença opcional da **`<soapcall>`** tag com seus parâmetros de entrada define a chamada de um método SOAP a ser executado. Para obter mais informações sobre a API SOAP, consulte a documentação [JSAPI do](http://docs.campaign.adobe.com/doc/AC/en/jsapi/index.html)Campaign.
+A presença opcional da **`<soapcall>`** tag com seus parâmetros de entrada define a chamada de um método SOAP a ser executado. Para obter mais informações sobre a API SOAP, consulte a documentação [JSAPI do](https://docs.adobe.com/content/help/en/campaign-classic/technicalresources/api/index.html)Campaign.
 
 O contexto do formulário pode ser atualizado na inicialização a partir da **`<enter>`** tag . Para obter mais informações sobre essa tag, consulte a documentação sobre formulários de entrada.
 
@@ -269,7 +269,7 @@ Os comandos são exibidos na mesma ordem em que são declarados no documento XML
 
 Um separador de comando permite exibir uma barra de separação entre comandos. É identificado pelo valor **&#39;-&#39;** contido no rótulo do comando.
 
-A presença opcional da **`<soapcall>`** tag com seus parâmetros de entrada define a chamada de um método SOAP a ser executado. Para obter mais informações sobre APIs SOAP, consulte a documentação [JSAPI do](http://docs.campaign.adobe.com/doc/AC/en/jsapi/index.html)Campaign.
+A presença opcional da **`<soapcall>`** tag com seus parâmetros de entrada define a chamada de um método SOAP a ser executado. Para obter mais informações sobre APIs SOAP, consulte a documentação [JSAPI do](https://docs.adobe.com/content/help/en/campaign-classic/technicalresources/api/index.html)Campaign.
 
 O contexto do formulário pode ser atualizado na inicialização por meio da **`<enter>`** tag . Para obter mais informações sobre essa tag, consulte a documentação do formulário de entrada.
 
