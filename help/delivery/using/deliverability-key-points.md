@@ -13,7 +13,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: bb1f5acabbd976a92219424c14813b7783b56f38
+source-git-commit: 963aaa81971a8883b944bfcf4d1a00d729627916
 
 ---
 
@@ -61,7 +61,7 @@ Geralmente, os provedores de internet têm um meio proeminente de reportar uma m
 
 ## Enviar para endereços em lojas {#honeypot-addresses}
 
-Os provedores de acesso e outras organizações (consulte http://www.projecthoneypot.org/) usam caixas de correio que não correspondem às pessoas físicas, mas são criadas apenas para enganar spammers. Estes chamados endereços &quot;mel pot&quot; são publicados na Web para serem recolhidos por spambots e, por conseguinte, capturar remetentes ilegítimos. O uso de um mecanismo de aceitação dupla impede que esse tipo de endereço seja adicionado a uma lista. Ao usar uma lista de terceiros, é necessário ter certeza dos métodos empregados pelo seu responsável principal.
+Os provedores de acesso e outras organizações (consulte https://www.projecthoneypot.org/) usam caixas de correio que não correspondem às pessoas físicas, mas são criadas apenas para enganar spammers. Estes chamados endereços &quot;mel pot&quot; são publicados na Web para serem recolhidos por spambots e, por conseguinte, capturar remetentes ilegítimos. O uso de um mecanismo de aceitação dupla impede que esse tipo de endereço seja adicionado a uma lista. Ao usar uma lista de terceiros, é necessário ter certeza dos métodos empregados pelo seu responsável principal.
 
 ## Adaptar o conteúdo da mensagem {#message-content}
 
