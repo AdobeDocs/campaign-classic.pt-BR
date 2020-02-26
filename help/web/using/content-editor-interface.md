@@ -16,7 +16,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 1c86322fa95aee024f6c691b61a10c21a9a22eb7
+source-git-commit: 707352334144df86ae82aa51d595ae6bc751d1f2
 
 ---
 
@@ -29,7 +29,7 @@ A janela de edição do DCE está dividida em três seções diferentes. Elas pe
 
 ![](assets/dce_decoupe_window_nb.png)
 
-1. A seção **superior** é uma área de exibição para mensagens do usuário. Essas mensagens indicam o status da aplicação web ou o delivery sendo criado, bem como avisos e mensagens de erro relacionadas ao conteúdo. Para obter mais informações, consulte os status [de conteúdo](#html-content-statuses)HTML.
+1. A seção **superior** é uma área de exibição para mensagens do usuário. Essas mensagens indicam o status da aplicação web ou o delivery sendo criado, bem como avisos e mensagens de erro relacionadas ao conteúdo. Para obter mais informações, consulte os status [de conteúdo](../../web/using/content-editing-best-practices.md#html-content-statuses)HTML.
 1. A seção à **esquerda** da janela é a área para edição de conteúdo. Nessa área, o usuário pode interagir diretamente com o conteúdo usando a barra de ferramentas pop-up: insira um link em uma imagem, altere a fonte, exclua um campo etc. For more on this refer to [Editing forms](../../web/using/editing-content.md#editing-forms).
 1. A seção à **direita** da janela é a área do painel de controle. Essa área agrupa as diferentes opções para o editor, especialmente aquelas relacionadas à configuração do cabeçalho da página e as opções gerais para um bloco: adicionar uma borda, vincular um campo de banco de dados a uma zona de entrada, acessar as propriedades da página da Web etc. Para obter mais informações, consulte as opções [](#global-options) Globais e [Edição de conteúdo](../../web/using/editing-content.md) .
 
