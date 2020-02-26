@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: ed5390b4f620c3cddaf9b856f3354dc5f06f4d98
+source-git-commit: 3641e438784d40aa097f8c89ca19bdbb52f4bc7d
 
 ---
 
@@ -62,7 +62,7 @@ Atraia a atenção dos clientes e melhore as taxas de resposta com a personaliza
 
 ### Análise e geração de relatórios {#analysis-and-reporting}
 
-O Adobe Campaign permite monitorar e interpretar o comportamento dos clientes por meio do aprimoramento gradual de seus dados e perfis. As ferramentas de análise e geração de relatórios permitem capitalizar cada nova campanha, melhorar o direcionamento das suas iniciativas de marketing e otimizar seu impacto e o retorno sobre o investimento. Consulte [esta página](../../reporting/using/reports-on-deliveries.md#accessing-existing-reports) para obter mais informações.
+O Adobe Campaign permite monitorar e interpretar o comportamento dos clientes por meio do aprimoramento gradual de seus dados e perfis. As ferramentas de análise e geração de relatórios permitem capitalizar cada nova campanha, melhorar o direcionamento das suas iniciativas de marketing e otimizar seu impacto e o retorno sobre o investimento. Consulte [esta página](../../reporting/using/delivery-reports.md) para obter mais informações.
 
 ### Integrações com a Adobe Experience Cloud {#adobe-experience-cloud-integrations}
 
