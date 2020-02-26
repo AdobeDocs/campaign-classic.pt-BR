@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 0ce6e5277c32bc18c20dca62e5b276f654d1ace5
+source-git-commit: 3641e438784d40aa097f8c89ca19bdbb52f4bc7d
 
 ---
 
@@ -26,7 +26,7 @@ Seed addresses são usados para direcionar destinatários que não correspondem 
 
 Uma vez que a principal razão para utilizá-los é **sua proteção da lista de endereçamento**. Inserir seed addresses na sua lista de endereçamento permite que você seja notado se estiver sendo usado por um terceiro, pois esses seeds addresses receberão os deliveries enviados à sua lista de endereçamento.
 
-Moreover, seed addresses let you **preview and test the deliveries personalization and rendering** before their sending, by sending them proofs (see [Using seed addresses as proof](../../delivery/using/steps-validating-the-delivery.md#using-seed-addresses-as-proof)).
+Moreover, seed addresses let you **preview and test the deliveries personalization and rendering** before their sending, by sending them proofs (see [Using seed addresses as proof](../../delivery/using/steps-defining-the-target-population.md#using-seed-addresses-as-proof)).
 
 Os recursos dos seed addresses tem os seguintes benefícios:
 
