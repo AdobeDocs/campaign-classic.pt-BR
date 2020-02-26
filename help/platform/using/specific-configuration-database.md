@@ -165,10 +165,11 @@ Como regra geral, você precisa instalar a camada de cliente correspondente no b
 
 1. Após baixar e instalar os drivers ODBC, é necessário reiniciar o Campaign Classic. Para fazer isso, execute o seguinte comando:
 
-   ```
-   /etc/init.d/nlserver6 stop
-   /etc/init.d/nlserver6 start
-   ```
+     ```
+    /etc/init.d/nlserver6 stop
+    /etc/init.d/nlserver6 start
+     ```
+
 1. No Campaign Classic, configure sua conta externa Snowflake no Campaign Classic. A partir do **[!UICONTROL Explorer]**, desenrole o **[!UICONTROL Administration]** menu.
 
 1. Desdobre o **[!UICONTROL Platform]** menu e clique em **[!UICONTROL External accounts]**.
