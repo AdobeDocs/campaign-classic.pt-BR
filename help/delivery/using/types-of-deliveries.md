@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 4ac96bf0e54268832b84b17c3cc577af038cc712
+source-git-commit: 707352334144df86ae82aa51d595ae6bc751d1f2
 
 ---
 
@@ -38,7 +38,7 @@ Um **delivery recorrente** permite criar um novo delivery sempre que a atividade
 
 Como exemplo, se você executar esse tipo de atividade uma vez por mês, acabará com 12 deliveries após um ano.
 
-Recurring deliveries are created within workflows via the [Recurring delivery activity](../../workflow/using/recurring-delivery.md). Um exemplo dessa atividade sendo usada é apresentado nesta seção: [Criação de uma entrega recorrente em um fluxo de trabalho](../../campaign/using/setting-up-marketing-campaigns.md#creating-a-recurring-delivery-in-a-targeting-workflow)de definição de metas.
+Recurring deliveries are created within workflows via the [Recurring delivery activity](../../workflow/using/recurring-delivery.md). Um exemplo dessa atividade sendo usada é apresentado nesta seção: [Criação de uma entrega recorrente em um fluxo de trabalho](../../workflow/using/sending-a-birthday-email.md#creating-a-recurring-delivery-in-a-targeting-workflow)de definição de metas.
 
 ## Delivery contínuo {#continuous-delivery}
 
