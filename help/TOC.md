@@ -5,7 +5,7 @@ index: y
 product: adobe campaign
 sub-product: adobe campaign classic
 translation-type: tm+mt
-source-git-commit: 65043155ab6ff1fe556283991777964bb43c57ce
+source-git-commit: e8de8441303cb9d5102db2a95742ec7d38b16fc2
 
 ---
 
@@ -587,7 +587,7 @@ source-git-commit: 65043155ab6ff1fe556283991777964bb43c57ce
    + Configurações adicionais {#additional-configurations}
       + [Configuração do servidor do Campaign](installation/using/configuring-campaign-server.md)
       + [Conexão por meio do LDAP](installation/using/connecting-through-ldap.md)
-      + [Entrega por email](installation/using/email-deliverability.md)
+      + [Configurações técnicas de email](installation/using/email-deliverability.md)
       + [Arquivamento de email](installation/using/email-archiving.md)
       + [Gerenciamento de fuso horário](installation/using/time-zone-management.md)
       + [Configuração do SpamAssassin](installation/using/configuring-spamassassin.md)
