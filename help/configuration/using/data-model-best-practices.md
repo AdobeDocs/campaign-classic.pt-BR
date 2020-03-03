@@ -13,7 +13,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: a8bfeaecc8a4832cac96f479ea1a0b11cd73c1e8
+source-git-commit: ad3aedeb18cfce809f959ccb62cb27928877c9d2
 
 ---
 
@@ -68,7 +68,7 @@ Para decidir se um atributo será necessário ou não no Adobe Campaign, pergunt
 
 Se não estiver entrando em nenhum desses, é provável que você não precise desse atributo no Adobe Campaign.
 
-## Escolha dos tipos de dados {#data-types}
+### Escolha dos tipos de dados {#data-types}
 
 Para garantir boa arquitetura e desempenho do seu sistema, siga as práticas recomendadas abaixo para configurar os dados no Adobe Campaign.
 
@@ -78,6 +78,28 @@ Para garantir boa arquitetura e desempenho do seu sistema, siga as práticas rec
 * O tipo **XML** é uma boa maneira de evitar a criação de muitos campos. Mas também ocupa espaço em disco à medida que usa uma coluna CLOB no banco de dados. Também pode levar a consultas SQL complexas e afetar o desempenho.
 * O comprimento de um campo de **string** deve ser sempre definido com a coluna. Por padrão, o comprimento máximo no Adobe Campaign é 255, mas a Adobe recomenda manter o campo mais curto se você já souber que o tamanho não excederá um comprimento menor.
 * É aceitável ter um campo menor no Adobe Campaign do que no sistema de origem se você tiver certeza de que o tamanho no sistema de origem foi superestimado e não seria atingido. Isso pode significar uma string menor ou um número inteiro menor no Adobe Campaign.
+
+### Escolha dos campos {#choice-of-fields}
+
+Um campo deve ser armazenado em uma tabela se tiver uma finalidade de definição de metas ou personalização. Em outras palavras, se um campo não for usado para enviar um email personalizado ou usado como critério em uma consulta, ele ocupará espaço em disco, ao passo que não será útil.
+
+Para instâncias híbridas e locais, o FDA (Federated Data Access, um recurso opcional que permite acessar dados externos) cobre a necessidade de adicionar um campo &quot;on-the-fly&quot; durante um processo de campanha. Você não precisa importar tudo se tiver FDA. Para obter mais informações, consulte [Sobre o acesso](../../platform/using/about-fda.md)a dados federados.
+
+### Escolha das teclas {#choice-of-keys}
+
+Além do **autopk** definido por padrão na maioria das tabelas, você deve considerar adicionar algumas chaves lógicas ou comerciais (número da conta, número do cliente e assim por diante). Pode ser utilizado posteriormente para importações/reconciliação ou pacotes de dados. For more on this, see [Identifiers](#identifiers).
+
+Chaves eficientes são essenciais para o desempenho. Os tipos de dados numéricos devem sempre ser preferidos como chaves para tabelas.
+
+Para o banco de dados SQLServer, você pode considerar o uso de &quot;índice clusterizado&quot; se o desempenho for necessário. Como a Adobe não lida com isso, é necessário criá-lo no SQL.
+
+### Tabelas dedicadas {#dedicated-tablespaces}
+
+O atributo tablespace no esquema permite especificar um tablespace dedicado para uma tabela.
+
+O assistente de instalação permite que você armazene objetos por tipo (dados, temporários e índice).
+
+Os tablespaces dedicados são melhores para particionamento, regras de segurança e permitem administração fluida e flexível, melhor otimização e desempenho.
 
 ## Identificadores {#identifiers}
 
@@ -201,6 +223,8 @@ Existem algumas soluções para minimizar a necessidade de registros no Adobe Ca
 * Exporte os dados em um data warehouse fora do Adobe Campaign.
 * Gere valores agregados que usarão menos espaço enquanto forem suficientes para suas práticas de marketing. Por exemplo, você não precisa do histórico completo de transações do cliente no Adobe Campaign para acompanhar as últimas compras.
 
+Você pode declarar o atributo &quot;deleteStatus&quot; em um esquema. É mais eficiente marcar o registro como excluído e depois adiar a exclusão na tarefa de limpeza.
+
 ## Desempenho {#performance}
 
 Para garantir melhor desempenho a qualquer momento, siga as práticas recomendadas abaixo.
@@ -222,9 +246,11 @@ Para garantir melhor desempenho a qualquer momento, siga as práticas recomendad
 * É bom ter todos os campos essenciais em uma tabela, pois facilita a criação de consultas pelos usuários. Às vezes, também é bom que o desempenho duplique alguns campos nas tabelas se puder evitar uma junção.
 * Determinadas funcionalidades incorporadas não poderão fazer referência a relações one-to-many, por exemplo, fórmula de Ponderação de oferta e Entregas.
 
-### Tabelas grandes {#large-tables}
+## Tabelas grandes {#large-tables}
 
-Abaixo estão algumas práticas recomendadas que devem ser seguidas ao projetar seu modelo de dados usando tabelas grandes e junções complexas.
+O Adobe Campaign depende de mecanismos de banco de dados de terceiros. Dependendo do provedor, a otimização do desempenho para tabelas maiores pode exigir um design específico.
+
+Abaixo estão algumas práticas recomendadas comuns que devem ser seguidas ao projetar seu modelo de dados usando tabelas grandes e junções complexas.
 
 * Ao usar tabelas de destinatários personalizadas adicionais, verifique se você tem uma tabela de log dedicada para cada mapeamento de entrega.
 * Reduza o número de colunas, principalmente identificando as que não são usadas.
@@ -232,4 +258,36 @@ Abaixo estão algumas práticas recomendadas que devem ser seguidas ao projetar 
 * Para teclas de junção, sempre use dados numéricos em vez de sequências de caracteres.
 * Reduza o máximo possível a profundidade da retenção de registros. Se precisar de um histórico mais profundo, você pode agregar computação e/ou manipular tabelas de log personalizadas para armazenar um histórico maior.
 
-Para obter práticas recomendadas mais detalhadas sobre como otimizar o design do banco de dados para volumes maiores, consulte Práticas recomendadas [do modelo de dados do](https://helpx.adobe.com/campaign/kb/acc-data-model-best-practices.html)Campaign Classic.
+### Tamanho das tabelas {#size-of-tables}
+
+O tamanho da tabela é uma combinação do número de registros e do número de colunas por registro. Ambos podem afetar o desempenho das consultas.
+
+* Uma tabela de tamanho **** pequeno é semelhante à tabela Entrega.
+* Uma tabela de tamanho **** médio é igual ao tamanho da tabela Destinatário. Ele tem um registro por cliente.
+* Uma tabela **grande** é semelhante à tabela de log Amplo. Ele tem muitos registros por cliente.
+Por exemplo, se seu banco de dados contém 10 milhões de destinatários, a tabela de log Amplo contém cerca de 100 a 200 milhões de mensagens e a tabela Entrega contém alguns milhares de registros.
+
+No PostgreSQL, uma linha não deve exceder 8 KB para evitar o mecanismo [TOAST](https://wiki.postgresql.org/wiki/TOAST) . Portanto, tente reduzir ao máximo o número de colunas e o tamanho de cada linha para preservar o desempenho ideal do sistema (memória e CPU).
+
+O número de linhas também afeta o desempenho. O banco de dados do Adobe Campaign não foi desenvolvido para armazenar dados históricos que não são usados ativamente para direcionamento ou personalização - esse é um banco de dados operacional.
+
+Para evitar qualquer problema de desempenho relacionado ao alto número de linhas, mantenha somente os registros necessários no banco de dados. Qualquer outro registro deve ser exportado para um data warehouse de terceiros e removido do banco de dados operacional do Adobe Campaign.
+
+Estas são algumas práticas recomendadas relacionadas ao tamanho das tabelas:
+
+* Crie tabelas grandes com menos campos e mais dados numéricos.
+* Não use um grande tipo de coluna (ex: Int64) para armazenar números pequenos como valores booleanos.
+* Remova colunas não usadas da definição da tabela.
+* Não mantenha dados históricos ou inativos no banco de dados do Adobe Campaign (exportação e limpeza).
+
+Aqui está um exemplo:
+
+![](assets/transaction-table-example.png)
+
+Neste exemplo:
+* As tabelas *Transações* e Item ** de Transação são grandes: mais de 10 milhões.
+* As tabelas *Produto* e *Loja* são menores: menos de 10.000.
+* A etiqueta do produto e a referência foram colocadas na tabela *Produto* .
+* A tabela Item *de* Transação tem apenas um link para a tabela *Produto* , que é numérica.
+
+<!--For more detailed best practices on how to optimize the database design for larger volumes, see [Campaign Classic Data model Best practices](https://helpx.adobe.com/campaign/kb/acc-data-model-best-practices.html).-->
