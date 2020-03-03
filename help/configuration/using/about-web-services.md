@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: dbff132e3bf88c408838f91e50e4b047947ee32a
+source-git-commit: a047e4af6e31c54fa2444943a18da5913e115c09
 
 ---
 
@@ -180,6 +180,6 @@ Para enviar o serviço da Web, é necessário entrar em contato com o servidor d
 
 O URL do servidor é o seguinte:
 
-[https://`<server>`/nl/jsp/soaprouter.jsp`](https://XXXX//nl/jsp/soaprouter.jsp)
+https://serverName/nl/jsp/soaprouter.jsp
 
 Com **`<server>`** o servidor de aplicativos do Adobe Campaign (**nlserver web**).
