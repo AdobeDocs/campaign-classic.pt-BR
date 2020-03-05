@@ -13,7 +13,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: d94ded3b87244a7cd51a15c1ebe409c9fdfcd843
+source-git-commit: fd7bc26fe12a26d8fb0dcccd2135b799e76b52bd
 
 ---
 
@@ -26,22 +26,22 @@ source-git-commit: d94ded3b87244a7cd51a15c1ebe409c9fdfcd843
  <tbody> 
   <tr> 
    <td><img src="assets/green3.png"/><strong>Disponibilidade geral</strong></td>
-   <td><img src="assets/blue3.png"/><strong>Release Candidate</strong></td> 
+   <td><img src="assets/blue3.png"/><strong>Candidato à versão</strong></td> 
    <td><img src="assets/orange3.png"/><strong>Não está mais disponível</strong></td> 
    <td><img src="assets/red3.png"/><strong>Obsoleto</strong></td> 
   </tr> 
    <tr> 
-   <td>Compilação estável mais recente disponível. <br>Compilação validada na produção. </td>
-   <td>Compilação validada pela Adobe. <br>Aguardando prova de produção. </td>
-   <td>Versão mais recente disponível com correções de erros. <br>É necessário atualizar. </td>
-   <td>Contém regressões conhecidas. <br>A atualização é obrigatória. </td>
+   <td>Compilação estável mais recente disponível. Compilação validada na produção.<br> </td>
+   <td>Compilação validada pela Adobe. Aguardando prova de produção.<br> </td>
+   <td>Versão mais recente disponível com correções de erros. É necessário atualizar.<br> </td>
+   <td>Contém regressões conhecidas. A atualização é obrigatória.<br> </td>
   </tr> 
  </tbody> 
 </table>
 
-Clique [aqui](../../rn/using/release--19-1.md#release-19-1-4-build-9032) para exibir a **última compilação** estável (GA).
+A **última compilação** estável é 9032 (205c981c3). Clique [aqui](../../rn/using/release--19-1.md#release-19-1-4-build-9032)
 
-## ![](assets/blue-2.png) Versão 20.1 - Build 9122 {#release-20-1-build-XXXX}
+## ![](assets/blue_2.png) Versão 20.1 - Build 9122 {#release-20-1-build-9122}
 
 _17 de fevereiro de 2020_
 
@@ -81,7 +81,7 @@ _17 de fevereiro de 2020_
 
 * Segurança aprimorada na configuração do relatório para proteger contra clickjacking. Isso se aplica aos novos relatórios. Para relatórios antigos, é necessário republicá-los para aplicar as alterações. (NEO-13282)
 
-* Corrigido um pequeno problema de memória em cryptString. (NEO-20071)
+* Correção de um pequeno problema de memória em cryptString. (NEO-20071)
 
 * JSP do monitor aprimorado para corrigir uma divulgação interna de IP. (NEO-16821)
 
@@ -131,7 +131,7 @@ _17 de fevereiro de 2020_
 
 * Correção de um problema de criptografia de chave de conta ao usar o conector Hadoop.
 
-* Corrigido um problema de regressão devido à implementação da certificação SSL que causava a falha da conexão do usuário no servidor Windows. (NEO-20629)
+* Correção de um problema de regressão devido à implementação da certificação SSL que causava a falha da conexão do usuário no servidor Windows. (NEO-20629)
 
 * Correção de um problema com a atividade de consulta incremental no caso de IDs de fluxo de trabalho negativas. (NEO-19779)
 
@@ -145,7 +145,7 @@ _17 de fevereiro de 2020_
 
 * Correção de um problema ao analisar os URLs no conteúdo de entregas contínuas, o que poderia causar falhas. (NEO-16910)
 
-* Correção de um problema no qual os campos **Início** e **Fim** não eram calculados ao criar uma nova campanha.
+* Correção de um problema que fazia com que os campos **Início** e **Fim** não fossem calculados ao criar uma nova campanha.
 
 * Correção de um problema com a atividade do fluxo de trabalho Download **de** arquivo ao usar um URL.
 
@@ -175,7 +175,7 @@ _17 de fevereiro de 2020_
 
 * Correção de um problema que fazia com que o relatório de throughput de entrega mostrasse números diferentes quando o parâmetro de visualização de tempo era exibido. (NEO-11783)
 
-* Correção de um problema que impedia que os indicadores de rastreamento de mensagens transacionais fossem atualizados pelo fluxo de trabalho de rastreamento. (NEO-17770)
+* Correção de um problema que impedia que os indicadores de rastreamento de mensagens transacionais fossem atualizados pelo fluxo de trabalho de Rastreamento. (NEO-17770)
 
 * Correção de um problema de regressão que resultava em falha e reinicialização do processo da Web ao solicitar uma oferta por meio do SOAP. (NEO-19482)
 
