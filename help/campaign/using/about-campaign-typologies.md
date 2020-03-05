@@ -15,14 +15,14 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 1c86322fa95aee024f6c691b61a10c21a9a22eb7
+source-git-commit: 44d8ba19f2e79d30229239312e6a5148d247fb28
 
 ---
 
 
 # Sobre tipologias de campanha{#about-campaign-typologies}
 
-Otimização de Campanha é o módulo do Adobe Campaign que permite controlar, filtrar e monitorar o envio de deliveries. Para evitar conflitos entre campanhas, o Adobe Campaign pode testar várias combinações aplicando regras de restrição específicas. Isso garante que as mensagens enviadas atendam melhor às necessidades e expectativas dos clientes, de acordo com as políticas de comunicação da empresa.
+A Otimização de campanha é o módulo do Adobe Campaign que permite controlar, filtrar e monitorar o envio de entregas. Para evitar conflitos entre campanhas, o Adobe Campaign pode testar várias combinações aplicando regras de restrição específicas. Isso garante que as mensagens enviadas atendam às necessidades e expectativas dos clientes e às políticas de comunicação da empresa.
 
 >[!NOTE]
 >
