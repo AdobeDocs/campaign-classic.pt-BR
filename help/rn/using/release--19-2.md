@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 410fd89cd030ac3d4644e6aa025ed5f03adb788f
+source-git-commit: fd7bc26fe12a26d8fb0dcccd2135b799e76b52bd
 
 ---
 
@@ -28,31 +28,31 @@ source-git-commit: 410fd89cd030ac3d4644e6aa025ed5f03adb788f
  <tbody> 
   <tr> 
    <td><img src="assets/green3.png"/><strong>Disponibilidade geral</strong></td>
-   <td><img src="assets/blue3.png"/><strong>Release Candidate</strong></td> 
+   <td><img src="assets/blue3.png"/><strong>Candidato à versão</strong></td> 
    <td><img src="assets/orange3.png"/><strong>Não está mais disponível</strong></td> 
    <td><img src="assets/red3.png"/><strong>Obsoleto</strong></td> 
   </tr> 
    <tr> 
-   <td>Compilação estável mais recente disponível. <br>Compilação validada na produção. </td>
-   <td>Compilação validada pela Adobe. <br>Aguardando prova de produção. </td>
-   <td>Versão mais recente disponível com correções de erros. <br>É necessário atualizar. </td>
-   <td>Contém regressões conhecidas. <br>A atualização é obrigatória. </td>
+   <td>Compilação estável mais recente disponível. Compilação validada na produção.<br> </td>
+   <td>Compilação validada pela Adobe. Aguardando prova de produção.<br> </td>
+   <td>Versão mais recente disponível com correções de erros. É necessário atualizar.<br> </td>
+   <td>Contém regressões conhecidas. A atualização é obrigatória.<br> </td>
   </tr> 
  </tbody> 
 </table>
 
-Clique [aqui](../../rn/using/release--19-1.md#release-19-1-4-build-9032) para exibir a **última compilação** estável (GA).
+A **última compilação** estável é 9032 (205c981c3). Clique [aqui](../../rn/using/release--19-1.md#release-19-1-4-build-9032)
 
-## ![](assets/blue-2.png) Versão 19.2.3 - Build 9081 {#release-19-2-3-build-9081}
+## ![](assets/blue_2.png) Versão 19.2.3 - Build 9081 {#release-19-2-3-build-9081}
 
 _07 de fevereiro de 2020_
 
 **Aprimoramentos**
 
-* Corrigido um problema de regressão devido à implementação da certificação SSL que causava a falha da conexão do usuário no servidor Windows. (NEO-20629)
+* Correção de um problema de regressão devido à implementação da certificação SSL que causava a falha da conexão do usuário no servidor Windows. (NEO-20629)
 * Correção de um problema que exibia um número de tag de versão incorreto no menu **Sobre** .
 
-## ![](assets/orange-2.png) Versão 19.2 - Build 9080 {#release-19-2-build-9080}
+## ![](assets/orange_2.png) Versão 19.2 - Build 9080 {#release-19-2-build-9080}
 
 _02 de dezembro de 2019_
 
@@ -67,7 +67,7 @@ _02 de dezembro de 2019_
  <tbody> 
   <tr> 
    <td> <p>CCPA é a nova lei de privacidade do estado da Califórnia que harmoniza e moderniza os requisitos de proteção de dados que entram em vigor em 1° de janeiro de 2020. O CCPA se aplica aos clientes do Adobe Campaign que detêm dados para pessoas de dados residentes na Califórnia.</p>
-    <p> Além dos recursos de privacidade já disponíveis (incluindo gerenciamento de consentimento, configurações de retenção de dados e funções de usuário), o Adobe Campaign ajuda a facilitar a preparação para CCPA:</p>
+    <p>Além dos recursos de privacidade já disponíveis (incluindo gerenciamento de consentimento, configurações de retenção de dados e funções de usuário), o Adobe Campaign ajuda a facilitar a preparação para CCPA:</p>
     <ul>
       <li>Direito de acesso e direito de exclusão: estamos aproveitando as capacidades que foram adicionadas ao RGPD. <a href="https://helpx.adobe.com/campaign/kb/acc-privacy.html#righttoaccess">Leia mais</a></li>
       <li>Você pode rastrear se um consumidor optou pela venda de Informações pessoais. Para isso, é necessário estender a tabela Perfis e adicionar um campo <strong>Recusar para CCPA</strong> . <a href="https://helpx.adobe.com/campaign/kb/acc-privacy.html#ccpa">Leia mais</a></li></td> 
@@ -99,7 +99,7 @@ _02 de dezembro de 2019_
  <tbody> 
   <tr> 
 <td> <p>O Adobe Campaign permite que você experimente o novo <a href="https://amp.dev/about/email/">AMP interativo para o formato de email</a> , que permite que os profissionais de marketing incluam componentes AMP dentro de mensagens para aprimorar a experiência de email com conteúdo avançado, dinâmico e interativo, acionável diretamente na própria mensagem.</p>
-   <p> Esse recurso é lançado como um beta público.</p>
+   <p>Esse recurso é lançado como um beta público.</p>
    <p>For more information, refer to the <a href="../../delivery/using/defining-interactive-content.md">detailed documentation</a> and the <a href="https://docs.adobe.com/content/help/en/campaign-learn/campaign-classic-tutorials/sending-messages/email-channel/defining-interactive-email-content-with-amp.html">tutorial video</a>.</p><br /></td> 
   </tr> 
  </tbody> 
@@ -114,7 +114,7 @@ _02 de dezembro de 2019_
  </thead> 
  <tbody> 
   <tr> 
-<td> <p>O SMS Seguro agora é suportado pelo Conector SMPP Genérico Estendido. Isto permite uma conexão codificada com o provedor.</p> <p><strong>Aviso</strong> Este recurso requer um certificado atualizado em todos os servidores. Certificados inválidos, revogados ou expirados gerarão erros que afetam os recursos gerais de envio de SMS.</p><p>Para obter mais informações, consulte a <a href="https://helpx.adobe.com/campaign/kb/sms-connector-protocol-and-settings.html">documentação detalhada</a>. </p> </td> 
+<td> <p>O SMS Seguro agora é suportado pelo Conector SMPP Genérico Estendido. Isto permite uma conexão codificada com o provedor.</p> <p><strong>Aviso</strong> Este recurso requer um certificado atualizado em todos os servidores. Certificados inválidos, revogados ou expirados gerarão erros que afetarão os recursos gerais de envio de SMS.</p><p>Para obter mais informações, consulte a <a href="https://helpx.adobe.com/campaign/kb/sms-connector-protocol-and-settings.html">documentação detalhada</a>. </p> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -122,7 +122,7 @@ _02 de dezembro de 2019_
 **Aprimoramentos de segurança**
 
 * Corrigidas as vulnerabilidades de script entre sites armazenadas na interface do Campaign - validação de dados de entrada e codificação de saída. (NEO-16810)
-* Correção de um problema de segurança na autorização de perfil que poderia permitir o acesso a dados não autorizados ao reforçar a política de restrição de logon. (NEO-14445)
+* Correção de um problema de segurança na autorização de perfil que poderia permitir o acesso a dados não autorizados, ao reforçar a política de restrição de logon. (NEO-14445)
 
 **Aprimoramentos**
 
