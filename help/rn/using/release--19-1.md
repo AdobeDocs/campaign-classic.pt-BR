@@ -15,20 +15,41 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: ba5496a008a28a29fc8e2032f31355a7c34f3ef8
+source-git-commit: fd7bc26fe12a26d8fb0dcccd2135b799e76b52bd
 
 ---
 
 
 # Versão 19.1{#release-19-1}
 
-## Versão 19.1.6 - Build 9035 {#release-19-1-6-build-9035}
+[Criar atualização](https://helpx.adobe.com/campaign/kb/acc-build-upgrade.html) | Versões [do Painel](https://docs.adobe.com/content/help/en/control-panel/using/release-notes.html) de controle| Atualizações [da documentação](../../rn/using/documentation-updates.md) | [Versões anteriores](../../rn/using/release--19-1.md) | Recursos [obsoletos](https://helpx.adobe.com/campaign/kb/deprecated-and-removed-features.html)
+
+<table> 
+ <tbody> 
+  <tr> 
+   <td><img src="assets/green3.png"/><strong>Disponibilidade geral</strong></td>
+   <td><img src="assets/blue3.png"/><strong>Candidato à versão</strong></td> 
+   <td><img src="assets/orange3.png"/><strong>Não está mais disponível</strong></td> 
+   <td><img src="assets/red3.png"/><strong>Obsoleto</strong></td> 
+  </tr> 
+   <tr> 
+   <td>Compilação estável mais recente disponível. Compilação validada na produção.<br> </td>
+   <td>Compilação validada pela Adobe. Aguardando prova de produção.<br> </td>
+   <td>Versão mais recente disponível com correções de erros. É necessário atualizar.<br> </td>
+   <td>Contém regressões conhecidas. A atualização é obrigatória.<br> </td>
+  </tr> 
+ </tbody> 
+</table>
+
+A **última compilação** estável é 9032 (205c981c3). Clique [aqui](../../rn/using/release--19-1.md#release-19-1-4-build-9032)
+
+## ![](assets/orange_2.png) Versão 19.1.6 - Build 9035 {#release-19-1-6-build-9035}
 
 >[!CAUTION]
 >
->Esta construção destina-se apenas a instalações locais. Para implantações híbridas, as instâncias hospedadas continuarão executando a compilação 9032. Não atualize sua instância de marketing para a versão 9035, pois ela não é compatível com o 9032.
+>Esta construção destina-se apenas a instalações locais. Para implantações híbridas, as instâncias hospedadas continuarão executando a compilação 9032. Não atualize sua instância de marketing para a versão 9035, pois ela não é compatível com a versão 9032.
 
-3 de outubro de 2019
+_3 de outubro de 2019_
 
 **Aprimoramentos**
 
@@ -38,13 +59,9 @@ source-git-commit: ba5496a008a28a29fc8e2032f31355a7c34f3ef8
 * Correção de um problema que resultava no não processamento de determinadas mensagens pelo servidor de Mid-Sourcing. (NEO-12395)
 * Correção de um problema que impedia o uso total da atividade do SQL Data Management (o direito nomeado do &quot;SQL Data Management&quot; estava ausente).
 
-## Versão 19.1.5 - Build 9033{#release-19-1-5-build-9033}
+## ![](assets/orange_2.png) Versão 19.1.5 - Build 9033{#release-19-1-5-build-9033}
 
-13 de agosto de 2019
-
->[!CAUTION]
->
->Esta configuração foi retomada. [Atualize para a configuração mais recente](https://docs.campaign.adobe.com/doc/AC/getting_started/EN/buildUpgrade.html) ou entre em contato com o [suporte técnico](https://support.neolane.net/).
+_13 de agosto de 2019_
 
 **Aprimoramentos**
 
@@ -57,43 +74,31 @@ source-git-commit: ba5496a008a28a29fc8e2032f31355a7c34f3ef8
 
 ## Versão 19.1.4 - Build 9032{#release-19-1-4-build-9032}
 
-**17 de dezembro de 2019**: nova compilação (9032-9d34fb17e) que inclui a seguinte correção:
+![](assets/green_2.png) 5 **de março de 2020**: nova compilação (9032-...205c981c3) que inclui a seguinte correção:
+
+* Correção de um problema com contas externas usando FTP sobre SSL. (NEO-20498)
+
+![](assets/orange_2.png) 17 **de dezembro de 2019**: nova compilação (9032-...9d34fb17e) que inclui a seguinte correção:
 
 * Correção de um problema de rastreamento nos seguintes canais de comunicação: dispositivos móveis (SMS, MMS), push (iOS, Android) e redes sociais (Facebook, Twitter).
 (NEO-19595)
 
-**11 de dezembro de 2019**: nova compilação (9032-e28b428b7) que inclui a seguinte correção:
-
->[!CAUTION]
->
->Esta configuração foi retomada. [Atualize para a configuração mais recente](https://docs.campaign.adobe.com/doc/AC/getting_started/EN/buildUpgrade.html) ou entre em contato com o [suporte técnico](https://support.neolane.net/).
+![](assets/orange_2.png) 11 **de dezembro de 2019**: nova construção (9032-...e28b428b7) que inclui a seguinte correção:
 
 * Correção de um problema de desempenho ao enviar mensagens com um banco de dados MSSQL. (NEO-17558)
 
-**20 de novembro de 2019**: nova compilação (9032-3468c7bb5) que inclui as seguintes correções:
-
->[!CAUTION]
->
->Esta configuração foi retomada. [Atualize para a configuração mais recente](https://docs.campaign.adobe.com/doc/AC/getting_started/EN/buildUpgrade.html) ou entre em contato com o [suporte técnico](https://support.neolane.net/).
+![](assets/orange_2.png) 20 **de novembro de 2019**: nova compilação (9032-...3468c7bb5) que inclui as seguintes correções:
 
 * Correção de um problema de logon por autenticação IMS. (NEO-17312)
 * Correção de um problema ao exibir relatórios cumulativos em várias entregas. (NEO-18165)
 * Correção de um problema que poderia bloquear ou fazer o servidor da Web travar.
 
-**19 de setembro de 2019**: nova compilação (9032-cee805c93) que inclui as seguintes correções:
-
->[!CAUTION]
->
->Esta configuração foi retomada. [Atualize para a configuração mais recente](https://docs.campaign.adobe.com/doc/AC/getting_started/EN/buildUpgrade.html) ou entre em contato com o [suporte técnico](https://support.neolane.net/).
+![](assets/orange_2.png) 19 **de setembro de 2019**: nova construção (9032-...cee805c93) que inclui as seguintes correções:
 
 * Correção de um problema ao usar o Conector CRM para Salesforce. (NEO-17712)
 * Correção de um problema de índice que causava problemas de desempenho ao enviar mensagens transacionais.
 
-**13 de agosto de 2019**: compilação 19.1.4 inicial que inclui as seguintes correções:
-
->[!CAUTION]
->
->Esta configuração foi retomada. [Atualize para a configuração mais recente](https://docs.campaign.adobe.com/doc/AC/getting_started/EN/buildUpgrade.html) ou entre em contato com o [suporte técnico](https://support.neolane.net/).
+![](assets/orange_2.png) 13 **de agosto de 2019**: compilação 19.1.4 inicial que inclui as seguintes correções:
 
 * Correção de um problema em que a atividade do programador gerasse mensagens de erro indesejáveis durante a configuração do assistente. Reversão de atualização do NEO-11662. (NEO-17097)
 * Correção de uma regressão causada pelo NEO-12727, que podia interromper os fluxos de trabalho quando uma atividade de teste era executada duas vezes. (NEO-16835)
@@ -101,13 +106,9 @@ source-git-commit: ba5496a008a28a29fc8e2032f31355a7c34f3ef8
 * Correção de um problema com a chave DKIM, que não era inserida em emails, causando problemas de entrega. (NEO-16804)
 * Correção de vários problemas com o agendamento de fluxos de trabalho. Os fluxos de trabalho eram agendados para serem executados uma vez por dia sem levar em consideração a configuração do programador. (NEO-16619, NEO-16426)
 
-## Versão 19.1.2 - Build 9029{#release-19-1-2-build-9029}
+## ![](assets/orange_2.png) Versão 19.1.2 - Build 9029{#release-19-1-2-build-9029}
 
-21 de junho de 2019
-
->[!CAUTION]
->
->Esta configuração foi retomada. [Atualize para a configuração mais recente](https://docs.campaign.adobe.com/doc/AC/getting_started/EN/buildUpgrade.html) ou entre em contato com o [suporte técnico](https://support.neolane.net/).
+_21 de junho de 2019_
 
 **Aprimoramentos de segurança**
 
@@ -121,13 +122,9 @@ source-git-commit: ba5496a008a28a29fc8e2032f31355a7c34f3ef8
 * Agora permitimos a exclusão de registros fictícios criados no Microsoft Dynamics durante o fluxo de trabalho de importação.
 * Permissões aprimoradas para executar o pacote de zona de segurança ao usar a conta interna.
 
-## Versão 19.1 - Build 9026{#release-19-1-build-9026}
+## ![](assets/orange_2.png) Versão 19.1 - Build 9026{#release-19-1-build-9026}
 
-30 de maio de 2019
-
->[!CAUTION]
->
->Esta configuração foi retomada. [Atualize para a configuração mais recente](https://docs.campaign.adobe.com/doc/AC/getting_started/EN/buildUpgrade.html) ou entre em contato com o [suporte técnico](https://support.neolane.net/).
+_30 de maio de 2019_
 
 **Novidades**
 
@@ -141,7 +138,7 @@ source-git-commit: ba5496a008a28a29fc8e2032f31355a7c34f3ef8
  <tbody> 
   <tr> 
    <td> Painel de controle<br /> </td> 
-   <td> <p>Para aumentar a eficiência em seu trabalho como um usuário administrador, gerencie as configurações dos servidores SFTP monitorando o armazenamento, os endereços IP incluídos na lista de permissões e instalando chaves SSH para cada instância. Observe que o Painel de Controle está disponível apenas para clientes hospedados no AWS a partir de hoje (<a href="https://experiencecloud.adobe.com/campaign/controlpanel/">login através da Experience Cloud hoje</a>).</p> <p>Para obter mais informações, consulte a <a href="https://docs.adobe.com/content/help/en/control-panel/using/control-panel-home.html">documentação detalhada</a> e o <a href="https://docs.adobe.com/content/help/en/campaign-learn/campaign-classic-tutorials/administrating/control-panel-acc/control-panel-overview.html">vídeo de instruções</a>. </p><p>Observação: não é necessário atualizar para a versão mais recente do Campaign para acessar o Painel de controle.</p> </td> 
+   <td> <p>Para aumentar a eficiência em seu trabalho como um usuário administrador, gerencie as configurações dos servidores SFTP monitorando o armazenamento, os endereços IP incluídos na lista de permissões e instalando chaves SSH para cada instância. Observe que o Painel de Controle está disponível apenas para clientes hospedados no AWS a partir de hoje (<a href="https://experiencecloud.adobe.com/campaign/controlpanel/">login através da Experience Cloud hoje</a>).</p> <p>Para obter mais informações, consulte a <a href="https://docs.adobe.com/content/help/en/control-panel/using/control-panel-home.html">documentação detalhada</a> e o <a href="https://docs.adobe.com/content/help/en/campaign-learn/campaign-classic-tutorials/administrating/control-panel-acc/control-panel-overview.html">vídeo de instruções</a>. </p><p>Observação: a atualização para a versão mais recente do Campaign não é necessária para acessar o Painel de controle.</p> </td> 
   </tr> 
     <tr> 
    <td> Audit trail<br /> </td> 
