@@ -14,7 +14,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 2ee1912e0de2841867d0ffb5420cc9810aa1083e
+source-git-commit: 2ca8fb051dce9abfcb8987c4d4527d997b480f96
 
 ---
 
@@ -44,10 +44,6 @@ Saiba como importar um HTML existente para criar e enviar emails no Adobe Campai
 ## Como usar o DCE do Campaign para criar um conteúdo de e-mail? {#how-to-use-campaign-dce-to-create-an-email-content-}
 
 [Crie um e-mail com o editor de conteúdo digital do Campaign](../../web/using/use-case--creating-an-email-delivery.md): confira um exemplo para saber mais sobre como usar o DCE do Campaign para projetar um e-mail.
-
-## Como posso adicionar um código de barras a um e-mail? {#how-can-i-add-a-barcode-in-an-email-}
-
-Descubra como [adicionar facilmente um código de barras](../../delivery/using/inserting-a-barcode-in-an-email.md) a um e-mail personalizado.
 
 ## Como posso criar um boletim informativo baseado em assinaturas no Campaign? {#how-can-i-create-a-subscription-based-newsletter-in-campaign-}
 
