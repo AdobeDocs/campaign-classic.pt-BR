@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: d2758b5e81d1720a4f01a610e51c4a33995d88d1
+source-git-commit: ae44e38e9d05478e8ebfacb1e063cdfd5d7ff30c
 
 ---
 
@@ -52,4 +52,4 @@ Em geral, são necessários os seguintes direitos:
 
 >[!NOTE]
 >
->O administrador do banco de dados precisa combinar esses direitos com os direitos específicos de cada mecanismo de banco de dados. Para obter mais informações, consulte os [direitos específicos do RDBMS](https://docs.campaign.adobe.com/doc/AC6.1/en/technicalResources/technicalResources.html).
+>O administrador do banco de dados precisa combinar esses direitos com os direitos específicos de cada mecanismo de banco de dados. Para obter mais informações, consulte os [direitos específicos do RDBMS](https://docs.adobe.com/content/help/en/campaign-classic/using/assets/fda_rdbms_rights.pdf).
