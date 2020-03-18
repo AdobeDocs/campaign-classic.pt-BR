@@ -13,7 +13,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: ad3aedeb18cfce809f959ccb62cb27928877c9d2
+source-git-commit: 1336bf7ab9cce7f2ffe7d4ffa5e119851e946885
 
 ---
 
@@ -46,11 +46,11 @@ Esta abordagem centrada no cliente é mostrada no gráfico abaixo. A tabela **De
 
 Para acessar a descrição de cada tabela, vá para **[!UICONTROL Admin > Configuration > Data schemas]**, selecione um recurso da lista e clique na **[!UICONTROL Documentation]** guia.
 
-O modelo de dados padrão do Adobe Campaign é apresentado neste [documento](https://final-docs.campaign.adobe.com/doc/AC/en/technicalResources/_Datamodel_Description_of_the_main_tables.html).
+O modelo de dados padrão do Adobe Campaign é apresentado neste [documento](../../configuration/using/data-model-description.md).
 
 >[!NOTE]
 >
->O Adobe Campaign Classic permite criar uma tabela de clientes personalizada. No entanto, na maioria dos casos, é recomendável aproveitar a tabela [](../../configuration/using/default-recipient-table.md) Destinatário padrão que já tem tabelas e recursos adicionais pré-criados.
+>O Adobe Campaign Classic permite criar uma tabela de clientes personalizada. No entanto, na maioria dos casos, é recomendável aproveitar a tabela [](../../configuration/using/about-data-model.md#default-recipient-table) Destinatário padrão que já tem tabelas e recursos adicionais pré-criados.
 
 ### Dados do Adobe Campaign {#data-for-campaign}
 
@@ -110,7 +110,7 @@ A tabela a seguir descreve esses identificadores e sua finalidade.
 | Identifier | Descrição | Práticas recomendadas |
 |--- |--- |--- |
 | Id | <ul><li>A ID é a chave primária física de uma tabela do Adobe Campaign. Para tabelas predefinidas, é um número gerado de 32 bits de uma sequência</li><li>Normalmente, esse identificador é exclusivo de uma instância específica do Adobe Campaign. </li><li>Uma ID gerada automaticamente pode ser visível em uma definição de esquema. Pesquise o atributo *autopk=&quot;true&quot;* .</li></ul> | <ul><li>Os identificadores gerados automaticamente não devem ser usados como referência em um fluxo de trabalho ou em uma definição de pacote.</li><li>Não se deve partir do princípio de que a id será sempre um número crescente.</li><li>A id em uma tabela predefinida é um número de 32 bits e esse tipo não deve ser alterado. Este número é extraído de uma &quot;sequência&quot; coberta na seção com o mesmo nome.</li></ul> |
-| Nome (ou nome interno) | <ul><li>Essas informações são um identificador exclusivo de um registro em uma tabela. Esse valor pode ser atualizado manualmente, geralmente com um nome gerado.</li><li>Esse identificador mantém seu valor quando implantado em uma instância diferente do Adobe Campaign e não deve estar vazio.</li></ul> | <ul><li>Renomeie o nome do registro gerado pelo Adobe Campaign se o objeto for implantado de um ambiente para outro.</li><li>Quando um objeto tem um atributo de namespace (*esquema* , por exemplo), esse namespace comum será aproveitado em todos os objetos personalizados criados. Alguns namespaces reservados não devem ser usados: *nms*, *xtk*.</li><li>Quando um objeto não tem namespace (*fluxo de trabalho* ou *entrega* , por exemplo), essa noção de namespace seria adicionada como um prefixo de um objeto de nome interno: *namespaceMyObjectName*.</li><li>Não use caracteres especiais, como o espaço &quot;&quot;, a semircoluna &quot;:&quot; ou o hífen &quot;-&quot;. Todos esses caracteres seriam substituídos por um sublinhado &quot;_&quot; (caractere permitido). Por exemplo, &quot;abc-def&quot; e &quot;abc:def&quot; seriam armazenados como &quot;abc_def&quot; e se substituiriam.</li></ul> |
+| Nome (ou nome interno) | <ul><li>Essas informações são um identificador exclusivo de um registro em uma tabela. Esse valor pode ser atualizado manualmente, geralmente com um nome gerado.</li><li>Esse identificador mantém seu valor quando implantado em uma instância diferente do Adobe Campaign e não deve estar vazio.</li></ul> | <ul><li>Renomeie o nome do registro gerado pelo Adobe Campaign se o objeto for implantado de um ambiente para outro.</li><li>Quando um objeto tem um atributo de namespace (*esquema* , por exemplo), esse namespace comum será aproveitado em todos os objetos personalizados criados. Alguns namespaces reservados não devem ser usados: *nms*, *xtk*.</li><li>Quando um objeto não tem um namespace (*fluxo de trabalho* ou *entrega* , por exemplo), essa noção de namespace seria adicionada como um prefixo de um objeto de nome interno: *namespaceMyObjectName*.</li><li>Não use caracteres especiais, como o espaço &quot;&quot;, a semircoluna &quot;:&quot; ou o hífen &quot;-&quot;. Todos esses caracteres seriam substituídos por um sublinhado &quot;_&quot; (caractere permitido). Por exemplo, &quot;abc-def&quot; e &quot;abc:def&quot; seriam armazenados como &quot;abc_def&quot; e se substituiriam.</li></ul> |
 | Rótulo | <ul><li>O rótulo é o identificador comercial de um objeto ou registro no Adobe Campaign.</li><li>Esse objeto permite espaços e caracteres especiais.</li><li>Não garante a unicidade de um registro.</li></ul> | <ul><li>É recomendável determinar uma estrutura para seus rótulos de objetos.</li><li>Essa é a solução mais fácil de usar para identificar um registro ou objeto para um usuário do Adobe Campaign.</li></ul> |
 
 ## Teclas internas personalizadas {#custom-internal-keys}
@@ -151,7 +151,7 @@ Por padrão, uma sequência personalizada terá valores que variam de +1.000 a +
 
 **Tópicos relacionados:**
 * Para obter mais informações sobre o recurso de geração **automática de** Sequência, consulte este [documento](https://helpx.adobe.com/campaign/kb/sequence_auto_generation.html).
-* Para mais informações sobre exaustão de sequências, assista a este [vídeo](https://helpx.adobe.com/customer-care-office-hours/campaign/sequences-exhaustion-campaign-classic.html).
+* Para obter mais informações sobre a exaustão das sequências, assista a este [vídeo](https://helpx.adobe.com/customer-care-office-hours/campaign/sequences-exhaustion-campaign-classic.html).
 
 ## Índices {#indexes}
 
@@ -163,10 +163,10 @@ No entanto, lembre-se do seguinte:
 
 * O uso do índice está vinculado ao seu padrão de acesso. A otimização da indexação é, muitas vezes, uma parte essencial no projeto do banco de dados e precisa ser tratada por especialistas. A adição de índices geralmente é um fluxo de trabalho iterativo anexado à manutenção do banco de dados. É feito ao longo do tempo, passo a passo, para resolver problemas de desempenho ao ocorrer.
 * Os índices aumentam o tamanho geral da tabela (para armazenar o próprio índice).
-* Adicionar índice em colunas pode melhorar o desempenho do acesso de leitura de dados (SELECT), mas pode diminuir o desempenho do acesso de gravação de dados (UPDATE).
+* A adição de índice em colunas pode melhorar o desempenho do acesso de leitura de dados (SELECT), mas pode diminuir o desempenho do acesso de gravação de dados (UPDATE).
 * Como isso afeta o desempenho durante a inserção dos dados, os índices devem ser limitados em tamanho e número.
 * Não adicione índices quando não for necessário. Certifique-se de que seja obrigatório e que aumente o desempenho geral de suas consultas (teste e aprenda).
-* Em geral, um índice é eficiente se você sabe que suas consultas não trarão mais de 10% dos registros.
+* De modo geral, um índice é eficiente se você sabe que suas consultas não trarão mais de 10% dos registros.
 * Selecione cuidadosamente os índices que precisam ser definidos.
 * Não remova índices nativos de tabelas predefinidas.
 
@@ -202,7 +202,7 @@ Defina um link com uma cardinalidade (1-N) no esquema do lado (1). Por exemplo, 
 
 Observe que a cardinalidade reversa de um link é (N) por padrão. É possível definir um link (1-1) adicionando o atributo revCardinality=&#39;single&#39; à definição do link.
 
-Se o link reverso não estiver visível para o usuário, você pode ocultá-lo com a definição do link revLink=&#39;_NONE_&#39;. Um bom caso de uso para isso é definir um link do destinatário para a última transação concluída, por exemplo. Você só precisa ver o link do destinatário para a última transação e nenhum link reverso é necessário para ficar visível da tabela de transação.
+Se o link reverso não deve estar visível para o usuário, você pode ocultá-lo com a definição do link revLink=&#39;_NONE_&#39;. Um bom caso de uso para isso é definir um link do destinatário para a última transação concluída, por exemplo. Você só precisa ver o link do destinatário para a última transação e nenhum link reverso é necessário para ficar visível da tabela de transação.
 
 Os links que executam uma junção externa (1-0.1) devem ser usados com cuidado, pois isso afetará o desempenho do sistema.
 
@@ -213,7 +213,7 @@ O Adobe Campaign não é um data warehouse nem uma ferramenta de relatórios. Po
 Por padrão, os registros de entrega e rastreamento do Adobe Campaign têm uma duração de retenção de 180 dias. Um processo de limpeza é executado para remover qualquer log anterior.
 
 * Se desejar manter os registros por mais tempo, essa decisão deve ser tomada cuidadosamente dependendo do tamanho do banco de dados e do volume de mensagens enviadas. Como lembrete, a sequência do Adobe Campaign é um número inteiro de 32 bits.
-* Recomenda-se não ter mais de 1 bilhão de registros por vez nessas tabelas (cerca de 50% dos 2,14 bilhões de ids disponíveis) para limitar os riscos de consumo de todas as ids disponíveis. Isso exigirá que alguns clientes reduzam a duração da retenção para menos de 180 dias.
+* Recomenda-se não ter mais de 1 bilhão de registros de cada vez nessas tabelas (cerca de 50% dos 2,14 bilhões de ids disponíveis) para limitar os riscos de consumo de todas as ids disponíveis. Isso exigirá que alguns clientes reduzam a duração da retenção para menos de 180 dias.
 
 >[!IMPORTANT]
 >
@@ -223,7 +223,7 @@ Existem algumas soluções para minimizar a necessidade de registros no Adobe Ca
 * Exporte os dados em um data warehouse fora do Adobe Campaign.
 * Gere valores agregados que usarão menos espaço enquanto forem suficientes para suas práticas de marketing. Por exemplo, você não precisa do histórico completo de transações do cliente no Adobe Campaign para acompanhar as últimas compras.
 
-Você pode declarar o atributo &quot;deleteStatus&quot; em um esquema. É mais eficiente marcar o registro como excluído e depois adiar a exclusão na tarefa de limpeza.
+Você pode declarar o atributo &quot;deleteStatus&quot; em um esquema. É mais eficiente marcar o registro como excluído e, em seguida, adiar a exclusão na tarefa de limpeza.
 
 ## Desempenho {#performance}
 
@@ -275,7 +275,7 @@ Para evitar qualquer problema de desempenho relacionado ao alto número de linha
 
 Estas são algumas práticas recomendadas relacionadas ao tamanho das tabelas:
 
-* Crie tabelas grandes com menos campos e mais dados numéricos.
+* Projete tabelas grandes com menos campos e mais dados numéricos.
 * Não use um grande tipo de coluna (ex: Int64) para armazenar números pequenos como valores booleanos.
 * Remova colunas não usadas da definição da tabela.
 * Não mantenha dados históricos ou inativos no banco de dados do Adobe Campaign (exportação e limpeza).
@@ -285,7 +285,7 @@ Aqui está um exemplo:
 ![](assets/transaction-table-example.png)
 
 Neste exemplo:
-* As tabelas *Transações* e Item ** de Transação são grandes: mais de 10 milhões.
+* As tabelas *Transação* e Item ** de Transação são grandes: mais de 10 milhões.
 * As tabelas *Produto* e *Loja* são menores: menos de 10.000.
 * A etiqueta do produto e a referência foram colocadas na tabela *Produto* .
 * A tabela Item *de* Transação tem apenas um link para a tabela *Produto* , que é numérica.
