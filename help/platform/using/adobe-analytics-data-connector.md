@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 20174427735b90129cd4cbd9ee1ba5fd705fa302
+source-git-commit: becdffadaaaa40359b61a6ad786b9fd8ebecc6e9
 
 ---
 
@@ -72,6 +72,10 @@ As etapas a seguir detalham a configuração do Data Connector usando um assiste
 
 1. Na **[!UICONTROL Admin]** guia, selecione **[!UICONTROL Data Connectors]**.
 
+   É necessário ter as seguintes permissões de ferramentas do Analytics para acessar o **[!UICONTROL Data Connectors]** menu. Para obter mais informações, consulte esta [página](https://docs.adobe.com/content/help/en/analytics/admin/admin-console/permissions/analytics-tools.html)
+   * Integrações (Criar)
+   * Integrações (Atualização)
+   * Integrações (Excluir)
    ![](assets/adobe_genesis_install_002.png)
 
 1. Na lista de parceiros, selecione **[!UICONTROL Neolane - Enterprise Marketing Platform]**.
@@ -90,6 +94,7 @@ As etapas a seguir detalham a configuração do Data Connector usando um assiste
    ![](assets/adobe_genesis_install_005.png)
 
 1. Especifique os identificadores necessários para medir o impacto da campanha de e-mail, ou seja, o nome da campanha interna (cid) e o ID da tabela iNmsBroadlog (bid). Você também deve especificar os indicadores para os eventos a serem coletados.
+Certifique-se de que **[!UICONTROL Events]** sejam do tipo Numérico; caso contrário, não aparecerão no menu suspenso.
 
    ![](assets/adobe_genesis_install_006.png)
 
@@ -193,7 +198,7 @@ Se segmentos adicionais tiverem sido configurados no assistente do Data Connecto
 
 A troca de dados entre o Adobe Campaign e o Adobe Analytics – Data Connector é realizada por quatro workflows técnicos que são executados como uma tarefa em segundo plano.
 
-Eles estão disponíveis na árvore do Adobe Campaign, na **[!UICONTROL Administration > Production > Technical workflows > Web analytics process]** pasta.
+Eles estão disponíveis na árvore do Adobe Campaign, abaixo da **[!UICONTROL Administration > Production > Technical workflows > Web analytics process]** pasta.
 
 ![](assets/webanalytics_workflows.png)
 
