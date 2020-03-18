@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 211556bbf023731ffeab2e90692410a852ab3555
+source-git-commit: bc227c2da2e8b1a78714748809ad40bbcefe0458
 
 ---
 
@@ -26,7 +26,7 @@ source-git-commit: 211556bbf023731ffeab2e90692410a852ab3555
 >
 >O MTA prioriza o processamento das mensagens transacionais ante qualquer outro delivery.
 
-Na instância de execução, uma vez que os estágios de enriquecimento estejam completos e um template do delivery esteja vinculado ao evento, o delivery será enviado. Todas as entregas são agrupadas na **[!UICONTROL Administration > Production > Message Center > Default > Deliveries]** pasta.
+Na instância de execução, depois que a fase de enriquecimento é concluída e um modelo de entrega é vinculado ao evento, a entrega é enviada. Todas as entregas são agrupadas na **[!UICONTROL Administration > Production > Message Center > Default > Deliveries]** pasta.
 
 ![](assets/messagecenter_deliveries_execinstances_001.png)
 
