@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 1c2c53041d8a19a491b8ec4da12a8a0ced25cf9a
+source-git-commit: ceb5b2fdcd0dfca28412534ed3417367026f71d0
 
 ---
 
@@ -31,7 +31,6 @@ Exemplo de dados de evento:
 Para processar eventos de mensagens transacionais, você deve seguir as etapas abaixo:
 
 1. Coleção de evento,
-1. Enriquecimento de evento antes de ele ser transferido para um template de mensagem (se você adquiriu a opção disponível para o módulo de mensagens transacionais do Campaign),
 1. Transferência de evento para um template de mensagem,
 1. Enriquecimento de evento com dados de personalização,
 1. Execução do Delivery,
