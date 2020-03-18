@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 16e7266a101b4abea3271c32fcc403e7d7fbaa2d
+source-git-commit: 527d2dd2296d18c8ca26745b9f87d65c6fdf480a
 
 ---
 
@@ -129,7 +129,7 @@ In the list of quarantined addresses, the **[!UICONTROL Error reason]** field in
 Ao contrário de erros rígidos, os erros de software não enviam imediatamente um endereço para quarentena, mas, em vez disso, incrementam um contador de erros.
 
 * Quando o contador de erros atinge o limite, o endereço entra em quarentena.
-* Na configuração padrão, a cota é definida em cinco erros, onde dois erros são significativos se ocorrerem pelo menos em 24 horas de distância. O endereço é colocado em quarentena no sexto erro.
+* Na configuração padrão, a cota é definida em cinco erros, onde dois erros são significativos se ocorrerem pelo menos em 24 horas de distância. O endereço é colocado em quarentena no quinto erro.
 * O limite do contador de erros pode ser modificado. Para obter mais informações, consulte [Tentativas após uma falha](../../delivery/using/understanding-delivery-failures.md#retries-after-a-delivery-temporary-failure)temporária de entrega.
 
 O contador de erros será reinicializado se o último erro significativo ocorrer há mais de 10 dias. The address status then changes to **Valid** and it is deleted from the list of quarantines by the **Database cleanup** workflow.
