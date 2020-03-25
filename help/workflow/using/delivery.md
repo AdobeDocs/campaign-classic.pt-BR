@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: c10a0a11c6e9952aa47da1f7a15188c79c62508d
+source-git-commit: 366d2149933fa68dfec2a732d1014e1875709cff
 
 ---
 
@@ -52,7 +52,7 @@ Para configurá-lo, edite a atividade e insira as opções de delivery.
 
       After selecting the delivery action, you can display the content by clicking the **[!UICONTROL Edit link]** icon.
 
-   * Crie um script para calcular o delivery. To do this, select the **[!UICONTROL Calculated by a script]** option and enter the script. You can open an input window by clicking the **[!UICONTROL Edit...]** option. O exemplo a seguir recupera o identificador do delivery:
+   * Crie um script para calcular o delivery. To do this, select the **[!UICONTROL Computed by a script]** option and enter the script. You can open an input window by clicking the **[!UICONTROL Edit...]** option. O exemplo a seguir recupera o identificador do delivery:
 
       ![](assets/diffusion_edit_3.png)
 
@@ -82,11 +82,11 @@ Para configurá-lo, edite a atividade e insira as opções de delivery.
 
    Selecione o tipo de ação a ser executada:
 
-   * **[!UICONTROL Save]**: essa opção permite criar a entrega e salvá-la. Ele não irá analisar nem enviá-lo.
-   * **[!UICONTROL Estimate the target]**: essa opção permite calcular a meta de entrega para avaliar seu potencial (primeira fase de análise). This action is the equivalent of selecting the **[!UICONTROL Estimate the population to be targeted]** option and clicking **[!UICONTROL Analyze]** when sending a delivery to the main target via **Delivery**.
-   * **[!UICONTROL Prepare]**: essa opção permite que você execute o processo de análise completo (cálculo de meta e preparação de conteúdo). O delivery não é enviado. This action is the equivalent of selecting the **[!UICONTROL Deliver as soon as possible]** option and clicking **[!UICONTROL Analyze]** when sending a delivery to the main target with **Delivery**.
-   * **[!UICONTROL Send a proof]**: essa opção permite que você envie uma prova da entrega. This action is the equivalent of clicking the **[!UICONTROL Send a proof]** button in the toolbar of a delivery with **Delivery**
-   * **[!UICONTROL Prepare and start]**: essa opção inicia o processo de análise completo (cálculo de meta e preparação de conteúdo) e envia a entrega. Essa ação equivale a clicar **[!UICONTROL Deliver as soon as possible]**, **[!UICONTROL Analyze]** e **[!UICONTROL Confirm delivery]** escolher ao enviar uma entrega para a meta principal com **Entrega**.
+   * **[!UICONTROL Save]**: essa opção permite criar o delivery e salvá-lo. Ele não irá analisar nem enviá-lo.
+   * **[!UICONTROL Estimate the target]**: essa opção permite calcular o público alvo do delivery para avaliar seu potencial (primeira fase de análise). This action is the equivalent of selecting the **[!UICONTROL Estimate the population to be targeted]** option and clicking **[!UICONTROL Analyze]** when sending a delivery to the main target via **Delivery**.
+   * **[!UICONTROL Prepare]**: essa opção permite executar o processo de análise completo (cálculo de público alvo e preparação de conteúdo). O delivery não é enviado. This action is the equivalent of selecting the **[!UICONTROL Deliver as soon as possible]** option and clicking **[!UICONTROL Analyze]** when sending a delivery to the main target with **Delivery**.
+   * **[!UICONTROL Send a proof]**: essa opção permite que você envie uma prova do delivery. This action is the equivalent of clicking the **[!UICONTROL Send a proof]** button in the toolbar of a delivery with **Delivery**
+   * **[!UICONTROL Prepare and start]**: essa opção inicia o processo de análise completa (cálculo do público alvo e preparação do conteúdo) e envia o delivery. Essa ação equivale a clicar **[!UICONTROL Deliver as soon as possible]**, **[!UICONTROL Analyze]** e **[!UICONTROL Confirm delivery]** escolher ao enviar um delivery para o público alvo principal com o **Delivery**.
    The **[!UICONTROL Act on a delivery]** activity used further on in the workflow lets you launch all remaining steps required for starting the delivery (target calculation, content preparation, delivery). For more on this, refer to [Delivery control](../../workflow/using/delivery-control.md).
 
    As seguintes opções também estão disponíveis:
@@ -114,7 +114,7 @@ Crie um novo workflow e adicione atividades conforme mostrado no gráfico abaixo
 
 Abra a atividade de **Delivery** e defina as propriedades da seguinte maneira:
 
-* Na **[!UICONTROL Delivery]** seção, selecione **[!UICONTROL New, created from a template]** e selecione um modelo de entrega.
+* Na **[!UICONTROL Delivery]** seção, selecione **[!UICONTROL New, created from a template]** e selecione um template do delivery.
 * Na **[!UICONTROL Recipients]** seção, selecione **[!UICONTROL Specified in the delivery]**.
 * Na **[!UICONTROL Action to execute]** seção, mantenha a **[!UICONTROL Prepare]** opção.
 
@@ -131,7 +131,7 @@ Abra a atividade de **Aprovação** e defina as propriedades da seguinte maneira
    Do you wish to approve delivery (<%= vars.recCount %> recipient(s))?
    ```
 
-   Esta é uma mensagem que inclui uma expressão escrita em JavaScript: representa **[!UICONTROL vars.recCount]** o número de destinatários direcionados pela entrega da tarefa anterior. Para obter mais informações sobre expressões JavaScript, consulte scripts e modelos [](../../workflow/using/javascript-scripts-and-templates.md)JavaScript.
+   Esta é uma mensagem que inclui uma expressão escrita em JavaScript: representa **[!UICONTROL vars.recCount]** o número de recipient direcionados pelo delivery da tarefa anterior. Para obter mais informações sobre expressões JavaScript, consulte scripts e modelos [](../../workflow/using/javascript-scripts-and-templates.md)JavaScript.
 
    ![](assets/new-workflow-param-validation.png)
 
@@ -139,7 +139,7 @@ Abra a atividade de **Aprovação** e defina as propriedades da seguinte maneira
 
 ## Parâmetros de entrada {#input-parameters}
 
-Identificador de entrega, se a **[!UICONTROL Specified in the transition]** opção estiver selecionada na **[!UICONTROL Delivery]** seção.
+identificador do Delivery, se a **[!UICONTROL Specified in the transition]** opção estiver selecionada na **[!UICONTROL Delivery]** seção.
 
 * deliveryId
 * tableName
@@ -165,7 +165,7 @@ Cada evento de entrada deve especificar um target definido por esses parâmetros
 * schema
 * recCount
 
-Esse conjunto de três valores identifica o target resultante do delivery. **[!UICONTROL tableName]** é o nome da tabela que memoriza os identificadores da meta, **[!UICONTROL schema]** é o esquema da população (normalmente nms:customer) e **[!UICONTROL recCount]** é o número de elementos na tabela.
+Esse conjunto de três valores identifica o target resultante do delivery. **[!UICONTROL tableName]** é o nome da tabela que memoriza os identificadores do público alvo, **[!UICONTROL schema]** é o schema da população (normalmente nms:recipient) e **[!UICONTROL recCount]** é o número de elementos na tabela.
 
 A transição associada ao complemento tem os mesmos parâmetros.
 
