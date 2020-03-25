@@ -1,7 +1,7 @@
 ---
-title: Configuração do servidor do Campaign
-seo-title: Configuração do servidor do Campaign
-description: Configuração do servidor do Campaign
+title: Configuração do servidor de Campanha
+seo-title: Configuração do servidor de Campanha
+description: Configuração do servidor de Campanha
 seo-description: null
 page-status-flag: never-activated
 uuid: be21ae4b-ca2a-4952-b256-cd8dc51309cf
@@ -15,36 +15,40 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 1e8492d8e91d679ac13da875974e27d0f7791dc3
+source-git-commit: 7db84fc951234cb6257d8e41615ba7fc5b2c6f77
 
 ---
 
 
-# Configuração do servidor do Campaign{#configuring-campaign-server}
+# Configuração do servidor de Campanha{#configuring-campaign-server}
 
 A seção abaixo detalha as configurações do lado do servidor que podem ser executadas para atender às suas necessidades e às suas especificidades de ambiente.
 
-Essas configurações devem ser executadas pelos administradores e apenas para modelos de hospedagem **local** . Para implantações **hospedadas** , as configurações do lado do servidor podem ser configuradas somente pela Adobe. No entanto, algumas configurações podem ser configuradas no Painel de controle (por exemplo, permissões de IP ou de URL).
+>[!IMPORTANT]
+>
+>Essas configurações devem ser executadas pelos administradores e apenas para modelos de hospedagem **local** .
+>
+>Para implantações **hospedadas** , as configurações do lado do servidor podem ser configuradas somente pela Adobe. No entanto, algumas configurações podem ser configuradas no Painel de controle (por exemplo, permissões de IP ou de URL).
 
 Para obter mais informações, consulte estas seções:
 
 * [Documentação do Painel de controle](https://docs.adobe.com/content/help/en/control-panel/using/control-panel-home.html)
 * [Modelos de hospedagem](../../installation/using/hosting-models.md)
-* [Matriz de recursos no local e hospedado do Campaign Classic](https://helpx.adobe.com/campaign/kb/acc-on-prem-vs-hosted.html)
+* [Matriz de capacidade local e hospedada do Campaign Classic](https://helpx.adobe.com/campaign/kb/acc-on-prem-vs-hosted.html)
 * [Etapas de configuração de modelos híbridos e hospedados](https://docs.campaign.adobe.com/doc/AC/en/INS_Hybrid_and_Hosted_models_About_hybrid_and_hosted_models.html)
 
 Os arquivos de configuração do Campaign Classic são armazenados na pasta **conf** da pasta de instalação do Adobe Campaign. A configuração é distribuída por dois arquivos:
 
-* **serverConf.xml**: configuração geral para todas as instâncias. Este arquivo combina os parâmetros técnicos do servidor do Adobe Campaign: eles são compartilhados por todas as instâncias. A descrição de alguns desses parâmetros é detalhada abaixo. Os diferentes nós e parâmetros e listados nesta [seção](../../installation/using/the-server-configuration-file.md).
-* **config-`<instance>`.xml** (onde **instância** é o nome da instância): configuração específica da instância. Se você compartilhar seu servidor entre várias instâncias, insira os parâmetros específicos de cada instância em seu arquivo relevante.
+* **serverConf.xml**: configuração geral para todas as instâncias. Este arquivo combina os parâmetros técnicos do servidor Adobe Campaign: eles são compartilhados por todas as instâncias. A descrição de alguns desses parâmetros é detalhada abaixo. Os diferentes nós e parâmetros e listados nesta [seção](../../installation/using/the-server-configuration-file.md).
+* **config-`<instance>`.xml** (onde a **instância** é o nome da instância): configuração específica da instância. Se você compartilhar seu servidor entre várias instâncias, insira os parâmetros específicos de cada instância em seu arquivo relevante.
 
 ## Definição de zonas de segurança {#defining-security-zones}
 
 ### Sobre zonas de segurança {#about-security-zones}
 
-Cada operador precisa estar vinculado a uma zona para fazer logon em uma instância e o IP do operador deve ser incluído nos endereços ou conjuntos de endereços definidos na zona de segurança. A configuração da zona de segurança é realizada no arquivo de configuração do servidor do Adobe Campaign.
+Cada operador precisa estar vinculado a uma zona para fazer logon em uma instância e o IP do operador deve ser incluído nos endereços ou conjuntos de endereços definidos na zona de segurança. A configuração da zona de segurança é realizada no arquivo de configuração do servidor Adobe Campaign.
 
-Os operadores estão vinculados a uma zona de segurança a partir de seu perfil no console ( **[!UICONTROL Administration > Access management > Operators]** nó). Saiba como vincular zonas aos operadores de campanha [nesta seção](#linking-a-security-zone-to-an-operator).
+Os operadores estão vinculados a uma zona de segurança a partir de seu perfil no console ( **[!UICONTROL Administration > Access management > Operators]** nó). Saiba como vincular zonas a operadores de Campanha [nesta seção](#linking-a-security-zone-to-an-operator).
 
 ### Criação de zonas de segurança {#creating-security-zones}
 
@@ -53,7 +57,7 @@ Uma zona é definida por:
 * um ou mais intervalos de endereços IP (IPv4 e IPv6)
 * um nome técnico vinculado a cada intervalo de endereços IP
 
-As zonas de segurança são interbloqueadas, o que significa que a definição de uma nova zona dentro de outra zona reduz o número de operadores que podem fazer logon nela, aumentando os direitos atribuídos a cada operador.
+As zonas de segurança são interbloqueadas, o que significa que a definição de uma nova zona dentro de outra zona reduz o número de operadores que podem fazer logon nela e, ao mesmo tempo, aumenta os direitos atribuídos a cada operador.
 
 As zonas devem ser definidas durante a configuração do servidor, no arquivo **serverConf.xml** . Todos os parâmetros disponíveis no **serverConf.xml** estão listados nesta [seção](../../installation/using/the-server-configuration-file.md).
 
@@ -61,7 +65,7 @@ Cada zona define direitos, como:
 
 * Conexão HTTP em vez de HTTPS
 * Exibição de erros (erros de Java, JavaScript, C++ etc.)
-* Visualização de relatório e do WebApp
+* Relatório e pré-visualização do webApp
 * Autenticação via logon/senha
 * Modo de conexão não seguro
 
@@ -107,9 +111,9 @@ Todos os direitos que definem uma zona são os seguintes:
 * **allowHTTP**: uma sessão pode ser criada sem usar o protocolo HTTPS
 * **allowUserPassword**: o token de sessão pode ter o seguinte formato &quot;`<login>/<password>`&quot;
 * **sessionTokenOnly**: o token de segurança não é necessário no URL da conexão
-* **showErrors**: os erros no servidor são encaminhados e exibidos
+* **showErrors**: os erros no lado do servidor são encaminhados e exibidos
 
->[!CAUTION]
+>[!IMPORTANT]
 >
 >Em uma definição de zona, cada atributo com o valor **verdadeiro** reduz a segurança.
 
@@ -153,29 +157,29 @@ O parâmetro **proxy** pode ser usado em um elemento **subNetwork** para especif
 
 Quando um proxy é referenciado e uma conexão entra por meio desse proxy (visível pelo cabeçalho HTTP X-Forwarded-For), a zona verificada é a dos clientes do proxy e não a do proxy.
 
->[!CAUTION]
+>[!IMPORTANT]
 >
 >Se um proxy estiver configurado e for possível substituí-lo (ou se não existir), o endereço IP que será testado poderá ser falsificado.
 >
->Além disso, os relés agora são gerados como proxies. Portanto, você pode adicionar o endereço IP 127.0.0.1 à lista de proxy na configuração da sua zona de segurança.
+>Além disso, os relés agora são gerados como proxies. Portanto, você pode adicionar o endereço IP 127.0.0.1 à lista de proxies na configuração da sua zona de segurança.
 >
 >Por exemplo: &quot; `<subnetwork label="Lan 1" mask="192.168.0.0/16" name="lan1" proxy="127.0.0.1,10.100.2.135" />`&quot;.
 
 Vários casos podem ocorrer:
 
-* Uma subrede é referenciada diretamente na zona de segurança e nenhum proxy é configurado: os usuários da sub-rede podem se conectar diretamente ao servidor do Adobe Campaign.
+* Uma subrede é referenciada diretamente na zona de segurança e nenhum proxy é configurado: os usuários da sub-rede podem se conectar diretamente ao servidor Adobe Campaign.
 
    ![](assets/8101_proxy1.png)
 
-* Um proxy é especificado para uma subrede na zona de segurança: os usuários dessa sub-rede podem acessar o servidor do Adobe Campaign por meio desse proxy.
+* Um proxy é especificado para uma subrede na zona de segurança: os usuários dessa sub-rede podem acessar o servidor Adobe Campaign por meio desse proxy.
 
    ![](assets/8101_proxy2.png)
 
-* Um proxy está incluído em uma subrede de zona de segurança: os usuários que têm acesso por meio desse proxy, independentemente de sua origem, podem acessar o servidor do Adobe Campaign.
+* Um proxy está incluído em uma sub-rede de zona de segurança: os usuários que têm acesso por meio desse proxy, independentemente de sua origem, podem acessar o servidor Adobe Campaign.
 
    ![](assets/8101_proxy3.png)
 
-Os endereços IP dos proxies que provavelmente acessarão o servidor do Adobe Campaign devem ser inseridos tanto na sub-rede em **`<subnetwork>`** questão quanto na de primeiro nível **`<subnetwork name="all"/>`**. Por exemplo, aqui para um proxy cujo endereço IP é 10.131.146.102:
+Os endereços IP dos servidores proxy susceptíveis de aceder ao servidor Adobe Campaign devem ser indicados tanto na sub-rede **`<subnetwork>`** em causa como na de primeiro nível **`<subnetwork name="all"/>`**. Por exemplo, aqui para um proxy cujo endereço IP é 10.131.146.102:
 
 ```
 <securityZone allowDebug="false" allowHTTP="false" label="Public Network" 
@@ -202,14 +206,14 @@ Os endereços IP dos proxies que provavelmente acessarão o servidor do Adobe Ca
 
 Uma vez definidas as zonas, cada operador deve estar vinculado a uma delas para poder fazer logon em uma instância e o endereço IP do operador deve ser incluído nos endereços ou no intervalo de endereços referenciados na zona.
 
-A configuração técnica das zonas é realizada no arquivo de configuração do servidor de campanha: **serverConf.xml**.
+A configuração técnica das zonas é realizada no arquivo de configuração do Servidor de Campanhas: **serverConf.xml**.
 
-Antes disso, você deve começar configurando a enumeração predefinida **[!UICONTROL Security zone]** para vincular um rótulo ao nome interno da zona definida no arquivo **serverConf.xml** .
+Antes disso, você deve fazer o start configurando a **[!UICONTROL Security zone]** lista discriminada predefinida para vincular um rótulo ao nome interno da zona definida no arquivo **serverConf.xml** .
 
-Essa configuração é feita no Campaign Explorer:
+Essa configuração é feita no explorador de Campanhas:
 
 1. Clique no **[!UICONTROL Administration > Platform > Enumerations]** nó.
-1. Selecione a enumeração **[!UICONTROL Security zone (securityZone)]** do sistema.
+1. Selecione a lista discriminada do **[!UICONTROL Security zone (securityZone)]** sistema.
 
    ![](assets/enum_securityzone.png)
 
@@ -220,7 +224,7 @@ Essa configuração é feita no Campaign Explorer:
 
 1. Clique em OK e salve as modificações.
 
-Depois que as zonas forem definidas e a **[!UICONTROL Security zone]** enumeração for configurada, será necessário vincular cada operador a uma zona de segurança:
+Depois que as zonas forem definidas e a **[!UICONTROL Security zone]** lista discriminada for configurada, será necessário vincular cada operador a uma zona de segurança:
 
 1. Clique no **[!UICONTROL Administration > Access management > Operators]** nó.
 1. Selecione o operador ao qual você deseja vincular uma zona de segurança e clique na **[!UICONTROL Edit]** guia.
@@ -251,7 +255,7 @@ Em seguida, modifique a porta das páginas de relé JSP. Para fazer isso, altere
 
 ### Mapeamento de uma pasta no Tomcat {#mapping-a-folder-in-tomcat}
 
-Para definir configurações específicas do cliente, você pode criar um arquivo **user_contexts.xml** na pasta **/tomcat-7/conf** , que também contém o arquivo **contexts.xml** .
+Para definir configurações específicas do cliente, você pode criar um arquivo **user_contextos.xml** na pasta **/tomcat-7/conf** , que também contém o arquivo **contextos.xml** .
 
 Esse arquivo conterá o seguinte tipo de informação:
 
@@ -261,11 +265,11 @@ Esse arquivo conterá o seguinte tipo de informação:
 
 Se necessário, essa operação pode ser reproduzida no lado do servidor.
 
-## Personalização dos parâmetros de entrega {#personalizing-delivery-parameters}
+## Personalização de parâmetros de delivery {#personalizing-delivery-parameters}
 
-Os parâmetros de entrega são definidos no arquivo de configuração **serverConf.xml** . Todos os parâmetros disponíveis no **serverConf.xml** estão listados nesta [seção](../../installation/using/the-server-configuration-file.md).
+Os parâmetros do delivery são definidos no arquivo de configuração **serverConf.xml** . Todos os parâmetros disponíveis no **serverConf.xml** estão listados nesta [seção](../../installation/using/the-server-configuration-file.md).
 
-A configuração geral do servidor e os comandos estão detalhados na configuração [do servidor do](../../installation/using/campaign-server-configuration.md)Campaign.
+A configuração geral do servidor e os comandos estão detalhados na configuração [do servidor de](../../installation/using/campaign-server-configuration.md)Campanha.
 
 Você também pode executar as configurações a seguir, dependendo de suas necessidades e configurações.
 
@@ -273,7 +277,7 @@ Você também pode executar as configurações a seguir, dependendo de suas nece
 
 O módulo MTA atua como um agente de transferência de correio nativo para transmissão SMTP (porta 25).
 
-No entanto, é possível substituí-lo por um servidor relé se a sua política de segurança o exigir. Nesse caso, o throughput global será o relay (desde que o throughput do servidor relé inferior ao do Adobe Campaign).
+No entanto, é possível substituí-lo por um servidor relé se a sua política de segurança o exigir. Nesse caso, o throughput global será o relay (desde que o throughput do servidor relé inferior ao Adobe Campaign).
 
 Nesse caso, esses parâmetros são definidos configurando-se o servidor SMTP na **`<relay>`** seção. Você deve especificar o endereço IP (ou host) do servidor SMTP usado para transferir correio e sua porta associada (25 por padrão).
 
@@ -281,9 +285,9 @@ Nesse caso, esses parâmetros são definidos configurando-se o servidor SMTP na 
 <relay address="192.0.0.3" port="25"/>
 ```
 
->[!CAUTION]
+>[!IMPORTANT]
 >
->Esse modo operacional implica limitações graves nas entregas, pois pode reduzir bastante a throughput devido ao desempenho intrínseco do servidor de retransmissão (latência, largura de banda...). Além disso, a capacidade de qualificar erros de entrega síncrona (detectados pela análise do tráfego SMTP) será limitada e o envio não será possível se o servidor relé não estiver disponível.
+>Esse modo operacional implica limitações graves nos delivery, pois pode reduzir bastante a throughput devido ao desempenho intrínseco do servidor de retransmissão (latência, largura de banda...). Além disso, a capacidade de qualificar erros de delivery síncronos (detectados pela análise do tráfego SMTP) será limitada e o envio não será possível se o servidor relé não estiver disponível.
 
 ### Processos secundários MTA {#mta-child-processes}
 
@@ -295,19 +299,19 @@ Nesse caso, esses parâmetros são definidos configurando-se o servidor SMTP na 
 
 Consulte também Otimização [do envio de](../../installation/using/email-deliverability.md#email-sending-optimization)email.
 
-### Gerenciamento de tráfego SMTP de saída com afinidades {#managing-outbound-smtp-traffic-with-affinities}
+### Gerenciamento de tráfego SMTP de saída com afinidade {#managing-outbound-smtp-traffic-with-affinities}
 
->[!CAUTION]
+>[!IMPORTANT]
 >
->A configuração de afinidade precisa ser coerente de um servidor para outro. Recomendamos que você entre em contato com a Adobe para obter uma configuração de afinidade, já que as alterações de configuração devem ser replicadas em todos os servidores de aplicativos que executam o MTA.
+>A configuração da afinidade precisa ser coerente de um servidor para outro. Recomendamos que você entre em contato com a Adobe para obter a configuração da afinidade, já que as alterações de configuração devem ser replicadas em todos os servidores de aplicativos que executam o MTA.
 
 Você pode melhorar o tráfego SMTP de saída por meio de afinidades com endereços IP.
 
 Para fazer isso, siga as etapas abaixo:
 
-1. Insira as afinidades na **`<ipaffinity>`** seção do arquivo **serverConf.xml** .
+1. Digite as afinidades na **`<ipaffinity>`** seção do arquivo **serverConf.xml** .
 
-   **Uma afinidade pode ter vários nomes diferentes: para separá-los, utilize o**; caractere.
+   Uma afinidade pode ter vários nomes diferentes: para separá-los, utilize o **;** caractere.
 
    Exemplo:
 
@@ -316,15 +320,15 @@ Para fazer isso, siga as etapas abaixo:
              <IP address="XX.XXX.XX.XX" heloHost="myserver.us.campaign.net" publicId="123" excludeDomains="neo.*" weight="5"/
    ```
 
-   Para exibir os parâmetros relevantes, consulte o arquivo **serverConf.xml** .
+   Para visualização dos parâmetros relevantes, consulte o arquivo **serverConf.xml** .
 
-1. Para ativar a seleção de afinidade nas listas suspensas, é necessário adicionar os nomes de afinidade na enumeração **IPAffinity** .
+1. Para ativar a seleção de afinidade nas listas suspensas, é necessário adicionar os nomes das afinidades na lista discriminada **IPAffinity** .
 
    ![](assets/ipaffinity_enum.png)
 
    >[!NOTE]
    >
-   >As enumerações estão detalhadas [neste documento](../../platform/using/managing-enumerations.md).
+   >Listas discriminadas são detalhadas [neste documento](../../platform/using/managing-enumerations.md).
 
    Você pode selecionar a afinidade a ser usada, como mostrado abaixo para tipologias:
 
@@ -332,13 +336,13 @@ Para fazer isso, siga as etapas abaixo:
 
    >[!NOTE]
    >
-   >Você também pode consultar a configuração [do servidor de](../../installation/using/email-deliverability.md#delivery-server-configuration)entrega.
+   >Você também pode consultar a configuração [do servidor de](../../installation/using/email-deliverability.md#delivery-server-configuration)Delivery.
 
 ## Permissões de URL {#url-permissions}
 
-A lista padrão de URLs que podem ser chamados por códigos JavaScript (fluxos de trabalho etc.) pelas instâncias do Campaign Classic é limitado. Esses são URLs que permitem que suas instâncias funcionem corretamente.
+A lista padrão de URLs que podem ser chamados por códigos JavaScript (workflows etc.) pelas instâncias de Campaign Classic é limitado. Esses são URLs que permitem que suas instâncias funcionem corretamente.
 
-Por padrão, as instâncias não têm permissão para se conectar a URLs externos. No entanto, é possível adicionar URLs externos à lista de URLs autorizados, para que sua instância possa se conectar a eles. Isso permite que você conecte as instâncias do Campaign a sistemas externos, como, por exemplo, servidores SFTP ou sites, para permitir a transferência de arquivos e/ou dados.
+Por padrão, as instâncias não têm permissão para se conectar a URLs externos. No entanto, é possível adicionar URLs externos à lista de URLs autorizados, para que sua instância possa se conectar a eles. Isso permite que você conecte as instâncias de Campanha a sistemas externos, como, por exemplo, servidores SFTP ou sites, para habilitar a transferência de arquivos e/ou dados.
 
 Depois que um URL é adicionado, ele é referenciado no arquivo de configuração da instância (serverConf.xml).
 
@@ -363,7 +367,7 @@ Existem três modos de proteção de conexão:
 </urlPermission>
 ```
 
->[!CAUTION]
+>[!IMPORTANT]
 >
 >Por padrão, o cliente dos novos clientes usa o modo **de** bloqueio. Se for necessário permitir um novo URL, eles devem entrar em contato com o administrador para incluí-lo na lista de permissões.
 >
@@ -371,9 +375,9 @@ Existem três modos de proteção de conexão:
 
 ## Segurança de página dinâmica e relés {#dynamic-page-security-and-relays}
 
-Por padrão, todas as páginas dinâmicas são automaticamente relacionadas ao servidor Tomcat **local** da máquina cujo módulo Web foi iniciado. Essa configuração é inserida na **`<url>`** seção da configuração do relé de consulta para o arquivo **ServerConf.xml** . Todos os parâmetros disponíveis no **serverConf.xml** estão listados nesta [seção](../../installation/using/the-server-configuration-file.md).
+Por padrão, todas as páginas dinâmicas são automaticamente relacionadas ao servidor Tomcat **local** da máquina cujo módulo Web foi iniciado. Essa configuração é inserida na **`<url>`** seção da configuração de retransmissão de query para o arquivo **ServerConf.xml** . Todos os parâmetros disponíveis no **serverConf.xml** estão listados nesta [seção](../../installation/using/the-server-configuration-file.md).
 
-Retransmitir a execução da página dinâmica em um servidor **remoto** ; se o módulo da Web não estiver ativado no computador. Para fazer isso, você deve substituir o **localhost** pelo nome do computador remoto para JSP e JSSP, aplicativos da Web, relatórios e strings.
+Retransmitir a execução da página dinâmica em um servidor **remoto** ; se o módulo da Web não estiver ativado no computador. Para fazer isso, você deve substituir o **localhost** pelo nome do computador remoto para JSP e JSSP, Aplicação web, relatórios e strings.
 
 Para obter mais informações sobre os vários parâmetros disponíveis, consulte o arquivo de configuração **serverConf.xml** .
 
@@ -386,7 +390,7 @@ Para páginas JSP, a configuração padrão é:
 O Adobe Campaign usa as seguintes páginas JSP:
 
 * /nl/jsp/**soaprouter.jsp**: console do cliente e conexões de serviços da Web (APIs SOAP),
-* /nl/jsp/**m.jsp**: páginas espelhadas,
+* /nl/jsp/**m.jsp**: mirrores page,
 * /nl/jsp/**logon.jsp**: acesso baseado na Web aos relatórios e à implantação do console do cliente,
 * /nl/jsp/**s.jsp** : Utilização de marketing viral (patrocinador e redes sociais).
 
@@ -397,7 +401,7 @@ Os JSSPs usados para o Canal do aplicativo móvel são os seguintes:
 
 **Exemplo:**
 
-É possível evitar conexões de computadores clientes do lado de fora. Para isso, basta restringir a execução do **soaprouter.jsp** e autorizar apenas a execução de páginas espelhadas, links virais, formulários da Web e recursos públicos.
+É possível evitar conexões de computadores clientes do lado de fora. Para isso, basta restringir a execução do **soaprouter.jsp** e autorizar apenas a execução de mirrores page, links virais, formulários da Web e recursos públicos.
 
 Os parâmetros são os seguintes:
 
@@ -427,7 +431,7 @@ Neste exemplo, o **`<IP_addresses>`** valor coincide com a lista de endereços I
 >
 >A configuração a seguir é necessária somente para instalações locais.
 
-No build 8780, os administradores técnicos podem restringir a lista de comandos externos autorizados que podem ser usados no Adobe Campaign.
+A partir do build 8780, os administradores técnicos podem restringir a lista de comandos externos autorizados que podem ser usados no Adobe Campaign.
 
 Para fazer isso, é necessário criar um arquivo de texto com a lista de comandos que você deseja impedir de usar, por exemplo:
 
@@ -444,7 +448,7 @@ ruby
 sh
 ```
 
->[!CAUTION]
+>[!IMPORTANT]
 >
 >Esta lista não é exaustiva.
 
@@ -454,7 +458,7 @@ No nó **exec** do arquivo de configuração do servidor, é necessário fazer r
 
 >[!NOTE]
 >
->Se nenhum usuário for especificado, todos os comandos serão executados no contexto do usuário da instância do Adobe Campaign. O usuário deve ser diferente do usuário que está executando o Adobe Campaign.
+>Se nenhum usuário for especificado, todos os comandos serão executados no contexto do usuário da instância Adobe Campaign. O usuário deve ser diferente do usuário que está executando o Adobe Campaign.
 
 Por exemplo:
 
@@ -464,9 +468,9 @@ Por exemplo:
 </serverConf>
 ```
 
-Esse usuário precisa ser adicionado à lista posterior do operador do Adobe Campaign &#39;neolane&#39;.
+Este usuário precisa ser adicionado à lista sudoer do operador Adobe Campaign de neolane.
 
->[!CAUTION]
+>[!IMPORTANT]
 >
 >Você não deve usar um sudo personalizado. É necessário instalar um sudo padrão no sistema.
 
@@ -488,7 +492,7 @@ Por padrão, todos os cabeçalhos HTTP não são retransmitidos. Você pode adic
 
 ## Rastreamento redundante {#redundant-tracking}
 
-Quando vários servidores são usados para redirecionamento, eles devem poder se comunicar entre si por meio de chamadas SOAP para compartilhar informações dos URLs a serem redirecionados. No momento do arranque da entrega, é possível que nem todos os servidores de redirecionamento estejam disponíveis; por conseguinte, podem não ter o mesmo nível de informação.
+Quando vários servidores são usados para redirecionamento, eles devem poder se comunicar entre si por meio de chamadas SOAP para compartilhar informações dos URLs a serem redirecionados. No momento do start do delivery, é possível que nem todos os servidores de redirecionamento estejam disponíveis; por conseguinte, podem não ter o mesmo nível de informação.
 
 >[!NOTE]
 >
@@ -507,9 +511,9 @@ A propriedade **enableIf** é opcional (vazia por padrão) e permite ativar a co
 
 Para obter o nome do host do computador, execute o seguinte comando: nome do **host -s**.
 
-## Gestão dos recursos públicos {#managing-public-resources}
+## Gerenciamento de recursos públicos {#managing-public-resources}
 
-Os recursos públicos são apresentados na [gestão dos recursos](../../installation/using/deploying-an-instance.md#managing-public-resources)públicos.
+Recursos públicos são apresentados em [Gerenciamento de recursos públicos](../../installation/using/deploying-an-instance.md#managing-public-resources).
 
 Eles são armazenados no diretório **/var/res/instance** do diretório de instalação do Adobe Campaign.
 
@@ -530,25 +534,25 @@ Você pode especificar outro diretório adicionando um nó ao arquivo **conf-`<i
 
 Nesse caso, o novo URL para os recursos públicos fornecido na parte superior da janela do assistente de implantação deve apontar para essa pasta.
 
-## Fluxos de trabalho e afinidades de alta disponibilidade {#high-availability-workflows-and-affinities}
+## workflows e afinidades de alta disponibilidade {#high-availability-workflows-and-affinities}
 
-Você pode configurar vários servidores de fluxo de trabalho (wfserver) e distribuí-los em duas ou mais máquinas. Se você escolher esse tipo de arquitetura, configure o modo de conexão dos balanceadores de carga de acordo com o acesso do Adobe Campaign.
+Você pode configurar vários servidores de fluxo de trabalho (wfserver) e distribuí-los em duas ou mais máquinas. Se você escolher esse tipo de arquitetura, configure o modo de conexão dos balanceadores de carga de acordo com o acesso ao Adobe Campaign.
 
 Para obter acesso da Web, selecione o modo de balanceador **de** carga para limitar os tempos de conexão.
 
-Ao acessar pelo console do Adobe Campaign, escolha **hash** ou modo **ip** fixo. Isso permite manter a conexão entre o cliente rico e o servidor e impedir que uma sessão de usuário seja interrompida durante uma operação de importação ou exportação, por exemplo.
+Ao acessar pelo console Adobe Campaign, escolha **hash** ou modo **ip** fixo. Isso permite manter a conexão entre o cliente rico e o servidor e impedir que uma sessão de usuário seja interrompida durante uma operação de importação ou exportação, por exemplo.
 
-Você pode optar por forçar a execução de um fluxo de trabalho ou uma atividade de fluxo de trabalho em uma máquina específica. Para fazer isso, você deve definir uma ou mais afinidades para o fluxo de trabalho ou atividade em questão.
+Você pode optar por forçar a execução de um fluxo de trabalho ou de uma atividade de fluxo de trabalho em uma máquina específica. Para fazer isso, você deve definir uma ou mais afinidades para o fluxo de trabalho ou a atividade em questão.
 
 1. Crie as afinidades do fluxo de trabalho ou da atividade inserindo-as no **[!UICONTROL Affinity]** campo.
 
-   Você pode escolher livremente os nomes de afinidade. No entanto, certifique-se de não usar espaços ou sinais de pontuação. Se você usar servidores diferentes, especifique nomes diferentes.
+   Você pode escolher livremente os nomes das afinidades. No entanto, certifique-se de não usar espaços ou sinais de pontuação. Se você usar servidores diferentes, especifique nomes diferentes.
 
    ![](assets/s_ncs_install_server_wf_affinity01.png)
 
    ![](assets/s_ncs_install_server_wf_affinity02.png)
 
-   A lista suspensa contém afinidades usadas anteriormente. Ele é concluído ao longo do tempo com os diferentes valores inseridos.
+   A lista suspensa contém afinidades usadas anteriormente. Ele é concluído ao longo do tempo com os diferentes valores digitados.
 
 1. Abra o arquivo **nl6/conf/config-`<instance>.xml`**.
 1. Modifique a linha que corresponde ao **[!UICONTROL wfserver]** módulo da seguinte forma:
@@ -563,9 +567,9 @@ Você pode optar por forçar a execução de um fluxo de trabalho ou uma ativida
    <wfserver autoStart="true" affinity="XXX,YYY,"/>
    ```
 
-   A vírgula que segue o nome da afinidade é necessária para a execução de fluxos de trabalho para os quais nenhuma afinidade é definida.
+   A vírgula que segue o nome da afinidade é necessária para a execução de workflows para os quais nenhuma afinidade é definida.
 
-   Se você deseja executar somente fluxos de trabalho para os quais uma afinidade está definida, não adicione uma vírgula ao final da lista de suas afinidades. Por exemplo, modifique a linha da seguinte maneira:
+   Se desejar executar somente workflows para os quais uma afinidade está definida, não adicione uma vírgula ao final da lista das afinidades. Por exemplo, modifique a linha da seguinte maneira:
 
    ```
    <wfserver autoStart="true" affinity="XXX"/>
@@ -573,7 +577,7 @@ Você pode optar por forçar a execução de um fluxo de trabalho ou uma ativida
 
 ## Reinicialização automática do processo {#automatic-process-restart}
 
-Por padrão, os diferentes processos do Adobe Campaign são reiniciados automaticamente às 6h (hora do servidor) todos os dias.
+Por padrão, o Adobe Campaign diferente processa a reinicialização automaticamente às 6h (hora do servidor) todos os dias.
 
 No entanto, você pode alterar essa configuração.
 
@@ -581,25 +585,25 @@ Para fazer isso, vá para o arquivo **serverConf.xml** , localizado no repositó
 
 Cada processo configurado neste arquivo tem um atributo **processRestartTime** . Você pode modificar o valor desse atributo para adaptar a hora de reinicialização de cada processo de acordo com suas necessidades.
 
->[!CAUTION]
+>[!IMPORTANT]
 >
 >Não exclua este atributo. Todos os processos devem ser reiniciados todos os dias.
 
 ## Limitação de arquivos carregáveis {#limiting-uploadable-files}
 
-Um novo atributo **uploadWhiteList** permite restringir os tipos de arquivos disponíveis para upload no servidor do Adobe Campaign.
+Um novo atributo **uploadWhiteList** permite restringir os tipos de arquivos disponíveis para upload no servidor Adobe Campaign.
 
 Esse atributo está disponível no elemento **dataStore** do arquivo **serverConf.xml** . Todos os parâmetros disponíveis no **serverConf.xml** estão listados nesta [seção](../../installation/using/the-server-configuration-file.md).
 
 O valor padrão desse atributo é **.+** e permite carregar qualquer tipo de arquivo.
 
-Para limitar os formatos possíveis, é necessário substituir o valor do atributo por uma expressão regular java válida. É possível inserir vários valores separando-os por uma vírgula.
+Para limitar os formatos possíveis, é necessário substituir o valor do atributo por uma expressão regular java válida. É possível digitar vários valores separando-os por uma vírgula.
 
 Por exemplo: **uploadWhiteList=&quot;.*.png,.*.jpg&quot;** permitirá que você carregue formatos PNG e JPG no servidor. Nenhum outro formato será aceito.
 
->[!CAUTION]
+>[!IMPORTANT]
 >
->No Internet Explorer, o caminho de arquivo completo deve ser verificado pela expressão regular.
+>No Internet Explorer, o caminho de arquivo completo deve ser verificado pela expressão normal.
 
 ## Configuração de conexão proxy {#proxy-connection-configuration}
 
