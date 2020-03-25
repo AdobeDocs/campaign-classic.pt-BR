@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 00351a7a108f74741fa15546d9bd5cf68699e5c1
+source-git-commit: 443c119593e9ba4c3cdf6a6d2ee742a0a17830c5
 
 ---
 
@@ -52,6 +52,22 @@ Considerando o acesso via Web, as opções permitirão principalmente a visualiz
 
 ![](assets/operation_from_web.png)
 
+### Idiomas {#languages}
+
+O idioma é selecionado ao instalar a instância do Adobe Campaign Classic e não pode ser alterado posteriormente. Para obter mais informações sobre como criar uma instância, consulte esta [página](../../installation/using/creating-an-instance-and-logging-on.md).
+
+![](assets/language.png)
+
+Você pode escolher entre cinco idiomas diferentes:
+
+* Inglês (US)
+* Inglês (EN)
+* Francês
+* Alemão
+* Japonês
+
+O idioma escolhido para a instância do Adobe Campaign Classic pode afetar os formatos de data e hora. Para obter mais informações, consulte esta [seção](../../platform/using/adobe-campaign-workspace.md#date-and-time).
+
 ## Elementos básicos de navegação {#navigation-basics}
 
 ### Páginas de navegação {#browsing-pages}
@@ -82,7 +98,7 @@ The lists are available via the **[!UICONTROL Lists]** link in the left-hand sec
 
 Cada seção de recurso principal permite navegar entre os elementos disponíveis. Para fazer isso, use os atalhos na seção **[!UICONTROL Browsing]**. O link **[!UICONTROL Other choices]** permite acessar todas as outras páginas, independentemente do ambiente.
 
-Você pode criar um novo elemento (entrega, aplicativo da Web, fluxo de trabalho etc.) usando os atalhos na **[!UICONTROL Create]** seção à esquerda da tela. Use o botão **[!UICONTROL Create]** acima da lista para adicionar novos elementos a ela.
+Você pode criar um novo elemento (delivery, Aplicação web, fluxo de trabalho etc.) usando os atalhos na **[!UICONTROL Create]** seção à esquerda da tela. Use o botão **[!UICONTROL Create]** acima da lista para adicionar novos elementos a ela.
 
 Por exemplo, na página de entrega, use o botão **[!UICONTROL Create]** para criar uma nova entrega.
 
@@ -191,7 +207,7 @@ Outra maneira de adicionar colunas, por exemplo, se você quiser exibir dados qu
    >
    >Use o campo **Search** para executar uma pesquisa nos campos disponíveis. Para obter mais informações, consulte [Classificação de uma lista](#sorting-a-list).
    >
-   >Os campos são identificados por ícones específicos: Campos SQL, tabelas vinculadas, campos calculados etc. Para cada campo selecionado, a descrição é exibida abaixo da lista de campos disponíveis.
+   >Os campos são identificados por ícones específicos: Campos SQL, tabelas vinculadas, campos calculados etc. Para cada campo selecionado, a descrição é exibida abaixo da lista dos campos disponíveis.
    [Configuração de listas](#configuring-lists).
    >
    >Também é possível classificar e filtrar dados. Consulte Opções [](../../platform/using/filtering-options.md)de filtragem.
@@ -289,7 +305,7 @@ Clique no cabeçalho da coluna para aplicar uma classificação crescente ou dec
 
 Você também pode configurar a classificação ou combinar critérios de classificação. Para fazer isso, siga as etapas abaixo:
 
-1. **[!UICONTROL Configure list]** à direita da lista.
+1. **[!UICONTROL Configure list]** abaixo e à direita da lista.
 
    ![](assets/s_ncs_user_configure_list.png)
 
