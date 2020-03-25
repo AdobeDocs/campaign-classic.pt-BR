@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 63d0551c0c036cb54ebea4e6cc4dc1f6566cf976
+source-git-commit: 92f4047628eca0fc1d71aded0329720c094463bd
 
 ---
 
@@ -37,7 +37,7 @@ Os perfis são preenchidos por parâmetros de segurança vinculados ao modo de c
 Há dois tipos de permissões que você pode conceder a um usuário:
 
 * Você pode definir grupos de operadores para atribuir direitos e, em seguida, associar os operadores a um ou mais grupos. Isso permite que você reutilize os direitos e torne os perfis de operadores mais consistentes. Também facilita o gerenciamento e a manutenção de perfis. Group creation and management are presented in [Operator groups](#operator-groups).
-* Você pode atribuir direitos nomeados diretamente aos usuários, em alguns casos para sobrecarregar os direitos alocados por meio de grupos. Estes direitos são apresentados em direitos [nomeados](#named-rights).
+* Você pode atribuir direitos nomeados diretamente aos usuários, em alguns casos para sobrecarregar os direitos alocados por meio de grupos. Estes direitos são apresentados em [Direitos nomeados](#named-rights).
 
 >[!NOTE]
 >
@@ -103,7 +103,7 @@ Após criar o perfil do operador, você pode adicionar ou atualizar suas informa
 
 >[!NOTE]
 >
->The **[!UICONTROL Session timeout]** field lets you adjust the delay before the FDA session timeout. Para obter mais informações, consulte [Sobre o acesso](../../platform/using/about-fda.md)a dados federados.
+>The **[!UICONTROL Session timeout]** field lets you adjust the delay before the FDA session timeout. Para obter mais informações, consulte [About Federated Data Acces](../../platform/using/about-fda.md).
 
 ### Fuso horário do operador {#time-zone-of-the-operator}
 
@@ -174,7 +174,7 @@ Você pode acessar:
 
 ### Operadores padrão {#default-operators}
 
-O Adobe Campaign usa operadores técnicos com perfis configurados por padrão: Administrador (&#39;admin&#39;), Faturamento (&#39;faturamento&#39;), Monitoramento, agente de aplicativos Web (&#39;webapp&#39;) etc. Alguns deles dependem dos aplicativos e opções instalados na plataforma: operadores &#39;central&#39; e &#39;local&#39;, por exemplo, só estarão visíveis se a opção Marketing distribuído estiver instalada.
+O Adobe Campaign usa operadores técnicos com perfis configurados por padrão: Administrador (&#39;admin&#39;), Faturamento (&#39;faturamento&#39;), Monitoramento, agente de Aplicação web (&#39;webapp&#39;) etc. Alguns deles dependem dos aplicativos e opções instalados na plataforma: operadores &#39;central&#39; e &#39;local&#39;, por exemplo, só estarão visíveis se a opção Marketing distribuído estiver instalada.
 
 >[!CAUTION]
 >
@@ -287,26 +287,45 @@ Por padrão, o Adobe Campaign propõe um conjunto de direitos nomeados que permi
 
 Esses direitos são os seguintes:
 
-* ADMINISTRAÇÃO: Direito de administração genérico aplicado a todas as pastas no console.
-* ADMINISTRAÇÃO DA HOMOLOGAÇÃO: Direito de atribuir revisores.
-* CENTRAL: Direito de gerenciamento central (Marketing distribuído).
-* EXCLUIR PASTA: Direito de excluir pastas.
-* EDITAR PASTAS: Direito de alterar as propriedades da pasta: nome, rótulo, imagem associada etc.
-* EXPORTAÇÃO: Direito de exportar dados.
-* ACESSO AOS ARQUIVOS: Direito de ler e gravar o acesso de arquivos por meio de um script.
-* IMPORTAÇÃO: Direito para importação de dados genéricos.
-* INSERIR PASTAS: Direito de inserir pastas.
-* LOCAL: Direito para gerenciamento local (Marketing distribuído).
-* MESCLAGEM: Direito de unir registros.
-* PREPARAR ENTREGAS: Direito de criar, editar e iniciar a análise de entrega.
-* DIREITO DE DADOS DE PRIVACIDADE: Direito de coletar e excluir dados de privacidade. Para obter mais informações, consulte esta [página](https://helpx.adobe.com/campaign/kb/acc-privacy.html).
-* EXECUÇÃO DO PROGRAMA: Direito de executar programas externos.
-* IMPORTAÇÃO DE DESTINATÁRIO: Direito de importar destinatários.
-* EXECUÇÃO DE SCRIPT SQL: Direito de executar scripts SQL no banco de dados.
-* INICIAR ENTREGAS: Direito de aprovar entregas previamente analisadas.
-* USE SQL DATA MANAGEMENT ACTIVITY: Right to write your own SQL scripts using the SQL Data Management activity, in order to create and populate work tables (see [this section](../../workflow/using/sql-data-management.md)).
-* FLUXO DE TRABALHO: Direito de usar fluxos de trabalho.
-* WEBAPP: Direito de usar aplicativos da Web.
+* **[!UICONTROL ADMINISTRATION]**: Operadores com **[!UICONTROL ADMINISTRATION]** direito têm acesso total na instância. Os usuários administradores podem executar/criar/editar/excluir qualquer objeto, como fluxo de trabalho, delivery, scripts etc.
+
+* **[!UICONTROL APPROVAL ADMINISTRATION]**: É possível definir várias etapas de aprovação em workflows e delivery para garantir que o estado atual tenha sido aprovado por um operador ou grupo atribuído. Os usuários com **[!UICONTROL APPROVAL ADMINISTRATION]** direito podem definir etapas de aprovação e também atribuir um operador ou grupo de operadores que devem aprovar essas etapas.
+
+* **[!UICONTROL CENTRAL]**: Direito de gerenciamento central (Marketing distribuído).
+
+* **[!UICONTROL DELETE FOLDER]**: Direito de excluir pastas. Com esse direito, os usuários podem excluir pastas da visualização do explorador.
+
+* **[!UICONTROL EDIT FOLDERS]**: Direito de alterar as propriedades da pasta, como nome interno, rótulo, imagem associada, ordem de subpastas etc.
+
+* **[!UICONTROL EXPORT]**: Os usuários podem exportar dados de suas instâncias de Adobe Campaign para um arquivo no servidor ou computador local usando a atividade de fluxo de trabalho **[!UICONTROL EXPORT]** .
+
+* **[!UICONTROL FILES ACCESS]**: Direito de ler e gravar o acesso de arquivos por meio de um script que pode ser gravado na atividade de fluxo de trabalho para arquivos de leitura/gravação em um servidor. **[!UICONTROL JavaScript]**
+
+* **[!UICONTROL IMPORT]**: Direito de importação de dados genéricos. **[!UICONTROL IMPORT]** permite importar dados para qualquer outra tabela, enquanto o **[!UICONTROL RECIPIENT IMPORT]** direito permite importar somente para a tabela do recipient.
+
+* **[!UICONTROL INSERT FOLDERS]**: Direito de inserir pastas. Os usuários com **[!UICONTROL INSERT FOLDERS]** direitos podem criar novas pastas na árvore de pastas na visualização do explorador.
+
+* **[!UICONTROL LOCAL]**: Direito para gerenciamento local (Marketing distribuído).
+
+* **[!UICONTROL MERGE]**: Direito de unir os registros selecionados em um. Se houver recipient como duplicados, a **[!UICONTROL MERGE]** direita permitirá que o usuário selecione os duplicados e os mescle em um recipient primário.
+
+* **[!UICONTROL PREPARE DELIVERIES]**: Direito de criar, editar e salvar um delivery. Os usuários com **[!UICONTROL PREPARE DELIVERIES]** direito também podem start o processo de análise do delivery.
+
+* **[!UICONTROL PRIVACY DATA RIGHT]**: Direito de coletar e excluir dados de privacidade. Para obter mais informações, consulte esta [página](https://helpx.adobe.com/campaign/kb/acc-privacy.html).
+
+* **[!UICONTROL PROGRAM EXECUTION]**: Direito de executar comandos em várias linguagens de programação.
+
+* **[!UICONTROL RECIPIENT IMPORT]**: Direito de importar recipients. Os usuários com **[!UICONTROL RECIPIENT IMPORT]** direito podem importar um arquivo local para a tabela do recipient.
+
+* **[!UICONTROL SQL SCRIPT EXECUTION]** Direito de executar qualquer comando SQL diretamente no banco de dados.
+
+* **[!UICONTROL START DELIVERIES]**: Direito de aprovar deliveries anteriormente analisados. Após a análise do delivery, o delivery pausará em várias etapas de aprovação e precisará ser aprovado para retomar. Os usuários com **[!UICONTROL START DELIVERIES]** direito podem aprovar delivery.
+
+* **[!UICONTROL USE SQL DATA MANAGEMENT ACTIVITY]**: Direito de escrever seus próprios scripts SQL usando a atividade de Gestão de dados SQL, para criar e preencher tabelas de trabalho (consulte [esta seção](../../workflow/using/sql-data-management.md)).
+
+* **[!UICONTROL WORKFLOW]**: Direito de executar workflows. Sem esse direito, os usuários não podem start, parar ou reiniciar workflows.
+
+* **[!UICONTROL WEBAPP]**: Direito de utilizar aplicativos Web.
 
 >[!NOTE]
 >
