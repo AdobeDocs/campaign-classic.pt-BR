@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: becdffadaaaa40359b61a6ad786b9fd8ebecc6e9
+source-git-commit: cda7ae757a6de0e8cd6227faa2b731e9f392791b
 
 ---
 
@@ -54,7 +54,7 @@ Os campos de ação para cada ferramenta são os seguintes:
 Para configurar o Data Connector, você deve se conectar à instância do Adobe Campaign e executar as seguintes operações:
 
 * [Etapa 1: Configurar integração no Analytics](#step-1--configure-integration-in-analytics)
-* [Etapa 2: Criar a conta externa no Campaign](#step-2--create-the-external-account-in-campaign)
+* [Etapa 2: Crie a conta externa na Campanha](#step-2--create-the-external-account-in-campaign)
 * [Etapa 3: Sincronizar o Adobe Campaign e o Adobe Analytics](#step-3--synchronize-adobe-campaign-and-adobe-analytics)
 
 ### Step 1: Configure integration in Analytics {#step-1--configure-integration-in-analytics}
@@ -78,7 +78,7 @@ As etapas a seguir detalham a configuração do Data Connector usando um assiste
    * Integrações (Excluir)
    ![](assets/adobe_genesis_install_002.png)
 
-1. Na lista de parceiros, selecione **[!UICONTROL Neolane - Enterprise Marketing Platform]**.
+1. Na lista de parceiros, selecione **[!UICONTROL Adobe Campaign Classic]**.
 
    ![](assets/adobe_genesis_install_014.png)
 
@@ -152,8 +152,8 @@ A integração do Adobe Campaign nas plataformas do Analytics
 
 1. The **[!UICONTROL Advanced]** tab lets you configure or modify more technical settings.
 
-   * **[!UICONTROL Lifespan]**: permite que você especifique o atraso (em dias_ após o qual os eventos da Web foram recuperados no Adobe Campaign por fluxos de trabalho técnicos. Padrão: 180 dias.
-   * **[!UICONTROL Persistence]**: permite o período durante o qual todos os eventos da Web (uma compra, por exemplo) podem ser atribuídos a uma campanha de remarketing, Padrão: 7 dias.
+   * **[!UICONTROL Lifespan]**: permite que você especifique o atraso (em dias_ após o qual os eventos da Web se recuperaram no Adobe Campaign por workflows técnicos. Padrão: 180 dias.
+   * **[!UICONTROL Persistence]**: permite que você defina o período durante o qual todos os eventos da Web (uma compra, por exemplo) podem ser atribuídos a uma campanha de recomercialização, Padrão: 7 dias.
 
 >[!NOTE]
 >
@@ -198,13 +198,13 @@ Se segmentos adicionais tiverem sido configurados no assistente do Data Connecto
 
 A troca de dados entre o Adobe Campaign e o Adobe Analytics – Data Connector é realizada por quatro workflows técnicos que são executados como uma tarefa em segundo plano.
 
-Eles estão disponíveis na árvore do Adobe Campaign, abaixo da **[!UICONTROL Administration > Production > Technical workflows > Web analytics process]** pasta.
+Eles estão disponíveis na árvore Adobe Campaign, abaixo da **[!UICONTROL Administration > Production > Technical workflows > Web analytics process]** pasta.
 
 ![](assets/webanalytics_workflows.png)
 
-* **[!UICONTROL Recovering of web events]**: uma vez por hora, esse fluxo de trabalho baixa segmentos sobre o comportamento dos usuários em um determinado site, os inclui no banco de dados do Adobe Campaign e inicia o fluxo de trabalho de remarketing.
-* **[!UICONTROL Event purge]**: esse fluxo de trabalho permite que você exclua todos os eventos do banco de dados, dependendo do período configurado no **[!UICONTROL Lifespan]** campo. Para obter mais informações, consulte a [Etapa 2: Crie a conta externa no Campaign](#step-2--create-the-external-account-in-campaign).
-* **[!UICONTROL Identification of converted contacts]**: diretório dos visitantes que efetuaram uma compra após uma campanha de remarketing. The data collected by this workflow is accessible in the **[!UICONTROL Re-marketing efficiency]** report, refer to this [page](#creating-a-re-marketing-campaign).* **[!UICONTROL Sending of indicators and campaign attributes]**: lets you send email campaign indicators via Adobe Campaign to the Adobe Experience Cloud using Adobe Analytics - Data connector. Esse workflow é acionado às 4:00 AM todos os dias e pode 
+* **[!UICONTROL Recovering of web events]**: uma vez por hora, esse fluxo de trabalho baixa segmentos sobre o comportamento dos usuários em um determinado site, os inclui no banco de dados do Adobe Campaign e start o fluxo de trabalho de remarketing.
+* **[!UICONTROL Event purge]**: esse fluxo de trabalho permite que você exclua todos os eventos do banco de dados, dependendo do período configurado no **[!UICONTROL Lifespan]** campo. Para obter mais informações, consulte a [Etapa 2: Crie a conta externa na Campanha](#step-2--create-the-external-account-in-campaign).
+* **[!UICONTROL Identification of converted contacts]**: diretório dos visitantes que efetuaram uma compra após uma campanha de recomercialização. The data collected by this workflow is accessible in the **[!UICONTROL Re-marketing efficiency]** report, refer to this [page](#creating-a-re-marketing-campaign).* **[!UICONTROL Sending of indicators and campaign attributes]**: lets you send email campaign indicators via Adobe Campaign to the Adobe Experience Cloud using Adobe Analytics - Data connector. Esse workflow é acionado às 4:00 AM todos os dias e pode 
                             levar 24 horas para que os dados sejam enviados ao Analytics.
 
    Observe que esse workflow não deve ser
@@ -232,8 +232,8 @@ Eles estão disponíveis na árvore do Adobe Campaign, abaixo da **[!UICONTROL A
 
    * **[!UICONTROL Internal name]** (@internalName)
    * **[!UICONTROL Label]** (@label)
-   * **[!UICONTROL Label]** (operation/@label): somente se o pacote do **Campaign** estiver instalado
-   * **[!UICONTROL Nature]** (operation/@nature): somente se o pacote do **Campaign** estiver instalado
+   * **[!UICONTROL Label]** (operation/@label): somente se o pacote da **Campanha** estiver instalado
+   * **[!UICONTROL Nature]** (operation/@nature): somente se o pacote da **Campanha** estiver instalado
    * **[!UICONTROL Tag 1]** (webAnalytics/@tag1)
    * **[!UICONTROL Tag 2]** (webAnalytics/@tag2)
    * **[!UICONTROL Tag 3]** (webAnalytics/@tag3)
@@ -251,7 +251,7 @@ Para que a Adobe Experience Cloud possa rastrear a atividade nos sites, depois q
    ![](assets/webanalytics_delivery_properties_003.png)
 
 1. Abra as propriedades de delivery.
-1. Vá até a **[!UICONTROL Web Analytics]** guia e selecione a conta externa criada anteriormente. Consulte a [Etapa 2: Criar a conta externa no Campaign](#step-2--create-the-external-account-in-campaign)).
+1. Vá até a **[!UICONTROL Web Analytics]** guia e selecione a conta externa criada anteriormente. Consulte a [Etapa 2: Crie a conta externa na Campanha](#step-2--create-the-external-account-in-campaign)).
 
    ![](assets/webanalytics_delivery_properties_002.png)
 
