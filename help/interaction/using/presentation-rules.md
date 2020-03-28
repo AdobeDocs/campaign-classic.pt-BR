@@ -14,7 +14,7 @@ discoiquuid: 8ef303b4-d9ce-40ee-a6c6-ed5012ab8eb8
 index: y
 internal: n
 snippet: y
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 28614a6b0c45deef17d9b3275a16e65bdff4538b
 
 ---
@@ -28,8 +28,8 @@ Em nosso banco de dados, existem várias ofertas de viagens para Europa, África
 
 Vamos configurar nossa regra para que a viagem ao Canadá seja oferecida apenas uma vez por recipient e, caso seja rejeitada, não será oferecida novamente.
 
-1. Na árvore do Adobe Campaign, acesse o nó **[!UICONTROL Administration]** > **[!UICONTROL Campaign management]** > **[!UICONTROL Typology management]** > **[!UICONTROL Typology rules]** .
-1. Crie uma nova regra **[!UICONTROL Offer presentation]** de tipo.
+1. Na árvore do Adobe Campaign, acesse o nó **[!UICONTROL Administration]** > **[!UICONTROL Campaign management]** > **[!UICONTROL Typology management]** > **[!UICONTROL Typology rules]**.
+1. Crie um novo tipo de regra **[!UICONTROL Offer presentation]**.
 
    ![](assets/offer_typology_example_001.png)
 
@@ -37,19 +37,19 @@ Vamos configurar nossa regra para que a viagem ao Canadá seja oferecida apenas 
 
    ![](assets/offer_typology_example_002.png)
 
-1. Choose the **[!UICONTROL All channels]** option to extend the rule to all channels.
+1. Escolha a opção **[!UICONTROL All channels]** para estender a regra para todos os canais.
 
    ![](assets/offer_typology_example_003.png)
 
-1. Clique no **[!UICONTROL Edit expression]** link e escolha o **[!UICONTROL Category]** nó como uma expressão.
+1. Clique no link **[!UICONTROL Edit expression]** e escolha o nó **[!UICONTROL Category]** como uma expressão.
 
    ![](assets/offer_typology_example_004.png)
 
-1. Choose the category that matches your travel offer for Canada and click **[!UICONTROL OK]** to close the query window.
+1. Escolha a categoria que corresponde à oferta de viagem para o Canadá e clique em **[!UICONTROL OK]** para fechar a janela de consulta.
 
    ![](assets/offer_typology_example_005.png)
 
-1. In the **[!UICONTROL Offer presentation]** tab, choose the same dimensions as those configured in the environment.
+1. Na guia **[!UICONTROL Offer presentation]**, escolha as mesmas dimensões que foram configuradas no ambiente.
 
    ![](assets/offer_typology_example_006.png)
 
@@ -61,11 +61,11 @@ Vamos configurar nossa regra para que a viagem ao Canadá seja oferecida apenas 
 
    ![](assets/offer_typology_example_008.png)
 
-1. Select the **[!UICONTROL Offers for the same category]** filter to exclude all offers from the **Canada** category.
+1. Selecione o filtro **[!UICONTROL Offers for the same category]** para excluir todas as ofertas da categoria **Canada**.
 
    ![](assets/offer_typology_example_020.png)
 
-1. Select the **[!UICONTROL Rejected propositions]** filter to take into account only propositions rejected by the recipient.
+1. Selecione o filtro **[!UICONTROL Rejected propositions]** para considerar apenas as apresentações rejeitadas pelo recipient.
 
    ![](assets/offer_typology_example_021.png)
 
@@ -79,7 +79,7 @@ Vamos configurar nossa regra para que a viagem ao Canadá seja oferecida apenas 
 
    ![](assets/offer_typology_example_013.png)
 
-1. Go to the offer environment, (**Environment - Recipient** in this case) and reference the new typology just created using the drop-down list in the **[!UICONTROL Eligibility]** tab.
+1. Acesse o ambiente de oferta, (**Environment - Recipient**, neste caso) e consulte a nova tipologia criada através da lista suspensa na guia **[!UICONTROL Eligibility]**.
 
    ![](assets/offer_typology_example_014.png)
 
@@ -89,7 +89,7 @@ Aqui está um exemplo de aplicação da regra de tipologia criada anteriormente.
 
 Queremos enviar uma apresentação de oferta que pertence à categoria Canadá. Se a oferta é rejeitada uma vez por qualquer um dos recipients, então ela não será oferecida novamente.
 
-1. In the **Frequent travelers** recipient folder, choose one of the profiles to check the offers for which they are eligible: click the **[!UICONTROL Propositions]** tab, then the **[!UICONTROL Preview]** tab.
+1. Na pasta de recipients **Frequent travelers**, escolha um dos perfis para verificar as ofertas para as quais estão qualificados: clique na guia **[!UICONTROL Propositions]** e, em seguida, na guia **[!UICONTROL Preview]**.
 
    Em nosso exemplo, **Tim Ramsey** está qualificado para uma oferta que faz parte da categoria **Americas** .
 
@@ -102,7 +102,7 @@ Queremos enviar uma apresentação de oferta que pertence à categoria Canadá. 
 
    ![](assets/offer_typology_example_016.png)
 
-1. Insira as ofertas no corpo da mensagem e envie a delivery. For more on this, refer to [About outbound channels](../../interaction/using/about-outbound-channels.md).
+1. Insira as ofertas no corpo da mensagem e envie a delivery. Para obter mais informações, consulte [Sobre canais de saída](../../interaction/using/about-outbound-channels.md).
 
    O recipient recebeu a oferta para a qual está qualificado.
 
@@ -116,6 +116,6 @@ Queremos enviar uma apresentação de oferta que pertence à categoria Canadá. 
 
    ![](assets/offer_typology_example_019.png)
 
-**Tópico relacionado**
+**Tópicos relacionados**
 
-* [Gerencie ofertas e controle a redundância em canais](https://helpx.adobe.com/campaign/kb/simplifying-campaign-management-acc.html#Manageoffersandcontrolredundancyacrosschannels)
+* [Gerencie ofertas e controle a redundância em canais](https://helpx.adobe.com/br/campaign/kb/simplifying-campaign-management-acc.html#Manageoffersandcontrolredundancyacrosschannels)
