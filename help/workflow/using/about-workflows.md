@@ -14,7 +14,7 @@ discoiquuid: 868940d1-f19d-4e9a-bffa-8654abb4441c
 index: y
 internal: n
 snippet: y
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 20f835c357d016643ea1f3209ee4dfb6d3239f90
 
 ---
@@ -32,9 +32,9 @@ Os workflows ocorrem em vários contextos e estágios do processo de gestão de 
 
 O Adobe Campaign usa workflows para:
 
-* Executar campanhas de segregação. For more on this, refer to [Implementation steps](../../workflow/using/building-a-workflow.md#implementation-steps-).
-* Build campaigns: for each campaign, the **[!UICONTROL Workflow]** tab lets you build the target and create the deliveries. For more on this, refer to [Campaign workflows](../../workflow/using/building-a-workflow.md#campaign-workflows).
-* Realizar processos técnicos: limpeza, coleta de informações de rastreamento ou cálculos provisionais. For more on this, refer to [Technical workflows](../../workflow/using/building-a-workflow.md#technical-workflows).
+* Executar campanhas de segregação. Para obter mais informações, consulte [Etapas de implementação](../../workflow/using/building-a-workflow.md#implementation-steps-).
+* Desenvolva campanhas: para cada campanha, a guia **[!UICONTROL Workflow]** permite desenvolver o target e criar deliveries. Para obter mais informações, consulte [Workflows de campanhas](../../workflow/using/building-a-workflow.md#campaign-workflows).
+* Realizar processos técnicos: limpeza, coleta de informações de rastreamento ou cálculos provisionais. Para obter mais informações, consulte [Workflows técnicos](../../workflow/using/building-a-workflow.md#technical-workflows).
 
 Um workflow pode significar uma definição de processo (o modelo de workflow, que é uma representação do que deveria acontecer) e uma instância desse processo (uma instância de workflow, que é uma representação do que realmente está acontecendo).
 
@@ -46,7 +46,7 @@ Cada workflow contém:
 
 * **[!UICONTROL Activities]**
 
-   Uma atividade descreve um template de tarefa. As várias atividades disponíveis são representadas no diagrama por ícones. Cada tipo tem propriedades comuns e específicas. For example, while all activities have a name and label, only the **[!UICONTROL Approval]** activity has an assignment.
+   Uma atividade descreve um template de tarefa. As várias atividades disponíveis são representadas no diagrama por ícones. Cada tipo tem propriedades comuns e específicas. Por exemplo, enquanto todas as atividades têm um nome e rótulo, apenas a atividade **[!UICONTROL Approval]** tem uma atribuição.
 
    Em um diagrama de workflow, uma determinada atividade pode produzir várias tarefas, principalmente quando houver as ações de loop ou recorrentes (periódicas).
 
