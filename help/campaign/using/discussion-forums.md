@@ -14,7 +14,7 @@ discoiquuid: 88eb17b6-5206-4064-9cd9-b4645a85c609
 index: y
 internal: n
 snippet: y
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: d30de91002862b664249c5a704b7c0f521dd30f2
 
 ---
@@ -28,7 +28,7 @@ Os operadores podem se inscrever em um fórum para receber um email de notifica�
 
 ## Acessando um fórum {#accessing-a-forum}
 
-To visit the forum of a campaign, an operator, etc., go to its dashboard and click the **[!UICONTROL Forum]** link in the top right-hand corner. Esse link também oferece o número total de mensagens no fórum.
+Para visitar o fórum de uma campanha, operador etc., vá para o painel e clique no link **[!UICONTROL Forum]** no canto superior direito. Esse link também oferece o número total de mensagens no fórum.
 
 ![](assets/mrm_forum_access_link.png)
 
@@ -42,13 +42,13 @@ Para exibir o conteúdo de uma mensagem, clique em seu cabeçalho.
 
 **Iniciar uma nova discussão**
 
-To start a new discussion, click the **[!UICONTROL Add a discussion]** button in the top right-hand corner. A **[!UICONTROL Discussion forum]** caixa aparece (veja abaixo).
+Para iniciar uma nova discussão, clique no botão **[!UICONTROL Add a discussion]** no canto superior direito. A caixa **[!UICONTROL Discussion forum]** aparecerá (veja abaixo).
 
 ![](assets/mrm_forum_new_thread.png)
 
 **Postar uma mensagem em uma discussão existente**
 
-To post a message to an existing discussion, open the message that you want to answer, then click the **[!UICONTROL Reply]** link in the top left-hand corner. A **[!UICONTROL Discussion forum]** caixa aparece (veja abaixo).
+Para postar uma mensagem em uma discussão existente, abra a mensagem que deseja responder e clique no link **[!UICONTROL Reply]** no canto superior esquerdo. A caixa **[!UICONTROL Discussion forum]** aparecerá (veja abaixo).
 
 ![](assets/mrm_forum_answer_msg.png)
 
@@ -56,18 +56,18 @@ Quando responder a uma mensagem, a pessoa que postou a mensagem original receber
 
 **Escrever uma mensagem**
 
-Na **[!UICONTROL Discussion forum]** caixa:
+Na caixa **[!UICONTROL Discussion forum]**:
 
-1. Enter your text in the **[!UICONTROL Message]** field and a discussion title in the **[!UICONTROL Subject]** field.
+1. Insira o texto no campo **[!UICONTROL Message]** e um título de discussão no campo **[!UICONTROL Subject]**.
 
    ![](assets/mrm_forum_edit_msg.png)
 
 1. Se necessário:
 
-   * If you want someone to take part in the discussion who isn&#39;t subscribed to the forum, use the **[!UICONTROL Operator to notify]** field. O operador receberá um e-mail de notificação para esta mensagem específica (eles não serão inscritos no fórum). Para notificar vários operadores, selecione um grupo de operadores.
-   * To add an attachment to the message, click **[!UICONTROL Browse]**. O anexo também será incluído no e-mail de notificação. Os anexos só podem ser enviados individualmente: para enviar vários arquivos, é necessário compactá-los.
+   * Se desejar que alguém que não se inscreveu no fórum participe da discussão, use o campo **[!UICONTROL Operator to notify]**. O operador receberá um e-mail de notificação para esta mensagem específica (eles não serão inscritos no fórum). Para notificar vários operadores, selecione um grupo de operadores.
+   * Para adicionar um anexo à mensagem, clique em **[!UICONTROL Browse]**. O anexo também será incluído no e-mail de notificação. Os anexos só podem ser enviados individualmente: para enviar vários arquivos, é necessário compactá-los.
 
-1. Clique **[!UICONTROL Create the message]** para postá-lo no fórum.
+1. Clique em **[!UICONTROL Create the message]** para publicar no fórum.
 
 >[!NOTE]
 >
@@ -79,30 +79,30 @@ Você poderá postar uma mensagem no fórum de um operador se, por exemplo, sua 
 
 Para acessar o fórum de um operador:
 
-* If you have the necessary rights to access the **[!UICONTROL Administration > Access management > Operators]** node of the explorer, open the dashboard of the desired operator and click the **[!UICONTROL Forum]** link in the top right-hand corner.
+* Se você tiver os direitos necessários para acessar o nó do explorador **[!UICONTROL Administration > Access management > Operators]**, abra o painel do operador desejado e clique no link **[!UICONTROL Forum]** no canto superior direito.
 * Caso contrário, localize o nome do operador no Adobe Campaign (por meio de uma mensagem publicada no fórum por este operador, uma tarefa atribuída a ele) e clique nela para acessar seu painel. Você também poderá pedir ao administrador para criar uma visualização da pasta do operador.
 
 ## Inscrever-se em um fórum {#subscribing-to-a-forum}
 
 A inscrição de um fórum permite seguir as discussões. Inscritos receberão uma notificação por e-mail sempre que uma mensagem for postada no fórum. Este e-mail conterá o corpo da mensagem e quaisquer anexos. Para responder a uma mensagem, clique no corpo do e-mail e, em seguida, faça login na interface da Web do Adobe Campaign. Quando se inscrever em um fórum, essas informações ficam visíveis para todos.
 
-* To subscribe to a forum, click the **[!UICONTROL Follow discussions]** button in the top right hand section above the list of messages.
+* Para se inscrever em um fórum, clique no botão **[!UICONTROL Follow discussions]** na seção superior direita acima da lista de mensagens.
 
    ![](assets/mrm_forum_subscribe.png)
 
    A seção fica azul e mostra que está inscrito no fórum.
 
-* To unsubscribe from a forum, click the **[!UICONTROL Unsubscribe]** button.
+* Para cancelar a inscrição de um fórum, clique no botão **[!UICONTROL Unsubscribe]**.
 
    ![](assets/mrm_forum_unsubscribe.png)
 
-* O painel pessoal lista os fóruns inscritos. Click the **[!UICONTROL Subscription to discussion forums]** link to display the list, then click the item that interests you to access its forum.
+* O painel pessoal lista os fóruns inscritos. Clique no link **[!UICONTROL Subscription to discussion forums]** para exibir a lista e, em seguida, clique no item que lhe interessa para acessar seu fórum.
 
    ![](assets/platform_dashboard_operator_subscr_forums.png)
 
    Para obter mais informações sobre painéis pessoais, consulte [esta seção](../../platform/using/access-management.md#operators).
 
-* To see who is subscribed to a forum, click the **[!UICONTROL List of subscribers to this discussion forum]** link above the list of messages.
+* Para ver quem se inscreveu em um fórum, clique no link **[!UICONTROL List of subscribers to this discussion forum]** acima da lista de mensagens.
 
    ![](assets/mrm_forum_subscribers.png)
 
@@ -111,10 +111,10 @@ A inscrição de um fórum permite seguir as discussões. Inscritos receberão u
 Se os operadores inscritos em um fórum não receberem notificações conforme esperado:
 
 * Verifique se os endereços de email estão inseridos nos perfis de operador.
-* Vá para o **[!UICONTROL Administration > Production > Technical workflows > Campaign processes]** nó e verifique se o fluxo de **[!UICONTROL Jobs in discussion forums]** trabalho foi iniciado e sem erros.
+* Vá para o nó **[!UICONTROL Administration > Production > Technical workflows > Campaign processes]** e verifique se o workflow **[!UICONTROL Jobs in discussion forums]** foi iniciado e está livre de erros.
 * Exibir os logs do delivery:
 
-   * Na página inicial do Adobe Campaign, acesse **[!UICONTROL Campaigns > Navigation > Deliveries]** e abra a **[!UICONTROL Discussion forum notification]** entrega.
-   * No explorador, vá para **[!UICONTROL Administration > Production > Objects created automatically > Technical deliveries > Workflow notifications]** e clique em **[!UICONTROL Discussion forum notifications]**.
-   Na **[!UICONTROL Discussion forum notifications]** caixa, os registros de entrega são encontrados na **[!UICONTROL Edit > Delivery]** guia. Você também pode exibir as guias **[!UICONTROL Tracking > Log]** e **[!UICONTROL Exclusion causes]** .
+   * Na página inicial do Adobe Campaign, vá para **[!UICONTROL Campaigns > Navigation > Deliveries]**, então abra o delivery de **[!UICONTROL Discussion forum notification]**.
+   * No explorador, vá para **[!UICONTROL Administration > Production > Objects created automatically > Technical deliveries > Workflow notifications]**, e clique em **[!UICONTROL Discussion forum notifications]**.
+   Na caixa **[!UICONTROL Discussion forum notifications]**, os logs do delivery são encontrados na guia **[!UICONTROL Edit > Delivery]**. Também é possível visualizá-los nas guias **[!UICONTROL Tracking > Log]** e **[!UICONTROL Exclusion causes]**.
 
