@@ -14,7 +14,7 @@ discoiquuid: 5404a227-6cfb-463b-9a56-af46a022eb38
 index: y
 internal: n
 snippet: y
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 20f835c357d016643ea1f3209ee4dfb6d3239f90
 
 ---
@@ -42,9 +42,9 @@ Antes de começar neste caso de uso, é preciso ter acesso a uma pesquisa e um c
 
 Para coletar as respostas da pesquisa, siga as etapas abaixo:
 
-1. Crie um fluxo de trabalho e insira uma **[!UICONTROL Answers to a survey]** atividade. Para obter mais informações sobre o uso dessa atividade, consulte [esta seção](../../web/using/publish--track-and-use-collected-data.md#using-the-collected-data).
+1. Crie um workflow e coloque uma atividade **[!UICONTROL Answers to a survey]**. Para obter mais informações sobre o uso dessa atividade, consulte [esta seção](../../web/using/publish--track-and-use-collected-data.md#using-the-collected-data).
 1. Edite a atividade e selecione a pesquisa cujas respostas deseja analisar.
-1. Ative a **[!UICONTROL Select all the answer data]** opção para coletar todas as informações.
+1. Habilite a opção **[!UICONTROL Select all the answer data]** para coletar todas as informações.
 
    ![](assets/reporting_usecase_1_01.png)
 
@@ -52,11 +52,11 @@ Para coletar as respostas da pesquisa, siga as etapas abaixo:
 
    ![](assets/reporting_usecase_1_02.png)
 
-1. Once the answer collection box is configured, position a **[!UICONTROL List update]** type activity to save the data.
+1. Depois que a caixa de coleção de resposta estiver configurada, posicione uma atividade do tipo **[!UICONTROL List update]** para salvar os dados.
 
    ![](assets/reporting_usecase_1_04.png)
 
-   In this activity, specify the list to be updated and un-check the **[!UICONTROL Purge and re-use the list if it exists (otherwise add to the list)]** option: answers are added to the existing table. Essa opção permitirá fazer referência à lista em um cubo. O schema vinculado à lista não será recriado em cada atualização, o que garante a integridade do cubo que usa essa lista.
+   Nesta atividade, especifique a lista que deve ser atualizada e desmarque a opção **[!UICONTROL Purge and re-use the list if it exists (otherwise add to the list)]**: as respostas são adicionadas à tabela existente. Essa opção permitirá fazer referência à lista em um cubo. O schema vinculado à lista não será recriado em cada atualização, o que garante a integridade do cubo que usa essa lista.
 
    ![](assets/reporting_usecase_1_03.png)
 
@@ -68,11 +68,11 @@ Para coletar as respostas da pesquisa, siga as etapas abaixo:
 
 1. Adicione um programador para automatizar a coleta diária das respostas e a atualização da lista.
 
-   As atividades **[!UICONTROL List update]** e **[!UICONTROL Scheduler]** as atividades são descritas em .
+   As atividades **[!UICONTROL List update]** e **[!UICONTROL Scheduler]** estão detalhadas em .
 
 ## Etapa 2 - Criação do cubo, suas medidas e seus indicadores {#step-2---creating-the-cube--its-measures-and-its-indicators}
 
-É possível então criar o cubo e configurar suas medidas: elas serão usados para criar os indicadores que serão mostrados no relatório. For more on creating and configuring cubes, refer to [About cubes](../../reporting/using/about-cubes.md).
+É possível então criar o cubo e configurar suas medidas: elas serão usados para criar os indicadores que serão mostrados no relatório. Para obter mais informações sobre a criação e configuração de cubos, consulte [Sobre os cubos](../../reporting/using/about-cubes.md).
 
 Neste exemplo, o cubo se baseia nos dados da lista alimentados pelo workflow criado anteriormente.
 
@@ -82,7 +82,7 @@ Defina as dimensões e as medidas a serem exibidas no relatório. Aqui, queremos
 
 ![](assets/reporting_usecase_2_02.png)
 
-The **[!UICONTROL Preview]** tab lets you control the rendering of the report.
+A guia **[!UICONTROL Preview]** permite controlar a renderização do relatório.
 
 ## Etapa 3 - Criação do relatório e configuração do layout de dados dentro da tabela {#step-3---creating-the-report-and-configuring-the-data-layout-within-the-table}
 
