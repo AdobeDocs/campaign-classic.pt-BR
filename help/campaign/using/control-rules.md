@@ -14,7 +14,7 @@ discoiquuid: be037a80-3f94-465c-ba7d-ae7d50f70e36
 index: y
 internal: n
 snippet: y
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: d30de91002862b664249c5a704b7c0f521dd30f2
 
 ---
@@ -30,16 +30,16 @@ Um conjunto de regras prontas permite que você faça as verificações normais.
 
 * **[!UICONTROL Object approval]** (email): verifica se o objeto e o endereço do remetente não contêm caracteres especiais que podem causar problemas em determinados agentes de email.
 * **[!UICONTROL URL label approval]** (email): verifica se cada URL de rastreamento tem um rótulo.
-* **[!UICONTROL URL approval]** (email): verifica os URLs de rastreamento (presença do caractere &quot;&amp;&quot;).
-* **[!UICONTROL Message size approval]** (móvel): verifica o tamanho das mensagens SMS.
+* **[!UICONTROL URL approval]** (email): verifica as URLs de rastreamento (presença do caractere &quot;&amp;&quot;).
+* **[!UICONTROL Message size approval]** (dispositivos móveis): verifica o tamanho das mensagens SMS.
 * **[!UICONTROL Validity period check]** (email): verifica se o período de validade da entrega é longo o suficiente para enviar todas as mensagens.
-* **[!UICONTROL Proof size check]** (todos os canais): gera uma mensagem de erro se o público-alvo da prova exceder 100 destinatários.
-* **[!UICONTROL Wave scheduling check]** (email): verifica se a última vaga de entregas está programada para começar antes do final do período de validade, se a entrega for dividida em várias ondas.
-* **[!UICONTROL Unsubscription link approval]** (email): verifica se há pelo menos um URL de cancelamento de assinatura (opção de não participação) em cada conteúdo (HTML e Texto).
+* **[!UICONTROL Proof size check]** (todos os canais): gera uma mensagem de erro se a população do target de prova exceder 100 destinatários.
+* **[!UICONTROL Wave scheduling check]** (email): verifica se a última onda de deliveries está agendada para iniciar antes do fim do período de validade, caso o delivery esteja distribuído em várias ondas.
+* **[!UICONTROL Unsubscription link approval]** (email): verifica a presença de pelo menos um URL de cancelamento de subscrição (opt-out) em cada conteúdo (HTML e Text).
 
 ## Criando uma regra de controle {#creating-a-control-rule}
 
-É possível criar novas regras de controle para atender às suas necessidades. To do this, create a **[!UICONTROL Control]** typology rule and enter the control formula in SQL in the **[!UICONTROL Code]** tab.
+É possível criar novas regras de controle para atender às suas necessidades. Para fazer isso, crie uma regra de tipologia **[!UICONTROL Control]** e insira a fórmula de controle em SQL na guia **[!UICONTROL Code]**.
 
 **Exemplo:**
 
@@ -47,11 +47,11 @@ No exemplo a seguir, vamos criar uma regra para impedir que uma oferta em SMS se
 
 Siga as etapas abaixo:
 
-1. Crie uma regra de **[!UICONTROL Control]** tipologia. Selecione um nível de **[!UICONTROL Warning]** alerta.
+1. Crie uma regra de tipologia **[!UICONTROL Control]**. Selecione um nível de alerta **[!UICONTROL Warning]**.
 
    ![](assets/campaign_opt_create_control_01.png)
 
-1. In the **[!UICONTROL Code]** tab, enter the script to apply the desired threshold, as shown below:
+1. Na guia **[!UICONTROL Code]**, insira o script para aplicar o limite desejado, conforme mostrado abaixo:
 
    ![](assets/campaign_opt_create_control_02.png)
 
@@ -75,7 +75,7 @@ Siga as etapas abaixo:
 
    ![](assets/campaign_opt_create_control_05.png)
 
-   At the end of the analysis, the **[!UICONTROL Confirm delivery]** button will not be available.
+   No final da análise, o botão **[!UICONTROL Confirm delivery]** não estará disponível.
 
    ![](assets/campaign_opt_create_control_06.png)
 
