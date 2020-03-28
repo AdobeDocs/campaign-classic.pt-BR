@@ -14,7 +14,7 @@ discoiquuid: 12e7043e-e8b5-48a9-8a2f-99e2e6040c3c
 index: y
 internal: n
 snippet: y
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 1c86322fa95aee024f6c691b61a10c21a9a22eb7
 
 ---
@@ -26,7 +26,7 @@ Um seed address permite exibir uma pré-visualização da mensagem, enviar uma p
 
 ## Criação de um seed address {#creating-a-seed-address}
 
-1. In the transactional message template, click the **[!UICONTROL Seed addresses]** tab.
+1. No modelo de mensagem transacional, clique na guia **[!UICONTROL Seed addresses]**.
 
    ![](assets/messagecenter_create_seedaddr_001.png)
 
@@ -42,19 +42,19 @@ Um seed address permite exibir uma pré-visualização da mensagem, enviar uma p
 
    ![](assets/messagecenter_create_seedaddr_003bis.png)
 
-1. Insira os dados de teste (consulte os dados [de](../../message-center/using/personalization-data.md)personalização).
+1. Insira os dados de teste (consulte [Dados de personalização](../../message-center/using/personalization-data.md)).
 
    ![](assets/messagecenter_create_custo_001.png)
 
 ## Criação de vários seed addresses {#creating-several-seed-addresses}
 
-1. Clique no **[!UICONTROL Add other seed addresses]** link e no **[!UICONTROL Add]** botão.
+1. Clique no link **[!UICONTROL Add other seed addresses]** e, em seguida, no botão **[!UICONTROL Add]**.
 
    ![](assets/messagecenter_create_seedaddr_004.png)
 
-1. Follow the configuration steps for a seed address detailed in the [Creating a seed address](#creating-a-seed-address) section.
+1. Siga as etapas de configuração para um seed address que está detalhado na seção [Criação de um seed address](#creating-a-seed-address)
 1. Repita o processo para criar quantos endereços forem necessários.
 
    ![](assets/messagecenter_create_seedaddr_008.png)
 
-Depois que os endereços forem criados, você poderá exibir sua pré-visualização e personalização. Consulte Visualização [de mensagem](../../message-center/using/transactional-message-preview.md)transacional.
+Depois que os endereços forem criados, você poderá exibir sua pré-visualização e personalização. Consulte [Pré-visualização da mensagem transacional](../../message-center/using/transactional-message-preview.md).
