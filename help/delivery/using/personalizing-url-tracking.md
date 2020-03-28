@@ -14,7 +14,7 @@ discoiquuid: f0e8a50b-d4a4-4271-87f7-802ef410a0f9
 index: y
 internal: n
 snippet: y
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 7dbc876fae0bde78e3088ee1ab986cd09e9bcc38
 
 ---
@@ -22,11 +22,11 @@ source-git-commit: 7dbc876fae0bde78e3088ee1ab986cd09e9bcc38
 
 # Personalizar rastreamento do URL{#personalizing-url-tracking}
 
-Advanced message tracking settings are accessible via the **[!UICONTROL Tracking & Images]** icon in the toolbar of the delivery wizard.
+As configurações avançadas de rastreamento de mensagem são acessíveis por meio do ícone **[!UICONTROL Tracking &amp; Images]** na barra de ferramentas do assistente de delivery.
 
 >[!NOTE]
 >
->A gestão de imagens em emails também é configurada nessa janela. Consulte [Adicionar imagens](../../delivery/using/defining-the-email-content.md#adding-images).
+>A gestão de imagens em emails também é configurada nessa janela. Consulte [Adição de imagens](../../delivery/using/defining-the-email-content.md#adding-images).
 
 ![](assets/s_ncs_user_email_del_tracking_ico.png)
 
@@ -36,7 +36,7 @@ Advanced message tracking settings are accessible via the **[!UICONTROL Tracking
 
    >[!CAUTION]
    >
-   >Quando o rastreamento não é ativado em uma entrega (ou seja **[!UICONTROL Activate tracking]** , a opção não selecionada), os relatórios e dados relacionados ao rastreamento não estão disponíveis: Abre, os relatórios de cliques instantâneos e URLs rastreados não exibem dados, e **[!UICONTROL Tracking logs]** as guias não serão exibidas para essa entrega.
+   >Quando o rastreamento não é ativado em um delivery (ou seja, a opção **[!UICONTROL Activate tracking]** não está selecionada), os relatórios e dados relacionados ao rastreamento não estão disponíveis: os relatórios Opens, Hot click e tracked URLs não exibirão dados, e as guias **[!UICONTROL Tracking logs]** não serão exibidas para esse delivery.
 
 * A opção Ativar/desativar rastreamento para mensagem é aberta.
 
@@ -46,7 +46,7 @@ Os URLs rastreados são listados na janela central em forma de árvore.
 
 É possível ativar ou desativar o rastreamento individualmente para cada URL da mensagem. Para obter mais informações, consulte [esta seção](../../delivery/using/how-to-configure-tracked-links.md).
 
-The **[!UICONTROL Advanced]** tab lets you personalize the calculation formulas of the tracked URLs and the opening URL.
+A guia **[!UICONTROL Advanced]** permite personalizar as fórmulas de cálculo dos URLs rastreados e de abertura.
 
 ![](assets/s_ncs_user_email_del_tracking_param_adv.png)
 
