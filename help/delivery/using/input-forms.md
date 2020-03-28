@@ -14,7 +14,7 @@ discoiquuid: abf097eb-ade5-479e-9e20-8bd6bc9d96aa
 index: y
 internal: n
 snippet: y
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 7dbc876fae0bde78e3088ee1ab986cd09e9bcc38
 
 ---
@@ -28,7 +28,7 @@ Os formulários estão detalhados [nesta seção](../../configuration/using/iden
 
 ## Estrutura do formulário {#form-structure}
 
-The XML document of an input form must contain the **`<form>`** root element with the **name** and **namespace** attributes to populate the form name and its namespace, respectively.
+O documento XML de um formulário de entrada deve conter o elemento raiz **`<form>`** com os atributos **name** e **namespace** para preencher o nome e o namespace do formulário, respectivamente.
 
 ```
 <form name="form_name" namespace="name_space">
@@ -36,7 +36,7 @@ The XML document of an input form must contain the **`<form>`** root element wit
 </form>
 ```
 
-Por padrão, um formulário é associado ao schema de dados que tem o mesmo nome e namespace. To associate a form with a different name, enter the schema key in the **entity-schema** attribute of the **`<form>`** element.
+Por padrão, um formulário é associado ao schema de dados que tem o mesmo nome e namespace. Para associar um formulário a um nome diferente, insira a chave do schema no atributo **entity-schema** do elemento **`<form>`**.
 
 Para ilustrar a estrutura de um formulário de entrada, descrevemos uma interface com base em nosso exemplo de schema &quot;cus:book&quot;:
 
@@ -52,9 +52,9 @@ Este é o formulário de entrada correspondente:
 </form>
 ```
 
-The description of the edit elements begins with the **`<form>`** root element.
+A descrição dos elementos de edição começa com o elemento raiz **`<form>`**.
 
-An edit control is entered in an **`<input>`** element with the **xpath** attribute containing the path of the field in its schema.
+Um controle de edição é inserido em um elemento **`<input>`** com o atributo **xpath** contendo o caminho do campo do schema.
 
 **Lembrete sobre sintaxe XPath:**
 
@@ -67,7 +67,7 @@ Os elementos são designados pelo nome e os atributos são designados pelo nome 
 Exemplos:
 
 * **@date**: seleciona o atributo com o nome &quot;date&quot;
-* **chapter/@title**: seleciona o atributo &quot;title&quot; no `<chapter>` elemento
+* **chapter/@title**: seleciona o atributo &quot;title&quot; no elemento `<chapter>`.
 * **../@date**: seleciona a data do elemento primário do elemento atual.
 
 O controle de edição se adapta automaticamente ao tipo de dados correspondente e usa o rótulo definido no schema.
@@ -76,7 +76,7 @@ Por padrão, cada campo é exibido em uma linha e ocupa todo o espaço disponív
 
 >[!CAUTION]
 >
->The input form must reference a **type=&quot;contentForm&quot;** attribute on the **`<form>`** element to automatically add the frame required for content to be input.
+>O formulário de entrada deve referenciar um atributo **type=&quot;contentForm&quot;** no elemento **`<form>`** para adicionar automaticamente o quadro necessário para o conteúdo ser inserido.
 
 ## Formatação {#formatting}
 
@@ -103,7 +103,7 @@ Este controle exibe uma lista de colunas editável com uma barra de ferramentas 
 
 O controle de lista deve ser preenchido com o atributo **type=&quot;list&quot;** e o caminho da lista deve se referir ao elemento de coleção.
 
-The columns are declared by the child **`<input>`** elements of the list.
+As colunas são declaradas pelos elementos secundários **`<input>`** da lista.
 
 >[!NOTE]
 >
@@ -151,9 +151,9 @@ Os formulários de edição em listas são usados nos seguintes casos:
 </input>
 ```
 
-The definition of the edit form is specified via the **`<form>`** element under the list element. Sua estrutura é idêntica à estrutura de um formulário de entrada.
+A definição do formulário de edição é especificada por meio do elemento **`<form>`** sob o element list Sua estrutura é idêntica à estrutura de um formulário de entrada.
 
-A **[!UICONTROL Detail]** button is automatically added when the **zoom=&quot;true&quot;** attribute is entered in the list definition. Isso permite abrir o formulário de edição na linha selecionada.
+Um botão **[!UICONTROL Detail]** é adicionado automaticamente quando o atributo **zoom=&quot;true&quot;** é inserido na definição da lista. Isso permite abrir o formulário de edição na linha selecionada.
 
 >[!NOTE]
 >
@@ -179,7 +179,7 @@ O controle de lista deve ser preenchido com o atributo **type=&quot;notebooklist
 
 O título da guia contém o valor dos dados inseridos pelo atributo **xpath-label**.
 
-The edit controls must be declared under a **`<container>`** element that is a child of the list control.
+Os controles de edição devem ser declarados em um elemento **`<container>`** que se origina do controle de lista.
 
 Use os botões da barra de ferramentas para adicionar ou excluir elementos da lista.
 
@@ -189,7 +189,7 @@ Use os botões da barra de ferramentas para adicionar ou excluir elementos da li
 
 ## Containeres {#containers}
 
-Os containeres permitem agrupar um conjunto de controles. They exist via the **`<container>`** element. Eles já foram usados para formatar controles em várias colunas e para o controle da lista de guias.
+Os containeres permitem agrupar um conjunto de controles. Eles existem por meio do elemento **`<container>`**. Eles já foram usados para formatar controles em várias colunas e para o controle da lista de guias.
 
 Para obter mais informações sobre containeres e como usá-los em formulários de entrada, consulte [esta seção](../../configuration/using/form-structure.md#containers).
 
@@ -199,6 +199,6 @@ A zona de edição permite inserir o conteúdo XML do formulário de entrada:
 
 ![](assets/d_ncs_content_form12.png)
 
-The **[!UICONTROL Preview]** tab lets you view the input form:
+A guia **[!UICONTROL Preview]** permite exibir o formulário de entrada:
 
 ![](assets/d_ncs_content_form13.png)
