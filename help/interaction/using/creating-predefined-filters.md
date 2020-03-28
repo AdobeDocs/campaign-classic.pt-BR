@@ -14,7 +14,7 @@ discoiquuid: d47017a3-a342-4758-a700-b8e88aa724f2
 index: y
 internal: n
 snippet: y
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 28614a6b0c45deef17d9b3275a16e65bdff4538b
 
 ---
@@ -26,7 +26,7 @@ Filtros predefinidos permitem criar regras de qualificação para a população 
 
 Para criar um filtro, siga as seguintes etapas:
 
-1. Vá para a **[!UICONTROL Administration]** pasta e selecione **[!UICONTROL Pre-defined offer filters]**.
+1. Vá para a pasta **[!UICONTROL Administration]** e selecione **[!UICONTROL Pre-defined offer filters]**.
 
    ![](assets/offer_filter_create_005.png)
 
@@ -46,10 +46,10 @@ Para criar um filtro, siga as seguintes etapas:
 
    ![](assets/offer_filter_create_004.png)
 
-1. Click **[!UICONTROL Preview]** to view the result of the filter.
+1. Clique em **[!UICONTROL Preview]** para visualizar o resultado do filtro.
 
    ![](assets/offer_filter_create_006.png)
 
-**Tópico relacionado**
+**Tópicos relacionados**
 
-* [Salvar consultas usadas com frequência como filtros predefinidos editáveis](https://helpx.adobe.com/campaign/kb/simplifying-campaign-management-acc.html#Savefrequentlyusedqueriesaseditablepredefinedfilters)
+* [Salvar consultas usadas com frequência como filtros predefinidos editáveis](https://helpx.adobe.com/br/campaign/kb/simplifying-campaign-management-acc.html#Savefrequentlyusedqueriesaseditablepredefinedfilters)
