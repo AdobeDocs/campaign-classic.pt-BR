@@ -14,7 +14,7 @@ discoiquuid: a21e9c9e-ffc5-40d1-8eac-f4f25da8f21d
 index: y
 internal: n
 snippet: y
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 20f835c357d016643ea1f3209ee4dfb6d3239f90
 
 ---
@@ -31,9 +31,9 @@ Para produzir estatísticas com os dados do banco de dados do Campaign, é poss�
 Para criar, publicar e entregar um relatório de análise com seus dados, siga as etapas abaixo:
 
 1. Criar um novo relatório: consulte [Criação de um novo relatório](../../reporting/using/creating-a-new-report.md),
-1. Colete os dados a serem analisados: consultar a [recolha de dados para analisar](../../reporting/using/collecting-data-to-analyze.md) e [utilizar o contexto](../../reporting/using/using-the-context.md),
-1. Defina o conteúdo do relatório com as atividades e seus contêineres: consulte [Criação de uma tabela](../../reporting/using/creating-a-table.md), [Criação de um gráfico](../../reporting/using/creating-a-chart.md) e layout [de](../../reporting/using/element-layout.md)elemento,
-1. Configure as opções de exibição: tipo de exibição, relatórios compartilhados: consulte o contexto [de exibição do](../../reporting/using/configuring-access-to-the-report.md#report-display-context)Relatório, [Definindo um conteúdo](../../reporting/using/defining-a-conditional-content.md) condicional e [Configurando o acesso ao relatório](../../reporting/using/configuring-access-to-the-report.md),
-1. Publicar o relatório (assistente de publicação): consulte [Publicar o relatório](../../reporting/using/configuring-access-to-the-report.md#publishing-the-report),
-1. Convert the report: export, history, display in a browser: refer to [Actions on reports](../../reporting/using/actions-on-reports.md).
+1. Colete os dados que serão analisados: consulte [Coleta de dados para analisar](../../reporting/using/collecting-data-to-analyze.md) e [Utilização de contexto](../../reporting/using/using-the-context.md),
+1. Defina o conteúdo do relatório com as atividades e seus containers: consulte [Criação de uma tabela](../../reporting/using/creating-a-table.md), [Criação de um gráfico](../../reporting/using/creating-a-chart.md) e [Layout de elemento ](../../reporting/using/element-layout.md),
+1. Configure as opções de exibição: tipo de exibição, relatórios compartilhados: consulte [Contexto de exibição do relatório](../../reporting/using/configuring-access-to-the-report.md#report-display-context), [Definição de um conteúdo condicional ](../../reporting/using/defining-a-conditional-content.md)e [Configuração do acesso ao relatório](../../reporting/using/configuring-access-to-the-report.md),
+1. Publicar o relatório (assistente de publicação): consulte [Publicação de relatório](../../reporting/using/configuring-access-to-the-report.md#publishing-the-report),
+1. Converta o relatório: exportar, histórico, exibir em um navegador: consulte [Ações sobre relatórios](../../reporting/using/actions-on-reports.md).
 
