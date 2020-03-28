@@ -14,7 +14,7 @@ discoiquuid: dd50ca25-8fa2-48fa-84cc-a63e476701a0
 index: y
 internal: n
 snippet: y
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 1c86322fa95aee024f6c691b61a10c21a9a22eb7
 
 ---
@@ -24,21 +24,21 @@ source-git-commit: 1c86322fa95aee024f6c691b61a10c21a9a22eb7
 
 ## Contexto de exibição do relatório {#report-display-context}
 
-Define the display context of the report in the Adobe Campaign platform using the **[!UICONTROL Display]** tab. O acesso a um relatório depende do tipo de seleção, das condições de exibição e das autorizações de acesso.
+Defina o contexto de exibição do relatório na plataforma Adobe Campaign usando a guia **[!UICONTROL Display]**. O acesso a um relatório depende do tipo de seleção, das condições de exibição e das autorizações de acesso.
 
 ### Tipo de seleção {#selection-type}
 
-O acesso ao relatório pode ser limitado a um contexto específico ou a um espaço de ofertas, por exemplo, uma entrega, um destinatário, uma seleção de destinatários etc. Esse acesso é configurado na **[!UICONTROL Selection type]** seção da **[!UICONTROL Display]** guia.
+O acesso ao relatório pode ser limitado a um contexto específico ou a um espaço de ofertas, por exemplo, um delivery, um recipient, uma seleção de recipients etc. Esse acesso é configurado na seção **[!UICONTROL Selection type]** da guia **[!UICONTROL Display]** .
 
 ![](assets/s_ncs_advuser_report_visibility_4.png)
 
-* **[!UICONTROL Single selection]** : o relatório só é acessível quando uma entidade específica é selecionada.
-* **[!UICONTROL Multiple selection]** : o relatório é acessado quando várias entidades são selecionadas.
-* **[!UICONTROL Global]** : o relatório é acessado por meio da lista de relatórios disponíveis no universo de Relatórios.
+* **[!UICONTROL Single selection]**: o relatório só pode ser acessado quando uma entidade específica for selecionada.
+* **[!UICONTROL Multiple selection]**: o relatório é acessado quando várias entidades são selecionadas.
+* **[!UICONTROL Global]**: o relatório é acessado através da lista de relatórios disponíveis no universo Reports.
 
 ### Sequência de exibição {#display-sequence}
 
-The **[!UICONTROL Sequence]** field lets you enter a numeric value that specifies the display sequence of the report in the list.
+O campo **[!UICONTROL Sequence]** permite inserir um valor numérico que especifica a sequência de exibição do relatório na lista.
 
 Por padrão, os relatórios são exibidos por relevância: o valor inserido neste campo permite classificar relatórios do mais alto (valor mais alto) para o menor (valor menor) relevante.
 
@@ -60,7 +60,7 @@ Isso significa que, se o canal principal da campanha for mala direta, o relatór
 
 O relatório pode ser compartilhado com outros operadores.
 
-Para tornar o relatório acessível, selecione a **[!UICONTROL Report shared with other operators]** opção. Se essa opção não estiver selecionada, somente o operador que criou o relatório poderá acessá-lo.
+Para tornar o relatório acessível, selecione a opção **[!UICONTROL Report shared with other operators]**. Se essa opção não estiver selecionada, somente o operador que criou o relatório poderá acessá-lo.
 
 O relatório também pode ser compartilhado com operadores ou grupos de operadores específicos adicionados pela janela de autorizações.
 
@@ -68,7 +68,7 @@ O relatório também pode ser compartilhado com operadores ou grupos de operador
 
 ### Definição das opções de filtro {#defining-the-filtering-options}
 
-The **[!UICONTROL Reports]** universe displays all available reports in the platform and for which the connected operator has an access right.
+O universo **[!UICONTROL Reports]** exibe todos os relatórios disponíveis na plataforma e para os quais o operador conectado tem direito de acesso.
 
 Por padrão, eles são classificados por relevância, mas é possível aplicar outros tipos de filtros: alfabético, por idade, etc.
 
@@ -76,7 +76,7 @@ Também é possível filtrar a exibição com base na categoria do relatório:
 
 ![](assets/report_ovv_select_type.png)
 
-To define the category of a report, select it via the **[!UICONTROL Display]** tab, as shown below:
+Para definir a categoria de um relatório, selecione-o por meio da guia **[!UICONTROL Display]**, conforme mostrado abaixo:
 
 ![](assets/report_select_category.png)
 
@@ -88,7 +88,7 @@ To define the category of a report, select it via the **[!UICONTROL Display]** t
 
 Como exemplo, vamos criar um link para um relatório para torná-lo acessível por meio de uma lista de recipients.
 
-1. Clique **[!UICONTROL New]** e selecione **[!UICONTROL Create a link to an existing report]** no assistente de criação de relatórios.
+1. Clique em **[!UICONTROL New]** e selecione **[!UICONTROL Create a link to an existing report]** no assistente de criação de relatórios.
 
    ![](assets/s_ncs_advuser_report_wizard_link_01.png)
 
@@ -108,21 +108,21 @@ Como exemplo, vamos criar um link para um relatório para torná-lo acessível p
    ![](assets/s_ncs_advuser_report_wizard_link_04.png)
 
 1. Publique seu relatório.
-1. Go to one of your recipient lists and click the **[!UICONTROL Reports]** link: the report you have just created is accessible.
+1. Vá para uma das listas de recipients e clique no link **[!UICONTROL Reports]**: o relatório que acabou de criar está acessível.
 
    ![](assets/s_ncs_advuser_report_wizard_link_05.png)
 
 ## Pré-visualização do relatório {#preview-of-the-report}
 
-Before publishing your report, make sure it is displayed correctly in the **[!UICONTROL Preview]** tab.
+Antes de publicar seu relatório, verifique se ele é exibido corretamente na guia **[!UICONTROL Preview]**.
 
 ![](assets/s_ncs_advuser_report_preview_01.png)
 
-To display the preview of the report, select the **[!UICONTROL Global]** or the **[!UICONTROL Selection]** option.
+Para exibir a visualização do relatório, selecione a opção **[!UICONTROL Global]** ou a opção **[!UICONTROL Selection]**.
 
-Essas duas opções são selecionadas com base nas configurações de exibição do relatório. If the display setting is **[!UICONTROL Global]**, you need to select the **[!UICONTROL Global]** preview option. Se as configurações de exibição forem **[!UICONTROL Single selection]** ou **[!UICONTROL Multiple selection]**, a opção de **[!UICONTROL Selection]** visualização deverá estar selecionada.
+Essas duas opções são selecionadas com base nas configurações de exibição do relatório. Se a configuração de exibição for **[!UICONTROL Global]**, é preciso selecionar a opção de visualização **[!UICONTROL Global]**. Se as configurações de exibição forem **[!UICONTROL Single selection]** ou **[!UICONTROL Multiple selection]**, a opção de visualização **[!UICONTROL Selection]** deverá ser selecionada.
 
-Para obter mais informações, consulte o contexto [de exibição do](#report-display-context)Relatório.
+Para obter mais informações, consulte [Contexto de exibição do relatório](#report-display-context).
 
 As configurações específicas permitem controlar erros. A configuração **_uuid** é encontrada na URL do relatório. É possível adicionar as configurações **configurações &amp;_preview** ou **&amp;_debug**.
 
@@ -130,15 +130,15 @@ Para saber mais sobre essas configurações, consulte a seção **Definição da
 
 ## Publicação do relatório {#publishing-the-report}
 
-Publishing the report is mandatory in order to share them with other operators and display them in the list of available reports (also refer to [Report display context](#report-display-context)). Essa operação deve ser executada novamente cada vez que o relatório for alterado.
+A publicação do relatório é obrigatória para compartilhá-lo com outros operadores e exibi-lo na lista de relatórios disponíveis (também consulte [Contexto de exibição do relatório](#report-display-context)). Essa operação deve ser executada novamente cada vez que o relatório for alterado.
 
-1. Open the publishing wizard by clicking **[!UICONTROL Publish]** in the toolbar.
+1. Abra o assistente de publicação clicando em **[!UICONTROL Publish]** na barra de ferramentas.
 
    ![](assets/s_ncs_advuser_report_publish_01.png)
 
-1. Clique **[!UICONTROL Start]** para publicar.
+1. Clique em **[!UICONTROL Start]** para publicar.
 
    ![](assets/s_ncs_advuser_report_publish_02.png)
 
-1. Click the **[!UICONTROL Enlarge]** icon to open the report in a web browser.
+1. Clique no ícone **[!UICONTROL Enlarge]** para abrir o relatório em um navegador da web.
 
