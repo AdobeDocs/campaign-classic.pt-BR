@@ -14,7 +14,7 @@ discoiquuid: 79a6d3cf-2425-49b9-9b92-b56be26438bf
 index: y
 internal: n
 snippet: y
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: d046304657f04312d78176c49a650690b05e4c94
 
 ---
@@ -28,7 +28,7 @@ source-git-commit: d046304657f04312d78176c49a650690b05e4c94
 
 >[!CAUTION]
 >
->Esta configuração foi retomada. [Atualize para a configuração mais recente](https://docs.campaign.adobe.com/doc/AC/getting_started/EN/buildUpgrade.html) ou entre em contato com o [suporte técnico](https://support.neolane.net/).
+>Esta configuração foi retomada. [Atualize para a configuração mais recente](https://helpx.adobe.com/br/campaign/kb/acc-build-upgrade.html) ou entre em contato com o [suporte técnico](https://support.neolane.net/).
 
 **Novidades**
 
@@ -53,13 +53,13 @@ source-git-commit: d046304657f04312d78176c49a650690b05e4c94
 * Correção de um problema que levou à exibição dos IPs do balanceador de carga em vez dos IPs do cliente no rastreamento de broadlogs. (NEO-11295)
 * Correção de um problema aleatório que fazia com que as propriedades de um delivery fossem substituídas incorretamente. (NEO-11015)
 * Correção de um erro de sintaxe ao classificar resultados da atividade de enriquecimento. (NEO-11394)
-* Fixed an issue when using calculated fields in a **[!UICONTROL Survey answers]** workflow activity. (NEO-11382)
+* Correção de um problema ao usar campos calculados em uma atividade de workflow **[!UICONTROL Survey answers]**. (NEO-11382)
 * O Tomcat foi atualizado para evitar a exploração de vulnerabilidades. (NEO-11503)
 * Correção de um erro com codificação LATIN1 ao usar um FDA Connection para um banco de dados PostgreSQL. (NEO-11299)
-* Fixed an issue that occured when using the **[!UICONTROL Prepare the personalization data with a workflow]** delivery option. (NEO-11047)
+* Correção de um problema que ocorria ao usar a opção de delivery **[!UICONTROL Prepare the personalization data with a workflow]** . (NEO-11047)
 * Correção de um problema postupgrade que impedia o envio de SMS ao usar um conector estendido.
 * Importação/exportação de pacotes aprimorada (log e região foram adicionados à interface).
-* Fixed an issue which displayed useless errors in the postupgrade log when a **[!UICONTROL Survey answers]** workflow activity was not fully configured.
+* Correção de um problema que exibia erros inúteis no log após a atualização quando uma atividade de workflow **[!UICONTROL Survey answers]** não estava totalmente configurada.
 
 **Evoluções técnicas**
 
@@ -67,15 +67,15 @@ Faixas de query
 
 Uma chave específica (PROXYUSER ou PROXYROLE) é usada para associar um usuário ou função Teradata a um usuário do Campaign. Uma nova permissão foi adicionada para usar este usuário/função proxy. É necessário adicionar o acesso GRANT CONNECT THROUGH à conta do banco de dados (aquele definido na conta externa do Teradata).
 
-Uma nova guia foi adicionada nas contas externas do Teradata. The **[!UICONTROL Query banding]** tab includes the following options:
+Uma nova guia foi adicionada nas contas externas do Teradata. A guia **[!UICONTROL Query banding]** inclui as seguintes opções:
 
-* **[!UICONTROL Active]**: marque essa caixa para ativar o recurso.
+* **[!UICONTROL Active]**: marque esta caixa para ativar o recurso.
 * **[!UICONTROL Default]**: insira uma faixa de query padrão que será usada se um usuário não tiver nenhuma faixa de query associada. Se não houver faixa de query padrão definida, os usuários que não tiverem nenhuma faixa de query associada não poderão usar o Teradata.
-* **[!UICONTROL Users]**: para cada usuário, especifique um agrupamento de consulta. Você pode adicionar quantos pares chave-valor forem necessários. Por exemplo: &quot;priority=1;workload=high;&quot;
+* **[!UICONTROL Users]**: para cada usuário, especifique uma faixa de query. Você pode adicionar quantos pares chave-valor forem necessários. Por exemplo: &quot;priority=1;workload=high;&quot;
 
 Para obter mais informações sobre faixa de query, consulte esses artigos:
 
-* [https://docs.teradata.com/reader/cY5~EUFWjgN2kBnH3Vw/a5G1~izve68yTMa24kVjVw](https://docs.teradata.com/reader/cY5B%7EoeEUFWjgN2kBnH3Vw/a5G1iz%7Eve68yTMa24kVjVw)
+* [https://docs.teradata.com/reader/cY5B~oeEUFWjgN2kBnH3Vw/a5G1iz~ve68yTMa24kVjVw](https://docs.teradata.com/reader/cY5B%7EoeEUFWjgN2kBnH3Vw/a5G1iz%7Eve68yTMa24kVjVw)
 * [https://docs.teradata.com/reader/rgAb27O_xRmMVc_aQq2VGw/qVNfdszBssrZ7ttrE7AtmQ](https://docs.teradata.com/reader/rgAb27O_xRmMVc_aQq2VGw/qVNfdszBssrZ7ttrE7AtmQ)
 
 ## Versão 18.6 - Build 8947{#release-18-6-build-8947}
@@ -84,7 +84,7 @@ Para obter mais informações sobre faixa de query, consulte esses artigos:
 
 >[!CAUTION]
 >
->Esta configuração foi retomada. [Atualize para a configuração mais recente](https://docs.campaign.adobe.com/doc/AC/getting_started/EN/buildUpgrade.html) ou entre em contato com o [suporte técnico](https://support.neolane.net/).
+>Esta configuração foi retomada. [Atualize para a configuração mais recente](https://helpx.adobe.com/br/campaign/kb/acc-build-upgrade.html) ou entre em contato com o [suporte técnico](https://support.neolane.net/).
 
 **Novidades**
 
@@ -102,7 +102,7 @@ Para obter mais informações sobre faixa de query, consulte esses artigos:
   </tr> 
   <tr> 
    <td> Suporte do Windows Server 2016<br /> </td> 
-   <td> O Adobe Campaign agora é compatível com o Windows Server 2016. Consulte <a href="https://helpx.adobe.com/campaign/kb/compatibility-matrix.html">Matriz de compatibilidade do Campaign Classic</a>.<br /> </td> 
+   <td> O Adobe Campaign agora é compatível com o Windows Server 2016. Consulte <a href="https://helpx.adobe.com/br/campaign/kb/compatibility-matrix.html">Matriz de compatibilidade do Campaign Classic</a>.<br /> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -111,7 +111,7 @@ Para obter mais informações sobre faixa de query, consulte esses artigos:
 
 decryptString
 
-A função **decryptString** foi preterida. Consulte o artigo [Recursos Preteridos e Removidos](https://helpx.adobe.com/campaign/kb/deprecated-and-removed-features.html).
+A função **decryptString** foi preterida. Consulte o artigo [Recursos Preteridos e Removidos](https://helpx.adobe.com/br/campaign/kb/deprecated-and-removed-features.html).
 
 Para novos clientes, essa função agora é usada apenas para descriptografar a ID criptografada do recipient nas landing pages. Para descriptografar senhas armazenadas em uma conta externa, use a nova função **decryptPassword** .
 
@@ -119,7 +119,7 @@ Para clientes existentes, o comportamento dessa função não é alterado, mas r
 
 decryptPassword
 
-A função **decryptPassword** foi adicionada. Permite descriptografar uma senha armazenada em uma conta externa. Consulte a documentação [JSAPI](https://helpx.adobe.com/campaign/kb/compatibility-matrix.html) para obter mais informações.
+A função **decryptPassword** foi adicionada. Permite descriptografar uma senha armazenada em uma conta externa. Consulte a documentação [JSAPI](https://helpx.adobe.com/br/campaign/kb/compatibility-matrix.html) para obter mais informações.
 
 APIs de Arquivo
 
