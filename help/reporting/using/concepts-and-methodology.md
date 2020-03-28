@@ -14,7 +14,7 @@ discoiquuid: 4655ad65-7eba-44d5-b3f9-f4b8f44d9d5c
 index: y
 internal: n
 snippet: y
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 62b2f1f6cfcaadd10880d428b8b94d73d2addcdb
 
 ---
@@ -29,8 +29,8 @@ A compartimentalização permite simplificar a exibição de dados agrupando val
 Em geral, três tipos de compartimentalização estão disponíveis:
 
 1. Uso de intervalos de valor definidos manualmente. Por exemplo, a idade, o carrinho de compras médio, o número de deliveries abertos, etc.). Para obter mais informações, consulte [Definição de cada compartimento](#defining-each-bin).
-1. Dinamicamente, dependendo dos valores de uma enumeração: apenas exibe os valores contidos na enumeração, todos os outros valores são agrupados em &#39;Outros&#39;. Para obter mais informações, consulte Gerenciamento [dinâmico de compartimentos](#dynamically-managing-bins).
-1. Uso de intervalos de valor, todos os outros sendo agrupados. Por exemplo, de 18 a 25 anos, 26 a 59 anos e os outros. Para obter mais informações, consulte [Criação de intervalos](#creating-value-ranges)de valores.
+1. Dinamicamente, dependendo dos valores de uma enumeração: apenas exibe os valores contidos na enumeração, todos os outros valores são agrupados em &#39;Outros&#39;. Para obter mais informações, consulte [Gestão dinâmica de compartimentos](#dynamically-managing-bins).
+1. Uso de intervalos de valor, todos os outros sendo agrupados. Por exemplo, de 18 a 25 anos, 26 a 59 anos e os outros. Para obter mais informações, consulte [Criação de intervalos de valor](#creating-value-ranges).
 
 Para ativar a compartimentalização, marque a caixa apropriada ao criar a dimensão.
 
@@ -42,19 +42,19 @@ O Adobe Campaign também fornece um assistente para compartimentalização autom
 
 ### Definição de cada compartimento {#defining-each-bin}
 
-To create each bin individually, select the **[!UICONTROL Define each bin]** option and use the table to create the various bins.
+Para criar cada compartimento individualmente, selecione a opção **[!UICONTROL Define each bin]** e use a tabela para criar os diversos compartimentos.
 
 ![](assets/s_advuser_cube_class_01.png)
 
-Click the **[!UICONTROL Add]** button to create a new bin and list the values which will be grouped into the bin.
+Clique no botão **[!UICONTROL Add]** para criar um novo compartimento e listar os valores que serão agrupados no compartimento.
 
 ![](assets/s_advuser_cube_class_02.png)
 
-No exemplo a seguir, os idiomas são agrupados em três categorias: inglês/alemão/holandês, francês/italiano/espanhol e outros.
+No exemplo a seguir, os idiomas são agrupados em três categorias: inglês, alemão e holandês; francês, italiano e espanhol; e outros.
 
 ![](assets/s_advuser_cube_class_03.png)
 
-Você pode usar uma máscara SQL para combinar vários valores em um filtro. Para fazer isso, verifique **[!UICONTROL Yes]** a coluna **[!UICONTROL Use an SQL mask]** e insira o filtro SQL a ser aplicado na **[!UICONTROL Value or expression]** coluna.
+Você pode usar uma máscara SQL para combinar vários valores em um filtro. Para fazer isso, marque **[!UICONTROL Yes]** na coluna **[!UICONTROL Use an SQL mask]** e insira o filtro SQL a ser aplicado na coluna **[!UICONTROL Value or expression]**.
 
 No exemplo abaixo, todos os domínios de email que começam com **yahoo** (yahoo.fr, yahoo.com, yahoo.be e etc.) ou com **ymail** (ymail.com, ymail.eu e etc.) serão agrupados no rótulo **YAHOO!**, assim como endereços com o domínio **rocketmail.com** .
 
@@ -67,7 +67,7 @@ Os valores podem ser gerenciados dinamicamente por enumerações. Isso significa
 Para criar esse tipo de compartimentalização de valor, siga as etapas abaixo:
 
 1. Crie uma nova dimensão e habilite a compartimentalização.
-1. Selecione a **[!UICONTROL Dynamically link the values to an enumeration]** opção e a enumeração correspondente.
+1. Selecione a opção **[!UICONTROL Dynamically link the values to an enumeration]** e selecione a lista discriminada correspondente.
 
    ![](assets/s_advuser_cube_class_04.png)
 
@@ -77,15 +77,15 @@ Para criar esse tipo de compartimentalização de valor, siga as etapas abaixo:
 
 Você pode agrupar os valores em intervalos com base em um intervalo desejado.
 
-Para definir intervalos manualmente, clique no **[!UICONTROL Add]** botão e selecione **[!UICONTROL Define a range]** :
+Para fazer isso, clique em **[!UICONTROL Add]** e selecione **[!UICONTROL Define a range]**.
 
 ![](assets/s_advuser_cube_class_05.png)
 
-Then specify the lower and upper limits and click **[!UICONTROL Ok]** to confirm.
+Em seguida, especifique os limites inferiores e superiores e clique em **[!UICONTROL Ok]** para confirmar.
 
 ### Criação automática de compartimentos {#generating-bins-automatically}
 
-Também é possível gerar compartimentos automaticamente. To do this, click the **[!UICONTROL Generate bins...]** link.
+Também é possível gerar compartimentos automaticamente. Para fazer isso, clique em **[!UICONTROL Generation bins...]**.
 
 ![](assets/s_advuser_cube_class_06.png)
 
@@ -113,7 +113,7 @@ Ele é criado usando o seguinte template:
 
 ![](assets/nmx_enum_domain.png)
 
-To create a report using this enumeration, create a Cube using the **[!UICONTROL Email domain]** dimension. Escolha a **[!UICONTROL Enable binning]** opção em seguida **[!UICONTROL Dynamically link the values to an enumeration]**. Em seguida, selecione a enumeração de **Domínios** como mostrado acima. Todos os valores que não têm alias especificado serão reagrupados no rótulo **Outros** .
+Para criar um relatório usando essa lista discriminada, crie um Cubo usando a dimensão **[!UICONTROL Email domain]**. Escolha a opção **[!UICONTROL Enable binning]** e depois **[!UICONTROL Dynamically link the values to an enumeration]**. Em seguida, selecione a enumeração de **Domínios** como mostrado acima. Todos os valores que não têm alias especificado serão reagrupados no rótulo **Outros** .
 
 ![](assets/nmx_add_dimension.png)
 
@@ -123,7 +123,7 @@ Você só precisa modificar a enumeração para atualizar o relatório relaciona
 
 ![](assets/nmx_add_alias.png)
 
-The **[!UICONTROL Domains]** enumeration is used to generate built-in reports that display the list of domains. Para adaptar o conteúdo desses relatórios, você pode editar essa lista.
+A lista discriminada **[!UICONTROL Domains]** é usada para gerar relatórios internos que exibem a lista de domínios. Para adaptar o conteúdo desses relatórios, você pode editar essa lista.
 
 Você pode criar outras enumerações reservadas para compartimentalização e usá-las em outros Cubos: todos os valores de alias serão reagrupados nas posições especificadas na primeira guia de enumeração.
 
@@ -143,7 +143,7 @@ As agregações são definidas na guia relevante de cada cubo.
 
 Para criar uma nova agregação, siga as etapas abaixo:
 
-1. Clique na **[!UICONTROL Aggregates]** guia do cubo e, em seguida, clique no **[!UICONTROL Add]** botão.
+1. Clique na guia **[!UICONTROL Aggregates]** do cubo, em seguida, clique no botão **[!UICONTROL Add]**.
 
    ![](assets/s_advuser_cube_agregate_02.png)
 
@@ -152,12 +152,12 @@ Para criar uma nova agregação, siga as etapas abaixo:
    ![](assets/s_advuser_cube_agregate_03.png)
 
 1. Selecione uma dimensão e um nível. Repita esse processo para cada dimensão e cada nível.
-1. Click the **[!UICONTROL Workflow]** tab to create the aggregation workflow.
+1. Clique na guia **[!UICONTROL Workflow]** para criar fluxo de trabalho de agregação.
 
    ![](assets/s_advuser_cube_agregate_04.png)
 
-   * The **[!UICONTROL Scheduler]** activity lets you define the frequency of calculation updates. O programador é detalhado [nesta seção](../../workflow/using/scheduler.md).
-   * The **[!UICONTROL Aggregate update]** activity lets you select the update mode which you want to apply: full or partial.
+   * A atividade **[!UICONTROL Scheduler]** permite definir a frequência das atualizações de cálculo. O programador é detalhado [nesta seção](../../workflow/using/scheduler.md).
+   * A atividade **[!UICONTROL Aggregate update]** permite selecionar o modo de atualização que deseja aplicar: completo ou parcial.
 
       Por padrão, uma atualização completa é realizada durante cada cálculo. Para habilitar uma atualização parcial, selecione a opção relevante e defina as condições de atualização.
 
@@ -165,39 +165,39 @@ Para criar uma nova agregação, siga as etapas abaixo:
 
 ## Definição de medidas {#defining-measures}
 
-The types of measures are defined in the **[!UICONTROL Measures]** tab of the cube. É possível calcular somas, médias, desvios, etc.
+Os tipos de medidas são definidos na guia **[!UICONTROL Measures]** do cubo. É possível calcular somas, médias, desvios, etc.
 
 É possível criar quantas medidas forem necessárias: então selecione a medida que deseja mostrar ou ocultar na tabela. Para obter mais informações, consulte [Exibição de medidas](#displaying-measures).
 
 Para definir uma nova medida, siga as etapas abaixo:
 
-1. Click the **[!UICONTROL Add]** button above the list of measures and select the type of measure and the formula to be calculated.
+1. Clique no botão **[!UICONTROL Add]** acima da lista de medidas e selecione o tipo de medida e a fórmula a ser calculada.
 
    ![](assets/s_advuser_cube_create_a_measure.png)
 
 1. Se necessário e dependendo do operador, escolha a expressão que a operação aborda.
 
-   The **[!UICONTROL Advanced selection]** button lets you create complex calculation formulas. Para obter mais informações, consulte [esta seção](../../platform/using/about-queries-in-campaign.md).
+   O botão **[!UICONTROL Advanced selection]** permite criar fórmulas de cálculo complexas. Para obter mais informações, consulte [esta seção](../../platform/using/about-queries-in-campaign.md).
 
    ![](assets/s_advuser_cube_create_a_measure_01.png)
 
-1. The **[!UICONTROL Filter the measure data...]** link lets you restrict the calculation field and only apply it to specific data in the database.
+1. O link **[!UICONTROL Filter the measure data...]** permite restringir o campo de cálculo e somente aplicá-lo aos dados específicos no banco de dados.
 
    ![](assets/s_advuser_cube_create_a_measure_02.png)
 
-1. Enter the label of the measure and add a description, then click **[!UICONTROL Finish]** to create it.
+1. Insira o rótulo da medida e adicione uma descrição, em seguida, clique em **[!UICONTROL Finish]** para criar.
 
 ## Exibição de medidas {#displaying-measures}
 
 É possível configurar a exibição de medidas na tabela dependendo das necessidades:
 
-* the display sequence of measures (refer to [Display sequence](#display-sequence)),
-* the information to show/hide in the report (refer to [Configuring the display](#configuring-the-display))
-* que medidas exibir: percentagem, total, número de casas decimais, etc. (consulte [Alteração do tipo de medida exibido](#changing-the-type-of-measure-displayed)).
+* a sequência de exibição de medidas (consulte [Sequência de exibição](#display-sequence)),
+* as informações para mostrar/ocultar no relatório (consulte [Configuração de exibição](#configuring-the-display)),
+* medidas para exibir: porcentagem, total, número de decimais, etc. (consulte [Alteração do tipo de medida exibida](#changing-the-type-of-measure-displayed)).
 
 ### Sequência de exibição {#display-sequence}
 
-The measures calculated in the cube are configured via the **[!UICONTROL Measures]** button.
+As medidas calculadas no cubo são configuradas por meio do botão **[!UICONTROL Measures]**.
 
 Mova as linhas para alterar a sequência de exibição. No exemplo a seguir, o dado francês é movido para a parte inferior da lista: isso significa que ele será exibido na última coluna.
 
@@ -207,7 +207,7 @@ Mova as linhas para alterar a sequência de exibição. No exemplo a seguir, o d
 
 A configuração de medidas, linhas e colunas pode ser executada individualmente para cada medida ou no geral. Um ícone específico permite acessar a janela de seleção do modo de exibição.
 
-* Clique no **[!UICONTROL Edit the configuration of the pivot table]** ícone para acessar a janela de configuração.
+* Clique no ícone **[!UICONTROL Edit the configuration of the pivot table]** para acessar a janela de configuração.
 
    É possível escolher se exibe ou não os rótulos das medidas, bem como configurar o layout (linhas ou colunas).
 
@@ -227,7 +227,7 @@ Em cada medida, é possível definir a unidade e a formatação a serem aplicada
 
 Após configurar o relatório, é possível salvá-lo e compartilhá-lo com outros operadores.
 
-Para fazer isso, clique no **[!UICONTROL Show the report properties]** ícone e ative a **[!UICONTROL Share this report]** opção.
+Para fazer isso, clique no ícone **[!UICONTROL Show the report properties]** e habilite a opção **[!UICONTROL Share this report]**.
 
 ![](assets/cube_share_option.png)
 
@@ -243,7 +243,7 @@ Para confirmar essas alterações, é preciso salvar o relatório.
 
 Para fazer isso:
 
-1. Clique no **[!UICONTROL Add a filter]** ícone.
+1. Clique no ícone **[!UICONTROL Add a filter]**.
 
    ![](assets/neolap_add_filter.png)
 
@@ -269,7 +269,7 @@ Para fazer isso:
 
 Cada vez que um filtro é modificado (adicionar, remover, alterar), o relatório deve ser recalculado.
 
-Os filtros também podem ser criados com base em uma seleção. To do this, select your source cells, lines and columns, then click the **[!UICONTROL Add a filter]** icon.
+Os filtros também podem ser criados com base em uma seleção. Para fazer isso, selecione as células, linhas e colunas de origem e clique no ícone **[!UICONTROL Add a filter]**.
 
 Para selecionar uma linha, coluna ou célula, clique com o botão esquerdo do mouse nela. Para desmarcar, clique novamente.
 
