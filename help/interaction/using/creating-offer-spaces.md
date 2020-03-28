@@ -14,7 +14,7 @@ discoiquuid: 0fae2149-0980-466d-ac9e-8afec2e278be
 index: y
 internal: n
 snippet: y
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 215e4d1ca78938b38b53cae0357612deebf7727b
 
 ---
@@ -24,9 +24,9 @@ source-git-commit: 215e4d1ca78938b38b53cae0357612deebf7727b
 
 A criação de espaço de oferta só pode ser realizada por um **administrador técnico** com acesso às subpastas de espaço de oferta. Os espaços de oferta só podem ser criados no ambiente de design e são automaticamente duplicados no ambiente live durante a aprovação da oferta.
 
-O conteúdo do catálogo de ofertas está configurado nos espaços de oferta. By default, the content can include the following fields: **[!UICONTROL Title]**, **[!UICONTROL Destination URL]**, **[!UICONTROL Image URL]**, **[!UICONTROL HTML content]** and **[!UICONTROL Text content]**. A sequência de campos é configurada no espaço de oferta.
+O conteúdo do catálogo de ofertas está configurado nos espaços de oferta. Por padrão, o conteúdo pode incluir os seguintes campos: **[!UICONTROL Title]**, **[!UICONTROL Destination URL]**, **[!UICONTROL Image URL]**, **[!UICONTROL HTML content]** e **[!UICONTROL Text content]**. A sequência de campos é configurada no espaço de oferta.
 
-Parâmetros avançados permitem especificar uma chave de identificação de contato (que pode ser feita de vários elementos, o nome e o campo de e-mail ao mesmo tempo, por exemplo). Para obter mais informações, consulte a seção [Apresentação de uma oferta](../../interaction/using/integration-via-javascript--client-side-.md#presenting-an-identified-offer) identificada.
+Parâmetros avançados permitem especificar uma chave de identificação de contato (que pode ser feita de vários elementos, o nome e o campo de e-mail ao mesmo tempo, por exemplo). Para obter mais informações, consulte a seção [Apresentação de uma oferta identificada](../../interaction/using/integration-via-javascript--client-side-.md#presenting-an-identified-offer).
 
 A renderização HTML ou XML é criada por meio de uma função de renderização. A seqüência dos campos definidos na função de renderização deve ser idêntica à sequência configurada no conteúdo.
 
@@ -34,7 +34,7 @@ A renderização HTML ou XML é criada por meio de uma função de renderizaçã
 
 Para criar um novo espaço de oferta, siga as etapas abaixo:
 
-1. Go to the list of offer spaces and click **[!UICONTROL New]**.
+1. Vá para a lista de espaços de oferta e clique em **[!UICONTROL New]**.
 
    ![](assets/offer_space_create_001.png)
 
@@ -42,20 +42,20 @@ Para criar um novo espaço de oferta, siga as etapas abaixo:
 
    ![](assets/offer_space_create_002.png)
 
-1. Check the **[!UICONTROL Enable unitary mode]** box if one of the following cases applies to you:
+1. Marque a caixa **[!UICONTROL Enable unitary mode]** se um dos seguintes casos se aplicar:
 
    * Está usando o Interaction com o Message Center
    * Está usando o modo unitário do Interaction (interações de entrada)
 
-1. Vá para a **[!UICONTROL Content field]** janela e clique em **[!UICONTROL Add]**.
+1. Vá para a janela **[!UICONTROL Content field]** e clique em **[!UICONTROL Add]**.
 
    ![](assets/offer_space_create_003.png)
 
-1. Vá para o **[!UICONTROL Content]** nó e selecione os campos na seguinte ordem: **[!UICONTROL Title]**, então **[!UICONTROL Image URL]**, depois **[!UICONTROL HTML content]**, depois **[!UICONTROL Destination URL]**.
+1. Vá para o nó **[!UICONTROL Content]** e selecione os campos na seguinte ordem: **[!UICONTROL Title]**, **[!UICONTROL Image URL]**, **[!UICONTROL HTML content]** e **[!UICONTROL Destination URL]**.
 
    ![](assets/offer_space_create_004.png)
 
-1. Check the **[!UICONTROL Required]** box to make each field mandatory.
+1. Marque a caixa **[!UICONTROL Required]** para tornar cada campo obrigatório.
 
    >[!NOTE]
    >
@@ -69,12 +69,12 @@ Para criar um novo espaço de oferta, siga as etapas abaixo:
 
    ![](assets/offer_space_create_006.png)
 
-1. Vá para a **[!UICONTROL HTML rendering]** guia e selecione **[!UICONTROL Overload the HTML rendering function]**.
+1. Vá para a guia **[!UICONTROL HTML rendering]** e selecione **[!UICONTROL Overload the HTML rendering function]**.
 1. Insira a função de renderização.
 
    ![](assets/offer_space_create_007.png)
 
-Se necessário, é possível sobrecarregar as funções de renderização XML para interações de entrada. Também é possível sobrecarregar as funções de renderização de texto e HTML para interações de saída. For more on this, refer to [About inbound channels](../../interaction/using/about-inbound-channels.md).
+Se necessário, é possível sobrecarregar as funções de renderização XML para interações de entrada. Também é possível sobrecarregar as funções de renderização de texto e HTML para interações de saída. Para obter mais informações, consulte [Sobre canais de entrada](../../interaction/using/about-inbound-channels.md).
 
 ## Status da apresentação de oferta {#offer-proposition-statuses}
 
@@ -93,7 +93,7 @@ O Interaction vem com os seguintes valores que podem ser usados para qualificar 
 * **[!UICONTROL Generated]**.
 * **[!UICONTROL Interested]**.
 * **[!UICONTROL Presented]**.
-* **[!UICONTROL Rejected]**.
+* **[!UICONTROL Rejeitada]**.
 
 Esses valores não são aplicados por padrão: eles precisam ser configurados.
 
@@ -103,13 +103,13 @@ Esses valores não são aplicados por padrão: eles precisam ser configurados.
 
 ### Configuração do status quando a proposta é criada {#configuring-the-status-when-the-proposition-is-created}
 
-Quando uma apresentação de oferta é criada pelo mecanismo do Interaction seu status é alterado, seja uma interação de entrada ou de saída. The choice between these two values depends on the way the offer spaces were configured in the **[!UICONTROL Design]** environment
+Quando uma apresentação de oferta é criada pelo mecanismo do Interaction seu status é alterado, seja uma interação de entrada ou de saída. A escolha entre esses dois valores depende da maneira como os espaços de oferta foram configurados no ambiente **[!UICONTROL Design]**.
 
 Para cada espaço, é possível configurar o status que deseja aplicar quando uma proposta é criada, dependendo das informações que deseja exibir nos relatórios de ofertas.
 
 Para fazer isso, realize o seguinte processo:
 
-1. Go to the **[!UICONTROL Storage]** tab of the desired space.
+1. Vá para a guia **[!UICONTROL Storage]** do espaço desejado.
 1. Selecione o status que deseja aplicar à proposta quando ela for criada.
 
    ![](assets/offer_update_status_001.png)
@@ -120,14 +120,14 @@ Depois que uma apresentação de oferta for aceita, é possível usar um dos val
 
 Para fazer isso, realize o seguinte processo:
 
-1. Go to the **[!UICONTROL Storage]** tab of the desired space.
+1. Vá para a guia **[!UICONTROL Storage]** do espaço desejado.
 1. Selecione o status que deseja aplicar à proposta quando for aceita.
 
    ![](assets/offer_update_status_002.png)
 
 **Interação de entrada**
 
-The **[!UICONTROL Storage]** tab lets you define statuses for **proposed** and **accepted** offer propositions only. Para interação de entrada, o status das propostas de oferta deve ser especificado diretamente na URL para chamar o mecanismo de oferta, em vez da interface. Dessa forma, é possível especificar qual status aplicar em outros casos, por exemplo, se uma apresentação de oferta for rejeitada.
+A guia **[!UICONTROL Storage]** permite definir os status somente para propostas de ofertas **proposed** e **accepted**. Para interação de entrada, o status das propostas de oferta deve ser especificado diretamente na URL para chamar o mecanismo de oferta, em vez da interface. Dessa forma, é possível especificar qual status aplicar em outros casos, por exemplo, se uma apresentação de oferta for rejeitada.
 
 ```
 <BASE_URL>?a=UpdateStatus&p=<PRIMARY_KEY_OF_THE_PROPOSITION>&st=<NEW_STATUS_OF_THE_PROPOSITION>&r=<REDIRECT_URL>
@@ -139,17 +139,17 @@ Por exemplo, a proposta (identificador **40004**) que corresponde à oferta **se
 <BASE_URL>?a=UpdateStatus&p=<40004>&st=<3>&r=<"http://www.neobank.com/insurance/subscribe.html">
 ```
 
-As soon as a visitor clicks the offer, and therefore the URL, the **[!UICONTROL Accepted]** status (value **3**) is applied to the proposition and the visitor is redirected to a new page of the **Neobank** site to take out the insurance contract.
+Assim que um visitante clica na oferta, e portanto na URL, o status **[!UICONTROL Accepted]** (valor **3**) é aplicado à proposta e o visitante é redirecionado para uma nova página do site **Neobank** para apresentar o contrato de seguro.
 
 >[!NOTE]
 >
 >Se desejar especificar outro status na url (por exemplo, se uma apresentação de oferta for rejeitada), use o valor correspondente ao status desejado. Exemplo: **[!UICONTROL Rejected]** = &quot;5&quot;, **[!UICONTROL Presented]** = &quot;1&quot; e assim por diante.
 >
->Statuses and their values can be retrieved in the **[!UICONTROL Offer propositions (nms)]** data schema. Para obter mais informações, consulte [esta página](../../configuration/using/data-schemas.md).
+>Os status e seus valores podem ser recuperados no schema de dados **[!UICONTROL Offer propositions (nms)]**. Para obter mais informações, consulte [esta página](../../configuration/using/data-schemas.md).
 
 **Interação de saída**
 
-In case of an outbound interaction, you can automatically apply the **[!UICONTROL Interested]** status to an offer proposition when the delivery contains a link. Basta adicionar o valor **_urlType=&quot;11&quot;** ao link:
+No caso de uma interação de saída, é possível aplicar automaticamente o status **[!UICONTROL Interested]** a uma apresentação de oferta quando o delivery contiver um link. Basta adicionar o valor **_urlType=&quot;11&quot;** ao link:
 
 ```
 <a _urlType="11" href="<DEST_URL>">Link inserted into the delivery</a>
@@ -165,4 +165,4 @@ Se um recipient não estiver qualificado para ofertas, isso será mostrado na vi
 
 ![](assets/offer_space_overview_001.png)
 
-A visualização pode ignorar contextos quando eles são restritos a um espaço. This is the case when the interaction schema has been extended to add fields referenced in a space using an inbound channel (for more on this, refer to [Extension example](../../interaction/using/extension-example.md)).
+A visualização pode ignorar contextos quando eles são restritos a um espaço. Este é o caso quando o schema de interação foi estendido para adicionar campos referenciados em um espaço usando um canal de entrada (para saber mais sobre isso, consulte [Exemplo de extensão](../../interaction/using/extension-example.md)).
