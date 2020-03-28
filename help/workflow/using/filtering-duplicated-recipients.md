@@ -12,7 +12,7 @@ discoiquuid: 7e5605c8-78f2-4011-b317-96a59c699848
 index: y
 internal: n
 snippet: y
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: cf7c90f0ea9fbce3a4fd53f24189617cbd33fc40
 
 ---
@@ -24,8 +24,8 @@ Neste exemplo, queremos filtrar os recipients que aparecem duas vezes ou mais em
 
 Para criar este exemplo, aplique as seguintes etapas:
 
-1. Drag and drop a **[!UICONTROL Query]** activity in a workflow and open the activity.
-1. Click **[!UICONTROL Edit query]** and set the target and filtering dimensions to **[!UICONTROL Recipients]**.
+1. Arraste e solte uma atividade **[!UICONTROL Query]** em um workflow e abra a atividade.
+1. Clique em **[!UICONTROL Edit query]** e defina as dimensões do filtro e do direcionamento para **[!UICONTROL Recipients]**.
 
    ![](assets/query_recipients_1.png)
 
@@ -33,12 +33,12 @@ Para criar este exemplo, aplique as seguintes etapas:
 
    ![](assets/query_recipients_2.png)
 
-1. Defina a condição de filtro a seguir para direcionar sua delivery. Choose **[!UICONTROL Internal name]** in the Expression column and **[!UICONTROL equal to]** in the Operator column.
+1. Defina a condição de filtro a seguir para direcionar sua delivery. Escolha **[!UICONTROL Internal name]** na coluna Expression e **[!UICONTROL equal to]** na coluna Operator.
 1. Na coluna Valor, adicione o nome interno da delivery desejada.
 
    ![](assets/query_recipients_3.png)
 
-1. With an **[!UICONTROL AND]** operator, repeat the same operations to target other deliveries.
+1. Com um operador **[!UICONTROL AND]**, repita as mesmas operações para selecionar outros deliveries.
 
    ![](assets/query_recipients_4.png)
 
