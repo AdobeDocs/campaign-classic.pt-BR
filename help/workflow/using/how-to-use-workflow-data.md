@@ -14,7 +14,7 @@ discoiquuid: ec3844ca-8d80-4ddc-b08c-f18a6919bb28
 index: y
 internal: n
 snippet: y
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 20f835c357d016643ea1f3209ee4dfb6d3239f90
 
 ---
@@ -30,27 +30,27 @@ Todos os dados coletados podem ser usados para atualizar o banco de dados ou nos
 
 Os dados do banco de dados do Adobe Campaign e as listas existentes podem ser atualizados usando duas atividades dedicadas:
 
-* The **[!UICONTROL List update]** activity lets you store worktables in a datalist.
+* A atividade de **[!UICONTROL List update]** permite armazenar worktables em um DataList.
 
    Você pode selecionar uma lista existente ou criar uma. Nesse caso, o nome e possivelmente a pasta de registro são calculados.
 
    ![](assets/s_user_create_list.png)
 
-   Consulte a Atualização [da lista](../../workflow/using/list-update.md).
+   Consulte [Atualização da lista](../../workflow/using/list-update.md).
 
-* The **[!UICONTROL Update data]** activity performs a mass update of the fields in the database.
+* A atividade **[!UICONTROL Update data]** realiza uma atualização em massa dos campos no banco de dados.
 
-   For more on this, refer to [Update data](../../workflow/using/update-data.md).
+   Para obter mais informações, consulte [Atualização de dados](../../workflow/using/update-data.md).
 
 ### Gestão de assinatura/unsubscription {#subscription-unsubscription-management}
 
-To find out about subscribing and unsubscribing recipients to an information service via a workflow, refer to [Subscription Services](../../workflow/using/subscription-services.md).
+Para saber mais sobre subscrição e cancelamento de subscrição de recipients de um serviço de informações via workflow, consulte [Serviços de subscrição](../../workflow/using/subscription-services.md).
 
 ## Envio por workflow {#sending-via-a-workflow}
 
 ### Atividade de delivery {#delivery-activity}
 
-The delivery activity is detailed in [Delivery](../../workflow/using/delivery.md).
+A atividade de delivery é detalhada em [Delivery](../../workflow/using/delivery.md).
 
 ### Enriquecimento e target de deliveries {#enriching-and-targeting-deliveries}
 
@@ -64,13 +64,13 @@ Além dos campos de personalização habituais, você pode adicionar campos de p
 
 ![](assets/s_advuser_using_additional_data.png)
 
-Os dados contidos na tabela de workflow são identificados pelo seu nome: ele é sempre composto pelo link **targetData** . For more on this, refer to [Target data](../../workflow/using/executing-a-workflow.md#target-data).
+Os dados contidos na tabela de workflow são identificados pelo seu nome: ele é sempre composto pelo link **targetData** . Para obter mais informações, consulte [Dados de target](../../workflow/using/executing-a-workflow.md#target-data).
 
 Dentro da estrutura de delivery de email, os campos de personalização também podem usar dados da extensão do target executada nos estágios de workflows para construção do target, conforme mostrado no exemplo abaixo:
 
 ![](assets/s_advuser_add_data_email.png)
 
-Se um código de segmento for especificado em uma atividade de target, ele será adicionado a uma coluna específica da tabela de workflow e será oferecido junto com os campos de personalização. To display all personalization fields, click the **[!UICONTROL Target extension > Other...]** link accessible via the personalization button.
+Se um código de segmento for especificado em uma atividade de target, ele será adicionado a uma coluna específica da tabela de workflow e será oferecido junto com os campos de personalização. Para exibir todos os campos de personalização, clique no link **[!UICONTROL Target extension > Other...]** acessível por meio do botão de personalização.
 
 ![](assets/s_advuser_segment_code_select.png)
 
@@ -78,7 +78,7 @@ Se um código de segmento for especificado em uma atividade de target, ele será
 
 ### Compactação ou criptografia de um arquivo {#zipping-or-encrypting-a-file}
 
-O Adobe Campaign permite exportar arquivos compactados ou criptografados. When defining an export through a **[!UICONTROL Data extraction (file)]** activity, you can define a post-processing to zip or to encrypt the file.
+O Adobe Campaign permite exportar arquivos compactados ou criptografados. Ao definir uma exportação por meio da atividade **[!UICONTROL Data extraction (file)]**, é possível definir um pós-processamento para compactar ou criptografar o arquivo.
 
 Para fazer isso:
 
@@ -94,4 +94,4 @@ function encryptFile(file) {
 }
 ```
 
-Ao importar um arquivo, você também pode descompactar ou descriptografar. See [Unzipping or decrypting a file before processing](../../workflow/using/importing-data.md#unzipping-or-decrypting-a-file-before-processing).
+Ao importar um arquivo, você também pode descompactar ou descriptografar. Consulte [Descompactação ou descriptografia de um arquivo antes do processamento](../../workflow/using/importing-data.md#unzipping-or-decrypting-a-file-before-processing)
