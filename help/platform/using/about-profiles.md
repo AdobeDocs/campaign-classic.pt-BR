@@ -14,7 +14,7 @@ discoiquuid: 5addada8-0185-488f-9825-83f60981c139
 index: y
 internal: n
 snippet: y
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 0ce6e5277c32bc18c20dca62e5b276f654d1ace5
 
 ---
@@ -44,11 +44,11 @@ Os principais métodos para criar perfis de destinatários são os seguintes:
 
 >[!NOTE]
 >
->To find out how files and web forms are imported, refer to [Generic imports and exports](../../platform/using/generic-imports-and-exports.md).
+>Para saber como arquivos e formulários web são importados, consulte [Importações e exportações genéricas](../../platform/using/generic-imports-and-exports.md).
 
 ## Profiles and targets {#profiles-and-targets}
 
-The **[!UICONTROL Profiles and targets]** link lets you display recipients stored in Adobe Campaign database. É possível criar um novo destinatário, editar um destinatário existente e acessar o perfil dele. Para obter mais informações, consulte [esta página](../../platform/using/editing-a-profile.md).
+O link **[!UICONTROL Profiles and targets]** permite exibir os destinatários armazenados no banco de dados do Adobe Campaign. É possível criar um novo destinatário, editar um destinatário existente e acessar o perfil dele. Para obter mais informações, consulte [esta página](../../platform/using/editing-a-profile.md).
 
 ![](assets/d_ncs_user_interface_target_link.png)
 
@@ -57,30 +57,30 @@ Ele também dá acesso a:
 * listas; consulte [Criação e gerenciamento de listas](../../platform/using/creating-and-managing-lists.md),
 * serviços de assinatura; consulte [esta página](../../delivery/using/managing-subscriptions.md);
 * aplicativos web; consulte [esta página](../../web/using/about-web-applications.md);
-* importações e exportações (empregos); referência às importações e exportações [genéricas](../../platform/using/generic-imports-and-exports.md),
+* importações e exportações (tarefas); consulte [Importações e exportações genéricas](../../platform/using/generic-imports-and-exports.md),
 * fluxos de trabalho de direcionamento; consulte [esta página](../../workflow/using/building-a-workflow.md#implementation-steps-).
 
 A página de destinatários permite executar operações frequentes em perfis: edições, atualizações, adições, exclusões e classificações.
 
 Para manipulações de perfil mais avançadas, é necessário editar a árvore do Adobe Campaign. Para fazer isso, clique no link **[!UICONTROL Explorer]** na página inicial do Adobe Campaign.
 
-By default, recipients are stored in the **[!UICONTROL Profiles and Targets > Recipients]** node of the tree. É possível criar destinatários nesta tela, bem como:
+Por padrão, os destinatários são armazenados no nó **[!UICONTROL Profiles and Targets > Recipients]** da árvore. É possível criar destinatários nesta tela, bem como:
 
-* sort and filter the profiles of the database; see [Filtering options](../../platform/using/filtering-options.md),
-* move, copy or delete profiles from the database; see [Managing profiles](../../platform/using/managing-profiles.md),
+* classificar e filtrar os perfis do banco de dados; consulte [Opções de filtragem](../../platform/using/filtering-options.md),
+* mover, copiar ou excluir perfis do banco de dados; consulte [Gerenciamento de perfis](../../platform/using/managing-profiles.md),
 * atualizar perfis; consulte [Atualização de dados](../../platform/using/updating-data.md),
 * destinatários da exportação; consulte [Exportação e importação de perfis](../../platform/using/exporting-and-importing-profiles.md),
-* criar grupos de destinatários; consulte [Criação e gerenciamento de listas](../../platform/using/creating-and-managing-lists.md).
+* criar grupos de recipients; consulte [Criação e gerenciamento de listas](../../platform/using/creating-and-managing-lists.md).
 
 Para acessar funcionalidades e configurações avançadas, clique no ícone **[!UICONTROL Explorer]**.
 
 ![](assets/d_ncs_user_interface01.png)
 
-O layout geral do Adobe Campaign explorer é apresentado em [Uso do Adobe Campaign explorer](../../platform/using/adobe-campaign-workspace.md#using-adobe-campaign-explorer).
+O layout geral do Adobe Campaign Explorer é apresentado em [Uso do Adobe Campaign Explorer](../../platform/using/adobe-campaign-workspace.md#using-adobe-campaign-explorer).
 
 >[!NOTE]
 >
->Também é possível exibir uma visualização avançada dessa lista na árvore do Adobe Campaign clicando no link **[!UICONTROL Profiles and targets > Recipients]**. A exibição da lista pode ser configurada para atender às suas necessidades. É possível adicionar ou excluir colunas, definir a ordem das colunas, classificar dados etc. A configuração de exibição de lista é descrita em [Uso do Adobe Campaign Explorer](../../platform/using/adobe-campaign-workspace.md#using-adobe-campaign-explorer).
+>Também é possível exibir uma visualização avançada dessa lista na árvore do Adobe Campaign clicando no link **[!UICONTROL Profiles and targets > Recipients.]** A exibição da lista pode ser configurada para atender às suas necessidades. É possível adicionar ou excluir colunas, definir a ordem das colunas, classificar dados etc. A configuração de exibição de lista é descrita em [Uso do Adobe Campaign Explorer](../../platform/using/adobe-campaign-workspace.md#using-adobe-campaign-explorer).
 >
 >Também é possível definir as visualizações de destinatários. Para obter mais informações sobre essa funcionalidade, consulte [Pastas e exibições](../../platform/using/access-management.md#folders-and-views).
 
@@ -96,8 +96,8 @@ A cobrança só afeta perfis que estão **ativos**. Um perfil é considerado ati
 >
 >Os canais Facebook e Twitter não são considerados.
 
-You can have an overview of the **[!UICONTROL Number of active profiles]** from the **[!UICONTROL Administration > Campaign Management > Customer metrics]** menu.
+É possível ter uma visão geral do **[!UICONTROL Number of active profiles]** no menu **[!UICONTROL Administration > Campaign Management > Customer metrics]**.
 
-The actual count is performed by the **[!UICONTROL Number of active billing profiles]** (**[!UICONTROL billingActiveContactCount]**) [technical workflow](../../workflow/using/delivery.md), which runs every day and adds the new data to the existing report for the current period in the **[!UICONTROL Customer metrics]** menu. Cada período dura 12 meses.
+A contagem real é executada pelo [fluxo de trabalho técnico](../../workflow/using/delivery.md) **[!UICONTROL Number of active billing profiles]** (**[!UICONTROL billingActiveContactCount]**), que é executado todos os dias e adiciona os novos dados ao relatório existente para o período atual no menu **[!UICONTROL Customer metrics.]** Cada período dura 12 meses.
 
 Os perfis excluídos durante a preparação da entrega (regras de tipologia, quarentenas) não são levados em consideração. Um perfil que foi visado por várias entregas será contado apenas uma vez.
