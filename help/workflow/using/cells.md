@@ -14,7 +14,7 @@ discoiquuid: f7187d42-56e9-4681-b172-22abd43ecd29
 index: y
 internal: n
 snippet: y
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 20f835c357d016643ea1f3209ee4dfb6d3239f90
 
 ---
@@ -22,15 +22,15 @@ source-git-commit: 20f835c357d016643ea1f3209ee4dfb6d3239f90
 
 # Células{#cells}
 
-The **[!UICONTROL Cells]** activity provides a view of the various subsets in the form of data columns. Ela facilita a manipulação de subconjunto e também foi projetada para incentivar as possibilidades de personalização.
+A atividade **[!UICONTROL Cells]** fornece uma visualização dos vários subconjuntos de colunas de dados. Ela facilita a manipulação de subconjunto e também foi projetada para incentivar as possibilidades de personalização.
 
 ![](assets/wf_split_cells.png)
 
-Essa atividade pode ser configurada para inserir parâmetros específicos com base nas necessidades do usuário. By default, the detail of each subset is detailed in a dedicated window via the **[!UICONTROL Selection]** and **[!UICONTROL Advanced]** tabs. In the example below, the form has been modified: a **[!UICONTROL Data]** tab has been added to enable the association of an offer and a priority level for each subset.
+Essa atividade pode ser configurada para inserir parâmetros específicos com base nas necessidades do usuário. Por padrão, os detalhes de cada subconjunto são detalhados em uma janela dedicada por meio das guias **[!UICONTROL Selection]** e **[!UICONTROL Advanced]**. No exemplo abaixo, o formulário foi modificado: uma guia **[!UICONTROL Data]** foi adicionada para habilitar a associação de uma oferta e um nível de prioridade para cada subconjunto.
 
 ![](assets/wf_split_cells_with_customization.png)
 
-For this configuration, the following information was added to the workflow form (in the **[!UICONTROL Administration > Configurations > Input forms]** node of the Adobe Campaign tree):
+Para essa configuração, as seguintes informações foram adicionadas ao formulário do fluxo de trabalho (no nó **[!UICONTROL Administration > Configurations > Input forms]** da árvore do Adobe Campaign):
 
 ```
 <container img="nms:miniatures/mini-enrich.png" label="Data">
