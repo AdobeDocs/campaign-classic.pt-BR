@@ -12,7 +12,7 @@ discoiquuid: 7e5605c8-78f2-4011-b317-96a59c699848
 index: y
 internal: n
 snippet: y
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: cf7c90f0ea9fbce3a4fd53f24189617cbd33fc40
 
 ---
@@ -24,7 +24,7 @@ Neste exemplo, devemos executar uma query para localizar todos os domínios de e
 
 * Qual tabela precisa ser selecionada?
 
-   A tabela do recipient (nms:recipient)
+   A tabela de recipient (nms:recipient)
 
 * Campos a serem selecionados nas colunas de saída?
 
@@ -32,40 +32,40 @@ Neste exemplo, devemos executar uma query para localizar todos os domínios de e
 
 * Agrupamento de dados?
 
-   Com base no domínio de e-mail com uma contagem de chaves primárias acima de 30. This operation is carried out with the **[!UICONTROL Group by + Having]** option. **[!UICONTROL Group by + Having]** permite agrupar dados (&quot;grupo por&quot;) e fazer uma seleção do que foi agrupado (&quot;tendo&quot;).
+   Com base no domínio de e-mail com uma contagem de chaves primárias acima de 30. Esta operação é executada com a opção **[!UICONTROL Group by + Having]**. O **[!UICONTROL Group by + Having]** permite agrupar dados (&quot;agrupar por&quot;) e criar uma seleção do que foi agrupado (&quot;ter&quot;).
 
 Para criar este exemplo, aplique as seguintes etapas:
 
-1. Open the **[!UICONTROL Generic query editor]** and choose the Recipient table (**nms:recipient**).
+1. Abra o **[!UICONTROL Generic query editor]** e escolha a tabela &quot;Recipients&quot; (**nms:recipient**).
 
    ![](assets/query_editor_02.png)
 
-1. Na **[!UICONTROL Data to extract]** janela, selecione os campos **[!UICONTROL Email domain]** e **[!UICONTROL Primary key]** . Execute uma contagem no **[!UICONTROL Primary key]** campo.
+1. Na janela **[!UICONTROL Data to extract]**, selecione os campos **[!UICONTROL Email domain]** e **[!UICONTROL Primary key]**. Execute uma contagem no campo **[!UICONTROL Primary key]**.
 
    Para obter mais informações sobre a contagem da chave principal, consulte [this section](../../platform/using/defining-filter-conditions.md#building-expressions).
 
-1. Marque a **[!UICONTROL Handle groupings (GROUP BY + HAVING)]** caixa.
+1. Marque a caixa **[!UICONTROL Handle groupings (GROUP BY + HAVING)]**.
 
    ![](assets/query_editor_nveau_29.png)
 
-1. In the **[!UICONTROL Sorting]** window, sort email domains in descending order. Para fazer isso, verifique **[!UICONTROL Yes]** a **[!UICONTROL Descending sort]** coluna. Clique em **[!UICONTROL Next]**.
+1. Na janela **[!UICONTROL Sorting]**, classifique os domínios de email em ordem decrescente. Para fazer isso, marque **[!UICONTROL Yes]** na coluna **[!UICONTROL Descending sort]**. Clique em **[!UICONTROL Next]**.
 
    ![](assets/query_editor_nveau_70.png)
 
-1. Em **[!UICONTROL Data filtering]**, selecione **[!UICONTROL Filtering conditions]**. Vá para a **[!UICONTROL Target elements]** janela e clique em **[!UICONTROL Next]**.
-1. Na **[!UICONTROL Data grouping]** janela, selecione o **[!UICONTROL Email domain]** clicando em **[!UICONTROL Add]**.
+1. Em **[!UICONTROL Data filtering]**, selecione **[!UICONTROL Filtering conditions]**. Vá para a janela **[!UICONTROL Target elements]** e clique em **[!UICONTROL Next]**.
+1. Na janela **[!UICONTROL Data grouping]**, selecione o **[!UICONTROL Email domain]** clicando em **[!UICONTROL Add]**.
 
-   This data grouping window is only displayed if the **[!UICONTROL Handle groupings (GROUP BY + HAVING]**) box was checked.
+   Esta janela de agrupamento de dados é exibida somente se a caixa **[!UICONTROL Handle groupings (GROUP BY + HAVING]**) foi marcada.
 
    ![](assets/query_editor_blacklist_04.png)
 
-1. In the **[!UICONTROL Grouping condition]** window, indicate a primary key count greater than 30 since we only want email domains targeted more than 30 times to be returned as results.
+1. Na janela **[!UICONTROL Grouping condition]**, indique uma contagem de chaves primária maior que 30, pois desejamos que apenas domínios de e-mail alcançados mais de 30 vezes sejam retornados como resultados.
 
-   This window appears when the **[!UICONTROL Manage groupings (GROUP BY + HAVING)]** box was checked: this is where the grouping result is filtered (HAVING).
+   Esta janela aparece quando a caixa **[!UICONTROL Manage groupings (GROUP BY + HAVING)]** foi marcada: aqui é onde o resultado do agrupamento é filtrado (HAVING).
 
    ![](assets/query_editor_blacklist_05.png)
 
-1. Na **[!UICONTROL Data formatting]** janela, clique em **[!UICONTROL Next]**: nenhuma formatação é necessária aqui.
-1. In the data preview window, click **[!UICONTROL Launch data preview]**: here, three different email domains targeted over 30 times are returned.
+1. Na janela **[!UICONTROL Data formatting]**, clique em **[!UICONTROL Next]**: nenhuma formatação é necessária aqui.
+1. Na janela de visualização de dados, clique em **[!UICONTROL Launch data preview]**: aqui, três domínios de e-mail diferentes alcançados mais de 30 vezes são retornados.
 
    ![](assets/query_editor_blacklist_06.png)
