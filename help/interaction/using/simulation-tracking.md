@@ -14,7 +14,7 @@ discoiquuid: a557026c-3b6a-4302-a042-0015449eaca5
 index: y
 internal: n
 snippet: y
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 20f835c357d016643ea1f3209ee4dfb6d3239f90
 
 ---
@@ -22,7 +22,7 @@ source-git-commit: 20f835c357d016643ea1f3209ee4dfb6d3239f90
 
 # Rastreamento de simulação{#simulation-tracking}
 
-Once the simulation is finished, you can analyze its result via the **[!UICONTROL Results]** tab which is added to the simulation window and the **[!UICONTROL Breakdown of offers by rank]** report, available via in the simulation dashboard.
+Quando a simulação for concluída, é possível analisar seu resultado usando a guia **[!UICONTROL Results]** que é adicionada à janela de simulação e o relatório **[!UICONTROL Breakdown of offers by rank]**, disponível no painel de simulação.
 
 Os resultados da simulação contêm uma análise de propostas por classificação e por recipient. Os eixos de relatório também são levados em conta e mostrados nesta guia.
 
