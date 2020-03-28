@@ -14,7 +14,7 @@ discoiquuid: ed4afa5e-c184-4c8e-a086-41d87b863190
 index: y
 internal: n
 snippet: y
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: d30de91002862b664249c5a704b7c0f521dd30f2
 
 ---
@@ -26,7 +26,7 @@ Esta seção destina-se às pessoas responsáveis pela configuração do gestor 
 
 Isso permite o entendimento de como adaptar o modelo de dados padrão à natureza específica de uma tabela de transações para o Adobe Campaign com a tabela de individuais. Esta tabela pode coincidir com a tabela de individuais disponíveis no Adobe Campaign ou com uma tabela diferente.
 
-The measurement hypothesis is launched by the operation process workflow ( **[!UICONTROL operationMgt]** ). Cada hipótese representa um processo separado que é executado de forma assíncrona com um status de execução (Editando, Pendente, Concluído, Falhou, etc.) e controlado por um programador que gerencia as limitações de prioridade, a restrição do número de processos simultâneos, a página de baixa atividade e a execução automática com frequência.
+A hipótese de medição é iniciada pelo workflow do processo de operação (**[!UICONTROL operationMgt]** ). Cada hipótese representa um processo separado que é executado de forma assíncrona com um status de execução (Editando, Pendente, Concluído, Falhou, etc.) e controlado por um programador que gerencia as limitações de prioridade, a restrição do número de processos simultâneos, a página de baixa atividade e a execução automática com frequência.
 
 ## Configurar schemas {#configuring-schemas}
 
@@ -38,9 +38,9 @@ The measurement hypothesis is launched by the operation process workflow ( **[!U
 
 ### Schemas padrão {#standard-schemas}
 
-The out-of-the-box **[!UICONTROL nms:remaMatch]** schema contains the reaction log table, i.e. the relation between individuals, hypothesis and transaction table. Esse schema deve ser usado como um schema de herança para a tabela de destino final dos logs de reação.
+O schema pronto para uso **[!UICONTROL nms:remaMatch]** contém a tabela do log de reação, ou seja, a relação entre individuais, hipótese e tabela de transação. Esse schema deve ser usado como um schema de herança para a tabela de destino final dos logs de reação.
 
-The **[!UICONTROL nms:remaMatchRcp]** schema also comes as a standard, it contains the storage of reaction logs for Adobe Campaign recipients ( **[!UICONTROL nms:recipient]** ). Para ser usado, é necessário estender para realizar o mapeamento para uma tabela de transação (onde contém compras, etc.).
+O schema **[!UICONTROL nms:remaMatchRcp]** também vem como um padrão, pois contém o armazenamento dos logs de reação para os recipients do Adobe Campaign (**[!UICONTROL nms:recipient]** ). Para ser usado, é necessário estender para realizar o mapeamento para uma tabela de transação (onde contém compras, etc.).
 
 ### Tabelas e detalhes de transações {#transaction-tables-and-transaction-details}
 
@@ -62,22 +62,22 @@ O schema a seguir mostra associações entre diferentes tabelas após a conclus�
 
 ### Gestor de resposta com os recipients do Adobe Campaign {#response-management-with-adobe-campaign-recipients}
 
-In this example, we will integrate a table of purchases in our response management module using the Adobe Campaign recipient table ( **[!UICONTROL nms:recipient]** ).
+Neste exemplo, uma tabela de compras foi integrada ao módulo de gestor de respostas usando a tabela de recipients do Adobe Campaign (**[!UICONTROL nms:recipient]** ).
 
-The table of response logs on a **[!UICONTROL nms:remaMatchRcp]** recipient is extended to add a link to the purchase table schema. In the following example, the purchase table is called **demo:purchase**.
+A tabela de logs de resposta em um recipient **[!UICONTROL nms:remaMatchRcp]** é estendida para adicionar um link ao schema da tabela de compras. No exemplo a seguir, a tabela de compra é chamada de **demo:purchase**.
 
-1. Pelo Adobe Campaign Explorer, selecione **[!UICONTROL Administration]** > **[!UICONTROL Campaign management]** > **[!UICONTROL Target mappings]**.
-1. Clique com o botão direito do mouse em **Destinatário** e selecione **[!UICONTROL Actions]** e **[!UICONTROL Modify the options of the targeting dimensions]**.
+1. Por meio do explorador do Adobe Campaign, selecione **[!UICONTROL Administration]** > **[!UICONTROL Campaign management]** > **[!UICONTROL Target mappings]**.
+1. Clique com o botão direito do mouse em **Recipient** e selecione **[!UICONTROL Actions]** e **[!UICONTROL Modify the options of the targeting dimensions]**.
 
    ![](assets/delivery_mapping1.png)
 
-1. Você pode personalizar o **[!UICONTROL Extension namespace]** na próxima janela e clicar em **[!UICONTROL Next]**.
+1. É possível personalizar o **[!UICONTROL Extension namespace]** na próxima janela e, em seguida, clique em **[!UICONTROL Next]**.
 
    ![](assets/delivery_mapping2.png)
 
-1. Na **[!UICONTROL Response management]** categoria, verifique se a **[!UICONTROL Generate a storage schema for reactions]** caixa está marcada.
+1. Na categoria **[!UICONTROL Response management]**, verifique se a opção **[!UICONTROL Generate a storage schema for reactions]** está marcada.
 
-   Then click **[!UICONTROL Define additional fields...]** to select the related transaction tables and add the desired fields to the extension of the nms:remaMatchRcp schema.
+   Em seguida, clique em **[!UICONTROL Define additional fields...]** para selecionar as tabelas de transações relacionadas e adicionar os campos desejados à extensão do schema nms:remaMatchRcp.
 
    ![](assets/delivery_mapping3.png)
 
@@ -109,11 +109,11 @@ name="remaMatchRcp" namespace="cus">
 
 Neste exemplo, uma tabela de compra é integrada ao módulo de gestor de resposta com uma tabela de individuais que não é a tabela de recipient disponível no Adobe Campaign.
 
-* Creating a new response log schema derived from the **[!UICONTROL nms:remaMatch]** schema.
+* Criar um novo schema de log de resposta derivado do schema **[!UICONTROL nms:remaMatch]**.
 
-   Since the table of individuals is different from the table of Adobe Campaign recipients, it is necessary to create a new schema of the response logs based on the **[!UICONTROL nms:remaMatch]** schema. Em seguida, insira os links para os logs do delivery e a tabela de compras.
+   Como a tabela de indivíduos é diferente da tabela de recipients do Adobe Campaign, é necessário criar um novo schema dos logs de resposta com base no schema **[!UICONTROL nms:remaMatch]**. Em seguida, insira os links para os logs do delivery e a tabela de compras.
 
-   In the following example, we will use the **demo:broadLogPers** schema and the **demo:purchase** transaction table:
+   No exemplo a seguir, é usado o schema **demo:broadLogPers** e a tabela de transações **demo:purchase**:
 
    ```
    <srcSchema desc="Linking of a recipient transaction to a hypothesis"    
@@ -132,7 +132,7 @@ Neste exemplo, uma tabela de compra é integrada ao módulo de gestor de respost
    </srcSchema>
    ```
 
-* Modifying the hypothesis form in the **[!UICONTROL nms:remaHypothesis]** schema.
+* Modificação do formulário de hipótese no schema **[!UICONTROL nms:remaHypothesis]**.
 
    Por padrão, a lista de logs de resposta é visível nos logs de recipient. Portanto, é possível modificar o formulário de hipótese para exibir os novos logs de resposta criados durante a etapa anterior.
 
