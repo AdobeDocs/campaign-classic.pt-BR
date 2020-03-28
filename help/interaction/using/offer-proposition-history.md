@@ -14,7 +14,7 @@ discoiquuid: 82e67697-5dc7-4013-a00d-be8cdad31354
 index: y
 internal: n
 snippet: y
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 215e4d1ca78938b38b53cae0357612deebf7727b
 
 ---
@@ -28,15 +28,15 @@ Depois que as apresentações da oferta são feitas, é possível visualizar o h
 >
 >Essa funcionalidade só é visível online e somente no gerenciador de delivery.
 
-* No nível da oferta, na **[!UICONTROL Edit]** guia, clique em **[!UICONTROL Propositions]**.
+* No nível da oferta, clique em **[!UICONTROL Propositions]** na guia **[!UICONTROL Edit]**.
 
    ![](assets/offer_followup_006.png)
 
-* From a recipient&#39;s profile, click the **[!UICONTROL Propositions]** tab.
+* A partir do perfil de um destinatário, clique na guia **[!UICONTROL Propositions]**.
 
    ![](assets/offer_followup_002.png)
 
-* At the offer space level, click the **[!UICONTROL Propositions]** tab.
+* No nível de espaço de oferta, clique na guia **[!UICONTROL Propositions]**.
 
    ![](assets/offer_space_prop_001_b.png)
 
