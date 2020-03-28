@@ -14,7 +14,7 @@ discoiquuid: 811a42a4-552c-49cb-bffd-7e124ef83735
 index: y
 internal: n
 snippet: y
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 215e4d1ca78938b38b53cae0357612deebf7727b
 
 ---
@@ -69,7 +69,7 @@ O pacote de Interação deve ser instalado em todas as instâncias (controle e e
 >
 >Ao instalar o pacote, os campos do tipo **longo** da tabela **nms:proposition**, como ID da proposta, tornam-se campos de tipo **int64.** Esse tipo de dado é detalhado [nesta seção](../../configuration/using/schema-structure.md#mapping-the-types-of-adobe-campaign-dbms-data).
 
-The data retention duration must be configured on each instance (via the **[!UICONTROL Data purge]** window in the deployment wizard). Em instâncias de execução, esse período deve corresponder à profundidade histórica necessária para as regras de tipologia (período de deslizamento) e as regras de qualificação serem calculadas.
+A duração da retenção de dados deve ser configurada em cada instância (por meio da janela **[!UICONTROL Data purge]** no assistente de implantação). Em instâncias de execução, esse período deve corresponder à profundidade histórica necessária para as regras de tipologia (período de deslizamento) e as regras de qualificação serem calculadas.
 
 Nas instâncias de controle:
 
@@ -78,11 +78,11 @@ Nas instâncias de controle:
    ![](assets/interaction_powerbooster1.png)
 
    * Complete o rótulo e adicione um nome interno curto e explícito.
-   * Selecione o **[!UICONTROL Execution instance]**.
-   * Marque a **[!UICONTROL Enabled]** opção.
+   * Selecione a instância **[!UICONTROL Execution]**.
+   * Marque a opção **[!UICONTROL Enabled]**.
    * Conclua os parâmetros de conexão da instância de execução.
-   * Cada instância de execução deve ser vinculada a um ID. This ID is assigned when you click on the **[!UICONTROL Initialize connection]** button.
-   * Verifique o tipo de aplicativo usado: **[!UICONTROL Message Center]**, **[!UICONTROL Interaction]** ou ambos.
+   * Cada instância de execução deve ser vinculada a um ID. Esse ID é atribuído ao clicar no botão **[!UICONTROL Initialize connection]**.
+   * Verifique o tipo de aplicativo usado:: **[!UICONTROL Message Center]**, **[!UICONTROL Interaction]** ou ambos.
    * Insira a conta da FDA utilizada. Um operador deve ser criado nas instâncias de execução e deve ter os seguintes direitos de leitura e gravação no banco de dados da instância em questão:
 
       ```
@@ -104,7 +104,7 @@ Nas instâncias de controle:
       >
       >Se encontrar um erro, poderá consultar os workflows de sincronização e oferecer notificações. Eles podem ser encontrados nos workflows técnicos do aplicativo.
 
-Se, por motivos de otimização, apenas parte do banco de dados de marketing for duplicado nas instâncias de execução, é possível especificar um schema restrito vinculado ao ambiente para permitir que os usuários usem apenas dados que estejam disponíveis nas instâncias de execução. É possível criar uma oferta usando dados que não estão disponíveis em instâncias de execução. To do this, you must deactivate the rule on the other channels by limiting this rule on the outbound channel (**[!UICONTROL Taken into account if]** field).
+Se, por motivos de otimização, apenas parte do banco de dados de marketing for duplicado nas instâncias de execução, é possível especificar um schema restrito vinculado ao ambiente para permitir que os usuários usem apenas dados que estejam disponíveis nas instâncias de execução. É possível criar uma oferta usando dados que não estão disponíveis em instâncias de execução. Para fazer isso, é necessário desativar a regra nos outros canais limitando essa regra no canal de saída (campo **[!UICONTROL Taken into account if]**).
 
 ![](assets/ita_filtering.png)
 
@@ -117,7 +117,7 @@ Aqui está uma lista de opções de manutenção disponíveis na instância de c
 >Essas opções só devem ser usadas para casos de manutenção específicos.
 
 * **`NmsInteraction_LastOfferEnvSynch_<offerEnvId>_<executionInstanceId>`**: última data em que um ambiente foi sincronizado em uma determinada instância.
-* **`NmsInteraction_LastPropositionSynch_<propositionSchema>_<executionInstanceIdSource>_<executionInstanceIdTarget>`**: a última data em que as proposições de um determinado esquema foram sincronizadas de uma instância para outra.
+* **`NmsInteraction_LastPropositionSynch_<propositionSchema>_<executionInstanceIdSource>_<executionInstanceIdTarget>`**: última data em que as propostas de um determinado schema foram sincronizadas de uma instância para outra.
 * **`NmsInteraction_MapWorkflowId`**: uma opção contendo a lista de todos os workflows de sincronização gerados.
 
 A seguinte opção está disponível nas instâncias de execução:
@@ -141,7 +141,7 @@ Se a instância não tiver o pacote do Interaction anteriormente, nenhuma migra�
 
 ### PostgreSQL {#postgresql}
 
-Há dois modos: O primeiro (usando uma tabela de trabalho) é ligeiramente mais rápido.
+Há dois métodos. O primeiro (usando uma tabela de trabalho) é ligeiramente mais rápido.
 
 **Tabela de trabalho**
 
