@@ -14,7 +14,7 @@ discoiquuid: 2b799ad7-b729-4b3e-9adc-1df13259f2a9
 index: y
 internal: n
 snippet: y
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 579329d9194115065dff2c192deb0376c75e67bd
 
 ---
@@ -24,11 +24,11 @@ source-git-commit: 579329d9194115065dff2c192deb0376c75e67bd
 
 Ganchos em Interações permitem modificar o **comportamento do mecanismo padrão**.
 
-Os ganchos **[!UICONTROL Target loading]** e **[!UICONTROL Proposition post-processing]** ganchos são configurados no Adobe Campaign, no espaço de oferta:
+Os ganchos **[!UICONTROL Target loading]** e **[!UICONTROL Proposition post-processing]** são configurados no espaço de ofertas do Adobe Campaign:
 
 ![](assets/interaction_hooks_1.png)
 
-The **[!UICONTROL Dynamic offer]** hook is configured with the offer weight in Adobe Campaign:
+O gancho **[!UICONTROL Dynamic offer]** é configurado com o peso da oferta no Adobe Campaign:
 
 ![](assets/interaction_hooks_2.png)
 
@@ -40,7 +40,7 @@ Os dados coletados devem ser inseridos no nó de dados da chamada (nó Interacti
 
 **Parâmetros de entrada:**
 
-* xmlInteraction (tipo xml): Nó de interação
+* xmlInteraction (tipo xml): nó de interação
 * aTargetId (tipo de tabela): identificador do target
 * sUuid230 (tipo string): valor do cookie permanente uuid230
 * sNlid (tipo string): valor do cookie da sessão nlid
@@ -124,7 +124,7 @@ return aReturnedProps;
 
 Este gancho permite fazer uma chamada para um mecanismo externo para selecionar uma lista de produtos vinculados a uma oferta. Ele é configurado na oferta após as regras de qualificação e antes do aplicativo de regras de tipologia.
 
-O integrador deve estender o schema **PropositionRcp** anteriormente com as informações adicionais sobre o produto. To specify where this data will be stored, a **[!UICONTROL Proposition being processed]** link is available in the **[!UICONTROL Storage]** tab of the space
+O integrador deve estender o schema **PropositionRcp** anteriormente com as informações adicionais sobre o produto. Para especificar onde esses dados serão armazenados, um link **[!UICONTROL Proposition being processed]** está disponível na guia **[!UICONTROL Storage]** do espaço.
 
 ![](assets/interaction_hooks_3.png)
 
