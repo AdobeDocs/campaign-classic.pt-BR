@@ -14,7 +14,7 @@ discoiquuid: 1f420652-c9af-4a49-8d5c-a640e960aced
 index: y
 internal: n
 snippet: y
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 2c0d4054fbc15a88ea0370269b62c7d647aea033
 
 ---
@@ -27,7 +27,7 @@ A definição do conteúdo da mensagem transacional é a mesma para deliveries c
 >[!CAUTION]
 >
 >As imagens incluídas na mensagem devem ser acessíveis publicamente. O Adobe Campaign não fornece nenhum mecanismo de carregamento de imagem para mensagens transacionais.\
->Unlike in JSSP or webApp, `<%=` doesn’t have any default escaping.
+>Ao contrário do JSSP ou webApp, `<%=`não tem nenhum escape padrão.
 >
 >Nesse caso, você precisa escapar cada dado que vem do evento corretamente. Este escape depende da forma como esse campo é usado. Por exemplo, dentro de uma URL, use encodeURIComponent. Para ser exibido no HTML, você pode usar escapeXMLString.
 
@@ -36,17 +36,17 @@ Após definir o conteúdo da mensagem, você pode integrar as informações do e
 ![](assets/messagecenter_create_content_001.png)
 
 * Todos os campos de personalização vêm da carga.
-* É possível referenciar um ou vários blocos de personalização em uma mensagem transacional. O conteúdo do bloco será adicionado ao conteúdo de entrega durante a publicação para a instância de execução.
+* É possível referenciar um ou vários blocos de personalização em uma mensagem transacional. O conteúdo do bloco será adicionado ao conteúdo de delivery durante a publicação para a instância de execução.
 
 Para inserir tags de personalização no corpo de uma mensagem de email, siga as etapas abaixo:
 
 1. No template de mensagem, clique na guia que corresponde ao formato do email (HTML ou texto).
 1. Insira o corpo da mensagem.
-1. In the body of the text, insert the tag using the **[!UICONTROL Real time events>Event XML]** menus.
+1. No corpo do texto, insira a tag usando os menus **[!UICONTROL Real time events>Event XML]**.
 
    ![](assets/messagecenter_create_custo_002.png)
 
-1. Fill in the tag using the following syntax: **element name**.@nome **** do atributo como mostrado abaixo.
+1. Preencha a tag usando a seguinte sintaxe: **element name**.@**attribute name** como mostrado abaixo.
 
    ![](assets/messagecenter_create_custo_003.png)
 
