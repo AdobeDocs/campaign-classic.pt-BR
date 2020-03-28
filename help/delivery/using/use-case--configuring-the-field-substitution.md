@@ -14,7 +14,7 @@ discoiquuid: a104fcab-75e6-4d73-bc3d-88570de6df7f
 index: y
 internal: n
 snippet: y
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 003bac4c5d89290b9d3653d6ddfab7284b68642d
 
 ---
@@ -39,7 +39,7 @@ Para usar a substituição de campo aleatório, você deve ter:
 
 ## Criação de um delivery.{#step-1---creating-a-delivery}
 
-As etapas para criar uma entrega são detalhadas na seção [Criação de uma entrega](../../delivery/using/creating-an-email-delivery.md) de email.
+As etapas para criar um delivery estão detalhadas na seção [Creating an email delivery](../../delivery/using/creating-an-email-delivery.md).
 
 Neste exemplo, o gerenciador de delivery criou o boletim informativo.
 
@@ -58,7 +58,7 @@ Neste exemplo, o schema de dados dos seed addresses pega um valor criado pelo sc
 
 Essa enumeração permite especificar o gênero literário favorito de seus clientes.
 
-Para que essa modificação do schema de dados possa ser visualizada no **Formulário de entrada** dos seed addresses, você deve atualizá-lo. Consulte a seção [Atualização do formulário](../../delivery/using/use-case--selecting-seed-addresses-on-criteria.md#updating-the-input-form) de entrada.
+Para que essa modificação do schema de dados possa ser visualizada no **Formulário de entrada** dos seed addresses, você deve atualizá-lo. Consulte a seção [Atualização do formulário de entrada](../../delivery/using/use-case--selecting-seed-addresses-on-criteria.md#updating-the-input-form).
 
 ## Configuração da personalização {#configuring-personalization}
 
@@ -68,7 +68,7 @@ Para que essa modificação do schema de dados possa ser visualizada no **Formul
 
    ![](assets/dlv_seeds_usecase_25.png)
 
-1. Configure sua lista de delivery e seus seed addresses. Consulte [Identificação das populações](../../delivery/using/steps-defining-the-target-population.md)-alvo.
+1. Configure sua lista de delivery e seus seed addresses. Consulte [Identificação das populações alvo](../../delivery/using/steps-defining-the-target-population.md).
 
    Neste exemplo, o usuário seleciona usuários cujo **gênero literário favorito** é ficção científica como o principal público alvo.
 
@@ -80,9 +80,9 @@ Para que essa modificação do schema de dados possa ser visualizada no **Formul
 
    >[!NOTE]
    >
-   >Para obter mais informações sobre o **[!UICONTROL Edit the dynamic condition...]** link, consulte o caso [de uso: seleção de endereços semente em critérios](../../delivery/using/use-case--selecting-seed-addresses-on-criteria.md).
+   >Para obter mais informações sobre o link **[!UICONTROL Edit the dynamic condition...]**, consulte o [Caso de uso: seleção de seed addresses em critérios](../../delivery/using/use-case--selecting-seed-addresses-on-criteria.md).
 
-1. Click the **[!UICONTROL Preview]** tab then select a seed address to test the personalization.
+1. Clique na guia **[!UICONTROL Preview]** e selecione um seed address para testar a personalização.
 
    ![](assets/dlv_seeds_usecase_28.png)
 
