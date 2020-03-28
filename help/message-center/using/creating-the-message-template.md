@@ -14,7 +14,7 @@ discoiquuid: 2c2a7196-9183-46b1-b1e2-4a07a53e93b4
 index: y
 internal: n
 snippet: y
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 2c0d4054fbc15a88ea0370269b62c7d647aea033
 
 ---
@@ -22,8 +22,8 @@ source-git-commit: 2c0d4054fbc15a88ea0370269b62c7d647aea033
 
 # Criação do template de mensagem{#creating-the-message-template}
 
-1. Vá para a **[!UICONTROL Message Center >Transactional message templates]** pasta na árvore do Adobe Campaign.
-1. In the list of transactional message templates, right-click and select **[!UICONTROL New]** in the drop-down menu or click the **[!UICONTROL New]** button above the list of transactional message templates.
+1. Vá até a pasta **[!UICONTROL Message Center >Transactional message templates]** da árvore do Adobe Campaign.
+1. Clique com o botão direito do mouse na lista de templates de mensagem transacional e selecione **[!UICONTROL New]** no menu suspenso ou clique no botão **[!UICONTROL New]** acima da lista de templates de mensagem transacional.
 
    ![](assets/messagecenter_create_model_001.png)
 
@@ -36,13 +36,13 @@ source-git-commit: 2c0d4054fbc15a88ea0370269b62c7d647aea033
 
    ![](assets/messagecenter_create_model_003.png)
 
-   Os tipos de eventos precisam ser criados previamente no console. Para obter mais informações, consulte [Criação de tipos](../../message-center/using/creating-event-types.md)de evento.
+   Os tipos de eventos precisam ser criados previamente no console. Para obter mais informações, consulte [Criar tipos de evento](../../message-center/using/creating-event-types.md).
 
    >[!NOTE]
    >
-   >Um tipo de evento nunca deve estar vinculado a mais de um modelo.
+   >Um tipo de evento nunca deve estar vinculado a mais de um template.
 
-1. Insira uma natureza e uma descrição, em seguida, clique em **[!UICONTROL Continue]** para criar o corpo da mensagem (consulte [Criação de conteúdo](../../message-center/using/creating-message-content.md)da mensagem).
+1. Insira uma natureza e uma descrição, depois clique em **[!UICONTROL Continue]** para criar o corpo da mensagem (consulte [Criar conteúdo da mensagem](../../message-center/using/creating-message-content.md)).
 
    ![](assets/messagecenter_create_model_004.png)
 
