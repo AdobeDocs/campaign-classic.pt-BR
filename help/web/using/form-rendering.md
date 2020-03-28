@@ -14,7 +14,7 @@ discoiquuid: 669635bd-868b-4550-b075-6294ccb71297
 index: y
 internal: n
 snippet: y
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 1c86322fa95aee024f6c691b61a10c21a9a22eb7
 
 ---
@@ -24,7 +24,7 @@ source-git-commit: 1c86322fa95aee024f6c691b61a10c21a9a22eb7
 
 ## Seleção do template de renderização do formulário {#selecting-the-form-rendering-template}
 
-As configurações de formulário permitem que você selecione o template usado para gerar as páginas. To access them, click the **[!UICONTROL Settings]** button in the form detail toolbar, and select the **[!UICONTROL Rendering]** tab. Há vários templates (folhas de estilos) disponíveis por padrão.
+As configurações de formulário permitem que você selecione o template usado para gerar as páginas. Para acessá-las, clique no botão **[!UICONTROL Settings]** na barra de ferramentas de detalhes do formulário e selecione a guia **[!UICONTROL Rendering]**. Há vários templates (folhas de estilos) disponíveis por padrão.
 
 ![](assets/s_ncs_admin_survey_rendering_select.png)
 
@@ -34,7 +34,7 @@ O recurso de zoom permite editar o template selecionado.
 
 ![](assets/s_ncs_admin_survey_render_edit.png)
 
-É possível modificar ou substituir esses templates. To do this, click the **[!UICONTROL Page layout...]** link and personalize the information.
+É possível modificar ou substituir esses templates. Para fazer isso, clique no link **[!UICONTROL Page layout...]** e personalize as informações.
 
 ![](assets/s_ncs_admin_survey_render_edit_param.png)
 
@@ -43,26 +43,26 @@ O recurso de zoom permite editar o template selecionado.
 * Alterar a imagem usada como um logotipo e adaptar seu tamanho,
 * Especificar também o caminho para acessar a imagem de pré-visualização quando os usuários selecionam esse template de renderização.
 
-The **[!UICONTROL Headers/Footers]** tab lets you change the information displayed in the headers and footers of each form page using this template.
+A guia **[!UICONTROL Headers/Footers]** permite alterar as informações exibidas nos cabeçalhos e rodapés de cada página de formulário usando esse template.
 
 ![](assets/s_ncs_admin_survey_render_edit_header.png)
 
-Each line of the **[!UICONTROL Page headers]** and **[!UICONTROL Page footers]** section corresponds to a line in the HTML page. Click **[!UICONTROL Add]** to create a new line.
+Cada linha da seção **[!UICONTROL Page headers]** e **[!UICONTROL Page footers]** corresponde a uma linha na página HTML. Clique em **[!UICONTROL Add]** para criar uma nova linha.
 
-Select an existing line and click the **[!UICONTROL Detail]** button to personalize it.
+Selecione uma linha existente e clique no botão **[!UICONTROL Detail]** para personalizá-la.
 
 ![](assets/s_ncs_admin_survey_render_edit_header_detail.png)
 
-Você pode alterar o conteúdo da linha, adicionar bordas e alterar os atributos da fonte por meio das guias relevantes. Clique em **[!UICONTROL OK]** para confirmar essas alterações.
+Você pode alterar o conteúdo da linha, adicionar bordas e alterar os atributos da fonte por meio das guias relevantes. Clique em **[!UICONTROL OK]** para confirmar as alterações.
 
-The **[!UICONTROL Position]** fields let you define the position of elements in the page header and footer.
+Os campos **[!UICONTROL Position]** permitem definir a posição dos elementos no cabeçalho e no rodapé da página.
 
 ![](assets/s_ncs_admin_survey_render_edit_header_position.png)
 
 >[!NOTE]
 >
->Os modelos de renderização são armazenados no **[!UICONTROL Administration > Configuration > Form rendering]** nó.\
->Para obter mais informações, consulte [Personalizar renderização de formulário](#customizing-form-rendering)
+>Os templates de renderização estão armazenados no nó **[!UICONTROL Administration > Configuration > Form rendering]**.\
+>Para obter mais informações, consulte [Personalização a partir de renderização](#customizing-form-rendering).
 
 ## Personalização da renderização do formulário {#customizing-form-rendering}
 
@@ -70,19 +70,19 @@ The **[!UICONTROL Position]** fields let you define the position of elements in 
 
 Você pode sobrecarregar a folha de estilos de cada elemento do formulário (campos de entrada, imagens, botões de opção, etc.).
 
-To do this, use the **[!UICONTROL Advanced]** tab.
+Para fazer isso, use a guia **[!UICONTROL Advanced]**.
 
 ![](assets/s_ncs_admin_survey_advanced_tab.png)
 
 Ela permite que você defina as seguintes propriedades:
 
-* **[!UICONTROL Label position]**: consulte [Definição da posição dos rótulos](../../web/using/defining-web-forms-layout.md#defining-the-position-of-labels),
-* **[!UICONTROL Label format]**: Quebra de texto ou quebra automática de linha,
-* **[!UICONTROL Number of cells]** : consulte [Posicionamento dos campos na página](../../web/using/defining-web-forms-layout.md#positioning-the-fields-on-the-page),
-* **[!UICONTROL Horizontal alignment]** (Esquerda, Direita, Centralizada) e **[!UICONTROL Vertical alignment]** (Alto, Baixo, Médio),
-* **[!UICONTROL Width]** da zona: isso pode ser expresso como uma porcentagem ou em ems, pontos ou pixels (valor padrão),
-* Maximum **[!UICONTROL Length]**: Maximum number of characters allowed (for Text, Number and Password type controls),
-* **[!UICONTROL Lines]**: número de linhas para uma zona de **[!UICONTROL Multi-line text]** tipo,
+* **[!UICONTROL Label position]**: consulte [Definição da posição de rótulos](../../web/using/defining-web-forms-layout.md#defining-the-position-of-labels),
+* **[!UICONTROL Label format]**: quebra de palavra ou sem quebra de palavra,
+* **[!UICONTROL Number of cells]** : consulte [Posicionamento de campos na página](../../web/using/defining-web-forms-layout.md#positioning-the-fields-on-the-page),
+* **[!UICONTROL Horizontal alignment]** (à esquerda, à direita, centralizado) e **[!UICONTROL Vertical alignment]** (em cima, embaixo, no meio),
+* **[!UICONTROL Width]** da zona: pode ser expresso como uma porcentagem ou em ems, pontos ou pixels (valor padrão),
+* **[!UICONTROL Length]** máximo: número máximo de caracteres permitidos (para controles do tipo texto, número e senha),
+* **[!UICONTROL Lines]**: número de linhas para uma zona de tipo **[!UICONTROL Multi-line text]**,
 * **[!UICONTROL Style inline]**: permite que você sobrecarregue a folha de estilos CSS com configurações adicionais. Esses são separados usando os caracteres **;** como mostrado no exemplo abaixo:
 
    ![](assets/s_ncs_admin_survey_advanced_tab_inline.png)
@@ -91,13 +91,13 @@ Ela permite que você defina as seguintes propriedades:
 
 Os campos são sequenciados em uma estrutura de árvore cuja raiz tem o mesmo nome que a página. Selecione para modificar o nome.
 
-The title of the window must be entered in the **[!UICONTROL Page]** tab of the form property window. Você também pode adicionar um conteúdo definido ao cabeçalho e ao rodapé da página (essas informações serão exibidas em todas as páginas). This content is entered in the matching sections of the **[!UICONTROL Texts]** tab, as shown below:
+O título da janela deve ser inserido na guia **[!UICONTROL Page]** da janela de propriedade do formulário. Você também pode adicionar um conteúdo definido ao cabeçalho e ao rodapé da página (essas informações serão exibidas em todas as páginas). Esse conteúdo é inserido nas seções correspondentes da guia **[!UICONTROL Texts]**, conforme mostrado abaixo:
 
 ![](assets/s_ncs_admin_survey_titles_config.png)
 
 ### Adição de elementos ao cabeçalho HTML {#adding-elements-to-html-header}
 
-É possível inserir elementos adicionais no cabeçalho HTML de uma página de formulário. To do this, enter the elements in the **[!UICONTROL Header]** tab of the relevant page.
+É possível inserir elementos adicionais no cabeçalho HTML de uma página de formulário. Para fazer isso, insira os elementos na guia **[!UICONTROL Header]** da página relevante.
 
 Isso permite que você faça referência a um ícone que será exibido na barra de título da página, por exemplo.
 
@@ -105,7 +105,7 @@ Isso permite que você faça referência a um ícone que será exibido na barra 
 
 ## Definição das configurações de controle {#defining-control-settings}
 
-Quando o usuário preenche o formulário, uma verificação é automaticamente executada em determinados campos, dependendo do formato ou da configuração. This lets you make certain fields mandatory (refer to [Defining mandatory fields](#defining-mandatory-fields)) or check the format of the data entered (refer to [Checking data format](#checking-data-format)). As verificações são realizadas durante a aprovação da página (clicando em um link ou botão que permite uma transição de saída).
+Quando o usuário preenche o formulário, uma verificação é automaticamente executada em determinados campos, dependendo do formato ou da configuração. Isso permite que você torne determinados campos obrigatórios (consulte [Definição de campos obrigatórios](#defining-mandatory-fields)) ou verifique o formato dos dados inseridos (consulte [Verificação do formato de dados ](#checking-data-format)). As verificações são realizadas durante a aprovação da página (clicando em um link ou botão que permite uma transição de saída).
 
 ### Definição de campos obrigatórios {#defining-mandatory-fields}
 
@@ -117,7 +117,7 @@ Se o usuário aprovar essa página sem ter inserido o campo, a seguinte mensagem
 
 ![](assets/s_ncs_admin_survey_required_default_msg.png)
 
-You can personalize this message by clicking the **[!UICONTROL Personalize this message]** link.
+Você pode personalizar esta mensagem clicando no link **[!UICONTROL Personalize this message]**.
 
 ![](assets/s_ncs_admin_survey_required_custom_msg.png)
 
@@ -131,7 +131,7 @@ Para verificar se os valores são armazenados em um campo existente do banco de 
 
 Para verificações de formulário cujos valores são armazenados em uma variável, as regras de aprovação dependem do formato da variável.
 
-For example, if you create a **[!UICONTROL Number]** check to store the client number, as shown below:
+Por exemplo, se você criar uma verificação **[!UICONTROL Number]** para armazenar o número do cliente, conforme mostrado abaixo:
 
 ![](assets/s_ncs_admin_survey_choose_format.png)
 
@@ -141,7 +141,7 @@ O usuário deve inserir um inteiro no campo de formulário.
 
 Você pode configurar a exibição de campos na página a ser exibida com base nos valores escolhidos pelo usuário. Isso pode ser aplicado a um campo ou grupo de campos (quando eles são agrupados em um container).
 
-For each element of the page, the **[!UICONTROL Visibility]** section lets you define the display conditions.
+Para cada elemento da página, a seção **[!UICONTROL Visibility]** permite definir as condições de exibição.
 
 ![](assets/s_ncs_admin_survey_condition_edit.png)
 
@@ -155,15 +155,15 @@ Na janela de seleção de campo, você pode escolher entre os seguintes dados:
 
    Para obter mais informações, consulte esta [página](../../web/using/defining-web-forms-properties.md#form-url-parameters).
 
-* The **[!UICONTROL Recipients]** sub-tree contains the input fields inserted into the form and stored in the database.
+* A subárvore **[!UICONTROL Recipients]** contém os campos de entrada inseridos no formulário e armazenados no banco de dados.
 
    Para obter mais informações, consulte [Armazenamento de dados no banco de dados](../../web/using/web-forms-answers.md#storing-data-in-the-database).
 
-* The **[!UICONTROL Variables]** sub-tree contains the available variables for this form. Para obter mais informações, consulte [Armazenamento de dados em uma variável](../../web/using/web-forms-answers.md#storing-data-in-a-local-variable)local.
+* A subárvore **[!UICONTROL Variables]** contém as variáveis disponíveis para esse formulário. Para obter mais informações, consulte [Armazenamento de dados em uma variável local](../../web/using/web-forms-answers.md#storing-data-in-a-local-variable).
 
-Para obter mais informações, consulte o caso de uso disponível aqui: [Exibindo opções diferentes dependendo dos valores](../../web/using/use-cases--web-forms.md#displaying-different-options-depending-on-the-selected-values)selecionados.
+Para obter mais informações, consulte o caso de uso disponível aqui: [Exibição de opções diferentes de acordo com os valores selecionados](../../web/using/use-cases--web-forms.md#displaying-different-options-depending-on-the-selected-values).
 
-You can also condition the display of form pages using the **[!UICONTROL Test]** object. Para obter mais informações, consulte esta [página](../../web/using/defining-web-forms-page-sequencing.md#conditional-page-display).
+Você também pode condicionar a exibição de páginas de formulário usando o objeto **[!UICONTROL Test]**. Para obter mais informações, consulte esta [página](../../web/using/defining-web-forms-page-sequencing.md#conditional-page-display).
 
 ## Importação dos elementos de um formulário existente {#importing-elements-from-an-existing-form}
 
@@ -171,7 +171,7 @@ You can also condition the display of form pages using the **[!UICONTROL Test]**
 
 Para importar um elemento para um formulário, siga as etapas abaixo:
 
-1. Edit the page which you want to insert one or more elements into, then click **[!UICONTROL Import an existing block]** in the toolbar.
+1. Edite a página em que deseja inserir um ou mais elementos e clique em **[!UICONTROL Import an existing block]** na barra de ferramentas.
 
    ![](assets/s_ncs_admin_survey_import_block.png)
 
@@ -181,7 +181,7 @@ Para importar um elemento para um formulário, siga as etapas abaixo:
 
    >[!NOTE]
    >
-   >The **[!UICONTROL Edit link]** icon to the right of the source form name lets you view the selected Web form.
+   >O ícone **[!UICONTROL Edit link]** à direita do nome do formulário de origem permite exibir o formulário web selecionado.
 
 1. Clique em **[!UICONTROL Ok]** para confirmar a inserção.
 
