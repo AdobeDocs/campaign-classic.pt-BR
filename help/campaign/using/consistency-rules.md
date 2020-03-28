@@ -14,7 +14,7 @@ discoiquuid: 9bcb5dc1-8cb4-4781-a8cd-8d072ff28b1a
 index: y
 internal: n
 snippet: y
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 209ac4d81d2d27c264ee6b288bcb7fcb1900ffc5
 
 ---
@@ -26,24 +26,24 @@ source-git-commit: 209ac4d81d2d27c264ee6b288bcb7fcb1900ffc5
 
 O Adobe Campaign garante comunicações consistentes graças a um conjunto de regras contidas nas tipologias de campanha. Seu objetivo é controlar os deliveries enviados aos recipients, como volume, natureza, relevância etc.
 
-As regras de **Capacidade** podem evitar sobrecarga na plataforma relacionada ao delivery de mensagens. Por exemplo, ofertas especiais que contenham um link de download não devem ser enviadas para muitas pessoas ao mesmo tempo, para evitar a saturação do servidor; as campanhas telefônicas não devem exceder a capacidade de processamento das centrais telefônicas, etc. For more on this, refer to [Controlling capacity](#controlling-capacity).
+As regras de **Capacidade** podem evitar sobrecarga na plataforma relacionada ao delivery de mensagens. Como exemplo, as ofertas especiais que contêm um link de download não devem ser enviadas para muitas pessoas de uma só vez, para evitar a saturação do servidor; as campanhas por telefone não devem exceder a capacidade de processamento das centrais de atendimento etc. Para obter mais informações, consulte [Controle de capacidade](#controlling-capacity).
 
 ## Controlando a capacidade {#controlling-capacity}
 
 Antes de enviar mensagens, você precisa garantir que sua organização tem a capacidade de processar o delivery (infraestrutura física), as respostas que o delivery pode gerar (mensagens de entrada) e o número de chamadas a serem feitas para entrar em contato com assinantes (capacidade de processamento da central de chamadas), por exemplo.
 
-To do this, you need to create **[!UICONTROL Capacity]** typology rules.
+Para fazer isso, você precisa criar as regras de tipologia da **[!UICONTROL capacidade]**.
 
 No exemplo a seguir, criamos uma regra de tipologia para uma campanha de fidelidade de telefone. Restringimos o número de mensagens a 20 por dia, ou seja, a capacidade diária de processamento de uma central de chamadas. Uma vez que a regra tenha sido aplicada a dois deliveires, poderemos monitorar o consumo por meio de logs.
 
 Para projetar uma nova regra de capacidade, siga as etapas abaixo:
 
-1. No **[!UICONTROL Administration > Campaign management > Typology management > Typology rules]** nó, clique em **[!UICONTROL New]**.
-1. Selecione um tipo de **[!UICONTROL Capacity]** regra.
+1. No nó **[!UICONTROL Administration > Campaign management > Typology management > Typology rules]**, clique em **[!UICONTROL New]**.
+1. Selecione um tipo de regra de **[!UICONTROL capacidade]**.
 
    ![](assets/campaign_opt_create_capacity_01.png)
 
-1. In the **[!UICONTROL Capacity]** tab, create the availability lines: in our example, these are time periods during which calls can be made. Selecione um período de 24 horas e insira 150 na quantidade inicial, o que significa que a central de chamadas é capaz de atender 150 chamadas por dia.
+1. Na guia **[!UICONTROL Capacity]**, crie as linhas de disponibilidade: no nosso exemplo, há períodos durante os quais as chamadas podem ser feitas. Selecione um período de 24 horas e insira 150 na quantidade inicial, o que significa que a central de chamadas é capaz de atender 150 chamadas por dia.
 
    ![](assets/campaign_opt_create_capacity_02.png)
 
@@ -52,9 +52,9 @@ Para projetar uma nova regra de capacidade, siga as etapas abaixo:
    >As linhas de disponibilidade são somente para fins de informação. Caso precise excluir mensagens quando o limite de capacidade for atingido, consulte [esta seção](#exclude-messages-when-capacity-limit-reached).
 
 1. Associe esta regra a uma tipologia e, em seguida, faça referência à tipologia em seu delivery para aplicar essa regra de capacidade. Para obter mais informações, consulte [esta seção](../../campaign/using/applying-rules.md#applying-a-typology-to-a-delivery).
-1. You can monitor consumption from the rule **[!UICONTROL Consumptions]** and **[!UICONTROL Capacity]** tabs.
+1. É possível monitorar o consumo a partir das guias de regra **[!UICONTROL Consumptions]** e **[!UICONTROL Capacity]**.
 
-   When a rule is used in a delivery, the **[!UICONTROL Consumed]** and **[!UICONTROL Remaining]** columns provide information on the load, as shown below:
+   Quando uma regra é usada em um delivery, as colunas **[!UICONTROL Consumed]** e **[!UICONTROL Remaining]** fornecem informações sobre a carga, conforme mostrado abaixo:
 
    ![](assets/campaign_opt_create_capacity_03.png)
 
@@ -62,11 +62,11 @@ Para projetar uma nova regra de capacidade, siga as etapas abaixo:
 
 ## Definindo a carga máxima {#defining-the-maximum-load}
 
-Para definir a carga máxima, você precisa definir linhas de disponibilidade. To do this, two options are available: you can manually create one or more availability lines (refer to [Adding availability lines one by one](#adding-availability-lines-one-by-one)) or create availability ranges. A frequência desses períodos de tempo pode ser automatizada (consulte [Adicionar um conjunto de linhas](#add-a-set-of-availability-lines)de disponibilidade).
+Para definir a carga máxima, você precisa definir linhas de disponibilidade. Para fazer isso, duas opções estão disponíveis: você pode criar manualmente uma ou mais linhas de disponibilidade (consulte [Adicionar linhas de disponibilidade uma por uma](#adding-availability-lines-one-by-one)) ou criar intervalos de disponibilidade. A frequência desses períodos pode ser automatizada (consulte [Adicionar um conjunto de linhas de disponibilidade](#add-a-set-of-availability-lines)).
 
 ### Adicionando linhas de disponibilidade uma por uma {#adding-availability-lines-one-by-one}
 
-Para criar uma linha de disponibilidade, clique no **[!UICONTROL Add]** botão e selecione **[!UICONTROL Add an availability line]**. Insira o período de disponibilidade e a carga disponível.
+Para criar uma linha de disponibilidade, clique no botão **[!UICONTROL Add]** e selecione **[!UICONTROL Add an availability line]**. Insira o período de disponibilidade e a carga disponível.
 
 ![](assets/campaign_opt_create_capacity_02.png)
 
@@ -74,9 +74,9 @@ Adicione quantas linhas forem necessárias para atender a capacidade de processa
 
 ### Adicione um conjunto de linhas de disponibilidade {#add-a-set-of-availability-lines}
 
-Para definir períodos de disponibilidade para um determinado horário, clique no **[!UICONTROL Add]** botão e selecione a **[!UICONTROL Add a set of availability lines]** opção. Indique uma duração para cada período e o número de períodos a serem criados.
+Para definir os períodos de disponibilidade por um tempo determinado, clique no botão **[!UICONTROL Add]** e selecione a opção **[!UICONTROL Add a set of availability lines]**. Indique uma duração para cada período e o número de períodos a serem criados.
 
-To automate the frequency of page creation, click the **[!UICONTROL Change]** button and define time period scheduling.
+Para automatizar a frequência de criação de página, clique no botão **[!UICONTROL Change]** e defina o cronograma do período.
 
 ![](assets/campaign_opt_create_capacity_07.png)
 
@@ -94,7 +94,7 @@ Por exemplo, vamos definir um agendamento para criar períodos de disponibilidad
 
    ![](assets/campaign_opt_create_capacity_10.png)
 
-The **[!UICONTROL Forecasting]** workflow automatically creates all matching lines.
+O fluxo de trabalho **[!UICONTROL Forecasting]** cria automaticamente todas as linhas correspondentes.
 
 ![](assets/campaign_opt_create_capacity_12.png)
 
@@ -104,11 +104,11 @@ The **[!UICONTROL Forecasting]** workflow automatically creates all matching lin
 
 ## Excluir mensagens quando o limite de capacidade é atingido {#exclude-messages-when-capacity-limit-reached}
 
-As linhas de disponibilidade são somente para fins de informação. Para excluir mensagens em excesso, marque a **[!UICONTROL Exclude from the target messages in excess of capacity]** opção. Isso evita que a capacidade seja excedida. Para a mesma população que no exemplo anterior, o consumo e a capacidade restantes não devem exceder a quantidade inicial:
+As linhas de disponibilidade são somente para fins de informação. Para excluir mensagens em excesso, marque a opção **[!UICONTROL Exclude from the target messages in excess of capacity]**. Isso evita que a capacidade seja excedida. Para a mesma população que no exemplo anterior, o consumo e a capacidade restantes não devem exceder a quantidade inicial:
 
 ![](assets/campaign_opt_create_capacity_04.png)
 
-O número de mensagens a serem processadas é dividido uniformemente no intervalo de disponibilidade definido. Isso é particularmente relevante para centrais de chamadas, pois seu número máximo de chamadas por dias é limitado. In the case of email deliveries, the **[!UICONTROL Do not limit instantaneous delivery capacity]** option lets you ignore this availability range and send your emails at the same time.
+O número de mensagens a serem processadas é dividido uniformemente no intervalo de disponibilidade definido. Isso é particularmente relevante para centrais de chamadas, pois seu número máximo de chamadas por dias é limitado. No caso de deliveries de email, a opção **[!UICONTROL Do not limit instantaneous delivery capacity]** permite ignorar esse intervalo de disponibilidade e enviar seus emails ao mesmo tempo.
 
 ![](assets/campaign_opt_create_capacity_05.png)
 
@@ -120,10 +120,10 @@ O número de mensagens a serem processadas é dividido uniformemente no interval
 
 ## Monitorando o consumo {#monitoring-consumption}
 
-Por padrão, as regras de capacidade são somente para fins de indicação. Selecione a **[!UICONTROL Exclude messages in excess of capacity from the target]** opção para impedir que a carga definida seja excedida. Nesse caso, as mensagens em excesso serão excluídas automaticamente dos deliveries usando essa regra de tipologia.
+Por padrão, as regras de capacidade são somente para fins de indicação. Selecione a opção **[!UICONTROL Exclude messages in excess of capacity from the target]** para impedir que a carga definida seja excedida. Nesse caso, as mensagens em excesso serão excluídas automaticamente dos deliveries usando essa regra de tipologia.
 
-To monitor consumptions, view the values displayed in the **[!UICONTROL Consumed]** column of the **[!UICONTROL Capacity]** tab in the typology rule.
+Para monitorar o consumo, visualize os valores exibidos na coluna **[!UICONTROL Consumed]** da guia **[!UICONTROL Capacity]** na regra de tipologia.
 
 ![](assets/campaign_opt_create_capacity_04.png)
 
-To view consumption lines, click the **[!UICONTROL Consumptions]** tab in the rule.
+Para exibir linhas de consumo, clique na guia **[!UICONTROL Consumptions]** na regra.
