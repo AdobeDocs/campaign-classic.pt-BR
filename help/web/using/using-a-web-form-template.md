@@ -14,7 +14,7 @@ discoiquuid: d9369ba1-0397-40fe-bbaf-24252564d93c
 index: y
 internal: n
 snippet: y
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: c9c9d5f96856ce9e19571bad032d2bf04eaa60bd
 
 ---
@@ -22,28 +22,28 @@ source-git-commit: c9c9d5f96856ce9e19571bad032d2bf04eaa60bd
 
 # Utilização de um template de formulário web{#using-a-web-form-template}
 
-Os templates são configurações reutilizáveis que permitem criar novos formulários. By default, form templates are stored with Web application templates in the **[!UICONTROL Resources > Templates > Web application templates]** node.
+Os templates são configurações reutilizáveis que permitem criar novos formulários. Por padrão, os modelos de formulário são armazenados com os modelos de aplicações web no nó **[!UICONTROL Resources > Templates > Web application templates]**.
 
-Aqui, você pode criar novos modelos ou converter um formulário existente em um modelo.
+Aqui é possível criar novos modelos ou alterar um formulário existente em um modelo.
 
-## Convert an existing form into a template {#convert-an-existing-form-into-a-template}
+## Conversão de um formulário existente em um modelo {#convert-an-existing-form-into-a-template}
 
-Um formulário pode ser alterado para um template e sua configuração pode ser reutilizada. To do this, select the form, right-click and select **[!UICONTROL Actions > Save as template...]**.
+Um formulário pode ser alterado para um template e sua configuração pode ser reutilizada. Para fazer isso, escolha o formulário, clique com o botão direito do mouse e selecione **[!UICONTROL Actions > Save as template...]**.
 
 ![](assets/s_ncs_admin_survey_saveastemplate.png)
 
 Essa ação abre a janela para a criação de aplicações Web. É possível inserir o nome e a descrição do template, além de selecionar a pasta onde será salvo.
 
-## Create a new form template {#create-a-new-form-template}
+## Criação de um novo modelo de formulário {#create-a-new-form-template}
 
-To create a Web form template, right-click the list of Web application templates and select **[!UICONTROL New]**. You can also use the **[!UICONTROL New]** button above the list of templates.
+Para criar um modelo de formulário Web, clique com o botão direito do mouse na lista de modelos de aplicações web e selecione **[!UICONTROL New]**. Também é possível usar o botão **[!UICONTROL New]** acima da lista de modelos.
 
 ![](assets/s_ncs_admin_survey_createtemplate.png)
 
-Digite o nome do template. In the **[!UICONTROL Instance folder]** field, select the folder where the Web forms created based on this template are saved. The **[!UICONTROL Nature]** field lets you add descriptive information to sort and/or filter your various Web application templates.
+Digite o nome do template. No campo **[!UICONTROL Instance folder]**, selecione a pasta onde são salvos os formulários Web criados com base nesse modelo. O campo **[!UICONTROL Nature]** permite adicionar as informações descritivas para classificar e/ou filtrar os vários modelos de aplicações web.
 
 ![](assets/s_ncs_admin_survey_createtemplate_details.png)
 
-Click the **[!UICONTROL Save]** button to create the template, then build the content of this template and define its parameters.
+Clique no botão **[!UICONTROL Save]** para criar o modelo e, em seguida, crie o conteúdo e defina os parâmetros.
 
 Agora é possível selecionar esse template ao criar um novo formulário.
