@@ -14,7 +14,7 @@ discoiquuid: 33fe5a57-55db-4cd7-b1fd-0dc3691909ab
 index: y
 internal: n
 snippet: y
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 70f51ba3937d0f20d9a488c61b52b7ec4396fa5e
 
 ---
@@ -29,4 +29,4 @@ O Adobe Campaign permite produzir arquivos para fazer deliveries em massa de car
 >Os endereços postais são campos calculados. Um endereço pode conter até seis linhas por padrão: a primeira contém o nome e sobrenome, as próximas linhas contêm o endereço postal (rua, etc), e a última linha contém o CEP e a cidade.\
 >Um endereço é considerado completo se o nome, campo de CEP e campos do município/cidade não estiverem vazios.
 
-As seções abaixo fornecem informações específicas para o canal de mala direta. Para obter informações globais sobre como criar e enviar uma entrega, consulte[esta seção](../../delivery/using/steps-about-delivery-creation-steps.md).
+As seções abaixo fornecem informações específicas para o canal de mala direta. Para obter informações globais sobre como criar e enviar um delivery, consulte [esta seção](../../delivery/using/steps-about-delivery-creation-steps.md).
