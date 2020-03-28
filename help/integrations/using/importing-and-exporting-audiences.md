@@ -14,7 +14,7 @@ discoiquuid: f26cc65a-76be-4b7a-bde3-d0cbe3eedaaf
 index: y
 internal: n
 snippet: y
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 0745b9c9d72538b8573ad18ff4054ecf788905f2
 
 ---
@@ -26,19 +26,19 @@ source-git-commit: 0745b9c9d72538b8573ad18ff4054ecf788905f2
 
 Você pode importar públicos/segmentos do Audience Manager ou do Serviço principal de pessoas para o Adobe Campaign através das listas de recipients.
 
-1. Vá para o nó **[!UICONTROL Profiles and Targets]** > **[!UICONTROL Lists]** no Adobe Campaign explorer.
+1. Vá para o nó **[!UICONTROL Profiles and Targets]** > **[!UICONTROL Lists]** no Adobe Campaign Explorer.
 1. Na barra de ações, selecione **[!UICONTROL New]** > **[!UICONTROL Create a shared audience...]**.
 
    ![](assets/aam_import_audience.png)
 
-1. In the window that opens, click **[!UICONTROL Select a shared audience]** to go to the list of shared audiences/segments available from the other Adobe Experience Cloud solutions.
+1. Na janela que abre, clique em **[!UICONTROL Select a shared audience]** para abrir a lista de audiences/segmentos compartilhados disponíveis nas outras soluções da Adobe Experience Cloud.
 1. Selecione um público e confirme. As informações do público são concluídas automaticamente.
 
-   Please note that to be able to import shared audience, you should be assigned the **[!UICONTROL Audience library]** product in the admin console and be an administrator in Audience Manager. Para obter mais informações, consulte a [documentação do console do administrador](https://helpx.adobe.com/enterprise/managing/user-guide.html).
+   Observe que para poder importar público compartilhado, o produto **[!UICONTROL Audience library]** dever ter sido atribuído a você no console do administrador e você deve ser um administrador no Audience Manager. Para obter mais informações, consulte a [documentação do console do administrador](https://helpx.adobe.com/br/enterprise/managing/user-guide.html).
 
    ![](assets/aam_import_audience_3.png)
 
-1. Select the AMC Data source from the **[!UICONTROL AMC Data source]** field to define the type of data expected.
+1. Selecione a fonte de dados AMC no campo **[!UICONTROL AMC Data source]** para definir o tipo de dados esperado.
 
    ![](assets/aam_import_audience_2.png)
 
@@ -52,7 +52,7 @@ O processo de importação leva de 24 a 36 horas para sincronizar, quando os seg
 >
 >Se você estiver importando públicos do Adobe Analytics para o Adobe Campaign, esses públicos precisam ser compartilhados primeiro no Serviço Principal de Pessoas ou no Audience Manager. Esse processo leva de 12 a 24 horas, e deve ser adicionado ao tempo de sincronização de 24 a 36 horas com o Campaign.
 >
->Nesse caso específico, o período de compartilhamento de público pode durar até 60 horas. Para obter mais informações sobre o compartilhamento de público do Adobe Analytics no Serviço Principal de Pessoas e no Audience Manager, consulte esta [documentação](https://marketing.adobe.com/resources/help/en_US/mcloud/t_publish_audience_segment.html).
+>Nesse caso específico, o período de compartilhamento de público pode durar até 60 horas. Para obter mais informações sobre o compartilhamento de público do Adobe Analytics no Serviço Principal de Pessoas e no Audience Manager, consulte esta [documentação](https://marketing.adobe.com/resources/help/pt_BR/mcloud/t_publish_audience_segment.html).
 
 Os dados do público são substituídos completamente sempre quando sincronizados. Apenas segmentos podem ser importados. Dados granulares, incluindo pares chave-valor, características e regras não são compatíveis.
 
@@ -62,19 +62,19 @@ Você pode exportar um público do Adobe Campaign para o Audience Manager ou o S
 
 1. Criação de um novo workflow para construção do target
 1. Usando as diferentes atividades disponíveis, target de conjunto de recipients.
-1. After the targeting, drag and drop an **[!UICONTROL Update shared audience]** activity, then open it.
+1. Depois do target, arraste e solte uma atividade **[!UICONTROL Update shared audience]** e depois a abra.
 
    ![](assets/aam_export_example.png)
 
-1. Define the audience that you want to export via the **[!UICONTROL Select a shared audience]** option. Na janela que abre, você pode selecionar um público existente ou criar um novo público.
+1. Defina o público que deseja exportar por meio da opção **[!UICONTROL Select a shared audience]**. Na janela que abre, você pode selecionar um público existente ou criar um novo público.
 
    Se você selecionar um público existente, somente os novos registros serão adicionados ao público.
 
-   To export your recipient list in a new audience, complete the **[!UICONTROL Segment name]** field then click **[!UICONTROL Create]** before selecting the newly created audience.
+   Para exportar sua lista de recipients para um novo público, preencha o campo **[!UICONTROL Segment name]** e depois clique em **[!UICONTROL Create]** antes de selecionar o público recém-criado.
 
-   Finish the operation by clicking the check symbol at the top right of the window, then the **[!UICONTROL OK]** button.
+   Conclua a operação clicando no símbolo de seleção na parte superior direita da janela e, em seguida, no botão **[!UICONTROL OK]**.
 
-1. Select the **[!UICONTROL AMC Data source]** to specify the expected data type. O schema é determinado automaticamente.
+1. Selecione a **[!UICONTROL AMC Data source]** para especificar o tipo de dados esperado. O schema é determinado automaticamente.
 
    ![](assets/aam_export_audience_activity.png)
 
@@ -82,7 +82,7 @@ Você pode exportar um público do Adobe Campaign para o Audience Manager ou o S
 
 O público é então exportado. A atividade de público salva tem duas transições de saída. A transição principal contém os recipients que foram exportados com êxito. A transição adicional contém os recipients que não puderam ser mapeados com uma ID de visitante ou ID declarada.
 
-A sincronização entre o Adobe Campaign e o Serviço principal de pessoas leva de 24 a 36 horas. Após esse período, é possível encontrar seu novo público no Serviço principal de pessoas e reutilizá-lo em outras soluções da Adobe Experience Cloud. Para obter mais informações sobre como usar um público compartilhado do Adobe Campaign no Serviço principal de pessoas da Adobe, consulte esta [documentação](https://marketing.adobe.com/resources/help/en_US/mcloud/t_audience_create.html).
+A sincronização entre o Adobe Campaign e o Serviço principal de pessoas leva de 24 a 36 horas. Após esse período, é possível encontrar seu novo público no Serviço principal de pessoas e reutilizá-lo em outras soluções da Adobe Experience Cloud. Para obter mais informações sobre como usar um público compartilhado do Adobe Campaign no Serviço principal de pessoas da Adobe, consulte esta [documentação](https://marketing.adobe.com/resources/help/pt_BR/mcloud/t_audience_create.html).
 
 >[!NOTE]
 >
