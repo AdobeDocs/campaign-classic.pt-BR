@@ -14,7 +14,7 @@ discoiquuid: f449ccd5-3965-4ab8-b5a9-993f3260aba9
 index: y
 internal: n
 snippet: y
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 1e8492d8e91d679ac13da875974e27d0f7791dc3
 
 ---
@@ -32,9 +32,9 @@ Para evitar esses problemas, a Adobe recomenda seguir as práticas recomendadas 
 
 >[!NOTE]
 >
->Se sua instância estiver hospedada no AWS, é possível monitorar o armazenamento do servidor SFTP com o [Painel de Controle](https://docs.adobe.com/content/help/en/control-panel/using/sftp-management/sftp-storage-management.html) do Campaign Classic.
+>Se sua instância estiver hospedada no AWS, é possível monitorar o armazenamento do servidor SFTP com o [Painel de Controle](https://docs.adobe.com/content/help/pt-BR/control-panel/using/sftp-management/sftp-storage-management.html) do Campaign Classic.
 >
->Para verificar se sua instância está hospedada no AWS, siga as etapas detalhadas [nessa seção](https://docs.adobe.com/content/help/en/control-panel/using/faq.html#ims-org-id) .
+>Para verificar se sua instância está hospedada no AWS, siga as etapas detalhadas [nessa seção](https://docs.adobe.com/content/help/pt-BR/control-panel/using/faq.html#ims-org-id) .
 
 * As capacidades do tamanho do servidor variam de acordo com sua licença. Em qualquer caso, mantenha o mínimo de dados possíveis e somente pelo tempo necessário (o limite máximo de tempo é 15 dias).
 * Para evitar a expiração de senhas, use a autenticação baseada em chave (as senhas têm um período de validade de 90 dias). Além disso, a autenticação baseada nessa opção permite gerar várias chaves para gerenciar diversas entidades, por exemplo. Ao contrário, essa opção de autenticação exige que a senha seja compartilhada com todas as entidades gerenciadas.
@@ -57,7 +57,7 @@ Para evitar esses problemas, a Adobe recomenda seguir as práticas recomendadas 
 
 A seção abaixo lista as informações para verificar e fornecer ao suporte da Adobe por meio de um [tíquete de suporte](https://support.neolane.net) ao encontrar problemas de conexão com os servidores SFTP hospedados pela Adobe.
 
-1. Verifique se a sua instância está em execução. To do this, open your browser, then make a **[!UICONTROL GET]** call on the instance **[!UICONTROL /r/test]** endpoint:
+1. Verifique se a sua instância está em execução. Para fazer isso, abra o navegador e faça uma chamada **[!UICONTROL GET]** no ponto de extremidade da instância **[!UICONTROL /r/test]**:
 
    ```
    https://instanceUrl/r/test
@@ -90,7 +90,7 @@ A seção abaixo lista as informações para verificar e fornecer ao suporte da 
    Se a porta não for aberta, certifique-se de abrir as conexões de saída em seu lado e tente novamente. Se ainda houver problemas de conexão, compartilhe o resultado do comando com o suporte da Adobe.
 
 1. Verifique se o IP público do qual está tentando iniciar a conexão do SFTP foi fornecido ao suporte da Adobe para ser incluído na lista de permissões.
-1. Se você estiver usando uma autenticação baseada em senha, ela pode ter expirado (as senhas têm um período de validade de 90 dias). Portanto, recomendamos usar uma autenticação baseada em chave (consulte as práticas [recomendadas do servidor](#sftp-server-best-practices)SFTP).
+1. Se você usa uma autenticação baseada em senha, a senha pode ter expirado (as senhas têm um período de validade de 90 dias). Portanto, recomendamos usar uma autenticação baseada em chave (consulte [Práticas recomendadas para o servidor SFTP](#sftp-server-best-practices)).
 1. Se você estiver usando uma autenticação baseada em chave, verifique se a chave usada é a mesma fornecida ao suporte da Adobe para a configuração de instância.
 1. Se você estiver usando FileZilla ou uma ferramenta de FTP equivalente, forneça os detalhes dos logs de conexão no ticket de suporte.
 
