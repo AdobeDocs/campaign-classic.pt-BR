@@ -14,7 +14,7 @@ discoiquuid: 181fcb70-9394-4091-93df-92c39273ec3d
 index: y
 internal: n
 snippet: y
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 209ac4d81d2d27c264ee6b288bcb7fcb1900ffc5
 
 ---
@@ -29,7 +29,7 @@ Ao criar uma delivery, há dois métodos possíveis para integrar ofertas:
 
 ## Fazendo uma delivery com uma chamada para o mecanismo de oferta {#delivering-with-a-call-to-the-offer-engine}
 
-Para apresentar uma oferta durante uma campanha de marketing, basta criar uma ação de delivery clássica com base no canal escolhido. The offer engine is called up when the delivery content is defined, by clicking the **[!UICONTROL Offers]** icon available in the toolbar.
+Para apresentar uma oferta durante uma campanha de marketing, basta criar uma ação de delivery clássica com base no canal escolhido. O mecanismo de oferta é chamado quando o conteúdo de delivery é definido, clicando no ícone **[!UICONTROL Offers]** disponível na barra de ferramentas.
 
 ![](assets/offer_delivery_009.png)
 
@@ -57,11 +57,11 @@ Para inserir apresentações de oferta em um delivery, siga o seguinte processo:
 
    ![](assets/offer_delivery_005.png)
 
-1. Selecione a **[!UICONTROL Exclude non-eligible recipients]** opção, se necessário. Para obter mais informações, consulte [Parâmetros para chamar o mecanismo](#parameters-for-calling-offer-engine)de oferta.
+1. Selecione a opção **[!UICONTROL Exclude non-eligible recipients]** se necessário. Para obter mais informações, consulte [Parâmetros para chamar o mecanismo de oferta](#parameters-for-calling-offer-engine).
 
    ![](assets/offer_delivery_006.png)
 
-1. Se necessário, selecione a **[!UICONTROL Do not display anything if no offers are selected]** opção. Para obter mais informações, consulte [Parâmetros para chamar o mecanismo](#parameters-for-calling-offer-engine)de oferta.
+1. Se necessário, selecione a opção **[!UICONTROL Do not display anything if no offers are selected]**. Para obter mais informações, consulte [Parâmetros para chamar o mecanismo de oferta](#parameters-for-calling-offer-engine).
 
    ![](assets/offer_delivery_007.png)
 
@@ -75,12 +75,12 @@ Para inserir apresentações de oferta em um delivery, siga o seguinte processo:
 
 ### Parâmetros para chamada do motor de oferta {#parameters-for-calling-offer-engine}
 
-* **[!UICONTROL Space]** : espaço do ambiente de oferta que deve ser selecionado para ativar o mecanismo de oferta.
-* **[!UICONTROL Category]** : pasta específica na qual as ofertas são classificadas. Se nenhuma categoria for especificada, todas as ofertas contidas no ambiente serão consideradas pelo motor de oferta, a menos que um tema seja selecionado.
-* **[!UICONTROL Themes]** : palavras-chave definidas como upstream nas categorias. Isso funciona como um filtro e permite refinar o número de ofertas que serão apresentadas ao selecioná-las em um conjunto de categorias.
-* **[!UICONTROL Number of propositions]** : número de ofertas devolvidas pelo mecanismo que podem ser inseridas no corpo de entrega. Se não forem inseridas na mensagem, as ofertas ainda serão geradas, mas não serão apresentadas.
-* **[!UICONTROL Exclude non-eligible recipients]** : Essa opção permite ativar ou desativar a exclusão de recipients para os quais não há ofertas elegíveis suficientes. O número de propostas elegíveis pode ser menor do que o número solicitado de apresentações. Se esta caixa estiver marcada, os recipients que não têm apresentações suficientes serão excluídos do delivery. Se você não selecionar essa opção, esses recipients não serão excluídos, mas não terão o número solicitado de apresentações.
-* **[!UICONTROL Do not display anything if no offer is selected]** : essa opção permite escolher como a mensagem será processada caso uma das propostas não exista. Quando esta caixa é marcada, a representação da proposta ausente não é exibida e nenhum conteúdo aparecerá na mensagem para essa apresentação. Se a caixa não estiver marcada, a mensagem propriamente dita será cancelada durante o envio e os recipients não receberão mais mensagens.
+* **[!UICONTROL Space]**: espaço do ambiente de oferta que deve ser selecionado para ativar o mecanismo de oferta.
+* **[!UICONTROL Category]**: pasta específica na qual as ofertas são classificadas. Se nenhuma categoria for especificada, todas as ofertas contidas no ambiente serão consideradas pelo motor de oferta, a menos que um tema seja selecionado.
+* **[!UICONTROL Themes]**: palavras-chave definidas upstream nas categorias. Isso funciona como um filtro e permite refinar o número de ofertas que serão apresentadas ao selecioná-las em um conjunto de categorias.
+* **[!UICONTROL Number of propositions]**: número de ofertas retornadas pelo mecanismo que podem ser inseridas no corpo do delivery. Se não forem inseridas na mensagem, as ofertas ainda serão geradas, mas não serão apresentadas.
+* **[!UICONTROL Exclude non-eligible recipients]**: essa opção permite ativar ou desativar a exclusão de recipients para os quais não há ofertas elegíveis suficientes. O número de propostas elegíveis pode ser menor do que o número solicitado de apresentações. Se esta caixa estiver marcada, os recipients que não têm apresentações suficientes serão excluídos do delivery. Se você não selecionar essa opção, esses recipients não serão excluídos, mas não terão o número solicitado de apresentações.
+* **[!UICONTROL Do not display anything if no offer is selected]**: essa opção permite escolher como a mensagem será processada caso uma das proposições não exista. Quando esta caixa é marcada, a representação da proposta ausente não é exibida e nenhum conteúdo aparecerá na mensagem para essa apresentação. Se a caixa não estiver marcada, a mensagem propriamente dita será cancelada durante o envio e os recipients não receberão mais mensagens.
 
 ### Inserção de uma apresentação de oferta em um delivery {#inserting-an-offer-proposition-into-a-delivery}
 
@@ -97,25 +97,25 @@ Também é possível apresentar ofertas em um delivery usando delivery outlines.
 Para obter mais informações sobre delivery outlines, consulte o guia [Campaign - MRM](../../campaign/using/marketing-campaign-deliveries.md#associating-and-structuring-resources-linked-via-a-delivery-outline).
 
 1. Crie uma nova campanha ou acesse uma campanha existente.
-1. Acesse os contornos de entrega por meio da guia campanha **[!UICONTROL Edit]** > **[!UICONTROL Documents]** .
-1. Add an outline then insert as many offers as you like into it by right-clicking on the outline and selecting **[!UICONTROL New]** > **[!UICONTROL Offer]**, then save the campaign.
+1. Acesse as estruturas de delivery por meio da guia da campanha **[!UICONTROL Edit]** > **[!UICONTROL Documents]**.
+1. Adicione uma estrutura e depois insira quantas ofertas desejar, clicando com o botão direito do mouse na estrutura e selecionando **[!UICONTROL New]** > **[!UICONTROL Offer]**, e então salve a campanha.
 
    ![](assets/int_compo_offre1.png)
 
 1. Crie um delivery cujos delivery outlines você tem acesso (por exemplo, uma delivery de mala direta).
-1. Ao editar a entrega, clique em **[!UICONTROL Select a delivery outline]**.
+1. Ao editar o delivery, clique em **[!UICONTROL Select a delivery outline]**.
 
    >[!NOTE]
    >
-   >Depending on the type of delivery, this option can be found in the **[!UICONTROL Properties]** > **[!UICONTROL Advanced]** menu (for email deliveries for example).
+   >Dependendo do tipo de delivery, essa opção pode ser encontrada no menu **[!UICONTROL Properties]** > **[!UICONTROL Advanced]** (para deliveries de email, por exemplo).
 
    ![](assets/int_compo_offre2.png)
 
-1. Using the **[!UICONTROL Offers]** button, you can then configure the offer space as well as the number of offers to present in the delivery.
+1. Usando o botão **[!UICONTROL Offers]**, você pode configurar o espaço de ofertas, bem como o número de ofertas a serem apresentadas no delivery.
 
    ![](assets/int_compo_offre3.png)
 
-1. Add the propositions into the delivery body using the personalization fields (for more on this, refer to the [Inserting an offer proposition into a delivery](#inserting-an-offer-proposition-into-a-delivery) section), or in the case of a direct mail delivery, by editing the extraction file format.
+1. Adicione as apresentações ao corpo do delivery usando os campos de personalização (para obter mais informações, consulte a seção [Inserção de uma apresentação de oferta em um delivery](#inserting-an-offer-proposition-into-a-delivery)) ou, no caso de um delivery de correspondência direta, editando o formato de extração de arquivo.
 
    As apresentações serão selecionadas nas ofertas referenciadas no delivery outline.
 
