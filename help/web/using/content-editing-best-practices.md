@@ -14,7 +14,7 @@ discoiquuid: 3ad38469-8e22-4bfc-8029-5d360f76d6bb
 index: y
 internal: n
 snippet: y
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: c9c9d5f96856ce9e19571bad032d2bf04eaa60bd
 
 ---
@@ -26,7 +26,7 @@ Para garantir a operação ideal do editor, recomendamos observar as seguintes d
 
 * Antes de **importar um template da página HTML** no Adobe Campaign, abra e exiba o template corretamente nos vários navegadores.
 * Se a página HTML contiver **scripts JavaScript**, eles precisarão executar **sem erros** fora do editor.
-* When building a template, we recommend adding a **&#39;type&#39;** attribute to `<input>` tags. Essas informações serão processadas pelo editor e ajudarão o usuário a vincular um campo do banco de dados ao campo do formulário, ao configurar a aplicação web.
+* Ao criar um template, recomendamos adicionar um atributo **‘type’** às `<input>` tags. Essas informações serão processadas pelo editor e ajudarão o usuário a vincular um campo do banco de dados ao campo do formulário, ao configurar a aplicação web.
 
    Exemplo de código HTML no template:
 
@@ -38,13 +38,13 @@ Para garantir a operação ideal do editor, recomendamos observar as seguintes d
 
    ![](assets/dce_sidebar_inputtypechanges.png)
 
-   A lista oficial de atributos &#39;type&#39; está disponível [neste site](https://www.w3schools.com/tags/att_input_type.asp).
+   A lista oficial de atributos ‘type’ está disponível [neste site](https://www.w3schools.com/tags/att_input_type.asp).
 
 * Etapas para simular uma página final com o DCE:
 
    ![](assets/dce_enchainement.png)
 
-* Make sure that there is only one `<body> </body>` in the page.
+* Verifique se há apenas um `<body> </body>` na página.
 * Quando um arquivo CSS ou JS é carregado, as imagens contidas no arquivo .zip não são carregadas. As referências a essas imagens presentes no CSS, portanto, não são atualizadas.
 
 ## Formatos compatíveis com o editor de conteúdo {#content-editor-supported-formats}
@@ -56,7 +56,7 @@ A função de importação do Editor de conteúdo digital funciona conforme os s
 * CSS: as imagens presentes no arquivo .zip não são importadas. As referências a essas imagens no CSS não são atualizadas.
 * JS: as imagens presentes no arquivo .zip não são importadas. As referências a essas imagens no JS não são atualizadas.
 * Iframe: as páginas vinculadas não são importadas.
-* Landing pages e aplicações web: se uma tag de **formulário** estiver ausente, um aviso será exibido. A `<form> </form>` must always be present in the message body.
+* Landing pages e aplicações web: se uma tag de **formulário** estiver ausente, um aviso será exibido. Um `<form> </form>` deve estar sempre presente no corpo da mensagem.
 
 O Editor de conteúdo digital também funciona com as seguintes Páginas de código compatíveis:
 
