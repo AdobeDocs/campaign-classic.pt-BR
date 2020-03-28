@@ -14,7 +14,7 @@ discoiquuid: 010c88f4-9444-448f-bb7b-7191517d2e23
 index: y
 internal: n
 snippet: y
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 215e4d1ca78938b38b53cae0357612deebf7727b
 
 ---
@@ -24,9 +24,9 @@ source-git-commit: 215e4d1ca78938b38b53cae0357612deebf7727b
 
 ## Criação da oferta {#creating-the-offer}
 
-Para criar uma simulação, aplique as seguintes etapas:
+Para criar uma oferta, aplique as seguintes etapas:
 
-1. Vá para o **[!UICONTROL Campaigns]** universo e clique no **[!UICONTROL Offers]** link.
+1. Vá para o universo **[!UICONTROL Campaigns]** e clique no link **[!UICONTROL Offers]**.
 
    ![](assets/offer_create_001.png)
 
@@ -48,7 +48,7 @@ Para criar uma simulação, aplique as seguintes etapas:
 
 ## Configuração da qualificação para a oferta {#configuring-offer-eligibility}
 
-In the **[!UICONTROL Eligibility]** tab, define the period the offer will be valid for and can be presented, the filters to apply to the target and the offer weight.
+Na guia **[!UICONTROL Eligibility]**, defina o período em que a oferta será válida e poderá ser apresentada, os filtros a serem aplicados no target e o peso da oferta.
 
 ### Definição do período de qualificação de uma oferta {#defining-the-eligibility-period-of-an-offer}
 
@@ -62,11 +62,11 @@ Fora dessas datas, a oferta não será selecionada pelo mecanismo do Interaction
 
 É possível aplicar filtros ao target da oferta.
 
-To do this, click the **[!UICONTROL Edit query]** link and select the filter you want to apply. (Consulte [esta seção](../../platform/using/steps-to-create-a-query.md#step-4---filter-data)).
+Para fazer isso, clique no link **[!UICONTROL Edit query]** e selecione o filtro que deseja aplicar. (Consulte [esta seção](../../platform/using/steps-to-create-a-query.md#step-4---filter-data)).
 
 ![](assets/offer_eligibility_create_003.png)
 
-Se os filtros predefinidos já tiverem sido criados, é possível selecioná-los na lista de filtros de usuário. Para obter mais informações, consulte [Criação de filtros](../../interaction/using/creating-predefined-filters.md)predefinidos.
+Se os filtros predefinidos já tiverem sido criados, é possível selecioná-los na lista de filtros de usuário. Para obter mais informações, consulte [Criação de filtros predefinidos](../../interaction/using/creating-predefined-filters.md).
 
 ![](assets/offer_eligibility_create_004.png)
 
@@ -80,9 +80,9 @@ Por exemplo, uma oferta pode ter um peso de A para contatos com idade entre 18 e
 
 >[!NOTE]
 >
->O peso atribuído pode ser modificado temporariamente de acordo com os parâmetros da categoria à qual a oferta pertence. Para obter mais informações, consulte [Criar categorias](../../interaction/using/creating-offer-categories.md)de ofertas.
+>O peso atribuído pode ser modificado temporariamente de acordo com os parâmetros da categoria à qual a oferta pertence. Para obter mais informações, consulte [Criação de categorias de oferta](../../interaction/using/creating-offer-categories.md).
 
-Para criar uma simulação, aplique as seguintes etapas:
+Para criar um peso em uma oferta, aplique as seguintes etapas:
 
 1. Clique em **[!UICONTROL Add]**.
 
@@ -120,22 +120,22 @@ Para criar uma simulação, aplique as seguintes etapas:
 
 Quando a configuração for concluída, um resumo das regras de eligibilidade estará disponível no painel de ofertas.
 
-Para exibi-la, clique no **[!UICONTROL Schedule and eligibility rules]** link.
+Para fazer isso, clique no link **[!UICONTROL Schedule and eligibility rules]**.
 
 ![](assets/offer_eligibility_create_005.png)
 
 ## Criação do conteúdo da oferta {#creating-the-offer-content}
 
-1. Clique na **[!UICONTROL Edit]** guia e, em seguida, clique na **[!UICONTROL Content]** guia.
+1. Clique na guia **[!UICONTROL Edit]** e depois na guia **[!UICONTROL Content]**.
 
    ![](assets/offer_content_create_001.png)
 
 1. Preencha os vários campos do conteúdo da oferta.
 
-   * **[!UICONTROL Title]** : Especifique o título que deseja fazer aparecer em sua oferta. Warning: this is not referring to the offer&#39;s label, which is defined in the **[!UICONTROL General]** tab.
-   * **[!UICONTROL Destination URL]** : especifique o URL da oferta. Para ser processado corretamente, ele deve começar com &quot;http://&quot; ou &quot;https://&quot;.
-   * **[!UICONTROL Image URL]** : especifique um URL ou um caminho de acesso para a imagem de sua oferta.
-   * **[!UICONTROL HTML content]** / **[!UICONTROL Text content]** : digite o corpo da sua oferta na guia desejada. To generate tracking, the **[!UICONTROL HTML content]** must be composed of HTML elements that can be enclosed in a `<div>` type element. For example, the result of a `<table>` element in the HTML page will be as followed:
+   * **[!UICONTROL Title]** : especifique o título que quer que apareça em sua oferta. Aviso: não se refere ao rótulo da oferta, que é definido na guia **[!UICONTROL General]**.
+   * **[!UICONTROL Destination URL]**: especifique o URL da sua oferta. Para ser processado corretamente, ele deve começar com &quot;http://&quot; ou &quot;https://&quot;.
+   * **[!UICONTROL Image URL]**: especifique um URL ou um caminho de acesso para a imagem da sua oferta.
+   * **[!UICONTROL HTML content]** / **[!UICONTROL Text content]**: digite o corpo da oferta na guia desejada. Para gerar o rastreamento, o **[!UICONTROL HTML content]** deve ser composto de elementos HTML que podem ser colocados em um elemento de tipo `<div>`. Por exemplo, o resultado de um elemento `<table>` na página HTML será o seguinte:
 
    ```
       <div> 
@@ -156,7 +156,7 @@ Para exibi-la, clique no **[!UICONTROL Schedule and eligibility rules]** link.
 
    ![](assets/offer_content_create_002.png)
 
-   To find the required fields as they were defined during offer space configuration, click the **[!UICONTROL Content definitions]** link to display the list. Para obter mais informações, consulte [Criação de espaços](../../interaction/using/creating-offer-spaces.md)de oferta.
+   Para localizar os campos obrigatórios conforme foram definidos durante a configuração do espaço de oferta, clique no link **[!UICONTROL Content definitions]** para exibir a lista. Para obter mais informações, consulte [Criação de espaços de oferta](../../interaction/using/creating-offer-spaces.md).
 
    ![](assets/offer_content_create_003.png)
 
@@ -166,7 +166,7 @@ Para exibi-la, clique no **[!UICONTROL Schedule and eligibility rules]** link.
 
 Assim que o conteúdo da oferta for configurado, é possível pré-visualizar a oferta como ela aparecerá para o recipient. Para fazer isso:
 
-1.  Clique na **[!UICONTROL Preview]** guia.
+1. Clique na guia **[!UICONTROL Preview]**.
 
    ![](assets/offer_preview_create_001.png)
 
@@ -186,7 +186,7 @@ Assim que o conteúdo da oferta for configurado, é possível pré-visualizar a 
 >
 >Essas hipóteses são executadas via Gestor de resposta. Verifique o contrato de licença.
 
-Hypotheses carried out on an offer proposition are referenced in their **[!UICONTROL Measure]** tab.
+As hipóteses executadas em uma apresentação de oferta são referenciadas na guia **[!UICONTROL Measure]**.
 
 A criação de hipóteses é detalhada [nesta página](../../campaign/using/about-response-manager.md).
 
