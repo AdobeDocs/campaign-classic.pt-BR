@@ -14,7 +14,7 @@ discoiquuid: 43afd347-6600-409a-8f67-a4f3e9776d51
 index: y
 internal: n
 snippet: y
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 7dbc876fae0bde78e3088ee1ab986cd09e9bcc38
 
 ---
@@ -22,13 +22,13 @@ source-git-commit: 7dbc876fae0bde78e3088ee1ab986cd09e9bcc38
 
 # Sobre a personalização{#about-personalization}
 
-As mensagens entregues pelo Adobe Campaign podem ser personalizadas de várias maneiras diferentes, relacionadas ao conteúdo ou à aparência das mensagens. Essas maneiras podem ser combinadas de acordo com os critérios obtidos especialmente dos perfis do destinatário. For email deliveries, you can define the elements and personalization conditions of a delivery directly in JavaScript from the **[!UICONTROL Source]** tab of the message. Em geral, o Adobe Campaign permite:
+As mensagens entregues pelo Adobe Campaign podem ser personalizadas de várias maneiras diferentes, relacionadas ao conteúdo ou à aparência das mensagens. Essas maneiras podem ser combinadas de acordo com os critérios obtidos especialmente dos perfis do destinatário. Para deliveries de email, você pode definir os elementos e as condições de personalização de um delivery diretamente em JavaScript na guia **[!UICONTROL Source]** da mensagem. Em geral, o Adobe Campaign permite:
 
-* Personalizar o formato da mensagem. Consulte Conteúdo [da](../../delivery/using/defining-the-email-content.md#message-content)mensagem.
-* Inserir campos de personalização dinâmicos. Consulte Campos [de](../../delivery/using/personalization-fields.md)personalização.
-* Inserir blocos de personalização predefinidos. Consulte Blocos [de](../../delivery/using/personalization-blocks.md)personalização.
-* Criar conteúdo condicional. Consulte a seção Conteúdo [](../../delivery/using/conditional-content.md) condicional.
+* Personalizar o formato da mensagem. Consulte [Conteúdo da mensagem](../../delivery/using/defining-the-email-content.md#message-content).
+* Inserir campos de personalização dinâmicos. Consulte [Campos de personalização](../../delivery/using/personalization-fields.md).
+* Inserir blocos de personalização predefinidos. Consulte [Blocos de personalização](../../delivery/using/personalization-blocks.md).
+* Criar conteúdo condicional. Consulte a seção [Conteúdo condicional](../../delivery/using/conditional-content.md).
 
 >[!CAUTION]
 >
->As variáveis a seguir são variáveis internas que podem ser usadas para personalização, mas não devem ser modificadas: **entrega**, **mensagem**, **dataSource**, **targetData**, **provedor**************, coupon, Value, proposition.
+>As variáveis a seguir são variáveis internas que podem ser usadas para personalização, mas não devem ser modificadas: **delivery**, **message**, **dataSource**, **targetData**, **provider**, **coupon**, **couponValue** e **proposition**.
