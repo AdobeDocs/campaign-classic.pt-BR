@@ -14,7 +14,7 @@ discoiquuid: 9a3f1dc9-71ef-4039-94b4-a217996f6a80
 index: y
 internal: n
 snippet: y
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 20f835c357d016643ea1f3209ee4dfb6d3239f90
 
 ---
@@ -24,8 +24,8 @@ source-git-commit: 20f835c357d016643ea1f3209ee4dfb6d3239f90
 
 Existem dois tipos de operadores que usam o Interaction: gerentes de oferta e gerentes de delivery. Cada um deles tem direitos específicos que só dão acesso a algumas partes da árvore e da plataforma.
 
-* **[!UICONTROL Offer manager]** : cria e mantém ofertas
-* **[!UICONTROL Delivery manager]** : aprova e usa ofertas
+* **[!UICONTROL Offer manager]**: cria e mantém ofertas
+* **[!UICONTROL Delivery manager]**: aprova e usa ofertas
 
 As etapas para criar operadores específicos ao Interaction são idênticas às usadas para criar todos os outros operadores na plataforma. Para obter mais informações, consulte [esta seção](../../platform/using/access-management.md#creating-an-operator). Os direitos são configurados durante a criação do operador.
 
@@ -38,8 +38,8 @@ As etapas para criar operadores específicos ao Interaction são idênticas às 
 
 Os direitos atribuídos ao gerente de ofertas permitem que eles executem as seguintes tarefas:
 
-* Modificar ambientes **[!UICONTROL Design]**.
-* Visualizar ambientes **[!UICONTROL Live]**.
+* Modificar os ambientes **[!UICONTROL Design]**.
+* Exibir ambientes **[!UICONTROL Live]**.
 * Configurar funções de administração (espaços e filtros predefinidos).
 * Criar e alterar categorias.
 * Criar ofertas.
