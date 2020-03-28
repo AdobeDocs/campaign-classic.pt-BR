@@ -14,22 +14,22 @@ discoiquuid: 853f26ad-d373-49a5-952e-4197ffc3d904
 index: y
 internal: n
 snippet: y
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 30f313cecf1c3d7c65f6524a3f86a1c28b35f679
 
 ---
 
 
-# Aprimoramento da capacidade de entrega por meio da reparticipação{#re-engagement}
+# Aprimoramento da capacidade de entrega por meio de reengajamento{#re-engagement}
 
-Ao implementar a capacidade de entrega, algumas das práticas recomendadas consistem em tentar manter uma base de assinantes saudável e melhorar a capacidade de entrega através de estratégias de reenvolvimento.
+Ao implementar a capacidade de entrega, algumas das práticas recomendadas consistem em tentar manter uma base de assinantes saudável e melhorar a capacidade de entrega por meio de estratégias de reengajamento.
 
 * Manter uma base de assinantes saudável é um dos principais aspectos para garantir um delivery adequado e consistente. Muitos problemas de deliverability surgem de práticas e manutenção de dados ruins.
 * Um dos problemas mais comuns que os profissionais de marketing enfrentam hoje é a inatividade de assinantes (também conhecida como baixa ou sem engajamento), o que pode afetar negativamente o delivery de emails e gerar um ROI baixo.
 
 >[!NOTE]
 >
->Para obter mais informações sobre as estratégias de campanha de reenvolvimento e os serviços de entrega da Adobe, entre em contato com seu consultor de entrega ou fale com seu agente de vendas da Adobe.
+>Para obter mais informações sobre estratégias de campanha de reengajamento e serviços de capacidade de entrega da Adobe, entre em contato com seu consultor de capacidade de entrega ou fale com o seu agente de vendas da Adobe.
 
 ## Como os ISPs visualizam as atividades sem engajamento? {#how-do-isps-view-non-engagement-activity-}
 
@@ -54,12 +54,12 @@ De acordo com um estudo da Return Path, as campanhas de engajamento vêm com um 
 * A primeira etapa é identificar os assinantes que têm pouca atividade de clique ou de abertura e segmentar esse grupo correspondente com base em um intervalo de tempo definido. A regra de ouro é rever os assinantes que não abriram ou não clicaram em um email nos últimos 90 dias. No entanto, isso varia de acordo com a natureza da empresa (por exemplo, envio sazonal).
 * Outro ponto para considerar ao definir cronogramas é que os ISPs e as empresas na blacklist consideram que o engajamento está entre 1,5 e 1,8 ano. Além disso, atividades comportamentais, como compras e atividade do site, ou outros pontos de contato, como preferências durante a fase de inscrição ou o primeiro ponto de contato.
 
-### Phase 2 {#phase-2}
+### Fase 2 {#phase-2}
 
 * Depois que um segmento é definido, a próxima etapa é criar uma campanha de reengajamento que satisfaça o assinante de acordo com as métricas identificadas. A criação de uma linha de assunto ajudará a aumentar o interesse do assinante. De acordo com um estudo dda Return Path, linhas e conteúdo de assunto que declaram &quot;sentimos sua falta&quot; geram taxas de resposta mais altas do que &quot;queremos você de volta&quot;.
 * Um incentivo também pode ser oferecido para reengajamento com o email. Ao considerar ofertas com descontos, é melhor usar valores em reais em vez de porcentagens. A Return Path também sugere fazer isso, pois incorre taxas de resposta mais altas. Finalmente, executar testes de divisão A/B para analisar a resposta e as taxas de sucesso também é uma opção útil.
 
-### Phase 3 {#phase-3}
+### Fase 3 {#phase-3}
 
 A próxima etapa é determinar a frequência da campanha de reengajamento. Ao contrário das mensagens de reconfirmação, as campanhas de reengajamento são destinadas a conquistar o assinante com uma série de emails com o tempo. O exemplo a seguir se refere à frequência.
 
@@ -67,7 +67,7 @@ A próxima etapa é determinar a frequência da campanha de reengajamento. Ao co
 
 Os assinantes que interagem com a campanha seguindo a atividade de abertura ou de clique são adicionados novamente à lista de assinantes engajados.
 
-### Phase 4 {#phase-4}
+### Fase 4 {#phase-4}
 
 * A próxima fase é identificar os assinantes que não mostram nenhuma atividade continuamente e reduzir gradativamente o envio de emails a eles durante um período. Se não houve atividade no ano passado, é bom colocar a subscrição de email dos assinantes em espera. Embora eles não tenham mostrado interesse no conteúdo do email, há sempre uma última chance de reativarem sua subscrição ao enviar uma única campanha de reconfirmação.
 * As campanhas de reconfirmação são uma boa maneira de perguntar aos assinantes que estão inativos por um longo período se querem permanecer na lista de subscrição. Ao criar a campanha, é preferível adicionar um link &quot;clique aqui&quot; para que possam confirmar a ação e verificar seu endereço. Dessa forma, a ação pode ser registrada no banco de dados. Veja abaixo um exemplo de um email de reconfirmação:
