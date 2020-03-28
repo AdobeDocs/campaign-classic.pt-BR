@@ -14,7 +14,7 @@ discoiquuid: 8b239d5e-2317-42c8-9fee-7d40bea624da
 index: y
 internal: n
 snippet: y
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 579329d9194115065dff2c192deb0376c75e67bd
 
 ---
@@ -22,7 +22,7 @@ source-git-commit: 579329d9194115065dff2c192deb0376c75e67bd
 
 # Iniciar e finalizar{#start-and-end}
 
-The **[!UICONTROL Start]** and **[!UICONTROL End]** activities allow you to graphically mark the start and end of a workflow. Essas atividades não têm impacto funcional e, portanto, são opcionais.
+As atividades **[!UICONTROL Start]** e **[!UICONTROL End]** permitem marcar graficamente o início e o fim de um workflow. Essas atividades não têm impacto funcional e, portanto, são opcionais.
 
 * **[!UICONTROL Start]**
 
@@ -32,7 +32,7 @@ The **[!UICONTROL Start]** and **[!UICONTROL End]** activities allow you to grap
 
 * **[!UICONTROL End]**
 
-   You can configure the **[!UICONTROL End]** activity to interrupt all tasks that are in progress. Para fazer isso, clique duas vezes na atividade para exibir suas propriedades e marque a opção apropriada.
+   É possível configurar a atividade **[!UICONTROL End]** para interromper todas as tarefas em andamento. Para fazer isso, clique duas vezes na atividade para exibir suas propriedades e marque a opção apropriada.
 
    ![](assets/s_user_segmentation_end.png)
 
