@@ -14,7 +14,7 @@ discoiquuid: 3bd113c3-da67-4f4f-aa40-f4c7860a8569
 index: y
 internal: n
 snippet: y
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 215e4d1ca78938b38b53cae0357612deebf7727b
 
 ---
@@ -30,7 +30,7 @@ Em nosso banco de dados, há uma categoria de ofertas de viagem para a África. 
 
    ![](assets/offer_delivery_example_001.png)
 
-1. Edit the email delivery and click the **[!UICONTROL Offers]** icon.
+1. Edite o delivery do email e clique no ícone **[!UICONTROL Offers]**.
 
    ![](assets/offer_delivery_example_002.png)
 
@@ -58,18 +58,18 @@ Em nosso banco de dados, há uma categoria de ofertas de viagem para a África. 
 
    ![](assets/offer_delivery_example_008.png)
 
-1. Click **[!UICONTROL Preview]** to preview your offers in the delivery then select a recipient to preview the offers as they will receive them.
+1. Clique em **[!UICONTROL Preview]** para visualizar as ofertas no delivery e, em seguida, selecione um recipient para visualizar as ofertas que eles receberão.
 
    ![](assets/offer_delivery_example_009.png)
 
 1. Salve a delivery e inicie o workflow para construção do target.
-1. Open your delivery and click the **[!UICONTROL Audit]** tab of your delivery: you can see that the offer engine has selected the propositions to be made from the various offers in the catalog.
+1. Abra o delivery e clique na guia **[!UICONTROL Audit]** dele: é possível ver que o mecanismo de oferta selecionou as propostas a serem feitas dentre as várias ofertas do catálogo.
 
    ![](assets/offer_delivery_example_010.png)
 
 ## Executar uma simulação de oferta {#perform-an-offer-simulation}
 
-1. No **[!UICONTROL Profiles and Targets]** universo, clique no **[!UICONTROL Simulations]** link e no **[!UICONTROL Create]** botão.
+1. No universo **[!UICONTROL Profiles and Targets]**, clique no link **[!UICONTROL Simulations]** e, em seguida, clique no botão **[!UICONTROL Create]**.
 
    ![](assets/offer_simulation_001.png)
 
@@ -81,7 +81,7 @@ Em nosso banco de dados, há uma categoria de ofertas de viagem para a África. 
 
    ![](assets/offer_simulation_example_003.png)
 
-1. Clique na **[!UICONTROL Edit]** guia e, em seguida, **[!UICONTROL Scope]**.
+1. Clique na guia **[!UICONTROL Edit]** e em **[!UICONTROL Scope]**.
 
    ![](assets/offer_simulation_example_004.png)
 
@@ -110,21 +110,21 @@ Em nosso banco de dados, há uma categoria de ofertas de viagem para a África. 
 
    ![](assets/offer_simulation_example_009.png)
 
-1. Save your settings, then click **[!UICONTROL Start]** in the **[!UICONTROL Dashboard]** tab to run the simulation.
+1. Salve as configurações e clique em **[!UICONTROL Start]**, na guia **[!UICONTROL Dashboard]**, para executar a simulação.
 
    ![](assets/offer_simulation_example_010.png)
 
-1. Once the simulation is finished, consult the **[!UICONTROL Results]** for a detailed breakdown of propositions per offer.
+1. Uma vez concluída a simulação, consulte os **[!UICONTROL Results]** para obter uma análise detalhada das propostas por oferta.
 
    No nosso exemplo, o mecanismo de oferta baseou o detalhamento da oferta em 3 propostas.
 
    ![](assets/offer_simulation_example_011.png)
 
-1. Display the **[!UICONTROL Breakdown of offers by rank]** to view the list of offers selected by the offer engine.
+1. Exiba **[!UICONTROL Breakdown of offers by rank]** para visualizar a lista de ofertas selecionadas pelo mecanismo de oferta.
 
    ![](assets/offer_simulation_example_012.png)
 
-1. If necessary, you can change the scope settings and run the simulation again by clicking **[!UICONTROL Start simulation]**.
+1. Se necessário, é possível alterar as configurações do escopo e executar a simulação novamente clicando em **[!UICONTROL Start simulation]**.
 
    ![](assets/offer_simulation_example_010.png)
 
