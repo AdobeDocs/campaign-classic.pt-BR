@@ -14,7 +14,7 @@ discoiquuid: acab51f3-686b-4d2b-bb02-8fbfae36b1ba
 index: y
 internal: n
 snippet: y
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 20f835c357d016643ea1f3209ee4dfb6d3239f90
 
 ---
@@ -32,7 +32,7 @@ Para configurar essa atividade, insira seu rótulo e selecione o conjunto princi
 >
 >Para obter mais informações sobre como configurar e usar a atividade de exclusão, consulte [Excluir uma população (Exclusão)](../../workflow/using/targeting-data.md#excluding-a-population--exclusion-).
 
-Check the **[!UICONTROL Generate complement]** option if you wish to exploit the remaining population. O complemento conterá o público principal de entrada menos o público de saída. Uma transição de output adicional será adicionada à atividade, da seguinte maneira:
+Marque a opção **[!UICONTROL Generate complement]** se desejar explorar a população restante. O complemento conterá o público principal de entrada menos o público de saída. Uma transição de output adicional será adicionada à atividade, da seguinte maneira:
 
 ![](assets/s_user_segmentation_exclu_compl.png)
 
@@ -40,15 +40,15 @@ Check the **[!UICONTROL Generate complement]** option if you wish to exploit the
 
 O exemplo a seguir busca compilar uma lista de recipients com idade entre 18 e 30 anos, enquanto exclui os moradores de Paris.
 
-1. Insert and open an **[!UICONTROL Exclusion]** -type activity following two queries. O primeiro query destina-se aos recipients que moram em Paris. O segundo query destina-se aos com idade de 18 a 30 anos.
+1. Insira e abra uma atividade do tipo **[!UICONTROL Exclusion]** seguida de dois queries. O primeiro query destina-se aos recipients que moram em Paris. O segundo query destina-se aos com idade de 18 a 30 anos.
 1. Insira o conjunto principal. Aqui, o conjunto principal é o query de **18-30 anos.** Os elementos pertencentes ao segundo conjunto serão excluídos do resultado final.
-1. Check the **[!UICONTROL Generate complement]** option if you wish to exploit the data that remains after the exclusion. Nesse caso, o complemento é composto por recipients com idade entre 18 e 30 anos que vivem em Paris.
+1. Marque a opção **[!UICONTROL Generate complement]** se quiser explorar os dados restantes após a exclusão. Nesse caso, o complemento é composto por recipients com idade entre 18 e 30 anos que vivem em Paris.
 1. Aprove a configuração de exclusão e depois insira uma atividade de lista de atualização no resultado. Você também pode inserir uma atualização de lista adicional no complemento onde for necessário.
 1. Execute o workflow Neste exemplo, o resultado é composto por recipients com idade entre 18 e 30 anos, mas esses que moram em Paris são excluídos e enviados ao complemento.
 
    ![](assets/exclusion_example.png)
 
-The blacklist importation example uses an **Exclusion**-type activity which can be found in [Read list](../../workflow/using/read-list.md).
+O exemplo de importação de blacklist usa uma atividade do tipo **Exclusion** que pode ser encontrada em [Read list](../../workflow/using/read-list.md).
 
 ## Parâmetros de entrada {#input-parameters}
 
@@ -63,6 +63,6 @@ Cada evento de entrada deve especificar um target definido por esses parâmetros
 * schema
 * recCount
 
-Esse conjunto de três valores identifica o target resultante da exclusão. **[!UICONTROL tableName]** é o nome da tabela que registra os identificadores de metas, **[!UICONTROL schema]** é o esquema da população (normalmente nms:customer) e **[!UICONTROL recCount]** é o número de elementos na tabela.
+Esse conjunto de três valores identifica o target resultante da exclusão. **[!UICONTROL tableName]** é o nome da tabela que registra os identificadores de target, **[!UICONTROL schema]** é o schema do público (normalmente nms:recipient) e **[!UICONTROL recCount]** é o número de elementos na tabela.
 
 A transição associada ao complemento tem os mesmos parâmetros.
