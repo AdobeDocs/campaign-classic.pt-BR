@@ -14,7 +14,7 @@ discoiquuid: a2a65f97-425b-44b2-8cf4-beea850423bc
 index: y
 internal: n
 snippet: y
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 67dce820b7a90163032ee72263a9dd23b521ea69
 
 ---
@@ -28,7 +28,7 @@ Para obter mais informações sobre delivery outlines no Adobe Campaign, consult
 
 Para configurar a atividade, basta marcar outline desejado e a data de contato planejada. É possível adicionar regras do filtro adicionando tipologias ou regras de tipologia.
 
-## Example: Inserting an offer via a delivery outline {#example--inserting-an-offer-via-a-delivery-outline}
+## Exemplo: Inserção de uma oferta por meio de um esboço de entrega.{#example--inserting-an-offer-via-a-delivery-outline}
 
 A atividade delivery outline, disponível nos workflows da campanha, permite apresentar ofertas mencionadas em um delivery outline na campanha atual em andamento.
 
@@ -44,7 +44,7 @@ A atividade delivery outline, disponível nos workflows da campanha, permite apr
 1. Preencha os campos disponíveis de acordo com seu delivery.
 1. Há dois casos possíveis:
 
-   * If you would like to call the offer engine, check the **[!UICONTROL Restrict the number of propositions selected]** box. Especifique o espaço de oferta e o número de propostas que serão apresentadas no delivery.
+   * Se desejar chamar o mecanismo de oferta, marque a caixa **[!UICONTROL Restrict the number of propositions selected]**. Especifique o espaço de oferta e o número de propostas que serão apresentadas no delivery.
 
       Os pesos da oferta e as regras de qualificação serão considerados pelo mecanismo de oferta.
 
