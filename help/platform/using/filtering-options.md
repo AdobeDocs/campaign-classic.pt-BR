@@ -14,7 +14,7 @@ discoiquuid: 199eb687-3da6-49c1-9997-ef1cbd2647b6
 index: y
 internal: n
 snippet: y
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 1c86322fa95aee024f6c691b61a10c21a9a22eb7
 
 ---
@@ -33,13 +33,13 @@ Esses dados podem ser filtrados por meio das opções localizadas na parte super
 Há várias maneiras de filtrar os dados a serem exibidos. Se necessário, os filtros podem ser usados juntos:
 
 * Filtrar em pastas, consulte [Filtrar por pasta](#filter-by-folder),
-* Filtrar por estado, consultar [Filtrar por estado](#filter-by-status),
+* Filtrar por estado, consulte [Filtrar por status](#filter-by-status),
 * Classificação de dados, consulte [Pedido por](#order-by),
-* Pesquisar, consulte Pesquisa [](#quick-search)rápida.
+* Pesquisar, consulte [Pesquisa rápida](#quick-search).
 
 ## Filtrar por pasta {#filter-by-folder}
 
-Click the **[!UICONTROL Folder]** icon to select the folder containing the data to display.
+Clique no ícone **[!UICONTROL Folder]** para selecionar a pasta com os dados a serem exibidos.
 
 ![](assets/filter_web_select_folder.png)
 
