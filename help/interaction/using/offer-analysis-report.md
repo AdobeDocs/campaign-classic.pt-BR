@@ -14,7 +14,7 @@ discoiquuid: 6aae6a10-b03e-41f1-a6e9-29100800bae1
 index: y
 internal: n
 snippet: y
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 579329d9194115065dff2c192deb0376c75e67bd
 
 ---
@@ -22,7 +22,7 @@ source-git-commit: 579329d9194115065dff2c192deb0376c75e67bd
 
 # Relatório da análise da oferta{#offer-analysis-report}
 
-The **[!UICONTROL Offer analysis]** report provides you with an overview of the number of accepted or rejected propositions.
+O relatório **[!UICONTROL Offer analysis]** disponibiliza uma visão geral do número de apresentações aceitas ou rejeitadas.
 
 >[!NOTE]
 >
@@ -42,7 +42,7 @@ As estatísticas são classificadas com base em três critérios:
 
    ![](assets/offer_report_perdeliveries.png)
 
-Os dados podem ser filtrados com base em vários critérios disponíveis na seção superior do relatório. Once you have selected the desired criteria, click the **[!UICONTROL Refresh]** link to apply them to the report.
+Os dados podem ser filtrados com base em vários critérios disponíveis na seção superior do relatório. Após selecionar os critérios desejados, clique no link **[!UICONTROL Refresh]** para aplicá-los ao relatório.
 
 ![](assets/offer_report_criteria.png)
 
