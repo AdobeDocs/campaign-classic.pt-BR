@@ -14,7 +14,7 @@ discoiquuid: 4d72db10-29bd-4b3c-adb3-bead02890271
 index: y
 internal: n
 snippet: y
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: c10a0a11c6e9952aa47da1f7a15188c79c62508d
 
 ---
@@ -24,20 +24,20 @@ source-git-commit: c10a0a11c6e9952aa47da1f7a15188c79c62508d
 
 Neste exemplo, queremos enviar um alerta para um operador que conterá os nomes dos perfis que abriram um boletim informativo, mas não clicaram no link que ele continha.
 
-The profiles&#39; first and last name fields are linked to the **[!UICONTROL Recipients]** targeting dimension, whereas the **[!UICONTROL Alert]** activity is linked to the **[!UICONTROL Operator]** targeting dimension. Como resultado, não há nenhum campo disponível entre as duas dimensões de target para executar uma reconciliação e recuperar os campos de nome e sobrenome e exibi-los na atividade Alert.
+Os campos de nome e sobrenome dos perfis são vinculados à targeting dimension **[!UICONTROL Recipients]**, enquanto a atividade **[!UICONTROL Alert]** é vinculada à targeting dimension **[!UICONTROL Operator]**. Como resultado, não há nenhum campo disponível entre as duas dimensões de target para executar uma reconciliação e recuperar os campos de nome e sobrenome e exibi-los na atividade Alert.
 
 O processo é criar um workflow como abaixo:
 
-1. Use a **[!UICONTROL Query]** activity to target data.
-1. Add a **[!UICONTROL JavaScript code]** activity into the workflow to save the population form the query to the instance variable.
-1. Use a **[!UICONTROL Test]** activity to check the population count.
-1. Use an **[!UICONTROL Alert]** activity to send an alert to an operator, depending on the **[!UICONTROL Test]** activity result.
+1. Use uma atividade **[!UICONTROL Query]** para direcionar dados.
+1. Adicione uma atividade **[!UICONTROL JavaScript code]** no workflow para salvar o formulário de preenchimento da consulta à variável de instância.
+1. Utilize uma atividade **[!UICONTROL Test]** para verificar a contagem de população.
+1. Use uma atividade **[!UICONTROL Alert]** para enviar um alerta para um operador, dependendo do resultado da atividade **[!UICONTROL Test]**.
 
 ![](assets/uc_operator_1.png)
 
 ## Salvar a população na variável de instância {#saving-the-population-to-the-instance-variable}
 
-Add the code below into the **[!UICONTROL JavaScript code]** activity.
+Adicione o código abaixo na atividade **[!UICONTROL JavaScript code]**.
 
 ```
 var query = xtk.queryDef.create(  
@@ -53,18 +53,18 @@ var query = xtk.queryDef.create(
 
 Verifique se o código Javascript corresponde às suas informações de workflow:
 
-* The **[!UICONTROL queryDef schema]** tag should corresponds to the name of the targeting dimension used in the query activity.
-* The **[!UICONTROL node expr]** tag should correspond to the name of the fields you want to retrieve.
+* A tag **[!UICONTROL queryDef schema]** deve corresponder ao nome da targeting dimension usada na atividade de consulta.
+* A tag **[!UICONTROL node expr]** deve corresponder ao nome dos campos que você deseja recuperar.
 
 ![](assets/uc_operator_3.png)
 
 Para recuperar essas informações, siga as etapas abaixo:
 
-1. Right-click the outbound transition from the **[!UICONTROL Query]** ativity, then select **[!UICONTROL Display the target]**.
+1. Clique com o botão direito do mouse na transição de saída da atividade **[!UICONTROL Query]** e selecione **[!UICONTROL Display the target]**.
 
    ![](assets/uc_operator_4.png)
 
-1. Right-click the list, then select **[!UICONTROL Configure list]**.
+1. Clique com o botão direito do mouse na lista e depois selecione **[!UICONTROL Configure list]**.
 
    ![](assets/uc_operator_5.png)
 
@@ -74,7 +74,7 @@ Para recuperar essas informações, siga as etapas abaixo:
 
 ## Teste a contagem de população {#testing-the-population-count}
 
-Add the code below into the **[!UICONTROL Test]** activity to check if the targeted population contains at least 1 profile.
+Adicione o código abaixo na atividade **[!UICONTROL Test]** para verificar se a população direcionada contém pelo menos 1 perfil.
 
 ```
 var.recCount>0
@@ -84,9 +84,9 @@ var.recCount>0
 
 ## Como configurar um alerta {#setting-up-the-alert}
 
-Now that the population has been added into the instance variable with the desired fields, you can add these information into the **[!UICONTROL Alert]** activity.
+Agora que a população foi adicionada na variável da instância com os campos desejados, é possível adicionar essas informações na atividade **[!UICONTROL Alert]**.
 
-To do this, add into the **[!UICONTROL Source]** tab the code below:
+Para fazer isso, adicione o código abaixo na guia **[!UICONTROL Source]**:
 
 ```
 <ul>
@@ -101,7 +101,7 @@ for each (var item in items){
 
 >[!NOTE]
 >
->The **[!UICONTROL <%= item.target.recipient.@fieldName %>]** command lets you add one of the fields that have been saved to the instance variable through the **[!UICONTROL JavaScript code]** activity.\
+>O comando **[!UICONTROL &lt;%= item.target.recipient.@fieldíngia %>]** permite adicionar um dos campos que foram salvos na variável da instância por meio da atividade **[!UICONTROL JavaScript code]**.\
 >É possível adicionar quantos campos desejar, desde que tenham sido inseridos no código JavaScript.
 
 ![](assets/uc_operator_8.png)
