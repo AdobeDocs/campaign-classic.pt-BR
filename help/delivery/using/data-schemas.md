@@ -14,7 +14,7 @@ discoiquuid: aeaa9475-3715-40a4-8864-29d126883272
 index: y
 internal: n
 snippet: y
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 7dbc876fae0bde78e3088ee1ab986cd09e9bcc38
 
 ---
@@ -28,7 +28,7 @@ Para saber mais sobre como criar e configurar schemas de dados no Adobe Campaign
 
 ## Estrutura de schema {#schema-structure}
 
-The XML document of a data schema must contain the **`<srcschema>`** root element with the **name** and **namespace** attributes to populate the schema name and its namespace.
+O documento XML de um schema de dados deve conter o **`<srcschema>`** elemento raiz com os atributos **name** e **namespace** para preencher o nome e o namespace do schema.
 
 ```
 <srcSchema name="schema_name" namespace="namespace">
@@ -78,7 +78,7 @@ Este é um exemplo de schema de gestão de conteúdo com os tipos preenchidos:
 
 ## Propriedades {#properties}
 
-Various properties can be used to enrich the **`<element>`** and **`<attribute>`** elements of the data schema.
+Várias propriedades podem ser utilizadas para enriquecer os elementos **`<element>`** e **`<attribute>`** do schema de dados.
 
 As principais propriedades utilizadas na gestão de conteúdo são as seguintes:
 
@@ -115,7 +115,7 @@ Este é o nosso exemplo de schema com as propriedades preenchidas:
 
 Uma coleção é uma lista de elementos com o mesmo nome e o mesmo nível hierárquico.
 
-In our example, the **`<chapter>`** and **`<page>`** elements are collection elements. Portanto, o atributo **unbound** deve ser adicionado à definição desses elementos:
+No nosso exemplo, os itens **`<chapter>`** e **`<page>`** são elementos de coleção. Portanto, o atributo **unbound** deve ser adicionado à definição desses elementos:
 
 ```
 <element name="chapter" label="Chapter" unbound="true" ordered="true">
@@ -131,11 +131,11 @@ In our example, the **`<chapter>`** and **`<page>`** elements are collection ele
 
 ## Referência de elemento {#element-referencing}
 
-A referência de elemento é usado em muitos schemas de conteúdo. It enables you to factorize the definition of an **`<element>`** element so that it can be referenced on other elements with the same structure.
+A referência de elemento é usado em muitos schemas de conteúdo. Ela permite fatorar a definição de um elemento **`<element>`** para que ele possa ser referenciado em outros elementos com a mesma estrutura.
 
 O atributo **ref** no elemento a ser referenciado deve ser preenchido com o caminho (XPath) do elemento de referência.
 
-**Exemplo**: adição de uma seção do **Apêndice** com a mesma estrutura que o **`<chapter>`** elemento de nosso esquema de exemplo.
+**Exemplo**: adição de uma seção do **Appendix** com a mesma estrutura do elemento **`<chapter>`** do nosso schema de exemplo.
 
 ```
 <srcSchema name="book" namespace="cus">
