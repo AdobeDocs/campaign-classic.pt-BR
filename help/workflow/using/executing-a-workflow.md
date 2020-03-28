@@ -14,7 +14,7 @@ discoiquuid: 9ac4c60a-b0f6-42fb-a081-74b57820cb16
 index: y
 internal: n
 snippet: y
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 4b4ec97e52a494dd88b2516650ae514294f00934
 
 ---
@@ -22,21 +22,21 @@ source-git-commit: 4b4ec97e52a494dd88b2516650ae514294f00934
 
 # Execução de um fluxo de trabalho{#executing-a-workflow}
 
-Diretrizes para solução de problemas relacionados à execução de fluxos de trabalho estão disponíveis [nesta seção](../../production/using/workflow-execution.md).
+Diretrizes para solução de problemas relacionados à execução de workflows estão disponíveis [nesta seção](../../production/using/workflow-execution.md).
 
 ## Iniciando um workflow {#starting-a-workflow}
 
-Um workflow é sempre iniciado manualmente. When started, it can however remain inactive depending on the information specified via a scheduler (see [Scheduler](../../workflow/using/scheduler.md)) or activity scheduling.
+Um workflow é sempre iniciado manualmente. Ao ser iniciado, ele pode permanecer inativo dependendo das informações especificadas por meio de um scheduler (consulte [Scheduler](../../workflow/using/scheduler.md)) ou de um agendamento de atividade. 
 
 As ações relacionadas à execução do workflow para construção do target (iniciar, parar, pausar etc.) são processos **assíncronos**: a ordem é registrada e entrará em vigor assim que o servidor estiver disponível para aplicá-lo.
 
 A barra de ferramentas permite iniciar e controlar a execução do workflow.
 
-The list of options available in the **[!UICONTROL Actions]** menu and the right-click menu are detailed below.
+A lista de opções disponíveis no menu **[!UICONTROL Actions]** e no menu de contexto estão detalhadas abaixo.
 
 ### Barra de ferramentas Ações {#actions-toolbar}
 
-Os botões da barra de ferramentas são detalhados nesta [seção](../../campaign/using/marketing-campaign-deliveries.md#building-the-main-target-in-a-workflow). The **[!UICONTROL Actions]** button gives you access to additional execution options for acting on selected workflows. You can also use the **[!UICONTROL File > Actions]** menu, or right-click a workflow and select **[!UICONTROL Actions]**.
+Os botões da barra de ferramentas são detalhados nesta [seção](../../campaign/using/marketing-campaign-deliveries.md#building-the-main-target-in-a-workflow). O botão **[!UICONTROL Actions]** dá acesso às opções de execução adicionais para atuar em workflows selecionados. Você também pode usar o menu **[!UICONTROL File > Actions]** ou clicar com o botão direito do mouse em um workflow e selecionar **[!UICONTROL Actions]**.
 
 ![](assets/purge_historique.png)
 
@@ -44,7 +44,7 @@ Os botões da barra de ferramentas são detalhados nesta [seção](../../campaig
 
    Essa ação permite iniciar a execução de um workflow: um workflow **Concluído**, **Em edição** ou **Pausado** altera o status para **Iniciado**. Em seguida, o motor de workflow manipula a execução desse workflow. Se o workflow tiver sido pausado, ele será retomado, caso contrário, o workflow será iniciado desde o início e as atividades iniciais serão ativadas.
 
-   O início é um processo assíncrono: A solicitação é salva e processada o mais rápido possível por um servidor de fluxo de trabalho.
+   Iniciar é um processo assíncrono: a solicitação é salva e processada o mais rápido possível por um servidor de workflow.
 
 * **[!UICONTROL Pause]**
 
@@ -60,23 +60,23 @@ Os botões da barra de ferramentas são detalhados nesta [seção](../../campaig
 
    Essa ação interrompe e depois retoma o workflow. Na maioria dos casos, é possível reiniciar mais rápido. Também é útil automatizar a reinicialização quando a interrupção leva um determinado tempo: isso ocorre porque o comando &#39;Parar&#39; não está disponível quando o workflow está sendo interrompido.
 
-   The **[!UICONTROL Start / Pause / Stop / Restart]** actions are also available via the execution icons in the toolbar. Para obter mais informações, consulte esta [seção](../../campaign/using/marketing-campaign-deliveries.md#creating-a-targeting-workflow).
+   As ações **[!UICONTROL Start / Pause / Stop / Restart]** também estão disponíveis por meio dos ícones de execução na barra de ferramentas. Para obter mais informações, consulte esta [seção](../../campaign/using/marketing-campaign-deliveries.md#creating-a-targeting-workflow).
 
 * **[!UICONTROL Purge history]**
 
-   Essa ação permite limpar o histórico do workflow. For more on this, refer to [Purging the logs](../../workflow/using/monitoring-workflow-execution.md#purging-the-logs).
+   Essa ação permite limpar o histórico do workflow. Para obter mais informações, consulte [Limpeza de logs](../../workflow/using/monitoring-workflow-execution.md#purging-the-logs).
 
-* **[!UICONTROL Start in simulation mode]**
+* **[!UICONTROL Iniciar no modo de simulação]**
 
-   Essa opção permite iniciar o workflow no modo de simulação em vez do modo real. This means that when you enable this mode, only activities that do not impact the database or the file system are executed (e.g. **[!UICONTROL Query]**, **[!UICONTROL Union]**, **[!UICONTROL Intersection]**, etc.). Atividades que têm impacto (por exemplo, **[!UICONTROL Export]**, **[!UICONTROL Import]** etc.) assim como os posteriores (na mesma sucursal) não são executados.
+   Essa opção permite iniciar o workflow no modo de simulação em vez do modo real. Isso significa que quando você habilita esse modo, somente as atividades que não afetam o banco de dados ou o sistema de arquivos serão executadas (por exemplo, **[!UICONTROL Query]**, **[!UICONTROL Union]**, **[!UICONTROL Intersection]**, etc.). Atividades que têm impacto (por exemplo, **[!UICONTROL Export]**, **[!UICONTROL Import]**, etc.) assim como as posteriores (na mesma ramificação) não são executadas.
 
 * **[!UICONTROL Execute pending tasks now]**
 
-   Essa ação permite iniciar todas as tarefas pendentes assim que possível. To start a specific task, right-click its activity and select **[!UICONTROL Execute pending task(s) now]**.
+   Essa ação permite iniciar todas as tarefas pendentes assim que possível. Para iniciar uma tarefa específica, clique com o botão direito do mouse na atividade e selecione **[!UICONTROL Execute pending task(s) now]**.
 
-* **[!UICONTROL Unconditional stop]**
+* **[!UICONTROL Interrupção incondicional]**
 
-   This option changes the workflow status to **[!UICONTROL Finished]**. Essa ação só deve ser usada como último recurso se o processo de interrupção normal falhar após alguns minutos. Use apenas a interrupção incondicional se tiver certeza de que não há tarefas de workflow em andamento.
+   Essa opção altera o status do workflow para **[!UICONTROL Finished]**. Essa ação só deve ser usada como último recurso se o processo de interrupção normal falhar após alguns minutos. Use apenas a interrupção incondicional se tiver certeza de que não há tarefas de workflow em andamento.
 
    >[!CAUTION]
    >
@@ -84,9 +84,9 @@ Os botões da barra de ferramentas são detalhados nesta [seção](../../campaig
 
 * **[!UICONTROL Save as template]**
 
-   Essa ação cria um novo modelo de workflow com base no workflow selecionado. You need to specify the folder where it will be saved (in the **[!UICONTROL Folder]** field).
+   Essa ação cria um novo modelo de workflow com base no workflow selecionado. Você precisa especificar a pasta onde ela será salva (no campo **[!UICONTROL Folder]**).
 
-   As opções **[!UICONTROL Mass update of selected lines]** e **[!UICONTROL Merge selected lines]** são opções genéricas de plataforma disponíveis em todos os **[!UICONTROL Actions]** menus. Para obter mais informações, consulte esta [seção](../../platform/using/updating-data.md).
+   As opções **[!UICONTROL Mass update of selected lines]** e **[!UICONTROL Merge selected lines]** são opções genéricas de plataforma disponíveis em todos os menus **[!UICONTROL Actions]**. Para obter mais informações, consulte esta [seção](../../platform/using/updating-data.md).
 
 ### Menu de contexto {#right-click-menu}
 
@@ -96,21 +96,21 @@ Quando uma ou mais atividades de workflow forem selecionadas, você pode clicar 
 
 As seguintes opções estão disponíveis no menu de contexto:
 
-**[!UICONTROL Open]**: essa opção permite acessar as propriedades da atividade.
+**[!UICONTROL Open]**: esta opção permite acessar as propriedades da atividade.
 
-**[!UICONTROL Display logs:]** essa opção permite que você visualize o log de execução da tarefa para a atividade selecionada. Consulte [Exibir logs](../../workflow/using/monitoring-workflow-execution.md#displaying-logs).
+**[!UICONTROL Display logs:]** essa opção permite exibir o log de execução da tarefa para a atividade selecionada. Consulte [Exibir logs](../../workflow/using/monitoring-workflow-execution.md#displaying-logs).
 
-**[!UICONTROL Execute pending task(s) now:]** essa ação permite que você inicie tarefas pendentes o mais rápido possível.
+**[!UICONTROL Execute pending task(s) now:]** essa ação permite iniciar tarefas pendentes assim que possível.
 
-**[!UICONTROL Workflow restart from a task:]** essa opção permite reiniciar o fluxo de trabalho usando os resultados armazenados anteriormente para essa atividade.
+**[!UICONTROL Workflow restart from a task:]** essa opção permite reiniciar o workflow usando os resultados armazenados anteriormente para essa atividade.
 
-**[!UICONTROL Cut/Copy/Paste/Delete:]** essas opções permitem que você recorte, copie, cole e exclua atividades.
+**[!UICONTROL Cut/Copy/Paste/Delete:]** essas opções permitem recortar, copiar, colar e excluir atividades.
 
-**[!UICONTROL Copy as bitmap:]** essa opção permite que você realize uma captura de tela de todas as atividades.
+**[!UICONTROL Copy as bitmap:]** essa opção permite capturar a tela de todas as atividades.
 
-**[!UICONTROL Normal execution / Enable but do not execute / Do not enable:]** essas opções também estão disponíveis na **[!UICONTROL Advanced]** guia das propriedades da atividade. They are detailed in [Execution](../../workflow/using/advanced-parameters.md#execution).
+**[!UICONTROL Normal execution / Enable but do not execute / Do not enable:]** essas opções também estão disponíveis na guia **[!UICONTROL Advanced]** das propriedades da atividade. Maiores detalhes em [Execution](../../workflow/using/advanced-parameters.md#execution).
 
-**[!UICONTROL Save / Cancel:]** permite salvar ou cancelar as alterações feitas em um fluxo de trabalho.
+**[!UICONTROL Save / Cancel:]** permite salvar ou cancelar as alterações feitas em um workflow.
 
 >[!NOTE]
 >
@@ -124,7 +124,7 @@ O ciclo do workflow tem três etapas principais.
 
 * **Em edição**
 
-   Esta é a fase inicial de projeto: Quando o novo fluxo de trabalho é criado, seu status é &quot;sendo editado&quot;. O workflow ainda não foi processado pelo servidor e pode ser modificado sem risco.
+   Esta é a fase inicial de design: quando o novo workflow é criado, seu status é &quot;Being edited&quot;. O workflow ainda não foi processado pelo servidor e pode ser modificado sem risco.
 
 * **Iniciado**
 
@@ -146,7 +146,7 @@ O workflow é iniciado e aguarda um operador pertencente ao grupo especificado n
 
 A gestão de operador é apresentada nesta [seção](../../platform/using/access-management.md).
 
-Para obter mais informações sobre como monitorar seus fluxos de trabalho, consulte [esta seção](../../workflow/using/monitoring-workflow-execution.md).
+Para obter mais informações sobre como monitorar o workflow, consulte [esta seção](../../workflow/using/monitoring-workflow-execution.md).
 
 ## Ciclo de vida dos dados {#data-life-cycle}
 
@@ -162,11 +162,11 @@ Para fazer isso, selecione o menu relevante:
 
 * Exibição do target
 
-   This menu displays the available data on the target population as well as the structure of the work table (**[!UICONTROL Schema]** tab).
+   Esse menu exibe os dados disponíveis sobre o público-alvo, bem como a estrutura da tabela de trabalho (guia **[!UICONTROL Schema]**).
 
    ![](assets/wf-right-click-display.png)
 
-   Para obter mais informações, consulte [Worktables e esquema](../../workflow/using/monitoring-workflow-execution.md#worktables-and-workflow-schema)de fluxo de trabalho.
+   Para obter mais informações, consulte [Tabelas de trabalho e schema de workflow](../../workflow/using/monitoring-workflow-execution.md#worktables-and-workflow-schema).
 
 * Análise do target
 
@@ -174,7 +174,7 @@ Para fazer isso, selecione o menu relevante:
 
    Para obter mais informações, consulte esta [seção](../../reporting/using/using-the-descriptive-analysis-wizard.md).
 
-Os dados do target são descartados na execução do workflow Somente a última tabela de trabalho está acessível. You can configure the workflow so that all work tables remain accessible: check the **[!UICONTROL Keep the result of interim populations between two executions]** option in the workflow properties.
+Os dados do target são descartados na execução do workflow Somente a última tabela de trabalho está acessível. Você pode configurar o workflow para que todas as tabelas de trabalho permaneçam acessíveis: marque a opção **[!UICONTROL Keep the result of interim populations between two executions]** nas propriedades do workflow.
 
 No entanto, recomendamos que você evite ativar essa opção quando a quantidade de dados for significativa.
 
@@ -190,9 +190,9 @@ Isso permite que você use dados coletados por uma lista ou com base nas respost
 %= targetData.FIELD %
 ```
 
-**[!UICONTROL Target extension]** Os elementos de personalização do tipo (targetData) não estão disponíveis para fluxos de trabalho de direcionamento. O target do delivery deve ser construído no workflow e especificado na transição de entrada do delivery.
+Os elementos de personalização do tipo **[!UICONTROL Target extension]** (targetData) não estão disponíveis para workflows para construção do target. O target do delivery deve ser construído no workflow e especificado na transição de entrada do delivery.
 
-If you want to create delivery proofs, the proof target needs to be built based on the **[!UICONTROL Address substitution]** mode so that the personalization data can be entered. Para obter mais informações, consulte esta [seção](../../delivery/using/steps-defining-the-target-population.md#using-address-substitution-in-proof).
+Se você quiser criar provas de delivery, o target de prova precisará ser construído com base no modo **[!UICONTROL Address substitution]** para que os dados de personalização possam ser inseridos. Para obter mais informações, consulte esta [seção](../../delivery/using/steps-defining-the-target-population.md#using-address-substitution-in-proof).
 
 No exemplo a seguir, vamos coletar uma lista de informações sobre os clientes, para ser usada em um email personalizado.
 
@@ -218,23 +218,23 @@ Siga as etapas abaixo:
 
    ![](assets/wf-targetdata-sample-2.png)
 
-1. Configure the **[!UICONTROL Enrichment]** type activity to reconcile the collected data with that already in the Adobe Campaign database.
+1. Configure a atividade do tipo **[!UICONTROL Enrichment]** para reconciliar os dados coletados com os existentes no banco de dados do Adobe Campaign.
 
    Aqui, a chave de conciliação é o número da conta:
 
    ![](assets/wf-targetdata-sample-3.png)
 
-1. Then configure the **[!UICONTROL Delivery]**: it is created based on a template, and the recipients are specified by the inbound transition.
+1. Em seguida, configure o **[!UICONTROL Delivery]**: ele é criado com base em um template e os recipients são especificados pela transição de entrada.
 
    ![](assets/wf-targetdata-sample-4.png)
 
    >[!CAUTION]
    >
-   >Somente os dados contidos na transição podem ser usados para personalizar o delivery. **os campos de personalização do tipo targetData** só estão disponíveis para a população de entrada da **[!UICONTROL Delivery]** atividade.
+   >Somente os dados contidos na transição podem ser usados para personalizar o delivery. Os campos de personalização do tipo **targetData** só estão disponíveis para a população de entrada da atividade de **[!UICONTROL Delivery]**.
 
 1. No template de delivery, use os campos coletados no workflow.
 
-   To do this, insert **[!UICONTROL Target extension]** type personalization fields.
+   Para fazer isso, insira os campos de personalização do tipo **[!UICONTROL Target extension]**.
 
    ![](assets/wf-targetdata-sample-5.png)
 
@@ -244,7 +244,7 @@ Siga as etapas abaixo:
 
    ![](assets/wf-targetdata-sample-6.png)
 
-   **[!UICONTROL Target extension]** Os dados do tipo (targetData) são inseridos em entregas usando as mesmas características de todos os campos de personalização. Eles também podem ser usados no assunto, rótulos de link ou nos próprios links.
+   Os dados do tipo **[!UICONTROL Target extension]** (targetData) são inseridos em deliveries usando as mesmas características de todos os campos de personalização. Eles também podem ser usados no assunto, rótulos de link ou nos próprios links.
 
    As mensagens endereçadas para os recipients coletados conterão os seguintes dados:
 
@@ -278,15 +278,15 @@ Um operador pode responder de uma das duas formas seguintes: validação usando 
 
 A gestão de operador é apresentada nesta [seção](../../platform/using/access-management.md).
 
-Emails de aprovação são enviados continuamente. O modelo de entrega padrão é **[!UICONTROL notifyAssignee]**: Ele é salvo na **[!UICONTROL Administration > Campaign management > Technical delivery templates]** pasta. Esse cenário pode ser personalizado e também é recomendável fazer uma cópia e alterar templates para cada atividade.
+Emails de aprovação são enviados continuamente. O template do delivery padrão é **[!UICONTROL NotificationAssignee]**: ele é salvo na pasta **[!UICONTROL Administration > Campaign management > Technical delivery templates]**. Esse cenário pode ser personalizado e também é recomendável fazer uma cópia e alterar templates para cada atividade.
 
-As entregas criadas por meio deste modelo são armazenadas na **[!UICONTROL Administration > Production > Objects created automatically > Technical deliveries > Workflow notifications]** pasta.
+Os deliveries criados por meio desse template são armazenados na pasta **[!UICONTROL Administration > Production > Objects created automatically > Technical deliveries > Workflow notifications]**.
 
 ### Aprovação através do console {#approval-via-the-console}
 
 Em operações, os elementos a serem aprovados são exibidos no painel da campanha.
 
-For technical workflows, the tasks that the user can approve can be accessed from the tree structure in the **[!UICONTROL Administration > Production > Objects created automatically > Pending approvals]** folder.
+Para workflows técnicos, as tarefas que o usuário pode aprovar podem ser acessadas a partir da estrutura de árvore na pasta **[!UICONTROL Administration > Production > Objects created automatically > Pending approvals]**.
 
 ![](assets/validation-node.png)
 
@@ -295,7 +295,7 @@ For technical workflows, the tasks that the user can approve can be accessed fro
 Uma aprovação é atribuída a um grupo de operadores, um único operador ou um conjunto de operadores selecionados por meio de uma condição de filtragem.
 
 1. Para a forma mais simples de aprovação, a tarefa é concluída assim que um operador responde. Qualquer outro operador que tenta responder será notificado que outra pessoa já fez isso.
-1. Para obter várias aprovações, consulte [Várias aprovações](#multiple-approval).
+1. Para obter múltiplas aprovações, consulte [Aprovação múltipla](#multiple-approval).
 
 Os grupos de operadores para aprovações devem ser designados como atribuições ou funções em vez de pessoas nomeadas. Por exemplo, um grupo &quot;Orçamento da campanha&quot; é preferível ao &quot;Grupo do Harry&quot;. Recomendamos ter pelo menos duas pessoas em um grupo que possam aprovar uma tarefa. Dessa forma, se uma pessoa estiver ausente, a outra poderá responder.
 
@@ -307,23 +307,23 @@ A segunda guia nas propriedades da atividade de aprovação permite definir uma 
 
 ![](assets/expiration.png)
 
-To add a new expiration, click **[!UICONTROL Add]**. Uma transição é adicionada a cada expiração criada. É possível:
+Para adicionar uma nova expiração, clique em **[!UICONTROL Add]**. Uma transição é adicionada a cada expiração criada. É possível:
 
 * modificar os parâmetros típicos diretamente clicando em uma célula na lista (ou pressionando F2),
-* or edit the expression by clicking the **[!UICONTROL Detail...]** button.
+* ou edite a expressão clicando no botão **[!UICONTROL Detail...]**.
 
 >[!NOTE]
 >
 >Não é necessário especificar uma ordem para as expirações, pois são processadas em ordem cronológica.
 
-The **[!UICONTROL Do not terminate the task]** option leaves the approval active when the delay is overrun. Esse modo possibilita gerenciar lembretes ao deixar a aprovação ativa: os operadores ainda podem responder. Essa opção é desabilitada por padrão, significando que a tarefa é considerada concluída na expiração e que os operadores não podem mais responder.
+A opção **[!UICONTROL Do not terminate the task]** deixa a aprovação ativa quando o atraso é saturado. Esse modo possibilita gerenciar lembretes ao deixar a aprovação ativa: os operadores ainda podem responder. Essa opção é desabilitada por padrão, significando que a tarefa é considerada concluída na expiração e que os operadores não podem mais responder.
 
 Você pode criar quatro tipos de expirações:
 
-* **Atraso após o início** da tarefa: A expiração é calculada adicionando um tempo especificado à data em que a aprovação é ativada.
-* **Atraso após uma data** específica: A expiração é calculada adicionando um tempo a uma data especificada.
-* **Atraso antes de uma determinada data**: A expiração é calculada subtraindo um período de tempo de uma data especificada.
-* **Expiração calculada pelo script**: A expiração é calculada usando o JavaScript.
+* **Delay after task start**: a expiração é calculada adicionando-se um período de tempo especificado à data em que a aprovação é ativada.
+* **Delay after a given date**: a expiração é calculada adicionando um período a uma data especificada. 
+* **Delay before a given date**: a expiração é calculada subtraindo-se um período de uma data especificada. 
+* **Expiration calculated by script**: a expiração é calculada usando o JavaScript.
 
    O exemplo a seguir calcula uma expiração 24 horas antes da data em que um delivery é iniciado (identificada por **vars.deliveryId**):
 
