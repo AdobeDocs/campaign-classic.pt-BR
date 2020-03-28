@@ -14,7 +14,7 @@ discoiquuid: 4452bfc6-9ac4-4d81-a63c-879a163c13ee
 index: y
 internal: n
 snippet: y
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: b47dcfa0e4ee2e5e43e7aa14b94e12fd70ff9c2d
 
 ---
@@ -28,7 +28,7 @@ O resultado dos cálculos da hipótese está disponível em vários níveis da p
 
 ### Indicadores {#indicators}
 
-Depois que a hipótese é calculada, vários indicadores de mensuração são atualizados automaticamente. These are available in the **[!UICONTROL General]** tab of the hypothesis.
+Depois que a hipótese é calculada, vários indicadores de mensuração são atualizados automaticamente. Eles estão disponíveis na guia **[!UICONTROL General]** da hipótese.
 
 ![](assets/response_hypothesis_delivery_example_010.png)
 
@@ -40,7 +40,7 @@ Esses indicadores são:
 * **Response rate of the control group**: número de grupos de controle de usuário/número total de grupos de controle de deliveries.
 * **Number of reactions**: número de registros na tabela que contém a relação entre individuais, a hipótese e a tabela de transações.
 
-For the full list of indicators, click the **[!UICONTROL Display the list]** link:
+Para obter a lista completa de indicadores, clique no link **[!UICONTROL Display the list]**:
 
 ![](assets/response_hypothesis_indicators_002.png)
 
@@ -54,8 +54,8 @@ Os indicadores fornecem as seguintes informações:
 * **Total margin of control group**: margem total sobre o grupo de controle.
 * **Average margin per contact**: margem total / contatado.
 * **Average margin of control groups**: margens totais / grupo de controle.
-* **Receitas** adicionais: (Receitas médias do grupo de controlo contactado — Receitas médias)*Número de pessoas contactadas
-* **Margem** adicional: (Margem média do grupo de controlo contactado - Margem média) / número de contatos
+* **Receita adicional**: (receita média do contato - receita média do grupo de controle)*Número de contatos
+* **Margem adicional**: (margem média do contato - margem média do grupo de controle) / número de contatos
 * **Average cost per contact**: custo de delivery calculado/Número de contatos.
 * **ROI**: custo de delivery calculado/margem total por contato
 * **Effective ROI**: custo de delivery calculado/margem adicional.
@@ -63,21 +63,21 @@ Os indicadores fornecem as seguintes informações:
 
 ### Reações {#reactions}
 
-You can view recipients&#39; reactions to the hypotheses via the **[!UICONTROL Reactions]** tab.
+É possível exibir as reações dos destinatários com a hipótese por meio da guia **[!UICONTROL Reactions]**.
 
-1. Once hypothesis calculation is complete, go to the **[!UICONTROL Campaign management > Measurement hypotheses]** node of the Adobe Campaign tree.
-1. Select the desired hypothesis and click the **[!UICONTROL Reactions]** tab to view the list of recipients likely to purchase something following the marketing campaign.
+1. Depois que o cálculo da hipótese é concluído, acesse o nó **[!UICONTROL Campaign management > Measurement hypotheses]** da árvore do Adobe Campaign.
+1. Selecione a hipótese e clique na guia **[!UICONTROL Reactions]** para visualizar a lista de destinatários que pode comprar algo após a campanha de marketing.
 
    ![](assets/response_hypothesis_reactions_001.png)
 
 ## Relatórios {#reports}
 
-The **[!UICONTROL Hypothesis report]** lets you view the results of the hypotheses performed on campaigns and deliveries. This report contains the indicators calculated by the hypothesis (for more on this, refer to [Indicators](#indicators)).
+O **[!UICONTROL Relatório da hipótese]** permite a visualização dos resultados da hipótese executada em campanhas e deliveries. Este relatório contém os indicadores calculados pela hipótese (para mais informações, consulte os [Indicadores](#indicators)).
 
-* **No nível** da campanha: clique no **[!UICONTROL Reports]** link da campanha relevante e selecione o **[!UICONTROL Hypothesis report]**. Esse relatório contém a lista de deliveries da campanha e a hipótese calculada para cada um deles.
+* **No nível da campanha**: clique no link **[!UICONTROL Reports]** da campanha relevante e selecione o **[!UICONTROL Hypothesis report]**. Esse relatório contém a lista de deliveries da campanha e a hipótese calculada para cada um deles.
 
    ![](assets/response_hypothesis_campaign_report_001.png)
 
-* **No nível** de entrega: para acessar o relatório, abra a entrega em questão, clique **[!UICONTROL Reports]** na guia **[!UICONTROL Summary]** e selecione a **[!UICONTROL Hypothesis report]**. Se várias hipóteses são calculadas para o mesmo delivery, o relatório mostra todas as alternativas.
+* **No nível do delivery**: para acessar o relatório, abra o delivery relacionado, clique em **[!UICONTROL Reports]** na guia **[!UICONTROL Summary]** e selecione o **[!UICONTROL Hypothesis report]**. Se várias hipóteses são calculadas para o mesmo delivery, o relatório mostra todas as alternativas.
 
    ![](assets/response_hypothesis_delivery_report_001.png)
