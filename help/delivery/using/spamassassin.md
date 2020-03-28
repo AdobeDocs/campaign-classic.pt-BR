@@ -14,7 +14,7 @@ discoiquuid: d41658ab-ee79-4a5c-a165-d94b81eb2b33
 index: y
 internal: n
 snippet: y
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 7dbc876fae0bde78e3088ee1ab986cd09e9bcc38
 
 ---
@@ -46,7 +46,7 @@ Após criar seu delivery de email e definir seu conteúdo, siga as etapas abaixo
 
 Para obter mais informações sobre criar e configurar um delivery, consulte [esta página](../../delivery/using/about-email-channel.md).
 
-1. Vá para a **[!UICONTROL Preview]** guia.
+1. Acesse a guia **[!UICONTROL Preview]**.
 1. Selecione um recipient para pré-visualizar seu delivery.
 
    ![](assets/s_tn_del_preview_spamassassin_recipient.png)
@@ -59,12 +59,12 @@ Para obter mais informações sobre criar e configurar um delivery, consulte [es
 
    ![](assets/s_tn_del_preview_spamassassin_ko.png)
 
-1. Click the **[!UICONTROL More...]** link next to the warning.
-1. Select the **[!UICONTROL Anti-spam checking]** tab.
-1. Go to the **[!UICONTROL Points / Rule / Description]** section to view the reasons for this risk.
+1. Clique no link **[!UICONTROL More...]** próximo ao aviso.
+1. Selecione a guia **[!UICONTROL Anti-spam checking]**.
+1. Acesse a seção **[!UICONTROL Points / Rule / Description]** para exibir os motivos para esse risco.
 
    ![](assets/s_tn_del_msg_spamassassin_ko.png)
 
 >[!NOTE]
 >
->Each time you click the **[!UICONTROL Anti-spam checking]**, the SpamAssassin service is called and the message is analyzed again for anti-spam detection. Altere o conteúdo antes de executar a análise anti-spam novamente.
+>Sempre que a **[!UICONTROL Verificação anti-spam]** é selecionada, o serviço SpamAssassin é acionado e a mensagem é analisada novamente para detecção anti-spam. Altere o conteúdo antes de executar a análise anti-spam novamente.
