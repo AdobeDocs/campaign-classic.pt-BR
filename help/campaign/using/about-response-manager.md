@@ -14,7 +14,7 @@ discoiquuid: a4669fee-4512-455f-b495-ebd5a0746b76
 index: y
 internal: n
 snippet: y
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 20f835c357d016643ea1f3209ee4dfb6d3239f90
 
 ---
@@ -24,10 +24,7 @@ source-git-commit: 20f835c357d016643ea1f3209ee4dfb6d3239f90
 
 ## Objetivos {#objectives}
 
-O Adobe Campaign oferece um aplicativo de gestor de respostas (Gestor de Resposta)
-				que permite medir o sucesso e a lucratividade das campanhas de marketing ou apresentações de 
-				ofertas de todos os canais de comunicação (email, celular, telefone, mala direta,
-				 fax, agência, etc.).
+O Adobe Campaign oferece um aplicativo de gestor de respostas (Gestor de Resposta) que permite medir o sucesso e a lucratividade das campanhas de marketing ou apresentações de ofertas de todos os canais de comunicação (email, celular, telefone, mala direta, fax, agência, etc.).
 
 ## Conceito de Hipótese {#hypothesis-concept}
 
@@ -43,7 +40,7 @@ Por exemplo, um delivery promovendo um item, no qual é possível avaliar a rece
 
 >[!CAUTION]
 >
->O Gerenciador de respostas é uma **[!UICONTROL Campaign]** opção. Verifique o contrato de licença.
+>O Gestor de Resposta é uma opção do **[!UICONTROL Campaign]**. Verifique o contrato de licença.
 
 Também é possível calcular todas as reações da família do recipient que recebeu o delivery ou a oferta.
 
@@ -51,19 +48,19 @@ Cada hipótese está vinculada a uma única tabela de transação. Um delivery o
 
 ## Método {#method}
 
-Before you start using Response Manager, refer to [Configuration](../../campaign/using/configuration.md) and carry out the necessary configurations.
+Antes de começar a usar o Gestor de Resposta, consulte [Configuração](../../campaign/using/configuration.md) e execute as configurações necessárias.
 
 Para iniciar uma hipótese em um delivery ou oferta, defina o contexto em um template que deve ser usado em cada hipótese criada.
 
 Aplique o seguinte processo para definir e criar uma hipótese de medição:
 
-1. Defina um modelo de hipótese. Consulte [Criando um modelo](../../campaign/using/hypothesis-templates.md#creating-a-hypothesis-model)de hipótese.
-1. Crie uma ou mais hipóteses em um delivery existente. Refer to [Referencing a hypothesis in a campaign delivery](../../campaign/using/creating-hypotheses.md#referencing-a-hypothesis-in-a-campaign-delivery).
+1. Defina um modelo de hipótese. Consulte [Criação de um modelo de hipótese](../../campaign/using/hypothesis-templates.md#creating-a-hypothesis-model).
+1. Crie uma ou mais hipóteses em um delivery existente. Consulte [Referenciar uma hipótese em um delivery de campanha](../../campaign/using/creating-hypotheses.md#referencing-a-hypothesis-in-a-campaign-delivery).
 
    ou
 
    Crie uma ou mais hipóteses em ofertas. Consulte [Criação de uma hipótese em uma oferta](../../campaign/using/creating-hypotheses.md#creating-a-hypothesis-on-an-offer).
 
-1. Verifique os resultados da hipótese. Consulte Rastreamento de [hipótese](../../campaign/using/hypothesis-tracking.md).
-1. Se necessário, reinicie a hipótese. Refer to [Creating a hypothesis on the fly on a delivery](../../campaign/using/creating-hypotheses.md#creating-a-hypothesis-on-the-fly-on-a-delivery).
+1. Verifique os resultados da hipótese. Consulte [Rastreamento de hipótese](../../campaign/using/hypothesis-tracking.md).
+1. Se necessário, reinicie a hipótese. Consulte [Criação de uma hipótese em tempo real em um delivery](../../campaign/using/creating-hypotheses.md#creating-a-hypothesis-on-the-fly-on-a-delivery).
 
