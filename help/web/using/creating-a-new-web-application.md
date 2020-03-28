@@ -14,7 +14,7 @@ discoiquuid: 84f9dbad-365f-405d-88a0-14171fbb805f
 index: y
 internal: n
 snippet: y
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 20f835c357d016643ea1f3209ee4dfb6d3239f90
 
 ---
@@ -24,7 +24,7 @@ source-git-commit: 20f835c357d016643ea1f3209ee4dfb6d3239f90
 
 Os tipos de aplicação web são selecionados durante a criação.
 
-Vá até a guia **Campanhas** e selecione o **[!UICONTROL Web Applications]** menu. Clique no botão **[!UICONTROL Create]**. Selecione o template de aplicação web que deseja usar:
+Vá para a guia **Campaigns** e selecione o menu **[!UICONTROL Web Applications]**. Clique no botão **[!UICONTROL Create]**. Selecione o template de aplicação web que deseja usar:
 
 ![](assets/webapp_create_from_campaign.png)
 
