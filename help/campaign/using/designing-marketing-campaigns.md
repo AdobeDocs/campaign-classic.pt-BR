@@ -14,7 +14,7 @@ discoiquuid: a9eb6627-2e51-42d0-9b29-5b798bdf5b33
 index: y
 internal: n
 snippet: y
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: b47dcfa0e4ee2e5e43e7aa14b94e12fd70ff9c2d
 
 ---
@@ -24,7 +24,7 @@ source-git-commit: b47dcfa0e4ee2e5e43e7aa14b94e12fd70ff9c2d
 
 O Adobe Campaign permite que você defina, otimize, execute e analise campanhas de comunicação e marketing. O Adobe Campaign atua como uma central de execução e pedido unificada para estratégias de marketing. Para obter mais informações, consulte [Accessing campaigns](../../campaign/using/accessing-campaigns.md) and [Setting up marketing campaigns](../../campaign/using/setting-up-marketing-campaigns.md).
 
-In addition, the **Marketing Resource Management (MRM)** module lets you control marketing actions in a collaborative mode by providing complete management and real-time tracking of the tasks, budgets and marketing resources involved. O Gerenciamento de recursos de marketing permite otimizar e regular o gerenciamento de processos internos e externos, recursos e campanhas de marketing, bem como relações de terceiros (agências, impressoras etc.). Para obter mais informações, consulte [esta seção](../../campaign/using/about-marketing-resource-management.md).
+Além disso, o módulo **GMarketing Resource Management (MRM)** permite controlar ações de marketing em um modo colaborativo fornecendo gerenciamento completo e rastreamento em tempo real das tarefas, orçamentos e recursos de marketing envolvidos. O Gerenciamento de recursos de marketing permite otimizar e regular o gerenciamento de processos internos e externos, recursos e campanhas de marketing, bem como relações de terceiros (agências, impressoras etc.). Para obter mais informações, consulte [esta seção](../../campaign/using/about-marketing-resource-management.md).
 
 >[!NOTE]
 >
@@ -39,7 +39,7 @@ Os seguintes conceitos precisam ser conhecidos no contexto do Campaign:
 
    Uma campanha centraliza todos os elementos relacionados a uma campanha de marketing: remessas, regras de definição de metas, custos, arquivos de exportação, documentos relacionados etc. Cada campanha é anexada a um programa.
 
-   For more on this, refer to [Adding a campaign](../../campaign/using/setting-up-marketing-campaigns.md#adding-a-campaign).
+   Para obter mais informações, consulte [Adicionar uma campanha](../../campaign/using/setting-up-marketing-campaigns.md#adding-a-campaign).
 
 * **Programa**
 
@@ -49,7 +49,7 @@ Os seguintes conceitos precisam ser conhecidos no contexto do Campaign:
 
    O plano de marketing pode conter vários programas. Ele está vinculado a um período de calendário, tem um orçamento alocado e também pode ser vinculado a documentos e objetivos.
 
-   For more on this, refer to [Campaign calendar](../../campaign/using/accessing-marketing-campaigns.md#campaign-calendar).
+   Para obter mais informações, consulte [Calendário da campanha](../../campaign/using/accessing-marketing-campaigns.md#campaign-calendar).
 
 * **Workflow**
 
@@ -65,4 +65,4 @@ Os seguintes conceitos precisam ser conhecidos no contexto do Campaign:
 
    Um delivery outline é uma descrição estruturada de um delivery. Cada delivery pode se referir a um delivery outline que contenha, por exemplo, as ofertas relacionadas, documentos a serem anexados ou um link para lojas. Uma oferta pode ser referida no delivery de acordo com o delivery outline selecionado.
 
-   Para obter mais informações, consulte [Associando e estruturando recursos vinculados por um outline](../../campaign/using/marketing-campaign-deliveries.md#associating-and-structuring-resources-linked-via-a-delivery-outline)de entrega.
+   Para obter mais informações, consulte [Associando e estruturando recursos vinculados por um outline de delivery](../../campaign/using/marketing-campaign-deliveries.md#associating-and-structuring-resources-linked-via-a-delivery-outline).
