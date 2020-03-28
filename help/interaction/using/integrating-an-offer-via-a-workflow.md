@@ -14,7 +14,7 @@ discoiquuid: 6e27caea-1f1a-457d-bdec-1f93a12b01cf
 index: y
 internal: n
 snippet: y
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 67dce820b7a90163032ee72263a9dd23b521ea69
 
 ---
@@ -41,7 +41,7 @@ A atividade delivery outline, disponível nos workflows da campanha, permite apr
 1. Preencha os campos disponíveis de acordo com seu delivery.
 1. Há dois casos possíveis:
 
-   * If you would like to call the offer engine, check the **[!UICONTROL Restrict the number of propositions selected]** box. Especifique o espaço de oferta e o número de propostas que serão apresentadas no delivery.
+   * Se desejar chamar o mecanismo de oferta, marque a caixa **[!UICONTROL Restrict the number of propositions selected]**. Especifique o espaço de oferta e o número de propostas que serão apresentadas no delivery.
 
       Os pesos da oferta e as regras de qualificação serão considerados pelo mecanismo de oferta.
 
@@ -74,23 +74,23 @@ Há dois métodos para especificar apresentações de oferta.
 Após configurar seu query (consulte o [Guia de workflows](../../workflow/using/query.md)):
 
 1. Adicione e abra uma atividade de enriquecimento.
-1. Na **[!UICONTROL Enrichment]** guia, selecione **[!UICONTROL Add data]**.
-1. Select **[!UICONTROL An offer proposition]** in the types of data to add.
+1. Na guia **[!UICONTROL Enrichment]**, selecione **[!UICONTROL Add data]**.
+1. Selecione **[!UICONTROL An offer proposition]** nos tipos de dados para adicionar.
 
    ![](assets/int_enrichment_offer2.png)
 
 1. Especifique um identificador e um rótulo para a proposta que será adicionada.
 1. Especifique a seleção da oferta. Há duas opções possíveis para isso:
 
-   * **[!UICONTROL Search for the best offer in a category]** : verifique essa opção e especifique os parâmetros de chamada do mecanismo de oferta (espaço de oferta, categoria ou tema(s), data de contato, número de ofertas a serem mantidas). O mecanismo calculará automaticamente as ofertas para adicionar de acordo com esses parâmetros. We recommend completing either the **[!UICONTROL Category]** or the **[!UICONTROL Theme]** field, rather than both at the same time.
+   * **[!UICONTROL Search for the best offer in a category]**: marque esta opção e especifique os parâmetros de chamada do mecanismo de oferta (espaço de ofertas, categoria ou tema(s), data de contato e número de ofertas a serem mantidas). O mecanismo calculará automaticamente as ofertas para adicionar de acordo com esses parâmetros. Recomendamos completar o campo **[!UICONTROL Category]** ou o campo **[!UICONTROL Theme]**, em vez de ambos ao mesmo tempo.
 
       ![](assets/int_enrichment_offer3.png)
 
-   * **[!UICONTROL A predefined offer]** : marque esta opção e especifique um espaço de oferta, uma oferta específica e uma data de contato para configurar diretamente a oferta que deseja adicionar, sem chamar o mecanismo de oferta.
+   * **[!UICONTROL A predefined offer]**: marque esta opção e especifique um espaço de ofertas, uma oferta específica e uma data de contato para configurar diretamente a oferta que deseja adicionar, sem chamar o mecanismo de oferta.
 
       ![](assets/int_enrichment_offer4.png)
 
-1. Em seguida, configure uma atividade de delivery que corresponda ao canal escolhido. Para obter mais informações, consulte a seção [Inserção de uma proposta em uma entrega](../../interaction/using/integrating-an-offer-via-the-wizard.md#inserting-an-offer-proposition-into-a-delivery) .
+1. Em seguida, configure uma atividade de delivery que corresponda ao canal escolhido. Para obter mais informações, consulte a seção [Inserção de uma apresentação de oferta em um delivery](../../interaction/using/integrating-an-offer-via-the-wizard.md#inserting-an-offer-proposition-into-a-delivery).
 
    >[!NOTE]
    >
@@ -102,8 +102,8 @@ Também é possível referenciar um link para uma oferta em uma atividade de enr
 
 Para fazer isso, realize o seguinte processo:
 
-1. Selecione **[!UICONTROL Add data]** na **[!UICONTROL Enrichment]** guia da atividade.
-1. In the window where you choose the type of data to add, select **[!UICONTROL A link]**.
+1. Selecione **[!UICONTROL Add data]** na guia **[!UICONTROL Enrichment]** da atividade.
+1. Na janela onde você escolhe o tipo de dados a serem adicionados, selecione **[!UICONTROL A link]**.
 1. Selecione o tipo de link que deseja estabelecer, assim como seu target. Nesse caso, o target é o schema de oferta.
 
    ![](assets/int_enrichment_link1.png)
@@ -112,7 +112,7 @@ Para fazer isso, realize o seguinte processo:
 
    ![](assets/int_enrichment_link2.png)
 
-1. Em seguida, configure uma atividade de delivery que corresponda ao canal escolhido. Para obter mais informações, consulte a seção [Inserção de uma proposta em uma entrega](../../interaction/using/integrating-an-offer-via-the-wizard.md#inserting-an-offer-proposition-into-a-delivery) .
+1. Em seguida, configure uma atividade de delivery que corresponda ao canal escolhido. Para obter mais informações, consulte a seção [Inserção de uma apresentação de oferta em um delivery](../../interaction/using/integrating-an-offer-via-the-wizard.md#inserting-an-offer-proposition-into-a-delivery).
 
    >[!NOTE]
    >
@@ -124,26 +124,26 @@ Por padrão, quando uma atividade de **enriquecimento** é usada para delivery d
 
 >[!NOTE]
 >
->Lembre-se:A **[!UICONTROL Offer engine]** atividade armazena essas informações por padrão.
+>Lembre-se que a atividade **[!UICONTROL Offer engine]** armazena essas informações por padrão.
 
 No entanto, é possível armazenar essas informações da seguinte maneira:
 
-1. Crie uma chamada para o mecanismo de oferta em uma atividade de enriquecimento feita após uma query e antes de uma atividade de delivery. Consulte a seção [Especificando uma oferta ou uma chamada para o mecanismo](../../interaction/using/integrating-an-offer-via-a-workflow.md#specifying-an-offer-or-a-call-to-the-offer-engine) de oferta.
+1. Crie uma chamada para o mecanismo de oferta em uma atividade de enriquecimento feita após uma query e antes de uma atividade de delivery. Consulte a seção [Especificação de uma oferta ou de uma chamada para o mecanismo de oferta](../../interaction/using/integrating-an-offer-via-a-workflow.md#specifying-an-offer-or-a-call-to-the-offer-engine). 
 1. Na janela principal da atividade, selecione **[!UICONTROL Edit additional data...]**.
 
    ![](assets/ita_enrichment_rankweight_1.png)
 
-1. Add the **[!UICONTROL @rank]** columns for the ranking and **[!UICONTROL @weight]** for the offer weight.
+1. Adicione as colunas **[!UICONTROL @rank]** para a classificação e **[!UICONTROL @weight]** para o peso da oferta.
 
    ![](assets/ita_enrichment_rankweight_2.png)
 
 1. Confirme sua adição e salve seu workflow.
 
-O delivery armazena automaticamente a classificação e o peso das ofertas. This information is visible in the delivery&#39;s **[!UICONTROL Offers]** tab.
+O delivery armazena automaticamente a classificação e o peso das ofertas. Essas informações estão visíveis na guia **[!UICONTROL Offers]** do delivery.
 
 ## Mecanismo de oferta {#offer-engine}
 
-The **[!UICONTROL Offer engine]** activity also lets you specify a call to the offer engine prior to the delivery.
+A atividade de **[!UICONTROL Offer engine]** também permite especificar uma chamada para o mecanismo de oferta antes da entrega.
 
 Essa atividade funciona de acordo com o mesmo princípio que a atividade de enriquecimento com uma chamada de mecanismo, enriquecendo os dados da população de entrada com uma oferta calculada pelo mecanismo, antes de um delivery.
 
@@ -151,7 +151,7 @@ Essa atividade funciona de acordo com o mesmo princípio que a atividade de enri
 
 Após configurar seu query (consulte o [Guia de workflows](../../workflow/using/query.md)):
 
-1. Add and open an **[!UICONTROL Offer engine]** activity.
+1. Adicione e abra uma atividade de **[!UICONTROL Offer engine]**.
 1. Preencha os vários campos disponíveis para especificar a chamada para oferecer parâmetros de mecanismo (espaço de oferta, categoria ou tema(s), data de contato, número de ofertas a serem mantidas). O mecanismo calculará automaticamente as ofertas para adicionar de acordo com esses parâmetros.
 
    >[!NOTE]
@@ -160,22 +160,22 @@ Após configurar seu query (consulte o [Guia de workflows](../../workflow/using/
 
    ![](assets/int_offerengine_activity1.png)
 
-1. Em seguida, configure uma atividade de delivery que corresponda ao canal escolhido. Para obter mais informações, consulte a seção [Inserção de uma proposta em uma entrega](../../interaction/using/integrating-an-offer-via-the-wizard.md#inserting-an-offer-proposition-into-a-delivery) .
+1. Em seguida, configure uma atividade de delivery que corresponda ao canal escolhido. Para obter mais informações, consulte a seção [Inserção de uma apresentação de oferta em um delivery](../../interaction/using/integrating-an-offer-via-the-wizard.md#inserting-an-offer-proposition-into-a-delivery).
 
 ## Ofertas por célula {#offers-by-cell}
 
-The **[!UICONTROL Offers by cell]** activity lets you distribute the inbound population (from a query for example) into several segments and to specify an offer to present for each of these segments.
+A atividade **[!UICONTROL Offers by cell]** permite distribuir a população de entrada (de uma consulta, por exemplo) em vários segmentos e especificar uma oferta a ser apresentada para cada um desses segmentos.
 
 Para fazer isso, realize o seguinte processo:
 
-1. Add the **[!UICONTROL Offers by cell]** activity once you have specified the target population, then open it.
-1. In the **[!UICONTROL General]** tab, select the offer space on which you want to present the offers.
-1. Na **[!UICONTROL Cells]** guia, especifique os diferentes subconjuntos usando o **[!UICONTROL Add]** botão:
+1. Adicione a atividade **[!UICONTROL Offers by cell]** após especificar a população do target e, em seguida, a abra.
+1. Na guia **[!UICONTROL General]**, selecione o espaço de ofertas no qual deseja apresentar as ofertas.
+1. Na guia **[!UICONTROL Cells]**, especifique os diferentes subconjuntos usando o botão **[!UICONTROL Add]**:
 
    * Especifique a população de subconjunto usando o filtro disponível e as regras de limitação.
    * Em seguida, selecione a oferta que deseja apresentar ao subconjunto. As ofertas disponíveis são aquelas elegíveis no ambiente de oferta que foi selecionado na etapa anterior.
 
       ![](assets/int_offer_per_cell1.png)
 
-1. Em seguida, configure uma atividade de delivery que corresponda ao canal escolhido. Para obter mais informações, consulte a seção [Inserção de uma proposta em uma entrega](../../interaction/using/integrating-an-offer-via-the-wizard.md#inserting-an-offer-proposition-into-a-delivery) .
+1. Em seguida, configure uma atividade de delivery que corresponda ao canal escolhido. Para obter mais informações, consulte a seção [Inserção de uma apresentação de oferta em um delivery](../../interaction/using/integrating-an-offer-via-the-wizard.md#inserting-an-offer-proposition-into-a-delivery).
 
