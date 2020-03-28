@@ -12,7 +12,7 @@ discoiquuid: 7e5605c8-78f2-4011-b317-96a59c699848
 index: y
 internal: n
 snippet: y
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: ab2c133aaa2f754e56fe8fdfc76d10526d4d1ce2
 
 ---
@@ -24,7 +24,7 @@ Neste exemplo, queremos recuperar os nomes e e-mails dos recipients cujos domín
 
 * Qual tabela devemos selecionar?
 
-   A tabela do recipient (nms:recipient)
+   A tabela de recipient (nms:recipient)
 
 * Campos a serem selecionados como colunas de saída
 
@@ -36,12 +36,12 @@ Neste exemplo, queremos recuperar os nomes e e-mails dos recipients cujos domín
 
 * É configurada uma classificação?
 
-   Sim, com base em **[!UICONTROL Account number]** e **[!UICONTROL Last name]**
+   Sim, com base em **[!UICONTROL Account number]** e **[!UICONTROL Last name]**.
 
 Para criar este exemplo, aplique as seguintes etapas:
 
-1. Click **[!UICONTROL Tools > Generic query editor...]** and choose the **Recipients** (**nms:recipient**) table. Em seguida, clique em **[!UICONTROL Next]**.
-1. Escolha: **[!UICONTROL Last name]**, **[!UICONTROL First name]**, **[!UICONTROL Email]**, **[!UICONTROL City]** e **[!UICONTROL Account number]**. Esses campos são adicionados a **[!UICONTROL Output columns]**. Em seguida, clique em **[!UICONTROL Next]**.
+1. Clique em **[!UICONTROL Tools > Generic query editor...]** e escolha a tabela **Recipients** (**nms:recipient**). Em seguida, clique em **[!UICONTROL Next]**.
+1. Escolha: **[!UICONTROL Last name]**, **[!UICONTROL First name]**, **[!UICONTROL Email]**, **[!UICONTROL City]** e **[!UICONTROL Account number]**. Esses campos são adicionados em **[!UICONTROL Output columns]**. Em seguida, clique em **[!UICONTROL Next]**.
 
    ![](assets/query_editor_03.png)
 
@@ -49,45 +49,45 @@ Para criar este exemplo, aplique as seguintes etapas:
 
    ![](assets/query_editor_04.png)
 
-1. Na **[!UICONTROL Data filtering]** janela, refine sua pesquisa: escolha **[!UICONTROL Filtering conditions]** e clique em **[!UICONTROL Next]**.
-1. The **[!UICONTROL Target element]** window lets you enter the filter settings.
+1. Na janela **[!UICONTROL Data filtering]**, refine sua pesquisa: escolha **[!UICONTROL Filtering conditions]** e clique em **[!UICONTROL Next]**.
+1. A janela **[!UICONTROL Target element]** permite inserir as configurações de filtro.
 
-   Defina a seguinte condição de filtro: recipients com um domínio de e-mail igual a &quot;orange.co.uk&quot;. To do this, choose **Email domain (@email)** in the **[!UICONTROL Expression]** column, choose **equal to** in the **[!UICONTROL Operator]** column and enter &quot;orange.co.uk&quot; in the **[!UICONTROL Value]** column.
+   Defina a seguinte condição de filtro: recipients com um domínio de e-mail igual a &quot;orange.co.uk&quot;. Para fazer isso, escolha **Email domain (@email)** na coluna **[!UICONTROL Expression]**, escolha **equal to** na coluna **[!UICONTROL Operator]** e digite &quot;orange.co.uk&quot; na coluna **[!UICONTROL Value]**.
 
    ![](assets/query_editor_05.png)
 
-1. If needed, click the **[!UICONTROL Distribution of values]** button to view a distribution based on the email domain of prospects. Uma porcentagem está disponível para cada domínio de e-mail no banco de dados. Domínios diferentes de &quot;orange.co.uk&quot; são exibidos até o filtro ser aplicado.
+1. Se necessário, clique no botão **[!UICONTROL Distribution of values]** para visualizar uma distribuição baseada no domínio de email de prospectos. Uma porcentagem está disponível para cada domínio de e-mail no banco de dados. Domínios diferentes de &quot;orange.co.uk&quot; são exibidos até o filtro ser aplicado.
 
-   Um resumo da consulta é exibido na parte inferior da janela: Domínio de **email igual a &#39;orange.co.uk&#39;**.
+   Um resumo da consulta é exibido na parte inferior da janela: **Email domain equal to &#39;orange.co.uk&#39;**.
 
-1. Click the **[!UICONTROL Preview]** to get an idea of the query result: only &quot;orange.co.uk&quot; email domains are displayed.
+1. Clique em **[!UICONTROL Preview]** para obter visualização do resultado da consulta: somente os domínios de email &quot;orange.co.uk&quot; são exibidos.
 
    ![](assets/query_editor_nveau_17.png)
 
 1. Agora, vamos alterar a query para localizar os contatos que não moram em Londres.
 
-   Selecione **[!UICONTROL City (location/@city)]** na **[!UICONTROL Expression]** coluna, **[!UICONTROL different from]** como um operador e digite **[!UICONTROL London]** na **[!UICONTROL Value]** coluna.
+   Selecione **[!UICONTROL City (location/@city)]** na coluna **[!UICONTROL Expression]**, **[!UICONTROL different from]** como operador e insira **[!UICONTROL London]** na coluna **[!UICONTROL Value]**.
 
    ![](assets/query_editor_08.png)
 
-1. This will take you to the **[!UICONTROL Data formatting]** window. Verifique a ordem da coluna. Mova a coluna &quot;City&quot; logo ao lado da coluna &quot;Account number&quot;.
+1. Isso abrirá a janela **[!UICONTROL Data formatting]**. Verifique a ordem da coluna. Mova a coluna &quot;City&quot; logo ao lado da coluna &quot;Account number&quot;.
 
    Desmarque a coluna &quot;First name&quot; para removê-la da lista.
 
    ![](assets/query_editor_nveau_15.png)
 
-1. Na **[!UICONTROL Data preview]** janela, clique em **[!UICONTROL Start the preview of the data]**. Essa função calcula o resultado da query.
+1. Na janela **[!UICONTROL Data preview]**, clique em **[!UICONTROL Start the preview of the data]**. Essa função calcula o resultado da query.
 
-   The **[!UICONTROL Column results]** tab shows the query result in columns.
+   A guia **[!UICONTROL Column results]** mostra o resultado da consulta em colunas.
 
    O resultado mostra todos os recipients com um domínio de e-mail &quot;orange.co.uk&quot; que não vivem em Londres. A coluna &quot;First name&quot; não é mostrada porque foi desmarcada durante o estágio anterior. Os números de conta são classificados em ordem decrescente.
 
    ![](assets/query_editor_nveau_12.png)
 
-   The **[!UICONTROL XML result]** tab shows the result in XML format.
+   A guia **[!UICONTROL XML result]** mostra o resultado no formato XML.
 
    ![](assets/query_editor_nveau_13.png)
 
-   The **[!UICONTROL Generated QSL queries]** tab shows the query result in SQL format.
+   A guia **[!UICONTROL Generated QSL queries]** mostra o resultado da consulta no formato SQL.
 
    ![](assets/query_editor_nveau_14.png)
