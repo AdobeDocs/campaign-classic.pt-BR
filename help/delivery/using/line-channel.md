@@ -14,7 +14,7 @@ discoiquuid: 1d3cc650-3c79-4a1d-b2bc-e7eb6d59d2f1
 index: y
 internal: n
 snippet: y
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 0ce6e5277c32bc18c20dca62e5b276f654d1ace5
 
 ---
@@ -30,7 +30,7 @@ O LINE também pode ser combinado com o módulo de mensagem transacional para en
 
 ![](assets/line_message.png)
 
-As seções abaixo fornecem informações específicas para o canal LINE. For global information on how to create a delivery, refer to [this section](../../delivery/using/steps-about-delivery-creation-steps.md).
+As seções abaixo fornecem informações específicas para o canal LINE. Para informações gerais sobre como criar um delivery, consulte [esta seção](../../delivery/using/steps-about-delivery-creation-steps.md).
 
 As etapas para usar o canal LINE são:
 
@@ -52,7 +52,7 @@ As etapas para usar o canal LINE são:
 
 Para criar e configurar uma conta LINE, consulte [https://developers.line.me/](https://developers.line.me/).
 
-To create and configure a LINE service, see [Managing subscriptions](../../delivery/using/managing-subscriptions.md).
+Para criar e configurar um serviço LINE, consulte [Gerenciando subscrições](../../delivery/using/managing-subscriptions.md)
 
 ![](assets/line_service.png)
 
@@ -64,22 +64,22 @@ Por fim, para criar uma conta externa no Adobe Campaign:
    ![](assets/line_config.png)
 
 1. Preencha os campos **Label** e **Internal Name**.
-1. In the **[!UICONTROL Type]** field, select Routing and in the **Channel** field, select LINE.
-1. Click **[!UICONTROL Save]** to create your LINE external account.
+1. No campo **[!UICONTROL Type]**, selecione Routing, e no campo **Channel**, selecione LINE.
+1. Clique em **[!UICONTROL Save]** para criar a conta externa LINE.
 1. Em seguida, um campo de personalização **LINE** aparece sob o ícone **General**, preencha os seguintes campos:
 
    ![](assets/line_config_2.png)
 
-   * **Alias** do canal: é fornecido pela sua conta LINE na guia **[!UICONTROL Channels]** > **[!UICONTROL Technical configuration]** .
+   * **Channel Alias**: é fornecido através da conta LINE na guia **[!UICONTROL Channels]** > **[!UICONTROL Technical configuration]**.
    * **Channel ID**: é fornecido através da conta LINE na guia **Channels**> **Basic Information panel**.
    * **Channel secret key**: é fornecido por meio da conta LINE na guia **Channels**> **Basic Information panel**.
-   * **Token** de acesso: é fornecido através da sua conta LINE no portal do desenvolvedor ou clicando no **[!UICONTROL Get access token]** botão.
+   * **Access token**: é fornecido por meio da conta LINE no portal do desenvolvedor ou clicando no botão **[!UICONTROL Get access token]**.
    * **Access token expiration date**: permite especificar a data de expiração do token de acesso.
    * **LINE subscription service**: permite especificar os serviços aos quais os usuários serão subscritos.
 
 >[!NOTE]
 >
->Você deve verificar se os fluxos de trabalho **[!UICONTROL LINE access token update (updateLineAccessToken)]** e **[!UICONTROL Delete blocked LINE users (deleteBlockedLineUsers)]** foram iniciados. From the explorer, click **[!UICONTROL Administration > Production > Technical workflows > LINE workflows]** to check the status of the workflows.
+>Deve-se verificar se os workflows **[!UICONTROL LINE access token update (updateLineAccessToken)]** e **[!UICONTROL Delete blocked LINE users (deleteBlockedLineUsers)]** iniciaram. No Explorer, clique em **[!UICONTROL Administration > Production > Technical workflows > LINE workflows]** para verificar o status dos workflows.
 
 ## Criação de delivery {#creating-the-delivery}
 
@@ -89,13 +89,13 @@ Para criar um delivery **LINE**, é necessário seguir estas etapas:
 >
 >Os conceitos globais sobre a criação de delivery são apresentados [nesta seção](../../delivery/using/steps-about-delivery-creation-steps.md).
 
-1. Na **[!UICONTROL Campaigns]** guia, selecione **[!UICONTROL Deliveries]** e clique no **[!UICONTROL Create]** botão.
-1. In the window that appears, select **[!UICONTROL LINE V2 delivery]** delivery template.
+1. Na guia **[!UICONTROL Campaigns]**, selecione **[!UICONTROL Deliveries]** e clique no botão **[!UICONTROL Create]**.
+1. Na janela exibida, selecione o template do delivery **[!UICONTROL LINE V2 delivery]**.
 
    ![](assets/line_message_01.png)
 
 1. Identifique o delivery com um rótulo, código e descrição. Para obter mais informações, consulte [esta seção](../../delivery/using/steps-create-and-identify-the-delivery.md#identifying-the-delivery).
-1. Click **[!UICONTROL Continue]** to create your delivery.
+1. Clique em **[!UICONTROL Continue]** para criar o delivery.
 
 ## Definição do conteúdo {#defining-the-content}
 
@@ -151,7 +151,7 @@ Um delivery LINE **Image and link** é uma mensagem enviada aos recipients no fo
 
    ![](assets/line_message_05.png)
 
-   The **[!UICONTROL Links]** section allows you to choose between different layouts that will divide your image in multiple clickable regions. Então, é possível atribuir cada um deles a um link dedicado.
+   A seção **[!UICONTROL Links]** permite escolher entre diferentes layouts que dividirão a imagem em várias regiões clicáveis. Então, é possível atribuir cada um deles a um link dedicado.
 
 >[!NOTE]
 >
@@ -163,7 +163,7 @@ Um delivery LINE **Image and link** é uma mensagem enviada aos recipients no fo
 
 ## Seleção da população do target {#selecting-the-target-population}
 
-Selecionar recipients de um delivery LINE é semelhante a definir recipients do delivery de email. Para obter mais informações, consulte [Identificação das populações](../../delivery/using/steps-defining-the-target-population.md)-alvo.
+Selecionar recipients de um delivery LINE é semelhante a definir recipients do delivery de email. Para obter mais informações, consulte [Identificação das populações-alvo](../../delivery/using/steps-defining-the-target-population.md).
 
 O direcionamento é realizado em **visitors**.
 
@@ -171,15 +171,15 @@ O direcionamento é realizado em **visitors**.
 
 Quando o delivery é criado e configurado corretamente, é possível enviá-lo para o target definido anteriormente.
 
-O envio de deliveries LINE é semelhante ao envio de um delivery de email. For more information on sending a delivery, refer to [Sending messages](../../delivery/using/sending-messages.md).
+O envio de deliveries LINE é semelhante ao envio de um delivery de email. Para obter mais informações sobre o envio de um delivery, consulte [Envio de mensagens](../../delivery/using/sending-messages.md).
 
 ## Acesso ao relatórios {#accessing-reports}
 
-You can view reports on the LINE service by clicking **[!UICONTROL Profiles and Targets > Services and Subscriptions > LINE]** in the explorer. Then click the **[!UICONTROL Reports]** icon in the LINE service.
+É possível exibir relatórios do serviço LINE clicando em **[!UICONTROL Profiles and Targets > Services and Subscriptions > LINE]** no Explorer. Em seguida, clique no ícone **[!UICONTROL Reports]** no serviço LINE.
 
 ![](assets/line_reports.png)
 
-To view reports on LINE deliveries, click **[!UICONTROL Campaign Management > Deliveries]** then select the delivery you want. Os relatórios de rastreamento indicam a taxa de cliques. O LINE não leva a taxa de abertura em consideração.
+Para exibir relatórios dos deliveries LINE, clique em **[!UICONTROL Campaign Management > Deliveries]** e selecione o delivery desejado. Os relatórios de rastreamento indicam a taxa de cliques. O LINE não leva a taxa de abertura em consideração.
 
 ![](assets/line_reports_01.png)
 
@@ -187,11 +187,11 @@ To view reports on LINE deliveries, click **[!UICONTROL Campaign Management > De
 
 Neste exemplo, vamos criar e configurar uma mensagem de texto e uma imagem contendo dados que serão personalizados de acordo com o recipient.
 
-1. Create your LINE delivery by clicking the **[!UICONTROL Create]** button from the **[!UICONTROL Campaign]** tab.
+1. Crie o delivery LINE clicando na guia **[!UICONTROL Create]** e depois no botão **[!UICONTROL Campaign]**.
 
    ![](assets/line_usecase.png)
 
-1. Select the **[!UICONTROL LINE V2 delivery]** delivery template and name your delivery.
+1. Selecione o template do delivery **[!UICONTROL LINE V2 delivery]** e dê um nome ao delivery.
 
    ![](assets/line_usecase_01.png)
 
@@ -199,28 +199,28 @@ Neste exemplo, vamos criar e configurar uma mensagem de texto e uma imagem conte
 
    ![](assets/line_usecase_02.png)
 
-1. Click **[!UICONTROL Add]** to create your message and select the **[!UICONTROL Message type]**.
+1. Clique em **[!UICONTROL Add]** para criar a mensagem e selecione o **[!UICONTROL Message type]**.
 
    Aqui, primeiro devemos criar uma mensagem de texto.
 
    ![](assets/line_usecase_03.png)
 
-1. Place your cursor in the place where you want to insert the personalized text and click the drop-down icon then select **[!UICONTROL Visitor > First name]**.
+1. Coloque o cursor no lugar onde deseja inserir o texto personalizado, clique no ícone suspenso e selecione **[!UICONTROL Visitor > First name]**.
 
    ![](assets/line_usecase_05.png)
 
-1. Follow the same procedure to add an image, selecting **[!UICONTROL Image and links]** in the **[!UICONTROL Message type]** drop-down.
+1. Siga o mesmo procedimento para adicionar uma imagem, selecionando **[!UICONTROL Image and links]** no menu suspenso **[!UICONTROL Message type]**.
 
    Adicione o URL da imagem.
 
    ![](assets/line_usecase_07.png)
 
-1. In the **[!UICONTROL Links]** section, select the layout that will divide your image in multiple clickable regions.
+1. Na seção **[!UICONTROL Links]**, selecione o layout que dividirá a imagem em várias regiões clicáveis.
 1. Atribua um URL para cada região da imagem.
 
    ![](assets/line_usecase_08.png)
 
-1. Save your delivery then click **[!UICONTROL Send]** to analyze and send it to the target.
+1. Salve o delivery e clique em **[!UICONTROL Send]** para analisar e enviá-lo para o target.
 
    O delivery é enviado para o target.
 
