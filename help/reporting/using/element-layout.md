@@ -14,7 +14,7 @@ discoiquuid: 8fdda764-3e42-4972-a9c9-63567588931e
 index: y
 internal: n
 snippet: y
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 209ac4d81d2d27c264ee6b288bcb7fcb1900ffc5
 
 ---
@@ -22,7 +22,7 @@ source-git-commit: 209ac4d81d2d27c264ee6b288bcb7fcb1900ffc5
 
 # Layout do elemento{#element-layout}
 
-Além dos diversos gráficos detalhados aqui: Tipos e variantes [de](../../reporting/using/creating-a-chart.md#chart-types-and-variants)gráfico, você pode adaptar a exibição e adicionar elementos às páginas do relatório.
+Além dos diversos gráficos detalhados aqui: [Tipos e variantes de gráfico](../../reporting/using/creating-a-chart.md#chart-types-and-variants), você pode adaptar a exibição e adicionar elementos às páginas do relatório.
 
 É possível usar containers: eles permitem vincular vários elementos de uma página e configurar o layout em colunas e/ou células. Como usá-los está detalhado [nesta seção](../../web/using/defining-web-forms-layout.md#creating-containers).
 
@@ -32,31 +32,31 @@ Além dos diversos gráficos detalhados aqui: Tipos e variantes [de](../../repor
 
 É possível usar as opções em cada página do relatório.
 
-The **[!UICONTROL General]** tab lets you change the title of the page, as well as configure legend positions and browsing between the report pages.
+A guia **[!UICONTROL General]** permite alterar o título da página, bem como configurar as posições da legenda e navegar entre as páginas do relatório.
 
 ![](assets/s_ncs_advuser_report_wizard_022.png)
 
-The **[!UICONTROL Title]** field lets you personalize the label in the header of the report page. The title of the window can be configured via the **[!UICONTROL Properties]** window of the report. Para obter mais informações, consulte [Adicionar um cabeçalho e um rodapé](#adding-a-header-and-a-footer).
+O campo **[!UICONTROL Title]** permite personalizar o rótulo no cabeçalho da página do relatório. O título da janela pode ser configurado pela janela **[!UICONTROL Properties]** do relatório. Para obter mais informações, consulte [Adicionar um cabeçalho e um rodapé](#adding-a-header-and-a-footer).
 
-The **[!UICONTROL Display settings]** options enable you to select the position of the control caption within a report page and to define the number of columns on the page. Para obter mais informações sobre o layout de página, consulte a seção **Item layout** [desta seção](../../web/using/defining-web-forms-layout.md#positioning-the-fields-on-the-page).
+As opções em **[!UICONTROL Display settings]** permitem selecionar a posição da legenda de controle em uma página de relatório e definir o número de colunas na página. Para obter mais informações sobre o layout de página, consulte a seção **Item layout** [desta seção](../../web/using/defining-web-forms-layout.md#positioning-the-fields-on-the-page).
 
-Select the various options in the **[!UICONTROL Browse]** section to authorize browsing from one report page to another. Se a opção **[!UICONTROL Disable next page]** ou **[!UICONTROL Disable previous page]** estiver selecionada, os botões **[!UICONTROL Next]** e **[!UICONTROL Previous]** desaparecerão da página do relatório.
+Selecione as várias opções na seção **[!UICONTROL Browse]** para autorizar a navegação de uma página de relatório para outra. Se as opções **[!UICONTROL Disable next page]** ou **[!UICONTROL Disable previous page]** forem selecionadas, os botões **[!UICONTROL Next]** e **[!UICONTROL Previous]** desaparecem da página do relatório.
 
 ## Adição de um cabeçalho e um rodapé {#adding-a-header-and-a-footer}
 
 A janela de propriedades do relatório também permite definir os elementos de layout, como: o título da janela, o conteúdo HTML dos cabeçalhos e rodapés.
 
-To access the properties window, click the **[!UICONTROL Properties]** button of the report.
+Para acessar a janela de propriedades, clique no botão **[!UICONTROL Properties]** do relatório.
 
 ![](assets/reporting_properties.png)
 
-The **[!UICONTROL Page]** tab enables you to personalize your display.
+A guia **[!UICONTROL Page]** permite personalizar a exibição.
 
 ![](assets/s_ncs_advuser_report_properties_04.png)
 
 O conteúdo configurado nesta guia será visível em todas as páginas do relatório.
 
-The **[!UICONTROL Texts]** sub-tab enables you to define variable content: it will be taken into account during the translation cycle if the report is designed for use in several languages.
+A subguia **[!UICONTROL Texts]** permite definir o conteúdo variável: ele será levado em conta durante o ciclo de conversão se o relatório for projetado para uso em vários idiomas.
 
 Isso permite criar uma lista de fragmentos de texto e vinculá-los a identificadores:
 
