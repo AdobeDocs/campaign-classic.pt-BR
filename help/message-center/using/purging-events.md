@@ -14,7 +14,7 @@ discoiquuid: 2f643080-93b4-4c9f-80cf-b1770b149e6c
 index: y
 internal: n
 snippet: y
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 20f835c357d016643ea1f3209ee4dfb6d3239f90
 
 ---
@@ -24,7 +24,7 @@ source-git-commit: 20f835c357d016643ea1f3209ee4dfb6d3239f90
 
 Você pode usar o assistente de implantação para definir por quanto tempo os dados devem ser armazenados no banco de dados.
 
-Event purging is carried out automatically by the **[!UICONTROL Database cleanup]** workflow. Esse workflow limpa os eventos recebidos e armazenados nas instâncias de execução e eventos arquivados em uma instância de controle.
+A limpeza de eventos é executada automaticamente pelo fluxo de trabalho **[!UICONTROL Database cleanup]**. Esse workflow limpa os eventos recebidos e armazenados nas instâncias de execução e eventos arquivados em uma instância de controle.
 
 Use as setas conforme o caso para alterar as configurações de limpeza:
 
