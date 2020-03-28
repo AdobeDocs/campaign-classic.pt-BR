@@ -14,23 +14,23 @@ discoiquuid: 667746cb-b553-4a71-8523-6b2695047ab6
 index: y
 internal: n
 snippet: y
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 62b2f1f6cfcaadd10880d428b8b94d73d2addcdb
 
 ---
 
 
-# Uso de um relatório de análise{#processing-a-report}
+# Uso de um relatório de análise {#processing-a-report}
 
 ## Salvamento de um relatório de análise {#saving-an-analysis-report}
 
 Se tiver os direitos apropriados, poderá salvar um relatório de análise criado a partir de um template ou exportá-lo no formato Excel, PDF ou OpenOffice.
 
-To save your report, click **[!UICONTROL Save]** and give your report a label.
+Para salvar o relatório, clique em **[!UICONTROL Save]** e dê um rótulo a ele.
 
-Select **[!UICONTROL Also save data]** if you wish to create a history of your report and see the values of the report at the time of saving. Para obter mais informações, consulte os relatórios [de análise de](#archiving-analysis-reports)Arquivamento.
+Selecione **[!UICONTROL Also save data]** se desejar criar um histórico do relatório e ver os valores do relatório no momento da gravação. Para obter mais informações, consulte [Arquivamento de relatórios de análise](#archiving-analysis-reports).
 
-The **[!UICONTROL Share this report]** option allows other operators to access the report.
+A opção **[!UICONTROL Share this report]** permite que outros operadores acessem o relatório.
 
 ![](assets/s_ncs_user_report_wizard_010.png)
 
@@ -38,7 +38,7 @@ Depois de salvo, esse relatório pode ser reutilizado para gerar outros relatór
 
 ![](assets/s_ncs_user_report_wizard_08a.png)
 
-To make changes to this report, edit the **[!UICONTROL Administration > Configuration > Adobe Campaign tree reports]** node of the Adobe Campaign tree (or the first &#39;Reports&#39; type folder for which the operator has editing rights). Para obter mais informações, consulte [Configuração do layout de um relatório](#configuring-the-layout-of-a-descriptive-analysis-report)de análise descritiva.
+Para fazer alterações nesse relatório, edite o nó **[!UICONTROL Administration > Configuration > Adobe Campaign tree reports]** da árvore do Adobe Campaign (ou a primeira pasta do tipo &quot;Relatórios&quot; para a qual o operador tem direitos de edição). Para obter mais informações, consulte [Configuração do layout de um relatório de análise descritiva](#configuring-the-layout-of-a-descriptive-analysis-report).
 
 ## Configurações adicionais do relatório de análise {#analysis-report-additional-settings}
 
@@ -50,15 +50,15 @@ Essas opções são as mesmas dos relatórios padrão e são detalhadas [nesta p
 
 ## Configuração do layout de um relatório de análise descritiva {#configuring-the-layout-of-a-descriptive-analysis-report}
 
-É possível personalizar a visualização e layout dos dados nos gráficos e tabelas da análise descritiva. All options are accessed via the Adobe Campaign tree, in the **[!UICONTROL Edit]** tab of each report.
+É possível personalizar a visualização e layout dos dados nos gráficos e tabelas da análise descritiva. Todas as opções são acessadas através da árvore do Adobe Campaign, na guia **[!UICONTROL Edit]** de cada relatório.
 
 ### Modo de exibição do relatório de análise {#analysis-report-display-mode}
 
-When you create a report using the **[!UICONTROL qualitative distribution]** template, table and chart display modes are selected by default. Se desejar apenas um modo de exibição, desmarque a caixa apropriada. Isso significa que somente a guia do modo de exibição selecionado estará disponível.
+Ao criar um relatório usando o template **[!UICONTROL qualitative distribution]**, os modos de exibição de tabela e gráfico são selecionados por padrão. Se desejar apenas um modo de exibição, desmarque a caixa apropriada. Isso significa que somente a guia do modo de exibição selecionado estará disponível.
 
 ![](assets/s_ncs_advuser_report_display_01.png)
 
-To change the schema of the report, click the **[!UICONTROL Select the link]** and select another table from the database.
+Para alterar o schema do relatório, clique em **[!UICONTROL Select the link]** e selecione outra tabela no banco de dados.
 
 ![](assets/s_ncs_advuser_report_display_02.png)
 
@@ -93,11 +93,11 @@ No exemplo a seguir, as estatísticas são exibidas em colunas.
 É possível personalizar o layout de dados diretamente nas tabelas de análise descritivas. Para fazer isso, clique com o botão direito na variável com a qual deseja trabalhar. Selecione as opções disponíveis do menu suspenso:
 
 * **[!UICONTROL Pivot]** para alterar o eixo da variável.
-* **[!UICONTROL Up]** / **[!UICONTROL Down]** para trocar as variáveis em linhas.
-* **[!UICONTROL Move to the right]** / **[!UICONTROL Move to the left]** para trocar as variáveis em colunas.
-* **[!UICONTROL Turn]** para inverter os eixos de variáveis.
-* **[!UICONTROL Sort from A to Z]** para classificar os valores de variável de baixo para alto.
-* **[!UICONTROL Sort from Z to A]** para classificar os valores de variável de alto a baixo.
+* **[!UICONTROL Up]** / **[!UICONTROL Down]** para trocar as variáveis entre linhas.
+* **[!UICONTROL Move to the right]** / **[!UICONTROL Move to the left]** para trocar as variáveis entre colunas.
+* **[!UICONTROL Turn]** para inverter os eixos das variáveis.
+* **[!UICONTROL Sort from A to Z]** para classificar os valores da variável de baixo para cima.
+* **[!UICONTROL Sort from Z to A]** para classificar os valores da variável de cima para baixo.
 
    ![](assets/s_ncs_advuser_report_wizard_016.png)
 
@@ -105,20 +105,20 @@ Para retornar à exibição inicial, atualize a visualização.
 
 ### Opções de gráfico do relatório de análise {#analysis-report-chart-options}
 
-É possível personalizar a exibição de dados no gráfico. To do this, click the **[!UICONTROL Variables...]** link available during the chart type selection stage.
+É possível personalizar a exibição de dados no gráfico. Para fazer isso, clique no link **[!UICONTROL Variables...]** disponível durante a etapa de seleção do tipo de gráfico.
 
 ![](assets/s_ncs_advuser_report_wizard_3c.png)
 
 As seguintes opções estão disponíveis:
 
 * A seção superior da janela permite modificar a área de exibição do gráfico.
-* Por padrão, os rótulos são exibidos no gráfico. You can hide them by un-checking the **[!UICONTROL Show values]** option.
-* The **[!UICONTROL Accumulate values]** option lets you add up values from one series to another.
+* Por padrão, os rótulos são exibidos no gráfico. É possível ocultá-los desmarcando a opção **[!UICONTROL Show values]**.
+* A opção **[!UICONTROL Accumulate values]** permite adicionar valores de uma série a outra.
 * É possível decidir se exibe ou não a legenda do gráfico: para ocultá-la, desmarque a opção apropriada. Por padrão, a legenda é exibida fora do gráfico no canto superior direito.
 
    A legenda também pode ser exibida na parte superior do gráfico para salvar espaço de visualização. Para fazer isso, selecione a opção **[!UICONTROL Include in the chart]**
 
-   Select the vertical and horizontal alignment in the **[!UICONTROL Caption position]** drop-down list.
+   Selecione o alinhamento vertical e horizontal na lista suspensa **[!UICONTROL Caption position]**.
 
    ![](assets/s_ncs_advuser_report_wizard_3d.png)
 
@@ -134,9 +134,9 @@ Para obter mais informações, consulte [esta página](../../reporting/using/act
 
 É possível criar relatórios de análise descritiva em dados usando relatórios existentes já armazenados no Adobe Campaign. Esse modo é possível quando as análises foram salvas ou quando os relatórios foram criados e configurados para serem acessados via assistente de análise descritiva.
 
-Para descobrir como salvar análises descritivas, consulte [Salvar um relatório](#saving-an-analysis-report)de análise.
+Para descobrir como salvar análises descritivas, consulte [Salvar um relatório de análise](#saving-an-analysis-report).
 
-To create descriptive analysis reports, the descriptive analysis wizard must be executed via a workflow transition or via the **[!UICONTROL Tools > Descriptive analysis]** menu.
+Para criar relatórios de análise descritiva, o assistente de análise descritiva deve ser executado por uma transição de workflow ou por meio do menu **[!UICONTROL Tools > Descriptive analysis]**.
 
 1. Selecione **[!UICONTROL Existing analyses and reports]** e clique em **[!UICONTROL Next]**.
 1. Isso permite acessar a lista de relatórios disponíveis. Selecione o relatório que deseja gerar.
