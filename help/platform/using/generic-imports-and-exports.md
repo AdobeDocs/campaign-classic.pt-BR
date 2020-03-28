@@ -14,7 +14,7 @@ discoiquuid: a21576c7-e94c-4fe1-9e31-d89116e427f6
 index: y
 internal: n
 snippet: y
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 1c86322fa95aee024f6c691b61a10c21a9a22eb7
 
 ---
@@ -28,13 +28,13 @@ O Adobe Campaign também oferece um módulo de importação que permite fornecer
 
 >[!NOTE]
 >
->Exports and imports are configured in dedicated templates executed through workflows via the **[!UICONTROL Import]** and **[!UICONTROL Export]** activities. Elas podem ser repetidas automaticamente de acordo com um agendamento, por exemplo, para automatizar a troca de dados entre vários sistemas de informações. If necessary, you can create an occasional import or export via the **[!UICONTROL Profiles and Targets > Jobs > Generic imports and exports]** node of the Adobe Campaign tree.
+>As exportações e importações são configuradas em modelos dedicados que são executados por meio de workflows através de atividades de **[!UICONTROL Importação]** e **[!UICONTROL Exportação]**. Elas podem ser repetidas automaticamente de acordo com um agendamento, por exemplo, para automatizar a troca de dados entre vários sistemas de informações. Se necessário, é possível criar uma importação ou exportação ocasional por meio das opções **[!UICONTROL Profiles and Targets > Jobs > Generic imports and exports]** no Adobe Campaign.
 
 É possível:
 
 * Criar um modelo de importação ou exportação e configurá-lo (veja abaixo).
-* Criar uma importação ou exportação: consulte [Exportar dados](../../platform/using/exporting-data.md) ou [Importar dados](../../platform/using/importing-data.md).
-* Inicie a importação ou exportação e monitore sua execução. consulte [Rastreamento](#execution-tracking)de execução.
+* Criar uma importação ou exportação: consulte [Exportação de dados](../../platform/using/exporting-data.md) ou [Importação de dados](../../platform/using/importing-data.md).
+* Iniciar a importação ou exportação e monitorar sua execução. consulte [Rastreio de execução](#execution-tracking).
 
 >[!CAUTION]
 >
@@ -42,21 +42,21 @@ O Adobe Campaign também oferece um módulo de importação que permite fornecer
 
 ## Criação de um template de trabalho {#creating-a-job-template}
 
-Import and export templates are stored in the **[!UICONTROL Resources > Templates > Job templates]** directory of the Adobe Campaign tree.
+Os modelos de importação e exportação são armazenados no diretório **[!UICONTROL Resources > Templates > Job templates]** da árvore do Adobe Campaign.
 
 ![](assets/s_ncs_user_export_wizard_template.png)
 
-Por padrão, três templates de importação e um template de exportação estão presentes nesse diretório. Eles não devem ser modificados. You can duplicate them to create your own templates or create a new template via the **[!UICONTROL New > Import template]** / **[!UICONTROL Export template]** menu.
+Por padrão, três templates de importação e um template de exportação estão presentes nesse diretório. Eles não devem ser modificados. É possível duplicá-los para criar os próprios modelos ou criar um novo por meio do menu **[!UICONTROL New > Import template]**/**[!UICONTROL Export template]**.
 
 ![](assets/s_ncs_user_export_wizard_template_create.png)
 
-O procedimento para a criação de um modelo de processo é apresentado no assistente [de](../../platform/using/exporting-data.md#export-wizard) exportação e no assistente [de](../../platform/using/importing-data.md#import-wizard)importação.
+O procedimento para criação de um modelo de processo é apresentado no [Assistente de exportação](../../platform/using/exporting-data.md#export-wizard) e [Assistente de importação](../../platform/using/importing-data.md#import-wizard).
 
 >[!NOTE]
 >
->The native template **[!UICONTROL Import blacklist]** is already configured to import a list of blacklisted e-mail addresses.
+>O modelo nativo **[!UICONTROL Importar blacklist]** está configurado para importar uma lista de endereços de email incluídos na blacklist.
 > 
->Os modelos **[!UICONTROL New text import]** e **[!UICONTROL New text export]** permitem que você configure uma importação ou exportação do zero.
+>Os templates **[!UICONTROL New text import]** e **[!UICONTROL New text export]** permitem configurar uma importação ou exportação do zero.
 
 ## Criação de uma nova importação/exportação {#creating-a-new-import-export}
 
@@ -64,9 +64,9 @@ Após a configuração do modelo, as operações de importação e exportação 
 
 Todos abrem o assistente de [importação](../../platform/using/importing-data.md) ou [exportação](../../platform/using/exporting-data.md#export-wizard).
 
-* In the **[!UICONTROL Profiles and targets]** section of Adobe Campaign workspace, click the **[!UICONTROL Jobs]** link: this takes you to the list of existing imports and exports.
+* Na seção **[!UICONTROL Profiles and targets]** do espaço de trabalho do Adobe Campaign, clique no link **[!UICONTROL Jobs]**: isso permitirá o acesso à lista de importações e exportações existentes.
 
-   Click the **[!UICONTROL Create]** button and select the type of job you want to perform.
+   Clique no botão **[!UICONTROL Create]** e selecione o tipo de trabalho que deseja executar.
 
    ![](assets/s_ncs_user_import_from_home.png)
 
@@ -76,7 +76,7 @@ Todos abrem o assistente de [importação](../../platform/using/importing-data.m
 
 * Importações e exportações também podem ser iniciadas no gerenciador do Adobe Campaign.
 
-   Para exportar/importar dados, clique no **[!UICONTROL Profiles and Targets > Jobs > Generic imports and exports]** nó, no **[!UICONTROL New]** ícone e selecione **[!UICONTROL Export]** ou **[!UICONTROL Import]**. Isso abre o assistente apropriado.
+   Para exportar/importar dados, clique no nó **[!UICONTROL Profiles and Targets > Jobs > Generic imports and exports]**, depois clique no ícone **[!UICONTROL New]** e selecione **[!UICONTROL Export]** ou **[!UICONTROL Import]**. Isso abre o assistente apropriado.
 
    ![](assets/s_ncs_user_export_wizard_launch_from_menu.png)
 
@@ -86,10 +86,10 @@ Todos abrem o assistente de [importação](../../platform/using/importing-data.m
 
 ![](assets/s_ncs_user_export_list_and_details.png)
 
-* The **[!UICONTROL Log]** tab lets you look at log messages concerning execution.
-* The **[!UICONTROL Rejects]** tab contains the rejected records. See [Behavior in the event of an error](../../platform/using/importing-data.md#behavior-in-the-event-of-an-error).
+* A guia **[!UICONTROL Log]** permite visualizar mensagens de log relacionadas à execução.
+* A guia **[!UICONTROL Rejects]** contém os registros rejeitados. Consulte o [Comportamento no caso de um erro](../../platform/using/importing-data.md#behavior-in-the-event-of-an-error)
 
 >[!NOTE]
 >
->Import/export job statuses are presented in [Job statuses](../../platform/using/importing-data.md#job-statuses).
+>Os status do trabalho de importação/exportação são apresentados em [Job statuses](../../platform/using/importing-data.md#job-statuses).
 
