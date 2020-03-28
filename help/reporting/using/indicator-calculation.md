@@ -14,7 +14,7 @@ discoiquuid: cc832666-ad18-49ce-afcc-f9169b683ae8
 index: y
 internal: n
 snippet: y
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: f7655cd93a7dc8ecd35cd379da350ad279cae725
 
 ---
@@ -27,7 +27,7 @@ source-git-commit: f7655cd93a7dc8ecd35cd379da350ad279cae725
 <table> 
  <thead> 
   <tr> 
-   <th> <strong>Etiqueta</strong><br /> </th> 
+   <th> <strong>Label</strong> <br /> </th> 
    <th> <strong>Nome do campo</strong> <br /> </th> 
    <th> <strong>Descrição do indicador</strong> <br /> </th> 
    <th> <strong>Fórmula do cálculo de indicador</strong> <br /> </th> 
@@ -55,18 +55,18 @@ source-git-commit: f7655cd93a7dc8ecd35cd379da350ad279cae725
  </tbody> 
 </table>
 
-This report is based on the **[!UICONTROL Consolidated tracking]** table (nms:trackingStats). This aggregate table is used for performance reasons when displaying reports, in the place of the **[!UICONTROL Recipient tracking logs]** table (nms:trackingLogRcp) and it is not calculated in real-time. A tabela é gerada alguns minutos após os logs de rastreamento serem recuperados. Se os indicadores estiverem atualizados, os resultados serão iguais aos indicadores do relatório **Indicadores de rastreamento.** O indicador @totalclicks expressa o número total de cliques em um período de 5 minutos.
+Este relatório é baseado na tabela **[!UICONTROL Consolidated tracking]** (nms:trackingStats). Essa tabela de agregação é usada por motivos de desempenho ao exibir relatórios em vez da tabela **[!UICONTROL Recipient tracking logs]** (nms:trackingLogRcp), e não é calculada em tempo real. A tabela é gerada alguns minutos após os logs de rastreamento serem recuperados. Se os indicadores estiverem atualizados, os resultados serão iguais aos indicadores do relatório **Indicadores de rastreamento.** O indicador @totalclicks expressa o número total de cliques em um período de 5 minutos.
 
 ## Não entregues e rejeitados {#non-deliverables-and-bounces-1}
 
 **Detalhamento por tipo de erro**
 
-This report is based on the **[!UICONTROL Delivery and tracking statistics]** table (nms:deliveryLogStats).
+Este relatório é baseado na tabela **[!UICONTROL Delivery and tracking statistics]**(nms:deliveryLogStats).
 
 <table> 
  <thead> 
   <tr> 
-   <th> <strong>Etiqueta</strong><br /> </th> 
+   <th> <strong>Label</strong> <br /> </th> 
    <th> <strong>Nome do campo</strong> <br /> </th> 
    <th> <strong>Descrição do indicador</strong> <br /> </th> 
    <th> <strong>Fórmula do cálculo de indicador</strong> <br /> </th> 
@@ -138,18 +138,18 @@ This report is based on the **[!UICONTROL Delivery and tracking statistics]** ta
 
 **Detalhamento por domínio**
 
-A segunda parte do relatório detalha a análise de mensagens com falha por domínio da Internet, ao contrário do tipo de erro. A fórmula vinculada ao indicador **Erro** (@value) neste caso é: Count(@status=2 e @domain=&quot;Valor do nome de domínio&quot;), isto é, uma contagem de todas as mensagens com um status com falha para este domínio.
+A segunda parte do relatório detalha a análise de mensagens com falha por domínio da Internet, ao contrário do tipo de erro. A fórmula vinculada ao indicador **Error** (@value) neste caso é: Count(@status=2 e @domain=&quot;Valor do nome de domínio&quot;), isto é, uma contagem de todas as mensagens com um status de falha para este domínio.
 
 ## Navegadores {#browsers-1}
 
-This report is based on the **[!UICONTROL Internet Browser Statistics]** table (nms:userAgentsStats).
+Este relatório é baseado na tabela **[!UICONTROL Internet Browser Statistics]** (nms:userAgentsStats).
 
 **Estatísticas globais**
 
 <table> 
  <thead> 
   <tr> 
-   <th> <strong>Etiqueta</strong><br /> </th> 
+   <th> <strong>Label</strong> <br /> </th> 
    <th> <strong>Nome do campo</strong> <br /> </th> 
    <th> <strong>Descrição do indicador</strong> <br /> </th> 
    <th> <strong>Fórmula do cálculo de indicador</strong> <br /> </th> 
@@ -182,7 +182,7 @@ This report is based on the **[!UICONTROL Internet Browser Statistics]** table (
 <table> 
  <thead> 
   <tr> 
-   <th> <strong>Etiqueta</strong><br /> </th> 
+   <th> <strong>Label</strong> <br /> </th> 
    <th> <strong>Nome do campo</strong> <br /> </th> 
    <th> <strong>Descrição do indicador</strong> <br /> </th> 
    <th> <strong>Fórmula do cálculo de indicador</strong> <br /> </th> 
@@ -217,7 +217,7 @@ Este relatório é baseado nas tabelas **[!UICONTROL Delivery]** (nms:delivery),
 <table> 
  <thead> 
   <tr> 
-   <th> <strong>Etiqueta</strong><br /> </th> 
+   <th> <strong>Label</strong> <br /> </th> 
    <th> <strong>Nome do campo</strong> <br /> </th> 
    <th> <strong>Descrição do indicador</strong> <br /> </th> 
    <th> <strong>Fórmula do cálculo de indicador</strong> <br /> </th> 
@@ -286,7 +286,7 @@ Este relatório é baseado nas tabelas **[!UICONTROL Delivery]** (nms:delivery),
 <table> 
  <thead> 
   <tr> 
-   <th> <strong>Etiqueta</strong><br /> </th> 
+   <th> <strong>Label</strong> <br /> </th> 
    <th> <strong>Nome do campo</strong> <br /> </th> 
    <th> <strong>Descrição do indicador</strong> <br /> </th> 
    <th> <strong>Fórmula do cálculo de indicador</strong> <br /> </th> 
@@ -319,7 +319,7 @@ Este relatório é baseado nas tabelas **[!UICONTROL Delivery]** (nms:delivery),
 <table> 
  <thead> 
   <tr> 
-   <th> <strong>Etiqueta</strong><br /> </th> 
+   <th> <strong>Label</strong> <br /> </th> 
    <th> <strong>Nome do campo</strong> <br /> </th> 
    <th> <strong>Descrição do indicador</strong> <br /> </th> 
    <th> <strong>Fórmula do cálculo de indicador</strong> <br /> </th> 
@@ -354,7 +354,7 @@ Este relatório é baseado nas tabelas **[!UICONTROL Delivery]** (nms:delivery),
 <table> 
  <thead> 
   <tr> 
-   <th> <strong>Etiqueta</strong><br /> </th> 
+   <th> <strong>Label</strong> <br /> </th> 
    <th> <strong>Nome do campo</strong> <br /> </th> 
    <th> <strong>Descrição do indicador</strong> <br /> </th> 
    <th> <strong>Fórmula do cálculo de indicador</strong> <br /> </th> 
@@ -365,7 +365,7 @@ Este relatório é baseado nas tabelas **[!UICONTROL Delivery]** (nms:delivery),
    <td> Novos contatos<br /> </td> 
    <td> @newContacts<br /> </td> 
    <td> Contagem do número de visitantes vinculados a um recipient.<br /> </td> 
-   <td> Fórmula: count(@id)<br /> Filtro: @customer-id != 0<br /> </td> 
+   <td> Fórmula: count(@id)<br /> Filtro: @recipient-id != 0<br /> </td> 
   </tr> 
   <tr> 
    <td> Aberturas<br /> </td> 
@@ -376,7 +376,7 @@ Este relatório é baseado nas tabelas **[!UICONTROL Delivery]** (nms:delivery),
   <tr> 
    <td> Compartilhamentos<br /> </td> 
    <td> @shared<br /> </td> 
-   <td> A categoria de URL incluída em 'email', 'facebook', 'twitter', 'delicioso', 'escavação', 'google', 'linkedin'<br /> Contagem de todos os @totalClicks com uma categoria de URL que equivale a "email", "facebook", "twitter", "delicioso", "escavação", "google" ou "linkedin".<br /> </td> 
+   <td> A categoria de URL incluída em 'email' , 'facebook' , 'twitter' , 'delicious' , 'digg' , 'google' , 'linkedin'<br /> Contagem de todos os @totalClicks com uma categoria de URL que equivalha a "email", "facebook", "twitter", "delicious", "digg", "google" ou "linkedin".<br /> </td> 
    <td> contagem (Iif([url/@category] IN ("email" , "facebook" , "twitter" , "delicious" , "digg" , "google" , "linkedin"), @totalClicks, 0))<br /> </td> 
   </tr> 
  </tbody> 
@@ -384,14 +384,14 @@ Este relatório é baseado nas tabelas **[!UICONTROL Delivery]** (nms:delivery),
 
 ## Sistemas operacionais {#operating-systems-1}
 
-This report is based on the **[!UICONTROL Internet Browser Statistics]** table (nms:userAgentsStats).
+Este relatório é baseado na tabela **[!UICONTROL Internet Browser Statistics]** (nms:userAgentsStats).
 
 **Estatísticas globais**
 
 <table> 
  <thead> 
   <tr> 
-   <th> <strong>Etiqueta</strong><br /> </th> 
+   <th> <strong>Label</strong> <br /> </th> 
    <th> <strong>Nome do campo</strong> <br /> </th> 
    <th> <strong>Descrição do indicador</strong> <br /> </th> 
    <th> <strong>Fórmula do cálculo de indicador</strong> <br /> </th> 
@@ -424,7 +424,7 @@ This report is based on the **[!UICONTROL Internet Browser Statistics]** table (
 <table> 
  <thead> 
   <tr> 
-   <th> <strong>Etiqueta</strong><br /> </th> 
+   <th> <strong>Label</strong> <br /> </th> 
    <th> <strong>Nome do campo</strong> <br /> </th> 
    <th> <strong>Descrição do indicador</strong> <br /> </th> 
    <th> <strong>Fórmula do cálculo de indicador</strong> <br /> </th> 
@@ -454,12 +454,12 @@ This report is based on the **[!UICONTROL Internet Browser Statistics]** table (
 
 ## Rastreamento de subscrição {#subscription-tracking-1}
 
-This report is based on the **[!UICONTROL Services]** table (nms:service).
+Este relatório é baseado na tabela **[!UICONTROL Services]** (nms:service).
 
 <table> 
  <thead> 
   <tr> 
-   <th> <strong>Etiqueta</strong><br /> </th> 
+   <th> <strong>Label</strong> <br /> </th> 
    <th> <strong>Nome do campo</strong> <br /> </th> 
    <th> <strong>Descrição do indicador</strong> <br /> </th> 
    <th> <strong>Fórmula do cálculo de indicador</strong> <br /> </th> 
@@ -506,7 +506,7 @@ Este relatório é baseado nas tabelas **[!UICONTROL Delivery and tracking stati
 <table> 
  <thead> 
   <tr> 
-   <th> <strong>Etiqueta</strong><br /> </th> 
+   <th> <strong>Label</strong> <br /> </th> 
    <th> <strong>Nome do campo</strong> <br /> </th> 
    <th> <strong>Descrição do indicador</strong> <br /> </th> 
    <th> <strong>Fórmula do cálculo de indicador</strong> <br /> </th> 
@@ -698,12 +698,12 @@ Este relatório é baseado nas tabelas **[!UICONTROL Delivery and tracking stati
 
 ## Fluxos de clique e URLs {#urls-and-click-streams-1}
 
-This report is based on the **[!UICONTROL Delivery]** table (nms:delivery).
+Este relatório é baseado na tabela **[!UICONTROL Delivery]** (nms:delivery).
 
 <table> 
  <thead> 
   <tr> 
-   <th> <strong>Etiqueta</strong><br /> </th> 
+   <th> <strong>Label</strong> <br /> </th> 
    <th> <strong>Nome do campo</strong> <br /> </th> 
    <th> <strong>Descrição do indicador</strong> <br /> </th> 
    <th> <strong>Fórmula do cálculo de indicador</strong> <br /> </th> 
@@ -745,12 +745,12 @@ This report is based on the **[!UICONTROL Delivery]** table (nms:delivery).
 
 ## Resumo da entrega {#delivery-summary-1}
 
-This report is based on the **[!UICONTROL Delivery]** table (nms:delivery).
+Este relatório é baseado na tabela **[!UICONTROL Delivery]** (nms:delivery).
 
 <table> 
  <thead> 
   <tr> 
-   <th> <strong>Etiqueta</strong><br /> </th> 
+   <th> <strong>Label</strong> <br /> </th> 
    <th> <strong>Nome do campo</strong> <br /> </th> 
    <th> <strong>Descrição do indicador</strong> <br /> </th> 
    <th> <strong>Fórmula do cálculo de indicador</strong> <br /> </th> 
@@ -798,18 +798,18 @@ This report is based on the **[!UICONTROL Delivery]** table (nms:delivery).
 
 ## Hot clicks {#hot-clicks-1}
 
-This report is based on the Delivery(nms:delivery) and **[!UICONTROL Consolidated tracking]** (nms:trackingStats) tables.
+Este relatório é baseado nas tabelas Delivery(nms:delivery) e **[!UICONTROL Consolidated tracking]** (nms:trackingStats).
 
 Este relatório mostra o conteúdo da mensagem (HTML e/ou texto) com a porcentagem de cliques nos links, em cada link. Os links de unsubscription de blocos de personalização e links de mirror pages são considerados no total de cliques, mas não são exibidos no relatório.
 
 ## Estatísticas de rastreamento {#tracking-statistics-1}
 
-This report is based on the **[!UICONTROL Delivery]** table (nms:delivery).
+Este relatório é baseado na tabela **[!UICONTROL Delivery]** (nms:delivery).
 
 <table> 
  <thead> 
   <tr> 
-   <th> <strong>Etiqueta</strong><br /> </th> 
+   <th> <strong>Label</strong> <br /> </th> 
    <th> <strong>Nome do campo</strong> <br /> </th> 
    <th> <strong>Descrição do indicador</strong> <br /> </th> 
    <th> <strong>Fórmula do cálculo de indicador</strong> <br /> </th> 
@@ -839,12 +839,12 @@ This report is based on the **[!UICONTROL Delivery]** table (nms:delivery).
 
 ## Estatísticas de delivery {#delivery-statistics-1}
 
-This report is based on the **[!UICONTROL Delivery and tracking statistics]** table (nms:deliveryLogStats).
+Este relatório é baseado na tabela **[!UICONTROL Delivery and tracking statistics]**(nms:deliveryLogStats).
 
 <table> 
  <thead> 
   <tr> 
-   <th> <strong>Etiqueta</strong><br /> </th> 
+   <th> <strong>Label</strong> <br /> </th> 
    <th> <strong>Nome do campo</strong> <br /> </th> 
    <th> <strong>Descrição do indicador</strong> <br /> </th> 
    <th> <strong>Fórmula do cálculo de indicador</strong> <br /> </th> 
@@ -903,7 +903,7 @@ Este relatório baseia-se nas tabelas de **Deliveries** (nms:delivery) e **Logs 
 <table> 
  <thead> 
   <tr> 
-   <th> <strong>Etiqueta</strong><br /> </th> 
+   <th> <strong>Label</strong> <br /> </th> 
    <th> <strong>Nome do campo</strong> <br /> </th> 
    <th> <strong>Descrição do indicador</strong> <br /> </th> 
    <th> <strong>Fórmula do cálculo de indicador</strong> <br /> </th> 
@@ -925,7 +925,7 @@ O indicador **Enviado** (@sent), acessado pelo nó **Deliveries (nms:delivery) >
 
 ## Sincronização de indicadores {#indicator-synchronization}
 
-If you experience desynchronization or inconsistency for certain indicators, select the concerned delivery in the Adobe Campaign explorer, right-click and choose **[!UICONTROL Action>Recompute delivery and tracking indicators]**. Clique em **[!UICONTROL Next]** e em **[!UICONTROL Finish]**.
+Se você enfrentar dessincronização ou inconsistência de determinados indicadores, selecione o delivery correspondente no navegador do Adobe Campaign, clique com o botão direito do mouse e escolha **[!UICONTROL Action>Recompute delivery and tracking indicators]**. Clique em **[!UICONTROL Next]** e, em seguida, pressione **[!UICONTROL Finish]**.
 
 ![](assets/s_ncs_user_recalculate_indicators.png)
 
