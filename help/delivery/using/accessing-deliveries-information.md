@@ -14,7 +14,7 @@ discoiquuid: d2631c67-7781-4baa-b24e-e7921353d131
 index: y
 internal: n
 snippet: y
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 211556bbf023731ffeab2e90692410a852ab3555
 
 ---
@@ -24,9 +24,9 @@ source-git-commit: 211556bbf023731ffeab2e90692410a852ab3555
 
 ## Acessando a lista de deliveries {#accessing-the-list-of-deliveries}
 
-To access the list of deliveries, go to the **[!UICONTROL Campaigns]** universe and click the **[!UICONTROL Deliveries]** link.
+Para acessar a lista de deliveries, acesse o universo **[!UICONTROL Campaigns]** e clique no link **[!UICONTROL Deliveries]**.
 
-If you use [the Explorer view](../../platform/using/adobe-campaign-workspace.md#about-adobe-campaign-explorer), you can access all deliveries via the **[!UICONTROL Campaign management > Deliveries]** node in the tree.
+Com o uso da [visualização do Explorer](../../platform/using/adobe-campaign-workspace.md#about-adobe-campaign-explorer), é possível acessar todas os entregas por meio do nó **[!UICONTROL Campaign management > Deliveries]** na árvore.
 
 >[!NOTE]
 >
@@ -64,30 +64,30 @@ Cada status tem sua própria cor e rótulo.
 
 ![](assets/s_ncs_user_status_campaigns_120.png)
 
-The drop-down list next to the **[!UICONTROL Create]** button enables you to filter deliveries based on their status.
+A lista suspensa ao lado do botão **[!UICONTROL Create]** permite filtrar os deliveries com base nos status.
 
 ![](assets/delivery_filter_status.png)
 
 ## Acessando o calendário de delivery {#accessing-the-delivery-calendar}
 
-To access the delivery calendar, go to the **[!UICONTROL Campaign]** universe and click the **[!UICONTROL Campaign calendar]** link. Este calendário exibe o detalhamento das campanhas ao longo do tempo. Você pode personalizar a exibição por mês, semana ou dia.
+Para acessar o calendário de delivery, acesse o universo **[!UICONTROL Campaign]** e clique no link **[!UICONTROL Campaign calendar]**. Este calendário exibe o detalhamento das campanhas ao longo do tempo. Você pode personalizar a exibição por mês, semana ou dia.
 
 ![](assets/s_ncs_user_interface_delivery04.png)
 
-Clique no nome de um delivery para exibir as informações principais sobre ele. You can also open the campaign if necessary by clicking **[!UICONTROL Open]**.
+Clique no nome de um delivery para exibir as informações principais sobre ele. Também é possível abrir a campanha, se necessário, clicando em **[!UICONTROL Open]**.
 
 ![](assets/s_ncs_user_interface_delivery05.png)
 
 ## Acessando informações de desempenho de deliveries {#accessing-deliveries-throughput-information}
 
-The information on the **[!UICONTROL Delivery throughput]** page concerns all the deliveries of the platform. Para medir a velocidade em que as mensagens são entregues, os critérios são o número de mensagens enviadas por hora e o tamanho das mensagens (em bits por segundo). No exemplo abaixo, o primeiro gráfico mostra as entregas bem-sucedidas em azul e o número de deliveires incorretos em laranja.
+As informações na página **[!UICONTROL Delivery throughput]** se referem a todos as entregas da plataforma. Para medir a velocidade em que as mensagens são entregues, os critérios são o número de mensagens enviadas por hora e o tamanho das mensagens (em bits por segundo). No exemplo abaixo, o primeiro gráfico mostra as entregas bem-sucedidas em azul e o número de deliveires incorretos em laranja.
 
-Você poderá escolher o intervalo de tempo para o qual a taxa de desempenho é calculada. To do this, select the value from the drop-down list, and then click **[!UICONTROL Refresh]**.
+Você poderá escolher o intervalo de tempo para o qual a taxa de desempenho é calculada. Para fazer isso, selecione o valor na lista suspensa e clique em **[!UICONTROL Refresh]**.
 
 ![](assets/s_ncs_user_interface_delivery06.png)
 
 >[!NOTE]
 >
->Para instalações hospedadas ou híbridas, se você tiver atualizado para o MTA aprimorado, a **[!UICONTROL Delivery throughput]** página não exibirá mais a saída para seus destinatários de email. Ele mostrará a velocidade de throughput para o relé de suas mensagens do Campaign para o MTA aprimorado.
+>Para instalações hospedadas ou híbridas, se o MTA aprimorado estiver atualizado, a página **[!UICONTROL Delivery throughput]** não exibe mais a Taxa de transferência aos destinatários de email. Ele mostra a velocidade da Taxa de transferência para o relé das suas mensagens do Campaign para o MTA aprimorado.
 >
->Para obter mais informações sobre o Adobe Campaign Enhanced MTA, consulte este [documento](https://helpx.adobe.com/campaign/kb/campaign-enhanced-mta.html).
+>Para obter mais informações sobre o MTA aprimorado do Adobe Campaign, consulte este [documento](https://helpx.adobe.com/br/campaign/kb/campaign-enhanced-mta.html).
