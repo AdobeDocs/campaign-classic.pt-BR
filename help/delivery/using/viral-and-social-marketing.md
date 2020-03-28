@@ -14,7 +14,7 @@ discoiquuid: 66f2b229-92d9-4db1-97a4-2d9eb2270446
 index: y
 internal: n
 snippet: y
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 7dbc876fae0bde78e3088ee1ab986cd09e9bcc38
 
 ---
@@ -42,7 +42,7 @@ Para permitir que os recipients de entrega compartilhem o conteúdo das mensagen
 
 >[!NOTE]
 >
->Por padrão, esse link não é oferecido na lista de blocos. Você pode acessá-lo clicando **[!UICONTROL Other...]** e selecionando o **[!UICONTROL Social network sharing links]** bloco.
+>Por padrão, esse link não é oferecido na lista de blocos. Você pode acessá-lo clicando em **[!UICONTROL Other...]** e selecionando o bloco **[!UICONTROL Social network sharing links]**.
 
 ![](assets/s_ncs_user_viral_add_link_via_others.png)
 
@@ -54,7 +54,7 @@ Quando o recipient clicar no ícone de uma das redes sociais exibidas, ele será
 
 >[!NOTE]
 >
->Este bloco de personalização contém todos os links (para envio e compartilhamento de mensagens com todas as redes sociais). Ele poderá ser alterado para atender às suas necessidades. No entanto, a configuração é reservada para usuários avançados. Para editar o bloco de personalização correspondente, vá para o **[!UICONTROL Resources > Campaign management > Personalization blocks]** nó da árvore do Adobe Campaign.
+>Este bloco de personalização contém todos os links (para envio e compartilhamento de mensagens com todas as redes sociais). Ele poderá ser alterado para atender às suas necessidades. No entanto, a configuração é reservada para usuários avançados. Para editar o bloco de personalização correspondente, vá para o nó **[!UICONTROL Resources > Campaign management > Personalization blocks]** da árvore do Adobe Campaign.
 
 ## Marketing viral: encaminhar para um amigo {#viral-marketing--forward-to-a-friend}
 
@@ -64,8 +64,8 @@ O encaminhamento de mensagens é baseado nos mesmos princípios que os links de 
 
 Aplique as seguintes etapas:
 
-1. Add the **[!UICONTROL Social network sharing links]** personalization block into the body of the original message.
-1. The message recipient can click the **[!UICONTROL Email]** icon to send this message to one or more friends.
+1. Adicione o bloco de personalização **[!UICONTROL Social network sharing links]** ao corpo da mensagem original.
+1. O recipient da mensagem pode clicar no ícone de **[!UICONTROL Email]** para enviar esta mensagem para um ou mais amigos.
 
    ![](assets/s_ncs_user_viral_email_link.png)
 
@@ -73,13 +73,13 @@ Aplique as seguintes etapas:
 
    ![](assets/s_ncs_user_viral_email_msg.png)
 
-   The message is sent to them when the main recipient clicks the **[!UICONTROL Next]** button.
+   A mensagem é enviada a eles quando o recipient principal clicar no botão **[!UICONTROL Next]**.
 
    >[!NOTE]
    >
-   >O conteúdo dessa mensagem pode ser personalizado para atender às suas necessidades. É criado com base no **[!UICONTROL Transfer of original message]** modelo, que é armazenado no **[!UICONTROL Administration > Campaign management > Technical delivery templates]** nó.
+   >O conteúdo dessa mensagem pode ser personalizado para atender às suas necessidades. Ela é criada com base no modelo **[!UICONTROL Transfer of original message]**, que é armazenado no nó **[!UICONTROL Administration > Campaign management > Technical delivery templates]**.
    >
-   >It is also possible to change the message forward form made available to the referrer To do this, you need to change the **Viral form** Web application stored in the **[!UICONTROL Resources > Online > Web applications]** node.
+   >Também é possível alterar o formulário de encaminhamento de mensagens disponibilizado para o referenciador. Para fazer isso, é necessário alterar o aplicativo web **Viral form** armazenado no nó **[!UICONTROL Resources > Online > Web applications]**.
 
 1. Na mensagem encaminhada, um link permite que o indicado salve o perfil no banco de dados. Um formulário de entrada é fornecido para essa finalidade.
 
@@ -87,11 +87,11 @@ Aplique as seguintes etapas:
 
    >[!NOTE]
    >
-   >Essa configuração pode ser adaptada. To do this, you need to modify the **Recipient subscription** Web application stored in the **[!UICONTROL Resources > Online > Web applications]** node.
+   >Essa configuração pode ser adaptada. Para fazer isso, você precisa modificar o aplicativo web de **Recipient subscription** armazenado no nó **[!UICONTROL Resources > Online > Web applications]**.
    >
-   >Para obter mais informações sobre fluxos de trabalho, consulte [esta seção](../../web/using/about-web-applications.md).
+   >Para obter mais informações sobre aplicativos web, consulte [esta seção](../../web/using/about-web-applications.md).
 
-   Depois de validar, uma mensagem de confirmação será enviada para ele: só será registrado para sempre uma vez que ativar o link na mensagem de confirmação. Essa mensagem é criada com base no **[!UICONTROL Registration confirmation]** modelo, que é armazenado no **[!UICONTROL Administration > Campaign management > Technical delivery templates]** nó.
+   Depois de validar, uma mensagem de confirmação será enviada para ele: só será registrado para sempre uma vez que ativar o link na mensagem de confirmação. Essa mensagem é criada com base no modelo **[!UICONTROL Registration confirmation]**, que é armazenado no nó **[!UICONTROL Administration > Campaign management > Technical delivery templates]**.
 
    O indicado é adicionado à pasta **Recipients** do banco de dados e é inscrito (por padrão) ao serviço de informação do **Boletim informativo**.
 
@@ -99,11 +99,11 @@ Aplique as seguintes etapas:
 
 O compartilhamento e o acesso a informações compartilhadas são rastreados. Essas informações coletadas pelo Adobe Campaign podem ser acessadas em dois lugares:
 
-* in the **[!UICONTROL Tracking]** tab of the delivery (or individually for each recipient):
+* na guia **[!UICONTROL Tracking]** do delivery (ou individualmente para cada recipient):
 
    ![](assets/s_ncs_user_network_del_tracking_tab.png)
 
-* em um relatório dedicado **[!UICONTROL Sharing to social networks]** :
+* em um relatório dedicado **[!UICONTROL Sharing to social networks]**:
 
    ![](assets/s_ncs_user_viral_report.png)
 
