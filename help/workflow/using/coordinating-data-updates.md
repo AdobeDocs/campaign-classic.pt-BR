@@ -14,7 +14,7 @@ discoiquuid: efe09c66-b74b-48f0-9042-5da4342e014e
 index: y
 internal: n
 snippet: y
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: cfb1b02a6261c001392b5cc6430f00206e802bb8
 
 ---
@@ -48,11 +48,11 @@ Para criar o workflow, siga as etapas abaixo:
 
 1. Adicione uma atividade **End** à bifurcação **No.** Dessa forma, nada será executado se o workflow já estiver em execução.
 1. Adicione as atividades desejadas à bifurcação **Yes.** Em nosso caso, as atividades **Query** e **Update Data**.
-1. Open the first activity, then add the **instance.vars.isRunning = true** command in the **[!UICONTROL Advanced]** tab. Dessa forma, a variável de instância é definida como em execução.
+1. Abra a primeira atividade e adicione o comando **instance.vars.isRunning = true** na guia **[!UICONTROL Advanced]**. Dessa forma, a variável de instância é definida como em execução.
 
    ![](assets/uc_dataupdate_query.png)
 
-1. Add an **End** activity at the end of the **[!UICONTROL Yes]** fork, then add the **instance.vars.isRunning = false** command in the **[!UICONTROL Advanced]** tab.
+1. Adicione uma atividade **End** ao final da bifurcação **[!UICONTROL Yes]** e adicione o comando **instance.vars.isRunning = false** na guia **[!UICONTROL Advanced]**.
 
    Desta maneira, nenhuma ação será executada enquanto o workflow estiver em execução.
 
