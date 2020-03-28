@@ -14,7 +14,7 @@ discoiquuid: f78603e9-f6ff-4ebe-941b-b3fbd1924b71
 index: y
 internal: n
 snippet: y
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 20f835c357d016643ea1f3209ee4dfb6d3239f90
 
 ---
@@ -34,16 +34,16 @@ Para obter mais informações sobre gerenciamento de operadores e permissões, c
 
 Os seguintes grupos de operadores estão associados ao workflow:
 
-* The **[!UICONTROL Workflow execution]** group lets you control the execution and approval of targeting workflows: the WORKFLOW named right is mapped to this group&#39;s operators. É necessário para todas as ações em workflows, além de direitos de acesso aos arquivos de dados. By default, the **[!UICONTROL Workflow execution]** group has read-only access to standard targeting workflow files and workflow templates. Os operadores neste grupo também têm acesso de leitura e gravação para o arquivo de aprovação pendente.
-* The **[!UICONTROL Workflow supervisors]** group lets operators manage workflow approvals.
-* O **[!UICONTROL Operation Managers]** grupo para acessar os fluxos de trabalho da campanha.
+* O grupo **[!UICONTROL Workflow execution]** permite controlar a execução e a aprovação de workflows para construção de target: o direito nomeado WORKFLOW é mapeado para os operadores deste grupo. É necessário para todas as ações em workflows, além de direitos de acesso aos arquivos de dados. Por padrão, o grupo **[!UICONTROL Workflow execution]** tem acesso somente leitura de arquivos padrão de workflows para construção de target e templates de workflow. Os operadores neste grupo também têm acesso de leitura e gravação para o arquivo de aprovação pendente.
+* O grupo **[!UICONTROL Workflow supervisors]** permite que os operadores gerenciem aprovações de workflow.
+* O grupo **[!UICONTROL Operation Managers]** permite acessar workflows da campanha.
 
 ## Direitos nomeados {#named-rights}
 
-Somente o direito nomeado WORKFLOW é específico para workflows: permite criar, iniciar e parar workflows. Os direitos de leitura no arquivo de workflow são necessários para que o direito nomeado seja aplicável. For targeting workflows, the reading right on the **[!UICONTROL Profiles and Targets]** file is necessary.
+Somente o direito nomeado WORKFLOW é específico para workflows: permite criar, iniciar e parar workflows. Os direitos de leitura no arquivo de workflow são necessários para que o direito nomeado seja aplicável. Para workflows para construção do target, é necessário a leitura no arquivo **[!UICONTROL Profiles and Targets]**.
 
 ## Conta de execução de workflow {#workflow-execution-account}
 
 Você pode configurar a conta de execução a ser usada no nível de template de workflow. A conta de execução permite mapear autorizações para o workflow diretamente, independentemente do operador do Adobe Campaign iniciando a execução. Por padrão, cada workflow é executado com os direitos do operador que o iniciou.
 
-Para mapear uma conta de execução a um workflow, vá para a lista de templates de workflow e clique com o botão direito do mouse no template vinculado ao workflow. Escolha **[!UICONTROL Action > Change execution account...]** e selecione a conta a ser usada.
+Para mapear uma conta de execução a um workflow, vá para a lista de templates de workflow e clique com o botão direito do mouse no template vinculado ao workflow. Clique em **[!UICONTROL Action > Change execution account...]** e depois selecione a conta que será usada.
