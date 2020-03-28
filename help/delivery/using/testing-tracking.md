@@ -14,7 +14,7 @@ discoiquuid: 4ed23249-4ecf-4e57-91b3-6fae1387bd6a
 index: y
 internal: n
 snippet: y
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 579329d9194115065dff2c192deb0376c75e67bd
 
 ---
@@ -30,7 +30,7 @@ source-git-commit: 579329d9194115065dff2c192deb0376c75e67bd
 1. Envie a entrega contendo um link para a página espelho.
 1. Depois de receber o email, abra-o e clique no link da página espelho.
 1. Depois de ser redirecionado corretamente para a página espelho, acesse a pasta **Administration > Technical workflows** e abra o workflow **Tracking**.
-1. Start the workflow, right click the **Scheduler** activity and select **Execute pending task now**.
+1. Inicie o fluxo de trabalho, clique com o botão direito do mouse na atividade **Scheduler** e selecione **Execute pending task now**.
 1. Aguarde 30 segundos e selecione a guia **Audit.** Verifique se pelo menos um registro de log de rastreamento é encontrado.
 
    Clique em **Refresh** se não visualizar novos logs.
@@ -39,9 +39,9 @@ source-git-commit: 579329d9194115065dff2c192deb0376c75e67bd
 
    >[!NOTE]
    >
-   >The recipient&#39;s profile page is located in the **Profiles and Targets > Recipients** folder by default.
+   >A página de perfil do recipient está localizada na pasta **Profiles and Targets > Recipients** por padrão.
 
-   To check the email log tracking, look for the values **Open** and **[!UICONTROL Email click]** in the **Type** column.
+   Para verificar o rastreamento do log de email, procure os valores **Open** e **[!UICONTROL Email click]** na coluna **Type**.
 
-   If the open logs do not appear, go to the delivery and access its **Properties** to make sure that both **Activate tracking** and **[!UICONTROL Opens tracking]** options are checked.
+   Se os logs abertos não forem exibidos, acesse o delivery e as **Properties** para garantir que as opções **Active tracking** e **[!UICONTROL Opens tracking]** estão habilitadas.
 
