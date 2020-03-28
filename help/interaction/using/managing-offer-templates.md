@@ -14,7 +14,7 @@ discoiquuid: 62d03128-5525-4556-8590-8492847c4a1f
 index: y
 internal: n
 snippet: y
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 579329d9194115065dff2c192deb0376c75e67bd
 
 ---
@@ -28,7 +28,7 @@ Os templates de oferta são disponibilizados no Adobe Campaign prontos para uso.
 
 Para criar um template oferta, siga estas etapas:
 
-1. Vá para **Recursos** > **Template** > **Templates de oferta**.
+1. Vá para **Resources** > **Templates** > **Offer templates**.
 1. Clique no ícone **Novo**.
 
    ![](assets/offer_model_001.png)
@@ -39,7 +39,7 @@ Para criar um template oferta, siga estas etapas:
 
 Para duplicar um template de oferta (pronto ou não), siga estas etapas:
 
-1. Vá para **Recursos > Templates > Templates de ofertas**.
+1. Vá para **Resources > Templates > Offer templates**.
 1. Clique com o botão direito do mouse no template a ser duplicado e selecione **Duplicar** no menu suspenso.
 
    ![](assets/offer_model_002.png)
