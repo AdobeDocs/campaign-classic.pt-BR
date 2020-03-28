@@ -14,7 +14,7 @@ discoiquuid: 907d82c8-9262-4952-b8df-21144dd55824
 index: y
 internal: n
 snippet: y
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: d5eac80743d4cc82cdf55aa9287e8bb4fcc84356
 
 ---
@@ -38,7 +38,7 @@ Para configurar multimarcas, você precisa configurar ambas as instâncias de ex
 
    >[!NOTE]
    >
-   >Creating an execution instance type external account is presented in the [Control instance](../../message-center/using/creating-a-shared-connection.md#control-instance) section.
+   >A criação de uma conta externa do tipo instância de execução é apresentada na seção [Control instance](../../message-center/using/creating-a-shared-connection.md#control-instance).
 
 1. Estenda o schema nms:extAccount para adicionar a URL de rastreamento:
 
@@ -85,5 +85,5 @@ Na instância de controle, é preciso vincular templates do delivery e contas ex
 
 1. Criar uma conta externa por marca com o mesmo nome interno definido na etapa 1.
 1. Criar um template do delivery padrão por marca.
-1. In the delivery template&#39;s **[!UICONTROL Properties]** , set the routing to the external account of the brand.
+1. Em **[!UICONTROL Properties]** do template do delivery, defina o roteamento para a conta externa da marca.
 
