@@ -14,7 +14,7 @@ discoiquuid: 4abce633-647f-4ae4-9419-859f6e2e8628
 index: y
 internal: n
 snippet: y
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 7dbc876fae0bde78e3088ee1ab986cd09e9bcc38
 
 ---
@@ -26,14 +26,14 @@ source-git-commit: 7dbc876fae0bde78e3088ee1ab986cd09e9bcc38
 
 Criar, editar e publicar conteúdo pode ser automatizado usando um workflow configurado através da interface do cliente do Adobe Campaign.
 
-The **Content management** activity is accessed via the **[!UICONTROL Tools]** toolbar of the workflow diagram.
+A atividade **Content management** é acessada pela barra de ferramentas **[!UICONTROL Tools]** do diagrama de workflow.
 
 As propriedades da atividade são divididas em quatro etapas:
 
-* **[!UICONTROL Content]** : permite inserir conteúdo existente ou criar conteúdo,
-* **[!UICONTROL Update content]** : permite modificar o assunto do conteúdo ou atualizar o conteúdo por meio de um fluxo de dados XML,
-* **[!UICONTROL Action to execute]** : permite salvar ou gerar conteúdo,
-* **[!UICONTROL Transition]** : permite que você escolha se deseja gerar ou não uma transição de saída e dê um nome a ela.
+* **[!UICONTROL Content]**: permite inserir conteúdo existente ou criar conteúdo,
+* **[!UICONTROL Update content]**: permite modificar o assunto do conteúdo ou atualizar o conteúdo por meio de um fluxo de dados XML,
+* **[!UICONTROL Action to execute]**: permite salvar ou gerar conteúdo,
+* **[!UICONTROL Transition]**: permite escolher se gera ou não uma transição de saída e a nomeia.
 
 ![](assets/d_ncs_content_wf.png)
 
@@ -79,7 +79,7 @@ As propriedades da atividade são divididas em quatro etapas:
 
 ### Transição {#transition}
 
-The **Generate an output transition** option lets you add an output transition to the **[!UICONTROL Content management]** activity to link a new activity to workflow execution. Após verificar essa opção, insira um rótulo para a transição.
+A opção **Generate an output transition** permite adicionar uma transição de saída à atividade **[!UICONTROL Content management]** para vincular uma nova atividade à execução do workflow. Após verificar essa opção, insira um rótulo para a transição.
 
 ## Exemplos {#examples}
 
@@ -95,7 +95,7 @@ O conteúdo é configurado através da atividade &quot;Gestão de conteúdo&quot
 
 Uma nova instância de conteúdo é criada por meio do modelo de publicação e da pasta de cadeia de caracteres de conteúdo.
 
-No nosso exemplo, sobrecarregamos o assunto do delivery. It will be taken into account instead of the one entered in the **[!UICONTROL Delivery]** template.
+No nosso exemplo, sobrecarregamos o assunto do delivery. Ele será considerado em vez do inserido no template **[!UICONTROL Delivery]**.
 
 O conteúdo é preenchido automaticamente por um feed XML vindo do URL inserido:
 
@@ -108,7 +108,7 @@ O conteúdo é preenchido automaticamente por um feed XML vindo do URL inserido:
 </book>
 ```
 
-The data format does not match the data schema entered in the publication template (**cus:book** in our example); the **`<section>`** element must be replaced with the **`<chapter>`** element. É necessário aplicar a folha de estilos &quot;cus:book-workflow.xsl&quot; para fazer as alterações necessárias.
+O formato de dados não corresponde ao schema de dados inserido no template de publicação (**cus:book** no nosso exemplo); o elemento **`<section>`** deve ser substituído pelo elemento **`<chapter>`**. É necessário aplicar a folha de estilos &quot;cus:book-workflow.xsl&quot; para fazer as alterações necessárias.
 
 Código de origem da folha de estilos XSLT usada:
 
@@ -177,7 +177,7 @@ A primeira tarefa de **Gestão de conteúdo** cria uma instância de conteúdo.
 
 >[!NOTE]
 >
->The **[!UICONTROL Publication]** tab of the transformation templates window must be populated with the location of the target to be generated.
+>A guia **[!UICONTROL Publication]** da janela dos templates de transformação deve ser preenchida com o local do target a ser gerado.
 
 Uma atividade de espera é adicionada para pausar a próxima transição por uma semana.
 
@@ -233,11 +233,11 @@ Os dados de conteúdo podem ser atualizados no modo &quot;semiautomático&quot;.
 
 A ativação da recuperação de dados é realizada manualmente por meio do formulário de entrada.
 
-The aim is to declare an **editBtn** type **`<input>`** field in the form. Esse controle inclui uma zona de edição e um botão para iniciar o processamento.
+O objetivo é declarar um campo de tipo **`<input>`** **editBtn** no formulário. Esse controle inclui uma zona de edição e um botão para iniciar o processamento.
 
 A zona de edição permite que você preencha dados variáveis usados para construir o URL do feed XML de dados a serem recuperados.
 
-The button executes the **GetAndTransform** SOAP method populated under the **`<input>`** tag.
+O botão executa o método SOAP **GetAndTransform** preenchido na tag **`<input>`**.
 
 A declaração de controle no formulário é a seguinte:
 
@@ -253,11 +253,11 @@ A declaração de controle no formulário é a seguinte:
 </input>
 ```
 
-The **GetAndTransform** method must be declared under the **`<enter>`** element of the **`<input>`** tag. Essa tag assume como parâmetros p URL de recuperação de dados XML de uma expressão construída dinamicamente. O segundo parâmetro da função é opcional e faz referência a uma folha de estilos usada para uma transformação intermediária quando os dados XML de entrada não estão no mesmo formato do conteúdo.
+O método **GetAndTransform** deve ser declarado no elemento **`<enter>`** da tag **`<input>`**. Essa tag assume como parâmetros p URL de recuperação de dados XML de uma expressão construída dinamicamente. O segundo parâmetro da função é opcional e faz referência a uma folha de estilos usada para uma transformação intermediária quando os dados XML de entrada não estão no mesmo formato do conteúdo.
 
 A saída atualiza o conteúdo com base no caminho inserido no último parâmetro.
 
-**Exemplo**: Para ilustrar este exemplo, começamos com o esquema &quot;cus:book&quot;.
+**Exemplo**: Para ilustrar este exemplo, começamos do schema &quot;cus:book&quot;.
 
 Um formulário de entrada de controle de edição de atualização semiautomático é adicionado:
 
