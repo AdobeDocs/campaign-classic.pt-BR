@@ -14,7 +14,7 @@ discoiquuid: 97df4bd5-a8e3-48f4-87c8-fa090ea3f771
 index: y
 internal: n
 snippet: y
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 833907c7a7b84b94a00b131738c73ff54a744a40
 
 ---
@@ -26,7 +26,7 @@ O envio de mensagens transacionais (Centro de mensagens) é um módulo do Campai
 
 >[!CAUTION]
 >
->As mensagens transacionais exigem uma licença específica. Verifique seu contrato de licença.
+>As mensagens transacionais exigem uma licença específica. Verifique o contrato de licença.
 
 O módulo Centro de mensagens do Adobe Campaign é integrado em um sistema de informações que retorna eventos a serem alterados para mensagens transacionais personalizadas. Essas mensagens podem ser enviadas individualmente ou em batches por email, SMS ou notificações por push.
 
