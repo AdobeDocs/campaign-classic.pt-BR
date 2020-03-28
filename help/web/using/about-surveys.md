@@ -14,7 +14,7 @@ discoiquuid: ef7d9b16-506a-409c-a578-000b88cd17a2
 index: y
 internal: n
 snippet: y
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: c9c9d5f96856ce9e19571bad032d2bf04eaa60bd
 
 ---
@@ -36,7 +36,7 @@ A gestão de aplicações Web é detalhada [nesta seção](../../web/using/about
 >
 >Por motivos de privacidade, recomendamos usar HTTPS para todos os recursos externos.
 
-## Escopo das Pesquisas de Campanha {#campaign-surveys-scope}
+## Escopo das pesquisas do Campaign{#campaign-surveys-scope}
 
 No Adobe Campaign, aplicações Web em geral permitem acessar as seguintes funcionalidades:
 
@@ -57,11 +57,11 @@ No Adobe Campaign, aplicações Web em geral permitem acessar as seguintes funci
 
 O módulo de criação de pesquisa opcional (**Pesquisa**) oferece as seguintes funcionalidades adicionais:
 
-* Extensão dinâmica do banco de dados: criação de respostas que não fazem parte do modelo de dados inicial. Para obter mais informações, consulte [Armazenamento de respostas](../../web/using/managing-answers.md#storing-collected-answers)coletadas.
-* Gestão de pontuação. For more on this, refer to [Score management](../../web/using/managing-answers.md#score-management).
-* Exibição aleatória de perguntas. For more on this, refer to [Adding questions](../../web/using/building-a-survey.md#adding-questions).
-* Acompanhamento das respostas em tempo real. For more on this, refer to [Response tracking](../../web/using/publish--track-and-use-collected-data.md#response-tracking).
-* Geração de relatórios dedicados. For more on this, refer to [Reports on surveys](../../web/using/publish--track-and-use-collected-data.md#reports-on-surveys).
+* Extensão dinâmica do banco de dados: criação de respostas que não fazem parte do modelo de dados inicial. Para obter mais informações, consulte [Armazenamento de respostas coletadas](../../web/using/managing-answers.md#storing-collected-answers).
+* Gestão de pontuação. Para obter mais informações, consulte [Gestão de pontuação](../../web/using/managing-answers.md#score-management).
+* Exibição aleatória de perguntas. Para obter mais informações, consulte [Adicionar questões](../../web/using/building-a-survey.md#adding-questions).
+* Acompanhamento das respostas em tempo real. Para obter mais informações, consulte [Rastreamento de respostas](../../web/using/publish--track-and-use-collected-data.md#response-tracking).
+* Geração de relatórios dedicados. Para obter mais informações, consulte [Relatórios de pesquisa](../../web/using/publish--track-and-use-collected-data.md#reports-on-surveys).
 
 Em comparação às aplicações Web, as pesquisas têm uma interface gráfica simplificada com um número reduzido de controles de edição.
 
@@ -74,17 +74,17 @@ Siga as etapas abaixo para criar e entregar uma pesquisa e processar seus result
 
    Uma etapa de pré-carregamento de dados pode ser inserida para pré-carregar o formulário com dados já existentes no banco de dados. Você também pode adicionar uma caixa de teste.
 
-1. Publicar e, em seguida, fornecer a pesquisa aos destinatários (por exemplo, incluir link em uma entrega ou em um site).
+1. Publicar e, em seguida, enviar a pesquisa aos destinatários (por exemplo, incluir link em um delivery ou em um site).
 1. Monitore as respostas e visualize os relatórios.
 
-Para obter mais informações sobre configuração e sequenciamento dessas etapas, consulte [esta seção](../../web/using/about-web-forms.md). Somente configurações específicas a pesquisas são detalhadas neste capítulo.
+Para obter mais informações sobre configuração e sequenciamento dessas etapas, consulte [esta seção](../../web/using/about-web-forms.md). Neste capítulo são detalhadas somente as configurações específicas para pesquisas.
 
 ## Configuração de pesquisas {#surveys-configuration}
 
-Surveys are stored in the **[!UICONTROL Resources > Online > Web Applications]** node of the Adobe Campaign tree. As configurações são encontradas nas seguintes pastas:
+As pesquisas são armazenadas no nó **[!UICONTROL Resources > Online > Web Applications]** da árvore do Adobe Campaign. As configurações são encontradas nas seguintes pastas:
 
-* **[!UICONTROL Administration > Configuration > Form rendering]**: contém os modelos de renderização para apresentação de formulário da Web (aplicativos e pesquisas).
-* **[!UICONTROL Resources > Templates > Web application templates]**: contém os modelos de formulário. Para criar um formulário, você precisa começar com um template.
+* **[!UICONTROL Administration > Configuration > Form rendering]**: contém os templates de renderização para a apresentação de formulários web (aplicações e pesquisas).
+* **[!UICONTROL Resources > Templates > Web application templates]**: contém os templates de formulário. Para criar um formulário, você precisa começar com um template.
 
 >[!NOTE]
 >
