@@ -14,7 +14,7 @@ discoiquuid: dc3d8998-9493-4d71-b3e2-6f9531cb9bac
 index: y
 internal: n
 snippet: y
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 20f835c357d016643ea1f3209ee4dfb6d3239f90
 
 ---
@@ -22,8 +22,7 @@ source-git-commit: 20f835c357d016643ea1f3209ee4dfb6d3239f90
 
 # Centro de Mensagens (Execução){#message-center-execution}
 
-Os workflows detalhados abaixo são instalados com o módulo do 
-				**Centro de Mensagens – Execução** por padrão. Para obter mais informações sobre esse módulo, consulte esta[seção](../../message-center/using/about-transactional-messaging.md).
+Os workflows detalhados abaixo são instalados com o módulo do **Centro de Mensagens – Execução** por padrão. Para obter mais informações sobre esse módulo, consulte esta[seção](../../message-center/using/about-transactional-messaging.md).
 
 Para saber mais sobre como configurar workflows técnicos relacionados ao módulo do Centro de Mensagens, consulte [esta página](../../message-center/using/technical-workflows.md).
 
@@ -31,13 +30,12 @@ Para saber mais sobre como configurar workflows técnicos relacionados ao módul
  <tbody> 
   <tr> 
    <td> <strong>Rótulo</strong><br /> </td> 
-   <td> <strong>Nome 
-								interno</strong><br /> </td> 
+   <td> <strong>Nome interno</strong><br /> </td> 
    <td> <strong>Descrição</strong><br /> </td> 
   </tr> 
   <tr> 
-   <td> <span class="uicontrol">Atualizar status</span> do evento <br /> </td> 
-   <td> <span class="uicontrol">updateEventsStatus</span><br /> </td> 
+   <td> <span class="uicontrol">Atualizar status do evento</span> <br /> </td> 
+   <td> <span class="uicontrol">updateEventsStatus</span> <br /> </td> 
    <td> Esse workflow permite atribuir um status a um evento. Os status do evento são como descritos a seguir:<br /> 
     <ul> 
      <li> <p><strong>Pendente</strong>: o evento está em uma fila. Nenhum template de mensagem foi associado a ele.</p> </li> 
@@ -49,13 +47,13 @@ Para saber mais sobre como configurar workflows técnicos relacionados ao módul
     </ul> </td> 
   </tr> 
   <tr> 
-   <td> <span class="uicontrol">Processando eventos</span> em lote <br /> </td> 
-   <td> <span class="uicontrol">batchEventsProcessing</span><br /> </td> 
+   <td> <span class="uicontrol">Processamento de eventos em lote</span> <br /> </td> 
+   <td> <span class="uicontrol">batchEventsProcessing</span> <br /> </td> 
    <td> Esse workflow permite colocar eventos batch em uma fila antes de associá-los a um template de mensagem. <br /> </td> 
   </tr> 
   <tr> 
-   <td> <span class="uicontrol">Processamento de eventos</span> em tempo real <br /> </td> 
-   <td> <span class="uicontrol">rtEventsProcessing</span><br /> </td> 
+   <td> <span class="uicontrol">Processamento de eventos em tempo real</span> <br /> </td> 
+   <td> <span class="uicontrol">rtEventsProcessing</span> <br /> </td> 
    <td> Esse workflow permite colocar eventos em tempo real em uma fila antes de associá-los a um template de mensagem. <br /> </td> 
   </tr> 
  </tbody> 
