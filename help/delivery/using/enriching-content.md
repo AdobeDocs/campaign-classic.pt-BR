@@ -14,7 +14,7 @@ discoiquuid: 4404c21e-0a89-4762-af20-384ad7071916
 index: y
 internal: n
 snippet: y
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 7dbc876fae0bde78e3088ee1ab986cd09e9bcc38
 
 ---
@@ -26,7 +26,7 @@ Agregadores permitem enriquecer o conteúdo com dados externos. Esses dados vêm
 
 ## Queries genéricos {#generic-queries}
 
-Queries are configured via the publication template in the **[!UICONTROL Aggregator]** tab.
+Os queries são configurados por meio do template de publicação na guia **[!UICONTROL Aggregator]**.
 
 Os dados recuperados enriquecem o documento de saída XML por meio de seu elemento principal.
 
@@ -42,7 +42,7 @@ Exemplo de retorno de um query no schema do recipient (**nms:recipient**):
 </book>
 ```
 
-The **`<collection-recipient>`** element represents the input element of the document resulting from a query. Os dados recuperados são retornados sob este elemento; em nosso exemplo, uma lista de recipients.
+O elemento **`<collection-recipient>`** representa o elemento de entrada do documento resultante de um query. Os dados recuperados são retornados sob este elemento; em nosso exemplo, uma lista de recipients.
 
 ### Adição de um query {#adding-a-query}
 
@@ -85,9 +85,9 @@ Um link de conteúdo é declarado no schema de dados da seguinte maneira:
 <element expandSchemaTarget="cus:chapter" label="Main chapter" name="mainChapter" type="string"/>
 ```
 
-The definition of the link is populated on a **string**-type **`<element>`**, and the **expandSchemaTarget** attribute references the target schema (&quot;cus:chapter&quot; in our example). O schema referenciado deve ser um schema de conteúdo.
+A definição do link é preenchida em uma **cadeia de caracteres** tipo **`<element>`**, e o atributo **expandSchemaTarget** faz referência ao schema target (&quot;cus:chapter&quot; em nosso exemplo). O schema referenciado deve ser um schema de conteúdo.
 
-The content of the targeted element enriches the link element, i.e. the **`<chapter>`** element in our example schema:
+O conteúdo do elemento target enriquece o elemento link, ou seja, o elemento **`<chapter>`** em nosso schema de exemplo:
 
 ```
 <mainChapter computeString="Introduction" id="7011" title="Introduction" xtkschema="cus:chapter">    
@@ -107,7 +107,7 @@ No formulário de entrada, o controle de edição do link é declarado da seguin
 
 ![](assets/d_ncs_content_link.png)
 
-The **[!UICONTROL Magnifier]** icon enables you to open the edit form of the linked element.
+O ícone **[!UICONTROL Magnifier]** permite a abertura do formulário de edição do elemento vinculado.
 
 #### Coleção de links {#link-collection}
 
@@ -143,11 +143,11 @@ Um link para uma tabela externa é declarado no schema de dados da seguinte mane
 <element label="Main contact" name="mainContact" target="nms:recipient" type="link"/>
 ```
 
-The definition of the link is populated on a **link**-type **`<element>`**, and the **target** attribute references the target schema (&quot;nms:recipient&quot; in our example).
+A definição do link é preenchida em um **link** tipo **`<element>`**, e o atributo **target** faz referência ao schema target (&quot;nms:recipient&quot; em nosso exemplo).
 
 Por convenção, os links devem ser declarados do elemento principal do schema de dados.
 
-The **Compute string** and the key of the targeted element enrich the **`<name>-id`** and **`<name>-cs`** attributes on the main element.
+O **Compute string** e a chave do elemento target enriquecem os atributos **`<name>-id`** e **`<name>-cs`** no elemento principal.
 
 No nosso exemplo, o link é preenchido no schema &quot;cus:book&quot;, o conteúdo dos dados do link está contido nos atributos &quot;mainContact-id&quot; e &quot;mainContact-cs&quot;:
 
@@ -163,7 +163,7 @@ O controle de edição de link é declarado da seguinte maneira:
 
 ![](assets/d_ncs_content_link3.png)
 
-You can restrict the choice of target elements by adding the **`<sysfilter>`** element via the link definition in the input form:
+Você pode restringir a opção de elementos target adicionando o elemento **`<sysfilter>`** pela definição do link no formulário de entrada:
 
 ```
 <input xpath="mainContact">
@@ -215,7 +215,7 @@ O conteúdo de cada link referenciado é limitado à chave interna e ao elemento
 
 Um script JavaScript é usado para enriquecer o conteúdo dos links por queries SOAP.
 
-**Exemplo**: Adicionar o nome do destinatário ao link &quot;mainContact&quot; e aos links da coleção &quot;contact&quot;:
+**Exemplo**: Adicionar o nome do recipient ao link &quot;mainContact&quot; e aos links de coleção &quot;contact&quot;:
 
 ```
 // Update <mainContact> link
@@ -262,7 +262,7 @@ O resultado obtido após a execução do script:
 <contact id="11504982510" lastName="Martinez" recipient-cs="Martinez Peter (peter.martinez@adobe.com)" recipient-id="3013"/> 
 ```
 
-The content of the JavaScript code is added via the **[!UICONTROL Administration > Configuration > Content management > JavaScript Codes]** folder and must be populated in the publication template for each transformation.
+O conteúdo do código JavaScript é adicionado por meio da pasta **[!UICONTROL Administration > Configuration > Content management > JavaScript Codes]** e deve ser preenchido no template de publicação para cada transformação.
 
 ![](assets/d_ncs_content_link5.png)
 
