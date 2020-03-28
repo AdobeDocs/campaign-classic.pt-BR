@@ -14,7 +14,7 @@ discoiquuid: fa8aab62-e182-4388-aa23-c255b0dbd42e
 index: y
 internal: n
 snippet: y
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 209ac4d81d2d27c264ee6b288bcb7fcb1900ffc5
 
 ---
@@ -22,7 +22,7 @@ source-git-commit: 209ac4d81d2d27c264ee6b288bcb7fcb1900ffc5
 
 # Caso de uso: seleção de seed addresses com critérios{#use-case-selecting-seed-addresses-on-criteria}
 
-In the framework of a delivery or a campaign, the **[!UICONTROL Edit the dynamic condition...]** link lets you choose seed addresses based on specific selection criteria.
+Na estrutura de um delivery ou campanha, o link **[!UICONTROL Edit the dynamic condition...]** permite escolher seed addresses com base em critérios de seleção específicos.
 
 Nesse caso de uso, o site **Minha biblioteca online** gostaria de personalizar seus boletins informativos de acordo com as preferências de seus clientes.
 
@@ -37,7 +37,7 @@ Para usar a condição dinâmica, você deve ter:
 
 ## Etapa 1 - Criação de um delivery {#step-1---creating-a-delivery}
 
-As etapas para criar uma entrega são detalhadas na seção [Criação de uma entrega](../../delivery/using/creating-an-email-delivery.md) de email.
+As etapas para criar um delivery estão detalhadas na seção [Creating an email delivery](../../delivery/using/creating-an-email-delivery.md).
 
 Neste exemplo, o gerenciador de delivery criou o boletim informativo e selecionou os recipients.
 
@@ -51,12 +51,12 @@ Para criar um valor comum como no nosso exemplo (departamento de compras), prime
 
 Para obter mais detalhes sobre extensões de schema, consulte o [Guia de configuração](../../configuration/using/data-schemas.md).
 
-1. No **[!UICONTROL Administration > Configuration > Data schemas]** nó, clique no **[!UICONTROL New]** ícone.
-1. Na **[!UICONTROL Creation of a data schema]** janela, selecione a **[!UICONTROL Extension of a schema]** opção e clique em **[!UICONTROL Next]**.
+1. No nó **[!UICONTROL Administration > Configuration > Data schemas]**, clique no ícone **[!UICONTROL New]**.
+1. Na janela **[!UICONTROL Creation of a data schema]**, selecione a opção **[!UICONTROL Extension of a schema]** e clique em **[!UICONTROL Next]**.
 
    ![](assets/dlv_seeds_usecase_09.png)
 
-1. Selecione o esquema **[!UICONTROL Seed addresses]** de origem, digite **doc** como o **[!UICONTROL Namespace]** e clique em **[!UICONTROL Ok]**.
+1. Selecione o schema de origem **[!UICONTROL Seed addresses]**, insira **doc** como o **[!UICONTROL Namespace]** e clique em **[!UICONTROL Ok]**.
 
    ![](assets/dlv_seeds_usecase_10.png)
 
@@ -74,7 +74,7 @@ Para obter mais detalhes sobre extensões de schema, consulte o [Guia de configu
 
    ![](assets/dlv_seeds_usecase_20.png)
 
-   Em seguida, copie as linhas a seguir e cole-as sob o **[!UICONTROL Seed to insert in the export files]** elemento.
+   Em seguida, copie as linhas a seguir e as cole no elemento **[!UICONTROL Seed to insert in the export files]**.
 
    ```
        <element aggregate="doc:seedMember:common">
@@ -83,14 +83,14 @@ Para obter mais detalhes sobre extensões de schema, consulte o [Guia de configu
 
    ![](assets/dlv_seeds_usecase_29.png)
 
-   In this case, you are specifying that a new enumeration named **[!UICONTROL Department]** has been created in the seed address table, and it is based on the standard **[!UICONTROL @company]** enumeration template (labeled under the name **Company** in the seed address form).
+   Nesse caso, você está especificando que uma nova enumeração chamada **[!UICONTROL Department]** foi criada na tabela de seed addresses, e é baseada no template de enumeração padrão **[!UICONTROL @company]** (rotulada com o nome **Company** no formulário de seed address).
 
 1. Clique em **[!UICONTROL Save]**.
-1. No **[!UICONTROL Tools > Advanced]** menu, selecione a **[!UICONTROL Update database structure]** opção.
+1. No menu **[!UICONTROL Tools > Advanced]**, selecione a opção **[!UICONTROL Update database structure]**.
 
    ![](assets/dlv_seeds_usecase_12.png)
 
-1. When the update wizard is displayed, click the **[!UICONTROL Next]** button to access the Edit tables window: changes carried out in the seed address data schema require a structure update.
+1. Quando o assistente de atualização for exibido, clique no botão **[!UICONTROL Next]** para acessar a janela de edição de tabelas: as alterações realizadas no schema de dados de seed address exigem uma atualização de estrutura.
 
    ![](assets/dlv_seeds_usecase_13.png)
 
@@ -100,13 +100,13 @@ Para obter mais detalhes sobre extensões de schema, consulte o [Guia de configu
 
    Você pode fechar o assistente após o término da atualização.
 
-1. Desconecte e reconecte o Adobe Campaign. As alterações feitas no schema de dados do seed address agora estão em vigor. In order for them to be visible from the seed address screen, you must update the associated **[!UICONTROL Input form]**. Consulte a seção [Atualização do formulário](#updating-the-input-form) de entrada.
+1. Desconecte e reconecte o Adobe Campaign. As alterações feitas no schema de dados do seed address agora estão em vigor. Para ficarem visíveis na tela do seed address, você deve atualizar o **[!UICONTROL Input form]** associado. Consulte a seção [Atualização do formulário de entrada](#updating-the-input-form).
 
 #### Extensão do schema de dados de uma tabela vinculada {#extending-the-data-schema-from-a-linked-table}
 
 O schema de dados de seed addresses pode usar valores de uma tabela vinculada ao schema de dados do recipient – Recipient (nms).
 
-For example, the user would like to integrate the **[!UICONTROL Internet Extension]** found in the **[!UICONTROL Country]** table that is linked to the recipients schema.
+Por exemplo, o usuário gostaria de integrar a **[!UICONTROL Internet Extension]** localizada na tabela **[!UICONTROL Country]**, que está vinculada ao schema de recipients.
 
 ![](assets/dlv_seeds_usecase_06.png)
 
@@ -123,28 +123,28 @@ Portanto, ele deve estender o schema de dados dos seed addresses como detalhado 
 
 Eles indicam:
 
-* that the user wants to create a new element named **[!UICONTROL Internet Extension]**,
-* that this element comes from the **[!UICONTROL Country]** table.
+* que o usuário deseja criar um novo elemento chamado **[!UICONTROL Internet Extension]**,
+* que este elemento vem da tabela **[!UICONTROL Country]**.
 
 >[!CAUTION]
 >
 >No nome da tabela vinculada, você deve especificar o **xpath-dst** da tabela vinculada.
 >
->This can be found in the **[!UICONTROL Country]** element in the recipients table.
+>Isso pode ser encontrado no elemento **[!UICONTROL Country]** na tabela de recipients.
 
 ![](assets/dlv_seeds_usecase_07.png)
 
-The user can then follow from **step 5** of the section, and update the **[!UICONTROL Input form]** of the seed addresses.
+O usuário pode então seguir a partir da **etapa 5** da seção e atualizar o **[!UICONTROL Input form]** dos seed addresses.
 
-Consulte a seção [Atualização do formulário](#updating-the-input-form) de entrada.
+Consulte a seção [Atualização do formulário de entrada](#updating-the-input-form).
 
 #### Atualização do formulário de entrada {#updating-the-input-form}
 
-1. In the **[!UICONTROL Administration > Configuration > Input forms]** node, find the seed addresses input form.
+1. No nó **[!UICONTROL Administration > Configuration > Input forms]**, localize o formulário de entrada dos seed addresses.
 
    ![](assets/dlv_seeds_usecase_19.png)
 
-1. Edit the form and insert the following line in the **[!UICONTROL Recipient]** container.
+1. Edite o formulário e insira a seguinte linha no container **[!UICONTROL Recipient]**:
 
    ```
    <input xpath="@workField"/>
@@ -153,11 +153,11 @@ Consulte a seção [Atualização do formulário](#updating-the-input-form) de e
    ![](assets/dlv_seeds_usecase_21.png)
 
 1. Salve as alterações.
-1. Abra um seed address. O **[!UICONTROL Department]** campo é exibido na **[!UICONTROL Recipient]** tabela.
+1. Abra um seed address. O campo **[!UICONTROL Department]** aparece na tabela **[!UICONTROL Recipient]**.
 
    ![](assets/dlv_seeds_usecase_22.png)
 
-1. Edit the seed addresses that you want to use for the delivery and enter **Purchasing** as the value in the **[!UICONTROL Department]** field.
+1. Edite os seed addresses que deseja utilizar para o delivery e insira **Compras** como o valor no campo **[!UICONTROL Department]**.
 
 ## Etapa 3 – Definição da condição {#step-3---defining-the-condition}
 
@@ -167,11 +167,11 @@ Agora você pode especificar a condição dinâmica dos seed addresses para o de
 
    ![](assets/dlv_seeds_usecase_01.png)
 
-1. Clique no **[!UICONTROL To]** link e na guia **[!UICONTROL Seed addresses]** para acessar o **[!UICONTROL Edit the dynamic condition...]** link.
+1. Clique no link **[!UICONTROL To]** e depois na guia **[!UICONTROL Seed addresses]** para acessar o link **[!UICONTROL Edit the dynamic condition...]**.
 
    ![](assets/dlv_seeds_usecase_02.png)
 
-1. Selecione a expressão que permite escolher os seed addresses desejados. Aqui, o usuário seleciona a **[!UICONTROL Department (@workField)]** expressão.
+1. Selecione a expressão que permite escolher os seed addresses desejados. Aqui o usuário seleciona a expressão **[!UICONTROL Department (@workField)]**.
 
    ![](assets/dlv_seeds_usecase_03.png)
 
@@ -185,18 +185,18 @@ Agora você pode especificar a condição dinâmica dos seed addresses para o de
 
 1. Clique em **[!UICONTROL Ok]**.
 
-   The query is displayed in the **[!UICONTROL Select target]** window.
+   O query é exibido na janela **[!UICONTROL Select target]**.
 
    ![](assets/dlv_seeds_usecase_04.png)
 
-1. Clique em **[!UICONTROL Ok]** para aprovar a consulta.
-1. Analyze your delivery then click on the **[!UICONTROL Delivery]** tab to access the delivery logs.
+1. Clique em **[!UICONTROL Ok]** para aprovar o query.
+1. Analise seu delivery e clique na guia **[!UICONTROL Delivery]** para acessar os logs de delivery.
 
    Os seed addresses do departamento de compras são exibidos como delivery pendente, como os dos recipients ou outros seed addresses.
 
    ![](assets/dlv_seeds_usecase_05.png)
 
-1. Click the **[!UICONTROL Send]** button to start the delivery.
+1. Clique no botão **[!UICONTROL Send]** para iniciar o delivery.
 
    Os membros do departamento de compras fazem parte dos seed addresses que receberão o delivery na caixa de entrada do email.
 
