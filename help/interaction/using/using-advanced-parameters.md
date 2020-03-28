@@ -14,7 +14,7 @@ discoiquuid: 2bb756a2-4aca-4195-9b7a-ec85028a8012
 index: y
 internal: n
 snippet: y
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 20f835c357d016643ea1f3209ee4dfb6d3239f90
 
 ---
@@ -28,9 +28,9 @@ Este capítulo detalha os vários parâmetros avançados possíveis no Interacti
 >
 >O capítulo a seguir destina-se a **administradores técnicos**.
 
-* É possível usar dados contextuais adicionais. Consulte a seção Dados [](../../interaction/using/additional-data.md) adicionais.
-* É possível enriquecer os contextos de aplicativo das ofertas sugeridas por meio de um canal de entrada. Para fazer isso, o schema de interação **de nms:interação** deve ser estendido. Refer to the [Extension example](../../interaction/using/extension-example.md) section for the full procedure.
-* A criação de um ambiente de teste é detalhada na seção [Criação de um ambiente](../../interaction/using/creating-a-test-environment.md) de teste.
-* É possível modificar o comportamento do mecanismo padrão usando ganchos. For more on this, refer to the [Hooks](../../interaction/using/hooks.md) section
-* Finally, using Interaction with a distributed architecture is detailed in the [Distributed architectures](../../interaction/using/distributed-architectures.md) section.
+* É possível usar dados contextuais adicionais. Consulte a seção [Dados adicionais](../../interaction/using/additional-data.md).
+* É possível enriquecer os contextos de aplicativo das ofertas sugeridas por meio de um canal de entrada. Para fazer isso, o schema de interação **de nms:interação** deve ser estendido. Consulte a seção [Exemplos de extensões](../../interaction/using/extension-example.md) para ver o procedimento completo.
+* A criação de um ambiente de teste é detalhada na seção [Criação de um ambiente de teste](../../interaction/using/creating-a-test-environment.md).
+* É possível modificar o comportamento do mecanismo padrão usando ganchos. Para obter mais informações, consulte a seção [Ganchos](../../interaction/using/hooks.md)
+* Finalmente, o uso do Interaction com uma arquitetura distribuída é detalhado na seção [Arquitetura distribuída](../../interaction/using/distributed-architectures.md).
 
