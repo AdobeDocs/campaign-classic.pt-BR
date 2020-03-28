@@ -14,7 +14,7 @@ discoiquuid: 008d6a63-68cd-4e87-8adb-9642e2f9bb2a
 index: y
 internal: n
 snippet: y
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 38700b79aeb19c75d10d2f5eb60c1efdb12e62e3
 
 ---
@@ -22,9 +22,9 @@ source-git-commit: 38700b79aeb19c75d10d2f5eb60c1efdb12e62e3
 
 # Monitoramento técnico{#technical-monitoring}
 
-## Relatório de monitoramento técnico da entrega {#technical-deliverability-monitoring}
+## Relatório de monitoramento técnico de deliverability {#technical-deliverability-monitoring}
 
-O relatório técnico de monitoramento de material de entrega é atualizado diariamente e está disponível ao navegar até **[!UICONTROL Monitoring]** > **[!UICONTROL Overview]** e clicar no **[!UICONTROL Technical monitoring]** link na guia Adobe Campaign **[!UICONTROL Home]** . Ele inclui vários indicadores de qualidade de deliverability para sua plataforma.
+O relatório de monitoramento de deliverability técnico é atualizado diariamente e está disponível ao navegar até **[!UICONTROL Monitoring]** > **[!UICONTROL Overview]** e clicar no link **[!UICONTROL Technical monitoring]** da guia **[!UICONTROL Home]** do Adobe Campaign. Ele inclui vários indicadores de qualidade de deliverability para sua plataforma.
 
 Esses indicadores são atualizados diariamente às 9h.
 
@@ -36,9 +36,9 @@ Esses indicadores são atualizados diariamente às 9h.
 
 Os seguintes indicadores são usados no relatório:
 
-* **[!UICONTROL Reverse DNS]** : O Adobe Campaign verifica se um DNS reverso é fornecido para um endereço IP e que isso seja apontado corretamente ao IP.
+* **[!UICONTROL Reverse DNS]**: o Adobe Campaign verifica se um DNS reverso é fornecido para um endereço IP e se ele é apontado corretamente ao IP.
 
-* **[!UICONTROL SPF]** (Estrutura de Política do Remetente): Um mecanismo de autenticação que permite aos ISPs e provedores de caixa de correio verificar se o remetente de email está autorizado no domínio de envio.
+* **[!UICONTROL SPF]** (Estrutura de Política do Remetente): um mecanismo de autenticação que permite aos ISPs e provedores de caixa de correio verificar se o remetente de email está autorizado no domínio de envio.
 
    <!--
     >[!NOTE]
@@ -46,11 +46,11 @@ Os seguintes indicadores são usados no relatório:
     >The SPF may look **[!UICONTROL Acceptable]** (instead of **[!UICONTROL Good]**) since the report is currently unable to detect the presence of a “redirect” or “include” mechanism. This bug has been submitted to Adobe Campaign R&D to be fixed. In the meantime, please feel free to add 15 points to your global score to obtain your real rating (a **[!UICONTROL Good]** one corresponds to 96 points or higher).
     -->
 
-* **[!UICONTROL DomainKeys]** : Um serviço desenvolvido pelo Yahoo e destinado a certificar a identidade de um remetente de email.
+* **[!UICONTROL DomainKeys]**: um serviço desenvolvido pelo Yahoo e destinado a certificar a identidade de um remetente de email.
 
-* **[!UICONTROL IP and RBL domain]** (Lista de buracos negros em tempo real): Uma lista de endereços IP e domínios que foram sinalizados por organizações de listas de bloqueios para má reputação de envio. Essas listas são mantidas por organizações dedicadas, como Spamhaus, Spamcope, SURBL/URIBL etc. Atualmente, o Adobe Campaign processa verificações contra RBLs que têm um impacto significativo na entrega. Esses RBLs refletem o envio de reputação e podem ser referenciados pelos ISPs antes de aceitarem receber seus emails.
+* **[!UICONTROL IP and RBL domain]** (Lista de buracos negros em tempo real): uma lista de endereços IP e domínios que foram sinalizados por organizações de listas de bloqueios para má reputação de envio. Essas listas são mantidas por organizações dedicadas como Spamhaus, Spamcop, SURBL/URIBL, etc. Atualmente, o Adobe Campaign processa verificações contra RBLs que têm um impacto significativo no delivery. Essas RBLs refletem sua reputação e podem ser consultadas pelos ISPs antes de aceitarem seus emails.
 
-* **[!UICONTROL SNDS]** (Serviços de dados de rede inteligente): Um serviço [antisspam do](https://sendersupport.olc.protection.outlook.com/snds/FAQ.aspx)Windows Live Hotmail. O Hotmail é o único ISP que fornece esse tipo de informação. As pontuações de benchmark são um resultado de filtro verde, uma taxa de reclamação inferior a 0,1% e zero armadilhas de spam.
+* **[!UICONTROL SNDS]** (Serviços de dados de rede inteligente): um [serviço anti-spam do Windows Live Hotmail](https://sendersupport.olc.protection.outlook.com/snds/FAQ.aspx). O Hotmail é o único ISP que fornece esse tipo de informação. As pontuações de referência são um resultado de filtro verde, uma taxa de reclamação inferior a 0,1% e zero armadilhas de spam.
 
 <!--
 * **[!UICONTROL Reputation Authority]**: This WatchGuard’s score is calculated in real time according to the feedback received from their network worldwide, and also from the different users who use their software.
