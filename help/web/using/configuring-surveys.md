@@ -14,7 +14,7 @@ discoiquuid: 98706258-0621-4aa9-bf14-f92f14946308
 index: y
 internal: n
 snippet: y
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 20f835c357d016643ea1f3209ee4dfb6d3239f90
 
 ---
@@ -32,6 +32,6 @@ Os parâmetros disponíveis são detalhados [nesta seção](../../web/using/defi
 
 ## Armazenamento de dados de pesquisa {#survey-data-storage}
 
-Por padrão, os campos de formulário Web são armazenados na tabela de recipients. To use another table, select it in the **[!UICONTROL Document type]** field. The **[!UICONTROL Zoom]** icon lets you view the content of the selected table.
+Por padrão, os campos de formulário Web são armazenados na tabela de recipients. Para usar outra tabela, selecione-a no campo **[!UICONTROL Document type]**. O ícone **[!UICONTROL Zoom]** permite visualizar o conteúdo da tabela selecionada.
 
-Respostas das pesquisas fornecidas por usuários que não são armazenados nos campos (mas em variáveis locais) são armazenadas nas tabelas **Respostas das pesquisas** . You can change the schema used based on the **[!UICONTROL Library]** field. Este campo está disponível somente para **pesquisas**.
+Respostas das pesquisas fornecidas por usuários que não são armazenados nos campos (mas em variáveis locais) são armazenadas nas tabelas **Respostas das pesquisas** . É possível alterar o schema usado com base no campo **[!UICONTROL Library]**. Este campo está disponível somente para **pesquisas**.
