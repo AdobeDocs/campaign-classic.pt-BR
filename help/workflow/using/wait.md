@@ -14,7 +14,7 @@ discoiquuid: 41bcfe67-b5d6-4ee6-9f8a-6a7a208e2036
 index: y
 internal: n
 snippet: y
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 579329d9194115065dff2c192deb0376c75e67bd
 
 ---
@@ -28,13 +28,13 @@ Uma atividade **Wait** ativa sua transição após um atraso de tempo de qualque
 
 ![](assets/edit_wait.png)
 
-No **[!UICONTROL Duration]** campo, o valor pode ser expresso na unidade de sua escolha: (de acordo com as configurações regionais do operador):
+No campo **[!UICONTROL Duration]**, o valor pode ser expresso na unidade de sua escolha: (de acordo com as configurações regionais do operador):
 
-* Se as configurações regionais não forem especificadas: **s** por segundos, **m** por minutos, **h** por horas, **d** por dias, **y** por anos. No momento da aprovação, o valor é convertido automaticamente para a unidade mais legível.
+* Se as configurações regionais não forem especificadas: **s** para segundos, **m** para minutos, **h** para horas, **d** para dias e **y** para anos. No momento da aprovação, o valor é convertido automaticamente para a unidade mais legível.
 
    A unidade padrão é dia (**d**).
 
-* Enquanto que, por exemplo, se as configurações regionais forem definidas como &quot;Français&quot;: **s** por segundos, **mn** por minutos, **h** por horas, **j** por dias, **m** **** por meses, a por anos. No momento da aprovação, o valor é convertido automaticamente na unidade mais legível, como no exemplo acima, **90s** foi convertido para **1mn 30s**.
+* Enquanto que, por exemplo, se as configurações regionais forem definidas como &quot;Français&quot;: **s** para segundos, **mn** para minutos, **h** para horas, **j** para dias, **m** para meses e **a** para anos. No momento da aprovação, o valor é convertido automaticamente na unidade mais legível, como no exemplo acima, **90s** foi convertido para **1mn 30s**.
 
    A unidade padrão é dia (**d**).
 
