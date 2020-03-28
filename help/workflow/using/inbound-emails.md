@@ -14,7 +14,7 @@ discoiquuid: 4c0530b1-0292-45bc-8730-668bc5b8550b
 index: y
 internal: n
 snippet: y
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: c10a0a11c6e9952aa47da1f7a15188c79c62508d
 
 ---
@@ -28,11 +28,11 @@ A atividade de **emails de entrada** permite baixar e processar mensagens de ema
 
 A primeira guia da atividade de **Emails de Entrada** permite inserir os parâmetros do servidor POP3 e digitar o script a ser executado no recebimento de cada mensagem. A segunda guia permite atribuir uma agenda à atividade e a terceira guia define as condições de expiração da atividade.
 
-1. **[!UICONTROL Inbound Emails]**
+1. **[!UICONTROL Emails de entrada]**
 
-   * **[!UICONTROL Use an external account]**
+   * **[!UICONTROL Usar uma conta externa]**
 
-      Quando essa opção é ativada, você pode selecionar uma conta POP3 externa em vez de inserir os parâmetros de conexão. The **[!UICONTROL External account]** field specifies the external POP3 account to be used to connect to the email service. Este campo só estará visível se a opção &#39;Usar uma conta externa&#39; estiver habilitada.
+      Quando essa opção é ativada, você pode selecionar uma conta POP3 externa em vez de inserir os parâmetros de conexão. O campo **[!UICONTROL External account]** especifica a conta do POP3 externa a ser usada para se conectar ao serviço de email. Este campo só estará visível se a opção &#39;Usar uma conta externa&#39; estiver habilitada.
 
       Se essa opção não estiver selecionada, especifique os seguintes parâmetros:
 
@@ -68,17 +68,17 @@ A primeira guia da atividade de **Emails de Entrada** permite inserir os parâme
    * 2 - Deixa a mensagem no servidor e ativa a transição de saída.
    * 3 - Exclui a mensagem do servidor.
    * 4 - Deixa a mensagem no servidor.
-   The content of the message is accessible from the global **[!UICONTROL mailMessage]** variable.
+   O conteúdo da mensagem é acessível a partir da variável global **[!UICONTROL mailMessage]**.
 
-1. **[!UICONTROL Schedule]**
+1. **[!UICONTROL Agendar]**
 
-   To define a schedule for the activity, click the **[!UICONTROL Scheduling]** tab and check **[!UICONTROL Plan execution]**. Click the **[!UICONTROL Change]** button to configure the schedule.
+   Para definir uma agenda para a atividade, clique na guia **[!UICONTROL Scheduling]** e marque **[!UICONTROL Plan execution]**. Clique no botão **[!UICONTROL Change]** para configurar o cronograma.
 
-   A configuração do cronograma é igual à atividade de agendamento. Consulte o [Agendador](../../workflow/using/scheduler.md).
+   A configuração do cronograma é igual à atividade de agendamento. Consulte [Scheduler](../../workflow/using/scheduler.md).
 
 1. **[!UICONTROL Expiration]**
 
-   You can define expiration delays via the **[!UICONTROL Expiration]** tab.
+   Você pode definir atrasos de expiração por meio da guia **[!UICONTROL Expiration]**.
 
    ![](assets/email_rec_edit_3.png)
 
