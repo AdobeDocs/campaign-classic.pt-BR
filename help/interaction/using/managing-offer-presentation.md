@@ -14,7 +14,7 @@ discoiquuid: f6e44634-3a13-480e-ab44-f3c744054a96
 index: y
 internal: n
 snippet: y
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 1c86322fa95aee024f6c691b61a10c21a9a22eb7
 
 ---
@@ -28,8 +28,8 @@ A interação permite controlar o fluxo de apresentações de oferta usando regr
 
 ## Criação e referência a uma regra de apresentação de oferta {#creating-and-referencing-an-offer-presentation-rule}
 
-1. Vá para o nó **[!UICONTROL Administration]** > **[!UICONTROL Campaign management]** > **[!UICONTROL Typology management]** > **[!UICONTROL Typology rules]** .
-1. Create a typology rule and choose the **[!UICONTROL Offer presentation]** type.
+1. Vá para o nó **[!UICONTROL Administration]** > **[!UICONTROL Campaign management]** > **[!UICONTROL Typology management]** > **[!UICONTROL Typology rules]**.
+1. Crie uma regra de tipologia e escolha o tipo **[!UICONTROL Offer presentation]**.
 
    ![](assets/offer_typology_001.png)
 
@@ -37,8 +37,8 @@ A interação permite controlar o fluxo de apresentações de oferta usando regr
 
    ![](assets/offer_typology_002.png)
 
-1. Configure os critérios de aplicação da regra. Para obter mais informações, consulte as configurações [da regra](#presentation-rule-settings)Apresentação.
-1. Vá para o nó **[!UICONTROL Administration]** > **[!UICONTROL Campaign execution]** > **[!UICONTROL Typology management]** > **[!UICONTROL Typologies]** e crie uma tipologia que agrupe todas as regras de **[!UICONTROL Offer presentation]** tipo.
+1. Configure os critérios de aplicação da regra. Para obter mais informações, consulte [Configurações da regra de apresentação](#presentation-rule-settings).
+1. Vá para o nó **[!UICONTROL Administration]** > **[!UICONTROL Campaign execution]** > **[!UICONTROL Typology management]** >**[!UICONTROL Typologies]** e crie uma tipologia que irá agrupar todos os tipos de regras **[!UICONTROL Offer presentation]**.
 
    ![](assets/offer_typology_003.png)
 
@@ -54,9 +54,9 @@ A interação permite controlar o fluxo de apresentações de oferta usando regr
 
 ### Critérios de aplicação {#application-criteria-}
 
-The application criteria available in the **[!UICONTROL General]** tab lets you specify the offers which the presentation rule will apply to. Para fazer isso, é necessário criar um query e escolher as ofertas relacionadas, conforme descrito abaixo.
+Os critérios de aplicação disponíveis na guia **[!UICONTROL General]** permitem especificar as ofertas às quais a regra de apresentação será aplicada. Para fazer isso, é necessário criar um query e escolher as ofertas relacionadas, conforme descrito abaixo.
 
-1. In your typology rule, click the **[!UICONTROL Edit the rule application conditions...]** link to create your query.
+1. Na regra de tipologia, clique no link **[!UICONTROL Edit the rule application conditions...]** para criar sua consulta.
 
    ![](assets/offer_typology_006.png)
 
@@ -68,21 +68,21 @@ The application criteria available in the **[!UICONTROL General]** tab lets you 
 
 ### Dimensões da oferta {#offer-dimensions}
 
-In the **[!UICONTROL Offer presentation]** tab, you must specify the same dimensions for the presentation rule as those configured in the environment.
+Na guia **[!UICONTROL Offer presentation]**, você deve especificar as mesmas dimensões para a regra de apresentação como aquelas configuradas no ambiente.
 
-The **[!UICONTROL Targeting dimension]** coincides with the table of recipients (by default: nms:recipients) who will receive the offer propositions. The **[!UICONTROL Storage dimension]** coincides with the table which contains the proposition history linked to the targeting dimension (by default:nms:propositionRcp).
+O **[!UICONTROL Targeting dimension]** coincide com a tabela de recipients (por padrão: nms:recipients) que receberão as apresentações de oferta. O **[!UICONTROL Storage dimension]** coincide com a tabela que contém o histórico de apresentações vinculado ao targeting dimension (por padrão: nms:propositionRcp).
 
 ![](assets/offer_typology_009.png)
 
 >[!NOTE]
 >
->Você também pode usar tabelas não padrão. Se quiser usar um targeting dimension específico, é necessário criar tabelas e um ambiente dedicado usando o targeting mapping. Para obter mais informações, consulte [Criação de um ambiente](../../interaction/using/live-design-environments.md#creating-an-offer-environment)de ofertas.
+>Você também pode usar tabelas não padrão. Se quiser usar um targeting dimension específico, é necessário criar tabelas e um ambiente dedicado usando o targeting mapping. Para obter mais informações, consulte [Criação de um ambiente de ofertas](../../interaction/using/live-design-environments.md#creating-an-offer-environment).
 
 ### Período {#period}
 
 Este é um período de deslizamento que começa na data de apresentação da oferta. Ele define um limite temporal para a validade de apresentações de oferta. A regra não se aplica às apresentações de oferta feitas fora deste período.
 
-The period starts **n** days before the proposition date and ends **n** days afterwards, where **n** corresponds to the number entered in the **[!UICONTROL Period considered]** field:
+O período começa **n** dias antes da data de apresentação e termina **n** dias depois, onde **n** corresponde ao número inserido no campo **[!UICONTROL Period considered]**:
 
 * Para espaços de entrada, a data da apresentação é a data de apresentação da oferta.
 * Para espaços de saída, a data da proposta é a data de contato do delivery (por exemplo, a data de delivery inserida em um workflow para construção do target).
@@ -101,7 +101,7 @@ Use as setas para modificar o número de apresentações de ofertas:
 
 ## Definição de apresentações e recipients {#defining-propositions-and-recipients}
 
-The **[!UICONTROL Propositions to count]** section lets you specify both the recipients and the propositions which will lead to the exclusion of the offers defined in the **[!UICONTROL General]** tab if they appear a certain number of times in the propositions history.
+A seção **[!UICONTROL Propositions to count]** permite especificar os recipients e as apresentações que levarão à exclusão das ofertas definidas na guia **[!UICONTROL General]** se aparecerem um determinado número de vezes no histórico de apresentações.
 
 ### Filtragem de apresentações {#filtering-propositions}
 
@@ -109,55 +109,55 @@ Você pode selecionar critérios de filtragem para excluir apresentações com b
 
 ![](assets/offer_typology_014.png)
 
-Esses critérios representam as aplicações mais frequentes das regras de apresentação. To use other criteria, you can create a query using the **[!UICONTROL Limit propositions...]** link. Para obter mais informações, consulte a seção [Criação de uma consulta sobre proposições](#creating-a-query-on-propositions) .
+Esses critérios representam as aplicações mais frequentes das regras de apresentação. Para usar outros critérios, é possível criar uma consulta usando o link **[!UICONTROL Limit propositions...]**. Para obter mais informações, consulte a seção [Criação de uma consulta nas apresentações](#creating-a-query-on-propositions).
 
 * **Filtro no canal**
 
-   **[!UICONTROL On the same channel only]** : permite excluir propostas de oferta no canal especificado na **[!UICONTROL General]** guia.
+   **[!UICONTROL On the same channel only]**: permite excluir apresentações de oferta no canal especificado na guia **[!UICONTROL General]**.
 
-   For instance, the channel specified for the rule in the **[!UICONTROL General]** tab is email. Se as ofertas que a regra se aplica até agora forem oferecidas apenas no canal da Web, o motor de interação pode apresentar as ofertas em um delivery de email. No entanto, uma vez que as ofertas tenham sido apresentadas por email, o motor de interação escolherá um canal diferente para apresentar as ofertas.
+   Por exemplo, o canal especificado para a regra na guia **[!UICONTROL General]** é email. Se as ofertas que a regra se aplica até agora forem oferecidas apenas no canal da Web, o motor de interação pode apresentar as ofertas em um delivery de email. No entanto, uma vez que as ofertas tenham sido apresentadas por email, o motor de interação escolherá um canal diferente para apresentar as ofertas.
 
    >[!NOTE]
    >
    >Estamos falando sobre o canal e não o espaço. Se a regra precisar excluir uma oferta no canal da Web, a oferta destinada a ser apresentada em um site em dois espaços (em um banner e no corpo da página, por exemplo), não será exibida no site se já tiver sido apresentada antes.
    >
-   >For a workflow involving offer presentation, the rules are only correctly taken into account if they are configured on **[!UICONTROL All channels]**.
+   >Para um workflow envolvendo a apresentação, as regras são devidamente levadas em conta se estiverem configuradas em **[!UICONTROL All channels]**.
 
 * **Filtro na oferta**
 
    Esse filtro permite restringir as apresentações de oferta a serem contadas para conjuntos específicos de ofertas.
 
-   **[!UICONTROL All offers]** : valor padrão. Nenhum filtro é aplicado às ofertas.
+   **[!UICONTROL All offers]**: valor padrão. Nenhum filtro é aplicado às ofertas.
 
-   **[!UICONTROL Offer being presented]** : a oferta especificada na guia **[!UICONTROL General]** será excluída se já tiver sido apresentada.
+   **[!UICONTROL Offer being presented]**: a oferta especificada na guia **[!UICONTROL General]** é excluída se já tiver sido apresentada.
 
-   **[!UICONTROL Offers from the same category]** : uma oferta será excluída se uma oferta da mesma categoria já tiver sido apresentada.
+   **[!UICONTROL Offers from the same category]**: a oferta será excluída se uma oferta da mesma categoria já tiver sido apresentada.
 
-   **[!UICONTROL The offers which the rule applies to]** : quando várias ofertas são definidas na **[!UICONTROL General]** guia, cada proposta de oferta desse conjunto de ofertas é considerada e termina com a exclusão de todas as ofertas se o limite da proposta for atingido.
+   **[!UICONTROL The offers which the rule applies to]**: quando várias ofertas são definidas na guia **[!UICONTROL General]**, cada apresentação de oferta desse conjunto de ofertas é considerada e resulta na exclusão de todas as ofertas se o limite de apresentações for atingido.
 
-   For instance, offers 2, 3 and 5 are defined in the **[!UICONTROL General]** tab. O número máximo de apresentações é definido como 2. Se as ofertas 2 e 5 forem apresentadas uma vez, o número de apresentações será 2. Como resultado, a oferta 3 nunca será apresentada.
+   Por exemplo, as ofertas 2, 3 e 5 são definidas na guia **[!UICONTROL General]**. O número máximo de apresentações é definido como 2. Se as ofertas 2 e 5 forem apresentadas uma vez, o número de apresentações será 2. Como resultado, a oferta 3 nunca será apresentada.
 
 * **Filtro no status da apresentação**
 
    Esse filtro permite escolher os status mais frequentes para que as apresentações de oferta sejam consideradas no histórico de apresentações.
 
-   **[!UICONTROL Regardless of the proposition status]** : valor padrão. Nenhum filtro é aplicado ao status da apresentação.
+   **[!UICONTROL Regardless of the proposition status]**: valor padrão. Nenhum filtro é aplicado ao status da apresentação.
 
-   **[!UICONTROL Accepted or rejected propositions]** : permite que você exclua ofertas apresentadas anteriormente que foram aceitas ou rejeitadas.
+   **[!UICONTROL Accepted or rejected propositions]**: permite excluir ofertas apresentadas anteriormente que foram aceitas ou rejeitadas.
 
-   **[!UICONTROL Accepted propositions]** : permite que você exclua ofertas apresentadas anteriormente que foram aceitas.
+   **[!UICONTROL Accepted propositions]**: permite excluir ofertas apresentadas anteriormente que foram aceitas.
 
-   **[!UICONTROL Rejected propositions]** : permite que você exclua ofertas apresentadas anteriormente que foram rejeitadas.
+   **[!UICONTROL Rejected propositions]**: permite excluir ofertas apresentadas anteriormente que foram rejeitadas.
 
 ### Definição de recipients {#defining-recipients}
 
-To specify the recipients, click the **[!UICONTROL Edit the query from the targeting dimension...]** link and select the recipients concerned by the rule.
+Para especificar os recipients, clique no link **[!UICONTROL Edit the query from the targeting dimension...]** e selecione os recipients relacionados à regra.
 
 ![](assets/offer_typology_012.png)
 
 ### Criação de um query em apresentações {#creating-a-query-on-propositions}
 
-To specify the propositions to be counted via a query, click the **[!UICONTROL Limit propositions...]** link and specify the criteria to be taken into account.
+Para especificar as apresentações a serem contadas por meio de uma consulta, clique no link **[!UICONTROL Limit propositions...]** e especifique os critérios a serem considerados.
 
 No exemplo a seguir, as apresentações a serem contadas após duas apresentações são aquelas na categoria **Ofertas especiais**, para o espaço **Call center**, com um peso abaixo de **20**.
 
