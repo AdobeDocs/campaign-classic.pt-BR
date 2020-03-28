@@ -14,7 +14,7 @@ discoiquuid: 990b6cbc-9b7b-4278-a635-653d5abafe87
 index: y
 internal: n
 snippet: y
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 20f835c357d016643ea1f3209ee4dfb6d3239f90
 
 ---
@@ -36,5 +36,5 @@ No caso de um contato de entrada (call center ou site da Web), as ofertas mais r
 
    ![](assets/s_ncs_configuration_offer_context.png)
 
-* Ao configurar chamadas SOAP, insira o elemento XML do **contexto** para fazer referência às informações de contexto adicionadas no schema de interação. Para obter mais informações, consulte [Integração via SOAP (servidor)](../../interaction/using/integration-via-soap--server-side-.md).
+* Ao configurar chamadas SOAP, insira o elemento XML do **contexto** para fazer referência às informações de contexto adicionadas no schema de interação. Para obter mais informações, consulte [Integração via SOAP (lado do servidor)](../../interaction/using/integration-via-soap--server-side-.md).
 
