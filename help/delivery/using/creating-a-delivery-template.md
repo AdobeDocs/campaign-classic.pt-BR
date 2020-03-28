@@ -14,7 +14,7 @@ discoiquuid: 0e67d9dd-3ee8-4c06-98a4-3a2c644b6c0a
 index: y
 internal: n
 snippet: y
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 7dbc876fae0bde78e3088ee1ab986cd09e9bcc38
 
 ---
@@ -24,17 +24,17 @@ source-git-commit: 7dbc876fae0bde78e3088ee1ab986cd09e9bcc38
 
 ## Conversão de um delivery existente para um template {#converting-an-existing-delivery-to-a-template}
 
-Um delivery pode ser convertido em um template para novas ações de delivery repetidas. To convert a delivery to a template, select it from the delivery list, accessible via the **[!UICONTROL Campaign management]** node of the tree.
+Um delivery pode ser convertido em um template para novas ações de delivery repetidas. Para converter um delivery em um template, selecione-o na lista de delivery, acessível por meio do nó **[!UICONTROL Campaign management]** da árvore.
 
-Right-click and select **[!UICONTROL Actions > Save as template...]**.
+Clique com o botão direito do mouse e selecione **[!UICONTROL Actions > Save as template...]**.
 
 ![](assets/s_ncs_user_campaign_save_as_scenario.png)
 
-Essa ação cria um template de delivery a partir do delivery selecionado. You must enter the folder where it is saved (in the **[!UICONTROL Folder]** field) as well as the folder where the deliveries created based on this template are created (in the **[!UICONTROL Execution folder]** field).
+Essa ação cria um template de delivery a partir do delivery selecionado. Você deve inserir a pasta onde ele é salvo (no campo **[!UICONTROL Folder]**), bem como a pasta onde os deliveries criados com base neste template são criados (no campo **[!UICONTROL Execution folder]**).
 
 ![](assets/s_ncs_user_campaign_save_as_scenario_a.png)
 
-Para obter mais informações sobre o modo de configuração, consulte [Vincular o modelo a uma entrega](../../delivery/using/creating-a-delivery-from-a-template.md#linking-the-template-to-a-delivery).
+Para obter mais informações sobre o modo de configuração, consulte [Vincular o template a um delivery](../../delivery/using/creating-a-delivery-from-a-template.md#linking-the-template-to-a-delivery).
 
 ## Criação de um novo modelo {#creating-a-new-template}
 
