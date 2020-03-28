@@ -12,7 +12,7 @@ discoiquuid: 7e5605c8-78f2-4011-b317-96a59c699848
 index: y
 internal: n
 snippet: y
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: cf7c90f0ea9fbce3a4fd53f24189617cbd33fc40
 
 ---
@@ -36,11 +36,11 @@ Neste exemplo, devemos contar o número de recipients que vivem em Londres, de a
 
 Para criar este exemplo, aplique as seguintes etapas:
 
-1. In **[!UICONTROL Data to extract]**, define a count for the primary key (as shown in the previous example). Add the **[!UICONTROL Gender]** field in the output column. Marque a opção **[!UICONTROL Group]** na **[!UICONTROL Gender]** coluna. Dessa forma, os recipients serão agrupados por sexo.
+1. Em **[!UICONTROL Data to extract]**, defina uma contagem para a chave primária (como mostrado no exemplo anterior). Adicione o campo **[!UICONTROL Gender]** na coluna de saída. Marque a opção **[!UICONTROL Group]** na coluna **[!UICONTROL Gender]**. Dessa forma, os recipients serão agrupados por sexo.
 
    ![](assets/query_editor_nveau_27.png)
 
-1. Na **[!UICONTROL Sorting]** janela, clique em **[!UICONTROL Next]**: não é necessário ordenar aqui.
+1. Na janela **[!UICONTROL Sorting]**, clique em **[!UICONTROL Next]**: nenhuma classificação é necessária aqui.
 1. Configure o filtro de dados. Aqui, é possível restringir a seleção aos contatos que vivem em Londres.
 
    ![](assets/query_editor_22.png)
@@ -49,9 +49,9 @@ Para criar este exemplo, aplique as seguintes etapas:
    >
    >Os valores diferenciam maiúsculas de minúsculas. Se o valor &quot;Londres&quot; é inserido na condição sem uma letra maiúscula e a lista de recipients contiver a palavra &quot;Londres&quot; com uma letra maiúscula, então a query falha.
 
-1. Na **[!UICONTROL Data formatting]** janela, clique em **[!UICONTROL Next]**: nenhum formato é necessário para este exemplo.
-1. Na janela de visualização, clique em **[!UICONTROL Launch data preview]**.
+1. Na janela **[!UICONTROL Data formatting]**, clique em **[!UICONTROL Next]**: nenhuma formatação é necessária para este exemplo.
+1. Na janela de pré-visualização, clique em **[!UICONTROL Launch data preview]**.
 
-   Há três valores separados para cada tipo por gênero: **2** para a fêmea, **1** para o macho e **0** quando o sexo é desconhecido. Neste exemplo, a lista contém 10 mulheres, 16 homens e 2 pessoas cujo gênero não é conhecido.
+   Há três valores separados para cada tipo por gênero: **2** para feminino, **1** para masculino e **0** quando o sexo é desconhecido. Neste exemplo, a lista contém 10 mulheres, 16 homens e 2 pessoas cujo gênero não é conhecido.
 
    ![](assets/query_editor_agregat_04.png)
