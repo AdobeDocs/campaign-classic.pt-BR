@@ -14,7 +14,7 @@ discoiquuid: d90594bb-e3ba-4fb1-9e11-83d519c1ca7d
 index: y
 internal: n
 snippet: y
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 20f835c357d016643ea1f3209ee4dfb6d3239f90
 
 ---
@@ -22,20 +22,20 @@ source-git-commit: 20f835c357d016643ea1f3209ee4dfb6d3239f90
 
 # Ofertas por célula{#offers-by-cell}
 
-The **[!UICONTROL Offers by cell]** activity lets you distribute the inbound population (from a query for example) into several segments and to specify an offer to present for each of these segments.
+A atividade **[!UICONTROL Offers by cell]** permite distribuir a população de entrada (de uma consulta, por exemplo) em vários segmentos e especificar uma oferta a ser apresentada para cada um desses segmentos.
 
 Essa atividade só pode ser usada com **Interaction**. Para obter mais informações, consulte esta [seção](../../interaction/using/about-outbound-channels.md).
 
 Para fazer isso:
 
-1. Add the **[!UICONTROL Offers by cell]** activity once you have specified the target population, then open it.
-1. In the **[!UICONTROL General]** tab, select the offer space on which you want to present the offers.
-1. Na **[!UICONTROL Cells]** guia, especifique os diferentes subconjuntos usando o **[!UICONTROL Add]** botão:
+1. Adicione a atividade **[!UICONTROL Offers by cell]** após especificar a população do target e, em seguida, a abra.
+1. Na guia **[!UICONTROL General]**, selecione o espaço de ofertas no qual deseja apresentar as ofertas.
+1. Na guia **[!UICONTROL Cells]**, especifique os diferentes subconjuntos usando o botão **[!UICONTROL Add]**:
 
    * Especifique a população de subconjunto usando o filtro disponível e as regras de limitação.
    * Em seguida, selecione a oferta que deseja apresentar ao subconjunto. As ofertas disponíveis são aquelas qualificadas no espaço de oferta que foi selecionado na etapa anterior.
 
       ![](assets/int_offer_per_cell1.png)
 
-1. Em seguida, configure uma atividade de delivery que corresponda ao canal escolhido. Consulte Entregas [entre canais](../../workflow/using/cross-channel-deliveries.md).
+1. Em seguida, configure uma atividade de delivery que corresponda ao canal escolhido. Consulte [Deliveries entre canais](../../workflow/using/cross-channel-deliveries.md).
 
