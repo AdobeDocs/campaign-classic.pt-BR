@@ -14,7 +14,7 @@ discoiquuid: a223641e-93e1-42ef-bb6b-8e1a0f8f6a65
 index: y
 internal: n
 snippet: y
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: c10a0a11c6e9952aa47da1f7a15188c79c62508d
 
 ---
@@ -22,7 +22,7 @@ source-git-commit: c10a0a11c6e9952aa47da1f7a15188c79c62508d
 
 # Aprovação local{#local-approval}
 
-When integrated into a targeting workflow, the **[!UICONTROL Local approval]** activity lets you set up a recipient approval process before the delivery is sent.
+Quando integrado em um workflow para construção do target, a atividade **[!UICONTROL Local approval]** permite configurar um processo de aprovação de recipient antes do envio do delivery.
 
 ![](assets/local_validation_0.png)
 
@@ -30,23 +30,23 @@ When integrated into a targeting workflow, the **[!UICONTROL Local approval]** a
 >
 >Para usar essa atividade, você precisa ter adquirido o módulo Marketing distribuído, que é uma opção do Campaign. Verifique o contrato de licença.
 
-Para obter um exemplo da **[!UICONTROL Local approval]** atividade com um modelo de distribuição, consulte [Uso da atividade](../../workflow/using/using-the-local-approval-activity.md)de aprovação local.
+Para obter um exemplo da atividade **[!UICONTROL Local approval]** com um template de distribuição, consulte [Uso da atividade de aprovação local](../../workflow/using/using-the-local-approval-activity.md).
 
-Start by entering a label for the activity and the **[!UICONTROL Action to execute]** field:
+Comece inserindo um rótulo para a atividade e o campo **[!UICONTROL Action to execute]**:
 
 ![](assets/local_validation_1.png)
 
-* Select the **[!UICONTROL Target approval notification]** option to send a notification email to local supervisors before the delivery, asking them to approve the recipients assigned to them.
+* Selecione a opção **[!UICONTROL Target approval notification]** para enviar um email de notificação para supervisores locais antes do delivery, pedindo sua aprovação dos recipients atribuídos a eles.
 
    ![](assets/local_validation_intro_2.png)
 
-* **Query incremental**: permite executar um query e planejar sua execução. Consulte a seção Consulta [](../../workflow/using/incremental-query.md) incremental.
+* **Query incremental**: permite executar um query e planejar sua execução. Consulte a seção [Query incremental](../../workflow/using/incremental-query.md).
 
    ![](assets/local_validation_intro_3.png)
 
 ## Notificação de aprovação de target {#target-approval-notification}
 
-In this case, the **[!UICONTROL Local approval]** activity is placed between upstream targeting and the delivery:
+Nesse caso, a atividade **[!UICONTROL Local approval]** é colocada entre o target e o delivery upstream:
 
 ![](assets/local_validation_2.png)
 
@@ -54,22 +54,22 @@ Os campos a serem inseridos no caso de uma notificação para aprovação de tar
 
 ![](assets/local_validation_3.png)
 
-* **[!UICONTROL Distribution context]**: selecione a **[!UICONTROL Specified in the transition]** opção se estiver usando uma atividade **[!UICONTROL Split]** de tipo para limitar a população direcionada. Nesse caso, o template de distribuição é inserido na atividade de Split. If you are not limiting the targeted population, select the **[!UICONTROL Explicit]** option here and enter the distribution template in the **[!UICONTROL Data distribution]** field.
+* **[!UICONTROL Distribution context]**: selecione a opção **[!UICONTROL Specified in the transition]** se estiver usando uma atividade do tipo **[!UICONTROL Split]** para limitar o público-alvo. Nesse caso, o template de distribuição é inserido na atividade de Split. Se você não estiver limitando o público-alvo, selecione a opção **[!UICONTROL Explicit]** aqui e insira o template de distribuição no campo **[!UICONTROL Data distribution]**.
 
-   Para obter mais informações sobre como criar um modelo de distribuição de dados, consulte [Limitação do número de registros de subconjunto por distribuição](../../workflow/using/split.md#limiting-the-number-of-subset-records-per-data-distribution)de dados.
+   Para obter mais informações sobre como criar um template de distribuição de dados, consulte [Limitação do número de registros de subconjunto por distribuição de dados](../../workflow/using/split.md#limiting-the-number-of-subset-records-per-data-distribution).
 
 * **[!UICONTROL Approval management]**
 
    * Selecione o template de delivery e o assunto que será usado para a notificação por email. Um template padrão está disponível: **[!UICONTROL Local approval notification]**. Você também pode adicionar uma descrição que aparecerá acima das listas de recipients nas notificações de aprovação e de feedback.
-   * Specify the **[!UICONTROL Approval type]** that corresponds to the approval deadline (date or deadline from the start of the approval). Nesta data, o workflow começa novamente e os recipients que não foram aprovados não serão considerados no target. Depois que as notificações forem enviadas, a atividade será colocada em fila para que os supervisores locais possam aprovar seus contatos.
+   * Especifique o **[!UICONTROL Approval type]** que corresponda ao prazo final de aprovação (data ou prazo final do início da aprovação). Nesta data, o workflow começa novamente e os recipients que não foram aprovados não serão considerados no target. Depois que as notificações forem enviadas, a atividade será colocada em fila para que os supervisores locais possam aprovar seus contatos.
 
       >[!NOTE]
       >
       >Por padrão, quando o processo de aprovação é iniciado, a atividade fica pendente por três dias.
 
-      Você também pode adicionar um ou mais lembretes para informar aos supervisores locais que o prazo final está se aproximando. To do this, click the **[!UICONTROL Add a reminder]** link.
+      Você também pode adicionar um ou mais lembretes para informar aos supervisores locais que o prazo final está se aproximando. Para fazer isso, clique no ícone **[!UICONTROL Add a reminder]**.
 
-* **[!UICONTROL Complementary set]**: a **[!UICONTROL Generate complement]** opção permite gerar um segundo conjunto que inclui todos os alvos não aprovados.
+* **[!UICONTROL Complementary set]**: a opção **[!UICONTROL Generate complement]** permite gerar um segundo conjunto que inclui todos os targets não aprovados.
 
    >[!NOTE]
    >
@@ -77,7 +77,7 @@ Os campos a serem inseridos no caso de uma notificação para aprovação de tar
 
 ## Relatório de feedback de delivery {#delivery-feedback-report}
 
-In this case, the **[!UICONTROL Local approval]** activity is placed after the delivery:
+Nesse caso, a atividade **[!UICONTROL Local approval]** é disponibilizada após o delivery:
 
 ![](assets/local_validation_4.png)
 
@@ -85,12 +85,12 @@ No caso de um relatório de feedback de delivery, os seguintes campos devem ser 
 
 ![](assets/local_validation_workflow_4.png)
 
-* Select the **[!UICONTROL Specified in the transition]** option if the delivery was entered during a previous activity. Select **[!UICONTROL Explicit]** to specify the delivery in the local approval activity.
-* Selecione o template de delivery e o objeto do email de notificação. Há um template padrão: **[!UICONTROL Local approval notification]**.
+* Selecione a opção **[!UICONTROL Specified in the transition]** se o delivery foi inserido durante uma atividade anterior. Selecione **[!UICONTROL Explicit]** para especificar o delivery na atividade de aprovação local.
+* Selecione o template de delivery e o objeto do email de notificação. Existe um template padrão: **[!UICONTROL Local approval notification]**.
 
-## Example: Approving a workflow delivery {#example--approving-a-workflow-delivery}
+## Exemplo: Aprovação de um delivery de workflow {#example--approving-a-workflow-delivery}
 
-Este exemplo mostra como configurar um processo de aprovação para um delivery de workflow. For more information about creating delivery workflows, refer to the [Example: delivery workflow](../../workflow/using/delivery.md#example--delivery-workflow) section.
+Este exemplo mostra como configurar um processo de aprovação para um delivery de workflow. Para obter mais informações sobre como criar workflows de delivery, consulte a seção [Exemplo: workflow de delivery](../../workflow/using/delivery.md#example--delivery-workflow).
 
 Um operador pode aprovar um delivery de duas formas: usando a página da Web vinculada na mensagem de email ou através do console.
 
@@ -102,20 +102,20 @@ Um operador pode aprovar um delivery de duas formas: usando a página da Web vin
 
    ![](assets/new-workflow-valid-webaccess.png)
 
-   Make a choice and click the **[!UICONTROL Submit]** button.
+   Escolha e clique no botão **[!UICONTROL Submit]**.
 
    ![](assets/new-workflow-valid-webaccess-confirm.png)
 
 * Aprovação através do console
 
-   In the tree structure, the **[!UICONTROL Administration > Production > Objects created automatically > Approvals pending]** node contains the list of tasks to be approved by the operator currently connected. A lista deve exibir uma linha. Clique duas vezes na linha para responder. A janela a seguir é exibida:
+   Na estrutura de árvore, o nó **[!UICONTROL Administration > Production > Objects created automatically > Approvals pending]** contém a lista de tarefas a serem aprovadas pelo operador conectado atualmente. A lista deve exibir uma linha. Clique duas vezes na linha para responder. A janela a seguir é exibida:
 
 ![](assets/new-workflow-7.png)
 
-Selecione **Sim** e clique em **[!UICONTROL Approve]**. Uma mensagem informará que a resposta foi registrada.
+Selecione **Yes** e depois clique em **[!UICONTROL Approve]**. Uma mensagem informará que a resposta foi registrada.
 
-Volte para a tela de fluxo de trabalho: Após dez segundos, o diagrama é exibido da seguinte maneira:
+Volte para a tela workflow. Após aproximadamente dez segundos, o diagrama é exibido da seguinte maneira:
 
 ![](assets/new-workflow-8.png)
 
-The workflow has executed the **[!UICONTROL Delivery control]** task, which in this case means starting the delivery previously created. O workflow foi concluído sem erros.
+O workflow executou a tarefa **[!UICONTROL Delivery control]**, que nesse caso significa iniciar o delivery criado anteriormente. O workflow foi concluído sem erros.
