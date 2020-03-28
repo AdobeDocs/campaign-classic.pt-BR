@@ -14,7 +14,7 @@ discoiquuid: 798409af-b236-4bb5-ac0f-90f0a19db345
 index: y
 internal: n
 snippet: y
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 579329d9194115065dff2c192deb0376c75e67bd
 
 ---
@@ -22,12 +22,11 @@ source-git-commit: 579329d9194115065dff2c192deb0376c75e67bd
 
 # Restrição de tempo{#time-constraint}
 
-A atividade de **Restrição de tempo**permite adiar a 
-        execução de uma tarefa ou abandoná-la.
+A atividade de **Restrição de tempo** permite adiar a execução de uma tarefa ou abandoná-la.
 
 Insira o rótulo para a atividade e especifique o período durante o qual a tarefa do workflow deve ser pausada.
 
-Quando a **[!UICONTROL Try again later if outside of execution period]** opção é selecionada, ela permite reiniciar a tarefa fora do período de execução. se desejar que a ação do fluxo de trabalho seja abandonada para sempre após sua suspensão, desmarque essa opção.
+Quando a opção **[!UICONTROL Try again later if outside of execution period]** estiver selecionada, ela permitirá reiniciar a tarefa fora do período de execução. se desejar que a ação do workflow seja abandonada para sempre após sua suspensão, desmarque essa opção.
 
 ![](assets/s_user_scheduled_wait.png)
 
