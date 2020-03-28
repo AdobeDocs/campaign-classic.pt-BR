@@ -14,7 +14,7 @@ discoiquuid: 22e289d0-c33c-4daa-a893-b292e523f30b
 index: y
 internal: n
 snippet: y
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 7dbc876fae0bde78e3088ee1ab986cd09e9bcc38
 
 ---
@@ -24,7 +24,7 @@ source-git-commit: 7dbc876fae0bde78e3088ee1ab986cd09e9bcc38
 
 A configuração do delivery pode ser salva em um template de delivery para ser reutilizada. O template pode conter uma configuração completa ou parcial do delivery.
 
-O delivery de template pode ser executado manualmente, conforme descrito neste capítulo, ou de acordo com um evento (iniciado em um horário definido, na chegada de um arquivo etc.). Delivery templates can be configured via the **[!UICONTROL Resources > Templates > Delivery templates]** node in the tree.
+O delivery de template pode ser executado manualmente, conforme descrito neste capítulo, ou de acordo com um evento (iniciado em um horário definido, na chegada de um arquivo etc.). Os templates de deliveries podem ser configurados por meio do nó **[!UICONTROL Resources > Templates > Delivery templates]** na árvore.
 
 ![](assets/s_user_template_list.png)
 
@@ -40,4 +40,4 @@ Há dois tipos de templates:
 
 >[!NOTE]
 >
->Os templates disponíveis dependem dos direitos de acesso, da sua configuração de instância e do contexto. Por exemplo, ao criar um serviço de informações, é possível vincular um template de delivery para mensagens de confirmação: você pode então acessar apenas os modelos cujo target mapping é o mapeamento de subscrição. Para obter mais informações, consulte [Selecionar um mapeamento](../../delivery/using/selecting-a-target-mapping.md) de destino e [Sobre serviços e assinaturas](../../delivery/using/about-services-and-subscriptions.md).
+>Os templates disponíveis dependem dos direitos de acesso, da sua configuração de instância e do contexto. Por exemplo, ao criar um serviço de informações, é possível vincular um template de delivery para mensagens de confirmação: você pode então acessar apenas os modelos cujo target mapping é o mapeamento de subscrição. Para obter mais informações, consulte [Seleção de target mapping](../../delivery/using/selecting-a-target-mapping.md) e [Sobre serviços e assinaturas](../../delivery/using/about-services-and-subscriptions.md).
