@@ -14,7 +14,7 @@ discoiquuid: 3667da3d-4940-4128-8878-f1ee67216f56
 index: y
 internal: n
 snippet: y
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: c10a0a11c6e9952aa47da1f7a15188c79c62508d
 
 ---
@@ -26,28 +26,28 @@ Se o conteúdo de delivery estiver disponível em um arquivo HTML localizado em 
 
 Para fazer isso:
 
-1. If you haven&#39;t already defined a connection between Adobe Campaign and the (S)FTP server hosting the content files, create a new S3, FTP or SFTP external account in **[!UICONTROL Administration]** > **[!UICONTROL Platform]** > **[!UICONTROL External Accounts]**. Especifique nesta conta externa o endereço e as credenciais usadas para estabelecer a conexão com o servidor S3 ou (S)FTP.
+1. Se ainda não tiver definido uma conexão entre o Adobe Campaign e o servidor (S)FTP que hospeda os arquivos de conteúdo, crie uma nova conta externa S3, FTP ou SFTP em **[!UICONTROL Administration]** > **[!UICONTROL Platform]** > **[!UICONTROL External Accounts]**. Especifique nesta conta externa o endereço e as credenciais usadas para estabelecer a conexão com o servidor S3 ou (S)FTP.
 
    Veja um exemplo de uma conta externa S3:
 
    ![](assets/delivery_loadcontent_filetransfertexamples3.png)
 
 1. Crie um novo fluxo de trabalho, por exemplo, em **[!UICONTROL Profiles and Targets]** > **[!UICONTROL Jobs]** > **[!UICONTROL Targeting workflows]**.
-1. Add a **[!UICONTROL File transfer]** activity into your workflow, and configure it by specifying
+1. Adicione uma atividade **[!UICONTROL File transfer]** ao seu workflow e configure-a especificando:
 
    * A conta externa a ser usada para se conectar ao servidor S3 ou (S)FTP.
    * O caminho do arquivo no servidor S3 ou (S)FTP.
    ![](assets/delivery_loadcontent_filetransfertexample.png)
 
-1. Add a **[!UICONTROL Delivery]** activity and connect it to the outbound transition of the **[!UICONTROL File transfer]** activity. Configure como apresentado a seguir:
+1. Adicione uma atividade **[!UICONTROL Delivery]** e conecte-a à transição de saída da atividade **[!UICONTROL File transfer]**. Configure como apresentado a seguir:
 
-   * Entrega: De acordo com suas necessidades, pode ser uma entrega específica que já foi criada no sistema ou uma nova entrega com base em um modelo existente.
-   * Destinatários: Neste exemplo, considera-se que o destino é especificado na própria entrega.
-   * Content: Even if the content is imported in the previous activity, select **[!UICONTROL Specified in the delivery]**. Como o conteúdo é importado diretamente de um arquivo localizado em um servidor remoto, ele não tem identificador quando processado pelo workflow e não pode ser identificado como proveniente do evento de entrada.
-   * Ação a ser executada: Selecione **[!UICONTROL Save]** para salvar a entrega e poder acessá-la de **[!UICONTROL Campaign management]** > **[!UICONTROL Deliveries]** quando o fluxo de trabalho for executado.
+   * Delivery: de acordo com suas necessidades, pode ser um delivery específico que já foi criado no sistema ou um novo delivery com base em um template existente.
+   * Recipients: neste exemplo, é considerado que o target é especificado no próprio delivery.
+   * Content: mesmo que o conteúdo seja importado na atividade anterior, selecione **[!UICONTROL Specified in the delivery]**. Como o conteúdo é importado diretamente de um arquivo localizado em um servidor remoto, ele não tem identificador quando processado pelo workflow e não pode ser identificado como proveniente do evento de entrada.
+   * Ação a executar: selecione **[!UICONTROL Save]** para salvar o delivery e acessá-lo a partir de **[!UICONTROL Campaign management]** > **[!UICONTROL Deliveries]** depois que o workflow é executado.
    ![](assets/delivery_loadcontent_activityexample.png)
 
-1. In the **[!UICONTROL Script]** tab of the **[!UICONTROL Delivery]** activity, add the following command to load the content of the imported file in the delivery:
+1. Na guia **[!UICONTROL Script]** da atividade **[!UICONTROL Delivery]**, adicione o seguinte comando para carregar o conteúdo do arquivo importado no delivery:
 
    ```
    delivery.content.md.source=loadFile(vars.filename)
@@ -55,7 +55,7 @@ Para fazer isso:
 
    ![](assets/delivery_loadcontent_script.png)
 
-1. Salve e execute o workflow. A new delivery with the loaded content is created under **[!UICONTROL Campaign management]** > **[!UICONTROL Deliveries]**.
+1. Salve e execute o workflow. Um novo delivery com o conteúdo carregado é criado em **[!UICONTROL Campaign management]** > **[!UICONTROL Deliveries]**.
 
 >[!NOTE]
 >
