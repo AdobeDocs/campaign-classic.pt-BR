@@ -14,7 +14,7 @@ discoiquuid: 695cf33f-1cc7-4ae8-8ef6-05aa65219411
 index: y
 internal: n
 snippet: y
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 20f835c357d016643ea1f3209ee4dfb6d3239f90
 
 ---
@@ -30,7 +30,7 @@ Há dois ambientes para cada targeting dimension usada ao gerenciar ofertas:
 
    As categorias também podem ser publicadas manualmente no ambiente online.
 
-   O processo de aprovação de ofertas está detalhado na seção [Aprovação e ativação de uma oferta](../../interaction/using/approving-and-activating-an-offer.md) .
+   O processo de aprovação de ofertas está detalhado na seção [Aprovação e ativação de uma oferta](../../interaction/using/approving-and-activating-an-offer.md).
 
 * Um ambiente dinâmico no qual podem ser encontradas ofertas aprovadas do ambiente de design, bem como os vários espaços de oferta, filtros, categorias e regras configurados no ambiente de design. Durante uma chamada para o mecanismo de oferta, o mecanismo sempre usará ofertas do ambiente dinâmico.
 
