@@ -14,7 +14,7 @@ discoiquuid: 328e5b2f-8596-4eda-8ac5-57cb29bfb691
 index: y
 internal: n
 snippet: y
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: c9c9d5f96856ce9e19571bad032d2bf04eaa60bd
 
 ---
@@ -22,13 +22,13 @@ source-git-commit: c9c9d5f96856ce9e19571bad032d2bf04eaa60bd
 
 # Tradução de uma aplicação web{#translating-a-web-application}
 
-Você pode traduzir páginas de aplicativos da Web criadas com o editor de conteúdo digital do Adobe Campaign (DCE).
+É possível traduzir páginas de aplicações web criadas com o editor de conteúdo digital do Adobe Campaign (DCE).
 
-If you select at least one additional language via the **[!UICONTROL Localization]** tab in the **[!UICONTROL Properties]** of a Web application, a new option becomes available when adding an HTML content block in a page edited with DCE.
+Se você selecionar pelo menos um idioma adicional pela guia **[!UICONTROL Localization]** nas **[!UICONTROL Properties]** de uma aplicação web, uma nova opção ficará disponível ao adicionar um bloco de conteúdo HTML em uma página editada com o DCE.
 
 Essa opção permite indicar se o conteúdo do bloco deve ser traduzido ou não.
 
-Strings to be translated are collected the same way as the other strings of the Web application, via the **[!UICONTROL Translations]** tab of the application. Para obter mais informações, consulte [esta página](../../web/using/translating-a-web-form.md).
+As cadeias de caracteres a serem traduzidas são coletadas da mesma forma que as outras cadeias de caracteres da aplicação web, através da guia **[!UICONTROL Translations]** da aplicação. Para obter mais informações, consulte [esta página](../../web/using/translating-a-web-form.md).
 
 Para sinalizar as cadeias de caracteres a ser traduzidas:
 
@@ -37,7 +37,7 @@ Para sinalizar as cadeias de caracteres a ser traduzidas:
    ![](assets/dce_translation_3.png)
 
 1. Selecione um bloco HTML.
-1. In the parameters block on the right, the **[!UICONTROL Localization]** option lets you flag the content of the selected block. Por padrão, somente o título da página será traduzido.
+1. No bloco de parâmetros à direita, a opção **[!UICONTROL Localization]** permite sinalizar o conteúdo do bloco selecionado. Por padrão, somente o título da página será traduzido.
 
    ![](assets/dce_translation_1.png)
 
@@ -56,8 +56,8 @@ Para sinalizar as cadeias de caracteres a ser traduzidas:
 
       ![](assets/dce_translation_2.png)
 
-1. Once you have finished flagging the strings, go back to the Web application and select the **[!UICONTROL Translations]** tab.
-1. Select **[!UICONTROL Collect the strings to translate]**. As cadeias de caracteres sinalizadas no DCE são adicionadas às cadeias de caracteres da aplicação web.
+1. Depois de concluir a sinalização das cadeias de caracteres, volte para a aplicação web e selecione a guia **[!UICONTROL Translations]**.
+1. Selecione **[!UICONTROL Collect the strings to translate]**. As cadeias de caracteres sinalizadas no DCE são adicionadas às cadeias de caracteres da aplicação web.
 
    >[!NOTE]
    >
@@ -65,5 +65,5 @@ Para sinalizar as cadeias de caracteres a ser traduzidas:
 
 1. Traduza e aprove as cadeias de caracteres.
 
-   You can then preview the translations by selecting the desired language from the **[!UICONTROL Preview]** tab in the Web application.
+   Você pode pré-visualizar as traduções selecionando o idioma desejado na guia **[!UICONTROL Preview]** na aplicação web.
 
