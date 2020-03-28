@@ -14,7 +14,7 @@ discoiquuid: 6d19a5a6-98e5-4b1a-a56a-67cfead152bd
 index: y
 internal: n
 snippet: y
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: ee483a8ed8d04fec561f8d4e96b630890209793c
 
 ---
@@ -26,7 +26,7 @@ source-git-commit: ee483a8ed8d04fec561f8d4e96b630890209793c
 >
 >Para prosseguir, verifique se o IMS está habilitado no seu sistema. Consulte a seção sobre [IMS](../../integrations/using/about-adobe-id.md).
 
-Uma vez habilitado o IMS, você pode solicitar o provisionamento do Serviço principal de Pessoas/Gerenciador de Públicos com o Campaign. Para fazer isso, envie um email para [Digital-Request@adobe.com](mailto:Digital-Request@adobe.com) com as seguintes informações:
+Uma vez habilitado o IMS, você pode solicitar o provisionamento do Serviço principal de Pessoas/Audience Manager com o Campaign. Para fazer isso, envie um email para [Digital-Request@adobe.com](mailto:Digital-Request@adobe.com) com as seguintes informações:
 
 <table> 
  <tbody> 
@@ -40,8 +40,7 @@ Uma vez habilitado o IMS, você pode solicitar o provisionamento do Serviço pri
   </tr> 
   <tr> 
    <td> <strong>ID da Org. de IMS</strong><br /> </td> 
-   <td> Seu ID da Org de IMS. <br> Você pode encontrar a ID de organização do IMS na Experience Cloud, no menu Administração. Também é fornecido ao se conectar pela primeira 
-      vez à Adobe Marketing Cloud. </td> 
+   <td> Seu ID da Org de IMS. <br> Você pode encontrar seu ID da Org de IMS na Experience Cloud, no menu Administration. Também é fornecido ao se conectar pela primeira vez à Adobe Experience Cloud. </td> 
   </tr> 
   <tr> 
    <td> <strong>Ambiente:</strong><br /> </td> 
@@ -49,7 +48,7 @@ Uma vez habilitado o IMS, você pode solicitar o provisionamento do Serviço pri
   </tr> 
   <tr> 
    <td> <strong>Serviço de Pessoas ou AAM</strong><br /> </td> 
-   <td> Exemplo: Adobe Audience Manager. Certifique-se de mencionar à equipe de provisionamento se você possui ou não uma licença do Audience Manager.</td> 
+   <td> Exemplo: Adobe Audience Manager. Informe à equipe de provisionamento se você possui ou não uma licença do Audience Manager.</td> 
   </tr> 
   <tr> 
    <td> <strong>ID declarada ou ID do visitante</strong><br /> </td> 
