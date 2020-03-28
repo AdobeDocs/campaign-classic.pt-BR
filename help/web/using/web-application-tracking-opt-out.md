@@ -14,7 +14,7 @@ discoiquuid: 8f413002-bd32-426f-88b9-44cefae68593
 index: y
 internal: n
 snippet: y
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: c9c9d5f96856ce9e19571bad032d2bf04eaa60bd
 
 ---
@@ -36,7 +36,7 @@ O Adobe Campaign é fornecido com um banner de exemplo que você deve adaptar à
 >
 >Para criar seu próprio banner, você deve personalizar o banner pronto para uso.
 
-Para ativar o banner, você precisa configurar as propriedades da aplicação web. Consulte a seção [Criação de um aplicativo](../../web/using/designing-a-web-application.md) da Web.
+Para ativar o banner, você precisa configurar as propriedades da aplicação web. Consulte a seção [Criação de um aplicativo web](../../web/using/designing-a-web-application.md).
 
 Se o rastreamento web estiver ativado, você pode ter:
 
@@ -81,14 +81,14 @@ O nome do cookie é **acoptout**. Os valores comuns são:
 
 As APIs disponíveis no lado do cliente para personalizar o banner são:
 
-* **NL.ClientWebTracking.allow()**: Define o valor do cookie de opção de não participação para permitir o rastreamento da Web. O rastreamento web é permitido por padrão.
-* **NL.ClientWebTracking.forbid()**: Define o valor do cookie de não participação para proibir o rastreamento da Web. O rastreamento web precisa de uma entrada de usuário para ser proibido.
-* **NL.ClientWebTracking.closeOptOutBanner(bannerDomElt)**: Fecha o banner do cookie de não participação depois que o usuário clicar no botão Aceitar ou Recusar. (durante a fase de propagação de eventos de clique)
+* **NL.ClientWebTracking.allow()**: define o valor do cookie de opt out para permitir o rastreamento web. O rastreamento web é permitido por padrão.
+* **NL.ClientWebTracking.forbid()**: define o valor do cookie de opt out para proibir o rastreamento web. O rastreamento web precisa de uma entrada de usuário para ser proibido.
+* **NL.ClientWebTracking.closeOptOutBanner(bannerDomElt)**: fecha o banner de cookie de opt out após o usuário clicar no botão Aceitar ou Recusar. (durante a fase de propagação de eventos de clique)
 
    bannerDomElt {DOMElement} o elemento DOM raiz do banner de cookie que precisa ser removido
 
-* **NL.ClientWebTracking.hasUserPrefs()**: Retorna true se o usuário tiver escolhido suas preferências para rastreamento da Web.
-* **NL.ClientWebTracking.getUserPrefs()**: Retorna o valor do cookie de não participação que define as preferências do usuário.
+* **NL.ClientWebTracking.hasUserPrefs()**: retorna verdadeiro se o usuário tiver escolhido suas preferências para o rastreamento web.
+* **NL.ClientWebTracking.getUserPrefs()**: retorna o valor de cookie de opt out que define as preferências do usuário.
 
 Se você precisar gravar uma JSSP, as APIs do lado do servidor estarão disponíveis:
 
