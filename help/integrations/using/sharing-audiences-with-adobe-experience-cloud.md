@@ -14,7 +14,7 @@ discoiquuid: 8f295058-5a78-4512-9bdf-d5f022457e10
 index: y
 internal: n
 snippet: y
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 418a36cd51106dae2b4201c8b5abda9b05285a18
 
 ---
@@ -29,9 +29,7 @@ source-git-commit: 418a36cd51106dae2b4201c8b5abda9b05285a18
 O Adobe Campaign permite trocar e compartilhar públicos/segmentos com as soluções Adobe Experience Cloud e serviços principais. Para fazer isso, você precisa integrar o **Adobe Campaign** com o **serviço principal de Pessoas** (também conhecido como **serviço central de Perfis e Públicos**) ou o Adobe Audience Manager. Depois será possível:
 
 * Importar públicos/segmentos compartilhados de diferentes soluções da Adobe Experience Cloud para o Adobe Campaign. Os públicos podem ser importados por meio de listas no Adobe Campaign.
-* Exportar listas no formato de audiences compartilhados 
-          da Adobe Experience Cloud. Esses audiences podem ser usados nas 
-								diferentes soluções da Adobe Experience Cloud que você usa. Audiences can be exported after targeting in a workflow, using a dedicated **[!UICONTROL Update shared audience]** activity.
+* Exportar listas no formato de audiences compartilhados da Adobe Experience Cloud. Esses audiences podem ser usados nas diferentes soluções da Adobe Experience Cloud que você usa. Os públicos podem ser exportados após a definição de target em um workflow, usando uma atividade **[!UICONTROL Update shared audience]** dedicada.
 
 >[!CAUTION]
 >
