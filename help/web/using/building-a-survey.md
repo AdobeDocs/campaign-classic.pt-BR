@@ -14,7 +14,7 @@ discoiquuid: 6850851d-1dbe-44f0-bbff-18dbac2cad9a
 index: y
 internal: n
 snippet: y
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 1c86322fa95aee024f6c691b61a10c21a9a22eb7
 
 ---
@@ -26,13 +26,13 @@ source-git-commit: 1c86322fa95aee024f6c691b61a10c21a9a22eb7
 
 Este capítulo detalha o design de um formulário do tipo de **Pesquisa** usando o Adobe Campaign, bem como as opções e configurações disponíveis. O Adobe Campaign permite disponibilizar essa pesquisa aos usuários e coletar e arquivar respostas no banco de dados.
 
-Web forms are accessed via the **[!UICONTROL Resources > Online > Web applications]** node of the tree. To create a survey, click the **[!UICONTROL New]** button above the list of applications, or right-click the list and choose **[!UICONTROL New]**.
+Os formulários web são acessados por meio do nó **[!UICONTROL Resources > Online > Web applications]** da árvore. Para criar uma pesquisa, clique no botão **[!UICONTROL New]** acima da lista de aplicativos ou clique com o botão direito do mouse na lista e escolha **[!UICONTROL New]**.
 
-Select the survey template (**[!UICONTROL newSurvey]** by default).
+Selecione o modelo de pesquisa (**[!UICONTROL newSurvey]** por padrão).
 
 ![](assets/s_ncs_admin_survey_select_template.png)
 
-As páginas do formulário são criadas usando um editor especial que permite definir e configurar campos de entrada (texto), campos de seleção (listas, caixas de seleção, etc.) e elementos estáticos (imagens, conteúdo HTML, etc.). They can be collected in &quot;containers&quot; and laid out according to requirements (see [Adding questions](#adding-questions)).
+As páginas do formulário são criadas usando um editor especial que permite definir e configurar campos de entrada (texto), campos de seleção (listas, caixas de seleção, etc.) e elementos estáticos (imagens, conteúdo HTML, etc.). Elas podem ser coletadas em &quot;contêineres&quot; e dispostas de acordo com os requisitos (consulte [Inclusão de perguntas](#adding-questions)).
 
 >[!NOTE]
 >
@@ -40,7 +40,7 @@ As páginas do formulário são criadas usando um editor especial que permite de
 
 ## Adição de campos {#adding-fields}
 
-Os campos em um formulário permitem aos usuários inserir informações e selecionar opções. For each page in the form, they are created via the first button in the toolbar using the **[!UICONTROL Add using the wizard]** menu.
+Os campos em um formulário permitem aos usuários inserir informações e selecionar opções. Para cada página no formulário, eles são criados por meio do primeiro botão na barra de ferramentas através do menu **[!UICONTROL Add using the wizard]**.
 
 ![](assets/s_ncs_admin_survey_add_field_menu.png)
 
@@ -52,16 +52,16 @@ Os campos em um formulário permitem aos usuários inserir informações e selec
 
 Ao adicionar um campo a uma pesquisa, você precisa selecionar seu tipo. As seguintes opções estão disponíveis:
 
-1. **[!UICONTROL Answer a question]**: essa opção permite declarar um novo campo (conhecido como &quot;campo arquivado&quot;) para armazenar respostas. Nesse caso, todos os valores coletados são salvos, até mesmo quando um participante preenche um formulário mais de uma vez. Este modo de armazenamento está disponível somente em **Pesquisas**. Consulte [Armazenamento de respostas](../../web/using/managing-answers.md#storing-collected-answers)coletadas.
-1. **[!UICONTROL Edit a recipient]**: essa opção permite selecionar um campo no banco de dados. Nesse caso, as respostas do usuário serão armazenadas nesse campo. Para cada participante, somente o último valor salvo é mantido e adicionado aos dados do perfil.
-1. **[!UICONTROL Add a variable]**: essa opção permite criar uma configuração para que as informações não sejam armazenadas no banco de dados. As variáveis locais podem ser declaradas como upstream. Você também pode adicioná-las diretamente ao criar o campo.
-1. **[!UICONTROL Import an existing question]**: essa opção permite importar perguntas existentes criadas em outras pesquisas.
+1. **[!UICONTROL Responda uma pergunta]**: essa opção permite declarar um novo campo (conhecido como &quot;campo arquivado&quot;) para armazenar as respostas. Nesse caso, todos os valores coletados são salvos, até mesmo quando um participante preenche um formulário mais de uma vez. Este modo de armazenamento está disponível somente em **Pesquisas**. Consulte [Armazenamento de respostas coletadas](../../web/using/managing-answers.md#storing-collected-answers).
+1. **[!UICONTROL Editar um destinatário]**: essa opção permite selecionar um campo no banco de dados. Nesse caso, as respostas do usuário serão armazenadas nesse campo. Para cada participante, somente o último valor salvo é mantido e adicionado aos dados do perfil.
+1. **[!UICONTROL Adicionar uma variável]**: essa opção permite criar uma configuração para que as informações não sejam armazenadas no banco de dados. As variáveis locais podem ser declaradas como upstream. Você também pode adicioná-las diretamente ao criar o campo.
+1. **[!UICONTROL Importar uma pergunta existente]**: essa opção permite importar as perguntas existentes que foram criadas em outras pesquisas.
 
    >[!NOTE]
    >
-   >Os modos de armazenamento e as importações de campo são detalhados em [Armazenamento de respostas](../../web/using/managing-answers.md#storing-collected-answers)coletadas.
+   >Os modos de armazenamento e as importações de campo são detalhados em [Armazenamento de respostas coletadas](../../web/using/managing-answers.md#storing-collected-answers).
 
-A natureza do campo a ser adicionado (lista suspensa, campo de texto, caixas de seleção e etc.) se adapta ao modo de armazenamento selecionado. You can change it using the **[!UICONTROL Type]** field of the **[!UICONTROL General]** tab, but make sure to remain consistent with the data type.
+A natureza do campo a ser adicionado (lista suspensa, campo de texto, caixas de seleção e etc.) se adapta ao modo de armazenamento selecionado. É possível alterá-lo por meio do campo **[!UICONTROL Type]** da guia **[!UICONTROL General]**, mas mantenha a consistência com o tipo de dados.
 
 ![](assets/s_ncs_admin_survey_change_type.png)
 
@@ -73,7 +73,7 @@ Pesquisas online estão usando recursos de aplicações Web. Os recursos especí
 
 ### Múltipla escolha {#multiple-choice}
 
-For **[!UICONTROL Multiple choice]** type controls, you can define a minimum and maximum number of selections. Por exemplo, essa opção permite forçar a seleção de pelo menos **2** valores e no máximo **4** valores das opções disponíveis:
+Para controles do tipo **[!UICONTROL Multiple choice]**, é possível definir um número mínimo e máximo de seleções. Por exemplo, essa opção permite forçar a seleção de pelo menos **2** valores e no máximo **4** valores das opções disponíveis:
 
 ![](assets/s_ncs_admin_survey_multichoice_ex1.png)
 
@@ -89,14 +89,14 @@ A configuração correspondente é a seguinte:
 
 ![](assets/s_ncs_admin_survey_multichoice_ex3.png)
 
-In addition, the storage location for this input field must be a **[!UICONTROL Multiple values]** type **archived field**:
+Além disso, o local de armazenamento para esse campo de entrada deve ser de **[!UICONTROL Multiple values]** do tipo **archived field**:
 
 ![](assets/s_ncs_admin_survey_multiple_values_field.png)
 
 >[!CAUTION]
 >
 >* Essa funcionalidade só está disponível para formulários do tipo **Pesquisa**.
->* Essa opção não é compatível com a exibição de pergunta aleatória. For more on this, refer to [Adding questions](#adding-questions).
+>* Essa opção não é compatível com a exibição de pergunta aleatória. Para obter mais informações, consulte [Adicionar questões](#adding-questions).
 
 
 ### Adição de perguntas {#adding-questions}
@@ -111,7 +111,7 @@ Use um container **Pergunta** para adicionar uma pergunta à página e inserir a
 
 ![](assets/s_ncs_admin_question_label.png)
 
-O rótulo da pergunta é inserido no campo de rótulo. Nesse caso, o estilo da folha de estilos do formulário será aplicado. Selecione a **[!UICONTROL Enter the title in HTML format]** opção para personalizá-la. Isso dará acesso ao editor de HTML.
+O rótulo da pergunta é inserido no campo de rótulo. Nesse caso, o estilo da folha de estilos do formulário será aplicado. Selecione a opção **[!UICONTROL Enter the title in HTML format]** para personalizar. Isso dará acesso ao editor de HTML.
 
 >[!NOTE]
 >
@@ -141,5 +141,5 @@ Quando a página é atualizada, as perguntas exibidas não são as mesmas.
 
 >[!CAUTION]
 >
->When you display a question randomly (**[!UICONTROL Display randomly]** option checked on the page), be careful not to use multiple choice questions for which one or more selections are mandatory.
+>Ao exibir uma pergunta aleatória (opção **[!UICONTROL Display randomly]** marcada na página), não use perguntas de múltipla escolha para as quais uma ou mais seleções são obrigatórias.
 
