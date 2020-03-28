@@ -14,7 +14,7 @@ discoiquuid: 42db3be8-ee02-4158-adcd-846420a32460
 index: y
 internal: n
 snippet: y
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 20f835c357d016643ea1f3209ee4dfb6d3239f90
 
 ---
@@ -41,7 +41,7 @@ Com o módulo Marketing Analytics, o Campaign permite:
    * agregar dados e armazená-los em uma tabela de trabalho para pré-calcular indicadores com base nas necessidades do usuário,
    * reduzir o volume de dados envolvidos nos vários cálculos usados para relatórios e queries, otimizando significativamente os tempos de cálculo do indicador,
    * simplificar o acesso aos dados, permitindo aos usuários manipularem dados (sejam pré-agregados ou não) dependendo de várias dimensões.
-   For more on this, refer to [Creating indicators](../../reporting/using/creating-indicators.md).
+   Para saber mais, consulte [Criação de indicadores](../../reporting/using/creating-indicators.md).
 
 1. Criar tabelas dinâmicas tendo em conta:
 
@@ -49,7 +49,7 @@ Com o módulo Marketing Analytics, o Campaign permite:
    * selecionar os dados a serem exibidos, bem como seu modo de exibição,
    * personalizar as medidas e os indicadores usados,
    * oferecer ferramentas de análise interativa aos usuários sem conhecimento técnico.
-   Para obter mais informações, consulte [Uso de cubos para explorar dados](../../reporting/using/using-cubes-to-explore-data.md).
+   Para saber mais, consulte [Uso de cubos para explorar dados](../../reporting/using/using-cubes-to-explore-data.md).
 
 1. Criar um query usando dados calculados e agregados em um cubo.
 1. Identificar populações e referenciá-las em listas.
@@ -86,31 +86,31 @@ Ao trabalhar com cubos, os seguintes conceitos devem ser conhecidos:
 
 ## Workflow do cubo {#cube-workspace}
 
-Os cubos são armazenados no **[!UICONTROL Administration > Configuration > Cubes]** nó.
+Os cubos são armazenados no nó **[!UICONTROL Administration > Configuration > Cubes]**.
 
 ![](assets/s_advuser_cube_node.png)
 
 Os principais contextos de uso para cubos são:
 
-* Data exports can be carried out directly in a report, designed in the **[!UICONTROL Reports]** universe of the Adobe Campaign platform.
+* É possível realizar exportações de dados diretamente em um relatório, projetado no universo **[!UICONTROL Reports]** da plataforma Adobe Campaign.
 
    Para fazer isso, crie um novo relatório e selecione o cubo que deseja usar.
 
    ![](assets/cube_create_new.png)
 
-   Os cubos aparecem como templates baseados em quais relatórios são criados. Once you have chosen a template, click **[!UICONTROL Create]** to configure and view the matching report.
+   Os cubos aparecem como templates baseados em quais relatórios são criados. Depois de escolher um template, clique em **[!UICONTROL Create]** para configurar e exibir o relatório correspondente.
 
    Você pode adaptar medidas, alterar o modo de exibição ou configurar a tabela e exibir o relatório usando o botão principal.
 
    ![](assets/cube_display_new.png)
 
-* You can also reference a cube in the **[!UICONTROL Query]** box of a report to use its indicators, as shown below:
+* Você também pode fazer referência a um cubo na caixa **[!UICONTROL Query]** de um relatório para usar seus indicadores, conforme mostrado abaixo:
 
    ![](assets/s_advuser_query_using_a_cube.png)
 
-* Você também pode inserir uma tabela dinâmica com base em um cubo em qualquer página de um relatório. To do this, reference the cube to be used in the **[!UICONTROL Data]** tab of the pivot table on the concerned page.
+* Você também pode inserir uma tabela dinâmica com base em um cubo em qualquer página de um relatório. Para fazer isso, faça referência ao cubo a ser usado na guia **[!UICONTROL Data]** da tabela dinâmica na página relacionada.
 
    ![](assets/s_advuser_cube_in_report.png)
 
-   Para obter mais informações, consulte [Explorar os dados em um relatório](../../reporting/using/using-cubes-to-explore-data.md#exploring-the-data-in-a-report).
+   Para saber mais, consulte [Exploração de dados em um relatório](../../reporting/using/using-cubes-to-explore-data.md#exploring-the-data-in-a-report).
 
