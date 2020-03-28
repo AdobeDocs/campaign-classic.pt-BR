@@ -14,7 +14,7 @@ discoiquuid: 92c32b2d-d8bf-41ab-9349-ef4a15f10521
 index: y
 internal: n
 snippet: y
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 20f835c357d016643ea1f3209ee4dfb6d3239f90
 
 ---
@@ -22,7 +22,7 @@ source-git-commit: 20f835c357d016643ea1f3209ee4dfb6d3239f90
 
 # Uso de uma tabela externa de recipient{#using-an-external-recipient-table}
 
-Se a tabela do delivery for uma tabela externa, você precisará fazer configurações adicionais. O **[!UICONTROL nms:seedmember]** esquema deve ser estendido. Uma guia é adicionada aos seed addresses para definir os campos adequados, como mostrado abaixo:
+Se a tabela do delivery for uma tabela externa, você precisará fazer configurações adicionais. O schema **[!UICONTROL nms:seedmember]** deve ser estendido. Uma guia é adicionada aos seed addresses para definir os campos adequados, como mostrado abaixo:
 
 ![](assets/s_ncs_user_seedlist_new_tab.png)
 
