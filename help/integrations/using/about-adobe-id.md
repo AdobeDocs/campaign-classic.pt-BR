@@ -14,7 +14,7 @@ discoiquuid: c988362b-432e-4f9f-8d36-00b3d0015756
 index: y
 internal: n
 snippet: y
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 0745b9c9d72538b8573ad18ff4054ecf788905f2
 
 ---
@@ -27,9 +27,9 @@ Usuários do Campaign pode se conectar ao Adobe Campaign usando sua Adobe ID. Es
 * A mesma ID pode ser usada para todas as soluções Experience Cloud.
 * Ao usar o Adobe Campaign com diferentes integrações, a conexão é memorizada.
 * Política de gerenciamento da segurança de senhas.
-* Uso de contas de ID federadas (provedor de ID externo).
+* Uso de contas de Federated ID (provedor de ID externo).
 
-Para obter mais informações sobre os diferentes tipos de Adobe IDs, consulte: [https://helpx.adobe.com/en/enterprise/help/identity.html](https://helpx.adobe.com/en/enterprise/help/identity.html)
+Para obter mais informações sobre os diferentes tipos de Adobe IDs, consulte: [https://helpx.adobe.com/en/enterprise/help/identity.html](https://helpx.adobe.com/br/enterprise/help/identity.html)
 
 >[!CAUTION]
 >
