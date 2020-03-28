@@ -14,7 +14,7 @@ discoiquuid: d10624ea-d961-4162-879b-1754f897d763
 index: y
 internal: n
 snippet: y
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 0745b9c9d72538b8573ad18ff4054ecf788905f2
 
 ---
@@ -31,9 +31,9 @@ Os serviços de ativos incluem:
 
 Ao editar um delivery de email ou uma landing page no Adobe Campaign, você pode colocar os ativos das bibliotecas da Adobe Experience Cloud. Dependendo das soluções que você usa, esses ativos podem ser armazenados no Serviço principal de ativos ou no Adobe Experience Manager Assets.
 
-As diferentes bibliotecas disponíveis são detalhadas [neste documento](https://marketing.adobe.com/resources/help/en_US/mcloud/experience-cloud-assets.html).
+As diferentes bibliotecas disponíveis são detalhadas [neste documento](https://marketing.adobe.com/resources/help/pt_BR/mcloud/experience-cloud-assets.html).
 
-Consult the [Configuring access to Assets](../../integrations/using/configuring-access-to-assets.md) section to find out more about the specifics linked to each library.
+Consulte a seção [ Configuração do acesso ao Assets](../../integrations/using/configuring-access-to-assets.md) para saber mais sobre as especificidades vinculadas a cada biblioteca.
 
 >[!NOTE]
 >
