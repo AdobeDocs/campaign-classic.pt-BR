@@ -14,7 +14,7 @@ discoiquuid: d0dd9c74-aad5-452e-a11d-c231dacd2aec
 index: y
 internal: n
 snippet: y
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: c10a0a11c6e9952aa47da1f7a15188c79c62508d
 
 ---
@@ -28,9 +28,9 @@ Uma intersecção permite extrair somente o público que é comum a todos os res
 
 ![](assets/s_user_segmentation_inter.png)
 
-Para obter mais informações sobre como configurar e usar a atividade de interseção, consulte [Extraindo dados conjuntos (Interseção)](../../workflow/using/targeting-data.md#extracting-joint-data--intersection-).
+Para obter mais informações sobre como configurar e usar a atividade de intersecção, consulte [Extraindo dados conjuntos (Intersecção)](../../workflow/using/targeting-data.md#extracting-joint-data--intersection-).
 
-Check the **[!UICONTROL Generate complement]** option if you wish to process the remaining population. O complemento conterá a união dos resultados de todas as atividades de entrada menos a intersecção. Uma transição de saída adicional será adicionada à atividade, da seguinte maneira:
+Marque a opção **[!UICONTROL Generate complement]** se desejar processar o público restante. O complemento conterá a união dos resultados de todas as atividades de entrada menos a intersecção. Uma transição de saída adicional será adicionada à atividade, da seguinte maneira:
 
 ![](assets/s_user_segmentation_inter_compl.png)
 
@@ -38,13 +38,13 @@ Check the **[!UICONTROL Generate complement]** option if you wish to process the
 
 No exemplo a seguir, o objetivo da intersecção é calcular os recipients comuns aos três queries simples para criar uma lista.
 
-1. After three simple queries, insert an **[!UICONTROL Intersection]** -type activity.
+1. Após três queries simples, insira uma atividade do tipo **[!UICONTROL Intersection]**.
 
    Neste exemplo, os queries direcionam os recipients homens, que moram em Paris e com idade entre 18 e 30 anos, respectivamente.
 
-1. Configure a intersecção. To do this, select the **[!UICONTROL Keys only]** reconciliation method since the populations resulting from the queries contain consistent data.
+1. Configure a intersecção. Para fazer isso, selecione o método de reconciliação **[!UICONTROL Keys only]** desde que as populações resultantes dos queries contenham dados consistentes.
 1. Se você tiver fornecido dados adicionais para os queries, poderá optar por manter apenas aqueles compartilhados por recipients marcando a caixa relevante.
-1. If you wish to use the rest of the data (in regard to the queries but not their intersection), check the **[!UICONTROL Generate complement]** box.
+1. Se quiser usar o restante dos dados (em relação aos queries, mas não sua intersecção), marque a caixa **[!UICONTROL Generate complement]**.
 1. Adicione uma atividade de atualização da lista após o resultado da intersecção. Você também pode adicionar uma atualização da lista ao complemento que deseja usar.
 1. Execute o workflow Aqui, dois recipients se aplicam a todos os três queries fornecidos ao mesmo tempo. O complemento é composto de cinco recipients que se aplicam apenas a um ou dois queries.
 
@@ -65,4 +65,4 @@ Cada evento de entrada deve especificar um target definido por esses parâmetros
 * schema
 * recCount
 
-Esse conjunto de três valores identifica o target resultante da intersecção. **[!UICONTROL tableName]** é o nome da tabela que registra os identificadores de metas, **[!UICONTROL schema]** é o esquema da população (geralmente **[!UICONTROL nms:recipient]**) e **[!UICONTROL recCount]** é o número de elementos na tabela.
+Esse conjunto de três valores identifica o target resultante da intersecção. **[!UICONTROL tableName]** é o nome da tabela que registra os identificadores de target, **[!UICONTROL schema]** é o schema do público (normalmente **[!UICONTROL nms:recipient]**) e **[!UICONTROL recCount]** é o número de elementos na tabela.
