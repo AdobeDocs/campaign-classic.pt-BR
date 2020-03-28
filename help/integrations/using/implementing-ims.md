@@ -14,7 +14,7 @@ discoiquuid: 3999577b-0460-4898-a4ec-a7b0e5002065
 index: y
 internal: n
 snippet: y
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 0745b9c9d72538b8573ad18ff4054ecf788905f2
 
 ---
@@ -24,7 +24,7 @@ source-git-commit: 0745b9c9d72538b8573ad18ff4054ecf788905f2
 
 ## Habilitação da conexão IMS {#enabling-the-ims-connection}
 
-1. To enable connecting via the IMS, check **[!UICONTROL Connect with an Adobe ID]** in the console&#39;s connections window.
+1. Para habilitar a conexão via IMS, marque **[!UICONTROL Connect with an Adobe ID]** na janela de conexões do console.
 
    ![](assets/ims_1.png)
 
@@ -34,7 +34,7 @@ source-git-commit: 0745b9c9d72538b8573ad18ff4054ecf788905f2
 
 ## Desabilitação da conexão IMS {#disabling-the-ims-connection}
 
-Para desativar a conexão por meio da Adobe ID, desconecte-a, clique **[!UICONTROL File > Connections]** e desmarque **[!UICONTROL Connect with an Adobe ID]**.
+Para desabilitar a conexão via Adobe ID, desconecte, clique em **[!UICONTROL File > Connections]** e desmarque **[!UICONTROL Connect with an Adobe ID]**.
 
 ![](assets/ims_4.png)
 
