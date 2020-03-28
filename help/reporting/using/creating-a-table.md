@@ -14,7 +14,7 @@ discoiquuid: 74084618-2b35-42c5-8a86-87ce137abb71
 index: y
 internal: n
 snippet: y
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 209ac4d81d2d27c264ee6b288bcb7fcb1900ffc5
 
 ---
@@ -28,11 +28,11 @@ source-git-commit: 209ac4d81d2d27c264ee6b288bcb7fcb1900ffc5
 
 ## Criação de uma lista com grupo {#creating-a-list-with-group}
 
-A **[!UICONTROL List with group]** type table lets you group data in the table and produce statistics on it. Por exemplo, é possível criar totais e subtotais para os dados. Cada grupo tem sua própria linha de cabeçalho, detalhe e rodapé.
+Uma tabela do tipo **[!UICONTROL List with group]** permite agrupar dados na tabela e produzir estatísticas. Por exemplo, é possível criar totais e subtotais para os dados. Cada grupo tem sua própria linha de cabeçalho, detalhe e rodapé.
 
 >[!CAUTION]
 >
->The **[!UICONTROL Page]** activity containing the table must be preceded by a **[!UICONTROL Query]** or **[!UICONTROL Script]** activity to collect the data to be analyzed in the report. Para obter mais informações sobre essas atividades, consulte [Coleta de dados para analisar](../../reporting/using/collecting-data-to-analyze.md) e analisar a atividade [de](../../reporting/using/advanced-functionalities.md#script-activity)Script.
+>A atividade **[!UICONTROL Page]** contendo a tabela deve ser precedida por uma atividade **[!UICONTROL Query]** ou **[!UICONTROL Script]** para coletar os dados a serem analisados no relatório. Para obter mais informações sobre essas atividades, consulte [Coleta de dados para analisar](../../reporting/using/collecting-data-to-analyze.md) e [atividade de script](../../reporting/using/advanced-functionalities.md#script-activity).
 
 ### Princípio operacional {#operating-principle}
 
@@ -40,30 +40,30 @@ Talvez seja necessário analisar várias categorias de dados de uma vez. Uma lis
 
 No exemplo a seguir, o grupo mostra todas as campanhas no banco de dados, os deliveries e o número de mensagens enviadas por delivery e por campanha.
 
-It lets you list the campaigns (**[!UICONTROL Label (Campaign)]**, the list of deliveries (**[!UICONTROL Label]** ) linked to the campaign, and lets you count the number of messages sent per delivery (**[!UICONTROL Processed)]**, before adding them up for each campaign (**[!UICONTROL Sum(@processed)]** ).
+Isso permite listar as campanhas (**[!UICONTROL Label (Campaign)]**, a lista de deliveries (**[!UICONTROL Label]**) vinculada à campanha e permite contar o número de mensagens enviadas por delivery (**[!UICONTROL Processed)]**, antes de adicioná-las a cada campanha (**[!UICONTROL Sum(@processed)]** ).
 
 ![](assets/s_advuser_ergo_listgroup_005.png)
 
 ### Etapas de implementação {#implementation-steps}
 
-Um exemplo completo de implementação é fornecido aqui: Caso de [uso: Crie um relatório com uma lista](#use-case--create-a-report-with-a-group-list)de grupos.
+Um exemplo completo de implementação é fornecido aqui: [Caso de uso: crie um relatório com uma lista de grupos](#use-case--create-a-report-with-a-group-list).
 
 Observe as seguintes etapas para criar uma tabela do tipo &quot;Lista com grupo&quot;:
 
-1. Go to the report chart and place a **[!UICONTROL Query]** activity. Consulte [Coleta de dados para analisar](../../reporting/using/collecting-data-to-analyze.md).
+1. Ir para o gráfico de relatório e inserir uma atividade **[!UICONTROL Query]**. Consulte [Coleta de dados para analisar](../../reporting/using/collecting-data-to-analyze.md).
 1. Preencha a tabela de origem e selecione os campos da tabela que as estatísticas abordarão.
-1. Place a **[!UICONTROL Page]** activity in the chart. Para obter mais informações, consulte [Elementos estáticos](../../reporting/using/creating-a-new-report.md#static-elements).
-1. Insira uma tabela de **[!UICONTROL List with group]** tipos na página.
+1. Coloque uma atividade **[!UICONTROL Page]** no gráfico. Para obter mais informações, consulte [Elementos estáticos](../../reporting/using/creating-a-new-report.md#static-elements).
+1. Insira uma tabela do tipo **[!UICONTROL List with group]** na página.
 1. Especifique o caminho de dados ou a tabela selecionada como uma fonte de dados na query.
 
    Essa etapa é obrigatória se desejar recuperar os campos na tabela de origem posteriormente e inseri-los nas células da tabela.
 
 1. Criação da tabela e seu conteúdo
-1. Display the finalized report in the **[!UICONTROL Preview]** tab. É possível então publicar o relatório e exportá-lo em um formato diferente se necessário. Para obter mais informações, consulte [Exportação de um relatório](../../reporting/using/actions-on-reports.md#exporting-a-report).
+1. Exiba o relatório finalizado na guia **[!UICONTROL Preview]**. É possível então publicar o relatório e exportá-lo em um formato diferente se necessário. Para obter mais informações, consulte [Exportação de um relatório](../../reporting/using/actions-on-reports.md#exporting-a-report).
 
 ### Adição de linhas e colunas {#adding-lines-and-columns}
 
-By default, a **[!UICONTROL List with group]** type table includes a header, a detail line, and a footer line.
+Por padrão, uma tabela do tipo **[!UICONTROL List with group]** inclui uma linha de cabeçalho, detalhe e rodapé.
 
 O próprio grupo inclui linhas de cabeçalho, detalhe e rodapé.
 
@@ -89,11 +89,11 @@ O grupo pode ser colocado em qualquer linha da tabela e inclui sua própria linh
 
 ![](assets/s_advuser_ergo_listgroup_006.png)
 
-A natureza da linha que adicionar depende do local do cursor. For example, to add a header line, place your cursors on a header, then click **[!UICONTROL Add > A line above/below]**.
+A natureza da linha que adicionar depende do local do cursor. Por exemplo, para adicionar uma linha de cabeçalho, coloque o cursor em um cabeçalho e clique em **[!UICONTROL Add > A line above/below]**.
 
 ![](assets/s_advuser_ergo_listgroup_006a.png)
 
-The width of the columns can be modified via the **[!UICONTROL Column format]** item.
+A largura das colunas pode ser modificada por meio do item **[!UICONTROL Column format]**.
 
 **Grupo**: para adicionar um grupo, vá para uma linha e selecione o item correspondente no menu suspenso.
 
@@ -103,7 +103,7 @@ The width of the columns can be modified via the **[!UICONTROL Column format]** 
 
 Para editar uma célula da tabela e definir seu conteúdo e formato, vá para a célula e use o menu do botão direito do mouse.
 
-Use the **[!UICONTROL Expression]** menu entry to select the values to display.
+Use a entrada do menu **[!UICONTROL Expression]** para selecionar os valores a serem exibidos.
 
 ![](assets/s_advuser_ergo_listgroup_010.png)
 
@@ -115,11 +115,11 @@ Use the **[!UICONTROL Expression]** menu entry to select the values to display.
 
 * Insira um rótulo para uma célula, o cabeçalho um, por exemplo.
 
-   Para fazer isso, use o mesmo processo de inserção de um campo no banco de dados, mas não selecione uma expressão. Enter the label in the **[!UICONTROL Label]** field. Ele será exibido como está.
+   Para fazer isso, use o mesmo processo de inserção de um campo no banco de dados, mas não selecione uma expressão. Insira o rótulo no campo **[!UICONTROL Label]**. Ele será exibido como está.
 
 * Cálculo de uma agregação (uma média, uma soma, etc.) e sua exibição na célula
 
-   To do this, use the **[!UICONTROL Aggregates]** menu entry and select the desired campaign.
+   Para fazer isso, use a entrada de menu **[!UICONTROL Aggregates]** e selecione a campanha desejada.
 
    ![](assets/s_advuser_ergo_listgroup_008.png)
 
@@ -127,24 +127,24 @@ Use the **[!UICONTROL Expression]** menu entry to select the values to display.
 
 ![](assets/s_advuser_ergo_listgroup_017.png)
 
-To define the cell format, the **[!UICONTROL Cell format...]** menu lets you access all formatting options available for the selected cell.
+Para definir o formato da célula, o menu **[!UICONTROL Cell format...]** permite acessar todas as opções de formatação disponíveis para a célula selecionada.
 
 Essas opções permitem personalizar a renderização final do relatório e facilitar a leitura das informações.
 
-Use the **[!UICONTROL Carriage return]** field when exporting data to Excel: select the **[!UICONTROL Yes]** value to force the carriage return. Esse valor será mantido ao exportar. Para obter mais informações, consulte [Exportação de um relatório](../../reporting/using/actions-on-reports.md#exporting-a-report).
+Use o campo **[!UICONTROL Carriage return]** ao exportar dados para o Excel: selecione o valor **[!UICONTROL Yes]** para forçar o retorno. Esse valor será mantido ao exportar. Para obter mais informações, consulte [Exportação de um relatório](../../reporting/using/actions-on-reports.md#exporting-a-report).
 
-The **[!UICONTROL Cell format]** window lets you access the following tab:
+A janela **[!UICONTROL Cell format]** permite acessar a seguinte guia:
 
-* A **[!UICONTROL Value]** guia
-* A **[!UICONTROL Borders]** guia
-* A **[!UICONTROL Click]** guia
-* A **[!UICONTROL Extra]** guia
+* A guia **[!UICONTROL Value]**
+* A guia **[!UICONTROL Borders]**
+* A guia **[!UICONTROL Click]**
+* A guia **[!UICONTROL Extra]**
 
-The **[!UICONTROL Value]** tab lets you change the font and the various value attributes or to define a format based on their nature.
+A guia **[!UICONTROL Value]** permite alterar a fonte e os vários atributos de valor ou definir um formato com base em sua natureza.
 
 ![](assets/s_advuser_ergo_listgroup_009.png)
 
-The format changes data display: for example, the **[!UICONTROL Number]**, **[!UICONTROL Monetary]** and **[!UICONTROL Percentage]** formats allow you to align the figures on the right and display decimal points.
+O formato altera a exibição de dados: por exemplo, os formatos **[!UICONTROL Number]**, **[!UICONTROL Monetary]** e **[!UICONTROL Percentage]** permitem alinhar os números à direita e exibir pontos decimais.
 
 Exemplo de como configurar um formato de moeda: é possível especificar a moeda em que os valores são expressos, escolher separar milhares e mostrar valores negativos em vermelho. A posição do símbolo de moeda depende do idioma do operador definido em seu perfil.
 
@@ -158,7 +158,7 @@ A guia **Bordas** permite adicionar bordas às linhas e colunas na tabela. A adi
 
 ![](assets/s_advuser_ergo_listgroup_014.png)
 
-If necessary, you can define borders in the table template (**[!UICONTROL Administration > Configuration > Form rendering]** ).
+Se necessário, é possível definir bordas no modelo da tabela (**[!UICONTROL Administration > Configuration > Form rendering]**).
 
 Nesse caso, haverá a seguinte sintaxe:
 
@@ -192,7 +192,7 @@ Na guia Excel:
  </style> 
 ```
 
-The **[!UICONTROL Click]** tab lets you define an action when the user clicks the content of a cell or of the table.
+A guia **[!UICONTROL Click]** permite definir uma ação quando o usuário clicar no conteúdo de uma célula ou da tabela.
 
 No exemplo abaixo, clicar no valor na célula permite exibir a segunda página do relatório: ela conterá informações sobre o delivery na célula.
 
@@ -202,7 +202,7 @@ A guia **Extra** permite vincular um visual a seus dados, como uma marca colorid
 
 ![](assets/s_advuser_ergo_listgroup_016.png)
 
-## Use case: Create a report with a group list {#use-case--create-a-report-with-a-group-list}
+## Caso de uso: criar um relatório com uma lista de grupos {#use-case--create-a-report-with-a-group-list}
 
 Neste exemplo, vamos criar um relatório de duas páginas: a primeira página conterá a lista e os deliveries totais por campanha, bem como o número de mensagens enviadas. Os nomes dos deliveries serão links clicáveis e permitirão ir para a segunda página do relatório para exibir a análise dos deliveries por domínio de email para o delivery selecionado com uma tabela e um gráfico. Na segunda página, a tabela servirá como uma legenda para o gráfico.
 
@@ -210,7 +210,7 @@ Neste exemplo, vamos criar um relatório de duas páginas: a primeira página co
 
 ### Etapa 1 - Criar um relatório {#step-1---create-a-report}
 
-Create a new report that concerns the campaign schema, **[!UICONTROL Campaigns (nms)]**.
+Crie um novo relatório que atenda ao schema da campanha, **[!UICONTROL Campaigns (nms)]**.
 
 ![](assets/s_advuser_report_listgroup_001.png)
 
@@ -226,8 +226,8 @@ A primeira query permite coletar os deliveries vinculados a cada campanha. O obj
 
 Clique duas vezes na primeira query para editá-la e siga as etapas abaixo para configurá-la:
 
-1. Start by changing the schema on which the query&#39;s source is applied: select the **[!UICONTROL Deliveries (nms)]** schema.
-1. Click the **[!UICONTROL Edit query]** link and display the advanced fields.
+1. Comece alterando o schema no qual a origem da consulta é aplicada: selecione o schema **[!UICONTROL Deliveries (nms)]**.
+1. Clique no link **[!UICONTROL Edit query]** e exiba os campos avançados.
 
    ![](assets/reporting_quick_start_query-1.png)
 
@@ -247,39 +247,39 @@ Clique duas vezes na primeira query para editá-la e siga as etapas abaixo para 
 
    * Rótulo: **@label**
    * Chave primária: **@deliveryId**
-   * Rótulo (Campanha): **@label1**
-   * Processado: **@processado**
-   * Foreign key of the &#39;Campaign&#39; (&#39;id&#39; field) link: **@operationId**
+   * Rótulo (Campaign): **@label1**
+   * Processado: **@processed**
+   * Chave externa do link &quot;Campaign&quot; (campo &quot;id&quot;): **@operationId**
    * Taxa de erro: **@errorRatio**
 
 
-1. Clique duas vezes no **[!UICONTROL Next]** botão para chegar à **[!UICONTROL Data filtering]** etapa.
+1. Clique no botão **[!UICONTROL Next]** duas vezes para chegar à etapa **[!UICONTROL Data filtering]**.
 
    Adicione uma condição de filtragem para coletar apenas os deliveries vinculados a uma campanha.
 
-   A sintaxe desse filtro é a seguinte: &quot;Chave estrangeira do link &#39;Campanhas&#39; maior que 0&quot;.
+   A sintaxe desse filtro é a seguinte: &quot;Foreign key of the &#39;Campaigns&#39; link greater than 0&quot;.
 
    ![](assets/reporting_quick_start_query_filter.png)
 
-1. Click **[!UICONTROL Finish]** to save these conditions, then click **[!UICONTROL Ok]** to close the query editor.
+1. Clique em **[!UICONTROL Finish]** para salvar essas condições e em **[!UICONTROL Ok]** para fechar o editor da consulta.
 
-### Step 3: Create the first page {#step-3--create-the-first-page}
+### Etapa 3: criação da primeira página {#step-3--create-the-first-page}
 
-Nesta etapa, vamos configurar a primeira página do relatório. Para fazer isso, siga as etapas abaixo:
+Nesta etapa, vamos configurar a primeira página do relatório. Para configurá-la, siga as etapas abaixo:
 
-1. Open the **[!UICONTROL Page]** activity and enter its title, for instance **Deliveries** in this case.
+1. Abra a atividade **[!UICONTROL Page]** e insira seu título, por exemplo **Deliveries** neste caso.
 
    ![](assets/s_advuser_report_listgroup_003.png)
 
-1. Insira uma lista com um grupo na barra de ferramentas e insira seu rótulo, por exemplo: Lista de entregas por campanha.
+1. Insira uma lista com um grupo na barra de ferramentas e insira o rótulo, por exemplo: lista de deliveries por campanha.
 
    ![](assets/s_advuser_report_listgroup_004.png)
 
-1. Click the **[!UICONTROL Table data XPath...]** link and select the delivery link, i.e. `[query/delivery]`.
+1. Clique no link **[!UICONTROL Table data XPath...]** e selecione o link de delivery, ou seja, `[query/delivery]`
 
    ![](assets/s_advuser_report_listgroup_005.png)
 
-1. Click the **[!UICONTROL Data]** tab and change layout of the table: add three columns on the right.
+1. Clique na guia **[!UICONTROL Data]** e altere o layout da tabela: adicione três colunas à direita.
 
    ![](assets/s_advuser_report_listgroup_006.png)
 
@@ -293,31 +293,31 @@ Nesta etapa, vamos configurar a primeira página do relatório. Para fazer isso,
 
    ![](assets/s_advuser_report_listgroup_007.png)
 
-1. Edit the first cell of the group header and insert the **[!UICONTROL Label]** field of the campaigns as an expression.
+1. Edite a primeira célula do cabeçalho do grupo e insira o campo **[!UICONTROL Label]** das campanhas como uma expressão.
 
    ![](assets/s_advuser_report_listgroup_009.png)
 
-1. Edit the second cell of the details line and select the deliveries **[!UICONTROL Label]**.
+1. Edite a segunda célula da linha de detalhes e selecione os deliveries **[!UICONTROL Label]**.
 
    ![](assets/s_advuser_report_listgroup_011.png)
 
-1. Edit the format of this cell and open the **[!UICONTROL Click]** tab. Configure as opções adequadas para que, quando os usuários clicarem no nome de um delivery, ele seja aberto na mesma janela.
+1. Edite o formato dessa célula e abra a guia **[!UICONTROL Click]**. Configure as opções adequadas para que, quando os usuários clicarem no nome de um delivery, ele seja aberto na mesma janela.
 
    ![](assets/s_advuser_report_listgroup_0111.png)
 
-   Para fazer isso, selecione uma ação de **[!UICONTROL Next page]** tipo e selecione **[!UICONTROL In the same window]** como uma opção aberta.
+   Para fazer isso, selecione uma ação do tipo **[!UICONTROL Next page]** e selecione **[!UICONTROL In the same window]** como uma opção para abrir.
 
    ![](assets/s_advuser_report_listgroup_0112.png)
 
-1. Na seção inferior da janela, clique em **[!UICONTROL Add]** e especifique o **`/vars/selectedDelivery`** caminho e a **[!UICONTROL @deliveryId]** expressão que corresponde ao alias da chave primária da entrega, conforme definido na consulta criada anteriormente. Essa fórmula permite acessar o delivery selecionado.
+1. Na seção inferior da janela, clique em **[!UICONTROL Add]** e especifique o **`/vars/selectedDelivery`** caminho e a expressão **[!UICONTROL @deliveryId]** que corresponde ao alias da chave primária do delivery, conforme definido na consulta criada anteriormente. Essa fórmula permite acessar o delivery selecionado.
 
    ![](assets/s_advuser_report_listgroup_010.png)
 
-1. Edit the second cell of the footer line of the group and enter **[!UICONTROL Total per campaign]** as a label.
+1. Edite a segunda célula do rodapé do grupo e digite **[!UICONTROL Total per campaign]** como rótulo.
 
    ![](assets/s_advuser_report_listgroup_012.png)
 
-1. Edit the third cell of the header line of the group and enter **[!UICONTROL Number of messages sent]** as a label.
+1. Edite a terceira célula da linha de cabeçalho do grupo e digite **[!UICONTROL Number of messages sent]** como rótulo.
 
    ![](assets/s_advuser_report_listgroup_013.png)
 
@@ -327,7 +327,7 @@ Nesta etapa, vamos configurar a primeira página do relatório. Para fazer isso,
 
    ![](assets/s_advuser_report_listgroup_014.png)
 
-1. Edit the third cell of the footer line of the group, select the processed delivery indicator and apply the **[!UICONTROL Sum]** aggregate to it.
+1. Edite a terceira célula do rodapé do grupo, selecione o indicador de entrega processado e aplique a agregação **[!UICONTROL Sum]** a ele.
 
    ![](assets/s_advuser_report_listgroup_015.png)
 
@@ -337,21 +337,21 @@ Nesta etapa, vamos configurar a primeira página do relatório. Para fazer isso,
 
 1. Selecione essa célula para exibir uma barra de valores que representa a taxa de erro de delivery.
 
-   To do this, access the cell format, then go to the **[!UICONTROL More]** tab. Selecione a **[!UICONTROL Value bar]** entrada na lista suspensa e selecione a **[!UICONTROL Hide the cell value]** opção.
+   Para fazer isso, acesse o formato da célula e vá para a guia **[!UICONTROL More]**. Selecione a entrada **[!UICONTROL Value bar]** na lista suspensa e selecione a opção **[!UICONTROL Hide the cell value]**.
 
    ![](assets/s_advuser_report_listgroup_023.png)
 
-   Agora é possível exibir uma renderização do relatório. Click the **[!UICONTROL Preview]** tab and select the **[!UICONTROL Global]** option: this shows the list of all deliveries in the Adobe Campaign database that are linked to a campaign.
+   Agora é possível exibir uma renderização do relatório. Clique na guia **[!UICONTROL Preview]** e selecione a opção **[!UICONTROL Global]**: isso mostra a lista de todos os deliveries no banco de dados do Adobe Campaign que estão vinculados a uma campanha.
 
    ![](assets/s_advuser_report_listgroup_025.png)
 
-   We recommend using the **[!UICONTROL Preview]** tab to make sure the data in your table is properly selected and configured. Assim que isso for feito, é possível formatar a tabela.
+   Recomendamos o uso da guia **[!UICONTROL Preview]** para garantir que os dados na tabela sejam selecionados e configurados corretamente. Assim que isso for feito, é possível formatar a tabela.
 
-1. Apply the **[!UICONTROL Bold]** style to the cells that show the total per campaign and the total number of messages processed.
+1. Aplique o estilo **[!UICONTROL Bold]** às células que mostram o total por campanha e o número total de mensagens processadas.
 
    ![](assets/s_advuser_report_listgroup_024.png)
 
-1. Click the 1st cell of the group header line, the one that displays the campaign name, and select **[!UICONTROL Edit > Merge to right]**.
+1. Clique na primeira célula da linha de cabeçalho do grupo, aquela que exibe o nome da campanha e selecione **[!UICONTROL Edit > Merge to right]**.
 
    ![](assets/s_advuser_report_listgroup_026.png)
 
@@ -367,7 +367,7 @@ Nesta etapa, vamos configurar a primeira página do relatório. Para fazer isso,
 
 Queremos adicionar uma segunda query e uma segunda página para exibir o detalhe de um delivery quando o usuário do relatório clicar nele. Antes de adicionar a query, edite a página criada e habilite a transição de saída para que ela possa ser vinculada à query.
 
-1. Add a new query after the **[!UICONTROL Page]** activity and edit its schema: select the **[!UICONTROL Recipient delivery logs]** schema.
+1. Adicione uma nova consulta após a atividade **[!UICONTROL Page]** e edite o schema: selecione o schema **[!UICONTROL Recipient delivery logs]**.
 
    ![](assets/reporting_quick_start_query-2.png)
 
@@ -377,22 +377,22 @@ Queremos adicionar uma segunda query e uma segunda página para exibir o detalhe
 
       ![](assets/reporting_quick_start_query-2_count.png)
 
-   * collect recipient email domains and group information on this field: to do this, select the **[!UICONTROL Group]** option in the domain name column.
+   * coletar domínios de email dos recipients e informações do grupo neste campo: para fazer isso, selecione a opção **[!UICONTROL Group]** na coluna de nome de domínio.
    ![](assets/reporting_quick_start_query-2_filter.png)
 
    Vincule os seguintes aliases aos campos:
 
-   * count(chave primária): **@count**
-   * Domínio de email (destinatário): **@domínio**
+   * contagem (chave primária): **@count**
+   * Domínio de email (recipient): **@domain**
 
       ![](assets/reporting_quick_start_query-2_alias.png)
 
 
-1. Clique duas vezes no **[!UICONTROL Next]** botão: isso leva você ao **[!UICONTROL Data filtering]** passo.
+1. Clique duas vezes no botão **[!UICONTROL Next]**: isso leva à etapa **[!UICONTROL Data filtering]**.
 
    Adicione uma condição de filtro para coletar apenas as informações vinculadas ao delivery selecionado.
 
-   A sintaxe é a seguinte: Chave estrangeira do link &quot;Entrega&quot; é igual ao valor da configuração `$([vars/selectedDelivery])`
+   A sintaxe é a seguinte: a chave estrangeira do link &quot;Delivery&quot; é igual ao valor da configuração `$([vars/selectedDelivery])`
 
    ![](assets/s_advuser_report_listgroup_017.png)
 
@@ -400,49 +400,49 @@ Queremos adicionar uma segunda query e uma segunda página para exibir o detalhe
 
 ### Etapa 5 – Criação da segunda página {#step-5---create-the-second-page}
 
-1. Edit the page and enter its label: **Email domains**.
-1. Uncheck the **[!UICONTROL Enable output transitions]** option: this is the last page of the report and will not be followed by another activity.
+1. Edite a página e insira o rótulo: **Email domains**.
+1. Desmarque a opção **[!UICONTROL Enable output transitions]**: essa é a última página do relatório e não será seguida por outra atividade.
 
    ![](assets/s_advuser_report_listgroup_028.png)
 
 1. Adicione uma nova lista com um grupo usando o menu do botão direito do mouse e rotule de **Email domains per recipient**.
-1. Clique no link **[!UICONTROL Table data XPath...]** e selecione o **[!UICONTROL Recipient delivery logs]** link.
+1. Clique em **[!UICONTROL Table data XPath...]** e selecione o link **[!UICONTROL Recipient delivery logs]**.
 
    ![](assets/s_advuser_report_listgroup_029.png)
 
-1. In the **[!UICONTROL Data]** tab, adapt the table as follows:
+1. Na guia **[!UICONTROL Data]**, adapte a tabela como a seguir:
 
    * Adicione duas colunas ao lado direito.
-   * In the first cell of the detail line, add the **[!UICONTROL rowNum()-1]** expression to count the number of lines. Em seguida, altere o formato da célula: na **[!UICONTROL Extra]** guia, selecione **[!UICONTROL Color tab]** e clique em **[!UICONTROL Ok]**.
+   * Na primeira célula da linha de detalhes, adicione a expressão **[!UICONTROL rowNum()-1]** para contar o número de linhas. Em seguida, altere o formato da célula: na guia **[!UICONTROL Extra]**, selecione **[!UICONTROL Color tab]** e clique em **[!UICONTROL Ok]**.
 
       ![](assets/s_advuser_report_listgroup_018.png)
 
       Essa configuração permitirá usar a tabela como legenda do gráfico.
 
-   * In the second cell of the detail line, add the **[!UICONTROL Email domain(Recipient)]** expression.
-   * In the third cell of the detail line, add the **[!UICONTROL count(primary key)]** expression.
+   * Na segunda célula da linha de detalhes, adicione a expressão **[!UICONTROL Email domain(Recipient)]**.
+   * Na terceira célula da linha de detalhes, adicione a expressão **[!UICONTROL count(primary key)]**.
    ![](assets/s_advuser_report_listgroup_019.png)
 
-1. Adicione um gráfico de pizza à página usando o menu do botão direito e atribua o rótulo **Email domains** a ele. Para obter mais informações, consulte Tipos e variantes de [gráfico](../../reporting/using/creating-a-chart.md#chart-types-and-variants).
-1. Clique no **[!UICONTROL Variants]** link e desmarque as opções **[!UICONTROL Display label]** e **[!UICONTROL Display caption]** .
+1. Adicione um gráfico de pizza à página usando o menu do botão direito e atribua o rótulo **Email domains** a ele. Para obter mais informações, consulte [Tipos e variantes de gráfico](../../reporting/using/creating-a-chart.md#chart-types-and-variants).
+1. Clique no link **[!UICONTROL Variants]** e desmarque as opções **[!UICONTROL Display label]** e **[!UICONTROL Display caption]**.
 1. Verifique se nenhuma classificação de valor está configurada. Para obter mais informações, consulte [esta seção](../../reporting/using/processing-a-report.md#configuring-the-layout-of-a-descriptive-analysis-report).
 
    ![](assets/s_advuser_report_listgroup_0191.png)
 
-1. In the **[!UICONTROL Data]** tab, change the data source: select **[!UICONTROL Context data]** from the drop-down list.
+1. Na guia **[!UICONTROL Data]**, altere a fonte de dados: selecione **[!UICONTROL Context data]** na lista suspensa.
 
    ![](assets/s_advuser_report_listgroup_020.png)
 
-1. Then click **[!UICONTROL Advanced settings]** and select the link to the recipient delivery logs.
+1. Em seguida, clique em **[!UICONTROL Advanced settings]** e selecione o link para os logs do delivery do recipient.
 
    ![](assets/s_advuser_report_listgroup_0201.png)
 
-1. Na **[!UICONTROL Chart type]** seção, selecione a **[!UICONTROL Email domain]** variável.
+1. Na seção **[!UICONTROL Chart type]**, selecione a variável **[!UICONTROL Email domain]**.
 1. Em seguida, adicione o cálculo a ser executado: selecione a soma como um operador.
 
    ![](assets/s_advuser_report_listgroup_0202.png)
 
-1. Click the **[!UICONTROL Detail]** button to select the field which the count will concern, then close the configuration window.
+1. Clique no botão **[!UICONTROL Detail]** para selecionar o campo que a contagem utilizará, então feche a janela de configuração.
 
    ![](assets/s_advuser_report_listgroup_030.png)
 
@@ -452,7 +452,7 @@ Queremos adicionar uma segunda query e uma segunda página para exibir o detalhe
 
 ### Etapa 6 - Exibição do relatório {#step-6---viewing-the-report}
 
-To view the result of this configuration, click the **[!UICONTROL Preview]** tab and select the **[!UICONTROL Global]** option.
+Para exibir o resultado dessa configuração, clique na guia **[!UICONTROL Preview]** e selecione a opção **[!UICONTROL Global]**.
 
 A primeira página do relatório detalha a lista de todos os deliveries incluídos no banco de dados.
 
