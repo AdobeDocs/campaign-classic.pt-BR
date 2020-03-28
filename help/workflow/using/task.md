@@ -14,7 +14,7 @@ discoiquuid: ec6f9a10-ad84-4d9f-86e2-490539c2171b
 index: y
 internal: n
 snippet: y
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 20f835c357d016643ea1f3209ee4dfb6d3239f90
 
 ---
@@ -22,7 +22,7 @@ source-git-commit: 20f835c357d016643ea1f3209ee4dfb6d3239f90
 
 # Tarefa{#task}
 
-In a campaign workflow, the **[!UICONTROL Task]** activity lets you specify two scenarios: the first if the task is completed and a second if the task is not completed (if it is manually marked as incomplete or if it expires).
+Em um workflow de campanha, a atividade **[!UICONTROL Task]** permite especificar dois cenários: o primeiro se a tarefa for concluída e um segundo se a tarefa não for concluída (se estiver marcada manualmente como incompleta ou se ela expirar).
 
 ![](assets/mrm_task_in_workflow.png)
 
@@ -30,4 +30,4 @@ Como configurar e operar uma tarefa é detalhada nesta [seção](../../campaign/
 
 ![](assets/wkf_task_activity.png)
 
-The **[!UICONTROL Resources]** option lets you define several operators as well as an approval schedule for the task. Se a pessoa que aprova rejeitar, isso não leva à tarefa em si a ser rejeitada.
+A opção **[!UICONTROL Resources]** permite definir vários operadores, bem como um agendamento de aprovação para a tarefa. Se a pessoa que aprova rejeitar, isso não leva à tarefa em si a ser rejeitada.
