@@ -14,7 +14,7 @@ discoiquuid: a0e76d27-bedd-4f81-b4d2-1221444e670e
 index: y
 internal: n
 snippet: y
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 20f835c357d016643ea1f3209ee4dfb6d3239f90
 
 ---
@@ -28,15 +28,15 @@ Para aplicar as regras de tipologia criadas, é necessário associá-las a uma t
 
 1. Crie uma tipologia de campanha.
 
-   As tipologias são acessadas pelo nó **[!UICONTROL Administration > Campaign Management > Typology management]** > **[!UICONTROL Typologies]** .
+   As tipologias são acessadas no nó **[!UICONTROL Administration > Campaign Management > Typology management]** > **[!UICONTROL Typologies]**.
 
-1. Go to the **[!UICONTROL Rules]** tab, click the **[!UICONTROL Add]** button and select the rules to apply with this typology.
+1. Vá para a guia **[!UICONTROL Rules]**, clique no botão **[!UICONTROL Add]** e selecione as regras a serem aplicadas com esta tipologia.
 
    ![](assets/campaign_opt_pressure_sample_1_6.png)
 
 1. Salve a tipologia: ela será adicionada à lista de tipologias existentes.
 1. Abra o delivery para o qual deseja aplicar as regras.
-1. Open the delivery properties and access the **[!UICONTROL Typology]** tab.
+1. Abra as propriedades do delivery e acesse a guia **[!UICONTROL Typology]**.
 1. Selecione a tipologia na lista suspensa.
 
    ![](assets/campaign_opt_pressure_sample_1_7.png)
@@ -51,7 +51,7 @@ Você poderá restringir o campo de aplicação de uma regra de acordo com suas 
 
 É possível configurar regras de tipologia para que elas se apliquem apenas a certos deliveries aos quais estajam vinculadas ou a certos recipients entre os alvos de um delivery.
 
-Para definir as condições do aplicativo de uma regra, clique no **[!UICONTROL Edit the rule application conditions...]** link na **[!UICONTROL General]** guia.
+Para definir as condições de aplicação de uma regra, clique no link **[!UICONTROL Edit the rule application conditions...]** na guia **[!UICONTROL General]**.
 
 Em seguida, use o editor de query para definir as condições de filtragem. No exemplo a seguir, a regra de capacidade apresenta apenas os deliveries com a palavra &#39;oferta&#39; em seu rótulo ou deliveries criados antes de 1º de abril de 2013.
 
@@ -59,7 +59,7 @@ Em seguida, use o editor de query para definir as condições de filtragem. No e
 
 >[!NOTE]
 >
->Nas regras de filtragem, é possível selecionar a condição do aplicativo de critérios de filtragem: eles podem depender do delivery ou do delivery outline. Para obter mais informações, consulte [Condicionar uma regra](../../campaign/using/filtering-rules.md#conditioning-a-filtering-rule)de filtragem.
+>Nas regras de filtragem, é possível selecionar a condição do aplicativo de critérios de filtragem: eles podem depender do delivery ou do delivery outline. Para obter mais informações, consulte [Condicionando uma regra de filtragem](../../campaign/using/filtering-rules.md#conditioning-a-filtering-rule).
 
 ## Ajustar a frequência de cálculo {#adjusting-calculation-frequency}
 
@@ -67,11 +67,11 @@ As arbitragens são reexecutadas automaticamente todas as noites através do wor
 
 De fato, alguns cálculos usam valores que não são alterados diariamente. Portanto, seria irrelevante para os dados recalcular todos os dias e sobrecarregar o banco de dados para nada. Por exemplo, se um processo enriquece o banco de dados de marketing com pontuações do cliente e informações de compra em uma base semanal, os dados baseados nesses valores não precisarão serem recalculados todos os dias.
 
-To do this, the **[!UICONTROL Frequency]** field of the **[!UICONTROL General]** tab lets you define a maximum period during which targeting is saved. Por padrão, o valor **0** indica que o cálculo permanece válido até a próxima execução de uma nova arbitragem diária.
+Para fazer isso, o campo **[!UICONTROL Frequency]** da guia **[!UICONTROL General]** permite a definição de um período máximo durante o qual o targeting é salvo. Por padrão, o valor **0** indica que o cálculo permanece válido até a próxima execução de uma nova arbitragem diária.
 
-To save the results beyond this period, enter a value greater than 12 in the **[!UICONTROL Frequency]** field: once this period expires, all rules are re-applied.
+Para salvar os resultados além deste período, insira um valor maior do que 12 no campo **[!UICONTROL Frequency]**: depois que esse período expirar, todas as regras serão reaplicadas.
 
-The **[!UICONTROL Re-apply the rule at the start of personalization]** option lets you apply the rule automatically during the personalization phase, including if the period stated in the **[!UICONTROL Frequency]** field is still valid.
+A opção **[!UICONTROL Re-apply the rule at the start of personalization]** permite a aplicação automática da regra durante a fase de personalização, incluindo se o período declarado no campo **[!UICONTROL Frequency]** ainda for válido.
 
 ## Selecionar a fase da aplicação da regra {#selecting-the-rule-application-phase}
 
@@ -98,13 +98,13 @@ No modo de operação padrão, as regras são aplicadas na seguinte sequência:
 >
 >Ao trabalhar com o módulo Campaign Interaction, regras de elegibilidade de oferta são aplicadas ao mesmo tempo que as regras de filtragem (para ofertas encontradas em delivery outlines) ou durante a fase de personalização, durante a chamada para o mecanismo de oferta.
 
-You can adapt the execution sequence of rules which have the same type using the appropriate field in the **[!UICONTROL General]** tab of the rule. When several rules are executed during the same message processing phase, you can configure their execution sequence in the **[!UICONTROL Execution sequence]** field.
+É possível adaptar a sequência da execução das regras que têm o mesmo tipo ao usar o campo apropriado na guia **[!UICONTROL General]** da regra. Quando várias regras são executadas durante a mesma fase de processamento de mensagens, é possível configurar a sequência de execução no campo **[!UICONTROL Execution sequence]**.
 
 Por exemplo, uma regra de pressão com uma ordem de execução de 20 é executada antes de uma regra de pressão com uma ordem de execução de 30.
 
 ### Regras de controle {#control-rules}
 
-For **[!UICONTROL Control]** rules, you can decide at which point of the delivery life cycle the rule will be applied (before or after targeting, at the start of personalization, at the end of the analysis). Select the value to apply in the drop-down list of the **[!UICONTROL Phase]** field, in the **[!UICONTROL General]** tab of the typology rule.
+Para regras de **[!UICONTROL Control]**, é possível decidir em qual ponto do ciclo de vida do delivery ela será aplicada (antes ou depois do direcionamento, no início da personalização, no final da análise). Na guia **[!UICONTROL General]** da regra de tipologia, selecione o valor a ser aplicado na lista suspensa do campo **[!UICONTROL Phase]**.
 
 ![](assets/campaign_opt_define_control_phase.png)
 
@@ -118,7 +118,7 @@ Os valores possíveis são:
 
    Se é necessário saber o target para aplicar a regra de controle, selecione essa fase.
 
-   For example, the **[!UICONTROL Check proof size]** control rule applies after each targeting stage: this rule prevents message personalization if there are too many proof recipients.
+   Por exemplo, a regra de controle **[!UICONTROL Check proof size]** se aplica após cada estágio do targeting: essa regra impede a personalização da mensagem se houver muitos recipients de prova.
 
 * **[!UICONTROL At the start of personalization]**
 
@@ -132,23 +132,23 @@ Os valores possíveis são:
 
 ### Controle o tráfego SMTP de saída {#control-outgoing-smtp-traffic}
 
-As an option, you can use the **[!UICONTROL Managing affinities with IP addresses]** field to link deliveries to the delivery server (MTA) this affinity. Isso permite a restrição do número de emails para envios específicas em máquinas ou endereços de saída.
+Como opção, é possível usar o campo **[!UICONTROL Managing affinities with IP addresses]** para vincular os deliveries ao servidor de deliveries (MTA) dessa afinidade. Isso permite a restrição do número de emails para envios específicas em máquinas ou endereços de saída.
 
 ![](assets/campaign_opt_select_ip_affinity.png)
 
 >[!NOTE]
 >
->Affinity management does not apply for **[!UICONTROL Filtering]** typologies.\
+>O gerenciamento de afinidade não se aplica às tipologias de **[!UICONTROL Filtering]**.\
 >As afinidades são definidas no arquivo de configuração de instância, no servidor do Adobe Campaign. Para obter mais informações, consulte [esta seção](../../installation/using/about-initial-configuration.md).
 
 ### Otimização de Campanha e Marketing Distribuído {#campaign-optimization-and-distributed-marketing}
 
-The **[!UICONTROL Distributed Marketing]** tab lets you define the re-mapping of typologies and/or rules which applies when a shared campaign is ordered and/or reserved. As tipologias/regras definidas para uma entidade local (vinculada àqueles definidos para a entidade central) substituem as regras/tipologias vinculadas à entidade central. O remapeamento permite adaptar regras da entidade central às entidades locais que solicitam a campanha.
+A guia **[!UICONTROL Distributed Marketing]** permite definir o remapeamento de tipologias e/ou regras que se aplicam quando uma campanha compartilhada é solicitada e/ou reservada. As tipologias/regras definidas para uma entidade local (vinculada àqueles definidos para a entidade central) substituem as regras/tipologias vinculadas à entidade central. O remapeamento permite adaptar regras da entidade central às entidades locais que solicitam a campanha.
 
 ![](assets/simu_campaign_opti_distrib_mkg.png)
 
 >[!NOTE]
 >
->In typologies and typology rules, the **[!UICONTROL Distributed Marketing]** tab is added if your license includes this option: please check you license agreement.\
->Para obter mais informações sobre Marketing distribuído, consulte [Sobre marketing](../../campaign/using/about-distributed-marketing.md)distribuído.
+>Em tipologias e regras de tipologia, a guia **[!UICONTROL Distributed Marketing]** será adicionada caso a licença inclua essa opção: verifique o contrato de licença.\
+>Para obter mais informações sobre Marketing distribuído, consulte [Sobre marketing distribuído](../../campaign/using/about-distributed-marketing.md).
 
