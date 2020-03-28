@@ -14,7 +14,7 @@ discoiquuid: c94ce5b7-aa8a-4ea2-845d-68c9c7dc2a7b
 index: y
 internal: n
 snippet: y
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: c10a0a11c6e9952aa47da1f7a15188c79c62508d
 
 ---
@@ -26,25 +26,25 @@ Uma atividade do tipo **Update data** realiza uma atualização em massa dos cam
 
 ## Tipo de operação {#operation-type}
 
-The **[!UICONTROL Operation type]** field lets you choose the process to be carried out on the data in the database:
+O campo **[!UICONTROL Operation type]** permite escolher o processo que deve ser executado nos dados no banco de dados:
 
-* **[!UICONTROL Insert or update]**: adicione dados ou atualize-os se já tiverem sido adicionados.
-* **[!UICONTROL Insert]**: adicione apenas dados.
-* **[!UICONTROL Update]**: atualizar apenas dados.
-* **[!UICONTROL Update and merge collections]**: atualize os dados e escolha um registro &quot;mestre&quot;, em seguida, vincule os elementos vinculados às duplicatas neste registro mestre. As duplicatas podem ser excluídas sem criar elementos anexados órfãos.
+* **[!UICONTROL Insert or update]**: adiciona os dados ou os atualiza quando já foram adicionados.
+* **[!UICONTROL Insert]**: adiciona apenas dados.
+* **[!UICONTROL Update]**: atualiza apenas dados.
+* **[!UICONTROL Update and merge collections]**: atualiza os dados e escolhe um registro &quot;mestre&quot; e, em seguida, vincula os elementos ligados às duplicatas neste registro mestre. As duplicatas podem ser excluídas sem criar elementos anexados órfãos.
 * **[!UICONTROL Delete]**: excluir dados.
 
 ![](assets/s_advuser_update_data_1.png)
 
-The **[!UICONTROL Batch size]** field lets you select the number of inbound transition elements to be updated. Por exemplo, se declarado 500, os primeiros 500 registros serão atualizados.
+O campo **[!UICONTROL Batch size]** permite selecionar o número de elementos de transição de entrada a serem atualizados. Por exemplo, se declarado 500, os primeiros 500 registros serão atualizados.
 
 ## Identificação de registro {#record-identification}
 
 Especifica como identificar os registros no banco de dados:
 
-* If data entries relate to an existing targeting dimension, select the **[!UICONTROL By directly using the targeting dimension]** option and select it in the **[!UICONTROL Updated dimension]** field.
+* Se as entradas de dados se relacionam a uma dimensão de direcionamento existente, selecione a opção **[!UICONTROL By directly using the targeting dimension]** e a selecione no campo **[!UICONTROL Updated dimension]**.
 
-   You can display the fields for the selected dimension using the **[!UICONTROL Edit this link]** magnifying glass button.
+   É possível exibir os campos da dimensão selecionada usando o botão de lupa **[!UICONTROL Edit this link]**.
 
 * Caso contrário, especifique um ou mais links que permitirão a identificação dos dados no banco de dados ou uso direto das chaves de reconciliação.
 
@@ -52,34 +52,34 @@ Especifica como identificar os registros no banco de dados:
 
 ## Seleção dos campos a serem atualizados {#selecting-the-fields-to-be-updated}
 
-Use the **[!UICONTROL Automatically associate fields with the same name]** option in order for Adobe Campaign to automatically identify the fields to be updated.
+Use a opção **[!UICONTROL Automatically associate fields with the same name]** para que o Adobe Campaign identifique os campos a serem atualizados de forma automática.
 
 ![](assets/s_advuser_update_data_3b.png)
 
-You can also use the **[!UICONTROL Insert]** icon to manually select the database fields to be updated.
+Também é possível usar o ícone **[!UICONTROL Insert]** para selecionar manualmente os campos do banco de dados que devem ser atualizados.
 
 ![](assets/s_advuser_update_data_3.png)
 
-Selecione todos os campos a serem atualizados e, se necessário, adicione condições dependendo da atualização. Para fazer isso, use a **[!UICONTROL Taken into account if]** coluna. As condições são aplicadas uma após a outra mantendo a ordem na lista. Use as setas à direita para alterar a ordem das atualizações.
+Selecione todos os campos a serem atualizados e, se necessário, adicione condições dependendo da atualização. Para isso, use a coluna **[!UICONTROL Taken into account if]**. As condições são aplicadas uma após a outra mantendo a ordem na lista. Use as setas à direita para alterar a ordem das atualizações.
 
 É possível usar o mesmo campo de destino várias vezes.
 
-Within an **[!UICONTROL Insert or update]** operation, you can select the campaign to be applied, either individually or for each field. Para fazer isso, selecione o valor desejado na **[!UICONTROL Operation]** coluna.
+Em uma operação **[!UICONTROL Insert or update]**, é possível selecionar a campanha que deve ser aplicada individualmente ou em cada campo. Para fazer isso, selecione o valor desejado na coluna **[!UICONTROL Operation]**.
 
 ![](assets/s_advuser_update_data_5.png)
 
-The **[!UICONTROL modifiedDate]**, **[!UICONTROL modifiedBy]**, **[!UICONTROL createdDate]** and **[!UICONTROL createdBy]** fields are updated automatically during data updates, unless their management mode is configured specifically in the field update table.
+Os campos **[!UICONTROL modifiedDate]**, **[!UICONTROL modifiedBy]**, **[!UICONTROL createdDate]** e **[!UICONTROL createdBy]** são atualizados automaticamente durante as atualizações de dados, a menos que o modo de gerenciamento esteja configurado especificamente na tabela de atualização dos campos.
 
 A atualização de registro é executada somente para registros contendo pelo menos uma diferença. Se os valores forem iguais, nenhuma atualização será executada.
 
-The **[!UICONTROL Advanced parameters]** link lets you specify additional options to deal with updating data as well as managing duplicates. Também é possível:
+O link **[!UICONTROL Advanced parameters]** permite especificar as opções adicionais para lidar com a atualização de dados, assim como gerenciar os duplicados. Também é possível:
 
 * **[!UICONTROL Disable automatic key management]**.
 * **[!UICONTROL Disable audit]**.
 * **[!UICONTROL Empty the destination value if the source value is empty (NULL)]**. Essa opção é selecionada automaticamente por padrão.
 * **[!UICONTROL Update all columns with matching names]**.
-* Specify conditions that consider source elements using an expression in the **[!UICONTROL Enabled if]** field.
-* Especifica condições que consideram duplicatas usando uma expressão. If you check the **[!UICONTROL Ignore records which concern the same target]** option, only the first in the list of expressions will be considered.
+* Especifique as condições que consideram elementos de origem usando uma expressão no campo **[!UICONTROL Enable if]**.
+* Especifica condições que consideram duplicatas usando uma expressão. Se selecionar a opção **[!UICONTROL Ignore records which concern the same target]**, somente o primeiro item na lista de expressões será considerado.
 
 **[!UICONTROL Generate an outbound transition]**
 
@@ -97,7 +97,7 @@ Atualizar dados e mesclar coleções permite atualizar os dados contidos em um r
 >
 >Essa opção também permite processar referências a registros secundários de tabelas de trabalho do workflow (targetWorkflow), deliverys (targetDelivery) e listas (targetList). Se precisar, esses links aparecem na lista onde os campos e coleções são selecionados.
 
-1. Selecione a **[!UICONTROL Update and merge collections]** operação.
+1. Selecione a operação **[!UICONTROL Update and merge collections]**.
 
    ![](assets/update_and_merge_collections1.png)
 
@@ -115,15 +115,15 @@ Atualizar dados e mesclar coleções permite atualizar os dados contidos em um r
 
    É possível, por exemplo, configurar a mesclagem de coleções contendo dados heterogêneos como a lista de assinaturas de um recipient. Usando regras, também é possível criar novos históricos de subscrições de registros secundários ou até mover a lista de subscrições de um registro secundário para um registro primário.
 
-1. Specify the order in which you would like the secondary records to be processed, by selecting **[!UICONTROL Advanced parameters]** > **[!UICONTROL Duplicates]**.
+1. Especifique a ordem que os registros secundários precisam ser processados, selecionando **[!UICONTROL Advanced parameters]** > **[!UICONTROL Duplicates]**.
 
    ![](assets/update_and_merge_collections3.png)
 
 Os dados de registros secundários são associados ao registro principal se as regras definidas forem aplicáveis. De acordo com o tipo de atualização selecionada, os registros secundários podem ser excluídos.
 
-## Example: Update data following an enrichment {#example--update-data-following-an-enrichment}
+## Exemplo: Atualizar os dados após um enriquecimento {#example--update-data-following-an-enrichment}
 
-A [Etapa 2: A gravação de dados enriquecidos na seção de tabela](../../workflow/using/creating-a-summary-list.md#step-2--writing-enriched-data-to-the--purchases--table) &#39;Compras&#39; do caso de uso que detalha a criação de uma lista de recapitulação oferece um exemplo de atualização de dados após uma atividade de enriquecimento.
+A seção do caso de uso [Etapa 2: Gravação de dados enriquecidos na seção da tabela &#39;Purchases&#39;](../../workflow/using/creating-a-summary-list.md#step-2--writing-enriched-data-to-the--purchases--table) que detalha a criação de uma lista de recapitulação e oferece um exemplo de atualização de dados após uma atividade de enriquecimento.
 
 ## Parâmetros de entrada {#input-parameters}
 
