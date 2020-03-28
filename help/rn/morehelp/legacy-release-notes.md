@@ -1,6 +1,6 @@
 ---
-title: Notas de versão antigas
-seo-title: Notas de versão antigas
+title: Notas de versão herdadas
+seo-title: Notas de versão herdadas
 description: nulo
 seo-description: nulo
 page-status-flag: never-activated
@@ -11,11 +11,11 @@ iscontainer: true
 index: y
 internal: n
 snippet: y
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 579329d9194115065dff2c192deb0376c75e67bd
 
 ---
 
 
-# Notas de versão antigas{#legacy-release-notes}
+# Notas de versão herdadas{#legacy-release-notes}
 
