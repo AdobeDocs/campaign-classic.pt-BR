@@ -14,7 +14,7 @@ discoiquuid: 81090be2-3ed4-4f35-948b-e21af6e19999
 index: y
 internal: n
 snippet: y
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 0ce6e5277c32bc18c20dca62e5b276f654d1ace5
 
 ---
@@ -26,12 +26,12 @@ Você pode testar o delivery de mensagens enviando uma prova para um seed addres
 
 O envio de uma prova envolve o mesmo processo de delivery regular (para obter mais informações, consulte [esta seção](../../delivery/using/steps-validating-the-delivery.md#sending-a-proof)). No entanto, para enviar uma prova no Centro de Mensagens, você precisa realizar as seguintes operações antecipadamente:
 
-* criar um ou mais endereços semente (consulte [Gerenciar endereços semente em mensagens](../../message-center/using/managing-seed-addresses-in-transactional-messages.md)transacionais) com dados de teste (consulte Dados [de](../../message-center/using/personalization-data.md)personalização),
-* crie o conteúdo da mensagem (consulte [Criação de conteúdo](../../message-center/using/creating-message-content.md)da mensagem).
+* criar um ou mais seed addresses (consulte [Gerenciar seed addresses em mensagens transacionais](../../message-center/using/managing-seed-addresses-in-transactional-messages.md)) com dados de teste (consulte [Dados de personalização](../../message-center/using/personalization-data.md)),
+* criar o conteúdo da mensagem (consulte [Criação de conteúdo da mensagem](../../message-center/using/creating-message-content.md)).
 
 Para enviar a prova:
 
-1. Clique no **[!UICONTROL Send a proof]** botão na janela de entrega.
+1. Clique no botão **[!UICONTROL Send a proof]** na janela do delivery.
 1. Analise o delivery.
 1. Corrija qualquer erro e confirme o delivery.
 
@@ -41,7 +41,7 @@ Para enviar a prova:
 
    ![](assets/messagecenter_send_proof_002.png)
 
-Proofs can be accessed in each template via the **[!UICONTROL Audit]** tab.
+É possível acessar as provas em cada template através da guia **[!UICONTROL Audit]**.
 
 ![](assets/messagecenter_send_proof_003.png)
 
