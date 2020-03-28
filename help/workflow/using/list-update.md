@@ -14,7 +14,7 @@ discoiquuid: ca2cd5bf-78a2-4e43-955d-206f4474d1e0
 index: y
 internal: n
 snippet: y
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: c10a0a11c6e9952aa47da1f7a15188c79c62508d
 
 ---
@@ -28,34 +28,34 @@ Uma atividade **List update** armazena a população especificada na transição
 
 A lista pode ser selecionada na lista de grupos existentes.
 
-Também pode ser criado usando as opções **[!UICONTROL Create the list if necessary (Computed name)]** e **[!UICONTROL Create the list if necessary (Computed Folder and Name)]** . Essas opções permitem selecionar o rótulo de sua escolha para criar uma lista e, posteriormente, a pasta na qual ela será salva. O rótulo também pode ser gerado automaticamente inserindo campos dinâmicos ou um script. Os diferentes campos dinâmicos estão disponíveis no menu pop-up à direita do rótulo.
+Também pode ser criada usando as opções **[!UICONTROL Create the list if necessary (Computed name)]** e **[!UICONTROL Create the list if necessary (Computed Folder and Name)]**. Essas opções permitem selecionar o rótulo de sua escolha para criar uma lista e, posteriormente, a pasta na qual ela será salva. O rótulo também pode ser gerado automaticamente inserindo campos dinâmicos ou um script. Os diferentes campos dinâmicos estão disponíveis no menu pop-up à direita do rótulo.
 
 ![](assets/s_user_segmentation_update_list_calc.png)
 
-If the list already exists, recipients will be added to the existing content, unless you check the **[!UICONTROL Purge the list if it exists (otherwise add to the list)]** option. Nesse caso, o conteúdo da lista é excluído antes da atualização.
+Se a lista já existir, os recipients serão adicionados ao conteúdo existente, a não ser que a opção **[!UICONTROL Purge the list if it exists (otherwise add to the list)]** esteja habilitada. Nesse caso, o conteúdo da lista é excluído antes da atualização.
 
-If you want the created or updated list to use a table other than the recipient table then check the **[!UICONTROL Create or use a list with its own table]** option.
+Se desejar que a lista criada ou atualizada use uma tabela diferente da tabela recipient, marque a opção **[!UICONTROL Create or use a list with its own table]**.
 
 Para usar a opção, as tabelas específicas devem ter sido configuradas em sua instância do Adobe Campaign.
 
-Geralmente, salvar um target em uma lista marca o final de um workflow. By default, the **[!UICONTROL List update]** activity therefore does not have an outbound transition. Marque a **[!UICONTROL Generate an outbound transition]** opção para adicionar uma.
+Geralmente, salvar um target em uma lista marca o final de um workflow. Por padrão, a atividade **[!UICONTROL List update]** não tem uma transição de saída. Marque a opção **[!UICONTROL Generate an outbound transition]** para adicionar uma.
 
-## Exemplo: Atualização da lista {#example--list-update}
+## Exemplo: List update {#example--list-update}
 
 No exemplo a seguir, a atividade de atualização da lista segue uma query direcionada a homens com mais de 30 anos vivendo na França. A lista será inicialmente criada a partir dos resultados da query. Ela será atualizada sempre que for iniciada a partir do workflow. Ela pode, por exemplo, ser usada regularmente para ofertas promocionais direcionadas em campanhas.
 
-1. Add a **[!UICONTROL list update activity]** directly after a query then open it up to edit it.
+1. Adicione um **[!UICONTROL list update activity]** diretamente após uma consulta, depois abra-a para editá-la.
 
-   For more on creating a query in a workflow, refer to [Query](../../workflow/using/query.md).
+   Para obter mais informações sobre como criar uma consulta em um workflow, consulte [Query](../../workflow/using/query.md).
 
 1. É possível selecionar um rótulo para a atividade.
-1. Select the **[!UICONTROL Create the list if necessary (Calculated name)]** option to show that the list will be created once the first workflow has been executed, then updated with the following executions.
+1. Selecione a opção **[!UICONTROL Create the list if necessary (Calculated name)]** para mostrar que a lista será criada quando o primeiro workflow tiver sido executado, e então atualizada com as execuções seguintes.
 1. Selecione a pasta na qual deseja salvar a lista.
 1. Insira um rótulo para a lista. É possível inserir campos dinâmicos para gerar automaticamente o nome a partir da lista. Neste exemplo, a lista tem o mesmo nome que a query para identificar facilmente seu conteúdo.
-1. Leave the **[!UICONTROL Purge the list if it exists (otherwise add to the list)]** option checked to delete recipients that do not match the targeting criteria and to insert the new ones into the list.
-1. Deixe a **[!UICONTROL Create or use a list with its own table]** opção também marcada.
-1. Deixe a **[!UICONTROL Generate an outbound transition]** opção desmarcada.
-1. Clique em **[!UICONTROL Ok]** e inicie o fluxo de trabalho.
+1. Deixe a opção **[!UICONTROL Purge the list if it exists (otherwise add to the list)]** marcada para excluir recipients que não correspondem aos critérios do target e para inserir os novos recipients na lista.
+1. Deixe também a opção **[!UICONTROL Create or use a list with its own table]** marcada.
+1. Deixe a opção **[!UICONTROL Generate an outbound transition]** desmarcada.
+1. Clique em **[!UICONTROL Ok]** e inicie o workflow.
 
    ![](assets/s_user_segmentation_update_list_calc_example.png)
 
