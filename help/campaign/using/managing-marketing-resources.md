@@ -14,7 +14,7 @@ discoiquuid: 069dbc6b-4019-4d66-85a8-0e4de6b66f18
 index: y
 internal: n
 snippet: y
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: e09692e316a92a67632201e5691e8b4df42cc341
 
 ---
@@ -30,30 +30,30 @@ Para cada recurso de marketing gerenciado pelo Adobe Campaign, é possível acom
 
 Os recursos de marketing são acessados pelo universo Campaigns.
 
-To add a resource, click the **[!UICONTROL Create]** button.
+Para adicionar um recurso, clique no botão **[!UICONTROL Create]**.
 
 ![](assets/s_ncs_user_mkg_resource_add.png)
 
-Para disponibilizar um recurso no servidor do Adobe Campaign, é necessário adicionar o recurso desejado arrastando e soltando na área intermediária do editor. Você também pode clicar no **[!UICONTROL Upload file to server...]** link.
+Para disponibilizar um recurso no servidor do Adobe Campaign, é necessário adicionar o recurso desejado arrastando e soltando na área intermediária do editor. É possível também clicar no link **[!UICONTROL Upload file to server...]**.
 
 ![](assets/s_ncs_user_mkg_resource_file.png)
 
 Uma mensagem de confirmação permite iniciar o upload.
 
-Quando o upload estiver concluído, o recurso será adicionado à lista de recursos disponíveis. É acessível aos operadores do Adobe Campaign. They can view it (via the **[!UICONTROL Preview]** tab), make a copy to modify it, or update the file on the server (using the **[!UICONTROL Edit]** tab).
+Quando o upload estiver concluído, o recurso será adicionado à lista de recursos disponíveis. É acessível aos operadores do Adobe Campaign. Eles podem exibi-lo (por meio da guia **[!UICONTROL Preview]**), fazer uma cópia para modificá-lo ou atualizar o arquivo no servidor (usando a guia **[!UICONTROL Edit]**).
 
 ![](assets/s_ncs_user_mkg_resource_extract.png)
 
-Click the **[!UICONTROL General]** tab to select the operators or groups of operators in charge of monitoring, tracking and approving this resource. Selecting the reviewer is done via the **[!UICONTROL Advanced parameters]** link.
+Clique na guia **[!UICONTROL General]** para selecionar os operadores ou grupos de operadores responsáveis pelo monitoramento, rastreamento e aprovação deste recurso. A seleção do revisor é feita por meio do link **[!UICONTROL Advanced parameters]**.
 
 * O operador para o qual o recurso é atribuído é responsável por rastreá-lo.
 * O operador de aprovação é responsável pela aprovação do recurso de marketing. Eles serão notificados quando o processo de validação de recursos for iniciado.
 
-   If no reviewer is selected, the resource **[!UICONTROL cannot be]** subject to approval.
+   Se nenhum revisor estiver selecionado, o recurso **[!UICONTROL não poderá estar]** sujeito a aprovação.
 
 * Se necessário, também pode-se especificar um leitor de prova.
 
-É possível especificar uma data de disponibilidade (indicativa) para o recurso. Beyond this date, it will appear with **[!UICONTROL Late]** status.
+É possível especificar uma data de disponibilidade (indicativa) para o recurso. Além dessa data, ele aparecerá com o status **[!UICONTROL Late]**.
 
 ## Trabalho colaborativo em recursos {#collaborative-work-on-resources}
 
@@ -65,7 +65,7 @@ Click the **[!UICONTROL General]** tab to select the operators or groups of oper
 
 >[!NOTE]
 >
->The **[!UICONTROL History]** tab contains the download and update log for the resource. The **[!UICONTROL Details]** button lets you view the selected version:
+>A guia **[!UICONTROL History]** contém os logs de download e de atualização do recurso. O botão **[!UICONTROL Details]** permite visualizar a versão selecionada:
 
 ### Bloquear/desbloquear um recurso {#locking-unlocking-a-resource}
 
@@ -77,15 +77,15 @@ Uma mensagem especial notifica todos os operadores que tentarem acessá-lo:
 
 ![](assets/s_ncs_user_mkg_resource_locked.png)
 
-The **[!UICONTROL Tracking]** tab indicates the name of the operator who locked the resource and the planned update date.
+A guia **[!UICONTROL Tracking]** indica o nome do operador que bloqueou o recurso e a data de atualização planejada.
 
 ![](assets/s_ncs_user_mkg_resource_locked_date.png)
 
-To lock a resource, you must click the resource followed by the **[!UICONTROL Lock]** button in the resource dashboard.
+Para bloquear um recurso, é necessário clicar no recurso seguido pelo botão **[!UICONTROL Lock]** no painel de recursos.
 
 ![](assets/s_ncs_user_mkg_resource_lock.png)
 
-You can indicate the planned return date in the **[!UICONTROL Tracking]** tab of the resource.
+É possível indicar a data de retorno planejada na guia **[!UICONTROL Tracking]** do recurso.
 
 ![](assets/s_ncs_user_mkg_resource_lock_date.png)
 
@@ -101,33 +101,33 @@ Se necessário, também é possível desbloqueá-lo manualmente no painel.
 
 ### Fóruns de discussão {#discussion-forums}
 
-For each resource, the **[!UICONTROL Forum]** tab lets participants exchange information.
+Em cada recurso, a guia **[!UICONTROL Forum]** permite que os participantes troquem informações.
 
-[Os fóruns](../../campaign/using/discussion-forums.md) de discussão explicam como os fóruns de discussão operam no Adobe Campaign.
+[Fóruns de discussão](../../campaign/using/discussion-forums.md) explica como os fóruns de discussão operam no Adobe Campaign.
 
 ## Ciclo de vida de um recurso de marketing {#life-cycle-of-a-marketing-resource}
 
 Quando o recurso é criado, os operadores do Adobe Campaign são indicados para projetar, revisar, aprovar e publicar o recurso. Uma duração pode ser determinada para essas campanhas.
 
-The **[!UICONTROL Tracking]** tab lets you monitor any actions carried out on the resource: approvals, approval refusals, related comments, or publications.
+A guia **[!UICONTROL Tracking]** permite monitorar qualquer ação realizada no recurso: aprovações, rejeições de aprovações, comentários relacionados ou publicações.
 
-The **[!UICONTROL History]** tab displays file transfers carried out for this resource.
+A guia **[!UICONTROL History]** exibe as transferências de arquivos realizadas para esse recurso.
 
 ### Processo de aprovação {#approval-process}
 
-The expected availability date is displayed in the resource details, if it was specified in the **[!UICONTROL Tracking]** tab. Once this date is reached, you can execute the approval process using the **[!UICONTROL Submit for approval]** button in the resource dashboard. O status do recurso muda para **[!UICONTROL Approval in progress]**.
+A data esperada de disponibilidade é exibida nos detalhes do recurso, se ela foi especificada na guia **[!UICONTROL Tracking]**. Depois que essa data for atingida, é possível executar o processo de aprovação usando o botão **[!UICONTROL Submit for approval]** no painel de recursos. O status do recurso é alterado para **[!UICONTROL Approval in progress]**.
 
-A resource can be approved via the **[!UICONTROL Approve resource]** button on its dashboard.
+Um recurso pode ser aprovado por meio do botão **[!UICONTROL Approve resource]** no painel.
 
 ![](assets/s_ncs_user_task_valid_date.png)
 
-Os operadores autorizados podem aceitar ou rejeitar aprovações. This action is possible either: via the email message sent (by clicking the link in the notification message) or via the console (by clicking the **[!UICONTROL Approve]** ) button.
+Os operadores autorizados podem aceitar ou rejeitar aprovações. Essa ação é possível: por meio da mensagem de email enviada (clicando no link da mensagem de notificação) ou pelo console (clicando no botão **[!UICONTROL Approve]**).
 
 A janela de aprovação permite inserir um comentário.
 
 ![](assets/s_ncs_user_mkg_resource_valid_ok.png)
 
-The **[!UICONTROL Tracking]** tab enables all operators to track the various stages of the approval process.
+A guia **[!UICONTROL Tracking]** permite que todos os operadores acompanhem os vários estágios do processo de aprovação.
 
 ![](assets/s_ncs_user_mkg_resource_log.png)
 
@@ -139,7 +139,7 @@ The **[!UICONTROL Tracking]** tab enables all operators to track the various sta
 
 Quando aprovado, o recurso de marketing deve ser publicado. O processo de publicação deve estar sujeito à implementação específica de acordo com os requisitos da empresa. Isso significa que os recursos podem ser publicados em uma extranet ou em qualquer outro servidor, informações específicas podem ser enviadas para um provedor de serviços externo etc.
 
-To publish a resource, click the **[!UICONTROL Publish]** button in the editing zone of the marketing resource dashboard.
+Para publicar um recurso, clique no botão **[!UICONTROL Publish]** na zona de edição do painel de recursos de marketing.
 
 ![](assets/s_ncs_user_mkg_resource_available.png)
 
@@ -147,16 +147,16 @@ To publish a resource, click the **[!UICONTROL Publish]** button in the editing 
 
 Publicar um recurso significa torná-lo disponível para uso (por outra tarefa, por exemplo). Publicações como tal variam dependendo da natureza do seu recurso: para um panfleto, publicar pode significar enviar o arquivo para uma impressora, para uma agência da Web, pode significar publicá-lo em um site etc.
 
-Para que o Adobe Campaign publique, você precisa criar um workflow adequado e vinculá-lo ao recurso. To do this, open the **[!UICONTROL Advanced settings]** box of the resource, then select the desired workflow in the **[!UICONTROL Post-processing]** field.
+Para que o Adobe Campaign publique, você precisa criar um workflow adequado e vinculá-lo ao recurso. Para fazer isso, abra a caixa do recurso **[!UICONTROL Advanced settings]** e selecione o fluxo de trabalho desejado no campo **[!UICONTROL Post-processing]**.
 
 ![](assets/mrm_asset_postprocessing_workflow.png)
 
 O workflow será executado:
 
-* When the reviewer clicks the **[!UICONTROL Publish resource]** link (or, if no reviewer was defined, the person in charge of the resource).
-* If the resource is managed via a marketing resource creation task, it will be executed when the task is set to **[!UICONTROL Finished]**, as long as the **[!UICONTROL Publish the marketing resource]** box is checked in the task (Refer to [Marketing resource creation task](../../campaign/using/creating-and-managing-tasks.md#marketing-resource-creation-task))
+* Quando o revisor clicar no link **[!UICONTROL Publish resource]** (ou, se nenhum revisor foi definido, a pessoa encarregada do recurso).
+* Se o recurso for gerenciado por meio de uma tarefa de criação de recurso de marketing, ele será executado quando a tarefa for definida como **[!UICONTROL Finished]**, desde que a caixa **[!UICONTROL Publish the marketing resource]** esteja marcada na tarefa (Consulte [Tarefa de criação de recurso de marketing](../../campaign/using/creating-and-managing-tasks.md#marketing-resource-creation-task))
 
-If a workflow isn&#39;t started immediately (if the workflow is stopped for instance), the status of the resource changes to **[!UICONTROL Pending publication]**. Once the workflow is started, the status of the resource changes to **[!UICONTROL Published]**. Este status não leva em conta os possíveis erros no processo de publicação. Verifique o status do seu workflow para verificar se ele foi executado corretamente.
+Se um fluxo de trabalho não for iniciado imediatamente (se ele for interrompido, por exemplo), o status do recurso será alterado para **[!UICONTROL Pending publication]**. Quando o fluxo de trabalho for iniciado, o status do recurso será alterado para **[!UICONTROL Published]**. Este status não leva em conta os possíveis erros no processo de publicação. Verifique o status do seu workflow para verificar se ele foi executado corretamente.
 
 ## Vincular um recurso a uma campanha {#linking-a-resource-to-a-campaign}
 
@@ -166,9 +166,9 @@ Os recursos de marketing podem ser associados a campanhas, desde que este recurs
 
 >[!NOTE]
 >
->For details on how to create and configure campaign templates, refer to [Campaign templates](../../campaign/using/marketing-campaign-templates.md#campaign-templates).
+>Para obter detalhes sobre como criar e configurar modelos de campanha, consulte [Modelos de campanha](../../campaign/using/marketing-campaign-templates.md#campaign-templates).
 
-Click the **[!UICONTROL Documents > Resources]** tab in the campaign dashboard, then click **[!UICONTROL Add]** to select the resource concerned.
+Clique na guia **[!UICONTROL Documents > Resources]** no painel de campanha e, em seguida, clique em **[!UICONTROL Add]** para selecionar o recurso relacionado.
 
 ![](assets/s_ncs_user_mkg_resource_ref.png)
 
@@ -176,9 +176,9 @@ Você pode filtrar recursos por status, natureza ou tipo ou aplicar um filtro pe
 
 ![](assets/s_ncs_user_mkg_resource_ref_filter.png)
 
-Click **[!UICONTROL OK]** to add the resource to the list of marketing resources referenced for this campaign.
+Clique em **[!UICONTROL OK]** para adicionar o recurso à lista de recursos de marketing destinados a essa campanha.
 
-The **[!UICONTROL Details]** button lets you edit and view it.
+O botão **[!UICONTROL Details]** permite editá-lo e visualizá-lo.
 
 Os recursos adicionados serão exibidos no painel. Eles também poderão ser editados lá.
 
@@ -190,7 +190,7 @@ Os recursos de marketing podem ser associados a deliveries por meio de delivery 
 
 >[!NOTE]
 >
->Para obter mais informações sobre contornos de distribuição, consulte [Associando e estruturando recursos vinculados por meio de um contorno](../../campaign/using/marketing-campaign-deliveries.md#associating-and-structuring-resources-linked-via-a-delivery-outline)de entrega.
+>Para obter mais informações sobre delivery outlines, consulte [Associar e estruturar recursos vinculados por meio de um delivery outline](../../campaign/using/marketing-campaign-deliveries.md#associating-and-structuring-resources-linked-via-a-delivery-outline).
 
 ## Gerenciamento de estoque {#stock-management}
 
@@ -198,13 +198,13 @@ Você pode associar um recurso de marketing a um ou mais estoques para gerenciar
 
 >[!NOTE]
 >
->For more information on stock management in Adobe Campaign, refer to [Stock management](../../campaign/using/providers--stocks-and-budgets.md#stock-management).
+>Para obter mais informações sobre gerenciamento de estoque no Adobe Campaign, consulte [Gerenciamento de estoque](../../campaign/using/providers--stocks-and-budgets.md#stock-management).
 
 Para associar um recurso de marketing a um estoque, edite o mapa de ações e edite ou crie um estoque. Adicione uma linha de estoque e selecione o recurso de marketing correspondente.
 
 ![](assets/s_ncs_user_task_in_a_stock.png)
 
-If necessary, you can edit the selected resource via the **[!UICONTROL Edit the link]** icon (magnifying glass) located to the right of the resource once it has been selected.
+Se necessário, você poderá editar o recurso selecionado por meio do ícone (lupa) **[!UICONTROL Edit the link]** localizado à direita do recurso depois de selecioná-lo.
 
 Especifique o estoque inicial e o alerta de estoque e salve.
 
@@ -216,9 +216,9 @@ Quando o estoque for insuficiente, um aviso será enviado para os operadores rel
 
 ## Funções avançadas {#advanced-functions}
 
-O painel de recursos de marketing permite que você realize os tipos comuns de operações: adicionar, editar, bloquear/desbloquear, aprovar, publicar. Você poderá criar outros tipos de recursos de marketing e acessar funcionalidades avançadas através da árvore do Adobe Campaign. To do this, click **[!UICONTROL Explorer]** in the Adobe Campaign home page.
+O painel de recursos de marketing permite que você realize os tipos comuns de operações: adicionar, editar, bloquear/desbloquear, aprovar, publicar. Você poderá criar outros tipos de recursos de marketing e acessar funcionalidades avançadas através da árvore do Adobe Campaign. Para fazer isso, clique em **[!UICONTROL Explorer]** na página inicial do Adobe Campaign.
 
-By default, marketing resources are stored in the **[!UICONTROL MRM > Marketing resources]** node of the tree.
+Por padrão, os recursos de marketing são armazenados no nó **[!UICONTROL MRM > Marketing resources]** da árvore.
 
 ![](assets/s_ncs_user_mkg_resource_create_from_list.png)
 
