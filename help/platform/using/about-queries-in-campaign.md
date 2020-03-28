@@ -14,7 +14,7 @@ discoiquuid: 08161b4a-7196-41db-b3df-68012a9fc2f8
 index: y
 internal: n
 snippet: y
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: cf7c90f0ea9fbce3a4fd53f24189617cbd33fc40
 
 ---
@@ -24,12 +24,12 @@ source-git-commit: cf7c90f0ea9fbce3a4fd53f24189617cbd33fc40
 
 A ferramenta de query do Adobe Campaign pode ser encontrada em vários níveis do software: para criar uma população do target, segmentação de clientes, logs de rastreamento de extração e filtragem, filtros de compilação etc.
 
-A ferramenta de query do Adobe Campaign permite consultar um banco de dados usando um assistente dedicado: o editor de query genérico. It is accessed via the **[!UICONTROL Tools > Generic query editor...]** menu. Ele permite extrair informações armazenadas em um banco de dados e organizar, agrupar, classificar etc. O usuário pode, por exemplo, recuperar destinatários que clicaram mais de &quot;n&quot; vezes no link de um boletim informativo em um determinado período. Essa ferramenta permite coletar, classificar e exibir resultados com base nas suas necessidades.
+A ferramenta de query do Adobe Campaign permite consultar um banco de dados usando um assistente dedicado: o editor de query genérico. Ele é acessado no menu **[!UICONTROL Tools > Generic query editor...]**. Ele permite extrair informações armazenadas em um banco de dados e organizar, agrupar, classificar etc. O usuário pode, por exemplo, recuperar destinatários que clicaram mais de &quot;n&quot; vezes no link de um boletim informativo em um determinado período. Essa ferramenta permite coletar, classificar e exibir resultados com base nas suas necessidades.
 
 Além disso, combina todas as possibilidades de query do Adobe Campaign. Ela permite, por exemplo, criar e salvar filtros de restrição. Isso significa que um filtro de usuário criado no Editor de query genérico pode ser usado na caixa Query de um workflow de direcionamento etc.
 
 As consultas são criadas usando campos da tabela selecionada ou usando uma fórmula.
 
-[Clique aqui](../../workflow/using/query.md) para descobrir o editor de consulta do Campaign.
+[Clique aqui](../../workflow/using/query.md) para conhecer o editor de consulta do Campaign.
 
 ![](assets/query_recipients_4.png)
