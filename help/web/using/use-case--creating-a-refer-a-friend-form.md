@@ -14,7 +14,7 @@ discoiquuid: bbb1154f-2818-489c-9860-0e860596cbf7
 index: y
 internal: n
 snippet: y
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 36beb1eca48c698634c7548e0f931ab3fe17c021
 
 ---
@@ -70,7 +70,7 @@ Para configurar e criar o bloco de referência, siga as etapas abaixo:
 
    ![](assets/s_ncs_admin_survey_viral_sample_4b.png)
 
-1. Em seguida, crie o template do delivery vinculado ao serviço de informação criado durante a etapa 1. It will be selected in the **[!UICONTROL Choose scenario]** field of the information service.
+1. Em seguida, crie o template do delivery vinculado ao serviço de informação criado durante a etapa 1. Ele será selecionado no campo **[!UICONTROL Choose scenario]** do serviço de informações.
 
    O template do delivery usado para criar a mensagem de oferta de referência contém as seguintes informações:
 
@@ -126,7 +126,7 @@ Para configurar e criar o bloco de referência, siga as etapas abaixo:
 
    ![](assets/s_ncs_admin_survey_viral_sample_8.png)
 
-   The referee is added to the visitor folder in the **[!UICONTROL Administration > Visitors node]**:
+   O indicado é adicionado à pasta do visitante no nó **[!UICONTROL Administration > Visitors]**:
 
    ![](assets/s_ncs_admin_survey_viral_sample_9.png)
 
