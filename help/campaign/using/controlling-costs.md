@@ -14,7 +14,7 @@ discoiquuid: 892b93ed-cb0e-4af5-a1ae-eff0c8b703c6
 index: y
 internal: n
 snippet: y
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: b47dcfa0e4ee2e5e43e7aa14b94e12fd70ff9c2d
 
 ---
@@ -36,33 +36,33 @@ As etapas a seguir devem ser aplicadas para implementar o gerenciamento de orça
 
 1. Definir o orçamento
 
-   For more on this, refer to [Creating a budget](#creating-a-budget).
+   Para obter mais informações, consulte [Criação de orçamento](#creating-a-budget).
 
 1. Definir o método de cálculo de custo
 
-   As estruturas de custo são definidas para os provedores de serviços. See [Creating a service provider and its cost categories](../../campaign/using/providers--stocks-and-budgets.md#creating-a-service-provider-and-its-cost-categories).
+   As estruturas de custo são definidas para os provedores de serviços. Consulte [Criação um provedor de serviços e categorias de custo](../../campaign/using/providers--stocks-and-budgets.md#creating-a-service-provider-and-its-cost-categories).
 
 1. Definir os custos da campanha (remessas/tarefas)
 
-   Os custos incorridos pelas entregas e tarefas são alimentados individualmente ou globalmente para o template de campanha. See [Calculation of costs and stocks](../../campaign/using/marketing-campaign-deliveries.md#calculation-of-costs-and-stocks).
+   Os custos incorridos pelas entregas e tarefas são alimentados individualmente ou globalmente para o template de campanha. Consulte [Cálculo de custos e estoques](../../campaign/using/marketing-campaign-deliveries.md#calculation-of-costs-and-stocks).
 
 1. Consolidação
 
    De acordo com o status do progresso das tarefas, remessas e campanhas, os custos serão calculados e passados para o orçamento correspondente.
 
-   When the creation of the campaign is sufficiently advanced, the progress status of the campaign budget can be changed to **[!UICONTROL Specified]**. O custo calculado do programa é então inserido automaticamente com os custos calculados na campanha. See [Cost commitment, calculation and charging](#cost-commitment--calculation-and-charging).
+   Quando a criação da campanha está suficientemente avançada, o status do progresso do orçamento pode ser alterado para **[!UICONTROL Specified]**. O custo calculado do programa é então inserido automaticamente com os custos calculados na campanha. Consulte [Compromisso de custo, cálculo e cobrança](#cost-commitment--calculation-and-charging).
 
 ## Criar um orçamento {#creating-a-budget}
 
-Budgets are created in the map, via the **[!UICONTROL Campaign management > Budgets]** node. The **[!UICONTROL New]** button in the toolbar lets you create a budget.
+Os orçamentos são criados no mapa, através do nó **[!UICONTROL Campaign management > Budgets]**. O botão **[!UICONTROL New]** na barra de ferramentas permite criar um orçamento.
 
 * Adicionar um novo orçamento
 
-   Click the **[!UICONTROL New]** icon, name and save the budget.
+   Clique no ícone **[!UICONTROL New]**, nomeie o orçamento e o salve.
 
 * Inserir a quantidade inicial
 
-   Indique o valor alocado no campo relevante. Os outros montantes são inseridos automaticamente. Consulte [Calculando valores](#calculating-amounts).
+   Indique o valor alocado no campo relevante. Os outros montantes são inseridos automaticamente. Consulte [Cálculo de valores](#calculating-amounts).
 
 * Definir o período de validade
 
@@ -70,7 +70,7 @@ Budgets are created in the map, via the **[!UICONTROL Campaign management > Budg
 
 * Despesas
 
-   Crie as categorias de despesas às quais os custos atribuídos a esse orçamento para campanhas, tarefas etc. podem ser vinculados. Consulte Categorias [de despesas](#expense-categories).
+   Crie as categorias de despesas às quais os custos atribuídos a esse orçamento para campanhas, tarefas etc. podem ser vinculados. Consulte [Categorias de despesas](#expense-categories).
 
    ![](assets/s_ncs_user_budget_create_and_save.png)
 
@@ -78,7 +78,7 @@ Budgets are created in the map, via the **[!UICONTROL Campaign management > Budg
 >
 >Você pode selecionar um orçamento relacionado.
 >
->Para obter mais informações, consulte [Vincular um orçamento a outro](#linking-a-budget-to-another).
+>Para obter mais informações, consulte [Vínculo de um orçamento com outro](#linking-a-budget-to-another).
 
 ### Calcular valores {#calculating-amounts}
 
@@ -86,7 +86,7 @@ Cada orçamento é definido por um valor inicial que será diminuído com os cus
 
 >[!NOTE]
 >
->The amounts entered for the categories must match the budget envelope defined in the **[!UICONTROL Allocated]** field.
+>Os valores inseridos para as categorias devem corresponder ao envelope de orçamento definido no campo **[!UICONTROL Allocated]**.
 
 Para campanhas, de acordo com o nível de compromisso, um custo pode ser planejado, comprometido ou reservado para uma ação futura.
 
@@ -94,28 +94,28 @@ Para campanhas, de acordo com o nível de compromisso, um custo pode ser planeja
 
 >[!CAUTION]
 >
->When a campaign is created, the progress status in **[!UICONTROL Budget]** must be set to **[!UICONTROL Defined]** for the costs to be taken into account on execution. If the status is **[!UICONTROL Being edited]**, the costs will not be consolidated.
+>Quando uma campanha é criada, o status do progresso em **[!UICONTROL Budget]** deve ser definido para **[!UICONTROL Defined]** para que os custos sejam considerados na execução. Se o status for **[!UICONTROL Being edited]**, os custos não são consolidados.
 >   
->The option **[!UICONTROL Commitment level]** represents a projection of costs into the future before they are charged to the budget. De acordo com o progresso de uma campanha, tarefa ou delivery, pode-se decidir atribuir um nível de compromisso mais alto ou mais baixo (1. Planejado, 2. Reservado, 3. Comprometido) usando a caixa de combinação.
+>A opção **[!UICONTROL Commitment level]** representa uma projeção de custos no futuro antes de serem cobradas no orçamento. De acordo com o progresso de uma campanha, tarefa ou delivery, pode-se decidir atribuir um nível de compromisso mais alto ou mais baixo (1. Planejado, 2. Reservado, 3. Comprometido) usando a caixa de combinação.
 
 Por exemplo, o custo planejado estimado de uma campanha da Web é 45,000 Euros.
 
 ![](assets/s_user_edit_budget_node_impact_0.png)
 
-For the campaign, when the budget creation status is set to **[!UICONTROL Defined]**, the real cost of the campaign (or, if none, the computed cost) will be carried over into the budget totals.
+Para a campanha, quando o status de criação do orçamento é estabelecido como **[!UICONTROL Defined]**, o custo real da campanha (ou o custo calculado) é inserido nos totais do orçamento.
 
 ![](assets/s_user_budget_in_op_a.png)
 
-According to the level of commitment of the campaign budget, the amount will be entered in the **[!UICONTROL Planned]**, **[!UICONTROL Reserved]** or **[!UICONTROL Committed]** field.
+De acordo com o nível de compromisso do orçamento da campanha, o valor é inserido nos campos **[!UICONTROL Planned]**, **[!UICONTROL Reserved]** ou **[!UICONTROL Commited]**.
 
 O nível de comprometimento pode ser modificado:
 
-* in the **campaign** level, in the **[!UICONTROL Budget]** window, found in the **[!UICONTROL Edit]** tab. É onde os orçamentos, custos e despesas são configurados.
-* in the **tasks** level, in the **[!UICONTROL Expenses and revenues]** window.
+* no nível da **campanha**, na janela **[!UICONTROL Budget]**, encontrada na guia **[!UICONTROL Edit]**. É onde os orçamentos, custos e despesas são configurados.
+* no nível de **tarefas**, na janela **[!UICONTROL Expenses and revenues]**.
 
 ![](assets/s_user_op_engagement_level_costs.png)
 
-When the budget is **[!UICONTROL Reserved]**, the update is performed automatically for the charged budget.
+Quando o status for **[!UICONTROL Reserved]**, a atualização é executada automaticamente para o orçamento cobrado.
 
 ![](assets/s_user_edit_budget_node_impact_2.png)
 
@@ -123,13 +123,13 @@ O procedimento é o mesmo em nível de tarefa.
 
 ![](assets/s_user_edit_budget_node_impact_task.png)
 
-When an expenditure gives rise to an invoice and the invoice is paid, its amount is then entered in the **[!UICONTROL Invoiced]** field.
+Quando uma despesa cria uma fatura e o pagamento é efetuado, seu valor é inserido no campo **[!UICONTROL Invoiced]**.
 
 ### Categorias de despesas {#expense-categories}
 
-Os valores podem ser distribuídos em várias categorias de despesas para melhorar a legibilidade dos dados e para ter relatórios mais detalhados dos investimentos em marketing. The expense categories are defined during budget creation, via the **[!UICONTROL Budgets]** node of the tree.
+Os valores podem ser distribuídos em várias categorias de despesas para melhorar a legibilidade dos dados e para ter relatórios mais detalhados dos investimentos em marketing. As categorias de despesas são definidas durante a criação do orçamento, por meio do nó **[!UICONTROL Budgets]** da árvore.
 
-To add a category, click the **[!UICONTROL Add]** button in the lower section of the window.
+Para adicionar uma categoria, clique no botão **[!UICONTROL Add]** na seção inferior da janela.
 
 ![](assets/s_user_budget_category.png)
 
@@ -137,7 +137,7 @@ To add a category, click the **[!UICONTROL Add]** button in the lower section of
 
 ### Vincular um orçamento a outro {#linking-a-budget-to-another}
 
-É possível vincular um orçamento a um orçamento principal. To do this, select the main budget in the **[!UICONTROL related budget]** field of the secondary budgets.
+É possível vincular um orçamento a um orçamento principal. Para fazer isso, selecione o orçamento principal no campo **[!UICONTROL related budget]** dos orçamentos secundários.
 
 ![](assets/budget_link.png)
 
@@ -163,7 +163,7 @@ Cada linha de despesa contém as seguintes informações:
 * A linha correspondente da fatura (somente MRM).
 * Lista de custos calculados pela categoria de custo (se existir uma estrutura de custos).
 
-No exemplo acima, a linha de despesa editada contém os custos calculados para o delivery de **Novos cartões** para a campanha do **Loyalty Spring Pack.** When the delivery is edited, the **[!UICONTROL Direct Mail]** tab lets you see how the expense line is calculated.
+No exemplo acima, a linha de despesa editada contém os custos calculados para o delivery de **Novos cartões** para a campanha do **Loyalty Spring Pack.** Quando o delivery é editado, a guia **[!UICONTROL Direct Mail]** permite ver como a linha de despesa é calculada.
 
 O cálculo de custo para esse delivery baseia-se nas categorias de custo selecionadas para o provedor de serviços relacionado:
 
@@ -175,7 +175,7 @@ De acordo com as categorias de custo selecionadas, as estruturas de custo corres
 
 >[!NOTE]
 >
->As categorias e estruturas de custo são apresentadas em [Criação de um provedor de serviços e suas categorias](../../campaign/using/providers--stocks-and-budgets.md#creating-a-service-provider-and-its-cost-categories)de custo.
+>As categorias e estruturas de custo são apresentadas na [Criação de um provedor de serviços e suas categorias de custo](../../campaign/using/providers--stocks-and-budgets.md#creating-a-service-provider-and-its-cost-categories).
 
 ## Compromisso de custo, cálculo e carregamento {#cost-commitment--calculation-and-charging}
 
@@ -187,9 +187,9 @@ Os custos dividem-se em três categorias:
 
 1. Custo estimado provisional.
 
-   O custo provisional estimado é uma estimativa dos custos dos processos da campanha. Contanto que seja editado, os valores de entrada não são consolidados. It must have **[!UICONTROL Specified]** status for the amounts input to be taken into account in the calculations.
+   O custo provisional estimado é uma estimativa dos custos dos processos da campanha. Contanto que seja editado, os valores de entrada não são consolidados. Ele deve ter o status **[!UICONTROL Specified]** para que os valores sejam considerados nos cálculos.
 
-   Essa quantia é entrada manualmente e pode ser dividida em várias categorias de despesas. To bread down a cost, click the **[!UICONTROL Breakdown...]** link, and then the **[!UICONTROL Add]** button to define a new amount.
+   Essa quantia é entrada manualmente e pode ser dividida em várias categorias de despesas. Para o detalhamento de um custo, clique no link **[!UICONTROL Breakdown...]** e, em seguida, no botão **[!UICONTROL Add]** para definir uma novo valor.
 
    ![](assets/s_user_edit_budget_tab_ventil.png)
 
@@ -207,7 +207,7 @@ Os custos dividem-se em três categorias:
    * Para o plano de marketing, como para o programa, o custo calculado é a soma dos custos calculados para as campanhas. Se esses custos não forem especificados, o custo calculado usará os custos provisional estimados.
    >[!NOTE]
    >
-   >The **[!UICONTROL Breakdown]** link lets you view the details of the calculation and the last cost calculation date.
+   >O link **[!UICONTROL Breakdown]** permite visualizar os detalhes e a última data de cálculo do custo.
 
 1. Custo real
 
@@ -229,19 +229,19 @@ Vamos criar uma campanha com:
 
 #### Etapa 1 - Criar o orçamento {#step-1---creating-the-budget}
 
-Crie um novo orçamento por meio do **[!UICONTROL Campaign management > Budgets]** nó.
+Crie um novo orçamento por meio do nó **[!UICONTROL Campaign management > Budgets]**.
 
-Define a budget of 10,000 Euros in the **[!UICONTROL Allocated]** field of the **[!UICONTROL Amounts]** section. Adicione duas categorias de despesas na seção inferior da janela:
+Defina um orçamento de 10.000 euros no campo **[!UICONTROL Allocated]** da seção **[!UICONTROL Amounts]**. Adicione duas categorias de despesas na seção inferior da janela:
 
 ![](assets/s_user_cost_mgmt_sample_1.png)
 
 #### Etapa 2 - Configurar o provedor de serviços e definir as estruturas de custo {#step-2---configuring-the-service-provider-and-defining-the-cost-structures}
 
-Create a service provider and a service template with its cost structure from the **[!UICONTROL Administration > Campaigns]** node.
+Crie um provedor de serviços e um modelo de serviço com a estrutura de custo do nó **[!UICONTROL Administration > Campaigns]**.
 
-Para obter mais informações, consulte [Criação de um provedor de serviços e suas categorias](../../campaign/using/providers--stocks-and-budgets.md#creating-a-service-provider-and-its-cost-categories)de custo.
+Para obter mais informações, consulte [Criação de um provedor de serviços e suas categorias de custo](../../campaign/using/providers--stocks-and-budgets.md#creating-a-service-provider-and-its-cost-categories).
 
-* For direct mail deliveries, create cost categories **[!UICONTROL Envelopes]** (types 114x229 and 162x229), **[!UICONTROL Postage]** and **[!UICONTROL Print]** (types A3 and A4). E, em seguida, crie as seguintes estruturas de custo:
+* Para deliveries de correspondência direta, crie **[!UICONTROL Envelopes]** de categorias de custo (tipos 114x229 e 162x229), **[!UICONTROL Postage]** e **[!UICONTROL Print]** (tipos A3 e A4). E, em seguida, crie as seguintes estruturas de custo:
 
    ![](assets/s_user_cost_mgmt_sample_2.png)
 
@@ -251,11 +251,11 @@ Para obter mais informações, consulte [Criação de um provedor de serviços e
 
 * Para tarefas, crie as duas categorias de custo a seguir:
 
-   1. **[!UICONTROL Room reservation]** (Sala pequena e Sala grande), com uma estrutura de custos **fixa** no montante de 300 e 500 Euros:
+   1. **[!UICONTROL Reserva de quarto]** (Quarto pequeno e quarto grande), com uma estrutura de custo **fixa** na quantidade de 300 e 500 euros:
 
       ![](assets/s_user_cost_mgmt_sample_6.png)
 
-   1. **[!UICONTROL Creation]** (Tipo de modelo **de** conteúdo), com uma estrutura de custos **diários** de 300 Euros:
+   1. **[!UICONTROL Criação]** (tipo de **modelo de conteúdo**), com uma estrutura de custo **diária** de 300 euros:
 
       ![](assets/s_user_cost_mgmt_sample_7.png)
 
@@ -273,7 +273,7 @@ Especifique o custo provisional estimado, com detalhamento:
 
 ![](assets/s_user_cost_mgmt_sample_9.png)
 
-Clique em **[!UICONTROL Ok]** e **[!UICONTROL Save]** para confirmar essas informações. O custo calculado da campanha é, então, atualizado com o custo provisional estimado.
+Clique em **[!UICONTROL Ok]** e então, **[!UICONTROL Save]** para confirmar essas informações. O custo calculado da campanha é, então, atualizado com o custo provisional estimado.
 
 #### Etapa 4 - Criar o delivery de mala direta {#step-4---creating-the-direct-mail-delivery}
 
@@ -297,7 +297,7 @@ Se a aprovação do orçamento for habilitada para esta campanha, aprove o orça
 
 ![](assets/s_user_cost_mgmt_sample_10b.png)
 
-The expense line concerning the delivery is added in the **[!UICONTROL Edit > Budget]** tab of the campaign. Edite-a para exibir os detalhes do cálculo.
+A linha de despesas com relação a entrega é adicionada na guia **[!UICONTROL Edit > Budget]** da campanha. Edite-a para exibir os detalhes do cálculo.
 
 ![](assets/s_user_cost_mgmt_sample_11.png)
 
@@ -309,21 +309,21 @@ Ao editar o custo calculado, é possível verificar a divisão de custo e o stat
 
 #### Etapa 5 - Criar tarefas {#step-5---creating-tasks}
 
-Para essa campanha, adicionaremos as duas tarefas para as quais as estruturas de custo foram criadas anteriormente (consulte [Etapa 2 - Configurar o provedor de serviço e definir as estruturas](#step-2---configuring-the-service-provider-and-defining-the-cost-structures)de custo). To do this, in the campaign dashboard, click the **[!UICONTROL Add a task]** button. Name the task and click **[!UICONTROL Save]**.
+Nessa campanha são adicionadas duas tarefas para as quais as estruturas de custo foram criadas anteriormente (consulte [Etapa 2 - Configuração do provedor de serviço e definição das estruturas de custo](#step-2---configuring-the-service-provider-and-defining-the-cost-structures)). Para fazer isso, no painel de campanha, clique no botão **[!UICONTROL Add a task]**. Nomeie a tarefa e clique em **[!UICONTROL Save]**.
 
 A tarefa é, então, adicionada à lista de tarefas. É necessário editá-la para configurá-la.
 
-In the **[!UICONTROL Properties]** tab, select the service and the corresponding cost category:
+Na guia **[!UICONTROL Properties]**, selecione o serviço e a categoria de custo correspondente:
 
 ![](assets/s_user_cost_mgmt_sample_14.png)
 
-Next, click the **[!UICONTROL Expenses and revenue]** icon of the task and specify the estimated provisional cost.
+Em seguida, clique no ícone **[!UICONTROL Expenses and revenue]** da tarefa e especifique o custo provisional estimado.
 
 ![](assets/s_user_cost_mgmt_sample_15.png)
 
 Quando a tarefa for salva, o custo calculado é especificado com o valor inserido para o custo provisional estimado.
 
-When the task is completed (status **[!UICONTROL Finished]** ), the calculated cost is automatically updated with the cost of the Large Room as entered in its cost structure. Esse custo também aparece nesta categoria da divisão de custos.
+Quando a tarefa for concluída (com o status **[!UICONTROL Finished]**), o custo calculado é atualizado automaticamente com o custo do Quarto grande, conforme inserido na estrutura de custos. Esse custo também aparece nesta categoria da divisão de custos.
 
 Em seguida, crie uma segunda tarefa de acordo com o mesmo procedimento; agendada por cinco dias e relacionada à estrutura de custos criada anteriormente.
 
@@ -335,7 +335,7 @@ Quando a tarefa é concluída, o custo calculado é especificado com o valor da 
 
 #### Etapa 6 - Atualizar o status do orçamento da campanha {#step-6---update-the-campaign-budget-status}
 
-When the campaign is configured, its status can be updated by setting it to **[!UICONTROL Specified]**. O custo calculado da campanha indicará a soma dos custos calculados do delivery e das tarefas da campanha:
+Quando a campanha é configurada, é possível atualizar o status ao alterá-lo para **[!UICONTROL Specified]**. O custo calculado da campanha indicará a soma dos custos calculados do delivery e das tarefas da campanha:
 
 ![](assets/s_user_cost_mgmt_sample_18.png)
 
@@ -355,7 +355,7 @@ No contexto de MRM, é possível salvar pedidos com um provedor de serviços e e
 
 ### Criação de pedidos {#order-creation}
 
-To save a new order with a service provider, click the **[!UICONTROL MRM > Orders]** node of the tree, and then click the **[!UICONTROL New]** button.
+Para salvar um novo pedido com um provedor de serviços, clique no nó **[!UICONTROL MRM > Orders]** da árvore e clique no botão **[!UICONTROL New]**.
 
 Especifique o número do pedido, o provedor de serviços e o valor total do pedido.
 
@@ -365,18 +365,18 @@ Especifique o número do pedido, o provedor de serviços e o valor total do pedi
 
 Para cada provedor de serviços, é possível salvar faturas e definir seus status e o orçamento cobrado.
 
-Invoices are created and stored in the **[!UICONTROL MRM > Invoices]** node of the Adobe Campaign tree.
+As faturas são criadas e armazenadas no nó **[!UICONTROL MRM > Invoices]** da árvore do Adobe Campaign.
 
 ![](assets/s_user_cost_create_invoice.png)
 
-Uma fatura consiste em linhas de fatura cujo total permite que o valor seja calculado automaticamente. These lines are created manually from the **[!UICONTROL Invoice lines]** tab. Elas podem ser associados a um pedido para carregar as informações nos pedidos.
+Uma fatura consiste em linhas de fatura cujo total permite que o valor seja calculado automaticamente. Essas linhas são criadas manualmente na guia **[!UICONTROL Invoice lines]**. Elas podem ser associados a um pedido para carregar as informações nos pedidos.
 
 ![](assets/s_user_cost_invoice_add_line.png)
 
-The invoices of each service provider are displayed in the **[!UICONTROL Invoices]** tab of the profile:
+As faturas de cada provedor de serviços são exibidas na guia **[!UICONTROL Invoices]** do perfil:
 
 ![](assets/s_ncs_user_invoice_from_supplier.png)
 
-The **[!UICONTROL Details]** tab lets you display the content of the invoice.
+A guia **[!UICONTROL Details]** permite visualizar o conteúdo da fatura.
 
-Click **[!UICONTROL Add]** to create a new invoice.
+Clique em **[!UICONTROL Add]** para criar uma nova fatura.
