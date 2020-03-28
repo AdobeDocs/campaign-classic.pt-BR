@@ -14,7 +14,7 @@ discoiquuid: f87da08f-68b9-4e2b-821f-b3ff20e390f1
 index: y
 internal: n
 snippet: y
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: c10a0a11c6e9952aa47da1f7a15188c79c62508d
 
 ---
@@ -24,9 +24,9 @@ source-git-commit: c10a0a11c6e9952aa47da1f7a15188c79c62508d
 
 ## Sobre enriquecimento de dados {#about-enriching-data}
 
-This use case details possible uses of the **[!UICONTROL Enrichment]** activity in a targeting workflow. Para obter mais informações sobre como usar a **[!UICONTROL Enrichment]** atividade, consulte: [Enriquecimento](../../workflow/using/enrichment.md).
+Este caso de uso detalha possíveis usos da atividade **[!UICONTROL Enrichment]** em um workflow de direcionamento. Para obter mais informações sobre como usar a atividade **[!UICONTROL Enrichment]**, consulte [Enriquecimento](../../workflow/using/enrichment.md).
 
-Os contatos do banco de dados de marketing recebem um convite para participar de uma competição por meio de um aplicativo Web. The results of the competition are recovered in the **[!UICONTROL Competition results]** table. This table is linked to the contact table (**[!UICONTROL Recipients]**). A **[!UICONTROL Competition results]** tabela contém os seguintes campos:
+Os contatos do banco de dados de marketing recebem um convite para participar de uma competição por meio de um aplicativo Web. Os resultados da competição são recuperados na tabela **[!UICONTROL Competition results]**. Esta tabela está vinculada à tabela de contatos (**[!UICONTROL Recipients]**). A tabela **[!UICONTROL Competition results]** contém os seguintes campos:
 
 * Competition name (@game)
 * Trial number (@trial)
@@ -34,7 +34,7 @@ Os contatos do banco de dados de marketing recebem um convite para participar de
 
 ![](assets/uc1_enrich_1.png)
 
-A contact found in the **[!UICONTROL Recipients]** table can be linked to several lines in the **[!UICONTROL Competition results]** table. A relação entre essas duas tabelas é do tipo 1-n. Aqui está um exemplo dos logs de resultados de um recipient:
+Um contato encontrado na tabela **[!UICONTROL Recipients]** pode ser vinculado a várias linhas na tabela **[!UICONTROL Competition results]**. A relação entre essas duas tabelas é do tipo 1-n. Aqui está um exemplo dos logs de resultados de um recipient:
 
 ![](assets/uc1_enrich_2.png)
 
@@ -46,12 +46,12 @@ Para configurar esse caso de uso, criamos o seguinte workflow para construção 
 
 Para criar o workflow, aplique as seguintes etapas:
 
-1. Two **[!UICONTROL Query]** activities and one **[!UICONTROL Intersection]** activity are added to target new subscribers who entered last the competition.
-1. A **[!UICONTROL Enrichment]** atividade permite adicionar dados armazenados na **[!UICONTROL Competition results]** tabela. The **[!UICONTROL Score]** field which our delivery personalization will take place on is added to the work table of the workflow.
-1. The **[!UICONTROL Split]** type activity enables us to create recipient subsets based on scores.
-1. For each subset, a **[!UICONTROL Delivery]** type activity is added.
+1. Duas atividades **[!UICONTROL Query]** e uma atividade **[!UICONTROL Intersection]** são adicionadas para direcionar a novos assinantes que entraram por último na competição.
+1. A atividade **[!UICONTROL Enrichment]** permite adicionar dados armazenados na tabela **[!UICONTROL Competition results]**. O campo **[!UICONTROL Score]**, onde a personalização de delivery ocorrerá, é adicionado à tabela de trabalho do workflow.
+1. A atividade do tipo **[!UICONTROL Split]** permite criar subconjuntos de recipients com base em pontuações.
+1. Para cada subconjunto, uma atividade tipo **[!UICONTROL Delivery]** é adicionada.
 
-## Etapa 1: Direcionamento {#step-1--targeting}
+## Etapa 1 - Direcionamento {#step-1--targeting}
 
 A primeira query nos permite selecionar recipients que foram adicionados ao banco de dados nos últimos seis meses.
 
@@ -61,37 +61,37 @@ A segunda query nos permite selecionar os recipients que faziam parte da última
 
 ![](assets/uc1_enrich_5.png)
 
-An **[!UICONTROL Intersection]** type activity is then added to target the recipients added to the database within the last six months and who entered the last competition.
+Em seguida, uma atividade tipo **[!UICONTROL Intersection]** é adicionada para direcionar os recipients incluídos no banco de dados nos últimos seis meses e que entraram na última competição.
 
-## Etapa 2: Enriquecimento {#step-2--enrichment}
+## Etapa 2 - Enriquecimento {#step-2--enrichment}
 
-In this example, we want to personalize deliveries according to the **[!UICONTROL Score]** field stored in the **[!UICONTROL Competition results]** table. Esta tabela tem um relacionamento de tipo 1-n com a tabela de recipients. The **[!UICONTROL Enrichment]** activity enables us to add data from a table linked to the filtering dimension to the work table of the workflow.
+Neste exemplo, queremos personalizar os deliveries de acordo com o campo **[!UICONTROL Score]** armazenado na tabela **[!UICONTROL Competition results]**. Esta tabela tem um relacionamento de tipo 1-n com a tabela de recipients. A atividade **[!UICONTROL Enrichment]** permite adicionar dados de uma tabela vinculada à dimensão do filtro à tabela de trabalho do workflow.
 
-1. Na tela de edição da atividade de enriquecimento, selecione **[!UICONTROL Add data]**, depois **[!UICONTROL Data linked to the filtering dimension]** e clique em **[!UICONTROL Next]**.
+1. Na tela de edição da atividade de enriquecimento, selecione **[!UICONTROL Add data]**, então **[!UICONTROL Data linked to the filtering dimension]** e clique em **[!UICONTROL Next]**.
 
    ![](assets/uc1_enrich_6.png)
 
-1. Em seguida, selecione a **[!UICONTROL Data linked to the filtering dimension]** opção, selecione a **[!UICONTROL Competition results]** tabela e clique em **[!UICONTROL Next]**.
+1. Em seguida, selecione a opção **[!UICONTROL Data linked to the filtering dimension]**, selecione a tabela **[!UICONTROL Competition results]** e clique em **[!UICONTROL Next]**.
 
    ![](assets/uc1_enrich_7.png)
 
-1. Insira uma ID e um rótulo e selecione a **[!UICONTROL Limit the line count]** opção no **[!UICONTROL Data collected]** campo. In the **[!UICONTROL Lines to retrieve]** field, select &#39;1&#39; as a value. For each recipient, the enrichment activity will add a single line from the **[!UICONTROL Competition results]** table to the work table of the workflow. Clique em **[!UICONTROL Next]**.
+1. Digite um ID e um rótulo e selecione a opção **[!UICONTROL Limit the line count]** no campo **[!UICONTROL Data collected]**. No campo **[!UICONTROL Lines to retrieve]**, selecione &#39;1&#39; como um valor. A atividade de enriquecimento adicionará uma única linha da tabela **[!UICONTROL Competition results]** à tabela de trabalho do workflow para cada recipient. Clique em **[!UICONTROL Next]**.
 
    ![](assets/uc1_enrich_8.png)
 
-1. Neste exemplo, devemos recuperar a pontuação mais alta do recipient, mas apenas da última competição. To do this, add a filter to the **[!UICONTROL Competition name]** field to exclude all lines related to previous competitions. Clique em **[!UICONTROL Next]**.
+1. Neste exemplo, devemos recuperar a pontuação mais alta do recipient, mas apenas da última competição. Para fazer isso, adicione um filtro ao campo **[!UICONTROL Competition name]** para excluir todas as linhas relacionadas às competições anteriores. Clique em **[!UICONTROL Next]**.
 
    ![](assets/uc1_enrich_9.png)
 
-1. Go to the **[!UICONTROL Sort]** screen and click the **[!UICONTROL Add]** button, select the **[!UICONTROL Score]** field and check the box in the **[!UICONTROL descending]** column to sort items of the **[!UICONTROL Score]** fields in descending order. Para cada recipient, a atividade de enriquecimento adiciona uma linha que corresponde à pontuação mais alta para o último jogo. Clique em **[!UICONTROL Next]**.
+1. Vá para a tela **[!UICONTROL Sort]** e clique no botão **[!UICONTROL Add]**, selecione o campo **[!UICONTROL Score]** e marque a caixa na coluna **[!UICONTROL descending]** para classificar os itens dos campos **[!UICONTROL Score]** em ordem decrescente. Para cada recipient, a atividade de enriquecimento adiciona uma linha que corresponde à pontuação mais alta para o último jogo. Clique em **[!UICONTROL Next]**.
 
    ![](assets/uc1_enrich_10.png)
 
-1. Na **[!UICONTROL Data to add]** janela, clique duas vezes no **[!UICONTROL Score]** campo. For each recipient, the enrichment activity will add only the **[!UICONTROL Score]** field. Clique em **[!UICONTROL Finish]**.
+1. Na janela **[!UICONTROL Data to add]**, clique duas vezes no campo **[!UICONTROL Score]**. Para cada recipient, a atividade de enriquecimento adicionará somente o campo **[!UICONTROL Score]**. Clique em **[!UICONTROL Finish]**.
 
    ![](assets/uc1_enrich_11.png)
 
-Right-click the inbound transition of the enrichment activity and select **[!UICONTROL Display the target]**. A tabela de trabalho contém os seguintes dados:
+Clique com o botão direito do mouse na transição de entrada da atividade de enriquecimento e selecione **[!UICONTROL Display the target]**. A tabela de trabalho contém os seguintes dados:
 
 ![](assets/uc1_enrich_13.png)
 
@@ -107,9 +107,9 @@ O schema correspondente também foi enriquecido.
 
 ![](assets/uc1_enrich_14.png)
 
-## Etapa 3: Divisão e entrega {#step-3--split-and-delivery}
+## Etapa 3: Split e delivery {#step-3--split-and-delivery}
 
-To sort the recipients based on their scores, a **[!UICONTROL Split]** activity is added after the enrichment.
+Para classificar os recipients com base em suas pontuações, uma atividade **[!UICONTROL Split]** é adicionada após o enriquecimento.
 
 ![](assets/uc1_enrich_18.png)
 
@@ -121,11 +121,11 @@ To sort the recipients based on their scores, a **[!UICONTROL Split]** activity 
 
    ![](assets/uc1_enrich_17.png)
 
-1. O terceiro subconjunto (**perdedores**) contém todos os outros recipients. Go to the **[!UICONTROL General]** tab and check the **[!UICONTROL Generate complement]** box to target all recipients who did not achieve the two highest scores.
+1. O terceiro subconjunto (**perdedores**) contém todos os outros recipients. Acesse a guia **[!UICONTROL General]** e marque a caixa **[!UICONTROL Generate complement]** para direcionar todos os recipients que não atingiram as duas pontuações mais altas.
 
    ![](assets/uc1_enrich_19.png)
 
-1. Add a **[!UICONTROL Delivery]** type activity for each subset, using a different delivery template for each.
+1. Adicione uma atividade do tipo **[!UICONTROL Delivery]** para cada subconjunto, usando um template de delivery diferente para cada um.
 
    ![](assets/uc1_enrich_20.png)
 
