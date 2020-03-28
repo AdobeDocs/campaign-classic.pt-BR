@@ -14,7 +14,7 @@ discoiquuid: ef658468-e20b-45d9-a714-c152e55c1c79
 index: y
 internal: n
 snippet: y
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 20f835c357d016643ea1f3209ee4dfb6d3239f90
 
 ---
@@ -24,7 +24,7 @@ source-git-commit: 20f835c357d016643ea1f3209ee4dfb6d3239f90
 
 ## Definição do escopo {#definition-of-the-scope}
 
-Open the **[!UICONTROL Scope]** tab to choose your settings.
+Abra a guia **[!UICONTROL Scope]** para escolher as configurações.
 
 Os seguintes itens são obrigatórios:
 
@@ -51,9 +51,9 @@ Também é possível optar por realizar a simulação em todas as ofertas ou ape
 
 ## Adição de eixos de relatórios {#adding-reporting-axes}
 
-You can enhance the simulation analysis by adding reporting axes on the target or the offers themselves via the **[!UICONTROL Calculations]** tab.
+É possível aprimorar a análise da simulação adicionando eixos de relatórios no target ou nas próprias ofertas por meio da guia **[!UICONTROL Calculations]**.
 
-To do this, click the **[!UICONTROL Add]** button and choose the appropriate fields. Os eixos serão usados para calcular a simulação e são exibidos no relatório de análise. For more on this, refer to [Simulation tracking](../../interaction/using/simulation-tracking.md).
+Para fazer isso, clique no botão **[!UICONTROL Add]** e selecione os campos apropriados. Os eixos serão usados para calcular a simulação e são exibidos no relatório de análise. Para obter mais informações, consulte [Rastreamento de simulação](../../interaction/using/simulation-tracking.md).
 
 ![](assets/offer_simulation_011.png)
 
