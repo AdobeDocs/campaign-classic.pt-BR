@@ -14,7 +14,7 @@ discoiquuid: ad1ce80d-8976-430d-9964-e50d548b2822
 index: y
 internal: n
 snippet: y
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 7dbc876fae0bde78e3088ee1ab986cd09e9bcc38
 
 ---
@@ -22,16 +22,16 @@ source-git-commit: 7dbc876fae0bde78e3088ee1ab986cd09e9bcc38
 
 # Acessando os logs de rastreamento{#accessing-the-tracking-logs}
 
-When the delivery has been sent and tracking activated, the **[!UICONTROL Tracking]** technical workflow is in charge of retrieving the tracking data. Por padrão, isso é executado por hora.
+Quando o delivery é enviado e o rastreamento é ativado, o workflow técnico **[!UICONTROL Tracking]** é encarregado de obter os dados de rastreamento. Por padrão, isso é executado por hora.
 
-This information appears in the **[!UICONTROL Tracking]** tab of the profile of recipients targeted by the delivery, as in the following example:
+Essas informações aparecem na guia **[!UICONTROL Tracking]** do perfil de recipients direcionados pelo delivery, como no exemplo a seguir:
 
 ![](assets/s_ncs_user_select_tracking_tab_from_recipient.png)
 
-It is also accessible via the **[!UICONTROL Tracking]** tab of the delivery.
+Também é acessível por meio da guia **[!UICONTROL Tracking]** do delivery.
 
 ![](assets/s_ncs_user_select_tracking_tab_from_del.png)
 
 >[!NOTE]
 >
->If you cannot see the **[!UICONTROL Tracking]** tab of a delivery, it means that tracking has not been activated. Consulte [esta seção](../../delivery/using/how-to-configure-tracked-links.md).
+>Se não for possível ver a guia **[!UICONTROL Tracking]** de um delivery, significa que o rastreamento não foi ativado. Consulte [esta seção](../../delivery/using/how-to-configure-tracked-links.md).
