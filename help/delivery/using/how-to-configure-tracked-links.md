@@ -14,7 +14,7 @@ discoiquuid: 9cae3861-88eb-447a-aa23-9d1de0710eec
 index: y
 internal: n
 snippet: y
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 7dbc876fae0bde78e3088ee1ab986cd09e9bcc38
 
 ---
@@ -32,7 +32,7 @@ Para cada entrega, você pode rastrear a recepção das mensagens e a ativação
 
 O rastreamento de mensagens é habilitado por padrão. Para personalizar como URLs são rastreados, siga as etapas abaixo:
 
-1. Select the **[!UICONTROL Display URLs]** option in the lower section of the delivery wizard, under the message content.
+1. Selecione a opção **[!UICONTROL Display URLs]** na seção inferior do assistente do delivery, no conteúdo da mensagem.
 
    ![](assets/s_ncs_user_email_del_display_urls.png)
 
@@ -54,17 +54,17 @@ O rastreamento de mensagens é habilitado por padrão. Para personalizar como UR
    >
    >Os rótulos dos URLs rastreados e os rótulos podem ser modificados para simplificar a leitura de informações ao rastrear os envios. Dois URLs ou rótulos com o mesmo nome são adicionados ao calcular a contagem de cliques.
 
-1. If needed, change the tracking mode, select a new mode in the **[!UICONTROL Tracking]** column which matches the targeted link, as shown below:
+1. Se necessário, altere o modo de rastreamento. Selecione um novo modo na coluna **[!UICONTROL Tracking]** que corresponde ao link direcionado, conforme abaixo:
 
    ![](assets/s_ncs_user_select_tracking_mode.png)
 
    Para cada URL individual, é possível definir o modo de rastreamento para um destes valores:
 
-   * **[!UICONTROL Enabled]** : ativa o rastreamento neste URL.
-   * **[!UICONTROL Not tracked]** : desativa o rastreamento neste URL.
-   * **[!UICONTROL Always enabled]** : sempre ativa o rastreamento desse URL. Essas informações são salvas para que na próxima vez, se o URL aparecer novamente em um conteúdo de mensagem futura, o rastreamento será ativado automaticamente.
-   * **[!UICONTROL Never tracked]** : nunca ativa o rastreamento deste URL. Essas informações são salvas para que na próxima vez, se o URL aparecer novamente em um conteúdo de mensagem futura, o rastreamento será ativado automaticamente.
-   * **[!UICONTROL Opt-out]** : considera este URL como um URL de não participação ou de cancelamento de assinatura.
-   * **[!UICONTROL Mirror page]** : considera que este URL é um URL de página espelhada.
+   * **[!UICONTROL Enabled]**: ativa o rastreamento nesse URL.
+   * **[!UICONTROL Not tracked]**: desativa o rastreamento nesse URL.
+   * **[!UICONTROL Always enabled]**: sempre ativa o rastreamento desse URL. Essas informações são salvas para que na próxima vez, se o URL aparecer novamente em um conteúdo de mensagem futura, o rastreamento será ativado automaticamente.
+   * **[!UICONTROL Never tracked]**: nunca ativa o rastreamento desse URL. Essas informações são salvas para que na próxima vez, se o URL aparecer novamente em um conteúdo de mensagem futura, o rastreamento será ativado automaticamente.
+   * **[!UICONTROL Opt-out]**: considera esse URL como recusa ou cancelamento de subscrição.
+   * **[!UICONTROL Mirror page]**: considera esse URL como sendo de mirror page.
 
-1. In addition, you can select a category for each tracked URL in the drop-down list of the **[!UICONTROL Category]** column. These categories can be displayed reports, as for example in **[!UICONTROL URLs and click streams]** (see [this section](../../reporting/using/reports-on-deliveries.md#urls-and-click-streams)). As categorias são definidas em uma enumeração específica: **[!UICONTROL urlCategory]** (consulte [Gerenciamento de enumerações](../../platform/using/managing-enumerations.md)).
+1. Além disso, é possível selecionar uma categoria para cada URL rastreado na lista suspensa da coluna **[!UICONTROL Category]**. Essas categorias podem ser relatórios, como em **[!UICONTROL URLs and click streams]** (consulte [esta seção](../../reporting/using/reports-on-deliveries.md#urls-and-click-streams)). As categorias são definidas em uma lista discriminada específica: **[!UICONTROL urlCategory]** (consulte [Gerenciamento de listas discriminadas](../../platform/using/managing-enumerations.md)).
