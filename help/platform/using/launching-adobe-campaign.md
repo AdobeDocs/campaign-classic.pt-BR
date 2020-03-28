@@ -14,7 +14,7 @@ discoiquuid: 6652b081-66b6-47a8-97e5-383e3251647e
 index: y
 internal: n
 snippet: y
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 51e4d72abf3a1f48700ca38566dbf06dd24594b8
 
 ---
@@ -24,7 +24,7 @@ source-git-commit: 51e4d72abf3a1f48700ca38566dbf06dd24594b8
 
 ## Introdução ao Adobe Campaign {#starting-adobe-campaign}
 
-Você pode iniciar o Adobe Campaign selecionando **[!UICONTROL Start / All Programs / Adobe Campaign v.X / Adobe Campaign client console]**.
+É possível iniciar o Adobe Campaign selecionando **[!UICONTROL Iniciar/Todos os programas/Adobe Campaign v.X/Adobe Campaign Client Console]**.
 
 A janela de conexão do console do cliente permite selecionar ou configurar bancos de dados existentes e conectar-se a eles usando um nome de usuário e uma senha:
 
@@ -42,9 +42,9 @@ Também é possível conectar-se com uma combinação exclusiva de login e senha
 
 1. Digite sua senha no campo **[!UICONTROL Password]**.
 
-   Na primeira vez que você acessar o banco de dados, sua senha será fornecida pelo administrador. Once you are connected, you can change your password via the **[!UICONTROL Tools > Change password...]** menu. Details on operators and connections are available in [Access management](../../platform/using/access-management.md).
+   Na primeira vez que você acessar o banco de dados, sua senha será fornecida pelo administrador. Depois de conectado, você poderá alterar sua senha usando o menu **[!UICONTROL Tools > Change password...]** Os detalhes sobre operadores e conexões estão disponíveis em [Gerenciamento de acesso](../../platform/using/access-management.md).
 
-1. Click **[!UICONTROL Log in]** to confirm.
+1. Clique em **[!UICONTROL Log in]** para confirmar.
 
 Agora, você pode acessar a [área de trabalho do Adobe Campaign](../../platform/using/adobe-campaign-workspace.md).
 
@@ -54,7 +54,7 @@ Agora, você pode acessar a [área de trabalho do Adobe Campaign](../../platform
 
 ![](assets/s_ncs_user_connections_management.png)
 
-Na **[!UICONTROL Connections]** janela, clique em **[!UICONTROL Add > Connection]**.
+Na janela **[!UICONTROL Connections]**, clique em **[!UICONTROL Add > Connection]**.
 
 ![](assets/s_ncs_user_add_connexion.png)
 
@@ -62,18 +62,18 @@ Em seguida, defina as configurações de conexão. Para fazer isso:
 
 * Digite um valor em **[!UICONTROL Label]** para atribuir um nome à conexão de banco de dados.
 * Adicione o endereço do servidor de aplicativos no campo **[!UICONTROL URL]** . Se você não souber o URL de conexão, contate o administrador.
-* Check **[!UICONTROL Connect with an Adobe ID]** for the operators to connect to the console using their Adobe ID. Para obter mais informações, consulte [esta página](../../integrations/using/about-adobe-id.md).
-* Click **[!UICONTROL OK]** to validate.
+* Marque a opção **[!UICONTROL Connect with an Adobe ID]** para que os operadores se conectem ao console usando a Adobe ID. Para obter mais informações, consulte [esta página](../../integrations/using/about-adobe-id.md).
+* Clique em **[!UICONTROL OK]** para validar.
 
 >[!NOTE]
 >
->The **[!UICONTROL Add]** button lets you create **[!UICONTROL folders]** to organize all your connections. Basta arrastar e soltar cada conexão em uma pasta.
+>O botão **[!UICONTROL Add]** permite a criação de **[!UICONTROL pastas]** para organizar todas as suas conexões. Basta arrastar e soltar cada conexão em uma pasta.
 
 ## Operadores e permissões {#operators-and-permissions}
 
 Os identificadores e senhas dos operadores com acesso ao software e suas respectivas permissões são definidos pelo administrador do sistema no caminho **[!UICONTROL Administration > Access management > Operators]** do Adobe Campaign.
 
-This functionality is detailed in the [Access management](../../platform/using/access-management.md) section.
+Essa funcionalidade é detalhada na seção [Access management](../../platform/using/access-management.md).
 
 ## Desconectar-se do Adobe Campaign {#disconnecting-from-adobe-campaign}
 
@@ -87,7 +87,7 @@ Para desconectar-se do Adobe Campaign, use o primeiro ícone na barra de ícones
 
 ## Conheça a sua versão do Campaign {#getting-your-campaign-version}
 
-The **[!UICONTROL Help > About...]** menu lets you access the following information:
+O menu **[!UICONTROL Help > About...]** permite que você acesse as seguintes informações:
 
 * número da **versão**,
 * número da **compilação**,
