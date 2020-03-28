@@ -14,7 +14,7 @@ discoiquuid: 39d8ddcd-7fae-44fa-8a49-c3ad999e7903
 index: y
 internal: n
 snippet: y
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 579329d9194115065dff2c192deb0376c75e67bd
 
 ---
@@ -34,7 +34,7 @@ Quando o pedido for aprovada e a data de disponibilidade for atingida, a campanh
 
 ![](assets/mkg_dist_local_op_edit_new_op1.png)
 
-The campaign remains accessible in the Campaign overview, located via the **[!UICONTROL Campaigns]** link on the home page.
+A campanha permanece acessível na visão geral do Campaign, localizada no link **[!UICONTROL Campaigns]** na página inicial.
 
 ## Configurações disponíveis {#available-settings}
 
