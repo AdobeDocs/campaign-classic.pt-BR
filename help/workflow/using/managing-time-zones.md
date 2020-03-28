@@ -14,7 +14,7 @@ discoiquuid: 8bcbcd23-9251-412a-ae72-11f15db74112
 index: y
 internal: n
 snippet: y
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: c10a0a11c6e9952aa47da1f7a15188c79c62508d
 
 ---
@@ -30,9 +30,9 @@ Em um workflow, é possível adaptar os agendamentos de execução de atividades
 
 ## Agendamento de execução {#execution-scheduling}
 
-You can schedule the execution of tasks using the scheduler (refer to [Scheduler](../../workflow/using/scheduler.md)). Também é possível usar as opções de agendamento disponíveis nas atividades que oferecem essa funcionalidade. Essas atividades oferecem uma **[!UICONTROL Schedule]** guia: **[!UICONTROL File collector]**, **[!UICONTROL File transfer]**, **[!UICONTROL Web download]**, **[!UICONTROL Email reception]** &amp; **[!UICONTROL SMS]**, etc.
+É possível agendar a execução das tarefas usando o scheduler (consulte [Scheduler](../../workflow/using/scheduler.md)). Também é possível usar as opções de agendamento disponíveis nas atividades que oferecem essa funcionalidade. Essas atividades oferecem uma guia **[!UICONTROL Schedule]**: **[!UICONTROL File collector]**, **[!UICONTROL File transfer]**, **[!UICONTROL Web download]**, **[!UICONTROL Email reception]** e **[!UICONTROL SMS]**, etc.
 
-Para todas as tarefas agendadas, ou seja, todas as atividades com opções de agendamento, é possível selecionar o fuso horário a ser aplicado. The time zone is selected via the **[!UICONTROL Advanced]** tab of the concerned activity:
+Para todas as tarefas agendadas, ou seja, todas as atividades com opções de agendamento, é possível selecionar o fuso horário a ser aplicado. O fuso horário é selecionado por meio da guia **[!UICONTROL Advanced]** da atividade relacionada:
 
 ![](assets/wf-timezone-in-a-box.png)
 
@@ -54,8 +54,8 @@ Os valores possíveis são:
 
    Usa o fuso horário selecionado.
 
-If the **[!UICONTROL By default]** value is selected, the time zone of the workflow is applied, or, otherwise, that of the application server.
+Se o valor **[!UICONTROL By default]** for selecionado, o fuso horário do workflow será aplicado, caso contrário, será usado o do servidor de aplicativos.
 
 ## Vínculo de um fuso horário a uma atividade {#linking-a-time-zone-to-an-activity}
 
-The **[!UICONTROL Advanced]** tab of the workflow activities lets you select its time zone. Embora a maior parte do tempo, o fuso horário dos workflows seja suficiente, pode ser necessário sobrescrever ele agora e novamente em uma atividade específica, como importação de dados, para vincular datas aos seus fusos horários corretos.
+A guia **[!UICONTROL Advanced]** das atividades do workflow permite selecionar o fuso horário. Embora a maior parte do tempo, o fuso horário dos workflows seja suficiente, pode ser necessário sobrescrever ele agora e novamente em uma atividade específica, como importação de dados, para vincular datas aos seus fusos horários corretos.
