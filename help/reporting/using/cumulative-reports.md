@@ -14,7 +14,7 @@ discoiquuid: cc832666-ad18-49ce-afcc-f9169b683ae8
 index: y
 internal: n
 snippet: y
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: f7655cd93a7dc8ecd35cd379da350ad279cae725
 
 ---
@@ -28,6 +28,6 @@ Você pode exibir relatórios acumulados sobre deliveries. Para fazer isso, sele
 
 Para selecionar deliveries não adjacentes na lista, mantenha a tecla CTRL pressionada ao fazer a seleção.
 
-To select deliveries saved in a different folder click **[!UICONTROL Display sub-levels]** (accessible via the toolbar). Eles serão exibidos na mesma lista.
+Para selecionar deliveries salvos em uma pasta diferente, clique em **[!UICONTROL Display sub-levels]** (acessível pela barra de ferramentas). Eles serão exibidos na mesma lista.
 
 ![](assets/s_ncs_user_display_children_icon.png)
