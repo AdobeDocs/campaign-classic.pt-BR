@@ -14,7 +14,7 @@ discoiquuid: b7ff47e1-ef12-4f04-afff-1a6c01d7701f
 index: y
 internal: n
 snippet: y
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 1c86322fa95aee024f6c691b61a10c21a9a22eb7
 
 ---
@@ -22,7 +22,7 @@ source-git-commit: 1c86322fa95aee024f6c691b61a10c21a9a22eb7
 
 # Enriquecimento{#enrichment}
 
-The **[!UICONTROL Enrichment]** activity lets you add information to a profile list and links to an existing table (create a new join). Os critérios de reconciliação com perfis no banco de dados também podem ser definidos.
+A atividade **[!UICONTROL Enrichment]** permite adicionar informações a uma lista de perfis e a vincula a uma tabela existente (criar uma nova associação). Os critérios de reconciliação com perfis no banco de dados também podem ser definidos.
 
 ![](assets/enrichment_design.png)
 
@@ -32,40 +32,40 @@ Para utilizar a atividade enrichment, é preciso estar familiarizado com as vár
 
 ![](assets/enrichment_edit.png)
 
-A **[!UICONTROL Data linked to the filtering dimension]** opção fornece acesso a:
+A opção **[!UICONTROL Data linked to the filtering dimension]** dá acesso a:
 
 * Dados da dimensão do filtro: acesso aos dados da tabela de trabalho.
 * Dados vinculados à dimensão do filtro: acesso aos dados vinculados à tabela de trabalho.
 
 ![](assets/wf_enrich_linkoptions.png)
 
-The **[!UICONTROL A link]** option lets you create a join on any table of the database.
+A opção **[!UICONTROL A link]** permite criar uma ligação em qualquer tabela do banco de dados.
 
 ![](assets/wf_enrich_linkstype.png)
 
 Existem quatro tipos de vinculações:
 
-* **[!UICONTROL Define a collection]**: permite definir um link com uma cardinalidade de 1-N entre as tabelas.
-* **[!UICONTROL Define a link whose target is still available]**: permite definir um link com uma cardinalidade 1-1 entre tabelas. As condições de associação devem ser definidas por um único registro na tabela do target.
-* **[!UICONTROL Define a link whose target does not necessarily exist in the base]**: permite que você defina um link com uma cardinalidade 0-1 entre tabelas. A condição de ligação deve ser definida por um registro 0 ou 1 (máx.) na tabela do target.
+* **[!UICONTROL Define a collection]**: permite definir um vínculo com uma cardinalidade 1-N entre as tabelas.
+* **[!UICONTROL Define a link whose target does not necessarily exist in the base]**: permite definir um vínculo com uma cardinalidade de 1-1 entre tabelas. As condições de associação devem ser definidas por um único registro na tabela do target.
+* **[!UICONTROL Define a link whose target does not necessarily exist in the base]**: permite definir um vínculo com uma cardinalidade de 0 a 1 entre tabelas. A condição de ligação deve ser definida por um registro 0 ou 1 (máx.) na tabela do target.
 
-   Essa opção é configurada na guia **[!UICONTROL Simple Join]** que pode ser acessada por meio do **[!UICONTROL Edit additional data]** link da **[!UICONTROL Enrichment]** atividade.
+   Essa opção é configurada na guia **[!UICONTROL Simple Join]** que pode ser acessada por meio do link **[!UICONTROL Edit additional data]** da atividade **[!UICONTROL Enrichment]**.
 
-* **[!UICONTROL Define a link by searching for a reference among several options]**: esse tipo de link define uma reconciliação para um registro exclusivo. O Adobe Campaign cria um link para uma tabela de target adicionando uma chave externa na tabela de target para armazenar uma referência ao registro exclusivo.
+* **[!UICONTROL Define a link by searching for a reference among several options]**: esse tipo de link define uma reconciliação em direção a um registro exclusivo. O Adobe Campaign cria um link para uma tabela de target adicionando uma chave externa na tabela de target para armazenar uma referência ao registro exclusivo.
 
-   Essa opção é configurada na guia **[!UICONTROL Reconciliation and deduplication]** que pode ser acessada por meio do **[!UICONTROL Edit additional data]** link da **[!UICONTROL Enrichment]** atividade.
+   Essa opção é configurada na guia **[!UICONTROL Reconciliation and deduplication]** que pode ser acessada por meio do link **[!UICONTROL Edit additional data]** da atividade **[!UICONTROL Enrichment]**.
 
-Os dados [de](../../workflow/using/enriching-data.md) Enriquecimento e [Criação de uma lista](../../workflow/using/creating-a-summary-list.md) de resumo detalham os casos de uso do Enriquecimento no contexto.
+Os casos de uso [Enriching data](../../workflow/using/enriching-data.md) e [Creating a summary list](../../workflow/using/creating-a-summary-list.md) detalham a operação de atividades Enrichment no seu contexto.
 
 ## Adição de informações {#adding-information}
 
-Use the **[!UICONTROL Enrichment]** activity to add columns to a work table: this activity can be used as a complement to a query activity.
+Use a atividade **[!UICONTROL Enrichment]** para adicionar colunas a uma tabela de trabalho: essa atividade pode ser usada como um complemento para uma atividade de query.
 
-The configuration of additional columns is detailed in [Adding data](../../workflow/using/query.md#adding-data).
+A configuração de colunas adicionais é apresentada em [Adding data](../../workflow/using/query.md#adding-data).
 
-The **[!UICONTROL Primary set]** field lets you select the inbound transition: the data of this activity&#39;s worktable will be enriched.
+O campo **[!UICONTROL Primary set]** permite selecionar a transição de entrada: os dados da tabela de trabalho dessa atividade serão enriquecidos.
 
-Clique no **[!UICONTROL Add data]** link e selecione o tipo de dados a serem adicionados. A lista de tipos de dados oferecidos depende dos módulos e das opções instalados na sua plataforma. Em uma configuração mínima, é sempre possível adicionar dados vinculados à dimensão do filtro e um link.
+Clique no link **[!UICONTROL Add data]** e selecione o tipo de dados a serem adicionados. A lista de tipos de dados oferecidos depende dos módulos e das opções instalados na sua plataforma. Em uma configuração mínima, é sempre possível adicionar dados vinculados à dimensão do filtro e um link.
 
 ![](assets/enrichment_edit.png)
 
@@ -93,7 +93,7 @@ O schema correspondente também foi enriquecido.
 
 ## Gerenciamento de dados adicionais {#managing-additional-data}
 
-Deselect the **[!UICONTROL Keep all additional data from the main set]** option if you do not want to keep the previously defined additional data. Neste caso, somente as colunas adicionais que foram selecionadas na atividade de enriquecimento serão adicionadas na tabela de trabalho de saída. As informações adicionais adicionadas às atividades transmitidas não serão salvas.
+Desmarque a opção **[!UICONTROL Keep all additional data from the main set]** se não quiser manter os dados adicionais definidos anteriormente. Neste caso, somente as colunas adicionais que foram selecionadas na atividade de enriquecimento serão adicionadas na tabela de trabalho de saída. As informações adicionais adicionadas às atividades transmitidas não serão salvas.
 
 ![](assets/enrichment_edit_without_additional.png)
 
@@ -126,7 +126,7 @@ Para fazer isso, siga as etapas abaixo:
 
    ![](assets/enrichment_edit_after_file_box.png)
 
-1. Selecione a **[!UICONTROL Link definition]** opção e clique no **[!UICONTROL Next]** botão. Especifique o tipo de link a ser criado. Neste exemplo, devemos reconciliar o país do recipient do arquivo com um país na lista de países disponíveis na tabela dedicada do banco de dados. Escolha a **[!UICONTROL Define a link by searching for a reference among several options]** opção. Select the country table in the **[!UICONTROL Target schema]** field.
+1. Selecione a opção **[!UICONTROL Link definition]** e clique no botão **[!UICONTROL Next]**. Especifique o tipo de link a ser criado. Neste exemplo, devemos reconciliar o país do recipient do arquivo com um país na lista de países disponíveis na tabela dedicada do banco de dados. Escolha a opção **[!UICONTROL Define a link by searching for a reference among several options]**. Selecione a tabela do país no campo **[!UICONTROL Target schema]**.
 
    ![](assets/enrichment_add_a_link_select_option4.png)
 
@@ -140,9 +140,9 @@ Na saída desta atividade de enriquecimento, o schema temporário conterá o lin
 
 ## Reconciliação dos dados {#data-reconciliation}
 
-A atividade de enriquecimento pode ser usada para configurar a reconciliação de dados, incluindo quando os dados tenham sido carregados no banco de dados. In this case, the **[!UICONTROL Reconciliation]** tab lets you define the link between the data in the Adobe Campaign database and the data in the work table.
+A atividade de enriquecimento pode ser usada para configurar a reconciliação de dados, incluindo quando os dados tenham sido carregados no banco de dados. Nesse caso, a guia **[!UICONTROL Reconciliation]** permite definir o link entre os dados no banco de dados do Adobe Campaign e os dados na tabela de trabalho.
 
-Select the **[!UICONTROL Identify the targeting document based on work data]** option, specify the schema you want to create a link to and define the joining conditions: to do this, select the fields to be reconciled in the work data (**[!UICONTROL Source expression]**) and in the targeting dimension (**[!UICONTROL Destination expression]**).
+Selecione a opção **[!UICONTROL Identify the targeting document based on work data]**, especifique o schema que deseja criar um link e defina as condições de ligação: para fazer isto, selecione os campos a serem reconciliados nos dados de trabalho (**[!UICONTROL Source expression]**) e na targeting dimension (**[!UICONTROL Destination expression]**).
 
 É possível usar um ou mais critérios de reconciliação.
 
@@ -163,27 +163,27 @@ Por exemplo, é possível enriquecer os dados de uma query de recipient antes de
 Após configurar sua query (consulte esta [seção](../../workflow/using/query.md)):
 
 1. Adicione e abra uma atividade de enriquecimento.
-1. Na **[!UICONTROL Enrichment]** guia, selecione **[!UICONTROL Add data]**.
-1. Select **[!UICONTROL An offer proposition]** in the types of data to add.
+1. Na guia **[!UICONTROL Enrichment]**, selecione **[!UICONTROL Add data]**.
+1. Selecione **[!UICONTROL An offer proposition]** nos tipos de dados para adicionar.
 
    ![](assets/int_enrichment_offer2.png)
 
 1. Especifique um identificador e um rótulo para a proposta que será adicionada.
 1. Especifique a seleção da oferta. Há duas opções possíveis para isso:
 
-   * **[!UICONTROL Search for the best offer in a category]**: verifique essa opção e especifique os parâmetros de chamada do mecanismo de oferta (espaço de oferta, categoria ou tema(s), data de contato, número de ofertas a serem mantidas). O mecanismo calculará automaticamente as ofertas para adicionar de acordo com esses parâmetros. We recommend completing either the **[!UICONTROL Category]** or the **[!UICONTROL Theme]** field, rather than both at the same time.
+   * **[!UICONTROL Search for the best offer in a category]**: marque esta opção e especifique os parâmetros de chamada do mecanismo de oferta (espaços de oferta, categoria ou tema(s), data de contato, número de ofertas a serem mantidas). O mecanismo calculará automaticamente as ofertas para adicionar de acordo com esses parâmetros. Recomendamos completar o campo **[!UICONTROL Category]** ou o campo **[!UICONTROL Theme]**, em vez de ambos ao mesmo tempo.
 
       ![](assets/int_enrichment_offer3.png)
 
-   * **[!UICONTROL A predefined offer]**: marque esta opção e especifique um espaço de oferta, uma oferta específica e uma data de contato para configurar diretamente a oferta que deseja adicionar, sem chamar o mecanismo de oferta.
+   * **[!UICONTROL A predefined offer]**: marque esta opção e especifique um espaço de ofertas, uma oferta específica e uma data de contato para configurar diretamente a oferta que deseja adicionar, sem chamar o mecanismo de oferta.
 
       ![](assets/int_enrichment_offer4.png)
 
-1. Em seguida, configure uma atividade de delivery que corresponda ao canal escolhido. Consulte Entregas [entre canais](../../workflow/using/cross-channel-deliveries.md).
+1. Em seguida, configure uma atividade de delivery que corresponda ao canal escolhido. Consulte [Deliveries entre canais](../../workflow/using/cross-channel-deliveries.md).
 
    O número de propostas disponíveis para pré-visualizar depende da configuração executada na atividade de enriquecimento, ao invés de qualquer configuração possível executada diretamente no delivery.
 
-Para especificar propostas de oferta, também é possível optar por referenciar um link para uma oferta. Para obter mais informações, consulte a seguinte seção [Referenciando um link a uma oferta](#referencing-a-link-to-an-offer).
+Para especificar propostas de oferta, também é possível optar por referenciar um link para uma oferta. Para obter mais informações, consulte a seguinte seção [Referência a um link para uma oferta](#referencing-a-link-to-an-offer).
 
 ## Referência a um link para uma oferta {#referencing-a-link-to-an-offer}
 
@@ -191,8 +191,8 @@ Também é possível referenciar um link para uma oferta em uma atividade de enr
 
 Para fazer isso:
 
-1. Selecione **[!UICONTROL Add data]** na **[!UICONTROL Enrichment]** guia da atividade.
-1. In the window where you choose the type of data to add, select **[!UICONTROL A link]**.
+1. Selecione **[!UICONTROL Add data]** na guia **[!UICONTROL Enrichment]** da atividade.
+1. Na janela onde você escolhe o tipo de dados a serem adicionados, selecione **[!UICONTROL A link]**.
 1. Selecione o tipo de link que deseja estabelecer, assim como seu target. Nesse caso, o target é o schema de oferta.
 
    ![](assets/int_enrichment_link1.png)
@@ -201,7 +201,7 @@ Para fazer isso:
 
    ![](assets/int_enrichment_link2.png)
 
-1. Em seguida, configure uma atividade de delivery que corresponda ao canal escolhido. Consulte Entregas [entre canais](../../workflow/using/cross-channel-deliveries.md).
+1. Em seguida, configure uma atividade de delivery que corresponda ao canal escolhido. Consulte [Deliveries entre canais](../../workflow/using/cross-channel-deliveries.md).
 
    >[!NOTE]
    >
@@ -211,7 +211,7 @@ Para fazer isso:
 
 Por padrão, quando uma atividade de **enriquecimento** é usada para delivery de ofertas, suas classificações e seus pesos não são armazenados na tabela de propostas.
 
-The **[!UICONTROL Offer engine]** activity does store this information by default.
+A atividade **[!UICONTROL Offer engine]** armazena essas informações por padrão.
 
 No entanto, é possível armazenar essas informações da seguinte maneira:
 
@@ -220,10 +220,10 @@ No entanto, é possível armazenar essas informações da seguinte maneira:
 
    ![](assets/ita_enrichment_rankweight_1.png)
 
-1. Add the **[!UICONTROL @rank]** columns for the ranking and **[!UICONTROL @weight]** for the offer weight.
+1. Adicione as colunas **[!UICONTROL @rank]** para a classificação e **[!UICONTROL @weight]** para o peso da oferta.
 
    ![](assets/ita_enrichment_rankweight_2.png)
 
 1. Confirme sua adição e salve seu workflow.
 
-O delivery armazena automaticamente a classificação e o peso das ofertas. This information is visible in the delivery&#39;s **[!UICONTROL Offers]** tab.
+O delivery armazena automaticamente a classificação e o peso das ofertas. Essas informações estão visíveis na guia **[!UICONTROL Offers]** do delivery.
