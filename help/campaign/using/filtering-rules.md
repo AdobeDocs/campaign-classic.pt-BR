@@ -14,7 +14,7 @@ discoiquuid: 0d50826e-2211-4c3b-8413-ca1453bba6c4
 index: y
 internal: n
 snippet: y
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 209ac4d81d2d27c264ee6b288bcb7fcb1900ffc5
 
 ---
@@ -24,7 +24,7 @@ source-git-commit: 209ac4d81d2d27c264ee6b288bcb7fcb1900ffc5
 
 Regras de filtragem permitem definir as mensagens a serem excluídas com base nos critérios definidos em uma query. Essas regras estão vinculadas a uma targeting dimension.
 
-As regras de filtragem podem estar vinculadas a outros tipos de regras (controle, pressão etc.) em tipologias ou agrupadas em uma tipologia **Filtragem** dedicada. Para obter mais informações, consulte [Criação e uso de uma tipologia](#creating-and-using-a-filtering-typology)de filtragem.
+As regras de filtragem podem estar vinculadas a outros tipos de regras (controle, pressão etc.) em tipologias ou agrupadas em uma tipologia **Filtragem** dedicada. Para obter mais informações, consulte [Criação e uso de uma tipologia de filtragem](#creating-and-using-a-filtering-typology).
 
 ## Criando uma regra de filtragem {#creating-a-filtering-rule}
 
@@ -32,7 +32,7 @@ Por exemplo, você pode filtrar os assinantes do boletim informativo para evitar
 
 Para definir esse filtro, aplique as seguintes etapas:
 
-1. Create a **[!UICONTROL Filtering]** typology rule applicable to all communication channels.
+1. Crie uma regra de tipologia **[!UICONTROL Filtering]** aplicável a todos os canais de comunicação.
 
    ![](assets/campaign_opt_create_filter_01.png)
 
@@ -40,7 +40,7 @@ Para definir esse filtro, aplique as seguintes etapas:
 
    ![](assets/campaign_opt_create_filter_02.png)
 
-1. Crie o filtro usando o **[!UICONTROL Edit the query from the targeting dimension...]** link.
+1. Crie o filtro usando o link **[!UICONTROL Edit the query from the targeting dimension...]** .
 
    ![](assets/campaign_opt_create_filter_03.png)
 
@@ -56,7 +56,7 @@ Quando essa regra for usada em um delivery, os assinantes menores de idade serã
 
 Você poderá restringir o campo da aplicação na regra de filtragem com base no delivery ou delivery outline vinculado.
 
-To do this, go to the **[!UICONTROL General]** tab of the typology rule, select the type of restriction to apply and create the filter, as shown below:
+Para fazer isso, vá para a guia **[!UICONTROL General]** da regra de tipologia, selecione o tipo de restrição a ser aplicado e crie o filtro, conforme mostrado abaixo:
 
 ![](assets/campaign_opt_create_filter_06.png)
 
@@ -64,19 +64,19 @@ Nesse caso, mesmo que a regra esteja vinculada a todos os deliveries, ela só se
 
 >[!NOTE]
 >
->Typologies and filtering rules can be used in a workflow, in the **[!UICONTROL Delivery outline]** activity. Para obter mais informações, consulte [esta seção](../../workflow/using/delivery-outline.md).
+>As regras de filtragem e tipologia podem ser usadas em um workflow, na atividade **[!UICONTROL Delivery outline]**. Para obter mais informações, consulte [esta seção](../../workflow/using/delivery-outline.md).
 
 ## Como criar e usar uma tipologia de filtragem {#creating-and-using-a-filtering-typology}
 
-You can create **[!UICONTROL Filtering]** typologies: they only contain filtering rules.
+É possível criar tipologias **[!UICONTROL Filtering]**: elas contêm apenas regras de filtragem.
 
 ![](assets/campaign_opt_create_typo_filtering.png)
 
-These specific typologies can be linked to a delivery when the target is selected: in the delivery wizard, click the **[!UICONTROL To]** link, then click the **[!UICONTROL Exclusions]** tab.
+Essas tipologias específicas podem ser vinculadas a um delivery quando o target for selecionado: no assistente do delivery, clique no link **[!UICONTROL To]** e, em seguida, na guia **[!UICONTROL Exclusions]**.
 
 ![](assets/campaign_opt_apply_typo_filtering.png)
 
-Em seguida, selecione o filtro a ser aplicado ao delivery. To do this, click the **[!UICONTROL Add]** button and select the typologies to apply.
+Em seguida, selecione o filtro a ser aplicado ao delivery. Para fazer isso, clique no botão **[!UICONTROL Add]** e selecione as tipologias a serem aplicadas.
 
 Você também poderá vincular regras de filtragem diretamente por meio desta guia, sem que sejam agrupadas em uma tipologia. Para fazer isso, use a seção inferior da janela.
 
@@ -92,7 +92,7 @@ Você também poderá vincular regras de filtragem diretamente por meio desta gu
 
 ## Regras padrão de exclusão de entrega {#default-deliverability-exclusion-rules}
 
-Two filtering rules are available by default: **[!UICONTROL Exclude addresses]** ( **[!UICONTROL addressExclusions]** ) and **[!UICONTROL Exclude domains]** ( **[!UICONTROL domainExclusions]** ). Durante a análise de e-mail, essas regras comparam os endereços de e-mail do recipient com os endereços proibidos ou nomes de domínio contidos em uma lista de supressão global criptografada gerenciada na instância de entrega. Se houver algum positivo, a mensagem não será enviada para esse recipient.
+Duas regras de filtragem estão disponíveis por padrão: **[!UICONTROL Excluir endereços]** ( **[!UICONTROL addressExclusions]** ) e **[!UICONTROL Excluir domínios]** ( **[!UICONTROL domainExclusions]** ). Durante a análise de e-mail, essas regras comparam os endereços de e-mail do recipient com os endereços proibidos ou nomes de domínio contidos em uma lista de supressão global criptografada gerenciada na instância de entrega. Se houver algum positivo, a mensagem não será enviada para esse recipient.
 
 Isso é para evitar a inclusão na blacklist devido a atividades mal-intencionadas, especialmente o uso de um Spamtrap. Por exemplo, se um Spamtrap for usado para se inscrever em um dos seus formulários Web, um e-mail de confirmação será enviado automaticamente para esse Spamtrap e isso resultará no endereço utilizado sendo automaticamente incluído na blacklist.
 
