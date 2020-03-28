@@ -14,7 +14,7 @@ discoiquuid: 3bc88f9c-cc42-4bf6-a318-0093c73e4d82
 index: y
 internal: n
 snippet: y
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 579329d9194115065dff2c192deb0376c75e67bd
 
 ---
@@ -24,7 +24,7 @@ source-git-commit: 579329d9194115065dff2c192deb0376c75e67bd
 
 Após criar um ou mais seed addresses e o corpo da mensagem, é possível pré-visualizar a mensagem e verificar sua personalização.
 
-1. In the message template, click the **[!UICONTROL Preview]** tab.
+1. No modelo de mensagem, clique na guia **[!UICONTROL Preview]**.
 
    ![](assets/messagecenter_preview_001.png)
 
