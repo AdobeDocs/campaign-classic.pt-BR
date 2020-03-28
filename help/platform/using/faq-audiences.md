@@ -1,7 +1,7 @@
 ---
-title: Perguntas frequentes sobre perfis e públicos-alvo
+title: Perguntas frequentes sobre perfis e públicos
 seo-title: Perguntas comuns
-description: Perguntas frequentes do Campaign Classic
+description: Perguntas frequentes sobre o Adobe Campaign Classic
 page-status-flag: never-activated
 uuid: 3f719ac2-cc26-4fb0-adda-84666c8c38e1
 contentOwner: sauviat
@@ -13,13 +13,13 @@ discoiquuid: 16dbe423-018f-4666-9901-2120a8dc609a
 index: y
 internal: n
 snippet: y
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 2ee1912e0de2841867d0ffb5420cc9810aa1083e
 
 ---
 
 
-# Profiles and Audiences FAQ {#audiences-faq}
+# Perguntas frequentes sobre perfis e públicos {#audiences-faq}
 
 Saiba como direcionar uma população e gerenciar audiências no Adobe Campaign.
 
