@@ -14,7 +14,7 @@ discoiquuid: 08efa472-d090-404d-9ad7-47adb3489c30
 index: y
 internal: n
 snippet: y
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: c9c9d5f96856ce9e19571bad032d2bf04eaa60bd
 
 ---
@@ -22,17 +22,17 @@ source-git-commit: c9c9d5f96856ce9e19571bad032d2bf04eaa60bd
 
 # Criação de uma aplicação web{#designing-a-web-application}
 
-Web applications are created and managed according to the same principle as [online surveys](../../web/using/about-surveys.md).
+Aplicativos web são criados e gerenciados de acordo com o mesmo princípio de [pesquisas online](../../web/using/about-surveys.md).
 
 No entanto, as diferenças funcionais são as seguintes:
 
 * As aplicações web não usam campos arquivados. Portanto, os dados podem ser armazenados em campos de banco de dados ou em variáveis locais apenas.
-* Não há relatórios incorporados em aplicativos da Web.
+* Não há relatórios integrados em aplicativos web.
 * Campos adicionais são oferecidos, principalmente para a criação de tabelas e gráficos.
 
 >[!CAUTION]
 >
->É extremamente recomendável que as configurações aplicadas sejam continuamente verificadas para detectar erros com antecedência no processo de criação da aplicação web. To check the rendering of a modification, save the application, then click the **[!UICONTROL Preview]** sub-tab.
+>É extremamente recomendável que as configurações aplicadas sejam continuamente verificadas para detectar erros com antecedência no processo de criação da aplicação web. Para verificar a renderização de uma modificação, salve o aplicativo e clique na subguia **[!UICONTROL Preview]**.
 >
 >Até que a aplicação web seja publicada, as alterações não poderão ser vistas pelo usuário final.
 
@@ -42,7 +42,7 @@ Você pode incluir gráficos em aplicações web. Para fazer isso, use a lista s
 
 ![](assets/s_ncs_admin_webapps_bar_graph.png)
 
-Você também pode selecionar o **[!UICONTROL Add a chart]** menu.
+É possível também selecionar o menu **[!UICONTROL Add a chart]**.
 
 ![](assets/s_ncs_admin_webapps_graph.png)
 
@@ -62,7 +62,7 @@ A interface do Adobe Campaign usa muitas aplicações web para acessar, gerencia
 
 Elas são vistas na interface do formulário de painéis com apenas uma página.
 
-The out-of-the-box Web applications are stored in the **[!UICONTROL Administration > Configuration > Web applications]** node.
+Os aplicativos web prontos para uso são armazenadas no nó **[!UICONTROL Administration > Configuration > Web applications]**.
 
 ## Editar aplicativos Web do tipo formulários {#edit-forms-type-web-applications}
 
