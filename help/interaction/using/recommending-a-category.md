@@ -14,7 +14,7 @@ discoiquuid: d52c3e72-bac0-48d9-9750-0a30aa816b83
 index: y
 internal: n
 snippet: y
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 215e4d1ca78938b38b53cae0357612deebf7727b
 
 ---
@@ -27,8 +27,8 @@ Pode ser o caso que um recipient não seja considerado elegível para todas as o
 Para incluir sempre uma categoria nas recomendações, aplique as seguintes etapas:
 
 1. Abra o explorador e clique em um catálogo de ofertas na estrutura de árvore.
-1. Clique na **[!UICONTROL Eligibility]** guia e marque a **[!UICONTROL Always include this category in the recommendations]** caixa.
-1. Finish and approve by clicking **[!UICONTROL Save]**.
+1. Clique na guia **[!UICONTROL Eligibility]** e marque a caixa **[!UICONTROL Always include this category in the recommendations]**.
+1. Termine e aprove clicando em **[!UICONTROL Save]**.
 
    ![](assets/offer_cat_default_001.png)
 
