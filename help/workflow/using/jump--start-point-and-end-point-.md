@@ -14,7 +14,7 @@ discoiquuid: f3cd5409-c301-4580-96e3-9349e18cf42a
 index: y
 internal: n
 snippet: y
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 20f835c357d016643ea1f3209ee4dfb6d3239f90
 
 ---
@@ -22,9 +22,9 @@ source-git-commit: 20f835c357d016643ea1f3209ee4dfb6d3239f90
 
 # Jump (ponto inicial e ponto final){#jump-start-point-and-end-point}
 
-**[!UICONTROL Jump]** objetos gráficos do tipo -5 são usados para melhorar a legibilidade de um diagrama complexo, especialmente um com transições de cruzamento.
+Os objetos gráficos do tipo **[!UICONTROL Jump]** são usados para melhorar a leitura de um diagrama complexo, especialmente que contenha transições cruzadas.
 
-Os saltos são transições sem setas: Elas vão de uma atividade para outra, como no exemplo a seguir.
+As transições Jump não contêm setas: elas vão de uma atividade para outra, como no exemplo a seguir.
 
 ![](assets/s_user_segmentation_jump_sample.png)
 
@@ -34,4 +34,4 @@ Para cada transição de tipo &quot;ponto inicial&quot;, uma transição de tipo
 
 ![](assets/s_user_segmentation_jump_in.png)
 
-Para melhorar a legibilidade do diagrama, é possível alterar a imagem associada aos saltos para exibir o número relacionado. Consulte [Gerenciamento de imagens](../../workflow/using/managing-activity-images.md)de atividade.
+Para melhorar a legibilidade do diagrama, é possível alterar a imagem associada aos saltos para exibir o número relacionado. Consulte [Gerenciamento de imagens de atividades](../../workflow/using/managing-activity-images.md).
