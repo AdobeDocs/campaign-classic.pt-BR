@@ -14,7 +14,7 @@ discoiquuid: 3e593527-5580-44ea-93dc-9084d862537e
 index: y
 internal: n
 snippet: y
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: f7655cd93a7dc8ecd35cd379da350ad279cae725
 
 ---
@@ -102,7 +102,7 @@ Para obter mais informações sobre o conteúdo desses relatórios, consulte [es
   </tr> 
   <tr> 
    <td> Resumo do delivery (deliveryStatistics)<br /> </td> 
-   <td> Tabela de resumo para entregas selecionadas: Metas, exclusões e mensagens enviadas.<br /> </td> 
+   <td> Tabela de resumo para deliveries selecionados: targets, exclusões e mensagens enviadas.<br /> </td> 
    <td> nms:delivery<br /> </td> 
   </tr> 
   <tr> 
@@ -159,7 +159,7 @@ Para obter mais informações sobre o conteúdo desses relatórios, consulte [es
   </tr> 
   <tr> 
    <td> Indicadores de rastreamento (operationFeedback)<br /> </td> 
-   <td> Visão geral dos indicadores principais de rastreamento: Abre, Cliques e Transações, depende da Campanha.<br /> </td> 
+   <td> Visão geral dos indicadores principais de rastreamento: aberturas, cliques e transações que dependem do Campaign.<br /> </td> 
   </tr> 
   <tr> 
    <td> Compartilhamento para redes sociais (operationForward)<br /> </td> 
@@ -175,7 +175,7 @@ Para obter mais informações sobre o conteúdo desses relatórios, consulte [es
   </tr> 
   <tr> 
    <td> Resumo do delivery (operationStatistics)<br /> </td> 
-   <td> Gráfico de resumo das entregas da campanha: Metas, exclusões e mensagens enviadas.<br /> </td> 
+   <td> Gráfico de resumo dos deliveries da campanha: targets, exclusões e mensagens enviadas.<br /> </td> 
   </tr> 
   <tr> 
    <td> Taxa de transferência de clique e URLs (operationTopUrlDelivery)<br /> </td> 
@@ -246,7 +246,7 @@ Para obter mais informações sobre o conteúdo desses relatórios, consulte [es
   </tr> 
   <tr> 
    <td> Evolução cumulativa do orçamento (budgetCumulativeEvolution)<br /> </td> 
-   <td> Evolution of the cumulated budget costs broken down by commi<br /> tment level. </td> 
+   <td> Evolução dos custos do orçamento acumulado divididos por nível de<br /> compromisso. </td> 
    <td> nms:budget<br /> </td> 
   </tr> 
   <tr> 
