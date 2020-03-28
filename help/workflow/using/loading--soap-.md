@@ -14,7 +14,7 @@ discoiquuid: 94178104-f8ba-4c17-8ff9-928c5d2df1b7
 index: y
 internal: n
 snippet: y
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: c10a0a11c6e9952aa47da1f7a15188c79c62508d
 
 ---
@@ -46,9 +46,9 @@ A operação é como descrita a seguir:
 
    ![](assets/soap_load_001.png)
 
-   If you wish to update the example, select **[!UICONTROL Re-analyze the example]**.
+   Se desejar atualizar o exemplo, selecione **[!UICONTROL Re-analyze the example]**.
 
-   You can also personalize the format of column data via the **[!UICONTROL Advanced parameters]** link. Para obter mais informações sobre a formatação de dados importados, consulte esta [seção](../../platform/using/importing-data.md#import-wizard).
+   Você também pode personalizar o formato dos dados da coluna por meio do link **[!UICONTROL Advanced parameters]**. Para obter mais informações sobre a formatação de dados importados, consulte esta [seção](../../platform/using/importing-data.md#import-wizard).
 
 1. Você pode usar o número de linha como um identificador e/ou especificar que a chamada SOAP retorna vários elementos.
 1. Insira os seguintes scripts de guia de acordo com sua função:
