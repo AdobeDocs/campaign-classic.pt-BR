@@ -14,7 +14,7 @@ discoiquuid: 67d1d39b-3a5f-4ed6-8fcf-570891043b10
 index: y
 internal: n
 snippet: y
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 209ac4d81d2d27c264ee6b288bcb7fcb1900ffc5
 
 ---
@@ -26,17 +26,17 @@ source-git-commit: 209ac4d81d2d27c264ee6b288bcb7fcb1900ffc5
 
 Os containers permitem combinar os campos de uma página e configurar seu layout; para organizar os elementos na página.
 
-For each page of the form, containers are created via the **[!UICONTROL Containers]** button of the toolbar.
+Para cada página do formulário, os containers são criados por meio do botão **[!UICONTROL Containers]** da barra de ferramentas.
 
 ![](assets/s_ncs_admin_survey_containers_add.png)
 
-Use um container para agrupar elementos da página sem adicionar um rótulo à renderização final. Os elementos são agrupados na subárvore container. Contêineres padrão permitem gerenciar o layout.
+Use um container para agrupar elementos da página sem adicionar um rótulo à renderização final. Os elementos são agrupados na subárvore container. Os containers padrão permitem gerenciar o layout.
 
 Por exemplo:
 
 ![](assets/s_ncs_admin_survey_containers_std_arbo.png)
 
-A posição dos rótulos é aplicada aos elementos posicionados abaixo do container na hierarquia. Ela pode ser sobrecarregada para cada elemento, se necessário. Adicionar ou remover colunas para alterar o layout. See [Positioning the fields on the page](#positioning-the-fields-on-the-page).
+A posição dos rótulos é aplicada aos elementos posicionados abaixo do container na hierarquia. Ela pode ser sobrecarregada para cada elemento, se necessário. Adicionar ou remover colunas para alterar o layout. Consulte [Posicionamento dos campos na página](#positioning-the-fields-on-the-page).
 
 No exemplo acima, a renderização será a seguinte:
 
@@ -74,7 +74,7 @@ Você pode modificar a formatação em cada container. No nosso exemplo, você p
 
 ![](assets/s_ncs_admin_survey_container_ex2_rend.png)
 
-O título e a lista ocupam uma célula cada (e, portanto, uma linha inteira do container) e a caixa de seleção se estende por duas células. The number of cells attributed to the input field is defined in the **[!UICONTROL General]** tab or the **[!UICONTROL Advanced]** tab, according to the type of field:
+O título e a lista ocupam uma célula cada (e, portanto, uma linha inteira do container) e a caixa de seleção se estende por duas células. O número de células atribuídas ao campo de entrada é definido na guia **[!UICONTROL General]** ou na guia **[!UICONTROL Advanced]**, de acordo com o tipo de campo:
 
 ![](assets/s_ncs_admin_survey_container_ex2.png)
 
@@ -84,11 +84,11 @@ Você pode definir o alinhamento dos campos e rótulos no formulário.
 
 Por padrão, os parâmetros de exibição para campos e outros conteúdos da página são herdados da configuração geral do formulário, da configuração da página ou da configuração do container primário, se existir.
 
-Os parâmetros de exibição global para todo o formulário são especificados na caixa de propriedades do formulário. The **[!UICONTROL Rendering]** tab lets you select the position of labels.
+Os parâmetros de exibição global para todo o formulário são especificados na caixa de propriedades do formulário. A guia **[!UICONTROL Rendering]** permite selecionar a posição dos rótulos.
 
 ![](assets/s_ncs_admin_survey_label_position.png)
 
-This position can be overloaded for each page, each container, and each field, via the **[!UICONTROL Advanced]** tab.
+Essa posição pode ser sobrecarregada para cada página, cada container e cada campo, por meio da guia **[!UICONTROL Advanced]**.
 
 Os seguintes alinhamentos são suportados:
 
