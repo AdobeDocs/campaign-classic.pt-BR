@@ -14,7 +14,7 @@ discoiquuid: 978cbe62-f06a-46a6-b8a1-e30a65b8470a
 index: y
 internal: n
 snippet: y
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: cfb1b02a6261c001392b5cc6430f00206e802bb8
 
 ---
@@ -33,16 +33,16 @@ Para monitorar o status de um conjunto de workflows, siga estas etapas:
 
 1. Crie o workflow de sincronização.
 1. Escreva o JavaScript para determinar se os workflows estão pausados, interrompidos ou com erros.
-1. Crie a **[!UICONTROL Test]** atividade.
+1. Crie a atividade **[!UICONTROL Test]**.
 1. Prepare o template de delivery.
 
 >[!NOTE]
 >
 >Além do workflow, o **Workflow Heatmap** do Campaign permite analisar os detalhes dos workflows executados no momento. Para obter mais informações, consulte a [seção dedicada](../../workflow/using/heatmap.md).
 >
->Para obter mais informações sobre como **monitorar a execução** dos fluxos de trabalho, consulte [esta seção](../../workflow/using/monitoring-workflow-execution.md).
+>Para obter mais informações sobre como **monitorar a execução dos workflows**, consulte [esta seção](../../workflow/using/monitoring-workflow-execution.md).
 
-## Step 1: Creating the monitoring workflow {#step-1--creating-the-monitoring-workflow}
+## Etapa 1: Criação do workflow de monitoramento {#step-1--creating-the-monitoring-workflow}
 
 A pasta de workflow que vamos monitorar é a pasta **&quot;CustomWorkflows&quot;** armazenada no nó **Administration > Production > Technical workflows.** Esta pasta contém um conjunto de workflows de negócios.
 
@@ -122,7 +122,7 @@ vars.strWorkflowPaused = strPaused;
 vars.strWorkflowStop = strStop;
 ```
 
-## Step 3: Creating the &#39;Test&#39; activity {#step-3--creating-the--test--activity}
+## Etapa 3: Criação da atividade &quot;Test&quot;{#step-3--creating-the--test--activity}
 
 A atividade &quot;Test&quot; permite determinar se um fornecimento precisa ser enviado ou se o workflow de monitoramento precisa executar outro ciclo com base na atividade &quot;Wait&quot;.
 
@@ -134,7 +134,7 @@ A atividade &quot;Wait&quot; pode ser configurada para reiniciar o workflow de m
 
 ![](assets/uc_monitoring_workflow_attente.png)
 
-## Etapa 4: Preparação da entrega {#step-4--preparing-the-delivery}
+## Etapa 4 - Preparação do delivery {#step-4--preparing-the-delivery}
 
 A atividade &quot;Delivery&quot; baseia-se em um **template de delivery** armazenado no nó **Resources > Templates >Delivery templates**.
 
