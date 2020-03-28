@@ -14,7 +14,7 @@ discoiquuid: 31071cd2-7d97-4a4f-a6cc-5ac5b6178be5
 index: y
 internal: n
 snippet: y
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: c10a0a11c6e9952aa47da1f7a15188c79c62508d
 
 ---
@@ -26,7 +26,7 @@ Um query incremental permite selecionar periodicamente um target com base em um 
 
 O público que já foi alvo é armazenado na memória pela instância de workflow e por atividade, ou seja, dois workflows iniciados do mesmo template não compartilham o mesmo log. Por outro lado, duas tarefas baseadas no mesmo query incremental para a mesma instância de workflow usarão o mesmo log.
 
-The query is defined in the same way as for standard queries (refer to [Creating a query](../../workflow/using/query.md#creating-a-query)), but its execution is scheduled.
+A query é definida da mesma forma que queries padrão (consulte [Criação de query](../../workflow/using/query.md#creating-a-query)), mas sua execução é agendada.
 
 >[!CAUTION]
 >
@@ -34,18 +34,18 @@ The query is defined in the same way as for standard queries (refer to [Creating
 
 Para fazer isso:
 
-1. Na **[!UICONTROL Scheduling & History]** guia, selecione a **[!UICONTROL Schedule execution]** opção. A tarefa permanece ativa após sua criação e só será acionada nos horários especificados pelo agendamento para execução do query. No entanto, se a opção estiver desabilitada, o query será executado imediatamente, **de uma só vez**.
+1. Na guia **[!UICONTROL Scheduling &amp; History]**, selecione a opção **[!UICONTROL Schedule execution]**. A tarefa permanece ativa após sua criação e só será acionada nos horários especificados pelo agendamento para execução do query. No entanto, se a opção estiver desabilitada, o query será executado imediatamente, **de uma só vez**.
 1. Clique no botão **[!UICONTROL Change]**.
 
-   In the **[!UICONTROL Schedule editing wizard]** window, you can configure the type of frequency, event recurrence and event validity period.
+   Na janela **[!UICONTROL Schedule editing wizard]**, você pode configurar o tipo de frequência, a recorrência do evento e o período de validade do evento.
 
    ![](assets/s_user_segmentation_wizard_11.png)
 
-1. Clique **[!UICONTROL Finish]** para salvar o agendamento.
+1. Clique em **[!UICONTROL Finish]** para salvar o cronograma.
 
    ![](assets/s_user_segmentation_wizard_valid.png)
 
-1. The lower section of the **[!UICONTROL Scheduling & History]** tab allows you to select the number of days to be taken into account in the history.
+1. A seção inferior da guia **[!UICONTROL Scheduling &amp; History]** permite selecionar o número de dias a serem considerados no histórico.
 
    ![](assets/edit_request_inc.png)
 
@@ -70,18 +70,18 @@ Como essas campanhas são iniciadas no início de cada temporada para oferecer a
 ![](assets/incremental_query_example.png)
 
 1. Adicione um query incremental, bem como uma atividade de atualização da lista em um novo workflow.
-1. Configure a **[!UICONTROL Incremental query]** guia da atividade conforme especificado em [Criação de uma consulta](../../workflow/using/query.md#creating-a-query).
-1. Select the **[!UICONTROL Scheduling & History]** tab and then specify a 270-day history. Um recipient que já foi alvo não será novamente por um período de 270 dias ou aproximadamente 9 meses.
+1. Configure a guia **[!UICONTROL Incremental query]** da atividade, conforme especificado em [Criação de query](../../workflow/using/query.md#creating-a-query).
+1. Selecione a guia **[!UICONTROL Scheduling &amp; History]** e especifique um histórico de 270 dias. Um recipient que já foi alvo não será novamente por um período de 270 dias ou aproximadamente 9 meses.
 
-   Then click the **[!UICONTROL Change...]** button.
+   Clique no botão **[!UICONTROL Change...]**.
 
-1. To ensure the list is updated before the start of each season, select **[!UICONTROL Monthly]**.
+1. Para garantir que a lista seja atualizada antes do início de cada estação, selecione **[!UICONTROL Monthly]**.
 1. Na próxima tela, selecione março, junho, setembro e dezembro. Escolha o dia 20 do mês e escolha o horário que deseja iniciar o workflow.
-1. Em seguida, selecione o período de validade do query. For example, if you want this activity to be permanently active, select **[!UICONTROL Permanent validity]**.
+1. Em seguida, selecione o período de validade do query. Por exemplo, se você quiser que essa atividade fique ativa permanentemente, selecione **[!UICONTROL Permanent validity]**.
 
    ![](assets/incremental_query_example_2.png)
 
-1. After approving the incremental query, configure the list update activity as explained in [List update](../../workflow/using/list-update.md).
+1. Após a aprovação do query incremental, configure a atividade de atualização da lista como explicado em [List update](../../workflow/using/list-update.md).
 
 O workflow será iniciado automaticamente e imediatamente antes do início de cada estação. A lista será atualizada com os novos recipients qualificados para receber as ofertas.
 
@@ -91,4 +91,4 @@ O workflow será iniciado automaticamente e imediatamente antes do início de ca
 * schema
 * recCount
 
-Esse conjunto de três valores identifica o público alvo do query. **[!UICONTROL tableName]** é o nome da tabela que registra os identificadores de metas, **[!UICONTROL schema]** é o esquema da população (normalmente nms:customer) e **[!UICONTROL recCount]** é o número de elementos na tabela.
+Esse conjunto de três valores identifica o público alvo do query. **[!UICONTROL tableName]** é o nome da tabela que registra os identificadores de target, **[!UICONTROL schema]** é o schema do público (normalmente nms:recipient) e **[!UICONTROL recCount]** é o número de elementos na tabela.
