@@ -14,7 +14,7 @@ discoiquuid: d678db05-cc44-4086-98a5-e5296e8e5de8
 index: y
 internal: n
 snippet: y
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 7dbc876fae0bde78e3088ee1ab986cd09e9bcc38
 
 ---
@@ -50,7 +50,7 @@ Exemplo de um template de formatação HTML de JavaScript baseado no schema &quo
 
 As várias diretivas JavaScript aparecem no seguinte formulário:
 
-* Merge fields: displays the content of the data with the **`<%= <source> %>`** syntax where `<source>`is the source field of the data to be displayed.
+* Campos de mesclagem: exibe o conteúdo dos dados com a **`<%= <source> %>`** sintaxe onde `<source>`é o campo de origem dos dados a serem exibidos.
 * Blocos de instrução: executa uma série de instruções JavaScript incluídas entre as tags &lt;% e %>.
 
 O objeto de **conteúdo** representa o elemento principal do documento XML de entrada.
@@ -61,7 +61,7 @@ Em nosso exemplo, a linha a seguir exibe o conteúdo do nome do livro de nomes:
 <h1><%= content.@name %></h1>
 ```
 
-The following code iterates on the `<chapter>` collection element:
+O código a seguir itera no `<chapter>` elemento de coleção:
 
 ```
 <% for each(var chapter in content.chapter) { %>
@@ -73,16 +73,16 @@ Os atributos e elementos do conteúdo são representados como objetos JavaScript
 
 **Exemplo**:
 
-* **conteúdo.@name**: retrieves the value of the &quot;name&quot; attribute of the main element
+* **conteúdo.@name**: recupera o valor do atributo &quot;name&quot; do elemento principal
 * **conteúdo.@`['name']`**: idêntico ao** conteúdo.sintaxe @name **
-* **content.chapter.length**: retorna o número de elementos no elemento de `<chapter` coleção
-* **content.chapter`[0]`.@name**: retrieves the name of the first `<chapter>` element
+* **content.chapter.length**: retorna o número de elementos no `<chapter` elemento de coleção
+* **content.chapter`[0]`.@name**: recupera o nome do primeiro `<chapter>` elemento
 * **chapter.name()**: retorna o nome do `<chapter>` elemento
 * **chapter.parent().name()**: retorna o nome do elemento primário de `<chapter>`
 
 >[!CAUTION]
 >
->Because the &#39;-&#39; character is reserved in the JavaScript language, the recovery of the value of any attribute or element containing this character must be carried out via the `['<field>']` syntax.
+>Como o caractere &#39;-&#39; é reservado na linguagem JavaScript, a recuperação do valor de qualquer atributo ou elemento que contém esse caractere deve ser executada por meio da sintaxe `['<field>']`.
 >
 >Por exemplo: `content.@['offer-id']`.
 
@@ -182,7 +182,7 @@ A zona de edição permite que você preencha o conteúdo do template JavaScript
 >
 >O schema do modelo de dados associados deve ser preenchido para a inicialização de objetos JavaScript.
 
-Para gerar a pré-visualização do documento de saída a qualquer momento, selecione um conteúdo e um formato de saída (HTML, Texto, XML) e clique em **[!UICONTROL Generate]** :
+Para gerar a pré-visualização do documento de saída a qualquer momento, selecione um conteúdo e um formato de saída (HTML, Texto, XML) e clique em **[!UICONTROL Generate]**:
 
 ![](assets/d_ncs_content_form17.png)
 
@@ -198,7 +198,7 @@ Abaixo você encontrará a configuração necessária para implementar a seguint
 
 Este exemplo envolve as seguintes etapas:
 
-1. Create the following schema (in this case: **neo:news**):
+1. Crie o seguinte schema (neste caso: **neo:news**):
 
    ```
    <srcSchema _cs="Invitation (neo)"   entitySchema="xtk:srcSchema" img="xtk:schema.png" label="Invitation" mappingType="sql" name="news" namespace="neo" xtkschema="xtk:srcSchema">
@@ -237,7 +237,7 @@ Este exemplo envolve as seguintes etapas:
    </srcSchema>
    ```
 
-1. Create the linked **[!UICONTROL Content management]** type form (**neo:news**)
+1. Crie o formulário de tipo vinculado **[!UICONTROL Content management]** (**neo:news**)
 
    ```
    <form _cs="News (neo)" entitySchema="xtk:form"  img="xtk:form.png" label="News"  name="news" namespace="neo" type="contentForm" xtkschema="xtk:form">
@@ -371,7 +371,7 @@ Este exemplo envolve as seguintes etapas:
 
 1. Você pode então usar esse template de conteúdo em seus deliveries.
 
-   Para obter mais informações, consulte [Uso de um modelo](../../delivery/using/using-a-content-template.md)de conteúdo.
+   Para obter mais informações, consulte [Uso de um template de conteúdo](../../delivery/using/using-a-content-template.md).
 
 ## Folha de estilos XSL {#xsl-stylesheets}
 
@@ -383,7 +383,7 @@ Essa transformação é detalhada em XML em um documento conhecido como folha de
 
 Uma folha de estilos é identificada por seu nome e namespace, como schemas e formulários. No entanto, é recomendável adicionar a extensão **.xsl** ao nome da folha de estilos.
 
-The identification key of a stylesheet is a string formed by the namespace and the name separated by a colon; for example: **cus:book.xsl**.
+A chave de identificação de uma folha de estilos é uma cadeia de caracteres formada pelo namespace e pelo nome separados por dois pontos, por exemplo: **cus:book.xls**.
 
 ### Estrutura de uma folha de estilos {#structure-of-a-stylesheet}
 
@@ -415,16 +415,16 @@ Uma folha de estilos é um documento XML que obedece às seguintes regras:
 
 * os valores dos atributos entre aspas,
 * um elemento deve ter um marcador de abertura e um marcador de fechamento,
-* replace the &#39;&lt;&#39; or &#39;&amp;&#39; characters with the **&#39;&lt;&#39;** or **&#39;&amp;&#39;** entities,
+* substitua &#39;&lt;&#39; or &#39;&amp;&#39; characters with the **&#39;&lt;&#39;** ou **&#39;&amp;&#39;** entities,
 * todo elemento XSL deve usar o namespace **xsl**.
 
-A stylesheet must start with the XSL root element marker **`<xsl:stylesheet>`** and end with the **`</xsl:stylesheet>`** marker. O namespace XSL deve ser definido no marcador de abertura da seguinte forma:
+Uma folha de estilos deve começar com o marcador de elemento raiz XSL **`<xsl:stylesheet>`** e terminar com o marcador **`</xsl:stylesheet>`**. O namespace XSL deve ser definido no marcador de abertura da seguinte forma:
 
 ```
 <xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform" version="1.0">
 ```
 
-The **`<xsl:output>`** element specifies the format of the document generated. Especifique o conjunto desejado de caracteres e o formato de saída.
+O elemento **`<xsl:output>`** especifica o formato do documento gerado. Especifique o conjunto desejado de caracteres e o formato de saída.
 
 ```
 <xsl:output encoding="ISO-8859-1" method="html"/>
@@ -459,9 +459,9 @@ Em nosso exemplo, uma página HTML é gerada no schema &quot;cus:book&quot; exib
 
 ### Exibição de HTML/XML {#displaying-html-xml}
 
-To display an **html** field, use the **disable-output-escaping=&quot;yes&quot;** option from the **`<xsl:value-of>`** directive. Isso permite evitar a substituição de caracteres por sua entidade XML (por exemplo &lt; com &lt;).
+Para exibir um campo **html**, use a opção **disable-output-escaping=&quot;yes&quot;** da diretiva **`<xsl:value-of>`**. Isso permite evitar a substituição de caracteres por sua entidade XML (por exemplo &lt; com &lt;).
 
-The **`<xsl:text>`** directive with the **disable-output-escaping=&quot;yes&quot;** option lets you insert JavaScript tags for personalization fields or conditional tests.
+A diretiva **`<xsl:text>`** com a opção **disable-output-escaping=&quot;yes&quot;** permite inserir tags JavaScript para campos de personalização ou testes condicionais.
 
 Exemplos:
 
@@ -487,7 +487,7 @@ Exemplos:
 
 É possível construir uma biblioteca de templates ou variáveis a serem compartilhadas entre várias folhas de estilos. O **template** &quot;longMonth&quot;, apresentado acima, é um exemplo típico da vantagem de localizar um template remotamente em uma folha de estilos para que ele possa ser reutilizado posteriormente.
 
-The **`<xsl:include>`** directive indicates the name of the stylesheet to be included in the document.
+A diretiva **`<xsl:include>`** indica o nome da folha de estilos a ser incluída no documento.
 
 **Exemplo**: incluindo a folha de estilos &quot;common.xsl&quot;.
 
@@ -510,7 +510,7 @@ A zona de edição permite que você preencha o conteúdo da folha de estilos:
 
 ![](assets/d_ncs_content_form14.png)
 
-Para gerar uma pré-visualização do documento de saída a qualquer momento, selecione uma instância de conteúdo e o formato (HTML, Texto, XML) e clique em **[!UICONTROL Generate]** :
+Para gerar uma pré-visualização do documento de saída a qualquer momento, selecione uma instância de conteúdo e o formato (HTML, Texto, XML) e clique em **[!UICONTROL Generate]**:
 
 ![](assets/d_ncs_content_form15.png)
 
@@ -526,7 +526,7 @@ As imagens inseridas no documento de saída HTML podem ser indicadas com referê
 
 A referência relativa permite que você insira o URL do servidor contendo as imagens nas opções **NcmRessourcesDir** e **NcmRessourcesDirPreview.** Essas opções contêm o local das imagens para publicação e pré-visualização no console do cliente do Adobe Campaign.
 
-These two options are accessible via the option management screen in the **[!UICONTROL Administration > Platform > Options]** folder.
+Essas duas opções são acessíveis pela tela de gestão de opções na pasta **[!UICONTROL Administration > Platform > Options]**.
 
 **Exemplo**:
 
@@ -547,7 +547,7 @@ Exemplo de como usar a opção de colocação de imagem e seu uso com uma imagem
 
 ### Uso de recursos públicos {#using-public-resources}
 
-You can also use **[!UICONTROL Public resources]** to declare images and upload them onto the server depending on the instance settings entered in the deployment wizard.
+Também é possível usar **[!UICONTROL Public resources]** para declarar imagens e carregá-las no servidor, dependendo das configurações de instância inseridas no assistente de implantação.
 
 Você poderá então acionar essas imagens em conteúdos. Para fazer isso, use a seguinte sintaxe no schema de gestão de conteúdo:
 
@@ -567,7 +567,7 @@ No formulário, o campo para selecionar a imagem será adicionado através da se
 
 >[!NOTE]
 >
->For more on **[!UICONTROL Public resources]** and how to configure and use them, refer to [this section](../../installation/using/deploying-an-instance.md#managing-public-resources).
+>Para obter mais informações sobre **[!UICONTROL Public resources]** e como configurar e usá-los, consulte [esta seção](../../installation/using/deploying-an-instance.md#managing-public-resources).
 
 ## Exibição de data {#date-display}
 
@@ -577,7 +577,7 @@ O Adobe Campaign fornece funções de formatação de data para os templates Jav
 
 ### Formatação de data JavaScript {#javascript-date-formatting}
 
-To display a date in the desired format, Adobe Campaign provides the **formatDate** function that takes as input the content of the date and a string specifying the output format with the following syntax: **%4Y/%2M/%2D %2H%2N%2S**
+Para exibir uma data no formato desejado, o Adobe Campaign fornece a função **formatDate** que tem como entrada o conteúdo da data e uma cadeia de caracteres especificando o formato de saída com a seguinte sintaxe: **%4Y/%2M/%2D %2H%2N%2S**
 
 Exemplos:
 
@@ -608,7 +608,7 @@ Exemplos:
 
 ### Formatação de data XSL {#xsl-date-formatting}
 
-Não há função de gerenciamento de data padrão na sintaxe XSLT. Para exibir uma data no formato desejado, o Adobe Campaign fornece a função externa **date-format**. This function takes as its input the content of the date and a string specifying the output format with the following syntax: **%4Y/%2M/%2D %2H%2N%2S**
+Não há função de gerenciamento de data padrão na sintaxe XSLT. Para exibir uma data no formato desejado, o Adobe Campaign fornece a função externa **date-format**. Essa função assume como entrada o conteúdo da data e uma cadeia de caracteres especificando o formato de saída com a seguinte sintaxe: **%4Y/%2M/%2D %2H%2N%2S**
 
 Exemplos:
 
