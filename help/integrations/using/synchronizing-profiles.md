@@ -14,7 +14,7 @@ discoiquuid: 91115d4f-0cb6-4bce-b28d-17f15e9f9a0a
 index: y
 internal: n
 snippet: y
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 209ac4d81d2d27c264ee6b288bcb7fcb1900ffc5
 
 ---
@@ -24,11 +24,11 @@ source-git-commit: 209ac4d81d2d27c264ee6b288bcb7fcb1900ffc5
 
 O ACS Connector replica dados do Campaign v7 para o Campaign Standard. Os dados recebidos do Campaign v7 podem ser usados no Campaign Standard para criar deliveries. É possível ver como os perfis são sincronizados executando as operações listadas abaixo.
 
-* **Adicionar novos destinatários**: Crie um novo destinatário no Campaign v7 e confirme se um perfil correspondente foi replicado para o Campaign Standard. See [Creating a new recipient](#creating-a-new-recipient).
-* **Atualizar destinatários**: Edite um novo destinatário no Campaign v7 e exiba o perfil correspondente no Campaign Standard para confirmar que a atualização foi replicada. Consulte [Edição de um destinatário](#editing-a-recipient).
-* **Crie um fluxo de trabalho no Campaign Standard**: Crie um fluxo de trabalho no Campaign Standard que inclua uma consulta com um público-alvo ou perfis replicados do Campaign v7. Consulte [Criação de um fluxo de trabalho](#creating-a-workflow).
-* **Crie uma entrega no Campaign Standard**: Siga o fluxo de trabalho até a conclusão para enviar uma entrega. Consulte [Criação de uma entrega](#creating-a-delivery).
-* **Verifique o link** de cancelamento de assinatura: Use um aplicativo da Web Campaign v7 para garantir que a opção do destinatário de cancelar a assinatura de um serviço seja enviada para o banco de dados Campaign v7. A opção para parar de receber o serviço é replicada para o Campaign Standard. See [Changing the unsubscription link](#changing-the-unsubscription-link).
+* **Add new recipients**: crie um novo recipient no Campaign v7 e confirme se um perfil correspondente foi replicado para o Campaign Standard. Consulte [Criação de um novo recipient](#creating-a-new-recipient).
+* **Update recipients**: edite um novo recipient no Campaign v7 e exiba o perfil correspondente no Campaign Standard para confirmar se a atualização foi replicada. Consulte [Edição de um recipient](#editing-a-recipient).
+* **Build a workflow in Campaign Standard**: crie um workflow no Campaign Standard que inclui uma consulta com uma audiência ou perfis replicados do Campaign v7. Consulte [Criação de um workflow](#creating-a-workflow).
+* **Create a delivery in Campaign Standard**: siga o workflow até a conclusão para enviar um delivery. Consulte [Criação de um delivery](#creating-a-delivery).
+* **Verify the unsubscription link**: use uma aplicação web do Campaign v7 para confirmar que a escolha do recipient de cancelar a subscrição de um serviço será enviada ao banco de dados do Campaign v7. A opção para parar de receber o serviço é replicada para o Campaign Standard. Consulte [Alteração do link de cancelamento de subscrição](#changing-the-unsubscription-link).
 
 ## Pré-requisitos {#prerequisites}
 
@@ -48,80 +48,80 @@ Quando um recipient clica no link de cancelar subscrição em um e-mail enviado 
 
 ## Criação de um novo recipient {#creating-a-new-recipient}
 
-1. Crie um novo recipient no Campaign v7 para replicação no Campaign Standard. Insira o máximo possível de informações, incluindo o sobrenome, nome, endereço de email e endereço postal do recipient. However, do not choose a **[!UICONTROL Salutation]** since it will be added in the next section, [Editing a recipient](#editing-a-recipient). Para obter mais informações, consulte [Adicionando recipients](../../platform/using/adding-profiles.md).
+1. Crie um novo recipient no Campaign v7 para replicação no Campaign Standard. Insira o máximo possível de informações, incluindo o sobrenome, nome, endereço de email e endereço postal do recipient. No entanto, não escolha uma **[!UICONTROL Saudação]** já que ela será adicionada na próxima seção, [Edição de um recipient](#editing-a-recipient). Para obter mais informações, consulte [Adicionando recipients](../../platform/using/adding-profiles.md).
 
    ![](assets/acs_connect_profile_sync_01.png)
 
-1. Confirme se o novo recipient foi adicionado ao Campaign Standard. Ao revisar o perfil, verifique se os dados inseridos no Campaign v7 também estão disponíveis no Campaign Standard. Para saber onde encontrar perfis no Campaign Standard, consulte [Noções básicas de navegação](https://docs.adobe.com/content/help/en/campaign-standard/using/getting-started/discovering-the-interface/interface-description.html).
+1. Confirme se o novo recipient foi adicionado ao Campaign Standard. Ao revisar o perfil, verifique se os dados inseridos no Campaign v7 também estão disponíveis no Campaign Standard. Para saber onde encontrar perfis no Campaign Standard, consulte [Noções básicas de navegação](https://docs.adobe.com/content/help/pt-BR/campaign-standard/using/getting-started/discovering-the-interface/interface-description.html).
 
    ![](assets/acs_connect_profile_sync_02.png)
 
-   Por padrão, a replicação periódica do ACS Connector ocorre uma vez a cada 15 minutos. Para obter mais informações, consulte Replicação [de](../../integrations/using/acs-connector-principles-and-data-cycle.md#data-replication)dados.
+   Por padrão, a replicação periódica do ACS Connector ocorre uma vez a cada 15 minutos. Para obter mais informações, consulte [Replicação de dados](../../integrations/using/acs-connector-principles-and-data-cycle.md#data-replication).
 
 ## Edição de um recipient {#editing-a-recipient}
 
 As etapas abaixo para alterar um ponto único de dados oferecem um exemplo simples de como o Campaign v7 se torna o banco de dados mestre para o Campaign Standard ao usar a replicação de dados. Modificar ou excluir dados replicados no Campaign v7 tem o mesmo efeito nos dados correspondentes no Campaign Standard.
 
-1. Escolha o destinatário recém-criado em [Criar um novo destinatário](#creating-a-new-recipient) e edite o nome do destinatário. For example, choose a **[!UICONTROL Salutation]** for the recipient (e.g. Mr. or Mrs.). Para obter mais informações, consulte [Edição de um perfil](../../platform/using/editing-a-profile.md).
+1. Escolha o recipient recém-criado em [Criação de um novo destinatário](#creating-a-new-recipient) e edite o nome dele. Por exemplo, escolha uma **[!UICONTROL Saudação]** para o recipient (como Sr. ou Sra.). Para obter mais informações, consulte [Edição de um perfil](../../platform/using/editing-a-profile.md).
 
    ![](assets/acs_connect_profile_sync_03.png)
 
-1. Confirme se o nome do recipient foi atualizado no Campaign Standard. Para saber onde encontrar perfis no Campaign Standard, consulte [Noções básicas de navegação](https://docs.adobe.com/content/help/en/campaign-standard/using/getting-started/discovering-the-interface/interface-description.html).
+1. Confirme se o nome do recipient foi atualizado no Campaign Standard. Para saber onde encontrar perfis no Campaign Standard, consulte [Noções básicas de navegação](https://docs.adobe.com/content/help/pt-BR/campaign-standard/using/getting-started/discovering-the-interface/interface-description.html).
 
    ![](assets/acs_connect_profile_sync_04.png)
 
-   Por padrão, a replicação periódica do ACS Connector ocorre uma vez a cada 15 minutos. Para obter mais informações, consulte Replicação [de](../../integrations/using/acs-connector-principles-and-data-cycle.md#data-replication)dados.
+   Por padrão, a replicação periódica do ACS Connector ocorre uma vez a cada 15 minutos. Para obter mais informações, consulte [Replicação de dados](../../integrations/using/acs-connector-principles-and-data-cycle.md#data-replication).
 
 ## Criação de um workflow {#creating-a-workflow}
 
 Os perfis e os serviços replicados do Campaign v7 estão disponíveis para os profissionais de marketing digital para aproveitar os dados avançados do Campaign Standard. As instruções abaixo demonstram como adicionar uma consulta a um workflow do Campaign Standard e, em seguida, usá-lo com o banco de dados replicado.
 
-Para obter mais informações e instruções completas sobre workflows do Campaign Standard, consulte [Workflows](https://docs.adobe.com/content/help/en/campaign-standard/using/managing-processes-and-data/about-workflows-and-data-management/workflow-data-and-processes.html).
+Para obter mais informações e instruções completas sobre workflows do Campaign Standard, consulte [Workflows](https://docs.adobe.com/content/help/pt-BR/campaign-standard/using/managing-processes-and-data/about-workflows-and-data-management/workflow-data-and-processes.html).
 
-1. Go to Campaign Standard and click **[!UICONTROL Marketing Activities]**.
-1. Click **[!UICONTROL Create]** on the upper right.
+1. Vá para o Campaign Standard e clique em **[!UICONTROL Marketing Activities]**.
+1. Clique em **[!UICONTROL Create]** no canto superior direito.
 1. Clique em **[!UICONTROL Workflow]**.
 1. Clique em **[!UICONTROL New workflow]** e **[!UICONTROL Next]**.
-1. Enter a name for the workflow in the **[!UICONTROL Label]** field and additional information if needed. Clique em **[!UICONTROL Next]**.
-1. From **[!UICONTROL Targeting]** on the left, drag a **[!UICONTROL Query]** target to the workspace.
+1. Digite um nome para o workflow no campo **[!UICONTROL Label]** e informações adicionais, caso seja necessário. Clique em **[!UICONTROL Next]**.
+1. A partir de **[!UICONTROL Targeting]** à esquerda, arraste um target **[!UICONTROL Query]** para o espaço de trabalho.
 
    ![](assets/acs_connect_profile_sync_05.png)
 
-1. Double click the **[!UICONTROL Query]** activity and choose a parameter that can be used with the replicated database. Por exemplo, é possível:
+1. Clique duas vezes na atividade **[!UICONTROL Query]** e escolha um parâmetro que possa ser usado com o banco de dados replicado. Por exemplo, é possível:
 
-   * Drag **[!UICONTROL Profiles]** to the workspace. Use the field pull-down menu to choose **[!UICONTROL Is external resource]** to find profiles that were replicated from Campaign v7.
+   * Arraste **[!UICONTROL Profiles]** para o espaço de trabalho. Use o menu suspenso do campo para escolher **[!UICONTROL Is external resource]** e encontrar perfis que foram replicados do Campaign v7.
    * Arraste outros parâmetros da consulta para direcionar ainda mais os perfis replicados.
 
 ## Criação de um delivery.{#creating-a-delivery}
 
 >[!NOTE]
 >
->The instructions for creating the delivery continue the workflow started with [Creating a workflow](#creating-a-workflow).
+>As instruções para criar o delivery dão continuidade ao workflow iniciado com a [Criação de um workflow](#creating-a-workflow).
 
-Os profissionais de marketing digital podem utilizar uma aplicação Web do Campaign v7 para certificar que a escolha de um recipient de cancelar a subscrição de um serviço é enviada ao banco de dados do Campaign v7. Depois que o recipient clicar no link cancelar a subscrição, a opção para parar de receber o serviço é replicada do Campaign v7 para o Campaign Standard. Para obter detalhes adicionais, consulte [Alteração do link](#changing-the-unsubscription-link)de cancelamento de assinatura.
+Os profissionais de marketing digital podem utilizar uma aplicação Web do Campaign v7 para certificar que a escolha de um recipient de cancelar a subscrição de um serviço é enviada ao banco de dados do Campaign v7. Depois que o recipient clicar no link cancelar a subscrição, a opção para parar de receber o serviço é replicada do Campaign v7 para o Campaign Standard. Para obter detalhes adicionais, consulte [Alteração do link de cancelamento de subscrição](#changing-the-unsubscription-link).
 
-Siga as etapas abaixo para adicionar uma delivery de e-mail a um workflow existente com o serviço de cancelamento de subscrição criado no Campaign v7. Para obter mais informações e instruções completas sobre workflows do Campaign Standard, consulte este [documento](https://docs.adobe.com/content/help/en/campaign-standard/using/managing-processes-and-data/about-workflows-and-data-management/workflow-data-and-processes.html).
+Siga as etapas abaixo para adicionar uma delivery de e-mail a um workflow existente com o serviço de cancelamento de subscrição criado no Campaign v7. Para obter mais informações e instruções completas sobre workflows do Campaign Standard, consulte este [documento](https://docs.adobe.com/content/help/pt-BR/campaign-standard/using/managing-processes-and-data/about-workflows-and-data-management/workflow-data-and-processes.html).
 
 >[!NOTE]
 >
 >Peça ao consultor para configurar a aplicação Web para o cancelamento de subscrição do serviço antes de seguir as etapas abaixo.
 
-1. Click **[!UICONTROL Channels]** on the left.
-1. Drag **[!UICONTROL Email delivery]** to the existing workflow in the workspace.
+1. Clique em **[!UICONTROL Channels]** à esquerda.
+1. Arraste **[!UICONTROL Email delivery]** para o workflow existente no espaço de trabalho.
 
    ![](assets/acs_connect_profile_sync_07.png)
 
-1. Clique duas vezes na **[!UICONTROL Email delivery]** atividade e escolha **[!UICONTROL Single send email]** ou **[!UICONTROL Recurring email]**. Selecione suas opções e clique em **[!UICONTROL Next]**.
+1. Clique duas vezes na atividade **[!UICONTROL Email delivery]** e escolha **[!UICONTROL Single send email]** ou **[!UICONTROL Recurring email]**. Selecione as opções e clique em **[!UICONTROL Next]**.
 1. Clique em **[!UICONTROL Send via email]** e em **[!UICONTROL Next]**.
 
    ![](assets/acs_connect_profile_sync_08.png)
 
-1. Enter a name for the delivery in the **[!UICONTROL Label]** field and additional information if needed. Clique em **[!UICONTROL Next]**.
+1. Insira um nome para o delivery no campo **[!UICONTROL Label]** e informações adicionais, caso seja necessário. Clique em **[!UICONTROL Next]**.
 
    ![](assets/acs_connect_profile_sync_09.png)
 
-1. In the **[!UICONTROL Subject]** field, enter the subject that will appear in the recipient&#39;s email inbox.
-1. Click **[!UICONTROL Change content]** to add an HTML template.
+1. No campo **[!UICONTROL Subject]**, insira o assunto que aparecerá na caixa de entrada do email do recipient.
+1. Clique em **[!UICONTROL Change content]** para adicionar um modelo HTML.
 
    ![](assets/acs_connect_profile_sync_10.png)
 
@@ -146,7 +146,7 @@ Siga as etapas abaixo para adicionar uma delivery de e-mail a um workflow existe
 
    ![](assets/acs_connect_profile_sync_15.png)
 
-1. Choose the web application created by the consultant and click **[!UICONTROL Confirm]**.
+1. Escolha a aplicação web criada pelo consultor e clique em **[!UICONTROL Confirm]**.
 
    ![](assets/acs_connect_profile_sync_16.png)
 
@@ -155,17 +155,17 @@ Siga as etapas abaixo para adicionar uma delivery de e-mail a um workflow existe
 
    ![](assets/acs_connect_profile_sync_17.png)
 
-1. Click **[!UICONTROL Start]** to send the delivery. O ícone de delivery de e-mail pisca para indicar que está sendo preparado para delivery.
+1. Clique em **[!UICONTROL Start]** para enviar o delivery. O ícone de delivery de e-mail pisca para indicar que está sendo preparado para delivery.
 
    ![](assets/acs_connect_profile_sync_18.png)
 
-1. Double click the **[!UICONTROL Email delivery]** channel and choose **[!UICONTROL Confirm]** to send the email. Click **[!UICONTROL OK]** to send the messages.
+1. Clique duas vezes no canal **[!UICONTROL Email delivery]** e escolha **[!UICONTROL Confirm]** para enviar o e-mail. Clique em **[!UICONTROL OK]** para enviar as mensagens.
 
    ![](assets/acs_connect_profile_sync_19.png)
 
 ## Verificação do serviço de cancelamento de subscrição {#verifying-the-unsubscription-service}
 
-Siga as instruções em [Criar um fluxo de trabalho](#creating-a-workflow) e [Criar uma entrega](#creating-a-delivery) antes de seguir para as etapas abaixo.
+Siga as instruções em [Criar um workflow](#creating-a-workflow) e [Criar um delivery](#creating-a-delivery) antes de seguir para as etapas abaixo.
 
 1. O recipient clica no link de cancelamento de subscrição na delivery do e-mail.
 
@@ -175,11 +175,11 @@ Siga as instruções em [Criar um fluxo de trabalho](#creating-a-workflow) e [Cr
 
    ![](assets/acs_connect_profile_sync_21.png)
 
-1. Os dados do recipient no Campaign v7 são atualizados para refletir que o usuário cancelou a subscrição. Confirm that the box **[!UICONTROL No longer contact (by any channel)]** is checked for the recipient. Para saber como exibir um recipient no Campaign v7, consulte [Edição de um perfil](../../platform/using/editing-a-profile.md).
+1. Os dados do recipient no Campaign v7 são atualizados para refletir que o usuário cancelou a subscrição. Confirme se a caixa **[!UICONTROL No longer contact (by any channel)]** está marcada para o recipient. Para saber como exibir um recipient no Campaign v7, consulte [Edição de um perfil](../../platform/using/editing-a-profile.md).
 
    ![](assets/acs_connect_profile_sync_22.png)
 
-1. Vá para o Campaign Standard e abra os detalhes do perfil do recipient. Confirme se uma caixa de seleção é exibida ao lado de **[!UICONTROL No longer contact (by any channel)]**. Para saber onde encontrar perfis no Campaign Standard, consulte [Noções básicas de navegação](https://docs.adobe.com/content/help/en/campaign-standard/using/getting-started/discovering-the-interface/interface-description.html).
+1. Vá para o Campaign Standard e abra os detalhes do perfil do recipient. Confirme se uma caixa de seleção aparece ao lado de **[!UICONTROL No longer contact (by any channel)]**. Para saber onde encontrar perfis no Campaign Standard, consulte [Noções básicas de navegação](https://docs.adobe.com/content/help/pt-BR/campaign-standard/using/getting-started/discovering-the-interface/interface-description.html).
 
    ![](assets/acs_connect_profile_sync_23.png)
 
