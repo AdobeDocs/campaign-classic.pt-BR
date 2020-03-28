@@ -14,7 +14,7 @@ discoiquuid: e1ab1e82-8194-40a8-8df3-e7cfbaa3e777
 index: y
 internal: n
 snippet: y
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 1c86322fa95aee024f6c691b61a10c21a9a22eb7
 
 ---
@@ -103,7 +103,7 @@ Por padrão, apenas uma medida é exibida. Para adicionar ou configurar medidas:
 
    Você pode então escolher se exibe ou não os rótulos de medida. Para obter mais informações, consulte [Configuração da exibição](../../reporting/using/concepts-and-methodology.md#configuring-the-display).
 
-1. É possível criar novas medidas usando as existentes. Para fazer isso, clique **[!UICONTROL Create a measure]** e configure-a.
+1. É possível criar novas medidas usando as existentes. Para fazer isso, clique em **[!UICONTROL Create a measure]** e a configure.
 
    ![](assets/s_advuser_cube_in_report_config_02a.png)
 
@@ -122,7 +122,7 @@ Por padrão, apenas uma medida é exibida. Para adicionar ou configurar medidas:
 
    Após criar uma medida, você pode editá-la e, se necessário, alterar sua configuração. Para fazer isso, clique no botão **[!UICONTROL Measures]** e vá para a guia da medida que deseja editar.
 
-   Em seguida, clique em **[!UICONTROL Edit the dynamic measure]** para acessar o menu de configurações.
+   Clique em **[!UICONTROL Edit the dynamic measure]** para acessar o menu de configurações.
 
 ## Criação de uma população do target {#building-a-target-population}
 
