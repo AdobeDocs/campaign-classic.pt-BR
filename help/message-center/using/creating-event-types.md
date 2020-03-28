@@ -14,7 +14,7 @@ discoiquuid: 5c0a428f-a3e7-4848-8c47-b72832ba97c2
 index: y
 internal: n
 snippet: y
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 20f835c357d016643ea1f3209ee4dfb6d3239f90
 
 ---
@@ -22,7 +22,7 @@ source-git-commit: 20f835c357d016643ea1f3209ee4dfb6d3239f90
 
 # Criação de tipos de eventos{#creating-event-types}
 
-Os tipos de eventos destinados a serem processados pelo Adobe Campaign devem ser criados na instância de controle. This can be done via the **[!UICONTROL Administration > Platform > Enumerations]** folder of the tree. Each event type matches a value in the **[!UICONTROL eventType]** enumeration. Pode ser uma confirmação do pedido, senha ou alteração do pedido do delivery, etc.
+Os tipos de eventos destinados a serem processados pelo Adobe Campaign devem ser criados na instância de controle. Isso pode ser feito através da pasta **[!UICONTROL Administration > Platform > Enumerations]** da árvore. Cada tipo de evento corresponde a um valor na lista discriminada **[!UICONTROL eventType]**. Pode ser uma confirmação do pedido, senha ou alteração do pedido do delivery, etc.
 
 ![](assets/messagecenter_eventtype_enum_001.png)
 
