@@ -14,7 +14,7 @@ discoiquuid: 9f4e8d10-7387-4716-aa85-a6b012ad14ef
 index: y
 internal: n
 snippet: y
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: e0ab9a3545b5c688975c32075c41e3987da5cf37
 
 ---
@@ -22,13 +22,13 @@ source-git-commit: e0ab9a3545b5c688975c32075c41e3987da5cf37
 
 # Sobre a gestão de conteúdo{#about-content-management}
 
-O módulo Adobe Campaign Content Manager é um pacote [](../../installation/using/installing-campaign-standard-packages.md) padrão do Campaign Classic específico que você pode instalar para criar informativos ou sites recorrentes. Ele pode ajudá-lo a criar, validar e publicar suas mensagens.
+O módulo Adobe Campaign Content Manager é um [pacote padrão](../../installation/using/installing-campaign-standard-packages.md) do Campaign Classic específico que você pode instalar para criar informativos ou sites recorrentes. Ele pode ajudá-lo a criar, validar e publicar suas mensagens.
 
 >[!NOTE]
 >
->Esta seção se refere ao módulo Gerenciamento de conteúdo. Para obter mais informações sobre como projetar conteúdo de entregas por email, consulte [esta seção](../../delivery/using/defining-the-email-content.md).
+>Esta seção se refere ao módulo Gerenciamento de conteúdo. Para obter mais informações sobre como projetar o conteúdo de deliveries de emails, consulte [esta seção](../../delivery/using/defining-the-email-content.md).
 
-O módulo de gerenciamento de conteúdo incorpora o grupo de trabalho, o fluxo de trabalho e a funcionalidade de agregação de conteúdo. Isso permite que uma mensagem seja formatada automaticamente: email, correspondência, SMS, Web, etc.
+O módulo &quot;Gerenciamento de conteúdo&quot; incorpora o grupo de trabalho, o workflow e a funcionalidade de agregação de conteúdo. Isso permite que uma mensagem seja formatada automaticamente: email, correspondência, SMS, Web, etc.
 
 O uso do gerenciador de conteúdo em um delivery permite que você ofereça campos de entrada ou de seleção aos operadores de criação de conteúdo. O layout e a exibição desse conteúdo, bem como quaisquer alterações feitas, são gerenciados automaticamente usando a folha de estilos.
 
