@@ -1,7 +1,7 @@
 ---
 title: Perguntas frequentes sobre relatórios
 seo-title: Explorar dados e criar relatórios
-description: Perguntas frequentes do Campaign Classic
+description: Perguntas frequentes sobre o Adobe Campaign Classic
 page-status-flag: never-activated
 uuid: 3f719ac2-cc26-4fb0-adda-84666c8c38e1
 contentOwner: sauviat
@@ -13,7 +13,7 @@ discoiquuid: 16dbe423-018f-4666-9901-2120a8dc609a
 index: y
 internal: n
 snippet: y
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 994ec35e37a1c26e83a8dd2ae31f6594cadd4c45
 
 ---
@@ -55,4 +55,4 @@ Leia [este caso de uso](../../reporting/using/use-case--displaying-report-on-ans
 
 ## Como posso compartilhar o acesso ao meu relatório na interface do Campaign? {#how-can-i-share-access-to-my-report}
 
-Você pode definir em qual contexto seu relatório será exibido na interface do usuário do Adobe Campaign. For more on report access, refer to [this section](../../reporting/using/configuring-access-to-the-report.md).
+Pode definir em qual contexto seu relatório será exibido na interface do usuário do Adobe Campaign. Para obter mais informações sobre acesso a relatórios, consulte [esta seção](../../reporting/using/configuring-access-to-the-report.md).
