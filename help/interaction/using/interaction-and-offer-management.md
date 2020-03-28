@@ -14,7 +14,7 @@ discoiquuid: 9fe22450-057c-44b4-ab73-4027a2ddb20c
 index: y
 internal: n
 snippet: y
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: c1afd6ad61db2062ee804c8a2add56a21578ef19
 
 ---
@@ -26,16 +26,8 @@ A interação permite responder em tempo real durante uma interação com um det
 
 As ofertas são enviadas para contatos por meio de um contato de entrada (site ou call center) ou de saída (delivery de email, mala direta ou SMS dentro de uma campanha de marketing).
 
-Você pode criar um catálogo de ofertas com os canais de entrada e saída 
-			para selecionar a melhor oferta para enviar a um contato em um certo contexto. A relevância da oferta
-			para um recipient é definida com base nas regras de elegibilidade. A seleção de uma 
-			oferta de um conjunto de ofertas relevantes é determinada usando regras de prioridade. As regras de apresentação de ofertas 
-			oferecem o histórico de troca do contato e ajudam a evitar 
-			que elas recebam a mesma oferta várias vezes.
+Você pode criar um catálogo de ofertas com os canais de entrada e saída para selecionar a melhor oferta para enviar a um contato em um certo contexto. A relevância da oferta para um recipient é definida com base nas regras de elegibilidade. A seleção de uma oferta de um conjunto de ofertas relevantes é determinada usando regras de prioridade. As regras de apresentação de ofertas oferecem o histórico de troca do contato e ajudam a evitar que elas recebam a mesma oferta várias vezes.
 
-A interação permite criar e gerenciar um catálogo de ofertas e configurar as 
-			regras de elegibilidade e os temas de aplicações vinculados a elas. Dependendo do canal 
-			escolhido, o conteúdo da oferta pode ser personalizado graças a várias funções de renderização. Por fim, você pode usar o módulo de simulação para calcular o impacto de uma 
-			apresentação de ofertas.
+A interação permite criar e gerenciar um catálogo de ofertas e configurar as regras de elegibilidade e os temas de aplicações vinculados a elas. Dependendo do canal escolhido, o conteúdo da oferta pode ser personalizado graças a várias funções de renderização. Por fim, você pode usar o módulo de simulação para calcular o impacto de uma apresentação de ofertas.
 
-Para se familiarizar com o recurso de interação e terminologias usadas na Interação de campanha, assista a este vídeo: Visão geral [da interação do](https://helpx.adobe.com/campaign/classic/how-to/acs-overview.html?playlist=/ccx/v1/collection/product/campaign/classic/segment/digital-marketers/explevel/intermediate/applaunch/get-started/collection.ccx.js&ref=helpx.adobe.com)Adobe Campaign.
+Para se familiarizar com o recurso de interação e terminologias usadas na Interação do Campaign, assista a este vídeo: [Visão geral da interação do Adobe Campaign](https://helpx.adobe.com/campaign/classic/how-to/acs-overview.html?playlist=/ccx/v1/collection/product/campaign/classic/segment/digital-marketers/explevel/intermediate/applaunch/get-started/collection.ccx.js&amp;ref=helpx.adobe.com).
