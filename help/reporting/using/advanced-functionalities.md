@@ -14,7 +14,7 @@ discoiquuid: 0c264783-2775-4ec6-8d49-cd9a45a18d60
 index: y
 internal: n
 snippet: y
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: af768da6ee8cc0ca2ea1f24f297239b974c113a5
 
 ---
@@ -30,7 +30,7 @@ Essa atividade permite processar dados e criar queries complexas facilmente que 
 
 Basta inserir sua query na janela do script.
 
-The **[!UICONTROL Texts]** tab enables you to define text strings. They may then be used with the following syntax: **$(Identifier)**. Para obter mais informações sobre como usar textos, consulte [Adicionar um cabeçalho e um rodapé](../../reporting/using/element-layout.md#adding-a-header-and-a-footer).
+A guia **[!UICONTROL Texts]** permite definir cadeias de texto. Elas podem ser usadas com a seguinte sintaxe: **$(Identifier)**. Para obter mais informações sobre como usar textos, consulte [Adicionar um cabeçalho e um rodapé](../../reporting/using/element-layout.md#adding-a-header-and-a-footer).
 
 >[!CAUTION]
 >
@@ -48,8 +48,8 @@ Caso contrário, os dados atuais serão exibidos.
 
 É possível usar um script externo que será executado no servidor e/ou no lado do cliente. Para fazer isso:
 
-1. Edit the report properties and click the **[!UICONTROL Scripts]**.
-1. Click **[!UICONTROL Add]** and select the script to be referenced.
+1. Edite as propriedades do relatório e clique em **[!UICONTROL Scripts]**.
+1. Clique em **[!UICONTROL Add]** e selecione o script que será referenciado.
 1. Em seguida, selecione o modo de execução.
 
    Se adicionar vários scripts, use as setas da barra de ferramentas para definir sua sequência de execução.
