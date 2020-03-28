@@ -14,7 +14,7 @@ discoiquuid: 3d01cc7e-5685-4101-bf4b-ef5f6e52b3c9
 index: y
 internal: n
 snippet: y
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 0745b9c9d72538b8573ad18ff4054ecf788905f2
 
 ---
@@ -28,15 +28,15 @@ Os ativos compartilhados da Adobe Experience Cloud podem ser usados em seus emai
 
    Se você usar ativos da biblioteca do Adobe Experience Manager Assets, use um template de delivery criado ao [configurar a integração](../../integrations/using/configuring-access-to-assets.md#integrating-with-aem-assets).
 
-   If you do not have this specific template, make sure that in the delivery **Properties**, the **[!UICONTROL Content editing mode]** (**[!UICONTROL Advanced]** tab) is set to **DCE** and that the AEM external account that you want to use for accessing your AEM Assets resource library is provided.
+   Se não tiver esse template específico, garanta que nas **Properties** do delivery, o **[!UICONTROL Content editing mode]** (guia **[!UICONTROL Advanced]**) esteja definido como **DCE**, e que a conta externa do AEM usada para acessar a biblioteca de recursos do AEM Assets seja fornecida.
 
 1. Na janela de edição, selecione a opção para adicionar uma imagem:
 
-   * Se você estiver usando o modo [de edição](../../delivery/using/defining-the-email-content.md#adding-images)padrão, selecione **[!UICONTROL Image]** > **[!UICONTROL Select a shared asset]**.
+   * Se estiver usando o [modo de edição padrão](../../delivery/using/defining-the-email-content.md#adding-images), selecione **[!UICONTROL Image]** > **[!UICONTROL Select a shared asset]**.
 
       ![](assets/dam_insert_image_standard.png)
 
-   * If you are using the [advanced editing mode](../../web/using/about-campaign-html-editor.md) (DCE), go to an image block, then via the contextual menu, select **[!UICONTROL Select a shared asset]**.
+   * Se estiver usando o [modo de edição avançado](../../web/using/about-campaign-html-editor.md) (DCE), vá para um bloco de imagem e, por meio do menu contextual, selecione **[!UICONTROL Select a shared asset]**.
 
       ![](assets/dam_insert_image_dce.png)
 
@@ -46,7 +46,7 @@ Os ativos compartilhados da Adobe Experience Cloud podem ser usados em seus emai
 
 1. Na janela de seleção que é aberta, selecione uma imagem e depois confirme.
 
-   As imagens disponíveis são da biblioteca da Adobe Experience Cloud ou da biblioteca do AEM Assets, dependendo de como a instância da Adobe Campaign é configurada. Consulte a seção [Configurar acesso aos ativos](../../integrations/using/configuring-access-to-assets.md) .
+   As imagens disponíveis são da biblioteca da Adobe Experience Cloud ou da biblioteca do AEM Assets, dependendo de como a instância da Adobe Campaign é configurada. Consulte a seção [Configurar acesso ao Assets](../../integrations/using/configuring-access-to-assets.md).
 
    ![](assets/dam_shared_image_selection.png)
 
