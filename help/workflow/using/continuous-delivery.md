@@ -14,7 +14,7 @@ discoiquuid: 9d80be19-8dde-4278-ab5f-23f364fe422e
 index: y
 internal: n
 snippet: y
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 579329d9194115065dff2c192deb0376c75e67bd
 
 ---
@@ -22,11 +22,11 @@ source-git-commit: 579329d9194115065dff2c192deb0376c75e67bd
 
 # Delivery contínuo{#continuous-delivery}
 
-Uma ação do tipo **Delivery contínuo** permite adicionar novos recipients a um delivery existente. Esse tipo de entrega evita que você tenha que criar uma nova entrega toda vez: Este modo é frequentemente mais eficiente, em especial para alertas de baixo volume ou notificações enviadas quando e quando necessário. Em um nível de template de delivery, você pode especificar um script para calcular o rótulo (e a pasta da campanha) do delivery associado. Se o script calcula um delivery que ainda não existe, ele será criado imediatamente.
+Uma ação do tipo **Delivery contínuo** permite adicionar novos recipients a um delivery existente. Esse tipo de delivery evita que você tenha que criar um novo delivery toda vez: este modo é frequentemente mais eficiente, em especial para alertas de baixo volume ou notificações enviadas quando necessário. Em um nível de template de delivery, você pode especificar um script para calcular o rótulo (e a pasta da campanha) do delivery associado. Se o script calcula um delivery que ainda não existe, ele será criado imediatamente.
 
 ![](assets/edit_diffusion_fil.png)
 
-The **[!UICONTROL Process errors]** option displays a particular transition which will be activated if an error is generated. Nesse caso, o workflow não entra no modo de erro e continua a execução.
+A opção **[!UICONTROL Process errors]** exibe uma transição específica que será ativada se um erro for gerado. Nesse caso, o workflow não entra no modo de erro e continua a execução.
 
 Os erros considerados são erros do sistema de arquivos (o arquivo não pôde ser movido, o diretório não pôde ser acessado etc.).
 
@@ -39,7 +39,7 @@ Essa opção não processa erros relacionados à configuração de atividade, ou
 
 Cada evento de entrada deve especificar um target definido por esses parâmetros.
 
-Somente quando a **[!UICONTROL Specified by the inbound event]** opção é selecionada.
+Apenas quando a opção **[!UICONTROL Specified by the inbound event]** está selecionada.
 
 ## Parâmetros de output {#output-parameters}
 
@@ -47,6 +47,6 @@ Somente quando a **[!UICONTROL Specified by the inbound event]** opção é sele
 * schema
 * recCount
 
-Esse conjunto de três valores identifica o target resultante do delivery em tempo real. **[!UICONTROL tableName]** é o nome da tabela que memoriza os identificadores do alvo, **[!UICONTROL schema]** é o esquema da população (normalmente nms:customer) e **[!UICONTROL recCount]** é o número de elementos na tabela.
+Esse conjunto de três valores identifica o target resultante do delivery em tempo real. **[!UICONTROL tableName]** é o nome da tabela que memoriza os identificadores do target, **[!UICONTROL schema]** é o schema do público (geralmente nms:recipient) e **[!UICONTROL recCount]** é o número de elementos na tabela.
 
 A transição associada ao complemento tem os mesmos parâmetros.
