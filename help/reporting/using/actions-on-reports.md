@@ -14,7 +14,7 @@ discoiquuid: 3b9c138e-8f7f-4ee1-9baa-328848d01d3a
 index: y
 internal: n
 snippet: y
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: af768da6ee8cc0ca2ea1f24f297239b974c113a5
 
 ---
@@ -40,15 +40,15 @@ Quando um relatório contém várias páginas, é preciso repetir a operação p
 
 É possível configurar o relatório na exibição do formato PDF, Excel ou OpenOffice. Abra o navegador do Adobe Campaign e selecione o relatório em questão.
 
-Export options are accessed via the **[!UICONTROL Page]** activities of the report, in the **[!UICONTROL Advanced]** tab.
+Acesse as opções de exportação por meio das atividades **[!UICONTROL Page]** do relatório, na guia **[!UICONTROL Advanced]**.
 
-Altere as configurações de **[!UICONTROL Paper]** e **[!UICONTROL Margins]** para atender às suas necessidades. Também é possível autorizar a exportação de uma página somente em formato PDF. Para fazer isso, desmarque a **[!UICONTROL Activate OpenOffice/Microsoft Excel export]** opção.
+Altere as configurações de **[!UICONTROL Paper]** e **[!UICONTROL Margins]** para atender às suas necessidades. Também é possível autorizar a exportação de uma página somente em formato PDF. Para fazer isso, desmarque a opção **[!UICONTROL Activate OpenOffice/Microsoft Excel export]**.
 
 ![](assets/s_ncs_advuser_report_wizard_021.png)
 
 ### Exportação para o Microsoft Excel {#exporting-into-microsoft-excel}
 
-For **[!UICONTROL List with group]** type reports destined to be exported into Excel, the following recommendations and limitations apply:
+Para relatórios do tipo **[!UICONTROL List with group]** destinados a serem exportados para o Excel, as seguintes recomendações e limitações se aplicam:
 
 * Esses relatórios não devem conter linhas vazias.
 
@@ -58,10 +58,10 @@ For **[!UICONTROL List with group]** type reports destined to be exported into E
 
    ![](assets/export_limitations_hide_label.png)
 
-* Os relatórios não precisam usar formatação específica definida no nível da célula. It is preferable to use **[!UICONTROL Form rendering]** to define the format of the cells in the table. O **[!UICONTROL Form rendering]** pode ser acessado via **[!UICONTROL Administration > Configuration > Form rendering]**.
+* Os relatórios não precisam usar formatação específica definida no nível da célula. É preferível usar **[!UICONTROL Form rendering]** para definir o formato das células na tabela. O **[!UICONTROL Form rendering]** é acessado em **[!UICONTROL Administration > Configuration > Form rendering]**.
 * Não é recomendável inserir conteúdo HTML.
 * Se um relatório contiver vários elementos de tabela, gráfico, etc., eles serão exportados um abaixo do outro.
-* É possível forçar a quebra de linhas nas células: essa configuração será mantida no Excel. Para obter mais informações, consulte este formato [de célula de](../../reporting/using/creating-a-table.md#defining-cell-format)Definição.
+* É possível forçar a quebra de linhas nas células: essa configuração será mantida no Excel. Para obter mais informações, consulte [Definição de formato da célula](../../reporting/using/creating-a-table.md#defining-cell-format).
 
 ### Adiar a exportação {#postpone-the-export}
 
@@ -93,7 +93,7 @@ Para saber mais sobre o serviço **nlserver**, consulte [esta seção](../../pro
 
 É possível imprimir seu relatório: para fazer isso, clique no ícone da impressora: isso abre a caixa de diálogo.
 
-For a better result, edit the Internet Explorer printing options and select **[!UICONTROL Print background colors and images]**.
+Para obter um resultado melhor, edite as opções de impressão do Internet Explorer e selecione **[!UICONTROL Print background colors and images]**.
 
 ![](assets/s_ncs_advuser_report_print_options.png)
 
@@ -113,7 +113,7 @@ As datas de arquivamento são exibidas sob o ícone show/hide. Clique no arquivo
 
 ![](assets/s_ncs_advuser_report_history_04.png)
 
-É possível excluir um arquivo de relatórios. Para fazer isso, vá para o nó do Adobe Campaign onde seus relatórios estão armazenados. Click the **[!UICONTROL Archives]** tab, select the one you want to delete and click **[!UICONTROL Delete]**.
+É possível excluir um arquivo de relatórios. Para fazer isso, vá para o nó do Adobe Campaign onde seus relatórios estão armazenados. Clique na guia **[!UICONTROL Archives]**, selecione aquele que desejar excluir e clique em **[!UICONTROL Delete]**.
 
 ![](assets/s_ncs_advuser_report_history_01.png)
 
