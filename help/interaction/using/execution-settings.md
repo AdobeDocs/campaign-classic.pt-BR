@@ -14,7 +14,7 @@ discoiquuid: 52b5d5a9-10dc-4601-8fe4-962a2334322b
 index: y
 internal: n
 snippet: y
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 579329d9194115065dff2c192deb0376c75e67bd
 
 ---
@@ -24,11 +24,11 @@ source-git-commit: 579329d9194115065dff2c192deb0376c75e67bd
 
 Ao criar uma simulação, é possível especificar as configurações de execução, se necessário. Essas configurações permitem executar a simulação durante um período de pouca atividade, dependendo da prioridade, ou registrar queries SQL no log. Esta etapa é opcional.
 
-These settings can be changed later in the **[!UICONTROL General]** tab of the simulation window.
+Essas configurações podem ser alteradas posteriormente na guia **[!UICONTROL General]** da janela de simulação.
 
 ![](assets/offer_simulation_008.png)
 
-* **[!UICONTROL Schedule execution for a time of low activity]** : permite agendar a simulação com base na prioridade escolhida (Baixa, Média ou Alta) para otimizar o desempenho do Adobe Campaign.
-* **[!UICONTROL Priority]** : este é o nível aplicado à simulação para agendá-la. When the **[!UICONTROL Schedule execution for a time of low activity]** option is checked, the campaign processing workflow selects a time of low activity to start the campaign.
-* **[!UICONTROL Log SQL queries in the journal]** : essa funcionalidade é apenas para usuários especialistas. Ela permite adicionar uma guia ao log exibindo queries SQL para detectar possíveis defeitos se a simulação terminar com erros.
+* **[!UICONTROL Schedule execution for a time of low activity]**: permite agendar a simulação com base na prioridade escolhida (baixa, média ou alta) para otimizar os desempenhos do Adobe Campaign.
+* **[!UICONTROL Priority]**: este é o nível aplicado à simulação para o agendá-la. Quando a opção **[!UICONTROL Schedule execution for a time of low activity]** é marcada, o fluxo de trabalho de processamento de campanha seleciona um momento de baixa atividade para iniciar a campanha.
+* **[!UICONTROL Log SQL queries in the journal]**: essa funcionalidade destina-se somente a usuários especializados. Ela permite adicionar uma guia ao log exibindo queries SQL para detectar possíveis defeitos se a simulação terminar com erros.
 
