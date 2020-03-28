@@ -14,7 +14,7 @@ discoiquuid: 6b0acb6b-0808-4972-b2a2-15fab29b3861
 index: y
 internal: n
 snippet: y
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: c10a0a11c6e9952aa47da1f7a15188c79c62508d
 
 ---
@@ -44,7 +44,7 @@ Para criar uma lista de resumo, siga estas etapas:
 1. Enriquecimento dos dados &quot;Contatos&quot; com um cálculo agregado da tabela &quot;Compras&quot;
 1. Criação da lista de resumo
 
-## Step 1: Loading the file and reconciling the imported data {#step-1--loading-the-file-and-reconciling-the-imported-data}
+## Etapa 1: carregamento do arquivo e reconciliação dos dados importados {#step-1--loading-the-file-and-reconciling-the-imported-data}
 
 Os dados a serem carregados são dados relacionados com &quot;Comprar&quot; com o seguinte formato:
 
@@ -66,19 +66,19 @@ Esses dados estão contidos em um arquivo de texto &quot;Purchases.txt&quot;.
 
    A atividade **Data loading (file)** permite enriquecer a tabela de trabalho do workflow com os dados coletados.
 
-   Para obter mais informações sobre essa atividade, consulte [Carregando dados de um arquivo](../../workflow/using/importing-data.md#loading-data-from-a-file).
+   Para obter mais informações sobre essa atividade, consulte [Carregar dados de um arquivo](../../workflow/using/importing-data.md#loading-data-from-a-file).
 
 1. Configure a atividade **File collector** para coletar arquivos de tipo de texto (*.txt) do diretório selecionado.
 
    ![](assets/uc2_enrich_collecteur.png)
 
-   A atividade **File collector** permite gerenciar a ausência de um arquivo no diretório de origem. Para fazer isso, marque a **[!UICONTROL Process file nonexistence]** opção. Neste workflow, uma atividade **Wait** foi adicionada para tentar outra coleção de arquivos se estiver ausente no diretório no momento da coleta.
+   A atividade **File collector** permite gerenciar a ausência de um arquivo no diretório de origem. Para fazer isso, marque a opção **[!UICONTROL Process file nonexistence]**. Neste workflow, uma atividade **Wait** foi adicionada para tentar outra coleção de arquivos se estiver ausente no diretório no momento da coleta.
 
 1. Configure a atividade **Data loading (file)** usando um arquivo de amostra com o mesmo formato dos dados a serem importados.
 
    ![](assets/uc2_enrich_chargement1.png)
 
-   Click the **[!UICONTROL Click here to change the file format...]** link to rename the columns using the internal names and labels of the &quot;Purchases&quot; table.
+   Clique no link **[!UICONTROL Click here to change the file format...]** para renomear as colunas usando os nomes e rótulos internos da tabela &quot;Purchases&quot;.
 
    ![](assets/uc2_enrich_chargement2.png)
 
@@ -90,11 +90,11 @@ Adicione a atividade de Enrichment e a configure como a seguir:
 
    ![](assets/uc2_enrich_enrich1.png)
 
-1. Clique em **[!UICONTROL Add data]** e selecione a **[!UICONTROL A link]** opção.
+1. Clique em **[!UICONTROL Add data]** e selecione a opção **[!UICONTROL A link]**.
 
    ![](assets/uc2_enrich_enrich2.png)
 
-1. Selecione a **[!UICONTROL Define a collection]** opção.
+1. Selecione a opção **[!UICONTROL Define a collection]**.
 1. Selecione o schema &quot;Lojas&quot; como target.
 
    ![](assets/uc2_enrich_enrich3.png)
@@ -109,7 +109,7 @@ Agora que o link foi criado, vamos adicionar uma coluna à tabela de trabalho do
 
 1. Abra a atividade de enriquecimento.
 1. Clique em **[!UICONTROL Edit additional data]**.
-1. Add the &quot;ZipCode Reference&quot; field to the **[!UICONTROL Output columns]**.
+1. Adicione o campo &quot;ZipCode Reference&quot; ao **[!UICONTROL Output columns]**.
 
 ![](assets/uc2_enrich_enrich5.png)
 
@@ -117,31 +117,31 @@ Os dados na tabela de trabalho do workflow após este enriquecimento serão como
 
 ![](assets/uc2_enrich_population1.png)
 
-## Step 2: Writing enriched data to the &#39;Purchases&#39; table {#step-2--writing-enriched-data-to-the--purchases--table}
+## Etapa 2: gravação de dados enriquecidos na tabela &quot;Purchases&quot;{#step-2--writing-enriched-data-to-the--purchases--table}
 
 Esta etapa detalha como gravar dados importados e enriquecidos na tabela &quot;Compras&quot;. Para fazer isso, precisamos usar uma atividade **Update data** .
 
 Uma reconciliação entre os dados na tabela de trabalho do workflow e a targeting dimension **Purchases** deve ser realizada antes da atualização dos dados na tabela **Purchases**.
 
-1. Click the **[!UICONTROL Reconciliation]** tab of the enrichment activity.
+1. Clique na guia **[!UICONTROL Reconciliation]** da atividade de enriquecimento.
 1. Selecione a dimensão do target, o schema &quot;Purchases&quot; neste caso.
 1. Selecione uma &quot;Source expression&quot; para os dados na tabela do workflow (o campo &quot;storeName&quot; neste caso).
 1. Selecione um &quot;Destination expression&quot; para os dados na tabela &quot;Purchases&quot; (o campo &quot;storename&quot; neste caso).
-1. Marque a **[!UICONTROL Keep unreconciled data coming from the work table]** opção.
+1. Marque a opção **[!UICONTROL Keep unreconciled data coming from the work table]**.
 
 ![](assets/uc2_enrich_reconciliation.png)
 
 Na atividade **Update data**, a seguinte configuração é necessária:
 
-1. Select the **[!UICONTROL Insert or update]** option in the **[!UICONTROL Operation type]** field to avoid creating new records each time the file is collected.
-1. Selecione o **[!UICONTROL By directly using the targeting dimension]** valor da **[!UICONTROL Record identification]** opção.
-1. Select the &quot;Purchases&quot; schema as a **[!UICONTROL Document type]**.
-1. Especifique a lista dos campos a serem atualizados. The **[!UICONTROL Destination]** column lets you define the fields of the &quot;Purchases&quot; schema. The **[!UICONTROL Expression]** column lets you select the fields in the work table to carry out a mapping.
-1. Clique na **[!UICONTROL Generate an outbound transition]** opção.
+1. No campo **[!UICONTROL Operation type]**, selecione a opção **[!UICONTROL Insert or update]** para evitar a criação de novos registros toda vez que o arquivo for coletado.
+1. Na opção **[!UICONTROL Record identification]**, selecione o valor **[!UICONTROL By directly using the targeting dimension]**.
+1. Selecione o schema &quot;Purchases&quot; como **[!UICONTROL Document type]**.
+1. Especifique a lista dos campos a serem atualizados. A coluna **[!UICONTROL Destination]** permite definir os campos do schema &quot;Purchases&quot;. A coluna **[!UICONTROL Expression]** permite selecionar os campos na tabela de trabalho para serem mapeados.
+1. Clique na opção **[!UICONTROL Generate an outbound transition]**.
 
 ![](assets/uc2_enrich_miseajour.png)
 
-## Etapa 3: Enriquecendo dados de &#39;Contato&#39; {#step-3--enriching--contact--data-}
+## Etapa 3: enriquecendo dados de “Contato” {#step-3--enriching--contact--data-}
 
 O schema &quot;Contats&quot; está vinculado fisicamente ao esquema &quot;Purchases&quot;. Isso significa que é possível usar outra opção da opção &quot;Enrichment&quot;: adição de dados vinculados à dimensão do filtro.
 
@@ -150,40 +150,40 @@ O objetivo deste segundo enriquecimento é criar um agregado no schema de compra
 1. Adicione uma atividade do tipo **query** que permite recuperar todos os **contatos** armazenados.
 1. Adicione uma atividade **Enrichment**, então selecione o conjunto principal resultante da query anterior.
 1. Clique em adicionar **[!UICONTROL Data]**.
-1. Clique na **[!UICONTROL Data linked to the targeting dimension]** opção.
-1. Clique na **[!UICONTROL Data linked to the filtering dimension]** opção na **[!UICONTROL Select fields to add]** janela.
-1. Selecione o **[!UICONTROL Purchases]** nó e clique em **[!UICONTROL Next]**.
+1. Clique na opção **[!UICONTROL Data linked to the targeting dimension]**.
+1. Na janela **[!UICONTROL Select fields to add]**, clique na opção **[!UICONTROL Data linked to the filtering dimension]**.
+1. Selecione o nó **[!UICONTROL Purchase]** e clique em **[!UICONTROL Next]**.
 
    ![](assets/uc2_enrich_enrich9.png)
 
-1. Altere o **[!UICONTROL Collected data]** campo selecionando a **[!UICONTROL Aggregates]** opção.
+1. Altere o campo **[!UICONTROL Collected data]** selecionando a opção **[!UICONTROL Aggregates]**.
 
    ![](assets/uc2_enrich_enrich10.png)
 
 1. Clique em **[!UICONTROL Next]**.
-1. Adicione a seguinte expressão para calcular o total da compra para cada contato: &quot;Sum(@prodprice)&quot;.
+1. Adicione a seguinte expressão para calcular o total de compras para cada contato: &quot;Sum(@prodprice)&quot;.
 
    ![](assets/uc2_enrich_enrich6.png)
 
 Para preparar a lista de resumo, é necessário adicionar campos do campo &quot;Purchases&quot; e do primeiro enriquecimento: o campo &quot;ZipCode Reference&quot;.
 
-1. Clique no **[!UICONTROL Edit additional data...]** link da atividade de enriquecimento.
+1. Clique no link **[!UICONTROL Edit additional data...]** na atividade de enriquecimento.
 1. Adicione os campos &quot;Store Name&quot; e &quot;Purchases / Zip Code Reference&quot;.
 
    ![](assets/uc2_enrich_enrich7.png)
 
-1.  Clique na **[!UICONTROL Properties]** guia.
+1. Clique na guia **[!UICONTROL Properties]**
 1. Altere o segundo link para criar apenas uma linha.
 
    ![](assets/uc2_enrich_enrich8.png)
 
-## Step 4: Creating and adding to a summary list {#step-4--creating-and-adding-to-a-summary-list}
+## Etapa 4: criação e adição de uma lista de resumo {#step-4--creating-and-adding-to-a-summary-list}
 
 A última etapa envolve gravar todos os dados enriquecidos em uma lista.
 
 1. Adicione uma atividade de **List update** ao workflow. Esta atividade deve ser vinculada à transição de saída da segunda atividade de enriquecimento.
-1. Selecione a **[!UICONTROL Create the list if necessary (Calculated name)]** opção.
-1. Selecione um valor para o nome calculado. O rótulo escolhido para a lista é a data atual: &lt;%= formatDate(new Date(), &quot;%2D/%2M/%2Y&quot;) %>.
+1. Selecione a opção **[!UICONTROL Create the list if necessary (Calculated name)]**.
+1. Selecione um valor para o nome calculado. O rótulo escolhido para a lista é a data atual: &lt;%= formatDate(new Date(), &quot;%2D/%2M/%2Y&quot;) %>
 
 Após executar o workflow, a lista incluirá:
 
