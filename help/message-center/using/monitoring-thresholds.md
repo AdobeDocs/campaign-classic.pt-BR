@@ -14,7 +14,7 @@ discoiquuid: 76922657-2c0d-467e-acee-c1a61677fb44
 index: y
 internal: n
 snippet: y
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 20f835c357d016643ea1f3209ee4dfb6d3239f90
 
 ---
@@ -22,7 +22,7 @@ source-git-commit: 20f835c357d016643ea1f3209ee4dfb6d3239f90
 
 # Limites de monitoramento{#monitoring-thresholds}
 
-You can configure the warning thresholds (orange) and alert thresholds (red) of the indicators that appear in the **Message Center service level** and **Message Center processing time** reports (refer to [About transactional messaging reports](../../message-center/using/about-transactional-messaging-reports.md)). To do this, open the deployment wizard of the execution instance, go to the **[!UICONTROL Message Center]** page and use the arrows to change the thresholds.
+Você pode configurar os limites de aviso (laranja) e os limites de alerta (vermelho) dos indicadores que aparecem nos relatórios de **nível de serviço do Centro de Mensagens** e **tempo de processamento do Centro de Mensagens** (consulte [Sobre relatórios transacionais de mensagens](../../message-center/using/about-transactional-messaging-reports.md)). Para fazer isso, abra o assistente de implantação da instância de execução, vá para a página **[!UICONTROL Message Center]** e use as setas para alterar os limites.
 
 ![](assets/messagecenter_monitor_events_001.png)
 
