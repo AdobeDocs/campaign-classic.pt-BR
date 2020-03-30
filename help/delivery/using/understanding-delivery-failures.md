@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: ba750d51d31d7783a3fdc5ef6b0bcf4a863c69d4
+source-git-commit: 5e34e49d66f5d943951cd5d9a11d45df9af544ba
 
 ---
 
@@ -24,7 +24,7 @@ source-git-commit: ba750d51d31d7783a3fdc5ef6b0bcf4a863c69d4
 
 ## Sobre falhas de delivery {#about-delivery-failures}
 
-Quando uma mensagem (email, SMS, notificação por push) não pode ser enviada a um perfil, o servidor remoto envia automaticamente uma mensagem de erro, que é recebida pela plataforma do Adobe Campaign, que determina se o endereço de email ou o número de telefone deve ir para a quarentena. Consulte Gerenciamento [de e-mails de rejeição](#bounce-mail-management).
+Quando uma mensagem (email, SMS, notificação por push) não pode ser enviada a um perfil, o servidor remoto envia automaticamente uma mensagem de erro, que é recebida pela plataforma do Adobe Campaign, que determina se o endereço de email ou o número de telefone deve ir para a quarentena. Consulte [Gerenciamento de emails de devolução](#bounce-mail-management).
 
 >[!NOTE]
 >
@@ -42,11 +42,11 @@ As mensagens também podem ser excluídas durante a preparação do delivery se 
 
 ## Tipos e motivos de falha de delivery {#delivery-failure-types-and-reasons}
 
-Há três tipos de erros quando uma mensagem falha. Cada tipo de erro determina se um endereço será enviado para a quarentena. Para obter mais informações, consulte as [Condições para enviar um endereço para a quarentena](../../delivery/using/understanding-quarantine-management.md#conditions-for-sending-an-address-to-quarantine)
+Há três tipos de erros quando uma mensagem falha. Cada tipo de erro determina se um endereço será enviado para a quarentena. Para obter mais informações, consulte [Condições para enviar um endereço para quarentena](../../delivery/using/understanding-quarantine-management.md#conditions-for-sending-an-address-to-quarantine)
 
-* **Disco rígido**: Um erro &quot;rígido&quot; indica um endereço inválido. Isso envolve uma mensagem de erro que declara explicitamente que o endereço é inválido, como: &quot;Usuário desconhecido&quot;.
-* **Soft**: Este pode ser um erro temporário ou que não pode ser categorizado, como: &quot;Domínio inválido&quot; ou &quot;Caixa de Correio cheia&quot;.
-* **Ignorado**: Esse é um erro que é conhecido como temporário, como &quot;Fora do escritório&quot; ou um erro técnico, por exemplo, se o tipo de remetente for &quot;postmaster&quot;.
+* **Hard**: um erro &quot;grave&quot; indica um endereço inválido. Isto envolve uma mensagem de erro que declara explicitamente que o endereço é inválido, como &quot;Unknown user&quot;.
+* **Soft**: pode ser um erro temporário ou que não pode ser categorizado, como: &quot;Invalid domain&quot; ou &quot;Mailbox full&quot;.
+* **Ignored**: é um erro que é conhecido como temporário, como &quot;Out of office&quot;, ou um erro técnico, por exemplo, se o tipo de remetente for &quot;postmaster&quot;.
 
 Os possíveis motivos para uma falha de delivery são:
 
@@ -140,7 +140,7 @@ Os possíveis motivos para uma falha de delivery são:
    <td> Não definido </td> 
    <td> Não definido </td> 
    <td> 0 </td> 
-   <td> O endereço está em qualificação porque o erro ainda não foi incrementado. Esse tipo de erro ocorre quando uma nova mensagem de erro é enviada pelo servidor: pode ser um erro isolado, mas se ocorrer novamente, o contador de erros aumentará, o que alertará as equipes técnicas. They can then carry out message analysis and qualify this error, via the <span class="uicontrol">Administration</span> / <span class="uicontrol">Campaign Management</span> / <span class="uicontrol">Non deliverables Management</span> node in the tree structure.<br /> </td> 
+   <td> O endereço está em qualificação porque o erro ainda não foi incrementado. Esse tipo de erro ocorre quando uma nova mensagem de erro é enviada pelo servidor: pode ser um erro isolado, mas se ocorrer novamente, o contador de erros aumentará, o que alertará as equipes técnicas. Em seguida, eles podem realizar a análise de mensagens e qualificar esse erro, por meio do nó <span class="uicontrol">Administration</span> / <span class="uicontrol">Campainha Management</span> / <span class="uicontrol">Non deliverables Management</span> na estrutura da árvore.<br /> </td> 
   </tr> 
   <tr> 
    <td> Não se qualifica para as ofertas </td> 
@@ -187,7 +187,7 @@ Se uma mensagem falhar devido a um erro **suave** ou **grave** que é temporári
 
 >[!NOTE]
 >
->Temporarily undelivered messages can only be related to a **Soft** or **Ignored** error, but not a **Hard** error (see [Delivery failure types and reasons](#delivery-failure-types-and-reasons)).
+>Mensagens não enviadas temporariamente podem ser relacionadas a um erro **Soft** ou **Ignored**, mas não a um erro **Hard** (consulte [Tipos e motivos de falha de delivery](#delivery-failure-types-and-reasons)).
 
 Para modificar a duração de um delivery, vá para os parâmetros avançados do delivery ou template de delivery especifique a duração desejada no campo correspondente. As propriedades avançadas de delivery são apresentadas [nesta seção](../../delivery/using/steps-sending-the-delivery.md#defining-validity-period).
 
@@ -197,7 +197,7 @@ A configuração padrão permite cinco tentativas em intervalos de uma hora, seg
 
 Uma mensagem pode falhar imediatamente (erro síncrono), ou posteriormente, após ser enviada (erro assíncrono).
 
-* Erro síncrono: o servidor de email remoto contatado pelo servidor de delivery do Adobe Campaign retornou imediatamente uma mensagem de erro, o delivery não tem permissão para ser enviado ao servidor do perfil. O Adobe Campaign qualifica cada erro para determinar se os endereços de email devem ou não estar em quarentena. Consulte Qualificação [de envio de e-mails](#bounce-mail-qualification).
+* Erro síncrono: o servidor de email remoto contatado pelo servidor de delivery do Adobe Campaign retornou imediatamente uma mensagem de erro, o delivery não tem permissão para ser enviado ao servidor do perfil. O Adobe Campaign qualifica cada erro para determinar se os endereços de email devem ou não estar em quarentena. Consulte [Qualificação de email de devolução](#bounce-mail-qualification).
 * Erro assíncrono: um email de devolução ou um Relatório de Status foi reenviado posteriormente pelo servidor receptor. Este email é carregado em uma caixa de entrada técnica que o aplicativo usa para rotular mensagens com um erro. Podem ocorrer erros assíncronos até uma semana depois do envio.
 
    >[!NOTE]
@@ -222,23 +222,23 @@ Essa lista está disponível por meio do **[!UICONTROL Administration > Campaign
 
 ![](assets/tech_quarant_rules_qualif.png)
 
-* The message returned by the remote server on the first occurrence of this error type is displayed in the **[!UICONTROL First text]** column of the **[!UICONTROL Delivery log qualification]** table. If this column is not displayed, click the **[!UICONTROL Configure list]** button at the right bottom of the list to select it.
+* A mensagem retornada pelo servidor remoto na primeira ocorrência desse tipo de erro é exibida na coluna **[!UICONTROL First text]** da tabela **[!UICONTROL Delivery log qualification]**. Se essa coluna não for exibida, clique no botão **[!UICONTROL Configure list]** na parte inferior direita da lista para selecioná-la.
 
 ![](assets/tech_quarant_rules_qualif_text.png)
 
-O Adobe Campaign filtros desta mensagem para excluir o conteúdo variável (como IDs, datas, endereços de email, números de telefone etc.) e exibe o resultado filtrado na **[!UICONTROL Text]** coluna. The variables are replaced with **`#xxx#`**, except addresses that are replaced with **`*`**.
+O Adobe Campaign filtra essa mensagem para excluir o conteúdo variável (como IDs, datas, endereços de email, números de telefone etc.) e exibe o resultado filtrado na coluna **[!UICONTROL Text]**. As variáveis são substituídas por **`#xxx#`**, exceto os endereços que são substituídos por **`*`**.
 
 Esse processo permite reunir todas as falhas do mesmo tipo e evitar várias entradas para erros semelhantes na tabela de qualificação do log de delivery.
 
 >[!NOTE]
 >
->The **[!UICONTROL Number of occurrences]** field displays the number of occurrences of the message in the list. É limitado a 100 mil ocorrências. Você pode editar o campo, se desejar como, por exemplo, redefini-lo.
+>O campo **[!UICONTROL Number of occurrences]** exibe o número de ocorrências da mensagem na lista. É limitado a 100 mil ocorrências. Você pode editar o campo, se desejar como, por exemplo, redefini-lo.
 
 Os emails de devolução podem ter o seguinte status de qualificação:
 
 * **[!UICONTROL To qualify]** : não foi possível qualificar o correio de rejeição. A qualificação deve ser atribuída à equipe de Deliverability para garantir uma plataforma eficiente de deliverability. Contanto que não seja qualificado, o email de devolução não é usado para enriquecer a lista de regras de gestão de email.
-* **[!UICONTROL Keep]** : o email de devolução foi qualificado e será usado pelo workflow **Atualizar para deliverability** para ser comparado às regras de gerenciamento de email existentes e enriquecer a lista.
-* **[!UICONTROL Ignore]** : o email de rejeição foi qualificado, mas não será usado pelo fluxo de trabalho **Atualizar para entrega** . Ele não será enviado para instâncias do cliente.
+* **[!UICONTROL Keep]**: o email de devolução foi qualificado e será usado pelo fluxo de trabalho **Refresh for deliverability** para ser comparado às regras de gerenciamento de email existentes e enriquecer a lista.
+* **[!UICONTROL Ignore]**: o email de devolução foi qualificado, mas não será usado pelo fluxo de trabalho **Refresh for deliverability**. Ele não será enviado para instâncias do cliente.
 
 ![](assets/deliverability_qualif_status.png)
 
@@ -250,7 +250,7 @@ Para instalações hospedadas ou híbridas, se você atualizou para o MTA aprimo
 
 * Para instâncias que usam o MTA aprimorado sem **Webhooks/EFS**, as **[!UICONTROL Inbound email]** regras também serão usadas para processar os e-mails de rejeição síncronos provenientes do MTA aprimorado, usando o mesmo endereço de e-mail para e-mails de rejeição assíncronos.
 
-Para obter mais informações sobre a MTA aprimorada do Adobe Campaign, consulte este [documento](https://helpx.adobe.com/campaign/kb/campaign-enhanced-mta.html).
+Para obter mais informações sobre o MTA aprimorado do Adobe Campaign, consulte este [documento](https://helpx.adobe.com/campaign/kb/campaign-enhanced-mta.html).
 
 ### Regras de gestão de email {#email-management-rules}
 
@@ -282,9 +282,9 @@ As regras padrão são as seguintes:
 
    >[!NOTE]
    >
-   >Para instalações hospedadas ou híbridas, se você tiver atualizado para o MTA aprimorado, as **[!UICONTROL Inbound email]** regras não serão mais usadas para mensagens de erro de falha síncrona do delivery. For more on this, see [this section](#bounce-mail-qualification).
+   >Para instalações hospedadas ou híbridas, se você tiver atualizado para o MTA aprimorado, as **[!UICONTROL Inbound email]** regras não serão mais usadas para mensagens de erro de falha síncrona do delivery. Para obter mais informações, consulte [esta seção](#bounce-mail-qualification).
    >
-   >Para obter mais informações sobre a MTA aprimorada do Adobe Campaign, consulte este [documento](https://helpx.adobe.com/campaign/kb/campaign-enhanced-mta.html).
+   >Para obter mais informações sobre o MTA aprimorado do Adobe Campaign, consulte este [documento](https://helpx.adobe.com/campaign/kb/campaign-enhanced-mta.html).
 
 * **Gestão de domínio**
 
@@ -292,21 +292,21 @@ As regras padrão são as seguintes:
 
    As regras dos domínios do Hotmail e MSN estão disponíveis por padrão no Adobe Campaign.
 
-   Click the **[!UICONTROL Detail]** icon to access rule configuration.
+   Clique no ícone **[!UICONTROL Detail]** para acessar a configuração da regra.
 
    ![](assets/tech_quarant_domain_rules_02.png)
 
    Os **parâmetros SMTP** atuam como filtros aplicados para uma regra de bloqueio.
 
    * Você pode escolher se ativa ou não determinados padrões de identificação e chaves de criptografia para verificar o nome do domínio, como **ID fo remetente**, **DomainKeys**, **DKIM**, e **S/MIME**.
-   * **Retransmissão SMTP**: permite configurar o endereço IP e a porta de um servidor de retransmissão para um determinado domínio. For more on this, see [this section](../../installation/using/configuring-campaign-server.md#smtp-relay).
-   Se suas mensagens forem exibidas no Outlook como **[!UICONTROL on behalf of]** com um nome de domínio diferente, verifique se você não está assinando seus emails com a ID **do** remetente, que é o padrão de autenticação de email proprietário da Microsoft desatualizado. Se a **[!UICONTROL Sender ID]** opção estiver ativada, desmarque a caixa correspondente e entre em contato com o suporte ao Adobe Campaign. Sua capacidade de entrega não será afetada.
+   * **Retransmissão SMTP**: permite configurar o endereço IP e a porta de um servidor de retransmissão para um determinado domínio. Para obter mais informações, consulte [esta seção](../../installation/using/configuring-campaign-server.md#smtp-relay).
+   Se suas mensagens forem exibidas no Outlook com **[!UICONTROL on behalf of]** o endereço do remetente, certifique-se de que não está assinando seus emails com a ID **do** remetente, que é o padrão de autenticação de email proprietário desatualizado da Microsoft. Se a **[!UICONTROL Sender ID]** opção estiver ativada, desmarque a caixa correspondente e entre em contato com o suporte ao Adobe Campaign. Sua capacidade de entrega não será afetada.
 
    >[!NOTE]
    >
-   >Para instalações hospedadas ou híbridas, se você tiver atualizado para o MTA aprimorado, as **[!UICONTROL Domain management]** regras não serão mais usadas. **A assinatura de autenticação de email DKIM (DomainKeys Identified Mail)** é feita pelo MTA aprimorado para todas as mensagens com todos os domínios. Ele não faz logon com a ID **do** remetente, **DomainKeys** ou **S/MIME** , a menos que especificado de outra forma no nível MTA aprimorado.
+   >For hosted or hybrid installations, if you have upgraded to the Enhanced MTA, the **[!UICONTROL Domain management]** rules are no longer used. **A assinatura de autenticação de email DKIM (DomainKeys Identified Mail)** é feita pelo MTA aprimorado para todas as mensagens com todos os domínios. Ele não faz logon com a ID **do** remetente, **DomainKeys** ou **S/MIME** , a menos que especificado de outra forma no nível MTA aprimorado.
    >
-   >Para obter mais informações sobre a MTA aprimorada do Adobe Campaign, consulte este [documento](https://helpx.adobe.com/campaign/kb/campaign-enhanced-mta.html).
+   >Para obter mais informações sobre o MTA aprimorado do Adobe Campaign, consulte este [documento](https://helpx.adobe.com/campaign/kb/campaign-enhanced-mta.html).
 
 * **Gestão MX**
 
@@ -319,9 +319,9 @@ As regras padrão são as seguintes:
 
    >[!NOTE]
    >
-   >Para instalações hospedadas ou híbridas, se você tiver atualizado para o MTA aprimorado, as regras de throughput do **[!UICONTROL MX management]** delivery não serão mais usadas. O MTA aprimorado usa suas próprias regras MX que permitem personalizar sua throughput por domínio com base na sua própria reputação histórica de email e no feedback em tempo real proveniente dos domínios em que você está enviando emails.
+   >Para instalações hospedadas ou híbridas, se você atualizou para o MTA aprimorado, as regras de capacidade do delivery **[!UICONTROL MX management]** não serão mais usadas. O MTA aprimorado usa regras MX próprias que permitem personalizar a capacidade por domínio com base na sua própria reputação histórica de email e no feedback em tempo real proveniente dos domínios em que você está enviando emails.
    >
-   >Para obter mais informações sobre a MTA aprimorada do Adobe Campaign, consulte este [documento](https://helpx.adobe.com/campaign/kb/campaign-enhanced-mta.html).
+   >Para obter mais informações sobre o MTA aprimorado do Adobe Campaign, consulte este [documento](https://helpx.adobe.com/campaign/kb/campaign-enhanced-mta.html).
 
 >[!IMPORTANT]
 >
