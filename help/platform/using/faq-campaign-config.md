@@ -1,7 +1,7 @@
 ---
-title: Perguntas frequentes sobre configurações da campanha
+title: Perguntas frequentes sobre configurações do Campaign
 seo-title: Como configurar o Campaign
-description: Perguntas frequentes do Campaign Classic
+description: Perguntas frequentes sobre o Adobe Campaign Classic
 page-status-flag: never-activated
 uuid: 3f719ac2-cc26-4fb0-adda-84666c8c38e1
 contentOwner: sauviat
@@ -14,12 +14,12 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: b78db689958c9b240da9a0315060fe63bcb48e0a
+source-git-commit: c5a9823b2feb6e2f721a2ad15dc08c1abe672054
 
 ---
 
 
-# Perguntas frequentes sobre configurações da campanha {#settings-faq}
+# Perguntas frequentes sobre configurações do Campaign {#settings-faq}
 
 Conheça as principais configurações para configurar o Campaign de acordo com as suas necessidades.
 
@@ -27,7 +27,7 @@ Conheça as principais configurações para configurar o Campaign de acordo com 
 
 O idioma do Campaign é selecionado ao criar a instância. Não é possível alterá-lo posteriormente. Para obter mais informações, consulte [esta seção](../../installation/using/creating-an-instance-and-logging-on.md).
 
-A interface do usuário do Adobe Campaign está disponível em 4 idiomas: Inglês, Francês, Alemão e Japonês. Observe que o console do cliente e o servidor devem ser definidos com o mesmo idioma. Cada instância do Campaign só pode ser executada em um idioma.
+A interface do usuário do Adobe Campaign está disponível em 4 idiomas: inglês, francês, alemão e japonês. Observe que o console do cliente e o servidor devem ser definidos com o mesmo idioma. Cada instância do Campaign só pode ser executada em um idioma.
 
 Em inglês, ao instalar o Campaign, você pode selecionar inglês americano ou inglês do Reino Unido: eles diferem nos formatos de data e hora. Para obter mais informações sobre essas diferenças, consulte [esta seção](../../platform/using/adobe-campaign-workspace.md#date-and-time).
 
@@ -75,6 +75,38 @@ Como cliente local/híbrido, você pode integrar o Campaign Classic com seu dire
 
 O Adobe Campaign fornece vários conectores de CRM para vincular sua plataforma a sistemas de terceiros. Esses conectores de CRM permitem sincronizar contatos, contas, compras, etc. Eles facilitam a integração de seu aplicativo com vários aplicativos de terceiros e corporativos.
 
-Esses conectores permitem uma integração de dados rápida e fácil: O Adobe Campaign fornece um assistente dedicado para coletar e selecionar entre as tabelas disponíveis no CRM. Isso garante a sincronização bidirecional para assegurar que os dados estejam sempre atualizados em todos os sistemas.
+Esses conectores permitem uma integração de dados rápida e fácil: o Adobe Campaign fornece um assistente dedicado para coletar e selecionar entre as tabelas disponíveis no CRM. Isso garante a sincronização bidirecional para assegurar que os dados estejam sempre atualizados em todos os sistemas.
 
 Leia [Configurar conectores de CRM](../../platform/using/crm-connectors.md) para saber como sincronizar a ferramenta de CRM com o Adobe Campaign. Assista a este vídeo de caso de uso sobre a [integração do Adobe Campaign e do Microsoft Dynamics 365](https://helpx.adobe.com/campaign/kt/acc/using/acc-integrate-dynamics365-with-acc-feature-video-set-up.html).
+
+## Como executar o Soft Cache Clear quando os problemas forem específicos da máquina ou específicos do usuário? {#perform-soft-cache-clear}
+
+Se você tiver problemas como os novos logotipos sendo refletidos corretamente, podendo exportar com êxito os dados específicos da máquina / específicos do usuário, talvez seja necessário realizar uma limpeza do Soft Cache com o Windows (Windows 7, Windows XP, Windows 10).
+
+Depois de fazer logon, vá para **[!UICONTROL File]** > **[!UICONTROL Clear the local cache]**. After this, logout and log back in.
+
+![](assets/faq_soft_cache.png)
+
+If this still doesn’t help, please try clearing the Hard Cache by performing the below steps.
+
+## How to perform Hard Cache Clear when the issues are Machine-specific or User-specific? {#perform-hard-cache-clear}
+
+If you have issues such as the new logos being reflected correctly, able to successfully export the data which are machine specific / user specific, you might need to perform a Hard Cache clearing with Windows (Windows 7, Windows XP, Windows 10).
+
+1. On the client console, choose **[!UICONTROL File]** > **[!UICONTROL Clear the local cache]**.
+
+1. Logout and close the client console (rich client).
+
+1. Go to the following locations, based on your operating system version:
+
+   * Windows 7: C:\Users\&lt; Username >\AppData\Roaming\Neolane\NL_5\
+   * Windows XP: C:\Documents and Settings\&lt; Username >\Application Data\Neolane\NL_5
+   Here you will see many xml files named nlclient-config-&lt; alphanumerical value >.xml.
+
+1. Exclua esses arquivos xml e pastas associadas.
+
+   >[!CAUTION]
+   >
+   >Do not delete nlclient_cnx.xml file.
+
+1. Sign in to client console.
