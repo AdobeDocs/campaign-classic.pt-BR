@@ -15,39 +15,39 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: fd7bc26fe12a26d8fb0dcccd2135b799e76b52bd
+source-git-commit: c1f5217fb45d2ffcb73ad4ec7d32ba6bd7ddbc15
 
 ---
 
 
 # Versão 19.1{#release-19-1}
 
-[Criar atualização](https://helpx.adobe.com/campaign/kb/acc-build-upgrade.html) | Versões [do Painel](https://docs.adobe.com/content/help/en/control-panel/using/release-notes.html) de controle| Atualizações [da documentação](../../rn/using/documentation-updates.md) | [Versões anteriores](../../rn/using/release--19-1.md) | Recursos [obsoletos](https://helpx.adobe.com/campaign/kb/deprecated-and-removed-features.html)
+[Build upgrade](https://helpx.adobe.com/campaign/kb/acc-build-upgrade.html) | [Control Panel releases](https://docs.adobe.com/content/help/en/control-panel/using/release-notes.html) | [Documentation updates](../../rn/using/documentation-updates.md) | [Previous releases](../../rn/using/release--19-1.md) | [Deprecated features](https://helpx.adobe.com/campaign/kb/deprecated-and-removed-features.html)
 
 <table> 
  <tbody> 
   <tr> 
    <td><img src="assets/green3.png"/><strong>Disponibilidade geral</strong></td>
-   <td><img src="assets/blue3.png"/><strong>Candidato à versão</strong></td> 
+   <td><img src="assets/blue3.png"/><strong>Candidato a lançamento</strong></td> 
    <td><img src="assets/orange3.png"/><strong>Não está mais disponível</strong></td> 
    <td><img src="assets/red3.png"/><strong>Obsoleto</strong></td> 
   </tr> 
    <tr> 
-   <td>Compilação estável mais recente disponível. Compilação validada na produção.<br> </td>
-   <td>Compilação validada pela Adobe. Aguardando prova de produção.<br> </td>
-   <td>Versão mais recente disponível com correções de erros. É necessário atualizar.<br> </td>
-   <td>Contém regressões conhecidas. A atualização é obrigatória.<br> </td>
+   <td>Compilação estável mais recente disponível. Compilação validada na produção.<br></td>
+   <td>Compilação validada pela Adobe. Aguardando prova de produção.<br></td>
+   <td>Versão mais recente disponível com correções de erros. Atualização necessária.<br></td>
+   <td>Contém regressões conhecidas. A atualização é obrigatória.<br></td>
   </tr> 
  </tbody> 
 </table>
 
-A **última compilação** estável é 9032 (205c981c3). Clique [aqui](../../rn/using/release--19-1.md#release-19-1-4-build-9032)
+A **última compilação** estável é 9032 (205c981c3). Click [here](../../rn/using/release--19-1.md#release-19-1-4-build-9032)
 
 ## ![](assets/orange_2.png) Versão 19.1.6 - Build 9035 {#release-19-1-6-build-9035}
 
 >[!CAUTION]
 >
->Esta construção destina-se apenas a instalações locais. Para implantações híbridas, as instâncias hospedadas continuarão executando a compilação 9032. Não atualize sua instância de marketing para a versão 9035, pois ela não é compatível com a versão 9032.
+>Esta build destina-se apenas a instalações locais. Para implantações híbridas, as instâncias hospedadas continuarão executando a build 9032. Não atualize a instância de marketing para a build 9035, pois ela não é compatível com a 9032.
 
 _3 de outubro de 2019_
 
@@ -74,9 +74,15 @@ _13 de agosto de 2019_
 
 ## Versão 19.1.4 - Build 9032{#release-19-1-4-build-9032}
 
-![](assets/green_2.png) 5 **de março de 2020**: nova compilação (9032-...205c981c3) que inclui a seguinte correção:
+![](assets/green_2.png) 3 **de abril de 2020**: nova construção (9032-...e8b36257e) que inclui a seguinte correção:
 
-* Correção de um problema com contas externas usando FTP sobre SSL. (NEO-20498)
+* Estamos introduzindo um mecanismo de assinatura para rastrear links em e-mails, a fim de evitar possíveis usos mal-intencionados (phishing). Isso protege contra a regravação de parâmetros de rastreamento que podem incluir um URL usado para redirecionar o usuário. Este mecanismo está atualmente desativado por padrão. Entre em contato com o Atendimento ao cliente se precisar ativá-lo.
+
+* Uma proteção de segurança complementar foi adicionada para impedir o redirecionamento de URLs malformados gerados de compilações anteriores ou quando o mecanismo de assinatura está desativado. Entre em contato com o Atendimento ao cliente se precisar usá-lo.
+
+![](assets/orange_2.png) 5 **de março de 2020**: nova compilação (9032-...205c981c3) que inclui a seguinte correção:
+
+* Correção de um problema com o conta externa usando FTP sobre SSL. (NEO-20498)
 
 ![](assets/orange_2.png) 17 **de dezembro de 2019**: nova compilação (9032-...9d34fb17e) que inclui a seguinte correção:
 
@@ -91,14 +97,14 @@ _13 de agosto de 2019_
 
 * Correção de um problema de logon por autenticação IMS. (NEO-17312)
 * Correção de um problema ao exibir relatórios cumulativos em várias entregas. (NEO-18165)
-* Correção de um problema que poderia bloquear ou fazer o servidor da Web travar.
+* Correção de um problema que poderia bloquear ou fazer o servidor web travar.
 
 ![](assets/orange_2.png) 19 **de setembro de 2019**: nova construção (9032-...cee805c93) que inclui as seguintes correções:
 
 * Correção de um problema ao usar o Conector CRM para Salesforce. (NEO-17712)
 * Correção de um problema de índice que causava problemas de desempenho ao enviar mensagens transacionais.
 
-![](assets/orange_2.png) 13 **de agosto de 2019**: compilação 19.1.4 inicial que inclui as seguintes correções:
+![](assets/orange_2.png) **13 de agosto de 2019**: build 19.1.4 inicial que inclui as seguintes correções:
 
 * Correção de um problema em que a atividade do programador gerasse mensagens de erro indesejáveis durante a configuração do assistente. Reversão de atualização do NEO-11662. (NEO-17097)
 * Correção de uma regressão causada pelo NEO-12727, que podia interromper os fluxos de trabalho quando uma atividade de teste era executada duas vezes. (NEO-16835)
@@ -118,7 +124,7 @@ _21 de junho de 2019_
 
 * Correção de uma regressão relacionada ao gerenciamento de coluna sdomain que impedia que os emails fossem enviados em determinadas configurações.
 * Para aprimorar o desempenho, um atributo _operation=&quot;none&quot; foi adicionado a chamadas rtEvent SOAP para evitar solicitações &quot;SELECIONE PARA ATUALIZAR&quot;.
-* Correção de um problema de exibição de fluxo de trabalho com transições de saída após a atividade de Teste. (NEO-12727)
+* Correção de um problema de exibição do workflow com transições de saída após uma atividade Test. (NEO-12727)
 * Agora permitimos a exclusão de registros fictícios criados no Microsoft Dynamics durante o fluxo de trabalho de importação.
 * Permissões aprimoradas para executar o pacote de zona de segurança ao usar a conta interna.
 
@@ -138,10 +144,10 @@ _30 de maio de 2019_
  <tbody> 
   <tr> 
    <td> Painel de controle<br /> </td> 
-   <td> <p>Para aumentar a eficiência em seu trabalho como um usuário administrador, gerencie as configurações dos servidores SFTP monitorando o armazenamento, os endereços IP incluídos na lista de permissões e instalando chaves SSH para cada instância. Observe que o Painel de Controle está disponível apenas para clientes hospedados no AWS a partir de hoje (<a href="https://experiencecloud.adobe.com/campaign/controlpanel/">login através da Experience Cloud hoje</a>).</p> <p>Para obter mais informações, consulte a <a href="https://docs.adobe.com/content/help/en/control-panel/using/control-panel-home.html">documentação detalhada</a> e o <a href="https://docs.adobe.com/content/help/en/campaign-learn/campaign-classic-tutorials/administrating/control-panel-acc/control-panel-overview.html">vídeo de instruções</a>. </p><p>Observação: a atualização para a versão mais recente do Campaign não é necessária para acessar o Painel de controle.</p> </td> 
+   <td> <p>Para aumentar a eficiência em seu trabalho como um usuário administrador, gerencie as configurações dos servidores SFTP monitorando o armazenamento, os endereços IP incluídos na lista de permissões e instalando chaves SSH para cada instância. Observe que o Painel de Controle está disponível apenas para clientes hospedados no AWS a partir de hoje (<a href="https://experiencecloud.adobe.com/campaign/controlpanel/">login através da Experience Cloud hoje</a>).</p> <p>Para obter mais informações, consulte a <a href="https://docs.adobe.com/content/help/en/control-panel/using/control-panel-home.html">documentação detalhada</a> e o <a href="https://docs.adobe.com/content/help/en/campaign-learn/campaign-classic-tutorials/administrating/control-panel-acc/control-panel-overview.html">vídeo de instruções</a>. </p><p>Observação: não é necessário atualizar para a build mais recente do Campaign para acessar o Painel de Controle.</p> </td> 
   </tr> 
     <tr> 
-   <td> Audit trail<br /> </td> 
+   <td> Trilha de auditoria<br /> </td> 
    <td> <p>Como administrador, aumente a produtividade monitorando e gerenciando alterações feitas na instância do Adobe Campaign Classic. A Trilha de Auditoria registrará ações feitas nos Schemas de origem, Workflows e Opções. Você pode ver rapidamente se um elemento foi criado, modificado ou excluído.</p><p>Para obter mais informações, consulte a <a href="../../production/using/audit-trail.md">documentação detalhada</a> e o <a href="https://docs.adobe.com/content/help/en/campaign-learn/campaign-classic-tutorials/monitoring/audit-trail.html">vídeo de instruções</a>.</p></td> 
   </tr> 
   <tr> 
@@ -176,26 +182,26 @@ _30 de maio de 2019_
 * O mesmo erro genérico é exibido agora para tentativas falhas de logon com um nome de usuário válido ou inválido.
 * A nomeação de arquivos carregados foi aprimorado.
 * Uma nova opção XtkSecurity_Disable_GetSetEnv foi adicionada para bloquear o uso de funções setEnv e getEnv.
-* Informações confidenciais agora estão ocultas no rastreamento da pilha de aplicativos.
+* Informações confidenciais agora estão ocultas no rastreamento da pilha do aplicativo.
 
 **Aprimoramentos de grade de Proteção, robustez e escalabilidade**
 
 * Otimização do uso da sequência Lifespan - XtkNewId: as tabelas mais antigas foram movidas da sequência xtkNewId para sequências dedicadas. [Leia mais](https://helpx.adobe.com/campaign/kb/sequence_auto_generation.html#Switchtoadedicatedsequence)
 * FDA sobre HTTP v2: FDA sobre protocolo HTTP é amplamente usado em implantações híbridas, especialmente para recuperação de broadLog e preparação de delivery. Robustez foi aprimorada para evitar problemas de rede e possíveis erros como recuperação e envio de dados. Isso requer que os builds nas duas extremidades da conexão estejam atualizados, caso contrário, o protocolo antigo ainda será usado.
-* Workflow de rastreamento: a robustez do workflow de rastreamento foi aprimorada. Vários problemas relacionados a inserções/atualizações de log de rastreamento e personalização de rastreamento de URL foram corrigidos. Além disso, o fluxo de trabalho de rastreamento agora detecta problemas de log de rastreamento que podem levar a erros e interromper o fluxo de trabalho. Esses problemas agora são descartados e não processados.
+* Workflow de rastreamento: a robustez do workflow de rastreamento foi aprimorada. Vários problemas relacionados a inserções/atualizações de log de rastreamento e personalização de rastreamento de URL foram corrigidos. Além disso, o workflow de rastreamento agora detecta problemas de log de rastreamento que podem levar a erros e interromper o workflow. Esses problemas agora são descartados e não processados.
 * Workflow de limpeza: o workflow de limpeza foi aprimorado para evitar possíveis erros e interrupções. Isso otimiza o tamanho e o desempenho do banco de dados.
 * Imagens incorporadas em mensagens transacionais: adicionamos o suporte completo de imagens incorporadas em mensagens transacionais, para evitar possíveis falhas ou ausência de imagens.
 * Tamanho do banco de dados - XtkJobLog: um mecanismo de limpeza foi adicionado a essa tabela. Isso tem um impacto positivo no tamanho do banco de dados.
 * Arquivamento do Cco: os parâmetros padrão para arquivamento do Cco foram alterados para aumentar a velocidade do arquivamento. [Leia mais](../../installation/using/email-archiving.md#parameters)
-* Atualização da estrutura do banco de dados: As solicitações SQL geradas pelo Assistente de Atualização da Estrutura do Banco de Dados foram aprimoradas para execução mais rápida.
+* Atualização da estrutura do banco de dados: as solicitações SQL geradas pelo Assistente de atualização da estrutura do banco de dados foram aprimoradas para execução mais rápida.
 * Grades de proteção para ações do operador: várias grades de proteção foram implementadas para impedir que os operadores executem ações que poderiam afetar a integridade da plataforma. Os esquemas internos não podem mais ser excluídos pela interface. Além disso, o XML de origem do workflow não pode mais ser editado por usuários não administradores.
-* Two new options have been made available: **XtkSecurity_Restrict_EditXML** (allows you to disable the edition of deliveries’ XML code) and **NmsOperation_OperationMgtDebug** (allows you to monitor the operationMgt technical workflow execution). [Leia mais](../../installation/using/configuring-campaign-options.md)
+* Duas novas opções foram disponibilizadas: **XtkSecurity_Restrict_EditXML** (permite desabilitar a edição do código XML dos deliveries) e **NmsOperation_OperationMgtDebug** (permite monitorar a execução do workflow técnico operationMgt). [Leia mais](../../installation/using/configuring-campaign-options.md)
 
 **Outras alterações**
 
 * Notificações por push: agora oferecemos suporte à opção Thread ID para iOS por push.
 * Melhorou o gerenciamento de índices de nomes longos que podem causar problemas após a atualização.
-* Agora, durante a análise de uma entrega desfeita, se o modo de publicação estiver definido como **[!UICONTROL None]** no assistente de implantação, um erro será registrado e a análise será interrompida: &quot;O modo de publicação está definido como &#39;none&#39;: Não é possível incorporar a imagem. As imagens não serão exibidas no telefone do recurso. (NEO-12208)
+* Agora, durante a análise de um delivery desfeito, se o modo de publicação estiver definido como **[!UICONTROL None]** no assistente de implantação, um erro será registrado e a análise será interrompida: &quot;Publication mode is set to &#39;none&#39;: Cannot embed image. As imagens não serão exibidas no telefone do recurso. (NEO-12208)
 * A gestão de broadlog foi aprimorada para o sistema de mensagens transacionais. Quando broadlogs são sincronizados da instância de execução para a instância de controle, o campo @lastModified é atualizado para a data atual do sistema. A opção MC_Update_BlLastModified foi adicionada para as instâncias de controle. True significa que a data atual será usada na instância de controle (comportamento padrão). False significa que usamos a data @lastModified da instância de execução do broadlog. (NEO-12579)
 * Os índices foram adicionados nas tabelas temporárias de cupom para otimizar o envio de delivery. (NEO-12437)
 * Na integração do Analytics, a recuperação de dados de segmento de AAM com caractere % agora é permitida. (NEO-12025)
@@ -226,7 +232,7 @@ _30 de maio de 2019_
 * Correção de um problema ao instalar o pacote de **Gestão de redes sociais** (Marketing Social). (NEO-12081)
 * Correção de um problema que impedia excluir uma aplicação Web mesmo se tiver os direitos de acesso corretos. (NEO-12072)
 * Correção de um problema que poderia causar a substituição de alguns valores ao exportar e importar um objeto via XML. A opção XtkExport_IncludeDefaultValues foi adicionada. Quando definido como True (comportamento padrão), todos os valores são exportados. Quando definido como False, as modificações serão substituídas pelo valor padrão. (NEO-11979)
-* Fixed an issue which caused the **[!UICONTROL Alert]** workflow activity to fail when an enrichment activity was added after a query. (NEO-12132)
+* Correção de um problema que causava falhas da atividade do workflow **[!UICONTROL Alert]** quando uma atividade de enriquecimento era adicionada após um query. (NEO-12132)
 * Correção de um problema nas configurações do Oracle em que deslocamentos de pipeline (disparadores) não eram recuperados com êxito do banco de dados, gerando duplicatas. (NEO-12121)
 * Correção de um problema que poderia causar erros de exibição em tabelas dinâmicas ao usar a integração do Analytics (NEO-12103)
 * Correção de um problema com o relatório de Análise Descritiva. (NEO-11414)
