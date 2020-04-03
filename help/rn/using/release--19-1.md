@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: c1f5217fb45d2ffcb73ad4ec7d32ba6bd7ddbc15
+source-git-commit: 62f63a47fae9bddf2303bbed18f1aadab4717245
 
 ---
 
@@ -74,13 +74,7 @@ _13 de agosto de 2019_
 
 ## Versão 19.1.4 - Build 9032{#release-19-1-4-build-9032}
 
-![](assets/green_2.png) 3 **de abril de 2020**: nova construção (9032-...e8b36257e) que inclui a seguinte correção:
-
-* Estamos introduzindo um mecanismo de assinatura para rastrear links em e-mails, a fim de evitar possíveis usos mal-intencionados (phishing). Isso protege contra a regravação de parâmetros de rastreamento que podem incluir um URL usado para redirecionar o usuário. Este mecanismo está atualmente desativado por padrão. Entre em contato com o Atendimento ao cliente se precisar ativá-lo.
-
-* Uma proteção de segurança complementar foi adicionada para impedir o redirecionamento de URLs malformados gerados de compilações anteriores ou quando o mecanismo de assinatura está desativado. Entre em contato com o Atendimento ao cliente se precisar usá-lo.
-
-![](assets/orange_2.png) 5 **de março de 2020**: nova compilação (9032-...205c981c3) que inclui a seguinte correção:
+![](assets/green_2.png) 5 **de março de 2020**: nova compilação (9032-...205c981c3) que inclui a seguinte correção:
 
 * Correção de um problema com o conta externa usando FTP sobre SSL. (NEO-20498)
 
