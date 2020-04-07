@@ -13,7 +13,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 707e16e9e493e175c70af606bf4568a9127cedb2
+source-git-commit: 4406e11e33e14136ea43fc3cc5a92e0d1c466100
 
 ---
 
@@ -73,6 +73,8 @@ A tabela de relacionamento NmsRcpGrpRel contém apenas os dois campos correspond
 ### NmsService {#NmsService}
 
 Esta tabela corresponde ao schema **nms:service** .
+
+No Adobe Campaign, você pode criar e gerenciar subscrições para serviços de informação (tópicos). A tabela NmsService armazena a definição dos serviços de informação (tópicos) aos quais você oferta seus recipient para assinar (um boletim informativo, por exemplo).
 
 Os serviços são entidades semelhantes a grupos (agrupamentos de recipient estáticos), exceto que circulam mais informações e permitem o gerenciamento fácil de subscrições e unsubscription por meio de formulários.
 
