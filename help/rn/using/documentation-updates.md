@@ -13,7 +13,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 11aab98507be594bde79e21c9a5e8ae0b2e8fe36
+source-git-commit: 75f195a11170b4213f930deed886f8bf5b0817bc
 
 ---
 
@@ -35,6 +35,10 @@ As Perguntas frequentes foram atualizadas com dicas sobre como limpar o cache fl
 A seção Práticas recomendadas do modelo de dados foi aprimorada com informações adicionais sobre índices. [Leia mais](../../configuration/using/data-model-best-practices.md#indexes)
 
 A seção que descreve o modelo de dados predefinido para Adobe Campaign foi atualizada com mais detalhes sobre cada tabela predefinida e com links para os módulos relevantes. [Leia mais](../../configuration/using/data-model-description.md)
+
+Casos de uso do guia &quot;Automatizar com workflows&quot; foram reorganizados em seções temáticas. [Leia mais](../../workflow/using/using-the-local-approval-activity.md)
+
+As seções Qualificações [de e-mail de](../../delivery/using/understanding-delivery-failures.md#bounce-mail-qualification) rejeição e Regras [de gerenciamento de e-](../../delivery/using/understanding-delivery-failures.md#email-management-rules) mail foram aprimoradas com informações atualizadas.
 
 ## Março de 2020 {#march-2020}
 
@@ -76,7 +80,7 @@ Os guias [de instalação](../../installation/using/before-reading.md), [produç
 
 O guia de instalação foi atualizado e sincronizado com a versão mais recente da matriz de compatibilidade. Novos sistemas suportados foram adicionados. Ocorrências em sistemas obsoletos e sem suporte foram removidas. [Leia mais](../../installation/using/before-reading.md)
 
-A matriz de compatibilidade foi atualizada com os conectores Hadoop 3.0 e Snowflake FDA. [Leia mais](https://helpx.adobe.com/campaign/kb/compatibility-matrix.html)
+A matriz de compatibilidade foi atualizada com os conectores Hadoop 3.0 e Snowflake FDA. [Leia mais](https://helpx.adobe.com/br/campaign/kb/compatibility-matrix.html)
 
 Uma prática recomendada na afinidade IP foi adicionada ao guia de instalação. [Leia mais](../../installation/using/email-deliverability.md#list-of-ip-addresses-to-use)
 
@@ -92,9 +96,9 @@ O guia [Enviar notificações](../../delivery/using/about-mobile-app-channel.md)
 
 O novo parâmetro para a configuração do relatório de URLs foi documentado [aqui](../../reporting/using/properties-of-the-report.md#defining-additional-settings).
 
-A página de matriz **de recursos no local e hospedado do** Campaign Classic foi atualizada com os novos conectores de FDA. [Leia mais](https://helpx.adobe.com/campaign/kb/acc-on-prem-vs-hosted.html)
+A página de matriz **de recursos no local e hospedado do** Campaign Classic foi atualizada com os novos conectores de FDA. [Leia mais](https://helpx.adobe.com/br/campaign/kb/acc-on-prem-vs-hosted.html)
 
-A página da matriz **de recursos do** Campaign Classic foi atualizada. [Leia mais](https://helpx.adobe.com/campaign/kb/compatibility-matrix.html)
+A página da matriz **de recursos do** Campaign Classic foi atualizada. [Leia mais](https://helpx.adobe.com/br/campaign/kb/compatibility-matrix.html)
 
 O novo **[!UICONTROL Cleanup of Nmsaddress]** fluxo de trabalho foi documentado [aqui](../../production/using/database-cleanup-workflow.md#cleanup-of-nmsaddress).
 
@@ -110,7 +114,7 @@ A seção Deliverability foi movida, reorganizada e aprimorada com conteúdo atu
 
 Uma nova seção que descreve as noções básicas do modelo de dados do Adobe Campaign Classic e como acessar a descrição de cada tabela está disponível. [Leia mais](../../configuration/using/about-data-model.md)
 
-O artigo sobre MTA aprimorado do Adobe Campaign foi atualizado com informações mais detalhadas sobre a instalação de um pacote de Tipologia específico em instâncias que não adicionam os cabeçalhos MTA aprimorados necessários a cada mensagem. [Leia mais](https://helpx.adobe.com/campaign/kb/campaign-enhanced-mta.html#impacts)
+O artigo sobre MTA aprimorado do Adobe Campaign foi atualizado com informações mais detalhadas sobre a instalação de um pacote de Tipologia específico em instâncias que não adicionam os cabeçalhos MTA aprimorados necessários a cada mensagem. [Leia mais](https://helpx.adobe.com/br/campaign/kb/campaign-enhanced-mta.html#impacts)
 
 Os casos de uso relacionados ao design de consulta foram reorganizados em seções separadas. [Leia mais](../../workflow/using/querying-recipient-table.md)
 
@@ -130,7 +134,7 @@ A opção &quot;WdbcOptions_TempDbName&quot; foi adicionada à lista de opções
 
 A página da matriz FDA foi movida para [este local](/help/rn/using/assets/fda_rdbms_rights.pdf).
 
-A página da matriz de direitos de acesso foi movida [aqui](https://docs.adobe.com/content/help/en/campaign-classic/using/getting-started/administration-basics/assets/accessrights.pdf).
+A página da matriz de direitos de acesso foi movida [aqui](https://docs.adobe.com/content/help/pt-BR/campaign-classic/using/getting-started/administration-basics/assets/accessrights.pdf).
 
 A seção que descreve como definir conteúdo interativo com AMP foi movida. [Leia mais](../../delivery/using/defining-interactive-content.md)
 
@@ -138,23 +142,23 @@ A seção que descreve como definir conteúdo interativo com AMP foi movida. [Le
 
 **Novos recursos incluídos na versão**
 
-Lei de Privacidade do Consumidor da Califórnia (CCPA) - [Leia mais](https://helpx.adobe.com/campaign/kb/acc-privacy.html)
+Lei de Privacidade do Consumidor da Califórnia (CCPA) - [Leia mais](https://helpx.adobe.com/br/campaign/kb/acc-privacy.html)
 
 Conteúdo interativo com AMP - [Leia mais](../../delivery/using/defining-interactive-content.md)
 
 Monitoramento ao vivo do fluxo de trabalho - [Leia mais](../../workflow/using/monitoring-workflow-execution.md#filtering-workflows-status)
 
-Sistema de Mensagens Seguras de SMS (TLS) - [Leia mais](https://helpx.adobe.com/campaign/kb/sms-connector-protocol-and-settings.html)
+Sistema de Mensagens Seguras de SMS (TLS) - [Leia mais](https://helpx.adobe.com/br/campaign/kb/sms-connector-protocol-and-settings.html)
 
 **Outras atualizações de documentação que vêm com a versão**
 
-A documentação MTA aprimorada do Adobe Campaign está disponível. [Leia mais](https://helpx.adobe.com/campaign/kb/campaign-enhanced-mta.html)
+A documentação MTA aprimorada do Adobe Campaign está disponível. [Leia mais](https://helpx.adobe.com/br/campaign/kb/campaign-enhanced-mta.html)
 
 Uma nova seção foi adicionada sobre como solucionar problemas de um workflow que permanece no estado &quot;Start as soon as possible&quot; em uma campanha. [Leia mais](../../production/using/workflow-execution.md#start-as-soon-as-possible-in-campaigns)
 
 As novas opções &quot;NmsOperation_DeliveryPreparationWindow&quot; e &quot;WdbcKillSessionPolicy&quot; foram adicionadas à lista de opções do Campaign. [Leia mais](../../installation/using/configuring-campaign-options.md)
 
-Um novo documento que descreve as noções básicas do modelo de dados do Adobe Campaign Classic está disponível. [Leia mais](https://helpx.adobe.com/campaign/kb/acc-datamodel.html)
+Um novo documento que descreve as noções básicas do modelo de dados do Adobe Campaign Classic está disponível. [Leia mais](https://helpx.adobe.com/br/campaign/kb/acc-datamodel.html)
 
 A nova opção **Maximum personalization run time** nas propriedades do delivery está documentada nesta [seção](../../delivery/using/personalization-fields.md#timing-out-personalization).
 
@@ -174,21 +178,21 @@ A seção &quot;Gerenciamento de acesso&quot; foi atualizada com o **Direito de 
 
 Foram adicionadas informações para especificar que o conteúdo dos campos de personalização não pode exceder 1024 caracteres. [Leia mais](../../delivery/using/personalization-fields.md)
 
-A documentação do Painel de controle do Campaign foi integrada ao novo conjunto de documentação colaborativa. [Leia mais](https://docs.adobe.com/content/help/en/control-panel/using/control-panel-home.html)
+A documentação do Painel de controle do Campaign foi integrada ao novo conjunto de documentação colaborativa. [Leia mais](https://docs.adobe.com/content/help/pt-BR/control-panel/using/control-panel-home.translate.html)
 
-O guia de introdução às práticas recomendadas de delivery foi atualizado. [Leia mais](https://helpx.adobe.com/campaign/kb/delivery-best-practices.html)
+O guia de introdução às práticas recomendadas de delivery foi atualizado. [Leia mais](https://helpx.adobe.com/br/campaign/kb/delivery-best-practices.html)
 
 ## Outubro de 2019 {#october-2019}
 
 A lista de mensagens de erro do Campaign Standard e do Campaign Classic foi atualizada. [Leia mais](https://docs.campaign.adobe.com/doc/AC/en/technicalResources/error_messages/error_codes.html)
 
-O guia de introdução ao GDPR foi melhorado e aprimorado. Agora se trata uma documentação de gerenciamento de privacidade, incluindo o GDPR e o CCPA. [Leia mais](https://helpx.adobe.com/content/help/en/campaign/kb/campaign-privacy.html)
+O guia de introdução ao GDPR foi melhorado e aprimorado. Agora se trata uma documentação de gerenciamento de privacidade, incluindo o GDPR e o CCPA. [Leia mais](https://helpx.adobe.com/content/help/br/campaign/kb/campaign-privacy.html)
 
-Uma nova página de solução de problemas foi adicionada para rastreamento no Campaign Classic. [Leia mais](https://helpx.adobe.com/campaign/kb/classic-tracking-troubleshooting.html).
+Uma nova página de solução de problemas foi adicionada para rastreamento no Campaign Classic. [Leia mais](https://helpx.adobe.com/br/campaign/kb/classic-tracking-troubleshooting.html).
 
 Uma nova página de práticas recomendadas do Adobe Analytics Data Connector foi adicionada. [Leia mais sobre o Adobe Analytics Data Connector](../../platform/using/adobe-analytics-data-connector.md)
 
-O guia de introdução às práticas recomendadas de delivery foi movido e atualizado. [Leia mais](https://helpx.adobe.com/campaign/kb/delivery-best-practices.html)
+O guia de introdução às práticas recomendadas de delivery foi movido e atualizado. [Leia mais](https://helpx.adobe.com/br/campaign/kb/delivery-best-practices.html)
 
 Uma recomendação foi adicionada à documentação do canal SMS para evitar problemas ao usar várias contas externas aproveitando o conector SMPP genérico estendido com a mesma conta do provedor. [Leia mais](../../delivery/using/sms-channel.md#automatic-reply)
 
@@ -198,11 +202,11 @@ As etapas para configurar a renderização da caixa de entrada para instalaçõe
 
 ## Setembro de 2019 {#september-2019}
 
-Uma nova página foi adicionada para fornecer orientações gerais para a manutenção do Campaign Classic. [Leia mais](https://helpx.adobe.com/campaign/kb/acc-maintenance.html)
+Uma nova página foi adicionada para fornecer orientações gerais para a manutenção do Campaign Classic. [Leia mais](https://helpx.adobe.com/br/campaign/kb/acc-maintenance.html)
 
 As informações relacionadas ao monitoramento de workflows foram centralizadas em uma nova seção dedicada. [Leia mais](../../workflow/using/monitoring-workflow-execution.md).
 
-Uma nova página sobre diretrizes gerais para rastreamento no Adobe Campaign Classic foi adicionada. [Leia mais](https://helpx.adobe.com/campaign/kb/acc-tracking.html).
+Uma nova página sobre diretrizes gerais para rastreamento no Adobe Campaign Classic foi adicionada. [Leia mais](https://helpx.adobe.com/br/campaign/kb/acc-tracking.html).
 
 As práticas recomendadas para aprimoramentos de desempenho de workflows e deliveries foram atualizadas. [Leia mais sobre workflows](../../workflow/using/workflow-best-practices.md) e [mais sobre deliveries](../../delivery/using/monitoring-a-delivery.md#best-practices-performance).
 
@@ -210,17 +214,17 @@ As práticas recomendadas para aprimoramentos de desempenho de workflows e deliv
 
 **Novos recursos incluídos na versão**
 
-Painel de controle - [Leia mais](https://docs.adobe.com/content/help/en/control-panel/using/control-panel-home.html)
+Painel de controle - [Leia mais](https://docs.adobe.com/content/help/pt-BR/control-panel/using/control-panel-home.translate.html)
 
 Trilha de auditoria - [Leia mais](https://docs.campaign.adobe.com/doc/AC/en/PRO_Production_procedures_Audit_trail.html)
 
 **Outras atualizações de documentação que vêm com a versão**
 
-Foi criada uma atualização das perguntas frequentes sobre a nova build. [Leia mais](https://helpx.adobe.com/campaign/kb/build-upgrade-faq.html)
+Foi criada uma atualização das perguntas frequentes sobre a nova build. [Leia mais](https://helpx.adobe.com/br/campaign/kb/build-upgrade-faq.html)
 
-A [Matriz de compatibilidade](https://helpx.adobe.com/campaign/kb/compatibility-matrix.html) foi atualizada. A lista de sistemas de banco de dados suportados foi atualizada, assim como as versões do Android/iOS e SDKs relacionados. A [Matriz de compatibilidade 19.0](https://helpx.adobe.com/campaign/kb/compatibility-matrix-19-0.html) foi arquivada.
+A [Matriz de compatibilidade](https://helpx.adobe.com/br/campaign/kb/compatibility-matrix.html) foi atualizada. A lista de sistemas de banco de dados suportados foi atualizada, assim como as versões do Android/iOS e SDKs relacionados. A [Matriz de compatibilidade 19.0](https://helpx.adobe.com/br/campaign/kb/compatibility-matrix-19-0.html) foi arquivada.
 
-A página &quot;Deprecated and Removed Features in Campaign Classic&quot; foi atualizada. [Leia mais](https://helpx.adobe.com/campaign/kb/deprecated-and-removed-features.html)
+A página &quot;Deprecated and Removed Features in Campaign Classic&quot; foi atualizada. [Leia mais](https://helpx.adobe.com/br/campaign/kb/deprecated-and-removed-features.html)
 
 A descrição do arquivo de configuração do servidor foi adicionada ao guia de instalação. [Leia mais](https://docs.campaign.adobe.com/doc/AC/en/INS_Appendices_The_server_configuration_file.html)
 
@@ -228,11 +232,11 @@ Uma seção foi adicionada descrevendo as etapas de instalação e configuraçã
 
 Uma seção foi adicionada descrevendo as etapas de desinstalação do servidor do Campaign. [Leia mais](https://docs.campaign.adobe.com/doc/AC/en/INS_Appendices_Uninstalling_Campaign.html)
 
-The [security](https://docs.campaign.adobe.com/doc/AC/getting_started/EN/security.html), [deliverability](https://docs.campaign.adobe.com/doc/AC/getting_started/EN/deliverability.html) and [privacy](https://helpx.adobe.com/campaign/kb/acc-privacy.html) getting started guides have been updated.
+The [security](https://helpx.adobe.com/br/campaign/kb/acc-security.html), [deliverability](https://docs.adobe.com/content/help/pt-BR/campaign-classic/using/sending-messages/deliverability-management/about-deliverability.html) and [privacy](https://helpx.adobe.com/br/campaign/kb/acc-privacy.html) getting started guides have been updated.
 
-A descrição da opção de fluxo de trabalho de pré-processo foi atualizada para refletir as alterações no produto. [Leia mais](https://docs.campaign.adobe.com/doc/AC/en/WKF_Repository_of_activities_Action_activities.html#Data_loading__file_)
+A descrição da opção de fluxo de trabalho de pré-processo foi atualizada para refletir as alterações no produto. [Leia mais](https://docs.campaign.adobe.com/doc/AC/br/WKF_Repository_of_activities_Action_activities.html#Data_loading__file_)
 
-A nota técnica Experience Cloud Triggers foi atualizada. [Leia mais](https://helpx.adobe.com/campaign/kb/triggers-and-campaign.html)
+A nota técnica Experience Cloud Triggers foi atualizada. [Leia mais](https://helpx.adobe.com/br/campaign/kb/triggers-and-campaign.html)
 
 A lista de mensagens de erro foi atualizada. [Leia mais](https://docs.campaign.adobe.com/doc/AC/en/technicalResources/error_messages/error_codes.html)
 
@@ -240,17 +244,17 @@ Foram adicionadas mais informações sobre métodos de autenticação SOAP para 
 
 As etapas de configuração do Apache foram atualizadas. [Leia mais](https://docs.campaign.adobe.com/doc/AC/en/INS_Installing_Campaign_in_Linux__Integration_into_a_Web_server.html#Configuring_Apache_web_server_in_RHEL)
 
-Uma nova página foi adicionada, incluindo a lista de terminais para o Campaign Standard e Classic. [Leia mais](https://helpx.adobe.com/campaign/kb/campaign-endpoints.html)
+Uma nova página foi adicionada, incluindo a lista de terminais para o Campaign Standard e Classic. [Leia mais](https://helpx.adobe.com/br/campaign/kb/campaign-endpoints.html)
 
-O artigo de práticas recomendadas do pacote de dados foi atualizado. [Leia mais](https://helpx.adobe.com/campaign/kb/data-package-best-practices.html)
+O artigo de práticas recomendadas do pacote de dados foi atualizado. [Leia mais](https://helpx.adobe.com/br/campaign/kb/data-package-best-practices.html)
 
 A documentação de gerenciamento de ofertas foi atualizada com uma nova seção que lista as práticas recomendadas. [Leia mais](https://docs.campaign.adobe.com/doc/AC/en/ITA_Interaction_Overview_Interaction_best_practices.html)
 
-Um novo artigo da knowledge base sobre como usar o catálogo de oferta no Adobe Campaign Classic foi criado. [Leia mais](https://helpx.adobe.com/campaign/kb/offer-best-practices.html)
+Um novo artigo da knowledge base sobre como usar o catálogo de oferta no Adobe Campaign Classic foi criado. [Leia mais](https://helpx.adobe.com/br/campaign/kb/offer-best-practices.html)
 
 A seção Sub-workflow activity foi aprimorada com um exemplo de uso. [Leia mais](../../workflow/using/sub-workflow.md)
 
-O artigo da Knowledge base [Campaign Classic On-premise &amp; Hosted capability matrix](https://helpx.adobe.com/campaign/kb/acc-on-prem-vs-hosted.html) foi atualizado com informações relacionadas a emails de arquivamento.
+O artigo da Knowledge base [Campaign Classic On-premise &amp; Hosted capability matrix](https://helpx.adobe.com/br/campaign/kb/acc-on-prem-vs-hosted.html) foi atualizado com informações relacionadas a emails de arquivamento.
 
 A documentação de Mensagens transacionais foi atualizada com uma nota relacionada à publicação do modelo. [Leia mais](https://docs.campaign.adobe.com/doc/AC/en/MCE_Template_publication.html)
 
@@ -273,21 +277,21 @@ Foram adicionadas informações sobre o relatório de faturamento.
 Atualização da documentação sobre a integração de públicos-alvo compartilhados.
 [Leia mais](https://docs.campaign.adobe.com/doc/AC/en/ITG_Audience_sharing_Configuring_shared_audiences_integration_in_Adobe_Campaign.html)
 
-As seguintes notas técnicas foram atualizadas: [SMS connector protocol and settings](https://helpx.adobe.com/campaign/kb/sms-connector-protocol-and-settings.html) e [Sequence auto generation](https://helpx.adobe.com/campaign/kb/sequence_auto_generation.html#Switchtoadedicatedsequence).
+As seguintes notas técnicas foram atualizadas: [SMS connector protocol and settings](https://helpx.adobe.com/br/campaign/kb/sms-connector-protocol-and-settings.html) e [Sequence auto generation](https://helpx.adobe.com/br/campaign/kb/sequence_auto_generation.html#Switchtoadedicatedsequence).
 
 A seção Technical workflows foi atualizada. [Leia mais](https://docs.campaign.adobe.com/doc/AC/en/WKF_Technical_workflows_About_technical_workflows.html)
 
-O procedimento de Configuração do nome de domínio do Campaign foi aprimorado e atualizado. [Leia mais](https://helpx.adobe.com/campaign/kb/domain-name-delegation.html)
+O procedimento de Configuração do nome de domínio do Campaign foi aprimorado e atualizado. [Leia mais](https://helpx.adobe.com/br/campaign/kb/domain-name-delegation.html)
 
-O procedimento de migração para aplicativos Android do Google Cloud Messaging (GCM) para o Firebase Cloud Messaging (FCM) foi atualizado. [Leia mais](https://helpx.adobe.com/campaign/kb/migrate-to-fcm.html)
+O procedimento de migração para aplicativos Android do Google Cloud Messaging (GCM) para o Firebase Cloud Messaging (FCM) foi atualizado. [Leia mais](https://helpx.adobe.com/br/campaign/kb/migrate-to-fcm.html)
 
-O Guia de dimensionamento de hardware do Campaign foi atualizado. [Leia mais](https://helpx.adobe.com/campaign/kb/hardware-sizing-guide.html)
+O Guia de dimensionamento de hardware do Campaign foi atualizado. [Leia mais](https://helpx.adobe.com/br/campaign/kb/hardware-sizing-guide.html)
 
 Foram adicionadas informações sobre a Faixa de consulta para a conta externa de teradados. [Leia mais](https://docs.campaign.adobe.com/doc/AC/en/PTF_Administration_basics_External_accounts.html#External_database_external_account)
 
 ## Janeiro de 2019{#release-doc-16-01-2019}
 
-A nota técnica Experience Cloud Triggers foi atualizada. [Leia mais](https://helpx.adobe.com/campaign/kb/triggers-and-campaign.html)
+A nota técnica Experience Cloud Triggers foi atualizada. [Leia mais](https://helpx.adobe.com/br/campaign/kb/triggers-and-campaign.html)
 
 Uma nota foi adicionada na seção de aprovação da oferta para especificar que a menção &quot;Content approved&quot; indica que o processo de aprovação do conteúdo foi realizado, se todas as ofertas foram habilitadas/aprovadas ou não. [Leia mais](https://docs.campaign.adobe.com/doc/AC/en/ITA_Managing_an_offer_catalog_Approving_and_activating_an_offer.html#Approving_offer_content)
 
@@ -319,7 +323,7 @@ Foi adicionado um caso de uso sobre como enviar um email com campos de dados per
 
 Os vídeos em destaque foram movidos para [este local](https://docs.adobe.com/content/help/en/campaign-learn/campaign-classic-tutorials/overview.html).
 
-Duas notas técnicas foram adicionadas ao [Teradata](https://helpx.adobe.com/campaign/kb/campaign_fda_teradata.html) e ao [MySQL 5.7](https://helpx.adobe.com/campaign/kb/campaign_fda_mysql.html).
+Duas notas técnicas foram adicionadas ao [Teradata](https://helpx.adobe.com/br/campaign/kb/campaign_fda_teradata.html) e ao [MySQL 5.7](https://helpx.adobe.com/br/campaign/kb/campaign_fda_mysql.html).
 
 ## 18.10 - 05/11/2018{#release-18-10}
 
@@ -335,15 +339,15 @@ Monitoramento do fluxo de trabalho - [Leia mais](https://docs.campaign.adobe.com
 
 As APIs do Campaign Classic agora estão disponíveis em uma [página dedicada](https://docs.campaign.adobe.com/doc/AC/en/jsapi/index.html). Se estiver usando o arquivo jsapi.chm, agora deverá fazer referência a nova versão online.
 
-A matriz de Compatibilidade foi atualizada. [Leia mais](https://helpx.adobe.com/campaign/kb/compatibility-matrix.html)
+A matriz de Compatibilidade foi atualizada. [Leia mais](https://helpx.adobe.com/br/campaign/kb/compatibility-matrix.html)
 
-A página &quot;Deprecated and Removed Features in Campaign Classic&quot; foi atualizada. [Leia mais](https://helpx.adobe.com/campaign/kb/deprecated-and-removed-features.html)
+A página &quot;Deprecated and Removed Features in Campaign Classic&quot; foi atualizada. [Leia mais](https://helpx.adobe.com/br/campaign/kb/deprecated-and-removed-features.html)
 
-Nas [notas de versão](https://docs.campaign.adobe.com/doc/AC/en/RN.html) e [notas de versão legadas](https://docs.campaign.adobe.com/doc/AC/en/RN_legacy.html), foi adicionado um aviso para builds que tiveram recall. Também foram adicionadas as builds acumuladas para 17.9, 18.4 e 18.6.
+Nas [notas de versão](https://docs.campaign.adobe.com/doc/AC/br/RN.html) e [notas de versão legadas](https://docs.campaign.adobe.com/doc/AC/en/RN_legacy.html), foi adicionado um aviso para builds que tiveram recall. Também foram adicionadas as builds acumuladas para 17.9, 18.4 e 18.6.
 
-Os guias de introdução de [segurança](https://docs.campaign.adobe.com/doc/AC/getting_started/EN/security.html), [entregabilidade](https://docs.campaign.adobe.com/doc/AC/getting_started/EN/deliverability.html) e [atualização de build](https://docs.campaign.adobe.com/doc/AC/getting_started/EN/buildUpgrade.html) foram atualizados.
+Os guias de introdução de [segurança](https://helpx.adobe.com/br/campaign/kb/acc-security.html), [entregabilidade](https://docs.adobe.com/content/help/pt-BR/campaign-classic/using/sending-messages/deliverability-management/about-deliverability.html) e [atualização de build](https://helpx.adobe.com/br/campaign/kb/acc-build-upgrade.html) foram atualizados.
 
-The [Privacy](https://helpx.adobe.com/campaign/kb/acc-privacy.html) getting started guide has been updated with information on how to invoke the API externally and how to use queryDef to query for the status and download the GDPR file.
+The [Privacy](https://helpx.adobe.com/br/campaign/kb/acc-privacy.html) getting started guide has been updated with information on how to invoke the API externally and how to use queryDef to query for the status and download the GDPR file.
 
 Foi adicionado um caso de uso de mensagem transacional para adicionar anexos de email em tempo real a remessas de saída. [Leia mais](https://docs.campaign.adobe.com/doc/AC/en/MCE_Use_case_Purpose.html)
 
@@ -411,25 +415,25 @@ A seção &quot;Optimizing personalization&quot; foi atualizada com mais informa
 
 **Novos recursos incluídos na versão**
 
-A matriz de Compatibilidade foi atualizada. [Leia mais](https://helpx.adobe.com/campaign/kb/compatibility-matrix.html)
+A matriz de Compatibilidade foi atualizada. [Leia mais](https://helpx.adobe.com/br/campaign/kb/compatibility-matrix.html)
 
 A documentação JSAPI foi atualizada. [Leia mais](https://support.neolane.net/webApp/extranetLogin)
 
-A página de recursos obsoletos e removidos foi atualizada. [Leia mais](https://helpx.adobe.com/campaign/kb/deprecated-and-removed-features.html)
+A página de recursos obsoletos e removidos foi atualizada. [Leia mais](https://helpx.adobe.com/br/campaign/kb/deprecated-and-removed-features.html)
 
 **Outras atualizações de documentação que vêm com a versão**
 
-Os guias do usuário do Campaign Classic foram renomeados para simplificar a navegação, melhorar a experiência do usuário, o acesso às informações e o autoatendimento. [Leia mais](https://docs.campaign.adobe.com/doc/AC/en/browseAC.html)
+Os guias do usuário do Campaign Classic foram renomeados para simplificar a navegação, melhorar a experiência do usuário, o acesso às informações e o autoatendimento. [Leia mais](https://docs.campaign.adobe.com/doc/AC/br/browseAC.html)
 
 A lista de funções disponíveis no editor de expressões foi atualizada. [Leia mais](https://docs.campaign.adobe.com/doc/AC/en/PTF_Creating_queries_Defining_filter_conditions.html#List_of_functions)
 
-O guia de introdução à segurança foi atualizado com informações sobre como proteger páginas que contêm PI. [Leia mais](https://docs.campaign.adobe.com/doc/AC/getting_started/EN/security.html)
+O guia de introdução à segurança foi atualizado com informações sobre como proteger páginas que contêm PI. [Leia mais](https://helpx.adobe.com/br/campaign/kb/acc-security.html)
 
 A lista de mensagens de erro foi atualizada. [Leia mais](https://docs.campaign.adobe.com/doc/AC/en/technicalResources/error_messages/error_codes.html)
 
 Uma seção de solução de problemas foi adicionada na documentação de integração do IMS. [Leia mais](https://docs.campaign.adobe.com/doc/AC/en/ITG_Connecting_via_an_Adobe_ID_IMS_troubleshooting.html)
 
-O guia de introdução à atualização da build foi atualizado. [Leia mais](https://docs.campaign.adobe.com/doc/AC/getting_started/EN/buildUpgrade.html)
+O guia de introdução à atualização da build foi atualizado. [Leia mais](https://helpx.adobe.com/br/campaign/kb/acc-build-upgrade.html)
 
 A seção de configuração de afinidade IP foi atualizada. [Leia mais](https://docs.campaign.adobe.com/doc/AC/en/INS_Additional_configurations_Mid-sourcing_server.html#Multiplexing_the_mid-sourcing_server)
 
@@ -445,9 +449,9 @@ A seção Campaign integration with Adobe Analytics - Data connector foi aprimor
 
 Uma nova seção Tutorials foi adicionada, com links para guias passo a passo e vídeos instrutivos. [Leia mais](https://docs.campaign.adobe.com/doc/AC/en/PTF_Starting_with_Adobe_Campaign_Tutorials.html)
 
-Uma nova nota técnica sobre o protocolo e as configurações do conector SMS foi criada. [Leia mais](https://helpx.adobe.com/campaign/kb/sms-connector-protocol-and-settings.html)
+Uma nova nota técnica sobre o protocolo e as configurações do conector SMS foi criada. [Leia mais](https://helpx.adobe.com/br/campaign/kb/sms-connector-protocol-and-settings.html)
 
-O guia de introdução às práticas recomendadas de delivery foi atualizado. [Leia mais](https://docs.campaign.adobe.com/doc/AC/getting_started/EN/deliveryBestPractices.html)
+O guia de introdução às práticas recomendadas de delivery foi atualizado. [Leia mais](https://helpx.adobe.com/br/campaign/kb/delivery-best-practices.html)
 
 A configuração da conta do Microsoft Dynamics 365 com implantação da API da Web foi atualizada. [Leia mais](https://docs.campaign.adobe.com/doc/AC/en/PTF_Connectors_CRM_Connectors.html#Example_for_Microsoft_Dynamics)
 
@@ -455,9 +459,9 @@ O procedimento para instalar o Adobe Campaign Classic em uma plataforma Windows 
 
 O período de compartilhamento de público-alvo entre a Adobe Experience Cloud e o Campaign Classic foi detalhado. [Leia mais](https://docs.campaign.adobe.com/doc/AC/en/ITG_Audience_sharing_Importing_and_exporting_audiences.html)
 
-O artigo completo da knowledge base para a lista do Campaign foi atualizado. [Leia mais](https://helpx.adobe.com/campaign/kb/article-list.html)
+O artigo completo da knowledge base para a lista do Campaign foi atualizado. [Leia mais](https://helpx.adobe.com/br/campaign/kb/article-list.html)
 
-Uma nova nota técnica sobre melhoria de desempenho e práticas recomendadas está disponível. [Leia mais](https://helpx.adobe.com/campaign/kb/best-practices-for-performance-improvement.html)
+Uma nova nota técnica sobre melhoria de desempenho e práticas recomendadas está disponível. [Leia mais](https://helpx.adobe.com/br/campaign/kb/best-practices-for-performance-improvement.html)
 
 A amostra de teste A/B foi atualizada. [Leia mais](https://docs.campaign.adobe.com/doc/AC/en/WKF_Use_cases_A-B_testing.html)
 
@@ -467,7 +471,7 @@ A página Campaign Classic Common question/FAQ foi atualizada. [Leia mais](../..
 
 **Novos recursos incluídos na versão**
 
-Regulamento Geral sobre a Proteção de Dados da União Europeia (GDPR) - [Leia mais](https://helpx.adobe.com/campaign/kb/acc-privacy.html)
+Regulamento Geral sobre a Proteção de Dados da União Europeia (GDPR) - [Leia mais](https://helpx.adobe.com/br/campaign/kb/acc-privacy.html)
 
 Perfis ativos - [Leia mais](https://docs.campaign.adobe.com/doc/AC/en/PTF_Profile_management_About_profiles.html#Active_profiles)
 
@@ -475,23 +479,23 @@ Aprimoramento do conector de push do Android - [Leia mais](https://docs.campaign
 
 **Outras atualizações de documentação que vêm com a versão**
 
-As notas de versão foram aprimoradas para uma melhor experiência do usuário e agora incluem todas as correções relacionadas às solicitações do cliente.  [Leia mais](https://docs.campaign.adobe.com/doc/AC/en/RN.html)
+As notas de versão foram aprimoradas para uma melhor experiência do usuário e agora incluem todas as correções relacionadas às solicitações do cliente.  [Leia mais](https://docs.campaign.adobe.com/doc/AC/br/RN.html)
 
 Uma nova página foi adicionada com as perguntas mais comuns sobre o Campaign Classic. [Leia mais](../../platform/using/common-questions.md)
 
 A lista de mensagens de erro foi atualizada. [Leia mais](https://docs.campaign.adobe.com/doc/AC/en/technicalResources/error_messages/error_codes.html)
 
-A nota técnica Experience Cloud Triggers foi atualizada. [Leia mais](https://helpx.adobe.com/campaign/kb/triggers-and-campaign.html)
+A nota técnica Experience Cloud Triggers foi atualizada. [Leia mais](https://helpx.adobe.com/br/campaign/kb/triggers-and-campaign.html)
 
-Uma nota técnica foi adicionada sobre como instalar e implantar o pacote de privacidade (GDPR) nas versões legadas do Campaign Classic. [Leia mais](https://helpx.adobe.com/campaign/kb/how-to-install-gdpr-package-on-legacy-versions.html)
+Uma nota técnica foi adicionada sobre como instalar e implantar o pacote de privacidade (GDPR) nas versões legadas do Campaign Classic. [Leia mais](https://helpx.adobe.com/br/campaign/kb/how-to-install-gdpr-package-on-legacy-versions.html)
 
-Uma nota técnica sobre o novo mecanismo de geração automática de sequência foi adicionada. [Leia mais](https://helpx.adobe.com/campaign/kb/sequence_auto_generation.html)
+Uma nota técnica sobre o novo mecanismo de geração automática de sequência foi adicionada. [Leia mais](https://helpx.adobe.com/br/campaign/kb/sequence_auto_generation.html)
 
 A documentação JSAPI foi atualizada. [Leia mais](https://support.neolane.net/webApp/extranetLogin)
 
-A matriz de Compatibilidade foi atualizada. [Leia mais](https://helpx.adobe.com/campaign/kb/compatibility-matrix.html)
+A matriz de Compatibilidade foi atualizada. [Leia mais](https://helpx.adobe.com/br/campaign/kb/compatibility-matrix.html)
 
-Uma nova página que lista recursos e versões obsoletas está disponível. [Leia mais](https://helpx.adobe.com/campaign/kb/deprecated-and-removed-features.html)
+Uma nova página que lista recursos e versões obsoletas está disponível. [Leia mais](https://helpx.adobe.com/br/campaign/kb/deprecated-and-removed-features.html)
 
 Foram adicionadas algumas limitações conhecidas e práticas recomendadas relacionadas ao RDBMS. [Leia mais](https://docs.campaign.adobe.com/doc/AC/en/INS_Prerequisites_and_recommendations__Database.html)
 
@@ -499,7 +503,7 @@ Saiba mais sobre as práticas recomendadas de uso do SFTP. [Leia mais](https://d
 
 A lista de workflows técnicos foi atualizada. [Leia mais](https://docs.campaign.adobe.com/doc/AC/en/WKF_Technical_workflows_About_technical_workflows.html)
 
-A lista de artigos da knowledge base (anteriormente conhecida como &quot;notas técnicas&quot;) agora está disponível aqui. [Leia mais](https://helpx.adobe.com/campaign/kb/article-list.html)
+A lista de artigos da knowledge base (anteriormente conhecida como &quot;notas técnicas&quot;) agora está disponível aqui. [Leia mais](https://helpx.adobe.com/br/campaign/kb/article-list.html)
 
 Os [vídeos de instrução](https://docs.campaign.adobe.com/doc/AC/en/Videos/Videos.html) foram atualizados.
 
@@ -522,7 +526,7 @@ Foram adicionadas informações sobre limitações de capacidade ao configurar u
 
 ## 17.12 - 14/12/2017{#release-doc-14-12-2017}
 
-O conjunto de [documentação do Adobe Campaign Classic](https://helpx.adobe.com/support/campaign/classic.html) foi reorganizado para melhorar a utilização.
+O conjunto de [documentação do Adobe Campaign Classic](https://helpx.adobe.com/br/support/campaign/classic.html) foi reorganizado para melhorar a utilização.
 
 Uma nova seção Tutorials foi adicionada para facilitar o acesso aos principais recursos do Campaign referentes a materiais de ajuda, instruções, amostras e vídeos. [Leia mais](https://docs.campaign.adobe.com/doc/AC/en/PTF_Starting_with_Adobe_Campaign_Tutorials.html)
 
@@ -530,15 +534,15 @@ Uma nova seção foi adicionada para ajudá-lo a monitorar o status do delivery,
 
 A lista de mensagens de erro foi atualizada. [Leia mais](https://docs.campaign.adobe.com/doc/AC/en/technicalResources/error_messages/error_codes.html)
 
-A nota técnica Experience Cloud Triggers foi atualizada. [Leia mais](https://helpx.adobe.com/campaign/kb/triggers-and-campaign.html)
+A nota técnica Experience Cloud Triggers foi atualizada. [Leia mais](https://helpx.adobe.com/br/campaign/kb/triggers-and-campaign.html)
 
 O guia de migração do Campaign Classic foi adicionado à coleção. [Leia mais](https://docs.campaign.adobe.com/doc/AC/en/MIG_Migration_overview_About_migration.html)
 
-A Matriz de compatibilidade do Campaign foi atualizada. [Leia mais](https://helpx.adobe.com/campaign/kb/compatibility-matrix.html)
+A Matriz de compatibilidade do Campaign foi atualizada. [Leia mais](https://helpx.adobe.com/br/campaign/kb/compatibility-matrix.html)
 
 Quando aplicável, as instruções de configuração e instalação agora mencionam a que modelo de hospedagem se aplicam. [Leia mais](https://docs.campaign.adobe.com/doc/AC/en/INS_Additional_configurations_Configuring_Campaign_server.html)
 
-Novo artigo da knowledge base para destacar as diferenças de configuração e recursos entre implantações locais, híbridas e de Managed Services. [Leia mais](https://helpx.adobe.com/campaign/kb/acc-on-prem-vs-hosted.html)
+Novo artigo da knowledge base para destacar as diferenças de configuração e recursos entre implantações locais, híbridas e de Managed Services. [Leia mais](https://helpx.adobe.com/br/campaign/kb/acc-on-prem-vs-hosted.html)
 
 Foram adicionadas instruções sobre como instalar um pacote padrão. [Leia mais](https://docs.campaign.adobe.com/doc/AC/en/INS_Initial_configuration_Installing_packages.html)
 
@@ -562,7 +566,7 @@ Canal LINE: aprimoramentos de mensagens - [Leia mais](https://docs.campaign.adob
 
 Novas amostras de consulta foram adicionadas. [Leia mais](https://docs.campaign.adobe.com/doc/AC/en/WKF_Use_cases_Designing_queries.html#Filtering_duplicated_recipients)
 
-O guia de práticas recomendadas de delivery foi atualizado. [Leia mais](https://docs.campaign.adobe.com/doc/AC/getting_started/EN/deliveryBestPractices.html)
+O guia de práticas recomendadas de delivery foi atualizado. [Leia mais](https://helpx.adobe.com/br/campaign/kb/delivery-best-practices.html)
 
 A amostra de teste A/B foi atualizada com instruções que estavam ausentes. [Leia mais](https://docs.campaign.adobe.com/doc/AC/en/WKF_Use_cases_A-B_testing.html)
 
@@ -590,13 +594,13 @@ A documentação do Social Marketing foi atualizada. [Leia mais](../../social/us
 
 Foi adicionada uma nova nota técnica sobre o aquecimento de IP. [Leia mais](https://docs.campaign.adobe.com/doc/AC/en/technicalResources/Technotes/AdobeCampaign_Deliverability_IP_Warming_overview.pdf).
 
-Foi adicionada uma nova introdução à atualização da build. [Leia mais](https://docs.campaign.adobe.com/doc/AC/getting_started/EN/buildUpgrade.html).
+Foi adicionada uma nova introdução à atualização da build. [Leia mais](https://helpx.adobe.com/br/campaign/kb/acc-build-upgrade.html).
 
 ## Maio de 2017 {#release-doc-30-05-2017}
 
-Um novo guia de introdução está disponível: ele apresenta algumas práticas recomendadas que podem ser usadas para fazer entregas com o Adobe Campaign, desde a criação e o direcionamento até o envio e o monitoramento. [Leia mais](https://docs.campaign.adobe.com/doc/AC/getting_started/EN/deliveryBestPractices.html)
+Um novo guia de introdução está disponível: ele apresenta algumas práticas recomendadas que podem ser usadas para fazer entregas com o Adobe Campaign, desde a criação e o direcionamento até o envio e o monitoramento. [Leia mais](https://helpx.adobe.com/br/campaign/kb/delivery-best-practices.html)
 
-O guia de introdução à segurança foi atualizado. [Leia mais](https://docs.campaign.adobe.com/doc/AC/getting_started/EN/security.html)
+O guia de introdução à segurança foi atualizado. [Leia mais](https://helpx.adobe.com/br/campaign/kb/acc-security.html)
 
 A [documentação &quot;Archiving emails&quot; documentation&quot;](https://docs.campaign.adobe.com/doc/AC/en/INS_Additional_configurations_Email_archiving.html) foi atualizada com a seção [&quot;Email BCC&quot;](https://docs.campaign.adobe.com/doc/AC/en/INS_Additional_configurations_Email_archiving.html#Configuring_the_BCC_email_address__on_premise_) e as [etapas detalhadas para ativar o recurso](https://docs.campaign.adobe.com/doc/AC/en/DLV_Sending_emails_Sending_messages.html#Archiving_emails).
 
@@ -608,7 +612,7 @@ O exemplo de aceitação dupla foi atualizado. [Leia mais](../../web/using/use-c
 
 ## Março de 2017{#release-doc-31-03-2017}
 
-Deliverability: o [guia de introdução](https://docs.campaign.adobe.com/doc/AC/getting_started/EN/deliverability.html) foi atualizado. A documentação de deliverability agora inclui uma [visão geral](https://docs.campaign.adobe.com/doc/AC/en/DLV_Deliverability_management_About_deliverability.html) mais detalhada e uma descrição do processo de [implementação e das principais etapas](../../delivery/using/deliverability-key-points.md).
+Deliverability: o [guia de introdução](https://docs.adobe.com/content/help/pt-BR/campaign-classic/using/sending-messages/deliverability-management/about-deliverability.html) foi atualizado. A documentação de deliverability agora inclui uma [visão geral](https://docs.campaign.adobe.com/doc/AC/en/DLV_Deliverability_management_About_deliverability.html) mais detalhada e uma descrição do processo de [implementação e das principais etapas](../../delivery/using/deliverability-key-points.md).
 
 A seção &quot;Sending using waves&quot; foi movida e aprimorada com exemplos detalhados, recomendações e casos de uso.    [Leia mais](https://docs.campaign.adobe.com/doc/AC/en/DLV_Sending_emails_Sending_messages.html#Sending_using_multiple_waves)
 
@@ -616,14 +620,14 @@ Uma tabela que descreve os erros específicos das mensagens SMS foi adicionada �
 
 Workflows: um novo exemplo de fluxo de trabalho multicanal foi adicionado. [Leia mais](https://docs.campaign.adobe.com/doc/AC/en/WKF_Repository_of_activities_Action_activities.html#Cross-channel_deliveries)
 
-Experience Cloud Triggers: uma nota técnica sobre como configurá-la e usá-la com o Adobe Campaign foi adicionada. [Leia mais](https://helpx.adobe.com/campaign/kb/triggers-and-campaign.html)
+Experience Cloud Triggers: uma nota técnica sobre como configurá-la e usá-la com o Adobe Campaign foi adicionada. [Leia mais](https://helpx.adobe.com/br/campaign/kb/triggers-and-campaign.html)
 
 O Guia do Fluxo de Trabalho foi reorganizado e estendido. Descubra com facilidade como [criar](https://docs.campaign.adobe.com/doc/AC/en/WKF__General_operation_Building_a_workflow.html) e [executar](https://docs.campaign.adobe.com/doc/AC/en/WKF__General_operation_Executing_a_workflow.html) um workflow, como [direcionar](https://docs.campaign.adobe.com/doc/AC/en/WKF__General_operation_Targeting_data.html) e [gerenciar](https://docs.campaign.adobe.com/doc/AC/en/WKF__General_operation_Targeting_data.html#Data_Management) os dados, como [importar dados](https://docs.campaign.adobe.com/doc/AC/en/WKF__General_operation_Importing_data.html) e como usar os dados do fluxo de trabalho para [atualizar o banco de dados](https://docs.campaign.adobe.com/doc/AC/en/WKF__General_operation_How_to_use_workflow_data.html#Updating_the_database) ou [enviar deliveries](https://docs.campaign.adobe.com/doc/AC/en/WKF__General_operation_How_to_use_workflow_data.html#Delivering_via_a_workflow).
 
 Um exemplo de [workflow de importação](https://docs.campaign.adobe.com/doc/AC/en/WKF__General_operation_How_to_use_workflow_data.html#Delivering_via_a_workflow) criado após as [práticas recomendadas de importação](https://docs.campaign.adobe.com/doc/AC/en/WKF__General_operation_Importing_data.html#Import_best_practices) está disponível.
 O guia de instalação foi atualizado para essa nova versão. [Leia mais](https://docs.campaign.adobe.com/doc/AC/en/INS_Architecture_and_hosting_models_General_architecture.html)
 
-A matriz de Compatibilidade foi atualizada. [Leia mais](https://helpx.adobe.com/campaign/kb/compatibility-matrix.html)
+A matriz de Compatibilidade foi atualizada. [Leia mais](https://helpx.adobe.com/br/campaign/kb/compatibility-matrix.html)
 
 Os recipients obtêm valor agregado ao incluir cupons em seus deliveries de email. [Leia mais](https://docs.campaign.adobe.com/doc/AC/en/DLV_Personalizing_deliveries_Personalized_coupons.html)
 
