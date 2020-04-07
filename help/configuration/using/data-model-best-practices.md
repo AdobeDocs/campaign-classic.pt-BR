@@ -1,6 +1,6 @@
 ---
-title: Using the Adobe Campaign Classic Recipient table
-description: Learn how to use the out-of-the-box recipient table in Adobe Campaign Classic when designing your data model.
+title: Uso da tabela Adobe Campaign Classic Recipient
+description: Saiba como usar a tabela de recipient pronta para uso no Adobe Campaign Classic ao projetar seu modelo de dados.
 page-status-flag: never-activated
 uuid: faddde15-59a1-4d2c-8303-5b3e470a0c51
 contentOwner: sauviat
@@ -13,7 +13,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 239272386b709f81d1e6898a68b9b3552ddeb9b7
+source-git-commit: 8c71f54b68558178171fa30601aebf5e638db37f
 
 ---
 
@@ -22,21 +22,21 @@ source-git-commit: 239272386b709f81d1e6898a68b9b3552ddeb9b7
 
 Este documento descreve as principais recomendações ao projetar seu modelo de dados de Adobe Campaign.
 
-For a better understanding of Campaign built-in tables and their interaction, refer to the [Campaign Classic data model](../../configuration/using/about-data-model.md) section.
+Para obter uma melhor compreensão das tabelas integradas de Campanha e de suas interações, consulte a seção do modelo [de dados de](../../configuration/using/about-data-model.md) Campaign Classic.
 
-Read out this [documentation](../../configuration/using/about-schema-reference.md) to get started with Campaign schemas. Learn how to configure extension schemas in order to extend the conceptual data model of the Adobe Campaign database in this [document](../../configuration/using/about-schema-edition.md).
+Leia esta [documentação](../../configuration/using/about-schema-reference.md) para começar a usar schemas de Campanha. Saiba como configurar schemas de extensão para estender o modelo de dados conceituais do banco de dados do Adobe Campaign neste [documento](../../configuration/using/about-schema-edition.md).
 
 ## Visão geral {#overview}
 
-O sistema de Adobe Campaign é extremamente flexível e pode ser estendido além da implementação inicial. However, while possibilities are infinite, it is critical to make wise decisions and build strong foundations to start designing your data model.
+O sistema de Adobe Campaign é extremamente flexível e pode ser estendido além da implementação inicial. No entanto, embora as possibilidades sejam infinitas, é fundamental tomar decisões sábias e criar bases fortes para o start do design de seu modelo de dados.
 
-This document provides common use cases and best practices to learn how to architect properly your Adobe Campaign tool.
+Este documento fornece casos de uso comuns e práticas recomendadas para aprender como arquitetar corretamente sua ferramenta Adobe Campaign.
 
 ## Arquitetura do modelo de dados {#data-model-architecture}
 
-Adobe Campaign Standard is a powerful cross-channel campaign management system that can help you align your online and offline strategies to create personalized customer experiences.
+O Adobe Campaign Standard é um poderoso sistema de gestões de campanha entre canais que pode ajudá-lo a alinhar suas estratégias online e offline para criar experiências personalizadas de clientes.
 
-### Customer-centric approach {#customer-centric-approach}
+### Abordagem centrada no cliente {#customer-centric-approach}
 
 Enquanto a maioria dos provedores de serviço de e-mail está se comunicando com os clientes por meio de uma abordagem centrada na lista, o Adobe Campaign depende de um banco de dados relacional para aproveitar uma visualização mais ampla dos clientes e seus atributos.
 
@@ -141,21 +141,25 @@ Há dois tipos de sequências:
 * **Compartilhado**: mais de uma tabela escolheria a ID da mesma sequência. Isso significa que se um id &#39;X&#39; for usado por uma tabela, nenhuma outra tabela que compartilhasse a mesma sequência teria um registro com esse id &#39;X&#39;. **XtkNewId** é a sequência compartilhada padrão disponível no Adobe Campaign.
 * **Dedicado**: somente uma tabela está escolhendo suas ids da sequência. O nome da sequência geralmente contém o nome da tabela.
 
-A sequência é um valor inteiro de 32 bits, com um número máximo finito de valores disponíveis: 2,14 bilhões. Depois de atingir o valor máximo, a sequência volta para 0, para reciclar IDs. Se os dados antigos não tiverem sido removidos, o resultado será uma violação de chave exclusiva, que se torna um bloqueador para a integridade e uso da plataforma. O Adobe Campaign não seria capaz de enviar comunicações (quando isso afetasse a tabela de registro de delivery) e os desempenhos seriam altamente afetados.
+>[!IMPORTANT]
+>
+>A sequência é um valor inteiro de 32 bits, com um número máximo finito de valores disponíveis: 2,14 bilhões. Depois de atingir o valor máximo, a sequência volta para 0, para reciclar IDs.
+>
+>Se os dados antigos não tiverem sido removidos, o resultado será uma violação de chave exclusiva, que se torna um bloqueador para a integridade e uso da plataforma. O Adobe Campaign não seria capaz de enviar comunicações (quando isso afetasse a tabela de registro de delivery) e os desempenhos seriam altamente afetados.
 
-Portanto, um cliente enviando 6 bilhões de emails anualmente, com um período de retenção de 180 dias para seus registros, perderia as ids em 4 meses. To prevent such a challenge, make sure to have purge settings according to your volumes. Para obter mais informações, consulte [esta seção](#data-retention).
+Portanto, um cliente enviando 6 bilhões de emails anualmente, com um período de retenção de 180 dias para seus registros, perderia as ids em 4 meses. Para evitar esse desafio, certifique-se de ter configurações de expurgação de acordo com seus volumes. Para obter mais informações, consulte [esta seção](#data-retention).
 
-When a custom table is being created in Adobe Campaign with a primary key as an autoPK, a custom dedicated sequence should systematically be associated with that table.
+Quando uma tabela personalizada é criada no Adobe Campaign com uma chave primária como um autoPK, uma sequência dedicada personalizada deve ser sistematicamente associada a essa tabela.
 
-By default, a custom sequence will have values ranging from +1,000 to +2.1BB. Tecnicamente, é possível obter uma faixa completa de 4BB, habilitando ids negativos. Isso deve ser usado com cuidado e um id será perdido ao passar de números negativos para positivos: o registro 0 normalmente é ignorado pelo Adobe Campaign Classic em query SQL gerados.
+Por padrão, uma sequência personalizada terá valores que variam de +1.000 a +2,1BB. Tecnicamente, é possível obter uma faixa completa de 4BB, habilitando ids negativos. Isso deve ser usado com cuidado e um id será perdido ao passar de números negativos para positivos: o registro 0 normalmente é ignorado pelo Adobe Campaign Classic em query SQL gerados.
 
 **Tópicos relacionados:**
-* Para obter mais informações sobre o recurso de geração **automática de** Sequência, consulte este [documento](https://helpx.adobe.com/campaign/kb/sequence_auto_generation.html).
-* For more on sequences exhaustion, watch this [video](https://helpx.adobe.com/customer-care-office-hours/campaign/sequences-exhaustion-campaign-classic.html).
+* Para obter mais informações sobre o recurso de geração **automática de** Sequência, consulte este [documento](https://helpx.adobe.com/br/campaign/kb/sequence_auto_generation.html).
+* Para obter mais informações sobre a exaustão das sequências, assista a este [vídeo](https://helpx.adobe.com/customer-care-office-hours/campaign/sequences-exhaustion-campaign-classic.html).
 
 ## Índices {#indexes}
 
-Indexes are essential for performance. Quando você declara uma chave no schema, a Adobe criará automaticamente um índice nos campos da chave. Você também pode declarar mais índices para query que não usam a chave.
+Os índices são essenciais para o desempenho. Quando você declara uma chave no schema, a Adobe criará automaticamente um índice nos campos da chave. Você também pode declarar mais índices para query que não usam a chave.
 
 A Adobe recomenda definir índices adicionais, pois pode melhorar o desempenho.
 
@@ -203,75 +207,75 @@ A tabela a seguir mostra em quais casos os três índices descritos abaixo são 
 | Nome igual a &quot;Johnny&quot; E sobrenome igual a &quot;Smith&quot; | Usado | Não usado | Não usado | Como ambos os atributos são pesquisados no mesmo query, somente o índice que combina ambos os atributos será usado. |
 | O sobrenome é igual a &quot;Smith&quot; | Não usado | Não usado | Usado | A ordem dos atributos no índice é considerada. Se você não corresponder a essa ordem, o índice pode não ser usado. |
 | start de nome com &quot;Joh&quot; | Usado | Usado | Não usado | &quot;Pesquisa à esquerda&quot; habilitará índices. |
-| First name ends with &quot;nny&quot; | Não usado | Não usado | Não usado | A &quot;pesquisa correta&quot; desativará os índices e uma verificação completa será realizada. Alguns tipos de índice específicos podem lidar com esse caso de uso, mas não estão disponíveis por padrão no Adobe Campaign. |
+| O nome termina com &quot;nny&quot; | Não usado | Não usado | Não usado | A &quot;pesquisa correta&quot; desativará os índices e uma verificação completa será realizada. Alguns tipos de índice específicos podem lidar com esse caso de uso, mas não estão disponíveis por padrão no Adobe Campaign. |
 | O nome contém &quot;John&quot; | Não usado | Não usado | Não usado | Esta é uma combinação de pesquisas &quot;esquerda&quot; e &quot;direita&quot;. Por causa do último, isso desativará os índices e uma verificação completa será realizada. |
-| O nome é igual a &quot;john&quot; | Não usado | Não usado | Não usado | Os índices fazem distinção entre maiúsculas e minúsculas. To make it non case-sensitive, you should create a specific index that includes an SQL function like &quot;upper(firstname)&quot;. Você deve fazer o mesmo com outras transformações de dados, como &quot;unaccent(firstname)&quot;. |
+| O nome é igual a &quot;john&quot; | Não usado | Não usado | Não usado | Os índices fazem distinção entre maiúsculas e minúsculas. Para torná-la não diferencia maiúsculas de minúsculas, você deve criar um índice específico que inclua uma função SQL como &quot;top(firstname)&quot;. Você deve fazer o mesmo com outras transformações de dados, como &quot;unaccent(firstname)&quot;. |
 
 ## Links e cardinalidade {#links-and-cardinality}
 
 ### Links {#links}
 
-Beware of the &quot;own&quot; integrity on large tables. Deleting records that have wide tables in &quot;own&quot; integrity can stop the instance. The table is locked, and the deletions are made one by one. So it&#39;s best to use &quot;neutral&quot; integrity on child tables that have large volumes.
+Cuidado com a integridade &quot;própria&quot; das grandes tabelas. A exclusão de registros com tabelas largas na integridade &quot;própria&quot; pode interromper a instância. A tabela está bloqueada e as exclusões são feitas uma por uma. Portanto, é melhor usar a integridade &quot;neutra&quot; em tabelas-filho que têm grandes volumes.
 
-Declaring a link as an external join is not good for performance. The zero-id record emulates the external join functionality. Não é necessário declarar joins externos se o link usar o autopk.
+Declarar um link como uma junção externa não é bom para o desempenho. O registro de id zero emula a funcionalidade de junção externa. Não é necessário declarar joins externos se o link usar o autopk.
 
-While it is possible to join any table in a workflow, Adobe recommends defining common links between resources directly in the data structure definition.
+Embora seja possível associar qualquer tabela em um fluxo de trabalho, a Adobe recomenda definir links comuns entre recursos diretamente na definição da estrutura de dados.
 
-Link should be defined in alignment with the actual data in your tables. A wrong definition could impact data retrieved via links, for example unexpectedly duplicating records.
+O link deve ser definido de acordo com os dados reais em suas tabelas. Uma definição incorreta poderia afetar os dados recuperados por meio de links, por exemplo, duplicando registros inesperadamente.
 
-Name your link consistently with the table name: the link name should help understand what the distant table is.
+Dê um nome consistente ao seu link com o nome da tabela: o nome do link deve ajudar a entender o que é a tabela distante.
 
-Do not name a link with “id” as a suffix. For example, name it “transaction” rather than “transactionId”.
+Não nomeie um link com &quot;id&quot; como sufixo. Por exemplo, nomeie-a como &quot;transaction&quot; em vez de &quot;transactionId&quot;.
 
-By default, Adobe Campaign will create a link using the primary key of the external table. For more clarity, it is preferable to explicitly define the join in the link definition.
+Por padrão, o Adobe Campaign criará um link usando a chave primária da tabela externa. Para maior clareza, é preferível definir explicitamente a junção na definição do link.
 
 Um índice será adicionado aos atributos usados em um link.
 
-The   created-by and last-modified-by links are present in many tables. É possível desativar o índice usando o atributo noDbIndex no link, se essas informações não estiverem sendo usadas pela empresa.
+Os links criados por e modificados por último estão presentes em muitas tabelas. É possível desativar o índice usando o atributo noDbIndex no link, se essas informações não estiverem sendo usadas pela empresa.
 
-### Cardinality {#cardinality}
+### Cardinalidade {#cardinality}
 
-When you design a link, make sure that the target record is unique when a 1-1 relationship has been declared. Otherwise the join may return multiple records when only one is expected. This results in errors during delivery preparation when &quot;the query returns more rows than expected&quot;. Set the link name to the same name as the target schema.
+Ao projetar um link, verifique se o registro do público alvo é exclusivo quando uma relação 1-1 for declarada. Caso contrário, a junção poderá retornar vários registros quando apenas um for esperado. Isso resulta em erros durante a preparação do delivery quando &quot;o query retorna mais linhas do que o esperado&quot;. Defina o nome do link com o mesmo nome do schema do público alvo.
 
-Define a link with a cardinality (1-N) in the schema on the (1) side. For example, the relation Recipient (1) – (N) Transaction should be defined in the transaction schema.
+Defina um link com uma cardinalidade (1-N) no schema do lado (1). Por exemplo, o Recipient de relação (1) - (N) A transação deve ser definida no schema de transação.
 
-Note that a reverse cardinality of a link is (N) by default. It is possible to define a link (1-1) by adding the attribute revCardinality=&#39;single&#39; to the link definition.
+Observe que a cardinalidade reversa de um link é (N) por padrão. É possível definir um link (1-1) adicionando o atributo revCardinality=&#39;single&#39; à definição do link.
 
-If the reverse link should not be visible to the user, you can hide it with the link definition revLink=&#39;_NONE_&#39;. A good use case for this is to define a link from recipient to the last transaction completed for example. You only need to see the link from recipient to the last transaction and no reverse link is required to be visible from the transaction table.
+Se o link reverso não deve estar visível para o usuário, você pode ocultá-lo com a definição do link revLink=&#39;_NONE_&#39;. Um bom caso de uso para isso é definir um link do recipient para a última transação concluída, por exemplo. Você só precisa ver o link do recipient para a última transação e nenhum link reverso é necessário para ficar visível da tabela de transação.
 
-Links performing an external join (1-0..1) should be used with care as it will impact the system performance.
+Os links que executam uma junção externa (1-0.1) devem ser usados com cuidado, pois isso afetará o desempenho do sistema.
 
 ## Retenção de dados - Limpeza e expurgação {#data-retention}
 
-Adobe Campaign não é um data warehouse nem uma ferramenta de relatórios. Therefore, to ensure good performance of the Adobe Campaign solution, database growth should stay under control. To achieve this, following some of the best practices below may help.
+Adobe Campaign não é um data warehouse nem uma ferramenta de relatórios. Portanto, para garantir um bom desempenho da solução de Adobe Campaign, o crescimento do banco de dados deve permanecer sob controle. Para isso, seguir algumas das práticas recomendadas abaixo pode ajudar.
 
-By default, Adobe Campaign delivery and tracking logs have a retention duration of 180 days. A cleanup process runs to remove any log older than that.
+Por padrão, o delivery e os logs de rastreamento têm uma duração de retenção de 180 dias. Um processo de limpeza é executado para remover qualquer log anterior.
 
-* If you want to keep logs longer, this decision should be taken carefully depending on the database size and the volume of messages sent. As a reminder, Adobe Campaign sequence is a 32-bit integer.
-* It is recommended not to have more than 1 billion records at a time in these tables (about 50% of the 2.14 billion ids available) to limit risks of consuming all the available ids. This will require for some customers to lower the retention duration below 180 days.
+* Se desejar manter os registros por mais tempo, essa decisão deve ser tomada cuidadosamente dependendo do tamanho do banco de dados e do volume de mensagens enviadas. Como lembrete, a sequência de Adobe Campaign é um número inteiro de 32 bits.
+* Recomenda-se não ter mais de 1 bilhão de registros de cada vez nessas tabelas (cerca de 50% dos 2,14 bilhões de ids disponíveis) para limitar os riscos de consumo de todas as ids disponíveis. Isso exigirá que alguns clientes reduzam a duração da retenção para menos de 180 dias.
 
 >[!IMPORTANT]
 >
->Custom tables are not purged with the standard cleanup process. While this might not be required on day one, do not forget to build a purge process for your custom tables as this could lead to performance challenges.
+>Tabelas personalizadas não são expurgadas com o processo de limpeza padrão. Embora isso não seja necessário no primeiro dia, não se esqueça de criar um processo de limpeza para suas tabelas personalizadas, pois isso pode levar a desafios de desempenho.
 
-There are a few solutions to minimize the need of records in Adobe Campaign:
-* Export the data in a data warehouse outside of Adobe Campaign.
-* Generate aggregated values that will use less space while being sufficient for your marketing practices. For example, you do not need the full customer transaction history in Adobe Campaign to keep track of the last purchases.
+Existem algumas soluções para minimizar a necessidade de registros no Adobe Campaign:
+* Exporte os dados em um data warehouse fora do Adobe Campaign.
+* Gere valores agregados que usarão menos espaço enquanto forem suficientes para suas práticas de marketing. Por exemplo, você não precisa do histórico completo de transações do cliente no Adobe Campaign para rastrear as últimas compras.
 
-You can declare the &quot;deleteStatus&quot; attribute in a schema. It is more efficient to mark the record as deleted, then postpone the deletion in the cleanup task.
+Você pode declarar o atributo &quot;deleteStatus&quot; em um schema. É mais eficiente marcar o registro como excluído e depois adiar a exclusão na tarefa de limpeza.
 
-## Performance {#performance}
+## Desempenho {#performance}
 
 Para garantir melhor desempenho a qualquer momento, siga as práticas recomendadas abaixo.
 
 ### Recomendações gerais {#general-recommendations}
 
-* Avoid using operations like “CONTAINS” in queries. Se você sabe o que é esperado e deseja filtrar, aplique a mesma condição com um &quot;EQUAL TO&quot; ou outros operadores de filtro específicos.
+* Evite usar operações como &quot;CONTAINS&quot; em query. Se você sabe o que é esperado e deseja filtrar, aplique a mesma condição com um &quot;EQUAL TO&quot; ou outros operadores de filtro específicos.
 * Evite unir a campos não indexados ao criar dados em workflows.
 * Tente garantir que processos como importação e exportação ocorram fora do horário comercial.
 * Certifique-se de que existe uma programação para todas as atividades diárias e cumpra a programação.
 * Se um ou alguns dos processos diários falharem e se for obrigatório executá-lo no mesmo dia, verifique se não há processos conflitantes em execução quando o processo manual é iniciado, pois isso pode afetar o desempenho do sistema.
-* Make sure none of the daily campaign is run during the import process or when any manual process is executed.
+* Verifique se nenhuma campanha diária é executada durante o processo de importação ou quando qualquer processo manual é executado.
 * Use uma ou várias tabelas de referência em vez de duplicar um campo em cada linha. Ao usar pares de chave/valor, é preferível escolher uma chave numérica.
 * Uma string curta permanece aceitável. Caso as tabelas de referências já estejam em vigor em um sistema externo, reutilizar o mesmo facilitará a integração de dados com o Adobe Campaign.
 
@@ -320,7 +324,7 @@ Aqui está um exemplo:
 ![](assets/transaction-table-example.png)
 
 Neste exemplo:
-* As tabelas *Transação* e Item *de* Transação são grandes: mais de 10 milhões.
+* As tabelas *Transação* e Item ** de Transação são grandes: mais de 10 milhões.
 * As tabelas *Produto* e *Loja* são menores: menos de 10.000.
 * A etiqueta do produto e a referência foram colocadas na tabela *Produto* .
 * A tabela Item *de* Transação tem apenas um link para a tabela *Produto* , que é numérica.
