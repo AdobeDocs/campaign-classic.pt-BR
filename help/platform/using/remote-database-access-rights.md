@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 17eed4f4ead8ce4f424d4fb2681269e888229692
+source-git-commit: 6143f23e05f4528a9d76aece3a6e41165e2f95d4
 
 ---
 
@@ -46,7 +46,7 @@ Em geral, são necessários os seguintes direitos:
 * **READ Data**: acesso somente leitura a tabelas com dados do cliente,
 * **READ &#39;MetaData&#39;**: acesso aos catálogos de dados do servidor para obter a estrutura da tabela,
 * **LOAD**: carregamento em massa em tabelas de trabalho (necessário ao trabalhar em coleções e associações),
-* **CREATE/DROP** para **TABLE/INDEX/PROCEDURE/FUNCTION**,
+* **CRIAR/SOLTAR** para **TABELA/ÍNDICE/PROCEDIMENTO/FUNÇÃO** (apenas para tabelas de trabalho geradas pelo Adobe Campaign),
 * **EXPLAIN** (recomendado): para monitorar desempenhos em caso de problemas,
 * **WRITE Data** (dependendo do cenário de integração).
 
@@ -56,11 +56,11 @@ O administrador do banco de dados precisa combinar esses direitos com os direito
 
 |   | Floco de neve | Redshift | Oracle | SQLServer | PostgreSQL | MySQL |
 |:-:|:-:|:-:|:-:|:-:|:-:|:-:|
-| **Conexão com o banco de dados remoto** | USO EM WAREHOUSE E USO EM privilégios DE BANCO DE DADOS | Criar um usuário vinculado à conta AWS | privilégio CRIAR SESSÃO | Permissão CONNECT | Privilégio CONNECT | Criar um usuário vinculado a um host remoto que tenha TODOS OS PRIVILÉGIOS |
+| **Conexão com o banco de dados remoto** | USO NO WAREHOUSE, USO NO BANCO DE DADOS E USO NOS privilégios DO SCHEMA | Criar um usuário vinculado à conta AWS | privilégio CRIAR SESSÃO | Permissão CONNECT | Privilégio CONNECT | Criar um usuário vinculado a um host remoto que tenha TODOS OS PRIVILÉGIOS |
 | **Criação de tabelas** | privilégio CRIAR TABELA NO SCHEMA | CRIAR privilégio | Privilégio CRIAR TABELA | permissão CRIAR TABELA | CRIAR privilégio | CRIAR privilégio |
 | **Criação de índices** | N/A | CRIAR privilégio | ÍNDICE ou privilégio CRIAR QUALQUER ÍNDICE | permissão ALTER | CRIAR privilégio | Privilégio INDEX |
 | **Criação de funções** | CRIAR FUNÇÃO NO privilégio de SCHEMA | USO EM IDIOMA - privilégio de plug-in para poder chamar scripts python externos | privilégio CRIAR PROCEDIMENTO ou CRIAR QUALQUER PROCEDIMENTO | permissão CRIAR FUNÇÃO | Privilégio de uso | Privilégio CRIAR ROTINA |
-| **Criação de procedimentos** | CRIAR PROCEDIMENTO SOBRE privilégio de SCHEMA | USO EM IDIOMA - privilégio de plug-in para poder chamar scripts python externos | privilégio CRIAR PROCEDIMENTO ou CRIAR QUALQUER PROCEDIMENTO | permissão CRIAR PROCEDIMENTO | Privilégio de USO (os procedimentos são funções) | Privilégio CRIAR ROTINA |
+| **Criação de procedimentos** | N/A | USO EM IDIOMA - privilégio de plug-in para poder chamar scripts python externos | privilégio CRIAR PROCEDIMENTO ou CRIAR QUALQUER PROCEDIMENTO | permissão CRIAR PROCEDIMENTO | Privilégio de USO (os procedimentos são funções) | Privilégio CRIAR ROTINA |
 | **Remoção de objetos (tabelas, índices, funções, procedimentos)** | Propriedade do objeto | Possuir o objeto ou ser um superusuário | SOLTE QUALQUER privilégio &lt; object > | permissão ALTER | Tabela: proprietário da tabela Índice: propriedade da função index: propriedade da função | Privilégio DROP |
 | **Monitoramento de execuções** | Privilégio MONITOR no objeto desejado | Nenhum privilégio necessário para usar o comando EXPLAIN | INSERIR e SELECIONAR privilégio e privilégio necessário para executar a instrução em que o PLANO EXPLAIN se baseia | permissão SHOWPLAN | Nenhum privilégio necessário para usar a instrução EXPLAIN | SELECIONAR privilégio |
 | **Gravação de dados** | Privilégios INSERT e/ou UPDATE (dependendo da operação de gravação) | Privilégios INSERIR e UPDATE | INSERIR e ATUALIZAR ou INSERIR e ATUALIZAR QUAISQUER privilégios de TABELA | Permissões INSERIR e ATUALIZAR | Privilégios INSERIR e UPDATE | Privilégios INSERIR e UPDATE |
