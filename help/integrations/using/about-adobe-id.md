@@ -14,8 +14,8 @@ discoiquuid: c988362b-432e-4f9f-8d36-00b3d0015756
 index: y
 internal: n
 snippet: y
-translation-type: ht
-source-git-commit: 0745b9c9d72538b8573ad18ff4054ecf788905f2
+translation-type: tm+mt
+source-git-commit: 0a4272ae13b469c7c17b8c3afa9748cbfbcf07ff
 
 ---
 
@@ -29,9 +29,17 @@ Usuários do Campaign pode se conectar ao Adobe Campaign usando sua Adobe ID. Es
 * Política de gerenciamento da segurança de senhas.
 * Uso de contas de Federated ID (provedor de ID externo).
 
-Para obter mais informações sobre os diferentes tipos de Adobe IDs, consulte: [https://helpx.adobe.com/en/enterprise/help/identity.html](https://helpx.adobe.com/br/enterprise/help/identity.html)
+O sistema de gerenciamento de identidade da Adobe ajuda os administradores a criar e gerenciar o acesso do usuário aos aplicativos e serviços. Para obter mais informações sobre os diferentes tipos de Adobe IDs, consulte [esta página](https://helpx.adobe.com/enterprise/using/identity.html).
 
 >[!CAUTION]
 >
->A implementação IMS é estritamente reservada para os administradores técnicos da Adobe. A implementação IMS é um processo complexo que pode levar algum tempo.
+>A implementação IMS é estritamente reservada para os administradores técnicos da Adobe. A implementação do IMS é um processo complexo que pode ser longo.
+
+## Tópicos relacionados
+
+| Páginas úteis | Recursos adicionais |
+|---|---|
+| [Configuração de IMS](../../integrations/using/configuring-ims.md) | [Perguntas frequentes da Experience Cloud](https://docs.adobe.com/content/help/en/core-services/interface/manage-users-and-products/faq.html) |
+| [Implementação de IMS](../../integrations/using/implementing-ims.md) | [Gerenciamento de acesso](../../platform/using/access-management.md) |
+| [Solução de problemas de IMS](../../integrations/using/ims-troubleshooting.md) | [Instalação de pacotes de Campanha](../../installation/using/installing-campaign-standard-packages.md) |
 
