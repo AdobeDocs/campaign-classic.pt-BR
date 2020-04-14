@@ -12,7 +12,7 @@ discoiquuid: null
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 10419ee0fb466bddd05ab67087ccdbfdda1e48c8
+source-git-commit: 79f8cc179fcbf9d537a1cc889b268a43202d7369
 
 ---
 
@@ -52,8 +52,8 @@ Os clientes são aconselhados a revisar se utilizam o recurso/funcionalidade em 
    <tr> 
    <td>Segurança SDK Javascript <br> </td>
    <td>decryptString<br> </td>
-   <td><p>Por motivos de segurança, a API descriptografptString não está mais disponível por padrão para novas instalações.</p> 
-   <p>No contexto de uma pós-atualização para 18.6 (e posterior), essa API não é mais ativada e foi substituída pela função decryptPassword.</p><br> </td>
+   <td><p>For security reasons, <em>decryptString</em> API is no longer available by default for new installations.</p> 
+   <p>In the context of a postupgrade to 18.6 (and later), this API is no longer activated, and has been replaced by the <em>decryptPassword</em> function.</p><br> </td>
   </tr> 
  </tbody> 
 </table>
@@ -125,10 +125,10 @@ Esta seção lista recursos e recursos que foram removidos do Campaign Standard.
    <tr> 
    <td>Documentação das APIs do Campaign - arquivo<br>jsapi.chm</td>
    <td>As APIs do Campaign Classic agora estão disponíveis em uma página dedicada. If you were using the jsapi.chm file, you should now refer to <a href="https://docs.adobe.com/content/help/en/campaign-classic/technicalresources/api/index.html">the new online version</a>.</td>
-   <td>&lt;19.1</td>
+   <td>19.1</td>
   </tr> 
   <tr> 
-   <td>Orquestração de Campanhas - Marketing preditivo</td>
+   <td>Orquestração de campanha - Marketing preditivo</td>
    <td>Uma grande parte dos recursos de marketing preditivo no Adobe Campaign Classic tem sido o consumo de modelos preditivos. Embora a atividade de fluxo de trabalho de marketing preditivo seja removida em uma versão futura, o Adobe Campaign continuará a oferecer suporte ao consumo e ao uso de modelos preditivos de fontes externas por meio de outras atividades de fluxo de trabalho.</td>
    <td>18.10</td>
   </tr> 
