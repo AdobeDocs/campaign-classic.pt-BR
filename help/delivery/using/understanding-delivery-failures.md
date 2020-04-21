@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 0932d0836c53b8dea715f471f9319603140c9950
+source-git-commit: 631e29bd6e59b8ae46084dee3a1d470916a2032b
 
 ---
 
@@ -255,7 +255,7 @@ Os emails de devolução podem ter o seguinte status de qualificação:
 * Para instâncias que usam o MTA aprimorado sem **Webhooks/EFS**, as **[!UICONTROL Inbound email]** regras também serão usadas para processar os e-mails de rejeição síncronos provenientes do MTA aprimorado, usando o mesmo endereço de e-mail para e-mails de rejeição assíncronos.
 >
 >
-Para obter mais informações sobre o MTA aprimorado do Adobe Campaign, consulte este [documento](https://helpx.adobe.com/br/campaign/kb/campaign-enhanced-mta.html).
+Para obter mais informações sobre o MTA aprimorado do Adobe Campaign, consulte este [documento](https://helpx.adobe.com/campaign/kb/acc-campaign-enhanced-mta.html).
 
 ### Regras de gestão de email {#email-management-rules}
 
@@ -291,7 +291,7 @@ Para obter mais informações sobre qualificação de envio de e-mails, consulte
 >
 >Para instalações hospedadas ou híbridas, se você atualizou para o MTA aprimorado e se sua instância tiver funcionalidade **Webhooks/EFS** , as **[!UICONTROL Inbound email]** regras não serão mais usadas para mensagens de erro de falha síncrona do delivery. Para obter mais informações, consulte [esta seção](#bounce-mail-qualification).
 >
->Para obter mais informações sobre o MTA aprimorado do Adobe Campaign, consulte este [documento](https://helpx.adobe.com/br/campaign/kb/campaign-enhanced-mta.html).
+>Para obter mais informações sobre o MTA aprimorado do Adobe Campaign, consulte este [documento](https://helpx.adobe.com/campaign/kb/acc-campaign-enhanced-mta.html).
 
 #### Gestão de domínio {#domain-management}
 
@@ -308,7 +308,7 @@ Se suas mensagens forem exibidas no Outlook com **[!UICONTROL on behalf of]** o 
 >
 >For hosted or hybrid installations, if you have upgraded to the Enhanced MTA, the **[!UICONTROL Domain management]** rules are no longer used. **A assinatura de autenticação de email DKIM (DomainKeys Identified Mail)** é feita pelo MTA aprimorado para todas as mensagens com todos os domínios. Ele não faz logon com a ID **do** remetente, **DomainKeys** ou **S/MIME** , a menos que especificado de outra forma no nível MTA aprimorado.
 >
->Para obter mais informações sobre o MTA aprimorado do Adobe Campaign, consulte este [documento](https://helpx.adobe.com/br/campaign/kb/campaign-enhanced-mta.html).
+>Para obter mais informações sobre o MTA aprimorado do Adobe Campaign, consulte este [documento](https://helpx.adobe.com/campaign/kb/acc-campaign-enhanced-mta.html).
 
 #### Gestão MX {#mx-management}
 
@@ -324,4 +324,4 @@ Para obter mais informações sobre gestão MX, consulte [esta seção](../../in
 >
 >Para instalações hospedadas ou híbridas, se você atualizou para o MTA aprimorado, as regras de capacidade do delivery **[!UICONTROL MX management]** não serão mais usadas. O MTA aprimorado usa regras MX próprias que permitem personalizar a capacidade por domínio com base na sua própria reputação histórica de email e no feedback em tempo real proveniente dos domínios em que você está enviando emails.
 >
->Para obter mais informações sobre o MTA aprimorado do Adobe Campaign, consulte este [documento](https://helpx.adobe.com/br/campaign/kb/campaign-enhanced-mta.html).
+>Para obter mais informações sobre o MTA aprimorado do Adobe Campaign, consulte este [documento](https://helpx.adobe.com/campaign/kb/acc-campaign-enhanced-mta.html).
