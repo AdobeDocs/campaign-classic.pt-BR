@@ -5,7 +5,7 @@ solution: Campaign Classic
 title: Documentação do produto Adobe Campaign Classic
 topic: Premium
 translation-type: tm+mt
-source-git-commit: ffaa4d4442448f9d30c4a1ef41b8bd73363088e0
+source-git-commit: 12c38d8ccf198b59ce93ee4155940612637b2856
 
 ---
 
@@ -15,6 +15,8 @@ source-git-commit: ffaa4d4442448f9d30c4a1ef41b8bd73363088e0
 ![](platform/using/assets/do-not-localize/banner_acc_doc.jpg)
 
 ## Novidades
+
+* **[Obtenha as Perguntas frequentes sobre suporte](https://helpx.adobe.com/campaign/kb/ac-support.html)**</br> Acesso, práticas recomendadas, recursos de ajuda e conecte-se aos especialistas em Campanhas e à equipe de Atendimento ao cliente
 
 * **[Conformidade com privacidade](https://helpx.adobe.com/br/campaign/kb/campaign-privacy.html)**<br/> Saiba como o Adobe Campaign pode ajudá-lo com sua conformidade com a privacidade
 
