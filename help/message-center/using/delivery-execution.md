@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: bc227c2da2e8b1a78714748809ad40bbcefe0458
+source-git-commit: 631e29bd6e59b8ae46084dee3a1d470916a2032b
 
 ---
 
@@ -26,7 +26,7 @@ source-git-commit: bc227c2da2e8b1a78714748809ad40bbcefe0458
 >
 >O MTA prioriza o processamento das mensagens transacionais ante qualquer outro delivery.
 
-Na instância de execução, depois que a fase de enriquecimento é concluída e um modelo de entrega é vinculado ao evento, a entrega é enviada. Todas as entregas são agrupadas na **[!UICONTROL Administration > Production > Message Center > Default > Deliveries]** pasta.
+Na instância de execução, depois que o estágio do enriquecimento é concluído e um template do delivery é vinculado ao evento, o delivery é enviado. All deliveries are grouped in the **[!UICONTROL Administration > Production > Message Center > Default > Deliveries]** folder.
 
 ![](assets/messagecenter_deliveries_execinstances_001.png)
 
@@ -38,4 +38,4 @@ Essa classificação poderá ser alterada nas propriedades do template de mensag
 
 >[!NOTE]
 >
->Para instalações hospedadas ou híbridas, se você tiver atualizado para o MTA aprimorado, todas as mensagens transacionais também poderão ser enviadas com o MTA aprimorado do Adobe Campaign para melhorar a capacidade de entrega, a taxa de transferência e o tratamento de rejeição. Todos os impactos são os mesmos das mensagens de marketing padrão e são detalhados no documento MTA [aprimorado do](https://helpx.adobe.com/campaign/kb/campaign-enhanced-mta.html) Adobe Campaign.
+>Para instalações hospedadas ou híbridas, se você tiver atualizado para o MTA aprimorado, todas as mensagens transacionais também poderão ser enviadas com o MTA aprimorado do Adobe Campaign para melhorar a capacidade de entrega, a taxa de transferência e o tratamento de rejeição. Todos os impactos são os mesmos das mensagens de marketing padrão e são detalhados no documento [MTA aprimorado do Adobe Campaign](https://helpx.adobe.com/campaign/kb/acc-campaign-enhanced-mta.html).
