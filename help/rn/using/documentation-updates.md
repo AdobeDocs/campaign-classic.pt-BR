@@ -13,7 +13,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 631e29bd6e59b8ae46084dee3a1d470916a2032b
+source-git-commit: c8910fdfd07bd835d456baca29710ea927ad20e5
 
 ---
 
@@ -40,7 +40,7 @@ Casos de uso do guia &quot;Automatizar com workflows&quot; foram reorganizados e
 
 As seções Qualificações [de e-mail de](../../delivery/using/understanding-delivery-failures.md#bounce-mail-qualification) rejeição e Regras [de gerenciamento de e-](../../delivery/using/understanding-delivery-failures.md#email-management-rules) mail foram aprimoradas com informações atualizadas.
 
-O artigo Adobe Campaign Enhanced MTA foi atualizado. Agora só se aplica ao Campaign Classic. [Leia mais](https://helpx.adobe.com/campaign/kb/acc-acc-campaign-enhanced-mta.html)
+O artigo Adobe Campaign Enhanced MTA foi atualizado. Agora só se aplica ao Campaign Classic. [Leia mais](https://helpx.adobe.com/campaign/kb/acc-campaign-enhanced-mta.html)
 
 ## Março de 2020 {#march-2020}
 
