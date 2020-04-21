@@ -13,7 +13,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 0291f464c2b4db51e1e56cefe83aa9e751e680a9
+source-git-commit: 631e29bd6e59b8ae46084dee3a1d470916a2032b
 
 ---
 
@@ -30,7 +30,7 @@ O Adobe Campaign verifica se um DNS reverso é fornecido para um endereço IP e 
 
 Um ponto importante na configuração da rede é verificar se um DNS reverso correto está definido para cada um dos endereços IP de mensagens de saída. Isso significa que, para determinado endereço IP, há um registro de DNS reverso (registro PTR) com um DNS correspondente (registro A) fazendo looping para o endereço IP inicial.
 
-A escolha de domínio para um DNS reverso tem impacto ao lidar com determinados ISPs. AOL, in particular, only accepts feedback loops with an address in the same domain as the reverse DNS (see [Feedback loop](#feedback-loop)).
+A escolha de domínio para um DNS reverso tem impacto ao lidar com determinados ISPs. A AOL, em particular, aceita apenas loops de comentários com um endereço no mesmo domínio que o DNS reverso (consulte [Loop de comentários](#feedback-loop)).
 
 Uma ferramenta está disponível para verificar a configuração de um domínio: [https://mxtoolbox.com/SuperTool.aspx](https://mxtoolbox.com/SuperTool.aspx).
 
@@ -38,9 +38,9 @@ Uma ferramenta está disponível para verificar a configuração de um domínio:
 
 As regras MX (Mail eXchanger) são as regras que gerenciam a comunicação entre um servidor de envio e um servidor de recebimento.
 
-Mais precisamente, eles são usados para controlar a velocidade na qual o MTA da campanha (Agente de transferência de mensagens) envia emails para cada domínio de email individual ou ISP (por exemplo, hotmail.com, comcast.net). Normalmente, essas regras se baseiam nos limites publicados pelos ISPs (por exemplo, não inclui mais de 20 mensagens por cada conexão SMTP).
+Mais precisamente, eles são usados para controlar a velocidade na qual o MTA da campanha (agente de transferência de mensagens) envia emails para cada domínio de email individual ou ISP (por exemplo, hotmail.com, comcast.net). Normalmente, essas regras se baseiam nos limites publicados pelos ISPs (por exemplo, não incluir mais de 20 mensagens por cada conexão SMTP).
 
-For more on MX management, refer to the [dedicated section](../../installation/using/email-deliverability.md#mx-configuration).
+Para obter mais informações sobre gestão MX, consulte a [seção dedicada](../../installation/using/email-deliverability.md#mx-configuration).
 
 ### TLS {#tls}
 
@@ -50,29 +50,29 @@ TLS (Transport Layer Security) é um protocolo de criptografia que pode ser usad
 
 ### SPF {#spf}
 
-O SPF (Sender Policy Framework) é um padrão de autenticação de email que permite ao proprietário de um domínio especificar quais servidores de email podem enviar emails em nome desse domínio. Este padrão usa o domínio no cabeçalho &quot;Caminho de retorno&quot; do email (também conhecido como o endereço &quot;Envelope de&quot;).
+O SPF (Sender Policy Framework) é um padrão de autenticação de email que permite ao proprietário de um domínio especificar quais servidores de email podem enviar emails em nome desse domínio. Este padrão usa o domínio no cabeçalho &quot;Return-Path&quot; do email (também conhecido como o endereço &quot;Envelope From&quot;).
 
 Uma ferramenta está disponível para verificar um registro SPF: [https://www.kitterman.com/spf/validate.html](https://www.kitterman.com/spf/validate.html)
 
-O SPF é uma técnica que, em certa medida, permite garantir que o nome de domínio usado em um email não seja falsificado. Quando uma mensagem é recebida de um domínio, o servidor DNS do domínio é consultado. A resposta é um registro curto (o registro SPF) que detalha quais servidores estão autorizados a enviar emails desse domínio. Partindo do princípio que somente o proprietário do domínio tem o meio de alterar esse registro, podemos considerar que essa técnica não permite que o endereço do remetente seja falsificado, pelo menos não a parte à direita do &quot;@&quot;.
+O SPF é uma técnica que, até certo ponto, permite que você verifique se o nome de domínio usado em um email não foi falsificado. Quando uma mensagem é recebida de um domínio, o servidor DNS do domínio é consultado. A resposta é um registro curto (o registro SPF) que detalha quais servidores estão autorizados a enviar emails desse domínio. Partindo do princípio que somente o proprietário do domínio tem o meio de alterar esse registro, podemos considerar que essa técnica não permite que o endereço do remetente seja falsificado, pelo menos não a parte à direita do &quot;@&quot;.
 
-Na especificação [final](https://www.rfc-editor.org/info/rfc4408)RFC 4408, dois elementos da mensagem são usados para determinar o domínio considerado como remetente: O domínio especificado pelo comando SMTP &quot;HELO&quot; (ou &quot;EHLO&quot;) e o domínio especificado pelo endereço do cabeçalho &quot;Return-Path&quot; (ou &quot;MAIL FROM&quot;), que também é o endereço de rejeição. As diferentes considerações possibilitam levar em conta apenas um desses valores; recomendamos garantir que ambas as fontes especifiquem o mesmo domínio.
+Na [especificação RFC 4408](https://www.rfc-editor.org/info/rfc4408) final, dois elementos da mensagem são usados para determinar o domínio considerado como remetente: o domínio especificado pelo comando SMTP &quot;HELO&quot; (ou &quot;EHLO&quot;) e o domínio especificado pelo endereço do cabeçalho &quot;Return-Path&quot; (ou &quot;MAIL FROM&quot;), que também é o endereço de devolução. As diferentes considerações possibilitam levar em conta apenas um desses valores; recomendamos garantir que ambas as fontes especifiquem o mesmo domínio.
 
 A verificação do SPF fornece uma avaliação da validade do domínio do remetente:
 
-* **Nenhum**: Não foi possível efetuar qualquer avaliação,
-* **Neutro**: O domínio consultado não permite a avaliação,
-* **Passar**: O domínio é considerado autêntico,
-* **Falha**: O domínio é forjado e a mensagem deve ser rejeitada,
-* **SoftFail**: O domínio é provavelmente forjado, mas a mensagem não deve ser rejeitada apenas com base neste resultado,
-* **TempError**: Um erro temporário parou a avaliação. A mensagem pode ser rejeitada,
+* **None**: Não foi possível executar nenhuma avaliação,
+* **Neutral**: O domínio consultado não habilita a avaliação,
+* **Pass**: O domínio é considerado autêntico,
+* **Fail**: O domínio é falso e a mensagem deve ser rejeitada,
+* **SoftFail**: O domínio provavelmente é falso, mas a mensagem não deve ser rejeitada exclusivamente com base neste resultado,
+* **TempError**: Um erro temporário interrompeu a avaliação. A mensagem pode ser rejeitada,
 * **PermError**: Os registros SPF do domínio são inválidos.
 
 Vale observar que os registros feitos no nível dos servidores DNS podem levar até 48 horas para serem levados em conta. Esse atraso depende da frequência com que os caches DNS dos servidores receptores são atualizados.
 
 ### DKIM {#dkim}
 
-A autenticação DKIM (DomainKeys Identified Mail) é uma sucessora do SPF e usa criptografia de chave pública que permite ao servidor de email de recebimento verificar se uma mensagem foi enviada pela pessoa ou entidade pela qual ela alega ter sido enviada e se o conteúdo da mensagem foi alterado entre o momento em que foi originalmente enviada (e o DKIM &quot;assinado&quot;) e o momento em que foi recebida. Normalmente, esse padrão usa o domínio no cabeçalho &quot;De&quot; ou &quot;Remetente&quot;. Para garantir o nível de segurança do DKIM, o 1024b é o tamanho de criptografia recomendado pelas Práticas recomendadas. As chaves DKIM inferiores não serão consideradas válidas pela maioria dos provedores de acesso.
+A autenticação DKIM (DomainKeys Identified Mail) é uma sucessora do SPF e usa criptografia de chave pública que permite ao servidor de email de recebimento verificar se uma mensagem foi enviada pela pessoa ou entidade pela qual alega ter sido enviada e se o conteúdo da mensagem foi alterado entre o momento em que foi originalmente enviada (e o DKIM &quot;assinado&quot;) e o momento em que foi recebida. Normalmente, esse padrão usa o domínio no cabeçalho &quot;From&quot; ou &quot;Sender&quot;. Para garantir o nível de segurança do DKIM, o 1024b é o tamanho de criptografia recomendado pelas Práticas Recomendadas. As chaves DKIM inferiores não serão consideradas válidas pela maioria dos provedores de acesso.
 
 O DKIM vem de uma combinação dos princípios de autenticação do DomainKeys, Yahoo! e Cisco Identified Internet Mail, e é usado para verificar a autenticidade do domínio emissor e garantir a integridade da mensagem.
 
@@ -80,9 +80,9 @@ O DKIM substituiu a autenticação **DomainKeys** .
 
 >[!IMPORTANT]
 >
->Para instalações hospedadas ou híbridas, se você atualizou para o MTA aprimorado, a assinatura de autenticação de email do DKIM é feita pelo MTA aprimorado. A assinatura DKIM pelo MTA nativo do Campaign será desativada na **[!UICONTROL Domain management]** tabela como parte da atualização do MTA aprimorada.
+>Para instalações hospedadas ou híbridas, se você atualizou para o MTA aprimorado, a assinatura de autenticação de email do DKIM é feita pelo MTA aprimorado. A assinatura do DKIM pelo MTA nativo do Campaign será desativada na tabela **[!UICONTROL Domain management]** como parte da atualização do MTA aprimorado.
 >
->Para obter mais informações sobre o Adobe Campaign Enhanced MTA, consulte este [documento](https://helpx.adobe.com/campaign/kb/campaign-enhanced-mta.html).
+>Para obter mais informações sobre o MTA aprimorado do Adobe Campaign, consulte este [documento](https://helpx.adobe.com/campaign/kb/acc-campaign-enhanced-mta.html).
 
 O uso de DKIM requer alguns pré-requisitos:
 
@@ -94,17 +94,17 @@ O uso de DKIM requer alguns pré-requisitos:
 >
 >* Se você configurou o DomainKeys para a instância do Adobe Campaign, basta selecionar **dkim** nas regras de tratamento do domínio. Caso contrário, siga as mesmas etapas de configuração (chave privada/pública) do DomainKeys.
 >* Não é necessário ativar DomainKeys e DKIM para o mesmo domínio, pois DKIM é uma versão aprimorada do DomainKeys.
->* Os seguintes domínios validam atualmente o DKIM: AOL, Gmail.
+>* Os domínios a seguir validam atualmente o DKIM: AOL, Gmail.
 
 
 ### DMARC {#dmarc}
 
-DMARC (Domain-based Message Authentication, Reporting and Conformance) é a forma mais recente de autenticação de email e depende da autenticação SPF e DKIM para determinar se um email é aprovado ou reprovado. O DMARC é único e poderoso de duas formas muito importantes:
+DMARC (Domain-based Message Authentication, Reporting and Conformance) é a forma mais recente de autenticação de email e depende da autenticação SPF e DKIM para determinar se um email é aprovado ou reprovado. O DMARC é único e eficiente de duas maneiras muito importantes:
 
 * Conformidade - permite que o remetente instrua os ISPs sobre o que fazer com qualquer mensagem que não seja autenticada (por exemplo, não aceitar).
-* Relatório - fornece ao remetente um relatório detalhado mostrando todas as mensagens que falharam na autenticação DMARC, juntamente com o domínio &quot;De&quot; e o endereço IP usados para cada uma. Isso permite que uma empresa identifique e-mails legítimos que estejam falhando na autenticação e precise de algum tipo de &quot;correção&quot; (por exemplo, adicionar endereços IP ao registro SPF), bem como as fontes e a prevalência de tentativas de phishing em seus domínios de e-mail.
+* Relatório - fornece ao remetente um relatório detalhado mostrando todas as mensagens que falharam na autenticação DMARC, juntamente com o domínio &quot;From&quot; e o endereço IP usados para cada uma. Isso permite que uma empresa identifique emails legítimos que estejam falhando na autenticação e precise de algum tipo de &quot;correção&quot; (por exemplo, adicionar endereços IP ao registro SPF), bem como as fontes e a prevalência de tentativas de phishing em seus domínios de email.
 
-O DMARC pode aproveitar os relatórios gerados por [250 ok](https://250ok.com/).
+O DMARC pode se beneficiar dos relatórios gerados por [250ok](https://250ok.com/).
 
 <!--#### Configuring the application {#configuring-the-application}
 
@@ -146,10 +146,10 @@ A implementação de um loop de comentários para uma instância requer:
 * Uma caixa de entrada dedicada à instância, que pode ser a caixa de entrada de devolução
 * Endereços IP de envio dedicados à instância
 
-A implementação de um ciclo de feedback simples no Adobe Campaign usa a funcionalidade de mensagem de rejeição. A caixa de entrada do loop de comentários é usada como uma caixa de entrada de devolução e uma regra é definida para detectar essas mensagens. Os endereços de email dos recipients que relataram a mensagem como spam serão adicionados à lista de quarentena.
+A implementação de um loop de comentários simples no Adobe Campaign usa a funcionalidade de mensagem de devolução. A caixa de entrada do loop de comentários é usada como uma caixa de entrada de devolução e uma regra é definida para detectar essas mensagens. Os endereços de email dos recipients que relataram a mensagem como spam serão adicionados à lista de quarentena.
 
 * Create or modify a bounce mail rule, **Feedback_loop**, in **[!UICONTROL Administration > Campaign Management > Non deliverables Management > Mail rule sets]** with the reason **Refused** and the type **Hard**.
-* If a mailbox has been defined specially for the feedback loop, define the parameters to access it by creating a new external Bounce Mails account in **[!UICONTROL Administration > Platform > External accounts]**.
+* Se uma caixa de entrada tiver sido definida especialmente para o loop de comentários, defina os parâmetros para acessá-la criando uma nova conta externa para emails devolvidos em **[!UICONTROL Administration > Platform > External accounts]**.
 
 O mecanismo fica operacional imediatamente para processar as notificações de reclamação. Para garantir que essa regra funcione corretamente, você pode desativar temporariamente as contas para que elas não coletem essas mensagens e verificar manualmente o conteúdo da caixa de entrada do loop de comentários. No servidor, execute os seguintes comandos:
 
@@ -162,7 +162,7 @@ Se você for forçado a usar um único endereço de loop de comentários para v�
 
 * Replicar as mensagens recebidas em quantas caixas de entrada houver instâncias,
 * Selecionar cada caixa de entrada para uma única instância,
-* Configure as instâncias para que elas processem apenas as mensagens que lhes dizem respeito: as informações da instância estão incluídas no cabeçalho ID da mensagem das mensagens enviadas pelo Adobe Campaign e, portanto, também estão localizadas nas mensagens de loop de feedback. Basta especificar o parâmetro **checkInstanceName** no arquivo de configuração da instância (por padrão, a instância não é verificada e isso pode fazer com que alguns endereços sejam colocados em quarentena incorretamente):
+* Configure as instâncias de modo que elas só processem as mensagens que lhes dizem respeito: as informações da instância são incluídas no cabeçalho Message-ID de mensagens enviadas pelo Adobe Campaign e, portanto, também estão localizadas nas mensagens de loop de comentários. Basta especificar o parâmetro **checkInstanceName** no arquivo de configuração da instância (por padrão, a instância não é verificada e isso pode fazer com que alguns endereços sejam colocados em quarentena incorretamente):
 
    ```
    <serverConf>
@@ -170,7 +170,7 @@ Se você for forçado a usar um único endereço de loop de comentários para v�
    </serverConf>
    ```
 
-O serviço de Disponibilidade do Adobe Campaign gerencia sua assinatura para serviços de ciclo de feedback para os seguintes ISPs: AOL, BlueTime, Comcast, Cox, EarthLink, FastMail, Gmail, Hotmail, HostedEmail, Libero, Mail.ru, MailTrust, OpenSRS, QQ, RoadRunner, Synacor, Telenor, Terra, UnitedOnline, EUA, XS4ALL, Yahoo, Yandex, Zoho.
+O serviço de Deliverability do Adobe Campaign gerencia sua subscrição para serviços de loop de comentários para os seguintes ISPs: AOL, BlueTime, Comcast, Cox, EarthLink, FastMail, Gmail, Hotmail, HostedEmail, Libero, Mail.ru, MailTrust, OpenSRS, QQ, RoadRunner, Synacor, Telenor, Terra, UnitedOnline, USA, XS4ALL, Yahoo, Yandex, Zoho.
 
 ## List-Unsubscribe {#list-unsubscribe}
 
@@ -211,7 +211,7 @@ O Gmail, o Outlook.com e o Microsoft Outlook são compatíveis com esse método 
 É possível implementar o **List-Unsubscribe** ao:
 
 * adicionar diretamente a linha de comando no template do delivery - consulte [esta seção](#adding-a-command-line-in-a-delivery-template),
-* ou criar uma regra de tipologia, consulte  [esta seção](#creating-a-typology-rule).
+* ou criar uma regra de tipologia, consulte [esta seção](#creating-a-typology-rule).
 
 ### Adição de uma linha de comando em um template do delivery {#adding-a-command-line-in-a-delivery-template}
 
@@ -227,7 +227,7 @@ A regra deverá conter o script que gera a linha de comando e deverá ser inclu�
 >
 >Recomendamos a criação de uma regra de tipologia: a funcionalidade List-Unsubscribe será adicionada automaticamente em cada email.
 
-1. Cancelar assinatura da lista: &lt;mailto:unsubscribe@domain.com>
+1. List-Unsubscribe: &lt;mailto:unsubscribe@domain.com>
 
    Clicar no link de **cancelamento de subscrição** abrirá o cliente de email padrão do usuário. Essa regra de tipologia deverá ser adicionada em uma tipologia usada para criar emails.
 
@@ -243,37 +243,37 @@ A regra deverá conter o script que gera a linha de comando e deverá ser inclu�
 
 ### SMTP {#smtp}
 
-O SMTP (Simple Mail Transfer Protocol, protocolo simples de transferência de correio) é um padrão da Internet para transmissão de email.
+O SMTP (Simple Mail Transfer Protocol) é um protocolo padrão da Internet para transmissão de email.
 
 The SMTP errors that aren&#39;t checked by a rule are listed in the **[!UICONTROL Administration]** > **[!UICONTROL Campaign Management]** > **[!UICONTROL Non deliverables Management]** > **[!UICONTROL Delivery log qualification]** folder. Essas mensagens de erro são interpretadas por padrão como erros de software inacessíveis. The most common errors must be identified and a corresponding rule added in **[!UICONTROL Administration]** > **[!UICONTROL Campaign Management]** > **[!UICONTROL Non deliverables Management]** > **[!UICONTROL Mail rule sets]** if you wish to correctly qualify the feedback from the SMTP servers. Sem isso, a plataforma executará tentativas desnecessárias (caso de usuários desconhecidos) ou colocará alguns recipients em quarentena de forma equivocada após determinado número de testes.
 
 ### IPs dedicados {#dedicated-ips}
 
-A Adobe fornece uma estratégia de IP dedicada para cada cliente com um IP ampliado para criar uma reputação e otimizar o desempenho do fornecimento.
+A Adobe fornece uma estratégia de IP dedicada para cada cliente com um IP ampliado para criar uma reputação e otimizar o desempenho de delivery.
 
 ## Certificação IP {#ip-certification}
 
-A certificação IP é um programa de práticas de envio e listagem de permissões que ajuda a garantir que os e-mails sejam recebidos sem serem bloqueados por filtros antisspam ou outros sistemas de bloqueio de e-mail.
+A certificação IP é um programa de práticas de envio e listagem de permissões que ajuda a garantir que os emails sejam recebidos sem serem bloqueados por filtros anti-spam ou outros sistemas de bloqueio de email.
 
 Atualmente, dois provedores oferecem certificação IP: Return Path e Certified Senders Alliance.
 
-Os remetentes certificados são adicionados às listas de permissões de e-mail usadas por provedores de caixa de correio global e empresas de segurança de e-mail. Essas listas de permissões comerciais são baseadas em um sistema que permite ao remetente ignorar completamente os filtros antisspam ou receber pontos incrementais à medida que ele entra no sistema.
+Os remetentes certificados são adicionados às listas de permissões de email usadas por provedores de caixa de correio global e empresas de segurança de email. As listas de permissões comerciais se baseiam em um sistema que permite que o remetente ignore os filtros anti-spam ou receba pontos incrementais ao entrarem no sistema.
 
-O programa de Certificação [de Caminho de](https://www.validity.com/products/returnpath/certification/) Retorno oferece vários benefícios, incluindo:
+O programa [Return Path Certification](https://www.validity.com/products/returnpath/certification/) oferece vários benefícios, incluindo:
 
-* Um aumento mensurável no posicionamento da caixa de entrada nos principais provedores de caixa de correio, como Microsoft, AOL, Yahoo, Gmail, Comcast, Orange, Mail.ru e muito mais
-* Idoneidade e tratamento favoritos em filtros críticos como Cloudmark, SpamAssassin e Cisco Ironport
-* Uma equipe de conformidade dedicada ao monitoramento 24 horas por dia, 7 dias por semana, fornecendo alertas de segurança e trabalhando com você na solução de quaisquer compromissos
-* Dados do provedor de caixa de correio que fornecem informações detalhadas sobre KPIs, posicionamento e desempenho de certificação
+* Um aumento mensurável no posicionamento da caixa de entrada nos principais provedores de caixa de correio, como Microsoft, AOL, Yahoo, Gmail, Comcast, Orange, Mail.ru e outros
+* Idoneidade e tratamento favoráveis em filtros críticos como Cloudmark, SpamAssassin e Cisco Ironport
+* Uma equipe de conformidade dedicada ao monitoramento 24 horas por dia, 7 dias por semana, fornecendo alertas de segurança e trabalhando com você na solução de quaisquer problemas
+* Dados do provedor de caixa de correio que fornecem informações detalhadas sobre KPIs, inserção e desempenho de certificação
 * Aquecimento de IP simplificado e mais rápido, incluindo maior reputação e reconhecimento ao migrar ou obter um novo endereço IP
 
-A Certificação da [Certificação da Aliança](https://certified-senders.org/certification-process/) de Remetentes Certificados oferece entre outros benefícios:
+A certificação da [Certified Senders Alliance](https://certified-senders.org/certification-process/) oferece, entre outros benefícios:
 
-* Certificação de remetentes de e-mails comerciais que podem cumprir altos padrões de qualidade
-* Melhoria na entrega e na entrega de emails comerciais para aumentar a taxa de colocação da caixa de entrada e reduzir a filtragem de spam
+* Certificação de remetentes de emails comerciais que podem cumprir altos padrões de qualidade
+* Melhoria no delivery e deliverability de emails comerciais para aumentar a taxa de inserção da caixa de entrada e reduzir a filtragem de spam
 * Proteção contra os riscos legais e financeiros através do pleno cumprimento das normas legais
-* Proteger a reputação através de avisos antecipados do Gabinete de Reclamações CSA e de relatórios diários de captura de spam
+* Proteção da reputação através de avisos antecipados do CSA Complaints Office e de relatórios diários de captura de spam
 
 Os ISPs podem usar livremente esses serviços e o número de ISPs pode variar dependendo da lista de permissões.
 
-No entanto, como cada vez mais ISPs criam seus filtros antisspam com base no comportamento de cada proprietário da caixa de entrada, em vez de analisar o conteúdo da mensagem propriamente dita, o uso da certificação IP não pode ser uma garantia de colocação da caixa de entrada ou até mesmo de entrega.
+No entanto, como cada vez mais ISPs criam seus filtros anti-spam com base no comportamento de cada proprietário da caixa de entrada, em vez de analisar o conteúdo da mensagem propriamente dita, o uso da certificação IP não pode ser uma garantia de inserção da caixa de entrada ou até mesmo do delivery.
