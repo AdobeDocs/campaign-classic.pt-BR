@@ -13,7 +13,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 75f195a11170b4213f930deed886f8bf5b0817bc
+source-git-commit: 631e29bd6e59b8ae46084dee3a1d470916a2032b
 
 ---
 
@@ -39,6 +39,8 @@ A seção que descreve o modelo de dados predefinido para Adobe Campaign foi atu
 Casos de uso do guia &quot;Automatizar com workflows&quot; foram reorganizados em seções temáticas. [Leia mais](../../workflow/using/using-the-local-approval-activity.md)
 
 As seções Qualificações [de e-mail de](../../delivery/using/understanding-delivery-failures.md#bounce-mail-qualification) rejeição e Regras [de gerenciamento de e-](../../delivery/using/understanding-delivery-failures.md#email-management-rules) mail foram aprimoradas com informações atualizadas.
+
+O artigo Adobe Campaign Enhanced MTA foi atualizado. Agora só se aplica ao Campaign Classic. [Leia mais](https://helpx.adobe.com/campaign/kb/acc-acc-campaign-enhanced-mta.html)
 
 ## Março de 2020 {#march-2020}
 
@@ -114,7 +116,7 @@ A seção Deliverability foi movida, reorganizada e aprimorada com conteúdo atu
 
 Uma nova seção que descreve as noções básicas do modelo de dados do Adobe Campaign Classic e como acessar a descrição de cada tabela está disponível. [Leia mais](../../configuration/using/about-data-model.md)
 
-O artigo sobre MTA aprimorado do Adobe Campaign foi atualizado com informações mais detalhadas sobre a instalação de um pacote de Tipologia específico em instâncias que não adicionam os cabeçalhos MTA aprimorados necessários a cada mensagem. [Leia mais](https://helpx.adobe.com/br/campaign/kb/campaign-enhanced-mta.html#impacts)
+O artigo sobre MTA aprimorado do Adobe Campaign foi atualizado com informações mais detalhadas sobre a instalação de um pacote de Tipologia específico em instâncias que não adicionam os cabeçalhos MTA aprimorados necessários a cada mensagem. [Leia mais](https://helpx.adobe.com/campaign/kb/acc-campaign-enhanced-mta.html#impacts)
 
 Os casos de uso relacionados ao design de consulta foram reorganizados em seções separadas. [Leia mais](../../workflow/using/querying-recipient-table.md)
 
@@ -152,7 +154,7 @@ Sistema de Mensagens Seguras de SMS (TLS) - [Leia mais](https://helpx.adobe.com/
 
 **Outras atualizações de documentação que vêm com a versão**
 
-A documentação MTA aprimorada do Adobe Campaign está disponível. [Leia mais](https://helpx.adobe.com/br/campaign/kb/campaign-enhanced-mta.html)
+A documentação MTA aprimorada do Adobe Campaign está disponível. [Leia mais](https://helpx.adobe.com/campaign/kb/acc-campaign-enhanced-mta.html)
 
 Uma nova seção foi adicionada sobre como solucionar problemas de um workflow que permanece no estado &quot;Start as soon as possible&quot; em uma campanha. [Leia mais](../../production/using/workflow-execution.md#start-as-soon-as-possible-in-campaigns)
 
