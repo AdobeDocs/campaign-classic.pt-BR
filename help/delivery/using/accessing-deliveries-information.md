@@ -14,8 +14,8 @@ discoiquuid: d2631c67-7781-4baa-b24e-e7921353d131
 index: y
 internal: n
 snippet: y
-translation-type: ht
-source-git-commit: 211556bbf023731ffeab2e90692410a852ab3555
+translation-type: tm+mt
+source-git-commit: 631e29bd6e59b8ae46084dee3a1d470916a2032b
 
 ---
 
@@ -24,7 +24,7 @@ source-git-commit: 211556bbf023731ffeab2e90692410a852ab3555
 
 ## Acessando a lista de deliveries {#accessing-the-list-of-deliveries}
 
-Para acessar a lista de deliveries, acesse o universo **[!UICONTROL Campaigns]** e clique no link **[!UICONTROL Deliveries]**.
+Para acessar a lista de , acesse o universo **[!UICONTROL Campaigns]** e clique no link **[!UICONTROL Deliveries]** Deliveries.
 
 Com o uso da [visualização do Explorer](../../platform/using/adobe-campaign-workspace.md#about-adobe-campaign-explorer), é possível acessar todas os entregas por meio do nó **[!UICONTROL Campaign management > Deliveries]** na árvore.
 
@@ -70,7 +70,7 @@ A lista suspensa ao lado do botão **[!UICONTROL Create]** permite filtrar os de
 
 ## Acessando o calendário de delivery {#accessing-the-delivery-calendar}
 
-Para acessar o calendário de delivery, acesse o universo **[!UICONTROL Campaign]** e clique no link **[!UICONTROL Campaign calendar]**. Este calendário exibe o detalhamento das campanhas ao longo do tempo. Você pode personalizar a exibição por mês, semana ou dia.
+To access the delivery calendar, go to the **[!UICONTROL Campaign]** universe and click the **[!UICONTROL Campaign calendar]** link. Este calendário exibe o detalhamento das campanhas ao longo do tempo. Você pode personalizar a exibição por mês, semana ou dia.
 
 ![](assets/s_ncs_user_interface_delivery04.png)
 
@@ -90,4 +90,4 @@ Você poderá escolher o intervalo de tempo para o qual a taxa de desempenho é 
 >
 >Para instalações hospedadas ou híbridas, se o MTA aprimorado estiver atualizado, a página **[!UICONTROL Delivery throughput]** não exibe mais a Taxa de transferência aos destinatários de email. Ele mostra a velocidade da Taxa de transferência para o relé das suas mensagens do Campaign para o MTA aprimorado.
 >
->Para obter mais informações sobre o MTA aprimorado do Adobe Campaign, consulte este [documento](https://helpx.adobe.com/br/campaign/kb/campaign-enhanced-mta.html).
+>Para obter mais informações sobre o MTA aprimorado do Adobe Campaign, consulte este [documento](https://helpx.adobe.com/campaign/kb/acc-campaign-enhanced-mta.html).
