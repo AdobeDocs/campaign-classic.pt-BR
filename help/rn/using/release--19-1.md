@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: eab67029d477044bc853f2a5c2de06ace70ebbee
+source-git-commit: ab6ce2fbe1ea9e2b2498c87471ad7813a082ebe6
 
 ---
 
@@ -74,7 +74,7 @@ _13 de agosto de 2019_
 
 ## Versão 19.1.4 - Build 9032{#release-19-1-4-build-9032}
 
-![](assets/do-not-localize/green_2.png) 29 **de abril de 2020**: nova compilação (9032@3a9dc9c) que inclui a seguinte correção:
+![](assets/do-not-localize/green_2.png) 29 **de abril de 2020**: nova compilação (9032@3a9dc9c) que inclui as seguintes correções:
 
 * Segurança aprimorada no rastreamento de links no email. Isso é ativado por padrão para todos os clientes. Um recurso de segurança adicional e aprimorado está disponível, que pode ser ativado ao acessar o Atendimento ao cliente. Mais detalhes sobre o recurso e as etapas para clientes não hospedados que o habilitam podem ser encontrados na lista [de verificação](https://helpx.adobe.com/campaign/kb/acc-security.html#signature-mechanism)Segurança e Privacidade.
 * Correção de um problema que impedia a exibição de imagens em delivery de linha. (NEO-23207)
