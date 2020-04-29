@@ -15,22 +15,22 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 62f63a47fae9bddf2303bbed18f1aadab4717245
+source-git-commit: eab67029d477044bc853f2a5c2de06ace70ebbee
 
 ---
 
 
 # Versão 19.1{#release-19-1}
 
-[Build upgrade](https://helpx.adobe.com/campaign/kb/acc-build-upgrade.html) | [Control Panel releases](https://docs.adobe.com/content/help/en/control-panel/using/release-notes.html) | [Documentation updates](../../rn/using/documentation-updates.md) | [Previous releases](../../rn/using/release--19-1.md) | [Deprecated features](https://helpx.adobe.com/campaign/kb/deprecated-and-removed-features.html)
+[Build upgrade](https://helpx.adobe.com/br/campaign/kb/acc-build-upgrade.html) | [Control Panel releases](https://docs.adobe.com/content/help/pt-BR/control-panel/using/release-notes.html) | [Documentation updates](../../rn/using/documentation-updates.md) | [Previous releases](../../rn/using/release--19-1.md) | [Deprecated features](https://helpx.adobe.com/br/campaign/kb/deprecated-and-removed-features.html)
 
 <table> 
  <tbody> 
   <tr> 
-   <td><img src="assets/green3.png"/><strong>Disponibilidade geral</strong></td>
-   <td><img src="assets/blue3.png"/><strong>Candidato a lançamento</strong></td> 
-   <td><img src="assets/orange3.png"/><strong>Não está mais disponível</strong></td> 
-   <td><img src="assets/red3.png"/><strong>Obsoleto</strong></td> 
+   <td><img src="assets/do-not-localize/green3.png"/><strong>Disponibilidade geral</strong></td>
+   <td><img src="assets/do-not-localize/blue3.png"/><strong>Candidato a lançamento</strong></td> 
+   <td><img src="assets/do-not-localize/orange3.png"/><strong>Não está mais disponível</strong></td> 
+   <td><img src="assets/do-not-localize/red3.png"/><strong>Obsoleto</strong></td> 
   </tr> 
    <tr> 
    <td>Compilação estável mais recente disponível. Compilação validada na produção.<br></td>
@@ -41,9 +41,9 @@ source-git-commit: 62f63a47fae9bddf2303bbed18f1aadab4717245
  </tbody> 
 </table>
 
-A **última compilação** estável é 9032 (205c981c3). Click [here](../../rn/using/release--19-1.md#release-19-1-4-build-9032)
+A **última compilação** estável é 9032 (3a9dc9c). Click [here](../../rn/using/release--19-1.md#release-19-1-4-build-9032)
 
-## ![](assets/orange_2.png) Versão 19.1.6 - Build 9035 {#release-19-1-6-build-9035}
+## ![](assets/do-not-localize/orange_2.png) Versão 19.1.6 - Build 9035 {#release-19-1-6-build-9035}
 
 >[!CAUTION]
 >
@@ -59,7 +59,7 @@ _3 de outubro de 2019_
 * Correção de um problema que resultava no não processamento de determinadas mensagens pelo servidor de Mid-Sourcing. (NEO-12395)
 * Correção de um problema que impedia o uso total da atividade do SQL Data Management (o direito nomeado do &quot;SQL Data Management&quot; estava ausente).
 
-## ![](assets/orange_2.png) Versão 19.1.5 - Build 9033{#release-19-1-5-build-9033}
+## ![](assets/do-not-localize/orange_2.png) Versão 19.1.5 - Build 9033{#release-19-1-5-build-9033}
 
 _13 de agosto de 2019_
 
@@ -74,31 +74,35 @@ _13 de agosto de 2019_
 
 ## Versão 19.1.4 - Build 9032{#release-19-1-4-build-9032}
 
-![](assets/green_2.png) 5 **de março de 2020**: nova compilação (9032-...205c981c3) que inclui a seguinte correção:
+![](assets/do-not-localize/green_2.png) 29 **de abril de 2020**: nova compilação (9032@3a9dc9c) que inclui a seguinte correção:
+
+* Segurança aprimorada no rastreamento de links no email. Isso é ativado por padrão para todos os clientes. Um recurso de segurança adicional e aprimorado está disponível, que pode ser ativado ao acessar o Atendimento ao cliente. Mais detalhes sobre o recurso e as etapas para clientes não hospedados que o habilitam podem ser encontrados na lista [de verificação](https://helpx.adobe.com/campaign/kb/acc-security.html#signature-mechanism)Segurança e Privacidade.
+* Correção de um problema que impedia a exibição de imagens em delivery de linha. (NEO-23207)
+
+![](assets/do-not-localize/orange_2.png) 5 **de março de 2020**: nova compilação (9032@19f73c5) que inclui a seguinte correção:
 
 * Correção de um problema com o conta externa usando FTP sobre SSL. (NEO-20498)
 
-![](assets/orange_2.png) 17 **de dezembro de 2019**: nova compilação (9032-...9d34fb17e) que inclui a seguinte correção:
+![](assets/do-not-localize/orange_2.png) 17 **de dezembro de 2019**: nova compilação (9032@d6b8062) que inclui a seguinte correção:
 
-* Correção de um problema de rastreamento nos seguintes canais de comunicação: dispositivos móveis (SMS, MMS), push (iOS, Android) e redes sociais (Facebook, Twitter).
-(NEO-19595)
+* Correção de um problema de rastreamento nos seguintes canais de comunicação: dispositivos móveis (SMS, MMS), push (iOS, Android) e redes sociais (Facebook, Twitter). (NEO-19595)
 
-![](assets/orange_2.png) 11 **de dezembro de 2019**: nova construção (9032-...e28b428b7) que inclui a seguinte correção:
+![](assets/do-not-localize/orange_2.png) 11 **de dezembro de 2019**: nova compilação (9032@bc4a935) que inclui a seguinte correção:
 
 * Correção de um problema de desempenho ao enviar mensagens com um banco de dados MSSQL. (NEO-17558)
 
-![](assets/orange_2.png) 20 **de novembro de 2019**: nova compilação (9032-...3468c7bb5) que inclui as seguintes correções:
+![](assets/do-not-localize/orange_2.png) 20 **de novembro de 2019**: nova compilação (9032@3468c7b) que inclui as seguintes correções:
 
 * Correção de um problema de logon por autenticação IMS. (NEO-17312)
 * Correção de um problema ao exibir relatórios cumulativos em várias entregas. (NEO-18165)
 * Correção de um problema que poderia bloquear ou fazer o servidor web travar.
 
-![](assets/orange_2.png) 19 **de setembro de 2019**: nova construção (9032-...cee805c93) que inclui as seguintes correções:
+![](assets/do-not-localize/orange_2.png) 19 **de setembro de 2019**: nova compilação (9032@cee805c) que inclui as seguintes correções:
 
 * Correção de um problema ao usar o Conector CRM para Salesforce. (NEO-17712)
 * Correção de um problema de índice que causava problemas de desempenho ao enviar mensagens transacionais.
 
-![](assets/orange_2.png) **13 de agosto de 2019**: build 19.1.4 inicial que inclui as seguintes correções:
+![](assets/do-not-localize/orange_2.png) **13 de agosto de 2019**: build 19.1.4 inicial que inclui as seguintes correções:
 
 * Correção de um problema em que a atividade do programador gerasse mensagens de erro indesejáveis durante a configuração do assistente. Reversão de atualização do NEO-11662. (NEO-17097)
 * Correção de uma regressão causada pelo NEO-12727, que podia interromper os fluxos de trabalho quando uma atividade de teste era executada duas vezes. (NEO-16835)
@@ -106,7 +110,7 @@ _13 de agosto de 2019_
 * Correção de um problema com a chave DKIM, que não era inserida em emails, causando problemas de entrega. (NEO-16804)
 * Correção de vários problemas com o agendamento de fluxos de trabalho. Os fluxos de trabalho eram agendados para serem executados uma vez por dia sem levar em consideração a configuração do programador. (NEO-16619, NEO-16426)
 
-## ![](assets/orange_2.png) Versão 19.1.2 - Build 9029{#release-19-1-2-build-9029}
+## ![](assets/do-not-localize/orange_2.png) Versão 19.1.2 - Build 9029{#release-19-1-2-build-9029}
 
 _21 de junho de 2019_
 
@@ -122,7 +126,7 @@ _21 de junho de 2019_
 * Agora permitimos a exclusão de registros fictícios criados no Microsoft Dynamics durante o fluxo de trabalho de importação.
 * Permissões aprimoradas para executar o pacote de zona de segurança ao usar a conta interna.
 
-## ![](assets/orange_2.png) Versão 19.1 - Build 9026{#release-19-1-build-9026}
+## ![](assets/do-not-localize/orange_2.png) Versão 19.1 - Build 9026{#release-19-1-build-9026}
 
 _30 de maio de 2019_
 
@@ -138,7 +142,7 @@ _30 de maio de 2019_
  <tbody> 
   <tr> 
    <td> Painel de controle<br /> </td> 
-   <td> <p>Para aumentar a eficiência em seu trabalho como um usuário administrador, gerencie as configurações dos servidores SFTP monitorando o armazenamento, os endereços IP incluídos na lista de permissões e instalando chaves SSH para cada instância. Observe que o Painel de Controle está disponível apenas para clientes hospedados no AWS a partir de hoje (<a href="https://experiencecloud.adobe.com/campaign/controlpanel/">login através da Experience Cloud hoje</a>).</p> <p>Para obter mais informações, consulte a <a href="https://docs.adobe.com/content/help/en/control-panel/using/control-panel-home.html">documentação detalhada</a> e o <a href="https://docs.adobe.com/content/help/en/campaign-learn/campaign-classic-tutorials/administrating/control-panel-acc/control-panel-overview.html">vídeo de instruções</a>. </p><p>Observação: não é necessário atualizar para a build mais recente do Campaign para acessar o Painel de Controle.</p> </td> 
+   <td> <p>Para aumentar a eficiência em seu trabalho como um usuário administrador, gerencie as configurações dos servidores SFTP monitorando o armazenamento, os endereços IP incluídos na lista de permissões e instalando chaves SSH para cada instância. Observe que o Painel de Controle está disponível apenas para clientes hospedados no AWS a partir de hoje (<a href="https://experiencecloud.adobe.com/campaign/controlpanel/">login através da Experience Cloud hoje</a>).</p> <p>Para obter mais informações, consulte a <a href="https://docs.adobe.com/content/help/pt-BR/control-panel/using/control-panel-home.translate.html">documentação detalhada</a> e o <a href="https://docs.adobe.com/content/help/en/campaign-learn/campaign-classic-tutorials/administrating/control-panel-acc/control-panel-overview.html">vídeo de instruções</a>. </p><p>Observação: não é necessário atualizar para a build mais recente do Campaign para acessar o Painel de Controle.</p> </td> 
   </tr> 
     <tr> 
    <td> Trilha de auditoria<br /> </td> 
@@ -150,7 +154,7 @@ _30 de maio de 2019_
   </tr> 
   <tr> 
    <td> Atualização da Matriz de Compatibilidade<br /> </td> 
-   <td> Com essa nova versão, o Adobe Campaign agora oferece suporte aos seguintes sistemas de banco de dados. Consulte a <a href="https://helpx.adobe.com/campaign/kb/compatibility-matrix.html">Matriz de Compatibilidade</a>.<br /> 
+   <td> Com essa nova versão, o Adobe Campaign agora oferece suporte aos seguintes sistemas de banco de dados. Consulte a <a href="https://helpx.adobe.com/br/campaign/kb/compatibility-matrix.html">Matriz de Compatibilidade</a>.<br /> 
     <ul> 
      <li> <p>Oracle 18c</p> </li> 
      <li> <p>MySQL 5.7 (FDA)</p> </li> 
@@ -180,7 +184,7 @@ _30 de maio de 2019_
 
 **Aprimoramentos de grade de Proteção, robustez e escalabilidade**
 
-* Otimização do uso da sequência Lifespan - XtkNewId: as tabelas mais antigas foram movidas da sequência xtkNewId para sequências dedicadas. [Leia mais](https://helpx.adobe.com/campaign/kb/sequence_auto_generation.html#Switchtoadedicatedsequence)
+* Otimização do uso da sequência Lifespan - XtkNewId: as tabelas mais antigas foram movidas da sequência xtkNewId para sequências dedicadas. [Leia mais](https://helpx.adobe.com/br/campaign/kb/sequence_auto_generation.html#Switchtoadedicatedsequence)
 * FDA sobre HTTP v2: FDA sobre protocolo HTTP é amplamente usado em implantações híbridas, especialmente para recuperação de broadLog e preparação de delivery. Robustez foi aprimorada para evitar problemas de rede e possíveis erros como recuperação e envio de dados. Isso requer que os builds nas duas extremidades da conexão estejam atualizados, caso contrário, o protocolo antigo ainda será usado.
 * Workflow de rastreamento: a robustez do workflow de rastreamento foi aprimorada. Vários problemas relacionados a inserções/atualizações de log de rastreamento e personalização de rastreamento de URL foram corrigidos. Além disso, o workflow de rastreamento agora detecta problemas de log de rastreamento que podem levar a erros e interromper o workflow. Esses problemas agora são descartados e não processados.
 * Workflow de limpeza: o workflow de limpeza foi aprimorado para evitar possíveis erros e interrupções. Isso otimiza o tamanho e o desempenho do banco de dados.
