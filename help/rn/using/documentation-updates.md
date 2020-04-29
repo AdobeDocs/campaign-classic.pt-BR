@@ -13,7 +13,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: c8910fdfd07bd835d456baca29710ea927ad20e5
+source-git-commit: 0b3622bb0ac95eff61e2d96332e67623dffa68be
 
 ---
 
@@ -134,7 +134,7 @@ Um exemplo de como usar uma variável de instância em um fluxo de trabalho foi 
 
 A opção &quot;WdbcOptions_TempDbName&quot; foi adicionada à lista de opções do Campaign. [Leia mais](../../installation/using/configuring-campaign-options.md)
 
-A página da matriz FDA foi movida para [este local](/help/rn/using/assets/fda_rdbms_rights.pdf).
+A página da matriz FDA foi movida para [este local](../../platform/using/remote-database-access-rights.md).
 
 A página da matriz de direitos de acesso foi movida [aqui](https://docs.adobe.com/content/help/pt-BR/campaign-classic/using/getting-started/administration-basics/assets/accessrights.pdf).
 
