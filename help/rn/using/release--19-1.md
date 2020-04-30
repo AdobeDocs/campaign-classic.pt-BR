@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: ab6ce2fbe1ea9e2b2498c87471ad7813a082ebe6
+source-git-commit: 4b42a4bb0a95b2a46187c996d069846a8c3941bf
 
 ---
 
@@ -78,6 +78,17 @@ _13 de agosto de 2019_
 
 * Segurança aprimorada no rastreamento de links no email. Isso é ativado por padrão para todos os clientes. Um recurso de segurança adicional e aprimorado está disponível, que pode ser ativado ao acessar o Atendimento ao cliente. Mais detalhes sobre o recurso e as etapas para clientes não hospedados que o habilitam podem ser encontrados na lista [de verificação](https://helpx.adobe.com/campaign/kb/acc-security.html#signature-mechanism)Segurança e Privacidade.
 * Correção de um problema que impedia a exibição de imagens em delivery de linha. (NEO-23207)
+* Correção de um problema com a atividade **File Transfer** , que impedia que a autenticação baseada na chave SFTP funcionasse no Debian 9. (NEO-23183)
+* Correção de um problema que poderia afetar a notificação por push quando enviada em alta frequência. (NEO-20516)
+* Correção de um problema no gerenciamento de respostas de oferta que resultava em falhas no servidor da Web. (NEO-19482)
+* Correção de um erro no gerenciamento do LibreOffice que impedia a exportação de relatórios. (NEO-20982)
+* Correção de um problema que causava um erro ao atualizar vários workflows usando uma atividade de pesquisa.
+* Gerenciamento do LibreOffice aprimorado para evitar falhas na pré-visualização de email com arquivos .odt.
+* Gerenciamento da conexão do Apache aprimorado para evitar latência no serviço da Web.
+* Aprimorada a exibição da tag da versão (7 dígitos) no menu **Sobre** .
+* Corrigida uma regressão no gerenciamento de listas que impedia a publicação de ofertas.
+* Correção de uma regressão que resultava em falha do fluxo de trabalho de limpeza.
+* Corrigida uma regressão secundária nos logs de fluxo de trabalho de limpeza.
 
 ![](assets/do-not-localize/orange_2.png) 5 **de março de 2020**: nova compilação (9032@19f73c5) que inclui a seguinte correção:
 
