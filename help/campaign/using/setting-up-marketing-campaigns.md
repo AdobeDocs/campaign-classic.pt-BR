@@ -14,7 +14,7 @@ discoiquuid: 8d076211-10a6-4a98-b0d2-29dad154158c
 index: y
 internal: n
 snippet: y
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: eee744eb5bc7a43fd412ffb01f0546385146a978
 
 ---
@@ -22,39 +22,39 @@ source-git-commit: eee744eb5bc7a43fd412ffb01f0546385146a978
 
 # Configuração de campanhas de marketing{#setting-up-marketing-campaigns}
 
-As campanhas incluem ações (deliveries) e processos (importação ou extração de arquivos), além de recursos (documentos de marketing e delivery outlines). Eles são usados em campanhas de marketing. As campanhas são parte de um programa e os programas são incluídos em um plano de campanha.
+As campanhas incluem ações (deliveries) e processos (importação ou extração de arquivos), além de recursos (documentos de marketing e delivery outlines). Eles são usados em campanhas de marketing. As campanhas são parte de um programa, e os programas estão incluídos em um plano de campanha.
 
 Para criar uma campanha de marketing:
 
-1. Crie uma campanha: campanhas de descoberta e suas características: etiqueta, tipo, datas de início e término, orçamento, recursos associados, gerentes e participantes.
+1. Crie uma campanha: descubra campanhas e suas características: etiqueta, tipo, datas de início e término, orçamento, recursos associados, gerentes e participantes.
 
    Consulte [Criação de uma campanha](#creating-a-campaign).
 
-1. Definir população alvo: crie um fluxo de trabalho com consultas de definição de metas.
+1. Defina a população do target: crie um workflow com queries de direcionamento.
 
-   See [Selecting the target population](../../campaign/using/marketing-campaign-deliveries.md#selecting-the-target-population).
+   Consulte [Seleção da população do target](../../campaign/using/marketing-campaign-deliveries.md#selecting-the-target-population)
 
-1. Criar entregas: selecione os canais e defina o conteúdo a ser enviado.
+1. Crie deliveries: selecione os canais e defina o conteúdo a ser enviado.
 
-   Consulte [Criação de entregas](../../campaign/using/marketing-campaign-deliveries.md#creating-deliveries).
+   Consulte [Criação de deliveries](../../campaign/using/marketing-campaign-deliveries.md#creating-deliveries).
 
-1. Aprovar entregas.
+1. Aprove deliveries.
 
-   Consulte o processo [de](../../campaign/using/marketing-campaign-approval.md#approval-process)aprovação.
+   Consulte [Processo de aprovação](../../campaign/using/marketing-campaign-approval.md#approval-process).
 
-1. Monitore entregas.
+1. Monitore deliveries
 
    Consulte [Monitoramento](../../campaign/using/marketing-campaign-monitoring.md).
 
 1. Planeje campanhas e custos associados.
 
-   See [Creating service providers and their cost structures](../../campaign/using/providers--stocks-and-budgets.md#creating-service-providers-and-their-cost-structures).
+   Consulte [Criação de provedores de serviços e suas estruturas de custo](../../campaign/using/providers--stocks-and-budgets.md#creating-service-providers-and-their-cost-structures).
 
-When these steps have been completed, you can start the deliveries (see [Starting a delivery](../../campaign/using/marketing-campaign-deliveries.md#starting-a-delivery)), check the data, processes and information relating to the deliveries and, if necessary, manage the associated documents (see [Managing associated documents](../../campaign/using/marketing-campaign-deliveries.md#managing-associated-documents)). You can also track the execution of the processing phases of campaigns and deliveries (see [Tracking](../../campaign/using/marketing-campaign-monitoring.md).
+Quando essas etapas forem concluídas, será possível iniciar os deliveries (consulte [Iniciando um delivery](../../campaign/using/marketing-campaign-deliveries.md#starting-a-delivery)), verificar os dados, processos e informações relacionados aos deliveries e, se necessário, gerenciar os documentos associados (consulte [Gerenciamento de documentos associados](../../campaign/using/marketing-campaign-deliveries.md#managing-associated-documents)). Também é possível rastrear a execução das fases de processamento das campanhas e deliveries (consulte [Rastreamento](../../campaign/using/marketing-campaign-monitoring.md)).
 
 ## Criação de plano e programa de hierarquia {#creating-plan-and-program-hierarchy}
 
-Para configurar sua hierarquia de pastas para planos e programas de marketing:
+Para configurar a hierarquia de pastas para planos de marketing e programas:
 
 1. Clique no ícone do **Explorer** na home page.
 1. Clique com o botão direito na pasta em que deseja criar o plano.
@@ -76,19 +76,19 @@ Para configurar sua hierarquia de pastas para planos e programas de marketing:
 
 ### Adicionar uma campanha {#adding-a-campaign}
 
-Você pode criar uma campanha através da lista de campanhas. Para exibir essa exibição, selecione o **[!UICONTROL Campaigns]** menu no **[!UICONTROL Campaigns]** painel.
+Você pode criar uma campanha através da lista de campanhas. Para exibir essa visualização, selecione o menu **[!UICONTROL Campaigns]** no painel **[!UICONTROL Campaigns]**.
 
 ![](assets/s_ncs_user_add_an_op_from_list.png)
 
-The **[!UICONTROL Program]** field lets you select the program to which the campaign will be attached. Essas informações são obrigatórias.
+O campo **[!UICONTROL Program]** permite selecionar o programa ao qual a campanha será anexada. Essas informações são obrigatórias.
 
 ![](assets/s_ncs_user_new_op_wz_a.png)
 
-As campanhas também podem ser criadas por meio de um programa. To do this, click the **[!UICONTROL Add]** button in the **[!UICONTROL Schedule]** tab of the concerned program.
+As campanhas também podem ser criadas por meio de um programa. Para fazer isso, clique no botão **[!UICONTROL Add]** na guia **[!UICONTROL Schedule]** do programa relacionado.
 
 ![](assets/s_ncs_user_add_an_op.png)
 
-When you create a campaign via the **[!UICONTROL Schedule]** tab of a program, the campaign is automatically linked to the concerned program. The **[!UICONTROL Program]** field is hidden in this case.
+Ao criar uma campanha por meio da guia **[!UICONTROL Schedule]** de um programa, a campanha é vinculada automaticamente ao programa relacionado. O campo **[!UICONTROL Program]** está oculto nesse caso.
 
 Na janela de criação da campanha, selecione o modelo da campanha e adicione um nome e uma descrição da campanha. Você também pode especificar as datas de início e término da campanha.
 
@@ -98,7 +98,7 @@ Clique em **[!UICONTROL OK]** para criar a campanha. Ela será adicionada ao cro
 
 >[!NOTE]
 >
->To filter the campaigns to display, click the **[!UICONTROL Filter]** link and select the status of campaigns to display.
+>Para filtrar as campanhas a serem exibidas, clique no link **[!UICONTROL Filter]** e selecione o status das campanhas a serem exibidas.
 
 ![](assets/s_ncs_user_program_planning_filter.png)
 
@@ -106,7 +106,7 @@ Clique em **[!UICONTROL OK]** para criar a campanha. Ela será adicionada ao cro
 
 Você pode editar a campanha que acabou de criar e definir seus parâmetros.
 
-To open and configure a campaign, select it from the schedule and click **[!UICONTROL Open]**.
+Para abrir e configurar uma campanha, selecione-a no cronograma e clique em **[!UICONTROL Open]**.
 
 ![](assets/s_ncs_user_new_op_edit.png)
 
@@ -122,9 +122,9 @@ Uma campanha periódica é uma campanha criada automaticamente de acordo com o a
 
 As campanhas recorrentes são criadas a partir de um template específico que define o template de workflow a ser executado e o agendamento de execução.
 
-#### Criação de um modelo para campanhas recorrentes {#creating-the-campaign-template}
+#### Criação de um template para campanhas recorrentes {#creating-the-campaign-template}
 
-1. Crie um modelo de **[!UICONTROL Recurring]** campanha.
+1. Crie um template de campanha **[!UICONTROL Recurring]**.
 
    >[!NOTE]
    >
@@ -136,28 +136,28 @@ As campanhas recorrentes são criadas a partir de um template específico que de
 
    ![](assets/s_ncs_user_op_template_recur_duplicate.png)
 
-1. For this type of campaign, a **[!UICONTROL Schedule]** tab is added in order to create the template execution schedule.
+1. Para esse tipo de campanha, uma guia **[!UICONTROL Schedule]** é adicionada para criar o agendamento de execução do template.
 
 Nesta guia, especifique as datas de execução planejadas das campanhas com base neste template.
 
 ![](assets/s_ncs_user_op_template_recur_planning.png)
 
-Você pode usar o assistente de criação de agendamento para preencher todas as datas de execução automaticamente. To do this, click the **[!UICONTROL Complete the execution schedule...]** link located above the table.
+Você pode usar o assistente de criação de agendamento para preencher todas as datas de execução automaticamente. Para fazer isso, clique no **[!UICONTROL Complete the execution schedule...]** link localizado acima da tabela.
 
 ![](assets/s_ncs_user_op_template_recur_planning_wz.png)
 
-The configuration mode of the execution schedule coincides with the **[!UICONTROL Scheduler]** object of the Workflow. Para obter mais informações, consulte [esta seção](../../workflow/using/executing-a-workflow.md#architecture).
+O modo de configuração do agendamento de execução coincide com o objeto **[!UICONTROL Scheduler]** do workflow. Para obter mais informações, consulte [esta seção](../../workflow/using/executing-a-workflow.md#architecture).
 
 >[!IMPORTANT]
 >
 >A configuração do agendamento de execução deve ser realizada cuidadosamente para evitar sobrecarga do banco de dados. As campanhas recorrentes duplicam o(s) fluxo(s) de trabalho de seu template dependendo do cronograma especificado. A implementação da criação de workflow excessivamente frequente pode dificultar a operação do banco de dados.
 
-1. Specify a value in the **[!UICONTROL Create in advance for]** field in order to create the corresponding workflows for the period indicated.
+1. Especifique um valor no campo **[!UICONTROL Create in advance for]** para criar os workflows correspondentes ao período indicado.
 1. Crie o template de workflow a ser usado em campanhas com base nesse template, com os parâmetros de definição de metas e uma ou mais remessas genéricas.
 
    >[!NOTE]
    >
-   >Esse workflow deve ser salvo como um template de workflow recorrente. To do this, edit the workflow properties and select the **[!UICONTROL Recurring workflow template]** option in the **[!UICONTROL Execution]** tab.
+   >Esse workflow deve ser salvo como um template de workflow recorrente. Para fazer isso, edite as propriedades do workflow e selecione na guia **[!UICONTROL Recurring workflow template]** a opção **[!UICONTROL Execution]**.
 
    ![](assets/s_ncs_user_op_template_recur_wf_option.png)
 
@@ -174,19 +174,19 @@ Para criar a campanha recorrente e executar os workflows de acordo com o agendam
 
    Para cada linha, você pode adicionar as seguintes opções adicionais:
 
-   * **[!UICONTROL To be approved]** : permite forçar as solicitações de aprovação de entrega no fluxo de trabalho.
-   * **[!UICONTROL To be started]** : permite que você inicie o fluxo de trabalho quando a data inicial for atingida.
-   The **[!UICONTROL Create in advance for]** field lets you create all the workflows covering the period entered.
+   * **[!UICONTROL To be approved]** : permite forçar as solicitações de aprovação de delivery no workflow.
+   * **[!UICONTROL To be started]**: permite iniciar o workflow quando a data de início é atingida.
+   O campo **[!UICONTROL Create in advance for]** permite criar todos os workflows que abrangem o período inserido.
 
-   Upon execution of the **[!UICONTROL Jobs on campaigns]** workflow, the dedicated workflows are created based on the occurrences defined in the campaign schedule. Um workflow é criado para cada data de execução.
+   Após a execução do workflow **[!UICONTROL Jobs on campaigns]**, os workflows dedicados são criados com base nas ocorrências definidas no agendamento da campanha. Um workflow é criado para cada data de execução.
 
-1. Os workflows recorrentes são criados automaticamente a partir do template de workflow presente na campanha. They are visible from the **[!UICONTROL Targeting and workflows]** tab of the campaign.
+1. Os workflows recorrentes são criados automaticamente a partir do template de workflow presente na campanha. Eles ficam visíveis na guia **[!UICONTROL Targeting and workflows]** da campanha.
 
    ![](assets/s_ncs_user_op_recur_planning_wfs.png)
 
    O rótulo de uma instância de workflow recorrente consiste no rótulo do seu template e no número do workflow, sendo que entre eles há o caractere &quot;#&quot;.
 
-   Workflows created from the schedule are automatically associated with it in the **[!UICONTROL Workflow]** column of the **[!UICONTROL Schedule]** tab.
+   Os workflows criados a partir do agendamento são associados automaticamente a ele na coluna **[!UICONTROL Workflow]** da guia **[!UICONTROL Schedule]**.
 
    ![](assets/s_ncs_user_op_recur_planning_wfs_1.png)
 
@@ -205,7 +205,7 @@ Uma campanha periódica é uma campanha baseada em um template específico que p
 
 #### Criar o template de campanha {#creating-the-campaign-template-1}
 
-1. Create a **[!UICONTROL Periodic]** campaign template, preferably by duplicating an existing campaign template.
+1. Crie um template de campanha **[!UICONTROL Periodic]**, preferencialmente duplicando um template de campanha existente.
 
    ![](assets/s_ncs_user_op_template_period_create.png)
 
@@ -223,7 +223,7 @@ Uma campanha periódica é uma campanha baseada em um template específico que p
    >
    >Este workflow é um template de workflow. Ele não pode ser executado do template de campanha.
 
-1. Complete its execution schedule as for a recurring campaign template: click the **[!UICONTROL Add]** button and define the start and end dates, or fill in the execution schedule via the link.
+1. Conclua o agendamento de execução como para um template de campanha recorrente: clique no botão **[!UICONTROL Add]** e defina as datas de início e término ou preencha o agendamento de execução por meio do link.
 
    ![](assets/s_ncs_user_op_template_period_planning_add.png)
 
