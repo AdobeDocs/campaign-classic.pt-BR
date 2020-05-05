@@ -14,7 +14,7 @@ discoiquuid: 3af763ad-6b0d-4f4c-aed1-c5e12efd4760
 index: y
 internal: n
 snippet: y
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 61c7681535dc08e1d705d7d239e96c603bbad339
 
 ---
@@ -77,12 +77,12 @@ Para criar e publicar uma aplicação web, você deve:
 
 ## Configuração inicial do aplicativo web {#web-application-initial-configuration}
 
-Web application are created via the **[!UICONTROL Web Applications]** link in the **[!UICONTROL Campaigns]** and **[!UICONTROL Profiles and targets]** tabs.
+Os aplicativos web são criados por meio do link **[!UICONTROL Web Applications]** nas guias **[!UICONTROL Campaigns]** e **[!UICONTROL Profiles and targets]**.
 
-Web applications are stored in the **[!UICONTROL Resources > Online > Web Applications]** node of the Adobe Campaign tree. As configurações estão divididas nas seguintes pastas:
+Os aplicativos web são armazenados no nó **[!UICONTROL Resources > Online > Web Applications]** da árvore do Adobe Campaign. As configurações estão divididas nas seguintes pastas:
 
-* **[!UICONTROL Administration > Configuration > Form renderings]**: contém os modelos de renderização para a apresentação de formulário da Web (aplicativos e pesquisas). O template permite gerar o formulário. Ele também usa uma folha de estilos CSS. Essa folha de estilos pode ser sobrecarregada no nível do template. Para obter mais informações, consulte [esta página](../../web/using/form-rendering.md#selecting-the-form-rendering-template).
-* **[!UICONTROL Resources > Templates > Web application templates]**: contém modelos de formulário. Para criar um formulário ou uma aplicação web, você deve começar em um template.
+* **[!UICONTROL Administration > Configuration > Form renderings]**: contém os templates de renderização para a apresentação do formulário Web (aplicativos e pesquisas). O template permite gerar o formulário. Ele também usa uma folha de estilos CSS. Essa folha de estilos pode ser sobrecarregada no nível do template. Para obter mais informações, consulte [esta página](../../web/using/form-rendering.md#selecting-the-form-rendering-template).
+* **[!UICONTROL Resources > Templates > Web application templates]**: contém templates de formulário. Para criar um formulário ou uma aplicação web, você deve começar em um template.
 
 ## Templates de aplicação web {#web-application-templates}
 
@@ -90,9 +90,9 @@ Por padrão, o Adobe Campaign fornece um template por aplicação web disponíve
 
 >[!NOTE]
 >
->Você pode converter uma aplicação web existente em um template. Para fazer isso, selecione o formulário e clique com o botão direito do mouse. Select **[!UICONTROL Actions > Save as template...]**.
+>Você pode converter uma aplicação web existente em um template. Para fazer isso, selecione o formulário e clique com o botão direito do mouse. Selecione **[!UICONTROL Actions > Save as template...]**.
 
-You can create new templates via the **[!UICONTROL Resources > Templates > Web Application templates]** node of the Adobe Campaign tree.
+Você pode criar novos templates no nó **[!UICONTROL Resources > Templates > Web Application templates]** da árvore do Adobe Campaign.
 
 O assistente de criação permite selecionar as opções que você deseja habilitar, conforme mostrado abaixo.
 
