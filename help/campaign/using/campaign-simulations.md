@@ -14,7 +14,7 @@ discoiquuid: e8e7a720-c93d-491d-8768-270e47e9c898
 index: y
 internal: n
 snippet: y
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: eee744eb5bc7a43fd412ffb01f0546385146a978
 
 ---
@@ -31,8 +31,8 @@ A simulação permite monitorar e comparar o impacto dos deliveries.
 >[!NOTE]
 >
 >Os deliveries preparados no modo Teste não têm impacto entre si ao avaliar uma campanha no marketing distribuído ou contanto que as remessas não estejam programadas no calendário provisional.\
->This means that pressure and capacity rules are only applied to deliveries in **[!UICONTROL Target estimation and message personalization]** mode. As entregas em **[!UICONTROL Estimation and approval of the provisional target]** e em **[!UICONTROL Target evaluation]** modo não são consideradas.\
->The delivery mode is chosen in the **[!UICONTROL Typology]** sub-tab of the delivery properties.
+>Isso significa que as regras de pressão e capacidade serão aplicadas apenas aos deliveries no modo **[!UICONTROL Target estimation and message personalization]**. Os deliveries no modo **[!UICONTROL Estimation and approval of the provisional target]** e no **[!UICONTROL Target evaluation]** não são considerados.\
+>O modo é escolhido na subguia **[!UICONTROL Typology]** das propriedades do delivery.
 
 ![](assets/simu_campaign_select_delivery_mode.png)
 
@@ -42,7 +42,7 @@ A simulação permite monitorar e comparar o impacto dos deliveries.
 
 Para criar uma simulação, aplique as seguintes etapas:
 
-1. Vá para o **[!UICONTROL Campaigns]** universo, clique no **[!UICONTROL More]** link dentro da **[!UICONTROL Create]** seção e selecione a **[!UICONTROL Simulation]** opção.
+1. Acesse o universo **[!UICONTROL Campaigns]**, clique no link **[!UICONTROL More]** na seção **[!UICONTROL Create]** e selecione a opção **[!UICONTROL Simulation]**.
 
    ![](assets/simu_campaign_opti_01.png)
 
@@ -50,11 +50,11 @@ Para criar uma simulação, aplique as seguintes etapas:
 
    ![](assets/simu_campaign_opti_02.png)
 
-1. Click the **[!UICONTROL Edit]** tab to configure it.
+1. Clique na guia **[!UICONTROL Edit]** para configurá-la.
 
    ![](assets/simu_campaign_opti_edit.png)
 
-1. In the **[!UICONTROL Scope]** tab, specify the deliveries you want to consider for this simulation. To do this, click the **[!UICONTROL Add]** button and specify the delivery selection mode to take into account.
+1. Na guia **[!UICONTROL Scope]**, especifique os envios que devem ser considerados nessa simulação. Para fazer isso, clique no botão **[!UICONTROL Add]** e especifique o modo de seleção de delivery a ser levado em consideração.
 
    ![](assets/simu_campaign_opti_edit_scope.png)
 
@@ -62,7 +62,7 @@ Para criar uma simulação, aplique as seguintes etapas:
 
    >[!NOTE]
    >
-   >Caso selecione deliveries por meio de um plano, programa ou campanha, o Adobe Campaign poderá atualizar automaticamente a lista de deliveries a serem considerados sempre que uma simulação for iniciada. Para fazer isso, marque a **[!UICONTROL Refresh the selection of deliveries each time the simulation is started]** opção.
+   >Caso selecione deliveries por meio de um plano, programa ou campanha, o Adobe Campaign poderá atualizar automaticamente a lista de deliveries a serem considerados sempre que uma simulação for iniciada. Para fazer isso, marque a opção **[!UICONTROL Refresh the selection of deliveries each time the simulation is started]**.
    >  
    >Se você não fizer isso, quaisquer deliveries que não estejam disponíveis no plano, programa ou campanha quando a simulação for criada não serão levados em consideração: os deliveries adicionados posteriormente serão ignorados.
 
@@ -78,15 +78,15 @@ Para criar uma simulação, aplique as seguintes etapas:
 
    ![](assets/simu_campaign_opti_edit_scope_save.png)
 
-   If necessary, you can use a dynamic condition via the **[!UICONTROL Edit the dynamic condition...]** link.
+   Se necessário, você poderá usar uma condição dinâmica através do link **[!UICONTROL Edit the dynamic condition...]**.
 
-   Clique em **[!UICONTROL Save]** para aprovar esta configuração.
+   Clique em **[!UICONTROL Save]** para aprovar essa configuração.
 
    >[!NOTE]
    >
-   >Somente as entregas cujo objetivo tenha sido calculado são levadas em conta no cálculo das simulações (status: **Target pronto** ou **pronto para entrega**).
+   >Somente os deliveries cujo objetivo tenha sido calculado são levados em conta no cálculo das simulações (status: **Target ready** ou **Ready to deliver**).
 
-1. In the **[!UICONTROL Calculations]** tab, select an analysis dimension such as the recipient schema for example.
+1. Na guia **[!UICONTROL Calculations]**, selecione uma dimensão de análise como, por exemplo, o schema de recipients.
 
    ![](assets/simu_campaign_opti_dimension.png)
 
@@ -96,11 +96,11 @@ Para criar uma simulação, aplique as seguintes etapas:
 
 ### Configurações de execução {#execution-settings}
 
-The **[!UICONTROL General]** tab of the simulation lets you enter execution settings:
+A guia **[!UICONTROL General]** da simulação permite inserir configurações de execução:
 
-* The **[!UICONTROL Schedule execution for down-time]** option defers the simulation launch to a less busy time period, based on the chosen level of priority. As simulações usam recursos significativos do banco de dados, por isso as simulações não urgentes devem ser agendadas para serem executadas à noite.
-* The **[!UICONTROL Priority]** is the level applied to the simulation to delay its triggering.
-* **[!UICONTROL Save SQL queries in the log]**. Os logs em SQL permitem diagnosticar uma simulação se ela terminar com erros. Eles também podem ajudá-lo a descobrir por que uma simulação está muito lenta. These messages will be visible after the simulation in the **[!UICONTROL SQL logs]** sub-tab of the **[!UICONTROL Audit]** tab.
+* A opção **[!UICONTROL Schedule execution for down-time]** adia o lançamento da simulação para um período menos ocupado, com base no nível escolhido de prioridade. As simulações usam recursos significativos do banco de dados, por isso as simulações não urgentes devem ser agendadas para serem executadas à noite.
+* **[!UICONTROL Priority]** é o nível aplicado à simulação para atrasar o acionamento.
+* **[!UICONTROL Save SQL queries in the log]**. Os logs em SQL permitem diagnosticar uma simulação se ela terminar com erros. Eles também podem ajudá-lo a descobrir por que uma simulação está muito lenta. Essas mensagens estarão visíveis após a simulação na subguia **[!UICONTROL SQL logs]** da guia **[!UICONTROL Audit]**.
 
 ## Executando uma simulação {#executing-a-simulation}
 
@@ -108,49 +108,49 @@ The **[!UICONTROL General]** tab of the simulation lets you enter execution sett
 
 Depois que o escopo da simulação for definido, você poderá executá-la.
 
-To do this, open the simulation dashboard and click **[!UICONTROL Start simulation]**.
+Para fazer isso, abra o painel de simulação e clique em **[!UICONTROL Start simulation]**.
 
 ![](assets/simu_campaign_opti_start.png)
 
-Once execution is complete, open the simulation and click the **[!UICONTROL Results]** tab to view the targets calculated for each delivery.
+Uma vez concluída a execução, abra a simulação e clique na guia **[!UICONTROL Results]** para exibir os destinos calculados para cada delivery.
 
 ![](assets/simu_campaign_opti_results.png)
 
-1. The **[!UICONTROL Deliveries]** sub-tab lists all deliveries taken into account by the simulation. Ela mostra duas contagens:
+1. A subguia **[!UICONTROL Deliveries]** lista todos os deliveries considerados na simulação. Ela mostra duas contagens:
 
-   * The **[!UICONTROL Initial count]** is the target as it was calculated during its estimation in the delivery.
-   * The **[!UICONTROL Final count]** is the number of recipients counted after simulation.
+   * **[!UICONTROL Initial count]** é o target como foi calculado durante a estimativa no delivery.
+   * **[!UICONTROL Final count]** é o número de recipients contados após a simulação.
 
       A diferença entre as contagens inicial e final reflete a aplicação de várias regras ou filtros configurados antes da simulação.
 
-      To learn more about this calculation, edit the **[!UICONTROL Exclusions]** sub-tab.
+      Para saber mais sobre esse cálculo, edite a subguia **[!UICONTROL Exclusions]**.
 
-1. The **[!UICONTROL Exclusions]** sub-tab lets you view the exclusion break-down.
+1. A subguia **[!UICONTROL Exclusions]** permite visualizar a interrupção da exclusão.
 
    ![](assets/simu_campaign_opti_14.png)
 
-1. The **[!UICONTROL Alerts]** sub-tab groups all alert messages generated during the simulation. As mensagens de alerta podem ser enviadas no caso de sobrecarga de capacidade (se o número de recipients exceder a capacidade definida, por exemplo).
-1. The **[!UICONTROL Exploration of the exclusions]** sub-tab lets you create a result analysis table. O usuário precisa indicar variáveis nos eixos abscissa/ordenadas.
+1. A subguia **[!UICONTROL Alerts]** agrupa todas as mensagens de alerta geradas durante a simulação. As mensagens de alerta podem ser enviadas no caso de sobrecarga de capacidade (se o número de recipients exceder a capacidade definida, por exemplo).
+1. A subguia **[!UICONTROL Exploration of the exclusions]** permite criar uma tabela de análise de resultado. O usuário precisa indicar variáveis nos eixos abscissa/ordenadas.
 
-   For an example of analysis table creation, refer to the end of [Exploring results](#exploring-results).
+   Para um exemplo de criação de tabela de análise, consulte o fim da opção [Exploring results](#exploring-results).
 
 ### Visualizando resultados {#viewing-results}
 
 #### Auditoria {#audit}
 
-The **[!UICONTROL Audit]** tab lets you monitor simulation execution. The **[!UICONTROL SQL Logs]** sub-tab is useful for expert users. Ele lista logs de execução no formato SQL. These logs are only displayed if the **[!UICONTROL Save SQL queries in the log]** option has been selected in the **[!UICONTROL General]** tab before simulation execution.
+A guia **[!UICONTROL Audit]** permite monitorar a execução da simulação. A subguia **[!UICONTROL SQL Logs]** é útil para usuários avançados. Ela lista logs de execução no formato SQL. Esses logs serão exibidos somente se a opção **[!UICONTROL Save SQL queries in the log]** tiver sido selecionada na guia **[!UICONTROL General]** antes da execução da simulação.
 
 ![](assets/simu_campaign_opti_11.png)
 
 #### Explorando resultados {#exploring-results}
 
-The **[!UICONTROL Exploration of the exclusions]** sub-tab lets you analyze the data resulting from a simulation.
+A subguia **[!UICONTROL Exploration of the exclusions]** permite analisar os dados resultantes de uma simulação.
 
 A análise descritiva é apresentada [nesta seção](../../reporting/using/about-adobe-campaign-reporting-tools.md).
 
 ## Resultados de uma simulação {#results-of-a-simulation}
 
-The indicators in the **[!UICONTROL Log]** and **[!UICONTROL Results]** tabs provide a first overview of simulation results. For a more detailed view of results, open the **[!UICONTROL Reports]** tab.
+Os indicadores nas guias **[!UICONTROL Log]** e **[!UICONTROL Results]** fornecem uma primeira visão geral dos resultados da simulação. Para obter uma visão mais detalhada dos resultados, abra a guia **[!UICONTROL Reports]**.
 
 ### Relatórios {#reports}
 
@@ -158,19 +158,19 @@ Para analisar o resultado de uma simulação, edite os relatórios: eles mostram
 
 Os seguintes relatórios são fornecidos como padrão:
 
-* **[!UICONTROL Detail of simulation exclusions]** : este relatório apresenta um gráfico pormenorizado das causas de exclusão para todas as entregas em causa.
-* **[!UICONTROL Simulation summary]** : este relatório mostra as populações excluídas da simulação ao longo das diversas entregas.
-* **[!UICONTROL Summary of exclusions linked to the simulation]** : este relatório mostra um gráfico de exclusões causadas pela simulação juntamente com a regra de tipologia aplicada e um gráfico que mostra a taxa de exclusão por regra.
+* **[!UICONTROL Detail of simulation exclusions]**: esse relatório fornece um gráfico detalhado das causas de exclusão para todos os deliveries relacionados.
+* **[!UICONTROL Simulation summary]**: esse relatório mostra as amostragens excluídas da simulação em todos os deliveries.
+* **[!UICONTROL Summary of exclusions linked to the simulation]**: esse relatório mostra um gráfico das exclusões causadas pela simulação junto com a regra de tipologia aplicada e um gráfico que mostra a taxa de exclusão por regra.
 
 >[!NOTE]
 >
 >É possível criar novos relatórios e adicioná-los aos existentes. Para obter mais informações, consulte [esta seção](../../reporting/using/about-adobe-campaign-reporting-tools.md).
 
-To access reports, click the **[!UICONTROL Reports]** link of the targeted simulation via its dashboard.
+Para acessar os relatórios, clique no link **[!UICONTROL Reports]** da simulação direcionada por meio do painel.
 
 ![](assets/campaign_opt_reporting_edit_from_board.png)
 
-You can also edit reports using the **[!UICONTROL Reports]** link accessible from the simulation dashboard.
+Também é possível editar os relatórios ao usar o link **[!UICONTROL Reports]** acessível no painel de simulação.
 
 ### Comparação de simulações {#comparing-simulations-}
 
@@ -181,7 +181,7 @@ Sempre que uma simulação é executada, resultados anteriores são substituído
 **Exemplo:**
 
 1. Crie uma simulação em um delivery ao qual a tipologia **A** é aplicada.
-1. Na **[!UICONTROL Reports]** guia, edite um dos relatórios disponíveis, como **[!UICONTROL Detail of simulation exclusions]** por exemplo.
+1. Na guia **[!UICONTROL Reports]**, edite um dos relatórios disponíveis, como o **[!UICONTROL Detail of simulation exclusions]**, por exemplo.
 1. Na seção superior direita do relatório, clique no ícone para criar um novo histórico.
 
    ![](assets/campaign_opt_reporting_create_hist.png)
@@ -195,18 +195,18 @@ Sempre que uma simulação é executada, resultados anteriores são substituído
 
 ### Relatórios de eixos {#reporting-axes}
 
-The **[!UICONTROL Calculations]** tab lets you define reporting axes on the target. Theses axes will be used during result analysis (refer to [Exploring results](#exploring-results)).
+A guia **[!UICONTROL Calculations]** permite definir eixos de relatórios no target. Esses eixos serão usados durante a análise de resultados (consulte [Exploração de resultados](#exploring-results)).
 
 >[!NOTE]
 >
 >Recomendamos definir eixos de cálculo nos templates de simulação, em vez de individualmente para cada simulação.\
->Simulation templates are saved in the **[!UICONTROL Resources > Templates > Simulation templates]** node of the Adobe Campaign tree.
+>Os modelos de simulação são salvos no nó **[!UICONTROL Resources > Templates > Simulation templates]** da árvore do Adobe Campaign.
 
 **Exemplo:**
 
 No exemplo abaixo, queremos criar um eixo de relatórios adicional com base no status dos recipients (&quot;Cliente&quot;, &quot;Prospecto&quot; ou nenhum).
 
-1. To define a reporting axis, select the table which contains the information to be processed in the **[!UICONTROL Analysis dimension]** field. Essas informações são obrigatórias.
+1. Para definir um eixo de relatórios, selecione a tabela que contém as informações a serem processadas no campo **[!UICONTROL Analysis dimension]**. Essas informações são obrigatórias.
 1. Aqui, queremos selecionar o campo Segmento da tabela de recipients.
 
    ![](assets/simu_campaign_opti_09.png)
@@ -219,13 +219,13 @@ No exemplo abaixo, queremos criar um eixo de relatórios adicional com base no s
       >
       >A seleção dessa opção aumenta consideravelmente o tempo de execução da simulação.
 
-   * **[!UICONTROL Keep the simulation work table]** permite que você mantenha rastreamentos de simulação.
+   * **[!UICONTROL Keep the simulation work table]** permite que você mantenha os rastreamentos de simulação.
 
       >[!IMPORTANT]
       >
       >O salvamento automático dessas tabelas requer uma capacidade de armazenamento significativa: verifique se o banco de dados é grande o suficiente.
 
-When the simulation results are displayed, the information on the selected expression will be displayed in the **[!UICONTROL Overlaps]** sub-tab.
+Quando os resultados da simulação forem exibidos, as informações sobre a expressão selecionada serão exibidas na subguia **[!UICONTROL Overlaps]**.
 
 A sobreposição do target de delivery indica os recipients pretendidos em pelo menos dois deliveries de uma simulação.
 
@@ -233,6 +233,6 @@ A sobreposição do target de delivery indica os recipients pretendidos em pelo 
 
 >[!NOTE]
 >
->This sub-tab is only displayed if the **[!UICONTROL Generate target recovery statistics]** option has been enabled.
+>Esta subguia será exibida somente se a opção **[!UICONTROL Generate target recovery statistics]** tiver sido habilitada.
 
-The information on reporting axes can be processed in exclusion analysis reports created in the **[!UICONTROL Exploring exclusions]** sub-tab. For more on this, refer to [Exploring results](#exploring-results).
+As informações sobre os eixos de relatórios podem ser processadas em relatórios de análise de exclusão criados na subguia **[!UICONTROL Exploring exclusions]**. Para obter mais informações, consulte [Exploração de resultados](#exploring-results).
