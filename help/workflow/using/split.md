@@ -14,7 +14,7 @@ discoiquuid: 9eadfda0-0614-4e4e-aed0-26f0b9222fbd
 index: y
 internal: n
 snippet: y
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: afe286211c21f4fc178ffb5f9f30baed96ebfeab
 
 ---
@@ -24,22 +24,22 @@ source-git-commit: afe286211c21f4fc178ffb5f9f30baed96ebfeab
 
 Uma atividade do tipo **Split** permite dividir um target em vários subconjuntos. O target é construído com todos os resultados recebidos: todas as atividades anteriores devem ter sido concluídas para que essa atividade seja executada.
 
-Essa atividade não aciona uma união de públicos de entrada. If several transitions land in one split activity, we recommend inserting a **[!UICONTROL Union]** activity in front of it.
+Essa atividade não aciona uma união de públicos de entrada. Se várias transições acabarem em uma atividade de Split, é recomendado inserir uma atividade de **[!UICONTROL Union]** na frente.
 
-Para obter um exemplo da atividade de divisão que está sendo usada, consulte [Criar subconjuntos usando a atividade](../../workflow/using/targeting-data.md#creating-subsets-using-the-split-activity)Dividir.
+Para obter um exemplo da atividade de split que está sendo usada, consulte [Criação de subconjuntos usando a atividade de Split](../../workflow/using/targeting-data.md#creating-subsets-using-the-split-activity)
 
 Um exemplo ilustrando como usar a atividade de Split para segmentar o target em diferentes públicos usando condições de filtragem é descrito [nesta seção](../../workflow/using/cross-channel-delivery-workflow.md).
 
-An example showing how to use an instance variable in a Split activity is available in [this section](../../workflow/using/javascript-scripts-and-templates.md).
+Um exemplo mostrando como usar uma variável de instância em uma atividade de Split está disponível [nesta seção](../../workflow/using/javascript-scripts-and-templates.md).
 
-To configure this activity, define the subset content and label in the **[!UICONTROL Subsets]** tab, then choose the target dimension in the **[!UICONTROL General]** tab.
+Para configurar essa atividade, defina o conteúdo do subconjunto e o rótulo na guia **[!UICONTROL Subsets]** e escolha o targeting dimension na guia **[!UICONTROL General]**.
 
 ## Criação de subconjuntos {#creating-subsets}
 
 Para criar um subconjunto:
 
 1. Clique no rótulo no campo correspondente e selecione o filtro a ser aplicado.
-1. Para filtrar a população de entrada, selecione a **[!UICONTROL Add a filtering condition]** opção e clique no **[!UICONTROL Edit...]** link.
+1. Para filtrar o público de entrada, selecione a **[!UICONTROL Add a filtering condition]** opção e clique no **[!UICONTROL Edit...]** link.
 
    Selecione o tipo de filtro a ser aplicado aos dados para incluí-lo neste conjunto.
 
@@ -49,25 +49,25 @@ Para criar um subconjunto:
    >
    >É possível filtrar os dados em um máximo de dois bancos de dados externos (FDA).
 
-1. É possível especificar o número máximo de registros para extrair a partir do target para criar o subconjunto. Para fazer isso, marque a opção **[!UICONTROL Limit the selected records]** e clique no **[!UICONTROL Edit...]** link.
+1. É possível especificar o número máximo de registros para extrair a partir do target para criar o subconjunto. Para fazer isso, marque a **[!UICONTROL Limit the selected records]** opção e clique no **[!UICONTROL Edit...]** link.
 
-   Um assistente permite escolher o modo de seleção para os registros deste subconjunto. As etapas podem ser encontradas em [Limitação do número de registros](#limiting-the-number-of-subset-records)do subconjunto.
+   Um assistente permite escolher o modo de seleção para os registros deste subconjunto. As etapas podem ser encontradas em [Limite de número de registros do subconjunto.](#limiting-the-number-of-subset-records)
 
    ![](assets/s_user_segmentation_partage4.png)
 
-1. If you wish, you can **add other subsets** using the **[!UICONTROL Add]** button.
+1. Se desejar, é possível **adicionar outros subconjuntos** usando o botão **[!UICONTROL Add]**.
 
    ![](assets/s_user_segmentation_partage_add.png)
 
    >[!NOTE]
    >
-   >If the **[!UICONTROL Enable overlapping of output populations]** option is not checked, subsets are created in the order of the tabs. Use as setas na seção superior direita desta janela para movê-las. Se o primeiro subconjunto recupera 70% da população inicial, por exemplo, o próximo subconjunto aplica seus critérios de seleção em apenas nos 30% restantes e assim por diante.
+   >Se a opção **[!UICONTROL Enable overlapping of output populations]** não estiver marcada, os subconjuntos serão criados na ordem das guias. Use as setas na seção superior direita desta janela para movê-las. Se o primeiro subconjunto recupera 70% da população inicial, por exemplo, o próximo subconjunto aplica seus critérios de seleção em apenas nos 30% restantes e assim por diante.
 
    Para cada subconjunto criado, uma transição de saída será adicionada à atividade dividida.
 
    ![](assets/s_user_segmentation_partage_add2.png)
 
-   You can choose to generate a single outbound transition (and identify sets using the segment code, for example): to do this, select the **[!UICONTROL Generate subsets in the same table]** option in the **[!UICONTROL General]** tab.
+   É possível optar por gerar uma única transição de saída (e identificar conjuntos usando o código do segmento, por exemplo): para fazer isso, selecione a opção **[!UICONTROL Generate subsets in the same table]** na guia **[!UICONTROL General]**.
 
    Se estiver concluído, o código do segmento de cada subconjunto será armazenado automaticamente em uma coluna adicional. Essa coluna estará acessível nos campos de personalização no nível de delivery.
 
@@ -75,14 +75,14 @@ Para criar um subconjunto:
 
 Se não quiser usar toda a população contida em um subconjunto, é possível limitar o número de registros que ele conterá.
 
-1. Na janela de edição de subconjunto, marque a **[!UICONTROL Limit the selected records]** opção e clique no **[!UICONTROL Edit...]** link.
+1. Na janela de edição do subconjunto, marque a opção **[!UICONTROL Limit the selected records]** e clique no **[!UICONTROL Edit...]** link.
 1. Selecione o tipo de limite escolhido:
 
    * **[!UICONTROL Activate random sampling]**: essa opção obtém uma amostra aleatória dos registros. O tipo de amostragem aleatória aplicada depende do mecanismo do banco de dados.
-   * **[!UICONTROL Keep only the first records after sorting]**: essa opção permite definir uma limitação com base em uma ou mais ordens de classificação. If you select the **[!UICONTROL Age]** field as a sorting criterion and 100 as the limit, only the youngest 100 recipients will be kept.
-   * **[!UICONTROL Keep the first ones after sorting (criteria, random)]**: Esta opção combina as duas opções anteriores. Ele permite definir uma limitação com base em uma ou mais ordens de classificação e, então, aplicar uma seleção aleatória nos primeiros registros se alguns dos registros tiverem os mesmos valores que os critérios definidos.
+   * **[!UICONTROL Keep only the first records after sorting]**: esta opção permite definir uma limitação baseada em uma ou mais ordens de classificação. Ao selecionar o campo **[!UICONTROL Age]** como um critério de classificação e 100 como o limite, somente os 100 recipients mais jovens serão mantidos.
+   * **[!UICONTROL Keep the first ones after sorting (criteria, random)]**: esta opção combina as duas opções anteriores. Ele permite definir uma limitação com base em uma ou mais ordens de classificação e, então, aplicar uma seleção aleatória nos primeiros registros se alguns dos registros tiverem os mesmos valores que os critérios definidos.
 
-      For example, if you select the **[!UICONTROL Age]** field as a sorting criteria, and you then define a limit of 100, but the 2000 youngest recipients in the database are all 18, then 100 recipients will be randomly selected out of those 2000.
+      Por exemplo, ao selecionar o campo **[!UICONTROL Age]** como critério de classificação e definir um limite de 100, mas os 2000 recipients mais jovens no banco de dados todos têm 18, então 100 recipients serão aleatoriamente selecionados desses 2000.
    ![](assets/s_user_segmentation_partage_wz1.png)
 
 1. Se desejar definir critérios de classificação, uma etapa adicional permite definir as colunas e a ordem de classificação.
@@ -99,39 +99,39 @@ Se não quiser usar toda a população contida em um subconjunto, é possível l
 
       A porcentagem se aplica à população inicial, não ao resultado da atividade.
 
-   * **[!UICONTROL Size (as a % of the segment)]**: uma percentagem dos registros relativos apenas aos subconjuntos e não à população inicial.
+   * **[!UICONTROL Size (as a % of the segment)]**: uma porcentagem dos registros relacionados somente aos subconjuntos e não à população inicial.
    * **[!UICONTROL Maximum size]**: um número máximo de registros.
-   * **[!UICONTROL By data grouping]**: é possível definir um limite no número de registros, dependendo dos valores em um campo especificado da população de entrada. Para obter mais informações sobre esse assunto, consulte [Limitação do número de registros do subconjunto por agrupamento](#limiting-the-number-of-subset-records-by-data-grouping)de dados.
-   * **[!UICONTROL By data grouping (in %)]**: é possível definir um limite no número de registros, dependendo dos valores em um campo especificado da população de entrada, usando uma porcentagem. Para obter mais informações sobre esse assunto, consulte [Limitação do número de registros do subconjunto por agrupamento](#limiting-the-number-of-subset-records-by-data-grouping)de dados.
-   * **[!UICONTROL By data distribution]**: Se os campos de agrupamento tiverem valores demais ou se você quiser evitar inserir os valores novamente para cada nova atividade de divisão, o Adobe Campaign permitirá que você configure uma **[!UICONTROL By data distribution]** limitação (módulo de Marketing Distribuído opcional). Para obter mais informações, consulte [Limitação do número de registros de subconjunto por distribuição](#limiting-the-number-of-subset-records-per-data-distribution)de dados.
+   * **[!UICONTROL By data grouping]**: é possível definir um limite no número de registros dependendo dos valores em um campo especificado da população de entrada. Para obter mais informações sobre esse assunto, consulte [Limite de número de registros de subconjunto por agrupamento de dados](#limiting-the-number-of-subset-records-by-data-grouping).
+   * **[!UICONTROL By data grouping (in %)]**: é possível definir um limite no número de registros dependendo dos valores em um campo especificado da população de entrada usando uma porcentagem. Para obter mais informações sobre esse assunto, consulte [Limite de número de registros de subconjunto por agrupamento de dados](#limiting-the-number-of-subset-records-by-data-grouping).
+   * **[!UICONTROL By data distribution]**: se os campos de agrupamento tiverem muitos valores ou se você não quiser inserir os valores novamente para cada nova atividade de split, o Adobe Campaign permite configurar uma limitação **[!UICONTROL By data distribution]** (módulo opcional Marketing Distribuído). Para obter mais informações, consulte [Limite de números de registros de subconjunto por distribuição de dados](#limiting-the-number-of-subset-records-per-data-distribution).
 
-1. Click **[!UICONTROL Finish]** to approve the record selection criteria. A configuração selecionada é então exibida na janela do meio do editor.
+1. Clique em **[!UICONTROL Finish]** para aprovar o critério de seleção de registro. A configuração selecionada é então exibida na janela do meio do editor.
 
 ## Limite de número de registros de subconjunto por agrupamento de dados {#limiting-the-number-of-subset-records-by-data-grouping}
 
 É possível limitar o número de registros por agrupamento de dados. Esse limite pode ser executado usando um valor fixo ou uma porcentagem.
 
-For instance, if you select the **[!UICONTROL Language]** field as a group field, you can define a list of records for each language.
+Por exemplo, se você selecionar o campo **[!UICONTROL Language]** como um campo de grupo, será possível definir uma lista de registros para cada idioma.
 
 1. Depois de selecionar os valores de limitação de dados, selecione **[!UICONTROL By data grouping]** ou **[!UICONTROL By data grouping (as a %)]** e clique em **[!UICONTROL Next]**.
 
    ![](assets/s_user_segmentation_partage_wz3.png)
 
-1. Then select the grouping field(s) (the **[!UICONTROL Language]** field for instance) and click **[!UICONTROL Next]**.
+1. Então, selecione os campos de agrupamentos (o campo **[!UICONTROL Language]** por exemplo) e clique em **[!UICONTROL Next]**.
 
    ![](assets/s_user_segmentation_partage_wz4.png)
 
-1. Finalmente, especifique os limites de agrupamento de dados (usando valores fixos ou porcentagens, dependendo do método de agrupamento selecionado anteriormente). To set the same threshold for every value, for example if you wish to set the number of records for each language to 10, select the **[!UICONTROL All data groupings are the same size]** option. To set a different limit for every value, select the **[!UICONTROL Limitations by grouping value]** option. Isso permitirá escolher uma limitação diferente para inglês, francês etc.
+1. Finalmente, especifique os limites de agrupamento de dados (usando valores fixos ou porcentagens, dependendo do método de agrupamento selecionado anteriormente). Para definir o mesmo limite para cada valor, por exemplo, se desejar definir o número de registros para cada idioma como 10, selecione a opção **[!UICONTROL All data groupings are the same size]**. Para definir um limite diferente para cada valor, selecione a opção **[!UICONTROL Limitations by grouping value]**. Isso permitirá escolher uma limitação diferente para inglês, francês etc.
 
    ![](assets/s_user_segmentation_partage_wz5.png)
 
-1. Click **[!UICONTROL Finish]** to approve the limitation and return to editing the split activity.
+1. Clique em **[!UICONTROL Finish]** para aprovar a limitação e retornar à edição da atividade de split.
 
 ## Limite de números de registros de subconjunto por distribuição de dados {#limiting-the-number-of-subset-records-per-data-distribution}
 
-Se os campos de agrupamento contiverem um número muito grande de valores ou se quiser evitar redefinir os valores para cada nova atividade dividida, o Adobe Campaign permitirá criar uma limitação por distribuição de dados. When selecting data limitation values (for more on this subject see the [Creating subsets](#creating-subsets) section), select the **[!UICONTROL By data distribution]** option and select a template from the drop-down menu. A criação de um template de distribuição de dados é demonstrada abaixo.
+Se os campos de agrupamento contiverem um número muito grande de valores ou se quiser evitar redefinir os valores para cada nova atividade dividida, o Adobe Campaign permitirá criar uma limitação por distribuição de dados. Ao selecionar valores de limitação de dados (para saber mais sobre esse assunto, veja a seção [Creating subsets](#creating-subsets)), selecione a opção **[!UICONTROL By data distribution]** e selecione um template no menu suspenso. A criação de um template de distribuição de dados é demonstrada abaixo.
 
-Para obter um exemplo da **[!UICONTROL Local approval]** atividade com um modelo de distribuição, consulte [Uso da atividade](../../workflow/using/using-the-local-approval-activity.md)de aprovação local.
+Para obter um exemplo da atividade **[!UICONTROL Local approval]** com um template de distribuição, consulte [Uso da atividade de aprovação local](../../workflow/using/using-the-local-approval-activity.md).
 
 ![](assets/s_user_segmentation_partage_wz6.png)
 
@@ -141,32 +141,32 @@ Para obter um exemplo da **[!UICONTROL Local approval]** atividade com um modelo
 
 O template de distribuição de dados permite limitar o número de registros de uma lista de valores de agrupamento. Aplique as seguintes etapas para criar um template de distribuição de dados:
 
-1. Para criar o modelo de distribuição de dados, vá para o **[!UICONTROL Resources > Campaign management > Data distribution]** nó e clique em **[!UICONTROL New]**.
+1. Para criar o template de distribuição de dados, vá para o nó **[!UICONTROL Resources > Campaign management > Data distribution]** e clique em **[!UICONTROL New]**.
 
    ![](assets/local_validation_data_distribution_1.png)
 
-1. The **[!UICONTROL General]** tab lets you enter the label and the execution context of the distribution (targeting dimension, distribution field).
+1. A guia **[!UICONTROL General]** permite inserir o rótulo e o contexto de execução da distribuição (targeting dimension, campo de distribuição).
 
    ![](assets/local_validation_data_distribution_2.png)
 
    Os seguintes campos precisam ser inseridos:
 
-   * **[!UICONTROL Label]**: rótulo do modelo de distribuição.
-   * **[!UICONTROL Targeting dimension]**: informe a dimensão de definição de metas à qual a distribuição de dados será aplicada, **[!UICONTROL Recipient]** por exemplo. Esse schema deve sempre ser compatível com os dados usados no workflow para construção do target.
-   * **[!UICONTROL Distribution field]**: selecione um campo pela dimensão de definição de metas. For instance, if you select the **[!UICONTROL Email domain]** field, the list of recipients will be broken down by domain.
-   * **[!UICONTROL Distribution type]**: selecione a forma como o valor de limitação do destino será detalhado na **[!UICONTROL Distribution]** guia: **[!UICONTROL Percentage]** ou **[!UICONTROL Set]**.
+   * **[!UICONTROL Label]**: rótulo para o template de distribuição.
+   * **[!UICONTROL Targeting dimension]**: digite a targeting dimension à qual a distribuição de dados será aplicada, **[!UICONTROL Recipient]** por exemplo. Esse schema deve sempre ser compatível com os dados usados no workflow para construção do target.
+   * **[!UICONTROL Distribution field]**: selecione um campo por meio da targeting dimension. Por exemplo, se selecionar o campo **[!UICONTROL Email domain]**, a lista de recipients será dividida por domínio.
+   * **[!UICONTROL Distribution type]**: selecione a forma como o valor de limitação do target será detalhado na guia **[!UICONTROL Distribution]**: **[!UICONTROL Percentage]** ou **[!UICONTROL Set]**.
    * **[!UICONTROL Assignment type]**: selecione o tipo de atribuição de distribuição de dados. É possível escolher entre atribuição por grupo ou operador ou atribuição por entidade local. A atribuição por entidade local é usada no **Marketing distribuído**. Para obter mais informações, consulte esta [seção](../../campaign/using/about-distributed-marketing.md).
-   * **[!UICONTROL Approval storage]**: se você usar uma **[!UICONTROL Local approval]** atividade no fluxo de trabalho de definição de metas (consulte a aprovação [](../../workflow/using/local-approval.md)local), informe o esquema no qual os resultados da aprovação serão armazenados. É necessário especificar um schema de armazenamento por schema de target. Se você usar o esquema de **[!UICONTROL Recipients]** definição de metas, informe o esquema **[!UICONTROL Local approval of recipients]** de armazenamento padrão.
+   * **[!UICONTROL Approval storage]**: se usar uma atividade **[!UICONTROL Local approval]** no workflow para construção do target (consulte [Local approval](../../workflow/using/local-approval.md)), digite o schema no qual os resultados da aprovação serão armazenados. É necessário especificar um schema de armazenamento por schema de target. Se usar o schema de target **[!UICONTROL Recipients]**, insira o schema de armazenamento padrão **[!UICONTROL Local approval of recipients]**.
 
-      In case of a simple limitation by data grouping without local approval, you do not need to enter the **[!UICONTROL Approvals storage]** field.
+      No caso de uma limitação simples por agrupamento de dados sem aprovação local, não é necessário inserir o campo **[!UICONTROL Approvals storage]**.
 
-1. Se você estiver usando uma **[!UICONTROL Local approval]** atividade (consulte Aprovação [](../../workflow/using/local-approval.md)local), informe o modelo **[!UICONTROL Advanced settings]** de distribuição:
+1. Se estiver usando uma atividade **[!UICONTROL Local approval]** (consulte [Local approval](../../workflow/using/local-approval.md)), insira as **[!UICONTROL Advanced settings]** para o template de distribuição:
 
    ![](assets/local_validation_data_distribution_3.png)
 
    Os seguintes campos precisam ser inseridos:
 
-   * **[!UICONTROL Approve targeted messages]**: marque essa opção se desejar que todos os destinatários sejam pré-selecionados na lista de destinatários a serem aprovados. Se esta opção estiver desmarcada, nenhum recipient será pré-selecionado.
+   * **[!UICONTROL Approve targeted messages]**: marque esta opção se quiser que todos os recipients sejam pré-selecionados da lista de recipients a serem aprovados. Se esta opção estiver desmarcada, nenhum recipient será pré-selecionado.
 
       >[!NOTE]
       >
@@ -174,31 +174,31 @@ O template de distribuição de dados permite limitar o número de registros de 
 
       ![](assets/local_validation_notification.png)
 
-   * **[!UICONTROL Delivery label]**: permite definir uma expressão para exibir o rótulo de entrega na notificação de retorno. A expressão padrão fornece informações sobre o rótulo padrão da distribuição (cadeia de caracteres de computação). É possível modificar essa expressão.
+   * **[!UICONTROL Delivery label]**: permite definir uma expressão para exibir o rótulo de delivery na notificação de retorno. A expressão padrão fornece informações sobre o rótulo padrão da distribuição (cadeia de caracteres de computação). É possível modificar essa expressão.
 
       ![](assets/local_validation_notification_3.png)
 
-   * **[!UICONTROL Grouping field]**: esse campo permite definir o agrupamento usado para exibir destinatários nas notificações de aprovação e devolução.
+   * **[!UICONTROL Grouping field]**: este campo permite definir o agrupamento usado para exibir recipients na aprovação e notificações de retorno.
 
       ![](assets/local_validation_notification_4.png)
 
-   * **[!UICONTROL Web Interface]**: permite que você vincule um aplicativo da Web à lista de destinatários. Na notificação de aprovação e retorno, cada recipient é clicável e é vinculado ao aplicativo da Web selecionado. The **[!UICONTROL Parameters]** field (for example **[!UICONTROL recipientId]**) lets you configure the additional parameter to be used in the URL and the web application.
+   * **[!UICONTROL Web Interface]**: permite vincular um aplicação web à lista de recipients. Na notificação de aprovação e retorno, cada recipient é clicável e é vinculado ao aplicativo da Web selecionado. O campo **[!UICONTROL Parameters]** (por exemplo **[!UICONTROL recipientId]**) permite configurar o parâmetro adicional a ser utilizado no URL e no aplicativo da web.
 
       ![](assets/local_validation_notification_5.png)
 
-1. The **[!UICONTROL Breakdown]** tab lets you define the list of distribution values.
+1. A guia **[!UICONTROL Breakdown]** permite definir a lista de valores de distribuição.
 
    ![](assets/local_validation_data_distribution_4.png)
 
-   * **[!UICONTROL Value]**: informe os valores de distribuição.
-   * **[!UICONTROL Percentage / Set]**: informe o limite de registro (fixo ou porcentagem) vinculado a cada valor.
+   * **[!UICONTROL Value]**: digite os valores de distribuição.
+   * **[!UICONTROL Percentage / Set]**: digite o limite de registro (fixo ou porcentagem) vinculado a cada valor.
 
-      Essa coluna é definida pelo **[!UICONTROL Distribution type]** campo dentro da **[!UICONTROL General]** guia.
+      Essa coluna é definida pelo campo **[!UICONTROL Distribution type]** dentro da guia **[!UICONTROL General]**.
 
-   * **[!UICONTROL Label]**: insira o rótulo vinculado a cada valor.
-   * **[!UICONTROL Group or operator]**: se você estiver usando uma **[!UICONTROL Local approval]** atividade (consulte Aprovação [](../../workflow/using/local-approval.md)local), selecione o operador ou grupo de operadores atribuídos a cada valor de distribuição.
+   * **[!UICONTROL Label]**: digite o rótulo vinculado a cada valor.
+   * **[!UICONTROL Group or operator]**: se estiver usando uma atividade **[!UICONTROL Local approval]** (consulte [Local approval](../../workflow/using/local-approval.md)), selecione o operador ou grupo de operadores atribuídos a cada valor de distribuição.
 
-      In case of a simple limitation by data grouping without local approval, you do not need to enter the **[!UICONTROL Group or operator]** field.
+      No caso de uma limitação simples por agrupamento de dados sem aprovação local, não é necessário inserir o campo **[!UICONTROL Group or operator]**.
 
       >[!IMPORTANT]
       >
@@ -208,21 +208,21 @@ O template de distribuição de dados permite limitar o número de registros de 
 
 ## Filtro de parâmetros {#filtering-parameters}
 
-Click the **[!UICONTROL General]** tab to enter the activity label. Selecione o target e o filtro de dimensões para essa divisão. Se necessário, é possível alterar essas dimensões para um determinado subconjunto.
+Clique na guia **[!UICONTROL General]** para acessar o rótulo de atividade. Selecione o target e o filtro de dimensões para essa divisão. Se necessário, é possível alterar essas dimensões para um determinado subconjunto.
 
 ![](assets/s_user_segmentation_partage_general.png)
 
-Check the **[!UICONTROL Generate complement]** option if you wish to exploit the remaining population. O complemento é o target de entrada menos a união dos subconjuntos. Uma transição de saída adicional será adicionada à atividade, da seguinte maneira:
+Marque a opção **[!UICONTROL Generate complement]** se desejar explorar a população restante. O complemento é o target de entrada menos a união dos subconjuntos. Uma transição de saída adicional será adicionada à atividade, da seguinte maneira:
 
 ![](assets/s_user_segmentation_partage_compl.png)
 
 Para que essa opção funcione corretamente, os dados de entrada devem ter uma chave primária.
 
-For example, if the data is read directly from an external database such as Netezza (which does not support the notion of an index) via a **[!UICONTROL Data loading (RDBMS)]** activity, the complement generated by the **[!UICONTROL Split]** activity will be incorrect.
+Por exemplo, se os dados são lidos diretamente de um banco de dados externo, como o Netezza (que não suporta a noção de um índice) por meio de uma **[!UICONTROL Data loading (RDBMS)]** atividade, o complemento gerado pela **[!UICONTROL Split]** atividade estará incorreto.
 
-To avoid this, you can drag and drop an **[!UICONTROL Enrichment]** activity just before the **[!UICONTROL Split]** activity. In the **[!UICONTROL Enrichment]** activity, check the **[!UICONTROL Keep all additional data from the main set]** and specify in the additional data the columns that you want to use for configuring the filters of the **[!UICONTROL Split]** activity. The data from the inbound transition of the **[!UICONTROL Split]** activity are then stored locally in a temporary table on the Adobe Campaign server and the complement can be generated correctly.
+Para evitar isso, é possível arrastar e soltar uma atividade de **[!UICONTROL Enrichment]** antes da atividade de **[!UICONTROL Split]**. Na atividade de **[!UICONTROL Enrichment]**, marque a opção **[!UICONTROL Keep all additional data from the main set]** e especifique nos dados adicionais as colunas que deseja usar para configurar os filtros da atividade de **[!UICONTROL Split]**. Os dados da transição de entrada da atividade de **[!UICONTROL Split]** são armazenados localmente em uma tabela temporária no servidor do Adobe Campaign e o complemento pode ser gerado corretamente.
 
-The **[!UICONTROL Enable overlapping of output populations]** option lets you manage populations belonging to several subsets:
+A opção **[!UICONTROL Enable overlapping of output populations]** permite gerenciar populações pertencentes a vários subconjuntos:
 
 * Quando a caixa não estiver marcada, a atividade dividida garante que um recipient não esteja presente em várias transições de saída, mesmo que ele atenda aos critérios de vários subconjuntos. Eles estarão no target da primeira guia com critérios correspondentes.
 * Quando a caixa for marcada, os recipients poderão ser encontrados em vários subconjuntos se atenderem aos critérios de filtro. O Adobe Campaign recomenda usar critérios exclusivos.
@@ -240,6 +240,6 @@ Cada evento de entrada deve especificar um target definido por esses parâmetros
 * schema
 * recCount
 
-Esse conjunto de três valores identifica o target resultante da exclusão. **[!UICONTROL tableName]** é o nome da tabela que registra os identificadores de metas, **[!UICONTROL schema]** é o esquema da população (normalmente nms:customer) e **[!UICONTROL recCount]** é o número de elementos na tabela.
+Esse conjunto de três valores identifica o target resultante da exclusão. **[!UICONTROL tableName]** é o nome da tabela que registra os identificadores de target, **[!UICONTROL schema]** é o schema do público (normalmente nms:recipient) e **[!UICONTROL recCount]** é o número de elementos na tabela.
 
 A transição associada ao complemento tem os mesmos parâmetros.
