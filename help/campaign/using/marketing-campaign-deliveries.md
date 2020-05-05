@@ -1,8 +1,8 @@
 ---
-title: Entregas da campanha de marketing
-seo-title: Entregas da campanha de marketing
-description: Entregas da campanha de marketing
-seo-description: Saiba mais sobre entregas de campanha de marketing
+title: Deliveries de campanha de marketing
+seo-title: Deliveries de campanha de marketing
+description: Deliveries de campanha de marketing
+seo-description: Saiba mais sobre deliveries de campanha de marketing
 page-status-flag: never-activated
 uuid: 842b501f-7d65-4450-b7ab-aff3942fb96f
 contentOwner: sauviat
@@ -14,19 +14,19 @@ discoiquuid: 8d076211-10a6-4a98-b0d2-29dad154158c
 index: y
 internal: n
 snippet: y
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: eee744eb5bc7a43fd412ffb01f0546385146a978
 
 ---
 
 
-# Entregas da campanha de marketing {#marketing-campaign-deliveries}
+# Deliveries de campanha de marketing {#marketing-campaign-deliveries}
 
 As entregas podem ser criadas através do painel de campanha, um workflow de campanha ou diretamente através da visão geral das remessas.
 
 ## Criar entregas {#creating-deliveries}
 
-To create a delivery linked to a campaign, click the **[!UICONTROL Add a delivery]** link in the campaign dashboard.
+Para criar um delivery vinculado a uma campanha, clique no link **[!UICONTROL Add a delivery]** no painel de campanha.
 
 ![](assets/campaign_op_add_delivery.png)
 
@@ -40,15 +40,15 @@ As configurações sugeridas são apropriadas para os diferentes tipos de delive
 
 Para cada delivery, o gerente de campanha definirá:
 
-* O target principal. Para obter mais informações, consulte [Criar a meta principal em um fluxo de trabalho](#building-the-main-target-in-a-workflow) e [Selecionar a população](#selecting-the-target-population)alvo.
-* O grupo de controle. Para obter mais informações, consulte [Definição de um grupo](#defining-a-control-group)de controle.
+* O target principal. Para obter mais informações, consulte [Criar o target principal em um workflow](#building-the-main-target-in-a-workflow) e [Selecionar a população do target](#selecting-the-target-population).
+* O grupo de controle. Para obter mais informações, consulte [Definição de grupo de controle](#defining-a-control-group).
 * Os seed addresses. Para obter mais informações, consulte [esta seção](../../delivery/using/about-seed-addresses.md).
 
 Algumas dessas informações são herdadas do template.
 
 >[!NOTE]
 >
->Os modelos de campanha são apresentados nos modelos [do](../../campaign/using/marketing-campaign-templates.md#campaign-templates)Campaign.
+>Os templates de campanha são apresentados nos [Campaign templates](../../campaign/using/marketing-campaign-templates.md#campaign-templates).
 
 Para criar o target do delivery, você pode definir critérios de filtragem para os recipients no banco de dados. Este modo de seleção de recipient é apresentado na seção [Enviar Mensagens](../../delivery/using/steps-defining-the-target-population.md) .
 
@@ -56,13 +56,13 @@ Para criar o target do delivery, você pode definir critérios de filtragem para
 
 Você pode importar uma população para uma lista e depois direcionar essa lista nas remessas.
 
-1. To do this, edit the concerned delivery and click the **[!UICONTROL To]** link to change the targeted population.
+1. Para fazer isso, edite o delivery relacionado e clique no link **[!UICONTROL To]** para alterar a população do target.
 
-1. Na **[!UICONTROL Main target]** guia, selecione a **[!UICONTROL Defined via the database]** opção e clique **[!UICONTROL Add]** para selecionar destinatários.
+1. Na guia **[!UICONTROL Main target]**, selecione a opção **[!UICONTROL Defined via the database]** e clique em **[!UICONTROL Add]** para selecionar os recipients.
 
 ![](assets/s_user_target_group_add.png)
 
-1. Escolha **[!UICONTROL A list of recipients]** e clique **[!UICONTROL Next]** para selecioná-lo.
+1. Selecione **[!UICONTROL A list of recipients]** e clique em **[!UICONTROL Next]** para selecioná-la.
 
 ![](assets/s_user_target_group_next.png)
 
@@ -78,7 +78,7 @@ O guia [Automating with workflows](../../workflow/using/executing-a-workflow.md#
 
 #### Criação de um workflow para construção do target {#creating-a-targeting-workflow}
 
-A definição de alvos pode ser criada por meio de uma combinação de condições de filtragem em uma sequência gráfica em um workflow. Você pode criar populações e subpopulações que serão direcionadas de acordo com suas necessidades. To display the workflow editor, click the **[!UICONTROL Targeting and workflows]** tab in the campaign dashboard.
+A definição de alvos pode ser criada por meio de uma combinação de condições de filtragem em uma sequência gráfica em um workflow. Você pode criar populações e subpopulações que serão direcionadas de acordo com suas necessidades. Para exibir o editor de workflow, clique na guia **[!UICONTROL Targeting and workflows]** no painel de campanha.
 
 ![](assets/s_ncs_user_edit_op_wf_link.png)
 
@@ -94,7 +94,7 @@ No diagrama, vincule as queries de definição de metas e agendamento necessári
 
 >[!NOTE]
 >
->Examples and procedure for defining queries are presented in [this section](../../workflow/using/query.md).
+>Os exemplos e o procedimento para definir queries são apresentados [nesta seção](../../workflow/using/query.md).
 
 A seção à esquerda do editor contém uma biblioteca de objetos gráficos que representam atividades. A primeira guia contém as atividades de definição de metas e a segunda contém as atividades de controle de fluxo, que são usadas ocasionalmente para coordenar as atividades de definição de metas.
 
@@ -108,16 +108,16 @@ As funções de execução e formatação do workflow de direcionamento são ace
 
 Você pode criar vários workflows para construção do target para uma única campanha. Para adicionar um workflow:
 
-1. Go to the upper left-hand section of the workflow creation zone, right-click, and select **[!UICONTROL Add]**. You can also use the **[!UICONTROL New]** button located above this zone.
+1. Acesse a seção superior esquerda da área de criação do workflow, clique com o botão direito do mouse e clique em **[!UICONTROL Add]**. Você também pode usar o botão **[!UICONTROL New]** localizado acima dessa área.
 
    ![](assets/s_ncs_user_add_a_wf.png)
 
-1. Select the **[!UICONTROL New workflow]** template and name this workflow.
-1. Click **[!UICONTROL OK]** to confirm creation of the workflow, and then create the diagram for this workflow.
+1. Selecione o template **[!UICONTROL New workflow]** e o nome deste workflow.
+1. Clique em **[!UICONTROL OK]** para confirmar a criação do workflow e, em seguida, crie o diagrama para esse workflow.
 
-#### Execução de um fluxo de trabalho {#executing-a-workflow}
+#### Execução de um workflow {#executing-a-workflow}
 
-Targeting workflows can be launched manually via the **[!UICONTROL Start]** button in the toolbar, provided that you have the appropriate rights.
+Os workflows para construção do target podem ser iniciados manualmente por meio do botão **[!UICONTROL Start]** na barra de ferramentas, desde que você tenha os direitos apropriados.
 
 O direcionamento pode ser programado para execução automática de acordo com um agendamento (agendador) ou um evento (sinal externo, importação de arquivo, etc.).
 
@@ -127,7 +127,7 @@ Os ícones da barra de ferramentas permitem tomar medidas referentes à execuç�
 
 * Iniciar ou reiniciar
 
-   * The **[!UICONTROL Start]** icon lets you launch the targeting workflow. Quando você clica nesse ícone, todas as atividades sem uma transição de entrada são ativadas (exceto saltos de ponto de extremidade).
+   * O ícone **[!UICONTROL Start]** permite iniciar o workflow para construção do target. Quando você clica nesse ícone, todas as atividades sem uma transição de entrada são ativadas (exceto saltos de ponto de extremidade).
 
       ![](assets/s_user_segmentation_start.png)
 
@@ -135,19 +135,19 @@ Os ícones da barra de ferramentas permitem tomar medidas referentes à execuç�
 
       ![](assets/s_user_segmentation_start_status.png)
 
-      The process status changes to **[!UICONTROL Started]**.
+      O status do processo muda para **[!UICONTROL Started]**.
 
-   * Você pode reiniciar o workflow de definição de metas por meio do ícone de barra de ferramentas apropriado. This command may be useful if the **[!UICONTROL Start]** icon is not available, for example when targeting workflow stopping is in progress. In this case, click the **[!UICONTROL Restart]** icon to anticipate the restart. O servidor considera a solicitação, como mostra o status:
+   * Você pode reiniciar o workflow de definição de metas por meio do ícone de barra de ferramentas apropriado. Esse comando pode ser útil se o ícone **[!UICONTROL Start]** não estiver disponível, por exemplo, quando a interrupção do workflow para construção do target estiver em andamento. Nesse caso, clique no ícone **[!UICONTROL Restart]** para antecipar a reinicialização. O servidor considera a solicitação, como mostra o status:
 
       ![](assets/s_user_segmentation_restart_status.png)
 
-      Em seguida, o processo entra em **[!UICONTROL Started]** status.
+      O processo insere o status **[!UICONTROL Started]**.
 
 * Parar ou pausar
 
    * Os ícones da barra de ferramentas permitem interromper ou pausar um workflow de direcionamento em andamento.
 
-      When you click **[!UICONTROL Pause]**, operations in progress **[!UICONTROL are not]** paused, but no other activity is launched until the next restart.
+      Ao clicar em **[!UICONTROL Pause]**, as operações em andamento **[!UICONTROL are not]** são pausadas, mas nenhuma outra atividade é iniciada até a próxima reinicialização.
 
       ![](assets/s_user_segmentation_pause.png)
 
@@ -155,7 +155,7 @@ Os ícones da barra de ferramentas permitem tomar medidas referentes à execuç�
 
       ![](assets/s_user_segmentation_pause_status.png)
 
-      Você também pode pausar um workflow de direcionamento automaticamente quando a execução atinge uma atividade específica. To do this, right-click the activity from which targeting workflow is to be paused, and select **[!UICONTROL Enable but do not execute]**.
+      Você também pode pausar um workflow de direcionamento automaticamente quando a execução atinge uma atividade específica. Para fazer isso, clique com o botão direito do mouse na atividade a partir da qual o workflow para construção do target deve ser pausado e selecione **[!UICONTROL Enable but do not execute]**.
 
       ![](assets/s_user_segmentation_donotexecute.png)
 
@@ -169,14 +169,14 @@ Os ícones da barra de ferramentas permitem tomar medidas referentes à execuç�
 
       Clique em **[!UICONTROL Start]** para retomar a execução.
 
-   * Click the **[!UICONTROL Stop]** icon to stop the execution in progress.
+   * Clique no ícone **[!UICONTROL Stop]** para interromper a execução em andamento.
 
       ![](assets/s_user_segmentation_stop.png)
 
       O servidor considera o comando, como mostra o status:
 
       ![](assets/s_user_segmentation_stop_status.png)
-   Você também pode interromper um workflow de definição de metas automaticamente quando a execução atinge uma atividade. To do this, right-click the activity from which targeting workflow will be stopped, and select **[!UICONTROL Do not activate]**.
+   Você também pode interromper um workflow de definição de metas automaticamente quando a execução atinge uma atividade. Para fazer isso, clique com o botão direito do mouse na atividade a partir da qual o workflow para construção do target será interrompido e selecione **[!UICONTROL Do not activate]**.
 
    ![](assets/s_user_segmentation_donotactivate.png)
 
@@ -190,9 +190,9 @@ Os ícones da barra de ferramentas permitem tomar medidas referentes à execuç�
 
 * Interrupção incondicional
 
-   In the Explorer, select **[!UICONTROL Administration > Production > Object created automatically > Campaign workflows]** to access and act on every campaign workflows.
+   No Explorer, selecione **[!UICONTROL Administration > Production > Object created automatically > Campaign workflows]** para acessar e atuar em todos os workflows da campanha.
 
-   You can unconditionally stop your workflow by clicking the **[!UICONTROL Actions]** icon and selecting **[!UICONTROL Unconditional]** stop. Esta ação encerra o workflow da campanha.
+   Você pode interromper o workflow definitivamente clicando no ícone **[!UICONTROL Actions]** e selecionando a interrupção **[!UICONTROL Unconditional]**. Esta ação encerra o workflow da campanha.
 
    ![](assets/s_user_segmentation_stop_unconditional.png)
 
@@ -204,23 +204,23 @@ O grupo de controle pode ser extraído do target principal e/ou vir de um grupo 
 
 #### Ativar o grupo de controle para uma campanha {#activating-the-control-group-for-a-campaign}
 
-Você pode definir um grupo de controle no nível da campanha, caso em que o grupo de controle será aplicado a cada entrega da campanha em questão.
+Você pode definir um grupo de controle no nível da campanha, nesse caso, o grupo de controle será aplicado a cada delivery da campanha relacionado.
 
-1. Edite a campanha em questão e clique na **[!UICONTROL Edit]** guia.
+1. Edite a campanha relacionada e clique na guia **[!UICONTROL Edit]**.
 1. Clique em **[!UICONTROL Advanced campaign settings]**.
 
    ![](assets/s_ncs_user_edit_op_target.png)
 
-1. Selecione a **[!UICONTROL Enable and edit control group configuration]** opção.
+1. Selecione a opção **[!UICONTROL Enable and edit control group configuration]**.
 1. Clique em **[!UICONTROL Edit...]** para configurar o grupo de controle.
 
    ![](assets/s_ncs_user_edit_op_general_tab_exe_target.png)
 
-O procedimento de configuração é apresentado em [Extrair o grupo de controle do alvo](#extracting-the-control-group-from-the-main-target) principal e [Adicionar uma população](#adding-a-population).
+O procedimento de configuração é apresentado em [Extração do grupo de controle do target principal](#extracting-the-control-group-from-the-main-target) e [Adicionar uma população](#adding-a-population).
 
-#### Ativar o grupo de controle para uma entrega {#activating-the-control-group-for-a-delivery}
+#### Ativar o grupo de controle para um delivery {#activating-the-control-group-for-a-delivery}
 
-Você pode definir um grupo de controle no nível da entrega, caso em que o grupo de controle será aplicado a cada entrega da campanha em questão.
+Você pode definir um grupo de controle no nível do delivery, nesse caso, o grupo de controle será aplicado a cada delivery da campanha relacionado.
 
 Por padrão, a configuração do grupo de controle definida no nível da campanha se aplica a cada delivery dessa campanha. Entretanto, você pode adaptar o grupo de controle de um delivery individual.
 
@@ -228,14 +228,14 @@ Por padrão, a configuração do grupo de controle definida no nível da campanh
 >
 >Se você tiver definido um grupo de controle para uma campanha e também configurá-lo para um delivery vinculado a essa campanha, somente o grupo de controle definido para o delivery será aplicado.
 
-1. Edite a entrega em questão e clique no **[!UICONTROL To]** link na **[!UICONTROL Email parameters]** seção.
+1. Edite o delivery relacionado e clique no link **[!UICONTROL To]** na seção **[!UICONTROL Email parameters]**.
 
    ![](assets/s_ncs_user_edit_op_target_del.png)
 
-1. Clique na **[!UICONTROL Control group]** guia e selecione **[!UICONTROL Enable and edit control group configuration]**.
+1. Clique na guia **[!UICONTROL Control group]** e selecione **[!UICONTROL Enable and edit control group configuration]**.
 1. Clique em **[!UICONTROL Edit...]** para configurar o grupo de controle.
 
-O procedimento de configuração é apresentado em [Extrair o grupo de controle do alvo](#extracting-the-control-group-from-the-main-target) principal e [Adicionar uma população](#adding-a-population).
+O procedimento de configuração é apresentado em [Extração do grupo de controle do target principal](#extracting-the-control-group-from-the-main-target) e [Adicionar uma população](#adding-a-population).
 
 #### Extração do grupo de controle do target principal {#extracting-the-control-group-from-the-main-target}
 
@@ -243,12 +243,12 @@ Você pode extrair recipients do target principal do delivery. Nesse caso, os re
 
 ![](assets/s_ncs_user_extract_from_target_population.png)
 
-To extract a control group, enable the control group for the campaign or delivery and select one of the following options: **[!UICONTROL Activate random sampling]** or **[!UICONTROL Keep only the first records after sorting]**.
+Para extrair um grupo de controle, ative o grupo de controle para a campanha ou delivery e selecione uma das seguintes opções: **[!UICONTROL Activate random sampling]** ou **[!UICONTROL Keep only the first records after sorting]**.
 
-* **[!UICONTROL Activate random sampling]** : esta opção aplica amostragem aleatória aos destinatários na população-alvo. Se você definir o limite como 100, o grupo de controle será constituído de 100 recipients selecionados aleatoriamente da população direcionada. A amostragem aleatória depende do mecanismo de banco de dados.
-* **[!UICONTROL Keep only the first records after sorting]** : essa opção permite definir uma limitação com base em uma ou mais ordens de classificação. If you select the **[!UICONTROL Age]** field as a sorting criterion and then define 100 as a threshold, the control group will be made up of the 100 youngest recipients. Por exemplo, pode ser interessante definir um grupo de controle que inclua recipients que façam poucas compras ou recipients que façam compras frequentes e comparar seu comportamento com os recipients contatados.
+* **[!UICONTROL Activate random sampling]**: esta opção aplica amostras aleatórias aos recipients na população direcionada. Se você definir o limite como 100, o grupo de controle será constituído de 100 recipients selecionados aleatoriamente da população direcionada. A amostragem aleatória depende do mecanismo de banco de dados.
+* **[!UICONTROL Keep only the first records after sorting]**: esta opção permite definir uma limitação baseada em uma ou mais ordens de classificação. Se você selecionar o campo **[!UICONTROL Age]** como um critério de classificação e, em seguida, definir 100 como limite, o grupo de controle será constituído dos 100 recipients mais jovens. Por exemplo, pode ser interessante definir um grupo de controle que inclua recipients que façam poucas compras ou recipients que façam compras frequentes e comparar seu comportamento com os recipients contatados.
 
-Click **[!UICONTROL Next]** to define the sorting order (if necessary) and select the recipient limitation mode.
+Clique em **[!UICONTROL Next]** para definir a ordem de classificação (se necessário) e selecione o modo de limitação do recipient.
 
 ![](assets/s_ncs_user_edit_op_target_param.png)
 
@@ -262,25 +262,25 @@ Você pode definir uma nova população a ser usada como um grupo de controle. E
 
 >[!NOTE]
 >
->O editor de query do Adobe Campaign é apresentado  [nesta seção](../../workflow/using/query.md).
+>O editor de query do Adobe Campaign é apresentado [nesta seção](../../workflow/using/query.md).
 
 ## Iniciar um delivery {#starting-a-delivery}
 
-Depois que todas as aprovações tiverem sido concedidas, o delivery estará pronto para ser iniciado. O procedimento de delivery depende do tipo de delivery. Para entregas por email ou canais móveis, consulte [Iniciar uma entrega](#starting-an-online-delivery)online e para entregas por mala direta, consulte [Iniciar uma entrega](#starting-an-offline-delivery)offline.
+Depois que todas as aprovações tiverem sido concedidas, o delivery estará pronto para ser iniciado. O procedimento de delivery depende do tipo de delivery. Para deliveries de email ou canais móveis, consulte [Iniciar um delivery online](#starting-an-online-delivery) e para entregas por mala direta, consulte [Iniciar um delivery offline ](#starting-an-offline-delivery).
 
 ### Iniciar um delivery on-line {#starting-an-online-delivery}
 
-Once all approval requests have been granted, the delivery status changes to **[!UICONTROL Pending confirmation]** and can be started by an operator. Quando apropriado, o operador (ou grupo de operadores) do Adobe Campaign designado como revisor para iniciar o delivery é notificado de que um delivery está pronto para ser iniciado.
+Depois que todas as solicitações de aprovação tiverem sido concedidas, o status do delivery será alterado para **[!UICONTROL Pending confirmation]** e ele poderá ser iniciado por um operador. Quando apropriado, o operador (ou grupo de operadores) do Adobe Campaign designado como revisor para iniciar o delivery é notificado de que um delivery está pronto para ser iniciado.
 
 >[!NOTE]
 >
->Se um operador ou grupo de operadores específico for designado para iniciar um delivery nas propriedades do delivery, você também poderá permitir que o operador responsável pelo delivery confirme o delivery. Para fazer isso, ative a opção **NMS_ActivateOwnerConfirmation** inserindo **1** como o valor. As opções são gerenciadas no nó **[!UICONTROL Administration]** > **[!UICONTROL Platform]** > **[!UICONTROL Options]** no Adobe Campaign explorer.
+>Se um operador ou grupo de operadores específico for designado para iniciar um delivery nas propriedades do delivery, você também poderá permitir que o operador responsável pelo delivery confirme o delivery. Para fazer isso, ative a opção **NMS_ActivateOwnerConfirmation** inserindo **1** como o valor. As opções são gerenciadas no nó **[!UICONTROL Administration]** > **[!UICONTROL Platform]** > **[!UICONTROL Options]** no explorador do Adobe Campaign.
 >  
 >Para desativar essa opção, insira **0** como valor. O processo de confirmação de delivery funcionará como padrão: somente o operador ou grupo de operadores designado ao delivery nas propriedades de delivery (ou um administrador) poderá confirmar e realizar o delivery.
 
 ![](assets/s_ncs_user_edit_del_to_start_from_del.png)
 
-As informações também aparecem no painel de campanha. The **[!UICONTROL Confirm delivery]** link lets you start the delivery.
+As informações também aparecem no painel de campanha. O link **[!UICONTROL Confirm delivery]** permite iniciar o delivery.
 
 ![](assets/s_ncs_user_edit_del_to_start.png)
 
@@ -288,17 +288,17 @@ Uma mensagem de confirmação permite que você proteja esta ação.
 
 ### Iniciar um delivery off-line {#starting-an-offline-delivery}
 
-Once all approvals have been granted, the delivery status changes to **[!UICONTROL Pending extraction]**. Os arquivos de extração são criados por um workflow especial, que em uma configuração padrão, inicia automaticamente quando um delivery de mala direta está com extração pendente. Quando um processo está em andamento, ele é exibido no painel e pode ser editado através do link.
+Após todas as aprovações serem concedidas, o status do delivery será alterado para **[!UICONTROL Pending extraction]**. Os arquivos de extração são criados por um workflow especial, que em uma configuração padrão, inicia automaticamente quando um delivery de mala direta está com extração pendente. Quando um processo está em andamento, ele é exibido no painel e pode ser editado através do link.
 
 >[!NOTE]
 >
->Os fluxos de trabalho técnicos relativos aos processos de campanha são apresentados na [Lista de fluxos de trabalho](../../workflow/using/campaign.md)do processo de campanha.
+>Os workflows técnicos relativos aos processos de campanha são apresentados na [Lista de workflows do processo de campanha](../../workflow/using/campaign.md).
 
 **Etapa 1 - Aprovação de arquivo**
 
 Após executar o workflow de extração com sucesso, o arquivo de extração deve ser aprovado (fornecido de forma que a aprovação do arquivo de extração tenha sido selecionada nas configurações do delivery).
 
-Para obter mais informações, consulte [Aprovação de um arquivo](../../campaign/using/marketing-campaign-approval.md#approving-an-extraction-file)de extração.
+Para obter mais informações, consulte [Aprovação de um arquivo de extração](../../campaign/using/marketing-campaign-approval.md#approving-an-extraction-file).
 
 **Etapa 2 - Aprovação da mensagem para o provedor de serviços**
 
@@ -311,19 +311,19 @@ Para obter mais informações, consulte [Aprovação de um arquivo](../../campai
 ![](assets/s_ncs_user_file_valid_select_BAT.png)
 
 
-* Clique no **[!UICONTROL Send a proof]** botão para criar as provas.
+* Clique no botão **[!UICONTROL Send a proof]** para criar as provas.
 
    O target da prova deve ser definido com antecedência.
 
-   Você pode criar quantas provas forem necessárias. These are accessed via the **[!UICONTROL Direct mail...]** link of the delivery detail.
+   Você pode criar quantas provas forem necessárias. Elas são acessadas por meio do link **[!UICONTROL Direct mail...]** dos detalhes de delivery.
 
    ![](assets/s_ncs_user_file_notif_submit_proof.png)
 
-* O status da entrega muda para **[!UICONTROL To submit]**. Click the **[!UICONTROL Submit proofs]** button to start the approval process.
+* O status do delivery é alterado para **[!UICONTROL To submit]**. Clique no botão **[!UICONTROL Submit proofs]** para iniciar o processo de aprovação.
 
    ![](assets/s_ncs_user_file_notif_submit_proof_validation.png)
 
-* The delivery status changes to **[!UICONTROL Proof to validate]** and a button lets you accept or reject approval.
+* O status do delivery muda para **[!UICONTROL Proof to validate]**, e um botão permite aceitar ou rejeitar a aprovação.
 
    ![](assets/s_ncs_user_file_notif_supplier_link.png)
 
@@ -337,42 +337,42 @@ Para obter mais informações, consulte [Aprovação de um arquivo](../../campai
 
 A extração de arquivo inicia duas operações: cálculo de orçamento e cálculo de estoque. As entradas do orçamento são atualizadas.
 
-* The **[!UICONTROL Budget]** tab lets you manage the budgets for the campaign. The total of the cost entries is shown in the **[!UICONTROL Calculates cost]** field of the campaign&#39;s main tab and the program it belongs to. Os montantes também são refletidos no orçamento da campanha.
+* A guia **[!UICONTROL Budget]** permite gerenciar os orçamentos da campanha. O total das entradas de custo é exibido no campo **[!UICONTROL Calculates cost]** da guia principal da campanha e o programa ao qual ele pertence. Os montantes também são refletidos no orçamento da campanha.
 
    O custo real será calculado de acordo com as informações fornecidas pelo roteador. Apenas mensagens enviadas são faturadas.
 
-* As ações são definidas no **[!UICONTROL Administration > Campaign management > Stocks]** nó da árvore e as estruturas de custo no **[!UICONTROL Administration > Campaign management > Service providers]** nó.
+* Os estoques são definidos no nó **[!UICONTROL Administration > Campaign management > Stocks]** da árvore, e as estruturas de custo no nó **[!UICONTROL Administration > Campaign management > Service providers]**.
 
    As linhas de estoque estão visíveis na seção de estoque. Para definir o estoque inicial, abra uma linha de estoque. O estoque é reduzido sempre que um delivery ocorre. Você pode definir um nível de alerta e notificações.
 
 >[!NOTE]
 >
->Para obter mais informações sobre cálculos de custos e gerenciamento de ações, consulte [Provedores, ações e orçamentos](../../campaign/using/providers--stocks-and-budgets.md).
+>Para obter mais informações sobre cálculos de custos e gerenciamento de estoque, consulte [Provedores, estoques e orçamentos](../../campaign/using/providers--stocks-and-budgets.md).
 
 ## Gerenciar documentos associados {#managing-associated-documents}
 
-Você pode associar vários documentos a uma campanha: relatório, foto, página da Web, diagrama, etc. Esses documentos podem estar em qualquer formato (Microsoft Word, PowerPoint, PNG, JPG, Acrobat PDF etc.). To link documents with a campaign, see [Adding documents](#adding-documents).
+Você pode associar vários documentos a uma campanha: relatório, foto, página da Web, diagrama, etc. Esses documentos podem estar em qualquer formato (Microsoft Word, PowerPoint, PNG, JPG, Acrobat PDF etc.). Para vincular documentos com uma campanha, consulte [Adicionar documentos](#adding-documents).
 
 >[!IMPORTANT]
 >
 >Esse modo é reservado para documentos pequenos.
 
-Em uma campanha que você também pode consultar outros itens, como cupons promocionais, ofertas especiais relacionadas a uma filial específica ou loja, etc. Quando esses elementos estão incluídos em um outline, eles podem ser associados a um delivery de mala direta. See [Associating and structuring resources linked via a delivery outline](#associating-and-structuring-resources-linked-via-a-delivery-outline).
+Em uma campanha que você também pode consultar outros itens, como cupons promocionais, ofertas especiais relacionadas a uma filial específica ou loja, etc. Quando esses elementos estão incluídos em um outline, eles podem ser associados a um delivery de mala direta. Consulte [Associar e estruturar recursos vinculados por meio de um delivery outline](#associating-and-structuring-resources-linked-via-a-delivery-outline)
 
 >[!NOTE]
 >
->Se você estiver usando o MRM, também poderá gerenciar uma biblioteca de recursos de marketing disponíveis para vários participantes de trabalho colaborativo. Consulte [Gerenciamento de recursos](../../campaign/using/managing-marketing-resources.md)de marketing.
+>Se você estiver usando o MRM, também poderá gerenciar uma biblioteca de recursos de marketing disponíveis para vários participantes de trabalho colaborativo. Consulte [Gerenciar recursos de marketing](../../campaign/using/managing-marketing-resources.md).
 
 ### Adicionar documentos {#adding-documents}
 
 Os documentos podem ser associados no nível da campanha (documentos contextuais) ou no nível do programa (documentos gerais).
 
-A **[!UICONTROL Documents]** guia contém:
+A guia **[!UICONTROL Documents]** contém:
 
 * A lista de todos os documentos necessários para o conteúdo (template, imagens etc.) que pode ser baixado localmente pelos operadores do Adobe Campaign com direitos adequados,
 * Documentos contendo informações para o roteador, se houver.
 
-The documents are linked to the program or the campaign via the **[!UICONTROL Edit > Documents]** tab.
+Os documentos são vinculados ao programa ou à campanha através da guia **[!UICONTROL Edit > Documents]**.
 
 ![](assets/s_ncs_user_op_add_document.png)
 
@@ -380,11 +380,11 @@ Você também pode adicionar um documento a uma campanha através do link oferec
 
 ![](assets/add_a_document_in_op.png)
 
-Click the **[!UICONTROL Details]** icon to view the content of a file and to add information:
+Clique no ícone **[!UICONTROL Details]** para exibir o conteúdo de um arquivo e adicionar informações:
 
 ![](assets/s_ncs_user_op_add_document_details.png)
 
-In the dashboard, documents associated with the campaign are grouped in the **[!UICONTROL Document(s)]** section, as in the following example:
+No painel, os documentos associados à campanha são agrupados na seção **[!UICONTROL Document(s)]**, como no exemplo a seguir:
 
 ![](assets/s_ncs_user_op_edit_document.png)
 
@@ -394,7 +394,7 @@ Eles também podem ser editados e modificados nessa visualização.
 
 >[!NOTE]
 >
->Os contornos de entrega são usados exclusivamente no contexto de campanhas de mala direta.
+>Delivery outlines são usados exclusivamente no contexto de campanhas de mala direta.
 
 Um delivery outline indica um conjunto estruturado de elementos (documentos, ramificações/lojas, cupons promocionais etc.) criados na empresa e para uma campanha específica.
 
@@ -404,41 +404,41 @@ Para uma campanha, delivery outlines permitem que você estruture elementos exte
 
 #### Criar uma estrutura de tópicos {#creating-an-outline}
 
-To create an outline, click the **[!UICONTROL Delivery outlines]** sub-tab in the **[!UICONTROL Edit > Documents]** tab of the concerned campaign.
+Para criar um outline, clique na guia **[!UICONTROL Delivery outlines]** da campanha relacionada e depois clique na subguia **[!UICONTROL Edit > Documents]**.
 
 >[!NOTE]
 >
 >Se essa guia não estiver presente, significa que esse recurso não está disponível para esta campanha. Consulte a configuração do template de campanha.
 >   
->For more on this, refer to [Campaign templates](../../campaign/using/marketing-campaign-templates.md#campaign-templates).
+>Para obter mais informações, consulte [templates de campanha](../../campaign/using/marketing-campaign-templates.md#campaign-templates).
 
 ![](assets/s_ncs_user_op_composition_link.png)
 
-Next, click **[!UICONTROL Add a delivery outline]** and create the hierarchy of outlines for the campaign:
+Em seguida, clique em **[!UICONTROL Add a delivery outline]** e crie a hierarquia de outlines para a campanha:
 
-1. Right-click the root of the tree and select **[!UICONTROL New > Delivery outlines]**.
-1. Clique com o botão direito do mouse no contorno que acabou de criar e selecione **[!UICONTROL New > Item]** ou **[!UICONTROL New > Personalization fields]**.
+1. Clique com o botão direito do mouse na raiz da árvore e selecione **[!UICONTROL New > Delivery outlines]**.
+1. Clique com o botão direito do mouse no outline recém criado e selecione **[!UICONTROL New > Item]** ou **[!UICONTROL New > Personalization fields]**.
 
 ![](assets/s_ncs_user_op_add_composition.png)
 
 Uma estrutura pode conter itens e campos de personalização, recursos e ofertas:
 
 * Os itens podem ser documentos físicos, por exemplo, que são referenciados e descritos aqui e serão anexados ao delivery.
-* Os campos de personalização permitem que você crie elementos de personalização relacionados a remessas em vez de recipients. Assim, é possível criar valores a serem usados em entregas para uma meta específica (oferta de boas-vindas, desconto, etc.) Eles são criados no Adobe Campaign e importados para o outline por meio do **[!UICONTROL Import personalization fields...]** link.
+* Os campos de personalização permitem que você crie elementos de personalização relacionados a remessas em vez de recipients. Assim, é possível criar valores que serão usados em deliveries para um target específico (oferta de boas-vindas, desconto, etc.) Eles são criados no Adobe Campaign e importados para o outline por meio do link **[!UICONTROL Import personalization fields...]**.
 
    ![](assets/s_ncs_user_op_add_composition_field.png)
 
-   They can also be created directly in the outline by clicking the **[!UICONTROL Add]** icon to the right of the list zone.
+   Eles também podem ser criados diretamente no outline clicando no ícone **[!UICONTROL Add]** à direita da zona de lista.
 
    ![](assets/s_ncs_user_op_add_composition_field_button.png)
 
-* The resources are marketing resources generated in the marketing resource dashboard accessed via the **[!UICONTROL Resources]** link of the **[!UICONTROL Campaigns]** universe.
+* Os recursos são de marketing, gerados no painel de recursos de marketing acessado por meio do link **[!UICONTROL Resources]** do universo **[!UICONTROL Campaigns]**.
 
    ![](assets/s_ncs_user_mkg_resource_ovv.png)
 
    >[!NOTE]
    >
-   >Para obter mais informações sobre recursos de marketing, consulte [Gerenciamento de recursos](../../campaign/using/managing-marketing-resources.md)de marketing.
+   >Para obter mais informações sobre recursos de marketing, consulte [Gerenciamento de recursos de marketing](../../campaign/using/managing-marketing-resources.md).
 
 #### Selecionar uma estrutura {#selecting-an-outline}
 
@@ -450,7 +450,7 @@ A estrutura selecionada é então exibida na seção inferior da janela. Ele pod
 
 ![](assets/s_ncs_user_op_select_composition_b.png)
 
-The **[!UICONTROL Summary]** tab of the delivery also displays this information:
+A guia **[!UICONTROL Summary]** do delivery também exibe essas informações:
 
 ![](assets/s_ncs_user_op_select_composition_c.png)
 
@@ -462,7 +462,7 @@ No seguinte exemplo, o rótulo, custo estimado e descrição do outline associad
 
 ![](assets/s_ncs_user_op_composition_in_export_template.png)
 
-O modelo de exportação deve estar associado ao provedor de serviços selecionado para o delivery. See [Creating service providers and their cost structures](../../campaign/using/providers--stocks-and-budgets.md#creating-service-providers-and-their-cost-structures).
+O modelo de exportação deve estar associado ao provedor de serviços selecionado para o delivery. Consulte [Criação de provedores de serviços e suas estruturas de custo](../../campaign/using/providers--stocks-and-budgets.md#creating-service-providers-and-their-cost-structures).
 
 >[!NOTE]
 >
