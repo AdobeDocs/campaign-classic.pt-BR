@@ -14,7 +14,7 @@ discoiquuid: c7c67ee5-ad60-420f-b597-08c388049529
 index: y
 internal: n
 snippet: y
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 963aaa81971a8883b944bfcf4d1a00d729627916
 
 ---
@@ -26,13 +26,13 @@ source-git-commit: 963aaa81971a8883b944bfcf4d1a00d729627916
 
 Comece a usar o Adobe Campaign consultando nossos intuitivos guias passo a passo.
 
-* [Edição de conteúdo de e-mail com o Adobe Experience Manager](https://docs.campaign.adobe.com/doc/AC/getting_started/EN/aem.html): conheça as noções básicas para começar a usar a integração entre o Adobe Campaign Manager e o Experience Manager.
-* [Gerenciamento](https://helpx.adobe.com/campaign/kb/acc-privacy.html)de privacidade: descubra o que o Adobe Campaign Classic oferece para ajudá-lo com sua conformidade com privacidade ao usar nosso serviço.
-* [Integração de conteúdo dinâmico em um e-mail](https://docs.campaign.adobe.com/doc/AC/getting_started/EN/target.html): descubra os conceitos básicos para começar a integração entre o Campaign Classic e o Target Standard.
-* [Gestão da capacidade de entrega](https://docs.campaign.adobe.com/doc/AC/getting_started/EN/deliverability.html): conheça os conceitos e as práticas recomendadas relacionadas à capacidade de entrega, bem como as ferramentas oferecidas pelo Adobe Campaign Classic para otimizar o envio de suas entregas.
-* [Práticas recomendadas de entrega](https://docs.campaign.adobe.com/doc/AC/getting_started/EN/deliveryBestPractices.html): conheça as práticas recomendadas relacionadas ao planejamento de entrega e envio com o Adobe Campaign Classic.
-* [Execução de uma atualização de compilação](https://docs.campaign.adobe.com/doc/AC/getting_started/EN/buildUpgrade.html): este guia apresenta as principais etapas e práticas recomendadas para realizar uma atualização de compilação com o Campaign Classic.
-* Lista de [verificação de configuração de segurança](https://docs.campaign.adobe.com/doc/AC/getting_started/EN/security.html): descubra elementos-chave para verificar a configuração de segurança e a proteção para a implantação no local
+* [Edição de conteúdo de e-mail com o Adobe Experience Manager](https://helpx.adobe.com/br/campaign/kb/acc-aem.html): conheça as noções básicas para começar a usar a integração entre o Adobe Campaign Manager e o Experience Manager.
+* [Gestão de privacidade](https://helpx.adobe.com/br/campaign/kb/acc-privacy.html): descubra o que o Adobe Campaign Classic oferece para ajudá-lo com a conformidade de Privacidade ao usar nosso serviço.
+* [Integração de conteúdo dinâmico em um e-mail](https://docs.adobe.com/content/help/pt-BR/campaign-classic/using/integrating-with-adobe-experience-cloud/adobe-target/inserting-a-dynamic-image.html): descubra os conceitos básicos para começar a integração entre o Campaign Classic e o Target Standard.
+* [Gestão da capacidade de entrega](https://docs.adobe.com/content/help/pt-BR/campaign-classic/using/sending-messages/deliverability-management/about-deliverability.html): conheça os conceitos e as práticas recomendadas relacionadas à capacidade de entrega, bem como as ferramentas oferecidas pelo Adobe Campaign Classic para otimizar o envio de suas entregas.
+* [Práticas recomendadas de entrega](https://helpx.adobe.com/br/campaign/kb/delivery-best-practices.html): conheça as práticas recomendadas relacionadas ao planejamento de entrega e envio com o Adobe Campaign Classic.
+* [Execução de uma atualização de compilação](https://helpx.adobe.com/br/campaign/kb/acc-build-upgrade.html): este guia apresenta as principais etapas e práticas recomendadas para realizar uma atualização de compilação com o Campaign Classic.
+* Lista de [verificação de configuração de segurança](https://helpx.adobe.com/br/campaign/kb/acc-security.html): descubra elementos-chave para verificar a configuração de segurança e a proteção para a implantação no local
 
 Saiba mais sobre o Adobe Campaign verificando os seguintes casos de uso e exemplos:
 
