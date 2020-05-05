@@ -14,7 +14,7 @@ discoiquuid: dd3d14cc-5153-428d-a98a-32b46f0fe811
 index: y
 internal: n
 snippet: y
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 5ae1f5462dd3e6c4858a27cadae24eb732c0535b
 
 ---
@@ -85,7 +85,7 @@ Se você deseja gerenciar vários acessos a um banco de dados externo do FDA, um
 
 ## Otimização da personalização de e-mail com dados externos {#optimizing-email-personalization-with-external-data}
 
-Na compilação 8740, a opção agora **[!UICONTROL Prepare the personalization data with a workflow]** está disponível na guia **[!UICONTROL Analysis]** das propriedades de entrega.
+Na build 8740, agora a opção **[!UICONTROL Prepare the personalization data with a workflow]** está disponível na guia **[!UICONTROL Analysis]** das propriedades de delivery.
 
 Durante a análise de delivery, essa opção cria e executa automaticamente um workflow que armazena todos os dados vinculados ao Target em uma tabela temporária, incluindo dados de tabelas vinculadas na FDA.
 
