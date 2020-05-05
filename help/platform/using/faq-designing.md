@@ -1,7 +1,7 @@
 ---
 title: Perguntas frequentes sobre o design de mensagens
 seo-title: Perguntas comuns ao projetar mensagens
-description: Perguntas frequentes do Campaign Classic
+description: Perguntas frequentes sobre o Adobe Campaign Classic
 page-status-flag: never-activated
 uuid: 3f719ac2-cc26-4fb0-adda-84666c8c38e1
 contentOwner: sauviat
@@ -13,7 +13,7 @@ discoiquuid: 16dbe423-018f-4666-9901-2120a8dc609a
 index: y
 internal: n
 snippet: y
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 2ca8fb051dce9abfcb8987c4d4527d997b480f96
 
 ---
@@ -27,7 +27,7 @@ Descubra as principais etapas para criar mensagens omnichannel com o Adobe Campa
 
 Antes de começar a criar e-mails, aprenda os conceitos e as práticas recomendadas com relação à criação e ao envio de entregas com o Adobe Campaign.
 
-[Clique aqui para saber mais](https://docs.campaign.adobe.com/doc/AC/getting_started/EN/deliveryBestPractices.html).
+[Clique aqui para saber mais](https://helpx.adobe.com/br/campaign/kb/delivery-best-practices.html).
 
 ## O que é um modelo de entrega? {#what-is-a-delivery-template-}
 
