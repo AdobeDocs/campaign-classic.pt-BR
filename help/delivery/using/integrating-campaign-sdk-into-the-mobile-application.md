@@ -14,7 +14,7 @@ discoiquuid: 7b5a1ad6-da5a-4cbd-be51-984c07c8d0b3
 index: y
 internal: n
 snippet: y
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: a8c4face331ab6d646480322c0f53a7147251aa6
 
 ---
@@ -30,7 +30,7 @@ SDKs do Campaign para iOS e Android são um dos componentes do módulo do canal 
 
 O objetivo do SDK é facilitar a integração de um aplicativo móvel na plataforma Adobe Campaign.
 
-Para saber mais sobre as diferentes versões do Android e do iOS compatíveis, consulte a [Matriz de compatibilidade](https://helpx.adobe.com/campaign/kb/compatibility-matrix.html#MobileSDK) .
+Para saber mais sobre as diferentes versões do Android e do iOS compatíveis, consulte a [Matriz de compatibilidade](https://helpx.adobe.com/br/campaign/kb/compatibility-matrix.html#MobileSDK) .
 
 ## Carregamento do SDK do Campaign {#loading-campaign-sdk}
 
@@ -58,9 +58,7 @@ Para saber mais sobre as diferentes versões do Android e do iOS compatíveis, c
 
    >[!NOTE]
    >
-   >Para a versão 1.0.25 do SDK, as quatro
-								arquiteturas estão disponíveis no
-									arquivo **Neolane_SDK.h**.
+   >Para a versão 1.0.25 do SDK, as quatro arquiteturas estão disponíveis no arquivo **Neolane_SDK.h**.
 
 ## Configuração de integração declarativa {#declaring-integration-settings}
 
@@ -70,7 +68,7 @@ Para integrar o SDK do Campaign no aplicativo móvel, o administrador funcional 
 
    >[!NOTE]
    >
-   >This integration key is entered in the Adobe Campaign console, in the **[!UICONTROL Information]** tab of service dedicated to the mobile application. Consulte [Configurar um aplicativo móvel no Adobe Campaign](../../delivery/using/configuring-the-mobile-application.md).
+   >Essa chave de integração é inserida no console do Adobe Campaign, na guia **[!UICONTROL Information]** do serviço dedicado ao aplicativo móvel. Consulte [Configuração de um aplicativo para dispositivos móveis no Adobe Campaign](../../delivery/using/configuring-the-mobile-application.md).
 
 * **Um URL de rastreamento**: que corresponde ao endereço do servidor de rastreamento do Adobe Campaign.
 * **Um URL de marketing**: para ativar a coleta de assinaturas.
@@ -154,7 +152,7 @@ A função de registro permite:
 
    As funções de rastreamento permitem rastrear ativações de notificação (aberturas) e exibições de notificação (captura de tela).
 
-   Para acompanhar a exibição de notificação (realizada ao chamar a função **notifyReceive** do SDK), siga a implementação abaixo. Note that if you use FCM (Firebase Cloud Messaging), we advise you to use the **notifyReceive** function when the **onMessageReceived** function is called by the Android system.
+   Para acompanhar a exibição de notificação (realizada ao chamar a função **notifyReceive** do SDK), siga a implementação abaixo. Observe que, quando o FCM (Firebase Cloud Messaging) é usado, recomendamos utilizar a função **notifyReceive** quando a função **onMessageReceived** for chamada pelo sistema Android.
 
    ```
    package com.android.YourApplication;
@@ -529,7 +527,7 @@ Para implementar o delegado **registerDeviceStatus**, siga estas etapas:
 
 ## Variáveis {#variables}
 
-As variáveis permitem definir o comportamento do aplicativo móvel após receber uma notificação. Essas variáveis devem ser definidas no código do aplicativo móvel e no console do Adobe Campaign, na **[!UICONTROL Variables]** guia do serviço de aplicativo móvel dedicado (consulte [Configurar um aplicativo móvel no Adobe Campaign](../../delivery/using/configuring-the-mobile-application.md)). Veja um exemplo de um código que permite que um aplicativo móvel colete quaisquer variáveis adicionadas em uma notificação. No nosso exemplo, estamos usando a variável &quot;VAR&quot;.
+As variáveis permitem definir o comportamento do aplicativo móvel após receber uma notificação. Essas variáveis devem ser definidas no código do aplicativo para dispositivos móveis e no console do Adobe Campaign, na guia **[!UICONTROL Variables]** no serviço de aplicativo para dispositivos móveis dedicado (consulte [Configuração de um aplicativo para dispositivos móveis no Adobe Campaign](../../delivery/using/configuring-the-mobile-application.md)). Veja um exemplo de um código que permite que um aplicativo móvel colete quaisquer variáveis adicionadas em uma notificação. No nosso exemplo, estamos usando a variável &quot;VAR&quot;.
 
 * **No Android**:
 
@@ -575,7 +573,7 @@ As variáveis permitem definir o comportamento do aplicativo móvel após recebe
 >
 >A Adobe recomenda escolher nomes de variáveis curtos, pois o tamanho da notificação é limitado a 4kB para iOS e Android.
 
-## Extensão de Serviço de Notificação {#notification-service-extension}
+## Extensão de serviço de notificação {#notification-service-extension}
 
 **Para iOS**
 
@@ -609,7 +607,7 @@ A mídia deve ser baixada no nível da extensão de serviço de notificação.
     // Perform the download to local storage
 ```
 
-## Extensão de Conteúdo de Notificação {#notification-content-extension}
+## Extensão de conteúdo de notificação {#notification-content-extension}
 
 **Para iOS**
 
