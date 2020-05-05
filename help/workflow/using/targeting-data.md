@@ -14,7 +14,7 @@ discoiquuid: 79f1e85a-b5e6-4875-ac57-ab979fc57079
 index: y
 internal: n
 snippet: y
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 7bcf222f41c0e40368644b76197b07f2ded699f0
 
 ---
@@ -26,21 +26,21 @@ source-git-commit: 7bcf222f41c0e40368644b76197b07f2ded699f0
 
 ### Seleção de dados {#selecting-data}
 
-A **[!UICONTROL Query]** activity lets you select basic data to build the target population. For more on this, refer to [Creating a query](../../workflow/using/query.md#creating-a-query).
+Uma atividade **[!UICONTROL Query]** permite que você selecione dados básicos para criar o público-alvo. Para obter mais informações, consulte [Criação de uma consulta](../../workflow/using/query.md#creating-a-query).
 
-You can also use the following activities to query and refine data from the database: [Incremental query](../../workflow/using/incremental-query.md), [Read list](../../workflow/using/read-list.md).
+Também é possível usar as seguintes atividades para consultar e refinar dados do banco de dados: [Incremental query](../../workflow/using/incremental-query.md) e [Read list](../../workflow/using/read-list.md).
 
-É possível coletar dados adicionais para serem encaminhados e processados durante o ciclo de vida do workflow. Para obter mais informações, consulte [Adicionar dados](../../workflow/using/query.md#adding-data) e [Editar dados](#editing-additional-data)adicionais.
+É possível coletar dados adicionais para serem encaminhados e processados durante o ciclo de vida do workflow. Para obter mais informações, consulte [Adicionar dados](../../workflow/using/query.md#adding-data) e [Editar dados adicionais](#editing-additional-data).
 
 ### Edição de dados adicionais {#editing-additional-data}
 
 Após adicionar os dados adicionais, você pode editá-los ou utilizá-los para refinar o target definido na atividade de query.
 
-The **[!UICONTROL Edit additional data...]** link lets you view the added data and modify it or add to it.
+O link **[!UICONTROL Edit additional data...]** permite visualizar os dados adicionados e modificá-los ou adicioná-los.
 
 ![](assets/wf_add_data_edit_link.png)
 
-Para adicionar dados às colunas de output definidas anteriormente, selecione-os na lista de campos disponíveis. To create a new output column, click the **[!UICONTROL Add]** icon, then select the field and click **[!UICONTROL Edit expression]**.
+Para adicionar dados às colunas de output definidas anteriormente, selecione-os na lista de campos disponíveis. Para criar uma nova coluna de output, clique no ícone **[!UICONTROL Add]** e, em seguida, selecione o campo e clique em **[!UICONTROL Edit expression]**.
 
 ![](assets/query_add_an_output_column.png)
 
@@ -48,41 +48,41 @@ Defina um modo de cálculo para que o campo seja adicionado, como, por exemplo, 
 
 ![](assets/query_add_an_output_column_formula.png)
 
-The **[!UICONTROL Add a sub-item]** option lets you attach computed data to the collection. Isso permite selecionar os dados adicionais da coleção ou definir cálculos agregados em elementos de coleção.
+A opção **[!UICONTROL Add a sub-item]** permite anexar dados calculados à coleção. Isso permite selecionar os dados adicionais da coleção ou definir cálculos agregados em elementos de coleção.
 
 ![](assets/query_add_columns_subscription_sub-element.png)
 
 O subelementos será representado na subárvore da coleção em que são mapeados.
 
-Collections are shown in the **[!UICONTROL Collections]** sub-tab. You can filter the collected elements by clicking the **[!UICONTROL Detail]** icon of the selected collection. O assistente de filtro permite selecionar os dados coletados e especificar as condições de filtragem a serem aplicadas aos dados na coleção.
+As coleções são mostradas na subguia **[!UICONTROL Collections]**. Você pode filtrar os elementos coletados clicando no ícone **[!UICONTROL Detail]** da coleção selecionada. O assistente de filtro permite selecionar os dados coletados e especificar as condições de filtragem a serem aplicadas aos dados na coleção.
 
 ![](assets/query_add_columns_collection.png)
 
 ### Refinamento do target usando dados adicionais {#refining-the-target-using-additional-data}
 
-Os dados adicionais coletados podem habilitar a filtragem de dados no banco de dados. To do this, click the **[!UICONTROL Refine the target using additional data...]** link: this lets you over-filter on the added data.
+Os dados adicionais coletados podem habilitar a filtragem de dados no banco de dados. Para fazer isso, clique no link **[!UICONTROL Refine the target using additional data...]**: isso permite filtrar os dados adicionados.
 
 ![](assets/wf_add_data_use_additional_data.png)
 
 ### Uniformização de dados {#homogenizing-data}
 
-In **[!UICONTROL Union]** or **[!UICONTROL Intersection]** type activities, you can choose to keep only shared additional data to keep the data consistent. Nesse caso, a mesa de trabalho temporária de output dessa atividade conterá apenas os dados adicionais encontrados em todos os conjuntos de entradas.
+Em **[!UICONTROL Union]** ou **[!UICONTROL Intersection]** digite atividades, é possível escolher manter apenas os dados adicionais compartilhados para manter a consistência dos dados. Nesse caso, a mesa de trabalho temporária de output dessa atividade conterá apenas os dados adicionais encontrados em todos os conjuntos de entradas.
 
 ![](assets/option-common_additionnal_col_only.png)
 
 ### Reconciliação com dados adicionais {#reconciliation-with-additional-data}
 
-Durante as fases de reconciliação de dados (**[!UICONTROL Union]**, **[!UICONTROL Intersection]** etc.). atividades), você pode selecionar as colunas a serem usadas para reconciliação de dados das colunas adicionais. Para fazer isso, configure uma reconciliação em uma seleção de colunas e especifique o conjunto principal. Em seguida, selecione as colunas na coluna inferior da janela, como mostrado no exemplo a seguir:
+Durante as fases de reconciliação de dados (**[!UICONTROL Union]**, **[!UICONTROL Intersection]**, etc. você pode selecionar as colunas a serem usadas para reconciliação de dados das colunas adicionais. Para fazer isso, configure uma reconciliação em uma seleção de colunas e especifique o conjunto principal. Em seguida, selecione as colunas na coluna inferior da janela, como mostrado no exemplo a seguir:
 
 ![](assets/select-column-and-join.png)
 
 ### Criação de subconjuntos {#creating-subsets}
 
-The **[!UICONTROL Split]** activity lets you create subsets on criteria defined via extraction queries. Para cada subconjunto, ao editar uma condição de filtro no público, você acessará a atividade de query padrão que permite definir as condições de segmentação de target.
+A atividade **[!UICONTROL Split]** permite criar subconjuntos em critérios definidos por consultas de extração. Para cada subconjunto, ao editar uma condição de filtro no público, você acessará a atividade de query padrão que permite definir as condições de segmentação de target.
 
 Você pode dividir um target em vários subconjuntos usando apenas dados adicionais como condições de filtragem ou como complemento aos dados de target. Você também pode usar dados externos se tiver comprado a opção **Federated Data Access**.
 
-Para obter mais informações, consulte [Criação de subconjuntos usando a atividade](#creating-subsets-using-the-split-activity)Dividir.
+Para obter mais informações, consulte [Criação de subconjuntos usando a atividade Split](#creating-subsets-using-the-split-activity).
 
 ## Segmentação de dados {#segmenting-data}
 
@@ -132,53 +132,53 @@ A intersecção permite recuperar apenas as linhas compartilhadas pelos público
 
 Além disso, é possível manter apenas uma seleção de colunas ou apenas as colunas compartilhadas pelo público de entrada.
 
-The intersection activity is detailed in the [Intersection](../../workflow/using/intersection.md) section.
+A atividade de intersecção é detalhada na seção [Intersection](../../workflow/using/intersection.md).
 
 ### Excluir um público (Exclusão) {#excluding-a-population--exclusion-}
 
 A atividade de exclusão permite excluir os elementos de um target de um público alvo diferente. O targeting dimension de output dessa atividade será do conjunto principal.
 
-Quando necessário, é possível manipular as tabelas de entrada. De fato, para excluir um target de outra dimensão, esse target deve ser devolvido ao mesmo targeting dimension como o target principal. To do this click the **[!UICONTROL Add]** button and specify the dimension change conditions.
+Quando necessário, é possível manipular as tabelas de entrada. De fato, para excluir um target de outra dimensão, esse target deve ser devolvido ao mesmo targeting dimension como o target principal. Para fazer isso, clique no botão **[!UICONTROL Add]** e especifique as condições de alteração da dimensão.
 
-A reconciliação de dados é realizada por meio de um identificador, alterando o eixo ou uma junção. Um exemplo está disponível em [Uso de dados de uma lista: Lista](../../workflow/using/importing-data.md#using-data-from-a-list--read-list)de leitura.
+A reconciliação de dados é realizada por meio de um identificador, alterando o eixo ou uma junção. Um exemplo está disponível em [Uso de dados de uma lista: lista de leitura](../../workflow/using/importing-data.md#using-data-from-a-list--read-list).
 
 ![](assets/exclusion_edit_add_rule_01.png)
 
 ### Criação de subconjuntos usando a atividade de Split {#creating-subsets-using-the-split-activity}
 
-The **[!UICONTROL Split]** activity is a standard activity which lets you create as many sets as necessary via one or several filtering dimensions, as well as generating either one output transition per subset or a unique transition.
+A atividade **[!UICONTROL Split]** é uma atividade padrão que permite criar os conjuntos necessários por meio de uma ou várias dimensões de filtro, bem como gerar uma transição de output por subconjunto ou uma transição exclusiva.
 
 Os dados adicionais transmitidos pela transição de entrada podem ser usados nos critérios de filtragem.
 
 Para configurá-lo, primeiro é necessário selecionar os critérios:
 
-1. In your workflow, drag and drop a **[!UICONTROL Split]** activity.
-1. Na **[!UICONTROL General]** guia, selecione a opção desejada: **[!UICONTROL Use data from the target and additional data]**, **[!UICONTROL Use the additional data only]** ou **[!UICONTROL Use external data]**.
-1. If the **[!UICONTROL Use data from the target and additional data]** option is selected, the targeting dimension lets you use all the data conveyed by the inbound transition.
+1. No workflow, arraste e solte uma atividade **[!UICONTROL Split]**.
+1. Na guia **[!UICONTROL General]**, selecione a opção desejada: **[!UICONTROL Use data from the target and additional data]**, **[!UICONTROL Use the additional data only]** ou **[!UICONTROL Use external data]**.
+1. Se a opção **[!UICONTROL Use data from the target and additional data]** for selecionada, o targeting dimension permitirá o uso de todos os dados transmitidos pela transição de entrada.
 
    ![](assets/split-general-tab-options.png)
 
    Quando subconjuntos são criados, os parâmetros de filtragem mencionados anteriormente são usados.
 
-   Para definir condições de filtragem, escolha a **[!UICONTROL Add a filtering condition on the inbound population]** opção e clique no **[!UICONTROL Edit...]** link. Em seguida, especifique as condições de filtragem para criar esse subconjunto.
+   Para definir condições de filtragem, escolha a opção **[!UICONTROL Add a filtering condition on the inbound population]** e clique no link **[!UICONTROL Edit...]**. Em seguida, especifique as condições de filtragem para criar esse subconjunto.
 
    ![](assets/split-subset-config-all-data.png)
 
-   An example showing how to use filtering conditions in the **[!UICONTROL Split]** activity to segment the target into different populations is described in [this section](../../workflow/using/cross-channel-delivery-workflow.md).
+   Um exemplo de uso das condições de filtragem na atividade **[!UICONTROL Split]** para segmentar o target em diferentes públicos é descrito [nesta seção](../../workflow/using/cross-channel-delivery-workflow.md).
 
-   The **[!UICONTROL Label]** field lets you give the newly created subset a name, which will match the outbound transition.
+   O campo **[!UICONTROL Label]** permite que você dê um nome ao subconjunto recém-criado, que corresponderá à transição de saída.
 
    Você também pode atribuir um código de segmento ao subconjunto para identificá-lo e usá-lo para o target do seu público.
 
-   Se necessário, você pode alterar o targeting dimension e a dimensão de filtro individualmente para cada subconjunto que deseja criar. To do this, edit the subset&#39;s filtering condition and check the **[!UICONTROL Use a specific filtering dimension]** option.
+   Se necessário, você pode alterar o targeting dimension e a dimensão de filtro individualmente para cada subconjunto que deseja criar. Para fazer isso, edite a condição de filtragem do subconjunto e verifique a opção **[!UICONTROL Use a specific filtering dimension]**.
 
    ![](assets/split-subset-config-specific-filtering.png)
 
-1. If the **[!UICONTROL Use the additional data only]** option is selected, only additional data is offered for subset filtering.
+1. Se a opção **[!UICONTROL Use the additional data only]** for selecionada, somente os dados adicionais serão oferecidos para a filtragem do subconjunto.
 
    ![](assets/split-subset-config-additional-data-only.png)
 
-1. If the **Federated Data Access** option is enabled, the **[!UICONTROL Use external data]** lets you process data in an external database which is already configured, or create a new connection to a database.
+1. Se a opção **Federated Data Access** estiver habilitada, o campo **[!UICONTROL Use external data]** permitirá processar dados em um banco de dados externo já configurado ou criar uma nova conexão com um banco de dados.
 
    ![](assets/split-subset-config-add_external_data.png)
 
@@ -186,27 +186,27 @@ Para configurá-lo, primeiro é necessário selecionar os critérios:
 
 Em seguida, precisamos adicionar novos subconjuntos:
 
-1. Click the **[!UICONTROL Add]** button and define the filtering conditions.
+1. Clique no botão **[!UICONTROL Add]** para definir as condições de filtragem.
 
    ![](assets/wf_split_add_a_tab.png)
 
-1. Define the filtering dimension in the **[!UICONTROL General]** tab of the activity (see above).It applies to all subsets by default.
+1. Defina a dimensão do filtro na guia **[!UICONTROL General]** da atividade (veja acima). Ela se aplica a todos os subconjuntos por padrão.
 
    ![](assets/wf_split_edit_filtering.png)
 
-1. Se necessário, você pode alterar a dimensão de filtro para cada subconjunto individualmente. Isso permite criar um conjunto para todos os titulares de cartões Gold, um para todos os recipients que clicaram no boletim informativo mais recente e um terceiro para pessoas entre 18 e 25 anos que fizeram uma compra na loja nos últimos 30 dias, tudo usando a mesma atividade de Split. To do this, select the **[!UICONTROL Use a specific filtering dimension]** option and select the data filtering context.
+1. Se necessário, você pode alterar a dimensão de filtro para cada subconjunto individualmente. Isso permite criar um conjunto para todos os titulares de cartões Gold, um para todos os recipients que clicaram no boletim informativo mais recente e um terceiro para pessoas entre 18 e 25 anos que fizeram uma compra na loja nos últimos 30 dias, tudo usando a mesma atividade de Split. Para fazer isso, selecione a opção **[!UICONTROL Use a specific filtering dimension]** e selecione o contexto da filtragem de dados.
 
    ![](assets/wf_split_change_dimension.png)
 
    >[!NOTE]
    >
-   >Se adquiriu a opção **Federated Data Access**, você pode criar subconjuntos com base nas informações em uma base externa. To do this, select the schema of the external table in the **[!UICONTROL Targeting dimension]** field. Para obter mais informações, consulte [Acesso a um banco de dados externo (FDA)](../../workflow/using/accessing-an-external-database--fda-.md).
+   >Se você adquiriu a opção **Federated Data Access**, é possível criar subconjuntos com base nas informações em uma base externa. Para fazer isso, selecione o schema da tabela externa no campo **[!UICONTROL Targeting dimension]**. Para obter mais informações, consulte [Acesso a um banco de dados externo (FDA)](../../workflow/using/accessing-an-external-database--fda-.md).
 
 Após a criação dos subconjuntos, por padrão, a atividade de split mostrará tantas transições de output quanto houver subconjuntos:
 
 ![](assets/wf_split_multi_outputs.png)
 
-Você pode agrupar todos esses subconjuntos em uma única transição de output. Nesse caso, o link para os respectivos subconjuntos será visível no código do segmento, por exemplo. Para fazer isso, selecione a **[!UICONTROL Generate all subsets in the same table]** opção.
+Você pode agrupar todos esses subconjuntos em uma única transição de output. Nesse caso, o link para os respectivos subconjuntos será visível no código do segmento, por exemplo. Para fazer isso, selecione a opção **[!UICONTROL Generate all subsets in the same table]**.
 
 ![](assets/wf_split_select_option_single_output.png)
 
@@ -214,7 +214,7 @@ Por exemplo, você pode colocar uma única atividade de delivery e personalizar 
 
 ![](assets/wf_split_single_output.png)
 
-Subsets can also be created using the **[!UICONTROL Cells]** activity. For more on this, refer to the [Cells](../../workflow/using/cells.md) section.
+Subconjuntos também podem ser criados usando a atividade **[!UICONTROL Cells]**. Para obter mais informações, consulte a seção [Cells](../../workflow/using/cells.md).
 
 ### Uso de dados de target {#using-targeted-data}
 
@@ -222,15 +222,15 @@ Depois que os dados forem identificados e preparados, eles poderão ser usados n
 
 * Você pode atualizar os dados no banco de dados após a manipulação de dados nos vários estágios do workflow.
 
-   Para obter mais informações, [atualize os dados](../../workflow/using/update-data.md).
+   Para obter mais informações, consulte [Atualizar dados](../../workflow/using/update-data.md).
 
 * Você também pode atualizar o conteúdo de listas existentes.
 
-   For more on this, refer to [List update](../../workflow/using/list-update.md).
+   Para obter mais informações, consulte [Atualizar lista](../../workflow/using/list-update.md).
 
 * Você pode preparar ou iniciar deliveries no workflow diretamente.
 
-   Para obter mais informações, consulte [Entrega](../../workflow/using/delivery.md), controle [de](../../workflow/using/delivery-control.md) entrega e entrega [](../../workflow/using/continuous-delivery.md)contínua.
+   Para obter mais informações, consulte [Delivery](../../workflow/using/delivery.md), [Controle de delivery](../../workflow/using/delivery-control.md) e [Delivery contínuo](../../workflow/using/continuous-delivery.md).
 
 ## Gestão de Dados {#data-management}
 
@@ -242,9 +242,9 @@ No Adobe Campaign, a Gestão de Dados combina um conjunto de atividades para res
 
 Para implementar essas operações, o Adobe Campaign oferece:
 
-* Atividades de recolha de dados: Transferência [de](../../workflow/using/file-transfer.md)arquivos, carregamento [de dados (arquivo)](../../workflow/using/data-loading--file-.md), carregamento [de dados (RDBMS)](../../workflow/using/data-loading--rdbms-.md), [Atualização de dados](../../workflow/using/update-data.md). Essa primeira etapa de coleta de dados prepara os dados para que ele seja processado em outras atividades. Vários parâmetros precisam ser monitorados para garantir que o workflow seja executado corretamente e forneça os resultados esperados. Por exemplo, ao importar os dados, a chave primária (Pkey) para esses dados deve ser única para cada registro.
-* As atividades de definição de metas foram aprimoradas com as opções de Gerenciamento de dados: [Consulta](../../workflow/using/query.md), [União](../../workflow/using/union.md), [Interseção](../../workflow/using/intersection.md), [Dividir](../../workflow/using/split.md). Isso permite configurar uma união ou uma intersecção entre dados de diferentes targeting dimensions, desde que a reconciliação dos dados seja possível.
-* Atividades de transformação de dados: [Enriquecimento](../../workflow/using/enrichment.md), [Alterar dimensão](../../workflow/using/change-dimension.md).
+* Atividades de coleção de dados: [File transfer](../../workflow/using/file-transfer.md), [Data loading (file)](../../workflow/using/data-loading--file-.md), [Data loading (RDBMS)](../../workflow/using/data-loading--rdbms-.md) e [Update data](../../workflow/using/update-data.md). Essa primeira etapa de coleta de dados prepara os dados para que ele seja processado em outras atividades. Vários parâmetros precisam ser monitorados para garantir que o workflow seja executado corretamente e forneça os resultados esperados. Por exemplo, ao importar os dados, a chave primária (Pkey) para esses dados deve ser única para cada registro.
+* As atividades de direcionamento foram aprimoradas com as opções de gerenciamento de dados: [Query](../../workflow/using/query.md), [Union](../../workflow/using/union.md), [Intersection](../../workflow/using/intersection.md) e [Split](../../workflow/using/split.md). Isso permite configurar uma união ou uma intersecção entre dados de diferentes targeting dimensions, desde que a reconciliação dos dados seja possível.
+* Atividades de transformação de dados: [Enrichment](../../workflow/using/enrichment.md) e [Change dimension](../../workflow/using/change-dimension.md).
 
 >[!CAUTION]
 >
@@ -254,11 +254,11 @@ Para implementar essas operações, o Adobe Campaign oferece:
 
 ### Modificação e enriquecimento de dados {#enriching-and-modifying-data}
 
-Além do targeting dimension, a dimensão de filtro permite especificar a natureza dos dados coletados. Consulte [Definição de metas e dimensões](../../workflow/using/building-a-workflow.md#targeting-and-filtering-dimensions)de filtragem.
+Além do targeting dimension, a dimensão de filtro permite especificar a natureza dos dados coletados. Consulte [Direcionamento e dimensões de filtragem](../../workflow/using/building-a-workflow.md#targeting-and-filtering-dimensions).
 
-Os dados identificados e coletados podem ser enriquecidos, agregados e manipulados para otimizar a construção de target. To do this, in addition to the data manipulation activities detailed in the [Segmenting data](#segmenting-data) section, use the following:
+Os dados identificados e coletados podem ser enriquecidos, agregados e manipulados para otimizar a construção de target. Para fazer isso, além das atividades de manipulação de dados detalhadas na seção [Segmenting data](#segmenting-data), use o seguinte:
 
-* The **[!UICONTROL Enrichment]** activity lets you momentarily add columns to a schema, as well as add information to certain elements. It is detailed in the [Enrichment](../../workflow/using/enrichment.md) section of the repository of activities.
-* The **[!UICONTROL Edit schema]** activity lets you modify the structure of a schema. It is detailed in the [Edit schema](../../workflow/using/edit-schema.md) section of the repository of activities.
-* The **[!UICONTROL Change dimension]** activity lets you change the targeting dimension during the target construction cycle. It is detailed in the [Change dimension](../../workflow/using/change-dimension.md) section.
+* A atividade **[!UICONTROL Enrichment]** permite adicionar colunas momentaneamente a um schema, bem como adicionar informações a determinados elementos. Ela é detalhada na seção [Enrichment](../../workflow/using/enrichment.md) do repositório de atividades.
+* A atividade **[!UICONTROL Edit schema]** permite modificar a estrutura de um schema. Ela é detalhada na seção [Edit schema](../../workflow/using/edit-schema.md) do repositório de atividades.
+* A atividade **[!UICONTROL Change dimension]** permite alterar o targeting dimension durante o ciclo de construção do target. Ela é detalhada na seção [Change dimension](../../workflow/using/change-dimension.md).
 
