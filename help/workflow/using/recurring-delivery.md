@@ -14,7 +14,7 @@ discoiquuid: 185d3256-a21e-47d7-bee7-7b91762ca1e2
 index: y
 internal: n
 snippet: y
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 707352334144df86ae82aa51d595ae6bc751d1f2
 
 ---
@@ -22,9 +22,9 @@ source-git-commit: 707352334144df86ae82aa51d595ae6bc751d1f2
 
 # Delivery recorrente{#recurring-delivery}
 
-A **[!UICONTROL Recurring delivery]** activity lets you configure a delivery template occurrence that is specific to a campaign.
+Uma atividade **[!UICONTROL Recurring delivery]** permite configurar uma ocorrência de template de delivery específico para uma campanha.
 
-This activity is only available from the **[!UICONTROL Targeting and workflows]** tab found in a campaign.
+Essa atividade só está disponível na guia **[!UICONTROL Targeting and workflows]** localizada em uma campanha.
 
 Para fazer isso:
 
@@ -40,6 +40,6 @@ Para obter um exemplo de uso dessa atividade, consulte esta [seção](../../work
 
 >[!NOTE]
 >
->It is not possible to send a proof from a **[!UICONTROL Recurring delivery]** type activity.\
->To directly create a delivery via a campaign workflow, use the channel specific activities that are preconfigured (e.g. **[!UICONTROL Email delivery]**).
+>Não é possível enviar uma prova de uma atividade do tipo **[!UICONTROL Recurring delivery]**.\
+>Para criar um delivery diretamente por meio de um workflow da campanha, use as atividades específicas predefinidas do canal (por exemplo **[!UICONTROL Email delivery]**).
 
