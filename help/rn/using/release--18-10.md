@@ -14,7 +14,7 @@ discoiquuid: 5df34f55-135a-4ea8-afc2-f9427ce5ae7b
 index: y
 internal: n
 snippet: y
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: a8c4face331ab6d646480322c0f53a7147251aa6
 
 ---
@@ -63,7 +63,7 @@ source-git-commit: a8c4face331ab6d646480322c0f53a7147251aa6
 
 >[!CAUTION]
 >
->Esta configuração foi retomada. [Atualize para a configuração mais recente](https://docs.campaign.adobe.com/doc/AC/getting_started/EN/buildUpgrade.html) ou entre em contato com o [suporte técnico](https://support.neolane.net/).
+>Esta configuração foi retomada. [Atualize para a configuração mais recente](https://helpx.adobe.com/br/campaign/kb/acc-build-upgrade.html) ou entre em contato com o [suporte técnico](https://support.neolane.net/).
 
 **Aprimoramentos**
 
@@ -87,7 +87,7 @@ source-git-commit: a8c4face331ab6d646480322c0f53a7147251aa6
 
 >[!CAUTION]
 >
->Esta configuração foi retomada. [Atualize para a configuração mais recente](https://docs.campaign.adobe.com/doc/AC/getting_started/EN/buildUpgrade.html) ou entre em contato com o [suporte técnico](https://support.neolane.net/).
+>Esta configuração foi retomada. [Atualize para a configuração mais recente](https://helpx.adobe.com/br/campaign/kb/acc-build-upgrade.html) ou entre em contato com o [suporte técnico](https://support.neolane.net/).
 
 **Aprimoramentos**
 
@@ -109,7 +109,7 @@ source-git-commit: a8c4face331ab6d646480322c0f53a7147251aa6
 
 >[!CAUTION]
 >
->Esta configuração foi retomada. [Atualize para a configuração mais recente](https://docs.campaign.adobe.com/doc/AC/getting_started/EN/buildUpgrade.html) ou entre em contato com o [suporte técnico](https://support.neolane.net/).
+>Esta configuração foi retomada. [Atualize para a configuração mais recente](https://helpx.adobe.com/br/campaign/kb/acc-build-upgrade.html) ou entre em contato com o [suporte técnico](https://support.neolane.net/).
 
 **Novidades**
 
@@ -128,7 +128,7 @@ source-git-commit: a8c4face331ab6d646480322c0f53a7147251aa6
      <li> <p>Rastrear notificações silenciosas no iOS </p> </li> 
      <li> <p>Implementar feedback sobre chamadas de registro no iOS</p> </li> 
      <li> <p>Melhorar a velocidade da preparação de delivery no iOS</p> </li> 
-    </ul> <p>Como parte da depreciação do GCM pelo Google, o conector Android V2 agora permite conexões somente ao servidor FCM.</p><p>Para obter mais informações, consulte a <a href="../../delivery/using/integrating-campaign-sdk-into-the-mobile-application.md">documentação detalhada</a>. A atualização manual para o FCM é detalhado neste <a href="https://helpx.adobe.com/campaign/kb/migrate-to-fcm.html">artigo</a>. </p> </td> 
+    </ul> <p>Como parte da depreciação do GCM pelo Google, o conector Android V2 agora permite conexões somente ao servidor FCM.</p><p>Para obter mais informações, consulte a <a href="../../delivery/using/integrating-campaign-sdk-into-the-mobile-application.md">documentação detalhada</a>. A atualização manual para o FCM é detalhado neste <a href="https://helpx.adobe.com/br/campaign/kb/migrate-to-fcm.html">artigo</a>. </p> </td> 
   </tr> 
   <tr> 
    <td> Gestão de Dados SQL<br /> </td> 
@@ -136,7 +136,7 @@ source-git-commit: a8c4face331ab6d646480322c0f53a7147251aa6
   </tr> 
   <tr> 
    <td> Monitoramento de workflow<br /> </td> 
-   <td> <p>Com o novo Adobe Campaign Workflow HeatMap, os administradores da plataforma têm uma representação gráfica rápida de todos os workflows simultâneos, o que permite monitorar a carga na instância e planejar os workflows de acordo.</p> <p>Para obter mais informações, consulte a <a href="../../workflow/using/heatmap.md">documentação detalhada</a>.</p> <p>O pacote Workflow HeatMap também está disponível sob demanda para builds anteriores ao 8977 (a partir do build 8700). Para obter mais informações sobre a solicitação e a instalação, consulte <a href="https://helpx.adobe.com/campaign/kb/install-workflow-heatmap-package.html">esta página</a>.</p> </td> 
+   <td> <p>Com o novo Adobe Campaign Workflow HeatMap, os administradores da plataforma têm uma representação gráfica rápida de todos os workflows simultâneos, o que permite monitorar a carga na instância e planejar os workflows de acordo.</p> <p>Para obter mais informações, consulte a <a href="../../workflow/using/heatmap.md">documentação detalhada</a>.</p> <p>O pacote Workflow HeatMap também está disponível sob demanda para builds anteriores ao 8977 (a partir do build 8700). Para obter mais informações sobre a solicitação e a instalação, consulte <a href="https://helpx.adobe.com/br/campaign/kb/install-workflow-heatmap-package.html">esta página</a>.</p> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -152,11 +152,11 @@ source-git-commit: a8c4face331ab6d646480322c0f53a7147251aa6
 **Aprimoramentos**
 
 * As APIs do Campaign Classic agora estão disponíveis em uma [página dedicada](https://docs.campaign.adobe.com/doc/AC/en/jsapi/index.html). Se estiver usando o arquivo jsapi.chm, agora deverá fazer referência a nova versão online.
-* PostgreSQL 10, Debian 9 e Teradata 16.20 agora são suportados. Consulte a [Matriz de Compatibilidade](https://helpx.adobe.com/campaign/kb/compatibility-matrix.html).
+* PostgreSQL 10, Debian 9 e Teradata 16.20 agora são suportados. Consulte a [Matriz de Compatibilidade](https://helpx.adobe.com/br/campaign/kb/compatibility-matrix.html).
 * Ao criar uma conexão SFTP, agora você pode usar a autenticação de proxy. Para obter mais informações, consulte a [documentação detalhada](../../installation/using/configuring-campaign-server.md#proxy-connection-configuration) (NEO-9868).
 * A opção **Fórmula de cálculo de data** está agora disponível nas propriedades de delivery ao criar um delivery único usando o template de delivery de mala direta. (NEO-9792)
 * A gestão de nomes de domínio foi aprimorado para rastreamento de cookies e aplicações Web. Consulte a seção &quot;Evoluções técnicas&quot; abaixo para obter mais informações.
-* A importação de ativos compartilhados da Adobe Marketing Cloud em um delivery ou landing page foi aprimorada em termos de segurança e desempenho.
+* A importação de ativos compartilhados da Adobe Experience Cloud em um delivery ou landing page foi aprimorada em termos de segurança e desempenho.
 * Uma nova caixa de seleção está disponível na conta externa do canal móvel para habilitar rastreamentos SMPP detalhados no arquivo de log, o que torna esse output diretamente acessível da interface do Adobe Campaign.
 * Há agora uma distinção nos broadlogs entre o número máximo de conexões e o número máximo de mensagens por hora. Quando os limites são atingidos, é possível saber o motivo da taxa de transferência ser limitada. Anteriormente, a mesma mensagem (‘cota atingida’) se aplicava a ambos os casos.
 * Agora você pode especificar um script SQL a ser executado ao adquirir uma conexão do pool. Esse script pode ser usado para definir o schema padrão. Este script será aplicado após faixas de query. (NEO-11256)
