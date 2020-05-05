@@ -14,7 +14,7 @@ discoiquuid: 8867d9c3-2ce4-4611-8c88-ce505c3a01d1
 index: y
 internal: n
 snippet: y
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 9d36192a768fd0162f2301a5fe0437074d0fda58
 
 ---
@@ -29,7 +29,7 @@ Os scripts são universais em um diagrama de workflow:
 * todas as atividades têm scripts de inicialização. Um script de inicialização é executado quando a atividade é ativada e pode ser usado para inicializar variáveis e modificar as propriedades.
 * A atividade &#39;código JavaScript&#39; é simplesmente usada para executar um script.
 * A atividade de &#39;Teste&#39; avalia expressões JavaScript para ativar a transição apropriada.
-* A maioria dos campos de texto são modelos JavaScript: Expressões JavaScript podem ser incluídas entre &lt;%= e %>. Estes campos oferecem um botão que abre uma lista suspensa para ajudá-lo a inserir expressões.
+* A maioria dos campos de texto são templates do JavaScript: expressões JavaScript podem ser incluídas entre &lt;%= and %>. Estes campos oferecem um botão que abre uma lista suspensa para ajudá-lo a inserir expressões.
 
    ![](assets/script-button.png)
 
@@ -37,11 +37,11 @@ Os scripts são universais em um diagrama de workflow:
 
 Os JavaScripts executado no contexto de um workflow acessa uma série de objetos globais adicionais.
 
-* **instância**: Representa o fluxo de trabalho que está sendo executado. O esquema deste objeto é **xtk:workflow**.
-* **tarefa**: Representa as tarefas que estão sendo executadas. O esquema deste objeto é **xtk:workflowTask**.
-* **event**: Representa os eventos que ativaram a tarefa que está sendo executada. O esquema deste objeto é **xtk:workflowEvent**. Este objeto não é inicializado para atividades tipo **AND-join** que foram ativadas a partir de várias transições.
-* **eventos**: Representa a lista de eventos que ativaram a tarefa atual. O esquema deste objeto é **xtk:workflowEvent**. Essa tabela normalmente contém um elemento, mas pode conter vários para atividades tipo **AND-join** ativadas com base em várias transições.
-* **atividade**: Representa o modelo da tarefa que está sendo executada. O esquema desse objeto depende do tipo de atividade. Esse objeto pode ser modificado pelo script de inicialização, em outros scripts, modificações têm efeitos indeterninárveis.
+* **instance**: representa o workflow que está sendo executado. O esquema deste objeto é **xtk:workflow**.
+* **task**: representa as tarefas que estão sendo executadas. O esquema deste objeto é **xtk:workflowTask**.
+* **event**: representa os eventos que ativam a tarefa que está sendo executada. O esquema deste objeto é **xtk:workflowEvent**. Este objeto não é inicializado para atividades tipo **AND-join** que foram ativadas a partir de várias transições.
+* **events**: representa a lista de eventos que ativou a tarefa atual. O esquema deste objeto é **xtk:workflowEvent**. Essa tabela normalmente contém um elemento, mas pode conter vários para atividades tipo **AND-join** ativadas com base em várias transições.
+* **activity**: representa o modelo da tarefa que está sendo executada. O esquema desse objeto depende do tipo de atividade. Esse objeto pode ser modificado pelo script de inicialização, em outros scripts, modificações têm efeitos indeterninárveis.
 
 As propriedades disponíveis para esses objetos podem ser visualizadas em uma lista suspensa clicando no botão à direita da barra de ferramentas do script.
 
@@ -64,39 +64,39 @@ logInfo("Label: " + instance.label)
 logInfo("Start date: " + task.creationDate)
 ```
 
-The **[!UICONTROL logInfo(message)]** function inserts a message into the log.
+A função **[!UICONTROL logInfo(message)]** insere uma mensagem no log.
 
-Click **[!UICONTROL OK]** to close the creation wizard, then start the workflow using the action buttons situated at the top right of the list of workflows. No final da execução, consulte o log. Você verá duas mensagens correspondentes ao script: uma exibe a identificação do workflow, a outra exibe a data em que o script foi ativado.
+Clique em **[!UICONTROL OK]** para fechar o assistente de criação e, em seguida, inicie o workflow usando os botões de ação localizados na parte superior direita da lista de workflows. No final da execução, consulte o log. Você verá duas mensagens correspondentes ao script: uma exibe a identificação do workflow, a outra exibe a data em que o script foi ativado.
 
 ## Variáveis {#variables}
 
-The variables are the free properties of the **[!UICONTROL instance]**, **[!UICONTROL task]** and **[!UICONTROL event]** objects. The JavaScript types authorized for these variables are **[!UICONTROL string]**, **[!UICONTROL number]** and **[!UICONTROL Date]**.
+As variáveis são as propriedades livres dos objetos **[!UICONTROL instance]**, **[!UICONTROL task]** e **[!UICONTROL event]** Os tipos de JavaScript autorizados para estas variáveis são **[!UICONTROL string]**, **[!UICONTROL number]** e **[!UICONTROL Date]**.
 
 ### Variáveis de instância {#instance-variables}
 
-The instance variables (**[!UICONTROL instance.vars.xxx]**) are comparable to global variables. Eles são compartilhados por todas as atividades.
+As variáveis de instância (**[!UICONTROL instance.vars.xxx]**) são comparáveis às variáveis globais. Eles são compartilhados por todas as atividades.
 
 ### Variáveis de tarefa {#task-variables}
 
-The task variables (**[!UICONTROL task.vars.xxx]**) are comparable to local variables. São utilizadas somente pela tarefa atual. Essas variáveis são utilizadas por atividades persistentes para manter os dados e, às vezes, são utilizadas para trocar dados entre os diferentes scripts de uma mesma atividade.
+As variáveis de tarefa (**[!UICONTROL task.vars.xxx]**) são comparáveis às variáveis locais. São utilizadas somente pela tarefa atual. Essas variáveis são utilizadas por atividades persistentes para manter os dados e, às vezes, são utilizadas para trocar dados entre os diferentes scripts de uma mesma atividade.
 
 ### Variáveis do evento {#event-variables}
 
-The event variables (**[!UICONTROL vars.xxx]**) enable the exchange of data between the elementary tasks of a workflow process. Essas variáveis são passadas pela tarefa que ativou a tarefa em andamento. É possível modificá-las e definir novas. Então, elas são passadas para as atividades seguintes.
+As variáveis de evento (**[!UICONTROL vars.xxx]**) permitem a troca de dados entre as tarefas primárias de um processo de workflow. Essas variáveis são passadas pela tarefa que ativou a tarefa em andamento. É possível modificá-las e definir novas. Então, elas são passadas para as atividades seguintes.
 
 No caso de atividades de tipo **AND-join**, as variáveis são mescladas, mas se uma mesma variável é definida duas vezes, há um conflito e o valor permanece indeterminado.
 
 Essas são as variáveis usadas com mais frequência e devem ser usadas em detrimento de variáveis de instância.
 
-Certas variáveis de evento são modificadas ou lidas pelas várias atividades. Estas são todas as variáveis do tipo string. For example, an export sets the **[!UICONTROL vars.filename]** variable with the full name of the file that has just been exported. All these read or modified variables are documented in [About activities](../../workflow/using/about-activities.md), in the sections **Input parameters** and **Output parameters** of the activities.
+Certas variáveis de evento são modificadas ou lidas pelas várias atividades. Estas são todas as variáveis do tipo string. Por exemplo, uma exportação define a variável **[!UICONTROL vars.filename]** com o nome completo do arquivo que acabou de ser exportado. Todas essas variáveis lidas ou modificadas são documentadas em [About activities](../../workflow/using/about-activities.md), nas seções **Input parameters** e **Output parameters** das atividades.
 
 ### Exemplos {#example}
 
 **Exemplo 1**
 
-Neste exemplo, uma variável de instância é usada para calcular dinamicamente a porcentagem dividida a ser aplicada em uma população.
+Neste exemplo, uma variável de instância é usada para calcular dinamicamente a porcentagem dividida que será aplicada em uma população.
 
-1. Crie um fluxo de trabalho e adicione uma atividade Iniciar.
+1. Crie um workflow e adicione uma atividade Start.
 
 1. Adicione e configure uma atividade de código JavaScript para definir uma variável de instância.
 
@@ -104,15 +104,15 @@ Neste exemplo, uma variável de instância é usada para calcular dinamicamente 
 
    ![](assets/js_ex1.png)
 
-1. Adicione uma atividade de Consulta e destinatários de destino de acordo com suas necessidades.
+1. Adicione uma atividade Query e destinatários de acordo com suas necessidades.
 
-1. Adicione uma atividade Dividida e configure-a para executar uma amostragem aleatória da população recebida. A porcentagem de amostragem pode ser qualquer escolha sua. Neste exemplo, está definido para 50%.
+1. Adicione uma atividade Split e a configure para executar uma amostragem aleatória da população recebida. A porcentagem de amostragem pode ser qualquer escolha sua. Neste exemplo, está definido como 50%.
 
-   É essa porcentagem que é atualizada dinamicamente graças à variável de instância definida anteriormente.
+   É a porcentagem que é atualizada dinamicamente graças à variável de instância definida anteriormente.
 
    ![](assets/js_ex2.png)
 
-1. Na seção Script de inicialização da guia Avançado da atividade Dividir, defina uma condição JS. A condição JS seleciona a porcentagem de amostragem aleatória da primeira transição que sai da atividade Dividir e a atualiza para um valor definido pela variável de instância criada anteriormente.
+1. Na seção Initialization script da guia Advanced da atividade Split, defina uma condição JS. A condição JS seleciona a porcentagem de amostragem aleatória da primeira transição que sai da atividade Split e a atualiza para um valor definido pela variável de instância criada anteriormente.
 
    ```
    activity.transitions.extractOutput[0].limiter.percent = instance.vars.segmentpercent;
@@ -120,7 +120,7 @@ Neste exemplo, uma variável de instância é usada para calcular dinamicamente 
 
    ![](assets/js_ex3.png)
 
-1. Certifique-se de que o complemento seja gerado em uma transição separada da atividade Dividir e adicione as atividades Finais após cada transição de saída.
+1. Certifique-se de que o complemento seja gerado em uma transição separada da atividade Split e adicione as atividades End após cada transição de saída.
 
 1. Salve e execute o workflow. A amostragem dinâmica é aplicada de acordo com a variável de instância.
 
@@ -164,7 +164,7 @@ Assim, para chamar uma variável **instance.vars.xxx = &quot;yyy&quot;** em um f
 
 Por exemplo:
 
-1. Create an instance variable that defines a delivery&#39;s internal name via the **[!UICONTROL JavaScript code]**: **instance.vars.deliveryIN = &quot;DM42&quot;**.
+1. Crie uma variável de instância que define o nome interno de um delivery através do **[!UICONTROL JavaScript code]**: **instance.vars.deliveryIN = &quot;DM42&quot;**.
 
    ![](assets/wkf_js_activity_1.png)
 
@@ -172,7 +172,7 @@ Por exemplo:
 
    Como lembrete, essas informações são armazenadas nos logs de delivery.
 
-   To reference the instance variable in the **[!UICONTROL Value]** column, enter **$(instance/vars/@deliveryIN)**.
+   Para fazer referência à variável da instância na coluna **[!UICONTROL Value]**, digite **$(instance/vars/@deliveryIN)**.
 
    O workflow retornará os recipients da delivery DM42.
 
@@ -186,7 +186,7 @@ Além das funções JavaScript padrão, as funções especiais estão disponíve
 
 **[!UICONTROL logInfo(message)]** foi detalhado nos exemplos acima. Essa função adiciona uma mensagem de informação ao diário.
 
-**[!UICONTROL logError(message)]** adiciona uma mensagem de erro ao registro. O script interrompe a execução e o workflow muda para o status de erro (por padrão, a instância será pausada).
+**[!UICONTROL logError(message)]** adiciona uma mensagem de erro ao log. O script interrompe a execução e o workflow muda para o status de erro (por padrão, a instância será pausada).
 
 ## Script de inicialização {#initialization-script}
 
@@ -194,4 +194,4 @@ Sob determinadas condições, é possível modificar uma propriedade de uma ativ
 
 A maioria das propriedades de atividades pode ser calculada dinamicamente, usando um template JavaScript ou porque as propriedades do workflow permitem explicitamente que o valor seja calculado por um script.
 
-No entanto, para outras propriedades, é necessário usar o script de inicialização. Este script é avaliado antes que a tarefa seja executada. The **[!UICONTROL activity]** variable references the activity corresponding to the task. As propriedades dessa atividade podem ser modificadas e afetarão somente essa tarefa.
+No entanto, para outras propriedades, é necessário usar o script de inicialização. Este script é avaliado antes que a tarefa seja executada. A variável **[!UICONTROL activity]** faz referência à atividade correspondente à tarefa. As propriedades dessa atividade podem ser modificadas e afetarão somente essa tarefa.
