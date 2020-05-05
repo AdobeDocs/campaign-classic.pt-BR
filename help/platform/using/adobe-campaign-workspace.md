@@ -14,7 +14,7 @@ discoiquuid: 2f66152b-4d4a-40b8-a1bb-5b97c5410882
 index: y
 internal: n
 snippet: y
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 14e67ca7f57d39e6939d6ff3479aa897674b18dc
 
 ---
@@ -52,7 +52,7 @@ Considerando o acesso via Web, as opções permitirão principalmente a visualiz
 
 ![](assets/operation_from_web.png)
 
-### Idiomas {#languages}
+### Languages {#languages}
 
 O idioma é selecionado ao instalar a instância do Adobe Campaign Classic e não pode ser alterado posteriormente. Para obter mais informações sobre como criar uma instância, consulte esta [página](../../installation/using/creating-an-instance-and-logging-on.md).
 
@@ -61,7 +61,7 @@ O idioma é selecionado ao instalar a instância do Adobe Campaign Classic e nã
 Você pode escolher entre cinco idiomas diferentes:
 
 * Inglês (Reino Unido)
-* Inglês (US)
+* Inglês (EUA)
 * Francês
 * Alemão
 * Japonês
@@ -78,15 +78,15 @@ As várias funcionalidades da plataforma são divididas em recursos principais: 
 
 A lista de recursos principais que você pode acessar depende dos pacotes e dos complementos instalados e dos seus direitos de acesso.
 
-Cada recurso inclui um conjunto de funcionalidades com base nas necessidades relacionadas à tarefa e ao contexto de uso. Por exemplo, o link **[!UICONTROL Profiles and targets]** leva você até listas de destinatários, serviços de assinatura, fluxos de trabalho de direcionamento existentes e atalhos para criar esses elementos.
+Cada recurso inclui um conjunto de funcionalidades com base nas necessidades relacionadas à tarefa e ao contexto de uso. Por exemplo, o link **[!UICONTROL Profiles and targets]** leva você até listas de recipients, serviços de assinatura, workflows para construção do target existentes e atalhos para criar esses elementos.
 
-The lists are available via the **[!UICONTROL Lists]** link in the left-hand section of the **[!UICONTROL Profiles and Targets]** interface.
+As listas estão disponíveis no link **[!UICONTROL Lists]** na seção à esquerda da interface **[!UICONTROL Profiles and Targets]**.
 
 ![](assets/recipient_list_overview.png)
 
 ### Utilização de guias {#using-tabs}
 
-* Quando você clica em um recurso principal ou em um link, a página relevante substitui a página atual. Para voltar à página anterior, clique no botão **[!UICONTROL Back]** na barra de ferramentas. Para retornar à page, clique no botão **[!UICONTROL Home]** Home.
+* Quando você clica em um recurso principal ou em um link, a página relevante substitui a página atual. Para voltar à página anterior, clique no botão **[!UICONTROL Back]** na barra de ferramentas. Para retornar à página inicial, clique no botão **[!UICONTROL Home]**.
 
    ![](assets/d_ncs_user_interface_back_home_buttons.png)
 
@@ -98,9 +98,9 @@ The lists are available via the **[!UICONTROL Lists]** link in the left-hand sec
 
 Cada seção de recurso principal permite navegar entre os elementos disponíveis. Para fazer isso, use os atalhos na seção **[!UICONTROL Browsing]**. O link **[!UICONTROL Other choices]** permite acessar todas as outras páginas, independentemente do ambiente.
 
-Você pode criar um novo elemento (delivery, Aplicação web, fluxo de trabalho etc.) usando os atalhos na **[!UICONTROL Create]** seção à esquerda da tela. Use o botão **[!UICONTROL Create]** acima da lista para adicionar novos elementos a ela.
+Você pode criar um novo elemento (delivery, aplicativo web, workflow etc.) usando os atalhos na seção **[!UICONTROL Create]** à esquerda da tela. Use o botão **[!UICONTROL Create]** acima da lista para adicionar novos elementos a ela.
 
-Por exemplo, na página de entrega, use o botão **[!UICONTROL Create]** para criar uma nova entrega.
+Por exemplo, na página de delivery, use o botão **[!UICONTROL Create]** para criar um novo delivery.
 
 ![](assets/d_ncs_user_interface_tab_add_del.png)
 
@@ -110,7 +110,7 @@ Por exemplo, na página de entrega, use o botão **[!UICONTROL Create]** para cr
 
 O explorador do Adobe Campaign é acessível por meio do ícone da barra de ferramentas. Ele permite que você acesse todos os recursos do Adobe Campaign, as telas de configuração e uma visão mais detalhada de alguns dos elementos da plataforma.
 
-The **[!UICONTROL Explorer]** workspace is divided into three zones:
+O espaço de trabalho **[!UICONTROL Explorer]** é dividido em três zonas:
 
 ![](assets/s_ncs_user_navigation.png)
 
@@ -138,15 +138,15 @@ Para navegar em uma lista, você pode usar **as barras de rolagem** (horizontal 
 
 >[!NOTE]
 >
->Configuration and personalization of list content are presented in [Configuring lists](#configuring-lists).
+>A configuração e personalização do conteúdo da lista são apresentadas em [Configuração de listas](#configuring-lists).
 >
->Também é possível classificar e filtrar dados. Consulte Opções [](../../platform/using/filtering-options.md)de filtragem.
+>Também é possível classificar e filtrar dados. Consulte [Opções de filtro](../../platform/using/filtering-options.md).
 
 ### Contagem de registros {#counting-records}
 
 Por padrão, o Adobe Campaign carrega os 200 primeiros registros de uma lista. Isso significa que a exibição não mostra necessariamente todos os registros da tabela que você está visualizando. Você pode executar uma contagem do número de registros na lista e carregar mais registros.
 
-In the lower right-hand part of the list screen, a **[!UICONTROL counter]** shows how many records have been loaded and the total number of records in the database (after applying any filters):
+Na parte inferior direita da tela da lista, um **[!UICONTROL counter]** mostra quantos registros foram carregados e o número total de registros no banco de dados (após a aplicação de filtros):
 
 ![](assets/s_ncs_user_nb_200_0.png)
 
@@ -183,7 +183,7 @@ Há duas maneiras de adicionar uma coluna a uma lista.
 É possível adicionar rapidamente uma coluna a uma lista dos detalhes de um registro. Para fazer isso:
 
 1. Em uma tela de detalhes, clique com o botão direito do mouse no campo que você deseja exibir em uma coluna.
-1. Select **[!UICONTROL Add in the list]**.
+1. Selecione **[!UICONTROL Add in the list]**.
 
    A coluna é adicionada à direita das colunas existentes.
 
@@ -205,12 +205,12 @@ Outra maneira de adicionar colunas, por exemplo, se você quiser exibir dados qu
    >
    >Os rótulos são exibidos por tabela e em ordem alfabética.
    >
-   >Use o campo **Search** para executar uma pesquisa nos campos disponíveis. Para obter mais informações, consulte [Classificação de uma lista](#sorting-a-list).
+   >Use o campo **Search** para executar uma pesquisa nos campos disponíveis. Para obter mais informações, consulte [Classificar uma lista](#sorting-a-list).
    >
-   >Os campos são identificados por ícones específicos: Campos SQL, tabelas vinculadas, campos calculados etc. Para cada campo selecionado, a descrição é exibida abaixo da lista dos campos disponíveis.
+   >Os campos são identificados por ícones específicos: SQL fields, linked tables, calculated fields, etc. Para cada campo selecionado, a descrição é exibida abaixo da lista de campos disponíveis.
    [Configuração de listas](#configuring-lists).
    >
-   >Também é possível classificar e filtrar dados. Consulte Opções [](../../platform/using/filtering-options.md)de filtragem.
+   >Também é possível classificar e filtrar dados. Consulte [Opções de filtro](../../platform/using/filtering-options.md).
 
 1. Repita o processo para cada coluna a ser exibida.
 1. Use as setas para modificar a **ordem de exibição**. A coluna mais alta estará à esquerda na lista de registros.
@@ -227,7 +227,7 @@ Outra maneira de adicionar colunas, por exemplo, se você quiser exibir dados qu
 
 É possível criar novas colunas para exibir campos adicionais na lista. Para fazer isso:
 
-1. Click **[!UICONTROL Configure the list]** at below and to the right of the list.
+1. Clique em **[!UICONTROL Configure the list]** abaixo e à direita da lista.
 1. Clique em **[!UICONTROL Add]** para exibir um novo campo na lista.
 
 #### Remover uma coluna {#remove-a-column}
@@ -272,8 +272,8 @@ Por exemplo, para uma pasta de entrega, é possível configurar a seguinte exibi
 Para salvar essa configuração de lista de modo que ela possa ser reutilizada, siga as etapas abaixo:
 
 1. Clique com o botão direito na pasta que contém os dados exibidos.
-1. Select **[!UICONTROL Properties]**.
-1. Click **[!UICONTROL Advanced settings]** and then specify a name in the **[!UICONTROL Configuration]** field.
+1. Selecione **[!UICONTROL Properties]**.
+1. Clique em **[!UICONTROL Advanced settings]** e especifique um nome no campo **[!UICONTROL Configuration]**.
 
    ![](assets/s_ncs_user_folder_save_config_2.png)
 
@@ -291,7 +291,7 @@ Clique em **[!UICONTROL Save]** na janela de propriedades da pasta. A lista de e
 
 Para exportar dados de uma lista, você deve usar um assistente de exportação. Para acessá-lo, selecione os elementos a serem exportados da lista, clique com o botão direito do mouse e selecione **[!UICONTROL Export...]**.
 
-A utilização das funções de importação e exportação é explicada nas importações e exportações [](../../platform/using/generic-imports-and-exports.md)genéricas.
+A utilização das funções de importação e exportação é explicada em [Importações e exportações genéricas](../../platform/using/generic-imports-and-exports.md).
 
 >[!CAUTION]
 >
@@ -336,7 +336,7 @@ Você pode executar uma pesquisa dos campos disponíveis em um editor utilizando
 
 O idioma escolhido para o Adobe Campaign Classic afeta os formatos de data e hora.
 
-O idioma é selecionado durante a instalação do Campaign e não pode ser alterado posteriormente. Você pode selecionar: Inglês (EUA), inglês (EN), francês, alemão ou japonês. Para obter mais informações, consulte [esta página](../../installation/using/creating-an-instance-and-logging-on.md).
+O idioma é selecionado durante a instalação do Campaign e não pode ser alterado posteriormente. Você pode selecionar: inglês (EUA), inglês (EN), francês, alemão ou japonês. Para obter mais informações, consulte [esta página](../../installation/using/creating-an-instance-and-logging-on.md).
 
 As principais diferenças entre inglês americano e inglês do Reino Unido são:
 
@@ -356,13 +356,13 @@ As principais diferenças entre inglês americano e inglês do Reino Unido são:
   </tr> 
   <tr> 
    <td> Data abreviada<br /> </td> 
-   <td> <p>%2M/%2D/%4Y</p><p><strong>ex: 25/09/2018</strong></p> </td> 
-   <td> <p>%2D/%2M/%4Y</p><p><strong>ex: 09/25/2018</strong></p> </td> 
+   <td> <p>%2M/%2D/%4Y</p><p><strong>ex: 09/25/2018</strong></p> </td> 
+   <td> <p>%4D/%2M/%2Y</p><p><strong>ex: 25/09/2018</strong></p> </td> 
   </tr> 
   <tr> 
    <td> Data abreviada com hora<br /> </td> 
-   <td> <p>%2M/%2D/%4Y %I:%2N:%2S %P</p><p><strong>ex: 25/09/2018 10:47:25</strong></p> </td> 
-   <td> <p>%2D/%2M/%4Y %2H:%2N:%2S</p><p><strong>ex: 09/25/2018 22:47:25</strong></p> </td> 
+   <td> <p>%2M/%2D/%4Y %I:%2N:%2S %P</p><p><strong>ex: 09/25/2018 10:47:25 PM</strong></p> </td> 
+   <td> <p>%2D/%2M/%4Y %2H:%2N:%2S</p><p><strong>ex: 25/09/2018 22:47:25</strong></p> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -377,16 +377,16 @@ Se você clicar em **[!UICONTROL Yes]**, esse valor estará disponível na caixa
 
 >[!NOTE]
 >
->As enumerações (também conhecidas como &quot;listas detalhadas&quot;) são gerenciadas pelo administrador através da seção **[!UICONTROL Administration > Platform > Enumerations]**. For more on this, refer to [Managing enumerations](../../platform/using/managing-enumerations.md).
+>As enumerações (também conhecidas como &quot;listas detalhadas&quot;) são gerenciadas pelo administrador através da seção **[!UICONTROL Administration > Platform > Enumerations]**. Para obter mais informações, consulte [Gerenciamento de listas discriminadas](../../platform/using/managing-enumerations.md).
 
 ### Unidades padrão {#default-units}
 
 Nos campos que expressam uma duração (por exemplo, período de validade dos recursos de uma remessa, prazo de aprovação para uma tarefa, etc.), o valor pode ser expresso nas seguintes **unidades**:
 
-* **[!UICONTROL s]** por segundos,
-* **[!UICONTROL mn]** por minutos,
-* **[!UICONTROL h]** por horas,
-* **[!UICONTROL d]** por dias.
+* **[!UICONTROL s]** para segundos,
+* **[!UICONTROL mn]** para minutos,
+* **[!UICONTROL h]** para horas,
+* **[!UICONTROL d]** para dias.
 
 ![](assets/enter_unit_sample.png)
 
