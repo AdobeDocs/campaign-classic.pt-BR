@@ -14,7 +14,7 @@ discoiquuid: dd3d14cc-5153-428d-a98a-32b46f0fe811
 index: y
 internal: n
 snippet: y
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 9a26ec7ed1c8463270ac9f97079f49e00d5b258e
 
 ---
@@ -22,9 +22,9 @@ source-git-commit: 9a26ec7ed1c8463270ac9f97079f49e00d5b258e
 
 # Criação do schema de dados {#creating-the-data-schema}
 
-Para criar um esquema em um banco de dados externo:
+Para criar um schema em um banco de dados externo:
 
-1. Clique no **[!UICONTROL New]** botão acima da lista de esquemas de dados e escolha **[!UICONTROL Access external data]**.
+1. Clique no botão **[!UICONTROL New]** acima da lista dos schemas de dados e escolha **[!UICONTROL Access external data]**.
 
    ![](assets/wf_new_schema_fda.png)
 
@@ -32,13 +32,13 @@ Para criar um esquema em um banco de dados externo:
 
    ![](assets/wf_new_schema_select_table_fda.png)
 
-1. Click **[!UICONTROL OK]** to confirm. O Adobe Campaign detecta automaticamente a estrutura da tabela selecionada e gera o schema lógico. Observe que o Adobe Campaign não gera links.
+1. Clique em **[!UICONTROL OK]** para confirmar. O Adobe Campaign detecta automaticamente a estrutura da tabela selecionada e gera o schema lógico. Observe que o Adobe Campaign não gera links.
 
-1. Click **[!UICONTROL Save]** to confirm creation.
+1. Clique em **[!UICONTROL Save]** para confirmar a criação.
 
    >[!CAUTION]
    >
-   >Com Floco de neve, uma chave primária é obrigatória.
+   >Com o Snowflake, uma chave primária é obrigatória.
 
    ![](assets/wf_new_schema_generate_fda.png)
 
