@@ -14,7 +14,7 @@ discoiquuid: e1f8958d-f036-4635-be6e-ebdbea6ac116
 index: y
 internal: n
 snippet: y
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: eee744eb5bc7a43fd412ffb01f0546385146a978
 
 ---
@@ -33,29 +33,29 @@ Isso permite:
 
 ## Pacotes de filtro {#filter-packages}
 
-From the **[!UICONTROL Campaigns universe]**, you can display the list of **[!UICONTROL Campaign packages]** which regroups all existing Distributed Marketing campaigns. Você pode filtrar essa lista para que ela exiba somente as campanhas publicadas, atrasadas, pendentes de aprovação etc. Para fazer isso, clique nos links na seção superior desta exibição ou use o **[!UICONTROL Filter list]** link e selecione o status do pacote da campanha a ser exibido.
+No **[!UICONTROL Campaigns universe]**, é possível exibir a lista de **[!UICONTROL Campaign packages]** que reagrupa todas as campanhas existentes de Marketing Distribuído. É possível filtrar essa lista para exibir somente as campanhas publicadas, atrasadas, pendentes de aprovação etc. Para fazer isso, clique nos links na seção superior desta exibição ou use o link **[!UICONTROL Filter list]** e selecione o status do pacote da campanha a ser exibido.
 
 ![](assets/mkg_dist_catalog_filter.png)
 
 ## Edição de pacotes {#edit-packages}
 
-The **[!UICONTROL Campaign packages]** page lets you view the summary of each package.
+A página **[!UICONTROL Campaign packages]** permite visualizar o resumo de cada pacote.
 
 Este resumo mostra as seguintes informações: rótulo, tipo de campanha, bem como o nome da campanha da qual foi criada e a pasta.
 
 Clique no nome do pacote para editá-lo. Você também pode visualizar pedidos por suas entidades locais e pelo seus status.
 
-This information is also offered in the **[!UICONTROL Campaign orders]** view which lists all orders.
+Essas informações também estão disponíveis na visualização **[!UICONTROL Campaign orders]**, que lista todas as ordens.
 
 ![](assets/mkg_dist_catalog_op_command_details.png)
 
 O operador central pode editar o pedido. Há duas maneiras de fazer isso:
 
-1. O operador pode clicar no nome do pedido para editá-lo: isso exibe os detalhes do pedido.
+1. O operador pode clicar no nome do pedido para editá-lo: isso exibe o detalhe do pedido.
 
    ![](assets/mkg_dist_catalog_op_command_edit1.png)
 
-   The **[!UICONTROL Edit > General]** tab lets you view information entered by the local entity when it ordered the campaign.
+   A guia **[!UICONTROL Edit > General]** permite visualizar informações inseridas pela entidade local quando solicita a campanha.
 
    ![](assets/mkg_dist_catalog_op_command_edit1a.png)
 
@@ -67,11 +67,11 @@ O operador central pode editar o pedido. Há duas maneiras de fazer isso:
 
 A entidade central pode cancelar um pacote de campanha a qualquer momento.
 
-Clique **[!UICONTROL Cancel]** no pacote de campanha **[!UICONTROL Dashboard]**.
+Clique em **[!UICONTROL Cancel]** no **[!UICONTROL Dashboard]** do pacote de campanha.
 
 ![](assets/mkg_dist_cancel_op_from_dashboard.png)
 
-The **[!UICONTROL Comment]** field lets you justify the cancellation.
+O campo **[!UICONTROL Comment]** permite justificar o cancelamento.
 
 Para **campanhas locais**, cancelar um pacote o remove da lista de campanhas de marketing disponíveis.
 
@@ -96,11 +96,11 @@ Os pacotes cancelados ainda podem ser acessados e reiniciados pela entidade cent
 Os pacotes de campanha que já foram publicados podem ser reiniciados, modificados e disponibilizados às entidades locais.
 
 1. Selecione o pacote desejado.
-1. Clique no **[!UICONTROL Reinitialize the package to reuse it]** link e clique em **[!UICONTROL OK]**.
+1. Clique no link **[!UICONTROL Reinitialize the package to reuse it]** e clique em **[!UICONTROL OK]**.
 
    ![](assets/mkg_dist_mutual_op_reinit.png)
 
-1. Click the **[!UICONTROL Save]** button to approve package re-initialization.
+1. Clique em **[!UICONTROL Save]** para aprovar o pacote reinicialização.
 
    ![](assets/mkg_dist_mutual_op_reinit2.png)
 
