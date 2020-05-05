@@ -14,7 +14,7 @@ discoiquuid: b64c9729-cfe2-4d02-8c59-9e53efd34a96
 index: y
 internal: n
 snippet: y
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: fa2b6890d3c9eaf7b4b6521b2edfb494faa4798c
 
 ---
@@ -24,7 +24,7 @@ source-git-commit: fa2b6890d3c9eaf7b4b6521b2edfb494faa4798c
 
 Se o dispositivo móvel estiver conectado ao Wi-Fi e você não estiver recebendo notificações, verifique se as portas FCM/APNS não estão bloqueadas pelo firewall.
 
-**Android**: O dispositivo móvel se conecta aos servidores FCM nas portas 5228 a 5230. Portanto, você deve configurar o firewall para que ele autorize a conexão com o FCM. As portas a serem abertas são: 5228 (o mais usado), 5229 e 5230.
+**Android**: o dispositivo móvel conecta-se aos servidores FCM nas portas 5228 a 5230. Portanto, você deve configurar o firewall para que ele autorize a conexão com o FCM. As portas que devem ser abertas são: 5228 (a mais usada), 5229 e 5230.
 
 **iOS**:
 
