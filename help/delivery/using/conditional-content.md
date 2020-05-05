@@ -14,7 +14,7 @@ discoiquuid: 167cc61a-fbc7-48cb-89ff-fbdbf9321c01
 index: y
 internal: n
 snippet: y
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 4ac96bf0e54268832b84b17c3cc577af038cc712
 
 ---
@@ -28,7 +28,7 @@ Ao configurar campos de conteúdo condicional, você pode criar personalização
 
 No exemplo abaixo, você aprenderá a criar uma mensagem, personalizada dinamicamente no sexo e interesses do recipient.
 
-* Exibição mostrando &quot;Sr.&quot; ou &quot;Sra.&quot; de acordo com o valor do **[!UICONTROL Gender]** campo (M ou F) da fonte de dados,
+* Exibição mostrando &quot;Mr.&quot; ou &quot;Ms.&quot; de acordo com o valor do campo **[!UICONTROL Gender]** (M ou F) na fonte de dados,
 * Assembly personalizado de um boletim informativo ou ofertas promocionais de acordo com os interesses indicados ou detectados:
 
    * Interesse 1 -- > Bloco 1
@@ -48,16 +48,16 @@ Para criar conteúdo condicional de acordo com o valor de um campo, siga as segu
 
    Para fazer isso:
 
-   * Select the first element of the expression, **`<field>`**, (by default, this element is highlighted during insertion of the **if** expression) and click the personalization icon to replace it with the test field.
+   * Selecione o primeiro elemento da expressão, **`<field>`**, (por padrão, esse elemento é realçado durante a inserção da expressão **if** ) e clique no ícone de personalização para substitui-lo pelo campo de teste.
 
       ![](assets/s_ncs_user_conditional_content03.png)
 
-   * Replace **`<value>`** with the value of the field for which the condition will be satisfied. Esse valor deve estar entre aspas.
+   * Substitua **`<value>`** pelo valor do campo para o qual a condição será atendida. Esse valor deve estar entre aspas.
    * Especifique o conteúdo a ser inserido quando a condição for atendida. Isso pode consistir em um texto, uma imagem, um formulário, um link de hipertexto etc.
 
       ![](assets/s_ncs_user_conditional_content04.png)
 
-1. Click the **[!UICONTROL Preview]** tab to view the content of the message according to the delivery recipient:
+1. Clique na guia **[!UICONTROL Preview]** para exibir o conteúdo da mensagem de acordo com o recipient do delivery:
 
    * Selecionando um recipient para o qual a condição é verdadeira:
 
@@ -75,16 +75,16 @@ Você pode adicionar outros casos e definir outro conteúdo de acordo com os val
 >
 >Para respeitar a sintaxe do JavaScript, os caracteres **%> &lt;%** devem ser excluídos após adicionar as condições **Senão** e **Senão se**.
 
-Click **[!UICONTROL Preview]** and select a recipient to view the conditional content.
+Clique em **[!UICONTROL Preview]** e selecione um recipient para exibir o conteúdo condicional.
 
 ![](assets/s_ncs_user_conditional_content08.png)
 
 ## Criação de email multilíngue {#creating-multilingual-email}
 
-Você verá no exemplo abaixo como criar um email multilíngue. O conteúdo será exibido em um idioma ou no outro, dependendo do idioma preferencial do destinatário.
+Você verá no exemplo abaixo como criar um email multilíngue. O conteúdo será exibido em um idioma ou em outro, dependendo da preferência de idioma do recipient.
 
 1. Crie um email e selecione o público alvo. Neste exemplo, a condição para exibir uma versão ou outra será baseada no valor **Idioma** do perfil do recipient. Neste exemplo, esses valores são definidos como **EN**, **FR**, **ES**.
-1. In the email HTML content, click the **[!UICONTROL Source]** tab and paste the following code:
+1. No conteúdo HTML de email, clique na guia **[!UICONTROL Source]** e cole o seguinte código:
 
    ```
    <% if (language == "EN" ) { %>
@@ -105,8 +105,8 @@ Você verá no exemplo abaixo como criar um email multilíngue. O conteúdo ser�
    <% } %>
    ```
 
-1. Test email content in the **[!UICONTROL Preview]** tab by selecting recipients with different preferred languages.
+1. Teste o conteúdo do email na guia **[!UICONTROL Preview]** selecionando os recipients com as diferentes preferências de idioma.
 
    >[!NOTE]
    >
-   >Como nenhuma versão alternativa foi definida no conteúdo do email, certifique-se de filtrar o público alvo antes de enviar o email.
+   >Como nenhuma versão alternativa foi definida no conteúdo do email, filtre o público-alvo antes de enviar o email.
