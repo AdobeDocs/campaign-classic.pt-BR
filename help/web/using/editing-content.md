@@ -14,7 +14,7 @@ discoiquuid: da66d640-8504-4dc7-bc4e-1c0ac1d37c37
 index: y
 internal: n
 snippet: y
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 7a0d82dfc6dc50026214d7d3b1094d45ffadbc03
 
 ---
@@ -26,7 +26,7 @@ source-git-commit: 7a0d82dfc6dc50026214d7d3b1094d45ffadbc03
 
 Você pode especificar uma condição de visibilidade em um elemento de página da web: esse elemento será visível somente se a condição for respeitada.
 
-To add a visibility condition, select a block and enter the condition in the **[!UICONTROL Visibility condition]** field using the expression editor.
+Para adicionar uma condição de visibilidade, selecione um bloco e insira a condição no campo **[!UICONTROL Visibility condition]** com o editor de expressão.
 
 ![](assets/dce_add_condition.png)
 
@@ -36,7 +36,7 @@ To add a visibility condition, select a block and enter the condition in the **[
 
 ![](assets/dce_popup_visibilitycondition.png)
 
-These conditions adopt the XTK expression syntax (for example **ctx.recipient.@email != &quot;&quot;** ou **ctx.receipt.@status==&quot;0&quot;**). Por padrão, todos os campos são visíveis.
+Essas condições adotam a sintaxe da expressão XTK (por exemplo, **ctx.recipient.@email != &quot;&quot;** or **ctx.recipient.@status==&quot;0&quot;**). Por padrão, todos os campos são visíveis.
 
 >[!NOTE]
 >
@@ -78,11 +78,11 @@ Na verdade, se o template usado não contiver um valor por padrão, você deve p
 
 Para fazer isso:
 
-* Clique no **[!UICONTROL Edit]** ícone.
+* Clique no ícone **[!UICONTROL Edit]**.
 
    ![](assets/dce_sidebar_options.png)
 
-* Enter the itemized list value (defined by the selected field) into the **[!UICONTROL Value]** field.
+* Insira o valor da lista discriminada (definido pelo campo selecionado) no campo **[!UICONTROL Value]**.
 
    ![](assets/dce_sidebar_completeoptionradio.png)
 
@@ -92,9 +92,9 @@ Campos de formulário como botões de opção, zonas de entrada, listas suspensa
 
 Isso significa que é possível:
 
-* Delete the block containing the form fields using the **[!UICONTROL Delete]** icon.
-* Duplicate the selected field by creating a new block using the **[!UICONTROL Duplicate]** icon.
-* Edit the **[!UICONTROL Form data]** window to link a database field to the form zone, using the **[!UICONTROL Edit]** icon.
+* Exclua o bloco que contém os campos de formulário usando o ícone **[!UICONTROL Delete]**.
+* Duplique o campo selecionado criando um novo bloco usando o ícone **[!UICONTROL Duplicate]**.
+* Edite a janela **[!UICONTROL Form data]** para vincular um campo de banco de dados à zona de formulário, usando o ícone **[!UICONTROL Edit]**.
 
    ![](assets/dce_toolbar_formblock_edition.png)
 
@@ -106,13 +106,13 @@ Quando o usuário clica em um botão, você pode definir uma ação associada. P
 
 As opções disponíveis são as seguintes:
 
-* **[!UICONTROL Refresh]** : atualiza a página atual.
-* **[!UICONTROL Next page]** : cria um link para a próxima página no aplicativo da Web.
-* **[!UICONTROL Previous page]** : cria um link para a página anterior no aplicativo da Web.
+* **[!UICONTROL Refresh]**: atualiza a página atual.
+* **[!UICONTROL Next page]** : cria um link para a próxima página no aplicativo web.
+* **[!UICONTROL Previous page]**: cria um link para a página anterior no aplicativo web.
 
 >[!NOTE]
 >
->The **[!UICONTROL None]** value allows you to not activate the button.
+>O valor **[!UICONTROL None]** permite que o botão não seja ativado.
 
 Você pode modificar o rótulo vinculado ao botão no campo correspondente.
 
@@ -132,7 +132,7 @@ Blocos de personalização e campos só podem ser inseridos em blocos de tipo de
 
 >[!NOTE]
 >
->Para cada tipo de link, você pode configurar o modo de abertura: selecione a janela de público alvo na lista suspensa **Público-alvo.** This value corresponds to the **`<target>`** HTML tag.
+>Para cada tipo de link, você pode configurar o modo de abertura: selecione a janela de público alvo na lista suspensa **Público-alvo.** Esse valor corresponde à tag **`<target>`** HTML.
 >
 >A lista de **público alvo** disponíveis é a seguinte:
 >
@@ -152,7 +152,7 @@ A opção **Vincular a uma URL externa** permite abrir qualquer URL do conteúdo
 
 ![](assets/dce_toolbar_imgblock_externallink.png)
 
-Digite o endereço de link em questão no campo **URL.** The URL field should be entered as: **https://www.myURL.com**.
+Digite o endereço de link em questão no campo **URL.** O campo URL deve ser populado da seguinte maneira: **https://www.myURL.com**.
 
 ### Vinculação a uma aplicação web {#link-to-a-web-application}
 
@@ -162,7 +162,7 @@ A opção **Link para uma aplicação web** permite acessar uma aplicação web 
 
 Selecione a aplicação web no campo correspondente.
 
-The list of suggested Web applications corresponds to the available applications in the **[!UICONTROL Resources > Online > Web Applications]** node.
+A lista de aplicativos web sugeridos corresponde aos aplicativos disponíveis no nó **[!UICONTROL Resources > Online > Web Applications]**.
 
 ### Vincular a uma ação {#link-to-an-action}
 
@@ -172,14 +172,14 @@ O **Link que define uma opção de ação** permite configurar uma ação ao cli
 
 >[!NOTE]
 >
->As ações disponíveis são detalhadas na seção [Adicionar uma ação a um botão](#adding-an-action-to-a-button) .
+>As ações disponíveis são detalhadas na seção [Adding an action to a button](#adding-an-action-to-a-button).
 
 ### Excluir um link {#delete-a-link}
 
-Quando um link é inserido, a barra de ferramentas oferece dois novos ícones: **Editar link** e **Quebrar o link** que permite interagir com o link criado.
+Quando um link é inserido, a barra de ferramentas oferece dois novos ícones: **Edit link** e **Break the link** que permite interagir com o link criado.
 
 * **[!UICONTROL Edit link]** permite exibir uma janela com todos os parâmetros do link.
-* **[!UICONTROL Break the link]** permite excluir, após a confirmação, o link e todos os parâmetros relacionados.
+* **[!UICONTROL Break the link]** permite excluir o link, após confirmação, e todos os parâmetros relacionados.
 
 >[!NOTE]
 >
@@ -193,11 +193,11 @@ Ao selecionar um elemento de texto, é possível modificar os atributos de fonte
 
 As opções disponíveis são as seguintes:
 
-* **Ícone Ampliar fonte** : aumenta o tamanho do texto selecionado (adicionar `<span style="font size:">`)
-* **Ícone Reduzir fonte** : reduz o tamanho do texto selecionado (adicionar `<span style="font size:">`)
-* **Ícone Negrito** : torna o texto selecionado em negrito (vincule o texto com a `<strong> </strong>` marca)
-* **Ícone Itálico** : torna o texto selecionado em itálico (texto em contorno com a `<em> </em>` tag)
-* **Ícone Sublinhado** : torna o texto selecionado sublinhado (texto em contorno com a `<span style="text-decoration: underline;">` tag)
+* Ícone **Enlarge font**: aumenta o tamanho do texto selecionado (adicione `<span style="font size:">`)
+* Ícone **Reduce font**: reduz o tamanho do texto selecionado (adicione `<span style="font size:">`)
+* Ícone **Bold**: coloca o texto selecionado em negrito (quebra de texto automática com a tag `<strong> </strong>`)
+* Ícone **Italic**: coloca o texto selecionado em itálico (quebra texto automática com a `<em> </em>` tag)
+* Ícone **Underline**: coloca o texto selecionado em sublinhado (quebra de texto automática com a `<span style="text-decoration: underline;">` tag)
 * Ícone **Align left**: alinha o texto à esquerda do bloco selecionado (adicione style=&quot;text-align: left;&quot;)
 * Ícone **Center**: centraliza o texto do bloco selecionado (adicione style=&quot;text-align: center;&quot;)
 * Ícone **Align right**: alinha o texto à direita do bloco selecionado (adicione style=&quot;text-align: right;&quot;)
@@ -229,7 +229,7 @@ Para ser compatível com o DCE, as **animações tipo &quot;** Flash&quot; devem
 
 >[!CAUTION]
 >
->You must not call up external files in a **script** tag of the HTML page. Esses arquivos não serão importados para o servidor do Adobe Campaign.
+>Os arquivos externos não devem ser chamados em uma tag **script** da página HTML. Esses arquivos não serão importados para o servidor do Adobe Campaign.
 
 ### Adição / exclusão / duplicação de uma imagem {#adding---deleting---duplicating-an-image}
 
@@ -241,9 +241,9 @@ Selecione um arquivo de imagem salvo localmente.
 
 ![](assets/dce_popup_imgupload.png)
 
-The **Delete** icon deletes the ![]() tag containing the image.
+O ícone **Delete** exclui a tag ![]() contendo a imagem.
 
-The **Duplicate** icon duplicates the ![]() tag and its content.
+O ícone **Duplicate** duplica a tag ![]()e seu conteúdo.
 
 >[!CAUTION]
 >
@@ -266,11 +266,11 @@ A opção **Campo de personalização** do ícone de inserção permite adiciona
 
 ![](assets/dce_toolbar_textblock_persofield.png)
 
-By default, the fields offered are from the **[!UICONTROL Recipient]** table. Quando necessário, edite as propriedades da aplicação web para selecionar outra tabela.
+Por padrão, os campos oferecidos são da tabela **[!UICONTROL Recipient]**. Quando necessário, edite as propriedades da aplicação web para selecionar outra tabela.
 
 O nome do campo aparece no editor, destacado em amarelo. Ele será substituído pelo perfil do recipient de destino quando a personalização for gerada (por exemplo, ao pré-visualizar uma landing page).
 
-Um exemplo é apresentado na seção [Inserindo um campo](../../web/using/creating-a-landing-page.md#inserting-a-personalization-field) de personalização.
+Um exemplo é apresentado na seção [Inserting a personalization field](../../web/using/creating-a-landing-page.md#inserting-a-personalization-field).
 
 ### Inserção de um bloco de personalização {#inserting-a-personalization-block}
 
@@ -280,4 +280,4 @@ A opção de **Bloco de personalização** permite inserir blocos dinâmicos e p
 
 Depois de inserido, o nome do bloco de personalização aparece no editor, realçado em amarelo. Ele é adaptado automaticamente ao perfil do recipient quando a personalização é gerada.
 
-For more on built-in personalization blocks and how to define custom personalization blocks, refer to [this page](../../delivery/using/personalization-blocks.md).
+Para obter mais informações sobre os blocos de personalização integrados e como customizá-los, consulte [esta página](../../delivery/using/personalization-blocks.md).
