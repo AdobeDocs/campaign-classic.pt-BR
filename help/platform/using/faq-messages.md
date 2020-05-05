@@ -1,7 +1,7 @@
 ---
 title: Perguntas frequentes sobre teste e envio
 seo-title: Validar, enviar e rastrear mensagens
-description: Perguntas frequentes do Campaign Classic
+description: Perguntas frequentes sobre o Adobe Campaign Classic
 page-status-flag: never-activated
 uuid: 3f719ac2-cc26-4fb0-adda-84666c8c38e1
 contentOwner: sauviat
@@ -13,7 +13,7 @@ discoiquuid: 16dbe423-018f-4666-9901-2120a8dc609a
 index: y
 internal: n
 snippet: y
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 8ef56aa04a3ecc94e9e3dda24562760d6a93739d
 
 ---
