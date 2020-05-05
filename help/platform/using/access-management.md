@@ -14,7 +14,7 @@ discoiquuid: c0eb06fd-192c-4ee4-9a38-c9bedbe6aea0
 index: y
 internal: n
 snippet: y
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 92f4047628eca0fc1d71aded0329720c094463bd
 
 ---
@@ -36,12 +36,12 @@ Os perfis são preenchidos por parâmetros de segurança vinculados ao modo de c
 
 Há dois tipos de permissões que você pode conceder a um usuário:
 
-* Você pode definir grupos de operadores para atribuir direitos e, em seguida, associar os operadores a um ou mais grupos. Isso permite que você reutilize os direitos e torne os perfis de operadores mais consistentes. Também facilita o gerenciamento e a manutenção de perfis. Group creation and management are presented in [Operator groups](#operator-groups).
-* Você pode atribuir direitos nomeados diretamente aos usuários, em alguns casos para sobrecarregar os direitos alocados por meio de grupos. Estes direitos são apresentados em [Direitos nomeados](#named-rights).
+* Você pode definir grupos de operadores para atribuir direitos e, em seguida, associar os operadores a um ou mais grupos. Isso permite que você reutilize os direitos e torne os perfis de operadores mais consistentes. Também facilita o gerenciamento e a manutenção de perfis. A criação e o gerenciamento de grupos são apresentados em [Operator groups](#operator-groups).
+* Você pode atribuir direitos nomeados diretamente aos usuários, em alguns casos para sobrecarregar os direitos alocados por meio de grupos. Esses direitos são apresentados em [Named rights](#named-rights).
 
 >[!NOTE]
 >
->Antes de começar a definir as permissões, a Adobe recomenda que você leia a [Lista de verificação de configuração de segurança](https://docs.campaign.adobe.com/doc/AC/getting_started/EN/security.html).
+>Antes de começar a definir as permissões, a Adobe recomenda que você leia a [Lista de verificação de configuração de segurança](https://helpx.adobe.com/br/campaign/kb/acc-security.html).
 
 ## Operadores {#operators}
 
@@ -49,13 +49,13 @@ Há dois tipos de permissões que você pode conceder a um usuário:
 
 Um operador é um usuário do Adobe Campaign que tem permissões para fazer o login e executar ações.
 
-Por padrão, os operadores são armazenados no **[!UICONTROL Administration > Access management > Operators]** nó.
+Por padrão, os operadores são armazenados no nó **[!UICONTROL Administration > Access management > Operators]**.
 
 ![](assets/s_ncs_user_list_operators.png)
 
 Os operadores podem ser criados manualmente ou mapeados em um diretório LDAP existente.
 
-O procedimento completo para criar um operador é descrito  [nesta página](#creating-an-operator).
+O procedimento completo para criar um operador é descrito [nesta página](#creating-an-operator).
 
 Para obter mais informações sobre o Adobe Campaign e a integração de LDAP, consulte [esta página](../../installation/using/connecting-through-ldap.md).
 
@@ -69,45 +69,45 @@ Usuários podem se conectar ao Adobe Campaign usando a Adobe ID. Para obter mais
 
 Para criar um novo operador e conceder permissões, siga as etapas abaixo:
 
-1. Click the **[!UICONTROL New]** button located above the list of operators, and enter the details of the new operator.
+1. Clique no botão **[!UICONTROL New]** acima da lista de operadores e insira os detalhes do novo operador.
 
    ![](assets/s_ncs_user_operator_new.png)
 
-1. Specify the **[!UICONTROL Identification parameters]** of the user: its login, password and name. O login e a senha serão usados pelo operador para se conectar ao Adobe Campaign. Once the user is logged on, they can change their password via the **[!UICONTROL Tools > Change password]** menu. O e-mail do operador é essencial, pois permite que o operador receba notificações, por exemplo, ao processar aprovações.
+1. Especifique os **[!UICONTROL Identification parameters]** do usuário: o login, a senha e o nome. O login e a senha serão usados pelo operador para se conectar ao Adobe Campaign. Após se conectar, o usuário poderá alterar a senha no menu **[!UICONTROL Tools > Change password]**. O e-mail do operador é essencial, pois permite que o operador receba notificações, por exemplo, ao processar aprovações.
 
    Esta seção também permite vincular um operador a uma entidade organizacional. Para obter mais informações, consulte [esta página](../../campaign/using/about-distributed-marketing.md).
 
-1. Select the permissions granted to the operator in the **[!UICONTROL Operator access rights]** section.
+1. Selecione as permissões concedidas ao operador na seção **[!UICONTROL Operator access rights]**.
 
-   To assign rights to the operator, click the **[!UICONTROL Add]** button located above the list of rights, then select a group of operators from the list of available groups:
+   Para atribuir direitos ao operador, clique no botão **[!UICONTROL Add]** localizado acima da lista de direitos, e depois selecione um grupo de operadores na lista de grupos disponíveis:
 
    ![](assets/s_ncs_user_permissions_operators.png)
 
-   You can also select one or more named rights (refer to [Named rights](#named-rights)). To do this, click the arrow to the right of the **[!UICONTROL Folder]** field, and select **[!UICONTROL Named rights]**:
+   Também é possível selecionar um ou mais direitos nomeados (consulte [Direitos nomeados](#named-rights)). Para fazer isso, clique na seta à direita do campo **[!UICONTROL Folder]** e selecione **[!UICONTROL Named rights]**:
 
    ![](assets/s_ncs_user_rights_operators.png)
 
-   Select groups and/or named rights to be assigned and click **[!UICONTROL OK]** to validate.
+   Selecione grupos e/ou direitos nomeados a serem atribuídos e clique em **[!UICONTROL OK]** para validar.
 
-1. Click **[!UICONTROL Ok]** to create the operator: the profile is added to the list of existing operators.
+1. Clique em **[!UICONTROL Ok]** para criar o operador: o perfil é adicionado à lista de operadores existentes.
 
    ![](assets/operator_profile_new.png)
 
 >[!NOTE]
 >
->Você pode organizar os operadores de acordo com suas necessidades criando novas pastas de operadores. To do this, right-click the operator folder and select **[!UICONTROL Add an 'Operators' folder]**.
+>Você pode organizar os operadores de acordo com suas necessidades criando novas pastas de operadores. Para fazer isso, clique com o botão direito do mouse na pasta de operadores e selecione **[!UICONTROL Add an 'Operators' folder]**.
 
-Após criar o perfil do operador, você pode adicionar ou atualizar suas informações. To do this, click the **[!UICONTROL Edit]** tab.
+Após criar o perfil do operador, você pode adicionar ou atualizar suas informações. Para fazer isso, clique na guia **[!UICONTROL Edit]**.
 
 ![](assets/operator_edit_profile.png)
 
 >[!NOTE]
 >
->The **[!UICONTROL Session timeout]** field lets you adjust the delay before the FDA session timeout. Para obter mais informações, consulte [About Federated Data Acces](../../platform/using/about-fda.md).
+>O campo **[!UICONTROL Session timeout]** permite ajustar o atraso antes do tempo limite da sessão FDA. Para obter mais informações, consulte [Sobre Federated Data Access](../../platform/using/about-fda.md).
 
 ### Fuso horário do operador {#time-zone-of-the-operator}
 
-In the **[!UICONTROL General]** tab, you can select the time zone of the operator. Por padrão, os operadores trabalham no fuso horário do servidor. No entanto, é possível selecionar outro fuso horário usando a lista suspensa.
+Na guia **[!UICONTROL General]**, é possível selecionar o fuso horário do operador. Por padrão, os operadores trabalham no fuso horário do servidor. No entanto, é possível selecionar outro fuso horário usando a lista suspensa.
 
 A configuração de fusos horários é descrita [nesta página](../../installation/using/time-zone-management.md).
 
@@ -117,18 +117,18 @@ A configuração de fusos horários é descrita [nesta página](../../installati
 >
 >Restrições e recomendações vinculadas a esses contextos são apresentadas nas seções relacionadas da documentação do Adobe Campaign.
 
-In addition, the **[!UICONTROL Regional settings]** drop-down list lets you select the format to display dates and numbers.
+Além disso, a lista suspensa **[!UICONTROL Regional settings]** permite selecionar o formato para exibir datas e números.
 
 ### Opções de direitos de acesso {#access-rights-options}
 
-Use the **[!UICONTROL Access rights]** tab to update the groups and named rights linked to the operator.
+Use a guia **[!UICONTROL Access rights]** para atualizar os grupos e os direitos nomeados vinculados ao operador.
 
 ![](assets/operator_profile_security_options.png)
 
-O **[!UICONTROL Edit the access parameters...]** link permite acessar as seguintes opções:
+O link **[!UICONTROL Edit the access parameters...]** permite acessar as seguintes opções:
 
-* The **[!UICONTROL Disable account]** option lets you disable the operator&#39;s account: he will no longer access Adobe Campaign.
-* The **[!UICONTROL Forbid access from the rich client]** option lets you restrict the use of Adobe Campaign to [Web access](../../platform/using/adobe-campaign-workspace.md#console-and-web-access) or through APIs: access to the Adobe Campaign client console is no longer available.
+* A opção **[!UICONTROL Disable account]** permite desabilitar a conta do operador: ele não acessará mais o Adobe Campaign.
+* A opção **[!UICONTROL Forbid access from the rich client]** permite restringir o uso do Adobe Campaign para [acesso à Web](../../platform/using/adobe-campaign-workspace.md#console-and-web-access) ou por meio de APIs: o acesso ao console do cliente Adobe Campaign não está mais disponível.
 * É possível vincular uma zona de segurança ao operador. Para obter mais informações, consulte [esta página](../../installation/using/configuring-campaign-server.md#defining-security-zones).
 * Também é possível definir uma máscara IP confiável usando o link apropriado.
 
@@ -142,7 +142,7 @@ O **[!UICONTROL Edit the access parameters...]** link permite acessar as seguint
    >
    >Para manter seguro o acesso à sua plataforma, essa opção deve ser usada com cuidado.
 
-* The **[!UICONTROL Restrict to information found in sub-folders of:]** option lets you limit the rights attributed to the operator of a folder. Somente as subpastas do nó especificado nessa opção estarão visíveis para o usuário:
+* A opção **[!UICONTROL Restrict to information found in sub-folders of:]** permite limitar os direitos atribuídos ao operador de uma pasta. Somente as subpastas do nó especificado nessa opção estarão visíveis para o usuário:
 
    ![](assets/s_ncs_user_restrictions_operators.png)
 
@@ -152,7 +152,7 @@ O **[!UICONTROL Edit the access parameters...]** link permite acessar as seguint
 
 ### Pastas, aprovação e tarefas de um operador {#folders--approval-and-tasks-of-an-operator}
 
-The **[!UICONTROL Audit]** tab lets you view information related to the operator. As várias guias são adicionadas automaticamente com base nas configurações definidas na área de intervenção do operador.
+A guia **[!UICONTROL Audit]** permite visualizar informações relacionadas ao operador. As várias guias são adicionadas automaticamente com base nas configurações definidas na área de intervenção do operador.
 
 Você pode acessar:
 
@@ -162,7 +162,7 @@ Você pode acessar:
 
    >[!NOTE]
    >
-   >Para obter mais informações, consulte Gerenciamento [de acesso de](#folder-access-management)pasta.
+   >Para obter mais informações, consulte [Gerenciamento de acesso a pastas](#folder-access-management).
 
 * O log de aprovações do operador.
 
@@ -174,7 +174,7 @@ Você pode acessar:
 
 ### Operadores padrão {#default-operators}
 
-O Adobe Campaign usa operadores técnicos com perfis configurados por padrão: Administrador (&#39;admin&#39;), Faturamento (&#39;faturamento&#39;), Monitoramento, agente de Aplicação web (&#39;webapp&#39;) etc. Alguns deles dependem dos aplicativos e opções instalados na plataforma: operadores &#39;central&#39; e &#39;local&#39;, por exemplo, só estarão visíveis se a opção Marketing distribuído estiver instalada.
+O Adobe Campaign usa operadores técnicos com perfis configurados por padrão: administrador (&quot;admin&quot;), faturamento (&quot;billing&quot;), monitoramento, agente de aplicação web (&quot;webapp&quot;) etc. Alguns deles dependem dos aplicativos e opções instalados na plataforma: os operadores &quot;central&quot; e &quot;local&quot;, por exemplo, só estarão visíveis se a opção &quot;Distributed Marketing&quot; estiver instalada.
 
 >[!CAUTION]
 >
@@ -184,19 +184,19 @@ O Adobe Campaign usa operadores técnicos com perfis configurados por padrão: A
 
 Por padrão, o operador técnico &#39;webapp&#39; tem o direito nomeado ADMINISTRATION, que pode levar a riscos de segurança. Para corrigir esse problema, recomendamos remover esse direito. Para fazer isso:
 
-1. No **[!UICONTROL Administration > Access management > Named rights]** nó, clique **[!UICONTROL New]** para criar um direito e nomeá-lo WEBAPP.
+1. No nó **[!UICONTROL Administration > Access management > Named rights]**, clique em **[!UICONTROL New]** para criar um direito e nomeá-lo como WEBAPP.
 
    ![](assets/s_ncs_default_operators_webapp_right.png)
 
-   Named rights are detailed in the [Named rights](#named-rights) section.
+   Os direitos nomeados são detalhados na seção [Direitos nomeados](#named-rights).
 
-1. From the **[!UICONTROL Administration > Access management > Operators]** node, select the Web applications agent operator (&#39;webapp&#39;).
+1. No nó **[!UICONTROL Administration > Access management > Operators]**, selecione o operador de agente de aplicações Web (&quot;webapp&quot;).
 
-   Select the **[!UICONTROL Edit]** tab, then the **[!UICONTROL Access rights]** tab and delete the ADMINISTRATION named right from the list.
+   Selecione a guia **[!UICONTROL Edit]** e depois a guia **[!UICONTROL Access rights]** e exclua o direito nomeado ADMINISTRATION da lista.
 
    ![](assets/s_ncs_default_operators_webapp_admin_right.png)
 
-   Click **[!UICONTROL Add]** and select the WEBAPP right that you have just created, then save your changes.
+   Clique em **[!UICONTROL Add]**, selecione o direito WEBAPP recém-criado e salve as alterações.
 
    ![](assets/s_ncs_default_operators_webapp_webapp_right.png)
 
@@ -204,35 +204,35 @@ Por padrão, o operador técnico &#39;webapp&#39; tem o direito nomeado ADMINIST
 
    ![](assets/s_ncs_default_operators_webapp_folder_access.png)
 
-   Modifying rights on tree folders is detailed in the [Folder access management](#folder-access-management) section.
+   A modificação de direitos em pastas de árvore é detalhada na seção [Gerenciamento de acesso a pastas](#folder-access-management).
 
 >[!NOTE]
 >
->Para obter mais informações sobre Diretrizes de segurança, consulte a [lista de verificação de configuração do Adobe Campaign Security](https://docs.campaign.adobe.com/doc/AC/getting_started/EN/security.html).
+>Para obter mais informações sobre Diretrizes de segurança, consulte a [lista de verificação de configuração do Adobe Campaign Security](https://helpx.adobe.com/br/campaign/kb/acc-security.html).
 
 ## Grupos de operadores {#operator-groups}
 
-Operator groups are created via the **[!UICONTROL Administration > Access management > Operator groups]** node in the tree.
+Os grupos de operadores são criados por meio do nó **[!UICONTROL Administration > Access management > Operator groups]** na árvore.
 
 ### Criação de um novo grupo de operadores {#creating-a-new-operator-group}
 
 Para criar um novo grupo de operadores, siga as etapas abaixo:
 
-1. Click the **[!UICONTROL New]** button to the right of the list of groups or right-click the list and choose **[!UICONTROL New]**.
-1. In the section lower window, from the **[!UICONTROL General]** tab, enter the name and a description for this group in the corresponding fields.
+1. Clique no botão **[!UICONTROL New]** à direita da lista de grupos ou clique com o botão direito do mouse na lista e escolha **[!UICONTROL New]**.
+1. Na janela inferior da seção, na guia **[!UICONTROL General]**, digite o nome e uma descrição para esse grupo nos campos correspondentes.
 
    ![](assets/s_ncs_user_create_operator_gp.png)
 
-1. Click the **[!UICONTROL Content]** tab to define authorizations for this group.
-1. Click the **[!UICONTROL Add]** button to select an appointed right or an operator to associate to the group.
-1. Click the drop-down list or on the folder to the right of the **[!UICONTROL Folder]** field to locate the appointed rights or operators to associate to this group.
-1. Select the rights or operators to add and click **[!UICONTROL OK]** to validate.
+1. Clique na guia **[!UICONTROL Content]** para definir autorizações para esse grupo.
+1. Clique no botão **[!UICONTROL Add]** para selecionar um direito designado ou um operador para associar ao grupo.
+1. Clique na lista suspensa ou na pasta à direita do campo **[!UICONTROL Folder]** para localizar os direitos ou operadores designados para associar a esse grupo.
+1. Selecione os direitos ou operadores a serem adicionados e clique em **[!UICONTROL OK]** para validar.
 
    ![](assets/s_ncs_user_create_operator_gp03.png)
 
    Repita essa operação para adicionar outros direitos ou operadores.
 
-1. Click the **[!UICONTROL Save]** button to add the group to the list.
+1. Clique no botão **[!UICONTROL Save]** para adicionar o grupo à lista.
 
 ### Grupos padrão {#default-groups}
 
@@ -281,51 +281,51 @@ Os grupos de operadores padrão são:
 
 ## Direitos nomeados {#named-rights}
 
-Por padrão, o Adobe Campaign propõe um conjunto de direitos nomeados que permitem definir as autorizações atribuídas aos operadores e grupos de operadores. These rights can be edited from the **[!UICONTROL Administration > Access management > Named rights]** node of the tree.
+Por padrão, o Adobe Campaign propõe um conjunto de direitos nomeados que permitem definir as autorizações atribuídas aos operadores e grupos de operadores. Esses direitos podem ser editados no nó **[!UICONTROL Administration > Access management > Named rights]** da árvore.
 
 ![](assets/s_ncs_admin_named_rights.png)
 
 Esses direitos são os seguintes:
 
-* **[!UICONTROL ADMINISTRATION]**: Operadores com **[!UICONTROL ADMINISTRATION]** direito têm acesso total na instância. Os usuários administradores podem executar/criar/editar/excluir qualquer objeto, como fluxo de trabalho, delivery, scripts etc.
+* **[!UICONTROL ADMINISTRATION]**: operadores com o direito **[!UICONTROL ADMINISTRATION]** têm acesso total na instância. Os usuários administradores podem executar/criar/editar/excluir qualquer objeto, como workflow, delivery, scripts etc.
 
-* **[!UICONTROL APPROVAL ADMINISTRATION]**: É possível definir várias etapas de aprovação em workflows e delivery para garantir que o estado atual tenha sido aprovado por um operador ou grupo atribuído. Os usuários com **[!UICONTROL APPROVAL ADMINISTRATION]** direito podem definir etapas de aprovação e também atribuir um operador ou grupo de operadores que devem aprovar essas etapas.
+* **[!UICONTROL APPROVAL ADMINISTRATION]**: é possível definir várias etapas de aprovação em workflows e deliveries para garantir que o estado atual tenha sido aprovado por um operador ou grupo atribuído. Os usuários com o direito **[!UICONTROL APPROVAL ADMINISTRATION]** podem definir etapas de aprovação e também atribuir um operador ou grupo de operadores que devem aprovar essas etapas.
 
-* **[!UICONTROL CENTRAL]**: Direito de gerenciamento central (Marketing distribuído).
+* **[!UICONTROL CENTRAL]**: direito de gerenciamento central (marketing distribuído).
 
-* **[!UICONTROL DELETE FOLDER]**: Direito de excluir pastas. Com esse direito, os usuários podem excluir pastas da visualização do explorador.
+* **[!UICONTROL DELETE FOLDER]**: direito de excluir pastas. Com esse direito, os usuários podem excluir pastas da visualização do explorador.
 
-* **[!UICONTROL EDIT FOLDERS]**: Direito de alterar as propriedades da pasta, como nome interno, rótulo, imagem associada, ordem de subpastas etc.
+* **[!UICONTROL EDIT FOLDERS]**: direito de alterar as propriedades da pasta, como nome interno, rótulo, imagem associada, pedido de subpastas etc.
 
-* **[!UICONTROL EXPORT]**: Os usuários podem exportar dados de suas instâncias de Adobe Campaign para um arquivo no servidor ou computador local usando a atividade de fluxo de trabalho **[!UICONTROL EXPORT]** .
+* **[!UICONTROL EXPORT]**: os usuários podem exportar dados de suas instâncias do Adobe Campaign para um arquivo no servidor ou computador local usando a atividade de workflow **[!UICONTROL EXPORT]**.
 
-* **[!UICONTROL FILES ACCESS]**: Direito de ler e gravar o acesso de arquivos por meio de um script que pode ser gravado na atividade de fluxo de trabalho para arquivos de leitura/gravação em um servidor. **[!UICONTROL JavaScript]**
+* **[!UICONTROL FILES ACCESS]**: direito de ler e gravar o acesso de arquivos por meio de um script que pode ser gravado na atividade de workflow **[!UICONTROL JavaScript]** para arquivos de leitura/gravação em um servidor.
 
-* **[!UICONTROL IMPORT]**: Direito de importação de dados genéricos. **[!UICONTROL IMPORT]** permite importar dados para qualquer outra tabela, enquanto o **[!UICONTROL RECIPIENT IMPORT]** direito permite importar somente para a tabela do recipient.
+* **[!UICONTROL IMPORT]**: direito de importação de dados genéricos. **[!UICONTROL IMPORT]** permite importar dados para qualquer outra tabela, enquanto o direito **[!UICONTROL RECIPIENT IMPORT]** permite importar somente para a tabela do recipient.
 
-* **[!UICONTROL INSERT FOLDERS]**: Direito de inserir pastas. Os usuários com **[!UICONTROL INSERT FOLDERS]** direitos podem criar novas pastas na árvore de pastas na visualização do explorador.
+* **[!UICONTROL INSERT FOLDERS]**: direito de inserir pastas. Os usuários com o direito **[!UICONTROL INSERT FOLDERS]** podem criar novas pastas na árvore de pastas na visualização do explorador.
 
-* **[!UICONTROL LOCAL]**: Direito para gerenciamento local (Marketing distribuído).
+* **[!UICONTROL LOCAL]**: direito para gerenciamento local (marketing distribuído).
 
-* **[!UICONTROL MERGE]**: Direito de unir os registros selecionados em um. Se houver recipient como duplicados, a **[!UICONTROL MERGE]** direita permitirá que o usuário selecione os duplicados e os mescle em um recipient primário.
+* **[!UICONTROL MERGE]**: direito de unir os registros selecionados em um. Se houver recipients duplicados, o direito **[!UICONTROL MERGE]** permitirá que o usuário selecione os duplicados e os mescle em um recipient primário.
 
-* **[!UICONTROL PREPARE DELIVERIES]**: Direito de criar, editar e salvar um delivery. Os usuários com **[!UICONTROL PREPARE DELIVERIES]** direito também podem start o processo de análise do delivery.
+* **[!UICONTROL PREPARE DELIVERIES]**: direito de criar, editar e salvar um delivery. Os usuários com o direito **[!UICONTROL PREPARE DELIVERIES]** também podem iniciar o processo de análise do delivery.
 
-* **[!UICONTROL PRIVACY DATA RIGHT]**: Direito de coletar e excluir dados de privacidade. Para obter mais informações, consulte esta [página](https://helpx.adobe.com/campaign/kb/acc-privacy.html).
+* **[!UICONTROL PRIVACY DATA RIGHT]**: direito de coletar e excluir dados de privacidade. Para obter mais informações, consulte esta [página](https://helpx.adobe.com/br/campaign/kb/acc-privacy.html).
 
-* **[!UICONTROL PROGRAM EXECUTION]**: Direito de executar comandos em várias linguagens de programação.
+* **[!UICONTROL PROGRAM EXECUTION]**: direito de executar comandos em várias linguagens de programação.
 
-* **[!UICONTROL RECIPIENT IMPORT]**: Direito de importar recipients. Os usuários com **[!UICONTROL RECIPIENT IMPORT]** direito podem importar um arquivo local para a tabela do recipient.
+* **[!UICONTROL RECIPIENT IMPORT]**: direito de importar recipients. Os usuários com o direito **[!UICONTROL RECIPIENT IMPORT]** podem importar um arquivo local para a tabela do recipient.
 
 * **[!UICONTROL SQL SCRIPT EXECUTION]** Direito de executar qualquer comando SQL diretamente no banco de dados.
 
-* **[!UICONTROL START DELIVERIES]**: Direito de aprovar deliveries anteriormente analisados. Após a análise do delivery, o delivery pausará em várias etapas de aprovação e precisará ser aprovado para retomar. Os usuários com **[!UICONTROL START DELIVERIES]** direito podem aprovar delivery.
+* **[!UICONTROL START DELIVERIES]**: Direito de aprovar deliveries anteriormente analisados. Após a análise, o delivery pausará em várias etapas de aprovação e precisará ser aprovado para retomar. Os usuários com o direito **[!UICONTROL START DELIVERIES]** podem aprovar deliveries.
 
-* **[!UICONTROL USE SQL DATA MANAGEMENT ACTIVITY]**: Direito de escrever seus próprios scripts SQL usando a atividade de Gestão de dados SQL, para criar e preencher tabelas de trabalho (consulte [esta seção](../../workflow/using/sql-data-management.md)).
+* **[!UICONTROL USE SQL DATA MANAGEMENT ACTIVITY]**: direito de escrever seus próprios scripts SQL usando a atividade de gerenciamento de dados SQL, para criar e preencher tabelas de trabalho (consulte [esta seção](../../workflow/using/sql-data-management.md)).
 
-* **[!UICONTROL WORKFLOW]**: Direito de executar workflows. Sem esse direito, os usuários não podem start, parar ou reiniciar workflows.
+* **[!UICONTROL WORKFLOW]**: direito de executar workflows. Sem esse direito, os usuários não podem iniciar, parar ou reiniciar workflows.
 
-* **[!UICONTROL WEBAPP]**: Direito de utilizar aplicativos Web.
+* **[!UICONTROL WEBAPP]**: direito de usar aplicações web.
 
 >[!NOTE]
 >
@@ -345,11 +345,11 @@ Cada pasta da árvore tem direitos de acesso de leitura, gravação e exclusão 
 
 Para editar permissões em uma pasta específica da árvore, siga as etapas abaixo:
 
-1. Right-click on the folder and select **[!UICONTROL Properties...]**.
+1. Clique com o botão direito do mouse na pasta e selecione **[!UICONTROL Properties...]**.
 
    ![](assets/s_ncs_user_folder_properties.png)
 
-1. Click the **[!UICONTROL Security]** tab to view authorizations on this folder.
+1. Clique na guia **[!UICONTROL Security]** para visualizar as autorizações nessa pasta.
 
    ![](assets/s_ncs_user_folder_properties_security.png)
 
@@ -361,15 +361,15 @@ Para modificar permissões, você pode:
 
    ![](assets/s_ncs_user_folder_properties_security02.png)
 
-* **Autorizar um grupo ou um operador**. To do this, click the **[!UICONTROL Add]** button and select the group or operator to which you want to assign authorizations for this folder.
-* **Proibir um grupo ou operador**. To do this, click **[!UICONTROL Delete]** and select the group or operator from which you want to remove authorization for this folder.
+* **Autorizar um grupo ou um operador**. Para fazer isso, clique no botão **[!UICONTROL Add]** e selecione o grupo ou operador ao qual deseja atribuir autorizações para essa pasta.
+* **Proibir um grupo ou operador**. Para fazer isso, clique em **[!UICONTROL Delete]** e selecione o grupo ou operador do qual deseja remover a autorização para essa pasta.
 * **Selecionar os direitos atribuídos a um grupo ou a um operador**. Para fazer isso, clique no grupo ou operador relacionado, selecione os direitos de acesso que deseja conceder e desmarque os outros.
 
    ![](assets/s_ncs_user_folder_properties_security03.png)
 
 ### Propagar permissões {#propagate-permissions}
 
-Você pode propagar autorizações e direitos de acesso. To do this, select the **[!UICONTROL Propagate]** option in the folder properties.
+Você pode propagar autorizações e direitos de acesso. Para fazer isso, selecione a opção **[!UICONTROL Propagate]** nas propriedades da pasta.
 
 As autorizações definidas nessa janela serão aplicadas a todas as subpastas do nó atual. É possível sobrecarregar essas autorizações para cada uma das subpastas.
 
@@ -379,7 +379,7 @@ As autorizações definidas nessa janela serão aplicadas a todas as subpastas d
 
 ### Conceder acesso a todos os operadores {#grant-access-to-all-operators}
 
-In the **[!UICONTROL Security]** tab, if the **[!UICONTROL System folder]** option is selected, all operators will have access to this data, regardless of their rights. Se essa opção estiver desmarcada, você deverá adicionar explicitamente o operador (ou seu grupo) à lista de autorizações para que ele tenha acesso.
+Na guia **[!UICONTROL Security]**, se a opção **[!UICONTROL System folder]** estiver selecionada, todos os operadores terão acesso a esses dados, independentemente dos direitos. Se essa opção estiver desmarcada, você deverá adicionar explicitamente o operador (ou seu grupo) à lista de autorizações para que ele tenha acesso.
 
 ![](assets/s_ncs_user_folder_properties_security03b.png)
 
@@ -387,11 +387,11 @@ In the **[!UICONTROL Security]** tab, if the **[!UICONTROL System folder]** opti
 
 ### Sobre pastas e visualizações {#about-folders-and-views}
 
-Pastas são nós na árvore do Adobe Campaign. These nodes are created by right-clicking the tree, via the **[!UICONTROL Add new folder]** menu. Por padrão, o primeiro menu permite adicionar a pasta correspondente ao contexto atual.
+Pastas são nós na árvore do Adobe Campaign. Esses nós são criados clicando com o botão direito do mouse na árvore, por meio do menu **[!UICONTROL Add new folder]**. Por padrão, o primeiro menu permite adicionar a pasta correspondente ao contexto atual.
 
 ![](assets/s_ncs_user_add_folder_in_tree.png)
 
-É possível conceder permissões a essas pastas como em todas as outras pastas da árvore. Consulte Gerenciamento [de acesso de](#folder-access-management)pasta.
+É possível conceder permissões a essas pastas como em todas as outras pastas da árvore. Consulte [Gerenciamento de acesso a pastas](#folder-access-management).
 
 Além disso, você pode criar visualizações para restringir o acesso aos dados e organizar o conteúdo da árvore para atender aos seus requisitos. É possível atribuir direitos às visualizações.
 
@@ -409,12 +409,12 @@ Quando você converte uma pasta em uma visualização, todos os dados correspond
 
 No exemplo abaixo, criaremos novas pastas para exibir dados específicos:
 
-1. Create a new **[!UICONTROL Deliveries]** type folder, and name it **Deliveries France**.
-1. Right-click this folder and select **[!UICONTROL Properties...]**.
+1. Crie uma nova pasta do tipo **[!UICONTROL Deliveries]** e a nomeie como **Deliveries France**.
+1. Clique com o botão direito do mouse nessa pasta e selecione **[!UICONTROL Properties...]**.
 
    ![](assets/s_ncs_user_add_folder_exple.png)
 
-1. Na **[!UICONTROL Restriction]** guia, selecione **[!UICONTROL This folder is a view]**. Todos os deliveries no banco de dados serão exibidos.
+1. Na guia **[!UICONTROL Restriction]**, selecione **[!UICONTROL This folder is a view]**. Todos os deliveries no banco de dados serão exibidos.
 
    ![](assets/s_ncs_user_add_folder_exple01.png)
 
