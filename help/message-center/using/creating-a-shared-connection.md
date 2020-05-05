@@ -14,7 +14,7 @@ discoiquuid: 7f471ac1-cd6a-4371-977e-52d60ce8d968
 index: y
 internal: n
 snippet: y
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 65043155ab6ff1fe556283991777964bb43c57ce
 
 ---
@@ -32,17 +32,16 @@ source-git-commit: 65043155ab6ff1fe556283991777964bb43c57ce
 
 ## Instância de controle {#control-instance}
 
-Se você tiver uma arquitetura dividida, precisará
-                especificar as instâncias de execução vinculadas à instância de controle e conectá-las. Os templates de mensagem transacional são implantados nas instâncias de execução. The connection between the control instance and the execution instances is created by configuring the **[!UICONTROL Execution instance]** type external accounts. A quantidade de contas externas precisa ser igual à quantidade de instâncias de execução.
+Se você tiver uma arquitetura dividida, precisará especificar as instâncias de execução vinculadas à instância de controle e conectá-las. Os templates de mensagem transacional são implantados nas instâncias de execução. A conexão entre a instância de controle e as instâncias de execução é criada configurando as contas externas do tipo **[!UICONTROL Execution instance]**. A quantidade de contas externas precisa ser igual à quantidade de instâncias de execução.
 
 >[!NOTE]
 >
->Quando as instâncias de execução são usadas por várias instâncias de controle, os dados podem ser divididos por pasta e por operador. Para obter mais informações, consulte [Uso de várias instâncias](#using-several-control-instances)de controle.
+>Quando as instâncias de execução são usadas por várias instâncias de controle, os dados podem ser divididos por pasta e por operador. Para obter mais informações, consulte [Uso de várias instâncias de controle](#using-several-control-instances).
 
 Para criar uma conta externa do tipo instância de execução, siga as etapas abaixo:
 
-1. Vá para a **[!UICONTROL Administration > Platform > External accounts]** pasta.
-1. Select one of the execution instance type external accounts provided out-of-the-box with Adobe Campaign, right-click and choose **[!UICONTROL Duplicate]** .
+1. Vá para a pasta de **[!UICONTROL Administration > Platform > External accounts]**.
+1. Selecione uma das contas externas do tipo instância de execução fornecidas com o Adobe Campaign, clique com o botão direito do mouse e escolha **[!UICONTROL Duplicate]**.
 
    ![](assets/messagecenter_create_extaccount_001.png)
 
@@ -50,7 +49,7 @@ Para criar uma conta externa do tipo instância de execução, siga as etapas ab
 
    ![](assets/messagecenter_create_extaccount_002.png)
 
-1. Select the **[!UICONTROL Enabled]** option to make the external account operational.
+1. Selecione a opção **[!UICONTROL Enabled]** para tornar a conta externa operacional.
 
    ![](assets/messagecenter_create_extaccount_003.png)
 
@@ -58,7 +57,7 @@ Para criar uma conta externa do tipo instância de execução, siga as etapas ab
 
    ![](assets/messagecenter_create_extaccount_004.png)
 
-1. A conta deve corresponder ao Agente do Centro de Mensagens conforme definido na pasta do operador. By default, the out-of-the-box account provided by Adobe Campaign is **[!UICONTROL mc]** .
+1. A conta deve corresponder ao Agente do Centro de Mensagens conforme definido na pasta do operador. Por padrão, a conta integrada fornecida pelo Adobe Campaign é **[!UICONTROL mc]**.
 
    ![](assets/messagecenter_create_extaccount_005.png)
 
@@ -66,7 +65,7 @@ Para criar uma conta externa do tipo instância de execução, siga as etapas ab
 
    >[!NOTE]
    >
-   >Para evitar digitar a senha sempre que fizer logon na instância, especifique o endereço IP da instância de controle na instância de execução For more on this, refer to [Execution instance](#execution-instance).
+   >Para evitar digitar a senha sempre que fizer logon na instância, especifique o endereço IP da instância de controle na instância de execução Para obter mais informações, consulte [Instância de execução](#execution-instance).
 
 1. Especifique o método de recuperação a ser usado pela instância de execução.
 
@@ -78,7 +77,7 @@ Para criar uma conta externa do tipo instância de execução, siga as etapas ab
 
    >[!NOTE]
    >
-   >Observe que ao usar FDA em HTTP, somente as instâncias de execução usando um banco de dados Postgres são suportadas. Não há suporte para bancos de dados MSSQL ou Oracle.
+   >Observe que ao usar FDA em HTTP, somente as instâncias de execução usando um banco de dados Postgres são compatíveis. Não há suporte para bancos de dados MSSQL ou Oracle.
 
    O segundo método é recomendado se a instância de controle tiver acesso direto ao banco de dados das instâncias de execução. Caso contrário, escolha o acesso do serviço Web. A conta FDA para especificar coincide com a conexão com os bancos de dados das várias instâncias de execução criadas na instância de controle.
 
@@ -86,11 +85,11 @@ Para criar uma conta externa do tipo instância de execução, siga as etapas ab
 
    Para obter mais informações sobre o Federated Data Access (FDA), consulte [Acesso a um banco de dados externo](../../platform/using/about-fda.md).
 
-1. Click **[!UICONTROL Test the connection]** to make sure the control instance and the execution instance are linked up.
+1. Clique em **[!UICONTROL Test the connection]** para verificar se a instância de controle e a instância de execução estão vinculadas.
 
    ![](assets/messagecenter_create_extaccount_006.png)
 
-1. Cada instância de execução deve ser associada a um identificador. This identifier can be attributed on each execution instance either manually, by using the deployment wizard (refer to [Identifying execution instances](../../message-center/using/identifying-execution-instances.md)), or automatically, by clicking the **Initialize connection** button from the control instance.
+1. Cada instância de execução deve ser associada a um identificador. Esse identificador pode ser atribuído a cada instância de execução manualmente, usando o assistente de implantação (consulte [Identificação de instâncias de execução](../../message-center/using/identifying-execution-instances.md)) ou automaticamente, clicando no botão **Initialize connection** na instância de controle.
 
    ![](assets/messagecenter_create_extaccount_006bis.png)
 
@@ -98,22 +97,22 @@ Para criar uma conta externa do tipo instância de execução, siga as etapas ab
 
 Para que a instância de controle possa se conectar à instância de execução sem ter que fornecer uma senha, basta digitar o endereço IP da instância de controle na seção direitos de acesso do **Centro de Mensagens** . No entanto, senhas vazias são proibidas por padrão.
 
-Para usar uma senha vazia, vá para as instâncias de execução e defina uma zona de segurança limitada ao endereço IP do sistema de informações que entrega os eventos. This security zone must allow empty passwords and accept `<identifier> / <password>` type connections. Para obter mais informações, consulte [esta seção](../../installation/using/configuring-campaign-server.md#defining-security-zones).
+Para usar uma senha vazia, vá para as instâncias de execução e defina uma zona de segurança limitada ao endereço IP do sistema de informações que entrega os eventos. Essa zona de segurança deve permitir senhas vazias e aceitar conexões do tipo `<identifier> / <password>`. Para obter mais informações, consulte [esta seção](../../installation/using/configuring-campaign-server.md#defining-security-zones).
 
 >[!NOTE]
 >
->Quando as instâncias de execução são usadas por várias instâncias de controle, os dados podem ser divididos por pasta e por operador. Para obter mais informações, consulte [Uso de várias instâncias](#using-several-control-instances)de controle.
+>Quando as instâncias de execução são usadas por várias instâncias de controle, os dados podem ser divididos por pasta e por operador. Para obter mais informações, consulte [Uso de várias instâncias de controle](#using-several-control-instances).
 
-1. Go to the operator folder in the execution instance ( **[!UICONTROL Administration > Access management > Operators]** ).
-1. Selecione o agente do Centro de **mensagens** .
+1. Abra a pasta do operador na instância de execução (**[!UICONTROL Administration > Access management > Operators]** ).
+1. Selecione o agente **Message Center**.
 
    ![](assets/messagecenter_operator_001.png)
 
-1. Selecione a **[!UICONTROL Edit]** guia, clique em **[!UICONTROL Access rights]** e, em seguida, clique no **[!UICONTROL Edit the access parameters...]** link.
+1. Selecione a guia **[!UICONTROL Edit]**, clique em **[!UICONTROL Access rights]** e depois clique no link **[!UICONTROL Edit the access parameters...]**.
 
    ![](assets/messagecenter_operator_002.png)
 
-1. Na **[!UICONTROL Access settings]** janela, clique no **[!UICONTROL Add a trusted IP mask]** link e adicione o endereço IP da instância de controle.
+1. Na janela **[!UICONTROL Access settings]**, clique no link **[!UICONTROL Add a trusted IP mask]** e adicione o endereço IP da instância de controle.
 
    ![](assets/messagecenter_operator_003.png)
 
@@ -121,29 +120,29 @@ Para usar uma senha vazia, vá para as instâncias de execução e defina uma zo
 
 Você pode compartilhar um cluster de execução com várias instâncias de controle. Esse tipo de arquitetura requer a seguinte configuração.
 
-For example if your company manages two brands, each with its own control instance: **Control 1** and **Control 2**. Duas instâncias de execução também são usadas. É necessário inserir um operador diferente do Centro de Mensagens para cada instância de controle: um operador **mc1** para a instância de **Controle 1** e um operador **mc2** para a instância de **Controle 2** .
+Por exemplo, se sua empresa gerencia duas marcas, cada uma com sua própria instância de controle: **Control 1** e **Control 2**. Duas instâncias de execução também são usadas. É necessário inserir um operador diferente do Centro de Mensagens para cada instância de controle: um operador **mc1** para a instância de **Controle 1** e um operador **mc2** para a instância de **Controle 2** .
 
 Na árvore de todas as instâncias de execução, crie uma pasta por operador (**Pasta 1** e **Pasta 2**) e restrinja os dados de cada operador à sua pasta.
 
 ### Configuração de instâncias de controle {#configuring-control-instances}
 
-1. Na instância de controle do **Controle 1**, crie uma conta externa por instância de execução e insira o operador **mc1** em cada conta externa. The **mc1** operator will thereafter be created on all the execution instances (refer to [Configuring execution instances](#configuring-execution-instances)).
+1. Na instância de controle do **Controle 1**, crie uma conta externa por instância de execução e insira o operador **mc1** em cada conta externa. O operador **mc1** será criado em todas as instâncias de execução (consulte [Configuração de instâncias de execução](#configuring-execution-instances)).
 
    ![](assets/messagecenter_multi_control_1.png)
 
-1. Na instância de controle do **Controle 2**, crie uma conta externa por instância de execução e insira o operador **mc2** em cada conta externa. The **mc2** operator will thereafter be created on all the execution instances (refer to [Configuring execution instances](#configuring-execution-instances)).
+1. Na instância de controle do **Controle 2**, crie uma conta externa por instância de execução e insira o operador **mc2** em cada conta externa. O operador **mc2** será criado em todas as instâncias de execução (consulte [Configuração de instâncias de execução](#configuring-execution-instances)).
 
    ![](assets/messagecenter_multi_control_2.png)
 
    >[!NOTE]
    >
-   >For more on configuring a control instance, refer to [Control instance](#control-instance).
+   >Para obter mais informações sobre como configurar uma instância de controle, consulte [Instância de controle](#control-instance).
 
 ### Configuração de instâncias de execução {#configuring-execution-instances}
 
 Para usar várias instâncias de controle, essa configuração deve ser executada em TODAS as instâncias de execução.
 
-1. Crie uma pasta por operador no **[!UICONTROL Administration > Production > Message Center]** nó: **Pasta 1** e **Pasta 2**. Para obter mais informações sobre criação de pastas e visualizações, consulte [Plataforma](../../platform/using/access-management.md#folders-and-views).
+1. Crie uma pasta por operador no nó **[!UICONTROL Administration > Production > Message Center]**: **Folder 1** e **Folder 2**. Para obter mais informações sobre criação de pastas e visualizações, consulte [Plataforma](../../platform/using/access-management.md#folders-and-views).
 
    ![](assets/messagecenter_multi_control_3.png)
 
@@ -153,13 +152,13 @@ Para usar várias instâncias de controle, essa configuração deve ser executad
 
    >[!NOTE]
    >
-   >**os operadores mc1** e **mc2** devem ter **[!UICONTROL Message Center execution]** direitos e não podem ter acesso ao console do cliente Adobe Campaign. Um operador deve estar sempre vinculado a uma zona de segurança. Para obter mais informações, consulte [esta seção](../../installation/using/configuring-campaign-server.md#defining-security-zones).
+   >Os operadores **mc1** e **mc2** devem ter os direitos de **[!UICONTROL Message Center execution]** e não podem ter acesso ao console do cliente do Adobe Campaign. Um operador deve estar sempre vinculado a uma zona de segurança. Para obter mais informações, consulte [esta seção](../../installation/using/configuring-campaign-server.md#defining-security-zones).
 
-1. For each operator, check the **[!UICONTROL Restrict to information found in sub-folders of]** box, and select the relevant folder (**Folder 1** for the **mc1** operator and **Folder 2** for the **mc2** operator).
+1. Para cada operador, marque a caixa **[!UICONTROL Restrict to information found in sub-folders of]** e selecione a pasta relevante (**Folder 1** para o operador **mc1** e **Folder 2** para o operador **mc2**).
 
    ![](assets/messagecenter_multi_control_5.png)
 
-1. Forneça permissões de leitura e gravação ao operador para sua pasta. To do this, right-click the folder and select **[!UICONTROL Properties]** . Then select the **[!UICONTROL Security]** tab and add the relevant operator (**mc1** for **Folder 1** and **mc2** for **Folder 2**). Verifique se as **[!UICONTROL Read/Write data]** caixas estão marcadas.
+1. Forneça permissões de leitura e gravação ao operador para sua pasta. Para fazer isso, clique com o botão direito do mouse e selecione **[!UICONTROL Properties]**. Em seguida, selecione a guia **[!UICONTROL Security]** e adicione o operador relevante (**mc1** para **Folder 1** e **mc2** para **Folder 2**). Verifique se as caixas **[!UICONTROL Read/Write data]** estão marcadas.
 
    ![](assets/messagecenter_multi_control_6.png)
 
