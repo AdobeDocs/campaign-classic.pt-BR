@@ -14,7 +14,7 @@ discoiquuid: 96c0ffae-b7b8-4346-bf20-963aa233438f
 index: y
 internal: n
 snippet: y
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 707352334144df86ae82aa51d595ae6bc751d1f2
 
 ---
@@ -26,13 +26,13 @@ Esta seção descreve todas as atividades disponíveis. De acordo com o nó ou o
 
 As atividades do workflow são agrupadas por categoria. Há quatro guias disponíveis ao mesmo tempo.
 
-In the campaign workflows, the **[!UICONTROL Events]** tab is replaced by the **[!UICONTROL Deliveries]** tab. The activities in this tab are detailed in the [Action activities](../../workflow/using/about-action-activities.md) section.
+Nos workflows da campanha, a guia **[!UICONTROL Events]** é substituída pela guia **[!UICONTROL Deliveries]**. As atividades nesta guia estão detalhadas na seção [Action activities](../../workflow/using/about-action-activities.md).
 
 ![](assets/wf-activity-tabs.png)
 
 Leia mais:
 
-* [Sobre atividades de definição de metas](../../workflow/using/about-targeting-activities.md)
+* [Sobre as atividades de direcionamento](../../workflow/using/about-targeting-activities.md)
 * [Importação de dados](../../workflow/using/importing-data.md)
 * [Execução de um fluxo de trabalho](../../workflow/using/executing-a-workflow.md)
 * [Práticas recomendadas do fluxo de trabalho](../../workflow/using/workflow-best-practices.md)
