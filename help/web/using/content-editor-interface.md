@@ -15,7 +15,7 @@ discoiquuid: 20c64d31-c2ed-4bc9-9f0e-46f2e0c08c88
 index: y
 internal: n
 snippet: y
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 707352334144df86ae82aa51d595ae6bc751d1f2
 
 ---
@@ -29,9 +29,9 @@ A janela de edição do DCE está dividida em três seções diferentes. Elas pe
 
 ![](assets/dce_decoupe_window_nb.png)
 
-1. A seção **superior** é uma área de exibição para mensagens do usuário. Essas mensagens indicam o status da aplicação web ou o delivery sendo criado, bem como avisos e mensagens de erro relacionadas ao conteúdo. Para obter mais informações, consulte os status [de conteúdo](../../web/using/content-editing-best-practices.md#html-content-statuses)HTML.
-1. A seção à **esquerda** da janela é a área para edição de conteúdo. Nessa área, o usuário pode interagir diretamente com o conteúdo usando a barra de ferramentas pop-up: insira um link em uma imagem, altere a fonte, exclua um campo etc. For more on this refer to [Editing forms](../../web/using/editing-content.md#editing-forms).
-1. A seção à **direita** da janela é a área do painel de controle. Essa área agrupa as diferentes opções para o editor, especialmente aquelas relacionadas à configuração do cabeçalho da página e as opções gerais para um bloco: adicionar uma borda, vincular um campo de banco de dados a uma zona de entrada, acessar as propriedades da página da Web etc. Para obter mais informações, consulte as opções [](#global-options) Globais e [Edição de conteúdo](../../web/using/editing-content.md) .
+1. A seção **superior** é uma área de exibição para mensagens do usuário. Essas mensagens indicam o status da aplicação web ou o delivery sendo criado, bem como avisos e mensagens de erro relacionadas ao conteúdo. Para obter mais informações, consulte [Status de conteúdo HTML](../../web/using/content-editing-best-practices.md#html-content-statuses).
+1. A seção à **esquerda** da janela é a área para edição de conteúdo. Nessa área, o usuário pode interagir diretamente com o conteúdo usando a barra de ferramentas pop-up: inserir um link em uma imagem, alterar a fonte, excluir um campo, etc. Para obter mais informações, consulte [Edição de formulários](../../web/using/editing-content.md#editing-forms).
+1. A seção à **direita** da janela é a área do painel de controle. Essa área agrupa as diferentes opções do editor, particularmente as relacionadas à configuração do título da página e opções gerais de um bloco: adicionar uma borda, vincular um campo de banco de dados a uma zona de entrada, acessar propriedades da página da Web, etc. Para obter mais informações, consulte as seções [Global options](#global-options) e [Editing content](../../web/using/editing-content.md)
 
 ## Opções globais {#global-options}
 
@@ -43,7 +43,7 @@ Ela tem quatro ícones:
 
 ![](assets/dce_icons_sidebar.png)
 
-* The **Display/Hide blocks** icon lets you display blue frames around the content blocks (corresponding to the `<div>` HTML tag).
+* O ícone **Display/Hide blocks** permite exibir quadros azuis ao redor dos blocos de conteúdo (correspondentes à tag HTML `<div>`).
 
 * O ícone **Escolher outro conteúdo** permite que o usuário carregue o novo conteúdo de um template (template existente ou template pronto para uso).
 
@@ -53,7 +53,7 @@ Ela tem quatro ícones:
    >
    >O conteúdo selecionado substitui o conteúdo atual.
 
-* O ícone **Salvar como template** permite salvar o conteúdo atual como template. Você deve inserir o rótulo e o nome interno do template. Os modelos são armazenados no **[!UICONTROL Resources > Templates > Content templates]** nó.
+* O ícone **Salvar como template** permite salvar o conteúdo atual como template. Você deve inserir o rótulo e o nome interno do template. Os templates são armazenados no nó **[!UICONTROL Resources > Templates > Content templates]**.
 
    ![](assets/dce_popup_savetemplate.png)
 
@@ -67,7 +67,7 @@ Ela tem quatro ícones:
 
    >[!NOTE]
    >
-   >This information corresponds to the **`<title>`** and **`<meta>`** HTML tags on the page.
+   >Essas informações correspondem à **`<title>`** e **`<meta>`** às tags HTML na página.
    >
    >As palavras-chave devem ser separadas por vírgulas.
 
@@ -79,12 +79,12 @@ A seção à direita do editor agrupa as principais opções que permitem que vo
 
 É possível:
 
-* Determine a exibição de um ou vários blocos, consulte [Definindo uma condição](../../web/using/editing-content.md#defining-a-visibility-condition)de visibilidade,
-* Defina as bordas e os quadros, consulte [Adicionar uma borda e um plano de fundo](../../web/using/editing-content.md#adding-a-border-and-background),
-* Defina os atributos da imagem (tamanho, legenda), consulte [Editar propriedades](../../web/using/editing-content.md#editing-image-properties)da imagem,
-* Vincule o banco de dados a um elemento de formulário (zona de entrada, caixa de seleção); consulte [Alteração das propriedades de dados de um formulário](../../web/using/editing-content.md#changing-the-data-properties-for-a-form),
-* Torne uma parte de um formulário obrigatória, consulte [Alterar as propriedades de dados de um formulário](../../web/using/editing-content.md#changing-the-data-properties-for-a-form),
-* Defina uma ação para um botão e consulte [Adicionar uma ação a um botão](../../web/using/editing-content.md#adding-an-action-to-a-button).
+* Determine a exibição de um ou vários blocos, consulte [Definição de uma condição de visibilidade](../../web/using/editing-content.md#defining-a-visibility-condition),
+* Defina as bordas e os quadros, consulte [Adição de uma borda e um plano de fundo](../../web/using/editing-content.md#adding-a-border-and-background),
+* Defina os atributos da imagem (tamanho, legenda), consulte [Edição de propriedades da imagem](../../web/using/editing-content.md#editing-image-properties),
+* Vincule o banco de dados a um elemento de formulário (zona de entrada, caixa de seleção); consulte [Alteração das propriedades dos dados de um formulário](../../web/using/editing-content.md#changing-the-data-properties-for-a-form),
+* Torne uma parte de um formulário obrigatória, consulte [Alteração das propriedades dos dados de um formulário](../../web/using/editing-content.md#changing-the-data-properties-for-a-form),
+* Defina uma ação para um botão, consulte [Adição de uma ação a um botão](../../web/using/editing-content.md#adding-an-action-to-a-button).
 
 ## Barra de ferramentas Conteúdo {#content-toolbar}
 
