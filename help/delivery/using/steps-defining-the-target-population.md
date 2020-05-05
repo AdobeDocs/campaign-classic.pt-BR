@@ -14,7 +14,7 @@ discoiquuid: df29492f-ed73-4ab8-b075-e76b3b9ebce3
 index: y
 internal: n
 snippet: y
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 4ac96bf0e54268832b84b17c3cc577af038cc712
 
 ---
@@ -24,50 +24,50 @@ source-git-commit: 4ac96bf0e54268832b84b17c3cc577af038cc712
 
 ## Sobre as populações do target {#about-target-populations}
 
-Para cada entrega, é possível definir vários tipos de populações-alvo. A seção abaixo fornece mais informações sobre como selecionar:
+Para cada delivery, você poderá definir vários tipos de populações do target. A seção abaixo fornece mais informações sobre como selecionar:
 
-* **Os principais destinatários da entrega**. [Leia mais](../../delivery/using/steps-defining-the-target-population.md#selecting-the-main-target).
-* **Os destinatários das mensagens** de prova, para configurar um ciclo de validação. [Leia mais](../../delivery/using/steps-defining-the-target-population.md#defining-a-specific-proof-target).
+* **Os principais recipients do delivery**. [Leia mais](../../delivery/using/steps-defining-the-target-population.md#selecting-the-main-target).
+* **Os recipients de mensagens de prova**, para configurar um ciclo de validação. [Leia mais](../../delivery/using/steps-defining-the-target-population.md#defining-a-specific-proof-target).
 
-Além disso, também é possível definir endereços [semente e grupos](../../delivery/using/about-seed-addresses.md)de [](../../campaign/using/marketing-campaign-deliveries.md#defining-a-control-group)controle. se a entrega for incluída em uma campanha de marketing.
+Além disso, também é possível definir [seed addresses](../../delivery/using/about-seed-addresses.md) e [grupos de controle](../../campaign/using/marketing-campaign-deliveries.md#defining-a-control-group). se o delivery for incluído em uma campanha de marketing.
 
-## Selecionar os principais destinatários da entrega {#selecting-the-main-target}
+## Selecionar os principais recipients do delivery {#selecting-the-main-target}
 
 Na maioria dos casos, o target principal é extraído do banco de dados do Campaign (modo padrão).
 
-Os recipients também podem ser armazenados em um arquivo externo. The configuration of this type of delivery is presented in [Selecting external recipients](../../delivery/using/steps-defining-the-target-population.md#selecting-external-recipients).
+Os recipients também podem ser armazenados em um arquivo externo. A configuração desse tipo de delivery é apresentada em [Seleção de recipients externos](../../delivery/using/steps-defining-the-target-population.md#selecting-external-recipients)
 
-Para selecionar os destinatários da entrega que está sendo criada, siga estas etapas:
+Para selecionar os recipients do delivery que está sendo criado, siga as etapas abaixo:
 
-1. Clique no **[!UICONTROL To]** link.
+1. Clique no link **[!UICONTROL To]**.
 1. Se os recipients estiverem armazenados no banco de dados, selecione a primeira opção.
 
    ![](assets/s_ncs_user_wizard_email02a.png)
 
-1. Select the target mapping in the **[!UICONTROL Target mapping]** drop-down list. Adobe Campaign default target mapping is **[!UICONTROL Recipients]**.
+1. Selecione o target mapping na lista suspensa **[!UICONTROL Target mapping]**. O target mapping padrão do Adobe Campaign é **[!UICONTROL Recipients]**.
 
-   Outros target mappings estão disponíveis e alguns podem ser relacionados à sua configuração específica. Para obter mais informações sobre mapeamentos de destino, consulte [Seleção de um mapeamento](../../delivery/using/selecting-a-target-mapping.md)de destino.
+   Outros target mappings estão disponíveis e alguns podem ser relacionados à sua configuração específica. Para obter mais informações sobre target mappings, consulte [Seleção de target mapping](../../delivery/using/selecting-a-target-mapping.md).
 
-1. Click the **[!UICONTROL Add]** button to define restriction filters.
+1. Clique no botão **[!UICONTROL Add]** para definir os filtros de restrição.
 
    Em seguida, é possível selecionar o tipo de filtragem a ser aplicado:
 
    ![](assets/s_ncs_user_wizard_email02b.png)
 
-   Você poderá selecionar recipients usando os tipos de metas definidos no banco de dados. To use a target type, select it and click **[!UICONTROL Next]**. For each target, you can display the recipients concerned by clicking the **[!UICONTROL Preview]** tab. For certain types of target, the **[!UICONTROL Refine target]** button lets you combine several targeting criteria.
+   Você poderá selecionar recipients usando os tipos de metas definidos no banco de dados. Para usar um tipo de target, selecione-o e clique em **[!UICONTROL Next]**. Para cada target, você poderá exibir os recipients relacionados ao clicar na guia **[!UICONTROL Preview]**. Para certos tipos de target, o botão **[!UICONTROL Refine target]** permite combinar vários critérios de definição do target.
 
    Os seguintes tipos de target são oferecidos por padrão:
 
-   * **[!UICONTROL Filtering conditions]** : essa opção permite definir uma consulta e exibir o resultado. O método para definir queries é apresentado [nesta seção](../../platform/using/creating-filters.md#creating-an-advanced-filter).
-   * **[!UICONTROL Subscribers of an information service]** : essa opção permite que você selecione um boletim informativo no qual os destinatários devem se inscrever para ser direcionado pela entrega que está sendo criada.
+   * **[!UICONTROL Filtering conditions]**: esta opção permite que você defina uma consulta e exiba o resultado. O método para definir queries é apresentado [nesta seção](../../platform/using/creating-filters.md#creating-an-advanced-filter).
+   * **[!UICONTROL Subscribers of an information service]**: esta opção permite que você selecione um boletim informativo ao qual os recipients devem ser inscritos para receberem o delivery que está sendo criado.
 
       ![](assets/s_ncs_user_wizard_email02c.png)
 
-   * **[!UICONTROL Recipients of a delivery]** : essa opção permite que você defina os destinatários de uma entrega existente como um critério de direcionamento. Você deverá selecionar o delivery na lista:
+   * **[!UICONTROL Recipients of a delivery]**: essa opção permite definir os recipients de um delivery existente como um critério de direcionamento. Você deverá selecionar o delivery na lista:
 
       ![](assets/s_ncs_user_wizard_email02d.png)
 
-   * **[!UICONTROL Delivery recipients belonging to a folder]** : essa opção permite selecionar uma pasta de entrega e direcionar os destinatários das entregas nessa pasta.
+   * **[!UICONTROL Delivery recipients belonging to a folder]**: essa opção permite selecionar uma pasta de delivery e apontar os recipients dos deliveries nessa pasta.
 
       ![](assets/s_ncs_user_wizard_email02e.png)
 
@@ -77,18 +77,18 @@ Para selecionar os destinatários da entrega que está sendo criada, siga estas 
 
       >[!NOTE]
       >
-      >The **[!UICONTROL Include sub-folders]** option also lets you target the deliveries contained in folders located in the tree structure below the selected node.
+      >A opção **[!UICONTROL Include sub-folders]** também permite direcionar os deliveries contidos nas pastas localizadas na estrutura de árvore abaixo do nó selecionado.
 
-   * **[!UICONTROL Recipients included in a folder]** : essa opção permite direcionar os perfis contidos em uma pasta específica da árvore.
-   * **[!UICONTROL A recipient]** : essa opção permite selecionar um destinatário específico dos perfis no banco de dados.
-   * **[!UICONTROL A list of recipients]** : essa opção permite direcionar uma lista de destinatários. As listas são apresentadas [neste seção](../../platform/using/creating-and-managing-lists.md).
-   * **[!UICONTROL User filters]** : essa opção permite acessar os filtros pré-configurados para usá-los como critérios de filtragem para perfis no banco de dados. Os flitros pré-configurados são apresentados [nesta seção](../../platform/using/creating-filters.md#saving-a-filter).
-   * The option **[!UICONTROL Exclude recipients corresponding to this segment]** lets you target on recipients who do not satisfy the defined target criteria. Para usar essa opção, selecione a caixa apropriada e, em seguida, aplique o direcionamento, conforme definido anteriormente, para excluir os perfis resultantes.
+   * **[!UICONTROL Recipients included in a folder]**: essa opção permite que você direcione aos perfis contidos em uma pasta específica da árvore.
+   * **[!UICONTROL A recipient]**: essa opção permite selecionar um recipient específico dos perfis no banco de dados.
+   * **[!UICONTROL A list of recipients]**: essa opção permite direcionar a uma lista de recipients. As listas são apresentadas [nesta seção](../../platform/using/creating-and-managing-lists.md).
+   * **[!UICONTROL User filters]**: essa opção permite que você acesse os filtros pré-configurados para usá-los como critérios de filtragem para perfis no banco de dados. Os filtros pré-configurados são apresentados [nesta seção](../../platform/using/creating-filters.md#saving-a-filter).
+   * A opção **[!UICONTROL Exclude recipients corresponding to this segment]** permite apontar os recipients que não atendem aos critérios de target definidos. Para usar essa opção, selecione a caixa apropriada e, em seguida, aplique o direcionamento, conforme definido anteriormente, para excluir os perfis resultantes.
 
       ![](assets/s_ncs_user_wizard_email02g.png)
 
-1. Enter a name for this targeting in the **[!UICONTROL Label]** field. Por padrão, o rótulo será o do primeiro critério de direcionamento. Para uma combinação, é melhor usar um nome explícito.
-1. Click **[!UICONTROL Finish]** to validate the configured targeting.
+1. Insira um nome para esse direcionamento no campo **[!UICONTROL Label]**. Por padrão, o rótulo será o do primeiro critério de direcionamento. Para uma combinação, é melhor usar um nome explícito.
+1. Clique em **[!UICONTROL Finish]** para validar o direcionamento configurado.
 
    Os critérios de definição do target definidos são resumidos na seção central da guia de configuração do target principal. Clique em um critério para exibir seu conteúdo (configuração e visualização). Para excluir um critério, clique na cruz localizada depois de seu rótulo.
 
@@ -100,26 +100,26 @@ Você poderá iniciar um delivery nos recipients que não estão salvos no banco
 
 Para fazer isso:
 
-1. Click the **[!UICONTROL To]** link to select the recipients of your delivery.
-1. Selecione a **[!UICONTROL Defined in an external file]** opção.
+1. Clique no link **[!UICONTROL To]** para selecionar os recipients do seu delivery.
+1. Selecione a opção **[!UICONTROL Defined in an external file]**.
 
    ![](assets/s_ncs_user_wizard_external_recipients.png)
 
-1. Por padrão, os recipients são importados do banco de dados. Você deve selecionar o **[!UICONTROL Target mapping]**. Para obter mais informações sobre mapeamentos de destino, consulte [Selecionar um mapeamento de destino](../../delivery/using/selecting-a-target-mapping.md)
+1. Por padrão, os recipients são importados do banco de dados. Você deverá selecionar o **[!UICONTROL Target mapping]**. Para obter mais informações sobre target mappings, consulte [Selecionar target mapping](../../delivery/using/selecting-a-target-mapping.md)
 
    Você também pode escolher **[!UICONTROL Do not import the recipients into the database]**.
 
-1. When importing the recipients, click the **[!UICONTROL File format definition...]** link to select and configure the external file.
+1. Ao importar os recipients, clique no link **[!UICONTROL File format definition...]** para selecionar e configurar o arquivo externo.
 
-   Para obter mais informações sobre importanção de dados, consulte [esta seção](../../platform/using/importing-data.md#step-2---source-file-selection).
+   Para obter mais informações sobre importação de dados, consulte [esta seção](../../platform/using/importing-data.md#step-2---source-file-selection).
 
-1. Click **[!UICONTROL Finish]** and configure your delivery as a standard delivery.
+1. Clique em **[!UICONTROL Finish]** e configure seu delivery como um delivery padrão.
 
 >[!CAUTION]
 >
 >Ao definir o conteúdo da mensagem para delivery de email, não inclua o link para a página espelho; ele não poderá ser gerado nesse modo de delivery.
 
-### Configuração de configurações de exclusão {#customizing-exclusion-settings}
+### Definir configurações de exclusão {#customizing-exclusion-settings}
 
 Os erros de endereço e as classificações de qualidade são fornecidos pelo provedor de serviços (IAP). Essas informações são atualizadas automaticamente no perfil do recipient após as ações de delivery e com arquivos retornados por provedores de serviços. Ele pode ser exibido no perfil somente como leitura.
 
@@ -129,13 +129,13 @@ Você poderá optar por excluir endereços que atingiram um determinado número 
 >
 >Se dois recipients tiverem o mesmo nome, sobrenome, código postal e cidade em uma delivery direto de mala direta, ocorrerá um erro de duplicação. A duplicata não será levada em consideração.
 
-The **[!UICONTROL Exclusions]** tab is used to limit the number of messages.
+A guia **[!UICONTROL Exclusions]** é usada para limitar o número de mensagens.
 
 >[!NOTE]
 >
 >Os parâmetros padrão são recomendados, mas você poderá adaptar as configurações dependendo das suas necessidades. No entanto, essas opções só devem ser alteradas por um usuário expert para evitar qualquer erro ou mau uso.
 
-Click the **[!UICONTROL Edit...]** link to modify the default configuration.
+Clique no link **[!UICONTROL Edit...]** para modificar a configuração padrão.
 
 ![](assets/s_ncs_user_wizard_email02i.png)
 
@@ -154,48 +154,48 @@ As seguintes opções estão disponíveis:
 
       ![](assets/s_ncs_user_wizard_email02j.png)
 
-* **[!UICONTROL Exclude recipients who no longer want to be contacted]** , ou seja, destinatários cujos endereços de email estão em uma lista negra (&quot;recusa&quot;). Essa opção deve permanecer selecionada para observar a ética profissional de marketing digital e as leis que regem o comércio eletrônico.
+* **[!UICONTROL Exclude recipients who no longer want to be contacted]**, ou seja, recipients cujos endereços de email estão em uma blacklist (opt out). Essa opção deve permanecer selecionada para observar a ética profissional de marketing digital e as leis que regem o comércio eletrônico.
 * **[!UICONTROL Exclude quarantined recipients]**. Essa opção permite excluir do target qualquer perfil que não responda. É altamente recomendável manter essa opção selecionada.
 
    >[!NOTE]
    >
-   >Para obter mais informações sobre o gerenciamento de quarentena, consulte [Entendendo o gerenciamento](../../delivery/using/understanding-quarantine-management.md)de quarentena.
+   >Para obter mais informações sobre o gerenciamento de quarentena, consulte [Noções básicas sobre gestão de quarentena](../../delivery/using/understanding-quarantine-management.md).
 
 * **[!UICONTROL Limit delivery]** para um determinado número de mensagens. Essa opção permite que você insira o número máximo de mensagens a serem enviadas. Se o conteúdo do target exceder o número de mensagens indicadas, uma seleção aleatória será aplicada ao target.
 
 ### Redução do tamanho da população do target {#reducing-the-size-of-the-target-population}
 
-Você poderá reduzir o tamanho da população do target. To do this, specify the number of recipients to be exported in the **[!UICONTROL Requested quantity]** field.
+Você poderá reduzir o tamanho da população do target. Para fazer isso, especifique o número de recipients a serem exportados no campo **[!UICONTROL Requested quantity]**.
 
 ![](assets/s_ncs_user_edit_del_exe_tab.png)
 
-## Selecionar os destinatários das mensagens de prova {#selecting-the-proof-target}
+## Selecionar os recipients das mensagens de prova {#selecting-the-proof-target}
 
 A prova é uma mensagem especial que permite testar um delivery antes de enviá-lo para o target principal. Os recipients de prova são responsáveis pela aprovação do formulário e do conteúdo da mensagem.
 
 Para selecionar o target das provas, siga as etapas abaixo:
 
-1. Clique no **[!UICONTROL To]** link.
-1.  Clique na **[!UICONTROL Target of the proofs]** guia.
-1. Clique no **[!UICONTROL Targeting mode]** campo para escolher o método a ser aplicado: **[!UICONTROL Definition of a specific proof target]** , **[!UICONTROL Substitution of the address]** , **[!UICONTROL Seed addresses]** ou **[!UICONTROL Specific target and seed addresses]**.
+1. Clique no link **[!UICONTROL To]**.
+1. Clique na guia **[!UICONTROL Target of the proofs]**.
+1. Clique no campo **[!UICONTROL Targeting mode]** para escolher o método a ser aplicado: **[!UICONTROL Definition of a specific proof target]** , **[!UICONTROL Substitution of the address]** , **[!UICONTROL Seed addresses]** ou **[!UICONTROL Specific target and seed addresses]**.
 
 >[!NOTE]
 >
->Normalmente, o target da prova poderá ser adicionado ao target principal. To do this, select the appropriate option in the lower section of the **[!UICONTROL Main target]** tab.
+>Normalmente, o target da prova poderá ser adicionado ao target principal. Para fazer isso, selecione a opção apropriada na seção inferior da guia **[!UICONTROL Main target]**.
 
 ## Definição de um target de prova específico {#defining-a-specific-proof-target}
 
-When selecting the proof target, the **[!UICONTROL Definition of a specific proof target]** option lets you select the proof recipients from the profiles in the database.
+Ao selecionar o target da prova, a opção **[!UICONTROL Definition of a specific proof target]** permite selecionar os recipients da prova nos perfis do banco de dados.
 
-Select this option to choose recipients using the **[!UICONTROL Add]** button, as in the case of defining the main target. See [Selecting the main target](../../delivery/using/steps-defining-the-target-population.md#selecting-the-main-target).
+Selecione essa opção para escolher os recipients usando o botão **[!UICONTROL Add]**, como no caso de definição do target principal. Consulte [Seleção do target principal](../../delivery/using/steps-defining-the-target-population.md#selecting-the-main-target).
 
 ![](assets/s_ncs_user_wizard_email01_143.png)
 
-For more on proof sending, refer to [this section](../../delivery/using/steps-validating-the-delivery.md#sending-a-proof).
+Para saber mais sobre o envio de prova, consulte [esta seção](../../delivery/using/steps-validating-the-delivery.md#sending-a-proof).
 
 ### Usar substituição de endereço na prova {#using-address-substitution-in-proof}
 
-Instead of selecting dedicated recipients in the database, you can use the **[!UICONTROL Substitution of the address]** option.
+Em vez de selecionar recipients dedicados no banco de dados, você poderá usar a opção **[!UICONTROL Substitution of the address]**.
 
 Essa opção permite usar os perfis de recipient do delivery e substituir seus endereços de email por um ou mais endereços que receberão a prova.
 
@@ -205,13 +205,13 @@ Quando essa opção é selecionada, os endereços de prova são preenchidos por 
 
 A configuração é executada da seguinte maneira:
 
-1. Click the **[!UICONTROL Add]** icon to define a substitution.
+1. Clique no ícone **[!UICONTROL Add]** para definir uma substituição.
 1. Digite o endereço do recipient a ser usado ou selecione-o na lista.
-1. Select the profile to use in the proof: save the **[!UICONTROL Random]** value in the **[!UICONTROL Profile to use]** column to use the data of any profile of the target in the proof.
+1. Selecione o perfil a ser usado na prova: salve o valor **[!UICONTROL Random]** na coluna **[!UICONTROL Profile to use]** para usar os dados de qualquer perfil do target na prova.
 
    ![](assets/s_ncs_user_wizard_email_bat_substitute_choose.png)
 
-1. Click the **[!UICONTROL Detail]** icon to select a profile from the main target, as in the following example:
+1. Clique no ícone **[!UICONTROL Detail]** para selecionar um perfil no target principal, como no exemplo a seguir:
 
    ![](assets/s_ncs_user_wizard_email_bat_substitute_select.png)
 
@@ -219,12 +219,12 @@ A configuração é executada da seguinte maneira:
 
 ## Utilizando seed addresses como prova {#using-seed-addresses-as-proof}
 
-You can use **[!UICONTROL Seed addresses]** as target of the proofs: this option lets you use or import a list of existing seed addresses.
+Você poderá usar **[!UICONTROL Seed addresses]** como target das provas: essa opção permite usar ou importar uma lista de seed addresses existente.
 
 ![](assets/s_ncs_user_wizard_email_bat_control_address.png)
 
 >[!NOTE]
 >
->Os endereços semente são apresentados em [Sobre endereços](../../delivery/using/about-seed-addresses.md)semente.
+>Os seed addresses são apresentados em [Sobre seed addresses](../../delivery/using/about-seed-addresses.md).
 
-You can combine the definition of a specific proof target and the use of seed addresses using the **[!UICONTROL Specific target and Seed addresses]** option. As configurações relacionadas serão então definidas em duas sub-guias separadas.
+Você poderá combinar a definição de um target de prova específico e o uso de seed addresses usando a opção **[!UICONTROL Specific target and Seed addresses]**. As configurações relacionadas serão então definidas em duas sub-guias separadas.
