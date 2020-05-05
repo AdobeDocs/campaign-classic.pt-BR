@@ -14,7 +14,7 @@ discoiquuid: 5ec88743-be51-438c-9064-dd0196fdd7d3
 index: y
 internal: n
 snippet: y
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: b2222b2997105801164f930428c7b05ae7d11336
 
 ---
@@ -30,13 +30,13 @@ source-git-commit: b2222b2997105801164f930428c7b05ae7d11336
 
 ## Propriedades gerais {#overall-properties}
 
-The **[!UICONTROL General]** tab lets you view or alter the label and the schema which the report concerns. Esses elementos são inseridos durante a criação do relatório.
+A guia **[!UICONTROL General]** permite visualizar ou alterar o rótulo e o schema abordados pelo relatório. Esses elementos são inseridos durante a criação do relatório.
 
-We do not recommend changing the **[!UICONTROL Internal name]** : this is used in the report access URL.
+Não é recomendável alterar o **[!UICONTROL Internal name]**: ele é usado no URL de acesso do relatório.
 
 O template do relatório é selecionado durante a criação do relatório e não pode ser alterado posteriormente.
 
-To change the table which the report concerns, click the **[!UICONTROL Select link]** icon to the right of the **[!UICONTROL Document type]** field. To view the available fields in the selected table, click the **[!UICONTROL Magnifier]** icon.
+Para alterar a tabela que o relatório aborda, clique no **[!UICONTROL Select link]** ícone à direita do campo **[!UICONTROL Document type]**. Para exibir os campos disponíveis na tabela selecionada, clique no ícone **[!UICONTROL Magnifier]**.
 
 ![](assets/s_ncs_advuser_report_properties_02.png)
 
@@ -48,18 +48,18 @@ Um relatório pode ser acessado além do console do Adobe Campaign, por exemplo,
 
 O princípio geral é o seguinte:
 
-* The **[!UICONTROL Anonymous access]** option enables unrestricted access to the report. No entanto, nenhuma manipulação é possível.
+* A opção **[!UICONTROL Anonymous access]** permite acesso irrestrito ao relatório. No entanto, nenhuma manipulação é possível.
 
    Os direitos do operador de relatório padrão (&#39;webapp&#39;) são usados para exibir elementos de relatório.
 
-* The **[!UICONTROL Access control]** option enables Adobe Campaign operators to access it once they are logged on.
-* The **[!UICONTROL Specific account]** option lets you execute the report with the rights of the operator selected in the **[!UICONTROL Operator]** field.
+* A opção **[!UICONTROL Access control]** permite que os operadores do Adobe Campaign acessem o relatório quando estiverem conectados.
+* A opção **[!UICONTROL Specific account]** permite executar o relatório com os direitos do operador selecionados no campo **[!UICONTROL Operator]**.
 
 As propriedades do formulário da Web são detalhadas [nesta página](../../web/using/about-web-forms.md).
 
 ## Gerenciamento da localização do relatório {#managing-report-localization}
 
-É possível configurar os idiomas para os quais deseja que o relatório seja traduzido. To do this, click the **[!UICONTROL Localization]** tab.
+É possível configurar os idiomas para os quais deseja que o relatório seja traduzido. Para fazer isso, clique na guia **[!UICONTROL Localization]**.
 
 ![](assets/s_ncs_advuser_report_properties_06.png)
 
@@ -73,9 +73,9 @@ O idioma de edição é o idioma escrito. Quando adicionar um idioma, a subguia 
 
 ## Personalização da renderização HTML {#personalizing-html-rendering}
 
-In the **[!UICONTROL Rendering]** tab, you can personalize the data display mode for the page. É possível selecionar:
+Na guia **[!UICONTROL Rendering]**, é possível personalizar o modo de exibição de dados da página. É possível selecionar:
 
-* O mecanismo de renderização do gráfico: O Adobe Campaign oferece dois modos diferentes para gerar a renderização do gráfico. Por padrão, o mecanismo de renderização é HTML 5. Se necessário, é possível selecionar renderização Flash.
+* Mecanismo de renderização de gráfico: o Adobe Campaign oferece dois modos diferentes para realizar a renderização do gráfico. Por padrão, o mecanismo de renderização é HTML 5. Se necessário, é possível selecionar renderização Flash.
 * O tipo de navegação no relatório: por botões ou links.
 * A posição padrão dos rótulos para elementos do relatório. Essa posição pode ser sobrescrita em cada elemento.
 * O template ou tema usado para gerar páginas de relatório.
@@ -86,7 +86,7 @@ As propriedades do formulário da Web são detalhadas [nesta página](../../web/
 
 ## Definição das configurações adicionais {#defining-additional-settings}
 
-The **[!UICONTROL Parameters]** tab lets you create additional settings for the report: these settings will be passed into the URL during the call up.
+A guia **[!UICONTROL Parameters]** permite criar configurações adicionais para o relatório: essas configurações serão repassadas para o URL durante a chamada.
 
 As propriedades do formulário da Web são detalhadas [nesta página](../../web/using/about-web-forms.md).
 
@@ -96,22 +96,22 @@ As propriedades do formulário da Web são detalhadas [nesta página](../../web/
 
 Para criar uma nova configuração:
 
-1. Click the **[!UICONTROL Add]** button and enter the name of the setting.
+1. Clique no botão **[!UICONTROL Add]** e digite o nome da configuração.
 
    ![](assets/s_ncs_advuser_report_properties_09a.png)
 
 1. Se necessário, especifique se a configuração será obrigatória ou não.
-1. Select the type of setting you want to create: **[!UICONTROL Filter]** or **[!UICONTROL Variable]**.
+1. Selecione o tipo de configuração que deseja criar: **[!UICONTROL Filter]** ou **[!UICONTROL Variable]**.
 
-   The **[!UICONTROL Filter entities]** option lets you use a field of the database as a parameter.
+   A opção **[!UICONTROL Filter entities]** permite usar um campo do banco de dados como parâmetro.
 
    ![](assets/s_ncs_advuser_report_properties_09b.png)
 
    Os dados são recuperados diretamente no nível da entidade: **ctx/receipt/@account**.
 
-   The **[!UICONTROL Variable]** option lets you create or select a variable which will be passed as a parameter of the URL and can be used in the filters.
+   A opção **[!UICONTROL Variable]** permite criar ou selecionar uma variável que será passada como parâmetro do URL e pode ser usada nos filtros.
 
-O **[!UICONTROL Response HTTP headers]** permite que você evite o recurso de clickjacking ao incluir a página do seu relatório em uma página HTML usando o iframe. Para evitar clickjacking, você pode escolher o **[!UICONTROL X-Frame-options header]** comportamento:
+O **[!UICONTROL Response HTTP headers]** permite que você evite o recurso de clickjacking ao incluir a página do seu relatório em uma página HTML usando o iframe. Para evitar o clickjacking, você pode escolher o comportamento **[!UICONTROL X-Frame-options header]**:
 
 * **[!UICONTROL None]**: O relatório não terá **[!UICONTROL X-Frame-options header]**.
 * **[!UICONTROL Same as origin]**: Definido por padrão para novos relatórios e relatórios republicados. O nome do host será igual ao URL do relatório.
@@ -121,23 +121,23 @@ O **[!UICONTROL Response HTTP headers]** permite que você evite o recurso de cl
 
 ## Adição de variáveis {#adding-variables}
 
-The **[!UICONTROL Variables]** tab contains the list of variables configured in the report. Essas variáveis são expostas no contexto do relatório e podem ser utilizadas em cálculos.
+A guia **[!UICONTROL Variables]** contém a lista de variáveis configuradas no relatório. Essas variáveis são expostas no contexto do relatório e podem ser utilizadas em cálculos.
 
-Click the **[!UICONTROL Add]** button to create a new variable.
+Clique no botão **[!UICONTROL Add]** para criar uma nova variável.
 
-To view the definition of a variable, select it and click the **[!UICONTROL Detail...]** button.
+Para exibir a definição de uma variável, selecione-a e clique no botão **[!UICONTROL Detail...]**.
 
 ![](assets/s_ncs_advuser_report_properties_10.png)
 
 ## Referência de scripts {#referencing-scripts}
 
-The **[!UICONTROL Scripts]** tab lets you reference JavaScript codes that will be executed on the client and/or server side when the report page is called up.
+A guia **[!UICONTROL Scripts]** permite referenciar códigos JavaScript que serão executados no cliente e/ou no lado do servidor quando a página do relatório for chamada.
 
 Para execução normal no lado do cliente, os scripts referenciados devem ser escritos em JavaScript e precisam ser compatíveis com a maioria dos navegadores. Para obter mais informações, consulte [esta seção](../../web/using/web-forms-answers.md).
 
 ## Personalização da página de erro {#personalizing-the-error-page}
 
-The **[!UICONTROL Error page]** tab lets you configure the message that will come up in case of an error in the report display.
+A guia **[!UICONTROL Error page]** permite configurar a mensagem que aparecerá no caso de erro na exibição do relatório.
 
 É possível definir textos e vinculá-los a identificadores específicos para gerenciar a localização do relatório. Para obter mais informações, consulte [Adicionar um cabeçalho e um rodapé](../../reporting/using/element-layout.md#adding-a-header-and-a-footer).
 
