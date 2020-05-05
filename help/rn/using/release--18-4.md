@@ -14,7 +14,7 @@ discoiquuid: 4dc87ff3-eb6a-40ac-97ee-00b64cd7718d
 index: y
 internal: n
 snippet: y
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 3801665574d0cdc9c0caf46fb2f0eede38f1b2cc
 
 ---
@@ -58,12 +58,12 @@ source-git-commit: 3801665574d0cdc9c0caf46fb2f0eede38f1b2cc
 * Os logs de arquivamento de emails foram aprimorados, o que facilita e agiliza a verificação de quais emails foram entregues com êxito ou falharam no arquivamento do Cco. (NEO-10675)
 * Correção de um problema que levou à exibição dos IPs do balanceador de carga em vez dos IPs do cliente no rastreamento de broadlogs. (NEO-11295)
 * Correção de um erro com codificação LATIN1 ao usar um FDA Connection para um banco de dados PostgreSQL. (NEO-11299)
-* Fixed an issue that occured when using the **[!UICONTROL Prepare the personalization data with a workflow]** delivery option. (NEO-11047, NEO-11301)
+* Correção de um problema que ocorria ao usar a opção de delivery **[!UICONTROL Prepare the personalization data with a workflow]**. (NEO-11047, NEO-11301)
 * Correção de um problema aleatório que fazia com que as propriedades de um delivery fossem substituídas incorretamente. (NEO-11015)
-* Fixed an issue when using calculated fields in a **[!UICONTROL Survey answers]** workflow activity. (NEO-11382)
-* Fixed an issue when using data stored in XML in a **[!UICONTROL Survey answers]** workflow activity. (NEO-10816)
+* Correção de um problema ao usar campos calculados em uma atividade de workflow **[!UICONTROL Survey answers]**. (NEO-11382)
+* Correção de um problema ao usar dados armazenados em XML em uma atividade de workflow de **[!UICONTROL Survey answers]**. (NEO-10816)
 * Correção de um problema ao executar a atualização do servidor com o build 8935.
-* Fixed an issue which displayed useless errors in the postupgrade log when a **[!UICONTROL Survey answers]** workflow activity was not fully configured.
+* Correção de um problema que exibia erros inúteis no log após a atualização quando uma atividade de workflow **[!UICONTROL Survey answers]** não estava totalmente configurada.
 * FDA Teradata: correção de um problema com campos incrementados automaticamente e índices em tabelas SQL.
 
 ## Versão 18.4.3 - Build 8935{#release-18-4-3-build-8935}
@@ -76,7 +76,7 @@ source-git-commit: 3801665574d0cdc9c0caf46fb2f0eede38f1b2cc
 * Correção de um problema com a personalização do link de imagem em remessas LINE. (NEO-11077)
 * Correção de um problema que impedia o funcionamento correto do mecanismo de geração de sequência de ID. (NEO-11115)
 * Correção de um problema que impedia o funcionamento das solicitações de privacidade (GDPR) ao usar um namespace personalizado com uma chave de reconciliação de tipo inteiro. (NEO-11123)
-* Fixed an error which could occur when using the **[!UICONTROL Distribution of values]** option in **[!UICONTROL Query]** workflow activities. (NEO-10958)
+* Correção de um erro que poderia ocorrer ao usar a opção **[!UICONTROL Distribution of values]** em atividades de workflow de **[!UICONTROL Query]**. (NEO-10958)
 * Correção de um problema ao sincronizar espaços de oferta da instância de marketing para a instância de interação. (NEO-11162)
 * Melhoria do gerenciamento de índices de nomes longos durante a pós atualização.
 
@@ -87,7 +87,7 @@ source-git-commit: 3801665574d0cdc9c0caf46fb2f0eede38f1b2cc
 **Aprimoramentos**
 
 * Correção de um problema que impedia o funcionamento da atualização do Windows Server.
-* Fixed an issue in the **[!UICONTROL Survey Result]** activity when using data stored in XML. O relatório foi exibido incorretamente. (NEO-10816)
+* Correção de um problema na atividade **[!UICONTROL Survey Result]** ao usar dados armazenados em XML. O relatório foi exibido incorretamente. (NEO-10816)
 * Correção de um problema de desempenho que poderia ocorrer com o processo inMail ao usar um servidor de email de devolução. (NEO-10641)
 * Correção de um problema de atualização de banco de dados que pode ocorrer ao atualizar mais de 1000 schemas.
 
@@ -111,7 +111,7 @@ source-git-commit: 3801665574d0cdc9c0caf46fb2f0eede38f1b2cc
     <ul> 
      <li> <p>Direito de Acesso: permite que o Alvo dos Dados receba uma cópia dos seus dados pessoais capturados pelos Controladores de Dados, incluindo potencialmente dados armazenados no Adobe Campaign.</p> </li> 
      <li> <p>Direito de Exclusão: possibilita que o Assunto dos Dados apague seus dados pessoais capturados pelos Controladores de Dados, possivelmente incluindo os dados armazenados no Adobe Campaign.</p> </li> 
-    </ul> Para obter mais informações, consulte a <a href="https://helpx.adobe.com/campaign/kb/acc-privacy.html">documentação detalhada</a>.<br /> </td> 
+    </ul> Para obter mais informações, consulte a <a href="https://helpx.adobe.com/br/campaign/kb/acc-privacy.html">documentação detalhada</a>.<br /> </td> 
   </tr> 
   <tr> 
    <td> Perfis ativos<br /> </td> 
@@ -133,20 +133,20 @@ source-git-commit: 3801665574d0cdc9c0caf46fb2f0eede38f1b2cc
 
 **Aprimoramentos**
 
-* **Canal de linha - aprimoramento** da arquitetura: Assim como em todos os outros canais no Adobe Campaign, o canal LINE agora é compatível com todos os tipos de implantação: hospedado, híbrido e no local.
-* **Geração** automática de sequência: O mecanismo de geração de ID foi aprimorado para aumentar o tempo de vida das instâncias de Campanha com grandes volumes de objetos. Para obter mais informações, consulte esta [technote](https://helpx.adobe.com/campaign/kb/sequence_auto_generation.html).
+* **LINE channel - architecture enhancement**: Como acontece com todos os outros canais do Adobe Campaign, o canal LINE agora é suportado em todos os tipos de implantação: hospedada, híbrida e no local.
+* **Sequence auto-generation**: O mecanismo de geração de ID foi aprimorado para aumentar a vida útil das instâncias do Campaign com grande volume de objetos. Para obter mais informações, consulte esta [technote](https://helpx.adobe.com/br/campaign/kb/sequence_auto_generation.html).
 
 **Outras alterações**
 
 * Está disponível um novo modo de importação de pacotes usando a linha de comando que permite dependências circulares (não recomendado para pacotes grandes). Consulte a seção &quot;Evoluções técnicas&quot; abaixo para obter mais informações. (NEO-8979)
 * Melhoria no desempenho para o carregamento de grande quantidade de dados no Teradata e a correção de um problema que impedia a exibição do valor correto de dados processados no log. (NEO-10429)
 * Agora a importação de audiências do Audience Manager funciona com arquivos divididos. Anteriormente, somente o último arquivo do segmento era importado pelo workflow técnico importSharedAudience. (NEO-10156)
-* No Windows, o caminho de instalação padrão do servidor do Campaign foi alterado. Ao iniciar a configuração da versão de 64 bits, o caminho de instalação padrão agora é: **C:\Program Files\Adobe\Adobe Campaign Classic v7** em vez de **C:\Program Files (x86)\Adobe\Adobe Campaign Classic v7**
+* No Windows, o caminho de instalação padrão do servidor do Campaign foi alterado. Ao iniciar a configuração da versão de 64 bits, o caminho de instalação padrão agora é: **C:Program FilesAdobeAdobe Campaign Classic v7** em vez de **C:Program Files (x86)AdobeAdobe Campaign Classic v7**.
 * As regras MX padrão foram aprimoradas para incluir mais domínios e otimizar a taxa de transferência.
 * Restrições de acesso impostas na chamada SOAP do assistente de implantação (xtk:serverOptions#SaveOptions).
 * A biblioteca weka.jar obsoleta foi removida e a biblioteca OpenSSL foi atualizada por causa de otimizações de segurança.
 * Melhor workflow técnico de faturamento para proteger as performances das instâncias.
-* A capacidade de os administradores definirem ou redefinirem a senha de qualquer operador foi restaurada. To do this, right-click on an operator, select **[!UICONTROL Actions]** > **[!UICONTROL Reset password]** and set the operator&#39;s new password. Recomendamos que os operadores alterem sua senha ao se reconectarem pela primeira vez. Para obter mais informações, consulte a [documentação detalhada](../../production/using/lost-password.md).
+* A capacidade de os administradores definirem ou redefinirem a senha de qualquer operador foi restaurada. Para fazer isso, clique com o botão direito do mouse em um operador, selecione **[!UICONTROL Actions]** > **[!UICONTROL Reset password]** e defina a nova senha do operador. Recomendamos que os operadores alterem sua senha ao se reconectarem pela primeira vez. Para obter mais informações, consulte a [documentação detalhada](../../production/using/lost-password.md).
 * Para dar suporte ao novo recurso de multilocação no Adobe Target, um novo parâmetro “at_property” agora pode ser adicionado às URLs ao configurar as opções e as contas externas para a integração com o Target. O valor a ser usado para esse parâmetro pode ser encontrado no Adobe Target e será usado pelo Campaign ao realizar chamadas para o Target. Para obter mais informações, consulte a [documentação detalhada](../../integrations/using/inserting-a-dynamic-image.md).
 * Agora é possível especificar uma landing page padrão para abrir ao clicar em uma imagem servida pelo Adobe Target. Antes, clicar naquela imagem levava à imagem padrão ao criar o email. Para obter mais informações, consulte a [documentação detalhada](../../integrations/using/inserting-a-dynamic-image.md).
 * Adição da caixa de seleção **Enable SMPP traces** na conta externa para forçar registros de rastreamentos. Para obter mais informações, consulte a [documentação detalhada](../../delivery/using/sms-channel.md#creating-an-smpp-external-account).
