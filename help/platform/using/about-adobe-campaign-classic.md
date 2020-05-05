@@ -14,7 +14,7 @@ discoiquuid: a2b43311-737c-4a3b-a6af-1788879f9414
 index: y
 internal: n
 snippet: y
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 3641e438784d40aa097f8c89ca19bdbb52f4bc7d
 
 ---
@@ -44,11 +44,11 @@ Os perfis (clientes, clientes potenciais, assinantes de boletim informativo etc.
 
 No Adobe Campaign, os destinatários são os perfis padrão direcionados para envio de entregas (e-mails, SMS etc.). Graças aos dados dos destinatários que são armazenados no banco de dados, você poderá filtrar o destino que receberá qualquer entrega e adicionar dados de personalização ao seu conteúdo de entrega. Existem outros tipos de perfis no banco de dados. Esses perfis foram projetados para diferentes usos. Por exemplo, perfis iniciais são feitos para testar suas entregas antes que elas sejam enviadas ao destino final.
 
-Profile management basics are explained in [About profiles](../../platform/using/about-profiles.md).
+As noções básicas de gerenciamento de perfil são explicadas em [Sobre perfis](../../platform/using/about-profiles.md).
 
 ### Segmentação direcionada {#targeted-segmentation}
 
-O Adobe Campaign tem recursos avançados de segmentação que são fáceis de usar e permitem a criação de ofertas diferenciadas e altamente direcionadas. A funcionalidade de análise descritiva permite analisar informações sobre os altos e baixos de suas campanhas de marketing. A gestão de filtros e a funcionalidade do [editor gráfico de consultas](../../platform/using/about-queries-in-campaign.md) permitem filtrar sua população de assinantes e amostras ou criar grupos de destino com base em um número ilimitado de critérios. The analysis and targeting features are described in [this page](../../reporting/using/about-descriptive-analysis.md) and in the [Creating filters](../../platform/using/creating-filters.md) section.
+O Adobe Campaign tem recursos avançados de segmentação que são fáceis de usar e permitem a criação de ofertas diferenciadas e altamente direcionadas. A funcionalidade de análise descritiva permite analisar informações sobre os altos e baixos de suas campanhas de marketing. A gestão de filtros e a funcionalidade do [editor gráfico de consultas](../../platform/using/about-queries-in-campaign.md) permitem filtrar sua população de assinantes e amostras ou criar grupos de destino com base em um número ilimitado de critérios. Os recursos de análise e direcionamento estão descritos [nesta página](../../reporting/using/about-descriptive-analysis.md) e na seção [Criação de filtros](../../platform/using/creating-filters.md).
 
 A funcionalidade avançada de Gestão de dados amplia os recursos de processamento de dados. Ela simplifica e otimiza o processo de segmentação ao incluir dados não modeladas no datamart. Essa funcionalidade é detalhada [nesta página](../../workflow/using/targeting-data.md#data-management).
 
@@ -66,11 +66,11 @@ O Adobe Campaign permite monitorar e interpretar o comportamento dos clientes po
 
 ### Integrações com a Adobe Experience Cloud {#adobe-experience-cloud-integrations}
 
-Você pode combinar as funcionalidades de entrega e as funcionalidades avançadas de gerenciamento de campanha do Adobe Campaign com um conjunto de soluções criadas para ajudar a personalizar a experiência de seus usuários: Os acionadores do Adobe Experience Manager, Adobe Analytics, Adobe Target ou Adobe Experience Cloud, por exemplo. É possível também integrar o Adobe IMS e fazer logon no Campaign com sua Adobe ID. Para obter mais informações sobre integrações entre soluções e autenticações, consulte [esta seção](../../integrations/using/about-adobe-id.md).
+Você pode combinar as funcionalidades de delivery e as funcionalidades avançadas de gerenciamento de campanhas do Adobe Campaign com um conjunto de soluções criadas para ajudar a personalizar a experiência de seus usuários: os acionadores do Adobe Experience Manager, Adobe Analytics, Adobe Target ou Adobe Experience Cloud, por exemplo. É possível também integrar o Adobe IMS e fazer logon no Campaign com sua Adobe ID. Para obter mais informações sobre integrações entre soluções e autenticações, consulte [esta seção](../../integrations/using/about-adobe-id.md).
 
 ## Principais recursos e complementos {#core-capabilities-and-add-ons}
 
-O Adobe Campaign oferece um conjunto de recursos para ajudá-lo a implementar e otimizar as funcionalidades de marketing conversacional de acordo com a sua necessidade e arquitetura. Alguns deles são recursos básicos, enquanto outros dependem da instalação de um pacote e de sua configuração. Uma descrição detalhada do produto está disponível aqui: Descrição [do produto](https://helpx.adobe.com/legal/product-descriptions/adobe-campaign-classic---product-description.html)Adobe Campaign Classic.
+O Adobe Campaign oferece um conjunto de recursos para ajudá-lo a implementar e otimizar as funcionalidades de marketing conversacional de acordo com a sua necessidade e arquitetura. Alguns deles são recursos básicos, enquanto outros dependem da instalação de um pacote e de sua configuração. Uma descrição detalhada do produto está disponível aqui: [descrição do produto Adobe Campaign Classic](https://helpx.adobe.com/legal/product-descriptions/adobe-campaign-classic---product-description.html).
 
 Os recursos abaixo estão disponíveis. A disponibilidade desses recursos dependem do seu contrato de licença.
 
@@ -79,7 +79,7 @@ Os recursos abaixo estão disponíveis. A disponibilidade desses recursos depend
 * [MRM](../../campaign/using/about-marketing-resource-management.md) - gerencie recursos e orçamentos de marketing;
 * [Interação](../../interaction/using/interaction-and-offer-management.md) - gestão de ofertas com o Campaign;
 * [Centro de mensagens](../../message-center/using/about-transactional-messaging.md) - envie mensagens transacionais por e-mail, SMS ou aplicativo para dispositivos móveis;
-* [Marketing](../../social/using/about-social-marketing.md) social - comunique-se nas redes sociais: Facebook, Twitter,
+* [Marketing social](../../social/using/about-social-marketing.md) - comunique-se nas redes sociais: Facebook, Twitter,
 * [Fluxo de trabalho](../../workflow/using/about-workflows.md) / Gestão de dados - automatize processos e gerencie dados com fluxos de trabalho;
 * [Aplicativos da Web](../../web/using/about-web-applications.md) - crie páginas e formulários Web;
 * [Gerenciador de pesquisas](../../web/using/about-surveys.md) - crie pesquisas e enquetes on-line;
