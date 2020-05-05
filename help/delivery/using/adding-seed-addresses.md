@@ -14,7 +14,7 @@ discoiquuid: 0b9b53bf-4dd2-416c-894e-393aded489f8
 index: y
 internal: n
 snippet: y
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 4ac96bf0e54268832b84b17c3cc577af038cc712
 
 ---
@@ -24,7 +24,7 @@ source-git-commit: 4ac96bf0e54268832b84b17c3cc577af038cc712
 
 ## Seed addresses em um delivery {#seed-addresses-in-a-delivery}
 
-To add specific seed addresses for a delivery, click the **[!UICONTROL To]** link, then select the **[!UICONTROL Seed addresses]** tab.
+Para adicionar seed addresses específicos em um delivery, clique no link **[!UICONTROL To]** e selecione a guia **[!UICONTROL Seed addresses]** Seed addresses.
 
 ![](assets/s_ncs_user_edit_del_addresses_tab.png)
 
@@ -32,25 +32,25 @@ Há três modos de inserção possíveis:
 
 1. Inserir seed addresses individuais.
 
-   To do this, click the **[!UICONTROL Add]** button and define the content of the address fields. Repita para cada endereço. Para obter mais informações, consulte [esta seção](../../message-center/using/managing-seed-addresses-in-transactional-messages.md#creating-a-seed-address).
+   Para fazer isso, clique no botão **[!UICONTROL Add]** e defina o conteúdo dos campos de endereço. Repita para cada endereço. Para obter mais informações, consulte [esta seção](../../message-center/using/managing-seed-addresses-in-transactional-messages.md#creating-a-seed-address).
 
 1. Importação de templates de endereços e adaptando-os de acordo com suas necessidades.
 
-   To do this, click the **[!UICONTROL Import seed templates...]** link and select the folder which contains the address templates. Para obter mais informações, consulte [Criação de modelos](../../delivery/using/creating-seed-addresses.md#creating-seed-address-templates)de endereço semente.
+   Para fazer isso, clique no link **[!UICONTROL Import seed templates...]** e selecione a pasta que contém os templates de endereço. Para obter mais informações, consulte [Criação de templates de seed address](../../delivery/using/creating-seed-addresses.md#creating-seed-address-templates).
 
-   If necessary, once they are added, you can double-click them or click the **[!UICONTROL Detail...]** button to adapt the content of each address.
+   Se necessário, depois da execução, clique duas vezes neles ou no botão **[!UICONTROL Detail...]** para adaptar o conteúdo de cada endereço.
 
 1. Criação de uma condição para selecionar dinamicamente os endereços de controle a serem inseridos.
 
-   To do this, click the **[!UICONTROL Edit the dynamic condition...]** link, then enter the seed address selection parameters. Por exemplo, você pode incluir todos os seed addresses contidos em uma pasta específica, ou seed addresses que pertencem a um departamento específico da sua organização.
+   Para fazer isso, clique no link **[!UICONTROL Edit the dynamic condition...]** e insira os parâmetros de seleção do seed address. Por exemplo, você pode incluir todos os seed addresses contidos em uma pasta específica, ou seed addresses que pertencem a um departamento específico da sua organização.
 
-   Um exemplo disso é apresentado nesta seção: Caso de [uso: seleção de endereços semente em critérios](../../delivery/using/use-case--selecting-seed-addresses-on-criteria.md).
+   Um exemplo disso é apresentado nesta seção: [Caso de uso: seleção de seed addresses por critérios](../../delivery/using/use-case--selecting-seed-addresses-on-criteria.md).
 
 >[!NOTE]
 >
->This option is used when the recipient table used is not the default **nms:recipient** table and you are using the Inbox Rendering functionality provided with Adobe Campaign&#39;s **[!UICONTROL Deliverability]** module.
+>Essa opção é usada quando a tabela do recipient usada não é a tabela padrão **nms:recipient** e está usando a funcionalidade de Renderização da Caixa de Entrada fornecida com o módulo **[!UICONTROL Deliverability]** do Adobe Campaign.
 >
->Para obter mais informações, consulte [Uso de uma tabela](../../delivery/using/using-an-external-recipient-table.md) de destinatários externos e a documentação sobre renderização [da](../../delivery/using/inbox-rendering.md)Caixa de entrada.
+>Para obter mais informações, consulte [Uso de uma tabela de destinatários externos](../../delivery/using/using-an-external-recipient-table.md) e a documentação sobre [Renderização da Caixa de entrada](../../delivery/using/inbox-rendering.md).
 
 Para deliveries, você também pode personalizar a maneira como os endereços são inseridos no arquivo de extração. Por padrão, eles são inseridos na ordem de classificação do arquivo de saída, mas você pode optar por inseri-los no final ou no início do arquivo, ou aleatoriamente entre os recipients do target principal.
 
@@ -58,9 +58,9 @@ Para deliveries, você também pode personalizar a maneira como os endereços s�
 
 ## Seed addresses em uma campanha {#seed-addresses-in-a-campaign}
 
-To add seed addresses to a target for a campaign, select the operation and click the **[!UICONTROL Edit]** tab.
+Para adicionar seed addresses a um target para uma campanha, selecione a operação e clique na guia **[!UICONTROL Edit]**.
 
-Clique no **[!UICONTROL Advanced campaign settings...]** link e na **[!UICONTROL Seed addresses]** guia, como mostrado abaixo:
+Clique no link **[!UICONTROL Advanced campaign settings...]** e, em seguida, na guia **[!UICONTROL Seed addresses]**, conforme mostrado abaixo:
 
 ![](assets/s_ncs_user_edit_op_addresses_tab.png)
 
