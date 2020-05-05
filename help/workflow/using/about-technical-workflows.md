@@ -14,7 +14,7 @@ discoiquuid: 0d65d47f-1f51-4757-8b1d-7d4a8ddc3c97
 index: y
 internal: n
 snippet: y
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: d2ffbd97a22839975293cc792d59f1ba73b7c877
 
 ---
@@ -26,17 +26,17 @@ Os workflows detalhados nesta seção são instalados com os diferentes pacotes 
 
 >[!NOTE]
 >
->Os fluxos de trabalho técnicos relacionados ao módulo do Centro de mensagens estão disponíveis por padrão no nó **[!UICONTROL Administration]** > **[!UICONTROL Production]** > **[!UICONTROL Message Center]** > **[!UICONTROL Technical workflows]** .
+>Os workflows técnicos relacionados ao módulo do Centro de Mensagens estão disponíveis por padrão no nó **[!UICONTROL Administration]** > **[!UICONTROL Production]** > **[!UICONTROL Message Center]** > **[!UICONTROL Technical workflows]**.
 
-For more on how to monitor technical workflows, refer to the [dedicated section](../../workflow/using/monitoring-technical-workflows.md).
+Para obter mais informações sobre como monitorar workflows técnicos, consulte a [seção dedicada](../../workflow/using/monitoring-technical-workflows.md).
 
 Esta seção inclui informações referente aos workflows técnicos que envolvem os seguintes módulos:
 
-* [Entregas](../../workflow/using/deliveries.md)
+* [Deliveries](../../workflow/using/deliveries.md)
 * [Campanha](../../workflow/using/campaign.md)
 * [Web Analytics](../../workflow/using/web-analytics.md)
 * [Marketing distribuído](../../workflow/using/distributed-marketing.md)
-* [Monitoramento da entrega (entrega por email)](../../workflow/using/email-deliverability.md)
+* [Monitoramento da entregabilidade (Entregabilidade por email)](../../workflow/using/email-deliverability.md)
 * [Renderização da caixa de entrada (IR)](../../workflow/using/inbox-rendering.md)
 * [Interação](../../workflow/using/interaction.md)
 * [Controle do motor de oferta](../../workflow/using/control-of-offer-engine.md)
@@ -47,6 +47,6 @@ Esta seção inclui informações referente aos workflows técnicos que envolvem
 * [Gestão dos Recursos de Marketing (MRM)](../../workflow/using/marketing-resources--mrm-.md)
 * [Marketing Social](../../workflow/using/social-marketing.md)
 * [Integrações com as soluções da Adobe Experience Cloud](../../workflow/using/integrations-with-adobe-experience-cloud-solutions.md)
-* [Regulamento de proteção de dados de privacidade](../../workflow/using/general-data-protection-regulation--gdpr-.md)
+* [Regulamento de Proteção de Dados de Privacidade](../../workflow/using/general-data-protection-regulation--gdpr-.md)
 * [Transferência para Mid-sourcing](../../workflow/using/transfer-to-mid-sourcing.md)
 * [Plataforma Mid-sourcing](../../workflow/using/mid-sourcing-platform.md)
