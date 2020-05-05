@@ -14,7 +14,7 @@ discoiquuid: cc832666-ad18-49ce-afcc-f9169b683ae8
 index: y
 internal: n
 snippet: y
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 18309c190c351cc57f7af24f48b2a772c1840319
 
 ---
@@ -32,16 +32,16 @@ Este exemplo ajudará a entender a diferença entre uma pessoa/pessoas e um reci
 
 >[!NOTE]
 >
->These indicators are used in the **[!UICONTROL Tracking indicators]** report. For more on this, refer to [Tracking indicators](../../reporting/using/delivery-reports.md#tracking-indicators).
+>Esses indicadores são usados no relatório **[!UICONTROL Tracking indicators]**. Para obter mais informações, consulte os [Indicadores de rastreamento](../../reporting/using/delivery-reports.md#tracking-indicators).
 
 Três links são adicionados a um delivery Ele é enviado para 4 recipients:
 
 ![](assets/s_ncs_user_indicators_example_1.png)
 
-* **[!UICONTROL John Davis]** : esse destinatário não abre o email (e, portanto, não clica em nenhum link).
+* **[!UICONTROL John Davis]**: este destinatário não abre o email (e, portanto, não clica em nenhum link).
 * **[!UICONTROL Marie Stuart]** : abre o email, mas não clica em nenhum link.
-* **[!UICONTROL Florian David]** : abre o email e clica nos links 9 vezes. Ele também encaminha o email a alguém que o abre e clica duas vezes.
-* **[!UICONTROL Henry Macdonald]** : este destinatário configurou o navegador da Internet para rejeitar cookies. Ele abre o email e clica nos links 4 vezes.
+* **[!UICONTROL Florian David]**: abre o email e clica nos links 9 vezes. Ele também encaminha o email a alguém que o abre e clica duas vezes.
+* **[!UICONTROL Henry Macdonald]**: este destinatário configurou o navegador da Internet para rejeitar os cookies. Ele abre o email e clica nos links 4 vezes.
 
 Os seguintes logs de rastreamento são retornados:
 
@@ -49,7 +49,7 @@ Os seguintes logs de rastreamento são retornados:
 
 Para ter uma ideia mais clara de como as pessoas e os recipients são contados, vamos analisar os logs de cada perfil.
 
-## Etapa 1: John {#step-1--john}
+## Etapa 1 - John {#step-1--john}
 
 **[!UICONTROL John Davis]** não abre o email (e, portanto, não clica em nenhum link).
 
@@ -64,7 +64,7 @@ Como John não abriu e nem clicou no email, ele não aparece nos logs.
 | John | - | - | - |
 | Total intermediário | 0 | 0 | 0 |
 
-## Etapa 2: Marie {#step-2--marie}
+## Etapa 2 - Marie {#step-2--marie}
 
 **[!UICONTROL Marie Stuart]** abre o email, mas não clica em nenhum link.
 
@@ -84,7 +84,7 @@ A abertura é atribuída a um destinatário: Marie. O Adobe Campaign, portanto, 
 | Marie | - | - | +1 |
 | Total intermediário | 0 | 0 | 1 |
 
-## Etapa 3: Florim {#step-3--florian}
+## Etapa 3 - Florian {#step-3--florian}
 
 **[!UICONTROL Florian David]** abre o email e clica nos links 9 vezes. Ele também encaminha o email a alguém que o abre e clica duas vezes.
 
@@ -96,7 +96,7 @@ As ações de Florian (uma abertura e 9 cliques) aparecem nos seguintes logs:
 
 **Recipients**: a abertura e os cliques são atribuídos ao mesmo recipient (Florian). Como esse recipient é diferente do anterior (Marie), o Adobe Campaign adiciona um novo recipient à contagem.
 
-People: Since this recipient&#39;s browser accepts cookies, we can see that the same identifier (UUID) is assigned to all click logs: **`fe37a503 [...]`**. O Adobe Campaign identifica corretamente esses cliques como pertencentes à mesma pessoa. Uma nova pessoa é adicionada à contagem.
+Pessoas: quando o navegador do destinatário aceita cookies, o mesmo identificador (UUID) é atribuído a todos os logs de clique: **`fe37a503 [...]`**. O Adobe Campaign identifica corretamente esses cliques como pertencentes à mesma pessoa. Uma nova pessoa é adicionada à contagem.
 
 **Cálculo intermediário:**
 
@@ -129,9 +129,9 @@ Os seguintes logs correspondem à abertura e aos dois cliques realizados pela pe
 | Pessoa desconhecida | - | +1 | - |
 | Total intermediário | 1 | 2 | 2 |
 
-## Etapa 4: Henry {#step-4--henry}
+## Etapa 4 - Henry {#step-4--henry}
 
-**[!UICONTROL Henry Macdonald]** configurou seu navegador da Internet para rejeitar cookies. Ele abre o email e clica nos links 4 vezes.
+**[!UICONTROL Henry Macdonald]** configurou o navegador da Internet para rejeitar os cookies. Ele abre o email e clica nos links 4 vezes.
 
 ![](assets/s_ncs_user_indicators_example_10.png)
 
@@ -141,7 +141,7 @@ As aberturas e os 4 cliques realizados pelo Henry aparecem nos seguintes logs:
 
 **Recipients**: as aberturas e os cliques são atribuídos ao mesmo recipient (Henry). Como esse recipient ainda não foi contado, o Adobe Campaign adiciona um recipient à contagem.
 
-**Pessoas**: Como o navegador do Henry não aceita cookies, um novo identificador (UUID) é gerado para cada clique. Cada um dos 4 cliques é interpretado como originário de uma pessoa diferente. Como esses identificadores ainda não foram contados, eles são adicionados à contagem.
+**Pessoas**: Como o navegador Henry não aceita cookies, um novo identificador (UUID) é gerado para cada clique. Cada um dos 4 cliques é interpretado como originário de uma pessoa diferente. Como esses identificadores ainda não foram contados, eles são adicionados à contagem.
 
 **Cálculo intermediário:**
 
@@ -160,9 +160,9 @@ No nível do delivery, temos os seguintes resultados:
 
 ![](assets/s_ncs_user_indicators_example.png)
 
-* **[!UICONTROL Clicks]** (destinatários que clicaram): 2
+* **[!UICONTROL Clicks]** (recipients que clicaram): 2
 * **[!UICONTROL Distinct clicks for the population reached]** (pessoas que clicaram): 6
-* **[!UICONTROL Distinct opens for the population reached]** (destinatários que abriram): 3
+* **[!UICONTROL Distinct opens for the population reached]** (recipients que abriram): 3
 
 A reatividade bruta e a estimativa de encaminhamento são calculadas como descrito a seguir:
 
@@ -175,6 +175,6 @@ A reatividade bruta e a estimativa de encaminhamento são calculadas como descri
 >
 >Nas seguintes fórmulas:
 >
->* A represents the **[!UICONTROL Clicks]** indicator (recipients who clicked).
->* B representa o **[!UICONTROL Distinct clicks for the population reached]** indicador (pessoas que clicaram).
->* C representa o **[!UICONTROL Distinct opens for the population reached]** indicador (destinatários que abriram).
+>* A representa o indicador **[!UICONTROL Clicks]** (destinatários que clicaram).
+>* B representa o indicador **[!UICONTROL Distinct clicks for the population reached]** (pessoas que clicaram).
+>* C representa o indicador **[!UICONTROL Distinct opens for the population reached]** (destinatários que abriram).
