@@ -14,7 +14,7 @@ discoiquuid: 0cbc4e92-482f-4dac-a1fb-b738e7127938
 index: y
 internal: n
 snippet: y
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 707352334144df86ae82aa51d595ae6bc751d1f2
 
 ---
@@ -30,7 +30,7 @@ Um **delivery** é um objeto de delivery independente executado uma vez. Ele pod
 
 Os deliveries podem ser criados a partir da lista de deliveries ou em um fluxo de trabalho através de uma atividade de [Delivery](../../workflow/using/delivery.md) .
 
-Os workflows também fornecem atividades de delivery específicas de acordo com o tipo de canal que você deseja usar. For more on these activities, refer to [this section](../../workflow/using/cross-channel-deliveries.md).
+Os workflows também fornecem atividades de delivery específicas de acordo com o tipo de canal que você deseja usar. Para obter mais informações sobre essas atividades, consulte [esta seção](../../workflow/using/cross-channel-deliveries.md).
 
 ## Delivery recorrente {#recurring-delivery}
 
@@ -38,7 +38,7 @@ Um **delivery recorrente** permite criar um novo delivery sempre que a atividade
 
 Como exemplo, se você executar esse tipo de atividade uma vez por mês, acabará com 12 deliveries após um ano.
 
-Recurring deliveries are created within workflows via the [Recurring delivery activity](../../workflow/using/recurring-delivery.md). Um exemplo dessa atividade sendo usada é apresentado nesta seção: [Criação de uma entrega recorrente em um fluxo de trabalho](../../workflow/using/sending-a-birthday-email.md#creating-a-recurring-delivery-in-a-targeting-workflow)de definição de metas.
+Os deliveries recorrentes são criados em workflows através da [atividade Recurring delivery.](../../workflow/using/recurring-delivery.md) Um exemplo dessa atividade que está sendo usada é apresentado nesta seção: [Criação de um delivery recorrente em um workflow de direcionamento](../../workflow/using/sending-a-birthday-email.md#creating-a-recurring-delivery-in-a-targeting-workflow).
 
 ## Delivery contínuo {#continuous-delivery}
 
@@ -48,4 +48,4 @@ Se uma informação no delivery for alterado (conteúdo, nome, etc.), um novo ob
 
 Como exemplo, se você executar esse tipo de atividade uma vez por mês, acabará com um único delivery após um ano (desde que não tenha feito nenhuma alteração no delivery).
 
-Continuous deliveries are created within workflows via the [Continuous delivery activity](../../workflow/using/continuous-delivery.md).
+Os deliveries contínuos são criados em workflows através da [atividade Continuous delivery](../../workflow/using/continuous-delivery.md).
