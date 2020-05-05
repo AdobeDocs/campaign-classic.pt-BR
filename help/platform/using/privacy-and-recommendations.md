@@ -14,7 +14,7 @@ discoiquuid: 14369acf-9149-4649-947a-c16289e35eb6
 index: y
 internal: n
 snippet: y
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 33bf5c5a08613cf88eaace91b85a76157cac7ba1
 
 ---
@@ -24,21 +24,21 @@ source-git-commit: 33bf5c5a08613cf88eaace91b85a76157cac7ba1
 
 ## Sobre privacidade e consentimento {#about-privacy-and-consent}
 
-O Adobe Campaign é uma ferramenta poderosa para coletar e processar quantidades extremamente grandes de dados, incluindo informações pessoais. Encorajamos todos os usuários do Adobe Campaign a trabalharem dentro da legislação (DPA, CAN-SPAM, Diretiva Europeia sobre Privacidade e Comunicações Eletrônicas, RGPD Europeu, CCPA, etc.), a fazerem uso responsável e ético de informações pessoais e a evitarem enviar emails não solicitados, notificações por push e mensagens SMS (&quot;spam&quot;). Acreditamos fortemente nos princípios da permissão de marketing para promover o valor e a fidelidade do cliente e, portanto, é estritamente proibido o uso do Adobe Campaign para o envio de mensagens não solicitadas.
+O Adobe Campaign é uma ferramenta poderosa para coletar e processar quantidades extremamente grandes de dados, incluindo informações pessoais. Recomendamos que todos os usuários do Adobe Campaign trabalhem dentro da legislação (DPA, CAN-SPAM, Diretiva Europeia sobre Privacidade e Comunicações eletrônicas, GDPR da Europa, CCPA etc.), façam uso responsável e ético de informações pessoais e evitem o envio de mensagens de email, notificações por push e mensagens SMS não solicitadas (&quot;spam&quot;). Acreditamos fortemente nos princípios da permissão de marketing para promover o valor e a fidelidade do cliente e, portanto, é estritamente proibido o uso do Adobe Campaign para o envio de mensagens não solicitadas.
 
-Para obter mais informações, consulte a [privacidade da Adobe Experience Cloud](https://www.adobe.com/privacy/marketing-cloud.html).
+Para obter mais informações, consulte a [privacidade da Adobe Experience Cloud](https://www.adobe.com/br/privacy/marketing-cloud.html).
 
-Reserve tempo para acessar a lista de [Verificação de segurança e privacidade](https://docs.campaign.adobe.com/doc/AC/getting_started/EN/security.html) e conhecer seus principais elementos.
+Reserve tempo para acessar a lista de [Verificação de segurança e privacidade](https://helpx.adobe.com/br/campaign/kb/acc-security.html) e conhecer seus principais elementos.
 
 ## Gerenciamento de privacidade {#privacy-management}
 
-O RGPD (Regulamento Geral sobre a Proteção de Dados) é a legislação da União Europeia em matéria de privacidade que harmoniza e moderniza os requisitos de proteção de dados. O GDPR aplica-se aos clientes do Adobe Campaign que coletam dados de residentes da UE.
+O RGPD (Regulamento Geral sobre a Proteção de Dados) é a lei de privacidade da União européia (EU) que harmoniza e moderniza os requisitos de proteção de dados. O GDPR aplica-se aos clientes do Adobe Campaign que coletam dados de residentes da UE.
 
-A CCPA (California Consumer Privacy Act) dá novos direitos aos residentes da Califórnia em relação às suas informações pessoais e impõe responsabilidades de proteção de dados a determinadas entidades que exercem negócios na Califórnia.
+A CCPA (Lei de privacidade do consumidor da Califórnia) fornece aos residentes da Califórnia novos direitos no que diz respeito a suas informações pessoais e impõe responsabilidades de proteção de dados a determinadas entidades com negócios na Califórnia.
 
-Além do gerenciamento de consentimento, das configurações de retenção de dados e do gerenciamento de direitos, fornecemos, na nossa função de Processador de dados, recursos adicionais para ajudar a facilitar sua prontidão como Controlador de dados para certas solicitações de Privacidade.
+Além do gerenciamento de consentimento, das configurações de retenção de dados e do gerenciamento de direitos, fornecemos, na nossa função de Processador de dados, recursos adicionais para ajudar a facilitar sua condição de Controlador de dados para certas solicitações de Privacidade.
 
-Neste [artigo](https://helpx.adobe.com/campaign/kb/acc-privacy.html), você aprenderá como o Adobe Campaign ajuda a gerenciar os diferentes recursos da chave de privacidade: Direito de acesso, direito de ser esquecido, consentimento, retenção de dados e funções de usuário. Você também encontrará as práticas recomendadas para ajudá-lo com sua conformidade com a privacidade ao usar nosso serviço.
+Neste [artigo](https://helpx.adobe.com/br/campaign/kb/acc-privacy.html), você aprenderá como o Adobe Campaign ajuda a gerenciar os diferentes recursos da chave de privacidade: Direito de acesso, direito de ser esquecido, consentimento, retenção de dados e funções de usuário. Você também encontrará as práticas recomendadas para ajudar você a estar em conformidade com a privacidade ao usar nosso serviço.
 
 ## Cookies e recursos de rastreamento {#cookies-and-tracking-capabilities}
 
