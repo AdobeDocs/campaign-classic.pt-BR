@@ -14,7 +14,7 @@ discoiquuid: 345af5c2-c852-4086-8ed0-ff3e7e402e04
 index: y
 internal: n
 snippet: y
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: b78db689958c9b240da9a0315060fe63bcb48e0a
 
 ---
@@ -30,11 +30,11 @@ Comece criando um novo delivery.
 
 ## Envio de notificações no iOS {#sending-notifications-on-ios}
 
-1. Selecione o modelo de **[!UICONTROL Deliver on iOS]** entrega.
+1. Selecione o modelo de delivery **[!UICONTROL Deliver on iOS]**.
 
    ![](assets/nmac_delivery_ios_1.png)
 
-1. To define the target of the notification, click the **[!UICONTROL To]** link, then click **[!UICONTROL Add]**.
+1. Para definir o target da notificação, clique no link **[!UICONTROL To]** e, em seguida, clique em **[!UICONTROL Add]**.
 
    ![](assets/nmac_delivery_ios_2.png)
 
@@ -42,11 +42,11 @@ Comece criando um novo delivery.
    >
    >O processo detalhado ao selecionar a população do target de um delivery é apresentado [nesta seção](../../delivery/using/steps-defining-the-target-population.md).
    >
-   >For more on the use of personalization fields, refer to [About personalization](../../delivery/using/about-personalization.md).
+   >Para obter mais informações sobre o uso de campos de personalização, consulte [Sobre a personalização](../../delivery/using/about-personalization.md).
    >
-   >For more on the inclusion of a seed list, refer to [About seed addresses](../../delivery/using/about-seed-addresses.md).
+   >Para obter mais informações sobre a inclusão de uma lista de propagação, consulte [Sobre seed addresses](../../delivery/using/about-seed-addresses.md).
 
-1. Select **[!UICONTROL Subscribers of an iOS mobile application (iPhone, iPad)]**, select the service relevant to your mobile application (Neotrips, in this case), then select the iOS version of the application.
+1. Selecione **[!UICONTROL Subscribers of an iOS mobile application (iPhone, iPad)]**, depois o serviço relevante para o aplicativo móvel (Neotrips, neste caso) e clique na versão iOS do aplicativo.
 
    ![](assets/nmac_delivery_ios_3.png)
 
@@ -58,9 +58,9 @@ Comece criando um novo delivery.
    >
    >O modo de **Silent Push** está disponível no iOS 7. Isso permite que uma notificação &quot;silenciosa&quot; seja enviada a um aplicativo móvel. O usuário não está ciente da chegada da notificação. Ele é transferido diretamente para o aplicativo.
 
-1. In the **[!UICONTROL Title]** field, enter the label of the title that you want to appear on the notification. Isso só aparecerá na lista disponível no centro de notificações. Este campo permite a definição do valor do parâmetro **title** da carga de notificação iOS.
+1. No campo **[!UICONTROL Title]**, insira o rótulo do título que deve aparecer na notificação. Isso só aparecerá na lista disponível no centro de notificações. Este campo permite a definição do valor do parâmetro **title** da carga de notificação iOS.
 1. Se o conector HTTP/2 é usado, é possível adicionar um subtítulo (valor do parâmetro de **subtitle** da carga de notificação do iOS). Consulte a seção [Configuração do aplicativo móvel no Adobe Campaign](../../delivery/using/configuring-the-mobile-application.md) .
-1. Em seguida, insira o **[!UICONTROL Message]** e o **[!UICONTROL Value of the badge]** com base no tipo de notificação escolhido.
+1. Em seguida, insira o **[!UICONTROL Message]** e o **[!UICONTROL Value of the badge]** baseado no tipo de notificação escolhido.
 
    ![](assets/nmac_delivery_ios_5.png)
 
@@ -70,22 +70,22 @@ Comece criando um novo delivery.
 
    >[!NOTE]
    >
-   >**[!UICONTROL Badge]** e as notificações de **[!UICONTROL Alert and badge]** tipo permitem modificar o valor do crachá (o número acima do logotipo do aplicativo móvel). Para atualizar a notificação, basta inserir 0 como valor. Se o campo estiver vazio, o valor da notificação não será alterado.
+   >Os tipos de notificação **[!UICONTROL Badge]** e **[!UICONTROL Alert and badge]** permitem modificar o valor da notificação (o número acima do logotipo do aplicativo móvel). Para atualizar a notificação, basta inserir 0 como valor. Se o campo estiver vazio, o valor da notificação não será alterado.
 
-1. The **[!UICONTROL Action button]** allows you to define a label for the action button appearing on the alert notifications (**action_loc_key** field of the payload). Se o aplicativo iOS gerencia cadeias de caracteres localizáveis (**Localizable.strings**), digite a chave correspondente nesse campo. Se o aplicativo não gerencia o texto localizável, insira o rótulo que você deseja visualizar no botão de ação. Para mais informações sobre strings localizáveis, consulte a [Apple documentation](https://developer.apple.com/library/archive/documentation/NetworkingInternet/Conceptual/RemoteNotificationsPG/CreatingtheNotificationPayload.html#//apple_ref/doc/uid/TP40008194-CH10-SW1) .
-1. In the **[!UICONTROL Play a sound]** field, select the sound to be played by the mobile terminal when the notification is received.
-
-   >[!NOTE]
-   >
-   >Os sons devem ser incluídos no aplicativo e definidos quando o serviço é criado. Consulte [Configuração da conta](../../delivery/using/configuring-the-mobile-application.md#configuring-external-account-ios)externa do iOS.
-
-1. In the **[!UICONTROL Application variables]** field, enter the value of each variable. As variáveis do aplicativo permitem definir o comportamento de notificação: por exemplo, é possível configurar uma tela de aplicativo específica para ser exibida quando o usuário ativar a notificação.
+1. O **[!UICONTROL Action button]** permite definir um rótulo para o botão de ação que aparece nas notificações de alerta (campo **action_loc_key** da carga). Se o aplicativo iOS gerencia cadeias de caracteres localizáveis (**Localizable.strings**), digite a chave correspondente nesse campo. Se o aplicativo não gerencia o texto localizável, insira o rótulo que você deseja visualizar no botão de ação. Para mais informações sobre strings localizáveis, consulte a [Apple documentation](https://developer.apple.com/library/archive/documentation/NetworkingInternet/Conceptual/RemoteNotificationsPG/CreatingtheNotificationPayload.html#//apple_ref/doc/uid/TP40008194-CH10-SW1) .
+1. No campo **[!UICONTROL Play a sound]**, selecione o som a ser reproduzido pelo terminal móvel quando a notificação for recebida.
 
    >[!NOTE]
    >
-   >As variáveis do aplicativo devem ser definidas no código do aplicativo móvel e inseridas durante a criação do serviço. Para obter mais informações, consulte: [Configuração de um aplicativo móvel no Adobe Campaign](../../delivery/using/configuring-the-mobile-application.md).
+   >Os sons devem ser incluídos no aplicativo e definidos quando o serviço for criado. Consulte [Configuração da conta externa do iOS](../../delivery/using/configuring-the-mobile-application.md#configuring-external-account-ios).
 
-1. Once the notification is configured, click the **[!UICONTROL Preview]** tab to preview the notification.
+1. No campo **[!UICONTROL Application variables]**, insira o valor de cada variável. As variáveis do aplicativo permitem definir o comportamento de notificação: por exemplo, é possível configurar uma tela de aplicativo específica para ser exibida quando o usuário ativar a notificação.
+
+   >[!NOTE]
+   >
+   >As variáveis do aplicativo devem ser definidas no código do aplicativo móvel e inseridas durante a criação do serviço. Para obter mais informações, consulte a[Configuração do aplicativo móvel no Adobe Campaign](../../delivery/using/configuring-the-mobile-application.md).
+
+1. Quando a notificação estiver configurada, clique na guia **[!UICONTROL Preview]** para visualizar a notificação.
 
    ![](assets/nmac_intro_2.png)
 
@@ -105,15 +105,15 @@ Após enviar as mensagens, você pode monitorar e rastrear seus deliveries. Para
 
 ## Enviar notificações no Android {#sending-notifications-on-android}
 
-1. Comece selecionando o modelo de **[!UICONTROL Deliver on Android (android)]** entrega.
+1. Comece a partir do **[!UICONTROL Deliver on Android (android)]** template de delivery.
 
    ![](assets/nmac_delivery_android_1.png)
 
-1. To define the target of the notification, click the **[!UICONTROL To]** link, then click **[!UICONTROL Add]**.
+1. Para definir o target da notificação, clique no link **[!UICONTROL To]** e, em seguida, clique em **[!UICONTROL Add]**.
 
    ![](assets/nmac_delivery_android_2.png)
 
-1. Select **[!UICONTROL Subscribers of an Android mobile application]**, choose the service relevant to your mobile application (Neotrips, in this case), then select the Android version of the application.
+1. Selecione **[!UICONTROL Subscribers of an Android mobile application]**, escolha o serviço relevante para seu aplicativo móvel (Neotrips, neste caso) e selecione a versão Android do aplicativo.
 
    ![](assets/nmac_delivery_android_3.png)
 
@@ -125,13 +125,13 @@ Após enviar as mensagens, você pode monitorar e rastrear seus deliveries. Para
    >
    >Você pode adicionar emojis no conteúdo da notificação. Para fazer isso, vá para um site da lista emoji ([exemplo](https://www.utf8-chartable.de/unicode-utf8-table.pl?start=9728)), copie um emoji e cole-o diretamente no editor de conteúdo. No Windows 7, alguns emojis podem não ser exibidos corretamente no editor (símbolo quadrado), mas devem ser enviados corretamente no email final. A capacidade de exibir emojis depende do sistema operacional usado no dispositivo. Recomendamos enviar provas para verificar se o delivery é exibido corretamente antes de enviá-lo.
 
-1. In the **[!UICONTROL Application variables]** field, enter the value of each variable. As variáveis do aplicativo permitem definir o comportamento de notificação: por exemplo, é possível configurar uma tela de aplicativo específica para ser exibida quando o usuário ativar a notificação.
+1. No campo **[!UICONTROL Application variables]**, insira o valor de cada variável. As variáveis do aplicativo permitem definir o comportamento de notificação: por exemplo, é possível configurar uma tela de aplicativo específica para ser exibida quando o usuário ativar a notificação.
 
    >[!NOTE]
    >
-   >As variáveis do aplicativo devem ser definidas no código do aplicativo móvel e inseridas durante a criação do serviço. Para obter mais informações, consulte: [Configuração de um aplicativo móvel no Adobe Campaign](../../delivery/using/configuring-the-mobile-application.md).
+   >As variáveis do aplicativo devem ser definidas no código do aplicativo móvel e inseridas durante a criação do serviço. Para obter mais informações, consulte a[Configuração do aplicativo móvel no Adobe Campaign](../../delivery/using/configuring-the-mobile-application.md).
 
-1. Once the notification is configured, click the **[!UICONTROL Preview]** tab to preview the notification.
+1. Quando a notificação estiver configurada, clique na guia **[!UICONTROL Preview]** para visualizar a notificação.
 
    ![](assets/nmac_intro_1.png)
 
