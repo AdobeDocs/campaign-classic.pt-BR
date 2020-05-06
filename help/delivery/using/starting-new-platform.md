@@ -12,26 +12,38 @@ discoiquuid: 6a394eeb-fbe1-4712-bb13-db5d7965fb73
 index: y
 internal: n
 snippet: y
-translation-type: ht
-source-git-commit: 68756f920fbc8658cff552615adbf023b4c5e3aa
+translation-type: tm+mt
+source-git-commit: a1192bc804e752d13af869da66ba0505c077ed19
+workflow-type: tm+mt
+source-wordcount: '489'
+ht-degree: 34%
 
 ---
 
 
 # Início de uma nova plataforma {#starting-new-platform}
 
-É essencial manter sua reputação de domínio e endereço IP. Você encontrará abaixo alguns conselhos para configurar uma nova plataforma.
+A manutenção da reputação do seu domínio e endereço IP é essencial ao configurar uma nova plataforma.
 
-Começar a enviar emails em uma nova plataforma é uma etapa delicada, pois a plataforma não tem histórico de uso e reputação (quando os IPs de envio nunca foram usados para essa finalidade). Os ISPs desconfiam naturalmente dos endereços IP que nunca foram usados para enviar emails e que, de repente, começam a enviar grandes volumes de tráfego de emails. Na verdade, os remetentes de spam geralmente usam endereços IP &quot;desconhecidos&quot; (ou seja, endereços que nunca foram incluídos na blacklist) para enviar o maior número possível de mensagens antes da detecção.
+* Começar a enviar emails é uma etapa delicada, pois a plataforma não tem histórico de uso e, quando os IPs enviados nunca foram usados para esse fim, nenhuma reputação.
 
-Não se pode esperar atingir a velocidade operacional em termos de saída no início da fase de produção. Além disso, você não deve tentar enviar mensagens a essa taxa, pois isso pode levar os ISPs a bloquear os endereços de envio e comprometer seriamente o restante da fase de inicialização.
+* Os ISPs desconfiam naturalmente dos endereços IP que nunca foram usados para enviar emails e que, de repente, começam a enviar grandes volumes de tráfego de emails. Na verdade, os remetentes de spam geralmente usam endereços IP &quot;desconhecidos&quot; (endereços que nunca foram incluído na blacklist) para enviar o maior número possível de mensagens antes da detecção.
 
-A inicialização de uma plataforma geralmente ocorre ao usar uma lista de endereços pela primeira vez e que podem não ser totalmente qualificados. Se você enviar para endereços inválidos ou para endereços armadilha, isso contribuirá para diminuir a reputação da plataforma. Se você tiver uma lista de endereços inválidos, é do seu interesse importá-la para a tabela de quarentena (**[!UICONTROL Administration > Campaign Management > Non deliverables Management > Non deliverables and addresses]**) antes dos primeiros envios. Se, mesmo assim, você quiser requalificar os endereços inválidos, é preferível fazer isso assim que a reputação da plataforma for estabelecida e pouco a pouco para &quot;diluir&quot; o uso de endereços inválidos ao longo do tempo.
+* Não se pode esperar atingir a velocidade operacional em termos de saída no início da fase de produção. Além disso, você não deve tentar enviar mensagens a essa taxa, pois isso pode levar os ISPs a bloquear os endereços de envio e comprometer seriamente o restante da fase de inicialização.
 
-Para resumir os princípios a serem seguidos ao iniciar:
+Abaixo estão listados os principais princípios a serem seguidos ao iniciar uma nova plataforma:
 
-* Importar endereços inválidos para a tabela de quarentena (se você tiver essas informações)
-* Limitar a taxa de transferência (configuração técnica: limitação do número de mtachilds)
-* Aumento progressivo dos volumes enviados: não direcione a todo o banco de dados desde o início, adicione uma fração extra da lista a cada envio; isso deve permitir aumentar o volume em cada etapa e reduzir a taxa geral de endereços inválidos
-* Envio regular: em certa medida, é melhor enviar pouca coisa regularmente do que enormes campanhas esporadicamente
-* Preste muita atenção aos relatórios do delivery: indicadores de erro elevados podem significar que uma configuração técnica está mal configurada.
+* Se você tiver essas informações, **importe endereços inválidos para a tabela**quarentena.
+A inicialização de uma plataforma geralmente ocorre ao usar uma lista de endereços pela primeira vez e que podem não ser totalmente qualificados. Se você enviar para endereços inválidos ou para endereços de correio de mel, isso contribuirá para diminuir a reputação da plataforma.
+
+   * If you have a list of invalid addresses, it is in your best interests to import it into the quarantine table (available through the **[!UICONTROL Administration > Campaign Management > Non deliverables Management > Non deliverables and addresses]** menu) before sending for the first times.
+   * Se, mesmo assim, você quiser requalificar os endereços inválidos, é preferível fazer isso assim que a reputação da plataforma for estabelecida e pouco a pouco para &quot;diluir&quot; o uso de endereços inválidos ao longo do tempo.
+   Para obter mais informações, consulte [Otimizar seu delivery pelo quarentena](../../delivery/using/understanding-quarantine-management.md#optimizing-your-delivery-through-quarantines).
+* **Limite a taxa** de throughput limitando o número de mtachilds. Para obter mais informações sobre como ajustar essa configuração técnica, entre em contato com o administrador do Adobe Campaign.
+* **Aumente progressivamente os volumes enviados** para evitar que sejam marcados como spam. Não público alvo todo o banco de dados do próprio start, mas adicione uma fração extra da lista sempre que enviar. Isso deve permitir aumentar o volume em cada etapa e reduzir a taxa geral de endereços inválidos. Para garantir o desenvolvimento suave da fase de start, você pode usar o ondas. For more on this, see [Sending using multiple waves](../../delivery/using/steps-sending-the-delivery.md#sending-using-multiple-waves).
+* **Enviar regularmente**. Em certa medida, é melhor enviar regularmente campanhas pequenas em vez de esporadicamente.
+* **Preste muita atenção aos relatórios do delivery**. Indicadores de erro elevados podem significar que uma configuração técnica está mal configurada. Para obter mais informações, consulte [Monitoramento de um delivery](../../delivery/using/monitoring-a-delivery.md).
+
+**Tópicos relacionados**:
+* [Aumente sua reputação de email com o aquecimento de IP](https://helpx.adobe.com/campaign/kb/increase-email-rep-ip-warming.html)
+* [Tudo sobre armadilhas de spam](https://helpx.adobe.com/campaign/kb/spam-traps.html)
