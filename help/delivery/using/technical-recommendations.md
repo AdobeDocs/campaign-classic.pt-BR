@@ -13,7 +13,10 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 631e29bd6e59b8ae46084dee3a1d470916a2032b
+source-git-commit: 5f73f6bc4cbc00c1b4e2f2a75e27a3056b517006
+workflow-type: tm+mt
+source-wordcount: '2433'
+ht-degree: 97%
 
 ---
 
@@ -78,12 +81,6 @@ O DKIM vem de uma combinação dos princípios de autenticação do DomainKeys, 
 
 O DKIM substituiu a autenticação **DomainKeys** .
 
->[!IMPORTANT]
->
->Para instalações hospedadas ou híbridas, se você atualizou para o MTA aprimorado, a assinatura de autenticação de email do DKIM é feita pelo MTA aprimorado. A assinatura do DKIM pelo MTA nativo do Campaign será desativada na tabela **[!UICONTROL Domain management]** como parte da atualização do MTA aprimorado.
->
->Para obter mais informações sobre o MTA aprimorado do Adobe Campaign, consulte este [documento](https://helpx.adobe.com/campaign/kb/acc-campaign-enhanced-mta.html).
-
 O uso de DKIM requer alguns pré-requisitos:
 
 * **Segurança**: a criptografia é um elemento essencial do DKIM e, para garantir o nível de segurança do DKIM desde 2013, 1024b é o tamanho de criptografia sugerido pelas práticas recomendadas. As chaves DKIM inferiores não serão consideradas válidas pela maioria dos provedores de acesso.
@@ -92,10 +89,14 @@ O uso de DKIM requer alguns pré-requisitos:
 
 >[!NOTE]
 >
->* Se você configurou o DomainKeys para a instância do Adobe Campaign, basta selecionar **dkim** nas regras de tratamento do domínio. Caso contrário, siga as mesmas etapas de configuração (chave privada/pública) do DomainKeys.
+>* If you have configured DomainKeys for your Adobe Campaign instance, you just need to select **dkim** in the [Domain management rules](../../delivery/using/understanding-delivery-failures.md#domain-management). Caso contrário, siga as mesmas etapas de configuração (chave privada/pública) do DomainKeys.
 >* Não é necessário ativar DomainKeys e DKIM para o mesmo domínio, pois DKIM é uma versão aprimorada do DomainKeys.
 >* Os domínios a seguir validam atualmente o DKIM: AOL, Gmail.
 
+
+>[!IMPORTANT]
+>
+>For hosted or hybrid installations, if you have upgraded to the [Enhanced MTA](https://helpx.adobe.com/campaign/kb/acc-campaign-enhanced-mta.html), DKIM email authentication signing is done by the Enhanced MTA for all messages with all domains.
 
 ### DMARC {#dmarc}
 
@@ -148,7 +149,7 @@ A implementação de um loop de comentários para uma instância requer:
 
 A implementação de um loop de comentários simples no Adobe Campaign usa a funcionalidade de mensagem de devolução. A caixa de entrada do loop de comentários é usada como uma caixa de entrada de devolução e uma regra é definida para detectar essas mensagens. Os endereços de email dos recipients que relataram a mensagem como spam serão adicionados à lista de quarentena.
 
-* Create or modify a bounce mail rule, **Feedback_loop**, in **[!UICONTROL Administration > Campaign Management > Non deliverables Management > Mail rule sets]** with the reason **Refused** and the type **Hard**.
+* Criar ou modificar uma regra para emails devolvidos, **Feedback_loop**, em **[!UICONTROL Administration > Campaign Management > Non deliverables Management > Mail rule sets]** com o motivo **Recusado** e o tipo **Difícil**.
 * Se uma caixa de entrada tiver sido definida especialmente para o loop de comentários, defina os parâmetros para acessá-la criando uma nova conta externa para emails devolvidos em **[!UICONTROL Administration > Platform > External accounts]**.
 
 O mecanismo fica operacional imediatamente para processar as notificações de reclamação. Para garantir que essa regra funcione corretamente, você pode desativar temporariamente as contas para que elas não coletem essas mensagens e verificar manualmente o conteúdo da caixa de entrada do loop de comentários. No servidor, execute os seguintes comandos:
@@ -245,7 +246,7 @@ A regra deverá conter o script que gera a linha de comando e deverá ser inclu�
 
 O SMTP (Simple Mail Transfer Protocol) é um protocolo padrão da Internet para transmissão de email.
 
-The SMTP errors that aren&#39;t checked by a rule are listed in the **[!UICONTROL Administration]** > **[!UICONTROL Campaign Management]** > **[!UICONTROL Non deliverables Management]** > **[!UICONTROL Delivery log qualification]** folder. Essas mensagens de erro são interpretadas por padrão como erros de software inacessíveis. The most common errors must be identified and a corresponding rule added in **[!UICONTROL Administration]** > **[!UICONTROL Campaign Management]** > **[!UICONTROL Non deliverables Management]** > **[!UICONTROL Mail rule sets]** if you wish to correctly qualify the feedback from the SMTP servers. Sem isso, a plataforma executará tentativas desnecessárias (caso de usuários desconhecidos) ou colocará alguns recipients em quarentena de forma equivocada após determinado número de testes.
+Os erros SMTP que não são verificados por uma regra são listados na pasta **[!UICONTROL Administration]** > **[!UICONTROL Campaign Management]** > **[!UICONTROL Non deliverables Management]** > **[!UICONTROL Delivery log qualification]**. Essas mensagens de erro são interpretadas por padrão como erros de software inacessíveis. Os erros mais comuns devem ser identificados e uma regra correspondente adicionada em **[!UICONTROL Administration]** > **[!UICONTROL Campaign Management]** > **[!UICONTROL Non deliverables Management]** > **[!UICONTROL Mail rule sets]** se você quiser qualificar corretamente o feedback dos servidores SMTP. Sem isso, a plataforma executará tentativas desnecessárias (caso de usuários desconhecidos) ou colocará alguns recipients em quarentena de forma equivocada após determinado número de testes.
 
 ### IPs dedicados {#dedicated-ips}
 
