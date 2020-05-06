@@ -14,8 +14,11 @@ discoiquuid: 3aab3d47-76fd-4c68-add4-9c14240c936e
 index: y
 internal: n
 snippet: y
-translation-type: ht
-source-git-commit: 4c4e2cfaa9603c42e5e97de1e13318f8541921ca
+translation-type: tm+mt
+source-git-commit: fcedad248169f53e716f2bd8b1b141fbf1f4d189
+workflow-type: tm+mt
+source-wordcount: '2602'
+ht-degree: 100%
 
 ---
 
@@ -24,12 +27,12 @@ source-git-commit: 4c4e2cfaa9603c42e5e97de1e13318f8541921ca
 
 O **painel de delivery** é fundamental para monitorar seus deliveries e eventuais problemas encontrados durante o envio de mensagens.
 
-**Tópicos relacionados**
+**Tópicos relacionados:**
 
 * [Noções básicas sobre falhas de entrega](../../delivery/using/understanding-delivery-failures.md)
 * [Noções básicas sobre gestão de quarentena](../../delivery/using/understanding-quarantine-management.md)
 * [Práticas recomendadas para delivery](https://helpx.adobe.com/br/campaign/kb/delivery-best-practices.html)
-* [Introdução: gerenciamento da entrega](https://docs.adobe.com/content/help/pt-BR/campaign-classic/using/sending-messages/deliverability-management/about-deliverability.html)
+* [Gerenciamento da capacidade de delivery](../../delivery/using/about-deliverability.md)
 
 ## Painel de delivery {#delivery-dashboard}
 
@@ -274,8 +277,8 @@ Você pode acessar deliveries a partir da lista de delivery, por meio do nó **[
 Por padrão, a lista de deliveries contém os nomes e os status dos deliveries criados no nó selecionado. Ele também mostra o número de mensagens a serem enviadas, processadas e enviadas com sucesso.
 
 * O número de **[!UICONTROL Messages to send]** corresponde ao número de recipients target após a análise e antes do delivery.
-* O número de mensagens na coluna **[!UICONTROL success]** corresponde ao número de mensagens enviadas pelo servidor e recebidas pelos recipients.
-* O número de mensagens **[!UICONTROL processed]** corresponde ao número de mensagens recebidas mais o número de mensagens com erros.
+* O número de mensagens na coluna **[!UICONTROL Success]** corresponde ao número de mensagens enviadas pelo servidor e recebidas pelos recipients.
+* O número de mensagens **[!UICONTROL Processed]** corresponde ao número de mensagens recebidas mais o número de mensagens com erros.
 
 O painel de delivery permite que você rastreie o número de mensagens enviadas.
 
