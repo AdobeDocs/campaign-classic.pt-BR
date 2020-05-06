@@ -3,9 +3,12 @@ audience: end-user
 user-guide-title: Ajuda do Adobe Campaign Classic
 index: y
 product: adobe campaign
-sub-product: adobe campanha clássica
+sub-product: Adobe Campaign Classic
 translation-type: tm+mt
-source-git-commit: 04684fd2933ef19a8ebfd6cbe77e78a34c66ffe3
+source-git-commit: 2ba9efa49f26559786641ff5e1caa9c481f770b2
+workflow-type: tm+mt
+source-wordcount: '2077'
+ht-degree: 96%
 
 ---
 
@@ -67,7 +70,7 @@ source-git-commit: 04684fd2933ef19a8ebfd6cbe77e78a34c66ffe3
       + [Gerenciamento de enumerações](platform/using/managing-enumerations.md)
       + [Contas externas](platform/using/external-accounts.md)
    + Acesso a um banco de dados externo (FDA){#accessing-external-database}
-      + [Sobre FDA](platform/using/about-fda.md)
+      + [Sobre o FDA](platform/using/about-fda.md)
       + [Configurações específicas por tipo de banco de dados](platform/using/specific-configuration-database.md)
       + [Direitos de acesso ao banco de dados remoto](platform/using/remote-database-access-rights.md)
       + [Conexão com o banco de dados](platform/using/connecting-to-database.md)
@@ -151,12 +154,13 @@ source-git-commit: 04684fd2933ef19a8ebfd6cbe77e78a34c66ffe3
       + [Início de uma nova plataforma](delivery/using/starting-new-platform.md)
       + [Controle do conteúdo da mensagem](delivery/using/control-message-content.md)
       + [Aprimoramento da reputação](delivery/using/improve-reputation.md)
-      + [Práticas recomendadas de reengajamento](delivery/using/re-engagement-best-practices.md)
       + [Recomendações técnicas](delivery/using/technical-recommendations.md)
-      + [Monitoramento técnico](delivery/using/technical-monitoring.md)
+      + [Monitoramento da capacidade de entrega](delivery/using/monitoring-deliverability.md)
       + [Renderização da caixa de entrada](delivery/using/inbox-rendering.md)
       + [SpamAssassin](delivery/using/spamassassin.md)
+      + [Práticas recomendadas de reengajamento](delivery/using/re-engagement-best-practices.md)
       + [Bancos de dados da blacklist](delivery/using/blacklisting-databases.md)
+      + [Solução de problemas](delivery/using/deliverability-faq.md)
    + Módulo de gestão de conteúdo {#content-management}
       + [Sobre a gestão de conteúdo](delivery/using/about-content-management.md)
       + [Recursos e princípios do gerenciador de conteúdo](delivery/using/content-manager-resources-and-principles.md)
@@ -441,7 +445,7 @@ source-git-commit: 04684fd2933ef19a8ebfd6cbe77e78a34c66ffe3
       + [Gestão dos Recursos de Marketing (MRM)](workflow/using/marketing-resources--mrm-.md)
       + [Marketing Social](workflow/using/social-marketing.md)
       + [Integrações com as soluções da Adobe Experience Cloud](workflow/using/integrations-with-adobe-experience-cloud-solutions.md)
-      + [Regulamento de proteção de dados de privacidade](workflow/using/general-data-protection-regulation--gdpr-.md)
+      + [Regulamento de Proteção de Dados de Privacidade](workflow/using/general-data-protection-regulation--gdpr-.md)
       + [Transferência para Mid-sourcing](workflow/using/transfer-to-mid-sourcing.md)
       + [Plataforma Mid-sourcing](workflow/using/mid-sourcing-platform.md)
 + Gerenciamento de ofertas {#managing-offers}
