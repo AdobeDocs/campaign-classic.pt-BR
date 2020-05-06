@@ -12,8 +12,11 @@ discoiquuid: 2ea2747f-957f-41a9-a03f-20c03fa99116
 index: y
 internal: n
 snippet: y
-translation-type: ht
-source-git-commit: 4ac96bf0e54268832b84b17c3cc577af038cc712
+translation-type: tm+mt
+source-git-commit: fcedad248169f53e716f2bd8b1b141fbf1f4d189
+workflow-type: tm+mt
+source-wordcount: '2800'
+ht-degree: 100%
 
 ---
 
@@ -38,7 +41,7 @@ Para saber como inserir e usar campos de personalização, consulte a seção [S
 >* O Adobe Campaign verifica a sintaxe dos endereços de email inseridos.
 
 
->[!CAUTION]
+>[!IMPORTANT]
 >
 >No contexto das verificações implementadas pelos Provedores de Serviços de Internet (ISPs) para combater emails não solicitados (spam), a Adobe recomenda criar contas de email que correspondam aos endereços especificados para deliveries e respostas. Verifique com o administrador do sistema de mensagens.
 
@@ -46,7 +49,7 @@ Para saber como inserir e usar campos de personalização, consulte a seção [S
 
 O assunto da mensagem é configurado no campo correspondente. Você pode inseri-lo diretamente no campo ou clicar no link **[!UICONTROL Subject]** para inserir um script. O link de personalização permite inserir campos de banco de dados no assunto.
 
->[!CAUTION]
+>[!IMPORTANT]
 >
 >O assunto da mensagem é obrigatório.
 
@@ -62,7 +65,7 @@ Por exemplo, na mensagem acima, o assunto da mensagem é personalizado para cada
 
 ## Conteúdo da mensagem {#message-content}
 
->[!CAUTION]
+>[!IMPORTANT]
 >
 >Por motivos de privacidade, recomendamos usar HTTPS para todos os recursos externos.
 
@@ -74,7 +77,7 @@ As mensagens são enviadas em formato de texto ou HTML por padrão, de acordo co
 
    Se estiver usando o [Editor de Conteúdo Digital](../../web/using/about-campaign-html-editor.md) (DCE), consulte [Seleção de um template de conteúdo](../../web/using/use-case--creating-an-email-delivery.md#step-3---selecting-a-content).
 
-   >[!CAUTION]
+   >[!IMPORTANT]
    >
    >O conteúdo HTML deve ser criado antes, e depois importado para o Adobe Campaign. O editor de HTML não foi desenvolvido para criação de conteúdo.
 
@@ -128,7 +131,7 @@ Selecione o formato do email na seção inferior da janela:
 
    A mensagem contém os dois formatos: texto e HTML. O formato exibido no recebimento depende da configuração do software de email do recipient (multipart-alternative).
 
-   >[!CAUTION]
+   >[!IMPORTANT]
    >
    >Essa opção inclui ambas as versões do documento. Portanto, isso afeta a taxa de delivery, porque o tamanho da mensagem é maior.
 
@@ -169,7 +172,7 @@ As imagens podem ser:
 
 * Um ativo compartilhado com a Adobe Experience Cloud. Consulte [esta seção](../../integrations/using/sharing-assets-with-adobe-experience-cloud.md).
 
->[!CAUTION]
+>[!IMPORTANT]
 >
 >Para incluir imagens nas mensagens de email usando o assistente do delivery, a instância do Adobe Campaign deve ser configurada para habilitar a gestão de recursos públicos. Esse procedimento pode ser executado no assistente de implantação. Consulte [esta seção](../../installation/using/deploying-an-instance.md) para obter mais informações sobre a configuração.
 
@@ -194,7 +197,7 @@ Quando você abre conteúdo HTML com imagens incluídas no assistente do deliver
 
 ![](assets/s_ncs_user_email_del_img_local.png)
 
->[!CAUTION]
+>[!IMPORTANT]
 >
 >Os caminhos de acesso à imagem são modificados durante o carregamento manual ou ao enviar as mensagens.
 
@@ -360,7 +363,7 @@ Na guia **[!UICONTROL Preview]** da janela de edição de conteúdo, ao clicar e
 
 Além do diagnóstico de pré-visualização, uma segunda verificação é realizada ao enviar uma prova ou um delivery: uma regra de tipologia específica, **[!UICONTROL Deco-mail check]**, é iniciada durante a análise.
 
->[!CAUTION]
+>[!IMPORTANT]
 >
 >Essa regra de tipologia só será executada se pelo menos um dos recipients estiver configurado para receber emails no formato **[!UICONTROL Deco-mail (DoCoMo)]**, **[!UICONTROL Decore Mail (Softbank)]** ou **[!UICONTROL Decoration Mail (KDDI AU)]**.
 
@@ -397,6 +400,6 @@ Quando o Adobe Campaign gerencia dinamicamente os formatos de acordo com o domí
 
 O contato da mensagem será exibido corretamente para os usuários em celulares japoneses, assim como para os recipients padrão.
 
->[!CAUTION]
+>[!IMPORTANT]
 >
 >Respeite os recursos especiais associados a cada formato do email japonês (Deco-mail, Decoration Mail e Decore Mail). Para obter mais informações sobre as limitações, consulte [esta seção](#limitations-and-recommendations).
