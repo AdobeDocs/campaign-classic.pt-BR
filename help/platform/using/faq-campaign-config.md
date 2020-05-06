@@ -13,8 +13,11 @@ discoiquuid: 16dbe423-018f-4666-9901-2120a8dc609a
 index: y
 internal: n
 snippet: y
-translation-type: ht
-source-git-commit: c5a9823b2feb6e2f721a2ad15dc08c1abe672054
+translation-type: tm+mt
+source-git-commit: 928c2d944bb9709b54a41b07e8828646f2601cb9
+workflow-type: tm+mt
+source-wordcount: '759'
+ht-degree: 96%
 
 ---
 
@@ -45,9 +48,9 @@ Como um usuário especialista, você pode configurar recursos de rastreamento em
 
 ## Como configurar a capacidade de entrega de e-mails? {#how-to-configure-email-deliverability-}
 
-Além do [Guia de introdução à capacidade de entrega de e-mails](https://docs.adobe.com/content/help/br/campaign-classic/using/sending-messages/deliverability-management/about-deliverability.html), leia a seção sobre a configuração dessa capacidade para entender como configurar sua instância a fim de maximizá-la no Campaign.
+Além da seção de configuração [de](../../delivery/using/about-deliverability.md#configuration) Disponibilidade, leia as recomendações técnicas de disponibilização para entender como configurar sua instância para maximizar os recursos de Campanha.
 
-[Clique aqui para saber mais](../../installation/using/email-deliverability.md).
+[Clique aqui para saber mais](../../delivery/using/technical-recommendations.md).
 
 ## Como posso implementar a aprovação de conteúdo? {#how-can-i-implement-content-approval-}
 
@@ -105,7 +108,7 @@ Se houver problemas como os novos logotipos que são refletidos corretamente, qu
 
 1. Exclua esses arquivos xml e pastas associadas.
 
-   >[!CAUTION]
+   >[!IMPORTANT]
    >
    >Não exclua o arquivo nlclient_cnx.xml.
 
