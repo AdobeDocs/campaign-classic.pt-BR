@@ -13,10 +13,10 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: a30c4a2d31c3f674ac4a7bb4827a6951b36014ab
+source-git-commit: 74e1a883088d347cb1aab05d76b630c912411fc4
 workflow-type: tm+mt
-source-wordcount: '735'
-ht-degree: 33%
+source-wordcount: '788'
+ht-degree: 30%
 
 ---
 
@@ -39,9 +39,14 @@ Você também pode usar as seguintes ferramentas:
 
 * O **[!UICONTROL Delivery throughput]** relatório fornece uma visão geral de toda a throughput da plataforma em um determinado período. Para obter mais informações, consulte [esta seção](../../reporting/using/global-reports.md#delivery-throughput).
 * The **[!UICONTROL Technical deliverability monitoring]** report includes a number of deliverability quality indicators for your platform. Para obter mais informações, consulte [esta seção](#technical-deliverability-monitoring).
-* O painel [do](../../delivery/using/monitoring-a-delivery.md#delivery-dashboard) delivery fornece acesso ao resumo [do](../../delivery/using/monitoring-a-delivery.md#delivery-summary)Delivery, aos [Logs do delivery e histórico](../../delivery/using/monitoring-a-delivery.md#delivery-logs-and-history) e aos [Logs de rastreamento](../../delivery/using/monitoring-a-delivery.md#tracking-logs). Eles mostram os detalhes do envio, qual público alvo foi excluído e por que, bem como as informações de rastreamento, como abrir e clicar. <!--For more on this, see [Monitoring a delivery](../../delivery/using/monitoring-a-delivery.md).-->
-* Você também pode verificar o número de mensagens a serem enviadas, processadas e enviadas com sucesso. Para obter mais informações, consulte [esta seção](../../delivery/using/monitoring-a-delivery.md#number-of-messages-sent)
-   <!--[SpamAssassin](../../installation/using/configuring-spamassassin.md)?-->
+* Cada delivery gera um relatório de estatísticas de transmissão para os diferentes provedores de serviço da Internet (ISPs). Ele mostra algumas métricas de qualidade e reputação dos dados que podem afetar sua capacidade de entrega, incluindo os seguintes números:
+   * **[!UICONTROL Hard bounces]** indicar a qualidade dos dados. Esse número deve ser inferior a 2%.
+   * **[!UICONTROL Soft bounces]** indicar a reputação. Este número não deve ser superior a 10% para qualquer ISP.
+   Para obter mais informações, consulte a seção Estatísticas [de](../../reporting/using/global-reports.md#delivery-statistics) Delivery.
+* Em geral, o painel [do](../../delivery/using/monitoring-a-delivery.md#delivery-dashboard) delivery oferece acesso a:
+   * O resumo [do](../../delivery/using/monitoring-a-delivery.md#delivery-summary)delivery, que mostra os detalhes do envio e o [número de mensagens](../../delivery/using/monitoring-a-delivery.md#number-of-messages-sent) a enviar, processadas e enviadas com êxito;
+   * Os [logs do delivery e a história](../../delivery/using/monitoring-a-delivery.md#delivery-logs-and-history), que mostram qual o público alvo que foi excluído e porquê;
+   * os [logs de rastreamento](../../delivery/using/monitoring-a-delivery.md#tracking-logs), que mostram informações de rastreamento, como abrir e clicar.
 
 ## Orientações de acompanhamento {#monitoring-guidelines}
 
