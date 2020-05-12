@@ -13,7 +13,10 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 4406e11e33e14136ea43fc3cc5a92e0d1c466100
+source-git-commit: 15581517df8d2f397285bbadebd83b7f4539dfd7
+workflow-type: tm+mt
+source-wordcount: '2375'
+ht-degree: 1%
 
 ---
 
@@ -28,7 +31,7 @@ Para acessar a descrição de cada tabela, vá até **[!UICONTROL Admin > Config
 
 >[!NOTE]
 >
->A estrutura física e lógica dos dados transportados no aplicativo é descrita em XML. Ela obedece a uma gramática específica do Adobe Campaign, chamada de schema. For more on Adobe Campaign schemas, read out this [section](../../configuration/using/about-schema-reference.md).
+>A estrutura física e lógica dos dados transportados no aplicativo é descrita em XML. Ela obedece a uma gramática específica do Adobe Campaign, chamada de schema. For more on Adobe Campaign schemas, read out [this section](../../configuration/using/about-schema-reference.md).
 
 ## Descrição dos quadros principais {#description-main-tables}
 
@@ -58,7 +61,7 @@ O campo iFolderId é a chave estrangeira que vincula o recipient à pasta de exe
 
 O campo sCountryCode é o código ISO 3166-1 Alpha 2 (2 caracteres) do país associado ao recipient. Este campo é, na verdade, uma chave estrangeira na tabela de referência do país (NmsCountry), que contém as etiquetas do país e outros dados de código do país. Se o país não for preenchido, o valor &#39;XX&#39; será armazenado (e usado no lugar de um registro de ID zero).
 
-Para obter mais informações sobre a tabela de Recipient, consulte esta [seção](../../configuration/using/about-data-model.md#default-recipient-table).
+Para obter mais informações sobre a tabela de Recipient, consulte [esta seção](../../configuration/using/about-data-model.md#default-recipient-table).
 
 ### NmsGroup {#NmsGroup}
 
@@ -180,19 +183,19 @@ Os seguintes indicadores são atualizados automaticamente durante a execução d
 
 * Número de reações: **iTransaction**. Número de linhas na tabela de registros de reação.
 * Número de contatos: **iContactReact**. Número distinto de contatos direcionados na hipótese.
-* Contagem de Grupos de controle: **ProvaReagiu**. Número distinto de contatos de grupo de controle direcionados na hipótese.
+* Contagem de Grupos de controle: **Prova de reação**. Número distinto de contatos de grupo de controle direcionados na hipótese.
 * Taxa de resposta contatada: **dContactReacts**. Taxa de resposta dos contatos direcionados na hipótese.
-* Taxa de resposta do grupo de controle: **dProofReacts**. Taxa de resposta do grupo de controle da hipótese.
-* Receitas totais da população contactada: **dContactReactTotalAmount**. A receita total dos contatos direcionados na hipótese.
+* Taxa de resposta do grupo de controle: **dProofReactsRate**. Taxa de resposta do grupo de controle da hipótese.
+* Receitas totais da população contactada: **dContactReactsTotalAmount**. A receita total dos contatos direcionados na hipótese.
 * Receita média do grupo de controle: **dContactReactsAvgAmount**. Receita média dos contatos de grupo de controle direcionados na hipótese.
 * Total da receita do grupo de controle: **dProofReactsTotalAmount**. A receita total do grupo de controle da hipótese.
 * Receita média do grupo de controle: **dProofReactsAvgAmount**. Receita média do grupo de controle hipótese.
-* Margem total por contato: **dContactReactTotalMargin**. Margem total por contato direcionado na hipótese.
+* Margem total por contato: **dContactReactsTotalMargin**. Margem total por contato direcionado na hipótese.
 * Margem média por contato: **dContactReactsAvgMargin**. Margem média por contato direcionado na hipótese.
 * Margem total do grupo de controle: **dProofReactsTotalMargin**. Margem total do grupo de controle direcionado na hipótese.
 * Margem média de grupo de controle: **dProofReactsAvgMargin**. Margem média do grupo de controle direcionado na hipótese.
 * Receitas adicionais: **dAdditionalAmount**. (Receita média do contato - Receita média do grupo de controle) * Número de contatos.
-* Margem adicional: **MargemAdicional**. (Margem média de grupo de controle contactada - Margem média de variação) / Número de contatos.
+* Margem adicional: **Margem** adicional. (Margem média de grupo de controle contactada - Margem média de variação) / Número de contatos.
 * Custo médio por contato (expressão SQL). Custo calculado do delivery / Número de contatos.
 * ROI (expressão SQL). Custo calculado do delivery / margem total do contato.
 * ROI efetivo (expressão SQL). Custo calculado do delivery/margem adicional.
