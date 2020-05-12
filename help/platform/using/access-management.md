@@ -14,8 +14,11 @@ discoiquuid: c0eb06fd-192c-4ee4-9a38-c9bedbe6aea0
 index: y
 internal: n
 snippet: y
-translation-type: ht
-source-git-commit: 92f4047628eca0fc1d71aded0329720c094463bd
+translation-type: tm+mt
+source-git-commit: 4148efa9c7a8b002672d72fc526753bf7304673c
+workflow-type: tm+mt
+source-wordcount: '2894'
+ht-degree: 97%
 
 ---
 
@@ -278,6 +281,14 @@ Os grupos de operadores padrão são:
 1. Gerenciamento local / central
 
    Esses grupos permitem usar o **Marketing distribuído** (módulo opcional do Adobe Campaign).
+
+1. gerentes de Ofertas
+
+   Os operadores neste grupo podem criar e manter ofertas. For more information on this, refer to this [page](../../interaction/using/operator-profiles.md).
+Esse grupo contém os seguintes direitos nomeados:
+
+   * INSERIR PASTAS: Direito de inserir pastas na Adobe Campaign (desde que tenha direitos de edição para as ramificações em questão),
+   * EDITAR PASTAS: Direito de alterar as propriedades da pasta, como nome interno, rótulo, imagem associada, ordem de subpastas etc.
 
 ## Direitos nomeados {#named-rights}
 
