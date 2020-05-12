@@ -13,9 +13,9 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 5f73f6bc4cbc00c1b4e2f2a75e27a3056b517006
+source-git-commit: 15581517df8d2f397285bbadebd83b7f4539dfd7
 workflow-type: tm+mt
-source-wordcount: '2433'
+source-wordcount: '2432'
 ht-degree: 97%
 
 ---
@@ -43,7 +43,7 @@ As regras MX (Mail eXchanger) são as regras que gerenciam a comunicação entre
 
 Mais precisamente, eles são usados para controlar a velocidade na qual o MTA da campanha (agente de transferência de mensagens) envia emails para cada domínio de email individual ou ISP (por exemplo, hotmail.com, comcast.net). Normalmente, essas regras se baseiam nos limites publicados pelos ISPs (por exemplo, não incluir mais de 20 mensagens por cada conexão SMTP).
 
-Para obter mais informações sobre gestão MX, consulte a [seção dedicada](../../installation/using/email-deliverability.md#mx-configuration).
+Para obter mais informações sobre gestão MX, consulte [esta seção](../../installation/using/email-deliverability.md#mx-configuration).
 
 ### TLS {#tls}
 
