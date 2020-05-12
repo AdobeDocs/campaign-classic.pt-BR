@@ -15,7 +15,10 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 963aaa81971a8883b944bfcf4d1a00d729627916
+source-git-commit: 3522f4f50770dde220610cd5f1c4084292d8f1f5
+workflow-type: tm+mt
+source-wordcount: '889'
+ht-degree: 1%
 
 ---
 
@@ -26,40 +29,40 @@ source-git-commit: 963aaa81971a8883b944bfcf4d1a00d729627916
 
 O Adobe Campaign permite que você expresse datas em função do fuso horário: isso permite que usuários internacionais trabalhem no mundo inteiro em vários fusos horários. Cada país que usa a mesma instância pode gerenciar a execução de campanhas, rastreamento, arquivamento etc. dependendo do horário local.
 
-Para habilitar o uso da plataforma Adobe Campaign em escala internacional, todas as datas usadas pelos sistemas devem estar vinculáveis a um fuso horário. Uma data cujo fuso horário é conhecido pode ser importada para qualquer outro fuso horário, ou independentemente do fuso horário.
+Para permitir a utilização da plataforma Adobe Campaign à escala internacional, todas as datas utilizadas pelos sistemas devem poder ser ligadas a um fuso horário. Uma data cujo fuso horário é conhecido pode, portanto, ser importada para qualquer outro fuso horário, ou independentemente do fuso horário.
 
-O Adobe Campaign permite que você armazene datas/horas no formato UTC (Tempo Universal Coordenado). Quando os dados são expostos, eles são convertidos na data/hora local do operador. A conversão é executada automaticamente quando o banco de dados é configurado em UTC (consulte [Configuração](#configuration)). Se o banco de dados não estiver configurado em UTC, as informações sobre o fuso horário das datas na plataforma serão armazenadas em uma opção.
+O Adobe Campaign permite armazenar datas/horas no formato UTC (Tempo Universal Coordenado). Quando os dados são expostos, eles são convertidos na data/hora local do operador. A conversão é realizada automaticamente quando o banco de dados é configurado em UTC (consulte [Configuração](#configuration)). Se o banco de dados não estiver configurado em UTC, as informações sobre o fuso horário das datas na plataforma serão armazenadas em uma opção.
 
-As principais funcionalidades da plataforma em relação ao gerenciamento de fuso horário são: importar/exportar dados e gerenciamento de operador e fluxo de trabalho. O conceito **de** herança está disponível para importações/exportações ou fluxos de trabalho. Por padrão, eles são configurados para o fuso horário do servidor de banco de dados, no entanto, você pode redefinir novos fusos horários para um fluxo de trabalho e até mesmo para uma única atividade.
+As principais funcionalidades da plataforma em relação ao gerenciamento de fuso horário são: importar/exportar dados e gerenciamento de operador e fluxo de trabalho. O conceito **de** herança está disponível para importações/exportações ou Workflows. Por padrão, eles são configurados para o fuso horário do servidor de banco de dados, no entanto, você pode redefinir novos fusos horários para um fluxo de trabalho e até mesmo para uma única atividade.
 
-**Os operadores** podem modificar fusos horários durante a configuração **de** entrega e podem especificar o fuso horário específico no qual a entrega será executada.
+**Os operadores** podem modificar os fusos horários durante a configuração **do** delivery e podem especificar o fuso horário em que o delivery será executado.
 
->[!CAUTION]
+>[!IMPORTANT]
 >
->Se o banco de dados não gerenciar vários fusos horários, para todas as manipulações de filtragem de dados, as consultas SQL devem ser executadas no fuso horário do servidor de banco de dados.
+>Se o banco de dados não gerenciar vários fusos horários, para todas as manipulações de filtragem de dados, os query SQL devem ser executados no fuso horário do servidor de banco de dados.
 
-Cada operador do Adobe Campaign está vinculado a um fuso horário: essas informações são configuradas em seus perfis. For more on this, refer to [this document](../../platform/using/access-management.md).
+Cada operador Adobe Campaign está vinculado a um fuso horário: essas informações são configuradas em seus perfis. For more on this, refer to [this document](../../platform/using/access-management.md).
 
-Quando a plataforma do Adobe Campaign não requer gerenciamento de fuso horário, você pode manter um modo de armazenamento no formato local com um fuso horário vinculado específico.
+Quando a plataforma Adobe Campaign não requer gerenciamento de fuso horário, é possível manter um modo de armazenamento no formato local com um fuso horário vinculado específico.
 
 ## Recomendações {#recommendations}
 
 Os fusos horários combinam várias realidades: a expressão pode descrever um desfasamento de tempo constante com a data UTC ou os horários de uma região que pode mudar de hora duas vezes por ano (horário de verão).
 
-**Por exemplo, no postSQL, o FUSO HORÁRIO** DEFINIDO &quot;Europa/Paris&quot;; o comando levará os tempos de verão e inverno em conta: a data será expressa em UTC+1 ou UTC+2 dependendo da hora do ano.
+Por exemplo, no postSQL, o FUSO HORÁRIO **DEFINIDO &quot;Europa/Paris&quot;;** o comando levará os tempos de verão e inverno em conta: a data será expressa em UTC+1 ou UTC+2, dependendo da hora do ano.
 
-**No entanto, se utilizar o FUSO HORÁRIO** DEFINIDO 0200; , o intervalo de tempo sempre será UTC+2.
+No entanto, se utilizar o FUSO HORÁRIO **DEFINIDO 0200;** , o intervalo de tempo sempre será UTC+2.
 
 ## Configuração {#configuration}
 
-O modo de armazenamento de datas e horas é selecionado durante a criação do banco de dados (consulte [Criação de uma nova instância](#creating-a-new-instance)). No caso de uma migração, as horas vinculadas a datas são convertidas em datas e horas locais (consulte [Migração](#migration)).
+O modo de armazenamento para datas e horas é selecionado durante a criação do banco de dados (consulte [Criação de uma nova instância](#creating-a-new-instance)). No caso de uma migração, as horas vinculadas a datas são convertidas em datas e horas locais (consulte [Migração](#migration)).
 
-Do ponto de vista técnico, existem duas maneiras de armazenar informações de tipo de **Data+hora** no banco de dados:
+Do ponto de visualização técnico, há duas maneiras de armazenar informações de tipo de **Data+hora** no banco de dados:
 
 1. TIMESTAMP WITH TIMEZONE format: o mecanismo de banco de dados armazena datas em UTC. Cada sessão aberta terá um fuso horário e as datas serão convertidas de acordo com ele.
-1. Formato local + fuso horário local: todas as datas são armazenadas no formato local (sem gerenciamento de atraso de tempo) e um único fuso horário é atribuído a elas. O fuso horário é armazenado na opção **WdbcTimeZone** da instância do Adobe Campaign e pode ser alterado pelo **[!UICONTROL Administration > Platform > Options]** menu da árvore.
+1. Formato local + fuso horário local: todas as datas são armazenadas no formato local (sem gerenciamento de atraso de tempo) e um único fuso horário é atribuído a elas. O fuso horário é armazenado na opção **WdbcTimeZone** da instância Adobe Campaign e pode ser alterado pelo **[!UICONTROL Administration > Platform > Options]** menu da árvore.
 
->[!CAUTION]
+>[!IMPORTANT]
 >
 >Observe que essa modificação pode resultar em problemas de consistência e sincronização de dados.
 
@@ -71,7 +74,7 @@ Marque a **[!UICONTROL UTC database (date fields with time zone)]** opção para
 
 ![](assets/install_wz_select_utc_option.png)
 
->[!CAUTION]
+>[!IMPORTANT]
 >
 >Se você estiver usando o **Oracle**, os arquivos de fuso horário (.dat) das camadas do cliente Oracle deverão ser compatíveis com os arquivos de fuso horário instalados no servidor.
 
@@ -85,15 +88,15 @@ Caso contrário, eles serão armazenados no formato local e será necessário se
 
 ### Migração {#migration}
 
-Ao migrar para uma versão anterior (sem gerenciamento de fuso horário), será necessário definir o modo de armazenamento de dados no banco de dados.
+Ao migrar para uma versão anterior (sem gerenciamento de fuso horário), será necessário definir o modo de armazenamento de data no banco de dados.
 
-Para garantir a compatibilidade com ferramentas externas que acessam o banco de dados do Adobe Campaign, os campos SQL do tipo **Date+time** permanecem armazenados no formato local por padrão.
+Para garantir a compatibilidade com ferramentas externas que acessam o banco de dados Adobe Campaign, os campos SQL do tipo **Date+time** permanecem armazenados no formato local por padrão.
 
 Campos XML contendo datas agora são armazenados em UTC. Durante o carregamento, os campos que não estão no formato UTC são convertidos automaticamente usando o fuso horário dos servidores. Isso significa que todos os campos XML serão progressivamente convertidos em formato UTC.
 
 Para usar uma instância existente, adicione a opção **WdbcTimeZone** e insira o fuso horário da instância.
 
->[!CAUTION]
+>[!IMPORTANT]
 >
 >Verifique se o valor correto está configurado para a opção WdbcTimeZone: alterações efetuadas posteriormente podem levar a inconsistências.
 
