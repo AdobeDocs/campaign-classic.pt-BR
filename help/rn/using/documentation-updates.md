@@ -13,9 +13,9 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 9091059b1d8431a84eb93f104dbd8e8833cb94a7
+source-git-commit: 2e82605eda5bccd2e5604614acd4cb7d646822fc
 workflow-type: tm+mt
-source-wordcount: '6488'
+source-wordcount: '6502'
 ht-degree: 98%
 
 ---
@@ -37,6 +37,7 @@ A seção Solução de problemas de Disponibilidade foi movida e atualizada. [Le
 
 A seção Iniciar uma nova plataforma foi aprimorada. [Leia mais](../../delivery/using/starting-new-platform.md)
 
+A seção Enviar emails transacionais com anexos foi movida e atualizada. [Leia mais](../../message-center/using/transactional-email-with-attachments.md)
 
 ## Abril de 2020 {#april-2020}
 
