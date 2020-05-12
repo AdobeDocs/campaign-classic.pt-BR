@@ -14,8 +14,11 @@ discoiquuid: 97df4bd5-a8e3-48f4-87c8-fa090ea3f771
 index: y
 internal: n
 snippet: y
-translation-type: ht
-source-git-commit: 833907c7a7b84b94a00b131738c73ff54a744a40
+translation-type: tm+mt
+source-git-commit: f4ecdab4c17a6ba8deb3b98079f57bb7a9adf4a0
+workflow-type: tm+mt
+source-wordcount: '160'
+ht-degree: 100%
 
 ---
 
@@ -24,7 +27,7 @@ source-git-commit: 833907c7a7b84b94a00b131738c73ff54a744a40
 
 O envio de mensagens transacionais (Centro de mensagens) é um módulo do Campaign criado para gerenciar mensagens por disparo. Essas mensagens são geradas por eventos disparados dos sistemas de informações e podem ser: fatura, confirmação de pedidos, confirmação de remessa, alteração de senha, notificação de indisponibilidade de produto, extrato de conta ou criação de conta de site, por exemplo.
 
->[!CAUTION]
+>[!IMPORTANT]
 >
 >As mensagens transacionais exigem uma licença específica. Verifique o contrato de licença.
 
