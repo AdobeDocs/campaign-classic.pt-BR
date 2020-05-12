@@ -14,15 +14,18 @@ discoiquuid: 7f471ac1-cd6a-4371-977e-52d60ce8d968
 index: y
 internal: n
 snippet: y
-translation-type: ht
-source-git-commit: 65043155ab6ff1fe556283991777964bb43c57ce
+translation-type: tm+mt
+source-git-commit: f4ecdab4c17a6ba8deb3b98079f57bb7a9adf4a0
+workflow-type: tm+mt
+source-wordcount: '1002'
+ht-degree: 100%
 
 ---
 
 
 # Criação de uma conexão compartilhada{#creating-a-shared-connection}
 
->[!CAUTION]
+>[!IMPORTANT]
 >
 >* Extensões de schema feitas nos schemas usados pelos [workflows técnicos do Centro de Mensagens](../../message-center/using/technical-workflows.md) em instâncias de controle ou de execução precisam ser duplicadas nas outras instâncias usadas pelo módulo de mensagens transacionais do Adobe Campaign.
 >* A instância de controle e a instância de execução devem ser instaladas em máquinas diferentes. Elas não podem compartilhar a mesma instância do Campaign.
