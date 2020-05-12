@@ -14,8 +14,11 @@ discoiquuid: 5ff1577f-0809-46fd-ac1e-11b24637e35c
 index: y
 internal: n
 snippet: y
-translation-type: ht
-source-git-commit: cda7ae757a6de0e8cd6227faa2b731e9f392791b
+translation-type: tm+mt
+source-git-commit: e9923eb8cb78e7af05d64a122cd35b9cf3a4f215
+workflow-type: tm+mt
+source-wordcount: '1661'
+ht-degree: 98%
 
 ---
 
@@ -200,7 +203,8 @@ Eles estão disponíveis na árvore do Adobe Campaign, na pasta **[!UICONTROL Ad
 
 * **[!UICONTROL Recovering of web events]**: a cada hora, esse workflow baixa segmentos sobre o comportamento dos usuários em determinado site, os inclui no banco de dados do Adobe Campaign e inicia o workflow de re-marketing.
 * **[!UICONTROL Event purge]**: esse workflow permite que você exclua todos os eventos do banco de dados, dependendo do período configurado no campo **[!UICONTROL Lifespan]**. Para obter mais informações, consulte [Etapa 2: crie a conta externa no Campaign](#step-2--create-the-external-account-in-campaign).
-* **[!UICONTROL Identification of converted contacts]**: diretório dos visitantes que fizeram uma compra após uma campanha re-marketing. Os dados coletados por esse workflow podem ser acessados no relatório **[!UICONTROL Re-marketing efficiency]**, consulte esta [página](#creating-a-re-marketing-campaign).* **[!UICONTROL Sending of indicators and campaign attributes]**: permite enviar indicadores de campanha de e-mail via Adobe Campaign para a Adobe Experience Cloud usando o Adobe Analytics - Data connector. Esse workflow é acionado às 4:00 AM todos os dias e pode levar 24 horas para que os dados sejam enviados ao Analytics.
+* **[!UICONTROL Identification of converted contacts]**: diretório dos visitantes que fizeram uma compra após uma campanha re-marketing. Os dados coletados por esse workflow podem ser acessados no relatório **[!UICONTROL Re-marketing efficiency]**, consulte esta [página](#creating-a-re-marketing-campaign).
+* **[!UICONTROL Sending of indicators and campaign attributes]**: permite que você envie indicadores de campanha por email para a Adobe Experience Cloud usando o Adobe Analytics - Conector de dados. Esse workflow é acionado às 4:00 AM todos os dias e pode levar 24 horas para que os dados sejam enviados ao Analytics.
 
    Observe que esse workflow não deve ser reiniciado ou todos os dados anteriores podem distorcer os resultados do Analytics.
 
@@ -232,7 +236,6 @@ Eles estão disponíveis na árvore do Adobe Campaign, na pasta **[!UICONTROL Ad
    * **[!UICONTROL Contact date]** (scheduling/@contactDate)
 
 
-* **Identification of converted contacts**: diretório dos visitantes que fizeram uma compra após uma campanha re-marketing. Os dados coletados por esse workflow podem ser acessados no relatório **[!UICONTROL Re-marketing efficiency]** (consulte esta [página](../../platform/using/adobe-analytics-data-connector.md#creating-a-re-marketing-campaign)).
 
 ## Rastreamento de deliveries no Adobe Campaign {#tracking-deliveries-in-adobe-campaign}
 
