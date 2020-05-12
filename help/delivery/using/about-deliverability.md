@@ -13,15 +13,17 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: c687c8ad19560d4181c2db52a91e096cceea705e
+source-git-commit: e6617614ae22b73c6783f9775f441e5e25ae19e3
 workflow-type: tm+mt
-source-wordcount: '460'
+source-wordcount: '480'
 ht-degree: 90%
 
 ---
 
 
 # Sobre a entregabilidade{#about-deliverability}
+
+**A capacidade de delivery consiste em medir o sucesso das campanhas em chegar à caixa de entrada dos recipients sem rejeição ou sem serem marcadas como spam.**
 
 O Adobe Campaign oferece ferramentas para acompanhar o desempenho de deliverability da sua plataforma. Esta seção também destaca os principais princípios que você deve ter em mente ao gerenciar e otimizar a deliverability.
 
