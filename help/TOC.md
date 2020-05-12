@@ -5,9 +5,9 @@ index: y
 product: adobe campaign
 sub-product: Adobe Campaign Classic
 translation-type: tm+mt
-source-git-commit: 2ba9efa49f26559786641ff5e1caa9c481f770b2
+source-git-commit: 24a50fcaad4d9081e5504652eb5b73aa7db1e65f
 workflow-type: tm+mt
-source-wordcount: '2077'
+source-wordcount: '2078'
 ht-degree: 96%
 
 ---
@@ -532,9 +532,7 @@ ht-degree: 96%
       + [Nível de serviço do Centro de mensagens](message-center/using/message-center-service-level.md)
       + [Tempo de processamento do Centro de mensagens](message-center/using/message-center-processing-time.md)
    + Caso de uso {#use-case}
-      + [Finalidade](message-center/using/purpose.md)
-      + [Observações importantes](message-center/using/important-notes.md)
-      + [Implementação](message-center/using/implementation.md)
+      + [Envio de emails transacionais com anexos](message-center/using/transactional-email-with-attachments.md)
 + Integração com redes sociais {#integrating-with-social-media}
    + [Sobre marketing social](social/using/about-social-marketing.md)
    + Configuração {#configuration}
