@@ -14,8 +14,11 @@ discoiquuid: 5d8bbfe0-e202-4062-aa47-9ad87b975bb7
 index: y
 internal: n
 snippet: y
-translation-type: ht
-source-git-commit: f7655cd93a7dc8ecd35cd379da350ad279cae725
+translation-type: tm+mt
+source-git-commit: 15581517df8d2f397285bbadebd83b7f4539dfd7
+workflow-type: tm+mt
+source-wordcount: '189'
+ht-degree: 87%
 
 ---
 
@@ -24,9 +27,9 @@ source-git-commit: f7655cd93a7dc8ecd35cd379da350ad279cae725
 
 No contexto de um delivery de email, o rastreamento permite acompanhar as mensagens enviadas e o comportamento dos recipients: abrir, clicar em links, cancelar assinatura etc. Essas informações são recuperadas na guia **[!UICONTROL Tracking]** do perfil de cada recipient do delivery. Esta guia apresenta todos os links de URL rastreados e clicados pelo recipient selecionado na lista. Esse é o acúmulo de todos os URLs rastreados nas remessas que ainda estão na tela de envio. A lista pode ser configurada e normalmente contém: o URL clicado, a data e a hora do clique e o documento no qual o URL foi localizado. Para obter mais informações, consulte [esta seção](../../platform/using/editing-a-profile.md#tracking-tab).
 
-As métricas de rastreamento podem ser consultadas nos relatórios **[!UICONTROL URLs and click streams]**, **[!UICONTROL Tracking statistics]** e **[!UICONTROL Hot clicks]**, e também na guia **[!UICONTROL Tracking]** do delivery.
+Tracking metrics can be consulted in the **[!UICONTROL URLs and click streams]**, **[!UICONTROL Tracking statistics]**, and **[!UICONTROL Hot clicks]** reports, and in the **[!UICONTROL Tracking]** tab of the delivery.
 
-O painel de delivery é fundamental para monitorar seus deliveries e eventuais problemas encontrados durante o envio de mensagens. Para obter mais informações, consulte [esta seção](../../delivery/using/monitoring-a-delivery.md).
+O painel de delivery é fundamental para monitorar seus deliveries e eventuais problemas encontrados durante o envio de mensagens. For more on this refer to [this section](../../delivery/using/monitoring-a-delivery.md).
 
 **Tópicos relacionados**:
 
