@@ -15,7 +15,10 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: a2cb740fe9b71435f602b738bd270fd3a0954901
+source-git-commit: 3522f4f50770dde220610cd5f1c4084292d8f1f5
+workflow-type: tm+mt
+source-wordcount: '3055'
+ht-degree: 3%
 
 ---
 
@@ -67,7 +70,7 @@ A seção inferior da janela permite selecionar as opções a serem ativadas.
 As seguintes opções estão disponíveis:
 
 * **[!UICONTROL Email channel]** : para ativar o delivery de e-mail. Consulte Parâmetros [do canal de](#email-channel-parameters)email.
-* **[!UICONTROL Tracking]** : Para ativar o rastreamento da população do público alvo (abre e clica). Consulte Configuração [de](#tracking-configuration)rastreamento.
+* **[!UICONTROL Tracking]** : Para ativar o rastreamento da população do público alvo (abre e clica). Refer to [Tracking configuration](#tracking-configuration).
 * **[!UICONTROL Managing bounced emails]** : Para definir a conta POP usada para coletar e-mails de entrada. Consulte [Gerenciamento de e-mails](#managing-bounced-emails)enviados.
 * **[!UICONTROL LDAP integration]** : Para configurar a autenticação do usuário por meio de um diretório LDAP. Consulte [Conexão por meio do LDAP](../../installation/using/connecting-through-ldap.md).
 
@@ -160,7 +163,7 @@ As rejeições não processadas não são exibidas na interface Adobe Campaign. 
 * **[!UICONTROL Address for errors]** : Preencha este campo para transferir para um endereço de terceiros apenas as mensagens de erro que o processo do InMail não pôde qualificar.
 * **[!UICONTROL SMTP server]** : Servidor usado para enviar emails de rejeição não processados.
 
->[!CAUTION]
+>[!IMPORTANT]
 >
 >Para encaminhar emails de rejeição não processados, a Adobe recomenda preencher apenas o **[!UICONTROL Address for errors]** campo. No entanto, verifique se o endereço usado é verificado regularmente, pois isso pode colocar uma carga pesada em seu servidor de email. Entre em contato com o executivo da sua conta para obter mais informações.
 
@@ -310,7 +313,7 @@ Essa etapa permite incluir preferências de política de dados.
 
 ## Acesso através da Internet {#access-from-the-internet}
 
->[!CAUTION]
+>[!IMPORTANT]
 >
 >Por motivos de privacidade, recomendamos usar HTTPS para todos os recursos externos.
 
@@ -334,7 +337,7 @@ O Adobe Campaign permite diferenciar esses três URLs para espalhar a carga em v
 
 ## Gerenciamento de recursos públicos {#managing-public-resources}
 
->[!CAUTION]
+>[!IMPORTANT]
 >
 >Por motivos de privacidade, recomendamos usar HTTPS para todos os recursos externos.
 
