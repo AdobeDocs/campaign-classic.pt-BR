@@ -14,8 +14,11 @@ discoiquuid: 14369acf-9149-4649-947a-c16289e35eb6
 index: y
 internal: n
 snippet: y
-translation-type: ht
-source-git-commit: 33bf5c5a08613cf88eaace91b85a76157cac7ba1
+translation-type: tm+mt
+source-git-commit: be148d7cd55097b9014d2f4d3b095c65a5ca8c54
+workflow-type: tm+mt
+source-wordcount: '824'
+ht-degree: 91%
 
 ---
 
@@ -32,13 +35,15 @@ Reserve tempo para acessar a lista de [Verificação de segurança e privacidade
 
 ## Gerenciamento de privacidade {#privacy-management}
 
+O Adobe Campaign oferta um conjunto de ferramentas para ajudá-lo a cumprir as regras de privacidade (RGPD, CCPA e muito mais).
+
 O RGPD (Regulamento Geral sobre a Proteção de Dados) é a lei de privacidade da União européia (EU) que harmoniza e moderniza os requisitos de proteção de dados. O GDPR aplica-se aos clientes do Adobe Campaign que coletam dados de residentes da UE.
 
-A CCPA (Lei de privacidade do consumidor da Califórnia) fornece aos residentes da Califórnia novos direitos no que diz respeito a suas informações pessoais e impõe responsabilidades de proteção de dados a determinadas entidades com negócios na Califórnia.
+A CCPA (Direitos de privacidade do consumidor da Califórnia) fornece aos residentes da Califórnia novos direitos no que diz respeito a suas informações pessoais e impõe responsabilidades de proteção de dados a determinadas entidades com negócios na Califórnia.
 
 Além do gerenciamento de consentimento, das configurações de retenção de dados e do gerenciamento de direitos, fornecemos, na nossa função de Processador de dados, recursos adicionais para ajudar a facilitar sua condição de Controlador de dados para certas solicitações de Privacidade.
 
-Neste [artigo](https://helpx.adobe.com/br/campaign/kb/acc-privacy.html), você aprenderá como o Adobe Campaign ajuda a gerenciar os diferentes recursos da chave de privacidade: Direito de acesso, direito de ser esquecido, consentimento, retenção de dados e funções de usuário. Você também encontrará as práticas recomendadas para ajudar você a estar em conformidade com a privacidade ao usar nosso serviço.
+In [this article](https://helpx.adobe.com/br/campaign/kb/acc-privacy.html), you will learn how Adobe Campaign helps you manage the different Privacy key features: Right to Access, Right to be Forgotten, consent, data retention and user roles. Você também encontrará as práticas recomendadas para ajudá-lo com sua conformidade com a privacidade ao usar nossa solução.
 
 ## Cookies e recursos de rastreamento {#cookies-and-tracking-capabilities}
 
