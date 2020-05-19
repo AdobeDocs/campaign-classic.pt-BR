@@ -12,12 +12,15 @@ discoiquuid: null
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 79f8cc179fcbf9d537a1cc889b268a43202d7369
+source-git-commit: be148d7cd55097b9014d2f4d3b095c65a5ca8c54
+workflow-type: tm+mt
+source-wordcount: '1389'
+ht-degree: 67%
 
 ---
 
 
-# Deprecated and removed features {#deprecated-and-removed-features}
+# Recursos descontinuados e removidos {#deprecated-and-removed-features}
 
 A Adobe avalia constantemente os recursos do produto para identificar aqueles mais antigos que devem ser substituídos por alternativas mais modernas de forma a melhorar o valor geral do cliente, sempre considerando cuidadosamente a compatibilidade com versões anteriores. Como o Adobe Campaign Classic funciona com ferramentas de terceiros, a compatibilidade é atualizada regularmente, para implementar apenas as versões compatíveis. As versões que não são mais compatíveis com o Adobe Campaign Classic estão listadas abaixo.
 
@@ -32,11 +35,11 @@ Esse processo oferece aos clientes pelo menos um ciclo de lançamento para adapt
 >As versões de Adobe Campaign e os novos recursos estão listados nas [Notas](../../rn/using/latest-release.md)de versão.
 
 
-## Recursos obsoletos {#deprecated-features}
+## Deprecated features {#deprecated-features}
 
 Esta seção lista os recursos e funcionalidades marcados como obsoletos nas versões mais recentes do Campaign Classic.
 
-Geralmente, os recursos que estão planejados para serem removidos em uma versão futura são definidos como obsoletos primeiro, com uma alternativa fornecida. Esses recursos e recursos não estão mais disponíveis para novos clientes do Campaign Standard ou não devem ser usados para nenhuma nova implementação. Eles também são removidos da documentação do produto.
+Geralmente, os recursos que estão planejados para serem removidos em uma versão futura são definidos como obsoletos primeiro, com uma alternativa fornecida. Esses recursos e recursos não estão mais disponíveis para novos clientes do Campaign Classic ou não devem ser usados para nenhuma nova implementação. Eles também são removidos da documentação do produto.
 
 Os clientes são aconselhados a revisar se utilizam o recurso/funcionalidade em sua implantação atual e a fazer planos para alterar sua implementação para usar a alternativa fornecida. Consulte a data de remoção para planejar suas atualizações de ambiente e projeto de acordo.
 
@@ -113,7 +116,7 @@ Consulte a [Matriz de compatibilidade](https://helpx.adobe.com/br/campaign/kb/co
 
 ## Recursos removidos {#removed-features}
 
-Esta seção lista recursos e recursos que foram removidos do Campaign Standard.
+Esta seção lista os recursos e funcionalidades removidos do Campaign Classic.
 
 <table> 
  <tbody> 
@@ -123,8 +126,8 @@ Esta seção lista recursos e recursos que foram removidos do Campaign Standard.
    <td><strong>Versão</strong></td> 
   </tr> 
    <tr> 
-   <td>Documentação das APIs do Campaign - arquivo<br>jsapi.chm</td>
-   <td>As APIs do Campaign Classic agora estão disponíveis em uma página dedicada. If you were using the jsapi.chm file, you should now refer to <a href="https://docs.adobe.com/content/help/en/campaign-classic/technicalresources/api/index.html">the new online version</a>.</td>
+   <td>Documentação das APIs do Campaign - arquivo jsapi.chm<br> </td>
+   <td>As APIs do Campaign Classic agora estão disponíveis em uma página dedicada. If you were using the jsapi.chm file, you should now refer to <a href="https://docs.adobe.com/content/help/br/campaign-classic/technicalresources/api/index.html">the new online version</a>.</td>
    <td>19.1</td>
   </tr> 
   <tr> 
@@ -138,7 +141,7 @@ Esta seção lista recursos e recursos que foram removidos do Campaign Standard.
    <td>18.10</td>
   </tr> 
   <tr> 
-   <td>Notificações por push - Conector<br>binário do iOS</td>
+   <td>Notificações por push - Conector binário iOS<br> </td>
    <td>Por recomendação da Apple, a Adobe removerá o iOS Binary Connector herdado. O conector baseado em HTTP/2, mais avançado e eficiente, já está disponível.</td>
    <td>18.10</td>
   </tr> 
