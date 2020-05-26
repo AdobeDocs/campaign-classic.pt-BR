@@ -14,8 +14,11 @@ discoiquuid: 3da951ef-5775-4593-8301-f143c71edc19
 index: y
 internal: n
 snippet: y
-translation-type: ht
-source-git-commit: 4b4ec97e52a494dd88b2516650ae514294f00934
+translation-type: tm+mt
+source-git-commit: b369a17fabc55607fc6751e7909e1a1cb3cd4201
+workflow-type: tm+mt
+source-wordcount: '1610'
+ht-degree: 97%
 
 ---
 
@@ -30,7 +33,7 @@ Diretrizes para solução de problemas relacionados à execução de workflows t
 
 ### Logs {#logs}
 
-O método **[!UICONTROL logInfo()]** do JavaScript é uma ótima solução para depurar um workflow. É útil, mas deve ser usado com cuidado, especialmente para atividades executadas com frequência: pode sobrecarregar os logs e aumentar significativamente o tamanho da tabela de log. Mas, também pode ser preciso de mais do que **[!UICONTROL logInfo()]**.
+The JavaScript method **[!UICONTROL logInfo()]** is a great solution for debugging a workflow. É útil, mas deve ser usado com cuidado, especialmente para atividades executadas com frequência: pode sobrecarregar os logs e aumentar significativamente o tamanho da tabela de log. Mas, também pode ser preciso de mais do que **[!UICONTROL logInfo()]**.
 
 Duas soluções adicionais estão disponíveis para ajudar:
 
@@ -49,7 +52,7 @@ Duas soluções adicionais estão disponíveis para ajudar:
    Disponível na guia **[!UICONTROL Execution]** das propriedades do workflow, essa opção registrará todos as consultas SQL geradas pela ferramenta a partir das diferentes atividades. É uma boa forma de ver o que está realmente sendo executado pela plataforma. No entanto, essa opção só deve ser usada temporariamente durante o desenvolvimento e não ativada durante a produção.
 
 Limpe os registros quando não forem mais necessários. O histórico do workflow não é removido automaticamente: todas as mensagens são mantidas por padrão. O histórico pode ser eliminado por meio do menu **[!UICONTROL File > Actions]** ou clicando no botão Actions localizado na barra de ferramentas acima da lista. Selecione Purge history.
-Para saber como limpar seus registros, consulte esta [documentação](../../workflow/using/executing-a-workflow.md#actions-toolbar).
+Para saber como limpar seus registros, consulte esta [documentação](../../workflow/using/starting-a-workflow.md).
 
 ### Planejamento de workflow {#workflow-planning}
 
@@ -69,7 +72,7 @@ Para evitar workflows no estado pausado:
 
 * Verifique seus workflows regularmente para garantir que não haja erros inesperados.
 * Mantenha seus workflows o mais simples possível, por exemplo, dividindo grandes workflows em vários workflows diferentes. É possível usar as atividades **[!UICONTROL External signal]** para acionar a execução com base na execução de outros workflows.
-* Evite desabilitar atividades com fluxos nos workflows, deixando threads abertos e levando a muitas tabelas temporárias que podem consumir muito espaço. Não mantenha as atividades nos estados **[!UICONTROL Do not enable]** ou **[!UICONTROL Enable but do not execute]** em seus workflows.
+* Evite desabilitar atividades com fluxos nos workflows, deixando threads abertos e levando a muitas tabelas temporárias que podem consumir muito espaço. Do not keep activities in **[!UICONTROL Do not enable]** or **[!UICONTROL Enable but do not execute]** states in your workflows.
 
 Além disso, pare os workflows não utilizados. Os workflows que continuam em execução mantêm conexões com o banco de dados.
 
@@ -77,7 +80,7 @@ Use apenas parada incondicional nos casos mais raros. Não utilize esta ação r
 
 ### Executar na opção do motor {#execute-in-the-engine-option}
 
-Na janela **[!UICONTROL Workflow properties]**, nunca marque a opção **[!UICONTROL Execute in the engine]**. Quando essa opção estiver habilitada, o workflow tem prioridade e todos os outros workflows são interrompidos pelo motor de workflow até que este seja concluído.
+In the **[!UICONTROL Workflow properties]** window, never check the **[!UICONTROL Execute in the engine]** option. Quando essa opção estiver habilitada, o workflow tem prioridade e todos os outros workflows são interrompidos pelo motor de workflow até que este seja concluído.
 
 ![](assets/wf-execute-in-engine.png)
 
@@ -139,12 +142,12 @@ O Workflow HeatMap permite aos administradores da plataforma Adobe Campaign moni
 
 Ao desenvolver seu workflow, todas as atividades terão um nome, como todos os objetos do Adobe Campaign. Embora o nome seja gerado pela ferramenta, recomendamos que você renomeie com um nome explícito ao configurá-lo. O risco de fazer isso depois é que pode interromper o workflow com atividades usando o nome de outra atividade anterior. Portanto, seria um trabalho difícil atualizar os nomes depois.
 
-O nome da atividade pode ser encontrado na guia **[!UICONTROL Advanced]**. Não use nomes como **[!UICONTROL query]**, **[!UICONTROL query1]**, **[!UICONTROL query11]**, mas nomes explícitos como **[!UICONTROL querySubscribedRecipients]**. Esse nome aparecerá no journal e, se aplicável, nos logs SQL, e isso ajudará a depurar o workflow ao configurá-lo.
+O nome da atividade pode ser encontrado na guia **[!UICONTROL Advanced]**. Don’t leave them named **[!UICONTROL query]**, **[!UICONTROL query1]**, **[!UICONTROL query11]**, but give them explicit names such as **[!UICONTROL querySubscribedRecipients]**. Esse nome aparecerá no journal e, se aplicável, nos logs SQL, e isso ajudará a depurar o workflow ao configurá-lo.
 
 ### Primeira e última atividades {#first-and-last-activities}
 
-* Sempre inicie o workflow com uma atividade **[!UICONTROL Start]** ou atividade **[!UICONTROL Scheduler]** . Quando pertinente, também é possível usar uma atividade **[!UICONTROL External signal]**.
-* Ao criar o workflow, use apenas uma atividade **[!UICONTROL Scheduler]** por ramificação. Se a mesma ramificação de um workflow tiver vários schedulers (vinculados uns aos outros), o número de tarefas a serem executadas será multiplicado exponencialmente, o que irá sobrecarregar consideravelmente o banco de dados. Essa regra também se aplica a todas as atividades com uma guia **[!UICONTROL Scheduling &amp; History]**. Saiba mais em [Agendamento](../../workflow/using/scheduler.md).
+* Sempre inicie o workflow com uma atividade **[!UICONTROL Start]** ou atividade **[!UICONTROL Scheduler]** . When relevant, you can also use an **[!UICONTROL External signal]** activity.
+* Ao criar o workflow, use apenas uma atividade **[!UICONTROL Scheduler]** por ramificação. Se a mesma ramificação de um workflow tiver vários schedulers (vinculados uns aos outros), o número de tarefas a serem executadas será multiplicado exponencialmente, o que irá sobrecarregar consideravelmente o banco de dados. Essa regra também se aplica a todas as atividades com uma guia **[!UICONTROL Scheduling & History]**. Saiba mais em [Agendamento](../../workflow/using/scheduler.md).
 
    ![](assets/wf-scheduler.png)
 
