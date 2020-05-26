@@ -14,8 +14,11 @@ discoiquuid: 3739593f-056c-4165-87ef-63c812bd3c43
 index: y
 internal: n
 snippet: y
-translation-type: ht
-source-git-commit: 20f835c357d016643ea1f3209ee4dfb6d3239f90
+translation-type: tm+mt
+source-git-commit: b369a17fabc55607fc6751e7909e1a1cb3cd4201
+workflow-type: tm+mt
+source-wordcount: '164'
+ht-degree: 100%
 
 ---
 
@@ -32,7 +35,7 @@ Consulte a documentação online sobre chamadas SOAP para obter mais informaçõ
 
 ![](assets/edit_signal.png)
 
-A configuração das expirações é apresentada em [Expirations](../../workflow/using/executing-a-workflow.md#expirations).
+A configuração das expirações é apresentada em [Expirations](../../workflow/using/defining-approvals.md).
 
 O campo **Delay** permite especificar um atraso de expiração nas unidades de sua escolha. Consulte [Wait](../../workflow/using/wait.md).
 
