@@ -15,7 +15,10 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 8fd9949ec03b7c2cdf88a9d5fcf5c8d8fd85f7d0
+source-git-commit: b369a17fabc55607fc6751e7909e1a1cb3cd4201
+workflow-type: tm+mt
+source-wordcount: '1090'
+ht-degree: 3%
 
 ---
 
@@ -28,7 +31,7 @@ Para ajudá-lo a configurar planos de manutenção, esta seção lista algumas r
 
 ### Detecção de tabelas grandes {#detecting-large-tables}
 
-1. Você pode adicionar a seguinte exibição ao banco de dados:
+1. Você pode adicionar a seguinte visualização ao banco de dados:
 
    ```
    create or replace view uvSpace
@@ -43,7 +46,7 @@ Para ajudá-lo a configurar planos de manutenção, esta seção lista algumas r
     ORDER BY 3 DESC, 1, 2 DESC;
    ```
 
-1. Executar o seguinte comando permite que você localize tabelas e índices grandes:
+1. A execução do seguinte comando permite que você localize tabelas e índices grandes:
 
    ```
    select * from uvSpace;
@@ -99,19 +102,19 @@ vacuum full nmsdelivery;
 >* A Adobe recomenda adicionar as tabelas específicas ao seu modelo de dados, que podem estar sujeitas a atualizações significativas. Esse pode ser o caso do **NmsRecipient** se você tiver grandes fluxos diários de replicação de dados.
 >* Os comandos de **vácuo** e **reindexação** bloquearão a tabela, que pausa alguns processos enquanto a manutenção é realizada.
 >* Para tabelas muito grandes (normalmente acima de 5 Gb), o **vácuo cheio** pode tornar-se bastante ineficiente e levar muito tempo. A Adobe não recomenda usá-la para a tabela **YyyNmsBroadLogXxx** .
->* Essa operação de manutenção pode ser implementada por um fluxo de trabalho do Adobe Campaign, usando uma **[!UICONTROL SQL]** atividade (para obter mais informações, consulte [esta seção](../../workflow/using/executing-a-workflow.md#architecture)). Certifique-se de programar a manutenção para um tempo de atividade baixo que não colida com a janela de backup.
+>* Esta operação de manutenção pode ser implementada por um fluxo de trabalho de Adobe Campaign, usando uma **[!UICONTROL SQL]** atividade (para obter mais informações, consulte [esta seção](../../workflow/using/architecture.md)). Certifique-se de programar a manutenção para um tempo de atividade baixo que não colidir com a janela de backup.
 >
 
 
 
 ### Reconstrução de um banco de dados {#rebuilding-a-database}
 
-O PostgreSQL não fornece uma maneira fácil de executar uma recriação de tabela on-line, pois o **vácuo cheio** bloqueia a tabela, impedindo a produção regular. Isso significa que a manutenção deve ser realizada quando a tabela não for usada. É possível:
+O PostgreSQL não fornece uma maneira fácil de executar uma recriação de tabela on-line, pois o **vácuo cheio** bloqueia a tabela, impedindo assim a produção regular. Isso significa que a manutenção deve ser realizada quando a tabela não for usada. É possível:
 
-* executar a manutenção quando a plataforma do Adobe Campaign for interrompida,
+* efetuar a manutenção quando a plataforma Adobe Campaign for parada,
 * pare os vários subserviços do Adobe Campaign que provavelmente gravarão na tabela que está sendo recriada (**nlserver stop wfserver instance_name** para interromper o processo de fluxo de trabalho).
 
-Este é um exemplo de desfragmentação de tabela usando funções específicas para gerar a DDL necessária. O SQL a seguir permite criar duas novas funções: **GenRebuildTablePart1** e **GenRebuildTablePart2**, que podem ser usadas para gerar a DDL necessária para recriar uma tabela.
+Este é um exemplo de desfragmentação de tabela usando funções específicas para gerar a DDL necessária. O SQL a seguir permite criar duas novas funções: **GenRebuildTablePart1** e **GenRebuildTablePart2**, que podem ser usados para gerar a DDL necessária para recriar uma tabela.
 
 * A primeira função permite criar uma tabela de trabalho (** _tmp** aqui) que é uma cópia da tabela original.
 * A segunda função então exclui a tabela original e renomeia a tabela de trabalho e seus índices.
@@ -383,19 +386,19 @@ O exemplo abaixo diz respeito ao Microsoft SQL Server 2005. Se estiver usando ou
    >
    >Recomendamos executar pelo menos as tarefas de manutenção mostradas abaixo. Você também pode selecionar a tarefa de atualização de estatísticas, embora ela já seja realizada pelo fluxo de trabalho de limpeza do banco de dados.
 
-1. Na lista suspensa, selecione o banco de dados no qual você deseja executar a **[!UICONTROL Database Check Integrity]** tarefa.
-1. Selecione o banco de dados e clique em **[!UICONTROL OK]** e em **[!UICONTROL Next]** .
+1. Na lista suspensa, selecione o banco de dados no qual deseja executar a **[!UICONTROL Database Check Integrity]** tarefa.
+1. Selecione o banco de dados e clique em **[!UICONTROL OK]** e, em seguida, clique em **[!UICONTROL Next]** .
 1. Configure o tamanho máximo alocado para o banco de dados e clique em **[!UICONTROL Next]** .
 
    >[!NOTE]
    >
-   >Se o tamanho do banco de dados exceder esse limite, o plano de manutenção tentará excluir dados não utilizados para liberar espaço.
+   >Se o tamanho do banco de dados exceder esse limite, o plano de manutenção tentará excluir os dados não utilizados para liberar espaço.
 
 1. Reorganize ou recrie o índice:
 
    * Se a taxa de fragmentação do índice estiver entre 10% e 40%, recomenda-se uma reorganização.
 
-      Escolha quais bancos de dados e objetos (tabelas ou exibições) você deseja reorganizar e clique em **[!UICONTROL Next]** .
+      Escolha quais bancos de dados e objetos (tabelas ou visualizações) você deseja reorganizar e clique em **[!UICONTROL Next]** .
 
       >[!NOTE]
       >
@@ -410,15 +413,15 @@ O exemplo abaixo diz respeito ao Microsoft SQL Server 2005. Se estiver usando ou
       >O processo de recriação de índice é mais restritivo em termos de uso do processador e bloqueia os recursos do banco de dados. Clique na **[!UICONTROL Keep index online while reindexing]** opção se desejar que o índice esteja disponível durante a reconstrução.
 
 1. Selecione as opções que deseja exibir no relatório de atividade e clique em **[!UICONTROL Next]** .
-1. Verifique a lista de tarefas configuradas para o plano de manutenção e clique em **[!UICONTROL Finish]** .
+1. Verifique a lista do tarefa configurado para o plano de manutenção e clique em **[!UICONTROL Finish]** .
 
    Será exibido um resumo do plano de manutenção e dos status de suas várias etapas.
 
 1. Quando o plano de manutenção estiver concluído, clique em **[!UICONTROL Close]** .
-1. No Microsoft SQL Server Explorer, clique duas vezes na **[!UICONTROL Management > Maintenance Plans]** pasta.
+1. No Microsoft SQL Server Explorer, clique com o duplo do mouse na **[!UICONTROL Management > Maintenance Plans]** pasta.
 1. Selecione o plano de manutenção do Adobe Campaign: as várias etapas são detalhadas em um fluxo de trabalho.
 
-   Observe que um objeto foi criado na **[!UICONTROL SQL Server Agent > Jobs]** pasta. Esse objeto permite que você inicie o plano de manutenção. No nosso exemplo, existe apenas um objeto, uma vez que todas as tarefas de manutenção fazem parte do mesmo plano.
+   Observe que um objeto foi criado na **[!UICONTROL SQL Server Agent > Jobs]** pasta. Esse objeto permite que você start o plano de manutenção. No nosso exemplo, existe apenas um objeto, uma vez que todas as tarefas de manutenção fazem parte do mesmo plano.
 
    >[!CAUTION]
    >
@@ -436,4 +439,4 @@ Essa opção pode ser usada se você quiser que tabelas de trabalho (por exemplo
 
 Quando você define a opção como &quot;tempdb.dbo.&quot;, as tabelas de trabalho serão criadas no banco de dados temporário padrão do Microsoft SQL Server. O administrador do banco de dados precisa permitir acesso de gravação ao banco de dados tempdb.
 
-Se a opção estiver definida, ela será usada em todos os bancos de dados do Microsoft SQL Server configurados no Adobe Campaign (banco de dados principal e contas externas). Observe que se duas contas externas compartilham o mesmo servidor, podem ocorrer conflitos (já que o tempdb será único). Da mesma forma, se duas instâncias de Campanha usarem o mesmo servidor MSSQL, poderá haver conflitos se usarem o mesmo tempdb.
+Se a opção estiver definida, ela será usada em todos os bancos de dados do Microsoft SQL Server configurados no Adobe Campaign (banco de dados principal e conta externa). Observe que se duas contas externas compartilham o mesmo servidor, podem ocorrer conflitos (já que o tempdb será único). Da mesma forma, se duas instâncias de Campanha usarem o mesmo servidor MSSQL, poderá haver conflitos se usarem o mesmo tempdb.
