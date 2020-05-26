@@ -14,8 +14,11 @@ discoiquuid: a0090c78-5873-446d-8d5f-b0f94ff5d373
 index: y
 internal: n
 snippet: y
-translation-type: ht
-source-git-commit: 20f835c357d016643ea1f3209ee4dfb6d3239f90
+translation-type: tm+mt
+source-git-commit: b369a17fabc55607fc6751e7909e1a1cb3cd4201
+workflow-type: tm+mt
+source-wordcount: '547'
+ht-degree: 89%
 
 ---
 
@@ -38,7 +41,7 @@ Se necessário, é possível atribuir a tarefa de aprovação a um único operad
    >
    >Somente o operador escolhido será autorizado a aprovar a tarefa.
 
-* É possível definir uma query para filtrar operadores de aprovação. Para fazer isso, selecione o valor **[!UICONTROL Filter]** e então, o campo **[!UICONTROL Assignment type]** e clique no link **[!UICONTROL Advanced parameters...]** para definir as condições do filtro, conforme mostrado no exemplo a seguir:
+* É possível definir uma query para filtrar operadores de aprovação. To do this, select the **[!UICONTROL Filter]** value in the **[!UICONTROL Assignment type]** field and click the **[!UICONTROL Advanced parameters...]** link to define filtering conditions, as shown in the following example:
 
    ![](assets/s_advuser_validation_box_filter.png)
 
@@ -52,7 +55,7 @@ Um operador pode aprovar as tarefas atribuídas a esse operador a partir do cons
 
 A modificação do título ou do corpo da mensagem da atividade não afeta as tarefas atuais, mas, por outro lado, modificando as escolhas possíveis afeta diretamente as tarefas atuais, que herdam automaticamente a nova lista de opções.
 
-As tarefas do tipo **Approval** podem ser acessadas no nó **[!UICONTROL Administration > Production > Objects created automatically > Approvals pending]**: os operadores podem acessar o formulário de aprovação diretamente por meio desse modo de exibição.
+**As tarefas de tipo de aprovação** podem ser acessadas a partir do **[!UICONTROL Administration > Production > Objects created automatically > Approvals pending]** nó: os operadores podem acessar o formulário de aprovação diretamente por meio dessa visualização.
 
 ![](assets/s_advuser_validation_from_console.png)
 
@@ -66,11 +69,11 @@ O campo **[!UICONTROL Title]** contém o título da mensagem: é o assunto da me
 
 A seção inferior do editor permite definir a lista de respostas possíveis. Há uma transição correspondente a cada resposta. O nome é o identificador interno e o rótulo é o texto que será exibido na lista de opções.
 
-Clique no link **[!UICONTROL Advanced parameters...]** para selecionar o template de delivery a ser usado para notificar os operadores. O template padrão (nome interno &quot;notifyAssignee&quot;) pega o título e a mensagem e adiciona um link à página da Web usada para responder.
+Click the **[!UICONTROL Advanced parameters...]** link to select the delivery template to be used to notify operators. O template padrão (nome interno &quot;notifyAssignee&quot;) pega o título e a mensagem e adiciona um link à página da Web usada para responder.
 
 Esse template pode ser modificado para personalizar o layout de mensagens, mas é preferível fazer uma cópia. O mecanismo do target (arquivo externo, mapeamento do target) não deve ser modificado porque é necessário para que as notificações funcionem corretamente.
 
-Um exemplo de aprovação é exibido em [Defining approvals](../../workflow/using/executing-a-workflow.md#defining-approvals)
+Um exemplo de aprovação é exibido em [Defining approvals](../../workflow/using/defining-approvals.md)
 
 ## Parâmetros de output {#output-parameters}
 
