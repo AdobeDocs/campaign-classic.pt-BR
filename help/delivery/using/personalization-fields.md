@@ -14,8 +14,11 @@ discoiquuid: 27c8e443-ee6b-4d58-bc2d-81cf8391c5de
 index: y
 internal: n
 snippet: y
-translation-type: ht
-source-git-commit: f5062117b5cefbdd2570018f6803f114c14a3fae
+translation-type: tm+mt
+source-git-commit: b369a17fabc55607fc6751e7909e1a1cb3cd4201
+workflow-type: tm+mt
+source-wordcount: '809'
+ht-degree: 93%
 
 ---
 
@@ -55,12 +58,12 @@ Ao criar um email, iremos inserir o nome do recipient e depois adicionar a data 
 
 1. Criar um novo delivery ou abrir um tipo de delivery de email existente.
 1. No assistente de delivery, clique em **[!UICONTROL Subject]** para editar e inserir o assunto da mensagem.
-1. Insira &quot;**[!UICONTROL Special offer for]**&quot; e use o botão na barra de ferramentas para inserir um campo de personalização. Selecione **[!UICONTROL Recipients>Title]**.
+1. Insira &quot;**[!UICONTROL Special offer for]**&quot;  &quot; e use o botão na barra de ferramentas para inserir um campo de personalização. Selecione **[!UICONTROL Recipients>Title]**.
 
    ![](assets/s_ncs_user_insert_custom_field.png)
 
 1. Repita a operação para inserir o nome do recipient. Insira espaços entre todos os campos de personalização.
-1. Clique em **[!UICONTROL OK]** para validar.
+1. Click **[!UICONTROL OK]** to validate.
 1. Insira a personalização no corpo da mensagem. Para fazer isso, clique no conteúdo da mensagem e clique no botão de inserção de campo.
 1. Selecione **[!UICONTROL Recipient>Other...]**.
 
@@ -76,11 +79,11 @@ Ao criar um email, iremos inserir o nome do recipient e depois adicionar a data 
 
    >[!NOTE]
    >
-   >Quando um delivery faz parte de um workflow, você pode usar os dados da tabela de workflow temporário. Esses dados são agrupados no menu **[!UICONTROL Target extension]**. Para obter mais informações, consulte [esta seção](../../workflow/using/executing-a-workflow.md#target-data).
+   >Quando um delivery faz parte de um workflow, você pode usar os dados da tabela de workflow temporário. This data is grouped in the **[!UICONTROL Target extension]** menu. Para obter mais informações, consulte [esta seção](../../workflow/using/data-life-cycle.md#target-data).
 
 ## Otimização da personalização {#optimizing-personalization}
 
-Você pode otimizar a personalização usando uma opção dedicada: **[!UICONTROL Prepare the personalization data with a workflow]**, disponível na guia **[!UICONTROL Analysis]** das propriedades de delivery.
+You can optimize personalization using a dedicated option: **[!UICONTROL Prepare the personalization data with a workflow]**, available in the **[!UICONTROL Analysis]** tab of the delivery properties.
 
 Durante a análise de delivery, essa opção cria e executa automaticamente um workflow que armazena todos os dados vinculados ao Target em uma tabela temporária, incluindo dados de tabelas vinculadas na FDA.
 
@@ -93,7 +96,7 @@ Para usar essa opção, siga as etapas abaixo:
 1. Crie uma campanha. Para obter mais informações, consulte [esta seção](../../campaign/using/setting-up-marketing-campaigns.md#creating-a-campaign).
 1. Na guia **[!UICONTROL Targeting and workflows]** da campanha, adicione uma atividade de **Query** ao workflow. Para obter mais informações sobre o uso dessa atividade, consulte [esta seção](../../workflow/using/query.md).
 1. Adicione uma atividade **[!UICONTROL Email delivery]** ao workflow e depois a abra. Para obter mais informações sobre o uso dessa atividade, consulte [esta seção](../../workflow/using/delivery.md).
-1. Acesse a guia **[!UICONTROL Analysis]** de **[!UICONTROL Delivery properties]** e selecione a opção **[!UICONTROL Prepare the personalization data with a workflow]**.
+1. Vá até a **[!UICONTROL Analysis]** guia do **[!UICONTROL Delivery properties]** e selecione a **[!UICONTROL Prepare the personalization data with a workflow]** opção.
 
    ![](assets/perso_optimization.png)
 
@@ -111,7 +114,7 @@ Após a conclusão da análise, vá para as **[!UICONTROL Properties]** do workf
 
 Para melhorar a proteção do delivery, é possível definir um período de tempo limite para a fase de personalização.
 
-Em **[!UICONTROL Delivery properties]**, na guia **[!UICONTROL Delivery]**, selecione um valor máximo em segundos na opção **[!UICONTROL Maximum personalization run time]**.
+In the **[!UICONTROL Delivery]** tab of the **[!UICONTROL Delivery properties]**, select a maximum value in seconds for the **[!UICONTROL Maximum personalization run time]** option.
 
 Durante a visualização ou envio, se a fase de personalização exceder o tempo máximo definido neste campo, o processo será anulado com uma mensagem de erro e o delivery falhará.
 
