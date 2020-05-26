@@ -13,9 +13,9 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: be148d7cd55097b9014d2f4d3b095c65a5ca8c54
+source-git-commit: 5d8959dc790c0cf0e6ea62122310bfbee5bcc0dd
 workflow-type: tm+mt
-source-wordcount: '6464'
+source-wordcount: '6477'
 ht-degree: 95%
 
 ---
@@ -37,6 +37,8 @@ A seção Solução de problemas de Disponibilidade foi movida e aprimorada. [Le
 As diretrizes de disponibilidade ao iniciar uma nova seção da plataforma foram aprimoradas. [Leia mais](../../delivery/using/starting-new-platform.md)
 
 A seção Enviar emails transacionais com anexos foi movida e atualizada. [Leia mais](../../message-center/using/transactional-email-with-attachments.md)
+
+A seção de práticas recomendadas do Pacote de dados foi movida e atualizada. [Leia mais](../../platform/using/working-with-data-packages.md#data-package-best-practices)
 
 ## Abril de 2020 {#april-2020}
 
