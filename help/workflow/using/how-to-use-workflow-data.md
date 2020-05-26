@@ -14,8 +14,11 @@ discoiquuid: ec3844ca-8d80-4ddc-b08c-f18a6919bb28
 index: y
 internal: n
 snippet: y
-translation-type: ht
-source-git-commit: 20f835c357d016643ea1f3209ee4dfb6d3239f90
+translation-type: tm+mt
+source-git-commit: b369a17fabc55607fc6751e7909e1a1cb3cd4201
+workflow-type: tm+mt
+source-wordcount: '539'
+ht-degree: 94%
 
 ---
 
@@ -64,13 +67,13 @@ Além dos campos de personalização habituais, você pode adicionar campos de p
 
 ![](assets/s_advuser_using_additional_data.png)
 
-Os dados contidos na tabela de workflow são identificados pelo seu nome: ele é sempre composto pelo link **targetData** . Para obter mais informações, consulte [Dados de target](../../workflow/using/executing-a-workflow.md#target-data).
+Os dados contidos na tabela de workflow são identificados pelo seu nome: ele é sempre composto pelo link **targetData** . Para obter mais informações, consulte [Dados de target](../../workflow/using/data-life-cycle.md#target-data).
 
 Dentro da estrutura de delivery de email, os campos de personalização também podem usar dados da extensão do target executada nos estágios de workflows para construção do target, conforme mostrado no exemplo abaixo:
 
 ![](assets/s_advuser_add_data_email.png)
 
-Se um código de segmento for especificado em uma atividade de target, ele será adicionado a uma coluna específica da tabela de workflow e será oferecido junto com os campos de personalização. Para exibir todos os campos de personalização, clique no link **[!UICONTROL Target extension > Other...]** acessível por meio do botão de personalização.
+Se um código de segmento for especificado em uma atividade de target, ele será adicionado a uma coluna específica da tabela de workflow e será oferecido junto com os campos de personalização. To display all personalization fields, click the **[!UICONTROL Target extension > Other...]** link accessible via the personalization button.
 
 ![](assets/s_advuser_segment_code_select.png)
 
@@ -78,7 +81,7 @@ Se um código de segmento for especificado em uma atividade de target, ele será
 
 ### Compactação ou criptografia de um arquivo {#zipping-or-encrypting-a-file}
 
-O Adobe Campaign permite exportar arquivos compactados ou criptografados. Ao definir uma exportação por meio da atividade **[!UICONTROL Data extraction (file)]**, é possível definir um pós-processamento para compactar ou criptografar o arquivo.
+O Adobe Campaign permite exportar arquivos compactados ou criptografados. When defining an export through a **[!UICONTROL Data extraction (file)]** activity, you can define a post-processing to zip or to encrypt the file.
 
 Para fazer isso:
 
