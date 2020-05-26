@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 9773e8ae39133968e4e167d11715c123e00d22c2
+source-git-commit: b369a17fabc55607fc6751e7909e1a1cb3cd4201
 workflow-type: tm+mt
 source-wordcount: '3227'
 ht-degree: 93%
@@ -538,7 +538,7 @@ O módulo de **sms nlserver** consulta o roteador SMS em intervalos regulares. I
 
 * **Unsubscription**: recipients que desejam parar de receber deliveries de SMS podem retornar uma mensagem contendo a palavra PARAR. Se o seu provedor permitir sob os termos do contrato, você poderá recuperar mensagens por meio da atividade de workflow de **SMS de entrada** e criar um query para habilitar a opção **Não entrar em contato com este recipient** para os recipients relacionados.
 
-   Consulte a guia [Workflows](../../workflow/using/executing-a-workflow.md#architecture) .
+   Consulte a guia [Workflows](../../workflow/using/architecture.md) .
 
 ## Schema InSMS {#insms-schema}
 
