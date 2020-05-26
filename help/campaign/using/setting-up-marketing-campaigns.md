@@ -14,8 +14,11 @@ discoiquuid: 8d076211-10a6-4a98-b0d2-29dad154158c
 index: y
 internal: n
 snippet: y
-translation-type: ht
-source-git-commit: eee744eb5bc7a43fd412ffb01f0546385146a978
+translation-type: tm+mt
+source-git-commit: b369a17fabc55607fc6751e7909e1a1cb3cd4201
+workflow-type: tm+mt
+source-wordcount: '1253'
+ht-degree: 100%
 
 ---
 
@@ -146,7 +149,7 @@ Você pode usar o assistente de criação de agendamento para preencher todas as
 
 ![](assets/s_ncs_user_op_template_recur_planning_wz.png)
 
-O modo de configuração do agendamento de execução coincide com o objeto **[!UICONTROL Scheduler]** do workflow. Para obter mais informações, consulte [esta seção](../../workflow/using/executing-a-workflow.md#architecture).
+O modo de configuração do agendamento de execução coincide com o objeto **[!UICONTROL Scheduler]** do workflow. Para obter mais informações, consulte [esta seção](../../workflow/using/architecture.md).
 
 >[!IMPORTANT]
 >
