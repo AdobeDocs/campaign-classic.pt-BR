@@ -14,8 +14,11 @@ discoiquuid: 8d076211-10a6-4a98-b0d2-29dad154158c
 index: y
 internal: n
 snippet: y
-translation-type: ht
-source-git-commit: eee744eb5bc7a43fd412ffb01f0546385146a978
+translation-type: tm+mt
+source-git-commit: b369a17fabc55607fc6751e7909e1a1cb3cd4201
+workflow-type: tm+mt
+source-wordcount: '2928'
+ht-degree: 100%
 
 ---
 
@@ -70,7 +73,7 @@ Você pode importar uma população para uma lista e depois direcionar essa list
 
 O alvo principal de um delivery também pode ser definido no workflow de definição de metas: esse ambiente gráfico permite criar um destino usando queries, testes e operadores: união, correção de duplicidade, compartilhamento etc.
 
-O guia [Automating with workflows](../../workflow/using/executing-a-workflow.md#architecture) inclui uma descrição detalhada de como o módulo de workflow opera.
+O guia [Automating with workflows](../../workflow/using/architecture.md) inclui uma descrição detalhada de como o módulo de workflow opera.
 
 >[!IMPORTANT]
 >
@@ -104,7 +107,7 @@ As funções de execução e formatação do workflow de direcionamento são ace
 
 >[!NOTE]
 >
->As atividades disponíveis para criar o diagrama e todos os recursos de exibição e layout estão detalhados no guia [Automating with workflows](../../workflow/using/executing-a-workflow.md#architecture).
+>As atividades disponíveis para criar o diagrama e todos os recursos de exibição e layout estão detalhados no guia [Automating with workflows](../../workflow/using/architecture.md).
 
 Você pode criar vários workflows para construção do target para uma única campanha. Para adicionar um workflow:
 
@@ -252,7 +255,7 @@ Clique em **[!UICONTROL Next]** para definir a ordem de classificação (se nece
 
 ![](assets/s_ncs_user_edit_op_target_param.png)
 
-Essa configuração é equivalente a uma atividade de compartilhamento no workflow, que permite dividir o target em subconjuntos. O grupo de controle é um desses subconjuntos. Consulte [esta seção](../../workflow/using/executing-a-workflow.md#architecture) para obter mais informações.
+Essa configuração é equivalente a uma atividade de compartilhamento no workflow, que permite dividir o target em subconjuntos. O grupo de controle é um desses subconjuntos. Consulte [esta seção](../../workflow/using/architecture.md) para obter mais informações.
 
 ### Adicionar uma população {#adding-a-population}
 
