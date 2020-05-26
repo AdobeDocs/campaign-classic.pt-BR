@@ -14,8 +14,11 @@ discoiquuid: 4c0530b1-0292-45bc-8730-668bc5b8550b
 index: y
 internal: n
 snippet: y
-translation-type: ht
-source-git-commit: c10a0a11c6e9952aa47da1f7a15188c79c62508d
+translation-type: tm+mt
+source-git-commit: 9e5a499d723d3e4126f533b6c7dd63073aff3d09
+workflow-type: tm+mt
+source-wordcount: '333'
+ht-degree: 96%
 
 ---
 
@@ -28,9 +31,9 @@ A atividade de **emails de entrada** permite baixar e processar mensagens de ema
 
 A primeira guia da atividade de **Emails de Entrada** permite inserir os parâmetros do servidor POP3 e digitar o script a ser executado no recebimento de cada mensagem. A segunda guia permite atribuir uma agenda à atividade e a terceira guia define as condições de expiração da atividade.
 
-1. **[!UICONTROL Emails de entrada]**
+1. **[!UICONTROL Inbound Emails]**
 
-   * **[!UICONTROL Usar uma conta externa]**
+   * **[!UICONTROL Use an external account]**
 
       Quando essa opção é ativada, você pode selecionar uma conta POP3 externa em vez de inserir os parâmetros de conexão. O campo **[!UICONTROL External account]** especifica a conta do POP3 externa a ser usada para se conectar ao serviço de email. Este campo só estará visível se a opção &#39;Usar uma conta externa&#39; estiver habilitada.
 
@@ -70,9 +73,9 @@ A primeira guia da atividade de **Emails de Entrada** permite inserir os parâme
    * 4 - Deixa a mensagem no servidor.
    O conteúdo da mensagem é acessível a partir da variável global **[!UICONTROL mailMessage]**.
 
-1. **[!UICONTROL Agendar]**
+1. **[!UICONTROL Schedule]**
 
-   Para definir uma agenda para a atividade, clique na guia **[!UICONTROL Scheduling]** e marque **[!UICONTROL Plan execution]**. Clique no botão **[!UICONTROL Change]** para configurar o cronograma.
+   To define a schedule for the activity, click the **[!UICONTROL Scheduling]** tab and check **[!UICONTROL Plan execution]**. Clique no botão **[!UICONTROL Change]** para configurar o cronograma.
 
    A configuração do cronograma é igual à atividade de agendamento. Consulte [Scheduler](../../workflow/using/scheduler.md).
 
@@ -82,5 +85,5 @@ A primeira guia da atividade de **Emails de Entrada** permite inserir os parâme
 
    ![](assets/email_rec_edit_3.png)
 
-   A configuração é igual à atividade de agendamento. Consulte [Expirações](../../workflow/using/executing-a-workflow.md#expirations).
+   A configuração é igual à atividade de agendamento. Consulte [Expirações](../../workflow/using/defining-approvals.md).
 
