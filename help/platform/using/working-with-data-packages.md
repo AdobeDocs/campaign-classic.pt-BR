@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 4ea5504bcfe306c5c5dc4b5fd685d898766d1685
+source-git-commit: 8089eb39e7326408f94b5fd6acacd8950c0e6021
 workflow-type: tm+mt
 source-wordcount: '2481'
 ht-degree: 60%
@@ -387,14 +387,20 @@ Start definindo diferentes tipos de pacotes. Serão usados apenas quatro tipos:
 
 Se precisar implantar sua configuração em uma nova instância, você poderá importar todos os pacotes de entidade.
 
-**Recursos** Este tipo de pacote:
+**Recursos**
+
+Este tipo de pacote:
 * Responde a um requisito/especificação do cliente.
 * Contém uma ou várias funcionalidades.
 * Deve conter todas as dependências para poder executar a funcionalidade sem qualquer outro pacote.
 
-**Campanha** Este pacote não é obrigatório. Às vezes, é útil criar um tipo específico para todas as campanhas, mesmo se uma campanha puder ser vista como um recurso.
+**Campanhas**
 
-**Atualizações** Depois de configurado, um recurso pode ser exportado para outro ambiente. Por exemplo, o pacote pode ser exportado de um ambiente dev para um ambiente de teste. Neste teste, um defeito é revelado. Primeiro, ele precisa ser consertado no ambiente dev. Em seguida, o sistema transdérmico deve ser aplicado na plataforma de teste.
+Este pacote não é obrigatório. Às vezes, é útil criar um tipo específico para todas as campanhas, mesmo se uma campanha puder ser vista como um recurso.
+
+**Atualizações**
+
+Depois de configurado, um recurso pode ser exportado para outro ambiente. Por exemplo, o pacote pode ser exportado de um ambiente dev para um ambiente de teste. Neste teste, um defeito é revelado. Primeiro, ele precisa ser consertado no ambiente dev. Em seguida, o sistema transdérmico deve ser aplicado na plataforma de teste.
 
 A primeira solução seria exportar todo o recurso novamente. Mas, para evitar qualquer risco (atualizar elementos indesejados), é mais seguro dispor de um pacote que contenha apenas a correção.
 
