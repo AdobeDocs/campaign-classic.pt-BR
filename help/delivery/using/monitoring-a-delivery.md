@@ -14,9 +14,9 @@ discoiquuid: 3aab3d47-76fd-4c68-add4-9c14240c936e
 index: y
 internal: n
 snippet: y
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: fcedad248169f53e716f2bd8b1b141fbf1f4d189
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2602'
 ht-degree: 100%
 
@@ -32,7 +32,7 @@ O **painel de delivery** é fundamental para monitorar seus deliveries e eventua
 * [Noções básicas sobre falhas de entrega](../../delivery/using/understanding-delivery-failures.md)
 * [Noções básicas sobre gestão de quarentena](../../delivery/using/understanding-quarantine-management.md)
 * [Práticas recomendadas para delivery](https://helpx.adobe.com/br/campaign/kb/delivery-best-practices.html)
-* [Gerenciamento da capacidade de delivery](../../delivery/using/about-deliverability.md)
+* [Gerenciamento da capacidade de entrega](../../delivery/using/about-deliverability.md)
 
 ## Painel de delivery {#delivery-dashboard}
 
