@@ -14,8 +14,11 @@ discoiquuid: 63245348-0402-4929-9c4f-71f01f97758e
 index: y
 internal: n
 snippet: y
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 7c117c549b02cf24b97dc1330e703b711ba14129
+workflow-type: ht
+source-wordcount: '2093'
+ht-degree: 100%
 
 ---
 
@@ -44,7 +47,7 @@ Siga o procedimento detalhado em [Criar um ambiente de oferta](../../interaction
 
 ### Criação de espaços de oferta anônimos {#creating-anonymous-offer-spaces}
 
-1. In your anonymous environment (**Visitors**) go to the **[!UICONTROL Administration]** > **[!UICONTROL Spaces]** node.
+1. No ambiente anônimo (**Visitors**), acesse o nó **[!UICONTROL Administration]** > **[!UICONTROL Spaces]**.
 1. Clique em **[!UICONTROL New]** para criar um canal de chamada.
 
    ![](assets/offer_inbound_anonymous_example_010.png)
@@ -53,7 +56,7 @@ Siga o procedimento detalhado em [Criar um ambiente de oferta](../../interaction
    >
    >O espaço é automaticamente vinculado ao ambiente anônimo.
 
-1. Change the label and select the **[!UICONTROL Inbound Web]** channel. You also have to check the **[!UICONTROL Enable unitary mode]** box.
+1. Altere o rótulo e selecione o canal **[!UICONTROL Inbound Web]**. Também é necessário marcar a caixa **[!UICONTROL Enable unitary mode]**.
 
    ![](assets/offer_inbound_anonymous_example_006.png)
 
@@ -89,7 +92,7 @@ Siga o procedimento detalhado em [Criar um ambiente de oferta](../../interaction
 ### Criação de uma categoria de oferta e um tema {#creating-an-offer-category-and-a-theme}
 
 1. Acesse o nó **[!UICONTROL Offer catalog]** no ambiente criado anteriormente.
-1. Clique com o botão direito do mouse no **[!UICONTROL Offer catalog]** nó e selecione **[!UICONTROL Create a new 'Offer category' folder]**.
+1. Clique com o botão direito do mouse no nó **[!UICONTROL Offer catalog]** e selecione **[!UICONTROL Create a new 'Offer category' folder]**.
 
    Nomeie a nova categoria, **Financial products** por exemplo.
 
@@ -112,7 +115,7 @@ Siga o procedimento detalhado em [Criar um ambiente de oferta](../../interaction
 
    ![](assets/offer_inbound_anonymous_example_015.png)
 
-1. Acesse a guia **[!UICONTROL Eligibility]** e especifique a espessura das ofertas de acordo com os contextos de aplicação.
+1. Acesse a guia **[!UICONTROL Eligibility]** e especifique o peso das ofertas de acordo com os contextos de aplicação.
 
    Neste exemplo, a oferta é configurada para ser exibida na home page do site como prioridade até o fim do ano.
 
@@ -130,7 +133,7 @@ Siga o procedimento detalhado em [Criar um ambiente de oferta](../../interaction
 
    ![](assets/offer_inbound_anonymous_example_018.png)
 
-1. Vá para a guia **[!UICONTROL Eligibility]** e aplique a mesma espessura da primeira oferta.
+1. Vá para a guia **[!UICONTROL Eligibility]** e aplique o mesmo peso da primeira oferta.
 1. Execute o ciclo de aprovação de cada oferta para criá-las, bem como seus espaços de ofertas aprovados, disponíveis no ambiente online.
 
 ### Configuração do o espaço de ofertas Web no site {#configure-the-web-offer-space-on-the-website}
@@ -213,7 +216,7 @@ Para criar o espaço de ofertas para corresponder à categoria **Melhor Oferta**
 
    ![](assets/offer_inbound_fallback_example_023.png)
 
-1. Create a new **[!UICONTROL Inbound web]** type space.
+1. Crie um novo espaço do tipo **[!UICONTROL Inbound web]**.
 
    ![](assets/offer_inbound_fallback_example_024.png)
 
@@ -251,7 +254,7 @@ Agora vamos criar duas ofertas em cada uma das categorias criadas acima.
 
    ![](assets/offer_inbound_fallback_example_029.png)
 
-1. Acesse a guia **[!UICONTROL Eligibility]** e especifique a espessura das ofertas de acordo com os contextos de aplicação.
+1. Acesse a guia **[!UICONTROL Eligibility]** e especifique o peso das ofertas de acordo com os contextos de aplicação.
 
    ![](assets/offer_inbound_fallback_example_030.png)
 
@@ -268,15 +271,15 @@ Agora vamos criar duas ofertas em cada uma das categorias criadas acima.
 
    ![](assets/offer_inbound_fallback_example_033.png)
 
-1. Acesse a guia **[!UICONTROL Eligibility]** e especifique a espessura das ofertas de acordo com os contextos de aplicação.
+1. Acesse a guia **[!UICONTROL Eligibility]** e especifique o peso das ofertas de acordo com os contextos de aplicação.
 
    ![](assets/offer_inbound_fallback_example_034.png)
 
-1. Crie uma segunda oferta para a categoria **Parceiro**.
+1. Crie uma segunda oferta para a categoria **Partner**.
 
    ![](assets/offer_inbound_fallback_example_035.png)
 
-1. Vá para a guia **[!UICONTROL Eligibility]** e aplique a mesma espessura aplicada à primeira oferta desta categoria para que as ofertas sejam exibidas sucessivamente no site.
+1. Vá para a guia **[!UICONTROL Eligibility]** e aplique o mesmo peso aplicado à primeira oferta desta categoria para que as ofertas sejam exibidas sucessivamente no site.
 
    ![](assets/offer_inbound_fallback_example_036.png)
 
@@ -293,7 +296,7 @@ Para criar os dois espaços de oferta, realize o mesmo procedimento dos espaços
 
    ![](assets/offer_inbound_fallback_example_005.png)
 
-1. Selecione a **[!UICONTROL Fall back on an anonymous environment if no individuals were identified]** opção.
+1. Selecione a opção **[!UICONTROL Fall back on an anonymous environment if no individuals were identified]**.
 
    ![](assets/offer_inbound_fallback_example_006.png)
 
@@ -310,15 +313,15 @@ Neste exemplo, a identificação de contato ocorre graças ao endereço de email
 
    ![](assets/offer_inbound_fallback_example_044.png)
 
-1. Na **[!UICONTROL Target identification]** guia, clique em **[!UICONTROL Add]**.
+1. Na guia **[!UICONTROL Target identification]**, clique em **[!UICONTROL Add]**.
 
    ![](assets/offer_inbound_fallback_example_046.png)
 
-1. Click **[!UICONTROL Edit expression]**, go to the recipients table and select the **[!UICONTROL Email]** field.
+1. Clique em **[!UICONTROL Edit expression]**, vá para a tabela de recipients e selecione o campo **[!UICONTROL Email]**.
 
    ![](assets/offer_inbound_fallback_example_047.png)
 
-1. Click **[!UICONTROL OK]** to close the **[!UICONTROL Advanced parameters]** window and finish configuring the **Best Offer** offer space.
+1. Clique em **[!UICONTROL OK]** para fechar a janela **[!UICONTROL Advanced parameters]** e finalizar a configuração do espaço de ofertas **Best Offer**.
 1. Siga o mesmo processo para o espaço de ofertas do **Parceiro**.
 
    ![](assets/offer_inbound_fallback_example_048.png)
@@ -327,7 +330,7 @@ Neste exemplo, a identificação de contato ocorre graças ao endereço de email
 
 Vamos criar duas categorias separadas: a categoria **Melhor Oferta** e a categoria **Parceiro**, cada uma com duas ofertas personalizadas.
 
-1. Go to the **[!UICONTROL Offer catalogs]** node in the identified environment.
+1. Vá para o nó **[!UICONTROL Offer catalogs]** no ambiente identificado.
 1. Como no ambiente anônimo, adicione duas pastas de **[!UICONTROL Offer category]** com **Best Offer** e **Partner** como rótulos.
 
    ![](assets/offer_inbound_fallback_example_009.png)
@@ -340,7 +343,7 @@ Queremos criar duas ofertas personalizadas para cada categoria, ou seja, quatro 
 
    ![](assets/offer_inbound_fallback_example_011.png)
 
-1. Acesse a guia **[!UICONTROL Eligibility]** e especifique a espessura das ofertas de acordo com os contextos de aplicação.
+1. Acesse a guia **[!UICONTROL Eligibility]** e especifique o peso das ofertas de acordo com os contextos de aplicação.
 
    ![](assets/offer_inbound_fallback_example_012.png)
 
@@ -356,15 +359,15 @@ Queremos criar duas ofertas personalizadas para cada categoria, ou seja, quatro 
 
    ![](assets/offer_inbound_fallback_example_015.png)
 
-1. Acesse a guia **[!UICONTROL Eligibility]** e especifique a espessura das ofertas de acordo com os contextos de aplicação.
+1. Acesse a guia **[!UICONTROL Eligibility]** e especifique o peso das ofertas de acordo com os contextos de aplicação.
 
    ![](assets/offer_inbound_fallback_example_016.png)
 
-1. Crie uma segunda oferta para a categoria **Parceiro**.
+1. Crie uma segunda oferta para a categoria **Partner**.
 
    ![](assets/offer_inbound_fallback_example_017.png)
 
-1. Vá para a guia **[!UICONTROL Eligibility]** e aplique a mesma espessura aplicada à primeira oferta desta categoria para que as ofertas sejam exibidas sucessivamente no site.
+1. Vá para a guia **[!UICONTROL Eligibility]** e aplique o mesmo peso aplicado à primeira oferta desta categoria para que as ofertas sejam exibidas sucessivamente no site.
 1. Execute o ciclo de aprovação para cada oferta para começar a atualizá-las. Durante a aprovação do conteúdo, ative os espaços de ofertas **Parceiro** ou **Melhor Oferta**.
 
 ### Configuração de espaços de ofertas na página da Web {#configuring-offer-spaces-on-the-web-page}
