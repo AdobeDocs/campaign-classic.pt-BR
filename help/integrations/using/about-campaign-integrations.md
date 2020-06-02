@@ -12,8 +12,11 @@ discoiquuid: 0af1fd96-48ef-43c9-a03b-0f9a6e0e02fe
 index: y
 internal: n
 snippet: y
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 0a4272ae13b469c7c17b8c3afa9748cbfbcf07ff
+workflow-type: ht
+source-wordcount: '835'
+ht-degree: 100%
 
 ---
 
@@ -22,9 +25,9 @@ source-git-commit: 0a4272ae13b469c7c17b8c3afa9748cbfbcf07ff
 
 A Adobe Experience Cloud é um conjunto abrangente das melhores soluções integradas, criadas em uma plataforma de dados comum com um conjunto comum de serviços principais avançados.
 
-Learn about functional integrations available between Adobe Campaign and [Adobe Experience Cloud solutions](https://docs.adobe.com/content/help/en/core-services/interface/marketing-cloud-integrations.html) and [core services](https://docs.adobe.com/content/help/en/core-services/interface/about-core-services/core-services.html). Em seguida, é possível modernizar as implementações da solução e implementar a Experience Cloud para que você possa usar recursos como atributos do cliente e audiências.
+Saiba mais sobre as integrações funcionais disponíveis entre o Adobe Campaign, as [soluções da Adobe Experience Cloud](https://docs.adobe.com/content/help/pt-BR/core-services/interface/marketing-cloud-integrations.html) e os [serviços principais](https://docs.adobe.com/content/help/pt-BR/core-services/interface/about-core-services/core-services.html). Em seguida, é possível modernizar as implementações da solução e implementar a Experience Cloud para que você possa usar recursos como atributos do cliente e públicos.
 
-The full list of Adobe solutions and core services which can be integrated with Adobe Campaign, as well as associated documentation, is available in [this section](#experience-cloud-integrations).
+A lista completa de soluções e serviços principais da Adobe que podem ser integrados ao Adobe Campaign, bem como a documentação associada, estão disponíveis [nesta seção](#experience-cloud-integrations).
 
 ![](assets/ExCloud-solutions.png)
 
@@ -45,7 +48,7 @@ A gestão de organização e a vinculação às contas da Adobe Experience Cloud
 >
 >Quando o Adobe Campaign é recém-instalado ou é integrado a uma instalação existente com a Adobe Experience Cloud, o [serviço da Experience Cloud ID](https://marketing.adobe.com/resources/help/pt_BR/mcvid/) está habilitado. Esse serviço substitui o cookie permanente usado primeiro e mais importante pelo Adobe Campaign para suas funcionalidades de rastreamento.
 >
->Uma ID de visitante exclusiva será atribuída aos recipients que geram logs de rastreamento. This ID will be saved in the **[!UICONTROL Requester UUID (@sourceID)]** field of the **[!UICONTROL nms:trackingLogRcp]** table. Os dados de rastreamento dos recipients existentes antes do serviço de ID de visitante foram implementados e, portanto, não serão mais utilizáveis.
+>Uma ID de visitante exclusiva será atribuída aos recipients que geram logs de rastreamento. Essa ID será salva no campo **[!UICONTROL Requester UUID (@sourceID)]** da tabela **[!UICONTROL nms:trackingLogRcp]**. Os dados de rastreamento dos recipients existentes antes do serviço de ID de visitante foram implementados e, portanto, não serão mais utilizáveis.
 >
 >A ID será reconhecida pelas outras soluções da Adobe Experience Cloud com o mesmo [CNAME](https://marketing.adobe.com/resources/help/pt_BR/mcvid/mcvid_cname.html).
 
