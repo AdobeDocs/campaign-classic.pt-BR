@@ -14,11 +14,11 @@ discoiquuid: 5ff1577f-0809-46fd-ac1e-11b24637e35c
 index: y
 internal: n
 snippet: y
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: e9923eb8cb78e7af05d64a122cd35b9cf3a4f215
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1661'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -72,7 +72,7 @@ As etapas a seguir detalham a configuração do Data Connector usando um assiste
 
 1. Na guia **[!UICONTROL Admin]**, selecione **[!UICONTROL Data Connectors]**.
 
-   É necessário ter as seguintes permissões de ferramentas do Analytics para acessar o menu **[!UICONTROL Data Connectors]**. Para obter mais informações, consulte esta [página](https://docs.adobe.com/content/help/br/analytics/admin/admin-console/permissions/analytics-tools.html)
+   É necessário ter as seguintes permissões de ferramentas do Analytics para acessar o menu **[!UICONTROL Data Connectors]**. Para obter mais informações, consulte esta [página](https://docs.adobe.com/content/help/pt-BR/analytics/admin/admin-console/permissions/analytics-tools.html)
    * Integrações (Criar)
    * Integrações (Atualizar)
    * Integrações (Excluir)
@@ -204,7 +204,7 @@ Eles estão disponíveis na árvore do Adobe Campaign, na pasta **[!UICONTROL Ad
 * **[!UICONTROL Recovering of web events]**: a cada hora, esse workflow baixa segmentos sobre o comportamento dos usuários em determinado site, os inclui no banco de dados do Adobe Campaign e inicia o workflow de re-marketing.
 * **[!UICONTROL Event purge]**: esse workflow permite que você exclua todos os eventos do banco de dados, dependendo do período configurado no campo **[!UICONTROL Lifespan]**. Para obter mais informações, consulte [Etapa 2: crie a conta externa no Campaign](#step-2--create-the-external-account-in-campaign).
 * **[!UICONTROL Identification of converted contacts]**: diretório dos visitantes que fizeram uma compra após uma campanha re-marketing. Os dados coletados por esse workflow podem ser acessados no relatório **[!UICONTROL Re-marketing efficiency]**, consulte esta [página](#creating-a-re-marketing-campaign).
-* **[!UICONTROL Sending of indicators and campaign attributes]**: permite que você envie indicadores de campanha por email para a Adobe Experience Cloud usando o Adobe Analytics - Conector de dados. Esse workflow é acionado às 4:00 AM todos os dias e pode levar 24 horas para que os dados sejam enviados ao Analytics.
+* **[!UICONTROL Sending of indicators and campaign attributes]**: permite enviar indicadores de campanha de email via Adobe Campaign para a Adobe Experience Cloud usando o Adobe Analytics - conector de dados. Esse workflow é acionado às 4:00 AM todos os dias e pode levar 24 horas para que os dados sejam enviados ao Analytics.
 
    Observe que esse workflow não deve ser reiniciado ou todos os dados anteriores podem distorcer os resultados do Analytics.
 
