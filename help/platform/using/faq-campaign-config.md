@@ -13,11 +13,11 @@ discoiquuid: 16dbe423-018f-4666-9901-2120a8dc609a
 index: y
 internal: n
 snippet: y
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 928c2d944bb9709b54a41b07e8828646f2601cb9
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '759'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -48,7 +48,7 @@ Como um usuário especialista, você pode configurar recursos de rastreamento em
 
 ## Como configurar a capacidade de entrega de e-mails? {#how-to-configure-email-deliverability-}
 
-Além da seção de configuração [de](../../delivery/using/about-deliverability.md#configuration) Disponibilidade, leia as recomendações técnicas de disponibilização para entender como configurar sua instância para maximizar os recursos de Campanha.
+Além da seção [Configuração da capacidade de entrega](../../delivery/using/about-deliverability.md#configuration), leia as recomendações técnicas de capacidade de entrega para entender como configurar sua instância para maximizar os recursos de entrega do Campaign.
 
 [Clique aqui para saber mais](../../delivery/using/technical-recommendations.md).
 
