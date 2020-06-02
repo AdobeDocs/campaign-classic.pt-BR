@@ -16,7 +16,7 @@ translation-type: tm+mt
 source-git-commit: 5d8959dc790c0cf0e6ea62122310bfbee5bcc0dd
 workflow-type: tm+mt
 source-wordcount: '6477'
-ht-degree: 95%
+ht-degree: 96%
 
 ---
 
@@ -52,9 +52,9 @@ A seção que descreve o modelo de dados integrado do Adobe Campaign foi atualiz
 
 Os casos de utilização do fluxo de trabalho foram atualizados e reorganizados em seções temáticas. [Leia mais](../../workflow/using/using-the-local-approval-activity.md)
 
-As seções Qualificações [de e-mail de](../../delivery/using/understanding-delivery-failures.md#bounce-mail-qualification) rejeição e Regras [de gerenciamento de e-](../../delivery/using/understanding-delivery-failures.md#email-management-rules) mail foram aprimoradas com informações atualizadas.
+As seções [Qualificações de email de rejeição](../../delivery/using/understanding-delivery-failures.md#bounce-mail-qualification) e [Regras de gerenciamento de email](../../delivery/using/understanding-delivery-failures.md#email-management-rules) foram aprimoradas com informações atualizadas.
 
-O artigo Adobe Campaign Enhanced MTA foi atualizado. Agora só se aplica ao Campaign Classic. [Leia mais](https://helpx.adobe.com/campaign/kb/acc-campaign-enhanced-mta.html)
+O artigo MTA aprimorado do Adobe Campaign foi atualizado. Ele agora só se aplica ao Campaign Classic. [Leia mais](https://helpx.adobe.com/campaign/kb/acc-campaign-enhanced-mta.html)
 
 ## Março de 2020 {#march-2020}
 
@@ -250,7 +250,7 @@ Uma seção foi adicionada descrevendo as etapas de desinstalação do servidor 
 
 Os guias de introdução de [segurança](https://helpx.adobe.com/br/campaign/kb/acc-security.html), [delivery](https://docs.adobe.com/content/help/pt-BR/campaign-classic/using/sending-messages/deliverability-management/about-deliverability.html) e [privacidade](https://helpx.adobe.com/br/campaign/kb/acc-privacy.html) foram atualizados.
 
-A descrição da opção de fluxo de trabalho de pré-processo foi atualizada para refletir as alterações no produto. [Leia mais](https://docs.campaign.adobe.com/doc/AC/br/WKF_Repository_of_activities_Action_activities.html#Data_loading__file_)
+A descrição da opção de fluxo de trabalho de pré-processo foi atualizada para refletir as alterações no produto. [Leia mais](https://docs.campaign.adobe.com/doc/AC/en/WKF_Repository_of_activities_Action_activities.html#Data_loading__file_)
 
 A nota técnica Experience Cloud Triggers foi atualizada. [Leia mais](https://helpx.adobe.com/br/campaign/kb/triggers-and-campaign.html)
 
@@ -295,7 +295,7 @@ Atualização da documentação sobre a integração de públicos-alvo compartil
 
 As seguintes notas técnicas foram atualizadas: [SMS connector protocol and settings](https://helpx.adobe.com/br/campaign/kb/sms-connector-protocol-and-settings.html) e [Sequence auto generation](https://helpx.adobe.com/br/campaign/kb/sequence_auto_generation.html#Switchtoadedicatedsequence).
 
-A seção Technical workflows foi atualizada. [Leia mais](https://docs.campaign.adobe.com/doc/AC/br/WKF_Technical_workflows_About_technical_workflows.html)
+A seção Technical workflows foi atualizada. [Leia mais](https://docs.campaign.adobe.com/doc/AC/en/WKF_Technical_workflows_About_technical_workflows.html)
 
 O procedimento de Configuração do nome de domínio do Campaign foi aprimorado e atualizado. [Leia mais](https://helpx.adobe.com/br/campaign/kb/domain-name-delegation.html)
 
@@ -359,7 +359,7 @@ A matriz de Compatibilidade foi atualizada. [Leia mais](https://helpx.adobe.com/
 
 A página &quot;Deprecated and Removed Features in Campaign Classic&quot; foi atualizada. [Leia mais](https://helpx.adobe.com/br/campaign/kb/deprecated-and-removed-features.html)
 
-Nas [notas de versão](https://docs.campaign.adobe.com/doc/AC/br/RN.html) e [notas de versão legadas](https://docs.campaign.adobe.com/doc/AC/en/RN_legacy.html), foi adicionado um aviso para builds que tiveram recall. Também foram adicionadas as builds acumuladas para 17.9, 18.4 e 18.6.
+Nas [notas de versão](https://docs.adobe.com/content/help/pt-BR/campaign-classic/using/release-notes/latest-release.html) e [notas de versão legadas](https://docs.campaign.adobe.com/doc/AC/en/RN_legacy.html), foi adicionado um aviso para builds que tiveram recall. Também foram adicionadas as builds acumuladas para 17.9, 18.4 e 18.6.
 
 Os guias de introdução de [segurança](https://helpx.adobe.com/br/campaign/kb/acc-security.html), [entregabilidade](https://docs.adobe.com/content/help/pt-BR/campaign-classic/using/sending-messages/deliverability-management/about-deliverability.html) e [atualização de build](https://helpx.adobe.com/br/campaign/kb/acc-build-upgrade.html) foram atualizados.
 
@@ -373,7 +373,7 @@ Uma seção foi adicionada sobre como configurar uma conexão proxy. [Leia mais]
 
 Atualização da seção sobre a restrição de comandos externos autorizados. [Leia mais](https://docs.campaign.adobe.com/doc/AC/en/INS_Additional_configurations_Configuring_Campaign_server.html#Restricting_authorized_external_commands)
 
-Foi adicionada uma seção de solução de problemas relacionada ao uso do SFTP. [Leia mais](https://docs.campaign.adobe.com/doc/AC/br/PTF_Importing_and_exporting_data_SFTP_server_usage.html)
+Foi adicionada uma seção de solução de problemas relacionada ao uso do SFTP. [Leia mais](https://docs.campaign.adobe.com/doc/AC/en/PTF_Importing_and_exporting_data_SFTP_server_usage.html)
 
 A seção de visão geral do guia de envio de mensagens foi reorganizada. Foram adicionadas informações sobre o processo global de criação de delivery e os diferentes tipos de delivery. [Leia mais](https://docs.campaign.adobe.com/doc/AC/en/DLV_About_deliveries_and_channels_Communication_channels.html)
 
@@ -407,7 +407,7 @@ Atualização do guia de integração Compartilhamento de públicos-alvo com a A
 
 A página de ajuda Common question agora contém informações sobre os idiomas disponíveis do Campaign, a tradução de formulários online e emails multilíngues. [Leia mais](../../platform/using/common-questions.md)
 
-A diferença entre as instâncias de inglês dos EUA e inglês do Reino Unido agora está listada em uma seção dedicada. [Leia mais](https://docs.campaign.adobe.com/doc/AC/br/PTF_Starting_with_Adobe_Campaign_Adobe_Campaign_workspace.html#Formats_and_units)
+A diferença entre as instâncias de inglês dos EUA e inglês do Reino Unido agora está listada em uma seção dedicada. [Leia mais](https://docs.campaign.adobe.com/doc/AC/en/PTF_Starting_with_Adobe_Campaign_Adobe_Campaign_workspace.html#Formats_and_units)
 
 A página de ajuda [Common questions](../../platform/using/common-questions.md) agora vincula à página de mensagens de erro.
 
@@ -495,7 +495,7 @@ Aprimoramento do conector de push do Android - [Leia mais](https://docs.campaign
 
 **Outras atualizações de documentação que vêm com a versão**
 
-As notas de versão foram aprimoradas para uma melhor experiência do usuário e agora incluem todas as correções relacionadas às solicitações do cliente.  [Leia mais](https://docs.campaign.adobe.com/doc/AC/br/RN.html)
+As notas de versão foram aprimoradas para uma melhor experiência do usuário e agora incluem todas as correções relacionadas às solicitações do cliente.  [Leia mais](https://docs.adobe.com/content/help/pt-BR/campaign-classic/using/release-notes/latest-release.html)
 
 Uma nova página foi adicionada com as perguntas mais comuns sobre o Campaign Classic. [Leia mais](../../platform/using/common-questions.md)
 
