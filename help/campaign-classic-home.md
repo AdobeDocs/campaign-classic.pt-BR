@@ -8,7 +8,7 @@ translation-type: tm+mt
 source-git-commit: be148d7cd55097b9014d2f4d3b095c65a5ca8c54
 workflow-type: tm+mt
 source-wordcount: '261'
-ht-degree: 81%
+ht-degree: 90%
 
 ---
 
@@ -21,7 +21,8 @@ ht-degree: 81%
 
 * **[Obtenha as Perguntas frequentes sobre suporte](https://helpx.adobe.com/brcampaign/kb/ac-support.html)**<br/> Acesso, práticas recomendadas, recursos de ajuda e solicite ajuda
 
-* **[Conformidade com privacidade](https://helpx.adobe.com/br/campaign/kb/campaign-privacy.html)**<br/> Saiba como o Adobe Campaign pode ajudá-lo com sua conformidade com a privacidade
+* **[Conformidade com a privacidade](https://helpx.adobe.com/br/campaign/kb/campaign-privacy.html)**<br/>
+Saiba como o Adobe Campaign pode ajudar você a estar em conformidade com a privacidade
 
 * **[Rastreamento de recursos](https://helpx.adobe.com/br/campaign/kb/acc-tracking.html)**<br/> Entender recursos e processos de rastreamento na Campanha
 
@@ -79,10 +80,10 @@ ht-degree: 81%
 
 | Páginas úteis | Recursos para desenvolvedores |
 |---|---|
-| [Notas de versão](/help/rn/using/latest-release.md) | [Lista de mensagens de erro](https://docs.adobe.com/content/help/br/campaign-classic/technicalresources/error_messages/error_codes.html) |
+| [Notas de versão](/help/rn/using/latest-release.md) | [Lista de mensagens de erro](https://docs.adobe.com/content/help/en/campaign-classic/technicalresources/error_messages/error_codes.html) |
 | [Vídeos explicativos](https://docs.adobe.com/content/help/en/campaign-learn/campaign-classic-tutorials/overview.html) | [Modelo de dados do Campaign](configuration/using/about-data-model.md) |
-| [Matriz de compatibilidade](https://helpx.adobe.com/br/campaign/kb/compatibility-matrix.html) | [JSAPI de Campanha](https://docs.adobe.com/content/help/br/campaign-classic/technicalresources/api/p-1.html) |
+| [Matriz de compatibilidade](https://helpx.adobe.com/br/campaign/kb/compatibility-matrix.html) | [JSAPI do Campaign](https://docs.adobe.com/content/help/en/campaign-classic/technicalresources/api/p-1.html) |
 | [Introdução ao Campaign](platform/using/about-adobe-campaign-classic.md) | [Guia de implementação](https://helpx.adobe.com/br/campaign/kb/acc-implementation.html) |
 | [Atualização do Gold Standard ](https://helpx.adobe.com/br/campaign/kb/gold-standard.html) | [Guia de rastreamento](https://helpx.adobe.com/br/campaign/kb/acc-tracking.html) |
 | [Recursos obsoletos](https://helpx.adobe.com/br/campaign/kb/deprecated-and-removed-features.html) | [Lista de verificação de segurança e privacidade](https://helpx.adobe.com/br/campaign/kb/acc-security.html) |
-| [Painel de controle da Campanha](https://docs.adobe.com/content/help/br/control-panel/using/control-panel-home.translate.html) | [Monitoramento das práticas recomendadas](https://helpx.adobe.com/br/campaign/kb/acc-maintenance.html) |
+| [Painel de controle do Campaign](https://docs.adobe.com/content/help/pt-BR/control-panel/using/control-panel-home.translate.html) | [Monitoramento de práticas recomendadas](https://helpx.adobe.com/br/campaign/kb/acc-maintenance.html) |
