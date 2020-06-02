@@ -14,11 +14,11 @@ discoiquuid: 78b58a7a-b387-4d5d-80d5-01c06f83d759
 index: y
 internal: n
 snippet: y
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 15581517df8d2f397285bbadebd83b7f4539dfd7
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2434'
-ht-degree: 91%
+ht-degree: 100%
 
 ---
 
@@ -241,7 +241,7 @@ Os emails de devolução podem ter o seguinte status de qualificação:
 
 * **[!UICONTROL To qualify]**: o email de devolução não pôde ser qualificado. A qualificação deve ser atribuída à equipe de Deliverability para garantir uma plataforma eficiente de deliverability. Contanto que não seja qualificado, o email de devolução não é usado para enriquecer a lista de regras de gestão de email.
 * **[!UICONTROL Keep]**: o email de devolução foi qualificado e será usado pelo workflow **Refresh for deliverability** para ser comparado às regras de gerenciamento de email existentes e enriquecer a lista.
-* **[!UICONTROL Ignore]** : o e-mail de rejeição é ignorado pela MTA da Campanha, o que significa que essa rejeição nunca fará com que o endereço do recipient seja colocado em quarentena. Ele não será usado pelo fluxo de trabalho **Atualizar para entrega** e não será enviado para instâncias do cliente.
+* **[!UICONTROL Ignore]**: o e-mail de rejeição é ignorado pelo MTA do Campaign, o que significa que essa rejeição nunca fará com que o endereço do destinatário seja colocado em quarentena. Ele não será usado pelo workflow **Atualizar para entrega** e não será enviado para instâncias do cliente.
 
 ![](assets/deliverability_qualif_status.png)
 
@@ -258,7 +258,7 @@ Os emails de devolução podem ter o seguinte status de qualificação:
 * Para instâncias que usam o MTA aprimorado sem **Webhooks/EFS**, as regras **[!UICONTROL Inbound email]** também serão usadas para processar os emails de rejeição síncronos provenientes do MTA aprimorado, usando o mesmo endereço de email para emails de rejeição assíncronos.
 >
 >
-For more on the Adobe Campaign Enhanced MTA, refer to [this document](https://helpx.adobe.com/campaign/kb/acc-campaign-enhanced-mta.html).
+Para obter mais informações sobre o MTA aprimorado do Adobe Campaign, consulte [este documento](https://helpx.adobe.com/campaign/kb/acc-campaign-enhanced-mta.html).
 
 ### Regras de gestão de email {#email-management-rules}
 
@@ -280,9 +280,9 @@ As regras padrão são as seguintes.
 
 #### Email de entrada {#inbound-email}
 
-Essas regras contêm a lista de cadeias de caracteres que podem ser retornadas por servidores remotos e que permitem que você qualifique o erro (**Grave**, **Suave** ou **Ignorado**).
+Essas regras contêm a lista de cadeias de caracteres que podem ser retornadas por servidores remotos e que permitem que você qualifique o erro (**Grave**, **Leve** ou **Ignorado**).
 
-Quando um email falha, o servidor remoto retorna uma mensagem de devolução ao endereço especificado nos parâmetros da plataforma. Adobe Campaign compares the content of each bounce mail to the strings in the list of rules, and then assigns it one of the three [error types](#delivery-failure-types-and-reasons).
+Quando um email falha, o servidor remoto retorna uma mensagem de devolução ao endereço especificado nos parâmetros da plataforma. O Adobe Campaign compara o conteúdo de cada email de rejeição nas cadeias de caracteres da lista de regras e o atribui a um dos três [tipos de erro](#delivery-failure-types-and-reasons).
 
 >[!NOTE]
 >
@@ -292,18 +292,18 @@ Para obter mais informações sobre qualificação de envio de emails, consulte 
 
 >[!IMPORTANT]
 >
->For hosted or hybrid installations, if you have upgraded to the Enhanced MTA, and if your instance has **Webhooks/EFS** functionality, the **[!UICONTROL Inbound email]** rules are no longer used for synchronous delivery failure error messages. Para obter mais informações, consulte [esta seção](#bounce-mail-qualification).
+>Para instalações hospedadas ou híbridas, se você tiver atualizado para o MTA aprimorado e se a instância tiver a funcionalidade **Webhooks/EFS**, as regras **[!UICONTROL Inbound email]** não serão mais usadas para mensagens de erro de falha síncrona do delivery. Para obter mais informações, consulte [esta seção](#bounce-mail-qualification).
 >
->For more on the Adobe Campaign Enhanced MTA, refer to [this document](https://helpx.adobe.com/campaign/kb/acc-campaign-enhanced-mta.html).
+>Para obter mais informações sobre o MTA aprimorado do Adobe Campaign, consulte [este documento](https://helpx.adobe.com/campaign/kb/acc-campaign-enhanced-mta.html).
 
 #### Gestão de domínio {#domain-management}
 
-O servidor de mensagens de Adobe Campaign aplica uma única regra de gerenciamento **de** Domínio a todos os domínios.
+O servidor de mensagens de Adobe Campaign aplica uma única regra de **gerenciamento de domínio** a todos os domínios.
 
 <!--![](assets/tech_quarant_domain_rules_02.png)-->
 
-* Você pode escolher se ativa ou não determinados padrões de identificação e chaves de criptografia para verificar o nome do domínio, como **ID fo remetente**, **DomainKeys**, **DKIM**, e **S/MIME**.
-* The **SMTP relay** parameters let you configure the IP address and the port of a relay server for a particular domain. Para obter mais informações, consulte [esta seção](../../installation/using/configuring-campaign-server.md#smtp-relay).
+* Você pode escolher se ativa ou não determinados padrões de identificação e chaves de criptografia para verificar o nome do domínio, como **ID do remetente**, **DomainKeys**, **DKIM**, e **S/MIME**.
+* Os parâmetros de **retransmissão SMTP** permitem configurar o endereço IP e a porta de um servidor de retransmissão para um determinado domínio. Para obter mais informações, consulte [esta seção](../../installation/using/configuring-campaign-server.md#smtp-relay).
 
 Se suas mensagens forem exibidas no Outlook com **[!UICONTROL on behalf of]** no endereço do remetente, verifique se não está assinando seus emails com a **ID  do remetente**, que é o padrão de autenticação de email proprietário desatualizado da Microsoft. Se a opção **[!UICONTROL Sender ID]** estiver ativada, desmarque a caixa correspondente e entre em contato com o suporte do Adobe Campaign. Sua capacidade de entrega não será afetada.
 
@@ -311,7 +311,7 @@ Se suas mensagens forem exibidas no Outlook com **[!UICONTROL on behalf of]** no
 >
 >Para instalações hospedadas ou híbridas, se você atualizou para o MTA aprimorado, as regras **[!UICONTROL Domain management]** não serão mais usadas. A assinatura de autenticação de email **DKIM (DomainKeys Identified Mail)** é feita pelo MTA aprimorado para todas as mensagens com todos os domínios. Ele não faz logon com a **ID do remetente**, **DomainKeys** ou **S/MIME**, a menos que especificado de outra forma no nível MTA aprimorado.
 >
->For more on the Adobe Campaign Enhanced MTA, refer to [this document](https://helpx.adobe.com/campaign/kb/acc-campaign-enhanced-mta.html).
+>Para obter mais informações sobre o MTA aprimorado do Adobe Campaign, consulte [este documento](https://helpx.adobe.com/campaign/kb/acc-campaign-enhanced-mta.html).
 
 #### Gestão MX {#mx-management}
 
@@ -327,4 +327,4 @@ Para obter mais informações sobre gestão MX, consulte [esta seção](../../in
 >
 >Para instalações hospedadas ou híbridas, se você atualizou para o MTA aprimorado, as regras de capacidade do delivery **[!UICONTROL MX management]** não serão mais usadas. O MTA aprimorado usa regras MX próprias que permitem personalizar a capacidade por domínio com base na sua própria reputação histórica de email e no feedback em tempo real proveniente dos domínios em que você está enviando emails.
 >
->For more on the Adobe Campaign Enhanced MTA, refer to [this document](https://helpx.adobe.com/campaign/kb/acc-campaign-enhanced-mta.html).
+>Para obter mais informações sobre o MTA aprimorado do Adobe Campaign, consulte [este documento](https://helpx.adobe.com/campaign/kb/acc-campaign-enhanced-mta.html).
