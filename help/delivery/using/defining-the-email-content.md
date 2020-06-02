@@ -12,11 +12,11 @@ discoiquuid: 2ea2747f-957f-41a9-a03f-20c03fa99116
 index: y
 internal: n
 snippet: y
-translation-type: ht
-source-git-commit: fcedad248169f53e716f2bd8b1b141fbf1f4d189
-workflow-type: ht
-source-wordcount: '2800'
-ht-degree: 100%
+translation-type: tm+mt
+source-git-commit: cedcd9150c374116f187da7fd9e76bf81e978e2a
+workflow-type: tm+mt
+source-wordcount: '2798'
+ht-degree: 99%
 
 ---
 
@@ -180,17 +180,21 @@ O assistente do delivery permite adicionar imagens locais ou armazenadas na bibl
 
 ![](assets/s_ncs_user_image_from_library.png)
 
-Para que os recipients possam exibir as imagens incluídas nas mensagens recebidas, essas mensagens devem estar disponíveis em um servidor acessível externamente.
+>[!IMPORTANT]
+>
+>Para que os recipients possam exibir as imagens incluídas nas mensagens recebidas, essas mensagens devem estar disponíveis em um servidor acessível externamente.
 
-Para gerenciar imagens no assistente do delivery, clique no ícone **[!UICONTROL Tracking & Images]** na barra de ferramentas.
+Para gerenciar imagens por meio do assistente do delivery:
 
-![](assets/s_ncs_user_email_del_img_param.png)
+1. Click the **[!UICONTROL Tracking & Images]** icon in the toolbar.
+   ![](assets/s_ncs_user_email_del_img_param.png)
 
-Selecione **[!UICONTROL Upload images]** na guia **[!UICONTROL Images]**. Você pode escolher se deseja incluir as imagens na mensagem de email.
+1. Selecione **[!UICONTROL Upload images]** na guia **[!UICONTROL Images]**.
+1. Você pode escolher se deseja incluir as imagens na mensagem de email.
 
 ![](assets/s_ncs_user_email_del_img_upload.png)
 
-* Você pode carregar imagens manualmente sem esperar a fase de análise de delivery. Para fazer isso, clique em **[!UICONTROL Upload images now]**.
+* Você pode carregar imagens manualmente sem esperar a fase de análise de delivery. Para fazer isso, clique em **[!UICONTROL Upload the images straightaway...]**.
 * Você pode especificar outro caminho para acessar as imagens no servidor de rastreamento. Para fazer isso, insira-o no campo **[!UICONTROL Image URL]**. Esse valor substitui o valor definido nos parâmetros do assistente de instalação.
 
 Quando você abre conteúdo HTML com imagens incluídas no assistente do delivery, aparece uma mensagem com a opção de carregar as imagens imediatamente, de acordo com os parâmetros do delivery.
@@ -201,7 +205,7 @@ Quando você abre conteúdo HTML com imagens incluídas no assistente do deliver
 >
 >Os caminhos de acesso à imagem são modificados durante o carregamento manual ou ao enviar as mensagens.
 
-**Exemplo: envio de uma mensagem com imagens{#example--sending-a-message-with-images}**
+### Exemplo: envio de uma mensagem com imagens {#example--sending-a-message-with-images}
 
 Veja a seguir um exemplo de delivery com quatro imagens:
 
