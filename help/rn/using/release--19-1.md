@@ -14,8 +14,11 @@ discoiquuid: 5df34f55-135a-4ea8-afc2-f9427ce5ae7b
 index: y
 internal: n
 snippet: y
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 4b42a4bb0a95b2a46187c996d069846a8c3941bf
+workflow-type: ht
+source-wordcount: '2690'
+ht-degree: 100%
 
 ---
 
@@ -41,7 +44,7 @@ source-git-commit: 4b42a4bb0a95b2a46187c996d069846a8c3941bf
  </tbody> 
 </table>
 
-A **última compilação** estável é 9032 (3a9dc9c). Click [here](../../rn/using/release--19-1.md#release-19-1-4-build-9032)
+A **última build estável** é a 9032 (3a9dc9c). Clique [aqui](../../rn/using/release--19-1.md#release-19-1-4-build-9032)
 
 ## ![](assets/do-not-localize/orange_2.png) Versão 19.1.6 - Build 9035 {#release-19-1-6-build-9035}
 
@@ -74,41 +77,41 @@ _13 de agosto de 2019_
 
 ## Versão 19.1.4 - Build 9032{#release-19-1-4-build-9032}
 
-![](assets/do-not-localize/green_2.png) 29 **de abril de 2020**: nova compilação (9032@3a9dc9c) que inclui as seguintes correções:
+![](assets/do-not-localize/green_2.png) **29 de abril de 2020**: nova build (9032@3a9dc9c) que inclui as seguintes correções:
 
-* Segurança aprimorada no rastreamento de links no email. Isso é ativado por padrão para todos os clientes. Um recurso de segurança adicional e aprimorado está disponível, que pode ser ativado ao acessar o Atendimento ao cliente. Mais detalhes sobre o recurso e as etapas para clientes não hospedados que o habilitam podem ser encontrados na lista [de verificação](https://helpx.adobe.com/campaign/kb/acc-security.html#signature-mechanism)Segurança e Privacidade.
-* Correção de um problema que impedia a exibição de imagens em delivery de linha. (NEO-23207)
-* Correção de um problema com a atividade **File Transfer** , que impedia que a autenticação baseada na chave SFTP funcionasse no Debian 9. (NEO-23183)
-* Correção de um problema que poderia afetar a notificação por push quando enviada em alta frequência. (NEO-20516)
-* Correção de um problema no gerenciamento de respostas de oferta que resultava em falhas no servidor da Web. (NEO-19482)
-* Correção de um erro no gerenciamento do LibreOffice que impedia a exportação de relatórios. (NEO-20982)
-* Correção de um problema que causava um erro ao atualizar vários workflows usando uma atividade de pesquisa.
-* Gerenciamento do LibreOffice aprimorado para evitar falhas na pré-visualização de email com arquivos .odt.
-* Gerenciamento da conexão do Apache aprimorado para evitar latência no serviço da Web.
-* Aprimorada a exibição da tag da versão (7 dígitos) no menu **Sobre** .
-* Corrigida uma regressão no gerenciamento de listas que impedia a publicação de ofertas.
-* Correção de uma regressão que resultava em falha do fluxo de trabalho de limpeza.
-* Corrigida uma regressão secundária nos logs de fluxo de trabalho de limpeza.
+* A segurança no rastreamento de links no email foi aprimorada. Ela é ativada por padrão para todos os clientes. Um recurso de segurança adicional e aprimorado está disponível e pode ser ativado ao acessar o Atendimento ao cliente. Mais detalhes sobre o recurso e as etapas para clientes não hospedados para habilitá-lo podem ser encontrados na [lista de verificação de Segurança e Privacidade](https://helpx.adobe.com/br/campaign/kb/acc-security.html#signature-mechanism).
+* Correção de um problema que impedia a exibição de imagens na entrega de linha. (NEO-23207)
+* Correção de um problema com a atividade **Transferência de Arquivo**, que impedia que a autenticação com a chave SFTP funcionasse no Debian 9. (NEO-23183)
+* Correção de um problema que poderia afetar a notificação via push quando enviada em alta frequência. (NEO-20516)
+* Correção de um problema no gerenciamento de respostas de oferta que resulta em falhas no servidor da Web. (NEO-19482)
+* Correção de um erro no gerenciamento do LibreOffice que impede a exportação de relatórios. (NEO-20982)
+* Correção de um problema que causa um erro ao atualizar vários workflows por meio do uso de uma atividade de pesquisa.
+* Melhora do gerenciamento do LibreOffice para evitar falhas na pré-visualização de email com arquivos .odt.
+* Melhora no gerenciamento da conexão do Apache para evitar latência no serviço da Web.
+* Melhora na exibição da tag da versão (7 dígitos) no menu **Sobre**.
+* Correção de uma prevenção no gerenciamento de listas que impede a publicação de ofertas.
+* Correção de uma regressão que resulta em falha do workflow de limpeza.
+* Correção de uma regressão menor nos logs de workflow de limpeza.
 
-![](assets/do-not-localize/orange_2.png) 5 **de março de 2020**: nova compilação (9032@19f73c5) que inclui a seguinte correção:
+![](assets/do-not-localize/orange_2.png) **05 de março de 2020**: nova build (9032@19f73c5) que inclui a seguinte correção:
 
-* Correção de um problema com o conta externa usando FTP sobre SSL. (NEO-20498)
+* Correção de um problema com a conta externa que usa o FTP sobre SSL. (NEO-20498)
 
-![](assets/do-not-localize/orange_2.png) 17 **de dezembro de 2019**: nova compilação (9032@d6b8062) que inclui a seguinte correção:
+![](assets/do-not-localize/orange_2.png) **17 de dezembro de 2019**: nova build (9032@d6b8062) que inclui a seguinte correção:
 
 * Correção de um problema de rastreamento nos seguintes canais de comunicação: dispositivos móveis (SMS, MMS), push (iOS, Android) e redes sociais (Facebook, Twitter). (NEO-19595)
 
-![](assets/do-not-localize/orange_2.png) 11 **de dezembro de 2019**: nova compilação (9032@bc4a935) que inclui a seguinte correção:
+![](assets/do-not-localize/orange_2.png) **11 de dezembro de 2019**: nova build (9032@bc4a935) que inclui a seguinte correção:
 
 * Correção de um problema de desempenho ao enviar mensagens com um banco de dados MSSQL. (NEO-17558)
 
-![](assets/do-not-localize/orange_2.png) 20 **de novembro de 2019**: nova compilação (9032@3468c7b) que inclui as seguintes correções:
+![](assets/do-not-localize/orange_2.png) **20 de novembro de 2019**: nova build (9032@3468c7b) que inclui as seguintes correções:
 
 * Correção de um problema de logon por autenticação IMS. (NEO-17312)
 * Correção de um problema ao exibir relatórios cumulativos em várias entregas. (NEO-18165)
 * Correção de um problema que poderia bloquear ou fazer o servidor web travar.
 
-![](assets/do-not-localize/orange_2.png) 19 **de setembro de 2019**: nova compilação (9032@cee805c) que inclui as seguintes correções:
+![](assets/do-not-localize/orange_2.png) **19 de setembro de 2019**: nova build (9032@cee805c) que inclui as seguintes correções:
 
 * Correção de um problema ao usar o Conector CRM para Salesforce. (NEO-17712)
 * Correção de um problema de índice que causava problemas de desempenho ao enviar mensagens transacionais.
@@ -179,7 +182,7 @@ _30 de maio de 2019_
 
 **Aprimoramentos de segurança**
 
-* For security reasons, you can no longer insert arbitrary commands when using the **[!UICONTROL Pre-process the file]** option in a **[!UICONTROL Data loading (file)]** workflow activity. A drop-down list is now available allowing you to select from 3 options: **[!UICONTROL None]**, **[!UICONTROL Decompression]** (zcat) or **[!UICONTROL Decrypt]** (gpg). O sinalizador de segurança XtkSecurity_Disable_Preproc foi adicionado. Para novos clientes, essa opção será definida como 0. Para clientes existentes, essa opção será definida como 1 pelo postupgrade para manter o comportamento anterior. Consulte esta [seção](../../workflow/using/data-loading--file-.md).
+* Por motivos de segurança, não é mais possível inserir comandos arbitrários ao usar a opção **[!UICONTROL Pre-process the file]** em uma atividade de workflow **[!UICONTROL Data loading (file)]**. Uma lista suspensa está disponível e permite selecionar entre 3 opções: **[!UICONTROL None]**, **[!UICONTROL Decompression]** (zcat) ou **[!UICONTROL Decrypt]** (gpg). O sinalizador de segurança XtkSecurity_Disable_Preproc foi adicionado. Para novos clientes, essa opção será definida como 0. Para clientes existentes, essa opção será definida como 1 pelo postupgrade para manter o comportamento anterior. Consulte esta [seção](../../workflow/using/data-loading--file-.md).
 * Correção de um problema de visibilidade de senha que ocorria ao testar a conexão de uma conta externa FDA sem fuso horário definido.
 * A biblioteca PDFBox foi removida.
 * O Tomcat foi atualizado para a versão 7.0.93.
