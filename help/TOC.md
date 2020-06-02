@@ -8,7 +8,7 @@ translation-type: tm+mt
 source-git-commit: b369a17fabc55607fc6751e7909e1a1cb3cd4201
 workflow-type: tm+mt
 source-wordcount: '2090'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -159,7 +159,7 @@ ht-degree: 96%
       + [Renderização da caixa de entrada](delivery/using/inbox-rendering.md)
       + [SpamAssassin](delivery/using/spamassassin.md)
       + [Práticas recomendadas de reengajamento](delivery/using/re-engagement-best-practices.md)
-      + [Bancos de dados da blacklist](delivery/using/blacklisting-databases.md)
+      + [Bancos de dados da lista negra](delivery/using/blacklisting-databases.md)
       + [Solução de problemas](delivery/using/deliverability-faq.md)
    + Módulo de gestão de conteúdo {#content-management}
       + [Sobre a gestão de conteúdo](delivery/using/about-content-management.md)
@@ -290,34 +290,34 @@ ht-degree: 96%
 + Integração com a Adobe Experience Cloud {#integrating-with-adobe-experience-cloud}
    + [Sobre integrações do Campaign](integrations/using/about-campaign-integrations.md)
    + Compartilhamento de público {#audience-sharing}
-      + [Compartilhamento de audiências com [!DNL Adobe Experience Cloud]](integrations/using/sharing-audiences-with-adobe-experience-cloud.md)
+      + [Compartilhamento de públicos com o [!DNL Adobe Experience Cloud]](integrations/using/sharing-audiences-with-adobe-experience-cloud.md)
       + [Envio de solicitação à Adobe](integrations/using/submitting-request-to-adobe.md)
-      + [Configuração da integração compartilhada com audiência em [!DNL Adobe Campaign]](integrations/using/configuring-shared-audiences-integration-in-adobe-campaign.md)
+      + [Configuração da integração de públicos compartilhados no [!DNL Adobe Campaign]](integrations/using/configuring-shared-audiences-integration-in-adobe-campaign.md)
       + [Solução de problemas](integrations/using/troubleshooting.md)
       + [Importação e exportação de públicos](integrations/using/importing-and-exporting-audiences.md)
    + Compartilhamento de ativos {#asset-sharing}
-      + [Compartilhamento de ativos com [!DNL Adobe Experience Cloud]](integrations/using/sharing-assets-with-adobe-experience-cloud.md)
-      + [Configurando o acesso ao [!DNL Assets]](integrations/using/configuring-access-to-assets.md)
+      + [Compartilhamento de ativos com o [!DNL Adobe Experience Cloud]](integrations/using/sharing-assets-with-adobe-experience-cloud.md)
+      + [Configuração do acesso ao [!DNL Assets]](integrations/using/configuring-access-to-assets.md)
       + [Inserção de um ativo compartilhado](integrations/using/inserting-a-shared-asset.md)
    + Adobe Experience Manager {#adobe-experience-manager}
       + [Sobre o [!DNL Adobe Experience Manager]](integrations/using/about-adobe-experience-manager.md)
       + [Configuração da integração](integrations/using/configuring-the-integration.md)
-      + [Criando um boletim informativo [!DNL Experience Manager]](integrations/using/creating-an-experience-manager-newsletter.md)
+      + [Criação de boletim informativo no [!DNL Experience Manager]](integrations/using/creating-an-experience-manager-newsletter.md)
    + Adobe Target {#adobe-target}
-      + [Integração com o [!DNL Adobe Público alvo]](integrations/using/integrating-with-adobe-target.md)
-      + [Configurando a integração com o [!DNL Adobe Público alvo]](integrations/using/configuring-the-integration-with-adobe-target.md)
+      + [Integração com o [!DNL Adobe Target]](integrations/using/integrating-with-adobe-target.md)
+      + [Configuração da integração com o [!DNL Adobe Target]](integrations/using/configuring-the-integration-with-adobe-target.md)
       + [Inserção de uma imagem dinâmica](integrations/using/inserting-a-dynamic-image.md)
    + Conexão via Adobe ID {#connecting-via-an-adobe-id}
-      + [Sobre [!DNL Adobe ID]](integrations/using/about-adobe-id.md)
-      + [Configurando [!DNL IMS]](integrations/using/configuring-ims.md)
-      + [Implementando [!DNL IMS]](integrations/using/implementing-ims.md)
+      + [ Sobre o [!DNL Adobe ID]](integrations/using/about-adobe-id.md)
+      + [Configuração do [!DNL IMS]](integrations/using/configuring-ims.md)
+      + [Implementação do [!DNL IMS]](integrations/using/implementing-ims.md)
       + [Solução de problemas com o IMS](integrations/using/ims-troubleshooting.md)
    + ACS Connector {#acs-connector}
-      + [Princípios e ciclo de dados do [!DNL ACS Connector]](integrations/using/acs-connector-principles-and-data-cycle.md)
+      + [Princípios do [!DNL ACS Connector] e ciclo de dados](integrations/using/acs-connector-principles-and-data-cycle.md)
       + [Sincronia de perfis](integrations/using/synchronizing-profiles.md)
       + [Sincronia de público](integrations/using/synchronizing-audiences.md)
       + [Sincronização de aplicações Web](integrations/using/synchronizing-web-applications.md)
-      + [Solução de problemas do conector ACS [!DNL]](integrations/using/troubleshooting-the-acs-connector.md)
+      + [Solução de problemas no [!DNL ACS Connector]](integrations/using/troubleshooting-the-acs-connector.md)
 + Automatização com Workflows {#automating-with-workflows}
    + Introdução {#introduction}
       + [Sobre workflows](workflow/using/about-workflows.md)
@@ -402,11 +402,11 @@ ht-degree: 96%
          + [Carregamento de conteúdo de delivery](workflow/using/loading-delivery-content.md)
          + [Workflow de delivery entre canais](workflow/using/cross-channel-delivery-workflow.md)
          + [Enriquecimento de e-mail com campos de data personalizados](workflow/using/email-enrichment-with-custom-date-fields.md)
-      + Monitoring {#monitoring}
+      + Monitoramento de {#monitoring}
          + [Envio de um relatório a uma lista](workflow/using/sending-a-report-to-a-list.md)
          + [Supervisão de worflows](workflow/using/supervising-workflows.md)
          + [Envio de alertas personalizados para operadores](workflow/using/sending-personalized-alerts-to-operators.md)
-      + Data management {#data-management}
+      + gerenciamento de dados {#data-management}
          + [Coordenação das atualizações de dados](workflow/using/coordinating-data-updates.md)
          + [Criação da lista de resumo](workflow/using/creating-a-summary-list.md)
          + [Enriquecimento de dados](workflow/using/enriching-data.md)
