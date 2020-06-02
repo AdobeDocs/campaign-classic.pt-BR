@@ -14,8 +14,11 @@ discoiquuid: 9fe22450-057c-44b4-ab73-4027a2ddb20c
 index: y
 internal: n
 snippet: y
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: ad4a40053b25bbf8de81e074e135ef4944f0b427
+workflow-type: ht
+source-wordcount: '287'
+ht-degree: 100%
 
 ---
 
@@ -38,6 +41,6 @@ Para se familiarizar com o recurso de interação e terminologias usadas na Inte
 
 | Páginas úteis | Recursos adicionais |
 |---|---|
-| [Etapas de implementação da interação](../../interaction/using/implementation-steps.md) | [Teste da distribuição da oferta](../../interaction/using/about-offers-simulation.md) |
+| [Etapas de implementação da interação](../../interaction/using/implementation-steps.md) | [Teste de distribuição da oferta](../../interaction/using/about-offers-simulation.md) |
 | [Ambientes Live/Design](../../interaction/using/live-design-environments.md) | [Adicionar uma oferta em um email](../../interaction/using/integrating-an-offer-via-the-wizard.md) |
 | [Criação de espaços de oferta](../../interaction/using/creating-offer-spaces.md) | [Caso de uso: adicionar uma oferta em um site](../../interaction/using/offers-on-an-inbound-channel.md) |
