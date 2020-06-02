@@ -12,11 +12,11 @@ discoiquuid: 5df34f55-135a-4ea8-afc2-f9427ce5ae7b
 index: y
 internal: n
 snippet: y
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: e329ee546a3990850daeb7a46ee9de77fd075ff1
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1411'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -42,13 +42,13 @@ ht-degree: 98%
  </tbody> 
 </table>
 
-A **última compilação** estável é 9032 (3a9dc9c). Clique [aqui](../../rn/using/release--19-1.md#release-19-1-4-build-9032)
+A **última build estável** é a 9032 (3a9dc9c). Clique [aqui](../../rn/using/release--19-1.md#release-19-1-4-build-9032)
 
 ## ![](assets/do-not-localize/blue_2.png) Versão 20.1.3 - Build 9124 {#release-20-1-3-build-9124}
 
-_6 de mai de 2020_
+_6 de maio de 2020_
 
-* Correção de um problema com a atividade **File Transfer** , que impedia que a autenticação baseada na chave SFTP funcionasse no Debian 9. (NEO-23183)
+* Correção de um problema com a atividade **Transferência de Arquivo**, que impedia que a autenticação com a chave SFTP funcionasse no Debian 9. (NEO-23183)
 
 ## ![](assets/do-not-localize/orange_2.png) Versão 20.1.2 - Build 9123 {#release-20-1-2-build-9123}
 
@@ -71,7 +71,7 @@ _17 de fevereiro de 2020_
  <tbody> 
   <tr> 
    <td> <p>O Snowflake é um data warehouse de nuvem totalmente gerenciado, criado para dimensionar tanto no nível de armazenamento quanto no nível de computação. Com esse novo conector, o Adobe Campaign agora pode aproveitar o potencial do Snowflake para executar a Segmentação de Big Data. Esse conector está disponível para todos os clientes, inclusive hospedado pela Adobe.</p>
-    <p>Para obter mais informações, consulte a <a href="../../platform/using/specific-configuration-database.md#configure-access-to-snowflake">documentação detalhada</a> e o <a href="https://docs.adobe.com/content/help/br/campaign-learn/campaign-classic-tutorials/administrating/fda/big-data-segmentation-on-snowflake.html">vídeo tutorial</a>.</p>
+    <p>Para obter mais informações, consulte a <a href="../../platform/using/specific-configuration-database.md#configure-access-to-snowflake">documentação detalhada</a> e o <a href="https://docs.adobe.com/content/help/en/campaign-learn/campaign-classic-tutorials/administrating/fda/big-data-segmentation-on-snowflake.html">vídeo tutorial</a>.</p>
    </td> 
   </tr> 
  </tbody> 
