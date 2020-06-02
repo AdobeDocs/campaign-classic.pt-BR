@@ -14,8 +14,11 @@ discoiquuid: 5df34f55-135a-4ea8-afc2-f9427ce5ae7b
 index: y
 internal: n
 snippet: y
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: eab67029d477044bc853f2a5c2de06ace70ebbee
+workflow-type: ht
+source-wordcount: '1373'
+ht-degree: 100%
 
 ---
 
@@ -41,16 +44,16 @@ source-git-commit: eab67029d477044bc853f2a5c2de06ace70ebbee
  </tbody> 
 </table>
 
-A **última compilação** estável é 9032 (3a9dc9c). Click [here](../../rn/using/release--19-1.md#release-19-1-4-build-9032)
+A **última build estável** é a 9032 (3a9dc9c). Clique [aqui](../../rn/using/release--19-1.md#release-19-1-4-build-9032)
 
 ## ![](assets/do-not-localize/orange_2.png) Versão 19.2.3 - Build 9081 {#release-19-2-3-build-9081}
 
-_07 de fevereiro de 2020_
+_7 de fevereiro de 2020_
 
 **Aprimoramentos**
 
 * Correção de um problema de regressão devido à implementação da certificação SSL que causava a falha da conexão do usuário no servidor Windows. (NEO-20629)
-* Correção de um problema que exibia um número de tag de versão incorreto no menu **Sobre** .
+* Correção de um problema que exibia um número de tag de versão incorreto no menu **About**.
 
 ## ![](assets/do-not-localize/orange_2.png) Versão 19.2 - Build 9080 {#release-19-2-build-9080}
 
