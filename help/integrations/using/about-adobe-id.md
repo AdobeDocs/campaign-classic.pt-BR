@@ -14,8 +14,11 @@ discoiquuid: c988362b-432e-4f9f-8d36-00b3d0015756
 index: y
 internal: n
 snippet: y
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 0a4272ae13b469c7c17b8c3afa9748cbfbcf07ff
+workflow-type: ht
+source-wordcount: '152'
+ht-degree: 100%
 
 ---
 
@@ -29,7 +32,7 @@ Usuários do Campaign pode se conectar ao Adobe Campaign usando sua Adobe ID. Es
 * Política de gerenciamento da segurança de senhas.
 * Uso de contas de Federated ID (provedor de ID externo).
 
-O sistema de gerenciamento de identidade da Adobe ajuda os administradores a criar e gerenciar o acesso do usuário aos aplicativos e serviços. Para obter mais informações sobre os diferentes tipos de Adobe IDs, consulte [esta página](https://helpx.adobe.com/enterprise/using/identity.html).
+O sistema de gerenciamento de identidade da Adobe ajuda os administradores a criar e gerenciar o acesso do usuário aos aplicativos e serviços. Para obter mais informações sobre tipos diferentes de IDs do Adobe, consulte [esta página](https://helpx.adobe.com/br/enterprise/using/identity.html).
 
 >[!CAUTION]
 >
@@ -39,7 +42,7 @@ O sistema de gerenciamento de identidade da Adobe ajuda os administradores a cri
 
 | Páginas úteis | Recursos adicionais |
 |---|---|
-| [Configuração de IMS](../../integrations/using/configuring-ims.md) | [Perguntas frequentes da Experience Cloud](https://docs.adobe.com/content/help/en/core-services/interface/manage-users-and-products/faq.html) |
+| [Configuração de IMS](../../integrations/using/configuring-ims.md) | [Perguntas frequentes sobre a Experience Cloud](https://docs.adobe.com/content/help/pt-BR/core-services/interface/manage-users-and-products/faq.html) |
 | [Implementação de IMS](../../integrations/using/implementing-ims.md) | [Gerenciamento de acesso](../../platform/using/access-management.md) |
-| [Solução de problemas de IMS](../../integrations/using/ims-troubleshooting.md) | [Instalação de pacotes de Campanha](../../installation/using/installing-campaign-standard-packages.md) |
+| [Solução de problemas com o IMS](../../integrations/using/ims-troubleshooting.md) | [Instalação de pacotes do Campaign](../../installation/using/installing-campaign-standard-packages.md) |
 
