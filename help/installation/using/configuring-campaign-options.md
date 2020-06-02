@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: a976144d70b113d1358b0514a3e805d79e11484a
+source-git-commit: 5b6b4fd2b21f90a88744736b499eab1b0764774e
 workflow-type: tm+mt
 source-wordcount: '3740'
 ht-degree: 4%
@@ -60,6 +60,13 @@ Alguns deles são incorporados ao instalar a Campanha e outros podem ser adicion
    <td> Lista de schemas para os quais você deseja usar endereços de teste para Renderização da Caixa de entrada. (os nomes dos elementos são separados por vírgulas) Por exemplo: custom_nms_recipient.<br /> </td> 
   </tr> 
   <tr> 
+   <td> <span class="uicontrol">NMS_AtivateOwnerConfirmation</span> <br /> </td> 
+   <td><p> Permite que o operador responsável pelo delivery confirme o envio, se um operador ou grupo de operadores específico for designado para iniciar um delivery nas propriedades do delivery.</p><p> Para fazer isso, ative a opção digitando "1" como valor. Para desativar essa opção, digite "0".</p><p> O processo de confirmação de delivery funcionará como padrão: somente o operador ou grupo de operadores designado ao delivery nas propriedades de delivery (ou um administrador) poderá confirmar e realizar o delivery. Consulte <a href="../../campaign/using/marketing-campaign-deliveries.md#starting-an-online-delivery">esta seção</a>.</p> </td> 
+   <tr> 
+   <td> <span class="uicontrol">Nms_DefaultRcpSchema</span> <br /> </td> 
+   <td> O Adobe Campaign usa uma variável global "Nms_DefaultRcpSchema" para dialogar com o banco de dados do recipient padrão (nms:recipient).<br /> O valor da opção deve corresponder ao nome do schema que corresponde à tabela do recipient externo.<br /> </td> 
+  </tr> 
+  <tr> 
    <td> <span class="uicontrol">NmsBilling_MainActionThreshold</span> <br /> </td> 
    <td> Número mínimo de recipient para que um delivery seja considerado o principal no relatório de cobrança.<br /> </td> 
   </tr> 
@@ -94,10 +101,6 @@ Alguns deles são incorporados ao instalar a Campanha e outros podem ser adicion
   <tr> 
    <td> <span class="uicontrol">NmsBroadcast_RemoveDuplicatesRecipients</span> <br /> </td> 
    <td> Digitar "1" como valor permite ignorar automaticamente duplos.<br /> </td> 
-  </tr> 
-  <tr> 
-   <td> <span class="uicontrol">Nms_DefaultRcpSchema</span> <br /> </td> 
-   <td> O Adobe Campaign usa uma variável global "Nms_DefaultRcpSchema" para dialogar com o banco de dados do recipient padrão (nms:recipient).<br /> O valor da opção deve corresponder ao nome do schema que corresponde à tabela do recipient externo.<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">NmsDelivery_ErrorAddressMask</span> <br /> </td> 
@@ -164,6 +167,10 @@ Alguns deles são incorporados ao instalar a Campanha e outros podem ser adicion
    <td> Lista de endereços de email de encaminhamento autorizados (do módulo de processamento de email de entrada). Os endereços devem ser separados por vírgulas (ou * para permitir tudo). Por exemplo, xyz@abc.com,pqr@abc.com.<br /> </td> 
   </tr> 
   <tr> 
+   <td> <span class="uicontrol">NmsLine_AESKey</span> <br /> </td> 
+   <td> Chave AES usada no servlet 'lineImage' para codificar os URLs (canal LINE).<br /> </td> 
+  </tr> 
+  <tr> 
    <td> <span class="uicontrol">NmsNPAI_EmailMaxError</span> <br /> </td> 
    <td> No canal "email" (use como padrão): Número máximo de erros aceitos para erros SOFT durante o envio antes de colocar o recipient em quarentena.<br /> </td> 
   </tr> 
@@ -180,9 +187,21 @@ Alguns deles são incorporados ao instalar a Campanha e outros podem ser adicion
    <td> No canal "mobile" : Período mínimo a ser gasto desde o erro SOFT referenciado anteriormente, antes de levar em conta um novo erro SOFT.<br /> </td> 
   </tr> 
   <tr> 
-   <td> <span class="uicontrol">NmsServer_MirrorPageUrl</span> <br /> </td> 
-   <td> O URL do servidor de mirrores page (por padrão, deve ser idêntico a NmsTracking_ServerUrl).<br /> É o valor padrão de delivery de email quando o URL não é especificado na definição do roteamento.<br /> </td> 
+   <td> <span class="uicontrol">NmsMidSourcing_LogsPeriodHour</span> <br /> </td>
+   <td> Permite especificar um período máximo (expresso em horas) para limitar o número de logs recuperados sempre que o fluxo de trabalho de sincronização for executado.</a>.<br /> </td> 
   </tr> 
+  <tr> 
+   <td> <span class="uicontrol">NmsMidSourcing_PrepareFlow</span> <br /> </td> 
+   <td> Número máximo de chamadas na sessão MidSourcing, que pode ser executada em paralelo (3 por padrão).<br /> </td> 
+  </tr> 
+  <tr> 
+   <td> <span class="uicontrol">NmsMTA_Alert_Delay</span> <br /> </td> 
+   <td> Atraso personalizado (em minutos) após o qual um delivery é considerado como "atrasado", o padrão é 30 minutos.<br /> </td> 
+  </tr> 
+  <tr> 
+   <td> <span class="uicontrol">NmsOperation_DeliveryProcessingWindow</span> <br /> </td> 
+   <td><p>Essa opção é usada pelo fluxo de trabalho técnico <span class="uicontrol"><a href="../../workflow/using/campaign.md">operation</a></span> ao contar o número de delivery em execução.</p>Permite definir o número de dias acima dos quais os delivery com status inconsistente serão excluídos da contagem de delivery em execução.</p><p>Por padrão, o valor é definido como "7", o que significa que delivery inconsistentes com mais de 7 dias serão excluídos.</p></td> 
+  </tr>
   <tr> 
    <td> <span class="uicontrol">NmsPaper_SenderLine1</span> <br /> </td> 
    <td> Linha 1 do endereço do remetente.<br /> </td> 
@@ -203,10 +222,10 @@ Alguns deles são incorporados ao instalar a Campanha e outros podem ser adicion
    <td> <span class="uicontrol">NmsPaper_SenderLine7</span> <br /> </td> 
    <td> Linha 7 do endereço do remetente.<br /> </td> 
   </tr>
-    <tr> 
-   <td> <span class="uicontrol">NmsOperation_DeliveryProcessingWindow</span> <br /> </td> 
-   <td><p>Essa opção é usada pelo fluxo de trabalho técnico <span class="uicontrol"><a href="../../workflow/using/campaign.md">operation</a></span> ao contar o número de delivery em execução.</p>Permite definir o número de dias acima dos quais os delivery com status inconsistente serão excluídos da contagem de delivery em execução.</p><p>Por padrão, o valor é definido como "7", o que significa que delivery inconsistentes com mais de 7 dias serão excluídos.</p></td> 
-  </tr>
+  <tr> 
+   <td> <span class="uicontrol">NmsServer_MirrorPageUrl</span> <br /> </td> 
+   <td> O URL do servidor de mirrores page (por padrão, deve ser idêntico a NmsTracking_ServerUrl).<br /> É o valor padrão de delivery de email quando o URL não é especificado na definição do roteamento.<br /> </td> 
+  </tr> 
   <tr> 
    <td> <span class="uicontrol">NmsSMS_Priority</span> <br /> </td> 
    <td> Parâmetros das mensagens SMS enviadas: informações transmitidas ao gateway SMS para indicar a prioridade da mensagem.<br /> </td> 
@@ -220,51 +239,33 @@ Alguns deles são incorporados ao instalar a Campanha e outros podem ser adicion
    <td> Período durante o qual serão efetuadas tentativas de mensagens SMS.<br /> </td> 
   </tr> 
   <tr> 
-   <td> <span class="uicontrol">XtkEmail_Characters</span> <br /> </td> 
-   <td> Caracteres válidos para um endereço de email.<br /> </td> 
-  </tr> 
-  <tr> 
-   <td> <span class="uicontrol">NmsMidSourcing_LogsPeriodHour</span> <br /> </td>
-   <td> Permite especificar um período máximo (expresso em horas) para limitar o número de logs recuperados sempre que o fluxo de trabalho de sincronização for executado.</a>.<br /> </td> 
-  </tr> 
-  <tr> 
-   <td> <span class="uicontrol">NmsMidSourcing_PrepareFlow</span> <br /> </td> 
-   <td> Número máximo de chamadas na sessão MidSourcing, que pode ser executada em paralelo (3 por padrão).<br /> </td> 
-  </tr> 
-  <tr> 
-   <td> <span class="uicontrol">NMS_AtivateOwnerConfirmation</span> <br /> </td> 
-   <td><p> Permite que o operador responsável pelo delivery confirme o envio, se um operador ou grupo de operadores específico for designado para iniciar um delivery nas propriedades do delivery.</p><p> Para fazer isso, ative a opção digitando "1" como valor. Para desativar essa opção, digite "0".</p><p> O processo de confirmação de delivery funcionará como padrão: somente o operador ou grupo de operadores designado ao delivery nas propriedades de delivery (ou um administrador) poderá confirmar e realizar o delivery. Consulte <a href="../../campaign/using/marketing-campaign-deliveries.md#starting-an-online-delivery">esta seção</a>.</p> </td> 
-  </tr> 
-  <tr> 
-   <td> <span class="uicontrol">NmsMTA_Alert_Delay</span> <br /> </td> 
-   <td> Atraso personalizado (em minutos) após o qual um delivery é considerado como "atrasado", o padrão é 30 minutos.<br /> </td> 
-  </tr> 
-  <tr> 
-   <td> <span class="uicontrol">XtkBarcode_SpecialChar</span> <br /> </td> 
-   <td> Habilitar/Desabilitar suporte para caracteres especiais do Code128.<br /> </td> 
-  </tr> 
-  <tr> 
-   <td> <span class="uicontrol">NmsLine_AESKey</span> <br /> </td> 
-   <td> Chave AES usada no servlet 'lineImage' para codificar os URLs (canal LINE).<br /> </td> 
+   <td> <span class="uicontrol">NmsUserAgentStats_LastConsolidation</span> <br /> </td> 
+   <td> Data da última consolidação para estatísticas <span class="uicontrol">NmsUserAgent</span> .<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">NmsWebSegments_LastStates</span> <br /> </td> 
    <td> Nome da opção que contém os segmentos da Web e seus estados.<br /> </td> 
   </tr> 
   <tr> 
-   <td> <span class="uicontrol">NmsUserAgentStats_LastConsolidation</span> <br /> </td> 
-   <td> Data da última consolidação para estatísticas <span class="uicontrol">NmsUserAgent</span> .<br /> </td> 
+   <td> <span class="uicontrol">XtkBarcode_SpecialChar</span> <br /> </td> 
+   <td> Ative/desative o suporte para caracteres especiais do Code128.<br /> </td> 
+  </tr> 
+  <tr> 
+   <td> <span class="uicontrol">XtkEmail_Characters</span> <br /> </td> 
+   <td> Caracteres válidos para um endereço de email.<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">XtkSecurity_Restrict_EditXML</span> </td> 
    <td> Adicione essa opção com o valor "0" para desativar a edição do código XML dos delivery (clique com o botão direito do mouse / <span class="uicontrol">Editar fonte</span> XML ou atalho <span class="uicontrol">CTRL + F4</span> ).<br /> </td> 
-  </tr> 
-  <!--<tr> 
+  </tr>  
+ </tbody> 
+</table>
+
+<!--<tr> 
    <td> <span class="uicontrol">EMTA_BCC_ADDRESS</span> </td> 
    <td> BCC email address for Momentum to send a raw copy of the sent emails. <br /> </td> 
-  </tr> 
- </tbody> 
-</table>-->
+  </tr>
+-->
 
 ## Recursos {#resources}
 
@@ -675,7 +676,7 @@ Alguns deles são incorporados ao instalar a Campanha e outros podem ser adicion
     <ul> 
      <li> <p> <span class="uicontrol">Tipo de dados:</span> Número inteiro</p> </li> 
      <li> <p> <span class="uicontrol">Valor (texto)</span> : 1 </p> </li> 
-    </ul> Essa opção só deve ser usada se a árvore de navegação predefinida tiver sofrido muitas alterações.<br /><a href="../../migration/using/specific-configurations-in-v5-11.md#campaign-vseven-tree-structure"> Para obter mais informações, consulte esta seção</a>.<br /> </td> 
+    </ul> Essa opção só deve ser usada se a árvore de navegação predefinida tiver sofrido muitas alterações.<br /> Para obter mais informações, consulte <a href="../../migration/using/specific-configurations-in-v5-11.md#campaign-vseven-tree-structure">esta seção</a>.<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">NmsLastErrorStatCoalesce</span> <br /> </td> 
