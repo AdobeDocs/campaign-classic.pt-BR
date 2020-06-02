@@ -14,11 +14,11 @@ discoiquuid: 9cae3861-88eb-447a-aa23-9d1de0710eec
 index: y
 internal: n
 snippet: y
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 3522f4f50770dde220610cd5f1c4084292d8f1f5
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '446'
-ht-degree: 91%
+ht-degree: 100%
 
 ---
 
@@ -64,10 +64,10 @@ O rastreamento de mensagens é habilitado por padrão. Para personalizar como UR
    Para cada URL individual, é possível definir o modo de rastreamento para um destes valores:
 
    * **[!UICONTROL Enabled]**: ativa o rastreamento nesse URL.
-   * **[!UICONTROL Not tracked]** : desativa o rastreamento neste URL.
-   * **[!UICONTROL Always enabled]** : sempre ativa o rastreamento desse URL. Essas informações são salvas para que na próxima vez, se o URL aparecer novamente em um conteúdo de mensagem futura, o rastreamento será ativado automaticamente.
-   * **[!UICONTROL Never tracked]** : nunca ativa o rastreamento deste URL. Essas informações são salvas para que na próxima vez, se o URL aparecer novamente em um conteúdo de mensagem futura, o rastreamento será ativado automaticamente.
+   * **[!UICONTROL Not tracked]**: desativa o rastreamento nesse URL.
+   * **[!UICONTROL Always enabled]**: sempre ativa o rastreamento desse URL. Essas informações são salvas para que na próxima vez, se o URL aparecer novamente em um conteúdo de mensagem futura, o rastreamento será ativado automaticamente.
+   * **[!UICONTROL Never tracked]**: nunca ativa o rastreamento desse URL. Essas informações são salvas para que na próxima vez, se o URL aparecer novamente em um uma mensagem futura, o rastreamento será desativado automaticamente.
    * **[!UICONTROL Opt-out]**: considera esse URL como recusa ou cancelamento de subscrição.
-   * **[!UICONTROL Mirror page]** : considera que este URL é um URL de mirror page.
+   * **[!UICONTROL Mirror page]**: considera esse URL como sendo de mirror page.
 
-1. Além disso, é possível selecionar uma categoria para cada URL rastreado na lista suspensa da coluna **[!UICONTROL Category]**. These categories can be displayed reports, as for example in **[!UICONTROL URLs and click streams]** (see [this section](../../reporting/using/reports-on-deliveries.md#urls-and-click-streams)). As categorias são definidas em uma lista discriminada específica: **[!UICONTROL urlCategory]** (consulte [Gerenciamento de listas discriminadas](../../platform/using/managing-enumerations.md)).
+1. Além disso, é possível selecionar uma categoria para cada URL rastreado na lista suspensa da coluna **[!UICONTROL Category]**. Essas categorias podem ser relatórios, como em **[!UICONTROL URLs and click streams]** (consulte [esta seção](../../reporting/using/reports-on-deliveries.md#urls-and-click-streams)). As categorias são definidas em uma lista discriminada específica: **[!UICONTROL urlCategory]** (consulte [Gerenciamento de listas discriminadas](../../platform/using/managing-enumerations.md)).
