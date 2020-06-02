@@ -14,8 +14,11 @@ discoiquuid: df29492f-ed73-4ab8-b075-e76b3b9ebce3
 index: y
 internal: n
 snippet: y
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 631e29bd6e59b8ae46084dee3a1d470916a2032b
+workflow-type: ht
+source-wordcount: '1526'
+ht-degree: 100%
 
 ---
 
@@ -24,13 +27,13 @@ source-git-commit: 631e29bd6e59b8ae46084dee3a1d470916a2032b
 
 >[!NOTE]
 >
->Somente o proprietário do delivery pode iniciar um delivery. In order for another operator (or operator group) to be able to start a delivery, you have to add them as reviewers in the **[!UICONTROL Delivery start:]** field.
+>Somente o proprietário do delivery pode iniciar um delivery. Para que outro operador (ou grupo de operadores) possa iniciar um delivery, é necessário adicioná-los como revisores no campo **[!UICONTROL Delivery start:]**.
 >
 >Consulte [esta página](../../campaign/using/marketing-campaign-approval.md#selecting-reviewers) para obter mais informações.
 
 ## Parâmetros adicionais do delivery {#delivery-additiona-parameters}
 
-Antes de enviar o , você poderá definir os parâmetros de envio nas propriedades de delivery, por meio da guia **[!UICONTROL Delivery]** Delivery.
+Antes de enviar o delivery, você poderá definir os parâmetros de envio nas propriedades de delivery, por meio da guia **[!UICONTROL Delivery]** Delivery.
 
 ![](assets/s_ncs_user_wizard_delivery.png)
 
@@ -42,9 +45,9 @@ Antes de enviar o , você poderá definir os parâmetros de envio nas propriedad
    >
    >Quando o delivery é duplicado, o parâmetro é redefinido.
 
-* **[!UICONTROL Send using multiple waves]**: Para obter mais informações, consulte [Envio usando várias ondas](#sending-using-multiple-waves).
+* **[!UICONTROL Send using multiple waves]**: para obter mais informações, consulte [Enviar usando várias ondas](#sending-using-multiple-waves).
 
-* **[!UICONTROL Test SMTP delivery]**: Essa opção permite testar o envio de um delivery via SMTP. O delivery é processado para conexão com o servidor SMTP, mas não é enviado.
+* **[!UICONTROL Test SMTP delivery]**: essa opção permite testar o envio de um delivery via SMTP. O delivery é processado para conexão com o servidor SMTP, mas não é enviado.
 
    >[!NOTE]
    >
@@ -58,7 +61,7 @@ Depois que o delivery estiver configurado e pronto para ser enviado, certifique-
 
 ![](assets/s_ncs_user_email_del_send.png)
 
-Você poderá fechar o assistente do e controlar a execução do delivery a partir da guia **[!UICONTROL Delivery]** Delivery, acessível por meio do detalhe deste delivery ou pela lista de deliveries.
+Você poderá fechar o assistente do delivery e controlar a execução do delivery a partir da guia **[!UICONTROL Delivery]**, acessível por meio do detalhe deste delivery ou pela lista de deliveries.
 
 Após enviar as mensagens, você pode monitorar e rastrear seus deliveries. Para obter mais informações, consulte essas seções.
 
@@ -70,9 +73,9 @@ Após enviar as mensagens, você pode monitorar e rastrear seus deliveries. Para
 
 É possível adiar o envio de mensagens para agendar a entrega ou gerenciar a pressão de vendas e evitar o excesso de solicitações sobre uma população.
 
-1. Click the **[!UICONTROL Send]** button and select the **[!UICONTROL Postpone delivery]** option.
+1. Clique no botão **[!UICONTROL Send]** e selecione a opção **[!UICONTROL Postpone delivery]**.
 
-1. Specify a start date in the **[!UICONTROL Contact date]** field.
+1. Especifique uma data de início no campo **[!UICONTROL Contact date]**.
 
 ![](assets/dlv_email_del_plan.png)
 
@@ -94,13 +97,13 @@ O agendamento pode ser configurado de forma ascendente através do botão **[!UI
 
 Isso permite adiar o delivery para uma data posterior ou salvar o delivery no calendário provisional.
 
-* The **[!UICONTROL Schedule delivery (no automatic execution)]** option lets you schedule a provisional analysis of the delivery.
+* A opção **[!UICONTROL Schedule delivery (no automatic execution)]** permite agendar uma análise provisional do delivery.
 
    Quando essa configuração é salva, o delivery muda para o status **[!UICONTROL Targeting pending]**. A análise será iniciada na data especificada.
 
-* The **[!UICONTROL Schedule delivery (automatic execution on planned date)]** option lets you specify the delivery date.
+* A opção **[!UICONTROL Schedule delivery (automatic execution on planned date)]** permite especificar a data do delivery.
 
-   Click **[!UICONTROL Send]** and select **[!UICONTROL Postpone delivery]** then launch the analysis and confirm delivery. Quando a análise estiver concluída, o target do delivery estará pronto e as mensagens serão automaticamente enviadas na data especificada.
+   Clique em **[!UICONTROL Send]** e selecione **[!UICONTROL Postpone delivery]**, depois inicie a análise e confirme o delivery. Quando a análise estiver concluída, o target do delivery estará pronto e as mensagens serão automaticamente enviadas na data especificada.
 
 Datas e horas são expressas no fuso horário do operador atual. A lista suspensa **[!UICONTROL Time zone]** localizada abaixo do campo de entrada de data do contato permite converter automaticamente a data e a hora inseridas para o fuso horário selecionado.
 
@@ -117,13 +120,13 @@ Para balancear a carga, você pode dividir deliveries em vários lotes. Configur
 >Você só poderá definir o tamanho e o atraso entre duas ondas consecutivas. Os critérios de seleção de recipient para cada onda não podem ser configurados.
 
 1. Abra a janela de propriedades do e clique na guia **[!UICONTROL Delivery]** Delivery.
-1. Select the **[!UICONTROL Send using multiple waves]** option and click the **[!UICONTROL Define waves...]** link.
+1. Selecione a opção **[!UICONTROL Send using multiple waves]** e clique no link **[!UICONTROL Define waves...]**.
 
    ![](assets/s_ncs_user_wizard_waves.png)
 
 1. Para configurar ondas, você pode:
 
-   * Definir o tamanho de cada onda. For example, if you enter **[!UICONTROL 30%]** in the corresponding field, each wave will represent 30% of the messages included in the delivery, except the last one, which will represent 10% of the messages.
+   * Definir o tamanho de cada onda. Por exemplo, se você inserir **[!UICONTROL 30%]** no campo correspondente, cada onda representará 30% das mensagens incluídas no delivery, exceto a última, que representará 10% das mensagens.
 
       No campo **[!UICONTROL Period]**, especifique o atraso entre o início de duas ondas consecutivas. Por exemplo, se você inserir **[!UICONTROL 2d]**, a primeira onda começará imediatamente, a segunda onda começará em dois dias, a terceira onda em quatro dias e assim por diante.
 
@@ -156,7 +159,7 @@ Os dois exemplos abaixo são os casos de uso mais comuns para usar várias ondas
 
    Para evitar ser marcado como spam, você poderá aumentar progressivamente o volume enviado usando ondas. Isso deve garantir o desenvolvimento suave da fase de inicialização e permitir que você reduza a taxa geral de endereços inválidos.
 
-   To do so, use the **[!UICONTROL Schedule waves according to a calendar]** option. Por exemplo, defina a primeira onda para 10%, a segunda para 15% e assim por diante.
+   Para fazer isso, use a opção **[!UICONTROL Schedule waves according to a calendar]**. Por exemplo, defina a primeira onda para 10%, a segunda para 15% e assim por diante.
 
    ![](assets/s_ncs_user_wizard_waves_ramp-up.png)
 
@@ -166,7 +169,7 @@ Os dois exemplos abaixo são os casos de uso mais comuns para usar várias ondas
 
    Usando ondas, você poderá restringir o número de mensagens a 20 por dia, que é a capacidade diária de processamento de uma central de atendimento.
 
-   To do this, select the **[!UICONTROL Schedule multiple waves of the same size]** option. Enter **[!UICONTROL 20]** as the wave&#39;s size and **[!UICONTROL 1d]** in the **[!UICONTROL Period]** field.
+   Para fazer isso, selecione a opção **[!UICONTROL Schedule multiple waves of the same size]**. Insira **[!UICONTROL 20]** como o tamanho da onda e **[!UICONTROL 1d]** no campo **[!UICONTROL Period]**.
 
    ![](assets/s_ncs_user_wizard_waves_call_center.png)
 
@@ -197,7 +200,7 @@ Quando o delivery for iniciado, as mensagens (e todas as tentativas) poderão se
 
    Você também poderá optar por especificar datas. Para fazer isso, selecione **[!UICONTROL Explicitly set validity dates]**. Nesse caso, as datas de delivery e limite de validade também permitem especificar o tempo. O tempo atual é usado por padrão, mas você poderá modificar isso diretamente no campo de entrada.
 
-* **of resources**: o campo **[!UICONTROL Validity limit]** Validity limit é usado para recursos carregados, principalmente para a mirror page e imagens. Os recursos desta página são válidos por um tempo limitado (para economizar espaço em disco).
+* **Limite da validade de recursos**: o campo **[!UICONTROL Validity limit]** é usado para recursos carregados, principalmente para a mirror page e imagens. Os recursos desta página são válidos por um tempo limitado (para economizar espaço em disco).
 
    Os valores nesse campo podem ser expressos nas unidades listadas [nesta seção](../../platform/using/adobe-campaign-workspace.md#default-units).
 
