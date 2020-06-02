@@ -12,11 +12,11 @@ discoiquuid: 6a394eeb-fbe1-4712-bb13-db5d7965fb73
 index: y
 internal: n
 snippet: y
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 4582ea496fff35c5b586049b8daa379464bd78fc
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '574'
-ht-degree: 89%
+ht-degree: 100%
 
 ---
 
@@ -25,7 +25,7 @@ ht-degree: 89%
 
 Para otimizar a capacidade de delivery de emails do Adobe Campaign, recomendamos o uso das práticas recomendadas listadas abaixo. Os problemas de capacidade de delivery estão geralmente ligados às medidas de proteção contra spam implementadas pelos provedores de serviços de Internet e administradores de servidores de correio.
 
-**A capacidade de fornecimento de email refere-se ao conjunto de características que determinam a capacidade de uma mensagem de alcançar seu destino por meio de um endereço de email pessoal, dentro de um curto período e com a qualidade esperada em termos de conteúdo e formato.**
+A **capacidade de entrega de email** refere-se ao conjunto de características que determinam a capacidade de uma mensagem de alcançar seu destino por meio de um endereço de email pessoal, dentro de um curto período e com a qualidade esperada em termos de conteúdo e formato.
 
 Essas características dividem-se em quatro categorias principais:
 * Qualidade dos dados
@@ -35,7 +35,7 @@ Essas características dividem-se em quatro categorias principais:
 
 Juntos, elas formam a base de um programa bem-sucedido de capacidade de fornecimento de email.
 
-The **deliverability rate** is the number of sent emails that were successfully delivered to its recipients.
+A **taxa de capacidade de entrega** é o número de emails enviados que foram entregues com êxito aos recipients.
 
 A taxa de delivery depende de vários fatores, especialmente:
 * A configuração correta das instâncias
@@ -46,7 +46,7 @@ A taxa de delivery depende de vários fatores, especialmente:
 * Autenticação da mensagem (SPF, DKIM, DMARC)
 * Reputação do remetente
 
-Veja abaixo uma lista dos pontos principais a serem verificados para garantir uma boa entrega.
+Esta é uma lista dos pontos principais a serem verificados para garantir uma boa capacidade de entrega.
 
 ## Verificar a configuração da rede {#network-configuration}
 
@@ -62,7 +62,7 @@ Geralmente, os provedores de internet têm um meio proeminente de reportar uma m
 
 ## Enviar para endereços honeypot {#honeypot-addresses}
 
-ISPs and other organizations (see the [Project Honey Pot](https://www.projecthoneypot.org/) website) make use of mailboxes that do not correspond to physical persons but are created simply to trick spammers. Esses endereços, chamados de &quot;honey pot&quot;, são publicados na Web para serem recolhidos por spambots e, assim, capturar remetentes ilegítimos. O uso de um mecanismo de aceitação dupla impede que esse tipo de endereço seja adicionado a uma lista. Ao usar uma lista de terceiros, é necessário ter certeza dos métodos empregados pelo responsável principal.
+Os provedores de acesso e outras organizações (consulte o site [Project Honey Pot](https://www.projecthoneypot.org/)) usam caixas de correio que não correspondem às pessoas físicas, mas são criadas apenas para enganar spammers. Esses endereços, chamados de &quot;honey pot&quot;, são publicados na Web para serem recolhidos por spambots e, assim, capturar remetentes ilegítimos. O uso de um mecanismo de aceitação dupla impede que esse tipo de endereço seja adicionado a uma lista. Ao usar uma lista de terceiros, é necessário ter certeza dos métodos empregados pelo responsável principal.
 
 ## Adaptar o conteúdo da mensagem {#message-content}
 
