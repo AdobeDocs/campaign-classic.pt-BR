@@ -15,10 +15,10 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: adb25307146847a1c49d9c548d00557e95562541
+source-git-commit: b60b5fad24c1237981f66315e7cf585c79f82641
 workflow-type: tm+mt
-source-wordcount: '880'
-ht-degree: 85%
+source-wordcount: '949'
+ht-degree: 79%
 
 ---
 
@@ -27,7 +27,13 @@ ht-degree: 85%
 
 ## Sobre anexos de email {#about-email-attachments}
 
-Você pode anexar um ou mais arquivos a um delivery de email. Há dois casos possíveis:
+Você pode anexar um ou mais arquivos a um delivery de email.
+
+>[!NOTE]
+>
+>Para evitar problemas de desempenho, é recomendável não incluir mais de um anexo por email. O limite recomendado pode ser configurado [a partir da lista das opções](../../installation/using/configuring-campaign-options.md#delivery)Campaign Classic.
+
+Há dois casos possíveis:
 
 * Selecione um arquivo para anexar ao delivery como está.
 * Personalize o conteúdo do anexo para cada recipient. Nesse caso, você precisa criar um **anexo calculado**: o nome do anexo é computado no momento do delivery de cada mensagem, dependendo do recipient. O conteúdo também pode ser personalizado e convertido em formato PDF no momento do delivery, se você tiver a opção **Impressão digital de variáveis**.
@@ -92,7 +98,7 @@ If the attachment is a local file, select the option: **[!UICONTROL File name is
 
    ![](assets/s_ncs_user_wizard_email_calc_attachement_01.png)
 
-   O arquivo está então disponível no servidor para ser anexado aos diferentes deliveries criados a partir desse template.
+O arquivo está então disponível no servidor para ser anexado aos diferentes deliveries criados a partir desse template.
 
 ### Anexar uma mensagem personalizada {#attach-a-personalized-message}
 
@@ -120,6 +126,10 @@ Para este tipo de anexo, sigas as seguintes etapas de configuração:
 
    ![](assets/s_ncs_user_wizard_email_calc_attachement_08.png)
 
+>[!NOTE]
+>
+>Para evitar problemas de desempenho, se você incluir imagens baixadas dinamicamente de um URL personalizado como anexo, cada tamanho de imagem não deve exceder 100.000 bytes por padrão. Esse limite recomendado pode ser configurado [a partir da lista das opções](../../installation/using/configuring-campaign-options.md#delivery)Campaign Classic.
+
 ### Anexo de arquivo calculado {#attach-a-calculated-file}
 
 Você pode calcular o nome do anexo durante a preparação do delivery. To do this, select the option **[!UICONTROL The file name is calculated during delivery analysis (it cannot depend on the recipient)]**.
@@ -131,7 +141,7 @@ Você pode calcular o nome do anexo durante a preparação do delivery. To do th
 1. Especifique o rótulo que deseja aplicar ao anexo.
 1. Especifique o caminho de acesso do arquivo e seu nome exato na janela de definição.
 
-   >[!CAUTION]
+   >[!IMPORTANT]
    >
    >O arquivo deve estar presente no servidor.
 
@@ -156,7 +166,7 @@ Ao selecionar o anexo, você pode escolher a opção **[!UICONTROL The file name
 
    ![](assets/s_ncs_user_wizard_email_calc_attachement_010.png)
 
-   >[!CAUTION]
+   >[!IMPORTANT]
    >
    >O arquivo deve estar presente no servidor.
 
