@@ -14,21 +14,30 @@ discoiquuid: 3af763ad-6b0d-4f4c-aed1-c5e12efd4760
 index: y
 internal: n
 snippet: y
-translation-type: ht
-source-git-commit: 61c7681535dc08e1d705d7d239e96c603bbad339
+translation-type: tm+mt
+source-git-commit: 1667dd0c8a38db0e554c59062cbcc5b6c6d992bb
+workflow-type: tm+mt
+source-wordcount: '681'
+ht-degree: 97%
 
 ---
 
 
 # Sobre as aplicações web{#about-web-applications}
 
-O Adobe Campaign permite criar e publicar aplicações web dinâmicas e interativas com dados do banco de dados e conteúdo adaptado aos direitos do usuário conectado. É possível criar páginas, como um formulário de edição em uma extranet ou formulários de notificação, incluindo dados do banco de dados com tabelas, gráficos, formulários de entrada, etc. Essa funcionalidade permite criar e publicar páginas da Web em que os usuários podem pesquisar ou inserir informações.
+O Adobe Campaign permite criar e publicar aplicações web dinâmicas e interativas com dados do banco de dados e conteúdo adaptado aos direitos do usuário conectado.
+
+É possível criar páginas, como um formulário de edição em uma extranet ou formulários de notificação, incluindo dados do banco de dados com tabelas, gráficos, formulários de entrada, etc. Essa funcionalidade permite criar e publicar páginas da Web em que os usuários podem pesquisar ou inserir informações.
 
 Pode ser um formulário de subscrição contendo dados pré-carregados com informações no banco de dados do Adobe Campaign, como mostrado abaixo:
 
 ![](assets/webapp_form_sample.png)
 
 Este capítulo fornece uma visão geral de como gerenciar as aplicações web.
+
+>[!NOTE]
+>
+>Consulte a lista [de verificação](https://helpx.adobe.com/br/campaign/kb/acc-security.html) Segurança e Privacidade para saber como otimizar a segurança para aplicativos da Web.
 
 >[!CAUTION]
 >
