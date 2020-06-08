@@ -15,7 +15,10 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 631e29bd6e59b8ae46084dee3a1d470916a2032b
+source-git-commit: d9b0f943fa09b3d0ad8547eb708e888724f1ae7e
+workflow-type: tm+mt
+source-wordcount: '7852'
+ht-degree: 6%
 
 ---
 
@@ -1194,7 +1197,7 @@ Estes são os diferentes parâmetros do nó **inMail** . Esta é a configuraçã
   </tr> 
   <tr> 
    <td> ignoreSize<br /> </td> 
-   <td> Ignorar tamanho da mensagem: é usada para ignorar o tamanho de uma mensagem retornada por servidores POP3. Nesse caso, o módulo espera um '.' at the end of the messages. <br /> </td> 
+   <td> Ignorar tamanho da mensagem: é usada para ignorar o tamanho de uma mensagem retornada por servidores POP3. Nesse caso, o módulo espera um '.' no final das mensagens. <br /> </td> 
    <td> Booleano<br /> </td> 
    <td> false<br /> </td> 
   </tr> 
@@ -1533,6 +1536,12 @@ Estes são os diferentes parâmetros do nó **mta** . Esta é a configuração d
    <td> Curto<br /> </td> 
    <td> 10<br /> </td> 
   </tr> 
+  <tr> 
+   <td> signEmailLinks<br /> </td> 
+   <td> Ative o mecanismo de assinatura. Isso melhora a segurança no rastreamento de links no email.<br /> </td> 
+   <td> Booleano<br /> </td> 
+   <td> true<br /> </td> 
+  </tr>
   <tr> 
    <td> statServerAddress<br /> </td> 
    <td> Endereço do servidor de estatísticas do delivery, fornecido como &lt;dns ou ip&gt; [: 
@@ -2544,6 +2553,12 @@ Estes são os diferentes parâmetros do nó de **rastreamento** . Esta é a conf
    <td> false<br /> </td> 
   </tr> 
   <tr> 
+   <td> blockRedirectForUnsignedTrackingLink<br /> </td> 
+   <td> Desative URLs malformados gerados de compilações anteriores.<br /> </td> 
+   <td> Booleano<br /> </td> 
+   <td> false<br /> </td> 
+  </tr> 
+  <tr> 
    <td> ConsolidationPeriodSec<br /> </td> 
    <td> Período de consolidação<br /> </td> 
    <td> Longo<br /> </td> 
@@ -2596,6 +2611,18 @@ Estes são os diferentes parâmetros do nó de **rastreamento** . Esta é a conf
    <td> Aviso de consumo de memória: aviso sobre a quantidade de RAM consumida (em Mb) por um determinado processo.<br /> </td> 
    <td> Longo<br /> </td> 
    <td> 1600<br /> </td> 
+  </tr> 
+  <tr> 
+   <td> phishbowlServiceAPIKey<br /> </td> 
+   <td> Chave de API para a Integração do Endpoint Service do Phishbowl. Isso protege o redirecionamento de URLs malformados gerados de construções mais antigas. <br /> </td> 
+   <td> Longo<br /> </td> 
+   <td> <br /> </td> 
+  </tr> 
+  <tr> 
+   <td> phishbowlServiceEndpoint<br /> </td> 
+   <td> Endpoint para a integração do Endpoint Service do Phishbowl. Isso protege o redirecionamento de URLs malformados gerados de construções mais antigas.<br /> </td> 
+   <td> Longo<br /> </td> 
+   <td> <br /> </td> 
   </tr> 
   <tr> 
    <td> processRestartTime<br /> </td> 
