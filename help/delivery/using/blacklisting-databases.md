@@ -14,8 +14,11 @@ discoiquuid: eede254d-2b25-46ed-b10f-fa1d54780a75
 index: y
 internal: n
 snippet: y
-translation-type: ht
-source-git-commit: ac3a0ca00591943d79563e9fd4d85d71fa0ba81a
+translation-type: tm+mt
+source-git-commit: 0386ae88a1b4d9ebda64283d874e01b14e9e5af4
+workflow-type: tm+mt
+source-wordcount: '377'
+ht-degree: 98%
 
 ---
 
@@ -52,7 +55,7 @@ Veja a seguir uma lista das RBLs mais utilizadas. Para obter uma lista mais abra
 
 * **SURBL**
 
-   Consulte [https://www.surbl.org/](https://www.surbl.org/)
+   Refer to [http://www.surbl.org/](http://www.surbl.org/)
 
    SURBL identifica os sites que aparecem regularmente como spam. Se o seu domínio aparecer nessa lista, ele poderá afetar significativamente seu deliverability. Você deve informar os serviços deliverability e o suporte ao Adobe Campaign imediatamente.
 
