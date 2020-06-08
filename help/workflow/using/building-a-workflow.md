@@ -15,9 +15,9 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: b369a17fabc55607fc6751e7909e1a1cb3cd4201
+source-git-commit: b1a961822224ab0a9551f51942a5f94cf201c8ee
 workflow-type: tm+mt
-source-wordcount: '1634'
+source-wordcount: '1631'
 ht-degree: 94%
 
 ---
@@ -91,8 +91,6 @@ Criação do diagrama
 >[!CAUTION]
 >
 >É possível copiar e colar atividades dentro de um mesmo workflow. No entanto, não recomendamos atividades de copiar e colar em workflows diferentes. Algumas configurações anexadas a atividades como Delivery e Scheduler podem gerar conflitos e erros ao executar o workflow de destino. Em vez disso, recomendamos usar **Duplicate** nos workflows. Para obter mais informações, consulte [Duplicação de workflows](#duplicating-workflows).
-
-### Opções adicionais de layout {#additional-layout-options}
 
 Você pode alterar a exibição e o layout do gráfico usando os seguintes elementos:
 
