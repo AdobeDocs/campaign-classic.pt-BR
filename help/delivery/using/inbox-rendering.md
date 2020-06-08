@@ -14,8 +14,11 @@ discoiquuid: 72e974b8-415a-47ab-9804-b15957787198
 index: y
 internal: n
 snippet: y
-translation-type: ht
-source-git-commit: 30f313cecf1c3d7c65f6524a3f86a1c28b35f679
+translation-type: tm+mt
+source-git-commit: aef56860d6e4558a7f4833066ab3d83733591522
+workflow-type: tm+mt
+source-wordcount: '801'
+ht-degree: 89%
 
 ---
 
@@ -42,18 +45,18 @@ Para clientes hospedados e híbridos, a renderização da Caixa de entrada é co
 
 Para instalações no local, siga as etapas abaixo para configurar a renderização da Caixa de entrada.
 
-1. Instale o pacote de **[!UICONTROL renderização da Caixa de entrada (IR)]** por meio do menu **[!UICONTROL Tools]** > **[!UICONTROL Advanced]** > **[!UICONTROL Import package]**. Para obter mais informações, consulte [Instalação de pacotes padrão do Campaign Classic](../../installation/using/installing-campaign-standard-packages.md).
-1. Configure uma conta externa do tipo HTTP por meio do nó **[!UICONTROL Administration]** > **[!UICONTROL Platform]** > **[!UICONTROL External Accounts]**. Para obter mais informações, consulte [Criação de uma conta externa](../../platform/using/external-accounts.md#creating-an-external-account).
+1. Instale o **[!UICONTROL Inbox rendering (IR)]** pacote usando o menu **[!UICONTROL Tools]** > **[!UICONTROL Advanced]** > **[!UICONTROL Import package]** . Para obter mais informações, consulte [Instalação de pacotes padrão do Campaign Classic](../../installation/using/installing-campaign-standard-packages.md).
+1. Configure an external account of the HTTP type via the **[!UICONTROL Administration]** > **[!UICONTROL Platform]** > **[!UICONTROL External Accounts]** node. Para obter mais informações, consulte [Criação de uma conta externa](../../platform/using/external-accounts.md#creating-an-external-account).
 1. Defina os parâmetros da conta externa da seguinte maneira:
-   * **[!UICONTROL Label]**: informações de entregabilidade do servidor
-   * **[!UICONTROL Internal name]**: deliverabilityInstance
+   * **[!UICONTROL Label]**: Informações do servidor de entrega
+   * **[!UICONTROL Internal name]**: DeliabilityInstance
    * **[!UICONTROL Type]**: HTTP
    * **[!UICONTROL Server]**: https://deliverability-app.neolane.net/deliverability
-   * **[!UICONTROL Encryption]**: nenhuma
-   * Marque a opção **[!UICONTROL Enabled]**.
+   * **[!UICONTROL Encryption]**: Nenhum
+   * Check the **[!UICONTROL Enabled]** option.
    ![](assets/s_tn_inbox_rendering_external-account.png)
 
-1. Vá para o nó **[!UICONTROL Administration]** > **[!UICONTROL Platform]** > **[!UICONTROL Options]**. Procure a opção **[!UICONTROL DmRendering_cuid]** e entre em contato com o suporte para obter o identificador de relatórios do delivery que precisa ser copiado para o campo **[!UICONTROL Value (text)]**.
+1. Go to the **[!UICONTROL Administration]** > **[!UICONTROL Platform]** > **[!UICONTROL Options]** node. Search for the **[!UICONTROL DmRendering_cuid]** option and contact support to get your delivery reports identifier that needs to be copied to the **[!UICONTROL Value (text)]** field.
 1. Edite o arquivo **serverConf.xml** para permitir uma chamada para o servidor Litmus. Adicione a seguinte linha à `<urlPermission>` seção:
 
    ```
@@ -80,7 +83,7 @@ No Adobe Campaign, o crédito corresponde ao número de renderizações disponí
 >
 >O número de tokens Litmus disponíveis depende da licença adquirida do Campaign. Verifique o contrato da licença.
 
-Cada vez que você usa o recurso **[!UICONTROL Renderização da caixa de entrada]** em um delivery, cada renderização gerada diminui um de seus tokens disponíveis.
+Each time you use the **[!UICONTROL Inbox rendering]** feature in a delivery, each rendering generated decreases your available tokens by one.
 
 >[!IMPORTANT]
 >
@@ -97,12 +100,6 @@ O número de tokens disponíveis restantes é exibido no **[!UICONTROL General s
 ![](assets/s_tn_inbox_rendering_tokens.png)
 
 Normalmente, o recurso de renderização da Caixa de Entrada é usado para testar a estrutura HTML de um email recém-criado. Cada renderização requer aproximadamente até 70 tokens (dependendo do número de ambientes geralmente testados). No entanto, em alguns casos, podem ser necessários vários relatórios de renderização da caixa de entrada para testar totalmente seu delivery. Portanto, seriam necessários mais tokens para completar várias verificações.
-
->[!NOTE]
->
->Se for um cliente Litmus, você poderá usar sua própria conta Litmus para provisionar e usar a renderização da caixa de entrada no Adobe Campaign. Para saber mais sobre isso, entre em contato com o executivo da sua conta da Adobe.
->
->Observe que alterar suas credenciais do Litmus pode causar problemas de autenticação no Adobe Campaign.
 
 ## Acesso ao relatório de renderização da caixa de entrada {#accessing-the-inbox-rendering-report}
 
@@ -137,7 +134,7 @@ O **[!UICONTROL General summary]** apresenta em uma lista e por meio de uma repr
 
 Passe o mouse sobre o gráfico para exibir os detalhes para cada cor.
 
-O conjunto do relatório está dividido em três partes: **[!UICONTROL Mobile]**, **[!UICONTROL Messaging clients]** e **[!UICONTROL Webmails]**. Role para baixo no relatório para exibir todas as renderizações agrupadas nessas três categorias.
+The body of the report is divided into three parts: **[!UICONTROL Mobile]**, **[!UICONTROL Messaging clients]**, and **[!UICONTROL Webmails]**. Role para baixo no relatório para exibir todas as renderizações agrupadas nessas três categorias.
 
 ![](assets/s_tn_inbox_rendering_report.png)
 
