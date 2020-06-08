@@ -5,10 +5,10 @@ index: y
 product: adobe campaign
 sub-product: Adobe Campaign Classic
 translation-type: tm+mt
-source-git-commit: b369a17fabc55607fc6751e7909e1a1cb3cd4201
+source-git-commit: 56ddf3dc1505c0507c67f8b08c9f33b4007f8857
 workflow-type: tm+mt
-source-wordcount: '2090'
-ht-degree: 100%
+source-wordcount: '2100'
+ht-degree: 99%
 
 ---
 
@@ -20,6 +20,7 @@ ht-degree: 100%
 + Notas de versão {#release-notes}
    + [Versão mais recente](rn/using/latest-release.md)
    + Versões anteriores {#previous-releases}
+      + [Versão 20.1](rn/using/release--20-1.md)
       + [Versão 19.2](rn/using/release--19-2.md)
       + [Versão 19.1](rn/using/release--19-1.md)
       + [Versão 18.10](rn/using/release--18-10.md)
@@ -127,6 +128,7 @@ ht-degree: 100%
       + [Conteúdo condicional](delivery/using/conditional-content.md)
       + [Cupons personalizados](delivery/using/personalized-coupons.md)
       + [Geração de documentos personalizados em PDF](delivery/using/generating-personalized-pdf-documents.md)
+      + [Personalização da lista de emoticon](delivery/using/customizing-emoticon-list.md)
    + Uso de seed addresses {#using-seed-addresses}
       + [Sobre seed addresses](delivery/using/about-seed-addresses.md)
       + [Criação de seed addresses](delivery/using/creating-seed-addresses.md)
@@ -526,6 +528,7 @@ ht-degree: 100%
       + [Pré-visualização de mensagem transacional](message-center/using/transactional-message-preview.md)
       + [Envio de uma prova](message-center/using/sending-a-proof.md)
       + [Publicação de template](message-center/using/template-publication.md)
+      + [Cancelamento da publicação do modelo](message-center/using/template-unpublication.md)
    + Processamento de evento {#event-processing}
       + [Sobre processamento de evento](message-center/using/about-event-processing.md)
       + [Coleção de eventos](message-center/using/event-collection.md)
@@ -603,6 +606,7 @@ ht-degree: 100%
       + [Interação - buffer de dados](installation/using/interaction---data-buffer.md)
    + Apêndices {#appendices}
       + [O arquivo de configuração do servidor](installation/using/the-server-configuration-file.md)
+      + [Pontos de extremidade de rede Campanha](installation/using/campaign-network-endpoints.md)
       + [Linhas de comando](installation/using/command-lines.md)
       + [Criação de novas instâncias](installation/using/creating-new-instances.md)
       + [Lista de opções do Campaign Classic](installation/using/configuring-campaign-options.md)
