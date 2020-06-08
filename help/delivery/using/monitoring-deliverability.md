@@ -12,11 +12,11 @@ discoiquuid: 0baef937-f00b-4fc4-8608-a870997be684
 index: y
 internal: n
 snippet: y
-translation-type: ht
-source-git-commit: 74e1a883088d347cb1aab05d76b630c912411fc4
-workflow-type: ht
-source-wordcount: '788'
-ht-degree: 100%
+translation-type: tm+mt
+source-git-commit: f4d82657fbeae39af173c867975455669497d8eb
+workflow-type: tm+mt
+source-wordcount: '787'
+ht-degree: 94%
 
 ---
 
@@ -58,7 +58,7 @@ Estas são algumas diretrizes adicionais sobre o monitoramento da capacidade de 
 * Verifique a taxa de transferência de cada delivery para garantir que ela seja consistente com a validade do conteúdo do delivery (por exemplo, &quot;vendas rápidas&quot; devem ser entregues em minutos, não em dias).
 * Ao usar as [ondas](../../delivery/using/steps-sending-the-delivery.md#sending-using-multiple-waves), verifique se cada onda tem tempo suficiente para terminar antes que a próxima seja acionada.
 * Verifique se o número de erros e as novas [quarentenas](../../delivery/using/understanding-quarantine-management.md) estão consistentes com outros deliveries.
-* Consulte os [logs do delivery](../../delivery/using/monitoring-a-delivery.md#delivery-logs-and-history) detalhadamente para verificar o tipo de erros destacados (listas cinza ou preta, problemas de DNS, regras anti-spam etc.).
+* Carefully consult the [delivery logs](../../delivery/using/monitoring-a-delivery.md#delivery-logs-and-history) in detail to check the kind of errors that are highlighted (grey or black-listing, DNS issues, anti-spam rules, etc.).
 
 ## Signal Spam {#signal-spam}
 
@@ -70,7 +70,7 @@ O Signal Spam é um serviço francês que oferece relatórios de ciclo de feedba
 
 ## 250ok {#deliverability-250ok}
 
-O [250ok](https://250ok.com/) é uma solução de monitoramento complementar das ferramentas internas de entrega da Adobe, que fornece IP, lista negra de domínios e indicadores de reputação.
+[O 250ok](https://250ok.com/) é uma solução de monitoramento complementar das ferramentas internas de entrega da Adobe, que fornece IP, lista negra de domínios e indicadores de reputação.
 
 As informações fornecidas são em tempo real, o que permite uma assistência proativa.
 
