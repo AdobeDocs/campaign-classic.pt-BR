@@ -12,18 +12,18 @@ discoiquuid: 5df34f55-135a-4ea8-afc2-f9427ce5ae7b
 index: y
 internal: n
 snippet: y
-translation-type: ht
-source-git-commit: e329ee546a3990850daeb7a46ee9de77fd075ff1
-workflow-type: ht
-source-wordcount: '1411'
-ht-degree: 100%
+translation-type: tm+mt
+source-git-commit: cb55216e75559e1ce7eefa24d2302fe2c2224d40
+workflow-type: tm+mt
+source-wordcount: '1739'
+ht-degree: 14%
 
 ---
 
 
 # Versão mais recente{#latest-release}
 
-[Build upgrade](https://helpx.adobe.com/br/campaign/kb/acc-build-upgrade.html) | [Control Panel releases](https://docs.adobe.com/content/help/pt-BR/control-panel/using/release-notes.html) | [Documentation updates](../../rn/using/documentation-updates.md) | [Previous releases](../../rn/using/release--19-2.md) | [Deprecated features](https://helpx.adobe.com/br/campaign/kb/deprecated-and-removed-features.html)
+[Build upgrade](https://helpx.adobe.com/br/campaign/kb/acc-build-upgrade.html) | [Control Panel releases](https://docs.adobe.com/content/help/pt-BR/control-panel/using/release-notes.html) | [Documentation updates](../../rn/using/documentation-updates.md) | [Previous releases](../../rn/using/release--20-1.md) | [Deprecated features](../../rn/using/deprecated-features.md)
 
 <table> 
  <tbody> 
@@ -44,34 +44,22 @@ ht-degree: 100%
 
 A **última build estável** é a 9032 (3a9dc9c). Clique [aqui](../../rn/using/release--19-1.md#release-19-1-4-build-9032)
 
-## ![](assets/do-not-localize/blue_2.png) Versão 20.1.3 - Build 9124 {#release-20-1-3-build-9124}
+## ![](assets/do-not-localize/blue_2.png) Versão 20.2.1 - Build 9178 {#release-20-2-1-build-9178}
 
-_6 de maio de 2020_
-
-* Correção de um problema com a atividade **Transferência de Arquivo**, que impedia que a autenticação com a chave SFTP funcionasse no Debian 9. (NEO-23183)
-
-## ![](assets/do-not-localize/orange_2.png) Versão 20.1.2 - Build 9123 {#release-20-1-2-build-9123}
-
-_13 de março de 2020_
-
-* Correção de um problema que impedia a implantação da versão em servidores Red Hat 7. (NEO-23332)
-
-## ![](assets/do-not-localize/orange_2.png) Versão 20.1 - Build 9122 {#release-20-1-build-9122}
-
-_17 de fevereiro de 2020_
+_8 de junho de 2020_
 
 **Novidades**
 
 <table> 
  <thead> 
   <tr> 
-   <th> <strong>Conector Snowflake FDA</strong><br /> </th> 
+   <th> <strong>Suporte a Emoticons</strong><br /> </th> 
   </tr> 
  </thead> 
  <tbody> 
   <tr> 
-   <td> <p>O Snowflake é um data warehouse de nuvem totalmente gerenciado, criado para dimensionar tanto no nível de armazenamento quanto no nível de computação. Com esse novo conector, o Adobe Campaign agora pode aproveitar o potencial do Snowflake para executar a Segmentação de Big Data. Esse conector está disponível para todos os clientes, inclusive hospedado pela Adobe.</p>
-    <p>Para obter mais informações, consulte a <a href="../../platform/using/specific-configuration-database.md#configure-access-to-snowflake">documentação detalhada</a> e o <a href="https://docs.adobe.com/content/help/en/campaign-learn/campaign-classic-tutorials/administrating/fda/big-data-segmentation-on-snowflake.html">vídeo tutorial</a>.</p>
+   <td> <p>Ao projetar uma mensagem na Campanha, agora é possível inserir emoticons facilmente no corpo da mensagem, usando um botão dedicado. Eles também podem ser adicionados na linha de assunto do email. Você pode personalizar a lista de emoticons disponíveis na interface.</p>
+    <p>Para obter mais informações sobre como adicionar emoticons, consulte a documentação <a href="../../delivery/using/defining-the-email-content.md#inserting-emoticons"></a>detalhada. Saiba como personalizar a lista de emoticon <a href="../../delivery/using/customizing-emoticon-list.md">nesta seção</a>.</p>
    </td> 
   </tr> 
  </tbody> 
@@ -80,13 +68,33 @@ _17 de fevereiro de 2020_
 <table> 
  <thead> 
   <tr> 
-   <th> <strong>Aprimoramentos do conector FDA Hadoop</strong><br /> </th> 
+   <th> <strong>Conector do Azure Synapse FDA</strong><br /> </th> 
   </tr> 
  </thead> 
  <tbody> 
   <tr> 
-   <td> <p>O conector FDA Hadoop foi aprimorado para oferecer suporte ao Hadoop 3.0 e à Cloudera.</p>
-    <p>Para obter mais informações, consulte a <a href="../../platform/using/specific-configuration-database.md#configure-access-to-hadoop-3">documentação detalhada</a>.</p>
+   <td> <p>Agora você pode conectar sua instância de Campanha ao banco de dados externo do Azure Synapse. Essa conexão é gerenciada por meio de uma nova conta externa.</p>
+    <p>O Azure Synapse só está disponível para ambientes híbridos e no local. Para obter mais informações, consulte a <a href="../../platform/using/specific-configuration-database.md#configure-access-to-azure-synapse">documentação detalhada</a>.</p>
+   </td> 
+  </tr> 
+ </tbody> 
+</table>
+
+<table> 
+ <thead> 
+  <tr> 
+   <th> <strong>Leis de privacidade da Tailândia e do Brasil</strong><br /> </th> 
+  </tr> 
+ </thead> 
+ <tbody> 
+  <tr> 
+   <td> <p>O PDPA (Personal Data Protection Act) da Tailândia é a nova lei de privacidade que harmoniza e moderniza os requisitos de proteção de dados para a Tailândia. </p>
+   <p>A Lei Geral de Dados (LGPD) do Brasil estará em vigor a partir de 16 de agosto para todas as empresas que coletam ou processam dados pessoais no Brasil.</p>
+   <p>Esses regulamentos se aplicam a clientes Adobe Campaign que detêm dados para pessoas que residem nesses países. Além dos recursos de privacidade já disponíveis na Campanha (incluindo gerenciamento de consentimento, configurações de retenção de dados e funções de usuário), estamos aproveitando esta oportunidade para incluir recursos adicionais, para ajudar a facilitar sua prontidão para PDPA e LGPD:</p>
+   <ul> 
+     <li><p>Direito de acesso e direito de exclusão: estamos aproveitando as capacidades que foram adicionadas ao RGPD e CCPA. <a href="https://helpx.adobe.com/br/campaign/kb/acc-privacy.html">Leia mais</a></p></li> 
+     <li> <p>Ao criar uma solicitação de privacidade usando interface de Campanha ou API, agora você seleciona o tipo de <strong>regulamento</strong> : PDPA, LGPD, GDPR, CCPA. <a href="https://helpx.adobe.com/campaign/kb/acc-privacy.html#ManagingPrivacyRequests">Leia mais</a>.</p></li>
+    </ul>
    </td> 
   </tr> 
  </tbody> 
@@ -94,132 +102,159 @@ _17 de fevereiro de 2020_
 
 **Aprimoramentos de segurança**
 
-* Segurança aprimorada na configuração do relatório para proteger contra clickjacking. Isso se aplica aos novos relatórios. Para relatórios antigos, é necessário republicá-los para aplicar as alterações. (NEO-13282)
+* A segurança aprimorada no rastreamento de links no email é ativada por padrão para todos os clientes. Um recurso de segurança adicional e aprimorado está disponível e pode ser ativado ao acessar o Atendimento ao cliente. Mais detalhes sobre o recurso e as etapas para clientes não hospedados para habilitá-lo podem ser encontrados na [lista de verificação de Segurança e Privacidade](https://helpx.adobe.com/br/campaign/kb/acc-security.html). (NEO-24232)
 
-* Correção de um pequeno problema de memória no cryptString. (NEO-20071)
+* Para otimizar a segurança, o algoritmo de hash MD5 usado para gerar nomes de arquivos foi reforçado com sha256 para upload de arquivos públicos. (NEO-17044)
 
-* JSP do monitor aprimorado para corrigir uma divulgação interna de IP. (NEO-16821)
+* Para reforçar a segurança contra ataques XSS, os scripts do cliente são desativados ao executar um mirror page. (NEO-17987)
 
-* Correção de um problema em que as informações de rastreamento de pilha podiam ser exibidas para usuários não administradores. (NEO-12388)
+* Correção de um problema que impedia que o fluxo de trabalho técnico de Limpeza **de solicitação de** privacidade excluísse os dados de reconciliação. (NEO-25168, NEO-21004)
 
-* Gerenciamento de dados em cache aprimorado de sessões anteriores. (NEO-17039)
+* Correção de um problema com a atividade **Transferência de Arquivo**, que impedia que a autenticação com a chave SFTP funcionasse no Debian 9. (NEO-23183)
 
-* Correção de um problema que impedia o arquivo logins.log de registrar tentativas de login bem-sucedidas por meio do IMS. (NEO-11004)
+**Aprimoramentos de compatibilidade**
+
+Os seguintes sistemas agora são suportados com Campanha:
+* Sistemas operacionais: Debian 10
+* RDBMS: Oracle 18c e Oracle 19c
+* FDA: Análise do Azure Synapse
+
+Saiba mais na matriz de compatibilidade de [Campanha](https://helpx.adobe.com/br/campaign/kb/compatibility-matrix.html).
 
 **Aprimoramentos**
 
-* O iOS 13 agora é compatível com o conector HTTP2.
+* As mensagens transacionais foram aprimoradas para uma melhor experiência do usuário. Agora é possível cancelar a publicação de um template de mensagem transacional, o que o exclui das instâncias de execução. [Saiba mais](../../message-center/using/template-unpublication.md).
 
-* Gerenciamento de quarentena e limpeza aprimorados das tabelas usadas pelo recurso de notificação por push (nms:address e nms:appSubscriptionRcp). No iOS (somente conector HTTP2), os tokens desativados agora são manipulados da mesma forma que no Android. O sinalizador disable agora está definido na tabela NmsAppSubscriptionRcp. [Leia mais](../../production/using/database-cleanup-workflow.md#subscription-cleanup--nmac-)
+* Novas opções estão disponíveis para definir limitações ao enviar emails que incluem imagens ou anexos. Esses painéis podem evitar problemas de desempenho, o que é particularmente útil com mensagens transacionais. [Leia mais](../../installation/using/configuring-campaign-options.md#delivery)
 
-* Uma nova opção foi adicionada ao **código JavaScript** e às atividades de workflow do **código JavaScript avançado** para definir um período de tempo limite. Isso impede que a fase de execução do javascript seja executada por muito tempo. Se o período limite expirar, o workflow será interrompido. O tempo limite padrão é de 1 hora. [Leia mais](../../workflow/using/sql-code-and-javascript-code.md)
+* A nova opção **Preparar as partes do delivery no banco de dados** permite executar a preparação do delivery diretamente no banco de dados, o que pode acelerar significativamente a análise. Essa opção só está disponível para configurações específicas. [Saiba mais](../../delivery/using/steps-validating-the-delivery.md#improving-delivery-analysis). (NEO-23886)
 
-* A análise do delivery agora é interrompida quando nenhuma afinidade correspondente é encontrada no servidor mid-sourcing, com a mensagem de erro correspondente sendo exibida.
+* O desempenho da atividade [do Conector](../../workflow/using/crm-connector.md) CRM para Microsoft Dynamics foi aprimorado. (NEO-13303, NEO-12710)
 
-* Agora há suporte para failover de banco de dados para Postgres: quando o servidor de banco de dados trava e reinicia, o Campaign agora se reconecta automaticamente a ele.
+* A versão da memória compartilhada foi aumentada.
 
-* A visualização **Start Pending** foi adicionada ao nó Administration > Audit > Workflows Status. Isso permite que você monitore todos os workflows na sua instância que estão aguardando para serem iniciados pelo processo **operationMgt**. Esta visualização vem com o pacote de campanhas de marketing. [Leia mais](../../workflow/using/monitoring-workflow-execution.md#filtering-workflows-status)
+   >[!WARNING]
+   >
+   >Essa melhoria requer uma etapa adicional após a execução da atualização. Consulte a seção **Evolução** técnica abaixo.
+
+* O fluxo de trabalho de limpeza foi aprimorado. As tabelas de trabalho órfãs de todos os workflows excluídos agora também são excluídas automaticamente pelo fluxo de trabalho de limpeza. [Saiba mais](../../production/using/database-cleanup-workflow.md#cleanup-of-workflow-instances).
+
+* Certificados para aplicativos móveis iOS com o conector HTTP2 do iOS agora são validados antes do envio de notificações por push, evitando que delivery falhem devido a certificados expirados.
+
+* O gerenciamento de conexões proxy HTTP foi aprimorado. [Saiba mais](../../installation/using/configuring-campaign-server.md#proxy-connection-configuration).
 
 **Outras alterações**
 
-* No Linux, a inicialização do serviço nlserver agora usa uma unidade sistêmica em vez do script /etc/init.d/nlserver6. A migração para o novo schema de inicialização é executada automaticamente ao instalar o pacote 20.1. O /etc/init.d/nlserver6 ainda é fornecido, mas para interagir com o serviço nlserver (start, reinicialização, interrupção etc.), recomendamos que você use o comando systemctl diretamente.
+* Conectores SMS herdados agora estão obsoletos. Consulte a página [Recursos](../../rn/using/deprecated-features.md)obsoletos.
 
-* As tabelas personalizadas mais trabalhosas foram movidas da sequência **xtkNewId** para sequências dedicadas. [Leia mais](https://helpx.adobe.com/br/campaign/kb/sequence_auto_generation.html#Switchtoadedicatedsequence)
+* Você não pode mais usar sua própria conta Litmus para provisionar e usar a renderização de Caixa de entrada no Adobe Campaign. [Saiba mais](../../delivery/using/inbox-rendering.md).
 
-* Melhora do desempenho do query que pode ser afetado por conexões desnecessárias ao banco de dados.
+* Para distinguir melhor as visualizações das pastas, a cor dos nomes das visualizações foi alterada de azul escuro para ciano escuro. [Leia mais](../../platform/using/access-management.md#about-views)
 
-* Melhora do desempenho do assistente de atualização do banco de dados.
+* O Campaign Classic agora pode ser conectado a contas do Microsoft Dynamics CRM hospedadas nas regiões do Reino Unido, Índia e Canadá. Isso se aplica aos tipos de implantação do Office 365 e On premise (Dynamics 2015).
 
-* O gerenciamento dos registros do banco de dados foi aprimorado.
+* A Campanha agora executa uma verificação TLS para verificar se o nome do host do servidor corresponde ao nome do host no certificado fornecido.
 
-* A robustez do pool de conexões foi aprimorada, o que pode impedir que falhas inesperadas de conexão ocorram com muita frequência.
+* A tabela de estatísticas de Delivery e rastreamento agora exibe uma entrada por delivery para o canal SMS, em vez de uma entrada por recipient de delivery.
 
-* As regras de validação de endereço de email para enviar um endereço para a quarentena em caso de erro de software foram aprimoradas. [Leia mais](../../delivery/using/understanding-quarantine-management.md#soft-error-management)
+* Adicionada uma mensagem de erro no arquivo de log para avisar os usuários quando o arquivo baixado for maior que o espaço em disco.
 
-* Para Debian, o Campaign agora usa bibliotecas PCRE do sistema quando elas estão disponíveis.
+* As seguintes funções estão disponíveis para o conector Snowflake: Meses Atrás, Dias AgoInt, AtéDataHora, Anos Atrás.
 
-* O Campaign agora permite o uso de uma biblioteca ODBC do sistema mais recente.
+**Evoluções técnicas**
 
-* Adicionamos um tempo limite ao servlet LINE quando uma conexão para carregar uma imagem avançada é aberta. Se a imagem estiver demorando muito para carregar, o servlet interrompe a conexão para evitar um gargalo.
+Esta nova compilação atualiza a memória compartilhada e requer etapas adicionais para executar a atualização. Como administrador da Campanha, é necessário remover segmentos de memória. Essas etapas são obrigatórias, pois os segmentos antigos impedirão que nlserver/nlsrvmod seja iniciado.
+
+No Windows, é necessário reiniciar o sistema.
+
+No Debian/CentOs, a exclusão de memória compartilhada é necessária. Estas são as etapas:
+
+Antes da atualização, você precisa seguir estas etapas:
+
+1. Pare o serviço apache2 (http2 no CentOS) se ele estiver em execução.
+1. Pare o serviço nlserver (nlserver6 para compilações mais antigas) se ele estiver em execução.
+
+Após a atualização:
+
+1. Remova a memória compartilhada usando o comando **ipcrm** , se a versão for anterior à versão atual.
+1. Start o serviço nlserver se ele estava sendo executado.
+1. Start o serviço apache2 se ele estivesse em execução.
+
+Estas são as linhas de comando para Debian:
+
+```
+/etc/init.d/nlserver* stop
+/etc/init.d/apache2 stop
+```
+
+```
+for i in `ipcs -s | awk '/www-data/
+{print $2}'`; do (ipcrm -s $i); done
+```
+
+```
+for i in `ipcs -m | awk '/www-data/ {print $2}
+'`; do (ipcrm shm $i); done
+```
+
+```
+for i in `ipcs -m | awk '/neolane/
+{print $2}'`; do (ipcrm shm $i); done
+```
+
+```
+for i in `ipcs -s | awk '/neolane/ {print $2}
+'`; do (ipcrm -s $i); done
+```
+
+```
+/etc/init.d/apache2 restart
+/etc/init.d/nlserver* start
+```
+
+Um exemplo para Linux está disponível nesta [página](../../configuration/using/additional-parameters.md#redirection-server-configuration).
 
 **Correções**
 
-* Correção de um problema de criptografia de chave da conta ao usar o conector do Hadoop.
-
-* Correção de um problema de regressão devido à implementação da certificação SSL que causava a falha da conexão do usuário no servidor Windows. (NEO-20629)
-
-* Correção de um problema com a atividade de query incremental no caso de IDs de workflow negativas. (NEO-19779)
-
-* Correção de um problema de codificação ao executar os queries por meio do conector FDA Netezza. (NEO-19594)
-
-* Correção de um problema que resulta em erro ao usar o método POST na atividade de evento do workflow **Download da Web**
-
-* Correção de um problema com a criação da apresentação da oferta. (NEO-18176)
-
-* Correção de um problema de exibição do rodapé ao usar o modelo de formulário da Web de aquisição.
-
-* Correção de um problema ao analisar os URLs no conteúdo de deliveries contínuos que causa falhas. (NEO-16910)
-
-* Correção de um problema onde os campos **Start** e **End** não são computados ao criar uma nova campanha.
-
-* Correção de um problema com a atividade de workflow **Download de arquivo** ao usar um URL.
-
-* Correção de um problema ao visualizar uma lista importada em uma atividade de consulta de um relatório. (NEO-13119)
-
-* Correção de um problema que exibia uma imagem desatualizada ao selecionar o bloco de personalização **Powered by Campaign** no editor de email.
-
-* A comunicação de rede entre o cliente e o servidor foi aprimorada.
-
-* Correção de um problema em que muitos workflows eram criados na mesma campanha. Agora, você não pode criar mais de 28 workflows. Um aviso é exibido.
-
-* Correção de um problema ao usar a opção **Uma seleção de reconciliação de colunas** em uma atividade de workflow **Union**.
-
-* Correção de um problema de travamento do console que ocorria ao usar uma lista de enriquecimento corrompida em um workflow. (NEO-18096)
-
-* Correção de vários problemas de travamento do console que podem ocorrer em workflows (NEO-18010, NEO-18032)
-
-* Correção de um problema que permite a execução de uma atividade de workflow **External Signal** mesmo quando ela está desativada. (NEO-17524)
-
-* Correção de um problema ao criar um novo schema.
-
-* Correção de um problema de rastreamento ao enviar mensagens SMS. (NEO-19595)
-
-* Correção de um problema que exibe números incorretos do público direcionado em indicadores de entrega.
-
-* Correção de um problema que exibe porcentagens incorretas ao gerar um relatório descritivo por meio de uma atividade de workflow. (NEO-14314)
-
-* Correção de um problema que faz com que o relatório de taxa de transferência do delivery apresente números diferentes quando o parâmetro de visualização de tempo é utilizado. (NEO-11783)
-
-* Correção de um problema que impede a atualização dos indicadores de rastreamento de mensagens transacionais pelo workflow Tracking. (NEO-17770)
-
-* Correção de um problema de regressão que resulta na falha e reinicialização do processo da Web ao solicitar uma oferta por meio do SOAP. (NEO-19482)
-
-* Correção de um problema que impede o upload de dados para recursos públicos se o diretório estiver em um local compartilhado remoto. (NEO-19361)
-
-* Correção de um problema que causa a falha constante do workflow técnico **Import audiences from the Adobe Experience Cloud**. (NEO-18463)
-
-* Correção de um problema que impede o envio do delivery ao usar os modelos importados do Experience Manager. (NEO-17540)
-
-* Correção de um problema que ocorre após a atualização para a build 9032 e impede a instância de se conectar ao servidor FTP pelo protocolo SSL. (NEO-20498)
-
-* Correção de um problema que ocorre ao excluir, inserir ou atualizar uma grande quantidade de dados com a atividade **Update data** em um workflow que usa um schema FDA como dimensão de direcionamento. (NEO-13280)
-
-* Correção de um problema que impede o envio de emails ao usar a declaração &quot;se&quot; fora da tag `body`.
-
-* Correção de um problema que ocorre ao tentar exibir a mirror page dos logs do delivery de uma mensagem enviada. (NEO-17976)
-
-* Correção de um problema que impede que o bloco de personalização **Link to mirror page** seja exibido na guia **Text content** depois de clicar em **Import HTML** de uma delivery. (NEO-17568)
-
-* A mensagem de erro que é exibida ao clicar em um link para uma mirror page que expirou foi esclarecida. (NEO-17340)
-
-* Correção de um problema que impede que alguns botões sejam usados na tela de criação **Data distribution**.
-
-* Correção de um problema que ocorre ao agendar uma atividade de delivery em uma instância com Ásia/Calcutá como fuso horário. (NEO-20001)
-
-* Um erro agora é exibido quando um delivery tem um problema de configuração de afinidade.
-
-* Correção de um problema que exibia um número de tag de versão incorreto no menu **About**.
-
-* Correção de um problema que ocorre ao tentar atualizar a conta do roteamento a partir de propriedades de delivery que são recorrentes em um workflow. (NEO-18684)
-
-* Correção de um problema que ocorre ao conectar-se à instância por meio do módulo de redirecionamento, que impedia que a conexão fosse limpa corretamente depois de fechada.
+* Correção de uma regressão menor nos logs de workflow de limpeza.
+* Correção de um problema na atividade **Loading (SOAP)** do fluxo de trabalho ao analisar arquivos WSDL.
+* Correção de um problema que causava um erro ao atualizar vários workflows usando uma atividade de **Pesquisa** para processar com eficiência um número alto de workflows.
+* Correção de um problema intermitente de conectividade durante o processamento de mensagens do InMail do MTA aprimorado. (NEO-20380)
+* Correção de um problema que impedia que as porcentagens de cliques ativos fossem exibidas corretamente quando as imagens eram exibidas com 100% de largura no HTML. (NEO-23203)
+* Correção de um problema que impedia que o conteúdo condicional do delivery fosse totalmente exibido no relatório de cliques em funcionamento. (NEO-18729)
+* Correção de um problema que ignorava a etapa de aprovação do público alvo ao retomar um fluxo de trabalho para enviar um delivery recorrente. (NEO-18166)
+* Correção de um problema que impedia que o botão de preparação **da mensagem de** Reiniciar retomasse o delivery após corrigir um erro no fluxo de trabalho. (NEO-13488)
+* Correção de um problema que resultava em falha de delivery durante a fase de rampa, onde o público alvo incluía recipient com formatos do email japoneses. (NEO-23846)
+* Correção de um problema de conversão de fuso horário com o Conector Snowflake (NEO-20105)
+* Correção de um problema com a conta externa que usa o FTP sobre SSL. (NEO-20498)
+* Correção de um problema que impedia a exibição de imagens em delivery de linha. (NEO-23207)
+* Correção de um problema que causava um erro ao publicar uma oferta. (NEO-23312)
+* Correção de um problema com notificações por push que permitiam que conexões de teste funcionassem em aplicativos móveis, mesmo quando o certificado expirava. (NEO-22991)
+* Correção de um problema que poderia afetar as notificações por push quando enviadas com alta frequência. (NEO-20516)
+* Correção de um problema que fazia com que os dados de rastreamento incluíssem duplicados, mesmo que os logs de rastreamento não incluíssem. (NEO-20040)
+* Correção de um problema que fazia com que emails transacionais de duplicado fossem enviados após uma falha de comunicação do servidor de rastreamento ser corrigida. (NEO-23640)
+* Correção de um problema que excluía o valor do parâmetro de codificação ao redirecionar de um URL de rastreamento. (NEO-25637)
+* Correção de um problema que impedia que um query funcionasse ao comparar números flutuantes. (NEO-23243)
+* Correção de um problema que impedia a exibição do conteúdo da coluna **Modificado por** pelo após reiniciar um fluxo de trabalho. (NEO-23035)
+* Correção de um problema que causava a falha do fluxo de trabalho técnico de rastreamento ao baixar registros de um segundo container. (NEO-23159)
+* Correção de um problema que resultava em falha de workflows ao executar uma atividade de **Enriquecimento** . (NEO-17338)
+* Uma verificação foi adicionada aos **Duplos para manter** o campo na atividade de fluxo de trabalho **Desduplicação-duplicada** para evitar a inserção de valores nulos ou negativos.
+* Removido o assistente **de** Scheduleres das campanhas recorrentes para evitar mencionar horas e minutos. Só são consideradas datas.
+* Correção de um problema com campos de armazenamento adicionais ao criar delivery por meio da opção **Calculado por um script** na atividade do fluxo de trabalho **Script** . (NEO-20609)
+* Correção de um problema que impedia que workflows fantasmas fossem excluídos nas tarefas de limpeza do banco de dados.
+* Correção de um problema que causava a falha do fluxo de trabalho técnico **Faturamento (perfis ativos)** . (NEO-19777)
+* Correção de um problema ao testar a conexão da conta externa acsDefaultAccount. (NEO-23433)
+* Correção de um problema que impedia a criação de uma extensão de schema em uma chave primária com várias colunas com uma tabela Hadoop. (NEO-17390)
+* Correção de um problema na atividade **Loading (SOAP)** que poderia impedir que arquivos WSDL fossem carregados de um URL. (NEO-16924)
+* Correção de um problema que impedia a execução de uma parada **** incondicional pelo console quando vários servidores de fluxo de trabalho ativos eram balanceados de carga. (NEO-19556)
+* Correção de uma regressão que resulta em falha do workflow de limpeza.
+* Correção de um problema que ocorria ao publicar um modelo em uma instância de execução.
+* Correção de um problema que poderia impedir a execução do fluxo de trabalho técnico collectPrivacyRequests. (NEO-20513, NEO-25169)
+* Correção de problemas que ocorriam ao tentar se conectar ao Gerenciador de Audiências após a atualização para a compilação 9080. (NEO-20511, NEO-25167)
+* Correção de problemas que podem ocorrer ao exportar relatórios no formato PDF ou XLS. (NEO-20982, NEO-23493, NEO-23348)
+* Correção de um problema que podia exibir um delivery duas vezes na lista do delivery depois de ele ser enviado.
+* Correção de um problema com a preparação do delivery que ocorria quando a configuração do roteamento era definida para enviar o delivery via mid-sourcing.
+* Correção de um problema que podia exibir uma mensagem de erro ao clicar em um link de aplicativo da Web em uma mensagem de Linha.
+* Correção de um problema que impedia o Microsoft Dynamics CRM de recuperar todas as entidades. (NEO-24528)
+* Correção de um problema que excluía o histórico de atividades de **Query incrementais** após a execução do fluxo de trabalho de limpeza.
+* Correção de um problema ao criar uma conta externa de mid-sourcing em que a opção NmsMidSourcing_LastBroadLog_&lt;InternalName> estava ausente
