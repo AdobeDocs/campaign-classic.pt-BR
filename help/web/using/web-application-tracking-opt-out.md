@@ -14,8 +14,11 @@ discoiquuid: 8f413002-bd32-426f-88b9-44cefae68593
 index: y
 internal: n
 snippet: y
-translation-type: ht
-source-git-commit: c9c9d5f96856ce9e19571bad032d2bf04eaa60bd
+translation-type: tm+mt
+source-git-commit: a62e4d072573f7ed1b77f755eb57838c70745592
+workflow-type: tm+mt
+source-wordcount: '674'
+ht-degree: 97%
 
 ---
 
@@ -25,6 +28,10 @@ source-git-commit: c9c9d5f96856ce9e19571bad032d2bf04eaa60bd
 O Adobe Campaign permite que você interrompa o rastreamento de comportamentos da Web de usuários finais que usam o opt out do rastreamento comportamental por meio de cookies ou web beacons. O recurso inclui a habilidade de exibir um banner para apresentar ao usuário final essa opção; você pode adicionar esses banners em aplicações web ou landing pages.
 
 Se um usuário final usar o opt out de rastreamento comportamental por meio de cookies ou Web beacons, essas informações serão transmitidas ao servidor de rastreamento do Adobe Campaign com APIs JavaScript. Observe que algumas jurisdições podem exigir que o Cliente apresente aos usuários finais um opt in antes que um opt out possa ser oferecido (ou ter outros requisitos legais) e é responsabilidade do cliente estar em conformidade com as leis aplicáveis.
+
+>[!NOTE]
+>
+>Quando os scripts sempre seguem as diretrizes descritas na lista [de verificação](https://helpx.adobe.com/campaign/kb/acc-security.html#dev)Segurança e Privacidade.
 
 ## Configuração do banner {#configuring-the-banner-}
 
