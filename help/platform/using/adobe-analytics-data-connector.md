@@ -14,11 +14,11 @@ discoiquuid: 5ff1577f-0809-46fd-ac1e-11b24637e35c
 index: y
 internal: n
 snippet: y
-translation-type: ht
-source-git-commit: e9923eb8cb78e7af05d64a122cd35b9cf3a4f215
-workflow-type: ht
+translation-type: tm+mt
+source-git-commit: e25560152a16865dc415ac2ffa1975808b3f6bbc
+workflow-type: tm+mt
 source-wordcount: '1661'
-ht-degree: 100%
+ht-degree: 99%
 
 ---
 
@@ -246,7 +246,7 @@ Para que a Adobe Experience Cloud possa rastrear a atividade nos sites, depois q
    ![](assets/webanalytics_delivery_properties_003.png)
 
 1. Abra as propriedades de delivery.
-1. Acesse a guia **[!UICONTROL Web Analytics]** e selecione a conta externa criada anteriormente. Consulte [Etapa 2 – Criar a conta externa no Campaign](#step-2--create-the-external-account-in-campaign).
+1. Acesse a guia **[!UICONTROL Web Analytics]** e selecione a conta externa criada anteriormente. Refer to [Step 2: Create the external account in Campaign](#step-2--create-the-external-account-in-campaign).
 
    ![](assets/webanalytics_delivery_properties_002.png)
 
