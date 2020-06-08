@@ -14,15 +14,18 @@ discoiquuid: cf535ff5-f871-4edb-bc05-993cd5b1937b
 index: y
 internal: n
 snippet: y
-translation-type: ht
-source-git-commit: 20f835c357d016643ea1f3209ee4dfb6d3239f90
+translation-type: tm+mt
+source-git-commit: b1a961822224ab0a9551f51942a5f94cf201c8ee
+workflow-type: tm+mt
+source-wordcount: '95'
+ht-degree: 85%
 
 ---
 
 
 # Gestão dos Recursos de Marketing (MRM){#marketing-resources-mrm}
 
-O workflows detalhado abaixo é instalado com o módulo **Gestão dos Recursos de Marketing (MRM)** por padrão. Para obter mais informações sobre esse módulo, consulte esta[seção](../../campaign/using/designing-marketing-campaigns.md).
+The workflows detailed below are installed with the **Marketing resources (MRM)** module by default. Para obter mais informações sobre esse módulo, consulte esta[seção](../../campaign/using/designing-marketing-campaigns.md).
 
 <table> 
  <tbody> 
