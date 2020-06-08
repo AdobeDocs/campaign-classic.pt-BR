@@ -14,8 +14,11 @@ discoiquuid: a2b43311-737c-4a3b-a6af-1788879f9414
 index: y
 internal: n
 snippet: y
-translation-type: ht
-source-git-commit: 3641e438784d40aa097f8c89ca19bdbb52f4bc7d
+translation-type: tm+mt
+source-git-commit: 3b04cf988f144b8bfb846aff83e97c9b3a82e6e0
+workflow-type: tm+mt
+source-wordcount: '878'
+ht-degree: 99%
 
 ---
 
@@ -28,7 +31,7 @@ O Adobe Campaign permite coordenar a criação de campanhas de marketing convers
 
 >[!NOTE]
 >
->O Adobe Campaign Classic está disponível nas versões v6.11 e v7. Exceto quando mencionado, os materiais de ajuda aplicam-se a ambas as versões, na compilação mais recente. As capturas de tela referem-se ao Campaign Classic v7.
+>O Adobe Campaign Classic está disponível nas versões v6.11 e v7. Exceto quando mencionado, os materiais de ajuda aplicam-se a ambas as versões, na compilação mais recente. As capturas de tela refletem a interface do usuário do Campaign Classic v7.
 
 ## Principais recursos {#key-capabilities}
 
