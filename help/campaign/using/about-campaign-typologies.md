@@ -14,8 +14,11 @@ discoiquuid: 72c5151c-ce1e-425a-9aee-beefe9f21a67
 index: y
 internal: n
 snippet: y
-translation-type: ht
-source-git-commit: 44d8ba19f2e79d30229239312e6a5148d247fb28
+translation-type: tm+mt
+source-git-commit: e97183256ef6d3f2068dd0fbc8eb3c3f32e0bae0
+workflow-type: tm+mt
+source-wordcount: '367'
+ht-degree: 100%
 
 ---
 
@@ -32,10 +35,10 @@ Otimização de Campanha é o módulo do Adobe Campaign que permite controlar, f
 
 Com o Adobe Campaign, você pode criar e aplicar quatro tipos de regras de tipologia:
 
-1. Regras de **Filtro**, que permitem excluir parte do público alvo com base em critérios. Para obter mais informações, consulte [Regras de filtragem](../../campaign/using/filtering-rules.md).
-1. Regras de **Pressão**, que permitem controlar a fadiga da marca. Para obter mais informações, consulte [Regras de pressão](../../campaign/using/pressure-rules.md).
-1. Regras de **Capacidade**, que permitem limitar cargas para garantir condições de processamento ideais. Para obter mais informações, consulte [Controle de capacidade](../../campaign/using/consistency-rules.md#controlling-capacity).
-1. Regras de **Controle** que permitem verificar a validade das mensagens antes de serem enviadas. Para obter mais informações, consulte [Regras de controle](../../campaign/using/control-rules.md).
+* Regras de **Filtro**, que permitem excluir parte do público alvo com base em critérios. Para obter mais informações, consulte [Regras de filtragem](../../campaign/using/filtering-rules.md).
+* Regras de **Pressão**, que permitem controlar a fadiga da marca. Para obter mais informações, consulte [Regras de pressão](../../campaign/using/pressure-rules.md).
+* Regras de **Capacidade**, que permitem limitar cargas para garantir condições de processamento ideais. Para obter mais informações, consulte [Controle de capacidade](../../campaign/using/consistency-rules.md#controlling-capacity).
+* Regras de **Controle** que permitem verificar a validade das mensagens antes de serem enviadas. Para obter mais informações, consulte [Regras de controle](../../campaign/using/control-rules.md).
 
 Depois de criadas, as regras de tipologia são agrupadas em tipologias de campanha, que são mencionadas nos deliveries. Consulte [Aplicação de tipologias](#applying-typologies).
 
