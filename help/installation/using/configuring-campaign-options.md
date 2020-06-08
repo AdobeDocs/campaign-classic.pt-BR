@@ -15,10 +15,10 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 5b6b4fd2b21f90a88744736b499eab1b0764774e
+source-git-commit: de1173786c94c2a526153e7e6948f71c9523fa7b
 workflow-type: tm+mt
-source-wordcount: '3740'
-ht-degree: 4%
+source-wordcount: '3903'
+ht-degree: 3%
 
 ---
 
@@ -109,6 +109,18 @@ Alguns deles são incorporados ao instalar a Campanha e outros podem ser adicion
   <tr> 
    <td> <span class="uicontrol">NmsDelivery_FromAddressMask</span> <br /> </td> 
    <td> Permite definir a sintaxe do endereço De usado ao enviar uma mensagem.<br /> </td> 
+  </tr> 
+  <tr> 
+   <td> <span class="uicontrol">NmsDelivery_ImageServerTimeout</span> <br /> </td> 
+   <td> Permite definir um limite de tempo limite (em segundos) para obter uma resposta do servidor ao recuperar uma imagem baixada de um URL personalizado e anexada a um email. Se esse valor for excedido, a mensagem não poderá ser enviada. O valor padrão é de 60 segundos.<br /> </td> 
+  </tr> 
+ <tr> 
+   <td> <span class="uicontrol">NmsDelivery_MaxDownloadedImageSize</span> <br /> </td> 
+   <td> Permite definir o tamanho máximo (em bytes) permitido para uma imagem baixada de um URL personalizado e anexada a um email. O valor padrão é 100.000 bytes. Ao enviar uma prova e baixar as imagens para processar o e-mail, se o tamanho de uma imagem exceder esse valor ou se houver um problema de download, um erro será exibido nos Logs do delivery e o delivery da prova falhará.<br /> </td> 
+  </tr> 
+  <tr> 
+   <td> <span class="uicontrol">NmsDelivery_MaxRecommendedAttachments</span> <br /> </td> 
+   <td> Permite definir um número máximo de anexos em um modelo de email ou de email transacional. Se esse valor for excedido, um aviso será exibido nos registros de análises do delivery ou ao publicar o modelo de email transacional. The default value is 1 attachment.<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">NmsDelivery_MaxRetry</span> <br /> </td> 
