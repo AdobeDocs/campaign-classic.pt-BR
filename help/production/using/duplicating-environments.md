@@ -15,7 +15,10 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 779d9162b7296339a796512838612ede1186ddcc
+source-git-commit: cb44d439c6866d94f8e1201575ab3d3094d6ad79
+workflow-type: tm+mt
+source-wordcount: '1291'
+ht-degree: 2%
 
 ---
 
@@ -32,47 +35,47 @@ source-git-commit: 779d9162b7296339a796512838612ede1186ddcc
 
 O uso do Adobe Campaign requer a instalação e configuração de um ou mais ambientes: desenvolvimento, teste, pré-produção, produção, etc.
 
-Cada ambiente contém uma instância do Adobe Campaign e cada instância do Adobe Campaign está vinculada a um ou mais bancos de dados. O servidor de aplicativos pode executar um ou mais processos: quase todos têm acesso direto ao banco de dados da instância.
+Cada ambiente contém uma instância Adobe Campaign e cada instância Adobe Campaign é vinculada a um ou mais bancos de dados. O servidor de aplicativos pode executar um ou mais processos: quase todos têm acesso direto ao banco de dados da instância.
 
-Esta seção detalha os processos a serem aplicados para duplicar um ambiente do Adobe Campaign, isto é, restaurar um ambiente de origem para um ambiente de destino, resultando em dois ambientes de trabalho idênticos.
+Esta seção detalha os processos a serem aplicados ao ambiente de Adobe Campaign, isto é, para restaurar um ambiente de origem para um ambiente de público alvo, resultando em dois ambientes de trabalho idênticos.
 
 Para fazer isso, siga as etapas abaixo:
 
-1. Criar uma cópia dos bancos de dados em todas as instâncias no ambiente de origem,
-1. Restaure essas cópias em todas as instâncias do ambiente de destino,
-1. Execute o script de cauterização **nms:congelamentoInstance.js** no ambiente de destino antes de iniciá-lo.
+1. Criar uma cópia dos bancos de dados em todas as instâncias do ambiente de origem,
+1. Restaure essas cópias em todas as instâncias do ambiente do público alvo,
+1. Execute o script de cauterização **nms:congelamentoInstance.js** no ambiente do público alvo antes de iniciá-lo.
 
    Esse processo não afeta os servidores e suas configurações.
 
    >[!NOTE]
    >
-   >No contexto do Adobe Campaign, uma **cauterização** combina ações que permitem interromper todos os processos interagindo com o exterior: registros, rastreamento, entregas, fluxos de trabalho de campanha etc.\
+   >No contexto do Adobe Campaign, uma **cauterização** combina ações que permitem interromper todos os processos interagindo com o exterior: registros, rastreamento, delivery, workflows da campanha etc.\
    >Essa etapa é necessária para evitar a entrega de mensagens várias vezes (uma vez do ambiente nominal e outra do ambiente duplicado).
 
    >[!CAUTION]
    >
-   >Um ambiente pode conter várias instâncias. Cada instância do Adobe Campaign está sujeita a um contrato de licença. Verifique seu contrato de licença para ver quantos ambientes você pode ter.\
-   >O procedimento abaixo permite que você transfira um ambiente sem afetar o número de ambientes e instâncias instalados.
+   >Um ambiente pode conter várias instâncias. Cada instância de Adobe Campaign está sujeita a um contrato de licença. Verifique seu contrato de licença para ver quantos ambientes você pode ter.\
+   >O procedimento abaixo permite que você transfira um ambiente sem afetar o número de ambientes e instâncias que você instalou.
 
-### Antes de começar {#before-you-start}
+### Antes do seu start {#before-you-start}
 
 >[!CAUTION]
 >
->Recomendamos executar um backup completo dos bancos de dados para todas as instâncias dos ambientes de origem e de destino antes de iniciar o processo de transferência. Assim, se ocorrer um problema, você poderá restaurar os backups e retornar à configuração inicial.
+>Recomendamos executar um backup completo dos bancos de dados para todas as instâncias dos ambientes de origem e público alvo antes de iniciar o processo de transferência. Assim, se ocorrer um problema, você poderá restaurar os backups e retornar à configuração inicial.
 
-Para que esse processo funcione, os ambientes de origem e de destino devem ter o mesmo número de instâncias, a mesma finalidade (instância de marketing, instância de entrega) e configurações semelhantes. A configuração técnica deve estar em conformidade com os pré-requisitos de software. Os mesmos componentes devem ser instalados em ambos os ambientes.
+Para que esse processo funcione, os ambientes de origem e de público alvo devem ter o mesmo número de instâncias, a mesma finalidade (instância de marketing, instância de delivery) e configurações semelhantes. A configuração técnica deve estar em conformidade com os pré-requisitos de software. Os mesmos componentes devem ser instalados em ambos os ambientes.
 
 ## Implementação {#implementation}
 
 ### Procedimento de transferência {#transfer-procedure}
 
-Esta seção o ajudará a entender as etapas necessárias para transferir um ambiente de origem para um ambiente de destino por meio de um estudo de caso: nosso objetivo aqui é restaurar um ambiente de produção (instância **prod** ) para um ambiente de desenvolvimento (instância **dev** ) para funcionar em um contexto o mais próximo possível da plataforma &#39;live&#39;.
+Esta seção o ajudará a entender as etapas necessárias para transferir um ambiente de origem para um ambiente de público alvo por meio de um estudo de caso: nosso objetivo aqui é restaurar um ambiente de produção (instância **prod** ) para um ambiente de desenvolvimento (instância **dev** ) para trabalhar em um contexto o mais próximo possível da plataforma &#39;live&#39;.
 
 As etapas a seguir devem ser executadas com muito cuidado: alguns processos ainda podem estar em andamento quando os bancos de dados do ambiente de origem são copiados. A cauterização (etapa 3 abaixo) impede que as mensagens sejam enviadas duas vezes e mantém a consistência dos dados.
 
 >[!CAUTION]
 >
->* O procedimento a seguir é válido na linguagem PostgreSQL. Se a linguagem SQL for diferente (Oracle, por exemplo), as consultas SQL devem ser adaptadas.
+>* O procedimento a seguir é válido na linguagem PostgreSQL. Se o idioma SQL for diferente (Oracle, por exemplo), os query SQL devem ser adaptados.
 >* Os comandos abaixo se aplicam no contexto de uma instância de **prod** e uma instância **dev** em PostgreSQL.
 >
 
@@ -82,7 +85,7 @@ As etapas a seguir devem ser executadas com muito cuidado: alguns processos aind
 
 Copiar os bancos de dados
 
-Comece copiando todos os bancos de dados do ambiente de origem. A operação depende do mecanismo de banco de dados e é da responsabilidade do administrador do banco de dados.
+Start copiando todos os bancos de dados de ambientes de origem. A operação depende do mecanismo de banco de dados e é da responsabilidade do administrador do banco de dados.
 
 Em PostgreSQL, o comando é:
 
@@ -90,13 +93,13 @@ Em PostgreSQL, o comando é:
 pg_dump mydatabase > mydatabase.sql
 ```
 
-### Etapa 2 - Exportar a configuração do ambiente de destino (dev) {#step-2---export-the-target-environment-configuration--dev-}
+### Etapa 2 - Exportar a configuração do ambiente do público alvo (dev) {#step-2---export-the-target-environment-configuration--dev-}
 
-A maioria dos elementos de configuração são diferentes para cada ambiente: contas externas (mid-sourcing, roteamento etc.), opções técnicas (nome da plataforma, DatabaseId, endereços de email e URLs padrão, etc.).
+A maioria dos elementos de configuração são diferentes para cada ambiente: conta externa (mid-sourcing, roteamento, etc.), opções técnicas (nome da plataforma, ID do banco de dados, endereços de email e URLs padrão, etc.).
 
-Antes de salvar o banco de dados de origem no banco de dados de destino, é necessário exportar a configuração do ambiente de destino (dev). Para fazer isso, exporte o conteúdo dessas duas tabelas: **xtkoption** e **nmsextaccount**.
+Antes de salvar o banco de dados de origem no banco de dados do público alvo, é necessário exportar a configuração de ambiente do público alvo (dev). Para fazer isso, exporte o conteúdo dessas duas tabelas: **xtkoption** e **nmsextaccount**.
 
-Essa exportação permite manter a configuração dev e atualizar apenas os dados dev (fluxos de trabalho, modelos, aplicativos Web, destinatários etc.).
+Essa exportação permite manter a configuração dev e atualizar apenas os dados dev (workflows, modelos, Aplicações web, recipient etc.).
 
 Para fazer isso, execute uma exportação de pacote para os dois elementos a seguir:
 
@@ -111,9 +114,13 @@ Verifique se o número de opções/contas exportadas é igual ao número de linh
 > 
 >Para obter mais informações, consulte [esta seção](../../platform/using/working-with-data-packages.md#exporting-packages).
 
-### Etapa 3 - Parar o ambiente de destino (dev) {#step-3---stop-the-target-environment--dev-}
+>[!NOTE]
+>
+>Quando a tabela nmsextaccount é exportada, as senhas relacionadas às contas externas (por exemplo, senhas para Mid-sourcing, Execução do centro de mensagens, SMPP, IMS e outras contas externas) não são exportadas. Verifique se você tem acesso às senhas corretas antecipadamente, pois elas podem precisar ser digitadas novamente depois que as contas externas forem importadas de volta para o ambiente.
 
-Você precisa parar os processos do Adobe Campaign em todos os servidores de ambiente de destino. Esta operação depende do seu sistema operacional.
+### Etapa 3 - Parar o ambiente do público alvo (dev) {#step-3---stop-the-target-environment--dev-}
+
+Você precisa parar os processos de Adobe Campaign em todos os servidores de ambientes de públicos alvos. Esta operação depende do seu sistema operacional.
 
 Você pode interromper todos os processos, ou apenas aqueles que gravam no banco de dados.
 
@@ -145,20 +152,20 @@ Você também pode verificar se nenhum processo do sistema ainda está em execu�
 
 Para fazer isso, realize o seguinte processo:
 
-* No Windows: abra o Gerenciador **de** tarefas e verifique se não há processos **nlserver.exe** .
-* No Linux: execute os **ps aux| grep nlserver** e verifique se não há processos **nlserver** .
+* No Windows: abra o gerenciador **de** Tarefas e verifique se não há processos **nlserver.exe** .
+* No Linux: execute os **ps aux | grep nlserver** e verifique se não há processos **nlserver** .
 
-### Etapa 4 - Restaurar os bancos de dados no ambiente de destino (dev) {#step-4---restore-the-databases-in-the-target-environment--dev-}
+### Etapa 4 - Restaurar os bancos de dados no ambiente do público alvo (dev) {#step-4---restore-the-databases-in-the-target-environment--dev-}
 
-Para restaurar os bancos de dados de origem no ambiente de destino, use o seguinte comando:
+Para restaurar os bancos de dados de origem no ambiente do público alvo, use o seguinte comando:
 
 ```
 psql mydatabase < mydatabase.sql
 ```
 
-### Etapa 5 - Cauterizar o ambiente de destino (dev) {#step-5---cauterize-the-target-environment--dev-}
+### Etapa 5 - Cauterizar o ambiente do público alvo (dev) {#step-5---cauterize-the-target-environment--dev-}
 
-Para evitar disfuncionamentos, os processos vinculados ao envio da entrega e à execução do fluxo de trabalho não devem ser executados automaticamente quando o ambiente de destino for ativado.
+Para evitar disfuncionamentos, os processos vinculados ao envio do delivery e à execução do fluxo de trabalho não devem ser executados automaticamente quando o ambiente do público alvo for ativado.
 
 Para fazer isso, execute o seguinte comando:
 
@@ -174,7 +181,7 @@ nlserver javascript nms:freezeInstance.js -instance:<dev> -arg:run
    SELECT * FROM neolane.nmsdeliverypart;
    ```
 
-1. Verifique se a atualização de status de entrega está correta:
+1. Verifique se a atualização de status do delivery está correta:
 
    ```
    SELECT iState, count(*) FROM neolane.nmsdelivery GROUP BY iState;
@@ -187,17 +194,17 @@ nlserver javascript nms:freezeInstance.js -instance:<dev> -arg:run
    SELECT iStatus, count(*) FROM neolane.xtkworkflow GROUP BY iStatus;
    ```
 
-### Etapa 7 - Reiniciar o processo Web do ambiente de destino (dev) {#step-7---restart-the-target-environment-web-process--dev-}
+### Etapa 7 - Reiniciar o processo Web do ambiente do público alvo (dev) {#step-7---restart-the-target-environment-web-process--dev-}
 
-No ambiente de destino, reinicie os processos do Adobe Campaign para todos os servidores.
+No ambiente do público alvo, start novamente os processos Adobe Campaign para todos os servidores.
 
 >[!NOTE]
 >
->Antes de reiniciar o Adobe Campaign no ambiente **dev** , você pode aplicar um procedimento de segurança adicional: inicie somente o módulo **da Web** .
+>Antes de reiniciar o Adobe Campaign no ambiente **dev** , você pode aplicar um procedimento de segurança adicional: start somente o módulo **da Web** .
 >  
 >Para fazer isso, edite o arquivo de configuração da sua instância (**config-dev.xml**) e adicione o caractere &quot;_&quot; antes das opções autoStart=&quot;true&quot; para cada módulo (mta, stat etc.).
 
-Execute o seguinte comando para iniciar o processo da Web:
+Execute o seguinte comando para start do processo da Web:
 
 ```
 nlserver start web
@@ -211,28 +218,28 @@ nlserver pdump
 
 Verifique esse acesso às funções do console do cliente.
 
-### Etapa 8 - importar opções e contas externas para o ambiente de destino (dev) {#step-8---import-options-and-external-accounts-into-the-target-environment--dev-}
+### Etapa 8 - Importar opções e contas externas para o ambiente do público alvo (dev) {#step-8---import-options-and-external-accounts-into-the-target-environment--dev-}
 
 >[!CAUTION]
 >
 >Somente o processo da Web deve ser iniciado nesta etapa. Se esse não for o caso, pare outros processos em execução antes de continuar
 
-Acima de tudo, verifique os valores de várias linhas dos arquivos antes de importá-los (por exemplo: &#39;NmsTracking_Pointer&#39; para a tabela de opções e as contas de entrega ou mid-sourcing para a tabela de conta externa)
+Acima de tudo, verifique os valores de várias linhas dos arquivos antes de importá-los (por exemplo: &#39;NmsTracking_Pointer&#39; para a tabela de opções e as contas de delivery ou mid-sourcing para a tabela de conta externa)
 
-Para importar a configuração do banco de dados de ambiente de destino (dev):
+Para importar a configuração do banco de dados do ambiente do público alvo (dev):
 
-1. Abra o console de administração do banco de dados e expurgue as contas externas (tabela nms:extAccount) cuja ID não seja 0 (@id &lt;> 0).
-1. No console do Adobe Campaign, importe o pacote options_dev.xml criado anteriormente pela funcionalidade do pacote de importação.
+1. Abra o console de administração do banco de dados e expurgue as contas externas (table nms:extAccount) cuja ID não seja 0 (@id &lt;> 0).
+1. No console Adobe Campaign, importe o pacote options_dev.xml criado anteriormente pela funcionalidade do pacote de importação.
 
    Verifique se as opções foram atualizadas no **[!UICONTROL Administration > Platform > Options]** nó.
 
-1. No console do Adobe Campaign, importe o extaccount_dev.xml criado anteriormente pela funcionalidade do pacote de importação
+1. No console Adobe Campaign, importe o extaccount_dev.xml criado anteriormente pela funcionalidade do pacote de importação
 
    Verifique se as bases de dados externas foram realmente importadas no **[!UICONTROL Administration > Platform > External accounts]** .
 
 ### Etapa 9 - Reiniciar todos os processos e alterar usuários (dev) {#step-9---restart-all-processes-and-change-users--dev-}
 
-Para iniciar os processos do Adobe Campaign, use os seguintes comandos:
+Para start, use os seguintes comandos para Adobe Campaign:
 
 * No Windows:
 
