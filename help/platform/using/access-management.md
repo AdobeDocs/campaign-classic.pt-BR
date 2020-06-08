@@ -14,11 +14,11 @@ discoiquuid: c0eb06fd-192c-4ee4-9a38-c9bedbe6aea0
 index: y
 internal: n
 snippet: y
-translation-type: ht
-source-git-commit: 4148efa9c7a8b002672d72fc526753bf7304673c
-workflow-type: ht
-source-wordcount: '2894'
-ht-degree: 100%
+translation-type: tm+mt
+source-git-commit: 651dfdab75f64d72a1c5beb1273a878ee7102b47
+workflow-type: tm+mt
+source-wordcount: '2912'
+ht-degree: 99%
 
 ---
 
@@ -62,7 +62,7 @@ O procedimento completo para criar um operador é descrito [nesta página](#crea
 
 Para obter mais informações sobre o Adobe Campaign e a integração de LDAP, consulte [esta página](../../installation/using/connecting-through-ldap.md).
 
->[!CAUTION]
+>[!IMPORTANT]
 >
 >Os operadores devem ser vinculados a uma zona de segurança para fazer logon em uma instância. Para obter mais informações sobre as zonas de segurança do Adobe Campaign, consulte [esta página](../../installation/using/configuring-campaign-server.md#defining-security-zones).
 
@@ -149,7 +149,7 @@ O link **[!UICONTROL Edit the access parameters...]** permite acessar as seguint
 
    ![](assets/s_ncs_user_restrictions_operators.png)
 
-   >[!CAUTION]
+   >[!IMPORTANT]
    >
    >Essa é uma restrição muito rígida e deve ser usada com cuidado. Um operador conectado com este tipo de direito pode ver SOMENTE o conteúdo da pasta especificada e não tem acesso a nenhum outro nó da árvore por meio do explorador. No entanto, dependendo das funcionalidades que ele tem acesso (por exemplo: workflows), é possível exibir dados que normalmente são armazenados em nós que não podem ser vistos.
 
@@ -179,7 +179,7 @@ Você pode acessar:
 
 O Adobe Campaign usa operadores técnicos com perfis configurados por padrão: administrador (&quot;admin&quot;), faturamento (&quot;billing&quot;), monitoramento, agente de aplicação web (&quot;webapp&quot;) etc. Alguns deles dependem dos aplicativos e opções instalados na plataforma: os operadores &quot;central&quot; e &quot;local&quot;, por exemplo, só estarão visíveis se a opção &quot;Distributed Marketing&quot; estiver instalada.
 
->[!CAUTION]
+>[!IMPORTANT]
 >
 >Esses operadores técnicos são notificados por padrão quando as mensagens de informação são devolvidas pela plataforma. É altamente recomendável fornecer um e-mail de contato para eles.
 >
@@ -396,7 +396,7 @@ Na guia **[!UICONTROL Security]**, se a opção **[!UICONTROL System folder]** e
 
 ## Pastas e visualizações {#folders-and-views}
 
-### Sobre pastas e visualizações {#about-folders-and-views}
+### Sobre pastas {#about-folders}
 
 Pastas são nós na árvore do Adobe Campaign. Esses nós são criados clicando com o botão direito do mouse na árvore, por meio do menu **[!UICONTROL Add new folder]**. Por padrão, o primeiro menu permite adicionar a pasta correspondente ao contexto atual.
 
@@ -404,17 +404,23 @@ Pastas são nós na árvore do Adobe Campaign. Esses nós são criados clicando 
 
 É possível conceder permissões a essas pastas como em todas as outras pastas da árvore. Consulte [Gerenciamento de acesso a pastas](#folder-access-management).
 
+### Sobre o visualização {#about-views}
+
 Além disso, você pode criar visualizações para restringir o acesso aos dados e organizar o conteúdo da árvore para atender aos seus requisitos. É possível atribuir direitos às visualizações.
 
 Uma visualização é uma pasta que exibe os registros fisicamente armazenados em uma ou mais pastas do mesmo tipo. Por exemplo, se você criar uma pasta do Campaing que seja uma visualização, ela exibirá todas as campanhas presentes no banco de dados por padrão, independente de sua origem. Esses dados podem ser filtrados.
 
 Quando você converte uma pasta em uma visualização, todos os dados correspondentes ao tipo de pasta presentes no banco de dados são exibidos na visualização, independentemente da pasta em que são salvos. É possível filtrar para restringir a lista de dados exibidos.
 
->[!CAUTION]
+>[!IMPORTANT]
 >
 >As visualizações contêm dados e fornecem acesso a eles, mas os dados não são armazenados fisicamente na pasta de visualização. O operador deve ter os direitos apropriados para a ação desejada nas pastas da fonte de dados (acesso de leitura no mínimo).
 >
 >Para conceder acesso a uma visualização sem conceder acesso à pasta de origem, basta não conceder acesso de leitura no nó pai da pasta de origem.
+
+Para distinguir visualizações de pastas, o nome de cada visualização é exibido em uma cor diferente (ciano escuro).
+
+![](assets/s_ncs_user_view_name_color.png)
 
 ### Adição de pastas e criação de visualizações {#adding-folders-and-creating-views}
 
@@ -442,4 +448,3 @@ No exemplo abaixo, criaremos novas pastas para exibir dados específicos:
 Os seguintes deliveries serão exibidos na visualização:
 
 ![](assets/s_ncs_user_add_folder_exple02.png)
-
