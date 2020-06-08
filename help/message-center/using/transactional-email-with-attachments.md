@@ -12,11 +12,11 @@ discoiquuid: 7b8ab9d6-e47e-46d8-99df-da793486654c
 index: y
 internal: n
 snippet: y
-translation-type: ht
-source-git-commit: 24a50fcaad4d9081e5504652eb5b73aa7db1e65f
-workflow-type: ht
-source-wordcount: '560'
-ht-degree: 100%
+translation-type: tm+mt
+source-git-commit: 22d0e70f77eb3759632e05ab1cb0d8ee53adfac9
+workflow-type: tm+mt
+source-wordcount: '629'
+ht-degree: 89%
 
 ---
 
@@ -45,6 +45,10 @@ Nesse cenário, os anexos não são pré-criados, mas adicionados instantaneamen
 * Além disso, se o anexo estiver associado a uma transação (como no exemplo acima), talvez seja necessário que ele contenha dados dinâmicos gerados durante o processo do cliente.
 * Anexar arquivos PDF otimiza a segurança, pois é possível criptografá-los e enviá-los por HTTPS.
 
+>[!NOTE]
+>
+>Para evitar problemas de desempenho, se você incluir imagens baixadas dinamicamente de um URL personalizado como anexo, cada tamanho de imagem não deve exceder 100.000 bytes por padrão. Esse limite recomendado pode ser configurado [a partir da lista das opções](../../installation/using/configuring-campaign-options.md#delivery)Campaign Classic.
+
 ## Recomendações {#important-notes}
 
 Antes de implementar este cenário, leia atentamente as diretrizes abaixo:
@@ -53,6 +57,10 @@ Antes de implementar este cenário, leia atentamente as diretrizes abaixo:
 * Como não há acesso direto às instâncias de Mensagens transacionais ou servidores fora da Adobe, não há forma padrão de enviar esses arquivos nesses servidores (sem acesso FTP).
 * Não é contratualmente correto usar o espaço em disco nas instâncias de mensagens transacionais para armazenar arquivos de qualquer tipo, nem mesmo para anexos.
 * Você precisa usar outro sistema de disco online para hospedar esses arquivos Você precisa de um acesso FTP para este sistema e ser capaz de gravar e excluir arquivos.
+
+>[!NOTE]
+>
+>Para evitar problemas de desempenho, é recomendável não incluir mais de um anexo por email. O limite recomendado pode ser configurado [a partir da lista das opções](../../installation/using/configuring-campaign-options.md#delivery)Campaign Classic.
 
 ## Implementação {#implementation}
 
