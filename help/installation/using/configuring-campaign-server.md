@@ -1,7 +1,7 @@
 ---
-title: Configuração do servidor de Campanha
-seo-title: Configuração do servidor de Campanha
-description: Configuração do servidor de Campanha
+title: Configuração do servidor do Campaign
+seo-title: Configuração do servidor do Campaign
+description: Configuração do servidor do Campaign
 seo-description: null
 page-status-flag: never-activated
 uuid: be21ae4b-ca2a-4952-b256-cd8dc51309cf
@@ -15,12 +15,15 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 7db84fc951234cb6257d8e41615ba7fc5b2c6f77
+source-git-commit: 1909cc8640a32eb709187dab084778f03ef39118
+workflow-type: tm+mt
+source-wordcount: '3589'
+ht-degree: 4%
 
 ---
 
 
-# Configuração do servidor de Campanha{#configuring-campaign-server}
+# Configuração do servidor do Campaign{#configuring-campaign-server}
 
 A seção abaixo detalha as configurações do lado do servidor que podem ser executadas para atender às suas necessidades e às suas especificidades de ambiente.
 
@@ -30,11 +33,11 @@ A seção abaixo detalha as configurações do lado do servidor que podem ser ex
 >
 >Para implantações **hospedadas** , as configurações do lado do servidor podem ser configuradas somente pela Adobe. No entanto, algumas configurações podem ser configuradas no Painel de controle (por exemplo, permissões de IP ou de URL).
 
-Para obter mais informações, consulte estas seções:
+Para obter mais informações, consulte esta seção.
 
-* [Documentação do Painel de controle](https://docs.adobe.com/content/help/en/control-panel/using/control-panel-home.html)
+* [Documentação do Painel de controle](https://docs.adobe.com/content/help/pt-BR/control-panel/using/control-panel-home.translate.html)
 * [Modelos de hospedagem](../../installation/using/hosting-models.md)
-* [Matriz de capacidade local e hospedada do Campaign Classic](https://helpx.adobe.com/campaign/kb/acc-on-prem-vs-hosted.html)
+* [Matriz de capacidade local e hospedada do Campaign Classic](https://helpx.adobe.com/br/campaign/kb/acc-on-prem-vs-hosted.html)
 * [Etapas de configuração de modelos híbridos e hospedados](https://docs.campaign.adobe.com/doc/AC/en/INS_Hybrid_and_Hosted_models_About_hybrid_and_hosted_models.html)
 
 Os arquivos de configuração do Campaign Classic são armazenados na pasta **conf** da pasta de instalação do Adobe Campaign. A configuração é distribuída por dois arquivos:
@@ -74,7 +77,7 @@ Cada zona define direitos, como:
 >**Cada operador deve estar vinculado a uma zona**. Se o endereço IP do operador pertencer ao intervalo definido pela zona, o operador poderá fazer logon na instância.\
 >O endereço IP do operador pode ser definido em várias zonas. Nesse caso, o operador recebe o **conjunto** de direitos disponíveis para cada zona.
 
-O arquivo **serverConf.xml** predefinido inclui três zonas: **público, VPN e LAN**.
+O arquivo **serverConf.xml** predefinido inclui três zonas: **public, VPN e LAN**.
 
 >[!NOTE]
 >
@@ -340,16 +343,16 @@ Para fazer isso, siga as etapas abaixo:
 
 ## Permissões de URL {#url-permissions}
 
-A lista padrão de URLs que podem ser chamados por códigos JavaScript (workflows etc.) pelas instâncias de Campaign Classic é limitado. Esses são URLs que permitem que suas instâncias funcionem corretamente.
+A lista padrão de URLs que podem ser chamados por códigos JavaScript (workflows etc.) pelas instâncias do Campaign Classic é limitada. Esses são os URLs que permitem que as instâncias funcionem corretamente.
 
-Por padrão, as instâncias não têm permissão para se conectar a URLs externos. No entanto, é possível adicionar URLs externos à lista de URLs autorizados, para que sua instância possa se conectar a eles. Isso permite que você conecte as instâncias de Campanha a sistemas externos, como, por exemplo, servidores SFTP ou sites, para habilitar a transferência de arquivos e/ou dados.
+Por padrão, as instâncias não têm permissão para se conectar a URLs externos. No entanto, é possível adicionar URLs externos à lista de URLs autorizados, para que sua instância possa se conectar a eles. Dessa forma, você pode conectar as instâncias do Campaign a sistemas externos, como servidores ou sites SFTP para habilitar a transferência de arquivos e/ou dados.
 
-Depois que um URL é adicionado, ele é referenciado no arquivo de configuração da instância (serverConf.xml).
+Depois de adicionado, o URL é referenciado no arquivo de configuração da instância (serverConf.xml).
 
 A maneira de gerenciar permissões de URL depende do modelo de hospedagem:
 
 * **Híbrido** ou **local**: adicione os URLs a serem permitidos no arquivo **** serverConf.xml. A seção seguinte contém informações detalhadas.
-* **Hospedado**: adicione os URLs a serem permitidos pelo Painel **de controle**. For more information, refer to the [dedicated documentation](https://docs.adobe.com/content/help/en/control-panel/using/instances-settings/url-permissions.html).
+* **Hospedado**: adicione os URLs a serem permitidos pelo Painel **de controle**. Para obter mais informações, consulte a [documentação específica](https://docs.adobe.com/content/help/pt-BR/control-panel/using/instances-settings/url-permissions.html).
 
 Com modelos de hospedagem **Híbrido** e **Local** , o administrador precisa fazer referência a um novo **urlPermission** no arquivo **serverConf.xml** . Todos os parâmetros disponíveis no **serverConf.xml** estão listados nesta [seção](../../installation/using/the-server-configuration-file.md).
 
@@ -371,11 +374,11 @@ Existem três modos de proteção de conexão:
 >
 >Por padrão, o cliente dos novos clientes usa o modo **de** bloqueio. Se for necessário permitir um novo URL, eles devem entrar em contato com o administrador para incluí-lo na lista de permissões.
 >
->Os clientes existentes que vêm de uma migração podem usar o modo **de** aviso por algum tempo. Enquanto isso, eles precisam analisar o tráfego de saída antes de autorizar os URLs. Depois que a lista de URLs autorizados for definida, eles devem entrar em contato com o administrador para adicionar os URLs à lista de permissões e ativar o modo **de** bloqueio.
+>Existing customers coming from a migration can use the **warning mode** for a while. Enquanto isso, eles precisam analisar o tráfego de saída antes de autorizar os URLs. Depois que a lista de URLs autorizados for definida, eles devem entrar em contato com o administrador para adicionar os URLs à lista de permissões e ativar o modo **de** bloqueio.
 
 ## Segurança de página dinâmica e relés {#dynamic-page-security-and-relays}
 
-Por padrão, todas as páginas dinâmicas são automaticamente relacionadas ao servidor Tomcat **local** da máquina cujo módulo Web foi iniciado. Essa configuração é inserida na **`<url>`** seção da configuração de retransmissão de query para o arquivo **ServerConf.xml** . Todos os parâmetros disponíveis no **serverConf.xml** estão listados nesta [seção](../../installation/using/the-server-configuration-file.md).
+By default, all dynamic pages are automatically related to the **local** Tomcat server of the machine whose Web module has started. Essa configuração é inserida na **`<url>`** seção da configuração de retransmissão de query para o arquivo **ServerConf.xml** . Todos os parâmetros disponíveis no **serverConf.xml** estão listados nesta [seção](../../installation/using/the-server-configuration-file.md).
 
 Retransmitir a execução da página dinâmica em um servidor **remoto** ; se o módulo da Web não estiver ativado no computador. Para fazer isso, você deve substituir o **localhost** pelo nome do computador remoto para JSP e JSSP, Aplicação web, relatórios e strings.
 
@@ -509,7 +512,7 @@ Os URLs dos servidores redundantes devem ser especificados na configuração de 
 
 A propriedade **enableIf** é opcional (vazia por padrão) e permite ativar a conexão somente se o resultado for verdadeiro; Isso permite obter uma configuração idêntica em todos os servidores de redirecionamento.
 
-Para obter o nome do host do computador, execute o seguinte comando: nome do **host -s**.
+Para obter o nome do host do computador, execute o seguinte comando: **nome do host -s**.
 
 ## Gerenciamento de recursos públicos {#managing-public-resources}
 
@@ -610,6 +613,8 @@ Por exemplo: **uploadWhiteList=&quot;.*.png,.*.jpg&quot;** permitirá que você 
 Se precisar conectar o servidor de Campanha ao exterior por meio de um proxy (usando uma atividade de fluxo de trabalho de transferência de arquivos, por exemplo), é necessário configurar a seção proxyConfig do serverConf por meio de um comando. As seguintes conexões proxy são possíveis: HTTP, HTTPS, FTP, SFTP. Todos os parâmetros disponíveis no **serverConf.xml** estão listados nesta [seção](../../installation/using/the-server-configuration-file.md).
 
 >[!NOTE]
+>
+>A partir do 20.2, os parâmetros do protocolo HTTP e HTTPS não estarão mais disponíveis. As informações a seguir ainda mencionam esses parâmetros, já que eles permanecem disponíveis para compilações anteriores, incluindo o 9032.
 >
 >Os proxy SOCKS não são suportados.
 
