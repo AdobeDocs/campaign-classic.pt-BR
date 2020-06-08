@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: d80e3d47b06b7a03974d9cfdd465861b3c5bcf81
+source-git-commit: 0386ae88a1b4d9ebda64283d874e01b14e9e5af4
 workflow-type: tm+mt
 source-wordcount: '708'
 ht-degree: 9%
@@ -27,7 +27,7 @@ ht-degree: 9%
 
 >[!NOTE]
 >
->Primeiro, você deve verificar se tem a versão mais recente instalada. Isso garante que você tenha os recursos e as correções de erros mais recentes. Consulte as Notas [de](https://docs.campaign.adobe.com/doc/AC/br/RN.html) versão para obter mais informações sobre o conteúdo de cada versão.
+>Primeiro, você deve verificar se tem a versão mais recente instalada. Isso garante que você tenha os recursos e as correções de erros mais recentes. Consulte as Notas [de](https://docs.adobe.com/content/help/pt-BR/campaign-classic/using/release-notes/latest-release.html) versão para obter mais informações sobre o conteúdo de cada versão.
 
 ## Hardware e infraestrutura {#hardware-and-infrastructure}
 
@@ -69,7 +69,7 @@ Esta é uma lista de práticas recomendadas e artigos relacionados à entrega:
 * reputação do IP: se a reputação do IP não for boa o suficiente, haverá um impacto no desempenho. O módulo de Monitoramento **da** Disponibilidade oferta várias ferramentas para rastrear o desempenho da sua plataforma. Consulte esta [página](../../delivery/using/monitoring-deliverability.md).
 * Aquecimento de IP: o aquecimento de IP é realizado pela equipe de entrega. Isso envolve aumentar gradualmente o número de emails por meio de novos IPs, durante um período de poucas semanas.
 * Configuração de afinidade IP: uma configuração incorreta de afinidade de IP pode parar completamente os emails (nome incorreto do operador/afinidade na configuração) ou reduzir o throughput (pequeno número de IPs na afinidade). Consulte esta [página](../../installation/using/email-deliverability.md#list-of-ip-addresses-to-use).
-* Tamanho do email: o tamanho do email desempenha um papel importante na throughput. O tamanho máximo de email recomendado é de 60 KB. Consulte esta [página](https://helpx.adobe.com/legal/product-descriptions/campaign.html). No relatório de throughput [do](../../reporting/using/delivery-reports.md#delivery-throughput) Delivery, verifique o número de bytes transferidos por hora.
+* Tamanho do email: o tamanho do email desempenha um papel importante na throughput. O tamanho máximo de email recomendado é de 60 KB. Consulte esta [página](https://helpx.adobe.com/legal/product-descriptions/campaign.html). No relatório de throughput [do](../../reporting/using/global-reports.md#delivery-throughput) Delivery, verifique o número de bytes transferidos por hora.
 * Grande número de recipient inválidos: quando há um grande número de recipient inválidos, isso pode afetar o throughput. O MTA continua tentando enviar emails novamente para recipient inválidos. Certifique-se de que seu banco de dados seja bem mantido.
 * Quantidade de personalização: se um delivery permanecer em &quot;Personalização em andamento&quot;, verifique o JavaScript usado em alocos de personalização.
 
