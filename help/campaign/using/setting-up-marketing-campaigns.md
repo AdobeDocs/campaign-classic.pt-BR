@@ -15,9 +15,9 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: b369a17fabc55607fc6751e7909e1a1cb3cd4201
+source-git-commit: 1a139e1704a7df38a7b8088e23c972864f8ad998
 workflow-type: tm+mt
-source-wordcount: '1253'
+source-wordcount: '1227'
 ht-degree: 100%
 
 ---
@@ -144,10 +144,6 @@ As campanhas recorrentes são criadas a partir de um template específico que de
 Nesta guia, especifique as datas de execução planejadas das campanhas com base neste template.
 
 ![](assets/s_ncs_user_op_template_recur_planning.png)
-
-Você pode usar o assistente de criação de agendamento para preencher todas as datas de execução automaticamente. Para fazer isso, clique no **[!UICONTROL Complete the execution schedule...]** link localizado acima da tabela.
-
-![](assets/s_ncs_user_op_template_recur_planning_wz.png)
 
 O modo de configuração do agendamento de execução coincide com o objeto **[!UICONTROL Scheduler]** do workflow. Para obter mais informações, consulte [esta seção](../../workflow/using/architecture.md).
 
