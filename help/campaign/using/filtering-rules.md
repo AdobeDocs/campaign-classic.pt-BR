@@ -14,8 +14,11 @@ discoiquuid: 0d50826e-2211-4c3b-8413-ca1453bba6c4
 index: y
 internal: n
 snippet: y
-translation-type: ht
-source-git-commit: 209ac4d81d2d27c264ee6b288bcb7fcb1900ffc5
+translation-type: tm+mt
+source-git-commit: e97183256ef6d3f2068dd0fbc8eb3c3f32e0bae0
+workflow-type: tm+mt
+source-wordcount: '499'
+ht-degree: 97%
 
 ---
 
@@ -40,7 +43,7 @@ Para definir esse filtro, aplique as seguintes etapas:
 
    ![](assets/campaign_opt_create_filter_02.png)
 
-1. Crie o filtro usando o link **[!UICONTROL Edit the query from the targeting dimension...]** .
+1. Crie o filtro usando o **[!UICONTROL Edit the query from the targeting dimension...]** link.
 
    ![](assets/campaign_opt_create_filter_03.png)
 
@@ -84,15 +87,14 @@ Você também poderá vincular regras de filtragem diretamente por meio desta gu
 
 >[!NOTE]
 >
->* Somente as regras de filtragem e de tipologia estarão disponíveis na janela de seleção.
->* Essas configurações podem ser definidas no template de delivery a ser aplicado automaticamente a todos os novos deliveries criados usando o template.
+>Somente as regras de filtragem e de tipologia estarão disponíveis na janela de seleção.
 >
-
+>Essas configurações podem ser definidas no template de delivery a ser aplicado automaticamente a todos os novos deliveries criados usando o template.
 
 
 ## Regras padrão de exclusão de entrega {#default-deliverability-exclusion-rules}
 
-Duas regras de filtragem estão disponíveis por padrão: **[!UICONTROL Excluir endereços]** ( **[!UICONTROL addressExclusions]** ) e **[!UICONTROL Excluir domínios]** ( **[!UICONTROL domainExclusions]** ). Durante a análise de e-mail, essas regras comparam os endereços de e-mail do recipient com os endereços proibidos ou nomes de domínio contidos em uma lista de supressão global criptografada gerenciada na instância de entrega. Se houver algum positivo, a mensagem não será enviada para esse recipient.
+Two filtering rules are available by default: **[!UICONTROL Exclude addresses]** ( **[!UICONTROL addressExclusions]** ) and **[!UICONTROL Exclude domains]** ( **[!UICONTROL domainExclusions]** ). Durante a análise de e-mail, essas regras comparam os endereços de e-mail do recipient com os endereços proibidos ou nomes de domínio contidos em uma lista de supressão global criptografada gerenciada na instância de entrega. Se houver algum positivo, a mensagem não será enviada para esse recipient.
 
 Isso é para evitar a inclusão na blacklist devido a atividades mal-intencionadas, especialmente o uso de um Spamtrap. Por exemplo, se um Spamtrap for usado para se inscrever em um dos seus formulários Web, um e-mail de confirmação será enviado automaticamente para esse Spamtrap e isso resultará no endereço utilizado sendo automaticamente incluído na blacklist.
 
