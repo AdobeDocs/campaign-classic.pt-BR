@@ -15,10 +15,10 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: b369a17fabc55607fc6751e7909e1a1cb3cd4201
+source-git-commit: e9e9b1352706e15a0d0c6ff8921e430524a44b13
 workflow-type: tm+mt
-source-wordcount: '809'
-ht-degree: 93%
+source-wordcount: '843'
+ht-degree: 88%
 
 ---
 
@@ -83,11 +83,11 @@ Ao criar um email, iremos inserir o nome do recipient e depois adicionar a data 
 
 ## Otimização da personalização {#optimizing-personalization}
 
-You can optimize personalization using a dedicated option: **[!UICONTROL Prepare the personalization data with a workflow]**, available in the **[!UICONTROL Analysis]** tab of the delivery properties.
+You can optimize personalization using a dedicated option: **[!UICONTROL Prepare the personalization data with a workflow]**, available in the **[!UICONTROL Analysis]** tab of the delivery properties. Para obter mais informações sobre como analisar o delivery, consulte [esta seção](../../delivery/using/steps-validating-the-delivery.md#analyzing-the-delivery).
 
 Durante a análise de delivery, essa opção cria e executa automaticamente um workflow que armazena todos os dados vinculados ao Target em uma tabela temporária, incluindo dados de tabelas vinculadas na FDA.
 
-Ao selecionar essa opção, é possível obter um aumento significativo no desempenho para executar a personalização.
+Marcar essa opção pode melhorar muito o desempenho da análise do delivery quando muitos dados estão sendo processados, especialmente se os dados de personalização vêm de uma tabela externa até FDA. For more on this, see [Accessing an external database (FDA)](../../platform/using/additional-options.md#optimizing-email-personalization-with-external-data).
 
 Por exemplo, se estiver tendo problemas de desempenho com delivery de um grande número de recipients ao usar muitos campos de personalização e/ou blocos de personalização no conteúdo de suas mensagens, essa opção pode acelerar o manuseio de personalização e, portanto, o delivery de suas mensagens.
 
