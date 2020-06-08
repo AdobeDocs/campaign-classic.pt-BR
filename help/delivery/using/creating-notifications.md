@@ -14,8 +14,11 @@ discoiquuid: 345af5c2-c852-4086-8ed0-ff3e7e402e04
 index: y
 internal: n
 snippet: y
-translation-type: ht
-source-git-commit: b78db689958c9b240da9a0315060fe63bcb48e0a
+translation-type: tm+mt
+source-git-commit: 5847107a459bf47f34e4994c3521266bb174d8cb
+workflow-type: tm+mt
+source-wordcount: '832'
+ht-degree: 94%
 
 ---
 
@@ -59,18 +62,18 @@ Comece criando um novo delivery.
    >O modo de **Silent Push** está disponível no iOS 7. Isso permite que uma notificação &quot;silenciosa&quot; seja enviada a um aplicativo móvel. O usuário não está ciente da chegada da notificação. Ele é transferido diretamente para o aplicativo.
 
 1. No campo **[!UICONTROL Title]**, insira o rótulo do título que deve aparecer na notificação. Isso só aparecerá na lista disponível no centro de notificações. Este campo permite a definição do valor do parâmetro **title** da carga de notificação iOS.
+
 1. Se o conector HTTP/2 é usado, é possível adicionar um subtítulo (valor do parâmetro de **subtitle** da carga de notificação do iOS). Consulte a seção [Configuração do aplicativo móvel no Adobe Campaign](../../delivery/using/configuring-the-mobile-application.md) .
+
 1. Em seguida, insira o **[!UICONTROL Message]** e o **[!UICONTROL Value of the badge]** baseado no tipo de notificação escolhido.
 
    ![](assets/nmac_delivery_ios_5.png)
 
    >[!NOTE]
    >
-   >Você pode adicionar emojis no conteúdo da notificação. Para fazer isso, vá para um site da lista emoji ([exemplo](https://www.utf8-chartable.de/unicode-utf8-table.pl?start=9728)), copie um emoji e cole-o diretamente no editor de conteúdo. No Windows 7, alguns emojis podem não ser exibidos corretamente no editor (símbolo quadrado), mas devem ser enviados corretamente na notificação final. A capacidade de exibir emojis depende do sistema operacional usado no dispositivo. Recomendamos enviar provas para verificar se o delivery é exibido corretamente antes de enviá-lo.
-
-   >[!NOTE]
-   >
    >Os tipos de notificação **[!UICONTROL Badge]** e **[!UICONTROL Alert and badge]** permitem modificar o valor da notificação (o número acima do logotipo do aplicativo móvel). Para atualizar a notificação, basta inserir 0 como valor. Se o campo estiver vazio, o valor da notificação não será alterado.
+
+1. Clique no **[!UICONTROL Insert emoticon]** ícone para inserir emoticons à sua notificação por push. Para personalizar a lista do emoticon, consulte [personalização da lista do emoticon](../../delivery/using/defining-interactive-content.md)
 
 1. O **[!UICONTROL Action button]** permite definir um rótulo para o botão de ação que aparece nas notificações de alerta (campo **action_loc_key** da carga). Se o aplicativo iOS gerencia cadeias de caracteres localizáveis (**Localizable.strings**), digite a chave correspondente nesse campo. Se o aplicativo não gerencia o texto localizável, insira o rótulo que você deseja visualizar no botão de ação. Para mais informações sobre strings localizáveis, consulte a [Apple documentation](https://developer.apple.com/library/archive/documentation/NetworkingInternet/Conceptual/RemoteNotificationsPG/CreatingtheNotificationPayload.html#//apple_ref/doc/uid/TP40008194-CH10-SW1) .
 1. No campo **[!UICONTROL Play a sound]**, selecione o som a ser reproduzido pelo terminal móvel quando a notificação for recebida.
@@ -121,9 +124,7 @@ Após enviar as mensagens, você pode monitorar e rastrear seus deliveries. Para
 
    ![](assets/nmac_delivery_android_4.png)
 
-   >[!NOTE]
-   >
-   >Você pode adicionar emojis no conteúdo da notificação. Para fazer isso, vá para um site da lista emoji ([exemplo](https://www.utf8-chartable.de/unicode-utf8-table.pl?start=9728)), copie um emoji e cole-o diretamente no editor de conteúdo. No Windows 7, alguns emojis podem não ser exibidos corretamente no editor (símbolo quadrado), mas devem ser enviados corretamente no email final. A capacidade de exibir emojis depende do sistema operacional usado no dispositivo. Recomendamos enviar provas para verificar se o delivery é exibido corretamente antes de enviá-lo.
+1. Clique no **[!UICONTROL Insert emoticon]** ícone para inserir emoticons à sua notificação por push. Para personalizar a lista do emoticon, consulte [personalização da lista do emoticon](../../delivery/using/defining-interactive-content.md)
 
 1. No campo **[!UICONTROL Application variables]**, insira o valor de cada variável. As variáveis do aplicativo permitem definir o comportamento de notificação: por exemplo, é possível configurar uma tela de aplicativo específica para ser exibida quando o usuário ativar a notificação.
 
