@@ -14,8 +14,11 @@ discoiquuid: 9b937d4d-55ae-4bd4-8dc6-eea42f15b69f
 index: y
 internal: n
 snippet: y
-translation-type: ht
-source-git-commit: c10a0a11c6e9952aa47da1f7a15188c79c62508d
+translation-type: tm+mt
+source-git-commit: b1a961822224ab0a9551f51942a5f94cf201c8ee
+workflow-type: tm+mt
+source-wordcount: '520'
+ht-degree: 94%
 
 ---
 
@@ -36,11 +39,11 @@ A primeira guia da atividade **[!UICONTROL File collector]** permite selecionar 
 
 1. **Download de arquivos**
 
-   * **[!UICONTROL Diretório]**
+   * **[!UICONTROL Directory]**
 
       Diretório contendo os arquivos a serem baixados. Esse diretório deve ser criado antes do servidor: se ele não existir, um erro será gerado.
 
-   * **[!UICONTROL Filtro]**
+   * **[!UICONTROL Filter]**
 
       Somente os arquivos correspondentes a este filtro são considerados. Os outros arquivos no diretório são ignorados. Se o filtro estiver vazio, todos os arquivos no diretório serão considerados. Exemplos de filtro: ***.zip**, **import-*.txt**.
 
@@ -50,7 +53,7 @@ A primeira guia da atividade **[!UICONTROL File collector]** permite selecionar 
 
       Para uma atividade não agendada, se nenhum arquivo correspondente ao filtro for encontrado no diretório especificado, e se a opção **[!UICONTROL Process file nonexistence]** não estiver habilitada, será gerado um erro.
 
-   * **[!UICONTROL Cronograma de execução]**
+   * **[!UICONTROL Execution schedule]**
 
       Determina a frequência da verificação de presença do arquivo por meio dos parâmetros da guia **[!UICONTROL Schedule]**.
 
@@ -64,7 +67,7 @@ A primeira guia da atividade **[!UICONTROL File collector]** permite selecionar 
 
       Se a tarefa não estiver agendada, essa transição será ativada apenas uma vez.
 
-   * **[!UICONTROL Processamento de erros]**
+   * **[!UICONTROL Processing errors]**
 
       Essa opção faz surgir uma transição especial, para ser ativada se um erro for gerado. Nesse caso, o workflow não muda para o status de erro e continua a execução
 
@@ -74,14 +77,12 @@ A primeira guia da atividade **[!UICONTROL File collector]** permite selecionar 
 
 1. **Historização**
 
-   Consulte a etapa **[!UICONTROL File historization]** aqui: [Download da Web](../../workflow/using/web-download.md).
+   Refer to the **[!UICONTROL File historization]** step here: [Web download](../../workflow/using/web-download.md).
 
-A ordem de processamento do arquivo não pode ser determinada. Para processar um conjunto de arquivos sequencialmente, use a opção **[!UICONTROL Stop as soon as a file has been processed]** e crie um loop. Nesse caso, os arquivos serão processados em ordem alfabética. A opção **[!UICONTROL Process file nonexistence]** permite concluir a iteração.
+A ordem de processamento do arquivo não pode ser determinada. To process a set of files sequentially, use the **[!UICONTROL Stop as soon as a file has been processed]** option and create a loop. Nesse caso, os arquivos serão processados em ordem alfabética. The **[!UICONTROL Process file nonexistence]** option lets you finish the iteration.
 
 ![](assets/file_collect_loop.png)
 
 ## Parâmetros de output {#output-parameters}
 
-* filename
-
-Nome do arquivo completo. Este é o nome de arquivo depois que ele foi movido para o diretório de historização. Portanto, o caminho é diferente, mas o nome também é diferente se outro arquivo com o mesmo nome já existir no diretório. A extensão é mantida.
+* nome do arquivo: Nome do arquivo completo. Este é o nome de arquivo depois que ele foi movido para o diretório de historização. Portanto, o caminho é diferente, mas o nome também é diferente se outro arquivo com o mesmo nome já existir no diretório. A extensão é mantida.
