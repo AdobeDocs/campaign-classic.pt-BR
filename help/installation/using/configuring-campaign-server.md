@@ -15,9 +15,9 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 1909cc8640a32eb709187dab084778f03ef39118
+source-git-commit: e7de74feb61cc8f4b386a6ff86fc58b9c9e9ca1d
 workflow-type: tm+mt
-source-wordcount: '3589'
+source-wordcount: '3608'
 ht-degree: 4%
 
 ---
@@ -31,7 +31,7 @@ A seção abaixo detalha as configurações do lado do servidor que podem ser ex
 >
 >Essas configurações devem ser executadas pelos administradores e apenas para modelos de hospedagem **local** .
 >
->Para implantações **hospedadas** , as configurações do lado do servidor podem ser configuradas somente pela Adobe. No entanto, algumas configurações podem ser configuradas no Painel de controle (por exemplo, permissões de IP ou de URL).
+>Para implantações **hospedadas** , as configurações do lado do servidor podem ser configuradas somente pela Adobe. No entanto, algumas configurações podem ser configuradas no Painel de controle (por exemplo, permissões de IP ou gerenciamento de listas de permissões).
 
 Para obter mais informações, consulte esta seção.
 
@@ -358,9 +358,9 @@ Com modelos de hospedagem **Híbrido** e **Local** , o administrador precisa faz
 
 Existem três modos de proteção de conexão:
 
-* **Bloqueio**: todos os URLs que não pertencem à lista de permissões são bloqueados, com uma mensagem de erro. Esse é o modo padrão após uma pós-atualização.
-* **Permissivo**: todos os URLs que não pertencem à lista de permissões são permitidos.
-* **Aviso**: todos os URLs não brancos são permitidos, mas o intérprete JS emite um aviso, para que o administrador possa coletá-los. Este modo adiciona mensagens de aviso JST-310027.
+* **Bloqueio**: todos os URLs que não pertencem à lista de permissão são bloqueados, com uma mensagem de erro. Esse é o modo padrão após uma pós-atualização.
+* **Permissivo**: todos os URLs que não pertencem à lista de permissão são permitidos.
+* **Aviso**: todos os URLs que não pertencem à lista de permissão são permitidos, mas o intérprete JS emite um aviso, para que o administrador possa coletá-los. Este modo adiciona mensagens de aviso JST-310027.
 
 ```
 <urlPermission action="warn" debugTrace="true">
@@ -372,7 +372,7 @@ Existem três modos de proteção de conexão:
 
 >[!IMPORTANT]
 >
->Por padrão, o cliente dos novos clientes usa o modo **de** bloqueio. Se for necessário permitir um novo URL, eles devem entrar em contato com o administrador para incluí-lo na lista de permissões.
+>Por padrão, o cliente dos novos clientes usa o modo **de** bloqueio. Se for necessário permitir um novo URL, eles devem entrar em contato com o administrador para adicioná-lo à lista de permissões.
 >
 >Existing customers coming from a migration can use the **warning mode** for a while. Enquanto isso, eles precisam analisar o tráfego de saída antes de autorizar os URLs. Depois que a lista de URLs autorizados for definida, eles devem entrar em contato com o administrador para adicionar os URLs à lista de permissões e ativar o modo **de** bloqueio.
 
@@ -455,7 +455,7 @@ sh
 >
 >Esta lista não é exaustiva.
 
-No nó **exec** do arquivo de configuração do servidor, é necessário fazer referência ao arquivo criado anteriormente no atributo **blacklistFile** .
+No nó **exec** do arquivo de configuração do servidor, é necessário fazer referência ao arquivo criado anteriormente no atributo **blocklistFile** .
 
 **Somente** para Linux: no arquivo de configuração do servidor, reordenamos que você especifique um usuário dedicado à execução de comandos externos para aprimorar a configuração de segurança. Esse usuário é definido no nó **exec** do arquivo de configuração. Todos os parâmetros disponíveis no **serverConf.xml** estão listados nesta [seção](../../installation/using/the-server-configuration-file.md).
 
@@ -467,7 +467,7 @@ Por exemplo:
 
 ```
 <serverConf>
- <exec user="theUnixUser" blacklistFile="/pathtothefile/blacklist"/>
+ <exec user="theUnixUser" blocklistFile="/pathtothefile/blocklist"/>
 </serverConf>
 ```
 
@@ -594,7 +594,7 @@ Cada processo configurado neste arquivo tem um atributo **processRestartTime** .
 
 ## Limitação de arquivos carregáveis {#limiting-uploadable-files}
 
-Um novo atributo **uploadWhiteList** permite restringir os tipos de arquivos disponíveis para upload no servidor Adobe Campaign.
+Um novo atributo **uploadAllowList** permite restringir os tipos de arquivos disponíveis para upload no servidor Adobe Campaign.
 
 Esse atributo está disponível no elemento **dataStore** do arquivo **serverConf.xml** . Todos os parâmetros disponíveis no **serverConf.xml** estão listados nesta [seção](../../installation/using/the-server-configuration-file.md).
 
@@ -602,7 +602,7 @@ O valor padrão desse atributo é **.+** e permite carregar qualquer tipo de arq
 
 Para limitar os formatos possíveis, é necessário substituir o valor do atributo por uma expressão regular java válida. É possível digitar vários valores separando-os por uma vírgula.
 
-Por exemplo: **uploadWhiteList=&quot;.*.png,.*.jpg&quot;** permitirá que você carregue formatos PNG e JPG no servidor. Nenhum outro formato será aceito.
+Por exemplo: **uploadAllowList=&quot;.*.png,.*.jpg&quot;** permitirá que você carregue formatos PNG e JPG no servidor. Nenhum outro formato será aceito.
 
 >[!IMPORTANT]
 >
