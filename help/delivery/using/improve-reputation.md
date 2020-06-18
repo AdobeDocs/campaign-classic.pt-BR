@@ -12,15 +12,18 @@ discoiquuid: 6a394eeb-fbe1-4712-bb13-db5d7965fb73
 index: y
 internal: n
 snippet: y
-translation-type: ht
-source-git-commit: 68756f920fbc8658cff552615adbf023b4c5e3aa
+translation-type: tm+mt
+source-git-commit: 537cbdec1ec88da1c759f6ca8eafe383c55a61d3
+workflow-type: tm+mt
+source-wordcount: '553'
+ht-degree: 90%
 
 ---
 
 
 # Aprimoramento da reputação{#improve-reputation}
 
-Para não esgotar os recipients, exclua endereços de email duplicados do destino. Essa etapa protege a reputação de envio e garante um bom gerenciamento de quarentena. O Adobe Campaign oferece as ferramentas necessárias para implementar essas recomendações e evitar o risco de serem incluídas na blacklist pelo ISP.
+Para não esgotar os recipients, exclua endereços de email duplicados do destino. Essa etapa protege a reputação de envio e garante um bom gerenciamento de quarentena. O Adobe Campaign oferta as ferramentas necessárias para implementar essas recomendações e evitar o risco de ser adicionado a uma lista de blocos pelo ISP.
 
 Para evitar ao máximo as duplicações, as seguintes ações devem ser realizadas:
 
@@ -42,7 +45,7 @@ Ter endereços de email duplicados pode ter várias consequências:
 * A mesma mensagem é enviada mais de uma vez. Mesmo se o Campaign executar um procedimento de desduplicação por padrão antes de enviar, não há nada que impeça o envio da mesma mensagem por ações diferentes com o mesmo conteúdo quando um target é dividido.
 * Solicitações de cancelamento de assinatura não respeitadas. Se um recipient cancelar a inscrição depois de receber uma mensagem, o perfil duplicado ainda será qualificado para mensagens futuras.
 
-Além da revisão lateral dos procedimentos de aceitação, essa situação levará os usuários a considerar as mensagens como spam e a acionar um procedimento de blacklist no ISP.
+Além dessa revisão lateral dos procedimentos de aceitação, essa situação provavelmente levará os usuários a considerar as mensagens como spam e a acionar um procedimento de lista de bloqueio no ISP.
 
 Você deve agir com cautela especial ao executar operações no banco de dados:
 
