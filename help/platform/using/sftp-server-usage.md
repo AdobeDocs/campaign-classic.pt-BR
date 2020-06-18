@@ -14,8 +14,11 @@ discoiquuid: f449ccd5-3965-4ab8-b5a9-993f3260aba9
 index: y
 internal: n
 snippet: y
-translation-type: ht
-source-git-commit: 1e8492d8e91d679ac13da875974e27d0f7791dc3
+translation-type: tm+mt
+source-git-commit: fecfff477b0750782c87c017a15e306acac4c61d
+workflow-type: tm+mt
+source-wordcount: '732'
+ht-degree: 89%
 
 ---
 
@@ -47,7 +50,7 @@ Para evitar esses problemas, a Adobe recomenda seguir as práticas recomendadas 
 * Ocasionalmente, conecte-se no SFTP para verificar diretamente o que encontra-se lá.
 * Lembre-se de que o gerenciamento de disco SFTP é predominantemente sua responsabilidade.
 * Por padrão, todas as pastas criadas estão em modo de leitura/gravação somente para o seu identificador. Ao criar pastas que precisam ser acessadas pelo Campaign, certifique-se de configurá-las com direitos de leitura/gravação para todo o grupo. Caso contrário, os workflows podem não ser capazes de criar/excluir arquivos como são executados em um identificador diferente no mesmo grupo por motivos de segurança.
-* Os IPs públicos dos quais você está tentando iniciar a conexão SFTP devem ser colocados na lista de permissões na instância do Campaign. Incluir endereços IP na lista de permissões pode ser solicitados por meio de um [tíquete de suporte](https://support.neolane.net).
+* Os IPs públicos dos quais você está tentando iniciar a conexão SFTP devem ser adicionados à lista de permissões na instância da Campanha. A adição de endereços IP à lista de permissões pode ser solicitada por meio de um ticket [de](https://support.neolane.net)suporte.
 
 >[!CAUTION]
 >
@@ -57,7 +60,7 @@ Para evitar esses problemas, a Adobe recomenda seguir as práticas recomendadas 
 
 A seção abaixo lista as informações para verificar e fornecer ao suporte da Adobe por meio de um [tíquete de suporte](https://support.neolane.net) ao encontrar problemas de conexão com os servidores SFTP hospedados pela Adobe.
 
-1. Verifique se a sua instância está em execução. Para fazer isso, abra o navegador e faça uma chamada **[!UICONTROL GET]** no ponto de extremidade da instância **[!UICONTROL /r/test]**:
+1. Verifique se a sua instância está em execução. To do this, open your browser, then make a **[!UICONTROL GET]** call on the instance **[!UICONTROL /r/test]** endpoint:
 
    ```
    https://instanceUrl/r/test
@@ -89,7 +92,7 @@ A seção abaixo lista as informações para verificar e fornecer ao suporte da 
 
    Se a porta não for aberta, certifique-se de abrir as conexões de saída em seu lado e tente novamente. Se ainda houver problemas de conexão, compartilhe o resultado do comando com o suporte da Adobe.
 
-1. Verifique se o IP público do qual está tentando iniciar a conexão do SFTP foi fornecido ao suporte da Adobe para ser incluído na lista de permissões.
+1. Verifique se o IP público do qual você está tentando iniciar a conexão SFTP é aquele fornecido ao suporte da Adobe para a lista de permissões.
 1. Se você usa uma autenticação baseada em senha, a senha pode ter expirado (as senhas têm um período de validade de 90 dias). Portanto, recomendamos usar uma autenticação baseada em chave (consulte [Práticas recomendadas para o servidor SFTP](#sftp-server-best-practices)).
 1. Se você estiver usando uma autenticação baseada em chave, verifique se a chave usada é a mesma fornecida ao suporte da Adobe para a configuração de instância.
 1. Se você estiver usando FileZilla ou uma ferramenta de FTP equivalente, forneça os detalhes dos logs de conexão no ticket de suporte.
