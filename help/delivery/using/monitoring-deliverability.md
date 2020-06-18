@@ -13,10 +13,10 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: f4d82657fbeae39af173c867975455669497d8eb
+source-git-commit: f7c040ceffcce20805d7cc8d1e4e46c77e611056
 workflow-type: tm+mt
-source-wordcount: '787'
-ht-degree: 94%
+source-wordcount: '789'
+ht-degree: 91%
 
 ---
 
@@ -58,7 +58,7 @@ Estas são algumas diretrizes adicionais sobre o monitoramento da capacidade de 
 * Verifique a taxa de transferência de cada delivery para garantir que ela seja consistente com a validade do conteúdo do delivery (por exemplo, &quot;vendas rápidas&quot; devem ser entregues em minutos, não em dias).
 * Ao usar as [ondas](../../delivery/using/steps-sending-the-delivery.md#sending-using-multiple-waves), verifique se cada onda tem tempo suficiente para terminar antes que a próxima seja acionada.
 * Verifique se o número de erros e as novas [quarentenas](../../delivery/using/understanding-quarantine-management.md) estão consistentes com outros deliveries.
-* Carefully consult the [delivery logs](../../delivery/using/monitoring-a-delivery.md#delivery-logs-and-history) in detail to check the kind of errors that are highlighted (grey or black-listing, DNS issues, anti-spam rules, etc.).
+* Carefully consult the [delivery logs](../../delivery/using/monitoring-a-delivery.md#delivery-logs-and-history) in detail to check the kind of errors that are highlighted (block lists, DNS issues, anti-spam rules, etc.).
 
 ## Signal Spam {#signal-spam}
 
@@ -70,7 +70,7 @@ O Signal Spam é um serviço francês que oferece relatórios de ciclo de feedba
 
 ## 250ok {#deliverability-250ok}
 
-[O 250ok](https://250ok.com/) é uma solução de monitoramento complementar das ferramentas internas de entrega da Adobe, que fornece IP, lista negra de domínios e indicadores de reputação.
+[O 250ok](https://250ok.com/) é uma solução de monitoramento complementar das ferramentas internas de entregabilidade da Adobe, que fornece listas de blocos de domínio e IP e indicadores de reputação.
 
 As informações fornecidas são em tempo real, o que permite uma assistência proativa.
 
@@ -94,7 +94,7 @@ Os seguintes indicadores são usados no relatório:
 
 * **[!UICONTROL DomainKeys]**: um serviço desenvolvido pelo Yahoo que verifica a identidade de um remetente de email.
 
-* **[!UICONTROL IP and RBL domain]** (Lista de buracos negros em tempo real): uma lista de endereços IP e domínios que foram sinalizados por organizações de listas de bloqueios para má reputação de envio. Essas listas são mantidas por organizações dedicadas como Spamhaus, Spamcop, SURBL/URIBL, etc. Atualmente, o Adobe Campaign processa verificações contra RBLs que têm um impacto significativo no delivery. Essas RBLs refletem sua reputação e podem ser consultadas pelos ISPs antes de aceitarem seus emails.
+* **[!UICONTROL IP and RBL domain]** (Lista em tempo real Blackhole): Uma lista de endereços IP e domínios que foram sinalizados por organizações de listas de blocos para má reputação de envio. Essas listas são mantidas por organizações dedicadas como Spamhaus, Spamcop, SURBL/URIBL, etc. Atualmente, o Adobe Campaign processa verificações contra RBLs que têm um impacto significativo no delivery. Essas RBLs refletem sua reputação e podem ser consultadas pelos ISPs antes de aceitarem seus emails.
 
 * **[!UICONTROL SNDS]** (Serviços de dados de rede inteligente): um [serviço anti-spam do Windows Live Hotmail](https://sendersupport.olc.protection.outlook.com/snds/FAQ.aspx). O Hotmail é o único ISP que fornece esse tipo de informação. As pontuações de referência são um resultado de filtro verde, uma taxa de reclamação inferior a 0,1% e zero armadilhas de spam.
 
