@@ -15,10 +15,10 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: e97183256ef6d3f2068dd0fbc8eb3c3f32e0bae0
+source-git-commit: 9784e0db6f1bef5abdf93d3517da04fe1ba69e7d
 workflow-type: tm+mt
-source-wordcount: '499'
-ht-degree: 97%
+source-wordcount: '507'
+ht-degree: 85%
 
 ---
 
@@ -96,7 +96,7 @@ Você também poderá vincular regras de filtragem diretamente por meio desta gu
 
 Two filtering rules are available by default: **[!UICONTROL Exclude addresses]** ( **[!UICONTROL addressExclusions]** ) and **[!UICONTROL Exclude domains]** ( **[!UICONTROL domainExclusions]** ). Durante a análise de e-mail, essas regras comparam os endereços de e-mail do recipient com os endereços proibidos ou nomes de domínio contidos em uma lista de supressão global criptografada gerenciada na instância de entrega. Se houver algum positivo, a mensagem não será enviada para esse recipient.
 
-Isso é para evitar a inclusão na blacklist devido a atividades mal-intencionadas, especialmente o uso de um Spamtrap. Por exemplo, se um Spamtrap for usado para se inscrever em um dos seus formulários Web, um e-mail de confirmação será enviado automaticamente para esse Spamtrap e isso resultará no endereço utilizado sendo automaticamente incluído na blacklist.
+Isso evita ser adicionado à lista de blocos devido a atividades mal-intencionadas, especialmente o uso de uma armadilha. Por exemplo, se um Spamtrapping for usado para assinar por meio de um de seus formulários da Web, um email de confirmação será automaticamente enviado para esse Spamtrapping e isso resultará na adição automática do endereço à lista de blocos.
 
 >[!NOTE]
 >
