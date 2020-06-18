@@ -15,9 +15,9 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: d9b0f943fa09b3d0ad8547eb708e888724f1ae7e
+source-git-commit: e7de74feb61cc8f4b386a6ff86fc58b9c9e9ca1d
 workflow-type: tm+mt
-source-wordcount: '7852'
+source-wordcount: '7859'
 ht-degree: 6%
 
 ---
@@ -207,7 +207,7 @@ Estes são os diferentes parâmetros do nó **dataStore** . É aqui que as fonte
    <td> '$(XTK_INSTALL_DIR)/var/$(INSTANCE_NAME)/upload/' <br /> </td> 
   </tr> 
   <tr> 
-   <td> uploadWhitelist<br /> </td> 
+   <td> uploadAllowlist<br /> </td> 
    <td> Arquivos autorizados a serem baixados separados por ','. A string deve ser uma expressão java regular e válida. Consulte <a href="../../installation/using/configuring-campaign-server.md#limiting-uploadable-files" target="_blank">Limitação de arquivos</a>carregáveis.<br /> </td> 
    <td> Cadeia de caracteres<br /> </td> 
    <td> '.+' <br /> </td> 
@@ -575,8 +575,8 @@ Para obter informações adicionais, consulte [Restrição de comandos](../../in
  </thead> 
  <tbody> 
   <tr> 
-   <td> blacklistFile<br /> </td> 
-   <td> Caminho para o arquivo que contém os comandos para a lista negra. <br /> </td> 
+   <td> blocklistFile<br /> </td> 
+   <td> Caminho para o arquivo que contém os comandos a serem adicionados à lista de permissões. <br /> </td> 
    <td> Cadeia de caracteres<br /> </td> 
   </tr> 
   <tr> 
@@ -2017,7 +2017,7 @@ Estes são os diferentes parâmetros do nó **pipeline** . Esta é a configuraç
   </tr> 
   <tr> 
    <td> dumpStatePeriodSec<br /> </td> 
-   <td> Período de salvamento do status: frequência com que as informações internas do processo são salvas em um arquivo. Inativo se 0. <br /> </td> 
+   <td> Período de salvamento do status: frequência em que as informações internas do processo são salvas em um arquivo. Inativo se 0. <br /> </td> 
    <td> Longo<br /> </td> 
    <td> 0<br /> </td> 
   </tr> 
@@ -3079,7 +3079,7 @@ Para obter informações adicionais, consulte Segurança de página [dinâmica e
   </tr> 
   <tr> 
    <td> status<br /> </td> 
-   <td> Status de sincronização de um recurso público (lista discriminada). Os valores possíveis são "normal" (execução normal), "blacklist" (lista negra de url no caso do erro 404) e "spare" (carregamento de arquivo no servidor sobressalente, se houver).<br /> </td> 
+   <td> Status de sincronização de um recurso público (lista discriminada). Os valores possíveis são "normal" (execução normal), "blocklist" (url adicionado à lista de blocos no caso de erro 404) e "spare" (upload de arquivo no servidor sobressalente, se houver).<br /> </td> 
    <td> Cadeia de caracteres<br /> </td> 
    <td> normal<br /> </td> 
   </tr> 
@@ -3137,19 +3137,19 @@ Esta é a configuração padrão:
      timeout="" status="normal" httpAllowed="true" urlPath="/nl/jsp/s.jsp"/>
 
 <url IPMask="" deny="" hostMask="" relayHost="true" relayPath="true" targetUrl="http://localhost:8080"
-     timeout="" status="blacklist" httpAllowed="false" urlPath="/nms/jsp/*.jsp"/>
+     timeout="" status="blocklist" httpAllowed="false" urlPath="/nms/jsp/*.jsp"/>
 <url IPMask="" deny="" hostMask="" relayHost="true" relayPath="true" targetUrl="http://localhost:8080"
-     timeout="" status="blacklist" httpAllowed="false" urlPath="/xtk/jsp/*.jsp"/>
+     timeout="" status="blocklist" httpAllowed="false" urlPath="/xtk/jsp/*.jsp"/>
 <url IPMask="" deny="" hostMask="" relayHost="true" relayPath="true" targetUrl="http://localhost:8080"
-     timeout="" status="blacklist" httpAllowed="false" urlPath="/nl/jsp/*.jsp"/>
+     timeout="" status="blocklist" httpAllowed="false" urlPath="/nl/jsp/*.jsp"/>
 <url IPMask="" deny="" hostMask="" relayHost="true" relayPath="true" targetUrl="http://localhost:8080"
-     timeout="" status="blacklist" httpAllowed="false" urlPath="*.jssp"/>
+     timeout="" status="blocklist" httpAllowed="false" urlPath="*.jssp"/>
 <url IPMask="" deny="" hostMask="" relayHost="true" relayPath="true" targetUrl="http://localhost:8080"
-     timeout="" status="blacklist" httpAllowed="true" urlPath="/webApp/*"/>
+     timeout="" status="blocklist" httpAllowed="true" urlPath="/webApp/*"/>
 <url IPMask="" deny="" hostMask="" relayHost="true" relayPath="true" targetUrl="http://localhost:8080"
-     timeout="" status="blacklist" httpAllowed="false" urlPath="/report/*"/>
+     timeout="" status="blocklist" httpAllowed="false" urlPath="/report/*"/>
 <url IPMask="" deny="" hostMask="" relayHost="true" relayPath="true" targetUrl="http://localhost:8080"
-     timeout="" status="blacklist" httpAllowed="false" urlPath="/jssp/*"/>
+     timeout="" status="blocklist" httpAllowed="false" urlPath="/jssp/*"/>
 <url IPMask="" deny="" hostMask="" relayHost="true" relayPath="true" targetUrl="http://localhost:8080"
      timeout="" status="normal" httpAllowed="false" urlPath="/strings/*"/>
 <url IPMask="" deny="" hostMask="" relayHost="true" relayPath="true" targetUrl="http://localhost:8080"
@@ -3219,7 +3219,7 @@ For additional information, refer to this [section](../../installation/using/dep
  <tbody> 
   <tr> 
    <td> IMSOrgId<br /> </td> 
-   <td> Identificador da organização IMS: identificador exclusivo da organização na Adobe Marketing Cloud, usado especialmente para o serviço VisitorID e o SSO IMS. <br /> </td> 
+   <td> Identificador da organização IMS: identificador único da organização no Adobe Marketing Cloud, usado especialmente para o serviço VisitorID e o SSO IMS. <br /> </td> 
    <td> Cadeia de caracteres<br /> </td> 
    <td> <br /> </td> 
   </tr> 
