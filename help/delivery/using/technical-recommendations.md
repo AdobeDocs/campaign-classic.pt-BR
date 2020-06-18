@@ -12,11 +12,11 @@ discoiquuid: fc95538b-b54d-44ec-81aa-f51b62982699
 index: y
 internal: n
 snippet: y
-translation-type: ht
-source-git-commit: 15581517df8d2f397285bbadebd83b7f4539dfd7
-workflow-type: ht
-source-wordcount: '2432'
-ht-degree: 100%
+translation-type: tm+mt
+source-git-commit: 537cbdec1ec88da1c759f6ca8eafe383c55a61d3
+workflow-type: tm+mt
+source-wordcount: '2436'
+ht-degree: 94%
 
 ---
 
@@ -138,7 +138,7 @@ Recommendations for defining an SPF record:
 
 ## Loop de comentários {#feedback-loop}
 
-Um loop de cometários funciona declarando no nível do ISP determinado endereço de email para um intervalo de endereços IP usados para enviar mensagens. O ISP enviará para esta caixa de entrada, de maneira semelhante ao que é feito para mensagens devolvidas, essas mensagens são relatadas por recipients como spam. A plataforma deve estar configurada para bloquear futuros deliveries para os usuários que reclamaram. É importante deixar de entrar em contato com eles, mesmo que não tenham usado o link de opt out adequado. É com base nessas reclamações que um ISP incluirá um endereço IP na blacklist. Dependendo do ISP, uma taxa de reclamação de cerca de 1% resultará na inclusão de um enderço IP na blacklist.
+Um loop de cometários funciona declarando no nível do ISP determinado endereço de email para um intervalo de endereços IP usados para enviar mensagens. O ISP enviará para esta caixa de entrada, de maneira semelhante ao que é feito para mensagens devolvidas, essas mensagens são relatadas por recipients como spam. A plataforma deve estar configurada para bloquear futuros deliveries para os usuários que reclamaram. É importante deixar de entrar em contato com eles, mesmo que não tenham usado o link de opt out adequado. É com base nestas queixas que um ISP acrescentará um endereço IP à sua lista de bloqueios. Dependendo do ISP, uma taxa de reclamações de cerca de 1% resultará no bloqueio de um endereço IP.
 
 No momento, um padrão está sendo projetado para definir o formato de mensagens de loop de comentários: o [ARF (Abuse Feedback Reporting Format)](https://tools.ietf.org/html/rfc6650).
 
@@ -254,11 +254,11 @@ A Adobe fornece uma estratégia de IP dedicada para cada cliente com um IP ampli
 
 ## Certificação IP {#ip-certification}
 
-A certificação IP é um programa de práticas de envio e listagem de permissões que ajuda a garantir que os emails sejam recebidos sem serem bloqueados por filtros anti-spam ou outros sistemas de bloqueio de email.
+A certificação IP é um programa de práticas recomendadas de envio que ajuda a garantir que os e-mails sejam recebidos sem serem bloqueados por filtros antisspam ou outros sistemas de bloqueio de e-mail.
 
 Atualmente, dois provedores oferecem certificação IP: Return Path e Certified Senders Alliance.
 
-Os remetentes certificados são adicionados às listas de permissões de email usadas por provedores de caixa de correio global e empresas de segurança de email. As listas de permissões comerciais se baseiam em um sistema que permite que o remetente ignore os filtros anti-spam ou receba pontos incrementais ao entrarem no sistema.
+Os remetentes certificados são adicionados às listas de permissão de email usadas pelos provedores globais de caixa de correio e empresas de segurança de email. Essas listas de permissão comercial são baseadas em um sistema que permite ao remetente ignorar totalmente os filtros antisspam ou receber pontos incrementais à medida que ele entra no sistema.
 
 O programa [Return Path Certification](https://www.validity.com/products/returnpath/certification/) oferece vários benefícios, incluindo:
 
@@ -275,6 +275,6 @@ A certificação da [Certified Senders Alliance](https://certified-senders.org/c
 * Proteção contra os riscos legais e financeiros através do pleno cumprimento das normas legais
 * Proteção da reputação através de avisos antecipados do CSA Complaints Office e de relatórios diários de captura de spam
 
-Os ISPs podem usar livremente esses serviços e o número de ISPs pode variar dependendo da lista de permissões.
+Os ISPs são livres para usar esses serviços e o número de ISPs pode variar dependendo da lista de permissões.
 
 No entanto, como cada vez mais ISPs criam seus filtros anti-spam com base no comportamento de cada proprietário da caixa de entrada, em vez de analisar o conteúdo da mensagem propriamente dita, o uso da certificação IP não pode ser uma garantia de inserção da caixa de entrada ou até mesmo do delivery.
