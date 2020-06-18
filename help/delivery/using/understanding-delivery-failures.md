@@ -14,11 +14,11 @@ discoiquuid: 78b58a7a-b387-4d5d-80d5-01c06f83d759
 index: y
 internal: n
 snippet: y
-translation-type: ht
-source-git-commit: 15581517df8d2f397285bbadebd83b7f4539dfd7
-workflow-type: ht
-source-wordcount: '2434'
-ht-degree: 100%
+translation-type: tm+mt
+source-git-commit: 9c26ef0b520c6486d86e73cb93612cc7ab9556d0
+workflow-type: tm+mt
+source-wordcount: '2450'
+ht-degree: 95%
 
 ---
 
@@ -35,7 +35,7 @@ Quando uma mensagem (email, SMS, notificação por push) não pode ser enviada a
 
 Quando uma mensagem é enviada, o log de delivery permite exibir o status de entrega de cada perfil, o tipo de falha e o motivo associados.
 
-As mensagens também podem ser excluídas durante a preparação do delivery se um endereço estiver em quarentena ou se um perfil for incluído na blacklist. As mensagens excluídas são listadas no painel de delivery.
+As mensagens também podem ser excluídas durante a preparação do delivery se um endereço estiver em quarentena ou se um perfil estiver na lista de blocos. As mensagens excluídas são listadas no painel de delivery.
 
 **Tópicos relacionados:**
 
@@ -86,10 +86,10 @@ Os possíveis motivos para uma falha de delivery são:
    <td> A classificação de qualidade deste endereço é muito baixa.<br /> </td> 
   </tr> 
   <tr> 
-   <td> Endereço incluído na blacklist </td> 
+   <td> Endereço na lista de bloqueios </td> 
    <td> Grave </td> 
    <td> 8 </td> 
-   <td> O endereço foi incluído na blacklist no momento do envio. Esse status é usado para importar dados de listas externas e sistemas externos ao importar dados para a lista de quarentena do Adobe Campaign.<br /> </td> 
+   <td> O endereço foi adicionado à lista de blocos no momento do envio. This status is used for importing data from external lists and external systems into the Adobe Campaign Quarantine list.<br /> </td> 
   </tr> 
   <tr> 
    <td> Endereço de controle </td> 
@@ -107,7 +107,7 @@ Os possíveis motivos para uma falha de delivery são:
    <td> Erro ignorado </td> 
    <td> Ignored </td> 
    <td> 25 </td> 
-   <td> O endereço foi incluído na lista de permissões. O erro é então ignorado e um email será enviado.<br /> </td> 
+   <td> O endereço está na lista de permissões. O erro é então ignorado e um email será enviado.<br /> </td> 
   </tr> 
   <tr> 
    <td> Excluído após arbitragem </td> 
@@ -207,7 +207,7 @@ Uma mensagem pode falhar imediatamente (erro síncrono), ou posteriormente, apó
    >
    >A configuração da caixa de entrada de devolução é detalhada [nesta seção](../../installation/using/deploying-an-instance.md#managing-bounced-emails).
 
-   O loop de feedback funciona como emails de devolução. Quando um usuário classifica um email como spam, você pode configurar regras de email no Adobe Campaign para bloquear todos os deliveries a esse usuário. Mensagens enviadas para usuários que classificaram um email como spam são automaticamente redirecionadas para uma caixa de email especificamente criada para essa finalidade. Os endereços desses usuários são incluídos na blacklist mesmo que não cliquem no link unsubscription. Os endereços são incluídos na blacklist na tabela de quarentena (**NmsAddress**) e não na tabela de recipient (**NmsRecipient**).
+   The [feedback loop](../../delivery/using/technical-recommendations.md#feedback-loop) operates like bounce emails. Quando um usuário classifica um email como spam, você pode configurar regras de email no Adobe Campaign para bloquear todos os deliveries a esse usuário. Mensagens enviadas para usuários que classificaram um email como spam são automaticamente redirecionadas para uma caixa de email especificamente criada para essa finalidade. Os endereços desses usuários estão na lista de bloqueios mesmo que não tenham clicado no link de unsubscription. Os endereços estão na lista de blocos na tabela de quarentena (**NmsAddress**) e não na tabela de recipient (**NmsRecipient**).
 
    >[!NOTE]
    >
