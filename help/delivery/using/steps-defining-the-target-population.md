@@ -14,8 +14,11 @@ discoiquuid: df29492f-ed73-4ab8-b075-e76b3b9ebce3
 index: y
 internal: n
 snippet: y
-translation-type: ht
-source-git-commit: 4ac96bf0e54268832b84b17c3cc577af038cc712
+translation-type: tm+mt
+source-git-commit: fa9e4ddc716809b96e259acd1137a0c24ef68fee
+workflow-type: tm+mt
+source-wordcount: '1528'
+ht-degree: 99%
 
 ---
 
@@ -154,7 +157,7 @@ As seguintes opções estão disponíveis:
 
       ![](assets/s_ncs_user_wizard_email02j.png)
 
-* **[!UICONTROL Exclude recipients who no longer want to be contacted]**, ou seja, recipients cujos endereços de email estão em uma blacklist (opt out). Essa opção deve permanecer selecionada para observar a ética profissional de marketing digital e as leis que regem o comércio eletrônico.
+* **[!UICONTROL Exclude recipients who no longer want to be contacted]** , isto é, recipient cujos endereços de email estão em uma lista de blocos (&#39;opt out&#39;). Essa opção deve permanecer selecionada para observar a ética profissional de marketing digital e as leis que regem o comércio eletrônico.
 * **[!UICONTROL Exclude quarantined recipients]**. Essa opção permite excluir do target qualquer perfil que não responda. É altamente recomendável manter essa opção selecionada.
 
    >[!NOTE]
