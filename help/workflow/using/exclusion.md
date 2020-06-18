@@ -14,8 +14,11 @@ discoiquuid: acab51f3-686b-4d2b-bb02-8fbfae36b1ba
 index: y
 internal: n
 snippet: y
-translation-type: ht
-source-git-commit: 20f835c357d016643ea1f3209ee4dfb6d3239f90
+translation-type: tm+mt
+source-git-commit: ffee73b949a77343eaf23d0fb9a58a4283f4f87a
+workflow-type: tm+mt
+source-wordcount: '344'
+ht-degree: 100%
 
 ---
 
@@ -47,8 +50,6 @@ O exemplo a seguir busca compilar uma lista de recipients com idade entre 18 e 3
 1. Execute o workflow Neste exemplo, o resultado é composto por recipients com idade entre 18 e 30 anos, mas esses que moram em Paris são excluídos e enviados ao complemento.
 
    ![](assets/exclusion_example.png)
-
-O exemplo de importação de blacklist usa uma atividade do tipo **Exclusion** que pode ser encontrada em [Read list](../../workflow/using/read-list.md).
 
 ## Parâmetros de entrada {#input-parameters}
 
