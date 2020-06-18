@@ -12,8 +12,11 @@ discoiquuid: 2ea2747f-957f-41a9-a03f-20c03fa99116
 index: y
 internal: n
 snippet: y
-translation-type: ht
-source-git-commit: 1815f9fc6063ec86d6c12ef492396e5afb82b3e1
+translation-type: tm+mt
+source-git-commit: fa9e4ddc716809b96e259acd1137a0c24ef68fee
+workflow-type: tm+mt
+source-wordcount: '1653'
+ht-degree: 93%
 
 ---
 
@@ -160,7 +163,7 @@ Também é possível consultar as [Dicas e as limitações conhecidas do Gmail](
 O AMP for Email está disponível como um recurso beta, no momento é possível testar o envio de um email do AMP em duas etapas:
 
 1. O Adobe Campaign permite testar o delivery de um email dinâmico alimentado pela AMP para endereços de email selecionados e adequadamente configurados, a fim de verificar o conteúdo e comportamento. Consulte [Teste de delivery de email AMP para endereços selecionados](#testing-amp-delivery-for-selected-addresses).
-1. Depois de testado, é possível enviar um delivery ou uma campanha como parte do programa AMP for Email beta por meio do registro em provedores de email relevantes para que o domínio do remetente seja incluído na lista de permissões. Consulte [Entrega de emails do AMP através de registro em um provedor de email](#delivering-amp-emails-by-registering).
+1. Depois de testado, você pode enviar um delivery ou uma campanha como parte da AMP para o programa beta de e-mail, registrando-se com os provedores de e-mail relevantes para adicionar o domínio do remetente à lista de permissões. Consulte [Entrega de emails do AMP através de registro em um provedor de email](#delivering-amp-emails-by-registering).
 
 ### Teste de entrega de email AMP para endereços selecionados {#testing-amp-delivery-for-selected-addresses}
 
@@ -170,7 +173,7 @@ O AMP for Email está disponível como um recurso beta, no momento é possível 
 >
 >Atualmente, apenas o Gmail, Outlook e Mail.ru são compatíveis com testes no formato AMP.
 
-Antes de fazer isso, é necessário adicionar os endereço(s) do remetente à lista de permissão que é usada para entregar a partir do Adobe Campaign para as contas do Gmail e do Outlook que você está direcionando.
+Para o Gmail e o Outlook, primeiro adicione os endereços de remetente que você está usando à lista de permissões para entrega a partir do Adobe Campaign para as contas do Gmail e do Outlook que você está direcionando.
 
 Para fazer isso:
 1. Verifique se a opção que permite o email dinâmico está marcada para os provedores de email relevantes.
@@ -184,7 +187,7 @@ Para testar o envio de um email do AMP para um endereço Mail.ru, siga as etapas
 
 ### Entrega de emails do AMP através do registro em um provedor de email {#delivering-amp-emails-by-registering}
 
-É possível testar a entrega de emails dinâmicos por meio do registro em provedores de email que participam do programa beta do AMP para que o domínio do remetente seja incluído na lista de permissões.
+Você pode experimentar a entrega de emails dinâmicos se registrando com os provedores de email que participam do programa beta AMP para que o domínio do remetente seja adicionado à lista de permissões.
 
 >[!NOTE]
 >
