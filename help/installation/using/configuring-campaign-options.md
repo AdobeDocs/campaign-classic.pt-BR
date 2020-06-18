@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: de1173786c94c2a526153e7e6948f71c9523fa7b
+source-git-commit: e7de74feb61cc8f4b386a6ff86fc58b9c9e9ca1d
 workflow-type: tm+mt
 source-wordcount: '3903'
 ht-degree: 3%
@@ -95,7 +95,7 @@ Alguns deles são incorporados ao instalar a Campanha e outros podem ser adicion
    <td> expressões regulares para normalizar mensagens de delivery.<br /> </td> 
   </tr> 
   <tr> 
-   <td> <span class="uicontrol">NmsBroadcast_RemoveBlackList</span> <br /> </td> 
+   <td> <span class="uicontrol">NmsBroadcast_RemoveBlockList</span> <br /> </td> 
    <td> Digitar "1" como valor permite excluir recipient que não desejam mais ser contatados.<br /> </td> 
   </tr> 
   <tr> 
@@ -175,7 +175,7 @@ Alguns deles são incorporados ao instalar a Campanha e outros podem ser adicion
    <td> Fórmula usada para calcular a ponderação de uma mensagem para um delivery provisório.<br /> </td> 
   </tr> 
   <tr> 
-   <td> <span class="uicontrol">NmsInmail_WhitelistEmails</span> <br /> </td> 
+   <td> <span class="uicontrol">NmsInmail_AllowlistEmails</span> <br /> </td> 
    <td> Lista de endereços de email de encaminhamento autorizados (do módulo de processamento de email de entrada). Os endereços devem ser separados por vírgulas (ou * para permitir tudo). Por exemplo, xyz@abc.com,pqr@abc.com.<br /> </td> 
   </tr> 
   <tr> 
@@ -721,7 +721,7 @@ Alguns deles são incorporados ao instalar a Campanha e outros podem ser adicion
   </tr> 
   <tr> 
    <td> <span class="uicontrol">nmsPipeline_config</span> <br /> </td> 
-   <td> Permite configurar os Acionadores da Experience Cloud. O tipo de dados é "texto longo" e deve estar no formato JSON. Consulte <a class="anchorLink" href="https://helpx.adobe.com/campaign/kb/triggers-and-campaign.html#PipelineoptionNmsPipelineConfig" target="_blank">Como usar os Acionadores da Experience Cloud com o Adobe Campaign Classic</a>.<br /> </td> 
+   <td> Permite configurar os Acionadores de Experience Cloud. O tipo de dados é "texto longo" e deve estar no formato JSON. Consulte <a class="anchorLink" href="https://helpx.adobe.com/campaign/kb/triggers-and-campaign.html#PipelineoptionNmsPipelineConfig" target="_blank">Como usar Experience Cloud Triggers com o Adobe Campaign Classic</a>.<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">LASTIMPORT_&lt;%=instance.internalName%&gt;_&lt;%=activityName%&gt;</span> <br /> </td> 
@@ -741,11 +741,11 @@ Alguns deles são incorporados ao instalar a Campanha e outros podem ser adicion
   </tr> 
   <tr> 
    <td> <span class="uicontrol">AAM_DataSourceId</span> <br /> </td> 
-   <td> Opção usada para a integração com o Adobe Audiência Manager.<br /> </td> 
+   <td> Opção usada para a integração com o Adobe Audience Manager.<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">AAM_DestinationId</span> <br /> </td> 
-   <td> Opção usada para a integração com o Adobe Audiência Manager.<br /> </td> 
+   <td> Opção usada para a integração com o Adobe Audience Manager.<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">WdbcCapabilities_Teradata</span> <br /> </td> 
