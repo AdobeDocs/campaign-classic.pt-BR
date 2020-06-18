@@ -13,7 +13,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 15581517df8d2f397285bbadebd83b7f4539dfd7
+source-git-commit: c51a51f175e9f3fe5a55f2b5f57872057f70909d
 workflow-type: tm+mt
 source-wordcount: '2375'
 ht-degree: 1%
@@ -55,7 +55,7 @@ Esta tabela corresponde ao schema **nms:recipient** .
 * iEmailFormat: formato preferencial para emails (1 para Texto, 2 para HTML e 0 se não estiver definido).
 * sAddress1, sAddress2, sAddress3, sAddress4, sZipCode, sCity são usados para criar o endereço postal (em conformidade com o padrão AFNOR XPZ 10-011 de maio de 1997).
 * sPhone, sMobilePhone, sFax contêm os números de telefone, telefone celular e fax, respectivamente.
-* iBlackList é o sinalizador de opção de não participação padrão usado para os perfis (1 significa &quot;não inscrito&quot;, 0 caso contrário).
+* iBlockList é o sinalizador de opção de não participação padrão usado para os perfis (1 significa &quot;não inscrito&quot;, 0 caso contrário).
 
 O campo iFolderId é a chave estrangeira que vincula o recipient à pasta de execução. For more on this, see [XtkFolder](#XtkFolder).
 
@@ -113,7 +113,7 @@ A árvore é gerenciada pelos campos iParentId e iChildCount. O campo sFullName 
 
 ## Delivery e rastreamento {#delivery-and-tracking}
 
-Esse conjunto de tabelas está vinculado ao módulo **Delivery** , que permite monitorar delivery e possíveis problemas encontrados quando as mensagens são enviadas. Para obter mais informações, consulte [Monitoramento de delivery](../../delivery/using/monitoring-a-delivery.md). Para obter mais informações sobre o rastreamento, consulte [Rastreamento de mensagens](../../delivery/using/about-message-tracking.md).
+Esse conjunto de tabelas está vinculado ao módulo **Delivery** , que permite monitorar delivery e possíveis problemas encontrados quando as mensagens são enviadas. For more on this, see [Monitoring deliveries](../../delivery/using/monitoring-a-delivery.md). Para obter mais informações sobre o rastreamento, consulte [Rastreamento de mensagens](../../delivery/using/about-message-tracking.md).
 
 ![](assets/data-model_delivery.png)
 
@@ -223,11 +223,11 @@ Esse conjunto de tabelas está vinculado ao módulo **Interação** , que permit
 
 * **NmsOffer**: Esta tabela corresponde ao schema **nms:oferta** . Contém a definição de cada oferta de marketing.
 * **NmsPropositionRcp**: Esta tabela corresponde ao schema **nms:propositionRcp** . Ele contém o log de canais cruzados de proposições de marketing enviadas a cada indivíduo. O registro é criado quando uma proposta é preparada ou efetivamente feita a um indivíduo.
-* **NmsOfferSpace**: Esta tabela corresponde ao schema **nms:offerSpace** . Contém a definição dos locais em que são feitas as propostas.
-* **NmsOfferContext**: Esta tabela corresponde ao schema **nms:offerContext** . Contém critérios adicionais sobre a aplicabilidade da proposta, bem como a definição da fórmula de cálculo do peso.
-* **NmsOfferView**: Esta tabela corresponde ao **nms:offerView**. Ele contém as representações da oferta.
-* **NmsOfferCategory**: Esta tabela corresponde a **nms:offerCategory**. Ele contém as categorias ofertas.
-* **NmsOfferEnv**: Esta tabela corresponde ao **nms:offerEnv**. Ele contém os ambientes da oferta.
+* **NmsOfferSpace**: This table matches the **nms:offerSpace** schema. It contains the definition of locations on which propositions are made.
+* **NmsOfferContext**: This table matches the **nms:offerContext** schema. Contém critérios adicionais sobre a aplicabilidade da proposta, bem como a definição da fórmula de cálculo do peso.
+* **NmsOfferView**: This table matches the **nms:offerView**. It contains the offer representations.
+* **NmsOfferCategory**: This table matches the **nms:offerCategory**. It contains the offer categories.
+* **NmsOfferEnv**: This table matches the **nms:offerEnv**. Ele contém os ambientes da oferta.
 
 ## Módulo do Centro de Mensagens {#message-center-module}
 
