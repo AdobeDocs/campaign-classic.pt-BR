@@ -15,7 +15,10 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: a527f246c4b0bf84c2a83e8df74b7a92542fda7a
+source-git-commit: c51a51f175e9f3fe5a55f2b5f57872057f70909d
+workflow-type: tm+mt
+source-wordcount: '954'
+ht-degree: 1%
 
 ---
 
@@ -24,19 +27,19 @@ source-git-commit: a527f246c4b0bf84c2a83e8df74b7a92542fda7a
 
 ## Informações gerais {#general-information}
 
-Todos os métodos de API são apresentados na forma de serviços da Web. Isso permite gerenciar todas as funções do Adobe Campaign por meio de chamadas SOAP, que são o ponto de entrada nativo do servidor de aplicativos do Adobe Campaign. O próprio console do Adobe Campaign usa somente chamadas SOAP.
+Todos os métodos de API são apresentados na forma de serviços da Web. Isso permite gerenciar todas as funções de Adobe Campaign por meio de chamadas SOAP, que são o ponto de entrada nativo do servidor de aplicativos Adobe Campaign. O console Adobe Campaign usa somente chamadas SOAP.
 
 Os serviços da Web permitem que você crie vários aplicativos a partir de um sistema de terceiros:
 
-* Alertas síncronos, notificação e execução de modelo de entrega em tempo real de um back office ou sistema de transações,
+* Alertas síncronos, notificação e execução de templates do delivery em tempo real de um back office ou sistema de transações,
 * Desenvolvimento de interfaces especiais com funcionalidade simplificada (interfaces Web, etc.),
 * Alimentação e pesquisa de dados na base de dados, respeitando as regras comerciais e permanecendo isolados do modelo físico subjacente.
 
 ## Definição de serviços Web {#definition-of-web-services}
 
-A definição dos serviços da Web implementados no servidor de aplicativos do Adobe Campaign está disponível nos esquemas de dados.
+A definição dos serviços Web implementados no servidor de aplicativos Adobe Campaign está disponível nos schemas de dados.
 
-Um serviço da Web é descrito na gramática dos esquemas de dados e está disponível no **`<methods>`** elemento .
+Um serviço da Web é descrito na gramática dos schemas de dados e está disponível a partir do **`<methods>`** elemento.
 
 ```
 <methods>
@@ -53,15 +56,15 @@ Um serviço da Web é descrito na gramática dos esquemas de dados e está dispo
 
 Aqui temos um exemplo da definição do método chamado **GenerateForm**.
 
-A descrição do serviço começa com o `<method>` elemento. A lista de parâmetros do método é concluída a partir do `<parameters>` elemento. Cada parâmetro é especificado por um nome, um tipo (Booliano, string, DOMElement etc.) e uma descrição. O atributo &quot;inout&quot; com o valor &quot;out&quot; permite especificar que o parâmetro &quot;resultado&quot; está na saída da chamada SOAP.
+A descrição dos start de serviço com o `<method>` elemento. A lista de parâmetros do método é concluída a partir do `<parameters>` elemento. Cada parâmetro é especificado por um nome, um tipo (Booliano, string, DOMElement etc.) e uma descrição. O atributo &quot;inout&quot; com o valor &quot;out&quot; permite especificar que o parâmetro &quot;resultado&quot; está na saída da chamada SOAP.
 
 A presença do atributo &quot;static&quot; (com o valor &quot;true&quot;) descreve esse método como static, o que significa que todos os parâmetros do método devem ser declarados.
 
-Um método &quot;const&quot; tem implicitamente um documento XML no formato de seu esquema associado como entrada.
+Um método &quot;const&quot; tem implicitamente um documento XML no formato de seu schema associado como entrada.
 
-Uma descrição completa do `<method>` elemento de um esquema do Adobe Campaign está disponível no capítulo &quot;Referências do esquema&quot; em <a href="../../configuration/using/elements-and-attributes.md#method--element" target="_blank">  `<method>`    element.
+Uma descrição completa do `<method>` elemento de um schema está disponível no capítulo &quot;Referências do Schema&quot; em  <a href="../../configuration/using/elements-and-attributes.md#method--element" target="_blank">  `<method>`    direcionado.
 
-Exemplo do método &quot;const&quot;-type &quot;ExecuteQuery&quot; do esquema &quot;xtk:queryDef&quot;:
+Exemplo do método &quot;const&quot;-type &quot;ExecuteQuery&quot; do schema &quot;xtk:queryDef&quot;:
 
 ```
 <method name="ExecuteQuery" const="true">
@@ -72,7 +75,7 @@ Exemplo do método &quot;const&quot;-type &quot;ExecuteQuery&quot; do esquema &q
 </method>
 ```
 
-O parâmetro de entrada desse método é um documento XML no formato do esquema &quot;xtk:queryDef&quot;.
+O parâmetro de entrada desse método é um documento XML no formato do schema &quot;xtk:queryDef&quot;.
 
 ## Descrição do serviço Web: WSDL {#web-service-description--wsdl}
 
@@ -86,20 +89,20 @@ Para gerar um arquivo WSDL, insira o seguinte URL de um navegador da Web:
 
 Com:
 
-* **`<server>`**: o servidor de aplicativos do Adobe Campaign (nlserver web)
-* **`<schema>`**: chave de identificação do esquema (namespace:nome_do_esquema)
+* **`<server>`**: o servidor de aplicativos Adobe Campaign (nlserver web)
+* **`<schema>`**: Chave de identificação do schema (namespace:schema_name)
 
-### Exemplo do método &#39;ExecuteQuery&#39; do esquema &#39;xtk:queryDef&#39; {#example-on-the--executequery--method-of-schema--xtk-querydef-}
+### Exemplo do método &#39;ExecuteQuery&#39; do schema &#39;xtk:queryDef&#39; {#example-on-the--executequery--method-of-schema--xtk-querydef-}
 
 O arquivo WSDL é gerado do URL:
 
 [https://localhost/nl/jsp/schemawsdl.jsp?schema=xtk:queryDef](https://my_serveur/nl/jsp/schemawsdl.jsp?schema=xtk:queryDef)
 
-Uma descrição WSDL começa definindo os tipos usados para formar mensagens, associadas em &quot;portas&quot;, conectadas a um protocolo por &quot;vínculos&quot; formando serviços da Web.
+Um start de descrição WSDL definindo os tipos usados para formar mensagens, associadas em &quot;portas&quot;, conectadas a um protocolo por &quot;vínculos&quot; formando serviços da Web.
 
 #### Tipos {#types}
 
-As definições de tipo são baseadas em esquemas XML. Em nosso exemplo, o método &quot;ExecuteQuery&quot; utiliza uma string &quot;s:string&quot; e um documento XML (`<s:complextype>`) como parâmetros. O valor de retorno do método (&quot;ExecuteQueryResponse&quot;) é um documento XML ( `<s:complextype>`).
+As definições de tipo são baseadas em schemas XML. Em nosso exemplo, o método &quot;ExecuteQuery&quot; utiliza uma string &quot;s:string&quot; e um documento XML (`<s:complextype>`) como parâmetros. O valor de retorno do método (&quot;ExecuteQueryResponse&quot;) é um documento XML ( `<s:complextype>`).
 
 ```
 <types>
@@ -133,7 +136,7 @@ As definições de tipo são baseadas em esquemas XML. Em nosso exemplo, o méto
   </s:element>
 ```
 
-#### Messages {#messages}
+#### Mensagens {#messages}
 
 A `<message>` descreve os nomes e os tipos de um conjunto de campos a serem enviados. O método usa duas mensagens para passar como parâmetro (&quot;ExecuteQueryIn&quot;) e o valor de retorno (&quot;ExecuteQueryOut&quot;).
 
@@ -149,7 +152,7 @@ A `<message>` descreve os nomes e os tipos de um conjunto de campos a serem envi
 
 #### PortType {#porttype}
 
-O `<porttype>` associa as mensagens na operação &quot;ExecuteQuery&quot; acionada pela consulta (&quot;entrada&quot;) que gera uma resposta (&quot;saída&quot;).
+O `<porttype>` associa as mensagens na operação &quot;ExecuteQuery&quot; acionada pelo query (&quot;entrada&quot;) que gera uma resposta (&quot;saída&quot;).
 
 ```
 <portType name="queryDefMethodsSoap">
@@ -181,7 +184,7 @@ A `<binding>` parte especifica o protocolo de comunicação SOAP ( `<soap:bindin
 
 #### Serviço {#service}
 
-A `<service>` parte descreve o serviço &quot;XtkQueryDef&quot; com seu URI no URL do servidor de aplicativos do Adobe Campaign.
+A `<service>` parte descreve o serviço &quot;XtkQueryDef&quot; com seu URI no URL do servidor de aplicativos Adobe Campaign.
 
 ```
 <service name="XtkQueryDef">
@@ -201,13 +204,13 @@ Há dois modos de autenticação disponíveis:
 
 ou
 
-* **por meio do logon + senha** do Adobe Campaign que cria um token de sessão. O token de sessão expira automaticamente após um período definido. Este modo não é recomendado e requer a redução das configurações de segurança do aplicativo para algumas configurações de zona (allowUserPassword=&quot;true&quot; e sessionTokenOnly=&quot;true&quot;).
+* **por meio do login + senha** do Adobe Campaign que cria um token de sessão. O token de sessão expira automaticamente após um período definido. Este modo não é recomendado e requer a redução das configurações de segurança do aplicativo para algumas configurações de zona (allowUserPassword=&quot;true&quot; e sessionTokenOnly=&quot;true&quot;).
 
 ### Características do token de sessão {#session-token-characteristics}
 
 O token de sessão tem as seguintes características:
 
-* um ciclo de vida de X hora (o ciclo de vida é configurável no arquivo &#39;serverConf.xml&#39;, o período padrão é 24 horas)
+* um ciclo de vida de X hora (o ciclo de vida é configurável no arquivo &#39;serverConf.xml&#39;, o período padrão é de 24 horas)
 * uma construção aleatória (ela não contém mais o logon do usuário e a senha)
 * quando acessado pela Web:
 
@@ -220,7 +223,7 @@ O token de segurança tem as seguintes características:
 
 * é gerado do token de sessão
 * tem um ciclo de vida de 24 horas (configurável no arquivo &#39;serverConf.xml&#39;, o período padrão é de 24 horas)
-* ele é armazenado no console do Adobe Campaign
+* é armazenado no console Adobe Campaign
 * quando acessado pela Web:
 
    * é armazenado em um documento.propriedade __securityToken
@@ -232,7 +235,7 @@ O token de segurança tem as seguintes características:
 Quando acessado pelo console, é:
 
 * transmitida na resposta de logon (no cabeçalho HTTP)
-* usado em cada consulta (no cabeçalho HTTP)
+* usado em cada query (no cabeçalho HTTP)
 
 De um POST e GET HTTP:
 
@@ -281,7 +284,7 @@ De uma chamada SOAP:
 
 >[!NOTE]
 >
->Os URLs usados nas seguintes chamadas **HttpServletRequest** devem ser listados na seção de permissões de url do arquivo **serverConf.xml** . Isso também é válido para o URL do próprio servidor.
+>Os URLs usados nas seguintes chamadas **HttpServletRequest** devem estar na lista permitida na seção de permissões de url do arquivo **serverConf.xml** . Isso também é válido para o URL do próprio servidor.
 
 Execução de logon():
 
@@ -309,7 +312,7 @@ var sessionToken = String(xmlRes..*::pstrSessionToken);;
 var securityToken = String(xmlRes..*::pstrSecurityToken);
 ```
 
-Execução da consulta:
+Execução do Query:
 
 ```
 var req2 = new HttpClientRequest("https://serverURL/nl/jsp/soaprouter.jsp");
