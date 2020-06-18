@@ -14,8 +14,11 @@ discoiquuid: cfa22577-0b9e-4eee-900d-214b81256d81
 index: y
 internal: n
 snippet: y
-translation-type: ht
-source-git-commit: c9c9d5f96856ce9e19571bad032d2bf04eaa60bd
+translation-type: tm+mt
+source-git-commit: 9188a68ca2ffcd9cf9e82b475aa2a0dd5807561b
+workflow-type: tm+mt
+source-wordcount: '972'
+ht-degree: 88%
 
 ---
 
@@ -45,19 +48,19 @@ Este exemplo é baseado no seguinte cenário:
 
 As mensagens de confirmação são enviadas por um template do delivery dedicado referenciado no nível de serviço temporário.
 
-1. No **[!UICONTROL Explorer]**, selecione **[!UICONTROL Resources > Templates > Delivery templates]**.
+1. In the **[!UICONTROL Explorer]** , select **[!UICONTROL Resources > Templates > Delivery templates]**.
 1. Crie um template do delivery para enviar as mensagens de confirmação da subscrição.
 1. Clique no botão **[!UICONTROL To]** em **[!UICONTROL Email parameters]** para associar o template do delivery ao target mapping das subscrições em vez de destinatários.
 
    ![](assets/s_ncs_admin_survey_double-opt-in_sample_1d.png)
 
-1. Como os recipients desse delivery não confirmaram sua aprovação, eles ainda estão incluídos na blacklist do banco de dados. Para receber essa comunicação, você precisa autorizar os deliveries com base nesse template a fim de direcionar recipients incluídos na blacklist.
+1. Como os recipient deste delivery não confirmaram sua aprovação, eles ainda estão na lista de blocos de banco de dados. Para que eles recebam essa comunicação, é necessário autorizar delivery baseados neste modelo para recipient públicos alvos que estão na lista de blocos.
 
    Para fazer isso, clique na guia **[!UICONTROL Exclusions]**.
 
-1. Clique no link **[!UICONTROL Edit...]** e desmarque a opção **[!UICONTROL Exclude recipients who no longer want to be contacted (blacklist)]**.
+1. Clique no **[!UICONTROL Edit...]** link e desmarque a **[!UICONTROL Exclude recipients who no longer want to be contacted (blocklist)]** opção.
 
-   ![](assets/s_ncs_admin_survey_double-opt-in_sample_4d.png)
+   <!-- ![](assets/s_ncs_admin_survey_double-opt-in_sample_4d.png)-->
 
    >[!CAUTION]
    >
@@ -85,7 +88,7 @@ O workflow do formulário web incluirá as seguintes atividades:
 
 Para fazer isso, siga as etapas abaixo:
 
-1. Crie um formulário web e escolha o modelo **[!UICONTROL Newsletter subscription (subNewsletter)]**.
+1. Create a Web form and choose the template **[!UICONTROL Newsletter subscription (subNewsletter)]**.
 
    ![](assets/s_ncs_admin_survey_double-opt-in_sample_5a.png)
 
@@ -109,10 +112,10 @@ Para fazer isso, siga as etapas abaixo:
 
    ![](assets/s_ncs_admin_survey_double-opt-in_sample_6f.png)
 
-   A primeira atividade **[!UICONTROL Script]** incluirá os destinatários na blacklist até que eles confirmem sua subscrição no boletim informativo. Seu conteúdo deve ser o seguinte:
+   A primeira **[!UICONTROL Script]** atividade adicionará recipient à lista de blocos até que confirmem sua subscrição à newsletter. Seu conteúdo deve ser o seguinte:
 
    ```
-   ctx.recipient.@blackList=1
+   ctx.recipient.@blockList=1
    ```
 
    ![](assets/s_ncs_admin_survey_double-opt-in_sample_6bbis.png)
@@ -120,7 +123,7 @@ Para fazer isso, siga as etapas abaixo:
    A segunda atividade **[!UICONTROL Script]** autoriza os deliveries a serem enviados aos usuários e realiza a subscrição deles no boletim informativo. As duas últimas linhas do script permitirão transferir os recipients da pasta temporária para outra pasta e reconciliar com perfis existentes assim que confirmarem a subscrição.
 
    ```
-   ctx.recipient.@blackList=0
+   ctx.recipient.@blockList=0
    nms.subscription.Subscribe("INTERNAL_NAME_OF_THE_NEWSLETTER", ctx.recipient, false)
    ctx.recipient.folder = <folder name="nmsRootRecipient"/>
    nms.subscription.Unsubscribe("TEMP", ctx.recipient)
@@ -172,7 +175,7 @@ A subscrição no boletim informativo envolve as seguintes etapas:
 
    ![](assets/s_ncs_admin_survey_double-opt-in_sample_8d.png)
 
-   O usuário é adicionado ao banco de dados do Adobe Campaign na pasta **[!UICONTROL Temp]** e seu perfil é incluído na blacklist até que ele confirme sua subscrição com o email.
+   The user is added to the Adobe Campaign database in the **[!UICONTROL Temp]** folder, and their profile is added to the block list until they confirm their subscription with the email.
 
    ![](assets/s_ncs_admin_survey_double-opt-in_sample_8f.png)
 
@@ -186,7 +189,7 @@ A subscrição no boletim informativo envolve as seguintes etapas:
 
    No Adobe Campaign, o perfil do usuário é atualizado:
 
-   * eles não estão mais incluídos na blacklist,
+   * já não constam da lista de bloqueios,
    * eles estão subscritos no serviço de informação.
 
       ![](assets/s_ncs_admin_survey_double-opt-in_sample_9.png)
