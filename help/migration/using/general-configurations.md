@@ -1,7 +1,7 @@
 ---
-title: Configurações gerais
-seo-title: Configurações gerais
-description: Configurações gerais
+title: 'Configurações gerais '
+seo-title: 'Configurações gerais '
+description: 'Configurações gerais '
 seo-description: null
 page-status-flag: never-activated
 uuid: 317a145d-36b0-40fe-a272-ad5e35b0b190
@@ -15,12 +15,15 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 963aaa81971a8883b944bfcf4d1a00d729627916
+source-git-commit: e7de74feb61cc8f4b386a6ff86fc58b9c9e9ca1d
+workflow-type: tm+mt
+source-wordcount: '2822'
+ht-degree: 0%
 
 ---
 
 
-# Configurações gerais{#general-configurations}
+# Configurações gerais {#general-configurations}
 
 Esta seção detalha a configuração a ser realizada no Adobe Campaign v7 se você estiver migrando de uma v5.11 ou de uma v6.02.
 
@@ -89,9 +92,9 @@ Para verificar se os dois lados estão no mesmo fuso horário:
 
 >[!IMPORTANT]
 >
->Por motivos de segurança, a plataforma do Adobe Campaign não está mais acessível por padrão: você deve configurar as zonas de segurança e, portanto, coletar endereços IP do operador.
+>Por motivos de segurança, a plataforma Adobe Campaign não está mais acessível por padrão: você deve configurar as zonas de segurança e, portanto, coletar endereços IP do operador.
 
-O Adobe Campaign v7 envolve o conceito de zonas **de** segurança. Cada usuário deve estar associado a uma zona para fazer logon em uma instância e o endereço IP do usuário deve ser incluído nos endereços ou intervalos de endereços definidos na zona de segurança. A configuração das zonas de segurança pode ser feita no arquivo de configuração do servidor do Adobe Campaign. A zona de segurança à qual um usuário está associado deve ser definida no console (**[!UICONTROL Administration > Access management > Operators]**).
+Adobe Campaign v7 envolve o conceito de zonas **de** segurança. Cada usuário deve estar associado a uma zona para fazer logon em uma instância e o endereço IP do usuário deve ser incluído nos endereços ou intervalos de endereços definidos na zona de segurança. A configuração das zonas de segurança pode ser feita no arquivo de configuração do servidor Adobe Campaign. A zona de segurança à qual um usuário está associado deve ser definida no console (**[!UICONTROL Administration > Access management > Operators]**).
 
 **Antes da migração**, peça ao administrador da rede para ajudá-lo a definir as zonas de segurança a serem ativadas após a migração.
 
@@ -118,10 +121,10 @@ nlserver config -internalpassword
    Os usuários afetados por essa modificação são identificados e listados durante a pós-atualização.
 
 * O rastreamento não funciona mais se a senha estiver vazia. Se esse for o caso, uma mensagem de erro informará você e solicitará que você a reconfigure.
-* As senhas de usuário não são mais armazenadas no esquema **xtk:sessionInfo** .
+* As senhas de usuário não são mais armazenadas no schema **xtk:sessionInfo** .
 * As permissões de administração agora são necessárias para usar as funções **xtk:builder:EvaluateJavaScript** e **xtk:builder:EvaluateJavaScriptTemplate** .
 
-Determinados esquemas predefinidos foram modificados e estão agora, por padrão, acessíveis apenas com acesso de gravação para operadores com a permissão de **administrador** :
+Determinados schemas prontos para uso foram modificados e agora estão agora, por padrão, acessíveis somente com acesso de gravação para operadores com a permissão de **administrador** :
 
 * ncm:publicação
 * nl:monitoramento
@@ -154,7 +157,7 @@ Determinados esquemas predefinidos foram modificados e estão agora, por padrão
 * xtk:strings
 * xtk:xslt
 
-### Parâmetro de sintoken {#sessiontoken-parameter}
+### Parâmetro de sessiontoken {#sessiontoken-parameter}
 
 Na v5, o parâmetro do **sessiontoken** funcionava em ambos os lados do cliente (lista de telas de tipo de visão geral, editor de links etc.) e servidor (aplicativos da Web, relatórios, jsp, jssp etc.). Na v7, funciona apenas no lado do servidor. Se você quiser voltar à funcionalidade completa como na v5, você deve modificar os links usando esse parâmetro e passar pela página de conexão:
 
@@ -176,7 +179,7 @@ Novo link usando a página de conexão:
 
 ### Funções SQL {#sql-functions}
 
-Chamadas de função SQL desconhecidas não são mais enviadas naturalmente para o servidor. Atualmente, todas as funções SQL devem ser adicionadas ao esquema **xtk:funcList** (para obter mais informações, consulte [esta seção](../../configuration/using/adding-additional-sql-functions.md)). Ao migrar, uma opção é adicionada durante a pós-atualização que permite manter a compatibilidade com funções SQL antigas não declaradas. Se você deseja continuar usando essas funções, verifique se a opção **XtkPassUnknownSQLFunctionsToRDBMS** está definida no nível do **[!UICONTROL Administration > Platform > Options]** nó.
+Chamadas de função SQL desconhecidas não são mais enviadas naturalmente para o servidor. Atualmente, todas as funções SQL devem ser adicionadas ao schema **xtk:funcList** (para obter mais informações, consulte [esta seção](../../configuration/using/adding-additional-sql-functions.md)). Ao migrar, uma opção é adicionada durante a pós-atualização que permite manter a compatibilidade com funções SQL antigas não declaradas. Se você deseja continuar usando essas funções, verifique se a opção **XtkPassUnknownSQLFunctionsToRDBMS** está definida no nível do **[!UICONTROL Administration > Platform > Options]** nó.
 
 >[!IMPORTANT]
 >
@@ -192,16 +195,16 @@ Por exemplo:
 
 ```
 <url IPMask="" deny="" hostMask="" httpAllowed="true" relayHost="true" relayPath="true"
-           status="blacklist" targetUrl="https://localhost:8080" timeout="" urlPath="*/cus/myPublicPage.jssp"/>
+           status="blocklist" targetUrl="https://localhost:8080" timeout="" urlPath="*/cus/myPublicPage.jssp"/>
 ```
 
 ## Sintaxe {#syntax}
 
 ### JavaScript {#javascript}
 
-O Adobe Campaign v7 integra um interpretador JavaScript mais recente. No entanto, essa atualização pode resultar em alguns scripts que não funcionam. Como o mecanismo anterior era mais permissivo, certas sintaxes funcionavam, o que já não acontece com a nova versão do mecanismo.
+Adobe Campaign v7 integra um interpretador JavaScript mais recente. No entanto, essa atualização pode resultar em alguns scripts que não funcionam. Como o mecanismo anterior era mais permissivo, certas sintaxes funcionavam, o que já não acontece com a nova versão do mecanismo.
 
-A **[!UICONTROL myObject.@attribute]** sintaxe agora só é válida para objetos XML. Essa sintaxe pode ser usada para personalizar entregas e gerenciamento de conteúdo. Se você usou esse tipo de sintaxe em um objeto não XML, os recursos de personalização não funcionarão mais.
+A **[!UICONTROL myObject.@attribute]** sintaxe agora só é válida para objetos XML. Essa sintaxe pode ser usada para personalizar delivery e gestões de conteúdo. Se você usou esse tipo de sintaxe em um objeto não XML, os recursos de personalização não funcionarão mais.
 
 Para todos os outros tipos de objetos, a sintaxe agora é **[!UICONTROL myObject`[`&quot;attribute&quot;`]`]**. Por exemplo, um objeto não XML que usou a seguinte sintaxe:**[!UICONTROL employee.@sn]**, agora deve usar a seguinte sintaxe:**[!UICONTROL employee`[`&quot;sn&quot;`]`]**.
 
@@ -217,7 +220,7 @@ Para todos os outros tipos de objetos, a sintaxe agora é **[!UICONTROL myObject
    employee["sn"]
    ```
 
-Para alterar um valor em um objeto XML, agora é necessário começar atualizando o valor antes de adicionar o nó XML:
+Para alterar um valor em um objeto XML, agora é necessário start atualizando o valor antes de adicionar o nó XML:
 
 * Código JavaScript antigo:
 
@@ -251,13 +254,13 @@ Não é mais possível usar um atributo XML como uma chave de tabela.
 
 ### SQLData {#sqldata}
 
-Para reforçar a segurança da instância, uma nova sintaxe foi introduzida no Adobe Campaign v7 para substituir a sintaxe baseada em SQLData. Se você usar esses elementos de código com essa sintaxe, será necessário modificá-los. Os principais elementos em causa são:
+Para reforçar a segurança da instância, uma nova sintaxe foi introduzida no Adobe Campaign v7 para substituir a sintaxe baseada no SQLData. Se você usar esses elementos de código com essa sintaxe, será necessário modificá-los. Os principais elementos em causa são:
 
-* Filtragem por subconsulta: a nova sintaxe se baseia no `<subQuery>` elemento para definir uma subconsulta
-* Agregados: a nova sintaxe é &quot;agregar função(coleção)&quot;
+* Filtragem por subquery: a nova sintaxe se baseia no `<subQuery>` elemento para definir um subquery
+* Agregações: a nova sintaxe é &quot;função de agregação(coleção)&quot;
 * Filtragem por junção: a nova sintaxe é `[schemaName:alias:xPath]`
 
-O esquema queryDef (xtk:queryDef) foi modificado:
+O schema queryDef (xtk:queryDef) foi modificado:
 
 * um novo `<subQuery>` elemento está disponível para substituir a SELECT incluída no SQLData
 * dois novos valores, &quot;IN&quot; e &quot;NOT IN&quot; são introduzidos para o atributo @setOperador
@@ -265,7 +268,7 @@ O esquema queryDef (xtk:queryDef) foi modificado:
 
 Quando um atributo &quot;@expr&quot; é usado, o SQLData pode estar presente. É possível pesquisar os seguintes termos: &quot;SQLData&quot;, &quot;aliasSqlTable&quot;, &quot;sql&quot;.
 
-As instâncias do Adobe Campaign v7 são protegidas por padrão. A segurança está relacionada com as definições das zonas de segurança do **[!UICONTROL serverConf.xml]** ficheiro: o atributo **allowSQLInjection** gerencia a segurança da sintaxe SQL.
+As instâncias de Adobe Campaign v7 são protegidas por padrão. A segurança está relacionada com as definições das zonas de segurança do **[!UICONTROL serverConf.xml]** ficheiro: o atributo **allowSQLInjection** gerencia a segurança da sintaxe SQL.
 
 Se ocorrer um erro de SQLData durante a execução pós-atualização, você deve modificar esse atributo para permitir temporariamente o uso de sintaxes baseadas em SQLData, permitindo que você regrave o código. Para fazer isso, a seguinte opção deve ser alterada no arquivo **serverConf.xml** :
 
@@ -287,7 +290,7 @@ allowSQLInjection="false"
 
 Abaixo, você encontrará exemplos comparativos entre a sintaxe antiga e a nova.
 
-**Filtragem por subconsultas**
+**Filtragem por subquery**
 
 * Sintaxe anterior:
 
@@ -339,9 +342,9 @@ Abaixo, você encontrará exemplos comparativos entre a sintaxe antiga e a nova.
      </queryFilter>
    ```
 
-**O agregado**
+**A agregação**
 
-Função Aggregate (coleção)
+função de Agregação (coleção)
 
 * Sintaxe anterior:
 
@@ -357,7 +360,7 @@ Função Aggregate (coleção)
 
    >[!NOTE]
    >
-   >As juntas são automaticamente executadas para as funções agregadas. Não é mais necessário especificar a condição WHERE O0.iOperationId=iOperationId.
+   >As articulações são automaticamente realizadas para as funções de agregação. Não é mais necessário especificar a condição WHERE O0.iOperationId=iOperationId.
    >
    >Não é mais possível usar a função &quot;count(*)&quot;. Você deve usar &quot;countall()&quot;.
 
@@ -422,15 +425,15 @@ Exemplo:
 
 ## Conflitos {#conflicts}
 
-A migração é realizada por meio de uma pós-atualização e os conflitos podem aparecer em relatórios, formulários ou aplicativos da Web. Esses conflitos podem ser resolvidos no console.
+A migração é realizada por meio de uma pós-atualização e os conflitos podem aparecer em relatórios, formulários ou aplicativos da Web. Esses conflitos podem ser resolvidos a partir do console.
 
 Após a sincronização do recurso, o comando **pós-atualização** permite detectar se a sincronização gera erros ou avisos.
 
-### Exibir o resultado da sincronização {#view-the-synchronization-result}
+### Visualização do resultado da sincronização {#view-the-synchronization-result}
 
 O resultado da sincronização pode ser visualizado de duas formas:
 
-* Na interface da linha de comando, os erros são materializados por uma divisa tripla **>>** e a sincronização é interrompida automaticamente. Os avisos são materializados por uma divisa dupla **>>** e devem ser resolvidos assim que a sincronização for concluída. No final da pós-atualização, um resumo é exibido no prompt de comando. Por exemplo:
+* Na interface da linha de comando, os erros são materializados por uma divisa tripla **>>** e a sincronização é interrompida automaticamente. Os avisos são materializados por uma divisa de duplo **>>** e devem ser resolvidos assim que a sincronização for concluída. No final da pós-atualização, um resumo é exibido no prompt de comando. Por exemplo:
 
    ```
    2013-04-09 07:48:39.749Z        00002E7A          1     info    log     =========Summary of the update==========
@@ -443,7 +446,7 @@ O resultado da sincronização pode ser visualizado de duas formas:
 
    Se o aviso disser respeito a um conflito de recursos, o operador deverá ter atenção para resolvê-lo.
 
-* O **pós-upgrade_`<server version number>`_time do arquivo pós-upgrade`>`.log** contém o resultado da sincronização. Está disponível por padrão no seguinte diretório: diretório **de instalação/var/`<instance>`pós-atualização**. Erros e avisos são indicados pelos atributos de **erro** e **aviso** .
+* O **pós-upgrade_`<server version number>`_time do arquivo pós-upgrade`>`.log** contém o resultado da sincronização. Está disponível por padrão no seguinte diretório: **diretório de instalação/var/`<instance>`pós-atualização**. Erros e avisos são indicados pelos atributos de **erro** e **aviso** .
 
 ### Resolver um conflito {#resolve-a-conflict}
 
@@ -451,7 +454,7 @@ A resolução de conflitos só pode ser efetuada por operadores avançados e por
 
 Para resolver um conflito, aplique o seguinte processo:
 
-1. Na estrutura em árvore do Adobe Campaign, posicione o cursor sobre **[!UICONTROL Administration > Configuration > Package management > Edit conflicts]**.
+1. Na estrutura da árvore Adobe Campaign, posicione o cursor sobre **[!UICONTROL Administration > Configuration > Package management > Edit conflicts]**.
 1. Selecione o conflito que deseja resolver na lista.
 
 Há três maneiras possíveis de resolver um conflito:
@@ -473,12 +476,12 @@ Se você optar por resolver manualmente o conflito, proceda da seguinte forma:
 
    ![](assets/s_ncs_production_conflict003.png)
 
-1. Vá ao conflito que você teria resolvido. Clique no **[!UICONTROL Actions]** ícone e selecione **[!UICONTROL Declare as resolved]**.
+1. Vá ao conflito que você teria resolvido. Click the **[!UICONTROL Actions]** icon and select **[!UICONTROL Declare as resolved]**.
 1. Salve as alterações: o conflito está agora resolvido.
 
 ## Tomcat {#tomcat}
 
-O servidor Tomcat integrado no Adobe Campaign v7 mudou de versão (Tomcat 7). A pasta de instalação (tomcat-6) também mudou (tomcat 7). Após a pós-atualização, verifique se os caminhos estão vinculados à pasta atualizada (no **[!UICONTROL serverConf.xml]** arquivo):
+O servidor Tomcat integrado no Adobe Campaign v7 mudou a versão (Tomcat 7). A pasta de instalação (tomcat-6) também foi alterada (tomcat 7). Após a pós-atualização, verifique se os caminhos estão vinculados à pasta atualizada (no **[!UICONTROL serverConf.xml]** arquivo):
 
 ```
 $(XTK_INSTALL_DIR)/tomcat-7/bin/bootstrap.jar 
@@ -494,7 +497,7 @@ $(XTK_INSTALL_DIR)/tomcat-7/lib/el-api.jar
 
 ### Pré-requisitos {#prerequisites}
 
-**Antes da pós-atualização**, você deve excluir todas as referências de esquema da versão 6.02 que não existirão mais na v7.
+**Antes da pós-atualização**, você deve excluir todas as referências de schema da versão 6.02 que não existirão mais na v7.
 
 * nms:emailOfferView
 * nms:webOfferView
@@ -502,17 +505,17 @@ $(XTK_INSTALL_DIR)/tomcat-7/lib/el-api.jar
 * nms:mobileOfferView
 * nms:paperOfferView
 
-### Conteúdo da oferta {#offer-content}
+### conteúdo da Oferta {#offer-content}
 
-Na v7, o conteúdo da oferta foi movido. Na v6.02, o conteúdo estava em cada esquema de representação (**nms:emailOfferView**). Na v7, o conteúdo agora está no esquema de oferta. Após a pós-atualização, o conteúdo não estará visível na interface. Após a pós-atualização, você deve recriar o conteúdo da oferta ou desenvolver um script que mova automaticamente o conteúdo do esquema de representação para o esquema de oferta.
+Na v7, o conteúdo da oferta foi movido. Na v6.02, o conteúdo estava em cada schema de representação (**nms:emailOfferView**). Na v7, o conteúdo agora está no schema da oferta. Após a pós-atualização, o conteúdo não estará visível na interface. Após a pós-atualização, você deve recriar o conteúdo da oferta ou desenvolver um script que move automaticamente o conteúdo do schema de representação para o schema de oferta.
 
 >[!IMPORTANT]
-Se algumas entregas usando ofertas configuradas forem enviadas após a migração, você deverá excluir e recriar todas essas entregas na v7. Se você não conseguir, um &quot;modo de compatibilidade&quot; será oferecido. Este modo não é recomendado porque você não se beneficiará de todos os novos recursos no Interaction v7. Este é um modo de transição que permite que você conclua campanhas contínuas antes da migração real da versão 6.1. Para obter mais informações sobre este modo, entre em contato conosco.
+Se alguns delivery que usam ofertas configurados forem enviados após a migração, você deverá excluir e recriar todos esses delivery na v7. Se você não conseguir fazer isso, um &quot;modo de compatibilidade&quot; será oferecido. Este modo não é recomendado porque você não se beneficiará de todos os novos recursos no Interaction v7. Este é um modo de transição que permite concluir as campanhas em andamento antes da migração real para a versão 6.1. Para obter mais informações sobre este modo, entre em contato conosco.
 
-Um exemplo de script de movimento (**interventionTo610_full_XX.js**) está disponível na pasta **Migração** na pasta Adobe Campaign v7. Este arquivo mostra um exemplo de script para um cliente usando uma única representação de email por oferta (os **[!UICONTROL htmlSource]** campos e **[!UICONTROL textSource]** ). O conteúdo que estava na tabela **NmsEmailOfferView** foi movido para a tabela de ofertas.
+Um exemplo de script de movimento (**interventionTo610_full_XX.js**) está disponível na pasta **Migração** na pasta Adobe Campaign v7. Este arquivo mostra um exemplo de script para um cliente usando uma única representação de email por oferta (os **[!UICONTROL htmlSource]** campos e **[!UICONTROL textSource]** ). O conteúdo que estava na tabela **NmsEmailOfferView** foi movido para a tabela oferta.
 
 >[!NOTE]
-O uso desse script não permite que você se beneficie das opções &quot;gerenciamento de conteúdo&quot; e &quot;funções de renderização&quot;. Para se beneficiar dessas funções, é necessário repensar as ofertas do catálogo, especialmente o conteúdo da oferta e os espaços de configuração.
+O uso desse script não permite que você se beneficie das opções &quot;gestão de conteúdo&quot; e &quot;funções de renderização&quot;. Para se beneficiar dessas funções, é necessário repensar as ofertas do catálogo, especialmente o conteúdo da oferta e os espaços de configuração.
 
 ```
 loadLibrary("/nl/core/shared/nl.js");
@@ -586,7 +589,7 @@ logInfo("Done");
 
 Este é o procedimento a ser seguido depois de ter movido o conteúdo da oferta se você tiver apenas um ambiente. Neste caso vamos pegar &quot;ENV&quot; como exemplo.
 
-1. Em todos os espaços de oferta do ambiente &quot;ENV&quot;, atualize a lista de campos usados. Por exemplo, para um espaço de oferta que use somente o **[!UICONTROL htmlSource]**, é necessário adicionar o **[!UICONTROL view/htmlSource]**.
+1. Em todos os espaços de ofertas de ambiente &quot;ENV&quot;, atualize a lista dos campos usados. Por exemplo, para um espaço de ofertas que usa somente o **[!UICONTROL htmlSource]**, é necessário adicionar o **[!UICONTROL view/htmlSource]**.
 
    ![](assets/migration_interaction_2.png)
 
@@ -598,12 +601,12 @@ Este é o procedimento a ser seguido depois de ter movido o conteúdo da oferta 
 
    ![](assets/migration_interaction_4.png)
 
-1. Implante todos os espaços de oferta do ambiente &quot;ENV&quot; (clique com o botão direito > **[!UICONTROL Actions > Deploy]**) e selecione o ambiente &quot;ENV_DESIGN&quot;.
+1. Implante todos os espaços de ofertas do ambiente &quot;ENV&quot; (clique com o botão direito do mouse em > **[!UICONTROL Actions > Deploy]**) e selecione o ambiente &quot;ENV_DESIGN&quot;.
 
    ![](assets/migration_interaction_5.png)
 
-1. Faça o mesmo para todas as ofertas de ambiente &quot;ENV&quot;.
-1. Ative todas as ofertas de ambiente &quot;ENV_DESIGN&quot; nos canais relevantes.
+1. Faça o mesmo para todas as ofertas ambientes &quot;ENV&quot;.
+1. Ative todas as ofertas do ambiente &quot;ENV_DESIGN&quot; nos canais relevantes.
 1. Teste para fazer uma oferta. Se você não encontrar nenhum problema, execute tarefas pendentes na tarefa de fluxo de trabalho mais recente **[!UICONTROL Offer notification]** (offerMgt) para ativar todas as ofertas.
 
    ![](assets/migration_interaction_6.png)
@@ -611,7 +614,7 @@ Este é o procedimento a ser seguido depois de ter movido o conteúdo da oferta 
 1. Execute testes abrangentes.
 
    >[!NOTE]
-   Os nomes das categorias e ofertas online são modificados após a ativação. No canal de entrada, atualize todas as referências a ofertas e categorias.
+   Os nomes das categorias e ofertas online são modificados depois de serem colocados no ar. No canal recebido, atualize todas as referências ao oferta e categoria.
 
 ## Relatórios {#reports}
 
@@ -641,7 +644,7 @@ Assim como os relatórios (consulte [Relatórios](#reports)), se você adicionou
 >[!NOTE]
 As etapas para selecionar o mecanismo de renderização são as mesmas para selecionar relatórios. Consulte Relatórios [personalizados](#personalized-reports).
 
-Métodos de conexão de aplicativos da Web foram alterados na v7. Se você encontrar problemas de conexão em seus aplicativos da Web identificados, será necessário ativar temporariamente as opções **allowUserPassword** e **sessionTokenOnly** no arquivo **serverConf.xml** . Após a pós-atualização, modifique estes valores de opção:
+Os métodos de conexão de Aplicação web foram alterados na v7. Se você encontrar problemas de conexão em seus aplicativos da Web identificados, será necessário ativar temporariamente as opções **allowUserPassword** e **sessionTokenOnly** no arquivo **serverConf.xml** . Após a pós-atualização, modifique estes valores de opção:
 
 ```
 allowUserPassword="true"
@@ -669,14 +672,14 @@ sessionTokenOnly="false"
 
 ### Aplicativos da Web anônimos {#anonymous-web-applications}
 
-Se encontrar algum problema, publique novamente o aplicativo da Web. Se o problema persistir, você poderá selecionar o mecanismo de renderização v6.0. Se você não tiver adicionado o JavaScript, poderá selecionar o mecanismo de renderização v6.x e se beneficiar de seus novos recursos.
+Se você encontrar algum problema, publique novamente o aplicativo da Web. Se o problema persistir, você poderá selecionar o mecanismo de renderização v6.0. Se você não tiver adicionado o JavaScript, poderá selecionar o mecanismo de renderização v6.x e se beneficiar de seus novos recursos.
 
 >[!NOTE]
 As etapas para selecionar o mecanismo de renderização são as mesmas para selecionar relatórios. Consulte Relatórios [personalizados](#personalized-reports).
 
 ## Red-Hat {#red-hat}
 
-Se os esquemas predefinidos tiverem sido excluídos na v6.02 ou na v5.11, talvez não seja mais possível editar seus esquemas depois da pós-atualização. Se isso acontecer, execute o comando:
+Se os schemas prontos para uso tiverem sido excluídos na v6.02 ou na v5.11, talvez não seja mais possível editar seus schemas após a pós-atualização. Se isso acontecer, execute o comando:
 
 ```
 su - neolane
