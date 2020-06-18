@@ -15,9 +15,9 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: cc9ea59a9925930d4a4b260ce73a6bd4b615db5a
+source-git-commit: fecfff477b0750782c87c017a15e306acac4c61d
 workflow-type: tm+mt
-source-wordcount: '2857'
+source-wordcount: '2865'
 ht-degree: 78%
 
 ---
@@ -46,7 +46,7 @@ Para criar sua conta externa [!DNL Azure Synapse] de conta externa:
 
 1. Configure a conta externa do [!DNL Azure Synapse], você deve especificar:
 
-   * **[!UICONTROL Type]**: Análise do Azure Synapse
+   * **[!UICONTROL Type]**: Azure Synapse Analytics
 
    * **[!UICONTROL Server]**: URL do servidor do Azure Synapse
 
@@ -123,7 +123,7 @@ Para configurar o Azure Synapse no CentOS:
 
 1. No Campaign Classic, você pode configurar a conta externa do [!DNL Azure Synapse]. Para obter mais informações sobre como configurar sua conta externa, consulte esta [seção](../../platform/using/specific-configuration-database.md#azure-external).
 
-1. Como o Azure Synapse Analytics se comunica por meio da porta TCP 1433, é necessário abrir essa porta no firewall. Use o seguinte comando:
+1. Como o Azure Synapse Analytics se comunica através da porta TCP 1433, você precisa abrir esta porta no firewall. Use o seguinte comando:
 
    ```
    firewall-cmd --permanent --add-rich-rule='rule family="ipv4" source address="[server_ip_here]/32" port port="1433" protocol="tcp" accept'
@@ -132,7 +132,7 @@ Para configurar o Azure Synapse no CentOS:
 
    >[!NOTE]
    >
-   >Para permitir a comunicação do lado do Azure Synapse Analytics, talvez seja necessário adicionar o IP público à lista de permissões. Para fazer isso, consulte a documentação [do](https://docs.microsoft.com/en-us/azure/sql-database/sql-database-firewall-configure#use-the-azure-portal-to-manage-server-level-ip-firewall-rules)Azure.
+   >Para permitir a comunicação do lado do Azure Synapse Analytics, talvez seja necessário adicionar seu IP público à lista de permissões. Para fazer isso, consulte a documentação [do](https://docs.microsoft.com/en-us/azure/sql-database/sql-database-firewall-configure#use-the-azure-portal-to-manage-server-level-ip-firewall-rules)Azure.
 
 1. No caso de iptables, execute o seguinte comando:
 
@@ -160,7 +160,7 @@ Para configurar o Azure Synapse no Windows:
 
 1. No Campaign Classic, você pode configurar a conta externa do [!DNL Azure Synapse]. Para obter mais informações sobre como configurar sua conta externa, consulte esta [seção](../../platform/using/specific-configuration-database.md#azure-external).
 
-1. Como o Azure Synapse Analytics se comunica por meio da porta TCP 1433, é necessário abrir essa porta no Firewall do Windows Defender. For more on this, refer to [Windows documentation](https://docs.microsoft.com/en-us/windows/security/threat-protection/windows-firewall/create-an-outbound-program-or-service-rule).
+1. Como o Azure Synapse Analytics se comunica através da porta TCP 1433, você precisa abrir esta porta no Firewall do Windows Defender. For more on this, refer to [Windows documentation](https://docs.microsoft.com/en-us/windows/security/threat-protection/windows-firewall/create-an-outbound-program-or-service-rule).
 
 ### Azure Synapse em Debian {#azure-debian}
 
@@ -223,7 +223,7 @@ Para configurar o Azure Synapse em Debian:
 
    >[!NOTE]
    >
-   >Para permitir a comunicação do lado do Azure Synapse Analytics, talvez seja necessário adicionar o IP público à lista de permissões. Para fazer isso, consulte a documentação [do](https://docs.microsoft.com/en-us/azure/sql-database/sql-database-firewall-configure#use-the-azure-portal-to-manage-server-level-ip-firewall-rules)Azure.
+   >Para permitir a comunicação do lado do Azure Synapse Analytics, talvez seja necessário adicionar seu IP público à lista de permissões. Para fazer isso, consulte a documentação [do](https://docs.microsoft.com/en-us/azure/sql-database/sql-database-firewall-configure#use-the-azure-portal-to-manage-server-level-ip-firewall-rules)Azure.
 
 ## Configuração do acesso ao Snowflake {#configure-access-to-snowflake}
 
