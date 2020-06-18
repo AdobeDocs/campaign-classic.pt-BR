@@ -14,8 +14,11 @@ discoiquuid: 56cbf48a-eb32-4617-8f80-efbfd05976ea
 index: y
 internal: n
 snippet: y
-translation-type: ht
-source-git-commit: 527d2dd2296d18c8ca26745b9f87d65c6fdf480a
+translation-type: tm+mt
+source-git-commit: f7c040ceffcce20805d7cc8d1e4e46c77e611056
+workflow-type: tm+mt
+source-wordcount: '2472'
+ht-degree: 95%
 
 ---
 
@@ -34,21 +37,21 @@ O Adobe Campaign gerencia uma lista de endereços em quarentena. Os destinatári
 
 Os perfis cujos endereços de email ou número de telefone estão em quarentena são excluídos automaticamente durante a preparação da mensagem (consulte [Identificação de endereços em quarentena para um delivery](#identifying-quarantined-addresses-for-a-delivery)). Isso irá acelerar os deliveries, pois a taxa de erro tem um efeito significativo na velocidade do delivery.
 
-Alguns provedores de acesso à Internet consideram automaticamente emails como spam se a taxa de endereços inválidos for muito alta. A quarentena permite evitar a inclusão na blacklist por esses provedores.
+Alguns provedores de acesso à Internet consideram automaticamente emails como spam se a taxa de endereços inválidos for muito alta. A Quarentena, portanto, permite evitar que você seja adicionado a uma lista de blocos por esses provedores.
 
 Além disso, a quarentena ajuda a reduzir os custos de envio do SMS, excluindo números de telefone incorretos dos deliveries. Para obter mais informações sobre as práticas recomendadas para proteger e otimizar seus deliveries, consulte [esta página](https://helpx.adobe.com/br/campaign/kb/delivery-best-practices.html).
 
-### Quarentena versus blacklist {#quarantine-vs-blacklisting}
+### Quarentena vs lista de blocos {#quarantine-vs-block-list}
 
 A **quarentena** se aplica somente a um endereço, não ao próprio perfil. Isso significa que, se dois perfis tiverem o mesmo endereço de email, eles serão afetados se o endereço estiver em quarentena.
 
 Da mesma forma, um perfil cujo endereço de email está em quarentena poderia atualizar seu perfil e inserir um novo endereço e pode ser alvo de ações de delivery novamente.
 
-A inclusão na **Blacklist**, por outro lado, resultará no perfil não sendo mais alvo por qualquer delivery, por exemplo, depois de unsubscription (recusa).
+Being on the **block list**, on the other hand, will result in the profile no longer being targeted by any delivery, for example after an unsubscription (opt-out).
 
 >[!NOTE]
 >
->Quando um usuário responde a uma mensagem SMS com uma palavra-chave como &quot;PARAR&quot; para não participar dos deliveries de SMS, seu perfil não é incluído na blacklist como no processo de recusa de email. O número de telefone do perfil é enviado para quarentena, para que o usuário continue recebendo mensagens de email.
+>Quando um usuário responde a uma mensagem SMS com uma palavra-chave como &quot;PARAR&quot; para recusar delivery SMS, seu perfil não é adicionado à lista de bloqueios como no processo de recusa por email. O número de telefone do perfil é enviado para quarentena, para que o usuário continue recebendo mensagens de email.
 
 ## Identificação de endereços em quarentena {#identifying-quarantined-addresses}
 
@@ -103,10 +106,10 @@ Se você precisar remover um endereço da quarentena, altere o status manualment
 
 ![](assets/tech_quarant_error_status.png)
 
-Se você alterar o status para **[!UICONTROL Whitelisted]**, o endereço será direcionado sistematicamente sempre que um erro for encontrado.
+Se você alterar o status para **[!UICONTROL On allow list]**, o endereço será direcionado sistematicamente sempre que um erro for encontrado.
 
 >[!CAUTION]
-Os endereços na blacklist não são considerados pelo sistema de quarentena e não são alvos, mesmo que você altere o status do endereço.
+Os endereços na lista de blocos não são afetados pelo sistema de quarentena e não são direcionados, mesmo se você alterar o status do endereço.
 
 Você também pode alterar o número de erros e o período entre erros. Para fazer isso, altere as configurações do assistente de implantação (Configurações avançadas/canal de email). Para obter mais informações sobre o assistente de implantação, consulte [esta seção](../../installation/using/deploying-an-instance.md).
 
