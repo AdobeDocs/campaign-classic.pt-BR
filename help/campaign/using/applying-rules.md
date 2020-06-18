@@ -14,8 +14,11 @@ discoiquuid: a0e76d27-bedd-4f81-b4d2-1221444e670e
 index: y
 internal: n
 snippet: y
-translation-type: ht
-source-git-commit: 20f835c357d016643ea1f3209ee4dfb6d3239f90
+translation-type: tm+mt
+source-git-commit: 8c1f284be77447a88748ce97a3524b7035bb5bc0
+workflow-type: tm+mt
+source-wordcount: '980'
+ht-degree: 92%
 
 ---
 
@@ -28,7 +31,7 @@ Para aplicar as regras de tipologia criadas, é necessário associá-las a uma t
 
 1. Crie uma tipologia de campanha.
 
-   As tipologias são acessadas no nó **[!UICONTROL Administration > Campaign Management > Typology management]** > **[!UICONTROL Typologies]**.
+   As tipologias são acessadas pelo nó **[!UICONTROL Administration > Campaign Management > Typology management]** > **[!UICONTROL Typologies]**.
 
 1. Vá para a guia **[!UICONTROL Rules]**, clique no botão **[!UICONTROL Add]** e selecione as regras a serem aplicadas com esta tipologia.
 
@@ -51,7 +54,7 @@ Você poderá restringir o campo de aplicação de uma regra de acordo com suas 
 
 É possível configurar regras de tipologia para que elas se apliquem apenas a certos deliveries aos quais estajam vinculadas ou a certos recipients entre os alvos de um delivery.
 
-Para definir as condições de aplicação de uma regra, clique no link **[!UICONTROL Edit the rule application conditions...]** na guia **[!UICONTROL General]**.
+To define the application conditions of a rule, click the **[!UICONTROL Edit the rule application conditions...]** link in the **[!UICONTROL General]** tab.
 
 Em seguida, use o editor de query para definir as condições de filtragem. No exemplo a seguir, a regra de capacidade apresenta apenas os deliveries com a palavra &#39;oferta&#39; em seu rótulo ou deliveries criados antes de 1º de abril de 2013.
 
@@ -71,7 +74,7 @@ Para fazer isso, o campo **[!UICONTROL Frequency]** da guia **[!UICONTROL Genera
 
 Para salvar os resultados além deste período, insira um valor maior do que 12 no campo **[!UICONTROL Frequency]**: depois que esse período expirar, todas as regras serão reaplicadas.
 
-A opção **[!UICONTROL Re-apply the rule at the start of personalization]** permite a aplicação automática da regra durante a fase de personalização, incluindo se o período declarado no campo **[!UICONTROL Frequency]** ainda for válido.
+The **[!UICONTROL Re-apply the rule at the start of personalization]** option lets you apply the rule automatically during the personalization phase, including if the period stated in the **[!UICONTROL Frequency]** field is still valid.
 
 ## Selecionar a fase da aplicação da regra {#selecting-the-rule-application-phase}
 
@@ -84,7 +87,7 @@ No modo de operação padrão, as regras são aplicadas na seguinte sequência:
 1. Regras de controle, se elas forem aplicadas no início do direcionamento.
 1. Regras de filtragem:
 
-   * Regras de aplicações nativas para qualificação de endereço: endereço definido / endereço não verificado / endereço incluído na blacklist / endereço em quarentena / qualidade do endereço.
+   * Regras nativas para a qualificação de endereço: endereço definido / endereço não verificado / endereço na lista de blocos / endereço em quarentena / qualidade do endereço.
    * Filtrar regras definidas pelo usuário.
    * Regra de desduplicação no endereço ou identificador (aplicado se necessário).
 
@@ -104,7 +107,7 @@ Por exemplo, uma regra de pressão com uma ordem de execução de 20 é executad
 
 ### Regras de controle {#control-rules}
 
-Para regras de **[!UICONTROL Control]**, é possível decidir em qual ponto do ciclo de vida do delivery ela será aplicada (antes ou depois do direcionamento, no início da personalização, no final da análise). Na guia **[!UICONTROL General]** da regra de tipologia, selecione o valor a ser aplicado na lista suspensa do campo **[!UICONTROL Phase]**.
+Para regras de **[!UICONTROL Control]**, é possível decidir em qual ponto do ciclo de vida do delivery ela será aplicada (antes ou depois do direcionamento, no início da personalização, no final da análise). Na guia **[!UICONTROL Phase]** da regra de tipologia, selecione o valor a ser aplicado na lista suspensa do campo **[!UICONTROL General]**.
 
 ![](assets/campaign_opt_define_control_phase.png)
 
@@ -132,7 +135,7 @@ Os valores possíveis são:
 
 ### Controle o tráfego SMTP de saída {#control-outgoing-smtp-traffic}
 
-Como opção, é possível usar o campo **[!UICONTROL Managing affinities with IP addresses]** para vincular os deliveries ao servidor de deliveries (MTA) dessa afinidade. Isso permite a restrição do número de emails para envios específicas em máquinas ou endereços de saída.
+As an option, you can use the **[!UICONTROL Managing affinities with IP addresses]** field to link deliveries to the delivery server (MTA) this affinity. Isso permite a restrição do número de emails para envios específicas em máquinas ou endereços de saída.
 
 ![](assets/campaign_opt_select_ip_affinity.png)
 
