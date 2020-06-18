@@ -15,9 +15,9 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 3522f4f50770dde220610cd5f1c4084292d8f1f5
+source-git-commit: e7de74feb61cc8f4b386a6ff86fc58b9c9e9ca1d
 workflow-type: tm+mt
-source-wordcount: '3055'
+source-wordcount: '3066'
 ht-degree: 3%
 
 ---
@@ -116,7 +116,7 @@ As seguintes opções estão disponíveis:
 
 * **[!UICONTROL Delivery duration of messages]** : Além desse tempo, o delivery é parado (por padrão, 5 dias),
 * **[!UICONTROL Online resources validity duration]** : Tempo durante o qual são mantidas as informações do perfil do recipient para gerar mirrores page,
-* **[!UICONTROL Exclude recipients who no longer wish to be contacted]** : Quando essa opção for selecionada, recipient incluído na blacklist não serão contatados,
+* **[!UICONTROL Exclude recipients who no longer wish to be contacted]** : Quando esta opção for selecionada, os recipient na lista de blocos não serão contatados,
 * **[!UICONTROL Automatically ignore doubles]** : Quando essa opção for selecionada, o delivery não será feito para endereços de duplicado.
 
 ### Repetir parâmetros {#retry-parameters}
@@ -459,7 +459,7 @@ O atributo status pode ser um dos três valores:
 
 * normal: Comportamento existente (sem sincronização)
 
-* lista negra: O URL é incluído na blacklist se retornar um erro 404. A duração (em segundos) da lista negra é definida por um atributo de **tempo limite** cujo valor padrão é 60s.
+* lista de bloqueios: O URL será adicionado à lista de blocos se retornar um erro 404. A duração (em segundos) do URL que está na lista de blocos é definida por um atributo de **tempo limite** cujo valor padrão é 60s.
 
 A configuração predefinida da sincronização é:
 
@@ -478,11 +478,11 @@ startRedirection="true" startRedirectionInModule="true" trackWebVisitors="false"
 <relay debugRelay="false" forbiddenCharsInAuthority="?#.@/:" forbiddenCharsInPath="?#/"
            modDir="index.html" startRelay="false" startRelayInModule="true" timeout="60">
    <url IPMask="" deny="" hostMask="" relayHost="true" relayPath="true" status="normal" targetUrl="https://localhost:8080" timeout="" urlPath="/view/*"/>
-      <url IPMask="" deny="" hostMask="" relayHost="true" relayPath="true" status="blacklist" targetUrl="https://localhost:8080" timeout="" urlPath="*.jsp"/>
-      <url IPMask="" deny="" hostMask="" relayHost="true" relayPath="true" status="blacklist" targetUrl="https://localhost:8080" timeout="" urlPath="*.jssp"/>
-      <url IPMask="" deny="" hostMask="" relayHost="true" relayPath="true" status="blacklist" targetUrl="https://localhost:8080" timeout="" urlPath="/webApp/*"/>
-      <url IPMask="" deny="" hostMask="" relayHost="true" relayPath="true" status="blacklist" targetUrl="https://localhost:8080" timeout="" urlPath="/report/*"/>
-      <url IPMask="" deny="" hostMask="" relayHost="true" relayPath="true" status="blacklist" targetUrl="https://localhost:8080" timeout="" urlPath="/jssp/*"/>
+      <url IPMask="" deny="" hostMask="" relayHost="true" relayPath="true" status="blocklist" targetUrl="https://localhost:8080" timeout="" urlPath="*.jsp"/>
+      <url IPMask="" deny="" hostMask="" relayHost="true" relayPath="true" status="blocklist" targetUrl="https://localhost:8080" timeout="" urlPath="*.jssp"/>
+      <url IPMask="" deny="" hostMask="" relayHost="true" relayPath="true" status="blocklist" targetUrl="https://localhost:8080" timeout="" urlPath="/webApp/*"/>
+      <url IPMask="" deny="" hostMask="" relayHost="true" relayPath="true" status="blocklist" targetUrl="https://localhost:8080" timeout="" urlPath="/report/*"/>
+      <url IPMask="" deny="" hostMask="" relayHost="true" relayPath="true" status="blocklist" targetUrl="https://localhost:8080" timeout="" urlPath="/jssp/*"/>
       <url IPMask="" deny="" hostMask="" relayHost="true" relayPath="true" status="normal" targetUrl="https://localhost:8080" timeout="" urlPath="/strings/*"/>
       <url IPMask="" deny="" hostMask="" relayHost="true" relayPath="true" status="normal" targetUrl="https://localhost:8080" timeout="" urlPath="/interaction/*"/>
       <url IPMask="" deny="" hostMask="" relayHost="true" relayPath="true" status="normal" targetUrl="https://localhost:8080" timeout="" urlPath="/barcode/*"/>
