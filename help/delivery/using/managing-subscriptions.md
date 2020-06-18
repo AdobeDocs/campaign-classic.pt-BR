@@ -14,8 +14,11 @@ discoiquuid: 9a61fe74-f779-4f23-be25-3d9a8e95704a
 index: y
 internal: n
 snippet: y
-translation-type: ht
-source-git-commit: 1c86322fa95aee024f6c691b61a10c21a9a22eb7
+translation-type: tm+mt
+source-git-commit: fa9e4ddc716809b96e259acd1137a0c24ef68fee
+workflow-type: tm+mt
+source-wordcount: '1102'
+ht-degree: 93%
 
 ---
 
@@ -49,7 +52,7 @@ Há três modos de serviço de subscrição/unsubscription:
 
 É possível criar e gerenciar subscrições de serviços de informações com mensagens de confirmação associadas ou entregas automáticas aos assinantes.
 
-Para acessar o mapa de serviços de informações, acesse o universo **[!UICONTROL Profiles and Targets]** e clique no link **[!UICONTROL Services and Subscriptions]**.
+To access the information services map, go to the **[!UICONTROL Profiles and Targets]** universe and click the **[!UICONTROL Services and Subscriptions]** link.
 
 ![](assets/s_ncs_user_services_new.png)
 
@@ -63,7 +66,7 @@ Para editar um serviço existente, clique em seu respectivo nome. Para criar um 
    >
    >As subscrições do Facebook e do Twitter estão detalhadas [nesta seção](../../social/using/about-social-marketing.md). As subscrições de aplicativos móveis são detalhadas em [Sobre o canal de aplicativos móveis](../../delivery/using/about-mobile-app-channel.md).
 
-* Para um serviço de tipo de email, selecione o **Modo de delivery**. Os modos possíveis são: **[!UICONTROL Newsletter]** ou **[!UICONTROL Viral]**.
+* Para um serviço de tipo de email, selecione o **Modo de delivery**. The possible modes are: **[!UICONTROL Newsletter]** or **[!UICONTROL Viral]**.
 * Você pode enviar **mensagens de confirmação** para uma subscrição ou unsubscription. Para fazer isso, selecione os templates que devem ser usados para criar os deliveries correspondentes a partir dos campos **[!UICONTROL Subscription]** e **[!UICONTROL Unsubscription]**. Esses templates devem ser configurados com um target mapping do tipo **[!UICONTROL Subscription]** sem um destino definido. Consulte a seção [Sobre canal de email](../../delivery/using/about-email-channel.md).
 * Por padrão, as subscrições são ilimitadas. É possível desmarcar a opção **[!UICONTROL Unlimited]** para definir uma duração de validade do serviço. A duração pode ser especificada em dias (**[!UICONTROL d]**) ou meses (**[!UICONTROL m]** ).
 
@@ -71,7 +74,7 @@ Depois que o serviço é salvo, ele será adicionado à lista Services and Subsc
 
 ![](assets/s_ncs_user_services_subscriptions.png)
 
-O botão **[!UICONTROL Detail...]** permite examinar as propriedades de subscrição do recipient selecionado.
+The **[!UICONTROL Detail...]** button lets you look at the subscription properties for the selected recipient.
 
 Você pode modificar as propriedades de subscrição de um recipient.
 
@@ -132,7 +135,7 @@ Para registrar recipients para um serviço de informação, é possível:
 
    Para obter mais informações, consulte a seção sobre edição de perfil [nesta seção](../../platform/using/editing-a-profile.md).
 
-* Subscrever automaticamente um conjunto de assinantes a este serviço. A lista de recipients pode vir de uma operação de filtragem, grupo, pasta, importação ou seleção direta usando o mouse. Para inscrever esses recipients, selecione os perfis e clique com o botão direito do mouse. Selecione **[!UICONTROL Actions > Subscribe selection to a service...]**, selecione o serviço desejado e inicie a operação.
+* Subscrever automaticamente um conjunto de assinantes a este serviço. A lista de recipients pode vir de uma operação de filtragem, grupo, pasta, importação ou seleção direta usando o mouse. Para inscrever esses recipients, selecione os perfis e clique com o botão direito do mouse. Select **[!UICONTROL Actions > Subscribe selection to a service...]**, select the service concerned, and launch the operation.
 * Importar recipients e inscrevê-los automaticamente em um serviço de informação. Para fazer isso, selecione o serviço na última etapa do assistente de importação.
 
    Para obter mais informações, consulte [esta seção](../../platform/using/importing-data.md#import-wizard).
@@ -141,7 +144,7 @@ Para registrar recipients para um serviço de informação, é possível:
 
    Para obter mais informações, consulte [esta seção](../../web/using/about-web-applications.md).
 
-* Criação de um workflow de direcionamento e uso de uma caixa **[!UICONTROL Subscription service]**.
+* Creating a targeting workflow and using a **[!UICONTROL Subscription service]** box.
 
    ![](assets/s_ncs_user_subscribe_from_wf.png)
 
@@ -153,7 +156,7 @@ Para registrar recipients para um serviço de informação, é possível:
 
 por lei, deliveries de email devem conter um link para cancelamento. Os recipients podem clicar neste link para atualizar seu perfil e ser excluídos do envio dos futuros deliveries.
 
-O link padrão para cancelamento de subscrição é inserido por meio do último botão da barra de ferramentas do editor de conteúdo fornecido no assistente de delivery (consulte [Sobre personalização](../../delivery/using/about-personalization.md)). Quando o recipient clica nesse link, o perfil passa a ser não autorizado (recusado), significando que este recipient não será mais direcionado por qualquer ação de delivery.
+O link padrão para cancelamento de subscrição é inserido por meio do último botão da barra de ferramentas do editor de conteúdo fornecido no assistente de delivery (consulte [Sobre personalização](../../delivery/using/about-personalization.md)). Quando o recipient clica nesse link, o perfil é adicionado à lista de blocos (opção de não participação), o que significa que esse recipient não será mais direcionado por nenhuma ação de delivery.
 
 Os recipients podem, no entanto, optar por cancelar a subscrição de um serviço sem cancelar a subscrição de todos os serviços. Para permitir isso, é possível usar um formulário web (consulte [esta seção](../../web/using/adding-fields-to-a-web-form.md#subscription-checkboxes)) ou inserir um link personalizado de cancelamento de subscrição (consulte [Blocos de personalização](../../delivery/using/personalization-blocks.md)).
 
