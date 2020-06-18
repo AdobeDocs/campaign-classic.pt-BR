@@ -14,8 +14,11 @@ discoiquuid: b53d9810-f61f-4257-b410-e4d30f78429d
 index: y
 internal: n
 snippet: y
-translation-type: ht
-source-git-commit: f8cf2f72dcf2ab48a42faf7931ca831b6431548d
+translation-type: tm+mt
+source-git-commit: ffee73b949a77343eaf23d0fb9a58a4283f4f87a
+workflow-type: tm+mt
+source-wordcount: '1617'
+ht-degree: 100%
 
 ---
 
@@ -185,7 +188,7 @@ A seção abaixo fornece as práticas recomendadas para otimizar as consultas ex
 
    Certifique-se de que a `where` cláusula tenha o mesmo tipo do campo.
 
-   Um erro comum é: `iBlacklist='3'` where `iBlacklist` é um campo numérico e `3` significa um valor de texto.
+   Um erro comum é: `iBlocklist='3'` where `iBlocklist` é um campo numérico e `3` significa um valor de texto.
 
    Verifique se você sabe qual será o plano de execução da consulta. Evite varreduras completas de tabelas, especialmente para consultas em tempo real ou consultas quase em tempo real em execução a cada minuto.
 
