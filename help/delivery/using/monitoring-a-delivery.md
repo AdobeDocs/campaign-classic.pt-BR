@@ -14,11 +14,11 @@ discoiquuid: 3aab3d47-76fd-4c68-add4-9c14240c936e
 index: y
 internal: n
 snippet: y
-translation-type: ht
-source-git-commit: fcedad248169f53e716f2bd8b1b141fbf1f4d189
-workflow-type: ht
+translation-type: tm+mt
+source-git-commit: 537cbdec1ec88da1c759f6ca8eafe383c55a61d3
+workflow-type: tm+mt
 source-wordcount: '2602'
-ht-degree: 100%
+ht-degree: 97%
 
 ---
 
@@ -117,12 +117,12 @@ A manutenção da plataforma e do banco de dados também pode afetar os desempen
 
 Depois de clicar no botão **[!UICONTROL Send]**, seu delivery parece demorar mais do que o normal. Isso pode ser causado por elementos diferentes:
 
-* Alguns provedores de email podem ter incluído seus endereços IP na blacklist. Neste caso, verifique seus broadlogs e consulte [este guia de introdução](https://docs.adobe.com/content/help/pt-BR/campaign-classic/using/sending-messages/deliverability-management/about-deliverability.html).
+* Alguns provedores de e-mail podem ter adicionado seus endereços IP a uma lista de bloqueios. In this case, check your broadlogs and consult [this section](../../delivery/using/about-deliverability.md).
 * Seu delivery pode ser muito grande para ser processado rapidamente, isso pode ocorrer com alta personalização do JavaScript ou se o seu delivery pesa mais do que 60 kbytes. Consulte as [Práticas recomendadas de delivery](https://helpx.adobe.com/br/campaign/kb/delivery-best-practices.html) do Adobe Campaign para saber mais sobre as diretrizes de conteúdo.
 * Pode ter ocorrido limitação dentro do MTA do Adobe Campaign. Isso é causado por:
 
    * Mensagens pendentes (**[!UICONTROL quotas met]** message): as cotas declaradas pelas regras MX declarativas definidas no Campaign foram atendidas. Para obter mais informações sobre esse tipo de mensagem, consulte [esta página](https://helpx.adobe.com/br/campaign/kb/acc-deliverability-faq.html#FAQ). Para saber mais sobre as regras MX, consulte [esta página](../../delivery/using/technical-recommendations.md#mx-rules).
-   * Mensagens pendentes (mensagem **[!UICONTROL dynamic flow control]**): o MTA do Campaign encontrou erros ao tentar entregar mensagens para um determinado ISP, o que faz com que um atraso evite uma densidade de erros muito grande e, portanto, enfrente uma possível inclusão na blacklist.
+   * Messages pended (**[!UICONTROL dynamic flow control]** message): Campaign MTA has encountered errors when trying to deliver messages for a given ISP which causes a slowdown to avoid too big of an error density and thus facing potential block list.
 
 * Um problema do sistema pode impedir que os servidores interajam: isso pode desacelerar todo o processo de envio. Verifique os servidores para garantir que não haja problemas de memória ou recursos que possam afetar o Campaign no processo de obter os dados de personalização, por exemplo.
 
@@ -166,7 +166,7 @@ Ao enviar um delivery, você pode encontrar o seguinte status no seu painel de d
   </tr> 
   <tr> 
    <td> Ignored<br /> </td> 
-   <td> O delivery não foi enviado ao recipient devido a um erro no endereço. Ele foi incluído na blacklist, colocado em quarentena, não fornecido ou duplicado. <br /> </td> 
+   <td> O delivery não foi enviado ao recipient devido a um erro no endereço. Foi adicionado a uma lista de blocos, em quarentena, não fornecido ou a um duplicado. <br /> </td> 
   </tr> 
   <tr> 
    <td> Sent<br /> </td> 
