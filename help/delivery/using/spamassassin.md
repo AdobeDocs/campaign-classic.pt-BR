@@ -14,8 +14,11 @@ discoiquuid: d41658ab-ee79-4a5c-a165-d94b81eb2b33
 index: y
 internal: n
 snippet: y
-translation-type: ht
-source-git-commit: 7dbc876fae0bde78e3088ee1ab986cd09e9bcc38
+translation-type: tm+mt
+source-git-commit: 537cbdec1ec88da1c759f6ca8eafe383c55a61d3
+workflow-type: tm+mt
+source-wordcount: '248'
+ht-degree: 81%
 
 ---
 
@@ -31,7 +34,7 @@ O SpamAssassin aproveita uma variedade de técnicas de detecção de spam, inclu
 * Detecção de spam com base em DNS e soma de verificação difusa
 * Filtragem Bayesiana
 * Programas externos
-* Blacklists
+* Listas de bloqueios
 * Bancos de dados online
 
 >[!NOTE]
@@ -46,7 +49,7 @@ Após criar seu delivery de email e definir seu conteúdo, siga as etapas abaixo
 
 Para obter mais informações sobre criar e configurar um delivery, consulte [esta página](../../delivery/using/about-email-channel.md).
 
-1. Acesse a guia **[!UICONTROL Preview]**.
+1. Go to the **[!UICONTROL Preview]** tab.
 1. Selecione um recipient para pré-visualizar seu delivery.
 
    ![](assets/s_tn_del_preview_spamassassin_recipient.png)
@@ -59,12 +62,12 @@ Para obter mais informações sobre criar e configurar um delivery, consulte [es
 
    ![](assets/s_tn_del_preview_spamassassin_ko.png)
 
-1. Clique no link **[!UICONTROL More...]** próximo ao aviso.
-1. Selecione a guia **[!UICONTROL Anti-spam checking]**.
-1. Acesse a seção **[!UICONTROL Points / Rule / Description]** para exibir os motivos para esse risco.
+1. Click the **[!UICONTROL More...]** link next to the warning.
+1. Select the **[!UICONTROL Anti-spam checking]** tab.
+1. Go to the **[!UICONTROL Points / Rule / Description]** section to view the reasons for this risk.
 
    ![](assets/s_tn_del_msg_spamassassin_ko.png)
 
 >[!NOTE]
 >
->Sempre que a **[!UICONTROL Verificação anti-spam]** é selecionada, o serviço SpamAssassin é acionado e a mensagem é analisada novamente para detecção anti-spam. Altere o conteúdo antes de executar a análise anti-spam novamente.
+>Each time you click the **[!UICONTROL Anti-spam checking]**, the SpamAssassin service is called and the message is analyzed again for anti-spam detection. Altere o conteúdo antes de executar a análise anti-spam novamente.
