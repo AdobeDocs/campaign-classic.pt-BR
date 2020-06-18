@@ -14,8 +14,11 @@ discoiquuid: 93dd29e8-cf0a-4010-a3cc-f68c52c0d9ef
 index: y
 internal: n
 snippet: y
-translation-type: ht
-source-git-commit: 51e4d72abf3a1f48700ca38566dbf06dd24594b8
+translation-type: tm+mt
+source-git-commit: fecfff477b0750782c87c017a15e306acac4c61d
+workflow-type: tm+mt
+source-wordcount: '476'
+ht-degree: 88%
 
 ---
 
@@ -46,7 +49,7 @@ Esta tela contém todos os dados gerais sobre o perfil selecionado. Em particula
 
 >[!NOTE]
 >
->Quando a opção **[!UICONTROL No longer contact (by any channel)]** está selecionada, isso significa que o perfil está incluído na blacklist, ou seja, o perfil expressou o desejo de não ser contatado (por exemplo, clicando em um link de unsubscription em um boletim informativo). Ele não será mais visado por entregas em nenhum canal (e-mail, mala direta, etc.). Para obter mais informações, consulte [esta página](../../delivery/using/understanding-quarantine-management.md).
+>When the **[!UICONTROL No longer contact (by any channel)]** option is selected, this means that the profile is on the block list, i.e. the profile has expressed a wish not to be contacted (for example, by clicking an unsubscription link in a newsletter). Ele não será mais visado por entregas em nenhum canal (e-mail, mala direta, etc.). Para obter mais informações, consulte [esta página](../../delivery/using/understanding-quarantine-management.md).
 
 ## Guia Contact information {#contact-information-tab}
 
@@ -58,7 +61,7 @@ Esta tela mostra o índice de qualidade do endereço, bem como a quantidade de e
 
 ## Guia Other {#other-tab}
 
-Esta tela contém campos definidos pelo usuário que podem ser personalizados com base nos requisitos. Também é possível alterar os nomes dos campos e definir o formato em **[!UICONTROL Field properties...]**, conforme mostrado abaixo:
+Esta tela contém campos definidos pelo usuário que podem ser personalizados com base nos requisitos. You can also change the names of the fields and define their format, via **[!UICONTROL Field properties...]**, as shown below:
 
 ![](assets/s_ncs_user_profile_others_tab.png)
 
