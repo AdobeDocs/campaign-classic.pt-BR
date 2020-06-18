@@ -12,11 +12,11 @@ discoiquuid: 6a394eeb-fbe1-4712-bb13-db5d7965fb73
 index: y
 internal: n
 snippet: y
-translation-type: ht
-source-git-commit: 15581517df8d2f397285bbadebd83b7f4539dfd7
-workflow-type: ht
-source-wordcount: '1324'
-ht-degree: 100%
+translation-type: tm+mt
+source-git-commit: 56fed9fff445892366d3e0f1367029882077ae20
+workflow-type: tm+mt
+source-wordcount: '1355'
+ht-degree: 85%
 
 ---
 
@@ -50,38 +50,37 @@ Ao receber sempre a mesma mensagem de erro para um ISP, o email ou IP pode ter s
 
 Se o problema persistir, entre em contato com os serviços comerciais ou de entrega, o Atendimento ao cliente do Adobe Campaign ou o suporte do Adobe Campaign.
 
-## Listas negras versus quarentenas {#blacklisting-versus-quarantine}
+## Lista de bloqueios versus quarentena {#block-list-versus-quarantine}
 
-* **Qual é a diferença entre um endereço de email incluído na lista negra e na quarentena?**
+* **Qual é a diferença entre um endereço de email na lista de bloqueios e um endereço de email em quarentena?**
 
-   * O status **[!UICONTROL Blacklisted]** é resultado de um ciclo de feedback (quando uma pessoa reporta uma mensagem como spam).
+   * O status **[!UICONTROL On block list]** é resultado de um ciclo de feedback (quando uma pessoa reporta uma mensagem como spam).
 
    * O status **[!UICONTROL Quarantined]** é resultado de um salto suave ou forte.
-   Para obter mais informações, consulte [esta seção](../../delivery/using/understanding-quarantine-management.md#quarantine-vs-blacklisting).
+   Para obter mais informações, consulte [esta seção](../../delivery/using/understanding-quarantine-management.md#quarantine-vs-block-list).
 
 * **O que significam os diferentes motivos de erro de quarentena?**
 
-   Aqui estão os 10 possíveis motivos: não definido, usuário desconhecido, domínio inválido, endereço incluído na lista negra, recusado, erro ignorado, inacessível, conta desativada, caixa de correio cheia e não conectado.
+   Aqui estão 10 possíveis motivos: não definido, usuário desconhecido, domínio inválido, endereço na lista de bloqueios, recusado, erro ignorado, inacessível, conta desativada, caixa de correio cheia, não conectado.
 
    Para obter mais informações, consulte [Entendendo o gerenciamento da quarentena](../../delivery/using/understanding-quarantine-management.md).
 
-## Fora da lista negra {#unblacklisting}
+## Remoção da lista de blocos {#remove-from-block-list}
 
-* **Um dos destinatários foi incluído na lista negra por engano. Como faço para excluí-los da lista negra para que eu possa iniciar o envio de mensagens para eles novamente?**
+* **Um dos meus recipient foi adicionado à lista de bloqueios por engano. How do I remove them from the block list so that I can start sending them messages again?**
 
    * Vá para **[!UICONTROL Administration > Campaign Management > Non deliverables Management > Non deliverables and addresses]**.
    * Nos detalhes do registro correspondente, defina o valor do campo **[!UICONTROL Status]** como **[!UICONTROL Valid]**.
    * Salve o registro.
 
-* **Como é possível descobrir se um dos IPs está incluído na lista negra? Como faço para excluir a lista negra dos IPs?**
+* **How can I find out whether one of my IPs is on a block list? How do I remove my IP(s) from a block list?**
 
-   Para verificar se o endereço IP está na lista negra, é possível usar vários sites para verificá-lo:
-   * [https://mxtoolbox.com/](https://mxtoolbox.com/)
-   * [https://whatismyipaddress.com/blacklist-check](https://whatismyipaddress.com/blacklist-check)
-   * [https://www.blacklistalert.org/](https://www.blacklistalert.org/)
-   Geralmente, o resultado da verificação do endereço IP retorna uma lista que contém os detalhes da lista negra e também o nome do site que colocou o endereço IP na lista.
+   To check whether your IP address is on a block list, you can use various web sites to verify it, such as:
+   * [MX Toolbox](https://mxtoolbox.com/)
+   * [What is my IP address](https://whatismyipaddress.com)
+   Geralmente, o resultado da verificação de endereço IP retornará uma lista que contém detalhes da lista de bloqueios e também o nome do site que bloqueou o endereço IP.
 
-   Ao clicar no link correspondente, é possível acessar os detalhes do site. Em seguida, é possível solicitar que o site seja excluído da lista negra que incluiu o endereço IP.
+   Ao clicar no link correspondente, é possível acessar os detalhes do site. Em seguida, você pode solicitar que seu site seja excluído do site que adicionou o endereço IP à lista de blocos.
 
    >[!NOTE]
    >
