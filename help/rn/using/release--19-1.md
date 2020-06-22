@@ -15,10 +15,10 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 2c555f29f0e0029b468927dbdb4bc79f9a35990d
+source-git-commit: 655544352070b0e2fab72b1991d2e4d80e03e349
 workflow-type: tm+mt
-source-wordcount: '2693'
-ht-degree: 98%
+source-wordcount: '2808'
+ht-degree: 94%
 
 ---
 
@@ -77,7 +77,19 @@ _13 de agosto de 2019_
 
 ## Versão 19.1.4 - Build 9032{#release-19-1-4-build-9032}
 
-![](assets/do-not-localize/green_2.png) **29 de abril de 2020**: nova build (9032@3a9dc9c) que inclui as seguintes correções:
+![](assets/do-not-localize/green_2.png) **22 de junho de 2020**: nova compilação (9032@800be2e) que inclui as seguintes correções:
+
+* O conector HTTP2 do iOS foi aprimorado (atualizações de terceiros e gerenciamento de erros). (NEO-25904, NEO-25903, NEO-25799)
+
+As seguintes correções estão relacionadas ao mecanismo de segurança do link de rastreamento:
+
+* Correção de um problema que impedia que o rastreamento de &quot;cliques de notificação&quot; funcionasse (notificações por push do iOS e do Android). (NEO-25965)
+* Correção de um problema que impedia a abertura/clique de URLs de rastreamento ao usar determinadas versões herdadas do Outlook.  (NEO-25688)
+* Correção de um problema que impedia que o rastreamento de URLs usando fragmentos em parâmetros de personalização (tags de âncora com sinal de número) funcionasse. (NEO-25774)
+* Correção de um problema com o serviço anti-phishing. (NEO-25283)
+* Correção de um problema de rastreamento ao usar fórmulas de rastreamento personalizadas específicas. (NEO-25277)
+
+![](assets/do-not-localize/orange_2.png) **29 de abril de 2020**: nova build (9032@3a9dc9c) que inclui as seguintes correções:
 
 * A segurança no rastreamento de links no email foi aprimorada. Ela é ativada por padrão para todos os clientes. Um recurso de segurança adicional e aprimorado está disponível e pode ser ativado ao acessar o Atendimento ao cliente. Mais detalhes sobre o recurso e as etapas para clientes não hospedados para habilitá-lo podem ser encontrados na [lista de verificação de Segurança e Privacidade](https://helpx.adobe.com/br/campaign/kb/acc-security.html#signature-mechanism).
 * Correção de um problema que impedia a exibição de imagens na entrega de linha. (NEO-23207)
