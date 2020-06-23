@@ -14,8 +14,11 @@ discoiquuid: 4443b0ca-80c6-467d-a4df-50864aae8496
 index: y
 internal: n
 snippet: y
-translation-type: ht
-source-git-commit: 6ae45cbd87fc0152fc654202e03501fc8d2abd06
+translation-type: tm+mt
+source-git-commit: 0c3737b22c7bf4e614c5a2fbe8e8fd954d3ece8a
+workflow-type: tm+mt
+source-wordcount: '404'
+ht-degree: 90%
 
 ---
 
@@ -34,7 +37,7 @@ Depois do envio dessa solicitação, a Adobe continuará a provisionar a integra
 Primeiro, precisamos configurar ou verificar as contas externas no Adobe Campaign como descrito a seguir:
 
 1. Clique no ícone **[!UICONTROL Explorer]**.
-1. Acesse **[!UICONTROL Administration > Platform > External accounts]**. As contas SFTP mencionadas devem ter sido configuradas pela Adobe e as informações necessárias devem ter sido comunicadas a você.
+1. Vá para **[!UICONTROL Administration > Platform > External accounts]**. As contas SFTP mencionadas devem ter sido configuradas pela Adobe e as informações necessárias devem ter sido comunicadas a você.
 
    * **[!UICONTROL importSharedAudience]**: conta SFTP dedicada à importação de públicos.
    * **[!UICONTROL exportSharedAudience]**: conta SFTP dedicada à exportação de públicos.
@@ -46,13 +49,13 @@ Primeiro, precisamos configurar ou verificar as contas externas no Adobe Campaig
 
    >[!NOTE]
    >
-   >Se você estiver usando S3, digite seu **[!UICONTROL AWS S3 Account Server]** seguindo esta sintaxe:\
+   >If you are using S3, enter your **[!UICONTROL AWS S3 Account Server]** following this syntax:\
    `<S3bucket name>.s3.amazonaws.com/<s3object path>`\
    Para obter mais informações sobre como configurar sua conta S3, consulte esta [página](../../platform/using/external-accounts.md#amazon-simple-storage-service--s3--external-account).
 
    ![](assets/aam_config_2.png)
 
-1. Adicione a **[!UICONTROL Account]** e a **[!UICONTROL Password]** fornecidas pela Adobe.
+1. Add the **[!UICONTROL Account]** and **[!UICONTROL Password]** provided by Adobe.
 
 Suas contas externas estão configuradas.
 
@@ -60,11 +63,11 @@ Suas contas externas estão configuradas.
 
 A **ID do Visitante – Recipient** é criada no Audience Manager. Esta é uma fonte de dados pronta para uso configurada por padrão para a ID do Visitante. Os segmentos criados a partir do Campaign farão parte dessa fonte de dados.
 
-Para configurar a fonte de dados do **[!UICONTROL Recipient - Visitor ID]**:
+To configure the **[!UICONTROL Recipient - Visitor ID]** data source:
 
-1. No nó **[!UICONTROL Explorer]**, selecione **[!UICONTROL Administration > Platform > AMC Data sources]**.
+1. From the **[!UICONTROL Explorer]** node, select **[!UICONTROL Administration > Platform > AMC Data sources]**.
 1. Selecione **[!UICONTROL Recipient - Visitor ID]**.
-1. Insira a **[!UICONTROL Data Source ID]** e a **[!UICONTROL AAM Destination ID]** fornecidas pela Adobe.
+1. Digite o **[!UICONTROL Data Source ID]** e **[!UICONTROL AAM Destination ID]** fornecido pela Adobe.
 
    ![](assets/aam_config_3.png)
 
@@ -76,6 +79,6 @@ Certifique-se de que o Servidor de Rastreamento do Campaign está registrado no 
 
 ## Etapa 4: configurar o Serviço de ID de visitante {#step-4--configure-the-visitor-id-service}
 
-Se o serviço de ID do visitante nunca foi configurado em suas propriedades da Web ou sites, consulte este [documento](https://marketing.adobe.com/resources/help/pt_BR/mcvid/mcvid-setup-aam-analytics.html) para saber como configurar o serviço ou este [vídeo](https://helpx.adobe.com/marketing-cloud/how-to/email-marketing.html#step-two).
+Se o serviço de ID do visitante nunca foi configurado em suas propriedades da Web ou sites, consulte este [documento](https://docs.adobe.com/content/help/en/id-service/using/implementation/setup-aam-analytics.html) para saber como configurar o serviço ou este [vídeo](https://helpx.adobe.com/marketing-cloud/how-to/email-marketing.html#step-two).
 
 Sua configuração e provisionamento estão finalizados, a integração agora pode ser usada para importar e exportar públicos ou segmentos.
