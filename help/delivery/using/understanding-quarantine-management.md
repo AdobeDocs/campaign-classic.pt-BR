@@ -15,10 +15,10 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: f7c040ceffcce20805d7cc8d1e4e46c77e611056
+source-git-commit: b080bdc4d719994c74ec5c094c917e2c40839a49
 workflow-type: tm+mt
-source-wordcount: '2472'
-ht-degree: 95%
+source-wordcount: '2584'
+ht-degree: 88%
 
 ---
 
@@ -92,7 +92,7 @@ Os seguintes relatórios fornecem informações sobre os endereços em quarenten
 
 * O relatório **[!UICONTROL Non-deliverables and bounces]** exibe informações sobre os endereços em quarentena, os tipos de erro encontrados e etc., além de um detalhamento de falha por domínio.
 
-Você pode visualizar essas informações para todos os deliveries da plataforma (**Página inicial>Relatórios**) ou para um delivery específica. Você também pode criar relatórios personalizados e selecionar as informações a serem exibidas.
+You can look up this information for all deliveries of the platform (**[!UICONTROL Home page > Reports]**) or for a specific delivery. Você também pode criar relatórios personalizados e selecionar as informações a serem exibidas.
 
 ### Identificação de endereços em quarentena para um recipient {#identifying-quarantined-addresses-for-a-recipient}
 
@@ -102,16 +102,30 @@ Você pode consultar o status do endereço de email de qualquer recipient. Para 
 
 ### Remoção de um endereço em quarentena {#removing-a-quarantined-address}
 
-Se você precisar remover um endereço da quarentena, altere o status manualmente para **[!UICONTROL Valid]**.
+Se necessário, você pode remover manualmente um endereço da lista da quarentena. Além disso, os endereços que correspondem a condições específicas são automaticamente excluídos da lista de quarentena pelo **[!UICONTROL Database cleanup]** fluxo de trabalho.
 
-![](assets/tech_quarant_error_status.png)
+Para remover manualmente um endereço da lista da quarentena:
 
-Se você alterar o status para **[!UICONTROL On allow list]**, o endereço será direcionado sistematicamente sempre que um erro for encontrado.
+* É possível alterar seu status para **[!UICONTROL Valid]** do **[!UICONTROL Administration > Campaign Management > Non deliverables Management > Non deliverables and addresses]** nó.
 
->[!CAUTION]
-Os endereços na lista de blocos não são afetados pelo sistema de quarentena e não são direcionados, mesmo se você alterar o status do endereço.
+   ![](assets/tech_quarant_error_status.png)
 
-Você também pode alterar o número de erros e o período entre erros. Para fazer isso, altere as configurações do assistente de implantação (Configurações avançadas/canal de email). Para obter mais informações sobre o assistente de implantação, consulte [esta seção](../../installation/using/deploying-an-instance.md).
+* Você também pode alterar seu status para **[!UICONTROL On allow list]**. Nesse caso, o endereço permanece na lista da quarentena, mas será direcionado sistematicamente, mesmo que um erro seja encontrado.
+
+<!--Addresses on the block list are not concerned by the quarantine system and are not targeted, even if you change the status of the address.-->
+
+Os endereços são removidos automaticamente da lista da quarentena nos seguintes casos:
+
+* Os endereços em um **[!UICONTROL With errors]** status serão removidos da lista da quarentena após um delivery bem-sucedido.
+* Os endereços em um **[!UICONTROL With errors]** status serão removidos da lista da quarentena se o último salto suave ocorrer há mais de 10 dias. Para obter mais informações sobre o gerenciamento de erros de software, consulte [esta seção](#soft-error-management).
+* Os endereços em um **[!UICONTROL With errors]** **[!UICONTROL Mailbox full]** status que retornou ao erro serão removidos da lista da quarentena após 30 dias.
+
+O status muda para **[!UICONTROL Valid]**.
+
+>[!IMPORTANT]
+Recipient com um endereço em um **[!UICONTROL Quarantine]** ou **[!UICONTROL On block list]** status nunca serão removidos, mesmo se receberem um email.
+
+Você pode modificar o número de erros e o período entre dois erros. Para fazer isso, altere as configurações correspondentes no assistente de implantação (**[!UICONTROL Email channel]** > **[!UICONTROL Advanced parameters]**). Para obter mais informações sobre o assistente de implantação, consulte [esta seção](../../installation/using/deploying-an-instance.md).
 
 ## Condições para colocar um endereço na quarentena {#conditions-for-sending-an-address-to-quarantine}
 
@@ -121,7 +135,7 @@ O Adobe Campaign gerencia a quarentena de acordo com o tipo de falha do delivery
 * **Erro grave**: o endereço de email correspondente é enviado imediatamente para quarentena.
 * **Erro suave**: erros suaves não enviam um endereço imediatamente para quarentena, mas incrementam um contador de erros. Para obter mais informações, consulte [Gerenciamento de erros leves](#soft-error-management).
 
-Se um usuário qualificar um email como um spam (**Loop de feedback**), a mensagem será automaticamente redirecionada para uma caixa de entrada técnica gerenciada pela Adobe. O endereço de email do usuário é enviado automaticamente para quarentena.
+Se um usuário qualificar um email como um spam ([Loop de feedback](../../delivery/using/technical-recommendations.md#feedback-loop)), a mensagem será automaticamente redirecionada para uma caixa de entrada técnica gerenciada pela Adobe. O endereço de email do usuário é enviado automaticamente para quarentena.
 
 Na lista de endereços em quarentena, o campo **[!UICONTROL Error reason]** indica por que o endereço selecionado foi colocado em quarentena. A quarentena no Adobe Campaign diferencia maiúsculas de minúsculas. Certifique-se de importar endereços de email em letras minúsculas, para que não sejam redirecionados posteriormente.
 
