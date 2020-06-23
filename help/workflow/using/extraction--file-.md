@@ -12,15 +12,18 @@ discoiquuid: fe4e6f64-eb0a-44bc-8221-6c9bfb99871f
 index: y
 internal: n
 snippet: y
-translation-type: ht
-source-git-commit: 5eb82bb5dae589cb18d42695565b25dad36006bd
+translation-type: tm+mt
+source-git-commit: a215109db2d511180c91723059cd8ca10a34a612
+workflow-type: tm+mt
+source-wordcount: '324'
+ht-degree: 66%
 
 ---
 
 
 # Extração de dados (arquivo){#extraction-file}
 
-Você pode extrair dados de uma tabela de workflow em um arquivo externo usando a atividade **[!UICONTROL Data extraction (file)]**.
+You can extract data from a workflow table in an external file using the **[!UICONTROL Data extraction (file)]** activity.
 
 >[!CAUTION]
 >
@@ -29,13 +32,13 @@ Você pode extrair dados de uma tabela de workflow em um arquivo externo usando 
 Para configurar a extração de dados, siga as seguintes etapas:
 
 1. Especifique o nome do arquivo de output: esse nome pode conter variáveis, inseridas por meio do botão de personalização à direita do campo.
-1. Clique em **[!UICONTROL Edit the file format...]** para selecionar os dados a serem extraídos.
+1. Click **[!UICONTROL Edit the file format...]** to select the data to be extracted.
 
    ![](assets/s_advuser_extract_file_param.png)
 
-   A opção **[!UICONTROL Handle groupings (GROUP BY + HAVING)]** adiciona uma etapa extra para filtrar o resultado final do agregado, por exemplo, em um determinado tipo de pedido, clientes que fizeram mais de 10 pedidos, etc.
+   The **[!UICONTROL Handle groupings (GROUP BY + HAVING)]** option adds an extra step to filter the final result of the aggregate, for example on a given purchase order type, customers who have ordered more than 10 times, etc.
 
-1. Se necessário, você pode adicionar novas colunas ao arquivo de output, como, por exemplo, computar ou processar resultados. Para fazer isso, clique no ícone **[!UICONTROL Add]**.
+1. Se necessário, você pode adicionar novas colunas ao arquivo de output, como, por exemplo, computar ou processar resultados. To do this, click the **[!UICONTROL Add]** icon.
 
    ![](assets/s_advuser_extract_file_add_col.png)
 
@@ -50,6 +53,12 @@ Para configurar a extração de dados, siga as seguintes etapas:
    Escolha a fórmula desejada na lista.
 
    ![](assets/s_advuser_extract_file_agregate_values.png)
+
+Você pode definir um pós-processo a ser executado durante a extração de dados, permitindo que você compacte ou criptografe os arquivos. Para fazer isso, o comando desejado deve ser adicionado na **[!UICONTROL Script]** guia da atividade.
+
+Para obter mais informações, consulte esta seção: [Como compactar ou criptografar um arquivo](../../workflow/using/how-to-use-workflow-data.md#zipping-or-encrypting-a-file).
+
+![](assets/postprocessing_dataextraction.png)
 
 ## Lista de funções agregadas {#list-of-aggregate-functions}
 
