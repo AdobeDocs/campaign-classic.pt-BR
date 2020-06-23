@@ -14,8 +14,11 @@ discoiquuid: 5addada8-0185-488f-9825-83f60981c139
 index: y
 internal: n
 snippet: y
-translation-type: ht
-source-git-commit: 0ce6e5277c32bc18c20dca62e5b276f654d1ace5
+translation-type: tm+mt
+source-git-commit: 972dce4b8429bb5b56fdf32b237384155bcc417a
+workflow-type: tm+mt
+source-wordcount: '687'
+ht-degree: 83%
 
 ---
 
@@ -48,7 +51,7 @@ Os principais métodos para criar perfis de destinatários são os seguintes:
 
 ## Profiles and targets {#profiles-and-targets}
 
-O link **[!UICONTROL Profiles and targets]** permite exibir os destinatários armazenados no banco de dados do Adobe Campaign. É possível criar um novo destinatário, editar um destinatário existente e acessar o perfil dele. Para obter mais informações, consulte [esta página](../../platform/using/editing-a-profile.md).
+The **[!UICONTROL Profiles and targets]** link lets you display recipients stored in Adobe Campaign database. É possível criar um novo destinatário, editar um destinatário existente e acessar o perfil dele. Para obter mais informações, consulte [esta página](../../platform/using/editing-a-profile.md).
 
 ![](assets/d_ncs_user_interface_target_link.png)
 
@@ -64,7 +67,7 @@ A página de destinatários permite executar operações frequentes em perfis: e
 
 Para manipulações de perfil mais avançadas, é necessário editar a árvore do Adobe Campaign. Para fazer isso, clique no link **[!UICONTROL Explorer]** na página inicial do Adobe Campaign.
 
-Por padrão, os destinatários são armazenados no nó **[!UICONTROL Profiles and Targets > Recipients]** da árvore. É possível criar destinatários nesta tela, bem como:
+By default, recipients are stored in the **[!UICONTROL Profiles and Targets > Recipients]** node of the tree. É possível criar destinatários nesta tela, bem como:
 
 * classificar e filtrar os perfis do banco de dados; consulte [Opções de filtragem](../../platform/using/filtering-options.md),
 * mover, copiar ou excluir perfis do banco de dados; consulte [Gerenciamento de perfis](../../platform/using/managing-profiles.md),
@@ -80,7 +83,7 @@ O layout geral do Adobe Campaign Explorer é apresentado em [Uso do Adobe Campai
 
 >[!NOTE]
 >
->Também é possível exibir uma visualização avançada dessa lista na árvore do Adobe Campaign clicando no link **[!UICONTROL Profiles and targets > Recipients.]** A exibição da lista pode ser configurada para atender às suas necessidades. É possível adicionar ou excluir colunas, definir a ordem das colunas, classificar dados etc. A configuração de exibição de lista é descrita em [Uso do Adobe Campaign Explorer](../../platform/using/adobe-campaign-workspace.md#using-adobe-campaign-explorer).
+>Também é possível exibir uma visualização avançada dessa lista na árvore do Adobe Campaign clicando no link **[!UICONTROL Profiles and targets > Recipients]** A exibição da lista pode ser configurada para atender às suas necessidades. É possível adicionar ou excluir colunas, definir a ordem das colunas, classificar dados etc. A configuração de exibição de lista é descrita em [Uso do Adobe Campaign Explorer](../../platform/using/adobe-campaign-workspace.md#using-adobe-campaign-explorer).
 >
 >Também é possível definir as visualizações de destinatários. Para obter mais informações sobre essa funcionalidade, consulte [Pastas e exibições](../../platform/using/access-management.md#folders-and-views).
 
@@ -92,12 +95,12 @@ Os perfis ativos são aqueles que são contados para fins de cobrança.
 
 A cobrança só afeta perfis que estão **ativos**. Um perfil é considerado ativo quando ele é visado ou recebe comunicação nos últimos 12 meses por meio de qualquer canal.
 
+Os perfis excluídos durante a preparação da entrega (regras de tipologia, quarentenas) não são levados em consideração. Um perfil que foi visado por várias entregas será contado apenas uma vez.
+
 >[!NOTE]
 >
 >Os canais Facebook e Twitter não são considerados.
 
-É possível ter uma visão geral do **[!UICONTROL Number of active profiles]** no menu **[!UICONTROL Administration > Campaign Management > Customer metrics]**.
+Você pode ter uma visão geral do **[!UICONTROL Number of active profiles]** menu Campaign Standard **[!UICONTROL Administration > Campaign Management > Customer metrics]** . The actual count is performed by the **[!UICONTROL Number of active billing profiles]** (**[!UICONTROL billingActiveContactCount]**) [technical workflow](../../workflow/using/deliveries.md), which runs every day and adds the new data to the existing report for the current period in the **[!UICONTROL Customer metrics]** menu. Cada período dura 12 meses.
 
-A contagem real é executada pelo [fluxo de trabalho técnico](../../workflow/using/delivery.md) **[!UICONTROL Number of active billing profiles]** (**[!UICONTROL billingActiveContactCount]**), que é executado todos os dias e adiciona os novos dados ao relatório existente para o período atual no menu **[!UICONTROL Customer metrics.]** Cada período dura 12 meses.
-
-Os perfis excluídos durante a preparação da entrega (regras de tipologia, quarentenas) não são levados em consideração. Um perfil que foi visado por várias entregas será contado apenas uma vez.
+Se você estiver hospedado no AWS e usando o Campaign Classic da versão 8931, também poderá monitorar o número de perfis ativos usados em suas instâncias diretamente do Painel de controle. For more on this, refer to the [Control Panel documentation](https://docs.adobe.com/content/help/en/control-panel/using/performance-monitoring/active-profiles-monitoring.html).
