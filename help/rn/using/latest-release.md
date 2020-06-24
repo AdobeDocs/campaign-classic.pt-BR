@@ -13,10 +13,10 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: e3e8802aae0d10befcf9eef1ccf720f82c460038
+source-git-commit: b2cc71f8f9b7df80b1601a9fa55bfd77f9a82433
 workflow-type: tm+mt
-source-wordcount: '1739'
-ht-degree: 14%
+source-wordcount: '1765'
+ht-degree: 15%
 
 ---
 
@@ -43,6 +43,8 @@ ht-degree: 14%
 </table>
 
 A **última build estável** é a 9032 (3a9dc9c). Clique [aqui](../../rn/using/release--19-1.md#release-19-1-4-build-9032)
+
+![](assets/do-not-localize/cp-icon.png) **Nova versão** de junho do Painel de controle com monitoramento de perfis ativos, auditoria de entregabilidade de subdomínio e gerenciamento de chaves GPG. [Saiba mais](https://docs.adobe.com/content/help/pt-BR/control-panel/using/release-notes.html).
 
 ## ![](assets/do-not-localize/blue_2.png) Versão 20.2.1 - Build 9178 {#release-20-2-1-build-9178}
 
@@ -117,7 +119,7 @@ _8 de junho de 2020_
 Os seguintes sistemas agora são suportados com Campanha:
 * Sistemas operacionais: Debian 10
 * RDBMS: Oracle 18c e Oracle 19c
-* FDA: Análise do Azure Synapse
+* FDA: Azure Synapse Analytics
 
 Saiba mais na matriz de compatibilidade de [Campanha](https://helpx.adobe.com/br/campaign/kb/compatibility-matrix.html).
 
@@ -240,7 +242,7 @@ Um exemplo para Linux está disponível nesta [página](../../configuration/usin
 * Correção de uma regressão que resulta em falha do workflow de limpeza.
 * Correção de um problema que ocorria ao publicar um modelo em uma instância de execução.
 * Correção de um problema que poderia impedir a execução do fluxo de trabalho técnico collectPrivacyRequests. (NEO-20513, NEO-25169)
-* Correção de problemas que ocorriam ao tentar se conectar ao Gerenciador de Audiências após a atualização para a compilação 9080. (NEO-20511, NEO-25167)
+* Correção de problemas que ocorriam ao tentar se conectar ao Audience Manager após a atualização para a compilação 9080. (NEO-20511, NEO-25167)
 * Correção de problemas que podem ocorrer ao exportar relatórios no formato PDF ou XLS. (NEO-20982, NEO-23493, NEO-23348)
 * Correção de um problema que podia exibir um delivery duas vezes na lista do delivery depois de ele ser enviado.
 * Correção de um problema com a preparação do delivery que ocorria quando a configuração do roteamento era definida para enviar o delivery via mid-sourcing.
