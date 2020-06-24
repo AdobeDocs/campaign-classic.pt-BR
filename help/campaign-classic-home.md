@@ -5,9 +5,9 @@ solution: Campaign Classic
 title: Documentação do produto Adobe Campaign Classic
 topic: Premium
 translation-type: tm+mt
-source-git-commit: b247a3702249183e1e0851160fb3ac3809437ff1
+source-git-commit: 30b2860250c6d1c4032a22a28f6e2e48dcacc6a8
 workflow-type: tm+mt
-source-wordcount: '275'
+source-wordcount: '266'
 ht-degree: 86%
 
 ---
@@ -19,7 +19,7 @@ ht-degree: 86%
 
 ## Novidades
 
-* Os termos &quot;lista branca&quot; e &quot;lista negra&quot; foram removidos da documentação do Adobe Campaign. [Leia mais](/help/rn/using/documentation-updates.md)
+* **[Emoticons](delivery/using/defining-the-email-content.md#inserting-emoticons)**<br/>Agora você pode inserir emoticons em mensagens e linhas de assunto
 
 * **[Obtenha as Perguntas frequentes sobre suporte](https://helpx.adobe.com/brcampaign/kb/ac-support.html)**<br/> Acesso, práticas recomendadas, recursos de ajuda e solicite ajuda
 
