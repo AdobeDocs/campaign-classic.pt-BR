@@ -14,11 +14,11 @@ discoiquuid: 83b915bd-7e23-41b5-9f9a-f7eb72026376
 index: y
 internal: n
 snippet: y
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 0d2270c9d980d963437f9bb5cf37795474d261d6
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '728'
-ht-degree: 90%
+ht-degree: 100%
 
 ---
 
@@ -42,7 +42,7 @@ Esse problema precisa ser resolvido da seguinte maneira:
 
 Para configurar uma desduplicação, insira o rótulo, o método e os critérios de desduplicação e as opções referentes ao resultado.
 
-Click the **[!UICONTROL Edit configuration...]** link to define the deduplication mode.
+Clique no link **[!UICONTROL Edit configuration...]** para definir o modo de desduplicação.
 
 ![](assets/s_user_segmentation_dedup_param.png)
 
@@ -54,7 +54,7 @@ Click the **[!UICONTROL Edit configuration...]** link to define the deduplicatio
 
    >[!NOTE]
    >
-   >Se você estiver usando dados externos como entrada, por exemplo, de um arquivo externo, certifique-se de selecionar a **[!UICONTROL Temporary schema]** opção.
+   >Se os dados externos estiverem sendo usados como entrada, por exemplo, de um arquivo externo, selecione a opção **[!UICONTROL Temporary schema]**.
 Na próxima etapa, a opção **[!UICONTROL Other]** permite selecionar o critério ou os critérios a serem usados:
 
    ![](assets/s_user_segmentation_dedup_param3.png)
@@ -67,7 +67,7 @@ Na próxima etapa, a opção **[!UICONTROL Other]** permite selecionar o critér
 
    Os métodos seguintes estão disponíveis:
 
-   * **[!UICONTROL Choose for me]**: seleciona aleatoriamente o registro a ser mantido fora dos duplicados.
+   * **[!UICONTROL Choose for me]**: seleciona aleatoriamente o registro a ser mantido fora das duplicatas.
    * **[!UICONTROL Following a list of values]**: permite definir uma prioridade de valor para um ou mais campos. Para definir os valores, selecione um campo ou crie uma expressão e adicione o(s) valor(s) à tabela apropriada. Para definir um novo campo, clique no botão **[!UICONTROL Add]** localizado acima da lista de valores.
 
       ![](assets/s_user_segmentation_dedup_param5.png)
@@ -105,14 +105,14 @@ As duplicatas identificadas também serão integradas em uma lista de duplicatas
 
    A atividade Union é usada aqui para &quot;unificar&quot; as três queries em uma única transição. Assim, a desduplicação não funcionará para cada query individualmente, mas para toda a query. Para obter mais informações sobre este assunto, consulte [Melhores práticas](#best-practices).
 
-1. Open the deduplication activity then click the **[!UICONTROL Edit configuration...]** link to define the deduplication mode.
-1. In the new window, select **[!UICONTROL Database schema]**.
-1. Selecione **Recipientes** como e dimensão do filtro e target.
+1. Abra a atividade de desduplicação e clique no link **[!UICONTROL Edit configuration...]** para definir o modo de desduplicação.
+1. Na nova janela, selecione **[!UICONTROL Database schema]**.
+1. Selecione **Recipients** como dimensões de filtragem e direcionamento.
 1. Selecione o campo de ID para as duplicatas de **[!UICONTROL Email]** a fim de enviar o delivery somente uma vez para cada endereço de email, depois clique em **[!UICONTROL Next]**. 
 
    Se desejar basear as IDs duplicadas em um campo específico, selecione **[!UICONTROL Other]** para acessar a lista de campos disponíveis.
 
-1. Escolha manter apenas uma entrada quando o mesmo endereço de e-mail for identificado para vários recipients.
+1. Escolha manter apenas uma entrada quando o mesmo endereço de email for identificado para vários recipients.
 1. Selecione o modo de desduplicação **[!UICONTROL Choose for me]** para que os registros salvos no caso de duplicatas identificadas sejam escolhidos aleatoriamente, depois clique em **[!UICONTROL Finish]**.
 
 Ao executar o workflow, todos os recipients identificados como duplicatas são excluídos do resultado (e, portanto, da delivery) e adicionada à lista de duplicatas. Essa lista pode ser usada novamente em vez de ter que reidentificar as duplicatas.
