@@ -14,11 +14,11 @@ discoiquuid: 3da951ef-5775-4593-8301-f143c71edc19
 index: y
 internal: n
 snippet: y
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: b369a17fabc55607fc6751e7909e1a1cb3cd4201
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1610'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -33,15 +33,15 @@ Diretrizes para solução de problemas relacionados à execução de workflows t
 
 ### Logs {#logs}
 
-The JavaScript method **[!UICONTROL logInfo()]** is a great solution for debugging a workflow. É útil, mas deve ser usado com cuidado, especialmente para atividades executadas com frequência: pode sobrecarregar os logs e aumentar significativamente o tamanho da tabela de log. Mas, também pode ser preciso de mais do que **[!UICONTROL logInfo()]**.
+O método **[!UICONTROL logInfo()]** do JavaScript é uma ótima solução para depurar um fluxo de trabalho. É útil, mas deve ser usado com cuidado, especialmente para atividades executadas com frequência: pode sobrecarregar os logs e aumentar significativamente o tamanho da tabela de log. Mas, também pode ser preciso de mais do que **[!UICONTROL logInfo()]**.
 
 Duas soluções adicionais estão disponíveis para ajudar:
 
 * **Manter o resultado de públicos provisórios entre duas execuções**
 
-   Essa opção mantém tabelas temporárias entre duas execuções de um workflow. Está disponível na guia **[!UICONTROL General]** das propriedades do workflow e pode ser usado para desenvolvimento e testes para monitorar dados e verificar resultados. Você pode usar essa opção em ambientes de desenvolvimento, mas nunca usá-la em ambientes de produção. Manter tabelas temporárias pode resultar no aumento significativo do tamanho de banco de dados e, por fim, atingir o limite de tamanho. Além disso, o backup ficará lento.
+   Essa opção mantém tabelas temporárias entre duas execuções de um workflow. Está disponível na guia **[!UICONTROL General]** das propriedades do fluxo de trabalho e pode ser usado para desenvolvimento e testes para monitorar dados e verificar resultados. Você pode usar essa opção em ambientes de desenvolvimento, mas nunca usá-la em ambientes de produção. Manter tabelas temporárias pode resultar no aumento significativo do tamanho de banco de dados e, por fim, atingir o limite de tamanho. Além disso, o backup ficará lento.
 
-   Somente as tabelas de trabalho da última execução do workflow são mantidas. As tabelas de trabalho das execuções anteriores são removidas pelo workflow **[!UICONTROL cleanup]**, executado diariamente.
+   Somente as tabelas de trabalho da última execução do workflow são mantidas. As tabelas de trabalho das execuções anteriores são removidas pelo fluxo de trabalho **[!UICONTROL cleanup]**, executado diariamente.
 
    >[!CAUTION]
    >
@@ -49,7 +49,7 @@ Duas soluções adicionais estão disponíveis para ajudar:
 
 * **Logs de queries SQL no journal**
 
-   Disponível na guia **[!UICONTROL Execution]** das propriedades do workflow, essa opção registrará todos as consultas SQL geradas pela ferramenta a partir das diferentes atividades. É uma boa forma de ver o que está realmente sendo executado pela plataforma. No entanto, essa opção só deve ser usada temporariamente durante o desenvolvimento e não ativada durante a produção.
+   Disponível na guia **[!UICONTROL Execution]** das propriedades do fluxo de trabalho, essa opção registrará todos as consultas SQL geradas pela ferramenta a partir das diferentes atividades. É uma boa forma de ver o que está realmente sendo executado pela plataforma. No entanto, essa opção só deve ser usada temporariamente durante o desenvolvimento e não ativada durante a produção.
 
 Limpe os registros quando não forem mais necessários. O histórico do workflow não é removido automaticamente: todas as mensagens são mantidas por padrão. O histórico pode ser eliminado por meio do menu **[!UICONTROL File > Actions]** ou clicando no botão Actions localizado na barra de ferramentas acima da lista. Selecione Purge history.
 Para saber como limpar seus registros, consulte esta [documentação](../../workflow/using/starting-a-workflow.md).
@@ -66,13 +66,13 @@ Para saber como limpar seus registros, consulte esta [documentação](../../work
 
 É recomendável não agendar um workflow para execução por mais de 15 minutos porque pode atrapalhar o desempenho geral do sistema e criar bloqueios no banco de dados.
 
-Evite deixar os workflows no estado pausado. Se criar um workflow temporário, certifique-se de que ele será concluído corretamente e não permanecerá no estado **[!UICONTROL paused]**. Se estiver pausado, isso significa que é preciso manter as tabelas temporárias e, portanto, aumentar o tamanho do banco de dados. Atribua supervisores de workflow nas propriedades do workflow para enviar um alerta quando um workflow falhar ou for pausado pelo sistema.
+Evite deixar os workflows no estado pausado. Se criar um fluxo de trabalho temporário, certifique-se de que ele será concluído corretamente e não permanecerá no estado **[!UICONTROL paused]**. Se estiver pausado, isso significa que é preciso manter as tabelas temporárias e, portanto, aumentar o tamanho do banco de dados. Atribua supervisores de workflow nas propriedades do workflow para enviar um alerta quando um workflow falhar ou for pausado pelo sistema.
 
 Para evitar workflows no estado pausado:
 
 * Verifique seus workflows regularmente para garantir que não haja erros inesperados.
-* Mantenha seus workflows o mais simples possível, por exemplo, dividindo grandes workflows em vários workflows diferentes. É possível usar as atividades **[!UICONTROL External signal]** para acionar a execução com base na execução de outros workflows.
-* Evite desabilitar atividades com fluxos nos workflows, deixando threads abertos e levando a muitas tabelas temporárias que podem consumir muito espaço. Do not keep activities in **[!UICONTROL Do not enable]** or **[!UICONTROL Enable but do not execute]** states in your workflows.
+* Mantenha seus workflows o mais simples possível, por exemplo, dividindo grandes workflows em vários workflows diferentes. É possível usar as atividades **[!UICONTROL External signal]** para acionar a execução com base na execução de outros fluxos de trabalho.
+* Evite desabilitar atividades com fluxos nos fluxos de trabalho, deixando threads abertos e levando a muitas tabelas temporárias que podem consumir muito espaço. Não mantenha as atividades nos estados **[!UICONTROL Do not enable]** ou **[!UICONTROL Enable but do not execute]** em seus fluxos de trabalho.
 
 Além disso, pare os workflows não utilizados. Os workflows que continuam em execução mantêm conexões com o banco de dados.
 
@@ -80,7 +80,7 @@ Use apenas parada incondicional nos casos mais raros. Não utilize esta ação r
 
 ### Executar na opção do motor {#execute-in-the-engine-option}
 
-In the **[!UICONTROL Workflow properties]** window, never check the **[!UICONTROL Execute in the engine]** option. Quando essa opção estiver habilitada, o workflow tem prioridade e todos os outros workflows são interrompidos pelo motor de workflow até que este seja concluído.
+Na janela **[!UICONTROL Workflow properties]**, nunca marque a opção **[!UICONTROL Execute in the engine]**. Quando essa opção estiver habilitada, o workflow tem prioridade e todos os outros workflows são interrompidos pelo motor de workflow até que este seja concluído.
 
 ![](assets/wf-execute-in-engine.png)
 
@@ -90,7 +90,7 @@ In the **[!UICONTROL Workflow properties]** window, never check the **[!UICONTRO
 
 A Adobe recomenda criar seus workflows em uma pasta dedicada.
 
-Se o workflow afetar toda a plataforma (processos de limpeza, por exemplo), é possível considerar adicionar uma subpasta à pasta interna **[!UICONTROL Technical Workflows]**.
+Se o fluxo de trabalho afetar toda a plataforma (processos de limpeza, por exemplo), é possível considerar adicionar uma subpasta à pasta interna **[!UICONTROL Technical Workflows]**.
 
 ### Nomeação do workflow {#workflow-naming}
 
@@ -108,7 +108,7 @@ Por exemplo:
 
 ### Severidade do workflow {#workflow-severity}
 
-É possível configurar a severidade de um workflow nas propriedades do workflow, na guia **[!UICONTROL Execution]**:
+É possível configurar a severidade nas propriedades do fluxo de trabalho, na guia **[!UICONTROL Execution]**:
 
 * Normal
 * Produção
@@ -124,11 +124,11 @@ Workflows da campanha (workflows criados como parte de uma campanha/operação) 
 
 Todos os workflows agendados executados em ambientes de produção devem ser monitorados para enviar alerta em caso de erro.
 
-Nas propriedades do workflow, selecione um grupo supervisor, seja o grupo **[!UICONTROL Workflow supervisors]** padrão ou um grupo personalizado. Certifique-se de que pelo menos um operador participe desse grupo, com um email definido.
+Nas propriedades do fluxo de trabalho, selecione um grupo supervisor, seja o grupo **[!UICONTROL Workflow supervisors]** padrão ou um grupo personalizado. Certifique-se de que pelo menos um operador participe desse grupo, com um email definido.
 
 Antes de começar a construir um workflow, lembre-se de definir supervisores de workflow. Eles serão notificados por email em caso de erro. Para obter mais informações, consulte [Gerenciando erros](../../workflow/using/monitoring-workflow-execution.md#managing-errors).
 
-Verifique regularmente o universo **[!UICONTROL Monitoring]** para visualizar o status geral dos workflows ativos. Para obter mais informações, consulte [Supervisão de instância](../../workflow/using/monitoring-workflow-execution.md#instance-supervision).
+Verifique regularmente o universo **[!UICONTROL Monitoring]** para visualizar o status geral dos fluxos de trabalho ativos. Para obter mais informações, consulte [Supervisão de instância](../../workflow/using/monitoring-workflow-execution.md#instance-supervision).
 
 O Workflow HeatMap permite aos administradores da plataforma Adobe Campaign monitorarem a carga na instância e planejarem os workflows correspondentes. Para obter mais informações, consulte [Monitoramento de workflow](../../workflow/using/heatmap.md).
 
@@ -142,16 +142,16 @@ O Workflow HeatMap permite aos administradores da plataforma Adobe Campaign moni
 
 Ao desenvolver seu workflow, todas as atividades terão um nome, como todos os objetos do Adobe Campaign. Embora o nome seja gerado pela ferramenta, recomendamos que você renomeie com um nome explícito ao configurá-lo. O risco de fazer isso depois é que pode interromper o workflow com atividades usando o nome de outra atividade anterior. Portanto, seria um trabalho difícil atualizar os nomes depois.
 
-O nome da atividade pode ser encontrado na guia **[!UICONTROL Advanced]**. Don’t leave them named **[!UICONTROL query]**, **[!UICONTROL query1]**, **[!UICONTROL query11]**, but give them explicit names such as **[!UICONTROL querySubscribedRecipients]**. Esse nome aparecerá no journal e, se aplicável, nos logs SQL, e isso ajudará a depurar o workflow ao configurá-lo.
+O nome da atividade pode ser encontrado na guia **[!UICONTROL Advanced]**. Não use nomes como **[!UICONTROL query]**, **[!UICONTROL query1]**, **[!UICONTROL query11]**, mas sim nomes explícitos como **[!UICONTROL querySubscribedRecipients]**. Esse nome aparecerá no journal e, se aplicável, nos logs SQL, e isso ajudará a depurar o workflow ao configurá-lo.
 
 ### Primeira e última atividades {#first-and-last-activities}
 
-* Sempre inicie o workflow com uma atividade **[!UICONTROL Start]** ou atividade **[!UICONTROL Scheduler]** . When relevant, you can also use an **[!UICONTROL External signal]** activity.
-* Ao criar o workflow, use apenas uma atividade **[!UICONTROL Scheduler]** por ramificação. Se a mesma ramificação de um workflow tiver vários schedulers (vinculados uns aos outros), o número de tarefas a serem executadas será multiplicado exponencialmente, o que irá sobrecarregar consideravelmente o banco de dados. Essa regra também se aplica a todas as atividades com uma guia **[!UICONTROL Scheduling & History]**. Saiba mais em [Agendamento](../../workflow/using/scheduler.md).
+* Sempre inicie o fluxo de trabalho com uma atividade **[!UICONTROL Start]** ou atividade **[!UICONTROL Scheduler]** . Quando pertinente, também é possível usar uma atividade **[!UICONTROL External signal]**.
+* Ao criar o fluxo de trabalho, use apenas uma atividade **[!UICONTROL Scheduler]** por ramificação. Se a mesma ramificação de um fluxo de trabalho tiver vários schedulers (vinculados uns aos outros), o número de tarefas a serem executadas será multiplicado exponencialmente, o que irá sobrecarregar consideravelmente o banco de dados. Essa regra também se aplica a todas as atividades com uma guia **[!UICONTROL Scheduling & History]**. Saiba mais em [Agendamento](../../workflow/using/scheduler.md).
 
    ![](assets/wf-scheduler.png)
 
-* Use atividades **[!UICONTROL End]** para cada workflow. Isso permite que o Adobe Campaign libere espaço temporário usado para cálculos dentro de workflows. Para obter mais informações, consulte [início e fim](../../workflow/using/start-and-end.md).
+* Use atividades **[!UICONTROL End]** para cada fluxo de trabalho. Isso permite que o Adobe Campaign libere espaço temporário usado para cálculos dentro de workflows. Para obter mais informações, consulte [início e fim](../../workflow/using/start-and-end.md).
 
 ### Javascript em uma atividade {#javascript-within-an-activity}
 
