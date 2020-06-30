@@ -14,11 +14,11 @@ discoiquuid: c0eb06fd-192c-4ee4-9a38-c9bedbe6aea0
 index: y
 internal: n
 snippet: y
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 651dfdab75f64d72a1c5beb1273a878ee7102b47
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2912'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -404,7 +404,7 @@ Pastas são nós na árvore do Adobe Campaign. Esses nós são criados clicando 
 
 É possível conceder permissões a essas pastas como em todas as outras pastas da árvore. Consulte [Gerenciamento de acesso a pastas](#folder-access-management).
 
-### Sobre o visualização {#about-views}
+### Sobre visualizações {#about-views}
 
 Além disso, você pode criar visualizações para restringir o acesso aos dados e organizar o conteúdo da árvore para atender aos seus requisitos. É possível atribuir direitos às visualizações.
 
