@@ -14,11 +14,11 @@ discoiquuid: 8b101c0b-3611-4f15-813b-7c0bf54fc48a
 index: y
 internal: n
 snippet: y
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 3bf835b3f686d1293fda7e6254660c477ba26452
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '3152'
-ht-degree: 94%
+ht-degree: 100%
 
 ---
 
@@ -41,13 +41,13 @@ Para enviar para um celular, você precisa:
 
 1. Uma conta externa especificando um conector e tipo de mensagem.
 
-   Observe que os seguintes conectores serão descontinuados a partir da versão 20.2: NetSize, Generic SMPP (SMPP versão 3.4 com suporte para modo binário), Sybase365 (SAP SMS 365), CLX Communications, Tele2, O2 e iOS. Os recursos obsoletos ainda estão disponíveis, mas não serão aprimorados nem suportados. Para obter mais informações, consulte esta [página](https://helpx.adobe.com/br/campaign/kb/deprecated-and-removed-features.html).
+   Observe que os seguintes conectores serão descontinuados a partir da versão 20.2: NetSize, Generic SMPP (SMPP versão 3.4 com suporte para modo binário), Sybase365 (SAP SMS 365), CLX Communications, Tele2, O2 e iOS. Embora os recursos obsoletos ainda estejam disponíveis, eles não serão aprimorados e nem terão suporte. Para obter mais informações, consulte esta [página](https://helpx.adobe.com/br/campaign/kb/deprecated-and-removed-features.html).
 
 1. Um template do delivery no qual essa conta externa é referenciada.
 
 ### Criação de conta externa SMPP {#creating-an-smpp-external-account}
 
-Para enviar um SMS para um telefone celular, primeiro é necessário criar sua conta externa SMPP.
+Para enviar um SMS para um telefone celular, primeiro é necessário criar a conta externa SMPP.
 Para obter mais informações sobre o protocolo e as configurações SMS, consulte esta [nota técnica](https://helpx.adobe.com/br/campaign/kb/sms-connector-protocol-and-settings.html).
 
 Para fazer isso, siga as etapas abaixo:
@@ -64,7 +64,7 @@ Para fazer isso, siga as etapas abaixo:
 
    >[!CAUTION]
    >
-   > A partir da versão 20.2, os conectores herdados serão descontinuados e não serão suportados. Recomendamos o uso do **[!UICONTROL Extended generic SMPP]** conector. Para obter mais informações sobre como migrar para o conector recomendado, consulte esta [página](https://helpx.adobe.com/campaign/kb/sms-connector.html).
+   > A partir da versão 20.2, os conectores herdados serão descontinuados e não terão suporte. Recomendamos o uso do conector **[!UICONTROL Extended generic SMPP]**. Para obter mais informações sobre como migrar para o conector recomendado, consulte esta [página](https://helpx.adobe.com/br/campaign/kb/sms-connector.html).
 
 1. A opção **[!UICONTROL Enable verbose SMPP traces in the log file]** permite que você descarte todo o tráfego SMPP em arquivos de log. Essa opção deve ser habilitada para solucionar problemas no conector e comparar com o tráfego visto pelo provedor.
 
@@ -373,19 +373,19 @@ Para delivery via canal SMS, você deve criar um template no qual o conector de 
 
 Para manter o template do delivery nativo, recomendamos que você o duplique e depois configure.
 
-No exemplo abaixo, criamos um modelo para entregar mensagens por meio da conta SMPP ativada anteriormente. Para fazer isso:
+No exemplo abaixo, criamos um template para fazer o delivery de mensagens pela conta SMPP habilitada anteriormente. Para fazer isso:
 
 1. Vá para o nó **[!UICONTROL Delivery templates]**
 1. Clique com o botão direito do mouse no modelo **[!UICONTROL Send to mobiles]** e selecione **[!UICONTROL Duplicate]**.
 
    ![](assets/s_user_mobile_template_change_01.png)
 
-1. Altere o rótulo do modelo, por exemplo **Enviado para dispositivos móveis (SMPP)**.
+1. Altere o rótulo do template, por exemplo **Enviado para dispositivos móveis (SMPP)**.
 
    ![](assets/s_user_mobile_template_change_02.png)
 
 1. Clique em **[!UICONTROL Properties]**.
-1. Na **[!UICONTROL General]** guia, selecione um modo de roteamento que corresponda à conta externa criada nas etapas anteriores.
+1. Na guia **[!UICONTROL General]**, selecione um modo de roteamento que corresponda à conta externa criada nas etapas anteriores.
 
    ![](assets/s_user_mobile_template_change_03.png)
 
@@ -406,7 +406,7 @@ Para criar um novo delivery de SMS, siga as etapas abaixo:
 >Os conceitos globais sobre a criação de delivery são apresentados [nesta seção](../../delivery/using/steps-about-delivery-creation-steps.md).
 
 1. Crie um novo delivery, por exemplo, no painel do Delivery.
-1. Select the delivery template **Sent to mobiles (SMPP)** that you created earlier. Para obter mais informações, consulte a seção [Alteração do template do delivery](#changing-the-delivery-template).
+1. Selecione o template do delivery **Sent to mobiles (SMPP)** que você criou anteriormente. Para obter mais informações, consulte a seção [Alteração do template do delivery](#changing-the-delivery-template).
 
    ![](assets/s_user_mobile_wizard.png)
 
@@ -468,7 +468,7 @@ O botão **[!UICONTROL Properties]** dá acesso ao parâmetro de delivery avanç
 
 As seguintes opções estão disponíveis:
 
-* **Endereço** do remetente: permite que você personalize o nome do remetente do delivery usando uma sequência de caracteres alfanuméricos limitada a onze caracteres. O campo não deve ser criado exclusivamente com figuras. Você pode definir uma condição para exibir, por exemplo, nomes diferentes de acordo com o código de área do recipient:
+* **Endereço do remetente**: permite personalizar o nome do remetente do delivery usando uma cadeia de caracteres alfanuméricos limitada a onze caracteres. O campo não deve ser criado exclusivamente com figuras. Você pode definir uma condição para exibir, por exemplo, nomes diferentes de acordo com o código de área do recipient:
 
    ```
    <% if( String(recipient.mobilePhone).indexOf("+1") == 0){ %>NeoShopUS<%} else {%>NeoShopWorld<%}%>
