@@ -14,11 +14,11 @@ discoiquuid: 91115d4f-0cb6-4bce-b28d-17f15e9f9a0a
 index: y
 internal: n
 snippet: y
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 0386ae88a1b4d9ebda64283d874e01b14e9e5af4
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1203'
-ht-degree: 92%
+ht-degree: 100%
 
 ---
 
@@ -51,7 +51,7 @@ Quando um recipient clica no link de cancelar subscrição em um e-mail enviado 
 
 ## Criação de um novo recipient {#creating-a-new-recipient}
 
-1. Crie um novo recipient no Campaign v7 para replicação no Campaign Standard. Insira o máximo possível de informações, incluindo o sobrenome, nome, endereço de email e endereço postal do recipient. However, do not choose a **[!UICONTROL Salutation]** since it will be added in the next section, [Editing a recipient](#editing-a-recipient). Para obter mais informações, consulte [Adicionando recipients](../../platform/using/adding-profiles.md).
+1. Crie um novo recipient no Campaign v7 para replicação no Campaign Standard. Insira o máximo possível de informações, incluindo o sobrenome, nome, endereço de email e endereço postal do recipient. No entanto, não escolha uma **[!UICONTROL Salutation]** já que ela será adicionada na próxima seção, [Edição de um recipient](#editing-a-recipient). Para obter mais informações, consulte [Adicionando recipients](../../platform/using/adding-profiles.md).
 
    ![](assets/acs_connect_profile_sync_01.png)
 
@@ -65,7 +65,7 @@ Quando um recipient clica no link de cancelar subscrição em um e-mail enviado 
 
 As etapas abaixo para alterar um ponto único de dados oferecem um exemplo simples de como o Campaign v7 se torna o banco de dados mestre para o Campaign Standard ao usar a replicação de dados. Modificar ou excluir dados replicados no Campaign v7 tem o mesmo efeito nos dados correspondentes no Campaign Standard.
 
-1. Escolha o recipient recém-criado em [Criação de um novo destinatário](#creating-a-new-recipient) e edite o nome dele. For example, choose a **[!UICONTROL Salutation]** for the recipient (e.g. Mr. or Mrs.). Para obter mais informações, consulte [Edição de um perfil](../../platform/using/editing-a-profile.md).
+1. Escolha o recipient recém-criado em [Criação de um novo destinatário](#creating-a-new-recipient) e edite o nome dele. Por exemplo, escolha uma **[!UICONTROL Salutation]** para o recipient (por exemplo, Sr. ou Sra.). Para obter mais informações, consulte [Edição de um perfil](../../platform/using/editing-a-profile.md).
 
    ![](assets/acs_connect_profile_sync_03.png)
 
@@ -81,18 +81,18 @@ Os perfis e os serviços replicados do Campaign v7 estão disponíveis para os p
 
 Para obter mais informações e instruções completas sobre workflows do Campaign Standard, consulte [Workflows](../../workflow/using/about-workflows.md).
 
-1. Go to Campaign Standard and click **[!UICONTROL Marketing Activities]**.
+1. Vá para o Campaign Standard e clique em **[!UICONTROL Marketing Activities]**.
 1. Clique em **[!UICONTROL Create]** no canto superior direito.
 1. Clique em **[!UICONTROL Workflow]**.
 1. Clique em **[!UICONTROL New workflow]** e **[!UICONTROL Next]**.
-1. Digite um nome para o workflow no campo **[!UICONTROL Label]** e informações adicionais, caso seja necessário. Clique em **[!UICONTROL Next]**.
+1. Digite um nome para o fluxo de trabalho no campo **[!UICONTROL Label]** e informações adicionais, caso seja necessário. Clique em **[!UICONTROL Next]**.
 1. A partir de **[!UICONTROL Targeting]** à esquerda, arraste um target **[!UICONTROL Query]** para o espaço de trabalho.
 
    ![](assets/acs_connect_profile_sync_05.png)
 
 1. Clique duas vezes na atividade **[!UICONTROL Query]** e escolha um parâmetro que possa ser usado com o banco de dados replicado. Por exemplo, é possível:
 
-   * Drag **[!UICONTROL Profiles]** to the workspace. Use o menu suspenso do campo para escolher **[!UICONTROL Is external resource]** e encontrar perfis que foram replicados do Campaign v7.
+   * Arraste **[!UICONTROL Profiles]** para o espaço de trabalho. Use o menu suspenso do campo para escolher **[!UICONTROL Is external resource]** e encontrar perfis que foram replicados do Campaign v7.
    * Arraste outros parâmetros da consulta para direcionar ainda mais os perfis replicados.
 
 ## Criação de um delivery.{#creating-a-delivery}
@@ -109,13 +109,13 @@ Siga as etapas abaixo para adicionar uma delivery de e-mail a um workflow existe
 >
 >Peça ao consultor para configurar a aplicação Web para o cancelamento de subscrição do serviço antes de seguir as etapas abaixo.
 
-1. Click **[!UICONTROL Channels]** on the left.
-1. Drag **[!UICONTROL Email delivery]** to the existing workflow in the workspace.
+1. Clique em **[!UICONTROL Channels]** à esquerda.
+1. Arraste **[!UICONTROL Email delivery]** para o fluxo de trabalho existente no espaço de trabalho.
 
    ![](assets/acs_connect_profile_sync_07.png)
 
-1. Double click the **[!UICONTROL Email delivery]** activity and choose **[!UICONTROL Single send email]** or **[!UICONTROL Recurring email]**. Selecione as opções e clique em **[!UICONTROL Next]**.
-1. Click **[!UICONTROL Send via email]** and click **[!UICONTROL Next]**.
+1. Clique duas vezes na atividade **[!UICONTROL Email delivery]** e escolha **[!UICONTROL Single send email]** ou **[!UICONTROL Recurring email]**. Selecione as opções e clique em **[!UICONTROL Next]**.
+1. Clique em **[!UICONTROL Send via email]** e **[!UICONTROL Next]**.
 
    ![](assets/acs_connect_profile_sync_08.png)
 
@@ -124,7 +124,7 @@ Siga as etapas abaixo para adicionar uma delivery de e-mail a um workflow existe
    ![](assets/acs_connect_profile_sync_09.png)
 
 1. No campo **[!UICONTROL Subject]**, insira o assunto que aparecerá na caixa de entrada do email do recipient.
-1. Click **[!UICONTROL Change content]** to add an HTML template.
+1. Clique em **[!UICONTROL Change content]** para adicionar um modelo HTML.
 
    ![](assets/acs_connect_profile_sync_10.png)
 
@@ -154,15 +154,15 @@ Siga as etapas abaixo para adicionar uma delivery de e-mail a um workflow existe
    ![](assets/acs_connect_profile_sync_16.png)
 
 1. Clique em **[!UICONTROL Create]**.
-1. Retorne ao workflow clicando no nome da delivery.
+1. Retorne ao fluxo de trabalho clicando no nome do delivery.
 
    ![](assets/acs_connect_profile_sync_17.png)
 
-1. Clique em **[!UICONTROL Start]** para enviar o delivery. O ícone de delivery de e-mail pisca para indicar que está sendo preparado para delivery.
+1. Clique em **[!UICONTROL Start]** para enviar o delivery. O ícone de delivery de email pisca para indicar que está sendo preparado para o delivery.
 
    ![](assets/acs_connect_profile_sync_18.png)
 
-1. Double click the **[!UICONTROL Email delivery]** channel and choose **[!UICONTROL Confirm]** to send the email. Clique em **[!UICONTROL OK]** para enviar as mensagens.
+1. Clique duas vezes no canal **[!UICONTROL Email delivery]** e escolha **[!UICONTROL Confirm]** para enviar o email. Clique em **[!UICONTROL OK]** para enviar as mensagens.
 
    ![](assets/acs_connect_profile_sync_19.png)
 
@@ -178,11 +178,11 @@ Siga as instruções em [Criar um workflow](#creating-a-workflow) e [Criar um de
 
    ![](assets/acs_connect_profile_sync_21.png)
 
-1. Os dados do recipient no Campaign v7 são atualizados para refletir que o usuário cancelou a subscrição. Confirm that the box **[!UICONTROL No longer contact (by any channel)]** is checked for the recipient. Para saber como exibir um recipient no Campaign v7, consulte [Edição de um perfil](../../platform/using/editing-a-profile.md).
+1. Os dados do recipient no Campaign v7 são atualizados para refletir que o usuário cancelou a subscrição. Confirme se a caixa **[!UICONTROL No longer contact (by any channel)]** está marcada para o recipient. Para saber como exibir um recipient no Campaign v7, consulte [Edição de um perfil](../../platform/using/editing-a-profile.md).
 
    ![](assets/acs_connect_profile_sync_22.png)
 
-1. Vá para o Campaign Standard e abra os detalhes do perfil do recipient. Confirm that a checkbox appears next to **[!UICONTROL No longer contact (by any channel)]**. Para saber onde encontrar perfis no Campaign Standard, consulte [Noções básicas de navegação](https://docs.adobe.com/content/help/pt-BR/campaign-standard/using/getting-started/discovering-the-interface/interface-description.html).
+1. Vá para o Campaign Standard e abra os detalhes do perfil do recipient. Confirme se uma caixa de seleção aparece ao lado de **[!UICONTROL No longer contact (by any channel)]**. Para saber onde encontrar perfis no Campaign Standard, consulte [Noções básicas de navegação](https://docs.adobe.com/content/help/pt-BR/campaign-standard/using/getting-started/discovering-the-interface/interface-description.html).
 
    ![](assets/acs_connect_profile_sync_23.png)
 
