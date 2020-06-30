@@ -14,11 +14,11 @@ discoiquuid: 72e974b8-415a-47ab-9804-b15957787198
 index: y
 internal: n
 snippet: y
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: aef56860d6e4558a7f4833066ab3d83733591522
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '801'
-ht-degree: 89%
+ht-degree: 100%
 
 ---
 
@@ -45,18 +45,18 @@ Para clientes hospedados e híbridos, a renderização da Caixa de entrada é co
 
 Para instalações no local, siga as etapas abaixo para configurar a renderização da Caixa de entrada.
 
-1. Instale o **[!UICONTROL Inbox rendering (IR)]** pacote usando o menu **[!UICONTROL Tools]** > **[!UICONTROL Advanced]** > **[!UICONTROL Import package]** . Para obter mais informações, consulte [Instalação de pacotes padrão do Campaign Classic](../../installation/using/installing-campaign-standard-packages.md).
-1. Configure an external account of the HTTP type via the **[!UICONTROL Administration]** > **[!UICONTROL Platform]** > **[!UICONTROL External Accounts]** node. Para obter mais informações, consulte [Criação de uma conta externa](../../platform/using/external-accounts.md#creating-an-external-account).
+1. Instale o pacote **[!UICONTROL Inbox rendering (IR)]** usando o menu **[!UICONTROL Tools]** > **[!UICONTROL Advanced]** > **[!UICONTROL Import package]**. Para obter mais informações, consulte [Instalação de pacotes padrão do Campaign Classic](../../installation/using/installing-campaign-standard-packages.md).
+1. Configure uma conta externa do tipo HTTP por meio do nó **[!UICONTROL Administration]** > **[!UICONTROL Platform]** > **[!UICONTROL External Accounts]**. Para obter mais informações, consulte [Criação de uma conta externa](../../platform/using/external-accounts.md#creating-an-external-account).
 1. Defina os parâmetros da conta externa da seguinte maneira:
-   * **[!UICONTROL Label]**: Informações do servidor de entrega
-   * **[!UICONTROL Internal name]**: DeliabilityInstance
+   * **[!UICONTROL Label]**: informações de entregabilidade do servidor
+   * **[!UICONTROL Internal name]**: deliverabilityInstance
    * **[!UICONTROL Type]**: HTTP
    * **[!UICONTROL Server]**: https://deliverability-app.neolane.net/deliverability
-   * **[!UICONTROL Encryption]**: Nenhum
-   * Check the **[!UICONTROL Enabled]** option.
+   * **[!UICONTROL Encryption]**: nenhuma
+   * Marque a opção **[!UICONTROL Enabled]**.
    ![](assets/s_tn_inbox_rendering_external-account.png)
 
-1. Go to the **[!UICONTROL Administration]** > **[!UICONTROL Platform]** > **[!UICONTROL Options]** node. Search for the **[!UICONTROL DmRendering_cuid]** option and contact support to get your delivery reports identifier that needs to be copied to the **[!UICONTROL Value (text)]** field.
+1. Vá para o nó **[!UICONTROL Administration]** > **[!UICONTROL Platform]** > **[!UICONTROL Options]**. Procure a opção **[!UICONTROL DmRendering_cuid]** e entre em contato com o suporte para obter o identificador de relatórios do delivery que precisa ser copiado para o campo **[!UICONTROL Value (text)]**.
 1. Edite o arquivo **serverConf.xml** para permitir uma chamada para o servidor Litmus. Adicione a seguinte linha à `<urlPermission>` seção:
 
    ```
@@ -83,7 +83,7 @@ No Adobe Campaign, o crédito corresponde ao número de renderizações disponí
 >
 >O número de tokens Litmus disponíveis depende da licença adquirida do Campaign. Verifique o contrato da licença.
 
-Each time you use the **[!UICONTROL Inbox rendering]** feature in a delivery, each rendering generated decreases your available tokens by one.
+Cada vez que você usa o recurso **[!UICONTROL Inbox rendering]** em um delivery, cada renderização gerada diminui um de seus tokens disponíveis.
 
 >[!IMPORTANT]
 >
@@ -95,7 +95,7 @@ Each time you use the **[!UICONTROL Inbox rendering]** feature in a delivery, ea
 
 
 
-O número de tokens disponíveis restantes é exibido no **[!UICONTROL General summary]** do [relatório de renderização da Caixa de Entrada](#inbox-rendering-report)
+O número de tokens disponíveis restantes é exibido no **[!UICONTROL General summary]** do [relatório de renderização da Caixa de entrada](#inbox-rendering-report)
 
 ![](assets/s_tn_inbox_rendering_tokens.png)
 
@@ -134,7 +134,7 @@ O **[!UICONTROL General summary]** apresenta em uma lista e por meio de uma repr
 
 Passe o mouse sobre o gráfico para exibir os detalhes para cada cor.
 
-The body of the report is divided into three parts: **[!UICONTROL Mobile]**, **[!UICONTROL Messaging clients]**, and **[!UICONTROL Webmails]**. Role para baixo no relatório para exibir todas as renderizações agrupadas nessas três categorias.
+O conjunto do relatório está dividido em três partes: **[!UICONTROL Mobile]**, **[!UICONTROL Messaging clients]** e **[!UICONTROL Webmails]**. Role para baixo no relatório para exibir todas as renderizações agrupadas nessas três categorias.
 
 ![](assets/s_tn_inbox_rendering_report.png)
 
