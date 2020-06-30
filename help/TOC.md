@@ -128,7 +128,7 @@ ht-degree: 99%
       + [Conteúdo condicional](delivery/using/conditional-content.md)
       + [Cupons personalizados](delivery/using/personalized-coupons.md)
       + [Geração de documentos personalizados em PDF](delivery/using/generating-personalized-pdf-documents.md)
-      + [Personalização da lista de emoticon](delivery/using/customizing-emoticon-list.md)
+      + [Personalização da lista de emoticons](delivery/using/customizing-emoticon-list.md)
    + Uso de seed addresses {#using-seed-addresses}
       + [Sobre seed addresses](delivery/using/about-seed-addresses.md)
       + [Criação de seed addresses](delivery/using/creating-seed-addresses.md)
@@ -330,9 +330,9 @@ ht-degree: 99%
       + [Importação de dados](workflow/using/importing-data.md)
       + [Como usar os dados de workflow](workflow/using/how-to-use-workflow-data.md)
       + [Práticas recomendadas do fluxo de trabalho](workflow/using/workflow-best-practices.md)
-   + Execução de um workflow {#executing-a-workflow}
-      + [Iniciando um workflow](workflow/using/starting-a-workflow.md)
-      + [Ciclo de vida do workflow](workflow/using/workflow-life-cycle.md)
+   + Execução de um fluxo de trabalho {#executing-a-workflow}
+      + [Iniciar um fluxo de trabalho](workflow/using/starting-a-workflow.md)
+      + [Ciclo de vida do fluxo de trabalho](workflow/using/workflow-life-cycle.md)
       + [Ciclo de vida dos dados](workflow/using/data-life-cycle.md)
       + [Definição de aprovações](workflow/using/defining-approvals.md)
       + [Arquitetura](workflow/using/architecture.md)
@@ -528,7 +528,7 @@ ht-degree: 99%
       + [Pré-visualização de mensagem transacional](message-center/using/transactional-message-preview.md)
       + [Envio de uma prova](message-center/using/sending-a-proof.md)
       + [Publicação de template](message-center/using/template-publication.md)
-      + [Cancelamento da publicação do modelo](message-center/using/template-unpublication.md)
+      + [Desfazer publicação de template](message-center/using/template-unpublication.md)
    + Processamento de evento {#event-processing}
       + [Sobre processamento de evento](message-center/using/about-event-processing.md)
       + [Coleção de eventos](message-center/using/event-collection.md)
@@ -606,7 +606,7 @@ ht-degree: 99%
       + [Interação - buffer de dados](installation/using/interaction---data-buffer.md)
    + Apêndices {#appendices}
       + [O arquivo de configuração do servidor](installation/using/the-server-configuration-file.md)
-      + [Pontos de extremidade de rede Campanha](installation/using/campaign-network-endpoints.md)
+      + [Endpoints de rede do Campaign ](installation/using/campaign-network-endpoints.md)
       + [Linhas de comando](installation/using/command-lines.md)
       + [Criação de novas instâncias](installation/using/creating-new-instances.md)
       + [Lista de opções do Campaign Classic](installation/using/configuring-campaign-options.md)
