@@ -14,11 +14,11 @@ discoiquuid: 892b93ed-cb0e-4af5-a1ae-eff0c8b703c6
 index: y
 internal: n
 snippet: y
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: e97183256ef6d3f2068dd0fbc8eb3c3f32e0bae0
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2470'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
@@ -57,7 +57,7 @@ As etapas a seguir devem ser aplicadas para implementar o gerenciamento de orça
 
 ## Criar um orçamento {#creating-a-budget}
 
-Budgets are created in the map, via the **[!UICONTROL Campaign management > Budgets]** node. O botão **[!UICONTROL New]** na barra de ferramentas permite criar um orçamento.
+Os orçamentos são criados no mapa, através do nó **[!UICONTROL Campaign management > Budgets]**. O botão **[!UICONTROL New]** na barra de ferramentas permite criar um orçamento.
 
 * Adicionar um novo orçamento
 
@@ -109,12 +109,12 @@ Para a campanha, quando o status de criação do orçamento é estabelecido como
 
 ![](assets/s_user_budget_in_op_a.png)
 
-According to the level of commitment of the campaign budget, the amount will be entered in the **[!UICONTROL Planned]**, **[!UICONTROL Reserved]** or **[!UICONTROL Committed]** field.
+De acordo com o nível de compromisso do orçamento da campanha, o valor é inserido nos campos **[!UICONTROL Planned]**, **[!UICONTROL Reserved]** ou **[!UICONTROL Committed]**.
 
 O nível de comprometimento pode ser modificado:
 
 * no nível da **campanha**, na janela **[!UICONTROL Budget]**, encontrada na guia **[!UICONTROL Edit]**. É onde os orçamentos, custos e despesas são configurados.
-* in the **tasks** level, in the **[!UICONTROL Expenses and revenues]** window.
+* no nível de **tarefas**, na janela **[!UICONTROL Expenses and revenues]**.
 
 ![](assets/s_user_op_engagement_level_costs.png)
 
@@ -192,7 +192,7 @@ Os custos dividem-se em três categorias:
 
    O custo provisional estimado é uma estimativa dos custos dos processos da campanha. Contanto que seja editado, os valores de entrada não são consolidados. Ele deve ter o status **[!UICONTROL Specified]** para que os valores sejam considerados nos cálculos.
 
-   Essa quantia é entrada manualmente e pode ser dividida em várias categorias de despesas. To bread down a cost, click the **[!UICONTROL Breakdown...]** link, and then the **[!UICONTROL Add]** button to define a new amount.
+   Essa quantia é entrada manualmente e pode ser dividida em várias categorias de despesas. Para o detalhamento de um custo, clique no link **[!UICONTROL Breakdown...]** e, em seguida, no botão **[!UICONTROL Add]** para definir uma novo valor.
 
    ![](assets/s_user_edit_budget_tab_ventil.png)
 
@@ -232,7 +232,7 @@ Vamos criar uma campanha com:
 
 #### Etapa 1 - Criar o orçamento {#step-1---creating-the-budget}
 
-1. Create a new budget via the **[!UICONTROL Campaign management > Budgets]** node.
+1. Crie um novo orçamento por meio do nó **[!UICONTROL Campaign management > Budgets]**.
 
 1. Defina um orçamento de 10.000 euros no campo **[!UICONTROL Allocated]** da seção **[!UICONTROL Amounts]**. Adicione duas categorias de despesas na seção inferior da janela:
 
@@ -252,10 +252,10 @@ Vamos criar uma campanha com:
 
    Para tarefas, crie as duas categorias de custo a seguir:
 
-   * **[!UICONTROL Room reservation]** (Sala pequena e Sala grande), com uma estrutura de custos **fixa** no montante de 300 e 500 Euros:
+   * **[!UICONTROL Room reservation]** (Pequena sala e Sala grande), com uma estrutura de custo **fixa** na quantidade de 300 e 500 euros:
    ![](assets/s_user_cost_mgmt_sample_6.png)
 
-   * **[!UICONTROL Creation]** (Tipo de modelo **de** conteúdo), com uma estrutura de custos **diários** de 300 Euros:
+   * **[!UICONTROL Creation]** (**tipo de template de conteúdo**), com uma estrutura de custo **diária** de 300 euros:
    ![](assets/s_user_cost_mgmt_sample_7.png)
 
 #### Etapa 3 - Carregar o orçamento na campanha {#step-3---charging-the-budget-in-the-campaign}
@@ -272,7 +272,7 @@ Vamos criar uma campanha com:
 
    ![](assets/s_user_cost_mgmt_sample_9.png)
 
-1. Click **[!UICONTROL Ok]** and then **[!UICONTROL Save]** to confirm this information. O custo calculado da campanha é, então, atualizado com o custo provisional estimado.
+1. Clique em **[!UICONTROL Ok]** e então, **[!UICONTROL Save]** para confirmar essas informações. O custo calculado da campanha é, então, atualizado com o custo provisional estimado.
 
 #### Etapa 4 - Criar o delivery de mala direta {#step-4---creating-the-direct-mail-delivery}
 
@@ -308,7 +308,7 @@ Ao editar o custo calculado, é possível verificar a divisão de custo e o stat
 
 #### Etapa 5 - Criar tarefas {#step-5---creating-tasks}
 
-Nessa campanha são adicionadas duas tarefas para as quais as estruturas de custo foram criadas anteriormente (consulte [Etapa 2 - Configuração do provedor de serviço e definição das estruturas de custo](#step-2---configuring-the-service-provider-and-defining-the-cost-structures)). To do this, in the campaign dashboard, click the **[!UICONTROL Add a task]** button. Nomeie a tarefa e clique em **[!UICONTROL Save]**.
+Nessa campanha são adicionadas duas tarefas para as quais as estruturas de custo foram criadas anteriormente (consulte [Etapa 2 - Configuração do provedor de serviço e definição das estruturas de custo](#step-2---configuring-the-service-provider-and-defining-the-cost-structures)). Para fazer isso, no painel de campanha, clique no botão **[!UICONTROL Add a task]**. Nomeie a tarefa e clique em **[!UICONTROL Save]**.
 
 1. A tarefa é, então, adicionada à lista de tarefas. É necessário editá-la para configurá-la.
 
@@ -368,7 +368,7 @@ As faturas são criadas e armazenadas no nó **[!UICONTROL MRM > Invoices]** da 
 
 ![](assets/s_user_cost_create_invoice.png)
 
-Uma fatura consiste em linhas de fatura cujo total permite que o valor seja calculado automaticamente. These lines are created manually from the **[!UICONTROL Invoice lines]** tab. Elas podem ser associados a um pedido para carregar as informações nos pedidos.
+Uma fatura consiste em linhas de fatura cujo total permite que o valor seja calculado automaticamente. Essas linhas são criadas manualmente na guia **[!UICONTROL Invoice lines]**. Elas podem ser associados a um pedido para carregar as informações nos pedidos.
 
 ![](assets/s_user_cost_invoice_add_line.png)
 
