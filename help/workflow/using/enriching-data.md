@@ -14,11 +14,11 @@ discoiquuid: f87da08f-68b9-4e2b-821f-b3ff20e390f1
 index: y
 internal: n
 snippet: y
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 1aca6758bc787f91ae28d7d5add875edf04541e8
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '744'
-ht-degree: 87%
+ht-degree: 100%
 
 ---
 
@@ -27,11 +27,11 @@ ht-degree: 87%
 
 ## Sobre enriquecimento de dados {#about-enriching-data}
 
-Este caso de uso detalha possíveis usos da atividade **[!UICONTROL Enrichment]** em um workflow de direcionamento. Para obter mais informações sobre como usar a atividade **[!UICONTROL Enrichment]**, consulte [Enriquecimento](../../workflow/using/enrichment.md).
+Este caso de uso detalha possíveis usos da atividade **[!UICONTROL Enrichment]** em um fluxo de trabalho de direcionamento. Para obter mais informações sobre como usar a atividade **[!UICONTROL Enrichment]**, consulte [Enriquecimento](../../workflow/using/enrichment.md).
 
 Um caso de uso sobre como enriquecer um delivery de email com datas personalizadas também está disponível [nesta seção](../../workflow/using/email-enrichment-with-custom-date-fields.md).
 
-Os contatos do banco de dados de marketing recebem um convite para participar de uma competição por meio de um aplicativo Web. Os resultados da competição são recuperados na tabela **[!UICONTROL Competition results]**. Esta tabela está vinculada à tabela de contatos (**[!UICONTROL Recipients]**). The **[!UICONTROL Competition results]** table contains the following fields:
+Os contatos do banco de dados de marketing recebem um convite para participar de uma competição por meio de um aplicativo Web. Os resultados da competição são recuperados na tabela **[!UICONTROL Competition results]**. Esta tabela está vinculada à tabela de contatos (**[!UICONTROL Recipients]**). A tabela **[!UICONTROL Competition results]** contém os seguintes campos:
 
 * Competition name (@game)
 * Trial number (@trial)
@@ -51,8 +51,8 @@ Para configurar esse caso de uso, criamos o seguinte workflow para construção 
 
 Para criar o workflow, aplique as seguintes etapas:
 
-1. Duas atividades **[!UICONTROL Query]** e uma atividade **[!UICONTROL Intersection]** são adicionadas para direcionar a novos assinantes que entraram por último na competição.
-1. The **[!UICONTROL Enrichment]** activity enables us to add data stored in the **[!UICONTROL Competition results]** table. O campo **[!UICONTROL Score]**, onde a personalização de delivery ocorrerá, é adicionado à tabela de trabalho do workflow.
+1. Duas atividades **[!UICONTROL Query]** e uma atividade **[!UICONTROL Intersection]** são adicionadas para direcionar novos assinantes que entraram por último na competição.
+1. A atividade **[!UICONTROL Enrichment]** permite adicionar dados armazenados na tabela **[!UICONTROL Competition results]**. O campo **[!UICONTROL Score]**, onde a personalização de delivery ocorrerá, é adicionado à tabela de trabalho do fluxo de trabalho.
 1. A atividade do tipo **[!UICONTROL Split]** permite criar subconjuntos de recipients com base em pontuações.
 1. Para cada subconjunto, uma atividade tipo **[!UICONTROL Delivery]** é adicionada.
 
@@ -70,17 +70,17 @@ Em seguida, uma atividade tipo **[!UICONTROL Intersection]** é adicionada para 
 
 ## Etapa 2 - Enriquecimento {#step-2--enrichment}
 
-Neste exemplo, queremos personalizar os deliveries de acordo com o campo **[!UICONTROL Score]** armazenado na tabela **[!UICONTROL Competition results]**. Esta tabela tem um relacionamento de tipo 1-n com a tabela de recipients. A atividade **[!UICONTROL Enrichment]** permite adicionar dados de uma tabela vinculada à dimensão do filtro à tabela de trabalho do workflow.
+Neste exemplo, queremos personalizar os deliveries de acordo com o campo **[!UICONTROL Score]** armazenado na tabela **[!UICONTROL Competition results]**. Esta tabela tem um relacionamento de tipo 1-n com a tabela de recipients. A atividade **[!UICONTROL Enrichment]** permite adicionar dados de uma tabela vinculada à dimensão do filtro à tabela de trabalho do fluxo de trabalho.
 
-1. In the editing screen of the enrichment activity, select **[!UICONTROL Add data]**, then **[!UICONTROL Data linked to the filtering dimension]** and click **[!UICONTROL Next]**.
+1. Na tela de edição da atividade de enriquecimento, selecione **[!UICONTROL Add data]**, então **[!UICONTROL Data linked to the filtering dimension]** e clique em **[!UICONTROL Next]**.
 
    ![](assets/uc1_enrich_6.png)
 
-1. Then select the **[!UICONTROL Data linked to the filtering dimension]** option, select the **[!UICONTROL Competition results]** table and click **[!UICONTROL Next]**.
+1. Em seguida, selecione a opção **[!UICONTROL Data linked to the filtering dimension]**, selecione a tabela **[!UICONTROL Competition results]** e clique em **[!UICONTROL Next]**.
 
    ![](assets/uc1_enrich_7.png)
 
-1. Enter an ID and a label, and select the **[!UICONTROL Limit the line count]** option in the **[!UICONTROL Data collected]** field. In the **[!UICONTROL Lines to retrieve]** field, select &#39;1&#39; as a value. A atividade de enriquecimento adicionará uma única linha da tabela **[!UICONTROL Competition results]** à tabela de trabalho do workflow para cada recipient. Clique em **[!UICONTROL Next]**.
+1. Digite um ID e um rótulo e selecione a opção **[!UICONTROL Limit the line count]** no campo **[!UICONTROL Data collected]**. No campo **[!UICONTROL Lines to retrieve]**, selecione &#39;1&#39; como um valor. A atividade de enriquecimento adicionará uma única linha da tabela **[!UICONTROL Competition results]** à tabela de trabalho do fluxo de trabalho para cada recipient. Clique em **[!UICONTROL Next]**.
 
    ![](assets/uc1_enrich_8.png)
 
@@ -92,11 +92,11 @@ Neste exemplo, queremos personalizar os deliveries de acordo com o campo **[!UIC
 
    ![](assets/uc1_enrich_10.png)
 
-1. In the **[!UICONTROL Data to add]** window, double-click the **[!UICONTROL Score]** field. Para cada recipient, a atividade de enriquecimento adicionará somente o campo **[!UICONTROL Score]**. Clique em **[!UICONTROL Finish]**.
+1. Na janela **[!UICONTROL Data to add]**, clique duas vezes no campo **[!UICONTROL Score]**. Para cada recipient, a atividade de enriquecimento adicionará somente o campo **[!UICONTROL Score]**. Clique em **[!UICONTROL Finish]**.
 
    ![](assets/uc1_enrich_11.png)
 
-Right-click the inbound transition of the enrichment activity and select **[!UICONTROL Display the target]**. A tabela de trabalho contém os seguintes dados:
+Clique com o botão direito do mouse na transição de entrada da atividade de enriquecimento e selecione **[!UICONTROL Display the target]**. A tabela de trabalho contém os seguintes dados:
 
 ![](assets/uc1_enrich_13.png)
 
