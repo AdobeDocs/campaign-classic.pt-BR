@@ -12,10 +12,10 @@ discoiquuid: 9ac4c60a-b0f6-42fb-a081-74b57820cb16
 index: y
 internal: n
 snippet: y
-translation-type: ht
-source-git-commit: b369a17fabc55607fc6751e7909e1a1cb3cd4201
-workflow-type: ht
-source-wordcount: '154'
+translation-type: tm+mt
+source-git-commit: 3a932bc440853151704f1ba1e188fa0af9d4c5cb
+workflow-type: tm+mt
+source-wordcount: '116'
 ht-degree: 100%
 
 ---
@@ -30,4 +30,3 @@ Os workflows são manipulados por um módulo específico. Esse módulo pode ser 
 * O processo &#39;Executor de Instância de Workflow&#39; (runwf) executa todas as tarefas de uma determinada instância de workflow. Quando não há tarefas a serem executadas no momento, se torna &#39;passivo&#39;, indicando que seu status é salvo no banco de dados e depois é interrompido.
 * O módulo &#39;Servidor de Workflow&#39; (wfserver) monitora as instâncias de workflows atuais. Quando há uma tarefa para executar, esse módulo cria um processo para ativar (ou reativar) a instância correspondente.
 
-Quando um operador executa uma ação em um workflow (iniciar, parar, pausar etc.), a ação não é executada imediatamente pelo módulo &#39;nlserver&#39;, mas, em vez disso, é colocada em uma fila para ser processada pelo módulo de workflow.
