@@ -13,10 +13,10 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 57263746675152b472aa5df4ce94f97b77a84a6b
+source-git-commit: 229df9ee7da5ac9c773a7af82aabceb755299cc6
 workflow-type: tm+mt
-source-wordcount: '6726'
-ht-degree: 99%
+source-wordcount: '6767'
+ht-degree: 98%
 
 ---
 
@@ -29,9 +29,13 @@ Você também pode consultar as [Notas de versão do Adobe Campaign Classic](../
 
 ## June 2020 {#june-2020}
 
+A seção Remoção de um endereço em quarentena foi atualizada. Isso inclui a clarificação dos casos em que os endereços são removidos automaticamente da lista da quarentena. [Leia mais](../../delivery/using/understanding-quarantine-management.md#removing-a-quarantined-address)
+
 Casos de uso foram adicionados sobre como [criptografar](../../workflow/using/how-to-use-workflow-data.md#use-case-gpg-encrypt) e [descriptografar](../../workflow/using/importing-data.md#use-case-gpg-decrypt) dados usando o Painel de controle e Workflows da campanha.
 
 Os termos &quot;lista branca&quot; e &quot;lista negra&quot; foram removidos da documentação do Adobe Campaign. Algumas ocorrências desses termos ainda podem existir na interface do usuário do produto, nomes de opções e código interno, mas serão substituídas em versões futuras da Campanha por &quot;blocklist&quot; e &quot;allowlist&quot;.
+
+A página de integração Experience Cloud Triggers e Adobe Campaign Classic foi movida [para cá](../../integrations/using/about-triggers.md).
 
 ## 20.2 - 08/06/2020{#release-20-2}
 
@@ -89,7 +93,7 @@ As Práticas recomendadas do modelo de dados foi aprimorada com informações ad
 
 A seção que descreve o modelo de dados integrado do Adobe Campaign foi atualizada com mais detalhes em cada tabela. [Leia mais](../../configuration/using/data-model-description.md)
 
-Os casos de uso do fluxo de trabalho foram atualizados e reorganizados em seções temáticas. [Leia mais](../../workflow/using/using-the-local-approval-activity.md)
+Os casos de uso do fluxo de trabalho foram atualizados e reorganizados em seções temáticas. [Leia mais](../../workflow/using/about-workflow-use-cases.md)
 
 As seções [Qualificações de email de rejeição](../../delivery/using/understanding-delivery-failures.md#bounce-mail-qualification) e [Regras de gerenciamento de email](../../delivery/using/understanding-delivery-failures.md#email-management-rules) foram aprimoradas com informações atualizadas.
 
