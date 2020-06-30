@@ -1,6 +1,6 @@
 ---
 title: Definição de aprovações
-description: As aprovações permitem que os operadores tomem decisões que regem um workflow ou confirmem sua execução contínua.
+description: As aprovações permitem que os operadores tomem decisões que regem um fluxo de trabalho ou confirmem sua execução contínua.
 page-status-flag: never-activated
 uuid: 7668f1a2-fcd0-41f8-b8f6-71d77bc47486
 contentOwner: sauviat
@@ -12,11 +12,11 @@ discoiquuid: 9ac4c60a-b0f6-42fb-a081-74b57820cb16
 index: y
 internal: n
 snippet: y
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: b369a17fabc55607fc6751e7909e1a1cb3cd4201
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '842'
-ht-degree: 92%
+ht-degree: 100%
 
 ---
 
@@ -49,15 +49,15 @@ Um operador pode responder de uma das duas formas seguintes: validação usando 
 
 A gestão de operador é apresentada nesta [seção](../../platform/using/access-management.md).
 
-Emails de aprovação são enviados continuamente. The default delivery template is **[!UICONTROL notifyAssignee]**: It is saved in the **[!UICONTROL Administration > Campaign management > Technical delivery templates]** folder. Esse cenário pode ser personalizado e também é recomendável fazer uma cópia e alterar templates para cada atividade.
+Emails de aprovação são enviados continuamente. O template do delivery padrão é **[!UICONTROL notifyAssignee]**: ele é salvo na pasta **[!UICONTROL Administration > Campaign management > Technical delivery templates]**. Esse cenário pode ser personalizado e também é recomendável fazer uma cópia e alterar templates para cada atividade.
 
-Deliveries created via this template are stored in the **[!UICONTROL Administration > Production > Objects created automatically > Technical deliveries > Workflow notifications]** folder.
+Os deliveries criados por meio desse template são armazenados na pasta **[!UICONTROL Administration > Production > Objects created automatically > Technical deliveries > Workflow notifications]**.
 
 ## Aprovação através do console {#approval-via-the-console}
 
 Em operações, os elementos a serem aprovados são exibidos no painel da campanha.
 
-For technical workflows, the tasks that the user can approve can be accessed from the tree structure in the **[!UICONTROL Administration > Production > Objects created automatically > Pending approvals]** folder.
+Para workflows técnicos, as tarefas que o usuário pode aprovar podem ser acessadas a partir da estrutura de árvore na pasta **[!UICONTROL Administration > Production > Objects created automatically > Pending approvals]**.
 
 ![](assets/validation-node.png)
 
@@ -81,13 +81,13 @@ A segunda guia nas propriedades da atividade de aprovação permite definir uma 
 Para adicionar uma nova expiração, clique em **[!UICONTROL Add]**. Uma transição é adicionada a cada expiração criada. É possível:
 
 * modificar os parâmetros típicos diretamente clicando em uma célula na lista (ou pressionando F2),
-* or edit the expression by clicking the **[!UICONTROL Detail...]** button.
+* ou edite a expressão clicando no botão **[!UICONTROL Detail...]**.
 
 >[!NOTE]
 >
 >Não é necessário especificar uma ordem para as expirações, pois são processadas em ordem cronológica.
 
-The **[!UICONTROL Do not terminate the task]** option leaves the approval active when the delay is overrun. Esse modo possibilita gerenciar lembretes ao deixar a aprovação ativa: os operadores ainda podem responder. Essa opção é desabilitada por padrão, significando que a tarefa é considerada concluída na expiração e que os operadores não podem mais responder.
+A opção **[!UICONTROL Do not terminate the task]** deixa a aprovação ativa quando o atraso é saturado. Esse modo possibilita gerenciar lembretes ao deixar a aprovação ativa: os operadores ainda podem responder. Essa opção é desabilitada por padrão, significando que a tarefa é considerada concluída na expiração e que os operadores não podem mais responder.
 
 Você pode criar quatro tipos de expirações:
 
