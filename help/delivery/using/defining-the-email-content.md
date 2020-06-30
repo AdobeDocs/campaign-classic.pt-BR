@@ -12,11 +12,11 @@ discoiquuid: 2ea2747f-957f-41a9-a03f-20c03fa99116
 index: y
 internal: n
 snippet: y
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: b60b5fad24c1237981f66315e7cf585c79f82641
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2887'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -63,7 +63,7 @@ Por exemplo, na mensagem acima, o assunto da mensagem é personalizado para cada
 >
 >O uso de campos de personalização é apresentado em [Sobre personalização](../../delivery/using/about-personalization.md).
 
-Você também pode inserir emoticons na linha do assunto com a janela pop-up **[!UICONTROL Insert emoticon]** .
+Também é possível inserir emoticons na linha do assunto com a janela pop-up **[!UICONTROL Insert emoticon]**.
 
 ## Conteúdo da mensagem {#message-content}
 
@@ -117,18 +117,18 @@ As mensagens são enviadas em formato de texto ou HTML por padrão, de acordo co
 
    ![](assets/s_ncs_user_wizard_email01_142.png)
 
-### Inserir emoticons em um email {#inserting-emoticons}
+### Inserção de emoticons em um e-mail {#inserting-emoticons}
 
-Você pode inserir emoticons em seu conteúdo de email.
+É possível inserir emoticons no conteúdo de e-mail.
 
 1. Clique no ícone **[!UICONTROL Insert emoticon]**.
 1. Selecione um emoticon na janela pop-up.
 
    ![](assets/emoticon_4.png)
 
-1. Clique no **[!UICONTROL Close]** botão quando terminar.
+1. Clique no botão **[!UICONTROL Close]** quando terminar.
 
-Para personalizar a lista de emoticon, consulte esta [página](../../delivery/using/customizing-emoticon-list.md).
+Para personalizar a lista de emoticons, consulte esta [página](../../delivery/using/customizing-emoticon-list.md).
 
 ## Seleção dos formatos de mensagem {#selecting-message-formats}
 
@@ -199,9 +199,9 @@ O assistente do delivery permite adicionar imagens locais ou armazenadas na bibl
 >
 >Para que os recipients possam exibir as imagens incluídas nas mensagens recebidas, essas mensagens devem estar disponíveis em um servidor acessível externamente.
 
-Para gerenciar imagens por meio do assistente do delivery:
+Para gerenciar as imagens por meio do assistente do delivery:
 
-1. Click the **[!UICONTROL Tracking & Images]** icon in the toolbar.
+1. Clique no ícone **[!UICONTROL Tracking & Images]** na barra de ferramentas.
    ![](assets/s_ncs_user_email_del_img_param.png)
 
 1. Selecione **[!UICONTROL Upload images]** na guia **[!UICONTROL Images]**.
@@ -219,11 +219,11 @@ Quando você abre conteúdo HTML com imagens incluídas no assistente do deliver
 >
 >Os caminhos de acesso à imagem são modificados durante o carregamento manual ou ao enviar as mensagens.
 
-### Sending a message with images {#sending-a-message-with-images}
+### Envio de uma mensagem com imagens {#sending-a-message-with-images}
 
 >[!NOTE]
 >
->Para evitar problemas de desempenho, se você incluir imagens baixadas dinamicamente de um URL personalizado como [anexo](../../delivery/using/attaching-files.md), cada tamanho de imagem não deve exceder 100.000 bytes por padrão. Esse limite recomendado pode ser configurado [a partir da lista das opções](../../installation/using/configuring-campaign-options.md#delivery)Campaign Classic.
+>Para evitar problemas de desempenho, ao incluir imagens baixadas de um URL personalizado como [anexo](../../delivery/using/attaching-files.md), cada tamanho de imagem não deve exceder 100.000 bytes por padrão. Esse limite recomendado pode ser configurado na [lista de opções do Campaign Classic](../../installation/using/configuring-campaign-options.md#delivery).
 
 Veja a seguir um exemplo de delivery com quatro imagens:
 
