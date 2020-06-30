@@ -15,10 +15,10 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 655544352070b0e2fab72b1991d2e4d80e03e349
+source-git-commit: 3d6c304aaa0b3e6ba1156f1a65e93f5c284b0c0a
 workflow-type: tm+mt
-source-wordcount: '2808'
-ht-degree: 94%
+source-wordcount: '2848'
+ht-degree: 93%
 
 ---
 
@@ -79,7 +79,7 @@ _13 de agosto de 2019_
 
 ![](assets/do-not-localize/green_2.png) **22 de junho de 2020**: nova compilação (9032@800be2e) que inclui as seguintes correções:
 
-* O conector HTTP2 do iOS foi aprimorado (atualizações de terceiros e gerenciamento de erros). (NEO-25904, NEO-25903, NEO-25799)
+* O conector HTTP2 do iOS foi aprimorado (atualizações de terceiros e gerenciamento de erros). (25904, NEO-, NEO-25903, NEO-25799)
 
 As seguintes correções estão relacionadas ao mecanismo de segurança do link de rastreamento:
 
@@ -92,6 +92,11 @@ As seguintes correções estão relacionadas ao mecanismo de segurança do link 
 ![](assets/do-not-localize/orange_2.png) **29 de abril de 2020**: nova build (9032@3a9dc9c) que inclui as seguintes correções:
 
 * A segurança no rastreamento de links no email foi aprimorada. Ela é ativada por padrão para todos os clientes. Um recurso de segurança adicional e aprimorado está disponível e pode ser ativado ao acessar o Atendimento ao cliente. Mais detalhes sobre o recurso e as etapas para clientes não hospedados para habilitá-lo podem ser encontrados na [lista de verificação de Segurança e Privacidade](https://helpx.adobe.com/br/campaign/kb/acc-security.html#signature-mechanism).
+
+>[!CAUTION]
+>
+>Se tiver problemas com notificações por push usando links de rastreamento ou delivery usando tags de âncora, recomendamos que você desative o novo mecanismo de assinatura para rastrear links. O procedimento está detalhado nesta [página](https://helpx.adobe.com/campaign/kb/acc-security.html#signature-mechanism)
+
 * Correção de um problema que impedia a exibição de imagens na entrega de linha. (NEO-23207)
 * Correção de um problema com a atividade **Transferência de Arquivo**, que impedia que a autenticação com a chave SFTP funcionasse no Debian 9. (NEO-23183)
 * Correção de um problema que poderia afetar a notificação via push quando enviada em alta frequência. (NEO-20516)
