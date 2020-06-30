@@ -1,6 +1,6 @@
 ---
-title: Iniciando um workflow
-description: Saiba como start um fluxo de trabalho e descobrir ações de workflows na barra de ferramentas e clique com o botão direito do mouse no menu.
+title: Iniciar um fluxo de trabalho
+description: Saiba como iniciar e descobrir as ações de fluxos de trabalho na barra de ferramentas e clique com o botão direito do mouse no menu.
 page-status-flag: never-activated
 uuid: 7668f1a2-fcd0-41f8-b8f6-71d77bc47486
 contentOwner: sauviat
@@ -12,11 +12,11 @@ discoiquuid: 9ac4c60a-b0f6-42fb-a081-74b57820cb16
 index: y
 internal: n
 snippet: y
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: b369a17fabc55607fc6751e7909e1a1cb3cd4201
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '734'
-ht-degree: 77%
+ht-degree: 100%
 
 ---
 
@@ -33,7 +33,7 @@ A lista de opções disponíveis no menu **[!UICONTROL Actions]** e no menu de c
 
 ## Barra de ferramentas Ações {#actions-toolbar}
 
-Os botões da barra de ferramentas são detalhados nesta [seção](../../campaign/using/marketing-campaign-deliveries.md#building-the-main-target-in-a-workflow). O botão **[!UICONTROL Actions]** dá acesso às opções de execução adicionais para atuar em workflows selecionados. You can also use the **[!UICONTROL File > Actions]** menu, or right-click a workflow and select **[!UICONTROL Actions]**.
+Os botões da barra de ferramentas são detalhados nesta [seção](../../campaign/using/marketing-campaign-deliveries.md#building-the-main-target-in-a-workflow). O botão **[!UICONTROL Actions]** dá acesso às opções de execução adicionais para atuar em fluxos de trabalho selecionados. Você também pode usar o menu **[!UICONTROL File > Actions]** ou clicar com o botão direito do mouse em um fluxo de trabalho e selecionar **[!UICONTROL Actions]**.
 
 ![](assets/purge_historique.png)
 
@@ -57,7 +57,7 @@ Os botões da barra de ferramentas são detalhados nesta [seção](../../campaig
 
    Essa ação interrompe e depois retoma o workflow. Na maioria dos casos, é possível reiniciar mais rápido. Também é útil automatizar a reinicialização quando a interrupção leva um determinado tempo: isso ocorre porque o comando &#39;Parar&#39; não está disponível quando o workflow está sendo interrompido.
 
-   The **[!UICONTROL Start / Pause / Stop / Restart]** actions are also available via the execution icons in the toolbar. Para obter mais informações, consulte esta [seção](../../campaign/using/marketing-campaign-deliveries.md#creating-a-targeting-workflow).
+   As ações **[!UICONTROL Start / Pause / Stop / Restart]** também estão disponíveis por meio dos ícones de execução na barra de ferramentas. Para obter mais informações, consulte esta [seção](../../campaign/using/marketing-campaign-deliveries.md#creating-a-targeting-workflow).
 
 * **[!UICONTROL Purge history]**
 
@@ -65,15 +65,15 @@ Os botões da barra de ferramentas são detalhados nesta [seção](../../campaig
 
 * **[!UICONTROL Start in simulation mode]**
 
-   Essa opção permite iniciar o workflow no modo de simulação em vez do modo real. This means that when you enable this mode, only activities that do not impact the database or the file system are executed (e.g. **[!UICONTROL Query]**, **[!UICONTROL Union]**, **[!UICONTROL Intersection]**, etc.). Activities that do have an impact (e.g. **[!UICONTROL Export]**, **[!UICONTROL Import]**, etc.) assim como as posteriores (na mesma ramificação) não são executadas.
+   Essa opção permite iniciar o fluxo de trabalho no modo de simulação em vez do modo real. Isso significa que ao habilitar esse modo, somente as atividades que não afetam o banco de dados ou o sistema de arquivos serão executadas (por exemplo, **[!UICONTROL Query]**, **[!UICONTROL Union]**, **[!UICONTROL Intersection]**, etc.). Atividades que têm impacto (por exemplo, **[!UICONTROL Export]**, **[!UICONTROL Import]**, etc.) assim como as posteriores (na mesma ramificação) não são executadas.
 
 * **[!UICONTROL Execute pending tasks now]**
 
-   Essa ação permite iniciar todas as tarefas pendentes assim que possível. To start a specific task, right-click its activity and select **[!UICONTROL Execute pending task(s) now]**.
+   Essa ação permite iniciar todas as tarefas pendentes assim que possível. Para iniciar uma tarefa específica, clique com o botão direito do mouse na atividade e selecione **[!UICONTROL Execute pending task(s) now]**.
 
 * **[!UICONTROL Unconditional stop]**
 
-   Essa opção altera o status do workflow para **[!UICONTROL Finished]**. Essa ação só deve ser usada como último recurso se o processo de interrupção normal falhar após alguns minutos. Use apenas a interrupção incondicional se tiver certeza de que não há tarefas de workflow em andamento.
+   Essa opção altera o status do fluxo de trabalho para **[!UICONTROL Finished]**. Essa ação só deve ser usada como último recurso se o processo de interrupção normal falhar após alguns minutos. Use apenas a interrupção incondicional se tiver certeza de que não há tarefas de workflow em andamento.
 
    >[!CAUTION]
    >
@@ -81,9 +81,9 @@ Os botões da barra de ferramentas são detalhados nesta [seção](../../campaig
 
 * **[!UICONTROL Save as template]**
 
-   Essa ação cria um novo modelo de workflow com base no workflow selecionado. Você precisa especificar a pasta onde ela será salva (no campo **[!UICONTROL Folder]**).
+   Essa ação cria um novo modelo de fluxo de trabalho com base no fluxo de trabalho selecionado. Você precisa especificar a pasta onde ele será salvo (no campo **[!UICONTROL Folder]**).
 
-   The **[!UICONTROL Mass update of selected lines]** and **[!UICONTROL Merge selected lines]** options are generic platform options available in all **[!UICONTROL Actions]** menus. Para obter mais informações, consulte esta [seção](../../platform/using/updating-data.md).
+   As opções **[!UICONTROL Mass update of selected lines]** e **[!UICONTROL Merge selected lines]** são opções genéricas de plataforma disponíveis em todos os menus **[!UICONTROL Actions]**. Para obter mais informações, consulte esta [seção](../../platform/using/updating-data.md).
 
 ## Menu de contexto {#right-click-menu}
 
@@ -95,19 +95,19 @@ As seguintes opções estão disponíveis no menu de contexto:
 
 **[!UICONTROL Open]**: esta opção permite acessar as propriedades da atividade.
 
-**[!UICONTROL Display logs:]** essa opção permite que você visualização o log de execução da tarefa para a atividade selecionada. Consulte [Exibir logs](../../workflow/using/monitoring-workflow-execution.md#displaying-logs).
+**[!UICONTROL Display logs:]** essa opção permite exibir o log de execução da tarefa para a atividade selecionada. Consulte [Exibir logs](../../workflow/using/monitoring-workflow-execution.md#displaying-logs).
 
-**[!UICONTROL Execute pending task(s) now:]** essa ação permite que você start tarefas pendentes o mais rápido possível.
+**[!UICONTROL Execute pending task(s) now:]** essa ação permite iniciar tarefas pendentes assim que possível.
 
 **[!UICONTROL Workflow restart from a task:]** essa opção permite reiniciar o fluxo de trabalho usando os resultados armazenados anteriormente para essa atividade.
 
 **[!UICONTROL Cut/Copy/Paste/Delete:]** essas opções permitem recortar, copiar, colar e excluir atividades.
 
-**[!UICONTROL Copy as bitmap:]** essa opção permite que você tire uma captura de tela de todas as atividades.
+**[!UICONTROL Copy as bitmap:]** essa opção permite capturar a tela de todas as atividades.
 
 **[!UICONTROL Normal execution / Enable but do not execute / Do not enable:]** essas opções também estão disponíveis na guia **[!UICONTROL Advanced]** das propriedades da atividade. Maiores detalhes em [Execution](../../workflow/using/advanced-parameters.md#execution).
 
-**[!UICONTROL Save / Cancel:]** permite salvar ou cancelar as alterações feitas em um workflow.
+**[!UICONTROL Save / Cancel:]** permite salvar ou cancelar as alterações feitas em um fluxo de trabalho.
 
 >[!NOTE]
 >
