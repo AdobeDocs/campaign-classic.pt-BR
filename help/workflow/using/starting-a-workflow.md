@@ -12,11 +12,11 @@ discoiquuid: 9ac4c60a-b0f6-42fb-a081-74b57820cb16
 index: y
 internal: n
 snippet: y
-translation-type: ht
-source-git-commit: b369a17fabc55607fc6751e7909e1a1cb3cd4201
-workflow-type: ht
-source-wordcount: '734'
-ht-degree: 100%
+translation-type: tm+mt
+source-git-commit: 68a95962dfecc4b10f48ba16d4f8ab29cae02ee8
+workflow-type: tm+mt
+source-wordcount: '772'
+ht-degree: 95%
 
 ---
 
@@ -30,6 +30,10 @@ As ações relacionadas à execução do workflow para construção do target (i
 A barra de ferramentas permite iniciar e controlar a execução do workflow.
 
 A lista de opções disponíveis no menu **[!UICONTROL Actions]** e no menu de contexto estão detalhadas abaixo.
+
+>[!IMPORTANT]
+>
+>Keep in mind that, when an operator performs an action on a workflow (start, stop, pause, etc.), the action is not executed straightaway, but instead placed in a queue in order to be processed by the [workflow module](../../workflow/using/architecture.md).
 
 ## Barra de ferramentas Ações {#actions-toolbar}
 
