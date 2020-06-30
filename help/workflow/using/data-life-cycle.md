@@ -1,6 +1,6 @@
 ---
 title: Ciclo de vida dos dados
-description: Saiba mais sobre o ciclo de vida dos dados em workflows.
+description: Saiba mais sobre o ciclo de vida dos dados em fluxos de trabalho.
 page-status-flag: never-activated
 uuid: 7668f1a2-fcd0-41f8-b8f6-71d77bc47486
 contentOwner: sauviat
@@ -12,11 +12,11 @@ discoiquuid: 9ac4c60a-b0f6-42fb-a081-74b57820cb16
 index: y
 internal: n
 snippet: y
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: b369a17fabc55607fc6751e7909e1a1cb3cd4201
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '509'
-ht-degree: 93%
+ht-degree: 100%
 
 ---
 
@@ -47,7 +47,7 @@ Para fazer isso, selecione o menu relevante:
 
    Para obter mais informações, consulte esta [seção](../../reporting/using/using-the-descriptive-analysis-wizard.md).
 
-Os dados do target são descartados na execução do workflow Somente a última tabela de trabalho está acessível. You can configure the workflow so that all work tables remain accessible: check the **[!UICONTROL Keep the result of interim populations between two executions]** option in the workflow properties.
+Os dados do target são descartados na execução do workflow Somente a última tabela de trabalho está acessível. Você pode configurar o fluxo de trabalho para que todas as tabelas de trabalho permaneçam acessíveis: marque a opção **[!UICONTROL Keep the result of interim populations between two executions]** nas propriedades do fluxo de trabalho.
 
 No entanto, recomendamos que você evite ativar essa opção quando a quantidade de dados for significativa.
 
@@ -63,7 +63,7 @@ Isso permite que você use dados coletados por uma lista ou com base nas respost
 %= targetData.FIELD %
 ```
 
-Os elementos de personalização do tipo **[!UICONTROL Target extension]** (targetData) não estão disponíveis para workflows para construção do target. O target do delivery deve ser construído no workflow e especificado na transição de entrada do delivery.
+Os elementos de personalização do tipo **[!UICONTROL Target extension]** (targetData) não estão disponíveis para fluxos de trabalho para construção do target. O target do delivery deve ser construído no fluxo de trabalho e especificado na transição de entrada do delivery.
 
 Se você quiser criar provas de delivery, o target de prova precisará ser construído com base no modo **[!UICONTROL Address substitution]** para que os dados de personalização possam ser inseridos. Para obter mais informações, consulte esta [seção](../../delivery/using/steps-defining-the-target-population.md#using-address-substitution-in-proof).
 
@@ -105,9 +105,9 @@ Siga as etapas abaixo:
    >
    >Somente os dados contidos na transição podem ser usados para personalizar o delivery. Os campos de personalização do tipo **targetData** só estão disponíveis para a população de entrada da atividade de **[!UICONTROL Delivery]**.
 
-1. No template de delivery, use os campos coletados no workflow.
+1. No template de delivery, use os campos coletados no fluxo de trabalho.
 
-   To do this, insert **[!UICONTROL Target extension]** type personalization fields.
+   Para fazer isso, insira os campos de personalização do tipo **[!UICONTROL Target extension]**.
 
    ![](assets/wf-targetdata-sample-5.png)
 
