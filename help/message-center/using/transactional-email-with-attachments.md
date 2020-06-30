@@ -12,11 +12,11 @@ discoiquuid: 7b8ab9d6-e47e-46d8-99df-da793486654c
 index: y
 internal: n
 snippet: y
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 22d0e70f77eb3759632e05ab1cb0d8ee53adfac9
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '629'
-ht-degree: 89%
+ht-degree: 100%
 
 ---
 
@@ -47,7 +47,7 @@ Nesse cenário, os anexos não são pré-criados, mas adicionados instantaneamen
 
 >[!NOTE]
 >
->Para evitar problemas de desempenho, se você incluir imagens baixadas dinamicamente de um URL personalizado como anexo, cada tamanho de imagem não deve exceder 100.000 bytes por padrão. Esse limite recomendado pode ser configurado [a partir da lista das opções](../../installation/using/configuring-campaign-options.md#delivery)Campaign Classic.
+>Para evitar problemas de desempenho, se você incluir imagens baixadas online de um URL personalizado como anexo, cada tamanho de imagem não deverá exceder 100.000 bytes por padrão. Esse limite recomendado pode ser configurado na [lista de opções do Campaign Classic](../../installation/using/configuring-campaign-options.md#delivery).
 
 ## Recomendações {#important-notes}
 
@@ -60,7 +60,7 @@ Antes de implementar este cenário, leia atentamente as diretrizes abaixo:
 
 >[!NOTE]
 >
->Para evitar problemas de desempenho, é recomendável não incluir mais de um anexo por email. O limite recomendado pode ser configurado [a partir da lista das opções](../../installation/using/configuring-campaign-options.md#delivery)Campaign Classic.
+>Para evitar problemas de desempenho, é recomendável não incluir mais de um anexo por email. O limite recomendado pode ser configurado na [lista de opções do Campaign Classic](../../installation/using/configuring-campaign-options.md#delivery).
 
 ## Implementação {#implementation}
 
