@@ -14,11 +14,11 @@ discoiquuid: 2d4ccf81-cd85-4f4c-8ba8-5b5612af1e16
 index: y
 internal: n
 snippet: y
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: b1a961822224ab0a9551f51942a5f94cf201c8ee
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1631'
-ht-degree: 94%
+ht-degree: 100%
 
 ---
 
@@ -37,13 +37,13 @@ Esta seção detalha os principais princípios e as práticas recomendadas para 
 
 ## Criação de um novo workflow {#creating-a-new-workflow}
 
-No **[!UICONTROL Explorer]**, acesse uma pasta de workflow. Por padrão, você pode usar **[!UICONTROL Profiles and Targets]** > **[!UICONTROL Jobs]** > **[!UICONTROL Targeting workflows]**.
+No **[!UICONTROL Explorer]**, acesse uma pasta de fluxo de trabalho. Por padrão, é possível usar **[!UICONTROL Profiles and Targets]** > **[!UICONTROL Jobs]** > **[!UICONTROL Targeting workflows]**.
 
-Clique no botão **[!UICONTROL New]** acima da lista de workflows.
+Clique no botão **[!UICONTROL New]** acima da lista de fluxos de trabalho.
 
 ![](assets/create_a_wf_icon.png)
 
-Or, you can also use the **[!UICONTROL Create]** button in the workflow overview (**[!UICONTROL Monitoring]** > **[!UICONTROL Workflow]** link).
+Ou também é possível usar o botão **[!UICONTROL Create]** na visão geral do fluxo de trabalho (**[!UICONTROL Monitoring]** > link **[!UICONTROL Workflow]**).
 
 ![](assets/create_a_wf.png)
 
@@ -108,7 +108,7 @@ Você pode alterar a exibição e o layout do gráfico usando os seguintes eleme
 
 * **Alinhamento de objeto**
 
-   To align icons, select them and click the **[!UICONTROL Align vertically]** or **[!UICONTROL Align horizontally]** icon.
+   Para alinhar ícones, selecione-os e clique no ícone **[!UICONTROL Align vertically]** ou **[!UICONTROL Align horizontally]**.
 
    Use a tecla **CTRL** para selecionar várias atividades dispersas ou desmarcar uma ou mais atividades. Clique no plano de fundo do diagrama para desmarcar tudo.
 
@@ -142,7 +142,7 @@ Todas essas atividades podem ser encontradas na primeira guia do workflow.
 >
 >As atividades de target são detalhadas [nesta seção](../../workflow/using/about-activities.md).
 
-Targeting workflows can be created and edited via the **[!UICONTROL Profiles and Targets > Jobs > Targeting workflows]** node of the Adobe Campaign tree or via the **[!UICONTROL Profiles and Targets > Targeting workflows]** menu of the home page.
+Os fluxos de trabalho para construção do target podem ser criados e editados por meio do nó **[!UICONTROL Profiles and Targets > Jobs > Targeting workflows]** da árvore do Adobe Campaign ou através do menu **[!UICONTROL Profiles and Targets > Targeting workflows]** da página inicial.
 
 ![](assets/target_wf.png)
 
@@ -178,7 +178,7 @@ Enquanto para **Aplicações Web**, a lista conterá as seguintes dimensões de 
 
 ## Workflows da campanha {#campaign-workflows}
 
-Para cada campanha, você pode criar workflows a serem executados a partir da guia **[!UICONTROL Targeting and workflows]**. Esses workflows são específicos da campanha.
+Para cada campanha, você pode criar fluxos de trabalho que serão executados na guia **[!UICONTROL Targeting and workflows]**. Esses workflows são específicos da campanha.
 
 ![](assets/wf-in-op-edit-delivery-tab.png)
 
@@ -186,7 +186,7 @@ Esta guia contém as mesmas atividades que todos os workflows. Eles são apresen
 
 Além de campanhas de target, os workflows da campanha permitem criar e configurar deliveries inteiramente para todos os canais disponíveis. Após ser criado no workflow, esses deliveries estão disponíveis no painel da campanha.
 
-All campaign workflows are centralized under the **[!UICONTROL Administration > Production > Objects created automatically > Campaign workflows]** node.
+Todos os fluxos de trabalho da campanha são centralizados no nó **[!UICONTROL Administration > Production > Objects created automatically > Campaign workflows]**.
 
 ![](assets/campaigns_wf.png)
 
@@ -194,19 +194,19 @@ Workflows da campanha e exemplos de implementação são detalhados nesta [pági
 
 ## Fluxos de trabalho técnicos {#technical-workflows}
 
-Os workflows técnicos são fornecidos com o Adobe Campaign, prontos para uso. Eles são operações ou tarefas agendadas para execução periódica no servidor. Eles permitem executar a manutenção no banco de dados, encaminhar as informações de rastreamento sobre os deliveries e configurar processos provisionais nos deliveries. Technical workflows are configured via the **[!UICONTROL Administration > Production > Technical workflows]** node.
+Os workflows técnicos são fornecidos com o Adobe Campaign, prontos para uso. Eles são operações ou tarefas agendadas para execução periódica no servidor. Eles permitem executar a manutenção no banco de dados, encaminhar as informações de rastreamento sobre os deliveries e configurar processos provisionais nos deliveries. Os workflows técnicos são configurados por meio do nó **[!UICONTROL Administration > Production > Technical workflows]**.
 
 ![](assets/navtree.png)
 
 Templates nativos estão disponíveis para criar workflows técnicos. Eles podem ser configurados para atender às suas necessidades.
 
-A subpasta **[!UICONTROL Campaign process]** centraliza os workflows necessários para executar processos nas campanhas: notificação de tarefa, gestão de estoque, cálculo de custos, etc.
+A subpasta **[!UICONTROL Campaign process]** centraliza os fluxos de trabalho necessários para executar processos nas campanhas: notificação de tarefa, gestão de estoque, cálculo de custos, etc.
 
 >[!NOTE]
 >
 >A lista de workflows técnicos instalados com cada módulo está disponível em uma [seção dedicada](../../workflow/using/about-technical-workflows.md).
 
-You can create other technical workflows in the **[!UICONTROL Administration > Production > Technical workflows]** node of the tree structure. No entanto, essa função é reservada para usuários avançados.
+Você pode criar outros workflows técnicos no nó **[!UICONTROL Administration > Production > Technical workflows]** da estrutura da árvore. No entanto, essa função é reservada para usuários avançados.
 
 As atividades oferecidas são as mesmas para os workflows para construção do target. Para obter mais informações, consulte [Etapas de implementação](#implementation-steps-).
 
@@ -216,7 +216,7 @@ Os templates de workflows possuem a configuração geral das propriedades e poss
 
 Você pode criar novos templates de workflow com base em templates existentes ou alterar um workflow para um template diretamente.
 
-Workflow templates are stored in the **[!UICONTROL Resources > Templates > Workflow templates]** node of the Adobe Campaign tree.
+Os modelos de fluxo de trabalho são salvos no nó **[!UICONTROL Resources > Templates > Workflow templates]** da árvore do Adobe Campaign.
 
 ![](assets/s_advuser_wf_template_tree.png)
 
