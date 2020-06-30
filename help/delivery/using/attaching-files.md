@@ -14,11 +14,11 @@ discoiquuid: f3666c12-5e6f-452e-b1d6-b69a7e9f6f6e
 index: y
 internal: n
 snippet: y
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: b60b5fad24c1237981f66315e7cf585c79f82641
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '949'
-ht-degree: 79%
+ht-degree: 100%
 
 ---
 
@@ -31,7 +31,7 @@ Você pode anexar um ou mais arquivos a um delivery de email.
 
 >[!NOTE]
 >
->Para evitar problemas de desempenho, é recomendável não incluir mais de um anexo por email. O limite recomendado pode ser configurado [a partir da lista das opções](../../installation/using/configuring-campaign-options.md#delivery)Campaign Classic.
+>Para evitar problemas de desempenho, é recomendável não incluir mais de um anexo por email. O limite recomendado pode ser configurado na [lista de opções do Campaign Classic](../../installation/using/configuring-campaign-options.md#delivery).
 
 Há dois casos possíveis:
 
@@ -52,7 +52,7 @@ Para anexar um arquivo local a um delivery, siga as etapas abaixo.
 
 1. Clique no link **[!UICONTROL Attachments]**.
 1. Clique no botão **[!UICONTROL Add]**.
-1. Clique **[!UICONTROL File...]** para selecionar o arquivo a ser anexado ao delivery.
+1. Clique em **[!UICONTROL File...]** para selecionar o arquivo a ser anexado ao delivery.
 
    ![](assets/s_ncs_user_wizard_email_attachement.png)
 
@@ -73,7 +73,7 @@ Quando você cria um anexo calculado, o nome do anexo pode ser computado durante
 Para criar um anexo personalizado, siga estas etapas:
 
 1. Clique no link **[!UICONTROL Attachments]**.
-1. Clique no **[!UICONTROL Add]** botão e selecione **[!UICONTROL Calculated attachment]**.
+1. Clique no botão **[!UICONTROL Add]** e selecione **[!UICONTROL Calculated attachment]**.
 1. Selecione o tipo de cálculo na lista suspensa **[!UICONTROL Type]**:
 
 ![](assets/s_ncs_user_wizard_email01_136.png)
@@ -87,14 +87,14 @@ As seguintes opções estão disponíveis:
 
 ### Anexo de arquivo local {#attach-a-local-file}
 
-If the attachment is a local file, select the option: **[!UICONTROL File name is specified when creating the delivery template]**. O arquivo é selecionado no local e carregado no servidor. Siga as etapas abaixo:
+Se o anexo for um arquivo local, selecione a opção: **[!UICONTROL File name is specified when creating the delivery template]**. O arquivo é selecionado no local e carregado no servidor. Siga as etapas abaixo:
 
-1. Select the file to upload in the **[!UICONTROL Local file]** field.
+1. Selecione o arquivo a ser carregado no campo **[!UICONTROL Local file]**.
 1. Especifique o rótulo se necessário. O rótulo substitui o nome do arquivo quando visualizado em sistemas de mensagens. Se nada for especificado, o nome do arquivo será usado por padrão.
 
    ![](assets/s_ncs_user_wizard_email_calc_attachement_02.png)
 
-1. If necessary, select **[!UICONTROL Upload file on the server]**, and then click **[!UICONTROL Update on server]** to start the transfer.
+1. Se necessário, selecione **[!UICONTROL Upload file on the server]** e clique em **[!UICONTROL Update on server]** para iniciar a transferência.
 
    ![](assets/s_ncs_user_wizard_email_calc_attachement_01.png)
 
@@ -102,7 +102,7 @@ O arquivo está então disponível no servidor para ser anexado aos diferentes d
 
 ### Anexar uma mensagem personalizada {#attach-a-personalized-message}
 
-A opção **[!UICONTROL The file content is personalized and converted into PDF format at the time of delivery for each message]** permite selecionar um arquivo com campos de personalização, como o sobrenome e o nome do recipient desejado.
+A opção **[!UICONTROL The file content is personalized and converted into PDF format at the time of delivery for each message]** permite selecionar um arquivo com campos de personalização, como o sobrenome e o nome do recipient pretendido.
 
 ![](assets/s_ncs_user_wizard_email_calc_attachement_06.png)
 
@@ -115,7 +115,7 @@ Para este tipo de anexo, sigas as seguintes etapas de configuração:
    >O arquivo de origem deve ser criado no LibreOffice. A instância deve ser configurada com os pré-requisitos detalhados [nesta seção](../../installation/using/before-starting.md).
 
 1. Especifique o rótulo se necessário.
-1. Selecione **[!UICONTROL Upload file on the server]** e clique em **[!UICONTROL Update on server]** para start da transferência.
+1. Selecione **[!UICONTROL Upload file on the server]** e clique em **[!UICONTROL Update on server]** para iniciar a transferência.
 1. Você pode exibir uma pré-visualização. Para fazer isso, selecione um recipient.
 
    ![](assets/s_ncs_user_wizard_email_calc_attachement_07.png)
@@ -128,11 +128,11 @@ Para este tipo de anexo, sigas as seguintes etapas de configuração:
 
 >[!NOTE]
 >
->Para evitar problemas de desempenho, se você incluir imagens baixadas dinamicamente de um URL personalizado como anexo, cada tamanho de imagem não deve exceder 100.000 bytes por padrão. Esse limite recomendado pode ser configurado [a partir da lista das opções](../../installation/using/configuring-campaign-options.md#delivery)Campaign Classic.
+>Para evitar problemas de desempenho, se incluir imagens baixadas em tempo real de um URL personalizado como anexo, cada tamanho de imagem não deve exceder 100.000 bytes por padrão. Esse limite recomendado pode ser configurado na [ lista das opções do Campaign Classic ](../../installation/using/configuring-campaign-options.md#delivery).
 
 ### Anexo de arquivo calculado {#attach-a-calculated-file}
 
-Você pode calcular o nome do anexo durante a preparação do delivery. To do this, select the option **[!UICONTROL The file name is calculated during delivery analysis (it cannot depend on the recipient)]**.
+Você pode calcular o nome do anexo durante a preparação do delivery. Para fazer isso, selecione a opção.**[!UICONTROL The file name is calculated during delivery analysis (it cannot depend on the recipient)]**
 
 >[!NOTE]
 >
@@ -178,7 +178,7 @@ Ao selecionar o anexo, você pode escolher a opção **[!UICONTROL The file name
 
 ### Configurações do anexo {#attachment-settings}
 
-For the first two options, you can choose **[!UICONTROL Upload file on the server]** by selecting the appropriate option. The **[!UICONTROL Update the file on the server]** link lets you start uploading.
+Para as duas primeiras opções, escolha **[!UICONTROL Upload file on the server]** ao selecionar a opção apropriada. O link **[!UICONTROL Update the file on the server]** permite iniciar o upload.
 
 ![](assets/s_ncs_user_wizard_email01_137.png)
 
@@ -192,7 +192,7 @@ Para uma alteração de arquivo, uma mensagem de aviso é exibida:
 
 A guia **[!UICONTROL Advanced]** permite definir opções avançadas em arquivos anexados:
 
-* Você pode definir opções de filtro para evitar o envio do arquivo anexado a todos os recipients. The option **[!UICONTROL Enable filtering of recipients who will receive the attachment]** activates an input field used to define a recipient selection script, which must be entered in JavaScript.
+* Você pode definir opções de filtro para evitar o envio do arquivo anexado a todos os recipients. A opção **[!UICONTROL Enable filtering of recipients who will receive the attachment]** ativa um campo de entrada usado para definir um script de seleção de recipient, que deve ser inserido em JavaScript.
 * Você pode criar um script do nome do arquivo para personalizá-lo.
 
    Insira seu texto na janela e use os campos de personalização disponíveis na lista suspensa. No exemplo a seguir, o nome do arquivo é personalizado para conter a data de hoje e o nome do recipient.
