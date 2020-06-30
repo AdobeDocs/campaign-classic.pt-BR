@@ -14,50 +14,50 @@ discoiquuid: a4441820-1b3d-4bac-a6e3-1c9c14466d19
 index: y
 internal: n
 snippet: y
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: b1a961822224ab0a9551f51942a5f94cf201c8ee
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '422'
-ht-degree: 57%
+ht-degree: 100%
 
 ---
 
 
 # Sub-workflow{#sub-workflow}
 
-A atividade **[!UICONTROL Sub-workflow]** permite acionar a execução de outro workflow e recuperar o resultado. Essa atividade permite usar workflows complexos ao usar uma interface simplificada.
+A atividade **[!UICONTROL Sub-workflow]** permite acionar a execução de outro fluxo de trabalho e recuperar o resultado. Essa atividade permite usar workflows complexos ao usar uma interface simplificada.
 
 Você pode chamar vários sub-workflows em um único workflow. Os Sub-workflows são executados de forma síncrona.
 
-No exemplo abaixo, um fluxo de trabalho &quot;mestre&quot; está chamando um subfluxo de trabalho usando saltos. Para obter mais informações sobre objetos gráficos do tipo salto, consulte [esta seção](../../workflow/using/jump--start-point-and-end-point-.md).
+No exemplo abaixo, um fluxo de trabalho &quot;mestre&quot; chama um subfluxo de trabalho por meio de saltos. Para obter mais informações sobre objetos gráficos do tipo salto, consulte [esta seção](../../workflow/using/jump--start-point-and-end-point-.md).
 
-1. Crie um workflow a ser usado como um sub-workflow em outro workflow.
-1. Insert a **[!UICONTROL Jump (end point)]** activity with a priority of 1 at the beginning of the workflow. Se você tiver vários saltos do tipo &quot;ponto final&quot;, o Adobe Campaign usará o salto &quot;ponto final&quot; com o número mais baixo.
-1. Insert a **[!UICONTROL Jump (start point)]** activity with a priority of 2 at the end of the workflow. Se você tiver vários saltos do tipo &quot;ponto de start&quot;, o Adobe Campaign usará o salto &quot;ponto de start&quot; com o número mais alto.
+1. Crie um fluxo de trabalho que será usado como um subfluxo de trabalho em outro fluxo de trabalho.
+1. Insira uma atividade **[!UICONTROL Jump (end point)]** com prioridade 1 no início do fluxo de trabalho. Se você tiver vários saltos do tipo &quot;ponto final&quot;, o Adobe Campaign usará o salto &quot;ponto final&quot; com o número mais baixo.
+1. Insira uma atividade **[!UICONTROL Jump (start point)]** com prioridade 2 no fim do fluxo de trabalho. Se você tiver vários saltos do tipo &quot;ponto inicial&quot;, o Adobe Campaign usará o salto &quot;ponto inicial&quot; com o número mais alto.
 
    ![](assets/subworkflow_jumps.png)
 
    >[!NOTE]
    >
-   >If the sub-workflow activity references a workflow with several **[!UICONTROL Jump]** activities, the sub-workflow is executed between the &quot;end point&quot; type jump with the lowest number and the &quot;start point&quot; type jump with the highest number.
+   >Se a atividade do subfluxo de trabalho referenciar um fluxo de trabalho com várias atividades, **[!UICONTROL Jump]** o subfluxo de trabalho será executado entre o salto do tipo &quot;ponto final&quot; com o número mais baixo e o tipo do &quot;ponto inicial&quot; com o número mais alto.
    >
-   >Para que o subfluxo de trabalho seja executado corretamente, você deve ter apenas um salto do tipo &quot;ponto final&quot; com o número mais baixo e apenas um salto do tipo &quot;ponto de start&quot; com o número mais alto.
+   >Para que o subfluxo de trabalho seja executado corretamente, você deve ter apenas um salto do tipo &quot;ponto final&quot; com o número mais baixo e apenas um salto do tipo &quot;ponto inicial&quot; com o número mais alto.
 
 1. Complete e salve este &quot;sub-workflow&quot;.
 1. Crie um workflow principal.
 1. Insira uma atividade **[!UICONTROL Sub-workflow]** e abra-a.
-1. Selecione o workflow que deseja usar na lista suspensa **[!UICONTROL Workflow template]**.
+1. Selecione o fluxo de trabalho que deseja usar na lista suspensa **[!UICONTROL Workflow template]**.
 
    ![](assets/subworkflow_selection.png)
 
-1. Também é possível adicionar um script de configuração para alterar o workflow referenciado.
-1. Clique em **[!UICONTROL Ok]**. It will automatically create an outbound transition with the label of the **[!UICONTROL Jump (start point)]** activity from the selected workflow.
+1. Também é possível adicionar um script de configuração para alterar o fluxo de trabalho referenciado.
+1. Clique em **[!UICONTROL Ok]**. Automaticamente, ele cria uma transição de saída com o rótulo da atividade **[!UICONTROL Jump (start point)]** do fluxo de trabalho selecionado.
 
    ![](assets/subworkflow_outbound.png)
 
-1. Execute o workflow.
+1. Execute o fluxo de trabalho.
 
-Uma vez executado, o workflow chamado como sub-workflow ainda estará com o status **[!UICONTROL Being edited]**, o que significa:
+Uma vez executado, o fluxo de trabalho chamado como subfluxo de trabalho ainda estará com o status **[!UICONTROL Being edited]**, o que significa:
 
 * Você não pode clicar com o botão direito do mouse nas transições para exibir o target.
 * A contagem de públicos intermediários não pode ser exibida.
@@ -80,4 +80,4 @@ Cada evento de entrada deve especificar um target definido por esses parâmetros
 
 Esse conjunto de três valores identifica o público alvo do query. **[!UICONTROL tableName]** é o nome da tabela que registra os identificadores de target, **[!UICONTROL schema]** é o schema do público (normalmente nms:recipient) e **[!UICONTROL recCount]** é o número de elementos na tabela.
 
-* targetSchema: Esse valor é o schema da tabela de trabalho. Esse parâmetro é válido para todas as transições com **[!UICONTROL tableName]** e **[!UICONTROL schema]**.
+* targetSchema: Este valor é o schema da tabela de trabalho. Esse parâmetro é válido para todas as transições com **[!UICONTROL tableName]** e **[!UICONTROL schema]**.
