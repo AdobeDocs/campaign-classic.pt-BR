@@ -14,11 +14,11 @@ discoiquuid: 42867665-d0ca-486e-9110-91716c0d5c57
 index: y
 internal: n
 snippet: y
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 8089eb39e7326408f94b5fd6acacd8950c0e6021
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2481'
-ht-degree: 60%
+ht-degree: 100%
 
 ---
 
@@ -98,14 +98,14 @@ Um pacote de dados pode ser construído manualmente a partir de qualquer editor 
 Os pacotes podem ser exportados de três formas diferentes:
 
 * O **[!UICONTROL Package Export Wizard]** permite exportar um conjunto de objetos em um único pacote. Para obter mais informações, consulte [Exportação de um conjunto de objetos em um pacote](#exporting-a-set-of-objects-in-a-package)
-* A **single object** can be exported in a package directly by right-clicking on it and selecting **[!UICONTROL Actions > Export in a package]**.
+* Um **único objeto** pode ser exportado diretamente em um pacote ao clicar com o botão direito do mouse e depois selecionar **[!UICONTROL Actions > Export in a package]**.
 * As **definições de pacote** permitem criar uma estrutura de pacote na qual você adiciona objetos que serão exportados posteriormente em um pacote. Para obter mais informações, consulte [Gerenciamento de definições de pacote](#managing-package-definitions).
 
 Após a exportação, é possível importar o pacote e todas as entidades adicionadas para outra instância do Campaign.
 
 ### Exportação de um conjunto de objetos em um pacote {#exporting-a-set-of-objects-in-a-package}
 
-The package export wizard is accessible via the **[!UICONTROL Tools > Advanced > Export package...]** menu of the Adobe Campaign client console.
+O assistente de exportação de pacotes pode ser acessado no menu **[!UICONTROL Tools > Advanced > Export package...]** do console do cliente do Adobe Campaign.
 
 ![](assets/ncs_datapackage_typepackage.png)
 
@@ -117,7 +117,7 @@ Para os três tipos de pacotes, o assistente oferece as seguintes etapas:
 
    >[!CAUTION]
    >
-   >If you export an **[!UICONTROL Offer category]**, **[!UICONTROL Offer environment]**, **[!UICONTROL Program]** or **[!UICONTROL Plan]** type folder, don&#39;t ever select the **xtk:folder** as you may lose some data. Selecione a entidade que corresponde à pasta: **nms:offerCategory** para categorias de ofertas, **nms:offerEnv** para ambientes de ofertas, **nms:program** para programas e **nms:plan** para planos.
+   >Se exportar um tipo de pasta **[!UICONTROL Offer category]**, **[!UICONTROL Offer environment]**, **[!UICONTROL Program]** ou **[!UICONTROL Plan]**, nunca selecione a **xtk:folder**, já que alguns dados podem ser perdidos. Selecione a entidade que corresponde à pasta: **nms:offerCategory** para categorias de ofertas, **nms:offerEnv** para ambientes de ofertas, **nms:program** para programas e **nms:plan** para planos.
 
    O gerenciamento de listas permite adicionar ou excluir entidades para exportação da configuração. Clique em **[!UICONTROL Add]** para selecionar uma nova entidade.
 
@@ -245,7 +245,7 @@ As definições de pacote permitem criar uma estrutura de pacote na qual você a
 
 ### Criação de uma definição de pacote {#creating-a-package-definition}
 
-Package definitions can be accessed from the **[!UICONTROL Administration > Configuration > Package management > Package definitions]** menu.
+As definições de pacote podem ser acessadas no menu **[!UICONTROL Administration > Configuration > Package management > Package definitions]**.
 
 Para criar uma definição de pacote, clique em **[!UICONTROL New]** e preencha as informações gerais sobre a definição de pacote.
 
@@ -267,11 +267,11 @@ Na guia **[!UICONTROL Content]**, clique em **[!UICONTROL Add]** para selecionar
 
 As entidades podem ser adicionadas a uma definição de pacote diretamente da sua localização na instância. Para fazer isso, siga as etapas abaixo:
 
-1. Right-click the desired entity, then select **[!UICONTROL Actions > Export in a package]**.
+1. Clique com o botão direito do mouse na entidade desejada e depois selecione **[!UICONTROL Actions > Export in a package]**.
 
    ![](assets/packagedefinition_singleentity.png)
 
-1. Select **[!UICONTROL Add to a package definition]**, then select the package definition to which you want to add the entity.
+1. Selecione **[!UICONTROL Add to a package definition]** e depois selecione a definição de pacote à qual deseja adicionar à entidade.
 
    ![](assets/packagedefinition_packageselection.png)
 
@@ -285,9 +285,9 @@ A criação de pacote pode ser configurada na guia **[!UICONTROL Content]** de d
 
 ![](assets/packagedefinition_generationparameters.png)
 
-* **[!UICONTROL Include the definition]**: inclui a definição usada atualmente na definição do pacote.
-* **[!UICONTROL Include an installation script]**: permite que você adicione um script javascript para execução na importação do pacote. Quando selecionada, uma guia **[!UICONTROL Script]** é adicionada na tela de definição de pacote.
-* **[!UICONTROL Include default values]**: adiciona ao pacote os valores de todos os atributos das entidades.
+* **[!UICONTROL Include the definition]**: inclui a definição usada atualmente na definição de pacote.
+* **[!UICONTROL Include an installation script]**: permite adicionar um script javascript a ser executado na importação de pacotes. Quando selecionada, uma guia **[!UICONTROL Script]** é adicionada na tela de definição de pacote.
+* **[!UICONTROL Include default values]**: adiciona os valores de todos os atributos da entidade ao pacote.
 
    Essa opção não está selecionada por padrão para evitar exportações demoradas. Isso significa que os atributos das entidades com valores padrão (&#39;string vazia&#39;, &#39;0&#39; e &#39;falso&#39; se não definido de outra forma no schema) não serão adicionados ao pacote e, portanto, não serão exportados.
 
@@ -303,7 +303,7 @@ A criação de pacote pode ser configurada na guia **[!UICONTROL Content]** de d
 
 Siga as etapas abaixo para exportar um pacote de uma definição de pacote:
 
-1. Select the package definition to export, then click the **[!UICONTROL Actions]** button and select **[!UICONTROL Export the package]**.
+1. Escolha a definição de pacote que será exportada, clique no botão **[!UICONTROL Actions]** e selecione **[!UICONTROL Export the package]**.
 1. Um arquivo XML correspondente ao pacote exportado é selecionado por padrão. Ele é nomeado de acordo com o nome e o namespace da definição de pacote.
 1. Após definir o nome e o local do pacote, clique no botão **[!UICONTROL Start]** para iniciar a exportação.
 
@@ -313,7 +313,7 @@ Siga as etapas abaixo para exportar um pacote de uma definição de pacote:
 
 ### Sobre importação de pacotes {#about-package-import}
 
-The package import wizard is accessible via the main menu **[!UICONTROL Tools > Advanced > Package import...]** of the Adobe Campaign client console.
+O assistente de importação de pacotes pode ser acessado pelo menu principal **[!UICONTROL Tools > Advanced > Package import...]** do console do cliente do Adobe Campaign.
 
 É possível importar um pacote de uma exportação executada anteriormente, por exemplo, de outra instância do Adobe Campaign ou um pacote padrão, dependendo dos termos da sua licença.
 
@@ -327,7 +327,7 @@ Para importar um pacote de dados existente, selecione o arquivo XML e clique em 
 
 O conteúdo do pacote a ser importado é exibido na seção intermediária do editor.
 
-Click **[!UICONTROL Next]** and **[!UICONTROL Start]** to launch the import.
+Clique em **[!UICONTROL Next]** e em **[!UICONTROL Start]** para iniciar a importação.
 
 ![](assets/ncs_datapackage_import_2.png)
 
@@ -347,23 +347,23 @@ Esta seção descreve como organizar pacotes de dados de forma consistente duran
 
 Os pacotes podem conter diferentes tipos de configurações e elementos, filtrados ou não. Se você perder alguns elementos ou não importar elementos/pacotes na ordem correta, a configuração da plataforma poderá ser interrompida.
 
-Além disso, com várias pessoas trabalhando na mesma plataforma com vários recursos diferentes, a pasta de especificações do pacote pode rapidamente se tornar complexa.
+Além disso, com várias pessoas trabalhando na mesma plataforma com vários recursos diferentes, a pasta de especificações do pacote pode se tornar complexa rapidamente.
 
-Embora isso não seja obrigatório, esta seção oferta uma solução para ajudar a organizar e usar pacotes no Adobe Campaign para projetos de grande escala.
+Embora isso não seja obrigatório, esta seção oferece uma solução para ajudar a organizar e usar pacotes no Adobe Campaign para projetos de grande escala.
 
 <!--This solution has been used with a project involving more than 10 consultants.-->
 
-As principais limitações são as seguintes:
-* Organize os pacotes e rastreie o que foi alterado e quando
-* Se uma configuração for atualizada, minimize o risco de quebrar algo que não esteja diretamente vinculado à atualização
+As principais restrições são as seguintes:
+* Organize os pacotes e acompanhe quando e o que foi alterado
+* Se uma configuração for atualizada, minimize o risco de dividir algo que não esteja diretamente vinculado à atualização
 
 >[!NOTE]
 >
->Para obter mais informações sobre como configurar um fluxo de trabalho para exportar pacotes automaticamente, consulte [esta página](https://helpx.adobe.com/campaign/kb/export-packages-automatically.html).
+>Para obter mais informações sobre como configurar um workflow para exportar pacotes automaticamente, consulte [esta página](https://helpx.adobe.com/br/campaign/kb/export-packages-automatically.html).
 
 ### Recomendações {#data-package-recommendations}
 
-Sempre importe dentro da mesma versão da plataforma. Você deve verificar se implantou seus pacotes entre duas instâncias que têm a mesma compilação. Nunca force a importação e sempre atualize a plataforma primeiro (se a compilação for diferente).
+Sempre importe dentro da mesma versão da plataforma. Você deve verificar se implantou seus pacotes entre duas instâncias que têm a mesma build. Nunca force a importação e sempre atualize a plataforma primeiro (se a build for diferente).
 
 >[!IMPORTANT]
 >
@@ -376,12 +376,12 @@ Preste atenção ao schema e à estrutura do banco de dados. A importação do p
 
 #### Tipos de pacotes {#package-types}
 
-Start definindo diferentes tipos de pacotes. Serão usados apenas quatro tipos:
+Comece definindo diferentes tipos de pacotes. Serão usados apenas quatro tipos:
 
 **Entidades**
-* Todos os elementos específicos &quot;xtk&quot; e &quot;nms&quot; em schemas, formulários, pastas, templates do delivery etc.
+* Todos os elementos específicos &quot;xtk&quot; e &quot;nms&quot; no Adobe Campaign como schemas, formulários, pastas, templates do delivery etc.
 * Você pode considerar uma entidade como um elemento &quot;admin&quot; e &quot;platform&quot;.
-* Você não deve incluir mais de uma entidade em um pacote ao carregá-lo em uma instância de Campanha.
+* Você não deve incluir mais de uma entidade em um pacote ao carregá-lo em uma instância do Campaign.
 
 <!--Nothing “works” alone. An entity package does not have a specific role or objective.-->
 
@@ -400,7 +400,7 @@ Este pacote não é obrigatório. Às vezes, é útil criar um tipo específico 
 
 **Atualizações**
 
-Depois de configurado, um recurso pode ser exportado para outro ambiente. Por exemplo, o pacote pode ser exportado de um ambiente dev para um ambiente de teste. Neste teste, um defeito é revelado. Primeiro, ele precisa ser consertado no ambiente dev. Em seguida, o sistema transdérmico deve ser aplicado na plataforma de teste.
+Depois de configurado, um recurso pode ser exportado para outro ambiente. Por exemplo, o pacote pode ser exportado de um ambiente dev para um ambiente de teste. Neste teste, um defeito é revelado. Primeiro, ele precisa ser corrigido no ambiente dev. Em seguida, o patch deve ser aplicado na plataforma de teste.
 
 A primeira solução seria exportar todo o recurso novamente. Mas, para evitar qualquer risco (atualizar elementos indesejados), é mais seguro dispor de um pacote que contenha apenas a correção.
 
@@ -410,10 +410,10 @@ Uma atualização não pode ser apenas uma correção, mas também um novo eleme
 
 ### Como nomear convenções {#data-package-naming}
 
-Agora que os tipos são definidos, devemos especificar uma convenção de nomenclatura. O Adobe Campaign não permite criar subpastas para especificações de pacotes, o que significa que os números são a melhor solução para se manter organizado. Nomes de pacote de prefixos de números. Você pode usar a seguinte convenção:
+Agora que os tipos estão definidos, devemos especificar uma convenção de nomenclatura. O Adobe Campaign não permite criar subpastas para especificações de pacotes, o que significa que os números são a melhor solução para se manter organizado. Nomes de pacote de prefixos de números. Você pode usar a seguinte convenção:
 
 * Entidade: de 1 a 99
-* Recurso: de 100 a 1999
+* Recurso: de 100 a 199
 * Campanha: de 200 a 299
 * Atualização: de 5000 a 5999
 
@@ -446,15 +446,15 @@ O último ponto diz respeito à numeração do pacote de atualização. É o nú
 * 5200 para atualizar todas as campanhas
 * 5101 para atualizar o recurso 101
 
-O pacote de atualização deve conter apenas uma entidade específica, para ser facilmente reutilizável. Para dividi-los, adicione um novo número (start de 1). Não há regras de pedido específicas para esses pacotes. Para entender melhor, imagine que temos um recurso 101, uma aplicação social:
+O pacote de atualização deve conter apenas uma entidade específica para ser facilmente reutilizável. Para dividi-los, adicione um novo número (comece por 1). Não há regras de pedido específicas para esses pacotes. Para entender melhor, imagine que temos um recurso 101, um aplicativo social:
 * Ele contém um webApp e uma conta externa.
-   * O rótulo da embalagem é: 101 - Aplicativo social (aplicativo social).
+   * O rótulo do pacote é: 101 - Aplicativo social (socialApplication).
 * Há um defeito no webApp.
    * O wepApp está corrigido.
-   * É necessário criar um pacote de correção com o seguinte nome: 5101 - 1 - Aplicativo social web (socialApplication_webApp).
-* É necessário adicionar uma nova conta externa ao recurso social.
-   * Conta externa é criada.
-   * O novo pacote é: 5101 - 2 - conta externa do aplicativo social (socialApplication_extAccount).
+   * É necessário criar um pacote de correção com o seguinte nome: 5101 - 1 - Aplicativo social webApp (socialApplication_webApp).
+* É necessário adicionar uma nova conta externa para o recurso social.
+   * A conta externa é criada.
+   * O novo pacote é: 5101 - 2 - Conta externa do aplicativo social (socialApplication_extAccount).
    * Paralelamente, o pacote 101 é atualizado para ser adicionado à conta externa, mas não é implantado.
       ![](assets/ncs_datapackage_best-practices-1.png)
 
@@ -464,7 +464,7 @@ Ao atualizar um pacote, você deve sempre colocar um comentário no campo de des
 
 ![](assets/ncs_datapackage_best-practices-2.png)
 
-Você também deve datar o comentário. Relate sempre seu comentário em um pacote de atualização ao &quot;pai&quot; (pacote sem o prefixo 5).
+Você também deve datar o comentário. Relate sempre seu comentário em um pacote de atualização ao &quot;principal&quot; (pacote sem o prefixo 5).
 
 >[!IMPORTANT]
 >
