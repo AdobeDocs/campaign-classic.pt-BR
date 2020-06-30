@@ -14,11 +14,11 @@ discoiquuid: 8590cc75-11c8-450d-90e8-56744e12ac70
 index: y
 internal: n
 snippet: y
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: b1a961822224ab0a9551f51942a5f94cf201c8ee
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '401'
-ht-degree: 75%
+ht-degree: 100%
 
 ---
 
@@ -33,23 +33,23 @@ A atividade de **download da Web** inicia o download de um arquivo em uma URL ex
 
    Para especificar o arquivo a ser baixado, você pode inserir a URL do arquivo, usar a conta HTTP externa onde o arquivo está armazenado ou carregar o arquivo por meio de uma instância do Adobe Campaign. Os parâmetros disponíveis são detalhados abaixo:
 
-   * Para inserir diretamente a URL do arquivo a ser baixado, selecione a opção **[!UICONTROL Explicit URL]** e especifique a URL no campo apropriado. Esta URL pode ser construída com dados variáveis.
+   * Para inserir diretamente o URL do arquivo a ser baixado, selecione a opção **[!UICONTROL Explicit URL]** e especifique o URL no campo apropriado. Este URL pode ser construído com dados variáveis.
 
       ![](assets/download_web_edit.png)
 
    * Para usar uma **[!UICONTROL External account]**, selecione a conta na lista suspensa e especifique o arquivo a ser baixado.
 
-      External accounts are configured from the **[!UICONTROL Administration > Platform > External accounts]** node of the Adobe Campaign tree. Os parâmetros da conta podem ser editados por meio do ícone **[!UICONTROL Edit link]**.
+      Contas externas são configuradas no nó **[!UICONTROL Administration > Platform > External accounts]** da árvore do Adobe Campaign. Os parâmetros da conta podem ser editados por meio do ícone **[!UICONTROL Edit link]**.
 
       ![](assets/download_web_edit_external.png)
 
-   * To download the file from the Adobe Campaign instance, select the **[!UICONTROL Adobe Campaign Instance]** option.
+   * Para baixar o arquivo da instância do Adobe Campaign, selecione a opção **[!UICONTROL Adobe Campaign Instance]**.
 
       ![](assets/download_web_edit_instance.png)
 
 1. **Historização de arquivo**
 
-   The **[!UICONTROL File historization settings...]** link lets you specify the file storage directory and the purge frequency of this directory.
+   O link **[!UICONTROL File historization settings...]** possibilita especificar o diretório de armazenamento de arquivos e a frequência de limpeza desse diretório.
 
    ![](assets/download_web_edit_hist.png)
 
@@ -57,21 +57,21 @@ A atividade de **download da Web** inicia o download de um arquivo em uma URL ex
 
    * **[!UICONTROL Use a default storage directory]**: o arquivo é sempre movido antes de ser processado. Se essa opção estiver marcada, o arquivo será movido para o diretório de armazenamento padrão (o diretório **vars** da pasta de instalação do Adobe Campaign). Para especificar um diretório de armazenamento, desmarque a caixa e digite seu caminho no campo **[!UICONTROL Storage directory]**
    * **[!UICONTROL Number of files]**: digite o número máximo de arquivos a serem mantidos no diretório de armazenamento.
-   * **[!UICONTROL Maximum size (in Mb)]**: digite a capacidade máxima do diretório do armazenamento (em megabytes).
+   * **[!UICONTROL Maximum size (in Mb)]**: digite a capacidade máxima do diretório de armazenamento (em megabytes).
    Todo arquivo é mantido por 24 horas antes de ser sujeito às regras de limpeza definidas. A limpeza ocorre antes do início da atividade e, portanto, não leva em consideração o arquivo do workflow em andamento.
 
    Os arquivos são excluídos em função de sua data de criação (mais antiga a mais recente). Os arquivos mais antigos são limpos até que ambas as regras de limpeza sejam verificadas. Portanto, se um limite 100 arquivos for definido, isso significa que o diretório de armazenamento sempre conterá os 100 arquivos mais recentes antes do início do workflow, bem como aqueles que estão sendo processados no workflow em andamento.
 
-   If you no longer want to set a limit for the **[!UICONTROL Number of files]** and **[!UICONTROL Maximum size (in Mb)]** options, enter 0 as a value.
+   Se você não quiser mais definir um limite para as opções **[!UICONTROL Number of files]** e **[!UICONTROL Maximum size (in Mb)]**, digite 0 como um valor.
 
 1. **Parâmetros avançados**
 
-   The **[!UICONTROL Advanced parameters...]** link lets you specify the additional options shown below:
+   O link **[!UICONTROL Advanced parameters...]** possibilita especificar as opções adicionais exibidas abaixo:
 
    ![](assets/download_web_edit_advanced.png)
 
-   The **[!UICONTROL Process errors]** option is detailed in [Processing errors](../../workflow/using/monitoring-workflow-execution.md#processing-errors).
+   A opção **[!UICONTROL Process errors]** é detalhada em [Processamento de erros](../../workflow/using/monitoring-workflow-execution.md#processing-errors).
 
 ## Parâmetros de output {#output-parameters}
 
-* nome do arquivo: Nome completo do arquivo baixado.
+* filename: nome completo do arquivo baixado.
