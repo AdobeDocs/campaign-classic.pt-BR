@@ -14,11 +14,11 @@ discoiquuid: 84f9dbad-365f-405d-88a0-14171fbb805f
 index: y
 internal: n
 snippet: y
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: a62e4d072573f7ed1b77f755eb57838c70745592
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '366'
-ht-degree: 93%
+ht-degree: 100%
 
 ---
 
@@ -33,7 +33,7 @@ Vá para a guia **Campaigns** e selecione o menu **[!UICONTROL Web Applications]
 
 >[!NOTE]
 >
->Todas as maneiras protegem as páginas que podem conter informações pessoais. Consulte a lista [de verificação](https://helpx.adobe.com/campaign/kb/acc-security.html#privacy)Segurança e Privacidade.
+>Sempre proteja as páginas que podem conter informações pessoais. Consulte a [lista de verificação de segurança e privacidade.](https://helpx.adobe.com/br/campaign/kb/acc-security.html#privacy)
 
 Esse template determina o tipo de aplicação web. É possível criar:
 
