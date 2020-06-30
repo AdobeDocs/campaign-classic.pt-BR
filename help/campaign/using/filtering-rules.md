@@ -18,7 +18,7 @@ translation-type: tm+mt
 source-git-commit: 9784e0db6f1bef5abdf93d3517da04fe1ba69e7d
 workflow-type: tm+mt
 source-wordcount: '507'
-ht-degree: 85%
+ht-degree: 88%
 
 ---
 
@@ -43,7 +43,7 @@ Para definir esse filtro, aplique as seguintes etapas:
 
    ![](assets/campaign_opt_create_filter_02.png)
 
-1. Crie o filtro usando o **[!UICONTROL Edit the query from the targeting dimension...]** link.
+1. Crie o filtro usando o link **[!UICONTROL Edit the query from the targeting dimension...]**.
 
    ![](assets/campaign_opt_create_filter_03.png)
 
@@ -67,7 +67,7 @@ Nesse caso, mesmo que a regra esteja vinculada a todos os deliveries, ela só se
 
 >[!NOTE]
 >
->As regras de filtragem e tipologia podem ser usadas em um workflow, na atividade **[!UICONTROL Delivery outline]**. Para obter mais informações, consulte [esta seção](../../workflow/using/delivery-outline.md).
+>As regras de filtragem e tipologia podem ser usadas em um fluxo de trabalho, na atividade **[!UICONTROL Delivery outline]**. Para obter mais informações, consulte [esta seção](../../workflow/using/delivery-outline.md).
 
 ## Como criar e usar uma tipologia de filtragem {#creating-and-using-a-filtering-typology}
 
@@ -94,7 +94,7 @@ Você também poderá vincular regras de filtragem diretamente por meio desta gu
 
 ## Regras padrão de exclusão de entrega {#default-deliverability-exclusion-rules}
 
-Two filtering rules are available by default: **[!UICONTROL Exclude addresses]** ( **[!UICONTROL addressExclusions]** ) and **[!UICONTROL Exclude domains]** ( **[!UICONTROL domainExclusions]** ). Durante a análise de e-mail, essas regras comparam os endereços de e-mail do recipient com os endereços proibidos ou nomes de domínio contidos em uma lista de supressão global criptografada gerenciada na instância de entrega. Se houver algum positivo, a mensagem não será enviada para esse recipient.
+Duas regras de filtragem estão disponíveis por padrão: **[!UICONTROL Exclude addresses]** ( **[!UICONTROL addressExclusions]** ) e **[!UICONTROL Exclude domains]** ( **[!UICONTROL domainExclusions]** ). Durante a análise de e-mail, essas regras comparam os endereços de e-mail do recipient com os endereços proibidos ou nomes de domínio contidos em uma lista de supressão global criptografada gerenciada na instância de entrega. Se houver algum positivo, a mensagem não será enviada para esse recipient.
 
 Isso evita ser adicionado à lista de blocos devido a atividades mal-intencionadas, especialmente o uso de uma armadilha. Por exemplo, se um Spamtrapping for usado para assinar por meio de um de seus formulários da Web, um email de confirmação será automaticamente enviado para esse Spamtrapping e isso resultará na adição automática do endereço à lista de blocos.
 
