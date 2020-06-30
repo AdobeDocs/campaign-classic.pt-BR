@@ -18,7 +18,7 @@ translation-type: tm+mt
 source-git-commit: f99e3a4f69cb2b0122f2f6957d419d6b95ad54b1
 workflow-type: tm+mt
 source-wordcount: '377'
-ht-degree: 92%
+ht-degree: 93%
 
 ---
 
@@ -55,7 +55,7 @@ Veja a seguir uma lista das RBLs mais utilizadas. Para obter uma lista mais abra
 
 * **SURBL**
 
-   Refer to [http://www.surbl.org/](http://www.surbl.org/)
+   Consulte [http://www.surbl.org/](http://www.surbl.org/)
 
    SURBL identifica os sites que aparecem regularmente como spam. Se o seu domínio aparecer nessa lista, ele poderá afetar significativamente seu deliverability. Você deve informar os serviços deliverability e o suporte ao Adobe Campaign imediatamente.
 
