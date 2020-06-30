@@ -14,11 +14,11 @@ discoiquuid: 9b937d4d-55ae-4bd4-8dc6-eea42f15b69f
 index: y
 internal: n
 snippet: y
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: b1a961822224ab0a9551f51942a5f94cf201c8ee
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '520'
-ht-degree: 94%
+ht-degree: 100%
 
 ---
 
@@ -77,12 +77,12 @@ A primeira guia da atividade **[!UICONTROL File collector]** permite selecionar 
 
 1. **Historização**
 
-   Refer to the **[!UICONTROL File historization]** step here: [Web download](../../workflow/using/web-download.md).
+   Consulte a etapa **[!UICONTROL File historization]** aqui: [Download da Web](../../workflow/using/web-download.md).
 
-A ordem de processamento do arquivo não pode ser determinada. To process a set of files sequentially, use the **[!UICONTROL Stop as soon as a file has been processed]** option and create a loop. Nesse caso, os arquivos serão processados em ordem alfabética. The **[!UICONTROL Process file nonexistence]** option lets you finish the iteration.
+A ordem de processamento do arquivo não pode ser determinada. Para processar um conjunto de arquivos sequencialmente, use a opção **[!UICONTROL Stop as soon as a file has been processed]** e crie um loop. Nesse caso, os arquivos serão processados em ordem alfabética. A opção **[!UICONTROL Process file nonexistence]** permite concluir a iteração.
 
 ![](assets/file_collect_loop.png)
 
-## Parâmetros de output {#output-parameters}
+## Parâmetros de saída {#output-parameters}
 
-* nome do arquivo: Nome do arquivo completo. Este é o nome de arquivo depois que ele foi movido para o diretório de historização. Portanto, o caminho é diferente, mas o nome também é diferente se outro arquivo com o mesmo nome já existir no diretório. A extensão é mantida.
+* filename: nome completo do arquivo. Este é o nome de arquivo depois que ele foi movido para o diretório de historização. Portanto, o caminho é diferente, mas o nome também é diferente se outro arquivo com o mesmo nome já existir no diretório. A extensão é mantida.
