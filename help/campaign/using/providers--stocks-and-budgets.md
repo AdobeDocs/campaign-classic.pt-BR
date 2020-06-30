@@ -14,11 +14,11 @@ discoiquuid: d4627141-cef1-4ddb-ad6a-5dc217b9fa96
 index: y
 internal: n
 snippet: y
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: e059fc9e2bfade30454601f31990c3ec14b8a847
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1906'
-ht-degree: 93%
+ht-degree: 100%
 
 ---
 
@@ -31,7 +31,7 @@ O Adobe Campaign permite que você defina provedores de serviços que estarão e
 
 Cada provedor de serviços é salvo em um arquivo com detalhes de contato, templates de serviço e tarefas relacionadas.
 
-Service providers are configured in the **[!UICONTROL Administration > Campaign management]** node of the tree.
+Os provedores de serviços são configurados no nó **[!UICONTROL Administration > Campaign management]** da árvore.
 
 As tarefas realizadas durante as entregas são realizadas por provedores de serviços, especialmente para mala direta e canais móveis. Esses provedores de serviços podem, por exemplo, estar envolvidos na impressão ou distribuição de mensagens. Essas tarefas envolvem configurações e custos que são específicos para cada provedor de serviços. A configuração dos provedores de serviços envolve quatro estágios:
 
@@ -80,17 +80,17 @@ Para criar um template de serviço e definir seu conteúdo, aplique as seguintes
 
    ![](assets/s_ncs_user_supplier_node_create_template.png)
 
-1. Crie as categorias de custo para cada tipo de processo (delivery por mala direta/e-mail/etc. ou tarefa). Para fazer isso, clique na guia **[!UICONTROL Cost categories]** e, em seguida, no botão **[!UICONTROL Add]** e insira os parâmetros de cada categoria de custo.
+1. Crie as categorias de custo para cada tipo de processo (delivery por mala direta/email/etc. ou tarefa). Para fazer isso, clique na guia **[!UICONTROL Cost categories]** e, em seguida, no botão **[!UICONTROL Add]** e insira os parâmetros de cada categoria de custo.
 
    ![](assets/s_ncs_user_supplier_node_03.png)
 
-   * Enter a label for this cost category and select the type of process concerned: Delivery by **[!UICONTROL Direct mail]**, **[!UICONTROL E-mail]**, **[!UICONTROL Mobile]**, **[!UICONTROL Telephone]** or **[!UICONTROL Task]**.
+   * Insira um rótulo para esta categoria de custo e selecione o tipo de processo em questão: delivery por **[!UICONTROL Direct mail]**, **[!UICONTROL E-mail]**, **[!UICONTROL Mobile]**, **[!UICONTROL Telephone]** ou **[!UICONTROL Task]**.
    * Clique no botão **[!UICONTROL Add]** para definir os tipos de custo associados a esta categoria.
    * Se necessário, associada a uma linha de estoque com cada tipo de custo para que as quantidades usadas sejam relacionadas automaticamente aos estoques existentes.
 
       >[!NOTE]
       >
-      >The stock lines are defined in the **[!UICONTROL Stock management]** node.\
+      >As linhas de estoque são definidas no nó **[!UICONTROL Stock management]**.\
       >Para obter mais informações, consulte [Estoque e gerenciamento de pedidos](#stock-and-order-management).
 
 1. Você pode pré-selecionar um valor para essa categoria de custo, que será oferecida por padrão nas categorias de custo do provedor de serviços (em vez de em branco). Para fazer isso, selecione a opção na coluna **[!UICONTROL Selected]** referente ao tipo de categoria em questão:
@@ -119,7 +119,7 @@ Clique na guia **[!UICONTROL Cost structure]** para configurar o cálculo de cus
 
    Essa fórmula pode ser corrigida (para qualquer número de mensagens) ou calculadas de acordo com o número de mensagens.
 
-   When it depends on the number of messages, the cost calculation structure can be **[!UICONTROL Linear]**, **[!UICONTROL Linear by threshold]**, or **[!UICONTROL Constant by threshold]**.
+   Quando depender do número de mensagens, a estrutura de cálculo de custos pode ser **[!UICONTROL Linear]**, **[!UICONTROL Linear by threshold]** ou **[!UICONTROL Constant by threshold]**.
 
 #### Estrutura linear {#linear-structure}
 
@@ -143,7 +143,7 @@ Para adicionar um limite, clique no botão **[!UICONTROL Add]** à direita da li
 
 #### Estrutura constante por limite {#constant-structure-by-threshold}
 
-Finalmente, você pode configurar um cálculo de custo de acordo com o número total de mensagens. To do this, select a **[!UICONTROL Constant by threshold]** calculation structure. Por exemplo, o custo será definido em uma quantidade fixa de 12,00 para 1 a 100 mensagens, de 100,00 para um delivery de 101 a 1.000 mensagens e de 500,00 para qualquer delivery acima de 1.000 mensagens, independentemente do número total.
+Finalmente, você pode configurar um cálculo de custo de acordo com o número total de mensagens. Para fazer isso, selecione uma estrutura de cálculo **[!UICONTROL Constant by threshold]**. Por exemplo, o custo será definido em uma quantidade fixa de 12,00 para 1 a 100 mensagens, de 100,00 para um delivery de 101 a 1.000 mensagens e de 500,00 para qualquer delivery acima de 1.000 mensagens, independentemente do número total.
 
 ![](assets/s_ncs_user_supplier_cost_structure_calc_04.png)
 
@@ -161,7 +161,7 @@ Para fazer isso, clique na guia **[!UICONTROL Processes]** para configurar o env
 
 * A seção **[!UICONTROL Notification e-mail]** permite especificar o modelo para notificar os provedores de serviço depois que os arquivos forem enviados. Selecione o template usado para criar a mensagem de alerta e o grupo de recipients.
 
-   By default, delivery templates for notification messages are saved in the **[!UICONTROL Administration > Campaign management > Technical delivery templates]** node, which is accessible from the general view.
+   Por padrão, os modelos de delivery para mensagens de notificação são salvos no nó **[!UICONTROL Administration > Campaign management > Technical delivery templates]**, que é acessível na visualização geral.
 
 * A seção **[!UICONTROL Post-processing]** permite que você selecione o workflow a ser iniciado após a aprovação do delivery. Se um template de workflow for inserido, uma instância de workflow será criada automaticamente e será iniciada assim que a aprovação entrar em vigor. Esse workflow pode enviar o arquivo de extração para um provedor de serviços externos para processamento, por exemplo.
 
@@ -173,13 +173,13 @@ Quando um serviço é selecionado, as classes de custo correspondentes ao tipo d
 
 >[!NOTE]
 >
->Se nenhuma categoria de custo for exibida quando um serviço for selecionado, significa que nenhuma categoria de custo foi definida para esse tipo de processo. Por exemplo, para um delivery de , se nenhuma categoria de custo do tipo **[!UICONTROL E-mail]** Email tiver sido definida, nenhuma categoria será exibida, e a seleção do serviço não terá efeito.
+>Se nenhuma categoria de custo for exibida quando um serviço for selecionado, significa que nenhuma categoria de custo foi definida para esse tipo de processo. Por exemplo, para um delivery de email, se nenhuma categoria de custo do tipo **[!UICONTROL E-mail]** tiver sido definida, nenhuma categoria será exibida, e a seleção do serviço não terá efeito.
 
 * Para um delivery de mala direta, você pode selecionar o serviço na janela de configuração.
 
    ![](assets/s_ncs_user_supplier_mail_delivery_select.png)
 
-* Para delivery em canais móveis ou telefone, o mesmo modo de seleção se aplica.
+* Para uma entrega em canais móveis ou telefone, é possível aplicar o mesmo modo de seleção.
 * Para um delivery de email, o serviço é selecionado na guia **[!UICONTROL Advanced]** nas propriedades do delivery, como no exemplo a seguir:
 
    ![](assets/s_ncs_user_supplier_email_delivery_select.png)
@@ -214,7 +214,7 @@ O procedimento para configurar o estoque e o gerenciamento de pedidos no Adobe C
 
 ### Gerenciamento de estoque {#stock-management}
 
-O Adobe Campaign pode alertar um grupo de operadores se o estoque tiver executado ou atingir um limite mínimo. Stock levels are accessible via the **[!UICONTROL Stocks]** link of the **[!UICONTROL Campaigns]** universe via the **[!UICONTROL Other choices]** link of the navigation area.
+O Adobe Campaign pode alertar um grupo de operadores se o estoque tiver executado ou atingir um limite mínimo. Os níveis de estoque são acessíveis por meio do link **[!UICONTROL Stocks]** do universo **[!UICONTROL Campaigns]** através do link **[!UICONTROL Other choices]** da área de navegação.
 
 ![](assets/s_ncs_user_stocks_view.png)
 
@@ -245,7 +245,7 @@ Clique no botão **[!UICONTROL Create]** para definir os parâmetros de estoque.
 
 ![](assets/s_ncs_user_stocks_new_line.png)
 
-* Indique a quantidade inicialmente em estoque no campo **[!UICONTROL Initial stock]**. The **[!UICONTROL Consumed]** and **[!UICONTROL In stock]** fields are calculated automatically and updated as campaigns progress.
+* Indique a quantidade inicialmente em estoque no campo **[!UICONTROL Initial stock]**. Os campos **[!UICONTROL Consumed]** e **[!UICONTROL In stock]** são calculados automaticamente e atualizados conforme as campanhas avançam.
 
    ![](assets/s_ncs_user_stocks_create_line.png)
 
