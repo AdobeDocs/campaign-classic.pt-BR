@@ -14,11 +14,11 @@ discoiquuid: 345af5c2-c852-4086-8ed0-ff3e7e402e04
 index: y
 internal: n
 snippet: y
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 5847107a459bf47f34e4994c3521266bb174d8cb
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '832'
-ht-degree: 94%
+ht-degree: 100%
 
 ---
 
@@ -73,7 +73,7 @@ Comece criando um novo delivery.
    >
    >Os tipos de notificação **[!UICONTROL Badge]** e **[!UICONTROL Alert and badge]** permitem modificar o valor da notificação (o número acima do logotipo do aplicativo móvel). Para atualizar a notificação, basta inserir 0 como valor. Se o campo estiver vazio, o valor da notificação não será alterado.
 
-1. Clique no **[!UICONTROL Insert emoticon]** ícone para inserir emoticons à sua notificação por push. Para personalizar a lista do emoticon, consulte [personalização da lista do emoticon](../../delivery/using/defining-interactive-content.md)
+1. Clique no ícone **[!UICONTROL Insert emoticon]** para inserir emoticons à notificação via push. Para personalizar a lista de emoticons, consulte [personalização da lista de emoticons](../../delivery/using/defining-interactive-content.md)
 
 1. O **[!UICONTROL Action button]** permite definir um rótulo para o botão de ação que aparece nas notificações de alerta (campo **action_loc_key** da carga). Se o aplicativo iOS gerencia cadeias de caracteres localizáveis (**Localizable.strings**), digite a chave correspondente nesse campo. Se o aplicativo não gerencia o texto localizável, insira o rótulo que você deseja visualizar no botão de ação. Para mais informações sobre strings localizáveis, consulte a [Apple documentation](https://developer.apple.com/library/archive/documentation/NetworkingInternet/Conceptual/RemoteNotificationsPG/CreatingtheNotificationPayload.html#//apple_ref/doc/uid/TP40008194-CH10-SW1) .
 1. No campo **[!UICONTROL Play a sound]**, selecione o som a ser reproduzido pelo terminal móvel quando a notificação for recebida.
@@ -124,7 +124,7 @@ Após enviar as mensagens, você pode monitorar e rastrear seus deliveries. Para
 
    ![](assets/nmac_delivery_android_4.png)
 
-1. Clique no **[!UICONTROL Insert emoticon]** ícone para inserir emoticons à sua notificação por push. Para personalizar a lista do emoticon, consulte [personalização da lista do emoticon](../../delivery/using/defining-interactive-content.md)
+1. Clique no ícone **[!UICONTROL Insert emoticon]** para inserir emoticons à notificação via push. Para personalizar a lista de emoticons, consulte [personalização da lista do emoticon](../../delivery/using/defining-interactive-content.md)
 
 1. No campo **[!UICONTROL Application variables]**, insira o valor de cada variável. As variáveis do aplicativo permitem definir o comportamento de notificação: por exemplo, é possível configurar uma tela de aplicativo específica para ser exibida quando o usuário ativar a notificação.
 
