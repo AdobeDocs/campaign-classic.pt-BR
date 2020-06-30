@@ -14,8 +14,11 @@ discoiquuid: c7c67ee5-ad60-420f-b597-08c388049529
 index: y
 internal: n
 snippet: y
-translation-type: ht
-source-git-commit: 963aaa81971a8883b944bfcf4d1a00d729627916
+translation-type: tm+mt
+source-git-commit: 5d67ab5bbc44b81c65605ae9132cf5a8356aa814
+workflow-type: tm+mt
+source-wordcount: '583'
+ht-degree: 100%
 
 ---
 
@@ -40,7 +43,7 @@ Saiba mais sobre o Adobe Campaign verificando os seguintes casos de uso e exempl
 * [Crie um formulário de assinatura com aceitação dupla](../../web/using/use-cases--web-forms.md#create-a-subscription--form-with-double-opt-in): saiba como enviar uma solicitação de confirmação de assinatura para criar uma aceitação dupla e garantir que o destinatário tenha assinado intencionalmente.
 * [Criação de uma remessa de e-mail](../../web/using/use-case--creating-an-email-delivery.md): saiba como criar uma remessa de e-mail usando o Editor de Conteúdo Digital.
 * [Criação de visões gerais](../../web/using/use-cases--creating-overviews.md): crie aplicativos do tipo visão geral para exibir todos os aplicativos Web no banco de dados.
-* [Casos de uso do fluxo de trabalho](../../workflow/using/using-the-local-approval-activity.md): descubra maneiras diferentes de usar fluxos de trabalho por meio desses casos de uso.
+* [Casos de uso do fluxo de trabalho](../../workflow/using/about-workflow-use-cases.md): descubra maneiras diferentes de usar fluxos de trabalho por meio desses casos de uso.
 
 ## Vídeos explicativos {#how-to-videos}
 
