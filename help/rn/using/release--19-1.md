@@ -14,11 +14,11 @@ discoiquuid: 5df34f55-135a-4ea8-afc2-f9427ce5ae7b
 index: y
 internal: n
 snippet: y
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 3d6c304aaa0b3e6ba1156f1a65e93f5c284b0c0a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2848'
-ht-degree: 93%
+ht-degree: 100%
 
 ---
 
@@ -77,15 +77,15 @@ _13 de agosto de 2019_
 
 ## Versão 19.1.4 - Build 9032{#release-19-1-4-build-9032}
 
-![](assets/do-not-localize/green_2.png) **22 de junho de 2020**: nova compilação (9032@800be2e) que inclui as seguintes correções:
+![](assets/do-not-localize/green_2.png) **22 de junho de 2020**: nova build (9032@800be2e) que inclui as seguintes correções:
 
-* O conector HTTP2 do iOS foi aprimorado (atualizações de terceiros e gerenciamento de erros). (25904, NEO-, NEO-25903, NEO-25799)
+* O conector HTTP2 para iOS foi aprimorado (atualizações de terceiros e gerenciamento de erros). (25904, NEO-, NEO-25903, NEO-25799)
 
 As seguintes correções estão relacionadas ao mecanismo de segurança do link de rastreamento:
 
-* Correção de um problema que impedia que o rastreamento de &quot;cliques de notificação&quot; funcionasse (notificações por push do iOS e do Android). (NEO-25965)
-* Correção de um problema que impedia a abertura/clique de URLs de rastreamento ao usar determinadas versões herdadas do Outlook.  (NEO-25688)
-* Correção de um problema que impedia que o rastreamento de URLs usando fragmentos em parâmetros de personalização (tags de âncora com sinal de número) funcionasse. (NEO-25774)
+* Correção de um problema que impedia o funcionamento do rastreamento de &quot;cliques de notificação&quot; (notificações por push de iOS e Android). (NEO-25965)
+* Correção de um problema que poderia impedir a abertura/clique de URLs de rastreamento ao usar determinadas versões herdadas do Outlook.  (NEO-25688)
+* Correção de um problema que impedia o funcionamento do rastreamento de URLs usando fragmentos em parâmetros de personalização (tags de âncora com sinal de hashtag). (NEO-25774)
 * Correção de um problema com o serviço anti-phishing. (NEO-25283)
 * Correção de um problema de rastreamento ao usar fórmulas de rastreamento personalizadas específicas. (NEO-25277)
 
@@ -95,7 +95,7 @@ As seguintes correções estão relacionadas ao mecanismo de segurança do link 
 
 >[!CAUTION]
 >
->Se tiver problemas com notificações por push usando links de rastreamento ou delivery usando tags de âncora, recomendamos que você desative o novo mecanismo de assinatura para rastrear links. O procedimento está detalhado nesta [página](https://helpx.adobe.com/campaign/kb/acc-security.html#signature-mechanism)
+>Se tiver problemas com notificações por push usando links de rastreamento ou delivery usando tags de âncora, recomendamos desativar o novo mecanismo de assinatura para links de rastreamento. O procedimento está detalhado nesta [página](https://helpx.adobe.com/br/campaign/kb/acc-security.html#signature-mechanism)
 
 * Correção de um problema que impedia a exibição de imagens na entrega de linha. (NEO-23207)
 * Correção de um problema com a atividade **Transferência de Arquivo**, que impedia que a autenticação com a chave SFTP funcionasse no Debian 9. (NEO-23183)
@@ -173,7 +173,7 @@ _30 de maio de 2019_
  <tbody> 
   <tr> 
    <td> Painel de controle<br /> </td> 
-   <td> <p>Para aumentar a eficiência do seu trabalho como usuário administrador, gerencie as configurações dos servidores SFTP monitorando o armazenamento, adicione endereços IP para permitir a lista e instale chaves SSH para cada instância. Observe que o Painel de Controle está disponível apenas para clientes hospedados no AWS a partir de hoje (<a href="https://experiencecloud.adobe.com/campaign/controlpanel/">login através da Experience Cloud hoje</a>).</p> <p>Para obter mais informações, consulte a <a href="https://docs.adobe.com/content/help/pt-BR/control-panel/using/control-panel-home.translate.html">documentação detalhada</a> e o <a href="https://docs.adobe.com/content/help/en/campaign-learn/campaign-classic-tutorials/administrating/control-panel-acc/control-panel-overview.html">vídeo de instruções</a>. </p><p>Observação: não é necessário atualizar para a build mais recente do Campaign para acessar o Painel de Controle.</p> </td> 
+   <td> <p>Para aumentar a eficiência em seu trabalho como um usuário administrador, gerencie as configurações dos servidores SFTP monitorando o armazenamento, inclua endereços IP à lista de permissões e instale chaves SSH para cada instância. Observe que o Painel de Controle está disponível apenas para clientes hospedados no AWS a partir de hoje (<a href="https://experiencecloud.adobe.com/campaign/controlpanel/">login através da Experience Cloud hoje</a>).</p> <p>Para obter mais informações, consulte a <a href="https://docs.adobe.com/content/help/pt-BR/control-panel/using/control-panel-home.translate.html">documentação detalhada</a> e o <a href="https://docs.adobe.com/content/help/en/campaign-learn/campaign-classic-tutorials/administrating/control-panel-acc/control-panel-overview.html">vídeo de instruções</a>. </p><p>Observação: não é necessário atualizar para a build mais recente do Campaign para acessar o Painel de Controle.</p> </td> 
   </tr> 
     <tr> 
    <td> Trilha de auditoria<br /> </td> 
