@@ -4,11 +4,11 @@ user-guide-title: Ajuda do Adobe Campaign Classic
 index: y
 product: adobe campaign
 sub-product: Adobe Campaign Classic
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 5d67ab5bbc44b81c65605ae9132cf5a8356aa814
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2126'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -161,7 +161,7 @@ ht-degree: 98%
       + [Renderização da caixa de entrada](delivery/using/inbox-rendering.md)
       + [SpamAssassin](delivery/using/spamassassin.md)
       + [Práticas recomendadas de reengajamento](delivery/using/re-engagement-best-practices.md)
-      + [Bloquear bancos de dados de lista](delivery/using/block-list-databases.md)
+      + [Banco de dados da lista de bloqueios](delivery/using/block-list-databases.md)
       + [Solução de problemas](delivery/using/deliverability-faq.md)
    + Módulo de gestão de conteúdo {#content-management}
       + [Sobre a gestão de conteúdo](delivery/using/about-content-management.md)
@@ -322,10 +322,10 @@ ht-degree: 98%
       + [Solução de problemas no [!DNL ACS Connector]](integrations/using/troubleshooting-the-acs-connector.md)
    + Experience Cloud Triggers {#experience-triggers}
       + [Sobre [!DNL Adobe Experience Cloud Triggers]](integrations/using/about-triggers.md)
-      + [Configurando o pipeline](integrations/using/configuring-pipeline.md)
+      + [Configuração de pipeline](integrations/using/configuring-pipeline.md)
       + [Opção de pipeline NmsPipeline_Config](integrations/using/nmspipeline-config.md)
-      + [eventos acionadores](integrations/using/events.md)
-      + [Monitoramento de tubulação](integrations/using/pipeline-monitoring.md)
+      + [Triggers eventos](integrations/using/events.md)
+      + [Monitoramento de pipeline](integrations/using/pipeline-monitoring.md)
       + [Solução de problemas de pipeline](integrations/using/pipeline-troubleshooting.md)
 + Automatização com Workflows {#automating-with-workflows}
    + Introdução {#introduction}
