@@ -12,11 +12,11 @@ discoiquuid: 5df34f55-135a-4ea8-afc2-f9427ce5ae7b
 index: y
 internal: n
 snippet: y
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 229df9ee7da5ac9c773a7af82aabceb755299cc6
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '6767'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -27,15 +27,15 @@ Esta página lista todos os novos recursos e atualizações de documentação po
 
 Você também pode consultar as [Notas de versão do Adobe Campaign Classic](../../rn/using/latest-release.md) para obter mais atualizações.
 
-## June 2020 {#june-2020}
+## Junho de 2020 {#june-2020}
 
-A seção Remoção de um endereço em quarentena foi atualizada. Isso inclui a clarificação dos casos em que os endereços são removidos automaticamente da lista da quarentena. [Leia mais](../../delivery/using/understanding-quarantine-management.md#removing-a-quarantined-address)
+A seção Remoção de um endereço em quarentena foi atualizada. Ela esclarece os casos em que os endereços são removidos automaticamente da lista de quarentena. [Leia mais](../../delivery/using/understanding-quarantine-management.md#removing-a-quarantined-address)
 
-Casos de uso foram adicionados sobre como [criptografar](../../workflow/using/how-to-use-workflow-data.md#use-case-gpg-encrypt) e [descriptografar](../../workflow/using/importing-data.md#use-case-gpg-decrypt) dados usando o Painel de controle e Workflows da campanha.
+Casos de uso foram adicionados em como [criptografar](../../workflow/using/how-to-use-workflow-data.md#use-case-gpg-encrypt) e [descriptografar](../../workflow/using/importing-data.md#use-case-gpg-decrypt) dados usando o Painel de controle do Campaign e workflows do Campaign.
 
-Os termos &quot;lista branca&quot; e &quot;lista negra&quot; foram removidos da documentação do Adobe Campaign. Algumas ocorrências desses termos ainda podem existir na interface do usuário do produto, nomes de opções e código interno, mas serão substituídas em versões futuras da Campanha por &quot;blocklist&quot; e &quot;allowlist&quot;.
+Os termos &quot;white list&quot; e &quot;black list&quot; foram removidos da documentação do Adobe Campaign. Algumas ocorrências desses termos ainda podem existir na interface do usuário do produto, nomes de opções e código interno, mas serão substituídas em versões futuras do Campaign por &quot;lista de bloqueios&quot; e &quot;lista de permissões&quot;.
 
-A página de integração Experience Cloud Triggers e Adobe Campaign Classic foi movida [para cá](../../integrations/using/about-triggers.md).
+Os Experience Cloud Triggers e a página de integração do Adobe Campaign Classic foram movidos [para cá](../../integrations/using/about-triggers.md).
 
 ## 20.2 - 08/06/2020{#release-20-2}
 
