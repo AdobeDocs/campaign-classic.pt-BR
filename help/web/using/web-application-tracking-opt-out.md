@@ -14,9 +14,9 @@ discoiquuid: 8f413002-bd32-426f-88b9-44cefae68593
 index: y
 internal: n
 snippet: y
-translation-type: ht
-source-git-commit: a62e4d072573f7ed1b77f755eb57838c70745592
-workflow-type: ht
+translation-type: tm+mt
+source-git-commit: d96912e39956f2f7b0b0af29dc765d0b9775a020
+workflow-type: tm+mt
 source-wordcount: '674'
 ht-degree: 100%
 
@@ -39,7 +39,7 @@ Para ser exibido em aplicações web ou Landing pages, o banner precisa ser conf
 
 O Adobe Campaign é fornecido com um banner de exemplo que você deve adaptar às suas necessidades. Essa versão do banner aparece como um bloco de personalização localizado na pasta do modelo de conteúdo. Consulte [esta página](../../delivery/using/personalization-blocks.md).
 
->[!CAUTION]
+>[!IMPORTANT]
 >
 >Para criar seu próprio banner, você deve personalizar o banner pronto para uso.
 
