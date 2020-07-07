@@ -4,11 +4,11 @@ user-guide-title: Ajuda do Adobe Campaign Classic
 index: y
 product: adobe campaign
 sub-product: Adobe Campaign Classic
-translation-type: ht
-source-git-commit: 5d67ab5bbc44b81c65605ae9132cf5a8356aa814
-workflow-type: ht
-source-wordcount: '2126'
-ht-degree: 100%
+translation-type: tm+mt
+source-git-commit: c38fe4cc442768550ee90cecc6b31b78d39f3da1
+workflow-type: tm+mt
+source-wordcount: '2122'
+ht-degree: 99%
 
 ---
 
@@ -73,12 +73,13 @@ ht-degree: 100%
    + Acesso a um banco de dados externo (FDA){#accessing-external-database}
       + [Sobre o FDA](platform/using/about-fda.md)
       + [Configurações específicas por tipo de banco de dados](platform/using/specific-configuration-database.md)
+      + [Conectores herdados](platform/using/legacy-connectors.md)
       + [Direitos de acesso ao banco de dados remoto](platform/using/remote-database-access-rights.md)
       + [Conexão com o banco de dados](platform/using/connecting-to-database.md)
       + [Criação do schema de dados](platform/using/creating-data-schema.md)
       + [Definição do mapeamento de dados](platform/using/defining-data-mapping.md)
       + [Opções adicionais](platform/using/additional-options.md)
-      + [Uso de dados de um banco de dados externo em um workflow](platform/using/data-external-database-workflow.md)
+      + [Apêndices](platform/using/appendices-fda.md)
    + Conectores {#connectors}
       + [Sobre conectores](platform/using/about-connectors.md)
       + [Conectores CRM](platform/using/crm-connectors.md)
@@ -623,6 +624,7 @@ ht-degree: 100%
    + Introdução {#introduction}
       + [Prefácio](production/using/foreword.md)
       + [Arquitetura geral](production/using/general-architecture.md)
+      + [Orientações de monitoramento](production/using/monitoring-guidelines.md)
    + Procedimentos de produção {#production-procedures}
       + [Princípio de configuração](production/using/configuration-principle.md)
       + [Princípio operacional](production/using/operating-principle.md)
