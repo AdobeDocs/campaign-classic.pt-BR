@@ -15,34 +15,36 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: e059fc9e2bfade30454601f31990c3ec14b8a847
+source-git-commit: 788866c4f11d3875f713a61f7560d6d5255f3019
 workflow-type: tm+mt
-source-wordcount: '1212'
-ht-degree: 10%
+source-wordcount: '1141'
+ht-degree: 12%
 
 ---
 
 
-# Instalação de pacotes padrão do Campaign Classic{#installing-campaign-standard-packages}
+# Installing Campaign Classic built-in packages{#installing-campaign-standard-packages}
 
-## Sobre pacotes padrão {#campaign-standard-packages}
+## Sobre pacotes incorporados {#campaign-standard-packages}
 
-Pacotes são um conjunto de recursos que podem ser instalados de acordo com suas necessidades. Eles permitirão que você adicione mais opções à sua instância.
+Os pacotes incorporados contêm um conjunto de recursos que podem ser instalados de acordo com suas necessidades e dependendo do seu contrato. A lista completa dos pacotes integrados da Campanha está disponível abaixo.
 
 >[!CAUTION]
 >
->Você só pode instalar pacotes correspondentes às opções mencionadas no contrato de licença.
+>Você só pode instalar os pacotes correspondentes às opções mencionadas em seu contrato de licença.
 >
->Depois que um pacote é instalado, não é possível desinstalá-lo. A instalação de um novo pacote pode afetar toda a sua plataforma: deve ser testado e validado antes da implantação final.
+>A instalação de um novo pacote pode afetar toda a sua plataforma: deve ser testado e validado antes da implantação final.
+>
+>Depois que um pacote é instalado, não é possível desinstalá-lo.
 
-Para instalar um pacote padrão:
+Para instalar um pacote integrado:
 
 1. Acesse o assistente de importação do pacote do **[!UICONTROL Tools > Advanced > Package import...]** no console do cliente Adobe Campaign.
 1. Selecione **[!UICONTROL Install a standard package]**.
-1. Na lista exibida, verifique os pacotes que deseja instalar.
+1. Na lista do pacote, verifique os pacotes que deseja instalar.
    >[!NOTE]
    >
-   >Se um pacote estiver acinzentado, não será possível instalá-lo. Isso significa que ele já está instalado ou não é compatível com sua instância. Por exemplo, não é possível instalar o pacote da plataforma **** Mid-sourcing em uma instância de marketing. Você encontrará essas informações na tabela abaixo.
+   >Quando um pacote está acinzentado, significa que ele já está instalado ou não é compatível com sua instância. A compatibilidade está descrita na tabela abaixo.
 1. Clique em **[!UICONTROL Next]** e, em seguida, em **[!UICONTROL Start]** para começar a instalação do pacote.
 
    Depois que os pacotes forem instalados, a barra de progresso mostrará **100%** e você poderá ver a seguinte mensagem nos registros de instalação: **[!UICONTROL Installation of packages successful]**.
@@ -60,46 +62,39 @@ A tabela a seguir lista todos os pacotes padrão com sua descrição, o tipo de 
   <tr> 
    <th> Embalagem </th> 
    <th> Descrição </th> 
-   <th> Tipo de instância </th> 
-   <th> Mais informações </th> 
+   <th> Tipo de instância </th>
   </tr> 
  </thead> 
  <tbody> 
   <tr> 
    <td> Delivery<br /> </td> 
-   <td> Monitora delivery e possíveis problemas encontrados quando as mensagens são enviadas.<br /> </td> 
+   <td> Monitora delivery e possíveis problemas encontrados quando as mensagens são enviadas. <a href="../../delivery/using/monitoring-a-delivery.md">Saiba mais</a><br /> </td> 
    <td> Todos</td> 
-   <td> <a href="../../delivery/using/monitoring-a-delivery.md">Saiba mais</a></td> 
   </tr> 
   <tr> 
    <td> campanhas de marketing (Campanha)<br /> </td> 
-   <td> Define, otimiza, executa e analisa campanhas de comunicação e marketing.<br /> </td> 
-   <td> Marketing</td> 
-   <td> <a href="../../campaign/using/designing-marketing-campaigns.md">Saiba mais</a> </td> 
+   <td> Define, otimiza, executa e analisa campanhas de comunicação e marketing. <a href="../../campaign/using/designing-marketing-campaigns.md">Saiba mais</a><br /> </td> 
+   <td> Marketing</td>
   </tr> 
   <tr> 
    <td> Marketing resources (MRM)<br /> </td> 
-   <td> Controla as ações de marketing em um modo colaborativo, fornecendo gerenciamento e rastreamento de tarefas, orçamentos e recursos de marketing.<br /> </td> 
+   <td> Controla as ações de marketing em um modo colaborativo, fornecendo gerenciamento e rastreamento de tarefas, orçamentos e recursos de marketing. <a href="../../campaign/using/about-marketing-resource-management.md">Saiba mais</a> <br /> </td> 
    <td> Marketing</td> 
-   <td> <a href="../../campaign/using/about-marketing-resource-management.md">Saiba mais</a> </td> 
   </tr> 
   <tr> 
    <td> motor de Oferta (interação)<br /> </td> 
-   <td> Responds in real time during an interaction with a given contact (a customer or target) by making them a single or several adapted offers. <br /> </td> 
+   <td> Responde em tempo real durante uma interação com um determinado contato (um cliente ou público alvo), tornando-os uma única ou várias ofertas adaptadas.  Opcional. <a href="../../interaction/using/interaction-and-offer-management.md">Saiba mais</a> <br /> </td> 
    <td> Todos<br /> </td> 
-   <td> Opcional, <a href="../../interaction/using/interaction-and-offer-management.md">saiba mais</a></td> 
   </tr> 
   <tr> 
-   <td> Controlo do motor de oferta com instância de execução<br /> </td> 
+   <td> Controlo do motor de oferta com instância de execução. Opcional.<br /> </td> 
    <td> </td> 
-   <td> Marketing<br /> </td> 
-   <td> Opcional</td> 
+   <td> Marketing<br /> </td>  
   </tr> 
   <tr> 
-   <td> Mecanismo de Oferta para instância de execução<br /> </td> 
+   <td> Mecanismo de Oferta para instância de execução. Opcional.<br /> </td> 
    <td> </td> 
-   <td> Meio, Execução <br /> </td> 
-   <td> Opcional</td> 
+   <td> Meio, Execução <br /> </td>  
   </tr> 
   <!--tr> 
    <td> Lead Management (Leads) (deprecated)<br /> </td> 
@@ -109,39 +104,33 @@ A tabela a seguir lista todos os pacotes padrão com sua descrição, o tipo de 
   </tr--> 
   <tr> 
    <td> Redes sociais (Marketing social) <br /> </td> 
-   <td> Sincroniza o Adobe Campaign com o Twitter e o Facebook.<br /> </td> 
+   <td> Sincroniza o Adobe Campaign com o Twitter e o Facebook. <a href="../../social/using/about-social-marketing.md">Saiba mais</a> <br /> </td> 
    <td> Todos</td> 
-   <td> <a href="../../social/using/about-social-marketing.md">Saiba mais</a> </td> 
   </tr> 
   <tr> 
    <td> Controle de Mensagens transacionais (Centro de mensagens - Controle)<br /> </td> 
-   <td> Gerencia mensagens de disparo geradas a partir de eventos acionados a partir de sistemas de informações.<br /> </td> 
+   <td> Gerencia mensagens de disparo geradas a partir de eventos acionados a partir de sistemas de informações. Opcional. <a href="../../message-center/using/about-transactional-messaging.md">Saiba mais</a> <br /> </td> 
    <td> Marketing<br /> </td> 
-   <td> Opcional, <a href="../../message-center/using/about-transactional-messaging.md">saiba mais</a> </td> 
   </tr> 
   <tr> 
    <td> Execução de Mensagens transacionais (Centro de Mensagens - Execução) <br /> </td> 
-   <td> Garante maior disponibilidade e melhor gerenciamento de carga.<br /> </td> 
-   <td> Execução<br /> </td> 
-   <td> Opcional, <a href="../../message-center/using/about-transactional-messaging.md">saiba mais</a> </td> 
+   <td> Garante maior disponibilidade e melhor gerenciamento de carga. Opcional. <a href="../../message-center/using/about-transactional-messaging.md">Saiba mais</a><br /> </td> 
+   <td> Execução<br /> </td>
   </tr> 
   <tr> 
    <td> Canal LINE<br /> </td> 
-   <td> Envia delivery usando o canal LINE com Adobe Campaign,<br /> </td> 
+   <td> Envia os delivery usando o canal LINE com Adobe Campaign. Opcional. Mensagens transacionais (pacote do centro de mensagens) obrigatórias. <a href="../../delivery/using/line-channel.md">Saiba mais</a> <br /> </td> 
    <td> Todos<br /> </td> 
-   <td> Opcional, obrigatório para o centro de mensagens</td> 
   </tr> 
   <tr> 
    <td> Direct Mail channel<br /> </td> 
-   <td> Envia delivery para Adobe Campaign com o canal de mala direta.<br /> </td> 
-   <td> Todos<br /> </td> 
-   <td> Opcional, <a href="../../delivery/using/about-direct-mail-channel.md">saiba mais</a> </td> 
+   <td> Envia delivery para Adobe Campaign com o canal de mala direta. Opcional. <a href="../../delivery/using/about-direct-mail-channel.md">Saiba mais</a><br /> </td> 
+   <td> Todos<br /> </td>
   </tr> 
   <tr> 
    <td> canal móvel (SMS) <br /> </td> 
-   <td> Envia delivery para Adobe Campaign de de usando o canal Mobile/SMS.<br /> </td> 
+   <td> Envia delivery para Adobe Campaign de de usando o canal Mobile/SMS. Opcional. <a href="../../delivery/using/sms-channel.md">Saiba mais</a> <br /> </td> 
    <td> Todos<br /> </td> 
-   <td> Opcional, <a href="../../delivery/using/sms-channel.md">saiba mais</a> </td> 
   </tr> 
   <tr> 
    <td> canal de telefone<br /> </td> 
@@ -151,150 +140,123 @@ A tabela a seguir lista todos os pacotes padrão com sua descrição, o tipo de 
   </tr>
   <tr> 
    <td> Canal de aplicativo móvel<br /> </td> 
-   <td> Usa a plataforma Adobe Campaign para enviar notificações personalizadas para terminais iOS e Android por meio de aplicativos. <br /> </td> 
+   <td> Usa a plataforma Adobe Campaign para enviar notificações personalizadas para terminais iOS e Android por meio de aplicativos. Opcional. <a href="../../delivery/using/about-mobile-app-channel.md">Saiba mais</a> <br /> </td> 
    <td> Todos<br /> </td> 
-   <td> Opcional, <a href="../../delivery/using/about-mobile-app-channel.md">saiba mais</a> </td> 
   </tr> 
   <tr> 
    <td> Gerenciador de conteúdo<br /> </td> 
-   <td> Cria boletins informativos ou site recorrentes e, em seguida, valida e publica suas mensagens.<br /> </td> 
-   <td> </td> 
-   <td> <a href="../../delivery/using/about-content-management.md">Saiba mais</a> </td> 
+   <td> Cria boletins informativos ou site recorrentes e, em seguida, valida e publica suas mensagens. <a href="../../delivery/using/about-content-management.md">Saiba mais</a> <br /> </td> 
+   <td> </td>
   </tr> 
   <tr> 
    <td> pesquisas on-line (Gerenciador de Pesquisas)<br /> </td> 
-   <td> Cria e gerencia formulários online para adicionar ou modificar informações do perfil, assinar, cancelar a inscrição ou um formulário de inscrição em concurso.<br /> </td> 
+   <td> Cria e gerencia formulários online para adicionar ou modificar informações do perfil, assinar, cancelar a inscrição ou um formulário de inscrição em concurso. Opcional. <a href="../../web/using/about-surveys.md">Saiba mais</a> <br /> </td> 
    <td> Marketing<br /> </td> 
-   <td> Opcional, <a href="../../web/using/about-surveys.md">saiba mais</a> </td> 
   </tr> 
   <tr> 
-   <td> Análise de marketing<br /> </td> 
-   <td> Permite analisar e medir dados, calcular estatísticas, simplificar e otimizar a criação e o cálculo de relatórios. Além disso, é possível criar relatórios e populações de públicos alvos. <br /> </td> 
+   <td> Analytics de marketing<br /> </td> 
+   <td> Permite analisar e medir dados, calcular estatísticas, simplificar e otimizar a criação e o cálculo de relatórios. Além disso, é possível criar relatórios e populações de públicos alvos. Opcional. <a href="../../reporting/using/about-cubes.md">Saiba mais</a><br /> </td> 
    <td> Marketing<br /> </td> 
-   <td> Opcional, <a href="../../reporting/using/about-cubes.md">saiba mais</a> </td> 
   </tr> 
   <tr> 
    <td> Gestor de Resposta<br /> </td> 
-   <td> Mede o sucesso e a rentabilidade de campanhas de marketing ou apresentações da oferta para todos os canais de comunicação.<br /> </td> 
+   <td> Mede o sucesso e a rentabilidade de campanhas de marketing ou apresentações da oferta para todos os canais de comunicação.  Opcional. <a href="../../campaign/using/about-response-manager.md">Saiba mais</a> <br /> </td> 
    <td> Marketing<br /> </td> 
-   <td> Opcional, <a href="../../campaign/using/about-response-manager.md">saiba mais</a> </td> 
   </tr> 
   <tr> 
    <td> Acesso a dados externos (Federated Data Acces)<br /> </td> 
-   <td> Provides the Federated Data Access (FDA) option in order to process information stored in one or more external databases so that you can access external data without changing the structure of Adobe Campaign data.<br /> </td> 
+   <td> Fornece a opção Federated Data Acces (FDA) para processar informações armazenadas em um ou mais bancos de dados externos, de modo que você possa acessar dados externos sem alterar a estrutura dos dados Adobe Campaign.  Opcional. <a href="../../workflow/using/accessing-an-external-database--fda-.md">Saiba mais</a> <br /> </td> 
    <td> Todos<br /> </td> 
-   <td> Opcional, <a href="../../workflow/using/accessing-an-external-database--fda-.md">saiba mais</a> </td> 
   </tr> 
   <tr> 
    <td> Otimização de campanha<br /> </td> 
-   <td> Controla, filtros e monitora o envio de delivery para que as mensagens enviadas atendam melhor às necessidades e expectativas dos clientes, em conformidade com as políticas de comunicação de empresa. <br /> </td> 
+   <td> Controla, filtros e monitora o envio de delivery para que as mensagens enviadas atendam melhor às necessidades e expectativas dos clientes, em conformidade com as políticas de comunicação de empresa. Opcional. <a href="../../campaign/using/about-campaign-typologies.md">Saiba mais</a> <br /> </td> 
    <td> Marketing<br /> </td> 
-   <td> Opcional, <a href="../../campaign/using/about-campaign-typologies.md">saiba mais</a> </td> 
   </tr> 
   <tr> 
    <td> Monitoramento da entregabilidade (Entregabilidade por email)<br /> </td> 
-   <td> Measures the success of your campaigns reaching your recipients' inbox without bouncing, or being marked as spam.<br /> </td> 
+   <td> Mede o sucesso de suas campanhas ao chegar à caixa de entrada de seus recipient sem saltar ou ser marcado como spam. Opcional. <a href="../../delivery/using/about-deliverability.md">Saiba mais</a> <br /> </td> 
    <td> Todos </td> 
-   <td> Opcional, <a href="https://docs.adobe.com/content/help/pt-BR/campaign-classic/using/sending-messages/deliverability-management/about-deliverability.html">saiba mais</a> </td> 
   </tr> 
   <tr> 
    <td> Gerenciamento de cupom<br /> </td> 
-   <td> Cria um conjunto de cupons para adicionar às próximas ofertas de marketing.<br /> </td> 
+   <td> Cria um conjunto de cupons para adicionar às próximas ofertas de marketing. Opcional. <a href="../../delivery/using/personalized-coupons.md">Saiba mais</a> <br /> </td> 
    <td> Marketing<br /> </td> 
-   <td> Opcional, <a href="../../delivery/using/personalized-coupons.md">saiba mais</a> </td> 
   </tr> 
   <tr> 
    <td> Renderização da caixa de entrada (IR)<br /> </td> 
-   <td> Permite que você pré-visualização a mensagem enviada nos diferentes contextos em que ela pode ser recebida e verifique a compatibilidade em desktops e aplicativos principais. Você precisa de uma conta de Litmus.<br /> </td> 
+   <td> Permite que você pré-visualização a mensagem enviada nos diferentes contextos em que ela pode ser recebida e verifique a compatibilidade em desktops e aplicativos principais. Opcional. <a href="../../delivery/using/inbox-rendering.md">Saiba mais</a><br /> </td> 
    <td> Marketing<br /> </td> 
-   <td> Opcional, <a href="../../delivery/using/inbox-rendering.md">saiba mais</a> </td> 
   </tr> 
   <tr> 
    <td> Marketing Central/local (Marketing distribuído)<br /> </td> 
-   <td> Implementa campanhas cooperativas entre entidades centrais (sede, departamentos de marketing etc.) e entidades Locais (pontos de venda, agências regionais, etc.).<br /> </td> 
+   <td> Implementa campanhas cooperativas entre entidades centrais (sede, departamentos de marketing etc.) e entidades Locais (pontos de venda, agências regionais, etc.). Opcional. <a href="../../campaign/using/about-distributed-marketing.md">Saiba mais</a><br /> </td> 
    <td> Marketing </td> 
-   <td> Opcional, <a href="../../campaign/using/about-distributed-marketing.md">saiba mais</a> </td> 
   </tr> 
   <tr> 
    <td> Conectores CRM<br /> </td> 
-   <td> Provides various CRM connectors for linking your Adobe Campaign platform to your third-party systems.<br /> </td> 
+   <td> Fornece vários conectores CRM para vincular sua plataforma de Adobe Campaign a sistemas de terceiros.  <a href="../../platform/using/crm-connectors.md">Saiba mais</a> <br /> </td> 
    <td> Marketing</td> 
-   <td> <a href="../../platform/using/crm-connectors.md">Saiba mais</a> </td> 
   </tr> 
   <tr> 
-   <td> Conectores do Web Analytics<br /> </td> 
-   <td> Permite que o Adobe Campaign e o Adobe Analytics interajam pelo pacote de conectores do Web Analytics.<br /> </td> 
+   <td> Conectores Web Analytics<br /> </td> 
+   <td> Permite que o Adobe Campaign e o Adobe Analytics interajam pelo pacote de conectores do Analytics da Web. Não compatível com mensagens transacionais (pacote do centro de mensagens). <a href="../../platform/using/adobe-analytics-data-connector.md">Saiba mais</a><br /> </td> 
    <td> Marketing </td> 
-   <td> Não compatível com mensagens transacionais, <a href="../../platform/using/adobe-analytics-data-connector.md">saiba mais</a> </td> 
   </tr> 
   <tr> 
    <td> Integração com o AEM<br /> </td> 
-   <td> Permite que você gerencie o conteúdo de seus delivery de e-mail, bem como seus formulários diretamente no Adobe Experience Manager, para se beneficiar das funcionalidades de edição de conteúdo do AEM e das capacidades do delivery Adobe Campaign.<br /> </td> 
+   <td> Permite que você gerencie o conteúdo de seus delivery de e-mail, bem como seus formulários diretamente no Adobe Experience Manager, para se beneficiar das funcionalidades de edição de conteúdo do AEM e das capacidades do delivery Adobe Campaign. <a href="../../integrations/using/about-adobe-experience-manager.md">Saiba mais</a> <br /> </td> 
    <td> Marketing</td> 
-   <td> <a href="../../integrations/using/about-adobe-experience-manager.md">Saiba mais</a> </td> 
   </tr> 
   <tr> 
-   <td> Integração de Audiência compartilhadas da Adobe Marketing Cloud<br /> </td> 
-   <td> Allows you to exchange and share audiences/segments with Adobe Experience Cloud solutions and core services.<br /> </td> 
+   <td> Integração do Adobe Marketing Cloud Shared Audiência<br /> </td> 
+   <td> Permite trocar e compartilhar audiências/segmentos com as soluções e os principais serviços da Adobe Experience Cloud. Requer IMS. <a href="../../integrations/using/sharing-audiences-with-adobe-experience-cloud.md">Saiba mais</a> <br /> </td> 
    <td> Marketing<br /> </td> 
-   <td> Exige IMS, <a href="../../integrations/using/sharing-audiences-with-adobe-experience-cloud.md">saiba mais</a> </td> 
   </tr> 
   <tr> 
-   <td> Integração com a Adobe Marketing Cloud<br /> </td> 
-   <td> Permite importar e exportar audiências/segmentos de diferentes soluções da Adobe Marketing Cloud para o Adobe Campaign. </td> 
+   <td> Integração com o Adobe Marketing Cloud<br /> </td> 
+   <td> Permite importar e exportar audiências/segmentos de diferentes soluções de Adobe Marketing Cloud. Opcional. <a href="../../integrations/using/configuring-ims.md#installing-the-package">Saiba mais</a> </td> 
    <td> Marketing</td> 
-   <td> Opcional, <a href="../../integrations/using/configuring-ims.md#installing-the-package">saiba mais</a> </td> 
   </tr> 
   <tr> 
    <td> Regulamento de proteção de dados de privacidade<br /> </td> 
-   <td> Contém funcionalidade adicional para ajudar com sua conformidade com privacidade no Campaign Classic.<br /> </td> 
+   <td> Contém funcionalidade adicional para ajudar com sua conformidade com privacidade no Campaign Classic. <a href="https://helpx.adobe.com/br/campaign/kb/acc-privacy.html">Saiba mais</a> <br /> </td> 
    <td> Todos</td> 
-   <td> <a href="https://helpx.adobe.com/br/campaign/kb/acc-privacy.html">Saiba mais</a> </td> 
   </tr> 
   <tr> 
    <td> Transfer to Mid-Sourcing <br /> </td> 
-   <td> Detalhes da instalação e configuração de um servidor mid-sourcing, bem como a implantação de uma instância que permite que terceiros enviem mensagens no modo mid-sourcing.<br /> </td> 
+   <td> Detalhes da instalação e configuração de um servidor mid-sourcing, bem como a implantação de uma instância que permite que terceiros enviem mensagens no modo mid-sourcing. Opcional. <a href="../../installation/using/mid-sourcing-server.md">Saiba mais</a> <br /> </td> 
    <td> Marketing </td> 
-   <td> Opcional, <a href="../../installation/using/mid-sourcing-server.md">saiba mais</a> </td> 
   </tr> 
   <tr> 
    <td> Plataforma Mid-sourcing<br /> </td> 
-   <td> Essa configuração é uma solução intermediária ideal entre uma configuração hospedada (ASP) e a internalização. Os componentes de execução voltados para o exterior são executados em um servidor "mid-sourcing" hospedado no Adobe Campaign.<br /> </td> 
+   <td> Essa configuração é uma solução intermediária ideal entre uma configuração hospedada (ASP) e a internalização. Os componentes de execução voltados para o exterior são executados em um servidor "mid-sourcing" hospedado no Adobe Campaign. Opcional. <a href="../../installation/using/mid-sourcing-server.md">Saiba mais</a> <br /> </td> 
    <td> Mid-sourcing </td> 
-   <td> Opcional, <a href="../../installation/using/mid-sourcing-server.md">saiba mais</a> </td> 
   </tr> 
   <tr> 
    <td> ACS Connector<br /> </td> 
-   <td> Pontes Adobe Campaign v7 e Adobe Campaign Standard. É um recurso integrado no Campaign v7 que replica automaticamente os dados no Campaign Standard, unindo o melhor das duas aplicações. <br /> </td> 
+   <td> Pontes Adobe Campaign v7 e Adobe Campaign Standard. É um recurso integrado no Campaign v7 que replica automaticamente os dados no Campaign Standard, unindo o melhor das duas aplicações. Opcional. <a href="../../integrations/using/acs-connector-principles-and-data-cycle.md">Saiba mais</a> <br /> </td> 
    <td> Marketing </td> 
-   <td> Opcional, <a href="../../integrations/using/acs-connector-principles-and-data-cycle.md">saiba mais</a> </td> 
   </tr> 
  </tbody> 
 </table>
 
 ### Pacote do Centro de mensagens {#message-center-package}
 
-Para adicionar um canal de delivery (canal móvel, canal de aplicativo móvel etc.), isso deve ser realizado antes da instalação do pacote do Centro de mensagens. Se você tiver iniciado um projeto do Centro de mensagens no canal de e-mail e, no meio do projeto, decidir adicionar um novo canal, siga estas etapas:
+Você deve instalar canais de delivery (Email, canal móvel, canal de aplicativo móvel etc.) antes de instalar as mensagens transacionais (pacote do centro de mensagens). Se você tiver iniciado um projeto do Centro de mensagens somente por email e precisar adicionar um novo canal depois, siga estas etapas:
 
-1. Install the channel you wish, for example the **Mobile channel**, using the package import wizard ( **[!UICONTROL Tools > Advanced > Import package > Adobe Campaign package]**).
+1. Install the new channel, for example the **Mobile channel**, using the package import wizard ( **[!UICONTROL Tools > Advanced > Import package > Adobe Campaign package]**).
 1. Importe o arquivo ( **[!UICONTROL Tools > Advanced > Import package > File]**) e selecione:
 
    ```
    \datakit\nms\[Your language]\package\messageCenter.xml
    ```
 
-1. Na página **[!UICONTROL XML data content to import]**, mantenha somente o template do delivery do Centro de mensagens correspondente ao canal anexado. For example, if you have added the **Mobile channel**, keep only the **entities** element corresponding to the **[!UICONTROL Mobile transactional message]** (smsTriggerMessage) template. If you have added the **Mobile App Channel**, keep only the **iOS transactional message** templates (iosTriggerMessage) and **Android transactional message** (androidTriggerMessage).
+1. No **[!UICONTROL XML data content to import]**, mantenha somente o template do delivery do Centro de mensagens correspondente ao canal relacionado. For example, if you have added the **Mobile channel**, keep only the **entities** element corresponding to the **[!UICONTROL Mobile transactional message]** (smsTriggerMessage) template. If you have added the **Mobile App Channel**, keep only the **iOS transactional message** templates (iosTriggerMessage) and **Android transactional message** (androidTriggerMessage).
 
    ![](assets/messagecenter_install_channel.png)
 
-### Pacote LINE {#line-package}
-
-Para poder enviar delivery usando o canal LINE com o Adobe Campaign, é necessário instalar o pacote LINE.
-
-A instalação do pacote LINE é uma instalação padrão detalhada na seção [Importando pacotes](../../platform/using/working-with-data-packages.md#importing-packages) .
-
-![](assets/line_config_1.png)
-
 >[!CAUTION]
 >
->Os templates do delivery do Centro de mensagens para LINHA não estarão disponíveis se os pacotes do Centro de mensagens estiverem instalados antes da LINHA.
+>Os templates do delivery do centro de mensagens para LINHA não estarão disponíveis se os pacotes do centro de mensagens estiverem instalados antes da LINHA
+
