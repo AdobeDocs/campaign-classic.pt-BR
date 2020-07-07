@@ -14,14 +14,16 @@ discoiquuid: dd3d14cc-5153-428d-a98a-32b46f0fe811
 index: y
 internal: n
 snippet: y
-translation-type: ht
-source-git-commit: 5ae1f5462dd3e6c4858a27cadae24eb732c0535b
+translation-type: tm+mt
+source-git-commit: c86af066045c1c35b51624de8565af21746354c1
+workflow-type: tm+mt
+source-wordcount: '273'
+ht-degree: 100%
 
 ---
 
 
 # Opções adicionais {#additional-options}
-
 
 <!--
 
@@ -91,6 +93,29 @@ Durante a análise de delivery, essa opção cria e executa automaticamente um w
 
 Ao selecionar essa opção, é possível obter um aumento significativo no desempenho para executar a personalização.
 
+## Uso de dados de um banco de dados externo em um workflow {#using-data-from-an-external-database-in-a-workflow}
+
+Em várias atividades de workflow do Adobe Campaign, você pode usar os dados armazenados em um banco de dados externo.
+
+### Filtragem em dados externos {#filtering-on-external-data}
+
+A atividade query permite adicionar dados externos e usá-los nas configurações de filtro definidas.
+
+Para obter mais informações, consulte a seção [Query](../../workflow/using/targeting-data.md#selecting-data).
+
+### Criação de subconjuntos {#creating-sub-sets}
+
+A atividade dividida permite criar subconjuntos. Você pode usar dados externos para definir os critérios de filtragem a serem usados.
+
+Para obter mais informações, consulte a seção [Split](../../workflow/using/split.md).
+
+### Carregamento de banco de dados externo {#loading-external-database}
+
+Você pode utilizar os dados externos no carregamento de dados (RDBMS). Essa atividade é apresentada na seção [Carregamento de dados](../../workflow/using/data-loading--rdbms-.md).
+
+### Adição de informações e links {#adding-information-and-links}
+
+A atividade de enriquecimento permite incluir dados adicionais na mesa de trabalho do workflow, como também links para uma tabela externa. Por esse motivo, é possível explorar os dados de um banco de dados externo. Essa atividade é apresentada na seção [Enriquecimento](../../workflow/using/enrichment.md) .
 <!--
 
 ## Cloud Messaging - FDA synchronization {#cloud-messaging---fda-synchronization}
