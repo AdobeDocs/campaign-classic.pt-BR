@@ -15,14 +15,17 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: dbff132e3bf88c408838f91e50e4b047947ee32a
+source-git-commit: 656b867686dd90f3e921c2adb5e5676fec184803
+workflow-type: tm+mt
+source-wordcount: '1976'
+ht-degree: 1%
 
 ---
 
 
 # Mapeamento de banco de dados{#database-mapping}
 
-O mapeamento SQL do nosso esquema de exemplo fornece o seguinte documento XML:
+O mapeamento SQL do nosso schema de exemplo fornece o seguinte documento XML:
 
 ```
 <schema mappingType="sql" name="recipient" namespace="cus" xtkschema="xtk:schema">
@@ -45,23 +48,23 @@ O mapeamento SQL do nosso esquema de exemplo fornece o seguinte documento XML:
 
 ## Descrição {#description}
 
-O elemento raiz do esquema não é mais **`<srcschema>`**, mas **`<schema>`**.
+O elemento raiz do schema não é mais **`<srcschema>`**, mas **`<schema>`**.
 
-Isso nos leva a outro tipo de documento, que é gerado automaticamente a partir do esquema de origem, simplesmente chamado de esquema. Esse esquema será usado pelo aplicativo Adobe Campaign.
+Isso nos leva a outro tipo de documento, que é gerado automaticamente a partir do schema de origem, simplesmente chamado de schema. Este schema será usado pelo aplicativo Adobe Campaign.
 
 Os nomes SQL são determinados automaticamente com base no nome e no tipo do elemento.
 
 As regras de nomenclatura SQL são as seguintes:
 
-* tabela: concatenação do namespace e nome do esquema
+* tabela: concatenação da namespace e do nome do schema
 
-   Em nosso exemplo, o nome da tabela é inserido pelo elemento principal do esquema no atributo **sqltable** :
+   Em nosso exemplo, o nome da tabela é inserido pelo elemento principal do schema no atributo **sqltable** :
 
    ```
    <element name="recipient" sqltable="CusRecipient">
    ```
 
-* campo: nome do elemento precedido por um prefixo definido de acordo com o tipo (&#39;i&#39; para integer, &#39;d&#39; para double, &#39;s&#39; para string, &#39;ts&#39; para datas etc.)
+* campo: nome do elemento precedido por um prefixo definido de acordo com o tipo (&#39;i&#39; para integer, &#39;d&#39; para duplo, &#39;s&#39; para string, &#39;ts&#39; para datas, etc.)
 
    O nome do campo é inserido pelo atributo **sqlname** para cada tipo **`<attribute>`** e **`<element>`**:
 
@@ -71,9 +74,9 @@ As regras de nomenclatura SQL são as seguintes:
 
 >[!NOTE]
 >
->Os nomes SQL podem ser sobrecarregados do esquema de origem. Para fazer isso, preencha os atributos &quot;sqltable&quot; ou &quot;sqlname&quot; no elemento em questão.
+>Os nomes SQL podem ser sobrecarregados do schema de origem. Para fazer isso, preencha os atributos &quot;sqltable&quot; ou &quot;sqlname&quot; no elemento em questão.
 
-O script SQL para criar a tabela gerada a partir do esquema estendido é o seguinte:
+O script SQL para criar a tabela gerada a partir do schema estendido é o seguinte:
 
 ```
 CREATE TABLE CusRecipient(
@@ -90,7 +93,7 @@ As restrições de campo SQL são as seguintes:
 
 ## Campos XML {#xml-fields}
 
-Por padrão, qualquer elemento digitado **`<attribute>`** e **`<element>`** é mapeado em um campo SQL da tabela de esquema de dados. No entanto, é possível fazer referência a esse campo no XML em vez do SQL, o que significa que os dados são armazenados em um campo de memorando (&quot;mData&quot;) da tabela que contém os valores de todos os campos XML. O armazenamento desses dados é um documento XML que observa a estrutura do esquema.
+Por padrão, qualquer elemento digitado **`<attribute>`** e **`<element>`** é mapeado em um campo SQL da tabela do schema de dados. No entanto, é possível fazer referência a esse campo no XML em vez do SQL, o que significa que os dados são armazenados em um campo de memorando (&quot;mData&quot;) da tabela que contém os valores de todos os campos XML. O armazenamento desses dados é um documento XML que observa a estrutura do schema.
 
 Para preencher um campo em XML, é necessário adicionar o atributo **xml** com o valor &quot;true&quot; ao elemento em questão.
 
@@ -110,15 +113,15 @@ Para preencher um campo em XML, é necessário adicionar o atributo **xml** com 
 
    O tipo &quot;html&quot; permite que você armazene o conteúdo HTML em uma tag CDATA e exiba uma verificação de edição HTML especial na interface do cliente do Adobe Campaign.
 
-O uso de campos XML permite adicionar campos sem a necessidade de modificar a estrutura física do banco de dados. Outra vantagem é que você usa menos recursos (tamanho alocado para campos SQL, limite do número de campos por tabela etc.).
+O uso de campos XML permite que você adicione campos sem precisar modificar a estrutura física do banco de dados. Outra vantagem é que você usa menos recursos (tamanho alocado para campos SQL, limite do número de campos por tabela etc.).
 
 A principal desvantagem é que é impossível indexar ou filtrar um campo XML.
 
 ## Campos indexados {#indexed-fields}
 
-Os índices permitem otimizar o desempenho das consultas SQL usadas no aplicativo.
+Os índices permitem otimizar o desempenho dos query SQL usados no aplicativo.
 
-Um índice é declarado do elemento principal do esquema de dados.
+Um índice é declarado do elemento principal do schema de dados.
 
 ```
 <dbindex name="name_of_index" unique="true/false">
@@ -131,12 +134,12 @@ Um índice é declarado do elemento principal do esquema de dados.
 Os índices obedecem às seguintes regras:
 
 * Um índice pode fazer referência a um ou mais campos na tabela.
-* Um índice pode ser exclusivo (para evitar duplicatas) em todos os campos se o atributo **exclusivo** contiver o valor &quot;true&quot;.
-* O nome SQL do índice é determinado pelo nome SQL da tabela e pelo nome do índice.
+* Um índice pode ser exclusivo (para evitar duplicados) em todos os campos se o atributo **exclusivo** contiver o valor &quot;true&quot;.
+* O nome SQL do índice é determinado a partir do nome SQL da tabela e do nome do índice.
 
 >[!NOTE]
 >
->Como padrão, os índices são os primeiros elementos declarados do elemento principal do esquema.
+>Como padrão, os índices são os primeiros elementos declarados do elemento principal do schema.
 
 >[!NOTE]
 >
@@ -185,7 +188,7 @@ Os índices obedecem às seguintes regras:
 
 Uma tabela deve ter pelo menos uma chave para identificar um registro na tabela.
 
-Uma chave é declarada do elemento principal do esquema de dados.
+Uma chave é declarada do elemento principal do schema de dados.
 
 ```
 <key name="name_of_key">
@@ -198,16 +201,16 @@ Uma chave é declarada do elemento principal do esquema de dados.
 As teclas obedecem às seguintes regras:
 
 * Uma tecla pode fazer referência a um ou mais campos na tabela.
-* Uma chave é conhecida como &quot;primária&quot; (ou &quot;prioridade&quot;) quando é a primeira no esquema a ser preenchida ou se contém o atributo **interno** com o valor &quot;true&quot;.
+* Uma chave é conhecida como &quot;primária&quot; (ou &quot;prioridade&quot;) quando é a primeira no schema a ser preenchida ou se contém o atributo **interno** com o valor &quot;true&quot;.
 * Um índice exclusivo é declarado implicitamente para cada definição de chave. A criação de um índice na chave pode ser impedida adicionando o atributo **noDbIndex** com o valor &quot;true&quot;.
 
 >[!NOTE]
 >
->Como padrão, as chaves são os elementos declarados do elemento principal do esquema depois que os índices foram definidos.
+>Como padrão, as teclas são os elementos declarados do elemento principal do schema após a definição dos índices.
 
 >[!NOTE]
 >
->As chaves são criadas durante o mapeamento de tabela (padrão ou FDA), o Adobe Campaign encontra índices exclusivos.
+>As teclas são criadas durante o mapeamento de tabela (padrão ou FDA), o Adobe Campaign encontra índices exclusivos.
 
 **Exemplo**:
 
@@ -229,7 +232,7 @@ As teclas obedecem às seguintes regras:
    </srcSchema>
    ```
 
-   O esquema gerado:
+   O schema gerou:
 
    ```
    <schema mappingType="sql" name="recipient" namespace="cus" xtkschema="xtk:schema">  
@@ -271,7 +274,7 @@ As teclas obedecem às seguintes regras:
    </srcSchema>
    ```
 
-   O esquema gerado:
+   O schema gerou:
 
    ```
    <schema mappingType="sql" name="recipient" namespace="cus" xtkschema="xtk:schema">  
@@ -296,13 +299,13 @@ As teclas obedecem às seguintes regras:
 
 ### Tecla incremental automaticamente {#auto-incremental-key}
 
-A chave primária da maioria das tabelas do Adobe Campaign é um número inteiro de 32 bits gerado automaticamente pelo mecanismo de banco de dados. O cálculo do valor chave depende de uma sequência (por padrão, a função SQL **XtkNewId** ) que gera um número exclusivo no banco de dados inteiro. O conteúdo da chave é automaticamente inserido na inserção do registro.
+A chave primária da maioria das tabelas Adobe Campaign é um número inteiro de 32 bits gerado automaticamente pelo mecanismo de banco de dados. O cálculo do valor chave depende de uma sequência (por padrão, a função SQL **XtkNewId** ) que gera um número exclusivo no banco de dados inteiro. O conteúdo da chave é automaticamente inserido na inserção do registro.
 
-A vantagem de uma chave incremental é que ela fornece uma chave técnica não modificável para as junções entre tabelas. Além disso, essa chave não ocupa muita memória porque usa um número inteiro de dois bytes.
+A vantagem de uma chave incremental é que ela fornece uma chave técnica não modificável para as junções entre tabelas. Além disso, essa chave não ocupa muita memória porque usa um número inteiro de duplo byte.
 
-Você pode especificar no esquema de origem o nome da sequência a ser usada com o atributo **pkSequence** . Se esse atributo não for fornecido no esquema de origem, a sequência padrão **XtkNewId** será usada. O aplicativo usa sequências dedicadas para os esquemas **nms:wideLog** e **nms:trackingLog** (**NmsBroadLogId** e **NmsTrackingLogId** , respectivamente) porque essas são as tabelas que contêm mais registros.
+Você pode especificar no schema de origem o nome da sequência a ser usada com o atributo **pkSequence** . Se esse atributo não for fornecido no schema de origem, a sequência padrão **XtkNewId** será usada. O aplicativo usa sequências dedicadas para os schemas **nms:wideLog** e **nms:trackingLog** (**NmsBroadLogId** e **NmsTrackingLogId** , respectivamente) porque essas são as tabelas que contêm mais registros.
 
-De ACC 18.10, **XtkNewId** não é mais o valor padrão para a sequência nos esquemas predefinidos. Agora você pode criar um esquema ou estender um esquema existente com uma sequência dedicada.
+De ACC 18.10, **XtkNewId** não é mais o valor padrão para a sequência nos schemas predefinidos. Agora você pode criar schemas ou estender schemas existentes com uma sequência dedicada.
 
 >[!IMPORTANT]
 >
@@ -310,13 +313,13 @@ De ACC 18.10, **XtkNewId** não é mais o valor padrão para a sequência nos es
 
 >[!NOTE]
 >
->Uma sequência referenciada em um esquema do Adobe Campaign (**NmsTrackingLogId** , por exemplo) deve ser associada a uma função SQL que retorna o número de IDs nos parâmetros, separadas por vírgulas. Essa função deve ser chamada de ******GetNewXXXIds**, onde **XXX** é o nome da sequência (**GetNewNmsTrackingLogIds** , por exemplo). Visualize os arquivos **postgres-nms.sql**, **mssql-nms.sql** ou **oracle-nms.sql** fornecidos com o aplicativo no diretório **datakit/nms/eng/sql/** para recuperar o exemplo de criação de uma sequência &#39;NmsTrackingLogId&#39; para cada mecanismo de banco de dados.
+>Uma sequência referenciada em um schema Adobe Campaign (**NmsTrackingLogId** , por exemplo) deve ser associada a uma função SQL que retorna o número de IDs nos parâmetros, separadas por vírgulas. Essa função deve ser chamada de ******GetNewXXXIds**, onde **XXX** é o nome da sequência (**GetNewNmsTrackingLogIds** , por exemplo). Visualização os arquivos **postgres-nms.sql**, **mssql-nms.sql** ou **oracle-nms.sql** fornecidos com o aplicativo no diretório **datakit/nms/eng/sql/** para recuperar o exemplo de criação de uma sequência &#39;NmsTrackingLogId&#39; para cada mecanismo de banco de dados.
 
-Para declarar uma chave exclusiva, preencha o atributo **autopk** (com o valor &quot;true&quot;) no elemento principal do esquema de dados.
+Para declarar uma chave exclusiva, preencha o atributo **autopk** (com o valor &quot;true&quot;) no elemento principal do schema de dados.
 
 **Exemplo**:
 
-Declarando uma chave incremental no esquema de origem:
+Declarando uma chave incremental no schema de origem:
 
 ```
 <srcSchema name="recipient" namespace="cus">
@@ -326,7 +329,7 @@ Declarando uma chave incremental no esquema de origem:
 </srcSchema>
 ```
 
-O esquema gerado:
+O schema gerou:
 
 ```
 <schema mappingType="sql" name="recipient" namespace="cus" xtkschema="xtk:schema">  
@@ -344,7 +347,7 @@ O esquema gerado:
 </schema>
 ```
 
-Além da definição da chave e seu índice, um campo numérico chamado &quot;id&quot; foi adicionado ao esquema estendido para conter a chave primária gerada automaticamente.
+Além da definição da chave e seu índice, um campo numérico chamado &quot;id&quot; foi adicionado ao schema estendido para conter a chave primária gerada automaticamente.
 
 >[!IMPORTANT]
 >
@@ -356,17 +359,17 @@ Um link descreve a associação entre uma tabela e outra.
 
 Os vários tipos de associações (conhecidas como &quot;cardinalidades&quot;) são os seguintes:
 
-* Cardinalidade 1-1: uma ocorrência da tabela de origem pode ter no máximo uma ocorrência correspondente da tabela de destino.
-* Cardinalidade 1-N: uma ocorrência da tabela de origem pode ter várias ocorrências correspondentes da tabela de destino, mas uma ocorrência da tabela de destino pode ter no máximo uma ocorrência correspondente da tabela de origem.
-* Cardinalidade N-N: uma ocorrência da tabela de origem pode ter várias ocorrências correspondentes da tabela de destino e vice-versa.
+* Cardinalidade 1-1: uma ocorrência da tabela de origem pode ter no máximo uma ocorrência correspondente da tabela de públicos alvos.
+* Cardinalidade 1-N: uma ocorrência da tabela de origem pode ter várias ocorrências correspondentes da tabela de públicos alvos, mas uma ocorrência da tabela de públicos alvos pode ter no máximo uma ocorrência correspondente da tabela de origem.
+* Cardinalidade N-N: uma ocorrência da tabela de origem pode ter várias ocorrências correspondentes da tabela de públicos alvos e vice-versa.
 
-Na interface, você pode distinguir os diferentes tipos de relações facilmente graças aos ícones.
+Na interface, você pode distinguir os diferentes tipos de relações facilmente graças aos ícones deles.
 
-Para associar relações com uma tabela/banco de dados de campanha:
+Para relações de união com uma tabela/banco de dados de campanha:
 
-* ![](assets/join_with_campaign11.png) : Cardinalidade 1-1. Por exemplo, entre um destinatário e um pedido atual. Um destinatário pode estar relacionado a apenas uma ocorrência da tabela de pedido atual por vez.
-* ![](assets/externaljoin11.png) : Cardinalidade 1-1, junção externa. Por exemplo, entre um destinatário e seu país. Um destinatário pode estar relacionado a apenas uma ocorrência do país da tabela. O conteúdo da tabela de países não será salvo.
-* ![](assets/join_with_campaign1n.png) : Cardinalidade 1-N. Por exemplo, entre um destinatário e a tabela de assinaturas. Um destinatário pode estar relacionado a várias ocorrências na tabela de assinaturas.
+* ![](assets/join_with_campaign11.png) : Cardinalidade 1-1. Por exemplo, entre um recipient e um pedido atual. Um recipient pode estar relacionado a apenas uma ocorrência da tabela de pedido atual por vez.
+* ![](assets/externaljoin11.png) : Cardinalidade 1-1, junção externa. Por exemplo, entre um recipient e seu país. Um recipient pode estar relacionado a apenas uma ocorrência do país da tabela. O conteúdo da tabela de países não será salvo.
+* ![](assets/join_with_campaign1n.png) : Cardinalidade 1-N. Por exemplo, entre um recipient e a tabela subscrição. Um recipient pode estar relacionado a várias ocorrências na tabela subscrição.
 
 Para unir relações usando o Acesso ao Banco de Dados Federado:
 
@@ -375,7 +378,7 @@ Para unir relações usando o Acesso ao Banco de Dados Federado:
 
 For more information on FDA tables, refer to [Accessing an external database](../../platform/using/about-fda.md).
 
-Um link deve ser declarado no esquema que contém a chave estrangeira da tabela vinculada pelo elemento principal:
+Um link deve ser declarado no schema que contém a chave estrangeira da tabela vinculada pelo elemento principal:
 
 ```
 <element name="name_of_link" type="link" target="key_of_destination_schema">
@@ -390,34 +393,34 @@ Os links obedecem às seguintes regras:
 * A definição de um link é inserida em um tipo de **link****`<element>`** com os seguintes atributos:
 
    * **name**: nome do link da tabela de origem,
-   * **meta**: nome do esquema de destino,
+   * **público alvo**: nome do schema do público alvo,
    * **rótulo**: rótulo da ligação,
-   * **revLink** (opcional): nome do link reverso do esquema de destino (deduzido automaticamente por padrão),
-   * **integridade** (opcional): integridade referencial da ocorrência da tabela de origem para a ocorrência da tabela de destino. Os valores possíveis são os seguintes:
+   * **revLink** (opcional): nome do link inverso do schema do público alvo (deduzido automaticamente por padrão),
+   * **integridade** (opcional): integridade referencial da ocorrência da tabela de origem para a ocorrência da tabela de públicos alvos. Os valores possíveis são os seguintes:
 
-      * **definir**: é possível excluir a ocorrência de origem se ela não for mais mencionada por uma ocorrência de destino,
-      * **normal**: a exclusão da ocorrência de origem inicializa as chaves do link para a ocorrência de destino (modo padrão), esse tipo de integridade inicializa todas as chaves estrangeiras,
-      * **próprio**: a exclusão da ocorrência de origem leva à exclusão da ocorrência de destino,
-      * **cópia**: o mesmo que **próprio** (em caso de eliminação) ou duplica as ocorrências (em caso de duplicação),
+      * **definir**: é possível excluir a ocorrência de origem se ela não for mais mencionada por uma ocorrência de público alvo,
+      * **normal**: a exclusão da ocorrência de origem inicializa as chaves do link para a ocorrência do público alvo (modo padrão), esse tipo de integridade inicializa todas as chaves estrangeiras,
+      * **próprio**: a exclusão da ocorrência de origem leva à exclusão da ocorrência do público alvo,
+      * **cópia**: igual ao **próprio** (em caso de eliminação) ou duplicado das ocorrências (em caso de duplicação),
       * **neutro**: não faz nada.
-   * **revIntegrity** (opcional): integridade no esquema de destino (opcional, &quot;normal&quot; por padrão),
+   * **revIntegrity** (opcional): integridade no schema do público alvo (opcional, &quot;normal&quot; por padrão),
    * **revCardinalidade** (opcional): com o valor &quot;único&quot; preenche a cardinalidade com o tipo 1-1 (1-N por padrão).
    * **externalJoin** (opcional): força a união externa
    * **revExternalJoin** (opcional): força a união externa no link inverso
 
 
-* Um link faz referência a um ou mais campos da tabela de origem para a tabela de destino. Os campos que compõem a junção ( `<join>` elemento) não precisam ser preenchidos porque são automaticamente deduzidos por padrão usando a chave interna do esquema de destino.
-* Um índice é adicionado automaticamente à chave estrangeira do link no esquema estendido.
-* Um link consiste em dois links parciais, onde o primeiro é declarado do esquema de origem e o segundo é criado automaticamente no esquema estendido do esquema de destino.
+* Um link faz referência a um ou mais campos da tabela de origem para a tabela de destino. Os campos que compõem a junção ( `<join>` elemento) não precisam ser preenchidos porque são automaticamente deduzidos por padrão usando a chave interna do schema do público alvo.
+* Um índice é adicionado automaticamente à chave estrangeira do link no schema estendido.
+* Um link consiste em dois links parciais, nos quais o primeiro é declarado a partir do schema de origem e o segundo é criado automaticamente no schema estendido do schema do público alvo.
 * Uma junção pode ser uma junção externa se o atributo **externalJoin** for adicionado, com o valor &quot;true&quot; (suportado no PostgreSQL).
 
 >[!NOTE]
 >
->Como padrão, os links são os elementos declarados no final do esquema.
+>Como padrão, os links são os elementos declarados no final do schema.
 
-### Example 1 {#example-1}
+### Exemplo 1 {#example-1}
 
-1-N em relação à tabela de esquema &quot;cus:company&quot;:
+1-N em relação à tabela de schemas &quot;cus:empresa&quot;:
 
 ```
 <srcSchema name="recipient" namespace="cus">
@@ -428,7 +431,7 @@ Os links obedecem às seguintes regras:
 </srcSchema>
 ```
 
-O esquema gerado:
+O schema gerou:
 
 ```
 <schema mappingType="sql" name="recipient" namespace="cus" xtkschema="xtk:schema">  
@@ -445,11 +448,11 @@ O esquema gerado:
 </schema>
 ```
 
-A definição do link é complementada pelos campos que compõem a junção, isto é, a chave primária com seu XPath (&quot;@id&quot;) no esquema de destino, e a chave estrangeira com seu XPath (&quot;@company-id&quot;) no esquema.
+A definição do link é complementada pelos campos que compõem a junção, isto é, a chave primária com seu XPath (&quot;@id&quot;) no schema de destino, e a chave estrangeira com seu XPath (&quot;@empresa-id&quot;) no schema.
 
-A chave estrangeira é adicionada automaticamente em um elemento que usa as mesmas características do campo associado na tabela de destino, com a seguinte convenção de nomenclatura: nome do esquema de destino seguido do nome do campo associado (&quot;company-id&quot; no nosso exemplo).
+A chave estrangeira é adicionada automaticamente em um elemento que usa as mesmas características do campo associado na tabela de destino, com a seguinte convenção de nomenclatura: nome do schema do público alvo seguido do nome do campo associado (&quot;empresa-id&quot; no nosso exemplo).
 
-Esquema estendido da meta (&quot;cus:company&quot;):
+schema estendido do público alvo (&quot;cus:empresa&quot;):
 
 ```
 <schema mappingType="sql" name="company" namespace="cus" xtkschema="xtk:schema">  
@@ -470,17 +473,17 @@ Esquema estendido da meta (&quot;cus:company&quot;):
 </schema>
 ```
 
-Um link reverso para a tabela &quot;cus:receipt&quot; foi adicionado com os seguintes parâmetros:
+Um link reverso para a tabela &quot;cus:recipient&quot; foi adicionado com os seguintes parâmetros:
 
-* **name**: deduzida automaticamente do nome do esquema de origem (pode ser forçada com o atributo &quot;revLink&quot; na definição do link no esquema de origem)
+* **name**: deduzida automaticamente do nome do schema de origem (pode ser forçada com o atributo &quot;revLink&quot; na definição do link no schema de origem)
 * **revLink**: nome do link reverso
-* **meta**: chave do esquema vinculado (esquema &quot;cus:customer&quot;)
+* **público alvo**: chave do schema vinculado (&quot;cus:recipient&quot; schema)
 * **unbound**: o link é declarado como um elemento de coleção para uma cardinalidade 1-N (por padrão)
-* **integridade**: &quot;define&quot; por padrão (pode ser forçado com o atributo &quot;revIntegrity&quot; na definição do link no esquema de origem).
+* **integridade**: &quot;define&quot; por padrão (pode ser forçado com o atributo &quot;revIntegrity&quot; na definição do link no schema de origem).
 
-### Example 2 {#example-2}
+### Exemplo 2 {#example-2}
 
-Neste exemplo, declararemos um link para a tabela de esquema &quot;nms:address&quot;. A junção é uma junção externa e é preenchida explicitamente com o endereço de email do destinatário e o campo &quot;@address&quot; da tabela vinculada (&quot;nms:address&quot;).
+Neste exemplo, declararemos um link para a tabela de schemas &quot;nms:address&quot;. A junção é uma junção externa e é preenchida explicitamente com o endereço de email do recipient e o campo &quot;@address&quot; da tabela vinculada (&quot;nms:address&quot;).
 
 ```
 <srcSchema name="recipient" namespace="cus">
@@ -495,7 +498,7 @@ Neste exemplo, declararemos um link para a tabela de esquema &quot;nms:address&q
 
 ### Example 3 {#example-3}
 
-1-1 relação com a tabela de esquema &quot;cus:extension&quot;:
+1-1 relação com a tabela de schemas &quot;cus:extension&quot;:
 
 ```
 <element integrity="own" label="Extension" name="extension" revCardinality="single" revLink="recipient" target="cus:extension" type="link"/>
@@ -503,7 +506,7 @@ Neste exemplo, declararemos um link para a tabela de esquema &quot;nms:address&q
 
 ### Example 4 {#example-4}
 
-Link para uma pasta (esquema &quot;xtk:folder&quot;):
+Link para uma pasta ( schema &quot;xtk:folder&quot;):
 
 ```
 <element default="DefaultFolder('nmsFolder')" label="Folder" name="folder" revDesc="Recipients in the folder" revIntegrity="own" revLabel="Recipients" target="xtk:folder" type="link"/>
@@ -513,7 +516,7 @@ O valor padrão retorna o identificador do primeiro arquivo de tipo de parâmetr
 
 ### Example 5 {#example-5}
 
-Neste exemplo, desejamos criar uma chave em um link (&quot;empresa&quot; para &quot;cus:empresa&quot; schema) com o atributo **xlink** e um campo da tabela (&quot;email&quot;):
+Neste exemplo, desejamos criar uma chave em um link (&quot;empresa&quot; para o schema &quot;cus:empresa&quot;) com o atributo **xlink** e um campo da tabela (&quot;email&quot;):
 
 ```
 <srcSchema name="recipient" namespace="cus">
@@ -529,7 +532,7 @@ Neste exemplo, desejamos criar uma chave em um link (&quot;empresa&quot; para &q
 </srcSchema>
 ```
 
-O esquema gerado:
+O schema gerou:
 
 ```
 <schema mappingType="sql" name="recipient" namespace="cus" xtkschema="xtk:schema">  
@@ -557,4 +560,4 @@ O esquema gerado:
 </schema>
 ```
 
-A definição da chave do nome &quot;companyEmail&quot; foi estendida com a chave estrangeira do link &quot;company&quot;. Essa chave gera um índice exclusivo em ambos os campos.
+A definição da chave do nome &quot;companyEmail&quot; foi estendida com a chave estrangeira do link &quot;empresa&quot;. Essa chave gera um índice exclusivo em ambos os campos.
