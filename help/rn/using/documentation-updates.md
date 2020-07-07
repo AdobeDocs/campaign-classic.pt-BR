@@ -12,11 +12,11 @@ discoiquuid: 5df34f55-135a-4ea8-afc2-f9427ce5ae7b
 index: y
 internal: n
 snippet: y
-translation-type: ht
-source-git-commit: 229df9ee7da5ac9c773a7af82aabceb755299cc6
-workflow-type: ht
-source-wordcount: '6767'
-ht-degree: 100%
+translation-type: tm+mt
+source-git-commit: 306c7bf0a94684d27c5f95035f3d3e77da8c7097
+workflow-type: tm+mt
+source-wordcount: '6795'
+ht-degree: 99%
 
 ---
 
@@ -26,6 +26,12 @@ ht-degree: 100%
 Esta página lista todos os novos recursos e atualizações de documentação por mês e versão do Campaign.
 
 Você também pode consultar as [Notas de versão do Adobe Campaign Classic](../../rn/using/latest-release.md) para obter mais atualizações.
+
+## Julho de 2020 {#july-2020}
+
+Uma nova seção foi adicionada com diretrizes relacionadas ao monitoramento de Campaign Classic. [Leia mais](../../production/using/monitoring-guidelines.md)
+
+A seção Privacidade e consentimento foi aprimorada com informações mais detalhadas e links úteis. [Leia mais](../../platform/using/privacy-and-recommendations.md).
 
 ## Junho de 2020 {#june-2020}
 
@@ -69,7 +75,6 @@ Os endpoints de rede do Campaign foram movidos para esta [seção](../../install
 A seção de instalação do Spam Assassin foi atualizada com o novo nome de arquivo de instalação. [Saiba mais](../../installation/using/configuring-spamassassin.md#installing-spamassassin)
 
 A seção sobre ambientes duplicados foi atualizada. [Saiba mais](../../production/using/duplicating-environments.md#step-2---export-the-target-environment-configuration--dev-)
-
 
 ## Maio de 2020 {#may-2020}
 
@@ -261,7 +266,7 @@ As etapas para configurar a renderização da caixa de entrada para instalaçõe
 
 ## Setembro de 2019 {#september-2019}
 
-Uma nova página foi adicionada para fornecer orientações gerais para a manutenção do Campaign Classic. [Leia mais](https://helpx.adobe.com/br/campaign/kb/acc-maintenance.html)
+Uma nova página foi adicionada para fornecer orientações gerais para a manutenção do Campaign Classic. [Leia mais](../../production/using/monitoring-guidelines.md)
 
 As informações relacionadas ao monitoramento de workflows foram centralizadas em uma nova seção dedicada. [Leia mais](../../workflow/using/monitoring-workflow-execution.md).
 
