@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 9188a68ca2ffcd9cf9e82b475aa2a0dd5807561b
+source-git-commit: d96912e39956f2f7b0b0af29dc765d0b9775a020
 workflow-type: tm+mt
 source-wordcount: '972'
 ht-degree: 88%
@@ -54,7 +54,7 @@ As mensagens de confirmação são enviadas por um template do delivery dedicado
 
    ![](assets/s_ncs_admin_survey_double-opt-in_sample_1d.png)
 
-1. Como os recipient deste delivery não confirmaram sua aprovação, eles ainda estão na lista de blocos de banco de dados. Para que eles recebam essa comunicação, é necessário autorizar delivery baseados neste modelo para recipient públicos alvos que estão na lista de blocos.
+1. Como os recipient desse delivery não confirmaram sua aprovação, eles ainda estão na lista de bloqueios do banco de dados. Para que eles recebam essa comunicação, é necessário autorizar delivery baseados neste modelo para recipient públicos alvos que estão na lista de bloqueios.
 
    Para fazer isso, clique na guia **[!UICONTROL Exclusions]**.
 
@@ -62,7 +62,7 @@ As mensagens de confirmação são enviadas por um template do delivery dedicado
 
    <!-- ![](assets/s_ncs_admin_survey_double-opt-in_sample_4d.png)-->
 
-   >[!CAUTION]
+   >[!IMPORTANT]
    >
    >Essa opção pode ser desabilitada somente nesse tipo de contexto.
 
@@ -112,7 +112,7 @@ Para fazer isso, siga as etapas abaixo:
 
    ![](assets/s_ncs_admin_survey_double-opt-in_sample_6f.png)
 
-   A primeira **[!UICONTROL Script]** atividade adicionará recipient à lista de blocos até que confirmem sua subscrição à newsletter. Seu conteúdo deve ser o seguinte:
+   A primeira **[!UICONTROL Script]** atividade adicionará recipient à lista de bloqueios até que confirmem a subscrição à newsletter. Seu conteúdo deve ser o seguinte:
 
    ```
    ctx.recipient.@blockList=1
@@ -189,7 +189,7 @@ A subscrição no boletim informativo envolve as seguintes etapas:
 
    No Adobe Campaign, o perfil do usuário é atualizado:
 
-   * já não constam da lista de bloqueios,
+   * já não estão na lista de bloqueios,
    * eles estão subscritos no serviço de informação.
 
       ![](assets/s_ncs_admin_survey_double-opt-in_sample_9.png)
