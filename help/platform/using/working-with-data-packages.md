@@ -14,11 +14,11 @@ discoiquuid: 42867665-d0ca-486e-9110-91716c0d5c57
 index: y
 internal: n
 snippet: y
-translation-type: ht
-source-git-commit: 8089eb39e7326408f94b5fd6acacd8950c0e6021
-workflow-type: ht
-source-wordcount: '2481'
-ht-degree: 100%
+translation-type: tm+mt
+source-git-commit: 788866c4f11d3875f713a61f7560d6d5255f3019
+workflow-type: tm+mt
+source-wordcount: '2460'
+ht-degree: 99%
 
 ---
 
@@ -31,7 +31,7 @@ O Adobe Campaign permite exportar ou importar a configuração e os dados da pla
 
 Os pacotes de dados permitem que entidades do banco de dados do Adobe Campaign sejam exibidas por meio de arquivos no formato XML. Cada entidade contida em um pacote é representada com todos os seus dados.
 
-O princípio de **pacotes de dados** é exportar uma configuração de dados e integrá-la a outro sistema do Adobe Campaign. Para obter mais informações sobre como manter um conjunto consistente de pacotes de dados, consulte [technote](https://docs.campaign.adobe.com/doc/AC/en/technicalResources/Technotes/AdobeCampaign_How_to_maintain_a_consistent_set_of_data_packages.pdf).
+O princípio de **pacotes de dados** é exportar uma configuração de dados e integrá-la a outro sistema do Adobe Campaign. Saiba como manter um conjunto consistente de pacotes de dados nesta [seção](#data-package-best-practices).
 
 ### Tipos de pacotes {#types-of-packages}
 
@@ -343,15 +343,11 @@ Para obter mais informações sobre pacotes padrão, consulte [esta página](../
 
 Esta seção descreve como organizar pacotes de dados de forma consistente durante a vida útil do projeto.
 
-<!--Adobe Campaign allows you to export or import the platform configuration through a package system.-->
-
 Os pacotes podem conter diferentes tipos de configurações e elementos, filtrados ou não. Se você perder alguns elementos ou não importar elementos/pacotes na ordem correta, a configuração da plataforma poderá ser interrompida.
 
 Além disso, com várias pessoas trabalhando na mesma plataforma com vários recursos diferentes, a pasta de especificações do pacote pode se tornar complexa rapidamente.
 
 Embora isso não seja obrigatório, esta seção oferece uma solução para ajudar a organizar e usar pacotes no Adobe Campaign para projetos de grande escala.
-
-<!--This solution has been used with a project involving more than 10 consultants.-->
 
 As principais restrições são as seguintes:
 * Organize os pacotes e acompanhe quando e o que foi alterado
