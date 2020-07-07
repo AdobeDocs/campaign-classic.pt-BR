@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 54cb4143fc534aa436c4b8b28e031e87a2a02e40
+source-git-commit: d96912e39956f2f7b0b0af29dc765d0b9775a020
 workflow-type: tm+mt
 source-wordcount: '1996'
 ht-degree: 95%
@@ -33,7 +33,7 @@ O ACS Connector conecta o Adobe Campaign v7 e o Adobe Campaign Standard. É um r
 
 Com o ACS Connector, o Campaign Standard continua sendo usado pelos profissionais de marketing digital para projetar, direcionar e executar campanhas, enquanto o Campaign v7 é personalizado para usuários orientados a dados, como profissionais de marketing de banco de dados.
 
->[!CAUTION]
+>[!IMPORTANT]
 >
 >O ACS Connector só está disponível como parte da oferta do Adobe Campaign Prime. Para obter mais informações sobre como obter uma licença do Adobe Campaign Prime, entre em contato com o gerente da sua conta.
 >
@@ -83,7 +83,7 @@ O ACS Connector replica os seguintes itens periodicamente do Campaign Standard p
 
 A replicação de IDs de delivery e logs de email permitem acessar o histórico de deliveries e o rastreamento de dados dos seus recipients do v7 do Campaign v7.
 
->[!CAUTION]
+>[!IMPORTANT]
 >
 >Somente os broadlogs de e-mail e os logs de rastreamento são replicados do Campaign Standard para o Campaign v7.
 
@@ -120,7 +120,7 @@ O faturamento não é afetado pela escolha de aplicação para enviar deliveries
 
 Existem dois tipos de implementação para o ACS Connector. Ambos são sempre realizados pela equipe Adobe Campaign Consulting.
 
->[!CAUTION]
+>[!IMPORTANT]
 >
 >Esta seção destina-se somente usuários especialistas, para fornecer uma visão geral do processo de implementação e suas principais etapas.
 >
@@ -140,7 +140,7 @@ Todos os elementos técnicos relacionados ao ACS Connector estão disponíveis n
 
 After the installation of the package, two technical workflows are available under **[!UICONTROL Administration > ACS Connector > Process]**.
 
->[!CAUTION]
+>[!IMPORTANT]
 >
 >Nunca tente modificar esses workflows. Eles nunca devem estar em erro ou em pausa. Se isso acontecer, entre em contato com o consultor do Adobe Campaign.
 
@@ -219,7 +219,7 @@ Abaixo estão a lista de campos de recipients que são replicados com a implemen
   </tr> 
   <tr> 
    <td> Não mais entrar em contato (por qualquer canal)<br /> </td> 
-   <td> @blockList<br /> </td> 
+   <td> @lista de bloqueios<br /> </td> 
   </tr> 
   <tr> 
    <td> Não mais contatar por e-mail<br /> </td> 
@@ -290,7 +290,7 @@ Os direitos são tratados de forma diferente no Campaign v7 e Campaign Standard.
 
 Esta seção descreve algumas das possibilidades de implementação avançada.
 
->[!CAUTION]
+>[!IMPORTANT]
 >
 >Essas informações só podem ser usadas como diretrizes gerais. Contate o consultor do Adobe Campaign para a implementação.
 
