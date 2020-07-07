@@ -14,11 +14,11 @@ discoiquuid: 5df34f55-135a-4ea8-afc2-f9427ce5ae7b
 index: y
 internal: n
 snippet: y
-translation-type: ht
-source-git-commit: 3d6c304aaa0b3e6ba1156f1a65e93f5c284b0c0a
-workflow-type: ht
-source-wordcount: '2848'
-ht-degree: 100%
+translation-type: tm+mt
+source-git-commit: 8c352c850777852d14ccf3002c20f651b46f9047
+workflow-type: tm+mt
+source-wordcount: '2917'
+ht-degree: 94%
 
 ---
 
@@ -77,11 +77,27 @@ _13 de agosto de 2019_
 
 ## Versão 19.1.4 - Build 9032{#release-19-1-4-build-9032}
 
-![](assets/do-not-localize/green_2.png) **22 de junho de 2020**: nova build (9032@800be2e) que inclui as seguintes correções:
+![](assets/do-not-localize/green_2.png) **Versão 10 Gold Standard**
+
+_7 de julho de 2020_
+
+Esta nova compilação (9032@efd8a94) inclui a seguinte correção:
+
+* Correção de um problema que impedia que links de rastreamento funcionassem. (NEO-26411)
+
+>[!CAUTION]
+>
+>Recomendamos que você atualize o console do cliente com o disponível nesta versão. Consulte esta [página](../../installation/using/installing-the-client-console.md)
+
+![](assets/do-not-localize/orange_2.png) **Versão Gold Standard 9**
+
+_22 de junho de 2020_
+
+Esta nova compilação (9032@800be2e) inclui as seguintes correções:
 
 * O conector HTTP2 para iOS foi aprimorado (atualizações de terceiros e gerenciamento de erros). (25904, NEO-, NEO-25903, NEO-25799)
 
-As seguintes correções estão relacionadas ao mecanismo de segurança do link de rastreamento:
+As seguintes correções estão relacionadas ao mecanismo de segurança do link de rastreamento (consulte a lista [de verificação de](https://helpx.adobe.com/br/campaign/kb/acc-security.html#signature-mechanism)segurança e privacidade):
 
 * Correção de um problema que impedia o funcionamento do rastreamento de &quot;cliques de notificação&quot; (notificações por push de iOS e Android). (NEO-25965)
 * Correção de um problema que poderia impedir a abertura/clique de URLs de rastreamento ao usar determinadas versões herdadas do Outlook.  (NEO-25688)
@@ -89,7 +105,11 @@ As seguintes correções estão relacionadas ao mecanismo de segurança do link 
 * Correção de um problema com o serviço anti-phishing. (NEO-25283)
 * Correção de um problema de rastreamento ao usar fórmulas de rastreamento personalizadas específicas. (NEO-25277)
 
-![](assets/do-not-localize/orange_2.png) **29 de abril de 2020**: nova build (9032@3a9dc9c) que inclui as seguintes correções:
+![](assets/do-not-localize/orange_2.png) **Versão Gold Standard 8**
+
+_29 de abril de 2020_
+
+Esta nova compilação (9032@3a9dc9c) inclui as seguintes correções:
 
 * A segurança no rastreamento de links no email foi aprimorada. Ela é ativada por padrão para todos os clientes. Um recurso de segurança adicional e aprimorado está disponível e pode ser ativado ao acessar o Atendimento ao cliente. Mais detalhes sobre o recurso e as etapas para clientes não hospedados para habilitá-lo podem ser encontrados na [lista de verificação de Segurança e Privacidade](https://helpx.adobe.com/br/campaign/kb/acc-security.html#signature-mechanism).
 
@@ -110,30 +130,54 @@ As seguintes correções estão relacionadas ao mecanismo de segurança do link 
 * Correção de uma regressão que resulta em falha do workflow de limpeza.
 * Correção de uma regressão menor nos logs de workflow de limpeza.
 
-![](assets/do-not-localize/orange_2.png) **05 de março de 2020**: nova build (9032@19f73c5) que inclui a seguinte correção:
+![](assets/do-not-localize/orange_2.png) **Versão Gold Standard 6**
+
+_9 de março de 2019_
+
+Esta nova compilação (9032@19f73c5) inclui a seguinte correção:
 
 * Correção de um problema com a conta externa que usa o FTP sobre SSL. (NEO-20498)
 
-![](assets/do-not-localize/orange_2.png) **17 de dezembro de 2019**: nova build (9032@d6b8062) que inclui a seguinte correção:
+![](assets/do-not-localize/orange_2.png) **Versão Gold Standard 5**
+
+_17 de dezembro de 2019_
+
+Esta nova compilação (9032@d6b8062) inclui a seguinte correção:
 
 * Correção de um problema de rastreamento nos seguintes canais de comunicação: dispositivos móveis (SMS, MMS), push (iOS, Android) e redes sociais (Facebook, Twitter). (NEO-19595)
 
-![](assets/do-not-localize/orange_2.png) **11 de dezembro de 2019**: nova build (9032@bc4a935) que inclui a seguinte correção:
+![](assets/do-not-localize/orange_2.png) **Versão Gold Standard 4**
+
+_11 de dezembro de 2019_
+
+Esta nova compilação (9032@bc4a935) inclui a seguinte correção:
 
 * Correção de um problema de desempenho ao enviar mensagens com um banco de dados MSSQL. (NEO-17558)
 
-![](assets/do-not-localize/orange_2.png) **20 de novembro de 2019**: nova build (9032@3468c7b) que inclui as seguintes correções:
+![](assets/do-not-localize/orange_2.png) **Versão Gold Standard 3**
+
+_20 de novembro de 2019_
+
+Esta nova compilação (9032@3468c7b) inclui as seguintes correções:
 
 * Correção de um problema de logon por autenticação IMS. (NEO-17312)
 * Correção de um problema ao exibir relatórios cumulativos em várias entregas. (NEO-18165)
 * Correção de um problema que poderia bloquear ou fazer o servidor web travar.
 
-![](assets/do-not-localize/orange_2.png) **19 de setembro de 2019**: nova build (9032@cee805c) que inclui as seguintes correções:
+![](assets/do-not-localize/orange_2.png) **Versão Gold Standard 2**
+
+_19 de setembro de 2019_
+
+Esta nova compilação (9032@cee805c) inclui as seguintes correções:
 
 * Correção de um problema ao usar o Conector CRM para Salesforce. (NEO-17712)
 * Correção de um problema de índice que causava problemas de desempenho ao enviar mensagens transacionais.
 
-![](assets/do-not-localize/orange_2.png) **13 de agosto de 2019**: build 19.1.4 inicial que inclui as seguintes correções:
+![](assets/do-not-localize/orange_2.png) **Versão 19.1.4 - Build 9032**
+
+_13 de agosto de 2019_
+
+Compilação 19.1.4 inicial que inclui as seguintes correções:
 
 * Correção de um problema em que a atividade do programador gerasse mensagens de erro indesejáveis durante a configuração do assistente. Reversão de atualização do NEO-11662. (NEO-17097)
 * Correção de uma regressão causada pelo NEO-12727, que podia interromper os fluxos de trabalho quando uma atividade de teste era executada duas vezes. (NEO-16835)
