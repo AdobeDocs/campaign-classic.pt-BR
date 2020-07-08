@@ -15,10 +15,10 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 8c352c850777852d14ccf3002c20f651b46f9047
+source-git-commit: e4a8812a85c8c98cdf38145a2b1649530adab89d
 workflow-type: tm+mt
-source-wordcount: '2917'
-ht-degree: 94%
+source-wordcount: '2934'
+ht-degree: 93%
 
 ---
 
@@ -44,7 +44,7 @@ ht-degree: 94%
  </tbody> 
 </table>
 
-A **última build estável** é a 9032 (3a9dc9c). Clique [aqui](../../rn/using/release--19-1.md#release-19-1-4-build-9032)
+A **última construção** estável é Gold Standard 10. Clique [aqui](../../rn/using/release--19-1.md#release-19-1-4-build-9032)
 
 ## ![](assets/do-not-localize/orange_2.png) Versão 19.1.6 - Build 9035 {#release-19-1-6-build-9035}
 
@@ -83,7 +83,7 @@ _7 de julho de 2020_
 
 Esta nova compilação (9032@efd8a94) inclui a seguinte correção:
 
-* Correção de um problema que impedia que links de rastreamento funcionassem. (NEO-26411)
+* Correção de um problema que impedia que o rastreamento funcionasse quando o servidor mid-sours estava na compilação 9032 (Gold Standard 7) e o servidor de marketing em uma versão mais antiga (anterior à 9032). (NEO-26411)
 
 >[!CAUTION]
 >
