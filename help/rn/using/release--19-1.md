@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: e4a8812a85c8c98cdf38145a2b1649530adab89d
+source-git-commit: d2781c8bc25cde742a89bddc1535886179130c2a
 workflow-type: tm+mt
 source-wordcount: '2934'
 ht-degree: 93%
@@ -83,7 +83,7 @@ _7 de julho de 2020_
 
 Esta nova compilação (9032@efd8a94) inclui a seguinte correção:
 
-* Correção de um problema que impedia que o rastreamento funcionasse quando o servidor mid-sours estava na compilação 9032 (Gold Standard 7) e o servidor de marketing em uma versão mais antiga (anterior à 9032). (NEO-26411)
+* Correção de um problema que impedia que o rastreamento funcionasse quando o servidor mid-sourcing estava na compilação 9032 (Gold Standard) e o servidor de marketing em uma compilação mais antiga (anterior à 9032). (NEO-26411)
 
 >[!CAUTION]
 >
