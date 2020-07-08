@@ -12,11 +12,11 @@ discoiquuid: 5df34f55-135a-4ea8-afc2-f9427ce5ae7b
 index: y
 internal: n
 snippet: y
-translation-type: ht
-source-git-commit: b2cc71f8f9b7df80b1601a9fa55bfd77f9a82433
-workflow-type: ht
-source-wordcount: '1765'
-ht-degree: 100%
+translation-type: tm+mt
+source-git-commit: e4a8812a85c8c98cdf38145a2b1649530adab89d
+workflow-type: tm+mt
+source-wordcount: '1764'
+ht-degree: 99%
 
 ---
 
@@ -42,7 +42,7 @@ ht-degree: 100%
  </tbody> 
 </table>
 
-A **última build estável** é a 9032 (3a9dc9c). Clique [aqui](../../rn/using/release--19-1.md#release-19-1-4-build-9032)
+A **última construção** estável é Gold Standard 10. Clique [aqui](../../rn/using/release--19-1.md#release-19-1-4-build-9032)
 
 ![](assets/do-not-localize/cp-icon.png) **Nova versão de junho do Painel de controle do Campaign** com monitoramento de perfis ativos, auditoria de entregabilidade de subdomínio e gerenciamento de chaves GPG. [Saiba mais](https://docs.adobe.com/content/help/pt-BR/control-panel/using/release-notes.html).
 
