@@ -15,9 +15,9 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 788866c4f11d3875f713a61f7560d6d5255f3019
+source-git-commit: d60389eb735fb50188ddc2f2e3df3788a3213446
 workflow-type: tm+mt
-source-wordcount: '1141'
+source-wordcount: '1128'
 ht-degree: 12%
 
 ---
@@ -132,12 +132,6 @@ A tabela a seguir lista todos os pacotes padrão com sua descrição, o tipo de 
    <td> Envia delivery para Adobe Campaign de de usando o canal Mobile/SMS. Opcional. <a href="../../delivery/using/sms-channel.md">Saiba mais</a> <br /> </td> 
    <td> Todos<br /> </td> 
   </tr> 
-  <tr> 
-   <td> canal de telefone<br /> </td> 
-   <td> Envia delivery usando o canal de telefone com o Adobe Campaign.<br /> </td> 
-   <td> Todos<br /> </td> 
-   <td> Opcional</td> 
-  </tr>
   <tr> 
    <td> Canal de aplicativo móvel<br /> </td> 
    <td> Usa a plataforma Adobe Campaign para enviar notificações personalizadas para terminais iOS e Android por meio de aplicativos. Opcional. <a href="../../delivery/using/about-mobile-app-channel.md">Saiba mais</a> <br /> </td> 
