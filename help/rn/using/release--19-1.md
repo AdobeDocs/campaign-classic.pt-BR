@@ -18,7 +18,7 @@ translation-type: tm+mt
 source-git-commit: d2781c8bc25cde742a89bddc1535886179130c2a
 workflow-type: tm+mt
 source-wordcount: '2934'
-ht-degree: 93%
+ht-degree: 98%
 
 ---
 
@@ -77,11 +77,11 @@ _13 de agosto de 2019_
 
 ## Versão 19.1.4 - Build 9032{#release-19-1-4-build-9032}
 
-![](assets/do-not-localize/green_2.png) **Versão 10 Gold Standard**
+![](assets/do-not-localize/green_2.png) **Versão Gold Standard 10**
 
 _7 de julho de 2020_
 
-Esta nova compilação (9032@efd8a94) inclui a seguinte correção:
+Esta nova build (9032@efd8a94) inclui a seguinte correção:
 
 * Correção de um problema que impedia que o rastreamento funcionasse quando o servidor mid-sourcing estava na compilação 9032 (Gold Standard) e o servidor de marketing em uma compilação mais antiga (anterior à 9032). (NEO-26411)
 
@@ -93,11 +93,11 @@ Esta nova compilação (9032@efd8a94) inclui a seguinte correção:
 
 _22 de junho de 2020_
 
-Esta nova compilação (9032@800be2e) inclui as seguintes correções:
+Esta nova build (9032@800be2e) inclui as seguintes correções:
 
 * O conector HTTP2 para iOS foi aprimorado (atualizações de terceiros e gerenciamento de erros). (25904, NEO-, NEO-25903, NEO-25799)
 
-As seguintes correções estão relacionadas ao mecanismo de segurança do link de rastreamento (consulte a lista [de verificação de](https://helpx.adobe.com/br/campaign/kb/acc-security.html#signature-mechanism)segurança e privacidade):
+As seguintes correções estão relacionadas ao mecanismo de segurança do link de rastreamento (consulte a [lista de verificação de segurança e privacidade](https://helpx.adobe.com/br/campaign/kb/acc-security.html#signature-mechanism)):
 
 * Correção de um problema que impedia o funcionamento do rastreamento de &quot;cliques de notificação&quot; (notificações por push de iOS e Android). (NEO-25965)
 * Correção de um problema que poderia impedir a abertura/clique de URLs de rastreamento ao usar determinadas versões herdadas do Outlook.  (NEO-25688)
@@ -109,7 +109,7 @@ As seguintes correções estão relacionadas ao mecanismo de segurança do link 
 
 _29 de abril de 2020_
 
-Esta nova compilação (9032@3a9dc9c) inclui as seguintes correções:
+Esta nova build (9032@3a9dc9c) inclui as seguintes correções:
 
 * A segurança no rastreamento de links no email foi aprimorada. Ela é ativada por padrão para todos os clientes. Um recurso de segurança adicional e aprimorado está disponível e pode ser ativado ao acessar o Atendimento ao cliente. Mais detalhes sobre o recurso e as etapas para clientes não hospedados para habilitá-lo podem ser encontrados na [lista de verificação de Segurança e Privacidade](https://helpx.adobe.com/br/campaign/kb/acc-security.html#signature-mechanism).
 
@@ -134,7 +134,7 @@ Esta nova compilação (9032@3a9dc9c) inclui as seguintes correções:
 
 _9 de março de 2019_
 
-Esta nova compilação (9032@19f73c5) inclui a seguinte correção:
+Esta nova build (9032@19f73c5) inclui a seguinte correção:
 
 * Correção de um problema com a conta externa que usa o FTP sobre SSL. (NEO-20498)
 
@@ -142,7 +142,7 @@ Esta nova compilação (9032@19f73c5) inclui a seguinte correção:
 
 _17 de dezembro de 2019_
 
-Esta nova compilação (9032@d6b8062) inclui a seguinte correção:
+Esta nova build (9032@d6b8062) inclui a seguinte correção:
 
 * Correção de um problema de rastreamento nos seguintes canais de comunicação: dispositivos móveis (SMS, MMS), push (iOS, Android) e redes sociais (Facebook, Twitter). (NEO-19595)
 
@@ -150,7 +150,7 @@ Esta nova compilação (9032@d6b8062) inclui a seguinte correção:
 
 _11 de dezembro de 2019_
 
-Esta nova compilação (9032@bc4a935) inclui a seguinte correção:
+Esta nova build (9032@bc4a935) inclui a seguinte correção:
 
 * Correção de um problema de desempenho ao enviar mensagens com um banco de dados MSSQL. (NEO-17558)
 
@@ -158,7 +158,7 @@ Esta nova compilação (9032@bc4a935) inclui a seguinte correção:
 
 _20 de novembro de 2019_
 
-Esta nova compilação (9032@3468c7b) inclui as seguintes correções:
+Esta nova build (9032@3468c7b) inclui as seguintes correções:
 
 * Correção de um problema de logon por autenticação IMS. (NEO-17312)
 * Correção de um problema ao exibir relatórios cumulativos em várias entregas. (NEO-18165)
@@ -168,7 +168,7 @@ Esta nova compilação (9032@3468c7b) inclui as seguintes correções:
 
 _19 de setembro de 2019_
 
-Esta nova compilação (9032@cee805c) inclui as seguintes correções:
+Esta nova build (9032@cee805c) inclui as seguintes correções:
 
 * Correção de um problema ao usar o Conector CRM para Salesforce. (NEO-17712)
 * Correção de um problema de índice que causava problemas de desempenho ao enviar mensagens transacionais.
@@ -177,7 +177,7 @@ Esta nova compilação (9032@cee805c) inclui as seguintes correções:
 
 _13 de agosto de 2019_
 
-Compilação 19.1.4 inicial que inclui as seguintes correções:
+Build 19.1.4 inicial que inclui as seguintes correções:
 
 * Correção de um problema em que a atividade do programador gerasse mensagens de erro indesejáveis durante a configuração do assistente. Reversão de atualização do NEO-11662. (NEO-17097)
 * Correção de uma regressão causada pelo NEO-12727, que podia interromper os fluxos de trabalho quando uma atividade de teste era executada duas vezes. (NEO-16835)
@@ -260,7 +260,7 @@ _30 de maio de 2019_
 **Aprimoramentos de grade de Proteção, robustez e escalabilidade**
 
 * Otimização do uso da sequência Lifespan - XtkNewId: as tabelas mais antigas foram movidas da sequência xtkNewId para sequências dedicadas. [Leia mais](https://helpx.adobe.com/br/campaign/kb/sequence_auto_generation.html#Switchtoadedicatedsequence)
-* FDA sobre HTTP v2: FDA sobre protocolo HTTP é amplamente usado em implantações híbridas, especialmente para recuperação de broadLog e preparação de delivery. Robustez foi aprimorada para evitar problemas de rede e possíveis erros como recuperação e envio de dados. Isso requer que os builds nas duas extremidades da conexão estejam atualizados, caso contrário, o protocolo antigo ainda será usado.
+* FDA sobre HTTP v2: FDA sobre protocolo HTTP é amplamente usado em implantações híbridas, especialmente para recuperação de broadLog e preparação de delivery. Robustez foi aprimorada para evitar problemas de rede e possíveis erros como recuperação e envio de dados. Isso requer que as builds nas duas extremidades da conexão estejam atualizados, caso contrário, o protocolo antigo ainda será usado.
 * Workflow de rastreamento: a robustez do workflow de rastreamento foi aprimorada. Vários problemas relacionados a inserções/atualizações de log de rastreamento e personalização de rastreamento de URL foram corrigidos. Além disso, o workflow de rastreamento agora detecta problemas de log de rastreamento que podem levar a erros e interromper o workflow. Esses problemas agora são descartados e não processados.
 * Workflow de limpeza: o workflow de limpeza foi aprimorado para evitar possíveis erros e interrupções. Isso otimiza o tamanho e o desempenho do banco de dados.
 * Imagens incorporadas em mensagens transacionais: adicionamos o suporte completo de imagens incorporadas em mensagens transacionais, para evitar possíveis falhas ou ausência de imagens.
