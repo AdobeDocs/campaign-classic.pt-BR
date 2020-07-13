@@ -15,10 +15,10 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: d2781c8bc25cde742a89bddc1535886179130c2a
+source-git-commit: 77bb2ee42919a1bbf9a1a9e4594505f5cf99ca68
 workflow-type: tm+mt
-source-wordcount: '2934'
-ht-degree: 98%
+source-wordcount: '2921'
+ht-degree: 99%
 
 ---
 
@@ -83,7 +83,7 @@ _7 de julho de 2020_
 
 Esta nova build (9032@efd8a94) inclui a seguinte correção:
 
-* Correção de um problema que impedia que o rastreamento funcionasse quando o servidor mid-sourcing estava na compilação 9032 (Gold Standard) e o servidor de marketing em uma compilação mais antiga (anterior à 9032). (NEO-26411)
+* Correção de um problema que impedia o rastreamento de funcionar quando o recurso de assinatura era desativado. (NEO-26411)
 
 >[!CAUTION]
 >
