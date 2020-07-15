@@ -14,8 +14,11 @@ discoiquuid: c94ce5b7-aa8a-4ea2-845d-68c9c7dc2a7b
 index: y
 internal: n
 snippet: y
-translation-type: ht
-source-git-commit: c10a0a11c6e9952aa47da1f7a15188c79c62508d
+translation-type: tm+mt
+source-git-commit: 56212b320d5077f9b66952e7c11eb8bdcea9e3b4
+workflow-type: tm+mt
+source-wordcount: '845'
+ht-degree: 84%
 
 ---
 
@@ -28,10 +31,10 @@ Uma atividade do tipo **Update data** realiza uma atualização em massa dos cam
 
 O campo **[!UICONTROL Operation type]** permite escolher o processo que deve ser executado nos dados no banco de dados:
 
-* **[!UICONTROL Insert or update]**: adiciona os dados ou os atualiza quando já foram adicionados.
-* **[!UICONTROL Insert]**: adiciona apenas dados.
-* **[!UICONTROL Update]**: atualiza apenas dados.
-* **[!UICONTROL Update and merge collections]**: atualiza os dados e escolhe um registro &quot;mestre&quot; e, em seguida, vincula os elementos ligados às duplicatas neste registro mestre. As duplicatas podem ser excluídas sem criar elementos anexados órfãos.
+* **[!UICONTROL Insert or update]**: adicione dados ou atualize-os se já tiverem sido adicionados.
+* **[!UICONTROL Insert]**: adicione apenas dados.
+* **[!UICONTROL Update]**: atualizar apenas dados.
+* **[!UICONTROL Update and merge collections]**: atualize os dados e escolha um registro primário, em seguida, vincule os elementos vinculados aos duplicados neste registro primário. As duplicatas podem ser excluídas sem criar elementos anexados órfãos.
 * **[!UICONTROL Delete]**: excluir dados.
 
 ![](assets/s_advuser_update_data_1.png)
@@ -42,7 +45,7 @@ O campo **[!UICONTROL Batch size]** permite selecionar o número de elementos de
 
 Especifica como identificar os registros no banco de dados:
 
-* Se as entradas de dados se relacionam a uma dimensão de direcionamento existente, selecione a opção **[!UICONTROL By directly using the targeting dimension]** e a selecione no campo **[!UICONTROL Updated dimension]**.
+* If data entries relate to an existing targeting dimension, select the **[!UICONTROL By directly using the targeting dimension]** option and select it in the **[!UICONTROL Updated dimension]** field.
 
    É possível exibir os campos da dimensão selecionada usando o botão de lupa **[!UICONTROL Edit this link]**.
 
@@ -52,7 +55,7 @@ Especifica como identificar os registros no banco de dados:
 
 ## Seleção dos campos a serem atualizados {#selecting-the-fields-to-be-updated}
 
-Use a opção **[!UICONTROL Automatically associate fields with the same name]** para que o Adobe Campaign identifique os campos a serem atualizados de forma automática.
+Use the **[!UICONTROL Automatically associate fields with the same name]** option in order for Adobe Campaign to automatically identify the fields to be updated.
 
 ![](assets/s_advuser_update_data_3b.png)
 
@@ -60,7 +63,7 @@ Também é possível usar o ícone **[!UICONTROL Insert]** para selecionar manua
 
 ![](assets/s_advuser_update_data_3.png)
 
-Selecione todos os campos a serem atualizados e, se necessário, adicione condições dependendo da atualização. Para isso, use a coluna **[!UICONTROL Taken into account if]**. As condições são aplicadas uma após a outra mantendo a ordem na lista. Use as setas à direita para alterar a ordem das atualizações.
+Selecione todos os campos a serem atualizados e, se necessário, adicione condições dependendo da atualização. To do this, use the **[!UICONTROL Taken into account if]** column. As condições são aplicadas uma após a outra mantendo a ordem na lista. Use as setas à direita para alterar a ordem das atualizações.
 
 É possível usar o mesmo campo de destino várias vezes.
 
@@ -68,7 +71,7 @@ Em uma operação **[!UICONTROL Insert or update]**, é possível selecionar a c
 
 ![](assets/s_advuser_update_data_5.png)
 
-Os campos **[!UICONTROL modifiedDate]**, **[!UICONTROL modifiedBy]**, **[!UICONTROL createdDate]** e **[!UICONTROL createdBy]** são atualizados automaticamente durante as atualizações de dados, a menos que o modo de gerenciamento esteja configurado especificamente na tabela de atualização dos campos.
+The **[!UICONTROL modifiedDate]**, **[!UICONTROL modifiedBy]**, **[!UICONTROL createdDate]** and **[!UICONTROL createdBy]** fields are updated automatically during data updates, unless their management mode is configured specifically in the field update table.
 
 A atualização de registro é executada somente para registros contendo pelo menos uma diferença. Se os valores forem iguais, nenhuma atualização será executada.
 
@@ -78,8 +81,8 @@ O link **[!UICONTROL Advanced parameters]** permite especificar as opções adic
 * **[!UICONTROL Disable audit]**.
 * **[!UICONTROL Empty the destination value if the source value is empty (NULL)]**. Essa opção é selecionada automaticamente por padrão.
 * **[!UICONTROL Update all columns with matching names]**.
-* Especifique as condições que consideram elementos de origem usando uma expressão no campo **[!UICONTROL Enable if]**.
-* Especifica condições que consideram duplicatas usando uma expressão. Se selecionar a opção **[!UICONTROL Ignore records which concern the same target]**, somente o primeiro item na lista de expressões será considerado.
+* Specify conditions that consider source elements using an expression in the **[!UICONTROL Enabled if]** field.
+* Especifica condições que consideram duplicatas usando uma expressão. If you check the **[!UICONTROL Ignore records which concern the same target]** option, only the first in the list of expressions will be considered.
 
 **[!UICONTROL Generate an outbound transition]**
 
@@ -97,7 +100,7 @@ Atualizar dados e mesclar coleções permite atualizar os dados contidos em um r
 >
 >Essa opção também permite processar referências a registros secundários de tabelas de trabalho do workflow (targetWorkflow), deliverys (targetDelivery) e listas (targetList). Se precisar, esses links aparecem na lista onde os campos e coleções são selecionados.
 
-1. Selecione a operação **[!UICONTROL Update and merge collections]**.
+1. Selecione a **[!UICONTROL Update and merge collections]** operação.
 
    ![](assets/update_and_merge_collections1.png)
 
