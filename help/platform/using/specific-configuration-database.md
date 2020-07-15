@@ -15,15 +15,15 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 4f1f1cd9c5ebb77fbb01cadad6c587ed2fe64dcc
+source-git-commit: 959455ec92b40581f04cf0e357b6c0d3f3fba81c
 workflow-type: tm+mt
-source-wordcount: '1835'
+source-wordcount: '1833'
 ht-degree: 93%
 
 ---
 
 
-# Configurações específicas por tipo de banco de dados {#specific-configurations-by-database-type}
+# Configuração FDA conectores {#specific-configurations-by-database-type}
 
 Dependendo dos bancos de dados externos que você deseja acessar do Adobe Campaign, você precisará realizar algumas configurações específicas. Essas configurações envolvem basicamente a instalação de drivers e a declaração de variáveis de ambiente pertencentes a cada RDBMS no servidor do Adobe Campaign.
 
@@ -59,6 +59,7 @@ Para criar sua conta externa do [!DNL Azure Synapse]:
    * **[!UICONTROL Password]**: Senha da conta do usuário
 
    * **[!UICONTROL Database]**: Nome do banco de dados
+
    ![](assets/azure_1.png)
 
 ### Azure Synapse no CentOS {#azure-centos}
@@ -258,6 +259,7 @@ A conta externa do [!DNL Snowflake] permite conectar a instância do Campaign ao
    * **[!UICONTROL Password]**: Senha da conta do usuário
 
    * **[!UICONTROL Database]**: Nome do banco de dados
+
    ![](assets/snowflake.png)
 
 1. Clique na guia **[!UICONTROL Parameters]** e depois no botão **[!UICONTROL Deploy functions]** para criar as funções.
@@ -346,6 +348,7 @@ The [!DNL Hadoop] external account allows you to connect your Campaign instance 
    * **[!UICONTROL Database]**: nome do banco de dados, se não estiver especificado no DSN. Pode ficar em branco, se estiver especificado no DSN
 
    * **[!UICONTROL Time zone]**: Fuso horário do servidor
+
    ![](assets/hadoop3.png)
 
 O conector é compatível com as seguintes opções ODBC:
@@ -404,6 +407,7 @@ The [!DNL Oracle] external account allows you to connect your Campaign instance 
    * **[!UICONTROL Password]**: Senha da conta do usuário
 
    * **[!UICONTROL Time zone]**: Fuso horário do servidor
+
    ![](assets/oracle_config.png)
 
 ### Oracle no Linux {#for-linux-1}
