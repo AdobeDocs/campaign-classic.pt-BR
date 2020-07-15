@@ -14,11 +14,11 @@ discoiquuid: 8b101c0b-3611-4f15-813b-7c0bf54fc48a
 index: y
 internal: n
 snippet: y
-translation-type: ht
-source-git-commit: 3bf835b3f686d1293fda7e6254660c477ba26452
-workflow-type: ht
-source-wordcount: '3152'
-ht-degree: 100%
+translation-type: tm+mt
+source-git-commit: 2f0bb31f7234289f39a561fa58a23cac0390b465
+workflow-type: tm+mt
+source-wordcount: '3151'
+ht-degree: 99%
 
 ---
 
@@ -64,7 +64,7 @@ Para fazer isso, siga as etapas abaixo:
 
    >[!CAUTION]
    >
-   > A partir da versão 20.2, os conectores herdados serão descontinuados e não terão suporte. Recomendamos o uso do conector **[!UICONTROL Extended generic SMPP]**. Para obter mais informações sobre como migrar para o conector recomendado, consulte esta [página](https://helpx.adobe.com/br/campaign/kb/sms-connector.html).
+   > A partir da versão 20.2, os conectores herdados estão obsoletos e não são suportados. Recomendamos o uso do conector **[!UICONTROL Extended generic SMPP]**. Para obter mais informações sobre como migrar para o conector recomendado, consulte esta [página](https://helpx.adobe.com/br/campaign/kb/sms-connector.html).
 
 1. A opção **[!UICONTROL Enable verbose SMPP traces in the log file]** permite que você descarte todo o tráfego SMPP em arquivos de log. Essa opção deve ser habilitada para solucionar problemas no conector e comparar com o tráfego visto pelo provedor.
 
