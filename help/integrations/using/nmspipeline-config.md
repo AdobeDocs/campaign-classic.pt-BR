@@ -15,17 +15,17 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 9957dabca4c63d504a3d06cf527a97b79fee46d5
+source-git-commit: 0112d5bd052ad66169225073276d1da4f3c245d8
 workflow-type: tm+mt
-source-wordcount: '379'
-ht-degree: 2%
+source-wordcount: '376'
+ht-degree: 3%
 
 ---
 
 
 # Opção de pipeline NmsPipeline_Config {#nmspipeline_config}
 
-Uma vez que a autenticação funciona, o pipeline pode recuperar os eventos e processá-los. Ele só processa acionadores configurados no Adobe Campaign, ignorando os outros. O acionador deve ter sido gerado da Analytics e empurrado para o pipeline previamente.
+Quando a autenticação funcionar, [!DNL pipelined] poderá recuperar os eventos e processá-los. Ele só processa acionadores configurados no Adobe Campaign, ignorando os outros. O acionador deve ter sido gerado da Analytics e empurrado para o pipeline previamente.
 A opção também pode ser configurada com um curinga para capturar todos os acionadores independentemente do nome.
 
 A configuração dos acionadores é feita em uma opção, em **[!UICONTROL Administration]** > **[!UICONTROL Platform]** > **[!UICONTROL Options]**. O nome da opção é **[!UICONTROL NmsPipeline_Config]**. O tipo de dados é &quot;texto longo&quot; no formato JSON.
@@ -90,6 +90,6 @@ Verifique se o JSON é válido com a ajuda deste [site](http://jsonlint.com/).
 
 * &quot;name&quot; é a ID do acionador. Um caractere curinga &quot;*&quot; captura todos os acionadores.
 * &quot;Consumidor&quot; é qualquer string exclusiva que identifica exclusivamente a instância nlserver. Normalmente, pode ser o próprio nome da instância. Para vários ambientes (dev/stage/prod), verifique se é exclusiva para cada um deles para que cada instância receba uma cópia da mensagem.
-* O pipeline também suporta o tópico &quot;aliases&quot;.
+* [!DNL Pipelined] também suporta o tópico &quot;aliases&quot;.
 
-Reinicie o pipeline após fazer alterações.
+Reinicie [!DNL pipelined] após fazer as alterações.
