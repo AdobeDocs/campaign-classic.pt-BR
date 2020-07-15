@@ -15,17 +15,17 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 39d6da007d69f81da959660b24b56ba2558a97ba
+source-git-commit: 0112d5bd052ad66169225073276d1da4f3c245d8
 workflow-type: tm+mt
-source-wordcount: '441'
+source-wordcount: '438'
 ht-degree: 2%
 
 ---
 
 
-# Monitoramento de tubulação {#pipeline-monitoring}
+# Monitoramento de pipeline {#pipeline-monitoring}
 
-O serviço Web de status de pipeline fornece informações sobre o status do processo de pipeline.
+O serviço Web de [!DNL pipelined] status fornece informações sobre o status do [!DNL pipelined] processo.
 
 Ele pode ser acessado manualmente usando um navegador ou automaticamente com um aplicativo de monitoramento.
 
@@ -50,7 +50,7 @@ Os indicadores recomendados a serem monitorados são realçados.
    * próximo deslocamento: tempo de espera até o próximo lote, quando concluído.
    * processado desde o último fluxo: número de acionadores processados no último lote.
 * roteamento
-   * acionadores: lista de acionadores recuperados. Configurado na opção pipeline.
+   * acionadores: lista de acionadores recuperados. Configurado na [!DNL pipelined] opção.
 * stats
    * average-pointer-flush-time-ms: tempo médio de processamento para um lote de acionadores.
    * average-trigger-processing-time-ms: tempo médio gasto analisando os dados de acionadores.
