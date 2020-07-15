@@ -15,9 +15,9 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 39d6da007d69f81da959660b24b56ba2558a97ba
+source-git-commit: 0112d5bd052ad66169225073276d1da4f3c245d8
 workflow-type: tm+mt
-source-wordcount: '482'
+source-wordcount: '479'
 ht-degree: 3%
 
 ---
@@ -46,11 +46,11 @@ Pipeline é um sistema de mensagens hospedado no Experience Cloud que usa o [Apa
 
 ### Como funciona o Pipeline? {#how-pipeline-work}
 
-O processo &quot;pipelined&quot; está sempre em execução no servidor de marketing da Adobe Campaign. Ele se conecta ao pipeline, recupera os eventos e os processa imediatamente.
+O [!DNL pipelined] processo está sempre em execução no servidor de marketing do Adobe Campaign. Ele se conecta ao pipeline, recupera os eventos e os processa imediatamente.
 
 ![](assets/triggers_2.png)
 
-O processo implantado faz logon no Experience Cloud usando um serviço de autenticação e envia uma chave privada. O serviço de autenticação retorna um token. O token é usado para autenticação ao recuperar os eventos. [!DNL Triggers] são recuperados de um serviço Web REST usando uma simples solicitação GET. A resposta é o formato JSON. Os parâmetros para a solicitação incluem o nome do acionador e um ponteiro que indica a última mensagem recuperada. O processo em pipeline lida com ele automaticamente.
+O [!DNL pipelined] processo faz logon no Experience Cloud usando um serviço de autenticação e envia uma chave privada. O serviço de autenticação retorna um token. O token é usado para autenticação ao recuperar os eventos. [!DNL Triggers] são recuperados de um serviço Web REST usando uma simples solicitação GET. A resposta é o formato JSON. Os parâmetros para a solicitação incluem o nome do acionador e um ponteiro que indica a última mensagem recuperada. O [!DNL pipelined] processo lida com ele automaticamente.
 
 ## Usar a integração do Adobe Experience Cloud Triggers com o Adobe Campaign Classic
 
