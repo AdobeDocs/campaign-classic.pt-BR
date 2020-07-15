@@ -15,15 +15,15 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 39d6da007d69f81da959660b24b56ba2558a97ba
+source-git-commit: 0112d5bd052ad66169225073276d1da4f3c245d8
 workflow-type: tm+mt
-source-wordcount: '1152'
-ht-degree: 1%
+source-wordcount: '1145'
+ht-degree: 2%
 
 ---
 
 
-# eventos acionadores {#events}
+# Triggers eventos {#events}
 
 ## Processando eventos no JavaScript {#events-javascript}
 
@@ -31,13 +31,13 @@ ht-degree: 1%
 
 O pipeline usa uma função JavaScript para processar cada mensagem. Essa função é definida pelo usuário.
 
-Está configurado na **[!UICONTROL NmsPipeline_Config]** opção sob o atributo &quot;JSConnector&quot;. Esse javascript é chamado toda vez que um evento é recebido. É executado pelo processo por oleoduto.
+Está configurado na **[!UICONTROL NmsPipeline_Config]** opção sob o atributo &quot;JSConnector&quot;. Esse javascript é chamado toda vez que um evento é recebido. É executado pelo [!DNL pipelined] processo.
 
 O arquivo JS de amostra é cus:triggers.js.
 
 ### função JavaScript {#function-js}
 
-O pipeline Javascript deve ser start com uma função específica.
+O [!DNL pipelined] Javascript deve ser start com uma função específica.
 
 Essa função é chamada uma vez para cada evento:
 
@@ -51,7 +51,7 @@ Deve voltar como
 <undefined/>
 ```
 
-Reinicie o pipeline após editar o JS.
+Reinicie [!DNL pipelined] após editar o JS.
 
 ### Acionar formato de dados {#trigger-format}
 
@@ -110,7 +110,7 @@ Exemplo:
 
 ### Ordem de processamento dos eventos {#order-events}
 
-Os eventos são processados um de cada vez, por ordem de deslocamento. Cada thread do pipeline processa uma partição diferente.
+Os eventos são processados um de cada vez, por ordem de deslocamento. Cada thread do [!DNL pipelined] processa uma partição diferente.
 
 O &quot;deslocamento&quot; do último evento recuperado é armazenado no banco de dados. Portanto, se o processo for interrompido, ele será reiniciado a partir da última mensagem. Esses dados são armazenados no schema incorporado xtk:pipelineOffset.
 
@@ -122,8 +122,8 @@ Atualmente, não há como ter filas diferentes para ambientes separados, como &q
 
 ### Registro e tratamento de erros {#logging-error-handling}
 
-Logs como logInfo() são direcionados ao log implantado. Erros como logError() são gravados no log pipelined e fazem com que o evento seja colocado em uma fila de tentativas. Verifique o log implantado.
-Mensagens com erro são repetidas várias vezes na duração definida nas opções implantadas.
+Logs como logInfo() são direcionados ao [!DNL pipelined] log. Erros como logError() são gravados no [!DNL pipelined] log e fazem com que o evento seja colocado em uma fila de tentativas. Verifique o log implantado.
+Mensagens com erro são repetidas várias vezes na duração definida nas [!DNL pipelined] opções.
 
 Para fins de depuração e monitoramento, os dados completos do acionador são gravados na tabela do acionador. Está no campo &quot;dados&quot; no formato XML. Como alternativa, um logInfo() contendo os dados do acionador serve a mesma finalidade.
 
