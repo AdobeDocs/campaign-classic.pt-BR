@@ -15,9 +15,9 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 39d6da007d69f81da959660b24b56ba2558a97ba
+source-git-commit: 0112d5bd052ad66169225073276d1da4f3c245d8
 workflow-type: tm+mt
-source-wordcount: '650'
+source-wordcount: '642'
 ht-degree: 2%
 
 ---
@@ -29,7 +29,7 @@ ht-degree: 2%
 
 A sua versão do Adobe Campaign Classic não suporta o pipeline.
 
-1. Verifique se o elemento pipelined está presente no arquivo de configuração. Se não, significa que não é suportado.
+1. Verifique se o [!DNL pipelined] elemento está presente no arquivo de configuração. Se não, significa que não é suportado.
 1. Atualize para a versão 6.11 build 8705 ou posterior.
 
 **Falha no pipeline com &#39;&#39; aurait dex comisscer par &#39;[&#39; ou &#39;{&#39; (iRc=16384)&quot;**
@@ -53,7 +53,7 @@ O parâmetro @authPrivateKey do arquivo de configuração da instância está in
 1. Verifique se authPrivateKey: start com @, termina com = e tem cerca de 4000 caracteres.
 1. Procure a chave original e verifique se ela é: no formato RSA, 4096 bits de comprimento e start com —BEGIN RSA PRIVATE KEY—.
    <br> Se necessário, recrie a chave e registre-a no Adobe Analytics. Consulte esta [seção](../../integrations/using/configuring-pipeline.md#oauth-client-creation).
-1. Verifique se a chave foi codificada dentro da mesma instância que foi implantada. <br>Se necessário, refaça a codificação usando a amostra de JavaScript ou fluxo de trabalho.
+1. Verifique se a chave foi codificada na mesma instância [!DNL pipelined]. <br>Se necessário, refaça a codificação usando a amostra de JavaScript ou fluxo de trabalho.
 
 **Falha no pipeline com &quot;não é possível ler o token durante a autenticação&quot;**
 
@@ -65,12 +65,12 @@ A chave privada tem um formato inválido.
 
 **Nenhum acionador é recuperado**
 
-Quando o processo implantado está em execução e nenhum acionador é recuperado:
+Quando o [!DNL pipelined] processo estiver em execução e nenhum acionador for recuperado:
 
 1. Verifique se o acionador está ativo no Analytics e está gerando eventos.
-1. Verifique se o processo implantado está em execução.
-1. Procure erros no log implantado.
-1. Procure erros na página de status canalizada. disparador descartado, as falhas de disparo devem ser zero.
+1. Verifique se o [!DNL pipelined] processo está em execução.
+1. Procure erros no [!DNL pipelined] registro.
+1. Procure erros na página de [!DNL pipelined] status. disparador descartado, as falhas de disparo devem ser zero.
 1. Verifique se o nome do acionador está configurado na **[!UICONTROL NmsPipeline_Config]** opção. Em caso de dúvida, use a opção curinga.
 1. Verifique se a Analytics tem um acionador ativo e está gerando eventos. Pode haver um atraso de algumas horas após a configuração ser feita no Analytics antes de ela estar ativa.
 
@@ -89,9 +89,9 @@ Quando o carimbo de data e hora do Analytics for muito mais antigo do que a data
 
 Geralmente, um acionador pode levar de 15 a 90 minutos para iniciar uma campanha de marketing. Isso varia dependendo da implementação da coleta de dados, do carregamento no pipeline, da configuração personalizada do acionador definido e do fluxo de trabalho no Adobe Campaign.
 
-1. Verifique se o processo implantado está em execução.
+1. Verifique se o [!DNL pipelined] processo está em execução.
 1. Procure erros em pipelined.log que possam causar tentativas. Corrija os erros, se aplicável.
-1. Verifique o tamanho da fila na página de status do pipeline. Se o tamanho da fila for grande, melhore o desempenho do JS.
+1. Verifique o tamanho da fila na página de [!DNL pipelined] status. Se o tamanho da fila for grande, melhore o desempenho do JS.
 1. Como um atraso parece aumentar com o volume, configure os acionadores no Analytics usando menos mensagens.
 Anexos
 
