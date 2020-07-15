@@ -15,15 +15,15 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 39d6da007d69f81da959660b24b56ba2558a97ba
+source-git-commit: 0112d5bd052ad66169225073276d1da4f3c245d8
 workflow-type: tm+mt
-source-wordcount: '924'
+source-wordcount: '917'
 ht-degree: 1%
 
 ---
 
 
-# Configurando o pipeline {#configuring-pipeline}
+# Configuração de pipeline {#configuring-pipeline}
 
 Parâmetros de autenticação, como a ID do cliente, a chave privada e o terminal de autenticação, são configurados nos arquivos de configuração da instância.
 A lista de acionadores a serem processados é configurada em uma opção. Está no formato JSON.
@@ -129,7 +129,7 @@ Siga estas etapas:
 
 ### Registro do nome do aplicativo no Adobe Campaign Classic {#application-name-registration}
 
-O ID da aplicação do cliente oAuth criado deve ser configurado no Adobe Campaign. Você pode fazer isso editando o arquivo de configuração da instância no elemento pipelined, especificamente o atributo appName.
+O ID da aplicação do cliente oAuth criado deve ser configurado no Adobe Campaign. Você pode fazer isso editando o arquivo de configuração da instância no [!DNL pipelined] elemento, especificamente o atributo appName.
 
 Exemplo:
 
@@ -139,11 +139,11 @@ Exemplo:
 
 ### Criptografia de chave {#key-encription}
 
-Para ser usada por pipeline, a chave privada deve ser criptografada. A criptografia é feita usando a função CryptString Javascript e deve ser executada na mesma instância que foi implantada.
+Para ser usada por [!DNL pipelined], a chave privada deve ser criptografada. A criptografia é feita usando a função cryptString Javascript e deve ser executada na mesma instância [!DNL pipelined].
 
 Uma amostra da criptografia de chave privada com JavaScript está disponível nesta [página](../../integrations/using/pipeline-troubleshooting.md).
 
-A chave privada criptografada deve estar registrada no Adobe Campaign. Você pode fazer isso editando o arquivo de configuração da instância no elemento pipelined, especificamente o atributo authPrivateKey.
+A chave privada criptografada deve estar registrada no Adobe Campaign. Você pode fazer isso editando o arquivo de configuração da instância no [!DNL pipelined] elemento, especificamente o atributo authPrivateKey.
 
 Exemplo:
 
@@ -153,7 +153,7 @@ Exemplo:
 
 ### start automático do processo implantado {#pipelined-auto-start}
 
-O processo por pipeline deve ser iniciado automaticamente.
+O [!DNL pipelined] processo deve ser iniciado automaticamente.
 Para fazer isso, defina o elemento no arquivo de configuração como autostart=&quot;true&quot;:
 
 ```
@@ -174,7 +174,7 @@ nlserver start pipelined@instance
 nlserver restart pipelined@instance
 ```
 
-Em caso de erros, procure erros na saída padrão (se você tiver iniciado manualmente) ou no arquivo de log implantado. Consulte a seção Solução de problemas deste documento para obter mais informações sobre como resolver problemas.
+Em caso de erros, procure por erros na saída padrão (se você tiver iniciado manualmente) ou no arquivo de [!DNL pipelined] log. Consulte a seção Solução de problemas deste documento para obter mais informações sobre como resolver problemas.
 
 ### Opções de configuração implantadas {#pipelined-configuration-options}
 
@@ -187,7 +187,7 @@ Em caso de erros, procure erros na saída padrão (se você tiver iniciado manua
 | discoverPipelineEndpoint | URL para descobrir o ponto de extremidade de Serviços de Pipeline a ser usado para este locatário. Padrão: https://producer-pipeline-pnw.adobe.net |
 | dumpStatePeriodSec | O período entre 2 despejos do estado interno do processo em var/INSTANCE/pipelined.jsonção interna também está acessível sob demanda em http://INSTANCE/pipelined/status (porta 7781). |
 | forcedPipelineEndpoint | Desative a descoberta do PipelineServicesEndpoint e force-a |
-| monitorServerPort | O processo implantado escuta essa porta para fornecer o estado interno do processo em http://INSTANCE/pipelined/status (porta 7781). |
+| monitorServerPort | O [!DNL pipelined] processo escuta essa porta para fornecer o estado interno do processo em http://INSTANCE/pipelined/status (porta 7781). |
 | pointerFlushMessageCount | Quando esse número de mensagens é processado, os deslocamentos são salvos no banco de dados. O padrão é 1000 |
 | pointerFlushPeriodSec | Após esse período, os deslocamentos serão salvos no banco de dados. O padrão é 5 (segundos) |
 | processingJSThreads | Número de mensagens de processamento de threads dedicados com conectores JS personalizados. O padrão é 4 |
