@@ -13,10 +13,10 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 7d944973e10c4df166325049b947e359853a2353
+source-git-commit: fdc305ff5bf27aa5cc0a4a9e89ac8ed9d5bead57
 workflow-type: tm+mt
-source-wordcount: '699'
-ht-degree: 8%
+source-wordcount: '721'
+ht-degree: 9%
 
 ---
 
@@ -27,7 +27,7 @@ ht-degree: 8%
 
 A **[!UICONTROL Monitoring]** guia, que pode ser acessada a partir da página inicial do Campaign Classic, é o ponto de entrada principal que ajuda a monitorar sua instância.
 
-Ele fornece uma painel do que está ocorrendo em sua instância:  seu status (versão de compilação, pacotes instalados etc.), indicadores do sistema, registros, workflows que estão em execução no momento, estado dos últimos delivery enviados etc.
+Ele fornece uma painel do que está ocorrendo em sua instância: seu status (versão de compilação, pacotes instalados etc.), indicadores do sistema, registros, workflows que estão em execução no momento, estado dos últimos delivery enviados etc.
 
 Informações detalhadas estão disponíveis [aqui](../../production/using/monitoring-processes.md).
 
@@ -35,16 +35,18 @@ Informações detalhadas estão disponíveis [aqui](../../production/using/monit
 
 ## Monitoring Campaign Classic processes {#monitoring-campaign-classic-processes}
 
-Existem outras formas de monitorar os diferentes processos de Campanha. Para obter mais informações, consulte as seções abaixo.
-
 <table>
-<tr><td><img src="assets/do-not-localize/instance_icon.svg" width="60px"><p><a href="#monitoring-instance">Monitore sua instância</a></p></td>
-<td><img src="assets/do-not-localize/workflow_icon.svg" width="60px"><p><a href="#moniroting-workflows">workflows de monitor</a></p></td>
-<td><img src="assets/do-not-localize/database_icon.svg" width="60px"><p><a href="#monitoring-database">Monitorar o banco de dados</a></p></td>
-<td><img src="assets/do-not-localize/delivery_icon.svg" width="60px"><p><a href="#monitoring-deliveries">delivery de monitor</a></p></td></tr>
+<tr><td><img src="assets/do-not-localize/icon_system.svg" width="60px"><p><a href="#monitoring-instance">Monitore sua instância</a></p></td>
+<td><img src="assets/do-not-localize/icon_workflows.svg" width="60px"><p><a href="#moniroting-workflows">workflows de monitor</a></p></td>
+<td><img src="assets/do-not-localize/icon_database.svg" width="60px"><p><a href="#monitoring-database">Monitorar o banco de dados</a></p></td>
+<td><img src="assets/do-not-localize/icon_Send.svg" width="60px"><p><a href="#monitoring-deliveries">delivery de monitor</a></p></td></tr>
 </table>
 
+Existem outras formas de monitorar os diferentes processos de Campanha. Eles fornecem várias maneiras de monitorar suas instâncias para garantir que seu sistema esteja saudável e, eventualmente, solucionar problemas que podem ocorrer ao configurar workflows, enviar delivery etc.
+
 ### Monitorando sua instância {#monitoring-instance}
+
+<img src="assets/do-not-localize/icon_system.svg" width="60px">
 
 **Ferramentas de monitoramento automático**
 
@@ -56,13 +58,15 @@ A trilha de auditoria permite visualizar o histórico completo de alterações r
 
 **Painel de controle**
 
-O Painel de controle permite que você gerencie várias configurações da sua instância: gerencie permissões de URL, verifique os detalhes da instância, como as versões de compilação dos servidores etc. Também permite monitorar o espaço disponível nos servidores SFTP conectados à sua instância. [Clique aqui](https://docs.adobe.com/content/help/pt-BR/control-panel/using/control-panel-home.translate.html) para obter mais informações.
+O Painel de controle do Campaign permite gerenciar várias configurações da sua instância: gerencie permissões de URL, verifique os detalhes da instância, como as versões de compilação dos servidores etc. Também permite monitorar o espaço disponível nos servidores SFTP conectados à sua instância. [Clique aqui](https://docs.adobe.com/content/help/pt-BR/control-panel/using/control-panel-home.translate.html) para obter mais informações.
 
 >[!NOTE]
 >
->Observe que o Painel de controle é acessível somente para usuários administradores e está disponível para todos os clientes que usam o Adobe Managed Services.
+>Observe que o Painel de controle do Campaign é acessível somente para usuários administradores e está disponível para todos os clientes que usam o Adobe Managed Services.
 
 ### Monitoramento de workflows {#monitoring-workflows}
+
+<img src="assets/do-not-localize/icon_workflows.svg" width="60px">
 
 **Workflow HeatMap**
 
@@ -88,6 +92,8 @@ Seguir as diretrizes e as práticas recomendadas ao usar workflows pode ajudar a
 
 ### Monitoramento de deliveries {#monitoring-deliveries}
 
+<img src="assets/do-not-localize/icon_send.svg" width="60px">
+
 **Relatórios SMTP**
 
 Os relatórios SMTP exibem estatísticas de delivery e erros SMTP por domínio. [Clique aqui](../../production/using/monitoring-processes.md) para obter mais informações.
@@ -103,6 +109,8 @@ Os relatórios SMTP exibem estatísticas de delivery e erros SMTP por domínio. 
 * [Problemas](../../production/using/temporary-files.md) de arquivos temporários - somente *em modelos de hospedagem local*
 
 ### Monitoramento do banco de dados {#monitoring-database}
+
+<img src="assets/do-not-localize/icon_database.svg" width="60px">
 
 **Workflow de limpeza do banco de dados**
 
