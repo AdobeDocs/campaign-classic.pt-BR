@@ -14,11 +14,11 @@ discoiquuid: a4441820-1b3d-4bac-a6e3-1c9c14466d19
 index: y
 internal: n
 snippet: y
-translation-type: ht
-source-git-commit: b1a961822224ab0a9551f51942a5f94cf201c8ee
-workflow-type: ht
-source-wordcount: '422'
-ht-degree: 100%
+translation-type: tm+mt
+source-git-commit: 9f55a2014546ce08972f51e4930ce04d4ce0c188
+workflow-type: tm+mt
+source-wordcount: '413'
+ht-degree: 84%
 
 ---
 
@@ -29,7 +29,7 @@ A atividade **[!UICONTROL Sub-workflow]** permite acionar a execução de outro 
 
 Você pode chamar vários sub-workflows em um único workflow. Os Sub-workflows são executados de forma síncrona.
 
-No exemplo abaixo, um fluxo de trabalho &quot;mestre&quot; chama um subfluxo de trabalho por meio de saltos. Para obter mais informações sobre objetos gráficos do tipo salto, consulte [esta seção](../../workflow/using/jump--start-point-and-end-point-.md).
+No exemplo abaixo, um fluxo de trabalho principal está chamando um subfluxo de trabalho usando saltos. Para obter mais informações sobre objetos gráficos do tipo salto, consulte [esta seção](../../workflow/using/jump--start-point-and-end-point-.md).
 
 1. Crie um fluxo de trabalho que será usado como um subfluxo de trabalho em outro fluxo de trabalho.
 1. Insira uma atividade **[!UICONTROL Jump (end point)]** com prioridade 1 no início do fluxo de trabalho. Se você tiver vários saltos do tipo &quot;ponto final&quot;, o Adobe Campaign usará o salto &quot;ponto final&quot; com o número mais baixo.
@@ -44,7 +44,7 @@ No exemplo abaixo, um fluxo de trabalho &quot;mestre&quot; chama um subfluxo de 
    >Para que o subfluxo de trabalho seja executado corretamente, você deve ter apenas um salto do tipo &quot;ponto final&quot; com o número mais baixo e apenas um salto do tipo &quot;ponto inicial&quot; com o número mais alto.
 
 1. Complete e salve este &quot;sub-workflow&quot;.
-1. Crie um workflow principal.
+1. Crie um fluxo de trabalho principal.
 1. Insira uma atividade **[!UICONTROL Sub-workflow]** e abra-a.
 1. Selecione o fluxo de trabalho que deseja usar na lista suspensa **[!UICONTROL Workflow template]**.
 
@@ -57,13 +57,17 @@ No exemplo abaixo, um fluxo de trabalho &quot;mestre&quot; chama um subfluxo de 
 
 1. Execute o fluxo de trabalho.
 
-Uma vez executado, o fluxo de trabalho chamado como subfluxo de trabalho ainda estará com o status **[!UICONTROL Being edited]**, o que significa:
+Once run, the workflow that was called as a sub-workflow remains in **[!UICONTROL Being edited]** status, which means the following:
 
 * Você não pode clicar com o botão direito do mouse nas transições para exibir o target.
 * A contagem de públicos intermediários não pode ser exibida.
-* Os logs são agregados no workflow principal e são rotulados apenas como &quot;subworkflow&quot;.
+* Os registros do subfluxo de trabalho são exibidos no fluxo de trabalho principal.
 
-De fato, este workflow é apenas um template. Um novo sub-workflow baseado nesse template é criado quando chamado pelo workflow principal.
+   ![](assets/subworkflow_logs.png)
+
+>[!NOTE]
+>
+>Se ocorrer algum erro no subfluxo de trabalho, o fluxo de trabalho principal será pausado e uma cópia do subfluxo de trabalho será criada.
 
 ## Parâmetros de entrada (opcional) {#input-parameters--optional-}
 
