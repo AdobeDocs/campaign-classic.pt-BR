@@ -15,36 +15,15 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 77bb2ee42919a1bbf9a1a9e4594505f5cf99ca68
+source-git-commit: 6c3c2ad62778c4c4f874c5b34c014529ce3e7185
 workflow-type: tm+mt
-source-wordcount: '2921'
+source-wordcount: '2118'
 ht-degree: 99%
 
 ---
 
 
 # Versão 19.1{#release-19-1}
-
-[Build upgrade](https://helpx.adobe.com/br/campaign/kb/acc-build-upgrade.html) | [Control Panel releases](https://docs.adobe.com/content/help/pt-BR/control-panel/using/release-notes.html) | [Documentation updates](../../rn/using/documentation-updates.md) | [Previous releases](../../rn/using/release--19-1.md) | [Deprecated features](https://helpx.adobe.com/br/campaign/kb/deprecated-and-removed-features.html)
-
-<table> 
- <tbody> 
-  <tr> 
-   <td><img src="assets/do-not-localize/green3.png"/><strong>Disponibilidade geral</strong></td>
-   <td><img src="assets/do-not-localize/blue3.png"/><strong>Candidato a lançamento</strong></td> 
-   <td><img src="assets/do-not-localize/orange3.png"/><strong>Não está mais disponível</strong></td> 
-   <td><img src="assets/do-not-localize/red3.png"/><strong>Obsoleto</strong></td> 
-  </tr> 
-   <tr> 
-   <td>Compilação estável mais recente disponível. Compilação validada na produção.<br></td>
-   <td>Compilação validada pela Adobe. Aguardando prova de produção.<br></td>
-   <td>Versão mais recente disponível com correções de erros. Atualização necessária.<br></td>
-   <td>Contém regressões conhecidas. A atualização é obrigatória.<br></td>
-  </tr> 
- </tbody> 
-</table>
-
-A **última construção** estável é Gold Standard 10. Clique [aqui](../../rn/using/release--19-1.md#release-19-1-4-build-9032)
 
 ## ![](assets/do-not-localize/orange_2.png) Versão 19.1.6 - Build 9035 {#release-19-1-6-build-9035}
 
@@ -62,7 +41,7 @@ _3 de outubro de 2019_
 * Correção de um problema que resultava no não processamento de determinadas mensagens pelo servidor de Mid-Sourcing. (NEO-12395)
 * Correção de um problema que impedia o uso total da atividade do SQL Data Management (o direito nomeado do &quot;SQL Data Management&quot; estava ausente).
 
-## ![](assets/do-not-localize/orange_2.png) Versão 19.1.5 - Build 9033{#release-19-1-5-build-9033}
+## ![](assets/do-not-localize/red_2.png) Versão 19.1.5 - Build 9033{#release-19-1-5-build-9033}
 
 _13 de agosto de 2019_
 
@@ -75,117 +54,14 @@ _13 de agosto de 2019_
 * Adição de uma nova opção de autenticação para oferecer suporte às credenciais do OAuth no conector AC com o Microsoft Dynamics.(NEO-11982)
 * Correção de um problema em que o UUID (Identificador universal único) fazia com que a atividade de enriquecimento falhasse o withHive FDA.
 
-## Versão 19.1.4 - Build 9032{#release-19-1-4-build-9032}
+## ![](assets/do-not-localize/green_2.png) Versão 19.1.4 - Build 9032{#release-19-1-4-build-9032}
 
-![](assets/do-not-localize/green_2.png) **Versão Gold Standard 10**
-
-_7 de julho de 2020_
-
-Esta nova build (9032@efd8a94) inclui a seguinte correção:
-
-* Correção de um problema que impedia o rastreamento de funcionar quando o recurso de assinatura era desativado. (NEO-26411)
-
->[!CAUTION]
+>[!NOTE]
 >
->Recomendamos que você atualize o console do cliente com o disponível nesta versão. Consulte esta [página](../../installation/using/installing-the-client-console.md)
+>As versões 19.1.4 Gold Standard estão listadas nesta [página](../../rn/using/gold-standard.md).
 
-![](assets/do-not-localize/orange_2.png) **Versão Gold Standard 9**
 
-_22 de junho de 2020_
-
-Esta nova build (9032@800be2e) inclui as seguintes correções:
-
-* O conector HTTP2 para iOS foi aprimorado (atualizações de terceiros e gerenciamento de erros). (25904, NEO-, NEO-25903, NEO-25799)
-
-As seguintes correções estão relacionadas ao mecanismo de segurança do link de rastreamento (consulte a [lista de verificação de segurança e privacidade](https://helpx.adobe.com/br/campaign/kb/acc-security.html#signature-mechanism)):
-
-* Correção de um problema que impedia o funcionamento do rastreamento de &quot;cliques de notificação&quot; (notificações por push de iOS e Android). (NEO-25965)
-* Correção de um problema que poderia impedir a abertura/clique de URLs de rastreamento ao usar determinadas versões herdadas do Outlook.  (NEO-25688)
-* Correção de um problema que impedia o funcionamento do rastreamento de URLs usando fragmentos em parâmetros de personalização (tags de âncora com sinal de hashtag). (NEO-25774)
-* Correção de um problema com o serviço anti-phishing. (NEO-25283)
-* Correção de um problema de rastreamento ao usar fórmulas de rastreamento personalizadas específicas. (NEO-25277)
-
-![](assets/do-not-localize/orange_2.png) **Versão Gold Standard 8**
-
-_29 de abril de 2020_
-
-Esta nova build (9032@3a9dc9c) inclui as seguintes correções:
-
-* A segurança no rastreamento de links no email foi aprimorada. Ela é ativada por padrão para todos os clientes. Um recurso de segurança adicional e aprimorado está disponível e pode ser ativado ao acessar o Atendimento ao cliente. Mais detalhes sobre o recurso e as etapas para clientes não hospedados para habilitá-lo podem ser encontrados na [lista de verificação de Segurança e Privacidade](https://helpx.adobe.com/br/campaign/kb/acc-security.html#signature-mechanism).
-
->[!CAUTION]
->
->Se tiver problemas com notificações por push usando links de rastreamento ou delivery usando tags de âncora, recomendamos desativar o novo mecanismo de assinatura para links de rastreamento. O procedimento está detalhado nesta [página](https://helpx.adobe.com/br/campaign/kb/acc-security.html#signature-mechanism)
-
-* Correção de um problema que impedia a exibição de imagens na entrega de linha. (NEO-23207)
-* Correção de um problema com a atividade **Transferência de Arquivo**, que impedia que a autenticação com a chave SFTP funcionasse no Debian 9. (NEO-23183)
-* Correção de um problema que poderia afetar a notificação via push quando enviada em alta frequência. (NEO-20516)
-* Correção de um problema no gerenciamento de respostas de oferta que resulta em falhas no servidor da Web. (NEO-19482)
-* Correção de um erro no gerenciamento do LibreOffice que impede a exportação de relatórios. (NEO-20982)
-* Correção de um problema que causa um erro ao atualizar vários workflows por meio do uso de uma atividade de pesquisa.
-* Melhora do gerenciamento do LibreOffice para evitar falhas na pré-visualização de email com arquivos .odt.
-* Melhora no gerenciamento da conexão do Apache para evitar latência no serviço da Web.
-* Melhora na exibição da tag da versão (7 dígitos) no menu **Sobre**.
-* Correção de uma prevenção no gerenciamento de listas que impede a publicação de ofertas.
-* Correção de uma regressão que resulta em falha do workflow de limpeza.
-* Correção de uma regressão menor nos logs de workflow de limpeza.
-
-![](assets/do-not-localize/orange_2.png) **Versão Gold Standard 6**
-
-_9 de março de 2019_
-
-Esta nova build (9032@19f73c5) inclui a seguinte correção:
-
-* Correção de um problema com a conta externa que usa o FTP sobre SSL. (NEO-20498)
-
-![](assets/do-not-localize/orange_2.png) **Versão Gold Standard 5**
-
-_17 de dezembro de 2019_
-
-Esta nova build (9032@d6b8062) inclui a seguinte correção:
-
-* Correção de um problema de rastreamento nos seguintes canais de comunicação: dispositivos móveis (SMS, MMS), push (iOS, Android) e redes sociais (Facebook, Twitter). (NEO-19595)
-
-![](assets/do-not-localize/orange_2.png) **Versão Gold Standard 4**
-
-_11 de dezembro de 2019_
-
-Esta nova build (9032@bc4a935) inclui a seguinte correção:
-
-* Correção de um problema de desempenho ao enviar mensagens com um banco de dados MSSQL. (NEO-17558)
-
-![](assets/do-not-localize/orange_2.png) **Versão Gold Standard 3**
-
-_20 de novembro de 2019_
-
-Esta nova build (9032@3468c7b) inclui as seguintes correções:
-
-* Correção de um problema de logon por autenticação IMS. (NEO-17312)
-* Correção de um problema ao exibir relatórios cumulativos em várias entregas. (NEO-18165)
-* Correção de um problema que poderia bloquear ou fazer o servidor web travar.
-
-![](assets/do-not-localize/orange_2.png) **Versão Gold Standard 2**
-
-_19 de setembro de 2019_
-
-Esta nova build (9032@cee805c) inclui as seguintes correções:
-
-* Correção de um problema ao usar o Conector CRM para Salesforce. (NEO-17712)
-* Correção de um problema de índice que causava problemas de desempenho ao enviar mensagens transacionais.
-
-![](assets/do-not-localize/orange_2.png) **Versão 19.1.4 - Build 9032**
-
-_13 de agosto de 2019_
-
-Build 19.1.4 inicial que inclui as seguintes correções:
-
-* Correção de um problema em que a atividade do programador gerasse mensagens de erro indesejáveis durante a configuração do assistente. Reversão de atualização do NEO-11662. (NEO-17097)
-* Correção de uma regressão causada pelo NEO-12727, que podia interromper os fluxos de trabalho quando uma atividade de teste era executada duas vezes. (NEO-16835)
-* Correção de um problema que resultava em um código HTTP incorreto ser retornado (HTTP 200 OK em vez de HTTP 403 Forbidden) quando um token de sessão inválido ou expirado era usado em chamadas API. (NEO-16826)
-* Correção de um problema com a chave DKIM, que não era inserida em emails, causando problemas de entrega. (NEO-16804)
-* Correção de vários problemas com o agendamento de fluxos de trabalho. Os fluxos de trabalho eram agendados para serem executados uma vez por dia sem levar em consideração a configuração do programador. (NEO-16619, NEO-16426)
-
-## ![](assets/do-not-localize/orange_2.png) Versão 19.1.2 - Build 9029{#release-19-1-2-build-9029}
+## ![](assets/do-not-localize/red_2.png) Versão 19.1.2 - Build 9029{#release-19-1-2-build-9029}
 
 _21 de junho de 2019_
 
@@ -201,7 +77,7 @@ _21 de junho de 2019_
 * Agora permitimos a exclusão de registros fictícios criados no Microsoft Dynamics durante o fluxo de trabalho de importação.
 * Permissões aprimoradas para executar o pacote de zona de segurança ao usar a conta interna.
 
-## ![](assets/do-not-localize/orange_2.png) Versão 19.1 - Build 9026{#release-19-1-build-9026}
+## ![](assets/do-not-localize/red_2.png) Versão 19.1 - Build 9026{#release-19-1-build-9026}
 
 _30 de maio de 2019_
 
