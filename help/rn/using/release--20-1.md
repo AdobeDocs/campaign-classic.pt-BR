@@ -13,50 +13,29 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: e4a8812a85c8c98cdf38145a2b1649530adab89d
+source-git-commit: 6c3c2ad62778c4c4f874c5b34c014529ce3e7185
 workflow-type: tm+mt
-source-wordcount: '1407'
-ht-degree: 99%
+source-wordcount: '1330'
+ht-degree: 100%
 
 ---
 
 
 # Versão 20.1{#release-20-1}
 
-[Build upgrade](https://helpx.adobe.com/br/campaign/kb/acc-build-upgrade.html) | [Control Panel releases](https://docs.adobe.com/content/help/pt-BR/control-panel/using/release-notes.html) | [Documentation updates](../../rn/using/documentation-updates.md) | [Previous releases](../../rn/using/release--19-2.md) | [Deprecated features](https://helpx.adobe.com/br/campaign/kb/deprecated-and-removed-features.html)
-
-<table> 
- <tbody> 
-  <tr> 
-   <td><img src="assets/do-not-localize/green3.png"/><strong>Disponibilidade geral</strong></td>
-   <td><img src="assets/do-not-localize/blue3.png"/><strong>Candidato a lançamento</strong></td> 
-   <td><img src="assets/do-not-localize/orange3.png"/><strong>Não está mais disponível</strong></td> 
-   <td><img src="assets/do-not-localize/red3.png"/><strong>Obsoleto</strong></td> 
-  </tr> 
-   <tr> 
-   <td>Compilação estável mais recente disponível. Compilação validada na produção.<br></td>
-   <td>Compilação validada pela Adobe. Aguardando prova de produção.<br></td>
-   <td>Versão mais recente disponível com correções de erros. Atualização necessária.<br></td>
-   <td>Contém regressões conhecidas. A atualização é obrigatória.<br></td>
-  </tr> 
- </tbody> 
-</table>
-
-A **última construção** estável é Gold Standard 10. Clique [aqui](../../rn/using/release--19-1.md#release-19-1-4-build-9032)
-
-## ![](assets/do-not-localize/orange_2.png) Versão 20.1.3 - Build 9124 {#release-20-1-3-build-9124}
+## ![](assets/do-not-localize/orange_2.png) Versão 20.1.3 - Build 9124{#release-20-1-3-build-9124}
 
 _6 de maio de 2020_
 
 * Correção de um problema com a atividade **Transferência de Arquivo**, que impedia que a autenticação com a chave SFTP funcionasse no Debian 9. (NEO-23183)
 
-## ![](assets/do-not-localize/orange_2.png) Versão 20.1.2 - Build 9123 {#release-20-1-2-build-9123}
+## ![](assets/do-not-localize/orange_2.png) Versão 20.1.2 - Build 9123{#release-20-1-2-build-9123}
 
 _13 de março de 2020_
 
 * Correção de um problema que impedia a implantação da versão em servidores Red Hat 7. (NEO-23332)
 
-## ![](assets/do-not-localize/orange_2.png) Versão 20.1 - Build 9122 {#release-20-1-build-9122}
+## ![](assets/do-not-localize/orange_2.png) Versão 20.1 - Build 9122{#release-20-1-build-9122}
 
 _17 de fevereiro de 2020_
 
