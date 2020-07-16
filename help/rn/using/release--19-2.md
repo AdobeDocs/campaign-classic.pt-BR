@@ -15,36 +15,15 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: e4a8812a85c8c98cdf38145a2b1649530adab89d
+source-git-commit: c7b00960ffde49df65cd5c8fcfb8fab6aee485d7
 workflow-type: tm+mt
-source-wordcount: '1372'
-ht-degree: 99%
+source-wordcount: '1295'
+ht-degree: 100%
 
 ---
 
 
 # Versão 19.2{#release-19-2}
-
-[Build upgrade](https://helpx.adobe.com/br/campaign/kb/acc-build-upgrade.html) | [Control Panel releases](https://docs.adobe.com/content/help/pt-BR/control-panel/using/release-notes.html) | [Documentation updates](../../rn/using/documentation-updates.md) | [Previous releases](../../rn/using/release--19-1.md) | [Deprecated features](https://helpx.adobe.com/br/campaign/kb/deprecated-and-removed-features.html)
-
-<table> 
- <tbody> 
-  <tr> 
-   <td><img src="assets/do-not-localize/green3.png"/><strong>Disponibilidade geral</strong></td>
-   <td><img src="assets/do-not-localize/blue3.png"/><strong>Candidato a lançamento</strong></td> 
-   <td><img src="assets/do-not-localize/orange3.png"/><strong>Não está mais disponível</strong></td> 
-   <td><img src="assets/do-not-localize/red3.png"/><strong>Obsoleto</strong></td> 
-  </tr> 
-   <tr> 
-   <td>Compilação estável mais recente disponível. Compilação validada na produção.<br></td>
-   <td>Compilação validada pela Adobe. Aguardando prova de produção.<br></td>
-   <td>Versão mais recente disponível com correções de erros. Atualização necessária.<br></td>
-   <td>Contém regressões conhecidas. A atualização é obrigatória.<br></td>
-  </tr> 
- </tbody> 
-</table>
-
-A **última construção** estável é Gold Standard 10. Clique [aqui](../../rn/using/release--19-1.md#release-19-1-4-build-9032)
 
 ## ![](assets/do-not-localize/orange_2.png) Versão 19.2.3 - Build 9081 {#release-19-2-3-build-9081}
 
