@@ -14,9 +14,9 @@ discoiquuid: 5ff1577f-0809-46fd-ac1e-11b24637e35c
 index: y
 internal: n
 snippet: y
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: d96912e39956f2f7b0b0af29dc765d0b9775a020
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1661'
 ht-degree: 100%
 
@@ -76,6 +76,7 @@ As etapas a seguir detalham a configuração do Data Connector usando um assiste
    * Integrações (Criar)
    * Integrações (Atualizar)
    * Integrações (Excluir)
+
    ![](assets/adobe_genesis_install_002.png)
 
 1. Na lista de parceiros, selecione **[!UICONTROL Adobe Campaign Classic]**.
@@ -220,6 +221,7 @@ Eles estão disponíveis na árvore do Adobe Campaign, na pasta **[!UICONTROL Ad
    * **[!UICONTROL Number of distinct clicks]** (@recipientClick)
    * **[!UICONTROL Opt-Out]** (@optOut)
    * **[!UICONTROL Errors]** (@error)
+
    >[!NOTE]
    >
    >Os dados enviados são o delta baseado no último instantâneo que pode levar ao valor negativo nos dados de métrica.
