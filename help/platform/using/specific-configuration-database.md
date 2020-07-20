@@ -18,7 +18,7 @@ translation-type: tm+mt
 source-git-commit: 959455ec92b40581f04cf0e357b6c0d3f3fba81c
 workflow-type: tm+mt
 source-wordcount: '1833'
-ht-degree: 93%
+ht-degree: 99%
 
 ---
 
@@ -327,7 +327,7 @@ O conector é compatível com as seguintes opções:
 
 ### Conta externa do Hadoop {#hadoop-external}
 
-The [!DNL Hadoop] external account allows you to connect your Campaign instance to your Hadoop external database.
+A conta externa do [!DNL Hadoop] permite conectar a instância do Campaign ao banco de dados externo do Hadoop.
 
 1. No Campaign Classic, configure a conta externa do [!DNL Hadoop]. No **[!UICONTROL Explorer]**, clique em **[!UICONTROL Administration]** / **[!UICONTROL Platform]** / **[!UICONTROL External accounts]**.
 
@@ -386,9 +386,9 @@ A conexão com um banco de dados externo do Hadoop no FDA exige as seguintes con
 
 ## Configuração do acesso ao Oracle {#configure-access-to-oracle}
 
-### Oracle external account {#oracle-external}
+### Conta externa do Oracle {#oracle-external}
 
-The [!DNL Oracle] external account allows you to connect your Campaign instance to your Hadoop external database.
+A conta externa do [!DNL Oracle] permite conectar a instância do Campaign ao banco de dados externo do Hadoop.
 
 1. No Campaign Classic, configure a conta externa do [!DNL oracle]. No **[!UICONTROL Explorer]**, clique em **[!UICONTROL Administration]** / **[!UICONTROL Platform]** / **[!UICONTROL External accounts]**.
 
