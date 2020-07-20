@@ -14,11 +14,11 @@ discoiquuid: 9cae3861-88eb-447a-aa23-9d1de0710eec
 index: y
 internal: n
 snippet: y
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: ed44ccd8053d79024e8fb2d05ee27e1e663b8cb2
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '448'
-ht-degree: 93%
+ht-degree: 100%
 
 ---
 
@@ -29,9 +29,9 @@ Para cada entrega, você pode rastrear a recepção das mensagens e a ativação
 
 >[!NOTE]
 >
->O rastreamento se aplica a mensagens, mas o rastreamento da Web permite que você monitore como os recipient navegam em um site (páginas visitadas, compras).
+>O rastreamento se aplica a mensagens, mas o rastreamento na web permite monitorar como os recipients navegam em um site (páginas visitadas, compras).
 >
->The configuration of web tracking is presented in [this section](../../configuration/using/about-web-tracking.md).
+>A configuração de rastreamento na web é apresentada [nesta seção](../../configuration/using/about-web-tracking.md).
 
 O rastreamento de mensagens é habilitado por padrão. Para personalizar como URLs são rastreados, siga as etapas abaixo:
 
