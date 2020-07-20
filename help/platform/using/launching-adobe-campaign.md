@@ -14,22 +14,22 @@ discoiquuid: 6652b081-66b6-47a8-97e5-383e3251647e
 index: y
 internal: n
 snippet: y
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 84f06afb36aa6a9fa13db1fda7034389b762eb99
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '386'
-ht-degree: 80%
+ht-degree: 100%
 
 ---
 
 
 # Iniciar o Adobe Campaign{#launching-adobe-campaign}
 
-O console Cliente de Campanha é um cliente avançado que permite a conexão com seus servidores de aplicativos de Campanha. Saiba como baixar e configurar o console do cliente [nesta página](../../installation/using/installing-the-client-console.md).
+O console do Campaign Client é um cliente avançado que permite a conexão com seu(s) servidor(es) de aplicativos do Campaign. Saiba como baixar e configurar o console do cliente [nesta página](../../installation/using/installing-the-client-console.md).
 
 ## Introdução ao Adobe Campaign {#starting-adobe-campaign}
 
-Você pode start de Adobe Campaign selecionando **[!UICONTROL Start / All Programs / Adobe Campaign v.X / Adobe Campaign client console]**.
+Você pode iniciar o Adobe Campaign selecionando **[!UICONTROL Start / All Programs / Adobe Campaign v.X / Adobe Campaign client console]**.
 
 A janela de conexão do console do cliente permite selecionar ou configurar bancos de dados existentes e conectar-se a eles usando um nome de usuário e uma senha:
 
@@ -47,7 +47,7 @@ Também é possível conectar-se com uma combinação exclusiva de login e senha
 
 1. Digite sua senha no campo **[!UICONTROL Password]**.
 
-   Na primeira vez que você acessar o banco de dados, sua senha será fornecida pelo administrador. Once you are connected, you can change your password via the **[!UICONTROL Tools > Change password...]** menu. Os detalhes sobre operadores e conexões estão disponíveis em [Gerenciamento de acesso](../../platform/using/access-management.md).
+   Na primeira vez que você acessar o banco de dados, sua senha será fornecida pelo administrador. Depois de conectado, você poderá alterar a senha usando o menu **[!UICONTROL Tools > Change password...]** Os detalhes sobre operadores e conexões estão disponíveis em [Gerenciamento de acesso](../../platform/using/access-management.md).
 
 1. Clique em **[!UICONTROL Log in]** para confirmar.
 
@@ -59,7 +59,7 @@ Agora, você pode acessar a [área de trabalho do Adobe Campaign](../../platform
 
 ![](assets/s_ncs_user_connections_management.png)
 
-In the **[!UICONTROL Connections]** window, click **[!UICONTROL Add > Connection]**.
+Na janela **[!UICONTROL Connections]**, clique em **[!UICONTROL Add > Connection]**.
 
 ![](assets/s_ncs_user_add_connexion.png)
 
@@ -67,9 +67,9 @@ Em seguida, defina as configurações de conexão. Para fazer isso:
 
 1. Digite um valor em **[!UICONTROL Label]** para atribuir um nome à conexão de banco de dados.
 
-1. Adicione o endereço do servidor de aplicativos no campo **[!UICONTROL URL]** . Se você não souber o URL de conexão, contate o administrador.
+1. Adicione o endereço do servidor de aplicativos no campo **[!UICONTROL URL]**. Se você não souber o URL de conexão, entre em contato com o administrador.
 
-1. Check **[!UICONTROL Connect with an Adobe ID]** for the operators to connect to the console using their Adobe ID. Para obter mais informações, consulte [esta página](../../integrations/using/about-adobe-id.md).
+1. Marque a opção **[!UICONTROL Connect with an Adobe ID]** para que os operadores se conectem ao console usando a Adobe ID. Para obter mais informações, consulte [esta página](../../integrations/using/about-adobe-id.md).
 
 1. Clique em **[!UICONTROL OK]** para validar.
 
@@ -91,7 +91,7 @@ Para desconectar-se do Adobe Campaign, use o primeiro ícone na barra de ícones
 
 ## Conheça a sua versão do Campaign {#getting-your-campaign-version}
 
-The **[!UICONTROL Help > About...]** menu lets you access the following information:
+O menu **[!UICONTROL Help > About...]** permite acessar as seguintes informações:
 
 * número da **versão**,
 * número da **compilação**,
