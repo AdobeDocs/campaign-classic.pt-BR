@@ -14,11 +14,11 @@ discoiquuid: cfa22577-0b9e-4eee-900d-214b81256d81
 index: y
 internal: n
 snippet: y
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: d96912e39956f2f7b0b0af29dc765d0b9775a020
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '972'
-ht-degree: 88%
+ht-degree: 100%
 
 ---
 
@@ -48,17 +48,17 @@ Este exemplo é baseado no seguinte cenário:
 
 As mensagens de confirmação são enviadas por um template do delivery dedicado referenciado no nível de serviço temporário.
 
-1. In the **[!UICONTROL Explorer]** , select **[!UICONTROL Resources > Templates > Delivery templates]**.
-1. Crie um template do delivery para enviar as mensagens de confirmação da subscrição.
-1. Clique no botão **[!UICONTROL To]** em **[!UICONTROL Email parameters]** para associar o template do delivery ao target mapping das subscrições em vez de destinatários.
+1. Em **[!UICONTROL Explorer]** , selecione **[!UICONTROL Resources > Templates > Delivery templates]**.
+1. Crie um template do delivery para enviar as mensagens de confirmação da assinatura.
+1. Clique no botão **[!UICONTROL To]** em **[!UICONTROL Email parameters]** para associar o template do delivery ao target mapping das assinaturas em vez de recipients.
 
    ![](assets/s_ncs_admin_survey_double-opt-in_sample_1d.png)
 
-1. Como os recipient desse delivery não confirmaram sua aprovação, eles ainda estão na lista de bloqueios do banco de dados. Para que eles recebam essa comunicação, é necessário autorizar delivery baseados neste modelo para recipient públicos alvos que estão na lista de bloqueios.
+1. Como os recipients desse delivery não confirmaram sua aprovação, eles ainda estão incluídos na lista de bloqueios do banco de dados. Para que eles recebam essa comunicação, é necessário autorizar deliveries baseados neste modelo para recipients públicos alvos que estejam na lista de bloqueios.
 
    Para fazer isso, clique na guia **[!UICONTROL Exclusions]**.
 
-1. Clique no **[!UICONTROL Edit...]** link e desmarque a **[!UICONTROL Exclude recipients who no longer want to be contacted (blocklist)]** opção.
+1. Clique no link **[!UICONTROL Edit...]** e desmarque a opção **[!UICONTROL Exclude recipients who no longer want to be contacted (blocklist)]**.
 
    <!-- ![](assets/s_ncs_admin_survey_double-opt-in_sample_4d.png)-->
 
@@ -88,11 +88,11 @@ O workflow do formulário web incluirá as seguintes atividades:
 
 Para fazer isso, siga as etapas abaixo:
 
-1. Create a Web form and choose the template **[!UICONTROL Newsletter subscription (subNewsletter)]**.
+1. Crie um formulário web e escolha o template **[!UICONTROL Newsletter subscription (subNewsletter)]**.
 
    ![](assets/s_ncs_admin_survey_double-opt-in_sample_5a.png)
 
-1. Na guia **[!UICONTROL Edit]**, precisamos configurar o fluxo de trabalho existente, já que queremos adicionar uma mensagem de confirmação aos destinatários que desejam assinar.
+1. Na guia **[!UICONTROL Edit]**, precisamos configurar o fluxo de trabalho existente, já que queremos adicionar uma mensagem de confirmação aos recipients que desejam assinar.
 
    Para fazer isso, clique duas vezes na caixa **[!UICONTROL Preloading]** e configure-a da seguinte maneira.
 
@@ -104,7 +104,7 @@ Para fazer isso, siga as etapas abaixo:
 
    ![](assets/s_ncs_admin_survey_double-opt-in_sample_6e.png)
 
-   A atividade **[!UICONTROL Test]** pode se referir ao email do destinatário. Nesse caso, configure-a da seguinte maneira:
+   A atividade **[!UICONTROL Test]** pode se referir ao email do recipient. Nesse caso, configure-a da seguinte maneira:
 
    ![](assets/s_ncs_admin_survey_double-opt-in_sample_6d.png)
 
@@ -112,7 +112,7 @@ Para fazer isso, siga as etapas abaixo:
 
    ![](assets/s_ncs_admin_survey_double-opt-in_sample_6f.png)
 
-   A primeira **[!UICONTROL Script]** atividade adicionará recipient à lista de bloqueios até que confirmem a subscrição à newsletter. Seu conteúdo deve ser o seguinte:
+   A primeira **[!UICONTROL Script]** atividade adicionará recipients à lista de bloqueios até que confirmem a assinatura da newsletter. Seu conteúdo deve ser o seguinte:
 
    ```
    ctx.recipient.@blockList=1
@@ -120,7 +120,7 @@ Para fazer isso, siga as etapas abaixo:
 
    ![](assets/s_ncs_admin_survey_double-opt-in_sample_6bbis.png)
 
-   A segunda atividade **[!UICONTROL Script]** autoriza os deliveries a serem enviados aos usuários e realiza a subscrição deles no boletim informativo. As duas últimas linhas do script permitirão transferir os recipients da pasta temporária para outra pasta e reconciliar com perfis existentes assim que confirmarem a subscrição.
+   A segunda atividade **[!UICONTROL Script]** autoriza os deliveries a serem enviados aos usuários e faz a assinatura deles no boletim informativo. As duas últimas linhas do script permitirão transferir os recipients da pasta temporária para outra pasta e reconciliar com perfis existentes assim que confirmarem a assinatura.
 
    ```
    ctx.recipient.@blockList=0
@@ -135,7 +135,7 @@ Para fazer isso, siga as etapas abaixo:
 
    ![](assets/s_ncs_admin_survey_double-opt-in_sample_6b.png)
 
-1. Clique duas vezes na atividade **[!UICONTROL Subscription]** para personalizar o formulário de subscrição e vincular uma caixa de seleção ao serviço temporário criado anteriormente.
+1. Clique duas vezes na atividade **[!UICONTROL Subscription]** para personalizar o formulário de assinatura e vincular uma caixa de seleção ao serviço temporário criado anteriormente.
 
    ![](assets/s_ncs_admin_survey_double-opt-in_sample_5c.png)
 
@@ -151,7 +151,7 @@ Para fazer isso, siga as etapas abaixo:
 
 1. Adicione duas atividades **[!UICONTROL End]** para exibir uma mensagem ao usuário.
 
-   A segunda caixa **[!UICONTROL End]** exibirá a mensagem de confirmação quando a subscrição for concluída.
+   A segunda caixa **[!UICONTROL End]** exibirá a mensagem de confirmação quando a assinatura for concluída.
 
    ![](assets/s_ncs_admin_survey_double-opt-in_sample_5h.png)
 
@@ -175,7 +175,7 @@ A subscrição no boletim informativo envolve as seguintes etapas:
 
    ![](assets/s_ncs_admin_survey_double-opt-in_sample_8d.png)
 
-   The user is added to the Adobe Campaign database in the **[!UICONTROL Temp]** folder, and their profile is added to the block list until they confirm their subscription with the email.
+   O usuário é adicionado ao banco de dados do Adobe Campaign na pasta **[!UICONTROL Temp]** e seu perfil é incluído na lista de bloqueios até que ele confirme a assinatura com o email.
 
    ![](assets/s_ncs_admin_survey_double-opt-in_sample_8f.png)
 
