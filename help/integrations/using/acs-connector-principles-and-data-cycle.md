@@ -14,11 +14,11 @@ discoiquuid: 64d87bea-2376-4684-ac93-6ca56fe0f262
 index: y
 internal: n
 snippet: y
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: d96912e39956f2f7b0b0af29dc765d0b9775a020
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1996'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
@@ -138,7 +138,7 @@ Todos os elementos técnicos relacionados ao ACS Connector estão disponíveis n
 
 ### Workflows técnicos e de replicação {#technical-and-replication-workflows}
 
-After the installation of the package, two technical workflows are available under **[!UICONTROL Administration > ACS Connector > Process]**.
+Após a instalação do pacote, dois workflows técnicos ficam disponíveis em **[!UICONTROL Administration > ACS Connector > Process]**.
 
 >[!IMPORTANT]
 >
@@ -219,14 +219,14 @@ Abaixo estão a lista de campos de recipients que são replicados com a implemen
   </tr> 
   <tr> 
    <td> Não mais entrar em contato (por qualquer canal)<br /> </td> 
-   <td> @lista de bloqueios<br /> </td> 
+   <td> @blockList<br /> </td> 
   </tr> 
   <tr> 
-   <td> Não mais contatar por e-mail<br /> </td> 
+   <td> Não entrar mais em contato por e-mail<br /> </td> 
    <td> @blockListEmail<br /> </td> 
   </tr> 
   <tr> 
-   <td> Não mais contatar por SMS<br /> </td> 
+   <td> Não entrar mais em contato por SMS<br /> </td> 
    <td> @blockListMobile<br /> </td> 
   </tr> 
   <tr> 
@@ -276,11 +276,11 @@ Abaixo estão a lista de campos de recipients que são replicados com a implemen
 
 Os direitos são tratados de forma diferente no Campaign v7 e Campaign Standard. No Campaign v7, o gerenciamento de direitos é com base em pastas, enquanto o Campaign Standard é baseado no acesso à unidade (unidades organizacionais/geográficas). Um usuário do Campaign Standard pertence ao grupo de segurança que contém o contexto de restrição. Portanto, o sistema de direitos do Campaign v7 precisa ser convertido para corresponder ao Campaign Standard. Há várias maneiras de executar a conversão de direitos. Abaixo há um exemplo de implementação.
 
-1. Under **[!UICONTROL Administration > ACS Connector > Rights management > Security groups]**, use the **[!UICONTROL Synchronize]** button to retrieve all the Campaign Standard security groups. Os grupos do Campaign Standard iniciais são excluídos.
+1. Em **[!UICONTROL Administration > ACS Connector > Rights management > Security groups]**, use o botão **[!UICONTROL Synchronize]** para recuperar todos os grupos de segurança do Campaign Standard. Os grupos do Campaign Standard iniciais são excluídos.
 
    ![](assets/acs_connect_implementation_4.png)
 
-1. If your rights management is folder-base, go to **[!UICONTROL Administration > ACS Connector > Rights management > Folder mapping]** and map each needed folder with a security group.
+1. Se o gerenciamento de direitos for baseado em pastas, vá para **[!UICONTROL Administration > ACS Connector > Rights management > Folder mapping]** e mapeie cada pasta necessária com um grupo de segurança.
 
    ![](assets/acs_connect_implementation_5.png)
 
@@ -307,7 +307,7 @@ A implementação avançada adicionará workflows de replicação personalizados
 
 Com a implementação básica, os campos de recipients iniciais são replicados. Se quiser replicar campos personalizados adicionados ao schema de recipients, será necessário identificá-los.
 
-1. Under **[!UICONTROL Administration > ACS Connector > Data mapping]**, create a targeting mapping on the **[!UICONTROL nms:recipient]** table.
+1. Em **[!UICONTROL Administration > ACS Connector > Data mapping]**, crie um mapeamento de direcionamento na tabela **[!UICONTROL nms:recipient]**.
 
    ![](assets/acs_connect_implementation_6.png)
 
@@ -315,7 +315,7 @@ Com a implementação básica, os campos de recipients iniciais são replicados.
 
    ![](assets/acs_connect_implementation_7.png)
 
-1. Abra o workflow de replicação de perfil dedicado (não o template, mas a própria instância do workflow). Modify the **[!UICONTROL Query]** and **[!UICONTROL Update data]** activities to include these fields. Consulte [Workflows técnicos e de replicação](#technical-and-replication-workflows).
+1. Abra o workflow de replicação de perfil dedicado (não o template, mas a própria instância do workflow). Modifique as atividades **[!UICONTROL Query]** e **[!UICONTROL Update data]** para incluir esses campos. Consulte [Workflows técnicos e de replicação](#technical-and-replication-workflows).
 
    ![](assets/acs_connect_implementation_8.png)
 
@@ -325,7 +325,7 @@ Com a implementação básica, os campos de recipients iniciais são replicados.
 
 Com a implementação básica, a tabela de recipients inicial é replicada. Se adicionou tabelas de recipients personalizadas, veja a seguir como identificá-las.
 
-1. Under **[!UICONTROL Administration > ACS Connector > Data mapping]**, create a targeting mapping on your custom profile table.
+1. Em **[!UICONTROL Administration > ACS Connector > Data mapping]**, crie um mapeamento de direcionamento na tabela de perfil personalizada.
 
    ![](assets/acs_connect_implementation_10.png)
 
@@ -333,6 +333,6 @@ Com a implementação básica, a tabela de recipients inicial é replicada. Se a
 
    ![](assets/acs_connect_implementation_10.png)
 
-1. If your rights management is folder-based, go to **[!UICONTROL Administration > ACS Connector > Rights management > Folder mapping]**, and define a security group for the folders linked to your custom tables. Consulte [Conversão de direitos](#rights-conversion).
+1. Se o gerenciamento de direitos for com base em pastas, vá para **[!UICONTROL Administration > ACS Connector > Rights management > Folder mapping]** e defina um grupo de segurança para as pastas vinculadas às tabelas personalizadas. Consulte [Conversão de direitos](#rights-conversion).
 1. Use o workflow **[!UICONTROL New replication]** (não o modelo, mas a própria instância do fluxo de trabalho) para incluir a tabela personalizada e os campos a serem replicados. Consulte [Workflows técnicos e de replicação](#technical-and-replication-workflows).
 
