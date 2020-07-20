@@ -14,9 +14,9 @@ discoiquuid: b49acfd0-b601-4694-88e3-cc0a169cb866
 index: y
 internal: n
 snippet: y
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: d96912e39956f2f7b0b0af29dc765d0b9775a020
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '374'
 ht-degree: 100%
 
@@ -53,6 +53,7 @@ Para deliveries de mala direta, os seed addresses são adicionados durante a ext
 >
 >* Não deve usar a opção **[!UICONTROL Handle groupings (GROUP BY+HAVING)]**.
 >* Se as coleções de elemento forem extraídas, esses campos têm um valor vazio para os seed addresses, a menos que a opção **[!UICONTROL Single row (expert user)]** esteja selecionada. Para obter mais informações, consulte [esta seção](../../platform/using/exporting-data.md#step-7---data-formatting).
+
 >
 
 
