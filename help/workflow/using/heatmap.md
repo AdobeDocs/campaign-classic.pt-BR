@@ -14,11 +14,11 @@ discoiquuid: 6a71f5ee-c8e0-4ac4-acae-6dffbf799d0c
 index: y
 internal: n
 snippet: y
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: ea6488686d19b020e55839afee97e71a13ce2e33
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1326'
-ht-degree: 92%
+ht-degree: 100%
 
 ---
 
@@ -63,7 +63,7 @@ Três opções estão disponíveis:
 
 * **[!UICONTROL Accept]** : ao aceitar este contrato, você autoriza o Adobe Campaign a coletar seus dados e a transferi-los para os Estados Unidos para que você possa receber ajuda no caso de detecções de anomalias.
 * **[!UICONTROL Refuse]** : ao recusar o contrato, seus dados não serão transferidos, mas você ainda poderá usar o Workflow Heatmap.
-* **[!UICONTROL Do not show this message again]** : Ao clicar em **[!UICONTROL Do not show this message again]** , a janela pop-up parará de ser exibida ao acessar o mapa de calor do fluxo de trabalho, mas ainda estará disponível no **[!UICONTROL Term of use]** botão.
+* **[!UICONTROL Do not show this message again]** : ao clicar em **[!UICONTROL Do not show this message again]**, a janela pop-up deixará de ser exibida quando você acessar o Workflow Heatmap, mas ainda estará disponível no botão **[!UICONTROL Term of use]**.
 
 Essa opção não é definitiva, você sempre pode alterá-la clicando no botão **[!UICONTROL Term of use]**.
 
@@ -73,7 +73,7 @@ Essa opção não é definitiva, você sempre pode alterá-la clicando no botão
 >
 >Somente usuários com direitos administrativos podem acessar o Campaign Workflow HeatMap.
 
-1. Go to **[!UICONTROL Monitoring]** and click the **[!UICONTROL Workflow HeatMap]** link to display the **[!UICONTROL Campaign Workflow HeatMap]** page.
+1. Vá para **[!UICONTROL Monitoring]** e clique no link **[!UICONTROL Workflow HeatMap]** para exibir a página **[!UICONTROL Campaign Workflow HeatMap]**.
 
    ![](assets/wkf_monitoring_path.png)
 
@@ -100,9 +100,9 @@ Essa opção não é definitiva, você sempre pode alterá-la clicando no botão
 
    >[!NOTE]
    >
-   >The **[!UICONTROL Min duration]** filter is applied. Se não conseguir encontrar um workflow específico, redefina a duração mínima para 0 para que todos os workflows sejam exibidos na lista.
+   >O filtro **[!UICONTROL Min duration]** é aplicado. Se não conseguir encontrar um workflow específico, redefina a duração mínima para 0 para que todos os workflows sejam exibidos na lista.
 
-1. You can also filter on the **[!UICONTROL Workflow type]** :
+1. Também é possível filtrar no campo **[!UICONTROL Workflow type]**:
 
    * **[!UICONTROL Technical]**: somente [workflows técnicos prontos](../../workflow/using/building-a-workflow.md#technical-workflows) e [workflows de gerenciamento de dados](../../workflow/using/targeting-data.md#data-management) são exibidos.
    * **[!UICONTROL Marketing]**: somente os workflows vinculados a uma campanha de marketing, conhecidos como [workflows da campanha](../../workflow/using/building-a-workflow.md#campaign-workflows), são exibidos.
@@ -139,7 +139,7 @@ No exemplo abaixo, entre as 8h e a 8h05 da manhã, três workflows estão em exe
    Para cada workflow, todas as atividades que ele contém são listadas, com sua duração.
 
 1. Clique na ID ou no nome do workflow para abri-lo diretamente.
-1. To go back to the **[!UICONTROL Campaign Workflow HeatMap]** view, click the **[!UICONTROL Home]** button.
+1. Para voltar para a exibição do **[!UICONTROL Campaign Workflow HeatMap]**, clique no botão **[!UICONTROL Home]**.
 
 ## Casos de uso: usar o HeatMap para executar ações {#use-cases--using-the-heatmap-to-take-actions}
 
@@ -149,7 +149,7 @@ Há dois casos principais em que o Campaign Workflow HeatMap pode ser útil.
 
 Como administrador do Campaign, o Workflow HeatMap pode ajudá-lo a entender a carga na instância e planejar workflows novos ou existentes em momentos apropriados.
 
-1. From the **[!UICONTROL Campaign Workflow HeatMap]** view, click the **[!UICONTROL Filters]** button.
+1. Na exibição do **[!UICONTROL Campaign Workflow HeatMap]**, clique no botão **[!UICONTROL Filters]**.
 1. Defina a duração para alguns segundos ou alguns minutos.
 1. Aumente o filtro de duração para excluir os workflows mais curtos que não são significativos.
 
@@ -164,12 +164,12 @@ Como administrador do Campaign, o Workflow HeatMap pode ajudá-lo a entender a c
 
 Como administrador do Campaign, o Workflow HeatMap ajuda a encontrar os workflows mais longos que podem retardar a atividade.
 
-1. From the **[!UICONTROL Campaign Workflow HeatMap]** view, click the **[!UICONTROL Filters]** button.
+1. Na exibição do **[!UICONTROL Campaign Workflow HeatMap]**, clique no botão **[!UICONTROL Filters]**.
 1. Defina a duração como 1 hora.
 
    ![](assets/wkf_monitoring_long_duration.png)
 
-1. Include more results by decreasing the **[!UICONTROL Min duration]** filter.
+1. Inclua mais resultados diminuindo o filtro **[!UICONTROL Min duration]**.
 1. Explore os resultados para encontrar os workflows mais longos, que podem potencialmente ter mais impacto nos recursos do servidor e do banco de dados (CPU, RAM, rede, IOPS etc.).
 1. Execute as ações apropriadas:
 
@@ -182,9 +182,9 @@ O exemplo abaixo mostra como o planejamento pode ser mais eficiente e como o des
 
 Nesse caso, muitos usuários estão reclamando do desempenho do workflow. Você precisa verificar o que está atrasando a atividade e como resolver o problema.
 
-1. Go to **[!UICONTROL Monitoring]** and click the **[!UICONTROL Workflows]** link to display the **[!UICONTROL Campaign Workflow HeatMap]** page.
-1. Set the **[!UICONTROL Min duration]** filter to 5 minutes.
-1. Defina o **[!UICONTROL Workflow type]** filtro como **[!UICONTROL Marketing]** .
+1. Vá para **[!UICONTROL Monitoring]** e clique no link **[!UICONTROL Workflows]** para exibir a página **[!UICONTROL Campaign Workflow HeatMap]**.
+1. Defina o filtro **[!UICONTROL Min duration]** como 5 minutos.
+1. Defina o filtro **[!UICONTROL Workflow type]** como **[!UICONTROL Marketing]**.
 1. Na grade do HeatMap, observe o seguinte:
 
    ![](assets/wkf_monitoring_without.png)
@@ -195,7 +195,7 @@ Nesse caso, muitos usuários estão reclamando do desempenho do workflow. Você 
    * O desempenho está baixo.
 
 1. Em vez de ter cinquenta workflows começando às 10h, distribua os horários de início dos workflows uniformemente pelo resto do dia.
-1. Go back to the **[!UICONTROL Campaign Workflow HeatMap]** page and click the **[!UICONTROL Reload data]** button.
+1. Volte para a página **[!UICONTROL Campaign Workflow HeatMap]** e clique no botão **[!UICONTROL Reload data]**.
 1. Agora observe o seguinte:
 
    ![](assets/wkf_monitoring_with.png)
