@@ -14,11 +14,11 @@ discoiquuid: dd3d14cc-5153-428d-a98a-32b46f0fe811
 index: y
 internal: n
 snippet: y
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: c86af066045c1c35b51624de8565af21746354c1
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '580'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -47,7 +47,7 @@ Após a criação do schema de dados, é possível processar os dados nos workfl
 
 ## Bancos de dados externos disponíveis {#external-database}
 
-Você pode encontrar abaixo a lista de cada banco de dados externo compatível com o módulo de FDA do Adobe Campaign:
+Você pode encontrar abaixo a lista de cada banco de dados externo compatível com o módulo FDA do Adobe Campaign:
 
 * Análise do Microsoft Azure Synapse. Para obter mais informações, consulte esta [seção](../../platform/using/specific-configuration-database.md#azure-external).
 * Snowflake. Para obter mais informações, consulte esta [seção](../../platform/using/specific-configuration-database.md#configure-access-to-snowflake).
