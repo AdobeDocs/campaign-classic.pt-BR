@@ -14,10 +14,10 @@ discoiquuid: c0eb06fd-192c-4ee4-9a38-c9bedbe6aea0
 index: y
 internal: n
 snippet: y
-translation-type: ht
-source-git-commit: 651dfdab75f64d72a1c5beb1273a878ee7102b47
-workflow-type: ht
-source-wordcount: '2912'
+translation-type: tm+mt
+source-git-commit: 65399d7b3917e2df37c32735e7015d742f5f022c
+workflow-type: tm+mt
+source-wordcount: '2935'
 ht-degree: 100%
 
 ---
@@ -258,6 +258,7 @@ Os grupos de operadores padrão são:
 
    * INSERT FOLDERS: direito de inserir pastas à árvore do Adobe Campaign (se você tiver o direito de editar ramificações),
    * WORKFLOW: direito de usar workflows.
+
    >[!NOTE]
    >
    >Esse grupo não permite que os operadores iniciem deliveries.
@@ -346,7 +347,9 @@ Esses direitos são os seguintes:
 
 Os grupos padrão e os direitos nomeados permitem que os operadores acessem determinadas pastas na hierarquia de navegação e concedam permissões de leitura, gravação e exclusão.
 
-A matriz de direitos de acesso do Adobe Campaign está disponível [aqui](/help/platform/using/assets/accessrights.pdf).
+A matriz de direitos de acesso do Adobe Campaign está disponível [aqui](https://docs.adobe.com/content/help/pt-BR/campaign-classic/using/getting-started/administration-basics/assets/accessrights.pdf).
+
+[![imagem](assets/user_management.png)](https://docs.adobe.com/content/help/pt-BR/campaign-classic/using/getting-started/administration-basics/assets/accessrights.pdf)
 
 ## Gerenciamento de acesso a pastas {#folder-access-management}
 
