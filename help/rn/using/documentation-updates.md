@@ -13,9 +13,9 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 64b31b8d4f88023f4285bf161d236973a7d63107
+source-git-commit: 13fefe429862e856bc7ec1d376d80c176398da0b
 workflow-type: tm+mt
-source-wordcount: '6939'
+source-wordcount: '6963'
 ht-degree: 97%
 
 ---
@@ -29,6 +29,8 @@ Você também pode consultar as [Notas de versão do Adobe Campaign Classic](../
 
 ## Julho de 2020 {#july-2020}
 
+Um caso de uso sobre como atualizar automaticamente uma lista usando um query incremental foi adicionado aos casos de uso do fluxo de trabalho. [Leia mais](../../workflow/using/about-workflow-use-cases.md)
+
 As [Notas](../../rn/using/latest-release.md) de versão foram reorganizadas: uma página [de](../../rn/using/latest-release.md) visão geral foi adicionada com informações sobre status de criação, processo de atualização, recomendações e links importantes. Uma página dedicada para as versões [do](../../rn/using/gold-standard.md) Gold Standard também foi adicionada e a matriz [](../../rn/using/compatibility-matrix.md) Compatibilidade foi integrada.
 
 Uma nova seção foi adicionada com diretrizes relacionadas ao monitoramento do Campaign Classic. [Leia mais](../../production/using/monitoring-guidelines.md)
@@ -37,7 +39,7 @@ A seção Privacidade e consentimento foi aprimorada com informações mais deta
 
 A página Gerenciamento de privacidade no Campaign Classic foi atualizada com informações sobre o campo &quot;regulamento&quot;, que agora está disponível ao usar a API, permitindo a configuração do processo automático de solicitação de privacidade. [Leia mais](https://helpx.adobe.com/ie/campaign/kb/acc-privacy.html#ManagingPrivacyRequests)
 
-A página Visão geral do Gerenciamento de privacidade foi atualizada para incluir informações sobre a Lei de Proteção de Dados Pessoais (PDPA) da Tailândia e sobre a Lei Geral de Dados (LGPD) do Brasil. [Leia mais](https://helpx.adobe.com/campaign/kb/campaign-privacy-overview.html#whatisgdpr)
+A página Visão geral do Gerenciamento de privacidade foi atualizada para incluir informações sobre a Lei de Proteção de Dados Pessoais (PDPA) da Tailândia e sobre a Lei Geral de Dados (LGPD) do Brasil. [Leia mais](https://helpx.adobe.com/br/campaign/kb/campaign-privacy-overview.html#whatisgdpr)
 
 As informações foram adicionadas nos registros de subworkflows e no comportamento em caso de erro. [Leia mais](../../workflow/using/sub-workflow.md)
 
