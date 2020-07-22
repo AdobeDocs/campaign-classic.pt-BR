@@ -12,10 +12,10 @@ discoiquuid: 40503917-7a53-4d99-96a4-57aa9e98ec87
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 5d67ab5bbc44b81c65605ae9132cf5a8356aa814
+source-git-commit: 6d9e2b54da9de37ed8f4f873a1049b35493112d4
 workflow-type: tm+mt
-source-wordcount: '67'
-ht-degree: 8%
+source-wordcount: '165'
+ht-degree: 55%
 
 ---
 
@@ -26,10 +26,46 @@ Nesta seção, você encontrará vários casos de uso que aproveitam os recursos
 
 Eles ajudarão você a descobrir os diferentes contextos nos quais os workflows podem ser usados e a responder às suas necessidades.
 
-Os casos de uso são organizados em três tópicos principais:
+## Deliveries {#deliveries}
 
-<table>
-<tr>
-<td><img src="assets/do-not-localize/icon_workflows.svg" width="60px"><p><a href="../../workflow/using/using-the-local-approval-activity.md">Deliveries</a></p></td><td><img src="assets/do-not-localize/icon_monitoring.svg" width="60px"><p><a href="../../workflow/using/sending-a-report-to-a-list.md">Monitoramento de</a></p></td><td><img src="assets/do-not-localize/icon_manage.svg" width="60px"><p><a href="../../workflow/using/coordinating-data-updates.md">gerenciamento de dados</a></p></td>
-<td><img src="assets/do-not-localize/icon_filter.svg" width="60px"><p><a href="../../workflow/using/querying-recipient-table.md">Projeto de queries</a></p></td></tr>
-</table>
+<img src="assets/do-not-localize/icon_workflows.svg" width="60px">
+
+* [O uso da atividade de aprovação local](../../workflow/using/using-the-local-approval-activity.md)
+* [Teste A/B](../../workflow/using/a-b-testing.md)
+* [Envio de um e-mail de aniversário](../../workflow/using/sending-a-birthday-email.md)
+* [Carregamento de conteúdo de delivery](../../workflow/using/loading-delivery-content.md)
+* [Workflow de delivery entre canais](../../workflow/using/cross-channel-delivery-workflow.md)
+* [Enriquecimento de e-mail com campos de data personalizados](../../workflow/using/email-enrichment-with-custom-date-fields.md)
+
+## Monitoramento de {#monitoring}
+
+<img src="assets/do-not-localize/icon_monitoring.svg" width="60px">
+
+* [Envio de um relatório a uma lista](../../workflow/using/sending-a-report-to-a-list.md)
+* [Supervisão de worflows](../../workflow/using/supervising-workflows.md)
+* [Envio de alertas personalizados para operadores](../../workflow/using/sending-personalized-alerts-to-operators.md)
+
+## gerenciamento de dados {#management}
+
+<img src="assets/do-not-localize/icon_manage.svg" width="60px">
+
+* [Coordenação das atualizações de dados](../../workflow/using/coordinating-data-updates.md)
+* [Criação da lista de resumo](../../workflow/using/creating-a-summary-list.md)
+* [Enriquecimento de dados](../../workflow/using/enriching-data.md)
+* [Uso de agregações](../../workflow/using/using-aggregates.md)
+* [Importação de dados criptografados usando uma chave gerada pelo Painel de controle do Campaign](../../workflow/using/importing-data.md#use-case-gpg-decrypt)
+* [Criptografar e exportar dados usando uma chave instalada no Painel de controle do Campaign](../../workflow/using/how-to-use-workflow-data.md#use-case-gpg-encrypt)
+* [Atualização da lista trimestral usando um query incremental](../../workflow/using/quarterly-list-update.md)
+
+## Projeto de queries {#designing-queries}
+
+<img src="assets/do-not-localize/icon_filter.svg" width="60px">
+
+* [Consulta à tabela de recipients](../../workflow/using/querying-recipient-table.md)
+* [Consulta de informações de delivery](../../workflow/using/querying-delivery-information.md)
+* [Execução de computação agregada](../../workflow/using/performing-aggregate-computing.md)
+* [Consultando o gerenciamento de agrupamento](../../workflow/using/querying-using-grouping-management.md)
+* [Consulta usando uma relação muitos para muitos](../../workflow/using/querying-using-many-to-many-relationship.md)
+* [Adição de um campo calculado do tipo de Enumeration](../../workflow/using/adding-enumeration-type-calculated-field.md)
+* [Criação de filtros](../../workflow/using/creating-a-filter.md)
+* [Filtro de recipients duplicados](../../workflow/using/filtering-duplicated-recipients.md)
