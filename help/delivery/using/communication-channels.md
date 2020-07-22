@@ -14,11 +14,11 @@ discoiquuid: 2e2d1134-9b83-4ada-b74f-c3842a0cf044
 index: y
 internal: n
 snippet: y
-translation-type: ht
-source-git-commit: 15581517df8d2f397285bbadebd83b7f4539dfd7
-workflow-type: ht
-source-wordcount: '764'
-ht-degree: 100%
+translation-type: tm+mt
+source-git-commit: c1f7ff6a281c2830ac23ad995b750dc09ade5e92
+workflow-type: tm+mt
+source-wordcount: '904'
+ht-degree: 96%
 
 ---
 
@@ -42,7 +42,7 @@ O Adobe Campaign oferece os seguintes canais de entrega:
 1. **Canal móvel**: deliveries em canais móveis permitem enviar mensagens SMS ou por LINE personalizadas para a população do target. Consulte [Canal de SMS](../../delivery/using/sms-channel.md).
 1. **Canal de aplicativo móvel**: os deliveries por aplicativo móvel permitem enviar as notificações para sistemas iOs e Android. Consulte o capítulo [Canal de aplicativo móvel](../../delivery/using/about-mobile-app-channel.md).
 
-   Outros canais são descritos [nesta página](../../delivery/using/other-channels.md).
+   Outros canais são descritos [nesta página](../../delivery/using/communication-channels.md#other-channels).
 
    >[!NOTE]
    >
@@ -93,3 +93,13 @@ O Adobe Campaign permite enviar [notificações por push](../../delivery/using/a
 A [mala direta](../../delivery/using/about-direct-mail-channel.md) é um canal offline que permite personalizar e gerar o arquivo exigido por provedores de mala direta. Ela oferece a possibilidade de misturar canais online e offline nas jornadas do cliente.
 
 Os canais online permitem que você crie mensagens (email, SMS, delivery de aplicativo móvel, etc.) e envie-as para seu público diretamente do Adobe Campaign. Com canais offline, é diferente. Quando você prepara um delivery direto de mala direta, o Adobe Campaign gera um arquivo incluindo todos os perfis do target e as informações de contato escolhidas (endereço postal por exemplo). Você poderá enviar esse arquivo para seu provedor de mala direta que irá cuidar realmente do envio.
+
+## Outros canais {#other-channels}
+
+O Adobe Campaign oferece templates de delivery de agência ou telefone, que são usados para criar deliveries externos. A utilização desses canais implica que você configure metodologias específicas para processar arquivos de saída. As etapas de configuração são as mesmas do [Canal de mala direta](../../delivery/using/about-direct-mail-channel.md).
+
+Além disso, os deliveries do tipo &quot;Outros&quot; usam um template técnico específico que não executa um processo: isso permite gerenciar ações de marketing executadas fora da plataforma Adobe Campaign.
+
+Este canal não tem nenhum mecanismo específico. É um canal genérico que tem sua própria opção de roteamento de conta externa, tipo de template do delivery e atividade de workflow de campanha, como qualquer outro canal de comunicação disponível no Adobe Campaign.
+
+Esse canal foi projetado apenas para fins descritivos, por exemplo, para definir delivery para os quais você deseja manter um rastreamento do público alvo de uma campanha executada em uma ferramenta diferente de Adobe Campaign.
