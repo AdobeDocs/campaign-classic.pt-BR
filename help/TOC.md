@@ -5,10 +5,10 @@ index: y
 product: adobe campaign
 sub-product: Adobe Campaign Classic
 translation-type: tm+mt
-source-git-commit: 6c3c2ad62778c4c4f874c5b34c014529ce3e7185
+source-git-commit: 14e275203e3436183d5a5c743375ba42f6153c6d
 workflow-type: tm+mt
-source-wordcount: '2089'
-ht-degree: 99%
+source-wordcount: '2094'
+ht-degree: 98%
 
 ---
 
@@ -120,7 +120,6 @@ ht-degree: 99%
       + [Criação de um delivery de mala direta](delivery/using/creating-a-direct-mail-delivery.md)
       + [Definição do conteúdo de correio direto](delivery/using/defining-the-direct-mail-content.md)
       + [Validação](delivery/using/validating.md)
-      + [Outros canais](delivery/using/other-channels.md)
    + Uso de templates de delivery {#using-delivery-templates}
       + [Sobre os modelos](delivery/using/about-templates.md)
       + [Criação de um template de delivery](delivery/using/creating-a-delivery-template.md)
@@ -426,6 +425,7 @@ ht-degree: 99%
          + [Criação da lista de resumo](workflow/using/creating-a-summary-list.md)
          + [Enriquecimento de dados](workflow/using/enriching-data.md)
          + [Uso de agregações](workflow/using/using-aggregates.md)
+         + [Atualização da lista trimestral usando um query incremental](workflow/using/quarterly-list-update.md)
       + Projeto de queries {#designing-queries}
          + [Consulta à tabela de recipients](workflow/using/querying-recipient-table.md)
          + [Consulta de informações de delivery](workflow/using/querying-delivery-information.md)
