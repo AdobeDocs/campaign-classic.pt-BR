@@ -15,10 +15,10 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 65399d7b3917e2df37c32735e7015d742f5f022c
+source-git-commit: 752318fa4e5b330965bef0906aa0991673e8bd68
 workflow-type: tm+mt
 source-wordcount: '2935'
-ht-degree: 100%
+ht-degree: 99%
 
 ---
 
@@ -347,9 +347,9 @@ Esses direitos são os seguintes:
 
 Os grupos padrão e os direitos nomeados permitem que os operadores acessem determinadas pastas na hierarquia de navegação e concedam permissões de leitura, gravação e exclusão.
 
-A matriz de direitos de acesso do Adobe Campaign está disponível [aqui](https://docs.adobe.com/content/help/pt-BR/campaign-classic/using/getting-started/administration-basics/assets/accessrights.pdf).
+A matriz de direitos de acesso do Adobe Campaign está disponível [aqui](https://docs.adobe.com/content/help/en/campaign-classic/using/getting-started/administration-basics/assets/access-rights-matrix.pdf).
 
-[![imagem](assets/user_management.png)](https://docs.adobe.com/content/help/pt-BR/campaign-classic/using/getting-started/administration-basics/assets/accessrights.pdf)
+[![imagem](assets/user_management.png)](https://docs.adobe.com/content/help/en/campaign-classic/using/getting-started/administration-basics/assets/access-rights-matrix.pdf)
 
 ## Gerenciamento de acesso a pastas {#folder-access-management}
 
