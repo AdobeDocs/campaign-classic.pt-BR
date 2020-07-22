@@ -13,10 +13,10 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 5b7c0dc12b41b8482dce9d42bbf88878bb03bf38
+source-git-commit: d9b6ae9f7e2f3b15698f1a420b5416162cbcc758
 workflow-type: tm+mt
-source-wordcount: '1692'
-ht-degree: 100%
+source-wordcount: '1987'
+ht-degree: 90%
 
 ---
 
@@ -25,7 +25,30 @@ ht-degree: 100%
 
 ![](assets/do-not-localize/cp-icon.png) **Nova versão de junho do Painel de controle do Campaign** com monitoramento de perfis ativos, auditoria de entregabilidade de subdomínio e gerenciamento de chaves GPG. [Saiba mais](https://docs.adobe.com/content/help/pt-BR/control-panel/using/release-notes.html).
 
-## ![](assets/do-not-localize/blue_2.png) Versão 20.2.1 - Build 9178 {#release-20-2-1-build-9178}
+## ![](assets/do-not-localize/blue_2.png) Versão 20.2.1 - Build 9180 {#release-20-2-2-build-9180}
+
+_22 de julho de 2020_
+
+* Correção de um problema que impedia que o rastreamento funcionasse quando o recurso de assinatura era desativado ou ao usar uma instância de marketing antiga com uma Mid recente. (NEO-26411)
+* Correção de um problema que resultava no bloqueio de links não assinados de domínios personalizados quando deveriam ser permitidos. (NEO-25210)
+* Correção de um problema que poderia impedir a abertura/clique de URLs de rastreamento ao usar determinadas versões herdadas do Outlook. (NEO-25688)
+* Correção de um problema que resultava na definição incorreta de URLs de mirrores page em delivery de email. (NEO-26084)
+* Correção de um problema com a codificação do gerenciamento de URL no serviço anti-phishing. (NEO-25283)
+* Correção de um problema que impedia o funcionamento do rastreamento de URLs usando fragmentos em parâmetros de personalização (tags de âncora com sinal de hashtag). (NEO-25774)
+* Correção de um problema de rastreamento ao usar fórmulas de rastreamento personalizadas específicas. (NEO-25277)
+Correção de um problema que impedia o funcionamento do rastreamento de &quot;cliques de notificação&quot; (notificações por push de iOS e Android). (NEO-25965)
+* Correção de uma regressão que afetava os campos calculados em um fluxo de trabalho. (NEO-25194)
+* Correção de uma regressão que impedia o funcionamento da criação instantânea de URLs de rastreamento da Web. (NEO-20999)
+* Correção de um problema com relatórios do delivery predefinidos que apareciam truncados quando exportados para PDF. (NEO-25757)
+* Correção de um problema de falha no assistente de implantação.
+* Correção de um problema que impedia que o fluxo de trabalho de notificação de Oferta funcionasse corretamente após uma pós-atualização.
+* O conector HTTP2 para iOS foi aprimorado (atualizações de terceiros e gerenciamento de erros). (NEO-25904, NEO-25903)
+* A lista jarsToSkip em catalina.properties foi atualizada para remover a referência a um arquivo jar que não foi mais usado (notificações iOS).
+* Correção de um problema que bloqueava a preparação de delivery após a atualização.
+* Após a alternância para o [novo mecanismo](https://helpx.adobe.com/br/campaign/kb/sequence_auto_generation.html#Switchtoadedicatedsequence)de ID de sequência, todos os aplicativos da Web que estão atualizando a tabela do recipient são republicados durante a pós-atualização.
+* Corrigida uma possível vulnerabilidade XSS no conteúdo do delivery. (NEO-17987, NEO-26073)
+
+## ![](assets/do-not-localize/orange_2.png) Versão 20.2.1 - Build 9178 {#release-20-2-1-build-9178}
 
 _8 de junho de 2020_
 
