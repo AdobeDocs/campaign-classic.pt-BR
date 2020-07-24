@@ -13,10 +13,10 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: d4a170f22108b38ebe8a451feea6210fe5aa482f
+source-git-commit: 99dfefe3f51115b78bfeb02094d614a6e63af124
 workflow-type: tm+mt
 source-wordcount: '438'
-ht-degree: 18%
+ht-degree: 20%
 
 ---
 
@@ -35,7 +35,7 @@ Desde o Campaign Classic 19.2, um status está associado a cada build Você enco
 
 ![](assets/do-not-localize/green3.png) **Disponibilidade** geral - versão estável mais recente disponível. Compilação validada na produção.
 
-A **última construção** estável é Gold Standard 10. Clique [aqui](../../rn/using/gold-standard.md)
+A **última construção** estável é Gold Standard 6. Clique [aqui](../../rn/using/gold-standard.md)
 
 ![](assets/do-not-localize/limited.png) **Disponibilidade** limitada - Compilação atualmente em validação de produção. Somente implantação sob demanda.
 
@@ -51,7 +51,7 @@ Como cliente hospedado (Managed Service ou Hybrid), você precisa entrar em cont
 
 Como usuário do Gold Standard, você se beneficiará automaticamente da atualização do Gold Standard com a versão estável mais recente sem nenhuma ação. [Saiba mais](https://helpx.adobe.com/br/campaign/kb/gold-standard.html)
 
-Como usuário local, você pode fazer a atualização. Para fazer isso, você precisa [baixar a versão](https://experience.adobe.com/#/downloads/content/software-distribution/en/campaign.html) estável mais recente e atualizar todos os seus ambientes. Saiba mais sobre o processo [de](https://helpx.adobe.com/br/campaign/kb/acc-build-upgrade.html)atualização e consulte as Perguntas frequentes sobre [atualização da](https://helpx.adobe.com/br/campaign/kb/build-upgrade-faq.html)compilação.
+Como usuário local, você pode fazer a atualização. Para fazer isso, você precisa [baixar a versão](https://experience.adobe.com/#/downloads/content/software-distribution/br/campaign.html) estável mais recente e atualizar todos os seus ambientes. Saiba mais sobre o processo [de](https://helpx.adobe.com/br/campaign/kb/acc-build-upgrade.html)atualização e consulte as Perguntas frequentes sobre [atualização da](https://helpx.adobe.com/br/campaign/kb/build-upgrade-faq.html)compilação.
 
 ## Recomendações{#recommendations}
 
