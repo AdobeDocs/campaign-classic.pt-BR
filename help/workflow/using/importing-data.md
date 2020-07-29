@@ -13,15 +13,19 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: a034749c82f44edaf718b732e6871b9af378636a
+source-git-commit: d4edd389fde91c3f316c5213f4d7f34e51979112
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '2473'
+ht-degree: 69%
 
 ---
 
 
 # Importação de dados{#importing-data}
+
+>[!CAUTION]
+>
+>Lembre-se dos limites de armazenamento SFTP, Armazenamento DB e perfil ativo conforme o contrato do AdobeCampaign, ao usar essa funcionalidade.
 
 ## Como coletar dados {#how-to-collect-data}
 
@@ -57,13 +61,13 @@ O Adobe Campaign permite importar arquivos compactados ou criptografados. Antes 
 
 Para fazer isso:
 
-1. Use o Painel [de controle](https://docs.adobe.com/content/help/en/control-panel/using/instances-settings/gpg-keys-management.html#decrypting-data) para gerar um par de chaves públicas/privadas.
+1. Use o [Painel de controle do Campaign](https://docs.adobe.com/content/help/en/control-panel/using/instances-settings/gpg-keys-management.html#decrypting-data) para gerar um par de chave pública/privada.
 
    >[!NOTE]
    >
-   >O Painel de controle está disponível para todos os clientes hospedados no AWS (exceto para clientes que hospedam suas instâncias de marketing no local).
+   >O Painel de controle do Campaign está disponível para todos os clientes hospedados no AWS (exceto para clientes que hospedam suas instâncias de marketing no local).
 
-1. Se sua instalação do Adobe Campaign for hospedada pela Adobe, entre em contato com o Atendimento ao cliente da Adobe para ter os utilitários necessários instalados no servidor.
+1. Se a instalação do Adobe Campaign for hospedada pelo Adobe, entre em contato com o Atendimento ao cliente da Adobe para ter os utilitários necessários instalados no servidor.
 1. Se a instalação do Adobe Campaign estiver no local, instale o utilitário que deseja usar (por exemplo: GPG, GZIP) e as chaves necessárias (chave de criptografia) no servidor de aplicativos.
 
 Em seguida, você pode usar os comandos de pré-processamento desejados em seus workflows:
@@ -82,31 +86,31 @@ Um exemplo é apresentado no caso de uso abaixo.
 * [atividade](../../workflow/using/data-loading--file-.md)de carregamento de dados (arquivo).
 * [Compactação ou criptografia de um arquivo](../../workflow/using/how-to-use-workflow-data.md#zipping-or-encrypting-a-file).
 
-### Caso de uso: Importação de dados criptografados usando uma chave gerada pelo Painel de controle {#use-case-gpg-decrypt}
+### Caso de uso: Importação de dados criptografados usando uma chave gerada pelo Painel de controle do Campaign {#use-case-gpg-decrypt}
 
-Nesse caso de uso, criaremos um fluxo de trabalho para importar dados que foram criptografados em um sistema externo, usando uma chave gerada no Painel de controle.
+Nesse caso de uso, criaremos um fluxo de trabalho para importar dados que foram criptografados em um sistema externo, usando uma chave gerada no Painel de controle do Campaign.
 
 Um vídeo tutorial que mostra como usar uma chave GPG para descriptografar dados também está disponível na [seção](https://docs.adobe.com/content/help/en/campaign-classic-learn/tutorials/administrating/control-panel-acc/gpg-key-management/decrypting-data.html).
 
 As etapas para executar esse caso de uso são as seguintes:
 
-1. Use o Painel de controle para gerar um par de chaves (público/privado). As etapas detalhadas estão disponíveis na documentação [do Painel de](https://docs.adobe.com/content/help/en/control-panel/using/instances-settings/gpg-keys-management.html#decrypting-data)controle.
+1. Use o Painel de controle do Campaign para gerar um par de chaves (público/privado). As etapas detalhadas estão disponíveis na documentação [do](https://docs.adobe.com/content/help/en/control-panel/using/instances-settings/gpg-keys-management.html#decrypting-data)Painel de controle do Campaign.
 
    * A chave pública será compartilhada com o sistema externo, que a usará para criptografar os dados a serem enviados para a Campanha.
    * A chave privada será usada pelo Campaign Classic para descriptografar os dados criptografados recebidos.
 
    ![](assets/gpg_generate.png)
 
-1. No sistema externo, use a chave pública baixada do Painel de controle para criptografar os dados a serem importados para o Campaign Classic.
+1. No sistema externo, use a chave pública baixada do Painel de controle do Campaign para criptografar os dados a serem importados para o Campaign Classic.
 
    ![](assets/gpg_external.png)
 
-1. No Campaign Classic, crie um fluxo de trabalho para importar os dados criptografados e descriptografá-los usando a chave privada que foi instalada por meio do Painel de controle. Para fazer isso, criaremos um fluxo de trabalho da seguinte maneira:
+1. No Campaign Classic, crie um fluxo de trabalho para importar os dados criptografados e descriptografá-los usando a chave privada que foi instalada por meio do Painel de controle do Campaign. Para fazer isso, criaremos um fluxo de trabalho da seguinte maneira:
 
    ![](assets/gpg_workflow.png)
 
    * **[!UICONTROL File transfer]** atividade: Transfere o arquivo de uma fonte externa para o Campaign Classic. Neste exemplo, queremos transferir o arquivo de um servidor SFTP.
-   * **[!UICONTROL Data loading (file)]** atividade: Carrega os dados do arquivo no banco de dados e os decodifica usando a chave privada gerada no Painel de controle.
+   * **[!UICONTROL Data loading (file)]** atividade: Carrega os dados do arquivo no banco de dados e os decodifica usando a chave privada gerada no Painel de controle do Campaign.
 
 1. Abra a **[!UICONTROL File transfer]** atividade e especifique a conta externa da qual deseja importar o arquivo .gpg criptografado.
 
@@ -124,7 +128,7 @@ As etapas para executar esse caso de uso são as seguintes:
 
    >[!CAUTION]
    >
-   >Neste exemplo, estamos usando a senha usada por padrão pelo Painel de controle, que é &quot;senha&quot;.
+   >Neste exemplo, estamos usando a senha usada por padrão por Painel de controle do Campaign, que é &quot;senha&quot;.
    >
    >Se você já teve chaves GPG instaladas em sua instância por meio de uma solicitação do Atendimento ao cliente no passado, a senha pode ter sido alterada e ser diferente daquela por padrão.
 
