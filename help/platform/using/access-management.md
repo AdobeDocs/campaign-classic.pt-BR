@@ -15,10 +15,10 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 4d04c261441d4d66441c3665a7beb785383c9f14
+source-git-commit: fef684cd20f9b210025b21d2bc6bdb209a929f7c
 workflow-type: tm+mt
-source-wordcount: '2924'
-ht-degree: 99%
+source-wordcount: '2961'
+ht-degree: 96%
 
 ---
 
@@ -241,55 +241,63 @@ Para criar um novo grupo de operadores, siga as etapas abaixo:
 
 Os grupos de operadores padrão são:
 
-1. Operadores de delivery
+1. **[!UICONTROL Administrator]**
+
+   Os operadores neste grupo têm acesso total à instância. Administradores são usuários que podem acessar as partes mais técnicas da interface. Eles assumem a **[!UICONTROL Administration]** função e garantem que a plataforma esteja configurada.
+
+   Este grupo contém o seguinte direito nomeado:
+
+   * **[!UICONTROL ADMINISTRATION]**: direito de executar/criar/editar/excluir qualquer objeto, como fluxo de trabalho, delivery, scripts etc.
+
+1. **[!UICONTROL Delivery operators]**
 
    Os operadores nesse grupo são responsáveis pelo gerenciamento de deliveries: eles permitem o acesso aos principais recursos necessários para a criação e preparação de deliveries (tipologias de campanha, mapeamentos de delivery, templates padrão, blocos de personalização, etc.).
 
    Esse grupo contém os seguintes direitos nomeados:
 
-   * PREPARE DELIVERIES: direito de criar, editar e iniciar a análise de delivery,
-   * START DELIVERIES: direito de aprovar deliveries previamente analisadas.
+   * **[!UICONTROL PREPARE DELIVERIES]**: direito de criar, editar e iniciar a análise de delivery,
+   * **[!UICONTROL START DELIVERIES]**: direito de aprovar delivery previamente analisados.
 
-1. Gestores de campanha
+1. **[!UICONTROL Campaign managers]**
 
-   Os operadores nesse grupo podem gerenciar campanhas de marketing: isso permite acessar os objetos vinculados às campanhas (planos, programas, workflows, orçamentos, etc.).
+   Os operadores nesse grupo podem gerenciar campanhas de marketing: isso permite acessar os objetos vinculados às campanhas (planos, programas, workflows, orçamentos, etc.) no âmbito do **[!UICONTROL Campaign]** (módulo de Adobe Campaign opcional).
 
    Esse grupo contém os seguintes direitos nomeados:
 
-   * INSERT FOLDERS: direito de inserir pastas à árvore do Adobe Campaign (se você tiver o direito de editar ramificações),
-   * WORKFLOW: direito de usar workflows.
+   * **[!UICONTROL INSERT FOLDERS]**: direito de inserir pastas à árvore do Adobe Campaign (se você tiver o direito de editar ramificações),
+   * **[!UICONTROL WORKFLOW]**: direito de usar workflows.
 
    >[!NOTE]
    >
    >Esse grupo não permite que os operadores iniciem deliveries.
 
-1. Colaboradores de conteúdo
+1. **[!UICONTROL Content contributors]**
 
-   Os operadores nesse grupo podem acessar as pastas Conteúdo, dentro da estrutura de **Gestão de conteúdo** (módulo opcional do Adobe Campaign). Esse grupo não concede direitos adicionais.
+   The operators in this group can access the Content folders, within the framework of **[!UICONTROL Content management]** (optional Adobe Campaign module). Esse grupo não concede direitos adicionais.
 
-1. Acesso a relatórios
+1. **[!UICONTROL Access to reports]**
 
    Esse grupo é reservado para operadores externos, para acessar os relatórios do delivery por meio de um acesso à Web.
 
-1. Execução do workflow
+1. **[!UICONTROL Workflow execution]**
 
    Esse grupo permite atribuir aos operadores o direito de gerenciar workflows que não estão relacionados a campanhas.
 
-1. Supervisores de workflow
+1. **[!UICONTROL Workflow supervisors]**
 
    Os operadores nesse grupo recebem uma notificação por e-mail no caso de alertas relativos aos workflows da campanha.
 
 1. Gerenciamento local / central
 
-   Esses grupos permitem usar o **Marketing distribuído** (módulo opcional do Adobe Campaign).
+   These groups let you use **[!UICONTROL Distributed marketing]** (optional Adobe Campaign module).
 
-1. Gerentes de ofertas
+1. **[!UICONTROL Offer managers]**
 
    Os operadores neste grupo podem criar e manter ofertas. Para obter mais informações sobre essas operações, consulte esta [página](../../interaction/using/operator-profiles.md).
 Esse grupo contém os seguintes direitos nomeados:
 
-   * INSERT FOLDERS: direito de inserir pastas à árvore do Adobe Campaign (se você tiver o direito de editar ramificações),
-   * EDIT FOLDERS: direito de alterar as propriedades da pasta, como nome interno, rótulo, imagem associada, pedido de subpastas etc.
+   * **[!UICONTROL INSERT FOLDERS]**: direito de inserir pastas à árvore do Adobe Campaign (se você tiver o direito de editar ramificações),
+   * **[!UICONTROL EDIT FOLDERS]**: direito de alterar as propriedades da pasta, como nome interno, rótulo, imagem associada, pedido de subpastas etc.
 
 ## Direitos nomeados {#named-rights}
 
