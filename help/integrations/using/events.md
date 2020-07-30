@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 0112d5bd052ad66169225073276d1da4f3c245d8
+source-git-commit: 9f70468e3dd7003a18812d07669f10c561e8bef7
 workflow-type: tm+mt
 source-wordcount: '1145'
 ht-degree: 2%
@@ -129,7 +129,7 @@ Para fins de depuração e monitoramento, os dados completos do acionador são g
 
 ### Análise dos dados {#data-parsing}
 
-Este exemplo de código JS analisa a eVar01 nos enriquecimentos.
+Este exemplo de código JS analisa o eVar01 nos enriquecimentos.
 
 ```
 function processPipelineMessage(xmlTrigger)
@@ -161,7 +161,7 @@ Este exemplo de código JS salva o acionador no banco de dados.
 
 ```
 function processPipelineMessage(xmlTrigger)
- {```
+ {
  (…)
  var event = 
  <pipelineEvent
@@ -209,7 +209,7 @@ Este é um exemplo de código de schema para esta tabela:
 | shopper_id | Sequência 32 | shopper_id | O identificador interno do comprador. Definido pelo fluxo de trabalho de reconciliação. Se zero, isso significa que o cliente é desconhecido na Campanha. |
 | shopper_key | Longo | shopper_key | O Identificador externo do comprador foi capturado pela Analytics. |
 | created | Data e hora | Criado | A hora em que o evento foi criado na Campanha. |
-| lastModified | Data e hora | Última modificação | A última vez que o evento foi modificado na Adobe. |
+| lastModified | Data e hora | Última modificação | A última vez que o evento foi modificado no Adobe. |
 | timeGMT | Data e hora | Carimbo de data e hora | A hora em que o evento foi gerado no Analytics. |
 
 ### Exibição dos eventos {#display-events}
