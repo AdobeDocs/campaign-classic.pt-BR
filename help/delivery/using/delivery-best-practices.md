@@ -13,15 +13,17 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: f599bc5483779ae62dd4d5eb1936cbc2760639b5
+source-git-commit: 4548eda6f87566398ddf19131b777012cbf8917b
 workflow-type: tm+mt
-source-wordcount: '4348'
+source-wordcount: '4361'
 ht-degree: 32%
 
 ---
 
 
 # Práticas recomendadas para delivery {#delivery-best-practices}
+
+Saiba mais sobre as práticas recomendadas relacionadas ao design e envio de delivery com a Adobe Campaign.
 
 ## Otimizar a entrega {#optimize-delivery}
 
@@ -102,11 +104,11 @@ Quando você gerencia várias marcas no Adobe Campaign, a Adobe recomenda ter um
 
 **Dica**:  Para evitar erros de configuração no Campaign Standard, recomendamos que você duplicado um modelo nativo e altere suas propriedades em vez de criar um novo modelo.
 
-**Configurar endereços**
+### Configurar endereços
 
 * O endereço do remetente é obrigatório para permitir o envio de um email.
 
-* Alguns ISPs (Provedores de serviço da Internet) verificam a validade do endereço do remetente antes de aceitarem mensagens.
+* Alguns ISPs (Internet Provedores de serviço) verificam a validade do endereço do remetente antes de aceitarem mensagens.
 
 * Um endereço mal formado pode resultar na rejeição pelo servidor de recebimento. Tem de se certificar de que é fornecido o endereço correto.
 
@@ -126,7 +128,7 @@ Para configurar endereços na interface de Campanha, siga as etapas abaixo:
 
 1. Nos **[!UICONTROL Reply address text]** arquivos, o endereço do remetente é usado por padrão para respostas. Entretanto, a Adobe recomenda usar um endereço real existente, como o atendimento ao cliente da sua marca. Nesse caso, se um destinatário enviar uma resposta, o atendimento ao cliente poderá resolvê-lo.
 
-**Configurar um grupo de controle**
+### Configurar um grupo de controle
 
 Depois que a entrega é enviada, você pode comparar o comportamento dos destinatários excluídos com os destinatários que receberam a entrega. Você pode então medir a eficiência de suas campanhas. Saiba mais sobre grupos de controle [nesta seção](../../campaign/using/marketing-campaign-deliveries.md#defining-a-control-group).
 
@@ -134,7 +136,7 @@ Para configurar um grupo de controle, clique no **[!UICONTROL To]** link. Na **[
 
 ![](assets/d_best_practices_control_group.png)
 
-**Usar tipologias para aplicar filtros ou regras de controle**
+### Usar tipologias para aplicar filtros ou regras de controle
 
 Uma tipologia contém regras de verificação aplicadas durante a fase de análise, antes de enviar qualquer mensagem.
 
@@ -217,7 +219,7 @@ Certifique-se de que testou as alterações antes do envio final
 
 Por padrão, o número de caracteres em um SMS atende aos padrões GSM (Global System for Mobile Communications). As mensagens SMS que usam a codificação GSM são limitadas a 160 caracteres ou a 153 caracteres por SMS para as mensagens enviadas em várias partes.
 
-A transliteração consiste em substituir um caractere de um SMS por outro quando esse caractere não é considerado pelo padrão GSM. Observe que inserir campos de personalização no conteúdo de sua mensagem SMS pode introduzir caracteres que não são considerados pela codificação GSM. Você pode autorizar a transliteração de caracteres marcando a caixa correspondente na guia Configurações do canal SMPP do correspondente **[!UICONTROL External account]**.
+A transliteração consiste em substituir um caractere de um SMS por outro quando esse caractere não é considerado pelo padrão GSM. Observe que inserir campos de personalização no conteúdo de sua mensagem SMS pode introduzir caracteres que não são considerados pela codificação GSM. Você pode autorizar a transliteração de caracteres marcando a caixa correspondente na guia Configurações do canal SMPP da correspondente **[!UICONTROL External account]**.
 Learn more [in this section](../../delivery/using/sms-channel.md#creating-an-smpp-external-account).
 
 **Dicas**:
@@ -342,7 +344,7 @@ Quando a mensagem estiver pronta, certifique-se de que seu conteúdo está sendo
 
 Antes de enviar sua mensagem, verifique também se os parâmetros e a configuração estão consistentes na entrega.
 
-### A validação é a chave {#validation-is-key}
+### Por que a validação é chave {#validation-is-key}
 
 Antes de enviar uma entrega, você precisa garantir que seus destinatários receberão a mensagem que você realmente deseja enviar. Para fazer isso, é necessário validar o conteúdo da mensagem e os parâmetros do delivery.
 
@@ -461,7 +463,7 @@ Para medir a velocidade de entrega das mensagens, é possível controlar a taxa 
 
 * Não tente programar entregas grandes em conjunto. Observe que pode levar de 5 a 10 minutos para espalhar a carga uniformemente sobre o sistema.
 
-## solução de problemas do Delivery {#delivery-troubleshooting}
+### solução de problemas do Delivery {#delivery-troubleshooting}
 
 Ações específicas podem ser executadas ao encontrar problemas com delivery:
 
