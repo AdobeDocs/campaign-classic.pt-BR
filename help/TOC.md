@@ -5,9 +5,9 @@ index: y
 product: adobe campaign
 sub-product: Adobe Campaign Classic
 translation-type: tm+mt
-source-git-commit: 14e275203e3436183d5a5c743375ba42f6153c6d
+source-git-commit: b19a8e477b4419a369fa257b4629f4a01f0b0400
 workflow-type: tm+mt
-source-wordcount: '2094'
+source-wordcount: '2097'
 ht-degree: 98%
 
 ---
@@ -89,8 +89,9 @@ ht-degree: 98%
       + [Conectores CRM](platform/using/crm-connectors.md)
       + [Conector de dados do Adobe Analytics](platform/using/adobe-analytics-data-connector.md)
 + Envio de mensagens {#sending-messages}
-   + Sobre deliveries e canais {#about-deliveries-and-channels}
+   + Get started with messages {#about-deliveries-and-channels}
       + [Canais de comunicação](delivery/using/communication-channels.md)
+      + [Práticas recomendadas para delivery](delivery/using/delivery-best-practices.md)
       + [Acessando informações de deliveries](delivery/using/accessing-deliveries-information.md)
       + [Tipos de deliveries](delivery/using/types-of-deliveries.md)
    + Etapas principais ao criar um delivery {#key-steps-when-creating-a-delivery}
@@ -146,7 +147,7 @@ ht-degree: 98%
       + [Marketing viral e social](delivery/using/viral-and-social-marketing.md)
    + Monitoramento de deliveries {#monitoring-deliveries}
       + [Monitoramento de uma entrega](delivery/using/monitoring-a-delivery.md)
-      + [Noções básicas sobre falhas de entrega](delivery/using/understanding-delivery-failures.md)
+      + [Noções básicas sobre falhas de delivery](delivery/using/understanding-delivery-failures.md)
       + [Noções básicas sobre gestão de quarentena](delivery/using/understanding-quarantine-management.md)
    + Rastreamento de mensagens {#tracking-messages}
       + [Sobre o rastreamento de mensagens](delivery/using/about-message-tracking.md)
@@ -336,7 +337,7 @@ ht-degree: 98%
       + [Sobre workflows](workflow/using/about-workflows.md)
       + [Sobre atividades](workflow/using/about-activities.md)
    + Operação Geral {#general-operation}
-      + [Criação de um fluxo de trabalho](workflow/using/building-a-workflow.md)
+      + [Criar um workflow](workflow/using/building-a-workflow.md)
       + [Direcionamento de dados](workflow/using/targeting-data.md)
       + [Importação de dados](workflow/using/importing-data.md)
       + [Como usar os dados de workflow](workflow/using/how-to-use-workflow-data.md)
@@ -349,11 +350,11 @@ ht-degree: 98%
       + [Arquitetura](workflow/using/architecture.md)
    + Atividades de direcionamento {#targeting-activities}
       + [Sobre as atividades de direcionamento](workflow/using/about-targeting-activities.md)
-      + [Consulta](workflow/using/query.md)
-      + [Consulta incremental](workflow/using/incremental-query.md)
+      + [Query](workflow/using/query.md)
+      + [Query incremental](workflow/using/incremental-query.md)
       + [Lista de leitura](workflow/using/read-list.md)
       + [União](workflow/using/union.md)
-      + [Interseção](workflow/using/intersection.md)
+      + [Intersecção](workflow/using/intersection.md)
       + [Exclusão](workflow/using/exclusion.md)
       + [Split](workflow/using/split.md)
       + [Células](workflow/using/cells.md)
@@ -370,10 +371,10 @@ ht-degree: 98%
       + [Conector CRM](workflow/using/crm-connector.md)
    + Atividades de controle de fluxo {#flow-control-activities}
       + [Sobre as atividades de controle de fluxo](workflow/using/about-flow-control-activities.md)
-      + [Iniciar e finalizar](workflow/using/start-and-end.md)
-      + [Fork](workflow/using/fork.md)
+      + [Início e término](workflow/using/start-and-end.md)
+      + [Bifurcação](workflow/using/fork.md)
       + [AND-join](workflow/using/and-join.md)
-      + [Agendador](workflow/using/scheduler.md)
+      + [Scheduler](workflow/using/scheduler.md)
       + [Teste](workflow/using/test.md)
       + [Aguardar](workflow/using/wait.md)
       + [Restrição de tempo](workflow/using/time-constraint.md)
