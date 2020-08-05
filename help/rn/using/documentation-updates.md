@@ -13,9 +13,9 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 13fefe429862e856bc7ec1d376d80c176398da0b
+source-git-commit: 51bbf50a1e9b00c25fca8e1e86ca21c314c18313
 workflow-type: tm+mt
-source-wordcount: '6963'
+source-wordcount: '6953'
 ht-degree: 97%
 
 ---
@@ -256,7 +256,7 @@ Foram adicionadas informações para especificar que o conteúdo dos campos de p
 
 A documentação do Painel de controle do Campaign foi integrada ao novo conjunto de documentação colaborativa. [Leia mais](https://docs.adobe.com/content/help/pt-BR/control-panel/using/control-panel-home.translate.html)
 
-O guia de introdução às práticas recomendadas de delivery foi atualizado. [Leia mais](https://helpx.adobe.com/br/campaign/kb/delivery-best-practices.html)
+O guia de introdução às práticas recomendadas de delivery foi atualizado. [Leia mais](../../delivery/using/delivery-best-practices.md)
 
 ## Outubro de 2019 {#october-2019}
 
@@ -268,7 +268,7 @@ Uma nova página de solução de problemas foi adicionada para rastreamento no C
 
 Uma nova página de práticas recomendadas do Adobe Analytics Data Connector foi adicionada. [Leia mais sobre o Adobe Analytics Data Connector](../../platform/using/adobe-analytics-data-connector.md)
 
-O guia de introdução às práticas recomendadas de delivery foi movido e atualizado. [Leia mais](https://helpx.adobe.com/br/campaign/kb/delivery-best-practices.html)
+O guia de introdução às práticas recomendadas de delivery foi movido e atualizado. [Leia mais](../../delivery/using/delivery-best-practices.md)
 
 Uma recomendação foi adicionada à documentação do canal SMS para evitar problemas ao usar várias contas externas aproveitando o conector SMPP genérico estendido com a mesma conta do provedor. [Leia mais](../../delivery/using/sms-channel.md#automatic-reply)
 
