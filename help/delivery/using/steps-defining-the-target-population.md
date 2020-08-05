@@ -15,10 +15,10 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: fa9e4ddc716809b96e259acd1137a0c24ef68fee
+source-git-commit: 7ffbbe95247f28115f7e46eb0e94f2612fb4ea93
 workflow-type: tm+mt
-source-wordcount: '1528'
-ht-degree: 99%
+source-wordcount: '1527'
+ht-degree: 93%
 
 ---
 
@@ -29,25 +29,23 @@ ht-degree: 99%
 
 Para cada delivery, você poderá definir vários tipos de populações do target. A seção abaixo fornece mais informações sobre como selecionar:
 
-* **Os principais recipients do delivery**. [Leia mais](../../delivery/using/steps-defining-the-target-population.md#selecting-the-main-target).
-* **Os recipients de mensagens de prova**, para configurar um ciclo de validação. [Leia mais](../../delivery/using/steps-defining-the-target-population.md#defining-a-specific-proof-target).
+* Os principais recipients do delivery. [Leia mais](../../delivery/using/steps-defining-the-target-population.md#selecting-the-main-target)
+* Os recipients de mensagens de prova, para configurar um ciclo de validação. [Leia mais](../../delivery/using/steps-defining-the-target-population.md#defining-a-specific-proof-target)
 
-Além disso, também é possível definir [seed addresses](../../delivery/using/about-seed-addresses.md) e [grupos de controle](../../campaign/using/marketing-campaign-deliveries.md#defining-a-control-group). se o delivery for incluído em uma campanha de marketing.
+Além disso, se o delivery estiver incluído em uma campanha de marketing, você também poderá definir [seeds addresses](../../delivery/using/about-seed-addresses.md)e [grupos de controle](../../campaign/using/marketing-campaign-deliveries.md#defining-a-control-group).
 
 ## Selecionar os principais recipients do delivery {#selecting-the-main-target}
 
-Na maioria dos casos, o target principal é extraído do banco de dados do Campaign (modo padrão).
+Na maioria dos casos, o público alvo principal é extraído do banco de dados Adobe Campaign (modo padrão). No entanto, recipient também podem ser armazenados em um arquivo externo. Saiba mais [nesta seção](../../delivery/using/steps-defining-the-target-population.md#selecting-external-recipients).
 
-Os recipients também podem ser armazenados em um arquivo externo. A configuração desse tipo de delivery é apresentada em [Seleção de recipients externos](../../delivery/using/steps-defining-the-target-population.md#selecting-external-recipients)
+Para selecionar os recipient de um delivery, siga as etapas abaixo:
 
-Para selecionar os recipients do delivery que está sendo criado, siga as etapas abaixo:
-
-1. Clique no link **[!UICONTROL To]**.
-1. Se os recipients estiverem armazenados no banco de dados, selecione a primeira opção.
+1. No editor de delivery, selecione **[!UICONTROL To]**.
+1. Se os recipient estiverem armazenados no banco de dados, escolha a primeira opção.
 
    ![](assets/s_ncs_user_wizard_email02a.png)
 
-1. Selecione o target mapping na lista suspensa **[!UICONTROL Target mapping]**. O target mapping padrão do Adobe Campaign é **[!UICONTROL Recipients]**.
+1. Selecione o target mapping na lista suspensa **[!UICONTROL Target mapping]**. O target mapping padrão Adobe Campaign é **[!UICONTROL Recipients]**, com base no schema **nms:recipient** .
 
    Outros target mappings estão disponíveis e alguns podem ser relacionados à sua configuração específica. Para obter mais informações sobre target mappings, consulte [Seleção de target mapping](../../delivery/using/selecting-a-target-mapping.md).
 
@@ -157,7 +155,7 @@ As seguintes opções estão disponíveis:
 
       ![](assets/s_ncs_user_wizard_email02j.png)
 
-* **[!UICONTROL Exclude recipients who no longer want to be contacted]** , isto é, recipient cujos endereços de email estão em uma lista de blocos (&#39;opt out&#39;). Essa opção deve permanecer selecionada para observar a ética profissional de marketing digital e as leis que regem o comércio eletrônico.
+* **[!UICONTROL Exclude recipients who no longer want to be contacted]** , isto é, recipient cujos endereços de email estão em uma lista de bloqueios (&#39;opt out&#39;). Essa opção deve permanecer selecionada para observar a ética profissional de marketing digital e as leis que regem o comércio eletrônico.
 * **[!UICONTROL Exclude quarantined recipients]**. Essa opção permite excluir do target qualquer perfil que não responda. É altamente recomendável manter essa opção selecionada.
 
    >[!NOTE]
