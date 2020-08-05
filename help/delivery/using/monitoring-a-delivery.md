@@ -15,9 +15,9 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 537cbdec1ec88da1c759f6ca8eafe383c55a61d3
+source-git-commit: 51bbf50a1e9b00c25fca8e1e86ca21c314c18313
 workflow-type: tm+mt
-source-wordcount: '2602'
+source-wordcount: '2597'
 ht-degree: 97%
 
 ---
@@ -29,9 +29,9 @@ O **painel de delivery** é fundamental para monitorar seus deliveries e eventua
 
 **Tópicos relacionados:**
 
-* [Noções básicas sobre falhas de entrega](../../delivery/using/understanding-delivery-failures.md)
+* [Noções básicas sobre falhas de delivery](../../delivery/using/understanding-delivery-failures.md)
 * [Noções básicas sobre gestão de quarentena](../../delivery/using/understanding-quarantine-management.md)
-* [Práticas recomendadas para delivery](https://helpx.adobe.com/br/campaign/kb/delivery-best-practices.html)
+* [Práticas recomendadas para delivery](../../delivery/using/delivery-best-practices.md)
 * [Gerenciamento da capacidade de entrega](../../delivery/using/about-deliverability.md)
 
 ## Painel de delivery {#delivery-dashboard}
@@ -166,7 +166,7 @@ Ao enviar um delivery, você pode encontrar o seguinte status no seu painel de d
   </tr> 
   <tr> 
    <td> Ignored<br /> </td> 
-   <td> O delivery não foi enviado ao recipient devido a um erro no endereço. Foi adicionado a uma lista de blocos, em quarentena, não fornecido ou a um duplicado. <br /> </td> 
+   <td> O delivery não foi enviado ao recipient devido a um erro no endereço. Foi adicionado a uma lista de bloqueios, em quarentena, não fornecido ou a um duplicado. <br /> </td> 
   </tr> 
   <tr> 
    <td> Sent<br /> </td> 
