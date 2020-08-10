@@ -1,7 +1,7 @@
 ---
-title: ' Versão Gold Standard '
-seo-title: ' Versão Gold Standard '
-description: ' Versão Gold Standard '
+title: 'Versão Gold Standard '
+seo-title: 'Versão Gold Standard '
+description: 'Versão Gold Standard '
 seo-description: null
 page-status-flag: never-activated
 uuid: 269d590c-5a6d-40b9-a879-02f5033863fc
@@ -18,20 +18,20 @@ translation-type: tm+mt
 source-git-commit: 890153a5b30594a1cb90606db4be8fd1ec19267b
 workflow-type: tm+mt
 source-wordcount: '826'
-ht-degree: 79%
+ht-degree: 100%
 
 ---
 
 
-#  Versão Gold Standard {#gold-standard}
+# Versão Gold Standard{#gold-standard}
 
-Como usuário do Gold Standard, você se beneficia automaticamente da atualização do Gold Standard com a versão estável mais recente, sem nenhuma ação.
+Como usuário do Gold Standard, você se beneficia automaticamente da atualização do Gold Standard com a versão estável mais recente sem ter de tomar nenhuma ação.
 
 Os clientes locais e híbridos também podem se beneficiar das versões do Gold Standard.
 
-Esta é nossa versão de suporte a longo prazo. Se você migrar de uma versão antiga, recomendamos que atualize primeiro para essa versão.
+Esta é nossa versão de suporte a longo prazo. Se você migrar de uma versão antiga, recomendamos que atualize inicialmente para essa versão.
 
-Esta página lista versões Gold Standard.
+Esta página lista versões do Gold Standard.
 
 Para obter mais informações sobre a atualização do Gold Standard, consulte este [artigo](https://helpx.adobe.com/br/campaign/kb/gold-standard.html).
 
@@ -39,7 +39,7 @@ Para obter mais informações sobre a atualização do Gold Standard, consulte e
 
 _7 de julho de 2020_
 
-O build 9032@efd8a94 inclui a seguinte correção:
+A build 9032@efd8a94 inclui a seguinte correção:
 
 Correção de um problema que impedia que o rastreamento funcionasse quando o recurso de assinatura era desativado ou ao usar uma instância de marketing antiga com uma Mid recente. (NEO-26411)
 
@@ -51,7 +51,7 @@ Correção de um problema que impedia que o rastreamento funcionasse quando o re
 
 _22 de junho de 2020_
 
-A compilação 9032@800be2e inclui as seguintes correções:
+A build 9032@800be2e inclui as seguintes correções:
 
 * O conector HTTP2 para iOS foi aprimorado (atualizações de terceiros e gerenciamento de erros). (25904, NEO-, NEO-25903, NEO-25799)
 
@@ -63,11 +63,12 @@ As seguintes correções estão relacionadas ao mecanismo de segurança do link 
 * Correção de um problema com o serviço anti-phishing. (NEO-25283)
 * Correção de um problema de rastreamento ao usar fórmulas de rastreamento personalizadas específicas. (NEO-25277)
 
+
 ## ![](assets/do-not-localize/red_2.png) Versão Gold Standard 8{#gs-8}
 
 _29 de abril de 2020_
 
-A compilação 9032@3a9dc9c inclui as seguintes correções:
+A build 9032@3a9dc9c inclui as seguintes correções:
 
 * A segurança no rastreamento de links no email foi aprimorada. Ela é ativada por padrão para todos os clientes. Um recurso de segurança adicional e aprimorado está disponível e pode ser ativado ao acessar o Atendimento ao cliente. Mais detalhes sobre o recurso e as etapas para clientes não hospedados para habilitá-lo podem ser encontrados na [lista de verificação de Segurança e Privacidade](https://helpx.adobe.com/br/campaign/kb/acc-security.html#signature-mechanism).
 
@@ -92,7 +93,7 @@ A compilação 9032@3a9dc9c inclui as seguintes correções:
 
 _9 de março de 2020_
 
-O build 9032@19f73c5 inclui a seguinte correção:
+A build 9032@19f73c5 inclui a seguinte correção:
 
 * Correção de um problema com a conta externa que usa o FTP sobre SSL. (NEO-20498)
 
@@ -100,7 +101,7 @@ O build 9032@19f73c5 inclui a seguinte correção:
 
 _17 de dezembro de 2019_
 
-O build 9032@d6b8062 inclui a seguinte correção:
+A build 9032@d6b8062 inclui a seguinte correção:
 
 * Correção de um problema de rastreamento nos seguintes canais de comunicação: dispositivos móveis (SMS, MMS), push (iOS, Android) e redes sociais (Facebook, Twitter). (NEO-19595)
 
@@ -108,7 +109,7 @@ O build 9032@d6b8062 inclui a seguinte correção:
 
 _11 de dezembro de 2019_
 
-O build 9032@bc4a935 inclui a seguinte correção:
+A build 9032@bc4a935 inclui a seguinte correção:
 
 * Correção de um problema de desempenho ao enviar mensagens com um banco de dados MSSQL. (NEO-17558)
 
@@ -116,7 +117,7 @@ O build 9032@bc4a935 inclui a seguinte correção:
 
 _20 de novembro de 2019_
 
-A compilação 9032@3468c7b inclui as seguintes correções:
+A build 9032@3468c7b inclui as seguintes correções:
 
 * Correção de um problema de logon por autenticação IMS. (NEO-17312)
 * Correção de um problema ao exibir relatórios cumulativos em várias entregas. (NEO-18165)
@@ -126,7 +127,7 @@ A compilação 9032@3468c7b inclui as seguintes correções:
 
 _19 de setembro de 2019_
 
-A compilação 9032@cee805c inclui as seguintes correções:
+A build 9032@cee805c inclui as seguintes correções:
 
 * Correção de um problema ao usar o Conector CRM para Salesforce. (NEO-17712)
 * Correção de um problema de índice que causava problemas de desempenho ao enviar mensagens transacionais.
@@ -135,7 +136,7 @@ A compilação 9032@cee805c inclui as seguintes correções:
 
 _13 de agosto de 2019_
 
-A compilação 19.1.4 inicial inclui as seguintes correções:
+A build inicial 19.1.4 inclui as seguintes correções:
 
 * Correção de um problema em que a atividade do programador gerasse mensagens de erro indesejáveis durante a configuração do assistente. Reversão de atualização do NEO-11662. (NEO-17097)
 * Correção de uma regressão causada pelo NEO-12727, que podia interromper os fluxos de trabalho quando uma atividade de teste era executada duas vezes. (NEO-16835)
