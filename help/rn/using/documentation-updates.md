@@ -16,12 +16,12 @@ translation-type: tm+mt
 source-git-commit: 51bbf50a1e9b00c25fca8e1e86ca21c314c18313
 workflow-type: tm+mt
 source-wordcount: '6953'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
 
-# Atualizações da documentação{#documentation-updates}
+# Atualizações de documentação{#documentation-updates}
 
 Esta página lista todos os novos recursos e atualizações de documentação por mês e versão do Campaign.
 
@@ -29,21 +29,21 @@ Você também pode consultar as [Notas de versão do Adobe Campaign Classic](../
 
 ## Julho de 2020 {#july-2020}
 
-Um caso de uso sobre como atualizar automaticamente uma lista usando um query incremental foi adicionado aos casos de uso do fluxo de trabalho. [Leia mais](../../workflow/using/about-workflow-use-cases.md)
+Um caso de uso sobre como atualizar automaticamente uma lista usando um query incremental foi adicionado aos casos de uso do workflow. [Leia mais](../../workflow/using/about-workflow-use-cases.md)
 
-As [Notas](../../rn/using/latest-release.md) de versão foram reorganizadas: uma página [de](../../rn/using/latest-release.md) visão geral foi adicionada com informações sobre status de criação, processo de atualização, recomendações e links importantes. Uma página dedicada para as versões [do](../../rn/using/gold-standard.md) Gold Standard também foi adicionada e a matriz [](../../rn/using/compatibility-matrix.md) Compatibilidade foi integrada.
+As [Notas de versão](../../rn/using/latest-release.md) foram reorganizadas: uma [página de visão geral](../../rn/using/latest-release.md) foi adicionada com informações sobre status de criação, processo de atualização, recomendações e links importantes. Uma página dedicada às [versões do Gold Standard](../../rn/using/gold-standard.md) também foi adicionada e a [matriz de Compatibilidade](../../rn/using/compatibility-matrix.md) foi integrada.
 
 Uma nova seção foi adicionada com diretrizes relacionadas ao monitoramento do Campaign Classic. [Leia mais](../../production/using/monitoring-guidelines.md)
 
 A seção Privacidade e consentimento foi aprimorada com informações mais detalhadas e links úteis. [Leia mais](../../platform/using/privacy-and-recommendations.md).
 
-A página Gerenciamento de privacidade no Campaign Classic foi atualizada com informações sobre o campo &quot;regulamento&quot;, que agora está disponível ao usar a API, permitindo a configuração do processo automático de solicitação de privacidade. [Leia mais](https://helpx.adobe.com/ie/campaign/kb/acc-privacy.html#ManagingPrivacyRequests)
+A página de gerenciamento de privacidade no Campaign Classic foi atualizada com informações sobre o campo &quot;regulamento&quot;, que agora está disponível ao usar a API, permitindo a configuração do processo automático de solicitação de privacidade. [Leia mais](https://helpx.adobe.com/br/campaign/kb/acc-privacy.html#ManagingPrivacyRequests)
 
-A página Visão geral do Gerenciamento de privacidade foi atualizada para incluir informações sobre a Lei de Proteção de Dados Pessoais (PDPA) da Tailândia e sobre a Lei Geral de Dados (LGPD) do Brasil. [Leia mais](https://helpx.adobe.com/br/campaign/kb/campaign-privacy-overview.html#whatisgdpr)
+A página Visão geral do gerenciamento de privacidade foi atualizada para incluir informações sobre a Lei de Proteção de Dados Pessoais (PDPA) da Tailândia e sobre a Lei Geral de Dados (LGPD) do Brasil. [Leia mais](https://helpx.adobe.com/br/campaign/kb/campaign-privacy-overview.html#whatisgdpr)
 
 As informações foram adicionadas nos registros de subworkflows e no comportamento em caso de erro. [Leia mais](../../workflow/using/sub-workflow.md)
 
-As práticas recomendadas foram adicionadas na seção **[!UICONTROL Scheduler]** atividade. [Leia mais](../../workflow/using/scheduler.md)
+As práticas recomendadas foram adicionadas na seção atividade de **[!UICONTROL Scheduler]**. [Leia mais](../../workflow/using/scheduler.md)
 
 ## Junho de 2020 {#june-2020}
 
@@ -53,7 +53,7 @@ Casos de uso foram adicionados em como [criptografar](../../workflow/using/how-t
 
 Os termos &quot;white list&quot; e &quot;black list&quot; foram removidos da documentação do Adobe Campaign. Algumas ocorrências desses termos ainda podem existir na interface do usuário do produto, nos nomes de opções e no código interno, mas serão substituídas em versões futuras do Campaign por &quot;lista de bloqueios&quot; e &quot;lista de permissões&quot;.
 
-The Experience Cloud Triggers and Adobe Campaign Classic integration page has been moved [here](../../integrations/using/about-triggers.md).
+Os acionadores da Experience Cloud e a página de integração do Adobe Campaign Classic foram movidos [para cá](../../integrations/using/about-triggers.md).
 
 ## 20.2 - 08/06/2020{#release-20-2}
 
