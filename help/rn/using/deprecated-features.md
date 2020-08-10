@@ -96,7 +96,7 @@ Esta seção lista os recursos e funcionalidades removidos do Campaign Classic.
    <td>A partir da versão 19.1 do Campaign, as APIs do Campaign Classic estarão disponíveis em uma página dedicada. Se estiver usando o arquivo jsapi.chm legado, agora deverá consultar a <a href="https://docs.adobe.com/content/help/en/campaign-classic/technicalresources/api/index.html">nova versão online</a>.</td>
   </tr> 
   <tr> 
-   <td>Orquestração de campanha    - Marketing preditivo</td>
+   <td>Orquestração de campanha     - Marketing preditivo</td>
    <td>A partir da versão 18.10 do Campaign, os recursos de marketing preditivo não estarão mais disponíveis.</td>
   </tr> 
   <tr> 
@@ -147,7 +147,7 @@ Consulte a [Matriz de compatibilidade](https://helpx.adobe.com/br/campaign/kb/co
 
 >[!CAUTION]
 >
->O Adobe Campaign Classic é compatível com todos os sistemas e ferramentas listados na [Matriz de compatibilidade](https://helpx.adobe.com/br/campaign/kb/compatibility-matrix.html). Quando versões específicas desses sistemas e ferramentas de terceiros atingem o fim da vida útil (EOL) com seus respectivos criadores, o Adobe Campaign não é mais compatível com essas versões: elas são anunciadas como obsoletas e, em seguida, são removidas de nossa matriz de compatibilidade na versão subsequente do produto. Certifique-se de que você está usando as versões compatíveis de qualquer sistema listado na matriz de compatibilidade para evitar problemas.
+>O Adobe Campaign Classic é compatível com todos os sistemas e ferramentas listados na [Matriz de compatibilidade](https://helpx.adobe.com/br/campaign/kb/compatibility-matrix.html). Quando versões específicas desses sistemas e ferramentas de terceiros atingem o fim da vida útil (EOL) com seus respectivos criadores, o Adobe Campaign não é mais compatível com essas versões: elas são anunciadas como obsoletas e, em seguida, são removidas de nossa matriz de compatibilidade na versão subsequente do produto. Verifique se você está usando as versões compatíveis dos sistemas listadas na matriz de compatibilidade para evitar problemas.
 
 ### Console do cliente {#client-console-eol}
 
@@ -188,7 +188,7 @@ A Adobe não oferece suporte aos seguintes mecanismos de banco de dados, pois fo
 
 Consulte a [Matriz de compatibilidade do Campaign Classic](https://helpx.adobe.com/br/campaign/kb/compatibility-matrix.html) para acessar a lista de versões compatíveis.
 
-**FEDERATED DATA ACCESS (FDA)**
+**FEDERATED DATA ACCESS (FDA)** 
 
 A partir da versão do primeiro trimestre 19.1, o Adobe Campaign não é mais compatível com os seguintes servidores FDA.
 
