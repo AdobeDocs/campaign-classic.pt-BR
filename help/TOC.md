@@ -8,7 +8,7 @@ translation-type: tm+mt
 source-git-commit: b19a8e477b4419a369fa257b4629f4a01f0b0400
 workflow-type: tm+mt
 source-wordcount: '2097'
-ht-degree: 98%
+ht-degree: 99%
 
 ---
 
@@ -76,7 +76,7 @@ ht-degree: 98%
       + [Contas externas](platform/using/external-accounts.md)
    + Acesso a um banco de dados externo (FDA){#accessing-external-database}
       + [Sobre o FDA](platform/using/about-fda.md)
-      + [Configuração FDA conectores](platform/using/specific-configuration-database.md)
+      + [Configuração de conectores FDA](platform/using/specific-configuration-database.md)
       + [Conectores herdados](platform/using/legacy-connectors.md)
       + [Direitos de acesso ao banco de dados remoto](platform/using/remote-database-access-rights.md)
       + [Conexão com o banco de dados](platform/using/connecting-to-database.md)
@@ -98,7 +98,7 @@ ht-degree: 98%
       + [Sobre a criação de delivery ](delivery/using/steps-about-delivery-creation-steps.md)
       + [Criação e identificação do delivery](delivery/using/steps-create-and-identify-the-delivery.md)
       + [Definição da população do target](delivery/using/steps-defining-the-target-population.md)
-      + [Validando o dleivery](delivery/using/steps-validating-the-delivery.md)
+      + [Validando o delivery](delivery/using/steps-validating-the-delivery.md)
       + [Enviando o delivery](delivery/using/steps-sending-the-delivery.md)
    + Envio de emails {#sending-emails}
       + [Sobre o canal de email](delivery/using/about-email-channel.md)
