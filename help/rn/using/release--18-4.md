@@ -144,7 +144,7 @@ ht-degree: 100%
 * Está disponível um novo modo de importação de pacotes usando a linha de comando que permite dependências circulares (não recomendado para pacotes grandes). Consulte a seção &quot;Evoluções técnicas&quot; abaixo para obter mais informações. (NEO-8979)
 * Melhoria no desempenho para o carregamento de grande quantidade de dados no Teradata e a correção de um problema que impedia a exibição do valor correto de dados processados no log. (NEO-10429)
 * Agora a importação de audiências do Audience Manager funciona com arquivos divididos. Anteriormente, somente o último arquivo do segmento era importado pelo workflow técnico importSharedAudience. (NEO-10156)
-* No Windows, o caminho de instalação padrão do servidor do Campaign foi alterado. Ao iniciar a configuração da versão de 64 bits, o caminho de instalação padrão agora é: **C:Program FilesAdobeAdobe Campaign Classic v7** em vez de **C:Program Files (x86)AdobeAdobe Campaign Classic v7**.
+* No Windows, o caminho de instalação padrão do servidor do Campaign foi alterado. Ao iniciar a configuração da versão de 64 bits, o caminho de instalação padrão agora é: **C:Program Files\Adobe\Adobe Campaign Classic v7** em vez de **C:Program Files (x86)\Adobe\Adobe Campaign Classic v7**.
 * As regras MX padrão foram aprimoradas para incluir mais domínios e otimizar a taxa de transferência.
 * Restrições de acesso impostas na chamada SOAP do assistente de implantação (xtk:serverOptions#SaveOptions).
 * A biblioteca weka.jar obsoleta foi removida e a biblioteca OpenSSL foi atualizada por causa de otimizações de segurança.
