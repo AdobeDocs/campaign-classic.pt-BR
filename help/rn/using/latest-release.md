@@ -12,11 +12,11 @@ discoiquuid: 5df34f55-135a-4ea8-afc2-f9427ce5ae7b
 index: y
 internal: n
 snippet: y
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: d9b6ae9f7e2f3b15698f1a420b5416162cbcc758
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1987'
-ht-degree: 90%
+ht-degree: 100%
 
 ---
 
@@ -32,21 +32,22 @@ _22 de julho de 2020_
 * Correção de um problema que impedia que o rastreamento funcionasse quando o recurso de assinatura era desativado ou ao usar uma instância de marketing antiga com uma Mid recente. (NEO-26411)
 * Correção de um problema que resultava no bloqueio de links não assinados de domínios personalizados quando deveriam ser permitidos. (NEO-25210)
 * Correção de um problema que poderia impedir a abertura/clique de URLs de rastreamento ao usar determinadas versões herdadas do Outlook. (NEO-25688)
-* Correção de um problema que resultava na definição incorreta de URLs de mirrores page em delivery de email. (NEO-26084)
+* Correção de um problema que resultava na definição incorreta de URLs de mirror page em deliveries de email. (NEO-26084)
 * Correção de um problema com a codificação do gerenciamento de URL no serviço anti-phishing. (NEO-25283)
 * Correção de um problema que impedia o funcionamento do rastreamento de URLs usando fragmentos em parâmetros de personalização (tags de âncora com sinal de hashtag). (NEO-25774)
 * Correção de um problema de rastreamento ao usar fórmulas de rastreamento personalizadas específicas. (NEO-25277)
+
 Correção de um problema que impedia o funcionamento do rastreamento de &quot;cliques de notificação&quot; (notificações por push de iOS e Android). (NEO-25965)
-* Correção de uma regressão que afetava os campos calculados em um fluxo de trabalho. (NEO-25194)
-* Correção de uma regressão que impedia o funcionamento da criação instantânea de URLs de rastreamento da Web. (NEO-20999)
-* Correção de um problema com relatórios do delivery predefinidos que apareciam truncados quando exportados para PDF. (NEO-25757)
-* Correção de um problema de falha no assistente de implantação.
-* Correção de um problema que impedia que o fluxo de trabalho de notificação de Oferta funcionasse corretamente após uma pós-atualização.
+* Correção de uma regressão que afetava os campos calculados em um workflow. (NEO-25194)
+* Correção de uma regressão que impedia o funcionamento da criação instantânea de URLs de rastreamento da web. (NEO-20999)
+* Correção de um problema com relatórios predefinidos do delivery que apareciam truncados quando exportados para PDF. (NEO-25757)
+* Correção de uma falha no assistente de implantação.
+* Correção de um problema que impedia que o workflow de notificação de oferta funcionasse corretamente após uma pós-atualização.
 * O conector HTTP2 para iOS foi aprimorado (atualizações de terceiros e gerenciamento de erros). (NEO-25904, NEO-25903)
-* A lista jarsToSkip em catalina.properties foi atualizada para remover a referência a um arquivo jar que não foi mais usado (notificações iOS).
-* Correção de um problema que bloqueava a preparação de delivery após a atualização.
-* Após a alternância para o [novo mecanismo](https://helpx.adobe.com/br/campaign/kb/sequence_auto_generation.html#Switchtoadedicatedsequence)de ID de sequência, todos os aplicativos da Web que estão atualizando a tabela do recipient são republicados durante a pós-atualização.
-* Corrigida uma possível vulnerabilidade XSS no conteúdo do delivery. (NEO-17987, NEO-26073)
+* A lista jarsToSkip em catalina.properties foi atualizada para remover a referência a um arquivo jar que não é mais utilizado (notificações do iOS).
+* Correção de um problema que bloqueava a preparação do delivery após a atualização.
+* Após a mudança para o [novo mecanismo de ID de sequência](https://helpx.adobe.com/br/campaign/kb/sequence_auto_generation.html#Switchtoadedicatedsequence), todos os aplicativos da web que estão atualizando a tabela do recipient são republicados durante a pós-atualização.
+* Correção de uma possível vulnerabilidade XSS no conteúdo do delivery. (NEO-17987, NEO-26073)
 
 ## ![](assets/do-not-localize/orange_2.png) Versão 20.2.1 - Build 9178 {#release-20-2-1-build-9178}
 
@@ -210,7 +211,7 @@ Um exemplo para Linux está disponível nesta [página](../../configuration/usin
 
 **Correções**
 
-* Correção de uma regressão menor nos logs de fluxos de trabalho de limpeza.
+* Correção de uma regressão menor nos logs de workflow de limpeza.
 * Correção de um problema na atividade **Loading (SOAP)** do fluxo de trabalho ao analisar arquivos WSDL.
 * Correção de um problema que causava um erro ao atualizar vários fluxos de trabalho usando uma atividade de **Pesquisa** para processar com eficiência um número alto de fluxos de trabalho.
 * Correção de um problema intermitente de conectividade durante o processamento de mensagens do InMail do MTA aprimorado. (NEO-20380)
