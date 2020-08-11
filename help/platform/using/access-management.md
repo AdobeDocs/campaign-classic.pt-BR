@@ -15,9 +15,9 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: fef684cd20f9b210025b21d2bc6bdb209a929f7c
+source-git-commit: bc54cef4c44be4c694e062f56685dbb09d2fcf8e
 workflow-type: tm+mt
-source-wordcount: '2961'
+source-wordcount: '2955'
 ht-degree: 96%
 
 ---
@@ -260,7 +260,7 @@ Os grupos de operadores padrão são:
 
 1. **[!UICONTROL Campaign managers]**
 
-   Os operadores nesse grupo podem gerenciar campanhas de marketing: isso permite acessar os objetos vinculados às campanhas (planos, programas, workflows, orçamentos, etc.) no âmbito do **[!UICONTROL Campaign]** (módulo de Adobe Campaign opcional).
+   Os operadores nesse grupo podem gerenciar campanhas de marketing: isso permite acessar os objetos vinculados às campanhas (planos, programas, workflows, orçamentos, etc.) no âmbito do **[!UICONTROL Campaign]** (módulo Adobe Campaign opcional).
 
    Esse grupo contém os seguintes direitos nomeados:
 
