@@ -14,8 +14,11 @@ discoiquuid: a9eb6627-2e51-42d0-9b29-5b798bdf5b33
 index: y
 internal: n
 snippet: y
-translation-type: ht
-source-git-commit: b47dcfa0e4ee2e5e43e7aa14b94e12fd70ff9c2d
+translation-type: tm+mt
+source-git-commit: 3566f42b92cc1b7280bf9b6e9e0b4da7a54f61db
+workflow-type: tm+mt
+source-wordcount: '446'
+ht-degree: 93%
 
 ---
 
@@ -29,7 +32,7 @@ Além disso, o módulo **GMarketing Resource Management (MRM)** permite controla
 >[!NOTE]
 >
 >Para saber mais sobre as funcionalidades principais do Adobe Campaign, consulte a seção [Introdução](../../platform/using/about-adobe-campaign-classic.md) .\
->Os recursos relacionados à definição de metas de população, personalização de mensagens e delivery de mensagens nos diversos canais são detalhados [nesta seção](../../delivery/using/communication-channels.md).
+>Os recursos relacionados à definição de metas de população, personalização de mensagens e delivery de mensagens nos diversos canais são detalhados [nesta seção](../../delivery/using/steps-about-delivery-creation-steps.md).
 
 ## Conceitos principais {#core-concepts}
 
@@ -66,3 +69,11 @@ Os seguintes conceitos precisam ser conhecidos no contexto do Campaign:
    Um delivery outline é uma descrição estruturada de um delivery. Cada delivery pode se referir a um delivery outline que contenha, por exemplo, as ofertas relacionadas, documentos a serem anexados ou um link para lojas. Uma oferta pode ser referida no delivery de acordo com o delivery outline selecionado.
 
    Para obter mais informações, consulte [Associando e estruturando recursos vinculados por um outline de delivery](../../campaign/using/marketing-campaign-deliveries.md#associating-and-structuring-resources-linked-via-a-delivery-outline).
+
+## Como criar um email em uma campanha
+
+Este vídeo explica como criar uma campanha e um email no Adobe Campaign Classic.
+
+>[!VIDEO](https://video.tv.adobe.com/v/25604?quality=12)
+
+For more details, refer to [this section](../../campaign/using/marketing-campaign-deliveries.md)
