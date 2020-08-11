@@ -13,10 +13,10 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: bc54cef4c44be4c694e062f56685dbb09d2fcf8e
+source-git-commit: 24d2dded38ddb922891a7264d9efea02cb448323
 workflow-type: tm+mt
-source-wordcount: '6943'
-ht-degree: 100%
+source-wordcount: '7069'
+ht-degree: 98%
 
 ---
 
@@ -25,7 +25,37 @@ ht-degree: 100%
 
 Esta página lista todos os novos recursos e atualizações de documentação por mês e versão do Campaign.
 
+
 Você também pode consultar as [Notas de versão do Adobe Campaign Classic](../../rn/using/latest-release.md) para obter mais atualizações.
+
+## Agosto de 2020 {#aug-2020}
+
+Saiba mais sobre as práticas recomendadas relacionadas ao design do delivery e ao envio com a Campanha em uma seção dedicada. [Leia mais](../../delivery/using/delivery-best-practices.md)
+
+A landing page de práticas recomendadas de entregabilidade foi aprimorada para facilitar o acesso às subseções. [Leia mais](../../delivery/using/deliverability-key-points.md)
+
+Os vídeos passo a passo estão disponíveis nos seguintes tópicos:
+
+* [Como configurar o gerenciamento de fadiga usando regras de tipologia e filtros predefinidos](../../campaign/using/about-campaign-typologies.md)
+
+* [Como criar um email em uma campanha](../../campaign/using/designing-marketing-campaigns.md)
+
+* [Como criar um boletim multilíngue com conteúdo condicional](../../delivery/using/conditional-content.md)
+
+* [Como configurar e implantar um template do delivery](../../delivery/using/creating-a-delivery-template.md)
+
+* [Como ativar e usar a AMP para emails](../../delivery/using/defining-interactive-content.md)
+
+* [Como personalizar emails usando blocos de conteúdo dinâmico](../../delivery/using/personalization-blocks.md)
+
+* [Como personalizar emails usando campos de personalização](../../delivery/using/personalization-fields.md)
+
+* [Como gerenciar semente e provas em um email](../../delivery/using/steps-defining-the-target-population.md)
+
+* [Como configurar um delivery recorrente](../../workflow/using/recurring-delivery.md)
+
+* [Como configurar um delivery contínuo](../../workflow/using/continuous-delivery.md)
+
 
 ## Julho de 2020 {#july-2020}
 
