@@ -13,10 +13,10 @@ discoiquuid: 16dbe423-018f-4666-9901-2120a8dc609a
 index: y
 internal: n
 snippet: y
-translation-type: ht
-source-git-commit: e25560152a16865dc415ac2ffa1975808b3f6bbc
-workflow-type: ht
-source-wordcount: '354'
+translation-type: tm+mt
+source-git-commit: bc54cef4c44be4c694e062f56685dbb09d2fcf8e
+workflow-type: tm+mt
+source-wordcount: '346'
 ht-degree: 100%
 
 ---
@@ -30,7 +30,7 @@ Descubra as principais etapas para criar mensagens omnichannel com o Adobe Campa
 
 Antes de começar a criar e-mails, aprenda os conceitos e as práticas recomendadas com relação à criação e ao envio de entregas com o Adobe Campaign.
 
-[Clique aqui para saber mais](https://helpx.adobe.com/br/campaign/kb/delivery-best-practices.html).
+[Clique aqui para saber mais](../../delivery/using/delivery-best-practices.md).
 
 ## O que é um modelo de entrega? {#what-is-a-delivery-template-}
 
