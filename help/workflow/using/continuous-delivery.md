@@ -14,8 +14,11 @@ discoiquuid: 9d80be19-8dde-4278-ab5f-23f364fe422e
 index: y
 internal: n
 snippet: y
-translation-type: ht
-source-git-commit: 579329d9194115065dff2c192deb0376c75e67bd
+translation-type: tm+mt
+source-git-commit: 3566f42b92cc1b7280bf9b6e9e0b4da7a54f61db
+workflow-type: tm+mt
+source-wordcount: '345'
+ht-degree: 66%
 
 ---
 
@@ -39,7 +42,7 @@ Essa opção não processa erros relacionados à configuração de atividade, ou
 
 Cada evento de entrada deve especificar um target definido por esses parâmetros.
 
-Apenas quando a opção **[!UICONTROL Specified by the inbound event]** está selecionada.
+Only when the **[!UICONTROL Specified by the inbound event]** option is selected.
 
 ## Parâmetros de output {#output-parameters}
 
@@ -50,3 +53,17 @@ Apenas quando a opção **[!UICONTROL Specified by the inbound event]** está se
 Esse conjunto de três valores identifica o target resultante do delivery em tempo real. **[!UICONTROL tableName]** é o nome da tabela que memoriza os identificadores do target, **[!UICONTROL schema]** é o schema do público (geralmente nms:recipient) e **[!UICONTROL recCount]** é o número de elementos na tabela.
 
 A transição associada ao complemento tem os mesmos parâmetros.
+
+## Como configurar um delivery contínuo
+
+Esta seção explica como configurar um delivery contínuo.
+
+The **continuous delivery** lets you add new recipients to an existing delivery and avoids you having to create a new delivery each time a new recipient is added. Você pode atualizar o anúncio diretamente no fluxo de trabalho da campanha e ele atualizará o modelo na pasta Recursos do template do delivery.
+
+Um delivery contínuo criará um único delivery e logs do delivery (wideLog) e logs de rastreamento que fazem referência a um delivery a cada execução.
+
+![Delivery contínuo](assets/delivery_continuous.jpg)
+
+Este vídeo mostra como configurar um delivery contínuo com um query incremental.
+
+>[!VIDEO](https://video.tv.adobe.com/v/25039?quality=12)
