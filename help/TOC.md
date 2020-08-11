@@ -5,9 +5,9 @@ index: y
 product: adobe campaign
 sub-product: Adobe Campaign Classic
 translation-type: tm+mt
-source-git-commit: b19a8e477b4419a369fa257b4629f4a01f0b0400
+source-git-commit: 5e6ecd636ee0b2199808c03b2fd898a194f0c1ea
 workflow-type: tm+mt
-source-wordcount: '2097'
+source-wordcount: '2110'
 ht-degree: 99%
 
 ---
@@ -89,13 +89,17 @@ ht-degree: 99%
       + [Conectores CRM](platform/using/crm-connectors.md)
       + [Conector de dados do Adobe Analytics](platform/using/adobe-analytics-data-connector.md)
 + Envio de mensagens {#sending-messages}
-   + Get started with messages {#about-deliveries-and-channels}
-      + [Canais de comunicação](delivery/using/communication-channels.md)
-      + [Práticas recomendadas para delivery](delivery/using/delivery-best-practices.md)
-      + [Acessando informações de deliveries](delivery/using/accessing-deliveries-information.md)
-      + [Tipos de deliveries](delivery/using/types-of-deliveries.md)
+   + [Introdução às mensagens](delivery/using/communication-channels.md)
+   + Práticas recomendadas para delivery {#delivery-bestpractices}
+      + [Conheça as boas práticas](delivery/using/delivery-best-practices.md)
+      + [Otimizar a entrega](delivery/using/optimize-delivery.md)
+      + [Usar modelos](delivery/using/use-templates.md)
+      + [Criar conteúdo personalizado](delivery/using/design-and-personalize.md)
+      + [Definir a audiência correta](delivery/using/define-the-right-audience.md)
+      + [Verificar antes de enviar](delivery/using/check-before-sending.md)
+      + [Rastrear e monitorar](delivery/using/track-and-monitor.md)
    + Etapas principais ao criar um delivery {#key-steps-when-creating-a-delivery}
-      + [Sobre a criação de delivery ](delivery/using/steps-about-delivery-creation-steps.md)
+      + [Introdução aos delivery](delivery/using/steps-about-delivery-creation-steps.md)
       + [Criação e identificação do delivery](delivery/using/steps-create-and-identify-the-delivery.md)
       + [Definição da população do target](delivery/using/steps-defining-the-target-population.md)
       + [Validando o delivery](delivery/using/steps-validating-the-delivery.md)
