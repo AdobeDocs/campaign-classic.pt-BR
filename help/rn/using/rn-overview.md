@@ -13,10 +13,10 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 99dfefe3f51115b78bfeb02094d614a6e63af124
+source-git-commit: 27a72257904ff356b1a341c29f9a1ab3ccb20dd2
 workflow-type: tm+mt
-source-wordcount: '438'
-ht-degree: 97%
+source-wordcount: '439'
+ht-degree: 96%
 
 ---
 
@@ -49,7 +49,7 @@ A **última build estável** é a Gold Standard 6. Clique [aqui](../../rn/using/
 
 Como cliente hospedado (Managed Service ou Hybrid), você precisa entrar em contato com a equipe de atendimento ao cliente para atualizar seu ambiente.
 
-Como usuário do Gold Standard, você se beneficiará automaticamente da atualização do Gold Standard com a versão estável mais recente, sem ter de tomar nenhuma ação. [Saiba mais](https://helpx.adobe.com/br/campaign/kb/gold-standard.html)
+Como usuário do Gold Standard, você se beneficiará automaticamente da atualização do Gold Standard com a versão estável mais recente, sem ter de tomar nenhuma ação. [Saiba mais](https://helpx.adobe.com/campaign/kb/gold-standard.html#gs-6)
 
 Como usuário local, você pode fazer a atualização. Para isso, [baixe a build estável mais recente](https://experience.adobe.com/#/downloads/content/software-distribution/en/campaign.html) e atualize todos os seus ambientes. Saiba mais sobre o [processo de atualização](https://helpx.adobe.com/br/campaign/kb/acc-build-upgrade.html) e consulte as [perguntas frequentes sobre atualização de build](https://helpx.adobe.com/br/campaign/kb/build-upgrade-faq.html).
 
