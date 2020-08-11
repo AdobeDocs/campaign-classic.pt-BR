@@ -12,11 +12,11 @@ discoiquuid: 5df34f55-135a-4ea8-afc2-f9427ce5ae7b
 index: y
 internal: n
 snippet: y
-translation-type: ht
-source-git-commit: d9b6ae9f7e2f3b15698f1a420b5416162cbcc758
-workflow-type: ht
-source-wordcount: '1987'
-ht-degree: 100%
+translation-type: tm+mt
+source-git-commit: 251244225076dd11a319d1c4b2124c0d05168eaa
+workflow-type: tm+mt
+source-wordcount: '1976'
+ht-degree: 99%
 
 ---
 
@@ -25,11 +25,11 @@ ht-degree: 100%
 
 ![](assets/do-not-localize/cp-icon.png) **Nova versão de junho do Painel de controle do Campaign** com monitoramento de perfis ativos, auditoria de entregabilidade de subdomínio e gerenciamento de chaves GPG. [Saiba mais](https://docs.adobe.com/content/help/pt-BR/control-panel/using/release-notes.html).
 
-## ![](assets/do-not-localize/blue_2.png) Versão 20.2.1 - Build 9180 {#release-20-2-2-build-9180}
+## ![](assets/do-not-localize/blue_2.png) Versão 20.2.2 - Build 9180 {#release-20-2-2-build-9180}
 
 _22 de julho de 2020_
 
-* Correção de um problema que impedia que o rastreamento funcionasse quando o recurso de assinatura era desativado ou ao usar uma instância de marketing antiga com uma Mid recente. (NEO-26411)
+* Correção de um problema que impedia o rastreamento de funcionar quando o recurso de assinatura era desativado. (NEO-26411)
 * Correção de um problema que resultava no bloqueio de links não assinados de domínios personalizados quando deveriam ser permitidos. (NEO-25210)
 * Correção de um problema que poderia impedir a abertura/clique de URLs de rastreamento ao usar determinadas versões herdadas do Outlook. (NEO-25688)
 * Correção de um problema que resultava na definição incorreta de URLs de mirror page em deliveries de email. (NEO-26084)
