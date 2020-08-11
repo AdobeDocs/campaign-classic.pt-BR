@@ -14,8 +14,11 @@ discoiquuid: 1ffe9f58-7258-4794-a314-524065f8a33b
 index: y
 internal: n
 snippet: y
-translation-type: ht
-source-git-commit: c9c9d5f96856ce9e19571bad032d2bf04eaa60bd
+translation-type: tm+mt
+source-git-commit: 63f07746d39fff22a98b3cd4ab7f2294da778ab3
+workflow-type: tm+mt
+source-wordcount: '352'
+ht-degree: 100%
 
 ---
 
@@ -60,7 +63,7 @@ Para criar um delivery de email, as etapas são as seguintes:
 * Crie um delivery por meio de um template de tipo de email no qual o DCE esteja ativo,
 * Selecione conteúdo existente ou crie conteúdo por meio de um template padrão,
 * Edite e configure conteúdo online,
-* Envie o delivery. Para obter mais informações, consulte [esta seção](../../delivery/using/communication-channels.md).
+* Envie o delivery. Para obter mais informações, consulte [esta seção](../../delivery/using/steps-about-delivery-creation-steps.md).
 
 >[!NOTE]
 >
