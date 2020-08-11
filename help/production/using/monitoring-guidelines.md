@@ -13,10 +13,10 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 41c515008a12fa066cedc9d7125195e2c4776f40
+source-git-commit: bc54cef4c44be4c694e062f56685dbb09d2fcf8e
 workflow-type: tm+mt
-source-wordcount: '721'
-ht-degree: 9%
+source-wordcount: '710'
+ht-degree: 8%
 
 ---
 
@@ -37,8 +37,8 @@ Informações detalhadas estão disponíveis [aqui](../../production/using/monit
 
 <table>
 <tr><td><img src="assets/do-not-localize/icon_system.svg" width="60px"><p><a href="#monitoring-instance">Monitore sua instância</a></p></td>
-<td><img src="assets/do-not-localize/icon_workflows.svg" width="60px"><p><a href="#moniroting-workflows">workflows de monitor</a></p></td>
-<td><img src="assets/do-not-localize/icon_send.svg" width="60px"><p><a href="#monitoring-deliveries">delivery de monitor</a></p></td>
+<td><img src="assets/do-not-localize/icon_workflows.svg" width="60px"><p><a href="#moniroting-workflows">Workflows de monitor</a></p></td>
+<td><img src="assets/do-not-localize/icon_send.svg" width="60px"><p><a href="#monitoring-deliveries">Delivery de monitor</a></p></td>
 <td><img src="assets/do-not-localize/icon_database.svg" width="60px"><p><a href="#monitoring-database">Monitorar o banco de dados</a></p></td></tr>
 </table>
 
@@ -58,11 +58,11 @@ A trilha de auditoria permite visualizar o histórico completo de alterações r
 
 **Painel de controle**
 
-O Painel de controle do Campaign permite gerenciar várias configurações da sua instância: gerencie permissões de URL, verifique os detalhes da instância, como as versões de compilação dos servidores etc. Também permite monitorar o espaço disponível nos servidores SFTP conectados à sua instância. [Clique aqui](https://docs.adobe.com/content/help/pt-BR/control-panel/using/control-panel-home.translate.html) para obter mais informações.
+O Painel de controle do Campaign permite gerenciar várias configurações da sua instância: gerencie permissões de URL, verifique os detalhes da instância, como as versões de compilação dos servidores etc. Também permite monitorar o espaço disponível nos servidores SFTP conectados à sua instância. [Clique aqui](https://docs.adobe.com/content/help/pt-BR/control-panel/using/control-panel-home.html) para obter mais informações.
 
 >[!NOTE]
 >
->Observe que o Painel de controle do Campaign é acessível somente para usuários administradores e está disponível para todos os clientes que usam o Adobe Managed Services.
+>Observe que o Painel de controle do Campaign é acessível somente para usuários administradores e está disponível para todos os clientes que usam os Serviços gerenciados da Adobe.
 
 ### Monitoramento de workflows {#monitoring-workflows}
 
@@ -76,7 +76,7 @@ O Workflow HeatMap forneceu uma representação visual de todos os workflows que
 
 A trilha de auditoria permite visualizar todas as modificações que foram feitas em workflows, bem como seus estados atuais. [Clique aqui](../../production/using/audit-trail.md).
 
-**Solução de problemas de Workflows**
+**Solução de problemas de workflows**
 
 Ações específicas podem ser executadas ao encontrar problemas com uma execução de fluxo de trabalho. [Clique aqui](../../production/using/workflow-execution.md) para obter mais informações
 
@@ -96,16 +96,16 @@ Seguir as diretrizes e as práticas recomendadas ao usar workflows pode ajudar a
 
 **Relatórios SMTP**
 
-Os relatórios SMTP exibem estatísticas de delivery e erros SMTP por domínio. [Clique aqui](../../production/using/monitoring-processes.md) para obter mais informações.
+Os relatórios SMTP exibem estatísticas de delivery e erros SMTP por domínio. [Saiba mais](../../production/using/monitoring-processes.md)
 
 **Práticas recomendadas**
 
-[As práticas recomendadas para envio e criação](http://helpx.adobe.com/br/campaign/kb/delivery-best-practices.html) de delivery podem ajudá-lo a melhorar seu desempenho.
+[As práticas recomendadas para envio e criação](../../delivery/using/delivery-best-practices.md) de delivery podem ajudá-lo a melhorar seu desempenho.
 
-**Solução de problemas** de DeliveryAções específicas podem ser executadas ao encontrar problemas com delivery:
+**Solução de problemas** de deliveryAções específicas podem ser executadas ao encontrar problemas com delivery:
 * [Problemas de produtividade](../../production/using/performance-and-throughput-issues.md#deliverability_issues)
 * [Problemas de exibição de imagem](../../production/using/image-display-issues.md)
-* [Problemas de desempenho do Delivery](../../delivery/using/monitoring-a-delivery.md#performance_issues)
+* [Problemas de desempenho do delivery](../../delivery/using/monitoring-a-delivery.md#performance_issues)
 * [Problemas](../../production/using/temporary-files.md) de arquivos temporários - somente *em modelos de hospedagem local*
 
 ### Monitoramento do banco de dados {#monitoring-database}
@@ -156,5 +156,5 @@ Os recursos técnicos estão disponíveis na documentação do Campaign Classic.
 * [módulos Campaign Classic](../../production/using/operating-principle.md)
 * [Opções de Campaign Classic](../../installation/using/configuring-campaign-options.md)
 * [Como configurar a inicialização automática dos módulos](../../production/using/administration.md)
-* [Princípio de configuração de Campanha](../../production/using/configuration-principle.md)
+* [Princípio de configuração de campanha](../../production/using/configuration-principle.md)
 * [Procedimentos de solução de problemas](../../production/using/performance-and-throughput-issues.md)
