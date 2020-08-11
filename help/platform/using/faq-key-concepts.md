@@ -13,8 +13,11 @@ discoiquuid: 16dbe423-018f-4666-9901-2120a8dc609a
 index: y
 internal: n
 snippet: y
-translation-type: ht
-source-git-commit: 8ef56aa04a3ecc94e9e3dda24562760d6a93739d
+translation-type: tm+mt
+source-git-commit: bc54cef4c44be4c694e062f56685dbb09d2fcf8e
+workflow-type: tm+mt
+source-wordcount: '902'
+ht-degree: 100%
 
 ---
 
@@ -116,7 +119,7 @@ Leia a [lista de verificação de configuração de segurança](https://helpx.ad
 
 ## Como traduzir uma mensagem de erro? {#how-to-translate-an-error-message-}
 
-Há uma mensagem de erro exibida em outro idioma? Todas as mensagens de erro com suas devidas traduções estão listadas [nesta página](https://docs.campaign.adobe.com/doc/AC/en/technicalResources/error_messages/error_codes.html).
+Há uma mensagem de erro exibida em outro idioma? Todas as mensagens de erro com suas devidas traduções estão listadas [nesta página](https://docs.adobe.com/content/help/en/campaign-classic/technicalresources/error_messages/error_codes.html).
 
 ## Posso criar um formulário da Web e coletar respostas no Campaign? {#can-i-create-a-webform-and-collect-answers-in-campaign-}
 
