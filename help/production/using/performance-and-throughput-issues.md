@@ -15,10 +15,10 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 0386ae88a1b4d9ebda64283d874e01b14e9e5af4
+source-git-commit: bc54cef4c44be4c694e062f56685dbb09d2fcf8e
 workflow-type: tm+mt
-source-wordcount: '708'
-ht-degree: 9%
+source-wordcount: '691'
+ht-degree: 7%
 
 ---
 
@@ -27,7 +27,7 @@ ht-degree: 9%
 
 >[!NOTE]
 >
->Primeiro, você deve verificar se tem a versão mais recente instalada. Isso garante que você tenha os recursos e as correções de erros mais recentes. Consulte as Notas [de](https://docs.adobe.com/content/help/pt-BR/campaign-classic/using/release-notes/latest-release.html) versão para obter mais informações sobre o conteúdo de cada versão.
+>Primeiro, você deve verificar se tem a versão mais recente instalada. Isso garante que você tenha os recursos e as correções de erros mais recentes. Consulte as Notas [de](../../rn/using/latest-release.md) versão para obter mais informações sobre o conteúdo de cada versão.
 
 ## Hardware e infraestrutura {#hardware-and-infrastructure}
 
@@ -39,13 +39,13 @@ A equipe de consultoria pode fornecer aos clientes hospedados uma ferramenta que
 * Verifique as tabelas com o máximo de borrão. Se estas tabelas forem frequentemente utilizadas, devem ser aspiradas.
 * O bloqueio do banco de dados pode fazer com que emails parem de ser enviados.
 
-O Adobe Campaign também fornece uma [ferramenta](../../production/using/monitoring-processes.md#manual-monitoring) para verificar o uso da CPU e da RAM. Use essa ferramenta e observe indicadores específicos, como: **Memória**, **Troque Memória**, **Disco**, Processos **** Ativos. Se os valores forem muito altos, você pode tentar reduzir o número de workflows ou agendar workflows para start em momentos diferentes.
+A Adobe Campaign também fornece uma [ferramenta](../../production/using/monitoring-processes.md#manual-monitoring) para verificar o uso da CPU e da RAM. Use essa ferramenta e observe indicadores específicos, como: **Memória**, **Troque Memória**, **Disco**, Processos **** Ativos. Se os valores forem muito altos, você pode tentar reduzir o número de workflows ou agendar workflows para start em momentos diferentes.
 
 ## Desempenho do banco de dados {#database-performances}
 
 Na maioria das vezes, os problemas de desempenho estão vinculados à manutenção do banco de dados. Estes são os itens principais a serem verificados:
 
-* Configuração: recomendamos verificar a configuração inicial da plataforma de Adobe Campaign e executar uma verificação completa de hardware.
+* Configuração: recomendamos verificar a configuração inicial da plataforma Adobe Campaign e executar uma verificação completa de hardware.
 * Instalação e configuração da plataforma Adobe Campaign: verifique as opções de configuração de rede e de fornecimento da plataforma.
 * Manutenção do banco de dados: verifique se a tarefa de limpeza do banco de dados está operacional e se a manutenção do banco de dados está programada e executada corretamente. Verifique o número e o tamanho das tabelas de trabalho.
 * Diagnóstico em tempo real: verifique o processo e os arquivos de log da plataforma, em seguida, monitore a atividade do banco de dados ao recriar o problema.
@@ -75,5 +75,5 @@ Esta é uma lista de práticas recomendadas e artigos relacionados à entrega:
 
 >[!NOTE]
 >
->Não se esqueça de consultar o guia de introdução à [entrega](https://docs.adobe.com/content/help/pt-BR/campaign-classic/using/sending-messages/deliverability-management/about-deliverability.html) .
+>Consulte também a seção [Principais pontos](../../delivery/using/deliverability-key-points.md) de entrega.
 
