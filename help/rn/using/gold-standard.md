@@ -15,10 +15,10 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 890153a5b30594a1cb90606db4be8fd1ec19267b
+source-git-commit: 2604df2e6b6a7520e2f2a82f04c75ceb749fde79
 workflow-type: tm+mt
-source-wordcount: '826'
-ht-degree: 100%
+source-wordcount: '815'
+ht-degree: 98%
 
 ---
 
@@ -41,7 +41,7 @@ _7 de julho de 2020_
 
 A build 9032@efd8a94 inclui a seguinte correção:
 
-Correção de um problema que impedia que o rastreamento funcionasse quando o recurso de assinatura era desativado ou ao usar uma instância de marketing antiga com uma Mid recente. (NEO-26411)
+Correção de um problema que impedia o rastreamento de funcionar quando o recurso de assinatura era desativado. (NEO-26411)
 
 >[!CAUTION]
 >
