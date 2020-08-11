@@ -15,10 +15,10 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: e7de74feb61cc8f4b386a6ff86fc58b9c9e9ca1d
+source-git-commit: bc54cef4c44be4c694e062f56685dbb09d2fcf8e
 workflow-type: tm+mt
-source-wordcount: '3608'
-ht-degree: 4%
+source-wordcount: '3593'
+ht-degree: 5%
 
 ---
 
@@ -31,14 +31,14 @@ A seção abaixo detalha as configurações do lado do servidor que podem ser ex
 >
 >Essas configurações devem ser executadas pelos administradores e apenas para modelos de hospedagem **local** .
 >
->Para implantações **hospedadas** , as configurações do lado do servidor podem ser configuradas somente pela Adobe. No entanto, algumas configurações podem ser configuradas no Painel de controle (por exemplo, permissões de IP ou gerenciamento de listas de permissões).
+>Para implantações **hospedadas** , as configurações do lado do servidor podem ser configuradas somente por Adobe. No entanto, algumas configurações podem ser configuradas dentro do Painel de controle do Campaign (por exemplo, gerenciamento de lista de permissões IP ou permissões de URL).
 
 Para obter mais informações, consulte esta seção.
 
-* [Documentação do Painel de controle](https://docs.adobe.com/content/help/pt-BR/control-panel/using/control-panel-home.translate.html)
+* [Documentação do Painel de controle do Campaign](https://docs.adobe.com/content/help/pt-BR/control-panel/using/control-panel-home.html)
 * [Modelos de hospedagem](../../installation/using/hosting-models.md)
 * [Matriz de capacidade local e hospedada do Campaign Classic](https://helpx.adobe.com/br/campaign/kb/acc-on-prem-vs-hosted.html)
-* [Etapas de configuração de modelos híbridos e hospedados](https://docs.campaign.adobe.com/doc/AC/en/INS_Hybrid_and_Hosted_models_About_hybrid_and_hosted_models.html)
+* [Etapas](../../installation/using/about-hybrid-and-hosted-models.md) de configuração de modelos híbridos e hospedados )
 
 Os arquivos de configuração do Campaign Classic são armazenados na pasta **conf** da pasta de instalação do Adobe Campaign. A configuração é distribuída por dois arquivos:
 
@@ -182,7 +182,7 @@ Vários casos podem ocorrer:
 
    ![](assets/8101_proxy3.png)
 
-Os endereços IP dos servidores proxy susceptíveis de aceder ao servidor Adobe Campaign devem ser indicados tanto na sub-rede **`<subnetwork>`** em causa como na de primeiro nível **`<subnetwork name="all"/>`**. Por exemplo, aqui para um proxy cujo endereço IP é 10.131.146.102:
+Os endereços IP dos proxy que provavelmente terão acesso ao servidor Adobe Campaign devem ser inseridos tanto na sub-rede **`<subnetwork>`** em causa como na de primeiro nível **`<subnetwork name="all"/>`**. Por exemplo, aqui para um proxy cujo endereço IP é 10.131.146.102:
 
 ```
 <securityZone allowDebug="false" allowHTTP="false" label="Public Network" 
@@ -280,7 +280,7 @@ Você também pode executar as configurações a seguir, dependendo de suas nece
 
 O módulo MTA atua como um agente de transferência de correio nativo para transmissão SMTP (porta 25).
 
-No entanto, é possível substituí-lo por um servidor relé se a sua política de segurança o exigir. Nesse caso, o throughput global será o relay (desde que o throughput do servidor relé inferior ao Adobe Campaign).
+No entanto, é possível substituí-lo por um servidor relé se a sua política de segurança o exigir. Nesse caso, o throughput global será o relay (desde que o throughput do servidor relé inferior ao da Adobe Campaign).
 
 Nesse caso, esses parâmetros são definidos configurando-se o servidor SMTP na **`<relay>`** seção. Você deve especificar o endereço IP (ou host) do servidor SMTP usado para transferir correio e sua porta associada (25 por padrão).
 
@@ -343,7 +343,7 @@ Para fazer isso, siga as etapas abaixo:
 
 ## Permissões de URL {#url-permissions}
 
-A lista padrão de URLs que podem ser chamados por códigos JavaScript (workflows etc.) pelas instâncias do Campaign Classic é limitada. Esses são os URLs que permitem que as instâncias funcionem corretamente.
+A lista padrão de URLs que podem ser chamados por códigos JavaScript (workflows, etc.) pelas instâncias do Campaign Classic é limitada. Esses são os URLs que permitem que as instâncias funcionem corretamente.
 
 Por padrão, as instâncias não têm permissão para se conectar a URLs externos. No entanto, é possível adicionar URLs externos à lista de URLs autorizados, para que sua instância possa se conectar a eles. Dessa forma, você pode conectar as instâncias do Campaign a sistemas externos, como servidores ou sites SFTP para habilitar a transferência de arquivos e/ou dados.
 
@@ -352,15 +352,15 @@ Depois de adicionado, o URL é referenciado no arquivo de configuração da inst
 A maneira de gerenciar permissões de URL depende do modelo de hospedagem:
 
 * **Híbrido** ou **local**: adicione os URLs a serem permitidos no arquivo **** serverConf.xml. A seção seguinte contém informações detalhadas.
-* **Hospedado**: adicione os URLs a serem permitidos pelo Painel **de controle**. Para obter mais informações, consulte a [documentação específica](https://docs.adobe.com/content/help/pt-BR/control-panel/using/instances-settings/url-permissions.html).
+* **Hospedado**: adicione os URLs para permitir por meio do **Painel de controle do Campaign**. Para obter mais informações, consulte a [documentação específica](https://docs.adobe.com/content/help/pt-BR/control-panel/using/instances-settings/url-permissions.html).
 
 Com modelos de hospedagem **Híbrido** e **Local** , o administrador precisa fazer referência a um novo **urlPermission** no arquivo **serverConf.xml** . Todos os parâmetros disponíveis no **serverConf.xml** estão listados nesta [seção](../../installation/using/the-server-configuration-file.md).
 
 Existem três modos de proteção de conexão:
 
-* **Bloqueio**: todos os URLs que não pertencem à lista de permissão são bloqueados, com uma mensagem de erro. Esse é o modo padrão após uma pós-atualização.
-* **Permissivo**: todos os URLs que não pertencem à lista de permissão são permitidos.
-* **Aviso**: todos os URLs que não pertencem à lista de permissão são permitidos, mas o intérprete JS emite um aviso, para que o administrador possa coletá-los. Este modo adiciona mensagens de aviso JST-310027.
+* **Bloqueio**: todos os URLs que não pertencem à lista de permissões são bloqueados, com uma mensagem de erro. Este é o modo padrão depois de um pós-upgrade.
+* **Permissivo**: todos os URLs que não pertencem à lista de permissões são permitidos.
+* **Aviso**: todos os URLs que não pertencem à lista de permissões são permitidos, mas o intérprete JS emite um aviso, para que o administrador possa coletá-los. Este modo adiciona mensagens de aviso JST-310027.
 
 ```
 <urlPermission action="warn" debugTrace="true">
@@ -390,7 +390,7 @@ Para páginas JSP, a configuração padrão é:
 <url relayHost="true" relayPath="true" targetUrl="http://localhost:8080" urlPath="*.jsp"/>
 ```
 
-O Adobe Campaign usa as seguintes páginas JSP:
+A Adobe Campaign usa as seguintes páginas JSP:
 
 * /nl/jsp/**soaprouter.jsp**: console do cliente e conexões de serviços da Web (APIs SOAP),
 * /nl/jsp/**m.jsp**: mirrores page,
@@ -461,7 +461,7 @@ No nó **exec** do arquivo de configuração do servidor, é necessário fazer r
 
 >[!NOTE]
 >
->Se nenhum usuário for especificado, todos os comandos serão executados no contexto do usuário da instância Adobe Campaign. O usuário deve ser diferente do usuário que está executando o Adobe Campaign.
+>Se nenhum usuário for especificado, todos os comandos serão executados no contexto do usuário da instância do Adobe Campaign. O usuário deve ser diferente do usuário que está executando o Adobe Campaign.
 
 Por exemplo:
 
@@ -471,7 +471,7 @@ Por exemplo:
 </serverConf>
 ```
 
-Este usuário precisa ser adicionado à lista sudoer do operador Adobe Campaign de neolane.
+Este usuário precisa ser adicionado à lista sudoer do operador Adobe Campaign &#39;neolane&#39;.
 
 >[!IMPORTANT]
 >
@@ -487,6 +487,7 @@ Por padrão, todos os cabeçalhos HTTP não são retransmitidos. Você pode adic
 
    * **name**: nome do cabeçalho
    * **valor**: nome do valor.
+
    Por exemplo:
 
    ```
@@ -537,13 +538,13 @@ Você pode especificar outro diretório adicionando um nó ao arquivo **conf-`<i
 
 Nesse caso, o novo URL para os recursos públicos fornecido na parte superior da janela do assistente de implantação deve apontar para essa pasta.
 
-## workflows e afinidades de alta disponibilidade {#high-availability-workflows-and-affinities}
+## Workflows e afinidades de alta disponibilidade {#high-availability-workflows-and-affinities}
 
-Você pode configurar vários servidores de fluxo de trabalho (wfserver) e distribuí-los em duas ou mais máquinas. Se você escolher esse tipo de arquitetura, configure o modo de conexão dos balanceadores de carga de acordo com o acesso ao Adobe Campaign.
+Você pode configurar vários servidores de fluxo de trabalho (wfserver) e distribuí-los em duas ou mais máquinas. Se você escolher esse tipo de arquitetura, configure o modo de conexão dos balanceadores de carga de acordo com o acesso da Adobe Campaign.
 
 Para obter acesso da Web, selecione o modo de balanceador **de** carga para limitar os tempos de conexão.
 
-Ao acessar pelo console Adobe Campaign, escolha **hash** ou modo **ip** fixo. Isso permite manter a conexão entre o cliente rico e o servidor e impedir que uma sessão de usuário seja interrompida durante uma operação de importação ou exportação, por exemplo.
+Ao acessar pelo console do Adobe Campaign, escolha **hash** ou modo **ip** fixo. Isso permite manter a conexão entre o cliente rico e o servidor e impedir que uma sessão de usuário seja interrompida durante uma operação de importação ou exportação, por exemplo.
 
 Você pode optar por forçar a execução de um fluxo de trabalho ou de uma atividade de fluxo de trabalho em uma máquina específica. Para fazer isso, você deve definir uma ou mais afinidades para o fluxo de trabalho ou a atividade em questão.
 
@@ -580,7 +581,7 @@ Você pode optar por forçar a execução de um fluxo de trabalho ou de uma ativ
 
 ## Reinicialização automática do processo {#automatic-process-restart}
 
-Por padrão, o Adobe Campaign diferente processa a reinicialização automaticamente às 6h (hora do servidor) todos os dias.
+Por padrão, os diferentes processos do Adobe Campaign são reiniciados automaticamente às 6h (hora do servidor) todos os dias.
 
 No entanto, você pode alterar essa configuração.
 
