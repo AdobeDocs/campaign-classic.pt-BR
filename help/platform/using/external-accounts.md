@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: c1f7ff6a281c2830ac23ad995b750dc09ade5e92
+source-git-commit: 63f07746d39fff22a98b3cd4ab7f2294da778ab3
 workflow-type: tm+mt
 source-wordcount: '2218'
 ht-degree: 100%
@@ -111,9 +111,9 @@ Os seguintes canais podem ser configurados:
 
 * [Email](../../installation/using/deploying-an-instance.md#email-channel-parameters)
 * [Móvel (SMS)](../../delivery/using/sms-channel.md#creating-an-smpp-external-account)
-* [Telefone](../../delivery/using/communication-channels.md#other-channels)
+* [Telefone](../../delivery/using/steps-about-delivery-creation-steps.md#other-channels)
 * [Correspondência direta](../../delivery/using/about-direct-mail-channel.md)
-* [Agência](../../delivery/using/communication-channels.md#other-channels)
+* [Agência](../../delivery/using/steps-about-delivery-creation-steps.md#other-channels)
 * [Facebook](../../social/using/publishing-on-facebook-walls.md#delegating-write-access-to-adobe-campaign)
 * [Twitter](../../social/using/configuring-publishing-on-twitter.md)
 * [Canal iOS](../../delivery/using/configuring-the-mobile-application.md#configuring-the-mobile-application-ios)
