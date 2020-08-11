@@ -14,9 +14,9 @@ discoiquuid: a2b43311-737c-4a3b-a6af-1788879f9414
 index: y
 internal: n
 snippet: y
-translation-type: ht
-source-git-commit: 3b04cf988f144b8bfb846aff83e97c9b3a82e6e0
-workflow-type: ht
+translation-type: tm+mt
+source-git-commit: 63f07746d39fff22a98b3cd4ab7f2294da778ab3
+workflow-type: tm+mt
 source-wordcount: '878'
 ht-degree: 100%
 
@@ -77,7 +77,7 @@ O Adobe Campaign oferece um conjunto de recursos para ajudá-lo a implementar e 
 
 Os recursos abaixo estão disponíveis. A disponibilidade desses recursos dependem do seu contrato de licença.
 
-* [Canais](../../delivery/using/communication-channels.md) - crie e envie entregas em vários canais: e-mail, SMS, telefone, aplicativo para dispositivos móveis e mala direta;
+* [Canais](../../delivery/using/steps-about-delivery-creation-steps.md) - crie e envie entregas em vários canais: e-mail, SMS, telefone, aplicativo para dispositivos móveis e mala direta;
 * [Campaign](../../campaign/using/designing-marketing-campaigns.md) - organize campanhas entre vários canais;
 * [MRM](../../campaign/using/about-marketing-resource-management.md) - gerencie recursos e orçamentos de marketing;
 * [Interação](../../interaction/using/interaction-and-offer-management.md) - gestão de ofertas com o Campaign;
