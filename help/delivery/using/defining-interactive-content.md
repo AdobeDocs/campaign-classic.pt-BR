@@ -13,10 +13,10 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: fa9e4ddc716809b96e259acd1137a0c24ef68fee
+source-git-commit: 3566f42b92cc1b7280bf9b6e9e0b4da7a54f61db
 workflow-type: tm+mt
-source-wordcount: '1653'
-ht-degree: 93%
+source-wordcount: '1642'
+ht-degree: 92%
 
 ---
 
@@ -41,7 +41,9 @@ Esse recurso está disponível por meio de um pacote dedicado no Adobe Campaign.
 
 Para arquiteturas híbridas e hospedadas, o pacote precisa ser instalado em todos os servidores, incluindo o [servidor de mid-sourcing](../../installation/using/mid-sourcing-server.md) e a [instância de execução](../../message-center/using/creating-a-shared-connection.md#execution-instance). Entre em contato com o executivo de contas.
 
-Assista a este [vídeo](https://docs.adobe.com/content/help/en/campaign-learn/campaign-classic-tutorials/sending-messages/email-channel/defining-interactive-email-content-with-amp.html) para ver como ativar o AMP no Adobe Campaign e saber mais sobre o uso.
+O vídeo abaixo explica como ativar a AMP no Adobe Campaign Classic e mostra o uso.
+
+>[!VIDEO](https://video.tv.adobe.com/v/29940?quality=12&learn=on)
 
 ## Sobre o AMP for Email {#about-amp-for-email}
 
@@ -173,7 +175,7 @@ O AMP for Email está disponível como um recurso beta, no momento é possível 
 >
 >Atualmente, apenas o Gmail, Outlook e Mail.ru são compatíveis com testes no formato AMP.
 
-Para o Gmail e o Outlook, primeiro adicione os endereços de remetente que você está usando à lista de permissões para entrega a partir do Adobe Campaign para as contas do Gmail e do Outlook que você está direcionando.
+Para o Gmail e o Outlook, primeiro adicione os endereços de remetente que você está usando à lista de permissões para entregar da Adobe Campaign para as contas do Gmail e do Outlook que você está direcionando.
 
 Para fazer isso:
 1. Verifique se a opção que permite o email dinâmico está marcada para os provedores de email relevantes.
@@ -187,7 +189,7 @@ Para testar o envio de um email do AMP para um endereço Mail.ru, siga as etapas
 
 ### Entrega de emails do AMP através do registro em um provedor de email {#delivering-amp-emails-by-registering}
 
-Você pode experimentar a entrega de emails dinâmicos se registrando com os provedores de email que participam do programa beta AMP para que o domínio do remetente seja adicionado à lista de permissões.
+Você pode experimentar a entrega de emails dinâmicos se registrando com os provedores de email que participam do programa beta AMP para que seu domínio remetente seja adicionado à lista de permissões.
 
 >[!NOTE]
 >
