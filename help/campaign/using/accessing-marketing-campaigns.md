@@ -14,8 +14,11 @@ discoiquuid: 8e7eb53c-bbe2-4bd4-8581-c2a63a3dc84e
 index: y
 internal: n
 snippet: y
-translation-type: ht
-source-git-commit: b47dcfa0e4ee2e5e43e7aa14b94e12fd70ff9c2d
+translation-type: tm+mt
+source-git-commit: 63f07746d39fff22a98b3cd4ab7f2294da778ab3
+workflow-type: tm+mt
+source-wordcount: '1049'
+ht-degree: 98%
 
 ---
 
@@ -47,7 +50,7 @@ O bloco de navegação do universo **[!UICONTROL Campaigns]** oferece várias en
 >
 >Para saber mais sobre a ergonomia geral do Adobe Campaign, as permissões e o gerenciamento de perfis, consulte [esta seção](../../platform/using/adobe-campaign-workspace.md).
 >
->Todas as funcionalidades relacionadas a canais e entregas são detalhadas [nesta seção](../../delivery/using/communication-channels.md).
+>Todas as funcionalidades relacionadas a canais e entregas são detalhadas [nesta seção](../../delivery/using/steps-about-delivery-creation-steps.md).
 
 ### Calendário da campanha {#campaign-calendar}
 
@@ -156,7 +159,7 @@ As campanhas são criadas por meio de templates de campanha. É possível config
 
 >[!NOTE]
 >
->Para acessar as configurações da campanha e fazer alterações, clique em **[!UICONTROL Advanced campaign parameters...]** na guia **[!UICONTROL Edit]**. Para obter mais informações sobre como configurar parâmetros no nível da campanha para que os deliveries herdem valores automaticamente, consulte [nossa Nota técnica](https://helpx.adobe.com/br/campaign/kb/simplifying-campaign-management-acc.html#Setparametersatthecampaignlevelsodeliveriesinheritvaluesautomatically).
+>To access the campaign configurations and make changes to them, click the **[!UICONTROL Advanced campaign parameters...]** link in the **[!UICONTROL Edit]** tab. Para obter mais informações sobre como configurar parâmetros no nível da campanha para que os deliveries herdem valores automaticamente, consulte [nossa Nota técnica](https://helpx.adobe.com/br/campaign/kb/simplifying-campaign-management-acc.html#Setparametersatthecampaignlevelsodeliveriesinheritvaluesautomatically).
 
 ## Usar a interface da Web {#using-the-web-interface-}
 
