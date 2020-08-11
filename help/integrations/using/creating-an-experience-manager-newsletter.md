@@ -15,10 +15,10 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 56212b320d5077f9b66952e7c11eb8bdcea9e3b4
+source-git-commit: bc54cef4c44be4c694e062f56685dbb09d2fcf8e
 workflow-type: tm+mt
-source-wordcount: '304'
-ht-degree: 68%
+source-wordcount: '301'
+ht-degree: 66%
 
 ---
 
@@ -27,7 +27,7 @@ ht-degree: 68%
 
 Essa integração pode ser usada para criar um boletim informativo no Adobe Experience Manager que será usado no Adobe Campaign como parte de uma campanha de email.
 
-Para obter um exemplo mais detalhado sobre como usar essa integração, consulte este [guia com o passo a passo](https://helpx.adobe.com/br/campaign/kb/acc-aem.html).
+Para obter um exemplo mais detalhado sobre como usar essa integração, consulte este [guia com o passo a passo](https://helpx.adobe.com/campaign/kb/acc-aem.html).
 
 **No Adobe Experience Manager:**
 
@@ -71,7 +71,7 @@ Seu boletim informativo agora está pronto e sincronizado no Adobe Campaign.
 
 **No Adobe Campaign:**
 
-1. Na **[!UICONTROL Campaigns]** guia, clique em **[!UICONTROL Deliveries]** e em **[!UICONTROL Create]**.
+1. From the **[!UICONTROL Campaigns]** tab, click **[!UICONTROL Deliveries]** then **[!UICONTROL Create]**.
 
    ![](assets/aem_uc_9.png)
 
