@@ -15,10 +15,10 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 7ffbbe95247f28115f7e46eb0e94f2612fb4ea93
+source-git-commit: 3566f42b92cc1b7280bf9b6e9e0b4da7a54f61db
 workflow-type: tm+mt
-source-wordcount: '1527'
-ht-degree: 93%
+source-wordcount: '1573'
+ht-degree: 91%
 
 ---
 
@@ -229,3 +229,15 @@ Você poderá usar **[!UICONTROL Seed addresses]** como target das provas: essa 
 >Os seed addresses são apresentados em [Sobre seed addresses](../../delivery/using/about-seed-addresses.md).
 
 Você poderá combinar a definição de um target de prova específico e o uso de seed addresses usando a opção **[!UICONTROL Specific target and Seed addresses]**. As configurações relacionadas serão então definidas em duas sub-guias separadas.
+
+## Como gerenciar semente e provas em um email
+
+Neste vídeo, você aprenderá a adicionar sementes e provas a um email existente e como enviá-lo.
+
+>[!VIDEO](https://video.tv.adobe.com/v/25606?quality=12)
+Consulte também:
+* [Seleção do target da prova](#selecting-the-proof-target)
+
+* [Sobre endereços de semente](../../delivery/using/about-seed-addresses.md)
+
+* [Caso de uso: seleção de seed addresses com critérios](../../delivery/using/use-case--selecting-seed-addresses-on-criteria.md)
