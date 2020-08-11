@@ -14,11 +14,11 @@ discoiquuid: 72c5151c-ce1e-425a-9aee-beefe9f21a67
 index: y
 internal: n
 snippet: y
-translation-type: ht
-source-git-commit: e97183256ef6d3f2068dd0fbc8eb3c3f32e0bae0
-workflow-type: ht
-source-wordcount: '367'
-ht-degree: 100%
+translation-type: tm+mt
+source-git-commit: 3566f42b92cc1b7280bf9b6e9e0b4da7a54f61db
+workflow-type: tm+mt
+source-wordcount: '479'
+ht-degree: 77%
 
 ---
 
@@ -69,6 +69,22 @@ As etapas para criar e aplicar uma tipologia para seus deliveries estão listada
 
 Durante a preparação do delivery, os recipients são excluídos quando o critério é atingido. Você pode verificar logs para monitorar exclusões. Casos de uso de exemplo das regras de tipologia de pressão estão disponíveis [nesta página](../../campaign/using/pressure-rules.md#use-cases-on-pressure-rules).
 
+## Como configurar o gerenciamento de fadiga usando o regra de tipologia
+
+Este vídeo explica como implementar o gerenciamento de fadiga no Adobe Campaign Classic, aproveitando regras de tipologia.
+
+>[!VIDEO](https://video.tv.adobe.com/v/25090?quality=12)
+
+## Como configurar o gerenciamento de fadiga usando filtros predefinidos
+
+O gerenciamento de fadiga controla a frequência e a quantidade de mensagens para evitar a solicitação excessiva de recipient. Se você não tiver o módulo de otimização de campanha na instância da campanha, poderá configurar um filtro predefinido que filtrará a população do público alvo pelo número de mensagens recebidas. Este vídeo explica como implementar o gerenciamento de fadiga no Adobe Campaign Classic usando filtros.
+
+>[!VIDEO](https://video.tv.adobe.com/v/25091?quality=12)
+
 **Tópicos relacionados**
 
 * [Aplicar regras de negócios automáticas a deliveries em qualquer canal](https://helpx.adobe.com/br/campaign/kb/simplifying-campaign-management-acc.html#Applyautomaticbusinessrulestodeliveriesonanychannel)
+
+* [Sobre tipologias de campanha](../../campaign/using/pressure-rules.md)
+
+* [Gerenciamento da fadiga de marketing com regras de pressão](https://docs.adobe.com/content/help/en/campaign-classic/using/orchestrating-campaigns/campaign-optimization/pressure-rules.html)
