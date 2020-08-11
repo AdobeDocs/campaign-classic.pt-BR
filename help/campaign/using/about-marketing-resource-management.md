@@ -14,8 +14,11 @@ discoiquuid: 6101e083-3754-41e1-8a93-021b1a771dc0
 index: y
 internal: n
 snippet: y
-translation-type: ht
-source-git-commit: b47dcfa0e4ee2e5e43e7aa14b94e12fd70ff9c2d
+translation-type: tm+mt
+source-git-commit: 63f07746d39fff22a98b3cd4ab7f2294da778ab3
+workflow-type: tm+mt
+source-wordcount: '406'
+ht-degree: 96%
 
 ---
 
@@ -50,19 +53,19 @@ No contexto do Adobe Campaign, os seguintes conceitos devem ser definidos:
 
    Para obter mais informações, consulte [Gerenciamento de recursos de marketing](../../campaign/using/managing-marketing-resources.md).
 
-## Facilidade de uso {#user-friendliness}
-
 >[!NOTE]
 >
 >Para mais informações sobre o ambiente de trabalho do Adobe Campaign, consulte [essa seção](../../platform/using/adobe-campaign-workspace.md).
 >  
->Todas as funcionalidades vinculadas às remessas e ao gerenciamento de perfis são detalhadas [nesta seção](../../delivery/using/communication-channels.md).
+>All functionalities linked to deliveries and communication channels are detailed in [this section](../../delivery/using/steps-about-delivery-creation-steps.md).
 >
 >Todas as funcionalidades relacionadas à campanha são detalhadas em [Acesso a campanhas de marketing](../../campaign/using/accessing-marketing-campaigns.md).
 
 Além disso, os planos e programas da Adobe Campaign oferecem funcionalidades adicionais:
 
-* Gerenciamento de orçamento. Para obter mais informações, consulte [Controle de custos](../../campaign/using/controlling-costs.md),
-* Gerenciamento de tarefas. Para obter mais informações, consulte [Criação e gerenciamento de tarefas](../../campaign/using/creating-and-managing-tasks.md),
-* Gerenciamento de recursos de marketing. Para obter mais informações, consulte [Gerenciamento de recursos de marketing](../../campaign/using/managing-marketing-resources.md).
+* Gerenciamento de orçamento. Para obter mais informações, consulte [Controle de custos](../../campaign/using/controlling-costs.md)
+
+* Gerenciamento de tarefas. Para obter mais informações, consulte [Criação e gerenciamento de tarefas](../../campaign/using/creating-and-managing-tasks.md)
+
+* Gerenciamento de recursos de marketing. Para obter mais informações, consulte [Gerenciamento de recursos de marketing](../../campaign/using/managing-marketing-resources.md)
 
