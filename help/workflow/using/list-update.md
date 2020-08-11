@@ -14,11 +14,11 @@ discoiquuid: ca2cd5bf-78a2-4e43-955d-206f4474d1e0
 index: y
 internal: n
 snippet: y
-translation-type: ht
-source-git-commit: b1a961822224ab0a9551f51942a5f94cf201c8ee
-workflow-type: ht
-source-wordcount: '445'
-ht-degree: 100%
+translation-type: tm+mt
+source-git-commit: bc54cef4c44be4c694e062f56685dbb09d2fcf8e
+workflow-type: tm+mt
+source-wordcount: '447'
+ht-degree: 97%
 
 ---
 
@@ -64,7 +64,7 @@ No exemplo a seguir, a atividade de atualização da lista segue uma query direc
 
    A lista de recipients correspondentes é então criada ou atualizada.
 
-Para obter mais informações, consulte o vídeo [Creating a list of recipients](https://docs.campaign.adobe.com/doc/AC/en/Videos/Videos.html).
+Para obter mais informações, consulte o vídeo [Creating a list of recipients](https://docs.adobe.com/content/help/en/campaign-classic-learn/tutorials/profile-management/creating-a-list-of-recipients.html).
 
 ## Parâmetros de entrada {#input-parameters}
 
