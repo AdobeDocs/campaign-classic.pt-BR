@@ -13,8 +13,11 @@ discoiquuid: 16dbe423-018f-4666-9901-2120a8dc609a
 index: y
 internal: n
 snippet: y
-translation-type: ht
-source-git-commit: 2ee1912e0de2841867d0ffb5420cc9810aa1083e
+translation-type: tm+mt
+source-git-commit: bc54cef4c44be4c694e062f56685dbb09d2fcf8e
+workflow-type: tm+mt
+source-wordcount: '321'
+ht-degree: 97%
 
 ---
 
@@ -39,7 +42,7 @@ Você pode [usar fluxos de trabalho para criar um público-alvo](../../campaign/
 
 Uma lista é um conjunto estático de destinatários que pode ser direcionado em ações de entrega e atualizado durante operações de importação ou execução de fluxo de trabalho. Por exemplo, uma população extraída do banco de dados por uma consulta pode fornecer uma lista.
 
-[Clique aqui para saber mais](../../platform/using/creating-and-managing-lists.md#creating-a-profile-list-from-a-group). Você também pode assistir a [este vídeo](https://docs.adobe.com/content/help/en/campaign-learn/campaign-classic-tutorials/getting-started/creating-a-list-of-recipients.html) sobre como criar uma lista manualmente e a [este outro vídeo](https://docs.campaign.adobe.com/doc/AC/en/Videos/creating_list_recipients_611.mp4) para criar e atualizar uma lista de recipients em um workflow.
+[Clique aqui para saber mais](../../platform/using/creating-and-managing-lists.md#creating-a-profile-list-from-a-group). Você também pode assistir a [este vídeo](https://docs.adobe.com/content/help/en/campaign-learn/campaign-classic-tutorials/getting-started/creating-a-list-of-recipients.html) sobre como criar uma lista manualmente e a [este outro vídeo](https://docs.adobe.com/content/help/en/campaign-classic-learn/tutorials/profile-management/creating-a-list-of-recipients.html) para criar e atualizar uma lista de recipients em um workflow.
 
 ## Como posso excluir informações em duplicidade de uma população antes de enviar uma mensagem? {#how-can-i-deduplicate-a-population-before-sending-a-message-}
 
