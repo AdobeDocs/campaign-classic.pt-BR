@@ -12,8 +12,11 @@ discoiquuid: 88575757-ef1b-4247-88ff-6f355c1ecd3e
 index: y
 internal: n
 snippet: y
-translation-type: ht
-source-git-commit: b7470011bbb08cc1a7041b53e8405c971f33e51c
+translation-type: tm+mt
+source-git-commit: 63f07746d39fff22a98b3cd4ab7f2294da778ab3
+workflow-type: tm+mt
+source-wordcount: '124'
+ht-degree: 100%
 
 ---
 
@@ -25,7 +28,7 @@ O Adobe Campaign permite a entrega de mensagens eletrônicas personalizadas em m
 Antes de começar a enviar emails:
 
 * Verifique se os perfis de recipient contêm pelo menos um endereço de email.
-* Saiba mais sobre as [Práticas recomendadas da entrega](https://helpx.adobe.com/br/campaign/kb/delivery-best-practices.html) do Adobe Campaign.
+* Saiba mais sobre as [Práticas recomendadas da entrega](../../delivery/using/delivery-best-practices.md) do Adobe Campaign.
 * Leia sobre [Entregabilidade](../../delivery/using/about-deliverability.md) e [Gerenciamento de Entregabilidade](https://helpx.adobe.com/br/campaign/kb/acc-deliverability.html).
 
 As principais etapas para enviar um email são as seguintes:
