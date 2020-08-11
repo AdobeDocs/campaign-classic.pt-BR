@@ -15,10 +15,10 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: fa9e4ddc716809b96e259acd1137a0c24ef68fee
+source-git-commit: 3566f42b92cc1b7280bf9b6e9e0b4da7a54f61db
 workflow-type: tm+mt
-source-wordcount: '858'
-ht-degree: 72%
+source-wordcount: '884'
+ht-degree: 70%
 
 ---
 
@@ -111,7 +111,7 @@ Uma lista de blocos de personalização está disponível por padrão para ajuda
    >Para saber mais sobre a geração da mirror page, consulte [Geração da mirror page](../../delivery/using/sending-messages.md#generating-the-mirror-page).
 
 * **[!UICONTROL Link to mirror page]**: insere um link para a mirror page (&quot;Se você não conseguir visualizar esta mensagem corretamente, clique aqui&quot;).
-* **[!UICONTROL Unsubscription link]** : insere um link que permite cancelar a inscrição de todos os delivery (lista de blocos).
+* **[!UICONTROL Unsubscription link]** : insere um link que permite cancelar a inscrição de todos os delivery (lista de bloqueios).
 * **[!UICONTROL Formatting function for proper nouns]** : gera a função **[!UICONTROL toSmartCase]** Javascript, que altera a primeira letra de cada palavra para maiúscula. Este bloco deve ser inserido no código-fonte do delivery, nas tags **`<script>...</script>`**.
 
    No exemplo abaixo, a função é usada para substituir o elemento &quot;My header&quot; por &quot;My new header&quot; com letras maiúsculas em cada palavra:
@@ -159,3 +159,9 @@ Para criar um bloco de personalização, vá para o explorador e siga as seguint
       ![](assets/s_ncs_user_personalized_block_b.png)
 
    * Insira o conteúdo (em HTML, texto, JavaScript, etc.) do(s) bloco(s) de personalização e clique em **[!UICONTROL Save]**.
+
+## Como personalizar emails usando blocos de conteúdo dinâmico
+
+Saiba como os blocos de conteúdo dinâmico criados e como usá-los para personalizar o conteúdo de seu delivery de email.
+
+>[!VIDEO](https://video.tv.adobe.com/v/24924?quality=12)
