@@ -15,9 +15,9 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: bc54cef4c44be4c694e062f56685dbb09d2fcf8e
+source-git-commit: 6c5e11f24537d2956ade49fe0f4a8ffebdbbabcf
 workflow-type: tm+mt
-source-wordcount: '1146'
+source-wordcount: '1130'
 ht-degree: 94%
 
 ---
@@ -77,7 +77,7 @@ Um template pronto para usar é fornecido para criar uma campanha para a qual ne
 
 A criação e a configuração dos templates de campanha são apresentadas em [Templates de campanha](#campaign-templates).
 
-Para obter mais informações sobre a criação da campanha, consulte o vídeo [Criação de uma campanha e de um e-mail](https://docs.adobe.com/content/help/en/campaign-classic-learn/tutorials/sending-messages/email-channel/creating-a-campaign-and-an-email.html).
+For more on campaign creation, refer to [this video](../../campaign/using/marketing-campaign-deliveries.md#create-email-video).
 
 ## Configuração dos módulos disponíveis {#configuration-of-the-available-modules}
 
