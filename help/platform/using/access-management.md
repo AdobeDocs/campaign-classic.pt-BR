@@ -357,7 +357,7 @@ Os grupos padrão e os direitos nomeados permitem que os operadores acessem dete
 
 A matriz de direitos de acesso do Adobe Campaign está disponível [aqui](/help/platform/using/assets/access-rights-matrix.pdf).
 
-[![imagem](assets/user_management.png)](https://docs.adobe.com/content/help/en/campaign-classic/using/getting-started/administration-basics/assets/access-rights-matrix.pdf)
+[![imagem](assets/user_management.png)](https://docs.adobe.com/content/help/pt-BR/campaign-classic/using/getting-started/administration-basics/assets/access-rights-matrix.pdf)
 
 ## Gerenciamento de acesso a pastas {#folder-access-management}
 
