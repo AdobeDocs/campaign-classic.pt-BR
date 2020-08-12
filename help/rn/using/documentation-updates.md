@@ -13,7 +13,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 24d2dded38ddb922891a7264d9efea02cb448323
+source-git-commit: 2a5711c4478f8378c079fec4792ecbb95266ad4b
 workflow-type: tm+mt
 source-wordcount: '7069'
 ht-degree: 98%
@@ -38,7 +38,7 @@ Os vídeos passo a passo estão disponíveis nos seguintes tópicos:
 
 * [Como configurar o gerenciamento de fadiga usando regras de tipologia e filtros predefinidos](../../campaign/using/about-campaign-typologies.md)
 
-* [Como criar um email em uma campanha](../../campaign/using/designing-marketing-campaigns.md)
+* [Como criar um email em uma campanha](../../campaign/using/marketing-campaign-deliveries.md)
 
 * [Como criar um boletim multilíngue com conteúdo condicional](../../delivery/using/conditional-content.md)
 
