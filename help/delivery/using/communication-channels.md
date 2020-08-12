@@ -18,7 +18,7 @@ translation-type: tm+mt
 source-git-commit: b14f5ecd2b06ed9f4cb49d8779b9f94ea4bcdddc
 workflow-type: tm+mt
 source-wordcount: '1176'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -102,7 +102,7 @@ Além disso, os deliveries do tipo &quot;Outros&quot; usam um template técnico 
 
 Este canal não tem nenhum mecanismo específico. É um canal genérico que tem sua própria opção de roteamento de conta externa, tipo de template do delivery e atividade de workflow de campanha, como qualquer outro canal de comunicação disponível no Adobe Campaign.
 
-Esse canal foi projetado apenas para fins descritivos, por exemplo, para definir delivery para os quais você deseja manter um rastreamento do público alvo de uma campanha executada em uma ferramenta diferente da Adobe Campaign.
+Esse canal foi projetado apenas para fins descritivos, por exemplo, para definir deliveries para os quais você deseja manter um rastreamento do público-alvo de uma campanha executada em uma ferramenta diferente do Adobe Campaign.
 
 ## Tipos de deliveries{#types-of-deliveries}
 
