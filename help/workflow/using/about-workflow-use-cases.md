@@ -1,6 +1,6 @@
 ---
-title: Sobre casos de uso de fluxo de trabalho
-description: Saiba mais sobre casos de uso que você pode executar usando workflows Campaign Classic.
+title: Sobre casos de uso de workflow
+description: Saiba mais sobre casos de uso que você pode executar usando workflows do Campaign Classic.
 page-status-flag: never-activated
 uuid: 7c1e8cea-90d0-491f-ab8f-6cd69f8a6c3b
 contentOwner: sauviat
@@ -11,20 +11,20 @@ topic-tags: about-workflows-and-data-management
 discoiquuid: 40503917-7a53-4d99-96a4-57aa9e98ec87
 internal: n
 snippet: y
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 6d9e2b54da9de37ed8f4f873a1049b35493112d4
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '165'
-ht-degree: 55%
+ht-degree: 100%
 
 ---
 
 
-# Sobre casos de uso de fluxo de trabalho {#about-workflow-use-cases}
+# Sobre casos de uso de workflow {#about-workflow-use-cases}
 
-Nesta seção, você encontrará vários casos de uso que aproveitam os recursos dos Workflows da campanha.
+Nesta seção você encontrará vários casos de uso que usam os recursos dos workflows do Campaign.
 
-Eles ajudarão você a descobrir os diferentes contextos nos quais os workflows podem ser usados e a responder às suas necessidades.
+Eles ajudarão você a descobrir os diferentes contextos nos quais os workflows podem ser usados e a atender às suas necessidades.
 
 ## Deliveries {#deliveries}
 
@@ -53,7 +53,7 @@ Eles ajudarão você a descobrir os diferentes contextos nos quais os workflows 
 * [Criação da lista de resumo](../../workflow/using/creating-a-summary-list.md)
 * [Enriquecimento de dados](../../workflow/using/enriching-data.md)
 * [Uso de agregações](../../workflow/using/using-aggregates.md)
-* [Importação de dados criptografados usando uma chave gerada pelo Painel de controle do Campaign](../../workflow/using/importing-data.md#use-case-gpg-decrypt)
+* [Importar dados criptografados usando uma chave gerada pelo Painel de controle do Campaign](../../workflow/using/importing-data.md#use-case-gpg-decrypt)
 * [Criptografar e exportar dados usando uma chave instalada no Painel de controle do Campaign](../../workflow/using/how-to-use-workflow-data.md#use-case-gpg-encrypt)
 * [Atualização da lista trimestral usando um query incremental](../../workflow/using/quarterly-list-update.md)
 
