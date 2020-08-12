@@ -14,18 +14,18 @@ discoiquuid: dd3d14cc-5153-428d-a98a-32b46f0fe811
 index: y
 internal: n
 snippet: y
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 959455ec92b40581f04cf0e357b6c0d3f3fba81c
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1233'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
 
 # Conectores herdados {#legacy-connectors}
 
-Os conectores de FDA herdados ainda são suportados pela Adobe. No entanto, recomendamos substituí-las por alternativas mais recentes listadas nesta [página](../../platform/using/specific-configuration-database.md).
+Os conectores FDA herdados ainda são aceitos pela Adobe. No entanto, recomendamos substituí-los por alternativas mais recentes listadas nesta [página](../../platform/using/specific-configuration-database.md).
 
 ## Configuração do acesso ao Hadoop 2.1 {#configure-access-to-hadoop}
 
