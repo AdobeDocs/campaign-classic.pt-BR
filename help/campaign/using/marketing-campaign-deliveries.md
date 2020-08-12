@@ -15,10 +15,10 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 3566f42b92cc1b7280bf9b6e9e0b4da7a54f61db
+source-git-commit: 2a5711c4478f8378c079fec4792ecbb95266ad4b
 workflow-type: tm+mt
-source-wordcount: '2928'
-ht-degree: 98%
+source-wordcount: '2956'
+ht-degree: 97%
 
 ---
 
@@ -27,7 +27,9 @@ ht-degree: 98%
 
 As entregas podem ser criadas através do painel de campanha, um workflow de campanha ou diretamente através da visão geral das remessas.
 
-## Criar entregas {#creating-deliveries}
+![](assets/do-not-localize/how-to-video.png) [Descubra este recurso em vídeo](#create-email-video)
+
+## Criação de deliveries {#creating-deliveries}
 
 Para criar um delivery vinculado a uma campanha, clique no link **[!UICONTROL Add a delivery]** no painel de campanha.
 
@@ -78,6 +80,13 @@ O guia [Automating with workflows](../../workflow/using/architecture.md) inclui 
 >[!IMPORTANT]
 >
 >Você não pode configurar mais de 28 workflows na mesma campanha. Acima desse limite, os workflows adicionais não estão visíveis na interface e podem gerar erros.
+
+### Como criar um email em uma campanha {#create-email-video}
+
+Este vídeo explica como criar uma campanha e um email no Adobe Campaign Classic.
+
+>[!VIDEO](https://video.tv.adobe.com/v/25604?quality=12)
+
 
 #### Criação de um workflow para construção do target {#creating-a-targeting-workflow}
 
