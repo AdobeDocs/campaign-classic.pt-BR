@@ -15,10 +15,10 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 3566f42b92cc1b7280bf9b6e9e0b4da7a54f61db
+source-git-commit: 2a5711c4478f8378c079fec4792ecbb95266ad4b
 workflow-type: tm+mt
-source-wordcount: '868'
-ht-degree: 97%
+source-wordcount: '873'
+ht-degree: 96%
 
 ---
 
@@ -29,7 +29,9 @@ Os campos de personalização são usados para personalização de primeiro nív
 
 Por exemplo, o campo de personalização com a sintaxe **&lt;%= recipient.LastName %>** informa ao Adobe Campaign para inserir o nome do recipient no banco de dados (tabela de recipients).
 
->[!NOTE]
+![](assets/do-not-localize/how-to-video.png) [Descubra este recurso em vídeo](#personalization-fields-video)
+
+>[!CAUTION]
 >
 >O conteúdo dos campos de personalização é limitado a 1024 caracteres.
 
@@ -124,7 +126,7 @@ O valor padrão é de 5 segundos.
 
 Se essa opção for definida como 0, não haverá limite de tempo para a fase de personalização.
 
-## Como personalizar emails usando campos de personalização
+## Como personalizar emails usando campos de personalização {#personalization-field-video}
 
 Saiba como adicionar um campo de personalização à linha de assunto e ao conteúdo de um delivery de email.
 
