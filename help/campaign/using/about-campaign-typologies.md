@@ -15,10 +15,10 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 3566f42b92cc1b7280bf9b6e9e0b4da7a54f61db
+source-git-commit: 2a5711c4478f8378c079fec4792ecbb95266ad4b
 workflow-type: tm+mt
-source-wordcount: '479'
-ht-degree: 77%
+source-wordcount: '484'
+ht-degree: 76%
 
 ---
 
@@ -26,6 +26,8 @@ ht-degree: 77%
 # Sobre tipologias de campanha{#about-campaign-typologies}
 
 Otimização de Campanha é o módulo do Adobe Campaign que permite controlar, filtrar e monitorar o envio de deliveries. Para evitar conflitos entre campanhas, o Adobe Campaign pode testar várias combinações aplicando regras de restrição específicas. Isso garante que as mensagens enviadas atendam melhor às necessidades e expectativas dos clientes, de acordo com as políticas de comunicação da empresa.
+
+![](assets/do-not-localize/how-to-video.png) [Descubra este recurso em vídeo](#typologies-video)
 
 >[!NOTE]
 >
@@ -69,7 +71,7 @@ As etapas para criar e aplicar uma tipologia para seus deliveries estão listada
 
 Durante a preparação do delivery, os recipients são excluídos quando o critério é atingido. Você pode verificar logs para monitorar exclusões. Casos de uso de exemplo das regras de tipologia de pressão estão disponíveis [nesta página](../../campaign/using/pressure-rules.md#use-cases-on-pressure-rules).
 
-## Como configurar o gerenciamento de fadiga usando o regra de tipologia
+## Como configurar o gerenciamento de fadiga usando o regra de tipologia {#typologies-video}
 
 Este vídeo explica como implementar o gerenciamento de fadiga no Adobe Campaign Classic, aproveitando regras de tipologia.
 
