@@ -14,11 +14,11 @@ discoiquuid: 91115d4f-0cb6-4bce-b28d-17f15e9f9a0a
 index: y
 internal: n
 snippet: y
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 56212b320d5077f9b66952e7c11eb8bdcea9e3b4
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1203'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -63,7 +63,7 @@ Quando um recipient clica no link de cancelar subscrição em um e-mail enviado 
 
 ## Edição de um recipient {#editing-a-recipient}
 
-As etapas abaixo para alterar um único ponto da oferta de dados são um exemplo simples de como a Campanha v7 se torna o banco de dados principal para o Campaign Standard ao usar a replicação de dados. Modificar ou excluir dados replicados no Campaign v7 tem o mesmo efeito nos dados correspondentes no Campaign Standard.
+As etapas abaixo para alterar um ponto único de dados oferecem um exemplo simples de como o Campaign v7 se torna o banco de dados principal do Campaign Standard ao usar a replicação de dados. Modificar ou excluir dados replicados no Campaign v7 tem o mesmo efeito nos dados correspondentes no Campaign Standard.
 
 1. Escolha o recipient recém-criado em [Criação de um novo destinatário](#creating-a-new-recipient) e edite o nome dele. Por exemplo, escolha uma **[!UICONTROL Salutation]** para o recipient (por exemplo, Sr. ou Sra.). Para obter mais informações, consulte [Edição de um perfil](../../platform/using/editing-a-profile.md).
 
@@ -85,7 +85,7 @@ Para obter mais informações e instruções completas sobre workflows do Campai
 1. Clique em **[!UICONTROL Create]** no canto superior direito.
 1. Clique em **[!UICONTROL Workflow]**.
 1. Clique em **[!UICONTROL New workflow]** e **[!UICONTROL Next]**.
-1. Digite um nome para o fluxo de trabalho no campo **[!UICONTROL Label]** e informações adicionais, caso seja necessário. Clique em **[!UICONTROL Next]**.
+1. Digite um nome para o workflow no campo **[!UICONTROL Label]** bem como informações adicionais, caso necessário. Clique em **[!UICONTROL Next]**.
 1. A partir de **[!UICONTROL Targeting]** à esquerda, arraste um target **[!UICONTROL Query]** para o espaço de trabalho.
 
    ![](assets/acs_connect_profile_sync_05.png)
@@ -110,7 +110,7 @@ Siga as etapas abaixo para adicionar uma delivery de e-mail a um workflow existe
 >Peça ao consultor para configurar a aplicação Web para o cancelamento de subscrição do serviço antes de seguir as etapas abaixo.
 
 1. Clique em **[!UICONTROL Channels]** à esquerda.
-1. Arraste **[!UICONTROL Email delivery]** para o fluxo de trabalho existente no espaço de trabalho.
+1. Arraste **[!UICONTROL Email delivery]** para o workflow existente no espaço de trabalho.
 
    ![](assets/acs_connect_profile_sync_07.png)
 
@@ -154,7 +154,7 @@ Siga as etapas abaixo para adicionar uma delivery de e-mail a um workflow existe
    ![](assets/acs_connect_profile_sync_16.png)
 
 1. Clique em **[!UICONTROL Create]**.
-1. Retorne ao fluxo de trabalho clicando no nome do delivery.
+1. Retorne ao workflow clicando no nome do delivery.
 
    ![](assets/acs_connect_profile_sync_17.png)
 
