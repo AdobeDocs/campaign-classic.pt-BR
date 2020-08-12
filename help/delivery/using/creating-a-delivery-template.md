@@ -15,15 +15,17 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 3566f42b92cc1b7280bf9b6e9e0b4da7a54f61db
+source-git-commit: 2a5711c4478f8378c079fec4792ecbb95266ad4b
 workflow-type: tm+mt
-source-wordcount: '361'
-ht-degree: 78%
+source-wordcount: '366'
+ht-degree: 77%
 
 ---
 
 
 # Criação de um template de delivery{#creating-a-delivery-template}
+
+![](assets/do-not-localize/how-to-video.png) [Descubra este recurso em vídeo](#delivery-template-video)
 
 ## Conversão de um delivery existente para um template {#converting-an-existing-delivery-to-a-template}
 
@@ -74,7 +76,7 @@ Para configurar um template de delivery, siga as seguintes etapas:
 >
 >Para evitar erros de configuração, recomendamos que você duplique um modelo nativo e altere suas propriedades em vez de criar um novo template.
 
-## Como configurar um template do delivery
+## Como configurar um template do delivery {#delivery-template-video}
 
 O vídeo a seguir demonstra como configurar um modelo para um delivery ad hoc.
 
