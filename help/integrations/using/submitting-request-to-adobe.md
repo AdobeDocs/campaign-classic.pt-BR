@@ -14,11 +14,11 @@ discoiquuid: 6d19a5a6-98e5-4b1a-a56a-67cfead152bd
 index: y
 internal: n
 snippet: y
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: a33132f64f160b20c98afd08cb9d0fe4cdf62b1a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '160'
-ht-degree: 86%
+ht-degree: 100%
 
 ---
 
@@ -42,8 +42,8 @@ Uma vez habilitado o IMS, você pode solicitar o provisionamento do Serviço pri
    <td> O nome da sua organização </td> 
   </tr> 
   <tr> 
-   <td> <strong>ID da organização IMS</strong><br /> </td> 
-   <td> Sua ID de empresa IMS. <br> Você pode encontrar a ID de organização do IMS no Experience Cloud, no menu Administração. Também é fornecido ao se conectar pela primeira vez à Adobe Experience Cloud. </td> 
+   <td> <strong>IMS Organization ID</strong><br /> </td> 
+   <td> Sua IMS Organization ID. <br> Você pode encontrar sua IMS Organization ID na Experience Cloud, no menu Administração. Também é fornecido ao se conectar pela primeira vez à Adobe Experience Cloud. </td> 
   </tr> 
   <tr> 
    <td> <strong>Ambiente:</strong><br /> </td> 
