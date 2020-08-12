@@ -15,9 +15,9 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 32076ea0a817d8649d1db9e39628221e15ede37e
+source-git-commit: 2a5711c4478f8378c079fec4792ecbb95266ad4b
 workflow-type: tm+mt
-source-wordcount: '1573'
+source-wordcount: '1578'
 ht-degree: 91%
 
 ---
@@ -174,6 +174,9 @@ Você poderá reduzir o tamanho da população do target. Para fazer isso, espec
 
 A prova é uma mensagem especial que permite testar um delivery antes de enviá-lo para o target principal. Os recipients de prova são responsáveis pela aprovação do formulário e do conteúdo da mensagem.
 
+![](assets/do-not-localize/how-to-video.png) [Descubra este recurso em vídeo](#seeds-and-proofs-video)
+
+
 Para selecionar o target das provas, siga as etapas abaixo:
 
 1. Clique no link **[!UICONTROL To]**.
@@ -230,7 +233,7 @@ Você poderá usar **[!UICONTROL Seed addresses]** como target das provas: essa 
 
 Você poderá combinar a definição de um target de prova específico e o uso de seed addresses usando a opção **[!UICONTROL Specific target and Seed addresses]**. As configurações relacionadas serão então definidas em duas sub-guias separadas.
 
-## Como gerenciar semente e provas em um email
+## Como gerenciar semente e provas em um email {#seeds-and-proofs-video}
 
 Neste vídeo, você aprenderá a adicionar sementes e provas a um email existente e como enviá-lo.
 
