@@ -14,11 +14,11 @@ discoiquuid: c988362b-432e-4f9f-8d36-00b3d0015756
 index: y
 internal: n
 snippet: y
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 2140468e52d78a91fc4128e9187d927f08e2f0ee
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '149'
-ht-degree: 75%
+ht-degree: 100%
 
 ---
 
@@ -32,11 +32,11 @@ Usuários do Campaign pode se conectar ao Adobe Campaign usando sua Adobe ID. Es
 * Política de gerenciamento da segurança de senhas.
 * Uso de contas de Federated ID (provedor de ID externo).
 
-O Adobe IMS (Identity Management System) ajuda os administradores a criar e gerenciar o acesso do usuário aos aplicativos e serviços. Para obter mais informações sobre tipos diferentes de IDs do Adobe, consulte [esta página](https://helpx.adobe.com/br/enterprise/using/identity.html).
+O Adobe IMS (Identity Management System) ajuda os administradores a criar e gerenciar o acesso do usuário a aplicativos e serviços. Para obter mais informações sobre tipos diferentes de Adobe IDs, consulte [esta página](https://helpx.adobe.com/br/enterprise/using/identity.html).
 
 >[!IMPORTANT]
 >
->A implementação do Adobe IMS está reservada aos administradores técnicos da Adobe. Entre em contato com o executivo da Adobe para start do processo de implementação.
+>A implementação do Adobe IMS é estritamente reservada aos administradores técnicos da Adobe. Entre em contato com seu executivo da Adobe para iniciar o processo de implementação.
 
 ## Tópicos relacionados
 
