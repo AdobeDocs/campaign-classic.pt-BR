@@ -15,10 +15,10 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 3566f42b92cc1b7280bf9b6e9e0b4da7a54f61db
+source-git-commit: 2a5711c4478f8378c079fec4792ecbb95266ad4b
 workflow-type: tm+mt
-source-wordcount: '884'
-ht-degree: 70%
+source-wordcount: '889'
+ht-degree: 69%
 
 ---
 
@@ -27,13 +27,15 @@ ht-degree: 70%
 
 Os blocos de personalização são dinâmicos, personalizados e contêm uma renderização específica que pode ser inserida em seus deliveries. Por exemplo, você pode adicionar um logotipo, uma mensagem de saudação ou um link para uma mirror page. Consulte [Inserção de blocos de personalização](#inserting-personalization-blocks).
 
->[!NOTE]
->
->Personalization blocks are also available from the **[!UICONTROL Digital Content Editor (DCE)]** . Para obter mais informações, consulte [esta página](../../web/using/editing-content.md#inserting-a-personalization-block).
+![](assets/do-not-localize/how-to-video.png) [Descubra este recurso em vídeo](#personalization-blocks-video)
 
 Personalization blocks are accessed via the **[!UICONTROL Resources > Campaign Management > Personalization blocks]** node of the Adobe Campaign explorer. Vários blocos estão disponíveis por padrão (consulte [Blocos de personalização prontos para uso](#out-of-the-box-personalization-blocks)).
 
 Você pode definir novos blocos que permitem otimizar a personalização dos deliveries. Para saber mais, consulte [Definição de blocos de personalização customizado](#defining-custom-personalization-blocks).
+
+>[!NOTE]
+>
+>Personalization blocks are also available from the **[!UICONTROL Digital Content Editor (DCE)]** . Para obter mais informações, consulte [esta página](../../web/using/editing-content.md#inserting-a-personalization-block).
 
 ## Inserir blocos de personalização {#inserting-personalization-blocks}
 
@@ -160,7 +162,7 @@ Para criar um bloco de personalização, vá para o explorador e siga as seguint
 
    * Insira o conteúdo (em HTML, texto, JavaScript, etc.) do(s) bloco(s) de personalização e clique em **[!UICONTROL Save]**.
 
-## Como personalizar emails usando blocos de conteúdo dinâmico
+## Como personalizar emails usando blocos de conteúdo dinâmico {#personalization-blocks-video}
 
 Saiba como os blocos de conteúdo dinâmico criados e como usá-los para personalizar o conteúdo de seu delivery de email.
 
