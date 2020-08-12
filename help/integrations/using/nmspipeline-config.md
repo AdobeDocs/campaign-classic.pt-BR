@@ -14,25 +14,25 @@ discoiquuid: 1c20795d-748c-4f5d-b526-579b36666e8f
 index: y
 internal: n
 snippet: y
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 0112d5bd052ad66169225073276d1da4f3c245d8
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '376'
-ht-degree: 3%
+ht-degree: 100%
 
 ---
 
 
 # Opção de pipeline NmsPipeline_Config {#nmspipeline_config}
 
-Quando a autenticação funcionar, [!DNL pipelined] poderá recuperar os eventos e processá-los. Ele só processa acionadores configurados no Adobe Campaign, ignorando os outros. O acionador deve ter sido gerado da Analytics e empurrado para o pipeline previamente.
+Quando a autenticação funcionar, [!DNL pipelined] poderá recuperar os eventos e processá-los. Somente os acionadores configurados no Adobe Campaign são processados, os demais são ignorados. O acionador deve ter sido gerado pelo Analytics e enviado previamente para o pipeline.
 A opção também pode ser configurada com um curinga para capturar todos os acionadores independentemente do nome.
 
-A configuração dos acionadores é feita em uma opção, em **[!UICONTROL Administration]** > **[!UICONTROL Platform]** > **[!UICONTROL Options]**. O nome da opção é **[!UICONTROL NmsPipeline_Config]**. O tipo de dados é &quot;texto longo&quot; no formato JSON.
+A configuração dos acionadores é feita em uma opção, em **[!UICONTROL Administration]** > **[!UICONTROL Platform]** > **[!UICONTROL Options]**. O nome da opção é **[!UICONTROL NmsPipeline_Config]**. O tipo de dados é &quot;long text&quot; em formato JSON.
 
 Este exemplo especifica dois acionadores.
 
-Cole o código JSON desse modelo no valor da opção. Certifique-se de remover comentários.
+Cole o código JSON desse modelo no valor da opção. Remova os comentários.
 
 ```
 {
@@ -75,21 +75,21 @@ Este segundo exemplo captura todos os acionadores.
 
 >[!NOTE]
 >
->O valor de [!DNL Trigger] UID para um nome de acionador específico na interface do Analytics pode ser encontrado como parte dos parâmetros de sequência de consulta de URL na interface de Acionadores. A UID triggerType é transmitida no fluxo de dados do pipeline e o código pode ser gravado no pipeline.JS para mapear a UID do acionador para um rótulo amigável ao usuário que pode ser armazenado em uma coluna Nome do acionador no schema pipelineEvents.
+>O valor da UID [!DNL Trigger] para um nome de acionador específico na interface do Analytics pode ser encontrado como parte dos parâmetros de sequência de consulta de URL na interface dos acionadores. A UID triggerType é transmitida no fluxo de dados do pipeline e o código pode ser gravado no pipeline.JS para mapear a UID do acionador para um rótulo amigável ao usuário que pode ser armazenado em uma coluna Nome do acionador no schema pipelineEvents.
 
-## O parâmetro consumer {#consumer-parameter}
+## O parâmetro consumidor {#consumer-parameter}
 
-O gasoduto funciona com um modelo de &quot;fornecedor e consumidor&quot;. Pode haver muitos consumidores na mesma fila. As mensagens são &quot;consumidas&quot; somente para um consumidor individual. Cada consumidor recebe sua própria &quot;cópia&quot; das mensagens.
+O pipeline funciona com um modelo de &quot;fornecedor e consumidor&quot;. Pode haver muitos consumidores na mesma fila. As mensagens são &quot;consumidas&quot; somente para um consumidor individual. Cada consumidor recebe sua própria &quot;cópia&quot; das mensagens.
 
-O parâmetro &quot;consumidor&quot; identifica a instância como um desses consumidores. É a identidade da instância que chama o gasoduto. Você pode preenchê-lo com o nome da instância. O serviço de pipeline rastreia as mensagens recuperadas por cada consumidor. Usar consumidores diferentes para instâncias diferentes garante que cada mensagem seja enviada para cada instância.
+O parâmetro &quot;consumidor&quot; identifica a instância como um desses consumidores. É a identidade da instância que chama o pipeline. Você pode preenchê-lo com o nome da instância. O serviço de pipeline rastreia as mensagens recuperadas por cada consumidor. Usar consumidores diferentes para instâncias diferentes garante que cada mensagem seja enviada para cada instância.
 
 ## Como configurar a opção Pipeline {#configure-pipeline-option}
 
-Adicione ou edite acionadores de Experience Cloud sob a matriz &quot;acionadores&quot;; não edite o resto.
+Adicione ou edite acionadores da Experience Cloud sob a matriz &quot;acionadores&quot;; não edite o resto.
 Verifique se o JSON é válido com a ajuda deste [site](http://jsonlint.com/).
 
-* &quot;name&quot; é a ID do acionador. Um caractere curinga &quot;*&quot; captura todos os acionadores.
-* &quot;Consumidor&quot; é qualquer string exclusiva que identifica exclusivamente a instância nlserver. Normalmente, pode ser o próprio nome da instância. Para vários ambientes (dev/stage/prod), verifique se é exclusiva para cada um deles para que cada instância receba uma cópia da mensagem.
-* [!DNL Pipelined] também suporta o tópico &quot;aliases&quot;.
+* “name” é a ID do acionador. Um curinga &quot;*&quot; captura todos os acionadores.
+* &quot;Consumidor&quot; é qualquer string única que identifique exclusivamente a instância nlserver. Normalmente, pode ser o próprio nome da instância. Para vários ambientes (dev/stage/prod), verifique se ela é exclusiva para cada um deles para que cada instância receba uma cópia da mensagem.
+* [!DNL Pipelined] também aceita o tópico &quot;aliases&quot;.
 
-Reinicie [!DNL pipelined] após fazer as alterações.
+Reinicie o [!DNL pipelined] depois de fazer as alterações.
