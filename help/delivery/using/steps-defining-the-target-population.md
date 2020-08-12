@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 3566f42b92cc1b7280bf9b6e9e0b4da7a54f61db
+source-git-commit: 32076ea0a817d8649d1db9e39628221e15ede37e
 workflow-type: tm+mt
 source-wordcount: '1573'
 ht-degree: 91%
@@ -235,6 +235,7 @@ Você poderá combinar a definição de um target de prova específico e o uso d
 Neste vídeo, você aprenderá a adicionar sementes e provas a um email existente e como enviá-lo.
 
 >[!VIDEO](https://video.tv.adobe.com/v/25606?quality=12)
+
 Consulte também:
 * [Seleção do target da prova](#selecting-the-proof-target)
 
