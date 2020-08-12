@@ -14,11 +14,11 @@ discoiquuid: 31071cd2-7d97-4a4f-a6cc-5ac5b6178be5
 index: y
 internal: n
 snippet: y
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: aa192d975a08246ba684940fff3d33853d7d9345
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '351'
-ht-degree: 90%
+ht-degree: 100%
 
 ---
 
@@ -29,11 +29,11 @@ Um query incremental permite selecionar periodicamente um target com base em um 
 
 O público que já foi alvo é armazenado na memória pela instância de workflow e por atividade, ou seja, dois workflows iniciados do mesmo template não compartilham o mesmo log. Por outro lado, duas tarefas baseadas no mesmo query incremental para a mesma instância de workflow usarão o mesmo log.
 
-O query é definido da mesma forma que para query padrão, mas sua execução é programada.
+O query é definido da mesma forma que queries padrão, mas sua execução é agendada.
 
 **Tópicos relacionados:**
 
-* [Caso de uso: Atualização da lista trimestral usando um query incremental](../../workflow/using/quarterly-list-update.md)
+* [Caso de uso: atualização da lista trimestral usando um query incremental](../../workflow/using/quarterly-list-update.md)
 * [Criação de query](../../workflow/using/query.md#creating-a-query)
 
 >[!CAUTION]
@@ -42,7 +42,7 @@ O query é definido da mesma forma que para query padrão, mas sua execução é
 
 Para fazer isso:
 
-1. Na **[!UICONTROL Scheduling & History]** guia, selecione a **[!UICONTROL Schedule execution]** opção. A tarefa permanece ativa após sua criação e só será acionada nos horários especificados pelo agendamento para execução do query. No entanto, se a opção estiver desabilitada, o query será executado imediatamente, **de uma só vez**.
+1. Na guia **[!UICONTROL Scheduling & History]**, selecione a opção **[!UICONTROL Schedule execution]**. A atividade permanece ativa após a criação e será acionada somente nos horários especificados pelo agendamento para execução do query. No entanto, se a opção estiver desabilitada, o query será executado imediatamente, **de uma só vez**.
 1. Clique no botão **[!UICONTROL Change]**.
 
    Na janela **[!UICONTROL Schedule editing wizard]**, você pode configurar o tipo de frequência, a recorrência do evento e o período de validade do evento.
@@ -53,7 +53,7 @@ Para fazer isso:
 
    ![](assets/s_user_segmentation_wizard_valid.png)
 
-1. A seção inferior da guia **[!UICONTROL Scheduling & History]** permite selecionar o número de dias a serem considerados no histórico.
+1. A seção inferior da guia **[!UICONTROL Scheduling & History]** permite selecionar o número de dias que serão considerados no histórico.
 
    ![](assets/edit_request_inc.png)
 
@@ -67,7 +67,7 @@ Para fazer isso:
 
    * **[!UICONTROL SQL table name]**
 
-      Esse parâmetro permite que você sobrecarregue a tabela SQL padrão contendo os dados do histórico.
+      Esse parâmetro permite sobrecarregar a tabela SQL padrão que contém os dados do histórico.
 
 ## Parâmetros de output {#output-parameters}
 
