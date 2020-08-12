@@ -18,26 +18,26 @@ translation-type: tm+mt
 source-git-commit: 9f70468e3dd7003a18812d07669f10c561e8bef7
 workflow-type: tm+mt
 source-wordcount: '1145'
-ht-degree: 2%
+ht-degree: 100%
 
 ---
 
 
-# Triggers eventos {#events}
+# Aciona eventos {#events}
 
-## Processando eventos no JavaScript {#events-javascript}
+## Processamento de eventos no JavaScript {#events-javascript}
 
 ### Arquivo JavaScript {#file-js}
 
 O pipeline usa uma função JavaScript para processar cada mensagem. Essa função é definida pelo usuário.
 
-Está configurado na **[!UICONTROL NmsPipeline_Config]** opção sob o atributo &quot;JSConnector&quot;. Esse javascript é chamado toda vez que um evento é recebido. É executado pelo [!DNL pipelined] processo.
+Está configurado na opção **[!UICONTROL NmsPipeline_Config]** sob o atributo &quot;JSConnector&quot;. Esse javascript é chamado toda vez que um evento é recebido. É executado pelo processo [!DNL pipelined].
 
 O arquivo JS de amostra é cus:triggers.js.
 
-### função JavaScript {#function-js}
+### Função JavaScript {#function-js}
 
-O [!DNL pipelined] Javascript deve ser start com uma função específica.
+O Javascript [!DNL pipelined] deve ser iniciado com uma função específica.
 
 Essa função é chamada uma vez para cada evento:
 
@@ -45,21 +45,21 @@ Essa função é chamada uma vez para cada evento:
 function processPipelineMessage(xmlTrigger) {}
 ```
 
-Deve voltar como
+Deveria voltar como
 
 ```
 <undefined/>
 ```
 
-Reinicie [!DNL pipelined] após editar o JS.
+Reinicie o [!DNL pipelined] após editar o JS.
 
 ### Acionar formato de dados {#trigger-format}
 
-Os [!DNL trigger] dados são passados para a função JS. Está no formato XML.
+Os dados [!DNL trigger] são passados à função JS. Está no formato XML.
 
-* O **[!UICONTROL @triggerId]** atributo contém o nome do [!DNL trigger].
-* O elemento **enriquecimentos** no formato JSON contém os dados gerados pela Analytics e está anexado ao acionador.
-* **[!UICONTROL @offset]** é o &quot;ponteiro&quot; da mensagem. Indica a ordem da mensagem na fila.
+* O atributo **[!UICONTROL @triggerId]** contém o nome do [!DNL trigger].
+* O elemento **enriquecimentos** no formato JSON contém os dados gerados pelo Analytics e está anexado ao acionador.
+* **[!UICONTROL @offset]** é o &quot;ponteiro&quot; para a mensagem. Indica a ordem da mensagem na fila.
 * **[!UICONTROL @partitio]**n é um container de mensagens na fila. O deslocamento é relativo a uma partição. <br>Há cerca de 15 partições na fila.
 
 Exemplo:
@@ -71,7 +71,7 @@ Exemplo:
  </trigger>
 ```
 
-### Formato dos dados do Enriquecimento {#enrichment-format}
+### Formato dos dados de enriquecimento {#enrichment-format}
 
 >[!NOTE]
 >
@@ -80,7 +80,7 @@ Exemplo:
 O conteúdo é definido no Analytics para cada acionador. Está no formato JSON.
 Por exemplo, em um acionador LogoUpload_uploading_Visits:
 
-* **[!UICONTROL eVar01]** pode conter a ID do comprador usada para reconciliar com recipient de Campanha. Está no formato String. <br>Deve ser reconciliado para localizar a ID do comprador, que é a chave primária.
+* **[!UICONTROL eVar01]** pode conter a ID do consumidor, utilizada para reconciliar com recipients do Campaign. Está no formato String. <br>Deve ser reconciliado para localizar a ID do consumidor, que é a chave primária.
 
 * **[!UICONTROL timeGMT]** pode conter a hora do acionador no lado do Analytics. Está no formato UTC Epoch (segundos desde 01/01/1970 UTC).
 
@@ -112,24 +112,24 @@ Exemplo:
 
 Os eventos são processados um de cada vez, por ordem de deslocamento. Cada thread do [!DNL pipelined] processa uma partição diferente.
 
-O &quot;deslocamento&quot; do último evento recuperado é armazenado no banco de dados. Portanto, se o processo for interrompido, ele será reiniciado a partir da última mensagem. Esses dados são armazenados no schema incorporado xtk:pipelineOffset.
+O &quot;deslocamento&quot; do último evento recuperado é armazenado no banco de dados. Portanto, se o processo for interrompido, será reiniciado a partir da última mensagem. Esses dados são armazenados no schema incorporado xtk:pipelineOffset.
 
-Esse ponteiro é específico para cada instância e para cada consumidor. Por conseguinte, quando muitas instâncias acedem ao mesmo gasoduto com consumidores diferentes, cada um recebe todas as mensagens e pela mesma ordem.
+Esse ponteiro é específico para cada instância e para cada consumidor. Portanto, quando muitas instâncias acessam o mesmo pipeline com consumidores diferentes, cada um recebe todas as mensagens na mesma ordem.
 
-O parâmetro &quot;consumer&quot; da opção de pipeline identifica a instância chamadora.
+O parâmetro &quot;consumidor&quot; da opção de pipeline identifica a instância de chamada.
 
-Atualmente, não há como ter filas diferentes para ambientes separados, como &quot;armazenamento temporário&quot; ou &quot;desenvolvimento&quot;.
+Atualmente, não há como ter filas diferentes para ambientes separados, como &quot;preparo&quot; ou &quot;dev&quot;.
 
 ### Registro e tratamento de erros {#logging-error-handling}
 
-Logs como logInfo() são direcionados ao [!DNL pipelined] log. Erros como logError() são gravados no [!DNL pipelined] log e fazem com que o evento seja colocado em uma fila de tentativas. Verifique o log implantado.
-Mensagens com erro são repetidas várias vezes na duração definida nas [!DNL pipelined] opções.
+Registros como logInfo() são direcionados ao log de [!DNL pipelined]. Erros como logError() são gravados no log de [!DNL pipelined] e fazem com que o evento seja colocado em uma fila de tentativas. Verifique o log de pipeline.
+Mensagens com erro são repetidas várias vezes na duração definida nas opções de [!DNL pipelined].
 
-Para fins de depuração e monitoramento, os dados completos do acionador são gravados na tabela do acionador. Está no campo &quot;dados&quot; no formato XML. Como alternativa, um logInfo() contendo os dados do acionador serve a mesma finalidade.
+Para fins de depuração e monitoramento, os dados completos do acionador são gravados na tabela do acionador. Eles ficam no campo &quot;dados&quot; no formato XML. Como alternativa, um logInfo() contendo os dados do acionador tem a mesma finalidade.
 
 ### Análise dos dados {#data-parsing}
 
-Este exemplo de código JS analisa o eVar01 nos enriquecimentos.
+Este exemplo de código JS analisa a eVar01 nos enriquecimentos.
 
 ```
 function processPipelineMessage(xmlTrigger)
@@ -149,9 +149,9 @@ function processPipelineMessage(xmlTrigger)
 ```
 
 Tenha cuidado ao analisar para evitar erros.
-Como esse código é usado para todos os acionadores, a maioria dos dados não é necessária. Portanto, pode ser deixado em branco quando não estiver presente.
+Como esse código é usado para todos os acionadores, a maioria dos dados não é exigida. Portanto, pode ser deixado em branco quando não estiver presente.
 
-### Como guardar o acionador {#storing-triggers-js}
+### Armazenar o acionador {#storing-triggers-js}
 
 >[!NOTE]
 >
@@ -181,67 +181,67 @@ function processPipelineMessage(xmlTrigger)
 
 ### Restrições {#constraints}
 
-O desempenho deste código deve ser ideal, pois ele é executado em altas frequências. Existem potenciais efeitos negativos para outras atividades de marketing. Especialmente se o processamento de mais de um milhão de eventos acionam por hora no servidor de marketing. Ou se não estiver ajustado corretamente.
+O desempenho deste código deve ser ideal, pois ele é executado em altas frequências. Existem possíveis efeitos negativos para outras atividades de marketing. Especialmente com o processamento de mais de um milhão de eventos acionadores por hora no servidor de marketing. Ou se não estiver ajustado corretamente.
 
 O contexto deste Javascript é limitado. Nem todas as funções da API estão disponíveis. Por exemplo, getOption() ou getCurrentdate() não funcionam.
 
 Para permitir um processamento mais rápido, vários threads desse script são executados ao mesmo tempo. O código deve ser seguro para thread.
 
-## Como armazenar os eventos {#store-events}
+## Armazenar os eventos {#store-events}
 
 >[!NOTE]
 >
 >É um exemplo específico de várias implementações possíveis.
 
-### schema do evento Pipeline {#pipeline-event-schema}
+### Schema do evento pipeline {#pipeline-event-schema}
 
-Eventos são armazenados em uma tabela de banco de dados. Ele é usado pelas campanhas de marketing para clientes do público alvo e enriquece emails usando acionadores.
+Eventos são armazenados em uma tabela de banco de dados. Ele é usado pelas campanhas de marketing para clientes do público-alvo e enriquece emails usando acionadores.
 Embora cada acionador possa ter uma estrutura de dados distinta, todos os acionadores podem ser mantidos em uma única tabela.
-O campo triggerType identifica a partir do qual os dados são acionados.
+O campo triggerType identifica o acionador a partir do qual os dados são originados.
 
 Este é um exemplo de código de schema para esta tabela:
 
 | Atributo | Tipo | Rótulo | Descrição |
 |:-:|:-:|:-:|:-:|
 | pipelineEventId | Longo | Chave primária | A chave primária interna do acionador. |
-| data | Memorando | Dados do acionador | O conteúdo completo dos dados de disparo no formato XML. Para depurar e auditar. |
-| triggerType | Sequência 50 | TriggerType | O nome do acionador. Identifica o comportamento do cliente no site. |
-| shopper_id | Sequência 32 | shopper_id | O identificador interno do comprador. Definido pelo fluxo de trabalho de reconciliação. Se zero, isso significa que o cliente é desconhecido na Campanha. |
-| shopper_key | Longo | shopper_key | O Identificador externo do comprador foi capturado pela Analytics. |
-| created | Data e hora | Criado | A hora em que o evento foi criado na Campanha. |
-| lastModified | Data e hora | Última modificação | A última vez que o evento foi modificado no Adobe. |
+| dados | Memorando | Dados do acionador | O conteúdo completo dos dados do acionador em formato XML. Para fins de depuração e auditoria. |
+| triggerType | String 50 | TriggerType | O nome do acionador. Identifica o comportamento do cliente no site. |
+| shopper_id | String 32 | shopper_id | O identificador interno do comprador. Definido pelo workflow de reconciliação. Se for zero, significa que o cliente é desconhecido no Campaign. |
+| shopper_key | Longo | shopper_key | O identificador externo do comprador foi capturado pelo Analytics. |
+| criado | Data e hora | Criado | A hora em que o evento foi criado no Campaign. |
+| lastModified | Data e hora | Última modificação | A última vez que o evento foi modificado na Adobe. |
 | timeGMT | Data e hora | Carimbo de data e hora | A hora em que o evento foi gerado no Analytics. |
 
-### Exibição dos eventos {#display-events}
+### Exibição de eventos {#display-events}
 
-Os eventos podem ser exibidos com um formulário simples baseado no schema eventos.
+Os eventos podem ser exibidos com um formulário simples baseado no schema de eventos.
 
 >[!NOTE]
 >
->O nó do Evento Pipeline não está integrado e precisa ser adicionado, assim como o formulário relacionado precisa ser criado na Campanha. Essas operações são restritas somente a usuários especialistas. Para obter mais informações, consulte estas seções: [Hierarquia](../../configuration/using/about-navigation-hierarchy.md) de navegação e [edição de formulários](../../configuration/using/editing-forms.md).
+>O nó do evento pipeline não está incorporado e precisa ser adicionado, assim como o formulário relacionado precisa ser criado no Campaign. Essas operações são restritas unicamente a usuários especialistas. Para obter mais informações, consulte as seções: [Hierarquia de navegação](../../configuration/using/about-navigation-hierarchy.md) e [Edição de formulários](../../configuration/using/editing-forms.md).
 
 ![](assets/triggers_7.png)
 
-## Processamento dos eventos {#processing-the-events}
+## Processamento de eventos {#processing-the-events}
 
-### Fluxo de trabalho de reconciliação {#reconciliation-workflow}
+### Workflow de reconciliação {#reconciliation-workflow}
 
-A reconciliação é o processo de fazer a correspondência do cliente da Analytics ao banco de dados da Campanha. Por exemplo, os critérios de correspondência podem ser o shopper_id.
+A reconciliação é o processo que faz a correspondência do cliente do Analytics ao banco de dados do Campaign. Por exemplo, os critérios de correspondência podem ser o shopper_id.
 
-Por motivos de desempenho, a correspondência deve ser feita no modo de lote por um fluxo de trabalho.
-A frequência deve ser definida como 15 minutos para otimizar a carga de trabalho. Como consequência, o atraso entre uma recepção de evento e seu processamento por um fluxo de trabalho de marketing é de até 15 minutos.
+Por motivos de desempenho, a correspondência deve ser feita no modo de lote por um workflow.
+A frequência deve ser definida como 15 minutos para otimizar a carga de trabalho. Como consequência, o atraso entre uma recepção de evento e seu processamento por um workflow de marketing é de até 15 minutos.
 
 ### Opções de reconciliação de unidade em JavaScript {#options-unit-reconciliation}
 
 Em teoria, é possível executar o query de reconciliação para cada acionador no JavaScript. Ele tem um impacto maior no desempenho e oferece resultados mais rápidos. Pode ser necessário para casos específicos de utilização quando for necessária reatividade.
 
-Pode ser difícil fazer isso se nenhum índice estiver definido em shopper_id. Se os critérios estiverem em um servidor de banco de dados separado do que o servidor de marketing, ele usará um link de banco de dados, que tem desempenho ruim.
+Pode ser difícil fazer isso se nenhum índice estiver definido em shopper_id. Se os critérios estiverem em um servidor de banco de dados separado do servidor de marketing, será usado um link de banco de dados com desempenho inadequado.
 
-### Expurgar fluxo de trabalho {#purge-workflow}
+### Limpar workflow {#purge-workflow}
 
-Os acionadores são processados dentro de uma hora, portanto não há razão para mantê-los por um longo tempo. O volume pode ser de aproximadamente 1 milhão de acionadores por hora. Isso explica por que um fluxo de trabalho de purga deve ser implementado. A limpeza exclui todos os acionadores com mais de três dias e é executada uma vez por dia.
+Os acionadores são processados dentro de uma hora, portanto não há razão para mantê-los por um longo tempo. O volume pode ser de aproximadamente 1 milhão de acionadores por hora. Isso explica por que um workflow de limpeza deve ser implementado. A limpeza exclui todos os acionadores com mais de três dias e é executada uma vez por dia.
 
-### Fluxo de trabalho de Campanha {#campaign-workflow}
+### Workflow de campanha {#campaign-workflow}
 
-O fluxo de trabalho da campanha de disparo geralmente é semelhante a outras campanhas recorrentes que foram usadas.
-Por exemplo, ele pode ser start com um query nos acionadores que procuram eventos específicos durante o último dia. Esse público alvo é usado para enviar o e-mail. Enriquecimentos ou dados podem vir do acionador. Ele pode ser usado com segurança pelo Marketing, pois não requer configuração.
+O workflow de campanha do acionador geralmente é semelhante a outras campanhas recorrentes já usadas.
+Por exemplo, pode iniciar com um query nos acionadores que procuram eventos específicos durante o último dia. Esse público-alvo é usado para enviar o email. Enriquecimentos ou dados podem vir do acionador. Pode ser usado com segurança pelo Marketing, pois não requer configuração.
