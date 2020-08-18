@@ -15,15 +15,21 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 972dce4b8429bb5b56fdf32b237384155bcc417a
+source-git-commit: 9a8c3586482d05648de3bdecfdfabcc094c70dbf
 workflow-type: tm+mt
-source-wordcount: '687'
-ht-degree: 83%
+source-wordcount: '915'
+ht-degree: 77%
 
 ---
 
 
 # Sobre perfis{#about-profiles}
+
+Os perfis (clientes, clientes potenciais, assinantes de boletim informativo etc.) são centralizados no banco de dados do Adobe Campaign. Há vários mecanismos possíveis para obter perfis e criar esse banco de dados: coleta on-line via formulários Web, importação manual ou automática de arquivos de texto, replicação com bancos de dados corporativos ou outros sistemas de informações. Com a Adobe Campaign, você pode incorporar históricos de marketing, informações de compra, preferências, dados CRM e quaisquer dados de PI relevantes em uma visualização consolidada para analisar e executar ações.
+
+No Adobe Campaign, os destinatários são os perfis padrão direcionados para envio de entregas (e-mails, SMS etc.). Graças aos dados dos destinatários que são armazenados no banco de dados, você poderá filtrar o destino que receberá qualquer entrega e adicionar dados de personalização ao seu conteúdo de entrega. Existem outros tipos de perfis no banco de dados. Esses perfis foram projetados para diferentes usos. Por exemplo, perfis iniciais são feitos para testar suas entregas antes que elas sejam enviadas ao destino final.
+
+![](assets/do-not-localize/how-to-video.png) [Entenda o conceito de perfis em vídeo](#create-profiles-video)
 
 ## Tipos de perfil {#profile-types}
 
@@ -103,4 +109,24 @@ Os perfis excluídos durante a preparação da entrega (regras de tipologia, qua
 
 Você pode ter uma visão geral do **[!UICONTROL Number of active profiles]** menu Campaign Standard **[!UICONTROL Administration > Campaign Management > Customer metrics]** . The actual count is performed by the **[!UICONTROL Number of active billing profiles]** (**[!UICONTROL billingActiveContactCount]**) [technical workflow](../../workflow/using/deliveries.md), which runs every day and adds the new data to the existing report for the current period in the **[!UICONTROL Customer metrics]** menu. Cada período dura 12 meses.
 
-Se você estiver hospedado no AWS e usando o Campaign Classic da versão 8931, também poderá monitorar o número de perfis ativos usados em suas instâncias diretamente do Painel de controle. For more on this, refer to the [Control Panel documentation](https://docs.adobe.com/content/help/en/control-panel/using/performance-monitoring/active-profiles-monitoring.html).
+Se você estiver hospedado no AWS e usando o Campaign Classic da versão 8931, também poderá monitorar o número de perfis ativos usados em suas instâncias diretamente do Painel de controle do Campaign. For more on this, refer to the [Control Panel documentation](https://docs.adobe.com/content/help/en/control-panel/using/performance-monitoring/active-profiles-monitoring.html).
+
+## Como criar e gerenciar perfis {#create-profiles-video}
+
+Saiba como acessar os dados do perfil, classificar e filtrar perfis e criar e gerenciar perfis manualmente.
+
+Este vídeo também explica a conformidade da Adobe Campaign Classic com os Regulamentos Gerais de Proteção de Dados.
+
+>[!VIDEO](https://video.tv.adobe.com/v/35611?quality=12)
+
+**Consulte também**
+
+* [Suspensão da privacidade na Campanhas](https://helpx.adobe.com/br/campaign/kb/acc-privacy.html)
+
+* [Definir a população do público alvo](../../delivery/using/define-the-right-audience.md)
+
+* [Criar query e dados de segmento em workflows](../../workflow/using/targeting-data.md)
+
+* [Selecionar target mapping](../../delivery/using/selecting-a-target-mapping.md)
+
+* [Definir a audiência - práticas recomendadas](../../delivery/using/define-the-right-audience.md)
