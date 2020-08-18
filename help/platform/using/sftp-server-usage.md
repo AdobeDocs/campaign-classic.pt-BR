@@ -1,5 +1,5 @@
 ---
-title: Práticas recomendadas e solução de problemas do servidor SFTP
+title: Uso do servidor SFTP
 description: Saiba mais sobre as práticas recomendadas e a solução de problemas do servidor SFTP.
 page-status-flag: never-activated
 uuid: 5281058d-91bd-4f98-835d-1d46dc7b8b1f
@@ -13,9 +13,9 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: bc7ba0c26bd57a75c3dbeaec541844a3b1196ef3
+source-git-commit: 8198c4aa6eccc0cbb5de4712ebdd8000783b615c
 workflow-type: tm+mt
-source-wordcount: '999'
+source-wordcount: '996'
 ht-degree: 64%
 
 ---
@@ -118,9 +118,9 @@ Esse erro indica que o nome de domínio do servidor FTP não pôde ser resolvido
    1. Verifique se o nome do servidor foi adicionado ao servidor DNS local.
    1. Se sim, execute o seguinte comando no servidor Adobe Campaign para obter o endereço IP:
 
-   `nslookup <server domain name>`
+      `nslookup <server domain name>`
 
-   Isso confirma que o servidor FTP está funcionando e acessível no servidor de aplicativos Adobe Campaign.
+      Isso confirma que o servidor FTP está funcionando e acessível no servidor de aplicativos Adobe Campaign.
 
 1. Solução de problemas de registros **de sessão**:
 
@@ -128,11 +128,11 @@ Esse erro indica que o nome de domínio do servidor FTP não pôde ser resolvido
    1. Vá para a **[!UICONTROL File Transfer]** guia e clique em **[!UICONTROL Advanced Parameters]**.
    1. Marque a opção **[!UICONTROL Display the session logs]**.
 
-   ![](assets/sftp-error-display-logs.png)
+      ![](assets/sftp-error-display-logs.png)
 
    1. Vá para a Auditoria de fluxo de trabalho e verifique se os registros mostram o erro &quot;Não foi possível resolver o nome do host&quot;.
 
-   Se o servidor SFTP estiver hospedado pelo Adobe, verifique se o IP foi adicionado à lista de permissões entrando em contato com o Atendimento ao cliente.
+1. Se o servidor SFTP estiver hospedado pelo Adobe, verifique se o IP foi adicionado à lista de permissões entrando em contato com o Atendimento ao cliente.
 
    Caso contrário, valide:
 
