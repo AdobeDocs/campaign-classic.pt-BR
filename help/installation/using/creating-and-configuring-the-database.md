@@ -15,9 +15,9 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 653f630079277ffb75915206c445e9414cfcdd7c
+source-git-commit: 890950463146fe0863d2809759eb142cb4bb1fff
 workflow-type: tm+mt
-source-wordcount: '1295'
+source-wordcount: '1296'
 ht-degree: 2%
 
 ---
@@ -25,7 +25,7 @@ ht-degree: 2%
 
 # Criação e configuração do banco de dados{#creating-and-configuring-the-database}
 
-Quando você cria um banco de dados, o Adobe Campaign fornece duas opções diferentes:
+Quando você cria um banco de dados, a Adobe Campaign fornece duas opções diferentes:
 
 1. Criação ou reciclagem de um banco de dados: escolha essas opções se desejar criar um novo banco de dados ou reutilizar um existente. Consulte o [Caso 1: Criação/reciclagem de um banco de dados](#case-1--creating-recycling-a-database).
 1. Usando um banco de dados existente: escolha essa opção se um banco de dados vazio já tiver sido criado pelo administrador e você quiser usá-lo; ou para estender a estrutura de um banco de dados existente. Consulte o [Caso 2: Usando um banco de dados](#case-2--using-an-existing-database)existente.
@@ -69,7 +69,7 @@ Dependendo do mecanismo de banco de dados selecionado, as informações de ident
 * Para um mecanismo **PostgreSQL** ou **DB2** , você deve especificar o nome DNS (ou endereço IP) definido no servidor de aplicativos para acessar o servidor de banco de dados.
 * Para um mecanismo do **Microsoft SQL Server** , você deve definir:
 
-   1. o nome DNS (ou endereço IP) definido no servidor de aplicativos para acessar o servidor de banco de dados: **DNS** ou **DNS\ `<instance>`**(modo de instância),
+   1. o nome DNS (ou endereço IP) definido no servidor de aplicativos para acessar o servidor de banco de dados: **DNS** ou **DNS\`<instance>`** (modo de instância),
    1. o método de autenticação usado para acessar o Microsoft SQL Server: **[!UICONTROL SQL Server authentication]** ou **[!UICONTROL Windows NT authentication]**.
 
       ![](assets/s_ncs_install_db_mssql_creation01.png)
@@ -132,17 +132,17 @@ A **[!UICONTROL Creation steps]** janela permite exibir e editar o script SQL us
 
 * Para um banco de dados Oracle, Microsoft SQL Server ou PostgreSQL, o administrador também pode definir os parâmetros **do** armazenamento a serem usados ao criar objetos de banco de dados.
 
-   Esses parâmetros recebem os nomes exatos do tablespace (aviso: diferencia maiúsculas de minúsculas). Eles são armazenados respectivamente no **[!UICONTROL Administration > Platform > Options]** nó nas seguintes opções:
+   Esses parâmetros recebem os nomes exatos do tablespace (aviso: diferencia maiúsculas de minúsculas). Eles são armazenados respectivamente no **[!UICONTROL Administration > Platform > Options]** nó nas seguintes opções (consulte [](../../installation/using/configuring-campaign-options.md#database)):
 
    * **WdbcOptions_TableSpaceUser**: tabelas de usuários com base em um schema
    * **WdbcOptions_TableSpaceIndex**: índice de tabelas de usuários com base em um schema
    * **WdbcOptions_TableSpaceWork**: tabelas de trabalho sem schema
    * **WdbcOptions_TableSpaceWorkIndex**: índice de tabelas de trabalho sem schema
 
-* Para um banco de dados Oracle, o usuário do Adobe Campaign deve ter acesso às bibliotecas Oracle, normalmente como membro do grupo de **desinstalação** .
+* Para um banco de dados Oracle, o usuário do Adobe Campaign deve ter acesso às bibliotecas do Oracle, normalmente como membro do grupo de **desinstalação** .
 * A **[!UICONTROL Set or change the administrator password]** opção permite que você insira a senha vinculada ao operador Adobe Campaign com direitos de administrador.
 
-   Recomendamos definir uma senha de administrador de conta Adobe Campaign para fins de segurança.
+   Recomendamos definir uma senha de administrador de conta da Adobe Campaign para fins de segurança.
 
 ### Etapa 6 - Criação do banco de dados {#step-6---creating-the-database}
 
@@ -230,10 +230,10 @@ A **[!UICONTROL Creation steps]** janela permite exibir e editar o script SQL us
 ![](assets/s_ncs_install_db_oracle_creation04.png)
 
 * Para bancos de dados Oracle, Microsoft SQL Server ou PostgreSQL, o administrador pode definir os parâmetros **de** armazenamento a serem usados ao criar objetos de banco de dados.
-* Para um banco de dados Oracle, o usuário Adobe Campaign deve ter acesso às bibliotecas Oracle, normalmente como membro do grupo de **desinstalação** .
+* Para um banco de dados Oracle, o usuário do Adobe Campaign deve ter acesso às bibliotecas do Oracle, normalmente como membro do grupo de **desinstalação** .
 * A **[!UICONTROL Set or change the administrator password]** opção permite que você insira a senha vinculada ao operador Adobe Campaign com direitos de administrador.
 
-   Recomendamos definir uma senha de administrador de conta Adobe Campaign para fins de segurança.
+   Recomendamos definir uma senha de administrador de conta da Adobe Campaign para fins de segurança.
 
 ### Step 5 - Creating the database {#step-5---creating-the-database}
 
