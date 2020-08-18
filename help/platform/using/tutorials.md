@@ -15,10 +15,10 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: bc54cef4c44be4c694e062f56685dbb09d2fcf8e
+source-git-commit: ea248639e9730c6bdd1090098866a094b80daebb
 workflow-type: tm+mt
 source-wordcount: '560'
-ht-degree: 92%
+ht-degree: 97%
 
 ---
 
@@ -34,7 +34,7 @@ Comece a usar o Adobe Campaign consultando nossos intuitivos guias passo a passo
 * [Integração de conteúdo dinâmico em um e-mail](https://docs.adobe.com/content/help/en/campaign-classic/using/integrating-with-adobe-experience-cloud/adobe-target/inserting-a-dynamic-image.html): descubra os conceitos básicos para começar a integração entre o Campaign Classic e o Target Standard.
 * [Gestão da capacidade de entrega](../../delivery/using/deliverability-key-points.md): conheça os conceitos e as práticas recomendadas relacionadas à capacidade de entrega, bem como as ferramentas oferecidas pelo Adobe Campaign Classic para otimizar o envio de suas entregas.
 * [Práticas recomendadas de entrega](../../delivery/using/delivery-best-practices.md): conheça as práticas recomendadas relacionadas ao planejamento de entrega e envio com o Adobe Campaign Classic.
-* [Execução de uma compilação]upgradehttps://helpx.adobe.com/campaign/kb/acc-build-upgrade.html: este guia apresenta as principais etapas e práticas recomendadas para executar uma atualização de compilação com o Campaign Classic.
+* [Execução de uma atualização de compilação](https://helpx.adobe.com/br/campaign/kb/acc-build-upgrade.html): este guia apresenta as principais etapas e práticas recomendadas para realizar uma atualização de compilação com o Campaign Classic.
 * Lista de [verificação de configuração de segurança](https://helpx.adobe.com/br/campaign/kb/acc-security.html): descubra elementos-chave para verificar a configuração de segurança e a proteção para a implantação no local
 
 Saiba mais sobre o Adobe Campaign verificando os seguintes casos de uso e exemplos:
