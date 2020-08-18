@@ -13,10 +13,10 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 2a5711c4478f8378c079fec4792ecbb95266ad4b
+source-git-commit: bc7ba0c26bd57a75c3dbeaec541844a3b1196ef3
 workflow-type: tm+mt
-source-wordcount: '7069'
-ht-degree: 98%
+source-wordcount: '7095'
+ht-degree: 97%
 
 ---
 
@@ -24,7 +24,6 @@ ht-degree: 98%
 # Atualizações de documentação{#documentation-updates}
 
 Esta página lista todos os novos recursos e atualizações de documentação por mês e versão do Campaign.
-
 
 Você também pode consultar as [Notas de versão do Adobe Campaign Classic](../../rn/using/latest-release.md) para obter mais atualizações.
 
@@ -56,6 +55,7 @@ Os vídeos passo a passo estão disponíveis nos seguintes tópicos:
 
 * [Como configurar um delivery contínuo](../../workflow/using/continuous-delivery.md)
 
+Foram adicionadas informações sobre as verificações e ações a serem executadas ao obter o erro &quot;Não foi possível resolver o nome do host&quot; após a conexão com o servidor FTP. [Leia mais](../../platform/using/sftp-server-usage.md)
 
 ## Julho de 2020 {#july-2020}
 
