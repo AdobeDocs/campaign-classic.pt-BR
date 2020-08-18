@@ -15,9 +15,9 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: e7de74feb61cc8f4b386a6ff86fc58b9c9e9ca1d
+source-git-commit: 890950463146fe0863d2809759eb142cb4bb1fff
 workflow-type: tm+mt
-source-wordcount: '3903'
+source-wordcount: '3927'
 ht-degree: 3%
 
 ---
@@ -25,11 +25,11 @@ ht-degree: 3%
 
 # Lista de opções do Campaign Classic{#configuring-campaign-options}
 
-O **[!UICONTROL Administration / Platform / Options]** nó permite configurar opções de Adobe Campaign.
+O **[!UICONTROL Administration / Platform / Options]** nó permite que você configure as opções do Adobe Campaign.
 
 >[!NOTE]
 >
->A modificação ou atualização das opções de Adobe Campaign pode ser executada somente por usuários especialistas.
+>A modificação ou atualização das opções do Adobe Campaign pode ser executada somente por usuários especialistas.
 
 Alguns deles são incorporados ao instalar a Campanha e outros podem ser adicionados manualmente quando necessário. As opções disponíveis variam de acordo com os pacotes instalados com sua instância.
 
@@ -53,7 +53,7 @@ Alguns deles são incorporados ao instalar a Campanha e outros podem ser adicion
   </tr> 
   <tr> 
    <td> <span class="uicontrol">DmRendering_cuid</span> <br /> </td> 
-   <td> Identificador de Relatórios do delivery. Entre em contato com o suporte para obter seu identificador.<br /> </td> 
+   <td> Identificador de relatórios do delivery. Entre em contato com o suporte para obter seu identificador.<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">DmRendering_SeedTargets</span> <br /> </td> 
@@ -64,7 +64,7 @@ Alguns deles são incorporados ao instalar a Campanha e outros podem ser adicion
    <td><p> Permite que o operador responsável pelo delivery confirme o envio, se um operador ou grupo de operadores específico for designado para iniciar um delivery nas propriedades do delivery.</p><p> Para fazer isso, ative a opção digitando "1" como valor. Para desativar essa opção, digite "0".</p><p> O processo de confirmação de delivery funcionará como padrão: somente o operador ou grupo de operadores designado ao delivery nas propriedades de delivery (ou um administrador) poderá confirmar e realizar o delivery. Consulte <a href="../../campaign/using/marketing-campaign-deliveries.md#starting-an-online-delivery">esta seção</a>.</p> </td> 
    <tr> 
    <td> <span class="uicontrol">Nms_DefaultRcpSchema</span> <br /> </td> 
-   <td> O Adobe Campaign usa uma variável global "Nms_DefaultRcpSchema" para dialogar com o banco de dados do recipient padrão (nms:recipient).<br /> O valor da opção deve corresponder ao nome do schema que corresponde à tabela do recipient externo.<br /> </td> 
+   <td> A Adobe Campaign usa uma variável global "Nms_DefaultRcpSchema" para dialogar com o banco de dados do recipient padrão (nms:recipient).<br /> O valor da opção deve corresponder ao nome do schema que corresponde à tabela do recipient externo.<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">NmsBilling_MainActionThreshold</span> <br /> </td> 
@@ -72,7 +72,7 @@ Alguns deles são incorporados ao instalar a Campanha e outros podem ser adicion
   </tr> 
   <tr> 
    <td> <span class="uicontrol">NmsBroadcast_DefaultProvider</span> <br /> </td> 
-   <td> provedor de serviço de roteamento padrão para os novos modelos.<br /> </td> 
+   <td> Provedor de serviço de roteamento padrão para os novos modelos.<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">NmsBroadcast_LogsPerTransac</span> <br /> </td> 
@@ -92,7 +92,7 @@ Alguns deles são incorporados ao instalar a Campanha e outros podem ser adicion
   </tr> 
   <tr> 
    <td> <span class="uicontrol">NmsBroadcast_RegexRules</span> <br /> </td> 
-   <td> expressões regulares para normalizar mensagens de delivery.<br /> </td> 
+   <td> Expressões regulares para normalizar mensagens de delivery.<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">NmsBroadcast_RemoveBlockList</span> <br /> </td> 
@@ -344,7 +344,7 @@ Alguns deles são incorporados ao instalar a Campanha e outros podem ser adicion
  </tbody> 
 </table>
 
-## Gerenciamento de Campanhas e fluxos de trabalho {#campaign-e-workflow-management}
+## Gerenciamento de campanhas e fluxos de trabalho {#campaign-e-workflow-management}
 
 <table> 
  <thead> 
@@ -633,21 +633,21 @@ Alguns deles são incorporados ao instalar a Campanha e outros podem ser adicion
     <li><p>1 - pg_cancel_backend: interrompe o processo de fluxo de trabalho e cancela o query no banco de dados<p></li>
     <li><p>2 - pg_cancel_backend: interrompe o processo de fluxo de trabalho e encerra o query no banco de dados<p></li></ul></td> 
   </tr>  
-  <tr> 
-   <td> <span class="uicontrol">WdbcOptions_TableSpaceIndex</span> <br /> </td> 
-   <td> Nome do tablespace destinado a conter os índices das tabelas padrão Adobe Campaign.<br /> </td> 
+    <tr> 
+   <td> <span class="uicontrol">WdbcOptions_TableSpaceUser</span> <br /> </td> 
+   <td> Nome do tablespace destinado a conter os dados das tabelas padrão Adobe Campaign.<br />Consulte <a href="../../installation/using/creating-and-configuring-the-database.md">Criação e configuração do banco de dados</a>.</td> 
   </tr> 
   <tr> 
-   <td> <span class="uicontrol">WdbcOptions_TableSpaceUser</span> <br /> </td> 
-   <td> Nome do tablespace destinado a conter os dados das tabelas Adobe Campaign padrão.<br /> </td> 
+   <td> <span class="uicontrol">WdbcOptions_TableSpaceIndex</span> <br /> </td> 
+   <td> Nome do tablespace destinado a conter os índices das tabelas padrão Adobe Campaign.<br />Consulte <a href="../../installation/using/creating-and-configuring-the-database.md">Criação e configuração do banco de dados</a>.</td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">WdbcOptions_TableSpaceWork</span> <br /> </td> 
-   <td> Nome do tablespace destinado a conter os dados das tabelas de trabalho do Adobe Campaign.<br /> </td> 
+   <td> Nome do tablespace destinado a conter os dados das tabelas de trabalho da Adobe Campaign.<br />Consulte <a href="../../installation/using/creating-and-configuring-the-database.md">Criação e configuração do banco de dados</a>.</td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">WdbcOptions_TableSpaceWorkIndex</span> <br /> </td> 
-   <td> Nome do tablespace destinado a conter os índices das tabelas de trabalho Adobe Campaign.<br /> </td> 
+   <td> Nome do tablespace destinado a conter os índices das tabelas de trabalho da Adobe Campaign.<br />Consulte <a href="../../installation/using/creating-and-configuring-the-database.md">Criação e configuração do banco de dados</a>.</td> 
   </tr> 
     <tr> 
    <td> <span class="uicontrol">WdbcOptions_TempDbName</span> <br /> </td> 
@@ -655,7 +655,7 @@ Alguns deles são incorporados ao instalar a Campanha e outros podem ser adicion
   </tr> 
   <tr> 
    <td> <span class="uicontrol">WdbcTimeZone</span> <br /> </td> 
-   <td> Fuso horário da instância de Adobe Campaign. Consulte <a href="../../installation/using/time-zone-management.md#configuration" target="_blank">Configuração</a>.<br /> </td> 
+   <td> Fuso horário da instância do Adobe Campaign. Consulte <a href="../../installation/using/time-zone-management.md#configuration" target="_blank">Configuração</a>.<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">WdbcUseNChar</span> <br /> </td> 
@@ -717,7 +717,7 @@ Alguns deles são incorporados ao instalar a Campanha e outros podem ser adicion
  <tbody> 
   <tr> 
    <td> <span class="uicontrol">AEMResourceTypeFilter</span> <br /> </td> 
-   <td> Tipos de recursos do AEM que podem ser usados no Adobe Campaign. Os valores devem ser separados por vírgulas.<br /> </td> 
+   <td> Tipos de recursos AEM que podem ser usados no Adobe Campaign. Os valores devem ser separados por vírgulas.<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">nmsPipeline_config</span> <br /> </td> 
@@ -725,7 +725,7 @@ Alguns deles são incorporados ao instalar a Campanha e outros podem ser adicion
   </tr> 
   <tr> 
    <td> <span class="uicontrol">LASTIMPORT_&lt;%=instance.internalName%&gt;_&lt;%=activityName%&gt;</span> <br /> </td> 
-   <td> Essa opção é usada ao importar dados de um sistema de terceiros por meio de um conector CRM. Habilitar a opção   permite coletar apenas objetos modificados desde a última importação. Essa opção deve ser criada manualmente e preenchida como a seguir: 
+   <td> Essa opção é usada ao importar dados de um sistema de terceiros por meio de um conector CRM. Habilitar a opção  permite coletar apenas objetos modificados desde a última importação. Essa opção deve ser criada manualmente e preenchida como a seguir: 
     <ul> 
      <li> <p> <span class="uicontrol">Nome</span> interno: LASTIMPORT_&lt;%=instance.internalName%&gt;_&lt;%=activityName%&gt;</p> </li> 
      <li> <p> <span class="uicontrol">Valor (campo)</span> : data da última importação, com o formato aaaa/MM/dd hh:mm:ss. </p> </li> 
@@ -741,11 +741,11 @@ Alguns deles são incorporados ao instalar a Campanha e outros podem ser adicion
   </tr> 
   <tr> 
    <td> <span class="uicontrol">AAM_DataSourceId</span> <br /> </td> 
-   <td> Opção usada para a integração com o Adobe Audience Manager.<br /> </td> 
+   <td> Opção usada para a integração com a Adobe Audience Manager.<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">AAM_DestinationId</span> <br /> </td> 
-   <td> Opção usada para a integração com o Adobe Audience Manager.<br /> </td> 
+   <td> Opção usada para a integração com a Adobe Audience Manager.<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">WdbcCapabilities_Teradata</span> <br /> </td> 
@@ -807,7 +807,7 @@ Alguns deles são incorporados ao instalar a Campanha e outros podem ser adicion
  <tbody> 
   <tr> 
    <td> <span class="uicontrol">NmsExecutionInstanceId</span> <br /> </td> 
-   <td> Identificador de Instância de execução.<br /> </td> 
+   <td> Identificador de instância de execução.<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">NmsServer_CustomerId</span> <br /> </td> 
@@ -1002,7 +1002,7 @@ Alguns deles são incorporados ao instalar a Campanha e outros podem ser adicion
   </tr> 
   <tr> 
    <td> <span class="uicontrol">XtkLdap_RightsMask</span> <br /> </td> 
-   <td> Expressão para extrair os nomes dos direitos de Adobe Campaign das autorizações LDAP.<br /> </td> 
+   <td> Expressão para extrair os nomes dos direitos Adobe Campaign das autorizações LDAP.<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">XtkLdap_RightsScope</span> <br /> </td> 
@@ -1043,7 +1043,7 @@ Alguns deles são incorporados ao instalar a Campanha e outros podem ser adicion
   </tr> 
   <tr> 
    <td> <span class="uicontrol">XtkWebForm_ServersURLs</span> <br /> </td> 
-   <td> lista de endereço personalizado dos servidores a serem contatados para invalidação de formulário da Web (modo 'outros servidores').<br /> </td> 
+   <td> Lista de endereço personalizado dos servidores a serem contatados para invalidação de formulário da Web (modo 'outros servidores').<br /> </td> 
   </tr> 
  </tbody> 
 </table>
