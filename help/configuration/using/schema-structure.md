@@ -15,7 +15,10 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: dbff132e3bf88c408838f91e50e4b047947ee32a
+source-git-commit: 8e4fc977daf9039ee8587bf505d7406fd863e68b
+workflow-type: tm+mt
+source-wordcount: '1566'
+ht-degree: 12%
 
 ---
 
@@ -65,7 +68,7 @@ A estrutura básica de um `<srcschema>` é a seguinte:
 </srcSchema>
 ```
 
-The XML document of a data schema must contain the **`<srcschema>`** root element with the **name** and **namespace** attributes to populate the schema name and its namespace.
+O documento XML de um schema de dados deve conter o **`<srcschema>`** elemento raiz com os atributos **name** e **namespace** para preencher o nome e o namespace do schema.
 
 ```
 <srcSchema name="schema_name" namespace="namespace">
@@ -73,7 +76,7 @@ The XML document of a data schema must contain the **`<srcschema>`** root elemen
 </srcSchema>
 ```
 
-Use o seguinte conteúdo XML para ilustrar a estrutura de um esquema de dados:
+Use o seguinte conteúdo XML para ilustrar a estrutura de um schema de dados:
 
 ```
 <recipient email="John.doe@aol.com" created="2009/03/12" gender="1"> 
@@ -81,7 +84,7 @@ Use o seguinte conteúdo XML para ilustrar a estrutura de um esquema de dados:
 </recipient>
 ```
 
-Com o esquema de dados correspondente:
+Com seu schema de dados correspondente:
 
 ```
 <srcSchema name="recipient" namespace="cus">
@@ -97,6 +100,7 @@ Com o esquema de dados correspondente:
 ```
 
 ## Descrição {#description}
+				
 
 O ponto de entrada do schema é seu elemento principal. É fácil identificar porque ele tem o mesmo nome do schema e deve se originar do elemento raiz. A descrição do conteúdo começa com esse elemento.
 
@@ -106,9 +110,9 @@ Em nosso exemplo, o elemento principal é representado pela seguinte linha:
 <element name="recipient">
 ```
 
-Os elementos **`<attribute>`** e **`<element>`** que seguem o elemento principal permitem definir os locais e nomes dos itens de dados na estrutura XML.
+Os elementos **`<attribute>`** e **`<element>`** que seguem o elemento principal permitem que você defina os locais e nomes dos itens de dados na estrutura XML.
 
-Em nosso esquema de amostra, eles são:
+Em nosso schema de amostra, eles são:
 
 ```
 <attribute name="email"/>
@@ -129,7 +133,7 @@ Devem ser respeitadas as seguintes regras:
 
 * Somente **`<element>`** elementos podem conter **`<attribute>`** elementos e **`<element>`** elementos na estrutura XML.
 * Um **`<attribute>`** elemento deve ter um nome exclusivo em um **`<element>`**.
-* Recomenda-se o uso de**`<elements>`** em sequências de dados de várias linhas.
+* Recomenda-se o uso de sequências de dados **`<elements>`** em várias linhas.
 
 ## Tipos de dados {#data-types}
 
@@ -139,15 +143,15 @@ Uma lista detalhada está disponível na descrição do [`<attribute>` elemento]
 
 Quando esse atributo não é preenchido, a **string** é o tipo de dados padrão, a menos que o elemento contenha elementos filho. Se isso acontecer, será usado apenas para estruturar os elementos hierarquicamente (elemento no nosso exemplo **`<location>`** ).
 
-Os seguintes tipos de dados são suportados em esquemas:
+Os seguintes tipos de dados são suportados em schemas:
 
 * **string**: sequência de caracteres. Exemplos: um nome, uma cidade, etc.
 
-   O tamanho pode ser especificado pelo atributo **length** (opcional, valor padrão &quot;255&quot;).
+   O tamanho pode ser especificado por meio do atributo **length** (opcional, valor padrão &quot;255&quot;).
 
 * **booleano**: Campo booleano. Exemplo de valores possíveis: true/false, 0/1, sim/não, etc.
 * **byte**, **curto**, **longo**: inteiros (1 byte, 2 bytes, 4 bytes). Exemplos: uma idade, um número de conta, um número de pontos, etc.
-* **duplo**: número de ponto flutuante de precisão dupla. Exemplos: um preço, uma taxa, etc.
+* **duplo**: Número de ponto flutuante de precisão do duplo. Exemplos: um preço, uma taxa, etc.
 * **data**, **datetime**: datas e datas + horas. Exemplos: data de nascimento, data de compra, etc.
 * **datetimenotz**: data + hora sem dados de fuso horário.
 * **calendário**: durações. Exemplo: senioridade.
@@ -158,7 +162,7 @@ Os seguintes tipos de dados são suportados em esquemas:
    >
    >Para conter um campo **uuid** em mecanismos diferentes do Microsoft SQL Server, a função &quot;newuuid()&quot; deve ser adicionada e concluída com seu valor padrão.
 
-Este é nosso exemplo de esquema com os tipos inseridos:
+Este é nosso exemplo de schema com os tipos inseridos:
 
 ```
 <srcSchema name="recipient" namespace="cus">
@@ -175,7 +179,7 @@ Este é nosso exemplo de esquema com os tipos inseridos:
 
 ### Mapeamento dos tipos de dados do Adobe Campaign/DBMS {#mapping-the-types-of-adobe-campaign-dbms-data}
 
-A tabela abaixo lista os mapeamentos para os tipos de dados gerados pelo Adobe Campaign para os diferentes sistemas de gerenciamento de banco de dados.
+A tabela abaixo lista os mapeamentos para os tipos de dados gerados pela Adobe Campaign para os diferentes sistemas de gerenciamento de banco de dados.
 
 <table> 
  <tbody> 
@@ -221,7 +225,7 @@ A tabela abaixo lista os mapeamentos para os tipos de dados gerados pelo Adobe C
   </tr> 
   <tr> 
    <td> Duplo<br /> </td> 
-   <td> PRECISÃO DUPLA<br /> </td> 
+   <td> PRECISÃO DO duplo<br /> </td> 
    <td> FLUTUAÇÃO<br /> </td> 
    <td> FLUTUAÇÃO<br /> </td> 
    <td> DOUBLE<br /> </td> 
@@ -247,37 +251,37 @@ A tabela abaixo lista os mapeamentos para os tipos de dados gerados pelo Adobe C
    <td> Data<br /> </td> 
    <td> DATE<br /> </td> 
    <td> DATE<br /> </td> 
-   <td> CARIMBO DE DATA E HORA<br /> </td> 
+   <td> TIMESTAMP<br /> </td> 
    <td> DATE<br /> </td> 
-   <td> DATA E HORA<br /> </td> 
+   <td> DATETIME<br /> </td> 
   </tr> 
   <tr> 
-   <td> Hora<br /> </td> 
-   <td> TEMPO<br /> </td> 
+   <td> Time<br /> </td> 
+   <td> TIME<br /> </td> 
    <td> FLUTUAÇÃO<br /> </td> 
-   <td> TEMPO<br /> </td> 
-   <td> TEMPO<br /> </td> 
+   <td> TIME<br /> </td> 
+   <td> TIME<br /> </td> 
    <td> FLUTUAÇÃO<br /> </td> 
   </tr> 
   <tr> 
    <td> Data e hora<br /> </td> 
    <td> TIMESTAMPING<br /> </td> 
    <td> DATE<br /> </td> 
-   <td> CARIMBO DE DATA E HORA<br /> </td> 
-   <td> CARIMBO DE DATA E HORA<br /> </td> 
+   <td> TIMESTAMP<br /> </td> 
+   <td> TIMESTAMP<br /> </td> 
    <td> MS SQL &lt; 2008: DATETIME<br /> MS SQL &gt;= 2012: DATETIMEOFFSET<br /> </td> 
   </tr> 
   <tr> 
    <td> Datetimenotz<br /> </td> 
    <td> TIMESTAMPING<br /> </td> 
    <td> DATE<br /> </td> 
-   <td> CARIMBO DE DATA E HORA<br /> </td> 
-   <td> CARIMBO DE DATA E HORA<br /> </td> 
+   <td> TIMESTAMP<br /> </td> 
+   <td> TIMESTAMP<br /> </td> 
    <td> MS SQL &lt; 2008: DATETIME<br /> MS SQL &gt;= 2012: DATETIME2<br /> </td> 
   </tr> 
   <tr> 
    <td> Duração<br /> </td> 
-   <td> PRECISÃO DUPLA<br /> </td> 
+   <td> PRECISÃO DO duplo<br /> </td> 
    <td> FLUTUAÇÃO<br /> </td> 
    <td> FLUTUAÇÃO<br /> </td> 
    <td> DOUBLE<br /> </td> 
@@ -304,7 +308,7 @@ A tabela abaixo lista os mapeamentos para os tipos de dados gerados pelo Adobe C
 
 ## Propriedades {#properties}
 
-Os elementos **`<elements>`** e **`<attributes>`** do esquema de dados podem ser enriquecidos com várias propriedades. Você pode preencher um rótulo para descrever o elemento atual.
+Os elementos **`<elements>`** e os elementos **`<attributes>`** do schema de dados podem ser enriquecidos com várias propriedades. Você pode preencher um rótulo para descrever o elemento atual.
 
 ### Etiquetas e descrições {#labels-and-descriptions}
 
@@ -338,11 +342,11 @@ Os elementos **`<elements>`** e **`<attributes>`** do esquema de dados podem ser
    <attribute name="email" type="string" length="80" label="Email" desc="Email of recipient"/>
    ```
 
-### Default values {#default-values}
+### Valores padrão {#default-values}
 
 A propriedade **padrão** permite definir uma expressão que retorna um valor padrão na criação do conteúdo.
 
-O valor deve ser uma expressão compatível com o idioma XPath. Para obter mais informações, consulte [Referência ao XPath](../../configuration/using/schema-structure.md#referencing-with-xpath).
+O valor deve ser uma expressão compatível com o idioma XPath. Para obter mais informações, consulte [Referenciando com XPath](../../configuration/using/schema-structure.md#referencing-with-xpath).
 
 **Exemplo**:
 
@@ -357,19 +361,19 @@ O valor deve ser uma expressão compatível com o idioma XPath. Para obter mais 
 
 Para vincular um valor padrão a um campo, é possível usar a variável `<default>  or  <sqldefault>   field.  </sqldefault> </default>`
 
-`<default>` : permite preencher previamente o campo com um valor padrão ao criar entidades. O valor não será um valor SQL padrão.
+`<default>` : permite que você preencha previamente o campo com um valor padrão ao criar entidades. O valor não será um valor SQL padrão.
 
-`<sqldefault>` : permite que você tenha um valor adicionado ao criar um campo. Esse valor aparece como um resultado SQL. Durante uma atualização de esquema, somente os novos registros serão afetados por esse valor.
+`<sqldefault>` : permite que você tenha um valor adicionado ao criar um campo. Esse valor é exibido como um resultado SQL. Durante uma atualização de schema, somente os novos registros serão afetados por esse valor.
 
 ### Enumerações {#enumerations}
 
-#### Enumeração gratuita {#free-enumeration}
+#### Lista discriminada gratuita {#free-enumeration}
 
-A propriedade **userEnum** permite definir uma enumeração gratuita para memorizar e exibir os valores inseridos por meio desse campo. A sintaxe é a seguinte:
+A propriedade **userEnum** permite definir uma lista discriminada gratuita para memorizar e exibir os valores inseridos por meio desse campo. A sintaxe é a seguinte:
 
-**userEnum=&quot;nome da enumeração&quot;**
+**userEnum=&quot;nome da lista discriminada&quot;**
 
-O nome dado à enumeração pode ser escolhido livremente e compartilhado com outros campos.
+O nome dado à lista discriminada pode ser escolhido livremente e compartilhado com outros campos.
 
 Esses valores são mostrados em uma lista suspensa do formulário de entrada:
 
@@ -377,19 +381,19 @@ Esses valores são mostrados em uma lista suspensa do formulário de entrada:
 
 >[!NOTE]
 >
->No console do cliente Adobe Campaign, o **[!UICONTROL Administration > Enumerations]** nó é usado para gerenciar enumerações.
+>No console do cliente Adobe Campaign, o **[!UICONTROL Administration > Enumerations]** nó é usado para gerenciar o lista discriminada.
 
-#### Definir enumeração {#set-enumeration}
+#### Definir lista discriminada {#set-enumeration}
 
-A propriedade **enum** permite definir uma enumeração fixa usada quando a lista de valores possíveis é conhecida antecipadamente.
+A propriedade **enum** permite definir uma lista discriminada fixa usada quando a lista de possíveis valores é conhecida antecipadamente.
 
-O atributo **enum** se refere à definição de uma classe de enumeração preenchida no esquema fora do elemento principal.
+O atributo **enum** se refere à definição de uma classe de lista discriminada preenchida no schema fora do elemento principal.
 
-As enumerações permitem que o usuário selecione um valor em uma lista suspensa em vez de inserir o valor em um campo de entrada regular:
+As listas discriminadas permitem que o usuário selecione um valor de uma lista suspensa em vez de inserir o valor em um campo de entrada regular:
 
 ![](assets/d_ncs_integration_schema_enum.png)
 
-Exemplo de uma declaração de enumeração no esquema de dados:
+Exemplo de uma declaração de lista discriminada no schema de dados:
 
 ```
 <enumeration name="gender" basetype="byte" default="0">    
@@ -399,29 +403,29 @@ Exemplo de uma declaração de enumeração no esquema de dados:
 </enumeration>
 ```
 
-Uma enumeração é declarada fora do elemento principal por meio do **`<enumeration>`** elemento.
+Uma lista discriminada é declarada fora do elemento principal por meio do **`<enumeration>`** elemento .
 
-As propriedades de enumeração são as seguintes:
+As propriedades da lista discriminada são as seguintes:
 
 * **baseType**: tipo de dados associados aos valores,
-* **rótulo**: descrição da enumeração,
-* **name**: nome da enumeração,
-* **padrão**: valor padrão da enumeração.
+* **rótulo**: descrição da lista discriminada,
+* **name**: nome da lista discriminada,
+* **padrão**: valor padrão da lista discriminada.
 
-Os valores de enumeração são declarados no **`<value>`** elemento com os seguintes atributos:
+Os valores de lista discriminada são declarados no **`<value>`** elemento com os seguintes atributos:
 
 * **name**: nome do valor armazenado internamente,
-* **rótulo**: rótulo exibido pela interface gráfica.
+* **rótulo**: rótulo exibido por meio da interface gráfica.
 
-#### enumeração dbenum {#dbenum-enumeration}
+#### lista discriminada dbenum {#dbenum-enumeration}
 
-* A propriedade **dbenum** permite definir uma enumeração cujas propriedades são semelhantes às da propriedade **enum** .
+* A propriedade **dbenum** permite definir uma lista discriminada cujas propriedades são semelhantes às da propriedade **enum** .
 
-   No entanto, o atributo **name** não armazena o valor internamente, ele armazena um código que permite estender as tabelas em questão sem modificar seu esquema.
+   No entanto, o atributo **name** não armazena o valor internamente, ele armazena um código que permite estender as tabelas em questão sem modificar seu schema.
 
    Os valores são definidos pelo **[!UICONTROL Administration>Enumerations]** nó.
 
-   Essa enumeração é usada para especificar a natureza das campanhas, por exemplo.
+   Essa lista discriminada é usada para especificar a natureza das campanhas, por exemplo.
 
    ![](assets/d_ncs_configuration_schema_dbenum.png)
 
@@ -454,7 +458,7 @@ Uma coleção é uma lista de elementos com o mesmo nome e o mesmo nível hierá
 
 O atributo **não vinculado** com o valor &quot;true&quot; permite preencher um elemento de coleção.
 
-**Exemplo**: definição do elemento de **`<group>`** coleção no esquema.
+**Exemplo**: definição do elemento de **`<group>`** coleção no schema.
 
 ```
 <element name="group" unbound="true" label="List of groups">
@@ -479,11 +483,11 @@ Os elementos são designados pelo nome e os atributos são designados pelo nome 
 
 **Exemplo**:
 
-* **@email**: seleciona o email,
+* **@email**: seleciona o e-mail,
 * **location/@city**: seleciona o atributo &quot;city&quot; sob o **`<location>`** elemento
 * **../@email**: seleciona o endereço de email do elemento pai do elemento atual
-* **grupo`[1]/@label`**: seleciona o atributo &quot;label&quot; que é o filho do primeiro elemento de **`<group>`**coleção
-* **grupo`[@label='test1']`**: seleciona o atributo &quot;label&quot; que é o filho do **`<group>`**elemento e contém o valor &quot;test1&quot;
+* **grupo`[1]/@label`**: seleciona o atributo &quot;label&quot; que é o filho do primeiro elemento de **`<group>`** coleção
+* **grupo`[@label='test1']`**: seleciona o atributo &quot;label&quot; que é o filho do **`<group>`** elemento e contém o valor &quot;test1&quot;
 
 >[!NOTE]
 >
@@ -491,6 +495,7 @@ Os elementos são designados pelo nome e os atributos são designados pelo nome 
 >
 >* **location/@city** não é válido; use **`[location/@city]`**
 >* **`[@email]`** e **@email** são equivalentes
+
 >
 
 
@@ -502,7 +507,7 @@ Também é possível definir expressões complexas, como as seguintes operaçõe
 
 Funções de alto nível foram adicionadas às expressões para enriquecer o potencial desse idioma.
 
-Você pode acessar a lista de funções disponíveis por meio de qualquer editor de expressões no console do cliente Adobe Campaign:
+Você pode acessar a lista de funções disponíveis por meio de qualquer editor de expressão no console do cliente Adobe Campaign:
 
 ![](assets/d_ncs_integration_schema_function.png)
 
@@ -514,11 +519,11 @@ Você pode acessar a lista de funções disponíveis por meio de qualquer editor
 
 ## Criação de uma string por meio da string de computação {#building-a-string-via-the-compute-string}
 
-Uma string **** Compute é uma expressão XPath usada para construir uma string que representa um registro em uma tabela associada ao esquema. **A string** de computação é usada principalmente na interface gráfica para exibir o rótulo de um registro selecionado.
+Uma string **** Compute é uma expressão XPath usada para construir uma string que representa um registro em uma tabela associada ao schema. **A string** de computação é usada principalmente na interface gráfica para exibir o rótulo de um registro selecionado.
 
-A string **** Compute é definida pelo **`<compute-string>`** elemento abaixo do elemento principal do esquema de dados. Um atributo **expr** contém uma expressão XPath para calcular a exibição.
+A string **** Compute é definida pelo **`<compute-string>`** elemento abaixo do elemento principal do schema de dados. Um atributo **expr** contém uma expressão XPath para calcular a exibição.
 
-**Exemplo**: compute a string da tabela de destinatários.
+**Exemplo**: compute a string da tabela de recipient.
 
 ```
 <srcSchema name="recipient" namespace="nms">  
@@ -529,9 +534,9 @@ A string **** Compute é definida pelo **`<compute-string>`** elemento abaixo do
 </srcSchema>
 ```
 
-Resultado da string calculada para um destinatário: **Doe John (john.doe@aol.com)**
+Resultado da string calculada para um recipient: **Doe John (john.doe@aol.com)**
 
 >[!NOTE]
 >
->Se o esquema não contiver uma sequência de caracteres Compute, uma sequência de caracteres Compute será preenchida por padrão com os valores da chave primária do esquema.
+>Se o schema não contiver uma string de Compute, uma string de Compute será preenchida por padrão com os valores da chave primária do schema.
 
