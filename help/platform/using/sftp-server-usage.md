@@ -1,8 +1,6 @@
 ---
-title: Uso do servidor SFTP
-seo-title: Uso do servidor SFTP
-description: Uso do servidor SFTP
-seo-description: null
+title: Práticas recomendadas e solução de problemas do servidor SFTP
+description: Saiba mais sobre as práticas recomendadas e a solução de problemas do servidor SFTP.
 page-status-flag: never-activated
 uuid: 5281058d-91bd-4f98-835d-1d46dc7b8b1f
 contentOwner: sauviat
@@ -15,15 +13,15 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: fecfff477b0750782c87c017a15e306acac4c61d
+source-git-commit: ee4addc88c6169603122259437d5cb0362851aa6
 workflow-type: tm+mt
-source-wordcount: '732'
-ht-degree: 89%
+source-wordcount: '1003'
+ht-degree: 63%
 
 ---
 
 
-# Uso do servidor SFTP{#sftp-server-usage}
+# Práticas recomendadas e solução de problemas do servidor SFTP {#sftp-server-usage}
 
 ## Práticas recomendadas do servidor SFTP {#sftp-server-best-practices}
 
@@ -56,7 +54,7 @@ Para evitar esses problemas, a Adobe recomenda seguir as práticas recomendadas 
 >
 >Se você usar o seu próprio servidor SFTP, certifique-se de seguir as recomendações o máximo possível mencionadas acima.
 
-## Solução de problemas do servidor SFTP {#sftp-server-troubleshooting}
+## Problemas de conexão com o servidor SFTP hospedado no Adobe {#sftp-server-troubleshooting}
 
 A seção abaixo lista as informações para verificar e fornecer ao suporte da Adobe por meio de um [tíquete de suporte](https://support.neolane.net) ao encontrar problemas de conexão com os servidores SFTP hospedados pela Adobe.
 
@@ -92,8 +90,54 @@ A seção abaixo lista as informações para verificar e fornecer ao suporte da 
 
    Se a porta não for aberta, certifique-se de abrir as conexões de saída em seu lado e tente novamente. Se ainda houver problemas de conexão, compartilhe o resultado do comando com o suporte da Adobe.
 
-1. Verifique se o IP público do qual você está tentando iniciar a conexão SFTP é aquele fornecido ao suporte da Adobe para a lista de permissões.
+1. Verifique se o IP público a partir do qual você está tentando iniciar a conexão SFTP é aquele fornecido ao Suporte ao Adobe para a lista de permissões.
 1. Se você usa uma autenticação baseada em senha, a senha pode ter expirado (as senhas têm um período de validade de 90 dias). Portanto, recomendamos usar uma autenticação baseada em chave (consulte [Práticas recomendadas para o servidor SFTP](#sftp-server-best-practices)).
 1. Se você estiver usando uma autenticação baseada em chave, verifique se a chave usada é a mesma fornecida ao suporte da Adobe para a configuração de instância.
 1. Se você estiver usando FileZilla ou uma ferramenta de FTP equivalente, forneça os detalhes dos logs de conexão no ticket de suporte.
 
+## Erro &quot;Não foi possível resolver o nome do host&quot;, erro de upload no cURL
+
+Esta seção fornece informações sobre as verificações e ações a serem executadas ao obter o &quot;Não foi possível resolver o nome do host&quot;. após conectar-se ao servidor FTP a partir do Campaign Classic.
+
+O journal de fluxo de trabalho mostra os seguintes registros:
+
+```
+16/05/2016 12:49:03    fileTransfer    Upload error in cURL
+16/05/2016 12:49:03    fileTransfer    Couldn't resolve host name
+16/05/2016 12:49:03    fileTransfer    Couldn't resolve host name
+16/05/2016 12:49:03    fileTransfer    Starting transfer of '/usr/local/neolane/nl6/var/williamreed/export/Recipients' to 'ftp://213.253.61.250/Recipients'
+16/05/2016 12:49:03    fileTransfer    1 file(s) to transfer
+```
+
+Este erro ocorre ao tentar conectar o servidor FTP a partir de um fluxo de trabalho e baixar os arquivos do servidor, enquanto você ainda pode se conectar via FTP usando FileZilla ou WinSCP.
+
+Esse erro indica que o nome de domínio do servidor FTP não pôde ser resolvido corretamente. Para solucionar problemas, faça o seguinte:
+
+1. Solução de problemas de configuração **do servidor** DNS:
+
+   1. Verifique se o nome do servidor foi adicionado ao servidor DNS local.
+   1. Se sim, execute o seguinte comando no servidor Adobe Campaign para obter o endereço IP:
+
+   `nslookup <server domain name>`
+
+   Isso confirma que o servidor FTP está funcionando e acessível no servidor de aplicativos Adobe Campaign.
+
+1. Solução de problemas de registros **de sessão**:
+
+   1. No fluxo de trabalho, clique com o duplo do mouse na atividade de transferência [de](../../workflow/using/file-transfer.md) arquivos.
+   1. Vá para a **[!UICONTROL File Transfer]** guia e clique em **[!UICONTROL Advanced Parameters]**.
+   1. Marque a opção **[!UICONTROL Display the session logs]**.
+
+   ![](assets/sftp-error-display-logs.png)
+
+   1. Vá para a Auditoria de fluxo de trabalho e verifique se os registros mostram o erro &quot;Não foi possível resolver o nome do host&quot;.
+
+   Se o servidor SFTP estiver hospedado pelo Adobe, verifique se o IP foi adicionado à lista de permissões entrando em contato com o Atendimento ao cliente.
+
+   Caso contrário, valide:
+
+   * A senha não contém &#39;@&#39;. A conexão falhará se houver &#39;@&#39; na senha.
+   * Não há problemas de firewall que possam impedir a comunicação entre o servidor de aplicativos Adobe Campaign e o servidor SFTP.
+   * Execute comandos tracert e telnet do servidor de campanha para o sftp para ver se há problemas de conexão.
+   * Não há problemas de protocolo de comunicação.
+   * Porta aberta.
