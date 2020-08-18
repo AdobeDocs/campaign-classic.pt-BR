@@ -13,10 +13,10 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: ee4addc88c6169603122259437d5cb0362851aa6
+source-git-commit: bc7ba0c26bd57a75c3dbeaec541844a3b1196ef3
 workflow-type: tm+mt
-source-wordcount: '1003'
-ht-degree: 63%
+source-wordcount: '999'
+ht-degree: 64%
 
 ---
 
@@ -95,9 +95,9 @@ A seção abaixo lista as informações para verificar e fornecer ao suporte da 
 1. Se você estiver usando uma autenticação baseada em chave, verifique se a chave usada é a mesma fornecida ao suporte da Adobe para a configuração de instância.
 1. Se você estiver usando FileZilla ou uma ferramenta de FTP equivalente, forneça os detalhes dos logs de conexão no ticket de suporte.
 
-## Erro &quot;Não foi possível resolver o nome do host&quot;, erro de upload no cURL
+## Erro &quot;Não foi possível resolver o nome do host&quot;
 
-Esta seção fornece informações sobre as verificações e ações a serem executadas ao obter o &quot;Não foi possível resolver o nome do host&quot;. após conectar-se ao servidor FTP a partir do Campaign Classic.
+Esta seção fornece informações sobre as verificações e ações a serem executadas ao obter o erro &quot;Não foi possível resolver o nome do host&quot; após a conexão com o servidor FTP a partir do Campaign Classic.
 
 O journal de fluxo de trabalho mostra os seguintes registros:
 
