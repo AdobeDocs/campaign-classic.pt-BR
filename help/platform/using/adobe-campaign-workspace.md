@@ -14,8 +14,11 @@ discoiquuid: 2f66152b-4d4a-40b8-a1bb-5b97c5410882
 index: y
 internal: n
 snippet: y
-translation-type: ht
-source-git-commit: 14e67ca7f57d39e6939d6ff3479aa897674b18dc
+translation-type: tm+mt
+source-git-commit: 11a6ddd275dc8482e82f163abc14cacaf0281dff
+workflow-type: tm+mt
+source-wordcount: '2165'
+ht-degree: 100%
 
 ---
 
@@ -207,8 +210,7 @@ Outra maneira de adicionar colunas, por exemplo, se você quiser exibir dados qu
    >
    >Use o campo **Search** para executar uma pesquisa nos campos disponíveis. Para obter mais informações, consulte [Classificar uma lista](#sorting-a-list).
    >
-   >Os campos são identificados por ícones específicos: SQL fields, linked tables, calculated fields, etc. Para cada campo selecionado, a descrição é exibida abaixo da lista de campos disponíveis.
-   [Configuração de listas](#configuring-lists).
+   >Os campos são identificados por ícones específicos: SQL fields, linked tables, calculated fields, etc. Para cada campo selecionado, a descrição é exibida abaixo da lista de campos disponíveis. [Configuração de listas](#configuring-lists).
    >
    >Também é possível classificar e filtrar dados. Consulte [Opções de filtro](../../platform/using/filtering-options.md).
 
