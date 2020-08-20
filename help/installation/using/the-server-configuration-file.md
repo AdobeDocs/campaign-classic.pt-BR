@@ -15,10 +15,10 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: e7de74feb61cc8f4b386a6ff86fc58b9c9e9ca1d
+source-git-commit: 3b752b283a14bc75954fe46da5a21970c1e17fa1
 workflow-type: tm+mt
 source-wordcount: '7859'
-ht-degree: 6%
+ht-degree: 8%
 
 ---
 
@@ -29,7 +29,7 @@ A configuração geral do Adobe Campaign é definida no arquivo **serverConf.xml
 
 >[!NOTE]
 >
->As configurações do servidor só podem ser executadas pela Adobe para implantações hospedadas pela Adobe. Para saber mais sobre as diferentes implantações, consulte a seção Modelos [de](../../installation/using/hosting-models.md) hospedagem ou [este artigo](https://helpx.adobe.com/br/campaign/kb/acc-on-prem-vs-hosted.html). As etapas de instalação e configuração para modelos hospedados e híbridos são apresentadas nesta [seção](../../installation/using/hosted-model.md).
+>As configurações do servidor só podem ser executadas por Adobe para implantações hospedadas pelo Adobe. Para saber mais sobre as diferentes implantações, consulte a seção Modelos [de](../../installation/using/hosting-models.md) hospedagem ou [este artigo](https://helpx.adobe.com/br/campaign/kb/acc-on-prem-vs-hosted.html). As etapas de instalação e configuração para modelos hospedados e híbridos são apresentadas nesta [seção](../../installation/using/hosted-model.md).
 
 Os primeiros parâmetros estão dentro do nó **compartilhado** . Eles estão relacionados à instância. Eles são potencialmente usados por todos os comandos nlserver (nlserver web, nlserver wfserver etc.). As outras seções estão relacionadas a um subcomando nlserver específico.
 
@@ -271,7 +271,7 @@ Estes são os diferentes parâmetros do nó **dataStore > proxyAdjust** . Os URL
   </tr> 
   <tr> 
    <td> urlRegEx<br /> </td> 
-   <td> expressão regular para corresponder a URLs. Ex: http://server\.lan\.net.*<br /> </td> 
+   <td> Expressão regular para corresponder a URLs. Ex: http://server\.lan\.net.*<br /> </td> 
    <td> Cadeia de caracteres<br /> </td> 
   </tr> 
  </tbody> 
@@ -314,13 +314,13 @@ No nó **dataStore > dataSource > dbcnx** , defina as configurações de conexã
  <tbody> 
   <tr> 
    <td> NChar<br /> </td> 
-   <td> armazenamento Unicode<br /> </td> 
+   <td> Armazenamento Unicode<br /> </td> 
    <td> Booleano<br /> </td> 
    <td> </td> 
   </tr> 
   <tr> 
    <td> dbSchema<br /> </td> 
-   <td> Área de Trabalho<br /> </td> 
+   <td> Espaço de trabalho<br /> </td> 
    <td> Cadeia de caracteres<br /> </td> 
    <td> </td> 
   </tr> 
@@ -344,7 +344,7 @@ No nó **dataStore > dataSource > dbcnx** , defina as configurações de conexã
   </tr> 
   <tr> 
    <td> fornecedor<br /> </td> 
-   <td> Tipo (lista discriminada). Os valores possíveis são 'Oracle', 'MSSQL' (Microsoft SQL Server), 'PostgreSQL' (PostgreSQL, Greenplum), 'Teradata', 'DB2', 'MySQL', 'Netezza', 'AsterData', 'SAPHANA' (SAP HANA), 'RedShift' (Amazon Redshift), 'ODBC' ODBC (Sybase ASE, Sybase IQ)), "Relay" (relé HTTP para banco de dados remoto).<br /> </td> 
+   <td> Tipo (lista discriminada). Os valores possíveis são 'Oracle', 'MSSQL' (Microsoft SQL Server), 'PostgreSQL' (PostgreSQL, Greenplum), 'Teradata', 'DB2', 'MySQL', 'Netezza', 'AsterData', 'SAPHANA' (SAP HANA), 'RedShift' (Amazon Redshift), 'ODBC' (ODBC BC (Sybase ASE, Sybase IQ), "Relay" (relé HTTP para banco de dados remoto).<br /> </td> 
    <td> Cadeia de caracteres<br /> </td> 
    <td> 'Oracle'<br /> </td> 
   </tr> 
@@ -722,7 +722,7 @@ Estes são os diferentes parâmetros do nó do **módulo** . Esta é a configura
  <tbody> 
   <tr> 
    <td> defaultNameSpace<br /> </td> 
-   <td> namespace padrão usada ao criar uma nova entidade.<br /> </td> 
+   <td> Namespace padrão usada ao criar uma nova entidade.<br /> </td> 
    <td> Cadeia de caracteres<br /> </td> 
    <td> 'cus'<br /> </td> 
   </tr> 
@@ -960,7 +960,7 @@ Para obter informações adicionais, consulte Proteção [de conexão de](../../
   </tr> 
   <tr> 
    <td> urlRegEx<br /> </td> 
-   <td> expressão regular para refinar a validação de URLs pertencentes a este domínio: expressão regular que o URL deve verificar, caso corresponda a dnsSuffix.<br /> </td> 
+   <td> Expressão regular para refinar a validação de URLs pertencentes a este domínio: expressão regular que o URL deve verificar, caso corresponda a dnsSuffix.<br /> </td> 
    <td> Cadeia de caracteres<br /> </td> 
   </tr> 
  </tbody> 
@@ -1048,13 +1048,13 @@ Para obter informações adicionais, consulte [Ativação do arquivamento de e-m
   </tr> 
   <tr> 
    <td> args<br /> </td> 
-   <td> Parâmetros de Start<br /> </td> 
+   <td> Parâmetros de start<br /> </td> 
    <td> Cadeia de caracteres<br /> </td> 
    <td> <br /> </td> 
   </tr> 
   <tr> 
    <td> autoStart<br /> </td> 
-   <td> start automático<br /> </td> 
+   <td> Start automático<br /> </td> 
    <td> Booleano<br /> </td> 
    <td> false<br /> </td> 
   </tr> 
@@ -1138,7 +1138,7 @@ Para obter informações adicionais, consulte [Ativação do arquivamento de e-m
   </tr> 
   <tr> 
    <td> smtpRelayAddress<br /> </td> 
-   <td> lista separada por vírgulas de nomes DNS ou endereços IP de retransmissores SMTP a serem usados. <br /> </td> 
+   <td> Lista separada por vírgulas de nomes DNS ou endereços IP de retransmissores SMTP a serem usados. <br /> </td> 
    <td> Cadeia de caracteres<br /> </td> 
    <td> <br /> </td> 
   </tr> 
@@ -1167,19 +1167,19 @@ Estes são os diferentes parâmetros do nó **inMail** . Esta é a configuraçã
  <tbody> 
   <tr> 
    <td> args<br /> </td> 
-   <td> Parâmetros de Start<br /> </td> 
+   <td> Parâmetros de start<br /> </td> 
    <td> Cadeia de caracteres<br /> </td> 
    <td> <br /> </td> 
   </tr> 
   <tr> 
    <td> autoStart<br /> </td> 
-   <td> start automático<br /> </td> 
+   <td> Start automático<br /> </td> 
    <td> Booleano<br /> </td> 
    <td> false<br /> </td> 
   </tr> 
   <tr> 
    <td> checkInstanceName<br /> </td> 
-   <td> Verifique o nome da instância: se verdadeiro, o nome da instância Adobe Campaign contido nos cabeçalhos da ID da mensagem deve ser o mesmo da instância atual. <br /> </td> 
+   <td> Verifique o nome da instância: se verdadeiro, o nome da instância do Adobe Campaign contido nos cabeçalhos da ID da mensagem deve ser o mesmo da instância atual. <br /> </td> 
    <td> Booleano<br /> </td> 
    <td> true<br /> </td> 
   </tr> 
@@ -1329,13 +1329,13 @@ Para obter informações adicionais, consulte [Interação - buffer](../../insta
  <tbody> 
   <tr> 
    <td> args<br /> </td> 
-   <td> Parâmetros de Start<br /> </td> 
+   <td> Parâmetros de start<br /> </td> 
    <td> Cadeia de caracteres<br /> </td> 
    <td> <br /> </td> 
   </tr> 
   <tr> 
    <td> autoStart<br /> </td> 
-   <td> start automático<br /> </td> 
+   <td> Start automático<br /> </td> 
    <td> Booleano<br /> </td> 
    <td> false<br /> </td> 
   </tr> 
@@ -1418,13 +1418,13 @@ Estes são os diferentes parâmetros do nó **mta** . Esta é a configuração d
  <tbody> 
   <tr> 
    <td> args<br /> </td> 
-   <td> Parâmetros de Start<br /> </td> 
+   <td> Parâmetros de start<br /> </td> 
    <td> Cadeia de caracteres<br /> </td> 
    <td> '-tracefilter:nlmta' <br /> </td> 
   </tr> 
   <tr> 
    <td> autoStart<br /> </td> 
-   <td> start automático<br /> </td> 
+   <td> Start automático<br /> </td> 
    <td> Booleano<br /> </td> 
    <td> false<br /> </td> 
   </tr> 
@@ -1544,8 +1544,8 @@ Estes são os diferentes parâmetros do nó **mta** . Esta é a configuração d
   </tr>
   <tr> 
    <td> statServerAddress<br /> </td> 
-   <td> Endereço do servidor de estatísticas do delivery, fornecido como &lt;dns ou ip&gt; [: 
-     &lt;porta&gt; ]. Consulte <a href="../../installation/using/email-deliverability.md#coordinates-of-the-statistics-server" target="_blank">Coordenadas do servidor</a>de estatísticas. 
+   <td> Endereço do servidor de estatísticas do delivery, fornecido como &lt;dns ou ip&gt; <code>[</code>: 
+     &lt;porta&gt; <code>]</code>. Consulte <a href="../../installation/using/email-deliverability.md#coordinates-of-the-statistics-server" target="_blank">Coordenadas do servidor</a>de estatísticas. 
       <br /> 
      </td> 
    <td> Cadeia de caracteres<br /> </td> 
@@ -1565,7 +1565,7 @@ Estes são os diferentes parâmetros do nó **mta** . Esta é a configuração d
   </tr> 
   <tr> 
    <td> useMomentum<br /> </td> 
-   <td> Se definido como "true", sua instância está usando o MTA <a href="https://helpx.adobe.com/campaign/kb/acc-campaign-enhanced-mta.html" target="_blank">aprimorado</a>.<br /> </td> 
+   <td> Se definido como "true", sua instância está usando o MTA <a href="https://helpx.adobe.com/br/campaign/kb/acc-campaign-enhanced-mta.html" target="_blank">aprimorado</a>.<br /> </td> 
    <td> Booleano<br /> </td> 
    <td> <br /> </td>b 
   </tr>
@@ -1643,7 +1643,7 @@ Para obter informações adicionais, consulte relé [SMTP](../../installation/us
  <tbody> 
   <tr> 
    <td> address<br /> </td> 
-   <td> lista separada por vírgulas de nomes DNS ou endereços IP de retransmissores SMTP a serem usados. <br /> </td> 
+   <td> Lista separada por vírgulas de nomes DNS ou endereços IP de retransmissores SMTP a serem usados. <br /> </td> 
    <td> Cadeia de caracteres<br /> </td> 
    <td> <br /> </td> 
   </tr> 
@@ -1656,9 +1656,9 @@ Para obter informações adicionais, consulte relé [SMTP](../../installation/us
  </tbody> 
 </table>
 
-### mestre {#master}
+### principal {#master}
 
-No nó **mta > mestre** , configure os seguintes parâmetros. Esta é a configuração do servidor principal.
+No nó **mta > principal** , configure os seguintes parâmetros. Esta é a configuração do servidor principal.
 
 For additional information, refer to this [section](../../installation/using/configuring-campaign-server.md#mta-child-processes).
 
@@ -1885,12 +1885,12 @@ Para obter informações adicionais, consulte a [Lista de endereços IP a serem 
   </tr> 
   <tr> 
    <td> includeDomains<br /> </td> 
-   <td> lista separada por vírgulas de máscaras de domínio a serem incluídas.<br /> </td> 
+   <td> Lista separada por vírgulas de máscaras de domínio a serem incluídas.<br /> </td> 
    <td> Cadeia de caracteres<br /> </td> 
   </tr> 
   <tr> 
    <td> excludeDomains<br /> </td> 
-   <td> lista separada por vírgulas de máscaras de domínio a serem excluídas.<br /> </td> 
+   <td> Lista separada por vírgulas de máscaras de domínio a serem excluídas.<br /> </td> 
    <td> Cadeia de caracteres<br /> </td> 
   </tr> 
   <tr> 
@@ -1981,7 +1981,7 @@ Estes são os diferentes parâmetros do nó **pipeline** . Esta é a configuraç
   </tr> 
   <tr> 
    <td> args<br /> </td> 
-   <td> Parâmetros de Start<br /> </td> 
+   <td> Parâmetros de start<br /> </td> 
    <td> Cadeia de caracteres<br /> </td> 
    <td> <br /> </td> 
   </tr> 
@@ -1999,7 +1999,7 @@ Estes são os diferentes parâmetros do nó **pipeline** . Esta é a configuraç
   </tr> 
   <tr> 
    <td> autoStart<br /> </td> 
-   <td> start automático <br /> </td> 
+   <td> Start automático <br /> </td> 
    <td> Booleano<br /> </td> 
    <td> false<br /> </td> 
   </tr> 
@@ -2017,7 +2017,7 @@ Estes são os diferentes parâmetros do nó **pipeline** . Esta é a configuraç
   </tr> 
   <tr> 
    <td> dumpStatePeriodSec<br /> </td> 
-   <td> Período de salvamento do status: frequência em que as informações internas do processo são salvas em um arquivo. Inativo se 0. <br /> </td> 
+   <td> Período de salvamento do status: frequência com que as informações internas do processo são salvas em um arquivo. Inativo se 0. <br /> </td> 
    <td> Longo<br /> </td> 
    <td> 0<br /> </td> 
   </tr> 
@@ -2118,7 +2118,7 @@ Estes são os diferentes parâmetros do nó de **reparo** . Esta é a configura�
  <tbody> 
   <tr> 
    <td> restoreActionDelayMin<br /> </td> 
-   <td> Módulo de reparo de ações de Delivery: atraso (em minutos) após o qual as ações de delivery podem ser processadas pelo módulo de reparo. <br /> </td> 
+   <td> Módulo de reparo de ações de delivery: atraso (em minutos) após o qual as ações de delivery podem ser processadas pelo módulo de reparo. <br /> </td> 
    <td> Longo<br /> </td> 
    <td> 60<br /> </td> 
   </tr> 
@@ -2282,13 +2282,13 @@ Estes são os diferentes parâmetros do nó **sms** . Esta é a configuração d
  <tbody> 
   <tr> 
    <td> args<br /> </td> 
-   <td> Parâmetros de Start<br /> </td> 
+   <td> Parâmetros de start<br /> </td> 
    <td> Cadeia de caracteres<br /> </td> 
    <td> <br /> </td> 
   </tr> 
   <tr> 
    <td> autoStart<br /> </td> 
-   <td> start automático<br /> </td> 
+   <td> Start automático<br /> </td> 
    <td> Booleano<br /> </td> 
    <td> false<br /> </td> 
   </tr> 
@@ -2406,13 +2406,13 @@ Estes são os diferentes parâmetros do nó **stat** . Esta é a configuração 
  <tbody> 
   <tr> 
    <td> args<br /> </td> 
-   <td> Parâmetros de Start<br /> </td> 
+   <td> Parâmetros de start<br /> </td> 
    <td> Cadeia de caracteres<br /> </td> 
    <td> <br /> </td> 
   </tr> 
   <tr> 
    <td> autoStart<br /> </td> 
-   <td> start automático<br /> </td> 
+   <td> Start automático<br /> </td> 
    <td> Booleano<br /> </td> 
    <td> false<br /> </td> 
   </tr> 
@@ -2471,13 +2471,13 @@ Estes são os diferentes parâmetros do nó **syslogd** . Esta é a configuraç�
  <tbody> 
   <tr> 
    <td> args<br /> </td> 
-   <td> Parâmetros de Start<br /> </td> 
+   <td> Parâmetros de start<br /> </td> 
    <td> Cadeia de caracteres<br /> </td> 
    <td> <br /> </td> 
   </tr> 
   <tr> 
    <td> autoStart<br /> </td> 
-   <td> start automático<br /> </td> 
+   <td> Start automático<br /> </td> 
    <td> Booleano<br /> </td> 
    <td> false<br /> </td> 
   </tr> 
@@ -2542,13 +2542,13 @@ Estes são os diferentes parâmetros do nó de **rastreamento** . Esta é a conf
  <tbody> 
   <tr> 
    <td> args<br /> </td> 
-   <td> Parâmetros de Start<br /> </td> 
+   <td> Parâmetros de start<br /> </td> 
    <td> Cadeia de caracteres<br /> </td> 
    <td> <br /> </td> 
   </tr> 
   <tr> 
    <td> autoStart<br /> </td> 
-   <td> start automático<br /> </td> 
+   <td> Start automático<br /> </td> 
    <td> Booleano<br /> </td> 
    <td> false<br /> </td> 
   </tr> 
@@ -2673,13 +2673,13 @@ Estes são os diferentes parâmetros do nó **trackinglogd** . Esta é a configu
  <tbody> 
   <tr> 
    <td> args<br /> </td> 
-   <td> Parâmetros de Start<br /> </td> 
+   <td> Parâmetros de start<br /> </td> 
    <td> Cadeia de caracteres<br /> </td> 
    <td> <br /> </td> 
   </tr> 
   <tr> 
    <td> autoStart<br /> </td> 
-   <td> start automático<br /> </td> 
+   <td> Start automático<br /> </td> 
    <td> Booleano<br /> </td> 
    <td> false<br /> </td> 
   </tr> 
@@ -2782,13 +2782,13 @@ For additional information, refer to this [section](../../installation/using/con
   </tr> 
   <tr> 
    <td> args<br /> </td> 
-   <td> Parâmetros de Start<br /> </td> 
+   <td> Parâmetros de start<br /> </td> 
    <td> Cadeia de caracteres<br /> </td> 
    <td> <br /> </td> 
   </tr> 
   <tr> 
    <td> autoStart<br /> </td> 
-   <td> start automático<br /> </td> 
+   <td> Start automático<br /> </td> 
    <td> Booleano<br /> </td> 
    <td> false<br /> </td> 
   </tr> 
@@ -3079,7 +3079,7 @@ Para obter informações adicionais, consulte Segurança de página [dinâmica e
   </tr> 
   <tr> 
    <td> status<br /> </td> 
-   <td> Status de sincronização de um recurso público (lista discriminada). Os valores possíveis são "normal" (execução normal), "blocklist" (url adicionado à lista de blocos no caso de erro 404) e "spare" (upload de arquivo no servidor sobressalente, se houver).<br /> </td> 
+   <td> Status de sincronização de um recurso público (lista discriminada). Os valores possíveis são "normal" (execução normal), "lista de bloqueios" (url adicionado à lista de bloqueios em caso de erro 404) e "sobressalente" (upload de arquivo no servidor sobressalente, se houver).<br /> </td> 
    <td> Cadeia de caracteres<br /> </td> 
    <td> normal<br /> </td> 
   </tr> 
@@ -3219,7 +3219,7 @@ For additional information, refer to this [section](../../installation/using/dep
  <tbody> 
   <tr> 
    <td> IMSOrgId<br /> </td> 
-   <td> Identificador da organização IMS: identificador único da organização no Adobe Marketing Cloud, usado especialmente para o serviço VisitorID e o SSO IMS. <br /> </td> 
+   <td> Identificador da organização IMS: identificador de organização único na Adobe Marketing Cloud, usado especialmente para o serviço VisitorID e o SSO IMS. <br /> </td> 
    <td> Cadeia de caracteres<br /> </td> 
    <td> <br /> </td> 
   </tr> 
@@ -3231,7 +3231,7 @@ For additional information, refer to this [section](../../installation/using/dep
   </tr> 
   <tr> 
    <td> cookieDomain<br /> </td> 
-   <td> lista separada por vírgulas de domínios a serem configurados para indicar explicitamente seu domínio para definir cookie. <br /> </td> 
+   <td> Lista separada por vírgulas de domínios a serem configurados para indicar explicitamente seu domínio para definir cookie. <br /> </td> 
    <td> Cadeia de caracteres<br /> </td> 
    <td> <br /> </td> 
   </tr> 
@@ -3368,13 +3368,13 @@ Para obter informações adicionais, consulte workflows e afinidades de [alta di
   </tr> 
   <tr> 
    <td> args<br /> </td> 
-   <td> Parâmetros de Start<br /> </td> 
+   <td> Parâmetros de start<br /> </td> 
    <td> Cadeia de caracteres<br /> </td> 
    <td> <br /> </td> 
   </tr> 
   <tr> 
    <td> autoStart<br /> </td> 
-   <td> start automático<br /> </td> 
+   <td> Start automático<br /> </td> 
    <td> Booleano<br /> </td> 
    <td> false<br /> </td> 
   </tr> 
