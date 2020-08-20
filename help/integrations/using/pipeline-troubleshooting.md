@@ -14,11 +14,11 @@ discoiquuid: 1c20795d-748c-4f5d-b526-579b36666e8f
 index: y
 internal: n
 snippet: y
-translation-type: ht
-source-git-commit: 0112d5bd052ad66169225073276d1da4f3c245d8
-workflow-type: ht
+translation-type: tm+mt
+source-git-commit: 3b752b283a14bc75954fe46da5a21970c1e17fa1
+workflow-type: tm+mt
 source-wordcount: '642'
-ht-degree: 100%
+ht-degree: 98%
 
 ---
 
@@ -32,7 +32,7 @@ A sua versão do Adobe Campaign Classic não é compatível com o pipeline.
 1. Verifique se o elemento [!DNL pipelined] está presente no arquivo de configuração. Caso não esteja, significa que não é compatível.
 1. Atualize para a versão 6.11 build 8705 ou posterior.
 
-**Falha no pipeline com “ aurait dû commencer par &#39;[&#39; ou &#39;{&#39; (iRc=16384)”**
+**Falha no pipeline com o &#39;&#39; aurait dextcer comprcer par`[`ou`{`(iRc=16384)&quot;**
 
 A opção **NmsPipeline_Config** não está definida. Na verdade é um erro de análise JSON.
 Defina a configuração JSON na opção **NmsPipeline_Config**. Consulte &quot;Opção de roteamento&quot; nesta página.
