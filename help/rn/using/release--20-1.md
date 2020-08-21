@@ -12,10 +12,10 @@ discoiquuid: 5df34f55-135a-4ea8-afc2-f9427ce5ae7b
 index: y
 internal: n
 snippet: y
-translation-type: ht
-source-git-commit: 6c3c2ad62778c4c4f874c5b34c014529ce3e7185
-workflow-type: ht
-source-wordcount: '1330'
+translation-type: tm+mt
+source-git-commit: e31efa347b42b4ccb532ca5f79e73745b5a7878b
+workflow-type: tm+mt
+source-wordcount: '1331'
 ht-degree: 100%
 
 ---
@@ -183,7 +183,7 @@ _17 de fevereiro de 2020_
 
 * Correção de um problema que ocorre ao excluir, inserir ou atualizar uma grande quantidade de dados com a atividade **Update data** em um workflow que usa um schema FDA como dimensão de direcionamento. (NEO-13280)
 
-* Correção de um problema que impede o envio de emails ao usar a declaração &quot;se&quot; fora da tag `body`.
+* Correção de um problema que impede o envio de emails ao usar a declaração &quot;se&quot; fora da tag `body`. (NEO-18628)
 
 * Correção de um problema que ocorre ao tentar exibir a mirror page dos logs do delivery de uma mensagem enviada. (NEO-17976)
 
