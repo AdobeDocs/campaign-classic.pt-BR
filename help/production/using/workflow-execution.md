@@ -15,9 +15,9 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: b369a17fabc55607fc6751e7909e1a1cb3cd4201
+source-git-commit: 5a4ee9b14d4c77f74ff73209d4323bf4f1347155
 workflow-type: tm+mt
-source-wordcount: '637'
+source-wordcount: '635'
 ht-degree: 13%
 
 ---
@@ -30,8 +30,8 @@ A seção abaixo apresenta informações sobre problemas comuns relacionados à 
 Para obter mais informações sobre workflows, consulte estas seções:
 
 * [Sobre workflows](../../workflow/using/about-workflows.md)
-* [Iniciando um workflow](../../workflow/using/starting-a-workflow.md)
-* [Ciclo de vida do workflow](../../workflow/using/workflow-life-cycle.md)
+* [Iniciar um fluxo de trabalho](../../workflow/using/starting-a-workflow.md)
+* [Ciclo de vida do fluxo de trabalho](../../workflow/using/workflow-life-cycle.md)
 * [Práticas recomendadas ao usar workflows](../../workflow/using/workflow-best-practices.md)
 
 ## Start o mais rápido possível no campanha {#start-as-soon-as-possible-in-campaigns}
@@ -44,7 +44,7 @@ Pode haver várias causas para esse problema, siga as etapas abaixo para resolv�
 
    Para obter mais informações sobre o monitoramento de workflows técnicos, consulte [esta página](../../workflow/using/monitoring-technical-workflows.md).
 
-   >[OBSERVAÇÃO]
+   >[!NOTE]
    >
    >Depois que o fluxo de trabalho for reiniciado, certifique-se de executar as tarefas pendentes (clique com o botão direito do mouse na **[!UICONTROL Scheduler]** atividade / **[!UICONTROL Execute pending task(s) now]**) para verificar se há falha novamente em qualquer uma das atividades.
 
@@ -52,7 +52,7 @@ Pode haver várias causas para esse problema, siga as etapas abaixo para resolv�
 
 1. Verifique o estado do **[!UICONTROL wfserver]** módulo na **[!UICONTROL Monitoring]** guia, acessível na página inicial do Campaign Classic (consulte [Monitoramento de processos](../../production/using/monitoring-processes.md)). Esse processo é responsável pela execução de todos os workflows.
 
-   Um usuário administrador também pode verificar se o módulo **wfserver@`<instance>`**foi iniciado no servidor de aplicativos principal usando o comando abaixo.
+   Um usuário administrador também pode verificar se o módulo **wfserver@`<instance>`** foi iniciado no servidor de aplicativos principal usando o comando abaixo.
 
    ```
    nlserver pdump
@@ -62,7 +62,7 @@ Pode haver várias causas para esse problema, siga as etapas abaixo para resolv�
    [...]
    ```
 
-   Se o módulo não estiver em execução, entre em contato com o Atendimento ao cliente da Adobe. Se você tiver uma instalação local, um usuário administrador deverá reiniciar o serviço usando o comando abaixo.
+   Se o módulo não estiver em execução, entre em contato com o Atendimento ao cliente do Adobe. Se você tiver uma instalação local, um usuário administrador deverá reiniciar o serviço usando o comando abaixo.
 
    ```
    nlserver start wfserver@<INSTANCENAME>
@@ -79,9 +79,9 @@ Pode haver várias causas para esse problema, siga as etapas abaixo para resolv�
 
    Para resolver esse problema, pare workflows indesejados e exclua delivery com falha. Se o limite for atingido, isso permitirá a execução de novos processos.
 
-   Para verificar o número de workflows em execução de sua instância, recomendamos usar as visualizações predefinidas, acessíveis por padrão na **[!UICONTROL Administration]** / **[!UICONTROL Audit]** pasta. Para obter mais informações, consulte [esta página](../../workflow/using/monitoring-workflow-execution.md#filtering-workflows-status).
+   Para verificar o número de workflows em execução de sua instância, recomendamos usar as visualizações predefinidas, acessíveis por padrão na **[!UICONTROL Administration]** / **[!UICONTROL Audit]** pasta. Para saber mais, consulte [esta página](../../workflow/using/monitoring-workflow-execution.md#filtering-workflows-status).
 
-   >[CUIDADO]
+   >[!CAUTION]
    >
    >Aumentar o limite de **[!UICONTROL NmsOperation_LimitConcurrency]** opções pode causar problemas de desempenho em sua instância. Em qualquer caso, não execute isso sozinho e entre em contato com seu Adobe Campaign.
 
@@ -95,7 +95,7 @@ Para verificar isso e iniciar o módulo se necessário, siga as seguintes etapas
 
 1. Verifique o estado do **[!UICONTROL wfserver]** módulo na **[!UICONTROL Monitoring]** guia, acessível na página inicial do Campaign Classic (consulte [Monitoramento de processos](../../production/using/monitoring-processes.md)).
 
-   Um usuário administrador também pode verificar se o módulo **wfserver@`<instance>`**foi iniciado no servidor de aplicativos principal usando o comando abaixo.
+   Um usuário administrador também pode verificar se o módulo **wfserver@`<instance>`** foi iniciado no servidor de aplicativos principal usando o comando abaixo.
 
    ```
    nlserver pdump
@@ -107,7 +107,7 @@ Para verificar isso e iniciar o módulo se necessário, siga as seguintes etapas
 
    For more on how to monitor modules, refer to [this section](../../production/using/usual-commands.md#monitoring-commands-).
 
-1. Se o módulo não estiver em execução, entre em contato com o Atendimento ao cliente da Adobe. Se você tiver uma instalação local, um administrador deverá reiniciá-la usando o comando abaixo.
+1. Se o módulo não estiver em execução, entre em contato com o Atendimento ao cliente do Adobe. Se você tiver uma instalação local, um administrador deverá reiniciá-la usando o comando abaixo.
 
    ```
    nlserver start wfserver@<INSTANCENAME>
