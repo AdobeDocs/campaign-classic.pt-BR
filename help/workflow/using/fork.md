@@ -1,8 +1,6 @@
 ---
 title: Fork
-seo-title: Fork
 description: Fork
-seo-description: null
 page-status-flag: never-activated
 uuid: 90db1991-cff9-4dbd-a478-7aae1d845836
 contentOwner: sauviat
@@ -14,17 +12,21 @@ discoiquuid: 16f50f5f-cbad-4de7-aa73-38615ae76ac0
 index: y
 internal: n
 snippet: y
-translation-type: ht
-source-git-commit: 579329d9194115065dff2c192deb0376c75e67bd
+translation-type: tm+mt
+source-git-commit: f7ed7e59be2cfbde467b0c80d21cfbf52016a2b8
+workflow-type: tm+mt
+source-wordcount: '72'
+ht-degree: 4%
 
 ---
 
 
 # Fork{#fork}
 
-Uma bifurcação permite iniciar várias atividades em paralelo.
+Um garfo permite ativar todas as atividades de saída em paralelo.
 
-Clique duas vezes no objeto gráfico para definir o número de transições de saída, criar uma nova transição ou alterar o rótulo da transição selecionada.
+Por exemplo, você pode usar a atividade no contexto da criação de conteúdo e da automação de envio de delivery, para iniciar o cálculo de públicos alvos e a criação de conteúdo ao mesmo tempo. Um caso de uso dedicado está disponível [nesta seção](../../delivery/using/automating-via-workflows.md#creating-the-delivery-and-its-content).
+
+Para configurar a atividade, abra-a e defina o número e o rótulo das transições de saída desejadas.
 
 ![](assets/s_user_segmentation_fork.png)
-
