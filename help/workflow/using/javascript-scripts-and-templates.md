@@ -14,8 +14,11 @@ discoiquuid: 8867d9c3-2ce4-4611-8c88-ce505c3a01d1
 index: y
 internal: n
 snippet: y
-translation-type: ht
-source-git-commit: 9d36192a768fd0162f2301a5fe0437074d0fda58
+translation-type: tm+mt
+source-git-commit: c959c0e8ace1eaaa768ea04c194eaccac0b35344
+workflow-type: tm+mt
+source-wordcount: '1238'
+ht-degree: 97%
 
 ---
 
@@ -84,13 +87,19 @@ As variáveis de tarefa (**[!UICONTROL task.vars.xxx]**) são comparáveis às v
 
 As variáveis de evento (**[!UICONTROL vars.xxx]**) permitem a troca de dados entre as tarefas primárias de um processo de workflow. Essas variáveis são passadas pela tarefa que ativou a tarefa em andamento. É possível modificá-las e definir novas. Então, elas são passadas para as atividades seguintes.
 
-No caso de atividades de tipo **AND-join**, as variáveis são mescladas, mas se uma mesma variável é definida duas vezes, há um conflito e o valor permanece indeterminado.
+>[!CAUTION]
+>
+>No caso de atividades de tipo [AND-join](../../workflow/using/and-join.md), as variáveis são mescladas, mas se uma mesma variável é definida duas vezes, há um conflito e o valor permanece indeterminado.
 
-Essas são as variáveis usadas com mais frequência e devem ser usadas em detrimento de variáveis de instância.
+Eventos são as variáveis mais usadas e devem ser usadas de preferência para variáveis de instância.
 
 Certas variáveis de evento são modificadas ou lidas pelas várias atividades. Estas são todas as variáveis do tipo string. Por exemplo, uma exportação define a variável **[!UICONTROL vars.filename]** com o nome completo do arquivo que acabou de ser exportado. Todas essas variáveis lidas ou modificadas são documentadas em [About activities](../../workflow/using/about-activities.md), nas seções **Input parameters** e **Output parameters** das atividades.
 
-### Exemplos {#example}
+### Casos de uso {#example}
+
+>[!NOTE]
+>
+>Outros casos de uso de worklow estão disponíveis [nesta seção](../../workflow/using/about-workflow-use-cases.md).
 
 **Exemplo 1**
 
