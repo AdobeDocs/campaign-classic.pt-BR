@@ -6,9 +6,9 @@ index: y
 product: adobe campaign
 sub-product: Adobe Campaign Classic
 translation-type: tm+mt
-source-git-commit: 3b752b283a14bc75954fe46da5a21970c1e17fa1
+source-git-commit: 0810608c67e6da4d9afa3a366df664594b0b6840
 workflow-type: tm+mt
-source-wordcount: '2110'
+source-wordcount: '2109'
 ht-degree: 99%
 
 ---
@@ -432,7 +432,7 @@ ht-degree: 99%
          + [Enriquecimento de dados](workflow/using/enriching-data.md)
          + [Uso de agregações](workflow/using/using-aggregates.md)
          + [Atualização da lista trimestral usando um query incremental](workflow/using/quarterly-list-update.md)
-      + Projeto de queries {#designing-queries}
+      + Targeting {#designing-queries}
          + [Consulta à tabela de recipients](workflow/using/querying-recipient-table.md)
          + [Consulta de informações de delivery](workflow/using/querying-delivery-information.md)
          + [Execução de computação agregada](workflow/using/performing-aggregate-computing.md)
