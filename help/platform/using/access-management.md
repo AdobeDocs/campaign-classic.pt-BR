@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: bc54cef4c44be4c694e062f56685dbb09d2fcf8e
+source-git-commit: 6c66718fbbf13486d52b0cc98eae6c854b34030d
 workflow-type: tm+mt
 source-wordcount: '2955'
 ht-degree: 96%
@@ -357,7 +357,7 @@ Os grupos padrão e os direitos nomeados permitem que os operadores acessem dete
 
 A matriz de direitos de acesso do Adobe Campaign está disponível [aqui](/help/platform/using/assets/access-rights-matrix.pdf).
 
-[![imagem](assets/user_management.png)](https://docs.adobe.com/content/help/pt-BR/campaign-classic/using/getting-started/administration-basics/assets/access-rights-matrix.pdf)
+[![imagem](assets/do-not-localize/user_management.png)](https://docs.adobe.com/content/help/pt-BR/campaign-classic/using/getting-started/administration-basics/assets/access-rights-matrix.pdf)
 
 ## Gerenciamento de acesso a pastas {#folder-access-management}
 
