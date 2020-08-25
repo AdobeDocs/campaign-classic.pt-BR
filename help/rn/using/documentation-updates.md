@@ -13,9 +13,9 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 8198c4aa6eccc0cbb5de4712ebdd8000783b615c
+source-git-commit: 70efc8a7f1fab68d73e36b4373116c4aaaa0af5d
 workflow-type: tm+mt
-source-wordcount: '7096'
+source-wordcount: '7164'
 ht-degree: 97%
 
 ---
@@ -56,6 +56,15 @@ Os vídeos passo a passo estão disponíveis nos seguintes tópicos:
 * [Como configurar um delivery contínuo](../../workflow/using/continuous-delivery.md)
 
 Foram adicionadas informações sobre as verificações e ações a serem executadas ao obter o erro &quot;Não foi possível resolver o nome do host&quot; após a conexão com um servidor FTP. [Leia mais](../../platform/using/sftp-server-usage.md)
+
+Novos casos de uso foram referenciados na lista de casos [de uso do](../../workflow/using/about-workflow-use-cases.md)fluxo de trabalho:
+
+* Automação da criação, edição e publicação de conteúdo
+* Configuração de um processo de aprovação de recipient antes do envio de um delivery
+* Chamada de uma variável de instância em uma query
+* Aplicar uma porcentagem dividida em uma população
+
+A seção **[!UICONTROL AND-join]** atividade foi aprimorada com informações adicionais sobre seu uso, bem como uma observação sobre o uso de variáveis. [Leia mais](../../workflow/using/and-join.md)
 
 ## Julho de 2020 {#july-2020}
 
