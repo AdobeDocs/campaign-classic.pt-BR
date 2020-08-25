@@ -11,11 +11,11 @@ topic-tags: about-workflows-and-data-management
 discoiquuid: 40503917-7a53-4d99-96a4-57aa9e98ec87
 internal: n
 snippet: y
-translation-type: ht
-source-git-commit: 6d9e2b54da9de37ed8f4f873a1049b35493112d4
-workflow-type: ht
-source-wordcount: '165'
-ht-degree: 100%
+translation-type: tm+mt
+source-git-commit: 00a9b7def9d0ad0190c389c6bcde431f8e2f2b44
+workflow-type: tm+mt
+source-wordcount: '195'
+ht-degree: 87%
 
 ---
 
@@ -28,7 +28,7 @@ Eles ajudarão você a descobrir os diferentes contextos nos quais os workflows 
 
 ## Deliveries {#deliveries}
 
-<img src="assets/do-not-localize/icon_workflows.svg" width="60px">
+<img src="assets/do-not-localize/icon_send.svg" width="60px">
 
 * [O uso da atividade de aprovação local](../../workflow/using/using-the-local-approval-activity.md)
 * [Teste A/B](../../workflow/using/a-b-testing.md)
@@ -36,6 +36,7 @@ Eles ajudarão você a descobrir os diferentes contextos nos quais os workflows 
 * [Carregamento de conteúdo de delivery](../../workflow/using/loading-delivery-content.md)
 * [Workflow de delivery entre canais](../../workflow/using/cross-channel-delivery-workflow.md)
 * [Enriquecimento de e-mail com campos de data personalizados](../../workflow/using/email-enrichment-with-custom-date-fields.md)
+* [Automação da criação, edição e publicação de conteúdo](../../delivery/using/automating-via-workflows.md#examples)
 
 ## Monitoramento de {#monitoring}
 
@@ -44,6 +45,7 @@ Eles ajudarão você a descobrir os diferentes contextos nos quais os workflows 
 * [Envio de um relatório a uma lista](../../workflow/using/sending-a-report-to-a-list.md)
 * [Supervisão de worflows](../../workflow/using/supervising-workflows.md)
 * [Envio de alertas personalizados para operadores](../../workflow/using/sending-personalized-alerts-to-operators.md)
+* [Configuração de um processo de aprovação de recipient antes do envio de um delivery](../../workflow/using/using-the-local-approval-activity.md)
 
 ## gerenciamento de dados {#management}
 
@@ -57,7 +59,7 @@ Eles ajudarão você a descobrir os diferentes contextos nos quais os workflows 
 * [Criptografar e exportar dados usando uma chave instalada no Painel de controle do Campaign](../../workflow/using/how-to-use-workflow-data.md#use-case-gpg-encrypt)
 * [Atualização da lista trimestral usando um query incremental](../../workflow/using/quarterly-list-update.md)
 
-## Projeto de queries {#designing-queries}
+## Targeting {#designing-queries}
 
 <img src="assets/do-not-localize/icon_filter.svg" width="60px">
 
@@ -69,3 +71,5 @@ Eles ajudarão você a descobrir os diferentes contextos nos quais os workflows 
 * [Adição de um campo calculado do tipo de Enumeration](../../workflow/using/adding-enumeration-type-calculated-field.md)
 * [Criação de filtros](../../workflow/using/creating-a-filter.md)
 * [Filtro de recipients duplicados](../../workflow/using/filtering-duplicated-recipients.md)
+* [Chamada de uma variável de instância em uma query](../../workflow/using/javascript-scripts-and-templates.md#calling-an-instance-variable-in-a-query)
+* [Aplicar uma porcentagem dividida em uma população](../../workflow/using/javascript-scripts-and-templates.md#example)
