@@ -1,7 +1,7 @@
 ---
-title: Sobre a tabela de destinatários personalizados
-seo-title: Sobre a tabela de destinatários personalizados
-description: Sobre a tabela de destinatários personalizados
+title: Sobre tabela de recipient personalizada
+seo-title: Sobre tabela de recipient personalizada
+description: Sobre tabela de recipient personalizada
 seo-description: null
 page-status-flag: never-activated
 uuid: 4b162da4-90d2-44ff-9f89-ff0275540359
@@ -15,45 +15,48 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 668a0093616e1a2b49623b010ae5055f4d43d9b9
+source-git-commit: 6c76ce3e6da41a80d1df2adfcb17fd7c0f85b894
+workflow-type: tm+mt
+source-wordcount: '669'
+ht-degree: 2%
 
 ---
 
 
-# Sobre a tabela de destinatários personalizados{#about-custom-recipient-table}
+# Sobre tabela de recipient personalizada{#about-custom-recipient-table}
 
-Esta seção detalha os princípios para usar uma tabela de destinatários não padrão.
+Esta seção detalha os princípios para usar uma tabela de recipient não padrão.
 
-Por padrão, o Adobe Campaign oferece uma tabela de destinatários padrão à qual funções e processos prontos para uso estão vinculados. A tabela de destinatários padrão tem vários campos e tabelas predefinidos que podem ser facilmente estendidos usando uma tabela de extensão.
+Por padrão, a Adobe Campaign oferta uma tabela de recipient padrão à qual funções e processos prontos para uso estão vinculados. A tabela de recipient padrão tem vários campos e tabelas predefinidos que podem ser facilmente estendidos usando uma tabela de extensão.
 
-Se esse método de extensão oferecer uma boa flexibilidade para estender uma tabela, ele não permitirá a redução do número de campos ou links nela contidos. O uso de uma tabela não padrão, ou &quot;tabela de destinatários externos&quot;, permite maior flexibilidade, mas requer determinadas precauções ao implementá-la.
+Se esse método de extensão oferta uma boa flexibilidade para estender uma tabela, ele não permitirá a redução do número de campos ou links nela contidos. O uso de uma tabela não padrão, ou &quot;tabela de recipient externos&quot;, permite maior flexibilidade, mas requer determinadas precauções ao implementá-la.
 
 ## Precisões {#precisions}
 
-Essa funcionalidade permite que o Adobe Campaign processe dados de um banco de dados externo: esses dados serão usados como um conjunto de perfis para entregas. A implementação deste processo envolve várias precisões que podem ser relevantes de acordo com as necessidades do cliente. Como:
+Essa funcionalidade permite que a Adobe Campaign processe dados de um banco de dados externo: esses dados serão usados como um conjunto de perfis para delivery. A implementação deste processo envolve várias precisões que podem ser relevantes de acordo com as necessidades do cliente. Como:
 
-* Nenhum fluxo de atualização de e para o banco de dados do Adobe Campaign: os dados desta tabela podem ser atualizados diretamente pelo mecanismo de banco de dados que os hospeda.
+* Nenhum fluxo de atualização de e para o banco de dados Adobe Campaign: os dados desta tabela podem ser atualizados diretamente pelo mecanismo de banco de dados que os hospeda.
 * Nenhuma alteração nos processos que operam no banco de dados existente.
-* Usando um banco de dados de perfil com uma estrutura não padrão: possibilidade de fornecer perfis salvos em várias tabelas com várias estruturas, usando uma única instância.
-* Nenhuma alteração ou manutenção é necessária ao atualizar o banco de dados do Adobe Campaign.
-* A tabela de destinatários padrão é inútil se você não precisar da maioria dos campos de tabela ou se o modelo de banco de dados não estiver centralizado nos destinatários.
-* Para ser eficiente, uma tabela com alguns campos é necessária se você tiver um número significativo de perfis. A tabela de destinatários padrão tem muitos campos para esse caso específico.
+* Usando um banco de dados de perfis com uma estrutura não padrão: possibilidade de entrega em perfis salvos em várias tabelas com várias estruturas, usando uma única instância.
+* Nenhuma alteração ou manutenção necessária ao atualizar o banco de dados Adobe Campaign.
+* A tabela de recipient padrão é inútil se você não precisar da maioria dos campos da tabela ou se o modelo de banco de dados não estiver centralizado nos recipient.
+* Para ser eficiente, uma tabela com poucos campos é necessária se você tiver um número significativo de perfis. A tabela de recipient padrão tem muitos campos para esse caso específico.
 
-Esta seção descreve os pontos principais que permitem mapear tabelas existentes no Adobe Campaign e a configuração a ser aplicada para executar entregas com base em qualquer tabela. Por fim, ele descreve como fornecer aos usuários interfaces de consulta tão práticas quanto aquelas disponíveis na tabela de destinatários padrão. Para entender o material apresentado nesta seção, é necessário um bom conhecimento dos princípios de projeto de tela e esquema.
+Esta seção descreve os pontos principais que permitem mapear tabelas existentes no Adobe Campaign e a configuração a ser aplicada para executar delivery com base em qualquer tabela. Por fim, ele descreve como fornecer aos usuários interfaces de consulta tão práticas quanto aquelas disponíveis na tabela de recipient padrão. Para compreender o material apresentado nesta seção, é necessário um bom conhecimento dos princípios de concepção do ecrã e do schema.
 
-## Recomendações e limitações {#recommendations-and-limitations}
+## Recommendations e limitações {#recommendations-and-limitations}
 
-O uso de uma tabela de destinatários externos tem as seguintes limitações:
+O uso de uma tabela de recipient externos tem as seguintes limitações:
 
-* O Adobe Campaign não oferece suporte a vários esquemas de destinatários, conhecidos como esquemas de definição de metas, vinculados aos mesmos esquemas de registro de transmissão e/ou rastreamento. Caso contrário, isso pode resultar em anomalias na reconciliação de dados posteriormente.
+* A Adobe Campaign não suporta vários schemas de recipient, conhecidos como schemas de definição de metas, vinculados aos mesmos schemas de registro de transmissão e/ou rastreamento. Caso contrário, isso pode resultar em anomalias na reconciliação de dados posteriormente.
 
-   O gráfico abaixo detalha a estrutura relacional necessária para cada esquema de destinatário personalizado:
+   O gráfico abaixo detalha a estrutura relacional necessária para cada schema de recipient personalizado:
    ![](assets/custom_recipient_limitation.png)
 
    Recomendamos:
 
-   * Dedicando os **[!UICONTROL nms:BroadLogRcp]** e **[!UICONTROL nms:TrackingLogRcp]** esquemas ao pronto-a-usar **[!UICONTROL nms:Recipientschema]**. Essas duas tabelas de log não devem ser vinculadas a nenhuma tabela de destinatários personalizada adicional.
-   * Definindo esquemas dedicados de log de fluxo e log de rastreamento para cada novo esquema de destinatário personalizado. Isso pode ser feito automaticamente ao configurar o mapeamento de destino, consulte Mapeamento [do](../../configuration/using/target-mapping.md)Target.
+   * Dedicando os **[!UICONTROL nms:BroadLogRcp]** e **[!UICONTROL nms:TrackingLogRcp]** schemas ao pronto-socorro **[!UICONTROL nms:Recipientschema]**. Essas duas tabelas de log não devem ser vinculadas a nenhuma tabela de recipient personalizada adicional.
+   * Definição de schemas personalizados de log de fluxo e rastreamento para cada novo schema de recipient personalizado. Isso pode ser feito automaticamente ao configurar o target mapping, consulte [Target mapping](../../configuration/using/target-mapping.md).
 
 * Não é possível usar o padrão **[!UICONTROL Services and Subscriptions]** oferecido no produto.
 
@@ -61,7 +64,7 @@ O uso de uma tabela de destinatários externos tem as seguintes limitações:
 
 * O link com a **[!UICONTROL visitor]** tabela não funciona.
 
-   Assim, para usar o módulo **[!UICONTROLSSocial Marketing]** , é necessário configurar a etapa de armazenamento para fazer referência à tabela correta.
+   Assim, para usar o **[!UICONTROL Social Marketing]** módulo, é necessário configurar a etapa do armazenamento para fazer referência à tabela correta.
 
    Da mesma forma, ao utilizar funções de referência, o modelo de transferência de mensagem inicial padrão deve ser adaptado.
 
@@ -71,15 +74,15 @@ O uso de uma tabela de destinatários externos tem as seguintes limitações:
 
    >[!NOTE]
    >
-   >Você ainda pode criar listas de destinatários usando fluxos de trabalho. Para obter mais informações, consulte [Criação de uma lista de perfis com um fluxo de trabalho](../../configuration/using/creating-a-profile-list-with-a-workflow.md).
+   >Você ainda pode criar listas recipient usando workflows. Para obter mais informações, consulte [Criação de uma lista de perfil com um fluxo de trabalho](../../configuration/using/creating-a-profile-list-with-a-workflow.md).
 
 Também recomendamos verificar os valores padrão usados nas diferentes configurações predefinidas: em função das funcionalidades utilizadas, devem ser efetuadas várias adaptações.
 
 Por exemplo:
 
 * Alguns relatórios padrão, em especial os oferecidos pela **Interaction** e pelas Aplicações **** Móveis, devem ser redesenvolvidos. Consulte a seção [Gerenciar relatórios](../../configuration/using/managing-reports.md) .
-* As configurações padrão para determinadas atividades de fluxo de trabalho fazem referência à tabela de destinatários padrão (**[!UICONTROL nms:recipient]**): essas configurações devem ser alteradas quando usadas para uma tabela de destinatários externos. Consulte a seção [Gerenciamento de fluxos de trabalho](../../configuration/using/managing-workflows.md) .
+* As configurações padrão para determinadas atividades de fluxo de trabalho fazem referência à tabela de recipient padrão (**[!UICONTROL nms:recipient]**): essas configurações devem ser alteradas quando usadas para uma tabela de recipient externos. Consulte a seção [Gerenciar workflows](../../configuration/using/managing-workflows.md) .
 * O bloco de **[!UICONTROL Unsubscription link]** personalização padrão deve ser adaptado.
-* O mapeamento de destino dos modelos de entrega padrão deve ser modificado.
-* Os formulários V4 não são compatíveis para uso com uma tabela de destinatários externos: você deve usar aplicativos da Web.
+* O target mapping dos templates do delivery padrão deve ser modificado.
+* Os formulários V4 não são compatíveis para uso com uma tabela de recipient externos: você deve usar o Aplicação web.
 
