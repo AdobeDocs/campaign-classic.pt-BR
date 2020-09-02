@@ -12,11 +12,11 @@ discoiquuid: 5df34f55-135a-4ea8-afc2-f9427ce5ae7b
 index: y
 internal: n
 snippet: y
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 70efc8a7f1fab68d73e36b4373116c4aaaa0af5d
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '7164'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -29,17 +29,17 @@ Você também pode consultar as [Notas de versão do Adobe Campaign Classic](../
 
 ## Agosto de 2020 {#aug-2020}
 
-Saiba mais sobre as práticas recomendadas relacionadas ao design do delivery e ao envio com a Campanha em uma seção dedicada. [Leia mais](../../delivery/using/delivery-best-practices.md)
+Conheça as práticas recomendadas relacionadas ao design do delivery e ao envio com o Campaign em uma seção dedicada. [Leia mais](../../delivery/using/delivery-best-practices.md)
 
-A landing page de práticas recomendadas de entregabilidade foi aprimorada para facilitar o acesso às subseções. [Leia mais](../../delivery/using/deliverability-key-points.md)
+Uma landing page de práticas recomendadas de deliverability foi aprimorada para facilitar o acesso às subseções. [Leia mais](../../delivery/using/deliverability-key-points.md)
 
-Os vídeos passo a passo estão disponíveis nos seguintes tópicos:
+Os vídeos do passo a passo estão disponíveis nos seguintes tópicos:
 
 * [Como configurar o gerenciamento de fadiga usando regras de tipologia e filtros predefinidos](../../campaign/using/about-campaign-typologies.md)
 
 * [Como criar um email em uma campanha](../../campaign/using/marketing-campaign-deliveries.md)
 
-* [Como criar um boletim multilíngue com conteúdo condicional](../../delivery/using/conditional-content.md)
+* [Como criar um informativo multilíngue com conteúdo condicional](../../delivery/using/conditional-content.md)
 
 * [Como configurar e implantar um template do delivery](../../delivery/using/creating-a-delivery-template.md)
 
@@ -49,22 +49,22 @@ Os vídeos passo a passo estão disponíveis nos seguintes tópicos:
 
 * [Como personalizar emails usando campos de personalização](../../delivery/using/personalization-fields.md)
 
-* [Como gerenciar semente e provas em um email](../../delivery/using/steps-defining-the-target-population.md)
+* [Como gerenciar seed e provas em um email](../../delivery/using/steps-defining-the-target-population.md)
 
 * [Como configurar um delivery recorrente](../../workflow/using/recurring-delivery.md)
 
 * [Como configurar um delivery contínuo](../../workflow/using/continuous-delivery.md)
 
-Foram adicionadas informações sobre as verificações e ações a serem executadas ao obter o erro &quot;Não foi possível resolver o nome do host&quot; após a conexão com um servidor FTP. [Leia mais](../../platform/using/sftp-server-usage.md)
+Foram adicionadas informações sobre as verificações e ações a serem executadas ao obter o erro “Não foi possível resolver o nome do host” após a conexão com um servidor FTP. [Leia mais](../../platform/using/sftp-server-usage.md)
 
-Novos casos de uso foram referenciados na lista de casos [de uso do](../../workflow/using/about-workflow-use-cases.md)fluxo de trabalho:
+Novos casos de uso são mencionados na lista de [casos de uso de workflow](../../workflow/using/about-workflow-use-cases.md):
 
-* Automação da criação, edição e publicação de conteúdo
+* Automação de criação, edição e publicação de conteúdo
 * Configuração de um processo de aprovação de recipient antes do envio de um delivery
 * Chamada de uma variável de instância em uma query
 * Aplicar uma porcentagem dividida em uma população
 
-A seção **[!UICONTROL AND-join]** atividade foi aprimorada com informações adicionais sobre seu uso, bem como uma observação sobre o uso de variáveis. [Leia mais](../../workflow/using/and-join.md)
+A seção atividade de **[!UICONTROL AND-join]** foi aprimorada com informações adicionais sobre sua utilização, bem como uma observação sobre o uso de variáveis. [Leia mais](../../workflow/using/and-join.md)
 
 ## Julho de 2020 {#july-2020}
 
@@ -436,7 +436,7 @@ A seção &quot;Workflow monitoring&quot; foi atualizada com uma nota para build
 
 Foi adicionado um caso de uso sobre como enviar um email com campos de dados personalizados usando a atividade Enrichment em um fluxo de trabalho. [Leia mais](https://docs.campaign.adobe.com/doc/AC/en/WKF_Use_cases_Email_enrichment_with_custom_date_fields.html)
 
-Os vídeos em destaque foram movidos para [este local](https://docs.adobe.com/content/help/en/campaign-learn/campaign-classic-tutorials/overview.html).
+Os vídeos em destaque foram movidos para [este local](https://docs.adobe.com/content/help/pt-BR/campaign-classic-learn/tutorials/overview.html).
 
 Duas notas técnicas foram adicionadas ao [Teradata](https://helpx.adobe.com/br/campaign/kb/campaign_fda_teradata.html) e ao [MySQL 5.7](https://helpx.adobe.com/br/campaign/kb/campaign_fda_mysql.html).
 
