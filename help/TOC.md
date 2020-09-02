@@ -5,11 +5,11 @@ user-guide-description: Adobe Campaign lets you coordinate the creation of conve
 index: y
 product: adobe campaign
 sub-product: Adobe Campaign Classic
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 0810608c67e6da4d9afa3a366df664594b0b6840
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2109'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -90,17 +90,17 @@ ht-degree: 99%
       + [Conectores CRM](platform/using/crm-connectors.md)
       + [Conector de dados do Adobe Analytics](platform/using/adobe-analytics-data-connector.md)
 + Envio de mensagens {#sending-messages}
-   + [Introdução às mensagens](delivery/using/communication-channels.md)
+   + [Introdução a mensagens](delivery/using/communication-channels.md)
    + Práticas recomendadas para delivery {#delivery-bestpractices}
-      + [Conheça as boas práticas](delivery/using/delivery-best-practices.md)
-      + [Otimizar a entrega](delivery/using/optimize-delivery.md)
+      + [Conheça as práticas recomendadas](delivery/using/delivery-best-practices.md)
+      + [Otimizar o delivery](delivery/using/optimize-delivery.md)
       + [Usar modelos](delivery/using/use-templates.md)
       + [Criar conteúdo personalizado](delivery/using/design-and-personalize.md)
-      + [Definir a audiência correta](delivery/using/define-the-right-audience.md)
+      + [Definir o público-alvo certo](delivery/using/define-the-right-audience.md)
       + [Verificar antes de enviar](delivery/using/check-before-sending.md)
       + [Rastrear e monitorar](delivery/using/track-and-monitor.md)
    + Etapas principais ao criar um delivery {#key-steps-when-creating-a-delivery}
-      + [Introdução aos delivery](delivery/using/steps-about-delivery-creation-steps.md)
+      + [Introdução a deliveries](delivery/using/steps-about-delivery-creation-steps.md)
       + [Criação e identificação do delivery](delivery/using/steps-create-and-identify-the-delivery.md)
       + [Definição da população do target](delivery/using/steps-defining-the-target-population.md)
       + [Validando o delivery](delivery/using/steps-validating-the-delivery.md)
@@ -432,7 +432,7 @@ ht-degree: 99%
          + [Enriquecimento de dados](workflow/using/enriching-data.md)
          + [Uso de agregações](workflow/using/using-aggregates.md)
          + [Atualização da lista trimestral usando um query incremental](workflow/using/quarterly-list-update.md)
-      + Targeting {#designing-queries}
+      + Direcionamento {#designing-queries}
          + [Consulta à tabela de recipients](workflow/using/querying-recipient-table.md)
          + [Consulta de informações de delivery](workflow/using/querying-delivery-information.md)
          + [Execução de computação agregada](workflow/using/performing-aggregate-computing.md)
