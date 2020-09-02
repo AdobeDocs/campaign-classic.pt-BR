@@ -29,13 +29,14 @@ ht-degree: 98%
 
 _22 de julho de 2020_
 
-* Correção de um problema que impedia o rastreamento de funcionar quando o recurso de assinatura era desativado. (NEO-26411)
+* Correção de um problema que impedia o funcionamento do rastreamento quando o recurso de assinatura era desativado. (NEO-26411)
 * Correção de um problema que resultava no bloqueio de links não assinados de domínios personalizados quando deveriam ser permitidos. (NEO-25210)
 * Correção de um problema que poderia impedir a abertura/clique de URLs de rastreamento ao usar determinadas versões herdadas do Outlook. (NEO-25688)
 * Correção de um problema que resultava na definição incorreta de URLs de mirror page em deliveries de email. (NEO-26084)
 * Correção de um problema com a codificação do gerenciamento de URL no serviço anti-phishing. (NEO-25283)
 * Correção de um problema que impedia o funcionamento do rastreamento de URLs usando fragmentos em parâmetros de personalização (tags de âncora com sinal de hashtag). (NEO-25774)
 * Correção de um problema de rastreamento ao usar fórmulas de rastreamento personalizadas específicas. (NEO-25277)
+
 
 Correção de um problema que impedia o funcionamento do rastreamento de &quot;cliques de notificação&quot; (notificações por push de iOS e Android). (NEO-25965)
 * Correção de uma regressão que afetava os campos calculados em um workflow. (NEO-25194)
