@@ -14,11 +14,11 @@ discoiquuid: 8867d9c3-2ce4-4611-8c88-ce505c3a01d1
 index: y
 internal: n
 snippet: y
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: c959c0e8ace1eaaa768ea04c194eaccac0b35344
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1238'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -44,7 +44,7 @@ Os JavaScripts executado no contexto de um workflow acessa uma série de objetos
 * **task**: representa as tarefas que estão sendo executadas. O esquema deste objeto é **xtk:workflowTask**.
 * **event**: representa os eventos que ativam a tarefa que está sendo executada. O esquema deste objeto é **xtk:workflowEvent**. Este objeto não é inicializado para atividades tipo **AND-join** que foram ativadas a partir de várias transições.
 * **events**: representa a lista de eventos que ativou a tarefa atual. O esquema deste objeto é **xtk:workflowEvent**. Essa tabela normalmente contém um elemento, mas pode conter vários para atividades tipo **AND-join** ativadas com base em várias transições.
-* **activity**: representa o modelo da tarefa que está sendo executada. O esquema desse objeto depende do tipo de atividade. Esse objeto pode ser modificado pelo script de inicialização, em outros scripts, modificações têm efeitos indeterninárveis.
+* **activity**: representa o modelo da tarefa que está sendo executada. O esquema desse objeto depende do tipo de atividade. Esse objeto pode ser modificado pelo script de inicialização, em outros scripts, modificações têm efeitos indetermináveis.
 
 As propriedades disponíveis para esses objetos podem ser visualizadas em uma lista suspensa clicando no botão à direita da barra de ferramentas do script.
 
@@ -91,15 +91,15 @@ As variáveis de evento (**[!UICONTROL vars.xxx]**) permitem a troca de dados en
 >
 >No caso de atividades de tipo [AND-join](../../workflow/using/and-join.md), as variáveis são mescladas, mas se uma mesma variável é definida duas vezes, há um conflito e o valor permanece indeterminado.
 
-Eventos são as variáveis mais usadas e devem ser usadas de preferência para variáveis de instância.
+Evento são as variáveis usadas com mais frequência. Devem ser usadas em detrimento de variáveis de instância.
 
-Certas variáveis de evento são modificadas ou lidas pelas várias atividades. Estas são todas as variáveis do tipo string. Por exemplo, uma exportação define a variável **[!UICONTROL vars.filename]** com o nome completo do arquivo que acabou de ser exportado. Todas essas variáveis lidas ou modificadas são documentadas em [About activities](../../workflow/using/about-activities.md), nas seções **Input parameters** e **Output parameters** das atividades.
+Certas variáveis de evento são modificadas ou lidas pelas várias atividades. Estas são todas as variáveis do tipo string. Por exemplo, uma exportação define a variável **[!UICONTROL vars.filename]** com o nome completo do arquivo que acabou de ser exportado. Todas essas variáveis lidas ou modificadas são documentadas em [Sobre atividades](../../workflow/using/about-activities.md), nas seções **Parâmetros de entrada** e **Parâmetros de saída** das atividades.
 
 ### Casos de uso {#example}
 
 >[!NOTE]
 >
->Outros casos de uso de worklow estão disponíveis [nesta seção](../../workflow/using/about-workflow-use-cases.md).
+>Outros casos de uso de workflow estão disponíveis [nesta seção](../../workflow/using/about-workflow-use-cases.md).
 
 **Exemplo 1**
 
