@@ -1,5 +1,5 @@
 ---
-title: Práticas recomendadas para o delivery de campanhas
+title: Práticas recomendadas para delivery de campanhas
 seo-title: Práticas recomendadas para delivery
 page-status-flag: never-activated
 uuid: a540efc7-105d-4c7f-a2ee-ade4d22b3445
@@ -12,18 +12,18 @@ discoiquuid: 0cbc4e92-482f-4dac-a1fb-b738e7127938
 index: y
 internal: n
 snippet: y
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 1e7dfc5cebf6b59d1b7e718fcab289691d8b76de
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '97'
-ht-degree: 22%
+ht-degree: 100%
 
 ---
 
 
 # Práticas recomendadas para delivery {#delivery-best-practices}
 
-Saiba mais sobre as práticas recomendadas relacionadas ao design e envio de delivery com a Adobe Campaign. Use os links abaixo para navegar pelos tópicos e encontrar orientação.
+Conheça as práticas recomendadas relacionadas ao design e envio com o Adobe Campaign. Use os links abaixo para navegar pelos tópicos e encontrar orientação.
 
 <table>
 <tr>
@@ -33,7 +33,7 @@ Saiba mais sobre as práticas recomendadas relacionadas ao design e envio de del
     </a>
     <div>
       <a href="optimize-delivery.md">
-    <strong>Otimizar a entrega</strong>
+    <strong>Otimizar o delivery</strong>
     </a>
     </div>
     <p>
@@ -46,11 +46,11 @@ Saiba mais sobre as práticas recomendadas relacionadas ao design e envio de del
     </a>
     <div>
       <a href="use-templates.md">
-    <strong>Usar modelos</strong>
+    <strong>Usar templates</strong>
     </a>
     </div>
     <p>
-    <em>Facilitar e prender novos delivery</em>
+    <em>Facilitar e agilizar novos deliveries</em>
     <p>
   </td>
   <td>
@@ -70,20 +70,20 @@ Saiba mais sobre as práticas recomendadas relacionadas ao design e envio de del
 <tr>
   <td>
     <a href="define-the-right-audience.md">
-      <img alt="Target" src="assets/do-not-localize/profiles.svg" width="60px"/>
+      <img alt="Público-alvo" src="assets/do-not-localize/profiles.svg" width="60px"/>
     </a>
     <div>
       <a href="define-the-right-audience.md">
-    <strong>Definir a audiência correta</strong>
+    <strong>Definir o público-alvo correto</strong>
     </a>
     </div>
     <p>
-    <em>A população-alvo é fundamental</em>
+    <em>A população direcionada é fundamental</em>
     <p>
   </td>
    <td>
     <a href="check-before-sending.md">
-      <img alt="Marque" src="assets/do-not-localize/start.svg" width="60px"/>
+      <img alt="Verificar" src="assets/do-not-localize/start.svg" width="60px"/>
     </a>
     <div>
       <a href="check-before-sending.md">
@@ -104,7 +104,7 @@ Saiba mais sobre as práticas recomendadas relacionadas ao design e envio de del
     </a>
     </div>
     <p>
-    <em>Controle de envio e solução de problemas</em>
+    <em>Controlar envio e solucionar problemas</em>
     <p>
   </td>
 </tr>
@@ -112,7 +112,7 @@ Saiba mais sobre as práticas recomendadas relacionadas ao design e envio de del
 
 Consulte também:
 
-* [Introdução à entregabilidade](../../delivery/using/about-deliverability.md)
+* [Introdução à capacidade de entrega](../../delivery/using/about-deliverability.md)
 
 * [Etapas de criação do delivery](../../delivery/using/steps-about-delivery-creation-steps.md)
 
