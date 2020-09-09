@@ -14,18 +14,18 @@ discoiquuid: 8d076211-10a6-4a98-b0d2-29dad154158c
 index: y
 internal: n
 snippet: y
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 6c5e11f24537d2956ade49fe0f4a8ffebdbbabcf
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1130'
-ht-degree: 94%
+ht-degree: 100%
 
 ---
 
 
 # Templates de campanha de marketing {#campaign-templates}
 
-Campaign templates are centralized in the **[!UICONTROL Resources > Templates > Campaign templates]** node. Um template de parâmetro é fornecido como padrão. Ele permite criar uma nova campanha usando todos os módulos disponíveis (Documentos, tarefas, seed addresses, etc.), mas os módulos oferecidos dependem dos seus direitos e da configuração da plataforma Adobe Campaign.
+Os templates do Campaign são centralizados no nó **[!UICONTROL Resources > Templates > Campaign templates]**. Um template de parâmetro é fornecido como padrão. Ele permite criar uma nova campanha usando todos os módulos disponíveis (Documentos, tarefas, seed addresses, etc.), mas os módulos oferecidos dependem dos seus direitos e da configuração da plataforma Adobe Campaign.
 
 ## Criar ou duplicar um template de campanha {#creating-or-duplicating-a-campaign-template}
 
@@ -71,23 +71,23 @@ Em uma configuração padrão, os templates de campanha são centralizados no n�
 
 >[!NOTE]
 >
->A árvore é exibida quando você clica no ícone **[!UICONTROL Explorer]** na página inicial.
+>A árvore é exibida ao clicar no ícone **[!UICONTROL Explorer]** na página inicial.
 
 Um template pronto para usar é fornecido para criar uma campanha para a qual nenhuma configuração específica foi definida. Você pode criar e configurar seus templates de campanha e, em seguida, criar campanhas a partir desses templates.
 
 A criação e a configuração dos templates de campanha são apresentadas em [Templates de campanha](#campaign-templates).
 
-For more on campaign creation, refer to [this video](../../campaign/using/marketing-campaign-deliveries.md#create-email-video).
+Para saber mais sobre criações de campanha, assista a [este vídeo](../../campaign/using/marketing-campaign-deliveries.md#create-email-video).
 
 ## Configuração dos módulos disponíveis {#configuration-of-the-available-modules}
 
 ### Seleção do módulo {#module-selection}
 
-The **[!UICONTROL Advanced campaign settings...]** link lets you enable and disable jobs for the campaigns based on this template. Selecione as funções que deseja habilitar nas campanhas criadas com base neste template.
+O link **[!UICONTROL Advanced campaign settings...]** permite habilitar e desabilitar tarefas para as campanhas com base neste modelo. Selecione as funções que deseja habilitar nas campanhas criadas com base neste template.
 
 ![](assets/s_ncs_user_op_template_tab1.3.png)
 
-Se uma funcionalidade não estiver selecionada, os elementos relativos ao processo (menus, ícones, opções, guias, subguias etc.) não aparecerão na interface do template ou em campanhas baseadas nesse template. As guias à esquerda dos detalhes da campanha geralmente coincidem com os processos selecionados no template. Por exemplo, se a opção **Expenses and objectives** não estiver selecionada, a guia correspondente a **[!UICONTROL Budget]** não será exibida em campanhas baseadas no template.
+Se uma funcionalidade não estiver selecionada, os elementos relativos ao processo (menus, ícones, opções, guias, subguias etc.) não aparecerão na interface do template ou em campanhas baseadas nesse template. As guias à esquerda dos detalhes da campanha geralmente coincidem com os processos selecionados no template. Por exemplo, se a opção **Expenses and objectives** não estiver selecionada, a guia correspondente a **[!UICONTROL Budget]** não será exibida em campanhas que se baseiam no template.
 
 Além disso, os atalhos para as janelas de configuração são adicionados ao painel de campanha. Quando uma funcionalidade é habilitada, um link direto dá acesso a ela a partir do painel de campanha.
 
@@ -127,7 +127,7 @@ Os links e as guias a seguir serão exibidos:
 
 * **Documentos**
 
-   Quando este módulo é selecionado, uma guia adicional é adicionada à guia **[!UICONTROL Edition]** do template e às campanhas baseadas nesse template. Os documentos anexados podem ser adicionados a partir do template ou individualmente para cada campanha.
+   Quando este módulo é selecionado, uma guia adicional é adicionada à guia **[!UICONTROL Edition]** do template e às campanhas com base nesse template. Os documentos anexados podem ser adicionados a partir do template ou individualmente para cada campanha.
 
    ![](assets/s_ncs_user_op_template_activate_3.png)
 
@@ -137,9 +137,9 @@ Os links e as guias a seguir serão exibidos:
 
    ![](assets/s_ncs_user_op_template_activate_4.png)
 
-* **Construção do target e workflows**
+* **Direcionamento e workflows**
 
-   Quando você seleciona o módulo **[!UICONTROL Targeting and workflows]**, uma guia é adicionada para permitir que você crie um ou mais workflows para campanhas com base nesse template. Os workflows também podem ser configurados individualmente para cada campanha com base nesse template.
+   Ao selecionar o módulo **[!UICONTROL Targeting and workflows]**, uma guia é adicionada para permitir que você crie um ou mais workflows para campanhas com base nesse template. Os workflows também podem ser configurados individualmente para cada campanha com base nesse template.
 
    ![](assets/s_ncs_user_op_template_activate_5.png)
 
@@ -149,11 +149,11 @@ Os links e as guias a seguir serão exibidos:
 
 * **Aprovação**
 
-   Se você selecionar a opção **[!UICONTROL Approval]**, será possível selecionar os processos a serem aprovados, assim como os operadores de aprovação.
+   Se você selecionar a opção **[!UICONTROL Approval]**, será possível selecionar os processos que serão aprovados, assim como os operadores de aprovação.
 
    ![](assets/s_ncs_user_op_template_activate_5b.png)
 
-* **Despesas e metas**
+* **Despesas e direcionamentos**
 
    Quando esse módulo é selecionado, uma guia **[!UICONTROL Budget]** é adicionada aos detalhes do template e às campanhas com base nesse template para que o orçamento associado possa ser selecionado.
 
@@ -189,7 +189,7 @@ Ao criar um template de campanha, você precisa inserir as seguintes informaçõ
 
 ### Parâmetros de execução do template {#template-execution-parameters}
 
-The **[!UICONTROL Advanced campaign settings...]** link lets you configure the advanced options of the template for processing the delivery target (control group, seed addresses, etc.) e a configuração da medição da campanha e da execução do workflow.
+O link **[!UICONTROL Advanced campaign settings...]** permite configurar as opções avançadas dos modelos para processar o direcionamento do delivery (grupo de controle, seed addresses etc.) e a configuração da medição da campanha e da execução do workflow.
 
 ![](assets/s_ncs_user_op_template_tab1.2.png)
 
@@ -197,7 +197,7 @@ The **[!UICONTROL Advanced campaign settings...]** link lets you configure the a
 
 Você pode criar uma agenda reversa para uma campanha, por exemplo, para preparar um evento cuja data é conhecida antecipadamente. Os templates de campanha agora permitem calcular a data de início de uma tarefa com base na data de término de uma campanha.
 
-Na caixa Configuração da tarefa, vá para a **[!UICONTROL Implementation schedule]** área e marque a **[!UICONTROL The start date is calculated based on the campaign end date]** caixa. (Aqui, &quot;start date&quot; é a data de início da tarefa). Vá para o campo **[!UICONTROL Start]** e insira um intervalo: a tarefa iniciará antes da data de término da campanha. Se você inserir um período mais longo do que a campanha deve durar, a tarefa começará antes da campanha.
+Na caixa de configuração da tarefa, vá para a área **[!UICONTROL Implementation schedule]** e marque a caixa **[!UICONTROL The start date is calculated based on the campaign end date]**. (Aqui, “start date” é a data de início da tarefa). Vá para o campo **[!UICONTROL Start]** e insira um intervalo: a tarefa iniciará antes da data de término da campanha. Se você inserir um período mais longo do que a campanha deve durar, a tarefa começará antes da campanha.
 
 ![](assets/mrm_task_in_template_start_date.png)
 
