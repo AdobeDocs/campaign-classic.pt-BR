@@ -13,9 +13,9 @@ discoiquuid: 16dbe423-018f-4666-9901-2120a8dc609a
 index: y
 internal: n
 snippet: y
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: bc54cef4c44be4c694e062f56685dbb09d2fcf8e
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '902'
 ht-degree: 100%
 
@@ -75,7 +75,7 @@ Com o Adobe Campaign, você pode usar estratégias diferentes para criar audiên
 
 [Clique aqui para saber mais](../../delivery/using/steps-defining-the-target-population.md).
 
-## O que é um fluxo de trabalho? {#what-is-a-workflow-}
+## O que é um workflow? {#what-is-a-workflow-}
 
 O Adobe Campaign inclui fluxos de trabalho para organizar a gama completa de processos e tarefas em diferentes módulos do servidor de aplicativos. Esse ambiente gráfico abrangente permite criar processos, inclusive segmentação, execução de campanha, processamento de arquivos, participação humana, etc. O mecanismo de workflow executa e rastreia esses processos.
 
@@ -83,11 +83,11 @@ Você pode usar um workflow, por exemplo, para baixar um arquivo de um servidor,
 
 Um workflow também pode envolver um ou mais operadores a serem notificados ou que podem fazer escolhas e aprovar processos. Dessa forma, é possível criar uma ação de delivery, atribuir uma tarefa a um ou mais operadores para trabalhar no conteúdo, especificar alvos e aprovar testes antes de iniciar a delivery.
 
-[Clique aqui para saber mais](../../workflow/using/about-workflows.md) sobre fluxos de trabalho. Você também pode ler as [práticas recomendadas de fluxo de trabalho](../../workflow/using/building-a-workflow.md).
+[Clique aqui para saber mais](../../workflow/using/about-workflows.md) sobre fluxos de trabalho. Você também pode ler as [práticas recomendadas de workflow](../../workflow/using/building-a-workflow.md).
 
 ## Como criar e enviar o primeiro e-mail? {#how-to-create-and-send-a-first-email-}
 
-[Clique aqui para saber mais](../../delivery/using/about-email-channel.md) ou [assista a este vídeo](https://docs.adobe.com/content/help/en/campaign-learn/campaign-classic-tutorials/getting-started/creating-a-campaign-and-an-email.html) para criar um e-mail em uma campanha.
+[Clique aqui para saber mais](../../delivery/using/about-email-channel.md) ou [assista a este vídeo](https://docs.adobe.com/content/help/pt-BR/campaign-classic-learn/tutorials/getting-started/creating-a-campaign-and-an-email.html) para criar um e-mail em uma campanha.
 
 ## Como enviar mensagens SMS? {#how-to-send-sms-messages-}
 
@@ -107,9 +107,9 @@ Você pode usar o editor de conteúdo digital do Adobe Campaign para criar uma p
 
 [Clique aqui para saber mais](../../web/using/creating-a-landing-page.md).
 
-## Como posso rastrear entregas? {#how-can-i-track-deliveries-}
+## Como posso rastrear deliveries? {#how-can-i-track-deliveries-}
 
-Você pode rastrear e monitorar as entregas feitas com o Campaign Classic por meio de [relatórios de entrega](../../reporting/using/delivery-reports.md) exclusivos.
+Você pode rastrear e monitorar os deliveries feitos com o Campaign Classic por meio de [relatórios de delivery](../../reporting/using/delivery-reports.md) exclusivos.
 
 Saiba mais sobre a gestão de rastreamento no Campaign [nesta página](https://helpx.adobe.com/br/campaign/kb/acc-tracking.html).
 
