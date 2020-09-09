@@ -12,21 +12,21 @@ discoiquuid: 16f50f5f-cbad-4de7-aa73-38615ae76ac0
 index: y
 internal: n
 snippet: y
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: f7ed7e59be2cfbde467b0c80d21cfbf52016a2b8
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '72'
-ht-degree: 4%
+ht-degree: 100%
 
 ---
 
 
 # Fork{#fork}
 
-Um garfo permite ativar todas as atividades de saída em paralelo.
+Um fork permite ativar todas as atividades de saída em paralelo.
 
-Por exemplo, você pode usar a atividade no contexto da criação de conteúdo e da automação de envio de delivery, para iniciar o cálculo de públicos alvos e a criação de conteúdo ao mesmo tempo. Um caso de uso dedicado está disponível [nesta seção](../../delivery/using/automating-via-workflows.md#creating-the-delivery-and-its-content).
+Por exemplo, você pode usar a atividade no contexto da criação de conteúdo e da automação de envio de delivery para iniciar o cálculo de públicos-alvos e a criação de conteúdo ao mesmo tempo. Um caso de uso específico está disponível [nesta seção](../../delivery/using/automating-via-workflows.md#creating-the-delivery-and-its-content).
 
-Para configurar a atividade, abra-a e defina o número e o rótulo das transições de saída desejadas.
+Para configurar a atividade, abra-a e então defina o número e o rótulo das transições de saída desejadas.
 
 ![](assets/s_user_segmentation_fork.png)
