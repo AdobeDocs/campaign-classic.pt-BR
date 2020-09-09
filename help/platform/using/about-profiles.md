@@ -14,22 +14,22 @@ discoiquuid: 5addada8-0185-488f-9825-83f60981c139
 index: y
 internal: n
 snippet: y
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 9a8c3586482d05648de3bdecfdfabcc094c70dbf
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '915'
-ht-degree: 77%
+ht-degree: 100%
 
 ---
 
 
 # Sobre perfis{#about-profiles}
 
-Os perfis (clientes, clientes potenciais, assinantes de boletim informativo etc.) são centralizados no banco de dados do Adobe Campaign. Há vários mecanismos possíveis para obter perfis e criar esse banco de dados: coleta on-line via formulários Web, importação manual ou automática de arquivos de texto, replicação com bancos de dados corporativos ou outros sistemas de informações. Com a Adobe Campaign, você pode incorporar históricos de marketing, informações de compra, preferências, dados CRM e quaisquer dados de PI relevantes em uma visualização consolidada para analisar e executar ações.
+Os perfis (clientes, clientes potenciais, assinantes de boletim informativo etc.) são centralizados no banco de dados do Adobe Campaign. Há vários mecanismos possíveis para obter perfis e criar esse banco de dados: coleta on-line via formulários Web, importação manual ou automática de arquivos de texto, replicação com bancos de dados corporativos ou outros sistemas de informações. Com o Adobe Campaign, você pode incorporar o histórico de marketing, informações de compras, preferências, dados de CRM e quaisquer dados de PI relevantes em uma exibição consolidada para analisar e tomar decisões.
 
-No Adobe Campaign, os destinatários são os perfis padrão direcionados para envio de entregas (e-mails, SMS etc.). Graças aos dados dos destinatários que são armazenados no banco de dados, você poderá filtrar o destino que receberá qualquer entrega e adicionar dados de personalização ao seu conteúdo de entrega. Existem outros tipos de perfis no banco de dados. Esses perfis foram projetados para diferentes usos. Por exemplo, perfis iniciais são feitos para testar suas entregas antes que elas sejam enviadas ao destino final.
+No Adobe Campaign, os recipients são os perfis padrão direcionados para envio de deliveries (emails, SMS, etc.). Graças aos dados dos recipients que são armazenados no banco de dados, você poderá filtrar o recipient que receberá qualquer delivery e adicionar dados de personalização ao seu conteúdo de delivery. Existem outros tipos de perfis no banco de dados. Esses perfis foram projetados para diferentes usos. Por exemplo, perfis iniciais são feitos para testar seus deliveries antes que sejam enviados ao público-alvo final.
 
-![](assets/do-not-localize/how-to-video.png) [Entenda o conceito de perfis em vídeo](#create-profiles-video)
+![](assets/do-not-localize/how-to-video.png) [Compreender o conceito de perfis em vídeo](#create-profiles-video)
 
 ## Tipos de perfil {#profile-types}
 
@@ -41,9 +41,9 @@ Os perfis podem ser identificados com base no espaço de armazenamento. Isso sig
 
 ## Perfis de destinatário {#recipient-profiles}
 
-Os destinatários de entrega são armazenados no banco de dados como perfis que contêm as informações vinculadas a eles: sobrenome, nome, endereço, assinaturas, entregas, etc. Ao criar campanhas, é possível definir o direcionamento das entregas a uma seleção de perfis da base de acordo com critérios simples ou avançados.
+Os recipients do delivery são armazenados no banco de dados como perfis que contêm as informações vinculadas a eles: sobrenome, nome, endereço, assinaturas, deliveries, etc. Ao criar campanhas, é possível definir o direcionamento dos deliveries a uma seleção de perfis da base de acordo com critérios simples ou avançados.
 
-Também é possível criar campanhas direcionadas a destinatários cujos perfis estão armazenados em arquivos, em vez de em banco de dados. Elas são conhecidas como entregas &quot;externas&quot;. Para obter mais informações sobre esse tipo de entrega, consulte [esta página](../../delivery/using/steps-defining-the-target-population.md#selecting-external-recipients).
+Também é possível criar campanhas direcionadas a destinatários cujos perfis estão armazenados em arquivos, em vez de em banco de dados. Elas são conhecidas como deliveries “externos”. Para obter mais informações sobre esse tipo de delivery, consulte [esta página](../../delivery/using/steps-defining-the-target-population.md#selecting-external-recipients).
 
 Os principais métodos para criar perfis de destinatários são os seguintes:
 
@@ -57,7 +57,7 @@ Os principais métodos para criar perfis de destinatários são os seguintes:
 
 ## Profiles and targets {#profiles-and-targets}
 
-The **[!UICONTROL Profiles and targets]** link lets you display recipients stored in Adobe Campaign database. É possível criar um novo destinatário, editar um destinatário existente e acessar o perfil dele. Para obter mais informações, consulte [esta página](../../platform/using/editing-a-profile.md).
+O link **[!UICONTROL Profiles and targets]** permite exibir os recipients armazenados no banco de dados do Adobe Campaign. É possível criar um novo destinatário, editar um destinatário existente e acessar o perfil dele. Para obter mais informações, consulte [esta página](../../platform/using/editing-a-profile.md).
 
 ![](assets/d_ncs_user_interface_target_link.png)
 
@@ -73,7 +73,7 @@ A página de destinatários permite executar operações frequentes em perfis: e
 
 Para manipulações de perfil mais avançadas, é necessário editar a árvore do Adobe Campaign. Para fazer isso, clique no link **[!UICONTROL Explorer]** na página inicial do Adobe Campaign.
 
-By default, recipients are stored in the **[!UICONTROL Profiles and Targets > Recipients]** node of the tree. É possível criar destinatários nesta tela, bem como:
+Por padrão, os recipients são armazenados no nó **[!UICONTROL Profiles and Targets > Recipients]** da árvore. É possível criar destinatários nesta tela, bem como:
 
 * classificar e filtrar os perfis do banco de dados; consulte [Opções de filtragem](../../platform/using/filtering-options.md),
 * mover, copiar ou excluir perfis do banco de dados; consulte [Gerenciamento de perfis](../../platform/using/managing-profiles.md),
@@ -89,7 +89,7 @@ O layout geral do Adobe Campaign Explorer é apresentado em [Uso do Adobe Campai
 
 >[!NOTE]
 >
->Também é possível exibir uma visualização avançada dessa lista na árvore do Adobe Campaign clicando no link **[!UICONTROL Profiles and targets > Recipients]** A exibição da lista pode ser configurada para atender às suas necessidades. É possível adicionar ou excluir colunas, definir a ordem das colunas, classificar dados etc. A configuração de exibição de lista é descrita em [Uso do Adobe Campaign Explorer](../../platform/using/adobe-campaign-workspace.md#using-adobe-campaign-explorer).
+>Também é possível exibir uma visualização avançada dessa lista na árvore do Adobe Campaign clicando no link **[!UICONTROL Profiles and targets > Recipients]**. A exibição da lista pode ser configurada para atender às suas necessidades. É possível adicionar ou excluir colunas, definir a ordem das colunas, classificar dados etc. A configuração de exibição de lista é descrita em [Uso do Adobe Campaign Explorer](../../platform/using/adobe-campaign-workspace.md#using-adobe-campaign-explorer).
 >
 >Também é possível definir as visualizações de destinatários. Para obter mais informações sobre essa funcionalidade, consulte [Pastas e exibições](../../platform/using/access-management.md#folders-and-views).
 
@@ -101,32 +101,32 @@ Os perfis ativos são aqueles que são contados para fins de cobrança.
 
 A cobrança só afeta perfis que estão **ativos**. Um perfil é considerado ativo quando ele é visado ou recebe comunicação nos últimos 12 meses por meio de qualquer canal.
 
-Os perfis excluídos durante a preparação da entrega (regras de tipologia, quarentenas) não são levados em consideração. Um perfil que foi visado por várias entregas será contado apenas uma vez.
+Os perfis excluídos durante a preparação do delivery (regras de tipologia, quarentenas) não são levados em consideração. Um perfil que foi direcionado por vários deliveries será contado apenas uma vez.
 
 >[!NOTE]
 >
 >Os canais Facebook e Twitter não são considerados.
 
-Você pode ter uma visão geral do **[!UICONTROL Number of active profiles]** menu Campaign Standard **[!UICONTROL Administration > Campaign Management > Customer metrics]** . The actual count is performed by the **[!UICONTROL Number of active billing profiles]** (**[!UICONTROL billingActiveContactCount]**) [technical workflow](../../workflow/using/deliveries.md), which runs every day and adds the new data to the existing report for the current period in the **[!UICONTROL Customer metrics]** menu. Cada período dura 12 meses.
+Você pode ter uma visão geral do **[!UICONTROL Number of active profiles]** a partir do menu **[!UICONTROL Administration > Campaign Management > Customer metrics]** do Campaign Standard. A contagem real é executada pelo **[!UICONTROL Number of active billing profiles]** [workflow técnico](../../workflow/using/deliveries.md) (**[!UICONTROL billingActiveContactCount]**), que é executado diariamente e adiciona os novos dados ao relatório existente para o período atual no menu **[!UICONTROL Customer metrics]**. Cada período dura 12 meses.
 
-Se você estiver hospedado no AWS e usando o Campaign Classic da versão 8931, também poderá monitorar o número de perfis ativos usados em suas instâncias diretamente do Painel de controle do Campaign. For more on this, refer to the [Control Panel documentation](https://docs.adobe.com/content/help/en/control-panel/using/performance-monitoring/active-profiles-monitoring.html).
+Se você estiver hospedado no AWS usando o Campaign Classic a partir da build 8931, também poderá monitorar o número de perfis ativos usados em suas instâncias diretamente do Painel de controle do Campaign. Para obter mais informações, consulte a [documentação do Painel de controle do Campaign](https://docs.adobe.com/content/help/pt-BR/control-panel/using/performance-monitoring/active-profiles-monitoring.html).
 
 ## Como criar e gerenciar perfis {#create-profiles-video}
 
-Saiba como acessar os dados do perfil, classificar e filtrar perfis e criar e gerenciar perfis manualmente.
+Saiba como acessar os dados do perfil, classificar e filtrar perfis, além de criar e gerenciar perfis manualmente.
 
 Este vídeo também explica a conformidade da Adobe Campaign Classic com os Regulamentos Gerais de Proteção de Dados.
 
->[!VIDEO](https://video.tv.adobe.com/v/35611?quality=12)
+>[!VIDEO](https://video.tv.adobe.com/v/35611?quality=12&captions=por_br)
 
 **Consulte também**
 
-* [Suspensão da privacidade na Campanhas](https://helpx.adobe.com/br/campaign/kb/acc-privacy.html)
+* [Gerenciamento da privacidade no Campaign](https://helpx.adobe.com/br/campaign/kb/acc-privacy.html)
 
-* [Definir a população do público alvo](../../delivery/using/define-the-right-audience.md)
+* [Definir a população de público-alvo](../../delivery/using/define-the-right-audience.md)
 
 * [Criar query e dados de segmento em workflows](../../workflow/using/targeting-data.md)
 
 * [Selecionar target mapping](../../delivery/using/selecting-a-target-mapping.md)
 
-* [Definir a audiência - práticas recomendadas](../../delivery/using/define-the-right-audience.md)
+* [Definir o público-alvo – práticas recomendadas](../../delivery/using/define-the-right-audience.md)
