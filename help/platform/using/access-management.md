@@ -14,11 +14,11 @@ discoiquuid: c0eb06fd-192c-4ee4-9a38-c9bedbe6aea0
 index: y
 internal: n
 snippet: y
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 6c66718fbbf13486d52b0cc98eae6c854b34030d
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2955'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -243,11 +243,11 @@ Os grupos de operadores padrão são:
 
 1. **[!UICONTROL Administrator]**
 
-   Os operadores neste grupo têm acesso total à instância. Administradores são usuários que podem acessar as partes mais técnicas da interface. Eles assumem a **[!UICONTROL Administration]** função e garantem que a plataforma esteja configurada.
+   Os operadores neste grupo têm acesso total à instância. Os administradores funcionais são usuários que podem acessar as partes mais técnicas da interface. Eles assumem a função **[!UICONTROL Administration]** e garantem que a plataforma esteja configurada.
 
-   Este grupo contém o seguinte direito nomeado:
+   Esse grupo contém os seguintes direitos nomeados:
 
-   * **[!UICONTROL ADMINISTRATION]**: direito de executar/criar/editar/excluir qualquer objeto, como fluxo de trabalho, delivery, scripts etc.
+   * **[!UICONTROL ADMINISTRATION]**: direito a executar/criar/editar/excluir qualquer objeto, como workflow, delivery, scripts, etc.
 
 1. **[!UICONTROL Delivery operators]**
 
@@ -255,12 +255,12 @@ Os grupos de operadores padrão são:
 
    Esse grupo contém os seguintes direitos nomeados:
 
-   * **[!UICONTROL PREPARE DELIVERIES]**: direito de criar, editar e iniciar a análise de delivery,
-   * **[!UICONTROL START DELIVERIES]**: direito de aprovar delivery previamente analisados.
+   * **[!UICONTROL PREPARE DELIVERIES]**: Direito de criar, editar e iniciar a análise de delivery,
+   * **[!UICONTROL START DELIVERIES]**: Direito de aprovar deliveries anteriormente analisados.
 
 1. **[!UICONTROL Campaign managers]**
 
-   Os operadores nesse grupo podem gerenciar campanhas de marketing: isso permite acessar os objetos vinculados às campanhas (planos, programas, workflows, orçamentos, etc.) no âmbito do **[!UICONTROL Campaign]** (módulo Adobe Campaign opcional).
+   Os operadores nesse grupo podem gerenciar campanhas de marketing: permite acessar os objetos vinculados às campanhas (planos, programas, workflows, orçamentos, etc.) no âmbito da estrutura de **[!UICONTROL Campaign]** (módulo opcional do Adobe Campaign).
 
    Esse grupo contém os seguintes direitos nomeados:
 
@@ -273,7 +273,7 @@ Os grupos de operadores padrão são:
 
 1. **[!UICONTROL Content contributors]**
 
-   The operators in this group can access the Content folders, within the framework of **[!UICONTROL Content management]** (optional Adobe Campaign module). Esse grupo não concede direitos adicionais.
+   Os operadores nesse grupo podem acessar as pastas de conteúdo, dentro da estrutura de **[!UICONTROL Content management]** (módulo opcional do Adobe Campaign). Esse grupo não concede direitos adicionais.
 
 1. **[!UICONTROL Access to reports]**
 
@@ -289,7 +289,7 @@ Os grupos de operadores padrão são:
 
 1. Gerenciamento local / central
 
-   These groups let you use **[!UICONTROL Distributed marketing]** (optional Adobe Campaign module).
+   Esses grupos permitem a utilização de **[!UICONTROL Distributed marketing]** (módulo opcional do Adobe Campaign).
 
 1. **[!UICONTROL Offer managers]**
 
