@@ -14,11 +14,11 @@ discoiquuid: 9d80be19-8dde-4278-ab5f-23f364fe422e
 index: y
 internal: n
 snippet: y
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 3566f42b92cc1b7280bf9b6e9e0b4da7a54f61db
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '345'
-ht-degree: 66%
+ht-degree: 100%
 
 ---
 
@@ -42,7 +42,7 @@ Essa opção não processa erros relacionados à configuração de atividade, ou
 
 Cada evento de entrada deve especificar um target definido por esses parâmetros.
 
-Only when the **[!UICONTROL Specified by the inbound event]** option is selected.
+Apenas quando a opção **[!UICONTROL Specified by the inbound event]** está selecionada.
 
 ## Parâmetros de output {#output-parameters}
 
@@ -50,7 +50,7 @@ Only when the **[!UICONTROL Specified by the inbound event]** option is selected
 * schema
 * recCount
 
-Esse conjunto de três valores identifica o target resultante do delivery em tempo real. **[!UICONTROL tableName]** é o nome da tabela que memoriza os identificadores do target, **[!UICONTROL schema]** é o schema do público (geralmente nms:recipient) e **[!UICONTROL recCount]** é o número de elementos na tabela.
+Esse conjunto de três valores identifica o target resultante do delivery em tempo real. **[!UICONTROL tableName]** é o nome da tabela que memoriza os identificadores do público-alvo, **[!UICONTROL schema]** é o esquema do público (geralmente nms:recipient) e **[!UICONTROL recCount]** é o número de elementos na tabela.
 
 A transição associada ao complemento tem os mesmos parâmetros.
 
@@ -58,12 +58,12 @@ A transição associada ao complemento tem os mesmos parâmetros.
 
 Esta seção explica como configurar um delivery contínuo.
 
-The **continuous delivery** lets you add new recipients to an existing delivery and avoids you having to create a new delivery each time a new recipient is added. Você pode atualizar o anúncio diretamente no fluxo de trabalho da campanha e ele atualizará o modelo na pasta Recursos do template do delivery.
+O **delivery contínuo** permite adicionar novos recipients a um delivery existente, o que evita a criação de um novo delivery cada vez que um novo recipient for adicionado. Você pode atualizar o criativo diretamente no workflow da campanha e ele atualizará o modelo na pasta Recursos do template do delivery.
 
-Um delivery contínuo criará um único delivery e logs do delivery (wideLog) e logs de rastreamento que fazem referência a um delivery a cada execução.
+Um delivery contínuo criará um ÚNICO delivery. Logs do delivery (broadLog) e logs de rastreamento que fazem referência a um delivery serão adicionados a cada execução.
 
 ![Delivery contínuo](assets/delivery_continuous.jpg)
 
 Este vídeo mostra como configurar um delivery contínuo com um query incremental.
 
->[!VIDEO](https://video.tv.adobe.com/v/25039?quality=12)
+>[!VIDEO](https://video.tv.adobe.com/v/25039?quality=12&captions=por_br)
