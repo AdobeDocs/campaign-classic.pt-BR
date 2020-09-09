@@ -14,22 +14,22 @@ discoiquuid: 8d076211-10a6-4a98-b0d2-29dad154158c
 index: y
 internal: n
 snippet: y
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 2a5711c4478f8378c079fec4792ecbb95266ad4b
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2956'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
 
 # Deliveries de campanha de marketing {#marketing-campaign-deliveries}
 
-As entregas podem ser criadas através do painel de campanha, um workflow de campanha ou diretamente através da visão geral das remessas.
+Os deliveries podem ser criados através do painel da campanha, de um workflow de campanha ou diretamente através da visão geral dos deliveries.
 
-![](assets/do-not-localize/how-to-video.png) [Descubra este recurso em vídeo](#create-email-video)
+![](assets/do-not-localize/how-to-video.png) [Descubra este recurso no vídeo](#create-email-video)
 
-## Criação de deliveries {#creating-deliveries}
+## Criar deliveries {#creating-deliveries}
 
 Para criar um delivery vinculado a uma campanha, clique no link **[!UICONTROL Add a delivery]** no painel de campanha.
 
@@ -57,7 +57,7 @@ Algumas dessas informações são herdadas do template.
 
 Para criar o target do delivery, você pode definir critérios de filtragem para os recipients no banco de dados. Este modo de seleção de recipient é apresentado na seção [Enviar Mensagens](../../delivery/using/steps-defining-the-target-population.md) .
 
-### Exemplo: entrega para um grupo de recipients {#example--delivering-to-a-group-of-recipients}
+### Exemplo: delivery para um grupo de recipients {#example--delivering-to-a-group-of-recipients}
 
 Você pode importar uma população para uma lista e depois direcionar essa lista nas remessas.
 
@@ -85,7 +85,7 @@ O guia [Automating with workflows](../../workflow/using/architecture.md) inclui 
 
 Este vídeo explica como criar uma campanha e um email no Adobe Campaign Classic.
 
->[!VIDEO](https://video.tv.adobe.com/v/25604?quality=12)
+>[!VIDEO](https://video.tv.adobe.com/v/25604?quality=12&captions=por_br)
 
 
 #### Criação de um workflow para construção do target {#creating-a-targeting-workflow}
@@ -228,7 +228,7 @@ Você pode definir um grupo de controle no nível da campanha, nesse caso, o gru
 
    ![](assets/s_ncs_user_edit_op_general_tab_exe_target.png)
 
-The configuration procedure is presented in [Extracting the control group from the main target](#extracting-the-control-group-from-the-main-target) and [Adding a control group](#adding-a-population).
+O procedimento de configuração é apresentado em [Extração do grupo de controle do público-alvo principal](#extracting-the-control-group-from-the-main-target) e [Adicionar um grupo de controle](#adding-a-population).
 
 #### Ativar o grupo de controle para um delivery {#activating-the-control-group-for-a-delivery}
 
@@ -247,7 +247,7 @@ Por padrão, a configuração do grupo de controle definida no nível da campanh
 1. Clique na guia **[!UICONTROL Control group]** e selecione **[!UICONTROL Enable and edit control group configuration]**.
 1. Clique em **[!UICONTROL Edit...]** para configurar o grupo de controle.
 
-The configuration procedure is presented in [Extracting the control group from the main target](#extracting-the-control-group-from-the-main-target) and [Adding a control group](#adding-a-population).
+O procedimento de configuração é apresentado em [Extração do grupo de controle do público-alvo principal](#extracting-the-control-group-from-the-main-target) e [Adicionar um grupo de controle](#adding-a-population).
 
 #### Extração do grupo de controle do target principal {#extracting-the-control-group-from-the-main-target}
 
@@ -266,7 +266,7 @@ Clique em **[!UICONTROL Next]** para definir a ordem de classificação (se nece
 
 Essa configuração é equivalente a uma atividade de compartilhamento no workflow, que permite dividir o target em subconjuntos. O grupo de controle é um desses subconjuntos. Consulte [esta seção](../../workflow/using/architecture.md) para obter mais informações.
 
-### Adding a control group {#adding-a-population}
+### Adicionar um grupo de controle {#adding-a-population}
 
 Você pode definir uma nova população a ser usada como um grupo de controle. Essa população pode vir de um grupo de recipients ou você pode criá-la por meio de uma query específica.
 
@@ -278,7 +278,7 @@ Você pode definir uma nova população a ser usada como um grupo de controle. E
 
 ## Iniciar um delivery {#starting-a-delivery}
 
-Depois que todas as aprovações tiverem sido concedidas, o delivery estará pronto para ser iniciado. O procedimento de delivery depende do tipo de delivery. Para deliveries de email ou canais móveis, consulte [Iniciar um delivery online](#starting-an-online-delivery) e para entregas por mala direta, consulte [Iniciar um delivery offline ](#starting-an-offline-delivery).
+Depois que todas as aprovações tiverem sido concedidas, o delivery estará pronto para ser iniciado. O procedimento de delivery depende do tipo de delivery. Para deliveries de email ou canais móveis, consulte [Iniciar um delivery online](#starting-an-online-delivery) e para deliveries por mala direta, consulte [Iniciar um delivery offline ](#starting-an-offline-delivery).
 
 ### Iniciar um delivery on-line {#starting-an-online-delivery}
 
