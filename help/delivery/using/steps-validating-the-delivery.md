@@ -1,7 +1,7 @@
 ---
-title: Validando o dleivery
-seo-title: Validando o dleivery
-description: Validando o dleivery
+title: Validação do delivery
+seo-title: Validação do delivery
+description: Validação do delivery
 seo-description: null
 page-status-flag: never-activated
 uuid: 8bf70ea4-5f28-4d85-b5ce-0bd3ed3eea55
@@ -14,24 +14,24 @@ discoiquuid: df29492f-ed73-4ab8-b075-e76b3b9ebce3
 index: y
 internal: n
 snippet: y
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 7ffbbe95247f28115f7e46eb0e94f2612fb4ea93
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1673'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
 
-# Validando o dleivery {#validating-the-delivery}
+# Validação do delivery{#validating-the-delivery}
 
 Quando um delivery for criado e configurado, você deverá validá-lo antes de enviá-lo para o target principal.
 
 Para fazer isso:
 
-1. **Analyze the delivery**: esta etapa permite preparar as mensagens para entregar. Consulte [Análise do delivery](#analyzing-the-delivery).
+1. **Analisar o delivery**: esta etapa permite preparar as mensagens para a entrega. Consulte [Análise do delivery](#analyzing-the-delivery).
 
-   As regras aplicadas durante a análise são apresentadas na [presente seção](#validation-process-with-typologies) . Os modos de validação disponíveis estão detalhados na seção[Alteração do modo de aprovação](#changing-the-approval-mode).
+   As regras aplicadas durante a análise são apresentadas [nesta seção](#validation-process-with-typologies). Os modos de validação disponíveis estão detalhados na seção[Alteração do modo de aprovação](#changing-the-approval-mode).
 
 1. **Send proofs**: esta etapa permite aprovar conteúdo, URLs, campos de personalização, etc. Consulte [Envio de uma prova](../../delivery/using/steps-validating-the-delivery.md#sending-a-proof) e [Definição de um target de prova](../../delivery/using/steps-defining-the-target-population.md#defining-a-specific-proof-target).
 
@@ -103,7 +103,7 @@ Essa guia fornece acesso às seguintes opções:
 * **[!UICONTROL Approval mode]** : esse campo permite a definição do delivery manual ou automática quando a análise é concluída. Os modos de validação são apresentados na seção [Alteração do modo de aprovação](#changing-the-approval-mode).
 * **[!UICONTROL Prepare the delivery parts in the database]** : essa opção permite melhorar o desempenho da análise do delivery. Para obter mais informações, consulte [esta seção](#improving-delivery-analysis).
 * **[!UICONTROL Prepare the personalization data with a workflow]** : 
-essa opção permite preparar os dados de personalização contidos no delivery em um fluxo de trabalho automático, o que pode resultar em um aumento significativo no desempenho para executar a personalização. Para obter mais informações, consulte [Otimização da personalização](../../delivery/using/personalization-fields.md#optimizing-personalization).
+essa opção permite preparar os dados de personalização contidos no delivery em um workflow automático, o que pode resultar em um aumento significativo no desempenho para executar a personalização. Para obter mais informações, consulte [Otimização da personalização](../../delivery/using/personalization-fields.md#optimizing-personalization).
 * **[!UICONTROL Start job in a detached process]** : essa opção permite iniciar a análise do delivery em um processo separado. A função de análise usa o processo do servidor de aplicativos Adobe Campaign (Web nlserver) por padrão. Ao selecionar essa opção, você garante que a análise será concluída mesmo no caso de falha do servidor de aplicativos.
 * **[!UICONTROL Log SQL queries generated during the analysis in the journal]**: essa opção adiciona os logs de consulta SQL ao journal de delivery durante a fase de análise.
 * **[!UICONTROL Ignore personalization scripts during sending]**: essa opção permite ignorar a interpretação das diretivas JavaScript encontradas no conteúdo HTML. Eles serão exibidos como nos conteúdos entregues. Essas diretivas são introduzidas com a tag **&lt;%=**.
@@ -117,7 +117,7 @@ Ao ativar esta opção, o preparo do delivery é executado diretamente no banco 
 Atualmente, essa opção está disponível somente quando as seguintes condições são atendidas:
 * O delivery deve ser um email. Por enquanto, os outros canais não são compatíveis.
 * O mid-sourcing ou roteamento externo não deve ser usado, apenas o tipo de roteamento de delivery em massa. É possível verificar o roteamento usado na guia **[!UICONTROL General]** do **[!UICONTROL Delivery properties]**.
-* Não é possível direcionar uma população proveniente de um arquivo externo. Para uma única entrega, clique no link **[!UICONTROL To]** do **[!UICONTROL Email parameters]** e verifique se a opção **[!UICONTROL Defined in the database]** está selecionada. Para um delivery usado em um fluxo de trabalho, verifique se os destinatários estão **[!UICONTROL Specified by the inbound event(s)]** na guia **[!UICONTROL Delivery]**.
+* Não é possível direcionar uma população proveniente de um arquivo externo. Para um único delivery, clique no link **[!UICONTROL To]** do **[!UICONTROL Email parameters]** e verifique se a opção **[!UICONTROL Defined in the database]** está selecionada. Para um delivery usado em um workflow, verifique se os recipients estão **[!UICONTROL Specified by the inbound event(s)]** na guia **[!UICONTROL Delivery]**.
 * É necessário o uso de um banco de dados PostgreSQL.
 
 ### Configurar a prioridade da análise {#analysis-priority-}
@@ -138,7 +138,7 @@ Se um delivery for muito grande, é melhor atribuir uma prioridade baixa a ele p
 
 ## Envio de uma prova {#sending-a-proof}
 
-Para detectar possíveis erros na configuração da mensagem, a Adobe recomenda configurar um ciclo de validação de entrega. Verifique se o conteúdo é aprovado com a frequência necessária enviando provas para testar os destinatários. Uma prova deve ser enviada toda vez que uma alteração for feita, para aprovar o conteúdo.
+Para detectar possíveis erros na configuração da mensagem, a Adobe recomenda configurar um ciclo de validação de delivery. Verifique se o conteúdo é aprovado com a frequência necessária enviando provas para testar os destinatários. Uma prova deve ser enviada toda vez que uma alteração for feita, para aprovar o conteúdo.
 
 >[!NOTE]
 >
@@ -184,7 +184,7 @@ A guia **[!UICONTROL Advanced]** das propriedades de delivery permite definir as
 As seguintes opções estão disponíveis:
 
 * A primeira opção permite que você mantenha as duplicatas da prova.
-* Ambas as opções a seguir permitem manter recipient que estão na lista de bloqueios e endereços na quarentena. Consulte a descrição dessas opções para o target principal em [Personalizar configurações de exclusão](../../delivery/using/steps-defining-the-target-population.md#customizing-exclusion-settings). Diferentemente do target de um delivery, onde esses endereços são excluídos por padrão, eles serão mantidos por padrão para o target de uma prova.
+* As duas opções a seguir permitem manter em quarentena os recipients que estão nas listas de bloqueios e de endereços. Consulte a descrição dessas opções para o target principal em [Personalizar configurações de exclusão](../../delivery/using/steps-defining-the-target-population.md#customizing-exclusion-settings). Diferentemente do target de um delivery, onde esses endereços são excluídos por padrão, eles serão mantidos por padrão para o target de uma prova.
 * A opção **[!UICONTROL Keep the delivery code for the proof]** permite que você forneça o mesmo código de delivery que o definido para o delivery com o qual ele está relacionado. Este código é especificado na primeira etapa do assistente de delivery.
 * Por padrão, o assunto da prova tem o prefixo &#39;Proof #&#39;, onde # é o número da prova. É possível alterar esse prefixo no campo **[!UICONTROL Label prefix]**.
 
@@ -222,7 +222,7 @@ A guia **[!UICONTROL Rule]** fornece uma lista das regras de tipologia para sere
 
 ## Alterando o modo de aprovação {#changing-the-approval-mode}
 
-A guia **[!UICONTROL Analysis]** das propriedades de delivery permite selecionar o modo de validação. Se os avisos forem gerados durante a análise (ex.: se certos caracteres estiverem acentuados no assunto da entrega etc.), você poderá configurar o delivery para definir se ele ainda deverá ou não ser executado. Por padrão, o usuário deverá confirmar o envio de mensagens no final da fase de análise: essa é a validação **manual**.
+A guia **[!UICONTROL Analysis]** das propriedades de delivery permite selecionar o modo de validação. Se os avisos forem gerados durante a análise (ex.: se certos caracteres estiverem acentuados no assunto do delivery etc.), você poderá configurar o delivery para definir se ele ainda deverá ou não ser executado. Por padrão, o usuário deverá confirmar o envio de mensagens no final da fase de análise: essa é a validação **manual**.
 
 Selecione outro modo de aprovação na lista suspensa no campo apropriado.
 
