@@ -14,11 +14,11 @@ discoiquuid: 185d3256-a21e-47d7-bee7-7b91762ca1e2
 index: y
 internal: n
 snippet: y
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 3566f42b92cc1b7280bf9b6e9e0b4da7a54f61db
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '195'
-ht-degree: 63%
+ht-degree: 100%
 
 ---
 
@@ -41,15 +41,15 @@ O processo de configuração dessa atividade é semelhante ao da criação de um
 
 Para obter um exemplo de uso dessa atividade, consulte esta [seção](../../workflow/using/sending-a-birthday-email.md#creating-a-recurring-delivery-in-a-targeting-workflow).
 
-## Como configurar o delivery recorrente
+## Como configurar um delivery recorrente
 
-Um delivery **** recorrente criará uma nova instância de delivery toda vez que for executado. Por exemplo, se o fluxo de trabalho estiver programado para ser executado uma vez por semana, isso resultará em 52 Delivery após um ano. Isso também significa que o registro abrangente e os logs de rastreamento serão separados por cada instância do delivery.
+Um **delivery recorrente** criará uma nova instância de delivery toda vez que for executado. Por exemplo, se o workflow estiver programado para ser executado uma vez por semana, o resultado será 52 deliveries em um ano. Também significa que o log abrangente e os logs de rastreamento serão separados por cada instância do delivery.
 
 ![Delivery recorrente](assets/delivery_recurring.jpg)
 
 Este vídeo explica como configurar um delivery recorrente e uma atividade de scheduler.
 
->[!VIDEO](https://video.tv.adobe.com/v/25040?quality=12)
+>[!VIDEO](https://video.tv.adobe.com/v/25040?quality=12&captions=por_br)
 
 >[!NOTE]
 >
