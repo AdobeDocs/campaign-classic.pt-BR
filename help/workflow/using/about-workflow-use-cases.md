@@ -11,11 +11,11 @@ topic-tags: about-workflows-and-data-management
 discoiquuid: 40503917-7a53-4d99-96a4-57aa9e98ec87
 internal: n
 snippet: y
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 00a9b7def9d0ad0190c389c6bcde431f8e2f2b44
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '195'
-ht-degree: 87%
+ht-degree: 100%
 
 ---
 
@@ -59,7 +59,7 @@ Eles ajudarão você a descobrir os diferentes contextos nos quais os workflows 
 * [Criptografar e exportar dados usando uma chave instalada no Painel de controle do Campaign](../../workflow/using/how-to-use-workflow-data.md#use-case-gpg-encrypt)
 * [Atualização da lista trimestral usando um query incremental](../../workflow/using/quarterly-list-update.md)
 
-## Targeting {#designing-queries}
+## Direcionamento {#designing-queries}
 
 <img src="assets/do-not-localize/icon_filter.svg" width="60px">
 
