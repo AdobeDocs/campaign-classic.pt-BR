@@ -14,11 +14,11 @@ discoiquuid: 9fc243b2-7b7b-4083-83f6-04c12336492d
 index: y
 internal: n
 snippet: y
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 9a8c3586482d05648de3bdecfdfabcc094c70dbf
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '695'
-ht-degree: 80%
+ht-degree: 100%
 
 ---
 
@@ -27,35 +27,35 @@ ht-degree: 80%
 
 ## Sobre listas no Adobe Campaign {#about-lists-in-adobe-campaign}
 
-Uma lista é um conjunto estático de perfis que pode ser visada em ações de entrega ou atualizada durante as operações de importação ou durante a execução de fluxos de trabalho. Por exemplo, uma população extraída do banco de dados por uma consulta pode fornecer uma lista.
+Uma lista é um conjunto estático de perfis que pode ser direcionada em ações de delivery ou atualizada durante as operações de importação ou durante a execução de workflows. Por exemplo, uma população extraída do banco de dados por uma consulta pode fornecer uma lista.
 
 
 
-Lists are created and managed via the **[!UICONTROL Lists]** link in the **[!UICONTROL Profiles and targets]** tab.
+As listas são criadas e gerenciadas pelo link **[!UICONTROL Lists]** na guia **[!UICONTROL Profiles and targets]**.
 
 ![](assets/s_ncs_user_interface_group_link.png)
 
 Dois tipos de listas estão disponíveis no Adobe Campaign:
 
-* Tipo **[!UICONTROL Group]**: as listas tipo **[!UICONTROL Group]** pertencem a uma lista **estática** de pessoas selecionadas de acordo com critérios específicos. A lista é como uma fotografia de um conjunto de perfis. Ela não é atualizada automaticamente quando perfis são adicionados ao banco de dados.
+* Tipo **[!UICONTROL Group]**: as listas do tipo **[!UICONTROL Group]** pertencem a uma lista **estática** de pessoas selecionadas de acordo com critérios específicos. A lista é como uma fotografia de um conjunto de perfis. Ela não é atualizada automaticamente quando perfis são adicionados ao banco de dados.
 
-   For more information on how to create a **[!UICONTROL Group]** type list, refer to this [page](#creating-a-profile-list-from-a-group).
+   Para obter mais informações sobre como criar uma lista do tipo **[!UICONTROL Group]**, consulte esta [página](#creating-a-profile-list-from-a-group).
 
-* Tipo **[!UICONTROL List]**: as listas tipo **[!UICONTROL List]** permitem a utilização de fluxos de trabalho para criar e gerenciar listas. Elas são listas específicas resultantes de importações de dados, que podem ser atualizadas por meio da atividade dedicada do fluxo de trabalho **[!UICONTROL List update]**.
+* Tipo **[!UICONTROL List]**: as listas do tipo **[!UICONTROL List]** permitem a utilização de fluxos de trabalho para criar e gerenciar listas. São listas específicas resultantes de importações de dados, que podem ser atualizadas por meio da atividade específica **[!UICONTROL List update]** do workflow.
 
-   Unlike the **[!UICONTROL Group]** type list, this type list can be automatically updated with a **[!UICONTROL Scheduler]** activity. Note that For an example on how to create **[!UICONTROL List]** type lists, refer to [this page](../../workflow/using/list-update.md).
+   Diferentemente da lista do tipo **[!UICONTROL Group]**, essas listas podem ser atualizadas automaticamente com uma atividade **[!UICONTROL Scheduler]** Para ver um exemplo de como criar listas do tipo **[!UICONTROL List]**, consulte [esta página](../../workflow/using/list-update.md).
 
 ## Criação de uma lista de perfis com base em um grupo {#creating-a-profile-list-from-a-group}
 
-**[!UICONTROL Group]** listas de tipo criadas por meio do **[!UICONTROL Profiles and targets]** link devem se basear na tabela de perfis padrão do Adobe Campaign (nms:recipient).
+As listas do tipo **[!UICONTROL Group]** criadas por meio do link **[!UICONTROL Profiles and targets]** devem ser baseadas na tabela de perfil padrão do Adobe Campaign (nms:recipient).
 
 >[!NOTE]
 >
->Para criar listas contendo outros tipos de dados, é necessário executar um fluxo de trabalho. Por exemplo, consulte a tabela visitante e atualize a lista para criar uma lista de visitantes. Para obter mais informações sobre fluxos de trabalho, consulte [esta seção](../../workflow/using/about-workflows.md).
+>Para criar listas contendo outros tipos de dados, é necessário executar um workflow. Por exemplo, consulte a tabela visitante e atualize a lista para criar uma lista de visitantes. Para obter mais informações sobre fluxos de trabalho, consulte [esta seção](../../workflow/using/about-workflows.md).
 
-To create a new **[!UICONTROL Group]** type list, apply the following steps:
+Para criar uma nova lista do tipo **[!UICONTROL Group]**, siga as seguintes etapas:
 
-1. Click the **[!UICONTROL Create]** button and select **[!UICONTROL New list]**.
+1. Clique no botão **[!UICONTROL Create]** e selecione **[!UICONTROL New list]**.
 
    ![](assets/s_ncs_user_new_group.png)
 
@@ -73,7 +73,7 @@ To create a new **[!UICONTROL Group]** type list, apply the following steps:
 
 1. Clique em **[!UICONTROL Save]** para salvar a lista. Ela é então adicionada à visão geral das listas.
 
-É possível criar novos perfis diretamente na janela &#39;add profiles&#39; clicando em **[!UICONTROL Create]**. O perfil será adicionado ao banco de dados.
+É possível criar novos perfis diretamente na janela “add profiles” clicando em **[!UICONTROL Create]**. O perfil será adicionado ao banco de dados.
 
 ![](assets/s_ncs_user_new_recipient_from_group.png)
 
@@ -83,9 +83,9 @@ A lista de perfis pode ser configurada como qualquer outra lista. Consulte [Conf
 
 >[!NOTE]
 >
->Linking data to a list can only been done with a **[!UICONTROL Group]** type list.
+>A vinculação de dados a uma lista só pode ser feita com uma lista do tipo **[!UICONTROL Group]**.
 
-Os perfis de um conjunto de perfis podem ser filtrados e vinculados a uma lista. As ações de entrega podem então ser enviadas para essa lista, para visar perfis. Para agrupar perfis:
+Os perfis de um conjunto de perfis podem ser filtrados e vinculados a uma lista. As ações de delivery podem então ser enviadas para essa lista, para direcionar perfis. Para agrupar perfis:
 
 1. Selecione os perfis e clique com o botão direito do mouse.
 1. Selecione **[!UICONTROL Actions > Associate selection with a list...]**.
@@ -100,11 +100,11 @@ Os perfis de um conjunto de perfis podem ser filtrados e vinculados a uma lista.
 
    ![](assets/s_ncs_user_add_selection_to_group_3.png)
 
-The **[!UICONTROL Recreate the list]** option deletes the earlier content from the list. Esse modo é otimizado uma vez que nenhuma consulta é necessária para verificar se os perfis já estão vinculados à lista.
+A opção **[!UICONTROL Recreate the list]** exclui o conteúdo anterior da lista. Esse modo é otimizado uma vez que nenhuma consulta é necessária para verificar se os perfis já estão vinculados à lista.
 
-If you uncheck the **[!UICONTROL No trace of this job is saved in the database]** option, you can select (or create) the execution folder where the information linked to this process will be stored.
+Se você desmarcar a opção **[!UICONTROL No trace of this job is saved in the database]**, será possível selecionar (ou criar) a pasta de execução onde as informações vinculadas a esse processo serão armazenadas.
 
-A seção superior da janela permite monitorar a execução. The **[!UICONTROL Stop]** button lets you stop the process. Os contatos já processados são vinculados à lista.
+A seção superior da janela permite monitorar a execução. O botão **[!UICONTROL Stop]** permite interromper o processo. Os contatos já processados são vinculados à lista.
 
 É possível monitorar o processo na guia **[!UICONTROL Lists]** nos perfis relacionados a esta operação:
 
