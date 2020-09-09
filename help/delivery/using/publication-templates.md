@@ -14,11 +14,11 @@ discoiquuid: 279b0ae6-2578-4f1f-af59-13a1a9c80b32
 index: y
 internal: n
 snippet: y
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: ced6c73961e949c421e9dfb638b40a06dcad4614
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '826'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
@@ -45,7 +45,7 @@ A chave de identificação de uma folha de estilos é uma cadeia de caracteres f
 
 ## Criação e configuração do template {#creating-and-configuring-the-template}
 
-Publication templates are stored by default in the **[!UICONTROL Administration > Configuration > Publication templates]** node. Para criar um novo modelo, clique no botão **[!UICONTROL New]** acima da lista de templates.
+Os templates de publicação são armazenados por padrão no nó **[!UICONTROL Administration > Configuration > Publication templates]**. Para criar um novo modelo, clique no botão **[!UICONTROL New]** acima da lista de templates.
 
 Para configurar o template de publicação, preencha o nome do template (ou seja, a chave de identificação que consiste no nome e no namespace), seu rótulo, o schema de dados e o formulário de entrada ao qual ele está vinculado.
 
@@ -63,7 +63,7 @@ O campo **[!UICONTROL Name of template]** é um rótulo gratuito que descreve o 
 
 ### Renderização {#rendering}
 
-The **[!UICONTROL Rendering]** tab, choose:
+Na guia **[!UICONTROL Rendering]**, escolha:
 
 * o tipo de renderização usado para projetar o documento de saída: folha de estilo XSL ou template do JavaScript,
 * o formato do documento de saída: HTML, Text, XML ou RTF,
@@ -78,10 +78,10 @@ Se o tipo selecionado for **[!UICONTROL File]**, a publicação envolve a geraç
 As seguintes opções de publicação estão disponíveis:
 
 * O conjunto de caracteres de codificação do arquivo de saída pode ser forçado por meio do campo **[!UICONTROL Encoding]**. O conjunto de caracteres Latin 1 (1252) é usado por padrão.
-* The **[!UICONTROL Multi-file generation]** option activates a special document publication mode. Essa opção consiste em preencher uma tag de particionamento no início de cada página do documento de saída. A geração do conteúdo produzirá um arquivo para cada tag de particionamento preenchida. Esse modo é usado para gerar mini sites a partir de um bloco de conteúdo. Para obter mais informações, consulte [Geração de vários arquivos](#multi-file-generation).
+* A opção **[!UICONTROL Multi-file generation]** ativa um modo de publicação de documento especial. Essa opção consiste em preencher uma tag de particionamento no início de cada página do documento de saída. A geração do conteúdo produzirá um arquivo para cada tag de particionamento preenchida. Esse modo é usado para gerar mini sites a partir de um bloco de conteúdo. Para obter mais informações, consulte [Geração de vários arquivos](#multi-file-generation).
 * O campo **[!UICONTROL Location]** contém o nome do arquivo de saída. O nome pode ser composto de variáveis para gerar um nome de arquivo automático.
 
-   A variable is populated with the following format: **`$(<xpath>)`**, where **`<xpath>`** is the path of a field of the publication template data schema.
+   Uma variável é preenchida com o seguinte formato: **`$(<xpath>)`**, onde **`<xpath>`** é o caminho de um campo do esquema de dados do modelo de publicação.
 
    O nome de um arquivo pode consistir em um campo tipo data. Para formatar corretamente esse campo, use a função **$date-format**, usando o caminho do campo e o formato de saída como parâmetros.
 
