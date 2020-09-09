@@ -14,11 +14,11 @@ discoiquuid: fecadb66-b81d-4fb6-9971-7bfd024d70b7
 index: y
 internal: n
 snippet: y
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: b690e6c7141ba88c8ce72f631ec24fc068ade8f5
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '920'
-ht-degree: 86%
+ht-degree: 100%
 
 ---
 
@@ -33,27 +33,27 @@ Os parâmetros de exportação são registrados por meio de um assistente. O mó
 
 Ao iniciar o assistente de exportação, primeiro é necessário selecionar um template. Como exemplo, para configurar a exportação de destinatários que se registraram recentemente, siga as etapas abaixo:
 
-1. Selecione a **[!UICONTROL Profiles and Targets > Job > Generic imports and exports]** pasta.
-1. Clique em **New** e em **Export** para criar o template de exportação.
+1. Selecione a pasta **[!UICONTROL Profiles and Targets > Job > Generic imports and exports]**.
+1. Clique em **Novo** e em **Exportar** para criar o template de exportação.
 
    ![](assets/s_ncs_user_export_wizard01.png)
 
 1. Clique na seta à direita do campo **[!UICONTROL Export template]** para selecionar o modelo ou clique em **[!UICONTROL Select link]** para navegar na árvore.
 
-   The native template is **[!UICONTROL New text export]**. Este template não deve ser modificado, mas você pode duplicá-lo para configurar um novo template. By default, export templates are saved in the **[!UICONTROL Resources > Templates > Job templates]** node.
+   O modelo nativo é **[!UICONTROL New text export]**. Este template não deve ser modificado, mas você pode duplicá-lo para configurar um novo template. Por padrão, os modelos de exportação são salvos no nó **[!UICONTROL Resources > Templates > Job templates]**.
 
 1. Insira um nome para a exportação no campo **[!UICONTROL Label]**. Você pode adicionar uma descrição.
-1. Selecione o tipo de exportação. There are two possible types of export: **[!UICONTROL Simple export]** to export only one file, and **[!UICONTROL Multiple export]** to export several files in a single execution, from one or more types of source document.
+1. Selecione o tipo de exportação. Existem dois tipos possíveis de exportação: **[!UICONTROL Simple export]** para exportar apenas um arquivo e **[!UICONTROL Multiple export]** para exportar vários arquivos em uma única execução, de um ou mais tipos de documento de origem.
 
 ### Etapa 2 - Tipo de arquivo a ser exportado {#step-2---type-of-file-to-export}
 
 Selecione o tipo de documento a ser exportado, ou seja, o schema dos dados para exportar.
 
-Por padrão, quando a exportação é iniciada a partir do nó **[!UICONTROL Jobs]**, os dados são obtidos a partir da tabela de destinatários. When the export is launched from a list of data (from the **[!UICONTROL right click > Export]** menu), the table to which the data belongs is automatically filled in in the **[!UICONTROL Document type]** field.
+Por padrão, quando a exportação é iniciada a partir do nó **[!UICONTROL Jobs]**, os dados são obtidos a partir da tabela de recipients. Quando a exportação é iniciada a partir de uma lista de dados (do menu **[!UICONTROL right click > Export]**), a tabela à qual os dados pertencem é automaticamente preenchida no campo **[!UICONTROL Document type]**.
 
 ![](assets/s_ncs_user_export_wizard02.png)
 
-* By default, the **[!UICONTROL Download the file generated on the server after the export]** option is selected. No campo **[!UICONTROL Local file]**, preencha o nome e o caminho do arquivo que será criado ou procure o disco local clicando na pasta à direita do campo. Você pode desmarcar essa opção para inserir o caminho de acesso e o nome do arquivo de saída do servidor.
+* A opção **[!UICONTROL Download the file generated on the server after the export]** está selecionada por padrão. No campo **[!UICONTROL Local file]**, preencha o nome e o caminho do arquivo que será criado ou procure o disco local clicando na pasta à direita do campo. Você pode desmarcar essa opção para inserir o caminho de acesso e o nome do arquivo de saída do servidor.
 
    >[!NOTE]
    >
@@ -61,7 +61,7 @@ Por padrão, quando a exportação é iniciada a partir do nó **[!UICONTROL Job
    >
    >Para exportar apenas alguns dados, clique em **[!UICONTROL Advanced parameters]** e insira o número de linhas que devem ser exportadas no campo apropriado.
 
-* É possível criar uma exportação diferencial para exportar apenas registros que foram modificados desde a última execução. To do this, click the **[!UICONTROL Advanced parameters]** link, then click the **[!UICONTROL Differential export]** tab, then select **[!UICONTROL Activate differential export]**.
+* É possível criar uma exportação diferencial para exportar apenas registros que foram modificados desde a última execução. Para fazer isso, clique no link **[!UICONTROL Advanced parameters]** e, em seguida, clique na guia **[!UICONTROL Differential export]** e, em seguida, selecione **[!UICONTROL Activate differential export]**.
 
    ![](assets/s_ncs_user_export_wizard02_b.png)
 
@@ -75,14 +75,14 @@ Selecione um formato de saída para o arquivo de exportação. Os formatos a seg
 
 * Para o formato **[!UICONTROL Text]**, selecione os delimitadores para separar as colunas (guias, vírgulas, ponto e vírgula ou personalizado) e as strings (aspas simples, duplas ou nenhuma).
 * Para **[!UICONTROL text]** e **[!UICONTROL CSV]**, você pode selecionar a opção **[!UICONTROL Use first lines as column titles]**.
-* Indique o formato de data e o formato do número. Para isso, clique no botão **[!UICONTROL Edit]** do campo correspondente e utilize o editor.
-* For fields containing enumerated values, you can select **[!UICONTROL Export labels instead of internal values of enumerations]**. Por exemplo, o título pode ser armazenado no formato **1=Sr.**, **2=Srta.**,**3=Sra.**. Se essa opção estiver selecionada, **Sr.**, **Srta.**, **Sra.** serão exportados.
+* Indique o formato de data e o formato do número. Para fazer isso, clique no botão **[!UICONTROL Edit]** do campo correspondente e utilize o editor.
+* Para campos que contém os valores enumerados, é possível selecionar a opção **[!UICONTROL Export labels instead of internal values of enumerations]**. Por exemplo, o título pode ser armazenado no formato **1=Sr.**, **2=Srta.**,**3=Sra.**. Se essa opção estiver selecionada, **Sr.**, **Srta.**, **Sra.** serão exportados.
 
 ### Etapa 4 - Seleção de dados {#step-4---data-selection}
 
 Selecione os campos a serem exportados. Para fazer isso:
 
-1. Double-click the desired fields in the **[!UICONTROL Available fields]** list in order to add them to the **[!UICONTROL Output columns]** section.
+1. Clique duas vezes nos campos desejados na lista **[!UICONTROL Available fields]** para adicioná-los à seção **[!UICONTROL Output columns]**.
 1. Use as setas à direita da lista para definir a ordem dos campos no arquivo de saída.
 
    ![](assets/s_ncs_user_export_wizard04.png)
@@ -123,7 +123,7 @@ Se você estiver exportando uma coleção de elementos (por exemplo, assinaturas
 
 ### Etapa 8 - Visualização de dados {#step-8---data-preview}
 
-Click **[!UICONTROL Start the preview of the data]** for a preview of the export result. Por padrão, as 200 primeiras linhas são exibidas. Para alterar esse valor, clique nas setas à direita do campo **[!UICONTROL Lines to display]**.
+Clique em **[!UICONTROL Start the preview of the data]** para pré-visualizar o resultado da exportação. Por padrão, as 200 primeiras linhas são exibidas. Para alterar esse valor, clique nas setas à direita do campo **[!UICONTROL Lines to display]**.
 
 ![](assets/s_ncs_user_export_wizard07.png)
 
