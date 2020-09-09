@@ -14,11 +14,11 @@ discoiquuid: 8e7eb53c-bbe2-4bd4-8581-c2a63a3dc84e
 index: y
 internal: n
 snippet: y
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 63f07746d39fff22a98b3cd4ab7f2294da778ab3
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1049'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -37,7 +37,7 @@ Depois de se conectar ao Adobe Campaign, você verá a home page.
 
 Clique nos links na barra de navegação para acessar os vários universos.
 
-Os elementos da campanha são encontrados no universo **[!UICONTROL Campaigns]**: é possível ver aqui uma visão geral dos programas e campanhas de marketing, bem como as subdefinições. Um programa de marketing é composto por campanhas, que são compostas por entregas, tarefas, recursos vinculados etc. No contexto de gestão de campanhas de marketing usando o Campaign, as informações relacionadas às remessas, orçamentos, revisores e documentos vinculados são encontradas nas campanhas.
+Os elementos da campanha são encontrados no universo **[!UICONTROL Campaigns]**: é possível ter uma visão geral dos programas e das campanhas de marketing, bem como as subdefinições. Um programa de marketing é composto por campanhas, que são compostas por deliveries, tarefas, recursos vinculados etc. No contexto de gestão de campanhas de marketing usando o Campaign, as informações relacionadas às remessas, orçamentos, revisores e documentos vinculados são encontradas nas campanhas.
 
 O bloco de navegação do universo **[!UICONTROL Campaigns]** oferece várias entradas, dependendo dos módulos instalados na instância. Como exemplo, você pode acessar:
 
@@ -50,7 +50,7 @@ O bloco de navegação do universo **[!UICONTROL Campaigns]** oferece várias en
 >
 >Para saber mais sobre a ergonomia geral do Adobe Campaign, as permissões e o gerenciamento de perfis, consulte [esta seção](../../platform/using/adobe-campaign-workspace.md).
 >
->Todas as funcionalidades relacionadas a canais e entregas são detalhadas [nesta seção](../../delivery/using/steps-about-delivery-creation-steps.md).
+>Todas as funcionalidades relacionadas a canais e deliveries são detalhadas [nesta seção](../../delivery/using/steps-about-delivery-creation-steps.md).
 
 ### Calendário da campanha {#campaign-calendar}
 
@@ -159,7 +159,7 @@ As campanhas são criadas por meio de templates de campanha. É possível config
 
 >[!NOTE]
 >
->To access the campaign configurations and make changes to them, click the **[!UICONTROL Advanced campaign parameters...]** link in the **[!UICONTROL Edit]** tab. Para obter mais informações sobre como configurar parâmetros no nível da campanha para que os deliveries herdem valores automaticamente, consulte [nossa Nota técnica](https://helpx.adobe.com/br/campaign/kb/simplifying-campaign-management-acc.html#Setparametersatthecampaignlevelsodeliveriesinheritvaluesautomatically).
+>Para acessar as configurações da campanha e fazer alterações, clique no link **[!UICONTROL Advanced campaign parameters...]** na guia **[!UICONTROL Edit]**. Para obter mais informações sobre como configurar parâmetros no nível da campanha para que os deliveries herdem valores automaticamente, consulte [nossa Nota técnica](https://helpx.adobe.com/br/campaign/kb/simplifying-campaign-management-acc.html#Setparametersatthecampaignlevelsodeliveriesinheritvaluesautomatically).
 
 ## Usar a interface da Web {#using-the-web-interface-}
 
