@@ -14,9 +14,9 @@ discoiquuid: 2f66152b-4d4a-40b8-a1bb-5b97c5410882
 index: y
 internal: n
 snippet: y
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 11a6ddd275dc8482e82f163abc14cacaf0281dff
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2165'
 ht-degree: 100%
 
@@ -93,7 +93,7 @@ As listas estão disponíveis no link **[!UICONTROL Lists]** na seção à esque
 
    ![](assets/d_ncs_user_interface_back_home_buttons.png)
 
-* No caso de um menu ou atalho para uma tela de exibição (como uma aplicativo da Web, um programa, uma entrega ou um relatório), a página correspondente é exibida em outra guia. Isso permite navegar de uma página para outra usando as guias.
+* No caso de um menu ou atalho para uma tela de exibição (como um aplicativo Web, um programa, um delivery ou um relatório), a página correspondente é exibida em outra guia. Isso permite navegar de uma página para outra usando as guias.
 
    ![](assets/d_ncs_user_interface_tabs.png)
 
@@ -267,7 +267,7 @@ Por padrão, os parâmetros de exibição definidos se aplicam a todas as listas
 
 No entanto, é possível salvar mais de uma configuração a ser aplicada a pastas diferentes do mesmo tipo. A configuração é salva com as propriedades da pasta contendo os dados e pode ser aplicada novamente.
 
-Por exemplo, para uma pasta de entrega, é possível configurar a seguinte exibição:
+Por exemplo, para uma pasta de delivery, é possível configurar a seguinte exibição:
 
 ![](assets/s_ncs_user_folder_save_config_1.png)
 
