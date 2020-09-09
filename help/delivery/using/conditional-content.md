@@ -14,11 +14,11 @@ discoiquuid: 167cc61a-fbc7-48cb-89ff-fbdbf9321c01
 index: y
 internal: n
 snippet: y
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 2a5711c4478f8378c079fec4792ecbb95266ad4b
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '473'
-ht-degree: 93%
+ht-degree: 100%
 
 ---
 
@@ -27,7 +27,7 @@ ht-degree: 93%
 
 Ao configurar campos de conteúdo condicional, você pode criar personalização dinâmica com base no perfil do recipient, por exemplo. Blocos de texto e/ou imagens são substituídos quando uma determinada condição é atendida.
 
-![](assets/do-not-localize/how-to-video.png) [Descubra este recurso em vídeo](#conditionnal-content-video)
+![](assets/do-not-localize/how-to-video.png) [Descubra este recurso no vídeo](#conditionnal-content-video)
 
 
 ## Uso das condições em um email {#using-conditions-in-an-email}
@@ -117,8 +117,8 @@ Você verá no exemplo abaixo como criar um email multilíngue. O conteúdo ser�
    >
    >Como nenhuma versão alternativa foi definida no conteúdo do email, filtre o público-alvo antes de enviar o email.
 
-## Como criar um boletim multilíngue com conteúdo condicional {#conditionnal-content-video}
+## Como criar um informativo multilíngue com conteúdo condicional {#conditionnal-content-video}
 
-Saiba como adicionar conteúdo condicional a um delivery no exemplo de um boletim multilíngue.
+Saiba como adicionar conteúdo condicional a um delivery no exemplo de um informativo multilíngue.
 
->[!VIDEO](https://video.tv.adobe.com/v/24926?quality=12)
+>[!VIDEO](https://video.tv.adobe.com/v/24926?quality=12&captions=por_br)
