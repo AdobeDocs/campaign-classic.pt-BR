@@ -14,11 +14,11 @@ discoiquuid: 27c8e443-ee6b-4d58-bc2d-81cf8391c5de
 index: y
 internal: n
 snippet: y
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 6c5e11f24537d2956ade49fe0f4a8ffebdbbabcf
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '873'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -29,7 +29,7 @@ Os campos de personalização são usados para personalização de primeiro nív
 
 Por exemplo, o campo de personalização com a sintaxe **&lt;%= recipient.LastName %>** informa ao Adobe Campaign para inserir o nome do recipient no banco de dados (tabela de recipients).
 
-![](assets/do-not-localize/how-to-video.png) [Descubra este recurso em vídeo](#personalization-fields-video)
+![](assets/do-not-localize/how-to-video.png) [Descubra este recurso no vídeo](#personalization-fields-video)
 
 >[!CAUTION]
 >
@@ -87,7 +87,7 @@ Ao criar um email, iremos inserir o nome do recipient e depois adicionar a data 
 
 Você pode otimizar a personalização usando uma opção dedicada: **[!UICONTROL Prepare the personalization data with a workflow]**, disponível na guia **[!UICONTROL Analysis]** das propriedades de delivery. Para saber mais sobre como analisar o delivery, consulte [esta seção](../../delivery/using/steps-validating-the-delivery.md#analyzing-the-delivery).
 
-Durante a análise de delivery, essa opção cria e executa automaticamente um fluxo de trabalho que armazena todos os dados vinculados ao Target em uma tabela temporária, incluindo dados de tabelas vinculadas na FDA.
+Durante a análise de delivery, essa opção cria e executa automaticamente um workflow que armazena todos os dados vinculados ao público-alvo em uma tabela temporária, incluindo dados de tabelas vinculadas na FDA.
 
 Marcar essa opção pode melhorar muito o desempenho da análise de delivery quando muitos dados estão sendo processados, especialmente se os dados de personalização vêm de uma tabela externa por meio do FDA. Para saber mais, consulte [Acesso a um banco de dados externo (FDA)](../../platform/using/additional-options.md#optimizing-email-personalization-with-external-data).
 
@@ -96,8 +96,8 @@ Por exemplo, se estiver tendo problemas de desempenho com delivery de um grande 
 Para usar essa opção, siga as etapas abaixo:
 
 1. Crie uma campanha. Para obter mais informações, consulte [esta seção](../../campaign/using/setting-up-marketing-campaigns.md#creating-a-campaign).
-1. Na guia **[!UICONTROL Targeting and workflows]** da campanha, adicione uma atividade de **Query** ao fluxo de trabalho. Para obter mais informações sobre o uso dessa atividade, consulte [esta seção](../../workflow/using/query.md).
-1. Adicione uma atividade **[!UICONTROL Email delivery]** ao fluxo de trabalho e depois a abra. Para obter mais informações sobre o uso dessa atividade, consulte [esta seção](../../workflow/using/delivery.md).
+1. Na guia **[!UICONTROL Targeting and workflows]** da campanha, adicione uma atividade de **Query** ao workflow. Para obter mais informações sobre o uso dessa atividade, consulte [esta seção](../../workflow/using/query.md).
+1. Adicione uma atividade **[!UICONTROL Email delivery]** ao workflow e depois a abra. Para obter mais informações sobre o uso dessa atividade, consulte [esta seção](../../workflow/using/delivery.md).
 1. Vá até a guia **[!UICONTROL Analysis]** do **[!UICONTROL Delivery properties]** e selecione a opção **[!UICONTROL Prepare the personalization data with a workflow]**.
 
    ![](assets/perso_optimization.png)
@@ -108,7 +108,7 @@ Depois que a análise é feita, os dados da personalização são armazenados em
 
 Este workflow não está visível na interface do Adobe Campaign. É para ser apenas um meio técnico para armazenar e manipular rapidamente os dados de personalização.
 
-Após a conclusão da análise, vá para as **[!UICONTROL Properties]** do fluxo de trabalho e selecione a guia **[!UICONTROL Variables]**. Você pode ver o nome da tabela temporária que pode ser usada para fazer uma chamada SQL para exibir os IDs que ela contém.
+Após a conclusão da análise, vá para as **[!UICONTROL Properties]** do workflow e selecione a guia **[!UICONTROL Variables]**. Você pode ver o nome da tabela temporária que pode ser usada para fazer uma chamada SQL para exibir os IDs que ela contém.
 
 ![](assets/perso_optimization_temp_table.png)
 
@@ -130,4 +130,4 @@ Se essa opção for definida como 0, não haverá limite de tempo para a fase de
 
 Saiba como adicionar um campo de personalização à linha de assunto e ao conteúdo de um delivery de email.
 
->[!VIDEO](https://video.tv.adobe.com/v/24925?quality=12)
+>[!VIDEO](https://video.tv.adobe.com/v/24925?quality=12&captions=por_br)
