@@ -14,11 +14,11 @@ discoiquuid: b49acfd0-b601-4694-88e3-cc0a169cb866
 index: y
 internal: n
 snippet: y
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 2a5711c4478f8378c079fec4792ecbb95266ad4b
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '379'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -29,9 +29,9 @@ Seed addresses são usados para direcionar destinatários que não correspondem 
 
 Uma vez que a principal razão para utilizá-los é **sua proteção da lista de endereçamento**. Inserir seed addresses na sua lista de endereçamento permite que você seja notado se estiver sendo usado por um terceiro, pois esses seeds addresses receberão os deliveries enviados à sua lista de endereçamento.
 
-Além disso, os seed addresses permitem **visualizar e testar a personalização e renderização dos deliveries** antes de serem enviados, ao enviar provas (consulte [Uso de seed addresses como prova](../../delivery/using/steps-defining-the-target-population.md#using-seed-addresses-as-proof).
+Além disso, os seed addresses permitem **visualizar e testar a personalização e renderização dos deliveries** antes de serem enviados ao enviar provas (consulte [Uso de seed addresses como prova](../../delivery/using/steps-defining-the-target-population.md#using-seed-addresses-as-proof).
 
-![](assets/do-not-localize/how-to-video.png) [Descubra este recurso em vídeo](../../delivery/using/steps-defining-the-target-population.md#seeds-and-proofs-video)
+![](assets/do-not-localize/how-to-video.png) [Descubra este recurso no vídeo](../../delivery/using/steps-defining-the-target-population.md#seeds-and-proofs-video)
 
 Os recursos dos seed addresses tem os seguintes benefícios:
 
