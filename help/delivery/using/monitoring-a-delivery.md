@@ -1,7 +1,7 @@
 ---
-title: Monitoramento de uma entrega
-seo-title: Monitoramento de uma entrega
-description: Monitoramento de uma entrega
+title: Monitorar um delivery
+seo-title: Monitorar um delivery
+description: Monitorar um delivery
 seo-description: null
 page-status-flag: never-activated
 uuid: 7cb409eb-a01c-4b4d-bb62-760e0bafdc8a
@@ -14,16 +14,16 @@ discoiquuid: 3aab3d47-76fd-4c68-add4-9c14240c936e
 index: y
 internal: n
 snippet: y
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: bc54cef4c44be4c694e062f56685dbb09d2fcf8e
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2567'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
 
-# Monitoramento de uma entrega{#monitoring-a-delivery}
+# Monitorar um delivery{#monitoring-a-delivery}
 
 O **painel de delivery** é fundamental para monitorar seus deliveries e eventuais problemas encontrados durante o envio de mensagens.
 
@@ -42,7 +42,7 @@ O conteúdo da guia não pode mais ser alterado uma vez que o delivery foi envia
 
 ![](assets/s_ncs_user_del_details.png)
 
-### Resumo da entrega {#delivery-summary}
+### Resumo do delivery {#delivery-summary}
 
 A guia **[!UICONTROL Summary]** contém as características do delivery: status do delivery, canal usado, informações sobre o remetente, assunto, informações relacionadas à execução. Para obter mais informações, consulte [Número de mensagens enviadas](#number-of-messages-sent).
 
@@ -50,7 +50,7 @@ O link **[!UICONTROL reports]** permite que você veja um conjunto de relatório
 
 ### Histórico e logs do delivery {#delivery-logs-and-history}
 
-A guia **[!UICONTROL Delivery]** fornece um histórico das ocorrências neste delivery. Ela contém os logs de entrega, ou seja, a lista de mensagens enviadas e seus status, e as mensagens associadas.
+A guia **[!UICONTROL Delivery]** fornece um histórico das ocorrências neste delivery. Ela contém os logs de delivery, ou seja, a lista de mensagens enviadas e seus status, e as mensagens associadas.
 
 Para um delivery, você pode exibir (por exemplo) apenas os recipients com um delivery com falha ou um endereço em quarentena. Para fazer isso, clique no botão **[!UICONTROL Filters]** e selecione **[!UICONTROL By state]**. Em seguida, selecione o estado na lista suspensa.
 
@@ -117,28 +117,28 @@ A manutenção da plataforma e do banco de dados também pode afetar os desempen
 
 Depois de clicar no botão **[!UICONTROL Send]**, seu delivery parece demorar mais do que o normal. Isso pode ser causado por elementos diferentes:
 
-* Alguns provedores de e-mail podem ter adicionado seus endereços IP a uma lista de bloqueios. In this case, check your broadlogs and consult [this section](../../delivery/using/about-deliverability.md).
+* Alguns provedores de email podem ter adicionado seus endereços IP a uma lista de bloqueios. Neste caso, verifique seus broadlogs e consulte [esta seção](../../delivery/using/about-deliverability.md).
 * Seu delivery pode ser muito grande para ser processado rapidamente, isso pode ocorrer com alta personalização do JavaScript ou se o seu delivery pesa mais do que 60 kbytes. Consulte as [Práticas recomendadas de delivery](../../delivery/using/delivery-best-practices.md) do Adobe Campaign para saber mais sobre as diretrizes de conteúdo.
 * Pode ter ocorrido limitação dentro do MTA do Adobe Campaign. Isso é causado por:
 
-   * Mensagens pendentes (**[!UICONTROL quotas met]** message): as cotas declaradas pelas regras MX declarativas definidas no Campaign foram atendidas. Para obter mais informações sobre esse tipo de mensagem, consulte [esta página](../../delivery/using/deliverability-faq.md) . Para saber mais sobre as regras MX, consulte [esta página](../../delivery/using/technical-recommendations.md#mx-rules).
-   * Messages pended (**[!UICONTROL dynamic flow control]** message): Campaign MTA has encountered errors when trying to deliver messages for a given ISP which causes a slowdown to avoid too big of an error density and thus facing potential block list.
+   * Mensagens pendentes (**[!UICONTROL quotas met]** message): as cotas declaradas pelas regras MX declarativas definidas no Campaign foram atendidas. Para obter mais informações sobre esse tipo de mensagem, consulte [esta página](../../delivery/using/deliverability-faq.md). Para saber mais sobre as regras MX, consulte [esta página](../../delivery/using/technical-recommendations.md#mx-rules).
+   * Mensagens pendentes (mensagem **[!UICONTROL dynamic flow control]**): o MTA do Campaign encontrou erros ao tentar entregar mensagens para um determinado ISP, o que faz com que um atraso evite uma densidade de erros muito grande e, portanto, enfrente uma possível inclusão na lista de bloqueios.
 
 * Um problema do sistema pode impedir que os servidores interajam: isso pode desacelerar todo o processo de envio. Verifique os servidores para garantir que não haja problemas de memória ou recursos que possam afetar o Campaign no processo de obter os dados de personalização, por exemplo.
 
 ### Práticas recomendadas para desempenho {#best-practices-performance}
 
-* Não mantenha as entregas em estado de falha na instância, pois isso mantém tabelas temporárias e afeta o desempenho.
+* Não mantenha os deliveries em estado de falha na instância, pois tabelas temporárias serão mantidas e o desempenho será afetado.
 
 * Remova os deliveries que não são mais necessários.
 
 * Recipients inativos nos últimos 12 meses a serem removidos do banco de dados para manter a qualidade do endereço.
 
-* Não tente programar entregas grandes em conjunto. Há um intervalo de 5 a 10 minutos para espalhar a carga uniformemente sobre o sistema. Coordene a programação de deliveries com os outros membros da equipe para garantir o melhor desempenho. Quando o servidor de marketing estiver lidando com várias tarefas diferentes ao mesmo tempo, ele poderá retardar o desempenho.
+* Não tente programar deliveries grandes juntos. Há um intervalo de 5 a 10 minutos para espalhar a carga uniformemente sobre o sistema. Coordene a programação de deliveries com os outros membros da equipe para garantir o melhor desempenho. Quando o servidor de marketing estiver lidando com várias tarefas diferentes ao mesmo tempo, ele poderá retardar o desempenho.
 
 * Mantenha o tamanho do seus emails o menor possível. O tamanho máximo recomendado de um email é de aproximadamente 35 KB. O tamanho de um delivery de email gera uma certa quantidade de volume nos servidores de envio.
 
-* Deliveries grandes, como entregas para mais de um milhão de recipients, precisam de espaço nas filas de envio. Isso por si só não é um problema para o servidor, mas quando combinado com dezenas de outros grandes deliveries, sendo todos enviados ao mesmo tempo, pode gerar um atraso no envio.
+* Deliveries grandes, como para mais de um milhão de recipients, precisam de espaço nas filas de envio. Isso por si só não é um problema para o servidor, mas quando combinado com dezenas de outros grandes deliveries, sendo todos enviados ao mesmo tempo, pode gerar um atraso no envio.
 
 * A personalização em emails extrai dados do banco de dados para cada recipient. Se houver muitos elementos de personalização, isso aumentará a quantidade de dados necessários para preparar o delivery.
 
@@ -166,7 +166,7 @@ Ao enviar um delivery, você pode encontrar o seguinte status no seu painel de d
   </tr> 
   <tr> 
    <td> Ignored<br /> </td> 
-   <td> O delivery não foi enviado ao recipient devido a um erro no endereço. Foi adicionado a uma lista de bloqueios, em quarentena, não fornecido ou a um duplicado. <br /> </td> 
+   <td> O delivery não foi enviado ao recipient devido a um erro no endereço. Foi adicionado a uma lista de bloqueios, colocado em quarentena, não fornecido ou duplicado. <br /> </td> 
   </tr> 
   <tr> 
    <td> Sent<br /> </td> 
@@ -203,9 +203,9 @@ Ao enviar um delivery, você pode encontrar o seguinte status no seu painel de d
  </tbody> 
 </table>
 
-Para saber como otimizar a capacidade de delivery dos emails do Adobe Campaign, consulte o [Guia de práticas recomendadas de capacidade de delivery](../../delivery/using/deliverability-key-points.md) do Adobe Campaign e [esta página](../../delivery/using/about-deliverability.md).
+Para saber como otimizar a capacidade de entrega dos emails do Adobe Campaign, consulte o [Guia de práticas recomendadas de capacidade de entrega](../../delivery/using/deliverability-key-points.md) do Adobe Campaign e [esta página](../../delivery/using/about-deliverability.md).
 
-### Status Pending {#pending-status}
+### Status pendente {#pending-status}
 
 Após confirmar o delivery, você pode ver que o status do delivery é **[!UICONTROL Pending]**. Esse status significa que o processo de execução está aguardando a disponibilidade de alguns recursos.
 
@@ -267,7 +267,7 @@ Os logs do delivery são fundamentais para saber por que um delivery falhou. Aqu
 **Tópicos relacionados:**
 
 * [Histórico e logs do delivery](#delivery-logs-and-history)
-* [Noções básicas sobre falhas de entrega](../../delivery/using/understanding-delivery-failures.md)
+* [Noções básicas sobre falhas de delivery](../../delivery/using/understanding-delivery-failures.md)
 * [Tipos e motivos de falha de delivery](../../delivery/using/understanding-delivery-failures.md#delivery-failure-types-and-reasons)
 
 ## Número de mensagens enviadas {#number-of-messages-sent}
@@ -290,4 +290,4 @@ O painel de delivery permite que você rastreie o número de mensagens enviadas.
 
 Se os deliveries não forem executados em uma data agendada específica, ela poderá estar relacionada a uma diferença entre o fuso horário dos servidores. A instância mid-sourcing e a instância de produção podem estar em fusos horários diferentes.
 
-Como exemplo, se a ocorrência de mid-sourcing estiver no fuso horário Brisbane e na instância de produção estiver no fuso horário de Darwin, os fusos horários estão meia hora de diferença uma da outra e, no log de auditoria, é possível ver claramente que se a entrega está agendada para a produção às 11:56, o mesmo delivery agendado para mid deve ser às 12:26, com uma diferença de meia hora.
+Como exemplo, se a ocorrência de mid-sourcing estiver no fuso horário de Brisbane e a instância de produção estiver no fuso horário de Darwin, os fusos horários têm meia hora de diferença um do outro e, no log de auditoria, é possível ver claramente que se o delivery estiver agendado para a produção às 11h56, o mesmo delivery agendado para mid deveria ser às 12h26, com uma diferença de meia hora.
