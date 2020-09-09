@@ -14,11 +14,11 @@ discoiquuid: 56cbf48a-eb32-4617-8f80-efbfd05976ea
 index: y
 internal: n
 snippet: y
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: bc54cef4c44be4c694e062f56685dbb09d2fcf8e
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2576'
-ht-degree: 88%
+ht-degree: 100%
 
 ---
 
@@ -27,7 +27,7 @@ ht-degree: 88%
 
 ## Sobre a quarentena {#about-quarantines}
 
-O Adobe Campaign gerencia uma lista de endereços em quarentena. Os destinatários cujo endereço está em quarentena são excluídos por padrão durante a análise de entrega e não serão direcionados. Um endereço de e-mail pode ser colocado em quarentena, por exemplo, quando a caixa de correio está cheia ou se o endereço não existe. Em qualquer caso, o procedimento de quarentena está em conformidade com as regras específicas descritas abaixo.
+O Adobe Campaign gerencia uma lista de endereços em quarentena. Os recipients cujo endereço está em quarentena são excluídos por padrão durante a análise de delivery e não serão direcionados. Um endereço de e-mail pode ser colocado em quarentena, por exemplo, quando a caixa de correio está cheia ou se o endereço não existe. Em qualquer caso, o procedimento de quarentena está em conformidade com as regras específicas descritas abaixo.
 
 >[!NOTE]
 >
@@ -37,21 +37,21 @@ O Adobe Campaign gerencia uma lista de endereços em quarentena. Os destinatári
 
 Os perfis cujos endereços de email ou número de telefone estão em quarentena são excluídos automaticamente durante a preparação da mensagem (consulte [Identificação de endereços em quarentena para um delivery](#identifying-quarantined-addresses-for-a-delivery)). Isso irá acelerar os deliveries, pois a taxa de erro tem um efeito significativo na velocidade do delivery.
 
-Alguns provedores de acesso à Internet consideram automaticamente emails como spam se a taxa de endereços inválidos for muito alta. A quarentena, portanto, permite evitar que você seja adicionado a uma lista de bloqueios por esses provedores.
+Alguns provedores de acesso à Internet consideram automaticamente emails como spam se a taxa de endereços inválidos for muito alta. A quarentena, portanto, evita que você seja adicionado a uma lista de bloqueios por esses provedores.
 
-Além disso, a quarentena ajuda a reduzir os custos de envio do SMS, excluindo números de telefone incorretos dos deliveries. Para obter mais informações sobre as práticas recomendadas para proteger e otimizar seus deliveries, consulte [esta página](../../delivery/using/delivery-best-practices.md) .
+Além disso, a quarentena ajuda a reduzir os custos de envio do SMS, excluindo números de telefone incorretos dos deliveries. Para obter mais informações sobre as práticas recomendadas para proteger e otimizar seus deliveries, consulte [esta página](../../delivery/using/delivery-best-practices.md).
 
-### Quarentena vs lista de bloqueios {#quarantine-vs-block-list}
+### Quarentena × Lista de bloqueios {#quarantine-vs-block-list}
 
 A **quarentena** se aplica somente a um endereço, não ao próprio perfil. Isso significa que, se dois perfis tiverem o mesmo endereço de email, eles serão afetados se o endereço estiver em quarentena.
 
 Da mesma forma, um perfil cujo endereço de email está em quarentena poderia atualizar seu perfil e inserir um novo endereço e pode ser alvo de ações de delivery novamente.
 
-Being on the **block list**, on the other hand, will result in the profile no longer being targeted by any delivery, for example after an unsubscription (opt-out).
+Por outro lado, com a inclusão na **lista de bloqueios**, o perfil não será mais alvo de qualquer delivery, por exemplo, depois da unsubscription (recusa).
 
 >[!NOTE]
 >
->Quando um usuário responde a uma mensagem SMS com uma palavra-chave como &quot;PARAR&quot; para recusar delivery SMS, seu perfil não é adicionado à lista de bloqueios como no processo de recusa por email. O número de telefone do perfil é enviado para quarentena, para que o usuário continue recebendo mensagens de email.
+>Quando um usuário responde a uma mensagem SMS com uma palavra-chave, como “STOP” para recusar os deliveries de SMS, seu perfil não é incluído na lista de bloqueios como no processo de recusa de email. O número de telefone do perfil é enviado para quarentena, para que o usuário continue recebendo mensagens de email.
 
 ## Identificação de endereços em quarentena {#identifying-quarantined-addresses}
 
@@ -92,7 +92,7 @@ Os seguintes relatórios fornecem informações sobre os endereços em quarenten
 
 * O relatório **[!UICONTROL Non-deliverables and bounces]** exibe informações sobre os endereços em quarentena, os tipos de erro encontrados e etc., além de um detalhamento de falha por domínio.
 
-You can look up this information for all deliveries of the platform (**[!UICONTROL Home page > Reports]**) or for a specific delivery. Você também pode criar relatórios personalizados e selecionar as informações a serem exibidas.
+Você pode visualizar essas informações para todos os deliveries da plataforma (**[!UICONTROL Home page > Reports]**) ou para um delivery específico. Você também pode criar relatórios personalizados e selecionar as informações a serem exibidas.
 
 ### Identificação de endereços em quarentena para um recipient {#identifying-quarantined-addresses-for-a-recipient}
 
@@ -102,30 +102,30 @@ Você pode consultar o status do endereço de email de qualquer recipient. Para 
 
 ### Remoção de um endereço em quarentena {#removing-a-quarantined-address}
 
-Se necessário, você pode remover manualmente um endereço da lista da quarentena. Além disso, os endereços que correspondem a condições específicas são automaticamente excluídos da lista de quarentena pelo **[!UICONTROL Database cleanup]** fluxo de trabalho.
+Caso necessário, você pode remover manualmente um endereço da lista da quarentena. Além disso, os endereços que correspondem a condições específicas são automaticamente excluídos da lista de quarentena pelo workflow **[!UICONTROL Database cleanup]**.
 
 Para remover manualmente um endereço da lista da quarentena:
 
-* É possível alterar seu status para **[!UICONTROL Valid]** do **[!UICONTROL Administration > Campaign Management > Non deliverables Management > Non deliverables and addresses]** nó.
+* É possível alterar seu status para **[!UICONTROL Valid]** a partir do nó **[!UICONTROL Administration > Campaign Management > Non deliverables Management > Non deliverables and addresses]**.
 
    ![](assets/tech_quarant_error_status.png)
 
-* Você também pode alterar seu status para **[!UICONTROL On allow list]**. Nesse caso, o endereço permanece na lista da quarentena, mas será direcionado sistematicamente, mesmo que um erro seja encontrado.
+* Você também pode alterar o status para **[!UICONTROL On allow list]**. Nesse caso, o endereço permanece na lista da quarentena, mas será direcionado sistematicamente, mesmo que um erro seja encontrado.
 
 <!--Addresses on the block list are not concerned by the quarantine system and are not targeted, even if you change the status of the address.-->
 
-Os endereços são removidos automaticamente da lista da quarentena nos seguintes casos:
+Os endereços são removidos automaticamente da lista de quarentena nos seguintes casos:
 
-* Os endereços em um **[!UICONTROL With errors]** status serão removidos da lista da quarentena após um delivery bem-sucedido.
-* Os endereços em um **[!UICONTROL With errors]** status serão removidos da lista da quarentena se o último salto suave ocorrer há mais de 10 dias. Para obter mais informações sobre o gerenciamento de erros de software, consulte [esta seção](#soft-error-management).
-* Os endereços em um **[!UICONTROL With errors]** **[!UICONTROL Mailbox full]** status que retornou ao erro serão removidos da lista da quarentena após 30 dias.
+* Os endereços em um status **[!UICONTROL With errors]** serão removidos da lista de quarentena após um delivery bem-sucedido.
+* Os endereços em um status **[!UICONTROL With errors]** serão removidos da lista de quarentena se o último retorno de erro tiver ocorrido há mais de 10 dias. Para obter mais informações sobre o gerenciamento de erros de software, consulte [esta seção](#soft-error-management).
+* Os endereços em um status **[!UICONTROL With errors]** que tiverem retornado com o erro **[!UICONTROL Mailbox full]** serão removidos da lista de quarentena após 30 dias.
 
-O status muda para **[!UICONTROL Valid]**.
+O status muda então para **[!UICONTROL Valid]**.
 
 >[!IMPORTANT]
-Recipient com um endereço em um **[!UICONTROL Quarantine]** ou **[!UICONTROL On block list]** status nunca serão removidos, mesmo se receberem um email.
+Os recipients com um endereço em um status **[!UICONTROL Quarantine]** ou **[!UICONTROL On block list]** nunca serão removidos, mesmo se receberem um email.
 
-Você pode modificar o número de erros e o período entre dois erros. Para fazer isso, altere as configurações correspondentes no assistente de implantação (**[!UICONTROL Email channel]** > **[!UICONTROL Advanced parameters]**). Para obter mais informações sobre o assistente de implantação, consulte [esta seção](../../installation/using/deploying-an-instance.md).
+Você pode alterar o número de erros e o período entre dois erros. Para fazer isso, altere as configurações correspondentes no assistente de implantação (**[!UICONTROL Email channel]** > **[!UICONTROL Advanced parameters]**). Para obter mais informações sobre o assistente de implantação, consulte [esta seção](../../installation/using/deploying-an-instance.md).
 
 ## Condições para colocar um endereço na quarentena {#conditions-for-sending-an-address-to-quarantine}
 
@@ -168,11 +168,11 @@ Para cada notificação, o Adobe Campaign recebe os erros síncronos e assíncro
 * A conexão perdida durante o delivery: tentativa executada, o motivo da falha é **[!UICONTROL Unreachable]**.
 * Problema de configuração de serviço (certificado inválido, senha de certificado inválida, sem certificado): sem tentativa, o motivo da falha é **[!UICONTROL Unreachable]**.
 
-O servidor APNS notifica de forma assíncrona o Adobe Campaign que um token de dispositivo teve o registrado cancelado (quando o aplicativo móvel foi desinstalado pelo usuário). O fluxo de trabalho **[!UICONTROL mobileAppOptOutMgt]** é executado a cada 6 horas para contatar os serviços de feedback APNS e atualizar a tabela **AppSubscriptionRcp**. Para todos os tokens desativados, o campo **Desativado** é definido como **Verdadeiro** e a subscrição vinculada a esse token de dispositivo será excluída automaticamente de deliveries futuros.
+O servidor APNS notifica de forma assíncrona o Adobe Campaign que um token de dispositivo teve o registrado cancelado (quando o aplicativo móvel foi desinstalado pelo usuário). O workflow **[!UICONTROL mobileAppOptOutMgt]** é executado a cada 6 horas para contatar os serviços de feedback APNS e atualizar a tabela **AppSubscriptionRcp**. Para todos os tokens desativados, o campo **Desativado** é definido como **Verdadeiro** e a subscrição vinculada a esse token de dispositivo será excluída automaticamente de deliveries futuros.
 
 **Para iOS - conector HTTP/2**
 
-O protocolo http/2 permite um feedback direto e status para cada delivery push. Se o conector do protocolo http/2 for usado, o serviço de feedback não será mais chamado pelo fluxo de trabalho **[!UICONTROL mobileAppOptOutMgt]**. Os tokens não registrados são tratados de forma diferente entre o conector binário do iOS e o conector http/2 do iOS. Um token é considerado não registrado quando um aplicativo móvel é desinstalado ou reinstalado.
+O protocolo http/2 permite um feedback direto e status para cada delivery push. Se o conector do protocolo http/2 for usado, o serviço de feedback não será mais chamado pelo workflow **[!UICONTROL mobileAppOptOutMgt]**. Os tokens não registrados são tratados de forma diferente entre o conector binário do iOS e o conector http/2 do iOS. Um token é considerado não registrado quando um aplicativo móvel é desinstalado ou reinstalado.
 
 Em sincronia, se o APNS retornar um status &quot;não registrado&quot; para uma mensagem, o token do target será colocado imediatamente em quarentena.
 
@@ -271,7 +271,7 @@ A cada notificação, o Adobe Campaign recebe os erros síncronos diretamente do
 * Cota de dispositivo excedida: sem tentativa, erro leve, o motivo da falha é **[!UICONTROL Refused]**.
 * Token inválido ou não registrado, erro inesperado, problema da conta do remetente: sem tentativa, erro grave, o motivo de falha é **[!UICONTROL Refused]**.
 
-O fluxo de trabalho **[!UICONTROL mobileAppOptOutMgt]** é executado a cada 6 horas para atualizar a tabela **AppSubscriptionRcp**. Para os tokens declarados não registrados ou não mais válidos, o campo **Desativado** é definido como **Verdadeiro** e a subscrição vinculada a esse token de dispositivo será excluída automaticamente dos deliveries futuros.
+O workflow **[!UICONTROL mobileAppOptOutMgt]** é executado a cada 6 horas para atualizar a tabela **AppSubscriptionRcp**. Para os tokens declarados não registrados ou não mais válidos, o campo **Desativado** é definido como **Verdadeiro** e a subscrição vinculada a esse token de dispositivo será excluída automaticamente dos deliveries futuros.
 
 Durante a análise de delivery, todos os dispositivos excluídos do target são automaticamente adicionados à tabela **excludeLogAppSubRcp** .
 
@@ -364,7 +364,7 @@ O mecanismo de quarentena do Android V2 usa o mesmo processo que o Android V1, o
  </tbody> 
 </table>
 
-## SMS em quarantena {#sms-quarantines}
+## SMS em quarentena {#sms-quarantines}
 
 **Para conectores padrão**
 
