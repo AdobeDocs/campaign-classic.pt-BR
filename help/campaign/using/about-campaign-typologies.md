@@ -14,11 +14,11 @@ discoiquuid: 72c5151c-ce1e-425a-9aee-beefe9f21a67
 index: y
 internal: n
 snippet: y
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 2a5711c4478f8378c079fec4792ecbb95266ad4b
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '484'
-ht-degree: 76%
+ht-degree: 100%
 
 ---
 
@@ -27,7 +27,7 @@ ht-degree: 76%
 
 Otimização de Campanha é o módulo do Adobe Campaign que permite controlar, filtrar e monitorar o envio de deliveries. Para evitar conflitos entre campanhas, o Adobe Campaign pode testar várias combinações aplicando regras de restrição específicas. Isso garante que as mensagens enviadas atendam melhor às necessidades e expectativas dos clientes, de acordo com as políticas de comunicação da empresa.
 
-![](assets/do-not-localize/how-to-video.png) [Descubra este recurso em vídeo](#typologies-video)
+![](assets/do-not-localize/how-to-video.png) [Descubra este recurso no vídeo](#typologies-video)
 
 >[!NOTE]
 >
@@ -71,17 +71,18 @@ As etapas para criar e aplicar uma tipologia para seus deliveries estão listada
 
 Durante a preparação do delivery, os recipients são excluídos quando o critério é atingido. Você pode verificar logs para monitorar exclusões. Casos de uso de exemplo das regras de tipologia de pressão estão disponíveis [nesta página](../../campaign/using/pressure-rules.md#use-cases-on-pressure-rules).
 
-## Como configurar o gerenciamento de fadiga usando o regra de tipologia {#typologies-video}
+## Como configurar o gerenciamento de fadiga usando regras de tipologia {#typologies-video}
 
-Este vídeo explica como implementar o gerenciamento de fadiga no Adobe Campaign Classic, aproveitando regras de tipologia.
+Este vídeo explica como implementar o gerenciamento de fadiga no Adobe Campaign Classic utilizando regras de tipologia.
 
->[!VIDEO](https://video.tv.adobe.com/v/25090?quality=12)
+>[!VIDEO](https://video.tv.adobe.com/v/25090?quality=12&captions=por_br)
 
 ## Como configurar o gerenciamento de fadiga usando filtros predefinidos
 
-O gerenciamento de fadiga controla a frequência e a quantidade de mensagens para evitar a solicitação excessiva de recipient. Se você não tiver o módulo de otimização de campanha na instância da campanha, poderá configurar um filtro predefinido que filtrará a população do público alvo pelo número de mensagens recebidas. Este vídeo explica como implementar o gerenciamento de fadiga no Adobe Campaign Classic usando filtros.
+O gerenciamento de fadiga controla a frequência e a quantidade de mensagens para evitar a solicitação excessiva de recipients. Se você não tiver o módulo de otimização de campanha na instância da campanha, poderá configurar um filtro predefinido que irá filtrar a população do público-alvo pelo número de mensagens recebidas
+Este vídeo ensina a implementar o gerenciamento de fadiga no Adobe Campaign Classic usando filtros.
 
->[!VIDEO](https://video.tv.adobe.com/v/25091?quality=12)
+>[!VIDEO](https://video.tv.adobe.com/v/25091?quality=12&captions=por_br)
 
 **Tópicos relacionados**
 
@@ -89,4 +90,4 @@ O gerenciamento de fadiga controla a frequência e a quantidade de mensagens par
 
 * [Sobre tipologias de campanha](../../campaign/using/pressure-rules.md)
 
-* [Gerenciamento da fadiga de marketing com regras de pressão](https://docs.adobe.com/content/help/en/campaign-classic/using/orchestrating-campaigns/campaign-optimization/pressure-rules.html)
+* [Gerenciamento da fadiga de marketing com regras de pressão](https://docs.adobe.com/content/help/pt-BR/campaign-classic/using/orchestrating-campaigns/campaign-optimization/pressure-rules.html)
