@@ -14,11 +14,11 @@ discoiquuid: 6101e083-3754-41e1-8a93-021b1a771dc0
 index: y
 internal: n
 snippet: y
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 63f07746d39fff22a98b3cd4ab7f2294da778ab3
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '406'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -55,9 +55,9 @@ No contexto do Adobe Campaign, os seguintes conceitos devem ser definidos:
 
 >[!NOTE]
 >
->Para mais informações sobre o ambiente de trabalho do Adobe Campaign, consulte [essa seção](../../platform/using/adobe-campaign-workspace.md).
+>Para obter mais informações sobre o ambiente de trabalho do Adobe Campaign, consulte [essa seção](../../platform/using/adobe-campaign-workspace.md).
 >  
->All functionalities linked to deliveries and communication channels are detailed in [this section](../../delivery/using/steps-about-delivery-creation-steps.md).
+>Todas as funcionalidades vinculadas aos canais de deliveries e comunicação estão detalhadas [nesta seção](../../delivery/using/steps-about-delivery-creation-steps.md).
 >
 >Todas as funcionalidades relacionadas à campanha são detalhadas em [Acesso a campanhas de marketing](../../campaign/using/accessing-marketing-campaigns.md).
 
