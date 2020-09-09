@@ -14,11 +14,11 @@ discoiquuid: 78c70ef4-807d-45d4-ac87-2b741c0ef5cb
 index: y
 internal: n
 snippet: y
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: f7ed7e59be2cfbde467b0c80d21cfbf52016a2b8
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '190'
-ht-degree: 93%
+ht-degree: 100%
 
 ---
 
@@ -31,9 +31,9 @@ Uma condição é uma expressão JavaScript que deve ser avaliada como &quot;ver
 
 ![](assets/edit_test.png)
 
-Para obter mais informações sobre todas as funções adicionais do JavaScript e métodos SOAP do servidor do aplicativo acessível via JavaScript de workflow, consulte a [documentação JSAPI](https://docs.adobe.com/content/help/br/campaign-classic/technicalresources/api/index.html).
+Para obter mais informações sobre todas as funções adicionais do JavaScript e métodos SOAP do servidor do aplicativo acessível via JavaScript de workflow, consulte a [documentação JSAPI](https://docs.adobe.com/content/help/en/campaign-classic/technicalresources/api/index.html).
 
-Também é possível inserir variáveis diretamente no editor. For more  information on how to work with variables, refer to [this section](../../workflow/using/javascript-scripts-and-templates.md#variables).
+Também é possível inserir variáveis diretamente no editor. Para obter mais informações sobre como trabalhar com variáveis, consulte [esta seção](../../workflow/using/javascript-scripts-and-templates.md#variables).
 
 As condições podem ser adicionadas, excluídas ou ordenadas a partir da janela de edição da propriedade de atividade, mas também podem ser modificadas a partir da transição.
 
