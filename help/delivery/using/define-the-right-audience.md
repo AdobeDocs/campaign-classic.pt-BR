@@ -1,6 +1,6 @@
 ---
-title: Definir a audiência correta
-seo-title: Definir a audiência correta
+title: Definir o público-alvo correto
+seo-title: Definir o público-alvo correto
 page-status-flag: never-activated
 uuid: a540efc7-105d-4c7f-a2ee-ade4d22b3445
 contentOwner: sauviat
@@ -12,67 +12,67 @@ discoiquuid: 0cbc4e92-482f-4dac-a1fb-b738e7127938
 index: y
 internal: n
 snippet: y
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 5e6ecd636ee0b2199808c03b2fd898a194f0c1ea
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '478'
-ht-degree: 32%
+ht-degree: 100%
 
 ---
 
 
-# Definir a audiência correta {#define-the-right-audience}
+# Definir o público-alvo correto {#define-the-right-audience}
 
-A população-alvo é fundamental: crie suas listas cuidadosamente, teste seus e-mails em clientes de e-mail populares e dispositivos móveis e verifique se suas listas de e-mail estão atualizadas (sem endereços desconhecidos ou obsoletos). Você também pode enviar provas que ajudam a configurar um ciclo de validação completo.
+A segmentação de público-alvo é fundamental: crie suas listas cuidadosamente, teste seus emails em clientes de email populares e dispositivos móveis e verifique se suas listas de email estão atualizadas (sem endereços desconhecidos ou obsoletos). Você também pode enviar provas que ajudam a configurar um ciclo de validação completo.
 
-Saiba mais sobre as populações de públicos alvos [nesta seção](../../delivery/using/steps-defining-the-target-population.md)
+Saiba mais sobre as populações de públicos-alvos [nesta seção](../../delivery/using/steps-defining-the-target-population.md)
 
-## Público alvo da audiência direita {#target-the-right-audience}
+## Direcionar o público-alvo correto {#target-the-right-audience}
 
 Quando seu conteúdo estiver pronto, será necessário definir com cuidado quem receberá sua mensagem.
 
-Para que sua entrega seja bem-sucedida, o conteúdo personalizado mais relevante deve ser enviado aos destinatários corretos. O Adobe Campaign permite criar o destino mais preciso: você pode selecionar os destinatários de acordo com a idade, localização, o que compraram, se clicaram em um link em uma entrega anterior, etc. Com a Adobe Campaign, também é possível definir perfis de teste, grupos de controle e seeds addresses para verificar se o público alvo está correto.
+Para que seu delivery seja bem-sucedido, o conteúdo personalizado mais relevante deve ser enviado aos recipients corretos. O Adobe Campaign permite criar o público mais preciso: você pode selecionar os recipients de acordo com a idade, localização, o que compraram, se clicaram em um link em um delivery anterior, etc. Com o Adobe Campaign, também é possível definir perfis de teste, grupos de controle e endereços de seed para verificar se o público-alvo está correto.
 
-## Target mapping {#target-mappings}
+## Target mappings {#target-mappings}
 
-In Campaign Classic, by default, delivery templates target **Recipients**. A Adobe Campaign oferta outros target mapping para seus delivery, que podem ser alterados de acordo com suas necessidades.
+Por padrão, os modelos de delivery no Campaign Classic direcionam os **Recipients**. O Adobe Campaign oferece outros target mappings para seus deliveries, que podem ser modificados conforme suas necessidades.
 
-Por exemplo, você pode entregar a visitantes cujos perfis tenham sido coletados pelas redes sociais ou a visitantes que estejam inscritos em um serviço de informação.
+Você pode, por exemplo, entregar deliveries a visitantes cujos perfis tenham sido coletados nas redes sociais, ou a visitantes que estejam inscritos em um serviço de informação.
 
 Esses mapeamentos são apresentados [nesta seção](../../delivery/using/selecting-a-target-mapping.md).
 
 Você também pode criar e usar um target mapping personalizado. Para obter mais informações, consulte [esta seção](../../configuration/using/target-mapping.md).
 
-## Recipient externos {#external-recipients}
+## Recipients externos {#external-recipients}
 
-Você pode enviar entregas para destinatários armazenados em um arquivo externo em vez de salvos no banco de dados. Learn more [in this section](../../delivery/using/steps-defining-the-target-population.md#selecting-external-recipients).
+Você pode enviar deliveries para destinatários armazenados em um arquivo externo em vez de salvos no banco de dados. Saiba mais [nesta seção](../../delivery/using/steps-defining-the-target-population.md#selecting-external-recipients).
 
 ## Enviar para seus assinantes {#send-to-subscribers}
 
-Para enviar mensagens aos assinantes de um boletim informativo, é possível público alvo direto dos assinantes para o serviço de informação correspondente. Learn more [in this section](../../delivery/using/managing-subscriptions.md#delivering-to-the-subscribers-of-a-service).
+Para enviar mensagens aos assinantes de um informativo, é possível direcionar diretamente os assinantes para o serviço de informação correspondente. Saiba mais [nesta seção](../../delivery/using/managing-subscriptions.md#delivering-to-the-subscribers-of-a-service).
 
 
-## Testar recipient e seeds addresses {#test-recipients-seed-addresses}
+## Testar recipients e endereços de seed {#test-recipients-seed-addresses}
 
-Para testar seu delivery, use provas antes de enviar para o público alvo principal.
+Para testar seu delivery, use provas antes de enviar para o público-alvo principal.
 
-Certifique-se de selecionar recipient de prova apropriados, pois eles validam o formulário e o conteúdo da mensagem. As etapas para definir os recipient de prova são apresentadas [nesta seção](../../delivery/using/steps-defining-the-target-population.md#selecting-the-proof-target).
+Selecione os recipients de prova apropriados, porque eles validam a forma e o conteúdo da mensagem. As etapas para definir os recipients de prova são apresentadas [nesta seção](../../delivery/using/steps-defining-the-target-population.md#selecting-the-proof-target).
 
-Os seed addresses são usados para direcionar destinatários que não correspondem aos critérios de target definidos para testar uma entrega antes de enviar ao target principal. They are presented [in this section](../../delivery/using/about-seed-addresses.md).
+Os seed addresses são usados para direcionar recipients que não correspondem aos critérios de direcionamento definidos para testar um delivery antes de enviar ao público-alvo principal. Eles são apresentados [nesta seção](../../delivery/using/about-seed-addresses.md).
 
-## Desduplicar endereços {#deduplicate-addresses}
+## Cancelar endereços duplicados {#deduplicate-addresses}
 
-É importante evitar o uso de endereços de e-mail de duplicado, pois isso pode afetar seu público alvo:
+É importante evitar emails duplicados, pois eles podem afetar seu público-alvo:
 
-* A mesma mensagem pode ser enviada mais de uma vez quando um público alvo é dividido.
+* A mesma mensagem pode ser enviada mais de uma vez quando um público-alvo é dividido.
 
 * Se um destinatário cancelar a assinatura após receber uma mensagem, seu perfil duplicado ainda receberá mensagens futuras.
 
-A desduplicação de endereços protege a reputação do seu envio e garante um bom gerenciamento de quarentenas.
+O cancelamento da duplicação de endereços protege a reputação de envio e garante um bom gerenciamento de quarentena.
 
-Saiba mais [neste caso](../../workflow/using/deduplication.md#example--identify-the-duplicates-before-a-delivery)de uso.
+Saiba mais [neste caso de uso](../../workflow/using/deduplication.md#example--identify-the-duplicates-before-a-delivery).
 
-## Endereços de email do índice {#index-addresses}
+## Indexar endereços de email {#index-addresses}
 
 Para otimizar o desempenho das consultas SQL usadas no aplicativo, um índice pode ser declarado a partir do elemento principal do esquema de dados.
 
