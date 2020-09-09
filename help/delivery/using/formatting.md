@@ -14,11 +14,11 @@ discoiquuid: d678db05-cc44-4086-98a5-e5296e8e5de8
 index: y
 internal: n
 snippet: y
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 3b752b283a14bc75954fe46da5a21970c1e17fa1
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1449'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -240,7 +240,7 @@ Este exemplo envolve as seguintes etapas:
    </srcSchema>
    ```
 
-1. Create the linked **[!UICONTROL Content management]** type form (**neo:news**)
+1. Crie o formulário de do tipo **[!UICONTROL Content management]** vinculado (**neo:news**)
 
    ```
    <form _cs="News (neo)" entitySchema="xtk:form"  img="xtk:form.png" label="News"  name="news" namespace="neo" type="contentForm" xtkschema="xtk:form">
