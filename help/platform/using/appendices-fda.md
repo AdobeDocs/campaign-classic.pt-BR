@@ -14,9 +14,9 @@ discoiquuid: a84a73a9-9930-449f-8b81-007a0e9d5233
 index: y
 internal: n
 snippet: y
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 3b752b283a14bc75954fe46da5a21970c1e17fa1
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1416'
 ht-degree: 100%
 
@@ -210,7 +210,7 @@ Se sua base estiver em latin1, você terá que adicionar APICharSize=1 nas opç�
 
 ### Fuso horário {#timezone}
 
-O Teradata usa nomes de fusos horários que não são padrão. Você pode encontrar a lista no [site do Teradata](https://docs.teradata.com/reader/rgAb27O_xRmMVc_aQq2VGw/oGKvgl7gCeBMTGrp59BnwA). O Adobe Campaign tentará converter o fuso horário fornecido na configuração externa em algo que o Teradata entenda. Se uma correspondência não for encontrada, o fuso horário ausente GMT+X (ou GMT-X) será encontrado para a sessão, com um aviso no registro.
+O Teradata usa nomes de fusos horários que não são padrão. Você pode encontrar a lista no [site do Teradata](https://docs.teradata.com/reader/rgAb27O_xRmMVc_aQq2VGw/oGKvgl7gCeBMTGrp59BnwA). O Adobe Campaign tentará converter o fuso horário fornecido na configuração externa em algo que o Teradata entenda. Se uma correspondência não for encontrada, o fuso horário ausente GMT+X (ou GMT-X) será encontrado para a sessão, com um aviso no log.
 
 A conversão é feita ao ler um arquivo chamado teradata_timezone.txt que deve estar no seguinte diretório datakit: /usr/local/neolane/nl6/datakit em linux. Se você editar esse arquivo, entre em contato com a equipe do Adobe Campaign para fazer a alteração no código fonte; caso contrário, esse arquivo será substituído durante a próxima atualização do Campaign.
 
