@@ -14,11 +14,11 @@ discoiquuid: 627ade78-96b3-4a6e-9ace-74610a3c8d1a
 index: y
 internal: n
 snippet: y
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: bc54cef4c44be4c694e062f56685dbb09d2fcf8e
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '301'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -27,7 +27,7 @@ ht-degree: 98%
 
 Essa integração pode ser usada para criar um boletim informativo no Adobe Experience Manager que será usado no Adobe Campaign como parte de uma campanha de email.
 
-Para obter um exemplo mais detalhado sobre como usar essa integração, consulte este [guia com o passo a passo](https://helpx.adobe.com/campaign/kb/acc-aem.html).
+Para obter um exemplo mais detalhado sobre como usar essa integração, consulte este [guia com o passo a passo](https://helpx.adobe.com/br/campaign/kb/acc-aem.html).
 
 **No Adobe Experience Manager:**
 
@@ -54,11 +54,11 @@ Para obter um exemplo mais detalhado sobre como usar essa integração, consulte
 
    ![](assets/aem_uc_5.png)
 
-1. Na primeira lista suspensa, selecione **[!UICONTROL Publish to Adobe Campaign]** como modelo de fluxo de trabalho e clique em **[!UICONTROL Start workflow]**.
+1. Na primeira lista suspensa, selecione **[!UICONTROL Publish to Adobe Campaign]** como modelo de workflow e clique em **[!UICONTROL Start workflow]**.
 
    ![](assets/aem_uc_6.png)
 
-1. Em seguida, como a etapa anterior, inicie o fluxo de trabalho **[!UICONTROL Approve for Campaign]**.
+1. Em seguida, como a etapa anterior, inicie o workflow **[!UICONTROL Approve for Campaign]**.
 1. Um aviso de isenção de responsabilidade aparece na parte superior da página. Clique em **[!UICONTROL Complete]** para confirmar a revisão e clique em **[!UICONTROL Ok]**.
 
    ![](assets/aem_uc_7.png)
@@ -87,7 +87,7 @@ Seu boletim informativo agora está pronto e sincronizado no Adobe Campaign.
    ![](assets/aem_uc_11.png)
 
 1. Selecione o delivery criado anteriormente no Adobe Experience Manager e clique em **[!UICONTROL Ok]**.
-1. Clique no botão **[!UICONTROL Refresh content]** assim que algumas alterações forem feitas na entrega do AEM.
+1. Clique no botão **[!UICONTROL Refresh content]** assim que algumas alterações forem feitas no delivery do AEM.
 
    ![](assets/aem_uc_12.png)
 
