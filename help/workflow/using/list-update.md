@@ -14,11 +14,11 @@ discoiquuid: ca2cd5bf-78a2-4e43-955d-206f4474d1e0
 index: y
 internal: n
 snippet: y
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: bc54cef4c44be4c694e062f56685dbb09d2fcf8e
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '447'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -52,19 +52,19 @@ No exemplo a seguir, a atividade de atualização da lista segue uma query direc
    Para obter mais informações sobre como criar uma consulta em um workflow, consulte [Query](../../workflow/using/query.md).
 
 1. É possível selecionar um rótulo para a atividade.
-1. Selecione a opção **[!UICONTROL Create the list if necessary (Calculated name)]** para mostrar que a lista é criada quando o primeiro fluxo de trabalho é executado e, em seguida, atualizada com as execuções seguintes.
+1. Selecione a opção **[!UICONTROL Create the list if necessary (Calculated name)]** para mostrar que a lista é criada quando o primeiro workflow é executado e, em seguida, atualizada com as execuções seguintes.
 1. Selecione a pasta na qual deseja salvar a lista.
 1. Insira um rótulo para a lista. É possível inserir campos dinâmicos para gerar automaticamente o nome a partir da lista. Neste exemplo, a lista tem o mesmo nome que a query para identificar facilmente seu conteúdo.
 1. Deixe a opção **[!UICONTROL Purge the list if it exists (otherwise add to the list)]** marcada para excluir os recipients que não correspondem aos critérios de direcionamento e para inserir os novos na lista.
 1. Deixe a opção **[!UICONTROL Create or use a list with its own table]** também marcada.
 1. Deixe a opção **[!UICONTROL Generate an outbound transition]** desmarcada.
-1. Clique em **[!UICONTROL Ok]** e inicie o fluxo de trabalho.
+1. Clique em **[!UICONTROL Ok]** e inicie o workflow.
 
    ![](assets/s_user_segmentation_update_list_calc_example.png)
 
    A lista de recipients correspondentes é então criada ou atualizada.
 
-Para obter mais informações, consulte o vídeo [Creating a list of recipients](https://docs.adobe.com/content/help/en/campaign-classic-learn/tutorials/profile-management/creating-a-list-of-recipients.html).
+Para obter mais informações, consulte o vídeo [Creating a list of recipients](https://docs.adobe.com/content/help/pt-BR/campaign-classic-learn/tutorials/profile-management/creating-a-list-of-recipients.html).
 
 ## Parâmetros de entrada {#input-parameters}
 
