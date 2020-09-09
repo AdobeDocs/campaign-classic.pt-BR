@@ -12,11 +12,11 @@ discoiquuid: 6a394eeb-fbe1-4712-bb13-db5d7965fb73
 index: y
 internal: n
 snippet: y
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 24d2dded38ddb922891a7264d9efea02cb448323
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '623'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
@@ -25,7 +25,7 @@ ht-degree: 95%
 
 Para otimizar a capacidade de delivery de emails do Adobe Campaign, recomendamos o uso das práticas recomendadas listadas abaixo. Os problemas de capacidade de delivery estão geralmente ligados às medidas de proteção contra spam implementadas pelos provedores de serviços de Internet e administradores de servidores de correio.
 
-A **capacidade de entrega de email** refere-se ao conjunto de características que determinam a capacidade de uma mensagem de alcançar seu destino por meio de um endereço de email pessoal, dentro de um curto período e com a qualidade esperada em termos de conteúdo e formato.
+A **capacidade de delivery de email** refere-se ao conjunto de características que determinam a capacidade de uma mensagem de alcançar seu destino por meio de um endereço de email pessoal, dentro de um curto período e com a qualidade esperada em termos de conteúdo e formato.
 
 Essas características dividem-se em quatro categorias principais:
 * Qualidade dos dados
@@ -35,7 +35,7 @@ Essas características dividem-se em quatro categorias principais:
 
 Juntos, elas formam a base de um programa bem-sucedido de capacidade de fornecimento de email.
 
-A **taxa de capacidade de entrega** é o número de emails enviados que foram entregues com êxito aos recipients.
+A **taxa de capacidade de delivery** é o número de emails enviados que foram entregues com êxito aos recipients.
 
 A taxa de delivery depende de vários fatores, especialmente:
 * A configuração correta das instâncias
@@ -46,7 +46,7 @@ A taxa de delivery depende de vários fatores, especialmente:
 * Autenticação da mensagem (SPF, DKIM, DMARC)
 * Reputação do remetente
 
-Esta é uma lista dos pontos principais a serem verificados para garantir uma boa capacidade de entrega.
+Esta é uma lista dos pontos principais a serem verificados para garantir uma boa capacidade de delivery.
 
 ## Verificar a configuração da rede {#network-configuration}
 
@@ -74,21 +74,21 @@ Os remetentes de spam fazem deliveries programados para manter a reputação ao 
 
 ## Práticas recomendadas {#best-practices}
 
-Saiba mais sobre as práticas recomendadas relacionadas à entrega com a Adobe Campaign. Use os links abaixo para navegar pelos tópicos e encontrar orientação.
+Saiba mais sobre as práticas recomendadas relacionadas ao delivery com o Adobe Campaign. Use os links abaixo para navegar pelos tópicos e encontrar orientação.
 
 <table>
 <tr>
   <td>
     <a href="starting-new-platform.md">
-      <img alt="Start" src="assets/do-not-localize/start.svg" width="60px"/>
+      <img alt="Iniciar" src="assets/do-not-localize/start.svg" width="60px"/>
     </a>
     <div>
       <a href="starting-new-platform.md">
-    <strong>Start</strong>
+    <strong>Iniciar</strong>
     </a>
     </div>
     <p>
-    <em>Início de uma nova plataforma</em>
+    <em>Iniciar uma nova plataforma</em>
     <p>
   </td>
    <td>
@@ -110,11 +110,11 @@ Saiba mais sobre as práticas recomendadas relacionadas à entrega com a Adobe C
     </a>
     <div>
       <a href="improve-reputation.md">
-    <strong>Envio</strong>
+    <strong>Enviar</strong>
     </a>
     </div>
     <p>
-    <em>Aprimoramento da reputação</em>
+    <em>Melhorar a reputação</em>
     <p>
   </td>
 </tr>
@@ -134,11 +134,11 @@ Saiba mais sobre as práticas recomendadas relacionadas à entrega com a Adobe C
   </td>
    <td>
     <a href="monitoring-deliverability.md">
-      <img alt="Marque" src="assets/do-not-localize/monitor.svg" width="60px"/>
+      <img alt="Verificar" src="assets/do-not-localize/monitor.svg" width="60px"/>
     </a>
     <div>
       <a href="monitoring-deliverability.md">
-    <strong>Monitor</strong>
+    <strong>Monitorar</strong>
     </a>
     </div>
     <p>
