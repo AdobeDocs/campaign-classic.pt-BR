@@ -12,33 +12,33 @@ discoiquuid: 0cbc4e92-482f-4dac-a1fb-b738e7127938
 index: y
 internal: n
 snippet: y
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 5e6ecd636ee0b2199808c03b2fd898a194f0c1ea
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '448'
-ht-degree: 28%
+ht-degree: 100%
 
 ---
 
 
 # Rastrear e monitorar {#track-and-monitor}
 
-Você clicou no botão Enviar? Vamos ver o que acontece. Depois que a entrega é enviada, o Adobe Campaign permite que você acompanhe as mensagens enviadas e descubra como seus destinatários reagem à sua entrega. Isso o ajudará a melhorar o envio futuro e a otimizar suas próximas campanhas.
+Você clicou no botão Enviar? Vamos ver o que acontece. Depois que o delivery é enviado, o Adobe Campaign permite acompanhar as mensagens enviadas e descobrir como os recipients reagem ao seu delivery. Isso o ajudará a melhorar o envio futuro e a otimizar as próximas campanhas.
 
-## Monitoramento de deliveries {#monitoring-deliveries}
+## Monitorar deliveries {#monitoring-deliveries}
 
-Para controlar suas campanhas, você deve garantir que a mensagem tenha sido entregue aos seus destinatários.
+Para controlar suas campanhas, você deve garantir que a mensagem tenha sido entregue aos recipients.
 
-No painel do delivery da Campanha, você pode verificar as mensagens processadas e os registros de auditoria do delivery.
+No painel de delivery do Campaign é possível verificar as mensagens processadas e os logs de auditoria do delivery.
 Você também pode controlar o status das mensagens nos logs do delivery. [Saiba mais](../../delivery/using/monitoring-a-delivery.md#delivery-dashboard).
 
-E se os delivery não estiverem sendo enviados e seu status permanecer **Pendente**?
+E se os deliveries não estiverem sendo enviados e seu status permanecer **Pendente**?
 
 * O processo de execução está aguardando a disponibilidade de alguns recursos. O MTA pode não ter sido iniciado.
-Verifique se os seus mta@instanceétodos estão abertos nos servidores MTA e start o módulo MTA, se necessário. [Saiba mais](../../production/using/administration.md).
+Verifique se os módulos mta@instance estão abertos nos servidores MTA e, caso necessário, inicie o módulo MTA. [Saiba mais](../../production/using/administration.md).
 
-* O delivery pode estar usando uma afinidade que não foi configurada na instância de envio.
-Dica: Verifique a configuração do gerenciamento de tráfego (afinidade IP). Para obter mais informações, consulte Controlar tráfego SMTP de saída.
+* Pode ser que o delivery esteja usando uma afinidade não configurada no instância de envio.
+Dica: verifique a configuração do gerenciamento de tráfego (afinidade IP). Para obter mais informações, consulte Controlar tráfego SMTP de saída.
 
 >[!NOTE]
 >
@@ -46,32 +46,32 @@ Dica: Verifique a configuração do gerenciamento de tráfego (afinidade IP). Pa
 
 ## Rastreamento {#tracking-deliveries}
 
-Para conhecer melhor o comportamento de seus destinatários, você pode acompanhar como eles reagem a uma entrega: recebimento, abertura, cliques em links, assinaturas canceladas, etc. No Campaign Classic, essas informações são exibidas na guia Rastreamento dos recipient direcionados pelo delivery e na guia Rastreamento do delivery. No Campaign Standard, ele é exibido na guia Logs de rastreamento do delivery.
+Para conhecer melhor o comportamento dos recipients, você pode acompanhar como eles reagem a um delivery: recebimento, abertura, cliques em links, assinaturas canceladas, etc. No Campaign Classic, essas informações são exibidas na guia Rastreamento dos recipients direcionados pelo delivery e na guia Rastreamento de delivery. No Campaign Standard, ele é exibido na guia Logs de rastreamento do delivery.
 
-**Dica**: O rastreamento de mensagens está ativado por padrão. Para configurar URLs, selecione a opção Exibir URLs na seção inferior do assistente do delivery. Para cada URL da mensagem, você pode escolher se deseja ativar o rastreamento.
+**Dica**: o rastreamento de mensagens é habilitado por padrão. Para configurar URLs, selecione a opção Exibir URLs na seção inferior do assistente do delivery. Para cada URL da mensagem, você pode escolher se deseja ativar o rastreamento.
 
-Para obter mais informações, consulte a seção [Configuração de rastreamento](../../delivery/using/how-to-configure-tracked-links.md) e a descrição dos indicadores [de](../../reporting/using/delivery-reports.md#tracking-indicators) rastreamento.
+Para obter mais informações, consulte a seção [Configuração de rastreamento](../../delivery/using/how-to-configure-tracked-links.md) e a descrição dos [Indicadores de rastreamento](../../reporting/using/delivery-reports.md#tracking-indicators).
 
 ## Desempenho do delivery {#delivery-performances}
 
-Para medir a velocidade de entrega das mensagens, é possível controlar a taxa de transferência do delivery. Os critérios são o número de mensagens enviadas por hora e o tamanho das mensagens (em bits por segundo). For more on this, see [Delivery throughput](../../reporting/using/global-reports.md#delivery-throughput).
+É possível controlar a taxa de transferência do delivery para medir a velocidade de delivery de cada mensagem. Os critérios são o número de mensagens enviadas por hora e o tamanho das mensagens (em bits por segundo). Para obter mais informações, consulte [Taxa de transferência de delivery](../../reporting/using/global-reports.md#delivery-throughput).
 
 **Dicas**:
 
-* Não mantenha as entregas em estado de falha na instância, pois isso mantém tabelas temporárias e afeta o desempenho.
+* Não mantenha os deliveries em estado de falha na instância, pois tabelas temporárias serão mantidas e o desempenho será afetado.
 
 * Remova as remessas que não são mais necessárias e os destinatários inativos do banco de dados para manter a qualidade do endereço.
 
-* Não tente programar entregas grandes em conjunto. Observe que pode levar de 5 a 10 minutos para espalhar a carga uniformemente sobre o sistema.
+* Não tente programar deliveries grandes juntos. Observe que pode levar de 5 a 10 minutos para que a carga seja uniformemente espalhada sobre o sistema.
 
-## solução de problemas do delivery {#delivery-troubleshooting}
+## Solução de problemas de delivery {#delivery-troubleshooting}
 
-Ações específicas podem ser executadas ao encontrar problemas com delivery:
+Ações específicas podem ser executadas para a resolução de problemas com deliveries:
 
-* [Problemas de produtividade](../../production/using/performance-and-throughput-issues.md#deliverability_issues)
+* [Problemas com delivery](../../production/using/performance-and-throughput-issues.md#deliverability_issues)
 
 * [Problemas de exibição de imagem](../../production/using/image-display-issues.md)
 
 * [Problemas de desempenho do delivery](../../delivery/using/monitoring-a-delivery.md#performance_issues)
 
-* [Problemas](../../production/using/temporary-files.md) de arquivos temporários - somente clientes *locais*
+* [Problemas com arquivos temporários](../../production/using/temporary-files.md) – *somente clientes locais*
