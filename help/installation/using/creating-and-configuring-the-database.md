@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 890950463146fe0863d2809759eb142cb4bb1fff
+source-git-commit: aeedcfb489e0dc0cd62e4472dc86102fa40cf6b4
 workflow-type: tm+mt
 source-wordcount: '1296'
 ht-degree: 2%
@@ -69,7 +69,7 @@ Dependendo do mecanismo de banco de dados selecionado, as informações de ident
 * Para um mecanismo **PostgreSQL** ou **DB2** , você deve especificar o nome DNS (ou endereço IP) definido no servidor de aplicativos para acessar o servidor de banco de dados.
 * Para um mecanismo do **Microsoft SQL Server** , você deve definir:
 
-   1. o nome DNS (ou endereço IP) definido no servidor de aplicativos para acessar o servidor de banco de dados: **DNS** ou **DNS\ `<instance>`** (modo de instância),
+   1. o nome DNS (ou endereço IP) definido no servidor de aplicativos para acessar o servidor de banco de dados: **DNS** ou **DNS`\<instance>`** (modo de instância),
    1. o método de autenticação usado para acessar o Microsoft SQL Server: **[!UICONTROL SQL Server authentication]** ou **[!UICONTROL Windows NT authentication]**.
 
       ![](assets/s_ncs_install_db_mssql_creation01.png)
