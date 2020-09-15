@@ -14,11 +14,11 @@ discoiquuid: 1e196989-b8c1-473a-89c9-bbeb68b98419
 index: y
 internal: n
 snippet: y
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 98c880e1218f179b8b804d52690135a2f28520a0
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '707'
-ht-degree: 89%
+ht-degree: 100%
 
 ---
 
@@ -33,7 +33,7 @@ Uma atualização automática pode ser configurada por meio de um fluxo de traba
 
 ## Como executar uma atualização em massa {#performing-a-mass-update}
 
-Para executar atualizações manuais, clique com o botão direito do mouse nos destinatários selecionados para usar o menu de atalho **[!UICONTROL Actions]** ou use o ícone **[!UICONTROL Actions]**.
+Para executar atualizações manuais, clique com o botão direito do mouse nos recipients selecionados para usar o menu de atalho **[!UICONTROL Actions]** ou use o ícone **[!UICONTROL Actions]**.
 
 ![](assets/s_ncs_user_action_icon.png)
 
@@ -41,7 +41,7 @@ Há dois tipos de atualizações: atualização em massa para um conjunto de des
 
 ### Atualização em massa {#mass-update}
 
-Para atualização em massa, use **[!UICONTROL Action > Mass update of selected lines...]**. O assistente ajuda a configurar e executar a atualização.
+Para atualização em massa, utilize **[!UICONTROL Action > Mass update of selected lines...]**. O assistente ajuda a configurar e executar a atualização.
 
 A primeira etapa do assistente é especificar os campos que serão atualizados.
 
@@ -51,13 +51,13 @@ Clique duas vezes nos campos a serem atualizados para exibi-los na seção à di
 
 ![](assets/s_ncs_user_update_wizard01_1.png)
 
-Caso ocorra um erro, use o botão **[!UICONTROL Delete]** para excluir um campo da lista de campos a serem atualizados.
+Caso ocorra um erro, use o botão **[!UICONTROL Delete]** para excluir um campo da lista de campos que devem ser atualizados.
 
-Selecione ou insira os valores para aplicar aos perfis a serem atualizados.
+Selecione ou insira os valores para aplicar aos perfis que serão atualizados.
 
 ![](assets/s_ncs_user_update_wizard01_12.png)
 
-Clique em **[!UICONTROL Distribution of values]** para exibir a distribuição de valores do campo selecionado para os destinatários presentes na pasta atual (não apenas os destinatários afetados pela atualização).
+Clique em **[!UICONTROL Distribution of values]** para exibir a distribuição de valores do campo selecionado para os recipients presentes na pasta atual (não apenas os recipients afetados pela atualização).
 
 ![](assets/s_ncs_user_update_wizard01_2.png)
 
@@ -75,9 +75,9 @@ As informações relativas à execução da atualização são exibidas na seç�
 
 ### Mesclar dados {#merge-data}
 
-Select **[!UICONTROL Merge selected lines...]** to launch the merging of two recipient profiles. Os perfis a serem mesclados devem ser selecionados antes de escolher esta opção. A mesclagem é configurada e iniciada usando um assistente.
+Selecione **[!UICONTROL Merge selected lines...]** para iniciar a mesclagem de dois perfis de recipient. Os perfis a serem mesclados devem ser selecionados antes de escolher esta opção. A mesclagem é configurada e iniciada usando um assistente.
 
-O assistente exibe os valores a serem recuperados para cada campo preenchido em um ou outro perfil de origem. Se um ou mais campos nos perfis a serem mesclados tiverem valores diferentes, eles serão exibidos na seção **[!UICONTROL List of conflicts]** É possível então selecionar o perfil padrão usando os botões de opção abaixo da lista, como no exemplo a seguir:
+O assistente exibe os valores a serem recuperados para cada campo preenchido em um ou outro perfil de origem. Se um ou mais campos nos perfis que serão mesclados tiverem valores diferentes, eles serão exibidos na seção **[!UICONTROL List of conflicts]** É possível então selecionar o perfil padrão usando os botões de opção abaixo da lista, como no exemplo a seguir:
 
 ![](assets/s_ncs_user_merge_wizard01_1.png)
 
@@ -92,7 +92,7 @@ Verifique as colunas **[!UICONTROL Result]** das duas seções da janela e cliqu
 O conteúdo de uma lista pode ser exportado. Para configurar e executar a exportação:
 
 1. Selecione os registros para exportar.
-1. Right-click and select **[!UICONTROL Export...]**.
+1. Clique com o botão direito do mouse e selecione **[!UICONTROL Export...]**.
 
    ![](assets/s_ncs_user_export_list.png)
 
@@ -117,22 +117,22 @@ Na maioria dos casos, os destinatários assinam um boletim informativo por meio 
 
    >[!NOTE]
    >
-   >Este editor permite a você criar um novo serviço: clique no botão **[!UICONTROL Create]**.
+   >Este editor permite criar um novo serviço: clique no botão **[!UICONTROL Create]**.
 
-1. Você pode **[!UICONTROL Send a confirmation message]** aos recipient. O conteúdo desta mensagem pode ser configurado no cenário de assinatura vinculado ao serviço selecionado.
+1. Você pode **[!UICONTROL Send a confirmation message]** para recipients. O conteúdo desta mensagem pode ser configurado no cenário de assinatura vinculado ao serviço selecionado.
 1. Clique no botão **[!UICONTROL Start]** para executar o processo de assinatura.
 
    ![](assets/s_ncs_user_selection_subscribe_service_3.png)
 
-A seção superior da janela permite monitorar o processo de execução. The **[!UICONTROL Stop]** button lets you stop the process. No entanto, os destinatários já processados serão inscritos.
+A seção superior da janela permite monitorar o processo de execução. O botão **[!UICONTROL Stop]** permite interromper o processo. No entanto, os recipients já processados serão inscritos.
 
-If you uncheck the **[!UICONTROL Do not keep a trace of this job in the database]** option, you can select (or create) the execution folder where the information on this process will be stored.
+Se você desmarcar a opção **[!UICONTROL Do not keep a trace of this job in the database]**, poderá selecionar (ou criar) a pasta de execução onde as informações desse processo serão armazenadas.
 
-To check on the process, go to the **[!UICONTROL Subscriptions]** tab on the profiles of the recipients concerned by this operation, or to the **[!UICONTROL Subscriptions]** tab accessed via the **[!UICONTROL Profiles and Targets > Services and Subscriptions]** node.
+Para verificar o processo, acesse a guia **[!UICONTROL Subscriptions]** nos perfis dos recipients relacionados a esta operação, ou à guia **[!UICONTROL Subscriptions]** acessada por meio do nó **[!UICONTROL Profiles and Targets > Services and Subscriptions]**.
 
 ![](assets/s_ncs_user_selection_subscribe_service_4.png)
 
 >[!NOTE]
 >
->Para mais informações sobre criar e configurar serviços de informações, consulte [esta página](../../delivery/using/managing-subscriptions.md).
+>Para obter mais informações sobre como criar e configurar serviços de informações, consulte [esta página](../../delivery/using/managing-subscriptions.md).
 
