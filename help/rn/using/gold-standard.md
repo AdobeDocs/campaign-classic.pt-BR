@@ -14,9 +14,9 @@ discoiquuid: 5df34f55-135a-4ea8-afc2-f9427ce5ae7b
 index: y
 internal: n
 snippet: y
-translation-type: ht
-source-git-commit: 2604df2e6b6a7520e2f2a82f04c75ceb749fde79
-workflow-type: ht
+translation-type: tm+mt
+source-git-commit: ac2d993f525eb918ad5e15104eb3ede9eeadfb43
+workflow-type: tm+mt
 source-wordcount: '815'
 ht-degree: 100%
 
@@ -35,7 +35,7 @@ Esta página lista versões do Gold Standard.
 
 Para obter mais informações sobre a atualização do Gold Standard, consulte este [artigo](https://helpx.adobe.com/br/campaign/kb/gold-standard.html).
 
-## ![](assets/do-not-localize/limited.png) Versão Gold Standard 10{#gs-10}
+## ![](assets/do-not-localize/limited_2.png) Versão Gold Standard 10{#gs-10}
 
 _7 de julho de 2020_
 
@@ -62,6 +62,8 @@ As seguintes correções estão relacionadas ao mecanismo de segurança do link 
 * Correção de um problema que impedia o funcionamento do rastreamento de URLs usando fragmentos em parâmetros de personalização (tags de âncora com sinal de hashtag). (NEO-25774)
 * Correção de um problema com o serviço anti-phishing. (NEO-25283)
 * Correção de um problema de rastreamento ao usar fórmulas de rastreamento personalizadas específicas. (NEO-25277)
+
+
 
 
 ## ![](assets/do-not-localize/red_2.png) Versão Gold Standard 8{#gs-8}
