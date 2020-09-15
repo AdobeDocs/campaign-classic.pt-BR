@@ -14,11 +14,11 @@ discoiquuid: 5df34f55-135a-4ea8-afc2-f9427ce5ae7b
 index: y
 internal: n
 snippet: y
-translation-type: ht
-source-git-commit: c7b00960ffde49df65cd5c8fcfb8fab6aee485d7
-workflow-type: ht
-source-wordcount: '1295'
-ht-degree: 100%
+translation-type: tm+mt
+source-git-commit: 9357be26b1bc436b19861faa2a43ec6a17cb5b3c
+workflow-type: tm+mt
+source-wordcount: '1318'
+ht-degree: 95%
 
 ---
 
@@ -138,7 +138,7 @@ A build 1.0.26 do SDK do iOS está disponível. Nesta nova build, adicionamos o 
 
 **Correções**
 
-* Correção de uma falha no console que ocorria ao adicionar uma tabela vinculada vazia na atividade **Data Loading (RDBMS)** do workflow. (NEO-12213)
+* Corrigido um problema de falha quando o campo **Adicionar tabela** vinculada estava vazio na atividade de fluxo de trabalho **Carregamento de dados (RDBMS)** . (NEO-12213)
 * Correção de um problema que resultava no não processamento de determinadas mensagens pelo servidor de Mid-Sourcing. (NEO-12395)
 * Correção de um problema no workflow de limpeza do banco de dados ao usar a opção de faixas de query com Teradata. (NEO-12399)
 * Correção de um problema que afetava a análise de delivery com a regra de tipologia incluindo o domínio ne.jp. (NEO-12609)
@@ -152,7 +152,7 @@ A build 1.0.26 do SDK do iOS está disponível. Nesta nova build, adicionamos o 
 * Correção de um problema nos workflows ao usar a atividade **File transfer** para baixar arquivos usando a opção **Delete the source files after transfer** com um nome que contém um caractere de espaço. (NEO-13411)
 * Correção de um problema com a limpeza do cache Tomcat, que poderia causar problemas de memória. (NEO-13456)
 * Correção de um problema ao instalar o pacote integrado **Controle do mecanismo de oferta com o módulo de instância de execução** em uma instância de controle existente em execução no Microsoft SQL 2017. (NEO-13539)
-* Correção de uma falha no console que ocorria ao desmarcar URLs rastreados em um email na guia **Text content**. (NEO-13545)
+* Correção de um problema de travamento do console que poderia ocorrer ao desmarcar URLs rastreados em um email, na guia Conteúdo **de** texto devido a uma variável não inicializada. (NEO-13545)
 * Correção de um problema de codificação no nome do remetente chinês. (NEO-13837)
 * Correção de um erro que poderia ocorrer ao exibir dados de resposta da pesquisa no Explorer. (NEO-14590)
 * Correção de um problema que poderia causar discrepância entre a classificação do log de delivery e a tabela de quarentena. (NEO-16547)
@@ -166,4 +166,9 @@ A build 1.0.26 do SDK do iOS está disponível. Nesta nova build, adicionamos o 
 * Correção de um problema de tempo limite ao importar dados de um SFTP externo. (NEO-19723)
 * Correção de um problema ao acessar modelos preditivos. (NEO-19713)
 * Correção de um problema que afetava a amostragem aleatória na atividade **Split** do workflow com o banco de dados FDA do Hadoop. (NEO-16636)
+* Correção de uma regressão no Oracle que resultava em algumas funções consideradas inválidas após a atualização. (NEO-12759)
+
+
+
+
 
