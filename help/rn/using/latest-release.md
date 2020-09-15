@@ -16,7 +16,7 @@ translation-type: tm+mt
 source-git-commit: f92180f93850d5bc33e74210d17cdd36c0c15e5f
 workflow-type: tm+mt
 source-wordcount: '2119'
-ht-degree: 92%
+ht-degree: 93%
 
 ---
 
@@ -32,15 +32,19 @@ _11 de setembro de 2020_
 * Correção de uma regressão que resultava no bloqueio da preparação do delivery devido a uma única função incorreta na parte do delivery que resultava em sobrecarga da memória. (NEO-27346)
 
 
+
 * Correção de um problema de pós-atualização que desativava o Apache e o servidor da Web antes da republicação do aplicativo da Web. (NEO-27155)
+
 
 
 * Corrigida uma regressão no gerenciamento de modelos HTML que resultava em URLs de rastreamento se tornando visíveis devido a uma interpretação incorreta de guias. (NEO-25909)
 
 
+
 * Correção de um problema com o fluxo de trabalho de limpeza do banco de dados que poderia falhar devido à fonte de dados não gerenciada. (NEO-23160, NEO-23364)
 * O fluxo de trabalho de limpeza agora limpa listas expiradas por lotes de 100 em vez de um por um.
 * Corrigida uma regressão que impedia a modificação do nome interno de uma conta externa. (NEO-27323)
+
 
 
 * Correção de uma regressão durante a pós-atualização, causando um start incorreto de nlserver (registros de erros).
@@ -57,6 +61,7 @@ _22 de julho de 2020_
 * Correção de um problema com a codificação do gerenciamento de URL no serviço anti-phishing. (NEO-25283)
 * Correção de um problema que impedia o funcionamento do rastreamento de URLs usando fragmentos em parâmetros de personalização (tags de âncora com sinal de hashtag). (NEO-25774)
 * Correção de um problema de rastreamento ao usar fórmulas de rastreamento personalizadas específicas. (NEO-25277)
+
 
 
 Correção de um problema que impedia o funcionamento do rastreamento de &quot;cliques de notificação&quot; (notificações por push de iOS e Android). (NEO-25965)
@@ -116,7 +121,7 @@ _8 de junho de 2020_
  <tbody> 
   <tr> 
    <td> <p>A PDPA (Personal Data Protection Act, Lei de Proteção de Dados Pessoais) da Tailândia é a nova lei de privacidade que harmoniza e moderniza os requisitos de proteção de dados da Tailândia. </p>
-   <p>A Lei Geral de Proteção de Dados (LGPD) do Brasil entrará em vigor no início de 2021 para todas as empresas que coletam ou processam dados pessoais no Brasil.</p>
+   <p>A Lei Geral de Proteção de Dados (LGPD) do Brasil entrará em vigor a partir do início de 2021 para todas as empresas que coletam ou processam dados pessoais no Brasil.</p>
    <p>Esses regulamentos aplicam-se aos clientes do Adobe Campaign que coletam dados de residentes nesses países. Além dos recursos de privacidade já disponíveis no Campaign (incluindo o gerenciamento de consentimento, as configurações de retenção de dados e as funções de usuários), aproveitamos a oportunidade para incluir recursos adicionais que ajudam a estar de acordo com a PDPA e a LGPD:</p>
    <ul> 
      <li><p>Direito de acesso e direito de exclusão: estamos nos beneficiando dos recursos que foram adicionadas para o GDPR e a CCPA. <a href="https://helpx.adobe.com/br/campaign/kb/acc-privacy.html">Leia mais</a></p></li> 
