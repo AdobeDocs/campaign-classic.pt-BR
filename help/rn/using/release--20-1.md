@@ -12,11 +12,11 @@ discoiquuid: 5df34f55-135a-4ea8-afc2-f9427ce5ae7b
 index: y
 internal: n
 snippet: y
-translation-type: ht
-source-git-commit: e31efa347b42b4ccb532ca5f79e73745b5a7878b
-workflow-type: ht
-source-wordcount: '1331'
-ht-degree: 100%
+translation-type: tm+mt
+source-git-commit: 9357be26b1bc436b19861faa2a43ec6a17cb5b3c
+workflow-type: tm+mt
+source-wordcount: '1344'
+ht-degree: 97%
 
 ---
 
@@ -107,7 +107,7 @@ _17 de fevereiro de 2020_
 
 * Melhora do desempenho do query que pode ser afetado por conexões desnecessárias ao banco de dados.
 
-* Melhora do desempenho do assistente de atualização do banco de dados.
+* Aprimorado o desempenho do assistente de atualização de banco de dados para fazer menos instruções SQL a fim de otimizar o tempo de resposta.
 
 * O gerenciamento dos registros do banco de dados foi aprimorado.
 
@@ -183,7 +183,7 @@ _17 de fevereiro de 2020_
 
 * Correção de um problema que ocorre ao excluir, inserir ou atualizar uma grande quantidade de dados com a atividade **Update data** em um workflow que usa um schema FDA como dimensão de direcionamento. (NEO-13280)
 
-* Correção de um problema que impede o envio de emails ao usar a declaração &quot;se&quot; fora da tag `body`. (NEO-18628)
+* Correção de um problema que impedia o envio de emails quando havia código Javascript fora da tag de conteúdo HTML. (NEO-18628)
 
 * Correção de um problema que ocorre ao tentar exibir a mirror page dos logs do delivery de uma mensagem enviada. (NEO-17976)
 
