@@ -13,10 +13,10 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: f92180f93850d5bc33e74210d17cdd36c0c15e5f
+source-git-commit: 2bd946fc0e5b206280a7946e0cbc6fa6d1be90f2
 workflow-type: tm+mt
-source-wordcount: '2119'
-ht-degree: 93%
+source-wordcount: '2161'
+ht-degree: 88%
 
 ---
 
@@ -57,7 +57,7 @@ _22 de julho de 2020_
 * Correção de um problema que impedia o funcionamento do rastreamento quando o recurso de assinatura era desativado. (NEO-26411)
 * Correção de um problema que resultava no bloqueio de links não assinados de domínios personalizados quando deveriam ser permitidos. (NEO-25210)
 * Correção de um problema que poderia impedir a abertura/clique de URLs de rastreamento ao usar determinadas versões herdadas do Outlook. (NEO-25688)
-* Correção de um problema que resultava na definição incorreta de URLs de mirror page em deliveries de email. (NEO-26084)
+* Correção de um problema que resultava na definição incorreta de URLs de mirror page em delivery de email (devido ao controle de caracteres ASCII incorreto). (NEO-26084)
 * Correção de um problema com a codificação do gerenciamento de URL no serviço anti-phishing. (NEO-25283)
 * Correção de um problema que impedia o funcionamento do rastreamento de URLs usando fragmentos em parâmetros de personalização (tags de âncora com sinal de hashtag). (NEO-25774)
 * Correção de um problema de rastreamento ao usar fórmulas de rastreamento personalizadas específicas. (NEO-25277)
@@ -65,9 +65,9 @@ _22 de julho de 2020_
 
 
 Correção de um problema que impedia o funcionamento do rastreamento de &quot;cliques de notificação&quot; (notificações por push de iOS e Android). (NEO-25965)
-* Correção de uma regressão que afetava os campos calculados em um workflow. (NEO-25194)
+* Correção de uma regressão que afetava os campos calculados em um fluxo de trabalho que resultava em falha do fluxo de trabalho. (NEO-25194)
 * Correção de uma regressão que impedia o funcionamento da criação instantânea de URLs de rastreamento da web. (NEO-20999)
-* Correção de um problema com relatórios predefinidos do delivery que apareciam truncados quando exportados para PDF. (NEO-25757)
+* Correção de um problema de regressão com relatórios do delivery predefinidos que apareciam truncados quando exportados para PDF. (NEO-25757)
 * Correção de uma falha no assistente de implantação.
 * Correção de um problema que impedia que o workflow de notificação de oferta funcionasse corretamente após uma pós-atualização.
 * O conector HTTP2 para iOS foi aprimorado (atualizações de terceiros e gerenciamento de erros). (NEO-25904, NEO-25903)
@@ -255,7 +255,7 @@ Um exemplo para Linux está disponível nesta [página](../../configuration/usin
 * Correção de um problema que poderia afetar a notificação por push quando enviada em alta frequência. (NEO-20516)
 * Correção de um problema que fazia com que os dados de rastreamento incluíssem duplicidades, mesmo se os logs de rastreamento não incluíssem. (NEO-20040)
 * Correção de um problema que fazia com que emails transacionais duplicados fossem enviados após uma falha de comunicação do servidor de rastreamento ser corrigida. (NEO-23640)
-* Correção de um problema que excluía o valor do parâmetro de codificação ao redirecionar de um URL de rastreamento. (NEO-25637)
+* Correção de um problema que excluía o valor do parâmetro de codificação ao redirecionar de um URL de rastreamento (impacto em caracteres japoneses). (NEO-25637)
 * Correção de um problema que impedia que uma consulta funcionasse ao comparar números flutuantes. (NEO-23243)
 * Correção de um problema que impedia a exibição do conteúdo da coluna **Modificado por** após reiniciar um fluxo de trabalho. (NEO-23035)
 * Correção de um problema que causava falha do fluxo de trabalho técnico de rastreamento ao baixar registros de um segundo container. (NEO-23159)
@@ -265,7 +265,7 @@ Um exemplo para Linux está disponível nesta [página](../../configuration/usin
 * Correção de um problema com campos de armazenamento adicionais ao criar deliveries por meio da opção **Calculado por um script** na atividade do fluxo de trabalho **Script**. (NEO-20609)
 * Correção de um problema que impedia que fluxos de trabalho fantasmas fossem excluídos nas tarefas de limpeza do banco de dados.
 * Correção de um problema que causava a falha do fluxo de trabalho técnico **Faturamento (perfis ativos)**. (NEO-19777)
-* Correção de um problema ao testar a conexão da conta externa acsDefaultAccount. (NEO-23433)
+* Correção de um problema de regressão ao usar o recurso Conector ACS que impedia a conexão com uma instância Campaign Standard (gerenciamento incorreto da conexão FOH/FOH2). (NEO-23433)
 * Correção de um problema que impedia a criação de uma extensão de schema em uma chave primária com várias colunas com uma tabela Hadoop. (NEO-17390)
 * Correção de um problema na atividade **Loading (SOAP)** que poderia impedir que arquivos WSDL fossem carregados de um URL. (NEO-16924)
 * Correção de um problema que impedia a execução de uma **parada incondicional** pelo console quando vários servidores de fluxo de trabalho ativos eram balanceados de carga. (NEO-19556)
@@ -277,6 +277,9 @@ Um exemplo para Linux está disponível nesta [página](../../configuration/usin
 * Correção de um problema que poderia exibir um delivery duas vezes na lista de delivery após ele ser enviado.
 * Correção de um problema com a preparação do delivery que poderia ocorrer quando a configuração do roteamento estava definida para enviar o delivery via mid-sourcing.
 * Correção de um problema que poderia exibir uma mensagem de erro ao clicar em um link de aplicativo da Web em uma mensagem do LINE.
-* Correção de um problema que poderia impedir o CRM do Microsoft Dynamics de recuperar todas as entidades. (NEO-24528)
 * Correção de um problema que excluía o histórico de atividades de **Query incremental** após a execução do fluxo de trabalho de limpeza.
-* Correção de um problema ao criar uma conta externa de mid-sourcing em que a opção NmsMidSourcing_LastBroadLog_&lt;InternalName> estava ausente
+* Correção de um problema ao criar uma conta externa de mid-sourcing em que a opção NmsMidSourcing_LastBroadLog_&lt;InternalName> estava ausente.
+* Correção de um problema de regressão na conexão do banco de dados que resultava na reinicialização constante do servidor da Web devido a um problema de codificação do banco de dados. Isto poderia levar a um consumo excessivo. (NEO-23264)
+
+
+
