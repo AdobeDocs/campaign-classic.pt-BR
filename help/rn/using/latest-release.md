@@ -13,7 +13,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 2bd946fc0e5b206280a7946e0cbc6fa6d1be90f2
+source-git-commit: ab9d2c2e80ba09b5a2cceadb49c06ff13989da0f
 workflow-type: tm+mt
 source-wordcount: '2161'
 ht-degree: 88%
@@ -61,6 +61,9 @@ _22 de julho de 2020_
 * Correção de um problema com a codificação do gerenciamento de URL no serviço anti-phishing. (NEO-25283)
 * Correção de um problema que impedia o funcionamento do rastreamento de URLs usando fragmentos em parâmetros de personalização (tags de âncora com sinal de hashtag). (NEO-25774)
 * Correção de um problema de rastreamento ao usar fórmulas de rastreamento personalizadas específicas. (NEO-25277)
+
+
+
 * Correção de um problema que impedia o funcionamento do rastreamento de &quot;cliques de notificação&quot; (notificações por push de iOS e Android). (NEO-25965)
 * Correção de uma regressão que afetava os campos calculados em um fluxo de trabalho que resultava em falha do fluxo de trabalho. (NEO-25194)
 * Correção de uma regressão que impedia o funcionamento da criação instantânea de URLs de rastreamento da web. (NEO-20999)
