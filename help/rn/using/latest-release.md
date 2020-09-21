@@ -16,7 +16,7 @@ translation-type: tm+mt
 source-git-commit: ab9d2c2e80ba09b5a2cceadb49c06ff13989da0f
 workflow-type: tm+mt
 source-wordcount: '2161'
-ht-degree: 88%
+ht-degree: 100%
 
 ---
 
@@ -29,25 +29,25 @@ ht-degree: 88%
 
 _11 de setembro de 2020_
 
-* Correção de uma regressão que resultava no bloqueio da preparação do delivery devido a uma única função incorreta na parte do delivery que resultava em sobrecarga da memória. (NEO-27346)
+* Correção de uma regressão que causava o bloqueio da preparação do delivery devido a uma única função incorreta na parte do delivery, resultando em sobrecarga da memória. (NEO-27346)
 
 
 
-* Correção de um problema de pós-atualização que desativava o Apache e o servidor da Web antes da republicação do aplicativo da Web. (NEO-27155)
+* Correção de um problema de pós-atualização que desativava o Apache e o servidor da web antes da republicação do aplicativo web. (NEO-27155)
 
 
 
-* Corrigida uma regressão no gerenciamento de modelos HTML que resultava em URLs de rastreamento se tornando visíveis devido a uma interpretação incorreta de guias. (NEO-25909)
+* Correção de uma regressão no gerenciamento de modelos HTML que permitia a visibilidade de URLs de rastreamento devido a uma interpretação incorreta de guias. (NEO-25909)
 
 
 
-* Correção de um problema com o fluxo de trabalho de limpeza do banco de dados que poderia falhar devido à fonte de dados não gerenciada. (NEO-23160, NEO-23364)
-* O fluxo de trabalho de limpeza agora limpa listas expiradas por lotes de 100 em vez de um por um.
-* Corrigida uma regressão que impedia a modificação do nome interno de uma conta externa. (NEO-27323)
+* Correção de um problema com o workflow de limpeza do banco de dados que poderia falhar devido à fonte de dados não gerenciada. (NEO-23160, NEO-23364)
+* O workflow de limpeza agora limpa listas expiradas por lotes de 100 em vez de uma a uma.
+* Correção de uma regressão que impedia a modificação do nome interno de uma conta externa. (NEO-27323)
 
 
 
-* Correção de uma regressão durante a pós-atualização, causando um start incorreto de nlserver (registros de erros).
+* Correção de uma regressão durante a pós-atualização, causando um início incorreto do nlserver (logs de erros).
 * O gerenciamento de atualizações da memória compartilhada foi aprimorado. As etapas adicionais necessárias na versão 20.2 não são mais necessárias.
 
 ## ![](assets/do-not-localize/orange_2.png) Versão 20.2.2 - Build 9180 {#release-20-2-2-build-9180}
@@ -64,10 +64,11 @@ _22 de julho de 2020_
 
 
 
+
 * Correção de um problema que impedia o funcionamento do rastreamento de &quot;cliques de notificação&quot; (notificações por push de iOS e Android). (NEO-25965)
-* Correção de uma regressão que afetava os campos calculados em um fluxo de trabalho que resultava em falha do fluxo de trabalho. (NEO-25194)
+* Correção de uma regressão que afetava os campos calculados em um workflow, causando falha no workflow. (NEO-25194)
 * Correção de uma regressão que impedia o funcionamento da criação instantânea de URLs de rastreamento da web. (NEO-20999)
-* Correção de um problema de regressão com relatórios do delivery predefinidos que apareciam truncados quando exportados para PDF. (NEO-25757)
+* Correção de um problema de regressão com relatórios do delivery de utilização imediata que apareciam cortados quando exportados para PDF. (NEO-25757)
 * Correção de uma falha no assistente de implantação.
 * Correção de um problema que impedia que o workflow de notificação de oferta funcionasse corretamente após uma pós-atualização.
 * O conector HTTP2 para iOS foi aprimorado (atualizações de terceiros e gerenciamento de erros). (NEO-25904, NEO-25903)
@@ -255,7 +256,7 @@ Um exemplo para Linux está disponível nesta [página](../../configuration/usin
 * Correção de um problema que poderia afetar a notificação por push quando enviada em alta frequência. (NEO-20516)
 * Correção de um problema que fazia com que os dados de rastreamento incluíssem duplicidades, mesmo se os logs de rastreamento não incluíssem. (NEO-20040)
 * Correção de um problema que fazia com que emails transacionais duplicados fossem enviados após uma falha de comunicação do servidor de rastreamento ser corrigida. (NEO-23640)
-* Correção de um problema que excluía o valor do parâmetro de codificação ao redirecionar de um URL de rastreamento (impacto em caracteres japoneses). (NEO-25637)
+* Correção de um problema que excluía o valor do parâmetro de codificação ao redirecionar a partir de um URL de rastreamento (impacto nos caracteres japoneses). (NEO-25637)
 * Correção de um problema que impedia que uma consulta funcionasse ao comparar números flutuantes. (NEO-23243)
 * Correção de um problema que impedia a exibição do conteúdo da coluna **Modificado por** após reiniciar um fluxo de trabalho. (NEO-23035)
 * Correção de um problema que causava falha do fluxo de trabalho técnico de rastreamento ao baixar registros de um segundo container. (NEO-23159)
@@ -265,7 +266,7 @@ Um exemplo para Linux está disponível nesta [página](../../configuration/usin
 * Correção de um problema com campos de armazenamento adicionais ao criar deliveries por meio da opção **Calculado por um script** na atividade do fluxo de trabalho **Script**. (NEO-20609)
 * Correção de um problema que impedia que fluxos de trabalho fantasmas fossem excluídos nas tarefas de limpeza do banco de dados.
 * Correção de um problema que causava a falha do fluxo de trabalho técnico **Faturamento (perfis ativos)**. (NEO-19777)
-* Correção de um problema de regressão ao usar o recurso Conector ACS que impedia a conexão com uma instância Campaign Standard (gerenciamento incorreto da conexão FOH/FOH2). (NEO-23433)
+* Correção de um problema de regressão ao usar o recurso Conector de ACS que impedia a conexão com uma instância do Campaign Standard (gerenciamento incorreto da conexão FOH/FOH2). (NEO-23433)
 * Correção de um problema que impedia a criação de uma extensão de schema em uma chave primária com várias colunas com uma tabela Hadoop. (NEO-17390)
 * Correção de um problema na atividade **Loading (SOAP)** que poderia impedir que arquivos WSDL fossem carregados de um URL. (NEO-16924)
 * Correção de um problema que impedia a execução de uma **parada incondicional** pelo console quando vários servidores de fluxo de trabalho ativos eram balanceados de carga. (NEO-19556)
@@ -279,7 +280,7 @@ Um exemplo para Linux está disponível nesta [página](../../configuration/usin
 * Correção de um problema que poderia exibir uma mensagem de erro ao clicar em um link de aplicativo da Web em uma mensagem do LINE.
 * Correção de um problema que excluía o histórico de atividades de **Query incremental** após a execução do fluxo de trabalho de limpeza.
 * Correção de um problema ao criar uma conta externa de mid-sourcing em que a opção NmsMidSourcing_LastBroadLog_&lt;InternalName> estava ausente.
-* Correção de um problema de regressão na conexão do banco de dados que resultava na reinicialização constante do servidor da Web devido a um problema de codificação do banco de dados. Isto poderia levar a um consumo excessivo. (NEO-23264)
+* Correção de um problema de regressão na conexão do banco de dados, provocando a reinicialização constante do servidor da web devido a um problema de codificação do banco de dados. As reinicializações poderiam causar um consumo excessivo. (NEO-23264)
 
 
 
