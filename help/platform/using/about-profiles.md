@@ -14,18 +14,18 @@ discoiquuid: 5addada8-0185-488f-9825-83f60981c139
 index: y
 internal: n
 snippet: y
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 762a6ba3fdad9c30407bf807f2cd8076796f98c2
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '944'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
 
 # Sobre perfis{#about-profiles}
 
-Os perfis (clientes, clientes potenciais, assinantes de boletim informativo etc.) são centralizados no banco de dados do Adobe Campaign. Há vários mecanismos possíveis para obter perfis e criar esse banco de dados: coleta on-line via formulários Web, importação manual ou automática de arquivos de texto, replicação com bancos de dados corporativos ou outros sistemas de informações. Com o Adobe Campaign, você pode incorporar o histórico de marketing, informações de compras, preferências, dados de CRM e quaisquer dados de PI relevantes em uma exibição consolidada para analisar e tomar decisões.
+Os perfis (clientes, clientes potenciais, assinantes de boletim informativo etc.) são centralizados no banco de dados do Adobe Campaign. Há vários mecanismos possíveis para obter perfis e criar esse banco de dados: coleta online via formulários Web, importação manual ou automática de arquivos de texto, replicação com bancos de dados corporativos ou outros sistemas de informações. Com o Adobe Campaign, você pode incorporar o histórico de marketing, informações de compras, preferências, dados de CRM e quaisquer dados de PI relevantes em uma exibição consolidada para analisar e tomar decisões.
 
 No Adobe Campaign, os recipients são os perfis padrão direcionados para envio de deliveries (emails, SMS, etc.). Graças aos dados dos recipients que são armazenados no banco de dados, você poderá filtrar o recipient que receberá qualquer delivery e adicionar dados de personalização ao seu conteúdo de delivery. Existem outros tipos de perfis no banco de dados. Esses perfis foram projetados para diferentes usos. Por exemplo, perfis iniciais são feitos para testar seus deliveries antes que sejam enviados ao público-alvo final.
 
@@ -101,7 +101,7 @@ Os perfis ativos são aqueles que são contados para fins de cobrança.
 >
 >Se você estiver hospedado no AWS usando o Campaign Classic a partir da build 8931, também poderá monitorar o número de perfis ativos usados em suas instâncias diretamente do Painel de controle do Campaign. Para obter mais informações, consulte a [documentação do Painel de controle do Campaign](https://docs.adobe.com/content/help/pt-BR/control-panel/using/performance-monitoring/active-profiles-monitoring.html).
 >
->Observe que a contagem de perfis ativos está disponível somente para instâncias **de** Marketing. Ele não está disponível para Instância de execução, o que significa ocorrências de MID (mid-sourcing) e RT (Message Center / Real-time messaging).
+>Observe que a contagem de perfis ativos está disponível somente para **Instâncias de marketing**. Não está disponível para instância de execução, ou seja, instâncias de MID (mid-sourcing) e RT (Centro de mensagens/Mensagens em tempo real).
 
 “**Perfil**” significa um registro de informações (por exemplo: um registro na tabela nmsRecipient ou uma tabela externa contendo uma ID de cookie, ID do cliente, identificador móvel ou outras informações relevantes para um canal específico) representando um cliente final, um prospecto ou um cliente potencial.
 
@@ -121,7 +121,7 @@ Saiba como acessar os dados do perfil, classificar e filtrar perfis, além de cr
 
 Este vídeo também explica a conformidade da Adobe Campaign Classic com os Regulamentos Gerais de Proteção de Dados.
 
->[!VIDEO](https://video.tv.adobe.com/v/35611?quality=12)
+>[!VIDEO](https://video.tv.adobe.com/v/35611?quality=12&captions=por_br)
 
 **Consulte também**
 
