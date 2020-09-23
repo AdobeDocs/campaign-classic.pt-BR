@@ -13,7 +13,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: ac2d993f525eb918ad5e15104eb3ede9eeadfb43
+source-git-commit: 7f7b53f0a7ec0f50bf3a99314606272b8ebdc8d7
 workflow-type: tm+mt
 source-wordcount: '439'
 ht-degree: 100%
@@ -35,7 +35,7 @@ Desde o Campaign Classic 19.2, um status está associado a cada build Você enco
 
 ![](assets/do-not-localize/green3.png) **Disponibilidade geral** - Build estável mais recente disponível. Build validada na produção.
 
-A **última build estável** é a Gold Standard 6. Clique [aqui](../../rn/using/gold-standard.md)
+A **última build estável** é a Gold Standard 10. Clique [aqui](../../rn/using/gold-standard.md#gs-10)
 
 ![](assets/do-not-localize/limited3.png) **Disponibilidade limitada** – Build em validação de produção neste momento. Implantação somente sob demanda.
 
@@ -49,7 +49,7 @@ A **última build estável** é a Gold Standard 6. Clique [aqui](../../rn/using/
 
 Como cliente hospedado (Managed Service ou Hybrid), você precisa entrar em contato com a equipe de atendimento ao cliente para atualizar seu ambiente.
 
-Como usuário do Gold Standard, você se beneficiará automaticamente da atualização do Gold Standard com a versão estável mais recente, sem ter de tomar nenhuma ação. [Saiba mais](https://helpx.adobe.com/br/campaign/kb/gold-standard.html#gs-6)
+Como usuário do Gold Standard, você se beneficiará automaticamente da atualização do Gold Standard com a versão estável mais recente, sem ter de tomar nenhuma ação. [Saiba mais](https://helpx.adobe.com/br/campaign/kb/gold-standard.html#gs-10)
 
 Como usuário local, você pode fazer a atualização. Para isso, [baixe a build estável mais recente](https://experience.adobe.com/#/downloads/content/software-distribution/en/campaign.html) e atualize todos os seus ambientes. Saiba mais sobre o [processo de atualização](https://helpx.adobe.com/br/campaign/kb/acc-build-upgrade.html) e consulte as [perguntas frequentes sobre atualização de build](https://helpx.adobe.com/br/campaign/kb/build-upgrade-faq.html).
 
