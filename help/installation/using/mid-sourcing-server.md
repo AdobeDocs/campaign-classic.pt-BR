@@ -1,6 +1,6 @@
 ---
-title: Instalação de um servidor de mid-sourcing no Adobe Campaign Classic
-description: Esta seção detalha a instalação e configuração de um servidor de mid-sourcing no Adobe Campaign Classic.
+title: Instalação de um servidor mid-sourcing no Adobe Campaign Classic
+description: Esta seção detalha a instalação e configuração de um servidor mid-sourcing no Adobe Campaign Classic.
 page-status-flag: never-activated
 uuid: 9b891a64-d75e-44d2-8de2-17334e1b8dca
 contentOwner: sauviat
@@ -13,18 +13,21 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 25ae29490f8b4c58dad499669f5bccff43de8b7a
+source-git-commit: b9577d190f26e21f116d99d48fdf2bca84585d50
+workflow-type: tm+mt
+source-wordcount: '972'
+ht-degree: 0%
 
 ---
 
 
-# Servidor de fornecedores intermediários{#mid-sourcing-server}
+# Servidor Mid-sourcing{#mid-sourcing-server}
 
-Esta seção detalha a instalação e configuração de um servidor de mid-sourcing, bem como a implantação de uma instância que permite a terceiros enviar mensagens no modo de **mid-sourcing** .
+Esta seção detalha a instalação e configuração de um servidor mid-sourcing, bem como a implantação de uma instância que permite que terceiros enviem mensagens no modo **mid-sourcing** .
 
-A arquitetura de &quot;mid-sourcing&quot; é apresentada na implantação [de](../../installation/using/mid-sourcing-deployment.md)mid-sourcing.
+A arquitetura &quot;mid-sourcing&quot; é apresentada na implantação [do](../../installation/using/mid-sourcing-deployment.md)Mid-sourcing.
 
-A instalação de um servidor de mid-sourcing segue o mesmo processo de instalação de um servidor da maneira normal (consulte a configuração padrão). É uma instância independente com seu próprio banco de dados que pode ser usada para executar entregas. Simplificando, ele contém uma configuração extra para permitir que instâncias remotas executem entregas por meio dele no modo de mid-sourcing.
+A instalação de um servidor mid-sourcing segue o mesmo processo que a instalação de um servidor da maneira normal (consulte a configuração padrão). É uma instância independente com seu próprio banco de dados que pode ser usada para executar delivery. Simplificando, ele contém uma configuração extra para permitir que instâncias remotas executem delivery através dele no modo mid-sourcing.
 
 ## Etapas para instalar e configurar uma instância {#steps-for-installing-and-configuring-an-instance}
 
@@ -32,9 +35,9 @@ A instalação de um servidor de mid-sourcing segue o mesmo processo de instala�
 
 * JDK no servidor de aplicativos.
 * Acesso a um servidor de banco de dados no servidor de aplicativos.
-* Firewall configurado para abrir portas HTTP (80) ou HTTPS (443) no servidor de mid-sourcing.
+* Firewall configurado para abrir portas HTTP (80) ou HTTPS (443) no servidor mid-sourcing.
 
-O procedimento a seguir detalha uma configuração usando um único servidor de mid-sourcing. Também é possível usar vários servidores. Da mesma forma, também é possível enviar determinadas mensagens (como notificações de fluxo de trabalho, por exemplo) de uma configuração interna.
+O procedimento a seguir detalha uma configuração usando um único servidor mid-sourcing. Também é possível usar vários servidores. Da mesma forma, também é possível enviar determinadas mensagens (como notificações de fluxo de trabalho, por exemplo) de uma configuração interna.
 
 ### Instalação e configuração do servidor de aplicativos para implantação de mid-sourcing {#installing-and-configuring-the-application-server-for-mid-sourcing-deployment}
 
@@ -42,7 +45,7 @@ O procedimento de instalação é idêntico ao da instância independente. Consu
 
 No entanto, você deve aplicar o seguinte:
 
-* Na etapa **5**, você deve desativar os módulos **mta** (entrega) e **inMail** (e-mails de rejeição). Entretanto, o módulo **wfserver** (fluxo de trabalho) deve permanecer ativado.
+* Na etapa **5**, você deve desativar os módulos **mta** (delivery) e **inMail** (mensagens de rejeição). Entretanto, o módulo **wfserver** (fluxo de trabalho) deve permanecer ativado.
 
    ```
    <?xml version='1.0'?>
@@ -69,23 +72,23 @@ No entanto, você deve aplicar o seguinte:
 
    >[!CAUTION]
    >
-   >O roteamento padrão de entregas técnicas é automaticamente substituído pelo roteamento de email por meio da Meid-sourcing.
+   >O roteamento padrão dos delivery técnicos é automaticamente substituído pelo roteamento de e-mail via Mid-sourcing.
 
-### Instalação e configuração do servidor de mid-sourcing {#installing-and-configuring-the-mid-sourcing-server}
+### Instalação e configuração do servidor mid-sourcing {#installing-and-configuring-the-mid-sourcing-server}
 
-No console do cliente, localize o roteamento de **email usando a conta mid-sourcing** mid-sourcing (na pasta **/Administration/External accounts/** ). Preencha o **URL do servidor**, da **conta**, da **senha** e das configurações de URL **da página** Espelho com as informações fornecidas pelo provedor de servidor que hospeda o servidor de mid-sourcing. Teste a conexão.
+No console do cliente, localize o roteamento de **email usando a conta mid-sourcing** mid-sourcing (na pasta **/Administration/Conta externa/** ). Preencha o **URL do servidor**, **conta**, **senha** e URL **do** Mirror page com as informações fornecidas pelo provedor de servidor que hospeda o servidor mid-sourcing. Teste a conexão.
 
 >[!NOTE]
 >
->A opção **mid-sourcingEmitter** cria dois fluxos de trabalho de **Meid-sourcing** . É um processo que é executado por padrão a cada 1 hora e 20 minutos e coleta informações de entrega no servidor de mid-sourcing.
+>A opção **mid-sourcingEmitter** cria dois workflows **Mid-sourcing** . É um processo que é executado por padrão a cada 1 hora e 20 minutos e coleta informações do delivery no servidor do mid-sourcing.
 
-## Implantação de um servidor de mid-sourcing {#deploying-a-mid-sourcing-server}
+## Implantação de um servidor mid-sourcing {#deploying-a-mid-sourcing-server}
 
 1. Instalação do servidor de aplicativos:
 
    >[!CAUTION]
    >
-   >Se você instalar o servidor de mid-sourcing e quiser instalar módulos adicionais do Adobe Campaign, recomendamos o uso do módulo Entrega e não do módulo Campaign.
+   >Se você instalar o servidor mid-sourcing e quiser instalar módulos Adobe Campaign adicionais, recomendamos o uso do módulo Delivery e não do módulo Campanha.
 
    Siga o mesmo procedimento que para a implantação padrão, selecionando somente a **[!UICONTROL Mid-sourcing platform]** opção.
 
@@ -93,19 +96,19 @@ No console do cliente, localize o roteamento de **email usando a conta mid-sourc
 
 1. Configuração para recebimento no modo mid-sourcing
 
-   Defina a senha da conta de envio: Na pasta **/Mid-sourcing/Gerenciamento de acesso/Operadores/** , o operador **mid** é usado pela instância remota para envios no modo mid-sourcing. Você deve definir uma senha para esse operador e atribuí-la ao administrador da instância de envio.
+   Defina a senha da conta de envio: Na pasta **/Mid-sourcing/Access Management/Operadores/** , o operador **mid** é usado pela instância remota para envios no modo mid-sourcing. Você deve definir uma senha para esse operador e atribuí-la ao administrador da instância de envio.
 
-   A opção plataforma **de** Mid-sourcing cria as pastas padrão para armazenar as entregas enviadas e o operador padrão que está executando as envias.
+   A opção plataforma **** Mid-sourcing cria as pastas padrão para armazenar os delivery enviados e o operador padrão que executa os envios.
 
-## Multiplexação do servidor de mid-sourcing {#multiplexing-the-mid-sourcing-server}
+## Multiplexação do servidor mid-sourcing {#multiplexing-the-mid-sourcing-server}
 
 >[!CAUTION]
 >
 >A multiplexação só é compatível com ambientes locais.
 
-É possível que uma instância de mid-sourcing seja compartilhada por várias instâncias de envio. Cada uma dessas instâncias precisa ser associada a um operador no banco de dados de mid-sourcing. Para criar uma segunda conta no servidor de mid-sourcing:
+É possível que uma instância mid-sourcing seja compartilhada por várias instâncias de envio. Cada uma dessas instâncias deve ser associada a um operador no banco de dados do mid-sourcing. Para criar uma segunda conta no servidor mid-sourcing:
 
-1. Crie uma pasta no **[!UICONTROL Mid-sourcing > Deliveries]** nó que será associada à conta padrão de mid-sourcing (por exemplo: prod).
+1. Crie uma pasta no **[!UICONTROL Mid-sourcing > Deliveries]** nó que será associada à conta mid-sourcing padrão (por exemplo: prod).
 1. Crie uma pasta no **[!UICONTROL Mid-sourcing > Deliveries]** nó com o mesmo nome da conta (por exemplo: accept_test).
 
    ![](assets/mid_recette_account.png)
@@ -114,17 +117,17 @@ No console do cliente, localize o roteamento de **email usando a conta mid-sourc
 
    ![](assets/mid_recette_user_create.png)
 
-1. Na **[!UICONTROL Access rights]** guia, atribua a esse operador os direitos do grupo de envios **de** Mid-sourcing. Este direito de acesso está disponível em **[!UICONTROL Mid-sourcing > Access Management > Operator groups]**.
+1. Na **[!UICONTROL Access rights]** guia, atribua a esse operador os direitos do grupo de envios **para** Mid-sourcing. Este direito de acesso está disponível em **[!UICONTROL Mid-sourcing > Access Management > Operator groups]**.
 
    ![](assets/mid_recette_user_rights.png)
 
-1. Selecione a **[!UICONTROL Restrict to data in the sub-folders of]** opção e a pasta de entregas para restringir esse operador à pasta de entregas de mid-sourcing.
+1. Selecione a **[!UICONTROL Restrict to data in the sub-folders of]** opção e a pasta delivery para restringir esse operador à pasta delivery mid-sourcing.
 
    ![](assets/mid_recette_user_restrictions.png)
 
-1. Reinicie o módulo Web usando o seguinte comando: Web **de reinicialização do** nlserver.
+1. Reinicie o módulo Web usando o seguinte comando: **Web** de reinicialização do nlserver.
 
-É necessário alterar a configuração do servidor de mid-sourcing no arquivo serverConf.xml. A seguinte linha deve ser adicionada à seção &quot;Gerenciamento de afinidades com endereços IP&quot;, na linha existente:
+É necessário alterar a configuração do servidor mid-sourcing no arquivo serverConf.xml. A seguinte linha deve ser adicionada à seção &quot;Gerenciamento de afinidades com endereços IP&quot;, na linha existente:
 
 ```
 <IPAffinity IPMask="" localDomain="" name=""/>
@@ -132,51 +135,51 @@ No console do cliente, localize o roteamento de **email usando a conta mid-sourc
 
 O atributo &#39;@name&#39; deve respeitar as seguintes regras:
 
-**&#39;marketing_account_operador_name&#39;.&#39;afinity_name&#39;.&#39;afinity_group&#39;**
+**&#39;marketing_account_operador_name&#39;.&#39;afinidade_name&#39;.&#39;afinidade_group&#39;**
 
 &#39;marketing_account_operador_name&#39; está relacionado ao nome interno da conta de mid-sourcing declarada na instância de mid-sourcing.
 
-&#39;afinity_name&#39; está relacionado ao nome arbitrário dado à afinidade. Esse nome deve ser exclusivo. Caracteres autorizados são `[a-z]``[A-Z]``[0-9]`. O objetivo é declarar um grupo de endereços IP públicos.
+&#39;afinidade_name&#39; está relacionado ao nome arbitrário dado à afinidade. Esse nome deve ser exclusivo. Caracteres autorizados são `[a-z]``[A-Z]``[0-9]`. O objetivo é declarar um grupo de endereços IP públicos.
 
-&#39;afinity_group&#39; relaciona a Sub-afinidade declarada no mapeamento de destino usado em cada uma das entregas. A última parte, incluindo o &quot;.&quot; é ignorada se não houver sub-afinidade. Caracteres autorizados são `[a-z]``[A-Z]``[0-9]`.
+&#39;afinidade_group&#39; relaciona a subafinidade declarada no target mapping usado em cada um dos delivery. A última parte, incluindo o &quot;.&quot; é ignorada se não houver nenhuma Sub-afinidade. Caracteres autorizados são `[a-z]``[A-Z]``[0-9]`.
 
 Você deve parar e reiniciar o servidor para que a modificação seja considerada.
 
-## Configurando o rastreamento em um servidor de mid-sourcing {#configuring-tracking-on-a-mid-sourcing-server}
+## Configuração do rastreamento em um servidor mid-sourcing {#configuring-tracking-on-a-mid-sourcing-server}
 
-**Configuração do servidor de mid-sourcing**
+**Configuração do servidor mid-sourcing**
 
 1. Vá para &#39;operadores&#39; e selecione o operador **[!UICONTROL mid]**.
 1. Na **[!UICONTROL Frontal servers]** guia, digite os parâmetros de conexão do servidor de rastreamento.
 
-   Para criar uma instância de rastreamento, digite o URL do servidor de rastreamento, a senha da conta interna do servidor de rastreamento e o nome da instância, sua senha e as máscaras de DNS associadas a ela.
+   Para criar uma instância de rastreamento, insira o URL do servidor de rastreamento, a senha da conta interna do servidor de rastreamento e o nome da instância, sua senha e as máscaras de DNS associadas a ela.
 
    ![](assets/s_ncs_install_midsourcing_tracking02.png)
 
 1. Quando tiver inserido os parâmetros de conexão, clique em **[!UICONTROL Confirm the configuration]**.
-1. Se necessário, especifique o local onde as imagens contidas nas entregas serão armazenadas. Para fazer isso, selecione um dos modos de publicação na lista suspensa.
+1. Se necessário, especifique o local onde as imagens contidas nos delivery devem ser armazenadas. Para fazer isso, selecione um dos modos de publicação na lista suspensa.
 
    ![](assets/s_ncs_install_midsourcing_tracking03.png)
 
-   Se você escolher a **[!UICONTROL Tracking server(s)]** opção, as imagens serão copiadas no servidor de mid-sourcing.
+   Se você escolher a **[!UICONTROL Tracking server(s)]** opção, as imagens serão copiadas no servidor mid-sourcing.
 
 **Configuração da plataforma do cliente**
 
-1. Vá para a conta externa de roteamento de mid-sourcing.
-1. Na **[!UICONTROL Mid-Sourcing]** guia, especifique os parâmetros de conexão do servidor de mid-sourcing.
+1. Vá para a conta de roteamento mid-sourcing externa.
+1. Na **[!UICONTROL Mid-Sourcing]** guia, especifique os parâmetros de conexão do servidor mid-sourcing.
 
    ![](assets/s_ncs_install_midsourcing_tracking06.png)
 
 1. Confirme sua configuração clicando em **[!UICONTROL Test the connection]**.
-1. Declarar a instância de rastreamento referenciada no servidor de mid-sourcing:
+1. Declarar a instância de rastreamento referenciada no servidor mid-sourcing:
 
-   Clique no link **[!UICONTROL Use this platform as a platform to access the tracking servers]**,
+   Click the link **[!UICONTROL Use this platform as a proxy to access the tracking servers]**,
 
    Especifique o nome da instância de rastreamento e confirme a conexão com o servidor de rastreamento.
 
    ![](assets/s_ncs_install_midsourcing_tracking05.png)
 
-Se a entrega de mensagens for gerenciada por vários servidores de mid-sourcing, selecione a opção **[!UICONTROL Routing with alternating mid-sourcing accounts]** e especifique os diferentes servidores.
+Se o delivery de mensagens for gerenciado por vários servidores de mid-sourcing, selecione a opção **[!UICONTROL Routing with alternating mid-sourcing accounts]** e especifique os diferentes servidores.
 
 ![](assets/s_ncs_install_midsourcing_tracking04.png)
 
