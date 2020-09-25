@@ -10,18 +10,18 @@ content-type: reference
 topic-tags: campaign-classic-deprecated-features
 internal: n
 snippet: y
-translation-type: ht
-source-git-commit: 63f07746d39fff22a98b3cd4ab7f2294da778ab3
-workflow-type: ht
-source-wordcount: '1468'
-ht-degree: 100%
+translation-type: tm+mt
+source-git-commit: 900b5a21172440a385dde6eb137bac2e7129bb9d
+workflow-type: tm+mt
+source-wordcount: '1444'
+ht-degree: 96%
 
 ---
 
 
 # Recursos descontinuados e removidos {#deprecated-and-removed-features}
 
-A Adobe avalia constantemente os recursos do produto para identificar aqueles mais antigos que devem ser substituídos por alternativas mais modernas de forma a melhorar o valor geral do cliente, sempre considerando cuidadosamente a compatibilidade com versões anteriores. Como o Adobe Campaign Classic funciona com ferramentas de terceiros, a compatibilidade é atualizada regularmente, a fim de implementar somente as versões compatíveis. As versões que não são mais compatíveis com o Adobe Campaign Classic estão listadas abaixo e na [Matriz de compatibilidade](https://helpx.adobe.com/br/campaign/kb/compatibility-matrix.html).
+A Adobe avalia constantemente os recursos do produto para identificar aqueles mais antigos que devem ser substituídos por alternativas mais modernas de forma a melhorar o valor geral do cliente, sempre considerando cuidadosamente a compatibilidade com versões anteriores. Como o Adobe Campaign Classic funciona com ferramentas de terceiros, a compatibilidade é atualizada regularmente, a fim de implementar somente as versões compatíveis. As versões que não são mais compatíveis com o Adobe Campaign Classic estão listadas abaixo e na [Matriz de compatibilidade](../../rn/using/compatibility-matrix.md).
 
 Para comunicar a remoção/substituição iminente dos recursos do Campaign Classic, as seguintes regras se aplicam:
 
@@ -49,7 +49,7 @@ Os clientes são aconselhados a verificar se utilizam o recurso/funcionalidade e
   </tr>
    <tr>
   <td>Conector SMS<br></td>
-  <td><p> A partir da versão 20.2, os seguintes conectores SMS serão descontinuados.<p>
+  <td><p> A partir da versão 20.2 da Campanha, os seguintes conectores SMS serão descontinuados.<p>
    <ul>
    <li>NetSize</li>
    <li>SMPP genérico (SMPP versão 3.4 com suporte para modo binário)</li>
@@ -66,7 +66,7 @@ Os clientes são aconselhados a verificar se utilizam o recurso/funcionalidade e
  </tr>
   <tr>  
    <td>Canal de fax<br></td>
-   <td><p>A partir da versão 20.2, o Canal de fax será descontinuado.</p> 
+   <td><p>A partir da Campanha 20.2, o canal de fax está obsoleto.</p> 
    <p>Se estiver usando esse canal, precisará adaptar sua implementação adequadamente. <a href="../../delivery/using/steps-about-delivery-creation-steps.md">Saiba mais</a> sobre Canais do Campaign.</p>
    <p><em>Data de remoção do Target: 2021</em></p></td>
   </tr>
@@ -125,14 +125,15 @@ Esta seção lista os recursos e funcionalidades removidos do Campaign Classic.
 
 ## Compatibilidade obsoleta {#deprecated-compatibility}
 
-Os seguintes sistemas foram descontinuados para o Campaign Classic. Consulte a [Matriz de compatibilidade](https://helpx.adobe.com/br/campaign/kb/compatibility-matrix.html) para atualizar para uma versão mais recente ou mover para um novo sistema antes do fim da compatibilidade.
+Os seguintes sistemas foram descontinuados para o Campaign Classic. Consulte a [Matriz de compatibilidade](../../rn/using/compatibility-matrix.md) para atualizar para uma versão mais recente ou mover para um novo sistema antes do fim da compatibilidade.
 
 ### Versão 20.2 do Adobe Campaign {#compat-20-2-release}
 
-A partir da versão 20.2, o sistema a seguir ficará obsoleto para o Campaign Classic. A compatibilidade terminará na versão 20.3 – setembro de 2020.
+A partir da versão 20.2, os seguintes sistemas serão descontinuados para o Campaign Classic. A compatibilidade terminará na versão 20.3 - outubro de 2020.
 
 * Console do cliente: Windows 7
-* Conectores SMS herdados (consulte a seção Recursos obsoletos abaixo)
+* Conectores SMS herdados (consulte Recursos [obsoletos)](#deprecated-features)
+* DB2 UDB 10.5 para Federated Data Acces (FDA)
 
 ### Versão 19.2 do Adobe Campaign  {#compat-19-2-release}
 
@@ -141,17 +142,17 @@ A partir da versão 19.2, os seguintes sistemas operacionais serão descontinuad
 * Servidor Web: Apache 2.2.
 * Sistema operacional: CentOS 6.
 
-Consulte a [Matriz de compatibilidade](https://helpx.adobe.com/br/campaign/kb/compatibility-matrix.html) para atualizar para uma versão mais recente ou para um novo sistema.
+Consulte a [Matriz de compatibilidade](../../rn/using/compatibility-matrix.md) para atualizar para uma versão mais recente ou para um novo sistema.
 
 ## Fim da compatibilidade do {#end-of-compatibility}
 
 >[!CAUTION]
 >
->O Adobe Campaign Classic é compatível com todos os sistemas e ferramentas listados na [Matriz de compatibilidade](https://helpx.adobe.com/br/campaign/kb/compatibility-matrix.html). Quando versões específicas desses sistemas e ferramentas de terceiros atingem o fim da vida útil (EOL) com seus respectivos criadores, o Adobe Campaign não é mais compatível com essas versões: elas são anunciadas como obsoletas e, em seguida, são removidas de nossa matriz de compatibilidade na versão subsequente do produto. Verifique se você está usando as versões compatíveis dos sistemas listadas na matriz de compatibilidade para evitar problemas.
+>O Adobe Campaign Classic é compatível com todos os sistemas e ferramentas listados na [Matriz de compatibilidade](../../rn/using/compatibility-matrix.md). Quando versões específicas desses sistemas e ferramentas de terceiros atingem o fim da vida útil (EOL) com seus respectivos criadores, o Adobe Campaign não é mais compatível com essas versões: elas são anunciadas como obsoletas e, em seguida, são removidas de nossa matriz de compatibilidade na versão subsequente do produto. Verifique se você está usando as versões compatíveis dos sistemas listadas na matriz de compatibilidade para evitar problemas.
 
 ### Console do cliente {#client-console-eol}
 
-O Console do cliente do Adobe Campaign Classic não pode mais ser executado nos seguintes sistemas, pois foram descontinuados pelo editor. Os clientes que executam o Console do cliente do Campaign em uma dessas versões precisam atualizar para a versão mais recente antes da data de remoção. Consulte a [Matriz de Compatibilidade](https://helpx.adobe.com/br/campaign/kb/compatibility-matrix.html).
+O Console do cliente do Adobe Campaign Classic não pode mais ser executado nos seguintes sistemas, pois foram descontinuados pelo editor. Os clientes que executam o Console do cliente do Campaign em uma dessas versões precisam atualizar para a versão mais recente antes da data de remoção. Consulte a [Matriz de Compatibilidade](../../rn/using/compatibility-matrix.md).
 
 * Windows Server 2003, 2008, 2008 R2
 * Windows XP, Vista
@@ -186,7 +187,7 @@ A partir da versão do primeiro trimestre 19.1, o Adobe Campaign não é mais co
 
 A Adobe não oferece suporte aos seguintes mecanismos de banco de dados, pois foram descontinuados pelo editor. Os clientes que executam essas versões precisam atualizar para a versão mais recente ou mudar para outra.
 
-Consulte a [Matriz de compatibilidade do Campaign Classic](https://helpx.adobe.com/br/campaign/kb/compatibility-matrix.html) para acessar a lista de versões compatíveis.
+Consulte a [Matriz de compatibilidade do Campaign ](../../rn/using/compatibility-matrix.md) para acessar a lista de versões compatíveis.
 
 **FEDERATED DATA ACCESS (FDA)** 
 
