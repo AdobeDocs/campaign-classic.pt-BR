@@ -1,7 +1,7 @@
 ---
 title: Sobre o Adobe Campaign Classic
 seo-title: Sobre o Adobe Campaign Classic
-description: Sobre o Adobe Campaign Classic
+description: Descubra os principais recursos, a interface do usuário e as diretrizes globais.
 seo-description: null
 page-status-flag: never-activated
 uuid: 2d0160fa-8328-4ff9-ab91-56e4058f8a99
@@ -14,16 +14,16 @@ discoiquuid: a2b43311-737c-4a3b-a6af-1788879f9414
 index: y
 internal: n
 snippet: y
-translation-type: ht
-source-git-commit: 63f07746d39fff22a98b3cd4ab7f2294da778ab3
-workflow-type: ht
-source-wordcount: '878'
-ht-degree: 100%
+translation-type: tm+mt
+source-git-commit: eccf0e9899426c2517748c7a72611ff098291cd2
+workflow-type: tm+mt
+source-wordcount: '883'
+ht-degree: 98%
 
 ---
 
 
-# Sobre o Adobe Campaign Classic{#about-adobe-campaign-classic}
+# Get Started with Campaign Classic{#about-adobe-campaign-classic}
 
 Para oferecer alto grau de envolvimento e ótimas experiências, as marcas devem criar jornadas de cliente consistentes em todos os pontos de contato. Agora, os profissionais de marketing podem projetar, planejar, executar, gerenciar e otimizar campanhas de marketing em vários canais que oferecem alto retorno sobre o investimento e estimulam a fidelização dos clientes.
 
@@ -45,7 +45,7 @@ O ciclo de campanha de marketing do Adobe Campaign ilustra as principais áreas 
 
 Os perfis (clientes, clientes potenciais, assinantes de boletim informativo etc.) são centralizados no banco de dados do Adobe Campaign. Há vários mecanismos possíveis para obter perfis e criar esse banco de dados: coleta on-line via formulários Web, importação manual ou automática de arquivos de texto, replicação com bancos de dados corporativos ou outros sistemas de informações. Com o Adobe Campaign, você pode incorporar o histórico de marketing, informações de compras, preferências, dados de CRM e quaisquer dados PII relevantes em uma exibição consolidada para analisar e tomar decisões.
 
-No Adobe Campaign, os destinatários são os perfis padrão direcionados para envio de entregas (e-mails, SMS etc.). Graças aos dados dos destinatários que são armazenados no banco de dados, você poderá filtrar o destino que receberá qualquer entrega e adicionar dados de personalização ao seu conteúdo de entrega. Existem outros tipos de perfis no banco de dados. Esses perfis foram projetados para diferentes usos. Por exemplo, perfis iniciais são feitos para testar suas entregas antes que elas sejam enviadas ao destino final.
+No Adobe Campaign, os destinatários são os perfis padrão direcionados para envio de entregas (e-mails, SMS etc.). Graças aos dados dos recipients que são armazenados no banco de dados, você poderá filtrar o recipient que receberá qualquer delivery e adicionar dados de personalização ao seu conteúdo de delivery. Existem outros tipos de perfis no banco de dados. Esses perfis foram projetados para diferentes usos. Por exemplo, perfis iniciais são feitos para testar suas entregas antes que elas sejam enviadas ao destino final.
 
 As noções básicas de gerenciamento de perfil são explicadas em [Sobre perfis](../../platform/using/about-profiles.md).
 
