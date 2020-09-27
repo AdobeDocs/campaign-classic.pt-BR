@@ -1,8 +1,6 @@
 ---
 title: Sobre workflows
-seo-title: Sobre workflows
-description: Sobre workflows
-seo-description: null
+description: Automatize processos com workflows, gerencie dados e audiências, envie mensagens e muito mais.
 page-status-flag: never-activated
 uuid: 19adb0e5-042d-47a0-9f92-24e4b3045dbe
 contentOwner: sauviat
@@ -14,13 +12,18 @@ discoiquuid: 868940d1-f19d-4e9a-bffa-8654abb4441c
 index: y
 internal: n
 snippet: y
-translation-type: ht
-source-git-commit: 20f835c357d016643ea1f3209ee4dfb6d3239f90
+translation-type: tm+mt
+source-git-commit: eccf0e9899426c2517748c7a72611ff098291cd2
+workflow-type: tm+mt
+source-wordcount: '668'
+ht-degree: 84%
 
 ---
 
 
-# Sobre workflows{#about-workflows}
+# Get started with workflows{#about-workflows}
+
+## Sobre workflows
 
 O Adobe Campaign inclui um módulo de workflow que possibilita orquestrar a gama completa de processos e tarefas através dos módulos diferentes do servidor do aplicativo. Esse ambiente gráfico abrangente permite criar processos, inclusive segmentação, execução de campanha, processamento de arquivos, participação humana, etc. O mecanismo de workflow executa e rastreia esses processos.
 
@@ -70,3 +73,14 @@ Cada workflow contém:
 
    Saiba mais sobre dados e tabelas de workflows [nesta seção](../../workflow/using/how-to-use-workflow-data.md).
 
+## Princípios fundamentais e práticas recomendadas
+
+Consulte estas seções para obter orientação e práticas recomendadas para automatizar processos com workflows:
+
+* Saiba mais sobre atividades de fluxo de trabalho [nesta página](../../workflow/using/how-to-use-workflow-data.md).
+* Saiba como criar um fluxo de trabalho [nesta seção](../../workflow/using/building-a-workflow.md).
+* Descubra como usar workflows para importar dados na Campanha [nesta seção](../../workflow/using/importing-data.md).
+* As práticas recomendadas de fluxo de trabalho são detalhadas [nesta página](../../workflow/using/workflow-best-practices.md).
+* Encontre orientações sobre a execução do fluxo de trabalho [nesta seção](../../workflow/using/starting-a-workflow.md).
+* Saiba como monitorar workflows [nesta página](../../workflow/using/monitoring-workflow-execution).
+* Saiba como conceder acesso aos usuários para usar workflows [nesta página](../../workflow/using/managing-rights.md).
