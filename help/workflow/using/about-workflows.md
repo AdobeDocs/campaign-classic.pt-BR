@@ -13,7 +13,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: eccf0e9899426c2517748c7a72611ff098291cd2
+source-git-commit: 700cd82d87eccf6579afab5c9e8f7945807817da
 workflow-type: tm+mt
 source-wordcount: '668'
 ht-degree: 84%
@@ -82,5 +82,5 @@ Consulte estas seções para obter orientação e práticas recomendadas para au
 * Descubra como usar workflows para importar dados na Campanha [nesta seção](../../workflow/using/importing-data.md).
 * As práticas recomendadas de fluxo de trabalho são detalhadas [nesta página](../../workflow/using/workflow-best-practices.md).
 * Encontre orientações sobre a execução do fluxo de trabalho [nesta seção](../../workflow/using/starting-a-workflow.md).
-* Saiba como monitorar workflows [nesta página](../../workflow/using/monitoring-workflow-execution).
+* Saiba como monitorar workflows [nesta página](../../workflow/using/monitoring-workflow-execution.md).
 * Saiba como conceder acesso aos usuários para usar workflows [nesta página](../../workflow/using/managing-rights.md).
