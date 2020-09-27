@@ -1,6 +1,6 @@
 ---
-title: Sobre o modelo de dados Adobe Campaign Classic
-description: Este documento descreve as noções básicas do modelo de dados Adobe Campaign Classic.
+title: Sobre o modelo de dados da Adobe Campaign Classic
+description: Saiba como estender o modelo de dados de Campanha, editar schemas, usar APIs e muito mais.
 page-status-flag: never-activated
 uuid: faddde15-59a1-4d2c-8303-5b3e470a0c51
 contentOwner: sauviat
@@ -13,9 +13,9 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 580be39d09bd59770d490945c3ba2b29e12fb3c4
+source-git-commit: eccf0e9899426c2517748c7a72611ff098291cd2
 workflow-type: tm+mt
-source-wordcount: '970'
+source-wordcount: '971'
 ht-degree: 7%
 
 ---
@@ -23,7 +23,7 @@ ht-degree: 7%
 
 # About the Campaign data model{#about-data-model}
 
-Esta seção descreve as noções básicas do modelo de dados Adobe Campaign Classic, para uma melhor compreensão das tabelas integradas da Campanha e de suas interações.
+Esta seção descreve as noções básicas do modelo de dados da Adobe Campaign Classic, para uma melhor compreensão das tabelas integradas da Campanha e de suas interações.
 
 O modelo de dados conceituais do banco de dados do Adobe Campaign consiste em um conjunto de tabelas incorporadas e sua interação.
 
@@ -37,21 +37,21 @@ A estrutura física e lógica dos dados transportados no aplicativo é descrita 
 
 ## Visão geral {#data-model-overview}
 
-O Adobe Campaign depende de um banco de dados relacional que contém tabelas vinculadas. A estrutura básica do modelo de dados de Adobe Campaign pode ser descrita da seguinte forma.
+A Adobe Campaign depende de um banco de dados relacional que contém tabelas vinculadas. A estrutura básica do modelo de dados da Adobe Campaign pode ser descrita da seguinte maneira.
 
 >[!NOTE]
 >
 >Para obter mais informações sobre a arquitetura do modelo de dados de Campanha e as práticas recomendadas relacionadas, consulte [esta seção](../../configuration/using/data-model-best-practices.md#data-model-architecture).
 
-### tabela Recipient {#recipient-table}
+### tabela recipient {#recipient-table}
 
 O modelo de dados depende de uma tabela principal que é, por padrão, a tabela Recipient (**NmsRecipient**). Esta tabela permite armazenar todos os perfis de marketing.
 
 Para obter mais informações sobre a tabela de Recipient, consulte [esta seção](#default-recipient-table).
 
-### tabela Delivery {#delivery-table}
+### tabela delivery {#delivery-table}
 
-O modelo de dados também inclui uma peça dedicada a armazenar todas as atividades de marketing. Geralmente, é a tabela Delivery (**NmsDelivery**). Cada registro nesta tabela representa uma ação de delivery ou um template do delivery. Ele contém todos os parâmetros necessários para executar delivery como público alvo, conteúdo etc.
+O modelo de dados também inclui uma peça dedicada a armazenar todas as atividades de marketing. Geralmente, é a tabela do Delivery (**NmsDelivery**). Cada registro nesta tabela representa uma ação de delivery ou um template do delivery. Ele contém todos os parâmetros necessários para executar delivery como público alvo, conteúdo etc.
 
 ### Tabelas de registros {#log-tables}
 
@@ -86,7 +86,7 @@ Além disso, como a tabela de Recipient é parte do produto, tanto a tabela quan
 
 ## Extensão do modelo de dados {#extending-data-model}
 
-Ao começar com o Adobe Campaign, é necessário avaliar o modelo de dados padrão para verificar qual tabela é a mais adequada para armazenar seus dados de marketing.
+Ao começar com a Adobe Campaign, é necessário avaliar o modelo de dados padrão para verificar qual tabela é a mais adequada para armazenar seus dados de marketing.
 
 Se relevante, você pode usar a tabela de Recipient padrão com os campos predefinidos, como descrito na [presente seção](#default-recipient-table).
 
@@ -103,9 +103,9 @@ Para obter mais informações sobre como configurar schemas de extensão para es
 
 ## Uso de uma tabela personalizada de recipient {#custom-recipient-table}
 
-Ao projetar seu modelo de dados de Adobe Campaign, você pode usar a tabela [de Recipient](#default-recipient-table)pronta para uso ou decidir criar uma tabela de recipient não padrão para armazenar seus perfis de marketing.
+Ao projetar seu modelo de dados Adobe Campaign, você pode usar a tabela [de Recipient](#default-recipient-table)pronta para uso ou decidir criar uma tabela de recipient não padrão para armazenar seus perfis de marketing.
 
-Na verdade, se o modelo de dados não se ajustar à estrutura centrada no recipient, você pode configurar outras tabelas como o targeting dimension dentro do Adobe Campaign. Por exemplo, isso pode ser relevante quando você precisa público alvo residências, contas (como telefones celulares) e empresas/sites, em vez de simplesmente recipient.
+Na verdade, se o modelo de dados não se ajustar à estrutura centrada no recipient, você pode configurar outras tabelas como o targeting dimension no Adobe Campaign. Por exemplo, isso pode ser relevante quando você precisa público alvo residências, contas (como telefones celulares) e empresas/sites, em vez de simplesmente recipient.
 
 >[!NOTE]
 >
