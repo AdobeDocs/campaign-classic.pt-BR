@@ -1,6 +1,6 @@
 ---
 title: Orientações de monitoramento
-description: A presente seção apresenta orientações gerais para a monitorização do Campaign Classic.
+description: Diretrizes e práticas recomendadas do Discover para monitorar processos e instâncias de Campanha.
 page-status-flag: never-activated
 uuid: cf0d782d-47bf-40ae-ab6f-d1d47fa15792
 contentOwner: sauviat
@@ -13,10 +13,10 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: bc54cef4c44be4c694e062f56685dbb09d2fcf8e
+source-git-commit: eccf0e9899426c2517748c7a72611ff098291cd2
 workflow-type: tm+mt
-source-wordcount: '710'
-ht-degree: 8%
+source-wordcount: '712'
+ht-degree: 9%
 
 ---
 
@@ -58,7 +58,7 @@ A trilha de auditoria permite visualizar o histórico completo de alterações r
 
 **Painel de controle**
 
-O Painel de controle do Campaign permite gerenciar várias configurações da sua instância: gerencie permissões de URL, verifique os detalhes da instância, como as versões de compilação dos servidores etc. Também permite monitorar o espaço disponível nos servidores SFTP conectados à sua instância. [Clique aqui](https://docs.adobe.com/content/help/pt-BR/control-panel/using/control-panel-home.html) para obter mais informações.
+O Painel de controle do Campaign permite gerenciar várias configurações da sua instância: gerencie permissões de URL, verifique os detalhes da instância, como as versões de compilação dos servidores etc. Também permite monitorar o espaço disponível nos servidores SFTP conectados à sua instância. [Clique aqui](https://docs.adobe.com/content/help/pt-BR/control-panel/using/control-panel-home.translate.html) para obter mais informações.
 
 >[!NOTE]
 >
@@ -90,7 +90,7 @@ Seguir as diretrizes e as práticas recomendadas ao usar workflows pode ajudar a
 * [Práticas recomendadas ao usar workflows](../../workflow/using/workflow-best-practices.md)
 * [Monitoramento da execução do workflow](../../workflow/using/monitoring-workflow-execution.md)
 
-### Monitoramento de deliveries {#monitoring-deliveries}
+### Monitorar deliveries {#monitoring-deliveries}
 
 <img src="assets/do-not-localize/icon_send.svg" width="60px">
 
@@ -103,7 +103,7 @@ Os relatórios SMTP exibem estatísticas de delivery e erros SMTP por domínio. 
 [As práticas recomendadas para envio e criação](../../delivery/using/delivery-best-practices.md) de delivery podem ajudá-lo a melhorar seu desempenho.
 
 **Solução de problemas** de deliveryAções específicas podem ser executadas ao encontrar problemas com delivery:
-* [Problemas de produtividade](../../production/using/performance-and-throughput-issues.md#deliverability_issues)
+* [Problemas com delivery](../../production/using/performance-and-throughput-issues.md#deliverability_issues)
 * [Problemas de exibição de imagem](../../production/using/image-display-issues.md)
 * [Problemas de desempenho do delivery](../../delivery/using/monitoring-a-delivery.md#performance_issues)
 * [Problemas](../../production/using/temporary-files.md) de arquivos temporários - somente *em modelos de hospedagem local*
