@@ -1,8 +1,6 @@
 ---
 title: Sobre marketing social
-seo-title: Sobre marketing social
-description: Sobre marketing social
-seo-description: null
+description: Saiba como usar a Campanha para interagir com os clientes via Facebook e Twitter.
 page-status-flag: never-activated
 uuid: 64c861e3-b685-44e2-9b5b-4fbf5d70baa9
 contentOwner: sauviat
@@ -15,28 +13,31 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 2e18121e4094bc4cb215e5471091810df56b3ef5
+source-git-commit: eccf0e9899426c2517748c7a72611ff098291cd2
+workflow-type: tm+mt
+source-wordcount: '166'
+ht-degree: 92%
 
 ---
 
 
 # Sobre marketing social{#about-social-marketing}
 
-O aplicativo **Gerenciar redes** sociais (Social Marketing) projetado para gerenciar redes sociais permite interagir com clientes e clientes potenciais via Facebook e Twitter.
+O aplicativo (Marketing social) **Managing social networks** projetado para gerenciar redes sociais permite interagir com clientes e clientes potenciais via Facebook e Twitter.
 
 1. **Envio de mensagens**
 
    O Social Marketing permite enviar mensagens no Facebook e no Twitter.
 
-   * O Adobe Campaign permite que você poste mensagens diretamente em seu mural do Facebook e em sua conta do Twitter.
+   * O Adobe Campaign permite postar mensagens diretamente no mural do Facebook e em sua conta do Twitter.
    * Você também pode enviar mensagens diretas a todos os seus seguidores do Twitter.
 
 1. **Adquirir novos contatos**
 
-   O Adobe Campaign Social Marketing também facilita a aquisição de novos contatos via Facebook: entre em contato com os usuários e pergunte se eles desejam compartilhar suas informações de perfil. Se eles aceitarem, o Adobe Campaign recuperará automaticamente os dados, o que permite que você realize campanhas de definição de metas e, quando possível, implemente estratégias entre canais.
+   O Adobe Campaign Social Marketing também facilita a aquisição de novos contatos via Facebook: entre em contato com os usuários e pergunte se querem compartilhar suas informações de perfil. Se eles aceitarem, o Adobe Campaign recuperará automaticamente os dados, o que permite realizar campanhas de direcionamento e, quando possível, implementar estratégias entre canais.
 
 >[!IMPORTANT]
 >
->O Facebook e o Twitter fazem mudanças regulares em suas telas e processos. Este documento será atualizado em conformidade.
+>O Facebook e o Twitter fazem mudanças regulares em suas telas e processos. Este documento será atualizado adequadamente.
 >
->O Adobe Campaign solicita que você cumpra os termos de serviço do Facebook e do Twitter.
+>O Adobe Campaign solicita a aceitação dos termos de serviço do Facebook e do Twitter.
