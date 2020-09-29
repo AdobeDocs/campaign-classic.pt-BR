@@ -1,7 +1,7 @@
 ---
-title: Exemplos de edição de esquemas
-seo-title: Exemplos de edição de esquemas
-description: Exemplos de edição de esquemas
+title: Exemplos de edição de schemas
+seo-title: Exemplos de edição de schemas
+description: Exemplos de edição de schemas
 seo-description: null
 page-status-flag: never-activated
 uuid: f4bc1596-cf4e-4d1f-b6e8-b18cbd1e2e23
@@ -15,18 +15,21 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: dbff132e3bf88c408838f91e50e4b047947ee32a
+source-git-commit: 042349ae62012984a040b578d97706bae1c9917d
+workflow-type: tm+mt
+source-wordcount: '668'
+ht-degree: 3%
 
 ---
 
 
-# Exemplos de edição de esquemas{#examples-of-schemas-edition}
+# Exemplos de edição de schemas{#examples-of-schemas-edition}
 
 ## Extensão de uma tabela {#extending-a-table}
 
-Para estender a tabela de destinatários do esquema **nms:receipt** , aplique o seguinte procedimento:
+Para estender a tabela **nms:recipient** schema, execute o seguinte procedimento:
 
-1. Crie o esquema de extensão (**cus:extension**) usando os seguintes dados:
+1. Crie o schema de extensão (**cus:extension**) usando os seguintes dados:
 
    ```
    <srcSchema mappingType="sql" name="extension" namespace="cus" xtkschema="xtk:srcSchema" extendedSchema="nms:recipient">  
@@ -47,13 +50,13 @@ Para estender a tabela de destinatários do esquema **nms:receipt** , aplique o 
    </srcSchema>
    ```
 
-   Neste exemplo, um campo indexado (**fidelidade**) é adicionado e o elemento de **localização** (que já existia no esquema **nms:destinatário** ) é complementado com um campo enumerado (**área**).
+   Neste exemplo, um campo indexado (**fidelidade**) é adicionado e o elemento de **localização** (que já existia no schema **nms:recipient** ) é complementado com um campo enumerado (**área**).
 
    >[!IMPORTANT]
    >
-   >Lembre-se de adicionar o atributo **ExtendedSchema** para fazer referência ao esquema de extensão.
+   >Lembre-se de adicionar o atributo **ExtendedSchema** para fazer referência ao schema de extensão.
 
-1. Verifique se o esquema estendido é o esquema **nms:receipt** e se os dados adicionais estão presentes:
+1. Verifique se o schema estendido é o schema **nms:recipient** e se os dados adicionais estão presentes:
 
    ```
    <schema dependingSchemas="cus:extension" mappingType="sql" name="recipient" namespace="nms" xtkschema="xtk:schema">
@@ -91,9 +94,9 @@ Para estender a tabela de destinatários do esquema **nms:receipt** , aplique o 
 
 ## Tabela de coleção vinculada {#linked-collection-table}
 
-Esta seção descreve como criar uma tabela de pedido vinculada à tabela de destinatários com cardinalidade 1-N.
+Esta seção descreve como criar uma tabela de pedido vinculada à tabela recipient com cardinalidade 1-N.
 
-Esquema de origem da tabela de pedido:
+Schema de origem da tabela de pedido:
 
 ```
 <srcSchema label="Order" name="order" namespace="cus" xtkschema="xtk:srcSchema">  
@@ -108,9 +111,9 @@ Esquema de origem da tabela de pedido:
 </srcSchema>
 ```
 
-O tipo de tabela é **autopk** para criar uma chave primária gerada automaticamente a ser usada pela junção do link à tabela do destinatário.
+O tipo de tabela é **autopk** para criar uma chave primária gerada automaticamente a ser usada pela junção do link à tabela do recipient.
 
-Esquema gerado:
+Gerado pelo schema:
 
 ```
 <schema label="Order" mappingType="sql" name="order" namespace="cus" xtkschema="xtk:schema">  
@@ -160,7 +163,7 @@ Uma tabela de extensão permite estender o conteúdo de uma tabela existente em 
 
 A finalidade de uma tabela de extensão é evitar limitações no número de campos suportados em uma tabela ou otimizar o espaço ocupado pelos dados, que é consumido sob demanda.
 
-Criando o esquema da tabela de extensão (**cus:feature**):
+Criando o schema da tabela de extensão (**cus:feature**):
 
 ```
 <srcSchema mappingType="sql" name="feature" namespace="cus" xtkschema="xtk:srcSchema">  
@@ -172,7 +175,7 @@ Criando o esquema da tabela de extensão (**cus:feature**):
 </srcSchema>
 ```
 
-Criando um esquema de extensão na tabela de destinatários para adicionar o link de cardinalidade 1-1:
+Criação de um schema de extensão na tabela recipient para adicionar o link de cardinalidade 1-1:
 
 ```
 <srcSchema extendedSchema="nms:recipient" label="Recipient" mappingType="sql" name="recipient" namespace="cus" xtkschema="xtk:srcSchema">  
@@ -184,7 +187,7 @@ Criando um esquema de extensão na tabela de destinatários para adicionar o lin
 
 >[!NOTE]
 >
->A definição do link entre a tabela de destinatários e a tabela de extensão deve ser preenchida a partir do esquema que contém a chave estrangeira.
+>A definição do link entre a tabela do recipient e a tabela de extensão deve ser preenchida a partir do schema que contém a chave estrangeira.
 
 O script SQL para criação da tabela de extensão é o seguinte:
 
@@ -194,7 +197,7 @@ CREATE UNIQUE INDEX CusFeature_id ON CusFeature(iFeatureId);
 INSERT INTO CusFeature (iFeatureId) VALUES (0); 
 ```
 
-O script de atualização SQL da tabela do destinatário é o seguinte:
+O script de atualização SQL da tabela de recipient é o seguinte:
 
 ```
 ALTER TABLE NmsRecipient ADD iFeatureId INTEGER;
@@ -204,13 +207,13 @@ ALTER TABLE NmsRecipient ALTER COLUMN iFeatureId SET Default 0;
 CREATE INDEX NmsRecipient_featureId ON NmsRecipient(iFeatureId);
 ```
 
-## Tabela de sobrefluxo {#overflow-table}
+## Tabela de sobreposição {#overflow-table}
 
-Uma tabela de sobrefluxo é uma tabela de extensão (cardinalidade 1-1), mas a declaração do link para a tabela a ser estendida é preenchida no esquema da tabela de sobrefluxo.
+Uma tabela de sobrefluxo é uma tabela de extensão (cardinalidade 1-1), mas a declaração do link para a tabela a ser estendida é preenchida no schema da tabela de sobrefluxo.
 
 A tabela de sobrefluxo contém a chave estrangeira para a tabela a ser estendida. Por conseguinte, o quadro a prorrogar não é alterado. A relação entre as duas tabelas é o valor da chave primária do quadro a ser estendido.
 
-Criando o esquema da tabela de sobrefluxo (**cus:overflow**):
+Criação do schema de tabela de sobrefluxo (**cus:overflow**):
 
 ```
 <srcSchema label="Overflow" name="overflow" namespace="cus" xtkschema="xtk:srcSchema">  
@@ -229,7 +232,7 @@ Criando o esquema da tabela de sobrefluxo (**cus:overflow**):
 
 >[!NOTE]
 >
->A chave primária da tabela de sobrefluxo é o link para a tabela a ser estendida (&quot;nms:receipt&quot; esquema no nosso exemplo).
+>A chave primária da tabela de sobrefluxo é o link para a tabela a ser estendida ( schema &quot;nms:recipient&quot; no nosso exemplo).
 
 O script SQL de criação de tabela é o seguinte:
 
@@ -242,9 +245,9 @@ CREATE UNIQUE INDEX CusOverflow2_id ON CusOverflow2(iRecipientId);
 
 Uma tabela de relacionamento permite vincular duas tabelas com cardinalidade N-N. Esta tabela contém apenas as chaves estrangeiras das tabelas a serem vinculadas.
 
-Exemplo de uma tabela de relacionamento entre grupos (**nms:group**) e destinatários (**nms:destinatário**).
+Exemplo de uma tabela de relacionamento entre grupos (**nms:group**) e recipient (**nms:recipient**).
 
-Esquema de origem da tabela de relacionamento:
+Schema de origem da tabela de relacionamento:
 
 ```
 <srcSchema name="rcpGrpRel" namespace="cus">
@@ -260,7 +263,7 @@ Esquema de origem da tabela de relacionamento:
 </srcSchema>
 ```
 
-O esquema gerado é o seguinte:
+O schema gerado é o seguinte:
 
 ```
 <schema mappingType="sql" name="rcpGrpRel" namespace="cus" xtkschema="xtk:schema">  
@@ -304,3 +307,46 @@ CREATE UNIQUE INDEX CusRcpGrpRel_id ON CusRcpGrpRel(iRcpGroupId, iRecipientId);
 CREATE INDEX CusRcpGrpRel_recipientId ON CusRcpGrpRel(iRecipientId);
 ```
 
+## Caso de uso: vincular um campo a uma tabela de referência existente {#uc-link}
+
+Este caso de uso demonstra como você pode usar uma tabela de referência existente como uma alternativa aos mecanismos de lista discriminada Adobe Campaign incorporados (enum, userEnum ou dbEnum).
+
+Você também pode usar uma tabela de referência existente como uma lista discriminada em seus schemas. Isso pode ser feito criando um link entre uma tabela e a tabela de referência e adicionando o atributo **displayAsField=&quot;true&quot;**.
+
+Neste exemplo, a tabela de referência contém uma lista de nomes bancários e identificadores:
+
+```
+<srcSchema entitySchema="xtk:srcSchema" img="cus:bank16x16.png" label="Bank" mappingType="sql" name="bank" namespace="cus"
+xtkschema="xtk:srcSchema">
+    <element img="cus:bank16x16.png" label="Banks" name="bank">
+        <compute-string expr="@name"/>
+        <key name="id">
+            <keyfield xpath="@id"/>
+        </key>
+        <attribute label="Bank Id" name="id" type="short"/>
+        <attribute label="Name" length="64" name="name" type="string"/>
+     </element> 
+</srcSchema>
+```
+
+Em qualquer tabela que use essa tabela de referência, defina um link e adicione o atributo **displayAsField=&quot;true&quot;** .
+
+```
+<element displayAsField="true" label="Bank" name="bank" target="cus:bank" type="link" noDbIndex="true"/>
+```
+
+A interface do usuário não exibirá um link, mas um campo. Quando o usuário selecionar esse campo, poderá selecionar um valor na tabela de referência ou usar o recurso de preenchimento automático.
+
+![](assets/schema-edition-ex.png)
+
+* Para que o preenchimento automático seja concluído, é necessário definir uma string de computação na tabela de referência.
+
+* Adicione o atributo **noDbIndex=&quot;true&quot;** na definição do link para impedir que a Adobe Campaign crie um índice nos valores armazenados na tabela de origem do link.
+
+## Tópicos relacionados
+
+* [Trabalhar com o lista discriminada](../../platform/using/managing-enumerations.md)
+
+* [Introdução aos schemas de Campanha](../../configuration/using/about-schema-edition.md)
+
+* [Atualização da estrutura do banco de dados](../../configuration/using/updating-the-database-structure.md)
