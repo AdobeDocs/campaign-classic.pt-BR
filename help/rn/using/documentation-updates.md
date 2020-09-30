@@ -13,9 +13,9 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 1b76fb1694545f4be02a63e4c670b81db632c5ee
+source-git-commit: 6483c3e2e9fd3a2951b2bc8bf6d8a3350361e86f
 workflow-type: tm+mt
-source-wordcount: '3686'
+source-wordcount: '3704'
 ht-degree: 98%
 
 ---
@@ -32,6 +32,8 @@ Você também pode consultar as [Notas de versão do Adobe Campaign Classic](../
 Uma observação foi adicionada para especificar que a contagem de perfis ativos está disponível somente para instâncias de Marketing. [Leia mais](../../platform/using/about-profiles.md#active-profiles)
 
 Uma nova amostra sobre a edição de schema foi adicionada para vincular um campo a uma tabela de referência existente. [Leia mais](../../configuration/using/examples-of-schemas-edition.md#uc-link)
+
+Foi adicionada uma observação sobre o uso de dados adicionais com seeds addresses em delivery. [Leia mais](../../delivery/using/creating-seed-addresses.md#defining-addresses)
 
 ## Agosto de 2020 {#aug-2020}
 
