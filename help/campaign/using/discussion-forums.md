@@ -11,11 +11,11 @@ audience: campaign
 content-type: reference
 topic-tags: tasks--resources-and-budgets
 discoiquuid: 88eb17b6-5206-4064-9cd9-b4645a85c609
-index: y
-internal: n
-snippet: y
-translation-type: ht
-source-git-commit: d30de91002862b664249c5a704b7c0f521dd30f2
+translation-type: tm+mt
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '725'
+ht-degree: 87%
 
 ---
 
@@ -42,13 +42,13 @@ Para exibir o conteúdo de uma mensagem, clique em seu cabeçalho.
 
 **Iniciar uma nova discussão**
 
-Para iniciar uma nova discussão, clique no botão **[!UICONTROL Add a discussion]** no canto superior direito. A caixa **[!UICONTROL Discussion forum]** aparecerá (veja abaixo).
+Para iniciar uma nova discussão, clique no botão **[!UICONTROL Add a discussion]** no canto superior direito. The **[!UICONTROL Discussion forum]** box comes up (see below).
 
 ![](assets/mrm_forum_new_thread.png)
 
 **Postar uma mensagem em uma discussão existente**
 
-Para postar uma mensagem em uma discussão existente, abra a mensagem que deseja responder e clique no link **[!UICONTROL Reply]** no canto superior esquerdo. A caixa **[!UICONTROL Discussion forum]** aparecerá (veja abaixo).
+Para postar uma mensagem em uma discussão existente, abra a mensagem que deseja responder e clique no link **[!UICONTROL Reply]** no canto superior esquerdo. The **[!UICONTROL Discussion forum]** box comes up (see below).
 
 ![](assets/mrm_forum_answer_msg.png)
 
@@ -56,7 +56,7 @@ Quando responder a uma mensagem, a pessoa que postou a mensagem original receber
 
 **Escrever uma mensagem**
 
-Na caixa **[!UICONTROL Discussion forum]**:
+Na **[!UICONTROL Discussion forum]** caixa:
 
 1. Insira o texto no campo **[!UICONTROL Message]** e um título de discussão no campo **[!UICONTROL Subject]**.
 
@@ -67,7 +67,7 @@ Na caixa **[!UICONTROL Discussion forum]**:
    * Se desejar que alguém que não se inscreveu no fórum participe da discussão, use o campo **[!UICONTROL Operator to notify]**. O operador receberá um e-mail de notificação para esta mensagem específica (eles não serão inscritos no fórum). Para notificar vários operadores, selecione um grupo de operadores.
    * Para adicionar um anexo à mensagem, clique em **[!UICONTROL Browse]**. O anexo também será incluído no e-mail de notificação. Os anexos só podem ser enviados individualmente: para enviar vários arquivos, é necessário compactá-los.
 
-1. Clique em **[!UICONTROL Create the message]** para publicar no fórum.
+1. Click **[!UICONTROL Create the message]** to post it to the forum.
 
 >[!NOTE]
 >
@@ -102,7 +102,7 @@ A inscrição de um fórum permite seguir as discussões. Inscritos receberão u
 
    Para obter mais informações sobre painéis pessoais, consulte [esta seção](../../platform/using/access-management.md#operators).
 
-* Para ver quem se inscreveu em um fórum, clique no link **[!UICONTROL List of subscribers to this discussion forum]** acima da lista de mensagens.
+* To see who is subscribed to a forum, click the **[!UICONTROL List of subscribers to this discussion forum]** link above the list of messages.
 
    ![](assets/mrm_forum_subscribers.png)
 
@@ -111,10 +111,11 @@ A inscrição de um fórum permite seguir as discussões. Inscritos receberão u
 Se os operadores inscritos em um fórum não receberem notificações conforme esperado:
 
 * Verifique se os endereços de email estão inseridos nos perfis de operador.
-* Vá para o nó **[!UICONTROL Administration > Production > Technical workflows > Campaign processes]** e verifique se o workflow **[!UICONTROL Jobs in discussion forums]** foi iniciado e está livre de erros.
+* Go to the **[!UICONTROL Administration > Production > Technical workflows > Campaign processes]** node and check that the **[!UICONTROL Jobs in discussion forums]** workflow is started and free of errors.
 * Exibir os logs do delivery:
 
-   * Na página inicial do Adobe Campaign, vá para **[!UICONTROL Campaigns > Navigation > Deliveries]**, então abra o delivery de **[!UICONTROL Discussion forum notification]**.
-   * No explorador, vá para **[!UICONTROL Administration > Production > Objects created automatically > Technical deliveries > Workflow notifications]**, e clique em **[!UICONTROL Discussion forum notifications]**.
-   Na caixa **[!UICONTROL Discussion forum notifications]**, os logs do delivery são encontrados na guia **[!UICONTROL Edit > Delivery]**. Também é possível visualizá-los nas guias **[!UICONTROL Tracking > Log]** e **[!UICONTROL Exclusion causes]**.
+   * On the Adobe Campaign home page, go to **[!UICONTROL Campaigns > Navigation > Deliveries]**, then open the **[!UICONTROL Discussion forum notification]** delivery.
+   * No explorador, vá para **[!UICONTROL Administration > Production > Objects created automatically > Technical deliveries > Workflow notifications]**, em seguida, clique em **[!UICONTROL Discussion forum notifications]**.
+
+   In the **[!UICONTROL Discussion forum notifications]** box, the delivery logs are found in the **[!UICONTROL Edit > Delivery]** tab. You can also view the **[!UICONTROL Tracking > Log]** and the **[!UICONTROL Exclusion causes]** tabs.
 
