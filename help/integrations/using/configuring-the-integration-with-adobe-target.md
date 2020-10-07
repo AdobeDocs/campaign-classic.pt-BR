@@ -11,11 +11,11 @@ audience: integrations
 content-type: reference
 topic-tags: adobe-target
 discoiquuid: 378d5ff9-88c0-43f1-beb8-454701e9f1d1
-index: y
-internal: n
-snippet: y
-translation-type: ht
-source-git-commit: 0745b9c9d72538b8573ad18ff4054ecf788905f2
+translation-type: tm+mt
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '181'
+ht-degree: 91%
 
 ---
 
@@ -33,11 +33,12 @@ Para usar a integração entre o Adobe Campaign e o Adobe Target, você deve ter
 
 Para configurar o Adobe Campaign:
 
-1. Instale o pacote padrão **[!UICONTROL Integration with the Adobe Experience Cloud]**. A instalação de um pacote de integração é a mesma instalação de um pacote padrão, que é detalhado na seção [Importação de pacotes. ](../../platform/using/working-with-data-packages.md#importing-packages) Isso dá acesso aos ativos compartilhados por meio do Digital Asset Manager.
+1. Install the **[!UICONTROL Integration with the Adobe Experience Cloud]** standard package. A instalação de um pacote de integração é a mesma instalação de um pacote padrão, que é detalhado na seção [Importação de pacotes. ](../../platform/using/working-with-data-packages.md#importing-packages) Isso dá acesso aos ativos compartilhados por meio do Digital Asset Manager.
 1. Ative a conexão pelo IMS (serviço de conexão da Adobe ID) para usar imagens compartilhadas pela Adobe Experience Cloud em seus emails. Consulte a seção sobre [IMS](../../integrations/using/about-adobe-id.md).
-1. Em **[!UICONTROL Administration > Platform > Options]**, configure as opções do servidor e da organização (locatário) para o Adobe Target:
+1. In **[!UICONTROL Administration > Platform > Options]**, configure the server and organization (Tenant) options for Adobe Target:
 
-   * **[!UICONTROL TNT_EdgeServer]**: servidor do Adobe Target usado para a integração. Essa opção é selecionada por padrão. Esse valor corresponde ao **[!UICONTROL Domain Server]** do Adobe Target, seguido pelo valor **/m2**. Por exemplo: **tt.omtrdc.net/m2**.
-   * **[!UICONTROL TNT_TenantName]**: Nome da organização do Adobe Target. Esse valor corresponde ao nome do **[!UICONTROL Client]** do Adobe Target.
+   * **[!UICONTROL TNT_EdgeServer]** : O servidor Adobe Target usado para a integração. Essa opção é selecionada por padrão. Esse valor corresponde ao **[!UICONTROL Domain Server]** do Adobe Target, seguido pelo valor **/m2**. Por exemplo: **tt.omtrdc.net/m2**.
+   * **[!UICONTROL TNT_TenantName]** : Nome da organização do Adobe Target. Esse valor corresponde ao nome do **[!UICONTROL Client]** do Adobe Target.
+
    ![](assets/tar_options.png)
 
