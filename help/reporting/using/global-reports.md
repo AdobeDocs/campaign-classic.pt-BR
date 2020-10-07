@@ -14,8 +14,11 @@ discoiquuid: cc832666-ad18-49ce-afcc-f9169b683ae8
 index: y
 internal: n
 snippet: y
-translation-type: ht
-source-git-commit: 18309c190c351cc57f7af24f48b2a772c1840319
+translation-type: tm+mt
+source-git-commit: 3b6cfe05b851843f5d886fcccbe114ff7f0b6611
+workflow-type: tm+mt
+source-wordcount: '2185'
+ht-degree: 98%
 
 ---
 
@@ -308,4 +311,4 @@ O número de aberturas corresponde ao número total de mensagens abertas. Os ema
 
 >[!NOTE]
 >
->Os nomes do navegador e do sistema operacional fazem parte das informações enviadas pelo agente do usuário do navegador em que o email foi aberto. O Adobe Campaign deduz o tipo de dispositivo usando as informações do dispositivo.
+>Os nomes do navegador e do sistema operacional fazem parte das informações enviadas pelo agente de usuário do navegador ao qual a mensagem foi aberta. O Adobe Campaign deduz o tipo de dispositivo usando as informações do dispositivo.
