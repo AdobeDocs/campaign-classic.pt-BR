@@ -11,12 +11,9 @@ audience: workflow
 content-type: reference
 topic-tags: event-activities
 discoiquuid: 4c0530b1-0292-45bc-8730-668bc5b8550b
-index: y
-internal: n
-snippet: y
-translation-type: ht
-source-git-commit: 9e5a499d723d3e4126f533b6c7dd63073aff3d09
-workflow-type: ht
+translation-type: tm+mt
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
 source-wordcount: '333'
 ht-degree: 100%
 
@@ -71,6 +68,7 @@ A primeira guia da atividade de **Emails de Entrada** permite inserir os parâme
    * 2 - Deixa a mensagem no servidor e ativa a transição de saída.
    * 3 - Exclui a mensagem do servidor.
    * 4 - Deixa a mensagem no servidor.
+
    O conteúdo da mensagem é acessível a partir da variável global **[!UICONTROL mailMessage]**.
 
 1. **[!UICONTROL Schedule]**
