@@ -11,14 +11,11 @@ audience: production
 content-type: reference
 topic-tags: troubleshooting
 discoiquuid: ec66e3e3-b09a-44a4-914d-e3b38c7643f8
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: bc54cef4c44be4c694e062f56685dbb09d2fcf8e
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
 workflow-type: tm+mt
 source-wordcount: '691'
-ht-degree: 7%
+ht-degree: 8%
 
 ---
 
@@ -62,7 +59,7 @@ Esta é uma lista de artigos relacionados às práticas recomendadas de configur
 * Configuração TLS: não é recomendável ativar o TLS globalmente, pois ele pode reduzir o throughput. Em vez disso, as configurações TLS por domínio, gerenciadas pela equipe de entrega, devem ser ajustadas, dependendo das necessidades. Refer to this [page](../../installation/using/email-deliverability.md#mx-configuration) for more information.
 * DKIM: para garantir o nível de segurança do DKIM, o tamanho de criptografia recomendado é 1024b. As chaves DKIM inferiores não serão consideradas válidas pela maioria dos provedores de acesso. Consulte esta [página](../../delivery/using/technical-recommendations.md#dkim) e esta [nota técnica](https://helpx.adobe.com/br/campaign/kb/domain-name-delegation.html).
 
-## Problemas de produtividade {#deliverability-issues}
+## Problemas com delivery {#deliverability-issues}
 
 Esta é uma lista de práticas recomendadas e artigos relacionados à entrega:
 
