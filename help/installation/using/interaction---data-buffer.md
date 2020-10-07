@@ -11,11 +11,11 @@ audience: installation
 content-type: reference
 topic-tags: additional-configurations
 discoiquuid: cbfdeb2f-4f20-45b8-8cc0-89362f9ea9c1
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 6b631f8456ad1f61cec1630334d76752f6af9866
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '264'
+ht-degree: 6%
 
 ---
 
@@ -24,19 +24,19 @@ source-git-commit: 6b631f8456ad1f61cec1630334d76752f6af9866
 
 >[!NOTE]
 >
->Algumas configurações só podem ser executadas pela Adobe para implantações hospedadas pela Adobe. Por exemplo, para acessar os arquivos de configuração do servidor e da instância. Para saber mais sobre as diferentes implantações, consulte a seção Modelos [de](../../installation/using/hosting-models.md) hospedagem ou [este artigo](https://helpx.adobe.com/campaign/kb/acc-on-prem-vs-hosted.html).
+>Algumas configurações só podem ser executadas por Adobe para implantações hospedadas por Adobe. Por exemplo, para acessar os arquivos de configuração do servidor e da instância. Para saber mais sobre as diferentes implantações, consulte a seção Modelos [de](../../installation/using/hosting-models.md) hospedagem ou [este artigo](https://helpx.adobe.com/br/campaign/kb/acc-on-prem-vs-hosted.html).
 
 No Adobe Campaign, uma zona **de buffer de** dados foi introduzida no módulo Interação. Isso permite **aumentar o desempenho** da interação de entrada ao dessincronizar cálculos de ações e ofertas.
 
-Só diz respeito à interação de entrada, seja por uma chamada (com ou sem dados de chamada) ou por uma atualização de status (updateStatus).
+Só diz respeito à Interação de entrada, seja por uma chamada (com ou sem dados de chamada) ou por uma atualização de status (updateStatus).
 
-Para evitar uma fila ao escrever propostas relacionadas a um destinatário, um novo processo gera uma zona **de buffer de** dados que permite que as propostas sejam **escritas de forma assíncrona**. Essa zona de buffer de dados é periodicamente lida e esvaziada. O período padrão está no espaço de aproximadamente um segundo.A escrita de propostas é, portanto, agrupada.
+Para evitar uma fila ao escrever propostas relacionadas a um recipient, um novo processo gera uma zona **de buffer de** dados que permite que as propostas sejam **escritas de forma assíncrona**. Essa zona de buffer de dados é periodicamente lida e esvaziada. O período padrão está no espaço de aproximadamente um segundo.A escrita de propostas é, portanto, agrupada.
 
 A **configuração** da zona de buffer de dados pode ser feita no arquivo de configuração da instância (config-Instance.xml).
 
 >[!NOTE]
 >
->Qualquer alteração feita na configuração requer a reinicialização do servidor da Web (Apache:IIS) e dos processos do Adobe Campaign.\
+>Qualquer alteração feita na configuração requer uma reinicialização do servidor da Web (Apache:IIS) e dos processos da Adobe Campaign.\
 >Depois de configurar a zona de buffer de dados, verifique se há uma configuração de hardware adaptada disponível. (quantidade de memória presente).
 
 Depois de configurar a zona de buffer de dados, verifique se há uma configuração de hardware adaptada disponível. (quantidade de memória presente).
@@ -49,7 +49,7 @@ maxProcessMemoryWarningMb="1600" maxSharedEntries="25000" nextOffersSize="0"
 processRestartTime="06:00:00" runLevel="10" targetKeySize="16"/>
 ```
 
-Se você usar a Interação de entrada, o atributo @autostart deverá ser &quot;true&quot; para iniciar automaticamente o processo quando o servidor do Adobe Campaign for iniciado.
+Se você usar a Interação de entrada, o atributo @autostart deverá ser &quot;true&quot; para iniciar automaticamente o processo quando o servidor Adobe Campaign for iniciado.
 
 Detalhes do argumento:
 
