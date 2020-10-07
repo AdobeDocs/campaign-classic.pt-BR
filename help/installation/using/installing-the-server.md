@@ -11,11 +11,11 @@ audience: installation
 content-type: reference
 topic-tags: installing-campaign-in-windows-
 discoiquuid: d1510fd9-995b-46c6-8d57-e1fe3999235e
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: c25e2a4f2280cdcc61e0522f8235149410b5dacf
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '404'
+ht-degree: 2%
 
 ---
 
@@ -26,7 +26,7 @@ source-git-commit: c25e2a4f2280cdcc61e0522f8235149410b5dacf
 
 Para uma plataforma Windows de 32 bits, instale o Adobe Campaign de 32 bits. Para uma plataforma Windows de 64 bits, instale o Adobe Campaign de 64 bits.
 
-As etapas de instalação do servidor do Adobe Campaign são as seguintes:
+As etapas de instalação do servidor Adobe Campaign são as seguintes:
 
 1. Execute o arquivo **setup.exe**.
 
@@ -38,10 +38,11 @@ As etapas de instalação do servidor do Adobe Campaign são as seguintes:
 
    Vários tipos de instalação estão disponíveis:
 
-   * **[!UICONTROL Installation of an application server]** : Instale o servidor de aplicativos do Adobe Campaign e o console do cliente.
+   * **[!UICONTROL Installation of an application server]** : Instale o servidor de aplicativos Adobe Campaign e o console do cliente.
    * **[!UICONTROL Minimal installation (Network)]** : Instalação do computador cliente da rede. Apenas um número limitado de DLLs será instalado no computador, se necessário, e todos os outros componentes serão usados de uma unidade de rede.
    * **[!UICONTROL Installation of a client]** : Instalação dos componentes necessários para o cliente Adobe Campaign.
    * **[!UICONTROL Custom installation]** : O usuário escolhe os elementos a serem instalados.
+
    Selecione **Instalação de um servidor** de aplicativos e siga as diferentes etapas, conforme mostrado abaixo:
 
    ![](assets/s_ncs_install_installer_02.png)
@@ -50,11 +51,11 @@ As etapas de instalação do servidor do Adobe Campaign são as seguintes:
 
    ![](assets/s_ncs_install_installer_03.png)
 
-1. Clique **[!UICONTROL Finish]** para iniciar a instalação:
+1. Clique **[!UICONTROL Finish]** para start da instalação:
 
    ![](assets/s_ncs_install_installer_04.png)
 
-   A barra de progresso mostra a distância da instalação:
+   A barra de progresso mostra até que ponto a instalação está:
 
    ![](assets/s_ncs_install_installer_05.png)
 
@@ -66,7 +67,7 @@ As etapas de instalação do servidor do Adobe Campaign são as seguintes:
    >
    >Quando a instalação do servidor estiver concluída, uma reinicialização do servidor será necessária para evitar possíveis problemas de rede.
 
-   Quando a instalação estiver concluída, inicie o Adobe Campaign para criar os arquivos de configuração. Consulte [Primeira inicialização do servidor](#first-start-up-of-the-server).
+   Quando a instalação estiver concluída, start a Adobe Campaign para criar os arquivos de configuração. Consulte [Primeiro start do servidor](#first-start-up-of-the-server).
 
 ## Teste de instalação de resumo {#summary-installation-testing}
 
@@ -82,7 +83,7 @@ Se o Adobe Campaign não for iniciado, a resposta será:
 No task
 ```
 
-## Primeira inicialização do servidor {#first-start-up-of-the-server}
+## Primeiro start do servidor {#first-start-up-of-the-server}
 
 Quando o teste de instalação estiver concluído, abra um prompt de comando pelo **[!UICONTROL Start > Programs > Adobe Campaign]** menu e digite o seguinte comando:
 
@@ -92,7 +93,7 @@ nlserver web
 
 ![](assets/s_ncs_install_cmd_nlserverweb.png)
 
-Os arquivos no diretório de instalação são usados para configurar os módulos do servidor do Adobe Campaign.
+Os arquivos no diretório de instalação são usados para configurar os módulos do servidor Adobe Campaign.
 
 As seguintes informações são exibidas:
 
@@ -141,19 +142,19 @@ As seguintes informações são exibidas:
 
 ## Senha do identificador interno {#password-for-the-internal-identifier}
 
-O servidor do Adobe Campaign define um logon técnico chamado **interno** que tem todos os direitos em todas as instâncias. Logo após a instalação, o logon não tem uma senha. É obrigatório definir um.
+O servidor Adobe Campaign define um logon técnico chamado **interno** que tem todos os direitos em todas as instâncias. Logo após a instalação, o logon não tem uma senha. É obrigatório definir um.
 
 Consulte o identificador [interno](../../installation/using/campaign-server-configuration.md#internal-identifier)da seção.
 
-## Iniciar os serviços do Adobe Campaign {#starting-adobe-campaign-services}
+## Starting Adobe Campaign services {#starting-adobe-campaign-services}
 
-Para iniciar os serviços do Adobe Campaign, você pode usar o gerenciador de serviços ou inserir o seguinte na linha de comando (com os direitos apropriados):
+Para start dos serviços da Adobe Campaign, você pode usar o gerenciador de serviços ou inserir o seguinte na linha de comando (com os direitos apropriados):
 
 ```
 net start nlserver6
 ```
 
-Se você precisar parar os processos do Adobe Campaign posteriormente, use o comando:
+Se você precisar parar os processos do Adobe Campaign mais tarde, use o comando:
 
 ```
 net stop nlserver6
