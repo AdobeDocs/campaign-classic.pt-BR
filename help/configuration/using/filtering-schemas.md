@@ -1,7 +1,7 @@
 ---
-title: Esquemas de filtragem
-seo-title: Esquemas de filtragem
-description: Esquemas de filtragem
+title: Schemas de filtragem
+seo-title: Schemas de filtragem
+description: Schemas de filtragem
 seo-description: null
 page-status-flag: never-activated
 uuid: 04a90785-3084-42fd-85af-77bc28687579
@@ -11,36 +11,36 @@ audience: configuration
 content-type: reference
 topic-tags: editing-schemas
 discoiquuid: 64d4c5b8-db0b-4287-8d30-4bf09878a401
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: dbff132e3bf88c408838f91e50e4b047947ee32a
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '413'
+ht-degree: 1%
 
 ---
 
 
-# Esquemas de filtragem{#filtering-schemas}
+# Schemas de filtragem{#filtering-schemas}
 
 ## Filtros do sistema {#system-filters}
 
-Você pode filtrar o acesso ao esquema para usuários específicos, dependendo de suas permissões. Os filtros do sistema permitem gerenciar as permissões de leitura e gravação de entidades detalhadas em esquemas, usando os parâmetros **readAccess** e **writeAccess** .
+Você pode filtrar o acesso do schema a usuários específicos, dependendo de suas permissões. Os filtros do sistema permitem gerenciar as permissões de leitura e gravação de entidades detalhadas em schemas, usando os parâmetros **readAccess** e **writeAccess** .
 
 >[!NOTE]
 >
 >Esta restrição aplica-se apenas a utilizadores não técnicos: um usuário técnico, com permissões relacionadas ou usando um fluxo de trabalho, poderá recuperar e atualizar dados.
 
-* **readAccess**: fornece acesso somente leitura aos dados do esquema.
+* **readAccess**: fornece acesso somente leitura aos dados do schema.
 
    **Aviso** - Todas as tabelas vinculadas devem ser definidas com a mesma restrição. Essa configuração pode afetar o desempenho.
 
-* **writeAccess**: fornece acesso de gravação aos dados do esquema.
+* **writeAccess**: fornece acesso de gravação aos dados do schema.
 
-Esses filtros são inseridos no nível do **elemento** principal dos esquemas e, como mostrado nos exemplos a seguir, podem ser formados para restringir o acesso.
+Esses filtros são inseridos no nível do **elemento** principal dos schemas e, como mostrado nos exemplos a seguir, podem ser formados para restringir o acesso.
 
 * Restringir permissões de GRAVAÇÃO
 
-   Aqui, o filtro é usado para proibir permissões de GRAVAÇÃO no esquema para operadores sem a permissão ADMINISTRAÇÃO. Isso significa que somente os administradores terão permissões de gravação em entidades descritas por este esquema.
+   Aqui, o filtro é usado para proibir permissões de GRAVAÇÃO no schema para operadores sem a permissão ADMINISTRAÇÃO. Isso significa que somente os administradores terão permissões de gravação em entidades descritas por esse schema.
 
    ```
    <sysFilter name="writeAccess">      
@@ -50,7 +50,7 @@ Esses filtros são inseridos no nível do **elemento** principal dos esquemas e,
 
 * Restringir permissões de LEITURA e GRAVAÇÃO:
 
-   Aqui, o filtro é usado para proibir permissões de LEITURA e GRAVAÇÃO no esquema para todos os operadores. Somente a conta **interna** , representada pela expressão &quot;$(loginId)!=0&quot;, tem essas permissões.
+   Aqui, o filtro é usado para proibir permissões de LEITURA e GRAVAÇÃO no schema para todos os operadores. Somente a conta **interna** , representada pela expressão &quot;$(loginId)!=0&quot;, tem essas permissões.
 
    ```
    <sysFilter name="readAccess"> 
@@ -66,11 +66,11 @@ Esses filtros são inseridos no nível do **elemento** principal dos esquemas e,
 
 >[!NOTE]
 >
->Se nenhum filtro for especificado, todos os operadores terão permissões de leitura e gravação no esquema.
+>Se nenhum filtro for especificado, todos os operadores terão permissões de leitura e gravação no schema.
 
-## Proteger esquemas integrados {#protecting-built-in-schemas}
+## Proteger schemas integrados {#protecting-built-in-schemas}
 
-Por padrão, os esquemas incorporados só são acessíveis com permissões de GRAVAÇÃO para operadores com direitos de ADMINISTRAÇÃO:
+Por padrão, os schemas incorporados só podem ser acessados com permissões de GRAVAÇÃO para operadores com direitos de ADMINISTRAÇÃO:
 
 * ncm:publicação
 * nl:monitoramento
@@ -105,17 +105,17 @@ Por padrão, os esquemas incorporados só são acessíveis com permissões de GR
 
 >[!IMPORTANT]
 >
->As permissões de LEITURA e GRAVAÇÃO para o esquema **xtk:sessionInfo** só podem ser acessadas pela conta interna de uma instância do Adobe Campaign.
+>As permissões de LEITURA e GRAVAÇÃO do schema **xtk:sessionInfo** só podem ser acessadas pela conta interna de uma instância do Adobe Campaign.
 
-## Modificação de filtros do sistema de esquemas incorporados {#modifying-system-filters-of-built-in-schemas}
+## Modificação de filtros do sistema de schemas integrados {#modifying-system-filters-of-built-in-schemas}
 
-Você ainda pode modificar os filtros do sistema dos esquemas predefinidos que são protegidos por padrão devido a problemas de compatibilidade com versões anteriores.
+Você ainda pode modificar os filtros do sistema dos schemas prontos para uso que são protegidos por padrão devido a problemas de compatibilidade com versões anteriores.
 
 >[!NOTE]
 >
->No entanto, a Adobe recomenda que você não modifique os parâmetros padrão para garantir a segurança ideal.
+>No entanto, o Adobe recomenda que você não modifique os parâmetros padrão para garantir a segurança ideal.
 
-1. Crie uma extensão para o esquema em questão ou abra uma extensão existente.
-1. Adicione um elemento filho **`<sysfilter name="<filter name>" _operation="delete"/>`** no elemento principal para excluir a aplicação do filtro sob o mesmo no esquema de origem.
-1. Se desejar, adicione um novo filtro, conforme detalhado nos filtros [](#system-filters)do sistema.
+1. Crie uma extensão para o schema em questão ou abra uma extensão existente.
+1. Adicione um elemento filho **`<sysfilter name="<filter name>" _operation="delete"/>`** no elemento principal para excluir a aplicação do filtro abaixo do mesmo no schema da origem.
+1. Se desejar, adicione um novo filtro, conforme detalhado em filtros [](#system-filters)do sistema.
 
