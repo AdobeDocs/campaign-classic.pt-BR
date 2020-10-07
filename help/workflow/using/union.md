@@ -11,11 +11,11 @@ audience: workflow
 content-type: reference
 topic-tags: targeting-activities
 discoiquuid: 573021ad-1efb-4156-af6d-417737ce745a
-index: y
-internal: n
-snippet: y
-translation-type: ht
-source-git-commit: 20f835c357d016643ea1f3209ee4dfb6d3239f90
+translation-type: tm+mt
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '300'
+ht-degree: 95%
 
 ---
 
@@ -38,7 +38,7 @@ No exemplo a seguir, os resultados de dois queries foram combinados para atualiz
 1. Você pode inserir um rótulo.
 1. Selecione o método de reconciliação **[!UICONTROL Keys only]**, pois, neste exemplo, o público resultante dos queries contém dados consistentes.
 1. Se você tiver inserido dados adicionais para os queries, pode manter apenas os dados compartilhados.
-1. Se desejar limitar o tamanho do público final, marque a caixa **[!UICONTROL Limit size of generated population]**.
+1. If you wish to limit the size of the final population, check the **[!UICONTROL Limit size of generated population]** box.
 
    Especifique este número final inserindo o número máximo de recipients e selecionando o query cujo público terá prioridade.
 
