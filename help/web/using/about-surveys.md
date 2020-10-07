@@ -11,11 +11,11 @@ audience: web
 content-type: reference
 topic-tags: online-surveys
 discoiquuid: ef7d9b16-506a-409c-a578-000b88cd17a2
-index: y
-internal: n
-snippet: y
-translation-type: ht
-source-git-commit: c9c9d5f96856ce9e19571bad032d2bf04eaa60bd
+translation-type: tm+mt
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '586'
+ht-degree: 95%
 
 ---
 
@@ -81,10 +81,10 @@ Para obter mais informações sobre configuração e sequenciamento dessas etapa
 
 ## Configuração de pesquisas {#surveys-configuration}
 
-As pesquisas são armazenadas no nó **[!UICONTROL Resources > Online > Web Applications]** da árvore do Adobe Campaign. As configurações são encontradas nas seguintes pastas:
+Surveys are stored in the **[!UICONTROL Resources > Online > Web Applications]** node of the Adobe Campaign tree. As configurações são encontradas nas seguintes pastas:
 
-* **[!UICONTROL Administration > Configuration > Form rendering]**: contém os templates de renderização para a apresentação de formulários web (aplicações e pesquisas).
-* **[!UICONTROL Resources > Templates > Web application templates]**: contém os templates de formulário. Para criar um formulário, você precisa começar com um template.
+* **[!UICONTROL Administration > Configuration > Form rendering]**: contém os modelos de renderização para apresentação de formulário da Web (aplicativos e pesquisas).
+* **[!UICONTROL Resources > Templates > Web application templates]**: contém os modelos de formulário. Para criar um formulário, você precisa começar com um template.
 
 >[!NOTE]
 >
