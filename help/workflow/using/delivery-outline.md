@@ -11,11 +11,11 @@ audience: workflow
 content-type: reference
 topic-tags: targeting-activities
 discoiquuid: a2a65f97-425b-44b2-8cf4-beea850423bc
-index: y
-internal: n
-snippet: y
-translation-type: ht
-source-git-commit: 67dce820b7a90163032ee72263a9dd23b521ea69
+translation-type: tm+mt
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '263'
+ht-degree: 95%
 
 ---
 
@@ -44,11 +44,12 @@ A atividade delivery outline, disponível nos workflows da campanha, permite apr
 1. Preencha os campos disponíveis de acordo com seu delivery.
 1. Há dois casos possíveis:
 
-   * Se desejar chamar o mecanismo de oferta, marque a caixa **[!UICONTROL Restrict the number of propositions selected]**. Especifique o espaço de oferta e o número de propostas que serão apresentadas no delivery.
+   * If you would like to call the offer engine, check the **[!UICONTROL Restrict the number of propositions selected]** box. Especifique o espaço de oferta e o número de propostas que serão apresentadas no delivery.
 
       Os pesos da oferta e as regras de qualificação serão considerados pelo mecanismo de oferta.
 
    * Se não marcar a caixa, todas as ofertas no delivery outline serão apresentadas sem chamar o mecanismo de oferta.
+
    A pré-visualização leva em conta o número de ofertas especificadas no delivery. Ao executar um workflow, é o número especificado no delivery outline que é levado em conta.
 
    ![](assets/int_compo_offre_wf1.png)
