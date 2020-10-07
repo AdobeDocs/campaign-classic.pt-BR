@@ -11,11 +11,11 @@ audience: reporting
 content-type: reference
 topic-tags: creating-new-reports
 discoiquuid: 3b9c138e-8f7f-4ee1-9baa-328848d01d3a
-index: y
-internal: n
-snippet: y
-translation-type: ht
-source-git-commit: af768da6ee8cc0ca2ea1f24f297239b974c113a5
+translation-type: tm+mt
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '549'
+ht-degree: 94%
 
 ---
 
@@ -42,7 +42,7 @@ Quando um relatório contém várias páginas, é preciso repetir a operação p
 
 Acesse as opções de exportação por meio das atividades **[!UICONTROL Page]** do relatório, na guia **[!UICONTROL Advanced]**.
 
-Altere as configurações de **[!UICONTROL Paper]** e **[!UICONTROL Margins]** para atender às suas necessidades. Também é possível autorizar a exportação de uma página somente em formato PDF. Para fazer isso, desmarque a opção **[!UICONTROL Activate OpenOffice/Microsoft Excel export]**.
+Change the settings of **[!UICONTROL Paper]** and **[!UICONTROL Margins]** to suit your needs. Também é possível autorizar a exportação de uma página somente em formato PDF. To do this, uncheck the **[!UICONTROL Activate OpenOffice/Microsoft Excel export]** option.
 
 ![](assets/s_ncs_advuser_report_wizard_021.png)
 
@@ -58,7 +58,7 @@ Para relatórios do tipo **[!UICONTROL List with group]** destinados a serem exp
 
    ![](assets/export_limitations_hide_label.png)
 
-* Os relatórios não precisam usar formatação específica definida no nível da célula. É preferível usar **[!UICONTROL Form rendering]** para definir o formato das células na tabela. O **[!UICONTROL Form rendering]** é acessado em **[!UICONTROL Administration > Configuration > Form rendering]**.
+* Os relatórios não precisam usar formatação específica definida no nível da célula. É preferível usar **[!UICONTROL Form rendering]** para definir o formato das células na tabela. O **[!UICONTROL Form rendering]** pode ser acessado via **[!UICONTROL Administration > Configuration > Form rendering]**.
 * Não é recomendável inserir conteúdo HTML.
 * Se um relatório contiver vários elementos de tabela, gráfico, etc., eles serão exportados um abaixo do outro.
 * É possível forçar a quebra de linhas nas células: essa configuração será mantida no Excel. Para obter mais informações, consulte [Definição de formato da célula](../../reporting/using/creating-a-table.md#defining-cell-format).
@@ -93,7 +93,7 @@ Para saber mais sobre o serviço **nlserver**, consulte [esta seção](../../pro
 
 É possível imprimir seu relatório: para fazer isso, clique no ícone da impressora: isso abre a caixa de diálogo.
 
-Para obter um resultado melhor, edite as opções de impressão do Internet Explorer e selecione **[!UICONTROL Print background colors and images]**.
+For a better result, edit the Internet Explorer printing options and select **[!UICONTROL Print background colors and images]**.
 
 ![](assets/s_ncs_advuser_report_print_options.png)
 
