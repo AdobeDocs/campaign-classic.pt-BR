@@ -11,12 +11,9 @@ audience: campaign
 content-type: reference
 topic-tags: orchestrate-campaigns
 discoiquuid: 8d076211-10a6-4a98-b0d2-29dad154158c
-index: y
-internal: n
-snippet: y
-translation-type: ht
-source-git-commit: 2a5711c4478f8378c079fec4792ecbb95266ad4b
-workflow-type: ht
+translation-type: tm+mt
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
 source-wordcount: '2956'
 ht-degree: 100%
 
@@ -85,7 +82,7 @@ O guia [Automating with workflows](../../workflow/using/architecture.md) inclui 
 
 Este vídeo explica como criar uma campanha e um email no Adobe Campaign Classic.
 
->[!VIDEO](https://video.tv.adobe.com/v/25604?quality=12&captions=por_br)
+>[!VIDEO](https://video.tv.adobe.com/v/25604?quality=12)
 
 
 #### Criação de um workflow para construção do target {#creating-a-targeting-workflow}
