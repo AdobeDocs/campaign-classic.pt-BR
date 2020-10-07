@@ -1,7 +1,7 @@
 ---
-title: '"Tag de rastreamento da Web: definição"'
-seo-title: '"Tag de rastreamento da Web: definição"'
-description: '"Tag de rastreamento da Web: definição"'
+title: '"Tag de rastreamento Web: definição"'
+seo-title: '"Tag de rastreamento Web: definição"'
+description: '"Tag de rastreamento Web: definição"'
 seo-description: null
 page-status-flag: never-activated
 uuid: 915ddfd8-ad1b-41ac-96ed-f7fae687c09f
@@ -11,18 +11,18 @@ audience: configuration
 content-type: reference
 topic-tags: setting-up-web-tracking
 discoiquuid: b8996508-7173-4225-95e7-b51209aae1f1
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 3ad288bc983002da82b564e8ab3f4244c6324573
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '357'
+ht-degree: 5%
 
 ---
 
 
-# Tag de rastreamento da Web: definição{#web-tracking-tag-definition}
+# Tag de rastreamento Web: definição{#web-tracking-tag-definition}
 
-Uma tag de rastreamento da Web é simplesmente um URL construído com os parâmetros apropriados, enviado para o servidor de redirecionamento por meio de uma consulta HTTP.
+Um tag de rastreamento da Web é simplesmente um URL construído com os parâmetros apropriados, enviado para o servidor de redirecionamento por meio de um query HTTP.
 
 ## Formato dos dados a enviar {#format-of-the-data-to-be-sent}
 
@@ -51,7 +51,7 @@ A tabela a seguir fornece uma lista de parâmetros especiais suportados pelo ser
                               <p>Cookie da sessão</p> 
                            </td>
                            <td>
-                              <p>Identificador de entrega e identificador do destinatário.</p> 
+                              <p>Identificador do delivery e identificador do recipient.</p> 
                            </td> 
                         </tr>
                         <tr>
@@ -62,7 +62,7 @@ A tabela a seguir fornece uma lista de parâmetros especiais suportados pelo ser
                               <p>Cookie permanente</p> 
                            </td>
                            <td>
-                              <p>Identificador do destinatário (útil se o cookie da sessão estiver ausente).</p> 
+                              <p>Identificador do recipient (útil se o cookie da sessão estiver ausente).</p> 
                            </td> 
                         </tr>
                         <tr>
@@ -84,7 +84,7 @@ A tabela a seguir fornece uma lista de parâmetros especiais suportados pelo ser
                               <p>Parâmetro de URL</p> 
                            </td>
                            <td>
-                              <p>Identificador de entrega a ser usado se não houver cookie de sessão. Este valor deve ser expresso em hexadecimal.
+                              <p>Identificador de delivery a ser usado se não houver cookie de sessão. Este valor deve ser expresso em hexadecimal.
                               </p> 
                            </td> 
                         </tr>
@@ -96,7 +96,7 @@ A tabela a seguir fornece uma lista de parâmetros especiais suportados pelo ser
                               <p>Parâmetro de URL</p> 
                            </td>
                            <td>
-                              <p>Parâmetro usado para identificar o usuário da Internet. O formato desse parâmetro é "name=value", onde o nome é um campo do esquema do destinatário. Esse parâmetro tem prioridade sobre o identificador contido no cookie da sessão.
+                              <p>Parâmetro usado para identificar o usuário da Internet. O formato desse parâmetro é "name=value", onde o nome é um campo do schema do recipient. Esse parâmetro tem prioridade sobre o identificador contido no cookie da sessão.
                               </p> 
                            </td> 
                         </tr> 
@@ -113,17 +113,17 @@ A tabela a seguir fornece uma lista de parâmetros especiais suportados pelo ser
 
    **https://myserver.adobe.com/r/4567?tagid=command&amp;amount=100&amp;article=2l**
 
-* Especificação de um campo para localizar o destinatário
+* Especificação de um campo para localizar o recipient
 
    **https://myserver.adobe.com/r/2353?tagid=home&amp;rcpid=saccount%3D10**
 
-   Um destinatário cujo número de conta é 10 é enviado para a página inicial.
+   Um recipient cujo número de conta é 10 é enviado ao home page.
 
-* Uso de uma entrega padrão
+* Uso de um delivery padrão
 
    **https://myserver.adobe.com/r/2456?tagid=home&amp;jobid=e6**
 
-   Um destinatário é enviado para a página inicial. Essas informações serão armazenadas na entrega com o identificador 230 (e6 no banco de dados 16), a menos que um cookie de sessão contendo um identificador de entrega seja enviado com essa consulta.
+   Um recipient é enviado ao home page. Essas informações serão armazenadas no delivery com o identificador 230 (e6 no banco de dados 16), a menos que um cookie de sessão contendo um identificador de delivery seja enviado com esse query.
 
 >[!NOTE]
 >
