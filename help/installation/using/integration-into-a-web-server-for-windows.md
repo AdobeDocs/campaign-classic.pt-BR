@@ -11,27 +11,27 @@ audience: installation
 content-type: reference
 topic-tags: installing-campaign-in-windows-
 discoiquuid: a4f2ae0e-e631-4ab6-934e-8298e4ce6f2c
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: abddb3cdfcee9e41cab2e7e662d5bfd5d53d6f7e
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '968'
+ht-degree: 5%
 
 ---
 
 
 # Integração em um servidor Web para Windows{#integration-into-a-web-server-for-windows}
 
-O Adobe Campaign inclui o Apache Tomcat, que atua como ponto de entrada no servidor de aplicativos via HTTP (e SOAP).
+A Adobe Campaign inclui o Apache Tomcat, que atua como ponto de entrada no servidor de aplicativos via HTTP (e SOAP).
 
-Você pode usar esse servidor Tomcat integrado para atender solicitações HTTP.
+Você pode usar esse servidor Tomcat integrado para atender às solicitações HTTP.
 
 Neste caso:
 
 * a porta de escuta padrão é 8080. Para alterá-lo, consulte [Configuração do Tomcat](../../installation/using/configuring-campaign-server.md#configuring-tomcat).
 * Os consoles cliente se conectam usando um URL como [https:// `<computer>`:8080](https://machine:8080).
 
-No entanto, por motivos de segurança e administração, recomendamos usar um servidor Web dedicado como o principal ponto de entrada para o tráfego HTTP quando o computador que está executando o Adobe Campaign for exposto na Internet e você quiser abrir o acesso ao console fora da rede.
+No entanto, por motivos de segurança e administração, recomendamos usar um servidor Web dedicado como o principal ponto de entrada para o tráfego HTTP quando o computador que está executando o Adobe Campaign está exposto na Internet e você deseja abrir o acesso ao console fora da rede.
 
 Um servidor Web também permite garantir a confidencialidade dos dados com o protocolo HTTPs.
 
@@ -39,11 +39,11 @@ Da mesma forma, você deve usar um servidor Web quando quiser usar a funcionalid
 
 >[!NOTE]
 >
->Se você não usar a funcionalidade de rastreamento, poderá executar uma instalação padrão do Apache ou do IIS com um redirecionamento para o Campaign. O módulo de extensão do servidor Web de rastreamento não é necessário.
+>Se você não usar a funcionalidade de rastreamento, poderá executar uma instalação padrão do Apache ou do IIS com um redirecionamento para a Campanha. O módulo de extensão do servidor Web de rastreamento não é necessário.
 
 ## Configuração do servidor Web IIS {#configuring-the-iis-web-server}
 
-O procedimento de configuração de um servidor Web IIS é principalmente gráfico. Ela envolve usar um site da Web (já criado ou pendente de criação) para acessar os recursos do servidor do Adobe Campaign: Arquivos Java (.jsp), folhas de estilo (.css, .xsl), imagens (.png), a DLL ISAPI para redirecionamento etc.
+O procedimento de configuração de um servidor Web IIS é principalmente gráfico. Envolve o uso de um site (já criado ou pendente) para acessar os recursos do servidor Adobe Campaign: Arquivos Java (.jsp), folhas de estilo (.css, .xsl), imagens (.png), a DLL ISAPI para redirecionamento etc.
 
 As seções a seguir detalham a configuração no IIS 7. A configuração do IIS8 é basicamente a mesma.
 
@@ -70,7 +70,7 @@ Aplique as seguintes etapas de configuração:
 
    ![](assets/s_ncs_install_iis7_parameters_step1.png)
 
-1. Um script **VBS** permite que você configure automaticamente os recursos usados pelo servidor do Adobe Campaign no diretório virtual que acabamos de criar. Para iniciá-lo, clique duas vezes no arquivo **iis_neolane_setup.vbs** localizado na `[INSTALL]\tomcat-7\conf` pasta, onde `[INSTALL]` é o caminho para acessar a pasta de instalação do Adobe Campaign.
+1. Um script **VBS** permite que você configure automaticamente os recursos usados pelo servidor Adobe Campaign no diretório virtual que acabamos de criar. Para iniciá-lo, clique no duplo **is_neolane_setup.vbs** localizado na `[INSTALL]\tomcat-7\conf` pasta, onde `[INSTALL]` é o caminho para acessar a pasta de instalação do Adobe Campaign.
 
    ![](assets/s_ncs_install_iis7_parameters_step2.png)
 
@@ -80,7 +80,7 @@ Aplique as seguintes etapas de configuração:
 
    Clique **[!UICONTROL OK]** se o servidor Web for usado como um servidor de redirecionamento de rastreamento, caso contrário, clique em **[!UICONTROL Cancel]**.
 
-   Quando vários sites já estiverem configurados no servidor Web, uma página intermediária será exibida para especificar a qual site a instalação se aplica: digite o número vinculado ao site e clique em **[!UICONTROL OK]**.
+   Quando vários sites já estiverem configurados no servidor Web, uma página intermediária será exibida para especificar a qual site a instalação se aplica: insira o número vinculado ao site e clique em **[!UICONTROL OK]**.
 
    ![](assets/s_ncs_install_iis7_parameters_step3.png)
 
@@ -88,7 +88,7 @@ Aplique as seguintes etapas de configuração:
 
    ![](assets/s_ncs_install_iis7_parameters_step7.png)
 
-1. Na **[!UICONTROL Content View]** guia, verifique se o site está configurado corretamente com os recursos do Adobe Campaign:
+1. Na **[!UICONTROL Content View]** guia, verifique se o site está configurado corretamente com os recursos da Adobe Campaign:
 
    ![](assets/s_ncs_install_iis7_parameters_step6.png)
 
@@ -100,7 +100,7 @@ Em seguida, você deve definir as configurações de segurança para a DLL ISAPI
 
 Para fazer isso, siga as etapas abaixo:
 
-1. Selecione a **[!UICONTROL Features View]** guia e clique duas vezes no link **Autenticação** .
+1. Selecione a **[!UICONTROL Features View]** guia e clique com o duplo no link **Autenticação** .
 
    ![](assets/s_ncs_install_iis7_parameters_step8.png)
 
@@ -144,7 +144,7 @@ Você também pode verificar se a DLL ISAPI está carregada corretamente.
 
 Para fazer isso, siga as etapas abaixo:
 
-1. Edite os filtros ISAPI para o site do Adobe Campaign clicando no **[!UICONTROL Driver mapping]** ícone.
+1. Edite os filtros ISAPI do site da Adobe Campaign clicando no **[!UICONTROL Driver mapping]** ícone.
 1. Verifique o conteúdo do filtro ISAPI:
 
    ![](assets/s_ncs_install_iis7_parameters_step11.png)
@@ -157,12 +157,12 @@ Ao configurar o servidor Web do IIS, um limite de aproximadamente 28 MB é autom
 
 Isso pode ter um impacto no Adobe Campaign, principalmente se você deseja carregar arquivos maiores que esse limite.
 
-Por exemplo, se você usar uma atividade de carregamento de **dados (arquivo)** em um fluxo de trabalho para importar um arquivo de 50 MB, um erro impedirá a execução correta do fluxo de trabalho.
+Por exemplo, se você usar uma atividade **Data loading (file)** type em um fluxo de trabalho para importar um arquivo de 50 MB, um erro impedirá a execução correta do fluxo de trabalho.
 
 Nesse caso, é necessário aumentar esse limite:
 
 1. Abra o IIS pelo **[!UICONTROL Start > (Control panel) > Administration tools]** menu.
-1. No painel **Conexões** , selecione o site criado para sua instalação da Adobe e clique duas vezes em Filtragem **de** solicitação no painel principal.
+1. No painel **Conexões** , selecione o site criado para a instalação do Adobe e, em seguida, clique com o duplo do mouse em **Solicitar filtragem** no painel principal.
 1. No painel **Ações** , selecione **Editar configurações** de recurso para poder editar o valor no campo Tamanho **máximo autorizado do conteúdo (bytes)** .
 
    Por exemplo, para autorizar o carregamento de arquivos de 50 MB, é necessário especificar um valor superior a &quot;52428800&quot; bytes.
@@ -178,7 +178,7 @@ Se você usar um servidor IIS versão 6.1, talvez seja difícil ler as mensagens
 Para corrigir isso e exibir o erro corretamente, aplique a seguinte configuração:
 
 1. Abra o IIS pelo **[!UICONTROL Start > Control Panel > Administrative tools]** menu.
-1. No painel **Conexões** , selecione o site criado para a instalação do Adobe Campaign e clique duas vezes no Editor **** de configuração no painel principal.
+1. No painel **Conexões** , selecione o site criado para sua instalação do Adobe Campaign e clique com o duplo no editor **** de Configuração no painel principal.
 1. Na lista suspensa **Seção** , selecione **system.webServer** > **httpErrors**.
 1. Selecione o valor **PassThrough** na linha **existenteResponse** .
 
