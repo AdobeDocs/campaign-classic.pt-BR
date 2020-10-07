@@ -9,11 +9,8 @@ audience: delivery
 content-type: reference
 topic-tags: deliverability-management
 discoiquuid: 6a394eeb-fbe1-4712-bb13-db5d7965fb73
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 56fed9fff445892366d3e0f1367029882077ae20
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
 workflow-type: tm+mt
 source-wordcount: '1355'
 ht-degree: 85%
@@ -65,22 +62,23 @@ Se o problema persistir, entre em contato com os serviços comerciais ou de entr
 
    Para obter mais informações, consulte [Entendendo o gerenciamento da quarentena](../../delivery/using/understanding-quarantine-management.md).
 
-## Remoção da lista de blocos {#remove-from-block-list}
+## Remoção da lista de bloqueios {#remove-from-block-list}
 
-* **Um dos meus recipient foi adicionado à lista de bloqueios por engano. How do I remove them from the block list so that I can start sending them messages again?**
+* **Um dos meus recipient foi adicionado à lista de bloqueios por engano. Como removê-los da lista de bloqueios para que eu possa start de enviar mensagens a eles novamente?**
 
    * Vá para **[!UICONTROL Administration > Campaign Management > Non deliverables Management > Non deliverables and addresses]**.
    * Nos detalhes do registro correspondente, defina o valor do campo **[!UICONTROL Status]** como **[!UICONTROL Valid]**.
    * Salve o registro.
 
-* **How can I find out whether one of my IPs is on a block list? How do I remove my IP(s) from a block list?**
+* **Como posso descobrir se um dos meus IPs está em uma lista de bloqueios? Como remover meus IPs de uma lista de bloqueios?**
 
-   To check whether your IP address is on a block list, you can use various web sites to verify it, such as:
-   * [MX Toolbox](https://mxtoolbox.com/)
-   * [What is my IP address](https://whatismyipaddress.com)
+   Para verificar se seu endereço IP está em uma lista de bloqueios, você pode usar vários sites para verificá-lo, como:
+   * [Caixa de ferramentas MX](https://mxtoolbox.com/)
+   * [Qual é o meu endereço IP](https://whatismyipaddress.com)
+
    Geralmente, o resultado da verificação de endereço IP retornará uma lista que contém detalhes da lista de bloqueios e também o nome do site que bloqueou o endereço IP.
 
-   Ao clicar no link correspondente, é possível acessar os detalhes do site. Em seguida, você pode solicitar que seu site seja excluído do site que adicionou o endereço IP à lista de blocos.
+   Ao clicar no link correspondente, é possível acessar os detalhes do site. Em seguida, você pode solicitar que seu site seja excluído do site que adicionou o endereço IP à sua lista de bloqueios.
 
    >[!NOTE]
    >
