@@ -11,11 +11,11 @@ audience: integrations
 content-type: reference
 topic-tags: acs-connector
 discoiquuid: df68ab11-7a8b-4e89-8cc4-8764e8a859b2
-index: y
-internal: n
-snippet: y
-translation-type: ht
-source-git-commit: 0745b9c9d72538b8573ad18ff4054ecf788905f2
+translation-type: tm+mt
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '793'
+ht-degree: 89%
 
 ---
 
@@ -32,7 +32,7 @@ Para isso, é necessário:
 
 * Os recipients armazenados no banco de dados do Campaign v7 e sincronizados com o Campaign Standard. Consulte a seção [Sincronia de perfis](../../integrations/using/synchronizing-profiles.md).
 * um serviço e uma aplicação Web criado e publicado no Campaign v7.
-* o aplicativo web deve conter uma atividade **[!UICONTROL Pre-loading]** usando o método de identificação **[!UICONTROL Adobe Campaign encryption]**.
+* the web application must contain a **[!UICONTROL Pre-loading]** activity using the **[!UICONTROL Adobe Campaign encryption]** identification method.
 
 ## Criação do serviço e aplicação Web {#creating-the-web-application-and-service}
 
@@ -41,25 +41,25 @@ No Campaign v7, você pode criar aplicações Web que permitem aos recipients as
 No Campaign v7, os seguintes objetos foram criados:
 
 * um serviço de boletim informativo
-* um aplicativo web contendo um atividade **[!UICONTROL Pre-loading]**, **[!UICONTROL Page]** e **[!UICONTROL Storage]**.
+* a web application containing a **[!UICONTROL Pre-loading]**, a **[!UICONTROL Page]** and a **[!UICONTROL Storage]** activity.
 
-1. Vá para **[!UICONTROL Resources > Online > Web applications]** e selecione um aplicativo web existente.
+1. Go to **[!UICONTROL Resources > Online > Web applications]** and select an existing web application.
 
    ![](assets/acs_connect_lp_2.png)
 
-1. Editar a atividade **[!UICONTROL Preloading]**. A caixa **[!UICONTROL Auto-load data referenced in the form]** está marcada e o método de identificação **[!UICONTROL Adobe Campaign encryption]** está selecionado. Isso permitirá que a aplicação Web pré-carregue os campos do formulário com os dados armazenados no banco de dados do Adobe Campaign. Consulte [este documento](../../web/using/publishing-a-web-form.md#pre-loading-the-form-data).
+1. Edit the **[!UICONTROL Preloading]** activity. The **[!UICONTROL Auto-load data referenced in the form]** box is checked and the **[!UICONTROL Adobe Campaign encryption]** identification method is selected. Isso permitirá que a aplicação Web pré-carregue os campos do formulário com os dados armazenados no banco de dados do Adobe Campaign. Consulte [este documento](../../web/using/publishing-a-web-form.md#pre-loading-the-form-data).
 
    ![](assets/acs_connect_lp_4.png)
 
-1. Editar a **[!UICONTROL página]**. Três campos (Name, Email and Phone) foram incluídos, bem como uma caixa de seleção para convidar o recipient para assinar um boletim informativo (serviço de **[!UICONTROL Newsletter]**).
+1. Edite o **[!UICONTROL Page]**. Três campos (Name, Email and Phone) foram incluídos, bem como uma caixa de seleção para convidar o recipient para assinar um boletim informativo (serviço de **[!UICONTROL Newsletter]**).
 
    ![](assets/acs_connect_lp_3.png)
 
-1. Vá para **[!UICONTROL Profiles and Target > Services and subscriptions]** e abra o serviço **[!UICONTROL Newsletter]**. Esse é o serviço que será atualizado na comunicação do Campaign Standard. Você pode ver que nenhum recipient assinou esse serviço ainda.
+1. Vá até **[!UICONTROL Profiles and Target > Services and subscriptions]** e abra o **[!UICONTROL Newsletter]** serviço. Esse é o serviço que será atualizado na comunicação do Campaign Standard. Você pode ver que nenhum recipient assinou esse serviço ainda.
 
    ![](assets/acs_connect_lp_5.png)
 
-1. Vá para **[!UICONTROL Profiles and Targets > Recipient]** e selecione um recipient. Você pode ver que ele não assinou o serviço ainda.
+1. Go to **[!UICONTROL Profiles and Targets > Recipient]** and select a recipient. Você pode ver que ele não assinou o serviço ainda.
 
    ![](assets/acs_connect_lp_6.png)
 
@@ -71,7 +71,7 @@ Para replicar os dados necessários entre o Campaign v7 e o Campaign Standard, v
 
 Para verificar se os dados foram replicados corretamente, siga essas etapas no Campaign Standard:
 
-1. Na tela inicial, clique em **[!UICONTROL Customer profiles]**.
+1. From the home screen, click on **[!UICONTROL Customer profiles]**.
 
    ![](assets/acs_connect_lp_7.png)
 
@@ -94,7 +94,7 @@ Nessa parte, veremos como incluir um link, em um email do Campaign Standard, na 
 As etapas para criar, projetar e enviar o email são iguais de um email clássico. Consulte a documentação do [Adobe Campaign Standard](https://helpx.adobe.com/br/support/campaign/standard.html) .
 
 1. Crie um novo email e escolha um ou mais perfis replicados como o público.
-1. Editar seu conteúdo e inserir um **[!UICONTROL Link to a landing page]**.
+1. Edit your content and insert a **[!UICONTROL Link to a landing page]**.
 
    ![](assets/acs_connect_lp_12.png)
 
@@ -115,11 +115,11 @@ As etapas para criar, projetar e enviar o email são iguais de um email clássic
 
 Quando o recipient atualiza seus dados pela aplicação Web, o Adobe Campaign v7 recupera de forma síncrona as informações atualizadas. Ele é replicado do Campaign v7 para o Campaign Standard.
 
-1. No Campaign v7, vá para **[!UICONTROL Profiles and Target > Services and subscriptions]** e abra o serviço **[!UICONTROL Newsletter]**. Você pode ver que o recipient agora aparece na lista de assinantes.
+1. In Campaign v7, go to **[!UICONTROL Profiles and Target > Services and subscriptions]** and open the **[!UICONTROL Newsletter]** service. Você pode ver que o recipient agora aparece na lista de assinantes.
 
    ![](assets/acs_connect_lp_16.png)
 
-1. Vá para **[!UICONTROL Profiles and Targets > Recipient]** e selecione o recipient. Você pode ver que o número de telefone agora está registrado.
+1. Go to **[!UICONTROL Profiles and Targets > Recipient]** and select the recipient. Você pode ver que o número de telefone agora está registrado.
 
    ![](assets/acs_connect_lp_17.png)
 
@@ -136,7 +136,7 @@ Quando o recipient atualiza seus dados pela aplicação Web, o Adobe Campaign v7
 
    ![](assets/acs_connect_lp_20.png)
 
-1. Clique na guia **[!UICONTROL Subscriptions]**. O serviço de boletim informativo agora aparece.
+1. Click on the **[!UICONTROL Subscriptions]** tab. O serviço de boletim informativo agora aparece.
 
    ![](assets/acs_connect_lp_21.png)
 
