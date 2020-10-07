@@ -11,11 +11,11 @@ audience: reporting
 content-type: reference
 topic-tags: creating-new-reports
 discoiquuid: 594a333d-1fc3-49a0-b3f6-7ea8fa4321e9
-index: y
-internal: n
-snippet: y
-translation-type: ht
-source-git-commit: 0c41cf2f35495a1514642e47f0b7146d8dd50946
+translation-type: tm+mt
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '507'
+ht-degree: 86%
 
 ---
 
@@ -50,11 +50,11 @@ O exemplo a seguir permite coletar o número de recipients para cada país, entr
 
 Para criar um relatório, é possível usar dados de uma lista de dados importados.
 
-Para fazer isso, selecione a opção **[!UICONTROL Use an imported list]** na caixa de query e selecione a lista relacionada.
+To do this, select the **[!UICONTROL Use an imported list]** option in the query box and select the concerned list.
 
 ![](assets/reporting_query_from_list.png)
 
-Clique no link **[!UICONTROL Edit query...]** para definir os dados para coletar entre os elementos desta lista para criar o relatório.
+Click the **[!UICONTROL Edit query...]** link to define the data to collect among the elements in this list for building the report.
 
 ## Uso de um cubo {#using-a-cube}
 
@@ -64,7 +64,7 @@ Clique no link **[!UICONTROL Edit query...]** para definir os dados para coletar
 
 Os cubos permitem estender as capacidades de exploração e análise do banco de dados, facilitando a configuração de relatórios e tabelas para usuários finais: basta selecionar um Cubo existente e totalmente configurado e usar seus cálculos, medidas e estatísticas. Para obter mais informações sobre criação de cubos, consulte [esta seção](../../reporting/using/about-cubes.md).
 
-Clique no link **[!UICONTROL Edit query...]** e selecione os indicadores que deseja exibir ou usar no relatório.
+Click the **[!UICONTROL Edit query...]** link and select the indicators that you want to display or use in your report.
 
 ![](assets/reporting_query_from_cube_edit_query.png)
 
@@ -76,7 +76,7 @@ Para evitar a execução de queries no banco de dados inteiro, os dados precisam
 
 É possível selecionar a opção **[!UICONTROL Filter automatically with the context]** para tornar o relatório acessível por meio de um nó específico da árvore, como uma lista, um recipient ou um delivery.
 
-A opção **[!UICONTROL Filter with the folder]** permite especificar uma pasta e levar em conta somente seu conteúdo. Isso permite filtrar os dados do relatório para mostrar apenas os dados de uma das pastas na árvore, conforme mostrado abaixo:
+The **[!UICONTROL Filter with the folder]** option lets you specify a folder and take into account only its contents. Isso permite filtrar os dados do relatório para mostrar apenas os dados de uma das pastas na árvore, conforme mostrado abaixo:
 
 ![](assets/reporting_control_folder.png)
 
