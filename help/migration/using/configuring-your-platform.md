@@ -11,26 +11,26 @@ audience: migration
 content-type: reference
 topic-tags: migration-procedure
 discoiquuid: 4d2e765b-750b-457f-ad55-8bd6faaa86af
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 40391fbea53757decb48fd937f5e74e8ba6fb207
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '943'
+ht-degree: 2%
 
 ---
 
 
 # Configuração da plataforma{#configuring-your-platform}
 
-Determinadas alterações importantes no Adobe Campaign v7 exigem uma configuração para garantir sua operação efetiva. Esses parâmetros podem ser necessários antes ou depois da migração. As alterações em causa e o respectivo modo de configuração são apresentados nesta seção.
+Determinadas mudanças importantes no Adobe Campaign v7 exigem uma configuração para garantir sua operação efetiva. Esses parâmetros podem ser necessários antes ou depois da migração. As alterações em causa e o respectivo modo de configuração são apresentados nesta seção.
 
-Durante a migração, a tabela **NmsRecipient** é recriada a partir da definição do esquema. Qualquer alteração feita na estrutura SQL desta tabela fora do Adobe Campaign será perdida.
+Durante a migração, a tabela **NmsRecipient** é recriada a partir da definição de schemas. Qualquer alteração feita na estrutura SQL desta tabela fora do Adobe Campaign será perdida.
 
 Exemplo de elementos a serem verificados:
 
-* Se você tiver adicionado uma coluna (ou um índice) à tabela **NmsRecipient** , mas não a tiver detalhado no esquema, isso não será salvo.
+* Se você tiver adicionado uma coluna (ou um índice) à tabela **NmsRecipient** , mas não a tiver detalhado no schema, isso não será salvo.
 * O atributo **tablespace** recupera seus valores por padrão, em outras palavras, os definidos no assistente de implantação.
-* Se você tiver adicionado uma exibição de referência à tabela NmsRecipient, deverá excluí-la antes de migrar.
+* Se você tiver adicionado uma visualização de referência à tabela NmsRecipient, deverá excluí-la antes de migrar.
 
 Este aviso também diz respeito aos usuários Oracle: se você tiver adicionado a opção **usetimestamptz:1** durante uma pós-atualização (consulte Fusos [](../../migration/using/general-configurations.md#time-zones)horários), todas as tabelas que contêm pelo menos um campo **date+time** serão recriadas.
 
@@ -48,7 +48,7 @@ Ao migrar para o Adobe Campaign v7, os seguintes elementos devem ser configurado
 
 * Zonas de segurança
 
-   Por motivos de segurança, a plataforma do Adobe Campaign não está mais acessível por padrão: você deve configurar as zonas de segurança, que exigem a coleta dos endereços IP do usuário antes da migração.
+   Por motivos de segurança, a plataforma Adobe Campaign não está mais acessível por padrão: você deve configurar as zonas de segurança, que exigem a coleta dos endereços IP do usuário antes da migração.
 
    For more information, refer to the [Security](../../migration/using/general-configurations.md#security) section.
 
@@ -68,19 +68,19 @@ Ao migrar para o Adobe Campaign v7, os seguintes elementos devem ser configurado
 
 * Interação
 
-   Se você usar a **Interação**, deverá excluir todas as referências de esquema 6.02 que não existem mais na v7. For more information, refer to the [Interaction](../../migration/using/general-configurations.md#interaction) section.
+   Se você usar a **Interação**, deverá excluir todas as referências de schema 6.02 que não existem mais na v7. For more information, refer to the [Interaction](../../migration/using/general-configurations.md#interaction) section.
 
 ## Após a migração {#after-the-migration}
 
 Após executar o **pós-upgrade**, os seguintes elementos devem ser levados em conta e as configurações correspondentes executadas.
 
-* Páginas de espelhamento
+* Mirrores page
 
-   O bloco de personalização da página espelhada foi alterado com a v6.x. Esta nova versão melhora a segurança ao acessar essas páginas.
+   O bloco de personalização do mirror page foi alterado com v6.x. Esta nova versão melhora a segurança ao acessar essas páginas.
 
-   Se você usou o bloco de personalização v5 em suas mensagens, a exibição da página espelhada falhará. A Adobe recomenda usar o novo bloco de personalização ao inserir a página espelhada em suas mensagens.
+   Se você usou o bloco de personalização v5 em suas mensagens, a exibição do mirror page falhará. O Adobe recomenda usar o novo bloco de personalização ao inserir o mirror page em suas mensagens.
 
-   No entanto, como uma solução temporária (e como as páginas espelhadas ainda estão ativas), você pode voltar ao bloco de personalização antigo para evitar esse problema alterando a opção **[!UICONTROL XtkAcceptOldPasswords]** e definindo-a como **[!UICONTROL 1]**. Isso não afetará o uso do novo bloco de personalização v6.x.
+   No entanto, como uma solução temporária (e como os mirrores page ainda estão ativos), você pode voltar ao bloco de personalização antigo para evitar esse problema alterando a opção **[!UICONTROL XtkAcceptOldPasswords]** e definindo-a como **[!UICONTROL 1]**. Isso não afetará o uso do novo bloco de personalização v6.x.
 
 * Sintaxe
 
@@ -88,7 +88,7 @@ Após executar o **pós-upgrade**, os seguintes elementos devem ser levados em c
 
 * Conflitos
 
-   A migração é realizada por meio de uma pós-atualização e os conflitos podem aparecer em relatórios, formulários ou aplicativos da Web. Esses conflitos podem ser resolvidos no console.
+   A migração é realizada por meio de uma pós-atualização e os conflitos podem aparecer em relatórios, formulários ou aplicativos da Web. Esses conflitos podem ser resolvidos a partir do console.
 
    Consulte a seção [Conflitos](../../migration/using/general-configurations.md#conflicts) .
 
@@ -104,33 +104,33 @@ Após executar o **pós-upgrade**, os seguintes elementos devem ser levados em c
 
 * Aplicações web
 
-   Após a pós-atualização, se você tiver problemas de conexão com seus aplicativos Web identificados, ative as opções **allowUserPassword** e **sessionTokenOnly** no arquivo **serverConf.xml** . Lembre-se de desativar essas duas opções. Para obter mais informações, consulte a seção Aplicativos [da Web](../../migration/using/general-configurations.md#identified-web-applications) identificados.
+   Após a pós-atualização, se tiver problemas de conexão com as Aplicações web identificadas, ative as opções **allowUserPassword** e **sessionTokenOnly** no arquivo **serverConf.xml** . Lembre-se de desativar essas duas opções. Para obter mais informações, consulte a seção Aplicativos [da Web](../../migration/using/general-configurations.md#identified-web-applications) identificados.
 
-   Dependendo do tipo de aplicativos da Web e de suas configurações, é necessário realizar manipulações adicionais para garantir que funcionem corretamente.
+   Dependendo do tipo de Aplicações web e de suas configurações, é necessário realizar manipulações adicionais para garantir que elas funcionem corretamente.
 
-   Consulte a seção Aplicativos [da](../../migration/using/general-configurations.md#web-applications) Web.
+   Consulte a seção [Aplicação web](../../migration/using/general-configurations.md#web-applications) .
 
-   Ao migrar de uma plataforma v5.11, configurações adicionais devem ser realizadas: para obter mais informações, consulte a seção Aplicativos [da](../../migration/using/specific-configurations-in-v5-11.md#web-applications) Web.
+   Ao migrar de uma plataforma v5.11, configurações adicionais devem ser realizadas: para obter mais informações, consulte a seção [Aplicação web](../../migration/using/specific-configurations-in-v5-11.md#web-applications) .
 
 * Zonas de segurança.
 
-   Antes de iniciar o servidor, configure as zonas de segurança. Para obter mais informações, consulte [esta seção](../../installation/using/configuring-campaign-server.md#defining-security-zones) e a seção [Segurança](../../migration/using/general-configurations.md#security) .
+   Antes de iniciar o servidor, você deve configurar as zonas de segurança. Para obter mais informações, consulte [esta seção](../../installation/using/configuring-campaign-server.md#defining-security-zones) e a seção [Segurança](../../migration/using/general-configurations.md#security) .
 
-* Esquemas
+* Schemas
 
-   No Red Hat, você pode encontrar erros ao editar certos esquemas. For more on this, refer to the [Red-Hat](../../migration/using/general-configurations.md#red-hat) section.
+   No Red Hat, você pode encontrar erros ao editar determinados schemas. For more on this, refer to the [Red-Hat](../../migration/using/general-configurations.md#red-hat) section.
 
 * Fluxos de trabalho
 
-   Ao migrar de uma plataforma v5.11, você deve controlar o diretório de tempo de execução dos fluxos de trabalho. For more on this, refer to the [Workflows](../../migration/using/specific-configurations-in-v5-11.md#workflows) section.
+   Ao migrar de uma plataforma v5.11, você deve controlar o diretório de tempo de execução de workflows. For more on this, refer to the [Workflows](../../migration/using/specific-configurations-in-v5-11.md#workflows) section.
 
 * Rastreamento
 
    Ao migrar de uma plataforma v5.11, você deve configurar o modo de rastreamento. For more on this, refer to the [Tracking](../../migration/using/specific-configurations-in-v5-11.md#tracking) section.
 
-* Home page
+* Página inicial
 
-   Ao migrar de uma plataforma v6.02, você pode definir parâmetros adicionais para manter sua antiga página inicial da v6.02. Para obter mais informações, consulte a seção [Amizade do usuário: Página inicial e seção de navegação](../../migration/using/specific-configurations-in-v6-02.md#user-friendliness--home-page-and-navigation) .
+   Ao migrar de uma plataforma v6.02, você pode definir parâmetros adicionais para manter seu home page antigo da v6.02. Para obter mais informações, consulte a seção [Amizade do usuário: Home page e seção de navegação](../../migration/using/specific-configurations-in-v6-02.md#user-friendliness--home-page-and-navigation) .
 
 * Interação
 
