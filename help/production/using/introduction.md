@@ -11,11 +11,11 @@ audience: production
 content-type: reference
 topic-tags: updating-adobe-campaign
 discoiquuid: 772992bf-588f-42bd-a72a-986a88815264
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 20f835c357d016643ea1f3209ee4dfb6d3239f90
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '179'
+ht-degree: 2%
 
 ---
 
@@ -26,8 +26,8 @@ Esta seção apresenta o procedimento a ser aplicado para atualizar o Adobe Camp
 
 >[!NOTE]
 >
->Para instâncias hospedadas, é necessário coordenar com o administrador da Adobe.\
->Para instâncias locais, você pode obter assistência dos consultores da Adobe.
+>Para instâncias hospedadas, é necessário coordenar com o administrador do Adobe.\
+>Para instâncias locais, você pode obter assistência dos consultores Adobe.
 
 A atualização deve ser aplicada a todos os servidores nos quais o Adobe Campaign está instalado.
 
@@ -35,10 +35,10 @@ A atualização deve ser aplicada a todos os servidores nos quais o Adobe Campai
 1. Migre os servidores do Power Booster/Cluster.
 1. Migre o servidor de marketing.
 
-O Adobe Campaign se baseia em vários processos executados no lado do servidor que você precisará manipular durante as atualizações, em particular:
+A Adobe Campaign se baseia em vários processos executados no lado do servidor que serão necessários para manipular durante as atualizações, em particular:
 
 * Servidor de aplicativos (nlserver web)
-* Servidor de entrega (nlserver mta)
+* Servidor de delivery (nlserver mta)
 * Servidor de redirecionamento (webmdl)
 
 >[!NOTE]
@@ -50,5 +50,5 @@ Se a nova versão envolver uma alteração na estrutura do banco de dados, recom
 
 1. Servidor de aplicativos (nlserver web),
 1. Servidor de redirecionamento (webmdl),
-1. Servidor de entrega (nlserver mta).
+1. Servidor do delivery (nlserver mta).
 
