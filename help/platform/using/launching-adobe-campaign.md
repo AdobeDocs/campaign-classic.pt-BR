@@ -14,11 +14,11 @@ discoiquuid: 6652b081-66b6-47a8-97e5-383e3251647e
 index: y
 internal: n
 snippet: y
-translation-type: ht
-source-git-commit: 84f06afb36aa6a9fa13db1fda7034389b762eb99
-workflow-type: ht
-source-wordcount: '386'
-ht-degree: 100%
+translation-type: tm+mt
+source-git-commit: 28f56534a57e675e42a417acfbf9b1a3053250a8
+workflow-type: tm+mt
+source-wordcount: '485'
+ht-degree: 82%
 
 ---
 
@@ -93,11 +93,23 @@ Para desconectar-se do Adobe Campaign, use o primeiro ícone na barra de ícones
 
 O menu **[!UICONTROL Help > About...]** permite acessar as seguintes informações:
 
-* número da **versão**,
-* número da **compilação**,
-* um link para entrar em contato com o Suporte do Adobe Campaign.
+* número da **versão**
+* número da **compilação**
+* um link para entrar em contato com o Atendimento ao cliente do Adobe
+* links para Política de privacidade do Adobe, Termos de uso e Política de cookies
 
-   >[!CAUTION]
-   >
-   >Sempre que você entrar em contato com a equipe de suporte da Adobe, precisará fornecer o número da versão e o número da compilação do seu console de cliente do Campaign e do servidor de aplicativos.
+![](assets/about-acc.png)
 
+Sempre que você entrar em contato com a equipe de suporte da Adobe, precisará fornecer o número da versão e o número da compilação do seu console de cliente do Campaign e do servidor de aplicativos.
+
+Se estiver executando na versão [Gold Standard da](../../rn/using/gold-standard.md)Campanha, você também precisará compartilhar os caracteres SHA/1 exibidos na **[!UICONTROL About]** caixa. Por exemplo, para a versão **Gold** Standard 10, o número da compilação mostrará a **compilação 9032@efd8a94**, como mostrado abaixo:
+
+![](assets/about-acc-gs.png)
+
+Learn more about Gold Standard [in this article](https://helpx.adobe.com/br/campaign/kb/gold-standard.html).
+
+**Tópicos relacionados**:
+
+* [Opções de suporte à campanha](https://helpx.adobe.com/br/campaign/kb/ac-support.html#acc-support)
+* [Distribuição de software](https://docs.adobe.com/content/help/pt-BR/experience-cloud/software-distribution/home.html)
+* [Sessões de suporte e especialista do Experience Cloud](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html)
