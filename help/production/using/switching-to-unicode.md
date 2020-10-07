@@ -11,11 +11,11 @@ audience: production
 content-type: reference
 topic-tags: updating-adobe-campaign
 discoiquuid: 0f5399a8-860d-4a1b-86a9-9011b973346b
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 579329d9194115065dff2c192deb0376c75e67bd
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '122'
+ht-degree: 9%
 
 ---
 
@@ -103,5 +103,5 @@ Para uma instância **prod** existente em Linux/PostgreSQL, as etapas para alter
 1. Confirme o switch. Para fazer isso, conecte-se pelo console do Adobe Campaign e:
 
    * verificar se os dados são apresentados corretamente, em especial os caracteres acentuados:
-   * inicie uma entrega e verifique se a recuperação de rastreamento funciona.
+   * inicie um delivery e verifique se a recuperação de rastreamento funciona.
 
