@@ -11,24 +11,24 @@ audience: web
 content-type: reference
 topic-tags: web-forms
 discoiquuid: d9369ba1-0397-40fe-bbaf-24252564d93c
-index: y
-internal: n
-snippet: y
-translation-type: ht
-source-git-commit: c9c9d5f96856ce9e19571bad032d2bf04eaa60bd
+translation-type: tm+mt
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '216'
+ht-degree: 89%
 
 ---
 
 
 # Utilização de um template de formulário web{#using-a-web-form-template}
 
-Os templates são configurações reutilizáveis que permitem criar novos formulários. Por padrão, os modelos de formulário são armazenados com os modelos de aplicações web no nó **[!UICONTROL Resources > Templates > Web application templates]**.
+Os templates são configurações reutilizáveis que permitem criar novos formulários. By default, form templates are stored with Web application templates in the **[!UICONTROL Resources > Templates > Web application templates]** node.
 
 Aqui é possível criar novos modelos ou alterar um formulário existente em um modelo.
 
 ## Conversão de um formulário existente em um modelo {#convert-an-existing-form-into-a-template}
 
-Um formulário pode ser alterado para um template e sua configuração pode ser reutilizada. Para fazer isso, escolha o formulário, clique com o botão direito do mouse e selecione **[!UICONTROL Actions > Save as template...]**.
+Um formulário pode ser alterado para um template e sua configuração pode ser reutilizada. To do this, select the form, right-click and select **[!UICONTROL Actions > Save as template...]**.
 
 ![](assets/s_ncs_admin_survey_saveastemplate.png)
 
