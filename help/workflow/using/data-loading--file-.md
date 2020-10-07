@@ -9,11 +9,8 @@ audience: workflow
 content-type: reference
 topic-tags: action-activities
 discoiquuid: dcb5b8e8-be38-4d89-908d-f57c2413a9bc
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 9c9554b83726da7a7dbc747878d7d0758e71a4d7
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
 workflow-type: tm+mt
 source-wordcount: '1051'
 ht-degree: 98%
@@ -77,7 +74,7 @@ A formatação de coluna permite definir o processamento de valor de cada coluna
 * **[!UICONTROL White space management]**: especifica se determinados espaços precisam ser ignorados em uma cadeia de caracteres. O valor **[!UICONTROL Ignore spaces]** permite somente espaços no início e no final de uma cadeia de caracteres a ser ignorada.
 * **[!UICONTROL Error processings]**: define o comportamento se um erro for encontrado.
 
-   * **[!UICONTROL Ignore the value]**: o valor é ignorado. Um aviso é gerado no log de execução do workflow.
+   * **[!UICONTROL Ignore the value]**: o valor é ignorado. Um aviso é gerado no log de execução do fluxo de trabalho.
    * **[!UICONTROL Reject line]**: a linha inteira não é processada.
    * **[!UICONTROL Use a default value in case of error]**: substitui o valor que causa o erro por um valor padrão, definido no campo **[!UICONTROL Default value]**.
    * **[!UICONTROL Reject the line when there is no remapping value]**: a linha inteira só será processada se um tiver sido definido para o valor errado (consulte a opção **[!UICONTROL Mapping]** Mapping abaixo).
@@ -118,6 +115,7 @@ O exemplo a seguir permite coletar um arquivo no servidor todos os dias, carrega
 
    * a primeira coluna contém um código que coincide com o evento: compra (cerca de 3.000 euros), nenhuma compra ou reembolso em uma ou mais compras.
    * as quatro colunas seguintes contêm o nome, sobrenome, email e número da conta do cliente.
+
    A configuração de formato do arquivo a ser carregado coincide com aquela definida durante uma importação de dados no Adobe Campaign. Para obter mais informações, consulte esta [seção](../../platform/using/importing-data.md#step-2---source-file-selection).
 
 1. Na atividade de Split, especifique os subconjuntos a serem criados, de acordo com o valor da coluna **Evento**.
