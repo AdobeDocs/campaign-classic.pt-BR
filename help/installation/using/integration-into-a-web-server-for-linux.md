@@ -11,18 +11,18 @@ audience: installation
 content-type: reference
 topic-tags: installing-campaign-in-linux-
 discoiquuid: 752ba848-aee9-4bb0-b2c5-490f3124f74e
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 4fbc576ba65c44d91ac87ea2967fac3b0a88a040
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '562'
+ht-degree: 8%
 
 ---
 
 
 # Integração em um servidor Web para Linux{#integration-into-a-web-server-for-linux}
 
-O Adobe Campaign inclui o Apache Tomcat, que atua como ponto de entrada no servidor de aplicativos via HTTP (e SOAP).
+A Adobe Campaign inclui o Apache Tomcat, que atua como ponto de entrada no servidor de aplicativos via HTTP (e SOAP).
 
 Você pode usar esse servidor Tomcat integrado para atender às solicitações HTTP.
 
@@ -83,7 +83,7 @@ Siga as etapas abaixo:
     a2enmod nlsrv
    ```
 
-   Se você estiver usando o módulo **mod_rewrite** para páginas Adobe Campaign, será necessário renomear os arquivos **nlsrv.load** e **nlsrv.conf** para **zz-nlsrv.load** e **zz-nlsrv.conf**. Para ativar o módulo, execute o seguinte comando:
+   Se você estiver usando o módulo **mod_rewrite** para páginas do Adobe Campaign, será necessário renomear os arquivos **nlsrv.load** e **nlsrv.conf** para **zz-nlsrv.load** e **zz-nlsrv.conf**. Para ativar o módulo, execute o seguinte comando:
 
    ```
    a2enmod zz-nlsrv
@@ -99,7 +99,7 @@ Siga as etapas abaixo:
 
    Salve as alterações.
 
-1. Em seguida, adicione usuários Adobe Campaign ao grupo de usuários do Apache e vice-versa usando o seguinte tipo de comando:
+1. Em seguida, adicione usuários do Adobe Campaign ao grupo de usuários do Apache e vice-versa usando o seguinte tipo de comando:
 
    ```
    usermod neolane -G www-data
@@ -157,7 +157,7 @@ Siga as etapas abaixo:
    ForceLanguagePriority
    ```
 
-1. Crie um arquivo de configuração específico para Adobe Campaign na `/etc/httpd/conf.d/` pasta. Por exemplo `CampaignApache.conf`
+1. Crie um arquivo de configuração específico da Adobe Campaign na `/etc/httpd/conf.d/` pasta. Por exemplo `CampaignApache.conf`
 
 1. Para **RHEL7**, adicione as seguintes instruções no arquivo:
 
