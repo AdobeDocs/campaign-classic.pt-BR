@@ -1,7 +1,7 @@
 ---
-title: Criação de uma instância e logon
-seo-title: Criação de uma instância e logon
-description: Criação de uma instância e logon
+title: Criação de uma instância e fazer logon
+seo-title: Criação de uma instância e fazer logon
+description: Criação de uma instância e fazer logon
 seo-description: null
 page-status-flag: never-activated
 uuid: cb1620b3-f6e8-41dc-9142-ac0da65b6f8d
@@ -11,18 +11,18 @@ audience: installation
 content-type: reference
 topic-tags: initial-configuration
 discoiquuid: c7395094-c635-45ab-8455-a050f7d16b64
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: be590c6d993eecacf51736e3c3e415addae5c6bd
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '595'
+ht-degree: 4%
 
 ---
 
 
-# Criação de uma instância e logon{#creating-an-instance-and-logging-on}
+# Criação de uma instância e fazer logon{#creating-an-instance-and-logging-on}
 
-Para criar uma nova instância e o banco de dados do Adobe Campaign, aplique o seguinte processo:
+Para criar uma nova instância e um banco de dados Adobe Campaign, aplique o seguinte processo:
 
 1. Crie a conexão.
 1. Faça logon para criar a instância relacionada.
@@ -40,33 +40,33 @@ Para criar uma nova instância, siga as etapas abaixo:
 
    ![](assets/s_ncs_install_define_connection_01.png)
 
-1. Clique **[!UICONTROL Add > Connection]** e insira o rótulo e o URL do servidor de aplicativos do Adobe Campaign.
+1. Clique em **[!UICONTROL Add > Connection]** e insira o rótulo e o URL do servidor de aplicativos Adobe Campaign.
 
    ![](assets/s_ncs_install_define_connection_02.png)
 
-1. Especifique uma conexão com o servidor de aplicativos do Adobe Campaign por meio de um URL. Use um DNS ou um alias da máquina ou seu endereço IP.
+1. Especifique uma conexão com o servidor de aplicativos Adobe Campaign por meio de um URL. Use um DNS ou um alias da máquina ou seu endereço IP.
 
    Por exemplo, você pode usar o [`https://<machine>.<domain>.com`](https://machine) tipo URL.
 
    >[!CAUTION]
    >
-   >Para o URL de conexão, use apenas os seguintes caracteres: `[a-z]`, `[A-Z]``[0-9]` e traços (-) ou paradas completas.
+   >Para o URL de conexão, use apenas os seguintes caracteres: `[a-z]`, `[A-Z]`e traços (-) `[0-9]` ou paradas completas.
 
 1. Clique **[!UICONTROL Ok]** para confirmar as configurações: agora você pode começar com o processo de criação da instância.
-1. Na **[!UICONTROL Connection settings]** janela, digite o logon **interno** e sua senha para se conectar ao servidor de aplicativos do Adobe Campaign. Depois de conectado, acesse o assistente de criação de instâncias para declarar uma nova instância
+1. Na **[!UICONTROL Connection settings]** janela, digite o logon **interno** e sua senha para se conectar ao servidor de aplicativos Adobe Campaign. Depois de conectado, você acessa o assistente de criação de instâncias para declarar uma nova instância
 1. No **[!UICONTROL Name]** campo, informe o nome **da** instância. Como esse nome é usado para gerar um arquivo de configuração **config-`<instance>`.xml** e é usado nos parâmetros da linha de comando para identificar a instância, escolha um nome curto sem caracteres especiais. Por exemplo: **eMarketing**.
 
    ![](assets/s_ncs_install_create_instance.png)
 
    O nome da instância adicionada ao nome de domínio não deve exceder 40 caracteres. Isso permite restringir o tamanho dos cabeçalhos &quot;ID da mensagem&quot; e impedir que as mensagens sejam consideradas spam, principalmente por ferramentas como o SpamAssassin.
 
-1. Nos **[!UICONTROL DNS masks]** campos, informe a **lista de máscaras** DNS à qual a instância deve ser anexada. O servidor do Adobe Campaign usa o nome do host que aparece nas solicitações HTTP para determinar qual instância acessar.
+1. Nos **[!UICONTROL DNS masks]** campos, informe a **lista de máscaras** DNS às quais a instância deve ser anexada. O servidor Adobe Campaign usa o nome do host que aparece nas solicitações HTTP para determinar qual instância acessar.
 
    O nome do host está contido entre a string **https://** e o primeiro caractere de barra **/** do endereço do servidor.
 
    É possível definir uma lista de valores separados por vírgulas.
 
-   O quê? e * caracteres podem ser usados como curingas para substituir um ou vários caracteres (DNS, porta etc.). Por exemplo, o valor da **demonstração*** funcionará com &quot;https://demo&quot;, assim como funcionará com &quot;https://demo:8080&quot; e até mesmo com &quot;https://demo2&quot;.
+   Os ? e * caracteres podem ser usados como curingas para substituir um ou vários caracteres (DNS, porta etc.). Por exemplo, o valor da **demonstração*** funcionará com &quot;https://demo&quot;, assim como funcionará com &quot;https://demo:8080&quot; e até mesmo com &quot;https://demo2&quot;.
 
    Os nomes usados devem ser definidos no DNS. Você também pode informar a correspondência entre um nome DNS e um endereço IP no arquivo **c:/windows/system32/drivers/etc/hosts** no Windows e no arquivo **/etc/hosts** no Linux. Portanto, você deve modificar as configurações de conexão para usar esse nome DNS a fim de se conectar à instância escolhida.
 
