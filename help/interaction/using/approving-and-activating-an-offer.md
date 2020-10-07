@@ -11,11 +11,11 @@ audience: interaction
 content-type: reference
 topic-tags: managing-an-offer-catalog
 discoiquuid: 7b1c58a0-6fd6-4c9d-b1c4-f3dffda42523
-index: y
-internal: n
-snippet: y
-translation-type: ht
-source-git-commit: 215e4d1ca78938b38b53cae0357612deebf7727b
+translation-type: tm+mt
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '627'
+ht-degree: 91%
 
 ---
 
@@ -42,7 +42,7 @@ O conteúdo de uma oferta tem uma representação por espaço. Como cada espaço
 
 Para aprovar o conteúdo da oferta, aplique as seguintes etapas:
 
-1. Clique no botão **[!UICONTROL Approval]** e selecione **[!UICONTROL Approve content]** na janela pop-up.
+1. Click the **[!UICONTROL Approval]** button and select **[!UICONTROL Approve content]** in popup.
 
    ![](assets/offer_validate_002.png)
 
@@ -66,11 +66,11 @@ Aprovar a qualificação de oferta significa aceitar ou rejeitar pesos de oferta
 >
 >Quando o conteúdo e a qualificação de uma oferta são aprovados, o workflow de publicação (Notificação de oferta) é executado automaticamente e a oferta é ativada e disponibilizada em todos os espaços ativados.
 
-* A lista completa de regras pode ser visualizada clicando em **[!UICONTROL Schedule and eligibility rules]**.
+* The full list of rules can be viewed by clicking **[!UICONTROL Schedule and eligibility rules]**.
 
    ![](assets/offer_validate_005.png)
 
-* Para alterar as regras de qualificação, clique em **[!UICONTROL Reject]** e em **[!UICONTROL Eligibility approval]**.
+* To change the eligibility rules, click **[!UICONTROL Reject]**, then click **[!UICONTROL Eligibility approval]**.
 
    ![](assets/offer_validate_007.png)
 
@@ -78,7 +78,7 @@ Aprovar a qualificação de oferta significa aceitar ou rejeitar pesos de oferta
 
    ![](assets/offer_validate_006.png)
 
-* Para aceitar a qualificação da oferta, clique em **[!UICONTROL Approve eligibility]**.
+* To accept the offer eligibility, click **[!UICONTROL Approve eligibility]**.
 
    ![](assets/offer_validate_008.png)
 
@@ -92,7 +92,7 @@ Aprovar a qualificação de oferta significa aceitar ou rejeitar pesos de oferta
 
 ## Rastreamento de aprovação {#approval-tracking}
 
-O rastreamento de aprovação está disponível no painel de ofertas. Clique em **[!UICONTROL Hide/display logs]** para acessá-lo.
+O rastreamento de aprovação está disponível no painel de ofertas. Click **[!UICONTROL Hide/display logs]** to access it.
 
 ![](assets/offer_validate_012.png)
 
@@ -104,9 +104,9 @@ O rastreamento de aprovação está disponível no painel de ofertas. Clique em 
 
 Depois que a aprovação for iniciada, ela poderá ser reiniciada. Para fazer isso, siga estas instruções:
 
-1. Clique em **[!UICONTROL Content approved]** no painel de ofertas.
-1. Na janela **[!UICONTROL Edit]** que aparece, selecione a aprovação para reiniciar e clique em **[!UICONTROL Re-initialize approval to submit it again]**.
-1. Confirme clicando em **[!UICONTROL Ok]**.
+1. Click **[!UICONTROL Content approved]** on the offer dashboard.
+1. In the **[!UICONTROL Edit]** window that appears, select the approval to restart, then click **[!UICONTROL Re-initialize approval to submit it again]**.
+1. Confirm by clicking **[!UICONTROL Ok]**.
 
 ![](assets/offer_validate_013.png)
 
