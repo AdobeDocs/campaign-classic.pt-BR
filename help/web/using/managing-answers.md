@@ -11,11 +11,11 @@ audience: web
 content-type: reference
 topic-tags: online-surveys
 discoiquuid: affecd87-00a3-4d50-92d3-31ac6228948b
-index: y
-internal: n
-snippet: y
-translation-type: ht
-source-git-commit: 20f835c357d016643ea1f3209ee4dfb6d3239f90
+translation-type: tm+mt
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '855'
+ht-degree: 88%
 
 ---
 
@@ -32,7 +32,7 @@ Além dos modos de armazenamento padrão comuns a todos os formulários Web no A
 
 ### Armazenamento em um campo arquivado {#storing-in-an-archived-field}
 
-É fácil estender o template de dados adicionando novos espaços de armazenamento para salvar as respostas fornecidas em pesquisas. Para fazer isso, marque a opção **[!UICONTROL Store answers to a question]** ao criar o campo de entrada. Clique no link **[!UICONTROL New field...]** e forneça suas propriedades:
+É fácil estender o template de dados adicionando novos espaços de armazenamento para salvar as respostas fornecidas em pesquisas. To do this, select the **[!UICONTROL Store answers to a question]** option when creating the input field. Click the **[!UICONTROL New field...]** link and give its properties:
 
 ![](assets/s_ncs_admin_survey_new_space.png)
 
@@ -48,7 +48,7 @@ Para adicionar uma restrição, selecione-a na lista suspensa. Há dois tipos de
 
 1. Formato dos dados
 
-Se esse campo for usado em uma lista, os valores da enumeração poderão ser recuperados automaticamente na tabela de valores usando o link **[!UICONTROL Initialize the list of values from the database]**, acima da lista de valores.
+If this field is used in a list, the values of the enumeration can be retrieved automatically in the table of values using the **[!UICONTROL Initialize the list of values from the database]** link above the list of values.
 
 Por exemplo, você pode criar uma lista suspensa para o usuário selecionar seu idioma nativo. O campo arquivado correspondente pode ser associado à enumeração de **idioma** que contém uma lista de idiomas:
 
@@ -58,15 +58,15 @@ O ícone **[!UICONTROL Edit link]**, localizado à direita do campo, permite edi
 
 ![](assets/s_ncs_admin_survey_database_values_2c.png)
 
-Na guia **[!UICONTROL General]** do campo, o link **[!UICONTROL Initialize the list of values from the database]** permite inserir automaticamente a lista de rótulos oferecidos.
+In the **[!UICONTROL General]** tab of the field, the **[!UICONTROL Initialize the list of values from the database]** link lets you automatically enter the list of labels offered.
 
 ![](assets/s_ncs_admin_survey_database_values_2.png)
 
 **Exemplo**: armazenamento dos contratos de um recipient em um campo
 
-Para armazenar diferentes tipos de contratos em um campo, crie um campo de entrada **[!UICONTROL Text]** e selecione a opção **[!UICONTROL Store answers to a question]**.
+To store different types of contracts in one field, create a **[!UICONTROL Text]** input field and select the **[!UICONTROL Store answers to a question]** option.
 
-Clique no link **[!UICONTROL New field...]** e insira as propriedades do campo. Selecione a opção **[!UICONTROL Multiple values]** para habilitar o armazenamento de vários valores.
+Click the **[!UICONTROL New field...]** link and enter the field properties. Selecione a opção **[!UICONTROL Multiple values]** para habilitar o armazenamento de vários valores.
 
 ![](assets/s_ncs_admin_survey_storage_multi_ex1.png)
 
@@ -115,7 +115,7 @@ Para cada formulário, as respostas fornecidas podem ser usadas em campos ou ró
 Para fazer isso:
 
 * Edite as propriedades da pesquisa por meio do botão **[!UICONTROL Properties]** da guia **[!UICONTROL Edit]**.
-* Clique no link **[!UICONTROL Advanced parameters]** e marque a opção **[!UICONTROL Save a copy of raw answers]**.
+* Click the **[!UICONTROL Advanced parameters]** link and check the **[!UICONTROL Save a copy of raw answers]** option.
 
 ![](assets/s_ncs_admin_survey_xml_archive_option.png)
 
