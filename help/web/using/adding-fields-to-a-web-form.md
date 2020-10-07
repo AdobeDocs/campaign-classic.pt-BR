@@ -11,11 +11,11 @@ audience: web
 content-type: reference
 topic-tags: web-forms
 discoiquuid: d63892b3-260d-45e8-b99a-1e7c78353395
-index: y
-internal: n
-snippet: y
-translation-type: ht
-source-git-commit: 963aaa81971a8883b944bfcf4d1a00d729627916
+translation-type: tm+mt
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '2452'
+ht-degree: 100%
 
 ---
 
@@ -386,6 +386,7 @@ Você pode armazenar o link para esses arquivos em uma variável local ou em um 
 >* O Adobe Campaign não controla o tamanho ou o tipo de recurso carregado: portanto, é altamente recomendável usar campos de carregamento para sites de intranet tipo seguro.
 >* Se vários servidores estiverem vinculados à instância (&quot;balanceamento de carga&quot;), você precisará verificar se as chamadas para o formulário web chegam no mesmo servidor.
 >* Essas implementações exigem a assistência da equipe de consulta do Adobe Campaign.
+
 >
 
 
