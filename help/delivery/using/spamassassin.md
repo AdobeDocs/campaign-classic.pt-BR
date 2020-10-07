@@ -11,14 +11,11 @@ audience: delivery
 content-type: reference
 topic-tags: deliverability-management
 discoiquuid: d41658ab-ee79-4a5c-a165-d94b81eb2b33
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 537cbdec1ec88da1c759f6ca8eafe383c55a61d3
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
 workflow-type: tm+mt
 source-wordcount: '248'
-ht-degree: 81%
+ht-degree: 84%
 
 ---
 
@@ -49,7 +46,7 @@ Após criar seu delivery de email e definir seu conteúdo, siga as etapas abaixo
 
 Para obter mais informações sobre criar e configurar um delivery, consulte [esta página](../../delivery/using/about-email-channel.md).
 
-1. Go to the **[!UICONTROL Preview]** tab.
+1. Acesse a guia **[!UICONTROL Preview]**.
 1. Selecione um recipient para pré-visualizar seu delivery.
 
    ![](assets/s_tn_del_preview_spamassassin_recipient.png)
@@ -63,7 +60,7 @@ Para obter mais informações sobre criar e configurar um delivery, consulte [es
    ![](assets/s_tn_del_preview_spamassassin_ko.png)
 
 1. Click the **[!UICONTROL More...]** link next to the warning.
-1. Select the **[!UICONTROL Anti-spam checking]** tab.
+1. Selecione a guia **[!UICONTROL Anti-spam checking]**.
 1. Go to the **[!UICONTROL Points / Rule / Description]** section to view the reasons for this risk.
 
    ![](assets/s_tn_del_msg_spamassassin_ko.png)
