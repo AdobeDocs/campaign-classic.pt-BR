@@ -11,11 +11,11 @@ audience: installation
 content-type: reference
 topic-tags: deployment-types-
 discoiquuid: 066d0ac1-033c-467b-aa6c-43a97ecd8632
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 6b631f8456ad1f61cec1630334d76752f6af9866
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '1265'
+ht-degree: 2%
 
 ---
 
@@ -27,7 +27,7 @@ Esta é a configuração mais completa. Ele se baseia na configuração padrão 
 * servidores de redirecionamento dedicados atrás de um balanceador de carga HTTP ou TCP, para escalabilidade e disponibilidade,
 * dois servidores de aplicativos para melhor throughput e capacidade de failover (tolerância a falhas) e que são isolados na LAN.
 
-A comunicação geral entre servidores e processos é realizada de acordo com o seguinte esquema:
+A comunicação geral entre servidores e processos é realizada de acordo com o seguinte schema:
 
 ![](assets/s_901_ncs_install_enterpriseconfig.png)
 
@@ -64,15 +64,15 @@ Custos mais altos de hardware e administração.
 * Criação de dois aliases DNS no balanceador de carga:
 
    * a primeira exposta ao público para rastreamento e apontamento para o balanceador de carga em um endereço IP virtual (VIP) e que é então distribuída para os dois servidores frontais,
-   * a segunda foi exposta aos usuários internos para acesso por meio do console e apontando para um balanceador de carga em um endereço IP virtual (VIP) e que é então distribuído para os dois servidores de aplicativos.
+   * a segunda foi exposta aos usuários internos para acesso por meio do console e apontando para um balanceador de carga em um endereço IP virtual (VIP) e que é então distribuída para os dois servidores de aplicativos.
 
 * Firewall configurado para abrir STMP (25), DNS (53), HTTP (80), HTTPS (443), SQL (1521 para Oracle, 5432 para PostgreSQL etc.) portas. Para obter mais informações, consulte a seção Acesso [ao](../../installation/using/network-configuration.md#database-access)banco de dados.
 
 >[!CAUTION]
 >
->Se os servidores de aplicativos apontarem para uma única instância do banco de dados, depois de importar um pacote padrão em uma instância, o esquema contido no pacote não será carregado na outra instância.
+>Se os servidores de aplicativos apontarem para uma única instância do banco de dados, depois de importar um pacote padrão em uma instância, o schema contido no pacote não será carregado na outra instância.
 >  
->Se os servidores de aplicativos apontarem para uma única instância do banco de dados, depois de alterar o esquema em uma instância, o esquema não será carregado na outra instância.
+>Se os servidores de aplicativos apontarem para uma única instância do banco de dados, depois de alterar o schema em uma instância, o schema não será carregado na outra instância.
 >
 >Para recuperar esses problemas, é necessário reinicializar o processo ‘web@default’ na segunda instância em que ocorreu o erro.
 
@@ -81,17 +81,17 @@ Custos mais altos de hardware e administração.
 Nos exemplos a seguir, os parâmetros da instância são:
 
 * Nome da instância: demonstração
-* Máscara de DNS: tracking.campaign.net*, console.campaign.net* (o servidor de aplicativos lida com os URLs das conexões e relatórios do console do cliente e das páginas espelhadas e de cancelamento de assinatura)
+* Máscara de DNS: tracking.campanha.net*, console.campanha.net* (o servidor de aplicativos lida com os URLs das conexões e relatórios do console do cliente e das páginas de mirrores page e unsubscription)
 * Idioma: Inglês
 * Banco de dados: campanha:demo@dbsrv
 
 As etapas para instalar o primeiro servidor são:
 
-1. Siga o procedimento de instalação do servidor do Adobe Campaign: pacote **nlserver** no Linux ou **setup.exe** no Windows.
+1. Siga o procedimento de instalação do servidor Adobe Campaign: **pacote nlserver** no Linux ou **setup.exe** no Windows.
 
-   Para obter mais informações, consulte [Pré-requisitos da instalação do Campaign no Linux](../../installation/using/prerequisites-of-campaign-installation-in-linux.md) (Linux) e [Pré-requisitos da instalação do Campaign no Windows](../../installation/using/prerequisites-of-campaign-installation-in-windows.md) (Windows).
+   Para obter mais informações, consulte [Pré-requisitos de instalação do Campaign no Linux](../../installation/using/prerequisites-of-campaign-installation-in-linux.md) (Linux) e [Pré-requisitos de instalação do Campaign no Windows](../../installation/using/prerequisites-of-campaign-installation-in-windows.md) (Windows).
 
-1. Depois que o servidor do Adobe Campaign for instalado, inicie o servidor de aplicativos (Web) usando o comando **nlserver web -tomcat** (o módulo Web permite que você inicie o Tomcat no modo independente de servidor da Web, acompanhando na porta 8080) e certifique-se de que o Tomcat seja iniciado corretamente:
+1. Depois que o servidor Adobe Campaign for instalado, start o servidor de aplicativos (Web) usando o comando **nlserver web -tomcat** (o módulo Web permite que você start o Tomcat no modo independente de servidor Web acompanhando na porta 8080) e verifique se os start Tomcat estão corretos:
 
    ```
    12:08:18 >   Application server for Adobe Campaign Classic (7.X YY.R build XXX@SHA1) of DD/MM/YYYY
@@ -109,8 +109,8 @@ As etapas para instalar o primeiro servidor são:
 
    Para obter mais informações, consulte as seguintes seções:
 
-   * Para Linux: [Primeira inicialização do servidor](../../installation/using/installing-packages-with-linux.md#first-start-up-of-the-server)
-   * Para Windows: [Primeira inicialização do servidor](../../installation/using/installing-the-server.md#first-start-up-of-the-server)
+   * Para Linux: [Primeiro start do servidor](../../installation/using/installing-packages-with-linux.md#first-start-up-of-the-server)
+   * Para Windows: [Primeiro start do servidor](../../installation/using/installing-the-server.md#first-start-up-of-the-server)
 
 1. Altere a senha **interna** usando o comando:
 
@@ -120,7 +120,7 @@ As etapas para instalar o primeiro servidor são:
 
    For more on this, refer to [Internal identifier](../../installation/using/campaign-server-configuration.md#internal-identifier).
 
-1. Crie a instância de **demonstração** com as máscaras de DNS para rastreamento (neste caso, **tracking.campaign.net**) e acesso aos consoles do cliente (neste caso, **console.campaign.net**). Há duas maneiras de fazer isso:
+1. Crie a instância de **demonstração** com as máscaras de DNS para rastreamento (neste caso, **tracking.campanha.net**) e acesso aos consoles do cliente (neste caso, **console.campanha.net**). Há duas maneiras de fazer isso:
 
    * Crie a instância por meio do console:
 
@@ -136,9 +136,9 @@ As etapas para instalar o primeiro servidor são:
       nlserver config -addinstance:demo/tracking.campaign.net*,console.campaign.net*
       ```
 
-      Para obter mais informações, consulte [Criação de uma instância](../../installation/using/command-lines.md#creating-an-instance).
+      For more on this, refer to [Creating an instance](../../installation/using/command-lines.md#creating-an-instance).
 
-1. Edite o arquivo **config-demo.xml** (criado por meio do comando anterior e localizado ao lado do arquivo **config-default.xml** ), verifique se os processos **mta** (entrega), **wfserver** (fluxo de trabalho), **inMail** **** **** (e-mails de retorno) estat (estatísticas) estão ativados e configure o endereço das estatísticas appservidor:
+1. Edite o arquivo **config-demo.xml** (criado por meio do comando anterior e localizado ao lado do arquivo **config-default.xml** ), verifique se os processos **mta** (delivery), **wfserver** (fluxo de trabalho), **inMail** **** **** (e-mails de retorno) estat (estatísticas) estão habilitados e configure o endereço do app servidor de estatísticas:
 
    ```
    <?xml version='1.0'?>
@@ -158,7 +158,7 @@ As etapas para instalar o primeiro servidor são:
 
    For more on this, refer to [Enabling processes](../../installation/using/campaign-server-configuration.md#enabling-processes).
 
-1. Edite o arquivo **serverConf.xml** e especifique o domínio de entrega, em seguida, especifique os endereços IP (ou host) dos servidores DNS usados pelo módulo MTA para responder consultas DNS do tipo MX.
+1. Edite o arquivo **serverConf.xml** e especifique o domínio do delivery, em seguida, especifique os endereços IP (ou host) dos servidores DNS usados pelo módulo MTA para responder aos query DNS do tipo MX.
 
    ```
    <dnsConfig localDomain="campaign.com" nameServers="192.0.0.1, 192.0.0.2"/>
@@ -168,20 +168,20 @@ As etapas para instalar o primeiro servidor são:
    >
    >Os parâmetros **nameServers** são usados apenas no Windows.
 
-   Para obter mais informações, consulte a configuração [do servidor do](../../installation/using/campaign-server-configuration.md)Campaign.
+   For more on this, refer to [Campaign server configuration](../../installation/using/campaign-server-configuration.md).
 
 1. Copie o programa de configuração do console do cliente (**setup-client-7.XX**, **YYY.exe** para v7 ou **setup-client-6.XX**, **YYYY.exe** para v6.1) para a pasta **/datakit/nl/eng/jsp** .
 
    Para obter mais informações, consulte as seguintes seções:
 
-   * Para Linux: Disponibilidade do console do [cliente para Linux](../../installation/using/client-console-availability-for-linux.md)
-   * Para Windows: Disponibilidade do console do [cliente para Windows](../../installation/using/client-console-availability-for-windows.md).
+   * Para Linux: [Disponibilidade do console do cliente para Linux](../../installation/using/client-console-availability-for-linux.md)
+   * Para Windows: [Disponibilidade do console do cliente para Windows](../../installation/using/client-console-availability-for-windows.md).
 
-1. Inicie o servidor do Adobe Campaign (**net start nlserver6** no Windows, **/etc/init.d/nlserver6 start** no Linux) e execute o comando **nlserver pdump** novamente para verificar a presença de todos os módulos habilitados.
+1. Start o servidor Adobe Campaign (start **net nlserver6** no Windows, start **** /etc/init.d/nlserver6 no Linux) e execute o comando **nlserver pdump** mais uma vez para verificar a presença de todos os módulos habilitados.
 
    >[!NOTE]
    >
-   >A partir do 20.1, recomendamos usar o seguinte comando (para Linux): nlserver de inicialização **do systemCtl**
+   >A partir do 20.1, recomendamos usar o seguinte comando (para Linux): **start nlserver do systemctl**
 
 
    ```
@@ -195,26 +195,26 @@ As etapas para instalar o primeiro servidor são:
    web@default (28671) - 40.5 MB
    ```
 
-   Esse comando também permite que você saiba a versão e o número de compilação do servidor do Adobe Campaign instalado no computador.
+   Esse comando também permite que você saiba a versão e o número da compilação do servidor Adobe Campaign instalado no computador.
 
 1. Teste o módulo da Web **do** nlserver usando o URL: [https://console.campaign.net/nl/jsp/logon.jsp](https://tracking.campaign.net/r/test).
 
    Esse URL permite que você acesse a página de download do programa de configuração do cliente.
 
-   Digite o logon **interno** e a senha associada ao acessar a página de controle de acesso.
+   Digite o logon **interno** e a senha associada ao acessar a página do controle de acesso.
 
    ![](assets/s_ncs_install_access_client.png)
 
    Para obter mais informações, consulte as seguintes seções:
 
-   * Para Linux: Disponibilidade do console do [cliente para Linux](../../installation/using/client-console-availability-for-linux.md)
-   * Para Windows: Disponibilidade do console do [cliente para Windows](../../installation/using/client-console-availability-for-windows.md)
+   * Para Linux: [Disponibilidade do console do cliente para Linux](../../installation/using/client-console-availability-for-linux.md)
+   * Para Windows: [Disponibilidade do console do cliente para Windows](../../installation/using/client-console-availability-for-windows.md)
 
 ### Instalação e configuração do servidor de aplicativos 2 {#installing-and-configuring-the-application-server-2}
 
 Siga as etapas abaixo:
 
-1. Instale o servidor do Adobe Campaign.
+1. Instale o servidor Adobe Campaign.
 1. Copie os arquivos da instância criada no servidor de aplicativos 1.
 
    Mantemos o mesmo nome de instância do servidor de aplicativos 1.
@@ -226,7 +226,7 @@ Siga as etapas abaixo:
    nlserver config -setdblogin:PostgreSQL:campaign:demo@dbsrv -instance:demo
    ```
 
-1. Edite o arquivo **config-demo.xml** (criado por meio do comando anterior e localizado ao lado do arquivo **config-default.xml** ), verifique se os processos **mta** (entrega), **wfserver** (fluxo de trabalho), **inMail** **** **** (e-mails de retorno) estat (estatísticas) estão ativados e configure o endereço das estatísticas appservidor:
+1. Edite o arquivo **config-demo.xml** (criado por meio do comando anterior e localizado ao lado do arquivo **config-default.xml** ), verifique se os processos **mta** (delivery), **wfserver** (fluxo de trabalho), **inMail** **** **** (e-mails de retorno) estat (estatísticas) estão habilitados e configure o endereço do app servidor de estatísticas:
 
    ```
    <?xml version='1.0'?>
@@ -256,14 +256,14 @@ Siga as etapas abaixo:
    >
    >O parâmetro **nameServers** só é usado no Windows.
 
-   Para obter mais informações, consulte a configuração [do servidor do](../../installation/using/campaign-server-configuration.md)Campaign.
+   For more on this, refer to [Campaign server configuration](../../installation/using/campaign-server-configuration.md).
 
-1. Inicie os servidores do Adobe Campaign.
+1. Start dos servidores Adobe Campaign.
 
    Para obter mais informações, consulte as seguintes seções:
 
-   * Para Linux: [Primeira inicialização do servidor](../../installation/using/installing-packages-with-linux.md#first-start-up-of-the-server)
-   * Para Windows: [Primeira inicialização do servidor](../../installation/using/installing-the-server.md#first-start-up-of-the-server)
+   * Para Linux: [Primeiro start do servidor](../../installation/using/installing-packages-with-linux.md#first-start-up-of-the-server)
+   * Para Windows: [Primeiro start do servidor](../../installation/using/installing-the-server.md#first-start-up-of-the-server)
 
 ### Instalação e configuração dos servidores frontais {#installing-and-configuring-the-frontal-servers}
 
@@ -271,11 +271,11 @@ Os procedimentos de instalação e configuração são idênticos em ambos os co
 
 As etapas são as seguintes:
 
-1. Instale o servidor do Adobe Campaign,
+1. Instale o servidor Adobe Campaign,
 1. Cumpra o procedimento de integração do servidor Web (IIS, Apache) descrito nas seguintes seções:
 
-   * Para Linux: [Integração em um servidor Web para Linux](../../installation/using/integration-into-a-web-server-for-linux.md),
-   * Para Windows: [Integração em um servidor Web para Windows](../../installation/using/integration-into-a-web-server-for-windows.md).
+   * For Linux: [Integration into a Web server for Linux](../../installation/using/integration-into-a-web-server-for-linux.md),
+   * For Windows: [Integration into a Web server for Windows](../../installation/using/integration-into-a-web-server-for-windows.md).
 
 1. Copie os arquivos **config-demo.xml** e **serverConf.xml** criados durante a instalação. No arquivo **config-demo.xml** , ative o processo **trackinglogd** e desative os processos **mta**, **inmail**, **wfserver** **** e stat.
 1. Edite o arquivo **serverConf.xml** e preencha os servidores de rastreamento redundantes nos parâmetros do redirecionamento:
@@ -285,7 +285,7 @@ As etapas são as seguintes:
    <spareServer enabledIf="$(hostname)!='front_srv2'" id="2" url="https://front_srv2:8080"/>
    ```
 
-1. Inicie o site e teste o redirecionamento do URL: [https://tracking.campaign.net/r/test](https://tracking.campaign.net/r/test)
+1. Start o site e teste o redirecionamento do URL: [https://tracking.campaign.net/r/test](https://tracking.campaign.net/r/test)
 
    O navegador deve exibir as seguintes mensagens (dependendo do URL redirecionado pelo balanceador de carga):
 
@@ -304,5 +304,5 @@ As etapas são as seguintes:
    * Para Linux: [Iniciar o servidor Web e testar a configuração](../../installation/using/integration-into-a-web-server-for-linux.md#launching-the-web-server-and-testing-the-configuration),
    * Para Windows: [Abrindo o servidor Web e testando a configuração](../../installation/using/integration-into-a-web-server-for-windows.md#launching-the-web-server-and-testing-the-configuration).
 
-1. Inicie o servidor do Adobe Campaign.
+1. Start o servidor Adobe Campaign.
 
