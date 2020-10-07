@@ -11,11 +11,11 @@ audience: integrations
 content-type: reference
 topic-tags: adobe-experience-manager
 discoiquuid: 1c20795d-748c-4f5d-b526-579b36666e8f
-index: y
-internal: n
-snippet: y
-translation-type: ht
-source-git-commit: 31f30db6eaf1fee43f9f757124e3fa8ed1d0075f
+translation-type: tm+mt
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '553'
+ht-degree: 100%
 
 ---
 
@@ -84,6 +84,7 @@ Para configurar a conta externa do AEM, siga as etapas abaixo:
    * **[!UICONTROL Server]**
    * **[!UICONTROL Account]**
    * **[!UICONTROL Password]**
+
    >[!NOTE]
    >
    >Certifique-se de que o endereço do **[!UICONTROL Server]** não termine com uma barra à direita.
