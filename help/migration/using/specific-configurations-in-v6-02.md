@@ -11,11 +11,11 @@ audience: migration
 content-type: reference
 topic-tags: configuration
 discoiquuid: 87a6cbda-54a6-4dae-8224-e06dc217f4fc
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 9f7cf3d530f141a661df5fcc8cbcf0bb4c8d3e89
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '428'
+ht-degree: 4%
 
 ---
 
@@ -42,13 +42,13 @@ Se você não tiver usado esses aplicativos da Web, execute o seguinte script de
 Nlserver javascript -instance:[instance_name] -file [installation_path]/datakit/xtk/fra/js/removeOldWebApp.js
 ```
 
-Se você modificou esses aplicativos da Web e deseja continuar usando-os na v7, ative a opção **allowSQLInjection** em suas diferentes zonas de segurança e reinicie a pós-atualização. Consulte a seção [SQLData](../../migration/using/general-configurations.md#sqldata) para obter mais informações.
+Se você modificou esses aplicativos da Web e gostaria de continuar usando-os na v7, ative a opção **allowSQLInjection** em suas diferentes zonas de segurança e volte a start após a atualização. Consulte a seção [SQLData](../../migration/using/general-configurations.md#sqldata) para obter mais informações.
 
-## Adequação ao usuário: Página inicial e navegação {#user-friendliness--home-page-and-navigation}
+## Adequação ao usuário: Home page e navegação {#user-friendliness--home-page-and-navigation}
 
 >[!IMPORTANT]
 >
->Se você quiser continuar usando aplicativos da Web do tipo visão geral v6.02, ative a opção **allowSQLInjection** em suas diferentes zonas de segurança antes da pós-atualização. Consulte aplicativos [da](#web-applications)Web.
+>Se você quiser continuar usando aplicativos da Web do tipo visão geral v6.02, ative a opção **allowSQLInjection** em suas diferentes zonas de segurança antes da pós-atualização. Refer to [Web applications](#web-applications).
 
 Após uma migração da versão 6.02, a página inicial do Adobe Campaign v6.02 não é mais exibida, mas ainda está acessível e compatível com o Adobe Campaign v7.
 
@@ -58,7 +58,7 @@ Para fazer isso, importe o pacote de compatibilidade:
 
 Clique **[!UICONTROL Tools > Advanced > Import package]** e escolha o pacote **campaignMigration.xml** no **`\nl\datakit\nms\[Your language]\package\optional`**.
 
-Para permitir o acesso às interfaces do tipo de Aplicativo Web v6.02, a opção de configuração do servidor **sessionTokenOnly** deve ser ativada no arquivo **serverConf.xml** :
+Para permitir o acesso às interfaces do tipo de Aplicação web v6.02, a opção de configuração do servidor **sessionTokenOnly** deve ser ativada no arquivo **serverConf.xml** :
 
 ```
 sessionTokenOnly="true"
@@ -66,7 +66,7 @@ sessionTokenOnly="true"
 
 Essa opção altera os níveis de segurança para garantir a compatibilidade da interface.
 
-Depois que o pacote é instalado, a página inicial do Adobe Campaign v7 é substituída pela página inicial v6.02 antiga, concluída com as configurações gerais da v7 (banner azul da página inicial).
+Depois que o pacote é instalado, o home page Adobe Campaign v7 é substituído pela sua página inicial v6.02 antiga, concluída com as configurações gerais da v7 (banner azul do home page).
 
 ![](assets/dashboards.png)
 
@@ -74,7 +74,7 @@ Todos os links nesta página inicial são vinculados às telas v7, exceto as lis
 
 ![](assets/dashboards2.png)
 
-Se quiser adicionar outra visão geral configurada na v6.02, é necessário adicionar isso à página inicial do painel. (**[!UICONTROL Administration > Access management > Dashboard]**).
+Se quiser adicionar outra visão geral configurada na v6.02, é necessário adicionar isso ao home page a partir do painel. (**[!UICONTROL Administration > Access management > Dashboard]**).
 
 >[!NOTE]
 >
@@ -82,6 +82,6 @@ Se quiser adicionar outra visão geral configurada na v6.02, é necessário adic
 
 ## Centro de mensagens {#message-center}
 
-Após a migração da instância de controle do Centro de mensagens, você deve publicar novamente os modelos de mensagens transacionais para que funcionem.
+Após a migração da instância de controle do centro de mensagens, você deve publicar novamente os templates de mensagem transacionais para que funcionem.
 
-Na v7, os nomes dos modelos de mensagens transacionais em instâncias de execução foram alterados. Atualmente, eles recebem o prefixo do nome do operador que corresponde à instância de controle na qual foram criados, por exemplo, **control1_template1_rt** (onde **control1** é o nome do operador). Se você tiver um volume significativo de modelos, recomendamos excluir modelos antigos em instâncias de controle.
+Na v7, os nomes dos templates de mensagem transacionais no instância de execução foram alterados. Atualmente, eles recebem o prefixo do nome do operador que corresponde à instância de controle na qual foram criados, por exemplo, **control1_template1_rt** (onde **control1** é o nome do operador). Se você tiver um volume significativo de modelos, recomendamos excluir modelos antigos no instância de controle.
