@@ -11,11 +11,8 @@ audience: production
 content-type: reference
 topic-tags: data-processing
 discoiquuid: 9f7118f4-aef0-469c-bbe1-b62bed674faa
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: cb44d439c6866d94f8e1201575ab3d3094d6ad79
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
 workflow-type: tm+mt
 source-wordcount: '1291'
 ht-degree: 2%
@@ -31,13 +28,13 @@ ht-degree: 2%
 
 >[!CAUTION]
 >
->Se você não tiver acesso ao servidor e ao banco de dados (ambientes hospedados), não será possível executar os procedimentos descritos abaixo. Entre em contato com a Adobe.
+>Se você não tiver acesso ao servidor e ao banco de dados (ambientes hospedados), não será possível executar os procedimentos descritos abaixo. Por favor, entre em contato com a Adobe.
 
 O uso do Adobe Campaign requer a instalação e configuração de um ou mais ambientes: desenvolvimento, teste, pré-produção, produção, etc.
 
-Cada ambiente contém uma instância Adobe Campaign e cada instância Adobe Campaign é vinculada a um ou mais bancos de dados. O servidor de aplicativos pode executar um ou mais processos: quase todos têm acesso direto ao banco de dados da instância.
+Cada ambiente contém uma instância do Adobe Campaign e cada instância do Adobe Campaign está vinculada a um ou mais bancos de dados. O servidor de aplicativos pode executar um ou mais processos: quase todos têm acesso direto ao banco de dados da instância.
 
-Esta seção detalha os processos a serem aplicados ao ambiente de Adobe Campaign, isto é, para restaurar um ambiente de origem para um ambiente de público alvo, resultando em dois ambientes de trabalho idênticos.
+Esta seção detalha os processos a serem aplicados ao duplicado de um ambiente Adobe Campaign, isto é, para restaurar um ambiente de origem para um ambiente de público alvo, resultando em dois ambientes de trabalho idênticos.
 
 Para fazer isso, siga as etapas abaixo:
 
@@ -54,7 +51,7 @@ Para fazer isso, siga as etapas abaixo:
 
    >[!CAUTION]
    >
-   >Um ambiente pode conter várias instâncias. Cada instância de Adobe Campaign está sujeita a um contrato de licença. Verifique seu contrato de licença para ver quantos ambientes você pode ter.\
+   >Um ambiente pode conter várias instâncias. Cada instância da Adobe Campaign está sujeita a um contrato de licença. Verifique seu contrato de licença para ver quantos ambientes você pode ter.\
    >O procedimento abaixo permite que você transfira um ambiente sem afetar o número de ambientes e instâncias que você instalou.
 
 ### Antes do seu start {#before-you-start}
@@ -77,6 +74,7 @@ As etapas a seguir devem ser executadas com muito cuidado: alguns processos aind
 >
 >* O procedimento a seguir é válido na linguagem PostgreSQL. Se o idioma SQL for diferente (Oracle, por exemplo), os query SQL devem ser adaptados.
 >* Os comandos abaixo se aplicam no contexto de uma instância de **prod** e uma instância **dev** em PostgreSQL.
+
 >
 
 
@@ -112,7 +110,7 @@ Verifique se o número de opções/contas exportadas é igual ao número de linh
 >
 >O número de linhas para exportar em uma exportação de pacote é de 1000 linhas. Se o número de opções ou contas externas for superior a 1000, você deverá realizar várias exportações.
 > 
->Para obter mais informações, consulte [esta seção](../../platform/using/working-with-data-packages.md#exporting-packages).
+>Para saber mais, consulte [esta seção](../../platform/using/working-with-data-packages.md#exporting-packages).
 
 >[!NOTE]
 >
@@ -120,7 +118,7 @@ Verifique se o número de opções/contas exportadas é igual ao número de linh
 
 ### Etapa 3 - Parar o ambiente do público alvo (dev) {#step-3---stop-the-target-environment--dev-}
 
-Você precisa parar os processos de Adobe Campaign em todos os servidores de ambientes de públicos alvos. Esta operação depende do seu sistema operacional.
+Você precisa parar os processos da Adobe Campaign em todos os servidores de ambientes de públicos alvos. Esta operação depende do seu sistema operacional.
 
 Você pode interromper todos os processos, ou apenas aqueles que gravam no banco de dados.
 
@@ -196,7 +194,7 @@ nlserver javascript nms:freezeInstance.js -instance:<dev> -arg:run
 
 ### Etapa 7 - Reiniciar o processo Web do ambiente do público alvo (dev) {#step-7---restart-the-target-environment-web-process--dev-}
 
-No ambiente do público alvo, start novamente os processos Adobe Campaign para todos os servidores.
+No ambiente do público alvo, volte a start dos processos Adobe Campaign para todos os servidores.
 
 >[!NOTE]
 >
@@ -229,17 +227,17 @@ Acima de tudo, verifique os valores de várias linhas dos arquivos antes de impo
 Para importar a configuração do banco de dados do ambiente do público alvo (dev):
 
 1. Abra o console de administração do banco de dados e expurgue as contas externas (table nms:extAccount) cuja ID não seja 0 (@id &lt;> 0).
-1. No console Adobe Campaign, importe o pacote options_dev.xml criado anteriormente pela funcionalidade do pacote de importação.
+1. No console do Adobe Campaign, importe o pacote options_dev.xml criado anteriormente pela funcionalidade do pacote de importação.
 
    Verifique se as opções foram atualizadas no **[!UICONTROL Administration > Platform > Options]** nó.
 
-1. No console Adobe Campaign, importe o extaccount_dev.xml criado anteriormente pela funcionalidade do pacote de importação
+1. No console do Adobe Campaign, importe o extaccount_dev.xml criado anteriormente pela funcionalidade do pacote de importação
 
    Verifique se as bases de dados externas foram realmente importadas no **[!UICONTROL Administration > Platform > External accounts]** .
 
 ### Etapa 9 - Reiniciar todos os processos e alterar usuários (dev) {#step-9---restart-all-processes-and-change-users--dev-}
 
-Para start, use os seguintes comandos para Adobe Campaign:
+Para start dos processos do Adobe Campaign, use os seguintes comandos:
 
 * No Windows:
 
