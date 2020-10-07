@@ -11,11 +11,11 @@ audience: production
 content-type: reference
 topic-tags: production-procedures
 discoiquuid: 12f13b8d-afc3-4b55-a31b-080d31f84fc9
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 779d9162b7296339a796512838612ede1186ddcc
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '164'
+ht-degree: 2%
 
 ---
 
@@ -26,7 +26,7 @@ source-git-commit: 779d9162b7296339a796512838612ede1186ddcc
 
 Por padrão, a porta de escuta **syslogd** é 666 (udp). Você pode alterá-la usando uma variável de ambiente, se necessário.
 
-Depois de configurada, essa variável é considerada por todos os módulos do Adobe Campaign.
+Depois de configurada, essa variável é considerada por todos os módulos Adobe Campaign.
 
 ### No Linux {#in-linux}
 
@@ -44,9 +44,9 @@ export TRACE_ADDR=localhost:<listening port>
 >
 >Recomendamos a execução de alguns testes para garantir que sua plataforma funcione depois que você criar essa variável de ambiente.
 
-## Configurando zonas de segurança {#configuring-security-zones}
+## Configuração de zonas de segurança {#configuring-security-zones}
 
-Cada operador precisa estar vinculado a uma zona para fazer logon em uma instância e o IP do operador deve ser incluído nos endereços ou conjuntos de endereços definidos na zona de segurança. A configuração da zona técnica é realizada no arquivo de configuração do servidor do Adobe Campaign. A vinculação de um operador a uma zona de segurança deve ser definida no console ( **[!UICONTROL Administration > Access management > Operators]** nó).
+Cada operador precisa estar vinculado a uma zona para fazer logon em uma instância e o IP do operador deve ser incluído nos endereços ou conjuntos de endereços definidos na zona de segurança. A configuração da zona técnica é realizada no arquivo de configuração do servidor Adobe Campaign. A vinculação de um operador a uma zona de segurança deve ser definida no console ( **[!UICONTROL Administration > Access management > Operators]** nó).
 
 >[!NOTE]
 >
