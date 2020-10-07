@@ -9,11 +9,11 @@ audience: delivery
 content-type: reference
 topic-tags: deliverability-management
 discoiquuid: 6a394eeb-fbe1-4712-bb13-db5d7965fb73
-index: y
-internal: n
-snippet: y
-translation-type: ht
-source-git-commit: 68756f920fbc8658cff552615adbf023b4c5e3aa
+translation-type: tm+mt
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '437'
+ht-degree: 95%
 
 ---
 
@@ -24,7 +24,7 @@ Para melhorar a taxa de delivery de email e garantir que seus emails cheguem aos
 
 ## Endereço do remetente {#sender-address}
 
-Determinados ISPs verificam a validade do endereço do remetente (From) antes de aceitar mensagens. Um endereço mal formado pode resultar na rejeição pelo servidor de recebimento. É necessário verificar se um endereço correto é fornecido no nível da instância (menu **[!UICONTROL Tools > Advanced > Deployment wizard...]**) ou nos cenários usados com mais frequência.
+Determinados ISPs verificam a validade do endereço do remetente (From) antes de aceitar mensagens. Um endereço mal formado pode resultar na rejeição pelo servidor de recebimento. You must make sure a correct address is given at the instance level (menu **[!UICONTROL Tools > Advanced > Deployment wizard...]**) or in the most frequently-used scenarios.
 
 ## Link e formulário de opt-out {#opt-out}
 
