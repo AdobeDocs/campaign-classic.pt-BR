@@ -11,11 +11,11 @@ audience: workflow
 content-type: reference
 topic-tags: use-cases
 discoiquuid: 4113c3fe-a279-4fe1-be89-ea43c96edc34
-index: y
-internal: n
-snippet: y
-translation-type: ht
-source-git-commit: 1c86322fa95aee024f6c691b61a10c21a9a22eb7
+translation-type: tm+mt
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '1350'
+ht-degree: 90%
 
 ---
 
@@ -44,13 +44,13 @@ Para criar o teste A/B, aplique as seguintes etapas:
 
 ## Etapa 1: criação de um workflow de direcionamento {#step-1--creating-a-targeting-workflow}
 
-É necessário criar o workflow na guia **[!UICONTROL Targeting and Workflows]** de uma campanha. Ele é composto de uma atividade **[!UICONTROL Query]**, uma atividade **[!UICONTROL Split]** vinculada às duas atividades **[!UICONTROL Email delivery]**, uma atividade **[!UICONTROL Wait]**, uma atividade **[!UICONTROL JavaScript code]** e uma atividade **[!UICONTROL Delivery]**.
+You need to create your workflow in the **[!UICONTROL Targeting and Workflows]** tab of a campaign. It is made up of a **[!UICONTROL Query]** activity, a **[!UICONTROL Split]** activity linked to two **[!UICONTROL Email delivery]** activities, a **[!UICONTROL Wait]** activity, a **[!UICONTROL JavaScript code]** activity, and a **[!UICONTROL Delivery]** activity.
 
 1. Se ainda não tiver feito isso, crie uma campanha (para saber mais sobre isso, consulte esta [seção](../../campaign/using/setting-up-marketing-campaigns.md#creating-a-campaign)).
 
    ![](assets/use_case_abtesting_targetwkfl_001.png)
 
-1. Vá para a guia **[!UICONTROL Targeting and Workflows]**.
+1. Acesse a guia **[!UICONTROL Targeting and Workflows]**.
 
    ![](assets/use_case_abtesting_targetwkfl_002.png)
 
@@ -58,7 +58,7 @@ Para criar o teste A/B, aplique as seguintes etapas:
 
    ![](assets/use_case_abtesting_targetwkfl_003.png)
 
-1. Use o mouse para arrastar e soltar atividades no diagrama do workflow, incluindo uma **[!UICONTROL Query]** (guia **[!UICONTROL Target]**), um **[!UICONTROL Split]** (guia **[!UICONTROL Target]**), dois **[!UICONTROL Email deliveries]** (guia **[!UICONTROL Deliveries]**), uma atividade **[!UICONTROL Wait]** atividade (guia **[!UICONTROL Flow Control]**), uma atividade **[!UICONTROL JavaScript code]** (guia **[!UICONTROL Actions]**) e uma atividade **[!UICONTROL Delivery]** (guia **[!UICONTROL Actions]**).
+1. Use the mouse to drag and drop activities into the workflow diagram, including a **[!UICONTROL Query]** (**[!UICONTROL Target]** tab), a **[!UICONTROL Split]** (**[!UICONTROL Target]** tab), two **[!UICONTROL Email deliveries]** (**[!UICONTROL Deliveries]** tab), a **[!UICONTROL Wait]** activity (**[!UICONTROL Flow Control]** tab), a **[!UICONTROL JavaScript code]** activity (**[!UICONTROL Actions]** tab), and a **[!UICONTROL Delivery]** activity (**[!UICONTROL Actions]** tab).
 
 ![](assets/use_case_abtesting_targetwkfl_004.png)
 
@@ -66,7 +66,7 @@ Para criar o teste A/B, aplique as seguintes etapas:
 
 ### Configuração da atividade Query {#configuring-the-query-activity}
 
-* Clique duas vezes na atividade **[!UICONTROL Query]**.
+* Double-click the **[!UICONTROL Query]** activity.
 
    ![](assets/use_case_abtesting_createrecipients_001.png)
 
@@ -74,7 +74,7 @@ Para criar o teste A/B, aplique as seguintes etapas:
 
    ![](assets/use_case_abtesting_createrecipients_002.png)
 
-* Vincule a atividade **[!UICONTROL Query]** à atividade **[!UICONTROL Split]**.
+* Link the **[!UICONTROL Query]** activity to the **[!UICONTROL Split]** activity.
 
    ![](assets/use_case_abtesting_createrecipients_003.png)
 
@@ -84,7 +84,7 @@ Esta atividade permite criar várias populações: a que recebe a delivery A, aq
 
 1. Criação da população A:
 
-   * Clique duas vezes na atividade **[!UICONTROL Split]**.
+   * Double-click the **[!UICONTROL Split]** activity.
 
       ![](assets/use_case_abtesting_createrecipients_004.png)
 
@@ -96,7 +96,7 @@ Esta atividade permite criar várias populações: a que recebe a delivery A, aq
 
       ![](assets/use_case_abtesting_createrecipients_006.png)
 
-   * Clique no link **[!UICONTROL Edit]**, selecione **[!UICONTROL Activate random sampling]** e clique em **[!UICONTROL Next]**.
+   * Click the **[!UICONTROL Edit]** link, select **[!UICONTROL Activate random sampling]**, and click **[!UICONTROL Next]**.
 
       ![](assets/use_case_abtesting_createrecipients_007.png)
 
@@ -116,7 +116,7 @@ Esta atividade permite criar várias populações: a que recebe a delivery A, aq
 
 1. Criação da população restante:
 
-   * Vá para a guia **[!UICONTROL General]**.
+   * Acesse a guia **[!UICONTROL General]**.
 
       ![](assets/use_case_abtesting_createrecipients_011.png)
 
@@ -130,10 +130,10 @@ Esta atividade permite criar várias populações: a que recebe a delivery A, aq
 
 ## Etapa 3: criação de dois templates de delivery {#step-3--creating-two-delivery-templates}
 
-Agora devemos criar dois templates de delivery. Cada modelo será referenciado em uma atividade de **[!UICONTROL Email delivery]** vinculada à atividade **[!UICONTROL Split]**. Para obter mais informações, consulte esta [seção](../../delivery/using/about-templates.md).
+Agora devemos criar dois templates de delivery. Each template will be referenced in an **[!UICONTROL Email delivery]** activity linked to the **[!UICONTROL Split]** activity. Para obter mais informações, consulte esta [seção](../../delivery/using/about-templates.md).
 
-1. Vá para a pasta **[!UICONTROL Resources > Delivery template]**.
-1. Duplicar o template de delivery **[!UICONTROL Email]**.
+1. Vá para a pasta de **[!UICONTROL Resources > Delivery template]**.
+1. Duplicate the **[!UICONTROL Email]** delivery template.
 
    ![](assets/use_case_abtesting_deliverymodel_001.png)
 
@@ -178,7 +178,7 @@ A próxima etapa é configurar as deliveries. Estão destinados às três popula
 
    ![](assets/use_case_abtesting_createdeliveries_007.png)
 
-1. Vincule a atividade **[!UICONTROL Wait]** à atividade **[!UICONTROL JavaScript code]**.
+1. Link the **[!UICONTROL Wait]** activity to the **[!UICONTROL JavaScript code]** activity.
 
    ![](assets/use_case_abtesting_createdeliveries_008.png)
 
@@ -251,7 +251,7 @@ Para obter uma explicação detalhada do script, consulte [Detalhes do script](#
 
    ![](assets/use_case_abtesting_configscript_003.png)
 
-1. Feche a atividade **[!UICONTROL JavaScript code]**.
+1. Close the **[!UICONTROL JavaScript code]** activity.
 1. Salve seu workflow.
 
 ### Detalhes do script {#details-of-the-script}
@@ -341,18 +341,18 @@ O exemplo acima permite selecionar o conteúdo de uma delivery com base na taxa 
 
 Depois que o script for criado para selecionar o vencedor do teste A/B, é possível definir os parâmetros da delivery final.
 
-1. Conecte a atividade **[!UICONTROL JavaScript code]** à atividade restante **[!UICONTROL Delivery]**.
-1. Abra a atividade **[!UICONTROL Delivery]**.
-1. Desmarque a opção **[!UICONTROL Generate an outbound transition]** para finalizar o workflow com esta atividade.
+1. Connect the **[!UICONTROL JavaScript code]** activity to the remaining **[!UICONTROL Delivery]** activity.
+1. Open the **[!UICONTROL Delivery]** activity.
+1. Uncheck the **[!UICONTROL Generate an outbound transition]** option to finish the workflow with this activity.
 1. Deixe as outras opções em seus valores padrão.
 
    ![](assets/ab_test_final_delivery.png)
 
-Ao preparar o delivery especificado na transição (definido por meio da atividade **[!UICONTROL Javascript Code]**), é possível aprovar e iniciar o envio, conforme descrito na próxima etapa.
+Ao preparar o delivery especificado na transição (definido por meio da atividade **[!UICONTROL Javascript Code]**),  ), é possível aprovar e iniciar o envio, conforme descrito na próxima etapa.
 
 ## Etapa 7: início do workflow {#step-7--starting-the-workflow}
 
-1. Clique em **[!UICONTROL Start]** para iniciar o workflow.
+1. Click **[!UICONTROL Start]** the workflow.
 
    ![](assets/use_case_abtesting_startwkfl_001.png)
 
@@ -370,7 +370,7 @@ Ao preparar o delivery especificado na transição (definido por meio da ativida
 
 Depois que as deliveries forem enviadas, é possível verificar quais recipients receberam e se eles abriram ou não a entrega.
 
-* Para descobrir quais recipients foram selecionados, abra um delivery pelo painel de campanha e clique na guia **[!UICONTROL Delivery]**.
+* Para descobrir quais recipients foram selecionados, abra um pelo painel de campanha e clique na guia **[!UICONTROL Delivery]** Delivery.
 
    ![](assets/use_case_abtesting_analysis_001.png)
 
