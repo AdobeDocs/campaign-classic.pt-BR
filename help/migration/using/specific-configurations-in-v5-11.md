@@ -11,11 +11,11 @@ audience: migration
 content-type: reference
 topic-tags: configuration
 discoiquuid: fc280640-528d-44de-87d8-52f443772abd
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 963aaa81971a8883b944bfcf4d1a00d729627916
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '1045'
+ht-degree: 5%
 
 ---
 
@@ -37,13 +37,13 @@ Alguns componentes de aplicativos da Web, por exemplo os vários campos de fórm
 Durante a migração, você **deve** verificar o caminho do arquivo de log especificado no aviso:
 
 * **O arquivo não está vazio**: contém avisos relativos a inconsistências registradas antes da migração e que ainda existem. Pode ser o código JavaScript em um aplicativo da Web que faz referência a uma ID inexistente. Cada erro deve ser verificado e corrigido.
-* **O arquivo está vazio**: isso significa que o Adobe Campaign não detectou nenhum problema.
+* **O arquivo está vazio**: isso significa que a Adobe Campaign não detectou nenhum problema.
 
 Se o arquivo estiver vazio ou não, verifique se essas IDs não são usadas para configuração em outro lugar (e adapte a configuração, se isso for o caso).
 
-## Workflows {#workflows}
+## Fluxos de trabalho {#workflows}
 
-Como o nome do diretório de instalação do Adobe Campaign foi alterado, alguns fluxos de trabalho podem não funcionar após a migração. Se um fluxo de trabalho fizer referência ao diretório nl5 em uma de suas atividades, isso gerará um erro. Substitua esta referência por **compilação**. Você pode executar uma consulta SQL para identificar esses fluxos de trabalho (exemplo do PostgreSQL):
+Como o nome do diretório de instalação do Adobe Campaign foi alterado, alguns workflows podem não funcionar após a migração. Se um fluxo de trabalho fizer referência ao diretório nl5 em uma de suas atividades, isso gerará um erro. Substitua esta referência por **compilação**. Você pode executar um query SQL para identificar esses workflows (exemplo do PostgreSQL):
 
 ```
 SELECT   iWorkflowId, sInternalName, sLabel 
@@ -53,7 +53,7 @@ WHERE mData LIKE '%nl5%';
 
 ## Facilidade de uso {#user-friendliness}
 
-A página inicial do Adobe Campaign v5.11 não está mais disponível.
+O home page Adobe Campaign v5.11 não está mais disponível.
 
 Embora não seja recomendado, existem algumas soluções se você desejar manter interfaces específicas do Adobe Campaign v5.11. Para obter mais informações, entre em contato conosco.
 
@@ -73,17 +73,17 @@ mysql_tzinfo_to_sql /usr/share/zoneinfo | mysql -u root mysql
 >
 >Para obter mais informações, consulte a página [https://dev.mysql.com/doc/refman/8.0/en/time-zone-support.html](https://dev.mysql.com/doc/refman/8.0/en/time-zone-support.html) .
 
-Se modificações tiverem sido feitas na estrutura do banco de dados, durante a configuração, por exemplo (criação de índices específicos, criação de exibições SQL etc.), determinadas precauções devem ser tomadas ao migrar. Com efeito, certas modificações podem ser geradas por incompatibilidades com o procedimento de migração. Por exemplo, a criação de exibições SQL contendo campos de **Carimbo de data e hora** não é compatível com a opção **usetimestamptz** . Por conseguinte, recomendamos que siga as recomendações abaixo:
+Se modificações tiverem sido feitas na estrutura do banco de dados, durante a configuração, por exemplo (criação de índices específicos, criação de visualizações SQL etc.), determinadas precauções devem ser tomadas ao migrar. Com efeito, certas modificações podem ser geradas por incompatibilidades com o procedimento de migração. Por exemplo, a criação de visualizações SQL que contêm campos de **Carimbo de data e hora** não é compatível com a opção **usetimestamptz** . Por conseguinte, recomendamos que siga as recomendações abaixo:
 
 1. Antes de iniciar a migração, faça backup do banco de dados.
 1. Excluir alterações de SQL.
-1. Execute a pós-atualização de acordo com o procedimento detalhado nos [Pré-requisitos para migração para a seção Adobe Campaign 7](../../migration/using/prerequisites-for-migration-to-adobe-campaign-7.md) .
+1. Execute o pós-upgrade de acordo com o procedimento detalhado na seção [Pré-requisitos para migração para o Adobe Campaign 7](../../migration/using/prerequisites-for-migration-to-adobe-campaign-7.md) .
    >[!NOTE]
    >
-   >É imperativo seguir as etapas de migração apresentadas na seção Pré-requisitos [para migração para o Adobe Campaign 7](../../migration/using/prerequisites-for-migration-to-adobe-campaign-7.md) .
+   >É imperativo que você siga as etapas de migração apresentadas na [seção Pré-requisitos para migração para o Adobe Campaign 7](../../migration/using/prerequisites-for-migration-to-adobe-campaign-7.md) .
 1. Reintegrar alterações SQL.
 
-Neste exemplo, uma exibição **NmcTrackingLogMessages** foi criada e tem um campo **Carimbo** de data e hora chamado **tslog**. Nesse caso, o procedimento de migração falha e a seguinte mensagem de erro é exibida:
+Neste exemplo, uma visualização **NmcTrackingLogMessages** foi criada e tem um campo **Carimbo** de data e hora chamado **tslog**. Nesse caso, o procedimento de migração falha e a seguinte mensagem de erro é exibida:
 
 ```
 2011-10-04 11:57:51.804Z B67B28C0 1 info log Updating table 'NmcTrackingLogMessages'
@@ -91,21 +91,21 @@ Neste exemplo, uma exibição **NmcTrackingLogMessages** foi criada e tem um cam
 2011-10-04 11:57:51.804Z B67B28C0 1 error log SQL order 'ALTER TABLE NmcTrackingLogMessages ALTER COLUMN tsLog TYPE TIMESTAMPTZ' was not executed. (iRc=-2006)
 ```
 
-Para garantir que a pós-atualização funcione, você deve excluir a exibição antes da migração e recriá-la após a migração, ao mesmo tempo em que a adapta ao modo TIMESTAMP WITH TIMEZONE.
+Para garantir que a pós-atualização funcione, você deve excluir a visualização antes da migração e recriá-la após a migração, ao mesmo tempo em que a adapta ao modo TIMESTAMP WITH TIMEZONE.
 
 ## Rastreamento {#tracking}
 
 A fórmula de rastreamento foi modificada. Ao migrar, a fórmula antiga (v5) é substituída pela nova (v7). Se você usar uma fórmula personalizada no Adobe Campaign v5, essa configuração deverá ser adaptada no Adobe Campaign v7 (opções **NmsTracking_ClickFórmula** e **NmsTracking_OpenFórmula** ).
 
-O gerenciamento de rastreamento da Web também foi modificado. Depois que a migração para v7 for realizada, você deverá iniciar o assistente de implantação para concluir a configuração do rastreamento da Web.
+O gerenciamento de rastreamentos web também foi modificado. Depois que a migração para v7 for realizada, você deverá start o assistente de implantação para concluir a configuração do rastreamento da Web.
 
 ![](assets/migration_web_tracking.png)
 
 Três modos estão disponíveis:
 
-* **Rastreamento** da Web da sessão: Se o **[!UICONTROL Leads]** pacote não tiver sido instalado, essa opção será selecionada por padrão. Essa opção é a mais ideal em termos de desempenho e permite limitar o tamanho dos registros de rastreamento.
-* **Rastreamento permanente na Web**
-* **Rastreamento** Anônimo da Web: Se o **[!UICONTROL Leads]** pacote estiver instalado, essa opção será selecionada por padrão. É a opção que mais consome recursos. Como acima, a coluna **sSourceId** deve ser indexada (na tabela de rastreamento e na tabela **CrmIncomingLead** ).
+* **Rastreamento** da Web da sessão: Se o **[!UICONTROL Leads]** pacote não tiver sido instalado, essa opção será selecionada por padrão. Essa opção é a mais ideal em termos de desempenho e permite limitar o tamanho dos logs de rastreamento.
+* **Rastreamento web permanente**
+* **Rastreamento web** anônimo: Se o **[!UICONTROL Leads]** pacote estiver instalado, essa opção será selecionada por padrão. É a opção que mais consome recursos. Como acima, a coluna **sSourceId** deve ser indexada (na tabela de rastreamento e na tabela **CrmIncomingLead** ).
 
 >[!NOTE]
 >
@@ -118,7 +118,7 @@ Durante a migração, a estrutura em árvore é automaticamente reorganizada com
 Uma opção foi adicionada para desativar a migração automática da árvore de navegação. Esta operação agora é manual. Pastas obsoletas não são excluídas e novas pastas não são adicionadas. Essa opção só deve ser usada se a árvore de navegação predefinida v5 tiver sofrido muitas alterações. Adicione a opção ao console, antes de migrar, no **[!UICONTROL Administration > Options]** nó:
 
 * Nome interno: NlMigration_KeepFolderStructure
-* Tipo de dados:Número inteiro
+* Tipo de dados: Número inteiro
 * Valor (texto): 1
 
 Se você usar essa opção, após a migração, será necessário excluir pastas obsoletas, adicionar as novas pastas e executar todas as verificações necessárias.
@@ -130,9 +130,9 @@ As seguintes pastas precisam ser adicionadas após a migração:
 | Nome interno | Rótulo | Condição |
 |---|---|---|
 | nmsAutoObjects | Objetos criados automaticamente | - |
-| nmsCampaignAdmin | Gerenciamento de campanhas | - |
-| nmsCampaignMgt | Gerenciamento de campanhas | - |
-| nmsCampaignRes | Gerenciamento de campanhas | - |
+| nmsCampaignAdmin | Gestão de campanha | - |
+| nmsCampaignMgt | Gestão de campanha | - |
+| nmsCampaignRes | Gestão de campanha | - |
 | nmsModels | Modelos | - |
 | nmsOnlineRes | Online | - |
 | nmsProduction | Produção | - |
@@ -166,6 +166,6 @@ As pastas obsoletas a serem excluídas após a migração são as seguintes:
 | nmsAdminPlan | Administração | Campanha instalada |
 | nmsResourcePlan | Recursos | Campanha instalada |
 | nmsResourcesModels | Modelos | Campanha instalada |
-| nmsRootPlan | Gerenciamento de campanhas | Campanha instalada |
+| nmsRootPlan | Gestão de campanha | Campanha instalada |
 | nmsOperador | Operadores de marketing | MRM instalado |
 
