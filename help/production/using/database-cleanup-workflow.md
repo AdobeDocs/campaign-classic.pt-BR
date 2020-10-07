@@ -11,11 +11,8 @@ audience: production
 content-type: reference
 topic-tags: data-processing
 discoiquuid: 6b188d78-abb4-4f03-80b9-051ce960f43c
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: c8cfdb67a4be2bc27baa363032c74a4aa8665e2a
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
 workflow-type: tm+mt
 source-wordcount: '2908'
 ht-degree: 1%
@@ -65,9 +62,9 @@ Os campos da **[!UICONTROL Purge of data]** janela coincidem com as seguintes op
 * Rastreamento consolidado: **NmsCleanup_TrackingStatPurgeDelay** (consulte [Limpeza de logs de rastreamento](#cleanup-of-tracking-logs))
 * Logs do delivery: **NmsCleanup_BroadLogPurgeDelay** (consulte [Limpeza de logs do delivery](#cleanup-of-delivery-logs))
 * Logs de rastreamento: **NmsCleanup_TrackingLogPurgeDelay** (consulte [Limpeza de logs de rastreamento](#cleanup-of-tracking-logs))
-* delivery excluídos: **NmsCleanup_RecycledDeliveryPurgeDelay** (consulte [Limpeza de delivery a serem excluídos ou reciclados](#cleanup-of-deliveries-to-be-deleted-or-recycled))
+* Delivery excluídos: **NmsCleanup_RecycledDeliveryPurgeDelay** (consulte [Limpeza de delivery a serem excluídos ou reciclados](#cleanup-of-deliveries-to-be-deleted-or-recycled))
 * Importar rejeitos: **NmsCleanup_RejectsPurgeDelay** (consulte [Limpeza de rejeitos gerados por importações](#cleanup-of-rejects-generated-by-imports-))
-* perfis do Visitante: **NmsCleanup_VisitorPurgeDelay** (consulte [Limpeza de visitantes](#cleanup-of-visitors))
+* Perfis do visitante: **NmsCleanup_VisitorPurgeDelay** (consulte [Limpeza de visitantes](#cleanup-of-visitors))
 * Apresentações da oferta: **NmsCleanup_PropositionPurgeDelay** (consulte [Limpeza de proposições](#cleanup-of-propositions))
 
    >[!NOTE]
@@ -75,7 +72,7 @@ Os campos da **[!UICONTROL Purge of data]** janela coincidem com as seguintes op
    >O **[!UICONTROL Offer propositions]** campo só estará disponível quando o módulo **Interação** estiver instalado.
 
 * Eventos: **NmsCleanup_EventPurgeDelay** (consulte a [Limpeza de eventos](#cleansing-expired-events)expirados)
-* eventos arquivados: **NmsCleanup_EventHistoPurgeDelay** (consulte os eventos [vencidos da](#cleansing-expired-events)Limpeza)
+* Eventos arquivados: **NmsCleanup_EventHistoPurgeDelay** (consulte os eventos [vencidos da](#cleansing-expired-events)Limpeza)
 
    >[!NOTE]
    >
@@ -102,7 +99,7 @@ Na data e hora definidas no scheduler do fluxo de trabalho (consulte [O schedule
 
 A primeira tarefa executada pelo **[!UICONTROL Database cleanup]** fluxo de trabalho exclui todos os grupos com o **deleteStatus != 0** atributo do **NmsGroup**. Os registros ligados a esses grupos e que existem em outras tabelas também são excluídos.
 
-1. As Listas a serem excluídas são recuperadas usando o seguinte query SQL:
+1. As listas a serem excluídas são recuperadas usando o seguinte query SQL:
 
    ```
    SELECT iGroupId, sLabel, iType FROM NmsGroup WHERE iDeleteStatus <> 0 OR tsExpirationDate <= GetDate() 
@@ -206,7 +203,7 @@ Esta tarefa interrompe delivery cujo período de validade expirou.
 
    onde o modo **delivery 1** corresponde ao **[!UICONTROL Mass delivery]** modo, o **estado 51** corresponde ao **[!UICONTROL Start pending]** estado, o **estado 85** **[!UICONTROL Stopped]** corresponde ao estado e o maior número de logs do delivery atualizados em massa no servidor delivery é igual a 10.000.
 
-1. O fluxo de trabalho então inclui a lista de delivery expirados recentemente que usam mid-sourcing. Os Delivery para os quais nenhum logs do delivery foi recuperado por meio do servidor mid-sourcing são excluídos.
+1. O fluxo de trabalho então inclui a lista de delivery expirados recentemente que usam mid-sourcing. Os delivery para os quais nenhum logs do delivery foi recuperado por meio do servidor mid-sourcing são excluídos.
 
    O query a seguir é usado:
 
@@ -220,7 +217,7 @@ Esta tarefa interrompe delivery cujo período de validade expirou.
    SELECT iExtAccountId FROM NmsExtAccount WHERE iActive<>0 AND sName=$(providerName)
    ```
 
-1. Na lista de delivery expirados, logs do delivery cujo status é **[!UICONTROL Pending]** , mudem para **[!UICONTROL Delivery cancelled]** e todos os delivery desta lista mudam para **[!UICONTROL Finished]** .
+1. Na lista de delivery expirados, logs do delivery cujo status é **[!UICONTROL Pending]** , alterne para **[!UICONTROL Delivery cancelled]** e todos os delivery desta lista mudam para **[!UICONTROL Finished]** .
 
    Os seguintes query são usados:
 
@@ -487,7 +484,7 @@ Essa tarefa permite que você expurgue os logs do delivery armazenados em vária
 
 Esta tarefa limpa a tabela **NmsEmailErrorStat** . O programa principal (**coalesceErrors**) define duas datas:
 
-* **Data** do Start: data do próximo processo que corresponde à opção **NmsLastErrorStateCoalesce** ou a data mais recente na tabela.
+* **Data** do start: data do próximo processo que corresponde à opção **NmsLastErrorStateCoalesce** ou a data mais recente na tabela.
 * **Data** de término: data atual do servidor.
 
 Se a data de start for maior ou igual à data de término, nenhum processo ocorrerá. Nesse caso, a mensagem **coalesceUpToDate** é exibida.
@@ -609,7 +606,7 @@ Se o valor da opção for 1, a atualização de estatísticas não será executa
 
 Se o valor da opção for 2, isso executará a análise do armazenamento no modo detalhado (ANALYZE VERBOSE) no PostgreSQL e atualizará as estatísticas em todos os outros bancos de dados. Para verificar se esse comando é executado, verifique os logs do PostgreSQL. O ANALYZE emitirá linhas no formato: `INFO: analyzing "public.nmsactivecontact"`.
 
-### Limpeza de Subscrições (NMAC) {#subscription-cleanup--nmac-}
+### Limpeza de subscrições (NMAC) {#subscription-cleanup--nmac-}
 
 Esta tarefa exclui quaisquer subscrições relacionadas a serviços ou aplicativos móveis excluídos.
 
@@ -623,7 +620,7 @@ Em seguida, a tarefa recupera os nomes das tabelas vinculadas ao link **appSubsc
 
 Esse fluxo de trabalho de limpeza também exclui todas as entradas em que idisabled = 1 que não foram atualizadas desde o tempo definido na opção **NmsCleanup_AppSubscriptionRcpPurgeDelay** .
 
-### Informações da sessão de Limpeza {#cleansing-session-information}
+### Informações da sessão de limpeza {#cleansing-session-information}
 
 Esta tarefa limpa as informações da tabela **sessionInfo** , sendo usado o seguinte query:
 
@@ -635,6 +632,6 @@ Esta tarefa limpa as informações da tabela **sessionInfo** , sendo usado o seg
 
 Essa tarefa limpa os eventos recebidos e armazenados nas instâncias de execução e os eventos arquivados em uma instância de controle.
 
-### Reações Limpezas {#cleansing-reactions}
+### Reações limpezas {#cleansing-reactions}
 
 Esta tarefa limpa as reações (tabela **NmsRemaMatchRcp**) nas quais as hipóteses foram eliminadas.
