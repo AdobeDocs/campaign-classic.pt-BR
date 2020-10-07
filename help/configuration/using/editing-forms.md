@@ -11,11 +11,11 @@ audience: configuration
 content-type: reference
 topic-tags: input-forms
 discoiquuid: 0c33fd79-8fa5-4cc0-8881-c6d6f4ee1648
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 579329d9194115065dff2c192deb0376c75e67bd
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '48'
+ht-degree: 43%
 
 ---
 
@@ -30,7 +30,7 @@ A zona de edição permite inserir o conteúdo XML do formulário de entrada:
 
 ![](assets/d_ncs_integration_form_edit.png)
 
-A visualização gera uma exibição do formulário de entrada:
+A pré-visualização gera uma exibição do formulário de entrada:
 
 ![](assets/d_ncs_integration_form_preview.png)
 
