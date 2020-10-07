@@ -11,11 +11,11 @@ audience: configuration
 content-type: reference
 topic-tags: use-a-custom-recipient-table
 discoiquuid: 41338d32-b95c-45ae-bee6-17b2af5bd837
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: d5c1732858fd5d079bbd9a755997c04adf5c9d47
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '325'
+ht-degree: 4%
 
 ---
 
@@ -75,7 +75,7 @@ Siga as etapas abaixo:
 
    >[!NOTE]
    >
-   >A extensão da **menção:sementeMembro** schema deve estar em conformidade com as estruturas de uma campanha e de um delivery em Adobe Campaign.
+   >A extensão do **schema:sementeMember** deve estar em conformidade com as estruturas de uma campanha e de um delivery da Adobe Campaign.
 
    >[!IMPORTANT]
    >
@@ -102,4 +102,4 @@ Siga as etapas abaixo:
      </container>
    ```
 
-Se todos os atributos do endereço semente não forem inseridos, o Adobe Campaign substituirá automaticamente os perfis: eles serão inseridos automaticamente durante a personalização usando dados de um perfil existente.
+Se todos os atributos do endereço semente não forem inseridos, a Adobe Campaign substituirá automaticamente os perfis: eles serão inseridos automaticamente durante a personalização usando dados de um perfil existente.
