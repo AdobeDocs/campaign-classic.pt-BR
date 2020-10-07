@@ -11,18 +11,18 @@ audience: production
 content-type: reference
 topic-tags: production-procedures
 discoiquuid: d08ff769-da93-4f86-8802-f0fb5b051ece
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 34cd6e6cf5652c9e2163848c2b1ef32f53ee6ca4
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '283'
+ht-degree: 5%
 
 ---
 
 
 # Princípio de configuração{#configuration-principle}
 
-A plataforma do Adobe Campaign se baseia no conceito de instâncias, semelhante ao dos hosts virtuais usados pelo Apache. Esse modo de operação permite que você compartilhe um servidor atribuindo várias instâncias a ele. As instâncias são completamente separadas umas das outras e operam com seu próprio banco de dados e arquivo de configuração.
+A plataforma Adobe Campaign baseia-se no conceito de instâncias, semelhante ao dos hosts virtuais usados pelo Apache. Esse modo de operação permite que você compartilhe um servidor atribuindo várias instâncias a ele. As instâncias são completamente separadas umas das outras e operam com seu próprio banco de dados e arquivo de configuração.
 
 Para um determinado servidor, há dois elementos comuns a todas as instâncias do Adobe Campaign:
 
