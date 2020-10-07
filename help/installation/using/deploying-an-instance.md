@@ -11,14 +11,11 @@ audience: installation
 content-type: reference
 topic-tags: initial-configuration
 discoiquuid: 71fc8bfc-40e0-4592-a540-bd6807ded3a0
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: e7de74feb61cc8f4b386a6ff86fc58b9c9e9ca1d
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
 workflow-type: tm+mt
 source-wordcount: '3066'
-ht-degree: 3%
+ht-degree: 4%
 
 ---
 
@@ -27,7 +24,7 @@ ht-degree: 3%
 
 >[!NOTE]
 >
->As configurações do lado do servidor só podem ser executadas pela Adobe para implantações hospedadas pela Adobe. Para saber mais sobre as diferentes implantações, consulte a seção Modelos [de](../../installation/using/hosting-models.md) hospedagem ou [este artigo](https://helpx.adobe.com/br/campaign/kb/acc-on-prem-vs-hosted.html).
+>As configurações do lado do servidor só podem ser executadas por Adobe para implantações hospedadas pelo Adobe. Para saber mais sobre as diferentes implantações, consulte a seção Modelos [de](../../installation/using/hosting-models.md) hospedagem ou [este artigo](https://helpx.adobe.com/br/campaign/kb/acc-on-prem-vs-hosted.html).
 
 ## Assistente de implantação {#deployment-wizard}
 
@@ -90,21 +87,21 @@ Indique os seguintes parâmetros:
 * **[!UICONTROL Sender address]** : O endereço do remetente,
 * **[!UICONTROL Reply address text]** : O nome, que é personalizável, que será usado quando o recipient clicar no **[!UICONTROL Reply]** botão em seu software cliente de e-mail,
 * **[!UICONTROL Reply address]** : O endereço de email a ser usado quando o recipient clicar no **[!UICONTROL Reply]** botão em seu software cliente de email,
-* **[!UICONTROL Error address]** : Endereço de email das mensagens com erros. Este é o endereço técnico usado para lidar com emails de rejeição, incluindo emails recebidos pelo servidor de Adobe Campaign devido a endereços de público alvo inexistentes.
+* **[!UICONTROL Error address]** : Endereço de email das mensagens com erros. Este é o endereço técnico usado para lidar com emails de rejeição, incluindo emails recebidos pelo servidor Adobe Campaign devido a endereços de público alvo inexistentes.
 
-Além disso, você pode especificar as **máscaras** autorizadas para o endereço do remetente e o endereço do erro. Se necessário, essas máscaras podem ser separadas por vírgulas. Essa configuração é opcional. Quando os campos são inseridos, o Adobe Campaign verifica no momento do delivery (durante a análise, se o endereço não incluir nenhuma variável) se os endereços são válidos. Esse modo operacional garante que não sejam usados endereços que possam acionar problemas de delivery. Os endereços dos Delivery devem ser configurados no servidor do delivery.
+Além disso, você pode especificar as **máscaras** autorizadas para o endereço do remetente e o endereço do erro. Se necessário, essas máscaras podem ser separadas por vírgulas. Essa configuração é opcional. Quando os campos são inseridos, a Adobe Campaign verifica no momento do delivery (durante a análise, se o endereço não incluir nenhuma variável) se os endereços são válidos. Esse modo operacional garante que não sejam usados endereços que possam acionar problemas de delivery. Os endereços dos delivery devem ser configurados no servidor do delivery.
 
 ### Caracteres autorizados em endereços {#characters-authorized-in-addresses}
 
 <!--This window enables you to define, for all email campaigns, the delivery and address-quality management options.-->
 
-No banco de dados do Adobe Campaign, todos os endereços de email devem ser criados da seguinte forma: `x@y.z`. Os caracteres **x**, **y** e **z** não devem estar vazios e não devem incluir caracteres não autorizados.
+No banco de dados Adobe Campaign, todos os endereços de email devem ser criados da seguinte forma: `x@y.z`. Os caracteres **x**, **y** e **z** não devem estar vazios e não devem incluir caracteres não autorizados.
 
 É possível definir aqui os caracteres autorizados (&#39;política de dados&#39;) no campo de email do banco de dados. Os caracteres não incluídos na lista serão proibidos e, portanto, recusados ao inserir informações no banco de dados por meio da interface, por meio de um formulário da Web e também ao importar dados.
 
 Duas listas estão disponíveis: **Apenas** europeus ou apenas **** EUA. Outros caracteres podem ser adicionados, se necessário.
 
-### Parâmetros do Delivery {#delivery-parameters}
+### Parâmetros do delivery {#delivery-parameters}
 
 Os parâmetros **avançados...** o link permite acessar opções de delivery, parâmetros vinculados a novas tentativas e quarentenas.
 
@@ -116,25 +113,25 @@ As seguintes opções estão disponíveis:
 
 * **[!UICONTROL Delivery duration of messages]** : Além desse tempo, o delivery é parado (por padrão, 5 dias),
 * **[!UICONTROL Online resources validity duration]** : Tempo durante o qual são mantidas as informações do perfil do recipient para gerar mirrores page,
-* **[!UICONTROL Exclude recipients who no longer wish to be contacted]** : Quando esta opção for selecionada, os recipient na lista de blocos não serão contatados,
+* **[!UICONTROL Exclude recipients who no longer wish to be contacted]** : Quando esta opção for selecionada, os recipient na lista de bloqueios não serão contatados,
 * **[!UICONTROL Automatically ignore doubles]** : Quando essa opção for selecionada, o delivery não será feito para endereços de duplicado.
 
 ### Repetir parâmetros {#retry-parameters}
 
 As informações sobre recuperações são fornecidas nos períodos **de** recuperação e nos campos **Número de recuperações** : quando um recipient é inacessível, por exemplo, se sua caixa de entrada estiver cheia, por padrão o programa tentará contatá-los 5 vezes, com um intervalo de uma hora entre cada tentativa (durante o tempo máximo do delivery). Esses valores podem ser alterados de acordo com suas necessidades.
 
-### Parâmetros de Quarentena {#quarantine-parameters}
+### Parâmetros de quarentena {#quarantine-parameters}
 
 As opções de configuração para quarentena são as seguintes:
 
 * **[!UICONTROL Duration between two significant errors]** : insira um valor (&quot;1d&quot; por padrão: 1 dia) para definir o tempo que o aplicativo aguarda antes de incrementar o contador de erros em caso de falha,
-* **[!UICONTROL Maximum number of errors before quarantine]** : quando esse valor for atingido, o endereço de email será colocado em quarentena (por padrão, &quot;5&quot;: o endereço será colocado em quarentena no sexto erro). Isso significa que o contato será automaticamente excluído dos delivery subsequentes.
+* **[!UICONTROL Maximum number of errors before quarantine]** : quando esse valor for atingido, o endereço de email será colocado em quarentena (por padrão, &quot;5&quot;: o endereço será colocado em quarentena no sexto erro). Isso significa que o contato será automaticamente excluído dos próximos deliveries.
 
 ## Gerenciamento de emails salvos {#managing-bounced-emails}
 
 O e-mail de rejeição é extremamente importante para qualificar erros de delivery. Esses erros são classificados no diretório NP@I depois que as regras determinarem sua causa.
 
-Esta etapa só estará disponível se as opções de gerenciamento de e- **mail** e **Rejeitar e-mail** estiverem selecionadas na primeira etapa do assistente de implantação. Refer to [General parameters](#general-parameters).
+Esta etapa só estará disponível se as opções de gerenciamento de canal **de e-** mail e **Rejeição de e-mail** estiverem selecionadas na primeira etapa do assistente de implantação. Refer to [General parameters](#general-parameters).
 
 Esta etapa permite definir configurações para gerenciar e-mails de rejeição.
 
@@ -155,9 +152,9 @@ Depois que as configurações de POP forem especificadas, clique em **Testar** p
 
 ### Mensagens de rejeição não processadas {#unprocessed-bounce-mails}
 
-As rejeições são feitas automaticamente por Adobe Campaign, aplicando as regras listadas em **Administração > Gestão de campanha > Gerenciamento de não entregas > nó de qualificação** do log de Delivery. For more on this, refer to [Bounce mail management](../../delivery/using/understanding-delivery-failures.md#bounce-mail-management).
+As rejeições são feitas automaticamente pela Adobe Campaign, aplicando as regras listadas em **Administração > Gestão de campanha > Gerenciamento de não entregas > nó de qualificação** do log de Delivery. For more on this, refer to [Bounce mail management](../../delivery/using/understanding-delivery-failures.md#bounce-mail-management).
 
-As rejeições não processadas não são exibidas na interface Adobe Campaign. Eles são excluídos automaticamente, a menos que sejam transferidos para uma caixa de correio de terceiros usando os seguintes campos:
+Rejeições não processadas não são exibidas na interface do Adobe Campaign. Eles são excluídos automaticamente, a menos que sejam transferidos para uma caixa de correio de terceiros usando os seguintes campos:
 
 * **[!UICONTROL Forwarding address]** : Preencha esse campo para transferir para um endereço de terceiros todas as mensagens de erro (processadas ou não processadas) coletadas pela plataforma Adobe Campaign.
 * **[!UICONTROL Address for errors]** : Preencha este campo para transferir para um endereço de terceiros apenas as mensagens de erro que o processo do InMail não pôde qualificar.
@@ -165,7 +162,7 @@ As rejeições não processadas não são exibidas na interface Adobe Campaign. 
 
 >[!IMPORTANT]
 >
->Para encaminhar emails de rejeição não processados, a Adobe recomenda preencher apenas o **[!UICONTROL Address for errors]** campo. No entanto, verifique se o endereço usado é verificado regularmente, pois isso pode colocar uma carga pesada em seu servidor de email. Entre em contato com o executivo da sua conta para obter mais informações.
+>Para encaminhar emails de rejeição não processados, o Adobe recomenda preencher apenas o **[!UICONTROL Address for errors]** campo. No entanto, verifique se o endereço usado é verificado regularmente, pois isso pode colocar uma carga pesada em seu servidor de email. Entre em contato com o executivo da sua conta para obter mais informações.
 
 ## Configuração de rastreamento {#tracking-configuration}
 
@@ -181,7 +178,7 @@ Quando você ativa o rastreamento em uma instância, os URLs nos delivery são a
 
 * As informações sobre URLs externos (seguras ou não) inseridas nesta página do assistente de implantação são usadas para criar o novo URL. Além dessas informações, o link modificado contém: os identificadores do delivery, do recipient e do URL.
 
-   As informações de rastreamento são coletadas por Adobe Campaign nos servidores de rastreamento para enriquecer os perfis dos recipient e os dados vinculados ao delivery ( **[!UICONTROL Tracking]** guias).
+   As informações de rastreamento são coletadas pela Adobe Campaign nos servidores de rastreamento para enriquecer os perfis dos recipient e os dados vinculados ao delivery ( **[!UICONTROL Tracking]** guias).
 
    As informações sobre URLs internos só são usadas pelo servidor de aplicativos Adobe Campaign para entrar em contato com os servidores de rastreamento.
 
@@ -199,7 +196,7 @@ Para garantir a eficiência do rastreamento nesta instância, as seguintes infor
 <!--With Mid-sourcing architecture, you can externalize tracking management. To do this:-->
 
 * **[!UICONTROL External URL]** e/ou **[!UICONTROL Secure external URL]** : Insira o URL de redirecionamento a ser usado no email a ser enviado.
-* **[!UICONTROL Internal URL(s)]** : URLs usados apenas pelo servidor de Adobe Campaign para entrar em contato com os servidores de rastreamento para coletar registros e fazer upload dos URLs. Não é necessário associá-lo à instância.
+* **[!UICONTROL Internal URL(s)]** : URLs usados apenas pelo servidor Adobe Campaign para entrar em contato com os servidores de rastreamento para coletar registros e fazer upload dos URLs. Não é necessário associá-lo à instância.
 
    Se você não especificar um URL, o URL de rastreamento será usado por padrão.
 
@@ -317,7 +314,7 @@ Essa etapa permite incluir preferências de política de dados.
 >
 >Por motivos de privacidade, recomendamos usar HTTPS para todos os recursos externos.
 
-Essa etapa permite definir URLs de acesso para páginas Adobe Campaign expostas na Internet.
+Esta etapa permite definir URLs de acesso para páginas do Adobe Campaign expostas na Internet.
 
 Você também deve indicar aqui as opções de publicação relacionadas aos Formulários web.
 
@@ -333,7 +330,7 @@ Use esta página para preencher os URLs do servidor para:
 
    Um mirror page é uma página dinâmica que exibe o conteúdo do email. Ele é acessado por meio de um link inserido na mensagem enviada ao recipient e pode conter elementos personalizados. O mirror page oferece ao recipient a possibilidade de ler a mensagem em um navegador da Internet em vez do software de e-mail, independentemente do formato do delivery (texto ou HTML). No entanto, os mirrores page só são gerados para um determinado delivery se o conteúdo HTML necessário tiver sido definido.
 
-O Adobe Campaign permite diferenciar esses três URLs para espalhar a carga em várias plataformas.
+A Adobe Campaign permite diferenciar esses três URLs para distribuir a carga por várias plataformas.
 
 ## Gerenciamento de recursos públicos {#managing-public-resources}
 
@@ -355,7 +352,7 @@ Public resources are accessible via the **Administration > Resources > Online > 
 
 ![](assets/install_pub_resources_view.png)
 
-### URL de Recursos públicos {#public-resources-url}
+### URL de recursos públicos {#public-resources-url}
 
 O primeiro campo permite que você especifique o start do URL usado para os recursos após o upload. Quando carregados, os recursos são acessíveis por meio desse novo URL.
 
@@ -367,7 +364,7 @@ Em um delivery, você pode usar imagens armazenadas na biblioteca de recursos p�
 
 * Para recursos públicos, o URL **https://** server **/res/** instance ****onde **instance**é o nome da instância de rastreamento.
 
-### Detecção de imagem de Delivery {#delivery-image-detection}
+### Detecção de imagem de delivery {#delivery-image-detection}
 
 Em um delivery, você pode usar imagens armazenadas na biblioteca de recursos públicos ou qualquer outra imagem ou imagem local armazenada em um servidor.
 
@@ -392,7 +389,7 @@ Os seguintes modos de publicação estão disponíveis:
 
 * Outros servidores Adobe Campaign
 
-   Você pode usar mais um servidor de Adobe Campaign onde os recursos serão copiados.
+   Você pode usar mais um servidor Adobe Campaign onde os recursos serão copiados.
 
    No lado do servidor, para usar um servidor Adobe Campaign dedicado, é necessário criar uma nova instância com o seguinte comando:
 
@@ -425,7 +422,7 @@ Os seguintes modos de publicação estão disponíveis:
 
 Para imagens, ele deve copiá-las da pasta &quot;images&quot; especificada pela opção **NmsDelivery_ImageSubDirectory** para um ou mais servidores frontais. Esses servidores armazenarão as imagens para torná-las acessíveis por meio do novo URL configurado.
 
-No evento de publicação em um servidor Adobe Campaign sem script de publicação manual, por padrão, as imagens de um delivery são armazenadas no `$(XTK_INSTALL_DIR)/var/res/img/ directory`. O URL correspondente é o seguinte: **`https://server/res/img`**.
+No evento de publicação em um servidor Adobe Campaign sem um script de publicação manual, por padrão, as imagens de um delivery são armazenadas no `$(XTK_INSTALL_DIR)/var/res/img/ directory`. O URL correspondente é o seguinte: **`https://server/res/img`**.
 
 `XTK_INSTALL_DIR)/var/res/$(INSTANCE_NAME)`. O URL correspondente é o seguinte: **`https://server/res/instance`** em que instância é o nome da instância de rastreamento.
 
@@ -455,11 +452,11 @@ Para cada recurso público que precisa ser sincronizado, é necessário adiciona
 
 O atributo status pode ser um dos três valores:
 
-* reserva: O recurso público está sincronizado
+* sobressalente: O recurso público está sincronizado
 
 * normal: Comportamento existente (sem sincronização)
 
-* lista de bloqueios: O URL será adicionado à lista de blocos se retornar um erro 404. A duração (em segundos) do URL que está na lista de blocos é definida por um atributo de **tempo limite** cujo valor padrão é 60s.
+* lista de bloqueios: O URL será adicionado à lista de bloqueios se retornar um erro 404. A duração (em segundos) do URL que está na lista de bloqueios é definida por um atributo de **tempo limite** cujo valor padrão é 60s.
 
 A configuração predefinida da sincronização é:
 
