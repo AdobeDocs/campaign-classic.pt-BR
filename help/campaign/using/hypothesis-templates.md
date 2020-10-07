@@ -11,11 +11,11 @@ audience: campaign
 content-type: reference
 topic-tags: response-manager
 discoiquuid: addfc395-7a85-4be1-a757-a719ed34bb33
-index: y
-internal: n
-snippet: y
-translation-type: ht
-source-git-commit: b47dcfa0e4ee2e5e43e7aa14b94e12fd70ff9c2d
+translation-type: tm+mt
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '1437'
+ht-degree: 91%
 
 ---
 
@@ -28,7 +28,7 @@ A configuração do template de hipótese permite definir o contexto para mensur
 
 Aplique as seguintes etapas para criar um template de hipótese:
 
-1. No navegador Adobe Campaign, clique em **[!UICONTROL Resources>Templates>Hypothesis templates]**.
+1. In the Adobe Campaign explorer, click **[!UICONTROL Resources>Templates>Hypothesis templates]**.
 
    ![](assets/response_hypothesis_model_creation_001.png)
 
@@ -60,7 +60,7 @@ A guia **[!UICONTROL General]** permite especificar as opções gerais do modelo
 
    >[!NOTE]
    >
-   >Se o template for aplicável a ofertas, a opção **[!UICONTROL Update offer proposition status]** está disponível na guia **[!UICONTROL Transações]**.
+   >If the template applies to offers, the **[!UICONTROL Update offer proposition status]** option is available in the **[!UICONTROL Transactions]** tab.
 
 * **[!UICONTROL Measurement with control group]**: permite indicar se um grupo de controle foi definido para o delivery ou campanha, assim como incluí-lo nos indicadores de mensuração. O grupo de controle, que não recebe deliveries, permite medir o impacto da campanha após o delivery, comparando-o com a amostragem alvo que recebeu o delivery.
 
@@ -75,13 +75,13 @@ A guia **[!UICONTROL General]** permite especificar as opções gerais do modelo
    ![](assets/response_properties_001.png)
 
 * **[!UICONTROL Execution folder]**: permite especificar a pasta de execução da hipótese.
-* **[!UICONTROL Taken into account in campaign ROI calculation]**: considera o resultado da hipótese no cálculo do ROI da respectiva campanha.
+* **[!UICONTROL Taken into account in campaign ROI calculation]**: leva o resultado da hipótese em conta no cálculo do ROI para a campanha relacionada.
 
 ### Configurações de execução do template de Hipótese {#hypothesis-template-execution-settings}
 
 A guia **[!UICONTROL General]** do modelo também permite especificar os parâmetros de execução da hipótese. As opções disponíveis são:
 
-* **[!UICONTROL Schedule execution for a time of low activity]**: permite agendar a aplicação da hipótese para otimizar as performances do Adobe Campaign. Quando essa opção é marcada, o workflow do processamento em campanhas executa o cálculo de hipóteses durante o tempo de inatividade.
+* **[!UICONTROL Schedule execution for a time of low activity]**: permite agendar a inicialização da hipótese para otimizar o desempenho do Adobe Campaign. Quando essa opção é marcada, o workflow do processamento em campanhas executa o cálculo de hipóteses durante o tempo de inatividade.
 
    ![](assets/response_exec_settings_002.png)
 
@@ -95,7 +95,7 @@ A guia **[!UICONTROL General]** do modelo também permite especificar os parâme
 
    Aplique o seguinte processo para especificar um cronograma:
 
-   1. Clique em **[!UICONTROL Frequency of execution...]** e, em seguida, no botão **[!UICONTROL Change...]**.
+   1. Click the **[!UICONTROL Frequency of execution...]** link, then the **[!UICONTROL Change...]** button.
 
       ![](assets/response_frequency_execution_001.png)
 
@@ -107,7 +107,7 @@ A guia **[!UICONTROL General]** do modelo também permite especificar os parâme
 
       ![](assets/response_frequency_execution_003.png)
 
-* **[!UICONTROL Log SQL queries in journal]**: esta função é destinada para usuários especialistas. Ele permite adicionar uma guia à auditoria da hipótese de mensuração para mostrar queries SQL. Isso permite a detecção de possíveis defeitos se uma simulação terminar com erros.
+* **[!UICONTROL Log SQL queries in journal]**: esta função é reservada para usuários especializados. Ele permite adicionar uma guia à auditoria da hipótese de mensuração para mostrar queries SQL. Isso permite a detecção de possíveis defeitos se uma simulação terminar com erros.
 * **[!UICONTROL Keep execution workflow]**: permite manter o fluxo de trabalho gerado automaticamente no início do cálculo da hipótese. Na hipótese criada a partir de um template que tem essa opção marcada, o workflow gerado está disponível para seguir o processo.
 
    >[!CAUTION]
@@ -120,7 +120,7 @@ A guia **[!UICONTROL General]** do modelo também permite especificar os parâme
 
 Esta guia contém vários campos e tabelas que permitem salvar o histórico das reações do recipient em termos de transações. Consulte o guia [Configuração](../../configuration/using/about-schema-reference.md) para obter mais informações sobre as tabelas dedicadas ao gestor de resposta.
 
-* **[!UICONTROL Schema (reaction log storage)]**: seleciona a tabela de reação de destinatários. A tabela pronta para uso no Adobe Campaign é a **NmsRemaMatchRcp**.
+* **[!UICONTROL Schema (reaction log storage)]**: selecione a tabela de reação do recipient. A tabela pronta para uso no Adobe Campaign é a **NmsRemaMatchRcp**.
 * **[!UICONTROL Transaction schema]**: escolha a tabela relacionada à hipótese, ou seja, a tabela de transação ou a de compra.
 * **[!UICONTROL Querying schema]**: escolha os critérios para filtrar a hipótese.
 * **[!UICONTROL Link to individuals]**: escolha o vínculo entre as Pessoas físicas e a tabela usada como schema de transações.
@@ -139,7 +139,7 @@ Esta guia contém vários campos e tabelas que permitem salvar o histórico das 
 
    ![](assets/response_transactions_001.png)
 
-* **[!UICONTROL Additional measures and data]**: permite a especificação de relatórios adicionais de medidas ou eixos de campos nas diferentes tabelas.
+* **[!UICONTROL Additional measures and data]**: permite que você especifique medidas ou eixos de relatórios adicionais dos campos nas diferentes tabelas.
 * **[!UICONTROL Update offer proposition status]**: permite a alteração do status da apresentação da oferta se um recipient for identificado pela hipótese.
 
    ![](assets/response_offer_status_001.png)
@@ -150,7 +150,7 @@ Depois de definir a tabela de transações e os campos que são relacionados, é
 
 * **Filtragem em transações**: na guia **[!UICONTROL Scope]**, é possível configurar um filtro na hipótese. Para fazer isso:
 
-   1. Clique em **[!UICONTROL Editar consulta]**.
+   1. Clique no link **[!UICONTROL Edit query]**.
 
       ![](assets/response_scope_filtering_001.png)
 
@@ -164,7 +164,7 @@ Depois de definir a tabela de transações e os campos que são relacionados, é
 
 * **Filter on recipients**: na guia **[!UICONTROL Scope]**, é possível limitar a hipótese de qualquer informação vinculada a uma mensagem (delivery, recipient, endereço de email, serviço, etc.):
 
-   1. Clique em **[!UICONTROL Add a filter]** e, em seguida, pressione **[!UICONTROL Edit query]**.
+   1. Click the **[!UICONTROL Add a filter]** link, then **[!UICONTROL Edit query]**.
 
       ![](assets/response_scope_filtering_004.png)
 
@@ -190,7 +190,7 @@ Depois de definir a tabela de transações e os campos que são relacionados, é
 
 Neste exemplo é criado um template de hipótese em um delivery do tipo mala direta. A tabela de transações (**Compras** no exemplo) que a hipótese está baseada contém linhas de compra vinculadas aos artigos ou produtos. O template é configurado para criar hipóteses em artigos ou produtos da tabela de compras.
 
-1. No navegador do Adobe Campaign, vá para o nó **[!UICONTROL Resources > Templates > Hypothesis templates]**.
+1. In the Adobe Campaign explorer, go to the **[!UICONTROL Resources > Templates > Hypothesis templates]** node.
 1. Clique em **[!UICONTROL New]** para criar um template.
 
    ![](assets/response_hypothesis_model_example_001.png)
@@ -201,7 +201,7 @@ Neste exemplo é criado um template de hipótese em um delivery do tipo mala dir
 
 1. Selecione **[!UICONTROL Deliveries]** como tipo de hipótese.
 1. Marque a opção correspondente para especificar que o delivery pode conter um grupo de controle.
-1. Escolha o canal **[!UICONTROL Direct mail]**.
+1. Escolha o **[!UICONTROL Direct mail]** canal.
 
    >[!NOTE]
    >
@@ -211,11 +211,11 @@ Neste exemplo é criado um template de hipótese em um delivery do tipo mala dir
 
    ![](assets/response_hypothesis_model_example_006.png)
 
-1. No campo **[!UICONTROL Transactions schema]** escolha a tabela de compra.
+1. In the **[!UICONTROL Transactions schema]** field, choose your purchase table.
 
    ![](assets/response_hypothesis_model_example_007.png)
 
-1. Selecione as linhas de compra no campo **[!UICONTROL Querying schema]**.
+1. Select purchase lines in the **[!UICONTROL Querying schema]** field.
 
    ![](assets/response_hypothesis_model_example_008.png)
 
@@ -233,7 +233,7 @@ Neste exemplo é criado um template de hipótese em um delivery do tipo mala dir
 
    ![](assets/response_hypothesis_model_example_005.png)
 
-1. Na guia **[!UICONTROL Scope]**, clique em **[!UICONTROL Edit query]** para criar um filtro na hipótese.
+1. In the **[!UICONTROL Scope]** tab, click **[!UICONTROL Edit query]** to create a filter on hypotheses.
 
    ![](assets/response_hypothesis_model_example_011.png)
 
