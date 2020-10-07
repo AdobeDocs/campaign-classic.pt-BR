@@ -11,11 +11,11 @@ audience: reporting
 content-type: reference
 topic-tags: designing-reports-with-cubes
 discoiquuid: 42db3be8-ee02-4158-adcd-846420a32460
-index: y
-internal: n
-snippet: y
-translation-type: ht
-source-git-commit: 20f835c357d016643ea1f3209ee4dfb6d3239f90
+translation-type: tm+mt
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '733'
+ht-degree: 99%
 
 ---
 
@@ -41,6 +41,7 @@ Com o módulo Marketing Analytics, o Campaign permite:
    * agregar dados e armazená-los em uma tabela de trabalho para pré-calcular indicadores com base nas necessidades do usuário,
    * reduzir o volume de dados envolvidos nos vários cálculos usados para relatórios e queries, otimizando significativamente os tempos de cálculo do indicador,
    * simplificar o acesso aos dados, permitindo aos usuários manipularem dados (sejam pré-agregados ou não) dependendo de várias dimensões.
+
    Para saber mais, consulte [Criação de indicadores](../../reporting/using/creating-indicators.md).
 
 1. Criar tabelas dinâmicas tendo em conta:
@@ -49,6 +50,7 @@ Com o módulo Marketing Analytics, o Campaign permite:
    * selecionar os dados a serem exibidos, bem como seu modo de exibição,
    * personalizar as medidas e os indicadores usados,
    * oferecer ferramentas de análise interativa aos usuários sem conhecimento técnico.
+
    Para saber mais, consulte [Uso de cubos para explorar dados](../../reporting/using/using-cubes-to-explore-data.md).
 
 1. Criar um query usando dados calculados e agregados em um cubo.
@@ -86,7 +88,7 @@ Ao trabalhar com cubos, os seguintes conceitos devem ser conhecidos:
 
 ## Workflow do cubo {#cube-workspace}
 
-Os cubos são armazenados no nó **[!UICONTROL Administration > Configuration > Cubes]**.
+Cubes are stored in the **[!UICONTROL Administration > Configuration > Cubes]** node.
 
 ![](assets/s_advuser_cube_node.png)
 
