@@ -1,7 +1,7 @@
 ---
-title: Características do esquema
-seo-title: Características do esquema
-description: Características do esquema
+title: Características do schema
+seo-title: Características do schema
+description: Características do schema
 seo-description: null
 page-status-flag: never-activated
 uuid: ca8eb7af-ef22-403a-8f04-ece5dc903174
@@ -11,38 +11,38 @@ audience: configuration
 content-type: reference
 topic-tags: use-a-custom-recipient-table
 discoiquuid: 441e80e1-0559-41fd-83e8-afdf94279e75
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: dbff132e3bf88c408838f91e50e4b047947ee32a
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '382'
+ht-degree: 2%
 
 ---
 
 
-# Características do esquema{#schema-characteristics}
+# Características do schema{#schema-characteristics}
 
-As características de um esquema que faz referência a uma tabela existente são as seguintes:
+As características de um schema que faz referência a uma tabela existente são as seguintes:
 
-* O Adobe Campaign não deve modificar objetos SQL relativos a tabelas existentes,
+* A Adobe Campaign não deve modificar objetos SQL relativos a tabelas existentes,
 * Os nomes das tabelas e colunas devem ser explicitamente especificados,
 * Os índices devem ser declarados.
 
 >[!IMPORTANT]
 >
->Não exclua os campos na tabela de destinatários padrão, mesmo que eles não sejam úteis. Isso pode causar erros de comportamento no banco de dados do Adobe Campaign.
+>Não exclua os campos na tabela de recipient padrão, mesmo que eles não sejam úteis. Isso pode causar erros de comportamento no banco de dados Adobe Campaign.
 
-## O atributo view {#the-view-attribute}
+## O atributo visualização {#the-view-attribute}
 
-Os esquemas de origem aceitam o atributo de **exibição** para o elemento raiz **srcSchema** . Ele deve ser usado quando o Adobe Campaign é manipulado em tabelas personalizadas. O atributo **view=&quot;true&quot;** diz ao assistente de atualização da estrutura do banco de dados para ignorar esse esquema. Portanto, o aplicativo está proibido de sincronizar a tabela, suas colunas e seus índices com o esquema correspondente.
+Os schemas de origem aceitam o atributo **visualização** para o elemento raiz **srcSchema** . Ele deve ser usado quando o Adobe Campaign é manipulado em tabelas personalizadas. O atributo **visualização=&quot;true&quot;** diz ao assistente de atualização da estrutura do banco de dados para ignorar esse schema. O aplicativo é, portanto, proibido de sincronizar a tabela, suas colunas e seus índices com o schema correspondente.
 
-Quando esse atributo é definido como **true**, o esquema é usado apenas para gerar consultas SQL para acessar os dados desta tabela.
+Quando esse atributo é definido como **true**, o schema é usado apenas para gerar query SQL para acessar os dados desta tabela.
 
 ## Nomes das tabelas e colunas {#names-of-tables-and-columns}
 
-Quando tabelas são criadas pelo assistente de atualização de tabela, os nomes das tabelas e colunas são gerados automaticamente com base nos nomes dos respectivos esquemas e atributos. No entanto, é possível forçar os nomes SQL a serem usados inserindo os seguintes atributos:
+Quando tabelas são criadas pelo assistente de atualização de tabela, os nomes das tabelas e colunas são gerados automaticamente com base nos nomes dos respectivos schemas e atributos. No entanto, é possível forçar os nomes SQL a serem usados inserindo os seguintes atributos:
 
-* **sqltable** dentro do elemento principal do esquema, para especificar a tabela,
+* **sqltable** dentro do elemento principal do schema, para especificar a tabela,
 * **sqlname** em cada atributo, para especificar as colunas.
 
 **Exemplo**:
@@ -62,15 +62,15 @@ Quando tabelas são criadas pelo assistente de atualização de tabela, os nomes
 
 Neste exemplo, se os nomes das tabelas e colunas não tivessem sido explicitamente especificados, o aplicativo teria usado **CusIndividual** para a tabela, **lastName** e **firstName** para as colunas.
 
-Em um esquema, é possível preencher apenas parte das colunas de uma tabela existente. As colunas não preenchidas não serão acessíveis ao usuário.
+Em um schema, é possível preencher apenas parte das colunas de uma tabela existente. As colunas não preenchidas não serão acessíveis ao usuário.
 
 ## Campos indexados {#indexed-fields}
 
-Ao classificar os registros de uma lista no console do cliente, um melhor desempenho é obtido ao classificar em campos indexados. Declarar um índice em um esquema faz com que o console exiba os campos indexados com uma linha vermelha na seta de ordem de classificação à esquerda do rótulo da coluna, como mostrado abaixo:
+Ao classificar os registros de uma lista no console do cliente, um melhor desempenho é obtido ao classificar em campos indexados. Declarar um índice em um schema faz com que o console exiba os campos indexados com uma linha vermelha sob a seta de ordem de classificação à esquerda do rótulo da coluna, como mostrado abaixo:
 
 ![](assets/s_ncs_integration_mapping_index.png)
 
-Em um esquema, um índice é definido da seguinte maneira:
+Em um schema, um índice é definido da seguinte forma:
 
 ```
 <dbindex name="name_of_index" unique="true/false"
@@ -80,9 +80,9 @@ Em um esquema, um índice é definido da seguinte maneira:
 </dbindex
 ```
 
-É por isso que é importante declarar os índices existentes da tabela personalizada no esquema correspondente.
+É por isso que é importante declarar os índices existentes da tabela personalizada no schema correspondente.
 
-Um índice é declarado implicitamente para cada declaração de chave e link do esquema de origem. A declaração de índice pode ser impedida especificando o atributo **noDbIndex=&quot;true&quot;** :
+Um índice é declarado implicitamente para cada declaração de chave e link do schema de origem. A declaração de índice pode ser impedida especificando o atributo **noDbIndex=&quot;true&quot;** :
 
 **Exemplo**:
 
