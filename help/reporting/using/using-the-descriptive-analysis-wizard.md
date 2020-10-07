@@ -11,11 +11,11 @@ audience: reporting
 content-type: reference
 topic-tags: analyzing-populations
 discoiquuid: 18ba04d9-7bab-4eea-8dbb-6c2c138c5293
-index: y
-internal: n
-snippet: y
-translation-type: ht
-source-git-commit: 1c86322fa95aee024f6c691b61a10c21a9a22eb7
+translation-type: tm+mt
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '1563'
+ht-degree: 88%
 
 ---
 
@@ -30,11 +30,11 @@ O assistente de análise descritiva pode ser iniciado por meio do menu **[!UICON
 
 ![](assets/reporting_descriptive_wz_launch.png)
 
-Para analisar uma tabela diferente da dos recipients padrão (**nms:recipient**), clique no link **[!UICONTROL Advanced settings...]** na última etapa do assistente e selecione a tabela que corresponde às suas configurações, neste caso **cus:individual**:
+To analyze a table other than the standard recipients one (**nms:recipient**), click the **[!UICONTROL Advanced settings...]** link in the last stage of the wizard and select the table that matches your settings, in this case **cus:individual**:
 
 ![](assets/reporting_descriptive_other_schema.png)
 
-Se deseja produzir estatísticas sobre parte dos dados, é possível definir um filtro: para fazer isso, clique no link **[!UICONTROL Advanced settings...]** e defina o filtro a ser aplicado, conforme mostrado abaixo:
+If you want to produce statistics on part of the data, you can define a filter: to do this, click the **[!UICONTROL Advanced settings...]** link and define the filter to apply, as shown below:
 
 ![](assets/reporting_descriptive_wz_filter.png)
 
@@ -50,7 +50,7 @@ Abra o assistente de análise descritiva selecionando os itens e clicando com o 
 
 ![](assets/reporting_descriptive_from_recipients.png)
 
-* Para um conjunto de **recipients**, selecione os recipients a serem analisados, clique com o botão direito do mouse e selecione **[!UICONTROL Actions > Explore...]**, conforme mostrado acima. Se um filtro for aplicado à lista de recipients, somente seu conteúdo será analisado.
+* For a set of **recipients**, select the recipients to be analyzed, then right-click and select **[!UICONTROL Actions > Explore...]**, as shown above. Se um filtro for aplicado à lista de recipients, somente seu conteúdo será analisado.
 
    Para selecionar todos os recipients na pasta ou no filtro atual, use o atalho CTRL+A. Isso significa selecionar até mesmo os recipients não mostrados.
 
@@ -68,7 +68,7 @@ Abra o assistente de análise descritiva selecionando os itens e clicando com o 
 
 O template **[!UICONTROL Qualitative distribution]** permite criar estatísticas em todos os tipos de dados (ex: nome da empresa, domínio de email).
 
-As opções de configuração disponíveis para um relatório criado por meio do template de **[!UICONTROL Distribuição qualitativa]** são detalhadas em [Exibição de dados na tabela](#displaying-data-in-the-table). Um exemplo completo é detalhado em [Análise de uma população](../../reporting/using/use-cases.md#analyzing-a-population).
+Configuration options available for a report created via the **[!UICONTROL Qualitative distribution]** template are detailed in [Displaying data in the table](#displaying-data-in-the-table). Um exemplo completo é detalhado em [Análise de uma população](../../reporting/using/use-cases.md#analyzing-a-population).
 
 Ao utilizar o assistente de análise descritiva para analisar seus dados, as opções disponíveis dependem das configurações escolhidas. Veja os detalhes abaixo.
 
@@ -80,7 +80,7 @@ Quando selecionar as variáveis a serem exibidas, é possível definir compartim
 
 >[!NOTE]
 >
->Quando o campo relacionado ao cálculo é calculado usando uma agregação, marque **[!UICONTROL The data is already aggregated]** para melhorar o desempenho.
+>When the field concerned by the calculation is computed using an aggregate, check **[!UICONTROL The data is already aggregated]** to improve performances.
 
 As opções serão diferentes dependendo do conteúdo do campo:
 
@@ -161,7 +161,7 @@ As seguintes operações são possíveis:
 * **[!UICONTROL Standard deviation]** para calcular como os valores retornados estão distribuídos em relação à média,
 * **[!UICONTROL Row percentage distribution]** para calcular a proporção do valor em uma coluna e o valor em uma linha (disponível somente para tabelas),
 * **[!UICONTROL Column percentage distribution]** para calcular a proporção do valor em uma linha para o valor em uma coluna (disponível somente para tabelas),
-* **[!UICONTROL Total percentage distribution]** para calcular a distribuição de recipients relacionados aos valores,
+* **[!UICONTROL Total percentage distribution]** calcular a distribuição dos recipient a que os valores dizem respeito,
 
    ![](assets/s_ncs_user_report_wizard_026.png)
 
@@ -179,11 +179,11 @@ As seguintes operações são possíveis:
 
       ![](assets/report_compute_data_sample2.png)
 
-   1. Esta estatística não será exibida na tabela. É necessário desmarcar a opção **[!UICONTROL Display in the table]** da guia **[!UICONTROL Advanced]**.
+   1. Esta estatística não será exibida na tabela. You need to uncheck the **[!UICONTROL Display in the table]** option of the **[!UICONTROL Advanced]** tab.
 
       ![](assets/report_compute_data_sample3.png)
 
-   1. Crie uma nova estatística do tipo **[!UICONTROL Calculated field]** e insira a seguinte fórmula no campo **[!UICONTROL User function]**: **@purchases/@count**.
+   1. Create a new **[!UICONTROL Calculated field]** type statistic and enter the following formula in the **[!UICONTROL User function]** field: **@purchases/@count**.
 
       ![](assets/report_compute_data_sample4.png)
 
@@ -231,7 +231,7 @@ As seguintes operações são possíveis:
 * **[!UICONTROL Decile distribution]** para distribuir os valores do resultado de forma que cada um represente 1/10 dos valores em um campo numérico.
 * **[!UICONTROL Custom distribution]** para distribuir os valores do resultado com base em limites definidos pelo usuário.
 
-   O botão **[!UICONTROL Detail...]** permite editar uma estatística e, se necessário, personalizar o cálculo ou exibição:
+   The **[!UICONTROL Detail...]** button lets you edit a statistic and, if needed, personalize its calculation or its display:
 
    ![](assets/s_ncs_user_report_wizard_030.png)
 
