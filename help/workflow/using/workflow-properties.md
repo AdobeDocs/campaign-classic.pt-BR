@@ -11,11 +11,11 @@ audience: workflow
 content-type: reference
 topic-tags: advanced-management
 discoiquuid: 71969b30-cc01-4358-9597-f17939720684
-index: y
-internal: n
-snippet: y
-translation-type: ht
-source-git-commit: c10a0a11c6e9952aa47da1f7a15188c79c62508d
+translation-type: tm+mt
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '545'
+ht-degree: 91%
 
 ---
 
@@ -36,9 +36,9 @@ Esta seção só é exibida nos workflows da campanha.
 
    O mecanismo de workflow processa os workflows a serem executados com base no critério de prioridade definido neste campo. Por exemplo, todos os workflows com uma prioridade **[!UICONTROL Average]** serão executados antes daqueles com prioridade **[!UICONTROL Low]**.
 
-* **[!UICONTROL Programação de execução para um tempo de baixa atividade]**
+* **[!UICONTROL Schedule execution for a time of low activity]**
 
-   Essa opção adia o início do workflow para um período menos ocupado. Alguns workflows podem custar caro em termos de recursos para o motor do banco de dados. Recomendamos o agendamento da execução para uma hora de baixa atividade (à noite, por exemplo). Os períodos de baixa atividade são definidos no workflow técnico em **[!UICONTROL Processes on campaigns]**.
+   Essa opção adia o início do workflow para um período menos ocupado. Alguns workflows podem custar caro em termos de recursos para o motor do banco de dados. Recomendamos o agendamento da execução para uma hora de baixa atividade (à noite, por exemplo). Low activity periods are defined in the **[!UICONTROL Processes on campaigns]** technical workflow.
 
 ### Execução {#execution}
 
@@ -52,7 +52,7 @@ Esta seção só é exibida nos workflows da campanha.
 
    As tabelas de trabalho do banco de dados mantêm um histórico de execuções (tarefas, eventos, log). Aqui você pode definir a quantidade de dias para o arquivamento deste workflow: o processo de limpeza excluirá os arquivos mais antigos uma vez por dia. Se o valor nesse campo for zero, o arquivo nunca será excluído.
 
-* **[!UICONTROL Logs de queries SQL no journal]**
+* **[!UICONTROL Log SQL queries in the journal]**
 
    Essa operação é reservada para usuários avançados. Refere-se a workflows que contêm atividades de definição de metas (query, união, intersecção, etc.). Quando essa opção é marcada, as queries SQL enviadas ao banco de dados durante a execução do workflow são exibidas na Adobe Campaign: isso significa que você pode analisá-las para otimizar as queries ou diagnosticar problemas.
 
@@ -66,26 +66,26 @@ Esta seção só é exibida nos workflows da campanha.
 
 ### Gerenciamento de erros {#error-management}
 
-* **[!UICONTROL Solução de problemas]**
+* **[!UICONTROL Troubleshooting]**
 
    Este campo permite a definição das ações a serem tomadas se uma tarefa de workflow tiver erros. Há duas opções possíveis:
 
-   * **[!UICONTROL Stop the process]**: o workflow é pausado automaticamente. O status do workflow muda para **[!UICONTROL Failed]**. Quando o problema for resolvido, reinicie o workflow usando os botões **[!UICONTROL Start]** ou **[!UICONTROL Restart]**.
+   * **[!UICONTROL Stop the process]**: o fluxo de trabalho é pausado automaticamente. O status do workflow muda para **[!UICONTROL Failed]**. Quando o problema for resolvido, reinicie o workflow usando os botões **[!UICONTROL Start]** ou **[!UICONTROL Restart]**.
    * **[!UICONTROL Ignore]**: o status da tarefa que provocou o erro muda para **[!UICONTROL Failed]**, mas o workflow mantém o status de **[!UICONTROL Started]**. Essa configuração é relevante para tarefas recorrentes: se a ramificação incluir um programador, ela iniciará normalmente na próxima vez que o workflow for executado.
 
 * **[!UICONTROL Consecutive errors]**
 
-   Este campo fica disponível quando o valor **[!UICONTROL Ignore]** for selecionado no campo **[!UICONTROL In case of errors]**. Você pode especificar quantos erros podem ser ignorados antes que o processo seja interrompido. Após esse número ser alcançado, o status do workflow será alterado para **[!UICONTROL Failed]**. Se o valor desse campo for 0, o workflow nunca será interrompido independentemente do número de erros.
+   This field becomes available when the **[!UICONTROL Ignore]** value is selected in the **[!UICONTROL In case of errors]** field. Você pode especificar quantos erros podem ser ignorados antes que o processo seja interrompido. Após esse número ser alcançado, o status do workflow será alterado para **[!UICONTROL Failed]**. Se o valor desse campo for 0, o workflow nunca será interrompido independentemente do número de erros.
 
 * **[!UICONTROL Template]**
 
    Este campo permite que você selecione o template de notificação a ser enviado aos supervisores do workflow quando seu status for alterado para **[!UICONTROL Failed]**.
 
-   Os operadores envolvidos serão notificados por e-mail, se houver um endereço de e-mail em seu perfil. Para definir supervisores de workflow, vá até o campo **[!UICONTROL Supervisor(s)]** das propriedades na (guia **[!UICONTROL General]**).
+   Os operadores envolvidos serão notificados por e-mail, se houver um endereço de e-mail em seu perfil. To define workflow supervisors, go to the **[!UICONTROL Supervisor(s)]** field of the properties (**[!UICONTROL General]** tab).
 
    ![](assets/wf-properties_select-supervisors.png)
 
    O template padrão **[!UICONTROL Notification to a workflow supervisor]** inclui um link para acessar o painel do Adobe Campaign pela Web para que o recipient possa trabalhar no problema quando estiver conectado.
 
-   Para criar um template personalizado, vá para **[!UICONTROL Administration>Campaign management>Technical deliveries and templates]**.
+   To create a personalized template, go to **[!UICONTROL Administration>Campaign management>Technical deliveries and templates]**.
 
