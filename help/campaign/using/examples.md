@@ -11,11 +11,11 @@ audience: campaign
 content-type: reference
 topic-tags: distributed-marketing
 discoiquuid: 7b0aef75-345d-45be-b7d0-a9f6944ee678
-index: y
-internal: n
-snippet: y
-translation-type: ht
-source-git-commit: eee744eb5bc7a43fd412ffb01f0546385146a978
+translation-type: tm+mt
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '1298'
+ht-degree: 100%
 
 ---
 
@@ -142,6 +142,7 @@ Depois que as verificações foram aprovadas, a campanha poderá iniciar automat
    * o **[!UICONTROL Distribution field value]**, que corresponde às entidades locais envolvidas na campanha futura.
    * a entidade local **[!UICONTROL label]**.
    * o **[!UICONTROL Size]** (fixo ou como uma porcentagem). O **valor padrão 0** envolve selecionar todos os recipients vinculados à entidade local.
+
    ![](assets/mkg_dist_use_case_target_valid4.png)
 
 1. Salve a nova distribuição de dados.
@@ -158,6 +159,7 @@ Depois que as verificações foram aprovadas, a campanha poderá iniciar automat
    * o conteúdo da mensagem que será enviado para entidades locais na notificação,
    * o lembrete de aprovação,
    * o processamento esperado da campanha.
+
    ![](assets/mkg_dist_use_case_target_valid7.png)
 
 1. Salve seu registro.
@@ -170,6 +172,7 @@ Agora você pode adicionar um **pacote de campanha** a partir do universo **Camp
 
    * no modo **Manual** , as entidades locais participam da campanha se aceitarem o convite da entidade central. Eles podem excluir os contatos pré-selecionados se desejarem e a aprovação do gerente é necessária para confirmar a participação na campanha.
    * no modo **Automatic** , as entidades locais devem participar da campanha, a menos que ela cancelem a inscrição. Elas podem excluir contatos sem precisar de aprovação.
+
    ![](assets/mkg_dist_use_case_target_valid.png)
 
 1. Na guia **[!UICONTROL Description]**, é possível adicionar uma descrição para a campanha, bem como quaisquer documentos a serem enviados às entidades locais.
