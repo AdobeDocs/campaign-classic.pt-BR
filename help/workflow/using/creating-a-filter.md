@@ -9,11 +9,11 @@ audience: workflow
 content-type: reference
 topic-tags: use-cases
 discoiquuid: 7e5605c8-78f2-4011-b317-96a59c699848
-index: y
-internal: n
-snippet: y
-translation-type: ht
-source-git-commit: cf7c90f0ea9fbce3a4fd53f24189617cbd33fc40
+translation-type: tm+mt
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '210'
+ht-degree: 82%
 
 ---
 
@@ -26,13 +26,13 @@ Os filtros disponíveis no Adobe Campaign são definidos por meio das condiçõe
 >
 >Para saber mais sobre criação de filtros, consulte [esta seção](../../platform/using/filtering-options.md).
 
-O nó **[!UICONTROL Administration > Configuration > Predefined filters]** contém todos os filtros usados nas listas e visões gerais.
+The **[!UICONTROL Administration > Configuration > Predefined filters]** node contains all the filters used in the lists and overviews.
 
 Por exemplo, a lista de operadores pode ser filtrada por **[!UICONTROL Active accounts]**:
 
 ![](assets/query_editor_filter_sample_1.png)
 
-O filtro correspondente contém a consulta no valor **[!UICONTROL Account disabled]** do schema **[!UICONTROL Operators]**:
+The matching filter contains the query on the **[!UICONTROL Account disabled]** value of the **[!UICONTROL Operators]** schema:
 
 ![](assets/query_editor_filter_sample_2.png)
 
@@ -54,7 +54,7 @@ Para corresponder às condições do filtro, a conta do operador deve verificar 
 >
 >A função **[!UICONTROL Upper]** permite desativar a função com diferenciação de maiúsculas e minúsculas.
 
-A coluna **[!UICONTROL Taken into account if]** permite definir os critérios do aplicativo para essas condições de filtro. Aqui, os caracteres **$(/tmp/@text)** representam o conteúdo do campo de entrada vinculado ao filtro:
+The **[!UICONTROL Taken into account if]** column lets you define the application criteria for these filtering conditions. Aqui, os caracteres **$(/tmp/@text)** representam o conteúdo do campo de entrada vinculado ao filtro:
 
 ![](assets/query_editor_filter_sample_5.png)
 
