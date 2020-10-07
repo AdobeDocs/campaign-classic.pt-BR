@@ -11,11 +11,11 @@ audience: workflow
 content-type: reference
 topic-tags: targeting-activities
 discoiquuid: 96a7aea4-4799-4ac7-8dff-666b075a1c43
-index: y
-internal: n
-snippet: y
-translation-type: ht
-source-git-commit: 579329d9194115065dff2c192deb0376c75e67bd
+translation-type: tm+mt
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '484'
+ht-degree: 95%
 
 ---
 
@@ -42,7 +42,7 @@ Após configurar a seleção da lista, é possível adicionar um filtro utilizan
 >
 >Para poder criar um filtro em uma atividade de lista de leitura, a lista relevante deve ser um tipo de &quot;arquivo&quot;.
 
-As listas podem ser criadas diretamente no Adobe Campaign através do link **[!UICONTROL Profiles and Targets > Lists]** da página inicial. Também é possível criá-los em um workflow usando a atividade **[!UICONTROL List update]**.
+The lists can be created directly in Adobe Campaign via the **[!UICONTROL Profiles and Targets > Lists]** link of the home page. Também é possível criá-los em um workflow usando a atividade **[!UICONTROL List update]**.
 
 **Exemplo: exclusão de uma lista de endereços enviados**
 
@@ -70,7 +70,7 @@ Os perfis contidos na pasta **Novos Contatos** devem ser target de uma ação de
 
 1. No campo **[!UICONTROL Exclusion set]**, selecione a atividade **[!UICONTROL Read list]**: os dados desta atividade devem ser excluídos do conjunto principal.
 
-   No nosso exemplo, temos uma exclusão em junções: os dados contidos na lista serão reconciliados com os dados do conjunto principal através do campo com o endereço de email. Para configurar a associação, selecione **[!UICONTROL Joins]** no campo **[!UICONTROL Change dimension]**.
+   No nosso exemplo, temos uma exclusão em junções: os dados contidos na lista serão reconciliados com os dados do conjunto principal através do campo com o endereço de email. To configure the join, select **[!UICONTROL Joins]** in the **[!UICONTROL Change dimension]** field.
 
    ![](assets/s_advuser_list_read_sample_4.png)
 
