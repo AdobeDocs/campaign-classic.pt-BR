@@ -11,11 +11,11 @@ audience: web
 content-type: reference
 topic-tags: editing-html-content
 discoiquuid: 4ec34980-62a2-47b9-b103-de4290925624
-index: y
-internal: n
-snippet: y
-translation-type: ht
-source-git-commit: 36beb1eca48c698634c7548e0f931ab3fe17c021
+translation-type: tm+mt
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '740'
+ht-degree: 91%
 
 ---
 
@@ -35,7 +35,7 @@ Nosso objetivo final é criar um delivery com um template personalizado que cont
 >
 >Antes de começar, você deve ter pelo menos um **template HTML** configurado para hospedar o conteúdo de seus deliveries futuros.
 >
->Em **[!UICONTROL Properties]** do delivery, verifique se **[!UICONTROL Content editing mode]** (na guia **[!UICONTROL Advanced]**) está definido como **[!UICONTROL DCE]**. Para garantir a operação ideal do editor, consulte [Práticas recomendadas de edição de conteúdo](../../web/using/content-editing-best-practices.md).
+>In the delivery **[!UICONTROL Properties]** , make sure that the **[!UICONTROL Content editing mode]** (in the **[!UICONTROL Advanced]** tab) is set to **[!UICONTROL DCE]**. Para garantir a operação ideal do editor, consulte [Práticas recomendadas de edição de conteúdo](../../web/using/content-editing-best-practices.md).
 
 ## Etapa 1 - Criação de um delivery {#step-1---creating-a-delivery}
 
@@ -87,7 +87,7 @@ Você pode salvar esse conteúdo como um template para uso futuro. Após criar u
 
 * Inserir um link no texto
 
-   Para integrar um link externo ao texto no seu delivery, selecione um texto ou um bloco de texto e clique no primeiro ícone na barra de ferramentas pop-up. Clique em **[!UICONTROL Link to an external URL]** e digite o endereço do link no campo **[!UICONTROL URL]**. Para saber mais, consulte [Adição de um link](../../web/using/editing-content.md#adding-a-link).
+   Para integrar um link externo ao texto no seu delivery, selecione um texto ou um bloco de texto e clique no primeiro ícone na barra de ferramentas pop-up. Click **[!UICONTROL Link to an external URL]**, enter the link address into the **[!UICONTROL URL]** field. Para saber mais, consulte [Adição de um link](../../web/using/editing-content.md#adding-a-link).
 
    O link pode ser alterado a qualquer momento usando a seção à direita da janela.
 
@@ -99,7 +99,7 @@ Você pode salvar esse conteúdo como um template para uso futuro. Após criar u
 
    Para permitir que os recipients vejam o conteúdo do delivery em um navegador da Web, você pode integrar um link a uma mirror page no delivery.
 
-   Clique no campo de texto em que você deseja ver o link publicado. Clique no primeiro ícone na barra de ferramentas pop-up, selecione **[!UICONTROL Personalization block]** e, então, **[!UICONTROL Link to Mirror Page (MirrorPage)]**. Clique em **[!UICONTROL Salvar]** para confirmar.
+   Clique no campo de texto em que você deseja ver o link publicado. Click the first icon in the pop-up toolbar, select **[!UICONTROL Personalization block]**, then **[!UICONTROL Link to Mirror Page (MirrorPage)]**. Clique em **[!UICONTROL Save]** para confirmar.
 
    ![](assets/dce_mirrorpage.png)
 
@@ -111,7 +111,7 @@ Você pode salvar esse conteúdo como um template para uso futuro. Após criar u
 
    O Editor de conteúdo digital permite integrar links às aplicações web no console do Adobe Campaign, como uma landing page ou uma página de formulário. Para saber mais, consulte [Vincular a uma aplicação web](../../web/using/editing-content.md#link-to-a-web-application).
 
-   Selecione um campo de texto para seu link para uma aplicação web e clique no primeiro ícone. Escolha **[!UICONTROL Link to a Web application]** e selecione a aplicação desejada clicando no ícone no final do campo **Web Application**.
+   Selecione um campo de texto para seu link para uma aplicação web e clique no primeiro ícone. Choose **[!UICONTROL Link to a Web application]**, then select the desired application by clicking the icon at the end of the **Web Application** field.
 
    ![](assets/dce_webapp.png)
 
@@ -119,7 +119,7 @@ Você pode salvar esse conteúdo como um template para uso futuro. Após criar u
 
    >[!NOTE]
    >
-   >Esta etapa exige que você salve pelo menos uma aplicação web anteriormente. Essas aplicações podem ser encontradas na guia **[!UICONTROL Campaigns > Web applications]** do console.
+   >Esta etapa exige que você salve pelo menos uma aplicação web anteriormente. These can be found in the **[!UICONTROL Campaigns > Web applications]** tab of your console.
 
 ## Etapa 5 - Salvamento do delivery {#step-5---saving-the-delivery}
 
