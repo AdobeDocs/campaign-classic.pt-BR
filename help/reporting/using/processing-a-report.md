@@ -11,11 +11,11 @@ audience: reporting
 content-type: reference
 topic-tags: analyzing-populations
 discoiquuid: 667746cb-b553-4a71-8523-6b2695047ab6
-index: y
-internal: n
-snippet: y
-translation-type: ht
-source-git-commit: 62b2f1f6cfcaadd10880d428b8b94d73d2addcdb
+translation-type: tm+mt
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '817'
+ht-degree: 92%
 
 ---
 
@@ -30,7 +30,7 @@ Para salvar o relatório, clique em **[!UICONTROL Save]** e dê um rótulo a ele
 
 Selecione **[!UICONTROL Also save data]** se desejar criar um histórico do relatório e ver os valores do relatório no momento da gravação. Para obter mais informações, consulte [Arquivamento de relatórios de análise](#archiving-analysis-reports).
 
-A opção **[!UICONTROL Share this report]** permite que outros operadores acessem o relatório.
+The **[!UICONTROL Share this report]** option allows other operators to access the report.
 
 ![](assets/s_ncs_user_report_wizard_010.png)
 
@@ -93,11 +93,11 @@ No exemplo a seguir, as estatísticas são exibidas em colunas.
 É possível personalizar o layout de dados diretamente nas tabelas de análise descritivas. Para fazer isso, clique com o botão direito na variável com a qual deseja trabalhar. Selecione as opções disponíveis do menu suspenso:
 
 * **[!UICONTROL Pivot]** para alterar o eixo da variável.
-* **[!UICONTROL Up]** / **[!UICONTROL Down]** para trocar as variáveis entre linhas.
-* **[!UICONTROL Move to the right]** / **[!UICONTROL Move to the left]** para trocar as variáveis entre colunas.
+* **[!UICONTROL Up]** / **[!UICONTROL Down]** para trocar as variáveis em linhas.
+* **[!UICONTROL Move to the right]** / **[!UICONTROL Move to the left]** para trocar as variáveis em colunas.
 * **[!UICONTROL Turn]** para inverter os eixos das variáveis.
-* **[!UICONTROL Sort from A to Z]** para classificar os valores da variável de baixo para cima.
-* **[!UICONTROL Sort from Z to A]** para classificar os valores da variável de cima para baixo.
+* **[!UICONTROL Sort from A to Z]** para classificar os valores de variável de baixo para alto.
+* **[!UICONTROL Sort from Z to A]** para classificar os valores de variável de alto a baixo.
 
    ![](assets/s_ncs_advuser_report_wizard_016.png)
 
@@ -105,18 +105,18 @@ Para retornar à exibição inicial, atualize a visualização.
 
 ### Opções de gráfico do relatório de análise {#analysis-report-chart-options}
 
-É possível personalizar a exibição de dados no gráfico. Para fazer isso, clique no link **[!UICONTROL Variables...]** disponível durante a etapa de seleção do tipo de gráfico.
+É possível personalizar a exibição de dados no gráfico. To do this, click the **[!UICONTROL Variables...]** link available during the chart type selection stage.
 
 ![](assets/s_ncs_advuser_report_wizard_3c.png)
 
 As seguintes opções estão disponíveis:
 
 * A seção superior da janela permite modificar a área de exibição do gráfico.
-* Por padrão, os rótulos são exibidos no gráfico. É possível ocultá-los desmarcando a opção **[!UICONTROL Show values]**.
+* Por padrão, os rótulos são exibidos no gráfico. You can hide them by un-checking the **[!UICONTROL Show values]** option.
 * A opção **[!UICONTROL Accumulate values]** permite adicionar valores de uma série a outra.
 * É possível decidir se exibe ou não a legenda do gráfico: para ocultá-la, desmarque a opção apropriada. Por padrão, a legenda é exibida fora do gráfico no canto superior direito.
 
-   A legenda também pode ser exibida na parte superior do gráfico para salvar espaço de visualização. Para fazer isso, selecione a opção **[!UICONTROL Include in the chart]**
+   A legenda também pode ser exibida na parte superior do gráfico para salvar espaço de visualização. To do this, select the option **[!UICONTROL Include in the chart]**
 
    Selecione o alinhamento vertical e horizontal na lista suspensa **[!UICONTROL Caption position]**.
 
