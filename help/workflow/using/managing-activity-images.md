@@ -11,11 +11,11 @@ audience: workflow
 content-type: reference
 topic-tags: advanced-management
 discoiquuid: ae8fc2b7-456b-481c-8abb-64dab1c22534
-index: y
-internal: n
-snippet: y
-translation-type: ht
-source-git-commit: c10a0a11c6e9952aa47da1f7a15188c79c62508d
+translation-type: tm+mt
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '155'
+ht-degree: 89%
 
 ---
 
@@ -36,7 +36,7 @@ As imagens usadas nos diagramas dos vários workflows podem ser alteradas. No en
 
    ![](assets/s_user_segmentation_background_select.png)
 
-   O ícone **[!UICONTROL Edit link]** permite visualizar a imagem selecionada.
+   The **[!UICONTROL Edit link]** icon lets you view the selected image.
 
 * Para alterar a imagem associada a uma atividade, clique duas vezes no objeto e, em seguida, clique na guia **[!UICONTROL Advanced]**.
 
@@ -44,7 +44,7 @@ As imagens usadas nos diagramas dos vários workflows podem ser alteradas. No en
 
    ![](assets/s_user_segmentation_activity_image.png)
 
-   O ícone **[!UICONTROL Edit link]** permite visualizar a imagem selecionada.
+   The **[!UICONTROL Edit link]** icon lets you view the selected image.
 
    ![](assets/s_user_segmentation_activity_image_select.png)
 
