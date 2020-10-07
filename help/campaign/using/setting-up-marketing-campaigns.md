@@ -11,12 +11,9 @@ audience: campaign
 content-type: reference
 topic-tags: orchestrate-campaigns
 discoiquuid: 8d076211-10a6-4a98-b0d2-29dad154158c
-index: y
-internal: n
-snippet: y
-translation-type: ht
-source-git-commit: 1a139e1704a7df38a7b8088e23c972864f8ad998
-workflow-type: ht
+translation-type: tm+mt
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
 source-wordcount: '1227'
 ht-degree: 100%
 
@@ -175,6 +172,7 @@ Para criar a campanha recorrente e executar os workflows de acordo com o agendam
 
    * **[!UICONTROL To be approved]** : permite forçar as solicitações de aprovação de delivery no workflow.
    * **[!UICONTROL To be started]**: permite iniciar o workflow quando a data de início é atingida.
+
    O campo **[!UICONTROL Create in advance for]** permite criar todos os workflows que abrangem o período inserido.
 
    Após a execução do workflow **[!UICONTROL Jobs on campaigns]**, os workflows dedicados são criados com base nas ocorrências definidas no agendamento da campanha. Um workflow é criado para cada data de execução.
