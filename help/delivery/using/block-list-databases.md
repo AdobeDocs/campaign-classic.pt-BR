@@ -1,7 +1,7 @@
 ---
-title: Bloquear bancos de dados de lista
-seo-title: Bloquear bancos de dados de lista
-description: Bloquear bancos de dados de lista
+title: Banco de dados da lista de bloqueios
+seo-title: Banco de dados da lista de bloqueios
+description: Banco de dados da lista de bloqueios
 seo-description: null
 page-status-flag: never-activated
 uuid: 8a4a69f9-87d5-4044-bc55-76cdcb2e7800
@@ -11,19 +11,16 @@ audience: delivery
 content-type: reference
 topic-tags: deliverability-management
 discoiquuid: eede254d-2b25-46ed-b10f-fa1d54780a75
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: f99e3a4f69cb2b0122f2f6957d419d6b95ad54b1
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
 workflow-type: tm+mt
 source-wordcount: '377'
-ht-degree: 93%
+ht-degree: 97%
 
 ---
 
 
-# Bloquear bancos de dados de lista{#blocklisting-databases}
+# Banco de dados da lista de bloqueios{#blocklisting-databases}
 
 Várias organizações mantêm bancos de dados de endereços IP e domínios que são reputados para serem usados por remetentes de spam. Consultar esses sites pode ser útil para entender por que determinadas mensagens foram rejeitadas como spam. Geralmente é possível solicitar a remoção de um endereço adicionado incorretamente a essas listas.
 
