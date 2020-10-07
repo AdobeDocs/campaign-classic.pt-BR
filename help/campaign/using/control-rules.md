@@ -11,11 +11,11 @@ audience: campaign
 content-type: reference
 topic-tags: campaign-optimization
 discoiquuid: be037a80-3f94-465c-ba7d-ae7d50f70e36
-index: y
-internal: n
-snippet: y
-translation-type: ht
-source-git-commit: d30de91002862b664249c5a704b7c0f521dd30f2
+translation-type: tm+mt
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '355'
+ht-degree: 93%
 
 ---
 
@@ -31,7 +31,7 @@ Um conjunto de regras prontas permite que você faça as verificações normais.
 * **[!UICONTROL Object approval]** (email): verifica se o objeto e o endereço do remetente não contêm caracteres especiais que podem causar problemas em determinados agentes de email.
 * **[!UICONTROL URL label approval]** (email): verifica se cada URL de rastreamento tem um rótulo.
 * **[!UICONTROL URL approval]** (email): verifica as URLs de rastreamento (presença do caractere &quot;&amp;&quot;).
-* **[!UICONTROL Message size approval]** (dispositivos móveis): verifica o tamanho das mensagens SMS.
+* **[!UICONTROL Message size approval]** (móvel): verifica o tamanho das mensagens SMS.
 * **[!UICONTROL Validity period check]** (email): verifica se o período de validade da entrega é longo o suficiente para enviar todas as mensagens.
 * **[!UICONTROL Proof size check]** (todos os canais): gera uma mensagem de erro se a população do target de prova exceder 100 destinatários.
 * **[!UICONTROL Wave scheduling check]** (email): verifica se a última onda de deliveries está agendada para iniciar antes do fim do período de validade, caso o delivery esteja distribuído em várias ondas.
@@ -47,7 +47,7 @@ No exemplo a seguir, vamos criar uma regra para impedir que uma oferta em SMS se
 
 Siga as etapas abaixo:
 
-1. Crie uma regra de tipologia **[!UICONTROL Control]**. Selecione um nível de alerta **[!UICONTROL Warning]**.
+1. Create a **[!UICONTROL Control]** typology rule. Select a **[!UICONTROL Warning]** alert level.
 
    ![](assets/campaign_opt_create_control_01.png)
 
