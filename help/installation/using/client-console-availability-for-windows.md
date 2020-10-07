@@ -11,11 +11,11 @@ audience: installation
 content-type: reference
 topic-tags: installing-campaign-in-windows-
 discoiquuid: 4fa2e8c1-33d1-4d14-941b-ca528b8ceabb
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 46f5bfb41bfe9c938ac0ffa767ead3e47a32047d
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '296'
+ht-degree: 6%
 
 ---
 
@@ -24,7 +24,7 @@ source-git-commit: 46f5bfb41bfe9c938ac0ffa767ead3e47a32047d
 
 Para que os usuários do Adobe Campaign possam fazer logon na instância criada e configurada, eles precisam usar o console do cliente.
 
-Quando o computador usado para iniciar um servidor de aplicativos do Adobe Campaign (**nlserver web**) recebe conexões de usuário do console do cliente, você pode configurá-lo para disponibilizar o programa de configuração do cliente rico do Adobe Campaign por meio de uma interface HTML.
+Quando o computador usado para start de um servidor de aplicativos Adobe Campaign (**nlserver web**) recebe conexões de usuário do console do cliente, você pode configurá-lo para disponibilizar o programa de configuração para o cliente Adobe Campaign rich por meio de uma interface HTML.
 
 Para fazer isso, você deve:
 
@@ -33,7 +33,7 @@ Para fazer isso, você deve:
    Esse arquivo é chamado `setup-client-7.X.XXXX.exe` para v7 ou `setup-client-6.X.XXXX.exe` v6.1, onde `X` é a subversão do Adobe Campaign e `XXXX` é o número da compilação.
 
 1. Copie e cole este pacote na pasta de instalação do Adobe Campaign, em **/datakit/nl/eng/jsp**.
-1. Inicie o servidor do Adobe Campaign.
+1. Start o servidor Adobe Campaign.
 
 Os usuários finais podem então baixar o programa de instalação do console por meio de um navegador da Web, graças ao seguinte URL:
 
@@ -49,7 +49,7 @@ Sempre que uma nova versão do console do cliente estiver disponível, você ser
 
 >[!NOTE]
 >
->No prompt que é exibido, a Adobe recomenda deixar a opção **[!UICONTROL No longer ask this question]** desmarcada para garantir que todos os usuários sejam alertados quando uma nova versão do console estiver disponível.\
+>No prompt que é exibido, o Adobe recomenda deixar a opção **[!UICONTROL No longer ask this question]** desmarcada para garantir que todos os usuários sejam alertados quando uma nova versão do console estiver disponível.\
 >Se você selecionar essa opção e optar por não baixar a versão mais recente, nenhum outro usuário será informado sobre novas versões disponíveis.
 
 Para redefinir este prompt, siga as etapas abaixo (somente os administradores de sistema que se sentem confortáveis com a edição do Registro devem fazer estas alterações):
