@@ -11,11 +11,11 @@ audience: workflow
 content-type: reference
 topic-tags: use-cases
 discoiquuid: 978cbe62-f06a-46a6-b8a1-e30a65b8470a
-index: y
-internal: n
-snippet: y
-translation-type: ht
-source-git-commit: cfb1b02a6261c001392b5cc6430f00206e802bb8
+translation-type: tm+mt
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '641'
+ht-degree: 99%
 
 ---
 
@@ -33,7 +33,7 @@ Para monitorar o status de um conjunto de workflows, siga estas etapas:
 
 1. Crie o workflow de sincronização.
 1. Escreva o JavaScript para determinar se os workflows estão pausados, interrompidos ou com erros.
-1. Crie a atividade **[!UICONTROL Test]**.
+1. Create the **[!UICONTROL Test]** activity.
 1. Prepare o template de delivery.
 
 >[!NOTE]
