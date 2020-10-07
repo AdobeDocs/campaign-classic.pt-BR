@@ -11,11 +11,11 @@ audience: interaction
 content-type: reference
 topic-tags: managing-an-offer-catalog
 discoiquuid: a9fad813-3256-4a00-ba74-7dbaba9e8e23
-index: y
-internal: n
-snippet: y
-translation-type: ht
-source-git-commit: 579329d9194115065dff2c192deb0376c75e67bd
+translation-type: tm+mt
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '271'
+ht-degree: 94%
 
 ---
 
@@ -32,7 +32,7 @@ Para criar uma categoria adicional, siga as etapas abaixo:
 
    ![](assets/offer_cat_create_001.png)
 
-1. Clique com o botão direito e selecione **[!UICONTROL Create a new &quot;Offer category&quot; folder]** na lista suspensa.
+1. Right click and select **[!UICONTROL Create a new "Offer category" folder]** from the drop-down list.
 
    ![](assets/offer_cat_create_002.png)
 
@@ -62,7 +62,7 @@ Para criar uma categoria adicional, siga as etapas abaixo:
 
       ![](assets/offer_cat_create_006.png)
 
-Um resumo das regras de qualificação está disponível no painel das ofertas incluídas na categoria. Para visualizá-las, clique em **[!UICONTROL Schedule and eligibility rules of the offer]**.
+Um resumo das regras de qualificação está disponível no painel das ofertas incluídas na categoria. Para visualização, clique no **[!UICONTROL Schedule and eligibility rules of the offer]** link.
 
 ![](assets/offer_create_006.png)
 
