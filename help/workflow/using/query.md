@@ -11,11 +11,8 @@ audience: workflow
 content-type: reference
 topic-tags: targeting-activities
 discoiquuid: b53d9810-f61f-4257-b410-e4d30f78429d
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: ffee73b949a77343eaf23d0fb9a58a4283f4f87a
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
 workflow-type: tm+mt
 source-wordcount: '1617'
 ht-degree: 100%
@@ -124,6 +121,7 @@ Para adicionar uma coleção de informações vinculadas a um público alvo:
 
    * Se você optar por recuperar várias linhas (**[!UICONTROL Limit the line count]**), será possível especificar o número de linhas a serem coletadas.
    * Se as colunas coletadas contiverem agregados, por exemplo, o número de falhas declaradas, a despesa média em um site, etc. você poderá usar o valor **[!UICONTROL Aggregates]**.
+
    ![](assets/query_add_collection_param.png)
 
 1. Especifique a subseleção da coleção. Por exemplo: compras somente dos últimos 15 dias.
@@ -148,6 +146,7 @@ No exemplo a seguir, o query busca identificar homens que moram na França com i
    * Recipients abaixo de 30 anos.
    * Recipients acima de 18 anos.
    * Recipients que vivem na França.
+
    ![](assets/query_example.png)
 
    Você pode exibir o SQL correspondente com sua combinação de critérios:
@@ -231,6 +230,7 @@ Para saber mais sobre as dimensões do filtro, consulte [esta seção](../../wor
    * data,
    * aplicação,
    * volumes.
+
    >[!NOTE]
    >
    >Um recurso que funciona em um ambiente de desenvolvimento pode não funcionar em um ambiente de produção onde os dados podem ser diferentes. Tente identificar as principais diferenças para antecipar os riscos e preparar soluções.
