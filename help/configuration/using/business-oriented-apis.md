@@ -11,11 +11,8 @@ audience: configuration
 content-type: reference
 topic-tags: api
 discoiquuid: e7b3ffca-c85f-498d-89b4-23fcff59de49
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: c51a51f175e9f3fe5a55f2b5f57872057f70909d
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
 workflow-type: tm+mt
 source-wordcount: '639'
 ht-degree: 4%
@@ -33,7 +30,7 @@ API comercial são específicas para cada tipo de objeto. Têm um efeito sobre:
    * enviar uma campanha (start, pausa, parar, enviar prova),
    * recuperação de logs do delivery.
 
-* Workflows:
+* Fluxos de trabalho:
 
    * iniciar um fluxo de trabalho,
    * verificação dos processos, etc.
@@ -41,14 +38,14 @@ API comercial são específicas para cada tipo de objeto. Têm um efeito sobre:
       Consulte os métodos [SOAP no JavaScript](../../configuration/using/soap-methods-in-javascript.md).
 
 * Gestão de conteúdo
-* Gerenciamento de Subscrições, consulte [Assinar (nms:subscrição)](#subscribe--nms-subscription-) e [Cancelar inscrição (nms:subscrição)](#unsubscribe--nms-subscription-).
+* Gerenciamento de subscrições, consulte [Assinar (nms:subscrição)](#subscribe--nms-subscription-) e [Cancelar inscrição (nms:subscrição)](#unsubscribe--nms-subscription-).
 * Processos de dados: importações, exportações.
 
 Esta seção detalha o uso dos serviços &quot;Assinar&quot;, &quot;Cancelar inscrição&quot; e &quot;SubmeterEntrega&quot;.
 
 >[!IMPORTANT]
 >
->[A documentação](https://docs.adobe.com/content/help/en/campaign-classic/technicalresources/api/index.html) JSAPI da Campanha contém informações adicionais sobre chamadas SOAP e uso do Javascript no Adobe Campaign, bem como uma referência completa a todos os métodos e funções usados no aplicativo.
+>[A documentação](https://docs.adobe.com/content/help/en/campaign-classic/technicalresources/api/index.html) JSAPI da campanha contém informações adicionais sobre chamadas SOAP e uso do Javascript no Adobe Campaign, bem como uma referência completa a todos os métodos e funções usados no aplicativo.
 
 ## Assinar (nms:subscrição) {#subscribe--nms-subscription-}
 
@@ -93,7 +90,7 @@ Atualização do recipient e da subscrição.
 
 ### Exemplo de mensagens SOAP {#example-of-soap-messages}
 
-* Consulta:
+* Query:
 
    ```
    <?xml version='1.0' encoding='ISO-8859-1'?>
@@ -150,13 +147,13 @@ Se o recipient não estiver presente no banco de dados ou não estiver inscrito 
 
 >[!NOTE]
 >
->Se o nome do serviço não for especificado como um parâmetro, o recipient estará automaticamente na lista de blocos (@blockList=&quot;1&quot;).
+>Se o nome do serviço não for especificado como um parâmetro, o recipient será então automaticamente colocado na lista de bloqueios (@lista de bloqueios=&quot;1&quot;).
 
 Esta chamada não retorna nenhum dado, exceto erros.
 
 ### Exemplo de mensagens SOAP {#example-of-soap-messages-1}
 
-Consulta:
+Query:
 
 ```
 <?xml version='1.0' encoding='ISO-8859-1'?>
