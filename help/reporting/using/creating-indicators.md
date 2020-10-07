@@ -11,11 +11,11 @@ audience: reporting
 content-type: reference
 topic-tags: designing-reports-with-cubes
 discoiquuid: a5fc6c78-b4fb-41fd-a072-7be4ece3c554
-index: y
-internal: n
-snippet: y
-translation-type: ht
-source-git-commit: 209ac4d81d2d27c264ee6b288bcb7fcb1900ffc5
+translation-type: tm+mt
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '720'
+ht-degree: 93%
 
 ---
 
@@ -47,7 +47,7 @@ Selecione o schema de fatos, ou seja, o schema que contém os elementos que dese
 
 Clique em **[!UICONTROL Save]** para criar o Cubo: ele aparecerá na lista de Cubos e poderá ser configurado usando as guias apropriadas.
 
-Clique no link **[!UICONTROL Filter the source data...]** para aplicar os cálculos desse Cubo a uma seleção de dados no banco de dados.
+Click the **[!UICONTROL Filter the source data...]** link to apply the calculations of this Cube to a select of data in the database.
 
 ![](assets/s_advuser_cube_wz_03.png)
 
@@ -69,7 +69,7 @@ Clique no botão **[!UICONTROL Add]** para criar uma nova dimensão, em seguida,
 
 * Adicione uma dimensão do tipo **Data.** Aqui, queremos exibir as datas de criação do perfil de recipient.
 
-   Para fazer isso, clique em **[!UICONTROL Add]** e selecione o campo **[!UICONTROL Creation date]** na tabela de recipients.
+   To do this, click **[!UICONTROL Add]** and select the **[!UICONTROL Creation date]** field in the recipient table.
 
    ![](assets/s_advuser_cube_wz_06.png)
 
@@ -93,7 +93,7 @@ Clique no botão **[!UICONTROL Add]** para criar uma nova dimensão, em seguida,
 
    ![](assets/s_advuser_cube_wz_10.png)
 
-   Somente os valores na enumeração serão exibidos. Os outros serão agrupados pelo rótulo indicado no campo **[!UICONTROL Label of the other values]**.
+   Somente os valores na enumeração serão exibidos. The others will be grouped under the label defined in the **[!UICONTROL Label of the other values]** field.
 
    Para obter mais informações, consulte [Gestão dinâmica de compartimentos](../../reporting/using/concepts-and-methodology.md#dynamically-managing-bins).
 
@@ -110,7 +110,7 @@ Para fazer isso, siga as etapas abaixo:
 
    ![](assets/s_advuser_cube_wz_11.png)
 
-   O link **[!UICONTROL Filter the measure data...]** permite selecionar apenas mulheres. Para obter mais informações sobre definição de medidas e as opções disponíveis, consulte [Definição de medidas](../../reporting/using/concepts-and-methodology.md#defining-measures).
+   The **[!UICONTROL Filter the measure data...]** link lets you select only women. Para obter mais informações sobre definição de medidas e as opções disponíveis, consulte [Definição de medidas](../../reporting/using/concepts-and-methodology.md#defining-measures).
 
    ![](assets/s_advuser_cube_wz_12.png)
 
