@@ -1,7 +1,7 @@
 ---
-title: Métodos SOAP no JavaScript
-seo-title: Métodos SOAP no JavaScript
-description: Métodos SOAP no JavaScript
+title: Métodos SOAP em JavaScript
+seo-title: Métodos SOAP em JavaScript
+description: Métodos SOAP em JavaScript
 seo-description: null
 page-status-flag: never-activated
 uuid: 8fd1aabc-e51a-433d-835f-6b5a717c7aeb
@@ -11,24 +11,24 @@ audience: configuration
 content-type: reference
 topic-tags: api
 discoiquuid: 815d3eb9-ac45-441f-9a5f-0cd505fcf88a
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 579329d9194115065dff2c192deb0376c75e67bd
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '140'
+ht-degree: 12%
 
 ---
 
 
-# Métodos SOAP no JavaScript{#soap-methods-in-javascript}
+# Métodos SOAP em JavaScript{#soap-methods-in-javascript}
 
-Este é o JavaScript executado no servidor do Adobe Campaign.
+Este é o JavaScript executado no servidor Adobe Campaign.
 
 ## Métodos estáticos {#static-methods}
 
-Métodos SOAP estáticos são acessados chamando um método no objeto que representa o esquema. Esquemas são propriedades de objetos &#39;namespace&#39;. Esses namespaces são variáveis globais, portanto, por exemplo, as variáveis xtk ou nms representam os namespaces correspondentes
+Métodos SOAP estáticos são acessados chamando um método no objeto que representa o schema. Schemas são propriedades de objetos &#39;namespace&#39;. Essas namespaces são variáveis globais, portanto, por exemplo, as variáveis xtk ou nms representam as namespaces correspondentes
 
-O exemplo a seguir chama o método PostEvent estático do esquema xtk:workflow:
+O exemplo a seguir chama o método PostEvent estático do schema xtk:workflow:
 
 ```
 xtk.workflow.PostEvent("WKF1", "signal", "", $recipient-id='123', false) 
@@ -36,9 +36,9 @@ xtk.workflow.PostEvent("WKF1", "signal", "", $recipient-id='123', false)
 
 ## Métodos não estáticos {#non-static-methods}
 
-Para usar métodos SOAP não estáticos, é necessário primeiro recuperar uma entidade usando os métodos &quot;get&quot; ou &quot;create&quot; nos esquemas correspondentes.
+Para usar métodos SOAP não estáticos, é necessário primeiro recuperar uma entidade usando os métodos &quot;get&quot; ou &quot;create&quot; nos schemas correspondentes.
 
-O exemplo a seguir chama o método ExecuteQuery do esquema &quot;xtk:queryDef&quot;:
+O exemplo a seguir chama o método ExecuteQuery do schema &quot;xtk:queryDef&quot;:
 
 ```
 var query = xtk.queryDef.create(
@@ -57,7 +57,7 @@ for each (var w in res.workflow)
 
 ## Exemplos {#examples}
 
-* Consulte a tabela do destinatário com uma operação &quot;get&quot;:
+* Query na tabela recipient com uma operação &quot;get&quot;:
 
    ```
    var query = xtk.queryDef.create(  
@@ -78,7 +78,7 @@ for each (var w in res.workflow)
    logInfo(recipient.@lastName)
    ```
 
-* Consulte a tabela do destinatário com uma operação &quot;select&quot;:
+* Query na tabela recipient com uma operação &quot;select&quot;:
 
    ```
    var query = xtk.queryDef.create(  
@@ -103,7 +103,7 @@ for each (var w in res.workflow)
    }
    ```
 
-* Gravando dados na tabela do destinatário:
+* Gravando dados na tabela do recipient:
 
    ```
    xtk.session.Write(<recipient _operation="insert" lastName="Martinez" firstName="Peter" xtkschema="nms:recipient"/>);
