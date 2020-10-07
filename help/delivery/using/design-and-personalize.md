@@ -9,12 +9,9 @@ audience: delivery
 content-type: reference
 topic-tags: deliveries-best-practices
 discoiquuid: 0cbc4e92-482f-4dac-a1fb-b738e7127938
-index: y
-internal: n
-snippet: y
-translation-type: ht
-source-git-commit: c804745ae58a9bded885ac5aef32f019f43e82be
-workflow-type: ht
+translation-type: tm+mt
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
 source-wordcount: '1269'
 ht-degree: 100%
 
@@ -141,7 +138,7 @@ Siga as diretrizes abaixo ao usar imagens.
 
 Alguns clientes de e-mail bloqueiam imagens por padrão, e alguns usuários alteram suas configurações para impedir que imagens sejam salvas em caso de uso de dados. Portanto, se as imagens não forem baixadas, a mensagem inteira poderá ser perdida. Para evitar isso:
 
-* Equilibre imagens e texto no seu conteúdo. Evite e-mails totalmente baseados em imagens.
+* Equilibre imagens e texto no seu conteúdo. Evite criar emails só com imagens.
 
 * Se o texto precisa estar contido em uma imagem, use alt e title para garantir que sua mensagem seja exibida. Estilize o texto alt/title para melhorar a aparência.
 
