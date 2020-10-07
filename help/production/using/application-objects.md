@@ -11,11 +11,8 @@ audience: production
 content-type: reference
 topic-tags: database-maintenance
 discoiquuid: 24d4875b-81fa-4bf3-8cf0-e6998bec4949
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: b369a17fabc55607fc6751e7909e1a1cb3cd4201
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
 workflow-type: tm+mt
 source-wordcount: '461'
 ht-degree: 4%
@@ -29,13 +26,13 @@ Objetos incorporados devem ser monitorados e impedir que cresçam demais é impo
 
 ## Sequência de IDs {#sequence-of-ids}
 
-O Adobe Campaign usa uma sequência de ID que deve ser consumida de acordo: **xtkNewId**. Se a sequência for consumida muito rapidamente (ou seja, de 100.000 por dia), você deve verificar se é consistente com as necessidades de sua empresa, como enviar milhões de emails por dia. É possível definir uma sequência dedicada para tabelas específicas. Você pode configurar um fluxo de trabalho para monitorar o uso da ID.
+A Adobe Campaign usa uma sequência de ID que deve ser consumida de acordo: **xtkNewId**. Se a sequência for consumida muito rapidamente (ou seja, de 100.000 por dia), você deve verificar se é consistente com as necessidades de sua empresa, como enviar milhões de emails por dia. É possível definir uma sequência dedicada para tabelas específicas. Você pode configurar um fluxo de trabalho para monitorar o uso da ID.
 
 Quando a sequência chega a mais de 2 bilhões (2.147.483.648 é o número exato), volta a zero. Deve ser evitada e cria problemas, razão pela qual esta sequência deve ser monitorizada.
 
 Para evitar isso com tabelas grandes, considere usar uma sequência específica. Isso pode ser feito com o atributo **pkSequence** no schema.
 
-workflows de alta frequência que criam muitos registros consumirão muitas IDs. Portanto, é altamente recomendável evitar muitos registros e altas frequências em workflows.
+Workflows de alta frequência que criam muitos registros consumirão muitas IDs. Portanto, é altamente recomendável evitar muitos registros e altas frequências em workflows.
 
 Se a sequência já tiver sido cíclica, a melhor solução é alternar para IDs negativas, a partir de -2.147.483.648.
 
