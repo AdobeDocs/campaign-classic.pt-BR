@@ -11,18 +11,18 @@ audience: migration
 content-type: reference
 topic-tags: configuration
 discoiquuid: 1b6ce502-0d33-46e4-b52e-124b849de11f
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 9f7cf3d530f141a661df5fcc8cbcf0bb4c8d3e89
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '106'
+ht-degree: 16%
 
 ---
 
 
 # Configurações específicas na v6.10{#specific-configurations-in-v6-10}
 
-Alguns aprimoramentos foram realizados no Adobe Campaign v7 para otimizar a segurança.
+Alguns aprimoramentos foram feitos no Adobe Campaign v7 para otimizar a segurança.
 
 Se você estiver migrando de uma plataforma 6.10 e seu console do cliente for mais antigo que a compilação 8104, é necessário atualizá-lo. Se isso não for feito antes da migração, você será solicitado a atualizar seu console do cliente ao reconectar-se. Clique em **[!UICONTROL Yes]**.
 
