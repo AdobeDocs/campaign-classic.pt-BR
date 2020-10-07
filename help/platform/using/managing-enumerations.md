@@ -11,11 +11,11 @@ audience: platform
 content-type: reference
 topic-tags: administration-basics
 discoiquuid: 7674c856-2b64-4a85-9ffa-3e14a142028e
-index: y
-internal: n
-snippet: y
-translation-type: ht
-source-git-commit: 1c86322fa95aee024f6c691b61a10c21a9a22eb7
+translation-type: tm+mt
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '879'
+ht-degree: 86%
 
 ---
 
@@ -64,7 +64,7 @@ Nos campos de lista discriminada, é possível inserir valores diferentes dos va
 O valor inserido é então:
 
 * Adicionado aos valores da lista discriminada: nesse caso, a opção **[!UICONTROL Open]** deve ser selecionada,
-* ou automaticamente substituído pelo seu alias correspondente: nesse caso, este caso deve ser definido na guia **[!UICONTROL Alias]** da lista discriminada,
+* ou automaticamente substituído pelo seu correspondente: nesse caso, este caso deve ser definido na guia **[!UICONTROL Alias]** Alias da lista discriminada,
 * ou armazenado na lista de aliases: um alias será atribuído a ele posteriormente.
 
    >[!NOTE]
@@ -101,7 +101,7 @@ Assim, quando um usuário insere o valor **NEILSEN** em um campo “company” (
 
 #### Conversão de valores em aliases {#converting-values-into-aliases}
 
-Para converter um valor de enumeração em um alias, clique com o botão direito do mouse na lista de valores e escolha **[!UICONTROL Convert values into aliases...]**.
+To convert an enumeration value into an alias, right-click in the list of values and choose **[!UICONTROL Convert values into aliases...]**.
 
 ![](assets/s_ncs_user_itemized_list_alias_detail.png)
 
@@ -127,13 +127,13 @@ Se necessário, a coluna **[!UICONTROL Hits]** pode exibir o número de vezes qu
 
 ### Execução de limpeza de dados {#running-data-cleansing}
 
-A limpeza de dados é realizada pelo workflow técnico **[!UICONTROL Alias cleansing]**. As configurações definidas para enumerações são aplicadas durante a execução. Consulte [Workflow de limpeza de alias](#alias-cleansing-workflow).
+Data cleansing is performed by the **[!UICONTROL Alias cleansing]** technical workflow. As configurações definidas para enumerações são aplicadas durante a execução. Consulte [Workflow de limpeza de alias](#alias-cleansing-workflow).
 
-A limpeza pode ser acionada por meio do link **[!UICONTROL Cleanse values...]**.
+Cleansing can be triggered via the **[!UICONTROL Cleanse values...]** link.
 
 ![](assets/s_ncs_user_itemized_list_alias_start_normalize.png)
 
-O link **[!UICONTROL Advanced parameters...]** permite que você defina a data a partir da qual os valores coletados são considerados.
+The **[!UICONTROL Advanced parameters...]** link lets you set the date starting from which collected values are taken into account.
 
 ![](assets/s_ncs_user_itemized_list_alias_normalize.png)
 
@@ -147,16 +147,16 @@ A subguia **[!UICONTROL Alias]** de uma lista discriminada pode exibir o número
 >
 >O cálculo das ocorrências de entrada de alias pode demorar muito. É por isso que o usuário deve ter cuidado ao usar essa função.
 
-Você pode executar o cálculo de ocorrências manualmente pelo link **[!UICONTROL Cleanse values...]**. Para isto, clique no link **[!UICONTROL Advanced parameters...]** e selecione as opções desejadas.
+You can run hit calculation manually via the **[!UICONTROL Cleanse values...]** link. To do this, click the **[!UICONTROL Advanced parameters...]** link and select the desired option(s).
 
 ![](assets/s_ncs_user_itemized_list_alias_hits.png)
 
-* **[!UICONTROL Update the number of alias hits]**: permite atualizar as ocorrências já calculadas, com base na data inserida.
-* **[!UICONTROL Recalculate the number of alias hits from the start]**: permite que você execute o cálculo em toda a plataforma do Adobe Campaign.
+* **[!UICONTROL Update the number of alias hits]**: isso permite atualizar ocorrências que já foram calculadas, com base na data inserida.
+* **[!UICONTROL Recalculate the number of alias hits from the start]**: permite executar o cálculo na plataforma Adobe Campaign inteira.
 
 Você também pode criar um workflow dedicado para que o cálculo seja executado automaticamente em determinado período, uma vez por semana por exemplo.
 
-Para fazer isso, crie uma cópia do workflow **[!UICONTROL Alias cleansing]**, altere o scheduler e use as seguintes configurações na atividade **[!UICONTROL Enumeration value cleansing]**:
+To do this, create a copy of the **[!UICONTROL Alias cleansing]** workflow, change the scheduler and use the following settings in the **[!UICONTROL Enumeration value cleansing]** activity:
 
 * **-updateHits** para atualizar o número de ocorrências de alias,
 * **-updateHits:full** para recalcular todas as ocorrências de alias.
@@ -165,7 +165,7 @@ Para fazer isso, crie uma cópia do workflow **[!UICONTROL Alias cleansing]**, a
 
 O workflow **Alias cleansing** executa a limpeza do valor de enumerações. É executado diariamente por padrão.
 
-É acessado pelo nó **[!UICONTROL Administration > Production > Technical workflows]**.
+It is accessed via the **[!UICONTROL Administration > Production > Technical workflows]** node.
 
 ![](assets/s_ncs_user_itemized_list_alias_wf.png)
 
