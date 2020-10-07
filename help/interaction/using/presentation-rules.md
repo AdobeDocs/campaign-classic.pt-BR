@@ -11,11 +11,11 @@ audience: interaction
 content-type: reference
 topic-tags: case-study
 discoiquuid: 8ef303b4-d9ce-40ee-a6c6-ed5012ab8eb8
-index: y
-internal: n
-snippet: y
-translation-type: ht
-source-git-commit: 28614a6b0c45deef17d9b3275a16e65bdff4538b
+translation-type: tm+mt
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '465'
+ht-degree: 92%
 
 ---
 
@@ -28,8 +28,8 @@ Em nosso banco de dados, existem várias ofertas de viagens para Europa, África
 
 Vamos configurar nossa regra para que a viagem ao Canadá seja oferecida apenas uma vez por recipient e, caso seja rejeitada, não será oferecida novamente.
 
-1. Na árvore do Adobe Campaign, acesse o nó **[!UICONTROL Administration]** > **[!UICONTROL Campaign management]** > **[!UICONTROL Typology management]** > **[!UICONTROL Typology rules]**.
-1. Crie um novo tipo de regra **[!UICONTROL Offer presentation]**.
+1. In the Adobe Campaign tree, go to the **[!UICONTROL Administration]** > **[!UICONTROL Campaign management]** > **[!UICONTROL Typology management]** > **[!UICONTROL Typology rules]** node.
+1. Create a new **[!UICONTROL Offer presentation]** type rule.
 
    ![](assets/offer_typology_example_001.png)
 
@@ -41,7 +41,7 @@ Vamos configurar nossa regra para que a viagem ao Canadá seja oferecida apenas 
 
    ![](assets/offer_typology_example_003.png)
 
-1. Clique no link **[!UICONTROL Edit expression]** e escolha o nó **[!UICONTROL Category]** como uma expressão.
+1. Click the **[!UICONTROL Edit expression]** link and choose the **[!UICONTROL Category]** node as an expression.
 
    ![](assets/offer_typology_example_004.png)
 
@@ -61,7 +61,7 @@ Vamos configurar nossa regra para que a viagem ao Canadá seja oferecida apenas 
 
    ![](assets/offer_typology_example_008.png)
 
-1. Selecione o filtro **[!UICONTROL Offers for the same category]** para excluir todas as ofertas da categoria **Canada**.
+1. Select the **[!UICONTROL Offers for the same category]** filter to exclude all offers from the **Canada** category.
 
    ![](assets/offer_typology_example_020.png)
 
