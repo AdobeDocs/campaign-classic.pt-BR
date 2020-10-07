@@ -11,11 +11,11 @@ audience: message-center
 content-type: reference
 topic-tags: reports
 discoiquuid: e46a4e87-6c02-4b9c-bf6d-bb4e785e78fa
-index: y
-internal: n
-snippet: y
-translation-type: ht
-source-git-commit: 20f835c357d016643ea1f3209ee4dfb6d3239f90
+translation-type: tm+mt
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '236'
+ht-degree: 72%
 
 ---
 
@@ -26,13 +26,13 @@ Esse relatório exibe as estatísticas de delivery relacionadas às mensagens tr
 
 ![](assets/mc_reports_1.png)
 
-Nesse relatório, você pode exibir as estatísticas gerais ou aquelas relativas a uma instância de execução específica. Você também pode filtrar os dados por canal e por um período específico. Os indicadores exibidos na seção **[!UICONTROL Indicators over the period]** são calculados sobre o período selecionado:
+Nesse relatório, você pode exibir as estatísticas gerais ou aquelas relativas a uma instância de execução específica. Você também pode filtrar os dados por canal e por um período específico. The indicators displayed in the **[!UICONTROL Indicators over the period]** section are calculated over the period selected:
 
-* **[!UICONTROL Incoming (throughput event/h)]**: número médio de horas de eventos inseridos na fila do Centro de mensagens.
-* **[!UICONTROL Incoming (event vol)]**: número de eventos inseridos na fila do Centro de mensagens.
-* **[!UICONTROL Outgoing (throughput msg/h)]**: número médio de horas de eventos de saída bem-sucedidos do Centro de mensagens (enviados por um delivery).
-* **[!UICONTROL Outgoing (msg vol)]**: número de eventos de saída bem-sucedidos do Centro de mensagens (enviados por um delivery).
-* **[!UICONTROL Average sending time (seconds)]**: tempo médio gasto no Centro de mensagens para eventos processados com êxito. O cálculo leva em conta o tempo do processamento e o tempo de envio mta.
+* **[!UICONTROL Incoming (throughput event/h)]** : número médio por hora de eventos inseridos na fila do Centro de mensagens.
+* **[!UICONTROL Incoming (event vol)]** : número de eventos inseridos na fila do Centro de mensagens.
+* **[!UICONTROL Outgoing (throughput msg/h)]** : número médio por hora de eventos de saída bem-sucedidos do Centro de mensagens (enviados por um delivery).
+* **[!UICONTROL Outgoing (msg vol)]** : número de eventos bem-sucedidos do Centro de mensagens de saída (enviados por um delivery).
+* **[!UICONTROL Average sending time (seconds)]** : tempo médio gasto no Centro de Mensagens para eventos processados com êxito. O cálculo leva em conta o tempo do processamento e o tempo de envio mta.
 * **[!UICONTROL Error rate]**: número de eventos com erros comparados ao número de eventos que entraram na fila do Centro de mensagens. Os erros a seguir são levados em conta: erro de roteamento, evento expirado (evento que está na fila por muito tempo), erro de delivery, ignorado pelo delivery (quarentena, etc.).
 
 >[!NOTE]
