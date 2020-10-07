@@ -11,11 +11,8 @@ audience: delivery
 content-type: reference
 topic-tags: subscriptions-and-referrals
 discoiquuid: 9a61fe74-f779-4f23-be25-3d9a8e95704a
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: fa9e4ddc716809b96e259acd1137a0c24ef68fee
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
 workflow-type: tm+mt
 source-wordcount: '1102'
 ht-degree: 93%
@@ -156,7 +153,7 @@ Para registrar recipients para um serviço de informação, é possível:
 
 por lei, deliveries de email devem conter um link para cancelamento. Os recipients podem clicar neste link para atualizar seu perfil e ser excluídos do envio dos futuros deliveries.
 
-O link padrão para cancelamento de subscrição é inserido por meio do último botão da barra de ferramentas do editor de conteúdo fornecido no assistente de delivery (consulte [Sobre personalização](../../delivery/using/about-personalization.md)). Quando o recipient clica nesse link, o perfil é adicionado à lista de blocos (opção de não participação), o que significa que esse recipient não será mais direcionado por nenhuma ação de delivery.
+O link padrão para cancelamento de subscrição é inserido por meio do último botão da barra de ferramentas do editor de conteúdo fornecido no assistente de delivery (consulte [Sobre personalização](../../delivery/using/about-personalization.md)). Quando o recipient clica nesse link, o perfil é adicionado à lista de bloqueios (opção de não participação), o que significa que esse recipient não será mais direcionado por nenhuma ação do delivery.
 
 Os recipients podem, no entanto, optar por cancelar a subscrição de um serviço sem cancelar a subscrição de todos os serviços. Para permitir isso, é possível usar um formulário web (consulte [esta seção](../../web/using/adding-fields-to-a-web-form.md#subscription-checkboxes)) ou inserir um link personalizado de cancelamento de subscrição (consulte [Blocos de personalização](../../delivery/using/personalization-blocks.md)).
 
