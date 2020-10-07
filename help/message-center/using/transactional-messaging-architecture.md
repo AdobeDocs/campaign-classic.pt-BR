@@ -9,11 +9,8 @@ audience: message-center
 content-type: reference
 topic-tags: introduction
 discoiquuid: a910d5fe-cef4-47d8-b3bc-0055ef0d1afd
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: e6f8eb6f4ffc3ffe9dbc643cf0edeef439c0f969
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
 workflow-type: tm+mt
 source-wordcount: '988'
 ht-degree: 100%
@@ -179,6 +176,7 @@ Em seguida, do **[!UICONTROL Explorer]**, em **[!UICONTROL External account]** >
    * **[!UICONTROL Label]** e **[!UICONTROL Internal name]**: nomeie a conta externa conforme necessário.
    * **[!UICONTROL Type]** : selecione **[!UICONTROL External database]**.
    * A caixa **[!UICONTROL Enabled]** deve ser marcada.
+
    Na categoria **[!UICONTROL Connection]**:
 
    * **[!UICONTROL Type]**: selecione o servidor de banco de dados, por exemplo, PostgresSQL.
@@ -201,6 +199,7 @@ Em seguida, do **[!UICONTROL Explorer]**, em **[!UICONTROL External account]** >
    * **[!UICONTROL Label]** e **[!UICONTROL Internal name]**: nomeie a conta externa conforme necessário.
    * **[!UICONTROL Type]** : selecione **[!UICONTROL External database]**.
    * A caixa habilitada deverá estar marcada.
+
    Na categoria **[!UICONTROL Connection]**:
 
    * **[!UICONTROL Type]** : selecione **[!UICONTROL HTTP relay to remote Database]**.
@@ -217,11 +216,13 @@ Em seguida, do **[!UICONTROL Explorer]**, em **[!UICONTROL External account]** >
    * **[!UICONTROL Label]** e **[!UICONTROL Internal name]**: nomeie a conta externa conforme necessário.
    * **[!UICONTROL Type]** : selecione **[!UICONTROL Execution instance]**.
    * A caixa habilitada deverá estar marcada.
+
    Na categoria **[!UICONTROL Connection]**:
 
    * **[!UICONTROL URL]**: digite o URL da instância de execução.
    * **[!UICONTROL Account]**: digite a conta usada para acessar a instância de execução.
    * **[!UICONTROL Password]**: digite a senha da conta usada para acessar a instância de execução.
+
    Na categoria **[!UICONTROL Account connection method]**:
 
    * **[!UICONTROL Method]** : selecione **[!UICONTROL Federated Data Access (FDA)]**.
