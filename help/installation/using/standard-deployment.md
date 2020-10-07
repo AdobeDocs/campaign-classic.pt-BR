@@ -11,11 +11,11 @@ audience: installation
 content-type: reference
 topic-tags: deployment-types-
 discoiquuid: d714b759-cc08-4656-876c-9820d5c56216
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 707352334144df86ae82aa51d595ae6bc751d1f2
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '834'
+ht-degree: 2%
 
 ---
 
@@ -24,20 +24,20 @@ source-git-commit: 707352334144df86ae82aa51d595ae6bc751d1f2
 
 Para esta configuração, são necessários três computadores:
 
-* Um servidor de aplicativos dentro da LAN para os usuários finais (preparando campanhas, relatórios etc.),
+* Um servidor de aplicativos dentro da LAN para os usuários finais (preparando campanha, relatórios etc.),
 * Dois servidores frontais na DMZ atrás de um balanceador de carga.
 
-Os dois servidores no DMZ lidam com o rastreamento, espelham páginas e entrega e são redundantes para alta disponibilidade.
+Os dois servidores da DMZ lidam com o rastreamento, mirrores page e delivery e são redundantes para alta disponibilidade.
 
-O servidor de aplicativos na LAN serve aos usuários finais e executa todos os processos recorrentes (mecanismo de fluxo de trabalho). Assim, quando as cargas máximas são atingidas nos servidores frontais, os usuários do aplicativo não são afetados.
+O servidor de aplicativos na LAN serve aos usuários finais e executa todos os processos recorrentes (motor de workflow). Assim, quando as cargas máximas são atingidas nos servidores frontais, os usuários do aplicativo não são afetados.
 
-O servidor de banco de dados pode ser hospedado em um computador separado desses três. Caso contrário, o servidor de aplicativos e o servidor de banco de dados compartilharão o mesmo computador na LAN, contanto que o sistema operacional seja suportado pelo Adobe Campaign (Linux ou Windows).
+O servidor de banco de dados pode ser hospedado em um computador separado desses três. Caso contrário, o servidor de aplicativos e o servidor de banco de dados compartilharão o mesmo computador na LAN, contanto que o sistema operacional seja suportado pela Adobe Campaign (Linux ou Windows).
 
-A comunicação geral entre servidores e processos é realizada de acordo com o seguinte esquema:
+A comunicação geral entre servidores e processos é realizada de acordo com o seguinte schema:
 
 ![](assets/s_001_ncs_install_standardconfig.png)
 
-Esse tipo de configuração pode lidar com um grande número de destinatários (500.000 a 1.000.000), já que o servidor de banco de dados (e a largura de banda disponível) é o principal fator limitador.
+Esse tipo de configuração pode lidar com um grande número de recipient (500.000 a 1.000.000), já que o servidor de banco de dados (e a largura de banda disponível) é o principal fator limitador.
 
 ## Recursos {#features}
 
@@ -63,14 +63,14 @@ Esse tipo de configuração pode lidar com um grande número de destinatários (
 
 ### Instalação do servidor de aplicativos {#installing-the-application-server}
 
-Siga as etapas para instalar uma instância independente do servidor de aplicativos do Adobe Campaign para a criação do banco de dados (etapa 12). Consulte [Instalação e configuração (máquina única)](../../installation/using/standalone-deployment.md#installing-and-configuring--single-machine-).
+Siga as etapas para instalar uma instância independente do servidor de aplicativos Adobe Campaign na criação do banco de dados (etapa 12). Consulte [Instalação e configuração (máquina única)](../../installation/using/standalone-deployment.md#installing-and-configuring--single-machine-).
 
 Como o computador não é um servidor de rastreamento, não considere a integração com o servidor Web.
 
 Nos exemplos a seguir, os parâmetros da instância são:
 
 * Nome da instância: **demonstração**
-* Máscara de DNS: **console.campaign.net*** (somente para conexões de console do cliente e para relatórios)
+* Máscara de DNS: **console.campanha.net*** (somente para conexões de console do cliente e para relatórios)
 * Idioma: Inglês
 * Banco de dados: **campanha:demo@dbsrv**
 
@@ -80,14 +80,14 @@ O procedimento de instalação e configuração é idêntico em ambos os computa
 
 As etapas são as seguintes:
 
-1. Instale o servidor do Adobe Campaign.
+1. Instale o servidor Adobe Campaign.
 
-   Para obter mais informações, consulte [Pré-requisitos da instalação do Campaign no Linux](../../installation/using/prerequisites-of-campaign-installation-in-linux.md) (Linux) e [Pré-requisitos da instalação do Campaign no Windows](../../installation/using/prerequisites-of-campaign-installation-in-windows.md) (Windows).
+   Para obter mais informações, consulte [Pré-requisitos de instalação do Campaign no Linux](../../installation/using/prerequisites-of-campaign-installation-in-linux.md) (Linux) e [Pré-requisitos de instalação do Campaign no Windows](../../installation/using/prerequisites-of-campaign-installation-in-windows.md) (Windows).
 
 1. Siga o procedimento de integração do servidor Web (IIS, Apache) descrito nas seguintes seções:
 
-   * Para Linux: [Integração em um servidor Web para Linux](../../installation/using/integration-into-a-web-server-for-linux.md)
-   * Para Windows: [Integração em um servidor Web para Windows](../../installation/using/integration-into-a-web-server-for-windows.md)
+   * For Linux: [Integration into a Web server for Linux](../../installation/using/integration-into-a-web-server-for-linux.md)
+   * For Windows: [Integration into a Web server for Windows](../../installation/using/integration-into-a-web-server-for-windows.md)
 
 1. Crie a instância de **demonstração** . Há duas maneiras de fazer isso:
 
@@ -105,10 +105,10 @@ As etapas são as seguintes:
       nlserver config -addinstance:demo/tracking.campaign.net*
       ```
 
-      Para obter mais informações, consulte [Criação de uma instância](../../installation/using/command-lines.md#creating-an-instance).
+      For more on this, refer to [Creating an instance](../../installation/using/command-lines.md#creating-an-instance).
    O nome da instância é o mesmo do servidor de aplicativos.
 
-   A conexão com o servidor com o módulo da Web **do** nlserver (páginas espelhadas, cancelar assinatura) será feita a partir do URL do balanceador de carga (tracking.campaign.net).
+   A conexão com o servidor com o módulo da Web **do** nlserver (mirrores page, unsubscription) será feita a partir do URL do balanceador de carga (tracking.campanha.net).
 
 1. Altere o **interno** para o mesmo que o servidor de aplicativos.
 
@@ -147,7 +147,7 @@ As etapas são as seguintes:
 
       For more on this, refer to [Redundant tracking](../../installation/using/configuring-campaign-server.md#redundant-tracking).
 
-1. Inicie o site e teste o redirecionamento do URL: [https://tracking.campaign.net/r/test](https://tracking.campaign.net/r/test).
+1. Start o site e teste o redirecionamento do URL: [https://tracking.campaign.net/r/test](https://tracking.campaign.net/r/test).
 
    O navegador deve exibir as seguintes mensagens (dependendo do URL redirecionado pelo balanceador de carga):
 
@@ -163,15 +163,15 @@ As etapas são as seguintes:
 
    Para obter mais informações, consulte as seguintes seções:
 
-   * Para Linux: [Abrindo o servidor Web e testando a configuração](../../installation/using/integration-into-a-web-server-for-linux.md#launching-the-web-server-and-testing-the-configuration)
-   * Para Windows: [Abrindo o servidor Web e testando a configuração](../../installation/using/integration-into-a-web-server-for-windows.md#launching-the-web-server-and-testing-the-configuration)
+   * Para Linux: [Iniciar o servidor Web e testar a configuração](../../installation/using/integration-into-a-web-server-for-linux.md#launching-the-web-server-and-testing-the-configuration)
+   * Para Windows: [Iniciar o servidor Web e testar a configuração](../../installation/using/integration-into-a-web-server-for-windows.md#launching-the-web-server-and-testing-the-configuration)
 
-1. Inicie o servidor do Adobe Campaign.
+1. Start o servidor Adobe Campaign.
 1. No console do Adobe Campaign, conecte-se usando o logon do **administrador** sem uma senha e inicie o assistente de implantação.
 
-   Para obter mais informações, consulte [Implantação de uma instância](../../installation/using/deploying-an-instance.md).
+   For more on this, refer to [Deploying an instance](../../installation/using/deploying-an-instance.md).
 
-   A configuração é idêntica a uma instância independente além da configuração do módulo de rastreamento.
+   A configuração é idêntica a uma instância independente, além da configuração do módulo de rastreamento.
 
 1. Preencha o URL externo (o do balanceador de carga) usado para redirecionamento e os URLs internos dos dois servidores frontais.
 
