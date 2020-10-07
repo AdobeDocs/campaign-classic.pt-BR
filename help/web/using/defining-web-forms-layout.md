@@ -11,11 +11,11 @@ audience: web
 content-type: reference
 topic-tags: web-forms
 discoiquuid: 67d1d39b-3a5f-4ed6-8fcf-570891043b10
-index: y
-internal: n
-snippet: y
-translation-type: ht
-source-git-commit: 209ac4d81d2d27c264ee6b288bcb7fcb1900ffc5
+translation-type: tm+mt
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '528'
+ht-degree: 100%
 
 ---
 
@@ -26,7 +26,7 @@ source-git-commit: 209ac4d81d2d27c264ee6b288bcb7fcb1900ffc5
 
 Os containers permitem combinar os campos de uma página e configurar seu layout; para organizar os elementos na página.
 
-Para cada página do formulário, os containers são criados por meio do botão **[!UICONTROL Containers]** da barra de ferramentas.
+Para cada página do formulário, os são criados por meio do botão **[!UICONTROL Containers]** Containers da barra de ferramentas.
 
 ![](assets/s_ncs_admin_survey_containers_add.png)
 
