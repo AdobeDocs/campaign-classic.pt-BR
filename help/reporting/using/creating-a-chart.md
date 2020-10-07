@@ -11,11 +11,11 @@ audience: reporting
 content-type: reference
 topic-tags: creating-new-reports
 discoiquuid: 70e4e63d-354d-4912-b75a-dba38e1c0b03
-index: y
-internal: n
-snippet: y
-translation-type: ht
-source-git-commit: 20f835c357d016643ea1f3209ee4dfb6d3239f90
+translation-type: tm+mt
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '733'
+ht-degree: 91%
 
 ---
 
@@ -42,11 +42,11 @@ Para criar um gráfico em um relatório, siga as etapas abaixo:
 
    A estatística a ser exibida no gráfico pode ser calculada com base em um query ou nos dados de contexto, ou seja, os dados fornecidos pela transição de entrada da página atual (para obter mais informações, consulte [Usar dados de contexto](../../reporting/using/using-the-context.md#using-context-data)).
 
-   * Clique no link **[!UICONTROL Filter data...]** para definir os critérios de filtragem para os dados no banco de dados.
+   * Click the **[!UICONTROL Filter data...]** link to define filtering criteria for the data in the database.
 
       ![](assets/reporting_graph_add_filter.png)
 
-   * Para usar dados contextuais, selecione essa opção e clique no link **[!UICONTROL Advanced settings...]**. Selecione os dados que a estatística abordará.
+   * To used contextual data, select this option and click the **[!UICONTROL Advanced settings...]** link. Selecione os dados que a estatística abordará.
 
       ![](assets/reporting_graph_from_context.png)
 
@@ -66,7 +66,7 @@ Ele também pode ser alterado por meio da seção **[!UICONTROL Chart type]** da
 
 ![](assets/reporting_change_graph_type.png)
 
-As variantes dependem do tipo de gráfico selecionado. Elas são selecionadas por meio do link **[!UICONTROL Variants...]**.
+As variantes dependem do tipo de gráfico selecionado. They are selected via the **[!UICONTROL Variants...]** link.
 
 ### Análise: gráficos de pizza {#breakdown--pie-charts}
 
@@ -140,11 +140,11 @@ Esses elementos são definidos ao configurar o gráfico.
 * Os campos **[!UICONTROL Display range]** permitem especificar os valores entre os quais o relatório é calculado.
 * O campo **[!UICONTROL Value ranges]** permite atribuir status (None, Bad, Acceptable, Good) a um conjunto de valores para ilustrar melhor o progresso.
 
-Na seção **[!UICONTROL Display settings]**, o **[!UICONTROL Change appearance...]** permite configurar o modo como o gráfico é exibido.
+In the **[!UICONTROL Display settings]** section, the **[!UICONTROL Change appearance...]** lets you configure the way the chart is displayed.
 
 ![](assets/reporting_graph_type_gauge2.png)
 
-A opção **[!UICONTROL Display the value below the gauge]** permite exibir o progresso do valor abaixo do gráfico.
+The **[!UICONTROL Display the value below the gauge]** option lets you display the value progress below the chart.
 
 O campo **[!UICONTROL Aperture ratio]**, que deve estar entre 0 e 1, permite editar a abertura do relatório em um círculo mais ou menos completo. No exemplo acima, o valor 0,50 corresponde a um semicírculo.
 
@@ -162,7 +162,7 @@ Possíveis tipos de interação e suas configurações são detalhadas [nesta se
 
 Os gráficos permitem exibir estatísticas nos dados coletados.
 
-Essas estatísticas são definidas na seção **[!UICONTROL Series parameters]** da guia **[!UICONTROL Data]**.
+These statistics are defined via the **[!UICONTROL Series parameters]** section of the **[!UICONTROL Data]** tab.
 
 Para criar uma nova estatística, clique no ícone **[!UICONTROL Add]** e configure a janela apropriada. Os tipos de cálculo disponíveis são detalhados abaixo.
 
