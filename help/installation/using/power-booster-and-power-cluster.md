@@ -11,11 +11,11 @@ audience: installation
 content-type: reference
 topic-tags: deployment-types-
 discoiquuid: 715d2b69-5b47-4890-8b7d-1dc0a0d4ead8
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: c25e2a4f2280cdcc61e0522f8235149410b5dacf
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '401'
+ht-degree: 7%
 
 ---
 
@@ -24,15 +24,15 @@ source-git-commit: c25e2a4f2280cdcc61e0522f8235149410b5dacf
 
 ## Visão geral {#overview}
 
-O Adobe Campaign oferece dois conjuntos de opções de arquitetura pré-embaladas para dimensionar sua implantação:
+A Adobe Campaign oferece dois conjuntos de opções de arquitetura pré-embaladas para dimensionar sua implantação:
 
 * **Power Boster**
 
-   Esta opção oferece suporte para uma única instância de execução adicional dissociada da instância principal do aplicativo Adobe Campaign. As instâncias de execução dedicadas podem ser hospedadas remotamente ou por terceiros. Quando implementado, a execução de email, o rastreamento, as páginas espelhadas e as mensagens de rejeição são manipuladas independentemente das funções centrais do aplicativo.
+   Esta opção oferece suporte para uma única instância de execução adicional dissociada da instância principal do aplicativo Adobe Campaign. Instâncias de execução dedicadas podem ser hospedadas remotamente ou por terceiros. Quando implementados, a execução de email, o rastreamento, os mirrores page e as mensagens de rejeição são manipulados independentemente das funções centrais do aplicativo.
 
 * **Cluster de energia**
 
-   Esta opção oferece suporte para 2 a N instâncias de execução clusterizadas dissociadas da instância principal do aplicativo Adobe Campaign em relação a um determinado aplicativo. Os clusters podem ser hospedados remotamente, em implantações distribuídas e por terceiros. Além dos benefícios do isolamento do processo, a opção Adobe Campaign Power Cluster permite redundância e estratégias de expansão usando hardware básico para uma evolução simplificada do SLA ou do desempenho.
+   Esta opção oferece suporte para 2 a N instâncias de execução agrupadas dissociadas da instância principal do aplicativo Adobe Campaign em relação a um determinado aplicativo. Os clusters podem ser hospedados remotamente, em implantações distribuídas e por terceiros. Além dos benefícios do isolamento do processo, a opção Adobe Campaign Power Cluster permite redundância e estratégias de escalabilidade usando hardware de mercadoria para uma evolução simplificada do SLA ou do desempenho.
 
 ![](assets/architectural_options_diagram.png)
 
@@ -89,7 +89,7 @@ As opções de Power Booster e Power Cluster podem ser usadas pelos seguintes ap
 
 ## Recomendações {#recommendations}
 
-* Uma instância de execução deve ser dedicada a um serviço. Não é possível instalar um pacote para um serviço ao qual você não se inscreveu. Por exemplo, se você assinar a opção **Power Booster** para o serviço **Message Center** **[!UICONTROL Execution of transactional messages]** , poderá instalar apenas o pacote na instância de execução dedicada. Verifique o contrato de licença.
+* Uma instância de execução deve ser dedicada a um serviço. Não é possível instalar um pacote para um serviço ao qual você não se inscreveu. Por exemplo, se você assinar a opção **Power Booster** para o serviço **Message Center** , você só poderá instalar o **[!UICONTROL Execution of transactional messages]** pacote na instância de execução dedicada. Verifique o contrato de licença.
 * Como as instâncias dedicadas (ou clusters) são instâncias do Adobe Campaign, as recomendações são as mesmas de uma instância principal. For more on this, refer to [this document](../../production/using/foreword.md).
-* Para configurar adequadamente a instância de um ponto de vista de componentes de banco de dados/hardware, entre em contato com o Adobe Campaign Professional Services.
+* Para configurar adequadamente a instância de um ponto de visualização de componentes de banco de dados/hardware, entre em contato com o Adobe Campaign Professional Services.
 
