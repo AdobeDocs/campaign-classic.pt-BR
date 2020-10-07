@@ -11,11 +11,11 @@ audience: web
 content-type: reference
 topic-tags: online-surveys
 discoiquuid: 2df82006-dcc3-4b07-bc36-b646b1c27aaa
-index: y
-internal: n
-snippet: y
-translation-type: ht
-source-git-commit: 1c86322fa95aee024f6c691b61a10c21a9a22eb7
+translation-type: tm+mt
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '910'
+ht-degree: 100%
 
 ---
 
@@ -56,18 +56,18 @@ Para criar o gráfico, clique no formulário **[!UICONTROL Edit]** da pesquisa.
 
 Uma pesquisa deve conter **pelo menos** três componentes: uma página, uma caixa de armazenamento e uma página final.
 
-* Para criar uma página, selecione o objeto **[!UICONTROL Page]** na seção à esquerda do editor e o coloque na seção intermediária, conforme mostrado abaixo:
+* Para criar uma página, selecione o objeto da **[!UICONTROL Page]** na seção à esquerda do editor e o coloque na seção intermediária, conforme mostrado abaixo:
 
    ![](assets/s_ncs_admin_survey_new_page.png)
 
-* Em seguida, selecione o objeto **[!UICONTROL Storage]** e o coloque na transição de saída da página.
-* Finalmente, selecione o objeto **[!UICONTROL End]** e o coloque no final da transição de saída da caixa de armazenamento para obter o diagrama a seguir:
+* Em seguida, selecione o objeto de **[!UICONTROL Storage]** e o coloque na transição de saída da página.
+* Finalmente, selecione o objeto do **[!UICONTROL End]** e o coloque no final da transição de saída da caixa de armazenamento para obter o diagrama a seguir:
 
    ![](assets/s_ncs_admin_survey_end.png)
 
 ## Etapa 4 - Criação do conteúdo da página {#step-4---creating-the-page-content}
 
-No exemplo a seguir, usamos uma página do tipo **[!UICONTROL Page (v5 compatibility)]**. Esse tipo de página é acessado por meio do menu avançado da guia **[!UICONTROL Edit]**.
+No exemplo a seguir, estamos usando uma página do tipo **[!UICONTROL Page (v5 compatibility)]**. Esse tipo de página é acessado por meio do menu avançado da guia **[!UICONTROL Edit]**.
 
 ![](assets/s_ncs_admin_survey_pagev5.png)
 
@@ -95,7 +95,7 @@ No exemplo a seguir, usamos uma página do tipo **[!UICONTROL Page (v5 compatibi
 
    ![](assets/s_ncs_admin_survey_add_qu.png)
 
-   Insira o rótulo da pergunta e insira o(s) campo(s) de resposta como sub-ramificações da pergunta. Para fazer isso, o nó vinculado à pergunta deve ser selecionado ao criar o campo de resposta. Adicione uma **[!UICONTROL lista suspensa]** usando o ícone **[!UICONTROL Selection controls]** ou clicando com o botão direito do mouse, como mostrado abaixo:
+   Insira o rótulo da pergunta e insira o(s) campo(s) de resposta como sub-ramificações da pergunta. Para fazer isso, o nó vinculado à pergunta deve ser selecionado ao criar o campo de resposta. Adicione um **[!UICONTROL drop-down listx]** usando o ícone **[!UICONTROL Selection controls]** ou clicando com o botão direito do mouse, como mostrado abaixo:
 
    ![](assets/s_ncs_admin_survey_add_list.png)
 
@@ -107,7 +107,7 @@ No exemplo a seguir, usamos uma página do tipo **[!UICONTROL Page (v5 compatibi
 
    ![](assets/s_ncs_admin_survey_add_value.png)
 
-   Clique em **[!UICONTROL OK]** para fechar o editor e em **[!UICONTROL Save]** para salvar as alterações.
+   Clique em **[!UICONTROL OK]** para fechar o editor e em **[!UICONTROL Save]** salvar as alterações.
 
    >[!NOTE]
    >
