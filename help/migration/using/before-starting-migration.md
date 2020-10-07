@@ -11,11 +11,11 @@ audience: migration
 content-type: reference
 topic-tags: migration-procedure
 discoiquuid: d8877378-fb43-4f32-91c6-60f2f788f916
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 9f7cf3d530f141a661df5fcc8cbcf0bb4c8d3e89
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '410'
+ht-degree: 3%
 
 ---
 
@@ -24,7 +24,7 @@ source-git-commit: 9f7cf3d530f141a661df5fcc8cbcf0bb4c8d3e89
 
 >[!NOTE]
 >
->Neste documento, os comandos vinculados ao banco de dados são fornecidos como um exemplo. Eles podem variar dependendo de sua configuração. Entre em contato com o administrador do banco de dados.
+>Nesse documento, os comandos vinculados ao banco de dados são fornecidos como um exemplo. Eles podem variar dependendo de sua configuração. Entre em contato com o administrador do banco de dados.
 
 ## Avisos {#warnings}
 
@@ -43,7 +43,7 @@ Antes de iniciar um processo de migração, você **deve** fazer backup dos dado
 * Não é possível alterar o tipo de mecanismo de banco de dados (DBMS). Por exemplo, você não pode alternar de um mecanismo PostgreSQL para um mecanismo Oracle. No entanto, você pode alternar de um mecanismo Oracle 8 para um mecanismo Oracle 10.
 * Não é possível ir de um banco de dados não Unicode para um banco de dados Unicode.
 
-### Recomendação {#recommendation}
+### Recomendações {#recommendation}
 
 Dado que o procedimento de migração é particularmente sensível, recomendamos vivamente que este documento seja lido em profundidade antes de se iniciar o procedimento.
 
@@ -58,7 +58,7 @@ O procedimento de migração deve ser executado em **todos** os servidores e num
    1. Migre o servidor de correio (mta).
    1. Migre os servidores de redirecionamento e rastreamento (Apache / IIS).
 
-* No caso de uma plataforma **de Mensagens na** nuvem, os servidores de execução são hospedados no Adobe Campaign. Entre em contato com o Adobe Campaign para coordenar a migração entre diferentes servidores.
+* No caso de uma plataforma **de Mensagens na** nuvem, os servidores de execução são hospedados na Adobe Campaign. Entre em contato com a Adobe Campaign para coordenar a migração entre diferentes servidores.
 * No caso de uma plataforma **** Power Booster ou Power Cluster, as etapas de migração são as seguintes:
 
    1. Migre os servidores de redirecionamento e rastreamento (Apache / IIS).
