@@ -11,11 +11,11 @@ audience: installation
 content-type: reference
 topic-tags: appendices
 discoiquuid: ba9c8e4c-441b-4422-a465-758771025ee8
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 20f835c357d016643ea1f3209ee4dfb6d3239f90
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '85'
+ht-degree: 14%
 
 ---
 
@@ -28,7 +28,7 @@ Para fazer isso, faça logon em um banco de dados existente e aplique as seguint
 
 1. Declarar uma nova instância
 
-   Vá para **[!UICONTROL Tools > Advanced > Declare a new instance...]** iniciar o assistente.
+   Vá para **[!UICONTROL Tools > Advanced > Declare a new instance...]** start do assistente.
 
    ![](assets/s_ncs_install_declare_instance_menu.png)
 
