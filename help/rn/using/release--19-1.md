@@ -11,14 +11,11 @@ audience: rns
 content-type: reference
 topic-tags: latest-release-notes
 discoiquuid: 5df34f55-135a-4ea8-afc2-f9427ce5ae7b
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: edb8f495fff90f51ae00006453b6ec09d84a8f55
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
 workflow-type: tm+mt
 source-wordcount: '2639'
-ht-degree: 82%
+ht-degree: 88%
 
 ---
 
@@ -42,17 +39,17 @@ _15 de setembro de 2020_
 * A lista jarsToSkip em catalina.properties foi atualizada para remover a referência a um arquivo jar que não é mais utilizado (notificações do iOS).
 * Correção de um problema de regressão que impedia após a publicação após a atualização.
 * Corrigida uma regressão com relatórios do delivery predefinidos que apareciam truncados quando exportados para PDF. (NEO-25757)
-* Correção de um problema que excluía o valor do parâmetro de codificação ao redirecionar de um URL de rastreamento (impacto em caracteres japoneses). (NEO-25637)
+* Correção de um problema que excluía o valor do parâmetro de codificação ao redirecionar a partir de um URL de rastreamento (impacto nos caracteres japoneses). (NEO-25637)
 * Correção de um problema que resultava no bloqueio de links não assinados de domínios personalizados quando deveriam ser permitidos. (NEO-25210)
-* Correção de uma regressão que afetava os campos calculados em um fluxo de trabalho que resultava em falha do fluxo de trabalho. (NEO-25194)
+* Correção de uma regressão que afetava os campos calculados em um workflow, causando falha no workflow. (NEO-25194)
 * Correção de um problema de compatibilidade com o Microsoft Dynamics (da versão 8.2) que poderia impedir a execução de algumas chamadas de API (RetrieveAllEntities). (NEO-24528)
-* Correção de um problema de regressão ao usar o recurso Conector ACS que impedia a conexão com uma instância Campaign Standard (gerenciamento incorreto da conexão FOH/FOH2). (NEO-23433)
-* Correção de um problema de regressão na conexão do banco de dados que resultava na reinicialização constante do servidor da Web devido a um problema de codificação do banco de dados. Isto poderia levar a um consumo excessivo. (NEO-23264)
+* Correção de um problema de regressão ao usar o recurso Conector de ACS que impedia a conexão com uma instância do Campaign Standard (gerenciamento incorreto da conexão FOH/FOH2). (NEO-23433)
+* Correção de um problema de regressão na conexão do banco de dados, provocando a reinicialização constante do servidor da web devido a um problema de codificação do banco de dados. As reinicializações poderiam causar um consumo excessivo. (NEO-23264)
 
 
 
-* Correção de um problema com o fluxo de trabalho de limpeza do banco de dados que poderia falhar devido à fonte de dados não gerenciada. (NEO-23160, NEO-23364)
-* O fluxo de trabalho de limpeza agora limpa listas expiradas por lotes de 100 em vez de um por um.
+* Correção de um problema com o workflow de limpeza do banco de dados que poderia falhar devido à fonte de dados não gerenciada. (NEO-23160, NEO-23364)
+* O workflow de limpeza agora limpa listas expiradas por lotes de 100 em vez de uma a uma.
 * Após a mudança para o [novo mecanismo de ID de sequência](https://helpx.adobe.com/br/campaign/kb/sequence_auto_generation.html#Switchtoadedicatedsequence), todos os aplicativos da web que estão atualizando a tabela do recipient são republicados durante a pós-atualização.
 * Correção de um problema que impedia o envio de emails quando havia código Javascript fora da tag de conteúdo HTML. (NEO-18628)
 * Correção de um problema que impede a atualização dos indicadores de rastreamento de mensagens transacionais pelo workflow Tracking. (NEO-17770)
@@ -62,7 +59,7 @@ _15 de setembro de 2020_
 
 
 
-* Correção de um problema de pós-atualização que desativava o Apache e o servidor da Web antes da republicação do aplicativo da Web. (NEO-27155)
+* Correção de um problema de pós-atualização que desativava o Apache e o servidor da web antes da republicação do aplicativo web. (NEO-27155)
 
 
 
