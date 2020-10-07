@@ -11,11 +11,11 @@ audience: interaction
 content-type: reference
 topic-tags: advanced-parameters
 discoiquuid: 29339aad-fd8e-4dae-8f6e-2db87221ad04
-index: y
-internal: n
-snippet: y
-translation-type: ht
-source-git-commit: 209ac4d81d2d27c264ee6b288bcb7fcb1900ffc5
+translation-type: tm+mt
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '719'
+ht-degree: 94%
 
 ---
 
@@ -93,7 +93,7 @@ Por exemplo, é possível optar por apresentar a oferta apenas para pessoas que 
 
 >[!NOTE]
 >
->É necessário limitar a regra nos canais para os quais os dados são definidos. No nosso exemplo, limitamos a regra no canal da Web de entrada (campo **[!UICONTROL Taken into account if]**).
+>É necessário limitar a regra nos canais para os quais os dados são definidos. In our example, we are limiting the rule on the inbound web channel (**[!UICONTROL Taken into account if]** field).
 
 ### Personalização {#personalization}
 
@@ -105,11 +105,11 @@ Também é possível usar esses dados adicionais ao personalizar uma oferta. Por
 >
 >É necessário limitar a personalização nos canais para os quais os dados são definidos. No nosso exemplo, estamos limitando a regra no canal da Web de entrada.
 
-Se tiver personalizado uma oferta usando dados adicionais, esses dados não aparecerão na visualização por padrão porque não estão disponíveis no banco de dados. Na guia **[!UICONTROL Example of call data]** do ambiente, é preciso adicionar amostras de valor para usar na pré-visualização. Respeite a mesma estrutura xml que está na extensão de schema **de nms:interação.** Para obter mais informações, consulte [Configuração de dados adicionais](#additional-data-configuration).
+Se tiver personalizado uma oferta usando dados adicionais, esses dados não aparecerão na visualização por padrão porque não estão disponíveis no banco de dados. In the environment&#39;s **[!UICONTROL Example of call data]** tab, you must add value samples to use in the preview. Respeite a mesma estrutura xml que está na extensão de schema **de nms:interação.** Para obter mais informações, consulte [Configuração de dados adicionais](#additional-data-configuration).
 
 ![](assets/ita_calldata_preview.png)
 
-Ao visualizar, clique em **[!UICONTROL Content personalization options for the preview]** e selecione um valor no campo **[!UICONTROL Call data]**.
+When previewing, click **[!UICONTROL Content personalization options for the preview]** and select a value in the **[!UICONTROL Call data]** field.
 
 ![](assets/ita_calldata_preview2.png)
 
