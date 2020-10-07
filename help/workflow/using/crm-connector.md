@@ -9,11 +9,11 @@ audience: workflow
 content-type: reference
 topic-tags: targeting-activities
 discoiquuid: af7c0d1d-10ac-427b-8d12-b97eb91b30a1
-index: y
-internal: n
-snippet: y
-translation-type: ht
-source-git-commit: c01a16a19516da6598b2d32a9408460c48aabf7b
+translation-type: tm+mt
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '1523'
+ht-degree: 100%
 
 ---
 
@@ -63,7 +63,7 @@ Para uma atividade de importação, as etapas de configuração da atividade do 
    > 
    >A última data de modificação no lado do CRM também é obrigatória para importações de dados incrementais.
 
-1. Você também pode filtrar os dados a serem importados com base nas suas necessidades. Para fazer isso, clique no link **[!UICONTROL Edit the filter...]**.
+1. Você também pode filtrar os dados a serem importados com base nas suas necessidades. Para fazer isso, clique em **[!UICONTROL Edit the filter...]**.
 
    No exemplo a seguir, o Adobe Campaign só importará contatos nos quais algumas atividades foram registradas desde 31 de julho de 2012.
 
@@ -95,7 +95,7 @@ Por padrão, os seguintes campos são usados (na ordem especificada):
 * Para o Oracle On Demand: **LastUpdates**, **ModifiedDate**, **LastLoggedIn**,
 * Para o Salesforce.com: **LastModifiedDate**, **SystemModamp**.
 
-A ativação da opção **[!UICONTROL Automatic index]** gera três variáveis que podem ser usadas no workflow de sincronização por meio de uma atividade do tipo **[!UICONTROL JavaScript code]**. Essas atividades são:
+A ativação da opção **[!UICONTROL Automatic index]** gera três variáveis que podem ser usadas no fluxo de trabalho de sincronização por meio de uma atividade do tipo **[!UICONTROL JavaScript code]**. Essas atividades são:
 
 * **varscrmOptionName**: representa o nome da opção que contém a data da última importação.
 * **vars.crmStartImport**: representa a data de início (incluída) da última recuperação de dados.
