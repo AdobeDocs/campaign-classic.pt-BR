@@ -11,12 +11,9 @@ audience: delivery
 content-type: reference
 topic-tags: about-deliveries-and-channels
 discoiquuid: df29492f-ed73-4ab8-b075-e76b3b9ebce3
-index: y
-internal: n
-snippet: y
-translation-type: ht
-source-git-commit: 2a5711c4478f8378c079fec4792ecbb95266ad4b
-workflow-type: ht
+translation-type: tm+mt
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
 source-wordcount: '1578'
 ht-degree: 100%
 
@@ -237,7 +234,7 @@ Você poderá combinar a definição de um target de prova específico e o uso d
 
 Este vídeo mostra como adicionar seeds e provas a um email existente e o procedimento para o seu envio.
 
->[!VIDEO](https://video.tv.adobe.com/v/25606?quality=12&captions=por_br)
+>[!VIDEO](https://video.tv.adobe.com/v/25606?quality=12)
 
 Consulte também:
 * [Seleção do público-alvo da prova](#selecting-the-proof-target)
