@@ -11,20 +11,20 @@ audience: production
 content-type: reference
 topic-tags: production-procedures
 discoiquuid: 90718075-87a7-4e9a-935b-571010908e79
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: de04b5d3ceb883a571ee665f630be931a68a5a3e
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '410'
+ht-degree: 3%
 
 ---
 
 
 # Comandos usuais{#usual-commands}
 
-Esta seção lista os comandos comuns do Adobe Campaign.
+Esta seção lista os comandos comuns no Adobe Campaign.
 
-O comando **nlserver** é o comando de entrada para todo o aplicativo do Adobe Campaign.
+O comando **nlserver** é o comando input para todo o aplicativo Adobe Campaign.
 
 Esse comando tem a seguinte sintaxe: **nlserver **`<command>`****`<arguments>`****
 
@@ -34,6 +34,7 @@ O parâmetro **`<command>`** corresponde ao módulo.
 >
 >* Em qualquer caso, você pode adicionar o argumento **-noconsole** para excluir os comentários exibidos assim que os módulos forem iniciados.
 >* Por outro lado, é possível adicionar o argumento **-detalhado** para exibir mais informações.
+
 >
 
 
@@ -42,9 +43,9 @@ O parâmetro **`<command>`** corresponde ao módulo.
 
 >[!NOTE]
 >
->Para listar todos os módulos, é necessário usar o comando **nlserver pdump** .
+>Para lista de todos os módulos, é necessário usar o comando **nlserver pdump** .
 
-Você pode adicionar o parâmetro **- que** lista as conexões em andamento (banco de dados e aplicativo).
+Você pode adicionar o parâmetro **- que** deve lista as conexões em andamento (banco de dados e aplicativo).
 
 ```
 nlserver pdump -who
@@ -68,7 +69,7 @@ default xxxxx myserver myprovider test400
 
 Outro comando útil é o monitor **nlserver**. Ele lista o arquivo XML de monitoramento (obtido no cliente Adobe Campaign ou pela página da Web **monitor.jsp** ).
 
-Você pode adicionar o parâmetro **-missing** para listar os módulos ausentes (erro em módulos, módulos desligados etc.)
+Você pode adicionar o parâmetro **-missing** para lista dos módulos ausentes (erro em módulos, módulos desligados etc.)
 
 ```
 nlserver monitor -missing
@@ -96,11 +97,11 @@ nlserver stop <module>@<INSTANCE>
 >
 >**`<instance>`** corresponde ao nome da instância conforme inserido nos arquivos de configuração, ou **padrão** para módulos de instância mono.
 
-## Desligar serviços {#shut-down-services}
+## Serviços de desligamento {#shut-down-services}
 
-Para interromper os serviços do Adobe Campaign, use um dos seguintes comandos:
+Para parar os serviços Adobe Campaign, use um dos seguintes comandos:
 
-* Se você tiver acesso de raiz ou administrador:
+* Se você tiver acesso de raiz ou de administrador:
 
    * No Linux:
 
@@ -110,7 +111,7 @@ Para interromper os serviços do Adobe Campaign, use um dos seguintes comandos:
 
       >[!NOTE]
       >
-      >A partir do 20.1, recomendamos usar o seguinte comando (para Linux): nlserver **systemctl stop**
+      >A partir do 20.1, recomendamos usar o seguinte comando (para Linux): **system ctl stop nlserver**
 
    * No Windows:
 
@@ -118,7 +119,7 @@ Para interromper os serviços do Adobe Campaign, use um dos seguintes comandos:
       net stop nlserver6
       ```
 
-* Caso contrário, na conta do Adobe Campaign:
+* Caso contrário, na conta da Adobe Campaign:
 
    ```
    nlserver shutdown 
@@ -128,17 +129,17 @@ Para interromper os serviços do Adobe Campaign, use um dos seguintes comandos:
 
 Da mesma forma, para reiniciar o Adobe Campaign, você pode usar um dos seguintes comandos:
 
-* Se você tiver acesso de raiz ou administrador:
+* Se você tiver acesso de raiz ou de administrador:
 
-   * No Linux:/etc/init.dção do/nlserver6
+   * No Linux: start /etc/init.d/nlserver6
 
       >[!NOTE]
       >
-      >A partir do 20.1, recomendamos usar o seguinte comando (para Linux): nlserver de inicialização **do systemCtl**
+      >A partir do 20.1, recomendamos usar o seguinte comando (para Linux): **start nlserver do systemctl**
 
-   * No Windows:net start nlserver6
+   * No Windows: start net nlserver6
 
-* Caso contrário, na conta do Adobe Campaign: **nlserver watchdog -svc -noconsole**
+* Caso contrário, na conta Adobe Campaign: **nlserver watchdog -svc -noconsole**
 
 ## O comando config {#the-config-command}
 
@@ -165,8 +166,9 @@ Para alterar a senha **interna** : **nlserver config -internalpassword**
 >[!NOTE]
 >
 >* Em geral, em vez de modificar os arquivos de configuração manualmente, você pode usar o comando **config**
->* Para obter a lista de parâmetros, use o **-?** parâmetro: configuração **nlserver -?**
+>* Para obter a lista dos parâmetros, use o **-?** parâmetro: **configuração nlserver -?**
 >* No caso de um banco de dados Oracle, você não deve especificar a conta. A sintaxe será a seguinte:
+
 >
 >  
 nlserver config -setdblogin:Oracle:test6@dbserver
