@@ -11,11 +11,11 @@ audience: interaction
 content-type: reference
 topic-tags: unitary-interactions
 discoiquuid: 3fd7a1ef-b0e2-4a7e-9e36-044d997db785
-index: y
-internal: n
-snippet: y
-translation-type: ht
-source-git-commit: 8e37be4f764feadb49c70a9d598f8f3b8f864380
+translation-type: tm+mt
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '433'
+ht-degree: 86%
 
 ---
 
@@ -28,11 +28,11 @@ Assista a este [vídeo](https://helpx.adobe.com/campaign/classic/how-to/indetifi
 
 Por padrão, o Interaction vem com um ambiente pré-configurado para direcionar à tabela de recipients (ofertas identificadas). Se quiser direcionar a outra tabela (tabela de visitantes para ofertas anônimas ou uma tabela de recipients específica), é preciso usar o assistente de target mapping para criar o ambiente. Para obter mais informações, consulte [Criação de um ambiente de ofertas](../../interaction/using/live-design-environments.md#creating-an-offer-environment).
 
-Ao criar um ambiente anônimo através do assistente de criação de mapeamento, a caixa **[!UICONTROL Environment dedicated to incoming anonymous interactions]** é automaticamente marcada na guia **[!UICONTROL General]** do ambiente.
+When you create an anonymous environment via the mapping creation wizard, the **[!UICONTROL Environment dedicated to incoming anonymous interactions]** box is automatically checked in the environment&#39;s **[!UICONTROL General]** tab.
 
-O **[!UICONTROL Targeting dimension]** é automaticamente concluído. Por padrão, ele vincula à tabela do visitante.
+The **[!UICONTROL Targeting dimension]** is automatically completed. Por padrão, ele vincula à tabela do visitante.
 
-O campo **[!UICONTROL Visitor folder]** é exibido. Ele é automaticamente preenchido para vincular à pasta **[!UICONTROL Visitors]**. Este campo permite escolher onde armazenar os perfis de visitantes.
+O **[!UICONTROL Visitor folder]** campo é exibido. Ele é automaticamente preenchido para vincular à pasta **[!UICONTROL Visitors]**. Este campo permite escolher onde armazenar os perfis de visitantes.
 
 ![](assets/anonymous_environment_option.png)
 
@@ -52,7 +52,7 @@ Os visitantes anônimos podem ser submetidos a um processo de identificação po
 
 Durante essa etapa, uma comparação é feita entre os dados recuperados pelos cookies e aqueles no banco de dados. Em alguns casos, o visitante é reconhecido (ele é então identificado implicitamente), em outros casos, não é reconhecido (e, portanto, permanece anônimo).
 
-Para executar essa análise, para o espaço de ofertas, marque a opção **[!UICONTROL Implicitly identify the individual based on their browser history]**.
+To run this analysis, for the offer space, check the **[!UICONTROL Implicitly identify the individual based on their browser history]** option.
 
 ![](assets/identification_anonymous_visitors.png)
 
@@ -62,7 +62,7 @@ Após a análise, se um visitante anônimo não for identificado, é possível a
 
 Se não houver elemento que permitam identificar um contato ou se não quiser sugerir uma oferta identificada para um contato que possa ser identificado implicitamente, é possível optar por realizar um fallback em um ambiente anônimo.
 
-Para fazer isso, marque a opção **[!UICONTROL Fall back on an anonymous environment if no individuals were identified]** e, em seguida, especifique o ambiente dedicado para esses visitantes não identificados em **[!UICONTROL Linked anonymous space]** quando especificar um espaço de oferta.
+To do this, check the **[!UICONTROL Fall back on an anonymous environment if no individuals were identified]**, then specify the environment dedicated to these unidentified visitors in the **[!UICONTROL Linked anonymous space]** when specifying an offer space.
 
 ![](assets/anonymous_to_anonymous_environment.png)
 
