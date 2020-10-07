@@ -11,11 +11,11 @@ audience: web
 content-type: reference
 topic-tags: web-forms
 discoiquuid: 3b8e4691-fcbc-48ef-b529-11c9a9a9d788
-index: y
-internal: n
-snippet: y
-translation-type: ht
-source-git-commit: 20f835c357d016643ea1f3209ee4dfb6d3239f90
+translation-type: tm+mt
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '492'
+ht-degree: 97%
 
 ---
 
@@ -38,7 +38,7 @@ Este capítulo detalha as etapas necessárias para criar um formulário do tipo 
 >
 >Ao configurar os aplicativos web e formulários web, é necessário uma resolução mínima de 900 pixels (por exemplo, 1600 x 900).
 
-Os formulários web são acessados pelo menu Web Applications da guia **Campaigns**. Na árvore do Adobe Campaign, elas estão agrupadas no nó **[!UICONTROL Resources > Online > Web Applications]**.
+Os formulários web são acessados pelo menu Web Applications da guia **Campaigns**. In the Adobe Campaign tree, they are grouped under the **[!UICONTROL Resources > Online > Web Applications]** node.
 
 Para criar um formulário web, clique no botão **[!UICONTROL Create]** acima da lista de aplicações web.
 
@@ -85,6 +85,7 @@ As seções a seguir detalham como definir o conteúdo e o layout nas telas do f
 >
 >* Durante o design da página, é possível exibir a renderização final na guia **[!UICONTROL Preview]**. Para visualizar as alterações, salve o formulário primeiro. Todos os erros são exibidos na guia **[!UICONTROL Log]**.
 >* Para garantir que a exibição da página e o armazenamento de informações ocorram na sequência apropriada, habilite o modo de depuração no formulário Web. Para fazer isso, vá para a subguia **[!UICONTROL Preview]** e marque a caixa **[!UICONTROL Enable debug mode]**: todas as informações coletadas e possíveis erros de execução são exibidos na parte inferior de cada página.
+
 >
 
 
