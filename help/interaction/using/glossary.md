@@ -11,11 +11,11 @@ audience: interaction
 content-type: reference
 topic-tags: interaction-overview
 discoiquuid: 5b2b7682-6bac-4282-8d27-e8a259934e7d
-index: y
-internal: n
-snippet: y
-translation-type: ht
-source-git-commit: 215e4d1ca78938b38b53cae0357612deebf7727b
+translation-type: tm+mt
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '1095'
+ht-degree: 100%
 
 ---
 
@@ -26,8 +26,8 @@ Abaixo está a definição dos elementos principais de interação.
 
 * **Ambiente**: conjunto que inclui um catálogo de oferta e ganchos (espaços de ofertas). Você precisa criar um ambiente por targeting dimension. Há dois tipos de ambientes:
 
-   * **Ambiente de design**: o ambiente no qual as ofertas são criadas e/ou regras de tipologia são definidas (regras que determinarão as ofertas para apresentar ou não a uma pessoa alvo). A tabela de indivíduos que serão alvos das ofertas e a tabela para armazenar todas as propostas de oferta também são definidas aqui. O nó **[!UICONTROL Design environment]** contém subpastas de espaço de ofertas, filtros predefinidos e categorias de ofertas. Para cada **[!UICONTROL Design environment]** há um **[!UICONTROL Live environment]** somente leitura correspondente, gerado a partir desse mesmo **[!UICONTROL Design environment]**.
-   * **Ambiente dinâmico**: ambiente vinculado a um **[!UICONTROL Design environment]**. Ele contém ofertas de somente leitura cujo conteúdo e elegibilidade foram aprovados por meio do **[!UICONTROL Design environment]**. Eles devem ser marcados para serem apresentados em um site ou inseridos em uma mensagem.
+   * **Ambiente de design**: o ambiente no qual as ofertas são criadas e/ou regras de tipologia são definidas (regras que determinarão as ofertas para apresentar ou não a uma pessoa alvo). A tabela de indivíduos que serão alvos das ofertas e a tabela para armazenar todas as propostas de oferta também são definidas aqui. O nó **[!UICONTROL Design environment]** contém subpastas de espaço de ofertas, filtros predefinidos e categorias de ofertas. Para cada **[!UICONTROL Design environment]** existe um **[!UICONTROL Live environment]** somente leitura correspondente, gerado a partir desse mesmo **[!UICONTROL Design environment]**.
+   * **Ambiente dinâmico**: ambiente vinculado a um **[!UICONTROL Design environment]**. Ele contém ofertas somente leitura cujo conteúdo e elegibilidade foram aprovados por meio do **[!UICONTROL Design environment]**. Eles devem ser marcados para serem apresentados em um site ou inseridos em uma mensagem.
 
 * **Espaço de ofertas**: pasta que define o local onde a oferta é exposta. A definição de um espaço permite especificar o canal usado, especificar se ele pode ser usado no modo unitário (por padrão: apenas no modo de lote), criar o conteúdo da oferta usando funções de renderização e especificar a oferta dentre as ofertas apresentadas. Um espaço é uma interface entre o canal e o motor de oferta.
 
@@ -56,8 +56,8 @@ Abaixo está a definição dos elementos principais de interação.
 * **Arbitragem**: selecionar ofertas que serão exibidas em um ambiente (ofertas elegíveis). As classificações do princípio de arbitragem organiza as ofertas pela prioridade de acordo com os critérios definidos nas categorias, ofertas e ofertas de contexto.
 * **Contato**: um contato de uma interação de entrada. Durante o processamento de chamadas do motor, o contato é associado a um targeting dimension. Há dois tipos de contatos:
 
-   * **[!UICONTROL Identified contact]**: um contato que foi identificado voluntariamente no canal. Em interações de saída, o contato é identificado automaticamente.
-   * **[!UICONTROL Anonymous contact]**: um contato que não tenha assinado voluntariamente por meio do canal, mas pode ser identificado implicitamente por meio de um cookie. Essa terminologia é usada apenas para interações de entrada.
+   * **[!UICONTROL Identified contact]** : um contato que foi identificado voluntariamente no canal. Em interações de saída, o contato é identificado automaticamente.
+   * **[!UICONTROL Anonymous contact]** : um contato que não tenha assinado voluntariamente por meio do canal, mas pode ser identificado implicitamente por meio de um cookie. Essa terminologia é usada apenas para interações de entrada.
 
       >[!NOTE]
       >
@@ -69,9 +69,9 @@ Abaixo está a definição dos elementos principais de interação.
 * **Modo Unitário**: um único contato é processado de cada vez. Esse modo geralmente é usado para interações de entrada e mensagens transacionais.
 * **Modo de identificação**: refere-se ao status de um contato.
 
-   * **[!UICONTROL explicit]**: o contato é identificado após entrar na interface do canal.
-   * **[!UICONTROL implicit]**: o contato foi identificado por um cookie (permanente ou de sessão). Ele pode ser processado como um contato anônimo ou identificado.
-   * **[!UICONTROL anonymous]**: o contato não pode ser identificado.
+   * **[!UICONTROL explicit]** : o contato é identificado após entrar na interface do canal.
+   * **[!UICONTROL implicit]** : o contato foi identificado por um cookie (permanente ou de sessão). Ele pode ser processado como um contato anônimo ou identificado.
+   * **[!UICONTROL anonymous]** : o contato não pode ser identificado.
 
 * **Oferta elegível**: a oferta se encontra com as restrições definidas upstream que podem ser oferecidas de forma consistente a um target.
 * **Regras de apresentação**: regras de tipologia mencionadas no ambiente de oferta, que permitem excluir algumas ofertas levando em conta o histórico de apresentações.
