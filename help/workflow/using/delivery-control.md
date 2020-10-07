@@ -11,11 +11,11 @@ audience: workflow
 content-type: reference
 topic-tags: action-activities
 discoiquuid: 0b5ee05c-4b96-425a-ab0f-60b930de21bd
-index: y
-internal: n
-snippet: y
-translation-type: ht
-source-git-commit: cfb1b02a6261c001392b5cc6430f00206e802bb8
+translation-type: tm+mt
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '160'
+ht-degree: 95%
 
 ---
 
@@ -36,7 +36,7 @@ As seguintes opções estão disponíveis:
 
    Cria uma transição de saída que será ativada no final da execução. Você pode escolher se quer recuperar ou não o target do delivery.
 
-* **[!UICONTROL Processamento de erros]**
+* **[!UICONTROL Processing errors]**
 
    Consulte [Processamento de erros](../../workflow/using/monitoring-workflow-execution.md#processing-errors).
 
@@ -44,4 +44,4 @@ As seguintes opções estão disponíveis:
 
 * deliveryId
 
-Identificador de delivery, se a ação selecionada for **[!UICONTROL Specified in the transition]**.
+Delivery identifier, if the selected action is **[!UICONTROL Specified in the transition]**.
