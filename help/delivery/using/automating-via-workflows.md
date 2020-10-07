@@ -11,11 +11,11 @@ audience: delivery
 content-type: reference
 topic-tags: content-management
 discoiquuid: 4abce633-647f-4ae4-9419-859f6e2e8628
-index: y
-internal: n
-snippet: y
-translation-type: ht
-source-git-commit: 7dbc876fae0bde78e3088ee1ab986cd09e9bcc38
+translation-type: tm+mt
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '1191'
+ht-degree: 99%
 
 ---
 
@@ -32,7 +32,7 @@ As propriedades da atividade são divididas em quatro etapas:
 
 * **[!UICONTROL Content]**: permite inserir conteúdo existente ou criar conteúdo,
 * **[!UICONTROL Update content]**: permite modificar o assunto do conteúdo ou atualizar o conteúdo por meio de um fluxo de dados XML,
-* **[!UICONTROL Action to execute]**: permite salvar ou gerar conteúdo,
+* **[!UICONTROL Action to execute]** : permite salvar ou gerar conteúdo,
 * **[!UICONTROL Transition]**: permite escolher se gera ou não uma transição de saída e a nomeia.
 
 ![](assets/d_ncs_content_wf.png)
