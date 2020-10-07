@@ -11,11 +11,11 @@ audience: delivery
 content-type: reference
 topic-tags: personalizing-deliveries
 discoiquuid: 8dfc5e7c-c762-46ba-bbda-a7251354cb47
-index: y
-internal: n
-snippet: y
-translation-type: ht
-source-git-commit: 7dbc876fae0bde78e3088ee1ab986cd09e9bcc38
+translation-type: tm+mt
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '446'
+ht-degree: 92%
 
 ---
 
@@ -30,7 +30,7 @@ As seguintes extensões são suportadas: &quot;.docx&quot;, &quot;.doc&quot; e &
 
 Para personalizar seus documentos, as mesmas funcionalidades JavaScript de personalização de email estão disponíveis.
 
-Você precisa ativar a opção **[!UICONTROL “The content of the file is personalized and converted to PDF during the delivery of each message”]**. Essa opção é acessível quando você anexa o arquivo ao email de delivery. Para obter mais informações sobre como anexar um arquivo calculado, consulte a seção [Anexando arquivos](../../delivery/using/attaching-files.md).
+É necessário ativar a **[!UICONTROL "The content of the file is personalized and converted to PDF during the delivery of each message"]** opção. Essa opção é acessível quando você anexa o arquivo ao email de delivery. Para obter mais informações sobre como anexar um arquivo calculado, consulte a seção [Anexando arquivos](../../delivery/using/attaching-files.md).
 
 Exemplo de personalização de cabeçalho de fatura:
 
@@ -43,7 +43,7 @@ Para gerar tabelas dinâmicas ou incluir imagens via URL, você precisa seguir u
 O procedimento para gerar tabelas dinâmicas é da seguinte maneira:
 
 * Crie uma tabela com três linhas e quantas colunas forem necessárias, então configure seu layout (bordas, etc.).
-* Coloque o cursor na tabela e clique no menu **[!UICONTROL Table > Table properties]**. Vá para a guia **[!UICONTROL Table]** e insira um nome começando com **NlJsTable**.
+* Place your cursor on the table and click the **[!UICONTROL Table > Table properties]** menu. Vá para a guia **[!UICONTROL Table]** e insira um nome começando com **NlJsTable**.
 * Na primeira célula da primeira linha, defina um loop (&quot;para&quot;, por exemplo) que permite a iteração nos valores que você deseja exibir na tabela.
 * Em cada célula da segunda linha da tabela, insira os scripts que retornam os valores para exibição.
 * Feche o loop na terceira e última linha da tabela.
@@ -69,9 +69,9 @@ Para fazer isso, você precisa configurar um bloco de personalização e, em seg
 
 **Etapa 2: criar o bloco de personalização:**
 
-* Vá para o menu **[!UICONTROL Resources > Campaign management > Personalization blocks]** do console do Adobe Campaign.
+* Go to the **[!UICONTROL Resources > Campaign management > Personalization blocks]** menu of the Adobe Campaign console.
 * Crie um novo bloco de personalização &quot;Meu logotipo&quot; com &quot;Meu_Logotipo&quot; como um nome interno.
-* Clique no link **[!UICONTROL Advanced parameters...]** e depois marque a opção **[!UICONTROL &quot;The content of the block is included in an attachment&quot;]**. Isso permite copiar a definição do bloco de personalização diretamente para o conteúdo do arquivo OpenOffice.
+* Clique no **[!UICONTROL Advanced parameters...]** link e marque a **[!UICONTROL "The content of the block is included in an attachment"]** opção. Isso permite copiar a definição do bloco de personalização diretamente para o conteúdo do arquivo OpenOffice.
 
    ![](assets/s_ncs_pdf_bloc_option.png)
 
