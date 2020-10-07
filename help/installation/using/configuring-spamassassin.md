@@ -11,11 +11,8 @@ audience: installation
 content-type: reference
 topic-tags: additional-configurations
 discoiquuid: aa37bdc6-0f85-4eca-859f-e8b15083cfb5
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 1a9d4c9eadf996d37481f33636eae98e482ac115
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
 workflow-type: tm+mt
 source-wordcount: '984'
 ht-degree: 1%
@@ -27,11 +24,11 @@ ht-degree: 1%
 
 >[!NOTE]
 >
->Algumas configurações só podem ser executadas pela Adobe para implantações hospedadas pela Adobe. Por exemplo, para acessar os arquivos de configuração do servidor e da instância. Para saber mais sobre as diferentes implantações, consulte a seção Modelos [de](../../installation/using/hosting-models.md) hospedagem ou [este artigo](https://helpx.adobe.com/br/campaign/kb/acc-on-prem-vs-hosted.html).
+>Algumas configurações só podem ser executadas por Adobe para implantações hospedadas por Adobe. Por exemplo, para acessar os arquivos de configuração do servidor e da instância. Para saber mais sobre as diferentes implantações, consulte a seção Modelos [de](../../installation/using/hosting-models.md) hospedagem ou [este artigo](https://helpx.adobe.com/br/campaign/kb/acc-on-prem-vs-hosted.html).
 
 ## Visão geral {#overview}
 
-O SpamAssassin é um software projetado para filtrar e-mails indesejáveis. Em conjunto com este software, o Adobe Campaign pode atribuir uma pontuação aos e-mails e determinar se uma mensagem é provavelmente considerada indesejável antes de o delivery ser iniciado. Para isso, o SpamAssassin deve ser instalado e configurado nos servidores de aplicativos do Adobe Campaign e requer um certo número de módulos Perl adicionais para operar.
+O SpamAssassin é um software projetado para filtrar e-mails indesejáveis. Em conjunto com este software, a Adobe Campaign pode atribuir uma pontuação aos e-mails e determinar se uma mensagem é provavelmente considerada indesejável antes de o delivery ser iniciado. Para isso, o SpamAssassin deve ser instalado e configurado nos servidores de aplicativos da Adobe Campaign e requer um certo número de módulos Perl adicionais para operar.
 
 A implantação e a integração do SpamAssassin, conforme descrito neste capítulo, são baseadas na instalação padrão do software, assim como nas regras de filtragem e pontuação, que são fornecidas pelo SpamAssassin sem qualquer alteração ou otimização. A atribuição de pontuação e a qualificação de mensagem se baseiam exclusivamente na configuração das opções do SpamAssassin e nas regras de filtragem. Os administradores de rede são responsáveis por adaptá-los às suas necessidades de empresa.
 
@@ -39,20 +36,20 @@ A implantação e a integração do SpamAssassin, conforme descrito neste capít
 >
 >A qualificação de emails como indesejados pelo SpamAssassin é baseada inteiramente em regras de filtragem e pontuação.
 >
->Essas regras devem, portanto, ser atualizadas pelo menos uma vez por dia para que sua instalação do SpamAssassin e sua integração no Adobe Campaign estejam totalmente funcionais e para garantir a relevância das pontuações atribuídas aos delivery antes do envio.
+>Essas regras devem, portanto, ser atualizadas pelo menos uma vez por dia para que sua instalação do SpamAssassin e sua integração à Adobe Campaign estejam totalmente funcionais e para garantir a relevância das pontuações atribuídas aos delivery antes do envio.
 >
 >Esta atualização é da responsabilidade do administrador do servidor que hospeda o SpamAssassin.
 
-O uso do SpamAssassin no Adobe Campaign fornece uma indicação sobre o possível comportamento dos servidores de e-mail que usam o SpamAssassin quando recebem e-mail enviado pelo Adobe Campaign. No entanto, é possível que os servidores de correio dos fornecedores de Internet ou dos servidores de correio eletrônico em linha ainda considerem indesejável as mensagens enviadas pela Adobe Campaign.
+O uso do SpamAssassin no Adobe Campaign fornece uma indicação sobre o possível comportamento dos servidores de e-mail que usam o SpamAssassin quando recebem e-mail enviado pela Adobe Campaign. No entanto, é possível que os servidores de correio dos fornecedores de Internet ou dos servidores de correio eletrônico em linha ainda considerem indesejável as mensagens enviadas pela Adobe Campaign.
 
-A implantação do SpamAssassin e de seus módulos em Perl requer servidores de aplicativos Adobe Campaign equipados com acesso à Internet por uma conexão HTTP (fluxo TCP/80).
+A implantação do SpamAssassin e de seus módulos em Perl requer servidores de aplicativos Adobe Campaign equipados com acesso à Internet por meio de uma conexão HTTP (fluxo TCP/80).
 
 ## Instalação em uma máquina Windows {#installing-on-a-windows-machine}
 
 Para instalar e configurar o SpamAssassin no Windows para habilitar a integração com o Adobe Campaign, aplique as seguintes etapas:
 
 1. Instalar o SpamAssassin
-1. Integrar o SpamAssassin ao Adobe Campaign
+1. Integrar SpamAssassin ao Adobe Campaign
 
 ### Instalação do SpamAssassin {#installing-spamassassin}
 
@@ -123,13 +120,13 @@ Para instalar e configurar o SpamAssassin no Windows para habilitar a integraç�
 
 1. Para verificar a integração do SpamAssassin no Adobe Campaign, use um teste GTBUE (Teste genérico para e-mail em massa não solicitado):
 
-   Clique com o Duplo no arquivo **portablesinfere.bat** . Isso aciona a exibição de uma Shell do Windows. Em seguida, execute o seguinte comando:
+   Clique com o duplo no arquivo **portablesinfere.bat** . Isso aciona a exibição de uma Shell do Windows. Em seguida, execute o seguinte comando:
 
    ```
    perl "[INSTALL]\bin\spamcheck.pl" "C:\TestSpamMail.txt"
    ```
 
-   O conteúdo deste email de teste aciona 1.000 pontos atribuídos pelo SpamAssassin. Isso significa que foi detectada como indesejável e que a integração na Adobe Campaign foi bem-sucedida e está totalmente funcional.
+   O conteúdo deste email de teste aciona 1.000 pontos atribuídos pelo SpamAssassin. Isso significa que ela foi detectada como indesejável e que a integração no Adobe Campaign foi bem-sucedida e está totalmente funcional.
 
 1. Atualizar regras de filtragem e pontuação do SpamAssassin
 
