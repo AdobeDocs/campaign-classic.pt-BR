@@ -11,11 +11,8 @@ audience: campaign
 content-type: reference
 topic-tags: campaign-optimization
 discoiquuid: a0e76d27-bedd-4f81-b4d2-1221444e670e
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 8c1f284be77447a88748ce97a3524b7035bb5bc0
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
 workflow-type: tm+mt
 source-wordcount: '980'
 ht-degree: 92%
@@ -87,7 +84,7 @@ No modo de operação padrão, as regras são aplicadas na seguinte sequência:
 1. Regras de controle, se elas forem aplicadas no início do direcionamento.
 1. Regras de filtragem:
 
-   * Regras nativas para a qualificação de endereço: endereço definido / endereço não verificado / endereço na lista de blocos / endereço em quarentena / qualidade do endereço.
+   * Regras nativas para a qualificação de endereço: endereço definido / endereço não verificado / qualidade do endereço na lista de bloqueios / endereço em quarentena / qualidade do endereço.
    * Filtrar regras definidas pelo usuário.
    * Regra de desduplicação no endereço ou identificador (aplicado se necessário).
 
