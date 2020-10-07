@@ -11,11 +11,11 @@ audience: web
 content-type: reference
 topic-tags: online-surveys
 discoiquuid: 6850851d-1dbe-44f0-bbff-18dbac2cad9a
-index: y
-internal: n
-snippet: y
-translation-type: ht
-source-git-commit: 1c86322fa95aee024f6c691b61a10c21a9a22eb7
+translation-type: tm+mt
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '799'
+ht-degree: 91%
 
 ---
 
@@ -26,7 +26,7 @@ source-git-commit: 1c86322fa95aee024f6c691b61a10c21a9a22eb7
 
 Este capítulo detalha o design de um formulário do tipo de **Pesquisa** usando o Adobe Campaign, bem como as opções e configurações disponíveis. O Adobe Campaign permite disponibilizar essa pesquisa aos usuários e coletar e arquivar respostas no banco de dados.
 
-Os formulários web são acessados por meio do nó **[!UICONTROL Resources > Online > Web applications]** da árvore. Para criar uma pesquisa, clique no botão **[!UICONTROL New]** acima da lista de aplicativos ou clique com o botão direito do mouse na lista e escolha **[!UICONTROL New]**.
+Web forms are accessed via the **[!UICONTROL Resources > Online > Web applications]** node of the tree. Para criar uma pesquisa, clique no botão **[!UICONTROL New]** acima da lista de aplicativos ou clique com o botão direito do mouse na lista e escolha **[!UICONTROL New]**.
 
 Selecione o modelo de pesquisa (**[!UICONTROL newSurvey]** por padrão).
 
@@ -52,10 +52,10 @@ Os campos em um formulário permitem aos usuários inserir informações e selec
 
 Ao adicionar um campo a uma pesquisa, você precisa selecionar seu tipo. As seguintes opções estão disponíveis:
 
-1. **[!UICONTROL Responda uma pergunta]**: essa opção permite declarar um novo campo (conhecido como &quot;campo arquivado&quot;) para armazenar as respostas. Nesse caso, todos os valores coletados são salvos, até mesmo quando um participante preenche um formulário mais de uma vez. Este modo de armazenamento está disponível somente em **Pesquisas**. Consulte [Armazenamento de respostas coletadas](../../web/using/managing-answers.md#storing-collected-answers).
-1. **[!UICONTROL Editar um destinatário]**: essa opção permite selecionar um campo no banco de dados. Nesse caso, as respostas do usuário serão armazenadas nesse campo. Para cada participante, somente o último valor salvo é mantido e adicionado aos dados do perfil.
-1. **[!UICONTROL Adicionar uma variável]**: essa opção permite criar uma configuração para que as informações não sejam armazenadas no banco de dados. As variáveis locais podem ser declaradas como upstream. Você também pode adicioná-las diretamente ao criar o campo.
-1. **[!UICONTROL Importar uma pergunta existente]**: essa opção permite importar as perguntas existentes que foram criadas em outras pesquisas.
+1. **[!UICONTROL Answer a question]**: essa opção permite que você declare um novo campo (conhecido como &quot;campo arquivado&quot;) para armazenar respostas. Nesse caso, todos os valores coletados são salvos, até mesmo quando um participante preenche um formulário mais de uma vez. Este modo de armazenamento está disponível somente em **Pesquisas**. Consulte [Armazenamento de respostas coletadas](../../web/using/managing-answers.md#storing-collected-answers).
+1. **[!UICONTROL Edit a recipient]**: essa opção permite selecionar um campo no banco de dados. Nesse caso, as respostas do usuário serão armazenadas nesse campo. Para cada participante, somente o último valor salvo é mantido e adicionado aos dados do perfil.
+1. **[!UICONTROL Add a variable]**: essa opção permite que você crie uma configuração para que as informações não sejam armazenadas no banco de dados. As variáveis locais podem ser declaradas como upstream. Você também pode adicioná-las diretamente ao criar o campo.
+1. **[!UICONTROL Import an existing question]**: essa opção permite importar perguntas existentes criadas em outras pesquisas.
 
    >[!NOTE]
    >
@@ -111,7 +111,7 @@ Use um container **Pergunta** para adicionar uma pergunta à página e inserir a
 
 ![](assets/s_ncs_admin_question_label.png)
 
-O rótulo da pergunta é inserido no campo de rótulo. Nesse caso, o estilo da folha de estilos do formulário será aplicado. Selecione a opção **[!UICONTROL Enter the title in HTML format]** para personalizar. Isso dará acesso ao editor de HTML.
+O rótulo da pergunta é inserido no campo de rótulo. Nesse caso, o estilo da folha de estilos do formulário será aplicado. Select the **[!UICONTROL Enter the title in HTML format]** option to personalize it. Isso dará acesso ao editor de HTML.
 
 >[!NOTE]
 >
