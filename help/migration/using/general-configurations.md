@@ -11,11 +11,8 @@ audience: migration
 content-type: reference
 topic-tags: configuration
 discoiquuid: f4b1c108-7f71-4aa1-8394-a7f660834c9c
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: e7de74feb61cc8f4b386a6ff86fc58b9c9e9ca1d
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
 workflow-type: tm+mt
 source-wordcount: '2822'
 ht-degree: 0%
@@ -94,7 +91,7 @@ Para verificar se os dois lados estão no mesmo fuso horário:
 >
 >Por motivos de segurança, a plataforma Adobe Campaign não está mais acessível por padrão: você deve configurar as zonas de segurança e, portanto, coletar endereços IP do operador.
 
-Adobe Campaign v7 envolve o conceito de zonas **de** segurança. Cada usuário deve estar associado a uma zona para fazer logon em uma instância e o endereço IP do usuário deve ser incluído nos endereços ou intervalos de endereços definidos na zona de segurança. A configuração das zonas de segurança pode ser feita no arquivo de configuração do servidor Adobe Campaign. A zona de segurança à qual um usuário está associado deve ser definida no console (**[!UICONTROL Administration > Access management > Operators]**).
+O Adobe Campaign v7 envolve o conceito de zonas **de** segurança. Cada usuário deve estar associado a uma zona para fazer logon em uma instância e o endereço IP do usuário deve ser incluído nos endereços ou intervalos de endereços definidos na zona de segurança. A configuração das zonas de segurança pode ser feita no arquivo de configuração do servidor Adobe Campaign. A zona de segurança à qual um usuário está associado deve ser definida no console (**[!UICONTROL Administration > Access management > Operators]**).
 
 **Antes da migração**, peça ao administrador da rede para ajudá-lo a definir as zonas de segurança a serem ativadas após a migração.
 
@@ -202,11 +199,11 @@ Por exemplo:
 
 ### JavaScript {#javascript}
 
-Adobe Campaign v7 integra um interpretador JavaScript mais recente. No entanto, essa atualização pode resultar em alguns scripts que não funcionam. Como o mecanismo anterior era mais permissivo, certas sintaxes funcionavam, o que já não acontece com a nova versão do mecanismo.
+O Adobe Campaign v7 integra um interpretador JavaScript mais recente. No entanto, essa atualização pode resultar em alguns scripts que não funcionam. Como o mecanismo anterior era mais permissivo, certas sintaxes funcionavam, o que já não acontece com a nova versão do mecanismo.
 
 A **[!UICONTROL myObject.@attribute]** sintaxe agora só é válida para objetos XML. Essa sintaxe pode ser usada para personalizar delivery e gestões de conteúdo. Se você usou esse tipo de sintaxe em um objeto não XML, os recursos de personalização não funcionarão mais.
 
-Para todos os outros tipos de objetos, a sintaxe agora é **[!UICONTROL myObject`[`&quot;attribute&quot;`]`]**. Por exemplo, um objeto não XML que usou a seguinte sintaxe:**[!UICONTROL employee.@sn]**, agora deve usar a seguinte sintaxe:**[!UICONTROL employee`[`&quot;sn&quot;`]`]**.
+Para todos os outros tipos de objetos, a sintaxe agora é **[!UICONTROL myObject`[`&quot;attribute&quot;`]`]**. Por exemplo, um objeto não XML que usou a seguinte sintaxe: **[!UICONTROL employee.@sn]**, agora deve usar a seguinte sintaxe: **[!UICONTROL employee`[`&quot;sn&quot;`]`]**.
 
 * Sintaxe anterior:
 
@@ -254,7 +251,7 @@ Não é mais possível usar um atributo XML como uma chave de tabela.
 
 ### SQLData {#sqldata}
 
-Para reforçar a segurança da instância, uma nova sintaxe foi introduzida no Adobe Campaign v7 para substituir a sintaxe baseada no SQLData. Se você usar esses elementos de código com essa sintaxe, será necessário modificá-los. Os principais elementos em causa são:
+Para reforçar a segurança da instância, uma nova sintaxe foi introduzida no Adobe Campaign v7 para substituir a sintaxe baseada em SQLData. Se você usar esses elementos de código com essa sintaxe, será necessário modificá-los. Os principais elementos em causa são:
 
 * Filtragem por subquery: a nova sintaxe se baseia no `<subQuery>` elemento para definir um subquery
 * Agregações: a nova sintaxe é &quot;função de agregação(coleção)&quot;
@@ -268,7 +265,7 @@ O schema queryDef (xtk:queryDef) foi modificado:
 
 Quando um atributo &quot;@expr&quot; é usado, o SQLData pode estar presente. É possível pesquisar os seguintes termos: &quot;SQLData&quot;, &quot;aliasSqlTable&quot;, &quot;sql&quot;.
 
-As instâncias de Adobe Campaign v7 são protegidas por padrão. A segurança está relacionada com as definições das zonas de segurança do **[!UICONTROL serverConf.xml]** ficheiro: o atributo **allowSQLInjection** gerencia a segurança da sintaxe SQL.
+As instâncias do Adobe Campaign v7 são protegidas por padrão. A segurança está relacionada com as definições das zonas de segurança do **[!UICONTROL serverConf.xml]** ficheiro: o atributo **allowSQLInjection** gerencia a segurança da sintaxe SQL.
 
 Se ocorrer um erro de SQLData durante a execução pós-atualização, você deve modificar esse atributo para permitir temporariamente o uso de sintaxes baseadas em SQLData, permitindo que você regrave o código. Para fazer isso, a seguinte opção deve ser alterada no arquivo **serverConf.xml** :
 
@@ -344,7 +341,7 @@ Abaixo, você encontrará exemplos comparativos entre a sintaxe antiga e a nova.
 
 **A agregação**
 
-função de Agregação (coleção)
+função de agregação (coleção)
 
 * Sintaxe anterior:
 
@@ -454,7 +451,7 @@ A resolução de conflitos só pode ser efetuada por operadores avançados e por
 
 Para resolver um conflito, aplique o seguinte processo:
 
-1. Na estrutura da árvore Adobe Campaign, posicione o cursor sobre **[!UICONTROL Administration > Configuration > Package management > Edit conflicts]**.
+1. Na estrutura em árvore do Adobe Campaign, coloque o cursor sobre **[!UICONTROL Administration > Configuration > Package management > Edit conflicts]**.
 1. Selecione o conflito que deseja resolver na lista.
 
 Há três maneiras possíveis de resolver um conflito:
@@ -505,7 +502,7 @@ $(XTK_INSTALL_DIR)/tomcat-7/lib/el-api.jar
 * nms:mobileOfferView
 * nms:paperOfferView
 
-### conteúdo da Oferta {#offer-content}
+### conteúdo da oferta {#offer-content}
 
 Na v7, o conteúdo da oferta foi movido. Na v6.02, o conteúdo estava em cada schema de representação (**nms:emailOfferView**). Na v7, o conteúdo agora está no schema da oferta. Após a pós-atualização, o conteúdo não estará visível na interface. Após a pós-atualização, você deve recriar o conteúdo da oferta ou desenvolver um script que move automaticamente o conteúdo do schema de representação para o schema de oferta.
 
@@ -644,7 +641,7 @@ Assim como os relatórios (consulte [Relatórios](#reports)), se você adicionou
 >[!NOTE]
 As etapas para selecionar o mecanismo de renderização são as mesmas para selecionar relatórios. Consulte Relatórios [personalizados](#personalized-reports).
 
-Os métodos de conexão de Aplicação web foram alterados na v7. Se você encontrar problemas de conexão em seus aplicativos da Web identificados, será necessário ativar temporariamente as opções **allowUserPassword** e **sessionTokenOnly** no arquivo **serverConf.xml** . Após a pós-atualização, modifique estes valores de opção:
+Os métodos de conexão de aplicação web foram alterados na v7. Se você encontrar problemas de conexão em seus aplicativos da Web identificados, será necessário ativar temporariamente as opções **allowUserPassword** e **sessionTokenOnly** no arquivo **serverConf.xml** . Após a pós-atualização, modifique estes valores de opção:
 
 ```
 allowUserPassword="true"
