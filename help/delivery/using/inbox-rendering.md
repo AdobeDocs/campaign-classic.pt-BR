@@ -11,12 +11,9 @@ audience: delivery
 content-type: reference
 topic-tags: deliverability-management
 discoiquuid: 72e974b8-415a-47ab-9804-b15957787198
-index: y
-internal: n
-snippet: y
-translation-type: ht
-source-git-commit: aef56860d6e4558a7f4833066ab3d83733591522
-workflow-type: ht
+translation-type: tm+mt
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
 source-wordcount: '801'
 ht-degree: 100%
 
@@ -54,6 +51,7 @@ Para instalações no local, siga as etapas abaixo para configurar a renderizaç
    * **[!UICONTROL Server]**: https://deliverability-app.neolane.net/deliverability
    * **[!UICONTROL Encryption]**: nenhuma
    * Marque a opção **[!UICONTROL Enabled]**.
+
    ![](assets/s_tn_inbox_rendering_external-account.png)
 
 1. Vá para o nó **[!UICONTROL Administration]** > **[!UICONTROL Platform]** > **[!UICONTROL Options]**. Procure a opção **[!UICONTROL DmRendering_cuid]** e entre em contato com o suporte para obter o identificador de relatórios do delivery que precisa ser copiado para o campo **[!UICONTROL Value (text)]**.
@@ -91,6 +89,7 @@ Cada vez que você usa o recurso **[!UICONTROL Inbox rendering]** em um delivery
 >
 >* Cada vez que o relatório de renderização da Caixa de Entrada é gerado, é deduzido um token por cliente da mensagem: um token para a renderização do Outlook 2000, um para a renderização do Outlook 2010, um para a renderização do Apple Mail 9 e assim por diante.
 >* Para o mesmo delivery, se você gerar a renderização da Caixa de Entrada novamente, o número de tokens disponíveis será reduzido novamente pelo número de renderizações geradas.
+
 >
 
 
