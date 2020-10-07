@@ -11,11 +11,8 @@ audience: delivery
 content-type: reference
 topic-tags: monitoring-deliveries
 discoiquuid: 78b58a7a-b387-4d5d-80d5-01c06f83d759
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 9c26ef0b520c6486d86e73cb93612cc7ab9556d0
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
 workflow-type: tm+mt
 source-wordcount: '2450'
 ht-degree: 95%
@@ -35,7 +32,7 @@ Quando uma mensagem (email, SMS, notificação por push) não pode ser enviada a
 
 Quando uma mensagem é enviada, o log de delivery permite exibir o status de entrega de cada perfil, o tipo de falha e o motivo associados.
 
-As mensagens também podem ser excluídas durante a preparação do delivery se um endereço estiver em quarentena ou se um perfil estiver na lista de blocos. As mensagens excluídas são listadas no painel de delivery.
+As mensagens também podem ser excluídas durante a preparação do delivery se um endereço estiver em quarentena ou se um perfil estiver na lista de bloqueios. As mensagens excluídas são listadas no painel de delivery.
 
 **Tópicos relacionados:**
 
@@ -48,7 +45,7 @@ As mensagens também podem ser excluídas durante a preparação do delivery se 
 Há três tipos de erros quando uma mensagem falha. Cada tipo de erro determina se um endereço será enviado para a quarentena. Para obter mais informações, consulte [Condições para enviar um endereço para quarentena](../../delivery/using/understanding-quarantine-management.md#conditions-for-sending-an-address-to-quarantine)
 
 * **Hard**: um erro &quot;grave&quot; indica um endereço inválido. Isto envolve uma mensagem de erro que declara explicitamente que o endereço é inválido, como &quot;Unknown user&quot;.
-* **Soft**: pode ser um erro temporário ou que não pode ser categorizado, como: &quot;Invalid domain&quot; ou &quot;Mailbox full&quot;.
+* **Soft**: pode ser um erro temporário ou que não pode ser categorizado, como: &quot;Domínio inválido&quot; ou &quot;Caixa de entrada cheia&quot;.
 * **Ignored**: é um erro que é conhecido como temporário, como &quot;Out of office&quot;, ou um erro técnico, por exemplo, se o tipo de remetente for &quot;postmaster&quot;.
 
 Os possíveis motivos para uma falha de delivery são:
@@ -89,7 +86,7 @@ Os possíveis motivos para uma falha de delivery são:
    <td> Endereço na lista de bloqueios </td> 
    <td> Grave </td> 
    <td> 8 </td> 
-   <td> O endereço foi adicionado à lista de blocos no momento do envio. This status is used for importing data from external lists and external systems into the Adobe Campaign Quarantine list.<br /> </td> 
+   <td> O endereço foi adicionado à lista de bloqueios no momento do envio. This status is used for importing data from external lists and external systems into the Adobe Campaign Quarantine list.<br /> </td> 
   </tr> 
   <tr> 
    <td> Endereço de controle </td> 
@@ -207,7 +204,7 @@ Uma mensagem pode falhar imediatamente (erro síncrono), ou posteriormente, apó
    >
    >A configuração da caixa de entrada de devolução é detalhada [nesta seção](../../installation/using/deploying-an-instance.md#managing-bounced-emails).
 
-   The [feedback loop](../../delivery/using/technical-recommendations.md#feedback-loop) operates like bounce emails. Quando um usuário classifica um email como spam, você pode configurar regras de email no Adobe Campaign para bloquear todos os deliveries a esse usuário. Mensagens enviadas para usuários que classificaram um email como spam são automaticamente redirecionadas para uma caixa de email especificamente criada para essa finalidade. Os endereços desses usuários estão na lista de bloqueios mesmo que não tenham clicado no link de unsubscription. Os endereços estão na lista de blocos na tabela de quarentena (**NmsAddress**) e não na tabela de recipient (**NmsRecipient**).
+   The [feedback loop](../../delivery/using/technical-recommendations.md#feedback-loop) operates like bounce emails. Quando um usuário classifica um email como spam, você pode configurar regras de email no Adobe Campaign para bloquear todos os deliveries a esse usuário. Mensagens enviadas para usuários que classificaram um email como spam são automaticamente redirecionadas para uma caixa de email especificamente criada para essa finalidade. Os endereços desses usuários estão na lista de bloqueios mesmo que não tenham clicado no link da unsubscription. Os endereços estão na lista de bloqueios na tabela de quarentena (**NmsAddress**) e não na tabela de recipient (**NmsRecipient**).
 
    >[!NOTE]
    >
