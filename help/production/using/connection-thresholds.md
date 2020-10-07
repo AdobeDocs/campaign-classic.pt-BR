@@ -11,28 +11,28 @@ audience: production
 content-type: reference
 topic-tags: troubleshooting
 discoiquuid: f3db77db-94cc-4d75-a59b-2dddce776759
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 579329d9194115065dff2c192deb0376c75e67bd
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '158'
+ht-degree: 5%
 
 ---
 
 
 # Limites de conexão{#connection-thresholds}
 
-Para servidores muito carregados, o limite de conexão pode ser excedido. Seja como for, é útil descobrir porquê.
+Para servidores muito carregados, o limite de conexão pode ser excedido. Em qualquer evento, é útil descobrir porquê.
 
 Há três limiares diferentes:
 
 1. O limite de conexão com a Web, configurado no servidor da Web. Para modificá-la, entre em contato com o administrador do sistema.
 1. O limite de conexão do banco de dados. Para modificá-la, entre em contato com o administrador do banco de dados.
-1. O limite de conexão do Adobe Campaign, disponível em dois lugares:
+1. O limite de conexão Adobe Campaign, disponível em dois lugares:
 
-   * Lado Tomcat: todas as consultas chegaram ao cliente Adobe Campaign Tomcat.
+   * Lado Tomcat: todos os query chegando no cliente Adobe Campaign Tomcat.
 
-      Esse limite é configurado no arquivo **nl6/tomcat-7/conf/server.xml** . O atributo **maxThreads** permite aumentar o limite do número de consultas processadas por vez. Pode ser alterado para 250, por exemplo.
+      Esse limite é configurado no arquivo **nl6/tomcat-7/conf/server.xml** . O atributo **maxThreads** permite aumentar o limite do número de query processados por vez. Pode ser alterado para 250, por exemplo.
 
       ```
       <Connector protocol="HTTP/1.1" port="8080"
@@ -48,7 +48,7 @@ Há três limiares diferentes:
 
    * Banco de dados: conjunto de todas as conexões abertas ao mesmo tempo no banco de dados por um processo.
 
-      Esse limite é configurado no arquivo **nl6/conf/serverConf.xml**. O atributo **maxCnx** localizado no pool **de** fontes de dados permite aumentar o limite de consultas processadas simultaneamente.
+      Esse limite é configurado no arquivo **nl6/conf/serverConf.xml**. O atributo **maxCnx** localizado no pool **de** fontes de dados permite aumentar o limite de query processados simultaneamente.
 
       ```
           <!-- Data source
