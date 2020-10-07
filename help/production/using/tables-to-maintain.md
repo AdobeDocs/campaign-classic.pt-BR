@@ -1,7 +1,7 @@
 ---
-title: Tabelas para manter
-seo-title: Tabelas para manter
-description: Tabelas para manter
+title: 'Tabelas a serem preservadas '
+seo-title: 'Tabelas a serem preservadas '
+description: 'Tabelas a serem preservadas '
 seo-description: null
 page-status-flag: never-activated
 uuid: 1085e929-65cc-48fa-9c31-0508a14b4704
@@ -11,32 +11,32 @@ audience: production
 content-type: reference
 topic-tags: database-maintenance
 discoiquuid: 6ec4e566-7116-4d7f-835d-cb0f3c3a6a7a
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 579329d9194115065dff2c192deb0376c75e67bd
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '1126'
+ht-degree: 1%
 
 ---
 
 
-# Tabelas para manter{#tables-to-maintain}
+# Tabelas a serem preservadas {#tables-to-maintain}
 
-A lista de tabelas a serem mantidas depende da sua versão do Adobe Campaign, da forma como você o usa e da configuração do modelo de dados.
+A lista de tabelas a serem mantidas depende da sua versão do Adobe Campaign, do modo como você o usa e da configuração do modelo de dados.
 
 A lista a seguir contém apenas as tabelas mais sujeitas a fragmentação. Os impactos são os seguintes:
 
 * consumo excessivo de espaço em disco, afetando assim o acesso à base de dados,
-* índices que não foram atualizados regularmente, o que reduz o desempenho da consulta.
+* índices que não foram atualizados regularmente, o que reduz o desempenho do query.
 
-## Tabelas do Adobe Campaign {#adobe-campaign-tables}
+## Tabelas Adobe Campaign {#adobe-campaign-tables}
 
 <table> 
  <thead> 
   <tr> 
    <th> <strong>Nome da tabela </strong><br /> </th> 
    <th> <strong>Tamanho</strong><br /> </th> 
-   <th> <strong>Principal tipo de atividade</strong><br /> </th> 
+   <th> <strong>Tipo principal de atividade</strong><br /> </th> 
    <th> <strong>Comentários</strong><br /> </th> 
   </tr> 
  </thead> 
@@ -45,31 +45,31 @@ A lista a seguir contém apenas as tabelas mais sujeitas a fragmentação. Os im
    <td> NmsDelivery<br /> </td> 
    <td> Pequeno<br /> </td> 
    <td> Atualizações<br /> </td> 
-   <td> Há um registro por ação de entrega. Um único registro pode ser atualizado várias vezes para refletir o progresso da entrega, de modo que os índices nesta tabela tendem a fragmentar rapidamente. <br /> </td> 
+   <td> Há um registro por ação do delivery. Um único registro pode ser atualizado várias vezes para refletir o progresso do delivery, de modo que os índices nesta tabela tendem a fragmentar rapidamente. <br /> </td> 
   </tr> 
   <tr> 
    <td> NmsDeliveryPart<br /> </td> 
    <td> Médio<br /> </td> 
    <td> Inserções, atualizações, exclusões<br /> </td> 
-   <td> Tabela de trabalho na qual os registros são inseridos durante a preparação da entrega. Eles são atualizados durante a entrega e finalmente excluídos assim que a entrega for concluída.<br /> Esta tabela tende a se fragmentar rapidamente, mesmo que seu tamanho médio seja bastante limitado.<br /> </td> 
+   <td> Tabela de trabalho na qual os registros são inseridos durante a preparação do delivery. Eles são atualizados durante o delivery e finalmente excluídos assim que o delivery for concluído.<br /> Esta tabela tende a se fragmentar rapidamente, mesmo que seu tamanho médio seja bastante limitado.<br /> </td> 
   </tr> 
   <tr> 
    <td> NmsMirrorPageInfo<br /> </td> 
    <td> Grande<br /> </td> 
    <td> Inserções, exclusões<br /> </td> 
-   <td> Esta tabela contém as informações necessárias para gerar páginas espelhadas personalizadas. Ele contém um campo de memorando (CLOB) e, como tal, tende a ser muito grande. O volume é diretamente proporcional ao histórico de páginas espelhadas mantidas. <br /> </td> 
+   <td> Esta tabela contém as informações necessárias para gerar mirrores page personalizados. Ele contém um campo de memorando (CLOB) e, como tal, tende a ser muito grande. O volume é diretamente proporcional ao histórico de mirrores page mantidos. <br /> </td> 
   </tr> 
   <tr> 
    <td> NmsDeliveryStat<br /> </td> 
    <td> Médio<br /> </td> 
    <td> Inserções, atualizações, exclusões<br /> </td> 
-   <td> Esta tabela contém estatísticas sobre o processo de entrega. Os seus registros são regularmente atualizados. <br /> </td> 
+   <td> Esta tabela contém estatísticas sobre o processo de delivery. Os seus registros são regularmente atualizados. <br /> </td> 
   </tr> 
   <tr> 
    <td> NmsAddress<br /> </td> 
    <td> Médio<br /> </td> 
    <td> Atualizações, inserções<br /> </td> 
-   <td> Esta tabela contém informações sobre endereços de email. Ele é frequentemente atualizado como parte do processo de quarentena (os registros são criados no primeiro erro de entrega, atualizados quando os contadores são alterados e excluídos assim que a entrega é bem-sucedida). <br /> </td> 
+   <td> Esta tabela contém informações sobre endereços de email. Ele é atualizado com frequência como parte do processo de quarentena (os registros são criados no primeiro erro de delivery, atualizados quando os contadores são alterados e excluídos depois que o delivery é bem-sucedido). <br /> </td> 
   </tr> 
   <tr> 
    <td> XtkWorkflow<br /> </td> 
@@ -93,19 +93,19 @@ A lista a seguir contém apenas as tabelas mais sujeitas a fragmentação. Os im
    <td> XtkWorkflowJob<br /> </td> 
    <td> Muito pequeno <br /> </td> 
    <td> Inserções, atualizações, exclusões<br /> </td> 
-   <td> Esta tabela é específica do mecanismo de fluxo de trabalho. Ela permite o envio de comandos para fluxos de trabalho (Iniciar, Parar, Pausar, por exemplo). Embora seja pequeno, este quadro é considerado durante a expurgação de tabelas transacionais ligadas a fluxos de trabalho.<br /> </td> 
+   <td> Esta tabela é específica do motor de workflow. Ela permite o envio de comandos para workflows (Start, Parar, Pausar, por exemplo). Embora seja pequeno, este quadro é tomado em consideração durante a purga de tabelas transacionais ligadas a workflows.<br /> </td> 
   </tr> 
   <tr> 
    <td> NmsBroadLog<br /> </td> 
    <td> Maior<br /> </td> 
    <td> Inserções, atualizações, exclusões<br /> </td> 
-   <td> Esta é a maior mesa do sistema. Há um registro por mensagem enviada, e esses registros são inseridos, atualizados para rastrear o status de entrega e excluídos quando o histórico é expurgado. <br /> </td> 
+   <td> Esta é a maior mesa do sistema. Há um registro por mensagem enviada e esses registros são inseridos, atualizados para rastrear o status do delivery e excluídos quando o histórico é expurgado. <br /> </td> 
   </tr> 
   <tr> 
    <td> NmsTrackingLog<br /> </td> 
    <td> Grande<br /> </td> 
    <td> Inserções, exclusões<br /> </td> 
-   <td> Os logs de rastreamento são inseridos e excluídos quando o histórico é removido, mas não são atualizados. <br /> </td> 
+   <td> Logs de rastreamento são inseridos e excluídos quando o histórico é limpo, mas não são atualizados. <br /> </td> 
   </tr> 
   <tr> 
    <td> NmsBroadlogMsg <br /> </td> 
@@ -117,58 +117,58 @@ A lista a seguir contém apenas as tabelas mais sujeitas a fragmentação. Os im
    <td> NmsEmailErrorStat<br /> </td> 
    <td> Médio<br /> </td> 
    <td> Inserções, atualizações, exclusões<br /> </td> 
-   <td> Esta tabela contém os agregados em erros SMTP classificados por domínio. Ele contém inicialmente informações detalhadas que são agregadas pela tarefa de limpeza quando ela fica desatualizada. <br /> </td> 
+   <td> Esta tabela contém as agregações sobre erros SMTP classificados por domínio. Ele contém inicialmente informações detalhadas que são agregadas pela tarefa de limpeza quando ela fica desatualizada. <br /> </td> 
   </tr> 
   <tr> 
    <td> NmsBroadLogMid (em uma instância de mid-sourcing)<br /> </td> 
    <td> Grande<br /> </td> 
    <td> Inserções, atualizações, exclusões<br /> </td> 
-   <td> Somente quando a instância 5.10 (ou posterior) é usada como uma instância de mid-sourcing. Esta é uma das maiores tabelas do banco de dados. Há um registro por mensagem enviada, e esses registros são inseridos, atualizados para rastrear o status de entrega e excluídos quando o histórico é expurgado. Ao usar o mid-sourcing, a recomendação é limitar o histórico (normalmente menos de dois meses), portanto, essa tabela permanece razoável em termos de tamanho (menos de 30 milhões de linhas, data+index), mas é muito importante reconstruí-la periodicamente. <br /> </td> 
+   <td> Somente quando a instância 5.10 (ou posterior) é usada como uma instância mid-sourcing. Esta é uma das maiores tabelas do banco de dados. Há um registro por mensagem enviada e esses registros são inseridos, atualizados para rastrear o status do delivery e excluídos quando o histórico é expurgado. Ao usar o mid-sourcing, a recomendação é limitar o histórico (normalmente menos de dois meses), portanto, essa tabela permanece razoável em termos de tamanho (menos de 30 milhões de linhas, data+index), mas é muito importante reconstruí-la periodicamente. <br /> </td> 
   </tr> 
   <tr> 
    <td> NmsBroadLogRcp (quando a tabela NmsRecipient é usada) <br /> </td> 
    <td> Grande<br /> </td> 
    <td> Inserções, atualizações, exclusões<br /> </td> 
-   <td> Esta é a maior mesa do sistema. Há um registro por mensagem enviada, e esses registros são inseridos, atualizados para rastrear o status de entrega e excluídos quando o histórico é expurgado. Observe que na versão 5.10, essa tabela é menor que o equivalente na versão 4.05 (NmsBroadLog), pois o texto da mensagem SMTP é fatorizado na tabela NmsBroadLogMsg na versão 5.10. No entanto, continua sendo essencial reindexar essa tabela regularmente (a cada duas semanas para começar) e recriá-la completamente de vez em quando (uma vez por mês ou quando o desempenho é afetado). <br /> </td> 
+   <td> Esta é a maior mesa do sistema. Há um registro por mensagem enviada e esses registros são inseridos, atualizados para rastrear o status do delivery e excluídos quando o histórico é expurgado. Observe que na versão 5.10, essa tabela é menor que o equivalente na versão 4.05 (NmsBroadLog), pois o texto da mensagem SMTP é fatorizado na tabela NmsBroadLogMsg na versão 5.10. No entanto, continua sendo essencial reindexar essa tabela regularmente (de duas em duas semanas para start) e recriá-la completamente de vez em quando (uma vez por mês ou quando o desempenho é afetado). <br /> </td> 
   </tr> 
   <tr> 
-   <td> YyyBroadLogXxx (quando uma tabela de destinatários externos é usada)<br /> </td> 
+   <td> YyyBroadLogXxx (quando uma tabela de recipient externa é usada)<br /> </td> 
    <td> Grande<br /> </td> 
    <td> Inserções, atualizações, exclusões<br /> </td> 
-   <td> Igual a NmsBroadLogRcp, mas com uma tabela de destinatários externos. Adapte Yyy e Xxx aos valores no mapeamento de entrega. <br /> </td> 
+   <td> Igual a NmsBroadLogRcp, mas com uma tabela de recipient externa. Adapte Yyy e Xxx aos valores no mapeamento do delivery. <br /> </td> 
   </tr> 
   <tr> 
    <td> NmsTrackingLogRcp (quando a tabela NmsRecipient é usada) <br /> </td> 
    <td> Grande<br /> </td> 
    <td> Inserções, exclusões<br /> </td> 
-   <td> Os logs de rastreamento são inseridos e excluídos quando o histórico é removido, mas não são atualizados. O volume depende da duração da retenção de dados. <br /> </td> 
+   <td> Logs de rastreamento são inseridos e excluídos quando o histórico é limpo, mas não são atualizados. O volume depende da duração da retenção de dados. <br /> </td> 
   </tr> 
   <tr> 
-   <td> YyyTrackingLogXxx (quando a tabela de destinatários externos é usada)<br /> </td> 
+   <td> YyyTrackingLogXxx (quando a tabela de recipient externos é usada)<br /> </td> 
    <td> Grande<br /> </td> 
    <td> Inserções, exclusões<br /> </td> 
-   <td> Igual a NmsTrackingLogRcp, mas com uma tabela de destinatários externos. Adapte Yyy e Xxx aos valores usados no mapeamento de entrega. <br /> </td> 
+   <td> Igual a NmsTrackingLogRcp, mas com uma tabela de recipient externa. Adapte Yyy e Xxx aos valores usados no mapeamento do delivery. <br /> </td> 
   </tr> 
   <tr> 
-   <td> NmsBroadLogRtEvent (instância de execução do Message Center)<br /> </td> 
+   <td> NmsBroadLogRtEvent (instância de execução do centro de mensagens)<br /> </td> 
    <td> Grande<br /> </td> 
    <td> Inserções, atualizações, exclusões<br /> </td> 
    <td> Semelhante às outras tabelas de transmissão, mas com NmsRtEvent em vez de NmsRecipient.<br /> </td> 
   </tr> 
   <tr> 
-   <td> NmsTrackingLogRtEvent (instância de execução do Message Center)<br /> </td> 
+   <td> NmsTrackingLogRtEvent (instância de execução do Centro de mensagens)<br /> </td> 
    <td> Grande<br /> </td> 
    <td> Inserções, exclusões<br /> </td> 
    <td> Semelhante às outras tabelas trackingLog, mas com a tabela NmsRtEvent em vez de NmsRecipient.<br /> </td> 
   </tr> 
   <tr> 
-   <td> NmsRtEvent (instância de execução do Centro de Mensagens)<br /> </td> 
+   <td> NmsRtEvent (instância de execução do centro de mensagens)<br /> </td> 
    <td> Grande<br /> </td> 
    <td> Inserções, atualizações, exclusões<br /> </td> 
-   <td> Tabela que contém a fila de eventos do Centro de mensagens. O status desses eventos é atualizado pelo Centro de Mensagens à medida que são processados. As exclusões são feitas durante a purga. Recomendamos que você recrie regularmente o índice desta tabela e reconstrua-a.<br /> </td> 
+   <td> Tabela que contém a fila de evento do Centro de mensagens. O status desses eventos é atualizado pelo Centro de mensagens à medida que são processados. As exclusões são feitas durante a purga. Aconselhamos você a recriar regularmente o índice desta tabela e reconstruí-lo.<br /> </td> 
   </tr> 
   <tr> 
-   <td> NmsEventHisto (instância de controle do Message Center)<br /> </td> 
+   <td> NmsEventHisto (instância de controle do centro de mensagens)<br /> </td> 
    <td> Grande<br /> </td> 
    <td> Inserções, atualizações, exclusões<br /> </td> 
    <td> Semelhante a NmsRtEvent. Esta tabela arquiva cada evento de todas as instâncias de execução. É usado por nenhum processo em tempo real, apenas por relatórios.<br /> </td> 
@@ -183,7 +183,7 @@ A lista a seguir contém apenas as tabelas mais sujeitas a fragmentação. Os im
    <td> NmsAppSubscriptionRcp<br /> </td> 
    <td> Grande<br /> </td> 
    <td> Inserções, atualizações<br /> </td> 
-   <td> Tabela que inclui os identificadores de dispositivos móveis (endereços) usados para enviar a notificação (semelhante a uma tabela de destinatários).<br /> </td> 
+   <td> Tabela que inclui os identificadores de dispositivos móveis (endereços) usados para enviar a notificação (semelhante a uma tabela de recipient).<br /> </td> 
   </tr> 
   <tr> 
    <td> NmsBroadLogAppSubRcp<br /> </td> 
@@ -208,4 +208,4 @@ A lista a seguir contém apenas as tabelas mais sujeitas a fragmentação. Os im
 
 ## Tabelas do cliente {#customer-tables}
 
-Além da lista acima, as tabelas que contêm tabelas criadas por clientes (que não existem no modelo de dados do Adobe Campaign) durante a configuração da plataforma também podem estar sujeitas a fragmentação, especialmente se forem atualizadas com frequência durante os procedimentos de carregamento ou sincronização de dados. Essas tabelas podem fazer parte do modelo de dados padrão do Adobe Campaign (por exemplo, **NmsRecipient**). Nesse caso, cabe ao administrador da plataforma Adobe Campaign realizar uma auditoria de seu modelo de banco de dados específico para localizar essas tabelas personalizadas. Essas tabelas não são necessariamente mencionadas explicitamente em nossos procedimentos de manutenção.
+Além da lista acima, as tabelas que contêm tabelas criadas por clientes (que não existem no modelo de dados da Adobe Campaign) durante a configuração da plataforma também podem estar sujeitas a fragmentação, especialmente se forem atualizadas com frequência durante os procedimentos de carregamento ou sincronização de dados. Essas tabelas podem fazer parte do modelo de dados padrão da Adobe Campaign (por exemplo, **NmsRecipient**). Nesse caso, cabe ao administrador da plataforma Adobe Campaign realizar uma auditoria de seu modelo de banco de dados específico para localizar essas tabelas personalizadas. Essas tabelas não são necessariamente mencionadas explicitamente em nossos procedimentos de manutenção.
