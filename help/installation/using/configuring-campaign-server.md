@@ -11,11 +11,8 @@ audience: installation
 content-type: reference
 topic-tags: additional-configurations
 discoiquuid: 1a94c94e-ab6b-45c2-a0f3-6adeec7e2d2d
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: bc54cef4c44be4c694e062f56685dbb09d2fcf8e
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
 workflow-type: tm+mt
 source-wordcount: '3593'
 ht-degree: 5%
@@ -35,7 +32,7 @@ A seção abaixo detalha as configurações do lado do servidor que podem ser ex
 
 Para obter mais informações, consulte esta seção.
 
-* [Documentação do Painel de controle do Campaign](https://docs.adobe.com/content/help/pt-BR/control-panel/using/control-panel-home.html)
+* [Documentação do Painel de controle do Campaign](https://docs.adobe.com/content/help/pt-BR/control-panel/using/control-panel-home.translate.html)
 * [Modelos de hospedagem](../../installation/using/hosting-models.md)
 * [Matriz de capacidade local e hospedada do Campaign Classic](https://helpx.adobe.com/br/campaign/kb/acc-on-prem-vs-hosted.html)
 * [Etapas](../../installation/using/about-hybrid-and-hosted-models.md) de configuração de modelos híbridos e hospedados )
@@ -215,7 +212,7 @@ Antes disso, você deve fazer o start configurando a **[!UICONTROL Security zone
 
 Essa configuração é feita no explorador de Campanhas:
 
-1. Clique no **[!UICONTROL Administration > Platform > Enumerations]** nó.
+1. Clique no nó **[!UICONTROL Administration > Platform > Enumerations]**.
 1. Selecione a lista discriminada do **[!UICONTROL Security zone (securityZone)]** sistema.
 
    ![](assets/enum_securityzone.png)
@@ -229,7 +226,7 @@ Essa configuração é feita no explorador de Campanhas:
 
 Depois que as zonas forem definidas e a **[!UICONTROL Security zone]** lista discriminada for configurada, será necessário vincular cada operador a uma zona de segurança:
 
-1. Clique no **[!UICONTROL Administration > Access management > Operators]** nó.
+1. Clique no nó **[!UICONTROL Administration > Access management > Operators]**.
 1. Selecione o operador ao qual você deseja vincular uma zona de segurança e clique na **[!UICONTROL Edit]** guia.
 1. Vá para a guia **[!UICONTROL Access rights]** e clique no **[!UICONTROL Edit access parameters...]** link.
 
@@ -558,7 +555,7 @@ Você pode optar por forçar a execução de um fluxo de trabalho ou de uma ativ
 
    A lista suspensa contém afinidades usadas anteriormente. Ele é concluído ao longo do tempo com os diferentes valores digitados.
 
-1. Abra o arquivo **nl6/conf/config-`<instance>.xml`**.
+1. Abra o arquivo **nl6/conf/config-`<instance>.xml`** .
 1. Modifique a linha que corresponde ao **[!UICONTROL wfserver]** módulo da seguinte forma:
 
    ```
