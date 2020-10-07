@@ -11,11 +11,11 @@ audience: configuration
 content-type: reference
 topic-tags: api
 discoiquuid: 76984d9d-7759-4e0f-a275-09cca27589fa
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: e7ff12260d875b85256c8678fa8d100fd355398e
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '423'
+ht-degree: 5%
 
 ---
 
@@ -24,7 +24,7 @@ source-git-commit: e7ff12260d875b85256c8678fa8d100fd355398e
 
 ## Introdução {#introduction}
 
-É possível criar métodos SOAP no JavaScript. Essa função simplesmente permite processos aplicáveis, pode evitar o desenvolvimento de JSPs e sua chamada nos formulários.
+É possível criar métodos SOAP no JavaScript. Essa função simplesmente habilita processos aplicáveis, pode evitar o desenvolvimento de JSPs e sua chamada nos formulários.
 
 Esses métodos SOAP se comportam da mesma forma que os definidos nativamente no aplicativo. Os mesmos atributos são suportados: estático, apenas chave e const.
 
@@ -37,15 +37,15 @@ A criação de uma biblioteca de métodos envolve duas etapas:
 
 ### Declaração {#declaration}
 
-Comece declarando os métodos nos esquemas (para obter mais informações sobre como criar e editar esquemas, consulte [esta seção](../../configuration/using/about-schema-edition.md)).
+Start declarando os métodos nos schemas (para obter mais informações sobre como criar e editar schemas, consulte [esta seção](../../configuration/using/about-schema-edition.md)).
 
 A declaração é semelhante à dos métodos nativos, exceto que é necessário adicionar o atributo &#39;library&#39; especificando o nome da biblioteca de métodos na qual a definição está localizada.
 
-Esse nome coincide com o nome (com o namespace) da entidade do tipo &quot;Código JavaScript&quot;.
+Esse nome coincide com o nome (com a namespace) da entidade do tipo &#39;Código JavaScript&#39;.
 
 Exemplo:
 
-O método testLog(msg) é declarado em uma extensão nms:customer
+O método testLog(msg) é declarado em uma extensão nms:recipient
 
 ```
 <method name="testLog" static="true" library="cus:test">
@@ -57,7 +57,7 @@ O método testLog(msg) é declarado em uma extensão nms:customer
 
 >[!NOTE]
 >
->O namespace e o nome usados para a biblioteca são independentes do namespace e do nome do esquema onde a declaração é encontrada.
+>A namespace e o nome usados para a biblioteca são independentes do nome da namespace e do schema onde a declaração é encontrada.
 
 ### Definição {#definition}
 
@@ -65,7 +65,7 @@ Métodos SOAP são implementados na forma da função JavaScript agrupados em um
 
 >[!NOTE]
 >
->Uma biblioteca de métodos pode agrupar funções para vários esquemas ou vice-versa, as funções de um esquema podem ser definidas em bibliotecas separadas.
+>Uma biblioteca de métodos pode agrupar funções para vários schemas ou vice-versa, as funções de um schema podem ser definidas em bibliotecas separadas.
 
 O script pode conter o código a ser executado durante o carregamento inicial da biblioteca.
 
