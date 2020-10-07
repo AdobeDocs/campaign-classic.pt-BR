@@ -11,11 +11,11 @@ audience: production
 content-type: reference
 topic-tags: troubleshooting
 discoiquuid: a44f5e71-3f9b-4d02-8b7a-a9782bb6bdd8
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 20f835c357d016643ea1f3209ee4dfb6d3239f90
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '259'
+ht-degree: 6%
 
 ---
 
@@ -41,7 +41,7 @@ Esta é uma lista de módulos afetados por problemas frequentes:
   <tr> 
    <td> importação </td> 
    <td> Execução de um processo de importação<br /> </td> 
-   <td> O operador que programou essa exportação precisa reiniciá-la. Verifique se há duplicatas no banco de dados.<br /> </td> 
+   <td> O operador que programou essa exportação precisa reiniciá-la. Verifique se há duplicados no banco de dados.<br /> </td> 
   </tr> 
   <tr> 
    <td> inMail </td> 
@@ -65,18 +65,18 @@ Esta é uma lista de módulos afetados por problemas frequentes:
   </tr> 
   <tr> 
    <td> rastreamento </td> 
-   <td> Consolidação e recuperação de registros de rastreamento<br /> </td> 
-   <td> Verifique este módulo se os registros de rastreamento não forem mais encaminhados.<br /> </td> 
+   <td> Consolidação e recuperação de logs de rastreamento<br /> </td> 
+   <td> Verifique este módulo se os logs de rastreamento não forem mais encaminhados.<br /> </td> 
   </tr> 
   <tr> 
    <td> trackinglogd </td> 
    <td> Rastreamento de gravação e remoção de log do servidor<br /> </td> 
-   <td> Verifique este módulo se os registros de rastreamento não forem mais encaminhados e se não houver rastreamentos de registros nos arquivos no servidor. Consulte Problemas <a href="../../production/using/tracking-logs-issues.md" target="_blank">com registros de</a>rastreamento.<br /> </td> 
+   <td> Verifique este módulo se os logs de rastreamento não forem mais encaminhados e se não houver rastreamentos de registros nos arquivos no servidor. Consulte os problemas com <a href="../../production/using/tracking-logs-issues.md" target="_blank">Logs de rastreamento</a>.<br /> </td> 
   </tr> 
   <tr> 
    <td> cão de guarda </td> 
    <td> Instância de inicialização e monitoramento<br /> </td> 
-   <td> Verifique este módulo se nenhum processo for iniciado.<br /> </td> 
+   <td> Verifique este módulo se nenhum start de processos for processado.<br /> </td> 
   </tr> 
   <tr> 
    <td> web </td> 
