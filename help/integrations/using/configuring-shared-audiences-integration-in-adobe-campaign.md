@@ -11,11 +11,8 @@ audience: integrations
 content-type: reference
 topic-tags: audience-sharing
 discoiquuid: 4443b0ca-80c6-467d-a4df-50864aae8496
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 0c3737b22c7bf4e614c5a2fbe8e8fd954d3ece8a
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
 workflow-type: tm+mt
 source-wordcount: '404'
 ht-degree: 90%
@@ -41,6 +38,7 @@ Primeiro, precisamos configurar ou verificar as contas externas no Adobe Campaig
 
    * **[!UICONTROL importSharedAudience]**: conta SFTP dedicada à importação de públicos.
    * **[!UICONTROL exportSharedAudience]**: conta SFTP dedicada à exportação de públicos.
+
    ![](assets/aam_config_1.png)
 
 1. Preencha o campo **[!UICONTROL Server]**: domínio **ftp-out.demdex.com** para a conta externa de importação e domínio **ftp-in.demdex.com** para a conta externa de exportação.
@@ -49,9 +47,11 @@ Primeiro, precisamos configurar ou verificar as contas externas no Adobe Campaig
 
    >[!NOTE]
    >
-   >If you are using S3, enter your **[!UICONTROL AWS S3 Account Server]** following this syntax:\
-   `<S3bucket name>.s3.amazonaws.com/<s3object path>`\
-   Para obter mais informações sobre como configurar sua conta S3, consulte esta [página](../../platform/using/external-accounts.md#amazon-simple-storage-service--s3--external-account).
+   >If you are using S3, enter your **[!UICONTROL AWS S3 Account Server]** following this syntax:
+   >
+   >`<S3bucket name>.s3.amazonaws.com/<s3object path>`
+   >
+   >Para obter mais informações sobre como configurar sua conta S3, consulte esta [página](../../platform/using/external-accounts.md#amazon-simple-storage-service--s3--external-account).
 
    ![](assets/aam_config_2.png)
 
@@ -67,7 +67,7 @@ To configure the **[!UICONTROL Recipient - Visitor ID]** data source:
 
 1. From the **[!UICONTROL Explorer]** node, select **[!UICONTROL Administration > Platform > AMC Data sources]**.
 1. Selecione **[!UICONTROL Recipient - Visitor ID]**.
-1. Digite o **[!UICONTROL Data Source ID]** e **[!UICONTROL AAM Destination ID]** fornecido pela Adobe.
+1. Digite o **[!UICONTROL Data Source ID]** e **[!UICONTROL AAM Destination ID]** fornecido pelo Adobe.
 
    ![](assets/aam_config_3.png)
 
