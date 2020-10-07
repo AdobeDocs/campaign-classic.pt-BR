@@ -11,18 +11,18 @@ audience: workflow
 content-type: reference
 topic-tags: action-activities
 discoiquuid: a128caac-5740-4dac-b14d-1d2fcef3cc69
-index: y
-internal: n
-snippet: y
-translation-type: ht
-source-git-commit: c10a0a11c6e9952aa47da1f7a15188c79c62508d
+translation-type: tm+mt
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '185'
+ht-degree: 80%
 
 ---
 
 
 # Carregamento de dados (RDBMS){#data-loading-rdbms}
 
-A atividade **[!UICONTROL Data loading (RDBMS)]** permite acessar esse banco de dados externo diretamente e coletar apenas os dados necessários para o direcionamento.
+The **[!UICONTROL Data loading (RDBMS)]** activity lets you access this external database directly and to collect only the data required for targeting.
 
 Para melhorar o desempenho, recomendamos o uso da atividade de query (onde os dados de um banco de dados externo podem ser usados). Para obter mais informações, consulte [Acesso a um banco de dados externo (FDA)](../../workflow/using/accessing-an-external-database--fda-.md).
 
@@ -32,15 +32,15 @@ A operação é como descrita a seguir:
 
    ![](assets/s_advuser_wf_sgbd_sample_1.png)
 
-   O nome da tabela inserido no campo correspondente é usado como um template para coletar dados no banco de dados externo. O nome da tabela processada pelo workflow pode ser calculado ou transmitido pela transição de entrada da atividade de carregamento de dados. Para selecionar a tabela a ser usada, clique no link **[!UICONTROL Advanced..]**. e selecione a opção **[!UICONTROL Specified in the transition]** ou **[!UICONTROL Explicit]**.
+   O nome da tabela inserido no campo correspondente é usado como um template para coletar dados no banco de dados externo. O nome da tabela processada pelo workflow pode ser calculado ou transmitido pela transição de entrada da atividade de carregamento de dados. Para selecionar a tabela a ser usada, clique no link **[!UICONTROL Advanced..]**. link and select the **[!UICONTROL Specified in the transition]** or **[!UICONTROL Explicit]** option.
 
    ![](assets/s_advuser_wf_sgbd_sample_5.png)
 
-1. Clique no link **[!UICONTROL Select the columns to extract...]** para escolher os dados a serem coletados no banco de dados.
+1. Click the **[!UICONTROL Select the columns to extract...]** link to choose the data to be collected in the database.
 
    ![](assets/s_advuser_wf_sgbd_sample_2.png)
 
-1. Você pode definir um filtro nesses dados. Para fazer isso, clique no link **[!UICONTROL Edit query....]**.
+1. Você pode definir um filtro nesses dados. Para fazer isso, clique em **[!UICONTROL Edit query....]**.
 
    Os dados coletados desta forma podem ser usados durante o ciclo de vida do workflow.
 
