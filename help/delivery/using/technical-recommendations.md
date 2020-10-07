@@ -9,11 +9,8 @@ audience: delivery
 content-type: reference
 topic-tags: deliverability-management
 discoiquuid: fc95538b-b54d-44ec-81aa-f51b62982699
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 537cbdec1ec88da1c759f6ca8eafe383c55a61d3
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
 workflow-type: tm+mt
 source-wordcount: '2436'
 ht-degree: 94%
@@ -138,7 +135,7 @@ Recommendations for defining an SPF record:
 
 ## Loop de comentários {#feedback-loop}
 
-Um loop de cometários funciona declarando no nível do ISP determinado endereço de email para um intervalo de endereços IP usados para enviar mensagens. O ISP enviará para esta caixa de entrada, de maneira semelhante ao que é feito para mensagens devolvidas, essas mensagens são relatadas por recipients como spam. A plataforma deve estar configurada para bloquear futuros deliveries para os usuários que reclamaram. É importante deixar de entrar em contato com eles, mesmo que não tenham usado o link de opt out adequado. É com base nestas queixas que um ISP acrescentará um endereço IP à sua lista de bloqueios. Dependendo do ISP, uma taxa de reclamações de cerca de 1% resultará no bloqueio de um endereço IP.
+Um loop de cometários funciona declarando no nível do ISP determinado endereço de email para um intervalo de endereços IP usados para enviar mensagens. O ISP enviará para esta caixa de entrada, de maneira semelhante ao que é feito para mensagens devolvidas, essas mensagens são relatadas por recipients como spam. A plataforma deve estar configurada para bloquear futuros deliveries para os usuários que reclamaram. É importante deixar de entrar em contato com eles, mesmo que não tenham usado o link de opt out adequado. É com base nestas queixas que um FSI acrescentará um endereço IP à sua lista de bloqueios. Dependendo do ISP, uma taxa de reclamações de cerca de 1% resultará no bloqueio de um endereço IP.
 
 No momento, um padrão está sendo projetado para definir o formato de mensagens de loop de comentários: o [ARF (Abuse Feedback Reporting Format)](https://tools.ietf.org/html/rfc6650).
 
@@ -258,7 +255,7 @@ A certificação IP é um programa de práticas recomendadas de envio que ajuda 
 
 Atualmente, dois provedores oferecem certificação IP: Return Path e Certified Senders Alliance.
 
-Os remetentes certificados são adicionados às listas de permissão de email usadas pelos provedores globais de caixa de correio e empresas de segurança de email. Essas listas de permissão comercial são baseadas em um sistema que permite ao remetente ignorar totalmente os filtros antisspam ou receber pontos incrementais à medida que ele entra no sistema.
+Os remetentes certificados são adicionados a listas de permissões de email usadas por provedores globais de caixa de correio e empresas de segurança de email. Essas listas de permissões comerciais são baseadas em um sistema que permite que o remetente ignore filtros antisspam ou receba pontos incrementais à medida que ele entra no sistema.
 
 O programa [Return Path Certification](https://www.validity.com/products/returnpath/certification/) oferece vários benefícios, incluindo:
 
