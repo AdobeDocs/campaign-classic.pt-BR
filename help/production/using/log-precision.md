@@ -1,7 +1,7 @@
 ---
-title: Precisão do registro
-seo-title: Precisão do registro
-description: Precisão do registro
+title: Precisão do log
+seo-title: Precisão do log
+description: Precisão do log
 seo-description: null
 page-status-flag: never-activated
 uuid: 8396bc4f-2954-40bb-b511-61802e60e123
@@ -11,18 +11,18 @@ audience: production
 content-type: reference
 topic-tags: troubleshooting
 discoiquuid: c6c39b7d-7bbd-4789-b1ea-b938153e9679
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 779d9162b7296339a796512838612ede1186ddcc
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '322'
+ht-degree: 2%
 
 ---
 
 
-# Precisão do registro{#log-precision}
+# Precisão do log{#log-precision}
 
-Você pode aplicar esse processo a todos os módulos do Adobe Campaign para aumentar a precisão do log.
+É possível aplicar esse processo a todos os módulos Adobe Campaign para aumentar a precisão do log.
 
 Envolve o relançamento dos processos com um nível mais alto de registros.
 
@@ -30,7 +30,7 @@ Envolve o relançamento dos processos com um nível mais alto de registros.
 >
 >Este procedimento cancela os serviços em andamento neste módulo.
 
-O Adobe Campaign pode operar com dois níveis de log:
+A Adobe Campaign pode operar com dois níveis de log:
 
 1. O modo **Verboso** é o primeiro nível após o nível padrão. O seguinte comando o ativa:
 
@@ -53,8 +53,8 @@ O Adobe Campaign pode operar com dois níveis de log:
    >[!NOTE]
    >
    >Se você usar **tracefilter:***, todos os tipos de log serão ativados: ncm, rdr, nms, jst, timing, wdbc, ldap, soap, xtk, xtkquery, session, xtkwriter, network, pop3, inmail\
-   Os tipos de log mais úteis são: **wdbc** (exibe todas as consultas SQL), **soap** (exibe todas as chamadas SOAP), **ldap** (exibe todas as consultas LDAP após a autenticação), **xtkquery** (exibe a lista de todas as consultas).\
-   Você pode usá-los individualmente (**tracefilter:soap,wdbc** , por exemplo). Você também pode ativar todos e optar por excluir alguns outros: **trefilter:*,!soap**
+   Os tipos de log mais úteis são: **wdbc** (exibe todos os query SQL), **soap** (exibe todas as chamadas SOAP), **ldap** (exibe todos os query LDAP após a autenticação), **xtkquery** (exibe a lista de todos os querydef).\
+   Você pode usá-los individualmente (**tracefilter:soap,wdbc** , por exemplo). Você também pode ativar todos e optar por excluir alguns outros: **-tracefilter:*,!soap**
 
    Verifique se o erro realmente ocorreu e reinicie o processo da maneira normal:
 
