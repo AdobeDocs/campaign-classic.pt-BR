@@ -1,7 +1,7 @@
 ---
-title: Rastreamento de pilha no Linux
-seo-title: Rastreamento de pilha no Linux
-description: Rastreamento de pilha no Linux
+title: Rastreamento em pilha no Linux
+seo-title: Rastreamento em pilha no Linux
+description: Rastreamento em pilha no Linux
 seo-description: null
 page-status-flag: never-activated
 uuid: d839df47-902f-4b92-bc78-536fc4fb6c98
@@ -11,28 +11,29 @@ audience: production
 content-type: reference
 topic-tags: troubleshooting
 discoiquuid: 60f306ea-4593-4e56-896e-8933277ee26a
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 9482a99c3be164651b3428179388cb0a8a75783f
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '123'
+ht-degree: 14%
 
 ---
 
 
-# Rastreamento de pilha no Linux{#stack-trace-in-linux}
+# Rastreamento em pilha no Linux{#stack-trace-in-linux}
 
-Um rastreamento **de** pilha representa um rastreamento contido em um arquivo do tipo **principal** . Esse arquivo é gerado no caso de um erro de computador. Ele pode identificar a origem do erro.
+Um rastreamento **de** pilha representa um rastreamento contido em um arquivo do tipo **principal** . Esse arquivo é gerado no evento de um erro de computador. Ele pode identificar a origem do erro.
 
 >[!NOTE]
 >
 >* Um arquivo **principal** é chamado de **núcleo.`<num>`**.
 >* **gdb - O Depurador** GNU deve estar instalado no computador.
+
 >
 
 
 
-O suporte técnico do Adobe Campaign pode solicitar esse rastreamento **da** pilha. Para obtê-lo, insira os seguintes comandos no Linux:
+O suporte técnico da Adobe Campaign pode solicitar esse rastreamento **da** pilha. Para obtê-lo, insira os seguintes comandos no Linux:
 
 ```
 su - neolane
@@ -59,9 +60,9 @@ gdb nlserver <coreFile>
 #16 0x5565918a in clone () from /lib/tls/libc.so.6
 ```
 
-O suporte técnico do Adobe Campaign pode solicitar que você execute esse comando usando um executável específico (a ser fornecido por nós).
+O suporte técnico da Adobe Campaign pode solicitar que você execute esse comando usando um executável específico (a ser fornecido por nós).
 
-Nesse caso, basta executar o seguinte comando substituindo o **nlserver** pelo executável fornecido pelo Adobe Campaign:
+Nesse caso, basta executar o seguinte comando substituindo o **nlserver** pelo executável fornecido pela Adobe Campaign:
 
 ```
 gdb nlserver <coreFile>
