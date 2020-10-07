@@ -11,11 +11,11 @@ audience: workflow
 content-type: reference
 topic-tags: use-cases
 discoiquuid: 4d72db10-29bd-4b3c-adb3-bead02890271
-index: y
-internal: n
-snippet: y
-translation-type: ht
-source-git-commit: c10a0a11c6e9952aa47da1f7a15188c79c62508d
+translation-type: tm+mt
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '345'
+ht-degree: 88%
 
 ---
 
@@ -37,7 +37,7 @@ O processo é criar um workflow como abaixo:
 
 ## Salvar a população na variável de instância {#saving-the-population-to-the-instance-variable}
 
-Adicione o código abaixo na atividade **[!UICONTROL JavaScript code]**.
+Add the code below into the **[!UICONTROL JavaScript code]** activity.
 
 ```
 var query = xtk.queryDef.create(  
@@ -60,11 +60,11 @@ Verifique se o código Javascript corresponde às suas informações de workflow
 
 Para recuperar essas informações, siga as etapas abaixo:
 
-1. Clique com o botão direito do mouse na transição de saída da atividade **[!UICONTROL Query]** e selecione **[!UICONTROL Display the target]**.
+1. Right-click the outbound transition from the **[!UICONTROL Query]** ativity, then select **[!UICONTROL Display the target]**.
 
    ![](assets/uc_operator_4.png)
 
-1. Clique com o botão direito do mouse na lista e depois selecione **[!UICONTROL Configure list]**.
+1. Right-click the list, then select **[!UICONTROL Configure list]**.
 
    ![](assets/uc_operator_5.png)
 
@@ -101,7 +101,7 @@ for each (var item in items){
 
 >[!NOTE]
 >
->O comando **[!UICONTROL &lt;%= item.target.recipient.@fieldíngia %>]** permite adicionar um dos campos que foram salvos na variável da instância por meio da atividade **[!UICONTROL JavaScript code]**.\
+>The **[!UICONTROL <%= item.target.recipient.@fieldName %>]** command lets you add one of the fields that have been saved to the instance variable through the **[!UICONTROL JavaScript code]** activity.\
 >É possível adicionar quantos campos desejar, desde que tenham sido inseridos no código JavaScript.
 
 ![](assets/uc_operator_8.png)
