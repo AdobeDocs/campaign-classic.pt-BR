@@ -11,11 +11,11 @@ audience: web
 content-type: reference
 topic-tags: web-applications
 discoiquuid: 8e52f927-dadd-44c8-a51d-f717bc083eef
-index: y
-internal: n
-snippet: y
-translation-type: ht
-source-git-commit: 36beb1eca48c698634c7548e0f931ab3fe17c021
+translation-type: tm+mt
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '413'
+ht-degree: 100%
 
 ---
 
@@ -42,6 +42,7 @@ As principais melhorias apresentadas nessa versão são as seguintes:
    * **Conversion rate**: número de pessoas que exibiram todas as etapas de um caminho de navegação.
    * **Bounce rate**: número de pessoas que exibiram apenas a primeira etapa
    * **Conversion tunnel**: taxa de perda entre cada etapa.
+
    Além disso, um gráfico de tipo **Sector** mostra a população de acordo com sua origem.
 
 ## Identificação da fonte de tráfego {#identifying-the-traffic-source}
