@@ -11,11 +11,11 @@ audience: workflow
 content-type: reference
 topic-tags: use-cases
 discoiquuid: 41b8a8a8-efac-4e8e-8aea-d4fd06c46e74
-index: y
-internal: n
-snippet: y
-translation-type: ht
-source-git-commit: 1c86322fa95aee024f6c691b61a10c21a9a22eb7
+translation-type: tm+mt
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '623'
+ht-degree: 87%
 
 ---
 
@@ -34,7 +34,7 @@ As principais etapas de implementação para este caso de uso são:
 
 ## Etapa 1 – Criação da lista de recipients {#step-1--creating-the-recipient-list}
 
-Vá para o universo **[!UICONTROL Profiles and targets]**, clique no link **[!UICONTROL Lists]** e no botão **[!UICONTROL Create]**. Selecione **[!UICONTROL New list]** e crie uma nova lista de recipients para a qual o relatório será enviado.
+Go to the **[!UICONTROL Profiles and targets]** universe, click the **[!UICONTROL Lists]** link, then the **[!UICONTROL Create]** button. Selecione **[!UICONTROL New list]** e crie uma nova lista de recipients para a qual o relatório será enviado.
 
 ![](assets/use_case_report_1.png)
 
@@ -42,7 +42,7 @@ Para saber mais sobre criação de listas, consulte esta [seção](../../platfor
 
 ## Etapa 2 – Criação do template de delivery {#step-2--creating-the-delivery-template}
 
-1. Vá para o nó **[!UICONTROL Resources > Templates > Delivery templates]** do explorador do Adobe Campaign e duplique o template pronto para uso **[!UICONTROL Email delivery]**.
+1. Go to the **[!UICONTROL Resources > Templates > Delivery templates]** node of the Adobe Campaign explorer and duplicate the **[!UICONTROL Email delivery]** out-of-the-box template.
 
    ![](assets/use_case_report_2.png)
 
@@ -56,11 +56,11 @@ Para saber mais sobre criação de listas, consulte esta [seção](../../platfor
 
    Para obter mais informações sobre um anexo calculado, consulte esta [seção](../../delivery/using/attaching-files.md#creating-a-calculated-attachment).
 
-   * Clique no link **[!UICONTROL Attachments]**, clique em **[!UICONTROL Add]** e selecione **[!UICONTROL Calculated attachment]**.
+   * Clique no **[!UICONTROL Attachments]** link e clique em **[!UICONTROL Add]**, em seguida, selecione **[!UICONTROL Calculated attachment]**.
 
       ![](assets/use_case_report_4.png)
 
-   * Vá para o campo **[!UICONTROL Type]** e selecione a quarta opção: **[!UICONTROL File name is computed during delivery of each message (pode depender do perfil do recipient)]**.
+   * Go to the **[!UICONTROL Type]** field and select the fourth option: **[!UICONTROL File name is computed during delivery of each message (it may then depend on the recipient profile)]**.
 
       ![](assets/use_case_report_5.png)
 
@@ -74,7 +74,7 @@ Para saber mais sobre criação de listas, consulte esta [seção](../../platfor
       >
       >O arquivo deve estar presente no servidor. Seu caminho e nome devem ser idênticos aos inseridos na atividade tipo **[!UICONTROL JavaScript code]** do workflow (consulte [Etapa 3 – Criação do workflow](#step-3--creating-the-workflow)).
 
-   * Selecione a guia **[!UICONTROL Advanced]** e marque **[!UICONTROL Script the name of the file name displayed in the mails sent]**. Vá para a zona de edição e insira o nome que deseja dar ao anexo na delivery final.
+   * Selecione a **[!UICONTROL Advanced]** guia e marque **[!UICONTROL Script the name of the file name displayed in the mails sent]**. Vá para a zona de edição e insira o nome que deseja dar ao anexo na delivery final.
 
       ![](assets/use_case_report_6bis.png)
 
@@ -88,7 +88,7 @@ O seguinte workflow foi criado para este caso de uso. Ele tem três atividades:
 
 ![](assets/use_case_report_8.png)
 
-1. Agora vá para o nó **[!UICONTROL Administration > Production > Technical workflows]** e crie um novo workflow.
+1. Now go to the **[!UICONTROL Administration > Production > Technical workflows]** node and create a new workflow.
 
    ![](assets/use_case_report_7.png)
 
@@ -98,7 +98,7 @@ O seguinte workflow foi criado para este caso de uso. Ele tem três atividades:
 
    Para obter mais informações sobre a configuração do scheduler, consulte [Scheduler](../../workflow/using/scheduler.md).
 
-1. Em seguida, adicione uma atividade tipo **[!UICONTROL JavaScript code]**.
+1. Then add a **[!UICONTROL JavaScript code]** type activity.
 
    ![](assets/use_case_report_10.png)
 
@@ -129,9 +129,10 @@ O seguinte workflow foi criado para este caso de uso. Ele tem três atividades:
 
 1. Conclua adicionando uma atividade do tipo **[!UICONTROL Delivery]** com as seguintes opções:
 
-   * **** Delivery: selecione **[!UICONTROL New, created from a template]** e selecione o template de delivery criado anteriormente.
-   * Para os campos ******[!UICONTROL Recipientes e Content]** , selecione **[!UICONTROL Specified in the delivery]**.
-   * **** Ação para executar: selecione **[!UICONTROL Prepare and start]**.
+   * **[!UICONTROL Delivery]**: selecione **[!UICONTROL New, created from a template]** e selecione o template do delivery criado anteriormente.
+   * Para os campos **[!UICONTROL Recipients]** e **[!UICONTROL Content]** , selecione **[!UICONTROL Specified in the delivery]**.
+   * **[!UICONTROL Action to execute]** : selecione **[!UICONTROL Prepare and start]**.
    * Desmarque **[!UICONTROL Generate an outbound transition]** e **[!UICONTROL Process errors]**.
+
    ![](assets/use_case_report_11.png)
 
