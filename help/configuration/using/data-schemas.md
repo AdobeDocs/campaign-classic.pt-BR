@@ -11,11 +11,11 @@ audience: configuration
 content-type: reference
 topic-tags: editing-schemas
 discoiquuid: b65e8d27-f427-464e-ad42-51c0a88eee86
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 20f835c357d016643ea1f3209ee4dfb6d3239f90
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '390'
+ht-degree: 3%
 
 ---
 
@@ -24,50 +24,50 @@ source-git-commit: 20f835c357d016643ea1f3209ee4dfb6d3239f90
 
 ## Princípios {#principles}
 
-Para editar, criar e configurar os esquemas, clique no **[!UICONTROL Administration > Configuration > Data schemas]** nó do console do cliente Adobe Campaign.
+Para editar, criar e configurar os schemas, clique no **[!UICONTROL Administration > Configuration > Data schemas]** nó do console do cliente Adobe Campaign.
 
 >[!NOTE]
 >
->Os esquemas de dados prontos para uso só podem ser excluídos por um administrador do console do Adobe Campaign Classic.
+>Schemas de dados prontos para uso só podem ser excluídos por um administrador do console do Adobe Campaign Classic.
 
 ![](assets/d_ncs_integration_schema_navtree.png)
 
-O campo de edição mostra o conteúdo XML do esquema de origem:
+O campo de edição mostra o conteúdo XML do schema de origem:
 
 ![](assets/d_ncs_integration_schema_edition.png)
 
 >[!NOTE]
 >
->O controle de edição &quot;Nome&quot; permite que você insira a chave do esquema composta pelo nome e pelo namespace. Os atributos &quot;name&quot; e &quot;namespace&quot; do elemento raiz do esquema são automaticamente atualizados na zona de edição XML do esquema.
+>O controle de edição &quot;Nome&quot; permite que você insira a chave do schema composta pelo nome e pela namespace. Os atributos &quot;name&quot; e &quot;namespace&quot; do elemento raiz do schema são automaticamente atualizados na zona de edição XML do schema.
 
-A visualização gera automaticamente o esquema estendido:
+A pré-visualização gera automaticamente o schema estendido:
 
 ![](assets/d_ncs_integration_schema_edition2.png)
 
 >[!NOTE]
 >
->Quando o esquema de origem é salvo, a geração do esquema estendido é iniciada automaticamente.
+>Quando o schema de origem é salvo, a geração do schema estendido é iniciada automaticamente.
 
-Se for necessário verificar a estrutura completa de um esquema, use a guia de visualização. Se o esquema tiver sido estendido, você poderá visualizar todas as suas extensões. Como complemento, a guia Documentação exibe todos os atributos e elementos do esquema e suas propriedades (Campo SQL, tipo/comprimento, rótulo, descrição). A guia Documentação se aplica somente aos esquemas gerados. For more on this, refer to the [Regenerating schemas](../../configuration/using/regenerating-schemas.md) section.
+Se for necessário verificar a estrutura completa de um schema, use a guia pré-visualização. Se o schema tiver sido estendido, você poderá visualizar todas as suas extensões. Como complemento, a guia Documentação exibe todos os atributos e elementos do schema e suas propriedades (Campo SQL, tipo/comprimento, rótulo, descrição). A guia Documentação se aplica somente aos schemas gerados. For more on this, refer to the [Regenerating schemas](../../configuration/using/regenerating-schemas.md) section.
 
 ## Exemplo: criar uma tabela de contrato {#example--creating-a-contract-table}
 
-No exemplo a seguir, queremos criar uma nova tabela para **contratos** no modelo de banco de dados do banco de dados do Adobe Campaign. Esta tabela permite que você armazene o nome e o sobrenome e os endereços de email de titulares e co-detentores, para cada contrato.
+No exemplo a seguir, queremos criar uma nova tabela para **contratos** no modelo de banco de dados do banco de dados Adobe Campaign. Esta tabela permite que você armazene o nome e o sobrenome e os endereços de email de titulares e co-detentores, para cada contrato.
 
-Para fazer isso, é necessário criar o esquema da tabela e atualizar a estrutura do banco de dados para gerar a tabela correspondente. Aplique as seguintes etapas:
+Para fazer isso, é necessário criar o schema da tabela e atualizar a estrutura do banco de dados para gerar a tabela correspondente. Aplique as seguintes etapas:
 
 1. Edite o **[!UICONTROL Administration > Configuration > Data schemas]** nó da árvore do Adobe Campaign e clique em **[!UICONTROL New]** .
 1. Escolha a **[!UICONTROL Create a new table in the data model]** opção e clique em **[!UICONTROL Next]** .
 
    ![](assets/s_ncs_configuration_create_new_schema.png)
 
-1. Especifique um nome para a tabela e um namespace.
+1. Especifique um nome para a tabela e uma namespace.
 
    ![](assets/s_ncs_configuration_create_new_param.png)
 
    >[!NOTE]
    >
-   >Por padrão, os esquemas criados pelos usuários são armazenados no namespace &#39;cus&#39;. Para obter mais informações, consulte [Identificação de um esquema](../../configuration/using/about-schema-reference.md#identification-of-a-schema).
+   >Por padrão, os schemas criados pelos usuários são armazenados na namespace &#39;cus&#39;. Para obter mais informações, consulte [Identificação de um schema](../../configuration/using/about-schema-reference.md#identification-of-a-schema).
 
 1. Crie o conteúdo da tabela. Recomendamos usar o assistente de entrada para garantir que nenhuma configuração esteja ausente. Para fazer isso, clique no **[!UICONTROL Insert]** botão e escolha o tipo de configuração a ser adicionada.
 
@@ -121,9 +121,9 @@ Para fazer isso, é necessário criar o esquema da tabela e atualizar a estrutur
    </srcSchema>
    ```
 
-1. Salve o esquema para gerar a estrutura:
+1. Salve o schema para gerar a estrutura:
 
    ![](assets/s_ncs_configuration_structure.png)
 
-1. Atualize a estrutura do banco de dados para criar a tabela à qual o esquema será vinculado. Para obter mais informações, consulte [Atualização da estrutura](../../configuration/using/updating-the-database-structure.md)do banco de dados.
+1. Atualize a estrutura do banco de dados para criar a tabela à qual o schema será vinculado. For more on this, refer to [Updating the database structure](../../configuration/using/updating-the-database-structure.md).
 
