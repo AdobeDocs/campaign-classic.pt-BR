@@ -11,11 +11,11 @@ audience: workflow
 content-type: reference
 topic-tags: advanced-management
 discoiquuid: f66f1ff5-3601-4eb8-b05d-6f99164890ae
-index: y
-internal: n
-snippet: y
-translation-type: ht
-source-git-commit: c10a0a11c6e9952aa47da1f7a15188c79c62508d
+translation-type: tm+mt
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '466'
+ht-degree: 88%
 
 ---
 
@@ -24,7 +24,7 @@ source-git-commit: c10a0a11c6e9952aa47da1f7a15188c79c62508d
 
 A janela das propriedades de uma atividade tem uma guia **[!UICONTROL Advanced]** que permite a definição de um comportamento no caso de erros, o período de execução da atividade e a inserção de um script de inicialização. Há duas versões dessa aba:
 
-* uma versão simplificada (para atividades de **[!UICONTROL Start]** e **[!UICONTROL End]**, por exemplo)
+* a simplified version (for **[!UICONTROL Start]** and **[!UICONTROL End]** activities for instance)
 
    ![](assets/wf-advanced-basic.png)
 
@@ -58,14 +58,14 @@ Este campo permite que você force a execução de uma atividade em uma máquina
 
 ## Max. período de execução {#max--execution-period}
 
-Este campo permite que você defina um aviso para quando a tarefa demorar muito. Ele não afetará a operação do workflow. Se a tarefa não estiver concluída até o **[!UICONTROL Max. execution period]** estiver concluído, a página **[!UICONTROL Instance monitoring]** mostrará um aviso para este workflow. Esta página é acessada pela guia **[!UICONTROL Monitoring]** da página inicial.
+Este campo permite que você defina um aviso para quando a tarefa demorar muito. Ele não afetará a operação do workflow. If the task isn&#39;t finished by the time the **[!UICONTROL Max. execution period]** is over, the **[!UICONTROL Instance monitoring]** page will show a warning for this workflow. Esta página é acessada pela guia **[!UICONTROL Monitoring]** da página inicial.
 
 ## Comportamento {#behavior}
 
 Este campo permite que você defina o comportamento a ser aplicado para usar tarefas assíncronas. Há duas opções possíveis:
 
 * **[!UICONTROL Several tasks authorized]**: várias tarefas podem ser executadas de uma vez, mesmo sem a conclusão da primeira.
-* **[!UICONTROL The current task has priority]**: tarefas em andamento têm prioridade. Enquanto uma tarefa estiver em andamento, nenhuma outra tarefa será executada.
+* **[!UICONTROL The current task has priority]**: As tarefas em andamento têm prioridade. Enquanto uma tarefa estiver em andamento, nenhuma outra tarefa será executada.
 
 ## Fuso horário {#time-zone}
 
@@ -75,7 +75,7 @@ Este campo permite selecionar o fuso horário da atividade. Para obter mais info
 
 Este campo permite que você defina a ação a ser executada quando a atividade tiver erros. Há duas opções possíveis:
 
-* **[!UICONTROL Stop the process]**: o workflow é interrompido automaticamente. Seu status muda para **[!UICONTROL Failed]**. Depois que o problema for resolvido, reinicie o workflow.
+* **[!UICONTROL Stop the process]**: o fluxo de trabalho é interrompido automaticamente. Seu status muda para **[!UICONTROL Failed]**. Depois que o problema for resolvido, reinicie o workflow.
 * **[!UICONTROL Ignore]**: esta tarefa e todas as tarefas a seguir (na mesma ramificação) não serão executadas. Pode ser útil para tarefas recorrentes. Se a ramificação tiver um programador a montante, ele será iniciado como de costume na próxima data de execução.
 
 ## Script de inicialização {#initialization-script}
