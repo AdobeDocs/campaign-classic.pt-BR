@@ -11,11 +11,8 @@ audience: campaign
 content-type: reference
 topic-tags: campaign-optimization
 discoiquuid: 0d50826e-2211-4c3b-8413-ca1453bba6c4
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 9784e0db6f1bef5abdf93d3517da04fe1ba69e7d
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
 workflow-type: tm+mt
 source-wordcount: '507'
 ht-degree: 88%
@@ -96,7 +93,7 @@ Você também poderá vincular regras de filtragem diretamente por meio desta gu
 
 Duas regras de filtragem estão disponíveis por padrão: **[!UICONTROL Exclude addresses]** ( **[!UICONTROL addressExclusions]** ) e **[!UICONTROL Exclude domains]** ( **[!UICONTROL domainExclusions]** ). Durante a análise de e-mail, essas regras comparam os endereços de e-mail do recipient com os endereços proibidos ou nomes de domínio contidos em uma lista de supressão global criptografada gerenciada na instância de entrega. Se houver algum positivo, a mensagem não será enviada para esse recipient.
 
-Isso evita ser adicionado à lista de blocos devido a atividades mal-intencionadas, especialmente o uso de uma armadilha. Por exemplo, se um Spamtrapping for usado para assinar por meio de um de seus formulários da Web, um email de confirmação será automaticamente enviado para esse Spamtrapping e isso resultará na adição automática do endereço à lista de blocos.
+Isso evita ser adicionado à lista de bloqueios devido a atividades maliciosas, especialmente o uso de uma armadilha. Por exemplo, se um Spamtrapping for usado para assinar por meio de um de seus formulários da Web, um email de confirmação será automaticamente enviado para esse Spamtrapping e isso resultará na adição automática do endereço à lista de bloqueios.
 
 >[!NOTE]
 >
