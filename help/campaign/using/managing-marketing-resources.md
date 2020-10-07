@@ -11,11 +11,11 @@ audience: campaign
 content-type: reference
 topic-tags: tasks--resources-and-budgets
 discoiquuid: 069dbc6b-4019-4d66-85a8-0e4de6b66f18
-index: y
-internal: n
-snippet: y
-translation-type: ht
-source-git-commit: e09692e316a92a67632201e5691e8b4df42cc341
+translation-type: tm+mt
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '1387'
+ht-degree: 96%
 
 ---
 
@@ -34,7 +34,7 @@ Para adicionar um recurso, clique no botão **[!UICONTROL Create]**.
 
 ![](assets/s_ncs_user_mkg_resource_add.png)
 
-Para disponibilizar um recurso no servidor do Adobe Campaign, é necessário adicionar o recurso desejado arrastando e soltando na área intermediária do editor. É possível também clicar no link **[!UICONTROL Upload file to server...]**.
+Para disponibilizar um recurso no servidor do Adobe Campaign, é necessário adicionar o recurso desejado arrastando e soltando na área intermediária do editor. You can also click the **[!UICONTROL Upload file to server...]** link.
 
 ![](assets/s_ncs_user_mkg_resource_file.png)
 
@@ -44,12 +44,12 @@ Quando o upload estiver concluído, o recurso será adicionado à lista de recur
 
 ![](assets/s_ncs_user_mkg_resource_extract.png)
 
-Clique na guia **[!UICONTROL General]** para selecionar os operadores ou grupos de operadores responsáveis pelo monitoramento, rastreamento e aprovação deste recurso. A seleção do revisor é feita por meio do link **[!UICONTROL Advanced parameters]**.
+Clique na guia **[!UICONTROL General]** para selecionar os operadores ou grupos de operadores responsáveis pelo monitoramento, rastreamento e aprovação deste recurso. Selecting the reviewer is done via the **[!UICONTROL Advanced parameters]** link.
 
 * O operador para o qual o recurso é atribuído é responsável por rastreá-lo.
 * O operador de aprovação é responsável pela aprovação do recurso de marketing. Eles serão notificados quando o processo de validação de recursos for iniciado.
 
-   Se nenhum revisor estiver selecionado, o recurso **[!UICONTROL não poderá estar]** sujeito a aprovação.
+   If no reviewer is selected, the resource **[!UICONTROL cannot be]** subject to approval.
 
 * Se necessário, também pode-se especificar um leitor de prova.
 
@@ -115,7 +115,7 @@ A guia **[!UICONTROL History]** exibe as transferências de arquivos realizadas 
 
 ### Processo de aprovação {#approval-process}
 
-A data esperada de disponibilidade é exibida nos detalhes do recurso, se ela foi especificada na guia **[!UICONTROL Tracking]**. Depois que essa data for atingida, é possível executar o processo de aprovação usando o botão **[!UICONTROL Submit for approval]** no painel de recursos. O status do recurso é alterado para **[!UICONTROL Approval in progress]**.
+A data esperada de disponibilidade é exibida nos detalhes do recurso, se ela foi especificada na guia **[!UICONTROL Tracking]**. Depois que essa data for atingida, é possível executar o processo de aprovação usando o botão **[!UICONTROL Submit for approval]** no painel de recursos. The resource status then changes to **[!UICONTROL Approval in progress]**.
 
 Um recurso pode ser aprovado por meio do botão **[!UICONTROL Approve resource]** no painel.
 
@@ -218,7 +218,7 @@ Quando o estoque for insuficiente, um aviso será enviado para os operadores rel
 
 O painel de recursos de marketing permite que você realize os tipos comuns de operações: adicionar, editar, bloquear/desbloquear, aprovar, publicar. Você poderá criar outros tipos de recursos de marketing e acessar funcionalidades avançadas através da árvore do Adobe Campaign. Para fazer isso, clique em **[!UICONTROL Explorer]** na página inicial do Adobe Campaign.
 
-Por padrão, os recursos de marketing são armazenados no nó **[!UICONTROL MRM > Marketing resources]** da árvore.
+By default, marketing resources are stored in the **[!UICONTROL MRM > Marketing resources]** node of the tree.
 
 ![](assets/s_ncs_user_mkg_resource_create_from_list.png)
 
