@@ -11,11 +11,11 @@ audience: interaction
 content-type: reference
 topic-tags: advanced-parameters
 discoiquuid: 811a42a4-552c-49cb-bffd-7e124ef83735
-index: y
-internal: n
-snippet: y
-translation-type: ht
-source-git-commit: 215e4d1ca78938b38b53cae0357612deebf7727b
+translation-type: tm+mt
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '1013'
+ht-degree: 99%
 
 ---
 
@@ -78,11 +78,11 @@ Nas instâncias de controle:
    ![](assets/interaction_powerbooster1.png)
 
    * Complete o rótulo e adicione um nome interno curto e explícito.
-   * Selecione a instância **[!UICONTROL Execution]**.
+   * Selecione o **[!UICONTROL Execution instance]**.
    * Marque a opção **[!UICONTROL Enabled]**.
    * Conclua os parâmetros de conexão da instância de execução.
    * Cada instância de execução deve ser vinculada a um ID. Esse ID é atribuído ao clicar no botão **[!UICONTROL Initialize connection]**.
-   * Verifique o tipo de aplicativo usado:: **[!UICONTROL Message Center]**, **[!UICONTROL Interaction]** ou ambos.
+   * Check the type of application used: **[!UICONTROL Message Center]**, **[!UICONTROL Interaction]**, or both.
    * Insira a conta da FDA utilizada. Um operador deve ser criado nas instâncias de execução e deve ter os seguintes direitos de leitura e gravação no banco de dados da instância em questão:
 
       ```
