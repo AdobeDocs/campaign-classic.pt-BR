@@ -11,11 +11,11 @@ audience: campaign
 content-type: reference
 topic-tags: orchestrate-campaigns
 discoiquuid: 8d076211-10a6-4a98-b0d2-29dad154158c
-index: y
-internal: n
-snippet: y
-translation-type: ht
-source-git-commit: 1c86322fa95aee024f6c691b61a10c21a9a22eb7
+translation-type: tm+mt
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '253'
+ht-degree: 94%
 
 ---
 
@@ -38,13 +38,13 @@ Para cada campanha, a guia **[!UICONTROL Tracking]** permite visualizar todas as
 
    ![](assets/s_ncs_user_op_edit_exe_tab_e.png)
 
-* Os workflows criados para gerar mensagens para provedores de serviços são exibidos na subguia **[!UICONTROL Jobs on service providers]**. Clique no ícone **[!UICONTROL Detail]** para exibir o workflow selecionado.
+* The workflows created to generate messages for service providers are displayed in the **[!UICONTROL Jobs on service providers]** sub-tab. Clique no ícone **[!UICONTROL Detail]** para exibir o workflow selecionado.
 
    ![](assets/s_ncs_user_op_edit_exe_tab_d.png)
 
 ## Controle de delivery {#delivery-tracking}
 
-A lista de deliveries está disponível através do link **[!UICONTROL Deliveries]** do nó do Campaign.
+A lista de está disponível através do link **[!UICONTROL Deliveries]** Deliveries do nó do Campaign.
 
 ![](assets/s_ncs_user_op_del_state_from_homepage.png)
 
@@ -58,6 +58,6 @@ Para verificar o status de um delivery, edite-o e exiba seu painel e guias.
 
 ## Rastreamento da execução {#execution-tracking}
 
-Você pode consultar o status de deliveries clicando em **[!UICONTROL Deliveries]**, acessível na página inicial do Adobe Campaign. Consulte [Rastreamento de delivery](#delivery-tracking).
+Você pode consultar o status de clicando em **[!UICONTROL Deliveries]** Deliveries, acessível na página inicial do Adobe Campaign. Consulte [Rastreamento de delivery](#delivery-tracking).
 
 As informações relativas aos processos executados em uma campanha são coletadas na guia **[!UICONTROL Edit > Audit]** da campanha. Você pode exibir a lista de remessas na campanha. Consulte [Rastreamento de uma campanha](#tracking-a-campaign).
