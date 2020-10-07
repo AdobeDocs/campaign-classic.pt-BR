@@ -11,11 +11,11 @@ audience: interaction
 content-type: reference
 topic-tags: managing-an-offer-catalog
 discoiquuid: 010c88f4-9444-448f-bb7b-7191517d2e23
-index: y
-internal: n
-snippet: y
-translation-type: ht
-source-git-commit: 215e4d1ca78938b38b53cae0357612deebf7727b
+translation-type: tm+mt
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '807'
+ht-degree: 95%
 
 ---
 
@@ -26,7 +26,7 @@ source-git-commit: 215e4d1ca78938b38b53cae0357612deebf7727b
 
 Para criar uma oferta, aplique as seguintes etapas:
 
-1. Vá para o universo **[!UICONTROL Campaigns]** e clique no link **[!UICONTROL Offers]**.
+1. Go to the **[!UICONTROL Campaigns]** universe and click the **[!UICONTROL Offers]** link.
 
    ![](assets/offer_create_001.png)
 
@@ -120,22 +120,22 @@ Para criar um peso em uma oferta, aplique as seguintes etapas:
 
 Quando a configuração for concluída, um resumo das regras de eligibilidade estará disponível no painel de ofertas.
 
-Para fazer isso, clique no link **[!UICONTROL Schedule and eligibility rules]**.
+To view it, click the **[!UICONTROL Schedule and eligibility rules]** link.
 
 ![](assets/offer_eligibility_create_005.png)
 
 ## Criação do conteúdo da oferta {#creating-the-offer-content}
 
-1. Clique na guia **[!UICONTROL Edit]** e depois na guia **[!UICONTROL Content]**.
+1. Click the **[!UICONTROL Edit]** tab, then click the **[!UICONTROL Content]** tab.
 
    ![](assets/offer_content_create_001.png)
 
 1. Preencha os vários campos do conteúdo da oferta.
 
    * **[!UICONTROL Title]** : especifique o título que quer que apareça em sua oferta. Aviso: não se refere ao rótulo da oferta, que é definido na guia **[!UICONTROL General]**.
-   * **[!UICONTROL Destination URL]**: especifique o URL da sua oferta. Para ser processado corretamente, ele deve começar com &quot;http://&quot; ou &quot;https://&quot;.
+   * **[!UICONTROL Destination URL]** : especifique o URL da sua oferta. Para ser processado corretamente, ele deve começar com &quot;http://&quot; ou &quot;https://&quot;.
    * **[!UICONTROL Image URL]**: especifique um URL ou um caminho de acesso para a imagem da sua oferta.
-   * **[!UICONTROL HTML content]** / **[!UICONTROL Text content]**: digite o corpo da oferta na guia desejada. Para gerar o rastreamento, o **[!UICONTROL HTML content]** deve ser composto de elementos HTML que podem ser colocados em um elemento de tipo `<div>`. Por exemplo, o resultado de um elemento `<table>` na página HTML será o seguinte:
+   * **[!UICONTROL HTML content]** / **[!UICONTROL Text content]** : digite o corpo da sua oferta na guia desejada. Para gerar o rastreamento, o **[!UICONTROL HTML content]** deve ser composto de elementos HTML que podem ser colocados em um elemento de tipo `<div>`. Por exemplo, o resultado de um elemento `<table>` na página HTML será o seguinte:
 
    ```
       <div> 
