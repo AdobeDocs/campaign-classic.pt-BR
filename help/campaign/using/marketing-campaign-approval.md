@@ -11,11 +11,11 @@ audience: campaign
 content-type: reference
 topic-tags: orchestrate-campaigns
 discoiquuid: 8d076211-10a6-4a98-b0d2-29dad154158c
-index: y
-internal: n
-snippet: y
-translation-type: ht
-source-git-commit: b47dcfa0e4ee2e5e43e7aa14b94e12fd70ff9c2d
+translation-type: tm+mt
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '2479'
+ht-degree: 85%
 
 ---
 
@@ -52,7 +52,7 @@ Quando o operador aprovar a escolha, a aprovação ou a rejeição da tarefa ser
 
 ![](assets/s_user_validation_link_in_op_board.png)
 
-As informações também estão disponíveis nos logs de aprovação da campanha (acessada por meio da guia **[!UICONTROL Edit >Tracking > Approvals]**):
+As informações também estão disponíveis nos logs de aprovação da campanha (acessada por meio da guia **[!UICONTROL Edit > Tracking > Approvals]**):
 
 ![](assets/s_user_validation_log_in_op_edit_tab.png)
 
@@ -60,7 +60,7 @@ Essas notificações são enviadas aos operadores afetados para cada processo pa
 
 As aprovações podem ser habilitadas para o template de campanha, para cada campanha individualmente ou para um delivery.
 
-Todas as tarefas que exigem aprovação são selecionadas no template de campanha (guia **[!UICONTROL Properties]** > **[!UICONTROL Advanced campaign settings...]** > **[!UICONTROL Approvals]**), como os operadores de aprovação (eles receberão notificações, a menos que essa opção não esteja habilitada). Para obter mais informações, consulte [Aprovação de processos](#approving-processes).
+All jobs requiring approval are selected in the campaign template ( **[!UICONTROL Properties]** > **[!UICONTROL Advanced campaign settings...]** > **[!UICONTROL Approvals]** tab), as are the operators in charge of approval (they will receive notifications, unless this option is not enabled). Para obter mais informações, consulte [Aprovação de processos](#approving-processes).
 
 Essas configurações podem ser substituídas para cada campanha criada usando este modelo e individualmente para cada delivery de campanha: clique no botão **[!UICONTROL Properties]** e, em seguida, na guia **[!UICONTROL Approvals]**.
 
@@ -70,7 +70,7 @@ No exemplo a seguir, o conteúdo do delivery não exigirá aprovações:
 
 ### Selecionar revisores {#selecting-reviewers}
 
-Para cada tipo de aprovação, os operadores ou grupos de operadores de aprovação são selecionados na lista suspensa no delivery. Operadores adicionais podem ser adicionados usando o link **[!UICONTROL Edit...]**. Essa janela também permite editar o prazo de aprovação.
+Para cada tipo de aprovação, os operadores ou grupos de operadores de aprovação são selecionados na lista suspensa no delivery. Additional operators can be added using the **[!UICONTROL Edit...]** link. Essa janela também permite editar o prazo de aprovação.
 
 ![](assets/s_user_validation_add_operator.png)
 
@@ -91,7 +91,7 @@ Para aprovar uma tarefa através do console ou da interface da Web, clique no li
 
 ![](assets/s_user_validation_from_console.png)
 
-Verifique as informações a serem aprovadas, escolha aceitar ou rejeitar a aprovação e, se necessário, insira um comentário. Clique em **[!UICONTROL Ok]** para salvar.
+Verifique as informações a serem aprovadas, escolha aceitar ou rejeitar a aprovação e, se necessário, insira um comentário. Click **[!UICONTROL Ok]** to save.
 
 >[!NOTE]
 >
@@ -103,7 +103,7 @@ Clique no link disponível na mensagem de notificação (consulte [Notificaçõe
 
 ![](assets/s_user_validation__log_in.png)
 
-Selecione **[!UICONTROL Accept]** ou **[!UICONTROL Reject]** e insira um comentário se necessário.
+Select **[!UICONTROL Accept]** or **[!UICONTROL Reject]** and enter a comment if necessary.
 
 ![](assets/s_user_validation_save_target_validation.png)
 
@@ -117,15 +117,15 @@ Clique em **[!UICONTROL Validate]**.
 
 As informações estão disponíveis em vários lugares:
 
-* No log de aprovação da campanha, na subguia **[!UICONTROL Approvals]** da guia **[!UICONTROL Edit > Tracking]**:
+* In the campaign approval log, **[!UICONTROL Approvals]** sub-tab of the **[!UICONTROL Edit > Tracking]** tab:
 
    ![](assets/s_user_validation_log_from_op.png)
 
-* No log de delivery da campanha, na subguia **[!UICONTROL Deliveries]** da guia **[!UICONTROL Edit > Tracking]**:
+* In the campaign delivery log, **[!UICONTROL Deliveries]** sub-tab of the **[!UICONTROL Edit > Tracking]** tab:
 
    ![](assets/s_user_validation_log_from_delivery_list.png)
 
-* Para aprovar o status de aprovação de cada delivery, clique na opção **[!UICONTROL Hide/show log]** da guia **[!UICONTROL Summary]**.
+* The approval status for each delivery can be viewed by clicking the **[!UICONTROL Hide/show log]** option of the **[!UICONTROL Summary]** tab.
 
    ![](assets/s_user_validation_log_delivery.png)
 
@@ -141,7 +141,7 @@ As informações estão disponíveis em vários lugares:
 
 Ao criar um workflow de definição de metas, se a aprovação for automática (modo padrão), o Adobe Campaign exibirá o link de aprovação ou envia uma notificação assim que uma aprovação é necessária.
 
-Para escolher o modo de aprovação (manual ou automático), clique na guia **[!UICONTROL Edit > Properties]** do template de campanha ou da campanha e, em seguida, clique em **[!UICONTROL Advanced campaign settings...]** e, por fim, na guia **[!UICONTROL Approvals]**.
+To choose the approval mode (manual or automatic), click the **[!UICONTROL Edit > Properties]** tab of the campaign or campaign template, then click **[!UICONTROL Advanced campaign settings...]** and finally the **[!UICONTROL Approvals]** tab.
 
 ![](assets/s_user_validation_select_mode.png)
 
@@ -149,7 +149,7 @@ Para escolher o modo de aprovação (manual ou automático), clique na guia **[!
 >
 >O modo de aprovação selecionado será aplicado a todas as remessas da campanha.
 
-Quando um workflow de direcionamento está sendo criado, a aprovação manual permite que você evite criar links de aprovação ou enviar notificações automaticamente. O painel de campanha oferece um link **[!UICONTROL Submit targeting for approval]** para iniciar o processo de aprovação manualmente.
+Quando um workflow de direcionamento está sendo criado, a aprovação manual permite que você evite criar links de aprovação ou enviar notificações automaticamente. The campaign dashboard then offers a **[!UICONTROL Submit targeting for approval]** link to launch the approval process manually.
 
 As mensagens de confirmação permitem autorizar aprovações nas tarefas selecionadas para esse delivery.
 
@@ -167,13 +167,13 @@ O conteúdo dos e-mails de notificação pode ser personalizado. Consulte [Conte
 
 Por padrão, as mensagens de notificação são enviadas se a aprovação da tarefa relacionada estiver habilitada no template de campanha, da campanha ou do delivery. As notificações podem, porém, estar desabilitadas para autorizar aprovações somente do console.
 
-Para fazer isso, edite a janela de aprovação do template de campanha ou da campanha (guia **[!UICONTROL Edit > Properties]** > **[!UICONTROL Advanced campaign settings...]** > **[!UICONTROL Approvals]**) e selecione **[!UICONTROL Do not enable notification sending]**.
+To do this, edit the approval window of the campaign or campaign template ( **[!UICONTROL Edit > Properties]** > **[!UICONTROL Advanced campaign settings...]** > **[!UICONTROL Approvals]** tab) and select **[!UICONTROL Do not enable notification sending]**.
 
 ![](assets/s_user_validation_notif_desactivate.png)
 
 #### Conteúdo de notificação {#notification-content}
 
-O conteúdo da notificação é definido em um modelo específico: **[!UICONTROL Notification of validations for the marketing campaign]**. Esse modelo é salvo na pasta **[!UICONTROL Administration > Campaign management > Technical delivery templates]** da árvore do Adobe Campaign.
+O conteúdo da notificação é definido em um template específico: **[!UICONTROL Notification of validations for the marketing campaign]**. This template is saved in the **[!UICONTROL Administration > Campaign management > Technical delivery templates]** folder of the Adobe Campaign tree.
 
 ## Verificar e aprovar remessas {#checking-and-approving-deliveries}
 
@@ -216,13 +216,13 @@ Para cada delivery na campanha, você pode aprovar os seguintes processos:
 
 * **Definição de metas, conteúdo e orçamento**
 
-   Quando as opções **[!UICONTROL Enable target approval]**, **[!UICONTROL Enable content approval]** ou **[!UICONTROL Enable budget approval]** são selecionadas na janela de configurações de aprovação de tarefas, os links relevantes são mostrados no painel de campanha para os deliveries relacionados.
+   When the **[!UICONTROL Enable target approval]**, **[!UICONTROL Enable content approval]** or **[!UICONTROL Enable budget approval]** options are selected in the job approval settings window, the relevant links are shown in the campaign dashboard for the concerned deliveries.
 
    >[!NOTE]
    >
    >A aprovação de orçamento só estará disponível se a aprovação de definição de metas estiver habilitada na janela de configurações de aprovação. O link para aprovação do orçamento é exibido somente após o target ter sido analisado. Além disso, esse link é exibido junto com o link para aprovação do target.
 
-   Se as opções **[!UICONTROL Assign content editing]** ou **[!UICONTROL External content approval]** forem selecionadas na janela de configurações de aprovação, o painel exibirá os links **[!UICONTROL Available content]** e **[!UICONTROL External content approval]**.
+   If the **[!UICONTROL Assign content editing]** or **[!UICONTROL External content approval]** options are selected in the approval settings window, the dashboard will show the **[!UICONTROL Available content]** and **[!UICONTROL External content approval]** links.
 
    A aprovação de conteúdo permite que você acesse as provas enviadas.
 
@@ -244,7 +244,7 @@ Para cada delivery na campanha, você pode aprovar os seguintes processos:
 
 * **Aprovar remessas associadas**
 
-   A opção **[!UICONTROL Enable individual approval of each associated delivery]** é usada para um delivery principal associado a deliveries secundários. Por padrão, essa opção não está selecionada, para que uma aprovação geral do delivery principal possa ser realizada. Se essa opção estiver selecionada, cada delivery deverá ser aprovado individualmente.
+   The **[!UICONTROL Enable individual approval of each associated delivery]** option is used for one main delivery associated with secondary deliveries. Por padrão, essa opção não está selecionada, para que uma aprovação geral do delivery principal possa ser realizada. Se essa opção estiver selecionada, cada delivery deverá ser aprovado individualmente.
 
    ![](assets/s_ncs_user_task_valid_associate.png)
 
@@ -258,11 +258,11 @@ As fases de aprovação são definidas com o modelo associado à campanha. Você
 
 Essas informações podem ser sobrepostas para cada campanha e delivery.
 
-Para uma campanha, clique na guia **[!UICONTROL Edit > Properties]**, em seguida no link **[!UICONTROL Advanced campaign settings...]** e finalmente na subguia **[!UICONTROL Approvals]** para acessar a página de configuração de aprovações.
+For a campaign, click the **[!UICONTROL Edit > Properties]** tab, then the **[!UICONTROL Advanced campaign settings...]** link, and finally the **[!UICONTROL Approvals]** sub-tab to access the approvals configuration page.
 
 Você pode selecionar e desmarcar os processos a aprovar e designar os operadores do Adobe Campaign responsáveis pela aprovação. Eles podem ser operadores individuais, um grupo de operadores ou uma lista de operadores.
 
-Para selecionar uma lista de operadores, clique no link **[!UICONTROL Edit...]** à direita do campo que designa o primeiro revisor e adicione quantos operadores forem necessários, conforme mostrado abaixo:
+To select a list of operators, click the **[!UICONTROL Edit...]** link to the right of the field designating the first reviewer and add as many operators as necessary, as shown below:
 
 ![](assets/s_user_validation_add_operator.png)
 
@@ -271,6 +271,7 @@ Para selecionar uma lista de operadores, clique no link **[!UICONTROL Edit...]**
 >* Se uma lista de revisores for definida, uma tarefa será aprovada assim que um revisor aceitá-la. O link de aprovação relevante não é mais oferecido no painel. Quando o envio de notificações estiver habilitado, se outro revisor clicar no link de aprovação na mensagem de notificação, será exibida uma notificação de que outro operador já aprovou a tarefa.
 >* Você pode definir um agendamento de aprovação para a campanha na seção inferior da janela de edição do revisor. Por padrão, os revisores têm três dias a partir da data de envio para aprovar um processo. É possível configurar um lembrete que é enviado automaticamente para os operadores relacionados antes do prazo de aprovação.
 >* Você pode adicionar lembretes desta seção.
+
 >
 
 
@@ -293,7 +294,7 @@ Para cada delivery, clique no botão **[!UICONTROL Audit]** e na guia **[!UICONT
 >
 >As funcionalidades de aprovação de conteúdo detalhadas abaixo foram criadas para serem adicionadas ao delivery de prova.
 
-É possível configurar um ciclo de aprovação de conteúdo. Para fazer isso, selecione a opção **[!UICONTROL Enable content approval]** na janela de configurações de aprovação. As principais etapas do ciclo de aprovação de conteúdo são:
+É possível configurar um ciclo de aprovação de conteúdo. To do this, select the **[!UICONTROL Enable content approval]** option in the approval settings window. As principais etapas do ciclo de aprovação de conteúdo são:
 
 1. Depois de criar um novo delivery, o gerente de campanha clica no link **[!UICONTROL Submit content]** no painel de campanha para iniciar o ciclo de aprovação de conteúdo.
 
@@ -301,7 +302,7 @@ Para cada delivery, clique no botão **[!UICONTROL Audit]** e na guia **[!UICONT
 
    >[!NOTE]
    >
-   >Se a opção **[!UICONTROL Enable the sending of proofs]** (para deliveries de email) ou **[!UICONTROL Enable the sending and approval of proofs]** (para deliveries de correspondência direta) foi selecionada na janela de configurações de aprovação, as provas serão enviadas automaticamente.
+   >If the **[!UICONTROL Enable the sending of proofs]** option (for email deliveries) or **[!UICONTROL Enable the sending and approval of proofs]** (for direct mail deliveries) options were selected in the approval settings window, proofs will be sent automatically.
 
 1. Um e-mail de notificação é enviado para a pessoa responsável pelo conteúdo, que pode escolher se deve ou não aprová-lo:
 
@@ -319,7 +320,7 @@ Para cada delivery, clique no botão **[!UICONTROL Audit]** e na guia **[!UICONT
 
       >[!NOTE]
       >
-      >Este painel de campanha permite exibir a lista de provas que foram enviadas, clicando no link **[!UICONTROL Inbox rendering...]**. Para exibir o conteúdo, clique no ícone **[!UICONTROL Detail]** à direita da lista.
+      >This campaign dashboard lets you view the list of proofs that have been sent, by clicking the **[!UICONTROL Inbox rendering...]** link. Para exibir o conteúdo, clique no ícone **[!UICONTROL Detail]** à direita da lista.
 
       ![](assets/s_ncs_user_validation_content_BAT_details.png)
 
@@ -327,7 +328,7 @@ Para cada delivery, clique no botão **[!UICONTROL Audit]** e na guia **[!UICONT
 
    >[!NOTE]
    >
-   >A pessoa responsável pela campanha pode reiniciar o ciclo de aprovação de conteúdo a qualquer momento. Para fazer isso, clique no link da linha **[!UICONTROL Content status]** do painel da campanha (no nível de delivery) e, em seguida, clique em **[!UICONTROL Reset content approval to submit it again]**.
+   >A pessoa responsável pela campanha pode reiniciar o ciclo de aprovação de conteúdo a qualquer momento. To do this, click the link on the **[!UICONTROL Content status]** line of the campaign dashboard (at delivery level), then click **[!UICONTROL Reset content approval to submit it again]**.
 
    ![](assets/s_user_validation_relaunch_content_validation.png)
 
@@ -349,13 +350,13 @@ Essa opção permite que você defina uma pessoa encarregada da edição de cont
 
    >[!NOTE]
    >
-   >Se a opção **[!UICONTROL Enable the sending of proofs]** (para deliveries de email) ou **[!UICONTROL Enable the sending and approval of proofs]** (para deliveries de correspondência direta) foi selecionada na janela de configurações de aprovação, as provas serão enviadas automaticamente.
+   >If the **[!UICONTROL Enable the sending of proofs]** option (for email deliveries) or **[!UICONTROL Enable the sending and approval of proofs]** (for direct mail deliveries) options were selected in the approval settings window, proofs will be sent automatically.
 
 1. Depois que a pessoa encarregada da edição de conteúdo terminar de fazer alterações no conteúdo do delivery, ela poderá tornar o conteúdo disponível.
 
    Para isso, elas podem:
 
-   * clicar no link **[!UICONTROL Available content]** através do console do Adobe Campaign.
+   * click the **[!UICONTROL Available content]** link via the Adobe Campaign console.
 
       ![](assets/s_ncs_user_validation_submit_content_available.png)
 
