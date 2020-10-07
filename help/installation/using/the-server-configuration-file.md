@@ -11,11 +11,8 @@ audience: installation
 content-type: reference
 topic-tags: appendices
 discoiquuid: da2198a3-7cef-4419-894d-e5bb51bb480c
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 3b752b283a14bc75954fe46da5a21970c1e17fa1
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
 workflow-type: tm+mt
 source-wordcount: '7859'
 ht-degree: 8%
@@ -2017,7 +2014,7 @@ Estes são os diferentes parâmetros do nó **pipeline** . Esta é a configuraç
   </tr> 
   <tr> 
    <td> dumpStatePeriodSec<br /> </td> 
-   <td> Período de salvamento do status: frequência com que as informações internas do processo são salvas em um arquivo. Inativo se 0. <br /> </td> 
+   <td> Período de salvamento do status: frequência em que as informações internas do processo são salvas em um arquivo. Inativo se 0. <br /> </td> 
    <td> Longo<br /> </td> 
    <td> 0<br /> </td> 
   </tr> 
@@ -2824,7 +2821,7 @@ For additional information, refer to this [section](../../installation/using/con
   </tr> 
   <tr> 
    <td> maxProcessMemoryWarningMb<br /> </td> 
-   <td> Aviso de consumo de memória: aviso sobre a quantidade de RAM consumida (em MB) por um determinado processo<br /> </td> 
+   <td> Aviso de consumo de memória: aviso relativo à quantidade de RAM consumida (em MB) por um determinado processo<br /> </td> 
    <td> Longo<br /> </td> 
    <td> 1600<br /> </td> 
   </tr> 
