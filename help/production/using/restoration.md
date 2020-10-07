@@ -11,11 +11,11 @@ audience: production
 content-type: reference
 topic-tags: data-processing
 discoiquuid: 5d6b2c11-d97e-4fdb-9baf-e3bc446e7b8e
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 579329d9194115065dff2c192deb0376c75e67bd
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '66'
+ht-degree: 6%
 
 ---
 
@@ -26,10 +26,10 @@ Em um servidor limpo, o procedimento de restauração é o seguinte:
 
 * num sistema operacional (redes) instalado e configurado,
 * instale aplicativos de terceiros: servidor Web, JDK (se necessário),
-* instale binários do Adobe Campaign com a mesma compilação do sistema de origem,
-* copiar arquivos de configuração, registros de rastreamento e arquivos de redirecionamento,
+* instale binários Adobe Campaign com a mesma compilação que o sistema de origem,
+* copiar arquivos de configuração, logs de rastreamento e arquivos de redirecionamento,
 * criar e reconstruir a base de dados,
-* inicie o Adobe Campaign.
+* start Adobe Campaign.
 
 For more information, refer to the **Installation Guide**.
 
