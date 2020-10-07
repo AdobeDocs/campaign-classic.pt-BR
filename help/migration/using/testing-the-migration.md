@@ -11,11 +11,11 @@ audience: migration
 content-type: reference
 topic-tags: migration-procedure
 discoiquuid: 30e3082f-a367-4c3b-bff2-208ccf97acd4
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 9f7cf3d530f141a661df5fcc8cbcf0bb4c8d3e89
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '670'
+ht-degree: 2%
 
 ---
 
@@ -26,13 +26,13 @@ source-git-commit: 9f7cf3d530f141a661df5fcc8cbcf0bb4c8d3e89
 
 Dependendo da sua configuração, há várias maneiras de realizar testes de migração.
 
-Você deve ter um ambiente de teste/desenvolvimento para realizar testes de migração. Os ambientes de desenvolvimento estão sujeitos a licença: verifique seu contrato de licença ou entre em contato com o serviço de vendas do Adobe Campaign.
+Você deve ter um ambiente de teste/desenvolvimento para realizar testes de migração. Os ambientes de desenvolvimento estão sujeitos a licença: verifique seu contrato de licença ou entre em contato com o serviço de vendas da Adobe Campaign.
 
-1. Parar todos os desenvolvimentos em curso e levá-los ao ambiente de produção.
-1. Faça um backup do banco de dados do ambiente de desenvolvimento.
+1. Parem todos os desenvolvimentos em curso e levem-nos para o ambiente de produção.
+1. Faça um backup do banco de dados de ambientes de desenvolvimento.
 1. Pare todos os processos do Adobe Campaign na instância de desenvolvimento.
 1. Faça backup do banco de dados do ambiente de produção e restaure-o como um ambiente de desenvolvimento.
-1. Antes de iniciar os serviços do Adobe Campaign, execute o script de cauterização **congelamentoInstance.js** que permite limpar o banco de dados de quaisquer objetos que estavam sendo executados quando o backup foi iniciado.
+1. Antes de iniciar os serviços Adobe Campaign, execute o script de cauterização **congelamentoInstance.js** que permite limpar o banco de dados de quaisquer objetos que estavam sendo executados quando o backup foi iniciado.
 
    ```
    nlserver javascript nms:freezeInstance.js -instance:<instance> -arg:<run|dry>
@@ -55,7 +55,7 @@ Você deve ter um ambiente de teste/desenvolvimento para realizar testes de migr
 
 >[!NOTE]
 >
->O comando de atualização do Adobe Campaign (**pós-atualização**) permite sincronizar recursos e atualizar esquemas e o banco de dados. Essa operação só pode ser realizada uma vez e somente no servidor de aplicativos. Depois de sincronizar os recursos, o comando **pós-atualização** permite detectar se a sincronização gera erros ou avisos.
+>O comando de atualização da Adobe Campaign (**pós-atualização**) permite sincronizar recursos e atualizar schemas e o banco de dados. Essa operação só pode ser realizada uma vez e somente no servidor de aplicativos. Depois de sincronizar os recursos, o comando **pós-atualização** permite detectar se a sincronização gera erros ou avisos.
 
 ## Ferramentas de migração {#migration-tools}
 
@@ -75,7 +75,7 @@ Várias opções permitem medir o impacto de uma migração e identificar os pos
 
 >[!NOTE]
 >
->**Você deve usar a`<instanceame>`**instância: opção. Não recomendamos usar a opção**-allinnesse **caso.
+>Você deve usar a **instância:`<instanceame>`** opção. Não recomendamos o uso da opção **-allinnesse** caso.
 
 ### -showCustomEntities e -showDeletedEntities {#showcustomentities-and--showdeletedentities-options}
 
@@ -105,9 +105,9 @@ Várias opções permitem medir o impacto de uma migração e identificar os pos
 
 ### Processo de verificação {#verification-process}
 
-Integrado como padrão no comando pós-atualização, esse processo permite que você exiba avisos e erros que podem fazer a migração falhar. **Se forem exibidos erros, a migração não será executada.** Se isso acontecer, corrija todos os erros e reinicie a pós-atualização.
+Integrado como padrão no comando pós-atualização, esse processo permite que você exiba avisos e erros que podem fazer a migração falhar. **Se forem exibidos erros, a migração não será executada.** Se isso acontecer, corrija todos os erros e, em seguida, start novamente a pós-atualização.
 
-Você pode iniciar o processo de verificação sozinho (sem migração) usando o comando:
+Você pode start o processo de verificação sozinho (sem migração) usando o comando:
 
 ```
 nlserver.exe config -postupgrade -check -instance:<instanceName>
@@ -133,7 +133,7 @@ As seguintes expressões são pesquisadas (diferencia maiúsculas de minúsculas
    <td> .@<br /> </td> 
    <td> PU-0001<br /> </td> 
    <td> Aviso<br /> </td> 
-   <td> Esse tipo de sintaxe não é mais suportado na personalização da entrega. Consulte <a href="../../migration/using/general-configurations.md#javascript" target="_blank">JavaScript</a>. Caso contrário, verifique se o tipo de valor está correto.<br /> </td> 
+   <td> Esse tipo de sintaxe não é mais suportado na personalização do delivery. Consulte <a href="../../migration/using/general-configurations.md#javascript" target="_blank">JavaScript</a>. Caso contrário, verifique se o tipo de valor está correto.<br /> </td> 
   </tr> 
   <tr> 
    <td> common.js<br /> </td> 
@@ -151,7 +151,7 @@ As seguintes expressões são pesquisadas (diferencia maiúsculas de minúsculas
    <td> new SoapMethodCall(<br /> </td> 
    <td> PU-0004<br /> </td> 
    <td> Aviso<br /> </td> 
-   <td> Essa função só é suportada quando é usada no código JavaScript executado de uma zona de segurança no modo <strong>sessionTokenOnly</strong> .<br /> </td> 
+   <td> Essa função só é suportada quando é usada no código JavaScript executado de uma zona de segurança que está no modo <strong>sessionTokenOnly</strong> .<br /> </td> 
   </tr> 
   <tr> 
    <td> sql=<br /> </td> 
@@ -163,12 +163,12 @@ As seguintes expressões são pesquisadas (diferencia maiúsculas de minúsculas
    <td> SQLDATA<br /> </td> 
    <td> PU-0006<br /> </td> 
    <td> Error<br /> </td> 
-   <td> Esse tipo de erro resulta em uma falha de migração. Consulte <a href="../../migration/using/general-configurations.md#sqldata" target="_blank">SQLData</a>. Se você tiver registros de erros do aplicativo da Web tipo visão geral (migração da v6.02), consulte os aplicativos <a href="../../migration/using/specific-configurations-in-v6-02.md#web-applications" target="_blank">da</a>Web.<br /> </td> 
+   <td> Esse tipo de erro resulta em uma falha de migração. Consulte <a href="../../migration/using/general-configurations.md#sqldata" target="_blank">SQLData</a>. Se você obtiver registros de erros do aplicativo da Web tipo visão geral (migração da v6.02), consulte <a href="../../migration/using/specific-configurations-in-v6-02.md#web-applications" target="_blank">Aplicação web</a>.<br /> </td> 
   </tr> 
  </tbody> 
 </table>
 
-Também é realizada uma verificação de coerência de banco de dados e esquema.
+É igualmente efetuada uma verificação da coerência entre a base de dados e os schemas.
 
 ### Opção de restauração {#restoration-option}
 
