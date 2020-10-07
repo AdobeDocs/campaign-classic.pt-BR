@@ -11,11 +11,11 @@ audience: reporting
 content-type: reference
 topic-tags: creating-new-reports
 discoiquuid: 22c92ddf-fbea-49d3-afd4-1ba427be399d
-index: y
-internal: n
-snippet: y
-translation-type: ht
-source-git-commit: 209ac4d81d2d27c264ee6b288bcb7fcb1900ffc5
+translation-type: tm+mt
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '929'
+ht-degree: 100%
 
 ---
 
@@ -24,7 +24,7 @@ source-git-commit: 209ac4d81d2d27c264ee6b288bcb7fcb1900ffc5
 
 Para criar um relatório, siga as etapas abaixo:
 
-1. Abra o Adobe Campaign Explorer e, no nó **[!UICONTROL Administration > Configuration]**, selecione a pasta **[!UICONTROL Reports]**.
+1. Abra o navegador do Adobe Campaign e, no nó **[!UICONTROL Administration > Configuration]**, selecione a pasta **[!UICONTROL Reports]**.
 1. Clique no botão **[!UICONTROL New]** acima da lista de relatórios.
 1. Selecione **[!UICONTROL Create a new report from a template]** e clique em **[!UICONTROL Next]**.
 
@@ -33,8 +33,9 @@ Para criar um relatório, siga as etapas abaixo:
 1. Selecione o template do relatório na lista suspensa.
 
    * **[!UICONTROL Extended report]** permite criar um relatório configurado usando um gráfico.
-   * O relatório **[!UICONTROL Qualitative distribution]** permite criar estatísticas baseadas em todos os tipos de dados (nome da empresa, domínio de email, etc.).
-   * O relatório **[!UICONTROL Quantitative distribution]** permite criar estatísticas em dados que podem ser medidos ou contados (valor da fatura, idade do recipient, etc.).
+   * O relatório **[!UICONTROL Qualitative distribution]** permite criar estatísticas baseadas em todos os tipos de dados (nome da empresa, domínio de email etc.).
+   * O relatório **[!UICONTROL Quantitative distribution]** relatório permite criar estatísticas em dados que podem ser medidos ou contados (valor da fatura, idade do destinatário etc.).
+
    Para obter mais informações sobre esses templates de relatórios, consulte [esta seção](../../reporting/using/about-descriptive-analysis.md).
 
 1. Insira o nome do relatório e sua descrição nos campos correspondentes. Especifique o **[!UICONTROL schema]** no qual o relatório será aplicado.
@@ -115,14 +116,14 @@ Também é possível clicar com o botão direito do mouse no nó onde deseja adi
 >
 >Se o relatório for destinado a ser exportado no formato do Excel, recomendamos não usar formatação HTML complexa. Para obter mais informações, consulte [Exportação de um relatório](../../reporting/using/actions-on-reports.md#exporting-a-report).
 
-Uma **[!UICONTROL Page]** pode incluir os seguintes elementos:
+Um **[!UICONTROL Page]** pode incluir os seguintes elementos:
 
-* Os **[!UICONTROL charts]** do tipo barra, pizza, curva, etc.
-* As **[!UICONTROL tables]** dinâmicas, Lista com grupo ou Análise.
-* Os **[!UICONTROL Input controls]** tipo texto ou número.
-* **[!UICONTROL Selection controls]** tipo lista suspensa, caixa de seleção, botão de opção, múltipla escolha, data ou Matriz.
-* **[!UICONTROL Advanced controls]** tipo Editor de link, Constante, Seleção de pasta.
-* Valor, Link, HTML, Imagem etc. **[!UICONTROL Elementos estáticos]**.
+* Barra, pizza, tipo de curva **[!UICONTROL charts]** etc.
+* Tabela dinâmica, lista com grupo ou Análise **[!UICONTROL tables]**.
+* Texto ou número tipo **[!UICONTROL Input controls]**.
+* Lista suspensa, caixa de seleção, botão de opção, múltipla escolha, data ou matriz tipo **[!UICONTROL Selection controls]**.
+* Editor de link, Constante, seleção de pasta tipo **[!UICONTROL Advanced controls]**.
+* Valor, Link, HTML, Imagem etc. **[!UICONTROL Static elements]**.
 * **[!UICONTROL Containers]** que permitem controlar o layout do componente.
 
 O modo de configuração de uma página e seus componentes é detalhado [nesta seção](../../web/using/about-web-forms.md).
