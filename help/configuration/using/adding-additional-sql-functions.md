@@ -1,7 +1,7 @@
 ---
-title: Adicionando funções SQL adicionais
-seo-title: Adicionando funções SQL adicionais
-description: Adicionando funções SQL adicionais
+title: Adição de funções SQL extras
+seo-title: Adição de funções SQL extras
+description: Adição de funções SQL extras
 seo-description: null
 page-status-flag: never-activated
 uuid: d66b5ca2-ac7d-4654-9f0e-9bfe56490c19
@@ -11,24 +11,24 @@ audience: configuration
 content-type: reference
 topic-tags: api
 discoiquuid: 728a95f8-46fe-49a8-a645-a0dd6eeb6615
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: dbff132e3bf88c408838f91e50e4b047947ee32a
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '1025'
+ht-degree: 2%
 
 ---
 
 
-# Adicionando funções SQL adicionais{#adding-additional-sql-functions}
+# Adição de funções SQL extras{#adding-additional-sql-functions}
 
 ## Introdução {#introduction}
 
-O Adobe Campaign permite que o usuário defina **suas próprias funções** que podem acessar funções SQL, tanto aquelas oferecidas pelo banco de dados quanto aquelas que ainda não estão disponíveis no console. Isso é útil para funções agregadas (média, máxima, soma), por exemplo, que só podem ser calculadas no servidor ou quando o banco de dados fornece uma maneira mais fácil de implementar certas funções, em vez de gravar &quot;manualmente&quot; a expressão no console (por exemplo, gerenciamento de datas).
+A Adobe Campaign permite que o usuário defina **suas próprias funções** que podem acessar funções SQL, tanto aquelas oferecidas pelo banco de dados quanto aquelas que ainda não estão disponíveis no console. Isso é útil para funções de agregação (média, máxima, soma), por exemplo, que só podem ser calculadas no servidor ou quando o banco de dados fornece uma maneira mais fácil de implementar certas funções, em vez de gravar &quot;manualmente&quot; a expressão no console (por exemplo, gerenciamento de datas).
 
 Esse mecanismo também pode ser usado se você quiser usar uma função SQL de mecanismo de banco de dados recente ou incomum, que ainda não é oferecida pelo console do Adobe Campaign.
 
-Depois que essas funções forem adicionadas, elas aparecerão no editor de expressões como outras funções predefinidas.
+Depois que essas funções forem adicionadas, elas aparecerão no editor de expressões da mesma forma que outras funções predefinidas.
 
 >[!IMPORTANT]
 >
@@ -38,7 +38,7 @@ Depois que essas funções forem adicionadas, elas aparecerão no editor de expr
 
 As funções a serem adicionadas estão em um arquivo **&quot;package&quot; no formato** XML, cuja estrutura é detalhada no parágrafo a seguir.
 
-Para instalá-lo do console, selecione as opções de pacote **** Ferramentas/Avançado/Importação no menu e, em seguida, **[!UICONTROL Install from file]** e siga as instruções do assistente de importação.
+Para instalá-lo do console, selecione as opções de pacote **** Ferramentas/Avançado/Importação no menu e, em seguida, **[!UICONTROL Install from file]** e siga as instruções no assistente de importação.
 
 >[!IMPORTANT]
 >
@@ -73,9 +73,9 @@ As funções a serem adicionadas podem ser encontradas no arquivo **** &quot;pac
 </package>
 ```
 
-* O **nome**, o **namespace** e o **rótulo** são apenas para fins informativos. Eles permitem que você visualize um resumo do pacote na lista de pacotes instalados (pacotes Explorer/Administration/Package management/Installed).
+* O **nome**, a **namespace** e o **rótulo** são apenas para fins informativos. Eles permitem que você visualização um resumo do pacote na lista de pacotes instalados (pacotes Explorer/Administration/Package management/Installed).
 * Os campos **buildVersion** e **buildNumber** são obrigatórios. Elas devem corresponder ao número do servidor ao qual o console está conectado. Essas informações podem ser encontradas na caixa &quot;Ajuda/Sobre&quot;.
-* Os seguintes blocos, **entidades** e **funclist** são obrigatórios. Em funcList, os campos &quot;name&quot; e &quot;namespace&quot; são obrigatórios, mas seu nome é deixado ao critério do usuário e eles designam exclusivamente a lista de funções.
+* Os seguintes blocos, **entidades** e **funclist** são obrigatórios. Em funcList, os campos &quot;nome&quot; e &quot;namespace&quot; são obrigatórios, mas seu nome é deixado ao critério do usuário e eles designam exclusivamente a lista de função.
 
    Isso significa que se outra lista de funções com o mesmo par de namespace/nome (aqui &quot;cus::myList&quot;) for importada, as funções importadas anteriormente serão excluídas. Por outro lado, se você alterar esse par de namespace/nome, a nova série de funções importadas será adicionada à anterior.
 
@@ -94,9 +94,9 @@ As funções a serem adicionadas podem ser encontradas no arquivo **** &quot;pac
 
 >[!IMPORTANT]
 >
->Certifique-se de concluir o atributo @label: esse é o nome que será exibido na lista de funções disponíveis. Se você não inserir nada, o grupo não terá um nome. No entanto, se você inserir um nome diferente do existente, o nome do grupo inteiro será alterado.
+>Certifique-se de concluir o atributo @label: esse é o nome que será exibido na lista das funções disponíveis. Se você não inserir nada, o grupo não terá um nome. No entanto, se você inserir um nome diferente do existente, o nome do grupo inteiro será alterado.
 
-Se desejar adicionar funções a vários grupos diferentes, você pode fazer com que vários `<group>` elementos sejam rastreados na mesma lista.
+Se desejar adicionar funções a vários grupos diferentes, é possível fazer com que vários `<group>` elementos sejam rastreados na mesma lista.
 
 Finalmente, um `<group>` elemento pode conter a definição de uma ou várias funções, que é a finalidade do arquivo de pacote. O `<function>` elemento é detalhado no parágrafo a seguir.
 
@@ -131,8 +131,9 @@ O campo **@name** refere-se ao nome da função e &quot;args&quot; é a lista de
 * **@minArgs** e **maxArgs** designam o número de parâmetros (mínimo e máximo) para um parâmetro. Por exemplo, para uma função com 2 parâmetros, minArgs e maxArgs serão 2 e 2. Para 3 parâmetros, mais 1 opcional, eles serão 3 e 4, respectivamente.
 * Finalmente, o elemento **providerPart** fornece a implementação da função.
 
-   * O atributo **provider** é obrigatório e especifica os sistemas de banco de dados para os quais a implementação é fornecida. Conforme mostrado no exemplo, quando as sintaxes de expressão ou as funções subjacentes diferem, as implementações alternativas podem ser fornecidas de acordo com o banco de dados.
-   * O atributo **@body** contém a implementação da função. Observe que: essa implementação deve ser uma expressão, na linguagem do banco de dados (não um bloco de código). Dependendo dos bancos de dados, as expressões podem ser subconsultas (&quot;(selecione a coluna da tabela onde...)&quot;) retornando somente um único valor. Por exemplo, esse é o caso no Oracle (a consulta deve ser escrita entre parênteses).
+   * O atributo **provider** é obrigatório e especifica os sistemas de banco de dados para os quais a implementação é fornecida. Como mostrado no exemplo, quando as sintaxes de expressão ou as funções subjacentes diferem, as implementações alternativas podem ser fornecidas de acordo com o banco de dados.
+   * O atributo **@body** contém a implementação da função. Observe que: essa implementação deve ser uma expressão, na linguagem do banco de dados (não um bloco de código). Dependendo dos bancos de dados, as expressões podem ser subquery (&quot;(selecione a coluna da tabela onde...)&quot;) retornando somente um único valor. Por exemplo, esse é o caso no Oracle (o query deve ser escrito entre parênteses).
+
    >[!NOTE]
    >
    >Se for provável que apenas um ou dois bancos de dados sejam consultados pela função definida, nós sempre poderemos fornecer apenas as definições correspondentes a esses bancos de dados.
