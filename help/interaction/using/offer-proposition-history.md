@@ -11,11 +11,11 @@ audience: interaction
 content-type: reference
 topic-tags: tracking-offers
 discoiquuid: 82e67697-5dc7-4013-a00d-be8cdad31354
-index: y
-internal: n
-snippet: y
-translation-type: ht
-source-git-commit: 215e4d1ca78938b38b53cae0357612deebf7727b
+translation-type: tm+mt
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '60'
+ht-degree: 86%
 
 ---
 
@@ -28,7 +28,7 @@ Depois que as apresentações da oferta são feitas, é possível visualizar o h
 >
 >Essa funcionalidade só é visível online e somente no gerenciador de delivery.
 
-* No nível da oferta, clique em **[!UICONTROL Propositions]** na guia **[!UICONTROL Edit]**.
+* At the offer level, in the **[!UICONTROL Edit]** tab, click **[!UICONTROL Propositions]**.
 
    ![](assets/offer_followup_006.png)
 
