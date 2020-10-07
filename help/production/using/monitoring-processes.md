@@ -11,11 +11,8 @@ audience: production
 content-type: reference
 topic-tags: production-procedures
 discoiquuid: 968d0ee3-5efc-46d8-b408-b9cce3e730c4
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 68d532a9597877f2f265dfc2d16ea31d1ce80858
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
 workflow-type: tm+mt
 source-wordcount: '3602'
 ht-degree: 1%
@@ -102,7 +99,7 @@ A lista dos indicadores do sistema permite exibir informações sobre a máquina
 
    **[!UICONTROL Max Value]** : número máximo de processos autorizados (1).
 
-   **[!UICONTROL Alert]** : este indicador é exibido se o número de processos for igual a 1.
+   **[!UICONTROL Alert]** : este indicador é apresentado se o número de processos for igual a 1.
 
    Quando o **[!UICONTROL Alert]** indicador é exibido, pode ser que o processo em questão esteja bloqueado pelo mecanismo de banco de dados SQL ou que esteja preso em um loop infinito. O processo de **monitoramento** fornecido pela Adobe Campaign automaticamente start todos os processos todos os dias e permite que você resolva esse problema. No entanto, você também pode parar o processo em questão para forçar o start novamente.
 
