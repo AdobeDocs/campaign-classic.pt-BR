@@ -11,11 +11,11 @@ audience: installation
 content-type: reference
 topic-tags: prerequisites-and-recommendations-
 discoiquuid: 1dcf01af-c2f3-4975-ba05-628d52952064
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: c25e2a4f2280cdcc61e0522f8235149410b5dacf
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '307'
+ht-degree: 2%
 
 ---
 
@@ -30,7 +30,7 @@ Verifique também a seção de camadas [de acesso ao](../../installation/using/p
 
 ## Microsoft SQL Server {#microsoft-sql-server}
 
-O cliente nativo deve ser instalado nos servidores de aplicativos do Adobe Campaign.
+O cliente nativo deve ser instalado nos servidores de aplicativos Adobe Campaign.
 
 Você pode verificar o cliente nativo no servidor através do painel de configuração do driver ODBC, no **SQL Server Native Client 10.0** (para clientes Microsoft SQL Server 2008 e 2008 R2) ou no **SQL Server Native Client 11.0** (para Microsoft SQL Server 2012, 2014 e 2010010 clientes em 6 e 2017).
 
@@ -53,7 +53,7 @@ As seguintes DLLs de acesso devem estar presentes:
 
 Os parâmetros **NLS_NCHAR_CHARACTERSET** e **NLS_CHARACTERSET** precisam ser configurados corretamente para que o banco de dados funcione em Unicode ou ANSI.
 
-O Adobe Campaign usa a codificação padrão Oracle. O uso de outra codificação pode causar problemas de compatibilidade: neste caso, entre em contato com o suporte técnico.
+A Adobe Campaign usa a codificação padrão Oracle. O uso de outra codificação pode causar problemas de compatibilidade: neste caso, entre em contato com o suporte técnico.
 
 Para saber mais sobre sua codificação, use o seguinte comando **sqlplus** :
 
@@ -88,6 +88,6 @@ Você também pode fazer referência ao [Oracle Client no Linux](../../installat
 
 Recomendamos que você instale o suporte a UTF-8 ao instalar o mecanismo de banco de dados. Dessa forma, você poderá criar bancos de dados Unicode.
 
-**Tópico relacionado**
+**Tópicos relacionados**
 
 * [Opção desconectada nas tabelas do Adobe Campaign Classic](https://helpx.adobe.com/campaign/kb/unlogged-tables-classic.html)
