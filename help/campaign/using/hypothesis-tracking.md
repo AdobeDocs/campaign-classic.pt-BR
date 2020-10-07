@@ -11,11 +11,11 @@ audience: campaign
 content-type: reference
 topic-tags: response-manager
 discoiquuid: 4452bfc6-9ac4-4d81-a63c-879a163c13ee
-index: y
-internal: n
-snippet: y
-translation-type: ht
-source-git-commit: b47dcfa0e4ee2e5e43e7aa14b94e12fd70ff9c2d
+translation-type: tm+mt
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '450'
+ht-degree: 91%
 
 ---
 
@@ -40,7 +40,7 @@ Esses indicadores são:
 * **Response rate of the control group**: número de grupos de controle de usuário/número total de grupos de controle de deliveries.
 * **Number of reactions**: número de registros na tabela que contém a relação entre individuais, a hipótese e a tabela de transações.
 
-Para obter a lista completa de indicadores, clique no link **[!UICONTROL Display the list]**:
+For the full list of indicators, click the **[!UICONTROL Display the list]** link:
 
 ![](assets/response_hypothesis_indicators_002.png)
 
@@ -65,14 +65,14 @@ Os indicadores fornecem as seguintes informações:
 
 É possível exibir as reações dos destinatários com a hipótese por meio da guia **[!UICONTROL Reactions]**.
 
-1. Depois que o cálculo da hipótese é concluído, acesse o nó **[!UICONTROL Campaign management > Measurement hypotheses]** da árvore do Adobe Campaign.
+1. Once hypothesis calculation is complete, go to the **[!UICONTROL Campaign management > Measurement hypotheses]** node of the Adobe Campaign tree.
 1. Selecione a hipótese e clique na guia **[!UICONTROL Reactions]** para visualizar a lista de destinatários que pode comprar algo após a campanha de marketing.
 
    ![](assets/response_hypothesis_reactions_001.png)
 
 ## Relatórios {#reports}
 
-O **[!UICONTROL Relatório da hipótese]** permite a visualização dos resultados da hipótese executada em campanhas e deliveries. Este relatório contém os indicadores calculados pela hipótese (para mais informações, consulte os [Indicadores](#indicators)).
+The **[!UICONTROL Hypothesis report]** lets you view the results of the hypotheses performed on campaigns and deliveries. Este relatório contém os indicadores calculados pela hipótese (para mais informações, consulte os [Indicadores](#indicators)).
 
 * **No nível da campanha**: clique no link **[!UICONTROL Reports]** da campanha relevante e selecione o **[!UICONTROL Hypothesis report]**. Esse relatório contém a lista de deliveries da campanha e a hipótese calculada para cada um deles.
 
