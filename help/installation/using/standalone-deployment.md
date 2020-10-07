@@ -11,11 +11,8 @@ audience: installation
 content-type: reference
 topic-tags: deployment-types-
 discoiquuid: 9834638f-a8bb-4969-9f8d-99b8d9fdb1ca
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: f8d36b9fca9624500c5273eb73a1702f077dd60c
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
 workflow-type: tm+mt
 source-wordcount: '1134'
 ht-degree: 2%
@@ -249,7 +246,7 @@ Siga as etapas abaixo:
 
    Os principais parâmetros a serem definidos são os seguintes:
 
-   * Delivery de email: endereços de remetente e resposta e a caixa de correio de erro para o correio de rejeição.
+   * Delivery de e-mail: endereços de remetente e resposta e a caixa de correio de erro para o correio de rejeição.
    * Acompanhamento: Preencha o URL externo usado para redirecionamento e o URL interno, clique em **Registro no(s) servidor(es)** de rastreamento e valide-o na instância de **demonstração** do servidor de rastreamento.
 
       For more on this, refer to [Tracking configuration](../../installation/using/deploying-an-instance.md#tracking-configuration).
