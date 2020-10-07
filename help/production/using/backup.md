@@ -11,18 +11,18 @@ audience: production
 content-type: reference
 topic-tags: data-processing
 discoiquuid: 870ab0f2-1bd7-42e7-8d83-a08a520b6587
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 2a11a73b0679c0a65dc10f71869bf2a6c6efc008
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '198'
+ht-degree: 2%
 
 ---
 
 
 # Backup{#backup}
 
-O backup é essencial para evitar a perda de dados em caso de problema (físico ou relacionado ao sistema) em uma máquina.
+O backup é essencial para evitar a perda de dados no evento de um problema (físico ou relacionado ao sistema) em uma máquina.
 
 Os dados são armazenados em dois locais separados:
 
@@ -37,11 +37,11 @@ Os arquivos são divididos em várias categorias:
 
 * Arquivos de configuração, localizados em **nl6/conf**
 
-   Isso permite reconfigurar o Adobe Campaign muito rapidamente.
+   Isso permite que você reconfigure o Adobe Campaign muito rapidamente.
 
 * Redirecionar arquivos ** nl6/var/`<instancename>`/redir**
 
-   Eles estão nos servidores de rastreamento (geralmente chamados de &quot;frontais&quot;) e incluem todos os redirecionamentos de campanha anteriores. Eles ainda são usados por campanhas anteriores.
+   Eles estão nos servidores de rastreamento (geralmente chamados de &quot;frontais&quot;) e incluem todos os redirecionamentos de campanha anteriores. Elas ainda são usadas por campanhas anteriores.
 
 * Arquivos de registro: **nl6/var/`<instancename>`/log**
 
@@ -63,6 +63,6 @@ Os diretórios que devem ser submetidos a backup são, por conseguinte:
 
 ## Banco de dados {#database}
 
-O banco de dados contém todas as informações exibidas no console de cliente avançado do Adobe Campaign, bem como todos os dados de linha de negócios.
+O banco de dados contém todas as informações exibidas no console Adobe Campaign rich client, bem como todos os dados de linha de negócios.
 
 Sua empresa de hospedagem e seus administradores de banco de dados em particular são responsáveis por essa operação.
