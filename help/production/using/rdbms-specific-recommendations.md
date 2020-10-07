@@ -11,11 +11,8 @@ audience: production
 content-type: reference
 topic-tags: database-maintenance
 discoiquuid: b2219912-5570-45d2-8b52-52486e29d008
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: b369a17fabc55607fc6751e7909e1a1cb3cd4201
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
 workflow-type: tm+mt
 source-wordcount: '1090'
 ht-degree: 3%
@@ -25,7 +22,7 @@ ht-degree: 3%
 
 # Recomendações específicas do RDBMS{#rdbms-specific-recommendations}
 
-Para ajudá-lo a configurar planos de manutenção, esta seção lista algumas recomendações/práticas recomendadas adaptadas aos vários mecanismos RDBMS compatíveis com o Adobe Campaign. No entanto, estas são apenas recomendações. Cabe a você adaptá-los às suas necessidades, de acordo com o seu procedimento interno e as suas limitações. O administrador do banco de dados é responsável pela criação e execução desses planos.
+Para ajudá-lo a configurar planos de manutenção, esta seção lista algumas recomendações/práticas recomendadas adaptadas aos vários mecanismos RDBMS suportados pela Adobe Campaign. No entanto, estas são apenas recomendações. Cabe a você adaptá-los às suas necessidades, de acordo com o seu procedimento interno e as suas limitações. O administrador do banco de dados é responsável pela criação e execução desses planos.
 
 ## PostgreSQL {#postgresql}
 
@@ -98,11 +95,12 @@ vacuum full nmsdelivery;
 
 >[!NOTE]
 >
->* A Adobe recomenda começar com tabelas menores: desta forma, se o processo falhar em grandes tabelas (se o risco de falha for maior), pelo menos parte da manutenção foi concluída.
->* A Adobe recomenda adicionar as tabelas específicas ao seu modelo de dados, que podem estar sujeitas a atualizações significativas. Esse pode ser o caso do **NmsRecipient** se você tiver grandes fluxos diários de replicação de dados.
+>* O Adobe recomenda iniciar com tabelas menores: desta forma, se o processo falhar em grandes tabelas (se o risco de falha for maior), pelo menos parte da manutenção foi concluída.
+>* O Adobe recomenda adicionar as tabelas específicas ao seu modelo de dados, que podem estar sujeitas a atualizações significativas. Esse pode ser o caso do **NmsRecipient** se você tiver grandes fluxos diários de replicação de dados.
 >* Os comandos de **vácuo** e **reindexação** bloquearão a tabela, que pausa alguns processos enquanto a manutenção é realizada.
->* Para tabelas muito grandes (normalmente acima de 5 Gb), o **vácuo cheio** pode tornar-se bastante ineficiente e levar muito tempo. A Adobe não recomenda usá-la para a tabela **YyyNmsBroadLogXxx** .
->* Esta operação de manutenção pode ser implementada por um fluxo de trabalho de Adobe Campaign, usando uma **[!UICONTROL SQL]** atividade (para obter mais informações, consulte [esta seção](../../workflow/using/architecture.md)). Certifique-se de programar a manutenção para um tempo de atividade baixo que não colidir com a janela de backup.
+>* Para tabelas muito grandes (normalmente acima de 5 Gb), o **vácuo cheio** pode tornar-se bastante ineficiente e levar muito tempo. O Adobe não recomenda usá-lo para a tabela **YyyNmsBroadLogXxx** .
+>* Esta operação de manutenção pode ser implementada por um fluxo de trabalho da Adobe Campaign, usando uma **[!UICONTROL SQL]** atividade (para obter mais informações, consulte [esta seção](../../workflow/using/architecture.md)). Certifique-se de programar a manutenção para um tempo de atividade baixo que não colidir com a janela de backup.
+
 >
 
 
@@ -111,8 +109,8 @@ vacuum full nmsdelivery;
 
 O PostgreSQL não fornece uma maneira fácil de executar uma recriação de tabela on-line, pois o **vácuo cheio** bloqueia a tabela, impedindo assim a produção regular. Isso significa que a manutenção deve ser realizada quando a tabela não for usada. É possível:
 
-* efetuar a manutenção quando a plataforma Adobe Campaign for parada,
-* pare os vários subserviços do Adobe Campaign que provavelmente gravarão na tabela que está sendo recriada (**nlserver stop wfserver instance_name** para interromper o processo de fluxo de trabalho).
+* executar a manutenção quando a plataforma Adobe Campaign for parada,
+* pare os vários subserviços do Adobe Campaign que provavelmente gravarão na tabela que está sendo recriada (**nlserver stop instance_name** para interromper o processo de fluxo de trabalho).
 
 Este é um exemplo de desfragmentação de tabela usando funções específicas para gerar a DDL necessária. O SQL a seguir permite criar duas novas funções: **GenRebuildTablePart1** e **GenRebuildTablePart2**, que podem ser usados para gerar a DDL necessária para recriar uma tabela.
 
@@ -419,7 +417,7 @@ O exemplo abaixo diz respeito ao Microsoft SQL Server 2005. Se estiver usando ou
 
 1. Quando o plano de manutenção estiver concluído, clique em **[!UICONTROL Close]** .
 1. No Microsoft SQL Server Explorer, clique com o duplo do mouse na **[!UICONTROL Management > Maintenance Plans]** pasta.
-1. Selecione o plano de manutenção do Adobe Campaign: as várias etapas são detalhadas em um fluxo de trabalho.
+1. Selecione o plano de manutenção da Adobe Campaign: as várias etapas são detalhadas em um fluxo de trabalho.
 
    Observe que um objeto foi criado na **[!UICONTROL SQL Server Agent > Jobs]** pasta. Esse objeto permite que você start o plano de manutenção. No nosso exemplo, existe apenas um objeto, uma vez que todas as tarefas de manutenção fazem parte do mesmo plano.
 
