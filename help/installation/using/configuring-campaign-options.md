@@ -11,11 +11,8 @@ audience: installation
 content-type: reference
 topic-tags: appendices
 discoiquuid: 9c1884f6-1dd8-41ab-b8dc-604c8cc2dc89
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 890950463146fe0863d2809759eb142cb4bb1fff
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
 workflow-type: tm+mt
 source-wordcount: '3927'
 ht-degree: 3%
@@ -144,7 +141,7 @@ Alguns deles são incorporados ao instalar a Campanha e outros podem ser adicion
   </tr> 
   <tr> 
    <td> <span class="uicontrol">NmsEmail_DefaultFromAddr</span> <br /> </td> 
-   <td> Endereço de email padrão "de" no nível da instância usado para delivery de email se deixado em branco pelo usuário.<br /> </td> 
+   <td> O endereço de email padrão "de" no nível da instância é usado para delivery de email se deixado em branco pelo usuário.<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">NmsEmail_DefaultReplyToAddr</span> <br /> </td> 
