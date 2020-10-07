@@ -11,12 +11,9 @@ audience: message-center
 content-type: reference
 topic-tags: instance-configuration
 discoiquuid: 7f471ac1-cd6a-4371-977e-52d60ce8d968
-index: y
-internal: n
-snippet: y
-translation-type: ht
-source-git-commit: f4ecdab4c17a6ba8deb3b98079f57bb7a9adf4a0
-workflow-type: ht
+translation-type: tm+mt
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
 source-wordcount: '1002'
 ht-degree: 100%
 
@@ -29,6 +26,7 @@ ht-degree: 100%
 >
 >* Extensões de schema feitas nos schemas usados pelos [workflows técnicos do Centro de Mensagens](../../message-center/using/technical-workflows.md) em instâncias de controle ou de execução precisam ser duplicadas nas outras instâncias usadas pelo módulo de mensagens transacionais do Adobe Campaign.
 >* A instância de controle e a instância de execução devem ser instaladas em máquinas diferentes. Elas não podem compartilhar a mesma instância do Campaign.
+
 >
 
 
