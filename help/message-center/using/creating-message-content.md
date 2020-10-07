@@ -11,11 +11,11 @@ audience: message-center
 content-type: reference
 topic-tags: message-templates
 discoiquuid: 1f420652-c9af-4a49-8d5c-a640e960aced
-index: y
-internal: n
-snippet: y
-translation-type: ht
-source-git-commit: 2c0d4054fbc15a88ea0370269b62c7d647aea033
+translation-type: tm+mt
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '270'
+ht-degree: 95%
 
 ---
 
@@ -42,7 +42,7 @@ Para inserir tags de personalização no corpo de uma mensagem de email, siga as
 
 1. No template de mensagem, clique na guia que corresponde ao formato do email (HTML ou texto).
 1. Insira o corpo da mensagem.
-1. No corpo do texto, insira a tag usando os menus **[!UICONTROL Real time events>Event XML]**.
+1. In the body of the text, insert the tag using the **[!UICONTROL Real time events>Event XML]** menus.
 
    ![](assets/messagecenter_create_custo_002.png)
 
