@@ -11,18 +11,18 @@ audience: installation
 content-type: reference
 topic-tags: appendices
 discoiquuid: 3621d4ec-8839-40c3-a574-486c408f79ba
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 46f5bfb41bfe9c938ac0ffa767ead3e47a32047d
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '152'
+ht-degree: 5%
 
 ---
 
 
 # Linhas de comando{#command-lines}
 
-As seguintes linhas de comando exigem a capacidade de acessar o servidor de aplicativos. Para implantações hospedadas pela Adobe, esses comandos só podem ser executados pela Adobe.
+As seguintes linhas de comando exigem a capacidade de acessar o servidor de aplicativos. Para implantações hospedadas pelo Adobe, esses comandos só podem ser executados por Adobe.
 
 ## Criação de uma instância {#creating-an-instance}
 
@@ -51,7 +51,7 @@ Os seguintes valores são possíveis para o **`[rdbms]`** parâmetro:
 * **mssql**: para o Microsoft SQL Server,
 * **DB2**: para o motor DB2.
 
-O comando a seguir configura a instância de **demonstração** com o servidor tipo SQL conhecido como **base6**, vinculado à conta da **campanha** e à sua **senha** no servidor **dbsrv** :
+O comando a seguir configura a instância de **demonstração** com o servidor tipo SQL conhecido como **base6**, vinculado à conta de **campanha** e à sua **senha** no servidor **dbsrv** :
 
 ```
  nlserver config -setdblogin:db:campaign:myBase/password@dbServer -instance:demo
