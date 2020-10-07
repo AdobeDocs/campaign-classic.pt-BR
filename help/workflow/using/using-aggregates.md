@@ -11,11 +11,11 @@ audience: workflow
 content-type: reference
 topic-tags: use-cases
 discoiquuid: 9ca649b4-2226-4cfe-bae1-4632c421975b
-index: y
-internal: n
-snippet: y
-translation-type: ht
-source-git-commit: c10a0a11c6e9952aa47da1f7a15188c79c62508d
+translation-type: tm+mt
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '611'
+ht-degree: 92%
 
 ---
 
@@ -39,16 +39,16 @@ Para executar um filtro de tipo **Creation date = max (Creation date)** nos reci
 
 1. Criação de queries Aqui, o objetivo é calcular a última data de criação conhecida de todos os recipients no banco de dados. A query portanto não contém um filtro.
 1. Selecione **[!UICONTROL Add data]**.
-1. Nas janelas abertas, selecione **[!UICONTROL Data linked to the filtering dimension]** e então, **[!UICONTROL Filtering dimension data]**.
-1. Na janela **[!UICONTROL Data to add]**, adicione uma coluna que calcula o valor máximo do campo **Creation date** na tabela de recipients. É possível usar o editor de expressão ou inserir **max(@created)** diretamente em um campo na coluna **[!UICONTROL Expression]**. Clique no botão **[!UICONTROL Finish]**.
+1. Nas janelas que abrem, selecione **[!UICONTROL Data linked to the filtering dimension]** e depois **[!UICONTROL Filtering dimension data]**.
+1. Na janela **[!UICONTROL Data to add]**, adicione uma coluna que calcula o valor máximo do campo **Creation date** na tabela de recipients. É possível usar o editor de expressão ou inserir **max(@created)** diretamente em um campo na coluna **[!UICONTROL Expression]**. Clique no botão **[!UICONTROL Finish]**
 
    ![](assets/datamanagement_usecase_2.png)
 
-1. Clique em **[!UICONTROL Edit additional data]** e depois em **[!UICONTROL Advanced parameters...]**. Marque a opção **[!UICONTROL Disable automatic adding of the primary keys of the targeting dimension]**.
+1. Clique em **[!UICONTROL Edit additional data]** e em **[!UICONTROL Advanced parameters...]**. Marque a opção **[!UICONTROL Disable automatic adding of the primary keys of the targeting dimension]**.
 
    Essa opção garante que todos os recipients não sejam exibidos como resultado e que os dados adicionados explicitamente não sejam mantidos. Nesse caso, ele se refere à última data em que um recipient foi criado.
 
-   Deixe a opção **[!UICONTROL Remove duplicate rows (DISTINCT)]** selecionada.
+   Deixe marcada a opção **[!UICONTROL Remove duplicate rows (DISTINCT)]**.
 
 ## Etapa 2: Vincular os recipients e o resultado da função de agregação {#step-2--linking-the-recipients-and-the-aggregation-function-result}
 
@@ -58,8 +58,9 @@ Para vincular a query com os recipients à query que realiza o cálculo da funç
 1. Na guia **[!UICONTROL Links]**, adicione um novo link e insira as informações na janela que aparece da seguinte maneira:
 
    * Selecione o schema temporário relacionado ao agregado. Os dados desse schema serão adicionados aos membros do conjunto principal.
-   * Selecione **[!UICONTROL Use a simple join]** para vincular o resultado agregado a cada recipient do conjunto principal.
-   * Finalmente, especifique que o link é um **[!UICONTROL Type 11 simple link]**.
+   * Select **[!UICONTROL Use a simple join]** to link the aggregate result to every recipient of the main set.
+   * Finally, specify that the link is a **[!UICONTROL Type 11 simple link]**.
+
    ![](assets/datamanagement_usecase_3.png)
 
 Portanto, o resultado de agregação é vinculado a cada recipient.
@@ -69,7 +70,7 @@ Portanto, o resultado de agregação é vinculado a cada recipient.
 Depois que o link tiver sido estabelecido, o resultado agregado e os recipients farão parte do mesmo schema temporário. Portanto, é possível criar um filtro no schema para comparar a data de criação dos recipients e a última data de criação conhecida, representada pela função de agregação. Esse filtro é realizado usando uma atividade Split.
 
 1. Na guia **[!UICONTROL General]**, selecione **Recipients** como a dimensão do target e **Edit schema** como a dimensão do filtro (para filtrar na atividade de schema de transição de entrada).
-1. Na guia **[!UICONTROL subsets]**, selecione **[!UICONTROL Add a filtering condition on the inbound population]** e clique em **[!UICONTROL Edit...]**.
+1. Na **[!UICONTROL subsets]** guia, selecione **[!UICONTROL Add a filtering condition on the inbound population]** e clique em **[!UICONTROL Edit...]**.
 1. Usando o editor de expressão, adicione um critério de igualdade entre a data de criação dos recipients e a data de criação calculada pelo agregado.
 
    Os campos de tipo de data no banco de dados geralmente são salvos em milissegundos. Portanto, é necessário estender esses itens para um dia inteiro para evitar a recuperação dos recipients criados apenas com os mesmos milissegundos.
@@ -78,8 +79,9 @@ Depois que o link tiver sido estabelecido, o resultado agregado e os recipients 
 
    As expressões a serem usadas para os critérios são:
 
-   * **[!UICONTROL Expressão]**: `toDate([target/@created])`.
-   * **[!UICONTROL Value]**: `toDate([datemax/expr####])` onde expr#### está relacionado ao agregado especificado na query de função de agregação.
+   * **[!UICONTROL Expression]**: `toDate([target/@created])`.
+   * **[!UICONTROL Value]**: `toDate([datemax/expr####])`, em que expr#### relaciona-se à agregação especificada no query da função de agregação.
+
    ![](assets/datamanagement_usecase_4.png)
 
 O resultado da atividade split refere-se aos recipients criados no mesmo dia da última data de criação conhecida.
