@@ -11,11 +11,11 @@ audience: reporting
 content-type: reference
 topic-tags: designing-reports-with-cubes
 discoiquuid: 4655ad65-7eba-44d5-b3f9-f4b8f44d9d5c
-index: y
-internal: n
-snippet: y
-translation-type: ht
-source-git-commit: 62b2f1f6cfcaadd10880d428b8b94d73d2addcdb
+translation-type: tm+mt
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '1494'
+ht-degree: 94%
 
 ---
 
@@ -54,7 +54,7 @@ No exemplo a seguir, os idiomas são agrupados em três categorias: inglês, ale
 
 ![](assets/s_advuser_cube_class_03.png)
 
-Você pode usar uma máscara SQL para combinar vários valores em um filtro. Para fazer isso, marque **[!UICONTROL Yes]** na coluna **[!UICONTROL Use an SQL mask]** e insira o filtro SQL a ser aplicado na coluna **[!UICONTROL Value or expression]**.
+Você pode usar uma máscara SQL para combinar vários valores em um filtro. To do this, check **[!UICONTROL Yes]** in the **[!UICONTROL Use an SQL mask]** column and enter the SQL filter to be applied in the **[!UICONTROL Value or expression]** column.
 
 No exemplo abaixo, todos os domínios de email que começam com **yahoo** (yahoo.fr, yahoo.com, yahoo.be e etc.) ou com **ymail** (ymail.com, ymail.eu e etc.) serão agrupados no rótulo **YAHOO!**, assim como endereços com o domínio **rocketmail.com** .
 
@@ -67,7 +67,7 @@ Os valores podem ser gerenciados dinamicamente por enumerações. Isso significa
 Para criar esse tipo de compartimentalização de valor, siga as etapas abaixo:
 
 1. Crie uma nova dimensão e habilite a compartimentalização.
-1. Selecione a opção **[!UICONTROL Dynamically link the values to an enumeration]** e selecione a lista discriminada correspondente.
+1. Select the **[!UICONTROL Dynamically link the values to an enumeration]** option and select the matching enumeration.
 
    ![](assets/s_advuser_cube_class_04.png)
 
@@ -77,7 +77,7 @@ Para criar esse tipo de compartimentalização de valor, siga as etapas abaixo:
 
 Você pode agrupar os valores em intervalos com base em um intervalo desejado.
 
-Para fazer isso, clique em **[!UICONTROL Add]** e selecione **[!UICONTROL Define a range]**.
+To define ranges manually, click the **[!UICONTROL Add]** button and select **[!UICONTROL Define a range]** :
 
 ![](assets/s_advuser_cube_class_05.png)
 
@@ -85,7 +85,7 @@ Em seguida, especifique os limites inferiores e superiores e clique em **[!UICON
 
 ### Criação automática de compartimentos {#generating-bins-automatically}
 
-Também é possível gerar compartimentos automaticamente. Para fazer isso, clique em **[!UICONTROL Generation bins...]**.
+Também é possível gerar compartimentos automaticamente. Para fazer isso, clique em **[!UICONTROL Generate bins...]**.
 
 ![](assets/s_advuser_cube_class_06.png)
 
@@ -113,7 +113,7 @@ Ele é criado usando o seguinte template:
 
 ![](assets/nmx_enum_domain.png)
 
-Para criar um relatório usando essa lista discriminada, crie um Cubo usando a dimensão **[!UICONTROL Email domain]**. Escolha a opção **[!UICONTROL Enable binning]** e depois **[!UICONTROL Dynamically link the values to an enumeration]**. Em seguida, selecione a enumeração de **Domínios** como mostrado acima. Todos os valores que não têm alias especificado serão reagrupados no rótulo **Outros** .
+Para criar um relatório usando essa lista discriminada, crie um Cubo usando a dimensão **[!UICONTROL Email domain]**. Choose the **[!UICONTROL Enable binning]** option then **[!UICONTROL Dynamically link the values to an enumeration]**. Em seguida, selecione a enumeração de **Domínios** como mostrado acima. Todos os valores que não têm alias especificado serão reagrupados no rótulo **Outros** .
 
 ![](assets/nmx_add_dimension.png)
 
@@ -177,11 +177,11 @@ Para definir uma nova medida, siga as etapas abaixo:
 
 1. Se necessário e dependendo do operador, escolha a expressão que a operação aborda.
 
-   O botão **[!UICONTROL Advanced selection]** permite criar fórmulas de cálculo complexas. Para obter mais informações, consulte [esta seção](../../platform/using/about-queries-in-campaign.md).
+   The **[!UICONTROL Advanced selection]** button lets you create complex calculation formulas. Para obter mais informações, consulte [esta seção](../../platform/using/about-queries-in-campaign.md).
 
    ![](assets/s_advuser_cube_create_a_measure_01.png)
 
-1. O link **[!UICONTROL Filter the measure data...]** permite restringir o campo de cálculo e somente aplicá-lo aos dados específicos no banco de dados.
+1. The **[!UICONTROL Filter the measure data...]** link lets you restrict the calculation field and only apply it to specific data in the database.
 
    ![](assets/s_advuser_cube_create_a_measure_02.png)
 
@@ -207,7 +207,7 @@ Mova as linhas para alterar a sequência de exibição. No exemplo a seguir, o d
 
 A configuração de medidas, linhas e colunas pode ser executada individualmente para cada medida ou no geral. Um ícone específico permite acessar a janela de seleção do modo de exibição.
 
-* Clique no ícone **[!UICONTROL Edit the configuration of the pivot table]** para acessar a janela de configuração.
+* Click the **[!UICONTROL Edit the configuration of the pivot table]** icon to access the configuration window.
 
    É possível escolher se exibe ou não os rótulos das medidas, bem como configurar o layout (linhas ou colunas).
 
@@ -227,7 +227,7 @@ Em cada medida, é possível definir a unidade e a formatação a serem aplicada
 
 Após configurar o relatório, é possível salvá-lo e compartilhá-lo com outros operadores.
 
-Para fazer isso, clique no ícone **[!UICONTROL Show the report properties]** e habilite a opção **[!UICONTROL Share this report]**.
+To do this, click the **[!UICONTROL Show the report properties]** icon and enable the **[!UICONTROL Share this report]** option.
 
 ![](assets/cube_share_option.png)
 
