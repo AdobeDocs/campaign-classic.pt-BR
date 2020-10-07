@@ -11,11 +11,11 @@ audience: delivery
 content-type: reference
 topic-tags: content-management
 discoiquuid: 48f491b7-bf7b-457f-9cf2-db2bbf4eceea
-index: y
-internal: n
-snippet: y
-translation-type: ht
-source-git-commit: 1c86322fa95aee024f6c691b61a10c21a9a22eb7
+translation-type: tm+mt
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '431'
+ht-degree: 92%
 
 ---
 
@@ -34,7 +34,7 @@ Eles também podem ser usados para criar instâncias de conteúdo. Depois de cri
 
 ![](assets/s_ncs_content_deliver_a_content.png)
 
-O layout será aplicado automaticamente com base nas configurações selecionadas. Para visualizá-lo, clique em **[!UICONTROL HTML preview]** (ou **[!UICONTROL Text preview]**) e selecione um recipient para testar os elementos de personalização.
+O layout será aplicado automaticamente com base nas configurações selecionadas. To view it, click the **[!UICONTROL HTML preview]** (or **[!UICONTROL Text preview]** ) and select a recipient to test personalization elements.
 
 ![](assets/s_ncs_content_deliver_a_content_html.png)
 
@@ -46,7 +46,7 @@ Para obter mais informações, consulte o exemplo de implementação completa: [
 
 Siga as etapas abaixo:
 
-1. Selecione o nó **[!UICONTROL Resources > Contents]** da árvore, clique com o botão direito do mouse e escolha **[!UICONTROL Properties]**.
+1. Select the **[!UICONTROL Resources > Contents]** node of the tree, right-click and choose **[!UICONTROL Properties]**.
 
    ![](assets/s_ncs_content_folder_properties.png)
 
@@ -62,7 +62,7 @@ Siga as etapas abaixo:
 
    ![](assets/s_ncs_content_folder_use_a_template.png)
 
-1. Em seguida, clique na guia **[!UICONTROL HTML preview]** para exibir a renderização. Os campos de personalização obtidos do banco de dados não são inseridos aqui.
+1. Then click the **[!UICONTROL HTML preview]** tab to view the rendering. Os campos de personalização obtidos do banco de dados não são inseridos aqui.
 
    ![](assets/s_ncs_content_folder_use_a_template_preview.png)
 
@@ -86,7 +86,7 @@ Para criar e entregar uma instância de conteúdo, um template do delivery preci
 
 Além disso, a pasta de armazenamento de conteúdo deve ser dedicada ao conteúdo obtido deste template de publicação (quando uma pasta de conteúdo permite gerar vários tipos de conteúdo, os deliveries não podem ser criados automaticamente).
 
-Para criar automaticamente um delivery baseado no conteúdo selecionado, clique no ícone **[!UICONTROL Delivery]** e escolha o template.
+Para criar automaticamente um baseado no conteúdo selecionado, clique no ícone **[!UICONTROL Delivery]** Delivery e escolha o template.
 
 ![](assets/s_ncs_content_folder_create_the_delivery.png)
 
