@@ -11,11 +11,11 @@ audience: web
 content-type: reference
 topic-tags: web-forms
 discoiquuid: c89926b6-488e-4c72-8f67-b6af388bade3
-index: y
-internal: n
-snippet: y
-translation-type: ht
-source-git-commit: 1c86322fa95aee024f6c691b61a10c21a9a22eb7
+translation-type: tm+mt
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '863'
+ht-degree: 95%
 
 ---
 
@@ -24,17 +24,17 @@ source-git-commit: 1c86322fa95aee024f6c691b61a10c21a9a22eb7
 
 ## Campos de armazenamento de resposta {#response-storage-fields}
 
-As respostas a formulários podem ser salvas em um campo do banco de dados ou temporariamente em uma variável local. O modo de armazenamento para respostas é escolhido durante a criação do campo. Ele pode ser editado por meio do link **[!UICONTROL Edit storage...]**.
+As respostas a formulários podem ser salvas em um campo do banco de dados ou temporariamente em uma variável local. O modo de armazenamento para respostas é escolhido durante a criação do campo. It can be edited via the **[!UICONTROL Edit storage...]** link.
 
 Para cada campo de entrada em um formulário, as seguintes opções de armazenamento estão disponíveis:
 
 ![](assets/s_ncs_admin_survey_select_storage.png)
 
-* **[!UICONTROL Edição de um recipient]**
+* **[!UICONTROL Edit a recipient]**
 
    Você pode selecionar um campo do banco de dados: as respostas dos usuários serão armazenadas nesse campo. Para cada usuário, somente o último valor inserido é salvo: ele é adicionado ao perfil. Consulte [Armazenamento de dados no banco de dados](#storing-data-in-the-database).
 
-* **[!UICONTROL Variável]**
+* **[!UICONTROL Variable]**
 
    Se não quiser armazenar informações no banco de dados, você poderá usar uma variável. As variáveis locais podem ser declaradas como upstream. Consulte [Armazenamento de dados em uma variável local](#storing-data-in-a-local-variable).
 
@@ -56,11 +56,11 @@ Isso significa que você pode utilizar o valor de um campo não salvo para autor
 
 ![](assets/s_ncs_admin_survey_no_storage_variable.png)
 
-Ele é armazenado em uma variável que deve ser selecionada quando a caixa suspensa é criada ou por meio do link **[!UICONTROL Edit storage...]**.
+It is stored in a variable which must be selected when the drop-down box is created, or via the **[!UICONTROL Edit storage...]** link.
 
 ![](assets/s_ncs_admin_survey_no_storage_variable2.png)
 
-É possível exibir variáveis existentes e criar novas por meio do link **[!UICONTROL Edit variables...]**. Clique no botão **[!UICONTROL Add]** para criar uma nova variável.
+You can display existing variables and create new ones via the **[!UICONTROL Edit variables...]** link. Clique no botão **[!UICONTROL Add]** para criar uma nova variável.
 
 ![](assets/s_ncs_admin_survey_add_a_variable.png)
 
@@ -144,7 +144,7 @@ Você pode selecionar uma pasta de pesquisa para a reconciliação e a pasta de 
 
 >[!NOTE]
 >
->As operações possíveis são: **[!UICONTROL Simple reconciliation]**, **[!UICONTROL Update or insertion]**, **[!UICONTROL Insertion]**, **[!UICONTROL Update]** e **[!UICONTROL Deletion]**.\
+>As possíveis operações são: **[!UICONTROL Simple reconciliation]**, **[!UICONTROL Update or insertion]**, **[!UICONTROL Insertion]**, **[!UICONTROL Update]**, **[!UICONTROL Deletion]**.\
 >A pasta padrão de um operador é a primeira pasta a que o operador tem permissão de gravação.\
 >Consulte [esta seção](../../platform/using/access-management.md).
 
