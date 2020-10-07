@@ -11,11 +11,8 @@ audience: configuration
 content-type: reference
 topic-tags: schema-reference
 discoiquuid: bc06c00d-f421-452e-bde0-b4ecc12c72c8
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 656b867686dd90f3e921c2adb5e5676fec184803
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
 workflow-type: tm+mt
 source-wordcount: '1976'
 ht-degree: 1%
@@ -111,7 +108,7 @@ Para preencher um campo em XML, é necessário adicionar o atributo **xml** com 
    <element name="description" xml="true" type="html" label="Description"/>
    ```
 
-   O tipo &quot;html&quot; permite que você armazene o conteúdo HTML em uma tag CDATA e exiba uma verificação de edição HTML especial na interface do cliente do Adobe Campaign.
+   O tipo &quot;html&quot; permite que você armazene o conteúdo HTML em uma tag CDATA e exiba uma verificação de edição HTML especial na interface do cliente Adobe Campaign.
 
 O uso de campos XML permite que você adicione campos sem precisar modificar a estrutura física do banco de dados. Outra vantagem é que você usa menos recursos (tamanho alocado para campos SQL, limite do número de campos por tabela etc.).
 
@@ -210,7 +207,7 @@ As teclas obedecem às seguintes regras:
 
 >[!NOTE]
 >
->As teclas são criadas durante o mapeamento de tabela (padrão ou FDA), o Adobe Campaign encontra índices exclusivos.
+>As chaves são criadas durante o mapeamento de tabela (padrão ou FDA), a Adobe Campaign encontra índices exclusivos.
 
 **Exemplo**:
 
@@ -299,7 +296,7 @@ As teclas obedecem às seguintes regras:
 
 ### Tecla incremental automaticamente {#auto-incremental-key}
 
-A chave primária da maioria das tabelas Adobe Campaign é um número inteiro de 32 bits gerado automaticamente pelo mecanismo de banco de dados. O cálculo do valor chave depende de uma sequência (por padrão, a função SQL **XtkNewId** ) que gera um número exclusivo no banco de dados inteiro. O conteúdo da chave é automaticamente inserido na inserção do registro.
+A chave primária da maioria das tabelas do Adobe Campaign é um número inteiro de 32 bits gerado automaticamente pelo mecanismo de banco de dados. O cálculo do valor chave depende de uma sequência (por padrão, a função SQL **XtkNewId** ) que gera um número exclusivo no banco de dados inteiro. O conteúdo da chave é automaticamente inserido na inserção do registro.
 
 A vantagem de uma chave incremental é que ela fornece uma chave técnica não modificável para as junções entre tabelas. Além disso, essa chave não ocupa muita memória porque usa um número inteiro de duplo byte.
 
@@ -412,13 +409,13 @@ Os links obedecem às seguintes regras:
 * Um link faz referência a um ou mais campos da tabela de origem para a tabela de destino. Os campos que compõem a junção ( `<join>` elemento) não precisam ser preenchidos porque são automaticamente deduzidos por padrão usando a chave interna do schema do público alvo.
 * Um índice é adicionado automaticamente à chave estrangeira do link no schema estendido.
 * Um link consiste em dois links parciais, nos quais o primeiro é declarado a partir do schema de origem e o segundo é criado automaticamente no schema estendido do schema do público alvo.
-* Uma junção pode ser uma junção externa se o atributo **externalJoin** for adicionado, com o valor &quot;true&quot; (suportado no PostgreSQL).
+* Uma junção pode ser uma junção externa se o atributo **externalJoin** for adicionado, com o valor &quot;true&quot; (compatível com PostgreSQL).
 
 >[!NOTE]
 >
 >Como padrão, os links são os elementos declarados no final do schema.
 
-### Exemplo 1 {#example-1}
+### Example 1 {#example-1}
 
 1-N em relação à tabela de schemas &quot;cus:empresa&quot;:
 
@@ -452,7 +449,7 @@ A definição do link é complementada pelos campos que compõem a junção, ist
 
 A chave estrangeira é adicionada automaticamente em um elemento que usa as mesmas características do campo associado na tabela de destino, com a seguinte convenção de nomenclatura: nome do schema do público alvo seguido do nome do campo associado (&quot;empresa-id&quot; no nosso exemplo).
 
-schema estendido do público alvo (&quot;cus:empresa&quot;):
+Schema estendido do público alvo (&quot;cus:empresa&quot;):
 
 ```
 <schema mappingType="sql" name="company" namespace="cus" xtkschema="xtk:schema">  
@@ -481,7 +478,7 @@ Um link reverso para a tabela &quot;cus:recipient&quot; foi adicionado com os se
 * **unbound**: o link é declarado como um elemento de coleção para uma cardinalidade 1-N (por padrão)
 * **integridade**: &quot;define&quot; por padrão (pode ser forçado com o atributo &quot;revIntegrity&quot; na definição do link no schema de origem).
 
-### Exemplo 2 {#example-2}
+### Example 2 {#example-2}
 
 Neste exemplo, declararemos um link para a tabela de schemas &quot;nms:address&quot;. A junção é uma junção externa e é preenchida explicitamente com o endereço de email do recipient e o campo &quot;@address&quot; da tabela vinculada (&quot;nms:address&quot;).
 
