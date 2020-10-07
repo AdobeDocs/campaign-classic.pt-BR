@@ -11,11 +11,11 @@ audience: production
 content-type: reference
 topic-tags: troubleshooting
 discoiquuid: 6358c8fd-2b75-4462-acd1-887ee44d3110
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 34cd6e6cf5652c9e2163848c2b1ef32f53ee6ca4
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '483'
+ht-degree: 8%
 
 ---
 
@@ -31,11 +31,11 @@ A maioria dos problemas de desempenho está vinculada à manutenção do banco d
 
 ## Configuração {#configuration}
 
-Verifique se a configuração inicial da plataforma do Adobe Campaign ainda é válida e, se necessário, reavalie as necessidades do cliente em termos de entrega ou tamanho do banco de dados. Também recomendamos executar uma verificação completa de hardware (CPU, RAM, sistema de E/S).
+Verifique se a configuração inicial da plataforma Adobe Campaign ainda é válida e, se necessário, reavalie as necessidades do cliente em termos de entrega ou tamanho do banco de dados. Também recomendamos executar uma verificação completa de hardware (CPU, RAM, sistema de E/S).
 
 >[!NOTE]
 >
->Consulte o Guia [de dimensionamento do](https://helpx.adobe.com/campaign/kb/hardware-sizing-guide.html) Adobe Campaign Harware para obter mais informações.
+>Consulte o Guia [de dimensionamento do](https://helpx.adobe.com/br/campaign/kb/hardware-sizing-guide.html) Adobe Campaign Harware para obter mais informações.
 
 ## Configuração da plataforma {#platform-configuration}
 
@@ -45,7 +45,7 @@ A configuração inadequada pode afetar o desempenho da plataforma. Recomendamos
 
 **Tarefa de limpeza do banco de dados**
 
-Certifique-se de que a tarefa de limpeza da base de dados está operacional. Para fazer isso, visualize os arquivos de registro para ver se eles contêm erros. Para obter mais informações, consulte [esta seção](../../production/using/database-cleanup-workflow.md).
+Verifique se a tarefa de limpeza do banco de dados está operacional. Para fazer isso, visualização os arquivos de registro para ver se eles contêm erros. Para obter mais informações, consulte [esta seção](../../production/using/database-cleanup-workflow.md).
 
 **Planos de manutenção**
 
@@ -53,38 +53,38 @@ Verifique se a manutenção do banco de dados está programada e executada corre
 
 * o seu programa de manutenção,
 * planos de manutenção anteriormente executados,
-* exibir os registros de scripts.
+* visualização nos registros de scripts.
 
 Para obter mais informações, consulte [esta seção](../../production/using/recommendations.md).
 
 >[!CAUTION]
 >
->Se você estiver usando uma configuração de mid-sourcing, é essencial que os bancos de dados sejam mantidos regularmente. Ao analisar uma entrega na plataforma de marketing, a instância de marketing envia informações para a instância de mid-sourcing. Se o processo estiver lento, a instância de marketing será afetada.
+>Se você estiver usando uma configuração de mid-sourcing, é essencial que os bancos de dados sejam mantidos regularmente. Ao analisar um delivery na plataforma de marketing, a instância de marketing envia informações para a instância do mid-sourcing. Se o processo for retardado, a instância de marketing será afetada.
 
 **Gerenciamento de tabelas de trabalho**
 
-Verifique o número e o tamanho das tabelas de trabalho. Quando excedem um determinado tamanho, o desempenho do banco de dados é afetado. Essas tabelas são criadas por fluxos de trabalho e entregas. Eles permanecem no banco de dados enquanto os fluxos de trabalho e as entregas estão ativos. Para limitar o tamanho das tabelas de trabalho, é possível realizar as seguintes operações:
+Verifique o número e o tamanho das tabelas de trabalho. Quando excedem um determinado tamanho, o desempenho do banco de dados é afetado. Essas tabelas são criadas por workflows e delivery. Eles permanecem no banco de dados enquanto workflows e delivery estão ativos. Para limitar o tamanho das tabelas de trabalho, é possível realizar as seguintes operações:
 
-* interromper ou excluir entregas com os seguintes status: **[!UICONTROL Failed]** , **[!UICONTROL In progress]** , **[!UICONTROL Ready for delivery]** , ou **[!UICONTROL Paused]** .
-* interromper ou excluir fluxos de trabalho que estão pausados devido a um erro,
-* interromper todos os fluxos de trabalho usados para testes que não contêm uma **[!UICONTROL End]** atividade e cujo status, portanto, permanece **[!UICONTROL Paused]** .
+* parar ou excluir delivery com os seguintes status: **[!UICONTROL Failed]** , **[!UICONTROL In progress]** , **[!UICONTROL Ready for delivery]** , ou **[!UICONTROL Paused]** .
+* parar ou eliminar workflows que estejam em pausa devido a um erro,
+* Parar todos os workflows utilizados para ensaios que não contenham uma **[!UICONTROL End]** atividade e cujo estado se mantenha **[!UICONTROL Paused]** .
 
 >[!CAUTION]
 >
->Se a operação levar muito tempo e liberar muito espaço, isso significa que é necessária uma manutenção profunda (reconstrução de índice etc.). Para obter mais informações, consulte [esta seção](../../production/using/recommendations.md).
+>Se a operação levar muito tempo e liberar muito espaço, isso significa que é necessária uma manutenção profunda (reconstrução de índice, etc.). Para obter mais informações, consulte [esta seção](../../production/using/recommendations.md).
 
-**Monitoramento do processo do Adobe Campaign**
+**Monitoramento de processos da Adobe Campaign**
 
-Dependendo das configurações de instalação do Adobe Campaign, duas ferramentas podem ser usadas para o monitoramento da plataforma:
+Dependendo das configurações de instalação do Adobe Campaign, duas ferramentas podem ser usadas para monitoramento da plataforma:
 
 * a página de produção da instância. For more on this, refer to [Manual monitoring](../../production/using/monitoring-processes.md#manual-monitoring).
-* o script netreport. Para obter mais informações, consulte Monitoramento [automático por meio de scripts](../../production/using/monitoring-processes.md#automatic-monitoring-via-adobe-campaign-scripts)do Adobe Campaign.
+* o script netreport. Para obter mais informações, consulte Monitoramento [automático por meio de scripts](../../production/using/monitoring-processes.md#automatic-monitoring-via-adobe-campaign-scripts)Adobe Campaign.
 
-## Especificações {#specifics}
+## Specifics {#specifics}
 
-Pode ser necessário executar um diagnóstico em tempo real para identificar a causa do problema. Comece verificando o processo e os arquivos de log da plataforma e monitore a atividade do banco de dados ao recriar o problema. Preste especial atenção ao seguinte:
+Pode ser necessário executar um diagnóstico em tempo real para identificar a causa do problema. Start verificando o processo e os arquivos de log da plataforma, em seguida, monitore a atividade do banco de dados ao recriar o problema. Preste especial atenção ao seguinte:
 
 * o plano de execução da manutenção,
-* consultas SQL em execução,
-* se os processos externos estão ou não em execução ao mesmo tempo (limpeza, importações, cálculo agregado, etc.).
+* QUERY SQL sendo executados,
+* se os processos externos estão ou não em execução ao mesmo tempo (limpeza, importações, cálculo de agregação, etc.).
 
