@@ -1,7 +1,7 @@
 ---
-title: Configuração do servidor de campanha
-seo-title: Configuração do servidor de campanha
-description: Configuração do servidor de campanha
+title: Configuração do servidor do Campaign
+seo-title: Configuração do servidor do Campaign
+description: Configuração do servidor do Campaign
 seo-description: null
 page-status-flag: never-activated
 uuid: a1fadad2-e888-4dd8-bc1f-04df16ba7d46
@@ -11,24 +11,24 @@ audience: installation
 content-type: reference
 topic-tags: initial-configuration
 discoiquuid: f296676e-3bf1-47da-8239-f5ae54e52fc0
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 4869eb41f942a89c48bc213913c44b70ae777bfc
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '555'
+ht-degree: 3%
 
 ---
 
 
-# Configuração do servidor de campanha{#campaign-server-configuration}
+# Configuração do servidor do Campaign{#campaign-server-configuration}
 
-As seções a seguir detalham as configurações obrigatórias do servidor, o que garantirá o funcionamento eficiente do Adobe Campaign para a maioria das configurações.
+As seções a seguir detalham as configurações obrigatórias do servidor, o que garantirá o funcionamento eficiente da Adobe Campaign para a maioria das configurações.
 
-Configurações adicionais são oferecidas em [Configuração do servidor](../../installation/using/configuring-campaign-server.md)Campaign.
+Configurações adicionais são oferecidas em [Configuração do servidor](../../installation/using/configuring-campaign-server.md)de Campanha.
 
 >[!NOTE]
 >
->As configurações do lado do servidor só podem ser executadas pela Adobe para implantações hospedadas pela Adobe. Para saber mais sobre as diferentes implantações, consulte a seção Modelos [de](../../installation/using/hosting-models.md) hospedagem ou este [artigo](https://helpx.adobe.com/campaign/kb/acc-on-prem-vs-hosted.html).
+>As configurações do lado do servidor só podem ser executadas por Adobe para implantações hospedadas pelo Adobe. Para saber mais sobre as diferentes implantações, consulte a seção Modelos [de](../../installation/using/hosting-models.md) hospedagem ou este [artigo](https://helpx.adobe.com/br/campaign/kb/acc-on-prem-vs-hosted.html).
 
 ## Identificador interno {#internal-identifier}
 
@@ -59,9 +59,9 @@ Confirmation: XXXX
 Os arquivos de configuração são armazenados na pasta **conf** da pasta de instalação do Adobe Campaign. A configuração é distribuída por dois arquivos:
 
 * **`config-<instance>.xml`** (onde **instância** é o nome da instância): configuração específica da instância. Se você compartilhar seu servidor entre várias instâncias, insira os parâmetros específicos de cada instância em seu arquivo relevante.
-* **serverConf.xml**: configuração geral para todas as instâncias. Este arquivo combina os parâmetros técnicos do servidor do Adobe Campaign: eles são compartilhados por todas as instâncias. A descrição de alguns desses parâmetros é detalhada abaixo. Consulte o arquivo para exibir todos os parâmetros disponíveis. Os diferentes nós e parâmetros e listados nesta [seção](../../installation/using/the-server-configuration-file.md).
+* **serverConf.xml**: configuração geral para todas as instâncias. Este arquivo combina os parâmetros técnicos do servidor Adobe Campaign: eles são compartilhados por todas as instâncias. A descrição de alguns desses parâmetros é detalhada abaixo. Consulte o próprio arquivo para visualização de todos os parâmetros disponíveis. Os diferentes nós e parâmetros e listados nesta [seção](../../installation/using/the-server-configuration-file.md).
 
-Você pode configurar o diretório de armazenamento (diretório **var** ) dos dados do Adobe Campaign (registros, downloads, redirecionamentos etc.). Para fazer isso, use a variável do sistema **XTK_VAR_DIR** :
+Você pode configurar o diretório do armazenamento (diretório **var** ) dos dados do Adobe Campaign (registros, downloads, redirecionamentos etc.). Para fazer isso, use a variável do sistema **XTK_VAR_DIR** :
 
 * No Windows, indique o seguinte valor na variável do sistema **XTK_VAR_DIR**
 
@@ -81,11 +81,11 @@ Para aplicar as alterações a esses arquivos, se o serviço Adobe Campaign for 
 
 Há dois tipos de processos: várias instâncias e instância única.
 
-* **várias instâncias**: um único processo é iniciado para todas as instâncias. É o caso dos processos **web**, **syslogd** e **trackinglogd** .
+* **várias instâncias**: um único processo é iniciado para todas as instâncias. Esse é o caso dos processos **web**, **syslogd** e **trackinglogd** .
 
    A ativação pode ser configurada a partir do arquivo **config-default.xml** .
 
-   Declaração de um servidor do Adobe Campaign para acessar consoles de cliente e para redirecionamento (rastreamento):
+   Declaração de um servidor Adobe Campaign para acessar consoles de cliente e para redirecionamento (rastreamento):
 
    ```
    vi nl6/conf/config-default.xml
@@ -104,7 +104,7 @@ Há dois tipos de processos: várias instâncias e instância única.
    config-<instance>.xml
    ```
 
-   Declarar um servidor para entrega, executar instâncias de fluxo de trabalho e recuperar e-mails de rejeição:
+   Declarar um servidor para o delivery, executar instâncias de fluxo de trabalho e recuperar e-mails de rejeição:
 
    ```
    <mta autoStart="true" statServerAddress="localhost"/>
@@ -113,11 +113,11 @@ Há dois tipos de processos: várias instâncias e instância única.
    <stat autoStart="true"/>
    ```
 
-## Configurações de entrega {#delivery-settings}
+## Configurações do delivery {#delivery-settings}
 
-Os parâmetros de entrega devem ser configurados na pasta **serverConf.xml** .
+Os parâmetros do delivery devem ser configurados na pasta **serverConf.xml** .
 
-* **Configuração** DNS: especifique o domínio de entrega e os endereços IP (ou host) dos servidores DNS usados para responder a consultas DNS do tipo MX feitas pelo módulo MTA a partir de **`<dnsconfig>`** agora.
+* **Configuração** DNS: especifique o domínio do delivery e os endereços IP (ou host) dos servidores DNS usados para responder a query DNS do tipo MX feitos pelo módulo MTA a partir de **`<dnsconfig>`** agora.
 
    >[!NOTE]
    >
@@ -127,6 +127,6 @@ Os parâmetros de entrega devem ser configurados na pasta **serverConf.xml** .
    <dnsConfig localDomain="domain.com" nameServers="192.0.0.1,192.0.0.2"/>
    ```
 
-Os outros parâmetros de entrega disponíveis neste arquivo são apresentados em [Personalizando parâmetros](../../installation/using/configuring-campaign-server.md#personalizing-delivery-parameters)de entrega.
+Os outros parâmetros de delivery disponíveis neste arquivo são apresentados em [Personalizando parâmetros](../../installation/using/configuring-campaign-server.md#personalizing-delivery-parameters)de delivery.
 
 Consulte também [Enviabilidade](../../installation/using/email-deliverability.md)por email.
