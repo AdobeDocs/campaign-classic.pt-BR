@@ -11,11 +11,11 @@ audience: workflow
 content-type: reference
 topic-tags: use-cases
 discoiquuid: 2fe907da-ef37-46e2-a8fb-6ad4e18be486
-index: y
-internal: n
-snippet: y
-translation-type: ht
-source-git-commit: c10a0a11c6e9952aa47da1f7a15188c79c62508d
+translation-type: tm+mt
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '666'
+ht-degree: 84%
 
 ---
 
@@ -30,7 +30,7 @@ As principais etapas de implementação para este caso de uso são as seguintes:
 
 1. Criação de uma atividade **[!UICONTROL Query]** para segmentar seu público.
 1. Criação de uma atividade **[!UICONTROL Email delivery]** contendo um link para uma oferta.
-1. Usar uma atividade **[!UICONTROL Split]** para:
+1. Using a **[!UICONTROL Split]** activity to:
 
    * Enviar outro e-mail para os recipients que não abriram o primeiro e-mail.
    * Enviar um SMS para os recipients que abriram o e-mail, mas não clicaram no link da oferta.
@@ -61,8 +61,8 @@ Para definir seu target, crie uma query para identificar os recipients.
    Para obter mais informações sobre como integrar uma oferta ao corpo de uma mensagem, consulte [esta seção](../../interaction/using/integrating-an-offer-via-the-wizard.md#delivering-with-a-call-to-the-offer-engine).
 
 1. Salve as alterações.
-1. Clique com o botão direito do mouse na atividade **[!UICONTROL Email delivery]** para abri-la.
-1. Selecione a opção **[!UICONTROL Generate an outbound transition]** para recuperar a população e os logs de rastreamento.
+1. Right-click the **[!UICONTROL Email delivery]** activity to open it.
+1. Select the **[!UICONTROL Generate an outbound transition]** option to recover the population and the tracking logs.
 
    ![](assets/wkf_cross-channel_2.png)
 
@@ -81,24 +81,24 @@ Depois que seu target for identificado e seu primeiro fornecimento for criado, s
 
    ![](assets/wkf_cross-channel_6.png)
 
-1. Para o primeiro subconjunto, selecione a opção **[!UICONTROL Add a filtering condition on the inbound population]** e clique em **[!UICONTROL Edit]**.
+1. For the first subset, select the **[!UICONTROL Add a filtering condition on the inbound population]** option and click **[!UICONTROL Edit]**.
 
    ![](assets/wkf_cross-channel_8.png)
 
-1. Selecione **[!UICONTROL Recipients of a delivery]** como o filtro de restrição e clique em **[!UICONTROL Next]**.
+1. Select **[!UICONTROL Recipients of a delivery]** as the restriction filter and click **[!UICONTROL Next]**.
 
    ![](assets/wkf_cross-channel_9.png)
 
-1. Nas configurações de filtro, selecione **[!UICONTROL Recipients who have not opened or clicked (email)]** na lista suspensa **[!UICONTROL Behavior]** e selecione o email, incluindo a oferta que você deseja enviar da lista de delivery. Clique em **[!UICONTROL Finish]**.
+1. In the filter settings, select **[!UICONTROL Recipients who have not opened or clicked (email)]** from the **[!UICONTROL Behavior]** drop-down list and select the email including the offer you want to send from the delivery list. Clique em **[!UICONTROL Finish]**.
 
    ![](assets/wkf_cross-channel_10.png)
 
-1. Continue de forma semelhante no segundo subconjunto e selecione **[!UICONTROL Recipients who have not clicked (email)]** da lista suspensa **[!UICONTROL Behavior]**.
+1. Proceed similarly for the second subset and select **[!UICONTROL Recipients who have not clicked (email)]** from the **[!UICONTROL Behavior]** drop-down-list.
 
    ![](assets/wkf_cross-channel_11.png)
 
-1. Para o terceiro subconjunto, depois de selecionar **[!UICONTROL Add a filtering condition on the inbound population]** e clicar em **[!UICONTROL Edit]**, selecione a opção **[!UICONTROL Use a specific filtering dimension]**.
-1. Selecione **[!UICONTROL Recipient tracking log]** da lista suspensa **[!UICONTROL Filtering dimension]**, destaque **[!UICONTROL Filtering conditions]** a partir de **[!UICONTROL List of restriction filters]** e clique em **[!UICONTROL Next]**.
+1. Para o terceiro subconjunto, depois de selecionar o **[!UICONTROL Add a filtering condition on the inbound population]** e clicar em **[!UICONTROL Edit]**, selecione a **[!UICONTROL Use a specific filtering dimension]** opção.
+1. Selecione **[!UICONTROL Recipient tracking log]** na lista **[!UICONTROL Filtering dimension]** suspensa, realce **[!UICONTROL Filtering conditions]** na **[!UICONTROL List of restriction filters]** e clique em **[!UICONTROL Next]**.
 
    ![](assets/wkf_cross-channel_12.png)
 
@@ -117,7 +117,7 @@ Depois que seu target for identificado e seu primeiro fornecimento for criado, s
    * Adicione uma atividade **[!UICONTROL List update]** para adicionar os recipients correspondentes ao banco de dados.
 
 1. Clique duas vezes nas atividades de delivery no seu workflow para editá-las. Para obter mais informações sobre como criar um e-mail e um SMS, consulte o [canal de e-mail](../../delivery/using/about-email-channel.md) e o [canal de SMS](../../delivery/using/sms-channel.md).
-1. Clique duas vezes na atividade **[!UICONTROL List update]** e selecione a opção **[!UICONTROL Generate an outbound transition]**.
+1. Double-click the **[!UICONTROL List update]** activity and select the **[!UICONTROL Generate an outbound transition]** option.
 
    É possível exportar os recipients resultantes do Adobe Campaign para o Adobe Experience Cloud. Por exemplo, é possível usar o público no Adobe Target adicionando uma atividade **[!UICONTROL Update shared audience]** ao workflow. Para obter mais informações, consulte [Exportação de um público](../../integrations/using/importing-and-exporting-audiences.md#exporting-an-audience).
 
