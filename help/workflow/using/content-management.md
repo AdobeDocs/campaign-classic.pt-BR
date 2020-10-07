@@ -11,11 +11,11 @@ audience: workflow
 content-type: reference
 topic-tags: action-activities
 discoiquuid: 13b72aa1-de40-4548-835b-97e765e04e95
-index: y
-internal: n
-snippet: y
-translation-type: ht
-source-git-commit: c10a0a11c6e9952aa47da1f7a15188c79c62508d
+translation-type: tm+mt
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '419'
+ht-degree: 97%
 
 ---
 
@@ -44,13 +44,13 @@ As propriedades da atividade são divididas em três etapas:
 
       Essa opção permite usar o conteúdo especificado na transição, ou seja, o evento que ativa o gerenciamento de conteúdo deve conter uma variável **[!UICONTROL contentId]**. Essa variável pode ter sido definida por uma gestão de conteúdo anterior ou por qualquer script.
 
-   * **[!UICONTROL Explícito]**
+   * **[!UICONTROL Explicit]**
 
       Essa opção permite selecionar um conteúdo já criado, por meio do campo **[!UICONTROL Content]**. Este campo fica visível somente quando a opção **[!UICONTROL Explicit]** é selecionada.
 
       ![](assets/content_mgmt_explicit.png)
 
-   * **[!UICONTROL Calculado por um script]**
+   * **[!UICONTROL Calculated by a script]**
 
       O identificador de conteúdo é calculado por um script. O campo **[!UICONTROL Script]** permite definir um template JavaScript avaliando o identificador (chave primária) do conteúdo. Este campo fica visível somente quando a opção **[!UICONTROL Calculated by a script]** é selecionada.
 
@@ -64,7 +64,7 @@ As propriedades da atividade são divididas em três etapas:
 
 1. **Atualização de conteúdo**
 
-   * **[!UICONTROL Assunto]**
+   * **[!UICONTROL Subject]**
 
       Este campo permite modificar o assunto do conteúdo.
 
@@ -76,13 +76,13 @@ As propriedades da atividade são divididas em três etapas:
 
 1. **Ação a ser executada**
 
-   * **[!UICONTROL Salvar]**
+   * **[!UICONTROL Save]**
 
       Essa opção salva o conteúdo criado ou modificado.
 
       A transição de saída é ativada apenas uma vez, com o conteúdo salvo na variável **[!UICONTROL contentId]** como um parâmetro.
 
-   * **[!UICONTROL Gerar]**
+   * **[!UICONTROL Generate]**
 
       Essa opção salva o conteúdo e gera os arquivos de output para cada template de transformação com uma publicação de tipo &#39;Arquivo&#39;.
 
@@ -94,7 +94,7 @@ As propriedades da atividade são divididas em três etapas:
 
 * contentId
 
-Identificador do conteúdo a ser usado se a opção **[!UICONTROL Specified in the transition]** estiver habilitada.
+Identifier of the content to be used if the **[!UICONTROL Specified in the transition]** option is enabled.
 
 ## Parâmetros de output {#output-parameters}
 
