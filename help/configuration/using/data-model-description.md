@@ -1,5 +1,5 @@
 ---
-title: Descrição do modelo de dados Adobe Campaign Classic
+title: Descrição do modelo de dados da Adobe Campaign Classic
 description: Este documento descreve o modelo de dados Adobe Campaign Classic.
 page-status-flag: never-activated
 uuid: faddde15-59a1-4d2c-8303-5b3e470a0c51
@@ -9,11 +9,8 @@ audience: configuration
 content-type: reference
 topic-tags: schema-reference
 discoiquuid: 5957b39e-c2c6-40a2-b81a-656e9ff7989c
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: c51a51f175e9f3fe5a55f2b5f57872057f70909d
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
 workflow-type: tm+mt
 source-wordcount: '2375'
 ht-degree: 1%
@@ -21,7 +18,7 @@ ht-degree: 1%
 ---
 
 
-# Descrição do modelo de dados de Campanha{#data-model-description}
+# Campaign data model description{#data-model-description}
 
 O Adobe Campaign vem com um modelo de dados predefinido. Esta seção fornece alguns detalhes sobre as tabelas incorporadas do modelo de dados Adobe Campaign e suas interações.
 
@@ -35,15 +32,15 @@ Para acessar a descrição de cada tabela, vá até **[!UICONTROL Admin > Config
 
 ## Descrição dos quadros principais {#description-main-tables}
 
-O Adobe Campaign depende de um banco de dados relacional que contém tabelas vinculadas.
+A Adobe Campaign depende de um banco de dados relacional que contém tabelas vinculadas.
 
-O diagrama a seguir mostra as junções entre as principais tabelas de negócios do modelo de dados do Adobe Campaign com os campos principais de cada um.
+O diagrama a seguir mostra as junções entre as principais tabelas de negócios do modelo de dados da Adobe Campaign com os campos principais de cada um.
 
 <!--![](assets/data-model_diagram.png)-->
 
 ![](assets/data-model_simplified-diagram.png)
 
-O modelo de dados de Adobe Campaign predefinido inclui as principais tabelas listadas abaixo.
+O modelo de dados Adobe Campaign predefinido inclui as principais tabelas listadas abaixo.
 
 ### NmsRecipient {#NmsRecipient}
 
@@ -99,7 +96,7 @@ Se as subscrições forem gerenciadas usando formulários da Web ou a interface 
 
 Esta tabela corresponde ao schema **nms:delivery** .
 
-Cada registro nesta tabela representa uma ação **de** delivery ou um **template do delivery**. Ele contém todos os parâmetros necessários para executar delivery (o público alvo, o conteúdo etc.). Os registros de Delivery (difusão) (NmsBroadLog) e os URLs de rastreamento associados (NmsTrackingUrl) são criados durante a fase de análise (consulte abaixo para obter mais detalhes sobre essas tabelas).
+Cada registro nesta tabela representa uma ação **de** delivery ou um **template do delivery**. Ele contém todos os parâmetros necessários para executar delivery (o público alvo, o conteúdo etc.). Os registros de delivery (difusão) (NmsBroadLog) e os URLs de rastreamento associados (NmsTrackingUrl) são criados durante a fase de análise (consulte abaixo para obter mais detalhes sobre essas tabelas).
 
 Há um índice exclusivo no campo que representa o nome interno do delivery ou cenário sInternalName. O delivery está vinculado a uma pasta de execução (a chave estrangeira é iFolderProcessId. For more on this, see [XtkFolder](#XtkFolder)).
 
@@ -121,7 +118,7 @@ Esse conjunto de tabelas está vinculado ao módulo **Delivery** , que permite m
 
 ## Gestão de campanha {#campaign-management}
 
-Esse conjunto de tabelas está vinculado ao módulo **Marketing campanha** , que permite definir, otimizar, executar e analisar campanhas de comunicação e marketing. Para obter mais informações, consulte [Sobre campanhas](../../campaign/using/designing-marketing-campaigns.md)de marketing.
+Esse conjunto de tabelas está vinculado ao módulo **Marketing campanha** , que permite definir, otimizar, executar e analisar campanhas de comunicação e marketing. For more on this, see [About marketing campaigns](../../campaign/using/designing-marketing-campaigns.md).
 
 ![](assets/data-model_campaign.png)
 
@@ -137,7 +134,7 @@ Esse conjunto de tabelas está vinculado ao módulo **Marketing campanha** , que
 
 ## Consistência da comunicação {#communication-consistency}
 
-Esse conjunto de tabelas está vinculado ao módulo **Otimização de campanha** , que permite controlar, filtrar e monitorar o envio de delivery. Para obter mais informações, consulte [Sobre tipologias de campanha](../../campaign/using/about-campaign-typologies.md).
+Esse conjunto de tabelas está vinculado ao módulo **Otimização de campanha** , que permite controlar, filtrar e monitorar o envio de delivery. For more on this, see [About campaign typologies](../../campaign/using/about-campaign-typologies.md).
 
 ![](assets/data-model_typology.png)
 
@@ -149,7 +146,7 @@ Esse conjunto de tabelas está vinculado ao módulo **Otimização de campanha**
 
 ## Gerenciamento de respostas {#response-management}
 
-Esse conjunto de tabelas está vinculado ao módulo **Gestor de resposta** , que permite medir o sucesso e a lucratividade das campanhas de marketing ou apresentações da oferta para todos os canais de comunicação. Para obter mais informações, consulte [Sobre o gerenciador](../../campaign/using/about-response-manager.md)de respostas.
+Esse conjunto de tabelas está vinculado ao módulo **Gestor de resposta** , que permite medir o sucesso e a lucratividade das campanhas de marketing ou apresentações da oferta para todos os canais de comunicação. For more on this, see [About response manager](../../campaign/using/about-response-manager.md).
 
 ![](assets/data-model_response.png)
 
@@ -169,11 +166,11 @@ O contexto de execução preenche as tabelas e os campos a serem considerados pa
 * A data da transação. Este campo não é obrigatório, mas recomendamos que você o use para restringir o perímetro de cálculo.
 * A quantia da transação: é um campo opcional para calcular indicadores de receita automaticamente.
 
-**Perímetro de Hipótese (informações armazenadas em XML)**
+**Perímetro de hipótese (informações armazenadas em XML)**
 
 O perímetro da hipótese consiste na filtragem da hipótese com base na tabela do schema de consulta.
 
-**Script de sobrecarga de Hipótese (informações armazenadas em XML)**
+**Script de sobrecarga de hipótese (informações armazenadas em XML)**
 
 O script de sobrecarga de hipótese é um código JavaScript que permite sobrecarregar o conteúdo da hipótese durante a execução.
 
@@ -183,7 +180,7 @@ Os seguintes indicadores são atualizados automaticamente durante a execução d
 
 * Número de reações: **iTransaction**. Número de linhas na tabela de registros de reação.
 * Número de contatos: **iContactReact**. Número distinto de contatos direcionados na hipótese.
-* Contagem de Grupos de controle: **Prova de reação**. Número distinto de contatos de grupo de controle direcionados na hipótese.
+* Contagem de grupos de controle: **Prova de reação**. Número distinto de contatos de grupo de controle direcionados na hipótese.
 * Taxa de resposta contatada: **dContactReacts**. Taxa de resposta dos contatos direcionados na hipótese.
 * Taxa de resposta do grupo de controle: **dProofReactsRate**. Taxa de resposta do grupo de controle da hipótese.
 * Receitas totais da população contactada: **dContactReactsTotalAmount**. A receita total dos contatos direcionados na hipótese.
@@ -209,7 +206,7 @@ Ele contém um registro representando a reação de um indivíduo a uma determin
 
 ## Simulação e delivery {#simulation-and-delivery}
 
-Esse conjunto de tabelas está vinculado ao módulo de **Simulação** , que permite testar a distribuição de ofertas pertencentes a uma categoria ou ambiente antes de enviar sua proposta para recipient. Para obter mais informações, consulte [Sobre a simulação](../../interaction/using/about-offers-simulation.md)do oferta.
+Esse conjunto de tabelas está vinculado ao módulo de **Simulação** , que permite testar a distribuição de ofertas pertencentes a uma categoria ou ambiente antes de enviar sua proposta para recipient. For more on this, see [About offers simulation](../../interaction/using/about-offers-simulation.md).
 
 ![](assets/data-model_simulation.png)
 
@@ -223,15 +220,15 @@ Esse conjunto de tabelas está vinculado ao módulo **Interação** , que permit
 
 * **NmsOffer**: Esta tabela corresponde ao schema **nms:oferta** . Contém a definição de cada oferta de marketing.
 * **NmsPropositionRcp**: Esta tabela corresponde ao schema **nms:propositionRcp** . Ele contém o log de canais cruzados de proposições de marketing enviadas a cada indivíduo. O registro é criado quando uma proposta é preparada ou efetivamente feita a um indivíduo.
-* **NmsOfferSpace**: This table matches the **nms:offerSpace** schema. It contains the definition of locations on which propositions are made.
-* **NmsOfferContext**: This table matches the **nms:offerContext** schema. Contém critérios adicionais sobre a aplicabilidade da proposta, bem como a definição da fórmula de cálculo do peso.
-* **NmsOfferView**: This table matches the **nms:offerView**. It contains the offer representations.
-* **NmsOfferCategory**: This table matches the **nms:offerCategory**. It contains the offer categories.
-* **NmsOfferEnv**: This table matches the **nms:offerEnv**. Ele contém os ambientes da oferta.
+* **NmsOfferSpace**: Esta tabela corresponde ao schema **nms:offerSpace** . Contém a definição dos locais em que são feitas as propostas.
+* **NmsOfferContext**: Esta tabela corresponde ao schema **nms:offerContext** . Contém critérios adicionais sobre a aplicabilidade da proposta, bem como a definição da fórmula de cálculo do peso.
+* **NmsOfferView**: Esta tabela corresponde ao **nms:offerView**. Ele contém as representações da oferta.
+* **NmsOfferCategory**: Esta tabela corresponde a **nms:offerCategory**. Ele contém as categorias ofertas.
+* **NmsOfferEnv**: Esta tabela corresponde ao **nms:offerEnv**. Ele contém os ambientes da oferta.
 
 ## Módulo do Centro de Mensagens {#message-center-module}
 
-O seguinte conjunto de tabelas está vinculado ao módulo Mensagens **** transacionais (Centro de Mensagens), que permite gerenciar comunicações individuais e únicas enviadas a um usuário e geradas a partir de eventos acionados de sistemas de informações. Para obter mais informações, consulte [Sobre mensagens](../../message-center/using/about-transactional-messaging.md)transacionais.
+O seguinte conjunto de tabelas está vinculado ao módulo Mensagens **** transacionais (Centro de Mensagens), que permite gerenciar comunicações individuais e únicas enviadas a um usuário e geradas a partir de eventos acionados de sistemas de informações. For more on this, see [About transactional messaging](../../message-center/using/about-transactional-messaging.md).
 
 ### NmsRtEvent {#NmsRtEvent}
 
@@ -268,7 +265,7 @@ Esse conjunto de tabelas está vinculado ao Canal **do aplicativo** móvel, que 
 
 ## Módulo de marketing social {#social-marketing-module}
 
-Esse conjunto de tabelas está vinculado ao módulo **Gerenciar redes** sociais, que permite interagir com clientes e prospectos via Facebook e Twitter. Para obter mais informações, consulte [Sobre marketing](../../social/using/about-social-marketing.md)social.
+Esse conjunto de tabelas está vinculado ao módulo **Gerenciar redes** sociais, que permite interagir com clientes e prospectos via Facebook e Twitter. For more on this, see [About social marketing](../../social/using/about-social-marketing.md).
 
 ![](assets/data-model_social.png)
 
