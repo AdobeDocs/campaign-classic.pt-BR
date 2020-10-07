@@ -11,14 +11,11 @@ audience: platform
 content-type: reference
 topic-tags: importing-and-exporting-data
 discoiquuid: a21576c7-e94c-4fe1-9e31-d89116e427f6
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: fecfff477b0750782c87c017a15e306acac4c61d
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
 workflow-type: tm+mt
 source-wordcount: '485'
-ht-degree: 77%
+ht-degree: 80%
 
 ---
 
@@ -31,7 +28,7 @@ O Adobe Campaign também oferece um módulo de importação que permite fornecer
 
 >[!NOTE]
 >
->Exports and imports are configured in dedicated templates executed through workflows via the **[!UICONTROL Import]** and **[!UICONTROL Export]** activities. Elas podem ser repetidas automaticamente de acordo com um agendamento, por exemplo, para automatizar a troca de dados entre vários sistemas de informações. If necessary, you can create an occasional import or export via the **[!UICONTROL Profiles and Targets > Jobs > Generic imports and exports]** node of the Adobe Campaign tree.
+>As exportações e importações são configuradas em modelos dedicados executados através de workflows por meio das atividades de **[!UICONTROL Import]** e **[!UICONTROL Export]**. Elas podem ser repetidas automaticamente de acordo com um agendamento, por exemplo, para automatizar a troca de dados entre vários sistemas de informações. If necessary, you can create an occasional import or export via the **[!UICONTROL Profiles and Targets > Jobs > Generic imports and exports]** node of the Adobe Campaign tree.
 
 É possível:
 
@@ -57,7 +54,7 @@ O procedimento para criação de um modelo de processo é apresentado no [Assist
 
 >[!NOTE]
 >
->O modelo nativo já **[!UICONTROL Import block list]** está configurado para importar uma lista de endereços de email que foram adicionados à lista de blocos.
+>O modelo nativo já **[!UICONTROL Import block list]** está configurado para importar uma lista de endereços de email que foram adicionados à lista de bloqueios.
 > 
 >The **[!UICONTROL New text import]** and **[!UICONTROL New text export]** templates let you configure an import or export from scratch.
 
