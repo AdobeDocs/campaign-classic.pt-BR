@@ -11,11 +11,11 @@ audience: interaction
 content-type: reference
 topic-tags: managing-environments
 discoiquuid: 3cea2be4-4da4-4ebd-a241-1bbaa5abb16e
-index: y
-internal: n
-snippet: y
-translation-type: ht
-source-git-commit: 1c86322fa95aee024f6c691b61a10c21a9a22eb7
+translation-type: tm+mt
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '450'
+ht-degree: 86%
 
 ---
 
@@ -31,7 +31,7 @@ O Interaction opera com dois tipos de ambientes de oferta:
 
 ![](assets/offer_environments_overview_001.png)
 
-Cada ambiente **[!UICONTROL Design]** está vinculado a um ambiente **[!UICONTROL Live]**. Quando uma oferta é concluída, suas regras de conteúdo e qualificação estão sujeitas a um ciclo de aprovação. Depois que este ciclo for concluído, a oferta relacionada será implantada automaticamente no ambiente **[!UICONTROL Live]**. A partir deste momento, ele estará disponível para delivery.
+Each **[!UICONTROL Design]** environment is linked to a **[!UICONTROL Live]** environment. Quando uma oferta é concluída, suas regras de conteúdo e qualificação estão sujeitas a um ciclo de aprovação. Depois que este ciclo for concluído, a oferta relacionada será implantada automaticamente no ambiente **[!UICONTROL Live]**. A partir deste momento, ele estará disponível para delivery.
 
 Por padrão, o Interaction vem com um ambiente **[!UICONTROL Design]** e um ambiente **[!UICONTROL Live]** vinculado a ele. Ambos os ambientes são pré-configurados para direcionar a tabela de recipients integrada.
 
@@ -47,11 +47,11 @@ Os gerentes de oferta e os gerentes de delivery têm acesso a diferentes modos d
 
 Por padrão, o Interaction vem com um ambiente pré-configurado para direcionar à tabela de recipients (ofertas identificadas). Se quiser direcionar outra tabela (tabela de visitantes para ofertas anônimas ou uma tabela de recipients específica), será necessário aplicar as seguintes configurações:
 
-1. Coloque o cursor no nó **[!UICONTROL Administration]** > **[!UICONTROL Campaign management]** > **[!UICONTROL Delivery mappings]**. Clique com o botão direito do mouse no mapeamento de delivery que deseja usar (**[!UICONTROL Visitors]** se quiser usar ofertas anônimas) e selecione **[!UICONTROL Actions]** > **[!UICONTROL Modify the options of the targeting dimension]**.
+1. Place your cursor on the **[!UICONTROL Administration]** > **[!UICONTROL Campaign management]** > **[!UICONTROL Delivery mappings]** node. Right-click the delivery mapping you want to use (**[!UICONTROL Visitors]** if you want to use anonymous offers) and select **[!UICONTROL Actions]** > **[!UICONTROL Modify the options of the targeting dimension]**.
 
    ![](assets/offer_env_anonymous_001.png)
 
-1. Clique em **[!UICONTROL Next]** para prosseguir para a próxima tela no assistente, marque a caixa **[!UICONTROL Generate a storage schema for propositions]** e clique em **[!UICONTROL Save]**.
+1. Click **[!UICONTROL Next]** to proceed to the next screen in the wizard, check the **[!UICONTROL Generate a storage schema for propositions]** box and click **[!UICONTROL Save]**.
 
    ![](assets/offer_env_anonymous_002.png)
 
@@ -61,7 +61,7 @@ Por padrão, o Interaction vem com um ambiente pré-configurado para direcionar 
 
 1. O Adobe Campaign cria dois ambientes (**[!UICONTROL Design]** e **[!UICONTROL Live]**) com informações de direcionamento do target mapping habilitado anteriormente. O ambiente é pré-configurado com as informações de definição de metas.
 
-   Se ativado o mapeamento **[!UICONTROL Visitor]**, a caixa **[!UICONTROL Environment dedicated to incoming anonymous interactions]** é automaticamente marcada na guia **[!UICONTROL General]** do ambiente.
+   If you have activated **[!UICONTROL Visitor]** mapping, the **[!UICONTROL Environment dedicated to incoming anonymous interactions]** box is automatically checked in the environment&#39;s **[!UICONTROL General]** tab.
 
    Essa opção permite ativar funções específicas de interação anônima, especialmente quando configurar espaços de oferta de ambiente. Também é possível configurar opções que permitem alternar de um ambiente &quot;identificado&quot; para um ambiente &quot;anônimo&quot;.
 
