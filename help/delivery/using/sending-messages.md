@@ -9,11 +9,11 @@ audience: delivery
 content-type: reference
 topic-tags: sending-emails
 discoiquuid: e2dd8161-fe38-48bf-a288-8ec328b2660e
-index: y
-internal: n
-snippet: y
-translation-type: ht
-source-git-commit: 7c800c20fff89b97f6fa38b3c659ca765765e157
+translation-type: tm+mt
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '741'
+ht-degree: 89%
 
 ---
 
@@ -43,7 +43,7 @@ Ao criar um novo delivery ou template do delivery, o CCo não é habilitado por 
 
 Para fazer isso, siga as etapas abaixo:
 
-1. Vá para **[!UICONTROL Campaign Management]** > **[!UICONTROL Deliveries]** ou **[!UICONTROL Resources]** > **[!UICONTROL Templates]** > **[!UICONTROL Delivery templates]**.
+1. Vá até **[!UICONTROL Campaign Management]** > **[!UICONTROL Deliveries]** ou **[!UICONTROL Resources]** > **[!UICONTROL Templates]** > **[!UICONTROL Delivery templates]**.
 1. Selecione o delivery de sua escolha ou duplique o template do delivery **de email** integrado e selecione o template duplicado.
 1. Clique no botão **Propriedades**.
 1. Selecione a guia **[!UICONTROL Delivery]**.
@@ -71,9 +71,9 @@ Nas propriedades de delivery, o campo **[!UICONTROL Mode]** da guia **[!UICONTRO
 
 Além do modo padrão, as seguintes opções também estão disponíveis:
 
-* **[!UICONTROL Force the generation of the mirror page]**: mesmo se nenhum link para a mirror page for inserido no delivery, ela será criada.
-* **[!UICONTROL Do not generate the mirror page]**: nenhuma mirror page é gerada, mesmo se o link estiver presente no delivery.
-* **[!UICONTROL Generates a mirror page accessible using only the message identifier]**: essa opção permite acessar o conteúdo da mirror page, com informações de personalização, na janela de log do delivery. Para fazer isso, após o fim do delivery, clique na guia **[!UICONTROL Delivery]** e selecione a linha do recipient cuja mirror page você deseja exibir. Clique no link **[!UICONTROL Display the mirror page for this message...]**.
+* **[!UICONTROL Force the generation of the mirror page]** : mesmo se nenhum link para o mirror page for inserido no delivery, o mirror page será criado.
+* **[!UICONTROL Do not generate the mirror page]** : nenhum mirror page é gerado, mesmo se o link estiver presente no delivery.
+* **[!UICONTROL Generates a mirror page accessible using only the message identifier]** : essa opção permite acessar o conteúdo do mirror page, com informações de personalização, na janela do log de delivery. Para fazer isso, após o fim do , clique na guia **[!UICONTROL Delivery]** Delivery e selecione a linha do recipient cuja mirror page você deseja exibir. Clique no link **[!UICONTROL Display the mirror page for this message...]**.
 
    ![](assets/s_ncs_user_wizard_miror_page_link.png)
 
@@ -95,7 +95,7 @@ A codificação padrão é UTF-8. Se alguns dos provedores de email de seus reci
 
 Por exemplo, você deseja enviar um email contendo caracteres japoneses. Para garantir que todos os caracteres sejam exibidos corretamente para seus recipients no Japão, é possível usar uma codificação que ofereça suporte aos caracteres japoneses em vez do padrão UTF-8.
 
-Para fazer isso, selecione a opção **[!UICONTROL Force the encoding used for messages]** na seção **[!UICONTROL Character encoding]** e escolha uma codificação na lista suspensa que é exibida.
+To do this, select the **[!UICONTROL Force the encoding used for messages]** option in the **[!UICONTROL Character encoding]** section and choose an encoding from the drop-down list that is displayed.
 
 ![](assets/s_ncs_user_email_del_properties_smtp_tab_encoding.png)
 
