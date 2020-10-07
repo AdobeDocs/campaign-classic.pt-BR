@@ -11,11 +11,11 @@ audience: installation
 content-type: reference
 topic-tags: prerequisites-and-recommendations-
 discoiquuid: 639d2f42-e397-4694-942c-b2b8ad94ce9c
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 46f5bfb41bfe9c938ac0ffa767ead3e47a32047d
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '666'
+ht-degree: 3%
 
 ---
 
@@ -28,9 +28,9 @@ Determinados processos do aplicativo precisam se comunicar com outras pessoas ou
 
 Use a porta Apache Tomcat integrada como prioridade (8080 por padrão) para comunicações internas entre os vários servidores de aplicativos de uma plataforma Adobe Campaign.
 
-### Servidor de entrega {#delivery-server}
+### Servidor delivery {#delivery-server}
 
-Para o servidor de entrega (**nlserver mta**), as seguintes portas devem estar abertas:
+Para o servidor delivery (**nlserver mta**), as seguintes portas devem estar abertas:
 
 <table> 
  <tbody> 
@@ -47,7 +47,7 @@ Para o servidor de entrega (**nlserver mta**), as seguintes portas devem estar a
   <tr> 
    <td> 53/udp (domínio)<br /> </td> 
    <td> Servidores DNS<br /> </td> 
-   <td> Consultas DNS.<br /> </td> 
+   <td> Query DNS.<br /> </td> 
   </tr> 
   <tr> 
    <td> 38000/tcp (porta padrão)<br /> </td> 
@@ -100,16 +100,16 @@ Para o servidor de aplicativos (**nlserver web**), as seguintes portas devem est
   <tr> 
    <td> 80/tcp (http)<br /> 443/tcp (https)<br /> </td> 
    <td> Qualquer lugar<br /> </td> 
-   <td> Tráfego HTTP ou HTTPS (incluindo a oferta de entrega).<br /> </td> 
+   <td> Tráfego HTTP ou HTTPS (incluindo para a oferta de entrega).<br /> </td> 
   </tr> 
  </tbody> 
 </table>
 
-Quando vários servidores de aplicativos de uma plataforma do Adobe Campaign precisarem se comunicar entre si, recomendamos usar a porta do servidor Apache Tomcat (por padrão: 8080) em vez da porta HTTP do servidor Web com a qual a integração do módulo de redirecionamento foi realizada. Isso significa que a porta precisa estar aberta entre esses servidores.
+Quando vários servidores de aplicativos de uma plataforma Adobe Campaign precisarem se comunicar, recomendamos usar a porta do servidor Apache Tomcat (por padrão: 8080) em vez da porta HTTP do servidor Web com a qual a integração do módulo de redirecionamento foi realizada. Isso significa que a porta precisa estar aberta entre esses servidores.
 
-### Status de entrega de SMS {#sms-delivery-status}
+### Status do delivery SMS {#sms-delivery-status}
 
-Para rastrear entregas SMS (**nlserver sms**), a seguinte porta deve estar aberta:
+Para rastrear delivery SMS (**nlserver sms**), a seguinte porta deve estar aberta:
 
 <table> 
  <tbody> 
@@ -121,14 +121,14 @@ Para rastrear entregas SMS (**nlserver sms**), a seguinte porta deve estar abert
   <tr> 
    <td> 38000/tcp (porta padrão)<br /> </td> 
    <td> Gateway SMS<br /> </td> 
-   <td> Consulta o status da fila de entrega gerenciada pelo gateway SMS NetSize [opção].<br /> </td> 
+   <td> Query o status da fila de delivery gerenciada pelo gateway SMS NetSize [opção].<br /> </td> 
   </tr> 
  </tbody> 
 </table>
 
 ### Cliente rico {#rich-client}
 
-Para o cliente rico do Adobe Campaign (**nlclient**), as seguintes portas devem estar abertas:
+Para o cliente Adobe Campaign rich (**nlclient**), as seguintes portas devem estar abertas:
 
 <table> 
  <tbody> 
@@ -180,7 +180,7 @@ As portas padrão são as seguintes:
 
 ## Acesso externo {#external-access}
 
-Além disso, certos componentes devem estar acessíveis na Internet pública para que campanhas de email executadas diretamente do Adobe Campaign possam ser visualizadas. Isso significa que algumas portas precisam estar abertas para componentes.
+Além disso, certos componentes devem estar acessíveis na Internet pública para que as campanhas de e-mail executadas diretamente da Adobe Campaign possam ser visualizadas. Isso significa que algumas portas precisam estar abertas para componentes.
 
 ### Servidor de redirecionamento {#redirection-server}
 
@@ -188,7 +188,7 @@ Além disso, certos componentes devem estar acessíveis na Internet pública par
  <tbody> 
   <tr> 
    <td> Porta de escuta<br /> </td> 
-   <td> Localização<br /> </td> 
+   <td> Local<br /> </td> 
   </tr> 
   <tr> 
    <td><p> 80/tcp (http)</p><p> 443/tcp (https)</p><br /> </td> 
@@ -199,17 +199,17 @@ Além disso, certos componentes devem estar acessíveis na Internet pública par
 
 ### Servidor Web externo {#external-web-server}
 
-Esse servidor hospeda formulários da Web, páginas espelhadas etc. As seguintes portas precisam ser abertas:
+Este servidor hospeda Formulários web, mirrores page etc. As seguintes portas precisam ser abertas:
 
 <table> 
  <tbody> 
   <tr> 
    <td> Porta de escuta<br /> </td> 
-   <td> Localização<br /> </td> 
+   <td> Local<br /> </td> 
   </tr> 
   <tr> 
    <td><p> 80/tcp (http)</p><p> 443/tcp (https)</p><br /> </td> 
-   <td> Em qualquer lugar. Necessário quando formulários da Web são gerenciados diretamente da plataforma do Adobe Campaign ou quando páginas espelhadas são usadas.<br /> </td> 
+   <td> Em qualquer lugar. Necessário quando os Formulários web são gerenciados diretamente da plataforma Adobe Campaign ou quando os mirrores page são usados.<br /> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -220,7 +220,7 @@ Esse servidor hospeda formulários da Web, páginas espelhadas etc. As seguintes
  <tbody> 
   <tr> 
    <td> Porta de escuta<br /> </td> 
-   <td> Localização<br /> </td> 
+   <td> Local<br /> </td> 
   </tr> 
   <tr> 
    <td><p> 80/tcp (http)</p><p> 443/tcp (https)</p><br /> </td> 
@@ -229,9 +229,9 @@ Esse servidor hospeda formulários da Web, páginas espelhadas etc. As seguintes
  </tbody> 
 </table>
 
-## Integração com o Adobe Experience Manager {#integration-with-adobe-experience-manager}
+## Integração com a Adobe Experience Manager {#integration-with-adobe-experience-manager}
 
-A integração entre o Adobe Campaign e o Adobe Experience Manager requer a abertura de várias portas se a instalação for &quot;no local&quot;. Para obter mais informações sobre como configurar essa integração, consulte a documentação [](../../integrations/using/about-adobe-experience-manager.md)detalhada.
+A integração entre a Adobe Campaign e a Adobe Experience Manager exige a abertura de várias portas se a instalação for &quot;no local&quot;. Para obter mais informações sobre como configurar essa integração, consulte a documentação [](../../integrations/using/about-adobe-experience-manager.md)detalhada.
 
 <table> 
  <tbody> 
@@ -241,11 +241,11 @@ A integração entre o Adobe Campaign e o Adobe Experience Manager requer a aber
   </tr> 
   <tr> 
    <td> 80<br /> </td> 
-   <td> Conexão do AEM com o Adobe Campaign<br /> </td> 
+   <td> AEM conexão com o Adobe Campaign<br /> </td> 
   </tr> 
   <tr> 
    <td><p> 4502</p><p> 4503</p><br /> </td> 
-   <td> A conexão do Adobe Campaign com as instâncias de "criação" e "publicação" do AEM. As portas a serem abertas podem ser diferentes das portas padrão, dependendo da configuração do AEM.<br /> </td> 
+   <td> Conexão Adobe Campaign para AEM instâncias de "criação" e "publicação". As portas a serem abertas podem ser diferentes das portas padrão, dependendo da configuração AEM.<br /> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -255,6 +255,6 @@ A integração entre o Adobe Campaign e o Adobe Experience Manager requer a aber
 Outro parâmetro chave da configuração de rede a ser considerado. É quase sempre de saída e muita demanda durante as transmissões por e-mail. Estes são alguns exemplos de configurações baseadas em nossa experiência:
 
 * 1 MB/s para 10.000 emails por hora (tamanho médio de 30 Kb)
-* 8 a 10 Mb/s para 100.000 emails por hora (tamanho médio de 30 Kb)
+* 8 a 10 Mb/s para 100.000 e-mails por hora (tamanho médio de 30 Kb)
 
-Se você tiver restrições em termos de largura de banda, será possível programar campanhas para serem executadas durante a noite quando a demanda for menor.
+Se você tiver restrições em termos de largura de banda, é possível programar campanhas para serem executadas durante a noite quando a demanda for menor.
