@@ -142,7 +142,6 @@ Blocos de personalização e campos só podem ser inseridos em blocos de tipo de
 >* Nova janela (_blank)
 >* Janela atual (_self)
 >* Comportamento do navegador padrão
-
 >
 
 
@@ -208,9 +207,8 @@ As opções disponíveis são as seguintes:
 >[!NOTE]
 >
 >* Ícone **Delete**: exclui o bloco e todo o conteúdo.
-   >
-   >
-* Ícone **Duplicate**: duplica o bloco e todos os estilos relacionados ao bloco.
+>
+>* Ícone **Duplicate**: duplica o bloco e todos os estilos relacionados ao bloco.
 
 
 ## Gerenciamento de imagens e animações {#managing-images-and-animations}
