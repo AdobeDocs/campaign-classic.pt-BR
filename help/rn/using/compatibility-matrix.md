@@ -142,7 +142,7 @@ Os seguintes drivers RDBMS são compatíveis:
 <tr>
 <td>Oracle</td>
 <td>
-<p>11g   R2</p>
+<p>11g    R2</p>
 <p>12c</p>
 <p>18c</p>
 <p>19c</p>
@@ -225,7 +225,7 @@ Os seguintes drivers RDBMS são compatíveis:
 <tr>
 <td>Oracle</td>
 <td>
-<p>11g  </p>
+<p>11g   </p>
 <p>12c</p>
 <p>18c</p>
 </td>
