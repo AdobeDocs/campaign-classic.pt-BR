@@ -15,7 +15,7 @@ translation-type: tm+mt
 source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
 workflow-type: tm+mt
 source-wordcount: '1318'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
@@ -135,7 +135,7 @@ A build 1.0.26 do SDK do iOS está disponível. Nesta nova build, adicionamos o 
 
 **Correções**
 
-* Corrigido um problema de falha quando o campo **Adicionar tabela** vinculada estava vazio na atividade de fluxo de trabalho **Carregamento de dados (RDBMS)** . (NEO-12213)
+* Correção de um problema de falha quando o campo **Adicionar tabela vinculada** ficava vazio na atividade de workflow **Carregamento de dados (RDBMS)**. (NEO-12213)
 * Correção de um problema que resultava no não processamento de determinadas mensagens pelo servidor de Mid-Sourcing. (NEO-12395)
 * Correção de um problema no workflow de limpeza do banco de dados ao usar a opção de faixas de query com Teradata. (NEO-12399)
 * Correção de um problema que afetava a análise de delivery com a regra de tipologia incluindo o domínio ne.jp. (NEO-12609)
@@ -149,7 +149,7 @@ A build 1.0.26 do SDK do iOS está disponível. Nesta nova build, adicionamos o 
 * Correção de um problema nos workflows ao usar a atividade **File transfer** para baixar arquivos usando a opção **Delete the source files after transfer** com um nome que contém um caractere de espaço. (NEO-13411)
 * Correção de um problema com a limpeza do cache Tomcat, que poderia causar problemas de memória. (NEO-13456)
 * Correção de um problema ao instalar o pacote integrado **Controle do mecanismo de oferta com o módulo de instância de execução** em uma instância de controle existente em execução no Microsoft SQL 2017. (NEO-13539)
-* Correção de um problema de travamento do console que poderia ocorrer ao desmarcar URLs rastreados em um email, na guia Conteúdo **de** texto devido a uma variável não inicializada. (NEO-13545)
+* Correção de um problema de travamento do console que poderia ocorrer ao desmarcar URLs rastreados em um email, na guia **Conteúdo de texto** devido a uma variável não inicializada. (NEO-13545)
 * Correção de um problema de codificação no nome do remetente chinês. (NEO-13837)
 * Correção de um erro que poderia ocorrer ao exibir dados de resposta da pesquisa no Explorer. (NEO-14590)
 * Correção de um problema que poderia causar discrepância entre a classificação do log de delivery e a tabela de quarentena. (NEO-16547)
