@@ -15,7 +15,7 @@ translation-type: tm+mt
 source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
 workflow-type: tm+mt
 source-wordcount: '2639'
-ht-degree: 88%
+ht-degree: 100%
 
 ---
 
@@ -28,17 +28,17 @@ _15 de setembro de 2020_
 
 **Aprimoramentos**
 
-* Aprimorado o uso de nlsrvmod para o thread do Apache 2.4 para corrigir falhas de nlsrvmod.
-* Correção de um problema ao usar a atividade Transferência de arquivos com uma conta externa do Azure e uma criptografia SSL. A conexão foi executada por HTTP em vez de HTTPS. (NEO-26720)
+* O uso de nlsrvmod para o thread do Apache 2.4 foi aprimorado para corrigir falhas de nlsrvmod.
+* Correção de um problema ao usar a atividade de transferência de arquivos com uma conta externa do Azure e uma criptografia SSL. A conexão foi executada por HTTP em vez de HTTPS. (NEO-26720)
 
 
 
-* Nas propriedades do delivery, a **[!UICONTROL Archive emails]** opção foi renomeada **[!UICONTROL Email BCC]** para obter uma melhor experiência do usuário.
+* Nas propriedades do delivery, a opção **[!UICONTROL Archive emails]** foi renomeada para **[!UICONTROL Email BCC]** para obter uma melhor experiência do usuário.
 * Correção de um problema com o mecanismo de cache de url que não recuperava o rótulo ou a categoria.
 * Correção de um problema que resultava na definição incorreta de URLs de mirror page em delivery de email (devido ao controle de caracteres ASCII incorreto). (NEO-26084)
 * A lista jarsToSkip em catalina.properties foi atualizada para remover a referência a um arquivo jar que não é mais utilizado (notificações do iOS).
-* Correção de um problema de regressão que impedia após a publicação após a atualização.
-* Corrigida uma regressão com relatórios do delivery predefinidos que apareciam truncados quando exportados para PDF. (NEO-25757)
+* Correção de um problema de regressão após a publicação após a atualização.
+* Correção de um problema de regressão com relatórios do delivery de utilização imediata que apareciam cortados quando exportados para PDF. (NEO-25757)
 * Correção de um problema que excluía o valor do parâmetro de codificação ao redirecionar a partir de um URL de rastreamento (impacto nos caracteres japoneses). (NEO-25637)
 * Correção de um problema que resultava no bloqueio de links não assinados de domínios personalizados quando deveriam ser permitidos. (NEO-25210)
 * Correção de uma regressão que afetava os campos calculados em um workflow, causando falha no workflow. (NEO-25194)
@@ -51,11 +51,11 @@ _15 de setembro de 2020_
 * Correção de um problema com o workflow de limpeza do banco de dados que poderia falhar devido à fonte de dados não gerenciada. (NEO-23160, NEO-23364)
 * O workflow de limpeza agora limpa listas expiradas por lotes de 100 em vez de uma a uma.
 * Após a mudança para o [novo mecanismo de ID de sequência](https://helpx.adobe.com/br/campaign/kb/sequence_auto_generation.html#Switchtoadedicatedsequence), todos os aplicativos da web que estão atualizando a tabela do recipient são republicados durante a pós-atualização.
-* Correção de um problema que impedia o envio de emails quando havia código Javascript fora da tag de conteúdo HTML. (NEO-18628)
+* Correção de um problema que impedia o envio de emails quando um código Javascript estivesse fora da tag de conteúdo HTML. (NEO-18628)
 * Correção de um problema que impede a atualização dos indicadores de rastreamento de mensagens transacionais pelo workflow Tracking. (NEO-17770)
-* Aprimorado o desempenho do assistente de atualização de banco de dados para fazer menos instruções SQL a fim de otimizar o tempo de resposta.
-* Correção de um problema de travamento do console que poderia ocorrer ao desmarcar URLs rastreados em um email, na guia Conteúdo **de** texto devido a uma variável não inicializada. (NEO-13545)
-* Correção de um problema que impedia o upload de arquivos em uma atividade de Transferência de arquivos usando uma conta externa do Armazenamento Blob do Azure devido a uma variável não inicializada (m_pCurlReader). (NEO-13717)
+* O desempenho do assistente de atualização de banco de dados foi aprimorado para realizar menos declarações SQL a fim de otimizar o tempo de resposta.
+* Correção de um problema de travamento do console que poderia ocorrer ao desmarcar URLs rastreados em um email, na guia **Conteúdo de texto** devido a uma variável não inicializada. (NEO-13545)
+* Correção de um problema que impedia o upload de arquivos em uma atividade de transferência de arquivos usando uma conta externa do Armazenamento Blob do Azure devido a uma variável não inicializada (m_pCurlReader). (NEO-13717)
 
 
 
@@ -63,7 +63,7 @@ _15 de setembro de 2020_
 
 
 
-* Correção de uma regressão que resultava na escolha incorreta de um fuso horário ao configurar o horário em uma atividade de fluxo de trabalho de **Scheduler** .
+* Correção de uma regressão que resultava na escolha incorreta de um fuso horário na configuração de horário em uma atividade de workflow de **Scheduler**.
 
 ## ![](assets/do-not-localize/orange_2.png) Versão 19.1.6 - Build 9035 {#release-19-1-6-build-9035}
 
@@ -89,15 +89,15 @@ _13 de agosto de 2019_
 
 * Correção de um problema com a declaração &#39;SELECT COUNT&#39; do SQL, que foi executada no banco de dados padrão em vez de no banco de dados FDA durante a extração de dados na atividade do Gerenciamento de dados.
 * Para aprimora os recursos de infraestrutura do cliente, uma declaração de proxy SFTP agora está disponível no arquivo de configuração do servidor.
-* Corrigido um problema de falha quando o campo **Adicionar tabela** vinculada estava vazio na atividade de fluxo de trabalho **Carregamento de dados (RDBMS)** . (NEO-12213)
+* Correção de um problema de falha quando o campo **Adicionar tabela vinculada** ficava vazio na atividade de workflow **Carregamento de dados (RDBMS)**. (NEO-12213)
 * Correção de um problema com a instalação do pacote midEmitter por meio da linha de comando.
 * Adição de uma nova opção de autenticação para oferecer suporte às credenciais do OAuth no conector AC com o Microsoft Dynamics.(NEO-11982)
-* Correção de um problema com o gerenciamento UUID (identificador universal exclusivo) que resultava em falha das atividades do fluxo de trabalho de carregamento de Query e dados com o FDA Hive.
+* Correção de um problema com o gerenciamento UUID (identificador universal exclusivo) que resultava em falha das atividades do workflow de carregamento de query e dados com o FDA Hive.
 * Correção de uma regressão no Oracle que resultava em algumas funções consideradas inválidas após a atualização. (NEO-12759)
 
 
 
-* Correção de uma regressão que resultava na escolha incorreta de um fuso horário ao configurar o horário em uma atividade do fluxo de trabalho do Scheduler.
+* Correção de uma regressão que resultava na escolha incorreta de um fuso horário na configuração de horário em uma atividade do workflow do Scheduler.
 
 ## ![](assets/do-not-localize/green_2.png) Versão 19.1.4 - Build 9032{#release-19-1-4-build-9032}
 
