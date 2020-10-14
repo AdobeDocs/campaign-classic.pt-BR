@@ -1,6 +1,6 @@
 ---
 title: Sobre integrações do Campaign
-description: Use outras soluções de Adobe e combine suas diferentes capacidades com Campanhas.
+description: Use outras soluções da Adobe e combine suas diferentes funcionalidades com o Campaign.
 page-status-flag: never-activated
 uuid: 087abdf0-b4b2-45e6-be21-b03bf85ddf83
 contentOwner: sauviat
@@ -13,7 +13,7 @@ translation-type: tm+mt
 source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
 workflow-type: tm+mt
 source-wordcount: '772'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -43,11 +43,11 @@ A gestão de organização e a vinculação às contas da Adobe Experience Cloud
 
 >[!CAUTION]
 >
->Quando o Adobe Campaign é recém-instalado ou é integrado a uma instalação existente com a Adobe Experience Cloud, o [serviço da Experience Cloud ID](https://docs.adobe.com/content/help/en/id-service/using/home.html) está habilitado. Esse serviço substitui o cookie permanente usado primeiro e mais importante pelo Adobe Campaign para suas funcionalidades de rastreamento.
+>Quando o Adobe Campaign é recém-instalado ou é integrado a uma instalação existente com a Adobe Experience Cloud, o [serviço da Experience Cloud ID](https://docs.adobe.com/content/help/pt-BR/id-service/using/home.html) está habilitado. Esse serviço substitui o cookie permanente usado primeiro e mais importante pelo Adobe Campaign para suas funcionalidades de rastreamento.
 >
 >Uma ID de visitante exclusiva será atribuída aos recipients que geram logs de rastreamento. Essa ID será salva no campo **[!UICONTROL Requester UUID (@sourceID)]** da tabela **[!UICONTROL nms:trackingLogRcp]**. Os dados de rastreamento dos recipients existentes antes do serviço de ID de visitante foram implementados e, portanto, não serão mais utilizáveis.
 >
->A ID será reconhecida pelas outras soluções da Adobe Experience Cloud com o mesmo [CNAME](https://docs.adobe.com/content/help/en/id-service/using/reference/analytics-reference/cname.html).
+>A ID será reconhecida pelas outras soluções da Adobe Experience Cloud com o mesmo [CNAME](https://docs.adobe.com/content/help/pt-BR/id-service/using/reference/analytics-reference/cname.html).
 
 ## Integrações da Experience Cloud {#experience-cloud-integrations}
 
