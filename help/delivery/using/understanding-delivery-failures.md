@@ -12,9 +12,9 @@ content-type: reference
 topic-tags: monitoring-deliveries
 discoiquuid: 78b58a7a-b387-4d5d-80d5-01c06f83d759
 translation-type: tm+mt
-source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+source-git-commit: 75cbb8d697a95f4cc07768e6cf3585e4e079e171
 workflow-type: tm+mt
-source-wordcount: '2450'
+source-wordcount: '2440'
 ht-degree: 95%
 
 ---
@@ -32,7 +32,7 @@ Quando uma mensagem (email, SMS, notificação por push) não pode ser enviada a
 
 Quando uma mensagem é enviada, o log de delivery permite exibir o status de entrega de cada perfil, o tipo de falha e o motivo associados.
 
-As mensagens também podem ser excluídas durante a preparação do delivery se um endereço estiver em quarentena ou se um perfil estiver na lista de bloqueios. As mensagens excluídas são listadas no painel de delivery.
+As mensagens também podem ser excluídas durante a preparação do delivery se um endereço estiver em quarentena ou se um perfil estiver em lista de bloqueios. As mensagens excluídas são listadas no painel de delivery.
 
 **Tópicos relacionados:**
 
@@ -83,7 +83,7 @@ Os possíveis motivos para uma falha de delivery são:
    <td> A classificação de qualidade deste endereço é muito baixa.<br /> </td> 
   </tr> 
   <tr> 
-   <td> Endereço na lista de bloqueios </td> 
+   <td> Endereço Incluir na lista de bloqueios </td> 
    <td> Grave </td> 
    <td> 8 </td> 
    <td> O endereço foi adicionado à lista de bloqueios no momento do envio. This status is used for importing data from external lists and external systems into the Adobe Campaign Quarantine list.<br /> </td> 
@@ -204,7 +204,7 @@ Uma mensagem pode falhar imediatamente (erro síncrono), ou posteriormente, apó
    >
    >A configuração da caixa de entrada de devolução é detalhada [nesta seção](../../installation/using/deploying-an-instance.md#managing-bounced-emails).
 
-   The [feedback loop](../../delivery/using/technical-recommendations.md#feedback-loop) operates like bounce emails. Quando um usuário classifica um email como spam, você pode configurar regras de email no Adobe Campaign para bloquear todos os deliveries a esse usuário. Mensagens enviadas para usuários que classificaram um email como spam são automaticamente redirecionadas para uma caixa de email especificamente criada para essa finalidade. Os endereços desses usuários estão na lista de bloqueios mesmo que não tenham clicado no link da unsubscription. Os endereços estão na lista de bloqueios na tabela de quarentena (**NmsAddress**) e não na tabela de recipient (**NmsRecipient**).
+   The [feedback loop](../../delivery/using/technical-recommendations.md#feedback-loop) operates like bounce emails. Quando um usuário classifica um email como spam, você pode configurar regras de email no Adobe Campaign para bloquear todos os deliveries a esse usuário. Mensagens enviadas para usuários que classificaram um email como spam são automaticamente redirecionadas para uma caixa de email especificamente criada para essa finalidade. Os endereços desses usuários estão em lista de bloqueios mesmo que não tenham clicado no link de unsubscription. Addresses are in denylist in the (**NmsAddress**) quarantine table and not in the (**NmsRecipient**) recipient table.
 
    >[!NOTE]
    >
