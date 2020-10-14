@@ -1,6 +1,6 @@
 ---
 title: Sobre as ferramentas de geração de relatórios do Adobe Campaign
-description: Analise o sucesso de suas campanhas em relatórios incorporados ou personalizados.
+description: Analise o sucesso de suas campanhas em relatórios integrados ou personalizados.
 page-status-flag: never-activated
 uuid: a8122c9e-60ba-4ef7-bc63-05d6cf16fad0
 contentOwner: sauviat
@@ -13,7 +13,7 @@ translation-type: tm+mt
 source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
 workflow-type: tm+mt
 source-wordcount: '334'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
