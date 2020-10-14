@@ -12,9 +12,9 @@ content-type: reference
 topic-tags: importing-and-exporting-data
 discoiquuid: a21576c7-e94c-4fe1-9e31-d89116e427f6
 translation-type: tm+mt
-source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+source-git-commit: 75cbb8d697a95f4cc07768e6cf3585e4e079e171
 workflow-type: tm+mt
-source-wordcount: '485'
+source-wordcount: '489'
 ht-degree: 80%
 
 ---
@@ -40,11 +40,11 @@ O Adobe Campaign também oferece um módulo de importação que permite fornecer
 >
 >A importação de dados no Campaign deve ser realizada por meio de fluxos de trabalho para garantir a consistência dos dados e melhorar a eficiência. Para mais informações, consulte as seções [Importação de dados](../../workflow/using/importing-data.md), [Práticas recomendadas de importação](../../workflow/using/importing-data.md#best-practices-when-importing-data) e [Exemplo de template de importação](../../workflow/using/importing-data.md#setting-up-a-recurring-import).
 
+![](assets/do-not-localize/how-to-video.png) [Descubra este recurso no vídeo](../../platform/using/exporting-and-importing-profiles.md#import-profiles-video)
+
 ## Criação de um template de trabalho {#creating-a-job-template}
 
 Import and export templates are stored in the **[!UICONTROL Resources > Templates > Job templates]** directory of the Adobe Campaign tree.
-
-![](assets/s_ncs_user_export_wizard_template.png)
 
 Por padrão, três templates de importação e um template de exportação estão presentes nesse diretório. Eles não devem ser modificados. You can duplicate them to create your own templates or create a new template via the **[!UICONTROL New > Import template]** / **[!UICONTROL Export template]** menu.
 
@@ -54,7 +54,7 @@ O procedimento para criação de um modelo de processo é apresentado no [Assist
 
 >[!NOTE]
 >
->O modelo nativo já **[!UICONTROL Import block list]** está configurado para importar uma lista de endereços de email que foram adicionados à lista de bloqueios.
+>O modelo nativo já **[!UICONTROL Import denylist]** está configurado para importar uma lista de endereços de email que foram adicionados à lista de bloqueios.
 > 
 >The **[!UICONTROL New text import]** and **[!UICONTROL New text export]** templates let you configure an import or export from scratch.
 
