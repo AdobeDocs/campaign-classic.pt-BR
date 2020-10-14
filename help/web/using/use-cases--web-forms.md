@@ -12,10 +12,10 @@ content-type: reference
 topic-tags: web-forms
 discoiquuid: cfa22577-0b9e-4eee-900d-214b81256d81
 translation-type: tm+mt
-source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+source-git-commit: 75cbb8d697a95f4cc07768e6cf3585e4e079e171
 workflow-type: tm+mt
-source-wordcount: '972'
-ht-degree: 100%
+source-wordcount: '960'
+ht-degree: 91%
 
 ---
 
@@ -51,11 +51,11 @@ As mensagens de confirmação são enviadas por um template do delivery dedicado
 
    ![](assets/s_ncs_admin_survey_double-opt-in_sample_1d.png)
 
-1. Como os recipients desse delivery não confirmaram sua aprovação, eles ainda estão incluídos na lista de bloqueios do banco de dados. Para que eles recebam essa comunicação, é necessário autorizar deliveries baseados neste modelo para recipients públicos alvos que estejam na lista de bloqueios.
+1. Como os recipient desse delivery não confirmaram sua aprovação, eles ainda estão na lista de bloqueios do banco de dados. Para que eles recebam essa comunicação, é necessário autorizar delivery baseados neste modelo para públicos alvos em lista de bloqueios.
 
    Para fazer isso, clique na guia **[!UICONTROL Exclusions]**.
 
-1. Clique no link **[!UICONTROL Edit...]** e desmarque a opção **[!UICONTROL Exclude recipients who no longer want to be contacted (blocklist)]**.
+1. Clique no link **[!UICONTROL Edit...]** e desmarque a opção **[!UICONTROL Exclude recipients who no longer want to be contacted (blacklist)]**.
 
    <!-- ![](assets/s_ncs_admin_survey_double-opt-in_sample_4d.png)-->
 
@@ -109,10 +109,10 @@ Para fazer isso, siga as etapas abaixo:
 
    ![](assets/s_ncs_admin_survey_double-opt-in_sample_6f.png)
 
-   A primeira **[!UICONTROL Script]** atividade adicionará recipients à lista de bloqueios até que confirmem a assinatura da newsletter. Seu conteúdo deve ser o seguinte:
+   The first **[!UICONTROL Script]** activity will add recipients on denylist until they confirmed their subscription to the newsletter. Seu conteúdo deve ser o seguinte:
 
    ```
-   ctx.recipient.@blockList=1
+   ctx.recipient.@blackList=1
    ```
 
    ![](assets/s_ncs_admin_survey_double-opt-in_sample_6bbis.png)
@@ -120,7 +120,7 @@ Para fazer isso, siga as etapas abaixo:
    A segunda atividade **[!UICONTROL Script]** autoriza os deliveries a serem enviados aos usuários e faz a assinatura deles no boletim informativo. As duas últimas linhas do script permitirão transferir os recipients da pasta temporária para outra pasta e reconciliar com perfis existentes assim que confirmarem a assinatura.
 
    ```
-   ctx.recipient.@blockList=0
+   ctx.recipient.@blackList=0
    nms.subscription.Subscribe("INTERNAL_NAME_OF_THE_NEWSLETTER", ctx.recipient, false)
    ctx.recipient.folder = <folder name="nmsRootRecipient"/>
    nms.subscription.Unsubscribe("TEMP", ctx.recipient)
@@ -172,7 +172,7 @@ A subscrição no boletim informativo envolve as seguintes etapas:
 
    ![](assets/s_ncs_admin_survey_double-opt-in_sample_8d.png)
 
-   O usuário é adicionado ao banco de dados do Adobe Campaign na pasta **[!UICONTROL Temp]** e seu perfil é incluído na lista de bloqueios até que ele confirme a assinatura com o email.
+   The user is added to the Adobe Campaign database in the **[!UICONTROL Temp]** folder, and their profile is on denylist until they confirm their subscription with the email.
 
    ![](assets/s_ncs_admin_survey_double-opt-in_sample_8f.png)
 
@@ -186,7 +186,7 @@ A subscrição no boletim informativo envolve as seguintes etapas:
 
    No Adobe Campaign, o perfil do usuário é atualizado:
 
-   * já não estão na lista de bloqueios,
+   * já não se encontram em lista de bloqueios,
    * eles estão subscritos no serviço de informação.
 
       ![](assets/s_ncs_admin_survey_double-opt-in_sample_9.png)
