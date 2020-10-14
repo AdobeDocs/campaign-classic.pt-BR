@@ -12,9 +12,9 @@ content-type: reference
 topic-tags: filtering-data
 discoiquuid: 066e730b-2527-4257-b11f-2e73f746a8a5
 translation-type: tm+mt
-source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+source-git-commit: 75cbb8d697a95f4cc07768e6cf3585e4e079e171
 workflow-type: tm+mt
-source-wordcount: '1980'
+source-wordcount: '1976'
 ht-degree: 88%
 
 ---
@@ -276,7 +276,7 @@ Os filtros predefinidos são:
    <td> Seleciona destinatários que clicaram em um delivery pelo menos X vezes nos últimos Y meses.<br /> </td> 
   </tr> 
   <tr> 
- <td> Email address on the block list<br /> </td> 
+ <td> Endereço de email Incluir na lista de bloqueios<br /> </td> 
     <td> Seleciona recipient cujo endereço de email está na lista de bloqueios.<br/> </td>
   </tr> 
   <tr> 
