@@ -12,7 +12,7 @@ content-type: reference
 topic-tags: acs-connector
 discoiquuid: 64d87bea-2376-4684-ac93-6ca56fe0f262
 translation-type: tm+mt
-source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+source-git-commit: 75cbb8d697a95f4cc07768e6cf3585e4e079e171
 workflow-type: tm+mt
 source-wordcount: '1996'
 ht-degree: 100%
@@ -216,15 +216,15 @@ Abaixo estão a lista de campos de recipients que são replicados com a implemen
   </tr> 
   <tr> 
    <td> Não mais entrar em contato (por qualquer canal)<br /> </td> 
-   <td> @blockList<br /> </td> 
+   <td> @blacklist<br /> </td> 
   </tr> 
   <tr> 
-   <td> Não entrar mais em contato por e-mail<br /> </td> 
-   <td> @blockListEmail<br /> </td> 
+   <td> Não mais contatar por e-mail<br /> </td> 
+   <td> @blackListEmail<br /> </td> 
   </tr> 
   <tr> 
-   <td> Não entrar mais em contato por SMS<br /> </td> 
-   <td> @blockListMobile<br /> </td> 
+   <td> Não mais contatar por SMS<br /> </td> 
+   <td> @blackListMobile<br /> </td> 
   </tr> 
   <tr> 
    <td> Telefone<br /> </td> 
