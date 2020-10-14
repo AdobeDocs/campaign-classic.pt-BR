@@ -12,10 +12,10 @@ content-type: reference
 topic-tags: about-deliveries-and-channels
 discoiquuid: df29492f-ed73-4ab8-b075-e76b3b9ebce3
 translation-type: tm+mt
-source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+source-git-commit: 75cbb8d697a95f4cc07768e6cf3585e4e079e171
 workflow-type: tm+mt
-source-wordcount: '1578'
-ht-degree: 100%
+source-wordcount: '1576'
+ht-degree: 99%
 
 ---
 
@@ -152,7 +152,7 @@ As seguintes opções estão disponíveis:
 
       ![](assets/s_ncs_user_wizard_email02j.png)
 
-* **[!UICONTROL Exclude recipients who no longer want to be contacted]**, ou seja, recipients cujos endereços de email estão em uma lista de bloqueios (opt out). Essa opção deve permanecer selecionada para observar a ética profissional de marketing digital e as leis que regem o comércio eletrônico.
+* **[!UICONTROL Exclude recipients who no longer want to be contacted]** , isto é, recipient cujos endereços de email estão em lista de bloqueios (&#39;opt out&#39;). Essa opção deve permanecer selecionada para observar a ética profissional de marketing digital e as leis que regem o comércio eletrônico.
 * **[!UICONTROL Exclude quarantined recipients]**. Essa opção permite excluir do target qualquer perfil que não responda. É altamente recomendável manter essa opção selecionada.
 
    >[!NOTE]
