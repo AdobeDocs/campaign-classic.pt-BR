@@ -12,10 +12,10 @@ content-type: reference
 topic-tags: profile-management
 discoiquuid: 93dd29e8-cf0a-4010-a3cc-f68c52c0d9ef
 translation-type: tm+mt
-source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+source-git-commit: 75cbb8d697a95f4cc07768e6cf3585e4e079e171
 workflow-type: tm+mt
-source-wordcount: '476'
-ht-degree: 88%
+source-wordcount: '474'
+ht-degree: 89%
 
 ---
 
@@ -46,7 +46,7 @@ Esta tela contém todos os dados gerais sobre o perfil selecionado. Em particula
 
 >[!NOTE]
 >
->When the **[!UICONTROL No longer contact (by any channel)]** option is selected, this means that the profile is on the block list, i.e. the profile has expressed a wish not to be contacted (for example, by clicking an unsubscription link in a newsletter). Ele não será mais visado por entregas em nenhum canal (e-mail, mala direta, etc.). Para obter mais informações, consulte [esta página](../../delivery/using/understanding-quarantine-management.md).
+>When the **[!UICONTROL No longer contact (by any channel)]** option is selected, this means that the profile is on denylist, i.e. the profile has expressed a wish not to be contacted (for example, by clicking an unsubscription link in a newsletter). Ele não será mais visado por entregas em nenhum canal (e-mail, mala direta, etc.). Para obter mais informações, consulte [esta página](../../delivery/using/understanding-quarantine-management.md).
 
 ## Guia Contact information {#contact-information-tab}
 
