@@ -12,10 +12,10 @@ content-type: reference
 topic-tags: monitoring-deliveries
 discoiquuid: 56cbf48a-eb32-4617-8f80-efbfd05976ea
 translation-type: tm+mt
-source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+source-git-commit: 75cbb8d697a95f4cc07768e6cf3585e4e079e171
 workflow-type: tm+mt
-source-wordcount: '2576'
-ht-degree: 100%
+source-wordcount: '2571'
+ht-degree: 97%
 
 ---
 
@@ -34,21 +34,21 @@ O Adobe Campaign gerencia uma lista de endereços em quarentena. Os recipients c
 
 Os perfis cujos endereços de email ou número de telefone estão em quarentena são excluídos automaticamente durante a preparação da mensagem (consulte [Identificação de endereços em quarentena para um delivery](#identifying-quarantined-addresses-for-a-delivery)). Isso irá acelerar os deliveries, pois a taxa de erro tem um efeito significativo na velocidade do delivery.
 
-Alguns provedores de acesso à Internet consideram automaticamente emails como spam se a taxa de endereços inválidos for muito alta. A quarentena, portanto, evita que você seja adicionado a uma lista de bloqueios por esses provedores.
+Alguns provedores de acesso à Internet consideram automaticamente emails como spam se a taxa de endereços inválidos for muito alta. A quarentena, portanto, permite que você evite ser adicionada à lista de bloqueios por esses provedores.
 
 Além disso, a quarentena ajuda a reduzir os custos de envio do SMS, excluindo números de telefone incorretos dos deliveries. Para obter mais informações sobre as práticas recomendadas para proteger e otimizar seus deliveries, consulte [esta página](../../delivery/using/delivery-best-practices.md).
 
-### Quarentena × Lista de bloqueios {#quarantine-vs-block-list}
+### Quarentena vs lista de bloqueios {#quarantine-vs-denylist}
 
 A **quarentena** se aplica somente a um endereço, não ao próprio perfil. Isso significa que, se dois perfis tiverem o mesmo endereço de email, eles serão afetados se o endereço estiver em quarentena.
 
 Da mesma forma, um perfil cujo endereço de email está em quarentena poderia atualizar seu perfil e inserir um novo endereço e pode ser alvo de ações de delivery novamente.
 
-Por outro lado, com a inclusão na **lista de bloqueios**, o perfil não será mais alvo de qualquer delivery, por exemplo, depois da unsubscription (recusa).
+Being on the **denylist**, on the other hand, will result in the profile no longer being targeted by any delivery, for example after an unsubscription (opt-out).
 
 >[!NOTE]
 >
->Quando um usuário responde a uma mensagem SMS com uma palavra-chave, como “STOP” para recusar os deliveries de SMS, seu perfil não é incluído na lista de bloqueios como no processo de recusa de email. O número de telefone do perfil é enviado para quarentena, para que o usuário continue recebendo mensagens de email.
+>Quando um usuário responde a uma mensagem SMS com uma palavra-chave como &quot;PARAR&quot; para recusar delivery SMS, seu perfil não é adicionado à lista de bloqueios como no processo de recusa por email. O número de telefone do perfil é enviado para quarentena, para que o usuário continue recebendo mensagens de email.
 
 ## Identificação de endereços em quarentena {#identifying-quarantined-addresses}
 
@@ -75,7 +75,7 @@ As seguintes informações estão disponíveis para cada endereço:
 >O aumento no número em quarentena é um efeito normal, relacionado ao &quot;desgaste&quot; do banco de dados. Por exemplo, se o tempo de vida de um endereço de email for considerado três anos e a tabela de recipients aumentar em 50% todo ano, o aumento da quarentena poderá ser calculado da seguinte maneira:
 >
 >Fim do Ano 1: (1*0.33)/(1+0.5)=22%.
->Fim do Ano 2: ((1.22*0.33)+0.33)/(1.5+0.75)=32.5%.
+Fim do Ano 2: ((1.22*0.33)+0.33)/(1.5+0.75)=32.5%.
 
 ### Identificação de endereços em quarentena nos relatórios de delivery {#identifying-quarantined-addresses-in-delivery-reports}
 
@@ -107,9 +107,7 @@ Para remover manualmente um endereço da lista da quarentena:
 
    ![](assets/tech_quarant_error_status.png)
 
-* Você também pode alterar o status para **[!UICONTROL On allow list]**. Nesse caso, o endereço permanece na lista da quarentena, mas será direcionado sistematicamente, mesmo que um erro seja encontrado.
-
-<!--Addresses on the block list are not concerned by the quarantine system and are not targeted, even if you change the status of the address.-->
+* Você também pode alterar o status para **[!UICONTROL Allowlisted]**. Nesse caso, o endereço permanece na lista da quarentena, mas será direcionado sistematicamente, mesmo que um erro seja encontrado.
 
 Os endereços são removidos automaticamente da lista de quarentena nos seguintes casos:
 
@@ -120,8 +118,7 @@ Os endereços são removidos automaticamente da lista de quarentena nos seguinte
 O status muda então para **[!UICONTROL Valid]**.
 
 >[!IMPORTANT]
->
->Os recipients com um endereço em um status **[!UICONTROL Quarantine]** ou **[!UICONTROL On block list]** nunca serão removidos, mesmo se receberem um email.
+Os recipients com um endereço em um status **[!UICONTROL Quarantine]** ou **[!UICONTROL On denylist]** nunca serão removidos, mesmo se receberem um email.
 
 Você pode alterar o número de erros e o período entre dois erros. Para fazer isso, altere as configurações correspondentes no assistente de implantação (**[!UICONTROL Email channel]** > **[!UICONTROL Advanced parameters]**). Para obter mais informações sobre o assistente de implantação, consulte [esta seção](../../installation/using/deploying-an-instance.md).
 
@@ -274,11 +271,10 @@ O workflow **[!UICONTROL mobileAppOptOutMgt]** é executado a cada 6 horas para 
 Durante a análise de delivery, todos os dispositivos excluídos do target são automaticamente adicionados à tabela **excludeLogAppSubRcp** .
 
 >[!NOTE]
->
->Para clientes que usam o conector Baidu, aqui estão os diferentes tipos de erros:
->* Problema de conexão no início do delivery: falha do tipo **[!UICONTROL Undefined]**, razão da falha **[!UICONTROL Unreachable]**, a tentativa é executada.
->* Perda de conexão durante um delivery: erro leve, razão da falha **[!UICONTROL Refused]**, a tentativa é executada.
->* Erro síncrono retornado pelo Baidu durante o envio: erro grave, motivo da falha **[!UICONTROL Refused]**, não haverá nova tentativa.
+Para clientes que usam o conector Baidu, aqui estão os diferentes tipos de erros:
+* Problema de conexão no início do delivery: falha do tipo **[!UICONTROL Undefined]**, razão da falha **[!UICONTROL Unreachable]**, a tentativa é executada.
+* Perda de conexão durante um delivery: erro leve, razão da falha **[!UICONTROL Refused]**, a tentativa é executada.
+* Erro síncrono retornado pelo Baidu durante o envio: erro grave, motivo da falha **[!UICONTROL Refused]**, não haverá nova tentativa.
 
 O Adobe Campaign contata o servidor Baidu a cada 10 minutos para recuperar o status da mensagem enviada e atualiza os broadlogs. Se uma mensagem for declarada como enviada, o status da mensagem nos broadlogs será definido como **[!UICONTROL Received]**. Se o Baidu declarar um erro, o status será definido como **[!UICONTROL Failed]**.
 
@@ -370,8 +366,7 @@ O mecanismo de quarentena do Android V2 usa o mesmo processo que o Android V1, o
 O mecanismo de quarentena para mensagens SMS é globalmente igual ao processo geral. Consulte [Sobre quarentenas](#about-quarantines). As especificidades para SMS estão listadas abaixo.
 
 >[!NOTE]
->
->A tabela **[!UICONTROL Delivery log qualification]** não se aplica ao conector **SMPP genérico estendido**.
+A tabela **[!UICONTROL Delivery log qualification]** não se aplica ao conector **SMPP genérico estendido**.
 
 <table> 
  <tbody> 
@@ -429,9 +424,8 @@ O conector SMPP recupera dados da mensagem SR (Relatório do Status) que é reto
 Antes de um novo tipo de erro ser qualificado, o motivo da falha é sempre definido como **Refused** por padrão.
 
 >[!NOTE]
->
->Os tipos de falha e os motivos para falha são os mesmos dos emails. Consulte [Tipos e motivos de falha de delivery](../../delivery/using/understanding-delivery-failures.md#delivery-failure-types-and-reasons).
->Peça ao seu provedor uma lista de códigos e status de erros para definir os tipos apropriados de falhas e os motivos para falha na tabela de qualificação de log de delivery.
+Os tipos de falha e os motivos para falha são os mesmos dos emails. Consulte [Tipos e motivos de falha de delivery](../../delivery/using/understanding-delivery-failures.md#delivery-failure-types-and-reasons).
+Peça ao seu provedor uma lista de códigos e status de erros para definir os tipos apropriados de falhas e os motivos para falha na tabela de qualificação de log de delivery.
 
 Exemplo de uma mensagem gerada:
 
