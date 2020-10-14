@@ -10,10 +10,10 @@ content-type: reference
 topic-tags: deliverability-management
 discoiquuid: 6a394eeb-fbe1-4712-bb13-db5d7965fb73
 translation-type: tm+mt
-source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+source-git-commit: 75cbb8d697a95f4cc07768e6cf3585e4e079e171
 workflow-type: tm+mt
-source-wordcount: '1355'
-ht-degree: 85%
+source-wordcount: '1341'
+ht-degree: 86%
 
 ---
 
@@ -47,36 +47,36 @@ Ao receber sempre a mesma mensagem de erro para um ISP, o email ou IP pode ter s
 
 Se o problema persistir, entre em contato com os serviços comerciais ou de entrega, o Atendimento ao cliente do Adobe Campaign ou o suporte do Adobe Campaign.
 
-## Lista de bloqueios versus quarentena {#block-list-versus-quarantine}
+##  Lista de bloqueios quarentena {#denylist-versus-quarantine}
 
-* **Qual é a diferença entre um endereço de email na lista de bloqueios e um endereço de email em quarentena?**
+* **Qual é a diferença entre um endereço de email em lista de bloqueios e um endereço de email em quarentena?**
 
-   * O status **[!UICONTROL On block list]** é resultado de um ciclo de feedback (quando uma pessoa reporta uma mensagem como spam).
+   * O status **[!UICONTROL Denylisted]** é resultado de um ciclo de feedback (quando uma pessoa reporta uma mensagem como spam).
 
    * O status **[!UICONTROL Quarantined]** é resultado de um salto suave ou forte.
-   Para obter mais informações, consulte [esta seção](../../delivery/using/understanding-quarantine-management.md#quarantine-vs-block-list).
+   Para obter mais informações, consulte [esta seção](../../delivery/using/understanding-quarantine-management.md#quarantine-vs-denylist).
 
 * **O que significam os diferentes motivos de erro de quarentena?**
 
-   Aqui estão 10 possíveis motivos: não definido, usuário desconhecido, domínio inválido, endereço na lista de bloqueios, recusado, erro ignorado, inacessível, conta desativada, caixa de correio cheia, não conectado.
+   Aqui estão 10 possíveis motivos: não definido, usuário desconhecido, domínio inválido, na lista de bloqueios, recusado, erro ignorado, inacessível, conta desativada, caixa de correio cheia, não conectado.
 
    Para obter mais informações, consulte [Entendendo o gerenciamento da quarentena](../../delivery/using/understanding-quarantine-management.md).
 
-## Remoção da lista de bloqueios {#remove-from-block-list}
+## Remoção de lista de bloqueios {#remove-from-denylist}
 
-* **Um dos meus recipient foi adicionado à lista de bloqueios por engano. Como removê-los da lista de bloqueios para que eu possa start de enviar mensagens a eles novamente?**
+* **Um dos meus recipient foi adicionado à lista de bloqueios por engano. How do I remove them from the denyist so that I can start sending them messages again?**
 
    * Vá para **[!UICONTROL Administration > Campaign Management > Non deliverables Management > Non deliverables and addresses]**.
    * Nos detalhes do registro correspondente, defina o valor do campo **[!UICONTROL Status]** como **[!UICONTROL Valid]**.
    * Salve o registro.
 
-* **Como posso descobrir se um dos meus IPs está em uma lista de bloqueios? Como remover meus IPs de uma lista de bloqueios?**
+* **Como posso descobrir se um dos meus IPs está em uma  lista de bloqueios? Como remover meus IPs de uma lista de bloqueios?**
 
    Para verificar se seu endereço IP está em uma lista de bloqueios, você pode usar vários sites para verificá-lo, como:
    * [Caixa de ferramentas MX](https://mxtoolbox.com/)
    * [Qual é o meu endereço IP](https://whatismyipaddress.com)
 
-   Geralmente, o resultado da verificação de endereço IP retornará uma lista que contém detalhes da lista de bloqueios e também o nome do site que bloqueou o endereço IP.
+   Geralmente, o resultado da verificação de endereço IP retornará uma lista que contém detalhes da lista de bloqueios e também o nome do site que negou o endereço IP.
 
    Ao clicar no link correspondente, é possível acessar os detalhes do site. Em seguida, você pode solicitar que seu site seja excluído do site que adicionou o endereço IP à sua lista de bloqueios.
 
