@@ -12,9 +12,9 @@ content-type: reference
 topic-tags: deliverability-management
 discoiquuid: d41658ab-ee79-4a5c-a165-d94b81eb2b33
 translation-type: tm+mt
-source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+source-git-commit: 75cbb8d697a95f4cc07768e6cf3585e4e079e171
 workflow-type: tm+mt
-source-wordcount: '248'
+source-wordcount: '247'
 ht-degree: 84%
 
 ---
@@ -31,7 +31,7 @@ O SpamAssassin aproveita uma variedade de técnicas de detecção de spam, inclu
 * Detecção de spam com base em DNS e soma de verificação difusa
 * Filtragem Bayesiana
 * Programas externos
-* Listas de bloqueios
+* listas de bloqueios
 * Bancos de dados online
 
 >[!NOTE]
