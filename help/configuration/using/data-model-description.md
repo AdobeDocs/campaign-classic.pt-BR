@@ -10,7 +10,7 @@ content-type: reference
 topic-tags: schema-reference
 discoiquuid: 5957b39e-c2c6-40a2-b81a-656e9ff7989c
 translation-type: tm+mt
-source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+source-git-commit: 75cbb8d697a95f4cc07768e6cf3585e4e079e171
 workflow-type: tm+mt
 source-wordcount: '2375'
 ht-degree: 1%
@@ -52,7 +52,7 @@ Esta tabela corresponde ao schema **nms:recipient** .
 * iEmailFormat: formato preferencial para emails (1 para Texto, 2 para HTML e 0 se não estiver definido).
 * sAddress1, sAddress2, sAddress3, sAddress4, sZipCode, sCity são usados para criar o endereço postal (em conformidade com o padrão AFNOR XPZ 10-011 de maio de 1997).
 * sPhone, sMobilePhone, sFax contêm os números de telefone, telefone celular e fax, respectivamente.
-* iBlockList é o sinalizador de opção de não participação padrão usado para os perfis (1 significa &quot;não inscrito&quot;, 0 caso contrário).
+* iBlackList é o sinalizador de opção de não participação padrão usado para os perfis (1 significa &quot;não inscrito&quot;, 0 caso contrário).
 
 O campo iFolderId é a chave estrangeira que vincula o recipient à pasta de execução. For more on this, see [XtkFolder](#XtkFolder).
 
