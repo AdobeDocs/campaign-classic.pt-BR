@@ -12,10 +12,10 @@ content-type: reference
 topic-tags: about-deliveries-and-channels
 discoiquuid: df29492f-ed73-4ab8-b075-e76b3b9ebce3
 translation-type: tm+mt
-source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+source-git-commit: 75cbb8d697a95f4cc07768e6cf3585e4e079e171
 workflow-type: tm+mt
-source-wordcount: '1673'
-ht-degree: 100%
+source-wordcount: '1671'
+ht-degree: 98%
 
 ---
 
@@ -181,7 +181,7 @@ A guia **[!UICONTROL Advanced]** das propriedades de delivery permite definir as
 As seguintes opções estão disponíveis:
 
 * A primeira opção permite que você mantenha as duplicatas da prova.
-* As duas opções a seguir permitem manter em quarentena os recipients que estão nas listas de bloqueios e de endereços. Consulte a descrição dessas opções para o target principal em [Personalizar configurações de exclusão](../../delivery/using/steps-defining-the-target-population.md#customizing-exclusion-settings). Diferentemente do target de um delivery, onde esses endereços são excluídos por padrão, eles serão mantidos por padrão para o target de uma prova.
+* Ambas as opções a seguir permitem manter recipient que estão em lista de bloqueios e endereços em quarentena. Consulte a descrição dessas opções para o target principal em [Personalizar configurações de exclusão](../../delivery/using/steps-defining-the-target-population.md#customizing-exclusion-settings). Diferentemente do target de um delivery, onde esses endereços são excluídos por padrão, eles serão mantidos por padrão para o target de uma prova.
 * A opção **[!UICONTROL Keep the delivery code for the proof]** permite que você forneça o mesmo código de delivery que o definido para o delivery com o qual ele está relacionado. Este código é especificado na primeira etapa do assistente de delivery.
 * Por padrão, o assunto da prova tem o prefixo &#39;Proof #&#39;, onde # é o número da prova. É possível alterar esse prefixo no campo **[!UICONTROL Label prefix]**.
 
