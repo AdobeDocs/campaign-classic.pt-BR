@@ -1,6 +1,6 @@
 ---
 title: Sobre as aplicações web
-description: Crie e compartilhe Aplicações web, landings page e pesquisas dinâmicas.
+description: Crie e compartilhe aplicativos dinâmicos para web, landing pages e pesquisas.
 page-status-flag: never-activated
 uuid: acfa6e5e-b503-4a1a-871e-e70007874f57
 contentOwner: sauviat
@@ -13,12 +13,12 @@ translation-type: tm+mt
 source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
 workflow-type: tm+mt
 source-wordcount: '687'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
 
-# Introdução aos aplicativos da Web{#about-web-applications}
+# Introdução às aplicações web{#about-web-applications}
 
 O Adobe Campaign permite criar e publicar aplicações web dinâmicas e interativas com dados do banco de dados e conteúdo adaptado aos direitos do usuário conectado.
 
