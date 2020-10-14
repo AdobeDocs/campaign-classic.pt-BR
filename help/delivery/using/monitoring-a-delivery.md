@@ -12,10 +12,10 @@ content-type: reference
 topic-tags: monitoring-deliveries
 discoiquuid: 3aab3d47-76fd-4c68-add4-9c14240c936e
 translation-type: tm+mt
-source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+source-git-commit: 75cbb8d697a95f4cc07768e6cf3585e4e079e171
 workflow-type: tm+mt
-source-wordcount: '2567'
-ht-degree: 100%
+source-wordcount: '2562'
+ht-degree: 97%
 
 ---
 
@@ -114,12 +114,12 @@ A manutenção da plataforma e do banco de dados também pode afetar os desempen
 
 Depois de clicar no botão **[!UICONTROL Send]**, seu delivery parece demorar mais do que o normal. Isso pode ser causado por elementos diferentes:
 
-* Alguns provedores de email podem ter adicionado seus endereços IP a uma lista de bloqueios. Neste caso, verifique seus broadlogs e consulte [esta seção](../../delivery/using/about-deliverability.md).
+* Alguns provedores de e-mail podem ter adicionado seus endereços IP a uma lista de bloqueios. Neste caso, verifique seus broadlogs e consulte [esta seção](../../delivery/using/about-deliverability.md).
 * Seu delivery pode ser muito grande para ser processado rapidamente, isso pode ocorrer com alta personalização do JavaScript ou se o seu delivery pesa mais do que 60 kbytes. Consulte as [Práticas recomendadas de delivery](../../delivery/using/delivery-best-practices.md) do Adobe Campaign para saber mais sobre as diretrizes de conteúdo.
 * Pode ter ocorrido limitação dentro do MTA do Adobe Campaign. Isso é causado por:
 
    * Mensagens pendentes (**[!UICONTROL quotas met]** message): as cotas declaradas pelas regras MX declarativas definidas no Campaign foram atendidas. Para obter mais informações sobre esse tipo de mensagem, consulte [esta página](../../delivery/using/deliverability-faq.md). Para saber mais sobre as regras MX, consulte [esta página](../../delivery/using/technical-recommendations.md#mx-rules).
-   * Mensagens pendentes (mensagem **[!UICONTROL dynamic flow control]**): o MTA do Campaign encontrou erros ao tentar entregar mensagens para um determinado ISP, o que faz com que um atraso evite uma densidade de erros muito grande e, portanto, enfrente uma possível inclusão na lista de bloqueios.
+   * Messages pended (**[!UICONTROL dynamic flow control]** message): Campaign MTA has encountered errors when trying to deliver messages for a given ISP which causes a slowdown to avoid too big of an error density and thus facing potential denylist.
 
 * Um problema do sistema pode impedir que os servidores interajam: isso pode desacelerar todo o processo de envio. Verifique os servidores para garantir que não haja problemas de memória ou recursos que possam afetar o Campaign no processo de obter os dados de personalização, por exemplo.
 
@@ -163,7 +163,7 @@ Ao enviar um delivery, você pode encontrar o seguinte status no seu painel de d
   </tr> 
   <tr> 
    <td> Ignored<br /> </td> 
-   <td> O delivery não foi enviado ao recipient devido a um erro no endereço. Foi adicionado a uma lista de bloqueios, colocado em quarentena, não fornecido ou duplicado. <br /> </td> 
+   <td> O delivery não foi enviado ao recipient devido a um erro no endereço. It was either on denylist, quarantined, not provided or a duplicate. <br /> </td> 
   </tr> 
   <tr> 
    <td> Sent<br /> </td> 
@@ -241,7 +241,7 @@ Se o status de um delivery de email for **[!UICONTROL Failed]**, ele poderá ser
 
 Os logs do delivery são fundamentais para saber por que um delivery falhou. Aqui estão possíveis erros que você pode detectar nos logs de delivery:
 
-* Se as mensagens do recipient estiverem falhando com um erro &quot;Unreachable&quot; informando: **Error while compiling script &#39;content htmlContent&#39; line X:`[table]`is not defined. JavaScript: erro ao avaliar o script &quot;content htmlContent&quot;**, a causa desse problema é quase sempre uma personalização dentro da tentativa do HTML chamar em uma tabela ou campo que não foi definido ou mapeado na construção do target de upstream ou no target mapping do delivery.
+* Se as mensagens do recipient estiverem falhando com um erro &quot;Unreachable&quot; informando: **Error while compiling script &#39;content htmlContent&#39; line X: `[table]` is not defined. JavaScript: erro ao avaliar o script &quot;content htmlContent&quot;**, a causa desse problema é quase sempre uma personalização dentro da tentativa do HTML chamar em uma tabela ou campo que não foi definido ou mapeado na construção do target de upstream ou no target mapping do delivery.
 
    Para corrigir isso, o workflow e o conteúdo do delivery precisam ser revisados para determinar especificamente qual personalização está tentando chamar a tabela em questão e se a tabela pode ou não ser mapeada. A partir daí, ao remover a chamada para esta tabela no HTML ou ao corrigir o mapping para o delivery pode ser o caminho para a resolução.
 
