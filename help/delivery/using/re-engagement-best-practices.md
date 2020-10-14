@@ -12,9 +12,9 @@ content-type: reference
 topic-tags: deliverability-management
 discoiquuid: 853f26ad-d373-49a5-952e-4197ffc3d904
 translation-type: tm+mt
-source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+source-git-commit: 75cbb8d697a95f4cc07768e6cf3585e4e079e171
 workflow-type: tm+mt
-source-wordcount: '879'
+source-wordcount: '878'
 ht-degree: 97%
 
 ---
@@ -52,7 +52,7 @@ De acordo com um estudo da Return Path, as campanhas de engajamento vêm com um 
 ### Fase 1 {#phase-1}
 
 * A primeira etapa é identificar os assinantes que têm pouca atividade de clique ou de abertura e segmentar esse grupo correspondente com base em um intervalo de tempo definido. A regra de ouro é rever os assinantes que não abriram ou não clicaram em um email nos últimos 90 dias. No entanto, isso varia de acordo com a natureza da empresa (por exemplo, envio sazonal).
-* Outro ponto a ser lembrado ao definir os prazos é que os ISPs e as empresas listas de bloqueios consideram o envolvimento como algo entre 1,5 e 1,8 anos. Além disso, atividades comportamentais, como compras e atividade do site, ou outros pontos de contato, como preferências durante a fase de inscrição ou o primeiro ponto de contato.
+* Outro ponto a ser lembrado ao definir os prazos é que os ISPs e as empresas de lista de bloqueios consideram o envolvimento como algo entre 1,5 e 1,8 anos. Além disso, atividades comportamentais, como compras e atividade do site, ou outros pontos de contato, como preferências durante a fase de inscrição ou o primeiro ponto de contato.
 
 ### Fase 2 {#phase-2}
 
