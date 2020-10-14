@@ -24,7 +24,7 @@ ht-degree: 100%
 
 Os blocos de personalização são dinâmicos, personalizados e contêm uma renderização específica que pode ser inserida em seus deliveries. Por exemplo, você pode adicionar um logotipo, uma mensagem de saudação ou um link para uma mirror page. Consulte [Inserção de blocos de personalização](#inserting-personalization-blocks).
 
-![](assets/do-not-localize/how-to-video.png)[ Descubra este recurso no vídeo](#personalization-blocks-video)
+![](assets/do-not-localize/how-to-video.png) Descubra este recurso [no vídeo](#personalization-blocks-video)
 
 Os blocos de personalização são acessados por meio do nó **[!UICONTROL Resources > Campaign Management > Personalization blocks]** do explorador do Adobe Campaign. Vários blocos estão disponíveis por padrão (consulte [Blocos de personalização prontos para uso](#out-of-the-box-personalization-blocks)).
 
