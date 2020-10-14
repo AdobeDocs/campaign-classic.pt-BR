@@ -1,6 +1,6 @@
 ---
 title: Sobre mensagens transacionais
-description: 'Enviar mensagens de disparo com base em eventos gerados a partir de sistemas de informações. '
+description: 'Enviar mensagens por disparo com base em eventos gerados a partir de sistemas de informação. '
 page-status-flag: never-activated
 uuid: c854daac-8756-44f3-a4e2-be31177ab9d1
 contentOwner: sauviat
@@ -13,7 +13,7 @@ translation-type: tm+mt
 source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
 workflow-type: tm+mt
 source-wordcount: '164'
-ht-degree: 93%
+ht-degree: 100%
 
 ---
 
