@@ -1,6 +1,6 @@
 ---
 title: Sobre marketing social
-description: Saiba como usar a Campanha para interagir com os clientes via Facebook e Twitter.
+description: Saiba como usar o Campaign para interagir com os clientes pelo Facebook e pelo Twitter.
 page-status-flag: never-activated
 uuid: 64c861e3-b685-44e2-9b5b-4fbf5d70baa9
 contentOwner: sauviat
@@ -13,7 +13,7 @@ translation-type: tm+mt
 source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
 workflow-type: tm+mt
 source-wordcount: '166'
-ht-degree: 92%
+ht-degree: 100%
 
 ---
 
