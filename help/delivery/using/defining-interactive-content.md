@@ -10,10 +10,10 @@ content-type: reference
 topic-tags: sending-emails
 discoiquuid: 2ea2747f-957f-41a9-a03f-20c03fa99116
 translation-type: tm+mt
-source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+source-git-commit: 75cbb8d697a95f4cc07768e6cf3585e4e079e171
 workflow-type: tm+mt
-source-wordcount: '1574'
-ht-degree: 95%
+source-wordcount: '1573'
+ht-degree: 93%
 
 ---
 
@@ -151,6 +151,7 @@ Também é possível consultar as [Dicas e as limitações conhecidas do Gmail](
 Atualmente, você pode experimentar o envio de um email AMP em duas etapas:
 
 1. O Adobe Campaign permite testar o delivery de um email dinâmico alimentado pela AMP para endereços de email selecionados e adequadamente configurados, a fim de verificar o conteúdo e comportamento. Consulte [Teste de delivery de email AMP para endereços selecionados](#testing-amp-delivery-for-selected-addresses).
+
 1. Depois de testado, é possível enviar um delivery ou uma campanha como parte do programa AMP for Email por meio do registro em provedores de email relevantes, para que o domínio do remetente seja incluído na lista de permissões. Consulte [Delivery de emails do AMP através de registro em um provedor de email](#delivering-amp-emails-by-registering).
 
 ### Teste de delivery de email do AMP para endereços selecionados {#testing-amp-delivery-for-selected-addresses}
@@ -161,7 +162,7 @@ Atualmente, você pode experimentar o envio de um email AMP em duas etapas:
 >
 >Atualmente, apenas o Gmail, Outlook e Mail.ru são compatíveis com testes no formato AMP.
 
-Para Gmail e Outlook, é necessário adicionar o(s) endereço(s) do remetente à lista de permissão que é usada para delivery a partir do Adobe Campaign para as contas do Gmail e do Outlook que você está direcionando.
+Para o Gmail e o Outlook, primeiro adicione os endereços de remetente que você está usando à lista de permissões para entregar da Adobe Campaign para as contas do Gmail e do Outlook que você está direcionando.
 
 Para fazer isso:
 1. Verifique se a opção que permite o email dinâmico está marcada para os provedores de email relevantes.
