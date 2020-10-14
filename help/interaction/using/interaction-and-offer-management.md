@@ -1,6 +1,6 @@
 ---
 title: Interação e gestão de ofertas
-description: Envie as melhores ofertas aos seus contatos com base no regra de elegibilidade.
+description: Envie as melhores ofertas aos seus contatos com base nas regras de elegibilidade.
 page-status-flag: never-activated
 uuid: 70720baa-e64e-4fb6-8301-fe3920791f79
 contentOwner: sauviat
@@ -13,7 +13,7 @@ translation-type: tm+mt
 source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
 workflow-type: tm+mt
 source-wordcount: '290'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
