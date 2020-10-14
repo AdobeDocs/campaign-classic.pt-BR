@@ -7,13 +7,13 @@ contentOwner: sauviat
 products: SG_CAMPAIGN/CLASSIC
 audience: rns
 content-type: reference
-topic-tags: latest-release-notes
+topic-tags: latest-documentation-updates
 discoiquuid: 5df34f55-135a-4ea8-afc2-f9427ce5ae7b
 translation-type: tm+mt
-source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+source-git-commit: d06cc9c090e2ad8b72ce3192a26108ec213ba549
 workflow-type: tm+mt
-source-wordcount: '3704'
-ht-degree: 100%
+source-wordcount: '3695'
+ht-degree: 99%
 
 ---
 
@@ -23,6 +23,10 @@ ht-degree: 100%
 Esta página lista todos os novos recursos e atualizações de documentação por mês e versão do Campaign.
 
 Você também pode consultar as [Notas de versão do Adobe Campaign Classic](../../rn/using/latest-release.md) para obter mais atualizações.
+
+## Outubro de 2020 {#oct-2020}
+
+Uma nova nota técnica foi criada com detalhes sobre como migrar do protocolo binário legado para a API do provedor APNs baseada em HTTP/2. [Leia mais](https://helpx.adobe.com/campaign/kb/migrate-to-apns-http2.html)
 
 ## Setembro de 2020 {#september-2020}
 
@@ -94,8 +98,6 @@ As práticas recomendadas foram adicionadas na seção atividade de **[!UICONTRO
 A seção Remoção de um endereço em quarentena foi atualizada. Ela esclarece os casos em que os endereços são removidos automaticamente da lista de quarentena. [Leia mais](../../delivery/using/understanding-quarantine-management.md#removing-a-quarantined-address)
 
 Casos de uso foram adicionados em como [criptografar](../../workflow/using/how-to-use-workflow-data.md#use-case-gpg-encrypt) e [descriptografar](../../workflow/using/importing-data.md#use-case-gpg-decrypt) dados usando o Painel de controle do Campaign e workflows do Campaign.
-
-Os termos &quot;white list&quot; e &quot;black list&quot; foram removidos da documentação do Adobe Campaign. Algumas ocorrências desses termos ainda podem existir na interface do usuário do produto, nos nomes de opções e no código interno, mas serão substituídas em versões futuras do Campaign por &quot;lista de bloqueios&quot; e &quot;lista de permissões&quot;.
 
 Os acionadores da Experience Cloud e a página de integração do Adobe Campaign Classic foram movidos [para cá](../../integrations/using/about-triggers.md).
 
