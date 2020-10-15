@@ -1,6 +1,6 @@
 ---
 title: Sobre o modelo de dados da Adobe Campaign Classic
-description: Saiba como estender o modelo de dados de Campanha, editar schemas, usar APIs e muito mais.
+description: Saiba como estender o modelo de dados do Campaign, editar esquemas, usar APIs e muito mais.
 page-status-flag: never-activated
 uuid: faddde15-59a1-4d2c-8303-5b3e470a0c51
 contentOwner: sauviat
@@ -13,7 +13,7 @@ translation-type: tm+mt
 source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
 workflow-type: tm+mt
 source-wordcount: '971'
-ht-degree: 7%
+ht-degree: 8%
 
 ---
 
