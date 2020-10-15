@@ -12,7 +12,7 @@ content-type: reference
 topic-tags: appendices
 discoiquuid: 9c1884f6-1dd8-41ab-b8dc-604c8cc2dc89
 translation-type: tm+mt
-source-git-commit: 75cbb8d697a95f4cc07768e6cf3585e4e079e171
+source-git-commit: 63b208e5607bdcddaef03292d229847c4b7366f8
 workflow-type: tm+mt
 source-wordcount: '3927'
 ht-degree: 3%
@@ -648,7 +648,7 @@ Alguns deles são incorporados ao instalar a Campanha e outros podem ser adicion
   </tr> 
     <tr> 
    <td> <span class="uicontrol">WdbcOptions_TempDbName</span> <br /> </td> 
-   <td> Permite configurar um banco de dados separado para tabelas de trabalho no Microsoft SQL Server, a fim de otimizar backups e replicação. A opção corresponde ao nome do banco de dados temporário: As tabelas de trabalho serão gravadas neste banco de dados, se especificado. Exemplo: 'tempdb.dbo.' (observe que o nome deve terminar com um ponto).</desc> <a href="../../production/using/rdbms-specific-recommendations.md#microsoft-sql-server">Leia mais</a> <br /> </td> 
+   <td> Permite configurar um banco de dados separado para tabelas de trabalho no Microsoft SQL Server, a fim de otimizar backups e replicação. A opção corresponde ao nome do banco de dados temporário: As tabelas de trabalho serão gravadas neste banco de dados, se especificado. Exemplo: 'tempdb.dbo.' (observe que o nome deve terminar com um ponto). <a href="../../production/using/rdbms-specific-recommendations.md#microsoft-sql-server">Leia mais</a> <br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">WdbcTimeZone</span> <br /> </td> 
