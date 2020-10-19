@@ -22,7 +22,7 @@ ht-degree: 100%
 
 Você clicou no botão Enviar? Vamos ver o que acontece. Depois que o delivery é enviado, o Adobe Campaign permite acompanhar as mensagens enviadas e descobrir como os recipients reagem ao seu delivery. Isso o ajudará a melhorar o envio futuro e a otimizar as próximas campanhas.
 
-## Monitorar deliveries {#monitoring-deliveries}
+## Monitoramento de deliveries {#monitoring-deliveries}
 
 Para controlar suas campanhas, você deve garantir que a mensagem tenha sido entregue aos recipients.
 
