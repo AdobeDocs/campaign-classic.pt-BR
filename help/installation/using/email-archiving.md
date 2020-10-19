@@ -12,15 +12,15 @@ content-type: reference
 topic-tags: additional-configurations
 discoiquuid: d6467875-949b-4b47-940f-620efd4db5e0
 translation-type: tm+mt
-source-git-commit: 75cbb8d697a95f4cc07768e6cf3585e4e079e171
+source-git-commit: b447e316bed8e0e87d608679c147e6bd7b0815eb
 workflow-type: tm+mt
-source-wordcount: '1303'
-ht-degree: 3%
+source-wordcount: '1306'
+ht-degree: 2%
 
 ---
 
 
-# Arquivamento de email{#email-archiving}
+# Cco de email {#email-archiving}
 
 Você pode configurar o Adobe Campaign para manter uma cópia dos emails enviados da sua plataforma.
 
@@ -30,15 +30,15 @@ Para fazer isso, os arquivos .eml correspondentes aos emails enviados são trans
 
 ## Recommendations e limitações {#recommendations-and-limitations}
 
-* O recurso de arquivamento de e-mails é opcional. Verifique o contrato de licença.
-* Para arquiteturas **** hospedadas e híbridas, entre em contato com o executivo da sua conta para ativá-la. O endereço CCO de sua escolha deve ser fornecido à equipe do Adobe que o configurará para você.
-* Para instalações **** no local, siga as diretrizes abaixo para ativá-la - consulte as seções [Ativando o arquivamento de e-mails (no local)](#activating-email-archiving--on-premise-) e [Configurando o endereço de e-mail CCO (no local)](#configuring-the-bcc-email-address--on-premise-) .
+* O recurso CCO de email é opcional. Verifique o contrato de licença.
+* Para arquiteturas **** hospedadas e híbridas, entre em contato com o executivo da sua conta para ativá-la. O endereço de e-mail CCO de sua escolha deve ser fornecido à equipe do Adobe que o configurará para você.
+* Para instalações **** no local, siga as diretrizes abaixo para ativá-la - consulte as seções [Ativando e-mail CCO (no local)](#activating-email-archiving--on-premise-) e [Configurando o endereço de e-mail CCO (no local)](#configuring-the-bcc-email-address--on-premise-) .
 * Você só pode usar um endereço de email Cco.
-* Depois que o e-mail BCC for configurado, verifique se o recurso está ativado no template do delivery ou no delivery por meio da **[!UICONTROL Archive emails]** opção. Para obter mais informações, consulte [esta seção](../../delivery/using/sending-messages.md#archiving-emails).
+* Depois que o e-mail BCC for configurado, verifique se o recurso está ativado no template do delivery ou no delivery por meio da **[!UICONTROL Email BCC]** opção. Para obter mais informações, consulte [esta seção](../../delivery/using/sending-messages.md#archiving-emails).
 * Somente emails enviados com êxito são levados em conta, mas não rejeições.
-* O sistema de arquivamento de e-mails foi alterado com o Adobe Campaign 17.2 (build 8795). Se você já estava usando o arquivamento de e-mails, é necessário atualizar manualmente para o novo sistema de arquivamento de e-mails (BCC). Para obter mais informações, consulte a seção Sistema de arquivamento de e-mails [atualizado (BCC)](#updated-email-archiving-system--bcc-) .
+* O sistema de arquivamento de e-mails foi alterado com o Adobe Campaign 17.2 (build 8795). Se você já estava usando o arquivamento de e-mail, é necessário atualizar manualmente para o novo sistema de e-mail CCO. Para obter mais informações, consulte a seção [Mover para a nova Cco](#updated-email-archiving-system--bcc-) de email.
 
-## Ativando o arquivamento de e-mails (no local) {#activating-email-archiving--on-premise-}
+## Ativando Cco de email (no local) {#activating-email-archiving--on-premise-}
 
 Para ativar o arquivamento de e-mails em Cco quando a Adobe Campaign estiver instalada no local, siga as etapas abaixo.
 
@@ -70,7 +70,7 @@ C:\emails\2018-12-02\13h\4012-8040-sent.eml
 
 >[!NOTE]
 >
->Em uma instância mid-sourcing, o diretório dos e-mails arquivados está localizado no servidor mid-sourcing.
+>Em uma instância mid-sourcing, o diretório dos emails BCC está localizado no servidor mid-sourcing.
 >
 >A deliveryID e a BroadlogID vêm do servidor de mid-sourcing quando o status dos e-mails não é enviado. Depois que o status é alterado para **[!UICONTROL Sent]**, essas IDs vêm do servidor de marketing.
 
@@ -128,7 +128,7 @@ No arquivo **config-`<instance name>.xml`** , use os seguintes parâmetros para 
 >
 >Além disso, o relé atribui um **[!UICONTROL Sent]** status a todos os emails, incluindo aqueles que não são enviados. Portanto, todas as mensagens são arquivadas.
 
-## Sistema atualizado de arquivamento de e-mails (BCC) {#updated-email-archiving-system--bcc-}
+## Mudar para a nova Cco de Correio Eletrônico {#updated-email-archiving-system--bcc-}
 
 >[!CAUTION]
 >
@@ -140,9 +140,9 @@ Para fazer isso, faça as seguintes alterações no **`config-<instance>.xml`** 
 1. Defina o parâmetro **compressionFormat** como **1** , se necessário.
 1. Defina o parâmetro **archiveType** como **1**.
 
-Depois que o e-mail BCC estiver configurado, selecione a **[!UICONTROL Archive emails]** opção no template do delivery ou no delivery. Para obter mais informações, consulte [esta seção](../../delivery/using/sending-messages.md#archiving-emails).
+Depois que o e-mail BCC estiver configurado, selecione a **[!UICONTROL Email BCC]** opção no template do delivery ou no delivery. Para obter mais informações, consulte [esta seção](../../delivery/using/sending-messages.md#archiving-emails).
 
-## Práticas recomendadas {#best-practices}
+## Práticas recomendadas de Cco de email {#best-practices}
 
 * **Caixa de correio** de endereço CCO: verifique se ele tem capacidade de recepção suficiente para arquivar todos os emails enviados pelo MTA.
 * **MTA mutualização**: o recurso de arquivamento CCO funciona no nível MTA. Ele permite que você duplicado cada email enviado pelo MTA. Como o MTA pode ser mutualizado em várias instâncias (dev, test ou prod, por exemplo) ou até mesmo em vários clientes (em um ambiente mid-sourcing), a configuração desse recurso afeta a segurança:
