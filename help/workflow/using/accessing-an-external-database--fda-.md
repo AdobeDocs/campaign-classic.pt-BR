@@ -26,7 +26,7 @@ O Adobe Campaign oferece a opção Federated Data Access (FDA) para processar in
 
 Várias atividades permitem interagir com dados de um banco de dados externo:
 
-* Consulta
+* Query
 * Split
 * Enriquecimento
 * Data loading
