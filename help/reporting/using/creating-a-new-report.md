@@ -1,8 +1,6 @@
 ---
 title: Criação de um novo relatório
-seo-title: Criação de um novo relatório
-description: Criação de um novo relatório
-seo-description: null
+description: Saiba mais sobre as principais etapas para criar um novo relatório
 page-status-flag: never-activated
 uuid: dcea5c28-da09-4a31-a13c-c8995c6faa63
 contentOwner: sauviat
@@ -12,10 +10,10 @@ content-type: reference
 topic-tags: creating-new-reports
 discoiquuid: 22c92ddf-fbea-49d3-afd4-1ba427be399d
 translation-type: tm+mt
-source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+source-git-commit: 2a82493deada11cb22ef37d215b6eae8274ce890
 workflow-type: tm+mt
-source-wordcount: '929'
-ht-degree: 100%
+source-wordcount: '923'
+ht-degree: 86%
 
 ---
 
@@ -60,29 +58,29 @@ As atividades são vinculadas usando transições, representadas por setas.
 
 Para criar um relatório, dependendo da natureza e do contexto, é preciso identificar os elementos úteis e modelizar sua sequência lógica.
 
-1. Use a atividade &quot;Start&quot; para materializar o primeiro processo a ser executado para criar o relatório. Só é possível usar uma dessas atividades por relatório.
+1. Use the **[!UICONTROL Start]** activity to materialize the first process to be carried out to build the report. Só é possível usar uma dessas atividades por relatório.
 
    Isso é obrigatório se o gráfico incluir um loop.
 
-1. Adicione uma ou mais atividades &quot;Query&quot; para coletar dados úteis para criar o relatório. Os dados podem ser coletados diretamente por uma query em um schema do banco de dados ou através de uma lista importada ou de um Cubo existente.
+1. Add one or more **[!UICONTROL Query]** activities to collect data that is useful for building the report. Os dados podem ser coletados diretamente por uma query em um schema do banco de dados ou através de uma lista importada ou de um Cubo existente.
 
    Para obter mais informações, consulte [Coleta de dados a serem analisados](../../reporting/using/collecting-data-to-analyze.md).
 
    Esses dados serão exibidos (ou não) no relatório dependendo da configuração da página.
 
-1. Coloque uma ou mais atividades &quot;Page&quot; para definir a representação gráfica dos dados coletados. É possível inserir tabelas, gráficos, campos de entrada e condição de uma ou mais páginas ou elementos da página. O conteúdo exibido é totalmente configurável.
+1. Place one or more **[!UICONTROL Page]** activities to define the graphical representation of the collected data. É possível inserir tabelas, gráficos, campos de entrada e condição de uma ou mais páginas ou elementos da página. O conteúdo exibido é totalmente configurável.
 
    Para obter mais informações, consulte [Elementos estáticos](#static-elements).
 
-1. Use uma atividade &quot;Test&quot; para definir as condições para exibir ou acessar dados.
+1. Use a **[!UICONTROL Test]** activity to define the conditions for displaying or accessing data.
 
    Para obter mais informações, consulte [Condições para exibição de página](../../reporting/using/defining-a-conditional-content.md#conditioning-page-display).
 
-1. Se necessário, adicione scripts personalizados pela atividade &quot;Script&quot;, por exemplo, para calcular o nome de um relatório, para filtrar a exibição do resultado em um contexto específico, etc.
+1. If necessary, add personalized scripts via the **[!UICONTROL Script]** activity, for instance to calculate the name of a report, to filter the display of the result within a specific context, etc.
 
    Para obter mais informações, consulte [Atividade “Script”](../../reporting/using/advanced-functionalities.md#script-activity).
 
-1. Por fim, para ler mais facilmente relatórios complexos, é possível inserir atividades do tipo &quot;Jump&quot;. Isso permite passar de uma atividade para outra sem materializar a transição no relatório. O &quot;Jump&quot; também pode ser usado para exibir outro relatório.
+1. Finally, you for easier reading of complex reports, you can insert one or more **[!UICONTROL Jump]** type activities. Isso permite passar de uma atividade para outra sem materializar a transição no relatório. The **[!UICONTROL Jump]** activity can also be used to display another report.
 
    Para obter mais informações, consulte [Atividade “Jump”](../../reporting/using/advanced-functionalities.md#jump-activity).
 
@@ -167,4 +165,3 @@ Por fim, é possível integrar um ou mais controles avançados aos relatórios. 
 Aqui é possível filtrar os dados no relatório para exibir apenas as informações contidas em uma das pastas da árvore:
 
 ![](assets/reporting_control_folder.png)
-
