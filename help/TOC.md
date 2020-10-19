@@ -8,10 +8,10 @@ product: adobe campaign
 sub-product: Adobe Campaign Classic
 type: Documentation
 translation-type: tm+mt
-source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+source-git-commit: b447e316bed8e0e87d608679c147e6bd7b0815eb
 workflow-type: tm+mt
-source-wordcount: '2139'
-ht-degree: 100%
+source-wordcount: '2130'
+ht-degree: 99%
 
 ---
 
@@ -577,17 +577,16 @@ ht-degree: 100%
       + [Exemplos de aplicativos do Facebook](social/using/examples-of-facebook-apps.md)
       + [Rastreamento](social/using/tracking.md)
 + Instalação do Campaign Classic {#installing-campaign-classic}
-   + Modelos de arquitetura e hospedagem {#architecture-and-hosting-models}
-      + [Antes de ler](installation/using/before-reading.md)
+   + Princípios da arquitetura {#architecture-and-hosting-models}
       + [Arquitetura geral](installation/using/general-architecture.md)
-      + [Modelos de hospedagem](installation/using/hosting-models.md)
-   + Modelos híbridos e hospedados {#hybrid-and-hosted-models}
-      + [Sobre modelos híbridos e hospedados](installation/using/about-hybrid-and-hosted-models.md)
-      + [Modelo híbrido](installation/using/hybrid-model.md)
-      + [Modelo hospedado](installation/using/hosted-model.md)
-   + Pré-requisitos e recomendações {#prerequisites-and-recommendations-}
-      + [Antes de começar](installation/using/before-starting.md)
-      + [Banco de dados](installation/using/database.md)
+      + Modelos de hospedagem{#hosting-models-lp}
+         + [Sobre modelos de hospedagem](installation/using/hosting-models.md)
+         + [Modelo híbrido](installation/using/hybrid-model.md)
+         + [Modelo hospedado](installation/using/hosted-model.md)
+         + [Matriz de recursos](installation/using/capability-matrix.md)
+   + Diretrizes de implantação {#deployment-guidelines}
+      + [Pré-requisitos](installation/using/before-starting.md)
+      + [Servidor de banco de dados](installation/using/database.md)
       + [Servidor de aplicativos](installation/using/application-server.md)
       + [Servidor de mensagens](installation/using/messaging-server.md)
       + [Configuração de rede](installation/using/network-configuration.md)
