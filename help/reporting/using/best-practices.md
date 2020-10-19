@@ -1,8 +1,6 @@
 ---
 title: Práticas recomendadas para relatórios
-seo-title: Práticas recomendadas para relatórios
-description: Práticas recomendadas para relatórios
-seo-description: null
+description: Práticas recomendadas para o relatórios de campanhas
 page-status-flag: never-activated
 uuid: 09de6a17-b3a7-4543-b672-b0a21653aa75
 contentOwner: sauviat
@@ -12,15 +10,15 @@ content-type: reference
 topic-tags: reporting-in-adobe-campaign
 discoiquuid: 904961e0-7dff-4350-8d5d-e4bdd368b3ff
 translation-type: tm+mt
-source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+source-git-commit: 2a82493deada11cb22ef37d215b6eae8274ce890
 workflow-type: tm+mt
-source-wordcount: '817'
-ht-degree: 100%
+source-wordcount: '839'
+ht-degree: 87%
 
 ---
 
 
-# Práticas recomendadas para relatórios{#best-practices-reporting}
+# Práticas recomendadas para o relatórios{#best-practices-reporting}
 
 ## Análise de necessidades{#analyzing-needs}
 
@@ -36,15 +34,15 @@ Para otimizar a criação, o uso e a durabilidade de um relatório, é preciso o
 
    Por exemplo, é possível:
 
-   * Explorar os dados no banco de dados e definir medidas (por meio [desta seção](../../reporting/using/about-cubes.md)),
-   * Adicionar indicadores a um relatório existente (consulte [esta seção](../../reporting/using/about-reports-creation-in-campaign.md)),
-   * Visualizar os dados no banco de dados (por meio [desta seção](../../reporting/using/about-descriptive-analysis.md)),
-   * Criar um novo relatório de delivery (consulte [esta seção](../../reporting/using/about-reports-creation-in-campaign.md)),
-   * Exportar dados do banco de dados do Adobe Campaign (por meio de um workflow, consulte [esta seção](../../workflow/using/about-workflows.md)),
-   * Criar uma tabela dinâmica (consulte [esta seção](../../reporting/using/creating-a-table.md#creating-a-breakdown-or-pivot-table)),
-   * Explorar dados agregados (por meio [desta seção](../../reporting/using/about-cubes.md)),
-   * Usar um assistente para analisar dados (por meio [desta seção](../../reporting/using/about-descriptive-analysis.md)),
-   * Analisar grandes volumes de dados (consulte [esta seção](../../reporting/using/about-reports-creation-in-campaign.md)) e etc.
+   * Explore os dados no banco de dados e defina medidas. Saiba mais [nesta seção](../../reporting/using/about-cubes.md)
+   * Adicionar indicadores a um relatório existente. Saiba mais [nesta seção](../../reporting/using/about-reports-creation-in-campaign.md)
+   * Visualização dos dados no banco de dados. Saiba mais [nesta seção](../../reporting/using/about-descriptive-analysis.md)
+   * Crie um novo relatório de delivery. Saiba mais [nesta seção](../../reporting/using/about-reports-creation-in-campaign.md)),
+   * Exportar dados do banco de dados do Adobe Campaign (por meio de um workflow, consulte [esta seção](../../workflow/using/about-workflows.md)
+   * Crie uma tabela dinâmica. Saiba mais [nesta seção](../../reporting/using/creating-a-table.md#creating-a-breakdown-or-pivot-table)
+   * Explore dados agregados. Saiba mais [nesta seção](../../reporting/using/about-cubes.md)
+   * Use um assistente para analisar dados. Saiba mais [nesta seção](../../reporting/using/about-descriptive-analysis.md)
+   * Analise grandes volumes de dados. Saiba mais [nesta seção](../../reporting/using/about-reports-creation-in-campaign.md)
 
 1. Identificar a população do target
 
@@ -79,7 +77,7 @@ Especificamente:
 
    Da mesma forma, durante a fase de design, com um pequeno volume de dados, se o cálculo de relatório exceder 60 segundos, os métodos de cálculo devem ser alterados.
 
-* Ao usar o Marketing Analytics, os dados manipulados não devem exceder 10 milhões de linhas.
+* Ao usar o módulo do Marketing Analytics, os dados do relatórios não devem exceder 10 milhões de linhas.
 
 Também recomendamos calcular agregados à noite e usar esses dados agregados diretamente nos relatórios. Esses agregados devem ser criados por meio de workflows dedicados de Gestão de Dados (queries SQL).
 
@@ -103,15 +101,19 @@ As recomendações acima permitem otimizar o cálculo do relatório.
 
 Além disso, o Adobe Campaign recomenda as seguintes melhorias:
 
-* Estude o DataModel: os campos indexados devem ser usados principalmente para melhorar as fórmulas de cálculo.
+* Trabalhe em seu modelo de dados: os campos indexados devem ser usados principalmente para melhorar as fórmulas de cálculo.
 
    Para localizar um campo indexado rapidamente, examine o nome da coluna na interface do Adobe Campaign: a seta de classificação está sublinhada em vermelho se o campo estiver indexado.
 
-* Garanta que o relatório seja válido a longo prazo: o volume de dados pode aumentar significativamente ao longo do tempo.
+   For more on indexes, refer to [this section](../../configuration/using/data-model-best-practices.md#indexes).
+
+* Verifique se o relatório é dimensionável: o volume de dados pode aumentar significativamente ao longo do tempo.
 
    Da mesma forma, o volume de dados manipulados durante as fases de teste pode diferir do volume de dados real na produção. É por isso que as fases de teste são importantes.
 
    Finalmente, os atrasos de eliminação de dados precisam ser conhecidos e adaptados quando necessário para facilitar a manipulação de dados.
+
+   Para obter mais informações sobre limpeza e retenção de dados, consulte [esta seção](../../configuration/using/data-model-best-practices.md#data-retention).
 
 ### Exportação de relatórios {#exporting-reports}
 
