@@ -1,7 +1,7 @@
 ---
-title: Consulta incremental
-seo-title: Consulta incremental
-description: Consulta incremental
+title: Query incremental
+seo-title: Query incremental
+description: Query incremental
 seo-description: null
 page-status-flag: never-activated
 uuid: 24d322e8-172c-4faa-8a1f-59085b390a76
@@ -20,7 +20,7 @@ ht-degree: 100%
 ---
 
 
-# Consulta incremental{#incremental-query}
+# Query incremental{#incremental-query}
 
 Um query incremental permite selecionar periodicamente um target com base em um critério, enquanto exclui as pessoas já alvos desse critério.
 
