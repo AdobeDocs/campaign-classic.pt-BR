@@ -1,6 +1,6 @@
 ---
-title: Uso da tabela Recipient Adobe Campaign Classic
-description: Saiba como usar a tabela de recipient pronta para uso no Adobe Campaign Classic ao projetar seu modelo de dados.
+title: Práticas recomendadas do modelo de dados
+description: Saiba como trabalhar com o modelo de dados Campaign Classic
 page-status-flag: never-activated
 uuid: faddde15-59a1-4d2c-8303-5b3e470a0c51
 contentOwner: sauviat
@@ -10,9 +10,9 @@ content-type: reference
 topic-tags: schema-reference
 discoiquuid: 5957b39e-c2c6-40a2-b81a-656e9ff7989c
 translation-type: tm+mt
-source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+source-git-commit: 2a82493deada11cb22ef37d215b6eae8274ce890
 workflow-type: tm+mt
-source-wordcount: '3997'
+source-wordcount: '4014'
 ht-degree: 1%
 
 ---
@@ -245,7 +245,7 @@ Se o link reverso não deve estar visível para o usuário, você pode ocultá-l
 
 Os links que executam uma junção externa (1-0.1) devem ser usados com cuidado, pois isso afetará o desempenho do sistema.
 
-## Retenção de dados - Limpeza e expurgação {#data-retention}
+## Retenção de dados - limpeza e expurgação {#data-retention}
 
 A Adobe Campaign não é um data warehouse nem uma ferramenta de relatórios. Portanto, para garantir um bom desempenho da solução Adobe Campaign, o crescimento do banco de dados deve permanecer sob controle. Para isso, seguir algumas das práticas recomendadas abaixo pode ajudar.
 
@@ -253,6 +253,10 @@ Por padrão, o delivery Adobe Campaign e os logs de rastreamento têm uma duraç
 
 * Se desejar manter os registros por mais tempo, essa decisão deve ser tomada cuidadosamente dependendo do tamanho do banco de dados e do volume de mensagens enviadas. Como lembrete, a sequência do Adobe Campaign é um número inteiro de 32 bits.
 * Recomenda-se não ter mais de 1 bilhão de registros de cada vez nessas tabelas (cerca de 50% dos 2,14 bilhões de ids disponíveis) para limitar os riscos de consumo de todas as ids disponíveis. Isso exigirá que alguns clientes reduzam a duração da retenção para menos de 180 dias.
+
+Saiba mais sobre a retenção de dados nas diretrizes [de privacidade e segurança da](https://helpx.adobe.com/br/campaign/kb/campaign-privacy-overview.html#consent)Campanha.
+
+Saiba mais sobre o fluxo de trabalho de limpeza da base de dados de Campanha [nesta seção](../../production/using/database-cleanup-workflow.md).
 
 >[!IMPORTANT]
 >
