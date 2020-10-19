@@ -495,7 +495,7 @@ As seguintes opções estão disponíveis:
 
 Após enviar as mensagens, você pode monitorar e rastrear seus deliveries. Para obter mais informações, consulte essas seções.
 
-* [Monitoramento de uma entrega](../../delivery/using/monitoring-a-delivery.md)
+* [Monitorar um delivery](../../delivery/using/monitoring-a-delivery.md)
 * [Noções básicas sobre falhas de entrega](../../delivery/using/understanding-delivery-failures.md)
 * [Sobre o rastreamento de mensagens](../../delivery/using/about-message-tracking.md)
 
