@@ -28,7 +28,7 @@ A guia **[!UICONTROL Execution]** da janela **[!UICONTROL Properties]** em um wo
 
 ![](assets/wf_execution_tab.png)
 
-### Agendador {#scheduler}
+### Scheduler {#scheduler}
 
 Esta seção só é exibida nos workflows da campanha.
 
