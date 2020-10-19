@@ -12,9 +12,9 @@ content-type: reference
 topic-tags: latest-release-notes
 discoiquuid: 5df34f55-135a-4ea8-afc2-f9427ce5ae7b
 translation-type: tm+mt
-source-git-commit: 75cbb8d697a95f4cc07768e6cf3585e4e079e171
+source-git-commit: b447e316bed8e0e87d608679c147e6bd7b0815eb
 workflow-type: tm+mt
-source-wordcount: '2638'
+source-wordcount: '2625'
 ht-degree: 98%
 
 ---
@@ -33,7 +33,6 @@ _15 de setembro de 2020_
 
 
 
-* Nas propriedades do delivery, a opção **[!UICONTROL Archive emails]** foi renomeada para **[!UICONTROL Email BCC]** para obter uma melhor experiência do usuário.
 * Correção de um problema com o mecanismo de cache de url que não recuperava o rótulo ou a categoria.
 * Correção de um problema que resultava na definição incorreta de URLs de mirror page em delivery de email (devido ao controle de caracteres ASCII incorreto). (NEO-26084)
 * A lista jarsToSkip em catalina.properties foi atualizada para remover a referência a um arquivo jar que não é mais utilizado (notificações do iOS).
