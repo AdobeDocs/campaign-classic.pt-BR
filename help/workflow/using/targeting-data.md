@@ -232,7 +232,7 @@ Depois que os dados forem identificados e preparados, eles poderão ser usados n
 
    Para obter mais informações, consulte [Delivery](../../workflow/using/delivery.md), [Controle de delivery](../../workflow/using/delivery-control.md) e [Delivery contínuo](../../workflow/using/continuous-delivery.md).
 
-## Gestão de Dados {#data-management}
+## Gerenciamento de dados {#data-management}
 
 No Adobe Campaign, a Gestão de Dados combina um conjunto de atividades para resolver problemas complexos de target oferecendo ferramentas mais eficientes e flexíveis. Isso permite implementar uma gestão consistente de todas as comunicações com um contato usando informações relacionadas a seus contratos, assinaturas, reatividade aos deliveries, etc. A Gestão de Dados permite acompanhar o ciclo de vida dos dados durante as operações de segmentação, especificamente:
 
