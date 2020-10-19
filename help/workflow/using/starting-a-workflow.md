@@ -18,7 +18,7 @@ ht-degree: 95%
 ---
 
 
-# Iniciando um workflow {#starting-a-workflow}
+# Iniciar um fluxo de trabalho {#starting-a-workflow}
 
 Um workflow é sempre iniciado manualmente. Ao ser iniciado, ele pode permanecer inativo dependendo das informações especificadas por meio de um scheduler (consulte [Scheduler](../../workflow/using/scheduler.md)) ou de um agendamento de atividade. 
 
