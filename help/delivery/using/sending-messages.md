@@ -1,6 +1,6 @@
 ---
 title: Envio de um email com o Adobe Campaign Classic
-description: Saiba mais sobre os parâmetros específicos para entregar emails no Adobe Campaign Classic.
+description: Saiba mais sobre parâmetros de delivery de email
 page-status-flag: never-activated
 uuid: 791f7a54-3225-46ca-ad6f-6c32e9c62d75
 contentOwner: sauviat
@@ -10,10 +10,10 @@ content-type: reference
 topic-tags: sending-emails
 discoiquuid: e2dd8161-fe38-48bf-a288-8ec328b2660e
 translation-type: tm+mt
-source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+source-git-commit: b447e316bed8e0e87d608679c147e6bd7b0815eb
 workflow-type: tm+mt
-source-wordcount: '741'
-ht-degree: 89%
+source-wordcount: '739'
+ht-degree: 76%
 
 ---
 
@@ -29,25 +29,25 @@ O processo detalhado da validação e envio de um delivery é apresentado nas se
 
 As seções abaixo detalham os parâmetros específicos ao envio de emails.
 
-## Arquivamento de emails {#archiving-emails}
+## Cco de email {#archiving-emails}
 
 O Adobe Campaign permite que você armazene emails em um sistema externo por meio do CCo simplesmente adicionando um endereço de email do CCo ao seu destino de mensagem. Uma vez ativada a opção, uma cópia exata de todas as mensagens enviadas será mantida para este delivery.
 
-Para obter mais informações sobre a configuração do campo de email CCo, consulte [esta seção](../../installation/using/email-archiving.md).
+Para obter mais informações sobre a configuração e práticas recomendadas de Cco de email, consulte [esta seção](../../installation/using/email-archiving.md).
 
 >[!NOTE]
 >
->Este recurso é opcional. Verifique seu contrato de licença e entre em contato com o executivo da sua conta para ativá-lo.
+>A Cco de email é um recurso opcional. Verifique seu contrato de licença e entre em contato com o executivo da sua conta para ativá-la.
 
-Ao criar um novo delivery ou template do delivery, o CCo não é habilitado por padrão, mesmo que a opção tenha sido adquirida. Você deve habilitá-lo manualmente em cada delivery ou template onde deseja usá-lo.
+Ao criar um novo delivery ou template do delivery, o Email BCC não é ativado por padrão. Você precisa ativá-la manualmente no nível do delivery de e-mail ou do template do delivery.
 
-Para fazer isso, siga as etapas abaixo:
+Para ativar o Email BCC para um template do delivery de email, siga as etapas abaixo:
 
 1. Vá até **[!UICONTROL Campaign Management]** > **[!UICONTROL Deliveries]** ou **[!UICONTROL Resources]** > **[!UICONTROL Templates]** > **[!UICONTROL Delivery templates]**.
 1. Selecione o delivery de sua escolha ou duplique o template do delivery **de email** integrado e selecione o template duplicado.
 1. Clique no botão **Propriedades**.
 1. Selecione a guia **[!UICONTROL Delivery]**.
-1. Marque a caixa **Arquivar emails** para manter uma cópia de todas as mensagens enviadas para esse delivery ou para cada delivery com base nesse template.
+1. Verifique a opção **Email BCC** . Uma cópia de todas as mensagens enviadas para cada delivery com base neste modelo será enviada para o endereço Cco de email que foi configurado.
 
    ![](assets/s_ncs_user_wizard_archiving.png)
 
