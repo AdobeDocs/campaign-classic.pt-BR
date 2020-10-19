@@ -10,17 +10,17 @@ content-type: reference
 topic-tags: latest-release-notes
 discoiquuid: 5df34f55-135a-4ea8-afc2-f9427ce5ae7b
 translation-type: tm+mt
-source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+source-git-commit: d65e6f48bd84a2342895beca4a4ac184b57bf7c3
 workflow-type: tm+mt
-source-wordcount: '2163'
-ht-degree: 100%
+source-wordcount: '2188'
+ht-degree: 99%
 
 ---
 
 
 # Versão mais recente{#latest-release}
 
-![](assets/do-not-localize/cp-icon.png) **Nova versão de junho do Painel de controle do Campaign** com monitoramento de perfis ativos, auditoria de entregabilidade de subdomínio e gerenciamento de chaves GPG. [Saiba mais](https://docs.adobe.com/content/help/pt-BR/control-panel/using/release-notes.html).
+![](assets/do-not-localize/cp-icon.png) **Nova versão** de outubro de Painel de controle do Campaign com configuração de domínio usando CNAMEs e novos recursos de monitoramento de banco de dados. [Saiba mais](https://docs.adobe.com/content/help/pt-BR/control-panel/using/release-notes.html).
 
 ## ![](assets/do-not-localize/blue_2.png) Versão 20.2.3 - Build 9182 {#release-20-2-3-build-9182}
 
@@ -73,6 +73,8 @@ _22 de julho de 2020_
 * Correção de um problema que bloqueava a preparação do delivery após a atualização.
 * Após a mudança para o [novo mecanismo de ID de sequência](https://helpx.adobe.com/br/campaign/kb/sequence_auto_generation.html#Switchtoadedicatedsequence), todos os aplicativos da web que estão atualizando a tabela do recipient são republicados durante a pós-atualização.
 * Correção de uma possível vulnerabilidade XSS no conteúdo do delivery. (NEO-17987, NEO-26073)
+
+![](assets/do-not-localize/cp-icon.png) **Nova versão de junho do Painel de controle do Campaign** com monitoramento de perfis ativos, auditoria de entregabilidade de subdomínio e gerenciamento de chaves GPG. [Saiba mais](https://docs.adobe.com/content/help/pt-BR/control-panel/using/release-notes.html).
 
 ## ![](assets/do-not-localize/orange_2.png) Versão 20.2.1 - Build 9178 {#release-20-2-1-build-9178}
 
