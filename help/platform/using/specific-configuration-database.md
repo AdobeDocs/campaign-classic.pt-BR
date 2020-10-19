@@ -20,7 +20,7 @@ ht-degree: 97%
 ---
 
 
-# Configurar conectores FDA {#specific-configurations-by-database-type}
+# Configuração de conectores FDA {#specific-configurations-by-database-type}
 
 Dependendo dos bancos de dados externos que você deseja acessar do Adobe Campaign, você precisará realizar algumas configurações específicas. Essas configurações envolvem basicamente a instalação de drivers e a declaração de variáveis de ambiente pertencentes a cada RDBMS no servidor do Adobe Campaign.
 
