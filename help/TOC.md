@@ -98,14 +98,14 @@ ht-degree: 100%
       + [Otimizar o delivery](delivery/using/optimize-delivery.md)
       + [Usar modelos](delivery/using/use-templates.md)
       + [Criar conteúdo personalizado](delivery/using/design-and-personalize.md)
-      + [Definir o público-alvo certo](delivery/using/define-the-right-audience.md)
+      + [Definir o público-alvo correto](delivery/using/define-the-right-audience.md)
       + [Verificar antes de enviar](delivery/using/check-before-sending.md)
       + [Rastrear e monitorar](delivery/using/track-and-monitor.md)
    + Etapas principais ao criar um delivery {#key-steps-when-creating-a-delivery}
       + [Introdução a deliveries](delivery/using/steps-about-delivery-creation-steps.md)
       + [Criação e identificação do delivery](delivery/using/steps-create-and-identify-the-delivery.md)
       + [Definição da população do target](delivery/using/steps-defining-the-target-population.md)
-      + [Validando o delivery](delivery/using/steps-validating-the-delivery.md)
+      + [Validação do delivery](delivery/using/steps-validating-the-delivery.md)
       + [Enviando o delivery](delivery/using/steps-sending-the-delivery.md)
    + Envio de emails {#sending-emails}
       + [Sobre o canal de email](delivery/using/about-email-channel.md)
@@ -153,7 +153,7 @@ ht-degree: 100%
       + [Gerenciamento de assinaturas](delivery/using/managing-subscriptions.md)
       + [Marketing viral e social](delivery/using/viral-and-social-marketing.md)
    + Monitoramento de deliveries {#monitoring-deliveries}
-      + [Monitoramento de uma entrega](delivery/using/monitoring-a-delivery.md)
+      + [Monitorar um delivery](delivery/using/monitoring-a-delivery.md)
       + [Noções básicas sobre falhas de delivery](delivery/using/understanding-delivery-failures.md)
       + [Noções básicas sobre gestão de quarentena](delivery/using/understanding-quarantine-management.md)
    + Rastreamento de mensagens {#tracking-messages}
@@ -336,7 +336,7 @@ ht-degree: 100%
       + [Sobre o [!DNL Adobe Experience Cloud Triggers]](integrations/using/about-triggers.md)
       + [Configuração de pipeline](integrations/using/configuring-pipeline.md)
       + [Opção de pipeline NmsPipeline_Config](integrations/using/nmspipeline-config.md)
-      + [Triggers eventos](integrations/using/events.md)
+      + [Eventos acionadores](integrations/using/events.md)
       + [Monitoramento de pipeline](integrations/using/pipeline-monitoring.md)
       + [Solução de problemas de pipeline](integrations/using/pipeline-troubleshooting.md)
 + Automatização com Workflows {#automating-with-workflows}
@@ -344,7 +344,7 @@ ht-degree: 100%
       + [Introdução a workflows](workflow/using/about-workflows.md)
       + [Sobre atividades](workflow/using/about-activities.md)
    + Operação Geral {#general-operation}
-      + [Criar um workflow](workflow/using/building-a-workflow.md)
+      + [Criação de um fluxo de trabalho](workflow/using/building-a-workflow.md)
       + [Direcionamento de dados](workflow/using/targeting-data.md)
       + [Importação de dados](workflow/using/importing-data.md)
       + [Como usar os dados de workflow](workflow/using/how-to-use-workflow-data.md)
@@ -361,7 +361,7 @@ ht-degree: 100%
       + [Query incremental](workflow/using/incremental-query.md)
       + [Lista de leitura](workflow/using/read-list.md)
       + [União](workflow/using/union.md)
-      + [Intersecção](workflow/using/intersection.md)
+      + [Interseção](workflow/using/intersection.md)
       + [Exclusão](workflow/using/exclusion.md)
       + [Split](workflow/using/split.md)
       + [Células](workflow/using/cells.md)
@@ -416,7 +416,7 @@ ht-degree: 100%
       + [Emails de entrada](workflow/using/inbound-emails.md)
       + [SMS de entrada](workflow/using/inbound-sms.md)
    + Casos de uso {#use-cases}
-      + [Sobre casos de uso de workflow](workflow/using/about-workflow-use-cases.md)
+      + [Sobre casos de uso de fluxo de trabalho](workflow/using/about-workflow-use-cases.md)
       + Deliveries {#deliveries}
          + [O uso da atividade de aprovação local](workflow/using/using-the-local-approval-activity.md)
          + [Teste A/B](workflow/using/a-b-testing.md)
@@ -428,7 +428,7 @@ ht-degree: 100%
          + [Envio de um relatório a uma lista](workflow/using/sending-a-report-to-a-list.md)
          + [Supervisão de worflows](workflow/using/supervising-workflows.md)
          + [Envio de alertas personalizados para operadores](workflow/using/sending-personalized-alerts-to-operators.md)
-      + gerenciamento de dados {#data-management}
+      + Gerenciamento de dados {#data-management}
          + [Coordenação das atualizações de dados](workflow/using/coordinating-data-updates.md)
          + [Criação da lista de resumo](workflow/using/creating-a-summary-list.md)
          + [Enriquecimento de dados](workflow/using/enriching-data.md)
