@@ -43,7 +43,7 @@ Conheça as práticas recomendadas relacionadas ao design e envio com o Adobe Ca
     </a>
     <div>
       <a href="use-templates.md">
-    <strong>Usar templates</strong>
+    <strong>Usar modelos</strong>
     </a>
     </div>
     <p>
