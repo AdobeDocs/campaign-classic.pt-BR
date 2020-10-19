@@ -245,7 +245,7 @@ Os filtros predefinidos são:
  <tbody> 
   <tr> 
    <td> <strong>Rótulo</strong><br /> </td> 
-   <td> <strong>Consulta</strong><br /> </td> 
+   <td> <strong>Query</strong><br /> </td> 
   </tr> 
   <tr> 
    <td> Aberto<br /> </td> 
