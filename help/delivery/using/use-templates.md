@@ -18,7 +18,7 @@ ht-degree: 100%
 ---
 
 
-# Usar templates {#use-templates}
+# Usar modelos {#use-templates}
 
 Os templates do delivery oferecem mais eficiência ao fornecer cenários prontos para os tipos mais comuns de atividades. Com modelos, os profissionais de marketing podem implantar novas campanhas com personalização mínima em um período de tempo menor.
 
