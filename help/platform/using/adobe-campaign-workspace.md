@@ -12,17 +12,17 @@ content-type: reference
 topic-tags: starting-with-adobe-campaign
 discoiquuid: 2f66152b-4d4a-40b8-a1bb-5b97c5410882
 translation-type: tm+mt
-source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+source-git-commit: 26ba32468bce3bbb1c52d225c8195977da4d7d54
 workflow-type: tm+mt
-source-wordcount: '2165'
-ht-degree: 100%
+source-wordcount: '2147'
+ht-degree: 98%
 
 ---
 
 
 # Área de trabalho do Adobe Campaign{#adobe-campaign-workspace}
 
-## Sobre a interface do Adobe Campaign {#about-adobe-campaign-interface}
+## Exploring Adobe Campaign interface {#about-adobe-campaign-interface}
 
 Depois de se conectar ao banco de dados, você acessará a home page do Adobe Campaign, um painel de controle formado por links e atalhos que permitem acessar recursos, dependendo da sua instalação, bem como as configurações gerais da plataforma.
 
@@ -30,7 +30,7 @@ Na seção central da home page, você pode usar links para acessar o portal de 
 
 ![](assets/d_ncs_user_interface_home.png)
 
-A captura de tela acima é um exemplo da home page de um usuário do Adobe Campaign. Para saber mais sobre isso, assista ao [vídeo da visão geral sobre a interface do Adobe Campaign](https://docs.adobe.com/content/help/en/campaign-learn/campaign-classic-tutorials/getting-started/interface-overview.html).
+![](assets/do-not-localize/how-to-video.png) [Área de trabalho do Discover Campaign em vídeo](https://docs.adobe.com/content/help/en/campaign-classic-learn/tutorials/getting-started/exploring-the-adobe-campaign-classic-user-interface.html)
 
 >[!NOTE]
 >
@@ -54,7 +54,7 @@ Considerando o acesso via Web, as opções permitirão principalmente a visualiz
 
 ### Languages {#languages}
 
-O idioma é selecionado ao instalar a instância do Adobe Campaign Classic e não pode ser alterado posteriormente. Para obter mais informações sobre como criar uma instância, consulte esta [página](../../installation/using/creating-an-instance-and-logging-on.md).
+O idioma é selecionado ao instalar a instância do Adobe Campaign Classic.
 
 ![](assets/language.png)
 
@@ -67,6 +67,12 @@ Você pode escolher entre cinco idiomas diferentes:
 * Japonês
 
 O idioma escolhido para a instância do Adobe Campaign Classic pode afetar os formatos de data e hora. Para obter mais informações, consulte esta [seção](../../platform/using/adobe-campaign-workspace.md#date-and-time).
+
+Para obter mais informações sobre como criar uma instância, consulte esta [página](../../installation/using/creating-an-instance-and-logging-on.md).
+
+>[!CAUTION]
+>
+>O idioma não pode ser alterado após a criação da instância.
 
 ## Elementos básicos de navegação {#navigation-basics}
 
@@ -174,9 +180,9 @@ Na janela de configuração da lista, clique em &quot;Advanced parameters&quot; 
 
 ![](assets/s_ncs_user_configurelist_advancedparam.png)
 
-### Configuração de listas {#configuring-lists}
+## Configuração de listas {#configuring-lists}
 
-#### Adicionar colunas {#add-columns}
+### Adicionar colunas {#add-columns}
 
 Há duas maneiras de adicionar uma coluna a uma lista.
 
@@ -222,14 +228,14 @@ Outra maneira de adicionar colunas, por exemplo, se você quiser exibir dados qu
 
 1. Clique em **[!UICONTROL OK]** para confirmar a configuração e exibir o resultado.
 
-#### Criar uma nova coluna {#create-a-new-column}
+### Criar uma nova coluna {#create-a-new-column}
 
 É possível criar novas colunas para exibir campos adicionais na lista. Para fazer isso:
 
 1. Clique em **[!UICONTROL Configure the list]** abaixo e à direita da lista.
 1. Clique em **[!UICONTROL Add]** para exibir um novo campo na lista.
 
-#### Remover uma coluna {#remove-a-column}
+### Remover uma coluna {#remove-a-column}
 
 É possível mascarar uma ou mais colunas em uma lista de registros usando a opção **[!UICONTROL Configure list]**, localizada abaixo e à direita da lista.
 
@@ -241,11 +247,11 @@ Na janela de configuração da lista, selecione a coluna a ser compactada na zon
 
 Repita o processo para cada coluna a ser mascarada. Clique em **[!UICONTROL OK]** para confirmar a configuração e exibir o resultado.
 
-#### Ajustar a largura da coluna {#adjust-column-width}
+### Ajustar a largura da coluna {#adjust-column-width}
 
 Quando uma lista está ativa, ou seja, com pelo menos uma linha selecionada, você pode usar a tecla F9 para ajustar a largura das colunas. Assim, todas as colunas podem ser exibidas na tela.
 
-#### Exibir registros de subpastas {#display-sub-folders-records}
+### Exibir registros de subpastas {#display-sub-folders-records}
 
 As listas podem exibir:
 
@@ -286,7 +292,7 @@ Clique em **[!UICONTROL Save]** na janela de propriedades da pasta. A lista de e
 
 ![](assets/s_ncs_user_folder_save_config_5.png)
 
-### Exportar uma lista {#exporting-a-list}
+## Exportar uma lista {#exporting-a-list}
 
 Para exportar dados de uma lista, você deve usar um assistente de exportação. Para acessá-lo, selecione os elementos a serem exportados da lista, clique com o botão direito do mouse e selecione **[!UICONTROL Export...]**.
 
@@ -296,7 +302,7 @@ A utilização das funções de importação e exportação é explicada em [Imp
 >
 >Os elementos de uma lista não devem ser exportados usando a função Copiar/Colar.
 
-### Classificar uma lista {#sorting-a-list}
+## Classificar uma lista {#sorting-a-list}
 
 As listas podem conter uma grande quantidade de dados. Você pode classificar esses dados ou aplicar filtros simples ou avançados. A classificação permite exibir dados em ordem crescente ou decrescente. Os filtros permitem definir e combinar critérios para exibir apenas os dados selecionados.
 
@@ -321,7 +327,7 @@ Você também pode configurar a classificação ou combinar critérios de classi
 
 1. Clique em **[!UICONTROL Ok]** para confirmar essa configuração e exibir o resultado na lista.
 
-### Executar uma pesquisa {#running-a-search}
+### Pesquisar elementos {#running-a-search}
 
 Você pode executar uma pesquisa dos campos disponíveis em um editor utilizando o campo **[!UICONTROL Search]**, localizado acima da lista de campos. Pressione **Enter** no teclado ou navegue pela lista. Os campos que correspondem à pesquisa terão rótulos em negrito.
 
@@ -388,4 +394,3 @@ Nos campos que expressam uma duração (por exemplo, período de validade dos re
 * **[!UICONTROL d]** para dias.
 
 ![](assets/enter_unit_sample.png)
-
