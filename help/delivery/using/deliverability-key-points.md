@@ -85,7 +85,7 @@ Saiba mais sobre as práticas recomendadas relacionadas ao delivery com o Adobe 
     </a>
     </div>
     <p>
-    <em>Iniciar uma nova plataforma</em>
+    <em>Início de uma nova plataforma</em>
     <p>
   </td>
    <td>
@@ -111,7 +111,7 @@ Saiba mais sobre as práticas recomendadas relacionadas ao delivery com o Adobe 
     </a>
     </div>
     <p>
-    <em>Melhorar a reputação</em>
+    <em>Aprimoramento da reputação</em>
     <p>
   </td>
 </tr>
