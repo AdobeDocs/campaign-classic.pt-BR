@@ -1,5 +1,5 @@
 ---
-title: Sobre casos de uso de workflow
+title: Sobre casos de uso de fluxo de trabalho
 description: Saiba mais sobre casos de uso que você pode executar usando workflows do Campaign Classic.
 page-status-flag: never-activated
 uuid: 7c1e8cea-90d0-491f-ab8f-6cd69f8a6c3b
@@ -11,16 +11,16 @@ topic-tags: about-workflows-and-data-management
 discoiquuid: 40503917-7a53-4d99-96a4-57aa9e98ec87
 internal: n
 snippet: y
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: 00a9b7def9d0ad0190c389c6bcde431f8e2f2b44
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '195'
 ht-degree: 100%
 
 ---
 
 
-# Sobre casos de uso de workflow {#about-workflow-use-cases}
+# Sobre casos de uso de fluxo de trabalho {#about-workflow-use-cases}
 
 Nesta seção você encontrará vários casos de uso que usam os recursos dos workflows do Campaign.
 
@@ -47,7 +47,7 @@ Eles ajudarão você a descobrir os diferentes contextos nos quais os workflows 
 * [Envio de alertas personalizados para operadores](../../workflow/using/sending-personalized-alerts-to-operators.md)
 * [Configuração de um processo de aprovação de recipient antes do envio de um delivery](../../workflow/using/using-the-local-approval-activity.md)
 
-## gerenciamento de dados {#management}
+## Gerenciamento de dados {#management}
 
 <img src="assets/do-not-localize/icon_manage.svg" width="60px">
 
