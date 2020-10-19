@@ -10,10 +10,10 @@ content-type: reference
 topic-tags: latest-documentation-updates
 discoiquuid: 5df34f55-135a-4ea8-afc2-f9427ce5ae7b
 translation-type: tm+mt
-source-git-commit: d06cc9c090e2ad8b72ce3192a26108ec213ba549
+source-git-commit: 2a82493deada11cb22ef37d215b6eae8274ce890
 workflow-type: tm+mt
-source-wordcount: '3695'
-ht-degree: 99%
+source-wordcount: '3731'
+ht-degree: 98%
 
 ---
 
@@ -25,6 +25,10 @@ Esta página lista todos os novos recursos e atualizações de documentação po
 Você também pode consultar as [Notas de versão do Adobe Campaign Classic](../../rn/using/latest-release.md) para obter mais atualizações.
 
 ## Outubro de 2020 {#oct-2020}
+
+A seção de recursos avançados do Relatórios de campanha foi aprimorada para detalhar como usar parâmetros de URL e variáveis em relatórios personalizados. [Leia mais](../../reporting/using/advanced-functionalities.md)
+
+A página de propriedades dos relatórios foi reorganizada e aprimorada para facilitar a configuração. [Leia mais](../../reporting/using/properties-of-the-report.md)
 
 Uma nova nota técnica foi criada com detalhes sobre como migrar do protocolo binário legado para a API do provedor APNs baseada em HTTP/2. [Leia mais](https://helpx.adobe.com/campaign/kb/migrate-to-apns-http2.html)
 
