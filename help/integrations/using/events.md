@@ -20,7 +20,7 @@ ht-degree: 100%
 ---
 
 
-# Aciona eventos {#events}
+# Eventos acionadores {#events}
 
 ## Processamento de eventos no JavaScript {#events-javascript}
 
