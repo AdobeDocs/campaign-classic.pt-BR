@@ -10,15 +10,15 @@ content-type: reference
 topic-tags: architecture-and-hosting-models
 discoiquuid: 582f7ac6-cebe-4b47-8730-bbc16fd6b1bd
 translation-type: tm+mt
-source-git-commit: c2e1b4cf7051b7f1b9d5f2db0d9f51a733ca2abc
+source-git-commit: c03e90b2e2f57606749c86cda343ce5756fec122
 workflow-type: tm+mt
-source-wordcount: '476'
-ht-degree: 21%
+source-wordcount: '303'
+ht-degree: 36%
 
 ---
 
 
-# Matriz de recursos por modelo de hospedagem {#capability-matrix-per-model}
+# Matriz de recursos {#capability-matrix-per-model}
 
 O Adobe Campaign Classic vem com um conjunto de módulos e opções. A disponibilidade desses módulos e sua configuração podem depender do tipo de implantação da sua instalação. Este artigo compartilha alguns detalhes sobre as principais diferenças para determinados recursos entre implantações totalmente hospedadas (Managed Services) e implantações locais.
 
@@ -26,22 +26,22 @@ Esta página mostra as principais diferenças entre as implantações hospedadas
 
 Os diferentes modelos de hospedagem são apresentados [nesta seção](../../installation/using/hosting-models.md).
 
-## Matriz de recursos{#capability-matrix}
+## Disponibilidade por modelo de implantação {#capability-matrix}
 
 | Recurso | Hospedado | Híbrido | Local | Detalhes |
 |-----------------------------------------------|------------------|-----------|---------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Configurar servidor de Campanha | Sob demanda | Disponível | Disponível | O arquivo[de configuração do](../../installation/using/the-server-configuration-file.md)servidor só pode ser modificado por Adobe para clientes hospedados. |
-| Cco de email | Sob demanda | Sob demanda | Disponível | Para arquiteturas hospedadas e híbridas, entre em contato com o executivo da sua conta para ativar o email CCO. Para instalações no local, siga as diretrizes da documentação. [Saiba mais](../../installation/using/email-archiving.md) |
-| Gerenciar instância de execução do Centro de Mensagens | Sob demanda | Sob demanda | Disponível | Para implantações hospedadas, determinadas configurações, como a criação de usuários na instância de execução, só podem ser executadas por Adobe. [Saiba mais](../../message-center/using/about-transactional-messaging.md) |
-| Gerenciamento da plataforma Mid-sourcing | Sob demanda | Sob demanda | Disponível | As plataformas mid-sourcing hospedadas pelo Adobe só podem ser configuradas por Adobe. |
-| Renderização da caixa de entrada via Litmus | Sob demanda | Sob demanda | Disponível | Você precisa de uma conta de Litmus. É necessário acessar o Adobe para obter os detalhes necessários ou executar a configuração de renderização da Caixa de entrada. [Saiba mais](../../delivery/using/inbox-rendering.md) |
-| Integração com o IMS (Adobe ID) | Sob demanda | Sob demanda | Sob demanda | O provisionamento de IMS é executado pelo Adobe. Essa integração é um pré-requisito para integrações Adobe Experience Cloud. [Saiba mais](../../integrations/using/about-adobe-id.md) |
-| Criptografar/descriptografar dados para transferências de arquivos | Sob demanda | Disponível | Disponível | A ativação do pré ou pós-processamento de arquivos requer a instalação do utilitário necessário no servidor Adobe Campaign. Os clientes hospedados podem usar Painéis de controle do Campaign de Campanha. [Saiba mais](../../workflow/using/importing-data.md#unzipping-or-decrypting-a-file-before-processing) |
-| Zipping/Unzipping de arquivos | Disponível sob demanda | Disponível | A ativação do pré ou pós-processamento de arquivos requer a instalação do utilitário necessário no servidor Adobe Campaign. Os clientes hospedados podem usar Painéis de controle do Campaign de Campanha. [Saiba mais](../../workflow/using/importing-data.md#unzipping-or-decrypting-a-file-before-processing) |
+| Configurar servidor de Campanha | Sob demanda | Disponível | Disponível | [Saiba mais](../../installation/using/the-server-configuration-file.md) |
+| Cco de email | Sob demanda | Sob demanda | Disponível | [Saiba mais](../../installation/using/email-archiving.md) |
+| Gerenciar instância de execução do Centro de Mensagens | Sob demanda | Sob demanda | Disponível | [Saiba mais](../../message-center/using/about-transactional-messaging.md) |
+| Gerenciamento da plataforma Mid-sourcing | Sob demanda | Sob demanda | Disponível | [Saiba mais](../../installation/using/mid-sourcing-server.md) |
+| Renderização da caixa de entrada via Litmus | Sob demanda | Sob demanda | Disponível | [Saiba mais](../../delivery/using/inbox-rendering.md) |
+| Integração com o IMS (Adobe ID) | Sob demanda | Sob demanda | Sob demanda | [Saiba mais](../../integrations/using/about-adobe-id.md) |
+| Criptografar/descriptografar dados para transferências de arquivos | Sob demanda | Disponível | Disponível | [Saiba mais](../../workflow/using/importing-data.md#unzipping-or-decrypting-a-file-before-processing) |
+| Zipping/Unzipping de arquivos | Sob demanda | Disponível | Disponível | [Saiba mais](../../workflow/using/importing-data.md#unzipping-or-decrypting-a-file-before-processing) |
 | Delegação de Nome de Domínio | Sob demanda | Sob demanda | Não disponível | [Saiba mais](https://helpx.adobe.com/br/campaign/kb/domain-name-delegation.html) |
-| Instalação do SpamAssassin | Sob demanda | Disponível | Disponível | A instalação do SpamAssassin requer a edição do arquivo de configuração do servidor. [Saiba mais](../../delivery/using/spamassassin.md) |
-| Acesso aos relatórios de material de entrega | Disponível | Sob demanda | Disponível | Em determinadas implantações híbridas, os relatórios de capacidade de entrega não podem ser acessados da instância de marketing. |
-| Configuração da autenticação LDAP | Não disponível | Disponível | Disponível | A configuração LDAP só é possível para instalações locais ou híbridas. [Saiba mais](../../installation/using/connecting-through-ldap.md) |
+| Instalação do SpamAssassin | Sob demanda | Disponível | Disponível | [Saiba mais](../../delivery/using/spamassassin.md) |
+| Acesso aos relatórios de material de entrega | Disponível | Sob demanda | Disponível | [Saiba mais](../../delivery/using/monitoring-deliverability.md) |
+| Configuração da autenticação LDAP | Não disponível | Disponível | Disponível | [Saiba mais](../../installation/using/connecting-through-ldap.md) |
 
 
 ## Federated Data Access{#fda}
@@ -60,4 +60,4 @@ O Adobe Campaign oferece a opção **Federated Data Access** (FDA) para processa
 * [Campaign Classic upgrades](../../rn/using/rn-overview.md)
 * [Recursos descontinuados e removidos](../../rn/using/deprecated-features.md)
 * [Versões Gold Standard](../../rn/using/gold-standard.md)
-* [Programa](https://helpx.adobe.com/br/campaign/kb/gold-standard.html)Gold Standard.
+* [Programa Gold Standard](https://helpx.adobe.com/br/campaign/kb/gold-standard.html)
