@@ -87,7 +87,7 @@ Seguir as diretrizes e as práticas recomendadas ao usar workflows pode ajudar a
 * [Práticas recomendadas ao usar workflows](../../workflow/using/workflow-best-practices.md)
 * [Monitoramento da execução do workflow](../../workflow/using/monitoring-workflow-execution.md)
 
-### Monitorar deliveries {#monitoring-deliveries}
+### Monitoramento de deliveries {#monitoring-deliveries}
 
 <img src="assets/do-not-localize/icon_send.svg" width="60px">
 
