@@ -1,8 +1,6 @@
 ---
 title: Instalação do console do cliente
-seo-title: Instalação do console do cliente
-description: Instalação do console do cliente
-seo-description: null
+description: Saiba como instalar o console do cliente
 page-status-flag: never-activated
 uuid: 1279c0d8-bf27-4a58-ae94-796d6147231a
 contentOwner: sauviat
@@ -12,10 +10,10 @@ content-type: reference
 topic-tags: installing-campaign-in-windows-
 discoiquuid: d1069b23-e08d-43c5-bbfb-3158ac40dc7e
 translation-type: tm+mt
-source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+source-git-commit: bdc09e1b6e037e1b21573b8624a947e30f8ad1fc
 workflow-type: tm+mt
 source-wordcount: '466'
-ht-degree: 12%
+ht-degree: 11%
 
 ---
 
@@ -81,7 +79,7 @@ Você pode adicionar quantas conexões forem necessárias para se conectar aos a
 >The **[!UICONTROL Add]** button lets you create **[!UICONTROL folders]** to organize all your connections. Basta arrastar e soltar cada conexão em uma pasta.
 
 
-## Fazer logon na Campanha
+## Fazer logon no Adobe Campaign
 
 Para fazer logon em uma instância existente, siga as etapas abaixo:
 
