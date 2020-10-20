@@ -10,9 +10,9 @@ content-type: reference
 topic-tags: latest-documentation-updates
 discoiquuid: 5df34f55-135a-4ea8-afc2-f9427ce5ae7b
 translation-type: tm+mt
-source-git-commit: b447e316bed8e0e87d608679c147e6bd7b0815eb
+source-git-commit: c03e90b2e2f57606749c86cda343ce5756fec122
 workflow-type: tm+mt
-source-wordcount: '3731'
+source-wordcount: '3764'
 ht-degree: 97%
 
 ---
@@ -25,6 +25,10 @@ Esta página lista todos os novos recursos e atualizações de documentação po
 Você também pode consultar as [Notas de versão do Adobe Campaign Classic](../../rn/using/latest-release.md) para obter mais atualizações.
 
 ## Outubro de 2020 {#oct-2020}
+
+Os modelos de hospedagem local, hospedados e híbridos da campanha agora são descritos em uma seção dedicada. [Leia mais](../../installation/using/hosting-models.md)
+
+A matriz de capacidade de campanha por modelo de hospedagem foi atualizada e movida no guia de instalação. [Leia mais](../../installation/using/capability-matrix.md)
 
 A seção de recursos avançados do Relatórios de campanha foi aprimorada para detalhar como usar parâmetros de URL e variáveis em relatórios personalizados. [Leia mais](../../reporting/using/advanced-functionalities.md)
 
