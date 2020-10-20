@@ -8,10 +8,10 @@ product: adobe campaign
 sub-product: Adobe Campaign Classic
 type: Documentation
 translation-type: tm+mt
-source-git-commit: b447e316bed8e0e87d608679c147e6bd7b0815eb
+source-git-commit: f8539433274e531e34b7512ce1b6385d67e8e332
 workflow-type: tm+mt
-source-wordcount: '2130'
-ht-degree: 99%
+source-wordcount: '2124'
+ht-degree: 98%
 
 ---
 
@@ -597,14 +597,14 @@ ht-degree: 99%
       + [Implantação empresarial](installation/using/enterprise-deployment.md)
       + [Implantação Mid-sourcing](installation/using/mid-sourcing-deployment.md)
       + [Power Boster e Power Cluster](installation/using/power-booster-and-power-cluster.md)
-   + Instalação do Campaign no Windows {#installing-campaign-in-windows-}
-      + [Pré-requisitos da instalação do Campaign no Windows](installation/using/prerequisites-of-campaign-installation-in-windows.md)
+   + Campanha no Windows {#installing-campaign-in-windows-}
+      + [Antes de instalar o Campaign no Windows](installation/using/prerequisites-of-campaign-installation-in-windows.md)
       + [Instalação do servidor](installation/using/installing-the-server.md)
       + [Integração em um servidor Web para Windows](installation/using/integration-into-a-web-server-for-windows.md)
       + [Disponibilidade do console do cliente para Windows](installation/using/client-console-availability-for-windows.md)
       + [Instalação do console do cliente](installation/using/installing-the-client-console.md)
-   + Instalação do Campaign no Linux {#installing-campaign-in-linux-}
-      + [Pré-requisitos da instalação do Campaign no Linux](installation/using/prerequisites-of-campaign-installation-in-linux.md)
+   + Campanha no Linux  {#installing-campaign-in-linux-}
+      + [Antes de instalar o Campaign no Linux](installation/using/prerequisites-of-campaign-installation-in-linux.md)
       + [Instalação de pacotes com Linux](installation/using/installing-packages-with-linux.md)
       + [Integração em um servidor Web para Linux](installation/using/integration-into-a-web-server-for-linux.md)
       + [Disponibilidade do console do cliente para Linux](installation/using/client-console-availability-for-linux.md)
@@ -625,11 +625,11 @@ ht-degree: 99%
       + [Servidor Mid-sourcing](installation/using/mid-sourcing-server.md)
       + [Interação - buffer de dados](installation/using/interaction---data-buffer.md)
    + Apêndices {#appendices}
-      + [O arquivo de configuração do servidor](installation/using/the-server-configuration-file.md)
+      + [Arquivo de configuração do servidor](installation/using/the-server-configuration-file.md)
       + [Endpoints de rede do Campaign ](installation/using/campaign-network-endpoints.md)
       + [Linhas de comando](installation/using/command-lines.md)
       + [Criação de novas instâncias](installation/using/creating-new-instances.md)
-      + [Lista de opções do Campaign Classic](installation/using/configuring-campaign-options.md)
+      + [Lista de opções do Campaign ](installation/using/configuring-campaign-options.md)
       + [Desinstalação do Campaign](installation/using/uninstalling-campaign.md)
 + Monitoramento do Campaign Classic {#monitoring-campaign-classic}
    + Introdução {#introduction}
