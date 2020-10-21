@@ -1,8 +1,6 @@
 ---
-title: Atualização
-seo-title: Atualização
-description: Atualização
-seo-description: null
+title: Atualização para uma nova criação
+description: Saiba mais sobre as etapas técnicas para atualizar para uma nova versão
 page-status-flag: never-activated
 uuid: f24552d4-6bdf-411c-a1f2-b8f339c311f4
 contentOwner: sauviat
@@ -12,15 +10,15 @@ content-type: reference
 topic-tags: updating-adobe-campaign
 discoiquuid: f8e3633d-7232-44a5-842b-1a70c4f2bca2
 translation-type: tm+mt
-source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+source-git-commit: 20894054c09cfc4a388b068f25f990277bc1fc70
 workflow-type: tm+mt
-source-wordcount: '1120'
+source-wordcount: '1136'
 ht-degree: 1%
 
 ---
 
 
-# Atualização{#upgrading}
+# Atualização para uma nova compilação (local){#upgrading}
 
 Antes de iniciar o processo de atualização, determine e confirme para qual versão do Adobe Campaign será atualizada e consulte as Notas de [versão](../../rn/using/latest-release.md) .
 
