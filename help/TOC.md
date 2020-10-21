@@ -8,9 +8,9 @@ product: adobe campaign
 sub-product: Adobe Campaign Classic
 type: Documentation
 translation-type: tm+mt
-source-git-commit: f8539433274e531e34b7512ce1b6385d67e8e332
+source-git-commit: 20894054c09cfc4a388b068f25f990277bc1fc70
 workflow-type: tm+mt
-source-wordcount: '2124'
+source-wordcount: '2125'
 ht-degree: 98%
 
 ---
@@ -43,6 +43,7 @@ ht-degree: 98%
       + Perguntas frequentes {#faq}
          + [Perguntas comuns](platform/using/common-questions.md)
          + [Principais conceitos](platform/using/faq-key-concepts.md)
+         + [Atualização de build](platform/using/faq-build-upgrade.md)
          + [Públicos](platform/using/faq-audiences.md)
          + [Criar mensagens](platform/using/faq-designing.md)
          + [Envio de mensagens](platform/using/faq-messages.md)
@@ -652,7 +653,8 @@ ht-degree: 98%
       + [Workflow de limpeza do banco de dados](production/using/database-cleanup-workflow.md)
    + Atualização do Adobe Campaign {#updating-adobe-campaign}
       + [Introdução](production/using/introduction.md)
-      + [Atualização](production/using/upgrading.md)
+      + [Atualização de uma build](production/using/build-upgrade.md)
+      + [Procedimento de atualização (no local)](production/using/upgrading.md)
       + [Alternar para Unicode](production/using/switching-to-unicode.md)
       + [Procedimentos de migração](production/using/migration-procedures.md)
    + Manutenção do banco de dados {#database-maintenance}
@@ -754,8 +756,4 @@ ht-degree: 98%
       + [Configurações específicas na v5.11](migration/using/specific-configurations-in-v5-11.md)
       + [Configurações específicas na v6.02](migration/using/specific-configurations-in-v6-02.md)
       + [Configurações específicas na v6.10](migration/using/specific-configurations-in-v6-10.md)
-   + Reversão {#rollback}
-      + [Sobre a reversão](migration/using/about-rollback.md)
-      + [Restauração da v5.11](migration/using/restoring-v5-11.md)
-      + [Restauração da v6.02](migration/using/restoring-v6-02.md)
-      + [Restauração da v6.1](migration/using/restoring-v6-1.md)
+   + [Procedimento de reversão](migration/using/about-rollback.md)
