@@ -1,8 +1,6 @@
 ---
 title: Criação e gerenciamento de listas
-seo-title: Criação e gerenciamento de listas
-description: Criação e gerenciamento de listas
-seo-description: null
+description: Saiba como criar e gerenciar o lista
 page-status-flag: never-activated
 uuid: 17d1a7d0-a728-490e-a820-19f469fddbcd
 contentOwner: sauviat
@@ -12,9 +10,9 @@ content-type: reference
 topic-tags: profile-management
 discoiquuid: 9fc243b2-7b7b-4083-83f6-04c12336492d
 translation-type: tm+mt
-source-git-commit: 75cbb8d697a95f4cc07768e6cf3585e4e079e171
+source-git-commit: c2c0609619e0cc81444d089850add6dec5de93fd
 workflow-type: tm+mt
-source-wordcount: '792'
+source-wordcount: '791'
 ht-degree: 92%
 
 ---
@@ -139,7 +137,7 @@ Saiba como criar uma audiência configurando uma lista de recipient do Explorer.
 
 >[!VIDEO](https://video.tv.adobe.com/v/25602/quality=12)
 
-## Como criar uma lista de recipient com um fluxo de trabalho
+## How to create a list of recipients with a workflow {#create-list-in-a-wf-video}
 
 Saiba como criar um fluxo de trabalho para recipient de público alvo e como torná-lo recorrente antes de usar a lista em um público alvo de email.
 
