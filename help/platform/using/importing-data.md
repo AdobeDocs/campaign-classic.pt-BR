@@ -12,10 +12,10 @@ content-type: reference
 topic-tags: importing-and-exporting-data
 discoiquuid: c886bd02-c484-443c-93ca-ca244adbf893
 translation-type: tm+mt
-source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+source-git-commit: c2c0609619e0cc81444d089850add6dec5de93fd
 workflow-type: tm+mt
-source-wordcount: '4142'
-ht-degree: 88%
+source-wordcount: '4138'
+ht-degree: 87%
 
 ---
 
@@ -29,8 +29,8 @@ O Adobe Campaign permite importar dados para o banco de dados de um ou mais arqu
 >É possível importar dados sem mapeá-los com os dados do banco de dados usando a função **[!UICONTROL Import a list]**.
 >
 >Os dados podem ser usados exclusivamente em workflows por meio do objeto **[!UICONTROL Read list]**. Para obter mais informações, consulte [esta página](../../workflow/using/read-list.md).
->
->Para saber mais sobre isso, assista ao vídeo [Importing profiles](https://docs.adobe.com/content/help/en/campaign-learn/campaign-classic-tutorials/getting-started/importing-profiles.html).
+
+![](assets/do-not-localize/how-to-video.png) [Descubra este recurso no vídeo](https://docs.adobe.com/content/help/en/campaign-classic-learn/tutorials/profile-management/importing-profiles.html)
 
 ## Estrutura dos dados a importar {#structure-of-the-data-to-import}
 
