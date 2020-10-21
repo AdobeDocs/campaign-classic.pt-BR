@@ -11,9 +11,9 @@ content-type: reference
 topic-tags: starting-with-adobe-campaign
 discoiquuid: 16dbe423-018f-4666-9901-2120a8dc609a
 translation-type: tm+mt
-source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+source-git-commit: c2c0609619e0cc81444d089850add6dec5de93fd
 workflow-type: tm+mt
-source-wordcount: '755'
+source-wordcount: '740'
 ht-degree: 100%
 
 ---
@@ -35,7 +35,7 @@ A análise de entrega é a fase na qual a população de destino é calculada e 
 
 A Adobe recomenda criar mensagens de prova para verificar seu delivery em um grupo de aprovadores antes de enviá-lo para o target principal. Em seguida, você pode validar o conteúdo da mensagem, a personalização e os parâmetros de entrega.
 
-[Clique aqui para saber mais](../../delivery/using/steps-validating-the-delivery.md#sending-a-proof). Você também pode assistir a [este vídeo](https://docs.adobe.com/content/help/en/campaign-learn/campaign-classic-tutorials/getting-started/managing-seed-and-proofs.html).
+[Clique aqui para saber mais](../../delivery/using/steps-validating-the-delivery.md#sending-a-proof).
 
 ### Como usar seed addresses no Adobe Campaign? {#how-to-use-seed-addresses-in-adobe-campaign-}
 
