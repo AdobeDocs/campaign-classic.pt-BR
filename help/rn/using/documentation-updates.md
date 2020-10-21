@@ -10,9 +10,9 @@ content-type: reference
 topic-tags: latest-documentation-updates
 discoiquuid: 5df34f55-135a-4ea8-afc2-f9427ce5ae7b
 translation-type: tm+mt
-source-git-commit: c03e90b2e2f57606749c86cda343ce5756fec122
+source-git-commit: 3acf2359c74a3dc4b18c8976fee14dcbaf3fa510
 workflow-type: tm+mt
-source-wordcount: '3764'
+source-wordcount: '3752'
 ht-degree: 97%
 
 ---
@@ -226,7 +226,7 @@ O guia [Envio de notificações via push](../../delivery/using/about-mobile-app-
 
 O novo parâmetro para a configuração do relatório de URLs está documentado [aqui](../../reporting/using/properties-of-the-report.md#defining-additional-settings).
 
-A página **Matriz de recursos no local e hospedada do Campaign Classic** foi atualizada com os novos conectores do FDA. [Leia mais](https://helpx.adobe.com/br/campaign/kb/acc-on-prem-vs-hosted.html)
+A página **Matriz de recursos no local e hospedada do Campaign Classic** foi atualizada com os novos conectores do FDA. [Leia mais](../../installation/using/capability-matrix.md).
 
 A página **Matriz de recursos do Campaign Classic** foi atualizada. [Leia mais](https://helpx.adobe.com/br/campaign/kb/compatibility-matrix.html)
 
@@ -380,7 +380,7 @@ Um novo artigo da knowledge base sobre como usar o catálogo de oferta no Adobe 
 
 A seção Sub-workflow activity foi aprimorada com um exemplo de uso. [Leia mais](../../workflow/using/sub-workflow.md)
 
-The [Campaign Classic On-premise &amp; Hosted capability matrix](https://helpx.adobe.com/br/campaign/kb/acc-on-prem-vs-hosted.html) Knowledge base article has been updated with information relating to Email BCC.
+A página de matriz [de recursos no local e hospedado do](../../installation/using/capability-matrix.md) Campaign Classic foi atualizada com informações relacionadas ao Email BCC.
 
 A documentação de Mensagens transacionais foi atualizada com uma nota relacionada à publicação do modelo. [Leia mais](https://docs.campaign.adobe.com/doc/AC/en/MCE_Template_publication.html)
 
