@@ -12,9 +12,9 @@ content-type: reference
 topic-tags: additional-configurations
 discoiquuid: 1a94c94e-ab6b-45c2-a0f3-6adeec7e2d2d
 translation-type: tm+mt
-source-git-commit: 7d0a00f4ef49a48014735de36786a48c31b76804
+source-git-commit: 3acf2359c74a3dc4b18c8976fee14dcbaf3fa510
 workflow-type: tm+mt
-source-wordcount: '3587'
+source-wordcount: '3582'
 ht-degree: 5%
 
 ---
@@ -34,8 +34,8 @@ Para obter mais informações, consulte esta seção.
 
 * [Documentação do Painel de controle do Campaign](https://docs.adobe.com/content/help/pt-BR/control-panel/using/control-panel-home.translate.html)
 * [Modelos de hospedagem](../../installation/using/hosting-models.md)
-* [Matriz de capacidade local e hospedada do Campaign Classic](https://helpx.adobe.com/br/campaign/kb/acc-on-prem-vs-hosted.html)
-* [Etapas](../../installation/using/about-hybrid-and-hosted-models.md) de configuração de modelos híbridos e hospedados )
+* [Matriz de capacidade local e hospedada do Campaign Classic](../../installation/using/capability-matrix.md)
+* [Etapas de configuração de modelos híbridos e hospedados](../../installation/using/hosting-models.md)
 
 Os arquivos de configuração do Campaign Classic são armazenados na pasta **conf** da pasta de instalação do Adobe Campaign. A configuração é distribuída por dois arquivos:
 
