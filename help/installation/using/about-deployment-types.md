@@ -12,10 +12,10 @@ content-type: reference
 topic-tags: deployment-types-
 discoiquuid: 298d9b9f-220f-4862-bc4c-1ad7f8d51049
 translation-type: tm+mt
-source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+source-git-commit: 3acf2359c74a3dc4b18c8976fee14dcbaf3fa510
 workflow-type: tm+mt
-source-wordcount: '145'
-ht-degree: 11%
+source-wordcount: '139'
+ht-degree: 8%
 
 ---
 
@@ -32,5 +32,5 @@ No caso de uma configuração em vários computadores, você não precisa usar o
 >Adobe para implantações hospedadas pelo Adobe. Por exemplo, para
 >configure os arquivos de configuração do servidor e da instância.
 >
->Para saber mais sobre as principais diferenças entre implantações, consulte a seção Modelos [de](../../installation/using/hosting-models.md) hospedagem ou o artigo sobre diferenças de [recursos para implantações](https://helpx.adobe.com/br/campaign/kb/acc-on-prem-vs-hosted.html) hospedadas e locais.
+>Para saber mais sobre as principais diferenças entre implantações, consulte a seção Modelos [de](../../installation/using/hosting-models.md) hospedagem ou as diferenças de [recursos para implantações](../../installation/using/capability-matrix.md)hospedadas e locais.
 
