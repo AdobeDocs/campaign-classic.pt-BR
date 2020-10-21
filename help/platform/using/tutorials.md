@@ -12,10 +12,10 @@ content-type: reference
 topic-tags: starting-with-adobe-campaign
 discoiquuid: c7c67ee5-ad60-420f-b597-08c388049529
 translation-type: tm+mt
-source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+source-git-commit: 677d631a075f50a80c9379fff0c17d3d06c7e803
 workflow-type: tm+mt
-source-wordcount: '560'
-ht-degree: 100%
+source-wordcount: '399'
+ht-degree: 79%
 
 ---
 
@@ -42,18 +42,18 @@ Saiba mais sobre o Adobe Campaign verificando os seguintes casos de uso e exempl
 * [Criação de visões gerais](../../web/using/use-cases--creating-overviews.md): crie aplicativos do tipo visão geral para exibir todos os aplicativos Web no banco de dados.
 * [Casos de uso do workflow](../../workflow/using/about-workflow-use-cases.md): descubra maneiras diferentes de usar workflows por meio desses casos.
 
-## Vídeos explicativos {#how-to-videos}
+## Autoajuda {#how-to-videos}
 
-Descubra os principais recursos do Adobe Campaign assistindo aos nossos vídeos explicativos.
+Além da documentação do produto, você pode acessar os recursos de autoajuda da Campanha listados abaixo.
 
-* [Criação de um público](https://docs.adobe.com/content/help/pt-BR/campaign-classic-learn/tutorials/getting-started/creating-a-list-of-recipients.html): descubra como criar um público no Adobe Campaign.
-* [Criação de uma campanha e de um e-mail](https://docs.adobe.com/content/help/pt-BR/campaign-classic-learn/tutorials/getting-started/creating-a-campaign-and-an-email.html): descubra como criar um e-mail em uma campanha no Adobe Campaign.
-* [Criação de uma lista de recipients](https://docs.adobe.com/content/help/pt-BR/campaign-classic-learn/tutorials/getting-started/creating-a-list-of-recipients.html): crie uma lista de recipients com um workflow no Adobe Campaign.
-* [Criação de um workflow direcionado](https://docs.adobe.com/content/help/pt-BR/campaign-classic-learn/tutorials/getting-started/creating-a-targeting-workflow.html): crie um workflow para direcionar os aniversários dos recipients.
-* [Criação de um workflow em uma campanha](https://docs.adobe.com/content/help/pt-BR/campaign-classic-learn/tutorials/getting-started/creating-a-workflow.html): saiba como criar um workflow em uma campanha.
-* [Importação de perfis](https://docs.adobe.com/content/help/pt-BR/campaign-classic-learn/tutorials/getting-started/importing-profiles.html): saiba como importar perfis de um arquivo no Adobe Campaign.
-* [Visão geral da interface](https://docs.adobe.com/content/help/en/campaign-learn/campaign-classic-tutorials/getting-started/interface-overview.html): saiba como navegar na interface do Adobe Campaign.
-* [Gerenciamento de seeds e provas em um e-mail](https://docs.adobe.com/content/help/pt-BR/campaign-classic-learn/tutorials/getting-started/managing-seed-and-proofs.html): saiba como adicionar seeds e provas a um e-mail existente no Adobe Campaign.
-* [Integração do Adobe Campaign com o Microsoft Dynamics 365](https://docs.adobe.com/content/help/pt-BR/campaign-classic-learn/tutorials/integrating/dynamics365-integration.html): saiba como vincular e sincronizar recursos do Adobe Campaign e do Microsoft Dynamics através de conectores de CRM.
+### Vídeos do tutorial
 
-Além desses vídeos curtos e detalhados, você também pode encontrar [cursos de treinamento](https://learning.adobe.com/catalog.html), bem como [vídeos de apresentação](https://www.adobe.com/training/video.html) em nosso site.
+Descubra os principais recursos do Adobe Campaign em vídeo. [Saiba mais](https://docs.adobe.com/content/help/pt-BR/campaign-classic-learn/tutorials/overview.html)
+
+### Sessões de treinamento e vídeos
+
+Além desses vídeos curtos e detalhados, você pode encontrar cursos [de](https://learning.adobe.com/catalog.html) treinamento e assistir a vídeos [de](https://www.adobe.com/training/video.html) apresentação de recursos em Adobe.com.
+
+### Cursos da Experience League
+
+Você também pode visitar os Cursos [](https://experienceleague.adobe.com/?lang=en#dashboard/learning) recomendados para Adobe Campaign Classic: os cursos são coleções especializadas de lições que ajudam você a adquirir habilidades e conhecimento rapidamente.
