@@ -12,9 +12,9 @@ content-type: reference
 topic-tags: additional-configurations
 discoiquuid: 86c18986-1f65-40ff-80dc-1fbff37f406d
 translation-type: tm+mt
-source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+source-git-commit: 3acf2359c74a3dc4b18c8976fee14dcbaf3fa510
 workflow-type: tm+mt
-source-wordcount: '2980'
+source-wordcount: '2975'
 ht-degree: 21%
 
 ---
@@ -28,7 +28,7 @@ A seção a seguir fornece uma visão geral da configuração necessária para c
 
 >[!NOTE]
 >
->Algumas configurações só podem ser executadas por Adobe para implantações hospedadas por Adobe, por exemplo, para acessar os arquivos de configuração do servidor e da instância. Para saber mais sobre as diferentes implantações, consulte a seção Modelos [de](../../installation/using/hosting-models.md) hospedagem ou [este artigo](https://helpx.adobe.com/br/campaign/kb/acc-on-prem-vs-hosted.html).
+>Algumas configurações só podem ser executadas por Adobe para implantações hospedadas por Adobe, por exemplo, para acessar os arquivos de configuração do servidor e da instância. Para saber mais sobre as diferentes implantações, consulte a seção Modelos [de](../../installation/using/hosting-models.md) hospedagem ou [esta página](../../installation/using/capability-matrix.md).
 
 Para obter mais informações sobre os conceitos e as práticas recomendadas relacionadas à capacidade de entrega, consulte esta [seção](../../delivery/using/about-deliverability.md).
 
