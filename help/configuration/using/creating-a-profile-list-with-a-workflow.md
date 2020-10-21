@@ -1,8 +1,6 @@
 ---
 title: ' Criação de uma lista de perfis com base em um workflow '
-seo-title: ' Criação de uma lista de perfis com base em um workflow '
-description: ' Criação de uma lista de perfis com base em um workflow '
-seo-description: null
+description: Saiba como criar uma lista de perfil em um fluxo de trabalho
 page-status-flag: never-activated
 uuid: a30f7217-fe82-4290-b1e6-e7a126a316c1
 contentOwner: sauviat
@@ -12,17 +10,23 @@ content-type: reference
 topic-tags: use-a-custom-recipient-table
 discoiquuid: ba42c3cf-31fc-4fbc-b230-a2b3982328c5
 translation-type: tm+mt
-source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+source-git-commit: c2c0609619e0cc81444d089850add6dec5de93fd
 workflow-type: tm+mt
-source-wordcount: '186'
-ht-degree: 24%
+source-wordcount: '183'
+ht-degree: 14%
 
 ---
 
 
 #  Criação de uma lista de perfis com base em um workflow {#creating-a-profile-list-with-a-workflow}
 
-Para criar uma lista de **[!UICONTROL List]** tipo com base na nova tabela de recipient, é necessário criar um fluxo de trabalho de definição de metas que gere a lista. Para obter mais informações sobre listas na Campanha, consulte [esta seção](../../platform/using/creating-and-managing-lists.md#about-lists-in-adobe-campaign).
+Para criar uma lista de **[!UICONTROL List]** tipo com base na nova tabela de recipient, é necessário criar um fluxo de trabalho de definição de metas que gere a lista.
+
+Para obter mais informações sobre listas na Campanha, consulte [esta seção](../../platform/using/creating-and-managing-lists.md#about-lists-in-adobe-campaign).
+
+![](assets/do-not-localize/how-to-video.png) [Descubra este recurso no vídeo](../../platform/using/creating-and-managing-lists.md#create-list-in-a-wf-video)
+
+Para criar um fluxo de trabalho de definição de metas e atualizar recipient em uma tabela de recipient personalizada, siga as etapas abaixo:
 
 1. Vá para o **[!UICONTROL Profiles and Targets > Jobs > Targeting workflows]** nó do explorador.
 1. Criação de um novo workflow para construção do target
@@ -46,7 +50,4 @@ Para criar uma lista de **[!UICONTROL List]** tipo com base na nova tabela de re
 
    ![](assets/mapping_list_view.png)
 
->[!NOTE]
->
->Você também pode consultar o vídeo [Criação de uma lista de recipient](https://docs.adobe.com/content/help/pt-BR/campaign-classic-learn/tutorials/getting-started/creating-a-list-of-recipients.html) .
 
