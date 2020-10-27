@@ -12,7 +12,7 @@ content-type: reference
 topic-tags: managing-an-offer-catalog
 discoiquuid: 7b1c58a0-6fd6-4c9d-b1c4-f3dffda42523
 translation-type: tm+mt
-source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+source-git-commit: 8fc3e793ec544948049fc122b44b6bffdebecba0
 workflow-type: tm+mt
 source-wordcount: '627'
 ht-degree: 91%
@@ -36,7 +36,7 @@ O conteúdo de uma oferta tem uma representação por espaço. Como cada espaço
 
 É possível optar por aprovar o conteúdo da oferta em determinados espaços disponíveis e reject em outros.
 
->[!CAUTION]
+>[!IMPORTANT]
 >
 >Quando o conteúdo e a qualificação de uma oferta são aprovados, o workflow de publicação (Notificação de oferta) é executado automaticamente e a oferta é ativada e disponibilizada em todos os espaços ativados.
 
@@ -62,7 +62,7 @@ Para aprovar o conteúdo da oferta, aplique as seguintes etapas:
 
 Aprovar a qualificação de oferta significa aceitar ou rejeitar pesos de oferta e as regras de qualificação também configuradas na oferta ou herdada das regras criadas na categoria pai.
 
->[!CAUTION]
+>[!IMPORTANT]
 >
 >Quando o conteúdo e a qualificação de uma oferta são aprovados, o workflow de publicação (Notificação de oferta) é executado automaticamente e a oferta é ativada e disponibilizada em todos os espaços ativados.
 
