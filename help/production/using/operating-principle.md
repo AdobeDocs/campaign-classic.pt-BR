@@ -12,7 +12,7 @@ content-type: reference
 topic-tags: production-procedures
 discoiquuid: 5e9c17ad-14d2-4173-9fc9-0e48a21426c8
 translation-type: tm+mt
-source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+source-git-commit: 849e1ebf14f707d9e86c5a152de978acb6f1cb35
 workflow-type: tm+mt
 source-wordcount: '502'
 ht-degree: 1%
@@ -36,7 +36,7 @@ A administração do módulo é executada usando a ferramenta de linha de comand
 
 A sintaxe geral da ferramenta **nlserver** é a seguinte:
 
-**nlserver`<command>``<command arguments>`**
+**nlserver `<command>``<command arguments>`**
 
 Para a lista de módulos disponíveis, use o comando **nlserver** .
 
@@ -79,11 +79,11 @@ Os módulos disponíveis são detalhados na tabela a seguir:
 | web | Servidor de aplicativos (HTTP e SOAP) |
 | wfserver | Servidor de fluxo de trabalho |
 
->[!CAUTION]
+>[!IMPORTANT]
 >
 >Há um último módulo: o módulo de rastreamento e retransmissão vinculado ao servidor de aplicativos que, por questões de desempenho, é integrado por mecanismos nativos em um servidor da Web Apache ou IIS por meio de uma biblioteca dinâmica. Não há comando do Adobe Campaign que permita que você start ou administre este módulo. Portanto, você deve usar os comandos do próprio servidor Web.
 
-O uso do módulo e a sintaxe de seus parâmetros são exibidos usando o seguinte comando: **nlserver`[module]`-?**
+O uso do módulo e a sintaxe de seus parâmetros são exibidos usando o seguinte comando: **nlserver `[module]` -?**
 
 Exemplo:
 
