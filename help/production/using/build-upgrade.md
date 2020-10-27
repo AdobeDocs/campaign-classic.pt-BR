@@ -10,9 +10,9 @@ content-type: reference
 topic-tags: updating-adobe-campaign
 discoiquuid: f8e3633d-7232-44a5-842b-1a70c4f2bca2
 translation-type: tm+mt
-source-git-commit: 8ec525f400c29b986eadd888d29f1579860871c6
+source-git-commit: 849e1ebf14f707d9e86c5a152de978acb6f1cb35
 workflow-type: tm+mt
-source-wordcount: '2366'
+source-wordcount: '2355'
 ht-degree: 3%
 
 ---
@@ -209,10 +209,10 @@ Os seguintes serviços precisam ser reiniciados:
 
 Na máquina em que o servidor de aplicativos Adobe Campaign está instalado (nlserverweb), baixe e copie o arquivo:
 
+```
+Setup-client-7.xxxx.exe in [path of the application]\datakit\nl\en\jsp
+```
 
-    &quot;
-    Setup-client-7.xxxx.exe em [caminho do aplicativo]\datakit\nl\en\jsp
-    &quot;
 
 Na próxima vez que os consoles cliente forem conectados, uma janela informará os usuários sobre a disponibilidade de uma nova atualização e oferta a possibilidade de baixá-la e instalá-la.
 
@@ -344,7 +344,7 @@ Há três opções para resolver conflitos: **Aceite a nova versão**, **Mantenh
 * O objeto não será atualizado
 * Impactos a longo prazo: incompatibilidades de versão, o cliente não se beneficiará com correções de erros.
 
->[!CAUTION]
+>[!IMPORTANT]
 >É altamente recomendável resolver conflitos.
 
 
@@ -408,7 +408,7 @@ Estas são as etapas para executar uma mesclagem complexa:
 1. Executar no ambiente de teste
 
 
->[!CAUTION]
+>[!IMPORTANT]
 >Habilidades de desenvolvimento são necessárias para realizar mesclagens complexas.
 
 
