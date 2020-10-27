@@ -10,7 +10,7 @@ content-type: reference
 topic-tags: data-processing
 discoiquuid: 6b188d78-abb4-4f03-80b9-051ce960f43c
 translation-type: tm+mt
-source-git-commit: 2a82493deada11cb22ef37d215b6eae8274ce890
+source-git-commit: 849e1ebf14f707d9e86c5a152de978acb6f1cb35
 workflow-type: tm+mt
 source-wordcount: '2910'
 ht-degree: 1%
@@ -45,7 +45,7 @@ Por padrão, o fluxo de trabalho **[!UICONTROL Database cleanup]** é configurad
 
 ![](assets/ncs_cleanup_scheduler.png)
 
->[!CAUTION]
+>[!IMPORTANT]
 >
 >Para que o fluxo de trabalho seja **[!UICONTROL Database cleanup]** start na data e hora definidas no scheduler, o motor de workflow (wfserver) deve ser iniciado. Se esse não for o caso, a limpeza do banco de dados não ocorrerá até a próxima vez que o motor de workflow for iniciado.
 
@@ -84,7 +84,7 @@ Todas as tarefas executadas pelo **[!UICONTROL Database cleanup]** fluxo de trab
 
 Na data e hora definidas no scheduler do fluxo de trabalho (consulte [O scheduler](#the-scheduler)), o motor de workflow start o processo de limpeza do banco de dados. A limpeza do Banco de Dados se conecta ao banco de dados e executa as tarefas na sequência mostrada abaixo.
 
->[!CAUTION]
+>[!IMPORTANT]
 >
 >Se uma dessas tarefas falhar, as seguintes não serão executadas.\
 >Os query SQL com um atributo **LIMIT** serão executados repetidamente até que todas as informações sejam processadas.
