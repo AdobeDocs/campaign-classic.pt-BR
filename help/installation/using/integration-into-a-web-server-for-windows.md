@@ -12,7 +12,7 @@ content-type: reference
 topic-tags: installing-campaign-in-windows-
 discoiquuid: a4f2ae0e-e631-4ab6-934e-8298e4ce6f2c
 translation-type: tm+mt
-source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+source-git-commit: d509dc584cd4ae17c6dda85c09fceee8c6162dba
 workflow-type: tm+mt
 source-wordcount: '968'
 ht-degree: 5%
@@ -70,7 +70,7 @@ Aplique as seguintes etapas de configuração:
 
    ![](assets/s_ncs_install_iis7_parameters_step1.png)
 
-1. Um script **VBS** permite que você configure automaticamente os recursos usados pelo servidor Adobe Campaign no diretório virtual que acabamos de criar. Para iniciá-lo, clique no duplo **is_neolane_setup.vbs** localizado na `[INSTALL]\tomcat-7\conf` pasta, onde `[INSTALL]` é o caminho para acessar a pasta de instalação do Adobe Campaign.
+1. Um script **VBS** permite que você configure automaticamente os recursos usados pelo servidor Adobe Campaign no diretório virtual que acabamos de criar. Para iniciá-lo, clique no duplo **is_neolane_setup.vbs** localizado na `[INSTALL]\conf` pasta, onde `[INSTALL]` é o caminho para acessar a pasta de instalação do Adobe Campaign.
 
    ![](assets/s_ncs_install_iis7_parameters_step2.png)
 
