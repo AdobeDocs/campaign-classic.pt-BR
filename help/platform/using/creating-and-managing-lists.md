@@ -10,9 +10,9 @@ content-type: reference
 topic-tags: profile-management
 discoiquuid: 9fc243b2-7b7b-4083-83f6-04c12336492d
 translation-type: tm+mt
-source-git-commit: c2c0609619e0cc81444d089850add6dec5de93fd
+source-git-commit: 208bac758542db8dd514bda80c8c735897fcefec
 workflow-type: tm+mt
-source-wordcount: '791'
+source-wordcount: '789'
 ht-degree: 92%
 
 ---
@@ -142,9 +142,3 @@ Saiba como criar uma audiência configurando uma lista de recipient do Explorer.
 Saiba como criar um fluxo de trabalho para recipient de público alvo e como torná-lo recorrente antes de usar a lista em um público alvo de email.
 
 >[!VIDEO](https://video.tv.adobe.com/v/25603?quality=12)
-
-**Consulte também**
-
-* 
-
-* 
