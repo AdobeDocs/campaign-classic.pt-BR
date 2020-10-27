@@ -12,9 +12,9 @@ content-type: reference
 topic-tags: message-templates
 discoiquuid: 12e7043e-e8b5-48a9-8a2f-99e2e6040c3c
 translation-type: tm+mt
-source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+source-git-commit: 95dff2f3704e316e9ec9e454a8f3fb9835508ccd
 workflow-type: tm+mt
-source-wordcount: '214'
+source-wordcount: '193'
 ht-degree: 92%
 
 ---
@@ -24,7 +24,7 @@ ht-degree: 92%
 
 Um seed address permite exibir uma pré-visualização da mensagem, enviar uma prova e testar a personalização da mensagem antes de enviar o delivery de email ou de SMS. Os seed addresses estão vinculados ao delivery e não podem ser usados para outros deliveries.
 
-## Criação de um seed address {#creating-a-seed-address}
+## Criação de seed addresses {#creating-a-seed-address}
 
 1. In the transactional message template, click the **[!UICONTROL Seed addresses]** tab.
 
@@ -46,13 +46,12 @@ Um seed address permite exibir uma pré-visualização da mensagem, enviar uma p
 
    ![](assets/messagecenter_create_custo_001.png)
 
-## Criação de vários seed addresses {#creating-several-seed-addresses}
-
+   <!--## Creating several seed addresses {#creating-several-seed-addresses}-->
 1. Clique no **[!UICONTROL Add other seed addresses]** link e, em seguida, clique no **[!UICONTROL Add]** botão.
 
    ![](assets/messagecenter_create_seedaddr_004.png)
 
-1. Siga as etapas de configuração para um seed address que está detalhado na seção [Criação de um seed address](#creating-a-seed-address)
+   <!--1. Follow the configuration steps for a seed address detailed in the [Creating a seed address](#creating-a-seed-address) section.-->
 1. Repita o processo para criar quantos endereços forem necessários.
 
    ![](assets/messagecenter_create_seedaddr_008.png)
