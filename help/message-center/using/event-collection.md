@@ -12,10 +12,10 @@ content-type: reference
 topic-tags: event-processing
 discoiquuid: cfff302a-6ac0-461a-a1e4-8e4b617fe134
 translation-type: tm+mt
-source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+source-git-commit: 95dff2f3704e316e9ec9e454a8f3fb9835508ccd
 workflow-type: tm+mt
 source-wordcount: '106'
-ht-degree: 100%
+ht-degree: 50%
 
 ---
 
@@ -24,10 +24,9 @@ ht-degree: 100%
 
 Eventos gerados pelo sistema de informações podem ser coletados usando dois modos:
 
-* chamadas para métodos SOAP permitem que você envie eventos no Adobe Campaign: o método PushEvent permite enviar um evento de cada vez, o método PushEvents permite enviar vários de uma vez. Consulte [Descrição de evento](../../message-center/using/event-description.md).
-* a criação de um workflow permite recuperar eventos importando arquivos ou por meio de um gateway SQL (com a opção **Federated Data Access**).
+* As chamadas aos métodos SOAP permitem que você envie eventos para o Adobe Campaign: o método PushEvent permite que você envie um evento de cada vez, o método PushEvents permite que você envie vários de uma só vez. Consulte [Descrição de evento](../../message-center/using/event-description.md).
+* Creating a workflow lets you recover events by importing files or via an SQL gateway (with the **Federated Data Access** option).
 
 Depois que são coletados, os eventos são divididos, por workflows técnicos, entre as filas em tempo real e batch das instâncias de execução enquanto aguardam a vinculação a um template de mensagem.
 
 ![](assets/messagecenter_events_queues_001.png)
-
