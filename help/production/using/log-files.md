@@ -12,7 +12,7 @@ content-type: reference
 topic-tags: production-procedures
 discoiquuid: fac3e3ec-82a7-4087-ba88-2b28b0f69d1c
 translation-type: tm+mt
-source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+source-git-commit: 849e1ebf14f707d9e86c5a152de978acb6f1cb35
 workflow-type: tm+mt
 source-wordcount: '433'
 ht-degree: 3%
@@ -56,7 +56,7 @@ Os arquivos de log de instância mono estão listados na seguinte tabela:
 | inMail.log | Registro do módulo de e-mail de rejeição |
 | logins.log | Registra todas as tentativas de login no Adobe Campaign (bem-sucedidas ou não) |
 
->[!CAUTION]
+>[!IMPORTANT]
 >
 >O diretório **redir** existe apenas em servidores de redirecionamento. O subdiretório **url** contém as correspondências dos URLs a serem redirecionados e o **log** do subdiretório contém os logs de rastreamento. Para gerar logs de rastreamento, o módulo **trackinglogd** deve estar em execução.
 
@@ -68,4 +68,4 @@ Entretanto, é possível manter arquivos maiores. Para habilitar isso, altere o 
 
 Se desejar manter níveis adicionais de detalhes nos registros, você pode start os módulos Adobe Campaign com o parâmetro **-verbose** :
 
-**nlserver start`<MODULE>`@`<INSTANCE>`-verbose**
+**nlserver start `<MODULE>`@`<INSTANCE>` -verbose**
