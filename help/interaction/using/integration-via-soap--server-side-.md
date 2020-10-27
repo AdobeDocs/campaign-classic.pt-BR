@@ -12,15 +12,15 @@ content-type: reference
 topic-tags: unitary-interactions
 discoiquuid: 477a2c31-0403-4db1-a372-c75dca58380d
 translation-type: tm+mt
-source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+source-git-commit: 8fc3e793ec544948049fc122b44b6bffdebecba0
 workflow-type: tm+mt
-source-wordcount: '324'
-ht-degree: 100%
+source-wordcount: '323'
+ht-degree: 98%
 
 ---
 
 
-# Integração via SOAP (lado do servidor){#integration-via-soap-server-side}
+# Integração via SOAP (servidor){#integration-via-soap-server-side}
 
 Os serviços da Web SOAP fornecidos para o gerenciamento de ofertas são diferentes daqueles normalmente usados no Adobe Campaign. Eles podem ser acessados por meio da URL de interação descrita na seção anterior e permitem apresentar ou atualizar ofertas para um determinado contato.
 
