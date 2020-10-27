@@ -12,24 +12,24 @@ content-type: reference
 topic-tags: adobe-experience-manager
 discoiquuid: 1c20795d-748c-4f5d-b526-579b36666e8f
 translation-type: tm+mt
-source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+source-git-commit: 3e73d7c91fbe7cff7e1e31bdd788acece5806e61
 workflow-type: tm+mt
-source-wordcount: '642'
-ht-degree: 100%
+source-wordcount: '585'
+ht-degree: 97%
 
 ---
 
 
 # Solução de problemas de pipeline {#pipeline-troubleshooting}
 
-**Falha no pipeline com o erro &quot;Nenhuma atividade corresponde à máscara de pipeline@&quot;**
+**Falha no pipeline com o erro &quot;Nenhuma tarefa corresponde à máscara pipeline@&lt; instância >&quot;**
 
 A sua versão do Adobe Campaign Classic não é compatível com o pipeline.
 
 1. Verifique se o elemento [!DNL pipelined] está presente no arquivo de configuração. Caso não esteja, significa que não é compatível.
 1. Atualize para a versão 6.11 build 8705 ou posterior.
 
-**Falha no pipeline com “ aurait dû commencer par`[`ou`{`(iRc=16384)”**
+**Falha no pipeline com “ aurait dû commencer par `[` ou `{` (iRc=16384)”**
 
 A opção **NmsPipeline_Config** não está definida. Na verdade é um erro de análise JSON.
 Defina a configuração JSON na opção **NmsPipeline_Config**. Consulte &quot;Opção de roteamento&quot; nesta página.
@@ -49,7 +49,7 @@ O parâmetro @authPrivateKey do arquivo de configuração da instância está in
 1. Verifique se a authPrivateKey está definida.
 1. Verifique se a authPrivateKey: inicia com @, termina com = e tem cerca de 4000 caracteres.
 1. Procure a chave original e verifique se ela tem: formato RSA, 4096 bits de comprimento e inicia com -----BEGIN RSA PRIVATE KEY-----.
-   <br> Se necessário, recrie a chave e registre-a no Adobe Analytics. Consulte esta [seção](../../integrations/using/configuring-pipeline.md#oauth-client-creation).
+   <br> Se necessário, recrie a chave e registre-a no Adobe Analytics.
 1. Verifique se a chave foi codificada na mesma instância como [!DNL pipelined]. <br>Se necessário, refaça a codificação usando a amostra de JavaScript ou workflow.
 
 **Falha no pipeline com &quot;não é possível ler o token durante a autenticação&quot;**
@@ -91,42 +91,3 @@ Geralmente, um acionador pode levar de 15 a 90 minutos para iniciar uma campanha
 1. Verifique o tamanho da fila na página de status [!DNL pipelined]. Se o tamanho da fila for grande, melhore o desempenho do JS.
 1. Como o atraso parece aumentar com o volume, configure os acionadores no Analytics usando menos mensagens.
 Anexos
-
-**Como usar a criptografia de chave JavaScript**
-
-Execute um JavaScript para criptografar a chave privada. É necessário para a configuração do pipeline.
-
-Esta é uma amostra de código que você pode usar para executar a função cryptString:
-
-```
-/*
-USAGE:
-  nlserver javascript -instance:<instancename> -file -arg:"<private_key.pem file>" -file encryptKey.js
-*/
- 
-function usage()
-{
-  return "USAGE:\n" +
-    '  nlserver javascript -instance:<instancename> -file -arg:"<private_key.pem file>" -file encryptKey.js\n'
-}
- 
-var fn = application.arg;
-if( fn == "" )
-  logError("Missing key file file\n" + usage());
- 
-//open the pem file
-plaintext = loadFile(fn)
- 
-if( !plaintext.match(/^-----BEGIN RSA PRIVATE KEY-----/) )
-  logError("File should be an rsa private key")
- 
-logInfo("Encrypted key:\n" + cryptString(plaintext, <xtkSecretKey>))
-```
-
-No servidor, execute o Javascript:
-
-```
-nlserver javascript -instance:<instancename> -file -arg:"<private_key.pem file>" -file encryptKey.js
-```
-
-Copie e cole a chave codificada da saída para o console.
