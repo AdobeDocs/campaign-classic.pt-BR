@@ -12,7 +12,7 @@ content-type: reference
 topic-tags: advanced-parameters
 discoiquuid: 811a42a4-552c-49cb-bffd-7e124ef83735
 translation-type: tm+mt
-source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+source-git-commit: 8fc3e793ec544948049fc122b44b6bffdebecba0
 workflow-type: tm+mt
 source-wordcount: '1013'
 ht-degree: 99%
@@ -39,7 +39,7 @@ Para oferecer suporte a escalabilidade e fornecer serviço 24 horas por dia, 7 d
 
 A sincronização de oferta é realizada por meio de pacotes. Em instâncias de execução, todos os objetos de catálogo são prefixados pelo nome da conta externa. Isso significa que várias instâncias de controle (instâncias de desenvolvimento e produção por exemplo) podem ser suportadas em uma mesma instância de execução.
 
->[!CAUTION]
+>[!IMPORTANT]
 >
 >Recomendamos utilizar nomes internos curtos e explícitos.
 
@@ -112,7 +112,7 @@ Se, por motivos de otimização, apenas parte do banco de dados de marketing for
 
 Aqui está uma lista de opções de manutenção disponíveis na instância de controle:
 
->[!CAUTION]
+>[!IMPORTANT]
 >
 >Essas opções só devem ser usadas para casos de manutenção específicos.
 
@@ -128,7 +128,7 @@ A seguinte opção está disponível nas instâncias de execução:
 
 Se a instância não tiver o pacote do Interaction anteriormente, nenhuma migração será necessária. Por padrão, a tabela de propostas estará em 64 bits após a instalação dos pacotes.
 
->[!CAUTION]
+>[!IMPORTANT]
 >
 >Dependendo do volume de propostas existentes na instância, essa operação pode demorar algum tempo.
 
