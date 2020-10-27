@@ -12,7 +12,7 @@ content-type: reference
 topic-tags: managing-environments
 discoiquuid: c7b4103d-99b2-4e64-a457-ee0e3326b172
 translation-type: tm+mt
-source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+source-git-commit: 8fc3e793ec544948049fc122b44b6bffdebecba0
 workflow-type: tm+mt
 source-wordcount: '97'
 ht-degree: 100%
@@ -26,7 +26,7 @@ Este capítulo detalha como gerenciar ambientes de oferta no Interaction.
 
 Vários perfis de usuário diferentes estão envolvidos no gerenciamento e no uso de ofertas. A primeira etapa, portanto, envolve garantir que esses perfis existam e, se não, os cria.
 
->[!CAUTION]
+>[!IMPORTANT]
 >
 >As configurações a seguir precisam ser executadas por um **administrador técnico**.
 
