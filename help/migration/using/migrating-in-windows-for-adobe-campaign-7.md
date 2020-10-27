@@ -12,9 +12,9 @@ content-type: reference
 topic-tags: migrating-to-adobe-campaign-7
 discoiquuid: f459dc07-b7db-4526-b428-852b51c9c00e
 translation-type: tm+mt
-source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+source-git-commit: d509dc584cd4ae17c6dda85c09fceee8c6162dba
 workflow-type: tm+mt
-source-wordcount: '1541'
+source-wordcount: '1540'
 ht-degree: 1%
 
 ---
@@ -305,10 +305,10 @@ Neste estágio, o servidor IIS deve ser interrompido. Consulte Parada [de servi�
 
 1. Execute o script **is_neolane_setup.vbs** para configurar automaticamente os recursos usados pelo servidor Adobe Campaign no diretório virtual criado anteriormente.
 
-   * Esse arquivo é encontrado no diretório **`[Adobe Campaign v7]`\tomcat-7\conf file**, onde **`[Adobe Campaign v7]`** é o caminho de acesso ao diretório de instalação do Adobe Campaign. O comando para executar o script é o seguinte (para administradores):
+   * Esse arquivo é encontrado no diretório **`[Adobe Campaign v7]`\conf** , onde **`[Adobe Campaign v7]`** é o caminho de acesso para o diretório de instalação do Adobe Campaign. O comando para executar o script é o seguinte (para administradores):
 
       ```
-      cd C:\Program Files (x86)\Adobe Campaign\Adobe Campaign v7\tomcat-7\conf
+      cd C:\Program Files (x86)\Adobe Campaign\Adobe Campaign v7\conf
       cscript iis_neolane_setup.vbs
       ```
 
