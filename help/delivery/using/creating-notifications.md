@@ -1,8 +1,6 @@
 ---
-title: Criar notificações
-seo-title: Criar notificações
-description: Criar notificações
-seo-description: null
+title: Criação de notificações por push
+description: Saiba como criar notificações por push
 page-status-flag: never-activated
 uuid: fb1862df-e616-4147-a642-dc867bc983b5
 contentOwner: sauviat
@@ -12,10 +10,10 @@ content-type: reference
 topic-tags: sending-push-notifications
 discoiquuid: 345af5c2-c852-4086-8ed0-ff3e7e402e04
 translation-type: tm+mt
-source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+source-git-commit: fd75f7f75e8e77d7228233ea311dd922d100417c
 workflow-type: tm+mt
-source-wordcount: '832'
-ht-degree: 100%
+source-wordcount: '835'
+ht-degree: 98%
 
 ---
 
@@ -100,7 +98,7 @@ Para enviar uma prova e o delivery final, use o mesmo processo que os deliveries
 Após enviar as mensagens, você pode monitorar e rastrear seus deliveries. Para obter mais informações, consulte essas seções.
 
 * [Notificação por push em quarentena](../../delivery/using/understanding-quarantine-management.md#push-notification-quarantines)
-* [Monitoramento de uma entrega](../../delivery/using/monitoring-a-delivery.md)
+* [Monitorar um delivery](../../delivery/using/monitoring-a-delivery.md)
 * [Noções básicas sobre falhas de entrega](../../delivery/using/understanding-delivery-failures.md)
 
 ## Enviar notificações no Android {#sending-notifications-on-android}
@@ -143,5 +141,5 @@ O processo detalhado da validação e envio de um delivery é apresentado nas se
 Após enviar as mensagens, você pode monitorar e rastrear seus deliveries. Para obter mais informações, consulte essas seções.
 
 * [Notificação por push em quarentena](../../delivery/using/understanding-quarantine-management.md#push-notification-quarantines)
-* [Monitoramento de uma entrega](../../delivery/using/monitoring-a-delivery.md)
+* [Monitorar um delivery](../../delivery/using/monitoring-a-delivery.md)
 * [Noções básicas sobre falhas de entrega](../../delivery/using/understanding-delivery-failures.md)
