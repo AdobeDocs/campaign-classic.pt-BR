@@ -12,7 +12,7 @@ content-type: reference
 topic-tags: message-templates
 discoiquuid: 3bc88f9c-cc42-4bf6-a318-0093c73e4d82
 translation-type: tm+mt
-source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+source-git-commit: 95dff2f3704e316e9ec9e454a8f3fb9835508ccd
 workflow-type: tm+mt
 source-wordcount: '57'
 ht-degree: 91%
@@ -35,4 +35,3 @@ Após criar um ou mais seed addresses e o corpo da mensagem, é possível pré-v
 1. Selecione o seed address criado anteriormente para exibir a mensagem personalizada.
 
    ![](assets/messagecenter_create_seedaddr_009.png)
-
