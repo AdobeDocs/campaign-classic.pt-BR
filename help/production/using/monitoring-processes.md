@@ -12,9 +12,9 @@ content-type: reference
 topic-tags: production-procedures
 discoiquuid: 968d0ee3-5efc-46d8-b408-b9cce3e730c4
 translation-type: tm+mt
-source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+source-git-commit: 849e1ebf14f707d9e86c5a152de978acb6f1cb35
 workflow-type: tm+mt
-source-wordcount: '3602'
+source-wordcount: '3600'
 ht-degree: 1%
 
 ---
@@ -48,7 +48,7 @@ Outras maneiras de monitorar os diferentes processos do Campaign são apresentad
 
 A lista dos indicadores do sistema permite exibir informações sobre a máquina, como sua memória física e virtual, processos ativos e espaço em disco disponível. Os indicadores são diferentes para os sistemas operacionais Linux e Windows. Go to the **[!UICONTROL Instance Monitoring]** page and click the **[!UICONTROL Display]** link to open the list of indicators
 
-#### No Windows {#in-windows}
+#### Windows {#in-windows}
 
 * **[!UICONTROL Pending events queued]** : indicador específico do Centro de **mensagens**. Consulte [esta seção](../../message-center/using/monitoring-thresholds.md) para obter mais informações.
 * **[!UICONTROL Memory]** : informações relativas à memória física (RAM).
@@ -103,7 +103,7 @@ A lista dos indicadores do sistema permite exibir informações sobre a máquina
 
    Quando o **[!UICONTROL Alert]** indicador é exibido, pode ser que o processo em questão esteja bloqueado pelo mecanismo de banco de dados SQL ou que esteja preso em um loop infinito. O processo de **monitoramento** fornecido pela Adobe Campaign automaticamente start todos os processos todos os dias e permite que você resolva esse problema. No entanto, você também pode parar o processo em questão para forçar o start novamente.
 
-#### No Linux {#in-linux}
+#### Linux {#in-linux}
 
 ![](assets/production_system_indicators_linux_001.png)
 
@@ -256,7 +256,7 @@ Eles são agrupados em **Monitoramento** > &quot;Monitoramento SMTP&quot;.
 
 ![](assets/smtp_reports_access.png)
 
->[!CAUTION]
+>[!IMPORTANT]
 >
 >* As informações relacionadas ao Monitoramento SMTP só estarão disponíveis se o canal de email tiver sido ativado.
 >* Os **[!UICONTROL SMTP sending statistics]** são oferecidos somente se o servidor de estatísticas for iniciado na instância.
@@ -484,7 +484,7 @@ A Adobe Campaign pode fornecer uma ferramenta de monitoramento de instância (ne
 
 ![](assets/pro_netreport.png)
 
->[!CAUTION]
+>[!IMPORTANT]
 >
 >Essa ferramenta pode ser usada para monitorar suas instâncias, mas não é suportada pela Adobe Campaign. Entre em contato com o administrador da Campanha para obter mais informações.
 
@@ -548,7 +548,7 @@ Este é um exemplo de configuração:
 >
 >Você pode especificar várias configurações adicionando um sufixo ao arquivo **netconf.xml** , por exemplo, **netconf-dev.xml**, **netconf-prod.xml** etc. Em seguida, especifique a configuração a ser usada para executar o netreport nos arquivos **netreport.bat** ou **netreport.sh** adicionando **$JAVA_HOME/bin/java netreport dev** ou **@%JAVA_HOME%binjava netreport prod** por exemplo.
 
->[!CAUTION]
+>[!IMPORTANT]
 >
 >Para que o operador de **monitoramento** funcione, a máquina na qual o netreport é executado deve estar em uma zona de segurança que esteja no modo **sessionTokenOnly** . Se nenhuma máscara IP confiável tiver sido especificada para esse operador, a zona de segurança também deverá estar no modo **allowEmptyPassword** e **allowUserPassword** .
 
