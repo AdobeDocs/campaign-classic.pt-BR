@@ -12,7 +12,7 @@ content-type: reference
 topic-tags: additional-configurations
 discoiquuid: 1a94c94e-ab6b-45c2-a0f3-6adeec7e2d2d
 translation-type: tm+mt
-source-git-commit: 3acf2359c74a3dc4b18c8976fee14dcbaf3fa510
+source-git-commit: 2ff877607641435a2c2806f48f3c5b35d96d39c5
 workflow-type: tm+mt
 source-wordcount: '3582'
 ht-degree: 5%
@@ -242,7 +242,7 @@ Depois que as zonas forem definidas e a **[!UICONTROL Security zone]** lista dis
 
 ### Porta padrão para Tomcat {#default-port-for-tomcat}
 
-Quando a porta de escuta 8080 do servidor Tomcat já estiver ocupada com outro aplicativo necessário para sua configuração, é necessário substituir a porta 8080 por uma gratuita (8090, por exemplo). Para alterá-lo, edite o arquivo **server.xml** salvo no diretório **/tomcat-7/conf** da pasta de instalação do Adobe Campaign.
+Quando a porta de escuta 8080 do servidor Tomcat já estiver ocupada com outro aplicativo necessário para sua configuração, é necessário substituir a porta 8080 por uma gratuita (8090, por exemplo). Para alterá-lo, edite o arquivo **server.xml** salvo no diretório **/tomcat-8/conf** da pasta de instalação do Adobe Campaign.
 
 Em seguida, modifique a porta das páginas de relé JSP. Para fazer isso, altere o arquivo **serverConf.xml** salvo no diretório **/conf** do diretório de instalação do Adobe Campaign. Todos os parâmetros disponíveis no **serverConf.xml** estão listados nesta [seção](../../installation/using/the-server-configuration-file.md).
 
@@ -255,7 +255,7 @@ Em seguida, modifique a porta das páginas de relé JSP. Para fazer isso, altere
 
 ### Mapeamento de uma pasta no Tomcat {#mapping-a-folder-in-tomcat}
 
-Para definir configurações específicas do cliente, você pode criar um arquivo **user_contextos.xml** na pasta **/tomcat-7/conf** , que também contém o arquivo **contextos.xml** .
+Para definir configurações específicas do cliente, você pode criar um arquivo **user_contextos.xml** na pasta **/tomcat-8/conf** , que também contém o arquivo **contextos.xml** .
 
 Esse arquivo conterá o seguinte tipo de informação:
 
