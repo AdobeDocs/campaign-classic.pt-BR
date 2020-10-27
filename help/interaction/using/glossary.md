@@ -12,7 +12,7 @@ content-type: reference
 topic-tags: interaction-overview
 discoiquuid: 5b2b7682-6bac-4282-8d27-e8a259934e7d
 translation-type: tm+mt
-source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+source-git-commit: 8fc3e793ec544948049fc122b44b6bffdebecba0
 workflow-type: tm+mt
 source-wordcount: '1095'
 ht-degree: 100%
@@ -31,7 +31,7 @@ Abaixo está a definição dos elementos principais de interação.
 
 * **Espaço de ofertas**: pasta que define o local onde a oferta é exposta. A definição de um espaço permite especificar o canal usado, especificar se ele pode ser usado no modo unitário (por padrão: apenas no modo de lote), criar o conteúdo da oferta usando funções de renderização e especificar a oferta dentre as ofertas apresentadas. Um espaço é uma interface entre o canal e o motor de oferta.
 
-   >[!CAUTION]
+   >[!IMPORTANT]
    >
    >Um espaço de ofertas não é um canal de comunicação, ele coincide com um local específico de exposição no canal. Por exemplo, as ofertas expostas em um site pode ocupar dois espaços na mesma página. Nesse caso, teremos dois espaços para o mesmo canal.
    >
