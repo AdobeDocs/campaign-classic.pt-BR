@@ -12,7 +12,7 @@ content-type: reference
 topic-tags: troubleshooting
 discoiquuid: c6c39b7d-7bbd-4789-b1ea-b938153e9679
 translation-type: tm+mt
-source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+source-git-commit: 849e1ebf14f707d9e86c5a152de978acb6f1cb35
 workflow-type: tm+mt
 source-wordcount: '322'
 ht-degree: 2%
@@ -26,7 +26,7 @@ ht-degree: 2%
 
 Envolve o relançamento dos processos com um nível mais alto de registros.
 
->[!CAUTION]
+>[!IMPORTANT]
 >
 >Este procedimento cancela os serviços em andamento neste módulo.
 
@@ -62,7 +62,7 @@ A Adobe Campaign pode operar com dois níveis de log:
    nlserver restart <MODULE_NAME> -noconsole
    ```
 
->[!CAUTION]
+>[!IMPORTANT]
 Os registros desses comandos são armazenados no arquivo de log do módulo.
 
 Este é um exemplo específico do módulo Web. Os outros módulos operam conforme indicado acima.
@@ -88,7 +88,7 @@ nlserver stop mta@<INSTANCE_NAME>; nlserver mta -instance:<INSTANCE_NAME> -trace
 >[!NOTE]
 O modo **Tracefile** permite salvar os logs. Nos exemplos acima, os registros são salvos nos arquivos **var/`<instance-name>`/mta_debug.log** e **var/default/web_debug.log** .
 
->[!CAUTION]
+>[!IMPORTANT]
 No Windows, não adicione a opção LD_PRELOAD. O seguinte comando é suficiente:\
 nlserver web -tomcat -verbose -tracefilter:*
 
