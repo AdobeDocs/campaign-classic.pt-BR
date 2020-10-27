@@ -10,10 +10,10 @@ content-type: reference
 topic-tags: starting-with-adobe-campaign
 discoiquuid: 16dbe423-018f-4666-9901-2120a8dc609a
 translation-type: tm+mt
-source-git-commit: 20894054c09cfc4a388b068f25f990277bc1fc70
+source-git-commit: cb96a238f4c8e413377ce6102b065b91badfe6db
 workflow-type: tm+mt
-source-wordcount: '1989'
-ht-degree: 19%
+source-wordcount: '2020'
+ht-degree: 20%
 
 ---
 
@@ -203,3 +203,10 @@ todo o conteúdo é exibido e está presente.
    * Testar envio de SMS
    * Se você tiver algum FDA externo conectado, teste se os dados estão sendo enviados de ambas as maneiras
    * Se você usar integrações como Adobe Campaign-Adobe Experience Manager, Adobe Campaign-Adobe Analytics, teste se elas ainda funcionam como antes
+
+**Consulte também**
+
+* [Atualização de uma build](../../production/using/build-upgrade.md)
+* [Notas de versão do Campaign Classic ](../../rn/using/rn-overview.md)
+* [Opções de ajuda e suporte para Campaign Classic](https://helpx.adobe.com/campaign/kb/ac-support.html#acc-support-req)
+* [Programa Gold Standard](https://helpx.adobe.com/br/campaign/kb/gold-standard.html)
