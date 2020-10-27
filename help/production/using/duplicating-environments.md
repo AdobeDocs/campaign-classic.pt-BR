@@ -12,7 +12,7 @@ content-type: reference
 topic-tags: data-processing
 discoiquuid: 9f7118f4-aef0-469c-bbe1-b62bed674faa
 translation-type: tm+mt
-source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+source-git-commit: 849e1ebf14f707d9e86c5a152de978acb6f1cb35
 workflow-type: tm+mt
 source-wordcount: '1291'
 ht-degree: 2%
@@ -26,7 +26,7 @@ ht-degree: 2%
 
 ### Visão geral {#overview}
 
->[!CAUTION]
+>[!IMPORTANT]
 >
 >Se você não tiver acesso ao servidor e ao banco de dados (ambientes hospedados), não será possível executar os procedimentos descritos abaixo. Por favor, entre em contato com a Adobe.
 
@@ -49,14 +49,14 @@ Para fazer isso, siga as etapas abaixo:
    >No contexto do Adobe Campaign, uma **cauterização** combina ações que permitem interromper todos os processos interagindo com o exterior: registros, rastreamento, delivery, workflows da campanha etc.\
    >Essa etapa é necessária para evitar a entrega de mensagens várias vezes (uma vez do ambiente nominal e outra do ambiente duplicado).
 
-   >[!CAUTION]
+   >[!IMPORTANT]
    >
    >Um ambiente pode conter várias instâncias. Cada instância da Adobe Campaign está sujeita a um contrato de licença. Verifique seu contrato de licença para ver quantos ambientes você pode ter.\
    >O procedimento abaixo permite que você transfira um ambiente sem afetar o número de ambientes e instâncias que você instalou.
 
 ### Antes do seu start {#before-you-start}
 
->[!CAUTION]
+>[!IMPORTANT]
 >
 >Recomendamos executar um backup completo dos bancos de dados para todas as instâncias dos ambientes de origem e público alvo antes de iniciar o processo de transferência. Assim, se ocorrer um problema, você poderá restaurar os backups e retornar à configuração inicial.
 
@@ -70,7 +70,7 @@ Esta seção o ajudará a entender as etapas necessárias para transferir um amb
 
 As etapas a seguir devem ser executadas com muito cuidado: alguns processos ainda podem estar em andamento quando os bancos de dados do ambiente de origem são copiados. A cauterização (etapa 3 abaixo) impede que as mensagens sejam enviadas duas vezes e mantém a consistência dos dados.
 
->[!CAUTION]
+>[!IMPORTANT]
 >
 >* O procedimento a seguir é válido na linguagem PostgreSQL. Se o idioma SQL for diferente (Oracle, por exemplo), os query SQL devem ser adaptados.
 >* Os comandos abaixo se aplicam no contexto de uma instância de **prod** e uma instância **dev** em PostgreSQL.
@@ -218,7 +218,7 @@ Verifique esse acesso às funções do console do cliente.
 
 ### Etapa 8 - Importar opções e contas externas para o ambiente do público alvo (dev) {#step-8---import-options-and-external-accounts-into-the-target-environment--dev-}
 
->[!CAUTION]
+>[!IMPORTANT]
 >
 >Somente o processo da Web deve ser iniciado nesta etapa. Se esse não for o caso, pare outros processos em execução antes de continuar
 
