@@ -12,7 +12,7 @@ content-type: reference
 topic-tags: annexes
 discoiquuid: 07be1d3c-b038-48ca-be37-a33adb8e0fc0
 translation-type: tm+mt
-source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+source-git-commit: a0ab8794bdbdfbe627bf33580dc8991793447336
 workflow-type: tm+mt
 source-wordcount: '1985'
 ht-degree: 90%
@@ -129,7 +129,7 @@ Para recriar esse caso de uso, criamos uma aplicação web composta pelos seguin
 
 ## Como adquirir dados de fãs? {#how-to-acquire-fan-data-}
 
->[!CAUTION]
+>[!IMPORTANT]
 >
 >Siga as etapas de configuração detalhadas em [Criação de um aplicativo do Facebook](../../social/using/creating-a-facebook-application.md).
 
@@ -250,7 +250,7 @@ Se o perfil não existir no banco de dados e o endereço de email do usuário do
 
 1. No campo **[!UICONTROL Mapping]**, selecione o schema no qual deseja realizar a reconciliação.
 
-   >[!CAUTION]
+   >[!IMPORTANT]
    >
    >Verifique se os campos da guia **[!UICONTROL Social networks]** foram inseridos corretamente no mapeamento do delivery. Delivery mappings are accessed via the **[!UICONTROL Administration > Campaign management > Target mappings]** node.
 
