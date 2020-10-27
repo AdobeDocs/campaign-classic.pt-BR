@@ -12,7 +12,7 @@ content-type: reference
 topic-tags: unitary-interactions
 discoiquuid: 7453d768-31eb-4372-aae3-27527cd5c79b
 translation-type: tm+mt
-source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+source-git-commit: 8fc3e793ec544948049fc122b44b6bffdebecba0
 workflow-type: tm+mt
 source-wordcount: '1145'
 ht-degree: 98%
@@ -71,7 +71,7 @@ elemento pelo Interaction.
    <script id="interactionProposalScript" src="https://instance.adobe.org:8080/nl/interactionProposal.js?env=OE3" type="text/javascript"></script>
    ```
 
-   >[!CAUTION]
+   >[!IMPORTANT]
    >
    >A tag `<script>` não deve fechar automaticamente.
 
@@ -215,7 +215,7 @@ O caso de uso a seguir detalha as configurações a serem feitas no Adobe Campai
    </srcSchema>
    ```
 
-   >[!CAUTION]
+   >[!IMPORTANT]
    >
    >Cada elemento precisa ser definido duas vezes. Os elementos do tipo CDATA (&quot;_jst&quot;) podem conter campos de personalização.
    >
@@ -265,7 +265,7 @@ O caso de uso a seguir detalha as configurações a serem feitas no Adobe Campai
 
    ![](assets/interaction_xmlmode_form_001.png)
 
-   >[!CAUTION]
+   >[!IMPORTANT]
    >
    >Os campos do formulário (`<input>`) devem apontar para os elementos do tipo CDATA definidos no esquema criado.
 
