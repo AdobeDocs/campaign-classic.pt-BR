@@ -12,10 +12,10 @@ content-type: reference
 topic-tags: event-processing
 discoiquuid: 8fa464e6-3c88-441c-8179-0c54960469a7
 translation-type: tm+mt
-source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+source-git-commit: 95dff2f3704e316e9ec9e454a8f3fb9835508ccd
 workflow-type: tm+mt
 source-wordcount: '125'
-ht-degree: 100%
+ht-degree: 83%
 
 ---
 
@@ -34,7 +34,6 @@ Definição do tipo de evento nas propriedades do template de mensagem:
 
 Por padrão, o roteamento é baseado nas seguintes informações:
 
-* o tipo de evento,
-* o canal a ser usado (por padrão: email),
-* o template do delivery mais recente, com base na data da publicação.
-
+* O tipo de evento
+* O canal a ser usado (por padrão: email)
+* O template do delivery mais recente, com base na data de publicação
