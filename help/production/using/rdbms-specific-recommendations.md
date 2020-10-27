@@ -12,7 +12,7 @@ content-type: reference
 topic-tags: database-maintenance
 discoiquuid: b2219912-5570-45d2-8b52-52486e29d008
 translation-type: tm+mt
-source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+source-git-commit: 849e1ebf14f707d9e86c5a152de978acb6f1cb35
 workflow-type: tm+mt
 source-wordcount: '1090'
 ht-degree: 3%
@@ -421,7 +421,7 @@ O exemplo abaixo diz respeito ao Microsoft SQL Server 2005. Se estiver usando ou
 
    Observe que um objeto foi criado na **[!UICONTROL SQL Server Agent > Jobs]** pasta. Esse objeto permite que você start o plano de manutenção. No nosso exemplo, existe apenas um objeto, uma vez que todas as tarefas de manutenção fazem parte do mesmo plano.
 
-   >[!CAUTION]
+   >[!IMPORTANT]
    >
    >Para que esse objeto seja executado, o agente do Microsoft SQL Server deve estar habilitado.
 
