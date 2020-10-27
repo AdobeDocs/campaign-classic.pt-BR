@@ -12,7 +12,7 @@ content-type: reference
 topic-tags: production-procedures
 discoiquuid: d08ff769-da93-4f86-8802-f0fb5b051ece
 translation-type: tm+mt
-source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+source-git-commit: 849e1ebf14f707d9e86c5a152de978acb6f1cb35
 workflow-type: tm+mt
 source-wordcount: '283'
 ht-degree: 5%
@@ -28,7 +28,7 @@ Para um determinado servidor, há dois elementos comuns a todas as instâncias d
 
 * A senha **interna** : esta é a senha do administrador geral. É comum a todas as instâncias de um servidor de aplicativos específico.
 
-   >[!CAUTION]
+   >[!IMPORTANT]
    >
    >Para fazer logon com o identificador **Interno** , é necessário ter definido uma senha previamente. Para obter mais informações, consulte [esta seção](../../installation/using/campaign-server-configuration.md#internal-identifier).
 
