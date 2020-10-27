@@ -12,7 +12,7 @@ content-type: reference
 topic-tags: troubleshooting
 discoiquuid: 6358c8fd-2b75-4462-acd1-887ee44d3110
 translation-type: tm+mt
-source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+source-git-commit: 849e1ebf14f707d9e86c5a152de978acb6f1cb35
 workflow-type: tm+mt
 source-wordcount: '483'
 ht-degree: 8%
@@ -57,7 +57,7 @@ Verifique se a manutenção do banco de dados está programada e executada corre
 
 Para obter mais informações, consulte [esta seção](../../production/using/recommendations.md).
 
->[!CAUTION]
+>[!IMPORTANT]
 >
 >Se você estiver usando uma configuração de mid-sourcing, é essencial que os bancos de dados sejam mantidos regularmente. Ao analisar um delivery na plataforma de marketing, a instância de marketing envia informações para a instância do mid-sourcing. Se o processo for retardado, a instância de marketing será afetada.
 
@@ -69,7 +69,7 @@ Verifique o número e o tamanho das tabelas de trabalho. Quando excedem um deter
 * parar ou eliminar workflows que estejam em pausa devido a um erro,
 * Parar todos os workflows utilizados para ensaios que não contenham uma **[!UICONTROL End]** atividade e cujo estado se mantenha **[!UICONTROL Paused]** .
 
->[!CAUTION]
+>[!IMPORTANT]
 >
 >Se a operação levar muito tempo e liberar muito espaço, isso significa que é necessária uma manutenção profunda (reconstrução de índice, etc.). Para obter mais informações, consulte [esta seção](../../production/using/recommendations.md).
 
