@@ -1,6 +1,6 @@
 ---
 title: 'Versão Gold Standard '
-description: 'Versão Gold Standard '
+description: Notas de versão do Campaign Classic Gold Standard
 page-status-flag: never-activated
 uuid: 269d590c-5a6d-40b9-a879-02f5033863fc
 contentOwner: sauviat
@@ -10,25 +10,23 @@ content-type: reference
 topic-tags: latest-release-notes
 discoiquuid: 5df34f55-135a-4ea8-afc2-f9427ce5ae7b
 translation-type: tm+mt
-source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+source-git-commit: 877ca2275c9338377da9e435e070c9911314fe51
 workflow-type: tm+mt
-source-wordcount: '812'
-ht-degree: 100%
+source-wordcount: '820'
+ht-degree: 93%
 
 ---
 
 
 # Versão Gold Standard{#gold-standard}
 
-Como usuário do Gold Standard, você se beneficia automaticamente da atualização do Gold Standard com a versão estável mais recente sem ter de tomar nenhuma ação.
+Gold Standard é a versão de suporte a longo prazo do Campaign Classic. Como usuário do Gold Standard, você se beneficia automaticamente da atualização do Gold Standard com a versão estável mais recente sem ter de tomar nenhuma ação. Os clientes locais e híbridos também podem se beneficiar das versões do Gold Standard.
 
-Os clientes locais e híbridos também podem se beneficiar das versões do Gold Standard.
-
-Esta é nossa versão de suporte a longo prazo. Se você migrar de uma versão antiga, recomendamos que atualize inicialmente para essa versão.
+Se você migrar de uma versão antiga, recomendamos que atualize inicialmente para essa versão.
 
 Esta página lista versões do Gold Standard.
 
-Para obter mais informações sobre a atualização do Gold Standard, consulte este [artigo](https://helpx.adobe.com/br/campaign/kb/gold-standard.html).
+For more information on Campaign Gold Standard program, refer [to this article](https://helpx.adobe.com/br/campaign/kb/gold-standard.html).
 
 ## ![](assets/do-not-localize/green_2.png) Versão Gold Standard 10{#gs-10}
 
@@ -40,7 +38,7 @@ Correção de um problema que impedia o funcionamento do rastreamento quando o r
 
 >[!CAUTION]
 >
->Recomendamos que você atualize o console do cliente com o disponível nesta versão. Consulte esta [página](../../installation/using/installing-the-client-console.md)
+>Recomendamos que você atualize o console do cliente com o disponível nesta versão. Refer [to this page](../../installation/using/installing-the-client-console.md)
 
 ## ![](assets/do-not-localize/red_2.png) Versão Gold Standard 9{#gs-9}
 
@@ -50,7 +48,7 @@ A build 9032@800be2e inclui as seguintes correções:
 
 * O conector HTTP2 para iOS foi aprimorado (atualizações de terceiros e gerenciamento de erros). (25904, NEO-, NEO-25903, NEO-25799)
 
-As seguintes correções estão relacionadas ao mecanismo de segurança do link de rastreamento (consulte a [lista de verificação de segurança e privacidade](https://helpx.adobe.com/br/campaign/kb/acc-security.html#signature-mechanism)):
+The following fixes are related to the tracking link security mechanism (learn more in the [Security and Privacy checklist](https://helpx.adobe.com/br/campaign/kb/acc-security.html#signature-mechanism)):
 
 * Correção de um problema que impedia o funcionamento do rastreamento de &quot;cliques de notificação&quot; (notificações por push de iOS e Android). (NEO-25965)
 * Correção de um problema que poderia impedir a abertura/clique de URLs de rastreamento ao usar determinadas versões herdadas do Outlook.  (NEO-25688)
@@ -72,7 +70,7 @@ A build 9032@3a9dc9c inclui as seguintes correções:
 
 >[!CAUTION]
 >
->Se tiver problemas com notificações por push usando links de rastreamento ou delivery usando tags de âncora, recomendamos desativar o novo mecanismo de assinatura para links de rastreamento. O procedimento está detalhado nesta [página](https://helpx.adobe.com/br/campaign/kb/acc-security.html#signature-mechanism)
+>Se tiver problemas com notificações por push usando links de rastreamento ou delivery usando tags de âncora, recomendamos desativar o novo mecanismo de assinatura para links de rastreamento. The procedure is detailed [in this page](https://helpx.adobe.com/br/campaign/kb/acc-security.html#signature-mechanism)
 
 * Correção de um problema que impedia a exibição de imagens na entrega de linha. (NEO-23207)
 * Correção de um problema com a atividade **Transferência de Arquivo**, que impedia que a autenticação com a chave SFTP funcionasse no Debian 9. (NEO-23183)
