@@ -11,11 +11,11 @@ audience: integrations
 content-type: reference
 topic-tags: adobe-target
 discoiquuid: f6e4d22b-4ad3-4a1e-8a6f-3bdfc1da0535
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '853'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -65,7 +65,7 @@ No Adobe Campaign, há duas maneiras de inserir uma imagem dinâmica do Target e
 * O **[!UICONTROL Landing Page]**: se desejar que a imagem padrão seja redirecionada para uma landing page padrão. Esse URL é somente para os casos que a imagem padrão é exibida no email final e é opcional.
 * O **[!UICONTROL Additional decision parameters]**: especifique o mapeamento entre os campos definidos nos segmentos do Adobe Target e os campos do Adobe Campaign. Os campos do Adobe Campaign usados devem ter sido especificados no rawbox. No nosso exemplo, adicionamos o campo País.
 
-Se você usar permissões do Enterprise em suas configurações no Adobe Target, adicione a propriedade correspondente nesse campo. Saiba mais sobre as permissões do Target Enterprise [nesta página](https://docs.adobe.com/content/help/en/target/using/administer/manage-users/enterprise/properties-overview.html).
+Se você usar permissões do Enterprise em suas configurações no Adobe Target, adicione a propriedade correspondente nesse campo. Saiba mais sobre as permissões do Target Enterprise [nesta página](https://docs.adobe.com/content/help/pt-BR/target/using/administer/manage-users/enterprise/properties-overview.html).
 
 ![](assets/target_13.png)
 
@@ -103,7 +103,7 @@ No Target , é necessário criar os dois públicos nos quais as pessoas que visi
 
 1. Siga o mesmo procedimento para os públicos restantes.
 
-## Como criar uma atividade de segmentação por experiência  {#creating-targeting-activity}
+## Como criar uma atividade de segmentação por experiência   {#creating-targeting-activity}
 
 No Target, é necessário criar uma atividade de Direcionamento por Experiência, definir as diferentes experiências e associá-las às ofertas correspondentes.
 
