@@ -11,11 +11,11 @@ audience: interaction
 content-type: reference
 topic-tags: simulating-offers
 discoiquuid: 0af021af-2686-4a37-97d9-6d13a851b5dd
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '262'
-ht-degree: 93%
+ht-degree: 100%
 
 ---
 
@@ -32,7 +32,7 @@ Para saber como simular uma oferta, leia as etapas abaixo. Você também pode as
 
 Para criar uma simulação de suas ofertas, aplique as seguintes etapas:
 
-1. In the **[!UICONTROL Profiles and Targets]** universe, click the **[!UICONTROL Simulations]** link, then click the **[!UICONTROL Create]** button.
+1. No universo **[!UICONTROL Profiles and Targets]**, clique no link **[!UICONTROL Simulations]** e, em seguida, clique no botão **[!UICONTROL Create]**.
 
    ![](assets/offer_simulation_001.png)
 
@@ -53,7 +53,7 @@ Para criar uma simulação de suas ofertas, aplique as seguintes etapas:
 
    ![](assets/offer_simulation_004.png)
 
-1. Add reporting axes to enhance the **[!UICONTROL Offer distribution by rank]** report (optional).
+1. Adicione eixos de relatórios para aprimorar o relatório **[!UICONTROL Offer distribution by rank]** (opcional).
 
    Para obter mais informações, consulte [Adição de eixos de relatórios](../../interaction/using/simulation-scope.md#adding-reporting-axes).
 
