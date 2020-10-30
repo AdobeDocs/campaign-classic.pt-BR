@@ -15,7 +15,7 @@ translation-type: tm+mt
 source-git-commit: 95dff2f3704e316e9ec9e454a8f3fb9835508ccd
 workflow-type: tm+mt
 source-wordcount: '193'
-ht-degree: 92%
+ht-degree: 100%
 
 ---
 
@@ -26,7 +26,7 @@ Um seed address permite exibir uma pré-visualização da mensagem, enviar uma p
 
 ## Criação de seed addresses {#creating-a-seed-address}
 
-1. In the transactional message template, click the **[!UICONTROL Seed addresses]** tab.
+1. No modelo de mensagem transacional, clique na guia **[!UICONTROL Seed addresses]**.
 
    ![](assets/messagecenter_create_seedaddr_001.png)
 
@@ -47,7 +47,7 @@ Um seed address permite exibir uma pré-visualização da mensagem, enviar uma p
    ![](assets/messagecenter_create_custo_001.png)
 
    <!--## Creating several seed addresses {#creating-several-seed-addresses}-->
-1. Clique no **[!UICONTROL Add other seed addresses]** link e, em seguida, clique no **[!UICONTROL Add]** botão.
+1. Clique no link **[!UICONTROL Add other seed addresses]** e depois no botão **[!UICONTROL Add]**.
 
    ![](assets/messagecenter_create_seedaddr_004.png)
 
