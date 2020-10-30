@@ -1,7 +1,7 @@
 ---
-title: Noções básicas sobre falhas de entrega
-seo-title: Noções básicas sobre falhas de entrega
-description: Noções básicas sobre falhas de entrega
+title: Noções básicas sobre falhas de delivery
+seo-title: Noções básicas sobre falhas de delivery
+description: Noções básicas sobre falhas de delivery
 seo-description: null
 page-status-flag: never-activated
 uuid: 03a91f84-77fe-40a9-8be9-a6a35a873ae1
@@ -11,16 +11,16 @@ audience: delivery
 content-type: reference
 topic-tags: monitoring-deliveries
 discoiquuid: 78b58a7a-b387-4d5d-80d5-01c06f83d759
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 75cbb8d697a95f4cc07768e6cf3585e4e079e171
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2440'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
 
-# Noções básicas sobre falhas de entrega{#understanding-delivery-failures}
+# Noções básicas sobre falhas de delivery{#understanding-delivery-failures}
 
 ## Sobre falhas de delivery {#about-delivery-failures}
 
@@ -32,7 +32,7 @@ Quando uma mensagem (email, SMS, notificação por push) não pode ser enviada a
 
 Quando uma mensagem é enviada, o log de delivery permite exibir o status de entrega de cada perfil, o tipo de falha e o motivo associados.
 
-As mensagens também podem ser excluídas durante a preparação do delivery se um endereço estiver em quarentena ou se um perfil estiver em lista de bloqueios. As mensagens excluídas são listadas no painel de delivery.
+As mensagens também podem ser excluídas durante a preparação do delivery se um endereço estiver em quarentena ou se um perfil for incluído na lista de bloqueios. As mensagens excluídas são listadas no painel de delivery.
 
 **Tópicos relacionados:**
 
@@ -83,10 +83,10 @@ Os possíveis motivos para uma falha de delivery são:
    <td> A classificação de qualidade deste endereço é muito baixa.<br /> </td> 
   </tr> 
   <tr> 
-   <td> Endereço Incluir na lista de bloqueios </td> 
+   <td> Endereço na lista de bloqueios </td> 
    <td> Grave </td> 
    <td> 8 </td> 
-   <td> O endereço foi adicionado à lista de bloqueios no momento do envio. This status is used for importing data from external lists and external systems into the Adobe Campaign Quarantine list.<br /> </td> 
+   <td> O endereço foi adicionado à lista de bloqueios no momento do envio. Esse status é usado para importar dados de listas externas e sistemas externos para a lista de quarentena do Adobe Campaign.<br /> </td> 
   </tr> 
   <tr> 
    <td> Endereço de controle </td> 
@@ -204,7 +204,7 @@ Uma mensagem pode falhar imediatamente (erro síncrono), ou posteriormente, apó
    >
    >A configuração da caixa de entrada de devolução é detalhada [nesta seção](../../installation/using/deploying-an-instance.md#managing-bounced-emails).
 
-   The [feedback loop](../../delivery/using/technical-recommendations.md#feedback-loop) operates like bounce emails. Quando um usuário classifica um email como spam, você pode configurar regras de email no Adobe Campaign para bloquear todos os deliveries a esse usuário. Mensagens enviadas para usuários que classificaram um email como spam são automaticamente redirecionadas para uma caixa de email especificamente criada para essa finalidade. Os endereços desses usuários estão em lista de bloqueios mesmo que não tenham clicado no link de unsubscription. Addresses are in denylist in the (**NmsAddress**) quarantine table and not in the (**NmsRecipient**) recipient table.
+   O [loop de comentários](../../delivery/using/technical-recommendations.md#feedback-loop) funciona como emails de devolução. Quando um usuário classifica um email como spam, você pode configurar regras de email no Adobe Campaign para bloquear todos os deliveries a esse usuário. Mensagens enviadas para usuários que classificaram um email como spam são automaticamente redirecionadas para uma caixa de email especificamente criada para essa finalidade. Os endereços desses usuários são incluídos na lista de bloqueios mesmo sem um clique no link de cancelamento de assinatura. Os endereços são incluídos na lista de bloqueios na tabela de quarentena (**NmsAddress**) e não na tabela de recipient (**NmsRecipient**).
 
    >[!NOTE]
    >
@@ -255,7 +255,7 @@ Os emails de devolução podem ter o seguinte status de qualificação:
 * Para instâncias que usam o MTA aprimorado sem **Webhooks/EFS**, as regras **[!UICONTROL Inbound email]** também serão usadas para processar os emails de rejeição síncronos provenientes do MTA aprimorado, usando o mesmo endereço de email para emails de rejeição assíncronos.
 >
 >
-Para obter mais informações sobre o MTA aprimorado do Adobe Campaign, consulte [este documento](https://helpx.adobe.com/campaign/kb/acc-campaign-enhanced-mta.html).
+Para obter mais informações sobre o MTA aprimorado do Adobe Campaign, consulte [este documento](https://helpx.adobe.com/br/campaign/kb/acc-campaign-enhanced-mta.html).
 
 ### Regras de gestão de email {#email-management-rules}
 
@@ -291,7 +291,7 @@ Para obter mais informações sobre qualificação de envio de emails, consulte 
 >
 >Para instalações hospedadas ou híbridas, se você tiver atualizado para o MTA aprimorado e se a instância tiver a funcionalidade **Webhooks/EFS**, as regras **[!UICONTROL Inbound email]** não serão mais usadas para mensagens de erro de falha síncrona do delivery. Para obter mais informações, consulte [esta seção](#bounce-mail-qualification).
 >
->Para obter mais informações sobre o MTA aprimorado do Adobe Campaign, consulte [este documento](https://helpx.adobe.com/campaign/kb/acc-campaign-enhanced-mta.html).
+>Para obter mais informações sobre o MTA aprimorado do Adobe Campaign, consulte [este documento](https://helpx.adobe.com/br/campaign/kb/acc-campaign-enhanced-mta.html).
 
 #### Gestão de domínio {#domain-management}
 
@@ -308,7 +308,7 @@ Se suas mensagens forem exibidas no Outlook com **[!UICONTROL on behalf of]** no
 >
 >Para instalações hospedadas ou híbridas, se você atualizou para o MTA aprimorado, as regras **[!UICONTROL Domain management]** não serão mais usadas. A assinatura de autenticação de email **DKIM (DomainKeys Identified Mail)** é feita pelo MTA aprimorado para todas as mensagens com todos os domínios. Ele não faz logon com a **ID do remetente**, **DomainKeys** ou **S/MIME**, a menos que especificado de outra forma no nível MTA aprimorado.
 >
->Para obter mais informações sobre o MTA aprimorado do Adobe Campaign, consulte [este documento](https://helpx.adobe.com/campaign/kb/acc-campaign-enhanced-mta.html).
+>Para obter mais informações sobre o MTA aprimorado do Adobe Campaign, consulte [este documento](https://helpx.adobe.com/br/campaign/kb/acc-campaign-enhanced-mta.html).
 
 #### Gestão MX {#mx-management}
 
@@ -324,4 +324,4 @@ Para obter mais informações sobre gestão MX, consulte [esta seção](../../in
 >
 >Para instalações hospedadas ou híbridas, se você atualizou para o MTA aprimorado, as regras de capacidade do delivery **[!UICONTROL MX management]** não serão mais usadas. O MTA aprimorado usa regras MX próprias que permitem personalizar a capacidade por domínio com base na sua própria reputação histórica de email e no feedback em tempo real proveniente dos domínios em que você está enviando emails.
 >
->Para obter mais informações sobre o MTA aprimorado do Adobe Campaign, consulte [este documento](https://helpx.adobe.com/campaign/kb/acc-campaign-enhanced-mta.html).
+>Para obter mais informações sobre o MTA aprimorado do Adobe Campaign, consulte [este documento](https://helpx.adobe.com/br/campaign/kb/acc-campaign-enhanced-mta.html).
