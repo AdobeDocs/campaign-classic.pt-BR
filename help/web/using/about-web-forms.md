@@ -11,11 +11,11 @@ audience: web
 content-type: reference
 topic-tags: web-forms
 discoiquuid: 3b8e4691-fcbc-48ef-b529-11c9a9a9d788
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '492'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -38,7 +38,7 @@ Este capítulo detalha as etapas necessárias para criar um formulário do tipo 
 >
 >Ao configurar os aplicativos web e formulários web, é necessário uma resolução mínima de 900 pixels (por exemplo, 1600 x 900).
 
-Os formulários web são acessados pelo menu Web Applications da guia **Campaigns**. In the Adobe Campaign tree, they are grouped under the **[!UICONTROL Resources > Online > Web Applications]** node.
+Os formulários web são acessados pelo menu Web Applications da guia **Campaigns**. Na árvore do Adobe Campaign, elas estão agrupadas no nó **[!UICONTROL Resources > Online > Web Applications]**.
 
 Para criar um formulário web, clique no botão **[!UICONTROL Create]** acima da lista de aplicações web.
 
