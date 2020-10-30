@@ -15,7 +15,7 @@ translation-type: tm+mt
 source-git-commit: c2c0609619e0cc81444d089850add6dec5de93fd
 workflow-type: tm+mt
 source-wordcount: '2623'
-ht-degree: 98%
+ht-degree: 99%
 
 ---
 
@@ -137,7 +137,7 @@ _30 de maio de 2019_
  <tbody> 
   <tr> 
    <td> Painel de controle<br /> </td> 
-   <td> <p>Para aumentar a eficiência do seu trabalho como usuário administrador, gerencie as configurações dos servidores SFTP monitorando o armazenamento, adicione endereços IP à lista de permissões e instale chaves SSH para cada instância. Observe que o Painel de Controle está disponível apenas para clientes hospedados no AWS a partir de hoje (<a href="https://experiencecloud.adobe.com/campaign/controlpanel/">login através da Experience Cloud hoje</a>).</p> <p>Para obter mais informações, consulte a <a href="https://docs.adobe.com/content/help/pt-BR/control-panel/using/control-panel-home.translate.html">documentação detalhada</a> e o <a href="https://docs.adobe.com/content/help/en/campaign-classic-learn/control-panel/control-panel-overview.html">vídeo de instruções</a>. </p><p>Observação: não é necessário atualizar para a build mais recente do Campaign para acessar o Painel de Controle.</p> </td> 
+   <td> <p>Para aumentar a eficiência em seu trabalho como usuário administrador, gerencie as configurações dos servidores SFTP monitorando o armazenamento, inclua endereços IP à lista de permissões e instale chaves SSH para cada instância. Observe que o Painel de Controle está disponível apenas para clientes hospedados no AWS a partir de hoje (<a href="https://experiencecloud.adobe.com/campaign/controlpanel/">login através da Experience Cloud hoje</a>).</p> <p>Para obter mais informações, consulte a <a href="https://docs.adobe.com/content/help/pt-BR/control-panel/using/control-panel-home.translate.html">documentação detalhada</a> e o <a href="https://docs.adobe.com/content/help/pt-BR/campaign-classic-learn/control-panel/control-panel-overview.html">vídeo de instruções</a>. </p><p>Observação: não é necessário atualizar para a build mais recente do Campaign para acessar o Painel de Controle.</p> </td> 
   </tr> 
     <tr> 
    <td> Trilha de auditoria<br /> </td> 
