@@ -15,7 +15,7 @@ translation-type: tm+mt
 source-git-commit: f7527a2d9b76e34fbaa2c9471c44a7a1e7e074d7
 workflow-type: tm+mt
 source-wordcount: '309'
-ht-degree: 70%
+ht-degree: 88%
 
 ---
 
@@ -28,7 +28,7 @@ Os vários workflows técnicos relacionados a mensagens transacionais (Centro de
 
 ## Workflows da instância de controle {#control-instance-workflows}
 
-Na instância de controle, caso tenha uma ou várias instâncias de execução registradas, é necessário criar um fluxo de trabalho de arquivamento para cada **[!UICONTROL Message Center execution instance]** conta externa. Click the **[!UICONTROL Create the archiving workflow]** button to create and start the workflow.
+Na instância de controle, caso tenha uma ou várias instâncias de execução registradas, é necessário criar um fluxo de trabalho de arquivamento para cada **[!UICONTROL Message Center execution instance]** conta externa. Clique no botão **[!UICONTROL Create the archiving workflow]** para criar e iniciar o workflow.
 
 ![](assets/messagecenter_archiving_002.png)
 
@@ -46,14 +46,14 @@ Na(s) instância(s) de execução, os workflows técnicos de mensagens transacio
 
 * **[!UICONTROL Processing batch events]** (internal name: **[!UICONTROL batchEventsProcessing]** ): esse fluxo de trabalho permite dividir eventos em lote em uma fila antes que eles sejam vinculados a um template de mensagem.
 * **[!UICONTROL Processing real time events]** (internal name: **[!UICONTROL rtEventsProcessing]** ): esse workflow permite dividir eventos em tempo real em uma fila antes que eles sejam vinculados a um template de mensagem.
-* **[!UICONTROL Update event status]** (nome interno: **[!UICONTROL updateEventStatus]** ): esse fluxo de trabalho permite que você atribua um status ao evento.
+* **[!UICONTROL Update event status]** (internal name: **[!UICONTROL updateEventStatus]** ): esse workflow permite que você atribua um status ao evento.
 
    Os seguintes status de evento estão disponíveis:
 
    * **[!UICONTROL Pending]**: o evento está na fila. Nenhum template de mensagem foi atribuído a ele.
    * **[!UICONTROL Pending delivery]**: o evento está na fila, um template de mensagem foi atribuído a ele e está sendo processado pelo delivery.
-   * **[!UICONTROL Sent]** : esse status é copiado dos logs do delivery. Significa que o delivery foi enviado.
-   * **[!UICONTROL Ignored by the delivery]** : esse status é copiado dos logs do delivery. Ele significa que o delivery foi ignorado.
-   * **[!UICONTROL Delivery failed]** : esse status é copiado dos logs do delivery. Ele significa que o delivery falhou.
-   * **[!UICONTROL Event not taken into account]** : o evento não pôde ser vinculado a um modelo de mensagem. O evento não será processado.
+   * **[!UICONTROL Sent]**: esse status é copiado dos logs do delivery. Significa que o delivery foi enviado.
+   * **[!UICONTROL Ignored by the delivery]**: esse status é copiado dos logs do delivery. Ele significa que o delivery foi ignorado.
+   * **[!UICONTROL Delivery failed]**: esse status é copiado dos logs do delivery. Ele significa que o delivery falhou.
+   * **[!UICONTROL Event not taken into account]**: o evento não pôde ser vinculado a um template de mensagem. O evento não será processado.
 
