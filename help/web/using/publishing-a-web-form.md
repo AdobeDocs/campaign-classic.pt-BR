@@ -11,11 +11,11 @@ audience: web
 content-type: reference
 topic-tags: web-forms
 discoiquuid: f4322902-c72d-4443-9c30-09add4c615a3
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '999'
-ht-degree: 85%
+ht-degree: 100%
 
 ---
 
@@ -38,7 +38,7 @@ Os seguintes métodos de identificação são possíveis:
 
    ![](assets/s_ncs_admin_survey_preload_methods_001.png)
 
-   Esse método de criptografia usa um identificador (ID) fornecido externamente, vinculado a uma chave compartilhada pela Adobe Campaign e pelo provedor externo. The **[!UICONTROL Des key]** field lets you enter this encryption key.
+   Esse método de criptografia usa um identificador (ID) fornecido externamente, vinculado a uma chave compartilhada pela Adobe Campaign e pelo provedor externo. O campo **[!UICONTROL Des key]** permite inserir essa chave de criptografia.
 
 * **[!UICONTROL List of fields]**
 
@@ -68,9 +68,9 @@ Os seguintes métodos de identificação são possíveis:
    > 
    >Essa função é particularmente útil para aplicações web, mas não recomendada para formulários públicos. A opção de controle de acesso selecionado deve ser &quot;Habilitar controle de acesso&quot;.
 
-The **[!UICONTROL Skip preloading if identification is empty]** option must be selected if you do not wish to update profiles. Nesse caso, cada perfil inserido será adicionado ao banco de dados após a aprovação do formulário. Essa opção é usada, por exemplo, quando o formulário é postado em um site.
+A opção **[!UICONTROL Skip preloading if identification is empty]** deve ser selecionada se você não deseja atualizar os perfis. Nesse caso, cada perfil inserido será adicionado ao banco de dados após a aprovação do formulário. Essa opção é usada, por exemplo, quando o formulário é postado em um site.
 
-The **[!UICONTROL Auto-load data referenced in the form]** option lets you automatically preload the data that matches input and merge fields in the form. However, data referenced in **[!UICONTROL Script]** and **[!UICONTROL Test]** activities is not concerned. Se esta opção não estiver selecionada, você precisará definir os campos utilizando a opção **[!UICONTROL Load additional data]**.
+A opção **[!UICONTROL Auto-load data referenced in the form]** permite pré-carregar automaticamente os dados que correspondem aos campos de entrada e mesclagem no formulário. Porém, os dados referenciados nas atividades **[!UICONTROL Script]** e **[!UICONTROL Test]** não estão relacionados. Se esta opção não estiver selecionada, você precisará definir os campos utilizando a opção **[!UICONTROL Load additional data]**.
 
 A opção **[!UICONTROL Load additional data]** permite adicionar informações que não são usadas nas páginas do formulário, mas ainda serão pré-carregadas.
 
@@ -88,7 +88,7 @@ Há três estágios no ciclo de vida de um formulário:
 
 1. **Formulário sendo editado**
 
-   Esta é a fase de design inicial. Quando um novo formulário é criado, ele está na fase de edição. Access to the form, for testing purposes only, then requires the parameter **[!UICONTROL __uuid]** to be used in its URL. Essa URL pode ser acessada na subguia **[!UICONTROL Preview]**. Consulte [Parâmetros da URL do formulário](../../web/using/defining-web-forms-properties.md#form-url-parameters).
+   Esta é a fase de design inicial. Quando um novo formulário é criado, ele está na fase de edição. Acesse o formulário, somente para fins de teste, e exija que o parâmetro **[!UICONTROL __uuid]** seja usado no URL. Essa URL pode ser acessada na subguia **[!UICONTROL Preview]**. Consulte [Parâmetros da URL do formulário](../../web/using/defining-web-forms-properties.md#form-url-parameters).
 
    >[!CAUTION]
    >
@@ -98,11 +98,11 @@ Há três estágios no ciclo de vida de um formulário:
 
    Quando a fase de design é concluída, o formulário pode ser entregue. Primeiro, precisa ser publicado. Para obter mais informações, consulte [Publicar um formulário](#publishing-a-form).
 
-   The form will be **[!UICONTROL Live]** until it expires.
+   O formulário será **[!UICONTROL Live]** até expirar.
 
    >[!CAUTION]
    >
-   >To be delivered, the URL of the survey must not contain the **[!UICONTROL __uuid]** parameter.
+   >Para ser entregue, o URL da pesquisa não deve conter o parâmetro **[!UICONTROL __uuid]**.
 
 1. **Formulário indisponível**
 
@@ -128,7 +128,7 @@ Para ser acessado por usuários, o formulário deve estar em produção e inicia
 
    ![](assets/webapp_availability_date.png)
 
-* Click the **[!UICONTROL Personalize the message displayed if the form is closed...]** link to define the error message to display if the user tries to access the form while it isn&#39;t valid.
+* Clique no link **[!UICONTROL Personalize the message displayed if the form is closed...]** para definir a mensagem de erro que será exibida se o usuário tentar acessar o formulário enquanto ele não for válido.
 
    Consulte [Acessibilidade do formulário](../../web/using/defining-web-forms-properties.md#accessibility-of-the-form).
 
@@ -142,13 +142,13 @@ Ao enviar um convite por email, você pode usar a opção **[!UICONTROL Adobe Ca
 
 Nesse caso, a chave de reconciliação para o armazenamento de dados deve ser o identificador criptografado do recipient. Para obter mais informações, consulte [Pré-carregamento dos dados do formulário](#pre-loading-the-form-data).
 
-In this case, you need to check the **[!UICONTROL Update the preloaded record]** option in the record box. Para obter mais informações, consulte [Salvar respostas de formulários web](../../web/using/web-forms-answers.md#saving-web-forms-answers).
+Nesse caso, você precisa verificar a opção **[!UICONTROL Update the preloaded record]** na caixa de registro. Para obter mais informações, consulte [Salvar respostas de formulários web](../../web/using/web-forms-answers.md#saving-web-forms-answers).
 
 ![](assets/s_ncs_admin_survey_save_box_option.png)
 
 ### Rastrear respostas {#log-responses}
 
-O rastreamento de resposta pode ser ativado em uma guia dedicada para monitorar o impacto do seu formulário web. To do this, click the **[!UICONTROL Advanced parameters...]** link in the form properties window and select the **[!UICONTROL Log responses]** option.
+O rastreamento de resposta pode ser ativado em uma guia dedicada para monitorar o impacto do seu formulário web. Para fazer isso, clique no link **[!UICONTROL Advanced parameters...]** na janela de propriedades do formulário e selecione a opção **[!UICONTROL Log responses]**.
 
 ![](assets/s_ncs_admin_survey_trace.png)
 
@@ -156,7 +156,7 @@ A guia **[!UICONTROL Responses]** aparece para permitir que você visualize a id
 
 ![](assets/s_ncs_admin_survey_trace_tab.png)
 
-Select a recipient and click the **[!UICONTROL Detail...]** button to view the responses provided.
+Selecione um recipient e clique no botão **[!UICONTROL Detail...]** para exibir as respostas fornecidas.
 
 ![](assets/s_ncs_admin_survey_trace_edit.png)
 
