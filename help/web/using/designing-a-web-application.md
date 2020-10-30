@@ -11,11 +11,11 @@ audience: web
 content-type: reference
 topic-tags: web-applications
 discoiquuid: 08efa472-d090-404d-9ad7-47adb3489c30
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '365'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
@@ -42,7 +42,7 @@ Você pode incluir gráficos em aplicações web. Para fazer isso, use a lista s
 
 ![](assets/s_ncs_admin_webapps_bar_graph.png)
 
-You can also select the **[!UICONTROL Add a chart]** menu.
+É possível também selecionar o menu **[!UICONTROL Add a chart]**.
 
 ![](assets/s_ncs_admin_webapps_graph.png)
 
@@ -62,7 +62,7 @@ A interface do Adobe Campaign usa muitas aplicações web para acessar, gerencia
 
 Elas são vistas na interface do formulário de painéis com apenas uma página.
 
-The out-of-the-box Web applications are stored in the **[!UICONTROL Administration > Configuration > Web applications]** node.
+Os aplicativos web prontos para uso são armazenadas no nó **[!UICONTROL Administration > Configuration > Web applications]**.
 
 ## Editar aplicativos Web do tipo formulários {#edit-forms-type-web-applications}
 
