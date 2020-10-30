@@ -11,11 +11,11 @@ audience: social
 content-type: reference
 topic-tags: configuration
 discoiquuid: 9d74ed9c-0055-4556-a205-6e5fea11816b
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '714'
-ht-degree: 79%
+ht-degree: 100%
 
 ---
 
@@ -35,15 +35,15 @@ Para que o Adobe Campaign possa enviar tweets para suas contas do Twitter, é ne
 
 Comece criando uma ou mais contas do Twitter para enviar seus tweets.
 
-To create a Twitter account, go to [https://twitter.com](https://twitter.com).
+Para criar uma conta do Twitter, acesse [ https://twitter.com](https://twitter.com).
 
 ## Criação de uma conta de teste no Twitter {#creating-a-test-account-on-twitter}
 
 Também recomendamos criar uma conta privada do Twitter que possa ser usada para enviar provas de tweet (para obter mais informações, consulte [Envio de prova](../../social/using/publishing-on-twitter.md#sending-the-proof)):
 
 * Crie uma nova conta do Twitter.
-* Click the menu in the top right-hand corner and select **[!UICONTROL Settings]**.
-* Select the **[!UICONTROL Security and privacy]** tab, and check the **[!UICONTROL Protect my Tweets]** box.
+* Clique no menu no canto superior direito e selecione **[!UICONTROL Settings]**.
+* Selecione a guia **[!UICONTROL Security and privacy]** e marque a caixa **[!UICONTROL Protect my Tweets]**.
 * Clique no botão **[!UICONTROL Save Changes]** na parte inferior da página.
 
 ![](assets/social_twitter_test_page.png)
@@ -54,13 +54,13 @@ Para que o Adobe Campaign possa enviar tweets para suas contas do Twitter, é ne
 
 1. Faça logon em sua conta do Twitter.
 1. Digite o seguinte endereço no navegador da Internet: [https://apps.twitter.com/](https://apps.twitter.com/).
-1. Then click the **[!UICONTROL Create New App]** button on the right.
+1. Em seguida, clique no botão **[!UICONTROL Create New App]** à direita.
 
    ![](assets/social_create_twitter_app_001.png)
 
 1. Deixe o assistente orientá-lo pelo processo.
 
-   Para que esse aplicativo permita que o Adobe Campaign envie tweets para sua conta, vá para a guia **[!UICONTROL Permissions]** do aplicativo e selecione **[!UICONTROL Read and Write]** para a seção **[!UICONTROL Access]**. In the **[!UICONTROL Settings]** tab, you also need to leave the **[!UICONTROL Callback URL]** field empty.
+   Para que esse aplicativo permita que o Adobe Campaign envie tweets para sua conta, vá para a guia **[!UICONTROL Permissions]** do aplicativo e selecione **[!UICONTROL Read and Write]** para a seção **[!UICONTROL Access]**. Na guia **[!UICONTROL Settings]**, também é necessário deixar o campo **[!UICONTROL Callback URL]** vazio.
 
    ![](assets/social_create_twitter_app_002.png)
 
@@ -70,21 +70,21 @@ Para cada aplicativo do , é necessário criar um serviço tipo **[!UICONTROL Tw
 
 Esta etapa requer acesso simultâneo ao console do Adobe Campaign e um navegador da Internet conectado à sua conta do Twitter:
 
-* **Twitter**: selecione o aplicativo criado anteriormente ([https://dev.twitter.com/apps](https://dev.twitter.com/apps)) e clique na **[!UICONTROL Keys and Access Tokens]** guia.
+* **Twitter**: selecione o aplicativo criado anteriormente ([https://dev.twitter.com/apps](https://dev.twitter.com/apps)) e clique na guia **[!UICONTROL Keys and Access Tokens]**.
 
    ![](assets/social_twitter_service_002.png)
 
-* **Adobe Campaign**: vá para o **[!UICONTROL Profiles and targets]** universo, clique no **[!UICONTROL Services and Subscriptions]** link e clique no **[!UICONTROL Create]** botão.
+* **Adobe Campaign**: vá para o universo **[!UICONTROL Profiles and targets]**, clique em **[!UICONTROL Services and Subscriptions]** e clique em **[!UICONTROL Create]**.
 
    ![](assets/social_twitter_service_007.png)
 
-1. Select the **[!UICONTROL Twitter]** type.
+1. Selecione o tipo **[!UICONTROL Twitter]**.
 
    ![](assets/social_twitter_service_008.png)
 
    >[!NOTE]
    >
-   >The **[!UICONTROL Synchronize subscriptions]** option is enabled by default. Quando a caixa é marcada, o workflow de sincronização de conta do Twitter (consulte [Sincronização de contas do Twitter](#synchronizing-twitter-accounts)) recupera a lista de seguidores do Twitter para os enviar mensagens diretas (consulte [Envio de mensagens diretas a assinantes](../../social/using/publishing-on-twitter.md#sending-direct-messages-to-subscribers)). Se não quiser recuperar a lista de seguidores, desmarque essa caixa.
+   >A opção **[!UICONTROL Synchronize subscriptions]** é ativada por padrão. Quando a caixa é marcada, o workflow de sincronização de conta do Twitter (consulte [Sincronização de contas do Twitter](#synchronizing-twitter-accounts)) recupera a lista de seguidores do Twitter para os enviar mensagens diretas (consulte [Envio de mensagens diretas a assinantes](../../social/using/publishing-on-twitter.md#sending-direct-messages-to-subscribers)). Se não quiser recuperar a lista de seguidores, desmarque essa caixa.
 
 1. Insira o rótulo e o nome interno do serviço.
 
@@ -104,11 +104,11 @@ Esta etapa requer acesso simultâneo ao console do Adobe Campaign e um navegador
 
    ![](assets/social_twitter_service_010_b.png)
 
-1. On Twitter, copy the content of the **[!UICONTROL Consumer Key (API Key)]** and **[!UICONTROL Consumer Secret (API Secret)]** fields and paste it into the **[!UICONTROL Consumer key]** and **[!UICONTROL Consumer secret]** fields of the console.
+1. No Twitter, copie o conteúdo dos campos **[!UICONTROL Consumer Key (API Key)]** e **[!UICONTROL Consumer Secret (API Secret)]** e os cole nos campos **[!UICONTROL Consumer key]** e **[!UICONTROL Consumer secret]** do console.
 
    ![](assets/social_twitter_service_012.png)
 
-1. On Twitter, copy the content of the **[!UICONTROL Access Token]** and **[!UICONTROL Access Token Secret]** fields and paste it into the **[!UICONTROL Access token]** and **[!UICONTROL Access token secret]** fields of the console.
+1. No Twitter, copie o conteúdo dos campos **[!UICONTROL Access Token]** e **[!UICONTROL Access Token Secret]** e os cole nos campos **[!UICONTROL Access token]** e **[!UICONTROL Access token secret]** do console.
 
    ![](assets/social_twitter_service_013.png)
 
@@ -120,7 +120,7 @@ Esta etapa requer acesso simultâneo ao console do Adobe Campaign e um navegador
 >
 >É necessário criar um serviço do tipo **[!UICONTROL Twitter]** por aplicativo do Twitter.
 
-The **[!UICONTROL Twitter account Synchronization]** workflow synchronizes Twitter accounts in Adobe Campaign. Para obter mais informações, consulte [Sincronização de páginas do Facebook](../../social/using/publishing-on-facebook-walls.md#synchronizing-facebook-pages).
+O workflow **[!UICONTROL Twitter account Synchronization]** sincroniza as contas do Twitter no Adobe Campaign. Para obter mais informações, consulte [Sincronização de páginas do Facebook](../../social/using/publishing-on-facebook-walls.md#synchronizing-facebook-pages).
 
 ## Sincronização de contas do Twitter {#synchronizing-twitter-accounts}
 
@@ -128,7 +128,7 @@ The **[!UICONTROL Twitter account Synchronization]** workflow synchronizes Twitt
 >
 >Para que o workflow recupere a lista de inscritos do Twitter, a caixa **[!UICONTROL Twitter account synchronization]** deve ser marcada na seção de edição do serviço vinculado à conta. Para obter mais informações, consulte [Delegação de acesso de gravação ao Adobe Campaign](#delegating-write-access-to-adobe-campaign).
 
-The **[!UICONTROL Twitter account synchronization]** workflow, which is accessed via the **[!UICONTROL Administration > Production > Technical workflows > Managing social networks]** node, lets you synchronize Twitter accounts configured previously with Adobe Campaign. Por padrão, esse workflow é acionado todas as quintas-feiras às 7:30 am.
+O workflow **[!UICONTROL Twitter account synchronization]**, acessado pelo nó **[!UICONTROL Administration > Production > Technical workflows > Managing social networks]**, permite sincronizar as contas do Twitter configuradas anteriormente com o Adobe Campaign. Por padrão, esse workflow é acionado todas as quintas-feiras às 7:30 am.
 
 >[!NOTE]
 >
