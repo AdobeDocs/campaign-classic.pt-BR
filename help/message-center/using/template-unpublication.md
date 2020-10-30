@@ -11,11 +11,11 @@ audience: message-center
 content-type: reference
 topic-tags: message-templates
 discoiquuid: 43908738-a71a-49be-ac00-175f57a0555c
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '212'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -26,7 +26,7 @@ Depois que um template de mensagem é publicado nas instâncias de execução, v
 
 >[!NOTE]
 >
->Esse recurso está disponível a partir da versão de Campanha 20.2.
+>Esse recurso está disponível a partir da versão 20.2 do Campaign.
 
 Na verdade, um template publicado ainda pode ser chamado. Portanto, se você não estiver mais usando um template de mensagem, é recomendável desfazer a publicação. Dessa forma, você pode evitar o envio de uma mensagem transacional indesejada por engano. Por exemplo, você publicou um template de mensagem que só usa para campanhas de Natal. Talvez você queira desfazer a publicação depois que o período de Natal acabar e publicá-lo novamente no próximo ano.
 
