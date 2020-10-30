@@ -15,7 +15,7 @@ translation-type: tm+mt
 source-git-commit: 8fc3e793ec544948049fc122b44b6bffdebecba0
 workflow-type: tm+mt
 source-wordcount: '1145'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -273,7 +273,7 @@ O caso de uso a seguir detalha as configurações a serem feitas no Adobe Campai
 
    ![](assets/interaction_xmlmode_form.png)
 
-   The **[!UICONTROL Title 2]** and **[!UICONTROL Price]** fields have been added and the **[!UICONTROL Destination URL]** field is no longer displayed.
+   Os campos **[!UICONTROL Title 2]** e **[!UICONTROL Price]** foram adicionados e o campo **[!UICONTROL Destination URL]** não é mais exibido.
 
 1. **Criação de uma oferta**
 
