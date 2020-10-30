@@ -11,9 +11,9 @@ audience: platform
 content-type: reference
 topic-tags: connectors
 discoiquuid: a84a73a9-9930-449f-8b81-007a0e9d5233
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1416'
 ht-degree: 100%
 
@@ -199,7 +199,7 @@ Verifique se o caminho do driver e dos utilitários está na variável PATH que 
 
 Se o seguinte erro for exibido durante o teste da conexão **TIM-030008 Data &#39;2&#39;: missing character(s) (iRc=-53)** verifique se o driver ODBC está instalado corretamente e se LD_LIBRARY_PATH (Linux) / PATH (Windows) está definido para o servidor do Campaign.
 
-Erro **ODB-240000 ODBC:[Nome da fonte de dados Microsoft][ODBC Driver Manager]não encontrado e nenhum driver padrão especificado.** ocorre com o Windows se você usar um driver 16.X. O Adobe Campaign espera que o teradata seja nomeados como &#39;{teradata}&#39; em odbcinst.ini.
+Erro **ODB-240000 ODBC: [Nome da fonte de dados Microsoft][ODBC Driver Manager] não encontrado e nenhum driver padrão especificado.** ocorre com o Windows se você usar um driver 16.X. O Adobe Campaign espera que o teradata seja nomeados como &#39;{teradata}&#39; em odbcinst.ini.
 Se você tiver uma versão 18.10 do servidor do Adobe Campaign, poderá adicionar ODBCDriverName=&quot;Teradata Database ODBC Driver 16.10&quot; nas opções da conta externa. O número da versão pode mudar; o nome exato pode ser encontrado executando o odbcad32.exe e acessando a guia Drivers.
 Para versões inferiores a 18.10, é necessário copiar a seção Teradata de odbcinst.ini criada pela instalação do driver para uma nova seção chamada Teradata; neste caso, o regedit pode ser usado.
 
