@@ -15,7 +15,7 @@ translation-type: tm+mt
 source-git-commit: fd75f7f75e8e77d7228233ea311dd922d100417c
 workflow-type: tm+mt
 source-wordcount: '2802'
-ht-degree: 85%
+ht-degree: 88%
 
 ---
 
@@ -34,21 +34,21 @@ O Adobe Campaign gerencia uma lista de endereços em quarentena. Os recipients c
 
 Os perfis cujos endereços de email ou número de telefone estão em quarentena são excluídos automaticamente durante a preparação da mensagem (consulte [Identificação de endereços em quarentena para um delivery](#identifying-quarantined-addresses-for-a-delivery)). Isso irá acelerar os deliveries, pois a taxa de erro tem um efeito significativo na velocidade do delivery.
 
-Alguns provedores de acesso à Internet consideram automaticamente emails como spam se a taxa de endereços inválidos for muito alta. A quarentena, portanto, permite que você evite ser adicionada à lista de bloqueios por esses provedores.
+Alguns provedores de acesso à Internet consideram automaticamente emails como spam se a taxa de endereços inválidos for muito alta. A quarentena, portanto, evita que você seja adicionado à lista de bloqueios por esses provedores.
 
 Além disso, a quarentena ajuda a reduzir os custos de envio do SMS, excluindo números de telefone incorretos dos deliveries. Para obter mais informações sobre as práticas recomendadas para proteger e otimizar seus deliveries, consulte [esta página](../../delivery/using/delivery-best-practices.md).
 
-### Quarentena vs lista de bloqueios {#quarantine-vs-denylist}
+### Quarentena × lista de bloqueios {#quarantine-vs-denylist}
 
 A **quarentena** se aplica somente a um endereço, não ao próprio perfil. Isso significa que, se dois perfis tiverem o mesmo endereço de email, eles serão afetados se o endereço estiver em quarentena.
 
 Da mesma forma, um perfil cujo endereço de email está em quarentena poderia atualizar seu perfil e inserir um novo endereço e pode ser alvo de ações de delivery novamente.
 
-Being on the **denylist**, on the other hand, will result in the profile no longer being targeted by any delivery, for example after an unsubscription (opt-out).
+Por outro lado, com a inclusão na **lista de bloqueios**, o perfil não será mais direcionado por qualquer delivery, por exemplo, depois do cancelamento de inscrição (recusa).
 
 >[!NOTE]
 >
->Quando um usuário responde a uma mensagem SMS com uma palavra-chave como &quot;PARAR&quot; para recusar delivery SMS, seu perfil não é adicionado à lista de bloqueios como no processo de recusa por email. O número de telefone do perfil é enviado para quarentena, para que o usuário continue recebendo mensagens de email.
+>Quando um usuário responde a uma mensagem SMS com uma palavra-chave, como “STOP” para recusar os deliveries de SMS, seu perfil não é incluído na lista de bloqueios como no processo de recusa de email. O número de telefone do perfil é enviado para quarentena, para que o usuário continue recebendo mensagens de email.
 
 ## Identificação de endereços em quarentena {#identifying-quarantined-addresses}
 
