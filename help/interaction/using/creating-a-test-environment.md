@@ -15,7 +15,7 @@ translation-type: tm+mt
 source-git-commit: 8fc3e793ec544948049fc122b44b6bffdebecba0
 workflow-type: tm+mt
 source-wordcount: '124'
-ht-degree: 80%
+ht-degree: 100%
 
 ---
 
@@ -29,11 +29,11 @@ Para criar um ambiente de teste (modo sandbox), siga as etapas abaixo:
 >Use somente esse método de criação de ambiente para ambientes de teste. Em todos os outros casos, use o assistente de target mapping. Para obter mais informações, consulte [Criação de um ambiente de ofertas](../../interaction/using/live-design-environments.md#creating-an-offer-environment).
 
 1. Inicie o explorador do Adobe Campaign e vá para a raiz da instância.
-1. Right-click and add a **[!UICONTROL Generic folder]** using the drop-down menus.
+1. Clique com o botão direito do mouse e adicione um **[!UICONTROL Generic folder]** usando os menus suspensos.
 
    ![](assets/offer_env_creation_001.png)
 
-1. Next, go to the folder you just created and add an **[!UICONTROL Offer environment]** using the right-click menus.
+1. Em seguida, acesse a pasta que acabou de criar e adicione um **[!UICONTROL Offer environment]** usando os menus de atalho.
 
    ![](assets/offer_env_creation_001bis.png)
 
