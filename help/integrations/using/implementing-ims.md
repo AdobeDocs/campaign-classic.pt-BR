@@ -11,11 +11,11 @@ audience: integrations
 content-type: reference
 topic-tags: connecting-via-an-adobe-id
 discoiquuid: 3999577b-0460-4898-a4ec-a7b0e5002065
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '53'
-ht-degree: 56%
+ht-degree: 100%
 
 ---
 
@@ -24,7 +24,7 @@ ht-degree: 56%
 
 ## Habilitação da conexão IMS {#enabling-the-ims-connection}
 
-1. To enable connecting via the IMS, check **[!UICONTROL Connect with an Adobe ID]** in the console&#39;s connections window.
+1. Para habilitar a conexão via IMS, marque **[!UICONTROL Connect with an Adobe ID]** na janela de conexões do console.
 
    ![](assets/ims_1.png)
 
@@ -34,7 +34,7 @@ ht-degree: 56%
 
 ## Desabilitação da conexão IMS {#disabling-the-ims-connection}
 
-To disable connecting via the Adobe ID, disconnect, click **[!UICONTROL File > Connections]** and uncheck **[!UICONTROL Connect with an Adobe ID]**.
+Para desabilitar a conexão via Adobe ID, desconecte, clique em **[!UICONTROL File > Connections]** e desmarque **[!UICONTROL Connect with an Adobe ID]**.
 
 ![](assets/ims_4.png)
 
