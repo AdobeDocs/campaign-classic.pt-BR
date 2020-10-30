@@ -11,11 +11,11 @@ audience: delivery
 content-type: reference
 topic-tags: about-deliveries-and-channels
 discoiquuid: df29492f-ed73-4ab8-b075-e76b3b9ebce3
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: b447e316bed8e0e87d608679c147e6bd7b0815eb
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1526'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -50,9 +50,9 @@ Antes de enviar o delivery, você poderá definir os parâmetros de envio nas pr
    >
    >A utilização dessa opção não é recomendada ao instalar usando o mid-sourcing para acionar a mta.
    >
-   >For more information on configuring an SMTP server, refer [to this section](../../installation/using/configuring-campaign-server.md#personalizing-delivery-parameters).
+   >Para obter mais informações sobre como configurar o servidor SMTP, consulte [esta seção](../../installation/using/configuring-campaign-server.md#personalizing-delivery-parameters).
 
-* **[!UICONTROL Email BCC]**: essa opção permite armazenar emails em um sistema externo por meio do CCO simplesmente adicionando um endereço de email de CCO ao target da sua mensagem. For more on this, refer [to this section](../../delivery/using/sending-messages.md#archiving-emails).
+* **[!UICONTROL Email BCC]**: essa opção permite armazenar emails em um sistema externo por meio do CCO simplesmente adicionando um endereço de email de CCO ao target da sua mensagem. Para obter mais informações, consulte [esta seção](../../delivery/using/sending-messages.md#archiving-emails).
 
 Depois que o delivery estiver configurado e pronto para ser enviado, certifique-se de executar a [análise do delivery](../../delivery/using/steps-validating-the-delivery.md#analyzing-the-delivery). Depois de concluído, clique em **[!UICONTROL Confirm delivery]** para iniciar a entrega de mensagens.
 
@@ -63,7 +63,7 @@ Você poderá fechar o assistente do delivery e controlar a execução do delive
 Após enviar as mensagens, você pode monitorar e rastrear seus deliveries. Para obter mais informações, consulte essas seções.
 
 * [Monitorar um delivery](../../delivery/using/monitoring-a-delivery.md)
-* [Noções básicas sobre falhas de entrega](../../delivery/using/understanding-delivery-failures.md)
+* [Noções básicas sobre falhas de delivery](../../delivery/using/understanding-delivery-failures.md)
 * [Sobre o rastreamento de mensagens](../../delivery/using/about-message-tracking.md)
 
 ## Agendando o envio do delivery {#scheduling-the-delivery-sending}
@@ -184,7 +184,7 @@ Por padrão, cinco tentativas são agendadas para o primeiro dia do delivery com
 >
 >Para instalações hospedadas ou híbridas, se você tiver atualizado para o MTA aprimorado, as configurações de nova tentativa no delivery não serão mais usadas pelo Campaign. As tentativas de rejeição em modo suave e o tempo entre elas são determinados pelo MTA aprimorado com base no tipo e na gravidade das respostas de rejeição provenientes do domínio de email da mensagem.
 >
->Todos os impactos são detalhados no documento [MTA aprimorado do Adobe Campaign](https://helpx.adobe.com/campaign/kb/acc-campaign-enhanced-mta.html).
+>Todos os impactos são detalhados no documento [MTA aprimorado do Adobe Campaign](https://helpx.adobe.com/br/campaign/kb/acc-campaign-enhanced-mta.html).
 
 
 ## Definindo período de validade {#defining-validity-period}
@@ -205,4 +205,4 @@ Quando o delivery for iniciado, as mensagens (e todas as tentativas) poderão se
 >
 >Para instalações hospedadas ou híbridas, se você tiver atualizado para MTA aprimorado, a configuração **[!UICONTROL Delivery duration]** nos deliveries do Campaign será usada somente se definida como **3,5** dias ou menos. Se você definir um valor superior a 3,5 dias, ele não será considerado.
 >
->Todos os impactos são detalhados no documento [MTA aprimorado do Adobe Campaign](https://helpx.adobe.com/campaign/kb/acc-campaign-enhanced-mta.html).
+>Todos os impactos são detalhados no documento [MTA aprimorado do Adobe Campaign](https://helpx.adobe.com/br/campaign/kb/acc-campaign-enhanced-mta.html).
