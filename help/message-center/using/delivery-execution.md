@@ -11,9 +11,9 @@ audience: message-center
 content-type: reference
 topic-tags: event-processing
 discoiquuid: afb375de-2de3-47ad-8b37-664cc04864e8
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '132'
 ht-degree: 100%
 
@@ -38,4 +38,4 @@ Essa classificação poderá ser alterada nas propriedades do template de mensag
 
 >[!NOTE]
 >
->Para instalações hospedadas ou híbridas, se você tiver atualizado para o MTA aprimorado, todas as mensagens transacionais também poderão ser enviadas com o MTA aprimorado do Adobe Campaign para melhorar a capacidade de entrega, a taxa de transferência e o tratamento de rejeição. Todos os impactos são os mesmos das mensagens de marketing padrão e são detalhados no documento [MTA aprimorado do Adobe Campaign](https://helpx.adobe.com/campaign/kb/acc-campaign-enhanced-mta.html).
+>Para instalações hospedadas ou híbridas, se você tiver atualizado para o MTA aprimorado, todas as mensagens transacionais também poderão ser enviadas com o MTA aprimorado do Adobe Campaign para melhorar a capacidade de entrega, a taxa de transferência e o tratamento de rejeição. Todos os impactos são os mesmos das mensagens de marketing padrão e são detalhados no documento [MTA aprimorado do Adobe Campaign](https://helpx.adobe.com/br/campaign/kb/acc-campaign-enhanced-mta.html).
