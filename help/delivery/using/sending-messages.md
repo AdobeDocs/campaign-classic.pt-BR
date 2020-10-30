@@ -9,11 +9,11 @@ audience: delivery
 content-type: reference
 topic-tags: sending-emails
 discoiquuid: e2dd8161-fe38-48bf-a288-8ec328b2660e
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: b447e316bed8e0e87d608679c147e6bd7b0815eb
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '739'
-ht-degree: 76%
+ht-degree: 100%
 
 ---
 
@@ -29,7 +29,7 @@ O processo detalhado da validação e envio de um delivery é apresentado nas se
 
 As seções abaixo detalham os parâmetros específicos ao envio de emails.
 
-## Cco de email {#archiving-emails}
+## Email Cco {#archiving-emails}
 
 O Adobe Campaign permite que você armazene emails em um sistema externo por meio do CCo simplesmente adicionando um endereço de email do CCo ao seu destino de mensagem. Uma vez ativada a opção, uma cópia exata de todas as mensagens enviadas será mantida para este delivery.
 
@@ -39,15 +39,15 @@ Para obter mais informações sobre a configuração e práticas recomendadas de
 >
 >A Cco de email é um recurso opcional. Verifique seu contrato de licença e entre em contato com o executivo da sua conta para ativá-la.
 
-Ao criar um novo delivery ou template do delivery, o Email BCC não é ativado por padrão. Você precisa ativá-la manualmente no nível do delivery de e-mail ou do template do delivery.
+Ao criar um novo delivery ou template do delivery, o Email Cc não é ativado por padrão. Você precisa ativá-lo manualmente no nível do delivery de email ou do template do delivery.
 
-Para ativar o Email BCC para um template do delivery de email, siga as etapas abaixo:
+Para ativar o Email Cco para um template do delivery de email, siga as etapas abaixo:
 
-1. Vá até **[!UICONTROL Campaign Management]** > **[!UICONTROL Deliveries]** ou **[!UICONTROL Resources]** > **[!UICONTROL Templates]** > **[!UICONTROL Delivery templates]**.
+1. Acesse **[!UICONTROL Campaign Management]** > **[!UICONTROL Deliveries]** ou **[!UICONTROL Resources]** > **[!UICONTROL Templates]** > **[!UICONTROL Delivery templates]**.
 1. Selecione o delivery de sua escolha ou duplique o template do delivery **de email** integrado e selecione o template duplicado.
 1. Clique no botão **Propriedades**.
 1. Selecione a guia **[!UICONTROL Delivery]**.
-1. Verifique a opção **Email BCC** . Uma cópia de todas as mensagens enviadas para cada delivery com base neste modelo será enviada para o endereço Cco de email que foi configurado.
+1. Verifique a opção **Email Cco**. Uma cópia de todas as mensagens enviadas para cada delivery com base neste modelo será enviada para o endereço Cco de email que foi configurado.
 
    ![](assets/s_ncs_user_wizard_archiving.png)
 
@@ -71,9 +71,9 @@ Nas propriedades de delivery, o campo **[!UICONTROL Mode]** da guia **[!UICONTRO
 
 Além do modo padrão, as seguintes opções também estão disponíveis:
 
-* **[!UICONTROL Force the generation of the mirror page]** : mesmo se nenhum link para o mirror page for inserido no delivery, o mirror page será criado.
-* **[!UICONTROL Do not generate the mirror page]** : nenhum mirror page é gerado, mesmo se o link estiver presente no delivery.
-* **[!UICONTROL Generates a mirror page accessible using only the message identifier]** : essa opção permite acessar o conteúdo do mirror page, com informações de personalização, na janela do log de delivery. Para fazer isso, após o fim do , clique na guia **[!UICONTROL Delivery]** Delivery e selecione a linha do recipient cuja mirror page você deseja exibir. Clique no link **[!UICONTROL Display the mirror page for this message...]**.
+* **[!UICONTROL Force the generation of the mirror page]**: mesmo se nenhum link para a mirror page for inserido no delivery, ela será criada.
+* **[!UICONTROL Do not generate the mirror page]**: nenhuma mirror page é gerada, mesmo se o link estiver presente no delivery.
+* **[!UICONTROL Generates a mirror page accessible using only the message identifier]**: essa opção permite acessar o conteúdo da mirror page, com informações de personalização, na janela de log do delivery. Para fazer isso, após o fim do , clique na guia **[!UICONTROL Delivery]** Delivery e selecione a linha do recipient cuja mirror page você deseja exibir. Clique no link **[!UICONTROL Display the mirror page for this message...]**.
 
    ![](assets/s_ncs_user_wizard_miror_page_link.png)
 
@@ -95,7 +95,7 @@ A codificação padrão é UTF-8. Se alguns dos provedores de email de seus reci
 
 Por exemplo, você deseja enviar um email contendo caracteres japoneses. Para garantir que todos os caracteres sejam exibidos corretamente para seus recipients no Japão, é possível usar uma codificação que ofereça suporte aos caracteres japoneses em vez do padrão UTF-8.
 
-To do this, select the **[!UICONTROL Force the encoding used for messages]** option in the **[!UICONTROL Character encoding]** section and choose an encoding from the drop-down list that is displayed.
+Para fazer isso, selecione a opção **[!UICONTROL Force the encoding used for messages]** na seção **[!UICONTROL Character encoding]** e escolha uma codificação na lista suspensa que é exibida.
 
 ![](assets/s_ncs_user_email_del_properties_smtp_tab_encoding.png)
 
