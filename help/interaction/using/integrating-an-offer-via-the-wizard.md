@@ -11,11 +11,11 @@ audience: interaction
 content-type: reference
 topic-tags: delivering-an-offer
 discoiquuid: 181fcb70-9394-4091-93df-92c39273ec3d
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '804'
-ht-degree: 89%
+ht-degree: 100%
 
 ---
 
@@ -57,11 +57,11 @@ Para inserir apresentações de oferta em um delivery, siga o seguinte processo:
 
    ![](assets/offer_delivery_005.png)
 
-1. Select the **[!UICONTROL Exclude non-eligible recipients]** option if necessary. Para obter mais informações, consulte [Parâmetros para chamar o mecanismo de oferta](#parameters-for-calling-offer-engine).
+1. Selecione a opção **[!UICONTROL Exclude non-eligible recipients]** se necessário. Para obter mais informações, consulte [Parâmetros para chamar o mecanismo de oferta](#parameters-for-calling-offer-engine).
 
    ![](assets/offer_delivery_006.png)
 
-1. Se necessário, selecione a **[!UICONTROL Do not display anything if no offers are selected]** opção. Para obter mais informações, consulte [Parâmetros para chamar o mecanismo de oferta](#parameters-for-calling-offer-engine).
+1. Se necessário, selecione a opção **[!UICONTROL Do not display anything if no offers are selected]**. Para obter mais informações, consulte [Parâmetros para chamar o mecanismo de oferta](#parameters-for-calling-offer-engine).
 
    ![](assets/offer_delivery_007.png)
 
@@ -80,7 +80,7 @@ Para inserir apresentações de oferta em um delivery, siga o seguinte processo:
 * **[!UICONTROL Themes]**: palavras-chave definidas upstream nas categorias. Isso funciona como um filtro e permite refinar o número de ofertas que serão apresentadas ao selecioná-las em um conjunto de categorias.
 * **[!UICONTROL Number of propositions]**: número de ofertas retornadas pelo mecanismo que podem ser inseridas no corpo do delivery. Se não forem inseridas na mensagem, as ofertas ainda serão geradas, mas não serão apresentadas.
 * **[!UICONTROL Exclude non-eligible recipients]**: essa opção permite ativar ou desativar a exclusão de recipients para os quais não há ofertas elegíveis suficientes. O número de propostas elegíveis pode ser menor do que o número solicitado de apresentações. Se esta caixa estiver marcada, os recipients que não têm apresentações suficientes serão excluídos do delivery. Se você não selecionar essa opção, esses recipients não serão excluídos, mas não terão o número solicitado de apresentações.
-* **[!UICONTROL Do not display anything if no offer is selected]** : essa opção permite escolher como a mensagem será processada caso uma das propostas não exista. Quando esta caixa é marcada, a representação da proposta ausente não é exibida e nenhum conteúdo aparecerá na mensagem para essa apresentação. Se a caixa não estiver marcada, a mensagem propriamente dita será cancelada durante o envio e os recipients não receberão mais mensagens.
+* **[!UICONTROL Do not display anything if no offer is selected]**: essa opção permite escolher como a mensagem será processada caso uma das proposições não exista. Quando esta caixa é marcada, a representação da proposta ausente não é exibida e nenhum conteúdo aparecerá na mensagem para essa apresentação. Se a caixa não estiver marcada, a mensagem propriamente dita será cancelada durante o envio e os recipients não receberão mais mensagens.
 
 ### Inserção de uma apresentação de oferta em um delivery {#inserting-an-offer-proposition-into-a-delivery}
 
@@ -97,17 +97,17 @@ Também é possível apresentar ofertas em um delivery usando delivery outlines.
 Para obter mais informações sobre delivery outlines, consulte o guia [Campaign - MRM](../../campaign/using/marketing-campaign-deliveries.md#associating-and-structuring-resources-linked-via-a-delivery-outline).
 
 1. Crie uma nova campanha ou acesse uma campanha existente.
-1. Access the delivery outlines via the campaign&#39;s **[!UICONTROL Edit]** > **[!UICONTROL Documents]** tab.
-1. Add an outline then insert as many offers as you like into it by right-clicking on the outline and selecting **[!UICONTROL New]** > **[!UICONTROL Offer]**, then save the campaign.
+1. Acesse as delivery outlines por meio das guias da campanha **[!UICONTROL Edit]** > **[!UICONTROL Documents]**.
+1. Adicione uma outline e depois insira quantas ofertas desejar, clicando com o botão direito do mouse na outline e selecionando **[!UICONTROL New]** > **[!UICONTROL Offer]**. Depois salve a campanha.
 
    ![](assets/int_compo_offre1.png)
 
 1. Crie um delivery cujos delivery outlines você tem acesso (por exemplo, uma delivery de mala direta).
-1. When editing the delivery, click **[!UICONTROL Select a delivery outline]**.
+1. Ao editar o delivery, clique em **[!UICONTROL Select a delivery outline]**.
 
    >[!NOTE]
    >
-   >Depending on the type of delivery, this option can be found in the **[!UICONTROL Properties]** > **[!UICONTROL Advanced]** menu (for email deliveries for example).
+   >Dependendo do tipo de delivery, essa opção pode ser encontrada no menu **[!UICONTROL Properties]** > **[!UICONTROL Advanced]** (para deliveries de email, por exemplo).
 
    ![](assets/int_compo_offre2.png)
 
