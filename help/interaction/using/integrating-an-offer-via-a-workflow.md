@@ -11,11 +11,11 @@ audience: interaction
 content-type: reference
 topic-tags: delivering-an-offer
 discoiquuid: 6e27caea-1f1a-457d-bdec-1f93a12b01cf
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1049'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -41,7 +41,7 @@ A atividade delivery outline, disponível nos workflows da campanha, permite apr
 1. Preencha os campos disponíveis de acordo com seu delivery.
 1. Há dois casos possíveis:
 
-   * If you would like to call the offer engine, check the **[!UICONTROL Restrict the number of propositions selected]** box. Especifique o espaço de oferta e o número de propostas que serão apresentadas no delivery.
+   * Se desejar chamar o mecanismo de oferta, marque a caixa **[!UICONTROL Restrict the number of propositions selected]**. Especifique o espaço de oferta e o número de propostas que serão apresentadas no delivery.
 
       Os pesos da oferta e as regras de qualificação serão considerados pelo mecanismo de oferta.
 
@@ -151,7 +151,7 @@ Essa atividade funciona de acordo com o mesmo princípio que a atividade de enri
 
 Após configurar seu query (consulte o [Guia de workflows](../../workflow/using/query.md)):
 
-1. Add and open an **[!UICONTROL Offer engine]** activity.
+1. Adicione e abra uma atividade de **[!UICONTROL Offer engine]**.
 1. Preencha os vários campos disponíveis para especificar a chamada para oferecer parâmetros de mecanismo (espaço de oferta, categoria ou tema(s), data de contato, número de ofertas a serem mantidas). O mecanismo calculará automaticamente as ofertas para adicionar de acordo com esses parâmetros.
 
    >[!NOTE]
