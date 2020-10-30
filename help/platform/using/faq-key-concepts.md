@@ -13,7 +13,7 @@ translation-type: tm+mt
 source-git-commit: cb96a238f4c8e413377ce6102b065b91badfe6db
 workflow-type: tm+mt
 source-wordcount: '887'
-ht-degree: 95%
+ht-degree: 96%
 
 ---
 
@@ -65,7 +65,7 @@ Consulte [este documento](https://helpx.adobe.com/br/campaign/kb/campaign-privac
 
 Leia [esta seção](../../platform/using/adobe-campaign-workspace.md) para saber mais sobre as noções básicas do espaço de trabalho do Adobe Campaign.
 
-![](assets/do-not-localize/how-to-video.png) [Área de trabalho do Discover Campaign em vídeo](https://docs.adobe.com/content/help/en/campaign-classic-learn/tutorials/getting-started/exploring-the-adobe-campaign-classic-user-interface.html)
+![](assets/do-not-localize/how-to-video.png) [Espaço de trabalho do Discover Campaign em vídeo](https://docs.adobe.com/content/help/pt-BR/campaign-classic-learn/tutorials/getting-started/exploring-the-adobe-campaign-classic-user-interface.html)
 
 ## Como posso selecionar o público das minhas mensagens? {#how-can-i-select-the-target-population-of-my-messages-}
 
