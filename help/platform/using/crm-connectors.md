@@ -11,9 +11,9 @@ audience: platform
 content-type: reference
 topic-tags: connectors
 discoiquuid: dbe9080c-66e3-4ff6-8f16-959f9748f666
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2541'
 ht-degree: 100%
 
@@ -316,7 +316,7 @@ Por padrão, os seguintes campos são usados (na ordem especificada):
 
 * Para o Microsoft Dynamics: **modifiedon**,
 * Para o Oracle On Demand: **LastUpdates**, **ModifiedDate**, **LastLoggedIn**,
-* Para o Salesforce.com: **LastModifiedDate**, **SystemModamp**.
+* Para o Salesforce.com: **LastModifiedDate**, **SystemModstamp**.
 
 A ativação da opção **[!UICONTROL Automatic index]** gera três variáveis que podem ser usadas no fluxo de trabalho de sincronização por meio de uma atividade do tipo **[!UICONTROL JavaScript code]**. Essas atividades são:
 
