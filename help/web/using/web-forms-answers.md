@@ -11,11 +11,11 @@ audience: web
 content-type: reference
 topic-tags: web-forms
 discoiquuid: c89926b6-488e-4c72-8f67-b6af388bade3
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '863'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
@@ -24,7 +24,7 @@ ht-degree: 95%
 
 ## Campos de armazenamento de resposta {#response-storage-fields}
 
-As respostas a formulários podem ser salvas em um campo do banco de dados ou temporariamente em uma variável local. O modo de armazenamento para respostas é escolhido durante a criação do campo. It can be edited via the **[!UICONTROL Edit storage...]** link.
+As respostas a formulários podem ser salvas em um campo do banco de dados ou temporariamente em uma variável local. O modo de armazenamento para respostas é escolhido durante a criação do campo. Ele pode ser editado por meio do link **[!UICONTROL Edit storage...]**.
 
 Para cada campo de entrada em um formulário, as seguintes opções de armazenamento estão disponíveis:
 
@@ -56,11 +56,11 @@ Isso significa que você pode utilizar o valor de um campo não salvo para autor
 
 ![](assets/s_ncs_admin_survey_no_storage_variable.png)
 
-It is stored in a variable which must be selected when the drop-down box is created, or via the **[!UICONTROL Edit storage...]** link.
+Ele é armazenado em uma variável que deve ser selecionada durante a criação da caixa suspensa ou por meio do link **[!UICONTROL Edit storage...]**
 
 ![](assets/s_ncs_admin_survey_no_storage_variable2.png)
 
-You can display existing variables and create new ones via the **[!UICONTROL Edit variables...]** link. Clique no botão **[!UICONTROL Add]** para criar uma nova variável.
+É possível exibir variáveis existentes e criar novas por meio deste link **[!UICONTROL Edit variables...]** Clique no botão **[!UICONTROL Add]** para criar uma nova variável.
 
 ![](assets/s_ncs_admin_survey_add_a_variable.png)
 
