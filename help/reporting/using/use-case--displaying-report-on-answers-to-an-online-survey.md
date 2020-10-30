@@ -11,11 +11,11 @@ audience: reporting
 content-type: reference
 topic-tags: designing-reports-with-cubes
 discoiquuid: 5404a227-6cfb-463b-9a56-af46a022eb38
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '484'
-ht-degree: 91%
+ht-degree: 100%
 
 ---
 
@@ -42,9 +42,9 @@ Antes de começar neste caso de uso, é preciso ter acesso a uma pesquisa e um c
 
 Para coletar as respostas da pesquisa, siga as etapas abaixo:
 
-1. Create a workflow and place an **[!UICONTROL Answers to a survey]** activity. Para obter mais informações sobre o uso dessa atividade, consulte [esta seção](../../web/using/publish--track-and-use-collected-data.md#using-the-collected-data).
+1. Crie um workflow e coloque uma atividade **[!UICONTROL Answers to a survey]**. Para obter mais informações sobre o uso dessa atividade, consulte [esta seção](../../web/using/publish--track-and-use-collected-data.md#using-the-collected-data).
 1. Edite a atividade e selecione a pesquisa cujas respostas deseja analisar.
-1. Enable the **[!UICONTROL Select all the answer data]** option to collect all the information.
+1. Habilite a opção **[!UICONTROL Select all the answer data]** para coletar todas as informações.
 
    ![](assets/reporting_usecase_1_01.png)
 
@@ -56,7 +56,7 @@ Para coletar as respostas da pesquisa, siga as etapas abaixo:
 
    ![](assets/reporting_usecase_1_04.png)
 
-   In this activity, specify the list to be updated and un-check the **[!UICONTROL Purge and re-use the list if it exists (otherwise add to the list)]** option: answers are added to the existing table. Essa opção permitirá fazer referência à lista em um cubo. O schema vinculado à lista não será recriado em cada atualização, o que garante a integridade do cubo que usa essa lista.
+   Nesta atividade, especifique a lista que deve ser atualizada e desmarque a opção **[!UICONTROL Purge and re-use the list if it exists (otherwise add to the list)]**: as respostas são adicionadas à tabela existente. Essa opção permitirá fazer referência à lista em um cubo. O schema vinculado à lista não será recriado em cada atualização, o que garante a integridade do cubo que usa essa lista.
 
    ![](assets/reporting_usecase_1_03.png)
 
@@ -68,7 +68,7 @@ Para coletar as respostas da pesquisa, siga as etapas abaixo:
 
 1. Adicione um programador para automatizar a coleta diária das respostas e a atualização da lista.
 
-   The **[!UICONTROL List update]** and **[!UICONTROL Scheduler]** activities are detailed in .
+   As atividades **[!UICONTROL List update]** e **[!UICONTROL Scheduler]** estão detalhadas em .
 
 ## Etapa 2 - Criação do cubo, suas medidas e seus indicadores {#step-2---creating-the-cube--its-measures-and-its-indicators}
 
