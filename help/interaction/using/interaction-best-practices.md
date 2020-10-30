@@ -9,11 +9,11 @@ audience: interaction
 content-type: reference
 topic-tags: interaction-overview
 discoiquuid: 85e8348f-d240-4a36-b7bd-645807dbc227
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1193'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -69,7 +69,7 @@ Ao incluir ofertas em deliveries, elas são geralmente selecionadas em upstream 
 
 Ao selecionar ofertas em uma atividade de enriquecimento, você pode escolher qual espaço de ofertas usar. No entanto, independentemente do espaço de ofertas selecionado, o menu de personalização do delivery depende do espaço de ofertas configurado no delivery.
 
-In the example below, the offer space selected in the delivery is **[!UICONTROL Email (Environment - Recipient)]**:
+No exemplo abaixo, o espaço de ofertas selecionado no delivery é **[!UICONTROL Email (Environment - Recipient)]**:
 
 ![](assets/Interaction-best-practices-offer-space-selected.png)
 
