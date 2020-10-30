@@ -11,18 +11,18 @@ audience: platform
 content-type: reference
 topic-tags: starting-with-adobe-campaign
 discoiquuid: 2f66152b-4d4a-40b8-a1bb-5b97c5410882
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 26ba32468bce3bbb1c52d225c8195977da4d7d54
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2147'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
 
 # Área de trabalho do Adobe Campaign{#adobe-campaign-workspace}
 
-## Exploring Adobe Campaign interface {#about-adobe-campaign-interface}
+## Explorar a interface do Adobe Campaign {#about-adobe-campaign-interface}
 
 Depois de se conectar ao banco de dados, você acessará a home page do Adobe Campaign, um painel de controle formado por links e atalhos que permitem acessar recursos, dependendo da sua instalação, bem como as configurações gerais da plataforma.
 
@@ -30,7 +30,7 @@ Na seção central da home page, você pode usar links para acessar o portal de 
 
 ![](assets/d_ncs_user_interface_home.png)
 
-![](assets/do-not-localize/how-to-video.png) [Área de trabalho do Discover Campaign em vídeo](https://docs.adobe.com/content/help/en/campaign-classic-learn/tutorials/getting-started/exploring-the-adobe-campaign-classic-user-interface.html)
+![](assets/do-not-localize/how-to-video.png) [Espaço de trabalho do Discover Campaign em vídeo](https://docs.adobe.com/content/help/pt-BR/campaign-classic-learn/tutorials/getting-started/exploring-the-adobe-campaign-classic-user-interface.html)
 
 >[!NOTE]
 >
@@ -362,7 +362,7 @@ As principais diferenças entre inglês americano e inglês do Reino Unido são:
   <tr> 
    <td> Data abreviada<br /> </td> 
    <td> <p>%2M/%2D/%4Y</p><p><strong>ex: 09/25/2018</strong></p> </td> 
-   <td> <p>%4D/%2M/%2Y</p><p><strong>ex: 25/09/2018</strong></p> </td> 
+   <td> <p>%2D/%2M/%4Y</p><p><strong>ex: 25/09/2018</strong></p> </td> 
   </tr> 
   <tr> 
    <td> Data abreviada com hora<br /> </td> 
