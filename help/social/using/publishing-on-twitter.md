@@ -11,11 +11,11 @@ audience: social
 content-type: reference
 topic-tags: publishing-on-facebook-twitter
 discoiquuid: 2dc278ce-477c-493d-8abb-8bbdf2e988a5
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '944'
-ht-degree: 87%
+ht-degree: 100%
 
 ---
 
@@ -35,7 +35,7 @@ As limitações a seguir são restrições inerentes ao Twitter.
 
 ### Criação de delivery {#creating-the-delivery}
 
-Create a new delivery based on the **[!UICONTROL Tweet (twitter)]** delivery template.
+Crie um novo delivery com base no template de delivery **[!UICONTROL Tweet (twitter)]**.
 
 ![](assets/social_twitter_delivery_001.png)
 
@@ -80,7 +80,7 @@ Digite o conteúdo do tweet na guia **[!UICONTROL Content]**.
 A guia **[!UICONTROL Preview]** permite visualizar a renderização do tweet.
 
 1. Clique na guia **[!UICONTROL Preview]**.
-1. Click the **[!UICONTROL Test personalization]** drop-down menu and select **[!UICONTROL Service]**.
+1. Clique no menu suspenso **[!UICONTROL Test personalization]** e selecione **[!UICONTROL Service]**.
 1. No campo **[!UICONTROL Folder]**, selecione a pasta de serviço que contém a conta do Twitter.
 1. Escolha a conta do Twitter com a qual deseja testar a visualização.
 
@@ -113,16 +113,16 @@ O delivery da prova é idêntico aos deliveries por email. Consulte [esta seçã
 ### Envio da mensagem {#sending-the-message}
 
 1. Depois que o conteúdo for aprovado, clique no botão **[!UICONTROL Send]**.
-1. Selecione **[!UICONTROL Deliver as soon as possible]** e clique no **[!UICONTROL Analyze]** botão.
+1. Selecione **[!UICONTROL Deliver as soon as possible]** e clique no botão **[!UICONTROL Analyze]**.
 
    >[!NOTE]
    >
-   >The **[!UICONTROL Postpone the delivery]** option lets you postpone delivery to a later date.
+   >A opção **[!UICONTROL Postpone the delivery]** permite adiar o delivery para uma data posterior.
 
    ![](assets/social_twitter_delivery_012.png)
 
 1. Quando a análise for concluída, verifique o resultado.
-1. Click **[!UICONTROL Confirm delivery]**, then click **[!UICONTROL Yes]**.
+1. Clique em **[!UICONTROL Confirm delivery]** e depois em **[!UICONTROL Yes]**.
 
 ![](assets/social_facebook_delivery_016.png)
 
@@ -130,7 +130,7 @@ O delivery da prova é idêntico aos deliveries por email. Consulte [esta seçã
 
 ### Princípio operacional {#operating-principle}
 
-O workflow **[!UICONTROL Synchronize Twitter accounts]** (consulte [Sincronizar contas do Twitter](../../social/using/configuring-publishing-on-twitter.md#synchronizing-twitter-accounts)) recupera a lista de assinantes do Twitter para que você possa enviar mensagens diretas a eles. Os seguidores recuperados são armazenados em uma tabela específica: a tabela de visitantes. To display the list of Twitter followers, go to the **[!UICONTROL Profiles and Targets > Visitors]** node.
+O workflow **[!UICONTROL Synchronize Twitter accounts]** (consulte [Sincronizar contas do Twitter](../../social/using/configuring-publishing-on-twitter.md#synchronizing-twitter-accounts)) recupera a lista de assinantes do Twitter para que você possa enviar mensagens diretas a eles. Os seguidores recuperados são armazenados em uma tabela específica: a tabela de visitantes. Para exibir a lista de seguidores do Twitter, vá para o nó **[!UICONTROL Profiles and Targets > Visitors]**.
 
 ![](assets/social_twitter_visitors_001.png)
 
@@ -159,7 +159,7 @@ As limitações a seguir são restrições inerentes ao Twitter.
 
 ### Criação de delivery {#creating-the-delivery-}
 
-Create a new delivery based on the **[!UICONTROL Tweet (Direct Message)]** delivery template.
+Crie um novo delivery com base no template de delivery **[!UICONTROL Tweet (Direct Message)]**.
 
 ![](assets/social_twitter_delivery_010.png)
 
@@ -191,13 +191,13 @@ Selecione os seguidores para os quais deseja enviar a mensagem direta.
 
 ### Seleção do target da prova{#selecting-the-target-of-the-proof-1}
 
-The **[!UICONTROL Target of the proofs]** tab lets you select the follower who will receive the proof of your direct message. O processo de seleção é o mesmo que para o target principal. Consulte [Seleção do target principal](#selecting-the-main-target).
+A guia **[!UICONTROL Target of the proofs]** permite selecionar o seguidor que receberá a prova da mensagem direta. O processo de seleção é o mesmo que para o target principal. Consulte [Seleção do target principal](#selecting-the-main-target).
 
 ![](assets/social_twitter_delivery_020.png)
 
 >[!NOTE]
 >
->If you want to send all your direct message proofs to the same Twitter follower, you can save the proof target in the **[!UICONTROL Tweet (Direct Message)]** delivery template, accessed via the **[!UICONTROL Resources > Templates > Delivery templates]** node. O target de prova será preenchido por padrão para cada novo delivery.
+>Se desejar enviar todas as provas de mensagem direta para o mesmo seguidor do Twitter, você pode salvar o público alvo de prova no template de delivery **[!UICONTROL Tweet (Direct Message)]**, acessível através do nó **[!UICONTROL Resources > Templates > Delivery templates]**. O target de prova será preenchido por padrão para cada novo delivery.
 
 ### Definição do conteúdo da mensagem {#defining-message-content-}
 
