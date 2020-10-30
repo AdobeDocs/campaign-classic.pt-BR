@@ -9,18 +9,18 @@ audience: reporting
 content-type: reference
 topic-tags: creating-new-reports
 discoiquuid: 5ec88743-be51-438c-9064-dd0196fdd7d3
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: b0b9a0714075474bf52c3eed78d45bcef25b44fc
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '458'
-ht-degree: 50%
+ht-degree: 100%
 
 ---
 
 
 # Propriedades do relatório{#properties-of-the-report}
 
-É possível personalizar e configurar completamente seu relatório para atender qualquer necessidade. Para fazer isso, edite suas propriedades. Report properties are accessed via the **[!UICONTROL Properties]** button above the activity sequence chart.
+É possível personalizar e configurar completamente seu relatório para atender qualquer necessidade. Para fazer isso, edite suas propriedades. As propriedades do relatório são acessadas por meio do botão **[!UICONTROL Properties]** localizado acima do gráfico de sequência de atividades.
 
 ![](assets/s_ncs_advuser_report_properties_01.png)
 
@@ -28,32 +28,32 @@ As propriedades gerais estão descritas abaixo. Os recursos avançados configura
 
 ## Propriedades gerais {#overall-properties}
 
-Na **[!UICONTROL General]** guia das propriedades do relatório, é possível editar as configurações listadas abaixo:
+Na guia **[!UICONTROL General]** das propriedades do relatório, é possível editar as configurações listadas abaixo:
 
 * O rótulo e o nome interno do relatório. O **[!UICONTROL Internal name]** é usado no URL final do relatório. Não deve ser alterado após a criação do relatório.
 
-* A **Pasta** do relatório é selecionada durante a criação do relatório. Uma prática recomendada é criar uma pasta dedicada para relatórios personalizados para que eles não sejam misturados com relatórios [](../../reporting/using/about-campaign-built-in-reports.md)incorporados.
+* A **Pasta** do relatório é selecionada durante a criação do relatório. Uma prática recomendada é criar uma pasta dedicada para relatórios personalizados para que eles não sejam misturados com [relatórios incorporados](../../reporting/using/about-campaign-built-in-reports.md).
 
-* O **Armazenamento** é selecionado ao criar o relatório. To change the data table of the report, click the **[!UICONTROL Select link]** icon to the right of the **[!UICONTROL Document type]** field.
+* O **Armazenamento** é selecionado ao criar o relatório. Para alterar a tabela que o relatório aborda, clique no ícone **[!UICONTROL Select link]** à direita do campo **[!UICONTROL Document type]**.
 
    ![](assets/s_ncs_advuser_report_properties_02.png)
 
-* Os parâmetros do **Controle de acesso** . Essas configurações estão descritas abaixo.
+* Os parâmetros do **Controle de acesso**. Essas configurações estão descritas abaixo.
 
-## Controlling access to the report {#report-accessibility}
+## Controle de acesso ao relatório {#report-accessibility}
 
-Um relatório pode ser acessado no console do Adobe Campaign ou com um navegador da Web. Nesse caso, pode ser necessário configurar o controle de acesso do relatório conforme mostrado abaixo.
+Um relatório pode ser acessado no console do Adobe Campaign ou com um navegador da web. Nesse caso, pode ser necessário configurar o controle de acesso do relatório conforme mostrado abaixo.
 
 ![](assets/s_ncs_advuser_report_properties_02b.png)
 
 As opções possíveis são:
 
-* **[!UICONTROL Anonymous access]**: essa opção permite o acesso irrestrito ao relatório. No entanto, nenhuma manipulação é possível.
+* **[!UICONTROL Anonymous access]**: essa opção permite acesso irrestrito ao relatório. No entanto, nenhuma manipulação é possível.
 
-   Os direitos do operador técnico &quot;webapp&quot; são usados para exibir elementos de relatório. Saiba mais [nesta seção](../../platform/using/access-management.md#default-operators).
+   Os direitos do operador técnico de “webapp” são usados para exibir elementos de relatório. Saiba mais [nesta seção](../../platform/using/access-management.md#default-operators).
 
-* **[!UICONTROL Access control]**: essa opção permite que os operadores Adobe Campaign acessem-no depois que estiverem conectados.
-* **[!UICONTROL Specific account]**: essa opção permite que você execute o relatório com os direitos do operador selecionado no **[!UICONTROL Operator]** campo.
+* **[!UICONTROL Access control]**: esta opção permite que os operadores do Adobe Campaign acessem o relatório quando estiverem conectados.
+* **[!UICONTROL Specific account]**: a opção permite executar o relatório com os direitos do operador, selecionados no campo **[!UICONTROL Operator]**.
 
 ## Gerenciamento da localização do relatório {#managing-report-localization}
 
@@ -67,7 +67,7 @@ O idioma de edição é o idioma escrito. Quando adicionar um idioma, a subguia 
 
 >[!NOTE]
 >
->Para obter mais informações sobre a localização da página da Web na Campanha, consulte [esta seção](../../web/using/translating-a-web-form.md).
+>Para obter mais informações sobre localização da página da web no Campaign, consulte [esta seção](../../web/using/translating-a-web-form.md).
 
 ## Personalização da renderização HTML {#personalizing-html-rendering}
 
