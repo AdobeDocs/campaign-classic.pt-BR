@@ -9,11 +9,11 @@ audience: delivery
 content-type: reference
 topic-tags: deliverability-management
 discoiquuid: 6a394eeb-fbe1-4712-bb13-db5d7965fb73
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 75cbb8d697a95f4cc07768e6cf3585e4e079e171
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '490'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
@@ -24,7 +24,7 @@ A manutenção da reputação do seu domínio e endereço IP é essencial ao con
 
 * Começar a enviar emails é uma etapa delicada, pois a plataforma não tem histórico de uso e reputação (quando os IPs de envio nunca foram usados para essa finalidade).
 
-* Os ISPs desconfiam naturalmente dos endereços IP que nunca foram usados para enviar emails e que, de repente, começam a enviar grandes volumes de tráfego de emails. Na verdade, os remetentes de spam geralmente usam endereços IP &quot;desconhecidos&quot; (endereços que nunca estiveram em lista de bloqueios) para enviar o maior número possível de mensagens antes da detecção.
+* Os ISPs desconfiam naturalmente dos endereços IP que nunca foram usados para enviar emails e que, de repente, começam a enviar grandes volumes de tráfego de emails. Na verdade, os remetentes de spam geralmente usam endereços IP &quot;desconhecidos&quot; (ou seja, endereços que nunca foram incluídos na lista de bloqueios) para enviar o maior número possível de mensagens antes que sejam detectados.
 
 * Não se pode esperar atingir a velocidade operacional em termos de saída no início da fase de produção. Além disso, você não deve tentar enviar mensagens a essa taxa, pois isso pode levar os ISPs a bloquear os endereços de envio e comprometer seriamente o restante da fase de inicialização.
 
@@ -43,5 +43,5 @@ A inicialização de uma plataforma geralmente ocorre ao usar uma lista de ender
 * **Preste muita atenção aos relatórios do delivery**. Muito erros podem significar que uma configuração técnica está mal feita. Para obter mais informações, consulte [Monitoramento de um delivery](../../delivery/using/monitoring-a-delivery.md)
 
 **Tópicos relacionados**:
-* [Aumente sua reputação de email com o aquecimento de IP](https://helpx.adobe.com/campaign/kb/increase-email-rep-ip-warming.html)
-* [Tudo sobre armadilhas de spam](https://helpx.adobe.com/campaign/kb/spam-traps.html)
+* [Aumente sua reputação de email com o aquecimento de IP](https://helpx.adobe.com/br/campaign/kb/increase-email-rep-ip-warming.html)
+* [Tudo sobre armadilhas de spam](https://helpx.adobe.com/br/campaign/kb/spam-traps.html)
