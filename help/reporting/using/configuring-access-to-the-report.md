@@ -11,11 +11,11 @@ audience: reporting
 content-type: reference
 topic-tags: creating-new-reports
 discoiquuid: dd50ca25-8fa2-48fa-84cc-a63e476701a0
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '760'
-ht-degree: 94%
+ht-degree: 100%
 
 ---
 
@@ -28,7 +28,7 @@ Defina o contexto de exibição do relatório na plataforma Adobe Campaign usand
 
 ### Tipo de seleção {#selection-type}
 
-O acesso ao relatório pode ser limitado a um contexto específico ou a um espaço de ofertas, por exemplo, um delivery, um recipient, uma seleção de recipients etc. This access is configured in the **[!UICONTROL Selection type]** section of the **[!UICONTROL Display]** tab.
+O acesso ao relatório pode ser limitado a um contexto específico ou a um espaço de ofertas, por exemplo, um delivery, um recipient, uma seleção de recipients etc. Esse acesso é configurado na seção **[!UICONTROL Selection type]** da guia **[!UICONTROL Display]** .
 
 ![](assets/s_ncs_advuser_report_visibility_4.png)
 
@@ -60,7 +60,7 @@ Isso significa que, se o canal principal da campanha for mala direta, o relatór
 
 O relatório pode ser compartilhado com outros operadores.
 
-To make the report accessible, select the **[!UICONTROL Report shared with other operators]** option. Se essa opção não estiver selecionada, somente o operador que criou o relatório poderá acessá-lo.
+Para tornar o relatório acessível, selecione a opção **[!UICONTROL Report shared with other operators]**. Se essa opção não estiver selecionada, somente o operador que criou o relatório poderá acessá-lo.
 
 O relatório também pode ser compartilhado com operadores ou grupos de operadores específicos adicionados pela janela de autorizações.
 
@@ -88,7 +88,7 @@ Para definir a categoria de um relatório, selecione-o por meio da guia **[!UICO
 
 Como exemplo, vamos criar um link para um relatório para torná-lo acessível por meio de uma lista de recipients.
 
-1. Clique **[!UICONTROL New]** e selecione **[!UICONTROL Create a link to an existing report]** no assistente de criação de relatórios.
+1. Clique em **[!UICONTROL New]** e selecione **[!UICONTROL Create a link to an existing report]** no assistente de criação de relatórios.
 
    ![](assets/s_ncs_advuser_report_wizard_link_01.png)
 
@@ -120,7 +120,7 @@ Antes de publicar seu relatório, verifique se ele é exibido corretamente na gu
 
 Para exibir a visualização do relatório, selecione a opção **[!UICONTROL Global]** ou a opção **[!UICONTROL Selection]**.
 
-Essas duas opções são selecionadas com base nas configurações de exibição do relatório. Se a configuração de exibição for **[!UICONTROL Global]**, é preciso selecionar a opção de visualização **[!UICONTROL Global]**. If the display settings are **[!UICONTROL Single selection]** or **[!UICONTROL Multiple selection]**, the **[!UICONTROL Selection]** preview option must be selected.
+Essas duas opções são selecionadas com base nas configurações de exibição do relatório. Se a configuração de exibição for **[!UICONTROL Global]**, é preciso selecionar a opção de visualização **[!UICONTROL Global]**. Se as configurações de exibição forem **[!UICONTROL Single selection]** ou **[!UICONTROL Multiple selection]**, a opção de visualização **[!UICONTROL Selection]** deverá ser selecionada.
 
 Para obter mais informações, consulte [Contexto de exibição do relatório](#report-display-context).
 
@@ -136,7 +136,7 @@ A publicação do relatório é obrigatória para compartilhá-lo com outros ope
 
    ![](assets/s_ncs_advuser_report_publish_01.png)
 
-1. Click **[!UICONTROL Start]** to publish.
+1. Clique em **[!UICONTROL Start]** para publicar.
 
    ![](assets/s_ncs_advuser_report_publish_02.png)
 
