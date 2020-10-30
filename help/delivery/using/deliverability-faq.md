@@ -9,11 +9,11 @@ audience: delivery
 content-type: reference
 topic-tags: deliverability-management
 discoiquuid: 6a394eeb-fbe1-4712-bb13-db5d7965fb73
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 75cbb8d697a95f4cc07768e6cf3585e4e079e171
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1341'
-ht-degree: 86%
+ht-degree: 100%
 
 ---
 
@@ -47,9 +47,9 @@ Ao receber sempre a mesma mensagem de erro para um ISP, o email ou IP pode ter s
 
 Se o problema persistir, entre em contato com os serviços comerciais ou de entrega, o Atendimento ao cliente do Adobe Campaign ou o suporte do Adobe Campaign.
 
-##  Lista de bloqueios quarentena {#denylist-versus-quarantine}
+##  Lista de bloqueios × quarentena {#denylist-versus-quarantine}
 
-* **Qual é a diferença entre um endereço de email em lista de bloqueios e um endereço de email em quarentena?**
+* **Qual é a diferença entre um endereço de email incluído na lista de bloqueios e um email na quarentena?**
 
    * O status **[!UICONTROL Denylisted]** é resultado de um ciclo de feedback (quando uma pessoa reporta uma mensagem como spam).
 
@@ -58,27 +58,27 @@ Se o problema persistir, entre em contato com os serviços comerciais ou de entr
 
 * **O que significam os diferentes motivos de erro de quarentena?**
 
-   Aqui estão 10 possíveis motivos: não definido, usuário desconhecido, domínio inválido, na lista de bloqueios, recusado, erro ignorado, inacessível, conta desativada, caixa de correio cheia, não conectado.
+   Aqui estão os 10 possíveis motivos: não definido, usuário desconhecido, domínio inválido, endereço incluído na lista de bloqueios, recusado, erro ignorado, inacessível, conta desativada, caixa de correio cheia e não conectado.
 
    Para obter mais informações, consulte [Entendendo o gerenciamento da quarentena](../../delivery/using/understanding-quarantine-management.md).
 
-## Remoção de lista de bloqueios {#remove-from-denylist}
+## Remoção da lista de bloqueios {#remove-from-denylist}
 
-* **Um dos meus recipient foi adicionado à lista de bloqueios por engano. How do I remove them from the denyist so that I can start sending them messages again?**
+* **Um dos meus recipients foi adicionado à lista de bloqueios por engano. Como faço para excluí-los da lista de bloqueios para que eu possa iniciar o envio de mensagens para eles novamente?**
 
    * Vá para **[!UICONTROL Administration > Campaign Management > Non deliverables Management > Non deliverables and addresses]**.
    * Nos detalhes do registro correspondente, defina o valor do campo **[!UICONTROL Status]** como **[!UICONTROL Valid]**.
    * Salve o registro.
 
-* **Como posso descobrir se um dos meus IPs está em uma  lista de bloqueios? Como remover meus IPs de uma lista de bloqueios?**
+* **Como é possível descobrir se um dos IPs está incluído na lista de bloqueios? Como remover meus IPs de uma lista de bloqueios?**
 
-   Para verificar se seu endereço IP está em uma lista de bloqueios, você pode usar vários sites para verificá-lo, como:
-   * [Caixa de ferramentas MX](https://mxtoolbox.com/)
-   * [Qual é o meu endereço IP](https://whatismyipaddress.com)
+   É possível usar vários sites para verificar se o endereço IP está na lista de bloqueios, como:
+   * [MX Toolbox](https://mxtoolbox.com/)
+   * [Qual é meu endereço IP](https://whatismyipaddress.com)
 
-   Geralmente, o resultado da verificação de endereço IP retornará uma lista que contém detalhes da lista de bloqueios e também o nome do site que negou o endereço IP.
+   Geralmente, o resultado da verificação do endereço IP retorna uma lista que contém os detalhes da lista bloqueios e também o nome do site que colocou o endereço IP na lista.
 
-   Ao clicar no link correspondente, é possível acessar os detalhes do site. Em seguida, você pode solicitar que seu site seja excluído do site que adicionou o endereço IP à sua lista de bloqueios.
+   Ao clicar no link correspondente, é possível acessar os detalhes do site. É possível solicitar que seu site seja excluído da lista de bloqueios do site que incluiu o endereço IP à lista de bloqueios.
 
    >[!NOTE]
    >
