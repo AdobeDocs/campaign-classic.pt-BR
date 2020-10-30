@@ -11,9 +11,9 @@ audience: web
 content-type: reference
 topic-tags: editing-html-content
 discoiquuid: da66d640-8504-4dc7-bc4e-1c0ac1d37c37
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1236'
 ht-degree: 100%
 
@@ -142,6 +142,7 @@ Blocos de personalização e campos só podem ser inseridos em blocos de tipo de
 >* Nova janela (_blank)
 >* Janela atual (_self)
 >* Comportamento do navegador padrão
+
 >
 
 
@@ -207,8 +208,9 @@ As opções disponíveis são as seguintes:
 >[!NOTE]
 >
 >* Ícone **Delete**: exclui o bloco e todo o conteúdo.
->
->* Ícone **Duplicate**: duplica o bloco e todos os estilos relacionados ao bloco.
+   >
+   >
+* Ícone **Duplicate**: duplica o bloco e todos os estilos relacionados ao bloco.
 
 
 ## Gerenciamento de imagens e animações {#managing-images-and-animations}
