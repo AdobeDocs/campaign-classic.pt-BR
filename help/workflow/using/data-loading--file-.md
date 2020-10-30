@@ -9,11 +9,11 @@ audience: workflow
 content-type: reference
 topic-tags: action-activities
 discoiquuid: dcb5b8e8-be38-4d89-908d-f57c2413a9bc
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1051'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -38,7 +38,7 @@ Você pode definir um pré-processamento a ser executado durante a importação 
 
 ![](assets/preprocessing-dataloading.png)
 
-Para obter mais informações, consulte esta seção: [Descompactando ou descriptografando um arquivo antes do processamento](../../workflow/using/importing-data.md#unzipping-or-decrypting-a-file-before-processing).
+Para mais informações, consulte esta seção: [Descompactar ou descriptografar um arquivo antes do processamento](../../workflow/using/importing-data.md#unzipping-or-decrypting-a-file-before-processing).
 
 ## Definição do formato de arquivo {#defining-the-file-format}
 
