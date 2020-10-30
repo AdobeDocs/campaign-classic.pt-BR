@@ -15,7 +15,7 @@ translation-type: tm+mt
 source-git-commit: a0ab8794bdbdfbe627bf33580dc8991793447336
 workflow-type: tm+mt
 source-wordcount: '1985'
-ht-degree: 90%
+ht-degree: 100%
 
 ---
 
@@ -69,7 +69,7 @@ Para criar este aplicativo, execute as seguintes etapas:
 
    ![](assets/social_quick_start_2.png)
 
-1. Digite os links **[!UICONTROL Terms of service]** e **[!UICONTROL Privacy policy]** a serem exibidos na tela de solicitação de permissão do Facebook. Para obter mais informações, consulte: [Inserir os links dos Termos de serviço e da Política de privacidade](../../social/using/creating-a-facebook-application.md#entering-the-terms-of-service-and-privacy-policy-links).
+1. Digite os links **[!UICONTROL Terms of service]** e **[!UICONTROL Privacy policy]** que serão exibidos na tela de solicitação de permissão do Facebook. Para obter mais informações, consulte: [Inserir os links dos Termos de serviço e da Política de privacidade](../../social/using/creating-a-facebook-application.md#entering-the-terms-of-service-and-privacy-policy-links).
 
    ![](assets/social_quick_start_1.png)
 
@@ -101,9 +101,9 @@ Verifique se a guia do aplicativo **App01** é exibida em sua página do Faceboo
 >
 >Siga as etapas de configuração detalhadas em [Criação de um aplicativo do Facebook](../../social/using/creating-a-facebook-application.md).
 
-No exemplo 1, personalizamos a exibição da página do Facebook de acordo com o valor no campo **[!UICONTROL Fan of the page]**. It is also possible to process the **[!UICONTROL Application settings]** field. Esse campo permite recuperar dados contidos em um link gerado pelo Adobe Campaign, via Facebook.
+No exemplo 1, personalizamos a exibição da página do Facebook de acordo com o valor no campo **[!UICONTROL Fan of the page]**. Também é possível processar o campo **[!UICONTROL Application settings]**. Esse campo permite recuperar dados contidos em um link gerado pelo Adobe Campaign, via Facebook.
 
-Vejamos o exemplo de uma empresa que decide enviar uma campanha por email. No delivery, um link aponta para o aplicativo do Facebook. Esse link é personalizado graças ao parâmetro **[!UICONTROL app_data]** adicionado ao final do URL. O valor desse parâmetro pode ser um indicador que reflete a importância do cliente. In our example, the values of the **[!UICONTROL app_data]** parameter are **[!UICONTROL big]** (significant customer) and **[!UICONTROL small]** (less significant customer).
+Vejamos o exemplo de uma empresa que decide enviar uma campanha por email. No delivery, um link aponta para o aplicativo do Facebook. Esse link é personalizado graças ao parâmetro **[!UICONTROL app_data]** adicionado ao final do URL. O valor desse parâmetro pode ser um indicador que reflete a importância do cliente. Em nosso exemplo, os valores do parâmetro **[!UICONTROL app_data]** são **[!UICONTROL big]** (cliente importante) e **[!UICONTROL small]** (cliente menos importante).
 
 Depois de personalizado, o URL fica assim:
 
@@ -122,7 +122,7 @@ Se o usuário for um cliente menos importante (o valor do parâmetro **[!UICONTR
 
 Para recriar esse caso de uso, criamos uma aplicação web composta pelos seguintes elementos:
 
-* A **[!UICONTROL Test]** activity based on the **[!UICONTROL Application parameter]** field.
+* Uma atividade **[!UICONTROL Test]** com base no campo **[!UICONTROL Application parameter]**.
 * duas páginas que contêm as imagens a serem exibidas de acordo com o valor do campo **[!UICONTROL Application parameter]**.
 
 ![](assets/social_webapp_018.png)
@@ -160,19 +160,19 @@ Para construir esse caso de uso, criamos uma aplicação web composta pelos segu
 
 ### Atividade de teste {#test-activity}
 
-The **[!UICONTROL Test]** activity is based on the **[!UICONTROL ID]** and **[!UICONTROL Application parameters]** field.
+A atividade **[!UICONTROL Test]** é baseada na **[!UICONTROL ID]** e no campo **[!UICONTROL Application parameters]**.
 
 ![](assets/social_webapp_023.png)
 
 Ela é composta por três ramos:
 
 * **[!UICONTROL identifier (UID) is empty]** : o identificador só será encaminhado pelo Facebook se o usuário já tiver concordado em compartilhar suas informações. O primeiro ramo da atividade **[!UICONTROL Test]** permite disponibilizar o concurso somente para usuários que nunca entraram, ou seja, aqueles com uma ID vazia.
-* **[!UICONTROL application parameter equals 'thanks']** : para evitar um erro de exibição vinculado ao Facebook, a página final do aplicativo da Web aponta para o URL do aplicativo do Facebook ao qual o **[!UICONTROL app_data]** parâmetro é adicionado ao uso do **[!UICONTROL thanks]** valor (para obter mais informações, consulte: [Atividade](#end-activity)final). O segundo ramo permite descobrir se o usuário vem da atividade **[!UICONTROL End]** do primeiro ramo (e acabou de entrar no concurso) para exibir uma mensagem de agradecimento. Para obter mais informações sobre como usar parâmetros de URL adicionais, consulte: [Como encaminhar configurações para um aplicativo do Facebook?](#how-to-forward-settings-to-a-facebook-application-).
+* **[!UICONTROL application parameter equals 'thanks']** : para evitar um erro de exibição vinculado ao Facebook, a página final do aplicativo web aponta para o URL do aplicativo do Facebook ao qual o parâmetro **[!UICONTROL app_data]** é adicionado usando o valor **[!UICONTROL thanks]** (para obter mais informações, consulte: [Finalizar atividade](#end-activity)). O segundo ramo permite descobrir se o usuário vem da atividade **[!UICONTROL End]** do primeiro ramo (e acabou de entrar no concurso) para exibir uma mensagem de agradecimento. Para obter mais informações sobre como usar parâmetros de URL adicionais, consulte: [Como encaminhar configurações para um aplicativo do Facebook?](#how-to-forward-settings-to-a-facebook-application-).
 * **[!UICONTROL Default branch]** : se o usuário já tiver entrado no concurso (ID já inserida) em uma data anterior (parâmetro de aplicativo diferente de **[!UICONTROL thanks]**), exibiremos uma página informando que já estão participando.
 
 ### Página do concurso {#competition-page}
 
-To sidestep the display error linked to Facebook, you also need to select **[!UICONTROL Parent window]** or **[!UICONTROL In the top window]** in the **[!UICONTROL Window]** field of the competition page.
+Para contornar o erro de exibição vinculado ao Facebook, também é preciso selecionar **[!UICONTROL Parent window]** ou **[!UICONTROL In the top window]** no campo **[!UICONTROL Window]** da página do concorrente.
 
 ![](assets/social_webapp_028.png)
 
@@ -188,7 +188,7 @@ Se tiver inserido previamente a conta externa ao criar o aplicativo web (consult
 
 Selecione a fonte de dados a ser usada para o pré-carregamento:
 
-* **[!UICONTROL Marketing database]** : essa opção permite que você pré-carregue dados pelo banco de dados Adobe Campaign.
+* **[!UICONTROL Marketing database]** : esta opção permite pré-carregar dados pelo banco de dados do Adobe Campaign.
 * **[!UICONTROL Facebook]** : essa opção permite pré-carregar dados usando o Facebook.
 
 ![](assets/social_webapp_029.png)
@@ -209,19 +209,19 @@ Essa opção permite definir as informações de perfil do Facebook que serão c
 
 ![](assets/social_webapp_025.png)
 
-The **[!UICONTROL Database information]** option lets you collect the following data:
+A opção **[!UICONTROL Database information]** permite coletar os seguintes dados:
 
 * **[!UICONTROL External ID]**: ID do usuário
 * **[!UICONTROL Gender]**: gênero do usuário
 * **[!UICONTROL Verified]** : esse campo especifica se o usuário tem ou não uma conta verificada do Facebook.
 * **[!UICONTROL Full name]**: nome completo do usuário
-* **[!UICONTROL First name]**: nome do usuário
+* **[!UICONTROL First name]**: primeiro nome do usuário
 * **[!UICONTROL Last name]**: sobrenome do usuário
 * **[!UICONTROL Language]**: idioma do usuário
 
 Também é possível coletar a foto do perfil, a lista de amigos, o endereço de email, a data de nascimento, os interesses e o local, marcando as caixas apropriadas.
 
-Antes de clicar **[!UICONTROL Ok]**, marque a **[!UICONTROL I agree to comply with Facebook conditions of use]** caixa.
+Antes de clicar em **[!UICONTROL Ok]**, marque a caixa **[!UICONTROL I agree to comply with Facebook conditions of use]**.
 
 >[!NOTE]
 >
@@ -252,7 +252,7 @@ Se o perfil não existir no banco de dados e o endereço de email do usuário do
 
    >[!IMPORTANT]
    >
-   >Verifique se os campos da guia **[!UICONTROL Social networks]** foram inseridos corretamente no mapeamento do delivery. Delivery mappings are accessed via the **[!UICONTROL Administration > Campaign management > Target mappings]** node.
+   >Verifique se os campos da guia **[!UICONTROL Social networks]** foram inseridos corretamente no mapeamento do delivery. Os mapeamentos de delivery são acessados pelo nó **[!UICONTROL Administration > Campaign management > Target mappings]**.
 
 1. É possível selecionar uma pasta de pesquisa para a reconciliação e uma pasta de criação para novos perfis. Se os campos estiverem vazios, os perfis serão pesquisados e criados na pasta padrão do schema de mapeamento.
 
@@ -266,7 +266,7 @@ Em nosso exemplo, o valor usado é **thanks**.
 
 ### Tela de detalhes de um visitante {#details-screen-of-a-visitor}
 
-Assim como para os seguidores do Twitter (consulte: [Princípio operacional](../../social/using/publishing-on-twitter.md#operating-principle)), os perfis do Facebook recuperados são armazenados na tabela dos visitantes. To display the list of visitors, go to the **[!UICONTROL Profiles and Targets > Visitors]** node.
+Assim como para os seguidores do Twitter (consulte: [Princípio operacional](../../social/using/publishing-on-twitter.md#operating-principle)), os perfis do Facebook recuperados são armazenados na tabela dos visitantes. Para exibir a lista de visitantes, vá para o nó **[!UICONTROL Profiles and Targets > Visitors]**.
 
 Cada prospecto do Facebook que concorda em compartilhar suas informações de perfil é adicionado à lista de visitantes. Se a caixa **[!UICONTROL Friends]** estiver marcada na atividade **[!UICONTROL Pre-load]** (consulte: [Atividade de pré-carregamento](#pre-loading-activity)), os amigos também são adicionados.
 
@@ -284,7 +284,7 @@ Uma cruz vermelha significa que o visitante foi reconciliado com um recipient. V
 
 ![](assets/social_webapp_040.png)
 
-Vá para a janela detalhada de um destinatário para exibir o visitante correspondente, se for o caso. Select the **[!UICONTROL Others]** tab, then double-click the name of the visitor in the **[!UICONTROL Web identities]** section.
+Vá para a janela detalhada de um destinatário para exibir o visitante correspondente, se for o caso. Selecione a guia **[!UICONTROL Others]** e clique duas vezes no nome do visitante na seção **[!UICONTROL Web identities]**.
 
 ![](assets/social_webapp_041.png)
 
