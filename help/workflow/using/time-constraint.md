@@ -11,11 +11,11 @@ audience: workflow
 content-type: reference
 topic-tags: flow-control-activities
 discoiquuid: 798409af-b236-4bb5-ac0f-90f0a19db345
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '76'
-ht-degree: 77%
+ht-degree: 100%
 
 ---
 
@@ -26,7 +26,7 @@ A atividade de **Restrição de tempo** permite adiar a execução de uma tarefa
 
 Insira o rótulo para a atividade e especifique o período durante o qual a tarefa do workflow deve ser pausada.
 
-When the **[!UICONTROL Try again later if outside of execution period]** option is selected, it lets you re-start the task outside of the execution time frame. se desejar que a ação do workflow seja abandonada para sempre após sua suspensão, desmarque essa opção.
+Quando a opção **[!UICONTROL Try again later if outside of execution period]** estiver selecionada, ela permitirá reiniciar a tarefa fora do período de execução. se desejar que a ação do workflow seja abandonada para sempre após sua suspensão, desmarque essa opção.
 
 ![](assets/s_user_scheduled_wait.png)
 
