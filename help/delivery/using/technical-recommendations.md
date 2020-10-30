@@ -9,11 +9,11 @@ audience: delivery
 content-type: reference
 topic-tags: deliverability-management
 discoiquuid: fc95538b-b54d-44ec-81aa-f51b62982699
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 75cbb8d697a95f4cc07768e6cf3585e4e079e171
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2432'
-ht-degree: 94%
+ht-degree: 100%
 
 ---
 
@@ -93,7 +93,7 @@ O uso de DKIM requer alguns pré-requisitos:
 
 >[!IMPORTANT]
 >
->Para instalações hospedadas ou híbridas, se você atualizou para o [MTA aprimorado](https://helpx.adobe.com/campaign/kb/acc-campaign-enhanced-mta.html), a assinatura de autenticação de email do DKIM é feita pelo MTA aprimorado para todas as mensagens em todos os domínios.
+>Para instalações hospedadas ou híbridas, se você atualizou para o [MTA aprimorado](https://helpx.adobe.com/br/campaign/kb/acc-campaign-enhanced-mta.html), a assinatura de autenticação de email do DKIM é feita pelo MTA aprimorado para todas as mensagens em todos os domínios.
 
 ### DMARC {#dmarc}
 
@@ -135,7 +135,7 @@ Recommendations for defining an SPF record:
 
 ## Loop de comentários {#feedback-loop}
 
-Um loop de cometários funciona declarando no nível do ISP determinado endereço de email para um intervalo de endereços IP usados para enviar mensagens. O ISP enviará para esta caixa de entrada, de maneira semelhante ao que é feito para mensagens devolvidas, essas mensagens são relatadas por recipients como spam. A plataforma deve estar configurada para bloquear futuros deliveries para os usuários que reclamaram. É importante deixar de entrar em contato com eles, mesmo que não tenham usado o link de opt out adequado. É com base nestas queixas que um FSI acrescentará um endereço IP à sua lista de bloqueios. Dependendo do ISP, uma taxa de reclamações de cerca de 1% resultará no bloqueio de um endereço IP.
+Um loop de cometários funciona declarando no nível do ISP determinado endereço de email para um intervalo de endereços IP usados para enviar mensagens. O ISP enviará para esta caixa de entrada, de maneira semelhante ao que é feito para mensagens devolvidas, essas mensagens são relatadas por recipients como spam. A plataforma deve estar configurada para bloquear futuros deliveries para os usuários que reclamaram. É importante deixar de entrar em contato com eles, mesmo que não tenham usado o link de opt out adequado. É com base nessas reclamações que um ISP incluirá um endereço IP à lista de bloqueios. Dependendo do ISP, uma taxa de reclamação de cerca de 1% resultará no bloqueio de um endereço IP.
 
 No momento, um padrão está sendo projetado para definir o formato de mensagens de loop de comentários: o [ARF (Abuse Feedback Reporting Format)](https://tools.ietf.org/html/rfc6650).
 
@@ -168,7 +168,7 @@ Se você for forçado a usar um único endereço de loop de comentários para v�
    </serverConf>
    ```
 
-O serviço de Deliverability do Adobe Campaign gerencia sua subscrição para serviços de loop de comentários para os seguintes ISPs: AOL, BlueTime, Comcast, Cox, EarthLink, FastMail, Gmail, Hotmail, HostedEmail, Libero, Mail.ru, MailTrust, OpenSRS, QQ, RoadRunner, Synacor, Telenor, Terra, UnitedOnline, USA, XS4ALL, Yahoo, Yandex, Zoho.
+O serviço de Deliverability do Adobe Campaign gerencia sua subscrição para serviços de loop de comentários para os seguintes ISPs: AOL, BlueTie, Comcast, Cox, EarthLink, FastMail, Gmail, Hotmail, HostedEmail, Libero, Mail.ru, MailTrust, OpenSRS, QQ, RoadRunner, Synacor, Telenor, Terra, UnitedOnline, USA, XS4ALL, Yahoo, Yandex, Zoho.
 
 ## List-Unsubscribe {#list-unsubscribe}
 
@@ -251,11 +251,11 @@ A Adobe fornece uma estratégia de IP dedicada para cada cliente com um IP ampli
 
 ## Certificação IP {#ip-certification}
 
-A certificação IP é um programa de práticas recomendadas de envio que ajuda a garantir que os e-mails sejam recebidos sem serem bloqueados por filtros antisspam ou outros sistemas de bloqueio de e-mail.
+A certificação IP é um programa de práticas recomendadas de envio que ajuda a garantir que os emails sejam recebidos sem serem bloqueados por filtros anti-spam ou outros sistemas de bloqueio de email.
 
 Atualmente, dois provedores oferecem certificação IP: Return Path e Certified Senders Alliance.
 
-Os remetentes certificados são adicionados às lista de permissões de email usadas pelos provedores globais de caixa de correio e empresas de segurança de email. Essas  comerciais de lista de permissões baseiam-se em um sistema que permite que o remetente ignore filtros antisspam ou receba pontos incrementais à medida que ele entra no sistema.
+Os remetentes certificados são adicionados às listas de permissões de email usadas por provedores de caixa de correio global e empresas de segurança de email. As listas de permissões comerciais se baseiam em um sistema que permite que o remetente ignore os filtros anti-spam ou receba pontos incrementais ao entrarem no sistema.
 
 O programa [Return Path Certification](https://www.validity.com/products/returnpath/certification/) oferece vários benefícios, incluindo:
 
@@ -272,6 +272,6 @@ A certificação da [Certified Senders Alliance](https://certified-senders.org/c
 * Proteção contra os riscos legais e financeiros através do pleno cumprimento das normas legais
 * Proteção da reputação através de avisos antecipados do CSA Complaints Office e de relatórios diários de captura de spam
 
-Os ISPs são livres para usar esses serviços e o número de ISPs pode variar dependendo da lista de permissões.
+Os ISPs podem usar livremente esses serviços e o número de ISPs pode variar dependendo da lista de permissões.
 
 No entanto, como cada vez mais ISPs criam seus filtros anti-spam com base no comportamento de cada proprietário da caixa de entrada, em vez de analisar o conteúdo da mensagem propriamente dita, o uso da certificação IP não pode ser uma garantia de inserção da caixa de entrada ou até mesmo do delivery.
