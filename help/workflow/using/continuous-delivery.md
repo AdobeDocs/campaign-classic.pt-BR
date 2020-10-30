@@ -11,9 +11,9 @@ audience: workflow
 content-type: reference
 topic-tags: action-activities
 discoiquuid: 9d80be19-8dde-4278-ab5f-23f364fe422e
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '345'
 ht-degree: 100%
 
@@ -63,4 +63,4 @@ Um delivery contínuo criará um ÚNICO delivery. Logs do delivery (broadLog) e 
 
 Este vídeo mostra como configurar um delivery contínuo com um query incremental.
 
->[!VIDEO](https://video.tv.adobe.com/v/25039?quality=12)
+>[!VIDEO](https://video.tv.adobe.com/v/25039?quality=12&captions=por_br)
