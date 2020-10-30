@@ -11,11 +11,11 @@ audience: reporting
 content-type: reference
 topic-tags: accessing-built-in-reports
 discoiquuid: cc832666-ad18-49ce-afcc-f9169b683ae8
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 75cbb8d697a95f4cc07768e6cf3585e4e079e171
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2974'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
@@ -61,7 +61,7 @@ Este relatório é baseado na tabela **[!UICONTROL Consolidated tracking]** (nms
 
 **Detalhamento por tipo de erro**
 
-This report is based on the **[!UICONTROL Delivery and tracking statistics]** table (nms:deliveryLogStats).
+Este relatório é baseado na tabela **[!UICONTROL Delivery and tracking statistics]**(nms:deliveryLogStats).
 
 <table> 
  <thead> 
@@ -142,7 +142,7 @@ A segunda parte do relatório detalha a análise de mensagens com falha por dom�
 
 ## Navegadores {#browsers-1}
 
-This report is based on the **[!UICONTROL Internet Browser Statistics]** table (nms:userAgentsStats).
+Este relatório é baseado na tabela **[!UICONTROL Internet Browser Statistics]** (nms:userAgentsStats).
 
 **Estatísticas globais**
 
@@ -212,7 +212,7 @@ This report is based on the **[!UICONTROL Internet Browser Statistics]** table (
 
 ## Compartilhamento em redes sociais {#sharing-to-social-networks-1}
 
-This report is based on the **[!UICONTROL Delivery]** (nms:delivery), **[!UICONTROL Consolidated tracking]** (nms:trackingStats), and **[!UICONTROL Web tracking]** (nms:webTrackingLog) tables.
+Este relatório é baseado nas tabelas **[!UICONTROL Delivery]** (nms:delivery), **[!UICONTROL Consolidated tracking]** (nms:trackingStats) e **[!UICONTROL Web tracking]** (nms:webTrackingLog).
 
 <table> 
  <thead> 
@@ -349,7 +349,7 @@ This report is based on the **[!UICONTROL Delivery]** (nms:delivery), **[!UICONT
 
 ## Estatísticas de atividades de compartilhamento {#statistics-on-sharing-activities-1}
 
-This report is based on the **[!UICONTROL Delivery]** (nms:delivery), **[!UICONTROL Consolidated tracking]** (nms:trackingStats), and **[!UICONTROL Web tracking]** (nms:webTrackingLog) tables.
+Este relatório é baseado nas tabelas **[!UICONTROL Delivery]** (nms:delivery), **[!UICONTROL Consolidated tracking]** (nms:trackingStats) e **[!UICONTROL Web tracking]** (nms:webTrackingLog).
 
 <table> 
  <thead> 
@@ -384,7 +384,7 @@ This report is based on the **[!UICONTROL Delivery]** (nms:delivery), **[!UICONT
 
 ## Sistemas operacionais {#operating-systems-1}
 
-This report is based on the **[!UICONTROL Internet Browser Statistics]** table (nms:userAgentsStats).
+Este relatório é baseado na tabela **[!UICONTROL Internet Browser Statistics]** (nms:userAgentsStats).
 
 **Estatísticas globais**
 
@@ -501,7 +501,7 @@ Este relatório é baseado na tabela **[!UICONTROL Services]** (nms:service).
 
 ## Indicadores de rastreamento {#tracking-indicators-1}
 
-This report is based on the **[!UICONTROL Delivery and tracking statistics]** (nms:deliveryLogStats) and **[!UICONTROL Consolidated tracking]** (nms:trackingStats) tables.
+Este relatório é baseado nas tabelas **[!UICONTROL Delivery and tracking statistics]** (nms:deliveryLogStats) e **[!UICONTROL Consolidated tracking]** (nms:trackingStats).
 
 <table> 
  <thead> 
@@ -564,7 +564,7 @@ This report is based on the **[!UICONTROL Delivery and tracking statistics]** (n
   <tr> 
    <td> Reclamações<br /> </td> 
    <td> @complaints<br /> </td> 
-   <td> Count of messages with a status equal to "Failed" and a reason equal to "address on denylist".<br /> </td> 
+   <td> Contagem de mensagens com status igual a "Falha" e uma razão igual a "endereço incluído na lista de bloqueios".<br /> </td> 
    <td> Count(@status=2 e msg/@failureReason=8)<br /> </td> 
   </tr> 
   <tr> 
@@ -766,7 +766,7 @@ Este relatório é baseado na tabela **[!UICONTROL Delivery]** (nms:delivery).
   <tr> 
    <td> Mensagens rejeitadas pela regra<br /> </td> 
    <td> @reject<br /> </td> 
-   <td> Number of addresses ignored during the analysis in keeping with typology rules: address not specified, quarantined, on denylist, etc.<br /> </td> 
+   <td> Número de endereços ignorados durante a análise ao manter as regras de tipologia: endereço não especificado, em quarentena, incluído na lista de bloqueios, etc.<br /> </td> 
    <td> sum([properties/@reject])<br /> </td> 
   </tr> 
   <tr> 
@@ -839,7 +839,7 @@ Este relatório é baseado na tabela **[!UICONTROL Delivery]** (nms:delivery).
 
 ## Estatísticas de delivery {#delivery-statistics-1}
 
-This report is based on the **[!UICONTROL Delivery and tracking statistics]** table (nms:deliveryLogStats).
+Este relatório é baseado na tabela **[!UICONTROL Delivery and tracking statistics]**(nms:deliveryLogStats).
 
 <table> 
  <thead> 
@@ -925,7 +925,7 @@ O indicador **Enviado** (@sent), acessado pelo nó **Deliveries (nms:delivery) >
 
 ## Sincronização de indicadores {#indicator-synchronization}
 
-If you experience desynchronization or inconsistency for certain indicators, select the concerned delivery in the Adobe Campaign explorer, right-click and choose **[!UICONTROL Action>Recompute delivery and tracking indicators]**. Click **[!UICONTROL Next]**, then click **[!UICONTROL Finish]**.
+Se você enfrentar dessincronização ou inconsistência de determinados indicadores, selecione o delivery correspondente no navegador do Adobe Campaign, clique com o botão direito do mouse e escolha **[!UICONTROL Action>Recompute delivery and tracking indicators]**. Clique em **[!UICONTROL Next]** e depois em **[!UICONTROL Finish]**.
 
 ![](assets/s_ncs_user_recalculate_indicators.png)
 
