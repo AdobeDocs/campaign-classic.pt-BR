@@ -15,7 +15,7 @@ translation-type: tm+mt
 source-git-commit: d567cb7dbc55d9c124d1cc83b7a5a9e2dfb5ab61
 workflow-type: tm+mt
 source-wordcount: '491'
-ht-degree: 76%
+ht-degree: 81%
 
 ---
 
@@ -76,11 +76,11 @@ Suas contas externas estão configuradas.
 
 A **ID do Visitante – Recipient** é criada no Audience Manager. Esta é uma fonte de dados pronta para uso configurada por padrão para a ID do Visitante. Os segmentos criados a partir do Campaign farão parte dessa fonte de dados.
 
-To configure the **[!UICONTROL Recipient - Visitor ID]** data source:
+Para configurar a fonte de dados do **[!UICONTROL Recipient - Visitor ID]**:
 
-1. From the **[!UICONTROL Explorer]** node, select **[!UICONTROL Administration > Platform > AMC Data sources]**.
+1. No nó **[!UICONTROL Explorer]**, selecione **[!UICONTROL Administration > Platform > AMC Data sources]**.
 1. Selecione **[!UICONTROL Recipient - Visitor ID]**.
-1. Digite o **[!UICONTROL Data Source ID]** e **[!UICONTROL AAM Destination ID]** fornecido pelo Adobe.
+1. Digite o **[!UICONTROL Data Source ID]** e **[!UICONTROL AAM Destination ID]** fornecidos pela Adobe.
 
    ![](assets/aam_config_3.png)
 
@@ -92,6 +92,6 @@ Certifique-se de que o Servidor de Rastreamento do Campaign está registrado no 
 
 ## Etapa 4: configurar o Serviço de ID de visitante {#step-4--configure-the-visitor-id-service}
 
-Se o serviço de ID do visitante nunca foi configurado em suas propriedades da Web ou sites, consulte este [documento](https://docs.adobe.com/content/help/en/id-service/using/implementation/setup-aam-analytics.html) para saber como configurar o serviço ou este [vídeo](https://helpx.adobe.com/marketing-cloud/how-to/email-marketing.html#step-two).
+Se o serviço de ID do visitante nunca foi configurado em suas propriedades da Web ou sites, consulte este [documento](https://docs.adobe.com/content/help/pt-BR/id-service/using/implementation/setup-aam-analytics.html) para saber como configurar o serviço ou este [vídeo](https://helpx.adobe.com/marketing-cloud/how-to/email-marketing.html#step-two).
 
 Sua configuração e provisionamento estão finalizados, a integração agora pode ser usada para importar e exportar públicos ou segmentos.
