@@ -11,11 +11,11 @@ audience: delivery
 content-type: reference
 topic-tags: content-management
 discoiquuid: a4c62580-664d-47fe-87f5-cfe608b05e6f
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1178'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
@@ -69,11 +69,11 @@ Um schema de dados é um documento XML associado ao conteúdo. Ele descreve a es
 
 Para criar um schema de dados, siga as etapas abaixo:
 
-1. Open the Adobe Campaign Explorer and select the **[!UICONTROL Administration > Configuration > Data schemas]** node.
+1. Abra o navegador do Adobe Campaign e selecione o nó **[!UICONTROL Administration > Configuration > Data schemas]**.
 
    Clique no ícone **[!UICONTROL New]** localizado acima da lista de schemas de dados.
 
-1. Select the **[!UICONTROL Create a schema]** option for content management, then click **[!UICONTROL Next]**.
+1. Selecione a opção **[!UICONTROL Create a schema]** para gerenciamento de conteúdo e clique em **[!UICONTROL Next]**.
 
    ![](assets/s_ncs_content_create_schema.png)
 
@@ -181,7 +181,7 @@ A descrição de um formulário é um documento XML estruturado que está de aco
 
 Para criar um formulário de entrada para gestão de conteúdo, siga as etapas abaixo:
 
-1. Open the Adobe Campaign Explorer and select the **[!UICONTROL Administration > Configuration > Input forms]** node.
+1. Abra o navegador do Adobe Campaign e selecione o nó **[!UICONTROL Administration > Configuration > Input forms]**.
 
    Clique no ícone **[!UICONTROL New]** acima da lista de formulários.
 
@@ -231,7 +231,7 @@ Neste exemplo, queremos usar um template JavaScript para definir a construção 
 
 Para usar um template JavaScript no Adobe Campaign, siga as etapas abaixo:
 
-1. Open the Adobe Campaign Explorer and select the **[!UICONTROL Administration > Configuration > JavaScript Templates]** node.
+1. Abra o navegador do Adobe Campaign e selecione o nó **[!UICONTROL Administration > Configuration > JavaScript Templates]**.
 
    Clique no ícone **[!UICONTROL New]** acima da lista de templates.
 
@@ -364,7 +364,7 @@ A próxima etapa envolve criar um template de publicação de conteúdo para vin
 
 Neste exemplo, as etapas são as seguintes:
 
-1. Create a new publication template via the **[!UICONTROL Administration > Configuration > Publication templates]** node.
+1. Crie um novo template de publicação através do nó **[!UICONTROL Administration > Configuration > Publication templates]** .
 1. Insira um nome e um rótulo, depois selecione o schema e o formulário a ser usado.
 1. Em seguida, digite o nome do template e escolha o modo de renderização que deve ser aplicado. Este é um tipo de renderização **[!UICONTROL JavaScript]** baseado no template criado acima.
 
@@ -402,6 +402,6 @@ Para criar conteúdo diretamente nos deliveries, siga as etapas abaixo:
 
    ![](assets/s_ncs_content_in_delivery_edition_tab.png)
 
-1. Click the **[!UICONTROL HTML preview]** tab to view the rendering. Você precisa selecionar um recipient para testar a personalização.
+1. Clique na guia **[!UICONTROL HTML preview]** para exibir a renderização. Você precisa selecionar um recipient para testar a personalização.
 
    ![](assets/s_ncs_content_use_in_delivery_preview.png)
