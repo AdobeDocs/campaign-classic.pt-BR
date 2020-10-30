@@ -11,11 +11,11 @@ audience: workflow
 content-type: reference
 topic-tags: event-activities
 discoiquuid: fa9ae600-91fc-4aea-ae02-8ab9064947ac
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '102'
-ht-degree: 82%
+ht-degree: 100%
 
 ---
 
@@ -30,7 +30,7 @@ A atividade de **SMS de Entrada** permite baixar e processar mensagens de texto 
 
 A primeira guia da atividade de **SMS de Entrada** permite inserir os parâmetros de roteamento para mensagens SMS e inserir o script a ser executado no recebimento de cada mensagem. A segunda guia permite atribuir um cronograma à atividade e a terceira guia define as condições de expiração da atividade.
 
-1. **[!UICONTROL SMS routing]**: selecione a conta externa que será usada para recuperação do SMS. External accounts are configured via the **[!UICONTROL Administration > Platform > External accounts]** node of the tree.
+1. **[!UICONTROL SMS routing]**: selecione a conta externa que será usada para recuperação do SMS. As contas externas são configuradas no nó **[!UICONTROL Administration > Platform > External accounts]** da árvore.
 1. **[!UICONTROL Script]**
 1. **[!UICONTROL Schedule]**
 
@@ -38,4 +38,4 @@ A primeira guia da atividade de **SMS de Entrada** permite inserir os parâmetro
 
 1. **[!UICONTROL Expiration]**
 
-The **[!UICONTROL Script]**, **[!UICONTROL Schedule]** and **[!UICONTROL Expiry]** tabs are detailed in [Inbound Emails](../../workflow/using/inbound-emails.md).
+As guias **[!UICONTROL Script]**, **[!UICONTROL Schedule]** e **[!UICONTROL Expiry]** são detalhadas em [Emails de entrada](../../workflow/using/inbound-emails.md).
