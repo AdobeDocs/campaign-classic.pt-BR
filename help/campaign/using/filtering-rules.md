@@ -11,11 +11,11 @@ audience: campaign
 content-type: reference
 topic-tags: campaign-optimization
 discoiquuid: 0d50826e-2211-4c3b-8413-ca1453bba6c4
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 75cbb8d697a95f4cc07768e6cf3585e4e079e171
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '505'
-ht-degree: 89%
+ht-degree: 100%
 
 ---
 
@@ -44,7 +44,7 @@ Para definir esse filtro, aplique as seguintes etapas:
 
    ![](assets/campaign_opt_create_filter_03.png)
 
-1. Vincule essa regra a uma tipologis de campanha e salve-a.
+1. Vincule essa regra a uma tipologias de campanha e salve-a.
 
    ![](assets/campaign_opt_create_filter_04.png)
 
@@ -93,7 +93,7 @@ Você também poderá vincular regras de filtragem diretamente por meio desta gu
 
 Duas regras de filtragem estão disponíveis por padrão: **[!UICONTROL Exclude addresses]** ( **[!UICONTROL addressExclusions]** ) e **[!UICONTROL Exclude domains]** ( **[!UICONTROL domainExclusions]** ). Durante a análise de e-mail, essas regras comparam os endereços de e-mail do recipient com os endereços proibidos ou nomes de domínio contidos em uma lista de supressão global criptografada gerenciada na instância de entrega. Se houver algum positivo, a mensagem não será enviada para esse recipient.
 
-Isso evita ser adicionado à lista de bloqueios devido a atividades mal-intencionadas, especialmente o uso de uma armadilha. Por exemplo, se um Spamtrapping for usado para assinar por meio de um de seus formulários da Web, um email de confirmação será automaticamente enviado para esse Spamtrapping, o que resultará na adição automática do endereço à lista de bloqueios.
+Isso evita a inclusão na lista de bloqueios devido a atividades mal-intencionadas, especialmente o uso de um Spamtrap. Por exemplo, se um Spamtrap for usado para se inscrever em um dos seus formulários web, um email de confirmação será enviado automaticamente para esse Spamtrap e resultará na inclusão automática do endereço utilizado à lista de bloqueios.
 
 >[!NOTE]
 >
