@@ -11,11 +11,11 @@ audience: delivery
 content-type: reference
 topic-tags: sending-direct-mail
 discoiquuid: 443689f4-4c82-490f-ad96-22446f649a07
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '169'
-ht-degree: 88%
+ht-degree: 100%
 
 ---
 
@@ -26,11 +26,11 @@ ht-degree: 88%
 
 O nome do arquivo que contém os dados extraídos é definido no campo **[!UICONTROL File]**. O botão à direita do campo permite usar campos de personalização para criar o nome do arquivo.
 
-Por padrão, o arquivo de extração é criado e armazenado no servidor. Você pode salvá-lo em seu computador. To do this, check the **[!UICONTROL Download the generated file after the analysis of the delivery]**. Nesse caso, é necessário indicar o caminho de acesso para o diretório de armazenamento local, bem como o nome do arquivo.
+Por padrão, o arquivo de extração é criado e armazenado no servidor. Você pode salvá-lo em seu computador. Para fazer isso, marque a opção **[!UICONTROL Download the generated file after the analysis of the delivery]**. Nesse caso, é necessário indicar o caminho de acesso para o diretório de armazenamento local, bem como o nome do arquivo.
 
 ![](assets/s_ncs_user_mail_delivery_local_file.png)
 
-For a direct mail delivery, the content of the extraction is defined in **[!UICONTROL Edit the extraction file format...]** link.
+Para um delivery de correspondência direta, o conteúdo da extração é definido no link **[!UICONTROL Edit the extraction file format...]**.
 
 ![](assets/s_ncs_user_mail_delivery_format_link.png)
 
