@@ -11,11 +11,11 @@ audience: delivery
 content-type: reference
 topic-tags: using-seed-addresses
 discoiquuid: a104fcab-75e6-4d73-bc3d-88570de6df7f
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '454'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -80,7 +80,7 @@ Para que essa modificação do schema de dados possa ser visualizada no **Formul
 
    >[!NOTE]
    >
-   >For more information on the **[!UICONTROL Edit the dynamic condition...]** link, refer to [Use case: selecting seed addresses on criteria](../../delivery/using/use-case--selecting-seed-addresses-on-criteria.md).
+   >Para obter mais informações sobre o link **[!UICONTROL Edit the dynamic condition...]**, consulte o [Caso de uso: seleção de seed addresses em critérios](../../delivery/using/use-case--selecting-seed-addresses-on-criteria.md)
 
 1. Clique na guia **[!UICONTROL Preview]** e selecione um seed address para testar a personalização.
 
