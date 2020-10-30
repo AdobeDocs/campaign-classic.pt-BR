@@ -11,11 +11,11 @@ audience: web
 content-type: reference
 topic-tags: web-forms
 discoiquuid: 85bf3244-6896-43e7-96b8-84c45c282fec
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '707'
-ht-degree: 91%
+ht-degree: 100%
 
 ---
 
@@ -26,7 +26,7 @@ O formulário pode conter uma ou mais páginas. Ele é criado por meio de um dia
 
 ## Sobre a página anterior e a próxima página {#about-previous-page-and-next-page}
 
-For each page, you can delete the **[!UICONTROL Next]** or **[!UICONTROL Previous]** buttons. To do this, select the page concerned and select the option **[!UICONTROL Disable next page]** or **[!UICONTROL Disallow returning to the previous page]** .
+Para cada página, você pode excluir os botões **[!UICONTROL Next]** ou **[!UICONTROL Previous]**. Para fazer isso, selecione a página relevante e a opção **[!UICONTROL Disable next page]** ou **[!UICONTROL Disallow returning to the previous page]** .
 
 ![](assets/s_ncs_admin_survey_no_next_page.png)
 
@@ -66,7 +66,7 @@ No exemplo a seguir, queremos configurar um formulário web que, quando aprovado
 
    ![](assets/s_ncs_admin_survey_jump_sample2.png)
 
-1. Edit the **[!UICONTROL Jump]** object, select the **[!UICONTROL Stored in a variable]** option and select the **next** variable from the drop-down box.
+1. Edite o objeto **[!UICONTROL Jump]**, selecione a opção **[!UICONTROL Stored in a variable]** e selecione a variável **next** na caixa suspensa.
 
    ![](assets/s_ncs_admin_survey_jump_sample3.png)
 
@@ -106,7 +106,7 @@ No diagrama do formulário, insira uma caixa de teste para definir as condiçõe
 
 ![](assets/s_ncs_admin_survey_test_ex2.png)
 
-Select the **[!UICONTROL Activate the default branching]** option to add a transition for cases where none of the conditions is true. Essa opção é desnecessária se cada caso possível for coberto pelas condições definidas.
+Selecione a opção **[!UICONTROL Activate the default branching]** para adicionar uma transição para casos em que nenhuma das condições é verdadeira. Essa opção é desnecessária se cada caso possível for coberto pelas condições definidas.
 
 Em seguida, defina o sequenciamento de página quando uma ou outra das condições for verdadeira, por exemplo:
 
@@ -128,6 +128,6 @@ Para personalizar essa página, clique duas vezes em **[!UICONTROL End]** e insi
 
 ![](assets/s_ncs_admin_survey_end_page_edit.png)
 
-* Você pode copiar e colar conteúdo HTML existente. To do this, click **[!UICONTROL Display source code]** and insert the HTML code.
+* Você pode copiar e colar conteúdo HTML existente. Para fazer isso, clique em **[!UICONTROL Display source code]** e insira o código HTML.
 * Você pode usar uma URL externa; para fazer isso, selecione a opção correspondente e digite a URL da página a ser exibida.
 
