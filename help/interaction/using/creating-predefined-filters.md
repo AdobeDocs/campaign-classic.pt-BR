@@ -11,11 +11,11 @@ audience: interaction
 content-type: reference
 topic-tags: managing-environments
 discoiquuid: d47017a3-a342-4758-a700-b8e88aa724f2
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '115'
-ht-degree: 94%
+ht-degree: 100%
 
 ---
 
@@ -26,7 +26,7 @@ Filtros predefinidos permitem criar regras de qualificação para a população 
 
 Para criar um filtro, siga as seguintes etapas:
 
-1. Go to the **[!UICONTROL Administration]** folder and select **[!UICONTROL Pre-defined offer filters]**.
+1. Acesse a pasta **[!UICONTROL Administration]** e selecione **[!UICONTROL Pre-defined offer filters]**.
 
    ![](assets/offer_filter_create_005.png)
 
