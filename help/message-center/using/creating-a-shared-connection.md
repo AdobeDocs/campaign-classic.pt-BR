@@ -11,11 +11,11 @@ audience: message-center
 content-type: reference
 topic-tags: instance-configuration
 discoiquuid: 7f471ac1-cd6a-4371-977e-52d60ce8d968
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: fc014fe5fcadac680af31e86e258a4df7073e0bd
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1002'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -78,7 +78,7 @@ Para criar uma conta externa do tipo instância de execução, siga as etapas ab
 
    >[!NOTE]
    >
-   >Observe que ao usar FDA via HTTP, somente as instâncias de execução que usam um banco de dados PostgreSQL são compatíveis. Não há suporte para bancos de dados MSSQL ou Oracle.
+   >Observe que ao usar FDA em HTTP, somente as instâncias de execução usando um banco de dados PostgreSQL são compatíveis. Não há suporte para bancos de dados MSSQL ou Oracle.
 
    O segundo método é recomendado se a instância de controle tiver acesso direto ao banco de dados das instâncias de execução. Caso contrário, escolha o acesso do serviço Web. A conta FDA para especificar coincide com a conexão com os bancos de dados das várias instâncias de execução criadas na instância de controle.
 
