@@ -15,7 +15,7 @@ translation-type: tm+mt
 source-git-commit: 16985c1ddcd380cfc1ca4960b35bb5e78628f464
 workflow-type: tm+mt
 source-wordcount: '1576'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -152,7 +152,7 @@ As seguintes opções estão disponíveis:
 
       ![](assets/s_ncs_user_wizard_email02j.png)
 
-* **[!UICONTROL Exclude recipients who no longer want to be contacted]** , isto é, recipient cujos endereços de email estão em lista de bloqueios (&#39;opt out&#39;). Essa opção deve permanecer selecionada para observar a ética profissional de marketing digital e as leis que regem o comércio eletrônico.
+* **[!UICONTROL Exclude recipients who no longer want to be contacted]**, ou seja, recipients cujos endereços de email estão na lista de bloqueios (“opt out”). Essa opção deve permanecer selecionada para observar a ética profissional de marketing digital e as leis que regem o comércio eletrônico.
 * **[!UICONTROL Exclude quarantined recipients]**. Essa opção permite excluir do target qualquer perfil que não responda. É altamente recomendável manter essa opção selecionada.
 
    >[!NOTE]
