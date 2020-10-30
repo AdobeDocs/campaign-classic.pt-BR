@@ -11,11 +11,11 @@ audience: campaign
 content-type: reference
 topic-tags: distributed-marketing
 discoiquuid: 6d694f5c-1d1f-4686-b3bf-8697d919a0c8
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1132'
-ht-degree: 90%
+ht-degree: 100%
 
 ---
 
@@ -75,9 +75,9 @@ Consulte [Criar uma campanha local](../../campaign/using/creating-a-local-campai
 
 Uma campanha colaborativa é uma campanha cujo **cronograma de execução é definido** pela entidade central, que a entidade local pode usar. O conteúdo permanece o mesmo para cada entidade local, mas os custos são compartilhados. Para participarem, as entidades locais se inscrevem na campanha colaborativa.
 
-* **[!UICONTROL Collaborative campaign (by form)]**: recomendado para campanhas que envolvam até 300 entidades Locais. A entidade local pode inserir parâmetros predefinidos para definição de alvos e personalização de conteúdo em um formulário da Web. O formulário pode ser um formulário do Adobe Campaign ou um formulário externo (cliente extranet). Um administrador funcional pode definir e configurar o formulário com base em um template de formulário definido pelo integrador. Para solicitar a campanha, a entidade local precisa apenas de acesso à Web.
-* **[!UICONTROL Collaborative campaign (by campaign)]**: recomendado para campanhas destinadas a dezenas de entidades locais. Esse tipo de campanha cria campanhas filho para cada entidade local. Once the **[!UICONTROL collaborative campaign (by campaign)]** is approved by the central entity, the campaign is made available to the local entity, who can modify it. A execução é automaticamente sincronizada entre campanhas pai e filho. A entidade local deve ter acesso a uma instância para solicitar uma campanha e participar dela.
-* **[!UICONTROL Collaborative campaign (by target approval)]**: recomendado para campanhas com vários milhares de entidades Locais. A entidade local recebe uma lista de contatos que foi predefinida pela entidade central. A entidade local decide se mantém determinados contatos com base no conteúdo da campanha, por meio de um formulário da Web. As entidades locais são selecionadas da lista de contatos selecionados. Para participar da campanha, a entidade local só precisa de acesso à Web.
+* **[!UICONTROL Collaborative campaign (by form)]**: recomendado para campanhas que envolvam até 300 entidades locais. A entidade local pode inserir parâmetros predefinidos para definição de alvos e personalização de conteúdo em um formulário da Web. O formulário pode ser um formulário do Adobe Campaign ou um formulário externo (cliente extranet). Um administrador funcional pode definir e configurar o formulário com base em um template de formulário definido pelo integrador. Para solicitar a campanha, a entidade local precisa apenas de acesso à Web.
+* **[!UICONTROL Collaborative campaign (by campaign)]**: recomendado para campanhas destinadas a dezenas de entidades locais. Esse tipo de campanha cria campanhas filho para cada entidade local. Quando o **[!UICONTROL collaborative campaign (by campaign)]** é aprovado pela entidade central, a campanha é disponibilizada à entidade local, que pode modificá-la. A execução é automaticamente sincronizada entre campanhas pai e filho. A entidade local deve ter acesso a uma instância para solicitar uma campanha e participar dela.
+* **[!UICONTROL Collaborative campaign (by target approval)]**: recomendado para campanhas destinadas a milhares de entidades locais. A entidade local recebe uma lista de contatos que foi predefinida pela entidade central. A entidade local decide se mantém determinados contatos com base no conteúdo da campanha, por meio de um formulário da Web. As entidades locais são selecionadas da lista de contatos selecionados. Para participar da campanha, a entidade local só precisa de acesso à Web.
 * **[!UICONTROL Collaborative campaign (simple)]**: esse modo garante a compatibilidade com os processos de execução específicos das versões anteriores.
 
 Consulte [Criar uma campanha colaborativa](../../campaign/using/creating-a-collaborative-campaign.md)
@@ -106,19 +106,19 @@ Comece especificando os operadores de entidade centrais e locais pela pasta **[!
 
 É preciso criar operadores centrais e locais.
 
-Central operators must belong to the **[!UICONTROL Central management]** operator group or have the **[!UICONTROL CENTRAL]** named right.
+Os operadores centrais devem pertencer ao grupo de operadores **[!UICONTROL Central management]** ou ter o direito nomeado **[!UICONTROL CENTRAL]**.
 
-Local operators must belong to the **[!UICONTROL Local management]** operator group or have the **[!UICONTROL LOCAL]** named right. Eles também devem estar vinculados à sua entidade local.
+Os operadores locais devem pertencer ao grupo de operadores **[!UICONTROL Local management]** ou ter o direito nomeado **[!UICONTROL LOCAL]**. Eles também devem estar vinculados à sua entidade local.
 
 ![](assets/s_advuser_mkg_dist_local_create.png)
 
 ### Entidades organizacionais {#organizational-entities}
 
-To create an organizational entity, click the **[!UICONTROL Administration > Access management > Organizational entities]** node and click the **[!UICONTROL New]** icon above the list of entities.
+Para criar uma entidade organizacional, clique no nó **[!UICONTROL Administration > Access management > Organizational entities]** e clique no ícone **[!UICONTROL New]**, acima da lista de entidades.
 
 ![](assets/s_advuser_mkg_dist_local_list.png)
 
-Cada entidade organizacional contém informações de identificação (etiqueta, nome interno, informações de contato etc.) e grupos envolvidos no processo de aprovação de pedidos. These are defined in the **[!UICONTROL Notifications and approvals]** section found in the **[!UICONTROL General]** tab.
+Cada entidade organizacional contém informações de identificação (etiqueta, nome interno, informações de contato etc.) e grupos envolvidos no processo de aprovação de pedidos. Eles são definidos na seção **[!UICONTROL Notifications and approvals]** localizada na guia **[!UICONTROL General]**.
 
 * Definir um grupo de notificação de pacote: operadores neste grupo receberão uma notificação sempre que um novo pacote for adicionado à lista de pacites de campanha e cada vez que uma campanha estiver disponível.
 * Selecione o grupo de revisores responsáveis pela aprovação de pedidos, ou seja, aqueles responsáveis pela aprovação de campanhas solicitadas pela entidade local.
