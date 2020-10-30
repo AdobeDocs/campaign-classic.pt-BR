@@ -15,7 +15,7 @@ translation-type: tm+mt
 source-git-commit: 8fc3e793ec544948049fc122b44b6bffdebecba0
 workflow-type: tm+mt
 source-wordcount: '806'
-ht-degree: 94%
+ht-degree: 99%
 
 ---
 
@@ -26,7 +26,7 @@ ht-degree: 94%
 
 Para criar uma oferta, aplique as seguintes etapas:
 
-1. Go to the **[!UICONTROL Campaigns]** universe and click the **[!UICONTROL Offers]** link.
+1. Vá para o universo **[!UICONTROL Campaigns]** e clique no link **[!UICONTROL Offers]**.
 
    ![](assets/offer_create_001.png)
 
@@ -120,22 +120,22 @@ Para criar um peso em uma oferta, aplique as seguintes etapas:
 
 Quando a configuração for concluída, um resumo das regras de eligibilidade estará disponível no painel de ofertas.
 
-To view it, click the **[!UICONTROL Schedule and eligibility rules]** link.
+Para fazer isso, clique no link **[!UICONTROL Schedule and eligibility rules]**.
 
 ![](assets/offer_eligibility_create_005.png)
 
 ## Criação do conteúdo da oferta {#creating-the-offer-content}
 
-1. Click the **[!UICONTROL Edit]** tab, then click the **[!UICONTROL Content]** tab.
+1. Clique na guia **[!UICONTROL Edit]** e depois na guia **[!UICONTROL Content]**.
 
    ![](assets/offer_content_create_001.png)
 
 1. Preencha os vários campos do conteúdo da oferta.
 
    * **[!UICONTROL Title]** : especifique o título que quer que apareça em sua oferta. Aviso: não se refere ao rótulo da oferta, que é definido na guia **[!UICONTROL General]**.
-   * **[!UICONTROL Destination URL]** : especifique o URL da sua oferta. Para ser processado corretamente, ele deve começar com &quot;http://&quot; ou &quot;https://&quot;.
+   * **[!UICONTROL Destination URL]**: especifique o URL da sua oferta. Para ser processado corretamente, ele deve começar com &quot;http://&quot; ou &quot;https://&quot;.
    * **[!UICONTROL Image URL]**: especifique um URL ou um caminho de acesso para a imagem da sua oferta.
-   * **[!UICONTROL HTML content]** / **[!UICONTROL Text content]** : digite o corpo da sua oferta na guia desejada. Para gerar o rastreamento, o **[!UICONTROL HTML content]** deve ser composto de elementos HTML que podem ser colocados em um elemento de tipo `<div>`. Por exemplo, o resultado de um elemento `<table>` na página HTML será o seguinte:
+   * **[!UICONTROL HTML content]** / **[!UICONTROL Text content]** : digite o corpo da oferta na guia desejada. Para gerar o rastreamento, o **[!UICONTROL HTML content]** deve ser composto de elementos HTML que podem ser colocados em um elemento de tipo `<div>`. Por exemplo, o resultado de um elemento `<table>` na página HTML será o seguinte:
 
    ```
       <div> 
