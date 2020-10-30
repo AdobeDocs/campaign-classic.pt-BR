@@ -9,38 +9,38 @@ audience: reporting
 content-type: reference
 topic-tags: creating-new-reports
 discoiquuid: 0c264783-2775-4ec6-8d49-cd9a45a18d60
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 2a82493deada11cb22ef37d215b6eae8274ce890
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '621'
-ht-degree: 53%
+ht-degree: 100%
 
 ---
 
 
 # Recursos avançados{#advanced-functionalities}
 
-Como usuário técnico, além das propriedades [](../../reporting/using/properties-of-the-report.md)gerais, você pode aproveitar recursos avançados para configurar seus relatórios, como:
+Como usuário técnico, além das [propriedades gerais](../../reporting/using/properties-of-the-report.md), você pode aproveitar recursos avançados para configurar os relatórios, como:
 
-* Crie query complexos para processar dados em uma atividade **Script** . [Saiba mais](#script-activity)
+* Criar queries complexas para processar dados em uma atividade **Script**. [Saiba mais](#script-activity)
 
-* Adicione um script externo para ser executado no servidor ou no cliente. [Saiba mais](#external-script)
+* Adicionar um script externo para ser executado no servidor ou no cliente. [Saiba mais](#external-script)
 
-* Chame um relatório com uma atividade **de salto** . [Saiba mais](#calling-up-another-report)
+* Chamar um relatório com uma atividade **Jump**. [Saiba mais](#calling-up-another-report)
 
-* Adicione um parâmetro de URL a um relatório para torná-lo mais acessível. [Saiba mais](#calling-up-another-report)
+* Adicionar um parâmetro de URL a um relatório para torná-lo mais acessível. [Saiba mais](#calling-up-another-report)
 
-* Adicione variáveis a serem usadas no contexto do relatório. [Saiba mais](#adding-variables)
+* Adicionar variáveis que serão usadas no contexto do relatório. [Saiba mais](#adding-variables)
 
 ## Trabalhar com scripts {#adding-a-script}
 
 ### Scripts externos de referência {#external-script}
 
-Você pode fazer referência a códigos JavaScript que serão executados no lado do cliente e/ou do servidor quando a página do relatório for chamada.
+Você pode referenciar códigos JavaScript que serão executados pelo cliente e/ou pelo servidor quando a página do relatório for chamada.
 
 Para fazer isso:
 
-1. Edit the [report properties](../../reporting/using/properties-of-the-report.md) and click the **[!UICONTROL Scripts]**.
+1. Edite as [propriedades do relatório](../../reporting/using/properties-of-the-report.md) e clique em **[!UICONTROL Scripts]**.
 1. Clique em **[!UICONTROL Add]** e selecione o script que será referenciado.
 1. Em seguida, selecione o modo de execução.
 
@@ -48,11 +48,11 @@ Para fazer isso:
 
    ![](assets/reporting_custom_js.png)
 
-Para execução normal no lado do cliente, os scripts referenciados devem ser gravados em JavaScript e devem ser compatíveis com navegadores comuns. Para obter mais informações, consulte [esta seção](../../web/using/web-forms-answers.md).
+Para execução normal pelo cliente, os scripts referenciados devem ser escritos em JavaScript e precisam ser compatíveis com a maioria dos navegadores. Para obter mais informações, consulte [esta seção](../../web/using/web-forms-answers.md).
 
-### Adding a Script activity {#script-activity}
+### Adicionar uma atividade Script {#script-activity}
 
-Ao [projetar seu relatório](../../reporting/using/creating-a-new-report.md#modelizing-the-chart), use a **[!UICONTROL Script]** atividade para processar dados e criar facilmente query complexos que não habilitam o idioma SQL. Você pode inserir seu query diretamente na janela de script.
+Ao [projetar seu relatório](../../reporting/using/creating-a-new-report.md#modelizing-the-chart), use a atividade **[!UICONTROL Script]** para processar dados e criar facilmente queries complexos que não habilitam o idioma SQL. Você pode inserir seu query diretamente na janela de script.
 
 A guia **[!UICONTROL Texts]** permite definir cadeias de texto. Elas podem ser usadas com a seguinte sintaxe: **$(Identifier)**. Para obter mais informações sobre como usar textos, consulte [Adicionar um cabeçalho e um rodapé](../../reporting/using/element-layout.md#adding-a-header-and-a-footer).
 
@@ -66,11 +66,11 @@ Para criar um histórico do relatório, adicione a seguinte linha à sua query J
 if( ctx.@_historyId.toString().length == 0 )
 ```
 
-Caso contrário, somente os dados atuais serão exibidos.
+Caso contrário, os dados atuais serão exibidos.
 
 ## Adicionar um parâmetro de URL {#defining-additional-settings}
 
-The **[!UICONTROL Parameters]** tab of the [report properties](../../reporting/using/properties-of-the-report.md) lets you define additional settings for the report: these settings will be passed into the URL during the call up.
+A guia **[!UICONTROL Parameters]** das [propriedades do relatório](../../reporting/using/properties-of-the-report.md) permite definir configurações adicionais para o relatório: essas configurações serão repassadas para o URL durante a chamada.
 
 >[!CAUTION]
 >
@@ -114,11 +114,11 @@ Para exibir a definição de uma variável, selecione-a e clique no botão **[!U
 
 ## Caso de uso: usar variáveis e parâmetros em um relatório
 
-No exemplo de vídeo abaixo, você aprenderá a adicionar um parâmetro &quot;_type&quot; para criar visualizações diferentes de um relatório, com base no valor desse atributo.
+No exemplo do vídeo abaixo, você aprenderá a adicionar um parâmetro &quot;_type&quot; para criar diferentes visualizações de um relatório com base no valor desse atributo.
 
 ![](assets/do-not-localize/how-to-video.png) [Descubra este recurso no vídeo](https://helpx.adobe.com/campaign/classic/how-to/add-url-parameter-in-acv6.html?playlist=/ccx/v1/collection/product/campaign/classic/segment/business-practitioners/explevel/intermediate/applaunch/how-to-4/collection.ccx.js&amp;ref=helpx.adobe.com)
 
 
 ## Chamado de outro relatório {#calling-up-another-report}
 
-A **Jump** activity is like a transition without an arrow: it lets you go from one activity to another or access another report.
+Um **Jump** é como uma transição sem uma seta: permite ir de uma atividade para outra ou acessar outro relatório.
