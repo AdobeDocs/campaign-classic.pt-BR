@@ -11,11 +11,11 @@ audience: integrations
 content-type: reference
 topic-tags: asset-sharing
 discoiquuid: 3d01cc7e-5685-4101-bf4b-ef5f6e52b3c9
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '223'
-ht-degree: 77%
+ht-degree: 100%
 
 ---
 
@@ -28,11 +28,11 @@ Os ativos compartilhados da Adobe Experience Cloud podem ser usados em seus emai
 
    Se você usar ativos da biblioteca do Adobe Experience Manager Assets, use um template de delivery criado ao [configurar a integração](../../integrations/using/configuring-access-to-assets.md#integrating-with-aem-assets).
 
-   If you do not have this specific template, make sure that in the delivery **Properties**, the **[!UICONTROL Content editing mode]** (**[!UICONTROL Advanced]** tab) is set to **DCE** and that the AEM external account that you want to use for accessing your AEM Assets resource library is provided.
+   Se não tiver esse template específico, assegure-se de que nas **Propriedades** do delivery a **[!UICONTROL Content editing mode]** (guia **[!UICONTROL Advanced]**) esteja definida como **DCE** e que a conta externa do AEM usada para acessar a biblioteca de recursos do AEM Assets seja fornecida.
 
 1. Na janela de edição, selecione a opção para adicionar uma imagem:
 
-   * If you are using the [standard editing mode](../../delivery/using/defining-the-email-content.md#adding-images), select **[!UICONTROL Image]** > **[!UICONTROL Select a shared asset]**.
+   * Se estiver usando o [modo de edição padrão](../../delivery/using/defining-the-email-content.md#adding-images), selecione **[!UICONTROL Image]** > **[!UICONTROL Select a shared asset]**.
 
       ![](assets/dam_insert_image_standard.png)
 
