@@ -11,11 +11,11 @@ audience: delivery
 content-type: reference
 topic-tags: using-delivery-templates
 discoiquuid: 22e289d0-c33c-4daa-a893-b292e523f30b
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '277'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -24,7 +24,7 @@ ht-degree: 96%
 
 A configuração do delivery pode ser salva em um template de delivery para ser reutilizada. O template pode conter uma configuração completa ou parcial do delivery.
 
-O delivery de template pode ser executado manualmente, conforme descrito neste capítulo, ou de acordo com um evento (iniciado em um horário definido, na chegada de um arquivo etc.). Delivery templates can be configured via the **[!UICONTROL Resources > Templates > Delivery templates]** node in the tree.
+O delivery de template pode ser executado manualmente, conforme descrito neste capítulo, ou de acordo com um evento (iniciado em um horário definido, na chegada de um arquivo etc.). Os templates de deliveries podem ser configurados por meio do nó **[!UICONTROL Resources > Templates > Delivery templates]** na árvore.
 
 ![](assets/s_user_template_list.png)
 
