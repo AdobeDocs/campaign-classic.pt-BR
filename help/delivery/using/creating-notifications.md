@@ -99,7 +99,7 @@ Após enviar as mensagens, você pode monitorar e rastrear seus deliveries. Para
 
 * [Notificação por push em quarentena](../../delivery/using/understanding-quarantine-management.md#push-notification-quarantines)
 * [Monitorar um delivery](../../delivery/using/monitoring-a-delivery.md)
-* [Noções básicas sobre falhas de entrega](../../delivery/using/understanding-delivery-failures.md)
+* [Noções básicas sobre falhas de delivery](../../delivery/using/understanding-delivery-failures.md)
 
 ## Enviar notificações no Android {#sending-notifications-on-android}
 
@@ -142,4 +142,4 @@ Após enviar as mensagens, você pode monitorar e rastrear seus deliveries. Para
 
 * [Notificação por push em quarentena](../../delivery/using/understanding-quarantine-management.md#push-notification-quarantines)
 * [Monitorar um delivery](../../delivery/using/monitoring-a-delivery.md)
-* [Noções básicas sobre falhas de entrega](../../delivery/using/understanding-delivery-failures.md)
+* [Noções básicas sobre falhas de delivery](../../delivery/using/understanding-delivery-failures.md)
