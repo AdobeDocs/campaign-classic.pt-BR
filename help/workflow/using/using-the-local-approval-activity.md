@@ -11,11 +11,11 @@ audience: workflow
 content-type: reference
 topic-tags: use-cases
 discoiquuid: c143d8c3-c3ce-470c-8812-4b19cdb8afbf
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1274'
-ht-degree: 88%
+ht-degree: 100%
 
 ---
 
@@ -69,24 +69,24 @@ Para obter mais informações sobre como criar um template de distribuição de 
    ![](assets/local_validation_data_distribution_2.png)
 
 1. Insira o **[!UICONTROL Label]** e o **[!UICONTROL Distribution context]**. Neste exemplo, selecionamos o schema de direcionamento **[!UICONTROL Recipient]** e o campo **[!UICONTROL Email domain]** como um campo de distribuição. A lista de recipients será dividida por domínio.
-1. No campo **[!UICONTROL Distribution type]**, selecione como o valor de limitação de target será expresso na guia **[!UICONTROL Distribution]**. Here, we have chosen **[!UICONTROL Percentage]**.
+1. No campo **[!UICONTROL Distribution type]**, selecione como o valor de limitação de target será expresso na guia **[!UICONTROL Distribution]**. Aqui, escolhemos **[!UICONTROL Percentage]**.
 1. No campo **[!UICONTROL Approval storage]**, insira o schema de armazenamento das aprovações que correspondem ao schema de definição do target em uso. Aqui vamos usar o schema de armazenamento padrão: **[!UICONTROL Local approval of recipients]**.
-1. Then click the **[!UICONTROL Advanced parameters]** link.
+1. Depois clique no link **[!UICONTROL Advanced parameters]**.
 
    ![](assets/local_validation_data_distribution_3.png)
 
 1. Mantenha a opção **[!UICONTROL Approve the targeted messages]** selecionada de forma que todos os recipients sejam pré-selecionados da lista de recipients a serem aprovados.
 1. No campo **[!UICONTROL Delivery label]**, deixamos a expressão padrão (cálculo da cadeia de caracteres do delivery). O rótulo padrão do delivery será usado na notificação de feedback.
 1. Na seção **[!UICONTROL Grouping field]**, selecionamos o campo **[!UICONTROL Gender]** como um campo de agrupamento para exibir recipients nas notificações de aprovação e de feedback.
-1. In the **[!UICONTROL Edit targeted messages]** section, we&#39;ve selected the **[!UICONTROL Edit recipients]** web application and the **[!UICONTROL recipientId]** parameter. Nas notificações de aprovação e de feedback, os recipients serão clicáveis e apontarão para a URL da aplicação Web. O parâmetro de URL adicional será **[!UICONTROL recipientId]**.
-1. Then click the **[!UICONTROL Distribution]** tab. Para cada domínio, insira os seguintes campos:
+1. Na seção **[!UICONTROL Edit targeted messages]**, selecionamos o aplicativo web **[!UICONTROL Edit recipients]** e o parâmetro **[!UICONTROL recipientId]**. Nas notificações de aprovação e de feedback, os recipients serão clicáveis e apontarão para a URL da aplicação Web. O parâmetro de URL adicional será **[!UICONTROL recipientId]**.
+1. Depois, clique na guia **[!UICONTROL Distribution]**. Para cada domínio, insira os seguintes campos:
 
    ![](assets/local_validation_data_distribution_4.png)
 
    * **[!UICONTROL Value]**: insira o valor do nome de domínio.
    * **[!UICONTROL Percentage / Fixed]**: para cada domínio, insira o máximo. número de recipients para os quais você deseja enviar o delivery. Neste exemplo, queremos limitar o delivery a 10% por domínio.
    * **[!UICONTROL Label]**: digite o rótulo do domínio a ser exibido nas notificações de aprovação e de feedback.
-   * **[!UICONTROL Group or operator]**: selecione o operador ou grupo de operadores atribuído ao domínio.
+   * **[!UICONTROL Group or operator]**: selecione o operador ou grupo de operadores atribuídos ao domínio.
 
       >[!CAUTION]
       >
@@ -100,14 +100,14 @@ Para configurar esse caso de uso, criamos o seguinte workflow para construção 
 
 As seguintes atividades foram adicionadas:
 
-* Two **[!UICONTROL Query]** activities,
-* Uma **[!UICONTROL Intersection]** atividade,
-* Uma **[!UICONTROL Split]** atividade,
-* Uma **[!UICONTROL Local approval]** atividade,
-* Uma **[!UICONTROL Delivery]** atividade,
-* Uma **[!UICONTROL Wait]** atividade,
-* Uma segunda **[!UICONTROL Local approval]** atividade,
-* Uma **[!UICONTROL End]** atividade.
+* Duas atividades **[!UICONTROL Query]**,
+* Uma atividade **[!UICONTROL Intersection]**,
+* Uma atividade **[!UICONTROL Split]**,
+* Uma atividade **[!UICONTROL Local approval]**,
+* Uma atividade **[!UICONTROL Delivery]**,
+* Uma atividade **[!UICONTROL Wait]**,
+* Uma segunda atividade **[!UICONTROL Local approval]**,
+* Uma atividade **[!UICONTROL End]**.
 
 ### Queries, Intersecção e Split {#queries--intersection-and-split}
 
@@ -115,13 +115,13 @@ O target de upstream é composto de dois queries, uma intersecção e um Split. 
 
 Para obter mais informações sobre como configurar uma atividade Split, consulte [Split](../../workflow/using/split.md). A criação de um template de distribuição de dados é detalhada em [Limitação do número de registros do subconjunto por distribuição de dados](../../workflow/using/split.md#limiting-the-number-of-subset-records-per-data-distribution).
 
-If you do not want to limit the population from the query, you do not have to use the **[!UICONTROL Query]**, **[!UICONTROL Intersection]**, and **[!UICONTROL Split]** activities. Nesse caso, complete o template de distribuição de dados na primeira atividade **[!UICONTROL Local approval]**.
+Se não quiser limitar o público da query, não utilize as atividades **[!UICONTROL Query]**, **[!UICONTROL Intersection]** e **[!UICONTROL Split]**. Nesse caso, complete o template de distribuição de dados na primeira atividade **[!UICONTROL Local approval]**.
 
-1. Na **[!UICONTROL Record count limitation]** seção, selecione a **[!UICONTROL Limit the selected records]** opção e clique no **[!UICONTROL Edit]** link.
+1. Na seção **[!UICONTROL Record count limitation]**, selecione a opção **[!UICONTROL Limit the selected records]** e clique no link **[!UICONTROL Edit]**.
 
    ![](assets/local_validation_split_1.png)
 
-1. Select the **[!UICONTROL Keep only the first records after sorting]** option and click **[!UICONTROL Next]**.
+1. Selecione a opção **[!UICONTROL Keep only the first records after sorting]** e clique em **[!UICONTROL Next]**.
 
    ![](assets/local_validation_split_1bis.png)
 
@@ -147,8 +147,8 @@ Para obter mais informações sobre como configurar a atividade **[!UICONTROL Lo
 
 Os seguintes campos precisam ser inseridos:
 
-1. In the **[!UICONTROL Action to execute]** section, select the **[!UICONTROL Target approval notification]** option.
-1. In the **[!UICONTROL Distribution context]** section, select the **[!UICONTROL Specified in the transition]** option.
+1. Na seção **[!UICONTROL Action to execute]** selecione a opção **[!UICONTROL Target approval notification]**.
+1. Na seção **[!UICONTROL Distribution context]** selecione a opção **[!UICONTROL Specified in the transition]**.
 
    Se não quiser limitar o público-alvo, selecione a opção **[!UICONTROL Explicit]** e insira o template de distribuição criado anteriormente no campo **[!UICONTROL Data distribution]**.
 
@@ -161,7 +161,7 @@ O email de notificação enviado pela atividade **[!UICONTROL Local approval]** 
 
 ### Aguardar {#wait}
 
-A atividade de espera permite adiar o início da segunda atividade de aprovação local que enviará a notificação de feedback de delivery. In the **[!UICONTROL Duration]** field, we have entered the **[!UICONTROL 5d]** value (5 days). As ações executadas por recipients por cinco dias após o envio do delivery serão incluídas na notificação de feedback.
+A atividade de espera permite adiar o início da segunda atividade de aprovação local que enviará a notificação de feedback de delivery. No campo **[!UICONTROL Duration]**, inserimos o valor **[!UICONTROL 5d]** (5 dias). As ações executadas por recipients por cinco dias após o envio do delivery serão incluídas na notificação de feedback.
 
 ![](assets/local_validation_workflow_3.png)
 
@@ -173,8 +173,8 @@ A segunda atividade **[!UICONTROL Local approval]** permite enviar uma notifica�
 
 Os seguintes campos precisam ser inseridos.
 
-1. In the **[!UICONTROL Action to execute]** section, choose **[!UICONTROL Delivery feedback report]**.
-1. In the **[!UICONTROL Delivery]** section, choose **[!UICONTROL Specified in the transition]**.
+1. Na seção **[!UICONTROL Action to execute]**, selecione **[!UICONTROL Delivery feedback report]**.
+1. Na seção **[!UICONTROL Delivery]**, selecione **[!UICONTROL Specified in the transition]**.
 1. Na seção **[!UICONTROL Notification]**, selecione o template do delivery e o assunto a ser usado para o email de notificação.
 
 Quando o prazo configurado na atividade de espera é atingido, a segunda atividade do tipo **[!UICONTROL Local approval]** envia o email de notificação a seguir para cada supervisor local:
@@ -185,7 +185,7 @@ Quando o prazo configurado na atividade de espera é atingido, a segunda ativida
 
 Toda vez que a atividade de aprovação local começa, uma tarefa de aprovação é criada. O administrador pode controlar cada tarefa de aprovação.
 
-Go to the targeting workflow of your campaign and click the **[!UICONTROL Local approval tasks]** tab.
+Vá para o workflow para construção do target da sua campanha e clique na guia **[!UICONTROL Local approval tasks]**.
 
 ![](assets/local_validation_admin_1.png)
 
@@ -216,7 +216,7 @@ Selecione um log de aprovação e clique no botão **[!UICONTROL Detail]** para 
 Essa guia exibe as seguintes informações:
 
 * a tarefa de aprovação vinculada
-* the approval status (**[!UICONTROL Approved]** or **[!UICONTROL Pending]**)
+* o status de aprovação (**[!UICONTROL Approved]** ou **[!UICONTROL Pending]**)
 * o template de distribuição usado
 * o supervisor local que aprovou e a data de aprovação
 * o número de mensagens de target e aprovadas
