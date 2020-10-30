@@ -11,18 +11,18 @@ audience: delivery
 content-type: reference
 topic-tags: using-seed-addresses
 discoiquuid: fa8aab62-e182-4388-aa23-c255b0dbd42e
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '845'
-ht-degree: 83%
+ht-degree: 100%
 
 ---
 
 
 # Caso de uso: seleção de seed addresses com critérios{#use-case-selecting-seed-addresses-on-criteria}
 
-In the framework of a delivery or a campaign, the **[!UICONTROL Edit the dynamic condition...]** link lets you choose seed addresses based on specific selection criteria.
+Na estrutura de um delivery ou campanha, o link **[!UICONTROL Edit the dynamic condition...]** permite escolher seed addresses com base em critérios de seleção específicos.
 
 Nesse caso de uso, o site **Minha biblioteca online** gostaria de personalizar seus boletins informativos de acordo com as preferências de seus clientes.
 
@@ -51,12 +51,12 @@ Para criar um valor comum como no nosso exemplo (departamento de compras), prime
 
 Para obter mais detalhes sobre extensões de schema, consulte o [Guia de configuração](../../configuration/using/data-schemas.md).
 
-1. No **[!UICONTROL Administration > Configuration > Data schemas]** nó, clique no **[!UICONTROL New]** ícone.
-1. In the **[!UICONTROL Creation of a data schema]** window, select the **[!UICONTROL Extension of a schema]** option and click **[!UICONTROL Next]**.
+1. No nó **[!UICONTROL Administration > Configuration > Data schemas]**, clique no ícone **[!UICONTROL New]**.
+1. Na janela **[!UICONTROL Creation of a data schema]**, selecione a opção **[!UICONTROL Extension of a schema]** e clique em **[!UICONTROL Next]**.
 
    ![](assets/dlv_seeds_usecase_09.png)
 
-1. Select the **[!UICONTROL Seed addresses]** source schema, enter **doc** as the **[!UICONTROL Namespace]** and click **[!UICONTROL Ok]**.
+1. Selecione o schema de origem **[!UICONTROL Seed addresses]**, insira **doc** como o **[!UICONTROL Namespace]** e clique em **[!UICONTROL Ok]**.
 
    ![](assets/dlv_seeds_usecase_10.png)
 
@@ -74,7 +74,7 @@ Para obter mais detalhes sobre extensões de schema, consulte o [Guia de configu
 
    ![](assets/dlv_seeds_usecase_20.png)
 
-   Then copy the following lines and paste them under the **[!UICONTROL Seed to insert in the export files]** element.
+   Em seguida, copie as linhas a seguir e as cole no elemento **[!UICONTROL Seed to insert in the export files]**.
 
    ```
        <element aggregate="doc:seedMember:common">
@@ -83,10 +83,10 @@ Para obter mais detalhes sobre extensões de schema, consulte o [Guia de configu
 
    ![](assets/dlv_seeds_usecase_29.png)
 
-   In this case, you are specifying that a new enumeration named **[!UICONTROL Department]** has been created in the seed address table, and it is based on the standard **[!UICONTROL @company]** enumeration template (labeled under the name **Company** in the seed address form).
+   Nesse caso, você está especificando que uma nova lista discriminada chamada **[!UICONTROL Department]** foi criada na tabela de seed addresses e é baseada no template de enumeração **[!UICONTROL @company]** padrão (rotulada com o nome **Company** no formulário de seed address).
 
 1. Clique em **[!UICONTROL Save]**.
-1. In the **[!UICONTROL Tools > Advanced]** menu, select the **[!UICONTROL Update database structure]** option.
+1. Na seção **[!UICONTROL Tools > Advanced]** selecione a opção **[!UICONTROL Update database structure]**.
 
    ![](assets/dlv_seeds_usecase_12.png)
 
@@ -140,7 +140,7 @@ Consulte a seção [Atualização do formulário de entrada](#updating-the-input
 
 #### Atualização do formulário de entrada {#updating-the-input-form}
 
-1. In the **[!UICONTROL Administration > Configuration > Input forms]** node, find the seed addresses input form.
+1. No nó **[!UICONTROL Administration > Configuration > Input forms]**, localize o formulário de entrada dos seed addresses.
 
    ![](assets/dlv_seeds_usecase_19.png)
 
@@ -153,7 +153,7 @@ Consulte a seção [Atualização do formulário de entrada](#updating-the-input
    ![](assets/dlv_seeds_usecase_21.png)
 
 1. Salve as alterações.
-1. Abra um seed address. The **[!UICONTROL Department]** field appears in the **[!UICONTROL Recipient]** table.
+1. Abra um seed address. O campo **[!UICONTROL Department]** aparece na tabela **[!UICONTROL Recipient]**.
 
    ![](assets/dlv_seeds_usecase_22.png)
 
@@ -167,11 +167,11 @@ Agora você pode especificar a condição dinâmica dos seed addresses para o de
 
    ![](assets/dlv_seeds_usecase_01.png)
 
-1. Click the **[!UICONTROL To]** link then the **[!UICONTROL Seed addresses]** tab to access the **[!UICONTROL Edit the dynamic condition...]** link.
+1. Clique no link **[!UICONTROL To]** e depois na guia **[!UICONTROL Seed addresses]** para acessar o link **[!UICONTROL Edit the dynamic condition...]**.
 
    ![](assets/dlv_seeds_usecase_02.png)
 
-1. Selecione a expressão que permite escolher os seed addresses desejados. Here the user selects the **[!UICONTROL Department (@workField)]** expression.
+1. Selecione a expressão que permite escolher os seed addresses desejados. Aqui o usuário seleciona a expressão **[!UICONTROL Department (@workField)]**.
 
    ![](assets/dlv_seeds_usecase_03.png)
 
@@ -185,7 +185,7 @@ Agora você pode especificar a condição dinâmica dos seed addresses para o de
 
 1. Clique em **[!UICONTROL Ok]**.
 
-   The query is displayed in the **[!UICONTROL Select target]** window.
+   O query é exibido na janela **[!UICONTROL Select target]**.
 
    ![](assets/dlv_seeds_usecase_04.png)
 
