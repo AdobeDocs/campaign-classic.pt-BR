@@ -11,11 +11,11 @@ audience: web
 content-type: reference
 topic-tags: web-forms
 discoiquuid: 669635bd-868b-4550-b075-6294ccb71297
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '989'
-ht-degree: 92%
+ht-degree: 100%
 
 ---
 
@@ -34,7 +34,7 @@ O recurso de zoom permite editar o template selecionado.
 
 ![](assets/s_ncs_admin_survey_render_edit.png)
 
-É possível modificar ou substituir esses templates. To do this, click the **[!UICONTROL Page layout...]** link and personalize the information.
+É possível modificar ou substituir esses templates. Para fazer isso, clique no link **[!UICONTROL Page layout...]** e personalize as informações.
 
 ![](assets/s_ncs_admin_survey_render_edit_param.png)
 
@@ -47,7 +47,7 @@ A guia **[!UICONTROL Headers/Footers]** permite alterar as informações exibida
 
 ![](assets/s_ncs_admin_survey_render_edit_header.png)
 
-Each line of the **[!UICONTROL Page headers]** and **[!UICONTROL Page footers]** section corresponds to a line in the HTML page. Clique em **[!UICONTROL Add]** para criar uma nova linha.
+Cada linha da seção **[!UICONTROL Page headers]** e **[!UICONTROL Page footers]** corresponde a uma linha na página HTML. Clique em **[!UICONTROL Add]** para criar uma nova linha.
 
 Selecione uma linha existente e clique no botão **[!UICONTROL Detail]** para personalizá-la.
 
@@ -61,7 +61,7 @@ Os campos **[!UICONTROL Position]** permitem definir a posição dos elementos n
 
 >[!NOTE]
 >
->Rendering templates are stored in the **[!UICONTROL Administration > Configuration > Form rendering]** node.\
+>Os templates de renderização estão armazenados no nó **[!UICONTROL Administration > Configuration > Form rendering]**.\
 >Para obter mais informações, consulte [Personalização a partir de renderização](#customizing-form-rendering).
 
 ## Personalização da renderização do formulário {#customizing-form-rendering}
@@ -76,13 +76,13 @@ Para fazer isso, use a guia **[!UICONTROL Advanced]**.
 
 Ela permite que você defina as seguintes propriedades:
 
-* **[!UICONTROL Label position]**: consulte [Definição da posição dos rótulos](../../web/using/defining-web-forms-layout.md#defining-the-position-of-labels),
+* **[!UICONTROL Label position]**: consulte [Definição da posição de rótulos](../../web/using/defining-web-forms-layout.md#defining-the-position-of-labels),
 * **[!UICONTROL Label format]**: Quebra de texto ou quebra automática de linha,
-* **[!UICONTROL Number of cells]** : consulte [Posicionamento dos campos na página](../../web/using/defining-web-forms-layout.md#positioning-the-fields-on-the-page),
-* **[!UICONTROL Horizontal alignment]** (Esquerda, Direita, Centralizada) e **[!UICONTROL Vertical alignment]** (Alto, Baixo, Médio),
+* **[!UICONTROL Number of cells]** : consulte [Posicionamento de campos na página](../../web/using/defining-web-forms-layout.md#positioning-the-fields-on-the-page),
+* **[!UICONTROL Horizontal alignment]** (à esquerda, à direita, centralizado) e **[!UICONTROL Vertical alignment]** (em cima, embaixo, no meio),
 * **[!UICONTROL Width]** da zona: pode ser expresso como uma porcentagem ou em ems, pontos ou pixels (valor padrão),
 * **[!UICONTROL Length]** máximo: número máximo de caracteres permitidos (para controles do tipo texto, número e senha),
-* **[!UICONTROL Lines]**: número de linhas para uma zona de **[!UICONTROL Multi-line text]** tipo,
+* **[!UICONTROL Lines]**: número de linhas para uma zona de tipo **[!UICONTROL Multi-line text]**,
 * **[!UICONTROL Style inline]**: permite que você sobrecarregue a folha de estilos CSS com configurações adicionais. Esses são separados usando os caracteres **;** como mostrado no exemplo abaixo:
 
    ![](assets/s_ncs_admin_survey_advanced_tab_inline.png)
@@ -117,7 +117,7 @@ Se o usuário aprovar essa página sem ter inserido o campo, a seguinte mensagem
 
 ![](assets/s_ncs_admin_survey_required_default_msg.png)
 
-You can personalize this message by clicking the **[!UICONTROL Personalize this message]** link.
+Você pode personalizar esta mensagem clicando no link **[!UICONTROL Personalize this message]**.
 
 ![](assets/s_ncs_admin_survey_required_custom_msg.png)
 
@@ -183,7 +183,7 @@ Para importar um elemento para um formulário, siga as etapas abaixo:
    >
    >O ícone **[!UICONTROL Edit link]** à direita do nome do formulário de origem permite exibir o formulário web selecionado.
 
-1. Click **[!UICONTROL Ok]** to confirm insertion.
+1. Clique em **[!UICONTROL Ok]** para confirmar a inserção.
 
    ![](assets/s_ncs_admin_survey_import_block_rendering.png)
 
