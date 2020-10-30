@@ -1,6 +1,6 @@
 ---
 title: Introdução às atualizações
-description: Saiba mais sobre as atualizações de Campaign Classic
+description: Saiba mais sobre as atualizações do Campaign Classic
 page-status-flag: never-activated
 uuid: 269d590c-5a6d-40b9-a879-02f5033863fc
 contentOwner: sauviat
@@ -13,7 +13,7 @@ translation-type: tm+mt
 source-git-commit: 877ca2275c9338377da9e435e070c9911314fe51
 workflow-type: tm+mt
 source-wordcount: '428'
-ht-degree: 74%
+ht-degree: 75%
 
 ---
 
