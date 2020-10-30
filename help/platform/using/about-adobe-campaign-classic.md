@@ -15,7 +15,7 @@ translation-type: tm+mt
 source-git-commit: 84f14b7a8c4ed05b309109c76be8c8c7b7b52d83
 workflow-type: tm+mt
 source-wordcount: '899'
-ht-degree: 96%
+ht-degree: 98%
 
 ---
 
@@ -38,7 +38,7 @@ O ciclo de campanha de marketing do Adobe Campaign ilustra as principais áreas 
 
 ![](assets/d_ncs_user_emarketing.png)
 
-![](assets/do-not-localize/how-to-video.png) [Descubra os principais recursos e recursos no vídeo](https://docs.adobe.com/content/help/en/campaign-classic-learn/tutorials/getting-started/introduction-to-adobe-campaign-classic.html)
+![](assets/do-not-localize/how-to-video.png) [Descubra as principais características e recursos no vídeo](https://docs.adobe.com/content/help/pt-BR/campaign-classic-learn/tutorials/getting-started/introduction-to-adobe-campaign-classic.html)
 
 ### Perfil de cliente integrado {#integrated-customer-profile}
 
