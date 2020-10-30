@@ -11,11 +11,11 @@ audience: workflow
 content-type: reference
 topic-tags: action-activities
 discoiquuid: a223641e-93e1-42ef-bb6b-8e1a0f8f6a65
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '644'
-ht-degree: 89%
+ht-degree: 100%
 
 ---
 
@@ -32,7 +32,7 @@ Quando integrado em um workflow para construção do target, a atividade **[!UIC
 
 Para obter um exemplo da atividade **[!UICONTROL Local approval]** com um template de distribuição, consulte [Uso da atividade de aprovação local](../../workflow/using/using-the-local-approval-activity.md).
 
-Start by entering a label for the activity and the **[!UICONTROL Action to execute]** field:
+Comece inserindo um rótulo para a atividade e o campo **[!UICONTROL Action to execute]**:
 
 ![](assets/local_validation_1.png)
 
@@ -54,7 +54,7 @@ Os campos a serem inseridos no caso de uma notificação para aprovação de tar
 
 ![](assets/local_validation_3.png)
 
-* **[!UICONTROL Distribution context]**: selecione a **[!UICONTROL Specified in the transition]** opção se estiver usando uma atividade de **[!UICONTROL Split]** tipo para limitar a população direcionada. Nesse caso, o template de distribuição é inserido na atividade de Split. Se você não estiver limitando o público-alvo, selecione a opção **[!UICONTROL Explicit]** aqui e insira o template de distribuição no campo **[!UICONTROL Data distribution]**.
+* **[!UICONTROL Distribution context]**: selecione a opção **[!UICONTROL Specified in the transition]** se estiver usando uma atividade do tipo **[!UICONTROL Split]** para limitar o público-alvo. Nesse caso, o template de distribuição é inserido na atividade de Split. Se você não estiver limitando o público-alvo, selecione a opção **[!UICONTROL Explicit]** aqui e insira o template de distribuição no campo **[!UICONTROL Data distribution]**.
 
    Para obter mais informações sobre como criar um template de distribuição de dados, consulte [Limitação do número de registros de subconjunto por distribuição de dados](../../workflow/using/split.md#limiting-the-number-of-subset-records-per-data-distribution).
 
@@ -69,7 +69,7 @@ Os campos a serem inseridos no caso de uma notificação para aprovação de tar
 
       Você também pode adicionar um ou mais lembretes para informar aos supervisores locais que o prazo final está se aproximando. Para fazer isso, clique em **[!UICONTROL Add a reminder]**.
 
-* **[!UICONTROL Complementary set]**: a **[!UICONTROL Generate complement]** opção permite gerar um segundo conjunto que inclui todos os públicos alvos não aprovados.
+* **[!UICONTROL Complementary set]**: a opção **[!UICONTROL Generate complement]** permite gerar um segundo conjunto que inclui todos os targets não aprovados.
 
    >[!NOTE]
    >
@@ -85,7 +85,7 @@ No caso de um relatório de feedback de delivery, os seguintes campos devem ser 
 
 ![](assets/local_validation_workflow_4.png)
 
-* Select the **[!UICONTROL Specified in the transition]** option if the delivery was entered during a previous activity. Selecione **[!UICONTROL Explicit]** para especificar o delivery na atividade de aprovação local.
+* Selecione a opção **[!UICONTROL Specified in the transition]** se o delivery foi inserido durante uma atividade anterior. Selecione **[!UICONTROL Explicit]** para especificar o delivery na atividade de aprovação local.
 * Selecione o template de delivery e o objeto do email de notificação. Há um template padrão: **[!UICONTROL Local approval notification]**.
 
 ## Exemplo: Aprovação de um delivery de workflow {#example--approving-a-workflow-delivery}
@@ -108,7 +108,7 @@ Um operador pode aprovar um delivery de duas formas: usando a página da Web vin
 
 * Aprovação através do console
 
-   In the tree structure, the **[!UICONTROL Administration > Production > Objects created automatically > Approvals pending]** node contains the list of tasks to be approved by the operator currently connected. A lista deve exibir uma linha. Clique duas vezes na linha para responder. A janela a seguir é exibida:
+   Na estrutura de árvore, o nó **[!UICONTROL Administration > Production > Objects created automatically > Approvals pending]** contém a lista de tarefas a serem aprovadas pelo operador conectado atualmente. A lista deve exibir uma linha. Clique duas vezes na linha para responder. A janela a seguir é exibida:
 
 ![](assets/new-workflow-7.png)
 
