@@ -15,7 +15,7 @@ translation-type: tm+mt
 source-git-commit: a0ab8794bdbdfbe627bf33580dc8991793447336
 workflow-type: tm+mt
 source-wordcount: '1151'
-ht-degree: 92%
+ht-degree: 100%
 
 ---
 
@@ -33,7 +33,7 @@ As limitações a seguir são inerentes ao Facebook.
 
 ## Criação de delivery {#creating-the-delivery}
 
-Create a new delivery using the **[!UICONTROL Publish to a brand page]** delivery template.
+Crie um novo delivery usando o template do delivery **[!UICONTROL Publish to a brand page]**.
 
 ![](assets/social_facebook_delivery_001.png)
 
@@ -65,13 +65,13 @@ A guia **[!UICONTROL Target of the proofs]** permite definir a página do Facebo
 
 >[!NOTE]
 >
->If you are using the same Facebook test page for all deliveries, you can save the proof target in the **[!UICONTROL Publish to a brand page]** delivery template, which is accessed via the **[!UICONTROL Resources > Templates > Delivery templates]** node. O target de prova será inserido por padrão para cada novo delivery.
+>Se você estiver usando a mesma página de teste do Facebook para todos os deliveries, é possível salvar o target de prova no nó **[!UICONTROL Publish to a brand page]**, que é acessado pelo nó **[!UICONTROL Resources > Templates > Delivery templates]**. O target de prova será inserido por padrão para cada novo delivery.
 
 ## Definição do público {#defining-the-audience}
 
 Se você quiser usar segmentos locais para refinar o tipo de público autorizado a exibir a publicação, recomendamos que você crie uma página do Facebook por segmento (por exemplo: Adobe Campaign Paris, Adobe Campaign London, etc.).
 
-No entanto, também é possível usar os filtros de público usados pelo Facebook. A **[!UICONTROL Audience]** guia dos quatro filtros do **[!UICONTROL Select target window]** oferta:
+No entanto, também é possível usar os filtros de público usados pelo Facebook. A guia **[!UICONTROL Audience]** dos quatro filtros da oferta **[!UICONTROL Select target window]**:
 
 * **[!UICONTROL Country]**
 * **[!UICONTROL Regions]**
@@ -80,7 +80,7 @@ No entanto, também é possível usar os filtros de público usados pelo Faceboo
 
 >[!IMPORTANT]
 >
->Use essa opção com cuidado. Nos relatórios do delivery, o indicador **[!UICONTROL Number of fans]** não levará em conta esses filtros do Facebook.
+>Use essa função com cuidado. Nos relatórios do delivery, o indicador **[!UICONTROL Number of fans]** não levará em conta esses filtros do Facebook.
 >
 >O Facebook pode alterar a lista de filtros de público, bem como seus valores.
 
@@ -128,7 +128,7 @@ Insira os vários campos:
    >Se você quiser adicionar o campo **[!UICONTROL Link]** ao URL de um aplicativo do Facebook para promovê-lo, recomendamos que você o adapte aos critérios de exibição do smartphone:
    >
    >1. Selecione o aplicativo do Facebook [https://developers.facebook.com/apps](https://developers.facebook.com/apps) e selecione a guia **[!UICONTROL Settings > Basic]**.
-   >1. Enter the **[!UICONTROL Namespace]** field.
+   >1. Insira o campo **[!UICONTROL Namespace]**.
    >1. Digite o **[!UICONTROL Mobile Site URL]**: quando um usuário clica no link da publicação no smartphone, ele será automaticamente redirecionado pelo Facebook para o URL definido neste campo.
    >1. Crie a aplicação web para que a exibição do Facebook seja personalizada como função do dispositivo usado (smartphone ou PC).
    >1. Vá para o campo **[!UICONTROL Link]** da publicação por meio do console do Adobe Campaign e insira o URL do campo **[!UICONTROL Canvas page]**.
@@ -159,7 +159,7 @@ Insira os vários campos:
 
 1. No campo **[!UICONTROL Status]**, digite o texto que será exibido sob o nome da página.
 1. No campo **[!UICONTROL Name]**, informe o título da publicação.
-1. No campo **[!UICONTROL Video code]**, digite o código do vídeo do YouTube. Por exemplo, para o link &#39;https://www.youtube.com/watch?v=abc123456&#39;, o código de vídeo será &#39;abc123456&#39;.
+1. No campo **[!UICONTROL Video code]**, digite o código do vídeo do YouTube. Por exemplo, para o link “https://www.youtube.com/watch?v=abc123456”, o código do vídeo será “abc123456”.
 1. No campo **[!UICONTROL Caption]**, insira o texto que será exibido no fim da publicação.
 1. Vá para o campo **[!UICONTROL Description]** e insira o texto a ser exibido sob o título.
 
@@ -173,7 +173,7 @@ Esse tipo de conteúdo permite que você publique um álbum de fotos. Você pode
 
 Insira os vários campos:
 
-1. Start by entering the **[!UICONTROL Album name]**.
+1. Comece digitando o **[!UICONTROL Album name]**.
 1. Em seguida, insira a **[!UICONTROL Description]** a ser exibida acima das fotos.
 1. Para adicionar uma foto, clique no botão **[!UICONTROL Add]**, selecione a foto e clique em **[!UICONTROL Open]**.
 1. Uma legenda pode ser adicionada a cada foto.
@@ -185,7 +185,7 @@ Insira os vários campos:
 A guia **[!UICONTROL Preview]** permite visualizar a renderização da publicação.
 
 1. Clique na guia **[!UICONTROL Preview]**.
-1. Click the **[!UICONTROL Test personalization]** drop-down menu and select **[!UICONTROL Service]**.
+1. Clique no menu suspenso **[!UICONTROL Test personalization]** e selecione **[!UICONTROL Service]**.
 1. No campo **[!UICONTROL Folder]**, selecione a pasta de serviço que contém suas páginas do Facebook. Por padrão, as páginas são armazenadas na raiz da pasta de serviço do **[!UICONTROL Facebook]**.
 1. Selecione a página do Facebook na qual você deseja testar a visualização.
 
@@ -216,16 +216,16 @@ O delivery da prova é idêntico aos deliveries por email. Consulte [esta seçã
 ## Envio da mensagem {#sending-the-message}
 
 1. Depois que o conteúdo for aprovado, clique no botão **[!UICONTROL Send]**.
-1. Selecione **[!UICONTROL Deliver as soon as possible]** e clique no **[!UICONTROL Analyze]** botão.
+1. Selecione **[!UICONTROL Deliver as soon as possible]** e clique no botão **[!UICONTROL Analyze]**.
 
    >[!NOTE]
    >
-   >The **[!UICONTROL Postpone the delivery]** option lets you postpone delivery to a later date.
+   >A opção **[!UICONTROL Postpone the delivery]** permite adiar o delivery para uma data posterior.
 
    ![](assets/social_facebook_delivery_009.png)
 
 1. Quando a análise estiver concluída, verifique o resultado.
-1. Click **[!UICONTROL Confirm delivery]**, then click **[!UICONTROL Yes]**.
+1. Clique em **[!UICONTROL Confirm delivery]** e depois em **[!UICONTROL Yes]**.
 
    ![](assets/social_facebook_delivery_016.png)
 
