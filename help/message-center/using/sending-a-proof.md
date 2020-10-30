@@ -15,7 +15,7 @@ translation-type: tm+mt
 source-git-commit: 95dff2f3704e316e9ec9e454a8f3fb9835508ccd
 workflow-type: tm+mt
 source-wordcount: '143'
-ht-degree: 74%
+ht-degree: 79%
 
 ---
 
@@ -31,7 +31,7 @@ O envio de uma prova envolve o mesmo processo de delivery regular (para obter ma
 
 Para enviar a prova:
 
-1. Click the **[!UICONTROL Send a proof]** button in the delivery window.
+1. Clique no botão **[!UICONTROL Send a proof]** na janela do delivery.
 1. Analise o delivery.
 1. Corrija qualquer erro e confirme o delivery.
 
