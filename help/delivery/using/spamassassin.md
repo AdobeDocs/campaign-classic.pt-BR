@@ -9,11 +9,11 @@ audience: delivery
 content-type: reference
 topic-tags: deliverability-management
 discoiquuid: d41658ab-ee79-4a5c-a165-d94b81eb2b33
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: b447e316bed8e0e87d608679c147e6bd7b0815eb
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '255'
-ht-degree: 81%
+ht-degree: 100%
 
 ---
 
@@ -29,7 +29,7 @@ O SpamAssassin aproveita uma variedade de técnicas de detecção de spam, inclu
 * Detecção de spam com base em DNS e soma de verificação difusa
 * Filtragem Bayesiana
 * Programas externos
-* listas de bloqueios
+* Listas de bloqueios
 * Bancos de dados online
 
 >[!NOTE]
@@ -57,12 +57,12 @@ Para obter mais informações sobre criar e configurar um delivery, consulte [es
 
    ![](assets/s_tn_del_preview_spamassassin_ko.png)
 
-1. Click the **[!UICONTROL More...]** link next to the warning.
+1. Clique no link **[!UICONTROL More...]** próximo ao aviso.
 1. Selecione a guia **[!UICONTROL Anti-spam checking]**.
-1. Go to the **[!UICONTROL Points / Rule / Description]** section to view the reasons for this risk.
+1. Acesse a seção **[!UICONTROL Points / Rule / Description]** para exibir os motivos para esse risco.
 
    ![](assets/s_tn_del_msg_spamassassin_ko.png)
 
 >[!NOTE]
 >
->Each time you click the **[!UICONTROL Anti-spam checking]**, the SpamAssassin service is called and the message is analyzed again for anti-spam detection. Altere o conteúdo antes de executar a análise anti-spam novamente.
+>Sempre que você clicar no **[!UICONTROL Anti-spam checking]**, o serviço SpamAssassin será acionado e a mensagem será analisada novamente para detecção anti-spam. Altere o conteúdo antes de executar a análise anti-spam novamente.
