@@ -13,7 +13,7 @@ translation-type: tm+mt
 source-git-commit: cb96a238f4c8e413377ce6102b065b91badfe6db
 workflow-type: tm+mt
 source-wordcount: '539'
-ht-degree: 89%
+ht-degree: 91%
 
 ---
 
@@ -72,7 +72,7 @@ Você pode obter a lista de todos os sistemas e componentes compatíveis com o �
 
 Você pode acessar as notas de versão mais recentes do Campaign Classic [nesta página](https://docs.adobe.com/content/help/pt-BR/campaign-classic/using/release-notes/latest-release.html).
 
-## 9. What is the procedure for domain configuration? {#what-is-the-procedure-for-domain-delegation-}
+## 9. Qual é o procedimento para configuração de domínio? {#what-is-the-procedure-for-domain-delegation-}
 
 Um subdomínio é uma divisão do seu domínio que pode ser usada para isolar suas marcas ou vários tipos de tráfego (mensagens transacionais, informações de marketing etc.).
 A Adobe conta com o Domain Name System (DNS) para a entrega de emails. Ele permite que o cliente mantenha a imagem da marca usando um alias DNS com seus nomes de domínio. Do mesmo modo, permite que a Adobe implemente livremente todas as práticas recomendadas que permitem otimizar a capacidade de entrega durante o envio por email.
