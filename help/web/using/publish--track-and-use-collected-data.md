@@ -11,11 +11,11 @@ audience: web
 content-type: reference
 topic-tags: online-surveys
 discoiquuid: 434a4bda-0907-42a7-8a75-2db658bba046
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '844'
-ht-degree: 88%
+ht-degree: 100%
 
 ---
 
@@ -54,7 +54,7 @@ A origem é indicada na URL da pesquisa adicionando os seguintes caracteres:
 ?origin=xxx
 ```
 
-while the survey is being edited, its URL contains the parameter **[!UICONTROL __uuid]**, which indicates that it is in a test phase and not yet online. Ao acessar a pesquisa por meio dessa URL, os registros criados não são considerados no acompanhamento (relatórios). The origin is forced to the value **[!UICONTROL Adobe Campaign]**.
+enquanto a pesquisa está sendo editada, o URL contém o parâmetro **[!UICONTROL __uuid]**, indicando que está em uma fase de teste e ainda não online. Ao acessar a pesquisa por meio dessa URL, os registros criados não são considerados no acompanhamento (relatórios). A origem é forçada ao valor **[!UICONTROL Adobe Campaign]**.
 
 Para obter mais informações sobre os parâmetros da URL, consulte [esta página](../../web/using/defining-web-forms-properties.md#form-url-parameters).
 
@@ -66,7 +66,7 @@ A guia do painel permite acessar relatórios de pesquisa. Clique em um nome de r
 
 A estrutura da pesquisa é visível no relatório **[!UICONTROL Documentation]**.
 
-Two other reports on Web surveys are available in the **[!UICONTROL Reports]** tab of the surveys: **[!UICONTROL General]** and **[!UICONTROL Breakdown of responses]**.
+Dois outros relatórios sobre pesquisas na web estão disponíveis na guia **[!UICONTROL Reports]** das pesquisas: **[!UICONTROL General]** e **[!UICONTROL Breakdown of responses]**.
 
 * Geral
 
@@ -108,7 +108,7 @@ As respostas de uma pesquisa podem ser exportadas em um arquivo externo para ser
    * formatar os dados exportados,
    * selecionar o formato de codificação para as informações no arquivo.
 
-   If the survey you want to export contains several **[!UICONTROL Multi-line text]** or **[!UICONTROL HTML text]** fields, it has to be exported in **[!UICONTROL XML]** format. Para fazer isso, selecione este formato na lista suspensa do campo **[!UICONTROL Output format]**, conforme mostrado abaixo:
+   Se a pesquisa que você deseja exportar contiver vários campos **[!UICONTROL Multi-line text]** ou **[!UICONTROL HTML text]**, ela deve ser exportada no formato **[!UICONTROL XML]**. Para fazer isso, selecione este formato na lista suspensa do campo **[!UICONTROL Output format]**, conforme mostrado abaixo:
 
    ![](assets/s_ncs_admin_survey_logs_export_xml.png)
 
@@ -120,7 +120,7 @@ As respostas de uma pesquisa podem ser exportadas em um arquivo externo para ser
 
 ## Uso dos dados coletados {#using-the-collected-data}
 
-As informações coletadas por pesquisas online podem ser recuperadas dentro da estrutura de um workflow para construção do target. To do this, use the **[!UICONTROL Survey responses]** box.
+As informações coletadas por pesquisas online podem ser recuperadas dentro da estrutura de um workflow para construção do target. Para fazer isso, use a caixa **[!UICONTROL Survey responses]**.
 
 No exemplo a seguir, queremos fazer uma oferta da Web especialmente para os cinco recipients com pelo menos duas crianças e com as pontuações mais altas em uma pesquisa online. As respostas para essa pesquisa são:
 
@@ -132,7 +132,7 @@ No workflow para construção do target, as **[!UICONTROL Survey responses]** se
 
 Comece selecionando a pesquisa relacionada e os dados a serem extraídos na seção central da janela. Nesse caso, precisamos extrair pelo menos a coluna de pontuação, pois ela será usada na caixa de divisão para recuperar as cinco pontuações mais altas.
 
-Indicate the filtering conditions for answers by clicking the **[!UICONTROL Edit query...]** link.
+Indique as condições de filtragem para respostas clicando no link **[!UICONTROL Edit query...]**.
 
 ![](assets/s_ncs_admin_survey_responses_wf_box_2.png)
 
@@ -152,11 +152,11 @@ Edite a caixa de divisão para configurá-la:
 
    ![](assets/s_ncs_admin_survey_responses_wf_box_6b.png)
 
-* Go to the **[!UICONTROL Sub-sets]** tab and select the **[!UICONTROL Limit the selected records]** option, then click the **[!UICONTROL Edit...]** link.
+* Acesse a guia **[!UICONTROL Sub-sets]** e selecione a opção **[!UICONTROL Limit the selected records]**; depois, clique no link **[!UICONTROL Edit...]**.
 
    ![](assets/s_ncs_admin_survey_responses_wf_box_7.png)
 
-* Select the **[!UICONTROL Keep only the first records after sorting]** option and select the sort column. Marque a opção **[!UICONTROL Descending sort]**.
+* Selecione a opção **[!UICONTROL Keep only the first records after sorting]** e selecione a coluna de classificação. Marque a opção **[!UICONTROL Descending sort]**.
 
    ![](assets/s_ncs_admin_survey_responses_wf_box_8.png)
 
