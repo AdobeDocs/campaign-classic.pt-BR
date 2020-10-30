@@ -11,11 +11,11 @@ audience: web
 content-type: reference
 topic-tags: web-forms
 discoiquuid: cfa22577-0b9e-4eee-900d-214b81256d81
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 3e1896ac4ccd1099bd50e279762c2fbff5cd8eba
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '960'
-ht-degree: 91%
+ht-degree: 100%
 
 ---
 
@@ -51,7 +51,7 @@ As mensagens de confirmação são enviadas por um template do delivery dedicado
 
    ![](assets/s_ncs_admin_survey_double-opt-in_sample_1d.png)
 
-1. Como os recipient desse delivery não confirmaram sua aprovação, eles ainda estão na lista de bloqueios do banco de dados. Para que eles recebam essa comunicação, é necessário autorizar delivery baseados neste modelo para públicos alvos em lista de bloqueios.
+1. Como os recipients desse delivery não confirmaram sua aprovação, eles ainda estão incluídos na lista de bloqueios do banco de dados. Para que eles recebam essa comunicação, você precisa autorizar os deliveries com base nesse template a fim de direcionar recipients incluídos na lista de bloqueios.
 
    Para fazer isso, clique na guia **[!UICONTROL Exclusions]**.
 
@@ -109,7 +109,7 @@ Para fazer isso, siga as etapas abaixo:
 
    ![](assets/s_ncs_admin_survey_double-opt-in_sample_6f.png)
 
-   The first **[!UICONTROL Script]** activity will add recipients on denylist until they confirmed their subscription to the newsletter. Seu conteúdo deve ser o seguinte:
+   A primeira atividade **[!UICONTROL Script]** incluirá os recipients na lista de bloqueios até que eles confirmem a assinatura do boletim informativo. Seu conteúdo deve ser o seguinte:
 
    ```
    ctx.recipient.@blackList=1
@@ -172,7 +172,7 @@ A subscrição no boletim informativo envolve as seguintes etapas:
 
    ![](assets/s_ncs_admin_survey_double-opt-in_sample_8d.png)
 
-   The user is added to the Adobe Campaign database in the **[!UICONTROL Temp]** folder, and their profile is on denylist until they confirm their subscription with the email.
+   O usuário é adicionado ao banco de dados do Adobe Campaign na pasta **[!UICONTROL Temp]** e seu perfil é incluído na lista de bloqueios até que ele confirme sua assinatura com o email.
 
    ![](assets/s_ncs_admin_survey_double-opt-in_sample_8f.png)
 
@@ -186,8 +186,8 @@ A subscrição no boletim informativo envolve as seguintes etapas:
 
    No Adobe Campaign, o perfil do usuário é atualizado:
 
-   * já não se encontram em lista de bloqueios,
-   * eles estão subscritos no serviço de informação.
+   * não estão mais na lista de bloqueios,
+   * eles estão inscritos no serviço de informação.
 
       ![](assets/s_ncs_admin_survey_double-opt-in_sample_9.png)
 
