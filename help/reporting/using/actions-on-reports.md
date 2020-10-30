@@ -11,11 +11,11 @@ audience: reporting
 content-type: reference
 topic-tags: creating-new-reports
 discoiquuid: 3b9c138e-8f7f-4ee1-9baa-328848d01d3a
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '549'
-ht-degree: 94%
+ht-degree: 100%
 
 ---
 
@@ -42,7 +42,7 @@ Quando um relatório contém várias páginas, é preciso repetir a operação p
 
 Acesse as opções de exportação por meio das atividades **[!UICONTROL Page]** do relatório, na guia **[!UICONTROL Advanced]**.
 
-Change the settings of **[!UICONTROL Paper]** and **[!UICONTROL Margins]** to suit your needs. Também é possível autorizar a exportação de uma página somente em formato PDF. To do this, uncheck the **[!UICONTROL Activate OpenOffice/Microsoft Excel export]** option.
+Altere as configurações de **[!UICONTROL Paper]** e **[!UICONTROL Margins]** para atender às suas necessidades. Também é possível autorizar a exportação de uma página somente em formato PDF. Para fazer isso, desmarque a opção **[!UICONTROL Activate OpenOffice/Microsoft Excel export]**.
 
 ![](assets/s_ncs_advuser_report_wizard_021.png)
 
@@ -93,7 +93,7 @@ Para saber mais sobre o serviço **nlserver**, consulte [esta seção](../../pro
 
 É possível imprimir seu relatório: para fazer isso, clique no ícone da impressora: isso abre a caixa de diálogo.
 
-For a better result, edit the Internet Explorer printing options and select **[!UICONTROL Print background colors and images]**.
+Para obter um resultado melhor, edite as opções de impressão do Internet Explorer e selecione **[!UICONTROL Print background colors and images]**.
 
 ![](assets/s_ncs_advuser_report_print_options.png)
 
