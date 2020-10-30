@@ -11,11 +11,11 @@ audience: workflow
 content-type: reference
 topic-tags: action-activities
 discoiquuid: 94178104-f8ba-4c17-8ff9-928c5d2df1b7
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '253'
-ht-degree: 92%
+ht-degree: 100%
 
 ---
 
@@ -46,7 +46,7 @@ A operação é como descrita a seguir:
 
    ![](assets/soap_load_001.png)
 
-   If you wish to update the example, select **[!UICONTROL Re-analyze the example]**.
+   Se desejar atualizar o exemplo, selecione **[!UICONTROL Re-analyze the example]**.
 
    Você também pode personalizar o formato dos dados da coluna por meio do link **[!UICONTROL Advanced parameters]**. Para obter mais informações sobre a formatação de dados importados, consulte esta [seção](../../platform/using/importing-data.md#import-wizard).
 
