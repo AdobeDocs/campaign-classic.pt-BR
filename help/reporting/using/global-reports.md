@@ -11,11 +11,11 @@ audience: reporting
 content-type: reference
 topic-tags: accessing-built-in-reports
 discoiquuid: cc832666-ad18-49ce-afcc-f9169b683ae8
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2185'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -308,4 +308,4 @@ O número de aberturas corresponde ao número total de mensagens abertas. Os ema
 
 >[!NOTE]
 >
->Os nomes do navegador e do sistema operacional fazem parte das informações enviadas pelo agente de usuário do navegador ao qual a mensagem foi aberta. O Adobe Campaign deduz o tipo de dispositivo usando as informações do dispositivo.
+>Os nomes do navegador e do sistema operacional fazem parte das informações enviadas pelo agente do usuário do navegador em que a mensagem foi aberta. O Adobe Campaign deduz o tipo de dispositivo usando as informações do dispositivo.
