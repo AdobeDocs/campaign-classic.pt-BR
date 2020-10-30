@@ -1,6 +1,6 @@
 ---
 title: Matriz de compatibilidade
-description: Matriz de compatibilidade de Campaign Classic
+description: Matriz de compatibilidade do Campaign Classic
 page-status-flag: never-activated
 uuid: 269d590c-5a6d-40b9-a879-02f5033863fc
 contentOwner: sauviat
@@ -13,7 +13,7 @@ translation-type: tm+mt
 source-git-commit: 9cff35424b389d0cc6adb8ce0ec81d3258ffb6ba
 workflow-type: tm+mt
 source-wordcount: '549'
-ht-degree: 86%
+ht-degree: 87%
 
 ---
 
@@ -137,7 +137,7 @@ Para saber mais sobre itens obsoletos, visite [esta página](../../rn/using/depr
 <p>19c</p>
 <p>18c</p>
 <p>12c</p>
-<p>11g    R2</p>
+<p>11g     R2</p>
 </td>
 </tr>
 <tr>
@@ -221,7 +221,7 @@ Para saber mais sobre itens obsoletos, visite [esta página](../../rn/using/depr
 <td>
 <p>18c</p>
 <p>12c</p>
-<p>11g   </p>
+<p>11g    </p>
 </td>
 </tr>
 <tr>
