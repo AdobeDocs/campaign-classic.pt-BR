@@ -9,11 +9,11 @@ audience: platform
 content-type: reference
 topic-tags: importing-and-exporting-data
 discoiquuid: f449ccd5-3965-4ab8-b5a9-993f3260aba9
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 75cbb8d697a95f4cc07768e6cf3585e4e079e171
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '992'
-ht-degree: 91%
+ht-degree: 100%
 
 ---
 
@@ -45,7 +45,7 @@ Para evitar esses problemas, a Adobe recomenda seguir as práticas recomendadas 
 * Ocasionalmente, conecte-se no SFTP para verificar diretamente o que encontra-se lá.
 * Lembre-se de que o gerenciamento de disco SFTP é predominantemente sua responsabilidade.
 * Por padrão, todas as pastas criadas estão em modo de leitura/gravação somente para o seu identificador. Ao criar pastas que precisam ser acessadas pelo Campaign, certifique-se de configurá-las com direitos de leitura/gravação para todo o grupo. Caso contrário, os workflows podem não ser capazes de criar/excluir arquivos como são executados em um identificador diferente no mesmo grupo por motivos de segurança.
-* Os IPs públicos dos quais você está tentando iniciar a conexão SFTP devem ser adicionados à lista de permissões na instância da Campanha. Adding IP addresses to the allowlist can be requested via a [support ticket](https://support.neolane.net).
+* Os IPs públicos a partir dos quais você está tentando iniciar a conexão SFTP devem ser adicionados à lista de permissões na instância do Campaign. A adição de endereços IP na lista de permissões pode ser solicitada por meio de um [tíquete de suporte](https://support.neolane.net).
 
 >[!CAUTION]
 >
@@ -87,7 +87,7 @@ A seção abaixo lista as informações para verificar e fornecer ao suporte da 
 
    Se a porta não for aberta, certifique-se de abrir as conexões de saída em seu lado e tente novamente. Se ainda houver problemas de conexão, compartilhe o resultado do comando com o suporte da Adobe.
 
-1. Verifique se o IP público a partir do qual você está tentando iniciar a conexão SFTP é aquele que você forneceu ao Suporte ao Adobe para a lista de permissões.
+1. Verifique se o IP público a partir do qual você está tentando iniciar a conexão do SFTP foi o informado ao suporte da Adobe para ser incluído na lista de permissões.
 1. Se você usa uma autenticação baseada em senha, a senha pode ter expirado (as senhas têm um período de validade de 90 dias). Portanto, recomendamos usar uma autenticação baseada em chave (consulte [Práticas recomendadas para o servidor SFTP](#sftp-server-best-practices)).
 1. Se você estiver usando uma autenticação baseada em chave, verifique se a chave usada é a mesma fornecida ao suporte da Adobe para a configuração de instância.
 1. Se você estiver usando FileZilla ou uma ferramenta de FTP equivalente, forneça os detalhes dos logs de conexão no ticket de suporte.
@@ -129,7 +129,7 @@ Esse erro indica que o nome de domínio do servidor FTP não pôde ser resolvido
 
    1. Acesse a auditoria de workflow e verifique se os logs mostram o erro “Não foi possível resolver o nome do host”.
 
-1. Se o servidor SFTP estiver hospedado pelo Adobe, verifique se o IP foi adicionado à lista de permissões entrando em contato com o Atendimento ao cliente.
+1. Se o servidor SFTP for hospedado pela Adobe, verifique através do Atendimento ao cliente se o IP foi adicionado à lista de permissões.
 
    Caso contrário, verifique se:
 
