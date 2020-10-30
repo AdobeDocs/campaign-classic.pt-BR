@@ -11,18 +11,18 @@ audience: reporting
 content-type: reference
 topic-tags: creating-new-reports
 discoiquuid: 72fe6df0-0271-48f9-bd6d-bb1ff25fbdf3
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '488'
-ht-degree: 79%
+ht-degree: 100%
 
 ---
 
 
 # Uso do contexto{#using-the-context}
 
-When you want to represent data in the form of **[!UICONTROL tables]** or **[!UICONTROL charts]**, it can be taken from two sources: a new query (refer to [Defining a direct filter on data](#defining-a-direct-filter-on-data)) or the report context (refer to [Using context data](#using-context-data)).
+Quando quiser representar dados na forma de **[!UICONTROL tables]** ou **[!UICONTROL charts]**, eles poderão ser obtidos a partir de duas fontes: uma nova query (consulte [Definição de um filtro direto em dados](#defining-a-direct-filter-on-data)) ou o contexto do relatório (consulte [Uso de dados de contexto](#using-context-data)).
 
 ## Definição de um filtro direto em dados {#defining-a-direct-filter-on-data}
 
@@ -32,7 +32,7 @@ A utilização de uma atividade do tipo **[!UICONTROL Query]** não é obrigató
 
 Isso permite selecionar os dados a serem exibidos no relatório diretamente por meio da atividade **[!UICONTROL Page]** do relatório.
 
-To do this, click the **[!UICONTROL Filter data...]** link in the **[!UICONTROL Data]** tab: this link lets you access the expressions editor to define a query on the data to be analyzed.
+Para fazer isso, clique no link **[!UICONTROL Filter data...]** na guia **[!UICONTROL Data]**: este link permite acessar o editor de expressão para definir uma consulta nos dados que serão analisados.
 
 ![](assets/reporting_filter_data_from_page.png)
 
@@ -61,7 +61,7 @@ Siga as etapas abaixo:
 1. Coloque uma página no gráfico e edite-o.
 1. Crie uma tabela dinâmica.
 1. Vá para a guia **[!UICONTROL Data]** e selecione o cubo a ser usado.
-1. Click the **[!UICONTROL Filter data...]** link and define the following query to remove Adobe from the list of companies.
+1. Clique no link **[!UICONTROL Filter data...]** e defina a seguinte query para remover a Adobe da lista de empresas.
 
    ![](assets/s_ncs_advuser_report_display_03.png)
 
@@ -71,7 +71,7 @@ Somente os recipients que atenderem aos critérios de filtragem aparecerão no r
 
 ## Uso de dados de contexto {#using-context-data}
 
-To represent data in the form of a **[!UICONTROL table]** or a **[!UICONTROL chart]**, the data can come from the report context.
+Para representar dados no formulário de um **[!UICONTROL table]** ou um **[!UICONTROL chart]**, os dados podem vir do contexto do relatório.
 
 Na página que contém a tabela ou o gráfico, a guia **[!UICONTROL Data]** permite selecionar a fonte de dados.
 
