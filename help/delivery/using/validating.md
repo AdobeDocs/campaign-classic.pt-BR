@@ -11,11 +11,11 @@ audience: delivery
 content-type: reference
 topic-tags: sending-direct-mail
 discoiquuid: c363a7cf-81a5-4c02-a021-b822eeeadd03
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '242'
-ht-degree: 80%
+ht-degree: 100%
 
 ---
 
@@ -44,8 +44,8 @@ Então, é possível fechar o assistente e examinar os logs por meio da guia **[
 
 Há dois modos:
 
-* **[!UICONTROL Messages are considered sent after validation]** (modo padrão): nesse modo de função, todos os logs de transmissão são atualizados quando o operador confirma o envio (seu status passa de &quot;delivery pendente&quot; para &quot;Enviado&quot;) e o delivery é automaticamente definido como **[!UICONTROL Finished]**.
-* **[!UICONTROL A file of results determines the messages that are sent and those that have failed]** : esse modo permite que você atualize os logs via um arquivo externo enviado pelo provedor de serviço. Nesse caso, um workflow para processar essas informações precisa ser usado para atualizar o status broadlog.
+* **[!UICONTROL Messages are considered sent after validation]** (modo padrão): neste modo de função, todos os broadlogs são atualizados quando o operador confirma o envio (seu status passa de &#39;Entrega pendente&#39; para &#39;Enviado&#39;) e o delivery é automaticamente definido como **[!UICONTROL Finished]**.
+* **[!UICONTROL A file of results determines the messages that are sent and those that have failed]** : esse modo permite atualizar os logs via um arquivo externo enviado pelo provedor de serviço. Nesse caso, um workflow para processar essas informações precisa ser usado para atualizar o status broadlog.
 
    >[!NOTE]
    >
