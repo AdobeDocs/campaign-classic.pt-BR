@@ -11,18 +11,18 @@ audience: delivery
 content-type: reference
 topic-tags: using-delivery-templates
 discoiquuid: e2c6e273-1640-4f46-a80e-0cecb06e2769
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '184'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
 
 # Seleção de target mapping{#selecting-a-target-mapping}
 
-By default, delivery templates target **[!UICONTROL Recipients]**. O target mapping, portanto, usa os campos da tabela **nms:recipient.** O Adobe Campaign oferece outros target mapping para seus deliveries, para serem usados conforme suas necessidades.
+Por padrão, templates de delivery têm como target **[!UICONTROL Recipients]**. O target mapping, portanto, usa os campos da tabela **nms:recipient.** O Adobe Campaign oferece outros target mapping para seus deliveries, para serem usados conforme suas necessidades.
 
 ![](assets/delivery_select_mapping.png)
 
