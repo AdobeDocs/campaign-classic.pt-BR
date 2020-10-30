@@ -13,7 +13,7 @@ translation-type: tm+mt
 source-git-commit: ba5e815dd1576b55d9b3226639680f6358137f13
 workflow-type: tm+mt
 source-wordcount: '3882'
-ht-degree: 94%
+ht-degree: 96%
 
 ---
 
@@ -55,11 +55,11 @@ Os modelos de hospedagem local, hospedados e híbridos da campanha agora são de
 
 A matriz de capacidade de campanha por modelo de hospedagem foi atualizada e movida no guia de instalação. [Leia mais](../../installation/using/capability-matrix.md)
 
-A seção de recursos avançados do Relatórios de campanha foi aprimorada para detalhar como usar parâmetros de URL e variáveis em relatórios personalizados. [Leia mais](../../reporting/using/advanced-functionalities.md)
+A seção de recursos avançados dos relatórios do Campaign foi aprimorada para detalhar como usar parâmetros de URL e variáveis em relatórios personalizados. [Leia mais](../../reporting/using/advanced-functionalities.md)
 
 A página de propriedades dos relatórios foi reorganizada e aprimorada para facilitar a configuração. [Leia mais](../../reporting/using/properties-of-the-report.md)
 
-Uma nova nota técnica foi criada com detalhes sobre como migrar do protocolo binário legado para a API do provedor APNs baseada em HTTP/2. [Leia mais](https://helpx.adobe.com/campaign/kb/migrate-to-apns-http2.html)
+Uma nova nota técnica foi criada com detalhes sobre como migrar do protocolo binário herdado para a API do provedor APNs baseada em HTTP/2. [Leia mais](https://helpx.adobe.com/br/campaign/kb/migrate-to-apns-http2.html)
 
 ## Setembro de 2020 {#september-2020}
 
@@ -405,7 +405,7 @@ Um novo artigo da knowledge base sobre como usar o catálogo de oferta no Adobe 
 
 A seção Sub-workflow activity foi aprimorada com um exemplo de uso. [Leia mais](../../workflow/using/sub-workflow.md)
 
-A página de matriz [de recursos no local e hospedado do](../../installation/using/capability-matrix.md) Campaign Classic foi atualizada com informações relacionadas ao Email BCC.
+The [Campaign Classic On-premise &amp; Hosted capability matrix](../../installation/using/capability-matrix.md) page has been updated with information relating to Email BCC.
 
 A documentação de Mensagens transacionais foi atualizada com uma nota relacionada à publicação do modelo. [Leia mais](https://docs.campaign.adobe.com/doc/AC/en/MCE_Template_publication.html)
 
