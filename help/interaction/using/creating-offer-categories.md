@@ -15,7 +15,7 @@ translation-type: tm+mt
 source-git-commit: 8fc3e793ec544948049fc122b44b6bffdebecba0
 workflow-type: tm+mt
 source-wordcount: '269'
-ht-degree: 80%
+ht-degree: 85%
 
 ---
 
@@ -32,7 +32,7 @@ Para criar uma categoria adicional, siga as etapas abaixo:
 
    ![](assets/offer_cat_create_001.png)
 
-1. Right click and select **[!UICONTROL Create a new "Offer category" folder]** from the drop-down list.
+1. Clique com o botão direito e selecione **[!UICONTROL Create a new "Offer category" folder]** na lista suspensa.
 
    ![](assets/offer_cat_create_002.png)
 
@@ -62,7 +62,7 @@ Para criar uma categoria adicional, siga as etapas abaixo:
 
       ![](assets/offer_cat_create_006.png)
 
-Um resumo das regras de qualificação está disponível no painel das ofertas incluídas na categoria. Para visualização, clique no **[!UICONTROL Schedule and eligibility rules of the offer]** link.
+Um resumo das regras de qualificação está disponível no painel das ofertas incluídas na categoria. Para visualizá-las, clique no link **[!UICONTROL Schedule and eligibility rules of the offer]**.
 
 ![](assets/offer_create_006.png)
 
