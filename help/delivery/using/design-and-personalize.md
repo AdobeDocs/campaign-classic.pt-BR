@@ -9,9 +9,9 @@ audience: delivery
 content-type: reference
 topic-tags: deliveries-best-practices
 discoiquuid: 0cbc4e92-482f-4dac-a1fb-b738e7127938
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1269'
 ht-degree: 100%
 
@@ -158,7 +158,7 @@ Para serem acessadas de fora, as imagens usadas em emails e recursos públicos v
 
 * Caso as imagens não sejam exibidas, verifique se elas estão disponíveis no servidor. Para fazer isso, clique na guia Origem no delivery. Localize suas imagens e copie e cole o URL de cada imagem em um navegador da web. Caso as imagens não sejam exibidas, entre em contato com o administrador de TI ou fornecedor terceirizado e disponibilize seu conteúdo de delivery.
 
-## Visualizar sua mensagem  {#preview-msg}
+## Visualizar sua mensagem   {#preview-msg}
 
 A Adobe recomenda visualizar a mensagem para verificar a personalização e como os recipients verão o delivery.
 
