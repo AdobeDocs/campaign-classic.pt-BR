@@ -15,7 +15,7 @@ translation-type: tm+mt
 source-git-commit: 3acf2359c74a3dc4b18c8976fee14dcbaf3fa510
 workflow-type: tm+mt
 source-wordcount: '1826'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -134,7 +134,7 @@ Para configurar o Azure Synapse no CentOS:
 
    >[!NOTE]
    >
-   >Para permitir a comunicação do lado do Azure Synapse Analytics, talvez seja necessário adicionar seu IP público à lista de permissões. Para fazer isso, consulte a [documentação do Azure](https://docs.microsoft.com/pt-BR/azure/sql-database/sql-database-firewall-configure#use-the-azure-portal-to-manage-server-level-ip-firewall-rules).
+   >Para permitir a comunicação com o Azure Synapse Analytics, será necessário adicionar seu IP público à lista de permissões. Para fazer isso, consulte a [documentação do Azure](https://docs.microsoft.com/pt-BR/azure/sql-database/sql-database-firewall-configure#use-the-azure-portal-to-manage-server-level-ip-firewall-rules).
 
 1. No caso de iptables, execute o seguinte comando:
 
@@ -225,7 +225,7 @@ Para configurar o Azure Synapse no Debian:
 
    >[!NOTE]
    >
-   >Para permitir a comunicação do lado do Azure Synapse Analytics, talvez seja necessário adicionar seu IP público à lista de permissões. Para fazer isso, consulte a [documentação do Azure](https://docs.microsoft.com/pt-BR/azure/sql-database/sql-database-firewall-configure#use-the-azure-portal-to-manage-server-level-ip-firewall-rules).
+   >Para permitir a comunicação com o Azure Synapse Analytics, será necessário adicionar seu IP público à lista de permissões. Para fazer isso, consulte a [documentação do Azure](https://docs.microsoft.com/pt-BR/azure/sql-database/sql-database-firewall-configure#use-the-azure-portal-to-manage-server-level-ip-firewall-rules).
 
 ## Configuração do acesso ao Snowflake {#configure-access-to-snowflake}
 
