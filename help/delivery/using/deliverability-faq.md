@@ -9,9 +9,9 @@ audience: delivery
 content-type: reference
 topic-tags: deliverability-management
 discoiquuid: 6a394eeb-fbe1-4712-bb13-db5d7965fb73
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: 75cbb8d697a95f4cc07768e6cf3585e4e079e171
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '1341'
 ht-degree: 100%
 
@@ -47,7 +47,7 @@ Ao receber sempre a mesma mensagem de erro para um ISP, o email ou IP pode ter s
 
 Se o problema persistir, entre em contato com os serviços comerciais ou de entrega, o Atendimento ao cliente do Adobe Campaign ou o suporte do Adobe Campaign.
 
-##  Lista de bloqueios × quarentena {#denylist-versus-quarantine}
+## Lista de bloqueios × quarentena {#denylist-versus-quarantine}
 
 * **Qual é a diferença entre um endereço de email incluído na lista de bloqueios e um email na quarentena?**
 
