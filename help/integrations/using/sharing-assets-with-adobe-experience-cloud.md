@@ -11,11 +11,11 @@ audience: integrations
 content-type: reference
 topic-tags: asset-sharing
 discoiquuid: d10624ea-d961-4162-879b-1754f897d763
-translation-type: ht
-source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
-workflow-type: ht
-source-wordcount: '177'
-ht-degree: 100%
+translation-type: tm+mt
+source-git-commit: 4b98c23f4120cbea6dd54cd68b61202e74bee3e1
+workflow-type: tm+mt
+source-wordcount: '179'
+ht-degree: 84%
 
 ---
 
@@ -37,5 +37,5 @@ Consulte a seção [ Configuração do acesso ao Assets](../../integrations/usin
 
 >[!NOTE]
 >
->Se estiver usando o Adobe Campaign no local, a integração com o Serviço principal de ativos e com o AEM Assets não estará disponível, a menos que o AEM Assets também esteja no local.
+>No contexto de um ambiente Adobe Campaign no local, a integração com o serviço principal Ativos e com a AEM Assets não está disponível, a menos que a AEM Assets também esteja no local.
 
