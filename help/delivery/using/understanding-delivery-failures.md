@@ -247,15 +247,13 @@ Os emails de devolução podem ter o seguinte status de qualificação:
 >Para instalações hospedadas ou híbridas, se você atualizou para o MTA aprimorado:
 >
 >* As qualificações de rejeição na tabela **[!UICONTROL Delivery log qualification]** não são mais usadas para mensagens de erro de falha de delivery síncrona. O MTA aprimorado determinará o tipo de devolução e a qualificação e enviará essas informações para o Campaign.
-   >
-   >
-* As rejeições assíncronas ainda são qualificadas pelo processo do InMail por meio das regras **[!UICONTROL Inbound email]**. Para obter mais informações, consulte as [Regras de gerenciamento de email](#email-management-rules).
-   >
-   >
-* Para instâncias que usam o MTA aprimorado sem **Webhooks/EFS**, as regras **[!UICONTROL Inbound email]** também serão usadas para processar os emails de rejeição síncronos provenientes do MTA aprimorado, usando o mesmo endereço de email para emails de rejeição assíncronos.
+>
+>* As rejeições assíncronas ainda são qualificadas pelo processo do InMail por meio das regras **[!UICONTROL Inbound email]**. Para obter mais informações, consulte as [Regras de gerenciamento de email](#email-management-rules).
+>
+>* Para instâncias que usam o MTA aprimorado sem **Webhooks/EFS**, as regras **[!UICONTROL Inbound email]** também serão usadas para processar os emails de rejeição síncronos provenientes do MTA aprimorado, usando o mesmo endereço de email para emails de rejeição assíncronos.
 >
 >
-Para obter mais informações sobre o MTA aprimorado do Adobe Campaign, consulte [este documento](https://helpx.adobe.com/br/campaign/kb/acc-campaign-enhanced-mta.html).
+>Para obter mais informações sobre o MTA aprimorado do Adobe Campaign, consulte [este documento](https://helpx.adobe.com/br/campaign/kb/acc-campaign-enhanced-mta.html).
 
 ### Regras de gestão de email {#email-management-rules}
 

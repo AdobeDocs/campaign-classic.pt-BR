@@ -198,9 +198,8 @@ Neste ponto, o status da campanha é **[!UICONTROL To validate]**.
 >[!NOTE]
 >
 >* Para selecionar os processos que estarão sujeitos a aprovação, modifique o template de campanha. Para obter mais informações, consulte [templates de campanha](../../campaign/using/marketing-campaign-templates.md#campaign-templates).
-   >
-   >
-* Consulte também a seção [Processo de aprovação](#approval-process).
+>
+>* Consulte também a seção [Processo de aprovação](#approval-process).
 
 
 
@@ -271,7 +270,6 @@ Para selecionar uma lista de operadores, clique no link **[!UICONTROL Edit...]**
 >* Se uma lista de revisores for definida, uma tarefa será aprovada assim que um revisor aceitá-la. O link de aprovação relevante não é mais oferecido no painel. Quando o envio de notificações estiver habilitado, se outro revisor clicar no link de aprovação na mensagem de notificação, será exibida uma notificação de que outro operador já aprovou a tarefa.
 >* Você pode definir um agendamento de aprovação para a campanha na seção inferior da janela de edição do revisor. Por padrão, os revisores têm três dias a partir da data de envio para aprovar um processo. É possível configurar um lembrete que é enviado automaticamente para os operadores relacionados antes do prazo de aprovação.
 >* Você pode adicionar lembretes desta seção.
-
 >
 
 
