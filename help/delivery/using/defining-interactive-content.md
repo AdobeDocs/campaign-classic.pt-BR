@@ -9,20 +9,20 @@ audience: delivery
 content-type: reference
 topic-tags: sending-emails
 discoiquuid: 2ea2747f-957f-41a9-a03f-20c03fa99116
-translation-type: ht
-source-git-commit: 75cbb8d697a95f4cc07768e6cf3585e4e079e171
-workflow-type: ht
-source-wordcount: '1573'
-ht-degree: 100%
+translation-type: tm+mt
+source-git-commit: 4b98c23f4120cbea6dd54cd68b61202e74bee3e1
+workflow-type: tm+mt
+source-wordcount: '1572'
+ht-degree: 98%
 
 ---
 
 
 # Definição do conteúdo interativo{#defining-interactive-content}
 
-O Adobe Campaign possibilita experimentar o novo formato interativo [AMP for Email](https://amp.dev/about/email/), que permite o envio de emails dinâmicos, sob determinadas condições.
+Adobe Campaign enables you to use the new interactive [AMP for Email](https://amp.dev/about/email/) format, which enables to send dynamic emails, under certain conditions.
 
-Atualmente, com o AMP for Email você pode:
+Com a AMP para email, você pode:
 * Testar o delivery de emails do AMP para endereços específicos configurados adequadamente.
 * Fazer delivery dos emails do AMP para endereços do Gmail, Outlook ou Mail.ru depois de fazer o registro nos provedores correspondentes.
 
@@ -210,4 +210,4 @@ Por exemplo, se uma lista de produtos é incluída no email, ao editar os preço
 
 O vídeo abaixo explica como ativar o AMP no Adobe Campaign Classic e mostra sua utilização.
 
->[!VIDEO](https://video.tv.adobe.com/v/29940?quality=12&learn=on&captions=por_br)
+>[!VIDEO](https://video.tv.adobe.com/v/29940?quality=12&learn=on)
