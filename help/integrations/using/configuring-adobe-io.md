@@ -1,8 +1,6 @@
 ---
-title: Configurando Adobe IO para acionadores Adobe Experience Cloud
-seo-title: Configurando Adobe IO para acionadores Adobe Experience Cloud
-description: Configurando Adobe IO para acionadores Adobe Experience Cloud
-seo-description: null
+title: Configuração de E/S de Adobe para acionadores Adobe Experience Cloud
+description: Saiba como configurar a E/S do Adobe para acionadores Adobe Experience Cloud
 page-status-flag: never-activated
 uuid: e2db7bdb-8630-497c-aacf-242734cc0a72
 contentOwner: sauviat
@@ -15,25 +13,32 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: d15e953740b0a4dd8073b36fd59b4c4e44906340
+source-git-commit: ac922ea93faf7cb3176e9df33467b1492f87a1f0
 workflow-type: tm+mt
-source-wordcount: '383'
-ht-degree: 0%
+source-wordcount: '418'
+ht-degree: 1%
 
 ---
 
 
-# Configurando Adobe IO para acionadores Adobe Experience Cloud {#configuring-adobe-io}
+# Configuração de E/S de Adobe para acionadores Adobe Experience Cloud {#configuring-adobe-io}
 
-As configurações de pré-requisito são:
+## Pré-requisitos {#adobe-io-prerequisites}
 
-* Adobe Campaign Classic build ACC-19.1.9 ou ACC-20.2.1 e superior.
-* um IMSOrgID válido.
-* um acesso de desenvolvedor à Organização IMS. Você precisa solicitar os privilégios de Administrador do Sistema da Organização IMS para seguir o procedimento detalhado nesta [página](https://helpx.adobe.com/ca/enterprise/admin-guide.html/ca/enterprise/using/manage-developers.ug.html) para fornecer esse acesso para todos os Perfis do Produto.
+Antes de iniciar esta implementação, verifique se você tem:
+
+* uma versão recente do Adobe Campaign: 19.1.8 ou 20.2.1 edificações e superior,
+* uma IMSOrgID válida: o identificador de organização do Sistema Identity Management (IMS) é o identificador único no Adobe Experience Cloud, utilizado em particular para o serviço VisitorID e o IMS Single-Sign On (SSO),
+* um acesso de desenvolvedor à Organização IMS.
+
+>[!NOTE]
+>
+>Se você precisar solicitar os privilégios de Administrador do sistema da Organização IMS, siga o procedimento detalhado [nesta página](https://helpx.adobe.com/ca/enterprise/admin-guide.html/ca/enterprise/using/manage-developers.ug.html) para fornecer esse acesso para todos os Perfis do Produto.
+
 
 ## Etapa 1: Criar/atualizar projeto de E/S de Adobe {#creating-adobe-io-project}
 
-1. Acesse Adobe E/S e faça logon com o Administrador do sistema diretamente para o IMSorg.
+1. Acesse a E/S do Adobe e faça logon com o Administrador do sistema, diretamente para a IMSorg.
 
    >[!NOTE]
    >
@@ -43,9 +48,9 @@ As configurações de pré-requisito são:
 
    >[!NOTE]
    >
-   >Se a ID do cliente estiver vazia, é possível entrar diretamente **[!UICONTROL Create a New project]** em Adobe IO.
+   >Se a ID do cliente estiver vazia, é possível entrar diretamente **[!UICONTROL Create a New project]** na E/S do Adobe.
 
-1. Agora é necessário identificar o projeto existente usando a ID do cliente extraída. Procure projetos existentes com a mesma ID de cliente que a extraída na etapa anterior.
+1. Identifique o projeto existente usando a ID do cliente extraída. Procure projetos existentes com a mesma ID de cliente que a extraída na etapa anterior.
 
    ![](assets/adobe_io_8.png)
 
@@ -53,7 +58,7 @@ As configurações de pré-requisito são:
 
    ![](assets/adobe_io_1.png)
 
-1. In the window **[!UICONTROL Add an API]**, select **[!UICONTROL Adobe Analytics]**.
+1. Na janela **[!UICONTROL Add an API]**, selecione **[!UICONTROL Adobe Analytics]**.
 
    ![](assets/adobe_io_2.png)
 
@@ -61,7 +66,7 @@ As configurações de pré-requisito são:
 
    ![](assets/adobe_io_3.png)
 
-1. Se a ID do cliente estiver vazia, selecione **[!UICONTROL Generate a key pair]** para criar um par de chaves Público e Privado.
+1. Se a ID do cliente estava vazia, selecione **[!UICONTROL Generate a key pair]** para criar um par de chaves Público e Privado.
 
    ![](assets/adobe_io_4.png)
 
@@ -83,7 +88,7 @@ As configurações de pré-requisito são:
 
 ## Etapa 2: Adicionar as credenciais do projeto no Adobe Campaign {#add-credentials-campaign}
 
-Para adicionar as credenciais do projeto no Adobe Campaign, execute o seguinte comando como usuário neolane em todos os container da instância do Adobe Campaign para inserir as **[!UICONTROL Technical Account]** credenciais no arquivo de configuração da instância.
+Para adicionar as credenciais do projeto no Adobe Campaign, execute o seguinte comando como usuário &#39;neolane&#39; em todos os container da instância do Adobe Campaign para inserir as **[!UICONTROL Technical Account]** credenciais no arquivo de configuração da instância.
 
 ```
 nlserver config -instance:<instance name> -setimsjwtauth:Organization_Id/Client_Id/Technical_Account_ID[/Client_Secret[/Base64_encoded_Private_Key]]
@@ -95,7 +100,7 @@ nlserver config -instance:<instance name> -setimsjwtauth:Organization_Id/Client_
 
 ## Etapa 3: Atualizar tag pipelined {#update-pipelined-tag}
 
-Para atualizar a [!DNL pipelined] tag, é necessário atualizar o tipo de autenticação para o projeto Adobe IO no arquivo de configuração **config-&lt; instance-name >.xml** da seguinte maneira:
+Para atualizar a [!DNL pipelined] tag, é necessário atualizar o tipo de autenticação para o projeto de E/S do Adobe no arquivo de configuração **config-&lt; instance-name >.xml** da seguinte maneira:
 
 ```
 <pipelined ... authType="imsJwtToken"  ... />
@@ -103,4 +108,4 @@ Para atualizar a [!DNL pipelined] tag, é necessário atualizar o tipo de autent
 
 >[!NOTE]
 >
->Se você estiver usando a versão mais antiga da Integração de Triggers usando tokens JWT herdados, também deverá adicionar a API Adobe IO para obter detalhes na primeira etapa para migrar automaticamente para a nova Autenticação de Triggers. [!DNL Adobe Analytics]
+>Se você estiver usando a versão mais antiga da Integração de Triggers usando tokens JWT herdados, você também deverá adicionar a API de E/S do Adobe para obter detalhes na primeira etapa para migrar automaticamente para a nova Autenticação de Triggers. [!DNL Adobe Analytics]
