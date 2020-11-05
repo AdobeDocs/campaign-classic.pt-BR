@@ -12,9 +12,9 @@ content-type: reference
 topic-tags: appendices
 discoiquuid: da2198a3-7cef-4419-894d-e5bb51bb480c
 translation-type: tm+mt
-source-git-commit: 2ff877607641435a2c2806f48f3c5b35d96d39c5
+source-git-commit: ac922ea93faf7cb3176e9df33467b1492f87a1f0
 workflow-type: tm+mt
-source-wordcount: '7852'
+source-wordcount: '7855'
 ht-degree: 8%
 
 ---
@@ -305,7 +305,7 @@ No nó **dataStore > dataSource > dbcnx** , defina as configurações de conexã
    <th> Parâmetro </th> 
    <th> Descrição </th> 
    <th> Tipo </th> 
-   <th> Valor padrão<br /> </th> 
+   <th> Default value<br /> </th> 
   </tr> 
  </thead> 
  <tbody> 
@@ -3216,7 +3216,7 @@ For additional information, refer to this [section](../../installation/using/dep
  <tbody> 
   <tr> 
    <td> IMSOrgId<br /> </td> 
-   <td> Identificador da organização IMS: identificador de organização único na Adobe Marketing Cloud, usado especialmente para o serviço VisitorID e o SSO IMS. <br /> </td> 
+   <td> Identificador da organização do Sistema Identity Management (IMS): identificador de organização único na Adobe Experience Cloud, usado especialmente para o serviço VisitorID e o SSO IMS. <br /> </td> 
    <td> Cadeia de caracteres<br /> </td> 
    <td> <br /> </td> 
   </tr> 
