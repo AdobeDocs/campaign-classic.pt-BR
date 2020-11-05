@@ -10,7 +10,7 @@ content-type: reference
 topic-tags: latest-release-notes
 discoiquuid: 5df34f55-135a-4ea8-afc2-f9427ce5ae7b
 translation-type: tm+mt
-source-git-commit: fe7ce92bde3405fed3429475cdd5681e5837876f
+source-git-commit: 48acf8cbc52a54a2dd08f0b8f29be57d4e5e006f
 workflow-type: tm+mt
 source-wordcount: '1820'
 ht-degree: 4%
@@ -99,7 +99,7 @@ Learn more in the [Campaign Compatibility matrix](../../rn/using/compatibility-m
 Os seguintes recursos estão obsoletos na versão 20.3:
 
 * O domínio demdex usado para importar e exportar audiências para o Adobe Experience Cloud está obsoleto. Se você estiver usando o domínio demdex para suas contas externas de importação/exportação, será necessário adaptar sua implementação de acordo. [Saiba mais](../../integrations/using/configuring-shared-audiences-integration-in-adobe-campaign.md)
-* Aciona a autenticação da integração originalmente com base na configuração da autenticação oAUTH para acessar o pipeline agora foi alterada e movida para E/S de Adobe. [Saiba mais](../../integrations/using/about-triggers.md)
+* Aciona a autenticação da integração originalmente com base na configuração da autenticação oAUTH para acessar o pipeline agora foi alterada e movida para E/S de Adobe. [Saiba mais](../../integrations/using/configuring-adobe-io.md)
 
 Saiba mais na página [Recursos](../../rn/using/deprecated-features.md)obsoletos e removidos.
 
