@@ -10,7 +10,7 @@ topic-tags: campaign-classic-deprecated-features
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 281eb6b0f84e01d25ac9c3542dc2ee950d4879e7
+source-git-commit: 48acf8cbc52a54a2dd08f0b8f29be57d4e5e006f
 workflow-type: tm+mt
 source-wordcount: '1621'
 ht-degree: 85%
@@ -75,7 +75,7 @@ Os clientes são aconselhados a verificar se utilizam o recurso/funcionalidade e
   <tr>
   <td>Autenticação OAuth (OAuth e JWT)<br></td>
   <td><p> A partir da versão Campaign 20.3, a autenticação de integração do Acionadores originalmente com base na configuração de autenticação oAUTH para acesso ao pipeline agora foi alterada e movida para E/S do Adobe. <p>
-  <p>Se você estiver usando a integração de Acionadores, precisará adaptar sua implementação de acordo. <a href="../../integrations/using/about-triggers.md">Saiba mais</a></p> 
+  <p>Se você estiver usando a integração de Acionadores, precisará adaptar sua implementação de acordo. <a href="../../integrations/using/configuring-adobe-io.md">Saiba mais</a></p> 
   <p>Para obter mais informações sobre a depreciação da Autenticação OAuth, consulte esta <a href="https://github.com/AdobeDocs/analytics-1.4-apis/blob/master/docs/APIEOL.md">página</a></p> 
   <p><em>Data de remoção do público alvo: Abril de 2021</em></p>
   </td>
