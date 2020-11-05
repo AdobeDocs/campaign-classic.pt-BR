@@ -9,9 +9,9 @@ audience: workflow
 content-type: reference
 topic-tags: -general-operation
 discoiquuid: e53af1c2-b50c-4a8c-b5b8-f23a85bd3211
-translation-type: ht
-source-git-commit: b04d802ce1041aecbb60aeeabbd35b1d78c2451d
-workflow-type: ht
+translation-type: tm+mt
+source-git-commit: 1e6ef4a3924e2cab0e6baf06e0861620e17d240b
+workflow-type: tm+mt
 source-wordcount: '2474'
 ht-degree: 100%
 
@@ -272,8 +272,6 @@ As etapas para executar esse caso de uso são as seguintes:
    ![](assets/gpg_generate.png)
 
 1. No sistema externo, use a chave pública baixada a partir do Painel de controle do Campaign para criptografar os dados que serão importados para o Campaign Classic.
-
-   ![](assets/gpg_external.png)
 
 1. No Campaign Classic, crie um workflow para importar os dados criptografados e descriptografá-los usando a chave privada instalada por meio do Painel de controle do Campaign. Para fazer isso, criaremos um workflow da seguinte maneira:
 
