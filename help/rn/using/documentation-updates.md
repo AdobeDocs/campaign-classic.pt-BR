@@ -10,7 +10,7 @@ content-type: reference
 topic-tags: latest-documentation-updates
 discoiquuid: 5df34f55-135a-4ea8-afc2-f9427ce5ae7b
 translation-type: tm+mt
-source-git-commit: 54ac5abcc53c41d025238a3c89f9d732c0fb1376
+source-git-commit: 48acf8cbc52a54a2dd08f0b8f29be57d4e5e006f
 workflow-type: tm+mt
 source-wordcount: '3905'
 ht-degree: 95%
@@ -41,7 +41,7 @@ A página de recursos obsoletos e removidos foi atualizada. [Leia mais](../../rn
 As notas de versão e a matriz de compatibilidade para a versão Gold Standard estão disponíveis em uma seção dedicada.
 [Leia mais](../../rn/using/gold-standard.md#gs-10).
 
-A integração acionadora originalmente com base na configuração de autenticação oAUTH para acessar o pipeline agora foi alterada e movida para E/S de Adobe. [Leia mais](../../integrations/using/about-triggers.md)
+A integração acionadora originalmente com base na configuração de autenticação oAUTH para acessar o pipeline agora foi alterada e movida para E/S de Adobe. [Leia mais](../../integrations/using/configuring-adobe-io.md)
 
 **Outras atualizações**
 
