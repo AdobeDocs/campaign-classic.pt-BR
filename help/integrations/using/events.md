@@ -1,8 +1,6 @@
 ---
-title: Configuração da integração
-seo-title: Configuração da integração
-description: Configuração da integração
-seo-description: null
+title: Configuração de eventos
+description: Saiba como configurar eventos para implementação personalizada
 page-status-flag: never-activated
 uuid: e2db7bdb-8630-497c-aacf-242734cc0a72
 contentOwner: sauviat
@@ -12,10 +10,10 @@ content-type: reference
 topic-tags: adobe-experience-manager
 discoiquuid: 1c20795d-748c-4f5d-b526-579b36666e8f
 translation-type: tm+mt
-source-git-commit: d15e953740b0a4dd8073b36fd59b4c4e44906340
+source-git-commit: 48acf8cbc52a54a2dd08f0b8f29be57d4e5e006f
 workflow-type: tm+mt
-source-wordcount: '1266'
-ht-degree: 71%
+source-wordcount: '1198'
+ht-degree: 72%
 
 ---
 
@@ -28,9 +26,7 @@ Partes desta configuração são um desenvolvimento personalizado e exigem o seg
 * Conhecimento prático das APIs QueryDef e Writer.
 * Noções de trabalho de criptografia e autenticação usando chaves privadas.
 
-Como a edição do código JS requer habilidades técnicas, não tente sem a compreensão adequada.
-
-O processamento adicional de eventos é feito como parte do Pacote ACX fornecido fora da implementação padrão. O evento recebido é processado imediatamente usando o código JavaScript. Ele é salvo em uma tabela de banco de dados em tempo real, sem nenhum processamento adicional. Os acionadores são usados para segmentação por um fluxo de trabalho de campanha que envia emails. A campanha é configurada para que o cliente que acionou o evento receba um email.
+Como a edição do código Javascript requer habilidades técnicas, não tente fazê-lo sem a compreensão adequada.
 
 ## Processamento de eventos no JavaScript {#events-javascript}
 
@@ -40,7 +36,7 @@ O pipeline usa uma função JavaScript para processar cada mensagem. Essa funç�
 
 Está configurado na opção **[!UICONTROL NmsPipeline_Config]** sob o atributo &quot;JSConnector&quot;. Esse javascript é chamado toda vez que um evento é recebido. É executado pelo processo [!DNL pipelined].
 
-O arquivo JS de amostra é cus:triggers.js.
+O arquivo Javascript de amostra é cus:triggers.js.
 
 ### Função JavaScript {#function-js}
 
@@ -58,7 +54,7 @@ Deveria voltar como
 <undefined/>
 ```
 
-Você deve reiniciar [!DNL pipelined] após editar o JS.
+Você deve reiniciar [!DNL pipelined] após editar o Javascript.
 
 ### Acionar formato de dados {#trigger-format}
 
@@ -136,7 +132,7 @@ Para fins de depuração e monitoramento, os dados completos do acionador são g
 
 ### Análise dos dados {#data-parsing}
 
-Este exemplo de código JS analisa a eVar01 nos enriquecimentos.
+Este exemplo de código Javascript analisa o eVar01 nos enriquecimentos.
 
 ```
 function processPipelineMessage(xmlTrigger)
