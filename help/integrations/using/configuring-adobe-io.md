@@ -13,9 +13,9 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 48acf8cbc52a54a2dd08f0b8f29be57d4e5e006f
+source-git-commit: d9ae51c30e2ac538ff29e4ab53fa215d09f3d655
 workflow-type: tm+mt
-source-wordcount: '423'
+source-wordcount: '425'
 ht-degree: 1%
 
 ---
@@ -25,7 +25,7 @@ ht-degree: 1%
 
 >[!CAUTION]
 >
->Se você estiver usando uma versão mais antiga da integração de Acionadores por meio de tokens JWT ou autenticação oAuth, **será necessário mover-se para E/S de Adobe, conforme descrito abaixo**. Os modos de autenticação JWT e oAuth agora estão obsoletos. [Saiba mais](https://github.com/AdobeDocs/analytics-1.4-apis)
+>Se você estiver usando uma versão mais antiga da integração de Acionadores por meio da autenticação do oAuth, **será necessário mover para a E/S do Adobe, conforme descrito abaixo**. O modo de autenticação do oAuth herdado será desativado em 30 de abril de 2021. [Saiba mais](https://github.com/AdobeDocs/analytics-1.4-apis/blob/master/docs/APIEOL.md)
 
 ## Pré-requisitos {#adobe-io-prerequisites}
 
