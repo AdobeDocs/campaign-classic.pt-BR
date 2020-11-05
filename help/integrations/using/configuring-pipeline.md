@@ -12,10 +12,10 @@ content-type: reference
 topic-tags: adobe-experience-manager
 discoiquuid: 1c20795d-748c-4f5d-b526-579b36666e8f
 translation-type: tm+mt
-source-git-commit: 3e73d7c91fbe7cff7e1e31bdd788acece5806e61
+source-git-commit: ac922ea93faf7cb3176e9df33467b1492f87a1f0
 workflow-type: tm+mt
-source-wordcount: '901'
-ht-degree: 23%
+source-wordcount: '907'
+ht-degree: 22%
 
 ---
 
@@ -39,7 +39,7 @@ O uso de [!DNL Experience Cloud Triggers] no Campaign exige:
 
 As configurações de pré-requisito são:
 
-* Autenticação de projeto Adobe IO
+* Autenticação de projeto de E/S de Adobe
 * O IMSOrgId, o identificador do cliente Experience Cloud com a Adobe Analytics, foi adicionado.
 * A equipe de provisionamento deve ter Privilégios de Administrador do Sistema para a Organização IMS do cliente
 * Configuração dos acionadores no Adobe Analytics.
@@ -48,11 +48,11 @@ As configurações de pré-requisito são:
 
 A autenticação é necessária, pois o pipeline está hospedado no Adobe Experience Cloud.
 Ele usa um par de chaves públicas e privadas. Esse processo tem a mesma função de usuário/senha, mas é mais seguro.
-A autenticação é suportada para o Marketing Cloud por meio do Adobe IO Project.
+A autenticação é compatível com o Marketing Cloud por meio do Projeto de E/S do Adobe.
 
-## Etapa 1: Criando/atualizando o projeto Adobe IO {#creating-adobe-io-project}
+## Etapa 1: Criando/atualizando projetos de E/S de Adobe {#creating-adobe-io-project}
 
-Para clientes hospedados, você pode criar um ticket de atendimento ao cliente para habilitar sua organização com tokens de conta técnica de Adobe IO para a integração de Acionadores.
+Para clientes hospedados, você pode criar um ticket de atendimento ao cliente para habilitar sua organização com tokens de conta técnica de E/S do Adobe para a integração de Acionadores.
 
 Para clientes locais, consulte a página [Configuração de E/S de Adobe para acionadores](../../integrations/using/configuring-adobe-io.md) Adobe Experience Cloud. Observe que é necessário selecionar **[!UICONTROL Adobe Analytics]** ao adicionar a API à credencial de E/S do Adobe.
 
