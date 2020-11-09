@@ -13,9 +13,9 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: d9ae51c30e2ac538ff29e4ab53fa215d09f3d655
+source-git-commit: 8486213403bf848f1632aff06f3f1528b199f86d
 workflow-type: tm+mt
-source-wordcount: '425'
+source-wordcount: '423'
 ht-degree: 1%
 
 ---
@@ -31,7 +31,7 @@ ht-degree: 1%
 
 Antes de iniciar esta implementação, verifique se você tem:
 
-* uma versão recente do Adobe Campaign: 19.1.8 ou 20.2.1 edificações e superior,
+* uma versão recente do Adobe Campaign (20.2.1 e superior),
 * uma IMSOrgID válida: o identificador de organização do Sistema Identity Management (IMS) é o identificador exclusivo no Adobe Experience Cloud, usado, por exemplo, para o serviço VisitorID e o IMS Single-Sign On (SSO),
 * um acesso de desenvolvedor à Organização IMS.
 
@@ -56,31 +56,31 @@ Antes de iniciar esta implementação, verifique se você tem:
 
 1. Identifique o projeto existente usando a ID do cliente extraída. Procure projetos existentes com a mesma ID de cliente que a extraída na etapa anterior.
 
-   ![](assets/adobe_io_8.png)
+   ![](assets/do-not-localize/adobe_io_8.png)
 
 1. Selecione **[!UICONTROL + Add to Project]** e escolha **[!UICONTROL API]**.
 
-   ![](assets/adobe_io_1.png)
+   ![](assets/do-not-localize/adobe_io_1.png)
 
 1. Na janela **[!UICONTROL Add an API]**, selecione **[!UICONTROL Adobe Analytics]**.
 
-   ![](assets/adobe_io_2.png)
+   ![](assets/do-not-localize/adobe_io_2.png)
 
 1. Escolha **[!UICONTROL Service Account (JWT)]** como o tipo de autenticação.
 
-   ![](assets/adobe_io_3.png)
+   ![](assets/do-not-localize/adobe_io_3.png)
 
 1. Se a ID do cliente estava vazia, selecione **[!UICONTROL Generate a key pair]** para criar um par de chaves Público e Privado.
 
-   ![](assets/adobe_io_4.png)
+   ![](assets/do-not-localize/adobe_io_4.png)
 
 1. Carregue sua chave pública e clique em **[!UICONTROL Next]**.
 
-   ![](assets/adobe_io_5.png)
+   ![](assets/do-not-localize/adobe_io_5.png)
 
 1. Escolha o perfil de produto chamado **Analytics-&lt; Nome da organização >** e clique em **[!UICONTROL Save configured API]**.
 
-   ![](assets/adobe_io_6.png)
+   ![](assets/do-not-localize/adobe_io_6.png)
 
 1. Em seu projeto, selecione **[!UICONTROL Service Account (JWT)]** e copie as seguintes informações:
    * **[!UICONTROL Client ID]**
@@ -88,7 +88,7 @@ Antes de iniciar esta implementação, verifique se você tem:
    * **[!UICONTROL Technical account ID]**
    * **[!UICONTROL Organization ID]**
 
-   ![](assets/adobe_io_7.png)
+   ![](assets/do-not-localize/adobe_io_7.png)
 
 ## Etapa 2: Adicionar as credenciais do projeto no Adobe Campaign {#add-credentials-campaign}
 
