@@ -12,9 +12,9 @@ content-type: reference
 topic-tags: initial-configuration
 discoiquuid: 7dd8a6a5-7cca-4e92-8226-1b9e450dfaf9
 translation-type: tm+mt
-source-git-commit: fe7ce92bde3405fed3429475cdd5681e5837876f
+source-git-commit: 1781648fc17d729f451664204f99a77dfaa8c824
 workflow-type: tm+mt
-source-wordcount: '1305'
+source-wordcount: '1307'
 ht-degree: 2%
 
 ---
@@ -130,7 +130,7 @@ A **[!UICONTROL Creation steps]** janela permite exibir e editar o script SQL us
 
 * Para um banco de dados Oracle, Microsoft SQL Server ou PostgreSQL, o administrador também pode definir os parâmetros **do** armazenamento a serem usados ao criar objetos de banco de dados.
 
-   Esses parâmetros recebem os nomes exatos do tablespace (aviso: diferencia maiúsculas de minúsculas). Eles são armazenados respectivamente no **[!UICONTROL Administration > Platform > Options]** nó nas seguintes opções (consulte [](../../installation/using/configuring-campaign-options.md#database)):
+   Esses parâmetros recebem os nomes exatos do tablespace (aviso: diferencia maiúsculas de minúsculas). Eles são armazenados respectivamente no **[!UICONTROL Administration > Platform > Options]** nó nas seguintes opções (consulte [esta seção](../../installation/using/configuring-campaign-options.md#database)):
 
    * **WdbcOptions_TableSpaceUser**: tabelas de usuários com base em um schema
    * **WdbcOptions_TableSpaceIndex**: índice de tabelas de usuários com base em um schema
