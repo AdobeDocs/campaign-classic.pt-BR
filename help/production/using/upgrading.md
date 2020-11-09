@@ -10,7 +10,7 @@ content-type: reference
 topic-tags: updating-adobe-campaign
 discoiquuid: f8e3633d-7232-44a5-842b-1a70c4f2bca2
 translation-type: tm+mt
-source-git-commit: 849e1ebf14f707d9e86c5a152de978acb6f1cb35
+source-git-commit: 7e56e4f98ffab752f0b86bb8620fb1b4af6a3dca
 workflow-type: tm+mt
 source-wordcount: '1132'
 ht-degree: 1%
@@ -175,10 +175,10 @@ Para fazer isso, execute o seguinte comando:
 >
 >* Seu script pode ser chamado de **httpd** em vez de **apache**.
 >* É NECESSÁRIO executar esse comando até obter a seguinte resposta:
-   >Essa operação é necessária para que o Apache aplique a nova biblioteca.
 
->
-
+   >
+   >   
+   Essa operação é necessária para que o Apache aplique a nova biblioteca.
 
 
 Em seguida, reinicie o Apache:
@@ -214,7 +214,7 @@ Há duas maneiras de visualizar o resultado da sincronização:
 
 Para resolver conflitos, aplique o seguinte processo:
 
-1. In the Adobe Campaign tree, go to **[!UICONTROL Administration > Configuration > Package management > Edit conflicts]** .
+1. Na árvore do Adobe Campaign, acesse **[!UICONTROL Administration > Configuration > Package management > Edit conflicts]** .
 1. Selecione o conflito que deseja resolver na lista.
 
 Há três maneiras de resolver um conflito:
