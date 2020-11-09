@@ -11,20 +11,20 @@ audience: delivery
 content-type: reference
 topic-tags: about-deliveries-and-channels
 discoiquuid: 2e2d1134-9b83-4ada-b74f-c3842a0cf044
-translation-type: ht
-source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
-workflow-type: ht
-source-wordcount: '1183'
-ht-degree: 100%
+translation-type: tm+mt
+source-git-commit: e01acc00d0b15df99c009fe29d170ed0fc9fa956
+workflow-type: tm+mt
+source-wordcount: '1185'
+ht-degree: 96%
 
 ---
 
 
 # Canais de comunicação{#communication-channels}
 
-Com o Adobe Campaign, você pode enviar campanhas multicanal, incluindo emails, SMS, mensagens pelo LINE, notificações por push e mala direta, e medir sua eficácia usando vários [relatórios](../../reporting/using/delivery-reports.md)dedicados. Essas mensagens são projetadas e enviadas por deliveries, além disso podem ser personalizadas para cada recipient.
+With Adobe Campaign, you can send cross-channel campaigns including emails, SMS, LINE messages, Push notifications and direct mails, and measure their effectiveness using various dedicated [reports](../../reporting/using/delivery-reports.md). Essas mensagens são projetadas e enviadas por deliveries, além disso podem ser personalizadas para cada recipient.
 
-As funcionalidades principais incluem definição de metas, definição e personalização de mensagens, execução de comunicações e relatórios operacionais associados. O principal ponto de acesso funcional é o assistente de delivery. Esse ponto de acesso leva a vários recursos cobertos pelo Adobe Campaign.
+As funcionalidades principais incluem definição de metas, definição e personalização de mensagens, execução de comunicações e relatórios operacionais associados. O principal ponto de acesso funcional é o assistente de delivery. Esse ponto de acesso leva a vários recursos cobertos pela Adobe Campaign.
 
 >[!NOTE]
 >
@@ -43,7 +43,7 @@ O Adobe Campaign oferece os seguintes canais de entrega:
 
    >[!NOTE]
    >
-   >O uso de vários canais vai depender do seu pacote. Verifique o contrato de licença.
+   >O número de canais disponíveis depende do seu contrato. Verifique o contrato de licença.
 
 Os deliveries podem ser realizados **online** (via email, um dos canais móveis e notificações por push) e **offline** (canal de mala direta).
 
