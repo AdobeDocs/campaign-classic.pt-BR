@@ -3,10 +3,10 @@ keywords: Campaign Classic;home;popular topics
 title: Documentação do produto Adobe Campaign Classic
 topic: Premium
 translation-type: tm+mt
-source-git-commit: ccd4fe1366fd9ecaca83dbf7aac241524f0af7d6
+source-git-commit: c14d257bb4f206e56a16d45507ee98ccad239fe7
 workflow-type: tm+mt
-source-wordcount: '277'
-ht-degree: 78%
+source-wordcount: '274'
+ht-degree: 77%
 
 ---
 
@@ -17,11 +17,11 @@ ht-degree: 78%
 
 ## Novidades
 
-* **[Atualizar a integração](integrations/using/configuring-adobe-io.md)**<br/>dos Acionadores da Adobe Experience Cloud O serviço de autenticação legado doAuth chegou ao fim da vida útil. Saiba como migrar para E/S de Adobe.
+* **[Atualizar a integração](integrations/using/configuring-adobe-io.md)**<br/> dos Acionadores da Adobe Experience Cloud O serviço de autenticação legado do oAuth chegou ao fim da vida útil. Saiba como migrar para E/S de Adobe.
 
-* **[Mover para a APIs do provedor APNs com base em HTTP/2](https://helpx.adobe.com/br/campaign/kb/migrate-to-apns-http2.html)**<br/> Saiba como migrar do protocolo binário legado para a API do provedor APNs com base em HTTP/2.
+* **[Mover para a API](https://helpx.adobe.com/br/campaign/kb/migrate-to-apns-http2.html)**<br/> do provedor APNs com base em HTTP/2 Saiba como migrar do protocolo binário legado para a API do provedor APNs com base em HTTP/2.
 
-* **[Adicionar emoticons às suas mensagens](delivery/using/defining-the-email-content.md#inserting-emoticons)**<br/>Agora você pode inserir emoticons em mensagens e linhas de assunto
+* **[Adicionar emoticons às suas mensagens](delivery/using/defining-the-email-content.md#inserting-emoticons)**<br/> Agora você pode inserir emoticons em mensagens e linhas de assunto
 
 * **[Obtenha suporte](https://helpx.adobe.com/br/campaign/kb/ac-support.html)**<br/>
 Acesse as perguntas frequentes, as práticas recomendadas, os recursos de ajuda e solicite ajuda.
@@ -29,7 +29,7 @@ Acesse as perguntas frequentes, as práticas recomendadas, os recursos de ajuda 
 * **[Recursos de rastreamento](https://helpx.adobe.com/br/campaign/kb/acc-tracking.html)**<br/>
 Entenda os recursos de rastreamento no Campaign.
 
-[Clique aqui para obter mais atualizações](/help/rn/using/documentation-updates.md)
+[Mais atualizações](/help/rn/using/documentation-updates.md)
 
 ## Páginas principais
 
