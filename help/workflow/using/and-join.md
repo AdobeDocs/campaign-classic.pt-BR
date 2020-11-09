@@ -11,10 +11,10 @@ audience: workflow
 content-type: reference
 topic-tags: flow-control-activities
 discoiquuid: 075206aa-ff7b-4fa8-a05d-14a29fb119ba
-translation-type: ht
-source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
-workflow-type: ht
-source-wordcount: '171'
+translation-type: tm+mt
+source-git-commit: 1781648fc17d729f451664204f99a77dfaa8c824
+workflow-type: tm+mt
+source-wordcount: '173'
 ht-degree: 100%
 
 ---
@@ -34,4 +34,4 @@ A transição de saída só pode conter uma das populações de transição de e
 
 >[!CAUTION]
 >
->No caso de atividades do tipo **AND-join**, as variáveis do evento são mescladas, mas se uma mesma variável for definida duas vezes, há um conflito e o valor permanece indeterminado. Para obter mais informações, consulte [](../../workflow/using/javascript-scripts-and-templates.md#event-variables).
+>No caso de atividades do tipo **AND-join**, as variáveis do evento são mescladas, mas se uma mesma variável for definida duas vezes, há um conflito e o valor permanece indeterminado. Para obter mais informações, consulte [esta seção](../../workflow/using/javascript-scripts-and-templates.md#event-variables).
