@@ -9,10 +9,10 @@ audience: workflow
 content-type: reference
 topic-tags: introduction
 discoiquuid: 868940d1-f19d-4e9a-bffa-8654abb4441c
-translation-type: ht
-source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
-workflow-type: ht
-source-wordcount: '668'
+translation-type: tm+mt
+source-git-commit: 6be6c353c3464839a74ba857d8d93d0f68bc8865
+workflow-type: tm+mt
+source-wordcount: '650'
 ht-degree: 100%
 
 ---
@@ -32,9 +32,9 @@ Os workflows ocorrem em vários contextos e estágios do processo de gestão de 
 
 O Adobe Campaign usa workflows para:
 
-* Executar campanhas de segregação. Para obter mais informações, consulte [Etapas de implementação](../../workflow/using/building-a-workflow.md#implementation-steps-).
-* Desenvolva campanhas: para cada campanha, a guia **[!UICONTROL Workflow]** permite desenvolver o público-alvo e criar deliveries. Para obter mais informações, consulte [Workflows de campanhas](../../workflow/using/building-a-workflow.md#campaign-workflows).
-* Realizar processos técnicos: limpeza, coleta de informações de rastreamento ou cálculos provisionais. Para obter mais informações, consulte [Workflows técnicos](../../workflow/using/building-a-workflow.md#technical-workflows).
+* Executar campanhas de segregação. [Saiba mais](../../workflow/using/building-a-workflow.md#implementation-steps-)
+* Desenvolva campanhas: para cada campanha, a guia **[!UICONTROL Workflow]** permite desenvolver o público-alvo e criar deliveries. [Saiba mais](../../workflow/using/building-a-workflow.md#campaign-workflows)
+* Realizar processos técnicos: limpeza, coleta de informações de rastreamento ou cálculos provisionais. [Saiba mais](../../workflow/using/building-a-workflow.md#technical-workflows)
 
 Um workflow pode significar uma definição de processo (o modelo de workflow, que é uma representação do que deveria acontecer) e uma instância desse processo (uma instância de workflow, que é uma representação do que realmente está acontecendo).
 
