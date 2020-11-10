@@ -1,8 +1,6 @@
 ---
 title: Sub-workflow
-seo-title: Sub-workflow
-description: Sub-workflow
-seo-description: null
+description: Saiba mais sobre a atividade Sub-fluxo de trabalho
 page-status-flag: never-activated
 uuid: c952633f-1aca-44cf-bb50-a67e9b086030
 contentOwner: sauviat
@@ -11,11 +9,11 @@ audience: workflow
 content-type: reference
 topic-tags: flow-control-activities
 discoiquuid: a4441820-1b3d-4bac-a6e3-1c9c14466d19
-translation-type: ht
-source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
-workflow-type: ht
-source-wordcount: '413'
-ht-degree: 100%
+translation-type: tm+mt
+source-git-commit: 6be6c353c3464839a74ba857d8d93d0f68bc8865
+workflow-type: tm+mt
+source-wordcount: '417'
+ht-degree: 98%
 
 ---
 
