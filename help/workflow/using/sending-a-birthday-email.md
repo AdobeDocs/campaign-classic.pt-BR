@@ -1,8 +1,6 @@
 ---
 title: Envio de um e-mail de aniversário
-seo-title: Envio de um e-mail de aniversário
-description: Envio de um e-mail de aniversário
-seo-description: null
+description: Saiba como enviar um email de aniversário com um fluxo de trabalho
 page-status-flag: never-activated
 uuid: 4d215ff4-a61d-4294-8f15-17c612022577
 contentOwner: sauviat
@@ -11,11 +9,11 @@ audience: workflow
 content-type: reference
 topic-tags: use-cases
 discoiquuid: 6a71f5ee-c8e0-4ac4-acae-6dffbf799d0c
-translation-type: ht
-source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
-workflow-type: ht
-source-wordcount: '880'
-ht-degree: 100%
+translation-type: tm+mt
+source-git-commit: 6be6c353c3464839a74ba857d8d93d0f68bc8865
+workflow-type: tm+mt
+source-wordcount: '882'
+ht-degree: 98%
 
 ---
 
