@@ -8,9 +8,9 @@ product: adobe campaign
 sub-product: Adobe Campaign Classic
 type: Documentation
 translation-type: tm+mt
-source-git-commit: 5f3ecffba2e505ad0bb074f6d635a51d983997e2
+source-git-commit: b8548e8d609ed099433b97b4c0704d27234e81c0
 workflow-type: tm+mt
-source-wordcount: '2151'
+source-wordcount: '2156'
 ht-degree: 96%
 
 ---
@@ -39,7 +39,6 @@ ht-degree: 96%
 + Introdução {#getting-started}
    + Primeiros passos com o Adobe Campaign {#starting-with-adobe-campaign}
       + [Introdução ao Adobe Campaign Classic](platform/using/about-adobe-campaign-classic.md)
-      + [Privacidade e consentimento](platform/using/privacy-and-recommendations.md)
       + [Iniciar o Adobe Campaign](platform/using/launching-adobe-campaign.md)
       + [Área de trabalho do Adobe Campaign](platform/using/adobe-campaign-workspace.md)
       + Perguntas frequentes {#faq}
@@ -54,6 +53,10 @@ ht-degree: 96%
          + [Relatórios](platform/using/faq-reporting.md)
          + [Desenvolvimento](platform/using/faq-developers.md)
       + [Tutoriais](platform/using/tutorials.md)
+   + Privacidade {#privacy}
+      + [Privacidade e consentimento](platform/using/privacy-and-recommendations.md)
+      + [Gerenciamento de privacidade](platform/using/privacy-management.md)
+      + [Solicitações de privacidade](platform/using/privacy-requests.md)
    + Gerenciamento de perfis {#profile-management}
       + [Sobre perfis](platform/using/about-profiles.md)
       + [Edição de um perfil](platform/using/editing-a-profile.md)
