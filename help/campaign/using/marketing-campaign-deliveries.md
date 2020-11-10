@@ -1,8 +1,6 @@
 ---
 title: Deliveries de campanha de marketing
-seo-title: Deliveries de campanha de marketing
-description: Deliveries de campanha de marketing
-seo-description: Saiba mais sobre deliveries de campanha de marketing
+description: Saiba mais sobre deliveries de campanha de marketing
 page-status-flag: never-activated
 uuid: 842b501f-7d65-4450-b7ab-aff3942fb96f
 contentOwner: sauviat
@@ -12,10 +10,10 @@ content-type: reference
 topic-tags: orchestrate-campaigns
 discoiquuid: 8d076211-10a6-4a98-b0d2-29dad154158c
 translation-type: tm+mt
-source-git-commit: 2abd9f987967484cc93009d8961ed6b152cdc354
+source-git-commit: f6e820bd05b95e57b395407ed1e17c11b17cbf84
 workflow-type: tm+mt
-source-wordcount: '2956'
-ht-degree: 100%
+source-wordcount: '2917'
+ht-degree: 95%
 
 ---
 
@@ -24,7 +22,9 @@ ht-degree: 100%
 
 Os deliveries podem ser criados através do painel da campanha, de um workflow de campanha ou diretamente através da visão geral dos deliveries.
 
-![](assets/do-not-localize/how-to-video.png)[Descubra este recurso no vídeo](#create-email-video)
+Quando criados a partir de uma campanha, os delivery serão vinculados a essa campanha e consolidados no nível da campanha.
+
+![](assets/do-not-localize/how-to-video.png)[ Descubra este recurso no vídeo](#create-email-video)
 
 ## Criar deliveries {#creating-deliveries}
 
@@ -32,29 +32,21 @@ Para criar um delivery vinculado a uma campanha, clique no link **[!UICONTROL Ad
 
 ![](assets/campaign_op_add_delivery.png)
 
-As configurações sugeridas são adequadas aos diferentes tipos de delivery: mala direta, email, canais móveis.
-
->[!NOTE]
->
->Para obter mais informações sobre como criar e configurar fornecimentos, consulte a seção [Enviar Mensagens](../../delivery/using/steps-about-delivery-creation-steps.md) .
+As configurações sugeridas são adequadas aos diferentes tipos de delivery: mala direta, email, canais móveis. [Saiba mais](../../delivery/using/steps-about-delivery-creation-steps.md).
 
 ## Seleção da população do target {#selecting-the-target-population}
 
-Para cada delivery, o gerente de campanha definirá:
+Para cada delivery, é possível definir:
 
-* O target principal. Para obter mais informações, consulte [Criar o target principal em um workflow](#building-the-main-target-in-a-workflow) e [Selecionar a população do target](#selecting-the-target-population).
-* O grupo de controle. Para obter mais informações, consulte [Definição de grupo de controle](#defining-a-control-group).
-* Os seed addresses. Para obter mais informações, consulte [esta seção](../../delivery/using/about-seed-addresses.md).
+* A audiência - Saiba mais sobre como [Criar a audiência em um fluxo de trabalho](#building-the-main-target-in-a-workflow) e [Selecionar a população](#selecting-the-target-population)do público alvo.
+* Um grupo de controle - Saiba mais sobre como [Definir um grupo de controle](#defining-a-control-group).
+* Seeds addresses - Saiba mais sobre [esta seção](../../delivery/using/about-seed-addresses.md).
 
-Algumas dessas informações são herdadas do template.
+Some of this information can be inherited from the [template](../../campaign/using/marketing-campaign-templates.md#campaign-templates).
 
->[!NOTE]
->
->Os templates de campanha são apresentados nos [Campaign templates](../../campaign/using/marketing-campaign-templates.md#campaign-templates).
+Para criar o target do delivery, você pode definir critérios de filtragem para os recipients no banco de dados. Este modo de seleção de recipient é apresentado [nesta seção](../../delivery/using/steps-defining-the-target-population.md).
 
-Para criar o target do delivery, você pode definir critérios de filtragem para os recipients no banco de dados. Este modo de seleção de recipient é apresentado na seção [Enviar Mensagens](../../delivery/using/steps-defining-the-target-population.md) .
-
-### Exemplo: delivery para um grupo de recipients {#example--delivering-to-a-group-of-recipients}
+**Exemplo: enviar mensagens para um grupo**
 
 Você pode importar uma população para uma lista e depois direcionar essa lista nas remessas.
 
@@ -68,24 +60,15 @@ Você pode importar uma população para uma lista e depois direcionar essa list
 
 ![](assets/s_user_target_group_next.png)
 
-### Criação do target principal em um workflow {#building-the-main-target-in-a-workflow}
+### Criação da audiência em um fluxo de trabalho {#building-the-main-target-in-a-workflow}
 
-O alvo principal de um delivery também pode ser definido no workflow de definição de metas: esse ambiente gráfico permite criar um destino usando queries, testes e operadores: união, correção de duplicidade, compartilhamento etc.
-
-O guia [Automating with workflows](../../workflow/using/architecture.md) inclui uma descrição detalhada de como o módulo de workflow opera.
+O alvo principal de um delivery também pode ser definido no workflow de definição de metas: esse ambiente gráfico permite criar um destino usando queries, testes e operadores: união, correção de duplicidade, compartilhamento etc. [Saiba mais](../../workflow/using/architecture.md).
 
 >[!IMPORTANT]
 >
->Você não pode configurar mais de 28 workflows na mesma campanha. Acima desse limite, os workflows adicionais não estão visíveis na interface e podem gerar erros.
+>Não é possível criar mais de 28 workflows em uma campanha. Acima desse limite, os workflows adicionais não estão visíveis na interface e podem gerar erros.
 
-### Como criar um email em uma campanha {#create-email-video}
-
-Este vídeo explica como criar uma campanha e um email no Adobe Campaign Classic.
-
->[!VIDEO](https://video.tv.adobe.com/v/25604?quality=12)
-
-
-#### Criação de um workflow para construção do target {#creating-a-targeting-workflow}
+#### Criar o fluxo de trabalho {#creating-a-targeting-workflow}
 
 A definição de alvos pode ser criada por meio de uma combinação de condições de filtragem em uma sequência gráfica em um workflow. Você pode criar populações e subpopulações que serão direcionadas de acordo com suas necessidades. Para exibir o editor de workflow, clique na guia **[!UICONTROL Targeting and workflows]** no painel de campanha.
 
@@ -124,7 +107,7 @@ Você pode criar vários workflows para construção do target para uma única c
 1. Selecione o template **[!UICONTROL New workflow]** e o nome deste workflow.
 1. Clique em **[!UICONTROL OK]** para confirmar a criação do workflow e, em seguida, crie o diagrama para esse workflow.
 
-#### Execução de um workflow {#executing-a-workflow}
+#### Execute the workflow {#executing-a-workflow}
 
 Os workflows para construção do target podem ser iniciados manualmente por meio do botão **[!UICONTROL Start]** na barra de ferramentas, desde que você tenha os direitos apropriados.
 
@@ -275,7 +258,7 @@ Você pode definir uma nova população a ser usada como um grupo de controle. E
 
 ## Iniciar um delivery {#starting-a-delivery}
 
-Depois que todas as aprovações tiverem sido concedidas, o delivery estará pronto para ser iniciado. O procedimento de delivery depende do tipo de delivery. Para deliveries de email ou canais móveis, consulte [Iniciar um delivery online](#starting-an-online-delivery) e para deliveries por mala direta, consulte [Iniciar um delivery offline ](#starting-an-offline-delivery).
+Depois que todas as aprovações tiverem sido concedidas, o delivery estará pronto para ser iniciado. O procedimento de delivery depende do tipo de delivery. For email or mobile channel deliveries, see [Starting an online delivery](#starting-an-online-delivery), and for direct mail deliveries, see [Starting an offline delivery](#starting-an-offline-delivery).
 
 ### Iniciar um delivery on-line {#starting-an-online-delivery}
 
@@ -476,3 +459,9 @@ O modelo de exportação deve estar associado ao provedor de serviços seleciona
 >[!NOTE]
 >
 >Para saber mais sobre exportações, consulte a seção [Introdução](../../platform/using/generic-imports-and-exports.md) .
+
+#### Como criar um email em uma campanha {#create-email-video}
+
+Este vídeo explica como criar uma campanha e um email no Adobe Campaign Classic.
+
+>[!VIDEO](https://video.tv.adobe.com/v/25604?quality=12)
