@@ -10,7 +10,7 @@ content-type: reference
 topic-tags: latest-release-notes
 discoiquuid: 5df34f55-135a-4ea8-afc2-f9427ce5ae7b
 translation-type: tm+mt
-source-git-commit: 48acf8cbc52a54a2dd08f0b8f29be57d4e5e006f
+source-git-commit: 36fef519be93b33d55a96992c1ce234f2eaea696
 workflow-type: tm+mt
 source-wordcount: '1820'
 ht-degree: 4%
@@ -60,7 +60,7 @@ _27 de outubro de 2020_
 </thead> 
 <tbody> 
 <tr> 
-<td> <p>As notificações por push do Android foram aprimoradas para suportar a API HTTP v1 do FCM para autenticação de canal por push do Android. </p>
+<td> <p><a href="../../delivery/using/configuring-the-mobile-application-android.md#creating-notification-message">As notificações</a> por push do Android foram aprimoradas para suportar a API HTTP v1 do FCM para autenticação de canal por push do Android. </p>
 <p>Com a nova versão da API compatível, agora é possível enviar mensagens de notificação do FCM que fornecem recursos avançados de mensagens de push. <a href="https://firebase.google.com/docs/cloud-messaging/migrate-v1">Saiba mais</a></p> 
 <p>Saiba como configurar a API HTTP v1 do FCM para Android no Adobe Campaign nesta <a href="../../delivery/using/configuring-the-mobile-application-android.md">seção</a> .</p>
 </td> 
