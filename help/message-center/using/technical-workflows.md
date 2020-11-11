@@ -11,11 +11,11 @@ audience: message-center
 content-type: reference
 topic-tags: instance-configuration
 discoiquuid: 2e648e63-06d2-4e8f-9934-066a41d18eac
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: f7527a2d9b76e34fbaa2c9471c44a7a1e7e074d7
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '309'
-ht-degree: 88%
+ht-degree: 100%
 
 ---
 
@@ -28,11 +28,11 @@ Os vários workflows técnicos relacionados a mensagens transacionais (Centro de
 
 ## Workflows da instância de controle {#control-instance-workflows}
 
-Na instância de controle, caso tenha uma ou várias instâncias de execução registradas, é necessário criar um fluxo de trabalho de arquivamento para cada **[!UICONTROL Message Center execution instance]** conta externa. Clique no botão **[!UICONTROL Create the archiving workflow]** para criar e iniciar o workflow.
+Na instância de controle, caso tenha uma ou várias instâncias de execução registradas, é necessário criar um fluxo de trabalho de arquivamento para cada conta externa **[!UICONTROL Message Center execution instance]**. Clique no botão **[!UICONTROL Create the archiving workflow]** para criar e iniciar o workflow.
 
 ![](assets/messagecenter_archiving_002.png)
 
-These workflows can then be accessed from the **Administration > Production > Message Center** folder. Após criado, os workflows de arquivamento são iniciados automaticamente.
+Os workflows de arquivamento podem ser acessados na pasta **Administration > Production > Message Center**. Depois de criados, os workflows de arquivamento são iniciados automaticamente.
 
 <!--**Minimal architecture**
 
