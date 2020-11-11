@@ -9,11 +9,11 @@ audience: platform
 content-type: reference
 topic-tags: starting-with-adobe-campaign
 discoiquuid: 16dbe423-018f-4666-9901-2120a8dc609a
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: cb96a238f4c8e413377ce6102b065b91badfe6db
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '887'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -39,7 +39,7 @@ Verifique a [versão e o número de compilação](../../platform/using/launching
 
 ## Quais são as diferenças ao trabalhar em um ambiente no local ou hospedado? {#what-are-the-differences-when-working-on-premise-vs--in-a-hosted-environment-}
 
-O Adobe Campaign Classic vem com um conjunto de módulos e opções. The availability of these modules and their configuration can depend on the [type of deployment](../../installation/using/hosting-models.md) of your installation: hosted (Managed Services), hybrid or on-premise.
+O Adobe Campaign Classic vem com um conjunto de módulos e opções. A disponibilidade desses módulos e sua configuração podem depender do [tipo de implantação](../../installation/using/hosting-models.md) da sua instalação: hospedada (Managed Services), híbrida ou local.
 
 [Clique aqui para saber mais](../../installation/using/capability-matrix.md).
 
@@ -87,7 +87,7 @@ Um workflow também pode envolver um ou mais operadores a serem notificados ou q
 
 [Clique aqui para saber mais](../../delivery/using/about-email-channel.md).
 
-![](assets/do-not-localize/how-to-video.png) [Descubra isso em vídeo](https://docs.adobe.com/content/help/pt-BR/campaign-classic-learn/tutorials/getting-started/creating-a-campaign-and-an-email.html)
+![](assets/do-not-localize/how-to-video.png) [Descubra neste vídeo](https://docs.adobe.com/content/help/pt-BR/campaign-classic-learn/tutorials/getting-started/creating-a-campaign-and-an-email.html)
 
 ## Como enviar mensagens SMS? {#how-to-send-sms-messages-}
 
