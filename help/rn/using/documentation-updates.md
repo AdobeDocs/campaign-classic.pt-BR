@@ -13,7 +13,7 @@ translation-type: tm+mt
 source-git-commit: 36fef519be93b33d55a96992c1ce234f2eaea696
 workflow-type: tm+mt
 source-wordcount: '3932'
-ht-degree: 95%
+ht-degree: 98%
 
 ---
 
@@ -34,34 +34,34 @@ A seção Privacidade foi movida e aprimorada com duas novas seções: [Gerencia
 
 **Novos recursos incluídos na versão 20.3**
 
-Melhorias nas notificações por push para iOS - [Leia mais](../../delivery/using/configuring-the-mobile-application.md)
+Melhorias nas notificações por push para iOS - [Saiba mais](../../delivery/using/configuring-the-mobile-application.md)
 
-Melhorias nas notificações por push para Android - [Leia mais](../../delivery/using/configuring-the-mobile-application-android.md)
+Melhorias nas notificações por push para Android - [Saiba mais](../../delivery/using/configuring-the-mobile-application-android.md)
 
-**Outras atualizações de documentação incluídas na versão**
+**Outras atualizações de documentação que vêm com a versão**
 
 A matriz de Compatibilidade foi atualizada. [Leia mais](../../rn/using/compatibility-matrix.md)
 
 A página de recursos obsoletos e removidos foi atualizada. [Leia mais](../../rn/using/deprecated-features.md)
 
-As notas de versão e a matriz de compatibilidade para a versão Gold Standard estão disponíveis em uma seção dedicada.
+As notas de versão e a matriz de compatibilidade para a versão Gold Standard estão disponíveis em uma seção exclusiva.
 [Leia mais](../../rn/using/gold-standard.md#gs-10).
 
-A integração acionadora originalmente com base na configuração de autenticação oAUTH para acessar o pipeline agora foi alterada e movida para E/S de Adobe. [Leia mais](../../integrations/using/configuring-adobe-io.md)
+Triggers integration originally based on oAUTH authentication setup to access pipeline has now been changed and moved to Adobe I/O. [Read more](../../integrations/using/configuring-adobe-io.md)
 
 **Outras atualizações**
 
 As páginas de documentação foram atualizadas para refletir a atualização do Tomcat 8.
 
-Detalhes foram adicionados na descrição da caixa &#39;Sobre&#39; na seção &#39;Obtendo sua versão do Adobe Campaign&#39;. [Leia mais](../../platform/using/launching-adobe-campaign.md#getting-your-campaign-version)
+Detalhes foram adicionados na descrição da caixa “Sobre” na seção “Obtendo sua versão do Adobe Campaign”. [Leia mais](../../platform/using/launching-adobe-campaign.md#getting-your-campaign-version)
 
-Diretrizes para executar uma atualização de compilação foram adicionadas à seção &#39;Atualização do Adobe Campaign Classic&#39;. Leia mais [Leia mais](../../production/using/build-upgrade.md)
+Diretrizes para executar uma atualização de build foram adicionadas à seção “Atualização do Adobe Campaign Classic”. Saiba mais [Saiba mais](../../production/using/build-upgrade.md)
 
-As perguntas frequentes sobre a atualização da compilação da Campanha foram adicionadas às perguntas mais frequentes da Campanha. Leia mais [Leia mais](../../platform/using/faq-build-upgrade.md)
+As perguntas frequentes sobre a atualização da build do Campaign foram adicionadas às perguntas mais frequentes do Campaign. Saiba mais [Saiba mais](../../platform/using/faq-build-upgrade.md)
 
-Os modelos de hospedagem local, hospedados e híbridos da campanha agora são descritos em uma seção dedicada. [Leia mais](../../installation/using/hosting-models.md)
+Os modelos de hospedagem local, hospedados e híbridos do Campaign agora são descritos em uma seção exclusiva. [Leia mais](../../installation/using/hosting-models.md)
 
-A matriz de capacidade de campanha por modelo de hospedagem foi atualizada e movida no guia de instalação. [Leia mais](../../installation/using/capability-matrix.md)
+A matriz de recursos do Campaign por modelo de hospedagem foi atualizada e movida para a guia Instalação. [Leia mais](../../installation/using/capability-matrix.md)
 
 A seção de recursos avançados dos relatórios do Campaign foi aprimorada para detalhar como usar parâmetros de URL e variáveis em relatórios personalizados. [Leia mais](../../reporting/using/advanced-functionalities.md)
 
@@ -413,7 +413,7 @@ Um novo artigo da knowledge base sobre como usar o catálogo de oferta no Adobe 
 
 A seção Sub-workflow activity foi aprimorada com um exemplo de uso. [Leia mais](../../workflow/using/sub-workflow.md)
 
-The [Campaign Classic On-premise &amp; Hosted capability matrix](../../installation/using/capability-matrix.md) page has been updated with information relating to Email BCC.
+A página [Matriz de recursos no local e hospedada do Campaign Classic](../../installation/using/capability-matrix.md) foi atualizada com informações relacionadas a email Cco.
 
 A documentação de Mensagens transacionais foi atualizada com uma nota relacionada à publicação do modelo. [Leia mais](https://docs.campaign.adobe.com/doc/AC/en/MCE_Template_publication.html)
 
