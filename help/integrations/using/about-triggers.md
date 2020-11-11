@@ -13,7 +13,7 @@ translation-type: tm+mt
 source-git-commit: 48acf8cbc52a54a2dd08f0b8f29be57d4e5e006f
 workflow-type: tm+mt
 source-wordcount: '228'
-ht-degree: 89%
+ht-degree: 93%
 
 ---
 
@@ -39,4 +39,4 @@ O processo [!DNL pipelined] está sempre em execução no servidor de marketing 
 
 O processo [!DNL pipelined] faz logon na Experience Cloud usando um serviço de autenticação e envia uma chave privada. O serviço de autenticação retorna um token. O token é usado para a autenticação ao recuperar os eventos.
 
-For more information on authentication, refer to this [page](../../integrations/using/configuring-adobe-io.md).
+Para obter mais informações sobre autenticação, consulte esta [página](../../integrations/using/configuring-adobe-io.md).
