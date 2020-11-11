@@ -11,11 +11,11 @@ audience: interaction
 content-type: reference
 topic-tags: managing-an-offer-catalog
 discoiquuid: 010c88f4-9444-448f-bb7b-7191517d2e23
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 8fc3e793ec544948049fc122b44b6bffdebecba0
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '806'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -116,7 +116,7 @@ Para criar um peso em uma oferta, aplique as seguintes etapas:
    >
    >Se um target for elegível para vários pesos de uma oferta selecionada, o mecanismo manterá o melhor (mais alto) peso. Ao ligar para o mecanismo de oferta, uma oferta é selecionada no máximo uma vez por contato.
 
-### Summary of offer eligibility rules {#a-summary-of-offer-eligibility-rules}
+### Resumo das regras de qualificação de oferta {#a-summary-of-offer-eligibility-rules}
 
 Quando a configuração for concluída, um resumo das regras de eligibilidade estará disponível no painel de ofertas.
 
