@@ -11,7 +11,7 @@ translation-type: tm+mt
 source-git-commit: b8548e8d609ed099433b97b4c0704d27234e81c0
 workflow-type: tm+mt
 source-wordcount: '2156'
-ht-degree: 96%
+ht-degree: 99%
 
 ---
 
@@ -23,9 +23,9 @@ ht-degree: 96%
 + Notas de versão {#release-notes}
    + [Introdução às atualizações](rn/using/rn-overview.md)
    + [Versão mais recente](rn/using/latest-release.md)
-   + Gold Standard Release {#gs-release}
+   + Versão Gold Standard {#gs-release}
       + [Notas de versão do Gold Standard](rn/using/gold-standard.md)
-      + [Matriz de compatibilidade Gold Standard](rn/using/compatibility-matrix-gs.md)
+      + [Matriz de compatibilidade do Gold Standard](rn/using/compatibility-matrix-gs.md)
    + Versões anteriores {#previous-releases}
       + [Versão 20.2](rn/using/release--20-2.md)
       + [Versão 20.1](rn/using/release--20-1.md)
@@ -44,7 +44,7 @@ ht-degree: 96%
       + Perguntas frequentes {#faq}
          + [Perguntas comuns](platform/using/common-questions.md)
          + [Principais conceitos](platform/using/faq-key-concepts.md)
-         + [Atualização de build](platform/using/faq-build-upgrade.md)
+         + [Atualização da build](platform/using/faq-build-upgrade.md)
          + [Públicos](platform/using/faq-audiences.md)
          + [Criar mensagens](platform/using/faq-designing.md)
          + [Envio de mensagens](platform/using/faq-messages.md)
@@ -606,13 +606,13 @@ ht-degree: 96%
       + [Implantação empresarial](installation/using/enterprise-deployment.md)
       + [Implantação Mid-sourcing](installation/using/mid-sourcing-deployment.md)
       + [Power Boster e Power Cluster](installation/using/power-booster-and-power-cluster.md)
-   + Campanha no Windows {#installing-campaign-in-windows-}
+   + Campaign no Windows {#installing-campaign-in-windows-}
       + [Antes de instalar o Campaign no Windows](installation/using/prerequisites-of-campaign-installation-in-windows.md)
       + [Instalação do servidor](installation/using/installing-the-server.md)
       + [Integração em um servidor Web para Windows](installation/using/integration-into-a-web-server-for-windows.md)
       + [Disponibilidade do console do cliente para Windows](installation/using/client-console-availability-for-windows.md)
       + [Instalação do console do cliente](installation/using/installing-the-client-console.md)
-   + Campanha no Linux  {#installing-campaign-in-linux-}
+   + Campaign no Linux  {#installing-campaign-in-linux-}
       + [Antes de instalar o Campaign no Linux](installation/using/prerequisites-of-campaign-installation-in-linux.md)
       + [Instalação de pacotes com Linux](installation/using/installing-packages-with-linux.md)
       + [Integração em um servidor Web para Linux](installation/using/integration-into-a-web-server-for-linux.md)
