@@ -1,5 +1,5 @@
 ---
-title: Configuração do aplicativo iOS para dispositivos móveis no Adobe Campaign
+title: Configuração do aplicativo móvel iOS no Adobe Campaign
 description: Saiba como configurar seu aplicativo móvel para iOS
 page-status-flag: never-activated
 uuid: aff1a4a0-34e7-4ce0-9eb3-30a8de1380f2
@@ -9,11 +9,11 @@ audience: delivery
 content-type: reference
 topic-tags: sending-push-notifications
 discoiquuid: 7b5a1ad6-da5a-4cbd-be51-984c07c8d0b3
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 16985c1ddcd380cfc1ca4960b35bb5e78628f464
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '824'
-ht-degree: 66%
+ht-degree: 100%
 
 ---
 
@@ -24,21 +24,21 @@ Depois que o pacote for instalado, você poderá definir as configurações do a
 
 >[!NOTE]
 >
->Para saber como configurar seu aplicativo para Android e como criar um delivery para Android, consulte esta [seção](../../delivery/using/configuring-the-mobile-application-android.md).
+>Para saber como configurar seu aplicativo para Android e criar um delivery para Android, consulte esta [seção](../../delivery/using/configuring-the-mobile-application-android.md).
 
-## Configuring iOS external account {#configuring-external-account-ios}
+## Configuração da conta externa para iOS {#configuring-external-account-ios}
 
-Para iOS, o conector HTTP/2 do iOS envia notificações para os APNs HTTP/2.
+Para iOS, o conector HTTP/2 do iOS envia notificações para o HTTP/2 APNS.
 
 Para configurar esse conector, siga estas etapas:
 
 1. Vá para **[!UICONTROL Administration > Platform > External accounts]**.
 1. Selecione a conta externa **[!UICONTROL iOS routing]**.
-1. Na **[!UICONTROL Connector]** guia, preencha o **[!UICONTROL Access URL of the connector]** campo com o seguinte URL: ```http://localhost:8080/nms/jsp/iosHTTP2.jsp```
+1. Na guia **[!UICONTROL Connector]**, preencha o campo **[!UICONTROL Access URL of the connector]** com o seguinte URL: ```http://localhost:8080/nms/jsp/iosHTTP2.jsp```
 
    >[!NOTE]
    >
-   > A partir da versão 20.3 da Campanha, o conector binário herdado do iOS será descontinuado. Se estiver usando esse conector, é necessário adaptar sua implementação de acordo. [Saiba mais](https://helpx.adobe.com/campaign/kb/migrate-to-http2.html)
+   > A partir da versão 20.3 do Campaign, o conector binário herdado do iOS se tornará obsoleto. Se estiver usando este conector, precisará adaptar sua implementação adequadamente. [Saiba mais](https://helpx.adobe.com/br/campaign/kb/migrate-to-http2.html)
 
    ![](assets/nmac_connectors.png)
 
@@ -46,7 +46,7 @@ Para configurar esse conector, siga estas etapas:
 
 O conector iOS está configurado. Você pode começar a criar seu serviço.
 
-## Configuração do serviço iOS {#configuring-ios-service}
+## Configuração de serviço iOS {#configuring-ios-service}
 
 >[!CAUTION]
 >
@@ -71,13 +71,13 @@ O conector iOS está configurado. Você pode começar a criar seu serviço.
 
    ![](assets/nmac_service_2.png)
 
-1. Crie seus aplicativos de desenvolvimento e produção do iOS. Para obter mais informações, consulte esta [seção](../../delivery/using/configuring-the-mobile-application.md#creating-ios-app).
+1. Crie seus aplicativos iOS de desenvolvimento e produção. Para obter mais informações, consulte esta [seção](../../delivery/using/configuring-the-mobile-application.md#creating-ios-app).
 
 ## Criação de aplicativos iOS para dispositivos móveis {#creating-ios-app}
 
 Depois de criar seu serviço, agora é necessário criar seu aplicativo iOS:
 
-1. Em seu serviço recém-criado, clique no **[!UICONTROL Add]** botão para selecionar o tipo de aplicativo.
+1. Em seu serviço recém-criado, clique no botão **[!UICONTROL Add]** para selecionar o tipo de aplicativo.
 
    ![](assets/nmac_service_2.png)
 
@@ -86,7 +86,7 @@ Depois de criar seu serviço, agora é necessário criar seu aplicativo iOS:
    ![](assets/nmac_ios_2.png)
 
 1. Como opção, você pode enriquecer um conteúdo de mensagem de push com alguns **[!UICONTROL Application variables]** se necessário. Eles são totalmente personalizáveis e uma parte da carga da mensagem é enviada para o dispositivo móvel.
-No exemplo a seguir, adicionamos **mediaURl** e **mediaExt** para criar notificações por push avançadas e, em seguida, fornecemos ao aplicativo  a imagem que será exibida na notificação.
+No exemplo a seguir, adicionamos **mediaURl** e **mediaExt** para criar notificações por push avançadas e, em seguida, fornecemos ao aplicativo a imagem que será exibida na notificação.
 
    ![](assets/nmac_ios_3.png)
 
@@ -106,15 +106,15 @@ No exemplo a seguir, adicionamos **mediaURl** e **mediaExt** para criar notifica
    >
    > O **[!UICONTROL Integration key]** é totalmente personalizável com o valor da string, mas precisa ser exatamente o mesmo especificado no SDK.
 
-1. Select one of the out-of-the-box icons from the **[!UICONTROL Application icon]** field to personalize mobile application in your service.
+1. Selecione um dos ícones prontos do campo **[!UICONTROL Application icon]** para personalizar o aplicativo para dispositivos móveis em seu serviço.
 
-1. Selecione **[!UICONTROL Authentication mode]**. Observe que você sempre pode alterar o modo de autenticação posteriormente na **[!UICONTROL Certificate]** guia do aplicativo móvel.
-   * **[!UICONTROL Certificate-based authentication]**: Clique em **[!UICONTROL Enter the certificate...]** e selecione sua chave p12 e digite a senha fornecida pelo desenvolvedor do aplicativo móvel.
-   * **[!UICONTROL Token-based authentication]**: Preencha as configurações de conexão **[!UICONTROL Key ID]** e **[!UICONTROL Team ID]** selecione seu certificado p8 clicando em **[!UICONTROL Bundle ID]** **[!UICONTROL Enter the private key]**. For more on **[!UICONTROL Token-based authentication]**, refer to [Apple documentation](https://developer.apple.com/documentation/usernotifications/setting_up_a_remote_notification_server/establishing_a_token-based_connection_to_apnsToken-based).
+1. Selecione **[!UICONTROL Authentication mode]**. Observe que você sempre pode alterar o modo de autenticação posteriormente na guia **[!UICONTROL Certificate]** do aplicativo móvel.
+   * **[!UICONTROL Certificate-based authentication]**: Clique em **[!UICONTROL Enter the certificate...]** e selecione em seguida a chave p12, inserindo a senha fornecida pelo desenvolvedor de aplicativos para dispositivos móveis.
+   * **[!UICONTROL Token-based authentication]**: Preencha as configurações de conexão **[!UICONTROL Key ID]**, **[!UICONTROL Team ID]** e **[!UICONTROL Bundle ID]** e então selecione seu certificado p8 clicando em **[!UICONTROL Enter the private key]**. Para obter mais informações sobre **[!UICONTROL Token-based authentication]**, consulte a [documentação da Apple](https://developer.apple.com/documentation/usernotifications/setting_up_a_remote_notification_server/establishing_a_token-based_connection_to_apnsToken-based).
 
    >[!NOTE]
    >
-   > O Adobe recomenda usar **[!UICONTROL Token-based authentication]** para a configuração do iOS, pois esse modo de autenticação é mais seguro e não está vinculado à expiração do certificado.
+   > A Adobe recomenda o uso de **[!UICONTROL Token-based authentication]** para a configuração do iOS, pois esse modo de autenticação é mais seguro e não está vinculado à expiração do certificado.
 
    ![](assets/nmac_ios_4.png)
 
@@ -128,7 +128,7 @@ No exemplo a seguir, adicionamos **mediaURl** e **mediaExt** para criar notifica
 
 Seu aplicativo iOS está pronto para ser usado no Campaign Classic.
 
-## Creating an iOS rich notification {#creating-ios-delivery}
+## Criação de uma notificação avançada do iOS {#creating-ios-delivery}
 
 Com o iOS 10 ou superior, é possível gerar notificações ricas. O Adobe Campaign pode enviar notificações usando variáveis que permitirão ao dispositivo exibir uma notificação rica.
 
