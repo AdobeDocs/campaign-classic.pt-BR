@@ -1,6 +1,6 @@
 ---
 title: 'Configuração do aplicativo móvel no Adobe Campaign '
-description: Saiba como start com a configuração do aplicativo móvel
+description: Saiba como iniciar a configuração do aplicativo móvel
 page-status-flag: never-activated
 uuid: aff1a4a0-34e7-4ce0-9eb3-30a8de1380f2
 contentOwner: sauviat
@@ -9,24 +9,24 @@ audience: delivery
 content-type: reference
 topic-tags: sending-push-notifications
 discoiquuid: 7b5a1ad6-da5a-4cbd-be51-984c07c8d0b3
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: fd75f7f75e8e77d7228233ea311dd922d100417c
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '252'
-ht-degree: 57%
+ht-degree: 100%
 
 ---
 
 
 # Introdução à configuração do aplicativo
 
-Nesta seção, é possível encontrar uma amostra de configuração com base em uma empresa que vende pacotes de feriados online. Seu aplicativo móvel (Neotrips) está disponível para os clientes em duas versões: Neotrips para Android e Neotrips para iOS.
+Encontre abaixo a amostra da configuração com base em uma empresa que vende pacotes de viagem online. Seu aplicativo móvel (Neotrips) está disponível para os clientes em duas versões: Neotrips para Android e Neotrips para iOS.
 
 Para enviar notificações por push no Adobe Campaign, é necessário:
 
-* Crie um serviço de informação do tipo **[!UICONTROL Mobile application]** para o aplicativo para dispositivos móveis Neotrips. Consulte [esta seção para iOS](../../delivery/using/configuring-the-mobile-application.md#configuring-ios-service). e [esta seção para Android](../../delivery/using/configuring-the-mobile-application-android.md#configuring-android-service).
-* Adicione as versões iOS e Android do aplicativo a este serviço.
-* Crie um delivery para iOS e Android. [Consulte esta página](../../delivery/using/creating-notifications.md).
+* Criar um serviço de informação do tipo **[!UICONTROL Mobile application]** para o aplicativo para dispositivos móveis Neotrips. Consulte [esta seção para iOS](../../delivery/using/configuring-the-mobile-application.md#configuring-ios-service). e [esta seção para Android](../../delivery/using/configuring-the-mobile-application-android.md#configuring-android-service).
+* Adicionar as versões iOS e Android do aplicativo a este serviço.
+* Criar um delivery para iOS e Android. [Consulte esta página](../../delivery/using/creating-notifications.md).
 
 ![](assets/nmac_service_diagram.png)
 
@@ -36,7 +36,7 @@ Para enviar notificações por push no Adobe Campaign, é necessário:
 
 ## Instalação do pacote {#installing-package-ios}
 
-Como cliente híbrido/hospedado, entre em contato com a equipe de Atendimento ao cliente da Adobe para acessar o canal de notificação por push na Campanha.
+Como um cliente híbrido/hospedado, entre em contato com a equipe de Atendimento ao cliente para acessar o canal de notificação por push no Campaign.
 
 Como cliente local, é necessário executar as seguintes etapas de instalação:
 
