@@ -13,7 +13,7 @@ translation-type: tm+mt
 source-git-commit: 36fef519be93b33d55a96992c1ce234f2eaea696
 workflow-type: tm+mt
 source-wordcount: '429'
-ht-degree: 75%
+ht-degree: 95%
 
 ---
 
@@ -28,21 +28,21 @@ Essa frequência regular atualizações tem como objetivo fazer com que você te
 
 ## Status da versão{#rn-statuses}
 
-Um status é associado a cada compilação. Você encontrará abaixo a lista de status e como interpretá-los.
+Um status é associado a cada build. Você encontrará abaixo a lista de status e como interpretá-los.
 
-![](assets/do-not-localize/green3.png) **Disponibilidade** geral (GA) - validada na produção e recomendada pelo Adobe.
+![](assets/do-not-localize/green3.png) **Disponibilidade geral** (DG) - validada na produção e recomendada pela Adobe.
 
 Os **últimos builds** do GA são: [Versão](../../rn/using/gold-standard.md#gs-10) Gold Standard 10 e versão [Campaign 20.2.3](../../rn/using/release--20-2.md#release-20-2-3-build-9182)
 
-![](assets/do-not-localize/limited3.png) **Disponibilidade** limitada (LA) - Somente implantação sob demanda.
+![](assets/do-not-localize/limited3.png) **Disponibilidade limitada** (DL) - somente instalação sob demanda.
 
-![](assets/do-not-localize/blue3.png) **Release Candidate** (RC) - Versão mais recente com novos recursos.
+![](assets/do-not-localize/blue3.png) **Versão candidata** (VC) - versão mais recente com novos recursos.
 
-A **última compilação** RC é a versão [Campaign Classic 20.3](../../rn/using/latest-release.md)
+The **last RC build** is [Campaign Classic 20.3 release](../../rn/using/latest-release.md)
 
-![](assets/do-not-localize/orange3.png) **Não mais disponível** - É necessário atualizar para uma versão mais recente.
+![](assets/do-not-localize/orange3.png) **Indisponível** - é necessário atualizar para uma build mais recente.
 
-![](assets/do-not-localize/red3.png) **Obsoleto** - a atualização para uma versão mais recente é obrigatória.
+![](assets/do-not-localize/red3.png) **Obsoleto** - a atualização para uma build mais recente é obrigatória.
 
 ## Recomendações{#recommendations}
 
@@ -56,12 +56,12 @@ Como cliente hospedado (Managed Service ou Hybrid), você precisa entrar em cont
 
 Como usuário local, você pode fazer a atualização. Para isso, [baixe a build estável mais recente](https://experience.adobe.com/#/downloads/content/software-distribution/en/campaign.html) e atualize todos os seus ambientes. Saiba mais sobre o [processo de atualização](../../production/using/build-upgrade.md) e consulte as [perguntas frequentes sobre atualização de build](../../platform/using/faq-build-upgrade.md).
 
-### Padrão Gold{#upgrade-for-gold-standard-users}
+### Gold Standard{#upgrade-for-gold-standard-users}
 
-As a Gold Standard user, you will automatically benefit from the Gold Standard upgrade with the [latest GA build](../../rn/using/gold-standard.md#gs-10) without any action. [Saiba mais](https://helpx.adobe.com/br/campaign/kb/gold-standard.html).
+Como usuário Gold Standard, você se beneficiará automaticamente da atualização Gold Standard com a [build de DG mais recente](../../rn/using/gold-standard.md#gs-10), sem ter de tomar nenhuma ação. [Saiba mais](https://helpx.adobe.com/br/campaign/kb/gold-standard.html).
 
 >[!NOTE]
->A matriz de compatibilidade para Gold Standard está disponível na matriz de compatibilidade [GA](../../rn/using/compatibility-matrix-gs.md).
+>A matriz de compatibilidade para Gold Standard está disponível na [matriz de compatibilidade de DG](../../rn/using/compatibility-matrix-gs.md).
 
 ## Suporte e outros links úteis{#support}
 
@@ -70,4 +70,4 @@ As a Gold Standard user, you will automatically benefit from the Gold Standard u
 * [Atualizações mais recentes da documentação](../../rn/using/documentation-updates.md)
 * [Recursos descontinuados e removidos](../../rn/using/deprecated-features.md)
 
-Para ser informado sobre novos lançamentos de solução da Experience Cloud, inscreva-se na [atualização prioritária de produto da Adobe](https://www.adobe.com/br/subscription/priority-product-update.html).
+Para ser informado sobre novos lançamentos de solução da Experience Cloud, inscreva-se na [atualização prioritária de produto da Adobe](https://www.adobe.com/subscription/priority-product-update.html).
