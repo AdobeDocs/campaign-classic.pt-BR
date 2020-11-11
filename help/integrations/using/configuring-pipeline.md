@@ -13,7 +13,7 @@ translation-type: tm+mt
 source-git-commit: 2d0d2d4eefc67312e1b9a8edc7ae88def2980ef1
 workflow-type: tm+mt
 source-wordcount: '906'
-ht-degree: 20%
+ht-degree: 84%
 
 ---
 
@@ -21,7 +21,7 @@ ht-degree: 20%
 # Configuração de pipeline {#configuring-pipeline}
 
 Parâmetros de autenticação, como ID do cliente, chave privada e ponto de entrada de autenticação, são configurados nos arquivos de configuração da instância.
-A lista de acionadores a serem processados é configurada em uma opção no formato JSON.
+A lista de acionadores que serão processados é configurada em uma opção em formato JSON.
 Os acionadores são usados para segmentação por um workflow de campanha que envia emails. A campanha é configurada para que um cliente que tenha ambos os eventos de acionador receba um email.
 
 >[!CAUTION]
@@ -44,26 +44,26 @@ Você também precisará:
 
 ## Arquivos de autenticação e configuração {#authentication-configuration}
 
-A autenticação é necessária, pois o pipeline está hospedado no Adobe Experience Cloud.
-Ele usa um par de chaves públicas e privadas. Esse processo tem a mesma função de usuário/senha, mas é mais seguro.
+A autenticação é necessária, pois o pipeline está hospedado na Adobe Experience Cloud.
+Ele usa um par de chaves públicas e privadas. Esse processo tem a mesma função de um usuário/senha, porém é mais seguro.
 A autenticação é compatível com o Marketing Cloud por meio do Projeto de E/S do Adobe.
 
 ## Etapa 1: Criando/atualizando projetos de E/S de Adobe {#creating-adobe-io-project}
 
 Para clientes hospedados, você pode criar um ticket de atendimento ao cliente para habilitar sua organização com tokens de conta técnica de E/S do Adobe para a integração de Acionadores.
 
-Para clientes locais, consulte a página [Configuração de E/S de Adobe para acionadores](../../integrations/using/configuring-adobe-io.md) Adobe Experience Cloud. Observe que é necessário selecionar **[!UICONTROL Adobe Analytics]** ao adicionar a API à credencial de E/S do Adobe.
+For On Premise customers, refer to the [Configuring Adobe I/O for Adobe Experience Cloud Triggers](../../integrations/using/configuring-adobe-io.md) page. Note that you need to select **[!UICONTROL Adobe Analytics]** while adding API to the Adobe I/O credential.
 
-## Etapa 2: Configuração da opção de pipeline NmsPipeline_Config {#configuring-nmspipeline}
+## Etapa 2: configurar a opção de pipeline NmsPipeline_Config {#configuring-nmspipeline}
 
-Depois que a autenticação for definida, o pipeline recuperará os eventos. Ele processará somente acionadores configurados no Adobe Campaign. O acionador deve ter sido gerado da Adobe Analytics e enviado para o pipeline que processará somente acionadores configurados no Adobe Campaign.
+Depois que a autenticação for definida, o pipeline recuperará os eventos. Ele processará somente acionadores configurados no Adobe Campaign. O acionador deve ter sido gerado pelo Adobe Analytics e enviado para o pipeline que processará somente acionadores configurados no Adobe Campaign.
 A opção também pode ser configurada com um curinga para capturar todos os acionadores independentemente do nome.
 
 1. No Adobe Campaign, acesse o menu de opções em **[!UICONTROL Administration]** > **[!UICONTROL Platform]** > **[!UICONTROL Options]** no **[!UICONTROL Explorer]**.
 
 1. Selecione a opção **[!UICONTROL NmsPipeline_Config]**.
 
-1. No **[!UICONTROL Value (long text)]** campo, você pode colar o seguinte código JSON, que especifica dois acionadores. Você precisa remover os comentários.
+1. No campo **[!UICONTROL Value (long text)]**, você pode colar o seguinte código JSON, que especifica dois acionadores. Remova os comentários.
 
    ```
    {
@@ -104,26 +104,26 @@ A opção também pode ser configurada com um curinga para capturar todos os aci
    }
    ```
 
-### The Consumer parameter {#consumer-parameter}
+### O parâmetro do consumidor {#consumer-parameter}
 
-O gasoduto funciona como um modelo de fornecedor e de consumidor. As mensagens são consumidas somente para um consumidor individual: cada consumidor recebe sua própria cópia das mensagens.
+O pipeline funciona com um modelo de fornecedor e consumidor. As mensagens são consumidas somente para um consumidor individual: cada consumidor recebe sua própria cópia das mensagens.
 
-The **Consumer** parameter identifies the instance as one of these consumers. A identidade da instância chamará o pipeline. Você pode preenchê-lo com o nome da instância que pode ser encontrado na página Monitoramento do Console do cliente.
+O parâmetro **consumidor** identifica a instância como um desses consumidores. A identidade da instância chamará o pipeline. Você pode preenchê-lo com o nome da instância que pode ser encontrado na página Monitoramento do console do cliente.
 
 O serviço de pipeline rastreia as mensagens recuperadas por cada consumidor. Usar consumidores diferentes para instâncias diferentes permite que você se certifique de que cada mensagem seja enviada para cada instância.
 
-### Recomendações da opção Pipeline {#pipeline-option-recommendation}
+### Recomendações da opção pipeline {#pipeline-option-recommendation}
 
 Para configurar a opção Pipeline, siga estas recomendações:
 
-* Adicione ou edite acionadores em **[!UICONTROL Triggers]**, você não deve editar o restante.
-* Verifique se o JSON é válido. Você pode usar um JSON Validator, consulte este [site](http://jsonlint.com/) , por exemplo.
-* &quot;name&quot; corresponde à ID do acionador. Um caractere curinga &quot;*&quot; capturará todos os acionadores.
-* &quot;Consumidor&quot; corresponde ao nome da instância chamadora ou do aplicativo.
-* O pipeline também suporta o tópico &quot;aliases&quot;.
-* Você deve sempre reiniciar o pipeline depois de fazer alterações.
+* Adicione ou edite acionadores em **[!UICONTROL Triggers]**. Você não deve editar o restante.
+* Verifique se o JSON é válido. Você pode usar um Validador de JSON, consulte este [site](http://jsonlint.com/) para obter um exemplo.
+* “name” corresponde à ID do acionador. Um curinga “*” capturará todos os acionadores.
+* “Consumidor” corresponde ao nome da instância chamadora ou do aplicativo.
+* Pipeline também aceita o tópico “aliases”.
+* Você sempre deve reiniciar o pipeline depois de fazer alterações.
 
-## Etapa 3: Configuração opcional {#step-optional}
+## Etapa 3: configuração opcional {#step-optional}
 
 Você pode alterar alguns parâmetros internos de acordo com seus requisitos de carga, mas certifique-se de testá-los antes de colocá-los em produção.
 
@@ -131,15 +131,15 @@ A lista de parâmetros opcionais pode ser encontrada abaixo:
 
 | Opção | Descrição |
 |:-:|:-:|
-| appName(Herdado) | AppID do aplicativo OAuth registrado no aplicativo Legacy Oath no qual a chave pública foi carregada. Para obter mais informações, consulte esta [página](https://www.adobe.io/authentication/auth-methods.html#!AdobeDocs/adobeio-auth/master/AuthenticationOverview/ServiceAccountIntegration.md.) |
+| appName(Herdado) | AppID do aplicativo OAuth registrado no aplicativo Legacy Oath em que a chave pública foi carregada. Para obter mais informações, consulte esta [página](https://www.adobe.io/authentication/auth-methods.html#!AdobeDocs/adobeio-auth/master/AuthenticationOverview/ServiceAccountIntegration.md.) |
 | authGatewayEndpoint(Legacy) | URL para obter tokens de gateway. Padrão: ```https://api.omniture.com``` |
 | authPrivateKey(Legacy) | A chave privada, parte pública carregada no aplicativo Legacy Oath, AES criptografada com a opção XtkKey: ```cryptString("PRIVATE_KEY")``` |
-| disableAuth(Legacy) | Desabilitar autenticação, a conexão sem tokens de gateway será aceita somente por alguns pontos de extremidade do Pipeline de desenvolvimento. |
-| discoverPipelineEndpoint | URL para localizar o ponto de extremidade do Pipeline Services a ser usado para este locatário. Padrão: ```https://producer-pipeline-pnw.adobe.net``` |
-| dumpStatePeriodSec | O período entre dois despejos do processo de estado interno no estado ```var/INSTANCE/pipelined.json.``` <br> interno também está acessível sob demanda aqui: ```http://INSTANCE:7781/pipelined/status``` |
-| forcedPipelineEndpoint | Desative a detecção do PipelineServicesEndpoint para forçá-lo |
-| monitorServerPort | O processo implantado ouvirá nesta porta para fornecer o processo de estado interno aqui: ```http://INSTANCE:PORT/pipelined/status```. <br>O padrão é 7781 |
-| pointerFlushMessageCount | Quando esse número de mensagens é processado, os deslocamentos serão salvos no banco de dados. <br> O padrão é 1000 |
+| disableAuth(Legacy) | A ação de desabilitar a autenticação, conectando sem tokens de gateway é aceita somente por alguns pontos de entrada do pipeline de desenvolvimento. |
+| discoverPipelineEndpoint | URL para descobrir o ponto de entrada de serviços de pipeline que será usado para este locatário. Padrão: ```https://producer-pipeline-pnw.adobe.net``` |
+| dumpStatePeriodSec | O período entre dois despejos do processo de estado interno no estado interno ```var/INSTANCE/pipelined.json.``` <br> também está acessível sob demanda aqui: ```http://INSTANCE:7781/pipelined/status``` |
+| forcedPipelineEndpoint | Desative a detecção do PipelineServicesEndpoint e force-a |
+| monitorServerPort | O processo de pipeline ouvirá nesta porta para fornecer o processo de estado interno aqui: ```http://INSTANCE:PORT/pipelined/status```. <br>O padrão é 7781 |
+| pointerFlushMessageCount | Quando esse número de mensagens é processado, os corretores serão salvos no banco de dados. <br> O padrão é 1000 |
 | pointerFlushPeriodSec | Após esse período, os deslocamentos serão salvos no banco de dados. <br>O padrão é 5 (segundos) |
 | processingJSThreads | Número de mensagens de processamento de threads dedicados com conectores JS personalizados. <br> O padrão é 4 |
 | processingThreads | Número de mensagens de processamento de threads dedicados com código incorporado. <br>O padrão é 4 |
@@ -150,7 +150,7 @@ A lista de parâmetros opcionais pode ser encontrada abaixo:
 
 O processo por pipeline precisa ser iniciado automaticamente.
 
-Para isso, defina o elemento &lt; pipelined > no arquivo de configuração como autostart=&quot;true&quot;:
+Para fazer isso, defina o elemento &lt; pipelined > no arquivo de configuração como autostart=&quot;true&quot;:
 
 ```
  <pipelined autoStart="true" ... "/>
@@ -164,10 +164,10 @@ Para isso, defina o elemento &lt; pipelined > no arquivo de configuração como 
 nlserver restart pipelined@instance
 ```
 
-## Etapa 4: Validação {#step-validation}
+## Etapa 4: validação {#step-validation}
 
 Para validar a configuração do pipeline para provisionamento, siga as etapas abaixo:
 
-* Make sure the [!DNL pipelined] process is running.
-* Verifique se há registros de conexão de pipeline no pipelined.log.
-* Verifique a conexão e se os pings foram recebidos. Os clientes hospedados podem usar o Monitoramento no Console do cliente.
+* Certifique-se de que o processo [!DNL pipelined] esteja em execução.
+* Verifique se há logs de conexão de pipeline no pipelined.log.
+* Verifique a conexão e se os pings foram recebidos. Os clientes hospedados podem usar o monitoramento no console do cliente.
