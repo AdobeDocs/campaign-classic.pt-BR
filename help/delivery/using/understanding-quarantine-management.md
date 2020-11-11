@@ -11,11 +11,11 @@ audience: delivery
 content-type: reference
 topic-tags: monitoring-deliveries
 discoiquuid: 56cbf48a-eb32-4617-8f80-efbfd05976ea
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: fd75f7f75e8e77d7228233ea311dd922d100417c
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2802'
-ht-degree: 88%
+ht-degree: 100%
 
 ---
 
@@ -157,22 +157,22 @@ Os itens colocados em quarentena são tokens de dispositivo.
 **Para iOS - conector binário**
 
 >[!NOTE]
-A partir da versão 20.3 da Campanha, o conector binário herdado do iOS será descontinuado. Se estiver usando esse conector, é necessário adaptar sua implementação de acordo. [Saiba mais](https://helpx.adobe.com/campaign/kb/migrate-to-http2.html)
+A partir da versão 20.3 do Campaign, o conector binário herdado do iOS se tornará obsoleto. Se estiver usando este conector, precisará adaptar sua implementação adequadamente. [Saiba mais](https://helpx.adobe.com/br/campaign/kb/migrate-to-http2.html)
 
-Para cada notificação, a Adobe Campaign recebe os erros síncronos e assíncronos do servidor APNs. Para os seguintes erros síncronos, o Adobe Campaign gera erros suaves:
+Para cada notificação, o Adobe Campaign recebe os erros síncronos e assíncronos do servidor APNS. Para os seguintes erros síncronos, o Adobe Campaign gera erros suaves:
 
 * Problemas de comprimento da carga: sem tentativa, o motivo da falha é **[!UICONTROL Unreachable]**.
 * Problemas de expiração de certificado: sem tentativa, o motivo da falha é **[!UICONTROL Unreachable]**.
 * A conexão perdida durante o delivery: tentativa executada, o motivo da falha é **[!UICONTROL Unreachable]**.
 * Problema de configuração de serviço (certificado inválido, senha de certificado inválida, sem certificado): sem tentativa, o motivo da falha é **[!UICONTROL Unreachable]**.
 
-O servidor APNs notifica de forma assíncrona a Adobe Campaign que um token de dispositivo foi removido do registro (quando o aplicativo móvel foi desinstalado pelo usuário). The **[!UICONTROL mobileAppOptOutMgt]** workflow runs every 6 hours to contact the APNs feedback services to update the **AppSubscriptionRcp** table. Para todos os tokens desativados, o campo **Desativado** é definido como **Verdadeiro** e a subscrição vinculada a esse token de dispositivo será excluída automaticamente de deliveries futuros.
+O servidor APNS notifica de forma assíncrona o Adobe Campaign que um token de dispositivo teve o registro cancelado (quando o aplicativo móvel foi desinstalado pelo usuário). O workflow **[!UICONTROL mobileAppOptOutMgt]** é executado a cada 6 horas para contatar os serviços de feedback APNs e atualizar a tabela **AppSubscriptionRcp**. Para todos os tokens desativados, o campo **Desativado** é definido como **Verdadeiro** e a subscrição vinculada a esse token de dispositivo será excluída automaticamente de deliveries futuros.
 
 **Para iOS - conector HTTP/V2**
 
-O protocolo HTTP/V2 permite feedback e status diretos para cada delivery de push. If the HTTP/V2 protocol connector is used, the feedback service is no longer called by the **[!UICONTROL mobileAppOptOutMgt]** workflow. Os tokens não registrados são tratados de forma diferente entre o conector binário iOS e o conector HTTP/V2 do iOS. Um token é considerado não registrado quando um aplicativo móvel é desinstalado ou reinstalado.
+O protocolo HTTP/V2 permite um feedback e status direto para cada delivery por push. Se o conector do protocolo HTTP/V2 for usado, o serviço de feedback não será mais chamado pelo workflow **[!UICONTROL mobileAppOptOutMgt]**. Os tokens não registrados são tratados de forma diferente entre o conector binário do iOS e o conector HTTP/V2 do iOS. Um token é considerado não registrado quando um aplicativo móvel é desinstalado ou reinstalado.
 
-Sincronamente, se os APNs retornarem um status &quot;não registrado&quot; para uma mensagem, o token de público alvo será colocado imediatamente em quarentena.
+Em sincronia, se o APNs retornar um status &quot;não registrado&quot; para uma mensagem, o token do público alvo será colocado imediatamente em quarentena.
 
 <table> 
  <tbody> 
@@ -225,7 +225,7 @@ Sincronamente, se os APNs retornarem um status &quot;não registrado&quot; para 
    <td> Não<br /> </td> 
   </tr> 
   <tr> 
-   <td> Certificate issue (password, corruption, etc.) and test connection to APNs issue<br /> </td> 
+   <td> Problema de certificado (senha, corrupção, etc.) e teste de conexão para problema APNs<br /> </td> 
    <td> Falha<br /> </td> 
    <td> Várias mensagens de erro de acordo com o erro<br /> </td> 
    <td> Suave<br /> </td> 
@@ -241,7 +241,7 @@ Sincronamente, se os APNs retornarem um status &quot;não registrado&quot; para 
    <td> Sim<br /> </td> 
   </tr> 
   <tr> 
-   <td> APNs message rejection: Unregistration<br /> the user has removed the application or the token has expired<br /> </td> 
+   <td> Rejeição da mensagem APNs: cancelamento de registro<br /> o usuário removeu o aplicativo ou o token expirou<br /> </td> 
    <td> Falha<br /> </td> 
    <td> Registro cancelado<br /> </td> 
    <td> Grave<br /> </td> 
@@ -249,7 +249,7 @@ Sincronamente, se os APNs retornarem um status &quot;não registrado&quot; para 
    <td> Não<br /> </td> 
   </tr> 
   <tr> 
-   <td> APNs message rejection: all other errors<br /> </td> 
+   <td> Rejeição de mensagem APNs: todos os outros erros<br /> </td> 
    <td> Falha<br /> </td> 
    <td> A causa de rejeição do erro será exibida na mensagem de erro<br /> </td> 
    <td> Suave<br /> </td> 
@@ -360,23 +360,23 @@ O mecanismo de quarentena do Android V2 usa o mesmo processo que o Android V1, o
    <td> Não<br /> </td> 
   </tr> 
     <tr> 
-   <td> Rejeição da mensagem FCM: Argumento inválido<br /> </td> 
+   <td> Rejeição da mensagem FCM: argumento inválido<br /> </td> 
    <td> Falha<br /> </td> 
    <td> INVALID_ARGUMENT </td> 
-   <td> Ignored</td> 
+   <td> Ignorado</td> 
    <td> Indefinido<br /> </td> 
    <td> Não<br /> </td> 
   </tr>
     <tr> 
-   <td> Rejeição da mensagem FCM: Erro de autenticação de terceiros<br /> </td> 
+   <td> Rejeição da mensagem FCM: erro de autenticação de terceiros<br /> </td> 
    <td> Falha<br /> </td> 
-   <td> TERCEIRO_PARTY_AUTH_ERROR </td> 
-   <td> Ignored</td>
+   <td> THIRD_PARTY_AUTH_ERROR </td> 
+   <td> Ignorado</td>
    <td> Recusado<br /> </td> 
    <td> Sim<br /> </td> 
   </tr>
     <tr> 
-   <td> Rejeição da mensagem FCM: Incompatibilidade de ID do remetente<br /> </td> 
+   <td> Rejeição da mensagem FCM: incompatibilidade de ID do remetente<br /> </td> 
    <td> Falha<br /> </td> 
    <td> SENDER_ID_MISMATCH </td> 
    <td> Suave</td>
@@ -384,26 +384,26 @@ O mecanismo de quarentena do Android V2 usa o mesmo processo que o Android V1, o
    <td> Não<br /> </td> 
   </tr>
     <tr> 
-   <td> Rejeição da mensagem FCM: Não registrado<br /> </td> 
+   <td> Rejeição da mensagem FCM: não registrado<br /> </td> 
    <td> Falha<br /> </td>
-   <td> NÃO REGISTRADO </td> 
+   <td> REGISTRO CANCELADO </td> 
    <td> Grave</td> 
    <td> Usuário desconhecido<br /> </td> 
    <td> Não<br /> </td> 
   </tr>
     <tr> 
-   <td> Rejeição da mensagem FCM: Interno<br /> </td> 
+   <td> Rejeição da mensagem FCM: interno<br /> </td> 
    <td> Falha<br /> </td> 
    <td> INTERNO </td> 
-   <td> Ignored</td> 
+   <td> Ignorado</td> 
    <td> Recusado<br /> </td> 
    <td> Sim<br /> </td> 
   </tr>
     <tr> 
-   <td> Rejeição da mensagem FCM: Indisponível<br /> </td> 
+   <td> Rejeição da mensagem FCM: indisponível<br /> </td> 
    <td> Falha<br /> </td> 
    <td> INDISPONÍVEL</td> 
-   <td> Ignored</td> 
+   <td> Ignorado</td> 
    <td> Recusado<br /> </td> 
    <td> Sim<br /> </td> 
   </tr>
@@ -411,79 +411,79 @@ O mecanismo de quarentena do Android V2 usa o mesmo processo que o Android V1, o
    <td> Rejeição da mensagem FCM: código de erro inesperado<br /> </td> 
    <td> Falha<br /> </td> 
    <td> código de erro inesperado</td> 
-   <td> Ignored</td> 
+   <td> Ignorado</td> 
    <td> Recusado<br /> </td> 
    <td> Não<br /> </td> 
   </tr>
   <tr> 
-   <td> Autenticação: Problema de conexão<br /> </td> 
+   <td> Autenticação: problema de conexão<br /> </td> 
    <td> Falha<br /> </td> 
-   <td> Impossível conectar ao servidor de autenticação </td> 
-   <td> Ignored</td>
+   <td> Impossível conectar-se ao servidor de autenticação </td> 
+   <td> Ignorado</td>
    <td> Recusado<br /> </td> 
    <td> Sim<br /> </td> 
   </tr>
     <tr> 
-   <td> Autenticação: Cliente ou escopo não autorizado na solicitação.<br /> </td> 
+   <td> Autenticação: cliente ou escopo não autorizado na solicitação.<br /> </td> 
    <td> Falha<br /> </td> 
    <td> unauthorized_client </td> 
-   <td> Ignored</td>
+   <td> Ignorado</td>
    <td> Recusado<br /> </td> 
    <td> Não<br /> </td> 
   </tr>
     <tr> 
-   <td> Autenticação: O cliente não está autorizado a recuperar tokens de acesso usando este método, ou o cliente não está autorizado para nenhum dos escopos solicitados.<br /> </td> 
+   <td> Autenticação: o cliente não está autorizado a recuperar tokens de acesso usando este método ou o cliente não está autorizado para nenhum dos escopos solicitados.<br /> </td> 
    <td> Falha<br /> </td> 
    <td> unauthorized_client </td> 
-   <td> Ignored</td>
+   <td> Ignorado</td>
    <td> Recusado<br /> </td> 
    <td> Não<br /> </td> 
   </tr>
     <tr> 
-   <td> Autenticação: Acesso negado<br /> </td> 
+   <td> Autenticação: acesso negado<br /> </td> 
    <td> Falha<br /> </td>
    <td> access_denied</td> 
-   <td> Ignored</td>
+   <td> Ignorado</td>
    <td> Recusado<br /> </td> 
    <td> Não<br /> </td> 
   </tr>
     <tr> 
-   <td> Autenticação: Email inválido<br /> </td> 
+   <td> Autenticação: email inválido<br /> </td> 
    <td> Falha<br /> </td> 
-   <td> invalid_Grant </td> 
-   <td> Ignored</td> 
+   <td> invalid_grant </td> 
+   <td> Ignorado</td> 
    <td> Recusado<br /> </td> 
    <td> Não<br /> </td> 
   </tr>
     <tr> 
    <td> Autenticação: JWT inválido<br /> </td> 
    <td> Falha<br /> </td> 
-   <td> invalid_Grant </td> 
-   <td> Ignored</td> 
+   <td> invalid_grant </td> 
+   <td> Ignorado</td> 
    <td> Recusado<br /> </td> 
    <td> Não<br /> </td> 
   </tr>
     <tr> 
-   <td> Autenticação: Assinatura JWT inválida<br /> </td> 
+   <td> Autenticação: assinatura JWT inválida<br /> </td> 
    <td> Falha<br /> </td> 
-   <td> invalid_Grant </td> 
-   <td> Ignored</td> 
+   <td> invalid_grant </td> 
+   <td> Ignorado</td> 
    <td> Recusado<br /> </td> 
    <td> Não<br /> </td> 
   </tr>
     <tr> 
-   <td> Autenticação: Audiência de token de ID ou escopo OAuth inválida fornecida<br /> </td> 
+   <td> Autenticação: escopo Oauth inválido ou público de token de ID fornecido<br /> </td> 
    <td> Falha<br /> </td> 
    <td> unauthorized_client</td> 
-   <td> Ignored</td> 
+   <td> Ignorado</td> 
    <td> Recusado<br /> </td> 
    <td> Não<br /> </td> 
   </tr>
     <tr> 
-   <td> Autenticação: Cliente OAuth desabilitado<br /> </td> 
+   <td> Autenticação: cliente OAuth desabilitado<br /> </td> 
    <td> Falha<br /> </td> 
    <td> disabled_client</td> 
-   <td> Ignored</td> 
+   <td> Ignorado</td> 
    <td> Recusado<br /> </td> 
    <td> Não<br /> </td> 
   </tr>
