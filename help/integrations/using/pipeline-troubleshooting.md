@@ -11,18 +11,18 @@ audience: integrations
 content-type: reference
 topic-tags: adobe-experience-manager
 discoiquuid: 1c20795d-748c-4f5d-b526-579b36666e8f
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 3e73d7c91fbe7cff7e1e31bdd788acece5806e61
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '585'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
 
 # Solução de problemas de pipeline {#pipeline-troubleshooting}
 
-**Falha no pipeline com o erro &quot;Nenhuma tarefa corresponde à máscara pipeline@&lt; instância >&quot;**
+**Falha no pipeline com o erro “Nenhuma atividade corresponde à máscara pipelined@&lt; instance >”**
 
 A sua versão do Adobe Campaign Classic não é compatível com o pipeline.
 
