@@ -10,11 +10,11 @@ audience: platform
 content-type: reference
 topic-tags: starting-with-adobe-campaign
 discoiquuid: 16dbe423-018f-4666-9901-2120a8dc609a
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: c2c0609619e0cc81444d089850add6dec5de93fd
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '280'
-ht-degree: 89%
+ht-degree: 100%
 
 ---
 
@@ -31,7 +31,7 @@ Saiba como direcionar uma população e gerenciar audiências no Adobe Campaign.
 
 Descubra casos de uso fáceis para [importar perfis](../../platform/using/importing-data.md#generic-import-samples) no seu banco de dados.
 
-![](assets/do-not-localize/how-to-video.png) [Descubra este recurso no vídeo](https://docs.adobe.com/content/help/en/campaign-classic-learn/tutorials/getting-started/importing-profiles.html)
+![](assets/do-not-localize/how-to-video.png) [Descubra este recurso no vídeo](https://docs.adobe.com/content/help/pt-BR/campaign-classic-learn/tutorials/getting-started/importing-profiles.html)
 
 ## Como posso definir o público-alvo de uma campanha de marketing? {#how-can-i-define-the-target-population-of-a-marketing-campaign-}
 
@@ -44,7 +44,7 @@ Uma lista é um conjunto estático de recipients que pode ser direcionado em aç
 
 [Clique aqui para saber mais](../../platform/using/creating-and-managing-lists.md#creating-a-profile-list-from-a-group).
 
-![](assets/do-not-localize/how-to-video.png) Descubra este recurso [neste vídeo](https://docs.adobe.com/content/help/en/campaign-classic-learn/tutorials/profile-management/creating-a-list-of-recipients-with-a-workflow.html) e [neste outro vídeo](https://docs.adobe.com/content/help/pt-BR/campaign-classic-learn/tutorials/profile-management/creating-a-list-of-recipients.html)
+![](assets/do-not-localize/how-to-video.png) Descubra este recurso [neste vídeo](https://docs.adobe.com/content/help/pt-BR/campaign-classic-learn/tutorials/profile-management/creating-a-list-of-recipients-with-a-workflow.html) e [neste outro vídeo](https://docs.adobe.com/content/help/pt-BR/campaign-classic-learn/tutorials/profile-management/creating-a-list-of-recipients.html)
 
 ## Como posso excluir informações em duplicidade de uma população antes de enviar uma mensagem? {#how-can-i-deduplicate-a-population-before-sending-a-message-}
 
