@@ -1,8 +1,6 @@
 ---
 title: Antes de iniciar a migração
-seo-title: Antes de iniciar a migração
 description: Antes de iniciar a migração
-seo-description: null
 page-status-flag: never-activated
 uuid: b9325510-2fa5-4be4-9cf0-f37232bbbd8c
 contentOwner: sauviat
@@ -12,10 +10,10 @@ content-type: reference
 topic-tags: migration-procedure
 discoiquuid: d8877378-fb43-4f32-91c6-60f2f788f916
 translation-type: tm+mt
-source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+source-git-commit: 99d766cb6234347ea2975f3c08a6ac0496619b41
 workflow-type: tm+mt
-source-wordcount: '410'
-ht-degree: 3%
+source-wordcount: '524'
+ht-degree: 2%
 
 ---
 
@@ -27,6 +25,13 @@ ht-degree: 3%
 >Nesse documento, os comandos vinculados ao banco de dados são fornecidos como um exemplo. Eles podem variar dependendo de sua configuração. Entre em contato com o administrador do banco de dados.
 
 ## Avisos {#warnings}
+
+* O processo de migração deve ser executado somente por usuários especialistas. Você deve ser assistido por pelo menos um especialista em banco de dados, um administrador de sistema e um desenvolvedor de aplicativos da Adobe Campaign.
+* Antes de iniciar a migração, verifique se os sistemas e componentes do sistema usados são compatíveis com a v7. Consulte a matriz de [compatibilidade](../../rn/using/compatibility-matrix.md).
+* Se você usar o Adobe Campaign Cloud Messaging (mid-sourcing), entre em contato com o Adobe antes de iniciar todo o procedimento de migração.
+* Antes de iniciar um processo de migração, você **deve** fazer backup dos dados.
+* O processo de migração pode levar vários dias para ser concluído.
+* O Adobe Campaign v7 é mais estrito do que as versões 5.11 e 6.02 em termos de configuração. Isso serve principalmente para evitar problemas como corrupção de dados e preservar a integridade dos dados no banco de dados. Consequentemente, certas funções oferecidas na v5.11 e na v6.02 podem não funcionar mais na v7 e podem, portanto, precisar ser adaptadas após a migração. Antes de colocar em produção qualquer coisa, sugerimos que você teste sistematicamente todas as configurações, especialmente os workflows necessários para usar o Adobe Campaign.
 
 ### Versão instalada {#installed-version}
 
@@ -45,7 +50,7 @@ Antes de iniciar um processo de migração, você **deve** fazer backup dos dado
 
 ### Recomendações {#recommendation}
 
-Dado que o procedimento de migração é particularmente sensível, recomendamos vivamente que este documento seja lido em profundidade antes de se iniciar o procedimento.
+Dado que o procedimento de migração é sensível, recomendamos vivamente que este documento seja lido em profundidade antes de se iniciar o procedimento.
 
 ## Etapas de migração {#migration-steps}
 
@@ -64,10 +69,6 @@ O procedimento de migração deve ser executado em **todos** os servidores e num
    1. Migre os servidores de redirecionamento e rastreamento (Apache / IIS).
    1. Migre os servidores do Power Booster/Cluster.
    1. Migre o servidor de marketing.
-
->[!NOTE]
->
->A comunicação entre um servidor de marketing v6.02 e um servidor v7 Cloud Messaging ou Power Booster/Cluster é possível. No entanto, se você decidir manter seu servidor de marketing v6.02, ele deverá ser atualizado com a versão v6.02 mais recente antes de migrar para o Cloud Messaging ou o Power Booster/Cluster.
 
 ## Senhas de usuário {#user-passwords}
 
