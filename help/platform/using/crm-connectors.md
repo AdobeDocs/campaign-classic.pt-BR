@@ -11,11 +11,11 @@ audience: platform
 content-type: reference
 topic-tags: connectors
 discoiquuid: dbe9080c-66e3-4ff6-8f16-959f9748f666
-translation-type: ht
-source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
-workflow-type: ht
-source-wordcount: '2541'
-ht-degree: 100%
+translation-type: tm+mt
+source-git-commit: 99d766cb6234347ea2975f3c08a6ac0496619b41
+workflow-type: tm+mt
+source-wordcount: '2536'
+ht-degree: 99%
 
 ---
 
@@ -38,7 +38,7 @@ A conexão com o CRM é realizada por meio de atividades dedicadas de workflow. 
 
 Os CRMs listados abaixo podem ser integrados ao Adobe Campaign.
 
-As versões compatíveis estão detalhadas na [Matriz de compatibilidade](https://helpx.adobe.com/br/campaign/kb/compatibility-matrix.html).
+Supported versions are detailed in Campaign [Compatibility matrix](../../rn/using/compatibility-matrix.md).
 
 * **Salesforce.com**
 
