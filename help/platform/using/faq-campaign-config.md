@@ -10,10 +10,10 @@ audience: platform
 content-type: reference
 topic-tags: starting-with-adobe-campaign
 discoiquuid: 16dbe423-018f-4666-9901-2120a8dc609a
-translation-type: ht
-source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
-workflow-type: ht
-source-wordcount: '759'
+translation-type: tm+mt
+source-git-commit: 99d766cb6234347ea2975f3c08a6ac0496619b41
+workflow-type: tm+mt
+source-wordcount: '754'
 ht-degree: 100%
 
 ---
@@ -59,11 +59,11 @@ O Campaign permite configurar processos de aprovação para as principais etapas
 
 O Adobe Campaign oferece a opção Federated Data Access (FDA) para processar informações armazenadas em um ou mais bancos de dados externos: é possível acessá-los sem alterar a estrutura dos dados do Adobe Campaign.
 
-[Clique aqui para saber mais](../../platform/using/connecting-to-database.md).
+[Clique aqui para saber mais](../../installation/using/connecting-to-database.md).
 
 ## A quais bancos de dados externos posso conectar o Campaign? {#which-external-databases-can-i-connect-campaign-to-}
 
-Os bancos de dados externos compatíveis com o Campaign por meio do Federated Data Access (FDA) estão listados na [matriz de Compatibilidade](https://helpx.adobe.com/br/campaign/kb/compatibility-matrix.html).
+Os bancos de dados externos compatíveis com o Campaign por meio do Federated Data Access (FDA) estão listados na [matriz de Compatibilidade](../../rn/using/compatibility-matrix.md).
 
 ## O Adobe Campaign pode ser integrado ao LDAP? {#can-adobe-campaign-integrate-with-ldap-}
 
