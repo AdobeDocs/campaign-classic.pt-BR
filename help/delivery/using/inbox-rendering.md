@@ -9,9 +9,9 @@ audience: delivery
 content-type: reference
 topic-tags: deliverability-management
 discoiquuid: 72e974b8-415a-47ab-9804-b15957787198
-translation-type: ht
-source-git-commit: b447e316bed8e0e87d608679c147e6bd7b0815eb
-workflow-type: ht
+translation-type: tm+mt
+source-git-commit: 3d6515ca291715e5e02f9b5404803e9087555284
+workflow-type: tm+mt
 source-wordcount: '813'
 ht-degree: 100%
 
@@ -41,7 +41,7 @@ Para clientes hospedados e híbridos, a renderização da Caixa de entrada é co
 Para instalações no local, siga as etapas abaixo para configurar a renderização da Caixa de entrada.
 
 1. Instale o pacote **[!UICONTROL Inbox rendering (IR)]** usando o menu **[!UICONTROL Tools]** > **[!UICONTROL Advanced]** > **[!UICONTROL Import package]**. Para obter mais informações, consulte [Instalação de pacotes padrão do Campaign Classic](../../installation/using/installing-campaign-standard-packages.md).
-1. Configure uma conta externa do tipo HTTP por meio do nó **[!UICONTROL Administration]** > **[!UICONTROL Platform]** > **[!UICONTROL External Accounts]**. Para obter mais informações, consulte [Criação de uma conta externa](../../platform/using/external-accounts.md#creating-an-external-account).
+1. Configure uma conta externa do tipo HTTP por meio do nó **[!UICONTROL Administration]** > **[!UICONTROL Platform]** > **[!UICONTROL External Accounts]**. Para obter mais informações, consulte [Criação de uma conta externa](../../installation/using/external-accounts.md#creating-an-external-account).
 1. Defina os parâmetros da conta externa da seguinte maneira:
    * **[!UICONTROL Label]**: informações de entregabilidade do servidor
    * **[!UICONTROL Internal name]**: deliverabilityInstance
