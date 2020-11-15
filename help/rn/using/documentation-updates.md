@@ -10,7 +10,7 @@ content-type: reference
 topic-tags: latest-documentation-updates
 discoiquuid: 5df34f55-135a-4ea8-afc2-f9427ce5ae7b
 translation-type: tm+mt
-source-git-commit: 36fef519be93b33d55a96992c1ce234f2eaea696
+source-git-commit: 9bbde65aea6735e30e95e75c2b6ae5445d4a2bdd
 workflow-type: tm+mt
 source-wordcount: '3932'
 ht-degree: 98%
@@ -148,7 +148,7 @@ Os acionadores da Experience Cloud e a página de integração do Adobe Campaign
 
 Suporte a emoticons – [Leia mais](../../delivery/using/customizing-emoticon-list.md)
 
-Conector FDA do Azure Synapse - [Leia mais](../../platform/using/specific-configuration-database.md#configure-access-to-azure-synapse)
+Conector FDA do Azure Synapse - [Leia mais](../../installation/using/configure-fda-synapse.md)
 
 Leis de privacidade da Tailândia e do Brasil – [Leia mais](https://helpx.adobe.com/br/campaign/kb/acc-privacy.html#ManagingPrivacyRequests)
 
@@ -189,7 +189,7 @@ A seção Práticas recomendadas do pacote de dados foi movida e atualizada. [Le
 
 ## Abril de 2020 {#april-2020}
 
-A tabela de direitos da FDA foi movida para a documentação Acesso a um banco de dados externo (FDA). [Leia mais](../../platform/using/remote-database-access-rights.md)
+A tabela de direitos da FDA foi movida para a documentação Acesso a um banco de dados externo (FDA). [Leia mais](../../installation/using/remote-database-access-rights.md)
 
 As Perguntas frequentes estão atualizadas com dicas sobre como limpar o cache flexível e rígido. [Leia mais](../../platform/using/faq-campaign-config.md#perform-soft-cache-clear)
 
@@ -233,9 +233,9 @@ A seção Arquivamento de email foi aprimorada. [Leia mais](../../installation/u
 
 **Novos recursos incluídos na versão 20.1**
 
-Conector FDA do Snowflake - [Leia mais](../../platform/using/specific-configuration-database.md#configure-access-to-snowflake)
+Conector FDA do Snowflake - [Leia mais](../../installation/using/configure-fda-snowflake.md)
 
-Aprimoramento do conector FDA do Hadoop - [Leia mais](../../platform/using/specific-configuration-database.md#configure-access-to-hadoop-3)
+Aprimoramento do conector FDA do Hadoop - [Leia mais](../../installation/using/configure-fda-hadoop.md)
 
 **Outras atualizações de documentação que vêm com a versão**
 
@@ -293,7 +293,7 @@ Um exemplo de como usar uma variável de instância em um fluxo de trabalho foi 
 
 A opção &quot;WdbcOptions_TempDbName&quot; foi adicionada à lista de opções do Campaign. [Leia mais](../../installation/using/configuring-campaign-options.md)
 
-A página da matriz FDA foi movida para [este local](../../platform/using/remote-database-access-rights.md).
+A página da matriz FDA foi movida para [este local](../../installation/using/remote-database-access-rights.md).
 
 A página da matriz de direitos de acesso foi movida [aqui](https://docs.adobe.com/content/help/pt-BR/campaign-classic/using/getting-started/administration-basics/assets/accessrights.pdf).
 
