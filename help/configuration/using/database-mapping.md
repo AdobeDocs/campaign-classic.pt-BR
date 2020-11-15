@@ -12,7 +12,7 @@ content-type: reference
 topic-tags: schema-reference
 discoiquuid: bc06c00d-f421-452e-bde0-b4ecc12c72c8
 translation-type: tm+mt
-source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+source-git-commit: 9bbde65aea6735e30e95e75c2b6ae5445d4a2bdd
 workflow-type: tm+mt
 source-wordcount: '1976'
 ht-degree: 1%
@@ -373,7 +373,7 @@ Para unir relações usando o Acesso ao Banco de Dados Federado:
 * ![](assets/join_fda_11.png) : Cardinalidade 1-1
 * ![](assets/join_fda_1m.png) : Cardinalidade 1-N
 
-For more information on FDA tables, refer to [Accessing an external database](../../platform/using/about-fda.md).
+For more information on FDA tables, refer to [Accessing an external database](../../installation/using/about-fda.md).
 
 Um link deve ser declarado no schema que contém a chave estrangeira da tabela vinculada pelo elemento principal:
 
@@ -409,7 +409,7 @@ Os links obedecem às seguintes regras:
 * Um link faz referência a um ou mais campos da tabela de origem para a tabela de destino. Os campos que compõem a junção ( `<join>` elemento) não precisam ser preenchidos porque são automaticamente deduzidos por padrão usando a chave interna do schema do público alvo.
 * Um índice é adicionado automaticamente à chave estrangeira do link no schema estendido.
 * Um link consiste em dois links parciais, nos quais o primeiro é declarado a partir do schema de origem e o segundo é criado automaticamente no schema estendido do schema do público alvo.
-* Uma junção pode ser uma junção externa se o atributo **externalJoin** for adicionado, com o valor &quot;true&quot; (compatível com PostgreSQL).
+* Uma junção pode ser uma junção externa se o atributo **externalJoin** for adicionado, com o valor &quot;true&quot; (suportado no PostgreSQL).
 
 >[!NOTE]
 >
