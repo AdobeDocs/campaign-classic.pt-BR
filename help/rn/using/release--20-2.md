@@ -10,7 +10,7 @@ content-type: reference
 topic-tags: campaign-release-notes, latest-release-notes
 discoiquuid: 5df34f55-135a-4ea8-afc2-f9427ce5ae7b
 translation-type: tm+mt
-source-git-commit: 36fef519be93b33d55a96992c1ce234f2eaea696
+source-git-commit: 9bbde65aea6735e30e95e75c2b6ae5445d4a2bdd
 workflow-type: tm+mt
 source-wordcount: '2183'
 ht-degree: 100%
@@ -106,7 +106,7 @@ _8 de junho de 2020_
  <tbody> 
   <tr> 
    <td> <p>Agora você pode conectar sua instância do Campaign ao banco de dados externo do Azure Synapse. Essa conexão é gerenciada por meio de uma nova conta externa.</p>
-    <p>O Azure Synapse só está disponível para ambientes híbridos e no local. Para obter mais informações, consulte a <a href="../../platform/using/specific-configuration-database.md#configure-access-to-azure-synapse">documentação detalhada</a>.</p>
+    <p>O Azure Synapse só está disponível para ambientes híbridos e no local. Para obter mais informações, consulte a <a href="../../installation/using/configure-fda-synapse.md">documentação detalhada</a>.</p>
    </td> 
   </tr> 
  </tbody> 
