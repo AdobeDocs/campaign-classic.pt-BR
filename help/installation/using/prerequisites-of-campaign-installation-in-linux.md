@@ -10,10 +10,10 @@ content-type: reference
 topic-tags: installing-campaign-in-linux-
 discoiquuid: 3e2ccb70-6c0c-435f-9c06-f3e5e40367bb
 translation-type: tm+mt
-source-git-commit: f8539433274e531e34b7512ce1b6385d67e8e332
+source-git-commit: 99d766cb6234347ea2975f3c08a6ac0496619b41
 workflow-type: tm+mt
-source-wordcount: '911'
-ht-degree: 4%
+source-wordcount: '896'
+ht-degree: 2%
 
 ---
 
@@ -24,11 +24,11 @@ ht-degree: 4%
 
 Esta seção detalha as etapas de configuração preliminares necessárias antes da instalação do Adobe Campaign.
 
-A configuração técnica e de software necessária para instalar o Adobe Campaign está detalhada na matriz [de compatibilidade](https://helpx.adobe.com/br/campaign/kb/compatibility-matrix.html).
+A configuração técnica e de software necessária para instalar o Adobe Campaign está detalhada na matriz [de compatibilidade](../../rn/using/compatibility-matrix.md).
 
 Como lembrete, os seguintes componentes precisam ser instalados e configurados corretamente:
 
-* Apache, consulte a matriz [de compatibilidade](https://helpx.adobe.com/br/campaign/kb/compatibility-matrix.html),
+* Apache, consulte a matriz [de compatibilidade](../../rn/using/compatibility-matrix.md),
 * Java JDK e OpenJDK, consulte o Kit de desenvolvimento [Java - JDK](../../installation/using/application-server.md#java-development-kit---jdk),
 * Bibliotecas, referência às [bibliotecas](#libraries),
 * camadas de acesso ao banco de dados, referência a camadas [de acesso ao](#database-access-layers)banco de dados,
@@ -169,7 +169,7 @@ As seguintes configurações são necessárias com o CentOS:
 
 As camadas de acesso do mecanismo de banco de dados que você está usando devem ser instaladas no servidor e estar acessíveis por meio da conta da Adobe Campaign. As versões e os modos de instalação podem variar dependendo do mecanismo de banco de dados usado.
 
-A versão piloto suportada está detalhada na matriz [Compatibilidade](https://helpx.adobe.com/br/campaign/kb/compatibility-matrix.html).
+A versão piloto suportada está detalhada na matriz [Compatibilidade](../../rn/using/compatibility-matrix.md).
 
 Verifique também a seção [Banco de Dados](../../installation/using/database.md) geral.
 
