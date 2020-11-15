@@ -11,9 +11,9 @@ audience: delivery
 content-type: reference
 topic-tags: personalizing-deliveries
 discoiquuid: 27c8e443-ee6b-4d58-bc2d-81cf8391c5de
-translation-type: ht
-source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
-workflow-type: ht
+translation-type: tm+mt
+source-git-commit: 9bbde65aea6735e30e95e75c2b6ae5445d4a2bdd
+workflow-type: tm+mt
 source-wordcount: '873'
 ht-degree: 100%
 
@@ -86,7 +86,7 @@ Você pode otimizar a personalização usando uma opção dedicada: **[!UICONTRO
 
 Durante a análise de delivery, essa opção cria e executa automaticamente um workflow que armazena todos os dados vinculados ao público-alvo em uma tabela temporária, incluindo dados de tabelas vinculadas na FDA.
 
-Marcar essa opção pode melhorar muito o desempenho da análise de delivery quando muitos dados estão sendo processados, especialmente se os dados de personalização vêm de uma tabela externa por meio do FDA. Para saber mais, consulte [Acesso a um banco de dados externo (FDA)](../../platform/using/additional-options.md#optimizing-email-personalization-with-external-data).
+Marcar essa opção pode melhorar muito o desempenho da análise de delivery quando muitos dados estão sendo processados, especialmente se os dados de personalização vêm de uma tabela externa por meio do FDA. Para saber mais, consulte [Acesso a um banco de dados externo (FDA)](../../installation/using/about-fda.md).
 
 Por exemplo, se estiver tendo problemas de desempenho com delivery de um grande número de recipients ao usar muitos campos de personalização e/ou blocos de personalização no conteúdo de suas mensagens, essa opção pode acelerar o manuseio de personalização e, portanto, o delivery de suas mensagens.
 
@@ -127,4 +127,4 @@ Se essa opção for definida como 0, não haverá limite de tempo para a fase de
 
 Saiba como adicionar um campo de personalização à linha de assunto e ao conteúdo de um delivery de email.
 
->[!VIDEO](https://video.tv.adobe.com/v/24925?quality=12&captions=por_br)
+>[!VIDEO](https://video.tv.adobe.com/v/24925?quality=12)
