@@ -12,9 +12,9 @@ content-type: reference
 topic-tags: initial-configuration
 discoiquuid: 7dd8a6a5-7cca-4e92-8226-1b9e450dfaf9
 translation-type: tm+mt
-source-git-commit: 1781648fc17d729f451664204f99a77dfaa8c824
+source-git-commit: 99d766cb6234347ea2975f3c08a6ac0496619b41
 workflow-type: tm+mt
-source-wordcount: '1307'
+source-wordcount: '1301'
 ht-degree: 2%
 
 ---
@@ -54,7 +54,7 @@ Selecione o mecanismo de banco de dados entre aqueles na lista suspensa.
 
 ![](assets/s_ncs_install_db_select_engine.png)
 
-Os bancos de dados suportados são apresentados na seção Matriz [de compatibilidade](https://helpx.adobe.com/br/campaign/kb/compatibility-matrix.html).
+Os bancos de dados suportados estão listados na matriz [Compatibilidade de Campanha](../../rn/using/compatibility-matrix.md).
 
 Identifique o servidor e escolha o tipo de operação a ser executada. Neste caso, **[!UICONTROL Create or recycle a database]**.
 
