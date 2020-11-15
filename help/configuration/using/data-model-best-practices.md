@@ -10,7 +10,7 @@ content-type: reference
 topic-tags: schema-reference
 discoiquuid: 5957b39e-c2c6-40a2-b81a-656e9ff7989c
 translation-type: tm+mt
-source-git-commit: 2a82493deada11cb22ef37d215b6eae8274ce890
+source-git-commit: 9bbde65aea6735e30e95e75c2b6ae5445d4a2bdd
 workflow-type: tm+mt
 source-wordcount: '4014'
 ht-degree: 1%
@@ -83,7 +83,7 @@ Para garantir uma boa arquitetura e desempenho do seu sistema, siga as práticas
 
 Um campo deve ser armazenado em uma tabela se tiver uma finalidade de definição de metas ou personalização. Em outras palavras, se um campo não for usado para enviar um email personalizado ou usado como critério em um query, ele ocupará espaço em disco, ao passo que é inútil.
 
-Para instâncias híbridas e locais, FDA (Federated Data Acces, um recurso opcional que permite acessar dados externos) cobre a necessidade de adicionar um campo &quot;instantaneamente&quot; durante um processo de campanha. Não é necessário importar tudo se tiver FDA. For more on this, see [About Federated Data Access](../../platform/using/about-fda.md).
+Para instâncias híbridas e locais, FDA (Federated Data Acces, um recurso opcional que permite acessar dados externos) cobre a necessidade de adicionar um campo &quot;instantaneamente&quot; durante um processo de campanha. Não é necessário importar tudo se tiver FDA. For more on this, see [About Federated Data Access](../../installation/using/about-fda.md).
 
 ### Escolha das teclas {#choice-of-keys}
 
@@ -185,7 +185,7 @@ A gestão dos índices pode tornar-se muito complexa, pelo que é importante com
 
    ![](assets/data-model-index-example.png)
 
-1. Repita essa operação para o **[!UICONTROL Last name]** campo.
+1. Repeat this operation for the **[!UICONTROL Last name]** field.
 
 Os dois filtros correspondentes são adicionados na parte superior da tela.
 
