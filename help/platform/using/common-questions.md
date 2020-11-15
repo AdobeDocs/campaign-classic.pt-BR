@@ -9,10 +9,10 @@ audience: platform
 content-type: reference
 topic-tags: starting-with-adobe-campaign
 discoiquuid: 16dbe423-018f-4666-9901-2120a8dc609a
-translation-type: ht
-source-git-commit: cb96a238f4c8e413377ce6102b065b91badfe6db
-workflow-type: ht
-source-wordcount: '539'
+translation-type: tm+mt
+source-git-commit: 99d766cb6234347ea2975f3c08a6ac0496619b41
+workflow-type: tm+mt
+source-wordcount: '525'
 ht-degree: 100%
 
 ---
@@ -66,11 +66,11 @@ Para se conectar ao Adobe Campaign Classic, você precisa iniciar o console de c
 
 ## 7. Com quais sistemas e componentes o Campaign Classic é compatível? {#which-systems-and-components-campaign-classic-is-compatible-with-}
 
-Você pode obter a lista de todos os sistemas e componentes compatíveis com o último build do Campaign na [Matriz de compatibilidade do Adobe Campaign Classic](https://helpx.adobe.com/br/campaign/kb/compatibility-matrix.html).
+Você pode obter a lista de todos os sistemas e componentes compatíveis com o último build do Campaign na [Matriz de compatibilidade do Adobe Campaign Classic](../../rn/using/compatibility-matrix.md).
 
 ## 8. Onde estão as notas de versão do Campaign Classic? {#where-are-campaign-classic-release-notes-}
 
-Você pode acessar as notas de versão mais recentes do Campaign Classic [nesta página](https://docs.adobe.com/content/help/pt-BR/campaign-classic/using/release-notes/latest-release.html).
+Você pode acessar as notas de versão mais recentes do Campaign Classic [nesta página](../../rn/using/latest-release.md).
 
 ## 9. Qual é o procedimento para configuração de domínio? {#what-is-the-procedure-for-domain-delegation-}
 
