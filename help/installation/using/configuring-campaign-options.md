@@ -1,8 +1,6 @@
 ---
 title: Configuração das opções de Campanha
-seo-title: Configuração das opções de Campanha
-description: Configuração das opções de Campanha
-seo-description: null
+description: Saiba como configurar as opções de Campanha
 page-status-flag: never-activated
 uuid: 32e85e41-6898-4fb3-90c8-2201ceea2e91
 contentOwner: sauviat
@@ -12,7 +10,7 @@ content-type: reference
 topic-tags: appendices
 discoiquuid: 9c1884f6-1dd8-41ab-b8dc-604c8cc2dc89
 translation-type: tm+mt
-source-git-commit: 63b208e5607bdcddaef03292d229847c4b7366f8
+source-git-commit: cb2fb5a338220c54aba96b510a7371e520c2189e
 workflow-type: tm+mt
 source-wordcount: '3927'
 ht-degree: 3%
@@ -685,7 +683,7 @@ Alguns deles são incorporados ao instalar a Campanha e outros podem ser adicion
     <ul> 
      <li> <p> <span class="uicontrol">Tipo de dados:</span> Número inteiro</p> </li> 
      <li> <p> <span class="uicontrol">Valor (texto)</span> : 1 </p> </li> 
-    </ul> Essa opção só deve ser usada se a árvore de navegação predefinida tiver sofrido muitas alterações.<br /> Para obter mais informações, consulte <a href="../../migration/using/specific-configurations-in-v5-11.md#campaign-vseven-tree-structure">esta seção</a>.<br /> </td> 
+    </ul> Essa opção só deve ser usada se a árvore de navegação predefinida tiver sofrido muitas alterações.<br /><a href="../../migration/using/specific-configurations-in-v5-11.md#campaign-vseven-tree-structure"> Para obter mais informações, consulte esta seção</a>.<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">NmsLastErrorStatCoalesce</span> <br /> </td> 
@@ -755,7 +753,7 @@ Alguns deles são incorporados ao instalar a Campanha e outros podem ser adicion
  </tbody> 
 </table>
 
-## Ofertas {#offers}
+## Offers {#offers}
 
 <table> 
  <thead> 
