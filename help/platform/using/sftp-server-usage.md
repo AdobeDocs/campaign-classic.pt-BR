@@ -9,11 +9,11 @@ audience: platform
 content-type: reference
 topic-tags: importing-and-exporting-data
 discoiquuid: f449ccd5-3965-4ab8-b5a9-993f3260aba9
-translation-type: ht
-source-git-commit: 75cbb8d697a95f4cc07768e6cf3585e4e079e171
-workflow-type: ht
-source-wordcount: '992'
-ht-degree: 100%
+translation-type: tm+mt
+source-git-commit: cb2fb5a338220c54aba96b510a7371e520c2189e
+workflow-type: tm+mt
+source-wordcount: '1007'
+ht-degree: 92%
 
 ---
 
@@ -37,7 +37,7 @@ Para evitar esses problemas, a Adobe recomenda seguir as práticas recomendadas 
 * As capacidades do tamanho do servidor variam de acordo com sua licença. Em qualquer caso, mantenha o mínimo de dados possíveis e somente pelo tempo necessário (o limite máximo de tempo é 15 dias).
 * Para evitar a expiração de senhas, use a autenticação baseada em chave (as senhas têm um período de validade de 90 dias). Além disso, a autenticação baseada nessa opção permite gerar várias chaves para gerenciar diversas entidades, por exemplo. Ao contrário, essa opção de autenticação exige que a senha seja compartilhada com todas as entidades gerenciadas.
 
-   O formato de chave compatível é SSH-2 RSA 2048. As chaves podem ser geradas com ferramentas como PuTTY (Windows) ou ssh-keygen (Unix). Será necessário fornecer a chave pública ao suporte da Adobe por meio de um [tíquete de suporte](https://support.neolane.net) para carregá-lo no servidor do Campaign.
+   O formato de chave compatível é SSH-2 RSA 2048. Keys can be generated with tools like PyTTY (Windows), or ssh-keygen (Unix).You will have to provide the public key to Adobe Support team via [Adobe Customer Care](https://helpx.adobe.com/br/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html) to have it uploaded on the Campaign server.
 
 * Use workflows para excluir corretamente os dados (gerencie a retenção de workflows consumindo os dados).
 * Use em lotes em uploads de SFTP e em workflows.
@@ -45,7 +45,7 @@ Para evitar esses problemas, a Adobe recomenda seguir as práticas recomendadas 
 * Ocasionalmente, conecte-se no SFTP para verificar diretamente o que encontra-se lá.
 * Lembre-se de que o gerenciamento de disco SFTP é predominantemente sua responsabilidade.
 * Por padrão, todas as pastas criadas estão em modo de leitura/gravação somente para o seu identificador. Ao criar pastas que precisam ser acessadas pelo Campaign, certifique-se de configurá-las com direitos de leitura/gravação para todo o grupo. Caso contrário, os workflows podem não ser capazes de criar/excluir arquivos como são executados em um identificador diferente no mesmo grupo por motivos de segurança.
-* Os IPs públicos a partir dos quais você está tentando iniciar a conexão SFTP devem ser adicionados à lista de permissões na instância do Campaign. A adição de endereços IP na lista de permissões pode ser solicitada por meio de um [tíquete de suporte](https://support.neolane.net).
+* Os IPs públicos a partir dos quais você está tentando iniciar a conexão SFTP devem ser adicionados à lista de permissões na instância do Campaign. Adding IP addresses to the allowlist can be requested via [Adobe Customer Care](https://helpx.adobe.com/br/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html).
 
 >[!CAUTION]
 >
@@ -53,7 +53,7 @@ Para evitar esses problemas, a Adobe recomenda seguir as práticas recomendadas 
 
 ## Problemas de conexão com o servidor SFTP hospedado pela Adobe {#sftp-server-troubleshooting}
 
-A seção abaixo lista as informações para verificar e fornecer ao suporte da Adobe por meio de um [tíquete de suporte](https://support.neolane.net) ao encontrar problemas de conexão com os servidores SFTP hospedados pela Adobe.
+The section below lists the information to check and provide to the Adobe Support team via [Adobe Customer Care](https://helpx.adobe.com/br/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html) when encountering connection issues with Adobe hosted SFTP servers.
 
 1. Verifique se a sua instância está em execução. Para fazer isso, abra o navegador e faça uma chamada **[!UICONTROL GET]** no ponto de extremidade da instância **[!UICONTROL /r/test]**:
 
