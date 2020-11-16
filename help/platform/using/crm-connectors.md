@@ -12,10 +12,10 @@ content-type: reference
 topic-tags: connectors
 discoiquuid: dbe9080c-66e3-4ff6-8f16-959f9748f666
 translation-type: tm+mt
-source-git-commit: 99d766cb6234347ea2975f3c08a6ac0496619b41
+source-git-commit: acb505fac39222e53a3acab6b5c93d10c9d11ba8
 workflow-type: tm+mt
-source-wordcount: '2536'
-ht-degree: 99%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -191,7 +191,7 @@ Para configurar o conector do Microsoft Dynamics para trabalhar com o Adobe Camp
 
    O Adobe Campaign Classic oferece suporte à interface REST do Dynamics 365 com protocolo OAuth para autenticação.
 
-   Se você selecionar uma implantação **[!UICONTROL WebAPI]**, precisará registrar um aplicativo no diretório do Azure e obter a **clientId** do diretório do Azure. Esse registro é detalhado [nesta página](https://msdn.microsoft.com/en-us/library/mt622431.aspx).
+   Se você selecionar uma implantação **[!UICONTROL WebAPI]**, precisará registrar um aplicativo no diretório do Azure e obter a **clientId** do diretório do Azure. Esse registro é detalhado [nesta página](https://docs.microsoft.com/en-us/previous-versions/dynamicscrm-2016/developers-guide/mt622431(v=crm.8)?redirectedfrom=MSDN).
 
    >[!NOTE]
    >
