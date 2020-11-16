@@ -10,7 +10,7 @@ content-type: reference
 topic-tags: installing-campaign-in-windows-
 discoiquuid: d1069b23-e08d-43c5-bbfb-3158ac40dc7e
 translation-type: tm+mt
-source-git-commit: 48176ebb19689855f3ee5e61fa6492be5a682291
+source-git-commit: 6d6f63fb6ac99c3a9e58a8670bc9bc59e6cfd420
 workflow-type: tm+mt
 source-wordcount: '466'
 ht-degree: 11%
@@ -34,7 +34,7 @@ Para baixar e instalar o console do cliente Adobe Campaign, siga as etapas abaix
 
 1. Abra um navegador da Web e baixe o console do seguinte endereço:
 
-   [`https://<your adobe campaign server>:<port number>/nl/jsp/logon.jsp`](https://machine/nl/jsp/logon.jsp).
+   [`https://<your adobe campaign server>:<port number>/nl/jsp/logon.jsp`](https://myserver.adobe.com/nl/jsp/logon.jsp).
 
 1. Na janela de identificação, digite seu login e sua senha.
 
@@ -66,7 +66,7 @@ Depois que o console do cliente estiver instalado, siga as etapas abaixo para cr
 
 1. Especifique uma conexão com o servidor de aplicativos Adobe Campaign por meio de um URL. Use um DNS ou um alias da máquina ou seu endereço IP.
 
-   Por exemplo, você pode usar o [`https://<machine>.<domain>.com`](https://machine) tipo URL.
+   Por exemplo, você pode usar o [`https://<machine>.<domain>.com`](https://myserver.adobe.com) tipo URL.
 
 1. Se o Adobe IMS estiver configurado para sua organização, marque a opção **[!UICONTROL Connect with an Adobe ID]**
 
