@@ -10,7 +10,7 @@ content-type: reference
 topic-tags: latest-release-notes
 discoiquuid: 5df34f55-135a-4ea8-afc2-f9427ce5ae7p
 translation-type: tm+mt
-source-git-commit: e615b2420d126cd42ed52257491282b36975f9ff
+source-git-commit: 7f8b0458f947ae1863c2afb6e67cabf2d23200e1
 workflow-type: tm+mt
 source-wordcount: '512'
 ht-degree: 88%
@@ -18,7 +18,7 @@ ht-degree: 88%
 ---
 
 
-# Matriz de compatibilidade Gold Standard{#compatibility-matrix-gs}
+# Gold Standard Compatibility matrix{#compatibility-matrix-gs}
 
 Este documento lista todos os sistemas e componentes compatíveis com **Adobe Campaign Classic Gold Standard** 19.1 builds. Os produtos e as versões que não estão nessa lista não são compatíveis com o Adobe Campaign.
 
@@ -125,7 +125,7 @@ O Adobe Campaign Classic é compatível com todos os sistemas e ferramentas list
 <td>
 <p>18c</p>
 <p>12c</p>
-<p>11g    R2</p>
+<p>11g     R2</p>
 </td>
 </tr>
 <tr>
@@ -206,7 +206,7 @@ O Adobe Campaign Classic é compatível com todos os sistemas e ferramentas list
 <td>Oracle</td>
 <td>
 <p>12c</p>
-<p>11g   </p>
+<p>11g    </p>
 </td>
 </tr>
 <tr>
@@ -308,8 +308,8 @@ O Adobe Campaign Classic é compatível com todos os sistemas e ferramentas list
 <tr>
 <td>iOS</td>
 <td>
-<p>iOS 9 - 12</p>
-<p>com o SDK móvel build 1.0.25, compatível com as versões de 32 e 64 bits.</p>
+<p>iOS 9 - 14</p>
+<p>com o SDK móvel build 1.0.26, compatível com as versões de 32 e 64 bits.</p>
 </td>
 </tr>
 </tbody>
