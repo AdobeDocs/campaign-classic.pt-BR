@@ -10,9 +10,9 @@ content-type: reference
 topic-tags: starting-with-adobe-campaign
 discoiquuid: 14369acf-9149-4649-947a-c16289e35eb6
 translation-type: tm+mt
-source-git-commit: c2c7398c27f1bc7edf9adb0fc07409d2e525b168
+source-git-commit: e0ca252aceb0f2abca4a1324c5e4ece038927533
 workflow-type: tm+mt
-source-wordcount: '2443'
+source-wordcount: '2444'
 ht-degree: 18%
 
 ---
@@ -82,7 +82,7 @@ Antes de criar solicitações de Privacidade, é necessário definir a namespace
 
 Três namespaces estão disponíveis para pronta utilização: email, telefone fixo e celular. Se você precisar de uma namespace diferente (um campo personalizado de recipient, por exemplo), poderá criar uma nova  em **[!UICONTROL Administration]** > **[!UICONTROL Platform]** > **[!UICONTROL Namespaces]**.
 
-## Criação de uma solicitação de acesso a dados pessoais {#create-privacy-request-ui}
+## Creating a Privacy request {#create-privacy-request-ui}
 
 The **Adobe Campaign interface** allows you to create your Privacy requests and track their evolution. Para criar uma nova solicitação de privacidade, siga estas instruções:
 
@@ -129,7 +129,7 @@ Se você criou tabelas personalizadas que têm um link para a tabela do recipien
 >Se você executar solicitações em lote de privacidade usando workflows de exclusão de perfis, considere as seguintes observações:
 >* A exclusão de perfis por meio de workflows não processa tabelas secundárias.
 >* Você precisa lidar com a exclusão de todas as tabelas secundárias.
->* O Adobe recomenda que você crie um fluxo de trabalho ETL que adicione as linhas a serem excluídas na tabela Acesso de privacidade e permita que o usuário **[!UICONTROL Delete privacy requests data]** execute a exclusão. Sugerimos limitar a 200 perfis por dia para excluir por motivos de desempenho.
+>* O Adobe recomenda que você crie um fluxo de trabalho ETL que adicione as linhas a serem excluídas na tabela Acesso de privacidade e permita que o **[!UICONTROL Delete privacy requests data]** fluxo de trabalho execute a exclusão. Sugerimos limitar a 200 perfis por dia para excluir por motivos de desempenho.
 
 
 ### Status de solicitação de privacidade {#privacy-request-statuses}
@@ -443,14 +443,14 @@ Para preencher os valores, vários métodos podem ser utilizados:
 
 Você deve então garantir que nunca vende a terceiros as informações pessoais de perfis que recusaram a adesão.
 
-Para alterar o status de não participação, vá até **[!UICONTROL Profiles and Target]** > **[!UICONTROL Recipients]** e selecione um recipient. Na **[!UICONTROL General]** guia, você verá o campo configurado na seção anterior.
+1. Para alterar o status de não participação, vá até **[!UICONTROL Profiles and Target]** > **[!UICONTROL Recipients]** e selecione um recipient. Na **[!UICONTROL General]** guia, você verá o campo configurado na seção anterior.
 
-![](assets/privacy-ccpa-5.png)
+   ![](assets/privacy-ccpa-5.png)
 
-Configure a lista de recipient para exibir a coluna de saída. Para saber como configurar o lista, consulte a documentação [](../../platform/using/adobe-campaign-workspace.md#configuring-lists)detalhada.
+1. Configure a lista de recipient para exibir a coluna de saída. Para saber como configurar o lista, consulte a documentação [](../../platform/using/adobe-campaign-workspace.md#configuring-lists)detalhada.
 
-![](assets/privacy-ccpa-6.png)
+   ![](assets/privacy-ccpa-6.png)
 
-Você pode clicar na coluna para classificar recipient de acordo com as informações de não participação. Você também pode criar um filtro para exibir somente recipient que tenham optado por não participar. For more on creating filters, see [this section](../../platform/using/creating-filters.md).
+1. Você pode clicar na coluna para classificar recipient de acordo com as informações de não participação. Você também pode criar um filtro para exibir somente recipient que tenham optado por não participar. For more on creating filters, see [this section](../../platform/using/creating-filters.md).
 
-![](assets/privacy-ccpa-7.png)
+   ![](assets/privacy-ccpa-7.png)
