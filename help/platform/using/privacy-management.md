@@ -10,9 +10,9 @@ content-type: reference
 topic-tags: starting-with-adobe-campaign
 discoiquuid: 14369acf-9149-4649-947a-c16289e35eb6
 translation-type: tm+mt
-source-git-commit: c2c7398c27f1bc7edf9adb0fc07409d2e525b168
+source-git-commit: 9240b6e194dbc26fbf37a9ecf88a1ae03f9e7a75
 workflow-type: tm+mt
-source-wordcount: '899'
+source-wordcount: '897'
 ht-degree: 43%
 
 ---
@@ -24,7 +24,7 @@ O Adobe Campaign oferece um conjunto de ferramentas para ajudar você a cumprir 
 
 * This section presents general information on what Privacy management is and the features provided by Adobe Campaign to manage the [Right to Access and Right to be Forgotten](#right-access-forgotten).
 
-* Ele também contém informações sobre recursos importantes para gerenciar a privacidade ([consentimento, retenção de dados e funções](#consent-retention-roles)do usuário), bem como práticas recomendadas para ajudá-lo com sua conformidade com a privacidade ao usar o Adobe Campaign.
+* Ele também contém informações sobre recursos importantes para gerenciar a privacidade ([Consentimento, Retenção e Funções](#consent-retention-roles)), bem como práticas recomendadas para ajudá-lo com sua conformidade com a privacidade ao usar o Adobe Campaign.
 
 ## Regulamentos sobre a gestão da privacidade {#privacy-management-regulations}
 
@@ -74,7 +74,7 @@ Os recursos para ajudar a gerenciar alguns aspectos do consentimento são fundam
 
 Para obter mais informações sobre o Gerenciamento de consentimento, consulte a documentação [](../../delivery/using/managing-subscriptions.md)detalhada.
 
-Além das ferramentas de Gerenciamento de Consentimento fornecidas pela Adobe Campaign, você tem a possibilidade de rastrear se um consumidor optou pela venda de Informações Pessoais. Consulte [esta seção](../../platform/using/privacy-requests.md#sale-of-personal-information).
+Além das ferramentas de Gerenciamento de Consentimento fornecidas pela Adobe Campaign, você tem a possibilidade de rastrear se um consumidor optou pela venda de Informações Pessoais. Consulte [esta seção](../../platform/using/privacy-requests.md##sale-of-personal-information-ccpa).
 
 ### Retenção de dados {#data-retention}
 
