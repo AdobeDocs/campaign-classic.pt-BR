@@ -10,7 +10,7 @@ content-type: reference
 topic-tags: connectors
 discoiquuid: dd3d14cc-5153-428d-a98a-32b46f0fe811
 translation-type: tm+mt
-source-git-commit: 022fe39e849ceafa6678120ff455d07432fb9a1f
+source-git-commit: 30eaabba8962c518c734cc4e9ad27065cfe9d467
 workflow-type: tm+mt
 source-wordcount: '1613'
 ht-degree: 83%
@@ -96,11 +96,9 @@ A conta externa do Teradata permite conectar sua instância do Campaign ao banco
 
    * **[!UICONTROL Database]**: Nome da base de dados (opcional)
 
-   * 
-      * **[!UICONTROL Options]**: Opções a serem passadas pelo Teradata. Use o seguinte formato: &#39;parameter=value&#39;. Use uma semitruna como separador entre valores.
-   * 
-      * **[!UICONTROL Timezone]**: Fuso horário definido no Teradata. [Saiba mais](#timezone)
+   * **[!UICONTROL Options]**: Opções a serem passadas pelo Teradata. Use o seguinte formato: &#39;parameter=value&#39;. Use uma semitruna como separador entre valores.
 
+   * **[!UICONTROL Timezone]**: Fuso horário definido no Teradata. [Saiba mais](#timezone)
 
 ### Faixas de query
 
