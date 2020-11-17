@@ -3,7 +3,7 @@ keywords: Campaign Classic;home;popular topics
 title: Documentação do produto Adobe Campaign Classic
 topic: Premium
 translation-type: tm+mt
-source-git-commit: 75ab345e3b9360229ecc3ba9529a33e320228fa0
+source-git-commit: 30eaabba8962c518c734cc4e9ad27065cfe9d467
 workflow-type: tm+mt
 source-wordcount: '250'
 ht-degree: 85%
@@ -17,10 +17,10 @@ ht-degree: 85%
 
 ## Novidades
 
-* **[Atualizar a integração](integrations/using/configuring-adobe-io.md)**<br/> dos Acionadores da Adobe Experience Cloud O serviço de autenticação legado do oAuth chegou ao fim da vida útil. Saiba como migrar para E/S de Adobe.
+* **[Atualizar a integração](integrations/using/configuring-adobe-io.md)**<br/> dos Acionadores da Adobe Experience Cloud O serviço de autenticação legado do oAuth chegou ao fim da vida útil. Saiba como migrar para E/S de Adobe
 
 * **[Mover para a API do provedor APNs com base em HTTP/2](https://helpx.adobe.com/br/campaign/kb/migrate-to-apns-http2.html)**<br/>
-Saiba como migrar do protocolo binário herdado para a API do provedor APNs com base em HTTP/2.
+Saiba como migrar do protocolo binário herdado para a API do provedor APNs com base em HTTP/2
 
 * **[Adicionar emoticons às suas mensagens](delivery/using/defining-the-email-content.md#inserting-emoticons)**<br/>
 Agora você pode inserir emoticons em mensagens e linhas de assunto
