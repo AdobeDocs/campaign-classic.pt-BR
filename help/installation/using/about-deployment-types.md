@@ -12,7 +12,7 @@ content-type: reference
 topic-tags: deployment-types-
 discoiquuid: 298d9b9f-220f-4862-bc4c-1ad7f8d51049
 translation-type: tm+mt
-source-git-commit: 3acf2359c74a3dc4b18c8976fee14dcbaf3fa510
+source-git-commit: 12bb3b4ba833d2c265350167be61bd916e8b3fc8
 workflow-type: tm+mt
 source-wordcount: '139'
 ht-degree: 8%
@@ -28,9 +28,7 @@ No caso de uma configuração em vários computadores, você não precisa usar o
 
 >[!NOTE]
 >
->As etapas principais de configuração da instalação só podem ser executadas por
->Adobe para implantações hospedadas pelo Adobe. Por exemplo, para
->configure os arquivos de configuração do servidor e da instância.
+>As etapas principais de configuração da instalação só podem ser executadas por Adobe para implantações hospedadas pelo Adobe, para configurar os arquivos de configuração do servidor e da instância, por exemplo.
 >
 >Para saber mais sobre as principais diferenças entre implantações, consulte a seção Modelos [de](../../installation/using/hosting-models.md) hospedagem ou as diferenças de [recursos para implantações](../../installation/using/capability-matrix.md)hospedadas e locais.
 
