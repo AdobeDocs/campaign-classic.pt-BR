@@ -10,9 +10,9 @@ content-type: reference
 topic-tags: latest-documentation-updates
 discoiquuid: 5df34f55-135a-4ea8-afc2-f9427ce5ae7b
 translation-type: tm+mt
-source-git-commit: 58b7070ad765ba072b9c82e75ab1100f8cb38f3a
+source-git-commit: ebec481d5a018d06e47c782627e9a9064cb0dd64
 workflow-type: tm+mt
-source-wordcount: '3568'
+source-wordcount: '3588'
 ht-degree: 96%
 
 ---
@@ -37,6 +37,8 @@ A documentação de Federated Data Acces de campanha (FDA) de foi aprimorada com
 A seção Privacidade foi movida e aprimorada com duas novas páginas: [Gerenciamento](../../platform/using/privacy-management.md) de privacidade e [gerenciamento de solicitações](../../platform/using/privacy-requests.md)de privacidade.
 
 Foi adicionada uma observação na página de configuração do servidor mid-sourcing para especificar que o nome interno da conta externa não deve ser atualizado depois que o servidor for configurado. [Leia mais](../../installation/using/mid-sourcing-server.md)
+
+Foram adicionadas informações sobre a sintaxe a ser usada ao especificar um caminho para um servidor SFTP externo. [Leia mais](../../platform/using/sftp-server-usage.md#external-SFTP-server)
 
 ## Outubro de 2020 {#oct-2020}
 
