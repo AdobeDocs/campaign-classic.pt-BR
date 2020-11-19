@@ -1,6 +1,6 @@
 ---
 title: Configuração do acesso ao Sybase IQ
-description: Saiba como configurar o acesso ao IQ do Sybase no FDA
+description: Saiba como configurar o acesso ao Sybase IQ no FDA
 page-status-flag: never-activated
 uuid: b84359b9-c584-431d-80d5-71146d9b6854
 contentOwner: sauviat
@@ -20,12 +20,12 @@ ht-degree: 73%
 
 # Configuração do acesso ao Sybase IQ {#configure-access-to-sybase-iq}
 
-Use a opção Campanha **Federated Data Acces** (FDA) para processar informações armazenadas em bancos de dados externos. Siga as etapas abaixo para configurar o acesso ao IQ do Sybase.
+Use a opção Campanha **Federated Data Acces** (FDA) para processar informações armazenadas em bancos de dados externos. Siga as etapas abaixo para configurar o acesso ao Sybase IQ.
 
-1. Configurar o banco de dados IQ [Sybase](#configuring-sybase)
-1. Configure a [conta externa](#sybase-external) do IQ Sybase na Campanha
+1. Configurar banco de dados [Sybase IQ](#configuring-sybase)
+1. Configure a [conta externa](#sybase-external) Sybase IQ na Campanha
 
-## Configuração do IQ Sybase {#configuring-sybase}
+## Configuração sybase IQ {#configuring-sybase}
 
 A conexão com um banco de dados externo Sybase IQ no FDA exige as seguintes configurações adicionais no servidor do Adobe Campaign.
 
@@ -69,9 +69,9 @@ A conexão com um banco de dados externo Sybase IQ no FDA exige as seguintes con
    * Se você estiver usando um arquivo customer.sh para declarar seu caminho: adicione o caminho /opt/sybase/IQ-16_0/lib64 para a variável LD_LIBRARY_PATH.
    * Caso contrário, use um comando Unix.
 
-## Conta externa de IQ da Sybase {#sybase-external}
+## conta externa sybase IQ {#sybase-external}
 
-A conta externa de IQ do Sybase permite que você conecte sua instância de Campanha ao banco de dados externo do IQ do Sybase.
+A conta externa Sybase IQ permite que você conecte a instância da Campanha ao banco de dados externo da Sybase IQ.
 
 1. Na Campanha **[!UICONTROL Explorer]**, clique em **[!UICONTROL Administration]** &#39;>&#39; **[!UICONTROL Platform]** &#39;>&#39; **[!UICONTROL External accounts]**.
 
