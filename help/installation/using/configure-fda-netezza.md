@@ -25,7 +25,7 @@ Use a opção Campanha [Federated Data Acces](../../installation/using/about-fda
 1. Instalar e configurar drivers [Netezza](#netezza-config)
 1. Configure a [conta externa](#netezza-external) Netezza na Campanha
 
-## Configuração do Netezza {#netezza-config}
+## Configuração netezza {#netezza-config}
 
 A conexão com um banco de dados externo Netezza no FDA exige as seguintes configurações adicionais no servidor do Adobe Campaign.
 
@@ -72,9 +72,9 @@ A conexão com um banco de dados externo Netezza no FDA exige as seguintes confi
    * **ODBCINI**: local do arquivo odbc.ini (por exemplo /etc/odbc.ini).
    * **NZ_ODBC_INI_PATH**: local do arquivo odbc.ini. Netezza também exige essa segunda variável para utilizar o arquivo odbc.ini.
 
-## Conta externa Netezza {#netezza-external}
+## Conta externa netezza {#netezza-external}
 
-A conta externa Netezza permite que você conecte a instância da Campanha ao banco de dados externo do Netezza.
+A conta externa Netezza permite que você conecte a instância da Campanha ao banco de dados externo da Netezza.
 
 1. Na Campanha **[!UICONTROL Explorer]**, clique em **[!UICONTROL Administration]** &#39;>&#39; **[!UICONTROL Platform]** &#39;>&#39; **[!UICONTROL External accounts]**.
 
