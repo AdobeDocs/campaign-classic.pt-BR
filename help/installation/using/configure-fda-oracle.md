@@ -23,7 +23,7 @@ ht-degree: 74%
 Use a opção Campanha [Federated Data Acces](../../installation/using/about-fda.md) (FDA) para processar informações armazenadas em bancos de dados externos. Siga as etapas abaixo para configurar o acesso ao Oracle.
 
 1. Configurar o Oracle no [Linux](#oracle-linux) ou [Windows](#azure-windows)
-1. Configurar a [conta externa](#oracle-external) Oracle na Campanha
+1. Configure a [conta externa](#oracle-external) Oracle na Campanha
 
 ## Oracle no Linux {#oracle-linux}
 
