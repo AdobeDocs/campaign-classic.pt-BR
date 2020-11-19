@@ -1,6 +1,6 @@
 ---
 title: Configuração do acesso ao Teradata
-description: Saiba como configurar o acesso aos Teradata em FDA
+description: Saiba como configurar o acesso ao Teradata no FDA
 page-status-flag: never-activated
 uuid: b84359b9-c584-431d-80d5-71146d9b6854
 contentOwner: sauviat
@@ -20,13 +20,13 @@ ht-degree: 83%
 
 # Configuração do acesso ao Teradata {#configure-access-to-teradata}
 
-Use a opção Campanha [Federated Data Acces](../../installation/using/about-fda.md) (FDA) para processar informações armazenadas em bancos de dados externos. Siga as etapas abaixo para configurar o acesso aos Teradata.
+Use a opção Campanha [Federated Data Acces](../../installation/using/about-fda.md) (FDA) para processar informações armazenadas em bancos de dados externos. Siga as etapas abaixo para configurar o acesso ao Teradata.
 
-1. Instale e configure os drivers [Teradata](#teradata-config)
-1. Configurar a [conta externa](#teradata-external) Teradata na Campanha
-1. Configurar configuração [](#teradata-additional-configurations) adicional para o servidor Teradata e Campanha
+1. Instalar e configurar drivers [Teradata](#teradata-config)
+1. Configure a [conta externa](#teradata-external) Teradata na Campanha
+1. Configurar configuração [](#teradata-additional-configurations) adicional para Teradata e servidor de Campanha
 
-## Configuração dos Teradata {#teradata-config}
+## Configuração teradata {#teradata-config}
 
 É necessário instalar drivers para a Teradata para que a conexão com a Campanha seja implementada.
 
@@ -71,7 +71,7 @@ Use a opção Campanha [Federated Data Acces](../../installation/using/about-fda
 
 >[!NOTE]
 >
->A conexão com um banco de dados externo Teradata em FDA requer etapas adicionais de configuração no servidor Adobe Campaign. [Saiba mais](#teradata-additional-configurations).
+>A conexão com um banco de dados externo da Teradata em FDA requer etapas adicionais de configuração no servidor Adobe Campaign. [Saiba mais](#teradata-additional-configurations).
 
 
 ## Conta externa Teradata{#teradata-external}
@@ -106,7 +106,7 @@ Quando vários usuários do Adobe Campaign se conectam à mesma conta externa FD
 
 ![](assets/ext_account_20.png)
 
-Quando essa opção for configurada, cada vez que um usuário Campanha executar um query no banco de dados Teradata, a Adobe Campaign enviará metadados, que consistem em uma lista de chaves, associados a esse usuário. Esses dados podem ser usados pelos administradores do Teradata para fins de auditoria ou para gerenciar direitos de acesso.
+Quando essa opção é configurada, cada vez que um usuário Campanha executa um query no banco de dados Teradata, a Adobe Campaign enviará metadados, que consistem em uma lista de chaves, associados a esse usuário. Esses dados podem ser usados pelos administradores do Teradata para fins de auditoria ou para gerenciar direitos de acesso.
 
 >[!NOTE]
 >
@@ -126,7 +126,7 @@ Se o seguinte erro for exibido durante o teste da conexão **TIM-030008 Data &#3
 
 Erro **ODB-240000 ODBC: [Nome da fonte de dados Microsoft][ODBC Driver Manager] não encontrado e nenhum driver padrão especificado.** ocorre com o Windows se você usar um driver 16.X. O Adobe Campaign espera que o teradata seja nomeados como &#39;{teradata}&#39; em odbcinst.ini.
 
-* A partir da Campanha 18.10, você poderá adicionar ODBCDRiverName=&quot;Teradata Database ODBC Driver 16.10&quot; nas opções da conta externa. O número da versão pode mudar; o nome exato pode ser encontrado executando o odbcad32.exe e acessando a guia Drivers.
+* A partir da Campanha 18.10, é possível adicionar ODBCDRiverName=&quot;Teradata Database ODBC Driver 16.10&quot; nas opções da conta externa. O número da versão pode mudar; o nome exato pode ser encontrado executando o odbcad32.exe e acessando a guia Drivers.
 
 * Se estiver usando uma versão de Campanha mais antiga, será necessário copiar a seção Teradata de odbcinst.ini criada pela instalação do driver para uma nova seção chamada Teradata. Regedit pode ser usado neste caso. If your base is in latin1, you will have to add **APICharSize=1** in the options.
 
