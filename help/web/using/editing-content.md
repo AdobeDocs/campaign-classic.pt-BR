@@ -1,20 +1,15 @@
 ---
+solution: Campaign Classic
+product: campaign
 title: Edição de conteúdo
-seo-title: Edição de conteúdo
 description: Edição de conteúdo
-seo-description: null
-page-status-flag: never-activated
-uuid: 2f51e848-1820-4bec-a0ea-63c9ddff05e0
-contentOwner: sauviat
-products: SG_CAMPAIGN/CLASSIC
 audience: web
 content-type: reference
 topic-tags: editing-html-content
-discoiquuid: da66d640-8504-4dc7-bc4e-1c0ac1d37c37
-translation-type: ht
-source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
-workflow-type: ht
-source-wordcount: '1236'
+translation-type: tm+mt
+source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+workflow-type: tm+mt
+source-wordcount: '1234'
 ht-degree: 100%
 
 ---
@@ -142,6 +137,7 @@ Blocos de personalização e campos só podem ser inseridos em blocos de tipo de
 >* Nova janela (_blank)
 >* Janela atual (_self)
 >* Comportamento do navegador padrão
+
 >
 
 
@@ -207,8 +203,9 @@ As opções disponíveis são as seguintes:
 >[!NOTE]
 >
 >* Ícone **Delete**: exclui o bloco e todo o conteúdo.
->
->* Ícone **Duplicate**: duplica o bloco e todos os estilos relacionados ao bloco.
+   >
+   >
+* Ícone **Duplicate**: duplica o bloco e todos os estilos relacionados ao bloco.
 
 
 ## Gerenciamento de imagens e animações {#managing-images-and-animations}
