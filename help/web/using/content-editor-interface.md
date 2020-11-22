@@ -1,17 +1,16 @@
 ---
 solution: Campaign Classic
+product: campaign
+title: Interface do editor de conteúdo
 description: Interface do editor de conteúdo
 audience: web
 content-type: reference
 topic-tags: editing-html-content
-dc-solution: Campaign Classic
-product: campaign
-title: </strong> e
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: c93931820887306c0ef64ef05d4f0ba2ca5a98aa
 workflow-type: tm+mt
-source-wordcount: '535'
-ht-degree: 99%
+source-wordcount: '533'
+ht-degree: 100%
 
 ---
 
