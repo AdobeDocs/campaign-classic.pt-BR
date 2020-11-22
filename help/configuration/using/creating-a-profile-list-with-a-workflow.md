@@ -1,16 +1,13 @@
 ---
+solution: Campaign Classic
+product: campaign
 title: ' Criação de uma lista de perfis com base em um workflow '
 description: Saiba como criar uma lista de perfil em um fluxo de trabalho
-page-status-flag: never-activated
-uuid: a30f7217-fe82-4290-b1e6-e7a126a316c1
-contentOwner: sauviat
-products: SG_CAMPAIGN/CLASSIC
 audience: configuration
 content-type: reference
 topic-tags: use-a-custom-recipient-table
-discoiquuid: ba42c3cf-31fc-4fbc-b230-a2b3982328c5
 translation-type: tm+mt
-source-git-commit: c2c0609619e0cc81444d089850add6dec5de93fd
+source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
 workflow-type: tm+mt
 source-wordcount: '183'
 ht-degree: 14%
@@ -28,7 +25,7 @@ Para obter mais informações sobre listas na Campanha, consulte [esta seção](
 
 Para criar um fluxo de trabalho de definição de metas e atualizar recipient em uma tabela de recipient personalizada, siga as etapas abaixo:
 
-1. Vá para o **[!UICONTROL Profiles and Targets > Jobs > Targeting workflows]** nó do explorador.
+1. Go to the **[!UICONTROL Profiles and Targets > Jobs > Targeting workflows]** node of the explorer.
 1. Criação de um novo workflow para construção do target
 1. Coloque uma atividade de **Query** seguida de uma atividade de atualização **de** Lista.
 
