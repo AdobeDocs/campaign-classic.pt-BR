@@ -1,20 +1,15 @@
 ---
+solution: Campaign Classic
+product: campaign
 title: Aprovação de campanhas de marketing
-seo-title: Aprovação de campanhas de marketing
 description: Aprovação de campanhas de marketing
-seo-description: null
-page-status-flag: never-activated
-uuid: 842b501f-7d65-4450-b7ab-aff3942fb96f
-contentOwner: sauviat
-products: SG_CAMPAIGN/CLASSIC
 audience: campaign
 content-type: reference
 topic-tags: orchestrate-campaigns
-discoiquuid: 8d076211-10a6-4a98-b0d2-29dad154158c
-translation-type: ht
-source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
-workflow-type: ht
-source-wordcount: '2479'
+translation-type: tm+mt
+source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+workflow-type: tm+mt
+source-wordcount: '2476'
 ht-degree: 100%
 
 ---
@@ -198,8 +193,9 @@ Neste ponto, o status da campanha é **[!UICONTROL To validate]**.
 >[!NOTE]
 >
 >* Para selecionar os processos que estarão sujeitos a aprovação, modifique o template de campanha. Para obter mais informações, consulte [templates de campanha](../../campaign/using/marketing-campaign-templates.md#campaign-templates).
->
->* Consulte também a seção [Processo de aprovação](#approval-process).
+   >
+   >
+* Consulte também a seção [Processo de aprovação](#approval-process).
 
 
 
@@ -270,6 +266,7 @@ Para selecionar uma lista de operadores, clique no link **[!UICONTROL Edit...]**
 >* Se uma lista de revisores for definida, uma tarefa será aprovada assim que um revisor aceitá-la. O link de aprovação relevante não é mais oferecido no painel. Quando o envio de notificações estiver habilitado, se outro revisor clicar no link de aprovação na mensagem de notificação, será exibida uma notificação de que outro operador já aprovou a tarefa.
 >* Você pode definir um agendamento de aprovação para a campanha na seção inferior da janela de edição do revisor. Por padrão, os revisores têm três dias a partir da data de envio para aprovar um processo. É possível configurar um lembrete que é enviado automaticamente para os operadores relacionados antes do prazo de aprovação.
 >* Você pode adicionar lembretes desta seção.
+
 >
 
 
