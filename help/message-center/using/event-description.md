@@ -1,16 +1,13 @@
 ---
+solution: Campaign Classic
+product: campaign
 title: Descrição do evento do centro de mensagens
 description: Saiba mais sobre o evento de mensagens transacionais
-page-status-flag: never-activated
-uuid: 7b174ffd-28b2-4147-b992-e17b0b2cf733
-contentOwner: sauviat
-products: SG_CAMPAIGN/CLASSIC
 audience: message-center
 content-type: reference
 topic-tags: introduction
-discoiquuid: 3c8388d8-1a91-4d16-a8ac-016f643c6009
 translation-type: tm+mt
-source-git-commit: cb2fb5a338220c54aba96b510a7371e520c2189e
+source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
 workflow-type: tm+mt
 source-wordcount: '746'
 ht-degree: 98%
