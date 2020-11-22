@@ -1,20 +1,15 @@
 ---
+solution: Campaign Classic
+product: campaign
 title: Restrição da visualização de PII
-seo-title: Restrição da visualização de PII
 description: Restrição da visualização de PII
-seo-description: null
-page-status-flag: never-activated
-uuid: 4dddc7f5-dac3-47b3-b3cb-92b47eb595fa
-contentOwner: sauviat
-products: SG_CAMPAIGN/CLASSIC
 audience: configuration
 content-type: reference
 topic-tags: editing-schemas
-discoiquuid: 550439c1-978c-414e-be5b-a9e1a202c4cd
 translation-type: tm+mt
-source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
 workflow-type: tm+mt
-source-wordcount: '390'
+source-wordcount: '387'
 ht-degree: 3%
 
 ---
