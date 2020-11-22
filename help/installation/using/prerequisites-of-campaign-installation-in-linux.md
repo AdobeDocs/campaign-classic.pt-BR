@@ -1,16 +1,13 @@
 ---
+solution: Campaign Classic
+product: campaign
 title: Pré-requisitos da instalação do Campaign no Linux
 description: Pré-requisitos da instalação do Campaign no Linux
-page-status-flag: never-activated
-uuid: 65c7af3f-ca1d-4255-b54a-6a3c83af40ae
-contentOwner: sauviat
-products: SG_CAMPAIGN/CLASSIC
 audience: installation
 content-type: reference
 topic-tags: installing-campaign-in-linux-
-discoiquuid: 3e2ccb70-6c0c-435f-9c06-f3e5e40367bb
 translation-type: tm+mt
-source-git-commit: 99d766cb6234347ea2975f3c08a6ac0496619b41
+source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
 workflow-type: tm+mt
 source-wordcount: '896'
 ht-degree: 2%
@@ -183,7 +180,7 @@ O uso do PostgreSQL com Adobe Campaign também requer a instalação das bibliot
 
 Recuperar a versão da biblioteca para Debian de 64 bits, ou seja: **libclntsh.so**, **libclntsh.so.11.1** e **libclntsh.so.10.1**.
 
-Você pode obter um pacote RPM Linux da Oracle Technology Network.
+Você pode obter um pacote RPM de Linux da Oracle Technology Network.
 
 >[!NOTE]
 >
@@ -193,7 +190,7 @@ Você pode obter um pacote RPM Linux da Oracle Technology Network.
 
 Os problemas podem aparecer após um cliente Oracle ou uma atualização do servidor, alteração da versão ou na primeira instalação da instância.
 
-Se você perceber no console do cliente que há períodos de tempo inesperados (uma ou mais horas) nos logs, no último processamento do fluxo de trabalho, no próximo processamento e assim por diante, pode haver um problema entre a biblioteca do cliente Oracle e o Oracle Server. Para evitar esses problemas
+Se você perceber no console do cliente que há atrasos inesperados (uma ou mais horas) nos registros, no último processamento do fluxo de trabalho, no próximo processamento e assim por diante, pode haver um problema entre a biblioteca do cliente Oracle e o Oracle Server. Para evitar esses problemas
 
 1. Certifique-se de usar o cliente **** completo.
 
@@ -201,9 +198,9 @@ Se você perceber no console do cliente que há períodos de tempo inesperados (
 
 1. Verifique se a versão **do** cliente e a versão **do servidor de** banco de dados são as **mesmas**.
 
-   A combinação de versões apesar da matriz de compatibilidade e da recomendação da Oracle para alinhar as versões de cliente e servidor é conhecida por causar problemas.
+   A combinação de versões, apesar da matriz de compatibilidade e da recomendação da Oracle para alinhar as versões de cliente e servidor, é conhecida por causar problemas.
 
-   Verifique também o valor ORACLE_HOME para garantir que ele aponte para a versão esperada do cliente (caso várias versões estejam instaladas no computador).
+   Verifique também o valor ORACLE_HOME para certificar-se de que ele aponta para a versão esperada do cliente (caso várias versões estejam instaladas no computador).
 
 1. Verifique se o cliente e o servidor usam o mesmo arquivo **de** fuso horário.
 
