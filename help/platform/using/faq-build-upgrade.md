@@ -1,16 +1,13 @@
 ---
+solution: Campaign Classic
+product: campaign
 title: Perguntas frequentes de atualização de build
 description: Perguntas frequentes sobre atualizações de construção de Campanhas
-page-status-flag: never-activated
-uuid: 3f719ac2-cc26-4fb0-adda-84666c8c38e1
-contentOwner: sauviat
-products: SG_CAMPAIGN/CLASSIC
 audience: platform
 content-type: reference
 topic-tags: starting-with-adobe-campaign
-discoiquuid: 16dbe423-018f-4666-9901-2120a8dc609a
 translation-type: tm+mt
-source-git-commit: cb96a238f4c8e413377ce6102b065b91badfe6db
+source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
 workflow-type: tm+mt
 source-wordcount: '2020'
 ht-degree: 20%
@@ -169,7 +166,7 @@ Sim. O servidor é desligado durante uma atualização para garantir que a integ
 
 ## Com quem devo entrar em contato para abrir o tíquete de atualização de build?
 
-Se você enfrentar problemas após uma atualização de criação, entre em contato com o Atendimento [ao cliente da](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html)Adobe. O Atendimento ao cliente agendará as datas de criação e abrirá tíquetes relacionados à atualização da compilação.
+Se você enfrentar problemas após uma atualização de criação, entre em contato com o Atendimento [ao cliente da](https://helpx.adobe.com/br/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html)Adobe. O Atendimento ao cliente agendará as datas de criação e abrirá tíquetes relacionados à atualização da compilação.
 
 Saiba mais sobre as opções de [Ajuda e suporte para o Campaign Classic](https://helpx.adobe.com/campaign/kb/ac-support.html#acc-support-req)
 
