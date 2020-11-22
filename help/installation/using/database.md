@@ -1,16 +1,13 @@
 ---
+solution: Campaign Classic
+product: campaign
 title: Recomendações do banco de dados Campaign Classic
 description: Recomendações do banco de dados
-page-status-flag: never-activated
-uuid: b318365c-8846-4c1d-b5f7-ece55fb8c4af
-contentOwner: sauviat
-products: SG_CAMPAIGN/CLASSIC
 audience: installation
 content-type: reference
 topic-tags: prerequisites-and-recommendations-
-discoiquuid: 1dcf01af-c2f3-4975-ba05-628d52952064
 translation-type: tm+mt
-source-git-commit: b447e316bed8e0e87d608679c147e6bd7b0815eb
+source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
 workflow-type: tm+mt
 source-wordcount: '277'
 ht-degree: 1%
@@ -48,7 +45,7 @@ As DLLs de acesso são encontradas no site da Microsoft.
 
 Os parâmetros **NLS_NCHAR_CHARACTERSET** e **NLS_CHARACTERSET** precisam ser configurados corretamente para que o banco de dados funcione em Unicode ou ANSI.
 
-A Adobe Campaign usa a codificação padrão Oracle. O uso de outra codificação pode causar problemas de compatibilidade: neste caso, entre em contato com o suporte técnico.
+A Adobe Campaign usa a codificação padrão do Oracle. O uso de outra codificação pode causar problemas de compatibilidade: neste caso, entre em contato com o suporte técnico.
 
 Para saber mais sobre sua codificação, use o seguinte comando **sqlplus** :
 
@@ -69,7 +66,7 @@ SELECT * FROM nls_database_parameters ;
   NLS_CHARACTERSET WE8MSWIN1252
 ```
 
-Para fazer logon no **sqlplus**, use o perfil de usuário Oracle:
+Para fazer logon no **sqlplus**, use o perfil de usuário do Oracle:
 
 ```
 su - oracle 
@@ -77,7 +74,7 @@ sqlplus
 [login] [password]
 ```
 
-Você também pode fazer referência ao [Oracle Client no Linux](../../installation/using/installing-packages-with-linux.md#oracle-client-in-linux).
+Você também pode consultar o [Oracle Client no Linux](../../installation/using/installing-packages-with-linux.md#oracle-client-in-linux).
 
 ## PostgresSQL {#postgressql}
 
