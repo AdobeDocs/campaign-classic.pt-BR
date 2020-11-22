@@ -1,21 +1,16 @@
 ---
+solution: Campaign Classic
+product: campaign
 title: Instalação de pacotes com Linux
-seo-title: Instalação de pacotes com Linux
 description: Instalação de pacotes com Linux
-seo-description: null
-page-status-flag: never-activated
-uuid: d83f00b5-500b-406a-a3d6-ea5639f244f0
-contentOwner: sauviat
-products: SG_CAMPAIGN/CLASSIC
 audience: installation
 content-type: reference
 topic-tags: installing-campaign-in-linux-
-discoiquuid: 04faa9f3-d160-4060-b26e-44333f2faf71
 translation-type: tm+mt
-source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
 workflow-type: tm+mt
-source-wordcount: '1209'
-ht-degree: 2%
+source-wordcount: '1205'
+ht-degree: 1%
 
 ---
 
@@ -195,7 +190,7 @@ Se necessário, edite o arquivo **customer.sh** usando o comando **vi customer.s
    export LD_LIBRARY_PATH=$ORACLE_HOME/lib:$LD_LIBRARY_PATH 
    ```
 
-   O conteúdo da variável do ambiente ORACLE_HOME corresponde ao diretório de instalação do Oracle.
+   O conteúdo da variável de ambiente ORACLE_HOME corresponde ao diretório de instalação do Oracle.
 
    O conteúdo da variável TNS_ADMIN deve corresponder ao local do arquivo **tnsnames.ora** .
 
@@ -257,9 +252,9 @@ systemctl stop nlserver
 systemctl start nlserver
 ```
 
-### Cliente Oracle em Linux {#oracle-client-in-linux}
+### Cliente oracle em Linux {#oracle-client-in-linux}
 
-Ao usar o Oracle com a Adobe Campaign, é necessário configurar as camadas do cliente Oracle no Linux.
+Ao usar o Oracle com o Adobe Campaign, é necessário configurar as camadas do cliente Oracle no Linux.
 
 * Usar o cliente completo
 * Definição de TNS
