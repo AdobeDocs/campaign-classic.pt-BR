@@ -1,21 +1,16 @@
 ---
+solution: Campaign Classic
+product: campaign
 title: Configuração da interface
-seo-title: Configuração da interface
 description: Configuração da interface
-seo-description: null
-page-status-flag: never-activated
-uuid: 101ba02f-da43-4dcc-b9ff-6e5ca848fc5d
-contentOwner: sauviat
-products: SG_CAMPAIGN/CLASSIC
 audience: configuration
 content-type: reference
 topic-tags: use-a-custom-recipient-table
-discoiquuid: 8fb9ff23-17a7-4425-9195-738d6fd914dc
 translation-type: tm+mt
-source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
 workflow-type: tm+mt
-source-wordcount: '306'
-ht-degree: 7%
+source-wordcount: '303'
+ht-degree: 6%
 
 ---
 
@@ -30,7 +25,7 @@ Para visualização e diálogo com a nova tabela de recipient na interface do Ad
 
 A Adobe Campaign usa uma variável global &quot;Nms_DefaultRcpSchema&quot; para dialogar com o banco de dados do recipient padrão (nms:recipient). Esta variável deve, por conseguinte, ser alterada.
 
-1. Vá para o **[!UICONTROL Administration>Platform>Options]** nó do explorador.
+1. Go to the **[!UICONTROL Administration>Platform>Options]** node of the explorer.
 1. Altere o valor da variável **Nms_DefaultRcpSchema** pelo nome do schema que corresponde à tabela do recipient externo (neste caso: cus:individual).
 1. Salve as alterações.
 
