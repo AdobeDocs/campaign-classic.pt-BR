@@ -1,20 +1,15 @@
 ---
+solution: Campaign Classic
+product: campaign
 title: Configuração do servidor do Campaign
-seo-title: Configuração do servidor do Campaign
 description: Configuração do servidor do Campaign
-seo-description: null
-page-status-flag: never-activated
-uuid: be21ae4b-ca2a-4952-b256-cd8dc51309cf
-contentOwner: sauviat
-products: SG_CAMPAIGN/CLASSIC
 audience: installation
 content-type: reference
 topic-tags: additional-configurations
-discoiquuid: 1a94c94e-ab6b-45c2-a0f3-6adeec7e2d2d
 translation-type: tm+mt
-source-git-commit: 2ff877607641435a2c2806f48f3c5b35d96d39c5
+source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
 workflow-type: tm+mt
-source-wordcount: '3582'
+source-wordcount: '3579'
 ht-degree: 5%
 
 ---
@@ -228,7 +223,7 @@ Depois que as zonas forem definidas e a **[!UICONTROL Security zone]** lista dis
 
 1. Clique no nó **[!UICONTROL Administration > Access management > Operators]**.
 1. Selecione o operador ao qual você deseja vincular uma zona de segurança e clique na **[!UICONTROL Edit]** guia.
-1. Vá para a guia **[!UICONTROL Access rights]** e clique no **[!UICONTROL Edit access parameters...]** link.
+1. Go to the **[!UICONTROL Access rights]** tab and click the **[!UICONTROL Edit access parameters...]** link.
 
    ![](assets/zone_operator.png)
 
