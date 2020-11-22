@@ -1,21 +1,16 @@
 ---
+solution: Campaign Classic
+product: campaign
 title: Criação e configuração do banco de dados
-seo-title: Criação e configuração do banco de dados
 description: Criação e configuração do banco de dados
-seo-description: null
-page-status-flag: never-activated
-uuid: e5143d55-61fa-416a-80db-c29a0caf9a3e
-contentOwner: sauviat
-products: SG_CAMPAIGN/CLASSIC
 audience: installation
 content-type: reference
 topic-tags: initial-configuration
-discoiquuid: 7dd8a6a5-7cca-4e92-8226-1b9e450dfaf9
 translation-type: tm+mt
-source-git-commit: 99d766cb6234347ea2975f3c08a6ac0496619b41
+source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
 workflow-type: tm+mt
-source-wordcount: '1301'
-ht-degree: 2%
+source-wordcount: '1296'
+ht-degree: 1%
 
 ---
 
@@ -80,7 +75,7 @@ Na **[!UICONTROL Server access]** janela, defina o acesso do servidor de banco d
 
 Para fazer isso, digite o nome e a senha de uma conta **do sistema de** administração que tenha permissão para acessar os bancos de dados, ou seja:
 
-* **sistema** para um banco de dados Oracle,
+* **sistema** para uma base de dados Oracle,
 * **sa** para um banco de dados do Microsoft SQL Server,
 * **pôsteres** para um banco de dados PostgreSQL,
 * **db2inst1** para um banco de dados DB2.
@@ -108,7 +103,7 @@ A etapa a seguir permite que você defina as configurações para logon no banco
    >
    >Com um banco de dados Oracle, a **[!UICONTROL Unicode storage]** opção permite usar campos do tipo **NCLOB** e **NVARCHAR** .
    > 
-   >Se você não selecionar essa opção, o conjunto de caracteres (charset) do banco de dados Oracle deverá ativar o armazenamento de dados em todos os idiomas (AL32UTF8 é recomendado).
+   >Se você não selecionar essa opção, o conjunto de caracteres (conjunto de caracteres) do banco de dados Oracle deverá ativar o armazenamento de dados em todos os idiomas (recomenda-se AL32UTF8).
 
 * Escolha um fuso horário para o banco de dados e especifique se deseja que ele esteja em UTC (se disponível).
 
@@ -164,7 +159,7 @@ Exemplo de uma configuração do Microsoft SQL Server no banco de dados base61 v
 
 O banco de dados, assim como o usuário, devem ter sido criados pelo administrador do banco de dados e os direitos de acesso configurados corretamente.
 
-Por exemplo, para um banco de dados Oracle, os direitos mínimos necessários são: CONCEDER CONNECT, RECURSOS E ESPAÇO DE TRABALHO ILIMITADO.
+Por exemplo, para um banco de dados Oracle, os direitos mínimos obrigatórios são: CONCEDER CONNECT, RECURSOS E ESPAÇO DE TRABALHO ILIMITADO.
 
 Para usar um banco de dados existente, as etapas de configuração são as seguintes:
 
@@ -209,7 +204,7 @@ Na **[!UICONTROL Database]** janela, defina as configurações de conexão do ba
    >[!NOTE]
    >
    >Verifique se o nome do schema e do usuário correspondem. A maneira recomendada de criar o banco de dados é através do cliente do console de campanha.
-   >Para um banco de dados Oracle, não é necessário informar o nome da conta.
+   >Para um banco de dados Oracle, não é necessário inserir o nome da conta.
 
 * Indique se o banco de dados deve ser Unicode ou não.
 
