@@ -1,16 +1,13 @@
 ---
+solution: Campaign Classic
+product: campaign
 title: Orientações de monitoramento
 description: Descubra as diretrizes e práticas recomendadas para monitorar processos e instâncias do Campaign.
-page-status-flag: never-activated
-uuid: cf0d782d-47bf-40ae-ab6f-d1d47fa15792
-contentOwner: sauviat
-products: SG_CAMPAIGN/CLASSIC
 audience: production
 content-type: reference
 topic-tags: introduction
-discoiquuid: 8b33e6af-15c3-4b30-8ad6-d76a1f33be21
 translation-type: tm+mt
-source-git-commit: 3acf2359c74a3dc4b18c8976fee14dcbaf3fa510
+source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
 workflow-type: tm+mt
 source-wordcount: '707'
 ht-degree: 10%
@@ -53,7 +50,7 @@ Vários métodos automáticos estão disponíveis. para ajudá-lo a monitorar su
 
 A trilha de auditoria permite visualizar o histórico completo de alterações relacionadas a opções, workflows e schemas dentro da sua instância. [Clique aqui](../../production/using/audit-trail.md) para obter mais informações.
 
-**Painel de controle**
+**Painel de controle do Campaign**
 
 O Painel de controle do Campaign permite gerenciar várias configurações da sua instância: gerencie permissões de URL, verifique os detalhes da instância, como as versões de compilação dos servidores etc. Também permite monitorar o espaço disponível nos servidores SFTP conectados à sua instância. [Clique aqui](https://docs.adobe.com/content/help/pt-BR/control-panel/using/control-panel-home.translate.html) para obter mais informações.
 
