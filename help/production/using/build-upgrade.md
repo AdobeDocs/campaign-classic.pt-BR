@@ -1,16 +1,13 @@
 ---
+solution: Campaign Classic
+product: campaign
 title: Introdução às atualizações de compilação
 description: Saiba mais sobre as principais etapas para atualizar para uma nova compilação
-page-status-flag: never-activated
-uuid: f24552d4-6bdf-411c-a1f2-b8f339c311f4
-contentOwner: sauviat
-products: SG_CAMPAIGN/CLASSIC
 audience: production
 content-type: reference
 topic-tags: updating-adobe-campaign
-discoiquuid: f8e3633d-7232-44a5-842b-1a70c4f2bca2
 translation-type: tm+mt
-source-git-commit: 849e1ebf14f707d9e86c5a152de978acb6f1cb35
+source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
 workflow-type: tm+mt
 source-wordcount: '2355'
 ht-degree: 3%
@@ -22,7 +19,7 @@ ht-degree: 3%
 
 Esta seção fornecerá uma apresentação detalhada sobre o processo de atualização e as etapas para identificar e resolver conflitos.
 
-A atualização da construção deve ser efetuada com cautela, os seus impactos devem ser devidamente considerados antes e o procedimento deve ser concluído com um elevado nível de disciplina. Para garantir uma atualização bem-sucedida, verifique se somente usuários especialistas executam as etapas descritas abaixo. Além disso, recomendamos entrar em contato com o Atendimento [ao cliente do](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html) Adobe antes de iniciar qualquer atualização.
+A atualização da construção deve ser efetuada com cautela, os seus impactos devem ser devidamente considerados antes e o procedimento deve ser concluído com um elevado nível de disciplina. Para garantir uma atualização bem-sucedida, verifique se somente usuários especialistas executam as etapas descritas abaixo. Além disso, recomendamos entrar em contato com o Atendimento [ao cliente do](https://helpx.adobe.com/br/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html) Adobe antes de iniciar qualquer atualização.
 
 Os seguintes pré-requisitos são necessários:
 
@@ -248,7 +245,7 @@ Quando a opção Mensagens transacionais (Centro de mensagens) estiver ativada n
 
 No contexto de um ambiente mid-sourcing, é necessário executar estas etapas adicionais para atualizar:
 
-1. Entre em contato com o Atendimento [ao cliente do](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html) Adobe para coordenar a atualização do servidor do Mid-sourcing.
+1. Entre em contato com o Atendimento [ao cliente do](https://helpx.adobe.com/br/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html) Adobe para coordenar a atualização do servidor do Mid-sourcing.
 1. Valide se a versão foi atualizada executando um link de teste. Por exemplo:
 
    ```
