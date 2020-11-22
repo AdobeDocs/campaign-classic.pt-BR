@@ -1,20 +1,15 @@
 ---
+solution: Campaign Classic
+product: campaign
 title: Criação de um template de delivery
-seo-title: Criação de um template de delivery
 description: Criação de um template de delivery
-seo-description: null
-page-status-flag: never-activated
-uuid: 8ceae1ec-9e02-4809-aa8b-1e6bd7790950
-contentOwner: sauviat
-products: SG_CAMPAIGN/CLASSIC
 audience: delivery
 content-type: reference
 topic-tags: using-delivery-templates
-discoiquuid: 0e67d9dd-3ee8-4c06-98a4-3a2c644b6c0a
-translation-type: ht
-source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
-workflow-type: ht
-source-wordcount: '366'
+translation-type: tm+mt
+source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+workflow-type: tm+mt
+source-wordcount: '362'
 ht-degree: 100%
 
 ---
@@ -77,16 +72,16 @@ Para configurar um template de delivery, siga as seguintes etapas:
 
 O vídeo a seguir mostra como configurar um modelo para um delivery ad hoc.
 
->[!VIDEO](https://video.tv.adobe.com/v/24066?quality=12&captions=por_br)
+>[!VIDEO](https://video.tv.adobe.com/v/24066?quality=12)
 
 ## Como configurar propriedades de templates do delivery
 
 O vídeo a seguir mostra como definir as propriedades do template do delivery e explica em detalhes cada propriedade.
 
->[!VIDEO](https://video.tv.adobe.com/v/24067?quality=12&captions=por_br)
+>[!VIDEO](https://video.tv.adobe.com/v/24067?quality=12)
 
 ## Como implantar um template do delivery ad-hoc
 
 Este vídeo explica como implantar um template do delivery de email ad-hoc, bem como a diferença entre um delivery de email e um workflow de delivery.
 
->[!VIDEO](https://video.tv.adobe.com/v/24065?quality=12&captions=por_br)
+>[!VIDEO](https://video.tv.adobe.com/v/24065?quality=12)
