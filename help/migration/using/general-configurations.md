@@ -1,20 +1,15 @@
 ---
+solution: Campaign Classic
+product: campaign
 title: 'Configurações gerais '
-seo-title: 'Configurações gerais '
 description: 'Configurações gerais '
-seo-description: null
-page-status-flag: never-activated
-uuid: 317a145d-36b0-40fe-a272-ad5e35b0b190
-contentOwner: sauviat
-products: SG_CAMPAIGN/CLASSIC
 audience: migration
 content-type: reference
 topic-tags: configuration
-discoiquuid: f4b1c108-7f71-4aa1-8394-a7f660834c9c
 translation-type: tm+mt
-source-git-commit: d509dc584cd4ae17c6dda85c09fceee8c6162dba
+source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
 workflow-type: tm+mt
-source-wordcount: '2822'
+source-wordcount: '2820'
 ht-degree: 0%
 
 ---
@@ -49,7 +44,7 @@ Para usar o modo TIMESTAMP WITH TIMEZONE, também é necessário adicionar a op�
 
 ### Oracle {#oracle}
 
-Se você receber um erro **ORA 01805** durante o pós-upgrade, isso significa que os arquivos de fuso horário Oracle entre o servidor de aplicativos e o servidor de banco de dados estão dessincronizados. Para sincronizá-los novamente, aplique as seguintes etapas:
+Se você receber um erro **ORA 01805** durante a pós-atualização, isso significa que os arquivos de fuso horário Oracle entre o servidor de aplicativos e o servidor de banco de dados estão fora de sincronização. Para sincronizá-los novamente, aplique as seguintes etapas:
 
 1. Para identificar o arquivo de fuso horário usado, execute o seguinte comando:
 
@@ -63,7 +58,7 @@ Se você receber um erro **ORA 01805** durante o pós-upgrade, isso significa qu
 
 Para obter mais informações, visite: [https://docs.oracle.com/cd/E11882_01/server.112/e10729/ch4datetime.htm#NLSPG004](https://docs.oracle.com/cd/E11882_01/server.112/e10729/ch4datetime.htm#NLSPG004).
 
-Um desalinhamento de fuso horário entre o cliente e o servidor também pode causar alguns atrasos. É por isso que recomendamos usar a mesma versão da biblioteca Oracle nos lados cliente e servidor, os dois fusos horários devem ser os mesmos.
+Um desalinhamento de fuso horário entre o cliente e o servidor também pode causar alguns atrasos. É por isso que recomendamos usar a mesma versão da biblioteca do Oracle nos lados cliente e servidor, os dois fusos horários devem ser os mesmos.
 
 Para verificar se os dois lados estão no mesmo fuso horário:
 
