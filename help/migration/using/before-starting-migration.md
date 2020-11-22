@@ -1,16 +1,13 @@
 ---
+solution: Campaign Classic
+product: campaign
 title: Antes de iniciar a migração
 description: Antes de iniciar a migração
-page-status-flag: never-activated
-uuid: b9325510-2fa5-4be4-9cf0-f37232bbbd8c
-contentOwner: sauviat
-products: SG_CAMPAIGN/CLASSIC
 audience: migration
 content-type: reference
 topic-tags: migration-procedure
-discoiquuid: d8877378-fb43-4f32-91c6-60f2f788f916
 translation-type: tm+mt
-source-git-commit: 99d766cb6234347ea2975f3c08a6ac0496619b41
+source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
 workflow-type: tm+mt
 source-wordcount: '524'
 ht-degree: 2%
@@ -45,7 +42,7 @@ Antes de iniciar um processo de migração, você **deve** fazer backup dos dado
 
 ### Ambiente {#environment}
 
-* Não é possível alterar o tipo de mecanismo de banco de dados (DBMS). Por exemplo, você não pode alternar de um mecanismo PostgreSQL para um mecanismo Oracle. No entanto, você pode alternar de um mecanismo Oracle 8 para um mecanismo Oracle 10.
+* Não é possível alterar o tipo de mecanismo de banco de dados (DBMS). Por exemplo, você não pode alternar de um mecanismo PostgreSQL para um mecanismo Oracle. Entretanto, você pode alternar de um mecanismo Oracle 8 para um mecanismo Oracle 10.
 * Não é possível ir de um banco de dados não Unicode para um banco de dados Unicode.
 
 ### Recomendações {#recommendation}
