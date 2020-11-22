@@ -1,20 +1,15 @@
 ---
+solution: Campaign Classic
+product: campaign
 title: Configuração da plataforma
-seo-title: Configuração da plataforma
 description: Configuração da plataforma
-seo-description: null
-page-status-flag: never-activated
-uuid: e6255e4b-c9c8-4ac9-9ee3-aaa4dc9e5ecf
-contentOwner: sauviat
-products: SG_CAMPAIGN/CLASSIC
 audience: migration
 content-type: reference
 topic-tags: migration-procedure
-discoiquuid: 4d2e765b-750b-457f-ad55-8bd6faaa86af
 translation-type: tm+mt
-source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
 workflow-type: tm+mt
-source-wordcount: '943'
+source-wordcount: '940'
 ht-degree: 2%
 
 ---
@@ -32,7 +27,7 @@ Exemplo de elementos a serem verificados:
 * O atributo **tablespace** recupera seus valores por padrão, em outras palavras, os definidos no assistente de implantação.
 * Se você tiver adicionado uma visualização de referência à tabela NmsRecipient, deverá excluí-la antes de migrar.
 
-Este aviso também diz respeito aos usuários Oracle: se você tiver adicionado a opção **usetimestamptz:1** durante uma pós-atualização (consulte Fusos [](../../migration/using/general-configurations.md#time-zones)horários), todas as tabelas que contêm pelo menos um campo **date+time** serão recriadas.
+Este aviso também diz respeito aos usuários do Oracle: se você tiver adicionado a opção **usetimestamptz:1** durante uma pós-atualização (consulte Fusos [](../../migration/using/general-configurations.md#time-zones)horários), todas as tabelas que contêm pelo menos um campo **date+time** serão recriadas.
 
 ## Antes da migração {#before-the-migration}
 
@@ -44,7 +39,7 @@ Ao migrar para o Adobe Campaign v7, os seguintes elementos devem ser configurado
 
    Se quiser usar o modo &quot;vários fusos horários&quot;, consulte a seção [Fusos horários](../../migration/using/general-configurations.md#time-zones) .
 
-   Se você usar o Oracle como um banco de dados, verifique se os arquivos de fuso horário Oracle foram sincronizados corretamente entre o servidor de aplicativos e o servidor de banco de dados. For more on this, refer to the [Oracle](../../migration/using/general-configurations.md#oracle) section.
+   Se você usar o Oracle como um banco de dados, verifique se os arquivos de fuso horário do Oracle foram sincronizados corretamente entre o servidor de aplicativos e o servidor de banco de dados. For more on this, refer to the [Oracle](../../migration/using/general-configurations.md#oracle) section.
 
 * Zonas de segurança
 
