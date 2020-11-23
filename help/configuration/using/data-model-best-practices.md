@@ -31,7 +31,7 @@ Este documento fornece casos de uso comuns e práticas recomendadas para aprende
 
 ## Arquitetura do modelo de dados {#data-model-architecture}
 
-A Adobe Campaign Standard é um poderoso sistema de gestões de campanha entre canais que pode ajudá-lo a alinhar suas estratégias online e offline para criar experiências personalizadas de clientes.
+Adobe Campaign Standard is a powerful cross-channel campaign management system that can help you align your online and offline strategies to create personalized customer experiences.
 
 ### Abordagem centrada no cliente {#customer-centric-approach}
 
