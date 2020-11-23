@@ -7,9 +7,9 @@ audience: rns
 content-type: reference
 topic-tags: latest-release-notes
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: ff3d18b104a8dba7cd813aa698f9c27b4e25e244
 workflow-type: tm+mt
-source-wordcount: '538'
+source-wordcount: '537'
 ht-degree: 85%
 
 ---
@@ -214,6 +214,7 @@ Para saber mais sobre itens obsoletos, visite [esta página](../../rn/using/depr
 <tr>
 <td>Oracle</td>
 <td>
+<p>19c</p>
 <p>18c</p>
 <p>12c</p>
 <p>11g    </p>
@@ -269,7 +270,7 @@ Para saber mais sobre itens obsoletos, visite [esta página](../../rn/using/depr
 <tr>
 <td>SAP HANA</td>
 <td>
-<p>versão 1 SP12 ou superior</p>
+<p>versão 1 SPS 12</p>
 </td>
 </tr>
 <tr><td>Hadoop via HiveSQL</td>
