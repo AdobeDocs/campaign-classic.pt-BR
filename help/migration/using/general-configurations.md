@@ -456,7 +456,8 @@ Há três maneiras possíveis de resolver um conflito:
 * **[!UICONTROL Keep the current version]**: significa que a atualização foi rejeitada.
 
    >[!IMPORTANT]
-   Se você selecionar esse modo de resolução, corre o risco de perder patches na nova versão. Por conseguinte, recomenda-se vivamente que esta opção não seja utilizada ou reservada apenas aos operadores especializados.
+   >
+   >Se você selecionar esse modo de resolução, corre o risco de perder patches na nova versão. Por conseguinte, recomenda-se vivamente que esta opção não seja utilizada ou reservada apenas aos operadores especializados.
 
 Se você optar por resolver manualmente o conflito, proceda da seguinte forma:
 
@@ -502,12 +503,14 @@ $(XTK_INSTALL_DIR)/tomcat-8/lib/el-api.jar
 Na v7, o conteúdo da oferta foi movido. Na v6.02, o conteúdo estava em cada schema de representação (**nms:emailOfferView**). Na v7, o conteúdo agora está no schema da oferta. Após a pós-atualização, o conteúdo não estará visível na interface. Após a pós-atualização, você deve recriar o conteúdo da oferta ou desenvolver um script que move automaticamente o conteúdo do schema de representação para o schema de oferta.
 
 >[!IMPORTANT]
-Se alguns delivery que usam ofertas configurados forem enviados após a migração, você deverá excluir e recriar todos esses delivery na v7. Se você não conseguir fazer isso, um &quot;modo de compatibilidade&quot; será oferecido. Este modo não é recomendado porque você não se beneficiará de todos os novos recursos no Interaction v7. Este é um modo de transição que permite concluir as campanhas em andamento antes da migração real para a versão 6.1. Para obter mais informações sobre este modo, entre em contato conosco.
+>
+>Se alguns delivery que usam ofertas configurados forem enviados após a migração, você deverá excluir e recriar todos esses delivery na v7. Se você não conseguir fazer isso, um &quot;modo de compatibilidade&quot; será oferecido. Este modo não é recomendado porque você não se beneficiará de todos os novos recursos no Interaction v7. Este é um modo de transição que permite concluir as campanhas em andamento antes da migração real para a versão 6.1. Para obter mais informações sobre este modo, entre em contato conosco.
 
 Um exemplo de script de movimento (**interventionTo610_full_XX.js**) está disponível na pasta **Migração** na pasta Adobe Campaign v7. Este arquivo mostra um exemplo de script para um cliente usando uma única representação de email por oferta (os **[!UICONTROL htmlSource]** campos e **[!UICONTROL textSource]** ). O conteúdo que estava na tabela **NmsEmailOfferView** foi movido para a tabela oferta.
 
 >[!NOTE]
-O uso desse script não permite que você se beneficie das opções &quot;gestão de conteúdo&quot; e &quot;funções de renderização&quot;. Para se beneficiar dessas funções, é necessário repensar as ofertas do catálogo, especialmente o conteúdo da oferta e os espaços de configuração.
+>
+>O uso desse script não permite que você se beneficie das opções &quot;gestão de conteúdo&quot; e &quot;funções de renderização&quot;. Para se beneficiar dessas funções, é necessário repensar as ofertas do catálogo, especialmente o conteúdo da oferta e os espaços de configuração.
 
 ```
 loadLibrary("/nl/core/shared/nl.js");
@@ -606,7 +609,8 @@ Este é o procedimento a ser seguido depois de ter movido o conteúdo da oferta 
 1. Execute testes abrangentes.
 
    >[!NOTE]
-   Os nomes das categorias e ofertas online são modificados depois de serem colocados no ar. No canal recebido, atualize todas as referências ao oferta e categoria.
+   >
+   >Os nomes das categorias e ofertas online são modificados depois de serem colocados no ar. No canal recebido, atualize todas as referências ao oferta e categoria.
 
 ## Relatórios {#reports}
 
@@ -634,7 +638,8 @@ Há duas famílias de aplicativos da Web:
 Assim como os relatórios (consulte [Relatórios](#reports)), se você adicionou JavaScript, é necessário verificar e adaptar, se necessário. Se você quiser se beneficiar do banner azul v7 (contendo os universos), será necessário publicar novamente o aplicativo da Web. Se o código JavaScript estiver funcionando, você pode selecionar o mecanismo de renderização v6.x. Se esse não for o caso, você pode usar o mecanismo de renderização v6.0 enquanto adapta seu código, em seguida, usar o mecanismo de renderização v6.x.
 
 >[!NOTE]
-As etapas para selecionar o mecanismo de renderização são as mesmas para selecionar relatórios. Consulte Relatórios [personalizados](#personalized-reports).
+>
+>As etapas para selecionar o mecanismo de renderização são as mesmas para selecionar relatórios. Consulte Relatórios [personalizados](#personalized-reports).
 
 Os métodos de conexão de aplicação web foram alterados na v7. Se você encontrar problemas de conexão em seus aplicativos da Web identificados, será necessário ativar temporariamente as opções **allowUserPassword** e **sessionTokenOnly** no arquivo **serverConf.xml** . Após a pós-atualização, modifique estes valores de opção:
 
@@ -667,7 +672,8 @@ sessionTokenOnly="false"
 Se você encontrar algum problema, publique novamente o aplicativo da Web. Se o problema persistir, você poderá selecionar o mecanismo de renderização v6.0. Se você não tiver adicionado o JavaScript, poderá selecionar o mecanismo de renderização v6.x e se beneficiar de seus novos recursos.
 
 >[!NOTE]
-As etapas para selecionar o mecanismo de renderização são as mesmas para selecionar relatórios. Consulte Relatórios [personalizados](#personalized-reports).
+>
+>As etapas para selecionar o mecanismo de renderização são as mesmas para selecionar relatórios. Consulte Relatórios [personalizados](#personalized-reports).
 
 ## Red-Hat {#red-hat}
 

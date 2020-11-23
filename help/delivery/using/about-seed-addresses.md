@@ -47,7 +47,6 @@ Para deliveries de mala direta, os seed addresses são adicionados durante a ext
 >
 >* Não deve usar a opção **[!UICONTROL Handle groupings (GROUP BY+HAVING)]**.
 >* Se as coleções de elemento forem extraídas, esses campos têm um valor vazio para os seed addresses, a menos que a opção **[!UICONTROL Single row (expert user)]** esteja selecionada. Para obter mais informações, consulte [esta seção](../../platform/using/exporting-data.md#step-7---data-formatting).
-
 >
 
 

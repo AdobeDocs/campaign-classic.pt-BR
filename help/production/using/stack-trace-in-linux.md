@@ -23,7 +23,6 @@ Um rastreamento **de** pilha representa um rastreamento contido em um arquivo do
 >
 >* Um arquivo **principal** é chamado de **núcleo.`<num>`**.
 >* **gdb - O Depurador** GNU deve estar instalado no computador.
-
 >
 
 
