@@ -7,9 +7,9 @@ audience: production
 content-type: reference
 topic-tags: troubleshooting
 translation-type: tm+mt
-source-git-commit: 6464a61148fd12738d95953161aea4ac4d19c04b
+source-git-commit: 2cc4ab52f3cbdd00831d0b5104690b7adf6091ce
 workflow-type: tm+mt
-source-wordcount: '349'
+source-wordcount: '343'
 ht-degree: 2%
 
 ---
@@ -50,36 +50,31 @@ Você pode tentar os testes a seguir e, se a falha na conexão persistir, entre 
     &lt;pre>
     &lt;redir status=&#39;OK&#39; date=&#39;AAAA/MM/DD HH:MM:SS&#39; build=&#39;XXXX&#39; host=&#39;&lt;nome do host>&#39; localHost=&#39;&lt;servidor>&#39;/>
     &lt;/pre>
-    
-    Se você não obter esse resultado, verifique na configuração do servidor Web se a integração é considerada.&lt;/td>
+Se você não obtiver esse resultado, verifique na configuração do servidor Web se a integração é considerada.</td>
 </tr>
   <tr> 
    <td>O módulo Adobe Campaign Web foi iniciado?</td> 
    <td>Conecte-se ao seguinte URL: <b>http(s)://&gt;URLSERVER&lt;/nl/jsp/logon.jsp</b>* Se você obtiver um erro de Java Tomcat:
 
-    A integração do JAVA é realizada corretamente? A Adobe Campaign requer um SUN JDK.
-    
-    Ele é integrado ao arquivo [caminho do aplicativo]/nl6/customer.sh
+A integração do JAVA é realizada corretamente? A Adobe Campaign requer um SUN JDK.
+
+Ele é integrado ao [caminho de arquivo do aplicativo]/nl6/customer.sh
 
 * Se você obter uma página em branco:
 
-       O módulo Adobe Campaign Web foi iniciado? Você deve obter:
-       
-       &lt;pre>
-     nlserver pdump
-     HH:MM:SS > Servidor de aplicativos para Adobe Campaign Classic (compilação 7.X YY.R XXX@SHA1) de DD/MM/AAAA
-     [...]
- web@default (27515) - 55.2 Mb     
-     
-     [...]&lt;/pre>
-   
+O módulo Adobe Campaign Web foi iniciado? Você deve obter:
+
+<pre>
+nlserver pdumpHH:MM:SS &gt; Servidor de aplicativos para Adobe Campaign Classic (compilação 7.X YY.R XXX@SHA1) de DD/MM/AAAA[...]web@default (27515) - 55.2 Mb[...]
+</pre>
+
 * Caso contrário, reinicie usando o seguinte comando:
 
-       &lt;pre>
- Web     do start
- nlserver     &lt;/pre>
-     &lt;/td>
-   </tr>
+<pre>        
+start nlserver web
+</pre>
+</td>
+</tr>
   <tr>
   	<td>Verifique a configuração geral das zonas de segurança.</td>
   	<td>Para obter mais informações sobre a configuração de zonas de segurança, consulte [esta seção](../../installation/using/configuring-campaign-server.md#definindo-zonas-de-segurança)</td>
