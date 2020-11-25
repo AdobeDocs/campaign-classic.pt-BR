@@ -9,9 +9,9 @@ solution: Campaign Classic
 sub-product: Adobe Campaign Classic
 type: Documentation
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: 9d595f41dd2b0cbf042ab768ae5897cc5ac240bb
 workflow-type: tm+mt
-source-wordcount: '2169'
+source-wordcount: '2171'
 ht-degree: 97%
 
 ---
@@ -58,6 +58,7 @@ ht-degree: 97%
       + [Privacidade e consentimento](platform/using/privacy-and-recommendations.md)
       + [Gerenciamento de privacidade](platform/using/privacy-management.md)
       + [Solicitações de privacidade](platform/using/privacy-requests.md)
+      + [Perguntas frequentes sobre privacidade](platform/using/privacy-faq.md)
    + Gerenciamento de perfis {#profile-management}
       + [Sobre perfis](platform/using/about-profiles.md)
       + [Edição de um perfil](platform/using/editing-a-profile.md)
@@ -332,7 +333,7 @@ ht-degree: 97%
       + [Sincronização de aplicações Web](integrations/using/synchronizing-web-applications.md)
       + [Solução de problemas do [!DNL ACS Connector]](integrations/using/troubleshooting-the-acs-connector.md)
    + Experience Cloud Triggers {#experience-triggers}
-      + [Comece com [!DNL Adobe Experience Cloud Triggers]](integrations/using/about-triggers.md)
+      + [Introdução ao [!DNL Adobe Experience Cloud Triggers]](integrations/using/about-triggers.md)
       + [Configuração de pipeline](integrations/using/configuring-pipeline.md)
       + [Configuração de E/S de Adobe para acionadores Adobe Experience Cloud](integrations/using/configuring-adobe-io.md)
       + [Configuração de eventos para implementação personalizada](integrations/using/events.md)
