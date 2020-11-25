@@ -7,9 +7,9 @@ audience: production
 content-type: reference
 topic-tags: troubleshooting
 translation-type: tm+mt
-source-git-commit: fc5a44fe7bf4c88eca4634a67eaae48c722d8e5e
+source-git-commit: 85fae38f864b031f069058dae79ce6753dc4bf03
 workflow-type: tm+mt
-source-wordcount: '337'
+source-wordcount: '370'
 ht-degree: 2%
 
 ---
@@ -57,7 +57,11 @@ Você pode tentar os testes a seguir e, se a falha na conexão persistir, entre 
 </tr>
 <tr>
 <td>Verifique a configuração geral das zonas de segurança.</td>
-<td>Para obter mais informações sobre a configuração de zonas de segurança, consulte [esta seção](../../installation/using/configuring-campaign-server.md#definindo-zonas-de-segurança)</td>
+<td>For more on configuring security zones, refer to <a href="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/additional-configurations/configuring-campaign-server.html?lang=en#configuring-campaign-server"/>this section.</a></td>
+</tr>
+<tr>
+<td>O comando nlserver pdump retorna <b>Sem tarefa</b></td>
+<td>É necessário reiniciar o aplicativo Adobe Campaign inteiro. Para fazer isso, use o seguinte comando: <b>nlserver watchdog -svc -noconsole</b></td>
 </tr>
 </tbody> 
 </table>
