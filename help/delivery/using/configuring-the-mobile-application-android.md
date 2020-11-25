@@ -10,10 +10,10 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: 1d7d48f52f69e4902eafa6806c2cd9170c21fe5a
 workflow-type: tm+mt
-source-wordcount: '1593'
-ht-degree: 92%
+source-wordcount: '1648'
+ht-degree: 89%
 
 ---
 
@@ -61,6 +61,8 @@ Para escolher qual conector deseja usar, siga estas etapas:
    * **maxGCMConnectPerChild**: Limite máximo de solicitações HTTP paralelas para o FCM iniciado por cada servidor filho (8 por padrão).
 
 ## Configuração do serviço Android {#configuring-android-service}
+
+![](assets/do-not-localize/how-to-video.png) [Saiba como configurar um serviço Android em vídeo](https://experienceleague.adobe.com/docs/campaign-classic-learn/getting-started-with-push-notifications-for-android/configuring-an-android-service-in-campaign.html?lang=en#configuring-an-android-service-and-creating-an-android-mobile-application-in-campaign)
 
 1. Acesse o nó **[!UICONTROL Profiles and Targets > Services and subscriptions]** e clique em **[!UICONTROL New]**.
 
@@ -178,6 +180,8 @@ Abaixo estão os nomes de payload do FCM para personalizar ainda mais sua notifi
 
 ## Estender o schema appsubscriptionRcp {#extend-subscription-schema}
 
+![](assets/do-not-localize/how-to-video.png) [Saiba como estender o schema appsubscriptionRcp em vídeo](https://experienceleague.adobe.com/docs/campaign-classic-learn/getting-started-with-push-notifications-for-android/extending-the-app-subscription-schema.html?lang=en#extending-the-app-subscription-schema-to-personalize-push-notifications)
+
 É necessário estender o **appsubscriptionRcp** para definir novos campos adicionais para armazenar parâmetros do aplicativo no banco de dados de Campanhas. Esses campos serão usados para personalização, por exemplo. Para fazer isso:
 
 1. Crie uma extensão do schema **[!UICONTROL Subscriber applications (nms:appsubscriptionRcp)]** e defina os novos campos. Learn more about schema extension in [this page](../../configuration/using/about-schema-edition.md)
@@ -187,7 +191,6 @@ Abaixo estão os nomes de payload do FCM para personalizar ainda mais sua notifi
    >[!CAUTION]
    >
    >Verifique se os nomes da configuração da guia **[!UICONTROL Subscription parameters]** são iguais aos do código do aplicativo móvel. Consulte a seção [Integrating Campaign SDK into the mobile application](../../delivery/using/integrating-campaign-sdk-into-the-mobile-application.md).
-
 
 ## Criação de uma notificação avançada de Android {#creating-android-delivery}
 
@@ -241,6 +244,8 @@ A imagem e a página da web devem ser exibidas na notificação por push quando 
 >[!NOTE]
 >
 >Opções adicionais para mensagem de notificação estão disponíveis somente com a configuração da API HTTP v1. Para obter mais informações, consulte esta [seção](../../delivery/using/configuring-the-mobile-application-android.md#android-service-httpv1).
+
+![](assets/do-not-localize/how-to-video.png) [Saiba como criar uma notificação por push do Android em vídeo](https://experienceleague.adobe.com/docs/campaign-classic-learn/getting-started-with-push-notifications-for-android/configuring-and-sending-push-notifications.html?lang=en#additional-resources)
 
 1. Vá até **[!UICONTROL Campaign management]** > **[!UICONTROL Deliveries]**.
 
