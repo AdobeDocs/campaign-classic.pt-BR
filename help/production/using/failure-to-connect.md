@@ -7,7 +7,7 @@ audience: production
 content-type: reference
 topic-tags: troubleshooting
 translation-type: tm+mt
-source-git-commit: 2cc4ab52f3cbdd00831d0b5104690b7adf6091ce
+source-git-commit: 57063c1ed0100b171bda93e273c399c40d8e980a
 workflow-type: tm+mt
 source-wordcount: '343'
 ht-degree: 2%
@@ -61,13 +61,11 @@ A integração do JAVA é realizada corretamente? A Adobe Campaign requer um SUN
 Ele é integrado ao [caminho de arquivo do aplicativo]/nl6/customer.sh
 
 * Se você obter uma página em branco:
-
 O módulo Adobe Campaign Web foi iniciado? Você deve obter:
 
 <pre>
 nlserver pdumpHH:MM:SS &gt; Servidor de aplicativos para Adobe Campaign Classic (compilação 7.X YY.R XXX@SHA1) de DD/MM/AAAA[...]web@default (27515) - 55.2 Mb[...]
 </pre>
-
 * Caso contrário, reinicie usando o seguinte comando:
 
 <pre>        
