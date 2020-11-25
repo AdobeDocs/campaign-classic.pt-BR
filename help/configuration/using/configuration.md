@@ -7,7 +7,7 @@ audience: configuration
 content-type: reference
 topic-tags: navigation-hierarchy
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: 6e0741d13aa954e81fe6416663399ffd1a81012f
 workflow-type: tm+mt
 source-wordcount: '1161'
 ht-degree: 2%
@@ -162,7 +162,7 @@ O **`<nodemodel>`** elemento contém a descrição do tipo de pasta com as segui
 * **name**: nome interno
 * **rótulo**: rótulo usado no **[!UICONTROL Add new folder]** menu e como um rótulo padrão ao inserir uma pasta.
 * **img**: imagem padrão na inserção de pasta.
-* **hiddenCommands**: lista de comandos (separados por vírgula) a serem mascarados. Valores possíveis: &quot;insert&quot;, &quot;delete&quot;, &quot;update&quot; e &quot;duplicado&quot;.
+* **hiddenCommands**: lista de comandos (separados por vírgula) a serem mascarados. Valores possíveis: &quot;adbnew&quot;, &quot;adbsave&quot;, &quot;adbcancel&quot; e &quot;adbdup&quot;.
 * **newFolderShortCuts**: lista de atalhos em modelos (**`<nodemodel>`** separados por vírgula) na criação de pastas.
 * **insertRight**, **editRight**, **deleteRight**: direitos para inserir, editar e excluir pastas.
 
