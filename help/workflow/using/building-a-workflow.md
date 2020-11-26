@@ -1,8 +1,8 @@
 ---
 solution: Campaign Classic
 product: campaign
-title: Criação de um fluxo de trabalho
-description: Saiba como criar um fluxo de trabalho
+title: Criação de um workflow
+description: Saiba como construir um workflow
 audience: workflow
 content-type: reference
 topic-tags: -general-operation
@@ -10,12 +10,12 @@ translation-type: tm+mt
 source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
 workflow-type: tm+mt
 source-wordcount: '1624'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
 
-# Criação de um fluxo de trabalho {#building-a-workflow}
+# Criação de um workflow {#building-a-workflow}
 
 Esta seção detalha os principais princípios e as práticas recomendadas para criação de workflow no Campaign.
 
@@ -23,7 +23,7 @@ Esta seção detalha os principais princípios e as práticas recomendadas para 
 * Para design do diagrama de workflow, consulte [Adicionar e vincular atividades](#adding-and-linking-activities)
 * Para acessar parâmetros e propriedades de atividades, consulte [Configuração de atividades](#configuring-activities)
 * Para design de workflows para construção do target, consulte [workflows para construção do target](#targeting-workflows)
-* Use workflows to execute a campaign, see [Campaign workflows](#campaign-workflows)
+* Use workflows para executar uma campanha. Consulte [Workflows do Campaign](#campaign-workflows)
 * Para acessar e criar workflows técnicos, consulte [Workflows técnicos](#technical-workflows)
 * Para usar templates para criar workflows, consulte [Templates de workflow](#workflow-templates)
 
@@ -140,13 +140,13 @@ Os fluxos de trabalho para construção do target podem ser criados e editados p
 
 Os workflows para construção do target dentro da estrutura de uma campanha são armazenados com todos os workflows da campanha.
 
-### Etapas principais para criar um fluxo de trabalho de definição de metas {#implementation-steps-}
+### Etapas principais para criar um workflow para construção do target {#implementation-steps-}
 
-As etapas para criar um fluxo de trabalho de definição de metas estão detalhadas nestas seções:
+As etapas para a criação de um workflow para construção do target estão detalhadas nestas seções:
 
-1. **Identificar** dados no banco de dados - Consulte [Criação de query](../../workflow/using/targeting-data.md#creating-queries)
-1. **Preparar** dados para atender às necessidades do delivery - Consulte [Enriquecendo e modificando dados](../../workflow/using/targeting-data.md#enriching-and-modifying-data)
-1. **Usar** dados para executar atualizações ou dentro de um delivery - Consulte [Atualização do banco de dados](../../workflow/using/how-to-use-workflow-data.md#updating-the-database)
+1. **Identifique** dados no banco de dados – Consulte [Criação de queries](../../workflow/using/targeting-data.md#creating-queries)
+1. **Prepare** dados para atender às necessidades do delivery – Consulte [Enriquecendo e modificando dados](../../workflow/using/targeting-data.md#enriching-and-modifying-data)
+1. **Use** dados para executar atualizações ou dentro de um delivery – Consulte [Atualização do banco de dados](../../workflow/using/how-to-use-workflow-data.md#updating-the-database)
 
 Os resultados de todos os enriquecimentos e todos tratamentos realizados no target são armazenados e acessíveis em campos de personalização, principalmente para usar criação de mensagens personalizadas. Para obter mais informações, consulte [Dados do target](../../workflow/using/data-life-cycle.md#target-data)
 
@@ -176,13 +176,13 @@ Para cada campanha, você pode criar fluxos de trabalho que serão executados na
 
 Esta guia contém as mesmas atividades que todos os workflows. [Saiba mais](#implementation-steps-)
 
-Além de campanhas de target, os workflows da campanha permitem criar e configurar deliveries inteiramente para todos os canais disponíveis. Após ser criado no workflow, esses deliveries estão disponíveis no painel da campanha. [Saiba mais](../../campaign/using/marketing-campaign-deliveries.md)
+Além de direcionar campanhas, os workflows da campanha permitem criar e configurar deliveries inteiramente para todos os canais disponíveis. Após ser criado no workflow, esses deliveries estão disponíveis no painel da campanha. [Saiba mais](../../campaign/using/marketing-campaign-deliveries.md)
 
-Todos os fluxos de trabalho da campanha são centralizados no nó **[!UICONTROL Administration > Production > Objects created automatically > Campaign workflows]**.
+Todos os workflows da campanha são centralizados no nó **[!UICONTROL Administration > Production > Objects created automatically > Campaign workflows]**.
 
 ![](assets/campaigns_wf.png)
 
-Campaign workflows and implementation examples are detailed in [this page](../../campaign/using/marketing-campaign-deliveries.md#building-the-main-target-in-a-workflow).
+Os workflows da campanha e exemplos de implementação são detalhados [nesta página](../../campaign/using/marketing-campaign-deliveries.md#building-the-main-target-in-a-workflow).
 
 ## Fluxos de trabalho técnicos {#technical-workflows}
 
