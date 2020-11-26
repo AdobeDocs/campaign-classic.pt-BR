@@ -2,7 +2,7 @@
 solution: Campaign Classic
 product: campaign
 title: União
-description: Saiba mais sobre a atividade do fluxo de trabalho da União
+description: Saiba mais sobre a atividade do workflow de união
 audience: workflow
 content-type: reference
 topic-tags: targeting-activities
@@ -10,7 +10,7 @@ translation-type: tm+mt
 source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
 workflow-type: tm+mt
 source-wordcount: '305'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
