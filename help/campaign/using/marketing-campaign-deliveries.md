@@ -10,7 +10,7 @@ translation-type: tm+mt
 source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
 workflow-type: tm+mt
 source-wordcount: '2917'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
@@ -19,7 +19,7 @@ ht-degree: 95%
 
 Os deliveries podem ser criados através do painel da campanha, de um workflow de campanha ou diretamente através da visão geral dos deliveries.
 
-Quando criados a partir de uma campanha, os delivery serão vinculados a essa campanha e consolidados no nível da campanha.
+Quando criados a partir de uma campanha, os deliveries serão vinculados a essa campanha e consolidados em seu nível.
 
 ![](assets/do-not-localize/how-to-video.png)[ Descubra este recurso no vídeo](#create-email-video)
 
@@ -29,19 +29,19 @@ Para criar um delivery vinculado a uma campanha, clique no link **[!UICONTROL Ad
 
 ![](assets/campaign_op_add_delivery.png)
 
-As configurações sugeridas são adequadas aos diferentes tipos de delivery: mala direta, email, canais móveis. [Saiba mais](../../delivery/using/steps-about-delivery-creation-steps.md).
+As configurações sugeridas são adequadas aos diferentes tipos de delivery: correspondência direta, email, canais móveis. [Saiba mais](../../delivery/using/steps-about-delivery-creation-steps.md).
 
-## Seleção da população do target {#selecting-the-target-population}
+## Seleção da população do público alvo {#selecting-the-target-population}
 
 Para cada delivery, é possível definir:
 
-* A audiência - Saiba mais sobre como [Criar a audiência em um fluxo de trabalho](#building-the-main-target-in-a-workflow) e [Selecionar a população](#selecting-the-target-population)do público alvo.
-* Um grupo de controle - Saiba mais sobre como [Definir um grupo de controle](#defining-a-control-group).
-* Seeds addresses - Saiba mais sobre [esta seção](../../delivery/using/about-seed-addresses.md).
+* O público – Saiba mais em [Criação de público em um workflow](#building-the-main-target-in-a-workflow) e [Seleção da população do público alvo](#selecting-the-target-population).
+* Um grupo de controle – saiba mais em [Definição de um grupo de controle](#defining-a-control-group).
+* Seed addresses – saiba mais [nesta seção](../../delivery/using/about-seed-addresses.md).
 
-Some of this information can be inherited from the [template](../../campaign/using/marketing-campaign-templates.md#campaign-templates).
+Algumas dessas informações podem ser herdadas do [modelo](../../campaign/using/marketing-campaign-templates.md#campaign-templates).
 
-Para criar o target do delivery, você pode definir critérios de filtragem para os recipients no banco de dados. Este modo de seleção de recipient é apresentado [nesta seção](../../delivery/using/steps-defining-the-target-population.md).
+Para criar o público alvo do delivery, você pode definir critérios de filtragem para os recipients no banco de dados. Este modo de seleção de recipient é apresentado [nesta seção](../../delivery/using/steps-defining-the-target-population.md).
 
 **Exemplo: enviar mensagens para um grupo**
 
@@ -57,15 +57,15 @@ Você pode importar uma população para uma lista e depois direcionar essa list
 
 ![](assets/s_user_target_group_next.png)
 
-### Criação da audiência em um fluxo de trabalho {#building-the-main-target-in-a-workflow}
+### Criação do público em um workflow {#building-the-main-target-in-a-workflow}
 
-O alvo principal de um delivery também pode ser definido no workflow de definição de metas: esse ambiente gráfico permite criar um destino usando queries, testes e operadores: união, correção de duplicidade, compartilhamento etc. [Saiba mais](../../workflow/using/architecture.md).
+O alvo principal de um delivery também pode ser definido no workflow para construção do target: esse ambiente gráfico permite criar um público alvo usando queries, testes e operadores: união, correção de duplicidade, compartilhamento etc. [Saiba mais](../../workflow/using/architecture.md).
 
 >[!IMPORTANT]
 >
->Não é possível criar mais de 28 workflows em uma campanha. Acima desse limite, os workflows adicionais não estão visíveis na interface e podem gerar erros.
+>Não é possível criar mais de 28 workflows em uma campanha. Acima desse limite, os workflows adicionais não ficam visíveis na interface e podem gerar erros.
 
-#### Criar o fluxo de trabalho {#creating-a-targeting-workflow}
+#### Criar o workflow {#creating-a-targeting-workflow}
 
 A definição de alvos pode ser criada por meio de uma combinação de condições de filtragem em uma sequência gráfica em um workflow. Você pode criar populações e subpopulações que serão direcionadas de acordo com suas necessidades. Para exibir o editor de workflow, clique na guia **[!UICONTROL Targeting and workflows]** no painel de campanha.
 
@@ -104,7 +104,7 @@ Você pode criar vários workflows para construção do target para uma única c
 1. Selecione o template **[!UICONTROL New workflow]** e o nome deste workflow.
 1. Clique em **[!UICONTROL OK]** para confirmar a criação do workflow e, em seguida, crie o diagrama para esse workflow.
 
-#### Execute the workflow {#executing-a-workflow}
+#### Executar o workflow {#executing-a-workflow}
 
 Os workflows para construção do target podem ser iniciados manualmente por meio do botão **[!UICONTROL Start]** na barra de ferramentas, desde que você tenha os direitos apropriados.
 
@@ -255,9 +255,9 @@ Você pode definir uma nova população a ser usada como um grupo de controle. E
 
 ## Iniciar um delivery {#starting-a-delivery}
 
-Depois que todas as aprovações tiverem sido concedidas, o delivery estará pronto para ser iniciado. O procedimento de delivery depende do tipo de delivery. For email or mobile channel deliveries, see [Starting an online delivery](#starting-an-online-delivery), and for direct mail deliveries, see [Starting an offline delivery](#starting-an-offline-delivery).
+Depois que todas as aprovações tiverem sido concedidas, o delivery estará pronto para ser iniciado. O procedimento de delivery depende do tipo de delivery. Para deliveries de email ou canais móveis, consulte [Iniciar um delivery online](#starting-an-online-delivery) e para deliveries por correspondência direta, consulte [Iniciar um delivery offline](#starting-an-offline-delivery).
 
-### Iniciar um delivery on-line {#starting-an-online-delivery}
+### Iniciar um delivery online {#starting-an-online-delivery}
 
 Depois que todas as solicitações de aprovação tiverem sido concedidas, o status do delivery será alterado para **[!UICONTROL Pending confirmation]** e ele poderá ser iniciado por um operador. Quando apropriado, o operador (ou grupo de operadores) do Adobe Campaign designado como revisor para iniciar o delivery é notificado de que um delivery está pronto para ser iniciado.
 
