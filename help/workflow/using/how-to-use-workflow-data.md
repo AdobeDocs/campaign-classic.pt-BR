@@ -2,7 +2,7 @@
 solution: Campaign Classic
 product: campaign
 title: Como usar os dados de workflow
-description: Saiba como usar os dados do fluxo de trabalho
+description: Saiba como usar os dados de workflow
 audience: workflow
 content-type: reference
 topic-tags: -general-operation
@@ -10,7 +10,7 @@ translation-type: tm+mt
 source-git-commit: e43a14a8be179dd4793176d15e2c30b3e778d3e0
 workflow-type: tm+mt
 source-wordcount: '916'
-ht-degree: 95%
+ht-degree: 98%
 
 ---
 
@@ -103,7 +103,7 @@ As etapas para executar esse caso de uso são as seguintes:
 
 1. Gere um par de chaves GPG (público/privado) usando um utilitário GPG e, em seguida, instale a chave pública no Painel de controle do Campaign. As etapas detalhadas estão disponíveis na [documentação do Painel de controle do Campaign](https://docs.adobe.com/content/help/pt-BR/control-panel/using/instances-settings/gpg-keys-management.html#encrypting-data).
 
-1. No Campaign Classic, crie um fluxo de trabalho para exportar os dados e criptografá-los usando a chave privada que foi instalada por meio do Painel de controle do Campaign. Para fazer isso, criaremos um workflow da seguinte maneira:
+1. Crie um workflow para exportação de dados no Campaign Classic e criptografe-o usando a chave privada que foi instalada através do Painel de controle do Campaign. Para fazer isso, criaremos um workflow da seguinte maneira:
 
    ![](assets/gpg-workflow-encrypt.png)
 
