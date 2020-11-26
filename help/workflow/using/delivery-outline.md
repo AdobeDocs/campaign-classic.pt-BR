@@ -2,7 +2,7 @@
 solution: Campaign Classic
 product: campaign
 title: Delivery outline
-description: Saiba mais sobre a atividade do fluxo de trabalho do Delivery outline
+description: Saiba mais sobre a atividade do workflow do Delivery outline
 audience: workflow
 content-type: reference
 topic-tags: targeting-activities
@@ -10,14 +10,14 @@ translation-type: tm+mt
 source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
 workflow-type: tm+mt
 source-wordcount: '267'
-ht-degree: 82%
+ht-degree: 100%
 
 ---
 
 
 # Delivery outline{#delivery-outline}
 
-The **delivery outline** lets you use an outline in a campaign workflow. O outline deve ter sido criado antecipadamente na campanha.
+O **delivery outline** permite usar um outline em um workflow de campanha. O outline deve ter sido criado antecipadamente na campanha.
 
 Para obter mais informações sobre delivery outlines no Adobe Campaign, consulte esta [seção](../../campaign/using/marketing-campaign-deliveries.md#associating-and-structuring-resources-linked-via-a-delivery-outline).
 
@@ -25,7 +25,7 @@ Para configurar a atividade, basta marcar outline desejado e a data de contato p
 
 ## Exemplo: Inserção de uma oferta por meio de um esboço de entrega.{#example--inserting-an-offer-via-a-delivery-outline}
 
-The **delivery outline** activity, available in the campaign workflows, lets you present offers that are referenced in a delivery outline from the current campaign in progress.
+A atividade de **delivery outline**, disponível nos workflows da campanha, permite apresentar ofertas mencionadas em um delivery outline na campanha atual em andamento.
 
 >[!NOTE]
 >
