@@ -2,7 +2,7 @@
 solution: Campaign Classic
 product: campaign
 title: Transferência de arquivos
-description: Saiba mais sobre a atividade de fluxo de trabalho de transferência de arquivos
+description: Saiba mais sobre a atividade de workflow de transferência de arquivos
 audience: workflow
 content-type: reference
 topic-tags: event-activities
@@ -10,7 +10,7 @@ translation-type: tm+mt
 source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
 workflow-type: tm+mt
 source-wordcount: '540'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
