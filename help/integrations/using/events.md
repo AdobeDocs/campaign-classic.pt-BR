@@ -10,7 +10,7 @@ translation-type: tm+mt
 source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
 workflow-type: tm+mt
 source-wordcount: '1198'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
@@ -23,7 +23,7 @@ Partes dessa configuração são um desenvolvimento personalizado e requerem o s
 * Conhecimento prático das APIs QueryDef e Writer.
 * Noções de trabalho de criptografia e autenticação usando chaves privadas.
 
-Como a edição do código Javascript requer habilidades técnicas, não tente fazê-lo sem a compreensão adequada.
+Como a edição do código JavaScript requer habilidades técnicas, não tente fazê-la sem a compreensão adequada.
 
 ## Processamento de eventos no JavaScript {#events-javascript}
 
@@ -33,7 +33,7 @@ O pipeline usa uma função JavaScript para processar cada mensagem. Essa funç�
 
 Está configurado na opção **[!UICONTROL NmsPipeline_Config]** sob o atributo &quot;JSConnector&quot;. Esse javascript é chamado toda vez que um evento é recebido. É executado pelo processo [!DNL pipelined].
 
-O arquivo Javascript de amostra é cus:triggers.js.
+O arquivo JavaScript de amostra é cus:triggers.js.
 
 ### Função JavaScript {#function-js}
 
@@ -51,7 +51,7 @@ Deveria voltar como
 <undefined/>
 ```
 
-You should restart [!DNL pipelined] after editing the Javascript.
+Você deve reiniciar o [!DNL pipelined] após editar o JavaScript.
 
 ### Acionar formato de dados {#trigger-format}
 
@@ -129,7 +129,7 @@ Para fins de depuração e monitoramento, os dados completos do acionador são g
 
 ### Análise dos dados {#data-parsing}
 
-Este exemplo de código Javascript analisa o eVar01 nos enriquecimentos.
+Este código JavaScript de amostra analisa a eVar01 nos enriquecimentos.
 
 ```
 function processPipelineMessage(xmlTrigger)
