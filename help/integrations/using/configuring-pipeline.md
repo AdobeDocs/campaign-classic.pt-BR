@@ -10,7 +10,7 @@ translation-type: tm+mt
 source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
 workflow-type: tm+mt
 source-wordcount: '906'
-ht-degree: 84%
+ht-degree: 100%
 
 ---
 
@@ -30,26 +30,26 @@ Os acionadores são usados para segmentação por um workflow de campanha que en
 Antes de iniciar esta configuração, verifique se você está usando:
 
 * Versão mínima do Adobe Campaign 20.3
-* Versão Adobe Analytics Standard
+* Versão do Adobe Analytics Standard
 
 Você também precisará:
 
-* Autenticação de projeto de E/S de Adobe
-* um IMSOrgID válido, o identificador do cliente Experience Cloud com a Adobe Analytics foi adicionado
-* um acesso do desenvolvedor à Organização IMS
-* aciona a configuração feita no Adobe Analytics
+* Autenticação de projeto do Adobe I/O
+* uma IMSOrgID válida, o identificador do cliente da Experience Cloud com o Adobe Analytics adicionado
+* um acesso do desenvolvedor à IMS Org
+* configuração de acionadores efetuada no Adobe Analytics
 
 ## Arquivos de autenticação e configuração {#authentication-configuration}
 
 A autenticação é necessária, pois o pipeline está hospedado na Adobe Experience Cloud.
 Ele usa um par de chaves públicas e privadas. Esse processo tem a mesma função de um usuário/senha, porém é mais seguro.
-A autenticação é compatível com o Marketing Cloud por meio do Projeto de E/S do Adobe.
+A autenticação é compatível com a Marketing Cloud por meio do Projeto do Adobe I/O.
 
-## Etapa 1: Criando/atualizando projetos de E/S de Adobe {#creating-adobe-io-project}
+## Etapa 1: Criar/atualizar projeto do Adobe I/O {#creating-adobe-io-project}
 
-Para clientes hospedados, você pode criar um ticket de atendimento ao cliente para habilitar sua organização com tokens de conta técnica de E/S do Adobe para a integração de Acionadores.
+Para clientes hospedados, você pode criar um tíquete de atendimento ao cliente para habilitar sua organização com tokens de conta técnica do Adobe I/O para a integração de acionadores.
 
-For On Premise customers, refer to the [Configuring Adobe I/O for Adobe Experience Cloud Triggers](../../integrations/using/configuring-adobe-io.md) page. Note that you need to select **[!UICONTROL Adobe Analytics]** while adding API to the Adobe I/O credential.
+Para clientes locais, consulte a página [Configuração do Adobe I/O para acionadores da Adobe Experience Cloud](../../integrations/using/configuring-adobe-io.md). Observe que é necessário selecionar **[!UICONTROL Adobe Analytics]** ao adicionar a API à credencial do Adobe I/O.
 
 ## Etapa 2: configurar a opção de pipeline NmsPipeline_Config {#configuring-nmspipeline}
 
