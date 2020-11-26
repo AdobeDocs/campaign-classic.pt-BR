@@ -2,7 +2,7 @@
 solution: Campaign Classic
 product: campaign
 title: Carregamento de dados (arquivo)
-description: Saiba mais sobre a atividade de fluxo de trabalho do carregamento de dados (arquivo)
+description: Saiba mais sobre a atividade de workflow de carregamento de dados (arquivo)
 audience: workflow
 content-type: reference
 topic-tags: action-activities
@@ -10,7 +10,7 @@ translation-type: tm+mt
 source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
 workflow-type: tm+mt
 source-wordcount: '1052'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
