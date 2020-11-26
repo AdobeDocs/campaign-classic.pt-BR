@@ -1,8 +1,8 @@
 ---
 solution: Campaign Classic
 product: campaign
-title: Ciclo de vida do fluxo de trabalho
-description: Saiba mais sobre o ciclo de vida de um fluxo de trabalho
+title: Ciclo de vida do workflow
+description: Saiba mais sobre o ciclo de vida de um workflow
 audience: workflow
 content-type: reference
 topic-tags: -general-operation
