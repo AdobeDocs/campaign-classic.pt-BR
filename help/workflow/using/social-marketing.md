@@ -1,7 +1,7 @@
 ---
 solution: Campaign Classic
 product: campaign
-title: Marketing Social
+title: Marketing social
 description: Saiba mais sobre workflows técnicos de marketing social
 audience: workflow
 content-type: reference
@@ -10,12 +10,12 @@ translation-type: tm+mt
 source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
 workflow-type: tm+mt
 source-wordcount: '116'
-ht-degree: 93%
+ht-degree: 100%
 
 ---
 
 
-# Marketing Social{#social-marketing}
+# Marketing social{#social-marketing}
 
 Os workflows detalhados abaixo são instalados com o módulo **Marketing Social** por padrão. Para obter mais informações sobre esse módulo, consulte esta[seção](../../social/using/starting-workflows.md).
 
