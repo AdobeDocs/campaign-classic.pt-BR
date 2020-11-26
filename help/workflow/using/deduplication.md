@@ -2,7 +2,7 @@
 solution: Campaign Classic
 product: campaign
 title: Desduplicação
-description: Saiba mais sobre a atividade Desduplicação-duplicada do fluxo de trabalho
+description: Saiba mais sobre a atividade de workflow de desduplicação
 audience: workflow
 content-type: reference
 topic-tags: targeting-activities
@@ -10,12 +10,12 @@ translation-type: tm+mt
 source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
 workflow-type: tm+mt
 source-wordcount: '733'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
 
-# Eliminação de duplicação{#deduplication}
+# Desduplicação{#deduplication}
 
 A desduplicação exclui duplicatas dos resultados das atividades de entrada. A desduplicação pode ser executada no endereço de e-mail, número de telefone ou outro campo.
 
