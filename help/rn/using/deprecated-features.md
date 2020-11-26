@@ -12,7 +12,7 @@ translation-type: tm+mt
 source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
 workflow-type: tm+mt
 source-wordcount: '1621'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -51,8 +51,9 @@ Os clientes são aconselhados a verificar se utilizam o recurso/funcionalidade e
    <ul>
    <li>API Soap - no local: 2007, 2015, 2016</li>
    <li>API Soap - online: 2015, 2016</li>
-   <li>API da Web - Microsoft Dynamics CRM On-premise: Atualização 1 de 2016, 2016</li>
-   <li>API da Web - Microsoft Dynamics CRM Online: Atualização 1 de 2016, 2016</li>
+   <li>API da web – Microsoft Dynamics CRM
+No local: atualização 1 de 2016, 2016</li>
+   <li>API da web – Microsoft Dynamics CRM Online: atualização 1 de 2016, 2016</li>
    </ul>
   <p><em>Data de remoção do Target: 2021</em></p>
   </td>
@@ -131,7 +132,7 @@ Esta seção lista os recursos e funcionalidades removidos do Campaign Classic.
    <td>A partir da versão 19.1 do Campaign, as APIs do Campaign Classic estarão disponíveis em uma página dedicada. Se estiver usando o arquivo jsapi.chm legado, agora deverá consultar a <a href="https://docs.adobe.com/content/help/en/campaign-classic/technicalresources/api/index.html">nova versão online</a>.</td>
   </tr> 
   <tr> 
-   <td>Orquestração de campanha        - Marketing preditivo</td>
+   <td>Orquestração de campanha         - Marketing preditivo</td>
    <td>A partir da versão 18.10 do Campaign, os recursos de marketing preditivo não estarão mais disponíveis.</td>
   </tr> 
   <tr> 
