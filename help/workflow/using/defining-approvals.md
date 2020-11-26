@@ -2,7 +2,7 @@
 solution: Campaign Classic
 product: campaign
 title: Definição de aprovações
-description: As aprovações permitem que os operadores tomem decisões que regem um fluxo de trabalho ou confirmem sua execução contínua
+description: As aprovações permitem que os operadores tomem decisões que regem um workflow ou confirmem sua execução contínua
 audience: workflow
 content-type: reference
 topic-tags: -general-operation
