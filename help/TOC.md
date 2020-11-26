@@ -12,7 +12,7 @@ translation-type: tm+mt
 source-git-commit: 9d595f41dd2b0cbf042ab768ae5897cc5ac240bb
 workflow-type: tm+mt
 source-wordcount: '2171'
-ht-degree: 97%
+ht-degree: 98%
 
 ---
 
@@ -333,9 +333,9 @@ ht-degree: 97%
       + [Sincronização de aplicações Web](integrations/using/synchronizing-web-applications.md)
       + [Solução de problemas do [!DNL ACS Connector]](integrations/using/troubleshooting-the-acs-connector.md)
    + Experience Cloud Triggers {#experience-triggers}
-      + [Introdução ao [!DNL Adobe Experience Cloud Triggers]](integrations/using/about-triggers.md)
+      + [Introdução a [!DNL Adobe Experience Cloud Triggers]](integrations/using/about-triggers.md)
       + [Configuração de pipeline](integrations/using/configuring-pipeline.md)
-      + [Configuração de E/S de Adobe para acionadores Adobe Experience Cloud](integrations/using/configuring-adobe-io.md)
+      + [Configuração do Adobe I/O para acionadores da Adobe Experience Cloud](integrations/using/configuring-adobe-io.md)
       + [Configuração de eventos para implementação personalizada](integrations/using/events.md)
       + [Monitoramento de pipeline](integrations/using/pipeline-monitoring.md)
       + [Solução de problemas de pipeline](integrations/using/pipeline-troubleshooting.md)
@@ -344,14 +344,14 @@ ht-degree: 97%
       + [Introdução a workflows](workflow/using/about-workflows.md)
       + [Sobre atividades](workflow/using/about-activities.md)
    + Operação Geral {#general-operation}
-      + [Criação de um fluxo de trabalho](workflow/using/building-a-workflow.md)
+      + [Criação de um workflow](workflow/using/building-a-workflow.md)
       + [Direcionamento de dados](workflow/using/targeting-data.md)
       + [Importação de dados](workflow/using/importing-data.md)
       + [Como usar os dados de workflow](workflow/using/how-to-use-workflow-data.md)
       + [Práticas recomendadas do fluxo de trabalho](workflow/using/workflow-best-practices.md)
    + Execução de um fluxo de trabalho {#executing-a-workflow}
-      + [Iniciar um fluxo de trabalho](workflow/using/starting-a-workflow.md)
-      + [Ciclo de vida do fluxo de trabalho](workflow/using/workflow-life-cycle.md)
+      + [Iniciar um workflow](workflow/using/starting-a-workflow.md)
+      + [Ciclo de vida do workflow](workflow/using/workflow-life-cycle.md)
       + [Ciclo de vida dos dados](workflow/using/data-life-cycle.md)
       + [Definição de aprovações](workflow/using/defining-approvals.md)
       + [Arquitetura](workflow/using/architecture.md)
@@ -368,9 +368,9 @@ ht-degree: 97%
       + [Ofertas por célula](workflow/using/offers-by-cell.md)
       + [Delivery outline](workflow/using/delivery-outline.md)
       + [Enriquecimento](workflow/using/enrichment.md)
-      + [Editar schema](workflow/using/edit-schema.md)
+      + [Editar esquema](workflow/using/edit-schema.md)
       + [Mecanismo de oferta](workflow/using/offer-engine.md)
-      + [Eliminação de duplicação](workflow/using/deduplication.md)
+      + [Desduplicação](workflow/using/deduplication.md)
       + [Alterar dimensão](workflow/using/change-dimension.md)
       + [Atualizar lista](workflow/using/list-update.md)
       + [Serviços de assinatura](workflow/using/subscription-services.md)
@@ -397,7 +397,7 @@ ht-degree: 97%
       + [Controle de delivery](workflow/using/delivery-control.md)
       + [Delivery contínuo](workflow/using/continuous-delivery.md)
       + [Delivery recorrente](workflow/using/recurring-delivery.md)
-      + [Cross-channel deliveries](workflow/using/cross-channel-deliveries.md)
+      + [Deliveries entre canais](workflow/using/cross-channel-deliveries.md)
       + [Aprovação local](workflow/using/local-approval.md)
       + [Carregamento de dados (RDBMS)](workflow/using/data-loading--rdbms-.md)
       + [Carregamento (SOAP)](workflow/using/loading--soap-.md)
@@ -407,7 +407,7 @@ ht-degree: 97%
       + [Código SQL e código JavaScript](workflow/using/sql-code-and-javascript-code.md)
       + [Gestão de Dados SQL](workflow/using/sql-data-management.md)
       + [Módulo nlserver](workflow/using/nlserver-module.md)
-      + [Agregação de atualizações](workflow/using/update-aggregate.md)
+      + [Atualizar agregação](workflow/using/update-aggregate.md)
    + Atividades de evento {#event-activities}
       + [Sobre atividades de evento](workflow/using/about-event-activities.md)
       + [File collector](workflow/using/file-collector.md)
