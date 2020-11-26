@@ -2,7 +2,7 @@
 solution: Campaign Classic
 product: campaign
 title: Versão mais recente
-description: Versão mais recente do Campaign Classic  Observações
+description: Versão mais recente do Campaign Classic   Observações
 audience: rns
 content-type: reference
 topic-tags: latest-release-notes
