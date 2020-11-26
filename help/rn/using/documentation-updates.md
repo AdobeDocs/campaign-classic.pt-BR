@@ -10,7 +10,7 @@ translation-type: tm+mt
 source-git-commit: 9d595f41dd2b0cbf042ab768ae5897cc5ac240bb
 workflow-type: tm+mt
 source-wordcount: '3631'
-ht-degree: 95%
+ht-degree: 96%
 
 ---
 
@@ -29,9 +29,9 @@ A configuração da conta externa foi movida para [esta seção](../../installat
 
 A documentação de Federated Data Acces de campanha (FDA) de foi aprimorada com detalhes para cada configuração de banco de dados externo e movida para [esta seção](../../installation/using/about-fda.md).
 
-[A versão](../../rn/using/release--20-2.md#release-20-2-3-build-9182) 20.2.3 da campanha foi transferida para a disponibilidade geral (GA).
+A [versão 20.2.3 do Campaign](../../rn/using/release--20-2.md#release-20-2-3-build-9182) foi movida para Disponibilidade Geral (GA).
 
-A seção Privacidade foi movida e aprimorada com duas novas páginas: [Gerenciamento](../../platform/using/privacy-management.md) de privacidade e [gerenciamento de solicitações](../../platform/using/privacy-requests.md)de privacidade.
+The Privacy section has been moved and enriched with two new pages: [Privacy management](../../platform/using/privacy-management.md) and [Managing privacy requests](../../platform/using/privacy-requests.md).
 
 Foi adicionada uma observação na página de configuração do servidor mid-sourcing para especificar que o nome interno da conta externa não deve ser atualizado depois que o servidor for configurado. [Leia mais](../../installation/using/mid-sourcing-server.md)
 
@@ -58,7 +58,7 @@ A página de recursos obsoletos e removidos foi atualizada. [Leia mais](../../rn
 As notas de versão e a matriz de compatibilidade para a versão Gold Standard estão disponíveis em uma seção exclusiva.
 [Leia mais](../../rn/using/gold-standard.md#gs-10).
 
-Triggers integration originally based on oAUTH authentication setup to access pipeline has now been changed and moved to Adobe I/O. [Read more](../../integrations/using/configuring-adobe-io.md)
+A integração dos acionadores originalmente baseada na configuração da autenticação oAUTH para acessar o pipeline, agora foi alterada e movida para o Adobe I/O. [Saiba mais](../../integrations/using/configuring-adobe-io.md)
 
 **Outras atualizações**
 
