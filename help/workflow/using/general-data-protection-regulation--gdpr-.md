@@ -1,7 +1,7 @@
 ---
 solution: Campaign Classic
 product: campaign
-title: Workflows do Regulamento de proteção de dados de privacidade
+title: Workflows de Regulamento de proteção de dados de privacidade
 description: Saiba mais sobre os workflows do Regulamento de proteção de dados de privacidade
 audience: workflow
 content-type: reference
@@ -10,7 +10,7 @@ translation-type: tm+mt
 source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
 workflow-type: tm+mt
 source-wordcount: '107'
-ht-degree: 86%
+ht-degree: 100%
 
 ---
 
