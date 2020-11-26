@@ -1,8 +1,8 @@
 ---
 solution: Campaign Classic
 product: campaign
-title: Configuração de E/S de Adobe para acionadores Adobe Experience Cloud
-description: Saiba como configurar a E/S do Adobe para acionadores Adobe Experience Cloud
+title: Configuração do Adobe I/O para acionadores da Adobe Experience Cloud
+description: Saiba como configurar a Adobe I/O para acionadores da Adobe Experience Cloud
 audience: integrations
 content-type: reference
 topic-tags: adobe-experience-manager
@@ -13,44 +13,44 @@ translation-type: tm+mt
 source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
 workflow-type: tm+mt
 source-wordcount: '420'
-ht-degree: 33%
+ht-degree: 100%
 
 ---
 
 
-# Configuring Adobe I/O for Adobe Experience Cloud Triggers {#configuring-adobe-io}
+# Configuração do Adobe I/O para acionadores da Adobe Experience Cloud {#configuring-adobe-io}
 
 >[!CAUTION]
 >
->Se você estiver usando uma versão mais antiga da integração de Acionadores por meio da autenticação do oAuth, **será necessário mover para a E/S do Adobe, conforme descrito abaixo**. O modo de autenticação do oAuth herdado será desativado em 30 de abril de 2021. [Saiba mais](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-discussions/adobe-analytics-legacy-api-end-of-life-notice/td-p/385411)
+>Se você estiver usando uma versão mais antiga da integração de acionadores por meio da autenticação oAuth, **será necessário mover para o Adobe I/O conforme descrito abaixo**. O modo de autenticação oAuth herdado será desativado em 30 de abril de 2021. [Saiba mais](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-discussions/adobe-analytics-legacy-api-end-of-life-notice/td-p/385411)
 
 ## Pré-requisitos {#adobe-io-prerequisites}
 
-Essa integração só se aplica a partir do **Campaign Classic versão** 20.3.
+Essa integração só se aplica a partir da **versão 20.3 do Campaign Classic**.
 
 Antes de iniciar esta implementação, verifique se você tem:
 
-* uma IMSOrgID válida: o identificador de organização do Sistema Identity Management (IMS) é o identificador exclusivo no Adobe Experience Cloud, usado, por exemplo, para o serviço VisitorID e o IMS Single-Sign On (SSO),
-* um acesso de desenvolvedor à Organização IMS.
+* uma IMSOrgID válida: o identificador de organização do Identity Management System (IMS) é o identificador exclusivo da Adobe Experience Cloud, usado por exemplo para o serviço VisitorID e o IMS Single-Sign On (SSO),
+* um acesso de desenvolvedor à IMS Org.
 
 >[!NOTE]
 >
->If you need to request the System Administrator privileges of the IMS Org, follow the procedure detailed [in this page](https://helpx.adobe.com/br/enterprise/admin-guide.html/br/enterprise/using/manage-developers.ug.html) to provide this access for the all Product Profiles.
+>Se você precisar solicitar os privilégios de Administrador do Sistema da IMS Org, siga o procedimento detalhado [nesta página](https://helpx.adobe.com/br/enterprise/admin-guide.html/br/enterprise/using/manage-developers.ug.html) e forneça esse acesso a todos os perfis do produto.
 
 
-## Etapa 1: Criar/atualizar projeto de E/S de Adobe {#creating-adobe-io-project}
+## Etapa 1: Criar/atualizar projeto do Adobe I/O {#creating-adobe-io-project}
 
-1. Acesse a E/S do Adobe e faça logon com o Administrador do sistema, diretamente para a IMSorg.
+1. Acesse o Adobe I/O e faça logon como Administrador do sistema diretamente para o IMSorg.
 
    >[!NOTE]
    >
    > Verifique se você está conectado ao portal IMSorg correto.
 
-1. Extraia a ID do cliente de integração existente a partir do arquivo de configuração da instância ims/authIMSTAClientId. Atributo não existente ou vazio indica que a ID do cliente não está configurada.
+1. Extraia a ID do cliente de integração existente a partir do arquivo de configuração da instância ims/authIMSTAClientId. Se o atributo for não existente ou estiver vazio, a ID do cliente não está configurada.
 
    >[!NOTE]
    >
-   >If your Client ID is empty, you can directly **[!UICONTROL Create a New project]** in Adobe I/O.
+   >Se a ID do cliente estiver vazia, é possível **[!UICONTROL Create a New project]** diretamente no Adobe I/O.
 
 1. Identifique o projeto existente usando a ID do cliente extraída. Procure projetos existentes com a mesma ID de cliente que a extraída na etapa anterior.
 
@@ -68,7 +68,7 @@ Antes de iniciar esta implementação, verifique se você tem:
 
    ![](assets/do-not-localize/adobe_io_3.png)
 
-1. If your Client ID was empty, select **[!UICONTROL Generate a key pair]** to create a Public and Private keypair.
+1. Se a ID do cliente estiver vazia, selecione **[!UICONTROL Generate a key pair]** para criar um par de chaves público e privado.
 
    ![](assets/do-not-localize/adobe_io_4.png)
 
@@ -90,7 +90,7 @@ Antes de iniciar esta implementação, verifique se você tem:
 
 ## Etapa 2: adicionar as credenciais do projeto no Adobe Campaign {#add-credentials-campaign}
 
-To add the project credentials in Adobe Campaign, run the following command as &#39;neolane&#39; user on all the containers of the Adobe Campaign instance to insert the **[!UICONTROL Technical Account]** credentials in the instance configuration file.
+Para adicionar as credenciais do projeto no Adobe Campaign, execute o seguinte comando como usuário “neolane” em todos os containers da instância do Adobe Campaign para inserir as credenciais **[!UICONTROL Technical Account]** no arquivo de configuração da instância.
 
 ```
 nlserver config -instance:<instance name> -setimsjwtauth:Organization_Id/Client_Id/Technical_Account_ID[/Client_Secret[/Base64_encoded_Private_Key]]
@@ -102,7 +102,7 @@ nlserver config -instance:<instance name> -setimsjwtauth:Organization_Id/Client_
 
 ## Etapa 3: atualizar tag de pipeline {#update-pipelined-tag}
 
-To update [!DNL pipelined] tag, you need to update the authentication type to Adobe I/O project in the configuration file **config-&lt; instance-name >.xml** as follows:
+Para atualizar a tag [!DNL pipelined], é necessário atualizar o tipo de autenticação para o projeto do Adobe I/O no arquivo de configuração **config-&lt; instance-name >.xml** da seguinte maneira:
 
 ```
 <pipelined ... authType="imsJwtToken"  ... />
