@@ -2,7 +2,7 @@
 solution: Campaign Classic
 product: campaign
 title: Ciclo de vida dos dados
-description: Saiba mais sobre o ciclo de vida dos dados em fluxos de trabalho
+description: Saiba mais sobre o ciclo de vida dos dados em workflows
 audience: workflow
 content-type: reference
 topic-tags: -general-operation
