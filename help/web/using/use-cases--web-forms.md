@@ -7,10 +7,10 @@ audience: web
 content-type: reference
 topic-tags: web-forms
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: 21219f4a85a0caec4531acda33ab8bba5c7605d6
 workflow-type: tm+mt
-source-wordcount: '956'
-ht-degree: 100%
+source-wordcount: '957'
+ht-degree: 97%
 
 ---
 
@@ -133,7 +133,7 @@ Para fazer isso, siga as etapas abaixo:
 
 1. Configure a atividade **[!UICONTROL Storage]** para salvar as informações inseridas na página do formulário.
 
-   Essa atividade permite que você crie perfis de recipients em uma pasta temporária dedicada para separá-los dos perfis no banco de dados, para quem as comunicações podem ser enviadas.
+   Essa atividade permite que você crie perfis de recipient em uma pasta temporária dedicada para separá-los dos perfis no banco de dados, para os quais as comunicações podem ser enviadas.
 
    ![](assets/s_ncs_admin_survey_double-opt-in_sample_5g.png)
 
