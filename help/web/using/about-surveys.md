@@ -1,21 +1,21 @@
 ---
 solution: Campaign Classic
 product: campaign
-title: Sobre pesquisas
-description: Sobre pesquisas
+title: Introdução ao pesquisa
+description: Introdução ao Campaign pesquisa
 audience: web
 content-type: reference
 topic-tags: online-surveys
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: e76eb171aac1f7088ff8647f99c928ec349b24fc
 workflow-type: tm+mt
-source-wordcount: '584'
-ht-degree: 100%
+source-wordcount: '590'
+ht-degree: 97%
 
 ---
 
 
-# Sobre pesquisas{#about-surveys}
+# Get started with surveys{#about-surveys}
 
 O Adobe Campaign inclui um módulo gráfico para definir e publicar aplicações Web. Ele é usado para criar páginas, como um formulário de edição em uma extranet ou formulários de notificação, incluindo dados do banco de dados com tabelas, gráficos, formulários de entrada, etc. Essa funcionalidade permite criar e publicar páginas da Web em que os usuários podem pesquisar ou inserir informações.
 
@@ -31,7 +31,7 @@ A gestão de aplicações Web é detalhada [nesta seção](../../web/using/about
 >
 >Por motivos de privacidade, recomendamos usar HTTPS para todos os recursos externos.
 
-## Escopo das pesquisas do Campaign{#campaign-surveys-scope}
+## Escopo do recurso {#campaign-surveys-scope}
 
 No Adobe Campaign, aplicações Web em geral permitem acessar as seguintes funcionalidades:
 
