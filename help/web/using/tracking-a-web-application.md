@@ -7,10 +7,10 @@ audience: web
 content-type: reference
 topic-tags: web-applications
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: 21219f4a85a0caec4531acda33ab8bba5c7605d6
 workflow-type: tm+mt
 source-wordcount: '409'
-ht-degree: 100%
+ht-degree: 98%
 
 ---
 
@@ -36,7 +36,7 @@ As principais melhorias apresentadas nessa versão são as seguintes:
 
    * **Conversion rate**: número de pessoas que exibiram todas as etapas de um caminho de navegação.
    * **Bounce rate**: número de pessoas que exibiram apenas a primeira etapa
-   * **Conversion tunnel**: taxa de perda entre cada etapa.
+   * **Funil** de conversão: taxa de perda entre cada etapa.
 
    Além disso, um gráfico de tipo **Sector** mostra a população de acordo com sua origem.
 
