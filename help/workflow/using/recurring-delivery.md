@@ -7,10 +7,10 @@ audience: workflow
 content-type: reference
 topic-tags: action-activities
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: 20dcdd91d71158bc373db68c3f61f6808b240bd2
 workflow-type: tm+mt
-source-wordcount: '199'
-ht-degree: 100%
+source-wordcount: '221'
+ht-degree: 92%
 
 ---
 
@@ -18,6 +18,8 @@ ht-degree: 100%
 # Delivery recorrente{#recurring-delivery}
 
 Uma atividade **[!UICONTROL Recurring delivery]** permite configurar uma ocorrência de template de delivery específico para uma campanha.
+
+![](assets/do-not-localize/how-to-video.png) [Descubra este recurso no vídeo](#recurring-delivery-video)
 
 Essa atividade só está disponível na guia **[!UICONTROL Targeting and workflows]** localizada em uma campanha.
 
@@ -39,11 +41,16 @@ Um **delivery recorrente** criará uma nova instância de delivery toda vez que 
 
 ![Delivery recorrente](assets/delivery_recurring.jpg)
 
-Este vídeo explica como configurar um delivery recorrente e uma atividade de scheduler.
-
->[!VIDEO](https://video.tv.adobe.com/v/25040?quality=12)
-
 >[!NOTE]
 >
 >Não é possível enviar uma prova de uma atividade do tipo **[!UICONTROL Recurring delivery]**.\
 >Para criar um delivery diretamente por meio de um workflow da campanha, use as atividades específicas predefinidas do canal (por exemplo **[!UICONTROL Email delivery]**).
+
+## Vídeo do tutorial (#recurring-delivery-video)
+
+Este vídeo explica como configurar um delivery recorrente e uma atividade de scheduler.
+
+>[!VIDEO](https://video.tv.adobe.com/v/25040?quality=12)
+
+Vídeos de instruções adicionais do Campaign Classic estão disponíveis [aqui](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html).
+
