@@ -7,10 +7,10 @@ audience: platform
 content-type: reference
 topic-tags: starting-with-adobe-campaign
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: cea4a26935312b1cb119a3fa671af7bf00788fe9
 workflow-type: tm+mt
-source-wordcount: '895'
-ht-degree: 98%
+source-wordcount: '911'
+ht-degree: 95%
 
 ---
 
@@ -25,6 +25,8 @@ O Adobe Campaign permite coordenar a criação de campanhas de marketing convers
 >
 >O Adobe Campaign Classic está disponível nas versões v6.11 e v7. Except when mentioned, help materials apply to both versions, in the [latest build](../../rn/using/latest-release.md). As capturas de tela refletem a interface do usuário do Campaign Classic v7.
 
+![](assets/do-not-localize/how-to-video.png) [Descubra as principais características e recursos no vídeo](#video)
+
 ## Principais recursos {#key-capabilities}
 
 O Adobe Campaign fornece uma plataforma para projetar experiências de clientes entre canais, além de um ambiente para a organização visual de campanhas, a gestão de interações em tempo real e a execução entre canais.
@@ -32,8 +34,6 @@ O Adobe Campaign fornece uma plataforma para projetar experiências de clientes 
 O ciclo de campanha de marketing do Adobe Campaign ilustra as principais áreas de funcionalidade do produto:
 
 ![](assets/d_ncs_user_emarketing.png)
-
-![](assets/do-not-localize/how-to-video.png) [Descubra as principais características e recursos no vídeo](https://docs.adobe.com/content/help/pt-BR/campaign-classic-learn/tutorials/getting-started/introduction-to-adobe-campaign-classic.html)
 
 ### Perfil de cliente integrado {#integrated-customer-profile}
 
@@ -87,3 +87,10 @@ Os recursos abaixo estão disponíveis. A disponibilidade desses recursos depend
 * [Serviços da Web](../../configuration/using/about-web-services.md) - use o Campaign com APIs/Serviços da Web;
 * [Relatórios](../../reporting/using/about-adobe-campaign-reporting-tools.md) - acesse relatórios internos, analise dados e projete seus próprios relatórios.
 
+## Vídeo tutorial {#video}
+
+Este vídeo apresenta os principais recursos e recursos do Campaign Classic.
+
+>[!VIDEO](https://video.tv.adobe.com/v/35129?quality=12)
+
+Vídeos de instruções adicionais do Campaign Classic estão disponíveis [aqui](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html).
