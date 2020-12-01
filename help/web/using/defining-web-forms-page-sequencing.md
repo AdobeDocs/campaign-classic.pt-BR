@@ -7,17 +7,17 @@ audience: web
 content-type: reference
 topic-tags: web-forms
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: 21219f4a85a0caec4531acda33ab8bba5c7605d6
 workflow-type: tm+mt
 source-wordcount: '702'
-ht-degree: 100%
+ht-degree: 95%
 
 ---
 
 
 # Definição do sequenciamento de páginas dos formulários web{#defining-web-forms-page-sequencing}
 
-O formulário pode conter uma ou mais páginas. Ele é criado por meio de um diagrama que permite o sequenciamento de páginas e testes, execução de scripts e estágios de gravação de jump da página. O modo de construção de diagrama é igual a um workflow.
+O formulário pode conter uma ou mais páginas. Ele é construído por meio de um diagrama que permite a sequência de páginas, testes, execução de scripts, salto de páginas e etapas de gravação. O modo de design de diagrama global é o mesmo que para um fluxo de trabalho de Campanha.
 
 ## Sobre a página anterior e a próxima página {#about-previous-page-and-next-page}
 
