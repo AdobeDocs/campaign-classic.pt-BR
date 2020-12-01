@@ -7,10 +7,10 @@ audience: web
 content-type: reference
 topic-tags: web-forms
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: 21219f4a85a0caec4531acda33ab8bba5c7605d6
 workflow-type: tm+mt
-source-wordcount: '524'
-ht-degree: 100%
+source-wordcount: '523'
+ht-degree: 96%
 
 ---
 
@@ -39,9 +39,9 @@ No exemplo acima, a renderização será a seguinte:
 
 ## Posicionamento dos campos na página {#positioning-the-fields-on-the-page}
 
-O layout do formulário web é definido pela página em cada container e pode ser sobrecarregado para cada verificação.
+O layout do formulário da Web é definido página por página em cada container e pode ser sobrecarregado se necessário.
 
-As páginas são divididas em colunas: cada página contém determinado número de colunas. Cada campo da página ocupa **n** células. Os containers também ocupam determinado número de colunas e os campos que contêm ocupam determinado número de células
+As páginas são divididas em colunas: cada página contém determinado número de colunas. Cada campo da página ocupa **n** células. Os containers também ocupam determinado número de colunas e os campos que contêm ocupam determinado número de células.
 
 Por padrão, as páginas são criadas em uma única coluna e cada elemento ocupa uma célula. Isso significa que os campos são exibidos um embaixo do outro e cada um ocupa uma linha inteira, como mostrado abaixo:
 
