@@ -7,10 +7,10 @@ audience: web
 content-type: reference
 topic-tags: web-forms
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: 21219f4a85a0caec4531acda33ab8bba5c7605d6
 workflow-type: tm+mt
-source-wordcount: '2446'
-ht-degree: 100%
+source-wordcount: '2457'
+ht-degree: 94%
 
 ---
 
@@ -196,7 +196,7 @@ Os botões de opção permitem oferecer uma série de opções exclusivas aos us
 
 ![](assets/s_ncs_admin_survey_radio_button.png)
 
-Você pode criar botões de opção individualmente (botões unitários) ou por uma lista de múltipla escolha, mas como o objetivo dos botões de opção é selecionar uma opção ou outra, sempre criaremos pelo menos um par de botões de opção, nunca apenas um único botão.
+Você pode criar botões de opção individualmente (botões unitários) ou por meio de uma lista de múltipla escolha, mas como o ponto dos botões de opção é selecionar uma opção ou outra, sempre criaremos pelo menos um par de botões de opção, nunca apenas um único botão.
 
 >[!CAUTION]
 >
@@ -251,7 +251,7 @@ O conteúdo dos campos de formulário pode ser formatado para corresponder aos d
 
 ![](assets/s_ncs_admin_survey_date_calendar.png)
 
-Para permitir que o usuário insira uma data em uma página de formulário, selecione **[!UICONTROL Add input field > Date...]** na barra de ferramentas ou no editor de páginas.
+Para permitir que o usuário insira uma data em uma página de formulário, adicione um campo de entrada e selecione o tipo **[!UICONTROL Date...]**.
 
 Insira um rótulo para o campo e configure o modo de armazenamento de dados.
 
@@ -381,17 +381,20 @@ Você pode armazenar o link para esses arquivos em uma variável local ou em um 
 >* O Adobe Campaign não controla o tamanho ou o tipo de recurso carregado: portanto, é altamente recomendável usar campos de carregamento para sites de intranet tipo seguro.
 >* Se vários servidores estiverem vinculados à instância (&quot;balanceamento de carga&quot;), você precisará verificar se as chamadas para o formulário web chegam no mesmo servidor.
 >* Essas implementações exigem a assistência da equipe de consulta do Adobe Campaign.
+
 >
 
 
 
 ## Inserir uma constante oculta {#inserting-a-hidden-constant}
 
-Você pode realçar um campo quando o usuário passa em uma das páginas do formulário. Para fazer isso, coloque uma constante na página e especifique o valor e o local de armazenamento.
+Quando o usuário valida uma das páginas do formulário, é possível definir um valor específico para um campo desse perfil ou para uma variável.
 
 Este campo não está visível para o usuário, mas pode ser utilizado para enriquecer os dados no perfil de usuário.
 
-No exemplo a seguir, o arquivo de **origem** do perfil do recipient é preenchido automaticamente sempre que um usuário aprova essa página. A constante não é exibida na página.
+To do this, place a **constant** in the page and specify the value and the storage location.
+
+In the following example, the **origin** field of the recipient profile is filled in automatically whenever a user approves this page. A constante não é exibida na página.
 
 ![](assets/s_ncs_admin_survey_constante.png)
 
