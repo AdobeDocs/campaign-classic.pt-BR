@@ -7,10 +7,10 @@ audience: delivery
 content-type: reference
 topic-tags: personalizing-deliveries
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: 20dcdd91d71158bc373db68c3f61f6808b240bd2
 workflow-type: tm+mt
-source-wordcount: '471'
-ht-degree: 100%
+source-wordcount: '478'
+ht-degree: 96%
 
 ---
 
@@ -109,8 +109,10 @@ Você verá no exemplo abaixo como criar um email multilíngue. O conteúdo ser�
    >
    >Como nenhuma versão alternativa foi definida no conteúdo do email, filtre o público-alvo antes de enviar o email.
 
-## Como criar um informativo multilíngue com conteúdo condicional {#conditionnal-content-video}
+## Vídeo tutorial {#conditionnal-content-video}
 
 Saiba como adicionar conteúdo condicional a um delivery no exemplo de um informativo multilíngue.
 
 >[!VIDEO](https://video.tv.adobe.com/v/24926?quality=12)
+
+Vídeos de instruções adicionais do Campaign Classic estão disponíveis [aqui](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html).
