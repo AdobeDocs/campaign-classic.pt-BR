@@ -1,21 +1,21 @@
 ---
 solution: Campaign Classic
 product: campaign
-title: Criação de uma pesquisa
-description: Criação de uma pesquisa
+title: Criando uma pesquisa
+description: Criando uma pesquisa
 audience: web
 content-type: reference
 topic-tags: online-surveys
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: e76eb171aac1f7088ff8647f99c928ec349b24fc
 workflow-type: tm+mt
 source-wordcount: '796'
-ht-degree: 100%
+ht-degree: 98%
 
 ---
 
 
-# Criação de uma pesquisa{#building-a-survey}
+# Criando uma pesquisa{#building-a-survey}
 
 ## Criação de uma nova pesquisa {#creating-a-new-survey}
 
