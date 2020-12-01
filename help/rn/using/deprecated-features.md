@@ -9,9 +9,9 @@ topic-tags: campaign-classic-deprecated-features
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: 82c5f4f4c37f295a6c206eb33616ae9223740f36
 workflow-type: tm+mt
-source-wordcount: '1621'
+source-wordcount: '1626'
 ht-degree: 100%
 
 ---
@@ -55,7 +55,7 @@ Os clientes são aconselhados a verificar se utilizam o recurso/funcionalidade e
 No local: atualização 1 de 2016, 2016</li>
    <li>API da web – Microsoft Dynamics CRM Online: atualização 1 de 2016, 2016</li>
    </ul>
-  <p><em>Data de remoção do Target: 2021</em></p>
+  <p><em>Data de remoção do Target: abril de 2021</em></p>
   </td>
  </tr>
   <tr>
@@ -63,14 +63,14 @@ No local: atualização 1 de 2016, 2016</li>
   <td><p>A partir da versão 20.3 do Campaign, o conector binário herdado do iOS se tornará obsoleto.<p>
   <p> Se estiver usando este conector, precisará adaptar sua implementação adequadamente.
   <a href="https://helpx.adobe.com/br/campaign/kb/migrate-to-apns-http2.html">Saiba mais</a></p>
-  <p><em>Data de remoção do Target: 2021</em></p>
+  <p><em>Data de remoção do Target: abril de 2021</em></p>
   </td>
  </tr>
    <tr>
   <td>Domínio demdex<br></td>
   <td><p> A partir da versão 20.3 do Campaign, o domínio demdex usado para importar e exportar públicos para a Adobe Experience Cloud se tornará obsoleto.<p>
   <p>Se você estiver usando o domínio demdex para suas contas externas de importação/exportação, será necessário adaptar sua implementação de forma apropriada. <a href="../../integrations/using/configuring-shared-audiences-integration-in-adobe-campaign.md">Saiba mais</a></p> 
-  <p><em>Data de remoção do Target: 2021</em></p>
+  <p><em>Data de remoção do Target: abril de 2021</em></p>
   </td>
   <tr>
   <td>Autenticação OAuth (OAuth e JWT)<br></td>
@@ -93,14 +93,14 @@ No local: atualização 1 de 2016, 2016</li>
    </ul>
   <p>Se estiver usando um desses conectores, precisará adaptar sua implementação adequadamente. <a href="../../delivery/using/sms-channel.md">Saiba mais</a></p> 
   <p>Saiba como migrar conectores herdados <a href="https://helpx.adobe.com/br/campaign/kb/sms-connector.html">nesta nota técnica</a>.</p>
-  <p><em>Data de remoção do Target: 2021</em></p>
+  <p><em>Data de remoção do Target: abril de 2021</em></p>
   </td> 
  </tr>
   <tr>  
    <td>Canal de fax<br></td>
    <td><p>A partir da versão 20.2 do Campaign, o canal de fax não será mais utilizado.</p> 
    <p>Se estiver usando esse canal, precisará adaptar sua implementação adequadamente. <a href="../../delivery/using/steps-about-delivery-creation-steps.md">Saiba mais</a> sobre Canais do Campaign.</p>
-   <p><em>Data de remoção do Target: 2021</em></p></td>
+   <p><em>Data de remoção do Target: abril de 2021</em></p></td>
   </tr>
  </tbody> 
 </table>
