@@ -7,10 +7,10 @@ audience: web
 content-type: reference
 topic-tags: web-applications
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: 21219f4a85a0caec4531acda33ab8bba5c7605d6
 workflow-type: tm+mt
 source-wordcount: '670'
-ht-degree: 100%
+ht-degree: 97%
 
 ---
 
@@ -99,7 +99,7 @@ Se você precisar gravar uma JSSP, as APIs do lado do servidor estarão disponí
 
 * **NL.ServerWebTracking._displayOptOutBanner()**
 
-   Retorna verdadeiro se o banner de opt out for exibido depois que um banner de opt out for selecionado pelo administrador
+   Retorna &quot;true&quot; se o banner de opção de não participação for exibido depois que um banner de opção de não participação for selecionado pelo administrador
 
    Esse código é chamado quando o administrador já optou por usar o banner de opt out de rastreamento web.
 
