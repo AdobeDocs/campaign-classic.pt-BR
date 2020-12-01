@@ -7,10 +7,10 @@ audience: workflow
 content-type: reference
 topic-tags: -general-operation
 translation-type: tm+mt
-source-git-commit: e43a14a8be179dd4793176d15e2c30b3e778d3e0
+source-git-commit: 49f3c123cb8e91b3a2a2a1eb6bd593a242b8bbfe
 workflow-type: tm+mt
-source-wordcount: '916'
-ht-degree: 98%
+source-wordcount: '923'
+ht-degree: 96%
 
 ---
 
@@ -97,7 +97,7 @@ Em seguida, você pode usar comandos ou códigos na guia **[!UICONTROL Script]**
 
 Nesse caso de uso, criaremos um workflow para criptografar e exportar dados usando uma chave instalada no Painel de controle do Campaign.
 
-Um vídeo tutorial sobre como usar uma chave GPG para criptografar dados também está disponível [nesta seção](https://experienceleague.adobe.com/docs/campaign-classic-learn/control-panel/instance-settings/gpg-key-management/using-a-gpg-key-to-encrypt-data.html?lang=en#instance-settings).
+![](assets/do-not-localize/how-to-video.png) [Descubra este recurso no vídeo](#video)
 
 As etapas para executar esse caso de uso são as seguintes:
 
@@ -142,3 +142,10 @@ As etapas para executar esse caso de uso são as seguintes:
 
 1. Agora você pode executar o workflow. Após a execução, o direcionamento de dados pelo query será exportado para o servidor SFTP em um arquivo .gpg criptografado.
 
+### Vídeo tutorial {#video}
+
+Este vídeo mostra como usar uma chave GPG para criptografar dados também está disponível em
+
+>[!VIDEO](https://video.tv.adobe.com/v/36399?quality=12)
+
+Vídeos de instruções adicionais do Campaign Classic estão disponíveis [aqui](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html).
