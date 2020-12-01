@@ -7,7 +7,7 @@ audience: platform
 content-type: reference
 topic-tags: connectors
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: 20dcdd91d71158bc373db68c3f61f6808b240bd2
 workflow-type: tm+mt
 source-wordcount: '2539'
 ht-degree: 99%
@@ -70,7 +70,7 @@ Supported versions are detailed in Campaign [Compatibility matrix](../../rn/usin
 
    Consulte [esta seção](#example-for-microsoft-dynamics) para saber como configurar a conexão com o Microsoft Dynamics.
 
-   Saiba mais sobre os casos de uso da integração do Adobe Campaign e do Microsoft Dynamics [neste vídeo](https://helpx.adobe.com/campaign/kt/acc/using/acc-integrate-dynamics365-with-acc-feature-video-set-up.html).
+   ![](assets/do-not-localize/how-to-video.png) Saiba mais sobre os casos de uso da integração do Adobe Campaign e do Microsoft Dynamics [neste vídeo](https://helpx.adobe.com/campaign/kt/acc/using/acc-integrate-dynamics365-with-acc-feature-video-set-up.html).
 
    >[!IMPORTANT]
    >
