@@ -7,10 +7,10 @@ audience: workflow
 content-type: reference
 topic-tags: targeting-activities
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: 49f3c123cb8e91b3a2a2a1eb6bd593a242b8bbfe
 workflow-type: tm+mt
-source-wordcount: '445'
-ht-degree: 100%
+source-wordcount: '465'
+ht-degree: 90%
 
 ---
 
@@ -35,6 +35,8 @@ Para usar a opção, as tabelas específicas devem ter sido configuradas em sua 
 
 Geralmente, salvar um target em uma lista marca o final de um workflow. Por padrão, a atividade **[!UICONTROL List update]** não tem uma transição de saída. Marque a opção **[!UICONTROL Generate an outbound transition]** para adicionar uma.
 
+![](assets/do-not-localize/how-to-video.png) [Descubra como criar uma lista de recipient do Explorer em vídeo](#video)
+
 ## Exemplo: List update {#example--list-update}
 
 No exemplo a seguir, a atividade de atualização da lista segue uma query direcionada a homens com mais de 30 anos vivendo na França. A lista será inicialmente criada a partir dos resultados da query. Ela será atualizada sempre que for iniciada a partir do workflow. Ela pode, por exemplo, ser usada regularmente para ofertas promocionais direcionadas em campanhas.
@@ -56,8 +58,6 @@ No exemplo a seguir, a atividade de atualização da lista segue uma query direc
 
    A lista de recipients correspondentes é então criada ou atualizada.
 
-Para obter mais informações, consulte o vídeo [Creating a list of recipients](https://docs.adobe.com/content/help/pt-BR/campaign-classic-learn/tutorials/profile-management/creating-a-list-of-recipients.html).
-
 ## Parâmetros de entrada {#input-parameters}
 
 * tableName
@@ -68,3 +68,11 @@ Identifica a população a ser salva no grupo.
 ## Parâmetros de output {#output-parameters}
 
 * groupId: Identificador de grupo.
+
+## Vídeo tutorial {#video}
+
+Este vídeo mostra como criar uma lista de recipient a partir do Explorer.
+
+>[!VIDEO](https://video.tv.adobe.com/v/25602/quality=12)
+
+Vídeos de instruções adicionais do Campaign Classic estão disponíveis [aqui](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html).
