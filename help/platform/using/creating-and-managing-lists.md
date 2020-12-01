@@ -7,10 +7,10 @@ audience: platform
 content-type: reference
 topic-tags: profile-management
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: 20dcdd91d71158bc373db68c3f61f6808b240bd2
 workflow-type: tm+mt
-source-wordcount: '789'
-ht-degree: 99%
+source-wordcount: '805'
+ht-degree: 97%
 
 ---
 
@@ -126,7 +126,9 @@ Para remover um perfil de uma lista, é possível:
 >
 >Quando você exclui uma lista, os perfis na lista não são afetados, mas os dados nesses perfis são atualizados.
 
-## Como criar uma lista de recipients {#create-list-video}
+## Vídeo tutorial {#create-list-video}
+
+### Como criar uma lista de recipients
 
 Uma lista é um conjunto estático de recipients que pode ser focada em ações de delivery ou atualizada durante as operações de importação ou durante a execução de fluxos de trabalho. Uma lista de recipients também é chamada de público-alvo.
 
@@ -134,8 +136,10 @@ Aprenda a criar um público-alvo configurando uma lista de recipients do Explore
 
 >[!VIDEO](https://video.tv.adobe.com/v/25602/quality=12)
 
-## Como criar uma lista de recipients com um workflow {#create-list-in-a-wf-video}
+### Como criar uma lista de recipients com um workflow {#create-list-in-a-wf-video}
 
 Aprenda a criar um workflow para direcionar os recipients e como torná-lo recorrente antes de usar a lista em um público-alvo de email.
 
 >[!VIDEO](https://video.tv.adobe.com/v/25603?quality=12)
+
+Vídeos de instruções adicionais do Campaign Classic estão disponíveis [aqui](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html).
