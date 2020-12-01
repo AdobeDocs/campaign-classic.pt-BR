@@ -7,7 +7,7 @@ audience: web
 content-type: reference
 topic-tags: web-forms
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: 21219f4a85a0caec4531acda33ab8bba5c7605d6
 workflow-type: tm+mt
 source-wordcount: '995'
 ht-degree: 100%
@@ -63,7 +63,7 @@ Os seguintes métodos de identificação são possíveis:
    > 
    >Essa função é particularmente útil para aplicações web, mas não recomendada para formulários públicos. A opção de controle de acesso selecionado deve ser &quot;Habilitar controle de acesso&quot;.
 
-A opção **[!UICONTROL Skip preloading if identification is empty]** deve ser selecionada se você não deseja atualizar os perfis. Nesse caso, cada perfil inserido será adicionado ao banco de dados após a aprovação do formulário. Essa opção é usada, por exemplo, quando o formulário é postado em um site.
+A opção **[!UICONTROL Skip preloading if no ID]** deve ser selecionada se você não deseja atualizar os perfis. Nesse caso, cada perfil inserido será adicionado ao banco de dados após a aprovação do formulário. Essa opção é usada, por exemplo, quando o formulário é postado em um site.
 
 A opção **[!UICONTROL Auto-load data referenced in the form]** permite pré-carregar automaticamente os dados que correspondem aos campos de entrada e mesclagem no formulário. Porém, os dados referenciados nas atividades **[!UICONTROL Script]** e **[!UICONTROL Test]** não estão relacionados. Se esta opção não estiver selecionada, você precisará definir os campos utilizando a opção **[!UICONTROL Load additional data]**.
 
