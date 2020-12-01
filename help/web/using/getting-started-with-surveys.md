@@ -1,21 +1,21 @@
 ---
 solution: Campaign Classic
 product: campaign
-title: Introdução às pesquisas
-description: Introdução às pesquisas
+title: Etapas principais para criar uma pesquisa
+description: Crie sua primeira pesquisa com Campanha
 audience: web
 content-type: reference
 topic-tags: online-surveys
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: e76eb171aac1f7088ff8647f99c928ec349b24fc
 workflow-type: tm+mt
-source-wordcount: '906'
-ht-degree: 100%
+source-wordcount: '912'
+ht-degree: 98%
 
 ---
 
 
-# Introdução às pesquisas{#getting-started-with-surveys}
+# Etapas principais para criar uma pesquisa{#getting-started-with-surveys}
 
 Veja a seguir uma visão geral rápida das principais etapas para criar uma pesquisa simples, usando o seguinte template:
 
