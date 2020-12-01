@@ -7,10 +7,10 @@ audience: campaign
 content-type: reference
 topic-tags: campaign-optimization
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: 20dcdd91d71158bc373db68c3f61f6808b240bd2
 workflow-type: tm+mt
-source-wordcount: '481'
-ht-degree: 100%
+source-wordcount: '497'
+ht-degree: 97%
 
 ---
 
@@ -63,18 +63,22 @@ As etapas para criar e aplicar uma tipologia para seus deliveries estão listada
 
 Durante a preparação do delivery, os recipients são excluídos quando o critério é atingido. Você pode verificar logs para monitorar exclusões. Casos de uso de exemplo das regras de tipologia de pressão estão disponíveis [nesta página](../../campaign/using/pressure-rules.md#use-cases-on-pressure-rules).
 
-## Como configurar o gerenciamento de fadiga usando regras de tipologia {#typologies-video}
+## Vídeos tutoriais {#typologies-video}
+
+### Como configurar o gerenciamento de fadiga usando regras de tipologia
 
 Este vídeo explica como implementar o gerenciamento de fadiga no Adobe Campaign Classic utilizando regras de tipologia.
 
 >[!VIDEO](https://video.tv.adobe.com/v/25090?quality=12)
 
-## Como configurar o gerenciamento de fadiga usando filtros predefinidos
+### Como configurar o gerenciamento de fadiga usando filtros predefinidos
 
 O gerenciamento de fadiga controla a frequência e a quantidade de mensagens para evitar a solicitação excessiva de recipients. Se você não tiver o módulo de otimização de campanha na instância da campanha, poderá configurar um filtro predefinido que irá filtrar a população do público-alvo pelo número de mensagens recebidas
 Este vídeo ensina a implementar o gerenciamento de fadiga no Adobe Campaign Classic usando filtros.
 
 >[!VIDEO](https://video.tv.adobe.com/v/25091?quality=12)
+
+Vídeos de instruções adicionais do Campaign Classic estão disponíveis [aqui](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html).
 
 **Tópicos relacionados**
 
