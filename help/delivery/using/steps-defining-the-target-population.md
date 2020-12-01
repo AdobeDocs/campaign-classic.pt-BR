@@ -7,10 +7,10 @@ audience: delivery
 content-type: reference
 topic-tags: about-deliveries-and-channels
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: cea4a26935312b1cb119a3fa671af7bf00788fe9
 workflow-type: tm+mt
-source-wordcount: '1572'
-ht-degree: 100%
+source-wordcount: '1579'
+ht-degree: 98%
 
 ---
 
@@ -225,15 +225,16 @@ Você poderá usar **[!UICONTROL Seed addresses]** como target das provas: essa 
 
 Você poderá combinar a definição de um target de prova específico e o uso de seed addresses usando a opção **[!UICONTROL Specific target and Seed addresses]**. As configurações relacionadas serão então definidas em duas sub-guias separadas.
 
-## Gerenciar seed e provas em um email {#seeds-and-proofs-video}
+Consulte também:
+
+* [Seleção do público-alvo da prova](#selecting-the-proof-target)
+* [Sobre seed addresses](../../delivery/using/about-seed-addresses.md)
+* [Caso de uso: seleção de seed addresses com critérios](../../delivery/using/use-case--selecting-seed-addresses-on-criteria.md)
+
+## Vídeo tutorial {#seeds-and-proofs-video}
 
 Este vídeo mostra como adicionar seeds e provas a um email existente e o procedimento para o seu envio.
 
 >[!VIDEO](https://video.tv.adobe.com/v/25606?quality=12)
 
-Consulte também:
-* [Seleção do público-alvo da prova](#selecting-the-proof-target)
-
-* [Sobre seed addresses](../../delivery/using/about-seed-addresses.md)
-
-* [Caso de uso: seleção de seed addresses com critérios](../../delivery/using/use-case--selecting-seed-addresses-on-criteria.md)
+Vídeos de instruções adicionais do Campaign Classic estão disponíveis [aqui](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html).
