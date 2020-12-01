@@ -7,7 +7,7 @@ audience: campaign
 content-type: reference
 topic-tags: orchestrate-campaigns
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: 20dcdd91d71158bc373db68c3f61f6808b240bd2
 workflow-type: tm+mt
 source-wordcount: '1124'
 ht-degree: 100%
@@ -69,7 +69,7 @@ Um template pronto para usar é fornecido para criar uma campanha para a qual ne
 
 A criação e a configuração dos templates de campanha são apresentadas em [Templates de campanha](#campaign-templates).
 
-Para saber mais sobre criações de campanha, assista a [este vídeo](../../campaign/using/marketing-campaign-deliveries.md#create-email-video).
+![](assets/do-not-localize/how-to-video.png) Para saber mais sobre criações de campanha, assista a [este vídeo](../../campaign/using/marketing-campaign-deliveries.md#create-email-video).
 
 ## Configuração dos módulos disponíveis {#configuration-of-the-available-modules}
 
