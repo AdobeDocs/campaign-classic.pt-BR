@@ -7,17 +7,17 @@ audience: web
 content-type: reference
 topic-tags: web-forms
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: 21219f4a85a0caec4531acda33ab8bba5c7605d6
 workflow-type: tm+mt
-source-wordcount: '1281'
-ht-degree: 100%
+source-wordcount: '1269'
+ht-degree: 94%
 
 ---
 
 
 # Elementos estáticos em um formulário web{#static-elements-in-a-web-form}
 
-É possível incluir elementos com os quais o usuário não tem nenhuma interação nas páginas do formulário; esses elementos são elementos estáticos, como imagens, conteúdo HTML, uma barra horizontal ou um link de hipertexto. Esses elementos são criados por meio do primeiro botão na barra de ferramentas, clicando no menu **[!UICONTROL Add static element]**.
+É possível incluir elementos com os quais o usuário não tem nenhuma interação nas páginas do formulário; esses elementos são elementos estáticos, como imagens, conteúdo HTML, uma barra horizontal ou um link de hipertexto. These elements are created via the first button in the toolbar, by selecting **[!UICONTROL Static elements]**.
 
 ![](assets/s_ncs_admin_survey_add_static_element.png)
 
@@ -36,7 +36,7 @@ Os seguintes tipos de campo estão disponíveis:
 
 É possível incluir conteúdo HTML em uma página de formulário: links de hipertexto, imagens, parágrafos formatados, vídeos ou objetos Flash, etc.
 
-O editor HTML permite digitar o conteúdo a ser inserido na página de formulário. Para abrir o editor, vá para **[!UICONTROL Static elements>HTML]**.
+O editor HTML permite digitar o conteúdo a ser inserido na página de formulário. Para abrir o editor, clique em **[!UICONTROL Static elements]** > **[!UICONTROL HTML]** .
 
 É possível inserir e formatar seu conteúdo diretamente ou exibir a janela do código-fonte para colar em algum conteúdo externo. Para alternar para o modo &quot;código-fonte&quot;, clique no primeiro ícone na barra de ferramentas:
 
@@ -54,7 +54,7 @@ Para inserir um campo de banco de dados, use o botão de personalização.
 
 Preencha os campos na janela de edição, como mostrado no exemplo a seguir:
 
-Para adicionar um link de hipertexto, vá para **[!UICONTROL Static elements>Link]**.
+Para adicionar um link de hipertexto, vá para **[!UICONTROL Static elements]** > **[!UICONTROL Link]**.
 
 ![](assets/s_ncs_admin_survey_add_link.png)
 
@@ -174,7 +174,7 @@ Use campos de personalização para reinjetar o nome de usuário e marca selecio
 
 >[!NOTE]
 >
->Por motivos de segurança, o valor inserido na fórmula **`<%=`** é substituído por caracteres de escape. Para evitar isso e somente quando necessário, use a seguinte sintaxe: **`<%=`**.
+>For security reasons, the value entered in the **`<%=`** formula is replaced with escaped characters.
 
 No nosso exemplo, o nome e o sobrenome do recipient são armazenados em um campo do banco de dados, enquanto a marca do carro é armazenada em uma variável. A sintaxe da mensagem personalizada na página 2 será a seguinte:
 
@@ -210,19 +210,19 @@ Por exemplo, você pode criar um campo **Contato** que permitirá exibir a cadei
 
    >[!CAUTION]
    >
-   >Se você inserir esses caracteres no editor de HTML, os campos **&lt;** e **>** serão substituídos por seus caracteres de escape. Nesse caso, você precisa corrigir o código-fonte clicando no ícone **[!UICONTROL Display source code]** do editor de texto HTML.
+   >If you enter these characters in the HTML editor, the **&lt;** and **>** fields will be replaced with their escaped characters. Nesse caso, você precisa corrigir o código-fonte clicando no ícone **[!UICONTROL Display source code]** do editor de texto HTML.
 
 1. Abra o rótulo **[!UICONTROL Preview]** do formulário para exibir o valor inserido no HTML:
 
    ![](assets/s_ncs_admin_survey_html_content_preview.png)
 
-Esse modo operacional permite que você decomponha o texto de formulários web e gerencie traduções usando a ferramenta de tradução integrada. Para obter mais informações, consulte [Tradução de um formulário Web](../../web/using/translating-a-web-form.md).
+Esse modo operacional permite que você defina o texto dos Formulários web apenas uma vez e gerencie as traduções usando a ferramenta de tradução integrada. Para obter mais informações, consulte [Tradução de um formulário Web](../../web/using/translating-a-web-form.md).
 
 ## Inserção de imagens {#inserting-images}
 
 Para que as imagens sejam incluídas em formulários, elas devem ser salvas em um servidor acessível de fora.
 
-Selecione o menu **[!UICONTROL Static elements>Image]**.
+Select the **[!UICONTROL Static elements]** > **[!UICONTROL Image]** menu.
 
 Selecione a fonte da imagem a ser inserida: ela pode vir da biblioteca de recurso público ou ser armazenada em um servidor externo acessível de fora.
 
