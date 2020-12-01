@@ -7,10 +7,10 @@ audience: platform
 content-type: reference
 topic-tags: starting-with-adobe-campaign
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: cea4a26935312b1cb119a3fa671af7bf00788fe9
 workflow-type: tm+mt
-source-wordcount: '2144'
-ht-degree: 100%
+source-wordcount: '2157'
+ht-degree: 98%
 
 ---
 
@@ -25,7 +25,7 @@ Na seção central da home page, você pode usar links para acessar o portal de 
 
 ![](assets/d_ncs_user_interface_home.png)
 
-![](assets/do-not-localize/how-to-video.png) [Espaço de trabalho do Discover Campaign em vídeo](https://docs.adobe.com/content/help/pt-BR/campaign-classic-learn/tutorials/getting-started/exploring-the-adobe-campaign-classic-user-interface.html)
+![](assets/do-not-localize/how-to-video.png)[ Espaço de trabalho do Discover Campaign em vídeo](#video)
 
 >[!NOTE]
 >
@@ -389,3 +389,11 @@ Nos campos que expressam uma duração (por exemplo, período de validade dos re
 * **[!UICONTROL d]** para dias.
 
 ![](assets/enter_unit_sample.png)
+
+## Vídeo tutorial {#video}
+
+Este vídeo apresenta a área de trabalho do Campaign Classic.
+
+>[!VIDEO](https://video.tv.adobe.com/v/35130?quality=12)
+
+Vídeos de instruções adicionais do Campaign Classic estão disponíveis [aqui](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html).
