@@ -1,63 +1,56 @@
 ---
 solution: Campaign Classic
 product: campaign
-title: Sobre o editor HTML do Campaign
-description: Sobre o editor HTML do Campaign
+title: Introdução ao editor HTML da Campanha
+description: Introdução à Campanha DCE
 audience: web
 content-type: reference
 topic-tags: editing-html-content
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: e76eb171aac1f7088ff8647f99c928ec349b24fc
 workflow-type: tm+mt
-source-wordcount: '348'
-ht-degree: 100%
+source-wordcount: '256'
+ht-degree: 5%
 
 ---
 
 
-# Sobre o editor HTML do Campaign{#about-campaign-html-editor}
+# Introdução ao editor HTML da Campanha{#about-campaign-html-editor}
 
-O **Editor de conteúdo digital (DCE)** é um editor de conteúdo HTML que permite criar ou modificar facilmente templates ou conteúdo em formato HTML no Adobe Campaign.
+The **Digital Content Editor (DCE)** is an HTML content editor that lets you easily create content and templates in HTML format within Adobe Campaign.
 
-O Editor de conteúdo digital permite inserir e formatar elementos de página e associar campos de banco de dados a elementos de uma página HTML. Ele é oferecido por padrão ao criar uma página para uma aplicação web ou está disponível ao criar deliveries com base em um template no qual está ativo.
+Com o Editor de conteúdo digital, você pode inserir e formatar elementos de página e mapear campos de banco de dados com elementos de uma página HTML. Esse editor está disponível ao criar uma página para um aplicativo da Web ou ao criar delivery com base em um modelo de DCE.
 
 >[!NOTE]
+>>Se precisar adicionar um código JavaScript do lado do servidor, use alocos de personalização. [Saiba mais](../../delivery/using/personalization-blocks.md).
 >
->O DCE só permite que você execute as operações detalhadas nesta seção.
->
->Se quiser adicionar código JavaScript do lado do servidor, é melhor adicioná-lo em blocos de personalização. Para mais informações sobre criação e modificação dos blocos de personalização, consulte [esta página](../../delivery/using/personalization-blocks.md).
-
 >[!CAUTION]
->
->Por motivos de privacidade, recomendamos usar HTTPS para todos os recursos externos.
+Todos os recursos externos precisam ser referenciados com um URL HTTPS.
 
-## Operação geral do Editor de conteúdo {#content-editor-general-operation}
+## Etapas principais para usar o Editor de conteúdo digital {#content-editor-general-operation}
 
-Esta seção apresenta as principais etapas para editar e carregar conteúdo editado com o DCE na estrutura de um aplicação web e no contexto de um delivery.
+Esta seção apresenta as principais etapas para editar e fazer upload de conteúdo editado com o DCE, no contexto de um aplicativo da Web e de um design de delivery.
 
 A operação geral é a seguinte:
 
 ![](assets/dce_schema.png)
 
-Para criar uma aplicação web simples, as etapas são estas:
+Para criar um aplicativo **** da Web simples, é necessário:
 
-* Crie uma aplicação web. Para obter mais informações, consulte [Criação de uma página inicial](../../web/using/creating-a-landing-page.md),
-* Seleção de conteúdo existente ou criação de conteúdo de um template padrão. Para obter mais informações, consulte ](../../web/using/template-management.md)Gerenciamento de modelos[,
-* Edite e configure o conteúdo. Para mais informações, consulte [Edição de conteúdo](../../web/using/editing-content.md),
-* Publique a aplicação web. Para obter mais informações, consulte [Publicação de conteúdo](../../web/using/creating-a-landing-page.md#step-3---publishing-content) e [esta página](../../web/using/publishing-a-web-form.md#managing-web-forms-delivery-and-tracking).
-
->[!NOTE]
->
->Para obter um exemplo completo detalhando a implementação do DCE na estrutura de uma aplicação web, consulte [Criação de uma página inicial](../../web/using/creating-a-landing-page.md).
-
-Para criar um delivery de email, as etapas são as seguintes:
-
-* Crie um delivery por meio de um template de tipo de email no qual o DCE esteja ativo,
-* Selecione conteúdo existente ou crie conteúdo por meio de um template padrão,
-* Edite e configure conteúdo online,
-* Envie o delivery. Para obter mais informações, consulte [esta seção](../../delivery/using/steps-about-delivery-creation-steps.md).
+1. Criar um aplicativo da Web - [Saiba mais](../../web/using/creating-a-landing-page.md)
+1. Select existing content or creating content from a standard template - [Learn more](../../web/using/template-management.md)
+1. Editar e configurar conteúdo - [Saiba mais](../../web/using/editing-content.md)
+1. Publicar a Aplicação web - [Saiba mais](../../web/using/creating-a-landing-page.md#step-3---publishing-content)
 
 >[!NOTE]
->
->Para obter um exemplo completo detalhando a implementação do DCE na estrutura de um delivery de email, consulte [este caso de uso](../../web/using/use-case--creating-an-email-delivery.md).
+Uma amostra completa de implementação no contexto de um aplicativo da Web está disponível [nesta seção](../../web/using/creating-a-landing-page.md).
 
+Para criar um delivery **de** email, é necessário:
+
+1. Criar um delivery a partir de um modelo de DCE - [Saiba mais](../../web/using/use-case--creating-an-email-delivery.md)
+1. Select an existing content or create content from a [standard template](../../web/using/template-management.md)
+1. Edite e configure conteúdo online
+1. Enviar o delivery - [Saiba mais](../../delivery/using/steps-about-delivery-creation-steps.md)
+
+>[!NOTE]
+Um exemplo completo de implementação no contexto de um delivery de email está disponível [neste caso](../../web/using/use-case--creating-an-email-delivery.md)de uso.
