@@ -7,10 +7,10 @@ audience: campaign
 content-type: reference
 topic-tags: distributed-marketing
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: c625b4109e2cb47446331cd009ff9827c8267c93
 workflow-type: tm+mt
 source-wordcount: '1297'
-ht-degree: 100%
+ht-degree: 93%
 
 ---
 
@@ -19,15 +19,15 @@ ht-degree: 100%
 
 ## Criar uma campanha local (por formulário) {#creating-a-local-campaign--by-form-}
 
-A interface Web tipo **By form** envolve o uso de uma **aplicação Web**. Dependendo da configuração, essa aplicação Web pode conter qualquer tipo de elementos personalizados definidos. Por exemplo, você pode sugerir links para avaliar o target, o orçamento, o conteúdo etc. por meio de APIs dedicadas.
+A interface da Web do tipo **By form** envolve o uso de um **aplicativo da Web**. Dependendo de sua configuração, esse aplicativo da Web pode conter qualquer tipo de elementos personalizados definidos. Por exemplo, você pode sugerir links para avaliar o target, o orçamento, o conteúdo etc. por meio de APIs dedicadas.
 
 >[!NOTE]
 >
 >As APIs são detalhadas em um documento dedicado, acesso ao qual depende do seu contrato. Consulte a [API](../../configuration/using/about-web-services.md).
 >
->A aplicação Web usada neste exemplo não é fornecida com o Adobe Campaign. Para usar um formulário em uma campanha, você deve criar a aplicação Web dedicada.
+>A aplicação Web usada neste exemplo não é fornecida com o Adobe Campaign. Para usar um formulário em uma campanha, é necessário criar o aplicativo da Web dedicado.
 
-Ao criar o template de campanha, clique no ícone **[!UICONTROL Zoom]** dentro da opção **[!UICONTROL Web interface]** do link **[!UICONTROL Advanced campaign settings...]** para acessar os detalhes do aplicativo web.
+Ao criar o template de campanha, clique no ícone **[!UICONTROL Zoom]** na opção **[!UICONTROL Web interface]** do link **[!UICONTROL Advanced campaign settings...]** para acessar os detalhes do aplicativo da Web.
 
 ![](assets/mkg_dist_local_op_form1.png)
 
@@ -106,7 +106,7 @@ As etapas são as seguintes:
 
    ![](assets/mkg_dist_use_case_target_valid8.png)
 
-1. Ao clicar no link **[!UICONTROL Access your contact list and approve targeting]**, a entidade local recebe acesso (via navegador da Web) à lista de clientes selecionados para a campanha.
+1. Ao clicar no link **[!UICONTROL Access your contact list and approve targeting]**, a entidade Local recebe acesso (via navegador da Web) à lista de clientes selecionados para a campanha.
 
    ![](assets/mkg_dist_use_case_target_valid9.png)
 
