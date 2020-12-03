@@ -7,10 +7,10 @@ audience: campaign
 content-type: reference
 topic-tags: tasks--resources-and-budgets
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: c625b4109e2cb47446331cd009ff9827c8267c93
 workflow-type: tm+mt
 source-wordcount: '2468'
-ht-degree: 100%
+ht-degree: 99%
 
 ---
 
@@ -93,7 +93,7 @@ Para campanhas, de acordo com o nível de compromisso, um custo pode ser planeja
 >   
 >A opção **[!UICONTROL Commitment level]** representa uma projeção de custos no futuro antes de serem cobradas no orçamento. De acordo com o progresso de uma campanha, tarefa ou delivery, pode-se decidir atribuir um nível de compromisso mais alto ou mais baixo (1. Planejado, 2. Reservado, 3. Comprometido) usando a caixa de combinação.
 
-Por exemplo, o custo planejado estimado de uma campanha da Web é 45,000 Euros.
+Por exemplo, o custo previsto de uma campanha na web é de 45.000 euros.
 
 ![](assets/s_user_edit_budget_node_impact_0.png)
 
