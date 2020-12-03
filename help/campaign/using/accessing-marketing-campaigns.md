@@ -7,10 +7,10 @@ audience: campaign
 content-type: reference
 topic-tags: about-marketing-campaigns
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: c625b4109e2cb47446331cd009ff9827c8267c93
 workflow-type: tm+mt
 source-wordcount: '1046'
-ht-degree: 100%
+ht-degree: 97%
 
 ---
 
@@ -36,7 +36,7 @@ O bloco de navegação do universo **[!UICONTROL Campaigns]** oferece várias en
 * **Calendário da campanha**: calendário de planos, programas de marketing, remessas e campanhas. Consulte [Calendário da campanha](#campaign-calendar).
 * **Campanhas**: acesso às campanhas contidas em todos os programas de marketing.
 * **Remessas**: acesso às remessas vinculadas às campanhas.
-* **Web Applications**: acesso a aplicações Web (formulários, pesquisas, etc.).
+* **aplicações web**: acesso a aplicativos da Web (formulários, pesquisas etc.).
 
 >[!NOTE]
 >
@@ -162,7 +162,7 @@ Você pode acessar as telas do console do Adobe Campaign por meio de um navegado
 
    ![](assets/s_ncs_user_interface_web_campaign_01.png)
 
-Aprovações (de um target ou conteúdo de delivery, por exemplo) podem ser realizadas via acesso Web.
+As aprovações (de um conteúdo de público alvo ou delivery, por exemplo) podem ser realizadas por meio do acesso à Web.
 
 ![](assets/campaign_web_interface_validation.png)
 
