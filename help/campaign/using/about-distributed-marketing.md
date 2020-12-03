@@ -7,10 +7,10 @@ audience: campaign
 content-type: reference
 topic-tags: distributed-marketing
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: c625b4109e2cb47446331cd009ff9827c8267c93
 workflow-type: tm+mt
 source-wordcount: '1129'
-ht-degree: 100%
+ht-degree: 92%
 
 ---
 
@@ -70,9 +70,9 @@ Consulte [Criar uma campanha local](../../campaign/using/creating-a-local-campai
 
 Uma campanha colaborativa é uma campanha cujo **cronograma de execução é definido** pela entidade central, que a entidade local pode usar. O conteúdo permanece o mesmo para cada entidade local, mas os custos são compartilhados. Para participarem, as entidades locais se inscrevem na campanha colaborativa.
 
-* **[!UICONTROL Collaborative campaign (by form)]**: recomendado para campanhas que envolvam até 300 entidades locais. A entidade local pode inserir parâmetros predefinidos para definição de alvos e personalização de conteúdo em um formulário da Web. O formulário pode ser um formulário do Adobe Campaign ou um formulário externo (cliente extranet). Um administrador funcional pode definir e configurar o formulário com base em um template de formulário definido pelo integrador. Para solicitar a campanha, a entidade local precisa apenas de acesso à Web.
+* **[!UICONTROL Collaborative campaign (by form)]**: recomendado para campanhas que envolvam até 300 entidades locais. A entidade Local pode inserir parâmetros predefinidos para definição de metas e personalização de conteúdo em um formulário da Web. O formulário pode ser um formulário do Adobe Campaign ou um formulário externo (cliente extranet). Um administrador funcional pode definir e configurar o formulário com base em um template de formulário definido pelo integrador. Para solicitar a campanha, a entidade Local precisa apenas de acesso à Web.
 * **[!UICONTROL Collaborative campaign (by campaign)]**: recomendado para campanhas destinadas a dezenas de entidades locais. Esse tipo de campanha cria campanhas filho para cada entidade local. Quando o **[!UICONTROL collaborative campaign (by campaign)]** é aprovado pela entidade central, a campanha é disponibilizada à entidade local, que pode modificá-la. A execução é automaticamente sincronizada entre campanhas pai e filho. A entidade local deve ter acesso a uma instância para solicitar uma campanha e participar dela.
-* **[!UICONTROL Collaborative campaign (by target approval)]**: recomendado para campanhas destinadas a milhares de entidades locais. A entidade local recebe uma lista de contatos que foi predefinida pela entidade central. A entidade local decide se mantém determinados contatos com base no conteúdo da campanha, por meio de um formulário da Web. As entidades locais são selecionadas da lista de contatos selecionados. Para participar da campanha, a entidade local só precisa de acesso à Web.
+* **[!UICONTROL Collaborative campaign (by target approval)]**: recomendado para campanhas destinadas a milhares de entidades locais. A entidade local recebe uma lista de contatos que foi predefinida pela entidade central. A entidade Local decide manter ou não determinados contatos com base no conteúdo da campanha, por meio de um formulário da Web. As entidades locais são selecionadas da lista de contatos selecionados. Para participar da campanha, a entidade Local precisa apenas de acesso à Web.
 * **[!UICONTROL Collaborative campaign (simple)]**: esse modo garante a compatibilidade com os processos de execução específicos das versões anteriores.
 
 Consulte [Criar uma campanha colaborativa](../../campaign/using/creating-a-collaborative-campaign.md)
@@ -144,7 +144,7 @@ O procedimento de implementação depende do tipo de pacote de campanha usado e 
    * cronograma de execução (data de contato e data de extração), **somente para operadores locais**,
    * extensão do schema do pedido com todos os campos adicionais necessários.
 
-1. Crie um formulário Web (Adobe ou extranet) que permita exibir parâmetros de localização, avalie o alvo e o orçamento, bem como pré-visualize o conteúdo e aprove o pedido.
+1. Crie um formulário da Web (Adobe ou extranet) que permita exibir parâmetros de localização, avaliar o público alvo e orçamento, além de pré-visualização do conteúdo e aprovar o pedido.
 
    Para **collaborative campaigns (by target approval)**, crie a tabela onde as aprovações de cada entidade local serão salvas.
 
