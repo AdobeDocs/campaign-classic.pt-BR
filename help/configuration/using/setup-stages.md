@@ -7,7 +7,7 @@ audience: configuration
 content-type: reference
 topic-tags: setting-up-web-tracking
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: c625b4109e2cb47446331cd009ff9827c8267c93
 workflow-type: tm+mt
 source-wordcount: '234'
 ht-degree: 5%
@@ -30,7 +30,7 @@ Aplique as seguintes etapas para configurar essas tags:
 1. Determine quais informações adicionais você deseja coletar e estenda o schema **nms:webTrackingLog** com a descrição dessas informações. Por padrão, esse schema pode armazenar as quantias da transação e o número de itens por transação.
 1. Criação de tag de rastreamento da Web. Há duas maneiras de fazer isso:
 
-   * Insira os URLs correspondentes a essas páginas na plataforma do Adobe Campaign e gere e extraia os tag de rastreamento da Web associados (do **[!UICONTROL Campaign execution>Resources>Web tracking tags]** nó do console do cliente).
+   * Insira os URLs correspondentes a essas páginas na plataforma do Adobe Campaign e gere e extraia os tag de rastreamento da Web associados (do nó **[!UICONTROL Campaign execution>Resources>Web tracking tags]** do console do cliente).
    * Crie os tag de rastreamento da Web você mesmo no modo de &quot;criação instantânea&quot;: os URLs correspondentes a essas páginas serão inseridos automaticamente na sua plataforma Adobe Campaign.
 
 1. Adicione essas tags de forma estática ou dinâmica nas páginas que deseja rastrear.
