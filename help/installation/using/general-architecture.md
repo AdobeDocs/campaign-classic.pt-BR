@@ -7,7 +7,7 @@ audience: installation
 content-type: reference
 topic-tags: architecture-and-hosting-models
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: c625b4109e2cb47446331cd009ff9827c8267c93
 workflow-type: tm+mt
 source-wordcount: '1336'
 ht-degree: 0%
@@ -41,7 +41,7 @@ A Adobe Campaign é baseada em uma SOA (Service Oriented Architecture, arquitetu
 
 >[!CAUTION]
 >
->Caso contrário, a instalação, as atualizações e a manutenção em todos os componentes de uma plataforma Adobe Campaign serão da responsabilidade do(s) administrador(es) da máquina que os hospeda. Isso inclui a implementação dos pré-requisitos para aplicativos Adobe Campaign, bem como a conformidade com a matriz [de](../../rn/using/compatibility-matrix.md) compatibilidade de Campanha entre os componentes.
+>Caso contrário, a instalação, as atualizações e a manutenção em todos os componentes de uma plataforma Adobe Campaign serão da responsabilidade do(s) administrador(es) da máquina que os hospeda. Isso inclui a implementação dos pré-requisitos para aplicativos Adobe Campaign, bem como a conformidade com a Campanha [Matriz de compatibilidade](../../rn/using/compatibility-matrix.md) entre componentes.
 
 ## Camada de apresentação {#presentation-layer}
 
@@ -59,7 +59,7 @@ A Adobe Campaign depende de um conjunto de processos do lado do servidor que fun
 
 Os principais processos são:
 
-**Servidor** de aplicativos (nlserver web)
+**Servidor**  de aplicativos (nlserver web)
 
 Esse processo expõe toda a gama de funcionalidades do Adobe Campaign por meio de APIs de serviços da Web (SOAP - HTTP + XML). Além disso, ele pode gerar dinamicamente as páginas da Web usadas para acesso com base em HTML (relatórios, Formulários web etc.). Para isso, esse processo inclui um servidor JSP Apache Tomcat. Esse é o processo ao qual o console se conecta.
 
@@ -73,13 +73,13 @@ Ele também lida com workflows técnicos executados periodicamente, incluindo:
 * Limpeza: Limpeza do banco de dados. Usado para expurgar registros antigos e evitar o crescimento exponencial do banco de dados.
 * Faturamento: Envio automático de um relatório de atividade para a plataforma (tamanho do banco de dados, número de ações de marketing etc.).
 
-**Servidor** delivery (nlserver mta)
+**Servidor**  delivery (nlserver mta)
 
 A Adobe Campaign tem funcionalidade nativa de transmissão por email. Esse processo funciona como um agente de transferência de mensagens SMTP (MTA). Ele executa a personalização &quot;um para um&quot; de mensagens e manipula seus delivery físicos. Funciona usando trabalhos de delivery e lida com tentativas automáticas. Além disso, quando o rastreamento é ativado, ele substitui automaticamente os URLs para que apontem para o servidor de redirecionamento.
 
 Esse processo pode lidar com a personalização e o envio automático para um roteador de terceiros para SMS, fax e mala direta.
 
-**Servidor** de redirecionamento (nlserver webmdl)
+**Servidor**  de redirecionamento (nlserver webmdl)
 
 Para e-mail, a Adobe Campaign trata automaticamente o rastreamento aberto e de cliques (o rastreamento transacional no nível do site é outra possibilidade). Para isso, os URLs incorporados nas mensagens de email são reescritos para apontar para este módulo, que registra a passagem do usuário da Internet antes de redirecioná-los para o URL necessário.
 
@@ -87,17 +87,17 @@ Para garantir a maior disponibilidade, esse processo é totalmente independente 
 
 Outros processos mais técnicos também estão disponíveis:
 
-**Gerenciar emails** de rejeição (nlserver inMail)
+**Gerenciar emails**  de rejeição (nlserver inMail)
 
 Esse processo permite que você automaticamente pegue emails de caixas de correio configuradas para receber mensagens que são retornadas em caso de falha de delivery. Essas mensagens passam por um processamento com base em regras para determinar os motivos de não-delivery (recipient desconhecido, cota excedida etc.) e para atualizar o status do delivery no banco de dados.
 
 Todas essas operações são totalmente automáticas e pré-configuradas.
 
-**Status** do delivery SMS (nlserver sms)
+**Status**  do delivery SMS (nlserver sms)
 
 Esse processo chama o roteador SMS para coletar o status de progresso e atualizar o banco de dados.
 
-**Gravando mensagens** de log (nlserver syslogd)
+**Gravando mensagens**  de log (nlserver syslogd)
 
 Esse processo técnico captura mensagens de registro e rastreamentos gerados pelos outros processos e as grava no disco rígido. Isso disponibiliza amplas informações para diagnóstico em caso de problemas.
 
@@ -105,21 +105,21 @@ Esse processo técnico captura mensagens de registro e rastreamentos gerados pel
 
 Esse processo salva em disco os logs de rastreamento gerados pelo processo de redirecionamento.
 
-**Gravando eventos** de entrada (nlserver interactiond)
+**Gravando eventos**  de entrada (nlserver interactiond)
 
 Esse processo garante a gravação no disco de eventos de entrada, dentro da estrutura de Interação.
 
-**Módulos** de supervisão (nlserver watchdog)
+**Módulos**  de supervisão (nlserver watchdog)
 
 Este processo técnico atua como um processo principal que gera os outros. Ele também os monitora e os reinicializa automaticamente em caso de incidentes, mantendo assim o tempo máximo de funcionamento do sistema.
 
-**Servidor** de estatísticas (nlserver stat)
+**Servidor**  de estatísticas (nlserver stat)
 
 Esse processo mantém estatísticas sobre o número de conexões, as mensagens enviadas para cada servidor de e-mail para o qual as mensagens são enviadas, bem como suas limitações (o maior número de conexões simultâneas, mensagens por hora/ e/ou conexão). Ela também permite federar várias instâncias ou máquinas se elas compartilharem os mesmos endereços IP públicos.
 
 >[!NOTE]
 >
->A lista completa dos módulos Adobe Campaign está disponível [neste documento](../../production/using/operating-principle.md).
+>A lista completa dos módulos Adobe Campaign está disponível em [este documento](../../production/using/operating-principle.md).
 
 ## Camada de persistência {#persistence-layer}
 
