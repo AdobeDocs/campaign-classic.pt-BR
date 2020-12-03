@@ -7,7 +7,7 @@ audience: configuration
 content-type: reference
 topic-tags: api
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: c625b4109e2cb47446331cd009ff9827c8267c93
 workflow-type: tm+mt
 source-wordcount: '658'
 ht-degree: 5%
@@ -21,12 +21,12 @@ ht-degree: 5%
 
 O servidor de aplicativos Adobe Campaign foi projetado para abertura e fácil integração com sistemas de informações de empresa cada vez mais diversificados e complexos.
 
-As APIs da Adobe Campaign são usadas em JavaScript no aplicativo e em SOAP fora dele. Eles compõem uma biblioteca de funções genéricas que podem ser enriquecidas. Para obter mais informações, consulte [Implementação de métodos](../../configuration/using/implementing-soap-methods.md)SOAP.
+As APIs da Adobe Campaign são usadas em JavaScript no aplicativo e em SOAP fora dele. Eles compõem uma biblioteca de funções genéricas que podem ser enriquecidas. Para obter mais informações, consulte [Implementação de métodos SOAP](../../configuration/using/implementing-soap-methods.md).
 
 >[!IMPORTANT]
 >
 >O número de chamadas de mecanismo autorizadas por dia varia de acordo com o contrato de licença. Para obter mais informações, consulte [esta página](https://helpx.adobe.com/legal/product-descriptions/adobe-campaign-classic---product-description.html).\
->Uma lista de todas as APIs, incluindo sua descrição completa, está disponível [nesta documentação](https://docs.adobe.com/content/help/en/campaign-classic/technicalresources/api/index.html)dedicada.
+>Uma lista de todas as APIs, incluindo sua descrição completa, está disponível em [esta documentação dedicada](https://docs.adobe.com/content/help/en/campaign-classic/technicalresources/api/index.html).
 
 ## Pré-requisitos {#prerequisites}
 
@@ -36,14 +36,14 @@ Antes de usar as APIs da Adobe Campaign, é necessário conhecer os seguintes t�
 * Protocolo SOAP
 * Adobe Campaign datamodel
 
-## Using Adobe Campaign APIs {#using-adobe-campaign-apis}
+## Usando APIs da Adobe Campaign {#using-adobe-campaign-apis}
 
 A Adobe Campaign usa dois tipos de APIs:
 
-* APIs de acesso a dados genéricos para consultar os dados do modelo de dados. Consulte APIs [orientadas a](../../configuration/using/data-oriented-apis.md)dados.
-* APIs comerciais específicas que permitem agir em cada objeto: delivery, workflows, subscrições etc. Consulte APIs [orientadas para](../../configuration/using/business-oriented-apis.md)negócios.
+* APIs de acesso a dados genéricos para consultar os dados do modelo de dados. Consulte [APIs orientadas por dados](../../configuration/using/data-oriented-apis.md).
+* APIs comerciais específicas que permitem agir em cada objeto: delivery, workflows, subscrições etc. Consulte [APIs orientadas para os negócios](../../configuration/using/business-oriented-apis.md).
 
-Para desenvolver APIs e interagir com a Adobe Campaign, é necessário conhecer seu modelo de dados. A Adobe Campaign permite que você gere uma descrição completa da base. Consulte a [Descrição do modelo](../../configuration/using/data-oriented-apis.md#description-of-the-model).
+Para desenvolver APIs e interagir com a Adobe Campaign, é necessário conhecer seu modelo de dados. A Adobe Campaign permite que você gere uma descrição completa da base. Consulte [Descrição do modelo](../../configuration/using/data-oriented-apis.md#description-of-the-model).
 
 ## Chamadas SOAP {#soap-calls}
 
@@ -58,7 +58,7 @@ A estrutura de uma mensagem SOAP é a seguinte:
 * um organismo que contenha as informações sobre a chamada e a resposta,
 * gerenciamento de erros que define a condição de erro.
 
-## Recursos e intercâmbios {#resources-and-exchanges}
+## Recursos e trocas {#resources-and-exchanges}
 
 O schema a seguir mostra os vários recursos envolvidos no uso das APIs do Adobe Campaign:
 
@@ -92,13 +92,13 @@ Para obter mais informações, consulte [ExecuteQuery (xtk:queryDef)](../../conf
 </SOAP-ENV:Envelope>
 ```
 
-O `<soap-env:envelope>` elemento é o primeiro elemento da mensagem que representa o envelope SOAP.
+O elemento `<soap-env:envelope>` é o primeiro elemento da mensagem que representa o envelope SOAP.
 
-O `<soap-env:body>` elemento é o primeiro elemento filho do envelope. Ele contém a descrição da mensagem, ou seja, o conteúdo do query ou a resposta.
+O elemento `<soap-env:body>` é o primeiro elemento filho do envelope. Ele contém a descrição da mensagem, ou seja, o conteúdo do query ou a resposta.
 
-O método a ser chamado é inserido no `<executequery>` elemento a partir do corpo da mensagem SOAP.
+O método a ser chamado é inserido no elemento `<executequery>` a partir do corpo da mensagem SOAP.
 
-No SOAP, os parâmetros são reconhecidos por ordem de aparência. O primeiro parâmetro, `<__sessiontoken>`, pega a cadeia de autenticação, o segundo parâmetro é a descrição XML do query do `<querydef>` elemento.
+No SOAP, os parâmetros são reconhecidos por ordem de aparência. O primeiro parâmetro, `<__sessiontoken>`, pega a cadeia de autenticação, o segundo parâmetro é a descrição XML do query do elemento `<querydef>`.
 
 ### Resposta SOAP {#soap-response}
 
@@ -115,7 +115,7 @@ No SOAP, os parâmetros são reconhecidos por ordem de aparência. O primeiro pa
 </SOAP-ENV:Envelope>
 ```
 
-O resultado do query é inserido a partir do `<pdomoutput>` elemento.
+O resultado do query é inserido a partir do elemento `<pdomoutput>`.
 
 ## Gerenciamento de erros {#error-management}
 
@@ -135,7 +135,7 @@ ODBC error: [Microsoft][ODBC SQL Server Driver][SQL Server]The statement has bee
 </SOAP-ENV:Envelope>
 ```
 
-O `<soap-env:fault>` elemento no corpo da mensagem SOAP é usado para transmitir os sinais de erro que surgem durante o processamento do serviço da Web. É composto pelos seguintes subelementos:
+O elemento `<soap-env:fault>` no corpo da mensagem SOAP é usado para transmitir os sinais de erro que surgem durante o processamento do serviço da Web. É composto pelos seguintes subelementos:
 
 * `<faultcode>` : indica o tipo de erro. Os tipos de erro são:
 
@@ -147,7 +147,7 @@ O `<soap-env:fault>` elemento no corpo da mensagem SOAP é usado para transmitir
 * `<faultstring>` : mensagem que descreve o erro
 * `<detail>` : mensagem de erro longa
 
-O sucesso ou a falha da chamada de serviço é identificada quando o `<faultcode>` elemento é verificado.
+O sucesso ou falha da invocação do serviço é identificado quando o elemento `<faultcode>` é verificado.
 
 >[!IMPORTANT]
 >
