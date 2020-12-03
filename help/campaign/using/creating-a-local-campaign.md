@@ -7,10 +7,10 @@ audience: campaign
 content-type: reference
 topic-tags: distributed-marketing
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: c625b4109e2cb47446331cd009ff9827c8267c93
 workflow-type: tm+mt
-source-wordcount: '1569'
-ht-degree: 100%
+source-wordcount: '1567'
+ht-degree: 90%
 
 ---
 
@@ -51,9 +51,9 @@ Na janela da campanha, clique na guia **[!UICONTROL Edit]** e clique no link **[
 
 Na guia **Marketing distribuído**, você pode escolher o tipo de interface da Web e especificar os valores e parâmetros padrões a serem inseridos quando uma entidade local colocar um pedido.
 
-A interface da Web corresponde a um formulário a ser preenchido pela entidade local ao solicitar a campanha.
+A interface da Web corresponde a um formulário a ser preenchido pela entidade Local ao solicitar a campanha.
 
-Selecione o tipo de interface da Web a ser aplicada às campanhas criadas a partir do template:
+Selecione o tipo de interface da Web a ser aplicado às campanhas criadas a partir do modelo:
 
 ![](assets/mkt_distr_1.png)
 
@@ -63,15 +63,15 @@ Há quatro tipos de interfaces da Web disponíveis:
 
    ![](assets/mkt_distr_6.png)
 
-* **[!UICONTROL By form]** : a entidade local tem acesso a um formulário web onde, dependendo do template usado, podem editar o conteúdo, o público-alvo, o tamanho máximo, bem como datas de criação e extração usando campos de personalização. A entidade local pode avaliar o público-alvo e pré-visualizar o conteúdo desse formulário Web.
+* **[!UICONTROL By form]** : A entidade Local tem acesso a um formulário da Web no qual, dependendo do modelo usado, pode editar o conteúdo, o público alvo, seu tamanho máximo, bem como datas de criação e extração usando campos de personalização. A entidade Local pode avaliar o conteúdo do público alvo e da pré-visualização deste formulário da Web.
 
    ![](assets/mkt_distr_8.png)
 
-   O formulário oferecido é especificado em um aplicativo Web que deve ser selecionado em uma lista suspensa no **[!UICONTROL Web Interface]** campo no link **[!UICONTROL Advanced campaign settings...]** do template. Consulte [Criar uma campanha local (por formulário)](../../campaign/using/examples.md#creating-a-local-campaign--by-form-).
+   O formulário oferecido é especificado em um aplicativo da Web que deve ser selecionado em uma lista suspensa no campo **[!UICONTROL web Interface]** no link **[!UICONTROL Advanced campaign settings...]** do modelo. Consulte [Criar uma campanha local (por formulário)](../../campaign/using/examples.md#creating-a-local-campaign--by-form-).
 
    >[!NOTE]
    >
-   >A aplicação Web usada neste exemplo é um exemplo. É necessário criar um aplicativo Web específico para poder usar um formulário. Consulte a [API](../../configuration/using/about-web-services.md).
+   >O aplicativo da Web usado neste exemplo é um exemplo. É necessário criar um aplicativo da Web específico para poder usar um formulário. Consulte a [API](../../configuration/using/about-web-services.md).
 
    ![](assets/mkt_distr_7.png)
 
@@ -240,7 +240,7 @@ Para solicitar uma campanha:
 
    >[!NOTE]
    >
-   >As aplicações Web são detalhadas no guia [funcionalidades da Web](../../web/using/about-web-applications.md).
+   >As aplicações web são detalhadas em [nesta seção](../../web/using/about-web-applications.md).
 
 1. Insira as informações necessárias na primeira página (rótulo do pedido e comentário) e clique em **[!UICONTROL Next]**.
 
