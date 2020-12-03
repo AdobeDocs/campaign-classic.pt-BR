@@ -7,7 +7,7 @@ audience: configuration
 content-type: reference
 topic-tags: use-a-custom-recipient-table
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: c625b4109e2cb47446331cd009ff9827c8267c93
 workflow-type: tm+mt
 source-wordcount: '665'
 ht-degree: 2%
@@ -47,34 +47,34 @@ O uso de uma tabela de recipient externos tem as seguintes limitações:
 
    Recomendamos:
 
-   * Dedicando os **[!UICONTROL nms:BroadLogRcp]** e **[!UICONTROL nms:TrackingLogRcp]** schemas ao pronto-socorro **[!UICONTROL nms:Recipientschema]**. Essas duas tabelas de log não devem ser vinculadas a nenhuma tabela de recipient personalizada adicional.
+   * Dedicando os schemas **[!UICONTROL nms:BroadLogRcp]** e **[!UICONTROL nms:TrackingLogRcp]** aos  predefinidos **[!UICONTROL nms:Recipientschema]**. Essas duas tabelas de log não devem ser vinculadas a nenhuma tabela de recipient personalizada adicional.
    * Definição de schemas personalizados de log de fluxo e rastreamento para cada novo schema de recipient personalizado. Isso pode ser feito automaticamente ao configurar o target mapping, consulte [Target mapping](../../configuration/using/target-mapping.md).
 
-* Não é possível usar o padrão **[!UICONTROL Services and Subscriptions]** oferecido no produto.
+* Você não pode usar o padrão **[!UICONTROL Services and Subscriptions]** oferecido no produto.
 
-   Isto significa que a operação global descrita na [presente seção](../../delivery/using/managing-subscriptions.md) não é aplicável.
+   Isso significa que a operação geral detalhada em [this section](../../delivery/using/managing-subscriptions.md) não é aplicável.
 
-* O link com a **[!UICONTROL visitor]** tabela não funciona.
+* O link com a tabela **[!UICONTROL visitor]** não funciona.
 
-   Assim, para usar o **[!UICONTROL Social Marketing]** módulo, é necessário configurar a etapa do armazenamento para fazer referência à tabela correta.
+   Assim, para usar o módulo **[!UICONTROL Social Marketing]**, é necessário configurar a etapa do armazenamento para fazer referência à tabela correta.
 
    Da mesma forma, ao utilizar funções de referência, o modelo de transferência de mensagem inicial padrão deve ser adaptado.
 
 * Não é possível adicionar perfis manualmente em uma lista.
 
-   Por conseguinte, o procedimento descrito na [presente seção](../../platform/using/creating-and-managing-lists.md) não é aplicável sem uma configuração adicional.
+   Portanto, o procedimento detalhado em [this section](../../platform/using/creating-and-managing-lists.md) não é aplicável sem uma configuração adicional.
 
    >[!NOTE]
    >
-   >Você ainda pode criar listas recipient usando workflows. Para obter mais informações, consulte [Criação de uma lista de perfil com um fluxo de trabalho](../../configuration/using/creating-a-profile-list-with-a-workflow.md).
+   >Você ainda pode criar listas recipient usando workflows. Para obter mais informações, consulte [Criar uma lista de perfil com um fluxo de trabalho](../../configuration/using/creating-a-profile-list-with-a-workflow.md).
 
 Também recomendamos verificar os valores padrão usados nas diferentes configurações predefinidas: em função das funcionalidades utilizadas, devem ser efetuadas várias adaptações.
 
 Por exemplo:
 
-* Alguns relatórios padrão, em especial os oferecidos pela **Interaction** e pelas Aplicações **** Móveis, devem ser redesenvolvidos. Consulte a seção [Gerenciar relatórios](../../configuration/using/managing-reports.md) .
-* As configurações padrão para determinadas atividades de fluxo de trabalho fazem referência à tabela de recipient padrão (**[!UICONTROL nms:recipient]**): essas configurações devem ser alteradas quando usadas para uma tabela de recipient externos. Consulte a seção [Gerenciar workflows](../../configuration/using/managing-workflows.md) .
-* O bloco de **[!UICONTROL Unsubscription link]** personalização padrão deve ser adaptado.
+* Determinados relatórios padrão, especialmente aqueles oferecidos por **Interação** e **Aplicativos móveis** devem ser redesenvolvidos. Consulte a seção [Gerenciar relatórios](../../configuration/using/managing-reports.md).
+* As configurações padrão para determinadas atividades de fluxo de trabalho fazem referência à tabela de recipient padrão (**[!UICONTROL nms:recipient]**): essas configurações devem ser alteradas quando usadas para uma tabela de recipient externos. Consulte a seção [Gerenciar workflows](../../configuration/using/managing-workflows.md).
+* O bloco de personalização padrão **[!UICONTROL Unsubscription link]** deve ser adaptado.
 * O target mapping dos templates do delivery padrão deve ser modificado.
-* Os formulários V4 não são compatíveis para uso com uma tabela de recipient externos: você deve usar o Aplicação web.
+* Os formulários V4 não são compatíveis para uso com uma tabela de recipient externos: você deve usar aplicativos da Web.
 
