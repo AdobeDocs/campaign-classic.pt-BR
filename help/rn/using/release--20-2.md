@@ -7,10 +7,10 @@ audience: rns
 content-type: reference
 topic-tags: campaign-release-notes, latest-release-notes
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: 9cf995fe58b6afd89ee54724c97681f39994eba9
 workflow-type: tm+mt
-source-wordcount: '2183'
-ht-degree: 100%
+source-wordcount: '2201'
+ht-degree: 99%
 
 ---
 
@@ -71,7 +71,7 @@ _22 de julho de 2020_
 * Após a mudança para o [novo mecanismo de ID de sequência](https://helpx.adobe.com/br/campaign/kb/sequence_auto_generation.html#Switchtoadedicatedsequence), todos os aplicativos da web que estão atualizando a tabela do recipient são republicados durante a pós-atualização.
 * Correção de uma possível vulnerabilidade XSS no conteúdo do delivery. (NEO-17987, NEO-26073)
 
-![](assets/do-not-localize/cp-icon.png) **Nova versão de junho do Painel de controle do Campaign** com monitoramento de perfis ativos, auditoria de entregabilidade de subdomínio e gerenciamento de chaves GPG. [Saiba mais](https://docs.adobe.com/content/help/pt-BR/control-panel/using/release-notes.html).
+![](assets/do-not-localize/cp-icon.png) **Nova versão de junho do Painel de controle do Campaign** com monitoramento de perfis ativos, auditoria de entregabilidade de subdomínio e gerenciamento de chaves GPG. [Saiba mais](https://docs.adobe.com/content/help/en/control-panel/using/release-notes.html).
 
 ## ![](assets/do-not-localize/orange_2.png) Versão 20.2.1 - Build 9178 {#release-20-2-1-build-9178}
 
@@ -171,6 +171,8 @@ Saiba mais na [matriz de compatibilidade do Campaign](https://helpx.adobe.com/br
 * Certificados para aplicativos móveis iOS com o conector HTTP2 do iOS agora são validados antes do envio de notificações por push, evitando que os deliveries falhem devido a certificados expirados.
 
 * O gerenciamento de conexões proxy HTTP foi aprimorado. [Saiba mais](../../installation/using/configuring-campaign-server.md#proxy-connection-configuration).
+
+* A nova opção no fluxo de trabalho **[!UICONTROL Javascript Code]** e **[!UICONTROL Advanced Javascript Code]** atividade para interromper a execução após um limite. O valor padrão é 1 hora. [Saiba mais](../../workflow/using/sql-code-and-javascript-code.md#javascript-code).
 
 **Outras alterações**
 
