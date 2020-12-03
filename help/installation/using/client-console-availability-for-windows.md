@@ -7,7 +7,7 @@ audience: installation
 content-type: reference
 topic-tags: installing-campaign-in-windows-
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: c625b4109e2cb47446331cd009ff9827c8267c93
 workflow-type: tm+mt
 source-wordcount: '291'
 ht-degree: 5%
@@ -25,7 +25,7 @@ Para fazer isso, você deve:
 
 1. Recupere o pacote que contém o programa de instalação do console.
 
-   Esse arquivo é chamado `setup-client-7.X.XXXX.exe` para v7 ou `setup-client-6.X.XXXX.exe` v6.1, onde `X` é a subversão do Adobe Campaign e `XXXX` é o número da compilação.
+   Esse arquivo é chamado `setup-client-7.X.XXXX.exe` para v7 ou `setup-client-6.X.XXXX.exe` para v6.1, onde `X` é a subversão do Adobe Campaign e `XXXX` é o número da compilação.
 
 1. Copie e cole este pacote na pasta de instalação do Adobe Campaign, em **/datakit/nl/eng/jsp**.
 1. Start o servidor Adobe Campaign.
@@ -38,7 +38,7 @@ https://<your Adobe Campaign server>:>port number>/nl/jsp/logon.jsp
 
 Esta página requer um logon e uma senha definidos no aplicativo.
 
-Para baixar e instalar o console, consulte [Instalação do console](../../installation/using/installing-the-client-console.md)do cliente.
+Para baixar e instalar o console, consulte [Instalação do console do cliente](../../installation/using/installing-the-client-console.md).
 
 Sempre que uma nova versão do console do cliente estiver disponível, você será convidado a baixá-la.
 
@@ -49,7 +49,7 @@ Sempre que uma nova versão do console do cliente estiver disponível, você ser
 
 Para redefinir este prompt, siga as etapas abaixo (somente os administradores de sistema que se sentem confortáveis com a edição do Registro devem fazer estas alterações):
 
-1. Abra o Editor do Registro usando o comando **regedit** no **[!UICONTROL Start > Run]** menu.
+1. Abra o Editor do Registro usando o comando **regedit** do menu **[!UICONTROL Start > Run]**.
 1. Procure o nó e expanda-o.
 
    ```
