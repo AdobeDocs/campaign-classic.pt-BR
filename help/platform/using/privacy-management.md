@@ -7,7 +7,7 @@ audience: platform
 content-type: reference
 topic-tags: starting-with-adobe-campaign
 translation-type: tm+mt
-source-git-commit: 97e039e48068e3862bc6640711efe54f21fc0f15
+source-git-commit: 8ff5450cc35153e61048c2671f6d52fbc5ffc5b9
 workflow-type: tm+mt
 source-wordcount: '891'
 ht-degree: 92%
@@ -17,7 +17,7 @@ ht-degree: 92%
 
 # Gerenciamento de privacidade {#privacy-management}
 
-Adobe Campaign offers a set of tools to help you comply with [Privacy regulations](#privacy-management-regulations) (including GDPR, CCPA, PDPA, LGPD).
+A Adobe Campaign oferta um conjunto de ferramentas para ajudá-lo a cumprir [as regras de privacidade](#privacy-management-regulations) (incluindo o RGPD, CCPA, PDPA, LGPD).
 
 Estes são os cinco principais recursos oferecidos pela Adobe Campaign para garantir o RGPD e outras regulamentações de privacidade prontas:
 
@@ -29,7 +29,7 @@ Estes são os cinco principais recursos oferecidos pela Adobe Campaign para gara
 
 Para obter mais informações, consulte [Direito de acesso e direito de ser esquecido](#right-access-forgotten).
 
-* **Gestão do consentimento**
+* **Gerenciamento de consentimento**
 
 * **Retenção de dados**
 
@@ -43,9 +43,9 @@ It also contains information on important features to manage Privacy ([Consent, 
 
 ## Regulamentos sobre a gestão da privacidade {#privacy-management-regulations}
 
-Os recursos do Adobe Campaign ajudam você a satisfazer os seguintes requisitos:
+Os recursos do Adobe Campaign ajudam você a cumprir os seguintes requisitos:
 
-* **O GDPR** ([Regulamento Geral sobre a Proteção de Dados](https://ec.europa.eu/info/law/law-topic/data-protection/reform/what-does-general-data-protection-regulation-gdpr-govern_en)) é a lei de privacidade da União Europeia (UE) que adequa e moderniza os requisitos de proteção de dados para os países membros da UE.
+* **O GDPR** ([Regulamento Geral sobre a Proteção de Dados](https://ec.europa.eu/info/law/law-topic/data-protection/reform/what-does-general-data-protection-regulation-gdpr-govern_en)) é a lei de privacidade da União Europeia (UE) que adequa e moderniza os requisitos de proteção de dados nos países membros da UE.
 * **O CCPA** ([Ato de privacidade do consumidor da Califórnia](https://leginfo.legislature.ca.gov/faces/codes_displayText.xhtml?lawCode=CIV&amp;division=3.&amp;title=1.81.5.&amp;part=4.&amp;chapter=&amp;article=)) fornece aos residentes da Califórnia novos direitos no que diz respeito a suas informações pessoais e impõe responsabilidades de proteção de dados a determinadas entidades com negócios na Califórnia.
 * O **PDPA** ([Ato de proteção de dados pessoais)](https://secureprivacy.ai/thailand-pdpa-summary-what-businesses-need-to-know/) é a nova lei de privacidade que adequa e moderniza os requisitos de proteção de dados na Tailândia.
 * **A LGPD** ([Lei Geral de Proteção de Dados](https://iapp.org/media/pdf/resource_center/Brazilian_General_Data_Protection_Law.pdf)) entrará em vigor no início de 2021 para todas as empresas que coletam ou processam dados pessoais no Brasil.
@@ -60,9 +60,9 @@ Todos esses regulamentos se aplicam a clientes do Adobe Campaign que detêm dado
 
 ## Direito de acesso e Direito ao esquecimento {#right-access-forgotten}
 
-Para ajudar você a se preparar para as medidas de privacidade, o Adobe Campaign permite manipular as solicitações de **Acesso** e **Exclusão**.
+Para facilitar a conformidade com a privacidade, o Adobe Campaign permite manipular solicitações de **Acesso** e **Exclusão**.
 
-* O **Direito de acesso** é o direito do Titular de dados de obter a confirmação do Controlador de dados, caso os dados relativos a eles estiverem sendo processados, onde e com que finalidade. O Controlador de dados deve fornecer uma cópia gratuita dos dados pessoais em formato eletrônico.
+* O **Direito de acesso** é o direito do Titular de dados de obter a confirmação do Controlador de dados, caso os dados relativos a ele estiverem sendo processados, onde e com qual finalidade. O Controlador de dados deve fornecer uma cópia gratuita dos dados pessoais em formato eletrônico.
 
 * Também conhecido como Eliminação de dados, o **Direito ao esquecimento** (solicitação de exclusão) autoriza o Titular de dados a fazer com que o Controlador de dados apague seus dados pessoais, interrompa a divulgação dos dados e possivelmente o processamento dos dados por parte de terceiros.
 
@@ -73,15 +73,15 @@ https://experienceleague.corp.adobe.com/docs/campaign-standard-learn/tutorials/p
 
 ## Consentimento, retenção e funções {#consent-retention-roles}
 
-Além dos recursos mais recentes de **Direito de acesso** e **Direito ao esquecimento**, o Adobe Campaign oferece outros recursos importantes e essenciais para a privacidade:
+Além dos recursos mais recentes de **Direito de acesso** e **Direito ao esquecimento**, o Adobe Campaign oferece outros recursos importantes, essenciais para a privacidade:
 
-* [Gerenciamento de consentimento](#consent-management): funcionalidade de subscrição para gerenciamento de preferências
-* [Retenção de dados](#data-retention): períodos de retenção de dados em todas as tabelas de log padrão. Os períodos de retenção adicionais podem ser configurados com workflows
+* [Gerenciamento do consentimento](#consent-management): funcionalidade de assinatura para gerenciamento de preferências
+* [Retenção de dados](#data-retention): períodos de retenção de dados em todas as tabelas de log padrão; períodos de retenção adicionais podem ser configurados com workflows
 * [Gerenciamento de direitos](#rights-management): acesso a dados gerenciados por direito nomeado     
 
-### Gestão do consentimento {#consent-management}
+### Gerenciamento de consentimento {#consent-management}
 
-Consentimento significa que o Titular dos dados está de acordo com o tratamento dos seus dados pessoais. A obtenção de qualquer consentimento necessário para esse processamento é de responsabilidade do Controlador de Dados. Embora o Adobe Campaign forneça alguns recursos para ajudar o cliente a gerenciar o consentimento relacionado ao serviço, o Adobe não é responsável pelo consentimento. Os clientes devem trabalhar com os seus próprios departamentos jurídicos para determinar os próprios processos e práticas para qualquer consentimento necessário.
+Consentimento significa a aprovação do Titular dos dados para o tratamento de dados pessoais relativos à pessoa em questão. A obtenção de qualquer consentimento necessário para esse processamento é de responsabilidade do Controlador de Dados. Embora o Adobe Campaign forneça alguns recursos para ajudar o cliente a gerenciar o consentimento relacionado ao serviço, o Adobe não é responsável pelo consentimento. Os clientes devem trabalhar com os próprios serviços jurídicos para determinar seus próprios processos e práticas para qualquer consentimento necessário.
 
 Os recursos para ajudar a gerenciar alguns aspectos do consentimento são fundamentais para o Adobe Campaign desde o início. Por meio do nosso processo de gerenciamento de assinatura, os clientes podem acompanhar quais recipients participaram de quais tipos de assinatura, sejam boletins informativos, promoções diárias ou semanais ou qualquer outro tipo de programa de marketing.
 
@@ -90,11 +90,11 @@ Os recursos para ajudar a gerenciar alguns aspectos do consentimento são fundam
 Para obter mais informações sobre o Gerenciamento de consentimento, consulte a [documentação detalhada](../../delivery/using/managing-subscriptions.md).
 
 Além das ferramentas de Gestão do consentimento oferecidas pelo Adobe Campaign, você tem a possibilidade de monitorar a opção do cliente pela recusa da venda de informações pessoais.
-Consulte [esta seção](../../platform/using/privacy-requests.md##sale-of-personal-information-ccpa).
+Consulte [esta seção](../../platform/using/privacy-requests.md#sale-of-personal-information-ccpa).
 
 ### Retenção de dados {#data-retention}
 
-Com relação à retenção, as tabelas de log integradas no Campaign têm períodos de retenção predefinidos, geralmente limitando o armazenamento dos dados a seis meses ou menos.
+Quanto à retenção, as tabelas de log integradas no Campaign têm períodos de retenção predefinidos, geralmente limitando o armazenamento dos dados a seis meses ou menos.
 
 A seguir estão os valores de retenção padrão para tabelas integradas. Esteja ciente de que a configuração de retenção é definida pelos administradores técnicos da Adobe durante a implementação e os valores podem variar com base nos requisitos do cliente.
 
