@@ -27,7 +27,7 @@ A interação permite criar e gerenciar um catálogo de ofertas e configurar as 
 
 ![](assets/Offermgt2.png)
 
-![](assets/do-not-localize/how-to-video.png) Para se familiarizar com o recurso de interação e terminologias usadas na Interação de Campanha, assista [este vídeo](https://helpx.adobe.com/campaign/classic/how-to/acs-overview.html?playlist=/ccx/v1/collection/product/campaign/classic/segment/digital-marketers/explevel/intermediate/applaunch/get-started/collection.ccx.js&amp;ref=helpx.adobe.com).
+![](assets/do-not-localize/how-to-video.png) Para se familiarizar com o recurso de interação e terminologias usadas na Interação de Campanha, assista  [este vídeo](https://helpx.adobe.com/campaign/classic/how-to/acs-overview.html?playlist=/ccx/v1/collection/product/campaign/classic/segment/digital-marketers/explevel/intermediate/applaunch/get-started/collection.ccx.js&amp;ref=helpx.adobe.com).
 
 ## Tópicos relacionados
 
