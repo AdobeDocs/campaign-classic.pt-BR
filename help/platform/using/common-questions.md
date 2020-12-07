@@ -6,9 +6,9 @@ description: Perguntas frequentes sobre o Adobe Campaign Classic
 audience: platform
 content-type: reference
 topic-tags: starting-with-adobe-campaign
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '525'
 ht-degree: 100%
 
@@ -74,5 +74,5 @@ Você pode acessar as notas de versão mais recentes do Campaign Classic [nesta 
 Um subdomínio é uma divisão do seu domínio que pode ser usada para isolar suas marcas ou vários tipos de tráfego (mensagens transacionais, informações de marketing etc.).
 A Adobe conta com o Domain Name System (DNS) para a entrega de emails. Ele permite que o cliente mantenha a imagem da marca usando um alias DNS com seus nomes de domínio. Do mesmo modo, permite que a Adobe implemente livremente todas as práticas recomendadas que permitem otimizar a capacidade de entrega durante o envio por email.
 
-[Clique aqui para saber mais](https://helpx.adobe.com/br/campaign/kb/domain-name-delegation.html).
+[Clique aqui para saber mais](https://helpx.adobe.com/campaign/kb/domain-name-delegation.html).
 
