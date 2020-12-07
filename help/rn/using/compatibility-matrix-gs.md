@@ -1,23 +1,23 @@
 ---
 solution: Campaign Classic
 product: campaign
-title: Matriz de compatibilidade Gold Standard
-description: Matriz de compatibilidade de Campaign Classic para a versão Gold Standard
+title: Matriz de compatibilidade do Gold Standard
+description: Matriz de compatibilidade do Campaign Classic para a versão Gold Standard
 audience: rns
 content-type: reference
 topic-tags: latest-release-notes
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: aabab5367ea4a26837fa3dc94a36fbbfa48d59e3
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '509'
-ht-degree: 87%
+ht-degree: 100%
 
 ---
 
 
-# Gold Standard Compatibility matrix{#compatibility-matrix-gs}
+# Matriz de compatibilidade do Gold Standard{#compatibility-matrix-gs}
 
-Este documento lista todos os sistemas e componentes compatíveis com **Adobe Campaign Classic Gold Standard** 19.1 builds. Os produtos e as versões que não estão nessa lista não são compatíveis com o Adobe Campaign.
+Este documento lista todos os sistemas e componentes compatíveis com as builds 19.1 do **Adobe Campaign Classic Gold Standard**. Os produtos e as versões que não estão nessa lista não são compatíveis com o Adobe Campaign.
 
 ## Observações importantes{#important-notes-gs}
 
@@ -77,7 +77,7 @@ O Adobe Campaign Classic é compatível com todos os sistemas e ferramentas list
 <td>Apache</td>
 <td>
 <p>2.4 para RHEL7 - CentOS 7, Debian 8/9, Windows (64 bits)</p>
-<p>2.2 para RHEL6 - CentOS 6 apenas (64 bits)</p>
+<p>2.2 para RHEL6 - CentOS 6 somente (64 bits)</p>
 </td>
 </tr>
 </tbody>
@@ -122,7 +122,7 @@ O Adobe Campaign Classic é compatível com todos os sistemas e ferramentas list
 <td>
 <p>18c</p>
 <p>12c</p>
-<p>11g     R2</p>
+<p>11g       R2</p>
 </td>
 </tr>
 <tr>
@@ -301,7 +301,7 @@ O Adobe Campaign Classic é compatível com todos os sistemas e ferramentas list
 <tr>
 <td>iOS</td>
 <td>
-<p>iOS 9 - 14</p>
+<p>iOS 9 – 14</p>
 <p>com o SDK móvel build 1.0.26, compatível com as versões de 32 e 64 bits.</p>
 </td>
 </tr>
@@ -310,7 +310,7 @@ O Adobe Campaign Classic é compatível com todos os sistemas e ferramentas list
 
 ## Navegadores{#Browsers-gs}
 
-Para os seguintes navegadores, a versão mais recente é suportada: Microsoft Edge, Mozilla Firefox, Google Chrome, Safari.
+A versão mais recente é compatível com os seguintes navegadores: Microsoft Edge, Mozilla Firefox, Google Chrome, Safari.
 
 O Internet Explorer 11 é compatível.
 
