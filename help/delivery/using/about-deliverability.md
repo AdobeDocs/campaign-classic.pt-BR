@@ -1,21 +1,21 @@
 ---
 solution: Campaign Classic
 product: campaign
-title: Sobre a capacidade de entrega no Campaign
-description: Saiba mais sobre as práticas recomendadas de entrega
+title: Sobre a capacidade de delivery no Campaign
+description: Saiba mais sobre as práticas recomendadas de delivery
 audience: delivery
 content-type: reference
 topic-tags: deliverability-management
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '473'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
 
-# Sobre a entregabilidade{#about-deliverability}
+# Sobre a capacidade de delivery{#about-deliverability}
 
 **A capacidade de entrega consiste em medir o sucesso das campanhas em chegar à caixa de entrada dos destinatários sem rejeição ou sem serem marcadas como spam.**
 
