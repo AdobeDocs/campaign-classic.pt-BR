@@ -124,4 +124,4 @@ Saiba como adicionar um campo de personalização à linha de assunto e ao conte
 
 >[!VIDEO](https://video.tv.adobe.com/v/24925?quality=12)
 
-Vídeos de instruções adicionais do Campaign Classic estão disponíveis [aqui](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html).
+Vídeos de procedimentos de Campaign Classic adicionais estão disponíveis [aqui](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html?lang=pt-BR).
