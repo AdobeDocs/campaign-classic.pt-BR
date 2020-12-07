@@ -9,11 +9,11 @@ topic-tags: sending-push-notifications
 index: y
 internal: n
 snippet: y
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 1d7d48f52f69e4902eafa6806c2cd9170c21fe5a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1648'
-ht-degree: 89%
+ht-degree: 100%
 
 ---
 
@@ -28,12 +28,12 @@ Depois que o pacote for instalado, você poderá definir as configurações do a
 
 As principais etapas são:
 
-1. [Configurar a conta externa do Android](#configuring-external-account-android)
-1. [Configurar o serviço Android](#configuring-android-service)
-1. [Crie o aplicativo móvel na Campanha](#creating-android-app)
-1. [Estenda o schema do aplicativo com dados adicionais](#extend-subscription-schema)
+1. [Configuração da conta externa do Android](#configuring-external-account-android)
+1. [Configuração do serviço Android](#configuring-android-service)
+1. [Criação do aplicativo móvel no Campaign](#creating-android-app)
+1. [Extensão do esquema do aplicativo com dados adicionais](#extend-subscription-schema)
 
-Você poderá então [criar uma notificação](#creating-android-delivery)avançada do Android.
+Você poderá [criar uma notificação avançada do Android](#creating-android-delivery).
 
 ## Configuração da conta externa Android {#configuring-external-account-android}
 
@@ -62,7 +62,7 @@ Para escolher qual conector deseja usar, siga estas etapas:
 
 ## Configuração do serviço Android {#configuring-android-service}
 
-![](assets/do-not-localize/how-to-video.png) [Saiba como configurar um serviço Android em vídeo](https://experienceleague.adobe.com/docs/campaign-classic-learn/getting-started-with-push-notifications-for-android/configuring-an-android-service-in-campaign.html?lang=en#configuring-an-android-service-and-creating-an-android-mobile-application-in-campaign)
+![](assets/do-not-localize/how-to-video.png) [Saiba como configurar um serviço Android em vídeo](https://experienceleague.adobe.com/docs/campaign-classic-learn/getting-started-with-push-notifications-for-android/configuring-an-android-service-in-campaign.html?lang=pt-BR#configuring-an-android-service-and-creating-an-android-mobile-application-in-campaign)
 
 1. Acesse o nó **[!UICONTROL Profiles and Targets > Services and subscriptions]** e clique em **[!UICONTROL New]**.
 
@@ -101,7 +101,7 @@ Depois de criar o serviço, é necessário criar o aplicativo Android:
    >
    > O **[!UICONTROL Integration key]** é totalmente personalizável com o valor da string, mas precisa ser exatamente o mesmo especificado no SDK.
 
-1. Selecione o **[!UICONTROL API version]**: HTTP v1 ou HTTP (herdado). Essas configurações são detalhadas [nesta seção](#select-api-version)
+1. Selecione o **[!UICONTROL API version]**: HTTP v1 ou HTTP (legado). Essas configurações são detalhadas [nesta seção](#select-api-version)
 
 1. Preencha o campo **[!UICONTROL Firebase Cloud Messaging the Android connection settings]**.
 
@@ -113,8 +113,8 @@ Por padrão, o Adobe Campaign salva uma chave no campo **[!UICONTROL User identi
 
 Depois de criar um serviço e um novo aplicativo móvel, é necessário configurar seu aplicativo móvel dependendo da versão da API escolhida.
 
-* **A configuração HTTP v1** está detalhada nesta [seção](../../delivery/using/configuring-the-mobile-application-android.md#android-service-httpv1).
-* **A configuração HTTP (herdada)** está detalhada nesta [seção](../../delivery/using/configuring-the-mobile-application-android.md#android-service-http).
+* A configuração **HTTP v1** está detalhada nesta [seção](../../delivery/using/configuring-the-mobile-application-android.md#android-service-httpv1).
+* A configuração **HTTP (legada)** está detalhada nesta [seção](../../delivery/using/configuring-the-mobile-application-android.md#android-service-http).
 
 #### Configurar API HTTP v1{#android-service-httpv1}
 
@@ -153,7 +153,7 @@ Abaixo estão os nomes de payload do FCM para personalizar ainda mais sua notifi
 <br>
 <br>
 
-#### Configurar API HTTP (herdada){#android-service-http}
+#### Configurar API HTTP (legada){#android-service-http}
 
 Para configurar a versão da API HTTP (herdada), siga as etapas abaixo:
 
@@ -178,13 +178,13 @@ Abaixo estão os nomes de payload do FCM para personalizar ainda mais sua notifi
 
 <br>
 
-## Estender o schema appsubscriptionRcp {#extend-subscription-schema}
+## Estender o esquema appsubscriptionRcp {#extend-subscription-schema}
 
-![](assets/do-not-localize/how-to-video.png) [Saiba como estender o schema appsubscriptionRcp em vídeo](https://experienceleague.adobe.com/docs/campaign-classic-learn/getting-started-with-push-notifications-for-android/extending-the-app-subscription-schema.html?lang=en#extending-the-app-subscription-schema-to-personalize-push-notifications)
+![](assets/do-not-localize/how-to-video.png) [Saiba como estender o esquema appsubscriptionRcp em vídeo](https://experienceleague.adobe.com/docs/campaign-classic-learn/getting-started-with-push-notifications-for-android/extending-the-app-subscription-schema.html?lang=pt-BR#extending-the-app-subscription-schema-to-personalize-push-notifications)
 
-É necessário estender o **appsubscriptionRcp** para definir novos campos adicionais para armazenar parâmetros do aplicativo no banco de dados de Campanhas. Esses campos serão usados para personalização, por exemplo. Para fazer isso:
+É necessário estender o **appsubscriptionRcp** para definir novos campos adicionais para armazenar parâmetros do aplicativo no banco de dados do Campaign. Esses campos serão usados para personalização, por exemplo. Para fazer isso:
 
-1. Crie uma extensão do schema **[!UICONTROL Subscriber applications (nms:appsubscriptionRcp)]** e defina os novos campos. Learn more about schema extension in [this page](../../configuration/using/about-schema-edition.md)
+1. Crie uma extensão do esquema **[!UICONTROL Subscriber applications (nms:appsubscriptionRcp)]** e defina os novos campos. Saiba mais sobre extensão de esquema [nesta página](../../configuration/using/about-schema-edition.md)
 
 1. Defina o mapeamento na guia **[!UICONTROL Subscription parameters]**.
 
@@ -245,7 +245,7 @@ A imagem e a página da web devem ser exibidas na notificação por push quando 
 >
 >Opções adicionais para mensagem de notificação estão disponíveis somente com a configuração da API HTTP v1. Para obter mais informações, consulte esta [seção](../../delivery/using/configuring-the-mobile-application-android.md#android-service-httpv1).
 
-![](assets/do-not-localize/how-to-video.png) [Saiba como criar uma notificação por push do Android em vídeo](https://experienceleague.adobe.com/docs/campaign-classic-learn/getting-started-with-push-notifications-for-android/configuring-and-sending-push-notifications.html?lang=en#additional-resources)
+![](assets/do-not-localize/how-to-video.png) [Saiba como criar uma notificação por push para Android em vídeo](https://experienceleague.adobe.com/docs/campaign-classic-learn/getting-started-with-push-notifications-for-android/configuring-and-sending-push-notifications.html?lang=pt-BR#additional-resources)
 
 1. Vá até **[!UICONTROL Campaign management]** > **[!UICONTROL Deliveries]**.
 
