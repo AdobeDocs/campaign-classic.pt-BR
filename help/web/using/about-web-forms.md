@@ -15,7 +15,7 @@ ht-degree: 93%
 ---
 
 
-# Get started with web forms{#about-web-forms}
+# Introdução aos formulários da Web{#about-web-forms}
 
 O Adobe Campaign integra um módulo gráfico para definir e publicar formulários web a fim de criar páginas contendo campos de entrada e seleção e que possam incluir dados no banco de dados. Isso permite a criação e publicação de páginas da Web onde os usuários podem visualizar ou inserir informações.
 
