@@ -6,9 +6,9 @@ description: Saiba mais sobre a atividade de workflow de desduplicação
 audience: workflow
 content-type: reference
 topic-tags: targeting-activities
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '733'
 ht-degree: 100%
 
@@ -47,6 +47,7 @@ Clique no link **[!UICONTROL Edit configuration...]** para definir o modo de des
    >[!NOTE]
    >
    >Se os dados externos estiverem sendo usados como entrada, por exemplo, de um arquivo externo, selecione a opção **[!UICONTROL Temporary schema]**.
+
    >
    >Na próxima etapa, a opção **[!UICONTROL Other]** permite selecionar o critério ou os critérios a serem usados:
 
