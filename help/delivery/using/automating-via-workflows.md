@@ -6,11 +6,11 @@ description: Automatização via workflows
 audience: delivery
 content-type: reference
 topic-tags: content-management
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1188'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -270,7 +270,7 @@ Um formulário de entrada de controle de edição de atualização semiautomáti
 </input>
 ```
 
-A zona de edição permite a inserção do nome do arquivo a ser recuperado. O URL é construído com base nesse nome, por exemplo: https://myserver.adobe.com/incomin/data.xml
+A zona de edição permite a inserção do nome do arquivo a ser recuperado. O URL é construído com base neste nome, por exemplo: https://myserver.adobe.com/incomin/data.xml
 
 O formato dos dados a serem recuperados é o mesmo do exemplo 1 da automação do workflow. Usaremos a folha de estilos &quot;cus:book-workflow.xsl&quot; vista neste exemplo.
 
