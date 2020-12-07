@@ -10,7 +10,7 @@ translation-type: tm+mt
 source-git-commit: 20dcdd91d71158bc373db68c3f61f6808b240bd2
 workflow-type: tm+mt
 source-wordcount: '221'
-ht-degree: 92%
+ht-degree: 95%
 
 ---
 
@@ -52,5 +52,5 @@ Este vídeo explica como configurar um delivery recorrente e uma atividade de sc
 
 >[!VIDEO](https://video.tv.adobe.com/v/25040?quality=12)
 
-Vídeos de instruções adicionais do Campaign Classic estão disponíveis [aqui](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html).
+Vídeos de procedimentos de Campaign Classic adicionais estão disponíveis [aqui](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html?lang=pt-BR).
 
