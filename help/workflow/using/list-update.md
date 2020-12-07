@@ -10,7 +10,7 @@ translation-type: tm+mt
 source-git-commit: 49f3c123cb8e91b3a2a2a1eb6bd593a242b8bbfe
 workflow-type: tm+mt
 source-wordcount: '465'
-ht-degree: 90%
+ht-degree: 92%
 
 ---
 
@@ -75,4 +75,4 @@ Este vídeo mostra como criar uma lista de recipient a partir do Explorer.
 
 >[!VIDEO](https://video.tv.adobe.com/v/25602/quality=12)
 
-Vídeos de instruções adicionais do Campaign Classic estão disponíveis [aqui](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html).
+Vídeos de procedimentos de Campaign Classic adicionais estão disponíveis [aqui](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html?lang=pt-BR).
