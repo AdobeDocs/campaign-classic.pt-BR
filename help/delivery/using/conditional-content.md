@@ -10,7 +10,7 @@ translation-type: tm+mt
 source-git-commit: 20dcdd91d71158bc373db68c3f61f6808b240bd2
 workflow-type: tm+mt
 source-wordcount: '478'
-ht-degree: 96%
+ht-degree: 97%
 
 ---
 
@@ -115,4 +115,4 @@ Saiba como adicionar conteúdo condicional a um delivery no exemplo de um inform
 
 >[!VIDEO](https://video.tv.adobe.com/v/24926?quality=12)
 
-Vídeos de instruções adicionais do Campaign Classic estão disponíveis [aqui](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html).
+Vídeos de procedimentos de Campaign Classic adicionais estão disponíveis [aqui](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html?lang=pt-BR).
