@@ -10,26 +10,26 @@ translation-type: tm+mt
 source-git-commit: 8ff5450cc35153e61048c2671f6d52fbc5ffc5b9
 workflow-type: tm+mt
 source-wordcount: '891'
-ht-degree: 92%
+ht-degree: 100%
 
 ---
 
 
 # Gerenciamento de privacidade {#privacy-management}
 
-A Adobe Campaign oferta um conjunto de ferramentas para ajudá-lo a cumprir [as regras de privacidade](#privacy-management-regulations) (incluindo o RGPD, CCPA, PDPA, LGPD).
+O Adobe Campaign oferece um conjunto de ferramentas para ajudar você a cumprir as [regras de privacidade](#privacy-management-regulations) (inclusive GDPR, CCPA, PDPA, LGPD).
 
-Estes são os cinco principais recursos oferecidos pela Adobe Campaign para garantir o RGPD e outras regulamentações de privacidade prontas:
+Estes são os cinco principais recursos oferecidos pelo Adobe Campaign para garantir a conformidade com o GDPR e outras regulamentações de privacidade:
 
 ![](assets/privacy-gdpr-use-cases.png)
 
 * **Direito de acesso**
 
-* **Direito de excluir**
+* **Direito à exclusão**
 
-Para obter mais informações, consulte [Direito de acesso e direito de ser esquecido](#right-access-forgotten).
+Para obter mais informações, consulte [Direito de acesso e direito ao esquecimento](#right-access-forgotten).
 
-* **Gerenciamento de consentimento**
+* **Gestão do consentimento** 
 
 * **Retenção de dados**
 
