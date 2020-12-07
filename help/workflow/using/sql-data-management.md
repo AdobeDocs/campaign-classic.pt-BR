@@ -6,11 +6,11 @@ description: Saiba mais sobre a atividade do workflow de Gestão de dados SQL
 audience: workflow
 content-type: reference
 topic-tags: action-activities
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '394'
-ht-degree: 93%
+ht-degree: 100%
 
 ---
 
@@ -23,8 +23,8 @@ A atividade de **Gestão de Dados SQL** permite escrever seus próprios scripts 
 
 Antes de configurar a atividade, verifique se os pré-requisitos a seguir estão sendo cumpridos:
 
-* A atividade está disponível somente para fontes de dados remotas. The **[!UICONTROL FDA]** (Federated Data Access) package must therefore be installed on your instance. [Saiba mais](../../installation/using/about-fda.md).
-* O schema de saída deve existir no banco de dados e estar vinculado a um banco de dados FDA. [Saiba mais](../../configuration/using/about-schema-reference.md).
+* A atividade está disponível somente para fontes de dados remotas. O pacote **[!UICONTROL FDA]** (Federated Data Access) deve, portanto, ser instalado em sua instância. [Saiba mais](../../installation/using/about-fda.md).
+* O esquema de saída deve existir no banco de dados e estar vinculado a um banco de dados do FDA. [Saiba mais](../../configuration/using/about-schema-reference.md).
 * O operador que executa o fluxo de trabalho deve ter o item **[!UICONTROL USE SQL DATA MANAGEMENT ACTIVITY (useSqlDmActivity)]** nomeado corretamente. [Saiba mais](../../platform/using/access-management.md#named-rights).
 
 ## Configurando a atividade de gestão de dados SQL {#configuring-the-sql-data-management-activity}
