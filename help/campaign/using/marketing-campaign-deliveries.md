@@ -463,4 +463,4 @@ Este vídeo explica como criar uma campanha e um email no Adobe Campaign Classic
 
 >[!VIDEO](https://video.tv.adobe.com/v/25604?quality=12)
 
-Vídeos de instruções adicionais do Campaign Classic estão disponíveis [aqui](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html).
+Vídeos de procedimentos de Campaign Classic adicionais estão disponíveis [aqui](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html?lang=pt-BR).
