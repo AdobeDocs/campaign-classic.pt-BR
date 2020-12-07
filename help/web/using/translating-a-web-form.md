@@ -105,7 +105,7 @@ Para exibir somente strings não traduzidas, selecione **[!UICONTROL To translat
 
 ### Exportação de arquivos {#exporting-files}
 
-1. Select the Web application(s) whose strings you want to export, right-click, then select **[!UICONTROL Actions > Export strings for translation...]**
+1. Selecione as Aplicações web cujas strings você deseja exportar, clique com o botão direito do mouse e selecione **[!UICONTROL Actions > Export strings for translation...]**
 
    ![](assets/s_ncs_admin_survey_trad_export.png)
 
