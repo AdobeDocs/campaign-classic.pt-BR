@@ -2,15 +2,15 @@
 solution: Campaign Classic
 product: campaign
 title: Noções básicas sobre falhas de delivery
-description: Saiba como entender as falhas de delivery
+description: Entenda as falhas de delivery
 audience: delivery
 content-type: reference
 topic-tags: monitoring-deliveries
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2440'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -297,7 +297,7 @@ O servidor de mensagens de Adobe Campaign aplica uma única regra de **gerenciam
 * Você pode escolher se ativa ou não determinados padrões de identificação e chaves de criptografia para verificar o nome do domínio, como **ID do remetente**, **DomainKeys**, **DKIM**, e **S/MIME**.
 * Os parâmetros de **retransmissão SMTP** permitem configurar o endereço IP e a porta de um servidor de retransmissão para um determinado domínio. Para obter mais informações, consulte [esta seção](../../installation/using/configuring-campaign-server.md#smtp-relay).
 
-Se suas mensagens forem exibidas no Outlook com **[!UICONTROL on behalf of]** no endereço do remetente, verifique se não está assinando seus emails com a **ID  do remetente**, que é o padrão de autenticação de email proprietário desatualizado da Microsoft. Se a opção **[!UICONTROL Sender ID]** estiver ativada, desmarque a caixa correspondente e entre em contato com o suporte do Adobe Campaign. Sua capacidade de entrega não será afetada.
+Se suas mensagens forem exibidas no Outlook com **[!UICONTROL on behalf of]** no endereço do remetente, verifique se não está assinando seus emails com a **ID do remetente**, que é o padrão de autenticação de email proprietário desatualizado da Microsoft. Se a opção **[!UICONTROL Sender ID]** estiver ativada, desmarque a caixa correspondente e entre em contato com o suporte do Adobe Campaign. Sua capacidade de entrega não será afetada.
 
 >[!IMPORTANT]
 >
