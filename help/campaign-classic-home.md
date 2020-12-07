@@ -4,11 +4,11 @@ solution: Campaign Classic
 product: campaign
 title: Documentação do produto Adobe Campaign Classic
 topic: Premium
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '250'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
@@ -22,7 +22,7 @@ ht-degree: 95%
 * **[Atualizar a integração dos acionadores da Adobe Experience Cloud](integrations/using/configuring-adobe-io.md)**<br/> O serviço de autenticação herdado oAuth chegou ao fim da vida útil. Saiba como migrar para o Adobe I/O
 
 * **[Mover para a API do provedor APNs com base em HTTP/2](https://helpx.adobe.com/br/campaign/kb/migrate-to-apns-http2.html)**<br/>
-Saiba como migrar do protocolo binário herdado para a API do provedor APNs com base em HTTP/2
+Saiba como migrar do protocolo binário legado para a API do provedor APNs com base em HTTP/2
 
 * **[Adicionar emoticons às suas mensagens](delivery/using/defining-the-email-content.md#inserting-emoticons)**<br/>
 Agora você pode inserir emoticons em mensagens e linhas de assunto
@@ -86,9 +86,9 @@ Entenda os recursos de rastreamento no Campaign.
 | Páginas úteis | Recursos para desenvolvedores |
 |---|---|
 | [Notas de versão](/help/rn/using/latest-release.md) | [Lista de mensagens de erro](https://docs.adobe.com/content/help/en/campaign-classic/technicalresources/error_messages/error_codes.html) |
-| [Vídeos explicativos](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html) | [Modelo de dados do Campaign](configuration/using/about-data-model.md) |
+| [Vídeos explicativos](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html?lang=pt-BR) | [Modelo de dados do Campaign](configuration/using/about-data-model.md) |
 | [Matriz de compatibilidade](rn/using/compatibility-matrix.md) | [JSAPI do Campaign](https://docs.adobe.com/content/help/en/campaign-classic/technicalresources/api/p-1.html) |
 | [Introdução ao Campaign](platform/using/about-adobe-campaign-classic.md) | [Guia de implementação](https://helpx.adobe.com/br/campaign/kb/acc-implementation.html) |
 | [Atualização do Gold Standard ](https://helpx.adobe.com/br/campaign/kb/gold-standard.html) | [Guia de rastreamento](https://helpx.adobe.com/br/campaign/kb/acc-tracking.html) |
 | [Recursos obsoletos](rn/using/deprecated-features.md) | [Lista de verificação de segurança e privacidade](https://helpx.adobe.com/br/campaign/kb/acc-security.html) |
-| [Painel de controle do Campaign](https://experienceleague.adobe.com/docs/control-panel/using/control-panel-home.html) | [Orientações de monitoramento](production/using/monitoring-guidelines.md) |
+| [Painel de controle do Campaign](https://experienceleague.adobe.com/docs/control-panel/using/control-panel-home.html?lang=pt-BR) | [Orientações de monitoramento](production/using/monitoring-guidelines.md) |
