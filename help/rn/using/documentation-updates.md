@@ -6,11 +6,11 @@ description: Esta página lista todos os novos recursos e atualizações de docu
 audience: rns
 content-type: reference
 topic-tags: latest-documentation-updates
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 9d595f41dd2b0cbf042ab768ae5897cc5ac240bb
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '3631'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -23,23 +23,23 @@ Você também pode consultar as [Notas de versão do Adobe Campaign Classic](../
 
 ## Novembro de 2020 {#nov-2020}
 
-A visão geral do modelo de dados de campanha foi aprimorada e reorganizada. [Leia mais](../../configuration/using/about-data-model.md).
+A visão geral do modelo de dados do Campaign foi aprimorada e reorganizada. [Leia mais](../../configuration/using/about-data-model.md).
 
 A configuração da conta externa foi movida para [esta seção](../../installation/using/external-accounts.md).
 
-A documentação de Federated Data Acces de campanha (FDA) de foi aprimorada com detalhes para cada configuração de banco de dados externo e movida para [esta seção](../../installation/using/about-fda.md).
+A documentação do Federated Data Acces (FDA) do Campaign foi aprimorada com detalhes para cada configuração de banco de dados externo e foi movida para [esta seção](../../installation/using/about-fda.md).
 
 A [versão 20.2.3 do Campaign](../../rn/using/release--20-2.md#release-20-2-3-build-9182) foi movida para Disponibilidade Geral (GA).
 
-The Privacy section has been moved and enriched with two new pages: [Privacy management](../../platform/using/privacy-management.md) and [Managing privacy requests](../../platform/using/privacy-requests.md).
+A seção Privacidade foi movida e aprimorada com duas novas seções: [Gerenciamento de privacidade](../../platform/using/privacy-management.md) e [Gerenciamento de solicitações de privacidade](../../platform/using/privacy-requests.md).
 
 Foi adicionada uma observação na página de configuração do servidor mid-sourcing para especificar que o nome interno da conta externa não deve ser atualizado depois que o servidor for configurado. [Leia mais](../../installation/using/mid-sourcing-server.md)
 
 Foram adicionadas informações sobre a sintaxe a ser usada ao especificar um caminho para um servidor SFTP externo. [Leia mais](../../platform/using/sftp-server-usage.md#external-SFTP-server)
 
-A seção Dados pessoais e personas foi atualizada com um cenário de caso de uso para ilustrar como as diferentes pessoas estão interagindo no que diz respeito à privacidade. [Leia mais](../../platform/using/privacy-and-recommendations.md#use-case-scenario)
+A seção Dados pessoais e personalidades foi atualizada com um cenário de caso de uso para ilustrar como as diferentes personalidades estão interagindo no que diz respeito à privacidade. [Leia mais](../../platform/using/privacy-and-recommendations.md#use-case-scenario)
 
-Uma nova seção que lista Perguntas frequentes sobre privacidade foi adicionada. [Leia mais](../../platform/using/privacy-faq.md)
+Foi adicionada uma nova seção que lista perguntas frequentes sobre privacidade. [Leia mais](../../platform/using/privacy-faq.md)
 
 ## Outubro de 2020 {#oct-2020}
 
@@ -420,7 +420,7 @@ O artigo de práticas recomendadas do pacote de dados foi atualizado. [Leia mais
 
 A documentação de gerenciamento de ofertas foi atualizada com uma nova seção que lista as práticas recomendadas. [Leia mais](../../interaction/using/interaction-best-practices.md)
 
-Um novo artigo da knowledge base sobre como usar o catálogo de oferta no Adobe Campaign Classic foi criado. [Leia mais](https://helpx.adobe.com/br/campaign/kb/offer-best-practices.html)
+Um novo artigo da knowledge base sobre como usar o catálogo de oferta no Adobe Campaign Classic foi criado. [Leia mais](https://helpx.adobe.com/campaign/kb/offer-best-practices.html)
 
 A seção Sub-workflow activity foi aprimorada com um exemplo de uso. [Leia mais](../../workflow/using/sub-workflow.md)
 
@@ -475,7 +475,7 @@ A seção [Email archiving](../../installation/using/email-archiving.md) foi mov
 
 * Foram adicionadas as práticas recomendadas relacionadas aos emails por conexão e aos parâmetros de IPs de envio com Cco.
 
-* Atualizamos as etapas para atualizar para o novo sistema de arquivamento de emails (Cco) se você já estava usando o arquivamento de emails com uma build mais antiga (antes do Adobe Campaign 17.2 - build 8795).
+* Atualizamos as etapas para migrar para o novo sistema de arquivamento de emails (Cco) se você já estava usando o arquivamento de emails com uma build mais antiga (antes do Adobe Campaign 17.2 - build 8795).
 
 Um caso de uso foi adicionado ao guia de Automatização com workflows: enviar alertas personalizados para operadores. [Leia mais](../../workflow/using/sending-personalized-alerts-to-operators.md)
 
