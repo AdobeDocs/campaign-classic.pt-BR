@@ -10,7 +10,7 @@ translation-type: tm+mt
 source-git-commit: cea4a26935312b1cb119a3fa671af7bf00788fe9
 workflow-type: tm+mt
 source-wordcount: '1263'
-ht-degree: 95%
+ht-degree: 96%
 
 ---
 
@@ -19,7 +19,7 @@ ht-degree: 95%
 
 As campanhas incluem ações (deliveries) e processos (importação ou extração de arquivos), além de recursos (documentos de marketing e delivery outlines). Eles são usados em campanhas de marketing. As campanhas são parte de um programa, e os programas estão incluídos em um plano de campanha.
 
-![](assets/do-not-localize/how-to-video.png) Descubra como criar um plano de marketing, programas e campanhas [em vídeo](#video)
+![](assets/do-not-localize/how-to-video.png) Descubra como criar um plano de marketing, programas e campanhas  [em vídeo](#video)
 
 Para criar uma campanha de marketing:
 
@@ -47,7 +47,7 @@ Para criar uma campanha de marketing:
 
    Consulte [Criação de provedores de serviços e suas estruturas de custo](../../campaign/using/providers--stocks-and-budgets.md#creating-service-providers-and-their-cost-structures).
 
-Quando essas etapas forem concluídas, será possível iniciar os deliveries (consulte [Iniciando um delivery](../../campaign/using/marketing-campaign-deliveries.md#starting-a-delivery)), verificar os dados, processos e informações relacionados aos deliveries e, se necessário, gerenciar os documentos associados (consulte [Gerenciamento de documentos associados](../../campaign/using/marketing-campaign-deliveries.md#managing-associated-documents)). You can also track the execution of the processing phases of campaigns and deliveries (see [Tracking](../../campaign/using/marketing-campaign-monitoring.md)).
+Quando essas etapas forem concluídas, será possível iniciar os deliveries (consulte [Iniciando um delivery](../../campaign/using/marketing-campaign-deliveries.md#starting-a-delivery)), verificar os dados, processos e informações relacionados aos deliveries e, se necessário, gerenciar os documentos associados (consulte [Gerenciamento de documentos associados](../../campaign/using/marketing-campaign-deliveries.md#managing-associated-documents)). Você também pode rastrear a execução das fases de processamento de campanhas e delivery (consulte [Rastreamento](../../campaign/using/marketing-campaign-monitoring.md)).
 
 ## Criação de plano e programa de hierarquia {#creating-plan-and-program-hierarchy}
 
@@ -239,4 +239,4 @@ Este vídeo mostra como criar um plano de marketing, programas e campanhas.
 
 >[!VIDEO](https://video.tv.adobe.com/v/35132?quality=12)
 
-Vídeos de instruções adicionais do Campaign Classic estão disponíveis [aqui](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html).
+Vídeos de procedimentos de Campaign Classic adicionais estão disponíveis [aqui](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html?lang=pt-BR).
