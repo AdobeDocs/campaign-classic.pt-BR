@@ -6,9 +6,9 @@ description: Esta seção fornece informações gerais específicas para o canal
 audience: delivery
 content-type: reference
 topic-tags: sending-push-notifications
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '753'
 ht-degree: 100%
 
@@ -92,7 +92,7 @@ O servidor do Adobe Campaign deve ser capaz de entrar em contato com o servidor 
 
    >[!NOTE]
    >
-   > A partir da versão 20.3 do Campaign, o conector binário herdado do iOS se tornará obsoleto. Se estiver usando este conector, precisará adaptar sua implementação adequadamente. [Saiba mais](https://helpx.adobe.com/br/campaign/kb/migrate-to-apns-http2.html)
+   > A partir da versão 20.3 do Campaign, o conector binário herdado do iOS se tornará obsoleto. Se estiver usando este conector, precisará adaptar sua implementação adequadamente. [Saiba mais](https://helpx.adobe.com/campaign/kb/migrate-to-apns-http2.html)
 
 Para verificar se funciona corretamente, use os seguintes comandos:
 
