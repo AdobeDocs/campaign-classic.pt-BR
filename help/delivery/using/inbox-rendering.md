@@ -6,9 +6,9 @@ description: Saiba como capturar renderizações de email e disponibilizá-las e
 audience: delivery
 content-type: reference
 topic-tags: deliverability-management
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '813'
 ht-degree: 100%
 
@@ -84,6 +84,7 @@ Cada vez que você usa o recurso **[!UICONTROL Inbox rendering]** em um delivery
 >
 >* Cada vez que o relatório de renderização da Caixa de Entrada é gerado, é deduzido um token por cliente da mensagem: um token para a renderização do Outlook 2000, um para a renderização do Outlook 2010, um para a renderização do Apple Mail 9 e assim por diante.
 >* Para o mesmo delivery, se você gerar a renderização da Caixa de Entrada novamente, o número de tokens disponíveis será reduzido novamente pelo número de renderizações geradas.
+
 >
 
 
