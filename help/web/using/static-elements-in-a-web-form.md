@@ -17,7 +17,7 @@ ht-degree: 94%
 
 # Elementos estáticos em um formulário web{#static-elements-in-a-web-form}
 
-É possível incluir elementos com os quais o usuário não tem nenhuma interação nas páginas do formulário; esses elementos são elementos estáticos, como imagens, conteúdo HTML, uma barra horizontal ou um link de hipertexto. These elements are created via the first button in the toolbar, by selecting **[!UICONTROL Static elements]**.
+É possível incluir elementos com os quais o usuário não tem nenhuma interação nas páginas do formulário; esses elementos são elementos estáticos, como imagens, conteúdo HTML, uma barra horizontal ou um link de hipertexto. Esses elementos são criados pelo primeiro botão na barra de ferramentas, selecionando **[!UICONTROL Static elements]**.
 
 ![](assets/s_ncs_admin_survey_add_static_element.png)
 
@@ -174,7 +174,7 @@ Use campos de personalização para reinjetar o nome de usuário e marca selecio
 
 >[!NOTE]
 >
->For security reasons, the value entered in the **`<%=`** formula is replaced with escaped characters.
+>Por motivos de segurança, o valor inserido na fórmula **`<%=`** é substituído por caracteres de escape.
 
 No nosso exemplo, o nome e o sobrenome do recipient são armazenados em um campo do banco de dados, enquanto a marca do carro é armazenada em uma variável. A sintaxe da mensagem personalizada na página 2 será a seguinte:
 
@@ -210,7 +210,7 @@ Por exemplo, você pode criar um campo **Contato** que permitirá exibir a cadei
 
    >[!CAUTION]
    >
-   >If you enter these characters in the HTML editor, the **&lt;** and **>** fields will be replaced with their escaped characters. Nesse caso, você precisa corrigir o código-fonte clicando no ícone **[!UICONTROL Display source code]** do editor de texto HTML.
+   >Se você inserir esses caracteres no editor HTML, os campos **&lt;** e **** serão substituídos pelos caracteres de escape. Nesse caso, você precisa corrigir o código-fonte clicando no ícone **[!UICONTROL Display source code]** do editor de texto HTML.
 
 1. Abra o rótulo **[!UICONTROL Preview]** do formulário para exibir o valor inserido no HTML:
 
@@ -222,7 +222,7 @@ Esse modo operacional permite que você defina o texto dos Formulários web apen
 
 Para que as imagens sejam incluídas em formulários, elas devem ser salvas em um servidor acessível de fora.
 
-Select the **[!UICONTROL Static elements]** > **[!UICONTROL Image]** menu.
+Selecione o menu **[!UICONTROL Static elements]** > **[!UICONTROL Image]**.
 
 Selecione a fonte da imagem a ser inserida: ela pode vir da biblioteca de recurso público ou ser armazenada em um servidor externo acessível de fora.
 
