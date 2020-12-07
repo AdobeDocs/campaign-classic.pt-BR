@@ -2,15 +2,15 @@
 solution: Campaign Classic
 product: campaign
 title: Sobre workflows técnicos
-description: Lista workflows técnicos campanhas
+description: Lista de workflows técnicos do Campaign
 audience: workflow
 content-type: reference
 topic-tags: technical-workflows
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '137'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
