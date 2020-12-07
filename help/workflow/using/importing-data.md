@@ -10,7 +10,7 @@ translation-type: tm+mt
 source-git-commit: 49f3c123cb8e91b3a2a2a1eb6bd593a242b8bbfe
 workflow-type: tm+mt
 source-wordcount: '2476'
-ht-degree: 98%
+ht-degree: 99%
 
 ---
 
@@ -261,7 +261,7 @@ Nesse caso de uso, criaremos um workflow para importar dados que foram criptogra
 
 As etapas para executar esse caso de uso são as seguintes:
 
-1. Use o Painel de controle do Campaign para gerar um par de chaves (público/privado). As etapas detalhadas estão disponíveis na [documentação do Painel de controle do Campaign](https://docs.adobe.com/content/help/pt-BR/control-panel/using/instances-settings/gpg-keys-management.html#decrypting-data).
+1. Use o Painel de controle do Campaign para gerar um par de chaves (público/privado). As etapas detalhadas estão disponíveis na [documentação do Painel de controle do Campaign](https://docs.adobe.com/content/help/en/control-panel/using/instances-settings/gpg-keys-management.html#decrypting-data).
 
    * A chave pública será compartilhada com o sistema externo, que a usará para criptografar os dados que serão enviados para o Campaign.
    * A chave privada será usada pelo Campaign Classic para descriptografar os dados criptografados recebidos.
@@ -309,4 +309,4 @@ Este vídeo mostra como usar uma chave GPG para descriptografar dados.
 
 >[!VIDEO](https://video.tv.adobe.com/v/36482?quality=12)
 
-Vídeos de instruções adicionais do Campaign Classic estão disponíveis [aqui](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html).
+Vídeos de procedimentos de Campaign Classic adicionais estão disponíveis [aqui](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html?lang=pt-BR).
