@@ -12,7 +12,7 @@ translation-type: tm+mt
 source-git-commit: e76eb171aac1f7088ff8647f99c928ec349b24fc
 workflow-type: tm+mt
 source-wordcount: '2179'
-ht-degree: 97%
+ht-degree: 98%
 
 ---
 
@@ -163,7 +163,7 @@ ht-degree: 97%
       + [Acessando os logs de rastreamento](delivery/using/accessing-the-tracking-logs.md)
       + [Testar o rastreamento](delivery/using/testing-tracking.md)
    + Gerenciamento de deliverability {#deliverability-management}
-      + [Sobre a entregabilidade](delivery/using/about-deliverability.md)
+      + [Sobre a capacidade de delivery](delivery/using/about-deliverability.md)
       + [Pontos principais a serem verificados](delivery/using/deliverability-key-points.md)
       + [Início de uma nova plataforma](delivery/using/starting-new-platform.md)
       + [Controle do conteúdo da mensagem](delivery/using/control-message-content.md)
@@ -626,11 +626,11 @@ ht-degree: 97%
       + [Interação - buffer de dados](installation/using/interaction---data-buffer.md)
       + [Configuração de contas externas](installation/using/external-accounts.md)
    + Acesso a um banco de dados externo {#accessing-external-database}
-      + [Introdução ao FDA](installation/using/about-fda.md)
+      + [Introdução a FDA](installation/using/about-fda.md)
       + Diretrizes de configuração {#config-databases}
          + [Etapas de configuração](installation/using/configure-fda.md)
          + [Configurar Snowflake](installation/using/configure-fda-snowflake.md)
-         + [Configurar Azure synapse](installation/using/configure-fda-synapse.md)
+         + [Configurar Azure Synapse](installation/using/configure-fda-synapse.md)
          + [Configurar Hadoop](installation/using/configure-fda-hadoop.md)
          + [Configurar Oracle](installation/using/configure-fda-oracle.md)
          + [Configurar Netezza](installation/using/configure-fda-netezza.md)
