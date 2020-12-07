@@ -2,15 +2,15 @@
 solution: Campaign Classic
 product: campaign
 title: Configuração da integração de públicos compartilhados no Adobe Campaign
-description: Saiba como configurar a integração do audiência compartilhada
+description: Saiba como configurar a integração de públicos compartilhada
 audience: integrations
 content-type: reference
 topic-tags: audience-sharing
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '484'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
