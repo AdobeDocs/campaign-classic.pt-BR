@@ -62,7 +62,7 @@ No local: atualização 1 de 2016, 2016</li>
   <td>Binário herdado do iOS<br></td>
   <td><p>A partir da versão 20.3 do Campaign, o conector binário herdado do iOS se tornará obsoleto.<p>
   <p> Se estiver usando este conector, precisará adaptar sua implementação adequadamente.
-  <a href="https://helpx.adobe.com/br/campaign/kb/migrate-to-apns-http2.html">Saiba mais</a></p>
+  <a href="https://helpx.adobe.com/campaign/kb/migrate-to-apns-http2.html">Saiba mais</a></p>
   <p><em>Data de remoção do Target: abril de 2021</em></p>
   </td>
  </tr>
@@ -132,7 +132,7 @@ Esta seção lista os recursos e funcionalidades removidos do Campaign Classic.
    <td>A partir da versão 19.1 do Campaign, as APIs do Campaign Classic estarão disponíveis em uma página dedicada. Se estiver usando o arquivo jsapi.chm legado, agora deverá consultar a <a href="https://docs.adobe.com/content/help/en/campaign-classic/technicalresources/api/index.html">nova versão online</a>.</td>
   </tr> 
   <tr> 
-   <td>Orquestração de campanha         - Marketing preditivo</td>
+   <td>Orquestração de campanha          - Marketing preditivo</td>
    <td>A partir da versão 18.10 do Campaign, os recursos de marketing preditivo não estarão mais disponíveis.</td>
   </tr> 
   <tr> 
