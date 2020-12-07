@@ -10,7 +10,7 @@ translation-type: tm+mt
 source-git-commit: cea4a26935312b1cb119a3fa671af7bf00788fe9
 workflow-type: tm+mt
 source-wordcount: '1579'
-ht-degree: 98%
+ht-degree: 99%
 
 ---
 
@@ -237,4 +237,4 @@ Este vídeo mostra como adicionar seeds e provas a um email existente e o proced
 
 >[!VIDEO](https://video.tv.adobe.com/v/25606?quality=12)
 
-Vídeos de instruções adicionais do Campaign Classic estão disponíveis [aqui](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html).
+Vídeos de procedimentos de Campaign Classic adicionais estão disponíveis [aqui](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html?lang=pt-BR).
