@@ -6,11 +6,11 @@ description: Saiba como gerenciar solicitações de privacidade
 audience: platform
 content-type: reference
 topic-tags: starting-with-adobe-campaign
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2444'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -79,7 +79,7 @@ Antes de criar solicitações de privacidade, é necessário definir o namespace
 
 Três namespaces estão disponíveis para pronta utilização: email, telefone fixo e celular. Se você precisar de um namespace diferente (um campo personalizado de recipient, por exemplo), poderá criar um novo em **[!UICONTROL Administration]** > **[!UICONTROL Platform]** > **[!UICONTROL Namespaces]**.
 
-## Creating a Privacy request {#create-privacy-request-ui}
+## Criação de uma solicitação de acesso a dados pessoais {#create-privacy-request-ui}
 
 A **interface do Adobe Campaign** permite criar solicitações de privacidade e acompanhar a evolução. Para criar uma nova solicitação de privacidade, siga estas instruções:
 
@@ -126,7 +126,7 @@ Se você criou tabelas personalizadas que tenham um link para a tabela do recipi
 >Se você executar solicitações de privacidade em lote usando workflows de exclusão de perfis, considere as seguintes observações:
 >* A exclusão de perfis por meio de workflows não processa tabelas secundárias.
 >* Você precisa lidar com a exclusão de todas as tabelas secundárias.
->* Adobe recommends that you create an ETL workflow that add the lines to delete in the Privacy Access table and let the **[!UICONTROL Delete privacy requests data]** workflow perform the deletion. Por motivos de desempenho, sugerimos que sejam limitadas a 200 perfis por dia.
+>* A Adobe recomenda a criação de um workflow ETL que adicione as linhas que serão excluídas na tabela Acesso de privacidade e permita que o workflow **[!UICONTROL Delete privacy requests data]** execute a exclusão. Por motivos de desempenho, sugerimos que sejam limitadas a 200 perfis por dia.
 
 
 ### Status de solicitação de privacidade {#privacy-request-statuses}
@@ -251,7 +251,7 @@ A API JS **[!UICONTROL CreateRequestByName]** é definida da seguinte maneira.
 >
 >Se você estiver migrando para a versão 20.2 e já estiver usando a API, precisará adicionar o campo &quot;regulation&quot;, como mostrado acima. Se você estiver usando uma build anterior, poderá continuar a usar a API sem o campo &quot;regulation&quot;.
 
-### Chamada de API externamente  {#invoking-api-externally}
+### Chamada de API externamente   {#invoking-api-externally}
 
 Este é um exemplo de como chamar a API externamente (autenticação por meio da API e detalhes específicos sobre a API de privacidade). Para obter mais informações sobre a API de privacidade, consulte a [documentação da API](https://docs.adobe.com/content/help/en/campaign-classic/technicalresources/api/s-nms-privacyRequest.html). Você também pode consultar a [documentação de chamadas de serviço da web](../../configuration/using/web-service-calls.md).
 
