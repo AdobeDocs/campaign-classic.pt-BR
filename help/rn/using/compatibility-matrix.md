@@ -6,11 +6,11 @@ description: Matriz de compatibilidade do Campaign Classic
 audience: rns
 content-type: reference
 topic-tags: latest-release-notes
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: ff3d18b104a8dba7cd813aa698f9c27b4e25e244
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '537'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -134,7 +134,7 @@ Para saber mais sobre itens obsoletos, visite [esta página](../../rn/using/depr
 <p>19c</p>
 <p>18c</p>
 <p>12c</p>
-<p>11g      R2</p>
+<p>11g       R2</p>
 </td>
 </tr>
 <tr>
