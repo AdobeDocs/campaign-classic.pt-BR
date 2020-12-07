@@ -15,9 +15,9 @@ ht-degree: 5%
 ---
 
 
-# Introdução ao editor HTML da Campanha{#about-campaign-html-editor}
+# Introdução ao editor HTML de Campanha{#about-campaign-html-editor}
 
-The **Digital Content Editor (DCE)** is an HTML content editor that lets you easily create content and templates in HTML format within Adobe Campaign.
+O  **Editor de conteúdo digital (DCE)** é um editor de conteúdo HTML que permite criar facilmente conteúdo e modelos em formato HTML no Adobe Campaign.
 
 Com o Editor de conteúdo digital, você pode inserir e formatar elementos de página e mapear campos de banco de dados com elementos de uma página HTML. Esse editor está disponível ao criar uma página para um aplicativo da Web ou ao criar delivery com base em um modelo de DCE.
 
@@ -35,22 +35,22 @@ A operação geral é a seguinte:
 
 ![](assets/dce_schema.png)
 
-Para criar um aplicativo **** da Web simples, é necessário:
+Para criar um **aplicativo da Web** simples, é necessário:
 
 1. Criar um aplicativo da Web - [Saiba mais](../../web/using/creating-a-landing-page.md)
-1. Select existing content or creating content from a standard template - [Learn more](../../web/using/template-management.md)
+1. Selecione o conteúdo existente ou crie o conteúdo a partir de um modelo padrão - [Saiba mais](../../web/using/template-management.md)
 1. Editar e configurar conteúdo - [Saiba mais](../../web/using/editing-content.md)
 1. Publicar a Aplicação web - [Saiba mais](../../web/using/creating-a-landing-page.md#step-3---publishing-content)
 
 >[!NOTE]
-Uma amostra completa de implementação no contexto de um aplicativo da Web está disponível [nesta seção](../../web/using/creating-a-landing-page.md).
+Uma amostra completa de implementação no contexto de um aplicativo da Web está disponível em [esta seção](../../web/using/creating-a-landing-page.md).
 
-Para criar um delivery **de** email, é necessário:
+Para criar um **delivery de email**, é necessário:
 
-1. Criar um delivery a partir de um modelo de DCE - [Saiba mais](../../web/using/use-case--creating-an-email-delivery.md)
-1. Select an existing content or create content from a [standard template](../../web/using/template-management.md)
+1. Criar um delivery a partir de um modelo DCE - [Saiba mais](../../web/using/use-case--creating-an-email-delivery.md)
+1. Selecione um conteúdo existente ou crie conteúdo a partir de um [modelo padrão](../../web/using/template-management.md)
 1. Edite e configure conteúdo online
 1. Enviar o delivery - [Saiba mais](../../delivery/using/steps-about-delivery-creation-steps.md)
 
 >[!NOTE]
-Um exemplo completo de implementação no contexto de um delivery de email está disponível [neste caso](../../web/using/use-case--creating-an-email-delivery.md)de uso.
+Uma amostra completa de implementação no contexto de um delivery de email está disponível em [caso de uso](../../web/using/use-case--creating-an-email-delivery.md).
