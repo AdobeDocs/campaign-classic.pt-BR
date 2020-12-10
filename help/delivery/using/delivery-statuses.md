@@ -1,0 +1,143 @@
+---
+solution: Campaign Classic
+product: campaign
+title: Status de delivery
+description: Saiba mais sobre os status disponíveis no painel do delivery.
+audience: delivery
+content-type: reference
+topic-tags: monitoring-deliveries
+translation-type: tm+mt
+source-git-commit: de0e4555d3e2c5dff8d86a22ff4db85953105db1
+workflow-type: tm+mt
+source-wordcount: '592'
+ht-degree: 79%
+
+---
+
+
+# Status de delivery {#delivery-statuses}
+
+<!--ajouter intro 
+
+ajouter screenshot -->
+
+Depois que um delivery é enviado, o painel do delivery exibe um status que permite monitorar se o envio foi bem-sucedido. Os possíveis status estão detalhados na seção abaixo.
+
+![](assets/delivery-status.png)
+
+Para obter mais detalhes sobre as diferentes falhas de delivery que você pode encontrar e como resolvê-las, consulte [esta página](../../delivery/using/understanding-delivery-failures.md).
+
+**Tópicos relacionados:**
+
+* [Painel de delivery](../../delivery/using/delivery-dashboard.md)
+* [Solução de problemas de delivery](../../delivery/using/delivery-troubleshooting.md)
+* [Sobre a capacidade de delivery](../../delivery/using/about-deliverability.md)
+
+## Lista de status de delivery {#list-delivery-statuses}
+
+<table> 
+ <thead> 
+  <tr> 
+   <th> Status<br /> </th> 
+   <th> Definições e soluções<br /> </th> 
+  </tr> 
+ </thead> 
+ <tbody> 
+  <tr> 
+   <td> Sent<br /> </td> 
+   <td> O delivery foi enviado corretamente ao provedor de mensagens (mas o recipient não o recebeu necessariamente).<br /> </td> 
+  </tr> 
+  <tr> 
+   <td> Ignored<br /> </td> 
+   <td> O delivery não foi enviado ao recipient devido a um erro no endereço. Ele foi incluído na lista de bloqueios, colocado em quarentena, não fornecido ou duplicado. <br /> </td> 
+  </tr> 
+  <tr> 
+   <td> Failed<br /> </td> 
+   <td> O delivery não conseguiu alcançar o recipient devido a um endereço inválido ou a uma caixa de entrada cheia, por exemplo. Ele também pode ser vinculado a um problema com blocos de personalização, pois esses blocos podem gerar erros quando os schemas não correspondem ao mapeamento do delivery. Consulte <a href="../../delivery/using/understanding-delivery-failures.md" target="_blank">Entendendo falhas de delivery</a><br /> </td> 
+  </tr>
+  <tr> 
+   <td> Pending<br /> </td> 
+   <td> O delivery está pronto para ser enviado e será processado pelo servidor de delivery (MTA). Consulte <a href="#pending-status" target="_blank">Status pendente</a>.<br /> </td> 
+  </tr> 
+  <tr> 
+   <td> Not applicable<br /> </td> 
+   <td> O delivery foi levado em conta pelo servidor (MTA), mas não foi processado.<br /> </td> 
+  </tr>  
+  <tr> 
+   <td> Delivery canceled<br /> </td> 
+   <td> O delivery foi cancelado por um operador.<br /> </td> 
+  </tr> 
+  <tr> 
+   <td> Taken into account by the service provider<br /> </td> 
+   <td> O provedor de serviços SMS recebeu o delivery.<br /> </td> 
+  </tr> 
+  <tr> 
+   <td> Received on mobile<br /> </td> 
+   <td> O recipient recebeu o SMS em seu dispositivo móvel.<br /> </td> 
+  </tr>
+  <tr> 
+   <td> Sent to the service provider<br /> </td> 
+   <td> O delivery foi enviado para o provedor de serviços SMS, mas ainda não foi recebido.<br />
+   </td> 
+  </tr> 
+  <tr> 
+   <td> Prepared<br /> </td> 
+   <td> Status intermediário usado somente para conectores externos como o canal móvel. Ele segue o status "Pendente" e é o conector externo que determinará o status seguinte.<br /> </td> 
+  </tr> 
+ </tbody> 
+</table>
+
+Para saber como otimizar a capacidade de entrega dos emails do Adobe Campaign, consulte o [Guia de práticas recomendadas de capacidade de entrega](../../delivery/using/deliverability-key-points.md) do Adobe Campaign e [esta página](../../delivery/using/about-deliverability.md).
+
+## Status pendente {#pending-status}
+
+Após confirmar o delivery, você pode ver que o status do delivery é **[!UICONTROL Pending]**. Esse status significa que o processo de execução está aguardando a disponibilidade de alguns recursos.
+
+O status **[!UICONTROL Pending]** pode significar que o seu delivery foi agendado e está pendente até a data especificada. Para obter mais informações, consulte a seção [Agendamento de delivery](../../delivery/using/steps-sending-the-delivery.md#scheduling-the-delivery-sending).
+
+Se o delivery não estiver sendo enviado e o status permanecer **[!UICONTROL Pending]**, poderá ser devido a:
+
+* O MTA (Message Transfert Agent), que executa módulos e processos no servidor de delivery e que gerencia o envio de email, pode não ter sido iniciado ou precisa ser reiniciado.
+
+   Para verificar isso e iniciar o módulo se necessário, siga as seguintes etapas:
+
+   >[!NOTE]
+   >
+   >Esta operação pode ser executada com um modelo de hospedagem **no local** ou **híbrido** com acesso ao servidor de Campanha (consulte [modelos de hospedagem](../../installation/using/hosting-models.md)).
+
+   1. Verifique se os `mta@<instance>` módulos são iniciados nos servidores MTA.
+
+      ```
+      nlserver pdump
+      HH:MM:SS > Application server for Adobe Campaign Classic (X.Y.Z YY.R build nnnn@SHA1) of DD/MM/YYYY
+      [...]
+      mta@<INSTANCENAME> (9268) - 23.0 Mb
+      [...]
+      ```
+
+   1. Se o MTA não estiver listado, comece com o seguinte comando:
+
+      ```
+      nlserver start mta@<INSTANCENAME>
+      ```
+
+      >[!NOTE]
+      >
+      >Substitua `<INSTANCENAME>` pelo nome da sua instância (produção, desenvolvimento, etc.). O nome da instância é identificado por meio dos arquivos de configuração: `[path of application]nl6/conf/config-<INSTANCENAME>.xml`
+
+* Pode ser que o delivery esteja usando uma afinidade não configurada no locatário emissor.
+
+   Nesse caso, verifique a configuração do gerenciamento de tráfego (afinidade IP) e use o campo **[!UICONTROL Managing affinities with IP addresses]** para vincular deliveries ao MTA que gerencia a afinidade. Para obter mais informações sobre afinidades, consulte [esta seção](../../installation/using/configuring-campaign-server.md#personalizing-delivery-parameters).
+
+* Quando muitas campanhas são executadas, o status do delivery permanece no status &quot;Pendente&quot;.
+
+   O limite de campanhas simultâneas é definido na opção **[!UICONTROL NmsOperation_LimitConcurrency]**. O valor padrão é 10.
+
+   Saiba mais sobre as opções em [esta página](../../installation/using/configuring-campaign-options.md).
+
+
+**Tópicos relacionados:**
+
+* [Histórico e logs do delivery](#delivery-logs-and-history)
+* [Noções básicas sobre falhas de delivery](../../delivery/using/understanding-delivery-failures.md)
+* [Tipos e motivos de falha de delivery](../../delivery/using/understanding-delivery-failures.md#delivery-failure-types-and-reasons)
