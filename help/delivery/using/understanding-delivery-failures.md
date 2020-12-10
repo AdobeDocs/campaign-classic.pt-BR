@@ -6,9 +6,9 @@ description: Entenda as falhas de delivery
 audience: delivery
 content-type: reference
 topic-tags: monitoring-deliveries
-translation-type: ht
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
-workflow-type: ht
+translation-type: tm+mt
+source-git-commit: 9ee7ef1faf06c31ec6659734582caac099a01bc1
+workflow-type: tm+mt
 source-wordcount: '2440'
 ht-degree: 100%
 
@@ -31,8 +31,8 @@ As mensagens também podem ser excluídas durante a preparação do delivery se 
 
 **Tópicos relacionados:**
 
-* [Histórico e logs do delivery](../../delivery/using/monitoring-a-delivery.md#delivery-logs-and-history)
-* [Falha no status](../../delivery/using/monitoring-a-delivery.md#failed-status)
+* [Histórico e logs do delivery](../../delivery/using/delivery-dashboard.md#delivery-logs-and-history)
+* [Falha no status](../../delivery/using/delivery-performances.md#failed-status)
 * [Tipos e motivos de falha de delivery](#delivery-failure-types-and-reasons)
 
 ## Tipos e motivos de falha de delivery {#delivery-failure-types-and-reasons}
@@ -85,31 +85,31 @@ Os possíveis motivos para uma falha de delivery são:
   </tr> 
   <tr> 
    <td> Endereço de controle </td> 
-   <td> Ignored </td> 
+   <td> Ignorado </td> 
    <td> 127 </td> 
    <td> O endereço do recipient faz parte do grupo de controle.<br /> </td> 
   </tr> 
   <tr> 
    <td> Duplo </td> 
-   <td> Ignored </td> 
+   <td> Ignorado </td> 
    <td> 10 </td> 
    <td> O endereço do recipient já estava nesse delivery.<br /> </td> 
   </tr> 
   <tr> 
    <td> Erro ignorado </td> 
-   <td> Ignored </td> 
+   <td> Ignorado </td> 
    <td> 25 </td> 
    <td> O endereço está na lista de permissões. O erro é então ignorado e um email será enviado.<br /> </td> 
   </tr> 
   <tr> 
    <td> Excluído após arbitragem </td> 
-   <td> Ignored </td> 
+   <td> Ignorado </td> 
    <td> 12 </td> 
    <td> O recipient foi excluído por uma regra de tipologia de 'arbitragem' de campanha.<br /> </td> 
   </tr> 
   <tr> 
    <td> Excluído por uma regra SQL </td> 
-   <td> Ignored </td> 
+   <td> Ignorado </td> 
    <td> 11 </td> 
    <td> O recipient foi excluído por uma regra de tipologia de campanha do tipo "SQL".<br /> </td> 
   </tr> 
@@ -127,7 +127,7 @@ Os possíveis motivos para uma falha de delivery são:
   </tr> 
   <tr> 
    <td> Não conectado </td> 
-   <td> Ignored </td> 
+   <td> Ignorado </td> 
    <td> 6 </td> 
    <td> O telefone celular do recipient está desligado ou não conectado à rede quando a mensagem é enviada.<br /> </td> 
   </tr> 
@@ -139,7 +139,7 @@ Os possíveis motivos para uma falha de delivery são:
   </tr> 
   <tr> 
    <td> Não se qualifica para as ofertas </td> 
-   <td> Ignored </td> 
+   <td> Ignorado </td> 
    <td> 16 </td> 
    <td> O recipient não foi qualificado para as ofertas no delivery.<br /> </td> 
   </tr> 
@@ -151,13 +151,13 @@ Os possíveis motivos para uma falha de delivery são:
   </tr> 
   <tr> 
    <td> Target limitado em tamanho </td> 
-   <td> Ignored </td> 
+   <td> Ignorado </td> 
    <td> 17 </td> 
    <td> O tamanho máximo de delivery foi atingido para o recipient.<br /> </td> 
   </tr> 
   <tr> 
    <td> Endereço não qualificado </td> 
-   <td> Ignored </td> 
+   <td> Ignorado </td> 
    <td> 15 </td> 
    <td> O endereço postal não foi qualificado.<br /> </td> 
   </tr> 
@@ -242,12 +242,15 @@ Os emails de devolução podem ter o seguinte status de qualificação:
 >Para instalações hospedadas ou híbridas, se você atualizou para o MTA aprimorado:
 >
 >* As qualificações de rejeição na tabela **[!UICONTROL Delivery log qualification]** não são mais usadas para mensagens de erro de falha de delivery síncrona. O MTA aprimorado determinará o tipo de devolução e a qualificação e enviará essas informações para o Campaign.
+   >
+   >
+* As rejeições assíncronas ainda são qualificadas pelo processo do InMail por meio das regras **[!UICONTROL Inbound email]**. Para obter mais informações, consulte as [Regras de gerenciamento de email](#email-management-rules).
+   >
+   >
+* Para instâncias que usam o MTA aprimorado sem **Webhooks/EFS**, as regras **[!UICONTROL Inbound email]** também serão usadas para processar os emails de rejeição síncronos provenientes do MTA aprimorado, usando o mesmo endereço de email para emails de rejeição assíncronos.
 >
->* As rejeições assíncronas ainda são qualificadas pelo processo do InMail por meio das regras **[!UICONTROL Inbound email]**. Para obter mais informações, consulte as [Regras de gerenciamento de email](#email-management-rules).
 >
->* Para instâncias que usam o MTA aprimorado sem **Webhooks/EFS**, as regras **[!UICONTROL Inbound email]** também serão usadas para processar os emails de rejeição síncronos provenientes do MTA aprimorado, usando o mesmo endereço de email para emails de rejeição assíncronos.
->
->Para obter mais informações sobre o MTA aprimorado do Adobe Campaign, consulte [este documento](https://helpx.adobe.com/br/campaign/kb/acc-campaign-enhanced-mta.html).
+Para obter mais informações sobre o MTA aprimorado do Adobe Campaign, consulte [este documento](https://helpx.adobe.com/br/campaign/kb/acc-campaign-enhanced-mta.html).
 
 ### Regras de gestão de email {#email-management-rules}
 
@@ -283,7 +286,7 @@ Para obter mais informações sobre qualificação de envio de emails, consulte 
 >
 >Para instalações hospedadas ou híbridas, se você tiver atualizado para o MTA aprimorado e se a instância tiver a funcionalidade **Webhooks/EFS**, as regras **[!UICONTROL Inbound email]** não serão mais usadas para mensagens de erro de falha síncrona do delivery. Para obter mais informações, consulte [esta seção](#bounce-mail-qualification).
 >
->Para obter mais informações sobre o MTA aprimorado do Adobe Campaign, consulte [este documento](https://helpx.adobe.com/br/campaign/kb/acc-campaign-enhanced-mta.html).
+>Para obter mais informações sobre o MTA aprimorado do Adobe Campaign, consulte [este documento](https://helpx.adobe.com/campaign/kb/acc-campaign-enhanced-mta.html).
 
 #### Gestão de domínio {#domain-management}
 
@@ -300,7 +303,7 @@ Se suas mensagens forem exibidas no Outlook com **[!UICONTROL on behalf of]** no
 >
 >Para instalações hospedadas ou híbridas, se você atualizou para o MTA aprimorado, as regras **[!UICONTROL Domain management]** não serão mais usadas. A assinatura de autenticação de email **DKIM (DomainKeys Identified Mail)** é feita pelo MTA aprimorado para todas as mensagens com todos os domínios. Ele não faz logon com a **ID do remetente**, **DomainKeys** ou **S/MIME**, a menos que especificado de outra forma no nível MTA aprimorado.
 >
->Para obter mais informações sobre o MTA aprimorado do Adobe Campaign, consulte [este documento](https://helpx.adobe.com/br/campaign/kb/acc-campaign-enhanced-mta.html).
+>Para obter mais informações sobre o MTA aprimorado do Adobe Campaign, consulte [este documento](https://helpx.adobe.com/campaign/kb/acc-campaign-enhanced-mta.html).
 
 #### Gestão MX {#mx-management}
 
@@ -316,4 +319,4 @@ Para obter mais informações sobre gestão MX, consulte [esta seção](../../in
 >
 >Para instalações hospedadas ou híbridas, se você atualizou para o MTA aprimorado, as regras de capacidade do delivery **[!UICONTROL MX management]** não serão mais usadas. O MTA aprimorado usa regras MX próprias que permitem personalizar a capacidade por domínio com base na sua própria reputação histórica de email e no feedback em tempo real proveniente dos domínios em que você está enviando emails.
 >
->Para obter mais informações sobre o MTA aprimorado do Adobe Campaign, consulte [este documento](https://helpx.adobe.com/br/campaign/kb/acc-campaign-enhanced-mta.html).
+>Para obter mais informações sobre o MTA aprimorado do Adobe Campaign, consulte [este documento](https://helpx.adobe.com/campaign/kb/acc-campaign-enhanced-mta.html).
