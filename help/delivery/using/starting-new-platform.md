@@ -6,9 +6,9 @@ description: Saiba mais sobre como gerenciar a capacidade de delivery ao iniciar
 audience: delivery
 content-type: reference
 topic-tags: deliverability-management
-translation-type: ht
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
-workflow-type: ht
+translation-type: tm+mt
+source-git-commit: 6d5dbc16ed6c6e5a2e62ceb522e2ccd64b142825
+workflow-type: tm+mt
 source-wordcount: '490'
 ht-degree: 100%
 
@@ -37,7 +37,7 @@ A inicialização de uma plataforma geralmente ocorre ao usar uma lista de ender
 * **Limite a taxa de transferência** limitando o número de mtachilds. Para obter mais informações sobre como ajustar essa configuração técnica, entre em contato com o administrador do Adobe Campaign.
 * **Aumente progressivamente os volumes enviados** para evitar que sejam marcados como spam. Não direcione todo o banco de dados desde o início, mas adicione uma fração extra da lista sempre que enviar. Isso deve permitir aumentar o volume em cada etapa e reduzir a taxa geral de endereços inválidos. Para garantir o desenvolvimento perfeito da fase de início, você pode usar ondas. Para obter mais informações, consulte [Enviar usando várias ondas](../../delivery/using/steps-sending-the-delivery.md#sending-using-multiple-waves).
 * **Enviar regularmente**. Em certa medida, é melhor enviar pouca coisa regularmente do que campanhas enormes esporadicamente.
-* **Preste muita atenção aos relatórios do delivery**. Muito erros podem significar que uma configuração técnica está mal feita. Para obter mais informações, consulte [Monitoramento de um delivery](../../delivery/using/monitoring-a-delivery.md)
+* **Preste muita atenção aos relatórios do delivery**. Muito erros podem significar que uma configuração técnica está mal feita. Para obter mais informações, consulte [Monitoramento de um delivery](../../delivery/using/about-delivery-monitoring.md)
 
 **Tópicos relacionados**:
 * [Aumente sua reputação de email com o aquecimento de IP](https://helpx.adobe.com/br/campaign/kb/increase-email-rep-ip-warming.html)
