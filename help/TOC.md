@@ -9,9 +9,9 @@ solution: Campaign Classic
 sub-product: Adobe Campaign Classic
 type: Documentation
 translation-type: tm+mt
-source-git-commit: 854d509315f1d8585cb041575908df896468cc77
+source-git-commit: 1818bd2aeb60689b2ce0e59cb0bd157f000de513
 workflow-type: tm+mt
-source-wordcount: '2196'
+source-wordcount: '2215'
 ht-degree: 98%
 
 ---
@@ -710,7 +710,24 @@ ht-degree: 98%
       + [Sobre a referência do schema](configuration/using/about-schema-reference.md)
       + [Estrutura de schema](configuration/using/schema-structure.md)
       + [Mapeamento de banco de dados](configuration/using/database-mapping.md)
-      + [Elementos e atributos](configuration/using/elements-and-attributes.md)
+      + Elementos e atributos {#elements-and-attributes}
+         + [Atributo](configuration/using/schema/attribute.md)
+         + [Cálculo de cadeia de caracteres](configuration/using/schema/compute-string.md)
+         + [Condição](configuration/using/schema/condition.md)
+         + [Índice DB](configuration/using/schema/db-index.md)
+         + [Elemento](configuration/using/schema/element.md)
+         + [Lista discriminada](configuration/using/schema/enumeration.md)
+         + [Ajuda](configuration/using/schema/help.md)
+         + [Ingressar](configuration/using/schema/join.md)
+         + [Chave](configuration/using/schema/key.md)
+         + [Campo principal](configuration/using/schema/keyfield.md)
+         + [Método](configuration/using/schema/method.md)
+         + [Métodos](configuration/using/schema/methods.md)
+         + [Param](configuration/using/schema/param.md)
+         + [Parâmetros](configuration/using/schema/parameters.md)
+         + [SrcSchema](configuration/using/schema/srcschema.md)
+         + [Sysfilter](configuration/using/schema/sysfilter.md)
+         + [Valor](configuration/using/schema/value.md)
    + Edição de schemas {#editing-schemas}
       + [Sobre a edição do schema](configuration/using/about-schema-edition.md)
       + [Schemas de dados](configuration/using/data-schemas.md)
