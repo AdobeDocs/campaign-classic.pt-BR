@@ -5,9 +5,9 @@ title: Rastrear e monitorar mensagens
 audience: delivery
 content-type: reference
 topic-tags: deliveries-best-practices
-translation-type: ht
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
-workflow-type: ht
+translation-type: tm+mt
+source-git-commit: 6d5dbc16ed6c6e5a2e62ceb522e2ccd64b142825
+workflow-type: tm+mt
 source-wordcount: '444'
 ht-degree: 100%
 
@@ -23,7 +23,7 @@ Você clicou no botão Enviar? Vamos ver o que acontece. Depois que o delivery �
 Para controlar suas campanhas, você deve garantir que a mensagem tenha sido entregue aos recipients.
 
 No painel de delivery do Campaign é possível verificar as mensagens processadas e os logs de auditoria do delivery.
-Você também pode controlar o status das mensagens nos logs do delivery. [Saiba mais](../../delivery/using/monitoring-a-delivery.md#delivery-dashboard).
+Você também pode controlar o status das mensagens nos logs do delivery. [Saiba mais](../../delivery/using/about-delivery-monitoring.md).
 
 E se os deliveries não estiverem sendo enviados e seu status permanecer **Pendente**?
 
@@ -65,6 +65,6 @@ Ações específicas podem ser executadas para a resolução de problemas com de
 
 * [Problemas de exibição de imagem](../../production/using/image-display-issues.md)
 
-* [Problemas de desempenho do delivery](../../delivery/using/monitoring-a-delivery.md#performance_issues)
+* [Problemas de desempenho do delivery](../../delivery/using/delivery-performances.md)
 
 * [Problemas com arquivos temporários](../../production/using/temporary-files.md) – *somente clientes locais*
