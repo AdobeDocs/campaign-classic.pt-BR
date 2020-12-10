@@ -6,9 +6,9 @@ description: Perguntas frequentes sobre o Adobe Campaign Classic
 audience: platform
 content-type: reference
 topic-tags: starting-with-adobe-campaign
-translation-type: ht
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
-workflow-type: ht
+translation-type: tm+mt
+source-git-commit: 6d5dbc16ed6c6e5a2e62ceb522e2ccd64b142825
+workflow-type: tm+mt
 source-wordcount: '735'
 ht-degree: 100%
 
@@ -96,7 +96,7 @@ Para cada URL de mensagem, você pode escolher se irá ativar o rastreamento, al
 
 ### Onde posso acessar logs de entrega e rastreamento? {#where-can-i-access-delivery-and-tracking-logs-}
 
-Saiba como controlar suas entregas e entender o comportamento dos destinatários [nesta página](../../delivery/using/monitoring-a-delivery.md).
+Saiba como controlar suas entregas e entender o comportamento dos destinatários [nesta página](../../delivery/using/delivery-dashboard.md).
 
 ### Onde posso obter relatórios de entrega? {#where-can-i-get-delivery-reports-}
 
