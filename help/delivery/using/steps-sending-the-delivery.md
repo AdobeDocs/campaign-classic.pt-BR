@@ -6,9 +6,9 @@ description: Configuração e envio do delivery
 audience: delivery
 content-type: reference
 topic-tags: about-deliveries-and-channels
-translation-type: ht
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
-workflow-type: ht
+translation-type: tm+mt
+source-git-commit: 6d5dbc16ed6c6e5a2e62ceb522e2ccd64b142825
+workflow-type: tm+mt
 source-wordcount: '1521'
 ht-degree: 100%
 
@@ -57,7 +57,7 @@ Você poderá fechar o assistente do delivery e controlar a execução do delive
 
 Após enviar as mensagens, você pode monitorar e rastrear seus deliveries. Para obter mais informações, consulte essas seções.
 
-* [Monitorar um delivery](../../delivery/using/monitoring-a-delivery.md)
+* [Monitorar um delivery](../../delivery/using/about-delivery-monitoring.md)
 * [Noções básicas sobre falhas de delivery](../../delivery/using/understanding-delivery-failures.md)
 * [Sobre o rastreamento de mensagens](../../delivery/using/about-message-tracking.md)
 
@@ -139,7 +139,7 @@ Para balancear a carga, você pode dividir deliveries em vários lotes. Configur
    >
    >Você também deverá permitir tempo suficiente para novas tentativas ao configurar as últimas ondas. Consulte [esta seção](../../delivery/using/steps-sending-the-delivery.md#configuring-retries).
 
-1. Para monitorar seus envios, vá para os logs de delivery. Consulte [esta página](../../delivery/using/monitoring-a-delivery.md#delivery-logs-and-history).
+1. Para monitorar seus envios, vá para os logs de delivery. Consulte [esta página](../../delivery/using/delivery-dashboard.md#delivery-logs-and-history).
 
    Você pode ver os deliveries que já foram enviados nas ondas processadas (status **[!UICONTROL Sent]**) e os deliveries a serem enviados nas ondas restantes (status **[!UICONTROL Pending]**).
 
@@ -200,4 +200,4 @@ Quando o delivery for iniciado, as mensagens (e todas as tentativas) poderão se
 >
 >Para instalações hospedadas ou híbridas, se você tiver atualizado para MTA aprimorado, a configuração **[!UICONTROL Delivery duration]** nos deliveries do Campaign será usada somente se definida como **3,5** dias ou menos. Se você definir um valor superior a 3,5 dias, ele não será considerado.
 >
->Todos os impactos são detalhados no documento [MTA aprimorado do Adobe Campaign](https://helpx.adobe.com/br/campaign/kb/acc-campaign-enhanced-mta.html).
+>Todos os impactos são detalhados no documento [MTA aprimorado do Adobe Campaign](https://helpx.adobe.com/campaign/kb/acc-campaign-enhanced-mta.html).
