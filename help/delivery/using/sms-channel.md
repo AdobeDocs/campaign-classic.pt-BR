@@ -6,9 +6,9 @@ description: Canal SMS
 audience: delivery
 content-type: reference
 topic-tags: sending-messages-on-mobiles
-translation-type: ht
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
-workflow-type: ht
+translation-type: tm+mt
+source-git-commit: 6d5dbc16ed6c6e5a2e62ceb522e2ccd64b142825
+workflow-type: tm+mt
 source-wordcount: '3149'
 ht-degree: 100%
 
@@ -94,7 +94,7 @@ Para fazer isso, siga as etapas abaixo:
 
    Contudo, tendo em conta que determinados provedores exigem o uso do prefixo &quot;+&quot;, recomenda-se verificar com seu provedor e, se necessário, eles irão sugerir que seja habilitada.
 
-   A caixa de seleção **[!UICONTROL Enable TLS over SMPP]** permite criptografar o tráfego SMPP. Para obter mais informações, consulte essa [nota técnica](https://helpx.adobe.com/br/campaign/kb/sms-connector-protocol-and-settings.html).
+   A caixa de seleção **[!UICONTROL Enable TLS over SMPP]** permite criptografar o tráfego SMPP. Para obter mais informações, consulte essa [nota técnica](https://helpx.adobe.com/campaign/kb/sms-connector-protocol-and-settings.html).
 
 1. Ao configurar um conector **[!UICONTROL Extended generic SMPP]**, você pode definir respostas automáticas.
 
@@ -490,7 +490,7 @@ As seguintes opções estão disponíveis:
 
 Após enviar as mensagens, você pode monitorar e rastrear seus deliveries. Para obter mais informações, consulte essas seções.
 
-* [Monitorar um delivery](../../delivery/using/monitoring-a-delivery.md)
+* [Monitorar um delivery](../../delivery/using/about-delivery-monitoring.md)
 * [Noções básicas sobre falhas de delivery](../../delivery/using/understanding-delivery-failures.md)
 * [Sobre o rastreamento de mensagens](../../delivery/using/about-message-tracking.md)
 
@@ -595,6 +595,6 @@ O nome do remetente desse tipo de mensagem é um código curto geralmente usado 
 
 >[!IMPORTANT]
 >
->Esses tipos de mensagens automáticas não mantêm um histórico. Portanto, não aparecem no [delivery dashboard](../../delivery/using/monitoring-a-delivery.md#delivery-dashboard).
+>Esses tipos de mensagens automáticas não mantêm um histórico. Portanto, não aparecem no [delivery dashboard](../../delivery/using/delivery-dashboard.md).
 >
 >Essas mensagens não são consideradas parte das [regras de pressão comercial](../../campaign/using/pressure-rules.md).
