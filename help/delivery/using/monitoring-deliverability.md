@@ -6,9 +6,9 @@ description: Saiba mais sobre as ferramentas e as diretrizes sobre o monitoramen
 audience: delivery
 content-type: reference
 topic-tags: deliverability-management
-translation-type: ht
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
-workflow-type: ht
+translation-type: tm+mt
+source-git-commit: 6d5dbc16ed6c6e5a2e62ceb522e2ccd64b142825
+workflow-type: tm+mt
 source-wordcount: '786'
 ht-degree: 100%
 
@@ -38,10 +38,10 @@ Você também pode usar as seguintes ferramentas:
    * **[!UICONTROL Soft bounces]** indica a reputação. Este número não deve ser superior a 10% para qualquer ISP.
 
    Para obter mais informações, consulte a seção [Estatísticas do delivery](../../reporting/using/global-reports.md#delivery-statistics).
-* Em geral, o [painel de delivery](../../delivery/using/monitoring-a-delivery.md#delivery-dashboard) oferece acesso:
-   * ao [resumo de delivery](../../delivery/using/monitoring-a-delivery.md#delivery-summary), que mostra os detalhes do envio e o [número de mensagens](../../delivery/using/monitoring-a-delivery.md#number-of-messages-sent) a enviar, processadas e enviadas com êxito;
-   * aos [logs do delivery e o histórico](../../delivery/using/monitoring-a-delivery.md#delivery-logs-and-history), que mostram qual público-alvo foi excluído e o porquê;
-   * aos [logs de rastreamento](../../delivery/using/monitoring-a-delivery.md#tracking-logs), que mostram informações de rastreamento, como aberturas e cliques.
+* Em geral, o [painel de delivery](../../delivery/using/about-delivery-monitoring.md) oferece acesso:
+   * ao [resumo de delivery](../../delivery/using/delivery-dashboard.md#delivery-summary), que mostra os detalhes do envio e o número de mensagens a enviar, processadas e enviadas com êxito;
+   * aos [logs do delivery e o histórico](../../delivery/using/delivery-dashboard.md#delivery-logs-and-history), que mostram qual público-alvo foi excluído e o porquê;
+   * aos [logs de rastreamento](../../delivery/using/delivery-dashboard.md#tracking-logs), que mostram informações de rastreamento, como aberturas e cliques.
 
 ## Orientações de monitoramento {#monitoring-guidelines}
 
@@ -53,7 +53,7 @@ Estas são algumas diretrizes adicionais sobre o monitoramento da capacidade de 
 * Verifique a taxa de transferência de cada delivery para garantir que ela seja consistente com a validade do conteúdo do delivery (por exemplo, &quot;vendas rápidas&quot; devem ser entregues em minutos, não em dias).
 * Ao usar as [ondas](../../delivery/using/steps-sending-the-delivery.md#sending-using-multiple-waves), verifique se cada onda tem tempo suficiente para terminar antes que a próxima seja acionada.
 * Verifique se o número de erros e as novas [quarentenas](../../delivery/using/understanding-quarantine-management.md) estão consistentes com outros deliveries.
-* Consulte detalhadamente os [logs do delivery](../../delivery/using/monitoring-a-delivery.md#delivery-logs-and-history) para verificar o tipo de erro destacado (lista de bloqueios, problemas de DNS, regras anti-spam, etc.).
+* Consulte detalhadamente os [logs do delivery](../../delivery/using/delivery-dashboard.md#delivery-logs-and-history) para verificar o tipo de erro destacado (lista de bloqueios, problemas de DNS, regras anti-spam, etc.).
 
 ## Signal Spam {#signal-spam}
 
