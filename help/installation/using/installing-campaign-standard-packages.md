@@ -7,7 +7,7 @@ audience: installation
 content-type: reference
 topic-tags: initial-configuration
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: 6d5dbc16ed6c6e5a2e62ceb522e2ccd64b142825
 workflow-type: tm+mt
 source-wordcount: '1154'
 ht-degree: 11%
@@ -15,7 +15,7 @@ ht-degree: 11%
 ---
 
 
-# Installing Campaign Classic built-in packages{#installing-campaign-standard-packages}
+# Instalação de pacotes incorporados do Campaign Classic{#installing-campaign-standard-packages}
 
 ## Sobre pacotes incorporados {#campaign-standard-packages}
 
@@ -45,7 +45,7 @@ Para instalar um pacote integrado:
 
 Os pacotes agora estão instalados.
 
-### List of out-of-the-box Packages {#list-of-standard-packages}
+### Lista de pacotes predefinidos {#list-of-standard-packages}
 
 A tabela a seguir lista todos os pacotes integrados da Campanha.
 
@@ -60,7 +60,7 @@ A tabela a seguir lista todos os pacotes integrados da Campanha.
  <tbody> 
   <tr> 
    <td> Delivery<br /> </td> 
-   <td> Monitora delivery e possíveis problemas encontrados quando as mensagens são enviadas. <a href="../../delivery/using/monitoring-a-delivery.md">Saiba mais</a><br /> </td> 
+   <td> Monitora delivery e possíveis problemas encontrados quando as mensagens são enviadas. <a href="../../delivery/using/about-delivery-monitoring.md">Saiba mais</a><br /> </td> 
    <td> Todos</td> 
   </tr> 
   <tr> 
@@ -69,12 +69,12 @@ A tabela a seguir lista todos os pacotes integrados da Campanha.
    <td> Marketing</td>
   </tr> 
   <tr> 
-   <td> Marketing resources (MRM)<br /> </td> 
+   <td> Recursos de marketing (MRM)<br /> </td> 
    <td> Controla as ações de marketing em um modo colaborativo, fornecendo gerenciamento e rastreamento de tarefas, orçamentos e recursos de marketing. <a href="../../campaign/using/about-marketing-resource-management.md">Saiba mais</a> <br /> </td> 
    <td> Marketing</td> 
   </tr> 
   <tr> 
-   <td> motor de oferta (interação)<br /> </td> 
+   <td> Mecanismo de oferta (interação)<br /> </td> 
    <td> Responde em tempo real durante uma interação com um determinado contato (um cliente ou público alvo), tornando-os uma única ou várias ofertas adaptadas.  Opcional. <a href="../../interaction/using/interaction-and-offer-management.md#packages-configuration">Saiba mais</a> <br /> </td> 
    <td> Todos<br /> </td> 
   </tr> 
@@ -95,12 +95,12 @@ A tabela a seguir lista todos os pacotes integrados da Campanha.
    <td> Optional, <a href="https://helpx.adobe.com/campaign/kb/deprecated-and-removed-features.html">Learn More</a> </td> 
   </tr--> 
   <tr> 
-   <td> Redes sociais (Marketing social) <br /> </td> 
+   <td> Redes sociais (Social Marketing) <br /> </td> 
    <td> Sincroniza o Adobe Campaign com o Twitter e o Facebook. <a href="../../social/using/about-social-marketing.md">Saiba mais</a> <br /> </td> 
    <td> Todos</td> 
   </tr> 
   <tr> 
-   <td> Controle de mensagens transacionais (Centro de mensagens - Controle)<br /> </td> 
+   <td> Controle de mensagens transacionais (Centro de Mensagens - Controle)<br /> </td> 
    <td> Gerencia mensagens de disparo geradas a partir de eventos acionados a partir de sistemas de informações. Opcional. <a href="../../message-center/using/about-transactional-messaging.md">Saiba mais</a> <br /> </td> 
    <td> Marketing<br /> </td> 
   </tr> 
@@ -115,7 +115,7 @@ A tabela a seguir lista todos os pacotes integrados da Campanha.
    <td> Todos<br /> </td> 
   </tr> 
   <tr> 
-   <td> Direct Mail channel<br /> </td> 
+   <td> Canal de mala direta<br /> </td> 
    <td> Envia delivery usando o canal de mala direta com a Adobe Campaign. Opcional. <a href="../../delivery/using/about-direct-mail-channel.md">Saiba mais</a><br /> </td> 
    <td> Todos<br /> </td>
   </tr> 
@@ -135,12 +135,12 @@ A tabela a seguir lista todos os pacotes integrados da Campanha.
    <td> </td>
   </tr> 
   <tr> 
-   <td> Pesquisas on-line (Gerenciador de Pesquisas)<br /> </td> 
+   <td> Pesquisas online (Gerenciador de Pesquisas)<br /> </td> 
    <td> Cria e gerencia formulários online para adicionar ou modificar informações do perfil, assinar, cancelar a inscrição ou um formulário de inscrição em concurso. Opcional. <a href="../../web/using/about-surveys.md">Saiba mais</a> <br /> </td> 
    <td> Marketing<br /> </td> 
   </tr> 
   <tr> 
-   <td> Análise de marketing<br /> </td> 
+   <td> Marketing Analytics<br /> </td> 
    <td> Permite analisar e medir dados, calcular estatísticas, simplificar e otimizar a criação e o cálculo de relatórios. Além disso, é possível criar relatórios e populações de públicos alvos. Opcional. <a href="../../reporting/using/about-cubes.md">Saiba mais</a><br /> </td> 
    <td> Marketing<br /> </td> 
   </tr> 
@@ -190,17 +190,17 @@ A tabela a seguir lista todos os pacotes integrados da Campanha.
    <td> Marketing </td> 
   </tr> 
   <tr> 
-   <td> integração AEM<br /> </td> 
+   <td> AEM integração<br /> </td> 
    <td> Permite que você gerencie o conteúdo de seus delivery de e-mail, bem como seus formulários diretamente no Adobe Experience Manager, para se beneficiar das funcionalidades de edição de conteúdo AEM bem como das capacidades do delivery Adobe Campaign. <a href="../../integrations/using/about-adobe-experience-manager.md">Saiba mais</a> <br /> </td> 
    <td> Marketing</td> 
   </tr> 
   <tr> 
-   <td> Integração Adobe Experience Cloud Shared Audiência<br /> </td> 
+   <td> Integração do Adobe Experience Cloud Shared Audiência<br /> </td> 
    <td> Permite trocar e compartilhar audiências/segmentos com as soluções Adobe Experience Cloud e os principais serviços. Requer IMS. <a href="../../integrations/using/sharing-audiences-with-adobe-experience-cloud.md">Saiba mais</a> <br /> </td> 
    <td> Marketing<br /> </td> 
   </tr> 
   <tr> 
-   <td> Integração com a Adobe Experience Cloud<br /> </td> 
+   <td> Integração com o Adobe Experience Cloud<br /> </td> 
    <td> Permite importar e exportar audiências/segmentos de diferentes soluções Adobe Experience Cloud para o Adobe Campaign. Opcional. <a href="../../integrations/using/configuring-ims.md#installing-the-package">Saiba mais</a> </td> 
    <td> Marketing</td> 
   </tr> 
@@ -210,7 +210,7 @@ A tabela a seguir lista todos os pacotes integrados da Campanha.
    <td> Todos</td> 
   </tr> 
   <tr> 
-   <td> Transfer to Mid-Sourcing <br /> </td> 
+   <td> Transferir para Mid-sourcing <br /> </td> 
    <td> Detalhes da instalação e configuração de um servidor mid-sourcing, bem como a implantação de uma instância que permite que terceiros enviem mensagens no modo mid-sourcing. Opcional. <a href="../../installation/using/mid-sourcing-server.md">Saiba mais</a> <br /> </td> 
    <td> Marketing </td> 
   </tr> 
@@ -220,7 +220,7 @@ A tabela a seguir lista todos os pacotes integrados da Campanha.
    <td> Mid-sourcing </td> 
   </tr> 
   <tr> 
-   <td> Suporte AMP<br /> </td> 
+   <td> Suporte a AMP<br /> </td> 
    <td> Permite usar a nova AMP interativa para o formato do email e enviar emails dinâmicos. Opcional. <a href="../../delivery/using/defining-interactive-content.md">Saiba mais</a> <br /> </td> 
    <td> Todos </td> 
   </tr> 
@@ -232,18 +232,18 @@ A tabela a seguir lista todos os pacotes integrados da Campanha.
  </tbody> 
 </table>
 
-### Pacote do Centro de mensagens {#message-center-package}
+### Pacote do Centro de Mensagens {#message-center-package}
 
 Você deve instalar canais de delivery (Email, canal móvel, canal de aplicativo móvel etc.) antes de instalar as mensagens transacionais (pacote do centro de mensagens). Se você tiver iniciado um projeto do Centro de mensagens somente por email e precisar adicionar um novo canal depois, siga estas etapas:
 
-1. Install the new channel, for example the **Mobile channel**, using the package import wizard ( **[!UICONTROL Tools > Advanced > Import package > Adobe Campaign package]**).
+1. Instale o novo canal, por exemplo, o **canal móvel**, usando o assistente de importação de pacote ( **[!UICONTROL Tools > Advanced > Import package > Adobe Campaign package]**).
 1. Importe o arquivo ( **[!UICONTROL Tools > Advanced > Import package > File]**) e selecione:
 
    ```
    \datakit\nms\[Your language]\package\messageCenter.xml
    ```
 
-1. No **[!UICONTROL XML data content to import]**, mantenha somente o template do delivery do Centro de mensagens correspondente ao canal relacionado. For example, if you have added the **Mobile channel**, keep only the **entities** element corresponding to the **[!UICONTROL Mobile transactional message]** (smsTriggerMessage) template. If you have added the **Mobile App Channel**, keep only the **iOS transactional message** templates (iosTriggerMessage) and **Android transactional message** (androidTriggerMessage).
+1. Em **[!UICONTROL XML data content to import]**, mantenha somente o template do delivery do Centro de mensagens correspondente ao canal relacionado. Por exemplo, se você tiver adicionado o canal **Mobile**, mantenha somente o elemento **entidades** correspondente ao modelo **[!UICONTROL Mobile transactional message]** (smsTriggerMessage). Se você tiver adicionado o **Canal do aplicativo móvel**, mantenha somente os modelos **mensagen transacional do iOS** (iosTriggerMessage) e **mensagen transacional do Android** (androidTriggerMessage).
 
    ![](assets/messagecenter_install_channel.png)
 
