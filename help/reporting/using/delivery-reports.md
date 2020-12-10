@@ -6,11 +6,11 @@ description: Relatórios de delivery
 audience: reporting
 content-type: reference
 topic-tags: accessing-built-in-reports
-translation-type: ht
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
-workflow-type: ht
-source-wordcount: '1451'
-ht-degree: 100%
+translation-type: tm+mt
+source-git-commit: 6d5dbc16ed6c6e5a2e62ceb522e2ccd64b142825
+workflow-type: tm+mt
+source-wordcount: '1443'
+ht-degree: 97%
 
 ---
 
@@ -68,7 +68,7 @@ Este relatório combina os indicadores principais para rastrear o comportamento 
 * **[!UICONTROL Distinct opens for the population reached]** : Estimativa do número de recipients alvos que abriram uma mensagem pelo menos uma vez. Cliques em links de unsubscription e mirror pages são considerados.
 * **[!UICONTROL Sum of opens for the population reached]** : Estimativa do número total de aberturas por recipients alvos.
 * **[!UICONTROL Clicks on opt-out link]** : Número de cliques no link unsubscription.
-* **[!UICONTROL Clicks on the mirror page link]** : Número de cliques no link para a mirror page. Para ser considerado, o link deve ser definido como tal no assistente do delivery (URLs rastreadas). Consulte esta [página](../../delivery/using/monitoring-a-delivery.md).
+* **[!UICONTROL Clicks on the mirror page link]** : Número de cliques no link para a mirror page. Para ser considerado, o link deve ser definido como tal no assistente do delivery (URLs rastreadas). Consulte esta [página](../../delivery/using/about-delivery-monitoring.md).
 * **[!UICONTROL Estimation of forwards]** : Estimativa do número de emails encaminhados pelos recipients alvos. Esse valor é calculado subtraindo o número de pessoas distintas e o número de recipients distintos que clicaram no email.
 
    >[!NOTE]
@@ -124,7 +124,7 @@ Este relatório mostra a lista de páginas visitadas após um delivery.
 
 ![](assets/s_ncs_user_url_report.png)
 
-Você pode configurar o conteúdo desse relatório selecionando: o gráfico de pontuação a ser exibido, o filtro de tempo (desde a inicialização da ação, durante as primeiras 6 horas após o lançamento, etc.) e o modo de exibição de dados (por rótulo, por URL, por categoria. Para obter mais informações, consulte [esta página](../../delivery/using/monitoring-a-delivery.md)). Clique em **[!UICONTROL Refresh]** para confirmar a seleção.
+Você pode configurar o conteúdo deste relatório selecionando: o gráfico de pontuação a ser exibido, o filtro de tempo (desde a inicialização da ação, nas primeiras 6 horas após a inicialização etc.) e o modo de exibição de dados (por rótulo, por URL, por categoria. Clique em **[!UICONTROL Refresh]** para confirmar a seleção.
 
 As seguintes taxas são exibidas na seção superior do relatório:
 
