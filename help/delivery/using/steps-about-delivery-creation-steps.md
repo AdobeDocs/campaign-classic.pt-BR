@@ -6,9 +6,9 @@ description: Descubra as principais etapas de criação de deliveries no Adobe C
 audience: delivery
 content-type: reference
 topic-tags: about-deliveries-and-channels
-translation-type: ht
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
-workflow-type: ht
+translation-type: tm+mt
+source-git-commit: 6d5dbc16ed6c6e5a2e62ceb522e2ccd64b142825
+workflow-type: tm+mt
 source-wordcount: '132'
 ht-degree: 100%
 
@@ -32,7 +32,7 @@ As principais etapas ao criar um delivery são as seguintes:
 
 1. **Envio do delivery** [Leia mais](../../delivery/using/steps-sending-the-delivery.md)
 
-1. **Monitorar o delivery** (rastreamento, quarentena, relatórios, etc.). Para obter mais informações, consulte as seções [Monitoramento de deliveries](../../delivery/using/monitoring-a-delivery.md) e [Rastreamento de deliveries](../../delivery/using/about-message-tracking.md).
+1. **Monitorar o delivery** (rastreamento, quarentena, relatórios, etc.). Para obter mais informações, consulte as seções [Monitoramento de deliveries](../../delivery/using/about-delivery-monitoring.md) e [Rastreamento de deliveries](../../delivery/using/about-message-tracking.md).
 
 >[!NOTE]
 >
