@@ -7,7 +7,7 @@ audience: production
 content-type: reference
 topic-tags: introduction
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: 9aa0ecd423bfbf1082e9ce5bdb36aaf1611dea54
 workflow-type: tm+mt
 source-wordcount: '707'
 ht-degree: 10%
@@ -19,7 +19,7 @@ ht-degree: 10%
 
 ## Painel de monitoramento de instância {#instance-monitoring-dashboard}
 
-A **[!UICONTROL Monitoring]** guia, que pode ser acessada a partir da página inicial do Campaign Classic, é o ponto de entrada principal que ajuda a monitorar sua instância.
+A guia **[!UICONTROL Monitoring]**, que pode ser acessada a partir da página inicial do Campaign Classic, é o principal ponto de entrada para ajudar a monitorar sua instância.
 
 Ele fornece uma painel do que está ocorrendo em sua instância: seu status (versão de compilação, pacotes instalados etc.), indicadores do sistema, registros, workflows que estão em execução no momento, estado dos últimos delivery enviados etc.
 
@@ -27,7 +27,7 @@ Informações detalhadas estão disponíveis [aqui](../../production/using/monit
 
 ![](assets/monitoring_tab.png)
 
-## Monitoring Campaign Classic processes {#monitoring-campaign-classic-processes}
+## Monitoramento de processos de Campaign Classic {#monitoring-campaign-classic-processes}
 
 <table>
 <tr><td><img src="assets/do-not-localize/icon_system.svg" width="60px"><p><a href="#monitoring-instance">Monitore sua instância</a></p></td>
@@ -44,15 +44,15 @@ Existem outras formas de monitorar os diferentes processos de Campanha. Eles for
 
 **Ferramentas de monitoramento automático**
 
-Vários métodos automáticos estão disponíveis. para ajudá-lo a monitorar sua instância. Você pode, por exemplo, configurar relatórios de email com anomalias detectadas, recuperar uma lista de indicadores no formato XML etc. [Clique aqui](../../production/using/monitoring-processes.md#automatic-monitoring) para obter mais informações.
+Vários métodos automáticos estão disponíveis. para ajudá-lo a monitorar sua instância. Você pode, por exemplo, configurar relatórios de email com anomalias detectadas, recuperar uma lista de indicadores no formato XML etc. [Clique ](../../production/using/monitoring-processes.md#automatic-monitoring) aqui para obter mais informações.
 
 **Trilha de auditoria**
 
-A trilha de auditoria permite visualizar o histórico completo de alterações relacionadas a opções, workflows e schemas dentro da sua instância. [Clique aqui](../../production/using/audit-trail.md) para obter mais informações.
+A trilha de auditoria permite visualizar o histórico completo de alterações relacionadas a opções, workflows e schemas dentro da sua instância. [Clique ](../../production/using/audit-trail.md) aqui para obter mais informações.
 
 **Painel de controle do Campaign**
 
-O Painel de controle do Campaign permite gerenciar várias configurações da sua instância: gerencie permissões de URL, verifique os detalhes da instância, como as versões de compilação dos servidores etc. Também permite monitorar o espaço disponível nos servidores SFTP conectados à sua instância. [Clique aqui](https://docs.adobe.com/content/help/pt-BR/control-panel/using/control-panel-home.translate.html) para obter mais informações.
+O Painel de controle do Campaign permite gerenciar várias configurações da sua instância: gerencie permissões de URL, verifique os detalhes da instância, como as versões de compilação dos servidores etc. Também permite monitorar o espaço disponível nos servidores SFTP conectados à sua instância. [Clique ](https://docs.adobe.com/content/help/pt-BR/control-panel/using/control-panel-home.translate.html) aqui para obter mais informações.
 
 >[!NOTE]
 >
@@ -64,7 +64,7 @@ O Painel de controle do Campaign permite gerenciar várias configurações da su
 
 **Workflow HeatMap**
 
-O Workflow HeatMap forneceu uma representação visual de todos os workflows que estão sendo executados em sua instância. Permite monitorar facilmente a carga na instância e planejar workflows de acordo. [Clique aqui](../../workflow/using/heatmap.md) para obter mais informações.
+O Workflow HeatMap forneceu uma representação visual de todos os workflows que estão sendo executados em sua instância. Permite monitorar facilmente a carga na instância e planejar workflows de acordo. [Clique ](../../workflow/using/heatmap.md) aqui para obter mais informações.
 
 **Trilha de auditoria**
 
@@ -72,11 +72,11 @@ A trilha de auditoria permite visualizar todas as modificações que foram feita
 
 **Solução de problemas de workflows**
 
-Ações específicas podem ser executadas ao encontrar problemas com uma execução de fluxo de trabalho. [Clique aqui](../../production/using/workflow-execution.md) para obter mais informações
+Ações específicas podem ser executadas ao encontrar problemas com uma execução de fluxo de trabalho. [Clique ](../../production/using/workflow-execution.md) aqui para obter mais informações
 
 **Monitoramento do status do fluxo de trabalho**
 
-Além do mapa de calor, você pode criar um fluxo de trabalho que permitirá monitorar o status de um conjunto de workflows e enviar mensagens recorrentes aos supervisores. [Clique aqui](../../workflow/using/supervising-workflows.md) para obter mais informações.
+Além do mapa de calor, você pode criar um fluxo de trabalho que permitirá monitorar o status de um conjunto de workflows e enviar mensagens recorrentes aos supervisores. [Clique ](../../workflow/using/supervising-workflows.md) aqui para obter mais informações.
 
 **Orientações gerais**
 
@@ -94,39 +94,40 @@ Os relatórios SMTP exibem estatísticas de delivery e erros SMTP por domínio. 
 
 **Práticas recomendadas**
 
-[As práticas recomendadas para envio e criação](../../delivery/using/delivery-best-practices.md) de delivery podem ajudá-lo a melhorar seu desempenho.
+[As práticas recomendadas para envio e ](../../delivery/using/delivery-best-practices.md) criação de delivery podem ajudá-lo a melhorar seu desempenho.
 
-**Solução de problemas** de deliveryAções específicas podem ser executadas ao encontrar problemas com delivery:
+**Solução de**
+problemas do deliveryAções específicas podem ser executadas ao encontrar problemas com delivery:
 * [Problemas com delivery](../../production/using/performance-and-throughput-issues.md#deliverability_issues)
 * [Problemas de exibição de imagem](../../production/using/image-display-issues.md)
-* [Problemas de desempenho do delivery](../../delivery/using/monitoring-a-delivery.md#performance_issues)
-* [Problemas](../../production/using/temporary-files.md) de arquivos temporários - somente *em modelos de hospedagem local*
+* [Problemas de desempenho do delivery](../../delivery/using/delivery-performances.md)
+* [Problemas](../../production/using/temporary-files.md)  de arquivos temporários - somente  *em modelos de hospedagem locais*
 
-### Monitoramento do banco de dados {#monitoring-database}
+### Monitorando o banco de dados {#monitoring-database}
 
 <img src="assets/do-not-localize/icon_database.svg" width="60px">
 
 **Workflow de limpeza do banco de dados**
 
-O fluxo de trabalho de limpeza do banco de dados permite que você exclua dados obsoletos do banco de dados. É recomendável evitar o crescimento exponencial do banco de dados. [Clique aqui](../../production/using/database-cleanup-workflow.md) para obter mais informações.
+O fluxo de trabalho de limpeza do banco de dados permite que você exclua dados obsoletos do banco de dados. É recomendável evitar o crescimento exponencial do banco de dados. [Clique ](../../production/using/database-cleanup-workflow.md) aqui para obter mais informações.
 
 **Solução de problemas de desempenho do banco de dados**
 
-Ações específicas podem ser executadas ao encontrar problemas com o desempenho do banco de dados. [Clique aqui](../../production/using/database-performances.md) para obter mais informações.
+Ações específicas podem ser executadas ao encontrar problemas com o desempenho do banco de dados. [Clique ](../../production/using/database-performances.md) aqui para obter mais informações.
 
 **Manutenção do banco de dados**
 
 *apenas modelos de hospedagem local e híbrido*
 
-Recomendamos que você execute a manutenção do banco de dados regularmente para evitar o consumo excessivo de espaço em disco, afetando assim o acesso ao banco de dados. [Clique aqui](../../production/using/recommendations.md) para obter mais informações.
+Recomendamos que você execute a manutenção do banco de dados regularmente para evitar o consumo excessivo de espaço em disco, afetando assim o acesso ao banco de dados. [Clique ](../../production/using/recommendations.md) aqui para obter mais informações.
 
 **Backup e restauração**
 
 *apenas modelos de hospedagem local e híbrido*
 
-O backup é essencial para evitar a perda de dados no evento de um problema (físico ou relacionado ao sistema) em uma máquina. [Clique aqui](../../production/using/backup.md) para obter mais informações. O procedimento de restauração está descrito na [presente seção](../../production/using/restoration.md).
+O backup é essencial para evitar a perda de dados no evento de um problema (físico ou relacionado ao sistema) em uma máquina. [Clique ](../../production/using/backup.md) aqui para obter mais informações. O procedimento de restauração está descrito em [esta seção](../../production/using/restoration.md).
 
-## Princípios técnicos Campaign Classic {#campaign-classic-technical-principles}
+## Princípios técnicos do Campaign Classic {#campaign-classic-technical-principles}
 
 Os recursos técnicos estão disponíveis na documentação do Campaign Classic. Recomendamos que você se familiarize com esses tópicos antes de executar qualquer operação técnica em sua instância.
 
