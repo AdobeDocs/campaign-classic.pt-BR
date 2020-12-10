@@ -7,7 +7,7 @@ audience: configuration
 content-type: reference
 topic-tags: schema-reference
 translation-type: tm+mt
-source-git-commit: 1818bd2aeb60689b2ce0e59cb0bd157f000de513
+source-git-commit: c366326f6a439dabaa42fdd799ec2e55c180a929
 workflow-type: tm+mt
 source-wordcount: '453'
 ht-degree: 2%
@@ -47,7 +47,7 @@ O `<srcschema>` é o elemento raiz de um schema. É o ponto de entrada para a de
 
 ## Uso e contexto de uso {#use-and-context-of-use-9}
 
-A apresentação do schema está disponível em [Sobre a referência do schema](../../configuration/using/about-schema-reference.md) e [estrutura do Schema](../../configuration/using/schema-structure.md).
+A apresentação do schema está disponível em [Sobre a referência do schema](../../../configuration/using/about-schema-reference.md) e [estrutura do Schema](../../../configuration/using/schema-structure.md).
 
 ## Descrição do atributo {#attribute-description-14}
 
