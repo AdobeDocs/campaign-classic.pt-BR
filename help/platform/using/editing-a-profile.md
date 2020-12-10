@@ -7,7 +7,7 @@ audience: platform
 content-type: reference
 topic-tags: profile-management
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: 6d5dbc16ed6c6e5a2e62ceb522e2ccd64b142825
 workflow-type: tm+mt
 source-wordcount: '471'
 ht-degree: 100%
@@ -97,5 +97,5 @@ A lista é configurável e normalmente contém: a URL clicada, a data e hora do 
 
 >[!NOTE]
 >
->Para obter mais informações sobre a funcionalidade de rastreamento, consulte [esta página](../../delivery/using/monitoring-a-delivery.md).
+>Para obter mais informações sobre a funcionalidade de rastreamento, consulte [esta página](../../delivery/using/delivery-dashboard.md).
 
