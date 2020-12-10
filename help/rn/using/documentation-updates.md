@@ -7,9 +7,9 @@ audience: rns
 content-type: reference
 topic-tags: latest-documentation-updates
 translation-type: tm+mt
-source-git-commit: 3c82e30cdc1057be6357d48170b959fb89c79528
+source-git-commit: 5406b1cd6f9cf4f87071a9976be1728ba9d4fcef
 workflow-type: tm+mt
-source-wordcount: '3663'
+source-wordcount: '3660'
 ht-degree: 99%
 
 ---
@@ -312,7 +312,7 @@ A opção &quot;WdbcOptions_TempDbName&quot; foi adicionada à lista de opções
 
 A página da matriz FDA foi movida para [este local](../../installation/using/remote-database-access-rights.md).
 
-A página da matriz de direitos de acesso foi movida [aqui](https://docs.adobe.com/content/help/pt-BR/campaign-classic/using/getting-started/administration-basics/assets/accessrights.pdf).
+A página da matriz de direitos de acesso foi movida [aqui](https://experienceleague.adobe.com/docs/campaign-classic/assets/access-rights-matrix.pdf?lang=en).
 
 A seção que descreve como definir conteúdo interativo com AMP foi movida. [Leia mais](../../delivery/using/defining-interactive-content.md)
 
