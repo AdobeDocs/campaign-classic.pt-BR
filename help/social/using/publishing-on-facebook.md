@@ -6,9 +6,9 @@ description: Publicação no Facebook
 audience: social
 content-type: reference
 topic-tags: publishing-on-facebook-twitter
-translation-type: ht
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
-workflow-type: ht
+translation-type: tm+mt
+source-git-commit: 6d5dbc16ed6c6e5a2e62ceb522e2ccd64b142825
+workflow-type: tm+mt
 source-wordcount: '1148'
 ht-degree: 100%
 
@@ -196,7 +196,7 @@ O rastreamento pode ser exibido nos relatórios do delivery e na guia **[!UICONT
 
 Os cliques no URL contido no delivery são medidos pelo Adobe Campaign. O número de cliques no botão **[!UICONTROL Like]**, o número de comentários e o número de fãs são medidos pelo Facebook.
 
-A configuração de rastreamento é a mesma de um delivery de email. Para obter mais informações, consulte [esta seção](../../delivery/using/monitoring-a-delivery.md).
+A configuração de rastreamento é a mesma de um delivery de email. Para obter mais informações, consulte [esta seção](../../delivery/using/about-delivery-monitoring.md).
 
 >[!NOTE]
 >
