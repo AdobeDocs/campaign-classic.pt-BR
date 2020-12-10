@@ -2,15 +2,15 @@
 solution: Campaign Classic
 product: campaign
 title: Privacidade e consentimento
-description: Saiba mais sobre Privacidade e Consentimento
+description: Saiba mais sobre privacidade e consentimento
 audience: platform
 content-type: reference
 topic-tags: starting-with-adobe-campaign
 translation-type: tm+mt
-source-git-commit: 97e039e48068e3862bc6640711efe54f21fc0f15
+source-git-commit: 6d5dbc16ed6c6e5a2e62ceb522e2ccd64b142825
 workflow-type: tm+mt
 source-wordcount: '2043'
-ht-degree: 82%
+ht-degree: 96%
 
 ---
 
@@ -80,38 +80,38 @@ Ao gerenciar a privacidade, é importante definir quais dados devem ser tratados
 
 Ao integrar o Campaign a outras soluções da Experience Cloud, onde os públicos-alvo podem ser transferidos de um sistema para outro, como o [Adobe Analytics](../../platform/using/adobe-analytics-data-connector.md), o [serviço principal do Audience Manager ou People](../../integrations/using/sharing-audiences-with-adobe-experience-cloud.md), o [Campaign Standard](../../integrations/using/synchronizing-audiences.md) ou outras soluções por meio dos [Conectores CRM](../../platform/using/crm-connectors.md), é necessário ter cuidado extra com a proteção de dados pessoais.
 
-The [main regulations](#privacy-regulations) refer to the different entities that manage data as follows:
+As [principais legislações](#privacy-regulations) referem-se às diferentes entidades que gerenciam os dados da seguinte forma:
 * Um **Controlador de dados** é a autoridade que determina os meios e a finalidade de coleta, utilização e compartilhamento de dados pessoais.
 * Um **Processador de dados** é qualquer pessoa física ou parte que coleta, utiliza ou compartilha dados pessoais, conforme determinado pelo Controlador de dados.
 * Um **Titular de dados** é qualquer pessoa viva cujos dados pessoais estejam sendo coletados, utilizados ou compartilhados, e que possa ser identificada, direta ou indiretamente, por referência a esses dados pessoais.
 
 Portanto, como uma empresa que coleta e compartilha dados pessoais, você é o Controlador de dados, seus clientes são os Titulares dos dados e o Adobe Campaign atua como um Processador de dados ao tratar os dados pessoais indicados por você. Observe que é sua responsabilidade como Controlador de dados, tratar a relação com os Titulares dos dados, como ao gerenciar [solicitações de privacidade](#privacy-requests).
 
-### Caso de uso {#use-case-scenario}
+### Cenário de caso de uso {#use-case-scenario}
 
-Para ilustrar como as diferentes pessoas estão interagindo, veja um exemplo de um caso de uso de experiência de clientes de RGPD de alto nível.
+Para ilustrar como as diferentes personalidades estão interagindo, veja um exemplo de um caso de uso de experiência de um cliente de GDPR de alto nível.
 
-Neste exemplo, uma empresa aérea é o cliente Adobe Campaign. Esta empresa é o Controlador **de** dados e todos os clientes da empresa aérea são **Objetos** de dados. Laura, neste caso particular, é cliente da empresa aérea.
+Neste exemplo, uma companhia aérea é o cliente do Adobe Campaign. Esta empresa é o **controlador de dados** e todos os clientes da companhia aérea são **titulares dos dados**. Laura, neste caso particular, é cliente da companhia aérea.
 
 Aqui estão as diferentes personalidades usadas neste exemplo:
 
-* **Laura** é a pessoa **dos dados**. Ela é a recipient que recebe mensagens da empresa aérea. Laura pode ser uma passageiro frequente, mas pode decidir a certa altura que não quer mensagens personalizadas de propaganda ou marketing da empresa aérea. Ela pedirá à empresa da companhia aérea (com base em seu processo) que exclua seu número de passageiro frequente.
+* **Laura** é a **titular dos dados**. Ela é o recipient que recebe mensagens da companhia aérea. Laura pode ser uma passageira frequente, mas pode decidir a certa altura que não quer receber mensagens personalizadas com propaganda ou marketing da companhia aérea. Ela pedirá à companhia aérea (com base em seu processo) que exclua seu número de passageiro frequente.
 
-* **Anne** é a Controladora **de** Dados na empresa da companhia aérea. Ela recebe o pedido de Laura, recupera IDs úteis solicitadas para identificar a pessoa de dados e envia a solicitação na Adobe Campaign.
+* **Ana** é a **controladora de dados** da companhia aérea. Ela recebe o pedido de Laura, recupera IDs úteis solicitadas para identificar o titular dos dados e envia a solicitação no Adobe Campaign.
 
-* **A Adobe Campaign** é o Processador **de** Dados.
+* O **Adobe Campaign** é o **operador de dados**.
 
 ![](assets/privacy-gdpr-flow.png)
 
 Este é o fluxo geral para este caso de uso:
 
-1. A **pessoa** de dados (Laura) envia uma solicitação do RGPD para o **Data Controller**, por email, atendimento ao cliente ou por um portal da Web.
+1. A **titular dos dados** (Laura) envia uma solicitação de GDPR para o **controlador de dados**, por email, via atendimento ao cliente ou um portal da web.
 
-1. O Controlador **de** dados (Anne) envia a solicitação do RGPD para Campanha pela interface ou usando uma API.
+1. A **controladora de dados** (Ana) envia a solicitação de GDPR para o Campaign através da interface ou usando uma API.
 
-1. Depois que o Processador **de** dados (Adobe Campaign) receber as informações, ele tomará medidas na solicitação do RGPD e enviará uma resposta ou uma confirmação ao Controlador **de** dados (Anne).
+1. Depois que o **operador de dados** (Adobe Campaign) receber as informações, executará então a solicitação do GDPR e enviará uma resposta ou uma confirmação à **controladora de dados** (Ana).
 
-1. Em seguida, o Controlador **de** dados (Anne) revisa as informações e as envia para a **Pessoa** a quem os dados foram enviados (Laura).
+1. Em seguida, a **controlador de dados** (Ana) revisa as informações e as envia de volta para a **titular dos dados** (Laura).
 
 ## Aquisição de dados {#data-acquisition}
 
@@ -131,7 +131,7 @@ O Adobe Campaign oferece vários conjuntos de recursos dedicados ao gerenciament
 * Solicitações de privacidade (Direito de acesso e Direito de ser esquecido). Consulte [esta seção](#privacy-requests).
 * Recusar a venda de informações pessoais (específico para CCPA). Consulte [esta seção](../../platform/using/privacy-requests.md#sale-of-personal-information-ccpa).
 
-Os principais recursos de privacidade do Campaign e um exemplo das personalidades envolvidas são apresentados nesta [seção](https://helpx.adobe.com/br/campaign/kb/campaign-privacy-more.html#gdprpersonasandflow).
+Os principais recursos de privacidade do Campaign e um exemplo das personalidades envolvidas são apresentados nesta [seção](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/privacy/privacy-faq.html?lang=pt-BR#getting-started).
 
 ### Consentimento, retenção e funções {#consent}
 
@@ -141,7 +141,7 @@ Originalmente, o Adobe Campaign oferece recursos importantes que são essenciais
 * **Retenção de dados**: todas as tabelas de registro padrão incorporadas têm períodos de retenção predefinidos, geralmente limitando seu armazenamento de dados a 6 meses ou menos. Períodos de retenção adicionais podem ser configurados com workflows. Para obter mais informações, entre em contato com os consultores ou administradores técnicos da Adobe.
 * **Gerenciamento de direitos**: o Adobe Campaign oferece a capacidade de gerenciar os direitos atribuídos aos vários operadores do Campaign por meio de diferentes funções pré-concebidas ou personalizadas. Isso permite gerenciar quem em sua empresa pode acessar, modificar ou exportar diferentes tipos de dados. Para obter mais informações, consulte [Sobre o gerenciamento de acesso](../../platform/using/access-management.md).
 
-For more on these features and how to manage them in Adobe Campaign, see [this section](../../platform/using/privacy-management.md#consent-retention-roles).
+Para obter mais informações sobre esses recursos e como gerenciá-los no Adobe Campaign, consulte [esta seção](../../platform/using/privacy-management.md#consent-retention-roles).
 
 ### Solicitações de privacidade {#privacy-requests}
 
@@ -151,7 +151,7 @@ O Adobe Campaign fornece recursos adicionais para ajudar você se tornar um Cont
 
 * O **Direito de ser esquecido** (solicitação de exclusão) autoriza o Titular dos dados a ter seus dados pessoais cancelados pelo Controlador de dados.
 
-The **Access** and **Delete** requests are presented in [this section](../../platform/using/privacy-management.md#right-access-forgotten).
+As solicitações de **Acesso** e **Exclusão** são apresentadas [nesta seção](../../platform/using/privacy-management.md#right-access-forgotten).
 
 As etapas de implementação para criar essas solicitações estão detalhadas nesta [seção](../../platform/using/privacy-requests.md).
 
@@ -161,10 +161,10 @@ As etapas de implementação para criar essas solicitações estão detalhadas n
 
 Graças às suas funcionalidades de rastreamento, o Adobe Campaign permite rastrear a navegação de recipients de delivery usando três tipos de cookies: um cookie de sessão e dois cookies permanentes.
 
-* A **session** cookie: the **nlid** cookie contains the identifier of the email sent to the contact (**broadlogId**) and the identifier of the message template (**deliveryId**). Ele é adicionado quando o contato clica em um URL incluído em um email enviado pelo Adobe Campaign e permite que você acompanhe seu comportamento na Web. Esse cookie de sessão é apagado automaticamente quando o navegador é fechado. O contato pode configurar o navegador para recusar cookies.
+* Um cookie **session**: o cookie **nlid** contém o identificador do email enviado ao contato (**BroadlogId**) e o identificador do modelo de mensagem (**deliveryId**). Ele é adicionado quando o contato clica em um URL incluído em um email enviado pelo Adobe Campaign e permite que você acompanhe seu comportamento na Web. Esse cookie de sessão é apagado automaticamente quando o navegador é fechado. O contato pode configurar o navegador para recusar cookies.
 
-* Two **permanent** cookies:
-   * O cookie **UUID** (Universal Unique IDentifier) é compartilhado entre as soluções da Adobe Experience Cloud. É definido uma vez até que desapareça do navegador do cliente quando um novo valor é gerado. Este cookie identifica os usuários que interagem com as soluções da Experience Cloud quando visitam um site. Ele pode ser depositado por uma landing page (para associar atividades desconhecidas do cliente a um recipient) ou por um delivery. A descrição deste cookie está disponível [nesta página](https://experienceleague.adobe.com/docs/core-services/interface/ec-cookies/cookies-mc.html?lang=en#ec-cookies).
+* Dois cookies **permanentes**:
+   * O cookie **UUID** (Universal Unique IDentifier) é compartilhado entre as soluções da Adobe Experience Cloud. É definido uma vez até que desapareça do navegador do cliente quando um novo valor é gerado. Este cookie identifica os usuários que interagem com as soluções da Experience Cloud quando visitam um site. Ele pode ser depositado por uma landing page (para associar atividades desconhecidas do cliente a um recipient) ou por um delivery. A descrição deste cookie está disponível em [esta página](https://experienceleague.adobe.com/docs/core-services/interface/ec-cookies/cookies-mc.html?lang=en#ec-cookies).
    * O cookie **nllastdelid** (introduzido no Campaign Classic 20.3) é um cookie permanente que contém o **deliveryId** do último delivery do qual o usuário clicou no link. Esse cookie é usado quando o cookie da sessão está ausente, para identificar a tabela de rastreamento que será usada.
 
 Regulamentos como o Regulamento Geral sobre a Proteção de Dados (GDPR) afirmam que as empresas exigem o acordo dos usuários do site antes da instalação de qualquer cookie.
@@ -176,7 +176,7 @@ Regulamentos como o Regulamento Geral sobre a Proteção de Dados (GDPR) afirmam
 
 O Adobe Campaign permite rastrear os emails enviados e o comportamento dos recipient do delivery: abrir, clicar em links, cancelamento de assinatura, etc. Para obter mais informações, consulte [Sobre o rastreamento de mensagens](../../delivery/using/about-message-tracking.md).
 
-Para fazer isso, adicione [links rastreados](../../delivery/using/how-to-configure-tracked-links.md) às suas mensagens para medir o impacto do comportamento do delivery e do recipient na guia [Rastreamento](../../delivery/using/monitoring-a-delivery.md#tracking-logs) do painel do delivery. Os dados de rastreamento são interpretados no relatório de [Indicadores de rastreamento](../../reporting/using/delivery-reports.md#tracking-indicators).
+Para fazer isso, adicione [links rastreados](../../delivery/using/how-to-configure-tracked-links.md) às suas mensagens para medir o impacto do comportamento do delivery e do recipient na guia [Rastreamento](../../delivery/using/delivery-dashboard.md#tracking-logs) do painel do delivery. Os dados de rastreamento são interpretados no relatório de [Indicadores de rastreamento](../../reporting/using/delivery-reports.md#tracking-indicators).
 
 ### Acompanhamento da Web {#web-tracking}
 
