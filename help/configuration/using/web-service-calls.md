@@ -7,7 +7,7 @@ audience: configuration
 content-type: reference
 topic-tags: api
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: a469d275fdd768fbd098a0027b5096872dbf6d89
 workflow-type: tm+mt
 source-wordcount: '951'
 ht-degree: 1%
@@ -31,7 +31,7 @@ Os serviços da Web permitem que você crie vários aplicativos a partir de um s
 
 A definição dos serviços Web implementados no servidor de aplicativos Adobe Campaign está disponível nos schemas de dados.
 
-Um serviço da Web é descrito na gramática dos schemas de dados e está disponível a partir do **`<methods>`** elemento.
+Um serviço da Web está descrito na gramática dos schemas de dados e está disponível no elemento **`<methods>`**.
 
 ```
 <methods>
@@ -48,13 +48,13 @@ Um serviço da Web é descrito na gramática dos schemas de dados e está dispon
 
 Aqui temos um exemplo da definição do método chamado **GenerateForm**.
 
-A descrição dos start de serviço com o `<method>` elemento. A lista de parâmetros do método é concluída a partir do `<parameters>` elemento. Cada parâmetro é especificado por um nome, um tipo (Booliano, string, DOMElement etc.) e uma descrição. O atributo &quot;inout&quot; com o valor &quot;out&quot; permite especificar que o parâmetro &quot;resultado&quot; está na saída da chamada SOAP.
+A descrição dos start de serviço com o elemento `<method>`. A lista dos parâmetros do método é concluída a partir do elemento `<parameters>`. Cada parâmetro é especificado por um nome, um tipo (Booliano, string, DOMElement etc.) e uma descrição. O atributo &quot;inout&quot; com o valor &quot;out&quot; permite especificar que o parâmetro &quot;resultado&quot; está na saída da chamada SOAP.
 
 A presença do atributo &quot;static&quot; (com o valor &quot;true&quot;) descreve esse método como static, o que significa que todos os parâmetros do método devem ser declarados.
 
 Um método &quot;const&quot; tem implicitamente um documento XML no formato de seu schema associado como entrada.
 
-Uma descrição completa do `<method>` elemento de um schema Adobe Campaign está disponível no capítulo &quot;Referências do Schema&quot; em  <a href="../../configuration/using/elements-and-attributes.md#method--element" target="_blank">  `<method>`    direcionado.
+Uma descrição completa do elemento `<method>` de um schema Adobe Campaign está disponível no capítulo &quot;Referências do Schema&quot; em <a href="../../configuration/using/schema/method.md)" target="_blank">  `<method>`    direcionado.
 
 Exemplo do método &quot;const&quot;-type &quot;ExecuteQuery&quot; do schema &quot;xtk:queryDef&quot;:
 
@@ -130,7 +130,7 @@ As definições de tipo são baseadas em schemas XML. Em nosso exemplo, o métod
 
 #### Mensagens {#messages}
 
-A `<message>` descreve os nomes e os tipos de um conjunto de campos a serem enviados. O método usa duas mensagens para passar como parâmetro (&quot;ExecuteQueryIn&quot;) e o valor de retorno (&quot;ExecuteQueryOut&quot;).
+O `<message>` descreve os nomes e os tipos de um conjunto de campos a serem enviados. O método usa duas mensagens para passar como parâmetro (&quot;ExecuteQueryIn&quot;) e o valor de retorno (&quot;ExecuteQueryOut&quot;).
 
 ```
 <message name="ExecuteQueryIn">
@@ -144,7 +144,7 @@ A `<message>` descreve os nomes e os tipos de um conjunto de campos a serem envi
 
 #### PortType {#porttype}
 
-O `<porttype>` associa as mensagens na operação &quot;ExecuteQuery&quot; acionada pelo query (&quot;entrada&quot;) que gera uma resposta (&quot;saída&quot;).
+O `<porttype>` associa as mensagens na operação &quot;ExecuteQuery&quot; acionada pelo query (&quot;input&quot;) que gera uma resposta (&quot;output&quot;).
 
 ```
 <portType name="queryDefMethodsSoap">
@@ -157,7 +157,7 @@ O `<porttype>` associa as mensagens na operação &quot;ExecuteQuery&quot; acion
 
 #### Vínculo {#binding}
 
-A `<binding>` parte especifica o protocolo de comunicação SOAP ( `<soap:binding>` ), o transporte de dados em HTTP (valor do atributo &quot;transporte&quot;) e o formato de dados para a operação &quot;ExecuteQuery&quot;. O corpo do envelope SOAP contém os segmentos de mensagem diretamente sem transformação.
+A parte `<binding>` especifica o protocolo de comunicação SOAP ( `<soap:binding>` ), o transporte de dados em HTTP (valor do atributo &quot;transport&quot;) e o formato de dados para a operação &quot;ExecuteQuery&quot;. O corpo do envelope SOAP contém os segmentos de mensagem diretamente sem transformação.
 
 ```
 <binding name="queryDefMethodsSoap" type="tns:queryDefMethodsSoap">
@@ -176,7 +176,7 @@ A `<binding>` parte especifica o protocolo de comunicação SOAP ( `<soap:bindin
 
 #### Serviço {#service}
 
-A `<service>` parte descreve o serviço &quot;XtkQueryDef&quot; com seu URI no URL do servidor de aplicativos Adobe Campaign.
+A parte `<service>` descreve o serviço &quot;XtkQueryDef&quot; com seu URI no URL do servidor de aplicativos Adobe Campaign.
 
 ```
 <service name="XtkQueryDef">
@@ -188,7 +188,7 @@ A `<service>` parte descreve o serviço &quot;XtkQueryDef&quot; com seu URI no U
 
 ## Conectividade {#connectivity}
 
-A Adobe Campaign aumentou a segurança dos mecanismos de autenticação ao introduzir zonas de segurança (consulte o capítulo **Definição de zonas** de segurança [nesta seção](../../installation/using/configuring-campaign-server.md#defining-security-zones)), bem como configurações de gerenciamento de sessão.
+A Adobe Campaign aumentou a segurança dos mecanismos de autenticação ao introduzir zonas de segurança (consulte o capítulo **Definição de zonas de segurança** em [esta seção](../../installation/using/configuring-campaign-server.md#defining-security-zones)), bem como as definições de gestão de sessões.
 
 Há dois modos de autenticação disponíveis:
 
@@ -196,7 +196,7 @@ Há dois modos de autenticação disponíveis:
 
 ou
 
-* **pelo login + senha** do Adobe Campaign que cria um token de sessão. O token de sessão expira automaticamente após um período definido. Este modo não é recomendado e requer a redução das configurações de segurança do aplicativo para algumas configurações de zona (allowUserPassword=&quot;true&quot; e sessionTokenOnly=&quot;true&quot;).
+* **por meio do logon +** senha do Adobe Campaign, que cria um token de sessão. O token de sessão expira automaticamente após um período definido. Este modo não é recomendado e requer a redução das configurações de segurança do aplicativo para algumas configurações de zona (allowUserPassword=&quot;true&quot; e sessionTokenOnly=&quot;true&quot;).
 
 ### Características do token de sessão {#session-token-characteristics}
 
@@ -238,7 +238,7 @@ De uma chamada SOAP:
 
 * é adicionado aos cabeçalhos de chamada
 
-### Exemplos de chamadas {#call-examples}
+### Exemplos de chamada {#call-examples}
 
 * Usando **HttpSoapConnection/SoapService**:
 
@@ -277,7 +277,7 @@ De uma chamada SOAP:
 
 >[!NOTE]
 >
->Os URLs usados nas seguintes chamadas **HttpServletRequest** devem estar na lista de permissões na seção de permissões de url do arquivo **serverConf.xml** . Isso também é válido para o URL do próprio servidor.
+>Os URLs usados nas seguintes chamadas **HttpServletRequest** precisam estar na lista de permissões na seção de permissões de url do arquivo **serverConf.xml**. Isso também é válido para o URL do próprio servidor.
 
 Execução de logon():
 
