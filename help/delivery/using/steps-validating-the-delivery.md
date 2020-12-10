@@ -6,9 +6,9 @@ description: Validação do delivery
 audience: delivery
 content-type: reference
 topic-tags: about-deliveries-and-channels
-translation-type: ht
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
-workflow-type: ht
+translation-type: tm+mt
+source-git-commit: 6d5dbc16ed6c6e5a2e62ceb522e2ccd64b142825
+workflow-type: tm+mt
 source-wordcount: '1667'
 ht-degree: 100%
 
@@ -136,6 +136,7 @@ Para detectar possíveis erros na configuração da mensagem, a Adobe recomenda 
 >
 >* Os modos de validação disponíveis estão detalhados em [Alterar o modo de aprovação](../../delivery/using/steps-validating-the-delivery.md#changing-the-approval-mode).
 >* A configuração do target de prova é explicada em [Definição de um target de prova específico](../../delivery/using/steps-defining-the-target-population.md#defining-a-specific-proof-target).
+
 >
 
 
@@ -150,7 +151,7 @@ Para enviar uma prova, siga as etapas abaixo:
 1. Iniciar análise de mensagem. Consulte [Análise de delivery](../../delivery/using/steps-validating-the-delivery.md#analyzing-the-delivery).
 1. Agora você pode enviar o delivery (consulte [Envio do delivery](../../delivery/using/steps-sending-the-delivery.md)).
 
-   Quando o delivery for enviado, a prova será exibida na lista de delivery e será automaticamente criada e numerada. Ela poderá ser editada se você quiser acessar seu conteúdo e propriedades. Para obter mais informações, consulte esta [página](../../delivery/using/monitoring-a-delivery.md#delivery-dashboard).
+   Quando o delivery for enviado, a prova será exibida na lista de delivery e será automaticamente criada e numerada. Ela poderá ser editada se você quiser acessar seu conteúdo e propriedades. Para obter mais informações, consulte esta [página](../../delivery/using/about-delivery-monitoring.md).
 
    ![](assets/s_ncs_user_delivery_validation_cycle_03a.png)
 
