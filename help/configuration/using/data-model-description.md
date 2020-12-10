@@ -7,7 +7,7 @@ audience: configuration
 content-type: reference
 topic-tags: schema-reference
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: 6d5dbc16ed6c6e5a2e62ceb522e2ccd64b142825
 workflow-type: tm+mt
 source-wordcount: '2375'
 ht-degree: 1%
@@ -15,19 +15,19 @@ ht-degree: 1%
 ---
 
 
-# Campaign data model description{#data-model-description}
+# Descrição do modelo de dados de campanha{#data-model-description}
 
 O Adobe Campaign vem com um modelo de dados predefinido. Esta seção fornece alguns detalhes sobre as tabelas incorporadas do modelo de dados Adobe Campaign e suas interações.
 
-Para acessar a descrição de cada tabela, vá até **[!UICONTROL Admin > Configuration > Data schemas]**, selecione um recurso da lista e clique na **[!UICONTROL Documentation]** guia.
+Para acessar a descrição de cada tabela, vá para **[!UICONTROL Admin > Configuration > Data schemas]**, selecione um recurso da lista e clique na guia **[!UICONTROL Documentation]**.
 
 ![](assets/data-model_documentation-tab.png)
 
 >[!NOTE]
 >
->A estrutura física e lógica dos dados transportados no aplicativo é descrita em XML. Ela obedece a uma gramática específica do Adobe Campaign, chamada de schema. For more on Adobe Campaign schemas, read out [this section](../../configuration/using/about-schema-reference.md).
+>A estrutura física e lógica dos dados transportados no aplicativo é descrita em XML. Ela obedece a uma gramática específica do Adobe Campaign, chamada de schema. Para obter mais informações sobre schemas Adobe Campaign, leia [esta seção](../../configuration/using/about-schema-reference.md).
 
-## Descrição dos quadros principais {#description-main-tables}
+## Descrição das tabelas principais {#description-main-tables}
 
 A Adobe Campaign depende de um banco de dados relacional que contém tabelas vinculadas.
 
@@ -41,9 +41,9 @@ O modelo de dados Adobe Campaign predefinido inclui as principais tabelas listad
 
 ### NmsRecipient {#NmsRecipient}
 
-Esta tabela corresponde ao schema **nms:recipient** .
+Esta tabela corresponde ao schema **nms:recipient**.
 
-É a tabela padrão usada para os **recipient de delivery**. Como resultado, contém as informações necessárias para os delivery através dos vários canais:
+É a tabela padrão usada para os delivery **de**. Como resultado, contém as informações necessárias para os delivery através dos vários canais:
 
 * sEmail: endereço de email.
 * iEmailFormat: formato preferencial para emails (1 para Texto, 2 para HTML e 0 se não estiver definido).
@@ -51,7 +51,7 @@ Esta tabela corresponde ao schema **nms:recipient** .
 * sPhone, sMobilePhone, sFax contêm os números de telefone, telefone celular e fax, respectivamente.
 * iBlackList é o sinalizador de opção de não participação padrão usado para os perfis (1 significa &quot;não inscrito&quot;, 0 caso contrário).
 
-O campo iFolderId é a chave estrangeira que vincula o recipient à pasta de execução. For more on this, see [XtkFolder](#XtkFolder).
+O campo iFolderId é a chave estrangeira que vincula o recipient à pasta de execução. Para obter mais informações, consulte [XtkFolder](#XtkFolder).
 
 O campo sCountryCode é o código ISO 3166-1 Alpha 2 (2 caracteres) do país associado ao recipient. Este campo é, na verdade, uma chave estrangeira na tabela de referência do país (NmsCountry), que contém as etiquetas do país e outros dados de código do país. Se o país não for preenchido, o valor &#39;XX&#39; será armazenado (e usado no lugar de um registro de ID zero).
 
@@ -59,9 +59,9 @@ Para obter mais informações sobre a tabela de Recipient, consulte [esta seçã
 
 ### NmsGroup {#NmsGroup}
 
-Essa tabela corresponde ao schema **nms:group** .
+Esta tabela corresponde ao schema **nms:group**.
 
-Ele permite que você crie grupos **estáticos de recipient**. Há uma relação muitas para muitas entre recipient e grupos. Por exemplo, um recipient pode pertencer a vários grupos e um pode conter vários recipient. Os grupos podem ser criados manualmente, por meio de uma importação ou direcionamento de delivery. Os grupos são frequentemente usados como públicos alvos de delivery. Há um índice exclusivo no campo que representa o nome interno do grupo sName. O grupo está vinculado a uma pasta (a chave é iFolderId. For more on this, see [XtkFolder](#XtkFolder)).
+Ele permite que você crie **grupos estáticos de recipient**. Há uma relação muitas para muitas entre recipient e grupos. Por exemplo, um recipient pode pertencer a vários grupos e um pode conter vários recipient. Os grupos podem ser criados manualmente, por meio de uma importação ou direcionamento de delivery. Os grupos são frequentemente usados como públicos alvos de delivery. Há um índice exclusivo no campo que representa o nome interno do grupo sName. O grupo está vinculado a uma pasta (a chave é iFolderId. Para obter mais informações, consulte [XtkFolder](#XtkFolder)).
 
 ### NmsRcpGrpRel {#NmsRcpGrpRel}
 
@@ -69,33 +69,33 @@ A tabela de relacionamento NmsRcpGrpRel contém apenas os dois campos correspond
 
 ### NmsService {#NmsService}
 
-Esta tabela corresponde ao schema **nms:service** .
+Esta tabela corresponde ao schema **nms:service**.
 
 No Adobe Campaign, você pode criar e gerenciar subscrições para serviços de informação (tópicos). A tabela NmsService armazena a definição dos serviços de informação (tópicos) aos quais você oferta seus recipient para assinar (um boletim informativo, por exemplo).
 
 Os serviços são entidades semelhantes a grupos (agrupamentos de recipient estáticos), exceto que circulam mais informações e permitem o gerenciamento fácil de subscrições e unsubscription por meio de formulários.
 
-Há um índice exclusivo no campo que representa o nome interno do serviço sName. O serviço está vinculado a uma pasta (a chave é iFolderId. For more on this, see [XtkFolder](#XtkFolder)). Por fim, o campo iType especifica o canal do delivery desse serviço (0 para email, 1 para SMS, 2 para telefone, 3 para mala direta e 4 para fax).
+Há um índice exclusivo no campo que representa o nome interno do serviço sName. O serviço está vinculado a uma pasta (a chave é iFolderId. Para obter mais informações, consulte [XtkFolder](#XtkFolder)). Por fim, o campo iType especifica o canal do delivery desse serviço (0 para email, 1 para SMS, 2 para telefone, 3 para mala direta e 4 para fax).
 
 ### NmsSubscription {#NmsSubscription}
 
-Esta tabela corresponde ao schema **nms:subscrição** .
+Esta tabela corresponde ao schema **nms:subscrição**.
 
 Ele permite que você gerencie subscrições de recipient para serviços de informação.
 
 ### NmsSubHisto {#NmsSubHisto}
 
-Esta tabela corresponde ao schema **nms:subHisto** .
+Esta tabela corresponde ao schema **nms:subHisto**.
 
 Se as subscrições forem gerenciadas usando formulários da Web ou a interface do aplicativo, todas as assinaturas e unsubscription serão historizadas na tabela NmsSubHisto. O campo iAction especifica a ação (0 para unsubscription e 1 para subscrição) executada na data armazenada no campo tsDate.
 
 ### NmsDelivery {#NmsDelivery}
 
-Esta tabela corresponde ao schema **nms:delivery** .
+Esta tabela corresponde ao schema **nms:delivery**.
 
-Cada registro nesta tabela representa uma ação **de** delivery ou um **template do delivery**. Ele contém todos os parâmetros necessários para executar delivery (o público alvo, o conteúdo etc.). Os registros de delivery (difusão) (NmsBroadLog) e os URLs de rastreamento associados (NmsTrackingUrl) são criados durante a fase de análise (consulte abaixo para obter mais detalhes sobre essas tabelas).
+Cada registro nesta tabela representa uma **ação de delivery** ou um **template do delivery**. Ele contém todos os parâmetros necessários para executar delivery (o público alvo, o conteúdo etc.). Os registros de delivery (difusão) (NmsBroadLog) e os URLs de rastreamento associados (NmsTrackingUrl) são criados durante a fase de análise (consulte abaixo para obter mais detalhes sobre essas tabelas).
 
-Há um índice exclusivo no campo que representa o nome interno do delivery ou cenário sInternalName. O delivery está vinculado a uma pasta de execução (a chave estrangeira é iFolderProcessId. For more on this, see [XtkFolder](#XtkFolder)).
+Há um índice exclusivo no campo que representa o nome interno do delivery ou cenário sInternalName. O delivery está vinculado a uma pasta de execução (a chave estrangeira é iFolderProcessId. Para obter mais informações, consulte [XtkFolder](#XtkFolder)).
 
 ### XtkFolder {#XtkFolder}
 
@@ -107,49 +107,49 @@ A árvore é gerenciada pelos campos iParentId e iChildCount. O campo sFullName 
 
 ## Delivery e rastreamento {#delivery-and-tracking}
 
-Esse conjunto de tabelas está vinculado ao módulo **Delivery** , que permite monitorar delivery e possíveis problemas encontrados quando as mensagens são enviadas. For more on this, see [Monitoring deliveries](../../delivery/using/monitoring-a-delivery.md). Para obter mais informações sobre o rastreamento, consulte [Rastreamento de mensagens](../../delivery/using/about-message-tracking.md).
+Esse conjunto de tabelas está vinculado ao módulo **Delivery**, que permite monitorar delivery e possíveis problemas encontrados quando as mensagens são enviadas. Para obter mais informações, consulte [Monitorando delivery](../../delivery/using/about-delivery-monitoring.md). Para obter mais informações sobre o rastreamento, consulte [Rastreamento de mensagens](../../delivery/using/about-message-tracking.md).
 
 ![](assets/data-model_delivery.png)
 
-**NmsBroadLogMsg**: Esta tabela corresponde ao schema **nms:wideLogMsg** . É uma extensão da tabela de log de delivery.
+**NmsBroadLogMsg**: Esta tabela corresponde ao  **nms:** wideLogMsgschema. É uma extensão da tabela de log de delivery.
 
 ## Gestão de campanha {#campaign-management}
 
-Esse conjunto de tabelas está vinculado ao módulo **Marketing campanha** , que permite definir, otimizar, executar e analisar campanhas de comunicação e marketing. For more on this, see [About marketing campaigns](../../campaign/using/designing-marketing-campaigns.md).
+Esse conjunto de tabelas está vinculado ao módulo **Marketing campanha**, que permite definir, otimizar, executar e analisar campanhas de comunicação e marketing. Para obter mais informações, consulte [Sobre campanhas de marketing](../../campaign/using/designing-marketing-campaigns.md).
 
 ![](assets/data-model_campaign.png)
 
-* **NmsOperation**: Esta tabela corresponde ao schema **nms:operation** . Ele contém os dados das campanhas de marketing.
-* **NmsDeliveryOutline**: Esta tabela corresponde ao schema **nms:deliveryOutline** . Ele contém as propriedades estendidas do delivery (delivery outline).
-* **NmsDlvOutlineItem**: Esta tabela corresponde ao schema **nms:dlvOutlineItem** . Ele contém os artigos de um delivery outline.
-* **NmsDeliveryCustomization**: Esta tabela corresponde ao schema **nms:deliveryCustomization** . Ele contém os campos de personalização de um delivery.
-* **NmsBudget**: Esta tabela corresponde ao schema **nms:budget** . Ele contém os dados de um orçamento em uma campanha, um plano, um programa, uma tarefa e/ou delivery.
-* **NmsDocument**: Esta tabela corresponde ao schema **nms:documento** . Ele contém os documentos de marketing da campanha na forma de arquivos (imagens, arquivos excel ou word etc.)
-* **XtkWorkflow**: Esta tabela corresponde ao schema **xtk:workflow** . Ele contém direcionamento de campanha.
-* **NmsTask**: Esta tabela corresponde ao schema **nms:tarefa** . Contém a definição de uma tarefa de marketing.
-* **NmsAsset**: Essa tabela corresponde ao schema **nms:asset** . Ele contém a definição de um recurso de marketing.
+* **NmsOperation**: Essa tabela corresponde ao  **nms:** operationschema. Ele contém os dados das campanhas de marketing.
+* **NmsDeliveryOutline**: Esta tabela corresponde ao  **nms:** deliveryOutlineschema. Ele contém as propriedades estendidas do delivery (delivery outline).
+* **NmsDlvOutlineItem**: Esta tabela corresponde ao esquema  **nms:** dlvOutlineItem. Ele contém os artigos de um delivery outline.
+* **NmsDeliveryCustomization**: Esta tabela corresponde ao  **nms:** deliveryCustomizationschema. Ele contém os campos de personalização de um delivery.
+* **NmsBudget**: Essa tabela corresponde ao  **nms:** orçetschema. Ele contém os dados de um orçamento em uma campanha, um plano, um programa, uma tarefa e/ou delivery.
+* **NmsDocument**: Essa tabela corresponde ao  **nms:** documentschema. Ele contém os documentos de marketing da campanha na forma de arquivos (imagens, arquivos excel ou word etc.)
+* **XtkWorkflow**: Esta tabela corresponde ao  **xtk:** workflow schema. Ele contém direcionamento de campanha.
+* **NmsTask**: Esta tabela corresponde ao  **nms:** taskschema. Contém a definição de uma tarefa de marketing.
+* **NmsAsset**: Essa tabela corresponde ao  **nms:** assetschema. Ele contém a definição de um recurso de marketing.
 
-## Consistência da comunicação {#communication-consistency}
+## Consistência de comunicação {#communication-consistency}
 
-Esse conjunto de tabelas está vinculado ao módulo **Otimização de campanha** , que permite controlar, filtrar e monitorar o envio de delivery. For more on this, see [About campaign typologies](../../campaign/using/about-campaign-typologies.md).
+Esse conjunto de tabelas está vinculado ao módulo **Otimização de campanha**, que permite controlar, filtrar e monitorar o envio de delivery. Para obter mais informações, consulte [Sobre o tipologia de campanha](../../campaign/using/about-campaign-typologies.md).
 
 ![](assets/data-model_typology.png)
 
-* **NmsTypologyRule**: Essa tabela corresponde ao schema **nms:typologyRule** . Ele contém as regras que se aplicam aos delivery dependendo das tipologias.
-* **NmsTypology**: Essa tabela corresponde ao schema **nms:typology** . Ele contém o conjunto de regras a ser aplicado a delivery que correspondem à tipologia.
-* **NmsTypologyRuleRel**: Essa tabela corresponde ao schema **nms:typologyRuleRel** . Ele contém as relações entre as tipologias e suas regras.
-* **NmsVolumeLine**: Esta tabela corresponde ao schema **nms:volumeLine** . Ele contém o conjunto de linhas de disponibilidade das regras de capacidade.
-* **NmsVolumeConsumed**: Esta tabela corresponde ao schema **nms:volumeConsumed** . Contém todas as linhas de consumo das regras de capacidade.
+* **NmsTypologyRule**: Essa tabela corresponde a  **nms:** typologyRuleschema. Ele contém as regras que se aplicam aos delivery dependendo das tipologias.
+* **NmsTypology**: Essa tabela corresponde ao  **nms:** typologyschema. Ele contém o conjunto de regras a ser aplicado a delivery que correspondem à tipologia.
+* **NmsTypologyRuleRel**: Essa tabela corresponde ao  **nms:** typologyRuleRelschema. Ele contém as relações entre as tipologias e suas regras.
+* **NmsVolumeLine**: Esta tabela corresponde ao  **nms:** volumeLineschema. Ele contém o conjunto de linhas de disponibilidade das regras de capacidade.
+* **NmsVolumeConsumed**: Essa tabela corresponde ao esquema  **nms:** volumeConsumedschema. Contém todas as linhas de consumo das regras de capacidade.
 
 ## Gerenciamento de respostas {#response-management}
 
-Esse conjunto de tabelas está vinculado ao módulo **Gestor de resposta** , que permite medir o sucesso e a lucratividade das campanhas de marketing ou apresentações da oferta para todos os canais de comunicação. For more on this, see [About response manager](../../campaign/using/about-response-manager.md).
+Esse conjunto de tabelas está vinculado ao módulo **Gestor de resposta**, que permite medir o sucesso e a lucratividade de campanhas de marketing ou apresentações da oferta para todos os canais de comunicação. Para obter mais informações, consulte [Sobre o gerenciador de respostas](../../campaign/using/about-response-manager.md).
 
 ![](assets/data-model_response.png)
 
-### NmsRemaHipótese {#NmsRemaHypothesis}
+### NmsRemaHypotese {#NmsRemaHypothesis}
 
-Esta tabela coincide com o schema **nms:remaHypotese** . Contém a definição da hipótese de medida.
+Esta tabela coincide com o schema **nms:remaHypotese**. Contém a definição da hipótese de medida.
 
 Esta tabela contém informações importantes armazenadas em XML, incluindo:
 
@@ -176,8 +176,8 @@ O script de sobrecarga de hipótese é um código JavaScript que permite sobreca
 Os seguintes indicadores são atualizados automaticamente durante a execução da hipótese:
 
 * Número de reações: **iTransaction**. Número de linhas na tabela de registros de reação.
-* Número de contatos: **iContactReact**. Número distinto de contatos direcionados na hipótese.
-* Contagem de grupos de controle: **Prova de reação**. Número distinto de contatos de grupo de controle direcionados na hipótese.
+* Número de contatos: **iContactReacts**. Número distinto de contatos direcionados na hipótese.
+* Contagem de grupos de controle: **iProofReacts**. Número distinto de contatos de grupo de controle direcionados na hipótese.
 * Taxa de resposta contatada: **dContactReacts**. Taxa de resposta dos contatos direcionados na hipótese.
 * Taxa de resposta do grupo de controle: **dProofReactsRate**. Taxa de resposta do grupo de controle da hipótese.
 * Receitas totais da população contactada: **dContactReactsTotalAmount**. A receita total dos contatos direcionados na hipótese.
@@ -189,55 +189,55 @@ Os seguintes indicadores são atualizados automaticamente durante a execução d
 * Margem total do grupo de controle: **dProofReactsTotalMargin**. Margem total do grupo de controle direcionado na hipótese.
 * Margem média de grupo de controle: **dProofReactsAvgMargin**. Margem média do grupo de controle direcionado na hipótese.
 * Receitas adicionais: **dAdditionalAmount**. (Receita média do contato - Receita média do grupo de controle) * Número de contatos.
-* Margem adicional: **Margem** adicional. (Margem média de grupo de controle contactada - Margem média de variação) / Número de contatos.
+* Margem adicional: **dAdditionalMargin**. (Margem média de grupo de controle contactada - Margem média de variação) / Número de contatos.
 * Custo médio por contato (expressão SQL). Custo calculado do delivery / Número de contatos.
 * ROI (expressão SQL). Custo calculado do delivery / margem total do contato.
 * ROI efetivo (expressão SQL). Custo calculado do delivery/margem adicional.
-* Significância: **Significativo** (expressão SQL). Contém valores de 0 a 3 dependendo da significância da campanha.
+* Significância: **iSignificativy** (expressão SQL). Contém valores de 0 a 3 dependendo da significância da campanha.
 
 ### NmsRemaMatchRcp {#NmsRemaMatchRcp}
 
-Essa tabela corresponde ao schema **nms:remaMatchRcp** .
+Esta tabela corresponde ao schema **nms:remaMatchRcp**.
 
 Ele contém um registro representando a reação de um indivíduo a uma determinada hipótese. Esses registros foram criados durante a execução da hipótese.
 
 ## Simulação e delivery {#simulation-and-delivery}
 
-Esse conjunto de tabelas está vinculado ao módulo de **Simulação** , que permite testar a distribuição de ofertas pertencentes a uma categoria ou ambiente antes de enviar sua proposta para recipient. For more on this, see [About offers simulation](../../interaction/using/about-offers-simulation.md).
+Esse conjunto de tabelas está vinculado ao módulo **Simulação**, que permite testar a distribuição de ofertas pertencentes a uma categoria ou ambiente antes de enviar sua proposta para recipient. Para obter mais informações, consulte [Sobre a simulação do oferta](../../interaction/using/about-offers-simulation.md).
 
 ![](assets/data-model_simulation.png)
 
-* **NmsSimulation**: Esta tabela corresponde ao schema **nms:simulação** . Representa uma simulação para um conjunto de delivery ou ofertas em uma determinada população.
-* **NmsDlvSimulationRel**: Esta tabela corresponde ao schema **nms:dlvSimulationRel** . Contém a lista dos delivery considerados na simulação. O escopo da simulação é armazenado em XML.
-* **NmsOfferSimulationRel**: Esta tabela corresponde ao schema **nms:offerSimulationRel** . Ele permite que você vincule uma simulação a uma oferta.
+* **NmsSimulation**: Essa tabela corresponde ao  **nms:** simulationschema. Representa uma simulação para um conjunto de delivery ou ofertas em uma determinada população.
+* **NmsDlvSimulationRel**: Esta tabela corresponde ao  **nms:** dlvSimulationRelschema. Contém a lista dos delivery considerados na simulação. O escopo da simulação é armazenado em XML.
+* **NmsOfferSimulationRel**: Esta tabela corresponde ao  **nms:** offerSimulationRelschema. Ele permite que você vincule uma simulação a uma oferta.
 
 ## Módulo de interação {#interaction-module}
 
-Esse conjunto de tabelas está vinculado ao módulo **Interação** , que permite responder em tempo real durante uma interação com um determinado contato, tornando-o uma única ou várias ofertas adaptadas. Para obter mais informações, consulte [Interação e gerenciamento](../../interaction/using/interaction-and-offer-management.md)de ofertas.
+Esse conjunto de tabelas está vinculado ao módulo **Interação**, que permite responder em tempo real durante uma interação com um determinado contato, tornando-o uma única ou várias ofertas adaptadas. Para obter mais informações, consulte [Gerenciamento de interação e oferta](../../interaction/using/interaction-and-offer-management.md).
 
-* **NmsOffer**: Esta tabela corresponde ao schema **nms:oferta** . Contém a definição de cada oferta de marketing.
-* **NmsPropositionRcp**: Esta tabela corresponde ao schema **nms:propositionRcp** . Ele contém o log de canais cruzados de proposições de marketing enviadas a cada indivíduo. O registro é criado quando uma proposta é preparada ou efetivamente feita a um indivíduo.
-* **NmsOfferSpace**: Esta tabela corresponde ao schema **nms:offerSpace** . Contém a definição dos locais em que são feitas as propostas.
-* **NmsOfferContext**: Esta tabela corresponde ao schema **nms:offerContext** . Contém critérios adicionais sobre a aplicabilidade da proposta, bem como a definição da fórmula de cálculo do peso.
-* **NmsOfferView**: Esta tabela corresponde ao **nms:offerView**. Ele contém as representações da oferta.
-* **NmsOfferCategory**: Esta tabela corresponde a **nms:offerCategory**. Ele contém as categorias ofertas.
-* **NmsOfferEnv**: Esta tabela corresponde ao **nms:offerEnv**. Ele contém os ambientes da oferta.
+* **NmsOffer**: Esta tabela corresponde ao  **nms:** offer schema. Contém a definição de cada oferta de marketing.
+* **NmsPropositionRcp**: Essa tabela corresponde ao  **nms:** propositionRcpschema. Ele contém o log de canais cruzados de proposições de marketing enviadas a cada indivíduo. O registro é criado quando uma proposta é preparada ou efetivamente feita a um indivíduo.
+* **NmsOfferSpace**: Esta tabela corresponde ao  **nms:** offerSpaceschema. Contém a definição dos locais em que são feitas as propostas.
+* **NmsOfferContext**: Essa tabela corresponde ao  **nms:** offerContextschema. Contém critérios adicionais sobre a aplicabilidade da proposta, bem como a definição da fórmula de cálculo do peso.
+* **NmsOfferView**: Esta tabela corresponde ao  **nms:offerView**. Ele contém as representações da oferta.
+* **NmsOfferCategory**: Esta tabela corresponde a  **nms:offerCategory**. Ele contém as categorias ofertas.
+* **NmsOfferEnv**: Esta tabela corresponde ao  **nms:offerEnv**. Ele contém os ambientes da oferta.
 
 ## Módulo do Centro de Mensagens {#message-center-module}
 
-O seguinte conjunto de tabelas está vinculado ao módulo Mensagens **** transacionais (Centro de Mensagens), que permite gerenciar comunicações individuais e únicas enviadas a um usuário e geradas a partir de eventos acionados de sistemas de informações. For more on this, see [About transactional messaging](../../message-center/using/about-transactional-messaging.md).
+O seguinte conjunto de tabelas está vinculado ao módulo **Transactional messaging** (Message Center), que permite gerenciar comunicações individuais e únicas enviadas a um usuário e geradas a partir de eventos acionados de sistemas de informações. Para obter mais informações, consulte [Sobre mensagens transacionais](../../message-center/using/about-transactional-messaging.md).
 
 ### NmsRtEvent {#NmsRtEvent}
 
 ![](assets/data-model_message-center_rt.png)
 
-Esta tabela corresponde ao schema **nms:rtEvent** . Ele contém uma definição de eventos em tempo real.
+Esta tabela corresponde ao schema **nms:rtEvent**. Ele contém uma definição de eventos em tempo real.
 
 ### NmsBatchEvent {#NmsBatchEvent}
 
 ![](assets/data-model_message-center_batch.png)
 
-Esta tabela corresponde ao schema **nms:batchEvent** . Contém a definição de eventos por lote.
+Esta tabela corresponde ao schema **nms:batchEvent**. Contém a definição de eventos por lote.
 
 <!--## Microsites Module {#microsites-module}
 
@@ -251,23 +251,23 @@ This set of tables is linked to the **Web applications** functionality, which al
 
 ## Módulo NMAC {#nmac-module}
 
-Esse conjunto de tabelas está vinculado ao Canal **do aplicativo** móvel, que permite enviar notificações personalizadas para terminais iOS e Android por meio de aplicativos. Para obter mais informações, consulte [Sobre o canal](../../delivery/using/about-mobile-app-channel.md)do aplicativo móvel.
+Esse conjunto de tabelas está vinculado ao **Canal do aplicativo móvel**, que permite enviar notificações personalizadas para terminais iOS e Android por meio de aplicativos. Para obter mais informações, consulte [Sobre o canal de aplicativo móvel](../../delivery/using/about-mobile-app-channel.md).
 
-* **NmsMobileApp**: Esta tabela corresponde ao schema **nms:mobileApp** . Ele contém os aplicativos móveis definidos no Adobe Campaign.
-* **Assinatura** NmsApp: Esta tabela corresponde ao schema **nms:appSubscription** . Contém as informações dos assinantes relativas a um ou mais aplicativos.
-* **NmsAppSubscriptionRcp**: Esta tabela corresponde ao schema **nms:appSubscriptionRcp** . Ele permite que você vincule visitantes que se inscreveram em um aplicativo à tabela recipient.
-* **NmsExcludeLogAppSubRcp**: Esta tabela corresponde ao schema **nms:excludeLogAppSubRcp** .
-* **NmsTrackingLogAppSubRcp**: Esta tabela corresponde ao schema **nms:trackingLogAppSubRcp** .
-* **NmsBroadLogAppSubRcp**: Esta tabela corresponde ao schema **nms:wideLogAppSubRcp** .
+* **NmsMobileApp**: Esta tabela corresponde ao  **nms:** mobileAppschema. Ele contém os aplicativos móveis definidos no Adobe Campaign.
+* **Assinatura** NmsApp: Esta tabela corresponde ao  **nms:** appSubscriptionschema. Contém as informações dos assinantes relativas a um ou mais aplicativos.
+* **NmsAppSubscriptionRcp**: Esta tabela corresponde ao  **nms:** appSubscriptionRcpschema. Ele permite que você vincule visitantes que se inscreveram em um aplicativo à tabela recipient.
+* **NmsExcludeLogAppSubRcp**: Esta tabela corresponde ao  **nms:** excludeLogAppSubRcpschema.
+* **NmsTrackingLogAppSubRcp**: Esta tabela corresponde ao  **nms:** trackingLogAppSubRcpschema.
+* **NmsBroadLogAppSubRcp**: Esta tabela corresponde ao  **nms:** wideLogAppSubRcpschema.
 
 ## Módulo de marketing social {#social-marketing-module}
 
-Esse conjunto de tabelas está vinculado ao módulo **Gerenciar redes** sociais, que permite interagir com clientes e prospectos via Facebook e Twitter. For more on this, see [About social marketing](../../social/using/about-social-marketing.md).
+Esse conjunto de tabelas está vinculado ao módulo **Gerenciar redes sociais**, que permite interagir com clientes e prospectos via Facebook e Twitter. Para obter mais informações, consulte [Sobre marketing social](../../social/using/about-social-marketing.md).
 
 ![](assets/data-model_social.png)
 
-* **NmsVisitor**: Esta tabela corresponde ao schema **nms:visitante** . Ele contém informações sobre visitantes.
-* **NmsVisitorSub**: Esta tabela corresponde ao **schema nms:visitorSub** . Ele permite que você vincule um visitante aos serviços aos quais eles se inscreveram (Twitter ou Facebook).
-* **NmsFriendShipRel**: Esta tabela corresponde ao schema **nms:amizadeRel** . Ele permite que você vincule visitantes com seus amigos no contexto do serviço do Facebook.
-* **NmsVisitorInterestRel**: Esta tabela corresponde ao schema **nms:visitorInterestRel** . Permite que você conecte visitantes e seus interesses.
-* **NmsInterest**: Esta tabela corresponde ao schema **nms:interest** . Contém a lista de interesses para cada visitante.
+* **NmsVisitor**: Essa tabela corresponde ao  **nms:** visitorschema. Ele contém informações sobre visitantes.
+* **NmsVisitorSub**: Essa tabela corresponde ao  **nms:** visitorSubschema. Ele permite que você vincule um visitante aos serviços aos quais eles se inscreveram (Twitter ou Facebook).
+* **NmsFriendShipRel**: Esta tabela corresponde aos  **nms:** friendRelschema. Ele permite que você vincule visitantes com seus amigos no contexto do serviço do Facebook.
+* **NmsVisitorInterestRel**: Esta tabela corresponde ao  **nms:** visitorInterestRelschema. Permite que você conecte visitantes e seus interesses.
+* **NmsInterest**: Essa tabela corresponde ao  **nms:** interestschema. Contém a lista de interesses para cada visitante.
