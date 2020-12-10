@@ -6,9 +6,9 @@ description: Esta seção fornece as informações gerais específicas para o ca
 audience: delivery
 content-type: reference
 topic-tags: sending-emails
-translation-type: ht
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
-workflow-type: ht
+translation-type: tm+mt
+source-git-commit: 6d5dbc16ed6c6e5a2e62ceb522e2ccd64b142825
+workflow-type: tm+mt
 source-wordcount: '124'
 ht-degree: 100%
 
@@ -31,6 +31,6 @@ As principais etapas para enviar um email são as seguintes:
 * [Definição da população do target](../../delivery/using/steps-defining-the-target-population.md)
 * [Definição do conteúdo do email](../../delivery/using/defining-the-email-content.md)
 * [Envio do email](../../delivery/using/sending-messages.md)
-* [Monitoramento de um delivery](../../delivery/using/monitoring-a-delivery.md)
+* [Monitoramento de um delivery](../../delivery/using/about-delivery-monitoring.md)
 
 As seções abaixo fornecem as informações específicas ao canal de email. Para obter mais informações sobre como criar um delivery, consulte [esta seção](../../delivery/using/steps-about-delivery-creation-steps.md).
