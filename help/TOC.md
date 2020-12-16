@@ -12,7 +12,7 @@ translation-type: tm+mt
 source-git-commit: 922257b157f8d76d6e703b0510ff689d1aa4d067
 workflow-type: tm+mt
 source-wordcount: '2216'
-ht-degree: 98%
+ht-degree: 99%
 
 ---
 
@@ -278,7 +278,7 @@ ht-degree: 98%
       + [Rastreamento de uma aplicação web](web/using/tracking-a-web-application.md)
       + [Opt out de rastreamento da aplicação web](web/using/web-application-tracking-opt-out.md)
    + Edição de conteúdo HTML {#editing-html-content}
-      + [Introdução ao editor HTML](web/using/about-campaign-html-editor.md)
+      + [Introdução ao editor de HTML](web/using/about-campaign-html-editor.md)
       + [Gerenciamento de templates](web/using/template-management.md)
       + [Interface do editor de conteúdo](web/using/content-editor-interface.md)
       + [Edição de conteúdo](web/using/editing-content.md)
@@ -286,7 +286,7 @@ ht-degree: 98%
       + [Criação de uma landing page](web/using/creating-a-landing-page.md)
       + [Caso de uso: criação de um delivery de email](web/using/use-case--creating-an-email-delivery.md)
    + Formulários web {#web-forms}
-      + [Introdução aos formulários da Web](web/using/about-web-forms.md)
+      + [Introdução aos formulários web](web/using/about-web-forms.md)
       + [Utilização de um template de formulário web](web/using/using-a-web-form-template.md)
       + [Inclusão de campos em um formulário web](web/using/adding-fields-to-a-web-form.md)
       + [Elementos estáticos em um formulário web](web/using/static-elements-in-a-web-form.md)
@@ -299,9 +299,9 @@ ht-degree: 98%
       + [Tradução de um formulário web](web/using/translating-a-web-form.md)
       + [Casos de uso: formulários web](web/using/use-cases--web-forms.md)
    + Pesquisas online {#online-surveys}
-      + [Introdução ao pesquisa](web/using/about-surveys.md)
+      + [Introdução às pesquisas](web/using/about-surveys.md)
       + [Etapas principais para criar uma pesquisa](web/using/getting-started-with-surveys.md)
-      + [Criando uma pesquisa](web/using/building-a-survey.md)
+      + [Criar uma pesquisa](web/using/building-a-survey.md)
       + [Gestão de respostas](web/using/managing-answers.md)
       + [Publicar, acompanhar e usar dados coletados](web/using/publish--track-and-use-collected-data.md)
       + [Configuração de pesquisas](web/using/configuring-surveys.md)
