@@ -6,11 +6,11 @@ description: Aprovação de campanhas de marketing
 audience: campaign
 content-type: reference
 topic-tags: orchestrate-campaigns
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: c625b4109e2cb47446331cd009ff9827c8267c93
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2476'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -176,7 +176,7 @@ O Adobe Campaign permite configurar processos de aprovação para os principais 
 
 Para remessas diretas de mala direta, os operadores do Adobe Campaign podem exibir o arquivo de extração antes que ele seja enviado ao roteador e, se necessário, podem alterar o formato e reenviar a extração. Consulte [Aprovar um arquivo de extração](#approving-an-extraction-file).
 
-Para cada campanha é possível aprovar o target, o conteúdo (consulte [Aprovação do conteúdo](#approving-content)) e os custos do delivery. Os operadores Adobe Campaign responsáveis pela aprovação podem ser notificados por email e podem aceitar ou rejeitar a aprovação do console ou por uma conexão da Web. Consulte [Aprovação de processos](#approving-processes).
+Para cada campanha é possível aprovar o target, o conteúdo (consulte [Aprovação do conteúdo](#approving-content)) e os custos do delivery. Os operadores do Adobe Campaign responsáveis pela aprovação podem ser notificados por email, podendo aceitar ou rejeitar a aprovação por meio do console ou por meio de uma conexão com a web. Consulte [Aprovação de processos](#approving-processes).
 
 Quando essas fases de validação estiverem concluídas, o delivery poderá ser iniciado. Consulte [Iniciar um delivery](../../campaign/using/marketing-campaign-deliveries.md#starting-a-delivery).
 
