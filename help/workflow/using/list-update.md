@@ -6,11 +6,11 @@ description: Atualizar lista
 audience: workflow
 content-type: reference
 topic-tags: targeting-activities
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 49f3c123cb8e91b3a2a2a1eb6bd593a242b8bbfe
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '465'
-ht-degree: 92%
+ht-degree: 100%
 
 ---
 
@@ -35,7 +35,7 @@ Para usar a opção, as tabelas específicas devem ter sido configuradas em sua 
 
 Geralmente, salvar um target em uma lista marca o final de um workflow. Por padrão, a atividade **[!UICONTROL List update]** não tem uma transição de saída. Marque a opção **[!UICONTROL Generate an outbound transition]** para adicionar uma.
 
-![](assets/do-not-localize/how-to-video.png) [Descubra como criar uma lista de recipient do Explorer em vídeo](#video)
+![](assets/do-not-localize/how-to-video.png) [Descubra como criar uma lista de recipients pelo Explorer em vídeo](#video)
 
 ## Exemplo: List update {#example--list-update}
 
@@ -71,8 +71,8 @@ Identifica a população a ser salva no grupo.
 
 ## Vídeo tutorial {#video}
 
-Este vídeo mostra como criar uma lista de recipient a partir do Explorer.
+Este vídeo mostra como criar uma lista de recipients pelo Explorer.
 
->[!VIDEO](https://video.tv.adobe.com/v/25602/quality=12)
+>[!VIDEO](https://video.tv.adobe.com/v/25602/quality=12?captions=por_br)
 
-Vídeos de procedimentos de Campaign Classic adicionais estão disponíveis [aqui](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html?lang=pt-BR).
+Vídeos extras sobre procedimentos do Campaign Classic estão disponíveis [aqui](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html?lang=pt-BR).
