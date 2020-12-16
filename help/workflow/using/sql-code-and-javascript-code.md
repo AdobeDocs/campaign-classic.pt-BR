@@ -6,11 +6,11 @@ description: Saiba mais sobre atividades de workflow de códigos SQL e JavaScrip
 audience: workflow
 content-type: reference
 topic-tags: action-activities
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 8bcfc8826a66517e6a648dbc57b681778718c33c
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '226'
-ht-degree: 77%
+ht-degree: 100%
 
 ---
 
@@ -39,7 +39,7 @@ As atividades **[!UICONTROL JavaScript code]** e **[!UICONTROL Advanced JavaScri
 
 A partir da versão 20.2, um atraso de execução foi adicionado às atividades **[!UICONTROL JavaScript code]** e **[!UICONTROL Advanced JavaScript code]**. Por padrão, a fase de execução não pode exceder 1 hora. Após esse atraso, o processo será interrompido com uma mensagem de erro e a execução da atividade falhará.
 
-Você pode alterar esse atraso no campo **[!UICONTROL Stop execution after]** disponível nessas atividades.
+É possível alterar esse atraso no campo **[!UICONTROL Stop execution after]**, disponível nestas atividade.
 
 Para ignorar esse limite, é necessário definir o valor como **0**.
 
