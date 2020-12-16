@@ -6,11 +6,11 @@ description: Saiba mais sobre a atividade de workflow de delivery recorrente
 audience: workflow
 content-type: reference
 topic-tags: action-activities
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 20dcdd91d71158bc373db68c3f61f6808b240bd2
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '221'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
@@ -46,11 +46,11 @@ Um **delivery recorrente** criará uma nova instância de delivery toda vez que 
 >Não é possível enviar uma prova de uma atividade do tipo **[!UICONTROL Recurring delivery]**.\
 >Para criar um delivery diretamente por meio de um workflow da campanha, use as atividades específicas predefinidas do canal (por exemplo **[!UICONTROL Email delivery]**).
 
-## Vídeo do tutorial (#recurring-delivery-video)
+## Vídeo tutorial (#recurring-delivery-video)
 
 Este vídeo explica como configurar um delivery recorrente e uma atividade de scheduler.
 
->[!VIDEO](https://video.tv.adobe.com/v/25040?quality=12)
+>[!VIDEO](https://video.tv.adobe.com/v/25040?quality=12&captions=por_br)
 
-Vídeos de procedimentos de Campaign Classic adicionais estão disponíveis [aqui](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html?lang=pt-BR).
+Vídeos extras sobre procedimentos do Campaign Classic estão disponíveis [aqui](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html?lang=pt-BR).
 
