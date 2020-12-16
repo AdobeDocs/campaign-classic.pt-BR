@@ -6,11 +6,11 @@ description: Definição do layout de formulários web
 audience: web
 content-type: reference
 topic-tags: web-forms
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 21219f4a85a0caec4531acda33ab8bba5c7605d6
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '523'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -39,7 +39,7 @@ No exemplo acima, a renderização será a seguinte:
 
 ## Posicionamento dos campos na página {#positioning-the-fields-on-the-page}
 
-O layout do formulário da Web é definido página por página em cada container e pode ser sobrecarregado se necessário.
+O layout do formulário web é definido pela página em cada container e pode ser sobrecarregado se necessário.
 
 As páginas são divididas em colunas: cada página contém determinado número de colunas. Cada campo da página ocupa **n** células. Os containers também ocupam determinado número de colunas e os campos que contêm ocupam determinado número de células.
 
