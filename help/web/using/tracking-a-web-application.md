@@ -6,11 +6,11 @@ description: Rastreamento de uma aplicação web
 audience: web
 content-type: reference
 topic-tags: web-applications
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 21219f4a85a0caec4531acda33ab8bba5c7605d6
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '409'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -36,7 +36,7 @@ As principais melhorias apresentadas nessa versão são as seguintes:
 
    * **Conversion rate**: número de pessoas que exibiram todas as etapas de um caminho de navegação.
    * **Bounce rate**: número de pessoas que exibiram apenas a primeira etapa
-   * **Funil** de conversão: taxa de perda entre cada etapa.
+   * **Conversion tunnel**: taxa de perda entre cada etapa.
 
    Além disso, um gráfico de tipo **Sector** mostra a população de acordo com sua origem.
 
