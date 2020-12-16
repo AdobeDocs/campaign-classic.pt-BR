@@ -6,11 +6,11 @@ description: Criar uma campanha colaborativa
 audience: campaign
 content-type: reference
 topic-tags: distributed-marketing
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: c625b4109e2cb47446331cd009ff9827c8267c93
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '912'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -37,7 +37,7 @@ Para criar uma campanha colaborativa (por formulário), o modelo **[!UICONTROL C
 
 Na guia **[!UICONTROL Edit]**, clique no link **[!UICONTROL Advanced campaign settings...]** para acessar a guia **Marketing distribuído**.
 
-Selecione a interface da Web **Por formulário**. Esse tipo de interface permite criar campos de personalização que serão usados por entidades locais ao solicitar uma campanha. Consulte [Criar uma campanha local (por formulário)](../../campaign/using/examples.md#creating-a-local-campaign--by-form-).
+Selecione a interface da web **By form**. Esse tipo de interface permite criar campos de personalização que serão usados por entidades locais ao solicitar uma campanha. Consulte [Criar uma campanha local (por formulário)](../../campaign/using/examples.md#creating-a-local-campaign--by-form-).
 
 Salve sua campanha. Agora você pode usá-lo na exibição **Campaign packages** no universo do **Campaign**, clicando no botão **[!UICONTROL Create]**.
 
