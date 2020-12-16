@@ -6,11 +6,11 @@ description: Saiba como definir o conteúdo de email interativo e dinâmico com 
 audience: delivery
 content-type: reference
 topic-tags: sending-emails
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 20dcdd91d71158bc373db68c3f61f6808b240bd2
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1580'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -169,7 +169,7 @@ Para obter mais detalhes, consulte a documentação do desenvolvedor [Gmail](htt
 
 ![](assets/amp_from_field.png)
 
-Para testar o envio de um email do AMP para um endereço Mail.ru, siga as etapas da [documentação do desenvolvedor do Mail.ru](https://postmaster.mail.ru/amp/?lang=en#howto) (**Se você for uma seção de** usuário).
+Para testar o envio de um email do AMP para um endereço Mail.ru, siga as etapas da [documentação do desenvolvedor do Mail.ru](https://postmaster.mail.ru/amp/?lang=pt-BR#howto) (**Se você for uma seção de** usuário).
 
 ### Delivery de emails do AMP através do registro em um provedor de email {#delivering-amp-emails-by-registering}
 
@@ -181,7 +181,7 @@ Você pode experimentar a entrega de emails dinâmicos se registrando com os pro
 
 Depois de testado com alguns endereços, é possível enviar emails do AMP para qualquer endereço do Gmail ou Outlook. Para fazer isso, é necessário fazer o registro no Google ou na Microsoft e aguardar a resposta deles. Siga as etapas apresentadas na documentação do desenvolvedor do [Gmail](https://developers.google.com/gmail/ampemail/register) e [Outlook](https://docs.microsoft.com/en-gb/outlook/amphtml/register-outlook#global-registration). Após o registro bem-sucedido, você se torna um remetente autorizado.
 
-Para enviar o emails AMP para endereços Mail.ru, siga os requisitos e as etapas listados na [documentação do desenvolvedor do Mail.ru](https://postmaster.mail.ru/amp/?lang=en#howto) (**Caso seja uma seção de remetente** de email).
+Para enviar o emails AMP para endereços Mail.ru, siga os requisitos e as etapas listados na [documentação do desenvolvedor do Mail.ru](https://postmaster.mail.ru/amp/?lang=pt-BR#howto) (**Caso seja uma seção de remetente** de email).
 
 ## Envio de um email do AMP {#sending-amp-email}
 
@@ -207,6 +207,6 @@ Por exemplo, se uma lista de produtos é incluída no email, ao editar os preço
 
 O vídeo abaixo explica como ativar o AMP no Adobe Campaign Classic e mostra sua utilização.
 
->[!VIDEO](https://video.tv.adobe.com/v/29940?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/29940?quality=12&learn=on&captions=por_br)
 
-Vídeos de procedimentos de Campaign Classic adicionais estão disponíveis [aqui](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html?lang=pt-BR).
+Vídeos extras sobre procedimentos do Campaign Classic estão disponíveis [aqui](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html?lang=pt-BR).
