@@ -6,11 +6,11 @@ description: Criação de um template de delivery
 audience: delivery
 content-type: reference
 topic-tags: using-delivery-templates
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 6335c1cd327a83dbc8c4d43c4ab795b84531c3e1
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '378'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -74,18 +74,18 @@ Para configurar um template de delivery, siga as seguintes etapas:
 
 O vídeo a seguir mostra como configurar um modelo para um delivery ad hoc.
 
->[!VIDEO](https://video.tv.adobe.com/v/24066?quality=12)
+>[!VIDEO](https://video.tv.adobe.com/v/24066?quality=12&captions=por_br)
 
 ### Como configurar propriedades de templates do delivery
 
 O vídeo a seguir mostra como definir as propriedades do template do delivery e explica em detalhes cada propriedade.
 
->[!VIDEO](https://video.tv.adobe.com/v/24067?quality=12)
+>[!VIDEO](https://video.tv.adobe.com/v/24067?quality=12&captions=por_br)
 
 ### Como implantar um template do delivery ad-hoc
 
 Este vídeo explica como implantar um template do delivery de email ad-hoc, bem como a diferença entre um delivery de email e um workflow de delivery.
 
->[!VIDEO](https://video.tv.adobe.com/v/24065?quality=12)
+>[!VIDEO](https://video.tv.adobe.com/v/24065?quality=12&captions=por_br)
 
-Vídeos de procedimentos de Campaign Classic adicionais estão disponíveis [aqui](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html?lang=pt-BR).
+Vídeos extras sobre procedimentos do Campaign Classic estão disponíveis [aqui](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html?lang=pt-BR).
