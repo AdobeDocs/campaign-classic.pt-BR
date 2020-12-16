@@ -6,11 +6,11 @@ description: Inclusão de campos em um formulário web
 audience: web
 content-type: reference
 topic-tags: web-forms
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 21219f4a85a0caec4531acda33ab8bba5c7605d6
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2457'
-ht-degree: 94%
+ht-degree: 100%
 
 ---
 
@@ -196,7 +196,7 @@ Os botões de opção permitem oferecer uma série de opções exclusivas aos us
 
 ![](assets/s_ncs_admin_survey_radio_button.png)
 
-Você pode criar botões de opção individualmente (botões unitários) ou por meio de uma lista de múltipla escolha, mas como o ponto dos botões de opção é selecionar uma opção ou outra, sempre criaremos pelo menos um par de botões de opção, nunca apenas um único botão.
+Você pode criar botões de opção individualmente (botões unitários) ou por uma lista de múltipla escolha. Mas como o objetivo dos botões de opção é selecionar uma opção ou outra, sempre criaremos pelo menos um par de botões de opção, nunca apenas um único botão.
 
 >[!CAUTION]
 >
@@ -392,9 +392,9 @@ Quando o usuário valida uma das páginas do formulário, é possível definir u
 
 Este campo não está visível para o usuário, mas pode ser utilizado para enriquecer os dados no perfil de usuário.
 
-Para fazer isso, coloque uma **constante** na página e especifique o valor e o local do armazenamento.
+Para fazer isso, coloque uma **constante** na página e especifique o valor e o local de armazenamento.
 
-No exemplo a seguir, o campo **origem** do perfil do recipient é preenchido automaticamente sempre que um usuário aprovar essa página. A constante não é exibida na página.
+No exemplo a seguir, o arquivo de **origem** do perfil do recipient é preenchido automaticamente sempre que um usuário aprova essa página. A constante não é exibida na página.
 
 ![](assets/s_ncs_admin_survey_constante.png)
 
