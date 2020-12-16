@@ -7,17 +7,67 @@ audience: rns
 content-type: reference
 topic-tags: latest-release-notes
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: dc345681e8d0085b4366be0afa2d8207170c716f
 workflow-type: tm+mt
-source-wordcount: '2622'
-ht-degree: 99%
+source-wordcount: '3061'
+ht-degree: 93%
 
 ---
 
 
 # Versão 19.1{#release-19-1}
 
-## ![](assets/do-not-localize/limited_2.png) Versão 19.1.7 - Build 9036 {#release-19-1-7-build-9036}
+## ![](assets/do-not-localize/limited_2.png) Versão 19.1.8 - Build 9039 {#release-19-1-8-build-9039}
+
+_16 de dezembro de 2020_
+
+>[!CAUTION]
+>
+>Esta versão é fornecida com um novo protocolo de conexão:  a atualização é obrigatória para o servidor de Campanha e o console do cliente poderem se conectar à Campanha após 21 de março de 2020
+
+**Aprimoramentos**
+
+* O protocolo de conexão foi atualizado para seguir o novo mecanismo de autenticação IMS.
+* A autenticação de integração acionadora originalmente com base na configuração de autenticação oAUTH para acessar o pipeline foi alterada e movida para a Adobe I/O. [Saiba mais](../../integrations/using/configuring-adobe-io.md)
+* Após o fim do suporte para o protocolo binário herdado APNs do iOS, todas as instâncias que usam esse protocolo são atualizadas para o protocolo HTTP/2 durante a pós-atualização.
+* Correção de um problema de segurança para reforçar a proteção contra problemas de SSRF (Server Side Request Forgery). (NEO-27777)
+
+
+
+* Correção de um problema que resultava na desativação do conector SMPP após um erro de conexão, impedindo o envio de outros delivery SMS e causando problemas de desempenho.
+* Correção de um problema que exibe porcentagens incorretas ao gerar um relatório descritivo por meio de uma atividade de workflow. (NEO-14314)
+* Correção de um problema de preparação de delivery quando a opção **Excluir endereço de duplicado durante delivery** não estava selecionada. (NEO-13240)
+* Correção de um problema que resultava em falha em fluxos de trabalho ao executar uma atividade de **Enriquecimento**. (NEO-17338)
+* Correção de um problema em workflows ao buscar registros de um banco de dados externo e inseri-los no banco de dados do Campaign. (NEO-26359)
+
+
+
+* Correção de um problema de falha do servidor, impedindo assim a corrupção da memória ao limpar o analisador de expressão.
+* Correção de um problema que impedia que a função **NoNull** funcionasse em bancos de dados Oracle após a atualização para a compilação 9032. (NEO-26488)
+
+
+
+* Correção de um problema ao editar uma descrição de template de campanha que impedia a exibição do botão **Salvar** ao copiar símbolos de colagem, como por exemplo, caracteres japoneses. (NEO-27071)
+
+
+
+* Correção de um problema que impedia que a descrição de uma campanha ou template de campanha fosse salva ao clicar fora da janela antes de clicar no botão **Salvar**. (NEO-27449)
+
+
+
+* Correção de um problema no nível de configuração de proxy que impedia o logon no Adobe Campaign após a atualização mais recente do Windows 10. (NEO-27813)
+
+
+
+* Correção de um problema relacionado ao gerenciamento de linhas vazias em arquivos de registro, que causava falhas no comportamento do processo MTA e resultava em quedas de desempenho no envio de delivery.
+
+**Evoluções técnicas**
+
+O Tomcat foi atualizado da versão 7 (7.0.103) para a versão 8 (8.5.57). O diretório `tomcat-7` é substituído por um diretório `tomcat-8`. No Windows, _iis_neolane_setup.vbs_ e _apache_neolane.conf_ agora estão instalados no diretório `conf` (em vez do `tomcat-7/conf` anterior). No linux, _apache_neolane.conf_ agora está instalado no diretório `conf`.
+
+No Linux, a inicialização do serviço nlserver agora usa uma unidade sistêmica em vez do script /etc/init.d/nlserver6. A migração para o novo schema de inicialização é executada automaticamente ao instalar o pacote 19.1.8. O /etc/init.d/nlserver6 ainda é fornecido, mas para interagir com o serviço nlserver (start, reinicialização, interrupção etc.), recomendamos que você use o comando systemctl diretamente.
+
+## ![](assets/do-not-localize/red_2.png) Versão 19.1.7 - Build 9036 {#release-19-1-7-build-9036}
 
 _15 de setembro de 2020_
 
@@ -59,7 +109,7 @@ _15 de setembro de 2020_
 
 * Correção de uma regressão que resultava na escolha incorreta de um fuso horário na configuração de horário em uma atividade de workflow de **Scheduler**.
 
-## ![](assets/do-not-localize/orange_2.png) Versão 19.1.6 - Build 9035 {#release-19-1-6-build-9035}
+## ![](assets/do-not-localize/red_2.png) Versão 19.1.6 - Build 9035 {#release-19-1-6-build-9035}
 
 >[!CAUTION]
 >
@@ -174,7 +224,7 @@ _30 de maio de 2019_
 
 **Aprimoramentos de grade de Proteção, robustez e escalabilidade**
 
-* Otimização do uso da sequência Lifespan - XtkNewId: as tabelas mais antigas foram movidas da sequência xtkNewId para sequências dedicadas. [Leia mais](https://helpx.adobe.com/br/campaign/kb/sequence_auto_generation.html#Switchtoadedicatedsequence)
+* Otimização do uso da sequência Lifespan - XtkNewId: as tabelas mais antigas foram movidas da sequência xtkNewId para sequências dedicadas. [Leia mais](https://helpx.adobe.com/campaign/kb/sequence_auto_generation.html#Switchtoadedicatedsequence)
 * FDA sobre HTTP v2: FDA sobre protocolo HTTP é amplamente usado em implantações híbridas, especialmente para recuperação de broadLog e preparação de delivery. Robustez foi aprimorada para evitar problemas de rede e possíveis erros como recuperação e envio de dados. Isso requer que as builds nas duas extremidades da conexão estejam atualizados, caso contrário, o protocolo antigo ainda será usado.
 * Workflow de rastreamento: a robustez do workflow de rastreamento foi aprimorada. Vários problemas relacionados a inserções/atualizações de log de rastreamento e personalização de rastreamento de URL foram corrigidos. Além disso, o workflow de rastreamento agora detecta problemas de log de rastreamento que podem levar a erros e interromper o workflow. Esses problemas agora são descartados e não processados.
 * Workflow de limpeza: o workflow de limpeza foi aprimorado para evitar possíveis erros e interrupções. Isso otimiza o tamanho e o desempenho do banco de dados.
