@@ -1,21 +1,21 @@
 ---
 solution: Campaign Classic
 product: campaign
-title: Introdução aos formulários da Web
-description: Introdução aos formulários da Web na Campaign
+title: Introdução aos formulários web
+description: Introdução aos formulários web no Campaign
 audience: web
 content-type: reference
 topic-tags: web-forms
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: e76eb171aac1f7088ff8647f99c928ec349b24fc
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '497'
-ht-degree: 93%
+ht-degree: 100%
 
 ---
 
 
-# Introdução aos formulários da Web{#about-web-forms}
+# Introdução aos formulários web{#about-web-forms}
 
 O Adobe Campaign integra um módulo gráfico para definir e publicar formulários web a fim de criar páginas contendo campos de entrada e seleção e que possam incluir dados no banco de dados. Isso permite a criação e publicação de páginas da Web onde os usuários podem visualizar ou inserir informações.
 
@@ -53,7 +53,7 @@ A guia **[!UICONTROL Edit]** permite criar o conteúdo.
 
 Para definir a configuração e o conteúdo do formulário Web, siga as etapas abaixo:
 
-* Start criando as páginas e controles necessários: campos de entrada, listas suspensas, conteúdo HTML etc.
+* Comece com a criação das páginas e verificações necessárias: campos de entrada, listas suspensas, conteúdo HTML, etc.
 
    Essa etapa é detalhada abaixo.
 
