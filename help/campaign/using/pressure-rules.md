@@ -6,11 +6,11 @@ description: Regras de pressão
 audience: campaign
 content-type: reference
 topic-tags: campaign-optimization
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: c625b4109e2cb47446331cd009ff9827c8267c93
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '3253'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -109,7 +109,7 @@ Os valores de limite podem ser constantes ou calculados por uma fórmula com var
 
 **Exemplo:**
 
-Você pode indexar o número de mensagens autorizadas de acordo com o segmento ao qual pertence o recipient. Isso significa que um recipient pertencente ao segmento da Web pode receber mais mensagens do que outros recipient. Uma fórmula do tipo **[!UICONTROL Iif (@origin='Web', 5, 3)]** autoriza o delivery de 5 mensagens a recipients e 3 para outros segmentos. A configuração será a seguinte:
+Você pode indexar o número de mensagens autorizadas de acordo com o segmento ao qual pertence o recipient. Isso significa que um recipient pertencente ao segmento da web pode receber mais mensagens do que outros recipients. Uma fórmula do tipo **[!UICONTROL Iif (@origin='Web', 5, 3)]** autoriza o delivery de 5 mensagens a recipients e 3 para outros segmentos. A configuração será a seguinte:
 
 ![](assets/campaign_opt_pressure_sample.png)
 
