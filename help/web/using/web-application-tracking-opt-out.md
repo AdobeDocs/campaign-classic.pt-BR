@@ -6,11 +6,11 @@ description: Opt out de rastreamento da aplicação web
 audience: web
 content-type: reference
 topic-tags: web-applications
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 21219f4a85a0caec4531acda33ab8bba5c7605d6
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '670'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -99,7 +99,7 @@ Se você precisar gravar uma JSSP, as APIs do lado do servidor estarão disponí
 
 * **NL.ServerWebTracking._displayOptOutBanner()**
 
-   Retorna &quot;true&quot; se o banner de opção de não participação for exibido depois que um banner de opção de não participação for selecionado pelo administrador
+   Retorna &quot;true&quot; se o banner de recusa for exibido após a seleção de um banner de recusa pelo administrador
 
    Esse código é chamado quando o administrador já optou por usar o banner de opt out de rastreamento web.
 
