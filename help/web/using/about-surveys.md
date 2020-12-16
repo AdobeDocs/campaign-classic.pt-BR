@@ -1,21 +1,21 @@
 ---
 solution: Campaign Classic
 product: campaign
-title: Introdução ao pesquisa
-description: Introdução ao Campaign pesquisa
+title: Introdução às pesquisas
+description: Introdução às pesquisas do Campaign
 audience: web
 content-type: reference
 topic-tags: online-surveys
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: e76eb171aac1f7088ff8647f99c928ec349b24fc
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '590'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
 
-# Introdução ao pesquisa{#about-surveys}
+# Introdução às pesquisas{#about-surveys}
 
 O Adobe Campaign inclui um módulo gráfico para definir e publicar aplicações Web. Ele é usado para criar páginas, como um formulário de edição em uma extranet ou formulários de notificação, incluindo dados do banco de dados com tabelas, gráficos, formulários de entrada, etc. Essa funcionalidade permite criar e publicar páginas da Web em que os usuários podem pesquisar ou inserir informações.
 
