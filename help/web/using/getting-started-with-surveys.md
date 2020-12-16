@@ -2,15 +2,15 @@
 solution: Campaign Classic
 product: campaign
 title: Etapas principais para criar uma pesquisa
-description: Crie sua primeira pesquisa com Campanha
+description: Crie sua primeira pesquisa com o Campaign
 audience: web
 content-type: reference
 topic-tags: online-surveys
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: e76eb171aac1f7088ff8647f99c928ec349b24fc
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '912'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
