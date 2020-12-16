@@ -6,11 +6,11 @@ description: Envie as melhores ofertas aos seus contatos com base nas regras de 
 audience: interaction
 content-type: reference
 topic-tags: interaction-overview
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 20dcdd91d71158bc373db68c3f61f6808b240bd2
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '286'
-ht-degree: 94%
+ht-degree: 100%
 
 ---
 
@@ -27,7 +27,7 @@ A interação permite criar e gerenciar um catálogo de ofertas e configurar as 
 
 ![](assets/Offermgt2.png)
 
-![](assets/do-not-localize/how-to-video.png) Para se familiarizar com o recurso de interação e terminologias usadas na Interação de Campanha, assista  [este vídeo](https://helpx.adobe.com/campaign/classic/how-to/acs-overview.html?playlist=/ccx/v1/collection/product/campaign/classic/segment/digital-marketers/explevel/intermediate/applaunch/get-started/collection.ccx.js&amp;ref=helpx.adobe.com).
+![](assets/do-not-localize/how-to-video.png) Para se familiarizar com o recurso de interação e terminologias usadas na Interação do Campaign, assista a [este vídeo](https://helpx.adobe.com/campaign/classic/how-to/acs-overview.html?playlist=/ccx/v1/collection/product/campaign/classic/segment/digital-marketers/explevel/intermediate/applaunch/get-started/collection.ccx.js&amp;ref=helpx.adobe.com).
 
 ## Tópicos relacionados
 
