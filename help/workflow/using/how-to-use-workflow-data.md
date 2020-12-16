@@ -6,11 +6,11 @@ description: Saiba como usar os dados de workflow
 audience: workflow
 content-type: reference
 topic-tags: -general-operation
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 49f3c123cb8e91b3a2a2a1eb6bd593a242b8bbfe
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '923'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -101,7 +101,7 @@ Nesse caso de uso, criaremos um workflow para criptografar e exportar dados usan
 
 As etapas para executar esse caso de uso são as seguintes:
 
-1. Gere um par de chaves GPG (público/privado) usando um utilitário GPG e, em seguida, instale a chave pública no Painel de controle do Campaign. As etapas detalhadas estão disponíveis na [documentação do Painel de controle do Campaign](https://docs.adobe.com/content/help/en/control-panel/using/instances-settings/gpg-keys-management.html#encrypting-data).
+1. Gere um par de chaves GPG (público/privado) usando um utilitário GPG e, em seguida, instale a chave pública no Painel de controle do Campaign. As etapas detalhadas estão disponíveis na [documentação do Painel de controle do Campaign](https://docs.adobe.com/content/help/pt-BR/control-panel/using/instances-settings/gpg-keys-management.html#encrypting-data).
 
 1. Crie um workflow para exportação de dados no Campaign Classic e criptografe-o usando a chave privada que foi instalada através do Painel de controle do Campaign. Para fazer isso, criaremos um workflow da seguinte maneira:
 
@@ -144,8 +144,8 @@ As etapas para executar esse caso de uso são as seguintes:
 
 ### Vídeo tutorial {#video}
 
-Este vídeo mostra como usar uma chave GPG para criptografar dados também está disponível em
+Este vídeo mostra como usar uma chave GPG para criptografar dados e também está disponível em
 
->[!VIDEO](https://video.tv.adobe.com/v/36399?quality=12)
+>[!VIDEO](https://video.tv.adobe.com/v/36399?quality=12&captions=por_br)
 
-Vídeos de procedimentos de Campaign Classic adicionais estão disponíveis [aqui](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html?lang=pt-BR).
+Vídeos extras sobre procedimentos do Campaign Classic estão disponíveis [aqui](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html?lang=pt-BR).
