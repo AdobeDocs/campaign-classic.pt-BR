@@ -6,11 +6,11 @@ description: Tradução de um formulário web
 audience: web
 content-type: reference
 topic-tags: web-forms
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 21219f4a85a0caec4531acda33ab8bba5c7605d6
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1565'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -105,7 +105,7 @@ Para exibir somente strings não traduzidas, selecione **[!UICONTROL To translat
 
 ### Exportação de arquivos {#exporting-files}
 
-1. Selecione as Aplicações web cujas strings você deseja exportar, clique com o botão direito do mouse e selecione **[!UICONTROL Actions > Export strings for translation...]**
+1. Selecione as aplicações web cujas cadeias de caracteres você deseja importar, clique com o botão direito do mouse e selecione **[!UICONTROL Actions > Export strings for translation...]**
 
    ![](assets/s_ncs_admin_survey_trad_export.png)
 
