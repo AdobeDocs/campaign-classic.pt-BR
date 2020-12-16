@@ -1,16 +1,16 @@
 ---
 solution: Campaign Classic
 product: campaign
-title: Caso de uso - criação de um delivery de email
+title: Caso de uso – criação de um delivery de email
 description: Criação de um caso de uso de delivery de email
 audience: web
 content-type: reference
 topic-tags: editing-html-content
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 46aa896929c960abeb501642a5ffbbb56de4802e
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '734'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -30,7 +30,7 @@ Nosso objetivo final é criar um delivery com um template personalizado que cont
 >
 >Antes de começar, você deve ter pelo menos um **template HTML** configurado para hospedar o conteúdo de seus deliveries futuros.
 >
->Em **[!UICONTROL Properties]** do delivery, verifique se **[!UICONTROL Content editing mode]** (na guia **[!UICONTROL Advanced]**) está definido como **[!UICONTROL DCE]**. Para garantir a operação ideal do editor, consulte [Práticas recomendadas de edição de conteúdo](../../web/using/content-editing-best-practices.md).
+>No **[!UICONTROL Properties]** do delivery, verifique se **[!UICONTROL Content editing mode]** (na guia **[!UICONTROL Advanced]**) está definido como **[!UICONTROL DCE]**. Para garantir a operação ideal do editor, consulte [Práticas recomendadas de edição de conteúdo](../../web/using/content-editing-best-practices.md).
 
 ## Etapa 1 - Criação de um delivery {#step-1---creating-a-delivery}
 
