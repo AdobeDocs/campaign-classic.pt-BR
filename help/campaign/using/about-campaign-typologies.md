@@ -6,11 +6,11 @@ description: Sobre tipologias de campanha
 audience: campaign
 content-type: reference
 topic-tags: campaign-optimization
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 20dcdd91d71158bc373db68c3f61f6808b240bd2
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '497'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -69,16 +69,16 @@ Durante a preparação do delivery, os recipients são excluídos quando o crit�
 
 Este vídeo explica como implementar o gerenciamento de fadiga no Adobe Campaign Classic utilizando regras de tipologia.
 
->[!VIDEO](https://video.tv.adobe.com/v/25090?quality=12)
+>[!VIDEO](https://video.tv.adobe.com/v/25090?quality=12&captions=por_br)
 
 ### Como configurar o gerenciamento de fadiga usando filtros predefinidos
 
 O gerenciamento de fadiga controla a frequência e a quantidade de mensagens para evitar a solicitação excessiva de recipients. Se você não tiver o módulo de otimização de campanha na instância da campanha, poderá configurar um filtro predefinido que irá filtrar a população do público-alvo pelo número de mensagens recebidas
 Este vídeo ensina a implementar o gerenciamento de fadiga no Adobe Campaign Classic usando filtros.
 
->[!VIDEO](https://video.tv.adobe.com/v/25091?quality=12)
+>[!VIDEO](https://video.tv.adobe.com/v/25091?quality=12&captions=por_br)
 
-Vídeos de procedimentos de Campaign Classic adicionais estão disponíveis [aqui](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html?lang=pt-BR).
+Vídeos extras sobre procedimentos do Campaign Classic estão disponíveis [aqui](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html?lang=pt-BR).
 
 **Tópicos relacionados**
 
