@@ -6,11 +6,11 @@ description: Versão mais recente do Campaign Classic   Observações
 audience: rns
 content-type: reference
 topic-tags: latest-release-notes
-translation-type: ht
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
-workflow-type: ht
-source-wordcount: '1820'
-ht-degree: 100%
+translation-type: tm+mt
+source-git-commit: 792bfbd041b20a61e975703e7d9d4a35859c2882
+workflow-type: tm+mt
+source-wordcount: '1852'
+ht-degree: 98%
 
 ---
 
@@ -103,6 +103,11 @@ Saiba mais na [página sobre recursos obsoletos e removidos](../../rn/using/depr
 **Aprimoramentos**
 
 * Vários aprimoramentos foram feitos no **console do cliente**:
+   * O protocolo de conexão foi atualizado para seguir o novo mecanismo de autenticação IMS.
+
+      >[!CAUTION]
+      >
+      >Após a atualização do protocolo de conexão, a atualização é obrigatória (servidor e console) para se conectar a partir de 21 de março de 2020.
    * Para evitar incompatibilidade com algumas restrições de regras de GPO de segurança da Internet, a tela de logon do console do cliente do Campaign foi substituída por um formulário Windows padrão integrado.
    * Correção de um problema ao copiar/colar atividades em um workflow usando o console do cliente de 64 bits. (NEO-27635)
 
