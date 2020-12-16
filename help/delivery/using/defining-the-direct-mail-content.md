@@ -6,9 +6,9 @@ description: Definição do conteúdo de correio direto
 audience: delivery
 content-type: reference
 topic-tags: sending-direct-mail
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: c625b4109e2cb47446331cd009ff9827c8267c93
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '164'
 ht-degree: 100%
 
