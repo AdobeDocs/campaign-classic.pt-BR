@@ -6,11 +6,11 @@ description: Defina, otimize, execute e analise campanhas de marketing.
 audience: campaign
 content-type: reference
 topic-tags: about-marketing-campaigns
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: cea4a26935312b1cb119a3fa671af7bf00788fe9
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '448'
-ht-degree: 94%
+ht-degree: 100%
 
 ---
 
@@ -26,7 +26,7 @@ Além disso, o módulo **GMarketing Resource Management (MRM)** permite controla
 >Para saber mais sobre as funcionalidades principais do Adobe Campaign, consulte a seção [Introdução](../../platform/using/about-adobe-campaign-classic.md) .\
 >Os recursos relacionados à definição de metas de população, personalização de mensagens e delivery de mensagens nos diversos canais são detalhados [nesta seção](../../delivery/using/steps-about-delivery-creation-steps.md).
 
-![](assets/do-not-localize/how-to-video.png) [Descubra os conceitos das chaves do campanha de marketing em vídeo](#video)
+![](assets/do-not-localize/how-to-video.png) [Descubra os principais conceitos das campanhas de marketing em vídeo](#video)
 
 ## Conceitos principais {#core-concepts}
 
@@ -68,6 +68,6 @@ Os seguintes conceitos precisam ser conhecidos no contexto do Campaign:
 
 Este vídeo apresenta os principais conceitos das campanhas de marketing.
 
->[!VIDEO](https://video.tv.adobe.com/v/35131?quality=12)
+>[!VIDEO](https://video.tv.adobe.com/v/35131?quality=12&captions=por_br)
 
-Vídeos de procedimentos de Campaign Classic adicionais estão disponíveis [aqui](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html?lang=pt-BR).
+Vídeos extras sobre procedimentos do Campaign Classic estão disponíveis [aqui](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html?lang=pt-BR).
