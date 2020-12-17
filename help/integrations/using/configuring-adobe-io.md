@@ -9,9 +9,9 @@ topic-tags: adobe-experience-manager
 index: y
 internal: n
 snippet: y
-translation-type: ht
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
-workflow-type: ht
+translation-type: tm+mt
+source-git-commit: 0abdbbc33350cf6ec85488483dadb177e685818b
+workflow-type: tm+mt
 source-wordcount: '420'
 ht-degree: 100%
 
