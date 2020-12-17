@@ -7,7 +7,7 @@ audience: platform
 content-type: reference
 topic-tags: starting-with-adobe-campaign
 translation-type: tm+mt
-source-git-commit: 20dcdd91d71158bc373db68c3f61f6808b240bd2
+source-git-commit: 0abdbbc33350cf6ec85488483dadb177e685818b
 workflow-type: tm+mt
 source-wordcount: '2020'
 ht-degree: 20%
@@ -15,13 +15,13 @@ ht-degree: 20%
 ---
 
 
-# Build Upgrade FAQ {#build-upgrade-faq}
+# Criar Perguntas frequentes sobre atualização {#build-upgrade-faq}
 
-O Adobe Campaign é atualizado regularmente. If you are familiar with our published [Release Notes](../../rn/using/rn-overview.md), you are probably aware of the fact that on the average 2/3 minor versions packed with new features, improvements and fixes are released every year. Além disso, periodicamente liberamos builds apenas com correções cumulativas. Essa cadência regular de atualizações tem como objetivo obter as mais recentes e melhores em suas mãos, mantendo seu ambiente totalmente seguro e obviamente melhorando sua experiência com nosso produto.
+O Adobe Campaign é atualizado regularmente. Se você estiver familiarizado com nossas [Notas de versão](../../rn/using/rn-overview.md) publicadas, provavelmente está ciente do fato de que, em média, 2/3 versões secundárias repletas de novos recursos, melhorias e correções são lançadas todos os anos. Além disso, periodicamente liberamos builds apenas com correções cumulativas. Essa cadência regular de atualizações tem como objetivo obter as mais recentes e melhores em suas mãos, mantendo seu ambiente totalmente seguro e obviamente melhorando sua experiência com nosso produto.
 
 É importante que nossos clientes executem a versão mais recente do Adobe Campaign. Ela também permite que o Adobe ajude com muito mais eficiência caso você encontre problemas - identificar, reproduzir e corrigir um problema em uma versão antiga normalmente leva mais tempo, sem mencionar que alguns problemas que você pode encontrar podem muito bem já ter sido corrigidos em uma versão recente.
 
-Por isso, iniciamos o programa [Gold Standard](https://helpx.adobe.com/br/campaign/kb/gold-standard.html) para trabalhar em colaboração com nossos clientes para atualizar seus ambientes de forma proativa e regular.
+Portanto, iniciamos o programa [Gold Standard](https://helpx.adobe.com/br/campaign/kb/gold-standard.html) para trabalhar em colaboração com nossos clientes para atualizar seus ambientes de forma proativa e regular.
 
 ## O que é uma atualização de compilação?
 
@@ -31,11 +31,11 @@ Saiba mais [nesta seção](../../rn/using/rn-overview.md).
 
 ## Qual é a versão mais recente do Adobe Campaign Classic?
 
-A versão mais recente do Campaign Classic, incluindo novos recursos e documentação, está detalhada nas [notas](../../rn/using/latest-release.md)de versão mais recentes.
+A versão mais recente do Campaign Classic, incluindo novos recursos e documentação, está detalhada nas [Notas de versão](../../rn/using/latest-release.md) mais recentes.
 
 ## Como faço para saber qual versão estou executando?
 
-Verifique sua versão no **[!UICONTROL Help > About...]** menu no console do Adobe Campaign Client. The **[!UICONTROL About]**  box contains detailed information on the version and build you are running both for the console and the server.
+Verifique sua versão no menu **[!UICONTROL Help > About...]** no console do Adobe Campaign Client. A caixa **[!UICONTROL About]** contém informações detalhadas sobre a versão e a compilação que você está executando para o console e o servidor.
 
 Saiba mais [nesta seção](../../platform/using/launching-adobe-campaign.md#getting-your-campaign-version).
 
@@ -61,7 +61,7 @@ Por exemplo, usando as informações do servidor da captura de tela na seção a
 
 O Adobe fará um backup do seu sistema antes de qualquer alteração. No entanto, se houver trabalho de personalização crítico que esteja em seu sistema de não produção (servidores de desenvolvimento ou de preparo temporário), é ALTAMENTE RECOMENDADO exportar esse trabalho como um pacote antes de qualquer atualização.
 
-![](assets/do-not-localize/how-to-video.png) Para obter mais informações, [assista a este vídeo](https://helpx.adobe.com/campaign/classic/how-to/generate-packages-in-acv6.html).
+![](assets/do-not-localize/how-to-video.png) Para obter mais informações,  [assista a este vídeo](https://helpx.adobe.com/campaign/classic/how-to/generate-packages-in-acv6.html).
 
 ## Quando ocorrerão as atualizações?
 
@@ -83,7 +83,7 @@ A atualização da criação é um processo de duas etapas:
 
 1. A atualização propriamente dita - o ambiente de produção é atualizado. Esta fase é normalmente realizada em poucas horas. Para ambientes muito complexos, é esperado um tempo de inatividade mais longo. No evento que algo dá errado, uma estratégia de reversão é definida e pode ser executada.
 
-For more information, [refer to this document](https://helpx.adobe.com/br/campaign/kb/acc-build-upgrade.html).
+Para obter mais informações, [consulte este documento](https://helpx.adobe.com/br/campaign/kb/acc-build-upgrade.html).
 
 ## Quais recursos são necessários para a atualização de build?
 
@@ -102,9 +102,9 @@ Atualize seu conhecimento dos workflows e delivery de caminho críticos desenvol
 
 Identifique tempos de tráfego baixos ou de baixo volume que seriam ideais para janelas de manutenção, pois gerarão o menor impacto nos negócios.
 
-Review our [build upgrade checklist below](#check-list) and your test plans and ensure that resources who can perform these tests are available within 24– 48 hrs. da conclusão de uma atualização.
+Revise nossa [lista de verificação de atualização de compilação abaixo](#check-list) e seus planos de teste e verifique se os recursos que podem executar esses testes estão disponíveis dentro de 24 a 48 horas. da conclusão de uma atualização.
 
-For more information, [refer to this document](https://helpx.adobe.com/br/campaign/kb/acc-build-upgrade.html).
+Para obter mais informações, [consulte este documento](https://helpx.adobe.com/campaign/kb/acc-build-upgrade.html).
 
 ## As atualizações de build podem ser realizadas à noite ou fora do horário comercial?
 
@@ -148,13 +148,13 @@ Depende do tamanho do backup do banco de dados. O tempo médio de conclusão é 
 
 ## Que tipos de testes são realizados no meu sistema após a atualização?
 
-Consulte a lista de verificação de atualização da [compilação abaixo](#check-list).
+Consulte a [lista de verificação de atualização de compilação abaixo de](#check-list).
 
 ## Que tipo de teste devo fazer após a atualização?
 
 Os ambientes de desenvolvimento e de estágio são atualizados em sequência ou em conjunto, mas é necessário fazer logoff antes de atualizar a instância de produção. Isso permite que cada cliente realize testes minuciosos antes de desconectar quaisquer alterações na produção.
 
-Consulte a lista de verificação de atualização de [compilação de lista abaixo](#check-list). Os clientes devem executar testes semelhantes, bem como outros que possam precisar para o ambiente.
+Consulte a lista de verificação de atualização da lista [build abaixo](#check-list). Os clientes devem executar testes semelhantes, bem como outros que possam precisar para o ambiente.
 
 ## Com que frequência preciso executar uma atualização de build?
 
@@ -166,9 +166,9 @@ Sim. O servidor é desligado durante uma atualização para garantir que a integ
 
 ## Com quem devo entrar em contato para abrir o tíquete de atualização de build?
 
-Se você enfrentar problemas após uma atualização de criação, entre em contato com o Atendimento [ao cliente da](https://helpx.adobe.com/br/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html)Adobe. O Atendimento ao cliente agendará as datas de criação e abrirá tíquetes relacionados à atualização da compilação.
+Se você enfrentar problemas após uma atualização de compilação, entre em contato com o [Atendimento ao cliente do Adobe](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html). O Atendimento ao cliente agendará as datas de criação e abrirá tíquetes relacionados à atualização da compilação.
 
-Saiba mais sobre as opções de [Ajuda e suporte para o Campaign Classic](https://helpx.adobe.com/campaign/kb/ac-support.html#acc-support-req)
+Saiba mais sobre as opções de [Ajuda e suporte para Campaign Classic](https://helpx.adobe.com/campaign/kb/ac-support.html#acc-support-req)
 
 ## Criar lista de verificação de atualização {#check-list}
 
@@ -185,9 +185,12 @@ Saiba mais sobre as opções de [Ajuda e suporte para o Campaign Classic](https:
 
 * Você pode fazer login no servidor? Verifique se o Console do cliente da Campanha está funcionando sem nenhum pop-up de erro/aviso.
 * Certifique-se de usar a mesma versão do console da versão de compilação após a atualização.
-* Você tem algum aplicativo da Web que insira dados no banco de dados de Campanha? Em caso afirmativo, execute-os e verifique se eles podem inserir novos registros por meio da API.
-* Você pode enviar um email de teste com êxito? Crie um novo delivery usando um modelo conhecido, envie-o para um recipient de teste, verifique a personalização, desfaça o vínculo, mirror page todo o trabalho.
-* Todos os seus workflows de caminho críticos estão em execução? Verifique workflows, abra o journal do fluxo de trabalho e verifique se não há erros.
+* Você tem algum aplicativo da Web que insira dados no banco de dados de Campanha? Em caso afirmativo, execute-os e
+verifique se eles podem inserir novos registros por meio da API.
+* Você pode enviar um email de teste com êxito? Criar novo delivery usando um modelo conhecido, enviá-lo para
+um recipient de teste, verifique a personalização, desfaça o vínculo, mirror page todo o trabalho.
+* Todos os seus workflows de caminho críticos estão em execução? Verificar workflows, abrir journal de fluxo de trabalho, verificar
+que não existem erros.
 * Todas as pastas estão presentes, visíveis e acessíveis? Navegue por pastas diferentes e verifique.
 todo o conteúdo é exibido e está presente.
 * Seus delivery estão passando com o fuso horário correto?
@@ -206,4 +209,4 @@ todo o conteúdo é exibido e está presente.
 * [Atualização de uma build](../../production/using/build-upgrade.md)
 * [Notas de versão do Campaign Classic ](../../rn/using/rn-overview.md)
 * [Opções de ajuda e suporte para Campaign Classic](https://helpx.adobe.com/campaign/kb/ac-support.html#acc-support-req)
-* [Programa Gold Standard](https://helpx.adobe.com/br/campaign/kb/gold-standard.html)
+* [Programa Gold Standard](https://helpx.adobe.com/campaign/kb/gold-standard.html)
