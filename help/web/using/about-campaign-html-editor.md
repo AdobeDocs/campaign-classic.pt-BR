@@ -22,10 +22,12 @@ O **Editor de conteúdo digital (DCE)** é um editor de conteúdo HTML que permi
 O Editor de conteúdo digital permite inserir e formatar elementos de página e mapear campos de banco de dados com elementos de uma página HTML. Esse editor está disponível ao criar uma página para um aplicativo web ou deliveries com base em um modelo de DCE.
 
 >[!NOTE]
+>
 >>Se precisar adicionar um código JavaScript do lado do servidor, use blocos de personalização. [Saiba mais](../../delivery/using/personalization-blocks.md).
 >
 >[!CAUTION]
-Todos os recursos externos precisam ser referenciados com um URL HTTPS.
+>
+>Todos os recursos externos precisam ser referenciados com um URL HTTPS.
 
 ## Etapas principais para usar o editor de conteúdo digital {#content-editor-general-operation}
 
@@ -43,7 +45,8 @@ Para criar um **aplicativo web** simples, é necessário:
 1. Publicar o aplicativo web – [Saiba mais](../../web/using/creating-a-landing-page.md#step-3---publishing-content)
 
 >[!NOTE]
-Uma amostra completa de implementação no contexto de um aplicativo web está disponível [nesta seção](../../web/using/creating-a-landing-page.md).
+>
+>Uma amostra completa de implementação no contexto de um aplicativo web está disponível [nesta seção](../../web/using/creating-a-landing-page.md).
 
 Para criar um **delivery de email**, é necessário:
 
@@ -53,4 +56,5 @@ Para criar um **delivery de email**, é necessário:
 1. Enviar o delivery – [Saiba mais](../../delivery/using/steps-about-delivery-creation-steps.md)
 
 >[!NOTE]
-Uma amostra completa de implementação no contexto de um delivery de email está disponível [neste caso de uso](../../web/using/use-case--creating-an-email-delivery.md).
+>
+>Uma amostra completa de implementação no contexto de um delivery de email está disponível [neste caso de uso](../../web/using/use-case--creating-an-email-delivery.md).
