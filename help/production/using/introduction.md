@@ -7,7 +7,7 @@ audience: production
 content-type: reference
 topic-tags: updating-adobe-campaign
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: 0abdbbc33350cf6ec85488483dadb177e685818b
 workflow-type: tm+mt
 source-wordcount: '178'
 ht-degree: 1%
@@ -38,7 +38,7 @@ A Adobe Campaign se baseia em vários processos executados no lado do servidor q
 
 >[!NOTE]
 >
->For more on the various Adobe Campaign processes, refer to [this section](../../installation/using/general-architecture.md#logical-application-layer).\
+>Para obter mais informações sobre os vários processos do Adobe Campaign, consulte [esta seção](../../installation/using/general-architecture.md#logical-application-layer).\
 >Ao usar a arquitetura do tipo Power Booster ou Power Cluster, você deve aplicar esse processo a todos os servidores Power Booster/Cluster.
 
 Se a nova versão envolver uma alteração na estrutura do banco de dados, recomendamos reiniciar os servidores na seguinte ordem:
