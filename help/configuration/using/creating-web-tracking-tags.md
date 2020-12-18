@@ -24,7 +24,7 @@ Cada página do site que você deseja rastrear deve ser referenciada na sua plat
 
 ## Definição dos URLs a serem rastreados no aplicativo {#defining-the-urls-to-be-tracked-in-the-application}
 
-Esse método permite que você defina manualmente as páginas a serem rastreadas e gere um exemplo do tag de rastreamento da Web associado. Essa operação é definida no **[!UICONTROL Campaign execution>Resources>Web tracking tags]** nó do console do cliente.
+Esse método permite que você defina manualmente as páginas a serem rastreadas e gere um exemplo do tag de rastreamento da Web associado. Essa operação é definida no nó **[!UICONTROL Campaign execution>Resources>Web tracking tags]** do console do cliente.
 
 ![](assets/d_ncs_integration_webtracking_screen.png)
 
@@ -33,13 +33,13 @@ Para gerar o código HTML a ser inserido na página:
 * Digite o rótulo da tag: será mostrada nos logs de rastreamento,
 * Indique o URL de origem: este campo é para fins informativos e permite que você indique a página rastreada (opcional),
 * Se necessário, insira um período de validade,
-* Clique em código **[!UICONTROL Generate]** HTML.
+* Clique em **[!UICONTROL Generate]** código HTML.
 
 Em seguida, copie o código gerado e cole-o na página a ser rastreada.
 
 ## Criação imediata de URLs a serem rastreados {#on-the-fly-creation-of-urls-to-be-tracked}
 
-Você pode criar URLs de rastreamento da Web dinamicamente adicionando informações ao valor do parâmetro **tagid** :
+Você pode criar URLs de rastreamento da Web dinamicamente adicionando informações ao valor do parâmetro **tagid**:
 
 * Tipo de página rastreada: &#39;w&#39; para WEB ou &#39;t&#39; para TRANSAÇÃO,
 * O nome interno da pasta onde o URL deve ser criado.
