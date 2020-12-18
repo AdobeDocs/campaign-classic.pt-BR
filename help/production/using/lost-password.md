@@ -27,12 +27,12 @@ Há dois cenários possíveis:
 
    ![](assets/operator-passwd.png)
 
-* **Perda de senha interna** (somente clientes locais).
+* **Perda** de senha interna (somente clientes locais).
 
-   Se a senha **interna** for perdida, você deverá reinicializá-la. Para isso, execute o seguinte procedimento:
+   Se a senha **internal** for perdida, você deverá reinicializá-la. Para isso, execute o seguinte procedimento:
 
-   1. Edite o arquivo **/usr/local/neolane/nl6/conf/serverConf.xml** .
-   1. Vá para a linha **internaPassword** .
+   1. Edite o arquivo **/usr/local/neolane/nl6/conf/serverConf.xml**.
+   1. Vá para a linha **internalPassword**.
 
       ```
       <!-- XTK authentication mode internalPassword : Password of internal account -->
@@ -61,5 +61,5 @@ Há dois cenários possíveis:
       Confirmation 
       ```
 
-   1. Agora você pode usar sua nova senha para se conectar no modo **Interno** .
+   1. Agora você pode usar sua nova senha para se conectar no modo **Interno**.
 
