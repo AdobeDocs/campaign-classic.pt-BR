@@ -64,4 +64,4 @@ A comunicação geral entre servidores e processos é realizada de acordo com o 
 
 ### Instalação e configuração (implantação de mid-sourcing) {#installing-and-configuring--mid-sourcing-deployment-}
 
-Consulte o servidor [Mid-sourcing](../../installation/using/mid-sourcing-server.md).
+Consulte [Mid-sourcing server](../../installation/using/mid-sourcing-server.md).
