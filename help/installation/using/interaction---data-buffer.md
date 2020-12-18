@@ -19,15 +19,15 @@ ht-degree: 3%
 
 >[!NOTE]
 >
->Algumas configurações só podem ser executadas por Adobe para implantações hospedadas por Adobe. Por exemplo, para acessar os arquivos de configuração do servidor e da instância. Para saber mais sobre as diferentes implantações, consulte a seção Modelos [de](../../installation/using/hosting-models.md) hospedagem ou [esta página](../../installation/using/capability-matrix.md).
+>Algumas configurações só podem ser executadas por Adobe para implantações hospedadas por Adobe. Por exemplo, para acessar os arquivos de configuração do servidor e da instância. Para saber mais sobre as diferentes implantações, consulte a seção [Hospedagem de modelos](../../installation/using/hosting-models.md) ou [esta página](../../installation/using/capability-matrix.md).
 
-No Adobe Campaign, uma zona **de buffer de** dados foi introduzida no módulo Interação. Isso permite **aumentar o desempenho** da interação de entrada ao dessincronizar cálculos de ações e ofertas.
+No Adobe Campaign, uma **zona de buffer de dados** foi introduzida no módulo Interação. Isso permite que você **aumente o desempenho** da interação de entrada ao dessincronizar cálculos de estoque e oferta.
 
 Só diz respeito à Interação de entrada, seja por uma chamada (com ou sem dados de chamada) ou por uma atualização de status (updateStatus).
 
-Para evitar uma fila ao escrever propostas relacionadas a um recipient, um novo processo gera uma zona **de buffer de** dados que permite que as propostas sejam **escritas de forma assíncrona**. Essa zona de buffer de dados é periodicamente lida e esvaziada. O período padrão está no espaço de aproximadamente um segundo.A escrita de propostas é, portanto, agrupada.
+Para evitar uma fila ao gravar propostas relacionadas a um recipient, um novo processo gera uma **zona de buffer de dados** que permite que as propostas sejam **escritas de forma assíncrona**. Essa zona de buffer de dados é periodicamente lida e esvaziada. O período padrão está no espaço de aproximadamente um segundo.A escrita de propostas é, portanto, agrupada.
 
-A **configuração** da zona de buffer de dados pode ser feita no arquivo de configuração da instância (config-Instance.xml).
+A zona de buffer de dados **configuration** pode ser feita no arquivo de configuração da instância (config-Instance.xml).
 
 >[!NOTE]
 >
