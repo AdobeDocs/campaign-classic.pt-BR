@@ -29,7 +29,7 @@ A lista a seguir contém apenas as tabelas mais sujeitas a fragmentação. Os im
 <table> 
  <thead> 
   <tr> 
-   <th> <strong>Nome da tabela </strong><br /> </th> 
+   <th> <strong>Nome da tabela  </strong><br /> </th> 
    <th> <strong>Tamanho</strong><br /> </th> 
    <th> <strong>Tipo principal de atividade</strong><br /> </th> 
    <th> <strong>Comentários</strong><br /> </th> 
@@ -70,7 +70,7 @@ A lista a seguir contém apenas as tabelas mais sujeitas a fragmentação. Os im
    <td> XtkWorkflow<br /> </td> 
    <td> Pequeno<br /> </td> 
    <td> Atualizações<br /> </td> 
-   <td> Há um registro por instância de fluxo de trabalho, portanto, poucos registros. No entanto, o quadro é atualizado regularmente para refletir o estado e o progresso.<br /> </td> 
+   <td> Há um registro por instância de fluxo de trabalho, portanto, poucos registros. No entanto, a tabela é atualizada regularmente para refletir o status e o andamento.<br /> </td> 
   </tr> 
   <tr> 
    <td> XtkWorkflowTask<br /> </td> 
@@ -88,7 +88,7 @@ A lista a seguir contém apenas as tabelas mais sujeitas a fragmentação. Os im
    <td> XtkWorkflowJob<br /> </td> 
    <td> Muito pequeno <br /> </td> 
    <td> Inserções, atualizações, exclusões<br /> </td> 
-   <td> Esta tabela é específica do motor de workflow. Ela permite o envio de comandos para workflows (Start, Parar, Pausar, por exemplo). Embora seja pequeno, este quadro é tomado em consideração durante a purga de tabelas transacionais ligadas a workflows.<br /> </td> 
+   <td> Esta tabela é específica do motor de workflow. Ela permite o envio de comandos para workflows (Start, Parar, Pausar, por exemplo). Embora seja pequena, esta tabela é considerada durante a expurgação de tabelas transacionais vinculadas a workflows.<br /> </td> 
   </tr> 
   <tr> 
    <td> NmsBroadLog<br /> </td> 
@@ -157,16 +157,16 @@ A lista a seguir contém apenas as tabelas mais sujeitas a fragmentação. Os im
    <td> Semelhante às outras tabelas trackingLog, mas com a tabela NmsRtEvent em vez de NmsRecipient.<br /> </td> 
   </tr> 
   <tr> 
-   <td> NmsRtEvent (instância de execução do centro de mensagens)<br /> </td> 
+   <td> NmsRtEvent (instância de execução do Centro de Mensagens)<br /> </td> 
    <td> Grande<br /> </td> 
    <td> Inserções, atualizações, exclusões<br /> </td> 
-   <td> Tabela que contém a fila de evento do Centro de mensagens. O status desses eventos é atualizado pelo Centro de mensagens à medida que são processados. As exclusões são feitas durante a purga. Aconselhamos você a recriar regularmente o índice desta tabela e reconstruí-lo.<br /> </td> 
+   <td> Tabela que contém a fila de evento do Centro de mensagens. O status desses eventos é atualizado pelo Centro de mensagens à medida que são processados. As exclusões são feitas durante a purga. Recomendamos que você recrie regularmente o índice desta tabela e recrie-o.<br /> </td> 
   </tr> 
   <tr> 
-   <td> NmsEventHisto (instância de controle do centro de mensagens)<br /> </td> 
+   <td> NmsEventHisto (instância de controle do Centro de Mensagens)<br /> </td> 
    <td> Grande<br /> </td> 
    <td> Inserções, atualizações, exclusões<br /> </td> 
-   <td> Semelhante a NmsRtEvent. Esta tabela arquiva cada evento de todas as instâncias de execução. É usado por nenhum processo em tempo real, apenas por relatórios.<br /> </td> 
+   <td> Semelhante a NmsRtEvent. Esta tabela arquiva cada evento de todas as instâncias de execução. Ele é usado por nenhum processo em tempo real, somente pelos relatórios.<br /> </td> 
   </tr> 
   <tr> 
    <td> NmsMobileApp<br /> </td> 
