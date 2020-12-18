@@ -30,7 +30,7 @@ API comercial são específicas para cada tipo de objeto. Têm um efeito sobre:
    * iniciar um fluxo de trabalho,
    * verificação dos processos, etc.
 
-      Consulte os métodos [SOAP no JavaScript](../../configuration/using/soap-methods-in-javascript.md).
+      Consulte [métodos SOAP em JavaScript](../../configuration/using/soap-methods-in-javascript.md).
 
 * Gestão de conteúdo
 * Gerenciamento de subscrições, consulte [Assinar (nms:subscrição)](#subscribe--nms-subscription-) e [Cancelar inscrição (nms:subscrição)](#unsubscribe--nms-subscription-).
@@ -40,9 +40,9 @@ Esta seção detalha o uso dos serviços &quot;Assinar&quot;, &quot;Cancelar ins
 
 >[!IMPORTANT]
 >
->[A documentação](https://docs.adobe.com/content/help/en/campaign-classic/technicalresources/api/index.html) JSAPI da campanha contém informações adicionais sobre chamadas SOAP e uso do Javascript no Adobe Campaign, bem como uma referência completa a todos os métodos e funções usados no aplicativo.
+>[A ](https://docs.adobe.com/content/help/en/campaign-classic/technicalresources/api/index.html) documentação JSAPI de campanha contém informações adicionais sobre chamadas SOAP e uso do Javascript no Adobe Campaign, bem como uma referência completa a todos os métodos e funções usados no aplicativo.
 
-## Assinar (nms:subscrição) {#subscribe--nms-subscription-}
+## Assine (nms:subscrição) {#subscribe--nms-subscription-}
 
 Esse serviço permite que você assine um recipient a um serviço de informação e atualize o perfil do recipient.
 
@@ -65,7 +65,7 @@ Descrição do método &quot;subscribe&quot; no schema &quot;nms:subscrição&qu
 </method>
 ```
 
-A definição da chave de reconciliação deve ser inserida por meio do atributo _**key** no `<recipient>` elemento do documento XML. O conteúdo desse atributo é uma lista XPath separada por vírgulas.
+A definição da chave de reconciliação deve ser inserida por meio do atributo _**key** no elemento `<recipient>` do documento XML. O conteúdo desse atributo é uma lista XPath separada por vírgulas.
 
 Esta chamada não retorna nenhum dado, exceto erros.
 
@@ -136,7 +136,7 @@ Descrição do método &quot;Cancelar inscrição&quot; no schema &quot;nms:subs
 </method>
 ```
 
-A definição da chave de reconciliação deve ser inserida por meio do atributo _key no `<recipient>` elemento do documento XML. O conteúdo desse atributo é uma lista XPath separada por vírgulas.
+A definição da chave de reconciliação deve ser inserida por meio do atributo _key no elemento `<recipient>` do documento XML. O conteúdo desse atributo é uma lista XPath separada por vírgulas.
 
 Se o recipient não estiver presente no banco de dados ou não estiver inscrito no serviço de informação em questão, o serviço não executará nenhuma ação e não gerará um erro.
 
@@ -207,7 +207,7 @@ Esta chamada não retorna nenhum dado, exceto erros.
 
 ### Exemplo de documento XML {#xml-document-example}
 
-Este exemplo é baseado em um template do delivery personalizado de uma fonte externa de dados (um arquivo nesse caso). A configuração é totalmente descrita no template do delivery, de modo que tudo o que ainda precisa ser enviado quando a chamada ocorrer é o conteúdo do arquivo do `<externalsource>` elemento.
+Este exemplo é baseado em um template do delivery personalizado de uma fonte externa de dados (um arquivo nesse caso). A configuração está totalmente descrita no template do delivery, portanto, tudo o que ainda precisa ser enviado quando a chamada ocorrer é o conteúdo do arquivo do elemento `<externalsource>`.
 
 ```
 <delivery>
