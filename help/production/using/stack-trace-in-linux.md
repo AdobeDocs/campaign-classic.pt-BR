@@ -17,17 +17,18 @@ ht-degree: 11%
 
 # Rastreamento em pilha no Linux{#stack-trace-in-linux}
 
-Um rastreamento **de** pilha representa um rastreamento contido em um arquivo do tipo **principal** . Esse arquivo é gerado no evento de um erro de computador. Ele pode identificar a origem do erro.
+Um **rastreio de pilha** representa um rastreio contido num ficheiro de tipo **core**. Esse arquivo é gerado no evento de um erro de computador. Ele pode identificar a origem do erro.
 
 >[!NOTE]
 >
->* Um arquivo **principal** é chamado de **núcleo.`<num>`**.
->* **gdb - O Depurador** GNU deve estar instalado no computador.
+>* Um arquivo **core** é chamado **core.`<num>`**.
+>* **gdb - O** Depurador GNU deve estar instalado no computador.
+
 >
 
 
 
-O suporte técnico da Adobe Campaign pode solicitar esse rastreamento **da** pilha. Para obtê-lo, insira os seguintes comandos no Linux:
+O suporte técnico da Adobe Campaign pode solicitar esse **rastreamento de pilha**. Para obtê-lo, insira os seguintes comandos no Linux:
 
 ```
 su - neolane
@@ -56,7 +57,7 @@ gdb nlserver <coreFile>
 
 O suporte técnico da Adobe Campaign pode solicitar que você execute esse comando usando um executável específico (a ser fornecido por nós).
 
-Nesse caso, basta executar o seguinte comando substituindo o **nlserver** pelo executável fornecido pela Adobe Campaign:
+Nesse caso, basta executar o seguinte comando substituindo **nlserver** pelo executável fornecido pela Adobe Campaign:
 
 ```
 gdb nlserver <coreFile>
