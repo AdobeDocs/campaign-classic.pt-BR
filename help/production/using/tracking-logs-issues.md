@@ -19,15 +19,15 @@ ht-degree: 13%
 
 Pode haver vários motivos para logs de rastreamento não serem encaminhados. Recomendamos que você verifique as seguintes informações:
 
-* O fluxo de trabalho de **rastreamento** apresenta erros?
+* O fluxo de trabalho **Tracking** apresenta erros?
 
-   Consulte [Monitorando workflows técnicos](../../workflow/using/monitoring-technical-workflows.md).
+   Consulte [workflows técnicos de monitoramento](../../workflow/using/monitoring-technical-workflows.md).
 
    ![](assets/tracking_scheduled_task.png)
 
-* O módulo **trackinglogd** está sendo executado no servidor?
+* O módulo **trackinglogd** está em execução no servidor?
 
-   Consulte [Registrar arquivos](../../production/using/log-files.md).
+   Consulte [Arquivos de registro](../../production/using/log-files.md).
 
 * Foram feitas mudanças? Eles podem acionar uma perda de conexão com os servidores usando o alias de rastreamento.
 
