@@ -26,5 +26,5 @@ Em um servidor limpo, o procedimento de restauração é o seguinte:
 * criar e reconstruir a base de dados,
 * start Adobe Campaign.
 
-For more information, refer to the **Installation Guide**.
+Para obter mais informações, consulte o **Guia de instalação**.
 
