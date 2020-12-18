@@ -19,15 +19,15 @@ ht-degree: 1%
 
 As camadas de acesso ao banco de dados necessárias devem ser instaladas no servidor e acessíveis a partir da conta da Adobe Campaign.
 
-## Java Development Kit - JDK {#java-development-kit---jdk}
+## Kit de desenvolvimento Java - JDK {#java-development-kit---jdk}
 
 O gerador dinâmico de páginas da Web usa a tecnologia JSP 1.2. Para isso, um mecanismo Tomcat (do Apache) é incluído no aplicativo. Ele requer um Java Development Kit (JDK), instalado em todos os servidores nos quais o aplicativo Adobe Campaign está instalado.
 
-Primeiro, você deve instalar um JDK nos computadores nos quais deseja executar o servidor de aplicativos Adobe Campaign (processo Web **do** nlserver) porque ele incorpora um container de servlet, o Apache Tomcat, usado para gerar páginas da Web dinâmicas (relatórios, Formulários web etc.).
+Primeiro, você deve instalar um JDK nos computadores nos quais deseja executar o servidor de aplicativos Adobe Campaign (**nlserver web** processo) porque ele incorpora um container servlet, o Apache Tomcat, usado para gerar páginas da Web dinâmicas (relatórios, Formulários web etc.).
 
-The application has been approved for the Java Development Kit (JDK) developed by Oracle as well as for **OpenJDK**.
+O aplicativo foi aprovado para o Java Development Kit (JDK) desenvolvido pela Oracle e para **OpenJDK**.
 
-The supported versions are detailed in Campaign [Compatibility matrix](../../rn/using/compatibility-matrix.md).
+As versões compatíveis são detalhadas na Campanha [Matriz de compatibilidade](../../rn/using/compatibility-matrix.md).
 
 >[!NOTE]
 >
@@ -35,7 +35,7 @@ The supported versions are detailed in Campaign [Compatibility matrix](../../rn/
 >  
 >Ao instalar, você não é obrigado a realizar a integração com os navegadores da Web.
 >
->Em uma máquina que executa apenas agentes de delivery (processo **nlserver mta** ) ou o servidor de fluxo de trabalho (processo **nlserver wfserver** ), a instalação de um JDK não é necessária.
+>Em uma máquina que só executa agentes de delivery (**nlserver mta** processo) ou o servidor de fluxo de trabalho (**nlserver wfserver** processo), a instalação de um JDK não é necessária.
 
 Para baixar o Java JDK, conecte-se a: [https://www.oracle.com/technetwork/java/javase/downloads/index.html](https://www.oracle.com/technetwork/java/javase/downloads/index.html).
 
@@ -65,11 +65,11 @@ No Linux, o OpenSSL deve estar instalado. As versões suportadas pelo Adobe Camp
 
 ## Exportação de relatórios {#exporting-reports}
 
-O Adobe Campaign permite exportar relatórios da plataforma no formato Microsoft Excel e Adobe PDF. Para o formato do Microsoft Excel, a Adobe Campaign usa o **LibreOffice**. Para o formato Adobe PDF, a Adobe Campaign usa o conversor **PhantomJS** . O PhantomJs está incluído no pacote de fábrica e o LibreOffice deve estar instalado nas máquinas nas quais o servidor de aplicativos Adobe Campaign é executado (processo web **do** nlserver).
+O Adobe Campaign permite exportar relatórios da plataforma no formato Microsoft Excel e Adobe PDF. Para o formato do Microsoft Excel, a Adobe Campaign usa **LibreOffice**. Para o formato Adobe PDF, a Adobe Campaign usa o conversor **PhantomJS**. O PhantomJs está incluído no pacote de fábrica e o LibreOffice deve estar instalado nas máquinas em que o servidor de aplicativos Adobe Campaign é executado (**nlserver web** processo).
 
 >[!NOTE]
 >
->Para Linux, será necessário adicionar fontes. Para obter mais informações, consulte [Fontes para estatísticas](../../installation/using/prerequisites-of-campaign-installation-in-linux.md#fonts-for-mta-statistics)MTA.
+>Para Linux, será necessário adicionar fontes. Para obter mais informações, consulte [Fontes para estatísticas MTA](../../installation/using/prerequisites-of-campaign-installation-in-linux.md#fonts-for-mta-statistics).
 
 ## SpamAssassin {#spamassassin}
 
@@ -77,8 +77,8 @@ O SpamAssassin permite que você atribua uma pontuação a emails para determina
 
 A qualificação de emails como indesejados pelo SpamAssassin é baseada inteiramente em regras de filtragem e pontuação. Essas regras devem, portanto, ser atualizadas pelo menos uma vez por dia para que sua instalação do SpamAssassin e sua integração à Adobe Campaign estejam totalmente funcionais e para garantir a relevância das pontuações atribuídas aos delivery antes do envio. Esta atualização é da responsabilidade do administrador do servidor que hospeda o SpamAssassin.
 
-A versão mínima suportada é: **3,4**
+A versão mínima suportada é: **3.4**
 
 O SpamAssassin requer um acesso HTTP à Internet (tcp/80).
 
-As etapas de instalação e configuração do SpamAssassin são apresentadas em [Configuração do SpamAssassin](../../installation/using/configuring-spamassassin.md).
+Os estágios de instalação e configuração do SpamAssassin são apresentados em [Configuração do SpamAssassin](../../installation/using/configuring-spamassassin.md).
