@@ -17,7 +17,7 @@ ht-degree: 4%
 
 # Configurações específicas na v5.11{#specific-configurations-in-v5-11}
 
-Esta seção detalha a configuração adicional necessária ao migrar da v5.11. Você também deve definir as configurações detalhadas na seção Configurações [](../../migration/using/general-configurations.md) gerais.
+Esta seção detalha a configuração adicional necessária ao migrar da v5.11. Você também deve definir as configurações detalhadas na seção [Configurações gerais](../../migration/using/general-configurations.md).
 
 ## Aplicações web {#web-applications}
 
@@ -38,7 +38,7 @@ Se o arquivo estiver vazio ou não, verifique se essas IDs não são usadas para
 
 ## Fluxos de trabalho {#workflows}
 
-Como o nome do diretório de instalação do Adobe Campaign foi alterado, alguns workflows podem não funcionar após a migração. Se um fluxo de trabalho fizer referência ao diretório nl5 em uma de suas atividades, isso gerará um erro. Substitua esta referência por **compilação**. Você pode executar um query SQL para identificar esses workflows (exemplo do PostgreSQL):
+Como o nome do diretório de instalação do Adobe Campaign foi alterado, alguns workflows podem não funcionar após a migração. Se um fluxo de trabalho fizer referência ao diretório nl5 em uma de suas atividades, isso gerará um erro. Substitua esta referência por **build**. Você pode executar um query SQL para identificar esses workflows (exemplo do PostgreSQL):
 
 ```
 SELECT   iWorkflowId, sInternalName, sLabel 
@@ -66,19 +66,19 @@ mysql_tzinfo_to_sql /usr/share/zoneinfo | mysql -u root mysql
 
 >[!NOTE]
 >
->Para obter mais informações, consulte a página [https://dev.mysql.com/doc/refman/8.0/en/time-zone-support.html](https://dev.mysql.com/doc/refman/8.0/en/time-zone-support.html) .
+>Para obter mais informações, consulte a página [https://dev.mysql.com/doc/refman/8.0/en/time-zone-support.html](https://dev.mysql.com/doc/refman/8.0/en/time-zone-support.html).
 
-Se modificações tiverem sido feitas na estrutura do banco de dados, durante a configuração, por exemplo (criação de índices específicos, criação de visualizações SQL etc.), determinadas precauções devem ser tomadas ao migrar. Com efeito, certas modificações podem ser geradas por incompatibilidades com o procedimento de migração. Por exemplo, a criação de visualizações SQL que contêm campos de **Carimbo de data e hora** não é compatível com a opção **usetimestamptz** . Por conseguinte, recomendamos que siga as recomendações abaixo:
+Se modificações tiverem sido feitas na estrutura do banco de dados, durante a configuração, por exemplo (criação de índices específicos, criação de visualizações SQL etc.), determinadas precauções devem ser tomadas ao migrar. Com efeito, certas modificações podem ser geradas por incompatibilidades com o procedimento de migração. Por exemplo, a criação de visualizações SQL contendo os campos **Carimbo de data e hora** não é compatível com a opção **usetimestamptz**. Por conseguinte, recomendamos que siga as recomendações abaixo:
 
 1. Antes de iniciar a migração, faça backup do banco de dados.
 1. Excluir alterações de SQL.
-1. Execute o pós-upgrade de acordo com o procedimento detalhado na seção [Pré-requisitos para migração para o Adobe Campaign 7](../../migration/using/prerequisites-for-migration-to-adobe-campaign-7.md) .
+1. Execute o pós-upgrade de acordo com o procedimento detalhado na seção [Pré-requisitos para migração para o Adobe Campaign 7](../../migration/using/prerequisites-for-migration-to-adobe-campaign-7.md).
    >[!NOTE]
    >
-   >É imperativo que você siga as etapas de migração apresentadas na [seção Pré-requisitos para migração para o Adobe Campaign 7](../../migration/using/prerequisites-for-migration-to-adobe-campaign-7.md) .
+   >É imperativo que você siga as etapas de migração apresentadas na seção [Pré-requisitos para migração para o Adobe Campaign 7](../../migration/using/prerequisites-for-migration-to-adobe-campaign-7.md).
 1. Reintegrar alterações SQL.
 
-Neste exemplo, uma visualização **NmcTrackingLogMessages** foi criada e tem um campo **Carimbo** de data e hora chamado **tslog**. Nesse caso, o procedimento de migração falha e a seguinte mensagem de erro é exibida:
+Neste exemplo, uma visualização **NmcTrackingLogMessages** foi criada e tem um campo **Carimbo de data e hora** chamado **tslog**. Nesse caso, o procedimento de migração falha e a seguinte mensagem de erro é exibida:
 
 ```
 2011-10-04 11:57:51.804Z B67B28C0 1 info log Updating table 'NmcTrackingLogMessages'
@@ -90,7 +90,7 @@ Para garantir que a pós-atualização funcione, você deve excluir a visualiza�
 
 ## Rastreamento {#tracking}
 
-A fórmula de rastreamento foi modificada. Ao migrar, a fórmula antiga (v5) é substituída pela nova (v7). Se você usar uma fórmula personalizada no Adobe Campaign v5, essa configuração deverá ser adaptada no Adobe Campaign v7 (opções **NmsTracking_ClickFórmula** e **NmsTracking_OpenFórmula** ).
+A fórmula de rastreamento foi modificada. Ao migrar, a fórmula antiga (v5) é substituída pela nova (v7). Se você usar uma fórmula personalizada no Adobe Campaign v5, essa configuração deverá ser adaptada nas opções do Adobe Campaign v7 (**NmsTracking_ClickFórmula** e **NmsTracking_OpenFórmula**).
 
 O gerenciamento de rastreamentos web também foi modificado. Depois que a migração para v7 for realizada, você deverá start o assistente de implantação para concluir a configuração do rastreamento da Web.
 
@@ -98,19 +98,19 @@ O gerenciamento de rastreamentos web também foi modificado. Depois que a migra�
 
 Três modos estão disponíveis:
 
-* **Rastreamento** da Web da sessão: Se o **[!UICONTROL Leads]** pacote não tiver sido instalado, essa opção será selecionada por padrão. Essa opção é a mais ideal em termos de desempenho e permite limitar o tamanho dos logs de rastreamento.
+* **Rastreamento** da Web da sessão: Se o  **[!UICONTROL Leads]** pacote não tiver sido instalado, essa opção será selecionada por padrão. Essa opção é a mais ideal em termos de desempenho e permite limitar o tamanho dos logs de rastreamento.
 * **Rastreamento web permanente**
-* **Rastreamento web** anônimo: Se o **[!UICONTROL Leads]** pacote estiver instalado, essa opção será selecionada por padrão. É a opção que mais consome recursos. Como acima, a coluna **sSourceId** deve ser indexada (na tabela de rastreamento e na tabela **CrmIncomingLead** ).
+* **Rastreamento web** anônimo: Se o  **[!UICONTROL Leads]** pacote estiver instalado, essa opção será selecionada por padrão. É a opção que mais consome recursos. Como acima, a coluna **sSourceId** deve ser indexada (na tabela de rastreamento e na tabela **CrmIncomingLead**).
 
 >[!NOTE]
 >
->For more information on these three modes, refer to [this section](../../configuration/using/about-web-tracking.md).
+>Para obter mais informações sobre esses três modos, consulte [esta seção](../../configuration/using/about-web-tracking.md).
 
 ## Estrutura em árvore do Adobe Campaign v7 {#campaign-vseven-tree-structure}
 
 Durante a migração, a estrutura em árvore é automaticamente reorganizada com base nos padrões v7. As novas pastas são adicionadas, as pastas obsoletas são excluídas e seu conteúdo é colocado na pasta &quot;Para mover&quot;. Todos os itens desta pasta devem ser verificados após a migração, e o consultor deve decidir mantê-la ou excluí-la. Os artigos a conservar devem ser transferidos para o local certo.
 
-Uma opção foi adicionada para desativar a migração automática da árvore de navegação. Esta operação agora é manual. Pastas obsoletas não são excluídas e novas pastas não são adicionadas. Essa opção só deve ser usada se a árvore de navegação predefinida v5 tiver sofrido muitas alterações. Adicione a opção ao console, antes de migrar, no **[!UICONTROL Administration > Options]** nó:
+Uma opção foi adicionada para desativar a migração automática da árvore de navegação. Esta operação agora é manual. Pastas obsoletas não são excluídas e novas pastas não são adicionadas. Essa opção só deve ser usada se a árvore de navegação predefinida v5 tiver sofrido muitas alterações. Adicione a opção ao console, antes de migrar, no nó **[!UICONTROL Administration > Options]**:
 
 * Nome interno: NlMigration_KeepFolderStructure
 * Tipo de dados: Número inteiro
