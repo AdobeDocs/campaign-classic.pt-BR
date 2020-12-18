@@ -60,7 +60,7 @@ Para uma instância **prod** existente em Linux/PostgreSQL, as etapas para alter
    vi config-prod.xml
    ```
 
-   Adicione o caractere **u** na frente do valor relacionado ao identificador do banco de dados (**databaseId**):
+   Adicione o caractere **u** à frente do valor relacionado ao identificador do banco de dados (**databaseId**):
 
    ```
    <web>
