@@ -51,7 +51,7 @@ A tabela a seguir fornece uma lista de parâmetros especiais suportados pelo ser
                         </tr>
                         <tr>
                            <td>
-                              <p>uuid230</p> 
+                              <p>uid230</p> 
                            </td>
                            <td>
                               <p>Cookie permanente</p> 
@@ -79,7 +79,8 @@ A tabela a seguir fornece uma lista de parâmetros especiais suportados pelo ser
                               <p>Parâmetro de URL</p> 
                            </td>
                            <td>
-                              <p>Identificador de delivery a ser usado se não houver cookie de sessão. Este valor deve ser expresso em hexadecimal.
+                              <p>Identificador de delivery a ser usado se não houver cookie de sessão. Este valor deve ser
+                                 expresso em hexadecimal.
                               </p> 
                            </td> 
                         </tr>
@@ -91,7 +92,9 @@ A tabela a seguir fornece uma lista de parâmetros especiais suportados pelo ser
                               <p>Parâmetro de URL</p> 
                            </td>
                            <td>
-                              <p>Parâmetro usado para identificar o usuário da Internet. O formato desse parâmetro é "name=value", onde o nome é um campo do schema do recipient. Esse parâmetro tem prioridade sobre o identificador contido no cookie da sessão.
+                              <p>Parâmetro usado para identificar o usuário da Internet. O formato desse parâmetro é "name=value",
+                                 onde o nome é um campo do schema do recipient. Este parâmetro tem prioridade sobre
+                                 o identificador contido no cookie da sessão.
                               </p> 
                            </td> 
                         </tr> 
@@ -128,6 +131,6 @@ A tabela a seguir fornece uma lista de parâmetros especiais suportados pelo ser
 
 Os seguintes métodos são possíveis:
 
-* Inserir o URL no atributo **&quot;src&quot;** de uma **`<img>`** tag HTML incorporada na página da Web que você deseja rastrear.
+* Inserir o URL no atributo **&quot;src&quot;** de uma tag HTML **`<img>`** incorporada na página da Web que você deseja rastrear.
 * Chamada direta para o servidor de redirecionamento quando a página da Web que você deseja rastrear for gerada.
 
