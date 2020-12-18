@@ -17,10 +17,10 @@ ht-degree: 71%
 
 # Configuração do acesso ao SAP HANA {#configure-access-to-sap-hana}
 
-Use a opção Campanha [Federated Data Acces](../../installation/using/about-fda.md) (FDA) para processar informações armazenadas em bancos de dados externos. Siga as etapas abaixo para configurar o acesso ao SAP HANA.
+Use a opção Campanha [Federated Data Acces](../../installation/using/about-fda.md) (FDA) para processar informações armazenadas em um banco de dados externo. Siga as etapas abaixo para configurar o acesso ao SAP HANA.
 
-1. Configurar banco de dados [SAP HANA](#sap-config)
-1. Configure a [conta externa](#sap-external) SAP HANA na Campanha
+1. Configurar [banco de dados SAP HANA](#sap-config)
+1. Configure o SAP HANA [conta externa](#sap-external) na Campanha
 
 ## Drivers SAP HANA {#sap-config}
 
