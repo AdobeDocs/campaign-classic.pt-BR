@@ -35,13 +35,13 @@ Para fazer isso, siga as etapas abaixo:
 
 1. Criar uma cópia dos bancos de dados em todas as instâncias do ambiente de origem,
 1. Restaure essas cópias em todas as instâncias do ambiente do público alvo,
-1. Execute o script de cauterização **nms:congelamentoInstance.js** no ambiente do público alvo antes de iniciá-lo.
+1. Execute o script de cauterização **nms:congelarInstance.js** no ambiente do público alvo antes de iniciá-lo.
 
    Esse processo não afeta os servidores e suas configurações.
 
    >[!NOTE]
    >
-   >No contexto do Adobe Campaign, uma **cauterização** combina ações que permitem interromper todos os processos interagindo com o exterior: registros, rastreamento, delivery, workflows da campanha etc.\
+   >No contexto do Adobe Campaign, uma **cauterization** combina ações que permitem interromper todos os processos interagindo com o exterior: registros, rastreamento, delivery, workflows da campanha etc.\
    >Essa etapa é necessária para evitar a entrega de mensagens várias vezes (uma vez do ambiente nominal e outra do ambiente duplicado).
 
    >[!IMPORTANT]
@@ -49,7 +49,7 @@ Para fazer isso, siga as etapas abaixo:
    >Um ambiente pode conter várias instâncias. Cada instância da Adobe Campaign está sujeita a um contrato de licença. Verifique seu contrato de licença para ver quantos ambientes você pode ter.\
    >O procedimento abaixo permite que você transfira um ambiente sem afetar o número de ambientes e instâncias que você instalou.
 
-### Antes do seu start {#before-you-start}
+### Antes de start {#before-you-start}
 
 >[!IMPORTANT]
 >
@@ -61,19 +61,20 @@ Para que esse processo funcione, os ambientes de origem e de público alvo devem
 
 ### Procedimento de transferência {#transfer-procedure}
 
-Esta seção o ajudará a entender as etapas necessárias para transferir um ambiente de origem para um ambiente de público alvo por meio de um estudo de caso: nosso objetivo aqui é restaurar um ambiente de produção (instância **prod** ) para um ambiente de desenvolvimento (instância **dev** ) para trabalhar em um contexto o mais próximo possível da plataforma &#39;live&#39;.
+Esta seção o ajudará a entender as etapas necessárias para transferir um ambiente de origem para um ambiente de público alvo por meio de um estudo de caso: nosso objetivo aqui é restaurar um ambiente de produção (**prod** instância) para um ambiente de desenvolvimento (**dev** instância) para funcionar em um contexto o mais próximo possível da plataforma &#39;live&#39;.
 
 As etapas a seguir devem ser executadas com muito cuidado: alguns processos ainda podem estar em andamento quando os bancos de dados do ambiente de origem são copiados. A cauterização (etapa 3 abaixo) impede que as mensagens sejam enviadas duas vezes e mantém a consistência dos dados.
 
 >[!IMPORTANT]
 >
 >* O procedimento a seguir é válido na linguagem PostgreSQL. Se a linguagem SQL for diferente (Oracle, por exemplo), os query SQL devem ser adaptados.
->* Os comandos abaixo se aplicam no contexto de uma instância de **prod** e uma instância **dev** em PostgreSQL.
+>* Os comandos abaixo se aplicam no contexto de uma instância **prod** e uma instância **dev** em PostgreSQL.
+
 >
 
 
 
-### Etapa 1 - Faça um backup dos dados do ambiente de origem (prod) {#step-1---make-a-backup-of-the-source-environment--prod--data}
+### Etapa 1 - Faça um backup dos dados {#step-1---make-a-backup-of-the-source-environment--prod--data} do ambiente de origem (prod)
 
 Copiar os bancos de dados
 
@@ -144,8 +145,8 @@ Você também pode verificar se nenhum processo do sistema ainda está em execu�
 
 Para fazer isso, realize o seguinte processo:
 
-* No Windows: abra o gerenciador **de** Tarefas e verifique se não há processos **nlserver.exe** .
-* No Linux: execute os **ps aux | grep nlserver** e verifique se não há processos **nlserver** .
+* No Windows: abra o **gerenciador de Tarefas** e verifique se não há processos **nlserver.exe**.
+* No Linux: execute **ps aux | grep nlserver** e verifique se não há processos **nlserver**.
 
 ### Etapa 4 - Restaurar os bancos de dados no ambiente do público alvo (dev) {#step-4---restore-the-databases-in-the-target-environment--dev-}
 
@@ -192,9 +193,9 @@ No ambiente do público alvo, volte a start dos processos Adobe Campaign para to
 
 >[!NOTE]
 >
->Antes de reiniciar o Adobe Campaign no ambiente **dev** , você pode aplicar um procedimento de segurança adicional: start somente o módulo **da Web** .
+>Antes de reiniciar o Adobe Campaign no ambiente **dev**, você pode aplicar um procedimento de segurança adicional: start somente o módulo **web**.
 >  
->Para fazer isso, edite o arquivo de configuração da sua instância (**config-dev.xml**) e adicione o caractere &quot;_&quot; antes das opções autoStart=&quot;true&quot; para cada módulo (mta, stat etc.).
+>Para fazer isso, edite o arquivo de configuração da sua instância (**config-dev.xml**), em seguida, adicione o caractere &quot;_&quot; antes das opções autoStart=&quot;true&quot; para cada módulo (mta, stat etc.).
 
 Execute o seguinte comando para start do processo da Web:
 
@@ -223,11 +224,11 @@ Para importar a configuração do banco de dados do ambiente do público alvo (d
 1. Abra o console de administração do banco de dados e expurgue as contas externas (table nms:extAccount) cuja ID não seja 0 (@id &lt;> 0).
 1. No console do Adobe Campaign, importe o pacote options_dev.xml criado anteriormente pela funcionalidade do pacote de importação.
 
-   Verifique se as opções foram atualizadas no **[!UICONTROL Administration > Platform > Options]** nó.
+   Verifique se as opções foram atualizadas no nó **[!UICONTROL Administration > Platform > Options]**.
 
 1. No console do Adobe Campaign, importe o extaccount_dev.xml criado anteriormente pela funcionalidade do pacote de importação
 
-   Verifique se as bases de dados externas foram realmente importadas no **[!UICONTROL Administration > Platform > External accounts]** .
+   Verifique se os bancos de dados externos foram realmente importados em **[!UICONTROL Administration > Platform > External accounts]**.
 
 ### Etapa 9 - Reiniciar todos os processos e alterar usuários (dev) {#step-9---restart-all-processes-and-change-users--dev-}
 
