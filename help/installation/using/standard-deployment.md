@@ -54,7 +54,7 @@ Esse tipo de configuração pode lidar com um grande número de recipient (500.0
    * a primeira exposta ao público para rastreamento e apontamento para o balanceador de carga em um endereço IP virtual (VIP) e que é então distribuída para os dois servidores frontais,
    * a segunda foi exposta aos usuários internos para acesso por meio do console e apontando para o mesmo servidor de aplicativos.
 
-* Firewall configurado para abrir STMP (25), DNS (53), HTTP (80), HTTPS (443), SQL (1521 para Oracle, 5432 para PostgreSQL etc.) portas. Para obter mais informações, consulte a seção Acesso [ao](../../installation/using/network-configuration.md#database-access)banco de dados.
+* Firewall configurado para abrir STMP (25), DNS (53), HTTP (80), HTTPS (443), SQL (1521 para Oracle, 5432 para PostgreSQL etc.) portas. Para obter mais informações, consulte a seção [Acesso ao banco de dados](../../installation/using/network-configuration.md#database-access).
 
 ### Instalação do servidor de aplicativos {#installing-the-application-server}
 
@@ -64,7 +64,7 @@ Como o computador não é um servidor de rastreamento, não considere a integra�
 
 Nos exemplos a seguir, os parâmetros da instância são:
 
-* Nome da instância: **demonstração**
+* Nome da instância: **demo**
 * Máscara de DNS: **console.campanha.net*** (somente para conexões de console do cliente e para relatórios)
 * Idioma: Inglês
 * Banco de dados: **campanha:demo@dbsrv**
@@ -77,14 +77,14 @@ As etapas são as seguintes:
 
 1. Instale o servidor Adobe Campaign.
 
-   Para obter mais informações, consulte [Pré-requisitos de instalação do Campaign no Linux](../../installation/using/prerequisites-of-campaign-installation-in-linux.md) (Linux) e [Pré-requisitos de instalação do Campaign no Windows](../../installation/using/prerequisites-of-campaign-installation-in-windows.md) (Windows).
+   Para obter mais informações, consulte [Pré-requisitos de instalação da Campanha no Linux](../../installation/using/prerequisites-of-campaign-installation-in-linux.md) (Linux) e [Pré-requisitos de instalação da Campanha no Windows](../../installation/using/prerequisites-of-campaign-installation-in-windows.md) (Windows).
 
 1. Siga o procedimento de integração do servidor Web (IIS, Apache) descrito nas seguintes seções:
 
-   * For Linux: [Integration into a Web server for Linux](../../installation/using/integration-into-a-web-server-for-linux.md)
-   * For Windows: [Integration into a Web server for Windows](../../installation/using/integration-into-a-web-server-for-windows.md)
+   * Para Linux: [Integração em um servidor Web para Linux](../../installation/using/integration-into-a-web-server-for-linux.md)
+   * Para Windows: [Integração em um servidor Web para Windows](../../installation/using/integration-into-a-web-server-for-windows.md)
 
-1. Crie a instância de **demonstração** . Há duas maneiras de fazer isso:
+1. Crie a instância **demo**. Há duas maneiras de fazer isso:
 
    * Crie a instância por meio do console:
 
@@ -100,14 +100,14 @@ As etapas são as seguintes:
       nlserver config -addinstance:demo/tracking.campaign.net*
       ```
 
-      For more on this, refer to [Creating an instance](../../installation/using/command-lines.md#creating-an-instance).
+      Para obter mais informações, consulte [Criação de uma instância](../../installation/using/command-lines.md#creating-an-instance).
    O nome da instância é o mesmo do servidor de aplicativos.
 
-   A conexão com o servidor com o módulo da Web **do** nlserver (mirrores page, unsubscription) será feita a partir do URL do balanceador de carga (tracking.campanha.net).
+   A conexão com o servidor com o módulo **nlserver web** (mirrores page, unsubscription) será feita a partir do URL do balanceador de carga (tracking.campanha.net).
 
-1. Altere o **interno** para o mesmo que o servidor de aplicativos.
+1. Altere **internal** para o mesmo que o servidor de aplicativos.
 
-   For more on this, refer to [Internal identifier](../../installation/using/campaign-server-configuration.md#internal-identifier).
+   Para obter mais informações, consulte [Identificador interno](../../installation/using/campaign-server-configuration.md#internal-identifier).
 
 1. Vincule o banco de dados à instância:
 
@@ -115,9 +115,9 @@ As etapas são as seguintes:
    nlserver config -setdblogin:PostgreSQL:campaign:demo@dbsrv -instance:demo
    ```
 
-1. Nos arquivos **config-default.xml** e **config-demo.xml** , ative os módulos **web**, **trackinglogd** e **mta** .
+1. Nos arquivos **config-default.xml** e **config-demo.xml**, ative os módulos **web**, **trackinglogd** e **mta**.
 
-   For more on this, refer to [Enabling processes](../../installation/using/campaign-server-configuration.md#enabling-processes).
+   Para obter mais informações, consulte [Ativando processos](../../installation/using/campaign-server-configuration.md#enabling-processes).
 
 1. Edite o arquivo **serverConf.xml** e preencha:
 
@@ -129,9 +129,9 @@ As etapas são as seguintes:
 
       >[!NOTE]
       >
-      >O parâmetro **nameServers** só é usado no Windows.
+      >O parâmetro **nameServers** só é utilizado no Windows.
 
-      For more on this, refer to [Delivery settings](../../installation/using/campaign-server-configuration.md#delivery-settings).
+      Para obter mais informações, consulte [configurações do Delivery](../../installation/using/campaign-server-configuration.md#delivery-settings).
 
    * os servidores de rastreamento redundantes nos parâmetros de redirecionamento:
 
@@ -140,7 +140,7 @@ As etapas são as seguintes:
       <spareServer enabledIf="$(hostname)!='front_srv2'" id="2" url="https://front_srv2:8080"/>
       ```
 
-      For more on this, refer to [Redundant tracking](../../installation/using/configuring-campaign-server.md#redundant-tracking).
+      Para obter mais informações, consulte [Rastreamento redundante](../../installation/using/configuring-campaign-server.md#redundant-tracking).
 
 1. Start o site e teste o redirecionamento do URL: [https://tracking.campaign.net/r/test](https://tracking.campaign.net/r/test).
 
@@ -162,19 +162,19 @@ As etapas são as seguintes:
    * Para Windows: [Iniciar o servidor Web e testar a configuração](../../installation/using/integration-into-a-web-server-for-windows.md#launching-the-web-server-and-testing-the-configuration)
 
 1. Start o servidor Adobe Campaign.
-1. No console do Adobe Campaign, conecte-se usando o logon do **administrador** sem uma senha e inicie o assistente de implantação.
+1. No console do Adobe Campaign, conecte-se usando o logon **admin** sem uma senha e inicie o assistente de implantação.
 
-   For more on this, refer to [Deploying an instance](../../installation/using/deploying-an-instance.md).
+   Para obter mais informações, consulte [Implantação de uma instância](../../installation/using/deploying-an-instance.md).
 
    A configuração é idêntica a uma instância independente, além da configuração do módulo de rastreamento.
 
 1. Preencha o URL externo (o do balanceador de carga) usado para redirecionamento e os URLs internos dos dois servidores frontais.
 
-   For more on this, refer to [Tracking configuration](../../installation/using/deploying-an-instance.md#tracking-configuration).
+   Para obter mais informações, consulte [Configuração de rastreamento](../../installation/using/deploying-an-instance.md#tracking-configuration).
 
    ![](assets/d_ncs_install_tracking2.png)
 
    >[!NOTE]
    >
-   >Usamos a instância existente dos dois servidores de rastreamento criados anteriormente e o logon **interno** .
+   >Usamos a instância existente dos dois servidores de rastreamento criados anteriormente e usamos o logon **interno**.
 
