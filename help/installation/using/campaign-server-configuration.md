@@ -19,15 +19,15 @@ ht-degree: 2%
 
 As seções a seguir detalham as configurações obrigatórias do servidor, o que garantirá o funcionamento eficiente da Adobe Campaign para a maioria das configurações.
 
-Configurações adicionais são oferecidas em [Configuração do servidor](../../installation/using/configuring-campaign-server.md)de Campanha.
+Configurações adicionais são oferecidas em [Configurando o servidor de Campanha](../../installation/using/configuring-campaign-server.md).
 
 >[!NOTE]
 >
->As configurações do lado do servidor só podem ser executadas por Adobe para implantações hospedadas pelo Adobe. Para saber mais sobre as diferentes implantações, consulte a seção Modelos [de](../../installation/using/hosting-models.md) hospedagem ou [a matriz](../../installation/using/capability-matrix.md)de recursos.
+>As configurações do lado do servidor só podem ser executadas por Adobe para implantações hospedadas pelo Adobe. Para saber mais sobre as diferentes implantações, consulte a seção [Modelos de hospedagem](../../installation/using/hosting-models.md) ou [a matriz de recursos](../../installation/using/capability-matrix.md).
 
 ## Identificador interno {#internal-identifier}
 
-O identificador **interno** é um logon técnico a ser usado para fins de instalação, administração e manutenção. Esse logon não está associado a uma instância.
+O identificador **internal** é um logon técnico a ser usado para fins de instalação, administração e manutenção. Esse logon não está associado a uma instância.
 
 Os operadores conectados usando esse logon terão todos os direitos em todas as instâncias. Este logon não terá uma senha no caso de uma nova instalação. É necessário definir essa senha manualmente.
 
@@ -53,10 +53,10 @@ Confirmation: XXXX
 
 Os arquivos de configuração são armazenados na pasta **conf** da pasta de instalação do Adobe Campaign. A configuração é distribuída por dois arquivos:
 
-* **`config-<instance>.xml`** (onde **instância** é o nome da instância): configuração específica da instância. Se você compartilhar seu servidor entre várias instâncias, insira os parâmetros específicos de cada instância em seu arquivo relevante.
+* **`config-<instance>.xml`** (onde  **** instância é o nome da instância): configuração específica da instância. Se você compartilhar seu servidor entre várias instâncias, insira os parâmetros específicos de cada instância em seu arquivo relevante.
 * **serverConf.xml**: configuração geral para todas as instâncias. Este arquivo combina os parâmetros técnicos do servidor Adobe Campaign: eles são compartilhados por todas as instâncias. A descrição de alguns desses parâmetros é detalhada abaixo. Consulte o próprio arquivo para visualização de todos os parâmetros disponíveis. Os diferentes nós e parâmetros e listados nesta [seção](../../installation/using/the-server-configuration-file.md).
 
-Você pode configurar o diretório do armazenamento (diretório **var** ) dos dados do Adobe Campaign (registros, downloads, redirecionamentos etc.). Para fazer isso, use a variável do sistema **XTK_VAR_DIR** :
+Você pode configurar o diretório do armazenamento (**var** diretório) dos dados do Adobe Campaign (registros, downloads, redirecionamentos etc.). Para fazer isso, use a variável do sistema **XTK_VAR_DIR**:
 
 * No Windows, indique o seguinte valor na variável do sistema **XTK_VAR_DIR**
 
@@ -64,21 +64,21 @@ Você pode configurar o diretório do armazenamento (diretório **var** ) dos da
    D:\log\AdobeCampaign
    ```
 
-* No Linux, vá para o arquivo **customer.sh** e indique: **exporte XTK_VAR_DIR=/app/log/AdobeCampaign**.
+* No Linux, vá para o arquivo **customer.sh** e indique: **exportar XTK_VAR_DIR=/app/log/AdobeCampaign**.
 
-   For more on this, refer to [Personalizing parameters](../../installation/using/installing-packages-with-linux.md#personalizing-parameters).
+   Para obter mais informações, consulte [Personalizar parâmetros](../../installation/using/installing-packages-with-linux.md#personalizing-parameters).
 
-## Ativação de processos {#enabling-processes}
+## Habilitar processos {#enabling-processes}
 
-Os processos do Adobe Campaign no servidor são ativados (e desativados) por meio dos arquivos e **config-default.xml** e **`config-<instance>.xml`** arquivos.
+Os processos do Adobe Campaign no servidor são ativados (e desativados) pelos arquivos **config-default.xml** e **`config-<instance>.xml`**.
 
-Para aplicar as alterações a esses arquivos, se o serviço Adobe Campaign for iniciado, você deverá executar o comando **nlserver config -reload** .
+Para aplicar as alterações a esses arquivos, se o serviço Adobe Campaign for iniciado, você deverá executar o comando **nlserver config -reload**.
 
 Há dois tipos de processos: várias instâncias e instância única.
 
-* **várias instâncias**: um único processo é iniciado para todas as instâncias. Esse é o caso dos processos **web**, **syslogd** e **trackinglogd** .
+* **várias instâncias**: um único processo é iniciado para todas as instâncias. É o caso dos processos **web**, **syslogd** e **trackinglogd**.
 
-   A ativação pode ser configurada a partir do arquivo **config-default.xml** .
+   A ativação pode ser configurada a partir do arquivo **config-default.xml**.
 
    Declaração de um servidor Adobe Campaign para acessar consoles de cliente e para redirecionamento (rastreamento):
 
@@ -89,9 +89,9 @@ Há dois tipos de processos: várias instâncias e instância única.
    <trackinglogd autoStart="true"/>
    ```
 
-   Neste exemplo, o arquivo é editado usando um comando **vi** no Linux. Ele pode ser editado usando qualquer editor **.txt** ou **.xml** .
+   Neste exemplo, o arquivo é editado usando um comando **vi** no Linux. Ele pode ser editado usando qualquer editor **.txt** ou **.xml**.
 
-* **mono-instância**: um processo é iniciado para cada instância (módulos: **mta**, **wfserver**, **inMail**, **sms** e **stat**).
+* **mono-instância**: um processo é iniciado para cada instância (módulos:  **mta**,  **wfserver**,  **inMail**,  **** smand  **stat**).
 
    A ativação pode ser configurada usando o arquivo de configuração da instância:
 
@@ -108,11 +108,11 @@ Há dois tipos de processos: várias instâncias e instância única.
    <stat autoStart="true"/>
    ```
 
-## Configurações do delivery {#delivery-settings}
+## Configurações de delivery {#delivery-settings}
 
-Os parâmetros do delivery devem ser configurados na pasta **serverConf.xml** .
+Os parâmetros do delivery devem ser configurados na pasta **serverConf.xml**.
 
-* **Configuração** DNS: especifique o domínio do delivery e os endereços IP (ou host) dos servidores DNS usados para responder a query DNS do tipo MX feitos pelo módulo MTA a partir de **`<dnsconfig>`** agora.
+* **Configuração** DNS: especifique o domínio do delivery e os endereços IP (ou host) dos servidores DNS usados para responder a query DNS do tipo MX feitos pelo módulo MTA a partir de  **`<dnsconfig>`** agora.
 
    >[!NOTE]
    >
@@ -122,6 +122,6 @@ Os parâmetros do delivery devem ser configurados na pasta **serverConf.xml** .
    <dnsConfig localDomain="domain.com" nameServers="192.0.0.1,192.0.0.2"/>
    ```
 
-Os outros parâmetros de delivery disponíveis neste arquivo são apresentados em [Personalizando parâmetros](../../installation/using/configuring-campaign-server.md#personalizing-delivery-parameters)de delivery.
+Os outros parâmetros de delivery disponíveis neste arquivo são apresentados em [Personalizando parâmetros de delivery](../../installation/using/configuring-campaign-server.md#personalizing-delivery-parameters).
 
-Consulte também [Enviabilidade](../../installation/using/email-deliverability.md)por email.
+Consulte também [Capacidade de entrega por email](../../installation/using/email-deliverability.md).
