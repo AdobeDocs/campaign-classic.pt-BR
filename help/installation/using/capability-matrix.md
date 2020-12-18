@@ -21,7 +21,7 @@ O Adobe Campaign Classic vem com um conjunto de módulos e opções. A disponibi
 
 Esta página mostra as principais diferenças entre as implantações hospedadas (Managed Services) e locais. As especificidades de implantações híbridas dependem dos elementos hospedados pelo Adobe e hospedados em suas instalações.
 
-Os diferentes modelos de hospedagem são apresentados [nesta seção](../../installation/using/hosting-models.md).
+Os diferentes modelos de hospedagem são introduzidos [nesta seção](../../installation/using/hosting-models.md).
 
 ## Disponibilidade por modelo de implantação {#capability-matrix}
 
@@ -35,19 +35,19 @@ Os diferentes modelos de hospedagem são apresentados [nesta seção](../../inst
 | Integração com o IMS (Adobe ID) | Sob demanda | Sob demanda | Sob demanda | [Saiba mais](../../integrations/using/about-adobe-id.md) |
 | Criptografar/descriptografar dados para transferências de arquivos | Sob demanda | Disponível | Disponível | [Saiba mais](../../workflow/using/importing-data.md#unzipping-or-decrypting-a-file-before-processing) |
 | Zipping/Unzipping de arquivos | Sob demanda | Disponível | Disponível | [Saiba mais](../../workflow/using/importing-data.md#unzipping-or-decrypting-a-file-before-processing) |
-| Delegação de Nome de Domínio | Sob demanda | Sob demanda | Não disponível | [Saiba mais](https://helpx.adobe.com/br/campaign/kb/domain-name-delegation.html) |
+| Delegação de Nome de Domínio | Sob demanda | Sob demanda | Não disponível | [Saiba mais](https://helpx.adobe.com/campaign/kb/domain-name-delegation.html) |
 | Instalação do SpamAssassin | Sob demanda | Disponível | Disponível | [Saiba mais](../../delivery/using/spamassassin.md) |
 | Acesso aos relatórios de material de entrega | Disponível | Sob demanda | Disponível | [Saiba mais](../../delivery/using/monitoring-deliverability.md) |
 | Configuração da autenticação LDAP | Não disponível | Disponível | Disponível | [Saiba mais](../../installation/using/connecting-through-ldap.md) |
 
 
-## Federated Data Access{#fda}
+## Federated Data Acces{#fda}
 
 O Adobe Campaign oferece a opção **Federated Data Access** (FDA) para processar informações armazenadas em um ou mais bancos de dados externos: é possível acessá-los sem alterar a estrutura dos dados do Adobe Campaign. [Saiba mais](../../installation/using/about-fda.md)
 
 >[!CAUTION]
 >
->Accessing an external database via FDA is only possible for on-premise or hybrid installations, except with the [Snowflake connector](../../installation/using/configure-fda-snowflake.md).
+>O acesso a um banco de dados externo via FDA só é possível para instalações no local ou híbridas, exceto com o [conector Snowflake](../../installation/using/configure-fda-snowflake.md).
 
 
 **Consulte também**
