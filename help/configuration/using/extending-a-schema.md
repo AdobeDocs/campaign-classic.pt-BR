@@ -20,8 +20,8 @@ ht-degree: 10%
 >[!IMPORTANT]
 >
 >Alguns schemas incorporados não devem ser estendidos: principalmente aquelas para as quais são definidas as seguintes configurações:\
->**dataSource=&quot;file&quot;** e **mappingType=&quot;xmlFile&quot;**.\
->Os seguintes schemas não devem ser prolongados: **xtk:entityBackupNew**, **xtk:entityBackupOriginal**, **xtk:entityOriginal**, **xtk:form**, **xtk:srcSchema**, ******************************************nen:publishing, nl:monitoramento, nms:calendário, nms:remoteTracking ,nms:userAgentRules, xtk:builder:conexõesxtk:dbInit:xtk:funcListxtk:fusion, xtk: jst**, **xtk:navtree**, **xtk:queryDef**, **xtk:resourceMenu**, **xtk:schema**, ****************xtk:scriptContextContext, xtk:session, xtkEsquemaEsquemaEsquemaEsquema, ...
+>**dataSource=&quot;file&quot;** e  **mappingType=&quot;xmlFile&quot;**.\
+>Os seguintes schemas não devem ser prolongados: **xtk:entityBackupNew**, **xtk:entityBackupOriginal**, **xtk:entityOriginal**, **xtk:form**, **xtk:srcSchema**, **ncm:publishing**, **nl:Monitoring**, **nms:calendário**, **nms:remoteTracking**, **nms:userAgentRules&lt;a 19/>,** xtk:builder **,** xtk:conexões **,** xtk:dbInit **,** xtk:funcList&lt;a27>, **xtk:fusion**, **xtk: jst**, **xtk:navtree**, **xtk:queryDef**, **xtk:resourceMenu**, **xtk:schema&lt;a 39/>,** xtk:scriptContext **,** xtk:session **,** xtk:sqlSchema **,** xtk:strings **.******
 >Esta lista não é exaustiva.
 
 Existem dois métodos para estender um schema existente:
@@ -37,7 +37,7 @@ Existem dois métodos para estender um schema existente:
    >
    >Você não tem permissão para modificar os schemas integrados do aplicativo, mas sim o mecanismo de extensão do schema. Caso contrário, os schemas modificados não serão considerados no momento das atualizações futuras do aplicativo. Isso pode levar a falhas no uso do Adobe Campaign.
 
-   **Exemplo**: extensão do schema **nms:recipient** .
+   **Exemplo**: extensão de  **nms:** customerschema.
 
    ```
    <srcSchema extendedSchema="nms:recipient" name="recipient" namespace="cus">
@@ -47,7 +47,7 @@ Existem dois métodos para estender um schema existente:
    </srcSchema>
    ```
 
-   O schema **nms:recipient** Extended é preenchido com o campo preenchido no schema de extensão:
+   O schema estendido **nms:recipient** é preenchido com o campo preenchido no schema de extensão:
 
    ```
    <schema dependingSchemas="cus:recipient" name="recipient" namespace="nms">
@@ -63,6 +63,6 @@ Existem dois métodos para estender um schema existente:
 
 >[!IMPORTANT]
 >
->Para que as modificações sejam levadas em conta, é necessário regenerar schemas. For more on this, refer to the [Regenerating schemas](../../configuration/using/regenerating-schemas.md) section.\
+>Para que as modificações sejam levadas em conta, é necessário regenerar schemas. Para obter mais informações, consulte a seção [Regenerating schemas](../../configuration/using/regenerating-schemas.md).\
 >Se as modificações afetarem a estrutura do banco de dados, será necessário executar uma atualização. Para obter mais informações, consulte a seção [Atualização da estrutura do banco de dados](../../configuration/using/updating-the-database-structure.md).
 
