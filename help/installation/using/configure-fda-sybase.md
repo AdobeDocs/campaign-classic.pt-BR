@@ -17,18 +17,18 @@ ht-degree: 73%
 
 # Configuração do acesso ao Sybase IQ {#configure-access-to-sybase-iq}
 
-Use a opção Campanha **Federated Data Acces** (FDA) para processar informações armazenadas em bancos de dados externos. Siga as etapas abaixo para configurar o acesso ao Sybase IQ.
+Use a opção Campanha **Federated Data Acces** (FDA) para processar informações armazenadas em um banco de dados externo. Siga as etapas abaixo para configurar o acesso ao Sybase IQ.
 
-1. Configurar banco de dados [Sybase IQ](#configuring-sybase)
-1. Configure a [conta externa](#sybase-external) Sybase IQ na Campanha
+1. Configurar [banco de dados Sybase IQ](#configuring-sybase)
+1. Configure o Sybase IQ [conta externa](#sybase-external) na Campanha
 
-## Configuração sybase IQ {#configuring-sybase}
+## Configuração do sybase IQ {#configuring-sybase}
 
 A conexão com um banco de dados externo Sybase IQ no FDA exige as seguintes configurações adicionais no servidor do Adobe Campaign.
 
 >[!NOTE]
 >
->Before starting, make sure the **unixodbc** package is on the server.
+>Antes de iniciar, verifique se o pacote **unixodbc** está no servidor.
 
 1. Instale o **iq_odbc**. Um erro pode ocorrer no final da instalação. Esse erro pode ser ignorado.
 
