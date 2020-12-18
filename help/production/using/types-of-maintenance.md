@@ -19,7 +19,7 @@ ht-degree: 2%
 
 ## Manutenção de aplicativos {#application-maintenance}
 
-A Adobe Campaign fornece um fluxo de trabalho integrado que permite agendar determinadas tarefas de manutenção do banco de dados: o fluxo de trabalho **de limpeza do** banco de dados. Esse fluxo de trabalho realiza as seguintes tarefas:
+A Adobe Campaign fornece um fluxo de trabalho integrado que permite agendar determinadas tarefas de manutenção do banco de dados: o **fluxo de trabalho de limpeza do banco de dados**. Esse fluxo de trabalho realiza as seguintes tarefas:
 
 * supressão de registros expirados,
 * supressão de registros órfãos e reinicialização do estado para objetos expirados,
@@ -66,19 +66,19 @@ Várias estratégias estão disponíveis:
   <tr> 
    <td> Desfragmentação online<br /> </td> 
    <td> A maioria dos mecanismos de banco de dados fornece métodos de desfragmentação.<br /> </td> 
-   <td> Basta usar o método de desfragmentação do banco de dados. Esses métodos geralmente cuidam dos problemas de integridade bloqueando os dados durante a desfragmentação.<br /> </td> 
+   <td> Basta usar o método de desfragmentação do banco de dados. Normalmente, esses métodos tratam dos problemas de integridade bloqueando os dados durante a desfragmentação.<br /> </td> 
    <td> Dependendo do banco de dados, esses métodos de desfragmentação podem ser fornecidos como uma opção RDBMS (Oracle) e nem sempre são a maneira mais eficiente de lidar com tabelas maiores.<br /> </td> 
   </tr> 
   <tr> 
    <td> Despejar e restaurar<br /> </td> 
    <td> Despeje a tabela para um arquivo, exclua a tabela no banco de dados e restaure do despejo.<br /> </td> 
-   <td> Esta é a maneira mais fácil de desfragmentar uma mesa. Também é a única solução quando o banco de dados está quase cheio.<br /> </td> 
+   <td> Esta é a maneira mais fácil de desfragmentar uma mesa. Além disso, a única solução quando o banco de dados está quase cheio.<br /> </td> 
    <td> Como a tabela é excluída e recriada, o aplicativo não pode ser deixado on-line, mesmo no modo somente leitura (a tabela não está disponível durante a fase de restauração).<br /> </td> 
   </tr> 
   <tr> 
    <td> Duplicado, renomear e soltar<br /> </td> 
-   <td> Isso cria uma cópia de uma tabela e seus índices, em seguida, solta a existente e renomeia a cópia para que ela ocupe seu lugar.<br /> </td> 
-   <td> Esse método é mais rápido que a primeira abordagem, pois gera menos E/S (nenhuma cópia como um arquivo e leitura desse arquivo).<br /> </td> 
+   <td> Isso cria uma cópia de uma tabela e seus índices, em seguida, solta a existente e renomeia a cópia para que ela substitua.<br /> </td> 
+   <td> Este método é mais rápido do que a primeira abordagem, pois gera menos IOs (nenhuma cópia como um arquivo e leitura deste arquivo).<br /> </td> 
    <td> Requer o dobro de espaço.<br /> Todos os processos ativos que gravam na tabela durante o processo devem ser interrompidos. No entanto, os processos de leitura não serão afetados, uma vez que a tabela é trocada no último momento após a reconstrução. <br /> </td> 
   </tr> 
  </tbody> 
