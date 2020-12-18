@@ -23,7 +23,7 @@ Esses filtros estarão disponíveis na janela de seleção de públicos alvos co
 
 1. Vá para o nó **[!UICONTROL Administration > Configuration > Predefined filters]**
 1. Crie um novo filtro.
-1. Insira o **[!UICONTROL Label]** do filtro e selecione o schema que corresponde à tabela de recipient externos no **[!UICONTROL Document type]** campo.
-1. Crie sua página com **[!UICONTROL filtering conditions]** base nos campos do seu schema.
+1. Digite **[!UICONTROL Label]** do filtro e selecione o schema que corresponde à tabela do recipient externo no campo **[!UICONTROL Document type]**.
+1. Crie **[!UICONTROL filtering conditions]** com base nos campos do seu schema.
 1. Salve o filtro.
 
