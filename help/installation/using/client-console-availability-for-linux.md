@@ -17,4 +17,4 @@ ht-degree: 29%
 
 # Disponibilidade do console do cliente para Linux{#client-console-availability-for-linux}
 
-Para que os usuários do Adobe Campaign possam fazer logon na instância criada e configurada, eles precisam usar o console do cliente. Para obter mais informações, consulte a disponibilidade do console do [cliente para Windows](../../installation/using/client-console-availability-for-windows.md).
+Para que os usuários do Adobe Campaign possam fazer logon na instância criada e configurada, eles precisam usar o console do cliente. Para obter mais informações, consulte [Disponibilidade do console do cliente para Windows](../../installation/using/client-console-availability-for-windows.md).
