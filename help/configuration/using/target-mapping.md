@@ -32,7 +32,7 @@ Para fazer isso, siga as etapas abaixo:
 
 1. Crie um novo schema de dados que integre os campos da tabela personalizada que você deseja usar.
 
-   Para obter mais informações, consulte a referência ao [Schema (xtk:srcSchema)](../../configuration/using/about-schema-reference.md).
+   Para obter mais informações, consulte [referência de Schema (xtk:srcSchema)](../../configuration/using/about-schema-reference.md).
 
    Em nosso exemplo, criaremos um schema de cliente, uma tabela muito simples contendo os seguintes campos: ID, nome, sobrenome, endereço de email, número de telefone celular. O objetivo é poder enviar alertas por correio eletrônico ou SMS aos indivíduos armazenados nesta tabela.
 
@@ -53,7 +53,7 @@ Para fazer isso, siga as etapas abaixo:
    </srcSchema>
    ```
 
-1. Declarar seu schema como uma visualização externa usando o atributo =&quot;true&quot;. Consulte [O atributo](../../configuration/using/schema-characteristics.md#the-view-attribute)visualização.
+1. Declarar seu schema como uma visualização externa usando o atributo =&quot;true&quot;. Consulte [O atributo de visualização](../../configuration/using/schema-characteristics.md#the-view-attribute).
 
    ```
     <srcSchema desc="External recipient table" namespace="cus" view="true"....>
@@ -84,17 +84,17 @@ Para fazer isso, siga as etapas abaixo:
 
 1. Clique no nó **[!UICONTROL Administration > Campaign management > Target mappings]**.
 1. Clique no botão **Novo** para abrir o assistente de criação de target mapping.
-1. Digite o campo **Rótulo** e selecione o schema que você acabou de criar no campo **Targeting dimension** .
+1. Digite o campo **Label** e selecione o schema que você acabou de criar no campo **Targeting dimension**.
 
    ![](assets/mapping_diffusion_wizard_1.png)
 
-1. Na janela **Editar formulários** de endereço, selecione os campos do schema que correspondem aos vários endereços do delivery. Aqui, podemos mapear os campos **@email** e **@mobile** .
+1. Na janela **Editar formulários de endereço**, selecione os campos do schema que correspondem aos vários endereços de delivery. Aqui, podemos mapear os campos **@email** e **@mobile**.
 
    ![](assets/mapping_diffusion_wizard_2.png)
 
-1. Na janela **Armazenamento** a seguir, digite o **Sufixo dos schemas de extensão** para diferenciar os novos schemas dos schemas prontos para uso fornecidos pela Adobe Campaign.
+1. Na seguinte janela **Armazenamento**, digite o **Sufixo do campo schemas de extensão** para diferenciar os novos schemas dos schemas predefinidos fornecidos pela Adobe Campaign.
 
-   Clique **[!UICONTROL Define new additional fields]** para selecionar a dimensão que deseja público alvo em seu delivery.
+   Clique em **[!UICONTROL Define new additional fields]** para selecionar a dimensão que deseja público alvo em seu delivery.
 
    Por padrão, o gerenciamento de exclusão é armazenado nas mesmas tabelas que as mensagens. Marque a caixa **Gerar um schema de armazenamento para rastreamento** se desejar configurar o armazenamento para o rastreamento vinculado ao target mapping.
 
@@ -102,9 +102,9 @@ Para fazer isso, siga as etapas abaixo:
 
    >[!IMPORTANT]
    >
-   >A Adobe Campaign não suporta vários schemas de recipient, conhecidos como schemas de definição de metas, vinculados aos mesmos schemas de registro de transmissão e/ou rastreamento. Caso contrário, isso pode resultar em anomalias na reconciliação de dados posteriormente. Para obter mais informações sobre isso, consulte a página [Recomendações e limitações](../../configuration/using/about-custom-recipient-table.md) .
+   >A Adobe Campaign não suporta vários schemas de recipient, conhecidos como schemas de definição de metas, vinculados aos mesmos schemas de registro de transmissão e/ou rastreamento. Caso contrário, isso pode resultar em anomalias na reconciliação de dados posteriormente. Para obter mais informações sobre isso, consulte a página [Recomendações e limitações](../../configuration/using/about-custom-recipient-table.md).
 
-1. Na janela **Extensões** , selecione os schemas opcionais que deseja gerar (a lista dos schemas disponíveis depende dos módulos instalados na plataforma Adobe Campaign).
+1. Na janela **Extensões**, selecione os schemas opcionais que deseja gerar (a lista dos schemas disponíveis depende dos módulos instalados na plataforma Adobe Campaign).
 
    ![](assets/mapping_diffusion_wizard_4.png)
 
@@ -114,7 +114,7 @@ Para fazer isso, siga as etapas abaixo:
 
    ![](assets/mapping_schema_list.png)
 
-## Uso do target mapping {#using-target-mapping}
+## Usando o target mapping {#using-target-mapping}
 
 Há duas maneiras de usar o novo schema como público alvo de um delivery:
 
