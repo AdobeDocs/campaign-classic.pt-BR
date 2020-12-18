@@ -78,13 +78,13 @@ Siga as etapas abaixo:
     a2enmod nlsrv
    ```
 
-   Se você estiver usando o módulo **mod_rewrite** para páginas do Adobe Campaign, será necessário renomear os arquivos **nlsrv.load** e **nlsrv.conf** para **zz-nlsrv.load** e **zz-nlsrv.conf**. Para ativar o módulo, execute o seguinte comando:
+   Se você estiver usando o módulo **mod_rewrite** para páginas do Adobe Campaign, será necessário renomear os arquivos **nlsrv.load** e **nlsrv.conf** para **zz-nlsrv.load** e **zz-nlsrv.v conf**. Para ativar o módulo, execute o seguinte comando:
 
    ```
    a2enmod zz-nlsrv
    ```
 
-1. Edite o arquivo **/etc/apache2/vars** e adicione as seguintes linhas:
+1. Edite o arquivo **/etc/apache2/vars**, adicione as seguintes linhas:
 
    ```
    # Added Neolane
@@ -113,7 +113,7 @@ Este procedimento se aplica se você tiver instalado e protegido o Apache em um 
 
 Siga as etapas abaixo:
 
-1. No `httpd.conf` arquivo, ative os seguintes módulos Apache:
+1. No arquivo `httpd.conf`, ative os seguintes módulos Apache:
 
    ```
    alias
@@ -152,9 +152,9 @@ Siga as etapas abaixo:
    ForceLanguagePriority
    ```
 
-1. Crie um arquivo de configuração específico da Adobe Campaign na `/etc/httpd/conf.d/` pasta. Por exemplo `CampaignApache.conf`
+1. Crie um arquivo de configuração específico da Adobe Campaign na pasta `/etc/httpd/conf.d/`. Por exemplo `CampaignApache.conf`
 
-1. Para **RHEL7**, adicione as seguintes instruções no arquivo:
+1. Para **RHEL7**, adicione as seguintes instruções ao arquivo:
 
    ```
    LoadModule requesthandler24_module /usr/local/neolane/nl6/lib/libnlsrvmod.so
@@ -163,7 +163,7 @@ Siga as etapas abaixo:
 
 1. Para **RHEL7**:
 
-   Adicione o `/etc/systemd/system/httpd.service` arquivo com o seguinte conteúdo:
+   Adicione o arquivo `/etc/systemd/system/httpd.service` com o seguinte conteúdo:
 
    ```
    .include /usr/lib/systemd/system/httpd.service
