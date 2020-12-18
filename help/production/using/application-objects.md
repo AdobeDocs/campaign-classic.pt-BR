@@ -31,7 +31,7 @@ Workflows de alta frequência que criam muitos registros consumirão muitas IDs.
 
 Se a sequência já tiver sido cíclica, a melhor solução é alternar para IDs negativas, a partir de -2.147.483.648.
 
-## Folders {#folders}
+## Pastas {#folders}
 
 Deve haver menos de 1000 pastas em qualquer instância. Ter mais pastas do que isso pode causar problemas de desempenho com o cliente de Campanha. Você pode configurar um trabalho de monitoramento para contar o número de pastas, workflows, etc., e retornar ao relatório periodicamente.
 
@@ -47,13 +47,13 @@ Delivery com mais de dois anos devem ser removidos da instância.
 
 O número de arquivos no disco do servidor de aplicativos não deve aumentar indefinidamente.
 
-Os workflows de importação criam arquivos e, portanto, causam a expansão do disco. Isso pode ser evitado usando a atividade padrão do [File collector](../../workflow/using/file-collector.md) . O coletor de arquivos move os arquivos para uma pasta temporária e os limpa automaticamente.
+Os workflows de importação criam arquivos e, portanto, causam a expansão do disco. Isso pode ser evitado usando a atividade padrão [File collector](../../workflow/using/file-collector.md). O coletor de arquivos move os arquivos para uma pasta temporária e os limpa automaticamente.
 
 Se um fluxo de trabalho importar arquivos e não fizer uso dos recursos padrão, ele precisará ser removido para manter o espaço em disco mínimo.
 
 ## Dados e registros transacionais {#transactional-data-and-logs}
 
-Todo [fluxo de trabalho](../../workflow/using/data-life-cycle.md#work-table) que importa dados para o Adobe Campaign faz com que o tamanho do banco de dados cresça.
+Cada [fluxo de trabalho](../../workflow/using/data-life-cycle.md#work-table) que importa dados para o Adobe Campaign faz com que o tamanho do banco de dados cresça.
 
 Verifique se os workflows de limpeza ou remoção estão em execução e removendo os registros com eficácia. Todos os dados e registros transacionais devem ser removidos. A tarefa de limpeza limpa apenas as tabelas padrão: rastreamento e logs amplos. Tabelas específicas devem ser expurgadas por workflows específicos. Consulte [esta seção](../../workflow/using/monitoring-workflow-execution.md#purging-the-logs).
 
