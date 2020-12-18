@@ -25,7 +25,7 @@ Para visualização e diálogo com a nova tabela de recipient na interface do Ad
 
 A Adobe Campaign usa uma variável global &quot;Nms_DefaultRcpSchema&quot; para dialogar com o banco de dados do recipient padrão (nms:recipient). Esta variável deve, por conseguinte, ser alterada.
 
-1. Go to the **[!UICONTROL Administration>Platform>Options]** node of the explorer.
+1. Vá para o nó **[!UICONTROL Administration>Platform>Options]** do explorador.
 1. Altere o valor da variável **Nms_DefaultRcpSchema** pelo nome do schema que corresponde à tabela do recipient externo (neste caso: cus:individual).
 1. Salve as alterações.
 
@@ -37,15 +37,15 @@ A criação de um novo formulário permitirá que você visualização e edite o
 >
 >O nome do formulário deve ser idêntico ao nome do schema a que se refere.
 
-1. Vá até o nó **Administração > Configuração > Formulários** de entrada do explorador.
-1. Crie um novo arquivo **xtk:form** type **form** .
+1. Vá para o nó **Administração > Configuração > Formulários de entrada** do explorador.
+1. Crie um novo arquivo **xtk:form** digite **form**.
 1. Descreva todos os monitoramentos e campos necessários, dependendo do modelo da tabela.
 
    >[!NOTE]
    >
-   >Para saber mais sobre arquivos de tipo de **formulário** , consulte [esta página](../../configuration/using/identifying-a-form.md).
+   >Para saber mais sobre os arquivos do tipo **form**, consulte [esta página](../../configuration/using/identifying-a-form.md).
 
-   Em nosso exemplo atual, o arquivo de **formulário** deve ser baseado no schema **cus:individual** e, portanto, ter o seguinte layout:
+   Em nosso exemplo atual, o arquivo **form** deve ser baseado no schema **cus:individual** e, portanto, ter o seguinte layout:
 
    ```
    <container colspan="2">
@@ -65,14 +65,14 @@ A criação de um novo formulário permitirá que você visualização e edite o
 ## Criação de um novo tipo de pasta na hierarquia de navegação {#creating-a-new-type-of-folder-in-the-navigation-hierarchy}
 
 1. Vá para o nó **[!UICONTROL Administration>Configuration>Navigation hierarchies]**
-1. Crie um novo documento **xtk:navtree** tipo **navtree** .
+1. Crie um novo documento **xtk:navtree** digite **navtree**.
 1. Descreva todos os monitoramentos e campos necessários, dependendo do modelo da tabela.
 
    >[!NOTE]
    >
-   >Para obter mais informações sobre arquivos **navtree** , consulte [esta página](../../configuration/using/about-navigation-hierarchy.md).
+   >Para obter mais informações sobre arquivos do tipo **navtree**, consulte [esta página](../../configuration/using/about-navigation-hierarchy.md).
 
-   No exemplo atual, o arquivo **navtree** deve ter por base o schema **cus:individual** e, portanto, ter a seguinte forma:
+   No exemplo atual, o arquivo **navtree** deve ter por base o schema **cus:individual** e, portanto, ter o seguinte formato:
 
    ```
     <model name="root">
