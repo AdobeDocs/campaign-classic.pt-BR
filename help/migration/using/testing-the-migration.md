@@ -35,12 +35,12 @@ Você deve ter um ambiente de teste/desenvolvimento para realizar testes de migr
 
    >[!NOTE]
    >
-   >O comando é iniciado por padrão no modo **seco** e lista todas as solicitações que foram executadas por esse comando, sem iniciá-las. Para executar solicitações de cauterização, use **executar** no comando.
+   >O comando é iniciado por padrão no modo **dry** e lista todas as solicitações que foram executadas por esse comando, sem iniciá-las. Para executar solicitações de cauterização, use **run** no comando.
 
 1. Certifique-se de que seus backups estejam corretos tentando restaurá-los. Verifique se você pode acessar seu banco de dados, suas tabelas, seus dados etc.
 1. Teste o procedimento de migração no ambiente de desenvolvimento.
 
-   Os procedimentos completos estão detalhados na seção [Pré-requisitos para migração para o Adobe Campaign 7](../../migration/using/prerequisites-for-migration-to-adobe-campaign-7.md) .
+   Os procedimentos completos estão detalhados na seção [Pré-requisitos para migração para o Adobe Campaign 7](../../migration/using/prerequisites-for-migration-to-adobe-campaign-7.md).
 
 1. Se a migração do ambiente de desenvolvimento for bem-sucedida, você poderá migrar o ambiente de produção.
 
@@ -50,13 +50,13 @@ Você deve ter um ambiente de teste/desenvolvimento para realizar testes de migr
 
 >[!NOTE]
 >
->O comando de atualização da Adobe Campaign (**pós-atualização**) permite sincronizar recursos e atualizar schemas e o banco de dados. Essa operação só pode ser realizada uma vez e somente no servidor de aplicativos. Depois de sincronizar os recursos, o comando **pós-atualização** permite detectar se a sincronização gera erros ou avisos.
+>O comando de atualização da Adobe Campaign (**postupgrade**) permite sincronizar recursos e atualizar schemas e o banco de dados. Essa operação só pode ser realizada uma vez e somente no servidor de aplicativos. Depois de sincronizar os recursos, o comando **pós-upgrade** permite detectar se a sincronização gera erros ou avisos.
 
 ## Ferramentas de migração {#migration-tools}
 
 Várias opções permitem medir o impacto de uma migração e identificar os possíveis problemas. Essas opções devem ser executadas:
 
-* no comando **config** :
+* no comando **config**:
 
    ```
    nlserver.exe config <option> -instance:<instanceName>
@@ -70,9 +70,9 @@ Várias opções permitem medir o impacto de uma migração e identificar os pos
 
 >[!NOTE]
 >
->Você deve usar a **instância:`<instanceame>`** opção. Não recomendamos o uso da opção **-allinnesse** caso.
+>Você deve usar a opção **-instance:`<instanceame>`**. Não recomendamos usar a opção **-allinnesse**.
 
-### -showCustomEntities e -showDeletedEntities {#showcustomentities-and--showdeletedentities-options}
+### -showCustomEntities e -showDeletedEntities opções {#showcustomentities-and--showdeletedentities-options}
 
 * A opção **-showCustomEntities** exibe a lista de todos os objetos não padrão:
 
@@ -140,25 +140,25 @@ As seguintes expressões são pesquisadas (diferencia maiúsculas de minúsculas
    <td> logon(<br /> </td> 
    <td> PU-0003<br /> </td> 
    <td> Aviso<br /> </td> 
-   <td> Este método de conexão não deve mais ser usado. Consulte Aplicativos <a href="../../migration/using/general-configurations.md#identified-web-applications" target="_blank">da Web</a>identificados.<br /> </td> 
+   <td> Este método de conexão não deve mais ser usado. Consulte <a href="../../migration/using/general-configurations.md#identified-web-applications" target="_blank">Aplicativos Web identificados</a>.<br /> </td> 
   </tr> 
   <tr> 
    <td> new SoapMethodCall(<br /> </td> 
    <td> PU-0004<br /> </td> 
    <td> Aviso<br /> </td> 
-   <td> Essa função só é suportada quando é usada no código JavaScript executado de uma zona de segurança que está no modo <strong>sessionTokenOnly</strong> .<br /> </td> 
+   <td> Esta função só é suportada quando é utilizada no código JavaScript executado a partir de uma zona de segurança que esteja no modo <strong>sessionTokenOnly</strong>.<br /> </td> 
   </tr> 
   <tr> 
    <td> sql=<br /> </td> 
    <td> PU-0005<br /> </td> 
-   <td> Error<br /> </td> 
+   <td> Erro<br /> </td> 
    <td> Esse tipo de erro resulta em uma falha de migração. Consulte <a href="../../migration/using/general-configurations.md#sqldata" target="_blank">SQLData</a>.<br /> </td> 
   </tr> 
   <tr> 
    <td> SQLDATA<br /> </td> 
    <td> PU-0006<br /> </td> 
-   <td> Error<br /> </td> 
-   <td> Esse tipo de erro resulta em uma falha de migração. Consulte <a href="../../migration/using/general-configurations.md#sqldata" target="_blank">SQLData</a>. Se você obtiver registros de erros do aplicativo da Web tipo visão geral (migração da v6.02), consulte <a href="../../migration/using/specific-configurations-in-v6-02.md#web-applications" target="_blank">Aplicação web</a>.<br /> </td> 
+   <td> Erro<br /> </td> 
+   <td> Esse tipo de erro resulta em uma falha de migração. Consulte <a href="../../migration/using/general-configurations.md#sqldata" target="_blank">SQLData</a>. Se você obter registros de erros do aplicativo da Web tipo visão geral (migração da v6.02), consulte <a href="../../migration/using/specific-configurations-in-v6-02.md#web-applications" target="_blank">Aplicação web</a>.<br /> </td> 
   </tr> 
  </tbody> 
 </table>
