@@ -17,7 +17,7 @@ ht-degree: 16%
 
 # Comportamento JSP{#jsp-behavior}
 
-Se determinados trabalhos **jsp** não forem executados com êxito, você deverá forçá-los a recompilar.
+Se determinados trabalhos **jsp** não forem executados com êxito, é necessário forçá-los a recompilar.
 
 Para isso, insira os seguintes comandos:
 
@@ -28,4 +28,4 @@ rm -r work/
 nlserver start web
 ```
 
-Os trabalhos **jsp** serão regenerados na próxima vez que você se conectar.
+As tarefas **jsp** são regeneradas na próxima vez que ligar.
