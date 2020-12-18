@@ -29,16 +29,16 @@ As características de um schema que faz referência a uma tabela existente são
 
 ## O atributo visualização {#the-view-attribute}
 
-Os schemas de origem aceitam o atributo **visualização** para o elemento raiz **srcSchema** . Ele deve ser usado quando o Adobe Campaign é manipulado em tabelas personalizadas. O atributo **visualização=&quot;true&quot;** diz ao assistente de atualização da estrutura do banco de dados para ignorar esse schema. O aplicativo é, portanto, proibido de sincronizar a tabela, suas colunas e seus índices com o schema correspondente.
+Os schemas de origem aceitam o atributo **visualização** para o elemento raiz **srcSchema**. Ele deve ser usado quando o Adobe Campaign é manipulado em tabelas personalizadas. O atributo **visualização=&quot;true&quot;** diz ao assistente de atualização da estrutura do banco de dados para ignorar esse schema. O aplicativo é, portanto, proibido de sincronizar a tabela, suas colunas e seus índices com o schema correspondente.
 
 Quando esse atributo é definido como **true**, o schema é usado apenas para gerar query SQL para acessar os dados desta tabela.
 
-## Nomes das tabelas e colunas {#names-of-tables-and-columns}
+## Nomes de tabelas e colunas {#names-of-tables-and-columns}
 
 Quando tabelas são criadas pelo assistente de atualização de tabela, os nomes das tabelas e colunas são gerados automaticamente com base nos nomes dos respectivos schemas e atributos. No entanto, é possível forçar os nomes SQL a serem usados inserindo os seguintes atributos:
 
-* **sqltable** dentro do elemento principal do schema, para especificar a tabela,
-* **sqlname** em cada atributo, para especificar as colunas.
+* **** sqltablese no elemento principal do schema, para especificar a tabela,
+* **** sqlname em cada atributo, para especificar as colunas.
 
 **Exemplo**:
 
@@ -77,7 +77,7 @@ Em um schema, um índice é definido da seguinte forma:
 
 É por isso que é importante declarar os índices existentes da tabela personalizada no schema correspondente.
 
-Um índice é declarado implicitamente para cada declaração de chave e link do schema de origem. A declaração de índice pode ser impedida especificando o atributo **noDbIndex=&quot;true&quot;** :
+Um índice é declarado implicitamente para cada declaração de chave e link do schema de origem. A declaração de índice pode ser impedida especificando o atributo **noDbIndex=&quot;true&quot;**:
 
 **Exemplo**:
 
