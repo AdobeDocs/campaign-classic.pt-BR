@@ -26,8 +26,8 @@ A Adobe Campaign permite que você vincule informações coletadas do Rastreamen
 
 Para ativar o Rastreamento web anônimo na sua instância, os seguintes elementos devem ser configurados:
 
-* O parâmetro **trackWebVisitors** do elemento de **redirecionamento** do arquivo **serverConf.xml** do servidor de rastreamento deve ser definido como &#39;**true**&#39;, para colocar um cookie permanente (**uuid230**) nos navegadores de usuários desconhecidos da Internet que visitam o site.
-* O modo de Rastreamento web **** Anônimo deve ser selecionado na tela de configuração de rastreamento do assistente de implantação.
+* O parâmetro **trackWebVisitors** do elemento **redirecçãoa3/> do arquivo** serverConf.xml **do servidor de rastreamento deve ser definido como &#39;** true **&#39; para colocar um cookie permanente (** uuid230&lt;a>) nos navegadores de usuários desconhecidos da Internet que visitam o site.****
+* O modo **Rastreamento web anônimo** deve ser selecionado na tela de configuração de rastreamento do assistente de implantação.
 
    ![](assets/webtracking_anonymous_set.png)
 
