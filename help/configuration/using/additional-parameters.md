@@ -52,11 +52,11 @@ Na configuração do servidor, é possível definir o número máximo de caracte
 >
 >O aumento do número máximo de caracteres a serem considerados pode afetar o desempenho do rastreamento da Web de sua plataforma.
 
-Para fazer isso, modifique o atributo **webTrackingParamSize** do **`<trackinglogd>`** elemento no arquivo **serverConf.xml** . Esse arquivo é salvo no subdiretório **conf** do diretório de instalação do Adobe Campaign.
+Para fazer isso, modifique o atributo **webTrackingParamSize** do elemento **`<trackinglogd>`** no arquivo **serverConf.xml**. Esse arquivo é salvo no subdiretório **conf** do diretório de instalação do Adobe Campaign.
 
 **Exemplo**:
 
-O valor padrão é 64 caracteres. Esse valor permite levar em conta a **quantidade** e os parâmetros padrão do **artigo** (&quot;amount=xxxxxxxx&amp;article=xxxxxxxxx&quot;).
+O valor padrão é 64 caracteres. Esse valor permite que você leve em conta os parâmetros padrão **amount** e **article** (&quot;amount=xxxxxxxx&amp;article=xxxxxxxxx&quot;).
 
 Levando em consideração os dois parâmetros (tamanho do nome + tamanho do valor) indicados no exemplo de schema de extensão acima, você pode modificar a configuração para levar em conta 100 caracteres (&quot;amount=xxxxxxxxx&amp;article=xxxxxxxxxx&amp;mode=xxxxxxxxxx&amp;code=xxxxxx&quot;).
 
@@ -70,18 +70,18 @@ webTrackingParamSize="64"/>
 Quando a configuração for modificada, você deverá:
 
 * Pare o servidor Web que hospeda o módulo de redirecionamento (Apache, IIS etc.),
-* Pare o servidor Adobe Campaign: **net stop nlserver6** in Windows, **/etc/init.d/nlserver6 stop** in Linux,
+* Pare o servidor Adobe Campaign: **net stop nlserver6** no Windows, **/etc/init.d/nlserver6 stop** no Linux,
 
    >[!NOTE]
    >
    >A partir do 20.1, recomendamos usar o seguinte comando (para Linux): **system ctl stop nlserver**
 
-* No Linux, exclua os segmentos de memória compartilhada usando o comando **ipcrm** ,
-* Reinicie o servidor Adobe Campaign: **start net nlserver6** no Windows, start **/etc/init.d/nlserver6** no Linux,
+* No Linux, exclua os segmentos de memória compartilhada usando o comando **ipcrm**,
+* Reinicie o servidor Adobe Campaign: **start net nlserver6** no Windows, **/etc/init.d/nlserver6 start** no Linux,
 
    >[!NOTE]
    >
-   >A partir do 20.1, recomendamos usar o seguinte comando (para Linux): **start nlserver do systemctl**
+   >A partir do 20.1, recomendamos usar o seguinte comando (para Linux): **servidor nlserver do start systemctl**
 
 * Reinicie o servidor da Web.
 
@@ -111,5 +111,5 @@ adobe@selma:~$ systemctl start apache2
 
 >[!NOTE]
 >
->Para Linux, se você aumentar o tamanho dos parâmetros **webTrackingParamSize** ou **maxSharedLogs** , talvez seja necessário aumentar o tamanho da memória compartilhada (SHM).
+>Para Linux, se você aumentar o tamanho dos parâmetros **webTrackingParamSize** ou **maxSharedLogs**, talvez seja necessário aumentar o tamanho da memória compartilhada (SHM).
 
