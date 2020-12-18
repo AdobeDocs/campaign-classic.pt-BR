@@ -17,9 +17,9 @@ ht-degree: 11%
 
 # Gerenciamento de fluxos de trabalho{#managing-workflows}
 
-Por padrão, seus novos workflows se baseiam em um modelo de fluxo de trabalho que foi pré-configurado e baseado em uma tabela de recipient (nms:recipient). Para que eles sejam baseados automaticamente na tabela personalizada de recipient referenciados na opção **Nms_DefaultRcpSchema** (consulte [Configuração da seção da interface](../../configuration/using/configuring-the-interface.md) ), você deve criar um novo modelo de fluxo de trabalho.
+Por padrão, seus novos workflows se baseiam em um modelo de fluxo de trabalho que foi pré-configurado e baseado em uma tabela de recipient (nms:recipient). Para que eles sejam baseados automaticamente na tabela personalizada de recipient referenciados na opção **Nms_DefaultRcpSchema** (consulte [Configuração da interface](../../configuration/using/configuring-the-interface.md) seção), é necessário criar um novo modelo de fluxo de trabalho.
 
-Create a new template via the **[!UICONTROL Resources > Templates > Workflow templates]** node. Nas propriedades do modelo, as dimensões fornecidas correspondem à tabela de recipient externos.
+Crie um novo modelo pelo nó **[!UICONTROL Resources > Templates > Workflow templates]**. Nas propriedades do modelo, as dimensões fornecidas correspondem à tabela de recipient externos.
 
 Ao basear seus novos workflows em um modelo criado recentemente, sua tabela personalizada será selecionada por padrão para o direcionamento global e dimensões do filtro do fluxo de trabalho.
 
