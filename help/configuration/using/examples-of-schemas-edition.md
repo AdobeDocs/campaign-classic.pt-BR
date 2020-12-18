@@ -19,7 +19,7 @@ ht-degree: 3%
 
 ## Extensão de uma tabela {#extending-a-table}
 
-Para estender a tabela **nms:recipient** schema, execute o seguinte procedimento:
+Para estender a tabela de recipient de schema **nms:recipient**, execute o seguinte procedimento:
 
 1. Crie o schema de extensão (**cus:extension**) usando os seguintes dados:
 
@@ -42,7 +42,7 @@ Para estender a tabela **nms:recipient** schema, execute o seguinte procedimento
    </srcSchema>
    ```
 
-   Neste exemplo, um campo indexado (**fidelidade**) é adicionado e o elemento de **localização** (que já existia no schema **nms:recipient** ) é complementado com um campo enumerado (**área**).
+   Neste exemplo, um campo indexado (**fidelity**) é adicionado e o elemento **location** (que já existia no schema **nms:recipient**) é complementado com um campo enumerado (**area**).
 
    >[!IMPORTANT]
    >
@@ -149,7 +149,7 @@ INSERT INTO CusOrder (iOrderId) VALUES (0);
 >
 >O comando SQL INSERT INTO no final do script permite inserir um conjunto de registros de identificador como 0 para simular junções externas.
 
-## Tabela de extensões {#extension-table}
+## Tabela de extensão {#extension-table}
 
 Uma tabela de extensão permite estender o conteúdo de uma tabela existente em uma tabela vinculada de cardinalidade 1-1.
 
@@ -205,7 +205,7 @@ Uma tabela de sobrefluxo é uma tabela de extensão (cardinalidade 1-1), mas a d
 
 A tabela de sobrefluxo contém a chave estrangeira para a tabela a ser estendida. Por conseguinte, o quadro a prorrogar não é alterado. A relação entre as duas tabelas é o valor da chave primária do quadro a ser estendido.
 
-Criação do schema de tabela de sobrefluxo (**cus:overflow**):
+Criando o schema de tabela de sobrefluxo (**cus:overflow**):
 
 ```
 <srcSchema label="Overflow" name="overflow" namespace="cus" xtkschema="xtk:srcSchema">  
@@ -233,7 +233,7 @@ CREATE TABLE CusOverflow(iChildren NUMERIC(3) NOT NULL Default 0, iRecipientId I
 CREATE UNIQUE INDEX CusOverflow2_id ON CusOverflow2(iRecipientId);  
 ```
 
-## Tabela Relacionamento {#relationship-table}
+## Tabela de relacionamento {#relationship-table}
 
 Uma tabela de relacionamento permite vincular duas tabelas com cardinalidade N-N. Esta tabela contém apenas as chaves estrangeiras das tabelas a serem vinculadas.
 
@@ -321,7 +321,7 @@ xtkschema="xtk:srcSchema">
 </srcSchema>
 ```
 
-Em qualquer tabela que use essa tabela de referência, defina um link e adicione o atributo **displayAsField=&quot;true&quot;** .
+Em qualquer tabela que use essa tabela de referência, defina um link e adicione o atributo **displayAsField=&quot;true&quot;**.
 
 ```
 <element displayAsField="true" label="Bank" name="bank" target="cus:bank" type="link" noDbIndex="true"/>
