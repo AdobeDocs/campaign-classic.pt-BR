@@ -31,7 +31,7 @@ Esta é uma lista de módulos afetados por problemas frequentes:
   <tr> 
    <td> exportação </td> 
    <td> Execução de um processo de exportação<br /> </td> 
-   <td> O operador que programou essa exportação precisa reiniciá-la. O delta ou a reinicialização completa.<br /> </td> 
+   <td> O operador que programou essa exportação precisa reiniciá-la. Reinicialização delta ou completa.<br /> </td> 
   </tr> 
   <tr> 
    <td> importação </td> 
@@ -55,8 +55,8 @@ Esta é uma lista de módulos afetados por problemas frequentes:
   </tr> 
   <tr> 
    <td> syslogd </td> 
-   <td> Registro<br /> </td> 
-   <td> Se alguns registros estiverem ausentes nos arquivos de registro, verifique se o módulo está usando a porta 666. Consulte a <a href="../../production/using/general-architecture.md#list-of-open-ports" target="_blank">Lista de portas</a>abertas.<br /> </td> 
+   <td> Registro de escrita<br /> </td> 
+   <td> Se alguns registros estiverem ausentes nos arquivos de registro, verifique se o módulo está usando a porta 666. Consulte <a href="../../production/using/general-architecture.md#list-of-open-ports" target="_blank">Lista de portas abertas</a>.<br /> </td> 
   </tr> 
   <tr> 
    <td> rastreamento </td> 
@@ -66,22 +66,22 @@ Esta é uma lista de módulos afetados por problemas frequentes:
   <tr> 
    <td> trackinglogd </td> 
    <td> Rastreamento de gravação e remoção de log do servidor<br /> </td> 
-   <td> Verifique este módulo se os logs de rastreamento não forem mais encaminhados e se não houver rastreamentos de registros nos arquivos no servidor. Consulte os problemas com <a href="../../production/using/tracking-logs-issues.md" target="_blank">Logs de rastreamento</a>.<br /> </td> 
+   <td> Verifique este módulo se os logs de rastreamento não forem mais encaminhados e se não houver rastreamentos de registros nos arquivos no servidor. Consulte <a href="../../production/using/tracking-logs-issues.md" target="_blank">problemas de Logs de rastreamento</a>.<br /> </td> 
   </tr> 
   <tr> 
    <td> cão de guarda </td> 
    <td> Instância de inicialização e monitoramento<br /> </td> 
-   <td> Verifique este módulo se nenhum start de processos for processado.<br /> </td> 
+   <td> Verifique este módulo se não houver start de processos.<br /> </td> 
   </tr> 
   <tr> 
    <td> web </td> 
    <td> Servidor de aplicativos (HTTP e SOAP)<br /> </td> 
-   <td> Verifique este módulo se o console e as conexões da Web não funcionam e dispare um erro de tipo <strong>xtk:session</strong><br /> </td> 
+   <td> Verifique este módulo se o console e as conexões da Web não funcionarem e disparar um erro de tipo <strong>xtk:session</strong><br /> </td> 
   </tr> 
   <tr> 
    <td> wfserver </td> 
    <td> Controla a execução da instância do fluxo de trabalho.<br /> </td> 
-   <td> Se encontrar algum problema, reinicie este módulo. Se necessário, aplique o procedimento para aumentar a precisão dos registros detalhados na seção de precisão <a href="../../production/using/log-precision.md" target="_blank">do</a> registro.<br /> </td> 
+   <td> Se encontrar algum problema, reinicie este módulo. Se necessário, aplique o procedimento para aumentar a precisão dos registros detalhados na seção <a href="../../production/using/log-precision.md" target="_blank">Precisão do registro</a>.<br /> </td> 
   </tr> 
  </tbody> 
 </table>
