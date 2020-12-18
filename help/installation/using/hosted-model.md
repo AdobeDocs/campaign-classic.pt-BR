@@ -19,9 +19,9 @@ ht-degree: 6%
 
 Como cliente hospedado, a maioria das etapas de instalação e configuração são executadas por Adobe. Você pode acessar as seguintes seções para personalizar sua implementação:
 
-* Configure URLs de rastreamento e mirror page por marca. Para mensagens transacionais, consulte [esta seção](../../message-center/using/configuring-multibranding.md).
-* Instale o console do cliente: consulte [esta seção](../../installation/using/installing-the-client-console.md).
-* Saiba mais sobre as ferramentas de entrega e as práticas recomendadas lendo o guia [de](../../delivery/using/deliverability-key-points.md) introdução e a documentação [](../../delivery/using/about-deliverability.md)detalhada.
-* Configure as opções de Campanha: consulte [esta seção](../../installation/using/configuring-campaign-options.md).
-* Configurar conectores CRM: consulte [esta seção](../../platform/using/crm-connectors.md).
+* Configure URLs de rastreamento e mirror page por marca. Para mensagens transacionais, consulte [nesta seção](../../message-center/using/configuring-multibranding.md).
+* Instale o console do cliente: consulte [nesta seção](../../installation/using/installing-the-client-console.md).
+* Saiba mais sobre as ferramentas de entrega e as práticas recomendadas lendo o [guia de introdução](../../delivery/using/deliverability-key-points.md) e [documentação detalhada](../../delivery/using/about-deliverability.md).
+* Configure as opções de Campanha: consulte [nesta seção](../../installation/using/configuring-campaign-options.md).
+* Configurar conectores CRM: consulte [nesta seção](../../platform/using/crm-connectors.md).
 
