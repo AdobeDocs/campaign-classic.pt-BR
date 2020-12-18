@@ -128,7 +128,7 @@ Quando suas páginas da Web são geradas dinamicamente, você pode adicionar o t
 
 Se você quiser controlar as informações enviadas para o servidor de redirecionamento, a maneira mais confiável é executar o query HTTP de forma sincronizada usando um idioma de geração de página.
 
-O URL que você constrói deve obedecer às regras de sintaxe definidas no [Tag de rastreamento web: definição](../../configuration/using/web-tracking-tag--definition.md).
+O URL que você constrói deve obedecer às regras de sintaxe definidas em [Tag de rastreamento web: Definition](../../configuration/using/web-tracking-tag--definition.md).
 
 ![](assets/d_ncs_integration_webtracking_structure3.png)
 
