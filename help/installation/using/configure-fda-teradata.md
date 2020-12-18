@@ -17,13 +17,13 @@ ht-degree: 83%
 
 # Configuração do acesso ao Teradata {#configure-access-to-teradata}
 
-Use a opção Campanha [Federated Data Acces](../../installation/using/about-fda.md) (FDA) para processar informações armazenadas em bancos de dados externos. Siga as etapas abaixo para configurar o acesso ao Teradata.
+Use a opção Campanha [Federated Data Acces](../../installation/using/about-fda.md) (FDA) para processar informações armazenadas em um banco de dados externo. Siga as etapas abaixo para configurar o acesso ao Teradata.
 
-1. Instalar e configurar drivers [Teradata](#teradata-config)
-1. Configure a [conta externa](#teradata-external) Teradata na Campanha
-1. Configurar configuração [](#teradata-additional-configurations) adicional para Teradata e servidor de Campanha
+1. Instalar e configurar [drivers Teradata](#teradata-config)
+1. Configure o Teradata [conta externa](#teradata-external) na Campanha
+1. Configurar [configuração adicional](#teradata-additional-configurations) para Teradata e Campaign Server
 
-## Configuração teradata {#teradata-config}
+## Configuração do teradata {#teradata-config}
 
 É necessário instalar drivers para a Teradata para que a conexão com a Campanha seja implementada.
 
@@ -83,7 +83,7 @@ A conta externa do Teradata permite conectar sua instância do Campaign ao banco
 
 1. Para configurar a conta externa do **[!UICONTROL Teradata]**, você deve especificar:
 
-   * **[!UICONTROL Type]**: Escolha o **[!UICONTROL Teradata]** tipo.
+   * **[!UICONTROL Type]**: Escolha o  **[!UICONTROL Teradata]** tipo.
 
    * **[!UICONTROL Server]**: URL ou nome do seu servidor Teradata
 
@@ -111,9 +111,9 @@ Quando essa opção é configurada, cada vez que um usuário Campanha executa um
 
 Para configurar a Query, siga as etapas abaixo:
 
-1. Use the  **[!UICONTROL Default]** to enter a default query band that will be used if a user has no associated query band. Se este campo estiver vazio, os usuários sem faixa de query não poderão utilizar o Teradata.
+1. Use **[!UICONTROL Default]** para inserir uma faixa de query padrão que será usada se um usuário não tiver uma faixa de query associada. Se este campo estiver vazio, os usuários sem faixa de query não poderão utilizar o Teradata.
 
-1. Use the **[!UICONTROL Users]** field to specify a query band for each user. Você pode adicionar quantos pares chave/valor forem necessários, por exemplo, priority=1;workload=high. Se o usuário não tiver nenhuma faixa de query atribuída, o campo **[!UICONTROL Default]** será aplicado.
+1. Use o campo **[!UICONTROL Users]** para especificar uma faixa de query para cada usuário. Você pode adicionar quantos pares chave/valor forem necessários, por exemplo, priority=1;workload=high. Se o usuário não tiver nenhuma faixa de query atribuída, o campo **[!UICONTROL Default]** será aplicado.
 
 1. Marque a caixa **[!UICONTROL Active]** para ativar esse recurso
 
@@ -125,7 +125,7 @@ Erro **ODB-240000 ODBC: [Nome da fonte de dados Microsoft][ODBC Driver Manager] 
 
 * A partir da Campanha 18.10, é possível adicionar ODBCDRiverName=&quot;Teradata Database ODBC Driver 16.10&quot; nas opções da conta externa. O número da versão pode mudar; o nome exato pode ser encontrado executando o odbcad32.exe e acessando a guia Drivers.
 
-* Se estiver usando uma versão de Campanha mais antiga, será necessário copiar a seção Teradata de odbcinst.ini criada pela instalação do driver para uma nova seção chamada Teradata. Regedit pode ser usado neste caso. If your base is in latin1, you will have to add **APICharSize=1** in the options.
+* Se estiver usando uma versão de Campanha mais antiga, será necessário copiar a seção Teradata de odbcinst.ini criada pela instalação do driver para uma nova seção chamada Teradata. Regedit pode ser usado neste caso. Se sua base estiver em latin1, você terá que adicionar **APICharSize=1** nas opções.
 
 ## Configurações adicionais {#teradata-additional-configurations}
 
