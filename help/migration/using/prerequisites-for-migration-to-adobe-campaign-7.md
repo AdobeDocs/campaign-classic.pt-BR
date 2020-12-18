@@ -17,7 +17,7 @@ ht-degree: 22%
 
 # Pré-requisitos da migração para o Adobe Campaign 7{#prerequisites-for-migration-to-adobe-campaign}
 
-Antes de executar qualquer migração, consulte [Antes de iniciar a migração](../../migration/using/before-starting-migration.md) e [Configurar as seções da plataforma](../../migration/using/configuring-your-platform.md) .
+Antes de executar qualquer migração, consulte as seções [Antes de iniciar a migração](../../migration/using/before-starting-migration.md) e [Configurar a plataforma](../../migration/using/configuring-your-platform.md).
 
 Ao migrar da v6.02 para o Adobe Campaign v7, alguns arquivos entregues anteriormente não são entregues.
 
