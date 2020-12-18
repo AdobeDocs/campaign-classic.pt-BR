@@ -19,7 +19,7 @@ ht-degree: 1%
 
 ## Introdução {#introduction}
 
-O **[!UICONTROL Database cleanup]** fluxo de trabalho acessível pelo **[!UICONTROL Administration > Production > Technical workflows]** nó permite que você exclua dados obsoletos para evitar o crescimento exponencial do banco de dados. O workflow é acionado automaticamente sem a intervenção do usuário.
+O fluxo de trabalho **[!UICONTROL Database cleanup]** acessível pelo nó **[!UICONTROL Administration > Production > Technical workflows]** permite que você exclua dados obsoletos para evitar o crescimento exponencial do banco de dados. O workflow é acionado automaticamente sem a intervenção do usuário.
 
 ![](assets/ncs_cleanup_workflow.png)
 
@@ -44,15 +44,15 @@ Por padrão, o fluxo de trabalho **[!UICONTROL Database cleanup]** é configurad
 
 >[!IMPORTANT]
 >
->Para que o fluxo de trabalho seja **[!UICONTROL Database cleanup]** start na data e hora definidas no scheduler, o motor de workflow (wfserver) deve ser iniciado. Se esse não for o caso, a limpeza do banco de dados não ocorrerá até a próxima vez que o motor de workflow for iniciado.
+>Para que o fluxo de trabalho **[!UICONTROL Database cleanup]** seja start na data e hora definidas no scheduler, o motor de workflow (wfserver) deve ser iniciado. Se esse não for o caso, a limpeza do banco de dados não ocorrerá até a próxima vez que o motor de workflow for iniciado.
 
 ### Assistente de implantação {#deployment-wizard}
 
-O **[!UICONTROL Deployment wizard]**, acessado pelo **[!UICONTROL Tools > Advanced]** menu, permite configurar por quanto tempo os dados são salvos. Os valores são expressos em dias. Se esses valores não forem alterados, o fluxo de trabalho usará os valores padrão.
+O **[!UICONTROL Deployment wizard]**, acessado pelo menu **[!UICONTROL Tools > Advanced]**, permite que você configure por quanto tempo os dados são salvos. Os valores são expressos em dias. Se esses valores não forem alterados, o fluxo de trabalho usará os valores padrão.
 
 ![](assets/ncs_cleanup_deployment-wizard.png)
 
-Os campos da **[!UICONTROL Purge of data]** janela coincidem com as seguintes opções. Eles são usados por algumas tarefas executadas pelo **[!UICONTROL Database cleanup]** fluxo de trabalho:
+Os campos da janela **[!UICONTROL Purge of data]** coincidem com as seguintes opções. Eles são usados por algumas tarefas executadas pelo fluxo de trabalho **[!UICONTROL Database cleanup]**:
 
 * Rastreamento consolidado: **NmsCleanup_TrackingStatPurgeDelay** (consulte [Limpeza de logs de rastreamento](#cleanup-of-tracking-logs))
 * Logs do delivery: **NmsCleanup_BroadLogPurgeDelay** (consulte [Limpeza de logs do delivery](#cleanup-of-delivery-logs))
@@ -64,18 +64,18 @@ Os campos da **[!UICONTROL Purge of data]** janela coincidem com as seguintes op
 
    >[!NOTE]
    >
-   >O **[!UICONTROL Offer propositions]** campo só estará disponível quando o módulo **Interação** estiver instalado.
+   >O campo **[!UICONTROL Offer propositions]** só está disponível quando o módulo **Interação** está instalado.
 
-* Eventos: **NmsCleanup_EventPurgeDelay** (consulte a [Limpeza de eventos](#cleansing-expired-events)expirados)
-* Eventos arquivados: **NmsCleanup_EventHistoPurgeDelay** (consulte os eventos [vencidos da](#cleansing-expired-events)Limpeza)
+* Eventos: **NmsCleanup_EventPurgeDelay** (consulte [eventos expirados de Limpeza](#cleansing-expired-events))
+* Eventos arquivados: **NmsCleanup_EventHistoPurgeDelay** (consulte [eventos expirados de Limpeza](#cleansing-expired-events))
 
    >[!NOTE]
    >
-   >Os campos **[!UICONTROL Events]** e **[!UICONTROL Archived events]** só estarão disponíveis se o módulo Central **de** mensagens estiver instalado.
+   >Os campos **[!UICONTROL Events]** e **[!UICONTROL Archived events]** só estarão disponíveis se o módulo **Centro de Mensagens** estiver instalado.
 
-* Trilha de auditoria: **XtkCleanup_AuditTrailPurgeDelay** (consulte a [Limpeza da trilha](#cleanup-of-audit-trail)de auditoria)
+* Trilha de auditoria: **XtkCleanup_AuditTrailPurgeDelay** (consulte [Limpeza da trilha de auditoria](#cleanup-of-audit-trail))
 
-Todas as tarefas executadas pelo **[!UICONTROL Database cleanup]** fluxo de trabalho são descritas na seção a seguir.
+Todas as tarefas executadas pelo fluxo de trabalho **[!UICONTROL Database cleanup]** são descritas na seção a seguir.
 
 ## Tarefas executadas pelo fluxo de trabalho de limpeza do Banco de Dados {#tasks-carried-out-by-the-database-cleanup-workflow}
 
@@ -92,7 +92,7 @@ Na data e hora definidas no scheduler do fluxo de trabalho (consulte [O schedule
 
 ### Listas para excluir a limpeza {#lists-to-delete-cleanup}
 
-A primeira tarefa executada pelo **[!UICONTROL Database cleanup]** fluxo de trabalho exclui todos os grupos com o **deleteStatus != 0** atributo do **NmsGroup**. Os registros ligados a esses grupos e que existem em outras tabelas também são excluídos.
+A primeira tarefa executada pelo fluxo de trabalho **[!UICONTROL Database cleanup]** exclui todos os grupos com o **deleteStatus != 0** do atributo **NmsGroup**. Os registros ligados a esses grupos e que existem em outras tabelas também são excluídos.
 
 1. As listas a serem excluídas são recuperadas usando o seguinte query SQL:
 
@@ -106,7 +106,7 @@ A primeira tarefa executada pelo **[!UICONTROL Database cleanup]** fluxo de trab
    DELETE FROM $(relatedTable) WHERE iGroupId=$(l) IN (SELECT iGroupId FROM $(relatedTable) WHERE iGroupId=$(l) LIMIT 5000) 
    ```
 
-   em que **$(relatedTable)** é uma tabela relacionada ao **NmsGroup** e **$(l)** é o identificador da lista.
+   em que **$(relatedTable)** é uma tabela relacionada a **NmsGroup** e **$(l)** é o identificador da lista.
 
 1. Quando a lista é do tipo &quot;Lista&quot;, a tabela associada é excluída usando o seguinte query:
 
@@ -114,7 +114,7 @@ A primeira tarefa executada pelo **[!UICONTROL Database cleanup]** fluxo de trab
    DROP TABLE grp$(l)
    ```
 
-1. Cada lista **Select** type recuperada pela operação é excluída usando o seguinte query:
+1. Cada lista de tipo **Select** recuperada pela operação é excluída usando o seguinte query:
 
    ```
    DELETE FROM NmsGroup WHERE iGroupId=$(l) 
@@ -122,13 +122,13 @@ A primeira tarefa executada pelo **[!UICONTROL Database cleanup]** fluxo de trab
 
    em que **$(l)** é o identificador da lista
 
-### Limpeza dos delivery a eliminar ou a reciclar {#cleanup-of-deliveries-to-be-deleted-or-recycled}
+### Limpeza de delivery a serem excluídos ou reciclados {#cleanup-of-deliveries-to-be-deleted-or-recycled}
 
 Esta tarefa limpa todos os delivery a serem excluídos ou reciclados.
 
-1. O **[!UICONTROL Database cleanup]** fluxo de trabalho seleciona todos os delivery para os quais o campo **deleteStatus** tem o valor **[!UICONTROL Yes]** ou **[!UICONTROL Recycled]** e cuja data de exclusão é anterior ao período definido no campo **[!UICONTROL Deleted deliveries]** (**NmsCleanup_RecycledDeliveryPurgeDelay**) do assistente de implantação. For more on this, refer to [Deployment wizard](#deployment-wizard). Esse período é calculado em relação à data atual do servidor.
+1. O fluxo de trabalho **[!UICONTROL Database cleanup]** seleciona todos os delivery para os quais o campo **deleteStatus** tem o valor **[!UICONTROL Yes]** ou **[!UICONTROL Recycled]** e cuja data de exclusão é anterior ao período definido no campo **[!UICONTROL Deleted deliveries]** (**NmsCleanup_RecycledDeliveryPurgeDelay**) do assistente de implantação. Para obter mais informações, consulte [Assistente de implantação](#deployment-wizard). Esse período é calculado em relação à data atual do servidor.
 1. Para cada servidor mid-sourcing, a tarefa seleciona a lista de delivery a serem excluídos.
-1. O **[!UICONTROL Database cleanup]** fluxo de trabalho exclui logs do delivery, anexos, informações do mirror page e todos os outros dados relacionados.
+1. O fluxo de trabalho **[!UICONTROL Database cleanup]** exclui logs do delivery, anexos, informações sobre mirrores page e todos os outros dados relacionados.
 1. Antes de excluir o delivery para boas, o fluxo de trabalho remove as informações vinculadas das seguintes tabelas:
 
    * Na tabela de exclusão de delivery (**NmsDlvExclusion**), é usado o seguinte query:
@@ -137,22 +137,22 @@ Esta tarefa limpa todos os delivery a serem excluídos ou reciclados.
       DELETE FROM NmsDlvExclusion WHERE iDeliveryId=$(l)
       ```
 
-      onde **$(l)** é o identificador do delivery.
+      em que **$(l)** é o identificador do delivery.
 
-   * Na tabela de cupom (**NmsCouponValue**), o seguinte query é usado (com exclusões em massa):
+   * Na tabela de cupom (**NmsCouponValue**), é usado o seguinte query (com exclusões em massa):
 
       ```
       DELETE FROM NmsCouponValue WHERE iMessageId IN (SELECT iMessageId FROM NmsCouponValue WHERE EXISTS (SELECT B.iBroadLogId FROM $(BroadLogTableName) B WHERE B.iDeliveryId = $(l) AND B.iBroadLogId = iMessageId ) LIMIT 5000)
       ```
 
-      onde **$(l)** é o identificador do delivery.
+      em que **$(l)** é o identificador do delivery.
 
    * Nas tabelas de log de delivery (**NmsBroadlogXxx**), as exclusões em massa são executadas em lotes de 20.000 registros.
    * Nas tabelas de apresentação da oferta (**NmsPropositionXxx**), as exclusões em massa são executadas em lotes de 20.000 registros.
    * Nas tabelas de log de rastreamento (**NmsTrackinglogXxx**), as exclusões em massa são executadas em lotes de 20.000 registros.
    * Na tabela de fragmentos do delivery (**NmsDeliveryPart**), as exclusões em massa são executadas em lotes de 500.000 registros. Esta tabela contém informações de personalização sobre as mensagens restantes a serem entregues.
-   * Na tabela de fragmentos de dados do mirror page (**NmsMirrorPageInfo**), as exclusões em massa são executadas em lotes de 20.000 registros para partes do delivery expiradas e para partes concluídas ou canceladas. Esta tabela contém informações de personalização sobre todas as mensagens usadas para gerar mirrores page.
-   * Na tabela de pesquisa de mirrores page (**NmsMirrorPageSearch**), as exclusões em massa são executadas em lotes de 20.000 registros. Esta tabela é um índice de pesquisa que fornece acesso às informações de personalização armazenadas na tabela **NmsMirrorPageInfo** .
+   * Na tabela do fragmento de dados do mirror page (**NmsMirrorPageInfo**), as exclusões em massa são executadas em lotes de 20.000 registros para partes do delivery expiradas e para partes concluídas ou canceladas. Esta tabela contém informações de personalização sobre todas as mensagens usadas para gerar mirrores page.
+   * Na tabela de pesquisa de mirrores page (**NmsMirrorPageSearch**), as exclusões em massa são executadas em lotes de 20.000 registros. Esta tabela é um índice de pesquisa que fornece acesso às informações de personalização armazenadas na tabela **NmsMirrorPageInfo**.
    * Na tabela de log do processo em lote (**XtkJobLog**), as exclusões em massa são executadas em lotes de 20.000 registros. Esta tabela contém o log de delivery a serem excluídos.
    * Na tabela de rastreamento de URL do delivery (**NmsTrackingUrl**), o seguinte query é usado:
 
@@ -160,7 +160,7 @@ Esta tarefa limpa todos os delivery a serem excluídos ou reciclados.
       DELETE FROM NmsTrackingUrl WHERE iDeliveryId=$(l)
       ```
 
-      onde **$(l)** é o identificador do delivery.
+      em que **$(l)** é o identificador do delivery.
 
       Esta tabela contém os URLs encontrados nos delivery a serem excluídos para permitir seu rastreamento.
 
@@ -170,11 +170,11 @@ Esta tarefa limpa todos os delivery a serem excluídos ou reciclados.
    DELETE FROM NmsDelivery WHERE iDeliveryId = $(l)
    ```
 
-   onde **$(l)** é o identificador do delivery.
+   em que **$(l)** é o identificador do delivery.
 
 #### Delivery usando mid-sourcing {#deliveries-using-mid-sourcing}
 
-O **[!UICONTROL Database cleanup]** fluxo de trabalho também exclui delivery nos servidores mid-sourcing.
+O fluxo de trabalho **[!UICONTROL Database cleanup]** também exclui delivery nos servidores mid-sourcing.
 
 1. Para fazer isso, o fluxo de trabalho verifica se cada delivery está inativo (com base em seu status). Se um delivery estiver ativo, ele será interrompido antes de ser excluído. A verificação é realizada executando o seguinte query:
 
@@ -182,21 +182,21 @@ O **[!UICONTROL Database cleanup]** fluxo de trabalho também exclui delivery no
    SELECT iState FROM NmsDelivery WHERE iDeliveryId = $(l) AND iState <> 100;
    ```
 
-   onde **$(l)** é o identificador do delivery.
+   em que **$(l)** é o identificador do delivery.
 
-1. Se o valor do status for **[!UICONTROL Start pending]** , **[!UICONTROL In progress]** , **[!UICONTROL Recovery pending]** , **[!UICONTROL Recovery in progress]** , **[!UICONTROL Pause requested]** , **[!UICONTROL Pause in progress]** ou **[!UICONTROL Paused]** (valores 51, 55, 61, 62, 71, 72, 75), o delivery será parado e a tarefa limpará as informações vinculadas.
+1. Se o valor do status for **[!UICONTROL Start pending]**, **[!UICONTROL In progress]**, **[!UICONTROL Recovery pending]**, **[!UICONTROL Recovery in progress]**, **[!UICONTROL Pause requested]**, **[!UICONTROL Pause in progress]** ou **[!UICONTROL Paused]** (valores 51, 55, 61, 62, 71, 72, 75), o delivery será parado e a tarefa limpará as informações vinculadas.
 
 ### Limpeza de delivery expirados {#cleanup-of-expired-deliveries}
 
 Esta tarefa interrompe delivery cujo período de validade expirou.
 
-1. O **[!UICONTROL Database cleanup]** fluxo de trabalho cria a lista de delivery que expiraram. Esta lista inclui todos os delivery expirados com um status diferente de **[!UICONTROL Finished]** , bem como delivery recém-parados com mais de 10.000 mensagens não processadas. O query a seguir é usado:
+1. O fluxo de trabalho **[!UICONTROL Database cleanup]** cria a lista de delivery que expiraram. Esta lista inclui todos os delivery expirados com um status diferente de **[!UICONTROL Finished]**, bem como delivery recém-parados com mais de 10.000 mensagens não processadas. O query a seguir é usado:
 
    ```
    SELECT iDeliveryId, iState FROM NmsDelivery WHERE iDeleteStatus=0 AND iIsModel=0 AND iDeliveryMode=1 AND ( (iState >= 51 AND iState < 85 AND tsValidity IS NOT NULL AND tsValidity < $(currentDate) ) OR (iState = 85 AND DateMinusDays(15) < tsLastModified AND iToDeliver - iProcessed >= 10000 ))
    ```
 
-   onde o modo **delivery 1** corresponde ao **[!UICONTROL Mass delivery]** modo, o **estado 51** corresponde ao **[!UICONTROL Start pending]** estado, o **estado 85** **[!UICONTROL Stopped]** corresponde ao estado e o maior número de logs do delivery atualizados em massa no servidor delivery é igual a 10.000.
+   em que **modo de delivery 1** corresponde ao modo **[!UICONTROL Mass delivery]**, **state 51** corresponde ao estado **[!UICONTROL Start pending]**, **state 85** corresponde ao estado **[!UICONTROL Stopped]** e o maior número de logs do delivery atualizados em massa no servidor delivery é igual a 10.000.
 
 1. O fluxo de trabalho então inclui a lista de delivery expirados recentemente que usam mid-sourcing. Os delivery para os quais nenhum logs do delivery foi recuperado por meio do servidor mid-sourcing são excluídos.
 
@@ -212,7 +212,7 @@ Esta tarefa interrompe delivery cujo período de validade expirou.
    SELECT iExtAccountId FROM NmsExtAccount WHERE iActive<>0 AND sName=$(providerName)
    ```
 
-1. Na lista de delivery expirados, logs do delivery cujo status é **[!UICONTROL Pending]** , alterne para **[!UICONTROL Delivery cancelled]** e todos os delivery desta lista mudam para **[!UICONTROL Finished]** .
+1. Na lista de delivery expirados, logs do delivery cujo status é **[!UICONTROL Pending]**, alterne para **[!UICONTROL Delivery cancelled]** e todos os delivery nessa lista alternam para **[!UICONTROL Finished]**.
 
    Os seguintes query são usados:
 
@@ -220,13 +220,13 @@ Esta tarefa interrompe delivery cujo período de validade expirou.
    UPDATE $(BroadLogTableName) SET tsLastModified=$(curdate), iStatus=7, iMsgId=$(bl) WHERE iDeliveryId=$(dl) AND iStatus=6
    ```
 
-   onde **$(curdate)** é a data atual do servidor de banco de dados, **$(bl)** é o identificador da mensagem de logs do delivery, **$(dl)** é o identificador do delivery, o status do **delivery 6** corresponde ao **[!UICONTROL Pending]** status e o status do **** **[!UICONTROL Delivery cancelled]** delivery 7 corresponde ao status do .
+   em que **$(curdate)** é a data atual do servidor de banco de dados, **$(bl)** é o identificador da mensagem de logs do delivery, **$(dl)** é o identificador do delivery, **o status do delivery 6** corresponde ao status **[!UICONTROL Pending]** e **delivery o status 7** corresponde ao status **[!UICONTROL Delivery cancelled]**.
 
    ```
    UPDATE NmsDelivery SET iState = 95, tsLastModified = $(curdate), tsBroadEnd = tsValidity WHERE iDeliveryId = $(dl)
    ```
 
-   em que o estado do **delivery 95** corresponde ao **[!UICONTROL Finished]** status e **$(dl)** é o identificador do delivery.
+   em que **estado do delivery 95** corresponde ao status **[!UICONTROL Finished]**, e **$(dl)** é o identificador do delivery.
 
 1. Todos os fragmentos (**deliveryParts**) de delivery obsoletos são excluídos e todos os fragmentos obsoletos de delivery de notificação em andamento são excluídos. A exclusão em massa é usada para ambas as tarefas.
 
@@ -240,7 +240,7 @@ Esta tarefa interrompe delivery cujo período de validade expirou.
    DELETE FROM NmsDeliveryPart WHERE iDeliveryPartId IN (SELECT iDeliveryPartId FROM NmsDeliveryPart WHERE tsValidity < $(curDate) LIMIT 500000)
    ```
 
-   onde o estado do **delivery 95** corresponde ao **[!UICONTROL Finished]** status, o estado do **delivery 85** corresponde ao **[!UICONTROL Stopped]** status e **$(curDate)** é a data atual do servidor.
+   em que **estado do delivery 95** corresponde ao status **[!UICONTROL Finished]**, **estado do delivery 85** corresponde ao status **[!UICONTROL Stopped]** e **$(curDate)** é a data atual do servidor.
 
 ### Limpeza de mirrores page {#cleanup-of-mirror-pages}
 
@@ -254,7 +254,7 @@ Essa tarefa exclui os recursos da Web (mirrores page) usados pelos delivery.
 
    em que **$(curDate)** é a data atual do servidor.
 
-1. A tabela **NmsMirrorPageInfo** é então removida, se necessário usando o identificador do delivery recuperado anteriormente. A exclusão em massa é usada para gerar os seguintes query:
+1. A tabela **NmsMirrorPageInfo** é então limpa, se necessário usando o identificador do delivery recuperado anteriormente. A exclusão em massa é usada para gerar os seguintes query:
 
    ```
    DELETE FROM NmsMirrorPageInfo WHERE iMirrorPageInfoId IN (SELECT iMirrorPageInfoId FROM NmsMirrorPageInfo WHERE iDeliveryId = $(dl)) LIMIT 5000)
@@ -264,7 +264,7 @@ Essa tarefa exclui os recursos da Web (mirrores page) usados pelos delivery.
    DELETE FROM NmsMirrorPageSearch WHERE iMessageId IN (SELECT iMessageId FROM NmsMirrorPageSearch WHERE iDeliveryId = $(dl)) LIMIT 5000)
    ```
 
-   onde **$(dl)** é o identificador do delivery.
+   em que **$(dl)** é o identificador do delivery.
 
 1. Uma entrada é então adicionada ao log de delivery.
 1. Os delivery expurgados são então identificados, para evitar a necessidade de reprocessá-los mais tarde. O seguinte query é executado:
@@ -273,13 +273,13 @@ Essa tarefa exclui os recursos da Web (mirrores page) usados pelos delivery.
    UPDATE NmsDelivery SET iWebResPurged = 1 WHERE iDeliveryId IN ($(strIn))
    ```
 
-   where **$(strIn)** é a lista de identificadores de delivery.
+   em que **$(strIn)** é a lista de identificadores de delivery.
 
-### Limpeza das tabelas de trabalho {#cleanup-of-work-tables}
+### Limpeza de tabelas de trabalho {#cleanup-of-work-tables}
 
-Esta tarefa exclui do banco de dados, todas as tabelas de trabalho que correspondem a delivery cujo status é **[!UICONTROL Being edited]** , **[!UICONTROL Stopped]** ou **[!UICONTROL Deleted]** .
+Essa tarefa exclui do banco de dados todas as tabelas de trabalho que correspondem a delivery cujo status é **[!UICONTROL Being edited]**, **[!UICONTROL Stopped]** ou **[!UICONTROL Deleted]**.
 
-1. A lista de tabelas com nomes que começam com **wkDlv_** é recuperada primeiro com o seguinte query (postgresql):
+1. A lista de tabelas com nomes começando com **wkDlv_** é recuperada primeiro com o seguinte query (postgresql):
 
    ```
    SELECT relname FROM pg_class WHERE relname LIKE Lower('wkDlv_') ESCAPE E'\\' AND relkind IN ('r','v') AND pg_get_userbyid(relowner)<>'postgres'
@@ -291,7 +291,7 @@ Esta tarefa exclui do banco de dados, todas as tabelas de trabalho que correspon
    SELECT iDeliveryId FROM NmsDelivery WHERE iDeliveryId<>0 AND iDeleteStatus=0 AND iState NOT IN (0,85,100);
    ```
 
-   onde 0 é o valor que corresponde ao status do **[!UICONTROL Being edited]** delivery, 85 corresponde ao **[!UICONTROL Stopped]** status e 100 corresponde ao **[!UICONTROL Deleted]** status.
+   onde 0 é o valor que corresponde ao status **[!UICONTROL Being edited]** do delivery, 85 corresponde ao status **[!UICONTROL Stopped]** e 100 corresponde ao status **[!UICONTROL Deleted]**.
 
 1. As tabelas que não forem mais usadas serão excluídas usando o seguinte query:
 
@@ -309,7 +309,7 @@ Esta etapa permite excluir registros para os quais todos os dados não foram pro
    DELETE FROM XtkReject WHERE iRejectId IN (SELECT iRejectId FROM XtkReject WHERE tsLog < $(curDate)) LIMIT $(l))
    ```
 
-   em que **$(curDate)** é a data atual do servidor a partir da qual subtraímos o período definido para a opção **NmsCleanup_RejectsPurgeDelay** (consulte o assistente [de](#deployment-wizard)implantação) e **$(l)** é o número máximo de registros a serem excluídos em massa.
+   em que **$(curDate)** é a data do servidor atual a partir da qual subtrairmos o período definido para a opção **NmsCleanup_RejectsPurgeDelay** (consulte [Assistente de implantação](#deployment-wizard)) e **$(l)** é o número máximo de registros a eliminar em massa ...
 
 1. Todos os rejeitos órfãos são depois excluídos usando o seguinte query:
 
@@ -319,11 +319,11 @@ Esta etapa permite excluir registros para os quais todos os dados não foram pro
 
 ### Limpeza de instâncias de fluxo de trabalho {#cleanup-of-workflow-instances}
 
-Essa tarefa limpa cada instância do fluxo de trabalho usando seu identificador (**lWorkflowId**) e histórico (**lHistory**). Ele exclui tabelas inativas executando a tarefa de limpeza da mesa de trabalho novamente. A limpeza também exclui todas as tabelas de trabalho órfãs (wkf% e wkfhisto%) de workflows excluídos.
+Esta tarefa limpa cada instância do fluxo de trabalho usando seu identificador (**lWorkflowId**) e histórico (**lHistory**). Ele exclui tabelas inativas executando a tarefa de limpeza da mesa de trabalho novamente. A limpeza também exclui todas as tabelas de trabalho órfãs (wkf% e wkfhisto%) de workflows excluídos.
 
 >[!NOTE]
 >
->A frequência de expurgação do histórico é especificada para cada fluxo de trabalho no campo **Histórico em dias** (valor padrão 30 dias). Esse campo pode ser encontrado na guia **Execução** das propriedades do fluxo de trabalho. Para obter mais informações, consulte [esta seção](../../workflow/using/workflow-properties.md#execution).
+>A frequência de expurgação do histórico é especificada para cada fluxo de trabalho no campo **Histórico em dias** (valor padrão 30 dias). Este campo pode ser encontrado na guia **Execution** das propriedades do fluxo de trabalho. Para obter mais informações, consulte [esta seção](../../workflow/using/workflow-properties.md#execution).
 
 1. Para recuperar a lista de workflows a serem excluídos, é usado o seguinte query:
 
@@ -345,7 +345,7 @@ Essa tarefa limpa cada instância do fluxo de trabalho usando seu identificador 
    DELETE FROM XtkWorkflowEvent WHERE iWorkflowId=$(l) AND iStatus>2 AND tsProcessing < DateMinusDays($(lHistory))
    ```
 
-   onde **$(fluxo de trabalho)** é o identificador do fluxo de trabalho e **$(histórico)** é o identificador do histórico.
+   onde **$(lworkflow)** é o identificador do fluxo de trabalho e **$(lhistory)** é o identificador do histórico.
 
 1. Todas as tabelas não usadas são excluídas. Para essa finalidade, todas as tabelas são coletadas graças a uma máscara de tipo **wkf%** usando o seguinte query (postgresql):
 
@@ -370,7 +370,7 @@ Essa tarefa limpa cada instância do fluxo de trabalho usando seu identificador 
    SELECT iWorkflowId FROM XtkWorkflow WHERE iWorkflowId IN ($(strCondition))
    ```
 
-   onde **$(strcondition)** é a lista de tabelas que correspondem à máscara **wkfhisto%** .
+   em que **$(strcondition)** é a lista de tabelas que correspondem à máscara **wkfhisto%**.
 
 1. As tabelas restantes são excluídas usando o seguinte query:
 
@@ -396,27 +396,27 @@ SELECT iGroupId FROM NmsGroup WHERE iType>0"
 
 ### Limpeza de visitantes {#cleanup-of-visitors}
 
-Esta tarefa exclui registros obsoletos da tabela de visitantes usando a exclusão em massa. Os registros obsoletos são aqueles para os quais a última modificação é anterior ao período de conservação definido no assistente de implantação (consulte o assistente [de](#deployment-wizard)implantação). O query a seguir é usado:
+Esta tarefa exclui registros obsoletos da tabela de visitantes usando a exclusão em massa. Os registros obsoletos são aqueles para os quais a última modificação é anterior ao período de conservação definido no assistente de implantação (consulte [Assistente de implantação](#deployment-wizard)). O query a seguir é usado:
 
 ```
 DELETE FROM NmsVisitor WHERE iVisitorId IN (SELECT iVisitorId FROM NmsVisitor WHERE iRecipientId = 0 AND tsLastModified < AddDays(GetDate(), -30) AND iOrigin = 0 LIMIT 20000)
 ```
 
-em que **$(tsDate)** é a data atual do servidor, a partir da qual subtraímos o período definido para a opção **NmsCleanup_VisitorPurgeDelay** .
+em que **$(tsDate)** é a data atual do servidor, a partir da qual subtraímos o período definido para a opção **NmsCleanup_VisitorPurgeDelay**.
 
-### Limpeza da NAPI {#cleanup-of-npai}
+### Limpeza de NPAI {#cleanup-of-npai}
 
-Esta tarefa permite que você exclua registros que correspondem a endereços válidos da tabela **NmsAddress** . O query a seguir é usado para executar a exclusão em massa:
+Esta tarefa permite que você exclua registros que correspondem a endereços válidos da tabela **NmsAddress**. O query a seguir é usado para executar a exclusão em massa:
 
 ```
 DELETE FROM NmsAddress WHERE iAddressId IN (SELECT iAddressId FROM NmsAddress WHERE iStatus=2 AND tsLastModified < $(tsDate1) AND tsLastModified >= $(tsDate2) LIMIT 5000)
 ```
 
-onde **o status 2** corresponde ao **[!UICONTROL Valid]** status, **$(tsDate1)** é a data atual do servidor e **$(tsDate2)** corresponde à opção **NmsCleanup_LastCleanup** .
+em que **status 2** corresponde ao status **[!UICONTROL Valid]**, **$(tsDate1)** é a data atual do servidor e **$(tsDate2)** corresponde à opção **NmsCleanup_LastCleanup**.
 
-### Limpeza de subscrições {#cleanup-of-subscriptions-}
+### Limpeza do subscrição {#cleanup-of-subscriptions-}
 
-Esta tarefa limpa todas as subscrições excluídas pelo usuário da tabela **NmsSubscription** , usando exclusão em massa. O query a seguir é usado:
+Esta tarefa limpa todas as subscrições excluídas pelo usuário da tabela **NmsSubscription**, usando exclusão em massa. O query a seguir é usado:
 
 ```
 DELETE FROM NmsSubscription WHERE iDeleteStatus <>0
@@ -424,7 +424,7 @@ DELETE FROM NmsSubscription WHERE iDeleteStatus <>0
 
 ### Limpeza de logs de rastreamento {#cleanup-of-tracking-logs}
 
-Esta tarefa exclui registros obsoletos das tabelas de log de rastreamento e de rastreamento da Web. Os registros obsoletos são os anteriores ao período de conservação definido no assistente de implantação (consulte o assistente [de](#deployment-wizard)implantação).
+Esta tarefa exclui registros obsoletos das tabelas de log de rastreamento e de rastreamento da Web. Os registros obsoletos são os anteriores ao período de conservação definido no assistente de implantação (consulte [Assistente de implantação](#deployment-wizard)).
 
 1. Primeiro, a lista das tabelas de log de rastreamento é recuperada usando o seguinte query:
 
@@ -438,7 +438,7 @@ Esta tarefa exclui registros obsoletos das tabelas de log de rastreamento e de r
    DELETE FROM XtkTrackingLogRcp WHERE iTrackingLogId IN (SELECT iTrackingLogId FROM XtkTrackingLogRcp WHERE tsLog < $(tsDate) LIMIT 5000) 
    ```
 
-   em que **$(tsDate)** é a data atual do servidor a partir da qual subtraímos o período definido para a opção **NmsCleanup_TrackingLogPurgeDelay** .
+   em que **$(tsDate)** é a data atual do servidor a partir da qual subtraímos o período definido para a opção **NmsCleanup_TrackingLogPurgeDelay**.
 
 1. A tabela de estatísticas de rastreamento é limpa usando a exclusão em massa. O query a seguir é usado:
 
@@ -446,7 +446,7 @@ Esta tarefa exclui registros obsoletos das tabelas de log de rastreamento e de r
    DELETE FROM NmsTrackingStats WHERE iTrackingStatsId IN (SELECT iTrackingStatsId FROM NmsTrackingStats WHERE tsStart < $(tsDate) LIMIT 5000) 
    ```
 
-   em que **$(tsDate)** é a data atual do servidor a partir da qual subtraímos o período definido para a opção **NmsCleanup_TrackingStatPurgeDelay** .
+   em que **$(tsDate)** é a data atual do servidor a partir da qual subtraímos o período definido para a opção **NmsCleanup_TrackingStatPurgeDelay**.
 
 ### Limpeza de logs do delivery {#cleanup-of-delivery-logs}
 
@@ -458,14 +458,14 @@ Essa tarefa permite que você expurgue os logs do delivery armazenados em vária
    SELECT distinct(sBroadLogSchema) FROM NmsDeliveryMapping WHERE sBroadLogSchema IS NOT NULL UNION SELECT distinct(sBroadLogExclSchema) FROM NmsDeliveryMapping WHERE sBroadLogExclSchema IS NOT NULL
    ```
 
-1. Ao usar mid-sourcing, a tabela **NmsBroadLogMid** não é referenciada nos mapeamentos de delivery. O schema **nms:wideLogMid** é adicionado à lista recuperada pelo query anterior.
-1. O fluxo de trabalho de limpeza **do** banco de dados remove dados obsoletos de tabelas recuperadas anteriormente. O query a seguir é usado:
+1. Ao usar o mid-sourcing, a tabela **NmsBroadLogMid** não é referenciada nos mapeamentos de delivery. O schema **nms:wideLogMid** é adicionado à lista recuperada pelo query anterior.
+1. O fluxo de trabalho **Limpeza do banco de dados** elimina dados obsoletos de tabelas anteriormente recuperadas. O query a seguir é usado:
 
    ```
    DELETE FROM $(tableName) WHERE iBroadLogId IN (SELECT iBroadLogId FROM $(tableName) WHERE tsLastModified < $(option) LIMIT 5000) 
    ```
 
-   em que **$(tableName)** é o nome de cada tabela na lista de schemas e **$(option)** é a data definida para a opção **NmsCleanup_BroadLogPurgeDelay** (consulte o assistente [de](#deployment-wizard)implantação).
+   em que **$(tableName)** é o nome de cada tabela na lista de schemas, e **$(option)** é a data definida para a opção **NmsCleanup_BroadLogPurgeDelay** (consulte [Assistente de implantação](#deployment-wizard)).
 
 1. Finalmente, o fluxo de trabalho verifica se a tabela **NmsProviderMsgId** existe. Em caso afirmativo, todos os dados obsoletos serão excluídos usando o seguinte query:
 
@@ -473,26 +473,26 @@ Essa tarefa permite que você expurgue os logs do delivery armazenados em vária
    DELETE FROM NmsProviderMsgId WHERE iBroadLogId IN (SELECT iBroadLogId FROM NmsProviderMsgId WHERE tsCreated < $(option) LIMIT 5000)
    ```
 
-   onde **$(opção)** corresponde à data definida para a opção **NmsCleanup_BroadLogPurgeDelay** (consulte o assistente [de](#deployment-wizard)implantação).
+   em que **$(opção)** corresponde à data definida para a opção **NmsCleanup_BroadLogPurgeDelay** (consulte [Assistente de implantação](#deployment-wizard)).
 
 ### Limpeza da tabela NmsEmailErrorStat {#cleanup-of-the-nmsemailerrorstat-table-}
 
-Esta tarefa limpa a tabela **NmsEmailErrorStat** . O programa principal (**coalesceErrors**) define duas datas:
+Esta tarefa limpa a tabela **NmsEmailErrorStat**. O programa principal (**coalesceErrors**) define duas datas:
 
-* **Data** do start: data do próximo processo que corresponde à opção **NmsLastErrorStateCoalesce** ou a data mais recente na tabela.
+* **Data** do start: data do próximo processo que corresponde à opção  **** NmsLastErrorStatCoalesceoption ou a data mais recente na tabela.
 * **Data** de término: data atual do servidor.
 
 Se a data de start for maior ou igual à data de término, nenhum processo ocorrerá. Nesse caso, a mensagem **coalesceUpToDate** é exibida.
 
 Se a data do start for anterior à data de término, a tabela **NmsEmailErrorStat** será limpa.
 
-O número total de erros na tabela **NmsEmailErrorStat** , entre as datas de start e término, é recuperado usando o seguinte query:
+O número total de erros na tabela **NmsEmailErrorStat**, entre as datas do start e final, é recuperado usando o seguinte query:
 
 ```
 "SELECT COUNT(*) FROM NmsEmailErrorStat WHERE tsDate>= $(start) AND tsDate< $(end)"
 ```
 
-onde **$end** e **$start** são as datas de start e término definidas anteriormente.
+em que **$end** e **$start** são as datas de start e término definidas anteriormente.
 
 Se o total for maior que 0:
 
@@ -521,7 +521,7 @@ Se o total for maior que 0:
 
 O ciclo e a tarefa param.
 
-As limpas são executadas nas tabelas **NmsEmailError** e **cleanupNmsMxDomain** .
+As limpas são executadas nas tabelas **NmsEmailError** e **cleanupNmsMxDomain**.
 
 ### Limpeza da tabela NmsEmailError {#cleanup-of-the-nmsemailerror-table-}
 
@@ -531,7 +531,7 @@ O query a seguir é usado:
 DELETE FROM NmsEmailError WHERE iMXIP NOT IN (SELECT DISTINCT iMXIP FROM NmsEmailErrorStat)
 ```
 
-Este query exclui todas as linhas sem registros vinculados no **NmsEmailErrorStat** da tabela **NmsEmailError** .
+Este query exclui todas as linhas sem registros vinculados na tabela **NmsEmailErrorStat** da **NmsEmailError**.
 
 ### Limpeza da tabela NmsMxDomain {#cleanup-of-the-nmsmxdomain-table-}
 
@@ -541,11 +541,11 @@ O query a seguir é usado:
 DELETE FROM NmsMxDomain WHERE iMXIP NOT IN (SELECT DISTINCT iMXIP FROM NmsEmailErrorStat)
 ```
 
-Este query exclui todas as linhas sem um registro vinculado na tabela **NmsEmailErrorStat** da tabela **NmsMxDomain** .
+Este query exclui todas as linhas sem um registro vinculado na tabela **NmsEmailErrorStat** da tabela **NmsMxDomain**.
 
-### Limpeza das proposições {#cleanup-of-propositions}
+### Limpeza de proposições {#cleanup-of-propositions}
 
-Se o módulo **Interaction** estiver instalado, essa tarefa será executada para expurgar as tabelas **NmsPropositionXxx** .
+Se o módulo **Interaction** estiver instalado, esta tarefa será executada para expurgar as tabelas **NmsPropositionXxx**.
 
 A lista das tabelas de proposições é recuperada e a exclusão em massa é realizada em cada uma delas, usando o seguinte query:
 
@@ -553,9 +553,9 @@ A lista das tabelas de proposições é recuperada e a exclusão em massa é rea
 DELETE FROM NmsPropositionXxx WHERE iPropositionId IN (SELECT iPropositionId FROM NmsPropositionXxx WHERE tsLastModified < $(option) LIMIT 5000) 
 ```
 
-onde **$(opção)** é a data definida para a opção **NmsCleanup_PropositionPurgeDelay** (consulte o assistente [de](#deployment-wizard)implantação).
+em que **$(opção)** é a data definida para a opção **NmsCleanup_PropositionPurgeDelay** (consulte [Assistente de implantação](#deployment-wizard)).
 
-### Limpeza das tabelas de simulação {#cleanup-of-simulation-tables}
+### Limpeza de tabelas de simulação {#cleanup-of-simulation-tables}
 
 Esta tarefa limpa tabelas de simulação órfãs (que não estão mais vinculadas a uma simulação de oferta ou a uma simulação de delivery).
 
@@ -579,7 +579,7 @@ O query a seguir é usado:
 DELETE FROM XtkAudit WHERE tsChanged < $(tsDate)
 ```
 
-em que **$(tsDate)** é a data atual do servidor a partir da qual o período definido para a opção **XtkCleanup_AuditTrailPurgeDelay** está substracto.
+em que **$(tsDate)** é a data do servidor atual a partir da qual o período definido para a opção **XtkCleanup_AuditTrailPurgeDelay** é substracto.
 
 ### Limpeza de Nmsaddress {#cleanup-of-nmsaddress}
 
@@ -595,13 +595,13 @@ Este query exclui todas as entradas relacionadas ao iOS e Android.
 
 A opção **XtkCleanup_NoStats** permite controlar o comportamento da etapa de otimização do armazenamento do fluxo de trabalho de limpeza.
 
-Se a opção **XtkCleanup_NoStats** não existir ou se seu valor for 0, isso executará a otimização do armazenamento no modo detalhado (VACUUM VERBOSE ANALYZE) no PostgreSQL e atualizará as estatísticas em todos os outros bancos de dados. Para verificar se esse comando é executado, verifique os logs do PostgreSQL. O VACUUM emitirá linhas no formato: `INFO: vacuuming "public.nmsactivecontact"` e o ANALYZE emitirá linhas no formato: `INFO: analyzing "public.nmsactivecontact"`.
+Se a opção **XtkCleanup_NoStats** não existir ou se seu valor for 0, isso executará a otimização do armazenamento no modo detalhado (VACUUM VERBOSE ANALYZE) no PostgreSQL e atualizará as estatísticas em todos os outros bancos de dados. Para verificar se esse comando é executado, verifique os logs do PostgreSQL. O VACUUM emitirá linhas no formato: `INFO: vacuuming "public.nmsactivecontact"` e o ANALYZE produzirão linhas no formato: `INFO: analyzing "public.nmsactivecontact"`.
 
 Se o valor da opção for 1, a atualização de estatísticas não será executada em nenhum banco de dados. A seguinte linha de log será exibida nos logs do fluxo de trabalho: `Option 'XtkCleanup_NoStats' is set to '1'`.
 
 Se o valor da opção for 2, isso executará a análise do armazenamento no modo detalhado (ANALYZE VERBOSE) no PostgreSQL e atualizará as estatísticas em todos os outros bancos de dados. Para verificar se esse comando é executado, verifique os logs do PostgreSQL. O ANALYZE emitirá linhas no formato: `INFO: analyzing "public.nmsactivecontact"`.
 
-### Limpeza de subscrições (NMAC) {#subscription-cleanup--nmac-}
+### Limpeza de subscrição (NMAC) {#subscription-cleanup--nmac-}
 
 Esta tarefa exclui quaisquer subscrições relacionadas a serviços ou aplicativos móveis excluídos.
 
@@ -613,11 +613,11 @@ SELECT distinct(sBroadLogSchema) FROM NmsDeliveryMapping WHERE sBroadLogSchema I
 
 Em seguida, a tarefa recupera os nomes das tabelas vinculadas ao link **appSubscription** e exclui essas tabelas.
 
-Esse fluxo de trabalho de limpeza também exclui todas as entradas em que idisabled = 1 que não foram atualizadas desde o tempo definido na opção **NmsCleanup_AppSubscriptionRcpPurgeDelay** .
+Este fluxo de trabalho de limpeza também exclui todas as entradas em que idisabled = 1 que não foram atualizadas desde a hora definida na opção **NmsCleanup_AppSubscriptionRcpPurgeDelay**.
 
 ### Informações da sessão de limpeza {#cleansing-session-information}
 
-Esta tarefa limpa as informações da tabela **sessionInfo** , sendo usado o seguinte query:
+Essa tarefa limpa as informações da tabela **sessionInfo**, o seguinte query é usado:
 
 ```
  DELETE FROM XtkSessionInfo WHERE tsexpiration < $(curdate) 
@@ -629,4 +629,4 @@ Essa tarefa limpa os eventos recebidos e armazenados nas instâncias de execuç�
 
 ### Reações limpezas {#cleansing-reactions}
 
-Esta tarefa limpa as reações (tabela **NmsRemaMatchRcp**) nas quais as hipóteses foram eliminadas.
+Essa tarefa limpa as reações (tabela **NmsRemaMatchRcp**) nas quais as hipóteses foram excluídas.
