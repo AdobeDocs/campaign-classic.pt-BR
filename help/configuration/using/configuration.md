@@ -17,7 +17,7 @@ ht-degree: 2%
 
 # Configuração{#configuration}
 
-Os tipos de pastas usados pela lista de navegação são descritos em um documento XML que obedece à gramática do schema **xtk:navtree** .
+Os tipos de pastas usados pela lista de navegação são descritos em um documento XML que obedece à gramática do schema **xtk:navtree**.
 
 O documento XML está estruturado da seguinte maneira:
 
@@ -41,9 +41,9 @@ O documento XML está estruturado da seguinte maneira:
 </navtree>
 ```
 
-O documento XML contém o elemento **`<navtree>`** raiz com os atributos **name** e **namespace** para especificar o nome e a namespace do documento. O nome e a namespace compõem a chave de identificação do documento.
+O documento XML contém o elemento raiz **`<navtree>`** com os atributos **name** e **namespace** para especificar o nome e a namespace do documento. O nome e a namespace compõem a chave de identificação do documento.
 
-Os comandos globais do aplicativo são declarados no documento a partir do **`<commands>`** elemento.
+Os comandos globais do aplicativo são declarados no documento a partir do elemento **`<commands>`**.
 
 A declaração de tipos de arquivos está estruturada no documento com os seguintes elementos: **`<model>`** e **`<nodemodel>`**.
 
@@ -51,7 +51,7 @@ A declaração de tipos de arquivos está estruturada no documento com os seguin
 
 Um comando global permite que você inicie uma ação. Essa ação pode ser um formulário de entrada ou uma chamada SOAP.
 
-Os comandos globais podem ser acessados a partir do **[!UICONTROL Tools]** menu principal.
+Os comandos globais podem ser acessados no menu principal **[!UICONTROL Tools]**.
 
 A estrutura de configuração do comando é a seguinte:
 
@@ -76,24 +76,24 @@ A estrutura de configuração do comando é a seguinte:
 </commands>
 ```
 
-A descrição de um comando global é inserida no **`<command>`** elemento com as seguintes propriedades:
+A descrição de um comando global é inserida no elemento **`<command>`** com as seguintes propriedades:
 
 * **name**: nome interno do comando: o nome deve ser inserido e exclusivo
 * **rótulo**: rótulo do comando.
 * **desc**: descrição visível na barra de status da tela principal.
 * **formulário**: formulário a ser lançado: o valor a ser inserido é a chave de identificação do formulário de entrada (por exemplo, &quot;cus:recipient&quot;)
-* **direitos**: lista de direitos nomeados (separados por vírgula) que permite o acesso a esse comando. A lista de direitos disponíveis pode ser acessada na **[!UICONTROL Administration > Access management > Named rights]** pasta.
+* **direitos**: lista de direitos nomeados (separados por vírgula) que permite o acesso a esse comando. A lista de direitos disponíveis pode ser acessada na pasta **[!UICONTROL Administration > Access management > Named rights]**.
 * **promptLabel**: exibe uma caixa de confirmação antes da execução do comando.
 
-Um **`<command>`** elemento pode conter **`<command>`** subelementos. Nesse caso, o elemento pai permite exibir um submenu composto desses elementos filho.
+Um elemento **`<command>`** pode conter subelementos **`<command>`**. Nesse caso, o elemento pai permite exibir um submenu composto desses elementos filho.
 
 Os comandos são exibidos na mesma ordem em que são declarados no documento XML.
 
 Um separador de comando permite exibir uma barra de separação entre comandos. É identificado pelo valor **&#39;-&#39;** contido no rótulo do comando.
 
-A presença opcional da **`<soapcall>`** tag com seus parâmetros de entrada define a chamada de um método SOAP a ser executado. Para obter mais informações sobre a API SOAP, consulte a documentação [JSAPI da](https://docs.adobe.com/content/help/en/campaign-classic/technicalresources/api/index.html)Campanha.
+A presença opcional da tag **`<soapcall>`** com seus parâmetros de entrada define a chamada de um método SOAP a ser executado. Para obter mais informações sobre a API SOAP, consulte [documentação JSAPI de Campanha](https://docs.adobe.com/content/help/en/campaign-classic/technicalresources/api/index.html).
 
-O contexto do formulário pode ser atualizado na inicialização a partir da **`<enter>`** tag . Para obter mais informações sobre essa tag, consulte a documentação sobre formulários de entrada.
+O contexto do formulário pode ser atualizado na inicialização a partir da tag **`<enter>`**. Para obter mais informações sobre essa tag, consulte a documentação sobre formulários de entrada.
 
 **Exemplo**:
 
@@ -153,22 +153,22 @@ A estrutura de configuração do tipo de pasta é a seguinte:
 </model>
 ```
 
-A declaração de tipo de pasta deve ser inserida em um **`<model>`** elemento. Esse elemento permite definir uma organização hierárquica visível no **[!UICONTROL Add new folder]** menu. Um **`<model>`** elemento deve conter **`<nodemodel>`** elementos e outros **`<model>`** elementos.
+A declaração de tipo de pasta deve ser inserida em um elemento **`<model>`**. Esse elemento permite definir uma organização hierárquica visível no menu **[!UICONTROL Add new folder]**. Um elemento **`<model>`** deve conter elementos **`<nodemodel>`** e outros elementos **`<model>`**.
 
-Os atributos de **nome** e **rótulo** preenchem o nome interno do elemento e o rótulo exibido no **[!UICONTROL Add new folder]** menu.
+Os atributos **name** e **label** preenchem o nome interno do elemento e o rótulo exibido no menu **[!UICONTROL Add new folder]**.
 
-O **`<nodemodel>`** elemento contém a descrição do tipo de pasta com as seguintes propriedades:
+O elemento **`<nodemodel>`** contém a descrição do tipo de pasta com as seguintes propriedades:
 
 * **name**: nome interno
-* **rótulo**: rótulo usado no **[!UICONTROL Add new folder]** menu e como um rótulo padrão ao inserir uma pasta.
+* **rótulo**: rótulo usado no  **[!UICONTROL Add new folder]** menu e como um rótulo padrão ao inserir uma pasta.
 * **img**: imagem padrão na inserção de pasta.
 * **hiddenCommands**: lista de comandos (separados por vírgula) a serem mascarados. Valores possíveis: &quot;adbnew&quot;, &quot;adbsave&quot;, &quot;adbcancel&quot; e &quot;adbdup&quot;.
 * **newFolderShortCuts**: lista de atalhos em modelos (**`<nodemodel>`** separados por vírgula) na criação de pastas.
-* **insertRight**, **editRight**, **deleteRight**: direitos para inserir, editar e excluir pastas.
+* **insertRight**,  **editRight**,  **deleteRight**: direitos para inserir, editar e excluir pastas.
 
-O **`<view>`** elemento sob o **`<nodemodel>`** elemento contém a configuração da lista associada à visualização. O schema da lista é inserido no atributo **schema** do **`<view>`** elemento.
+O elemento **`<view>`** sob o elemento **`<nodemodel>`** contém a configuração da lista associada à visualização. O schema da lista é inserido no atributo **schema** do elemento **`<view>`**.
 
-Para editar os registros da lista, o formulário de entrada com o mesmo nome do schema da lista é implicitamente usado. O atributo **type** no **`<view>`** elemento afeta a exibição do formulário. Os valores possíveis são:
+Para editar os registros da lista, o formulário de entrada com o mesmo nome do schema da lista é implicitamente usado. O atributo **type** no elemento **`<view>`** afeta a exibição do formulário. Os valores possíveis são:
 
 * **lista**: exibe o formulário na parte inferior da lista.
 * **lista**: exibe a lista sozinha. O formulário é iniciado clicando com o duplo ou usando &quot;Abrir&quot; no menu ao selecionar a lista.
@@ -177,9 +177,9 @@ Para editar os registros da lista, o formulário de entrada com o mesmo nome do 
 
 >[!NOTE]
 >
->O nome do formulário de entrada pode ser sobrecarregado inserindo o atributo de **formulário** no **`<view>`** elemento .
+>O nome do formulário de entrada pode ser sobrecarregado inserindo o atributo **form** no elemento **`<view>`**.
 
-A configuração padrão das colunas de lista é inserida por meio do **`<columns>`** elemento. Uma coluna é declarada em um **`<node>`** elemento que contém o atributo **xpath** com o campo a ser referenciado em seu schema como seu valor.
+A configuração padrão das colunas de lista é inserida por meio do elemento **`<columns>`**. Uma coluna é declarada em um elemento **`<node>`** contendo o atributo **xpath** com o campo a ser referenciado em seu schema como seu valor.
 
 **Exemplo**: declaração de um tipo de pasta no schema &quot;nms:recipient&quot;.
 
@@ -226,7 +226,7 @@ A filtragem e a classificação podem ser aplicadas quando a lista está sendo c
 
 Um comando de atalho permite iniciar uma ação ao selecionar a lista. A ação pode ser um formulário de entrada ou uma chamada SOAP.
 
-Os comandos podem ser acessados a partir do **[!UICONTROL Action]** menu da lista ou do botão de menu associado.
+Os comandos podem ser acessados no menu **[!UICONTROL Action]** da lista ou no botão de menu associado.
 
 A estrutura de configuração do comando é a seguinte:
 
@@ -245,28 +245,28 @@ A estrutura de configuração do comando é a seguinte:
 </nodeModel>
 ```
 
-A descrição de um comando é inserida no **`<command>`** elemento com as seguintes propriedades:
+A descrição de um comando é inserida no elemento **`<command>`** com as seguintes propriedades:
 
 * **name**: nome interno do comando: o nome deve ser inserido e exclusivo.
 * **rótulo**: rótulo do comando.
 * **desc**: descrição visível na barra de status da tela principal.
 * **formulário**: formulário a ser lançado: o valor a ser inserido é a chave de identificação do formulário de entrada (por exemplo, &quot;cus:recipient&quot;).
-* **direitos**: lista de direitos nomeados (separados por vírgula) que permite o acesso a esse comando. A lista de direitos disponíveis pode ser acessada na **[!UICONTROL Administration > Access management > Named rights]** pasta.
+* **direitos**: lista de direitos nomeados (separados por vírgula) que permite o acesso a esse comando. A lista de direitos disponíveis pode ser acessada na pasta **[!UICONTROL Administration > Access management > Named rights]**.
 * **promptLabel**: exibe uma caixa de confirmação antes da execução do comando
 * **monoSelection**: força a seleção mono (seleção múltipla por padrão).
 * **refreshView**: força o recarregamento da lista após a execução do comando.
 * **enabledIf**: ativa o comando, dependendo da expressão inserida.
 * **img**: insere uma imagem que permite o acesso ao comando na barra de ferramentas lista.
 
-Um **`<command>`** elemento pode conter **`<command>`** subelementos. Nesse caso, o elemento pai permite exibir um submenu composto desses elementos filho.
+Um elemento **`<command>`** pode conter subelementos **`<command>`**. Nesse caso, o elemento pai permite exibir um submenu composto desses elementos filho.
 
 Os comandos são exibidos na mesma ordem em que são declarados no documento XML.
 
 Um separador de comando permite exibir uma barra de separação entre comandos. É identificado pelo valor **&#39;-&#39;** contido no rótulo do comando.
 
-A presença opcional da **`<soapcall>`** tag com seus parâmetros de entrada define a chamada de um método SOAP a ser executado. Para obter mais informações sobre APIs SOAP, consulte a documentação [JSAPI da](https://docs.adobe.com/content/help/en/campaign-classic/technicalresources/api/index.html)Campanha.
+A presença opcional da tag **`<soapcall>`** com seus parâmetros de entrada define a chamada de um método SOAP a ser executado. Para obter mais informações sobre APIs SOAP, consulte [documentação JSAPI de Campanha](https://docs.adobe.com/content/help/en/campaign-classic/technicalresources/api/index.html).
 
-O contexto do formulário pode ser atualizado na inicialização por meio da **`<enter>`** tag . Para obter mais informações sobre essa tag, consulte a documentação do formulário de entrada.
+O contexto do formulário pode ser atualizado na inicialização por meio da tag **`<enter>`**. Para obter mais informações sobre essa tag, consulte a documentação do formulário de entrada.
 
 **Exemplo**:
 
@@ -292,7 +292,7 @@ Há dois tipos de operações de gerenciamento de pastas:
 1. A pasta é uma visualização: a lista exibe todos os registros associados ao schema, com a possibilidade de filtragem do sistema inserida nas propriedades da pasta.
 1. A pasta está vinculada: os registros na lista são implicitamente filtrados no link da pasta.
 
-Para uma pasta vinculada, o atributo **folderLink** no **`<nodemodel>`** elemento deve ser preenchido. Este atributo contém o nome do link na pasta configurada no schema de dados.
+Para uma pasta vinculada, o atributo **folderLink** no elemento **`<nodemodel>`** deve ser preenchido. Este atributo contém o nome do link na pasta configurada no schema de dados.
 
 Exemplo de declaração de uma pasta vinculada no schema de dados:
 
@@ -300,7 +300,7 @@ Exemplo de declaração de uma pasta vinculada no schema de dados:
 <element default="DefaultFolder('nmsFolder')" label="Folder" name="folder" revDesc="Recipients in the folder" revIntegrity="own" revLabel="Recipients" target="xtk:folder" type="link"/>
 ```
 
-A configuração da pasta &quot;folder&quot; **`<nodemodel>`** no link é a seguinte:
+A configuração de **`<nodemodel>`** no link da pasta chamada &quot;folder&quot; é a seguinte:
 
 ```
 <nodeModel deleteRight="folderDelete" editRight="folderEdit" folderLink="folder"
