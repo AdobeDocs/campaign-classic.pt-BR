@@ -38,7 +38,7 @@ As etapas de instalação do servidor Adobe Campaign são as seguintes:
    * **[!UICONTROL Installation of a client]** : Instalação dos componentes necessários para o cliente Adobe Campaign.
    * **[!UICONTROL Custom installation]** : O usuário escolhe os elementos a serem instalados.
 
-   Selecione **Instalação de um servidor** de aplicativos e siga as diferentes etapas, conforme mostrado abaixo:
+   Selecione **Instalação de um servidor de aplicativos** e siga as diferentes etapas conforme mostrado abaixo:
 
    ![](assets/s_ncs_install_installer_02.png)
 
@@ -46,7 +46,7 @@ As etapas de instalação do servidor Adobe Campaign são as seguintes:
 
    ![](assets/s_ncs_install_installer_03.png)
 
-1. Clique **[!UICONTROL Finish]** para start da instalação:
+1. Clique em **[!UICONTROL Finish]** para start da instalação:
 
    ![](assets/s_ncs_install_installer_04.png)
 
@@ -80,7 +80,7 @@ No task
 
 ## Primeiro start do servidor {#first-start-up-of-the-server}
 
-Quando o teste de instalação estiver concluído, abra um prompt de comando pelo **[!UICONTROL Start > Programs > Adobe Campaign]** menu e digite o seguinte comando:
+Quando o teste de instalação estiver concluído, abra um prompt de comando pelo menu **[!UICONTROL Start > Programs > Adobe Campaign]** e digite o seguinte comando:
 
 ```
 nlserver web
@@ -102,7 +102,7 @@ As seguintes informações são exibidas:
 15:30:12 >   Web server stop (pid=664, tid=4188)...
 ```
 
-Pressione **Ctrl+C** para parar o processo e, em seguida, digite o seguinte comando:
+Pressione **Ctrl+C** para parar o processo e digite o seguinte comando:
 
 ```
 nlserver start web
@@ -137,11 +137,11 @@ As seguintes informações são exibidas:
 
 ## Senha do identificador interno {#password-for-the-internal-identifier}
 
-O servidor Adobe Campaign define um logon técnico chamado **interno** que tem todos os direitos em todas as instâncias. Logo após a instalação, o logon não tem uma senha. É obrigatório definir um.
+O servidor Adobe Campaign define um logon técnico chamado **internal** que tem todos os direitos em todas as instâncias. Logo após a instalação, o logon não tem uma senha. É obrigatório definir um.
 
-Consulte o identificador [interno](../../installation/using/campaign-server-configuration.md#internal-identifier)da seção.
+Consulte a seção [Identificador interno](../../installation/using/campaign-server-configuration.md#internal-identifier).
 
-## Starting Adobe Campaign services {#starting-adobe-campaign-services}
+## Iniciar serviços Adobe Campaign {#starting-adobe-campaign-services}
 
 Para start dos serviços da Adobe Campaign, você pode usar o gerenciador de serviços ou inserir o seguinte na linha de comando (com os direitos apropriados):
 
@@ -155,9 +155,9 @@ Se você precisar parar os processos do Adobe Campaign mais tarde, use o comando
 net stop nlserver6
 ```
 
-## Instalação do LibreOffice {#installing-libreoffice}
+## Instalando o LibreOffice {#installing-libreoffice}
 
-Baixe o LibreOffice, por exemplo, em [https://www.libreoffice.org/download/libreoffice-fresh/](https://www.libreoffice.org/download/libreoffice-fresh/) , e siga as etapas normais de instalação.
+Baixe o LibreOffice, por exemplo, a partir de [https://www.libreoffice.org/download/libreoffice-fresh/](https://www.libreoffice.org/download/libreoffice-fresh/) e siga as etapas normais de instalação.
 
 Adicione a seguinte variável de ambiente:
 
