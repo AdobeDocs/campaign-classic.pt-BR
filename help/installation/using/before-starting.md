@@ -19,15 +19,15 @@ ht-degree: 10%
 
 Como cliente local, antes de iniciar a implantação do Campaign Classic, atenda aos seguintes pré-requisitos e recomendações.
 
-* Consulte a matriz [de compatibilidade da](../../rn/using/compatibility-matrix.md) Adobe Campaign Classic que lista todas as versões dos sistemas e componentes compatíveis com a Adobe Campaign.
+* Consulte a [Matriz de compatibilidade da Adobe Campaign Classic](../../rn/using/compatibility-matrix.md) que lista todas as versões dos sistemas e componentes suportados pela Adobe Campaign.
 
    >[!NOTE]
    >
    >Esta matriz é atualizada regularmente para obter a versão mais recente do Adobe Campaign. Portanto, recomendamos que você verifique sistematicamente a compatibilidade antes de implementar ou migrar seus sistemas e componentes.
 
-* Dependendo do seu ambiente, leia os [pré-requisitos para o Windows](../../installation/using/prerequisites-of-campaign-installation-in-windows.md) e os [pré-requisitos para instalações Linux](../../installation/using/prerequisites-of-campaign-installation-in-linux.md) .
+* Dependendo do seu ambiente, leia os [pré-requisitos do Windows](../../installation/using/prerequisites-of-campaign-installation-in-windows.md) e [pré-requisitos para instalações Linux](../../installation/using/prerequisites-of-campaign-installation-in-linux.md).
 * Saiba mais sobre as recomendações relacionadas aos mecanismos de banco de dados [nesta seção](../../installation/using/database.md).
 * Verifique se as camadas de acesso ao banco de dados necessárias estão instaladas no servidor e acessíveis na conta da Adobe Campaign. Para saber mais, consulte [esta seção](../../installation/using/application-server.md).
 * Configure suas redes como certos processos do aplicativo que precisam se comunicar com outras pessoas ou acessar a LAN e a Internet. Isso significa que algumas portas TCP precisam estar abertas para esses processos. Consulte [esta seção](../../installation/using/network-configuration.md) para saber mais sobre os requisitos de configuração de rede.
-* Leia a lista de verificação Segurança e Privacidade da Campanha [neste artigo](https://helpx.adobe.com/br/campaign/kb/acc-security.html).
+* Leia a lista de verificação de segurança e privacidade da Campanha [neste artigo](https://helpx.adobe.com/br/campaign/kb/acc-security.html).
 * Consulte as diretrizes gerais para estimar os requisitos de hardware para a implantação no local [neste artigo](https://helpx.adobe.com/br/campaign/kb/hardware-sizing-guide.html).
