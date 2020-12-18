@@ -31,7 +31,7 @@ Cada modo tem características específicas. O modo de Rastreamento web &quot;pe
 >
 >A qualquer momento, o modo padrão pode ser alterado no assistente de implantação da instância.
 
-Observe que se você estiver usando o modo de rastreamento **permanente da Web** ou **anônimo** , é necessário adicionar um índice à coluna &quot;sourceID&quot; (uuid230) nas tabelas de rastreamento (trackingLogXXX):
+Observe que se você estiver usando o modo de rastreamento **permanente web** ou **anônimo**, deverá adicionar um índice à coluna &quot;sourceID&quot; (uuid230) nas tabelas de rastreamento (trackingLogXXX):
 
 1. Identificar as tabelas de rastreamento afetadas pelo rastreamento permanente.
 1. Estenda os schemas que correspondem a essas tabelas adicionando as seguintes linhas:
@@ -42,11 +42,11 @@ Observe que se você estiver usando o modo de rastreamento **permanente da Web**
 </dbindex>
 ```
 
-**Os modos de Rastreamento web permanente** e **anônimo** incluem duas opções: **Delivery** forçado e **último delivery**.
+**Os modos** Permanentes e  **** Anônimos de rastreamento da Web incluem duas opções:  **Entrega forçada** e  **Último delivery**.
 
-A opção delivery **** forçado permite especificar o identificador do delivery (@jobid) durante o rastreamento.
+A opção **delivery forçado** permite que você especifique o identificador do delivery (@jobid) durante o rastreamento.
 
-A opção **Último delivery** permite vincular o log de rastreamento atual ao último delivery rastreado.
+A opção **Último delivery** permite que você vincule o log de rastreamento atual ao último delivery rastreado.
 
 **Características do Rastreamento web da sessão:**
 
@@ -81,7 +81,7 @@ Esse modo é o mais caro em termos de cálculo e volume.
 
 >[!NOTE]
 >
->Se o **[!UICONTROL Leads]** pacote estiver instalado, é necessário fazer o mesmo para a tabela de atividade (**crm:incomingLead**)
+>Se o pacote **[!UICONTROL Leads]** estiver instalado, é necessário fazer o mesmo para a tabela de atividade (**crm:incomingLead**)
 
 O schema a seguir resume as funcionalidades dos três modos de Rastreamento web:
 
