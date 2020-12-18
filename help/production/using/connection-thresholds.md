@@ -27,7 +27,7 @@ Há três limiares diferentes:
 
    * Lado Tomcat: todos os query chegando no cliente Adobe Campaign Tomcat.
 
-      Esse limite é configurado no arquivo **nl6/tomcat-8/conf/server.xml** . O atributo **maxThreads** permite aumentar o limite do número de query processados por vez. Pode ser alterado para 250, por exemplo.
+      Esse limite está configurado no arquivo **nl6/tomcat-8/conf/server.xml**. O atributo **maxThreads** permite aumentar o limite do número de query processados de cada vez. Pode ser alterado para 250, por exemplo.
 
       ```
       <Connector protocol="HTTP/1.1" port="8080"
@@ -43,7 +43,7 @@ Há três limiares diferentes:
 
    * Banco de dados: conjunto de todas as conexões abertas ao mesmo tempo no banco de dados por um processo.
 
-      Esse limite é configurado no arquivo **nl6/conf/serverConf.xml**. O atributo **maxCnx** localizado no pool **de** fontes de dados permite aumentar o limite de query processados simultaneamente.
+      Esse limite está configurado no arquivo **nl6/conf/serverConf.xml**. O atributo **maxCnx** localizado em **pool de origem de dados** permite aumentar o limite de query processados simultaneamente.
 
       ```
           <!-- Data source
