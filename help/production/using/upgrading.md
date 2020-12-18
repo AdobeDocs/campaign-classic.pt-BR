@@ -17,7 +17,7 @@ ht-degree: 1%
 
 # Atualização para uma nova compilação (local){#upgrading}
 
-Antes de iniciar o processo de atualização, determine e confirme para qual versão do Adobe Campaign será atualizada e consulte as Notas de [versão](../../rn/using/latest-release.md) .
+Antes de iniciar o processo de atualização, determine e confirme para qual versão do Adobe Campaign será atualizada e consulte as [Notas de versão](../../rn/using/latest-release.md).
 
 >[!IMPORTANT]
 >
@@ -26,20 +26,20 @@ Antes de iniciar o processo de atualização, determine e confirme para qual ver
 
 >[!NOTE]
 >
->Consulte também o guia [de](../../installation/using/general-architecture.md) instalação e a introdução da atualização [da](https://helpx.adobe.com/br/campaign/kb/acc-build-upgrade.html) compilação.
+>Consulte também o [guia de instalação](../../installation/using/general-architecture.md) e a [atualização da compilação](https://helpx.adobe.com/br/campaign/kb/acc-build-upgrade.html) introdução.
 
 ## Windows {#in-windows}
 
 Para atualizar o Adobe Campaign em uma nova versão ao fornecer uma nova compilação, o seguinte procedimento deve ser aplicado no Windows:
 
 * [Desligar serviços](#shut-down-services),
-* [Atualize o aplicativo](#upgrade-the-adobe-campaign-server-application)do servidor Adobe Campaign,
+* [Atualize o aplicativo](#upgrade-the-adobe-campaign-server-application) do servidor Adobe Campaign,
 * [Sincronizar recursos](#synchronize-resources),
 * [Reinicie os serviços](#restart-services).
 
 Para saber como atualizar o console do cliente, consulte [esta seção](../../installation/using/client-console-availability-for-windows.md).
 
-### Serviços de desligamento {#shut-down-services}
+### Desligar serviços {#shut-down-services}
 
 Para substituir todos os arquivos pela nova versão, é necessário encerrar todas as instâncias do serviço nlserver.
 
@@ -54,7 +54,7 @@ Para substituir todos os arquivos pela nova versão, é necessário encerrar tod
    >
    >Você também precisa verificar se o servidor de redirecionamento (webmdl) está parado, para que o arquivo **nlsrvmod.dll** usado pelo IIS possa ser substituído pela nova versão.
 
-1. Verifique se nenhum tarefa está ativo executando o comando **nlserver pdump** . Deve aparecer o seguinte:
+1. Verifique se nenhum tarefa está ativo executando o comando **nlserver pdump**. Deve aparecer o seguinte:
 
    ```
    C:<installation path>Adobe Campaign v7bin>nlserver pdump
@@ -64,21 +64,21 @@ Para substituir todos os arquivos pela nova versão, é necessário encerrar tod
 
    Você pode usar o Gerenciador de Tarefas do Windows para garantir que todos os processos sejam interrompidos.
 
-### Atualizar o aplicativo do servidor Adobe Campaign {#upgrade-the-adobe-campaign-server-application}
+### Atualize o aplicativo do servidor Adobe Campaign {#upgrade-the-adobe-campaign-server-application}
 
 Para executar o arquivo de atualização, aplique as seguintes etapas:
 
 1. Execute **setup.exe**.
 
-   Para baixar este arquivo, conecte-se ao portal [de distribuição de](https://experience.adobe.com/downloads) software usando suas credenciais de usuário. Learn more about Software distribution in [this page](https://experienceleague.adobe.com/docs/experience-cloud/software-distribution/home.html?lang=en).
+   Para baixar este arquivo, conecte-se ao [portal de distribuição de software](https://experience.adobe.com/downloads) usando suas credenciais de usuário. Saiba mais sobre a distribuição de software em [esta página](https://experienceleague.adobe.com/docs/experience-cloud/software-distribution/home.html?lang=en).
 
-1. Selecione o modo de instalação: choice **[!UICONTROL Update or repair]**
-1. Clique em **[!UICONTROL Next]** .
-1. Clique em **[!UICONTROL Finish]** .
+1. Selecione o modo de instalação: escolha **[!UICONTROL Update or repair]**
+1. Clique em **[!UICONTROL Next]**.
+1. Clique em **[!UICONTROL Finish]**.
 
    O programa de instalação copia os novos arquivos.
 
-1. Quando a operação estiver concluída, clique em **[!UICONTROL Finish]** .
+1. Quando a operação for concluída, clique em **[!UICONTROL Finish]** .
 
 ### Sincronizar recursos {#synchronize-resources}
 
@@ -94,9 +94,9 @@ Isso permitirá que você realize as seguintes operações:
 
 >[!NOTE]
 >
->Essa operação deve ser executada apenas uma vez e somente em um servidor de aplicativos (**nlserver web**).
+>Esta operação deve ser executada apenas uma vez e apenas em um servidor de aplicativos (**nlserver web**).
 
-Em seguida, verifique se a sincronização gerou erros ou avisos. Para obter mais informações, consulte [Resolução de conflitos](#resolving-upgrade-conflicts)de atualização.
+Em seguida, verifique se a sincronização gerou erros ou avisos. Para obter mais informações, consulte [Resolução de conflitos de atualização](#resolving-upgrade-conflicts).
 
 ### Reiniciar serviços {#restart-services}
 
@@ -112,9 +112,9 @@ Os serviços a serem reiniciados são:
 
 Para atualizar o Adobe Campaign em uma nova versão quando uma nova compilação for entregue, o procedimento para Linux é o seguinte:
 
-* [Obter pacotes](#obtain-updated-packages)atualizados,
+* [Obter pacotes](#obtain-updated-packages) atualizados,
 * [Executar uma atualização](#perform-an-update),
-* [Reinicialize o servidor](#reboot-the-web-server)da Web.
+* [Reinicialize o servidor](#reboot-the-web-server) da Web.
 
 Para saber como atualizar o console do cliente, consulte [esta seção](../../installation/using/client-console-availability-for-linux.md).
 
@@ -124,7 +124,7 @@ Para saber como atualizar o console do cliente, consulte [esta seção](../../in
 
 ### Obter pacotes atualizados {#obtain-updated-packages}
 
-Start recuperando ambos os pacotes atualizados do Adobe Campaign: conecte-se ao portal [de distribuição de](https://experience.adobe.com/downloads) software usando suas credenciais de usuário. Learn more about Software distribution in [this page](https://experienceleague.adobe.com/docs/experience-cloud/software-distribution/home.html?lang=en).
+Start recuperando ambos os pacotes atualizados do Adobe Campaign: conecte-se ao [portal de distribuição de software](https://experience.adobe.com/downloads) usando suas credenciais de usuário. Saiba mais sobre a distribuição de software em [esta página](https://experienceleague.adobe.com/docs/experience-cloud/software-distribution/home.html?lang=en).
 
 O arquivo é **nlserver6-v7-XXX.rpm**
 
@@ -156,9 +156,9 @@ O arquivo é **nlserver6-v7-XXX.rpm**
 
 >[!NOTE]
 >
->Os procedimentos completos de instalação são detalhados na [presente seção](../../installation/using/installing-campaign-standard-packages.md). Os recursos são sincronizados automaticamente, no entanto, é necessário verificar se não ocorreram erros. Para obter mais informações, consulte [Resolução de conflitos](#resolving-upgrade-conflicts)de atualização.
+>Os procedimentos completos de instalação estão detalhados em [esta seção](../../installation/using/installing-campaign-standard-packages.md). Os recursos são sincronizados automaticamente, no entanto, é necessário verificar se não ocorreram erros. Para obter mais informações, consulte [Resolução de conflitos de atualização](#resolving-upgrade-conflicts).
 
-### Reinicialize o servidor da Web {#reboot-the-web-server}
+### Reinicie o servidor Web {#reboot-the-web-server}
 
 Você deve encerrar o Apache para que a nova biblioteca se torne aplicável.
 
@@ -170,7 +170,7 @@ Para fazer isso, execute o seguinte comando:
 
 >[!IMPORTANT]
 >
->* Seu script pode ser chamado de **httpd** em vez de **apache**.
+>* Seu script pode ser chamado **httpd** em vez de **apache**.
 >* É NECESSÁRIO executar esse comando até obter a seguinte resposta:
 
    >
@@ -184,15 +184,15 @@ Em seguida, reinicie o Apache:
 /etc/init.d/apache start
 ```
 
-## Resolução de conflitos de atualização {#resolving-upgrade-conflicts}
+## Resolvendo conflitos de atualização {#resolving-upgrade-conflicts}
 
-Durante a sincronização de recursos, o comando **pós-atualização** permite detectar se a sincronização gerou erros ou avisos.
+Durante a sincronização de recursos, o comando **pós-upgrade** permite detectar se a sincronização gerou erros ou avisos.
 
 ### Visualização do resultado da sincronização {#view-the-synchronization-result}
 
 Há duas maneiras de visualizar o resultado da sincronização:
 
-* Na interface da linha de comando, os erros são materializados por uma divisa tripla **>>** e a sincronização é interrompida automaticamente. Os avisos são materializados por uma divisa de duplo **>>** e devem ser resolvidos assim que a sincronização for concluída. No final da pós-atualização, um resumo é exibido no prompt de comando. Pode parecer com isto:
+* Na interface da linha de comando, os erros são materializados por um divisa triplo **>>** e a sincronização é interrompida automaticamente. Os avisos são materializados por um divisa de duplo **>** e devem ser resolvidos assim que a sincronização for concluída. No final da pós-atualização, um resumo é exibido no prompt de comando. Pode parecer com isto:
 
    ```
    2013-04-09 07:48:39.749Z 00002E7A 1 info log =========Summary of the update==========
@@ -205,7 +205,7 @@ Há duas maneiras de visualizar o resultado da sincronização:
 
    Se o aviso disser respeito a um conflito de recursos, é necessário prestar atenção ao usuário para resolvê-lo.
 
-* O arquivo de log **pós-upgrade_`<server version number>_<time of postupgrade>`.log** contém o resultado da sincronização. Está disponível por padrão no seguinte diretório: **`<installation directory>/var/<instance/postupgrade`**. Erros e avisos são indicados pelos atributos de erro e aviso.
+* O arquivo de log **postupgrade_`<server version number>_<time of postupgrade>`.log** contém o resultado da sincronização. Está disponível por padrão no seguinte diretório: **`<installation directory>/var/<instance/postupgrade`**. Erros e avisos são indicados pelos atributos de erro e aviso.
 
 ### Resolução de conflitos {#resolving-conflicts}
 
@@ -226,15 +226,15 @@ Há três maneiras de resolver um conflito:
 
 Se você optou por resolver o conflito manualmente, proceda da seguinte maneira:
 
-1. Na seção inferior da janela, procure a string de **_conflito_** para localizar as entidades com conflitos. A entidade instalada com a nova versão contém o **novo** argumento, a entidade que corresponde à versão anterior contém o argumento **cus** .
+1. Na seção inferior da janela, procure a sequência **_conflito_** para localizar as entidades com conflitos. A entidade instalada com a nova versão contém o argumento **new**, a entidade que corresponde à versão anterior contém o argumento **cus**.
 
    ![](assets/s_ncs_production_conflict002.png)
 
-1. Exclua a versão que não deseja manter. Exclua a sequência de caracteres de **_conflito_argumento_** da entidade que você está mantendo.
+1. Exclua a versão que não deseja manter. Exclua a string **_conflito_argumento_** da entidade que você está mantendo.
 
    ![](assets/s_ncs_production_conflict003.png)
 
-1. Vá para o conflito que você resolveu. Click the **[!UICONTROL Actions]** icon and select **[!UICONTROL Declare as resolved]** .
+1. Vá para o conflito que você resolveu. Clique no ícone **[!UICONTROL Actions]** e selecione **[!UICONTROL Declare as resolved]** .
 1. Salve as alterações: o conflito está agora resolvido.
 
 ### Práticas recomendadas {#best-practices}
@@ -257,7 +257,7 @@ Na próxima vez que os consoles cliente forem conectados, uma janela informará 
 
 >[!NOTE]
 >
->Verifique se o usuário IIS_XPG tem os direitos de leitura apropriados para esse arquivo de instalação e consulte o guia [de](../../installation/using/general-architecture.md) instalação para obter mais informações.
+>Verifique se o usuário IIS_XPG tem os direitos de leitura apropriados para esse arquivo de instalação e consulte o [guia de instalação](../../installation/using/general-architecture.md) para obter mais informações.
 
 ### Linux {#in-linux-1}
 
@@ -275,5 +275,5 @@ Na próxima vez que os consoles cliente forem conectados, uma janela informará 
 
 >[!NOTE]
 >
->Verifique se o usuário do Apache tem os direitos de leitura apropriados para esse arquivo de instalação e consulte o guia [de](../../installation/using/general-architecture.md) instalação para obter mais informações.
+>Verifique se o usuário do Apache tem os direitos de leitura apropriados para esse arquivo de instalação e consulte o [guia de instalação](../../installation/using/general-architecture.md) para obter mais informações.
 
