@@ -23,12 +23,12 @@ Quando você modifica um schema e salva as modificações, o schema estendido é
 1. Clique com o botão direito do mouse e escolha **[!UICONTROL Actions > Regenerate selected schemas...]** .
 1. Clique em **[!UICONTROL OK]** para confirmar e iniciar o processo.
 
-Você pode verificar a estrutura do schema gerado nas guias Anterior e Documentação. For more on this, refer to the [Principles](../../configuration/using/data-schemas.md#principles) section.
+Você pode verificar a estrutura do schema gerado nas guias Anterior e Documentação. Para obter mais informações, consulte a seção [Princípios](../../configuration/using/data-schemas.md#principles).
 
 >[!NOTE]
 >
 >Se for necessário forçar a regeneração de todos os schemas, por exemplo, para resolver certos problemas de dependência nos links inversos, você pode iniciar o seguinte comando do servidor de aplicativos Adobe Campaign:
 >
->**nlserver config -postupgrade -instance:`&lt;nome_da_instância>&#39; -force**
+>**nlserver config -post-upgrade -instance:`&lt;instance_name>&#39; -force**
 >
 >Em seguida, reinicie o servidor de aplicativos Adobe Campaign e desconecte/reconecte-se ao console do cliente.
