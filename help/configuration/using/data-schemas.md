@@ -19,7 +19,7 @@ ht-degree: 2%
 
 ## Princípios {#principles}
 
-Para editar, criar e configurar os schemas, clique no **[!UICONTROL Administration > Configuration > Data schemas]** nó do console do cliente Adobe Campaign.
+Para editar, criar e configurar os schemas, clique no nó **[!UICONTROL Administration > Configuration > Data schemas]** do console do cliente Adobe Campaign.
 
 >[!NOTE]
 >
@@ -43,7 +43,7 @@ A pré-visualização gera automaticamente o schema estendido:
 >
 >Quando o schema de origem é salvo, a geração do schema estendido é iniciada automaticamente.
 
-Se for necessário verificar a estrutura completa de um schema, use a guia pré-visualização. Se o schema tiver sido estendido, você poderá visualizar todas as suas extensões. Como complemento, a guia Documentação exibe todos os atributos e elementos do schema e suas propriedades (Campo SQL, tipo/comprimento, rótulo, descrição). A guia Documentação se aplica somente aos schemas gerados. For more on this, refer to the [Regenerating schemas](../../configuration/using/regenerating-schemas.md) section.
+Se for necessário verificar a estrutura completa de um schema, use a guia pré-visualização. Se o schema tiver sido estendido, você poderá visualizar todas as suas extensões. Como complemento, a guia Documentação exibe todos os atributos e elementos do schema e suas propriedades (Campo SQL, tipo/comprimento, rótulo, descrição). A guia Documentação se aplica somente aos schemas gerados. Para obter mais informações, consulte a seção [Regenerating schemas](../../configuration/using/regenerating-schemas.md).
 
 ## Exemplo: criar uma tabela de contrato {#example--creating-a-contract-table}
 
@@ -51,8 +51,8 @@ No exemplo a seguir, queremos criar uma nova tabela para **contratos** no modelo
 
 Para fazer isso, é necessário criar o schema da tabela e atualizar a estrutura do banco de dados para gerar a tabela correspondente. Aplique as seguintes etapas:
 
-1. Edite o **[!UICONTROL Administration > Configuration > Data schemas]** nó da árvore do Adobe Campaign e clique em **[!UICONTROL New]** .
-1. Choose the **[!UICONTROL Create a new table in the data model]** option and click **[!UICONTROL Next]** .
+1. Edite o nó **[!UICONTROL Administration > Configuration > Data schemas]** da árvore do Adobe Campaign e clique em **[!UICONTROL New]** .
+1. Escolha a opção **[!UICONTROL Create a new table in the data model]** e clique em **[!UICONTROL Next]**.
 
    ![](assets/s_ncs_configuration_create_new_schema.png)
 
@@ -64,7 +64,7 @@ Para fazer isso, é necessário criar o schema da tabela e atualizar a estrutura
    >
    >Por padrão, os schemas criados pelos usuários são armazenados na namespace &#39;cus&#39;. Para obter mais informações, consulte [Identificação de um schema](../../configuration/using/about-schema-reference.md#identification-of-a-schema).
 
-1. Crie o conteúdo da tabela. Recomendamos usar o assistente de entrada para garantir que nenhuma configuração esteja ausente. Para fazer isso, clique no **[!UICONTROL Insert]** botão e escolha o tipo de configuração a ser adicionada.
+1. Crie o conteúdo da tabela. Recomendamos usar o assistente de entrada para garantir que nenhuma configuração esteja ausente. Para fazer isso, clique no botão **[!UICONTROL Insert]** e escolha o tipo de configuração a ser adicionado.
 
    ![](assets/s_ncs_configuration_create_new_content.png)
 
@@ -120,5 +120,5 @@ Para fazer isso, é necessário criar o schema da tabela e atualizar a estrutura
 
    ![](assets/s_ncs_configuration_structure.png)
 
-1. Atualize a estrutura do banco de dados para criar a tabela à qual o schema será vinculado. For more on this, refer to [Updating the database structure](../../configuration/using/updating-the-database-structure.md).
+1. Atualize a estrutura do banco de dados para criar a tabela à qual o schema será vinculado. Para obter mais informações, consulte [Atualizar a estrutura do banco de dados](../../configuration/using/updating-the-database-structure.md).
 
