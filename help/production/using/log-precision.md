@@ -27,7 +27,7 @@ Envolve o relançamento dos processos com um nível mais alto de registros.
 
 A Adobe Campaign pode operar com dois níveis de log:
 
-1. O modo **Verboso** é o primeiro nível após o nível padrão. O seguinte comando o ativa:
+1. O modo **Verbose** é o primeiro nível após o nível padrão. O seguinte comando o ativa:
 
    ```
    nlserver restart <MODULE_NAME> -verbose 
@@ -39,7 +39,7 @@ A Adobe Campaign pode operar com dois níveis de log:
    nlserver restart <MODULE_NAME> -noconsole
    ```
 
-1. O modo **TraceFilter** , que permite salvar o maior número de logs. Ele é ativado pelo seguinte comando:
+1. O modo **TraceFilter**, que permite salvar o maior número de logs. Ele é ativado pelo seguinte comando:
 
    ```
    nlserver stop <MODULE_NAME>; nlserver <MODULE_NAME> -verbose -tracefilter:*
@@ -49,7 +49,7 @@ A Adobe Campaign pode operar com dois níveis de log:
    >
    >Se você usar **tracefilter:***, todos os tipos de log serão ativados: ncm, rdr, nms, jst, timing, wdbc, ldap, soap, xtk, xtkquery, session, xtkwriter, network, pop3, inmail\
    Os tipos de log mais úteis são: **wdbc** (exibe todos os query SQL), **soap** (exibe todas as chamadas SOAP), **ldap** (exibe todos os query LDAP após a autenticação), **xtkquery** (exibe a lista de todos os querydef).\
-   Você pode usá-los individualmente (**tracefilter:soap,wdbc** , por exemplo). Você também pode ativar todos e optar por excluir alguns outros: **-tracefilter:*,!soap**
+   Você pode usá-los individualmente (**tracefilter:soap,wdbc** por exemplo). Você também pode ativar todos e optar por excluir alguns outros: **-tracefilter:*,!soap**
 
    Verifique se o erro realmente ocorreu e reinicie o processo da maneira normal:
 
@@ -68,7 +68,7 @@ Antes de enviar este comando, verifique se nenhuma tarefa em andamento será afe
 nlserver pdump -who
 ```
 
-Em seguida, desligue e reinicie o módulo no modo **TraceFilter** .
+Em seguida, desligue e reinicie o módulo no modo **TraceFilter**.
 
 ```
 nlserver stop web; LD_PRELOAD=libjsig.so nlserver web -tomcat -verbose -tracefilter:* -tracefile:web_debug@default
@@ -81,7 +81,7 @@ nlserver stop mta@<INSTANCE_NAME>; nlserver mta -instance:<INSTANCE_NAME> -trace
 ```
 
 >[!NOTE]
-O modo **Tracefile** permite salvar os logs. Nos exemplos acima, os registros são salvos nos arquivos **var/`<instance-name>`/mta_debug.log** e **var/default/web_debug.log** .
+O modo **Tracefile** permite salvar os registros. Nos exemplos acima, os registros são salvos nos arquivos **var/`<instance-name>`/mta_debug.log** e **var/default/web_debug.log**.
 
 >[!IMPORTANT]
 No Windows, não adicione a opção LD_PRELOAD. O seguinte comando é suficiente:\
