@@ -23,9 +23,9 @@ Determinados processos do aplicativo precisam se comunicar com outras pessoas ou
 
 Use a porta Apache Tomcat integrada como prioridade (8080 por padrão) para comunicações internas entre os vários servidores de aplicativos de uma plataforma Adobe Campaign.
 
-### Servidor delivery {#delivery-server}
+### Servidor de delivery {#delivery-server}
 
-Para o servidor delivery (**nlserver mta**), as seguintes portas devem estar abertas:
+Para o servidor de delivery (**nlserver mta**), as seguintes portas devem estar abertas:
 
 <table> 
  <tbody> 
@@ -36,7 +36,7 @@ Para o servidor delivery (**nlserver mta**), as seguintes portas devem estar abe
   </tr> 
   <tr> 
    <td> 25/tcp (smtp)<br /> </td> 
-   <td> Qualquer lugar<br /> </td> 
+   <td> Anywhere<br /> </td> 
    <td> Tráfego SMTP para transmissão de email.<br /> </td> 
   </tr> 
   <tr> 
@@ -47,10 +47,10 @@ Para o servidor delivery (**nlserver mta**), as seguintes portas devem estar abe
   <tr> 
    <td> 38000/tcp (porta padrão)<br /> </td> 
    <td> Gateway SMS<br /> </td> 
-   <td> Usado para enviar tráfego SMS para o roteador NetSize SMS [opção].<br /> </td> 
+   <td> Usado para enviar tráfego SMS para o roteador NetSize SMS [option].<br /> </td> 
   </tr> 
   <tr> 
-   <td> 777/udp<br /> </td> 
+   <td> 7777/udp<br /> </td> 
    <td> Servidor de estatísticas<br /> </td> 
    <td> Acessar o servidor de estatísticas.<br /> </td> 
   </tr> 
@@ -94,7 +94,7 @@ Para o servidor de aplicativos (**nlserver web**), as seguintes portas devem est
   </tr> 
   <tr> 
    <td> 80/tcp (http)<br /> 443/tcp (https)<br /> </td> 
-   <td> Qualquer lugar<br /> </td> 
+   <td> Anywhere<br /> </td> 
    <td> Tráfego HTTP ou HTTPS (incluindo para a oferta de entrega).<br /> </td> 
   </tr> 
  </tbody> 
@@ -116,12 +116,12 @@ Para rastrear delivery SMS (**nlserver sms**), a seguinte porta deve estar abert
   <tr> 
    <td> 38000/tcp (porta padrão)<br /> </td> 
    <td> Gateway SMS<br /> </td> 
-   <td> Query o status da fila de delivery gerenciada pelo gateway SMS NetSize [opção].<br /> </td> 
+   <td> Query o status da fila de delivery gerenciada pelo gateway SMS NetSize [option].<br /> </td> 
   </tr> 
  </tbody> 
 </table>
 
-### Cliente rico {#rich-client}
+### Cliente avançado {#rich-client}
 
 Para o cliente Adobe Campaign rich (**nlclient**), as seguintes portas devem estar abertas:
 
@@ -204,7 +204,7 @@ Este servidor hospeda Formulários web, mirrores page etc. As seguintes portas p
   </tr> 
   <tr> 
    <td><p> 80/tcp (http)</p><p> 443/tcp (https)</p><br /> </td> 
-   <td> Em qualquer lugar. Necessário quando os Formulários web são gerenciados diretamente da plataforma Adobe Campaign ou quando os mirrores page são usados.<br /> </td> 
+   <td> Em qualquer lugar. Necessário quando Formulários web são gerenciados diretamente da plataforma Adobe Campaign ou quando mirrores page são usados.<br /> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -224,9 +224,9 @@ Este servidor hospeda Formulários web, mirrores page etc. As seguintes portas p
  </tbody> 
 </table>
 
-## Integração com a Adobe Experience Manager {#integration-with-adobe-experience-manager}
+## Integração com o Adobe Experience Manager {#integration-with-adobe-experience-manager}
 
-A integração entre a Adobe Campaign e a Adobe Experience Manager exige a abertura de várias portas se a instalação for &quot;no local&quot;. Para obter mais informações sobre como configurar essa integração, consulte a documentação [](../../integrations/using/about-adobe-experience-manager.md)detalhada.
+A integração entre a Adobe Campaign e a Adobe Experience Manager exige a abertura de várias portas se a instalação for &quot;no local&quot;. Para obter mais informações sobre como configurar essa integração, consulte a [documentação detalhada](../../integrations/using/about-adobe-experience-manager.md).
 
 <table> 
  <tbody> 
