@@ -17,16 +17,16 @@ ht-degree: 12%
 
 # Pré-requisitos da instalação do Campaign no Windows{#prerequisites-of-campaign-installation-in-windows}
 
-A configuração técnica e o software necessários para instalar o Adobe Campaign são apresentados na matriz [de compatibilidade](../../rn/using/compatibility-matrix.md).
+A configuração técnica e o software necessários para instalar o Adobe Campaign são apresentados na [matriz de compatibilidade](../../rn/using/compatibility-matrix.md).
 
 O processo de instalação do servidor Adobe Campaign para uso em várias instâncias é descrito abaixo em [Instalação do servidor](../../installation/using/installing-the-server.md).
 
 As etapas principais são as seguintes:
 
-1. Instale o servidor de aplicativos e consulte [Executando o programa](../../installation/using/installing-the-server.md#executing-the-installation-program)de instalação.
-1. Integrar com um servidor Web (opcional, dependendo dos componentes implantados), consulte [Configuração do servidor](../../installation/using/integration-into-a-web-server-for-windows.md#configuring-the-iis-web-server)Web IIS.
+1. Instale o servidor de aplicativos e consulte [Execução do programa de instalação](../../installation/using/installing-the-server.md#executing-the-installation-program).
+1. Integrar com um servidor Web (opcional, dependendo dos componentes implantados), consulte [Configurar o servidor Web IIS](../../installation/using/integration-into-a-web-server-for-windows.md#configuring-the-iis-web-server).
 
-Quando as etapas de instalação estiverem concluídas, será necessário configurar as instâncias, o banco de dados e o servidor. For more on this, refer to [About initial configuration](../../installation/using/about-initial-configuration.md).
+Quando as etapas de instalação estiverem concluídas, será necessário configurar as instâncias, o banco de dados e o servidor. Para obter mais informações, consulte [Sobre a configuração inicial](../../installation/using/about-initial-configuration.md).
 
 >[!NOTE]
 >
