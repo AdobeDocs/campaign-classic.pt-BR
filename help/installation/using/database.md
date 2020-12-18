@@ -21,7 +21,7 @@ O servidor de banco de dados pode ser executado em qualquer sistema operacional,
 
 O sistema operacional do servidor de banco de dados não é importante, desde que a conectividade com os diferentes componentes do Adobe Campaign esteja disponível.
 
-Verifique também a seção de camadas [de acesso ao](../../installation/using/prerequisites-of-campaign-installation-in-linux.md#database-access-layers) Banco de Dados.
+Verifique também a seção [Camadas de acesso ao banco de dados](../../installation/using/prerequisites-of-campaign-installation-in-linux.md#database-access-layers).
 
 ## Microsoft SQL Server {#microsoft-sql-server}
 
@@ -47,7 +47,7 @@ Os parâmetros **NLS_NCHAR_CHARACTERSET** e **NLS_CHARACTERSET** precisam ser co
 
 A Adobe Campaign usa a codificação padrão do Oracle. O uso de outra codificação pode causar problemas de compatibilidade: neste caso, entre em contato com o suporte técnico.
 
-Para saber mais sobre sua codificação, use o seguinte comando **sqlplus** :
+Para saber mais sobre sua codificação, use o seguinte comando **sqlplus**:
 
 ```
 SELECT * FROM nls_database_parameters ;
@@ -66,7 +66,7 @@ SELECT * FROM nls_database_parameters ;
   NLS_CHARACTERSET WE8MSWIN1252
 ```
 
-Para fazer logon no **sqlplus**, use o perfil de usuário do Oracle:
+Para fazer logon em **sqlplus**, use o perfil de usuário do Oracle:
 
 ```
 su - oracle 
