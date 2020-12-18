@@ -29,11 +29,11 @@ Um usuário conhecido pela plataforma é um recipient que já foi alvo de um del
 
 ## Configuração do servidor {#server-configuration}
 
-Os servidores são configurados sobrecarregando certos elementos do arquivo **serverConf.xml** . Esses arquivos são salvos no subdiretório **conf** do diretório de instalação do Adobe Campaign.
+Os servidores são configurados sobrecarregando certos elementos do arquivo **serverConf.xml**. Esses arquivos são salvos no subdiretório **conf** do diretório de instalação do Adobe Campaign.
 
 ### Servidor de redirecionamento {#redirection-server}
 
-Para o servidor de redirecionamento, defina o atributo **trackWebVisitors** do elemento de **redirecionamento** como **true**.
+Para o servidor de redirecionamento, defina o atributo **trackWebVisitors** do elemento **redirecionamento** como **true**.
 
 ```
 <redirection P3PCompactPolicy="CAO DSP COR CURa DEVa TAIa OUR BUS IND UNI COM NAV"
@@ -46,7 +46,7 @@ trackingPassword=""
 
 Para visualização de informações de rastreamento por meio do console do cliente, é necessário:
 
-* Criar um delivery **** simulado (o mapeamento do delivery deve ser idêntico ao mapeamento do schema do público alvo),
-* Digite o nome **** interno desse delivery na opção **NmsTracking_WebTrackingDelivery** .
+* Crie um delivery **dummy** (o mapeamento do delivery deve ser idêntico ao mapeamento do schema do público alvo),
+* Digite o **nome interno** deste delivery na opção **NmsTracking_WebTrackingDelivery**.
 
 Todas as informações de rastreamento de site não diretamente subsequentes a um clique em um email podem ser visualizadas no delivery de teste criado.
