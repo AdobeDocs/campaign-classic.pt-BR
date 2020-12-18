@@ -17,7 +17,7 @@ ht-degree: 3%
 
 # Trilha de auditoria{#audit-trail}
 
-No Adobe Campaign, o **[!UICONTROL Audit trail]** oferece acesso ao histórico completo das alterações feitas em sua instância.
+No Adobe Campaign, o **[!UICONTROL Audit trail]** fornece acesso ao histórico completo das alterações feitas em sua instância.
 
 **[!UICONTROL Audit trail]** captura, em tempo real, uma lista abrangente de ações e eventos que ocorrem em sua instância do Adobe Campaign. Ele inclui uma forma de autoatendimento para acessar um histórico de dados para ajudar a responder perguntas como: o que aconteceu com seus workflows e quem os atualizou pela última vez ou o que seus usuários fizeram na instância.
 
@@ -30,7 +30,7 @@ A Trilha de auditoria é composta por três componentes:
 
 * **Trilha** de auditoria do schema: Verifique as atividades e as últimas modificações feitas em seus schemas.
 
-   For more information on schemas, refer to this [page](../../configuration/using/data-schemas.md).
+   Para obter mais informações sobre schemas, consulte esta [página](../../configuration/using/data-schemas.md).
 
 * **Trilha** de auditoria do fluxo de trabalho: Verifique as atividades e as últimas modificações feitas nos workflows e, além disso, o estado dos workflows, como:
 
@@ -43,30 +43,30 @@ A Trilha de auditoria é composta por três componentes:
    * Ativação igual à ação Executar tarefas pendentes agora
    * Unconditional Stop
 
-   For more information on workflows, refer to this [page](../../workflow/using/about-workflows.md).
+   Para obter mais informações sobre workflows, consulte esta [página](../../workflow/using/about-workflows.md).
 
-   For more on how to monitor workflows, refer to the [dedicated section](../../workflow/using/monitoring-workflow-execution.md).
+   Para obter mais informações sobre como monitorar workflows, consulte a seção [dedicada](../../workflow/using/monitoring-workflow-execution.md).
 
 * **Trilha** de auditoria de opções: Verifique as atividades e as últimas modificações feitas em suas opções.
 
-   For more information on options, refer to this [page](../../installation/using/configuring-campaign-options.md).
+   Para obter mais informações sobre opções, consulte esta [página](../../installation/using/configuring-campaign-options.md).
 
 ## Acessar a trilha de auditoria {#accessing-audit-trail}
 
-Para acessar as instâncias **[!UICONTROL Audit trail]** :
+Para acessar o **[!UICONTROL Audit trail]** de sua instância:
 
-1. Acesse o **[!UICONTROL Explorer]** menu da sua instância.
-1. No **[!UICONTROL Administration]** menu, selecione **[!UICONTROL Audit]** .
+1. Acesse o menu **[!UICONTROL Explorer]** da sua instância.
+1. No menu **[!UICONTROL Administration]**, selecione **[!UICONTROL Audit]** .
 
    ![](assets/audit_trail_1.png)
 
-1. A **[!UICONTROL Audit trail]** janela é aberta com a lista de suas entidades. A Adobe Campaign verificará as ações de criação, edição e exclusão de workflows, opções e schemas.
+1. A janela **[!UICONTROL Audit trail]** é aberta com a lista de suas entidades. A Adobe Campaign verificará as ações de criação, edição e exclusão de workflows, opções e schemas.
 
    Selecione uma das entidades para saber mais sobre as últimas modificações.
 
    ![](assets/audit_trail_2.png)
 
-1. A **[!UICONTROL Audit entity]** janela fornece informações mais detalhadas sobre a entidade escolhida, como:
+1. A janela **[!UICONTROL Audit entity]** fornece informações mais detalhadas sobre a entidade escolhida, como:
 
    * **[!UICONTROL Type]** : Fluxo de trabalho, opções ou Schemas.
    * **[!UICONTROL Entity]** : Nome interno das suas atividades.
@@ -80,7 +80,7 @@ Para acessar as instâncias **[!UICONTROL Audit trail]** :
 
 >[!NOTE]
 >
->Por padrão, o período de retenção é definido como 180 dias para **[!UICONTROL Audit logs]** . Para saber mais sobre como alterar o período de retenção, consulte esta [página](../../production/using/database-cleanup-workflow.md#deployment-wizard).
+>Por padrão, o período de retenção é definido como 180 dias para **[!UICONTROL Audit logs]**. Para saber mais sobre como alterar o período de retenção, consulte esta [página](../../production/using/database-cleanup-workflow.md#deployment-wizard).
 
 ## Ativar/desativar a trilha de auditoria {#enable-disable-audit-trail}
 
@@ -88,8 +88,8 @@ A trilha de auditoria pode ser facilmente ativada ou desativada para uma ativida
 
 Para fazer isso:
 
-1. Acesse o **[!UICONTROL Explorer]** menu da sua instância.
-1. No **[!UICONTROL Administration]** menu, selecione **[!UICONTROL Platform]** e depois **[!UICONTROL Options]** .
+1. Acesse o menu **[!UICONTROL Explorer]** da sua instância.
+1. No menu **[!UICONTROL Administration]**, selecione **[!UICONTROL Platform]** e **[!UICONTROL Options]**.
 
    ![](assets/audit_trail_4.png)
 
@@ -106,5 +106,5 @@ Para fazer isso:
 
    ![](assets/audit_trail_6.png)
 
-1. Clique em **[!UICONTROL Save]** .
+1. Clique em **[!UICONTROL Save]**.
 
