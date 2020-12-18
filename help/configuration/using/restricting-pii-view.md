@@ -23,7 +23,7 @@ Alguns clientes precisam de usuários de marketing para poderem acessar registro
 
 ## Implementação {#implementation}
 
-Um novo atributo que pode ser aplicado a qualquer elemento ou atributo foi adicionado aos schemas, complementa o atributo existente **[!UICONTROL visibleIf]** . Este atributo é: **[!UICONTROL accessibleIf]** . Ao conter uma expressão XTK relacionada ao contexto do usuário atual, ela pode aproveitar **[!UICONTROL HasNamedRight]** ou **[!UICONTROL $(login)]** , por exemplo, .
+Um novo atributo que pode ser aplicado a qualquer elemento ou atributo foi adicionado aos schemas, complementa o atributo existente **[!UICONTROL visibleIf]**. Este atributo é: **[!UICONTROL accessibleIf]** . Ao conter uma expressão XTK relacionada ao contexto do usuário atual, ela pode aproveitar **[!UICONTROL HasNamedRight]** ou **[!UICONTROL $(login)]**, por exemplo.
 
 Você pode encontrar um exemplo de uma extensão de schema de recipient que mostra este uso abaixo:
 
@@ -43,7 +43,7 @@ Você pode encontrar um exemplo de uma extensão de schema de recipient que most
 As principais propriedades são:
 
 * **[!UICONTROL visibleIf]** : oculta os campos dos metadados, portanto eles não podem ser acessados em uma visualização de schema, ou seleção de coluna, ou em um criador de expressões. Mas isso não oculta dados, se o nome do campo for inserido manualmente em uma expressão, o valor será exibido.
-* **[!UICONTROL accessibleIf]** : oculta os dados (substituindo-os por valores vazios) do query resultante. Se visibleIf estiver vazio, então obterá a mesma expressão que **[!UICONTROL accessibleIf]** .
+* **[!UICONTROL accessibleIf]** : oculta os dados (substituindo-os por valores vazios) do query resultante. Se visibleIf estiver vazio, então obterá a mesma expressão de **[!UICONTROL accessibleIf]**.
 
 Estas são as consequências do uso desse atributo na Campanha:
 
@@ -58,7 +58,7 @@ Estas são as consequências do uso desse atributo na Campanha:
 
 ## Recomendações {#recommendations}
 
-Em cada delivery, os endereços de e-mail são copiados para as **[!UICONTROL broadLog]** tabelas **[!UICONTROL forecastLog]** e para as tabelas: consequentemente, esses campos também precisam de ser protegidos.
+Em cada delivery, os endereços de email são copiados nas tabelas **[!UICONTROL broadLog]** e **[!UICONTROL forecastLog]**: consequentemente, esses campos também precisam de ser protegidos.
 
 Abaixo está uma amostra da extensão da tabela de log para implementar isso:
 
