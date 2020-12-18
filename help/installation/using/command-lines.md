@@ -27,11 +27,11 @@ A criação de instâncias pode ser executada usando linhas de comando, com a si
 nlserver config -addinstance:instance/masques DNS[/lang]
 ```
 
-(onde **eng** e **fra** são valores possíveis para o `[lang]` parâmetro)
+(onde **eng** e **fra** são valores possíveis para o parâmetro `[lang]`)
 
-O comando **nlserver config -addinstance:instance1/demo*/eng** permite criar uma instância chamada **instance1** em inglês com a máscara de DNS demo*.
+O comando **nlserver config -addinstance:instance1/demo*/eng** permite que você crie uma instância chamada **instance1** em inglês com a máscara de DNS demo*.
 
-## Declaração de uma base de dados {#declaring-a-database}
+## Declaração de um banco de dados {#declaring-a-database}
 
 É possível associar um banco de dados existente a uma instância da linha de comando usando a seguinte sintaxe:
 
@@ -39,14 +39,14 @@ O comando **nlserver config -addinstance:instance1/demo*/eng** permite criar uma
 nlserver config -setdblogin:[rbdms:]account[:database][/password]@server
 ```
 
-Os seguintes valores são possíveis para o **`[rdbms]`** parâmetro:
+Os seguintes valores são possíveis para o parâmetro **`[rdbms]`**:
 
 * **posgresql**: PostgreSQL,
 * **oracle**: para Oracle,
 * **mssql**: para o Microsoft SQL Server,
 * **DB2**: para o motor DB2.
 
-O comando a seguir configura a instância de **demonstração** com o servidor tipo SQL conhecido como **base6**, vinculado à conta de **campanha** e à sua **senha** no servidor **dbsrv** :
+O seguinte comando configura a instância **demo** com o servidor de tipo SQL conhecido como **base6**, ligado à conta **campanha** e à respectiva **password** no servidor **dbsrv**:
 
 ```
  nlserver config -setdblogin:db:campaign:myBase/password@dbServer -instance:demo
