@@ -17,10 +17,10 @@ ht-degree: 81%
 
 # Configuração do acesso ao Hadoop {#configure-access-to-hadoop}
 
-Use a opção Campanha **Federated Data Acces** (FDA) para processar informações armazenadas em bancos de dados externos. Siga as etapas abaixo para configurar o acesso ao Hadoop.
+Use a opção Campanha **Federated Data Acces** (FDA) para processar informações armazenadas em um banco de dados externo. Siga as etapas abaixo para configurar o acesso ao Hadoop.
 
-1. Configurar banco de dados [Hadoop](#configuring-hadoop)
-1. Configure a [conta externa](#hadoop-external) Hadoop na Campanha
+1. Configurar [banco de dados Hadoop](#configuring-hadoop)
+1. Configure o Hadoop [conta externa](#hadoop-external) na Campanha
 
 ## Configuração do Hadoop 3.0 {#configuring-hadoop}
 
@@ -37,7 +37,7 @@ A conexão com um banco de dados externo do Hadoop no FDA exige as seguintes con
    systemctl start nlserver.service
    ```
 
-1. No Campaign Classic, você pode configurar a conta externa do [!DNL Hadoop]. For more on how to configure your external account, refer to [this section](#hadoop-external).
+1. No Campaign Classic, você pode configurar a conta externa do [!DNL Hadoop]. Para obter mais informações sobre como configurar sua conta externa, consulte [esta seção](#hadoop-external).
 
 ## Conta externa do Hadoop {#hadoop-external}
 
@@ -100,7 +100,7 @@ Se precisar se conectar ao Hadoop 2.1, siga as etapas descritas abaixo para [Win
    User/Password: admin/<your password here>
    ```
 
-1. Create the Hadoop external account, as detailed in [this section](#hadoop-external).
+1. Crie a conta externa do Hadoop, conforme detalhado em [esta seção](#hadoop-external).
 
 ### Hadoop 2.1 para Linux {#for-linux}
 
@@ -110,7 +110,7 @@ Se precisar se conectar ao Hadoop 2.1, siga as etapas descritas abaixo para [Win
    apt-get install unixodbc
    ```
 
-1. Download and install ODBC drivers for Apache Hive from HortonWorks: [https://www.cloudera.com/downloads.html](https://www.cloudera.com/br/downloads.html).
+1. Baixe e instale drivers ODBC para o Apache Hive a partir do HortonWorks: [https://www.cloudera.com/downloads.html](https://www.cloudera.com/downloads.html).
 
    ```
    dpkg -i hive-odbc-native_2.1.10.1014-2_amd64.deb
@@ -187,5 +187,5 @@ Se precisar se conectar ao Hadoop 2.1, siga as etapas descritas abaixo para [Win
    isql vorac -v
    ```
 
-1. Create the Hadoop external account, as detailed in [this section](#hadoop-external).
+1. Crie a conta externa do Hadoop, conforme detalhado em [esta seção](#hadoop-external).
 
