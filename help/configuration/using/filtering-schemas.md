@@ -19,7 +19,7 @@ ht-degree: 1%
 
 ## Filtros do sistema {#system-filters}
 
-Você pode filtrar o acesso do schema a usuários específicos, dependendo de suas permissões. Os filtros do sistema permitem gerenciar as permissões de leitura e gravação de entidades detalhadas em schemas, usando os parâmetros **readAccess** e **writeAccess** .
+Você pode filtrar o acesso do schema a usuários específicos, dependendo de suas permissões. Os filtros do sistema permitem gerenciar as permissões de leitura e gravação de entidades detalhadas em schemas, usando os parâmetros **readAccess** e **writeAccess**.
 
 >[!NOTE]
 >
@@ -27,11 +27,11 @@ Você pode filtrar o acesso do schema a usuários específicos, dependendo de su
 
 * **readAccess**: fornece acesso somente leitura aos dados do schema.
 
-   **Aviso** - Todas as tabelas vinculadas devem ser definidas com a mesma restrição. Essa configuração pode afetar o desempenho.
+   **Aviso**  - Todas as tabelas vinculadas devem ser definidas com a mesma restrição. Essa configuração pode afetar o desempenho.
 
 * **writeAccess**: fornece acesso de gravação aos dados do schema.
 
-Esses filtros são inseridos no nível do **elemento** principal dos schemas e, como mostrado nos exemplos a seguir, podem ser formados para restringir o acesso.
+Esses filtros são inseridos no nível **element** principal dos schemas e, como mostrado nos exemplos a seguir, podem ser formados para restringir o acesso.
 
 * Restringir permissões de GRAVAÇÃO
 
@@ -45,7 +45,7 @@ Esses filtros são inseridos no nível do **elemento** principal dos schemas e, 
 
 * Restringir permissões de LEITURA e GRAVAÇÃO:
 
-   Aqui, o filtro é usado para proibir permissões de LEITURA e GRAVAÇÃO no schema para todos os operadores. Somente a conta **interna** , representada pela expressão &quot;$(loginId)!=0&quot;, tem essas permissões.
+   Aqui, o filtro é usado para proibir permissões de LEITURA e GRAVAÇÃO no schema para todos os operadores. Somente a conta **interna**, representada pela expressão &quot;$(loginId)!=0&quot;, tem essas permissões.
 
    ```
    <sysFilter name="readAccess"> 
@@ -63,7 +63,7 @@ Esses filtros são inseridos no nível do **elemento** principal dos schemas e, 
 >
 >Se nenhum filtro for especificado, todos os operadores terão permissões de leitura e gravação no schema.
 
-## Proteger schemas integrados {#protecting-built-in-schemas}
+## Protegendo schemas integrados {#protecting-built-in-schemas}
 
 Por padrão, os schemas incorporados só podem ser acessados com permissões de GRAVAÇÃO para operadores com direitos de ADMINISTRAÇÃO:
 
@@ -100,9 +100,9 @@ Por padrão, os schemas incorporados só podem ser acessados com permissões de 
 
 >[!IMPORTANT]
 >
->As permissões de LEITURA e GRAVAÇÃO do schema **xtk:sessionInfo** só podem ser acessadas pela conta interna de uma instância do Adobe Campaign.
+>As permissões de LEITURA e GRAVAÇÃO para o schema **xtk:sessionInfo** só podem ser acessadas pela conta interna de uma instância do Adobe Campaign.
 
-## Modificação de filtros do sistema de schemas integrados {#modifying-system-filters-of-built-in-schemas}
+## Modificando filtros do sistema de schemas incorporados {#modifying-system-filters-of-built-in-schemas}
 
 Você ainda pode modificar os filtros do sistema dos schemas prontos para uso que são protegidos por padrão devido a problemas de compatibilidade com versões anteriores.
 
@@ -111,6 +111,6 @@ Você ainda pode modificar os filtros do sistema dos schemas prontos para uso qu
 >No entanto, o Adobe recomenda que você não modifique os parâmetros padrão para garantir a segurança ideal.
 
 1. Crie uma extensão para o schema em questão ou abra uma extensão existente.
-1. Adicione um elemento filho **`<sysfilter name="<filter name>" _operation="delete"/>`** no elemento principal para excluir a aplicação do filtro abaixo do mesmo no schema da origem.
-1. Se desejar, adicione um novo filtro, conforme detalhado em filtros [](#system-filters)do sistema.
+1. Adicione um elemento filho **`<sysfilter name="<filter name>" _operation="delete"/>`** no elemento principal para excluir o aplicativo do filtro sob o mesmo na origem schema.
+1. Se desejar, adicione um novo filtro, conforme detalhado em [filtros do sistema](#system-filters).
 
