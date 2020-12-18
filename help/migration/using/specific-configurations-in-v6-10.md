@@ -25,4 +25,4 @@ Se você estiver migrando de uma plataforma 6.10 e seu console do cliente for ma
 >
 >Se você rejeitar a atualização, não poderá se conectar.
 
-Se você estiver migrando de uma plataforma v6.10 mais antiga do que a versão 8104, também deverá consultar os [novos recursos da seção v7](../../migration/using/general-configurations.md#new-features-in-v7) .
+Se você estiver migrando de uma plataforma v6.10 mais antiga que a versão 8104, também deverá consultar a seção [Novos recursos na v7](../../migration/using/general-configurations.md#new-features-in-v7).
