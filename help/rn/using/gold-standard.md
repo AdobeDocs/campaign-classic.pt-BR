@@ -7,10 +7,10 @@ audience: rns
 content-type: reference
 topic-tags: latest-release-notes
 translation-type: tm+mt
-source-git-commit: 0abdbbc33350cf6ec85488483dadb177e685818b
+source-git-commit: 2725767f826a9ee041555bb49e8bfd0964d41736
 workflow-type: tm+mt
-source-wordcount: '820'
-ht-degree: 100%
+source-wordcount: '937'
+ht-degree: 90%
 
 ---
 
@@ -24,6 +24,27 @@ Se você migrar de uma versão antiga, recomendamos que atualize inicialmente pa
 Esta página lista versões do Gold Standard.
 
 Para obter mais informações sobre o programa do Campaign Gold Standard, consulte [este artigo](https://helpx.adobe.com/br/campaign/kb/gold-standard.html).
+
+## ![](assets/do-not-localize/limited_2.png) Versão Gold Standard 11{#gs-11}
+
+_21 de dezembro de 2020_
+
+>[!CAUTION]
+>
+>Esta versão é fornecida com um novo protocolo de conexão: a atualização é obrigatória para o servidor de Campanha e o console do cliente poderem se conectar à Campanha após 21 de março de 2020
+
+A compilação 9032@2a2a028 inclui os seguintes aprimoramentos e correções:
+
+* O protocolo de conexão foi atualizado para seguir o novo mecanismo de autenticação IMS.
+
+* A autenticação da integração dos acionadores originalmente baseada na configuração da autenticação oAUTH para acessar o pipeline agora foi alterada e movida para o Adobe I/O. [Saiba mais](../../integrations/using/configuring-adobe-io.md)
+
+* Após o fim do suporte para o protocolo binário herdado APNs do iOS, todas as instâncias que usam esse protocolo são atualizadas para o protocolo HTTP/2 durante a pós-atualização.
+
+* Correção de um problema de segurança para reforçar a proteção contra problemas de SSRF (Server Side Request Forgery). (NEO-27777)
+
+
+
 
 ## ![](assets/do-not-localize/green_2.png) Versão Gold Standard 10{#gs-10}
 
