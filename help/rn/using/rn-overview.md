@@ -7,10 +7,10 @@ audience: rns
 content-type: reference
 topic-tags: latest-release-notes
 translation-type: tm+mt
-source-git-commit: 0abdbbc33350cf6ec85488483dadb177e685818b
+source-git-commit: cf4dbb59f7fb2df31ec3e034bb687e9a070c63bc
 workflow-type: tm+mt
-source-wordcount: '429'
-ht-degree: 100%
+source-wordcount: '434'
+ht-degree: 94%
 
 ---
 
@@ -37,13 +37,13 @@ As **últimas builds do GA** são: [Gold Standard versão 10](../../rn/using/gol
 
 A **última build RC** é a [versão 20.3 do Campaign Classic](../../rn/using/latest-release.md)
 
-![](assets/do-not-localize/orange3.png) **Indisponível** - é necessário atualizar para uma build mais recente.
-
-![](assets/do-not-localize/red3.png) **Obsoleto** - a atualização para uma build mais recente é obrigatória.
+![](assets/do-not-localize/red3.png) **Obsoleto**  - nenhuma implantação. As implementações existentes devem ser atualizadas.
 
 ## Recomendações{#recommendations}
 
 Para garantir uma configuração estável, recomendamos instalar a mesma build estável em todos os servidores que estão sendo executados na mesma configuração de cliente.
+
+Além disso, o console do cliente deve estar na mesma compilação que a instância do servidor.
 
 Para manter sua implementação atualizada, leia os [recursos obsoletos e removidos](../../rn/using/deprecated-features.md) e as páginas sobre [matriz de compatibilidade](../../rn/using/compatibility-matrix.md) com cada nova versão.
 
