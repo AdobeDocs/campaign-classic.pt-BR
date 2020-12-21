@@ -7,10 +7,10 @@ audience: platform
 content-type: reference
 topic-tags: starting-with-adobe-campaign
 translation-type: tm+mt
-source-git-commit: 0abdbbc33350cf6ec85488483dadb177e685818b
+source-git-commit: 5639f08ad709597d5f5c9e6bbd6932cffcbde40f
 workflow-type: tm+mt
-source-wordcount: '2020'
-ht-degree: 20%
+source-wordcount: '2017'
+ht-degree: 19%
 
 ---
 
@@ -136,7 +136,7 @@ Sim. Os clientes devem fornecer ao Adobe um ponto de contato disponível durante
 
 ## Preciso atualizar o console do cliente?
 
-Sim. O console do cliente deve estar na mesma build ou em uma build mais recente que a instância do servidor. Depois que a atualização for concluída, o console do cliente deverá solicitar a atualização para a build mais recente para garantir que permaneça alinhado com a build do servidor.
+Sim. O console do cliente deve estar na mesma compilação que a instância do servidor. Depois que a atualização for concluída, o console do cliente deverá solicitar a atualização para a build mais recente para garantir que permaneça alinhado com a build do servidor.
 
 ## O que é plano de reversão? Os backups dos meus dados são mantidos?
 
