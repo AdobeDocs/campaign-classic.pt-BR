@@ -7,10 +7,10 @@ audience: rns
 content-type: reference
 topic-tags: latest-documentation-updates
 translation-type: tm+mt
-source-git-commit: 0abdbbc33350cf6ec85488483dadb177e685818b
+source-git-commit: 5639f08ad709597d5f5c9e6bbd6932cffcbde40f
 workflow-type: tm+mt
-source-wordcount: '3660'
-ht-degree: 99%
+source-wordcount: '3668'
+ht-degree: 98%
 
 ---
 
@@ -26,6 +26,8 @@ Você também pode consultar as [Notas de versão do Adobe Campaign Classic](../
 A seção de acompanhamento do delivery foi reorganizada em temas temáticos. [Leia mais](../../delivery/using/about-delivery-monitoring.md)
 
 Foi adicionado um caso de uso sobre como adicionar endereços IP de remetentes aos logs do delivery. [Leia mais](../../delivery/using/delivery-dashboard.md#use-case)
+
+As Perguntas frequentes sobre privacidade foram movidas para [esta seção](../../platform/using/privacy-faq.md).
 
 ## Novembro de 2020 {#nov-2020}
 
