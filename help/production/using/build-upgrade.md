@@ -7,9 +7,9 @@ audience: production
 content-type: reference
 topic-tags: updating-adobe-campaign
 translation-type: tm+mt
-source-git-commit: 0abdbbc33350cf6ec85488483dadb177e685818b
+source-git-commit: 5639f08ad709597d5f5c9e6bbd6932cffcbde40f
 workflow-type: tm+mt
-source-wordcount: '2355'
+source-wordcount: '2368'
 ht-degree: 3%
 
 ---
@@ -204,12 +204,13 @@ Os seguintes serviços precisam ser reiniciados:
 
 ### Atualização de consoles cliente
 
+O console do cliente deve estar na mesma compilação que a instância do servidor.
+
 Na máquina em que o servidor de aplicativos Adobe Campaign está instalado (nlserverweb), baixe e copie o arquivo:
 
 ```
 Setup-client-7.xxxx.exe in [path of the application]\datakit\nl\en\jsp
 ```
-
 
 Na próxima vez que os consoles cliente forem conectados, uma janela informará os usuários sobre a disponibilidade de uma nova atualização e oferta a possibilidade de baixá-la e instalá-la.
 
