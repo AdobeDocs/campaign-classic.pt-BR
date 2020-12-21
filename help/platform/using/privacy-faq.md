@@ -7,10 +7,10 @@ audience: platform
 content-type: reference
 topic-tags: starting-with-adobe-campaign
 translation-type: tm+mt
-source-git-commit: 0abdbbc33350cf6ec85488483dadb177e685818b
+source-git-commit: 5639f08ad709597d5f5c9e6bbd6932cffcbde40f
 workflow-type: tm+mt
-source-wordcount: '808'
-ht-degree: 100%
+source-wordcount: '809'
+ht-degree: 98%
 
 ---
 
@@ -21,7 +21,7 @@ Estas são algumas das perguntas frequentes sobre privacidade e consentimento ao
 
 ## Termos principais {#key-terms}
 
-**Quais são os termos principais sobre Privacidade?**
+### Quais são os termos principais sobre Privacidade?
 
 Os itens listados abaixo vinculam-se aos principais termos e conceitos relacionados à Privacidade e Consentimento no Adobe Campaign:
 
@@ -32,7 +32,7 @@ Os itens listados abaixo vinculam-se aos principais termos e conceitos relaciona
 
 ## Preparo para as regras de privacidade {#privacy-regulations-readiness}
 
-**Qual é a sugestão do Adobe Campaign para o cumprimento das mais recentes regras de privacidade?**
+### Qual é a sugestão do Adobe Campaign para o cumprimento das mais recentes regras de privacidade?
 
 A Adobe não presta aconselhamento jurídico. Você deve trabalhar com seu próprio serviço jurídico para garantir que sejam tomadas todas as medidas necessárias para o GDPR, CCPA, PDPA, LGPD ou qualquer outra regulamentação aplicável.
 
@@ -68,7 +68,7 @@ A Adobe não presta aconselhamento jurídico. Você deve trabalhar com seu próp
 
 ## Preservar o engajamento do usuário {#preserve-user-engagement}
 
-**Como os controladores de dados podem obter consentimento com impacto mínimo no engajamento do usuário?**
+### Como os controladores de dados podem obter consentimento com impacto mínimo no engajamento do usuário?
 
 Nos casos em que é necessário o consentimento para determinadas atividades de marketing, o consentimento do consumidor terá de estar ativo (ou seja, não silenciado na caixa de aprovação ou pré-seleção), desagregado e poderá não estar sujeito à oferta dos serviços.
 
@@ -78,7 +78,7 @@ Em vez de considerar esses requisitos de consentimento aprimorados como um risco
 
 ## Gerenciar o consentimento {#manage-consent}
 
-**Como os controladores de dados podem gerenciar o consentimento no Adobe Campaign?**
+### Como os controladores de dados podem gerenciar o consentimento no Adobe Campaign?
 
 O Adobe Campaign já oferece recursos para gerenciar o consentimento em mais níveis do que a maioria dos profissionais de marketing aproveita por meio de campos de dados personalizados ou por meio de um ou mais serviços.
 
@@ -88,7 +88,7 @@ Por exemplo, estender o modelo de dados no Adobe Campaign para rastrear não ape
 
 ## Exclusão de dados {#data-deletion}
 
-**Quais dados os controladores de dados podem excluir no Adobe Campaign em resposta a uma solicitação do cliente por um titular dos dados?**
+### Quais dados os controladores de dados podem excluir no Adobe Campaign em resposta a uma solicitação do cliente por um titular dos dados?
 
 Todos os dados associados ao titular dos dados serão excluídos, incluindo tabelas predefinidas e personalizadas.
 
@@ -96,19 +96,21 @@ Tecnicamente, todos os dados vinculados ao titular dos dados com `integrity="own
 
 Como controlador de dados, você tem a opção de personalizar este processo alterando a integridade dos links definidos nos esquemas de dados (por exemplo, caso tenha uma justificativa comercial para não excluir determinados dados).
 
-**O que acontece com os relatórios quando os logs de delivery e de rastreamento são excluídos?**
+### O que acontece com os relatórios quando os logs de delivery e de rastreamento são excluídos?
 
 Os relatórios do Adobe Campaign são baseados em indicadores computados em dados agregados de delivery e logs de rastreamento. Como resultado, a remoção de logs individuais não deve afetar as métricas exibidas nos relatórios.
 
 ## Reimportar dados {#re-import-data}
 
-**No Adobe Campaign, muitas vezes o registro é carregado a partir de uma fonte de dados externa. É necessário estar atento a uma possível reimportação de dados em uma data posterior?**
+### É necessário estar atento a uma possível reimportação de dados em uma data posterior?
+
+No Adobe Campaign, muitas vezes o registro é carregado a partir de uma fonte de dados externa.
 
 Ao receber uma solicitação de exclusão, o controlador de dados precisará garantir que todos os dados necessários sobre o titular dos dados sejam excluídos de todos os sistemas.
 
 ## Nova inclusão {#opt-in-again}
 
-**Um titular de dados, cujos dados tenham sido apagados do Adobe Campaign, pode ser reinserido?**
+**Uma pessoa de dados, cujos dados foram apagados da Adobe Campaign, pode opt in novamente mais tarde?**
 
 É possível que um titular de dados seja novamente aceito ou seja adicionado como um novo recipient depois que seus dados forem apagados do Adobe Campaign.
 
