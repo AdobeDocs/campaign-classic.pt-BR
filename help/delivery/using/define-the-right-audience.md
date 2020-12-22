@@ -5,11 +5,11 @@ title: Definir o público-alvo correto
 audience: delivery
 content-type: reference
 topic-tags: deliveries-best-practices
-translation-type: ht
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
-workflow-type: ht
-source-wordcount: '474'
-ht-degree: 100%
+translation-type: tm+mt
+source-git-commit: fe7ff64d24113e026a47aa1c9f08daacce2b383e
+workflow-type: tm+mt
+source-wordcount: '480'
+ht-degree: 97%
 
 ---
 
@@ -63,7 +63,10 @@ Os seed addresses são usados para direcionar recipients que não correspondem a
 
 O cancelamento da duplicação de endereços protege a reputação de envio e garante um bom gerenciamento de quarentena.
 
-Saiba mais [neste caso de uso](../../workflow/using/deduplication.md#example--identify-the-duplicates-before-a-delivery).
+**Tópicos relacionados:**
+
+* [Atividade](../../workflow/using/deduplication.md) desduplicação-duplicada.
+* [Caso de uso: Uso da funcionalidade de união de atividades Desduplicação-duplicados](../../workflow/using/deduplication-merge.md)
 
 ## Indexar endereços de email {#index-addresses}
 
