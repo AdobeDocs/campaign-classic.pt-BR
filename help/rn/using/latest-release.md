@@ -7,7 +7,7 @@ audience: rns
 content-type: reference
 topic-tags: latest-release-notes
 translation-type: tm+mt
-source-git-commit: 5639f08ad709597d5f5c9e6bbd6932cffcbde40f
+source-git-commit: 787beef89325340cc1d46faa03e9cfae7f1c705c
 workflow-type: tm+mt
 source-wordcount: '1852'
 ht-degree: 98%
@@ -211,7 +211,7 @@ No linux, _apache_neolane.conf_ agora está instalado no diretório `conf`.
 
 
 
-* Correção de um problema no workflow técnico **Atualizar status do evento**: para corresponder ao dimensionamento dos campos correspondentes recebidos na atividade de **estatísticas de Delivery**, o dimensionamento de três campos de destino na atividade **Atualizar estatísticas de delivery** foi alterado de 32 para 64 bits. (NEO-11557) Saiba mais sobre o workflow **Atualização de status do evento** [nesta seção](../../workflow/using/message-center--execution-.md).
+* Correção de um problema no workflow técnico **Atualizar status do evento**: para corresponder ao dimensionamento dos campos correspondentes recebidos na atividade de **estatísticas de Delivery**, o dimensionamento de três campos de destino na atividade **Atualizar estatísticas de delivery** foi alterado de 32 para 64 bits. (NEO-11557) Saiba mais sobre o workflow **Atualização de status do evento** [nesta seção](../../workflow/using/about-technical-workflows.md).
 * Correção de um problema no relatório **Centro de mensagens da história do evento** que causava erros de script ao tentar aplicar filtros e tornava o filtro impossível em um intervalo de datas. (NEO-23365)
 
 
