@@ -6,23 +6,23 @@ description: Saiba mais sobre os workflows de delivery padrão
 audience: workflow
 content-type: reference
 topic-tags: technical-workflows
-translation-type: ht
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
-workflow-type: ht
-source-wordcount: '436'
-ht-degree: 100%
+translation-type: tm+mt
+source-git-commit: 7cd76b5a31ed9fc0e64a650316ea29293c628233
+workflow-type: tm+mt
+source-wordcount: '438'
+ht-degree: 96%
 
 ---
 
 
 # Deliveries{#deliveries}
 
-Os workflows detalhados abaixo são instalados por padrão.
+Os workflows detalhados abaixo são instalados com o módulo **Delivery** por padrão.
 
 <table> 
  <tbody> 
   <tr> 
-   <td> <strong>Label</strong><br /> </td> 
+   <td> <strong>Rótulo</strong><br /> </td> 
    <td> <strong>Nome interno</strong><br /> </td> 
    <td> <strong>Descrição</strong><br /> </td> 
   </tr> 
@@ -37,7 +37,7 @@ Os workflows detalhados abaixo são instalados por padrão.
    <td> Esse workflow envia o relatório de atividades do sistema para o operador 'faturamento' por email. É disparado todo dia 25 de cada mês por padrão.<br /> </td> 
   </tr> 
   <tr> 
-   <td> <span class="uicontrol">Número de perfis de faturamento ativos</span><br /> </td> 
+   <td> <span class="uicontrol">Faturamento (perfis ativos)</span> <br /> </td> 
    <td> <span class="uicontrol">billingActiveContactCount</span> <br /> </td> 
    <td> <p>Esse workflow conta o número de perfis ativos. É acionado todas as noites às 1:00 AM por padrão.</p> <p>“<strong>Perfil</strong>” significa um registro de informações (por exemplo: um registro na tabela nmsRecipient ou uma tabela externa contendo uma ID de cookie, ID do cliente, identificador móvel ou outras informações relevantes para um canal específico) representando um cliente final, um prospecto ou um cliente potencial. Faturamento só afeta Perfis que estão "ativos". Um Perfil é considerado "ativo" quando ele for alvo ou recebe comunicação nos últimos 12 meses por meio de qualquer canal.</p> <p>Os canais Facebook e Twitter não são considerados.</p> <p>É possível ter uma visão geral do <span class="uicontrol">Number of active profiles</span> no menu <span class="uicontrol">Administration</span> &gt; <span class="uicontrol">Campaign Management</span> &gt; <span class="uicontrol">Customer metrics</span>.</p> </td> 
   </tr> 
@@ -67,8 +67,8 @@ Os workflows detalhados abaixo são instalados por padrão.
    <td> Esse workflow implanta ofertas aprovadas no ambiente online, bem como todas as categorias contidas no catálogo de oferta.<br /> </td> 
   </tr> 
   <tr> 
-   <td> <span class="uicontrol">Pré-visualizar</span> <br /> </td> 
-   <td> <span class="uicontrol">forecasting</span> <br /> </td> 
+   <td> <span class="uicontrol">Previsão</span> <br /> </td> 
+   <td> <span class="uicontrol">previsão</span> <br /> </td> 
    <td> Este workflow analisa os deliveries salvos no calendário provisional (cria logs provisionais). É acionado todos os dias às 1:00 AM por padrão.<br /> </td> 
   </tr> 
   <tr> 
