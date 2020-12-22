@@ -7,7 +7,7 @@ audience: production
 content-type: reference
 topic-tags: troubleshooting
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: a9d58e25ab17baaabf4ff8c109b53e83c7d93218
 workflow-type: tm+mt
 source-wordcount: '633'
 ht-degree: 13%
@@ -32,7 +32,7 @@ Em alguns casos, workflows executados a partir de uma campanha não são start a
 
 Pode haver várias causas para esse problema, siga as etapas abaixo para resolvê-lo:
 
-1. Verifique o status do fluxo de trabalho técnico [**[!UICONTROL operationMgt]**](../../workflow/using/campaign.md). Esse fluxo de trabalho gerencia trabalhos ou workflows dentro de uma campanha. Se falhar, isso resultará em workflows para não start / parar. Reinicie-o para retomar a execução de workflows da campanha.
+1. Verifique o status do fluxo de trabalho técnico [**[!UICONTROL operationMgt]**](../../workflow/using/about-technical-workflows.md). Esse fluxo de trabalho gerencia trabalhos ou workflows dentro de uma campanha. Se falhar, isso resultará em workflows para não start / parar. Reinicie-o para retomar a execução de workflows da campanha.
 
    Para obter mais informações sobre o monitoramento de workflows técnicos, consulte [esta página](../../workflow/using/monitoring-technical-workflows.md).
 
