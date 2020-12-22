@@ -6,11 +6,11 @@ description: Coleção de eventos
 audience: message-center
 content-type: reference
 topic-tags: event-processing
-translation-type: ht
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
-workflow-type: ht
-source-wordcount: '104'
-ht-degree: 100%
+translation-type: tm+mt
+source-git-commit: d1130691e40c0cac183db37a4c0b410d00bb696a
+workflow-type: tm+mt
+source-wordcount: '137'
+ht-degree: 75%
 
 ---
 
@@ -25,3 +25,7 @@ Eventos gerados pelo sistema de informações podem ser coletados usando dois mo
 Depois que são coletados, os eventos são divididos, por workflows técnicos, entre as filas em tempo real e em lote das instâncias de execução enquanto aguardam a vinculação a um modelo de mensagem.
 
 ![](assets/messagecenter_events_queues_001.png)
+
+>[!NOTE]
+>
+>No instância de execução, as pastas **[!UICONTROL Real time events]** ou **[!UICONTROL Batch events]** não devem ser definidas como visualização, pois isso pode levar a problemas de [direito de acesso](../../platform/using/access-management.md#about-permissions). Para obter mais informações sobre como configurar uma pasta como uma visualização, consulte [Sobre o visualização](../../platform/using/access-management.md#about-views).
