@@ -6,11 +6,11 @@ description: Criação de uma conexão compartilhada
 audience: message-center
 content-type: reference
 topic-tags: instance-configuration
-translation-type: ht
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
-workflow-type: ht
+translation-type: tm+mt
+source-git-commit: 5bc6c8a824929c6a61cf562fc961e5bdd1867837
+workflow-type: tm+mt
 source-wordcount: '998'
-ht-degree: 100%
+ht-degree: 96%
 
 ---
 
@@ -21,6 +21,7 @@ ht-degree: 100%
 >
 >* Extensões de schema feitas nos schemas usados pelos [workflows técnicos do Centro de Mensagens](../../message-center/using/technical-workflows.md) em instâncias de controle ou de execução precisam ser duplicadas nas outras instâncias usadas pelo módulo de mensagens transacionais do Adobe Campaign.
 >* A instância de controle e a instância de execução devem ser instaladas em máquinas diferentes. Elas não podem compartilhar a mesma instância do Campaign.
+
 >
 
 
@@ -90,7 +91,7 @@ Para criar uma conta externa do tipo instância de execução, siga as etapas ab
 
 ## Instância de execução {#execution-instance}
 
-Para que a instância de controle possa se conectar à instância de execução sem ter que fornecer uma senha, basta digitar o endereço IP da instância de controle na seção direitos de acesso do **Centro de Mensagens** . No entanto, senhas vazias são proibidas por padrão.
+Para que a instância de controle possa se conectar à instância de execução sem precisar fornecer uma senha, basta digitar o endereço IP da instância de controle na seção de direitos de acesso **Centro de mensagens**. No entanto, senhas vazias são proibidas por padrão.
 
 Para usar uma senha vazia, vá para as instâncias de execução e defina uma zona de segurança limitada ao endereço IP do sistema de informações que entrega os eventos. Essa zona de segurança deve permitir senhas vazias e aceitar conexões do tipo `<identifier> / <password>`. Para obter mais informações, consulte [esta seção](../../installation/using/configuring-campaign-server.md#defining-security-zones).
 
