@@ -7,7 +7,7 @@ audience: installation
 content-type: reference
 topic-tags: appendices
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: a9d58e25ab17baaabf4ff8c109b53e83c7d93218
 workflow-type: tm+mt
 source-wordcount: '3927'
 ht-degree: 3%
@@ -204,7 +204,7 @@ Alguns deles são incorporados ao instalar a Campanha e outros podem ser adicion
   </tr> 
   <tr> 
    <td> <span class="uicontrol">NmsOperation_DeliveryProcessingWindow</span> <br /> </td> 
-   <td><p>Esta opção é usada pelo fluxo de trabalho técnico <span class="uicontrol"><a href="../../workflow/using/campaign.md">operationMgt</a></span> ao contar o número de delivery em execução.</p>Permite definir o número de dias acima dos quais os delivery com status inconsistente serão excluídos da contagem de delivery em execução.</p><p>Por padrão, o valor é definido como "7", o que significa que delivery inconsistentes com mais de 7 dias serão excluídos.</p></td> 
+   <td><p>Esta opção é usada pelo fluxo de trabalho técnico <span class="uicontrol"><a href="../../workflow/using/about-technical-workflows.md">operationMgt</a></span> ao contar o número de delivery em execução.</p>Permite definir o número de dias acima dos quais os delivery com status inconsistente serão excluídos da contagem de delivery em execução.</p><p>Por padrão, o valor é definido como "7", o que significa que delivery inconsistentes com mais de 7 dias serão excluídos.</p></td> 
   </tr>
   <tr> 
    <td> <span class="uicontrol">NmsPaper_SenderLine1</span> <br /> </td> 
@@ -360,7 +360,7 @@ Alguns deles são incorporados ao instalar a Campanha e outros podem ser adicion
   </tr> 
   <tr> 
    <td> <span class="uicontrol">NmsOperation_OperationMgtDebug</span> <br /> </td> 
-   <td> Permite monitorar a execução técnica do fluxo de trabalho <a href="../../workflow/using/campaign.md">operationMgt</a>. Quando ativadas (valor "1"), as informações de execução são registradas nos logs de auditoria do fluxo de trabalho.<br /> </td> 
+   <td> Permite monitorar a execução técnica do fluxo de trabalho <a href="../../workflow/using/about-technical-workflows.md">operationMgt</a>. Quando ativadas (valor "1"), as informações de execução são registradas nos logs de auditoria do fluxo de trabalho.<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">NmsOperation_TimeRange</span> <br /> </td> 
@@ -682,7 +682,7 @@ Alguns deles são incorporados ao instalar a Campanha e outros podem ser adicion
    <td> Durante a migração, a estrutura em árvore é automaticamente reorganizada com base nos novos padrões de versão.<br /> Essa opção permite desativar a migração automática da árvore de navegação. Se você usá-la, após a migração, terá que excluir pastas obsoletas, adicionar as novas pastas e executar todas as verificações necessárias.<br /> 
     <ul> 
      <li> <p> <span class="uicontrol">Tipo de dados:</span> Número inteiro</p> </li> 
-     <li> <p> <span class="uicontrol">Valor (texto)</span> : 1 </p> </li> 
+     <li> <p> <span class="uicontrol">Valor (texto)</span> : 3 </p> </li> 
     </ul> Essa opção só deve ser usada se a árvore de navegação predefinida tiver sofrido muitas alterações.<br /> Para obter mais informações, consulte <a href="../../migration/using/specific-configurations-in-v5-11.md#campaign-vseven-tree-structure">esta seção</a>.<br /> </td> 
   </tr> 
   <tr> 
