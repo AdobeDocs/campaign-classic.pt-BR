@@ -6,9 +6,9 @@ description: Saiba mais sobre o evento de mensagens transacionais
 audience: message-center
 content-type: reference
 topic-tags: introduction
-translation-type: ht
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
-workflow-type: ht
+translation-type: tm+mt
+source-git-commit: 3a9c435a6469f291c4ecdb30eceb83c4f000f5e0
+workflow-type: tm+mt
 source-wordcount: '746'
 ht-degree: 100%
 
@@ -152,7 +152,6 @@ Exemplo de dados:
                            </article>
                </orderdetails>
     </ctx>
-   
 ```
 
 ## Informações retornadas pela chamada SOAP {#information-returned-by-the-soap-call}
