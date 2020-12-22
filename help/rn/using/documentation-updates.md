@@ -7,10 +7,10 @@ audience: rns
 content-type: reference
 topic-tags: latest-documentation-updates
 translation-type: tm+mt
-source-git-commit: 5639f08ad709597d5f5c9e6bbd6932cffcbde40f
+source-git-commit: b1d75ff748bab08b45c55621b63e7565564e113d
 workflow-type: tm+mt
-source-wordcount: '3668'
-ht-degree: 98%
+source-wordcount: '3729'
+ht-degree: 97%
 
 ---
 
@@ -28,6 +28,12 @@ A seção de acompanhamento do delivery foi reorganizada em temas temáticos. [L
 Foi adicionado um caso de uso sobre como adicionar endereços IP de remetentes aos logs do delivery. [Leia mais](../../delivery/using/delivery-dashboard.md#use-case)
 
 As Perguntas frequentes sobre privacidade foram movidas para [esta seção](../../platform/using/privacy-faq.md).
+
+Foi adicionado um caso de uso sobre como usar a funcionalidade de Mesclagem de atividade Desduplicação-duplicada. [Leia mais](../../workflow/using/deduplication-merge.md)
+
+O protocolo e a página de configurações do conector SMS foram movidos [aqui](../../delivery/using/sms-protocol.md).
+
+Uma observação foi adicionada à seção Mensagens transacionais para avisar que as pastas do evento não devem ser definidas como visualizações no instância de execução, para evitar problemas de direito de acesso. [Leia mais](../../message-center/using/event-collection.md)
 
 ## Novembro de 2020 {#nov-2020}
 
