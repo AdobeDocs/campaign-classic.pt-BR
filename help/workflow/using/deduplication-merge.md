@@ -1,0 +1,118 @@
+---
+title: Uso da funcionalidade de Mesclagem de atividades Desduplicação-duplicados
+description: Saiba como usar a funcionalidade de Mesclagem de atividades Desduplicação-duplicados
+page-status-flag: never-activated
+uuid: 8887574e-447b-48a5-afc6-95783ffa7fb3
+contentOwner: sauviat
+products: SG_CAMPAIGN/CLASSIC
+audience: workflow
+content-type: reference
+topic-tags: use-cases
+discoiquuid: 4113c3fe-a279-4fe1-be89-ea43c96edc34
+index: y
+internal: n
+snippet: y
+translation-type: tm+mt
+source-git-commit: 32a14eb99847dc04a582623204bc856c29fa4359
+workflow-type: tm+mt
+source-wordcount: '550'
+ht-degree: 5%
+
+---
+
+
+# Uso da funcionalidade de Mesclagem de atividades Desduplicação-duplicados {#deduplication-merge}
+
+## Sobre este caso de uso {#about-this-use-case}
+
+Este caso de uso descreve como usar a funcionalidade **[!UICONTROL Merge]** na atividade **[!UICONTROL Deduplication]**.
+
+Para obter mais informações sobre essa funcionalidade, consulte [esta seção](../../workflow/using/deduplication.md#merging-fields-into-single-record).
+
+A atividade **[!UICONTROL Deduplication]** é usada para remover linhas de duplicado de um conjunto de dados. Nesse caso de uso, os dados mostrados abaixo são duplicados com base no campo Email.
+
+| Data da última modificação | Nome | Sobrenome | Email | Telefone celular | Telefone |
+|-----|------------|-----------|-------|--------------|------|
+| 19/05/2020 | Robert | Tisner | bob@mycompany.com | 444-444-444 | 777-777-7777 |
+| 22/07/2020 | Bobby | Tisner | bob@mycompany.com |  | 777-777-7777 |
+| 03/10/2020 | Bob |  | bob@mycompany.com |  | 888-888-8888 |
+
+Com a funcionalidade de atividade Desduplicação-duplicada **[!UICONTROL Merge]**, é possível configurar um conjunto de regras para o desduplicação-duplicado definir um grupo de campos a serem unidos em um único registro de dados resultante. Por exemplo, com um conjunto de registros de duplicados, você pode optar por manter o número de telefone mais antigo ou o nome mais recente.
+
+## Ativando a funcionalidade Mesclar {#activating-merge}
+
+
+Para habilitar a funcionalidade de mesclagem, primeiro é necessário configurar a atividade **[!UICONTROL Deduplication]**. Para fazer isso, siga estes passos:
+
+1. Abra a atividade e clique no link **[Editar configuração]**.
+
+1. Selecione o campo de reconciliação a ser usado para o desduplicação-duplicado e clique em **[!UICONTROL Next]**. Neste exemplo, queremos desduplicar com base no campo de email.
+
+   ![](assets/uc_merge_edit.png)
+
+1. Clique no link **[!UICONTROL Advanced parameters]** e ative as opções **[!UICONTROL Merge records]** e **[!UICONTROL Use several record merging criteria]**.
+
+   ![](assets/uc_merge_advanced_parameters.png)
+
+1. A guia **[!UICONTROL Merge]** é adicionada à tela de configuração **[!UICONTROL Deduplication]**. Usaremos essa guia para especificar os dados a serem unidos ao executar o desduplicação-duplicado.
+
+## Configurar os campos para unir {#configuring-rules}
+
+Estas são as regras que queremos usar para unir os dados em um único registro:
+
+* Manter o nome mais recente (campos de nome e sobrenome),
+* Manter o telefone celular mais recente,
+* Mantenha o número de telefone mais antigo,
+* Todos os campos em um grupo devem ser não nulos para se qualificarem para o registro final.
+
+Para configurar essas regras, siga estas etapas:
+
+1. Abra a guia **[!UICONTROL Merge]** e clique no botão **[!UICONTROL Add]**.
+
+   ![](assets/uc_merge_add.png)
+
+1. Especifique o identificador e o rótulo do grupo de campos a serem unidos.
+
+   ![](assets/uc_merge_identifier.png)
+
+1. Indicar as condições de seleção dos registros a ter em conta.
+
+   ![](assets/uc_merge_filter.png)
+
+1. Classifique na última data de modificação para selecionar o nome mais recente.
+
+   ![](assets/uc_merge_sort.png)
+
+1. Selecione os campos a serem unidos. Neste exemplo, queremos manter os campos de nome e sobrenome.
+
+   ![](assets/uc_merge_keep.png)
+
+1. Os campos são adicionados ao conjunto de dados a serem unidos e um novo elemento é adicionado ao schema de fluxo de trabalho.
+
+   Repita essas etapas para configurar os campos de telefone celular e telefone.
+
+   ![](assets/dedup8.png)
+
+   ![](assets/dedup9.png)
+
+## Resultados {#results}
+
+Depois de configurar essas regras, os seguintes dados são recebidos no final da atividade **[!UICONTROL Deduplication]**.
+
+| Data de modificação | Nome | Sobrenome | Email | Telefone celular | Telefone |
+-----|------------|-----------|-------|--------------|------|
+| 19/05/2020 | Robert | Tisner | bob@mycompany.com | 444-444-444 | 777-777-7777 |
+| 22/07/2020 | Bobby | Tisner | bob@mycompany.com |  | 777-777-7777 |
+| 03/10/2020 | Bob |  | bob@mycompany.com |  | 888-888-8888 |
+
+O resultado é unido dos três registros de acordo com as regras configuradas anteriormente. Após comparação, conclui-se que o nome e o telefone celular mais recentes são usados, juntamente com o número de telefone original.
+
+| Nome | Sobrenome | Email | Telefone celular | Telefone |
+|------------|-----------|-------|--------------|------|
+| Bobby | Tisner | bob@mycompany.com | 444-444-4444 | 888-888-8888 |
+
+>[!NOTE]
+>
+> Observe que o nome que foi unido é &quot;Bobby&quot;, pois configuramos uma regra &quot;Nome&quot; composta do nome e do último campo.
+>
+>Como resultado, &quot;Bob&quot; (o nome mais recente) não pôde ser considerado porque seu campo de sobrenome associado estava vazio. A combinação mais recente de nomes e sobrenomes foi mesclada no registro final.
