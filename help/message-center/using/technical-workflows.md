@@ -6,9 +6,9 @@ description: Fluxos de trabalho técnicos
 audience: message-center
 content-type: reference
 topic-tags: instance-configuration
-translation-type: ht
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
-workflow-type: ht
+translation-type: tm+mt
+source-git-commit: d1130691e40c0cac183db37a4c0b410d00bb696a
+workflow-type: tm+mt
 source-wordcount: '307'
 ht-degree: 100%
 
@@ -51,4 +51,3 @@ Na(s) instância(s) de execução, os workflows técnicos de mensagens transacio
    * **[!UICONTROL Ignored by the delivery]**: esse status é copiado dos logs do delivery. Ele significa que o delivery foi ignorado.
    * **[!UICONTROL Delivery failed]**: esse status é copiado dos logs do delivery. Ele significa que o delivery falhou.
    * **[!UICONTROL Event not taken into account]**: o evento não pôde ser vinculado a um template de mensagem. O evento não será processado.
-
