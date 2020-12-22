@@ -6,11 +6,11 @@ description: Esta seção fornece informações gerais específicas para o canal
 audience: delivery
 content-type: reference
 topic-tags: sending-push-notifications
-translation-type: ht
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
-workflow-type: ht
-source-wordcount: '753'
-ht-degree: 100%
+translation-type: tm+mt
+source-git-commit: a9d58e25ab17baaabf4ff8c109b53e83c7d93218
+workflow-type: tm+mt
+source-wordcount: '755'
+ht-degree: 98%
 
 ---
 
@@ -54,7 +54,7 @@ Correspondendo a esses dois canais, há duas atividades de delivery nos workflow
 >* Aviso: em alguns países, a lei exige que você informe os usuários sobre os tipos de dados coletados nos aplicativos móveis e a finalidade do seu processamento. Você deve verificar a legislação.
 
 
-O workflow **[!UICONTROL NMAC opt-out management]** (mobileAppOptOutMgt) atualiza a notificação de cancelamentos de subscrições em dispositivos móveis. Para obter mais informações sobre este workflow, consulte o[guia de Workflows](../../workflow/using/mobile-app-channel.md).
+O workflow **[!UICONTROL NMAC opt-out management]** (mobileAppOptOutMgt) atualiza a notificação de cancelamentos de subscrições em dispositivos móveis. Para obter mais informações sobre esse fluxo de trabalho, consulte a workflows técnicos [lista](../../workflow/using/about-technical-workflows.md).
 
 O Adobe Campaign é compatível com APNs binários e HTTP/2. Para obter mais detalhes sobre as etapas de configuração, consulte [Configuração de um aplicativo para dispositivos móveis na seção Adobe Campaign](../../delivery/using/configuring-the-mobile-application.md).
 
