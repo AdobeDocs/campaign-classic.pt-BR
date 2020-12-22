@@ -7,10 +7,10 @@ audience: platform
 content-type: reference
 topic-tags: profile-management
 translation-type: tm+mt
-source-git-commit: 20dcdd91d71158bc373db68c3f61f6808b240bd2
+source-git-commit: a9d58e25ab17baaabf4ff8c109b53e83c7d93218
 workflow-type: tm+mt
 source-wordcount: '952'
-ht-degree: 97%
+ht-degree: 99%
 
 ---
 
@@ -105,7 +105,7 @@ Os perfis excluídos durante a preparação do delivery (regras de tipologia, qu
 >
 >Os canais Facebook e Twitter não são considerados.
 
-Você pode ter uma visão geral do **[!UICONTROL Number of active profiles]** a partir do menu **[!UICONTROL Administration > Campaign Management > Customer metrics]** do Campaign Standard. A contagem real é executada pelo **[!UICONTROL Number of active billing profiles]** [workflow técnico](../../workflow/using/deliveries.md) (**[!UICONTROL billingActiveContactCount]**), que é executado diariamente e adiciona os novos dados ao relatório existente para o período atual no menu **[!UICONTROL Customer metrics]**. Cada período dura 12 meses.
+Você pode ter uma visão geral do **[!UICONTROL Number of active profiles]** a partir do menu **[!UICONTROL Administration > Campaign Management > Customer metrics]** do Campaign Standard. A contagem real é executada pelo **[!UICONTROL Number of active billing profiles]** [workflow técnico](../../workflow/using/about-technical-workflows.md) (**[!UICONTROL billingActiveContactCount]**), que é executado diariamente e adiciona os novos dados ao relatório existente para o período atual no menu **[!UICONTROL Customer metrics]**. Cada período dura 12 meses.
 
 ## Vídeo tutorial {#create-profiles-video}
 
@@ -115,7 +115,7 @@ Este vídeo também explica a conformidade da Adobe Campaign Classic com os Regu
 
 >[!VIDEO](https://video.tv.adobe.com/v/35611?quality=12)
 
-Vídeos de instruções adicionais do Campaign Classic estão disponíveis [aqui](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html).
+Vídeos extras sobre procedimentos do Campaign Classic estão disponíveis [aqui](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html?lang=pt-BR).
 
 **Consulte também**
 
