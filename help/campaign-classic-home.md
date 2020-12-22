@@ -4,11 +4,11 @@ solution: Campaign Classic
 product: campaign
 title: Documentação do produto Adobe Campaign Classic
 topic: Premium
-translation-type: ht
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
-workflow-type: ht
-source-wordcount: '250'
-ht-degree: 100%
+translation-type: tm+mt
+source-git-commit: 588e1e465eb5ba06f3a7310f70fe958ec2ec334f
+workflow-type: tm+mt
+source-wordcount: '255'
+ht-degree: 92%
 
 ---
 
@@ -18,6 +18,8 @@ ht-degree: 100%
 ![](platform/using/assets/do-not-localize/banner_acc_doc.jpg)
 
 ## Novidades
+
+* **[Remova ](https://helpx.adobe.com/campaign/kb/update-bounce-qualification.html)**<br/> rejeições incorretas de disco rígidoSaiba como atualizar rejeições incorretas de disco depois da paralisação do Gmail
 
 * **[Atualizar a integração dos acionadores da Adobe Experience Cloud](integrations/using/configuring-adobe-io.md)**<br/> O serviço de autenticação herdado oAuth chegou ao fim da vida útil. Saiba como migrar para o Adobe I/O
 
@@ -29,9 +31,6 @@ Agora você pode inserir emoticons em mensagens e linhas de assunto
 
 * **[Obtenha suporte](https://helpx.adobe.com/br/campaign/kb/ac-support.html)**<br/>
 Acesse as perguntas frequentes, as práticas recomendadas, os recursos de ajuda e solicite ajuda.
-
-* **[Recursos de rastreamento](https://helpx.adobe.com/br/campaign/kb/acc-tracking.html)**<br/>
-Entenda os recursos de rastreamento no Campaign.
 
 [Mais atualizações](/help/rn/using/documentation-updates.md)
 
@@ -90,5 +89,5 @@ Entenda os recursos de rastreamento no Campaign.
 | [Matriz de compatibilidade](rn/using/compatibility-matrix.md) | [JSAPI do Campaign](https://docs.adobe.com/content/help/en/campaign-classic/technicalresources/api/p-1.html) |
 | [Introdução ao Campaign](platform/using/about-adobe-campaign-classic.md) | [Guia de implementação](https://helpx.adobe.com/br/campaign/kb/acc-implementation.html) |
 | [Atualização do Gold Standard ](https://helpx.adobe.com/br/campaign/kb/gold-standard.html) | [Guia de rastreamento](https://helpx.adobe.com/br/campaign/kb/acc-tracking.html) |
-| [Recursos obsoletos](rn/using/deprecated-features.md) | [Lista de verificação de segurança e privacidade](https://helpx.adobe.com/br/campaign/kb/acc-security.html) |
+| [Recursos obsoletos](rn/using/deprecated-features.md) | [Lista de verificação de segurança e privacidade](https://helpx.adobe.com/campaign/kb/acc-security.html) |
 | [Painel de controle do Campaign](https://experienceleague.adobe.com/docs/control-panel/using/control-panel-home.html?lang=pt-BR) | [Orientações de monitoramento](production/using/monitoring-guidelines.md) |
