@@ -6,11 +6,11 @@ description: Saiba como enviar um email de aniversário com um workflow
 audience: workflow
 content-type: reference
 topic-tags: use-cases
-translation-type: ht
-source-git-commit: 20dcdd91d71158bc373db68c3f61f6808b240bd2
-workflow-type: ht
-source-wordcount: '882'
-ht-degree: 100%
+translation-type: tm+mt
+source-git-commit: a9d58e25ab17baaabf4ff8c109b53e83c7d93218
+workflow-type: tm+mt
+source-wordcount: '881'
+ht-degree: 96%
 
 ---
 
@@ -204,7 +204,7 @@ Adicione uma atividade de **Recurring delivery** com base no template de e-mail 
 
 >[!CAUTION]
 >
->Para que os workflows sejam executados, os workflows técnicos relacionados ao processo de campanha devem ser iniciados. Para obter mais informações, consulte a seção [List of campaign process workflows](../../workflow/using/campaign.md).
+>Para que os workflows sejam executados, os workflows técnicos relacionados ao pacote de Campanha devem ser iniciados. Para obter mais informações, consulte a seção [Lista de workflows técnicos](../../workflow/using/about-technical-workflows.md).
 >
 >Se as etapas de aprovação estiverem habilitadas para a campanha, as remessas serão enviadas apenas quando essas etapas tiverem sido confirmadas. Para obter mais informações, consulte a seção [Choosing the processes to be approved](../../campaign/using/marketing-campaign-approval.md#choosing-the-processes-to-be-approved) .
 
