@@ -6,11 +6,11 @@ description: Saiba mais sobre deliveries de campanha de marketing
 audience: campaign
 content-type: reference
 topic-tags: orchestrate-campaigns
-translation-type: ht
-source-git-commit: 20dcdd91d71158bc373db68c3f61f6808b240bd2
-workflow-type: ht
-source-wordcount: '2925'
-ht-degree: 100%
+translation-type: tm+mt
+source-git-commit: a9d58e25ab17baaabf4ff8c109b53e83c7d93218
+workflow-type: tm+mt
+source-wordcount: '2926'
+ht-degree: 99%
 
 ---
 
@@ -281,7 +281,7 @@ Após todas as aprovações serem concedidas, o status do delivery será alterad
 
 >[!NOTE]
 >
->Os workflows técnicos relativos aos processos de campanha são apresentados na [Lista de workflows do processo de campanha](../../workflow/using/campaign.md).
+>Os workflows técnicos relacionados ao pacote de Campanha são apresentados em [Lista de workflows técnicos](../../workflow/using/about-technical-workflows.md).
 
 **Etapa 1 - Aprovação de arquivo**
 
@@ -461,6 +461,6 @@ O modelo de exportação deve estar associado ao provedor de serviços seleciona
 
 Este vídeo explica como criar uma campanha e um email no Adobe Campaign Classic.
 
->[!VIDEO](https://video.tv.adobe.com/v/25604?quality=12&captions=por_br)
+>[!VIDEO](https://video.tv.adobe.com/v/25604?quality=12)
 
 Vídeos extras sobre procedimentos do Campaign Classic estão disponíveis [aqui](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html?lang=pt-BR).
