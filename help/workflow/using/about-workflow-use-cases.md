@@ -8,11 +8,11 @@ content-type: reference
 topic-tags: about-workflows-and-data-management
 internal: n
 snippet: y
-translation-type: ht
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
-workflow-type: ht
-source-wordcount: '195'
-ht-degree: 100%
+translation-type: tm+mt
+source-git-commit: fe7ff64d24113e026a47aa1c9f08daacce2b383e
+workflow-type: tm+mt
+source-wordcount: '201'
+ht-degree: 97%
 
 ---
 
@@ -55,6 +55,7 @@ Eles ajudarão você a descobrir os diferentes contextos nos quais os workflows 
 * [Importar dados criptografados usando uma chave gerada pelo Painel de controle do Campaign](../../workflow/using/importing-data.md#use-case-gpg-decrypt)
 * [Criptografar e exportar dados usando uma chave instalada no Painel de controle do Campaign](../../workflow/using/how-to-use-workflow-data.md#use-case-gpg-encrypt)
 * [Atualização da lista trimestral usando um query incremental](../../workflow/using/quarterly-list-update.md)
+* [Uso da funcionalidade de união de atividades Desduplicação-duplicados](../../workflow/using/deduplication-merge.md)
 
 ## Direcionamento {#designing-queries}
 
