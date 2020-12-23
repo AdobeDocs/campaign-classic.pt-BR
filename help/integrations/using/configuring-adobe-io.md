@@ -10,7 +10,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 57093a687534ed1e7f77738ca233d4cc86cf40cf
+source-git-commit: 55ca41bfcacbd75846901474ae6f012dfdc8d1a9
 workflow-type: tm+mt
 source-wordcount: '431'
 ht-degree: 67%
@@ -26,7 +26,7 @@ ht-degree: 67%
 
 ## Pré-requisitos {#adobe-io-prerequisites}
 
-Essa integração aplica-se somente a partir de **Campaign Classic 20.3 e versões Gold Standard 11**.
+Essa integração aplica-se somente a partir das versões **Campaign Classic 20.3, 20.2.4, 19.1.8 e Gold Standard 11**.
 
 Antes de iniciar esta implementação, verifique se você tem:
 
