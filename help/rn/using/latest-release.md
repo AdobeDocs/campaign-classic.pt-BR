@@ -7,10 +7,10 @@ audience: rns
 content-type: reference
 topic-tags: latest-release-notes
 translation-type: tm+mt
-source-git-commit: 787beef89325340cc1d46faa03e9cfae7f1c705c
+source-git-commit: 57093a687534ed1e7f77738ca233d4cc86cf40cf
 workflow-type: tm+mt
-source-wordcount: '1852'
-ht-degree: 98%
+source-wordcount: '1875'
+ht-degree: 97%
 
 ---
 
@@ -65,6 +65,10 @@ _27 de outubro de 2020_
 </tbody> 
 </table>
 
+>[!CAUTION]
+>
+>Esta versão é fornecida com um novo protocolo de conexão: a atualização é obrigatória para o servidor de Campanha e o console do cliente poderem se conectar à Campanha após 21 de março de 2021.
+
 **Aprimoramentos de segurança**
 
 * Carregamento seguro de bibliotecas: a fim de proteger de ataques de pré-carregamento de DLL, o Campaign agora carrega as DLLs do Windows somente do caminho padrão de DLL do sistema do Windows ao carregar o Cliente do Campaign (nlclient). [Saiba mais](https://support.microsoft.com/en-us/help/2389418/secure-loading-of-libraries-to-prevent-dll-preloading-attacks) (NEO-24147)
@@ -103,11 +107,7 @@ Saiba mais na [página sobre recursos obsoletos e removidos](../../rn/using/depr
 **Aprimoramentos**
 
 * Vários aprimoramentos foram feitos no **console do cliente**:
-   * O protocolo de conexão foi atualizado para seguir o novo mecanismo de autenticação IMS.
-
-      >[!CAUTION]
-      >
-      >Após a atualização do protocolo de conexão, a atualização é obrigatória (servidor e console) para se conectar a partir de 21 de março de 2020.
+   * O protocolo de conexão foi atualizado para seguir o novo mecanismo de autenticação IMS. A atualização do console do servidor e do cliente é obrigatória para se conectar após 21 de março de 2021.
    * Para evitar incompatibilidade com algumas restrições de regras de GPO de segurança da Internet, a tela de logon do console do cliente do Campaign foi substituída por um formulário Windows padrão integrado.
    * Correção de um problema ao copiar/colar atividades em um workflow usando o console do cliente de 64 bits. (NEO-27635)
 
