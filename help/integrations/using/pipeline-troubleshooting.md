@@ -6,11 +6,11 @@ description: Configuração da integração
 audience: integrations
 content-type: reference
 topic-tags: adobe-experience-manager
-translation-type: ht
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
-workflow-type: ht
+translation-type: tm+mt
+source-git-commit: 57093a687534ed1e7f77738ca233d4cc86cf40cf
+workflow-type: tm+mt
 source-wordcount: '582'
-ht-degree: 100%
+ht-degree: 97%
 
 ---
 
@@ -22,7 +22,7 @@ ht-degree: 100%
 A sua versão do Adobe Campaign Classic não é compatível com o pipeline.
 
 1. Verifique se o elemento [!DNL pipelined] está presente no arquivo de configuração. Caso não esteja, significa que não é compatível.
-1. Atualize para a versão 6.11 build 8705 ou posterior.
+1. Atualize para a Campanha 20.3 ou Gold Standard 11.
 
 **Falha no pipeline com “ aurait dû commencer par `[` ou `{` (iRc=16384)”**
 
@@ -31,7 +31,7 @@ Defina a configuração JSON na opção **NmsPipeline_Config**. Consulte &quot;O
 
 **Falha no pipeline com &quot;o assunto deve ser uma organização ou cliente válido&quot;**
 
-A configuração IMSOrgid não é válida.
+A configuração do identificador da organização não é válida.
 
 1. Verifique se IMSOrgId está definido no serverConf.xml.
 1. Procure um IMSOrgId vazio no arquivo de configuração da instância que possa substituir o padrão. Em caso afirmativo, remova-o.
@@ -85,4 +85,3 @@ Geralmente, um acionador pode levar de 15 a 90 minutos para iniciar uma campanha
 1. Em pipelined.log, procure erros que possam causar novas tentativas. Caso seja aplicável, corrija os erros.
 1. Verifique o tamanho da fila na página de status [!DNL pipelined]. Se o tamanho da fila for grande, melhore o desempenho do JS.
 1. Como o atraso parece aumentar com o volume, configure os acionadores no Analytics usando menos mensagens.
-Anexos
