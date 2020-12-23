@@ -7,7 +7,7 @@ audience: rns
 content-type: reference
 topic-tags: campaign-release-notes, latest-release-notes
 translation-type: tm+mt
-source-git-commit: 26f232fafbcc39eb710135a1fc937e40a76ad0bd
+source-git-commit: 57093a687534ed1e7f77738ca233d4cc86cf40cf
 workflow-type: tm+mt
 source-wordcount: '2483'
 ht-degree: 91%
@@ -25,7 +25,7 @@ _22 de dezembro de 2020_
 
 >[!CAUTION]
 >
->Esta versão é fornecida com um novo protocolo de conexão:  a atualização é obrigatória para o servidor de Campanha e o console do cliente poderem se conectar à Campanha após 21 de março de 2020
+>Esta versão é fornecida com um novo protocolo de conexão:  a atualização é obrigatória para o servidor de Campanha e o console do cliente poderem se conectar à Campanha após 21 de março de 2021.
 
 **Aprimoramentos**
 
