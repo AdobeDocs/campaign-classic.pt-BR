@@ -6,11 +6,11 @@ description: AND-join
 audience: workflow
 content-type: reference
 topic-tags: flow-control-activities
-translation-type: ht
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
-workflow-type: ht
-source-wordcount: '172'
-ht-degree: 100%
+translation-type: tm+mt
+source-git-commit: 3eecc16442a11849c12819cf83392f60c5b82a13
+workflow-type: tm+mt
+source-wordcount: '190'
+ht-degree: 90%
 
 ---
 
@@ -22,6 +22,10 @@ Um join inicia sua transição de saída somente quando todas as transições de
 Por exemplo, você pode usar uma atividade AND-join no contexto de criação de conteúdo e automação de envio de delivery, para garantir que um delivery seja iniciado somente depois que as etapas de consulta de públicos-alvos e atualizações de conteúdo forem concluídas. Um caso de uso específico está disponível [nesta seção](../../delivery/using/automating-via-workflows.md#creating-the-delivery-and-its-content)
 
 ![](assets/and-join-usage.png)
+
+>[!NOTE]
+>
+>Observe que transições de entrada configuradas com targeting dimension diferentes não podem ser agrupadas usando uma atividade **[!UICONTROL AND-join]**.
 
 A população enviada da saída da atividade é determinada escolhendo um conjunto principal entre as transições de entrada na atividade.
 
