@@ -6,9 +6,9 @@ description: Configuração e envio do delivery
 audience: delivery
 content-type: reference
 topic-tags: about-deliveries-and-channels
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 6d5dbc16ed6c6e5a2e62ceb522e2ccd64b142825
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1521'
 ht-degree: 100%
 
@@ -200,4 +200,4 @@ Quando o delivery for iniciado, as mensagens (e todas as tentativas) poderão se
 >
 >Para instalações hospedadas ou híbridas, se você tiver atualizado para MTA aprimorado, a configuração **[!UICONTROL Delivery duration]** nos deliveries do Campaign será usada somente se definida como **3,5** dias ou menos. Se você definir um valor superior a 3,5 dias, ele não será considerado.
 >
->Todos os impactos são detalhados no documento [MTA aprimorado do Adobe Campaign](https://helpx.adobe.com/campaign/kb/acc-campaign-enhanced-mta.html).
+>Todos os impactos são detalhados no documento [MTA aprimorado do Adobe Campaign](https://helpx.adobe.com/br/campaign/kb/acc-campaign-enhanced-mta.html).
