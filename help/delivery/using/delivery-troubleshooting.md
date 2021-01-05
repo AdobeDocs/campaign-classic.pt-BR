@@ -6,20 +6,20 @@ description: Saiba mais sobre o desempenho do delivery e como solucionar problem
 audience: delivery
 content-type: reference
 topic-tags: monitoring-deliveries
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: f3ba836bbb5a5f82d6a7868dcb15edc8e61b9a5b
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '789'
-ht-degree: 87%
+ht-degree: 100%
 
 ---
 
 
-# Delivery enviando solução de problemas {#delivery-troubleshooting}
+# Solução de problemas de envio de delivery {#delivery-troubleshooting}
 
-Esta seção lista problemas comuns que você pode encontrar ao enviar delivery e como solucioná-los.
+Esta seção lista problemas comuns que você pode encontrar ao enviar deliveries e como solucioná-los.
 
-Além disso, siga as práticas recomendadas e a lista de verificação detalhada em [esta página](../../delivery/using/delivery-performances.md) para garantir que seus delivery tenham bom desempenho.
+Além disso, siga as práticas recomendadas e a lista de verificação detalhada [nesta página](../../delivery/using/delivery-performances.md) para garantir que seus deliveries tenham bom desempenho.
 
 **Tópicos relacionados:**
 
@@ -55,13 +55,13 @@ Se o status de um delivery de email for **[!UICONTROL Failed]**, ele poderá ser
 
 Os logs do delivery são fundamentais para saber por que um delivery falhou. Aqui estão possíveis erros que você pode detectar nos logs de delivery:
 
-* As mensagens de recipient estão falhando com um erro &quot;Inacessível&quot; informando:
+* Se as mensagens do recipient falharem com uma declaração de erro &quot;Inacessível&quot;:
 
    ```
    Error while compiling script 'content htmlContent' line X: `[table]` is not defined. JavaScript: error while evaluating script 'content htmlContent
    ```
 
-   A causa desse problema é quase sempre uma personalização dentro do HTML tentando chamar uma tabela ou campo que não foi definido ou mapeado na definição de metas upstream ou no target mapping do delivery.
+   A causa desse problema é quase sempre uma personalização na tentativa do HTML que chama uma tabela ou campo que não foi definido ou mapeado no direcionamento de upstream ou no target mapping do delivery.
 
    Para corrigir isso, o workflow e o conteúdo do delivery precisam ser revisados para determinar especificamente qual personalização está tentando chamar a tabela em questão e se a tabela pode ou não ser mapeada. A partir daí, ao remover a chamada para esta tabela no HTML ou ao corrigir o mapping para o delivery pode ser o caminho para a resolução.
 
