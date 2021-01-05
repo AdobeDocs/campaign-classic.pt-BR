@@ -1,23 +1,23 @@
 ---
 solution: Campaign Classic
 product: campaign
-title: Práticas recomendadas de desempenho do delivery
+title: Práticas recomendadas de desempenho de delivery
 description: Saiba mais sobre o desempenho do delivery e as práticas recomendadas.
 audience: delivery
 content-type: reference
 topic-tags: monitoring-deliveries
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 5b43412286762977c416665d296908a9bfc9b20a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '452'
-ht-degree: 90%
+ht-degree: 100%
 
 ---
 
 
-# Práticas recomendadas de desempenho do delivery {#delivery-performances}
+# Práticas recomendadas de desempenho de delivery {#delivery-performances}
 
-Recomendamos seguir as diretrizes abaixo para garantir que seus delivery tenham bom desempenho, bem como as verificações que o desempenho será feito se você encontrar problemas com delivery.
+Recomendamos seguir as diretrizes abaixo para garantir que seus deliveries tenham bom desempenho, bem como as verificações de desempenho caso haja problemas com deliveries.
 
 **Tópicos relacionados:**
 
