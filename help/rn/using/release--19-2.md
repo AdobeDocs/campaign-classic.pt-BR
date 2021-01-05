@@ -10,7 +10,7 @@ translation-type: tm+mt
 source-git-commit: 57093a687534ed1e7f77738ca233d4cc86cf40cf
 workflow-type: tm+mt
 source-wordcount: '1376'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
@@ -23,10 +23,10 @@ _23 de dezembro de 2020_
 
 >[!CAUTION]
 >
->Esta versão é fornecida com um novo protocolo de conexão:  a atualização é obrigatória para o servidor de Campanha e o console do cliente poderem se conectar à Campanha após 21 de março de 2021.
+>Esta versão é fornecida com um novo protocolo de conexão:  a atualização é obrigatória para que o servidor do Campaign e o console do cliente possam se conectar ao Campaign após 21 de março de 2021.
 
 * O protocolo de conexão foi atualizado para seguir o novo mecanismo de autenticação IMS.
-* Correção de um problema de segurança para reforçar a proteção contra problemas de SSRF (Server Side Request Forgery). (NEO-27777)
+* Correção de um problema de segurança para reforçar a proteção contra situações de SSRF (Server Side Request Forgery). (NEO-27777)
 
 
 
@@ -88,7 +88,7 @@ _02 de dezembro de 2019_
   <tr> 
 <td> <p>O Adobe Campaign permite que você experimente o novo formato do <a href="https://amp.dev/about/email/">AMP for Email</a>, que permite que os profissionais de marketing incluam componentes do AMP dentro de mensagens para aprimorar a experiência de email com conteúdo avançado, dinâmico e interativo, acionável diretamente na própria mensagem.</p>
    <p> Esse recurso foi lançado como um beta público.</p>
-   <p>Para obter mais informações, consulte a <a href="../../delivery/using/defining-interactive-content.md">documentação detalhada</a> e o <a href="https://docs.adobe.com/content/help/en/campaign-classic-learn/tutorials/sending-messages/email-channel/defining-interactive-email-content-with-amp.html">vídeo tutorial</a>.</p><br /></td> 
+   <p>Para obter mais informações, consulte a <a href="../../delivery/using/defining-interactive-content.md">documentação detalhada</a> e o <a href="https://docs.adobe.com/content/help/pt-BR/campaign-classic-learn/tutorials/sending-messages/email-channel/defining-interactive-email-content-with-amp.html">vídeo tutorial</a>.</p><br /></td> 
   </tr> 
  </tbody> 
 </table>
