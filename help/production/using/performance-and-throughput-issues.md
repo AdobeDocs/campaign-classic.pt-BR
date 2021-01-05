@@ -7,7 +7,7 @@ audience: production
 content-type: reference
 topic-tags: troubleshooting
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: 50f95d7156e7104d90fa7a31eea30711b9c11bbf
 workflow-type: tm+mt
 source-wordcount: '687'
 ht-degree: 7%
@@ -17,13 +17,13 @@ ht-degree: 7%
 
 # Problemas de desempenho e de taxa de transferência{#performance-and-throughput-issues}
 
->[!NOTE]
->
->Primeiro, você deve verificar se tem a versão mais recente instalada. Isso garante que você tenha os recursos e as correções de erros mais recentes. Consulte as [Notas de versão](../../rn/using/latest-release.md) para obter mais informações sobre o conteúdo de cada versão.
+Primeiro, você deve verificar se tem a versão mais recente instalada. Isso garante que você tenha os recursos e as correções de erros mais recentes.
+
+Consulte as [Notas de versão](../../rn/using/latest-release.md) para obter mais informações sobre o conteúdo de cada versão.
 
 ## Hardware e infraestrutura {#hardware-and-infrastructure}
 
-As diretrizes gerais para os requisitos de hardware para Campaign Classic no local estão detalhadas neste [artigo](https://helpx.adobe.com/br/campaign/kb/hardware-sizing-guide.html).
+As diretrizes gerais para os requisitos de hardware para Campaign Classic no local estão detalhadas nesta [página](https://helpx.adobe.com/br/campaign/kb/hardware-sizing-guide.html).
 
 A equipe de consultoria pode fornecer aos clientes hospedados uma ferramenta que permite que você visualização facilmente quanto espaço é usado por vários tipos de tabelas no banco de dados, bem como o espaço usado no site SFTP. Além disso, fornece ferramentas que permitem a limpeza de dados desnecessários. Entre em contato com as equipes de consultoria ou suporte se precisar que essa ferramenta seja implementada. Estas são algumas coisas importantes para verificar usando esta ferramenta:
 
@@ -33,7 +33,7 @@ A equipe de consultoria pode fornecer aos clientes hospedados uma ferramenta que
 
 A Adobe Campaign também fornece uma [ferramenta](../../production/using/monitoring-processes.md#manual-monitoring) para verificar o uso da CPU e da RAM. Use essa ferramenta e observe indicadores específicos, como: **Memória**, **Trocar Memória**, **Disco**, **Processos Ativos**. Se os valores forem muito altos, você pode tentar reduzir o número de workflows ou agendar workflows para start em momentos diferentes.
 
-## Desempenho do banco de dados {#database-performances}
+## Verificação de banco de dados {#database-performances}
 
 Na maioria das vezes, os problemas de desempenho estão vinculados à manutenção do banco de dados. Estes são os itens principais a serem verificados:
 
@@ -68,4 +68,3 @@ Esta é uma lista de práticas recomendadas e artigos relacionados à entrega:
 >[!NOTE]
 >
 >Consulte também a seção [Pontos chave de entregabilidade](../../delivery/using/deliverability-key-points.md).
-
