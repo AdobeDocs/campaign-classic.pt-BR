@@ -10,7 +10,7 @@ translation-type: tm+mt
 source-git-commit: 450889f845b7c5adad1085d7eba70e23030e6609
 workflow-type: tm+mt
 source-wordcount: '809'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -88,7 +88,7 @@ Por exemplo, estender o modelo de dados no Adobe Campaign para rastrear não ape
 
 ## Exclusão de dados {#data-deletion}
 
-### Quais dados os controladores de dados podem excluir no Adobe Campaign em resposta a uma solicitação do cliente por um titular dos dados?
+### Quais dados os controladores podem excluir no Adobe Campaign em resposta a uma solicitação do cliente por um titular dos dados?
 
 Todos os dados associados ao titular dos dados serão excluídos, incluindo tabelas predefinidas e personalizadas.
 
@@ -110,7 +110,7 @@ Ao receber uma solicitação de exclusão, o controlador de dados precisará gar
 
 ## Nova inclusão {#opt-in-again}
 
-### Uma pessoa de dados, cujos dados foram apagados da Adobe Campaign, pode opt in novamente mais tarde?
+### Um titular de dados, cujos dados tenham sido apagados do Adobe Campaign, pode ser reinserido?
 
 É possível que um titular de dados seja novamente aceito ou seja adicionado como um novo recipient depois que seus dados forem apagados do Adobe Campaign.
 
