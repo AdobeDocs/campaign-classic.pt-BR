@@ -6,11 +6,11 @@ description: Automatização via workflows
 audience: delivery
 content-type: reference
 topic-tags: content-management
-translation-type: ht
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
-workflow-type: ht
-source-wordcount: '1188'
-ht-degree: 100%
+translation-type: tm+mt
+source-git-commit: 3eecc16442a11849c12819cf83392f60c5b82a13
+workflow-type: tm+mt
+source-wordcount: '1186'
+ht-degree: 98%
 
 ---
 
@@ -200,7 +200,7 @@ Esse exemplo usa o mesmo conceito do primeiro exemplo, mas cria a ação de deli
 
 A primeira tarefa **Create delivery** cria a ação de delivery.
 
-A atividade fork permite o início do cálculo do target e a criação da instância de conteúdo ao mesmo tempo.
+A atividade de bifurcação permite iniciar o cálculo do público alvo e a criação da instância do conteúdo em paralelo.
 
 Depois que as tarefas são executadas, a caixa AND-join ativa a tarefa **Delivery** para iniciar o delivery criado anteriormente no conteúdo e definição de targeting.
 
