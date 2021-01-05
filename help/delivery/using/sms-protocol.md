@@ -7,9 +7,9 @@ audience: delivery
 content-type: reference
 topic-tags: configuring-channels
 translation-type: tm+mt
-source-git-commit: 8f45fcc57062e6f13bc674c72f53788483de93fb
+source-git-commit: 09a79330e1ff951898d1559d5765818c12dc497a
 workflow-type: tm+mt
-source-wordcount: '8399'
+source-wordcount: '8424'
 ht-degree: 0%
 
 ---
@@ -17,6 +17,8 @@ ht-degree: 0%
 # Protocolo e configurações do conector SMS {#sms-connector-protocol}
 
 >[!NOTE]
+>
+>O **protocolo e as configurações do conector SMS** para Adobe Campaign Standard podem ser encontrados nesta [página](https://experienceleague.adobe.com/docs/campaign-standard/using/administrating/configuring-sms/sms-protocol.html#administrating).
 >
 >Por meio desse documento, todas as referências a detalhes sobre o protocolo, nomes de campos e valores se referem à especificação [SMPP 3.4](https://smpp.org/SMPP_v3_4_Issue1_2.pdf).
 
