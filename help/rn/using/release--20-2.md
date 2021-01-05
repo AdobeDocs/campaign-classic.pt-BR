@@ -10,7 +10,7 @@ translation-type: tm+mt
 source-git-commit: 57093a687534ed1e7f77738ca233d4cc86cf40cf
 workflow-type: tm+mt
 source-wordcount: '2483'
-ht-degree: 91%
+ht-degree: 100%
 
 ---
 
@@ -25,18 +25,18 @@ _22 de dezembro de 2020_
 
 >[!CAUTION]
 >
->Esta versão é fornecida com um novo protocolo de conexão:  a atualização é obrigatória para o servidor de Campanha e o console do cliente poderem se conectar à Campanha após 21 de março de 2021.
+>Esta versão é fornecida com um novo protocolo de conexão:  a atualização é obrigatória para que o servidor do Campaign e o console do cliente possam se conectar ao Campaign após 21 de março de 2021.
 
 **Aprimoramentos**
 
 * O protocolo de conexão foi atualizado para seguir o novo mecanismo de autenticação IMS.
-* A autenticação de integração acionadora originalmente com base na configuração de autenticação oAUTH para acessar o pipeline foi alterada e movida para a Adobe I/O. [Saiba mais](../../integrations/using/configuring-adobe-io.md)
+* A autenticação da integração dos acionadores originalmente baseada na configuração da autenticação oAUTH para acessar o pipeline agora foi alterada e movida para o Adobe I/O. [Saiba mais](../../integrations/using/configuring-adobe-io.md)
 * Após o fim do suporte para o protocolo binário herdado APNs do iOS, todas as instâncias que usam esse protocolo são atualizadas para o protocolo HTTP/2 durante a pós-atualização.
-* Correção de um problema de segurança para reforçar a proteção contra problemas de SSRF (Server Side Request Forgery). (NEO-27777)
+* Correção de um problema de segurança para reforçar a proteção contra situações de SSRF (Server Side Request Forgery). (NEO-27777)
 
 
 
-* Correção de um problema que resultava na desativação do conector SMPP após um erro de conexão, impedindo o envio de outros delivery SMS e causando problemas de desempenho. (NEO-28609)
+* Correção de um problema que resultava na desativação do conector SMPP após um erro de conexão, impedindo o envio de outros deliveries SMS e causando problemas de desempenho. (NEO-28609)
 
 
 
@@ -49,13 +49,13 @@ _22 de dezembro de 2020_
 
 
 
-* Correção de um problema ao fazer uma solicitação de conexão HTTPS com o número da porta explicitamente definido no nome do host, a chamada falhou com um erro de certificado. (NEO-29146)
+* Correção de um problema ao fazer uma solicitação de conexão HTTPS com o número da porta explicitamente definido no nome do host. A chamada falhou com um erro de certificado. (NEO-29146)
 
 
 
 * Correção de um problema no gerenciamento de processos POSIX que gerava arquivos de despejo principais na instância de marketing. (NEO-28117, NEO-29281)
-* Correção de problemas que resultavam em falha do processo da Web ao preparar delivery ou com pré-visualizações recorrentes de delivery. (NEO-27790, NEO-27517)
-* Correção de um problema que causava a falha de envio de delivery ou provas quando acionados por um operador não administrador. (NEO-28597)
+* Correção de problemas que resultavam em falha do processo da web ao preparar deliveries ou com pré-visualizações recorrentes de delivery. (NEO-27790, NEO-27517)
+* Correção de um problema que causava a falha de envio de deliveries ou provas quando acionados por um operador não administrador. (NEO-28597)
 
 
 
