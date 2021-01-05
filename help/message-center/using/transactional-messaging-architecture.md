@@ -6,11 +6,11 @@ description: Esta seção descreve a arquitetura de mensagens transacionais do A
 audience: message-center
 content-type: reference
 topic-tags: introduction
-translation-type: ht
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
-workflow-type: ht
-source-wordcount: '988'
-ht-degree: 100%
+translation-type: tm+mt
+source-git-commit: d45f393083ec540025a9e001b089a8b1241a8c99
+workflow-type: tm+mt
+source-wordcount: '1025'
+ht-degree: 93%
 
 ---
 
@@ -64,7 +64,15 @@ Se precisar usar vários canais, instale e configure pacotes relacionados antes 
 
 ## Adição de um canal de delivery {#adding-a-delivery-channel}
 
-A adição de um canal de delivery (canal móvel, canal de aplicativo móvel, etc.) deverá ser executada antes de instalar o pacote de mensagens transacionais. Caso tenha iniciado um projeto de mensagens transacionais no canal de email e decida, durante o projeto, adicionar um novo canal, siga estas etapas:
+A adição de um canal de delivery (canal móvel, canal de aplicativo móvel, etc.) deverá ser executada antes de instalar o pacote de mensagens transacionais.
+
+O Adobe recomenda que você sempre adicione o pacote do canal do delivery antes de instalar o pacote do Mensagen transacional.
+
+Entretanto, se você tiver iniciado um projeto de mensagens transacionais no canal de email e decidir adicionar um novo canal durante o projeto, siga as etapas abaixo.
+
+>[!NOTE]
+>
+>Este procedimento só se aplica a clientes que usam um Windows NLServer instalado na mesma máquina em que estão trabalhando.
 
 1. Instale o canal necessário, por exemplo, o **Canal móvel**, por meio do assistente de importação de pacote (**[!UICONTROL Tools > Advanced > Import package... > Adobe Campaign Package]** ).
 1. Execute uma importação de arquivo ( **[!UICONTROL Tools > Advanced > Import package... > File]** ) e selecione o arquivo ****`[Your language]`**datakitnmspackagemessageCenter.xml**.
