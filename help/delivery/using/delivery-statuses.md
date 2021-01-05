@@ -6,11 +6,11 @@ description: Saiba mais sobre os status disponíveis no painel do delivery.
 audience: delivery
 content-type: reference
 topic-tags: monitoring-deliveries
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: de0e4555d3e2c5dff8d86a22ff4db85953105db1
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '592'
-ht-degree: 79%
+ht-degree: 100%
 
 ---
 
@@ -21,11 +21,11 @@ ht-degree: 79%
 
 ajouter screenshot -->
 
-Depois que um delivery é enviado, o painel do delivery exibe um status que permite monitorar se o envio foi bem-sucedido. Os possíveis status estão detalhados na seção abaixo.
+Depois que um delivery é enviado, o painel do delivery exibe um status que permite monitorar se o envio foi bem sucedido. Os possíveis status estão detalhados na seção abaixo.
 
 ![](assets/delivery-status.png)
 
-Para obter mais detalhes sobre as diferentes falhas de delivery que você pode encontrar e como resolvê-las, consulte [esta página](../../delivery/using/understanding-delivery-failures.md).
+Para obter mais detalhes sobre as diferentes falhas de delivery que podem ser encontradas e como resolvê-las, consulte [esta página](../../delivery/using/understanding-delivery-failures.md).
 
 **Tópicos relacionados:**
 
@@ -53,7 +53,7 @@ Para obter mais detalhes sobre as diferentes falhas de delivery que você pode e
   </tr> 
   <tr> 
    <td> Failed<br /> </td> 
-   <td> O delivery não conseguiu alcançar o recipient devido a um endereço inválido ou a uma caixa de entrada cheia, por exemplo. Ele também pode ser vinculado a um problema com blocos de personalização, pois esses blocos podem gerar erros quando os schemas não correspondem ao mapeamento do delivery. Consulte <a href="../../delivery/using/understanding-delivery-failures.md" target="_blank">Entendendo falhas de delivery</a><br /> </td> 
+   <td> O delivery não conseguiu alcançar o recipient devido a um endereço inválido ou a uma caixa de entrada cheia, por exemplo. Ele também pode ser vinculado a um problema com blocos de personalização, pois esses blocos podem gerar erros quando os schemas não correspondem ao mapeamento do delivery. Consulte <a href="../../delivery/using/understanding-delivery-failures.md" target="_blank">Conhecendo as falhas de delivery</a><br /> </td> 
   </tr>
   <tr> 
    <td> Pending<br /> </td> 
@@ -103,7 +103,7 @@ Se o delivery não estiver sendo enviado e o status permanecer **[!UICONTROL Pen
 
    >[!NOTE]
    >
-   >Esta operação pode ser executada com um modelo de hospedagem **no local** ou **híbrido** com acesso ao servidor de Campanha (consulte [modelos de hospedagem](../../installation/using/hosting-models.md)).
+   >Esta operação pode ser executada com um modelo de hospedagem **no local** ou **híbrido** com acesso ao servidor do Campaign (consulte [modelos de hospedagem](../../installation/using/hosting-models.md)).
 
    1. Verifique se os `mta@<instance>` módulos são iniciados nos servidores MTA.
 
@@ -125,15 +125,15 @@ Se o delivery não estiver sendo enviado e o status permanecer **[!UICONTROL Pen
       >
       >Substitua `<INSTANCENAME>` pelo nome da sua instância (produção, desenvolvimento, etc.). O nome da instância é identificado por meio dos arquivos de configuração: `[path of application]nl6/conf/config-<INSTANCENAME>.xml`
 
-* Pode ser que o delivery esteja usando uma afinidade não configurada no locatário emissor.
+* Pode ser que o delivery esteja usando uma afinidade não configurada no servidor emissor.
 
    Nesse caso, verifique a configuração do gerenciamento de tráfego (afinidade IP) e use o campo **[!UICONTROL Managing affinities with IP addresses]** para vincular deliveries ao MTA que gerencia a afinidade. Para obter mais informações sobre afinidades, consulte [esta seção](../../installation/using/configuring-campaign-server.md#personalizing-delivery-parameters).
 
-* Quando muitas campanhas são executadas, o status do delivery permanece no status &quot;Pendente&quot;.
+* Quando muitas campanhas são executadas, o status do delivery permanece como &quot;Pendente&quot;.
 
    O limite de campanhas simultâneas é definido na opção **[!UICONTROL NmsOperation_LimitConcurrency]**. O valor padrão é 10.
 
-   Saiba mais sobre as opções em [esta página](../../installation/using/configuring-campaign-options.md).
+   Saiba mais sobre opções [nesta página](../../installation/using/configuring-campaign-options.md).
 
 
 **Tópicos relacionados:**
