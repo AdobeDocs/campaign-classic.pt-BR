@@ -7,7 +7,7 @@ audience: production
 content-type: reference
 topic-tags: troubleshooting
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: 50f95d7156e7104d90fa7a31eea30711b9c11bbf
 workflow-type: tm+mt
 source-wordcount: '156'
 ht-degree: 3%
@@ -21,11 +21,13 @@ Para servidores muito carregados, o limite de conexão pode ser excedido. Em qua
 
 Há três limiares diferentes:
 
-1. O limite de conexão com a Web, configurado no servidor da Web. Para modificá-la, entre em contato com o administrador do sistema.
-1. O limite de conexão do banco de dados. Para modificá-la, entre em contato com o administrador do banco de dados.
-1. O limite de conexão Adobe Campaign, disponível em dois lugares:
+* O **limiar de ligação à Web**, configurado no servidor Web. Para modificá-la, entre em contato com o administrador do sistema.
 
-   * Lado Tomcat: todos os query chegando no cliente Adobe Campaign Tomcat.
+* O limite de **conexão de banco de dados**. Para modificá-la, entre em contato com o administrador do banco de dados.
+
+* O **limite de conexão Adobe Campaign**, disponível em dois locais:
+
+   * **** Tomcatside: todos os query chegando no cliente Adobe Campaign Tomcat.
 
       Esse limite está configurado no arquivo **nl6/tomcat-8/conf/server.xml**. O atributo **maxThreads** permite aumentar o limite do número de query processados de cada vez. Pode ser alterado para 250, por exemplo.
 
@@ -41,7 +43,7 @@ Há três limiares diferentes:
                   unpackWARs="true" autoDeploy="true">
       ```
 
-   * Banco de dados: conjunto de todas as conexões abertas ao mesmo tempo no banco de dados por um processo.
+   * **Banco de dados**: conjunto de todas as conexões abertas ao mesmo tempo no banco de dados por um processo.
 
       Esse limite está configurado no arquivo **nl6/conf/serverConf.xml**. O atributo **maxCnx** localizado em **pool de origem de dados** permite aumentar o limite de query processados simultaneamente.
 
