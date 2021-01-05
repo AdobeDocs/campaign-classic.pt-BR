@@ -1,21 +1,21 @@
 ---
 solution: Campaign Classic
 product: campaign
-title: Acessando a lista de deliveries
-description: Saiba como acessar a lista de delivery criados.
+title: Acesso à lista de deliveries
+description: Saiba como acessar a lista de deliveries criados.
 audience: delivery
 content-type: reference
 topic-tags: monitoring-deliveries
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: f2a126d0aa471831f84d4c8457cfd6f0fae7b14f
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '160'
-ht-degree: 94%
+ht-degree: 100%
 
 ---
 
 
-# Acessando a lista de deliveries {#list-of-deliveries}
+# Acesso à lista de deliveries {#list-of-deliveries}
 
 Você pode acessar deliveries a partir da lista de delivery, por meio do nó **[!UICONTROL Campaign Management > Deliveries]** da árvore.
 
