@@ -10,7 +10,7 @@ translation-type: tm+mt
 source-git-commit: 57093a687534ed1e7f77738ca233d4cc86cf40cf
 workflow-type: tm+mt
 source-wordcount: '3061'
-ht-degree: 93%
+ht-degree: 100%
 
 ---
 
@@ -23,27 +23,27 @@ _16 de dezembro de 2020_
 
 >[!CAUTION]
 >
->Esta versão é fornecida com um novo protocolo de conexão:  a atualização é obrigatória para o servidor de Campanha e o console do cliente poderem se conectar à Campanha após 21 de março de 2021.
+>Esta versão é fornecida com um novo protocolo de conexão:  a atualização é obrigatória para que o servidor do Campaign e o console do cliente possam se conectar ao Campaign após 21 de março de 2021.
 
 **Aprimoramentos**
 
 * O protocolo de conexão foi atualizado para seguir o novo mecanismo de autenticação IMS.
-* A autenticação de integração acionadora originalmente com base na configuração de autenticação oAUTH para acessar o pipeline foi alterada e movida para a Adobe I/O. [Saiba mais](../../integrations/using/configuring-adobe-io.md)
+* A autenticação da integração dos acionadores originalmente baseada na configuração da autenticação oAUTH para acessar o pipeline agora foi alterada e movida para o Adobe I/O. [Saiba mais](../../integrations/using/configuring-adobe-io.md)
 * Após o fim do suporte para o protocolo binário herdado APNs do iOS, todas as instâncias que usam esse protocolo são atualizadas para o protocolo HTTP/2 durante a pós-atualização.
-* Correção de um problema de segurança para reforçar a proteção contra problemas de SSRF (Server Side Request Forgery). (NEO-27777)
+* Correção de um problema de segurança para reforçar a proteção contra situações de SSRF (Server Side Request Forgery). (NEO-27777)
 
 
 
-* Correção de um problema que resultava na desativação do conector SMPP após um erro de conexão, impedindo o envio de outros delivery SMS e causando problemas de desempenho.
+* Correção de um problema que resultava na desativação do conector SMPP após um erro de conexão, impedindo o envio de outros deliveries SMS e causando problemas de desempenho.
 * Correção de um problema que exibe porcentagens incorretas ao gerar um relatório descritivo por meio de uma atividade de workflow. (NEO-14314)
-* Correção de um problema de preparação de delivery quando a opção **Excluir endereço de duplicado durante delivery** não estava selecionada. (NEO-13240)
+* Correção de um problema de preparação de delivery quando a opção **Excluir endereço duplicado durante delivery** não está selecionada. (NEO-13240)
 * Correção de um problema que resultava em falha em fluxos de trabalho ao executar uma atividade de **Enriquecimento**. (NEO-17338)
 * Correção de um problema em workflows ao buscar registros de um banco de dados externo e inseri-los no banco de dados do Campaign. (NEO-26359)
 
 
 
 * Correção de um problema de falha do servidor, impedindo assim a corrupção da memória ao limpar o analisador de expressão.
-* Correção de um problema que impedia que a função **NoNull** funcionasse em bancos de dados Oracle após a atualização para a compilação 9032. (NEO-26488)
+* Correção de um problema que impedia que a função **NoNull** funcionasse em bancos de dados Oracle após a atualização para a build 9032. (NEO-26488)
 
 
 
@@ -65,7 +65,7 @@ _16 de dezembro de 2020_
 
 O Tomcat foi atualizado da versão 7 (7.0.103) para a versão 8 (8.5.57). O diretório `tomcat-7` é substituído por um diretório `tomcat-8`. No Windows, _iis_neolane_setup.vbs_ e _apache_neolane.conf_ agora estão instalados no diretório `conf` (em vez do `tomcat-7/conf` anterior). No linux, _apache_neolane.conf_ agora está instalado no diretório `conf`.
 
-No Linux, a inicialização do serviço nlserver agora usa uma unidade sistêmica em vez do script /etc/init.d/nlserver6. A migração para o novo schema de inicialização é executada automaticamente ao instalar o pacote 19.1.8. O /etc/init.d/nlserver6 ainda é fornecido, mas para interagir com o serviço nlserver (start, reinicialização, interrupção etc.), recomendamos que você use o comando systemctl diretamente.
+No Linux, a inicialização do serviço nlserver agora usa uma unidade sistêmica em vez do script /etc/init.d/nlserver6. A migração para o novo esquema de inicialização é executada automaticamente ao instalar o pacote 19.1.8. O /etc/init.d/nlserver6 ainda é fornecido, mas para interagir com o serviço nlserver (start, reinicialização, interrupção etc.), recomendamos que você use o comando systemctl diretamente.
 
 ## ![](assets/do-not-localize/red_2.png) Versão 19.1.7 - Build 9036 {#release-19-1-7-build-9036}
 
@@ -186,7 +186,7 @@ _30 de maio de 2019_
   </tr> 
     <tr> 
    <td> Trilha de auditoria<br /> </td> 
-   <td> <p>Como administrador, aumente a produtividade monitorando e gerenciando alterações feitas na instância do Adobe Campaign Classic. A Trilha de Auditoria registrará ações feitas nos Schemas de origem, Workflows e Opções. Você pode ver rapidamente se um elemento foi criado, modificado ou excluído.</p><p>Para obter mais informações, consulte a <a href="../../production/using/audit-trail.md">documentação detalhada</a> e o <a href="https://docs.adobe.com/content/help/en/campaign-classic-learn/tutorials/monitoring/audit-trail.html">vídeo de instruções</a>.</p></td> 
+   <td> <p>Como administrador, aumente a produtividade monitorando e gerenciando alterações feitas na instância do Adobe Campaign Classic. A Trilha de Auditoria registrará ações feitas nos Schemas de origem, Workflows e Opções. Você pode ver rapidamente se um elemento foi criado, modificado ou excluído.</p><p>Para obter mais informações, consulte a <a href="../../production/using/audit-trail.md">documentação detalhada</a> e o <a href="https://docs.adobe.com/content/help/pt-BR/campaign-classic-learn/tutorials/monitoring/audit-trail.html">vídeo de instruções</a>.</p></td> 
   </tr> 
   <tr> 
    <td> Grade de Proteção, Robustez e Escalabilidade<br /> </td> 
