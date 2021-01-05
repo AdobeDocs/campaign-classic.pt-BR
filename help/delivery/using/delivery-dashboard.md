@@ -2,15 +2,15 @@
 solution: Campaign Classic
 product: campaign
 title: Painel de delivery
-description: Saiba mais sobre como usar o painel do delivery para monitorar seus delivery.
+description: Saiba mais sobre o uso do painel de delivery para monitoramento de deliveries.
 audience: delivery
 content-type: reference
 topic-tags: monitoring-deliveries
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 3c82e30cdc1057be6357d48170b959fb89c79528
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1173'
-ht-degree: 50%
+ht-degree: 100%
 
 ---
 
@@ -19,15 +19,15 @@ ht-degree: 50%
 
 O **painel de delivery** é fundamental para monitorar seus deliveries e eventuais problemas encontrados durante o envio de mensagens.
 
-Ele permite recuperar informações sobre um delivery e editá-las, se necessário. Observe que o conteúdo da guia não pode mais ser alterado depois que o delivery é enviado.
+Ele permite recuperar informações sobre um delivery e editá-las, se necessário. Lembre-se de que o conteúdo da guia não pode mais ser alterado após o envio do delivery.
 
 Estas são as informações que você pode monitorar usando as várias guias disponíveis no painel:
 
-* [Resumo da entrega](#delivery-summary)
+* [Resumo do delivery](#delivery-summary)
 * [Relatórios de delivery](#delivery-reports)
-* [Logs do delivery, mirrores page, exclusões](#delivery-logs-and-history)
-* [Logs de rastreamento e histórico do delivery](#tracking-logs)
-* [renderização de delivery](#delivery-rendering)
+* [Logs do delivery, mirror pages, exclusões](#delivery-logs-and-history)
+* [Histórico e logs de rastreamento do delivery](#tracking-logs)
+* [Renderização de delivery](#delivery-rendering)
 * [Auditoria de delivery](#delivery-audit-)
 
 ![](assets/s_ncs_user_del_details.png)
@@ -45,9 +45,9 @@ A guia **[!UICONTROL Summary]** contém as características do delivery: status 
 
 ## Relatórios de delivery {#delivery-reports}
 
-O link **[!UICONTROL Reports]**, que pode ser acessado na guia **[!UICONTROL Summary]**, permite que você veja um conjunto de relatórios relacionados à ação do delivery: relatório geral do delivery, relatório detalhado, relatório do delivery, distribuição de mensagens com falha, taxa de abertura, cliques e transações etc.
+O link **[!UICONTROL Reports]**, acessível na guia **[!UICONTROL Summary]**, permite que você veja um conjunto de relatórios referentes à ação do delivery: relatório geral do delivery, relatório detalhado, relatório do delivery, distribuição de mensagens com falha, taxa de abertura, cliques e transações, etc.
 
-O conteúdo dessa guia pode ser configurado de acordo com os requisitos. Para obter mais informações sobre relatórios do delivery, consulte [esta seção](../../reporting/using/delivery-reports.md).
+O conteúdo dessa guia pode ser configurado de acordo com os requisitos. Para obter mais informações sobre relatórios de delivery, consulte [esta seção](../../reporting/using/delivery-reports.md).
 
 ![](assets/delivery-report.png)
 
@@ -55,11 +55,11 @@ O conteúdo dessa guia pode ser configurado de acordo com os requisitos. Para ob
 
 A guia **[!UICONTROL Delivery]** fornece um histórico das ocorrências neste delivery. Ela contém os logs de delivery, ou seja, a lista de mensagens enviadas e seus status, e as mensagens associadas.
 
-Para um delivery, você pode exibir (por exemplo) apenas os recipients com um delivery com falha ou um endereço em quarentena. Para fazer isso, clique no botão **[!UICONTROL Filters]** e selecione **[!UICONTROL By state]**. Em seguida, selecione o estado na lista suspensa. Vários status estão listados em [esta página](../../delivery/using/delivery-statuses.md).
+Para um delivery, você pode exibir (por exemplo) apenas os recipients com um delivery com falha ou um endereço em quarentena. Para fazer isso, clique no botão **[!UICONTROL Filters]** e selecione **[!UICONTROL By state]**. Em seguida, selecione o estado na lista suspensa. Vários status são listados [nesta página](../../delivery/using/delivery-statuses.md).
 
 >[!NOTE]
 >
->A lista que exibe os logs do delivery pode ser personalizada, como qualquer lista no Campaign Classic. Por exemplo, você pode adicionar uma coluna para saber qual endereço IP enviou cada email em um delivery. Para obter mais informações, consulte o caso de uso detalhado em [this section](#use-case).
+>A lista que exibe os logs do delivery pode ser personalizada, como qualquer lista no Campaign Classic. Por exemplo, você pode adicionar uma coluna para saber qual endereço IP enviou cada email em um delivery. Para obter mais informações, consulte o caso de uso detalhado [nesta seção](#use-case).
 
 ![](assets/s_ncs_user_delivery_delivery_tab.png)
 
@@ -69,7 +69,7 @@ A mirror page só está disponível para os deliveries para as quais o conteúdo
 
 ![](assets/s_ncs_user_wizard_miror_page_link.png)
 
-## Logs de rastreamento de delivery e histórico {#tracking-logs}
+## Histórico e logs de rastreamento do delivery {#tracking-logs}
 
 A guia **[!UICONTROL Tracking]** lista o histórico de rastreamento desse delivery. Esta guia exibe os dados de rastreamento das mensagens enviadas, ou seja, todas as URLs sujeitas ao rastreamento por meio do Adobe Campaign. Os dados de rastreamento são atualizados de hora em hora.
 
@@ -85,11 +85,11 @@ Os dados de **[!UICONTROL Tracking]** são interpretados nos relatórios de deli
 
 ## Renderização da caixa de entrada {#delivery-rendering}
 
-A guia **[!UICONTROL Inbox rendering]** permite que você pré-visualização a mensagem nos diferentes contextos em que ela pode ser recebida e verifique a compatibilidade em desktops e aplicativos principais.
+A guia **[!UICONTROL Inbox rendering]** permite que você visualize a mensagem enviada nos diferentes contextos em que ela pode ser recebida e verificar a compatibilidade nos principais desktops e aplicativos.
 
-Dessa forma, você pode se certificar de que sua mensagem será exibida aos recipient da maneira ideal em vários clientes da Web, emails e dispositivos.
+Assim você pode ter certeza de que a sua mensagem será exibida aos recipients de forma eficaz em uma variedade de clientes da web, webmails e dispositivos.
 
-Para obter mais informações sobre a renderização da caixa de entrada, consulte [esta página](../../delivery/using/inbox-rendering.md)
+Para obter mais informações sobre renderização da Caixa de entrada, consulte [esta página](../../delivery/using/inbox-rendering.md)
 
 ![](assets/s_tn_inbox_rendering_tokens.png)
 
@@ -123,29 +123,29 @@ Alguns indicadores ou status podem estar incorretos ou não atualizados, isso po
 
 Você também pode rastrear seus deliveries com relatórios diferentes através do painel de delivery. Para obter mais informações, consulte esta [seção](../../reporting/using/delivery-reports.md).
 
-## Caso de uso: Adicionando endereços IP dos remetentes aos registros {#use-case}
+## Caso de uso: Adição de endereços IP dos remetentes aos logs {#use-case}
 
-Nesta seção, você aprenderá a adicionar aos logs do delivery informações relacionadas ao endereço IP que enviou cada email em um delivery.
+Nesta seção, você verá como adicionar aos logs do delivery informações relacionadas ao endereço IP que enviou cada email em um delivery.
 
 >[!NOTE]
 >
 >Essa modificação é diferente se você estiver usando uma única instância ou instância mid-sourcing. Antes de fazer a modificação, verifique se você está conectado à instância de envio de email.
 
-### Etapa 1: Estender o schema
+### Etapa 1: Estender o esquema
 
-Para adicionar **publicID** em seus logs do delivery, é necessário estender o schema primeiro. Você pode continuar como segue.
+Para adicionar **publicID** em seus logs do delivery, primeiro é necessário estender o esquema. Você pode continuar conforme os passos a seguir.
 
-1. Crie uma extensão de schema, em **[!UICONTROL Administration]** > **[!UICONTROL Configuration]** > **[!UICONTROL Data Schemas]** > **[!UICONTROL New]**.
+1. Crie uma extensão de esquema, em **[!UICONTROL Administration]** > **[!UICONTROL Configuration]** > **[!UICONTROL Data Schemas]** > **[!UICONTROL New]**.
 
-   Para obter mais informações sobre extensões de schema, consulte [esta página](../../configuration/using/extending-a-schema.md).
+   Para obter mais informações sobre extensões de esquema, consulte [esta página](../../configuration/using/extending-a-schema.md).
 
-1. Selecione **[!UICONTROL broadLogRcp]** para estender os logs do delivery do Recipient (nms) e definir uma Namespace personalizada. Neste caso, será &quot;cus&quot;:
+1. Selecione **[!UICONTROL broadLogRcp]** para estender os logs do delivery do recipient (nms) e definir um namespace personalizado. Neste caso, será &quot;cus&quot;:
 
    ![](assets/schema-parameters.png)
 
    >[!NOTE]
    >
-   >Se sua instância estiver no Mid-sourcing, você precisará trabalhar com o schema wideLogMid.
+   >Se sua instância estiver no Mid-sourcing, você precisará trabalhar com o esquema broadLogMid.
 
 1. Adicione o novo campo na sua extensão. Nessa amostra, é necessário substituir:
 
@@ -164,9 +164,9 @@ Para adicionar **publicID** em seus logs do delivery, é necessário estender o 
 
    ![](assets/edit-schema.png)
 
-### Etapa 2: Atualizar estrutura do banco de dados
+### Etapa 2: atualizar estrutura do banco de dados
 
-Quando as modificações forem feitas, será necessário atualizar a estrutura do banco de dados para que ela fique alinhada à descrição lógica.
+Quando as modificações forem feitas, será necessário atualizar a estrutura do banco de dados para que ela esteja alinhada à descrição lógica.
 
 Para fazer isso, siga as etapas abaixo:
 
@@ -180,13 +180,13 @@ Para fazer isso, siga as etapas abaixo:
 
    >[!IMPORTANT]
    >
-   >Sempre verifique se não há outra modificação, exceto a tabela **[!UICONTROL NmsBroadLoGRcp]** (ou a tabela **[!UICONTROL broadLogMid]** se estiver em um ambiente Mid-sourcing). Em caso afirmativo, desmarque outras tabelas.
+   >Verifique sempre se não há outra modificação, exceto a tabela **[!UICONTROL NmsBroadLoGRcp]** (ou a tabela **[!UICONTROL broadLogMid]** se estiver em um ambiente Mid-sourcing). Em caso afirmativo, desmarque as outras tabelas.
 
 1. Clique em **[!UICONTROL Next]** para validar. A seguinte tela é exibida:
 
    ![](assets/update-script.png)
 
-1. Clique em **[!UICONTROL Next]** e em **[!UICONTROL Start]** para atualizar o start da estrutura do banco de dados. A construção de índice está a começar. Essa etapa pode ser longa, dependendo do número de linhas na tabela **[!UICONTROL NmsBroadLogRcp]**.
+1. Clique em **[!UICONTROL Next]** e em **[!UICONTROL Start]** para iniciar a atualização da estrutura do banco de dados. A construção de índice está iniciando. Essa etapa pode ser longa, dependendo do número de linhas na tabela **[!UICONTROL NmsBroadLogRcp]**.
 
    ![](assets/start-database-update.png)
 
@@ -194,9 +194,9 @@ Para fazer isso, siga as etapas abaixo:
 >
 >Depois que a atualização da estrutura física do banco de dados for concluída com êxito, você precisará desconectar e reconectar para que suas modificações sejam consideradas.
 
-### Etapa 3: Validar a modificação
+### Etapa 3: validar a modificação
 
-Para confirmar se tudo funcionou corretamente, é necessário atualizar a tela logs do delivery.
+Para confirmar se tudo funcionou corretamente, é necessário atualizar a tela de logs do delivery.
 
 Para fazer isso, acesse os logs do delivery e adicione a coluna &quot;Identificador IP&quot;.
 
@@ -204,7 +204,7 @@ Para fazer isso, acesse os logs do delivery e adicione a coluna &quot;Identifica
 
 >[!NOTE]
 >
->Para saber como configurar o lista na interface do Campaign Classic, consulte [esta página](../../platform/using/adobe-campaign-workspace.md).
+>Para saber como configurar listas na interface do Campaign Classic, consulte [esta página](../../platform/using/adobe-campaign-workspace.md).
 
 Abaixo está o que você deve ver na guia **[!UICONTROL Delivery]** após as modificações:
 
