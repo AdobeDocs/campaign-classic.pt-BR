@@ -10,7 +10,7 @@ translation-type: tm+mt
 source-git-commit: b1d75ff748bab08b45c55621b63e7565564e113d
 workflow-type: tm+mt
 source-wordcount: '3729'
-ht-degree: 97%
+ht-degree: 98%
 
 ---
 
@@ -23,11 +23,11 @@ Você também pode consultar as [Notas de versão do Adobe Campaign Classic](../
 
 ## Dezembro de 2020 {#dec-2020}
 
-A seção de acompanhamento do delivery foi reorganizada em temas temáticos. [Leia mais](../../delivery/using/about-delivery-monitoring.md)
+A seção de monitoramento do delivery foi reorganizada por tópicos temáticos. [Leia mais](../../delivery/using/about-delivery-monitoring.md)
 
 Foi adicionado um caso de uso sobre como adicionar endereços IP de remetentes aos logs do delivery. [Leia mais](../../delivery/using/delivery-dashboard.md#use-case)
 
-As Perguntas frequentes sobre privacidade foram movidas para [esta seção](../../platform/using/privacy-faq.md).
+As perguntas frequentes sobre privacidade foram movidas para [esta seção](../../platform/using/privacy-faq.md).
 
 Foi adicionado um caso de uso sobre como usar a funcionalidade de Mesclagem de atividade Desduplicação-duplicada. [Leia mais](../../workflow/using/deduplication-merge.md)
 
