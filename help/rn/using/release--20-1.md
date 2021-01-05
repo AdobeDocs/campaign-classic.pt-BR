@@ -10,7 +10,7 @@ translation-type: tm+mt
 source-git-commit: 57093a687534ed1e7f77738ca233d4cc86cf40cf
 workflow-type: tm+mt
 source-wordcount: '1403'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
@@ -23,10 +23,10 @@ _23 de dezembro de 2020_
 
 >[!CAUTION]
 >
->Esta versão é fornecida com um novo protocolo de conexão:  a atualização é obrigatória para o servidor de Campanha e o console do cliente poderem se conectar à Campanha após 21 de março de 2021.
+>Esta versão é fornecida com um novo protocolo de conexão:  a atualização é obrigatória para que o servidor do Campaign e o console do cliente possam se conectar ao Campaign após 21 de março de 2021.
 
 * O protocolo de conexão foi atualizado para seguir o novo mecanismo de autenticação IMS.
-* Correção de um problema de segurança para reforçar a proteção contra problemas de SSRF (Server Side Request Forgery). (NEO-27777)
+* Correção de um problema de segurança para reforçar a proteção contra situações de SSRF (Server Side Request Forgery). (NEO-27777)
 
 
 
@@ -58,7 +58,7 @@ _17 de fevereiro de 2020_
  <tbody> 
   <tr> 
    <td> <p>O Snowflake é um data warehouse de nuvem totalmente gerenciado, criado para dimensionar tanto no nível de armazenamento quanto no nível de computação. Com esse novo conector, o Adobe Campaign agora pode aproveitar o potencial do Snowflake para executar a Segmentação de Big Data. Esse conector está disponível para todos os clientes, inclusive hospedado pela Adobe.</p>
-    <p>Para obter mais informações, consulte a <a href="../../installation/using/configure-fda-snowflake.md">documentação detalhada</a> e o <a href="https://docs.adobe.com/content/help/en/campaign-classic-learn/tutorials/administrating/fda/big-data-segmentation-on-snowflake.html">vídeo tutorial</a>.</p>
+    <p>Para obter mais informações, consulte a <a href="../../installation/using/configure-fda-snowflake.md">documentação detalhada</a> e o <a href="https://docs.adobe.com/content/help/pt-BR/campaign-classic-learn/tutorials/administrating/fda/big-data-segmentation-on-snowflake.html">vídeo tutorial</a>.</p>
    </td> 
   </tr> 
  </tbody> 
