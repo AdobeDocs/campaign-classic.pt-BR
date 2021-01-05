@@ -6,11 +6,11 @@ description: Saiba mais sobre privacidade e consentimento
 audience: platform
 content-type: reference
 topic-tags: starting-with-adobe-campaign
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 6d5dbc16ed6c6e5a2e62ceb522e2ccd64b142825
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2043'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -78,7 +78,7 @@ Ao gerenciar a privacidade, é importante definir quais dados devem ser tratados
 * **Dados pessoais** são informações que podem identificar direta ou indiretamente um indivíduo vivo.
 * **Dados confidenciais pessoais** são informações relacionadas a raça, visão política, crenças religiosas, antecedentes criminais, informações genéticas, dados de saúde, preferência sexual, informações biométricas, bem como participação em uniões comerciais.
 
-Ao integrar o Campaign a outras soluções da Experience Cloud, onde os públicos-alvo podem ser transferidos de um sistema para outro, como o [Adobe Analytics](../../platform/using/adobe-analytics-data-connector.md), o [serviço principal do Audience Manager ou People](../../integrations/using/sharing-audiences-with-adobe-experience-cloud.md), o [Campaign Standard](../../integrations/using/synchronizing-audiences.md) ou outras soluções por meio dos [Conectores CRM](../../platform/using/crm-connectors.md), é necessário ter cuidado extra com a proteção de dados pessoais.
+Ao integrar o Campaign a outras soluções da Experience Cloud, onde os públicos-alvo podem ser transferidos de um sistema para outro, como o [Adobe Analytics](../../platform/using/adobe-analytics-data-connector.md), o [serviço principal do Audience Manager ou People](../../integrations/using/sharing-audiences-with-adobe-experience-cloud.md), o [Campaign Standard](../../integrations/using/synchronizing-audiences.md) ou outras soluções por meio dos [Conectores de CRM](../../platform/using/crm-connectors.md), é necessário ter cuidado extra com a proteção de dados pessoais.
 
 As [principais legislações](#privacy-regulations) referem-se às diferentes entidades que gerenciam os dados da seguinte forma:
 * Um **Controlador de dados** é a autoridade que determina os meios e a finalidade de coleta, utilização e compartilhamento de dados pessoais.
@@ -161,10 +161,10 @@ As etapas de implementação para criar essas solicitações estão detalhadas n
 
 Graças às suas funcionalidades de rastreamento, o Adobe Campaign permite rastrear a navegação de recipients de delivery usando três tipos de cookies: um cookie de sessão e dois cookies permanentes.
 
-* Um cookie **session**: o cookie **nlid** contém o identificador do email enviado ao contato (**BroadlogId**) e o identificador do modelo de mensagem (**deliveryId**). Ele é adicionado quando o contato clica em um URL incluído em um email enviado pelo Adobe Campaign e permite que você acompanhe seu comportamento na Web. Esse cookie de sessão é apagado automaticamente quando o navegador é fechado. O contato pode configurar o navegador para recusar cookies.
+* Um cookie de **sessão**: o cookie **nlid** contém o identificador do email enviado ao contato (**broadlogId**) e ao identificador do modelo de mensagem (**deliveryId**). Ele é adicionado quando o contato clica em um URL incluído em um email enviado pelo Adobe Campaign e permite que você acompanhe seu comportamento na Web. Esse cookie de sessão é apagado automaticamente quando o navegador é fechado. O contato pode configurar o navegador para recusar cookies.
 
 * Dois cookies **permanentes**:
-   * O cookie **UUID** (Universal Unique IDentifier) é compartilhado entre as soluções da Adobe Experience Cloud. É definido uma vez até que desapareça do navegador do cliente quando um novo valor é gerado. Este cookie identifica os usuários que interagem com as soluções da Experience Cloud quando visitam um site. Ele pode ser depositado por uma landing page (para associar atividades desconhecidas do cliente a um recipient) ou por um delivery. A descrição deste cookie está disponível em [esta página](https://experienceleague.adobe.com/docs/core-services/interface/ec-cookies/cookies-mc.html?lang=en#ec-cookies).
+   * O cookie **UUID** (Universal Unique IDentifier) é compartilhado entre as soluções da Adobe Experience Cloud. É definido uma vez até que desapareça do navegador do cliente quando um novo valor é gerado. Este cookie identifica os usuários que interagem com as soluções da Experience Cloud quando visitam um site. Ele pode ser depositado por uma landing page (para associar atividades desconhecidas do cliente a um recipient) ou por um delivery. A descrição deste cookie está disponível [nesta página](https://experienceleague.adobe.com/docs/core-services/interface/ec-cookies/cookies-mc.html?lang=pt-BR#ec-cookies).
    * O cookie **nllastdelid** (introduzido no Campaign Classic 20.3) é um cookie permanente que contém o **deliveryId** do último delivery do qual o usuário clicou no link. Esse cookie é usado quando o cookie da sessão está ausente, para identificar a tabela de rastreamento que será usada.
 
 Regulamentos como o Regulamento Geral sobre a Proteção de Dados (GDPR) afirmam que as empresas exigem o acordo dos usuários do site antes da instalação de qualquer cookie.
