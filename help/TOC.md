@@ -12,7 +12,7 @@ translation-type: tm+mt
 source-git-commit: c55897a4daf184b886d4e626d9216a4d43581ea1
 workflow-type: tm+mt
 source-wordcount: '2181'
-ht-degree: 98%
+ht-degree: 99%
 
 ---
 
@@ -156,9 +156,9 @@ ht-degree: 98%
       + [Marketing viral e social](delivery/using/viral-and-social-marketing.md)
    + Monitoramento de deliveries {#monitoring-deliveries}
       + [Introdução ao monitoramento de delivery](delivery/using/about-delivery-monitoring.md)
-      + [Acessando a lista de deliveries](delivery/using/list-of-deliveries.md)
+      + [Acesso à lista de deliveries](delivery/using/list-of-deliveries.md)
       + [Painel de delivery](delivery/using/delivery-dashboard.md)
-      + [Práticas recomendadas de desempenho do delivery](delivery/using/delivery-performances.md)
+      + [Práticas recomendadas de desempenho de delivery](delivery/using/delivery-performances.md)
       + [Solução de problemas de delivery](delivery/using/delivery-troubleshooting.md)
       + [Status de delivery](delivery/using/delivery-statuses.md)
       + [Noções básicas sobre falhas de delivery](delivery/using/understanding-delivery-failures.md)
