@@ -7,7 +7,7 @@ audience: workflow
 content-type: reference
 topic-tags: flow-control-activities
 translation-type: tm+mt
-source-git-commit: 3eecc16442a11849c12819cf83392f60c5b82a13
+source-git-commit: d35b22386bd2681ba02e4379c627821b35a7d04e
 workflow-type: tm+mt
 source-wordcount: '207'
 ht-degree: 16%
@@ -26,7 +26,7 @@ Por exemplo, você pode usar a atividade depois de um query para executar duas a
 
 Você também pode usar a atividade no contexto da criação de conteúdo e da automação de envio de delivery, para iniciar o cálculo de públicos alvos e a criação de conteúdo em paralelo. Um caso de uso específico está disponível [nesta seção](../../delivery/using/automating-via-workflows.md#creating-the-delivery-and-its-content).
 
->[!WARNING]
+>[!IMPORTANT]
 >
 >Lembre-se de que as transições de saída adicionadas após uma atividade de bifurcação não serão executadas simultaneamente.
 >
