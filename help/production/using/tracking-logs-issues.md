@@ -7,7 +7,7 @@ audience: production
 content-type: reference
 topic-tags: troubleshooting
 translation-type: tm+mt
-source-git-commit: 50f95d7156e7104d90fa7a31eea30711b9c11bbf
+source-git-commit: f24642223a2ec9f3d8e78e2f7e71a55bf14b80c7
 workflow-type: tm+mt
 source-wordcount: '69'
 ht-degree: 13%
@@ -21,14 +21,14 @@ Pode haver vários motivos para logs de rastreamento não serem encaminhados. Re
 
 * **O fluxo de trabalho do****rastreamento apresenta erros?**
 
-Consulte [workflows técnicos de monitoramento](../../workflow/using/monitoring-technical-workflows.md).
+   Consulte [workflows técnicos de monitoramento](../../workflow/using/monitoring-technical-workflows.md).
 
-![](assets/tracking_scheduled_task.png)
+   ![](assets/tracking_scheduled_task.png)
 
 * **O módulo****trackinglogdroning está no servidor?**
 
-Consulte [Arquivos de registro](../../production/using/log-files.md).
+   Consulte [Arquivos de registro](../../production/using/log-files.md).
 
 * **Foram feitas mudanças?**
 
-Eles podem acionar uma perda de conexão com os servidores usando o alias de rastreamento.
+   Eles podem acionar uma perda de conexão com os servidores usando o alias de rastreamento.
