@@ -6,36 +6,29 @@ description: Saiba mais sobre o Gerenciamento de privacidade
 audience: platform
 content-type: reference
 topic-tags: starting-with-adobe-campaign
-translation-type: ht
-source-git-commit: 8ff5450cc35153e61048c2671f6d52fbc5ffc5b9
-workflow-type: ht
-source-wordcount: '891'
-ht-degree: 100%
+translation-type: tm+mt
+source-git-commit: c86b2d377c66e79cf4f10053f588796b95e6877e
+workflow-type: tm+mt
+source-wordcount: '887'
+ht-degree: 97%
 
 ---
 
 
 # Gerenciamento de privacidade {#privacy-management}
 
-O Adobe Campaign oferece um conjunto de ferramentas para ajudar você a cumprir as [regras de privacidade](#privacy-management-regulations) (inclusive GDPR, CCPA, PDPA, LGPD).
+O Adobe Campaign oferece um conjunto de ferramentas para ajudar você a cumprir as [regras de privacidade](#privacy-management-regulations) (incluindo GDPR, CCPA, PDPA, LGPD).
 
-Estes são os cinco principais recursos oferecidos pelo Adobe Campaign para garantir a conformidade com o GDPR e outras regulamentações de privacidade:
+Estes são os cinco principais recursos oferecidos pelo Adobe Campaign para garantir a conformidade com o GDPR e outras regras de privacidade:
+* **Direito de acesso**
+* **Direito de exclusão**
+* **Gerenciamento de consentimento**
+* **Retenção de dados**
+* **Gerenciamento de direitos**
 
 ![](assets/privacy-gdpr-use-cases.png)
 
-* **Direito de acesso**
-
-* **Direito à exclusão**
-
-Para obter mais informações, consulte [Direito de acesso e direito ao esquecimento](#right-access-forgotten).
-
-* **Gestão do consentimento** 
-
-* **Retenção de dados**
-
-* **Gerenciamento de direitos**
-
-Para obter mais informações, consulte [Consentimento, Retenção e Funções](#consent-retention-roles).
+Para obter mais informações, consulte [Direito de acesso e direito de ser esquecido](#right-access-forgotten) e [Consentimento, Retenção e Funções](#consent-retention-roles).
 
 <!--This section presents general information on what Privacy management is and the features provided by Adobe Campaign to manage the [Right to Access and Right to be Forgotten](#right-access-forgotten).
 
