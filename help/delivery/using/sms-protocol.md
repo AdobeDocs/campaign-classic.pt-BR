@@ -7,7 +7,7 @@ audience: delivery
 content-type: reference
 topic-tags: configuring-channels
 translation-type: tm+mt
-source-git-commit: 09a79330e1ff951898d1559d5765818c12dc497a
+source-git-commit: 9a104fdc7bed89f56178d5ab638e1440e6342efc
 workflow-type: tm+mt
 source-wordcount: '8424'
 ht-degree: 0%
@@ -102,7 +102,7 @@ No modo separado **Transmissor+receptor**, a conexão usada depende do tipo de m
 
 Por exemplo, ao enviar um MT, a conexão do transmissor é usada e o `RESP` que reconhece o MT também é enviado pelo canal do transmissor. Quando você recebe um MO (ou um SR), a conexão do receptor é usada para receber o MO e para enviar o `RESP` que reconhece o MO.
 
-![](assets/sms_protocol_1.png)
+![](assets/do-not-localize/sms_protocol_1.png)
 
 No Adobe Campaign Classic, para vincular o SR ao seu MT correspondente, uma ID é retornada pelo SMSC com as etapas `SUBMIT_SM_RESP` e `DELIVER_SM`. O identificador é armazenado no campo `providerId` da tabela `nms::providerMsgId` e está vinculado a `broadLogId` e `deliveryId`. Essa operação correspondente é realizada pelo processo SMS ao gravar no banco de dados.
 
@@ -505,7 +505,7 @@ A janela é o número de `SUBMIT_SM PDU`s que podem ser enviados sem esperar por
 
 Exemplo de uma transmissão com uma janela máxima de 4:
 
-![](assets/sms_protocol_2.png)
+![](assets/do-not-localize/sms_protocol_2.png)
 
 A janela ajuda a aumentar a throughput quando o link da rede tem uma latência alta.  O valor da janela deve ser pelo menos o número de SMS/s multiplicado pela latência do link
 em segundos, para que o conector nunca aguarde `SUBMIT_SM_RESP` antes de enviar a próxima mensagem.
@@ -772,7 +772,7 @@ O período de validade é transmitido no campo `validity_period` de `SUBMIT_SM P
 
 ## Conector SMPP genérico estendido {#acc-extended-connector}
 
-![](assets/sms_protocol_4.png)
+![](assets/do-not-localize/sms_protocol_4.png)
 
 As setas representam fluxos de dados.
 
