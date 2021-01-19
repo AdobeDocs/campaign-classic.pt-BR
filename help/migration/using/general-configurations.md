@@ -7,9 +7,9 @@ audience: migration
 content-type: reference
 topic-tags: configuration
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: 43037b2b6b4e3b42f4b666d85a664b9fb117a015
 workflow-type: tm+mt
-source-wordcount: '2820'
+source-wordcount: '2786'
 ht-degree: 0%
 
 ---
@@ -616,11 +616,11 @@ Todos os relatórios padrão usam atualmente o mecanismo de renderização v6.x.
 
 ### Relatórios personalizados {#personalized-reports}
 
-Se você quiser ter o banner azul da v7 (permitindo o acesso aos universos), é necessário republicar os relatórios. Se encontrar problemas, você pode forçar o mecanismo de renderização v6.0. Para fazer isso, vá para **[!UICONTROL Properties]** no relatório, clique em **[!UICONTROL Rendering]** e escolha o mecanismo de renderização **[!UICONTROL Version 6.0 (Flash & OpenOffice)]**.
+<!--If you want to have the blue banner from v7 (allowing you access to the universes), you must republish reports. If you encounter problems, you can force the v6.0 rendering engine. To do this, go to **[!UICONTROL Properties]** within the report, click **[!UICONTROL Rendering]** and choose the **[!UICONTROL Version 6.0 (Flash & OpenOffice)]** rendering engine.
 
 ![](assets/migration_reports_1.png)
-
-Se desejar se beneficiar das novas funcionalidades do relatório, selecione o mecanismo de renderização v.6.x. Nesse caso, verifique todos os scripts e altere-os, se necessário. Em relação à exportação de PDF, se você tiver adicionado um script específico para o OpenOffice, isso não funcionará mais com o novo mecanismo de exportação de PDF (PhantomJS).
+-->
+Se você deseja se beneficiar das novas funcionalidades do relatório, é necessário republicar os relatórios. Para fazer isso, edite o relatório **[!UICONTROL Properties]**, clique em **[!UICONTROL Rendering]** e selecione o mecanismo de renderização v.6.x. Nesse caso, verifique todos os scripts e altere-os, se necessário. Em relação à exportação de PDF, se você tiver adicionado um script específico para o Open Office, isso não funcionará mais com o novo mecanismo de exportação de PDF (PhantomJS).
 
 ## Aplicações web {#web-applications}
 
