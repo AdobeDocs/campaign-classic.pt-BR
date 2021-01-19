@@ -6,9 +6,9 @@ description: Carregamento (SOAP)
 audience: workflow
 content-type: reference
 topic-tags: action-activities
-translation-type: ht
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
-workflow-type: ht
+translation-type: tm+mt
+source-git-commit: ba460d8347c987291681641a1be208027acf1d2f
+workflow-type: tm+mt
 source-wordcount: '251'
 ht-degree: 100%
 
@@ -43,7 +43,7 @@ A operação é como descrita a seguir:
 
    Se desejar atualizar o exemplo, selecione **[!UICONTROL Re-analyze the example]**.
 
-   Você também pode personalizar o formato dos dados da coluna por meio do link **[!UICONTROL Advanced parameters]**. Para obter mais informações sobre a formatação de dados importados, consulte esta [seção](../../platform/using/importing-data.md#import-wizard).
+   Você também pode personalizar o formato dos dados da coluna por meio do link **[!UICONTROL Advanced parameters]**. Para obter mais informações sobre a formatação de dados importados, consulte esta [seção](../../platform/using/executing-import-jobs.md).
 
 1. Você pode usar o número de linha como um identificador e/ou especificar que a chamada SOAP retorna vários elementos.
 1. Insira os seguintes scripts de guia de acordo com sua função:
