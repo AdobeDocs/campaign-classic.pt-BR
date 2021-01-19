@@ -6,9 +6,9 @@ description: Sobre seed addresses
 audience: delivery
 content-type: reference
 topic-tags: using-seed-addresses
-translation-type: ht
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
-workflow-type: ht
+translation-type: tm+mt
+source-git-commit: ba460d8347c987291681641a1be208027acf1d2f
+workflow-type: tm+mt
 source-wordcount: '376'
 ht-degree: 100%
 
@@ -46,7 +46,8 @@ Para deliveries de mala direta, os seed addresses são adicionados durante a ext
 >Para deliveries de mala direta, o formato do arquivo de extração deve estar em conformidade com as seguintes limitações:
 >
 >* Não deve usar a opção **[!UICONTROL Handle groupings (GROUP BY+HAVING)]**.
->* Se as coleções de elemento forem extraídas, esses campos têm um valor vazio para os seed addresses, a menos que a opção **[!UICONTROL Single row (expert user)]** esteja selecionada. Para obter mais informações, consulte [esta seção](../../platform/using/exporting-data.md#step-7---data-formatting).
+>* Se as coleções de elemento forem extraídas, esses campos têm um valor vazio para os seed addresses, a menos que a opção **[!UICONTROL Single row (expert user)]** esteja selecionada. Para obter mais informações, consulte [esta seção](../../platform/using/executing-export-jobs.md#step-7---data-formatting).
+
 >
 
 
