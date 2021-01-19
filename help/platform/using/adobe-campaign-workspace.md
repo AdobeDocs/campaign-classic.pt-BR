@@ -7,10 +7,10 @@ audience: platform
 content-type: reference
 topic-tags: starting-with-adobe-campaign
 translation-type: tm+mt
-source-git-commit: cea4a26935312b1cb119a3fa671af7bf00788fe9
+source-git-commit: ba460d8347c987291681641a1be208027acf1d2f
 workflow-type: tm+mt
 source-wordcount: '2157'
-ht-degree: 98%
+ht-degree: 99%
 
 ---
 
@@ -291,7 +291,7 @@ Clique em **[!UICONTROL Save]** na janela de propriedades da pasta. A lista de e
 
 Para exportar dados de uma lista, você deve usar um assistente de exportação. Para acessá-lo, selecione os elementos a serem exportados da lista, clique com o botão direito do mouse e selecione **[!UICONTROL Export...]**.
 
-A utilização das funções de importação e exportação é explicada em [Importações e exportações genéricas](../../platform/using/generic-imports-and-exports.md).
+A utilização das funções de importação e exportação é explicada em [Importações e exportações genéricas](../../platform/using/about-generic-imports-exports.md).
 
 >[!CAUTION]
 >
@@ -396,4 +396,4 @@ Este vídeo apresenta a área de trabalho do Campaign Classic.
 
 >[!VIDEO](https://video.tv.adobe.com/v/35130?quality=12)
 
-Vídeos de instruções adicionais do Campaign Classic estão disponíveis [aqui](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html).
+Vídeos extras sobre procedimentos do Campaign Classic estão disponíveis [aqui](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html?lang=pt-BR).
