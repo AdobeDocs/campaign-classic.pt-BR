@@ -6,9 +6,9 @@ description: Cupons personalizados
 audience: delivery
 content-type: reference
 topic-tags: personalizing-deliveries
-translation-type: ht
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
-workflow-type: ht
+translation-type: tm+mt
+source-git-commit: 1cde12d33551206da12e03a7e8deb198d427ab3a
+workflow-type: tm+mt
 source-wordcount: '877'
 ht-degree: 100%
 
@@ -23,7 +23,7 @@ A adição de cupons aos seus deliveries pode oferecer aos recipients valor apri
 >
 >A gestão de cupons é um pacote que deve ser instalado. Para confirmar se há um gerenciamento de cupom, verifique **[!UICONTROL Administration > Configuration > Package management > Installed packages.]**
 >
->Os dados de cupom podem ser importados e exportados usando formatos CSV e XML. Para obter detalhes sobre a importação e exportação, consulte [esta seção](../../platform/using/generic-imports-and-exports.md).
+>Os dados de cupom podem ser importados e exportados usando formatos CSV e XML. Para obter detalhes sobre a importação e exportação, consulte [esta seção](../../platform/using/get-started-data-import-export.md).
 
 ## Criação de um cupom {#creating-a-coupon}
 
@@ -58,7 +58,7 @@ Antes de seguir as etapas abaixo, verifique se você sabe o tipo de cupom que de
 
    >[!NOTE]
    >
-   >Os cupons individuais podem ser importados em massa. Para obter detalhes sobre a importação e exportação, consulte [esta seção](../../platform/using/generic-imports-and-exports.md).
+   >Os cupons individuais podem ser importados em massa. Para obter detalhes sobre a importação e exportação, consulte [esta seção](../../platform/using/get-started-data-import-export.md).
 
 ### Configuração de cupons individuais {#configuring-individual-coupons}
 
