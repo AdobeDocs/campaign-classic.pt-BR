@@ -6,9 +6,9 @@ description: Saiba mais sobre a atividade de workflow de carregamento de dados (
 audience: workflow
 content-type: reference
 topic-tags: action-activities
-translation-type: ht
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
-workflow-type: ht
+translation-type: tm+mt
+source-git-commit: ba460d8347c987291681641a1be208027acf1d2f
+workflow-type: tm+mt
 source-wordcount: '1052'
 ht-degree: 100%
 
@@ -35,7 +35,7 @@ Você pode definir um pré-processamento a ser executado durante a importação 
 
 ![](assets/preprocessing-dataloading.png)
 
-Para mais informações, consulte esta seção: [Descompactar ou descriptografar um arquivo antes do processamento](../../workflow/using/importing-data.md#unzipping-or-decrypting-a-file-before-processing).
+Para mais informações, consulte esta seção: [Descompactar ou descriptografar um arquivo antes do processamento](../../platform/using/unzip-decrypt.md).
 
 ## Definição do formato de arquivo {#defining-the-file-format}
 
@@ -113,7 +113,7 @@ O exemplo a seguir permite coletar um arquivo no servidor todos os dias, carrega
    * a primeira coluna contém um código que coincide com o evento: compra (cerca de 3.000 euros), nenhuma compra ou reembolso em uma ou mais compras.
    * as quatro colunas seguintes contêm o nome, sobrenome, email e número da conta do cliente.
 
-   A configuração de formato do arquivo a ser carregado coincide com aquela definida durante uma importação de dados no Adobe Campaign. Para obter mais informações, consulte esta [seção](../../platform/using/importing-data.md#step-2---source-file-selection).
+   A configuração de formato do arquivo a ser carregado coincide com aquela definida durante uma importação de dados no Adobe Campaign. Para obter mais informações, consulte esta [seção](../../platform/using/executing-import-jobs.md#step-2---source-file-selection).
 
 1. Na atividade de Split, especifique os subconjuntos a serem criados, de acordo com o valor da coluna **Evento**.
 
