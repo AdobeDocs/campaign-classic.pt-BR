@@ -6,10 +6,10 @@ description: Sobre atividades
 audience: workflow
 content-type: reference
 topic-tags: introduction
-translation-type: ht
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
-workflow-type: ht
-source-wordcount: '96'
+translation-type: tm+mt
+source-git-commit: 1cde12d33551206da12e03a7e8deb198d427ab3a
+workflow-type: tm+mt
+source-wordcount: '94'
 ht-degree: 100%
 
 ---
@@ -28,6 +28,5 @@ Nos workflows da campanha, a guia **[!UICONTROL Events]** é substituída pela g
 Leia mais:
 
 * [Sobre as atividades de direcionamento](../../workflow/using/about-targeting-activities.md)
-* [Importação de dados](../../workflow/using/importing-data.md)
 * [Execução de um fluxo de trabalho](../../workflow/using/starting-a-workflow.md)
 * [Práticas recomendadas do fluxo de trabalho](../../workflow/using/workflow-best-practices.md)
