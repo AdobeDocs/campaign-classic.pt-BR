@@ -7,10 +7,10 @@ audience: platform
 content-type: reference
 topic-tags: administration-basics
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: 4efe5f8a9130e7925194e56e088b3745c0cbd11a
 workflow-type: tm+mt
-source-wordcount: '1675'
-ht-degree: 91%
+source-wordcount: '1525'
+ht-degree: 89%
 
 ---
 
@@ -34,7 +34,6 @@ Você pode configurar os seguintes tipos de contas externas:
 * [Conta externa do Adobe Experience Manager.](#adobe-experience-manager-external-account)
 * [Conta externa do Serviço de Armazenamento Simples da Amazon (S3)](#amazon-simple-storage-service--s3--external-account)
 * [Conta externa do Microsoft Dynamics CRM](#microsoft-dynamics-crm-external-account)
-* [Conta externa da Oracle On Demand](#oracle-on-demand-external-account)
 * [Conta externa do Salesforce CRM](#salesforce-crm-external-account)
 
 ## Criação de uma conta externa {#creating-an-external-account}
@@ -331,35 +330,11 @@ Para saber onde encontrar a ID da chave de acesso e a chave de acesso secreta, c
 
 A conta externa **[!UICONTROL Microsoft Dynamics CRM]** permite importar e exportar os dados do Microsoft Dynamics para o Adobe Campaign.
 
-A configuração do conector do Microsoft Dynamics para trabalhar com o Adobe Campaign depende do tipo de implantação.
-Com os tipos de implantação **[!UICONTROL On-premise]** e **[!UICONTROL Office 365]**, é necessário fornecer os seguintes detalhes:
+Saiba mais sobre a Campanha - conector do Microsoft Dynamics CRM nesta [página](../../platform/using/crm-ms-dynamics.md).
 
-![](assets/ext_account_21.png)
-
-* **[!UICONTROL Account]**
-
-   Conta usada para entrar no Microsoft CRM.
-
-* **[!UICONTROL Server]**
-
-   A URL do servidor Microsoft CRM.
-
-* **[!UICONTROL Password]**
-
-   Senha usada para entrar no Microsoft CRM.
-
-* **[!UICONTROL Company name]** para implantação no local e no Office 365
-
-   Nome da sua empresa.
-
-* **[!UICONTROL Organization name]** para implantação no local
-
-   Nome da sua organização.
-Nome da organização que pode ser encontrado no painel de recursos de desenvolvedores no campo **[!UICONTROL Unique Name]** do Microsoft Dynamics.
-
-* **[!UICONTROL CRM version]** no local
-
-   Versão da CRM entre **[!UICONTROL Dynamics CRM 2007]**, **[!UICONTROL Dynamics CRM 2015]** ou **[!UICONTROL Dynamics CRM 2016]**.
+>[!NOTE]
+>
+> **[!UICONTROL On-premise]** e os tipos  **[!UICONTROL Office 365]** de implantação agora estão obsoletos. [Saiba mais](../../rn/using/deprecated-features.md).
 
 Com o tipo de implantação **[!UICONTROL Web API]** e autenticação **[!UICONTROL Password credentials]**, é necessário fornecer os seguintes detalhes:
 
@@ -405,29 +380,7 @@ Com o tipo de implantação **[!UICONTROL Web API]** e autenticação **[!UICONT
 
    Versão da CRM entre **[!UICONTROL Dynamics CRM 2007]**, **[!UICONTROL Dynamics CRM 2015]** ou **[!UICONTROL Dynamics CRM 2016]**.
 
-Para obter mais informações sobre essa configuração, consulte esta [página](../../platform/using/crm-connectors.md#example-for-microsoft-dynamics).
-
-## Conta externa da Oracle On Demand {#oracle-on-demand-external-account}
-
-A conta externa do **[!UICONTROL Oracle on demand]** permite importar e exportar dados Oracle para o Adobe Campaign.
-
-![](assets/ext_account_18.png)
-
-Para configurar a conta externa do Oracle On Demand para funcionar com o Adobe Campaign, forneça os seguintes detalhes:
-
-* **[!UICONTROL Account]**
-
-   Conta usada para entrar no Oracle CRM On Demand.
-
-* **[!UICONTROL Server]**
-
-   URL do seu servidor Oracle CRM On Demand.
-
-* **[!UICONTROL Password]**
-
-   A senha usada para entrar no Oracle CRM On Demand.
-
-Para obter mais informações sobre essa configuração, consulte esta [página](../../platform/using/crm-connectors.md#example-for-oracle-on-demand).
+Para obter mais informações sobre essa configuração, consulte esta [página](../../platform/using/crm-connectors.md).
 
 ## Conta externa do Salesforce CRM {#salesforce-crm-external-account}
 
@@ -459,4 +412,4 @@ Para configurar a conta externa do Salesforce CRM para funcionar com o Adobe Cam
 
 Para essa conta externa, você precisa configurar o Salesforce CRM com o assistente de configuração.
 
-Para obter mais informações sobre essa configuração, consulte esta [página](../../platform/using/crm-connectors.md#example-for-salesforce-com).
+Para obter mais informações sobre essa configuração, consulte esta [página](../../platform/using/crm-connectors.md).
