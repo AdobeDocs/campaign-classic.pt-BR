@@ -6,11 +6,11 @@ description: Saiba mais sobre as configurações de propriedades do relatório
 audience: reporting
 content-type: reference
 topic-tags: creating-new-reports
-translation-type: ht
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
-workflow-type: ht
-source-wordcount: '458'
-ht-degree: 100%
+translation-type: tm+mt
+source-git-commit: 43037b2b6b4e3b42f4b666d85a664b9fb117a015
+workflow-type: tm+mt
+source-wordcount: '441'
+ht-degree: 97%
 
 ---
 
@@ -70,7 +70,7 @@ O idioma de edição é o idioma escrito. Quando adicionar um idioma, a subguia 
 
 Na guia **[!UICONTROL Rendering]**, é possível personalizar o modo de exibição de dados da página. É possível selecionar:
 
-* Mecanismo de renderização de gráfico: o Adobe Campaign oferece dois modos diferentes para realizar a renderização do gráfico. Por padrão, o mecanismo de renderização é HTML 5. Se necessário, é possível selecionar renderização Flash.
+* O mecanismo de renderização do gráfico: por padrão, o mecanismo de renderização é HTML 5.
 * O tipo de navegação no relatório: por botões ou links.
 * A posição padrão dos rótulos para elementos do relatório. Essa posição pode ser sobrescrita em cada elemento.
 * O template ou tema usado para gerar páginas de relatório.
