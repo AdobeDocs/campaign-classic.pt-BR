@@ -7,10 +7,10 @@ audience: rns
 content-type: reference
 topic-tags: latest-documentation-updates
 translation-type: tm+mt
-source-git-commit: 88172a79aad37e6a311b144f4ea685bb4846825b
+source-git-commit: 759346587e3ce98c408a0a17218341118dbceb82
 workflow-type: tm+mt
-source-wordcount: '3814'
-ht-degree: 96%
+source-wordcount: '3869'
+ht-degree: 94%
 
 ---
 
@@ -19,31 +19,39 @@ ht-degree: 96%
 
 Esta página lista todos os novos recursos e atualizações de documentação por mês e versão do Campaign.
 
-Você também pode consultar as [Notas de versão do Adobe Campaign Classic](../../rn/using/latest-release.md) para obter mais atualizações.
+Consulte as [Notas de versão da Adobe Campaign Classic](../../rn/using/latest-release.md) para ver as atualizações relacionadas à versão.
 
-## Janeiro de 2021 {#jan,2021}
+## Janeiro de 2021 {#jan-2021}
 
-A seção de atividade **[!UICONTROL Fork]** foi aprimorada com informações adicionais. Uma nota foi adicionada para especificar que as transições de saída não são executadas simultaneamente e que, portanto, a atividade não deve ser usada para melhorar o desempenho dos workflows. [Leia mais](../../workflow/using/fork.md)
+A seção de atividade **[!UICONTROL Fork]** foi aprimorada com as práticas recomendadas. [Leia mais](../../workflow/using/fork.md)
 
-A seção Localizando versão Tomcat foi movida [aqui](../../production/using/locate-tomcat-version.md).
+A seção **CRM Connectors** foi atualizada, melhorada e reorganizada. [Leia mais](../../platform/using/crm-connectors.md).
 
-A lista de workflows técnicos com seus pacotes associados foi reorganizada em uma única página. [Leia mais](../../workflow/using/about-technical-workflows.md)
+As etapas para conectar **Adobe Campaign e Microsoft Dynamics** agora estão detalhadas em uma página dedicada. [Leia mais](../../platform/using/crm-ms-dynamics.md).
 
-A seção Solução de problemas do guia de Monitoramento foi reorganizada e aprimorada com uma landing page. [Leia mais](../../production/using/troubleshooting.md).
+A oracle On Demand API agora está obsoleta como um CRM conectado à Campanha. [Leia mais](../../rn/using/deprecated-features.md).
+
+Saiba como descobrir a versão atual do servlet Web Tomcat incorporado usado em uma instância do Adobe Campaign [here](../../production/using/locate-tomcat-version.md).
+
+A lista de workflows técnicos com seus pacotes associados foi aprimorada e centralizada em uma única página. [Leia mais](../../workflow/using/about-technical-workflows.md)
+
+A seção de solução de problemas do guia **Monitoring** foi reorganizada e aprimorada com uma landing page. [Leia mais](../../production/using/troubleshooting.md).
+
+Uma nova seção **Importar e exportar dados** está disponível com novas páginas relacionadas a workflows, compactação de dados, criptografia e práticas recomendadas de importação. [Leia mais](../../platform/using/get-started-data-import-export.md)
 
 ## Dezembro de 2020 {#dec-2020}
 
-A seção de monitoramento do delivery foi reorganizada por tópicos temáticos. [Leia mais](../../delivery/using/about-delivery-monitoring.md)
+A seção **Monitorização de Delivery** foi reorganizada em tópicos temáticos. [Leia mais](../../delivery/using/about-delivery-monitoring.md)
 
 Foi adicionado um caso de uso sobre como adicionar endereços IP de remetentes aos logs do delivery. [Leia mais](../../delivery/using/delivery-dashboard.md#use-case)
 
 As perguntas frequentes sobre privacidade foram movidas para [esta seção](../../platform/using/privacy-faq.md).
 
-Foi adicionado um caso de uso sobre como usar a funcionalidade de Mesclagem de atividade Desduplicação-duplicada. [Leia mais](../../workflow/using/deduplication-merge.md)
+Foi adicionado um caso de uso sobre como usar a funcionalidade de mesclagem de **[!UICONTROL Deduplication]** atividade. [Leia mais](../../workflow/using/deduplication-merge.md)
 
-O protocolo e a página de configurações do conector SMS foram movidos [aqui](../../delivery/using/sms-protocol.md).
+A descrição completa do protocolo e da página de configurações do conector SMS agora está disponível [aqui](../../delivery/using/sms-protocol.md).
 
-Uma observação foi adicionada à seção Mensagens transacionais para avisar que as pastas do evento não devem ser definidas como visualizações no instância de execução, para evitar problemas de direito de acesso. [Leia mais](../../message-center/using/event-collection.md)
+Uma observação foi adicionada à seção **Mensagens transacionais** para avisar que as pastas do evento não devem ser definidas como visualizações no instância de execução, para evitar problemas de direito de acesso. [Leia mais](../../message-center/using/event-collection.md)
 
 ## Novembro de 2020 {#nov-2020}
 
@@ -173,7 +181,7 @@ As práticas recomendadas foram adicionadas na seção atividade de **[!UICONTRO
 
 A seção Remoção de um endereço em quarentena foi atualizada. Ela esclarece os casos em que os endereços são removidos automaticamente da lista de quarentena. [Leia mais](../../delivery/using/understanding-quarantine-management.md#removing-a-quarantined-address)
 
-Casos de uso foram adicionados em como [criptografar](../../workflow/using/how-to-use-workflow-data.md#use-case-gpg-encrypt) e [descriptografar](../../workflow/using/importing-data.md#use-case-gpg-decrypt) dados usando o Painel de controle do Campaign e workflows do Campaign.
+Casos de uso foram adicionados em como [criptografar](../../platform/using/zip-encrypt.md) e [descriptografar](../../platform/using/unzip-decrypt.md) dados usando o Painel de controle do Campaign e workflows do Campaign.
 
 Os acionadores da Experience Cloud e a página de integração do Adobe Campaign Classic foram movidos [para cá](../../integrations/using/about-triggers.md).
 
