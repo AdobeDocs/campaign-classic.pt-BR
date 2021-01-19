@@ -6,9 +6,9 @@ description: Definição do conteúdo de correio direto
 audience: delivery
 content-type: reference
 topic-tags: sending-direct-mail
-translation-type: ht
-source-git-commit: c625b4109e2cb47446331cd009ff9827c8267c93
-workflow-type: ht
+translation-type: tm+mt
+source-git-commit: ba460d8347c987291681641a1be208027acf1d2f
+workflow-type: tm+mt
 source-wordcount: '164'
 ht-degree: 100%
 
@@ -37,4 +37,4 @@ Esse link permite que você acesse o assistente de extração e defina as inform
 
 >[!NOTE]
 >
->Este assistente inclui as etapas do assistente de exportação detalhado na seção [Introdução](../../platform/using/exporting-data.md#export-wizard).
+>Este assistente inclui as etapas do assistente de exportação detalhado na seção [Introdução](../../platform/using/executing-export-jobs.md).
