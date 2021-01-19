@@ -6,9 +6,9 @@ description: Criação da lista de resumo
 audience: workflow
 content-type: reference
 topic-tags: use-cases
-translation-type: ht
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
-workflow-type: ht
+translation-type: tm+mt
+source-git-commit: bb7e3ce726e2c589c033686cf3ab2960de140d91
+workflow-type: tm+mt
 source-wordcount: '974'
 ht-degree: 100%
 
@@ -61,7 +61,7 @@ Esses dados estão contidos em um arquivo de texto &quot;Purchases.txt&quot;.
 
    A atividade **Data loading (file)** permite enriquecer a tabela de trabalho do workflow com os dados coletados.
 
-   Para obter mais informações sobre essa atividade, consulte [Carregar dados de um arquivo](../../workflow/using/importing-data.md#loading-data-from-a-file).
+   Para obter mais informações sobre essa atividade, consulte [Carregar dados de um arquivo](../../platform/using/import-export-workflows.md#loading-data-from-a-file).
 
 1. Configure a atividade **File collector** para coletar arquivos de tipo de texto (*.txt) do diretório selecionado.
 
