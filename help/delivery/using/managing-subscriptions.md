@@ -6,9 +6,9 @@ description: Gerenciamento de assinaturas
 audience: delivery
 content-type: reference
 topic-tags: subscriptions-and-referrals
-translation-type: ht
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
-workflow-type: ht
+translation-type: tm+mt
+source-git-commit: ba460d8347c987291681641a1be208027acf1d2f
+workflow-type: tm+mt
 source-wordcount: '1099'
 ht-degree: 100%
 
@@ -130,7 +130,7 @@ Para registrar recipients para um serviço de informação, é possível:
 * Subscrever automaticamente um conjunto de assinantes a este serviço. A lista de recipients pode vir de uma operação de filtragem, grupo, pasta, importação ou seleção direta usando o mouse. Para inscrever esses recipients, selecione os perfis e clique com o botão direito do mouse. Selecione **[!UICONTROL Actions > Subscribe selection to a service...]**, o serviço desejado e inicie a operação.
 * Importar recipients e inscrevê-los automaticamente em um serviço de informação. Para fazer isso, selecione o serviço na última etapa do assistente de importação.
 
-   Para obter mais informações, consulte [esta seção](../../platform/using/importing-data.md#import-wizard).
+   Para obter mais informações, consulte [esta seção](../../platform/using/executing-import-jobs.md).
 
 * Usar um formulário da Web para que os recipients possam subscrever-se a um serviço.
 
