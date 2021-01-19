@@ -8,11 +8,11 @@ content-type: reference
 topic-tags: campaign-classic-deprecated-features
 internal: n
 snippet: y
-translation-type: ht
-source-git-commit: 82c5f4f4c37f295a6c206eb33616ae9223740f36
-workflow-type: ht
-source-wordcount: '1626'
-ht-degree: 100%
+translation-type: tm+mt
+source-git-commit: 4efe5f8a9130e7925194e56e088b3745c0cbd11a
+workflow-type: tm+mt
+source-wordcount: '1632'
+ht-degree: 99%
 
 ---
 
@@ -47,13 +47,14 @@ Os clientes são aconselhados a verificar se utilizam o recurso/funcionalidade e
   </tr>
   <tr>
   <td>Conectores CRM<br></td>
-   <td><p>A partir da versão 20.3 do Campaign, os seguintes conectores CRM não serão mais utilizados:</p>
+   <td><p>A partir da versão Campaign 20.3, os seguintes conectores CRM estão descontinuados com a Campanha:</p>
    <ul>
    <li>API Soap - no local: 2007, 2015, 2016</li>
    <li>API Soap - online: 2015, 2016</li>
    <li>API da web – Microsoft Dynamics CRM
 No local: atualização 1 de 2016, 2016</li>
    <li>API da web – Microsoft Dynamics CRM Online: atualização 1 de 2016, 2016</li>
+   <li>API Oracle On Demand</li>
    </ul>
   <p><em>Data de remoção do Target: abril de 2021</em></p>
   </td>
