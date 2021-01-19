@@ -6,9 +6,9 @@ description: Sobre as atividades de direcionamento
 audience: workflow
 content-type: reference
 topic-tags: targeting-activities
-translation-type: ht
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
-workflow-type: ht
+translation-type: tm+mt
+source-git-commit: bb7e3ce726e2c589c033686cf3ab2960de140d91
+workflow-type: tm+mt
 source-wordcount: '404'
 ht-degree: 100%
 
@@ -21,7 +21,7 @@ Essas atividades permitem construir um ou mais targets definindo conjuntos e div
 
 * **Query**: permite executar um query. Consulte [Criação de uma consulta](../../workflow/using/query.md#creating-a-query).
 * **Query incremental**: permite executar um query e planejar sua execução. Consulte a seção [Query incremental](../../workflow/using/incremental-query.md).
-* **Lista de leitura**: permite usar dados contidos em uma lista. Consulte a seção [Using data from a list: Read list](../../workflow/using/importing-data.md#using-data-from-a-list--read-list).
+* **Lista de leitura**: permite usar dados contidos em uma lista. Consulte a seção [Using data from a list: Read list](../../platform/using/import-export-workflows.md#using-data-from-a-list--read-list).
 * **União**: permite agrupar o resultado de várias atividades em um único target. Consulte a seção [Union](../../workflow/using/union.md).
 * **Intersecção**: permite extrair apenas o público com os mesmos resultados de atividade de entrada. Consulte a seção [Intersectio](../../workflow/using/intersection.md).
 * **Exclusão**: permite criar um target com base em um target principal do qual um ou mais targets são extraídos. Consulte a seção [Intersectio](../../workflow/using/intersection.md).
