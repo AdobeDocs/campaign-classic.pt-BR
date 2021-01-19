@@ -6,9 +6,9 @@ description: Definição da população do target
 audience: delivery
 content-type: reference
 topic-tags: about-deliveries-and-channels
-translation-type: ht
-source-git-commit: cea4a26935312b1cb119a3fa671af7bf00788fe9
-workflow-type: ht
+translation-type: tm+mt
+source-git-commit: ba460d8347c987291681641a1be208027acf1d2f
+workflow-type: tm+mt
 source-wordcount: '1579'
 ht-degree: 100%
 
@@ -104,7 +104,7 @@ Para fazer isso:
 
 1. Ao importar os recipients, clique no link **[!UICONTROL File format definition...]** para selecionar e configurar o arquivo externo.
 
-   Para obter mais informações sobre importação de dados, consulte [esta seção](../../platform/using/importing-data.md#step-2---source-file-selection).
+   Para obter mais informações sobre importação de dados, consulte [esta seção](../../platform/using/executing-import-jobs.md#step-2---source-file-selection).
 
 1. Clique em **[!UICONTROL Finish]** e configure seu delivery como um delivery padrão.
 
@@ -235,6 +235,6 @@ Consulte também:
 
 Este vídeo mostra como adicionar seeds e provas a um email existente e o procedimento para o seu envio.
 
->[!VIDEO](https://video.tv.adobe.com/v/25606?quality=12&captions=por_br)
+>[!VIDEO](https://video.tv.adobe.com/v/25606?quality=12)
 
 Vídeos extras sobre procedimentos do Campaign Classic estão disponíveis [aqui](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html?lang=pt-BR).
