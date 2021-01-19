@@ -6,11 +6,11 @@ description: Elementos estáticos em um formulário web
 audience: web
 content-type: reference
 topic-tags: web-forms
-translation-type: ht
-source-git-commit: 21219f4a85a0caec4531acda33ab8bba5c7605d6
-workflow-type: ht
-source-wordcount: '1269'
-ht-degree: 100%
+translation-type: tm+mt
+source-git-commit: 43037b2b6b4e3b42f4b666d85a664b9fb117a015
+workflow-type: tm+mt
+source-wordcount: '1266'
+ht-degree: 98%
 
 ---
 
@@ -34,7 +34,7 @@ Os seguintes tipos de campo estão disponíveis:
 
 ## Inserção de conteúdo HTML {#inserting-html-content}
 
-É possível incluir conteúdo HTML em uma página de formulário: links de hipertexto, imagens, parágrafos formatados, vídeos ou objetos Flash, etc.
+É possível incluir conteúdo HTML em uma página de formulário: links de hipertexto, imagens, parágrafos formatados, vídeos etc.
 
 O editor HTML permite digitar o conteúdo a ser inserido na página de formulário. Para abrir o editor, clique em **[!UICONTROL Static elements]** > **[!UICONTROL HTML]** .
 
