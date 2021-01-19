@@ -1,0 +1,31 @@
+---
+solution: Campaign Classic
+product: campaign
+title: Sobre importações e exportações genéricas
+description: Saiba mais sobre importações e exportações genéricas.
+audience: platform
+content-type: reference
+topic-tags: importing-and-exporting-data
+translation-type: tm+mt
+source-git-commit: c650862efc74cfbe8f73f11ef905be9f35614088
+workflow-type: tm+mt
+source-wordcount: '115'
+ht-degree: 4%
+
+---
+
+
+# Sobre importações e exportações genéricas {#about-generic-imports-exports}
+
+A Adobe Campaign Classic fornece importações e exportações genéricas. Eles permitem, por exemplo, extrair uma lista de clientes ou prospectos que se tornarão parte de uma população de públicos alvos ou fornecer dados de arquivos externos ao seu banco de dados.
+
+As importações e exportações genéricas são gerenciadas a partir do nó **[!UICONTROL Profiles and Targets > Jobs > Generic imports and exports]** da árvore do Adobe Campaign.
+
+As etapas para executar operações de importação e exportação genéricas são as seguintes:
+
+1. [Criar um modelo](../../platform/using/creating-import-export-templates.md)  de importação ou exportação (opcional).
+1. [Criar um trabalho](../../platform/using/creating-import-export-jobs.md) de importação ou exportação.
+1. Configure e execute o trabalho [import](../../platform/using/executing-import-jobs.md) ou [export](../../platform/using/executing-export-jobs.md).
+1. [](../../platform/using/monitoring-jobs-execution.md) Monitoramento da execução da tarefa.
+
+![](assets/do-not-localize/how-to-video.png) [Descubra este recurso no vídeo](../../platform/using/exporting-and-importing-profiles.md#import-profiles-video)
