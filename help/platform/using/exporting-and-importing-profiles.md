@@ -7,9 +7,9 @@ audience: platform
 content-type: reference
 topic-tags: profile-management
 translation-type: tm+mt
-source-git-commit: 20dcdd91d71158bc373db68c3f61f6808b240bd2
+source-git-commit: ba460d8347c987291681641a1be208027acf1d2f
 workflow-type: tm+mt
-source-wordcount: '144'
+source-wordcount: '145'
 ht-degree: 88%
 
 ---
@@ -23,13 +23,13 @@ Você pode [usar workflows](#use-workflows) para importar ou exportar perfis de 
 
 ## Usar workflows{#use-workflows}
 
-As exportações e importações são configuradas em modelos dedicados executados através de workflows por meio das atividades de **[!UICONTROL Import]** e **[!UICONTROL Export]**. Elas podem ser repetidas automaticamente de acordo com um agendamento, por exemplo, para automatizar a troca de dados entre vários sistemas de informações. [Saiba mais](../../workflow/using/importing-data.md#best-practices-when-importing-data)
+Exportações e importações são configuradas em modelos dedicados executados por meio de workflows por meio de atividades de importação e exportação. Elas podem ser repetidas automaticamente de acordo com um agendamento, por exemplo, para automatizar a troca de dados entre vários sistemas de informações. [Saiba mais](../../platform/using/import-export-workflows.md#best-practices-when-importing-data)
 
 Caso necessário, é possível criar um trabalho ocasional de importação ou exportação por meio do recurso **[!UICONTROL Generic imports and exports]** descrito abaixo.
 
 ## Criar trabalhos{#create-jobs}
 
-Para configurar e executar tarefas de importação e exportação de dados, vá até a guia **[!UICONTROL Profiles and targets]** e clique no link **[!UICONTROL Jobs]**. [Saiba mais](../../platform/using/generic-imports-and-exports.md)
+Para configurar e executar tarefas de importação e exportação de dados, vá até a guia **[!UICONTROL Profiles and targets]** e clique no link **[!UICONTROL Jobs]**. [Saiba mais](../../platform/using/about-generic-imports-exports.md)
 
 ![](assets/s_ncs_user_interface_import_link.png)
 
@@ -40,4 +40,4 @@ Este vídeo explica como importar perfis no Adobe Campaign para uma importação
 
 >[!VIDEO](https://video.tv.adobe.com/v/25608?quality=12)
 
-Vídeos de instruções adicionais do Campaign Classic estão disponíveis [aqui](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html).
+Vídeos extras sobre procedimentos do Campaign Classic estão disponíveis [aqui](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html?lang=pt-BR).
