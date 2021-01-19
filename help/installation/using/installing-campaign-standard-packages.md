@@ -7,9 +7,9 @@ audience: installation
 content-type: reference
 topic-tags: initial-configuration
 translation-type: tm+mt
-source-git-commit: 6d5dbc16ed6c6e5a2e62ceb522e2ccd64b142825
+source-git-commit: 44f2aed49a12d51bb3b38f304e6b922f0faf68cc
 workflow-type: tm+mt
-source-wordcount: '1154'
+source-wordcount: '1173'
 ht-degree: 11%
 
 ---
@@ -122,6 +122,11 @@ A tabela a seguir lista todos os pacotes integrados da Campanha.
   <tr> 
    <td> Canal móvel (SMS) <br /> </td> 
    <td> Envia delivery usando o canal Mobile/SMS com o Adobe Campaign. Opcional. <a href="../../delivery/using/sms-channel.md">Saiba mais</a> <br /> </td> 
+   <td> Todos<br /> </td> 
+  </tr> 
+   <tr> 
+   <td> Canal de telefone<br /> </td> 
+   <td> Envia delivery usando o canal telefônico com a Adobe Campaign. Usado para central de atendimento. Opcional. <a href="../../delivery/using/communication-channels.md">Saiba mais</a> <br /> </td> 
    <td> Todos<br /> </td> 
   </tr> 
   <tr> 
