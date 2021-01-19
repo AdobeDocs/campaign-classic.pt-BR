@@ -7,10 +7,10 @@ audience: workflow
 content-type: reference
 topic-tags: flow-control-activities
 translation-type: tm+mt
-source-git-commit: d35b22386bd2681ba02e4379c627821b35a7d04e
+source-git-commit: e5f718908d0bb6893e54c51700865ecda09c80db
 workflow-type: tm+mt
-source-wordcount: '207'
-ht-degree: 16%
+source-wordcount: '196'
+ht-degree: 9%
 
 ---
 
@@ -28,11 +28,9 @@ Você também pode usar a atividade no contexto da criação de conteúdo e da a
 
 >[!IMPORTANT]
 >
->Lembre-se de que as transições de saída adicionadas após uma atividade de bifurcação não serão executadas simultaneamente.
->
->A atividade não deve, portanto, ser usada para melhorar o desempenho do fluxo de trabalho, mas sim para executar várias atividades independentemente e eventualmente juntá-las antes de executar o restante do fluxo de trabalho.
+>Transições de saída adicionadas após uma atividade **[!UICONTROL Fork]** **não serão** executadas simultaneamente. Esse comportamento pode afetar o desempenho do fluxo de trabalho. Use essa atividade se precisar executar várias atividades independentemente e eventualmente juntá-las antes de executar o restante do fluxo de trabalho.
 
-Para configurar a atividade, abra-a e então defina o número e o rótulo das transições de saída desejadas.
+Para configurar a atividade **[!UICONTROL Fork]**, abra-a e defina o número e o rótulo das transições de saída.
 
 ![](assets/s_user_segmentation_fork.png)
 
