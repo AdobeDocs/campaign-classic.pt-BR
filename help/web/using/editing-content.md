@@ -6,10 +6,10 @@ description: Edição de conteúdo
 audience: web
 content-type: reference
 topic-tags: editing-html-content
-translation-type: ht
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
-workflow-type: ht
-source-wordcount: '1234'
+translation-type: tm+mt
+source-git-commit: 43037b2b6b4e3b42f4b666d85a664b9fb117a015
+workflow-type: tm+mt
+source-wordcount: '1214'
 ht-degree: 100%
 
 ---
@@ -137,6 +137,7 @@ Blocos de personalização e campos só podem ser inseridos em blocos de tipo de
 >* Nova janela (_blank)
 >* Janela atual (_self)
 >* Comportamento do navegador padrão
+
 >
 
 
@@ -202,24 +203,14 @@ As opções disponíveis são as seguintes:
 >[!NOTE]
 >
 >* Ícone **Delete**: exclui o bloco e todo o conteúdo.
->
->* Ícone **Duplicate**: duplica o bloco e todos os estilos relacionados ao bloco.
+   >
+   >
+* Ícone **Duplicate**: duplica o bloco e todos os estilos relacionados ao bloco.
 
 
 ## Gerenciamento de imagens e animações {#managing-images-and-animations}
 
 O Editor de conteúdo digital permite trabalhar em **qualquer tipo de imagem** compatível com os navegadores.
-
-Para ser compatível com o DCE, as **animações tipo &quot;** Flash&quot; devem ser inseridas em uma página HTML da seguinte maneira:
-
-```
-<object type="application/x-shockwave-flash" data="https://www.mydomain.com/flash/your_animation.swf" width="200" height="400">
- <param name="movie" value="https://www.mydomain.com/flash/your_animation.swf" />
- <param name="quality" value="high" />
- <param name="play" value="true"/>
- <param name="loop" value="true"/> 
-</object>
-```
 
 >[!CAUTION]
 >
