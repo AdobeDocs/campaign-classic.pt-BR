@@ -7,10 +7,10 @@ audience: platform
 content-type: reference
 topic-tags: profile-management
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: ba460d8347c987291681641a1be208027acf1d2f
 workflow-type: tm+mt
 source-wordcount: '705'
-ht-degree: 100%
+ht-degree: 98%
 
 ---
 
@@ -92,7 +92,7 @@ O conteúdo de uma lista pode ser exportado. Para configurar e executar a export
 
    ![](assets/s_ncs_user_export_list_start.png)
 
-   Para obter mais informações sobre como configurar o assistente de configuração, consulte [Assistente de exportação](../../platform/using/exporting-data.md#export-wizard).
+   Para obter mais informações sobre como configurar o assistente de exportação, consulte [esta seção](../../platform/using/executing-export-jobs.md).
 
 ## Como assinar um serviço {#subscribing-to-a-service}
 
