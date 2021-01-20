@@ -70,7 +70,7 @@ ht-degree: 94%
    + Importação e exportação de dados {#importing-and-exporting-data}
       + [Introdução à importação e exportação de dados](platform/using/get-started-data-import-export.md)
       + [Importação e exportação de dados usando workflows](platform/using/import-export-workflows.md)
-      + Trabalhar com importações e exportações genéricas {genérico-import-export}
+      + Trabalhar com importações e exportações genéricas {generic-imports-exports}
          + [Introdução às importações e exportações genéricas](platform/using/about-generic-imports-exports.md)
          + [Criação de modelos de importação e exportação](platform/using/creating-import-export-templates.md)
          + [Criação de trabalhos de importação e exportação](platform/using/creating-import-export-jobs.md)
@@ -81,7 +81,7 @@ ht-degree: 94%
       + Gerenciamento da criptografia e da compactação de dados {managing-data-cryption-compression}
          + [Descompactação ou descriptografia de um arquivo antes do processamento](platform/using/unzip-decrypt.md)
          + [Como compactar ou criptografar um arquivo antes do processamento](platform/using/zip-encrypt.md)
-      + Práticas recomendadas e solução de problemas {práticas recomendadas}
+      + Práticas recomendadas e solução de problemas {best-practices}
          + [Práticas recomendadas de importação e exportação](platform/using/import-export-best-practices.md)
          + [Práticas recomendadas e solução de problemas do servidor SFTP](platform/using/sftp-server-usage.md)
    + Filtrar dados {#filtering-data}
