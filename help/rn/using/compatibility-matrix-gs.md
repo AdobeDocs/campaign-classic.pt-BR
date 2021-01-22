@@ -7,7 +7,7 @@ audience: rns
 content-type: reference
 topic-tags: latest-release-notes
 translation-type: tm+mt
-source-git-commit: d25210f7f5c9378565ddacd39e4b1662d8204001
+source-git-commit: 296cf21201134ec9812df00b03f2d72e3063b19a
 workflow-type: tm+mt
 source-wordcount: '514'
 ht-degree: 96%
@@ -118,11 +118,6 @@ O Adobe Campaign Classic é compatível com todos os sistemas e ferramentas list
 <table>
 <tbody>
 <tr>
-<td>Amazon Redshift</td>
-<td><p> </p>
-</td>
-</tr>
-<tr>
 <td>Oracle</td>
 <td>
 <p>18c</p>
@@ -204,6 +199,11 @@ O Adobe Campaign Classic é compatível com todos os sistemas e ferramentas list
 
 <table>
 <tbody>
+<tr>
+<td>Amazon Redshift</td>
+<td><p> </p>
+</td>
+</tr>
 <tr>
 <td>Oracle</td>
 <td>
