@@ -6,18 +6,18 @@ description: Matriz de compatibilidade do Campaign Classic para a versão Gold S
 audience: rns
 content-type: reference
 topic-tags: latest-release-notes
-translation-type: ht
-source-git-commit: aabab5367ea4a26837fa3dc94a36fbbfa48d59e3
-workflow-type: ht
-source-wordcount: '509'
-ht-degree: 100%
+translation-type: tm+mt
+source-git-commit: d25210f7f5c9378565ddacd39e4b1662d8204001
+workflow-type: tm+mt
+source-wordcount: '514'
+ht-degree: 96%
 
 ---
 
 
 # Matriz de compatibilidade do Gold Standard{#compatibility-matrix-gs}
 
-Este documento lista todos os sistemas e componentes compatíveis com as builds 19.1 do **Adobe Campaign Classic Gold Standard**. Os produtos e as versões que não estão nessa lista não são compatíveis com o Adobe Campaign.
+Este documento lista todos os sistemas e componentes compatíveis com as builds 19.1 do **Adobe Campaign Classic Gold Standard**. Os produtos e versões que não fazem parte desta lista não são compatíveis com esta versão do Adobe Campaign.
 
 ## Observações importantes{#important-notes-gs}
 
@@ -46,7 +46,7 @@ O Adobe Campaign Classic é compatível com todos os sistemas e ferramentas list
 <tr>
 <td>RHEL</td>
 <td>
-<p>7.x (64 bits)</p>
+<p>7,x (64 bits)</p>
 <p><strong>Importante:</strong> se você estiver usando o RHEL, deve desativar o SELinux ou fazer com que seus arquitetos gravem regras personalizadas de SELinux para verificar se um SELinux habilitado não está causando problemas nas operações do Campaign.</p>
 </td>
 </tr>
@@ -117,6 +117,11 @@ O Adobe Campaign Classic é compatível com todos os sistemas e ferramentas list
 
 <table>
 <tbody>
+<tr>
+<td>Amazon Redshift</td>
+<td><p> </p>
+</td>
+</tr>
 <tr>
 <td>Oracle</td>
 <td>
@@ -202,7 +207,7 @@ O Adobe Campaign Classic é compatível com todos os sistemas e ferramentas list
 <tr>
 <td>Oracle</td>
 <td>
-<p>12c</p>
+<p>12 cháv.</p>
 <p>11g    </p>
 </td>
 </tr>
