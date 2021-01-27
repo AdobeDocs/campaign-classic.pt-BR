@@ -6,16 +6,20 @@ description: Saiba como se conectar via Adobe ID
 audience: integrations
 content-type: reference
 topic-tags: connecting-via-an-adobe-id
-translation-type: ht
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
-workflow-type: ht
-source-wordcount: '329'
+translation-type: tm+mt
+source-git-commit: db595e59f4725ba5d125e688e7bfc6d1c1a03d9f
+workflow-type: tm+mt
+source-wordcount: '349'
 ht-degree: 100%
 
 ---
 
 
 # Configuração de IMS{#configuring-ims}
+
+>[!IMPORTANT]
+>
+>A implementação do Adobe IMS é estritamente reservada aos administradores técnicos da Adobe. Entre em contato com seu executivo da Adobe para iniciar o processo de implementação.
 
 ## Pré-requisitos {#prerequisites}
 
