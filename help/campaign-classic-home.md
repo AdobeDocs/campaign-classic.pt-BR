@@ -5,9 +5,9 @@ product: campaign
 title: Documentação do produto Adobe Campaign Classic
 topic: Premium
 translation-type: tm+mt
-source-git-commit: db595e59f4725ba5d125e688e7bfc6d1c1a03d9f
+source-git-commit: f6099fa9c8d1df7bc82dd9be0b575ca7f20b6645
 workflow-type: tm+mt
-source-wordcount: '291'
+source-wordcount: '292'
 ht-degree: 82%
 
 ---
@@ -21,7 +21,7 @@ ht-degree: 82%
 
 * **[Conectando-se pelo IMS/Adobe ID? Atualize para as compilações mais recentes](integrations/using/about-adobe-id.md)**<br/> Se você estiver usando o IMS para se conectar à Campanha, é necessário atualizar para poder se conectar à Campanha após** 21 de março de 2021 **.
 
-* **[Boletim ](https://helpx.adobe.com/campaign/kb/gold-standard-upgrade.html)**<br/> de segurança de campanhaAtualize para as compilações mais recentes para proteger sua plataforma de Campanha.
+* **[Proteja suas ](https://helpx.adobe.com/campaign/kb/gold-standard-upgrade.html)**<br/> instâncias de CampanhaAtualize para as compilações mais recentes para proteger sua plataforma de Campanha.
 
 * **[Remover devoluções definitivas incorretas](https://helpx.adobe.com/campaign/kb/update-bounce-qualification.html)**<br/> Saiba como atualizar devoluções definitivas incorretas depois da paralisação do Gmail
 
