@@ -7,19 +7,19 @@ audience: rns
 content-type: reference
 topic-tags: latest-release-notes
 translation-type: tm+mt
-source-git-commit: dcef36c3ce14c45cb08a79180938ad8d26fa6549
+source-git-commit: db595e59f4725ba5d125e688e7bfc6d1c1a03d9f
 workflow-type: tm+mt
-source-wordcount: '938'
-ht-degree: 93%
+source-wordcount: '984'
+ht-degree: 92%
 
 ---
 
 
 # Versões Gold Standard{#gold-standard}
 
-O Gold Standard é a versão de suporte a longo prazo do Campaign Classic. Como usuário do Gold Standard hospedado, você se beneficia automaticamente da atualização do Gold Standard com a versão estável mais recente sem nenhuma ação. Os clientes locais e híbridos também podem se beneficiar das versões do Gold Standard.
+O Gold Standard é a versão de suporte a longo prazo do Campaign Classic. Como usuário convidado do Gold Standard, você se beneficia automaticamente da atualização do Gold Standard com a versão estável mais recente sem ter de realizar nenhuma ação. Os clientes locais e híbridos também podem se beneficiar das versões Gold Standard.
 
-Se você migrar de uma versão antiga, recomendamos que atualize para essa versão primeiro.
+Se você migrar de um build antigo, recomendamos que atualize primeiro para essa versão.
 
 Esta página lista versões do Gold Standard.
 
@@ -31,9 +31,16 @@ _22 de dezembro de 2020_
 
 >[!CAUTION]
 >
->Esta versão é fornecida com um novo protocolo de conexão:  a atualização é obrigatória para que o servidor do Campaign e o console do cliente possam se conectar ao Campaign após 21 de março de 2021.
+> * Esta versão é fornecida com um novo protocolo de conexão: se você estiver se conectando à Campanha pelo Adobe Identity Service (IMS), a atualização é obrigatória para o servidor de Campanha e o console do cliente poderem se conectar à Campanha após **21 de março de 2021**.
+   >
+   > 
+* Esta versão vem com uma [correção de segurança](https://helpx.adobe.com/security/products/campaign/apsb21-04.html): a atualização é obrigatória para reforçar a segurança do ambiente.
+>
+>
+Saiba mais nas [Perguntas frequentes sobre atualização do Gold Standard 11](https://helpx.adobe.com/campaign/kb/gold-standard-upgrade.html).
 
-A compilação 9032@d3b452f inclui os seguintes aprimoramentos e correções:
+
+O build 9032@d3b452f inclui os seguintes aprimoramentos e correções:
 
 * O protocolo de conexão foi atualizado para seguir o novo mecanismo de autenticação IMS.
 
