@@ -7,10 +7,10 @@ audience: rns
 content-type: reference
 topic-tags: latest-release-notes
 translation-type: tm+mt
-source-git-commit: 5b7639e7e64d4cb42d3ae77b04ba90a45fb58159
+source-git-commit: db595e59f4725ba5d125e688e7bfc6d1c1a03d9f
 workflow-type: tm+mt
-source-wordcount: '1911'
-ht-degree: 98%
+source-wordcount: '1937'
+ht-degree: 97%
 
 ---
 
@@ -23,17 +23,28 @@ Para obter a versão do Campaign Classic Gold Standard (build de GA mais recente
 
 ## ![](assets/do-not-localize/blue_2.png) Versão 20.3.3 - Build 9234 {#release-20-3-3-build-9234}
 
-_11 de Janeiro de 2021_
+_11 de janeiro de 2021_
 
 * Correção de um problema de segurança para reforçar a proteção contra situações de SSRF (Server Side Request Forgery). (NEO-27777)
 
 
 
-* Correção de um problema de regressão relacionado ao processo de geração de banda larga que poderia causar o travamento do processo MTA.
+* Correção de um problema de regressão relacionado ao processo de geração de banda larga que pode causar o travamento do processo de MTA.
 
 ## ![](assets/do-not-localize/red_2.png) Versão 20.3.1 - Build 9228 {#release-20-3-1-build-9228}
 
 _27 de outubro de 2020_
+
+>[!CAUTION]
+>
+> * Esta versão é fornecida com um novo protocolo de conexão: se você estiver se conectando à Campanha pelo Adobe Identity Service (IMS), a atualização é obrigatória para o servidor de Campanha e o console do cliente poderem se conectar à Campanha após **21 de março de 2021**.
+   >
+   > 
+* Esta versão vem com uma correção de segurança: a atualização é obrigatória para reforçar a segurança do ambiente.
+
+>
+
+
 
 **Novidades**
 
@@ -74,10 +85,6 @@ _27 de outubro de 2020_
 </tr> 
 </tbody> 
 </table>
-
->[!CAUTION]
->
->Esta versão é fornecida com um novo protocolo de conexão:  a atualização é obrigatória para que o servidor do Campaign e o console do cliente possam se conectar ao Campaign após 21 de março de 2021.
 
 **Aprimoramentos de segurança**
 
@@ -230,7 +237,7 @@ No linux, _apache_neolane.conf_ agora está instalado no diretório `conf`.
 
 
 
-* Correção de um problema de análise XML quando o identificador XML não estava presente no campo mdata em xtkOperador. Estava causando falha após a atualização. (NEO-26113)
+* Correção de um problema de análise XML quando o identificador XML não estava presente no campo mdata em xtkOperator. Estava causando falha após a atualização. (NEO-26113)
 
 
 
