@@ -5,10 +5,10 @@ product: campaign
 title: Documentação do produto Adobe Campaign Classic
 topic: Premium
 translation-type: tm+mt
-source-git-commit: 588e1e465eb5ba06f3a7310f70fe958ec2ec334f
+source-git-commit: db595e59f4725ba5d125e688e7bfc6d1c1a03d9f
 workflow-type: tm+mt
-source-wordcount: '255'
-ht-degree: 92%
+source-wordcount: '291'
+ht-degree: 82%
 
 ---
 
@@ -19,15 +19,16 @@ ht-degree: 92%
 
 ## Novidades
 
-* **[Remova ](https://helpx.adobe.com/campaign/kb/update-bounce-qualification.html)**<br/> rejeições incorretas de disco rígidoSaiba como atualizar rejeições incorretas de disco depois da paralisação do Gmail
+* **[Conectando-se pelo IMS/Adobe ID? Atualize para as compilações mais recentes](integrations/using/about-adobe-id.md)**<br/> Se você estiver usando o IMS para se conectar à Campanha, é necessário atualizar para poder se conectar à Campanha após** 21 de março de 2021 **.
 
-* **[Atualizar a integração dos acionadores da Adobe Experience Cloud](integrations/using/configuring-adobe-io.md)**<br/> O serviço de autenticação herdado oAuth chegou ao fim da vida útil. Saiba como migrar para o Adobe I/O
+* **[Boletim ](https://helpx.adobe.com/campaign/kb/gold-standard-upgrade.html)**<br/> de segurança de campanhaAtualize para as compilações mais recentes para proteger sua plataforma de Campanha.
+
+* **[Remover devoluções definitivas incorretas](https://helpx.adobe.com/campaign/kb/update-bounce-qualification.html)**<br/> Saiba como atualizar devoluções definitivas incorretas depois da paralisação do Gmail
+
+* **[Atualizar a integração dos acionadores da Adobe Experience Cloud](integrations/using/configuring-adobe-io.md)**<br/> O serviço de autenticação herdado oAuth chegou ao fim da vida útil. Saiba como migrar para o Adobe I/O.
 
 * **[Mover para a API do provedor APNs com base em HTTP/2](https://helpx.adobe.com/br/campaign/kb/migrate-to-apns-http2.html)**<br/>
 Saiba como migrar do protocolo binário legado para a API do provedor APNs com base em HTTP/2
-
-* **[Adicionar emoticons às suas mensagens](delivery/using/defining-the-email-content.md#inserting-emoticons)**<br/>
-Agora você pode inserir emoticons em mensagens e linhas de assunto
 
 * **[Obtenha suporte](https://helpx.adobe.com/br/campaign/kb/ac-support.html)**<br/>
 Acesse as perguntas frequentes, as práticas recomendadas, os recursos de ajuda e solicite ajuda.
@@ -88,6 +89,6 @@ Acesse as perguntas frequentes, as práticas recomendadas, os recursos de ajuda 
 | [Vídeos explicativos](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html?lang=pt-BR) | [Modelo de dados do Campaign](configuration/using/about-data-model.md) |
 | [Matriz de compatibilidade](rn/using/compatibility-matrix.md) | [JSAPI do Campaign](https://docs.adobe.com/content/help/en/campaign-classic/technicalresources/api/p-1.html) |
 | [Introdução ao Campaign](platform/using/about-adobe-campaign-classic.md) | [Guia de implementação](https://helpx.adobe.com/br/campaign/kb/acc-implementation.html) |
-| [Atualização do Gold Standard ](https://helpx.adobe.com/br/campaign/kb/gold-standard.html) | [Guia de rastreamento](https://helpx.adobe.com/br/campaign/kb/acc-tracking.html) |
-| [Recursos obsoletos](rn/using/deprecated-features.md) | [Lista de verificação de segurança e privacidade](https://helpx.adobe.com/campaign/kb/acc-security.html) |
+| [Atualização do Gold Standard ](https://helpx.adobe.com/campaign/kb/gold-standard.html) | [Guia de rastreamento](https://helpx.adobe.com/br/campaign/kb/acc-tracking.html) |
+| [Recursos obsoletos](rn/using/deprecated-features.md) | [Lista de verificação de segurança e privacidade](https://helpx.adobe.com/br/campaign/kb/acc-security.html) |
 | [Painel de controle do Campaign](https://experienceleague.adobe.com/docs/control-panel/using/control-panel-home.html?lang=pt-BR) | [Orientações de monitoramento](production/using/monitoring-guidelines.md) |
