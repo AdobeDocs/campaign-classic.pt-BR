@@ -6,9 +6,9 @@ description: Introdução ao Campaign DCE
 audience: web
 content-type: reference
 topic-tags: editing-html-content
-translation-type: ht
-source-git-commit: e76eb171aac1f7088ff8647f99c928ec349b24fc
-workflow-type: ht
+translation-type: tm+mt
+source-git-commit: f6099fa9c8d1df7bc82dd9be0b575ca7f20b6645
+workflow-type: tm+mt
 source-wordcount: '256'
 ht-degree: 100%
 
@@ -23,8 +23,8 @@ O Editor de conteúdo digital permite inserir e formatar elementos de página e 
 
 >[!NOTE]
 >
->>Se precisar adicionar um código JavaScript do lado do servidor, use blocos de personalização. [Saiba mais](../../delivery/using/personalization-blocks.md).
->
+>Se precisar adicionar um código JavaScript do lado do servidor, use blocos de personalização. [Saiba mais](../../delivery/using/personalization-blocks.md).
+
 >[!CAUTION]
 >
 >Todos os recursos externos precisam ser referenciados com um URL HTTPS.
