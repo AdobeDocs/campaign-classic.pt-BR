@@ -6,11 +6,11 @@ description: Saiba mais sobre a atividade de workflow de desduplicação
 audience: workflow
 content-type: reference
 topic-tags: targeting-activities
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 55e2297c5c60a48be230d06a3c1880d79b8ea5f2
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1089'
-ht-degree: 65%
+ht-degree: 100%
 
 ---
 
@@ -19,7 +19,7 @@ ht-degree: 65%
 
 A desduplicação exclui duplicatas dos resultados das atividades de entrada. A desduplicação pode ser executada no endereço de e-mail, número de telefone ou outro campo.
 
-A atividade **[!UICONTROL Deduplication]** é usada para remover linhas de duplicado de um conjunto de dados. Por exemplo, os registros abaixo podem ser considerados duplicados, pois têm o mesmo endereço de email e o mesmo celular e/ou telefone residencial.
+A atividade **[!UICONTROL Deduplication]** é usada para remover linhas duplicadas de um conjunto de dados. Por exemplo, os registros abaixo podem ser considerados duplicados, pois têm o mesmo endereço de email e o mesmo celular e/ou telefone residencial.
 
 | Data da última modificação | Nome | Sobrenome | Email | Telefone celular | Telefone |
 -----|------------|-----------|-------|--------------|------
@@ -27,13 +27,13 @@ A atividade **[!UICONTROL Deduplication]** é usada para remover linhas de dupli
 | 19/05/2020 | Robert | Tisner | bob@mycompany.com | 444-444-4444 | 777-777-7777 |
 | 22/07/2020 | Bobby | Tisner | bob@mycompany.com | 444-444-4444 | 777-777-7777 |
 
-A atividade **[!UICONTROL Deduplication]** tem a capacidade de manter uma linha inteira como o registro exclusivo após a identificação dos duplicados. Por exemplo, no caso de uso acima, se a atividade estiver configurada para manter somente o registro com o **[!UICONTROL Date]** mais antigo, o resultado será:
+A atividade **[!UICONTROL Deduplication]** tem a capacidade de manter uma linha inteira como o registro exclusivo após a identificação de duplicatas. Por exemplo, no caso de uso acima, se a atividade estiver configurada para manter somente o registro com o **[!UICONTROL Date]** mais antigo, o resultado será:
 
 | Data | Nome | Sobrenome | Email | Telefone celular | Telefone |
 -----|----------|------------|-------|--------------|------
 | 03/02/2020 | Bob | Tisner | bob@mycompany.com | 444-444-4444 | 888-888-8888 |
 
-O registro principal selecionado transportará os dados sem qualquer união de dados de campo com outros dados relevantes nas linhas de duplicado.
+O registro principal selecionado transportará os dados sem qualquer união de dados de campo com outros dados relevantes nas linhas duplicadas.
 
 Complemento:
 
@@ -61,7 +61,7 @@ Para configurar uma desduplicação, insira o rótulo, o método e os critérios
 
    ![](assets/s_user_segmentation_dedup_param.png)
 
-1. Selecione o tipo de público alvo para essa atividade (por padrão, desduplicação-duplicado vinculado a recipient) e o critério a ser usado, isto é, o campo cujos valores idênticos permitem identificar duplicados.
+1. Selecione o tipo de target para essa atividade (por padrão, a desduplicação vinculada aos recipients) e o critério a ser usado, isto é, o campo cujos valores idênticos permitem identificar duplicatas.
 
    >[!NOTE]
    >
@@ -72,7 +72,7 @@ Para configurar uma desduplicação, insira o rótulo, o método e os critérios
 
    ![](assets/s_user_segmentation_dedup_param2.png)
 
-1. Na próxima etapa, a opção **[!UICONTROL Other]** permite selecionar o critério ou critérios a serem usados no caso de valores idênticos.
+1. Na próxima etapa, a opção **[!UICONTROL Other]** permite selecionar o critério ou os critérios a serem usados em caso de valores idênticos.
 
    ![](assets/s_user_segmentation_dedup_param3.png)
 
@@ -96,7 +96,7 @@ Para configurar uma desduplicação, insira o rótulo, o método e os critérios
       ![](assets/s_user_segmentation_dedup_param7.png)
    >[!NOTE]
    >
-   >A funcionalidade **[!UICONTROL Merge]**, acessível por meio do link **[!UICONTROL Advanced parameters]**, permite configurar um conjunto de regras para unir um campo ou grupo de campos em um único registro de dados resultante. Para obter mais informações, consulte [Mesclar campos em um único registro](#merging-fields-into-single-record).
+   >A funcionalidade **[!UICONTROL Merge]**, acessível por meio do link **[!UICONTROL Advanced parameters]**, permite configurar um conjunto de regras para mesclar um campo ou grupo de campos em um único registro de dados resultante. Para obter mais informações, consulte [Mesclar campos em um único registro](#merging-fields-into-single-record).
 
 1. Clique em **[!UICONTROL Finish]** para aprovar o método de desduplicação selecionado.
 
@@ -138,11 +138,11 @@ Ao executar o workflow, todos os recipients identificados como duplicatas são e
 
 ## Mesclar campos em um único registro de dados {#merging-fields-into-single-record}
 
-A funcionalidade **[!UICONTROL Merge]** permite configurar um conjunto de regras para que o desduplicação-duplicado defina um campo ou grupo de campos a serem unidos em um único registro de dados resultante.
+A funcionalidade **[!UICONTROL Merge]** permite configurar um conjunto de regras para que a desduplicação defina um campo ou grupo de campos a serem mesclados em um único registro de dados resultante.
 
-Por exemplo, com um conjunto de registros de duplicados, você pode optar por manter o número de telefone mais antigo ou o nome mais recente.
+Por exemplo, com um conjunto de registros duplicados, você pode optar por manter o número de telefone mais antigo ou o nome mais recente.
 
-Um caso de uso que utiliza esse recurso está disponível em [esta seção](../../workflow/using/deduplication-merge.md).
+Um caso de uso que utiliza esse recurso está disponível [nesta seção](../../workflow/using/deduplication-merge.md).
 
 Para fazer isso, siga estes passos:
 
@@ -156,9 +156,9 @@ Para fazer isso, siga estes passos:
 
    ![](assets/dedup2.png)
 
-1. Depois de ativar a funcionalidade, uma guia **[!UICONTROL Merge]** é adicionada à atividade **[!UICONTROL Deduplication]**. Isso permite que você defina grupos de campos a serem unidos e suas regras associadas.
+1. Depois de ativar a funcionalidade, uma guia **[!UICONTROL Merge]** é adicionada à atividade **[!UICONTROL Deduplication]**. Isso permite que você defina grupos de campos a serem mesclados e suas regras associadas.
 
-   Para obter mais informações, consulte o caso de uso dedicado disponível em [esta seção](../../workflow/using/deduplication-merge.md).
+   Para obter mais informações, consulte o caso de uso detalhado disponível [nesta seção](../../workflow/using/deduplication-merge.md).
 
    ![](assets/dedup3.png)
 
