@@ -10,21 +10,21 @@ translation-type: tm+mt
 source-git-commit: e5f718908d0bb6893e54c51700865ecda09c80db
 workflow-type: tm+mt
 source-wordcount: '196'
-ht-degree: 9%
+ht-degree: 54%
 
 ---
 
 
 # Bifurcação{#fork}
 
-A atividade **[!UICONTROL Fork]** permite criar várias transições de saída, a fim de realizar várias atividades independentemente no mesmo fluxo de trabalho.
+A atividade **[!UICONTROL Fork]** permite criar várias transições de saída para realizar várias atividades independentemente no mesmo fluxo de trabalho.
 
-Por exemplo, você pode usar a atividade depois de um query para executar duas ações simultaneamente:
+Por exemplo, você pode usar a atividade depois de uma consulta para executar duas ações em paralelo:
 
-* Salve o resultado do query em uma audiência,
-* Execute uma segmentação no resultado para enviar vários delivery.
+* Salvar o resultado da consulta em uma audiência,
+* Executar uma segmentação no resultado para enviar vários deliveries.
 
-Você também pode usar a atividade no contexto da criação de conteúdo e da automação de envio de delivery, para iniciar o cálculo de públicos alvos e a criação de conteúdo em paralelo. Um caso de uso específico está disponível [nesta seção](../../delivery/using/automating-via-workflows.md#creating-the-delivery-and-its-content).
+Você também pode usar a atividade no contexto da criação de conteúdo e automação de envio de delivery, a fim de iniciar o cálculo de destino e a criação de conteúdo em paralelo. Um caso de uso específico está disponível [nesta seção](../../delivery/using/automating-via-workflows.md#creating-the-delivery-and-its-content).
 
 >[!IMPORTANT]
 >
