@@ -197,8 +197,7 @@ Leis de privacidade da Tailândia e do Brasil – [Leia mais](https://helpx.adob
 
 **Outras atualizações de documentação que vêm com a versão**
 
-A nova opção que permite cancelar a publicação de um template de mensagem transacional está documentada
-[nesta seção](../../message-center/using/template-unpublication.md).
+A nova opção que permite desfazer a publicação de um template de mensagem transacional está documentada [nesta seção](../../message-center/using/template-unpublication.md).
 
 As novas opções que permitem definir limitações ao enviar emails que incluem imagens baixadas de um URL personalizado e anexos foram adicionadas à lista de opções do Campaign Classic. [Leia mais](../../installation/using/configuring-campaign-options.md#delivery)
 
@@ -452,7 +451,7 @@ O artigo de práticas recomendadas do pacote de dados foi atualizado. [Leia mais
 
 A documentação de gerenciamento de ofertas foi atualizada com uma nova seção que lista as práticas recomendadas. [Leia mais](../../interaction/using/interaction-best-practices.md)
 
-Um novo artigo da knowledge base sobre como usar o catálogo de oferta no Adobe Campaign Classic foi criado. [Leia mais](https://helpx.adobe.com/campaign/kb/offer-best-practices.html)
+Um novo artigo da knowledge base sobre como usar o catálogo de oferta no Adobe Campaign Classic foi criado. [Leia mais](https://helpx.adobe.com/br/campaign/kb/offer-best-practices.html)
 
 A seção Sub-workflow activity foi aprimorada com um exemplo de uso. [Leia mais](../../workflow/using/sub-workflow.md)
 
