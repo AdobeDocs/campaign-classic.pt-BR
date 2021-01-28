@@ -6,28 +6,28 @@ description: Publicação de template de mensagem transacional
 audience: message-center
 content-type: reference
 topic-tags: message-templates
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 02dee9c4cc03784ccc20f147f816798248bd10f2
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '246'
-ht-degree: 45%
+ht-degree: 100%
 
 ---
 
 
-# Publicação de template{#template-publication}
+# Publicação do modelo{#template-publication}
 
 Quando o modelo de mensagem criado na instância de controle estiver concluído, você poderá publicá-lo. Esse processo também o publicará em todas as instâncias de execução.
 
-A publicação permite que você crie automaticamente dois modelos de mensagem no instância de execução, o que permitirá que você envie mensagens vinculadas a eventos batch e mensagens em tempo real.
+A publicação permite criar automaticamente dois modelos de mensagem nas instâncias de execução, o que permitirá enviar mensagens vinculadas a eventos em lote e em tempo real.
 
 >[!NOTE]
 >
->Ao publicar templates de mensagem transacionais, as regras de tipologia também são publicadas automaticamente nas instâncias de execução.
+>Ao publicar modelos de mensagem transacional, as regras de tipologia são publicadas automaticamente nas instâncias de execução.
 
 >[!IMPORTANT]
 >
->Sempre que fizer alterações em um modelo, certifique-se de publicá-lo novamente para que essas alterações sejam eficazes durante o delivery do mensagen transacional.
+>Sempre que fizer alterações em um modelo, publique-o novamente para que essas alterações estejam em vigor durante a entrega da mensagem transacional.
 
 1. Na instância de controle, vá para a pasta **[!UICONTROL Message Center > Transactional message templates]** da árvore.
 1. Selecione o template que deseja publicar em suas instâncias de execução.
@@ -39,7 +39,7 @@ Quando a publicação estiver concluída, ambos os templates de mensagem que ser
 
 ![](assets/messagecenter_deployed_model_001.png)
 
-Depois que um modelo é publicado, se o evento correspondente for acionado, a instância de execução receberá o evento, vinculará-o ao modelo transacional e enviará o mensagen transacional correspondente a cada recipient.
+Depois que um modelo for publicado, se o evento correspondente for acionado, a instância de execução receberá o evento, o vinculará ao modelo transacional e enviará a mensagem transacional correspondente a cada recipient.
 
 >[!NOTE]
 >
