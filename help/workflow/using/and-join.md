@@ -6,11 +6,11 @@ description: AND-join
 audience: workflow
 content-type: reference
 topic-tags: flow-control-activities
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 3eecc16442a11849c12819cf83392f60c5b82a13
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '190'
-ht-degree: 90%
+ht-degree: 100%
 
 ---
 
@@ -25,7 +25,7 @@ Por exemplo, você pode usar uma atividade AND-join no contexto de criação de 
 
 >[!NOTE]
 >
->Observe que transições de entrada configuradas com targeting dimension diferentes não podem ser agrupadas usando uma atividade **[!UICONTROL AND-join]**.
+>Observe que transições de entrada configuradas com dimensões de direcionamento diferentes não podem ser agrupadas usando uma atividade **[!UICONTROL AND-join]**.
 
 A população enviada da saída da atividade é determinada escolhendo um conjunto principal entre as transições de entrada na atividade.
 
