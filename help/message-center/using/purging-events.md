@@ -6,20 +6,20 @@ description: Limpeza de eventos
 audience: message-center
 content-type: reference
 topic-tags: instance-configuration
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 5bc6c8a824929c6a61cf562fc961e5bdd1867837
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '90'
-ht-degree: 66%
+ht-degree: 100%
 
 ---
 
 
 # Limpeza de eventos{#purging-events}
 
-Você pode usar o [assistente de implantação](../../production/using/database-cleanup-workflow.md#deployment-wizard) para configurar por quanto tempo os dados devem ser armazenados no banco de dados.
+Você pode usar o [assistente de implantação](../../production/using/database-cleanup-workflow.md#deployment-wizard) para definir por quanto tempo os dados devem ser armazenados no banco de dados
 
-A expurgação do evento é realizada automaticamente pelo [fluxo de trabalho de limpeza do banco de dados](../../production/using/database-cleanup-workflow.md). Esse workflow limpa os eventos recebidos e armazenados nas instâncias de execução e eventos arquivados em uma instância de controle.
+A limpeza de eventos é executada automaticamente pelo [Fluxo de trabalho de limpeza de banco de dados](../../production/using/database-cleanup-workflow.md). Esse workflow limpa os eventos recebidos e armazenados nas instâncias de execução e eventos arquivados em uma instância de controle.
 
 Use as setas conforme o caso para alterar as configurações de limpeza:
 
