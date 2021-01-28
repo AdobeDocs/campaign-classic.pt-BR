@@ -6,20 +6,20 @@ description: Publicação de template
 audience: message-center
 content-type: reference
 topic-tags: message-templates
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 02dee9c4cc03784ccc20f147f816798248bd10f2
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '226'
-ht-degree: 67%
+ht-degree: 100%
 
 ---
 
 
 # Desfazer a publicação de template{#template-unpublication}
 
-Depois que um template de mensagem é publicado nas instâncias de execução, você pode desfazer a publicação. Para obter mais informações sobre o processo de publicação do modelo, consulte [esta seção](../../message-center/using/template-publication.md).
+Depois que um modelo de mensagem é publicado nas instâncias de execução, você pode desfazer a publicação. Para obter mais informações sobre o processo de publicação do modelo, consulte [esta seção](../../message-center/using/template-publication.md).
 
-* Na verdade, um modelo publicado ainda pode ser chamado se o evento correspondente for acionado: se você não estiver mais usando um modelo de mensagem, é recomendável cancelar a publicação. Dessa forma, você pode evitar o envio de uma mensagem transacional indesejada por engano.
+* Na verdade, um modelo publicado ainda poderá ser chamado se o evento correspondente for acionado: se você não estiver mais usando um modelo de mensagem, será recomendável desfazer a publicação. Dessa forma, você pode evitar o envio de uma mensagem transacional indesejada por engano.
 
    Por exemplo, você publicou um template de mensagem que só usa para campanhas de Natal. Talvez você queira desfazer a publicação depois que o período de Natal acabar e publicá-lo novamente no próximo ano.
 
@@ -31,7 +31,7 @@ Depois que um template de mensagem é publicado nas instâncias de execução, v
 
 Para desfazer a publicação de um template de mensagem transacional, siga as etapas abaixo.
 
-1. Na instância de controle, vá para a pasta **[!UICONTROL Message Center > Transactional message templates]** da árvore.
+1. Na instância de controle, acesse a pasta **[!UICONTROL Message Center > Transactional message templates]** da árvore.
 1. Selecione o template do qual você deseja desfazer a publicação.
 1. Clique em **[!UICONTROL Unpublish]**.
 
@@ -45,10 +45,10 @@ O status do template de mensagem transacional muda de **[!UICONTROL Published]**
 
 Depois de desfazer a publicação:
 
-* Ambos os templates de mensagem (aplicados a eventos de tipo em lote e em tempo real) são excluídos de cada instância de execução.
+* Ambos os modelos de mensagem (aplicados a eventos de tipo em lote e em tempo real) são excluídos de cada instância de execução.
 
    Eles não aparecem mais na pasta **[!UICONTROL Administration > Production > Message Center Execution > Default > Transactional message templates]** (consulte [esta seção](../../message-center/using/template-publication.md)).
 
-* Quando um modelo não for publicado, você poderá excluí-lo da instância de controle.
+* Quando a publicação de um modelo for desfeita, você poderá excluí-lo da instância de controle.
 
    Para fazer isso, selecione-o na lista e clique no botão **[!UICONTROL Delete]** na parte superior direita da tela.
