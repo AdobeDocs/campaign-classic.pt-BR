@@ -6,11 +6,11 @@ description: Saiba mais sobre o Gerenciamento de privacidade
 audience: platform
 content-type: reference
 topic-tags: starting-with-adobe-campaign
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: c86b2d377c66e79cf4f10053f588796b95e6877e
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '887'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -28,7 +28,7 @@ Estes são os cinco principais recursos oferecidos pelo Adobe Campaign para gara
 
 ![](assets/privacy-gdpr-use-cases.png)
 
-Para obter mais informações, consulte [Direito de acesso e direito de ser esquecido](#right-access-forgotten) e [Consentimento, Retenção e Funções](#consent-retention-roles).
+Para obter mais informações, consulte [Direito de acesso e direito de ser esquecido](#right-access-forgotten) e [Consentimento, retenção e funções](#consent-retention-roles).
 
 <!--This section presents general information on what Privacy management is and the features provided by Adobe Campaign to manage the [Right to Access and Right to be Forgotten](#right-access-forgotten).
 
