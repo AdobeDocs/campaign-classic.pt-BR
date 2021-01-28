@@ -6,20 +6,20 @@ description: Execução do delivery
 audience: message-center
 content-type: reference
 topic-tags: event-processing
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 1788346f7dfe2c18c490363c90358fcb737f1646
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '236'
-ht-degree: 55%
+ht-degree: 100%
 
 ---
 
 
 # Execução do delivery{#delivery-execution}
 
-## Mensagen transacional enviando {#transactional-message-send}
+## Envio de mensagem transacional {#transactional-message-send}
 
-Na instância de execução, uma vez que os estágios de enriquecimento estejam completos e um template do delivery esteja vinculado ao evento, o delivery será enviado.
+Na instância de execução, uma vez que o estágio de enriquecimento esteja completo e um template do delivery esteja vinculado ao evento, o delivery será enviado.
 
 >[!NOTE]
 >
@@ -39,13 +39,13 @@ Por padrão, eles são classificados em subpastas por mês de delivery. Essa cla
 
 ## Monitoramento de mensagens transacionais {#transactional-message-monitoring}
 
-Para monitorar seus mensagens transacionais, verifique os logs do delivery. O acesso aos logs do delivery é apresentado em [nesta seção](../../delivery/using/delivery-dashboard.md#delivery-logs-and-history).
+Para monitorar suas mensagens transacionais, verifique os logs do delivery. O acesso aos logs do delivery é apresentado [nesta seção](../../delivery/using/delivery-dashboard.md#delivery-logs-and-history).
 
-Os delivery transacionais enviados da instância de execução são sincronizados de volta à instância de controle por meio de um fluxo de trabalho técnico (**[!UICONTROL Message Center execution instance]**) que é executado a cada hora.
+Os deliveries transacionais enviados da instância de execução são sincronizados de volta à instância de controle por meio de um fluxo de trabalho técnico (**[!UICONTROL Message Center execution instance]**) que é executado a cada hora.
 
 >[!NOTE]
 >
->Os delivery acumulam semanalmente os eventos com base na atualização mais recente do evento, e não na data de criação do evento. Portanto, ao extrair logs do delivery de mensagens transacionais da instância de controle, a ID do delivery associada a cada ID de log de delivery pode mudar com o tempo, conforme o log é atualizado (por exemplo, quando uma rejeição de entrada é recebida para o evento).
+>Os deliveries acumulam semanalmente os eventos com base na atualização mais recente do evento, e não na data de criação do evento. Portanto, ao extrair logs do delivery de mensagens transacionais da instância de controle, a ID do delivery associada a cada ID de log do delivery pode mudar com o tempo, conforme o log é atualizado (por exemplo, quando uma rejeição de entrada é recebida para o evento).
 
 <!--The transactional deliveries sent from the execution instance are synchronized back to the control instance as follows.
 
