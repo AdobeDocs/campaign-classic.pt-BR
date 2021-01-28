@@ -6,11 +6,11 @@ description: Gerenciamento de acesso
 audience: platform
 content-type: reference
 topic-tags: administration-basics
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: d1130691e40c0cac183db37a4c0b410d00bb696a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2984'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -203,7 +203,7 @@ Por padrão, o operador técnico &#39;webapp&#39; tem o direito nomeado ADMINIST
 
 >[!NOTE]
 >
->Para obter mais informações sobre Diretrizes de segurança, consulte a [lista de verificação de configuração do Adobe Campaign Security](https://helpx.adobe.com/campaign/kb/acc-security.html).
+>Para obter mais informações sobre Diretrizes de segurança, consulte a [lista de verificação de configuração do Adobe Campaign Security](https://helpx.adobe.com/br/campaign/kb/acc-security.html).
 
 ## Grupos de operadores {#operator-groups}
 
@@ -454,4 +454,4 @@ Os seguintes deliveries serão exibidos na visualização:
 
 >[!NOTE]
 >
->Ao gerenciar os eventos [de mensagens transacionais](../../message-center/using/about-transactional-messaging.md), as pastas **[!UICONTROL Real time events]** ou **[!UICONTROL Batch events]** não devem ser definidas como visualizações no instância de execução, pois isso pode levar a problemas de direito de acesso. Para obter mais informações sobre a coleção de eventos, consulte [esta seção](../../message-center/using/event-collection.md).
+>Ao gerenciar os eventos de [mensagens transacionais](../../message-center/using/about-transactional-messaging.md), as pastas **[!UICONTROL Real time events]** ou **[!UICONTROL Batch events]** não devem ser definidas como visualizações nas instâncias de execução, pois isso pode levar a problemas de direito de acesso. Para obter mais informações sobre a coleção do evento, consulte [esta seção](../../message-center/using/event-collection.md).
