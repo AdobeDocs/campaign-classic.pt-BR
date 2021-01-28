@@ -6,11 +6,11 @@ description: Esta seção descreve a arquitetura de mensagens transacionais do A
 audience: message-center
 content-type: reference
 topic-tags: introduction
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 2d30a70f8fbfb7a916638697c0f7a5060c2458ee
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1025'
-ht-degree: 93%
+ht-degree: 100%
 
 ---
 
@@ -64,19 +64,19 @@ Se precisar usar vários canais, instale e configure pacotes relacionados antes 
 
 ## Adição de um canal de delivery {#adding-a-delivery-channel}
 
-A adição de um canal de delivery (canal móvel, canal de aplicativo móvel, etc.) deverá ser executada antes de instalar o pacote de mensagens transacionais.
+A adição de um canal de delivery (canal móvel, canal de aplicativo móvel, etc.) deverá ser executada antes de instalar o pacote de mensagem transacional.
 
-O Adobe recomenda que você sempre adicione o pacote do canal do delivery antes de instalar o pacote do Mensagen transacional.
+A Adobe recomenda que você sempre adicione o pacote do canal do delivery antes de instalar o pacote de mensagem transacional.
 
-Entretanto, se você tiver iniciado um projeto de mensagens transacionais no canal de email e decidir adicionar um novo canal durante o projeto, siga as etapas abaixo.
+No entanto, se iniciou um projeto de mensagens transacionais no canal de email e, durante o projeto, decidiu adicionar um novo canal, você pode seguir as etapas abaixo.
 
 >[!NOTE]
 >
->Este procedimento só se aplica a clientes que usam um Windows NLServer instalado na mesma máquina em que estão trabalhando.
+>Esse procedimento só se aplica a clientes que usam um Windows NLServer instalado na mesma máquina em que estão trabalhando.
 
 1. Instale o canal necessário, por exemplo, o **Canal móvel**, por meio do assistente de importação de pacote (**[!UICONTROL Tools > Advanced > Import package... > Adobe Campaign Package]** ).
-1. Execute uma importação de arquivo ( **[!UICONTROL Tools > Advanced > Import package... > File]** ) e selecione o arquivo ****`[Your language]`**datakitnmspackagemessageCenter.xml**.
-1. No **[!UICONTROL XML content of the data to import]**, mantenha somente o modelo de delivery que corresponde ao canal adicionado. Por exemplo, se o **Canal móvel** foi adicionado, mantenha somente o elemento de **entidades** que corresponde ao **[!UICONTROL Mobile transactional message]** (smsTriggerMessage). Caso tenha adicionado o **Canal de aplicativo móvel**, mantenha somente a **mensagem transacional do iOS** (iosTriggerMessage) e a **mensagem transacional do Android** (androidTriggerMessage).
+1. Faça uma importação de arquivo (**[!UICONTROL Tools > Advanced > Import package... > File]**) e selecione o arquivo **datakitnms **`[Your language]`**packagemessageCenter.xml**.
+1. No **[!UICONTROL XML content of the data to import]**, mantenha somente o template do delivery que corresponde ao canal adicionado. Por exemplo, se o **Canal móvel** foi adicionado, mantenha somente o elemento de **entidades** que corresponde ao **[!UICONTROL Mobile transactional message]** (smsTriggerMessage). Caso tenha adicionado o **Canal de aplicativo móvel**, mantenha somente a **mensagem transacional do iOS** (iosTriggerMessage) e a **mensagem transacional do Android** (androidTriggerMessage).
 
    ![](assets/messagecenter_install_channel.png)
 
