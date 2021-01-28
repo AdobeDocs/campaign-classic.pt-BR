@@ -6,11 +6,11 @@ description: Saiba como enviar um email de aniversário com um workflow
 audience: workflow
 content-type: reference
 topic-tags: use-cases
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: a9d58e25ab17baaabf4ff8c109b53e83c7d93218
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '881'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -198,13 +198,13 @@ Combine os resultados com uma atividade **[!UICONTROL Union]**.
 
 Vincule os resultados das duas ramificações de atividade **[!UICONTROL Test]** a uma atividade **[!UICONTROL Email delivery]** para enviar um email para a lista de todos os seus recipients aniversariantes, até mesmo àqueles que nasceram em 29 de fevereiro durante um ano não bissexto.
 
-## Criação de delivery de SMS {#creating-a-recurring-delivery-in-a-targeting-workflow}
+## Criação de Recurring delivery {#creating-a-recurring-delivery-in-a-targeting-workflow}
 
 Adicione uma atividade de **Recurring delivery** com base no template de e-mail de aniversário que você deseja enviar.
 
 >[!CAUTION]
 >
->Para que os workflows sejam executados, os workflows técnicos relacionados ao pacote de Campanha devem ser iniciados. Para obter mais informações, consulte a seção [Lista de workflows técnicos](../../workflow/using/about-technical-workflows.md).
+>Para que os fluxos de trabalho sejam executados, os fluxos de trabalho técnicos relacionados ao pacote do Campaign devem ser iniciados. Para obter mais informações, consulte a seção [Lista de fluxos de trabalho técnicos](../../workflow/using/about-technical-workflows.md).
 >
 >Se as etapas de aprovação estiverem habilitadas para a campanha, as remessas serão enviadas apenas quando essas etapas tiverem sido confirmadas. Para obter mais informações, consulte a seção [Choosing the processes to be approved](../../campaign/using/marketing-campaign-approval.md#choosing-the-processes-to-be-approved) .
 
