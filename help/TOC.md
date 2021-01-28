@@ -12,7 +12,7 @@ translation-type: tm+mt
 source-git-commit: 048ceef9e4498b557601f3eb2db839e415d6e8c5
 workflow-type: tm+mt
 source-wordcount: '2290'
-ht-degree: 94%
+ht-degree: 96%
 
 ---
 
@@ -453,7 +453,7 @@ ht-degree: 94%
          + [Criação da lista de resumo](workflow/using/creating-a-summary-list.md)
          + [Enriquecimento de dados](workflow/using/enriching-data.md)
          + [Uso de agregações](workflow/using/using-aggregates.md)
-         + [Uso da funcionalidade de união de atividades Desduplicação-duplicados](workflow/using/deduplication-merge.md)
+         + [Uso da funcionalidade de mesclagem da atividade de desduplicação](workflow/using/deduplication-merge.md)
          + [Configurar um fluxo de trabalho de importação recorrente](workflow/using/recurring-import-workflow.md)
       + Projeto de queries {#designing-queries}
          + [Atualização da lista trimestral usando um query incremental](workflow/using/quarterly-list-update.md)
@@ -479,7 +479,7 @@ ht-degree: 94%
       + [Gerenciamento de imagens de atividades](workflow/using/managing-activity-images.md)
       + [Gerenciamento de tendências](workflow/using/managing-propensity.md)
       + [Gerenciar fusos horários](workflow/using/managing-time-zones.md)
-      + [Fluxos de trabalho técnicos](workflow/using/about-technical-workflows.md)
+      + [Workflows técnicos](workflow/using/about-technical-workflows.md)
 + Gerenciamento de ofertas {#managing-offers}
    + Introdução à interação {#interaction-overview}
       + [Interação e gestão de ofertas](interaction/using/interaction-and-offer-management.md)
@@ -687,7 +687,7 @@ ht-degree: 94%
       + [Visão geral da solução de problemas de produção](production/using/troubleshooting.md)
       + Problemas comuns e gerais {#common-general-issues-toc}
          + [Módulos e problemas frequentes](production/using/modules-and-frequent-issues.md)
-         + [Execução do workflow](production/using/workflow-execution.md)
+         + [Execução do fluxo de trabalho](production/using/workflow-execution.md)
          + [Senha perdida](production/using/lost-password.md)
          + [Atualização do console](production/using/console-update.md)
       + Solução de problemas de delivery {#delivery-troubleshooting-toc}
@@ -707,7 +707,7 @@ ht-degree: 94%
       + Solução de problemas técnicos {#technical-troubleshooting-toc}
          + [Rastreamento em pilha no Linux](production/using/stack-trace-in-linux.md)
          + [Comportamento JSP](production/using/jsp-behavior.md)
-         + [Localizando versão do Tomcat](production/using/locate-tomcat-version.md)
+         + [Localizar versão do Tomcat](production/using/locate-tomcat-version.md)
 + Guia de desenvolvedores {#configuring-campaign-classic}
    + Modelo de dados {#data-model}
       + [Sobre o modelo de dados](configuration/using/about-data-model.md)
