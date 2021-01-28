@@ -9,11 +9,11 @@ topic-tags: adobe-experience-manager
 index: y
 internal: n
 snippet: y
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 55ca41bfcacbd75846901474ae6f012dfdc8d1a9
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '431'
-ht-degree: 67%
+ht-degree: 100%
 
 ---
 
@@ -26,28 +26,28 @@ ht-degree: 67%
 
 ## Pré-requisitos {#adobe-io-prerequisites}
 
-Essa integração aplica-se somente a partir das versões **Campaign Classic 20.3, 20.2.4, 19.1.8 e Gold Standard 11**.
+Essa integração se aplica somente a partir das **versões Campaign Classic 20.3, 20.2.4, 19.1.8 e Gold Standard 11**.
 
 Antes de iniciar esta implementação, verifique se você tem:
 
-* um **Identificador de organização** válido: o identificador de organização do Sistema Identity Management (IMS) é o identificador exclusivo no Adobe Experience Cloud, usado, por exemplo, para o serviço VisitorID e o IMS Single-Sign On (SSO). [Saiba mais](https://experienceleague.adobe.com/docs/core-services/interface/manage-users-and-products/organizations.html)
-* a **Acesso do desenvolvedor** à sua organização.  Se você precisar solicitar os privilégios de Administrador do Sistema da IMS Org, siga o procedimento detalhado [nesta página](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/manage-developers.ug.html) e forneça esse acesso a todos os perfis do produto.
+* um **identificador de organização** valido: o identificador de organização do Identity Management System (IMS) é o identificador exclusivo da Adobe Experience Cloud, usado por exemplo para o serviço VisitorID e o IMS Single-Sign On (SSO). [Saiba mais](https://experienceleague.adobe.com/docs/core-services/interface/manage-users-and-products/organizations.html?lang=pt-BR)
+* um **Acesso de desenvolvedor** para sua organização.  Se você precisar solicitar os privilégios de Administrador do Sistema da IMS Org, siga o procedimento detalhado [nesta página](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/manage-developers.ug.html) e forneça esse acesso a todos os perfis do produto.
 >
 ## Etapa 1: Criar/atualizar projeto do Adobe I/O {#creating-adobe-io-project}
 
-1. Acesse o Adobe I/O e faça logon com o Administrador do sistema diretamente para a Organização IMS.
+1. Acesse o Adobe I/O e faça logon com o direito Administrador do sistema para o IMS Organization.
 
    >[!NOTE]
    >
-   > Verifique se você está conectado ao portal da Organização correto.
+   > Verifique se você está conectado ao portal correto do Organization.
 
-1. Extraia a ID do cliente de integração existente a partir do arquivo de configuração da instância ims/authIMSTAClientId. Atributo não existente ou vazio indica que o identificador do cliente não está configurado.
+1. Extraia a ID do cliente de integração existente a partir do arquivo de configuração da instância ims/authIMSTAClientId. Um atributo não existente ou vazio indica que o identificador do cliente não está configurado.
 
    >[!NOTE]
    >
-   >Se o identificador do cliente estiver vazio, você poderá **[!UICONTROL Create a New project]** diretamente no Adobe I/O.
+   >Se o identificador do cliente estiver vazio, será possível **[!UICONTROL Create a New project]** diretamente no Adobe I/O.
 
-1. Identifique o projeto existente usando o identificador de cliente extraído. Procure projetos existentes com o mesmo identificador de cliente que o extraído na etapa anterior.
+1. Identifique o projeto existente usando o identificador do cliente extraído. Procure projetos existentes com o mesmo identificador do cliente que o extraído na etapa anterior.
 
    ![](assets/do-not-localize/adobe_io_8.png)
 
