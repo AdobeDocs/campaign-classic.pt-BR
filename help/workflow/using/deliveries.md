@@ -6,18 +6,18 @@ description: Saiba mais sobre os workflows de delivery padrão
 audience: workflow
 content-type: reference
 topic-tags: technical-workflows
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 7cd76b5a31ed9fc0e64a650316ea29293c628233
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '438'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
 
 # Deliveries{#deliveries}
 
-Os workflows detalhados abaixo são instalados com o módulo **Delivery** por padrão.
+Os fluxos de trabalho detalhados abaixo são instalados com o módulo **Deliveries** por padrão.
 
 <table> 
  <tbody> 
