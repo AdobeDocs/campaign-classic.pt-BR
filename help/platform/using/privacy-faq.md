@@ -6,9 +6,9 @@ description: Saiba mais sobre privacidade e consentimento
 audience: platform
 content-type: reference
 topic-tags: starting-with-adobe-campaign
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 450889f845b7c5adad1085d7eba70e23030e6609
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '809'
 ht-degree: 100%
 
@@ -110,7 +110,7 @@ Ao receber uma solicitação de exclusão, o controlador de dados precisará gar
 
 ## Nova inclusão {#opt-in-again}
 
-### Um titular de dados, cujos dados tenham sido apagados do Adobe Campaign, pode ser reinserido?
+### Um titular de dados, cujos dados tenham sido apagados do Adobe Campaign, pode indicar o opt in depois?
 
 É possível que um titular de dados seja novamente aceito ou seja adicionado como um novo recipient depois que seus dados forem apagados do Adobe Campaign.
 
