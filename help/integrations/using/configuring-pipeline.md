@@ -6,11 +6,11 @@ description: Saiba como configurar o pipeline
 audience: integrations
 content-type: reference
 topic-tags: adobe-experience-manager
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 531eb23ff8fe1b77c37a51e7f99921b0bc071f0f
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '908'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -29,7 +29,7 @@ Os acionadores são usados para segmentação por um workflow de campanha que en
 
 Antes de iniciar esta configuração, verifique se você está usando:
 
-* Adobe Campaign 20.3, 20.2.4, 19.1.8 ou Gold Standard 11 mínimo
+* Versões mínimas necessárias: Adobe Campaign 20.3, 20.2.4, 19.1.8 ou Gold Standard 11
 * Versão do Adobe Analytics Standard
 
 Você também precisará:
