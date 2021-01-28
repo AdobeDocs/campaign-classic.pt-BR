@@ -6,11 +6,11 @@ description: Coleção de eventos
 audience: message-center
 content-type: reference
 topic-tags: event-processing
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: d1130691e40c0cac183db37a4c0b410d00bb696a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '137'
-ht-degree: 75%
+ht-degree: 100%
 
 ---
 
@@ -28,4 +28,4 @@ Depois que são coletados, os eventos são divididos, por workflows técnicos, e
 
 >[!NOTE]
 >
->No instância de execução, as pastas **[!UICONTROL Real time events]** ou **[!UICONTROL Batch events]** não devem ser definidas como visualização, pois isso pode levar a problemas de [direito de acesso](../../platform/using/access-management.md#about-permissions). Para obter mais informações sobre como configurar uma pasta como uma visualização, consulte [Sobre o visualização](../../platform/using/access-management.md#about-views).
+>No instância de execução, as pastas **[!UICONTROL Real time events]** ou **[!UICONTROL Batch events]** não devem ser definidas como visualizações, pois isso pode levar a problemas de [direito de acesso](../../platform/using/access-management.md#about-permissions). Para obter mais informações sobre como configurar uma pasta como uma visualização, consulte [Sobre visualizações](../../platform/using/access-management.md#about-views).
