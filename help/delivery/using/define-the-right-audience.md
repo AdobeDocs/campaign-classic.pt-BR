@@ -5,11 +5,11 @@ title: Definir o público-alvo correto
 audience: delivery
 content-type: reference
 topic-tags: deliveries-best-practices
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: fe7ff64d24113e026a47aa1c9f08daacce2b383e
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '480'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -65,8 +65,8 @@ O cancelamento da duplicação de endereços protege a reputação de envio e ga
 
 **Tópicos relacionados:**
 
-* [Atividade](../../workflow/using/deduplication.md) desduplicação-duplicada.
-* [Caso de uso: Uso da funcionalidade de união de atividades Desduplicação-duplicados](../../workflow/using/deduplication-merge.md)
+* [Atividade de desduplicação](../../workflow/using/deduplication.md).
+* [Caso de uso: uso da funcionalidade de mesclagem de atividades de desduplicação](../../workflow/using/deduplication-merge.md)
 
 ## Indexar endereços de email {#index-addresses}
 
