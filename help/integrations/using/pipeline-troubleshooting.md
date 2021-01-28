@@ -6,11 +6,11 @@ description: Configuração da integração
 audience: integrations
 content-type: reference
 topic-tags: adobe-experience-manager
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 57093a687534ed1e7f77738ca233d4cc86cf40cf
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '582'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -22,7 +22,7 @@ ht-degree: 97%
 A sua versão do Adobe Campaign Classic não é compatível com o pipeline.
 
 1. Verifique se o elemento [!DNL pipelined] está presente no arquivo de configuração. Caso não esteja, significa que não é compatível.
-1. Atualize para a Campanha 20.3 ou Gold Standard 11.
+1. Atualize para o Campaign 20.3 ou o Gold Standard 11.
 
 **Falha no pipeline com “ aurait dû commencer par `[` ou `{` (iRc=16384)”**
 
