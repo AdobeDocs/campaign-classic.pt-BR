@@ -95,7 +95,6 @@ vacuum full nmsdelivery;
 >* Os comandos **vácuo** e **re-index** bloquearão a tabela, que pausa alguns processos enquanto a manutenção é realizada.
 >* Para tabelas muito grandes (normalmente acima de 5 Gb), **vácuo cheio** pode tornar-se bastante ineficiente e levar muito tempo. O Adobe não recomenda usá-lo para a tabela **YyyNmsBroadLogXxx**.
 >* Esta operação de manutenção pode ser implementada por um fluxo de trabalho da Adobe Campaign, usando uma atividade **[!UICONTROL SQL]** (para obter mais informações, consulte [esta seção](../../workflow/using/architecture.md)). Certifique-se de programar a manutenção para um tempo de atividade baixo que não colidir com a janela de backup.
-
 >
 
 

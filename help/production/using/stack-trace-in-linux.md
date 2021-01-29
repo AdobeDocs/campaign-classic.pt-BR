@@ -23,7 +23,6 @@ Um **rastreio de pilha** representa um rastreio contido num ficheiro de tipo **c
 >
 >* Um arquivo **core** é chamado **core.`<num>`**.
 >* **gdb - O** Depurador GNU deve estar instalado no computador.
-
 >
 
 
