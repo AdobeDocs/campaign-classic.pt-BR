@@ -6,10 +6,10 @@ description: Monitore seus workflows do Campaign com o Workflow HeatMap
 audience: workflow
 content-type: reference
 topic-tags: use-cases
-translation-type: ht
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
-workflow-type: ht
-source-wordcount: '1333'
+translation-type: tm+mt
+source-git-commit: d34435b0b8714a87add6a5e3f82e4f94376f205b
+workflow-type: tm+mt
+source-wordcount: '1189'
 ht-degree: 100%
 
 ---
@@ -41,23 +41,6 @@ Mais precisamente, ajuda os administradores de plataforma a:
 O uso do Workflow HeatMap requer uma boa compreensão dos seguintes conceitos: [workflows](../../workflow/using/about-workflows.md), [atividades](../../workflow/using/about-activities.md) e [práticas recomendadas de workflow](../../workflow/using/workflow-best-practices.md).
 
 O Workflow HeatMap está disponível por padrão no Adobe Campaign a partir da versão 18.10. Se você tiver uma build entre 8700 e 8977 (18.10), também poderá se beneficiar desse recurso. Para solicitar o pacote correspondente, entre em contato com o [Atendimento ao cliente da Adobe](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html) e siga as instruções [desta página](https://helpx.adobe.com/br/campaign/kb/install-workflow-heatmap-package.html) para entender como instalá-lo.
-
-Quando você acessa o Worfklow HeatMap pela primeira vez, a seguinte janela pop-up será exibida. Este contrato permite a transferência e o armazenamento nos Estados Unidos, permitindo que o Adobe Campaign:
-
-* monitore as instâncias para investigar quaisquer problemas de desempenho.
-* colete dados para detecção de anomalias.
-
-Observe que a transferência de seus dados só está disponível para usuários que se conectam ao Adobe Campaign usando a Adobe ID.
-
-![](assets/wf_monitoring_agreement.png)
-
-Três opções estão disponíveis:
-
-* **[!UICONTROL Accept]** : ao aceitar este contrato, você autoriza o Adobe Campaign a coletar seus dados e a transferi-los para os Estados Unidos para que você possa receber ajuda no caso de detecções de anomalias.
-* **[!UICONTROL Refuse]** : ao recusar o contrato, seus dados não serão transferidos, mas você ainda poderá usar o Workflow Heatmap.
-* **[!UICONTROL Do not show this message again]** : ao clicar em **[!UICONTROL Do not show this message again]**, a janela pop-up deixará de ser exibida quando você acessar o Workflow Heatmap, mas ainda estará disponível no botão **[!UICONTROL Term of use]**.
-
-Essa opção não é definitiva, você sempre pode alterá-la clicando no botão **[!UICONTROL Term of use]**.
 
 ## Uso do HeatMap {#using-the-heatmap}
 
