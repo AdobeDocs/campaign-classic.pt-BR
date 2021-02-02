@@ -6,11 +6,11 @@ description: Teste A/B
 audience: workflow
 content-type: reference
 topic-tags: use-cases
-translation-type: ht
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
-workflow-type: ht
-source-wordcount: '1347'
-ht-degree: 100%
+translation-type: tm+mt
+source-git-commit: 98a2c5aa01b4d45ceeb14fb1ad7a607b236c2817
+workflow-type: tm+mt
+source-wordcount: '1337'
+ht-degree: 96%
 
 ---
 
@@ -34,6 +34,7 @@ Para criar o teste A/B, aplique as seguintes etapas:
 * [Etapa 3: criação de dois templates de delivery](#step-3--creating-two-delivery-templates)
 * [Etapa 4: configuração de deliveries no workflow](#step-4--configuring-the-deliveries-in-the-workflow)
 * [Etapa 5: criação do script](#step-5--creating-the-script)
+* [Etapa 6: definição do delivery final](#step-6--defining-the-final-delivery)
 * [Etapa 7: início do workflow](#step-7--starting-the-workflow)
 * [Etapa 8: análise do resultado](#step-8--analyzing-the-result).
 
@@ -49,7 +50,7 @@ Para criar o teste A/B, aplique as seguintes etapas:
 
    ![](assets/use_case_abtesting_targetwkfl_002.png)
 
-1. Altere o rótulo do workflow existente ou clique em **[!UICONTROL Add]** para criar um novo (para mais informações sobre isso, consulte esta [seção](../../campaign/using/marketing-campaign-deliveries.md#selecting-the-target-population)).
+1. Altere o rótulo do fluxo de trabalho existente ou clique em **[!UICONTROL Add]** para criar um novo.
 
    ![](assets/use_case_abtesting_targetwkfl_003.png)
 
@@ -183,7 +184,7 @@ A escolha do conteúdo de delivery destinado à população restante é calculad
 
 ### Exemplo de um script {#example-of-a-script}
 
-O script a seguir pode ser usado no workflow para construção do target. Para obter mais informações, consulte [Implementation](#implementation).
+O script a seguir pode ser usado como está no fluxo de trabalho de definição de metas (consulte [Configuração do script](../../workflow/using/a-b-testing.md#configuring-script)).
 
 ```
  // query the database to find the winner (best open rate)
@@ -229,12 +230,12 @@ O script a seguir pode ser usado no workflow para construção do target. Para o
    vars.deliveryId = delivery.id
 ```
 
-Para obter uma explicação detalhada do script, consulte [Detalhes do script](#details-of-the-script).
+Para obter uma explicação detalhada do script, consulte [esta seção](../../workflow/using/a-b-testing.md#details-of-the-script).
 
-### Implementação {#implementation}
+### Configuração do script {#configuring-script}
 
 1. Abra a atividade **[!UICONTROL JavaScript code]**.
-1. Copie o script oferecido no [Exemplo de um script](#example-of-a-script) na janela **[!UICONTROL JavaScript code]**.
+1. Copie o script apresentado [anteriormente](../../workflow/using/a-b-testing.md#example-of-a-script) na janela **[!UICONTROL JavaScript code]**.
 
    ![](assets/use_case_abtesting_configscript_002.png)
 
