@@ -6,11 +6,11 @@ description: Bancos de dados da lista de bloqueios
 audience: delivery
 content-type: reference
 topic-tags: deliverability-management
-translation-type: ht
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
-workflow-type: ht
-source-wordcount: '371'
-ht-degree: 100%
+translation-type: tm+mt
+source-git-commit: 3139a9bf5036086831e23acef21af937fcfda740
+workflow-type: tm+mt
+source-wordcount: '392'
+ht-degree: 90%
 
 ---
 
@@ -31,7 +31,7 @@ Veja a seguir uma lista das RBLs mais utilizadas. Para obter uma lista mais abra
 
    Consulte [https://www.spamhaus.org/](https://www.spamhaus.org/)
 
-   O banco de dados é mais importante. Estar classificado nesta lista geralmente é uma situação grave. Se isso acontecer, você deverá agir IMEDIATAMENTE e avisar serviços comerciais, deliverability e suporte ao Adobe Campaign.
+   O banco de dados é mais importante. Estar classificado nesta lista geralmente é uma situação grave. Se isso acontecer, você deverá agir IMEDIATAMENTE e avisar os serviços comerciais, a capacidade de entrega e o [Atendimento ao cliente do Adobe](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html).
 
 * **SpamCop**
 
@@ -43,13 +43,13 @@ Veja a seguir uma lista das RBLs mais utilizadas. Para obter uma lista mais abra
 
    Consulte [https://www.uribl.com/](https://www.uribl.com/)
 
-   Esta lista identifica os domínios que aparecem regularmente nas mensagens declaradas como spam. Se o seu domínio aparecer nessa lista, ele poderá afetar significativamente seu deliverability. Você deve informar os serviços deliverability e o suporte ao Adobe Campaign imediatamente.
+   Esta lista identifica os domínios que aparecem regularmente nas mensagens declaradas como spam. Se o seu domínio aparecer nessa lista, ele poderá afetar significativamente seu deliverability. Informe imediatamente os serviços de entrega e [o Atendimento ao cliente do Adobe](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html).
 
 * **SURBL**
 
    Consulte [http://www.surbl.org/](http://www.surbl.org/)
 
-   SURBL identifica os sites que aparecem regularmente como spam. Se o seu domínio aparecer nessa lista, ele poderá afetar significativamente seu deliverability. Você deve informar os serviços deliverability e o suporte ao Adobe Campaign imediatamente.
+   SURBL identifica os sites que aparecem regularmente como spam. Se o seu domínio aparecer nessa lista, ele poderá afetar significativamente seu deliverability. Informe imediatamente os serviços de entrega e [o Atendimento ao cliente do Adobe](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html).
 
 * **iX Manitu**
 
