@@ -1,14 +1,14 @@
 ---
-keywords: Campaign Classic;home;popular topics
+keywords: Campaign Classic;home;populares tópicos
 solution: Campaign Classic
 product: campaign
 title: Documentação do produto Adobe Campaign Classic
 topic: Premium
 translation-type: tm+mt
-source-git-commit: f6099fa9c8d1df7bc82dd9be0b575ca7f20b6645
+source-git-commit: b5b9e42eca25193cf4d69f654e74a02afd8adca9
 workflow-type: tm+mt
-source-wordcount: '292'
-ht-degree: 82%
+source-wordcount: '296'
+ht-degree: 81%
 
 ---
 
@@ -19,7 +19,7 @@ ht-degree: 82%
 
 ## Novidades
 
-* **[Conectando-se pelo IMS/Adobe ID? Atualize para as compilações mais recentes](integrations/using/about-adobe-id.md)**<br/> Se você estiver usando o IMS para se conectar à Campanha, é necessário atualizar para poder se conectar à Campanha após** 21 de março de 2021 **.
+* **[Conectando-se pelo IMS/Adobe ID? Atualize para as compilações mais recentes](integrations/using/about-adobe-id.md)**<br/> Se você estiver usando o IMS para se conectar à Campanha, é necessário atualizar para poder se conectar à Campanha após** 31 de março de 2021 **.
 
 * **[Proteja suas ](https://helpx.adobe.com/campaign/kb/gold-standard-upgrade.html)**<br/> instâncias de CampanhaAtualize para as compilações mais recentes para proteger sua plataforma de Campanha.
 
