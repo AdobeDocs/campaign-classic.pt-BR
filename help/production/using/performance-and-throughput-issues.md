@@ -7,10 +7,10 @@ audience: production
 content-type: reference
 topic-tags: troubleshooting
 translation-type: tm+mt
-source-git-commit: 50f95d7156e7104d90fa7a31eea30711b9c11bbf
+source-git-commit: 3139a9bf5036086831e23acef21af937fcfda740
 workflow-type: tm+mt
-source-wordcount: '687'
-ht-degree: 7%
+source-wordcount: '692'
+ht-degree: 8%
 
 ---
 
@@ -25,7 +25,7 @@ Consulte as [Notas de versão](../../rn/using/latest-release.md) para obter mais
 
 As diretrizes gerais para os requisitos de hardware para Campaign Classic no local estão detalhadas nesta [página](https://helpx.adobe.com/br/campaign/kb/hardware-sizing-guide.html).
 
-A equipe de consultoria pode fornecer aos clientes hospedados uma ferramenta que permite que você visualização facilmente quanto espaço é usado por vários tipos de tabelas no banco de dados, bem como o espaço usado no site SFTP. Além disso, fornece ferramentas que permitem a limpeza de dados desnecessários. Entre em contato com as equipes de consultoria ou suporte se precisar que essa ferramenta seja implementada. Estas são algumas coisas importantes para verificar usando esta ferramenta:
+A equipe de consultoria pode fornecer aos clientes hospedados uma ferramenta que permite que você visualização facilmente quanto espaço é usado por vários tipos de tabelas no banco de dados, bem como o espaço usado no site SFTP. Além disso, fornece ferramentas que permitem a limpeza de dados desnecessários. Entre em contato com o [Atendimento ao cliente do Adobe](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html) se precisar que essa ferramenta seja implementada. Estas são algumas coisas importantes para verificar usando esta ferramenta:
 
 * Se o tamanho do índice for maior que o tamanho da tabela, será necessário haver vácuo.
 * Verifique as tabelas com o máximo de borrão. Se estas tabelas forem frequentemente utilizadas, devem ser aspiradas.
