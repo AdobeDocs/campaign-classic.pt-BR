@@ -7,10 +7,10 @@ audience: rns
 content-type: reference
 topic-tags: latest-release-notes
 translation-type: tm+mt
-source-git-commit: db595e59f4725ba5d125e688e7bfc6d1c1a03d9f
+source-git-commit: 075bb4f97899053a664576c447605f17a033d5d9
 workflow-type: tm+mt
-source-wordcount: '1402'
-ht-degree: 96%
+source-wordcount: '1416'
+ht-degree: 95%
 
 ---
 
@@ -26,10 +26,7 @@ _23 de dezembro de 2020_
 > * Esta versão é fornecida com um novo protocolo de conexão: se você estiver se conectando à Campanha pelo Adobe Identity Service (IMS), a atualização é obrigatória para o servidor de Campanha e o console do cliente poderem se conectar à Campanha após **21 de março de 2021**.
    >
    > 
-* Esta versão vem com uma correção de segurança: a atualização é obrigatória para reforçar a segurança do ambiente.
-
->
-
+* Esta versão vem com uma [correção de segurança](https://helpx.adobe.com/security/products/campaign/apsb21-04.html): a atualização é obrigatória para reforçar a segurança do ambiente.
 
 
 
@@ -148,7 +145,7 @@ Verifique se você está usando as versões compatíveis de qualquer sistema lis
 
 _SDK do Campaign Mobile_
 
-A build 1.0.26 do SDK do iOS está disponível. Nesta nova build, adicionamos o suporte do iOS 13. Esta nova versão agora é compatível com a prioridade de notificação e o novo processo de gerenciamento de token de registro para notificações por push do iOS 13. Se você estiver executando aplicativos em uma versão anterior do SDK, será necessário recompilar seus aplicativos com o novo SDK. Para obter o SDK, entre em contato com o Atendimento ao cliente da Adobe.
+A build 1.0.26 do SDK do iOS está disponível. Nesta nova build, adicionamos o suporte do iOS 13. Esta nova versão agora é compatível com a prioridade de notificação e o novo processo de gerenciamento de token de registro para notificações por push do iOS 13. Se você estiver executando aplicativos em uma versão anterior do SDK, será necessário recompilar seus aplicativos com o novo SDK. Para obter o SDK, entre em contato com o [Atendimento ao cliente do Adobe](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html).
 
 **Correções**
 
