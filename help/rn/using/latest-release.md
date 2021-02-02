@@ -7,7 +7,7 @@ audience: rns
 content-type: reference
 topic-tags: latest-release-notes
 translation-type: tm+mt
-source-git-commit: 075bb4f97899053a664576c447605f17a033d5d9
+source-git-commit: b5b9e42eca25193cf4d69f654e74a02afd8adca9
 workflow-type: tm+mt
 source-wordcount: '1977'
 ht-degree: 95%
@@ -37,7 +37,7 @@ _27 de outubro de 2020_
 
 >[!CAUTION]
 >
-> * Esta versão é fornecida com um novo protocolo de conexão: se você estiver se conectando à Campanha pelo Adobe Identity Service (IMS), a atualização é obrigatória para o servidor de Campanha e o console do cliente poderem se conectar à Campanha após **21 de março de 2021**.
+> * Esta versão é fornecida com um novo protocolo de conexão: se você estiver se conectando à Campanha pelo Adobe Identity Service (IMS), a atualização é obrigatória para o servidor de Campanha e o console do cliente poderem se conectar à Campanha após **31 de março de 2021**.
 > * Esta versão vem com uma [correção de segurança](https://helpx.adobe.com/security/products/campaign/apsb21-04.html): a atualização é obrigatória para reforçar a segurança do ambiente.
 > * Se você estiver usando a integração de Acionadores da Experience Cloud por meio da autenticação do Auth, será necessário mover-se para a Adobe I/O conforme descrito [nesta página](../../integrations/using/configuring-adobe-io.md). O modo de autenticação do oAuth herdado será desativado em **30 de abril de 2021**.
 
@@ -120,7 +120,7 @@ Saiba mais na [página sobre recursos obsoletos e removidos](../../rn/using/depr
 **Aprimoramentos**
 
 * Vários aprimoramentos foram feitos no **console do cliente**:
-   * O protocolo de conexão foi atualizado para seguir o novo mecanismo de autenticação IMS. A atualização do console do servidor e do cliente é obrigatória para se conectar após 21 de março de 2021.
+   * O protocolo de conexão foi atualizado para seguir o novo mecanismo de autenticação IMS. A atualização do console do servidor e do cliente é obrigatória para se conectar após 31 de março de 2021.
    * Para evitar incompatibilidade com algumas restrições de regras de GPO de segurança da Internet, a tela de logon do console do cliente do Campaign foi substituída por um formulário Windows padrão integrado.
    * Correção de um problema ao copiar/colar atividades em um workflow usando o console do cliente de 64 bits. (NEO-27635)
 
