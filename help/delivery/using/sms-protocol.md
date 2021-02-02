@@ -6,11 +6,11 @@ description: Saiba mais sobre o conector SMS e como configurá-lo.
 audience: delivery
 content-type: reference
 topic-tags: configuring-channels
-translation-type: ht
-source-git-commit: 9a104fdc7bed89f56178d5ab638e1440e6342efc
-workflow-type: ht
-source-wordcount: '8424'
-ht-degree: 100%
+translation-type: tm+mt
+source-git-commit: 3139a9bf5036086831e23acef21af937fcfda740
+workflow-type: tm+mt
+source-wordcount: '8433'
+ht-degree: 99%
 
 ---
 
@@ -819,7 +819,7 @@ Se você tiver várias contas na mesma instância do Adobe Campaign que se conec
 ### Habilitar rastreamentos SMPP detalhados durante verificações {#enable-verbose}
 
 Você deve sempre ativar rastreamentos SMPP detalhados durante as verificações.
-Mesmo se você não conseguir verificar os registros sozinho, será mais fácil para o Suporte ajudá-lo.
+Mesmo que você não possa verificar os registros sozinho, será mais fácil para o [Atendimento ao cliente do Adobe](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html) ajudá-lo.
 
 ### Testar seu SMS {#test}
 
@@ -850,7 +850,7 @@ Verifique se `BIND_* PDUs` foram enviados corretamente. O item mais importante a
 
 Verifique se não há muitos `BIND_* PDU`s. Se houver muitos deles, isso poderá indicar que a conexão é instável. Consulte a seção [Problemas com conexões instáveis](../../delivery/using/sms-protocol.md#issues-unstable-connection) para obter mais informações.
 
-#### ENQUIRE_LINK {#enquire-link-pdus}
+#### INQUIRE_LINK {#enquire-link-pdus}
 
 Verifique se os `ENQUIRE_LINK PDU`s são trocados regularmente quando a conexão está ociosa.
 
