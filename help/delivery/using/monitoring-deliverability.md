@@ -6,11 +6,11 @@ description: Saiba mais sobre as ferramentas e as diretrizes sobre o monitoramen
 audience: delivery
 content-type: reference
 topic-tags: deliverability-management
-translation-type: ht
-source-git-commit: 6d5dbc16ed6c6e5a2e62ceb522e2ccd64b142825
-workflow-type: ht
-source-wordcount: '786'
-ht-degree: 100%
+translation-type: tm+mt
+source-git-commit: 11377b0218e20da9b1a5398539ebaa192801b283
+workflow-type: tm+mt
+source-wordcount: '773'
+ht-degree: 93%
 
 ---
 
@@ -71,17 +71,12 @@ As informações fornecidas são em tempo real, o que permite uma assistência p
 
 ## Relatório de monitoramento técnico da capacidade de entrega {#technical-deliverability-monitoring}
 
-O relatório técnico de monitoramento da capacidade de entrega é atualizado diariamente e está disponível ao navegar até **[!UICONTROL Monitoring]** > **[!UICONTROL Overview]** e clicar no link **[!UICONTROL Technical monitoring]** da guia **[!UICONTROL Home]** do Adobe Campaign. Ele inclui vários indicadores de qualidade de deliverability para sua plataforma.
+O relatório **Technical Deliverability Monitoring** inclui vários indicadores de qualidade de entrega para sua plataforma. Você pode receber esse relatório diário por email. Para solicitar, abra um [Caso de suporte](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html) específico e especifique:
 
-Esses indicadores são atualizados diariamente às 9h.
+* o nome da instância
+* os endereços de email para os quais enviar o relatório
 
->[!NOTE]
->
->Além disso, você pode receber um relatório diário por email em um endereço especificado. Informe o endereço de email solicitado por email ou pelo Adobe Campaign Extranet.
-
-![](assets/s_tn_del_monitoring.png)
-
-Os seguintes indicadores são usados no relatório:
+Esses relatórios contêm os seguintes indicadores:
 
 * **[!UICONTROL Reverse DNS]** : O Adobe Campaign verifica se um DNS reverso é fornecido para um endereço IP e se ele é apontado corretamente ao IP.
 
@@ -92,6 +87,9 @@ Os seguintes indicadores são usados no relatório:
 * **[!UICONTROL IP and RBL domain]** (Lista de buracos negros em tempo real): uma lista de endereços IP e domínios que foram sinalizados por organizações de listas de bloqueios por má reputação de envios. Essas listas são mantidas por organizações dedicadas como Spamhaus, Spamcop, SURBL/URIBL, etc. Atualmente, o Adobe Campaign processa verificações contra RBLs que têm um impacto significativo no delivery. Essas RBLs refletem sua reputação e podem ser consultadas pelos ISPs antes de aceitarem seus emails.
 
 * **[!UICONTROL SNDS]** (Serviços de dados de rede inteligente): um [serviço anti-spam do Windows Live Hotmail](https://sendersupport.olc.protection.outlook.com/snds/FAQ.aspx). O Hotmail é o único ISP que fornece esse tipo de informação. As pontuações de referência são um resultado de filtro verde, uma taxa de reclamação inferior a 0,1% e zero armadilhas de spam.
+
+Esses indicadores são atualizados diariamente às 9h.
+
 
 <!--### Delivery Reports - Broadcast Statistics {#broadcast-statistics}
 
