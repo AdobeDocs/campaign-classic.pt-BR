@@ -7,9 +7,9 @@ audience: integrations
 content-type: reference
 topic-tags: connecting-via-an-adobe-id
 translation-type: tm+mt
-source-git-commit: db595e59f4725ba5d125e688e7bfc6d1c1a03d9f
+source-git-commit: b5b9e42eca25193cf4d69f654e74a02afd8adca9
 workflow-type: tm+mt
-source-wordcount: '194'
+source-wordcount: '193'
 ht-degree: 68%
 
 ---
@@ -29,7 +29,7 @@ Usuários do Campaign pode se conectar ao Adobe Campaign usando sua Adobe ID. Es
 
 >[!IMPORTANT]
 >
->Se estiver se conectando à Campanha pelo Adobe Identity Service (IMS), é necessário atualizar para a compilação mais recente para poder se conectar à Campanha depois de **21 de março de 2021**. Essa atualização é obrigatória para o servidor de Campanha e o console do cliente. Dependendo da sua versão atual, é necessário atualizar para uma das seguintes versões:
+>Se estiver se conectando à Campanha pelo Adobe Identity Service (IMS), é necessário atualizar para a compilação mais recente para poder se conectar à Campanha depois de **31 de março de 2021**. Essa atualização é obrigatória para o servidor de Campanha e o console do cliente. Dependendo da sua versão atual, é necessário atualizar para uma das seguintes versões:
 >
 > * [Campaign Gold Standard 11](../../rn/using/gold-standard.md)
 > * [Campanha 20.3.3](../../rn/using/latest-release.md)
