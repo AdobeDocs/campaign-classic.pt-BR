@@ -7,10 +7,10 @@ audience: rns
 content-type: reference
 topic-tags: latest-release-notes
 translation-type: tm+mt
-source-git-commit: db595e59f4725ba5d125e688e7bfc6d1c1a03d9f
+source-git-commit: 075bb4f97899053a664576c447605f17a033d5d9
 workflow-type: tm+mt
-source-wordcount: '984'
-ht-degree: 92%
+source-wordcount: '1024'
+ht-degree: 86%
 
 ---
 
@@ -32,13 +32,12 @@ _22 de dezembro de 2020_
 >[!CAUTION]
 >
 > * Esta versão é fornecida com um novo protocolo de conexão: se você estiver se conectando à Campanha pelo Adobe Identity Service (IMS), a atualização é obrigatória para o servidor de Campanha e o console do cliente poderem se conectar à Campanha após **21 de março de 2021**.
-   >
-   > 
-* Esta versão vem com uma [correção de segurança](https://helpx.adobe.com/security/products/campaign/apsb21-04.html): a atualização é obrigatória para reforçar a segurança do ambiente.
+> * Esta versão vem com uma [correção de segurança](https://helpx.adobe.com/security/products/campaign/apsb21-04.html): a atualização é obrigatória para reforçar a segurança do ambiente.
+> * Se você estiver usando a integração de Acionadores da Experience Cloud por meio da autenticação do Auth, será necessário mover-se para a Adobe I/O conforme descrito [nesta página](../../integrations/using/configuring-adobe-io.md). O modo de autenticação do oAuth herdado será desativado em **30 de abril de 2021**.
+
 >
 >
 Saiba mais nas [Perguntas frequentes sobre atualização do Gold Standard 11](https://helpx.adobe.com/campaign/kb/gold-standard-upgrade.html).
-
 
 O build 9032@d3b452f inclui os seguintes aprimoramentos e correções:
 
@@ -46,7 +45,7 @@ O build 9032@d3b452f inclui os seguintes aprimoramentos e correções:
 
 * A autenticação da integração dos acionadores originalmente baseada na configuração da autenticação oAUTH para acessar o pipeline agora foi alterada e movida para o Adobe I/O. [Saiba mais](../../integrations/using/configuring-adobe-io.md)
 
-* Após o fim do suporte para o protocolo binário herdado APNs do iOS, todas as instâncias que usam esse protocolo são atualizadas para o protocolo HTTP/2 durante a pós-atualização.
+* Após o [fim do suporte para o protocolo binário legado iOS APNs](https://developer.apple.com/news/?id=c88acm2b), todas as instâncias que usam este protocolo são atualizadas para o protocolo HTTP/2 durante a pós-atualização.
 
 * Correção de um problema de segurança para reforçar a proteção contra situações de SSRF (Server Side Request Forgery). (NEO-27777)
 
