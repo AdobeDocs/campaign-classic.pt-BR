@@ -7,10 +7,10 @@ audience: platform
 content-type: reference
 topic-tags: importing-and-exporting-data
 translation-type: tm+mt
-source-git-commit: 1cde12d33551206da12e03a7e8deb198d427ab3a
+source-git-commit: 3139a9bf5036086831e23acef21af937fcfda740
 workflow-type: tm+mt
-source-wordcount: '654'
-ht-degree: 96%
+source-wordcount: '661'
+ht-degree: 93%
 
 ---
 
@@ -27,7 +27,7 @@ Para fazer isso:
    >
    >O Painel de controle do Campaign está disponível para todos os clientes hospedados no AWS (exceto para clientes que hospedam suas instâncias de marketing no local).
 
-1. Caso sua instalação do Adobe Campaign seja hospedada pela Adobe, envie uma solicitação para o atendimento ao cliente para ter os utilitários necessários instalados no servidor.
+1. Se sua instalação do Adobe Campaign for hospedada pelo Adobe, entre em contato com o [Adobe Customer Care](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html) para ter os utilitários necessários instalados no servidor.
 1. Caso a instalação do Adobe Campaign seja no local, instale o utilitário que deseja usar (por exemplo: GPG, GZIP) e as chaves necessárias (chave de criptografia) no servidor de aplicativos.
 
 Em seguida, você pode usar os comandos de pré-processamento desejados em seus workflows:
