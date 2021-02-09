@@ -1,15 +1,15 @@
 ---
 solution: Campaign Classic
 product: campaign
-title: Configuração de teste A/B
+title: Configuração do teste A/B
 description: Saiba como configurar o teste A/B no Campaign Classic.
 audience: delivery
 content-type: reference
 topic-tags: a-b-testing
 translation-type: tm+mt
-source-git-commit: 1330d4658d039f27a98535bf9885bffbfa0be3c9
+source-git-commit: a341980e9d940857388bb2755e5eaa74824cf6ea
 workflow-type: tm+mt
-source-wordcount: '212'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -23,7 +23,7 @@ Esta seção detalha como criar um fluxo de trabalho para executar um teste A/B.
 
 1. Adicione uma atividade [Dividir](../../workflow/using/split.md) para dividir a população direcionada em vários subconjuntos.
 
-1. Abra a atividade e configure cada subconjunto de acordo com suas necessidades. Para obter mais informações sobre como configurar uma atividade **[!UICONTROL Split]**, consulte esta seção.
+1. Abra a atividade e configure cada subconjunto de acordo com suas necessidades. Para obter mais informações sobre como configurar uma atividade **[!UICONTROL Split]**, consulte [esta seção](../../workflow/using/split.md).
 
    Neste exemplo, queremos testar 2 novos assuntos para um boletim informativo apresentando cada um deles a 10% da população-alvo.
 
