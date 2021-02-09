@@ -7,10 +7,10 @@ audience: delivery
 content-type: reference
 topic-tags: sending-emails
 translation-type: tm+mt
-source-git-commit: 72fdac4afba6c786cfbd31f4a916b0539ad833e3
+source-git-commit: 07ed17a093cb6fb2d7aae376325a127c61b1dcc2
 workflow-type: tm+mt
-source-wordcount: '1398'
-ht-degree: 6%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -147,7 +147,7 @@ Consequentemente, você deve aguardar até o final do período de validade para 
 
 <!--The fact that the Success percentage will go to 100% very quickly indicates that your instance has been upgraded to the Enhanced MTA.-->
 
-## Taxa de transferência da entrega
+### Taxa de transferência da entrega
 
 O gráfico de throughput do Delivery da Campanha não exibirá mais a throughput para seus recipient de e-mail. Esse gráfico agora mostrará a velocidade de saída para o relé de suas mensagens da Campanha para o MTA aprimorado.
 
@@ -163,7 +163,7 @@ Quando uma mensagem estiver na fila do MTA aprimorado por 3,5 dias e não for en
 
 Para obter mais informações sobre o período de validade, consulte [esta seção](../../delivery/using/steps-sending-the-delivery.md#defining-validity-period).
 
-## Assinatura DKIM
+### Assinatura DKIM
 
 A assinatura de autenticação de email DKIM (DomainKeys Identified Mail) é feita pelo MTA aprimorado. A assinatura do DKIM pelo MTA nativo do Campaign será desativada na tabela Domain management como parte da atualização do MTA aprimorado.
 Para obter mais informações sobre o DKIM, consulte [esta seção](../../delivery/using/technical-recommendations.md#dkim).
