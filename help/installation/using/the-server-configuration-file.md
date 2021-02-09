@@ -7,10 +7,10 @@ audience: installation
 content-type: reference
 topic-tags: appendices
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: f39a84108c1f3327a469d5a230518652647ed63e
 workflow-type: tm+mt
-source-wordcount: '7851'
-ht-degree: 8%
+source-wordcount: '7846'
+ht-degree: 7%
 
 ---
 
@@ -324,7 +324,7 @@ No nó **dataStore > dataSource > dbcnx**, defina as configurações de conexão
   </tr> 
   <tr> 
    <td> login<br /> </td> 
-   <td> Account<br /> </td> 
+   <td> Conta<br /> </td> 
    <td> Cadeia de caracteres<br /> </td> 
    <td> </td> 
   </tr> 
@@ -1561,7 +1561,7 @@ Estes são os diferentes parâmetros do nó **mta**. Esta é a configuração do
   </tr> 
   <tr> 
    <td> useMomentum<br /> </td> 
-   <td> Se definido como "true", sua instância está usando <a href="https://helpx.adobe.com/br/campaign/kb/acc-campaign-enhanced-mta.html" target="_blank">MTA aprimorada</a>.<br /> </td> 
+   <td> Se definido como "true", sua instância está usando <a href="../../delivery/using/sending-with-enhanced-mta.md" target="_blank">MTA aprimorada</a>.<br /> </td> 
    <td> Boolean<br /> </td> 
    <td> <br /> </td>b 
   </tr>
