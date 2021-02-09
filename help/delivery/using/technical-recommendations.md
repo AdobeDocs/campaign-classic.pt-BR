@@ -6,10 +6,10 @@ description: Descubra técnicas, configurações e ferramentas que você pode us
 audience: delivery
 content-type: reference
 topic-tags: deliverability-management
-translation-type: ht
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
-workflow-type: ht
-source-wordcount: '2432'
+translation-type: tm+mt
+source-git-commit: 72fdac4afba6c786cfbd31f4a916b0539ad833e3
+workflow-type: tm+mt
+source-wordcount: '2427'
 ht-degree: 100%
 
 ---
@@ -69,6 +69,10 @@ Vale observar que os registros feitos no nível dos servidores DNS podem levar a
 
 ### DKIM {#dkim}
 
+>[!IMPORTANT]
+>
+>Para instalações hospedadas ou híbridas, se você atualizou para o [MTA aprimorado](../../delivery/using/sending-with-enhanced-mta.md), a assinatura de autenticação de email do DKIM é feita pelo MTA aprimorado para todas as mensagens em todos os domínios.
+
 A autenticação DKIM (DomainKeys Identified Mail) é uma sucessora do SPF e usa criptografia de chave pública que permite ao servidor de email de recebimento verificar se uma mensagem foi enviada pela pessoa ou entidade pela qual alega ter sido enviada e se o conteúdo da mensagem foi alterado entre o momento em que foi originalmente enviada (e o DKIM &quot;assinado&quot;) e o momento em que foi recebida. Normalmente, esse padrão usa o domínio no cabeçalho &quot;From&quot; ou &quot;Sender&quot;. Para garantir o nível de segurança do DKIM, o 1024b é o tamanho de criptografia recomendado pelas Práticas Recomendadas. As chaves DKIM inferiores não serão consideradas válidas pela maioria dos provedores de acesso.
 
 O DKIM vem de uma combinação dos princípios de autenticação do DomainKeys, Yahoo! e Cisco Identified Internet Mail, e é usado para verificar a autenticidade do domínio emissor e garantir a integridade da mensagem.
@@ -87,10 +91,6 @@ O uso de DKIM requer alguns pré-requisitos:
 >* Não é necessário ativar DomainKeys e DKIM para o mesmo domínio, pois DKIM é uma versão aprimorada do DomainKeys.
 >* Os domínios a seguir validam atualmente o DKIM: AOL, Gmail.
 
-
->[!IMPORTANT]
->
->Para instalações hospedadas ou híbridas, se você atualizou para o [MTA aprimorado](https://helpx.adobe.com/br/campaign/kb/acc-campaign-enhanced-mta.html), a assinatura de autenticação de email do DKIM é feita pelo MTA aprimorado para todas as mensagens em todos os domínios.
 
 ### DMARC {#dmarc}
 
