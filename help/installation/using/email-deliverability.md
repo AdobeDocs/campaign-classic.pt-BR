@@ -7,10 +7,10 @@ audience: installation
 content-type: reference
 topic-tags: additional-configurations
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: fd6195ca447fa0345189f3153f44ad2f9a067210
 workflow-type: tm+mt
 source-wordcount: '2973'
-ht-degree: 21%
+ht-degree: 20%
 
 ---
 
@@ -131,15 +131,15 @@ Por padrão, o servidor de estatísticas escuta na porta 7777. Essa porta pode s
 
 ## Configuração MX {#mx-configuration}
 
+>[!IMPORTANT]
+>
+>Para instalações hospedadas ou híbridas, se você tiver atualizado para [MTA aprimorado](../../delivery/using/sending-with-enhanced-mta.md), as regras de throughput do delivery **[!UICONTROL MX management]** não serão mais usadas. O MTA aprimorado usa regras MX próprias que permitem personalizar a capacidade por domínio com base na sua própria reputação histórica de email e no feedback em tempo real proveniente dos domínios em que você está enviando emails.
+
+As seções abaixo aplicam-se apenas às instalações locais e às instalações hospedadas/híbridas que utilizam a Campanha herdada MTA.
+
 ### Sobre as regras MX {#about-mx-rules}
 
 As regras MX (Mail eXchanger) são as regras que gerenciam a comunicação entre um servidor de envio e um servidor de recebimento.
-
->[!IMPORTANT]
->
->Para instalações hospedadas ou híbridas, se você atualizou para o MTA aprimorado, as regras de capacidade do delivery **[!UICONTROL MX management]** não serão mais usadas. O MTA aprimorado usa regras MX próprias que permitem personalizar a capacidade por domínio com base na sua própria reputação histórica de email e no feedback em tempo real proveniente dos domínios em que você está enviando emails.
->
->Para obter mais informações sobre o MTA aprimorado do Adobe Campaign, consulte este [documento](https://helpx.adobe.com/br/campaign/kb/acc-campaign-enhanced-mta.html).
 
 Essas regras são recarregadas automaticamente todas as manhãs às 6h (hora do servidor) para fornecer regularmente a instância do cliente.
 
