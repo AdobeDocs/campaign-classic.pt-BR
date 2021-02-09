@@ -7,7 +7,7 @@ audience: configuration
 content-type: reference
 topic-tags: schema-reference
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: 1fdee02e98ce66ec184d8587d0838557f027cf75
 workflow-type: tm+mt
 source-wordcount: '4014'
 ht-degree: 1%
@@ -253,7 +253,7 @@ Por padrão, o delivery Adobe Campaign e os logs de rastreamento têm uma duraç
 
 Saiba mais sobre a retenção de dados em [Diretrizes de privacidade e segurança da Campanha](https://helpx.adobe.com/br/campaign/kb/campaign-privacy-overview.html#consent).
 
-Saiba mais sobre o fluxo de trabalho de limpeza da base de dados de Campanha [nesta seção](../../production/using/database-cleanup-workflow.md)..
+Saiba mais sobre o fluxo de trabalho de limpeza da base de dados de Campanha [nesta seção](../../production/using/database-cleanup-workflow.md).
 
 >[!IMPORTANT]
 >
