@@ -7,10 +7,10 @@ audience: production
 content-type: reference
 topic-tags: troubleshooting
 translation-type: tm+mt
-source-git-commit: f24642223a2ec9f3d8e78e2f7e71a55bf14b80c7
+source-git-commit: 1fdee02e98ce66ec184d8587d0838557f027cf75
 workflow-type: tm+mt
-source-wordcount: '155'
-ht-degree: 9%
+source-wordcount: '171'
+ht-degree: 8%
 
 ---
 
@@ -20,9 +20,12 @@ ht-degree: 9%
 Você pode alterar ou recuperar uma senha perdida.
 Há dois cenários possíveis:
 
-**Senha perdida por um operador Adobe Campaign**
+* [Senha perdida por um operador Adobe Campaign](#password-lost-by-campaign-operator)
+* [Senha interna perdida](#internal-password-lost)  (somente clientes locais)
 
-Nesse caso, você pode alterar a senha do operador em questão.
+## Senha perdida por um operador de Campanha {#password-lost-by-campaign-operator}
+
+Se um operador Adobe Campaign perder a senha, você poderá alterá-la.
 Para fazer isso, siga as etapas abaixo:
 
 1. Conecte-se por meio de um operador com direitos de administrador.
@@ -31,9 +34,13 @@ Para fazer isso, siga as etapas abaixo:
 
    ![](assets/operator-passwd.png)
 
-1. Defina a nova senha do operador. Recomendamos que os operadores alterem sua senha quando reconectarem pela primeira vez.
+1. Defina a nova senha do operador. Recomendamos que o operador altere sua senha quando ele se reconectar pela primeira vez.
 
-**Perda de senha interna (somente clientes locais)**
+## Senha interna perdida {#internal-password-lost}
+
+>[!NOTE]
+>
+>Esta seção aplica-se apenas a clientes locais.
 
 Se a senha interna for perdida, você deverá reinicializá-la.
 Para isso, execute o seguinte procedimento:
