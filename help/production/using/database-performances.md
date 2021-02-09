@@ -7,7 +7,7 @@ audience: production
 content-type: reference
 topic-tags: troubleshooting
 translation-type: tm+mt
-source-git-commit: 50f95d7156e7104d90fa7a31eea30711b9c11bbf
+source-git-commit: 1fdee02e98ce66ec184d8587d0838557f027cf75
 workflow-type: tm+mt
 source-wordcount: '481'
 ht-degree: 8%
@@ -46,9 +46,9 @@ Verifique se a tarefa de limpeza do banco de dados está operacional. Para fazer
 
 Verifique se a manutenção do banco de dados está programada e executada corretamente. Para fazer isso, entre em contato com o administrador do banco de dados para saber mais sobre:
 
-* o seu programa de manutenção,
-* planos de manutenção anteriormente executados,
-* visualização nos registros de scripts.
+* O seu programa de manutenção
+* Planos de manutenção anteriormente executados
+* Exibição dos registros de script
 
 Para obter mais informações, consulte [esta seção](../../production/using/recommendations.md).
 
@@ -60,9 +60,9 @@ Para obter mais informações, consulte [esta seção](../../production/using/re
 
 Verifique o número e o tamanho das tabelas de trabalho. Quando excedem um determinado tamanho, o desempenho do banco de dados é afetado. Essas tabelas são criadas por workflows e delivery. Eles permanecem no banco de dados enquanto workflows e delivery estão ativos. Para limitar o tamanho das tabelas de trabalho, é possível realizar as seguintes operações:
 
-* parar ou excluir delivery com os seguintes status: **[!UICONTROL Failed]** , **[!UICONTROL In progress]** , **[!UICONTROL Ready for delivery]** ou **[!UICONTROL Paused]** .
-* parar ou eliminar workflows que estejam em pausa devido a um erro,
-* pare todos os workflows usados para testes que não contêm uma atividade **[!UICONTROL End]** e cujo status, portanto, permanece **[!UICONTROL Paused]**.
+* Parar ou excluir delivery com os seguintes status: **[!UICONTROL Failed]**, **[!UICONTROL In progress]**, **[!UICONTROL Ready for delivery]** ou **[!UICONTROL Paused]**.
+* Parar ou excluir workflows que estão pausados devido a um erro.
+* Pare todos os workflows usados para testes que não contêm uma atividade **[!UICONTROL End]** e cujo status, portanto, permanece **[!UICONTROL Paused]**.
 
 >[!IMPORTANT]
 >
@@ -72,14 +72,13 @@ Verifique o número e o tamanho das tabelas de trabalho. Quando excedem um deter
 
 Dependendo das configurações de instalação do Adobe Campaign, duas ferramentas podem ser usadas para monitoramento da plataforma:
 
-* a página de produção da instância. Para obter mais informações, consulte [Monitoramento manual](../../production/using/monitoring-processes.md#manual-monitoring).
-* o script netreport. Para obter mais informações, consulte [Monitoramento automático por meio de scripts Adobe Campaign](../../production/using/monitoring-processes.md#automatic-monitoring-via-adobe-campaign-scripts).
+* A página de produção da instância. Para obter mais informações, consulte [Monitoramento manual](../../production/using/monitoring-processes.md#manual-monitoring).
+* O script *netreport*. Para obter mais informações, consulte [Monitoramento automático por meio de scripts Adobe Campaign](../../production/using/monitoring-processes.md#automatic-monitoring-via-adobe-campaign-scripts).
 
 ## Especifica {#specifics}
 
 Pode ser necessário executar um diagnóstico em tempo real para identificar a causa do problema. Start verificando o processo e os arquivos de log da plataforma, em seguida, monitore a atividade do banco de dados ao recriar o problema. Preste especial atenção ao seguinte:
 
-* o plano de execução da manutenção,
-* QUERY SQL sendo executados,
-* se os processos externos estão ou não em execução ao mesmo tempo (limpeza, importações, cálculo de agregação, etc.).
-
+* O plano de execução da manutenção
+* QUERY SQL sendo executados
+* Se os processos externos estão ou não sendo executados ao mesmo tempo (limpeza, importações, cálculo de agregação etc.).
