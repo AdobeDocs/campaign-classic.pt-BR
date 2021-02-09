@@ -7,10 +7,10 @@ audience: installation
 content-type: reference
 topic-tags: additional-configurations
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: 5fa848d86f951cb9dc40eb7981abea29c1092291
 workflow-type: tm+mt
 source-wordcount: '1304'
-ht-degree: 2%
+ht-degree: 3%
 
 ---
 
@@ -102,7 +102,7 @@ Certifique-se de ajustar esses parâmetros de acordo com a throughput de envio d
 
 ## Configuração do endereço de email CCO (no local) {#configuring-the-bcc-email-address--on-premise-}
 
->[!CAUTION]
+>[!IMPORTANT]
 >
 >Por motivos de privacidade, os emails CCO devem ser processados por um sistema de arquivamento capaz de armazenar informações de identificação pessoal (PII) seguras.
 
@@ -125,7 +125,7 @@ No arquivo **config-`<instance name>.xml`**, use os seguintes parâmetros para d
 
 ## Mudar para a nova Cco de Correio Eletrônico {#updated-email-archiving-system--bcc-}
 
->[!CAUTION]
+>[!IMPORTANT]
 >
 >O sistema de arquivamento de e-mails (BCC) foi alterado com o Adobe Campaign 17.2 (build 8795). Se você estiver atualizando de uma versão mais antiga e já estiver usando recursos de arquivamento de e-mail, é necessário atualizar manualmente para o novo sistema de arquivamento de e-mails (BCC).
 
