@@ -5,9 +5,9 @@ title: Verificar antes de enviar
 audience: delivery
 content-type: reference
 topic-tags: deliveries-best-practices
-translation-type: ht
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
-workflow-type: ht
+translation-type: tm+mt
+source-git-commit: 1330d4658d039f27a98535bf9885bffbfa0be3c9
+workflow-type: tm+mt
 source-wordcount: '861'
 ht-degree: 100%
 
@@ -56,7 +56,7 @@ Se você tiver vários conteúdos para um delivery de email, poderá usar o test
 
 * Selecione aquela com a maior taxa de sucesso e envie-a para o restante do seu público-alvo
 
-Saiba mais [nesta seção](../../workflow/using/a-b-testing.md).
+Saiba mais [nesta seção](../../delivery/using/get-started-a-b-testing.md).
 
 ## Verifique se a mensagem foi entregue {#make-sure-your-message-is-delivered}
 
