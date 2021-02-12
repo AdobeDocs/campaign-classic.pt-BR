@@ -10,7 +10,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: ec03e5bfdacc16ce148b24e200b517d73fae00b3
+source-git-commit: 3b82796182525ffa55b17fe8ac2f84f1bec230cf
 workflow-type: tm+mt
 source-wordcount: '484'
 ht-degree: 78%
@@ -34,7 +34,7 @@ Antes de iniciar esta implementação, verifique se você tem:
 
 * um **identificador de organização** valido: o identificador de organização do Identity Management System (IMS) é o identificador exclusivo da Adobe Experience Cloud, usado por exemplo para o serviço VisitorID e o IMS Single-Sign On (SSO). [Saiba mais](https://experienceleague.adobe.com/docs/core-services/interface/manage-users-and-products/organizations.html?lang=pt-BR)
 * um **Acesso de desenvolvedor** para sua organização.  Se você precisar solicitar os privilégios de Administrador do Sistema da IMS Org, siga o procedimento detalhado [nesta página](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/manage-developers.ug.html) e forneça esse acesso a todos os perfis do produto.
->
+
 ## Etapa 1: Criar/atualizar projeto do Adobe I/O {#creating-adobe-io-project}
 
 1. Acesse o Adobe I/O e faça logon com o direito Administrador do sistema para o IMS Organization.
