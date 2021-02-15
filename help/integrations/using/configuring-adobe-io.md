@@ -10,7 +10,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 3b82796182525ffa55b17fe8ac2f84f1bec230cf
+source-git-commit: 3348156f020d4c8af7e1d57c46cba99205422696
 workflow-type: tm+mt
 source-wordcount: '484'
 ht-degree: 78%
@@ -87,7 +87,7 @@ Antes de iniciar esta implementação, verifique se você tem:
 
 >[!NOTE]
 >
->O certificado Adobe I/O expirará após 12 meses. Você precisa gerar um novo par de chaves todo ano.
+>O certificado Adobe I/O expirará após 12 meses. Você precisa gerar um novo par de chaves todos os anos.
 
 ## Etapa 2: adicionar as credenciais do projeto no Adobe Campaign {#add-credentials-campaign}
 
