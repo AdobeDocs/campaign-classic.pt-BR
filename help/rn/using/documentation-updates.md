@@ -7,9 +7,9 @@ audience: rns
 content-type: reference
 topic-tags: latest-documentation-updates
 translation-type: tm+mt
-source-git-commit: 7473a64a7f3865d1e1eefde9607c539c2f632138
+source-git-commit: 55cc09c0446e389029890e45b790bb5ec6ffdc27
 workflow-type: tm+mt
-source-wordcount: '3914'
+source-wordcount: '3947'
 ht-degree: 93%
 
 ---
@@ -26,6 +26,10 @@ Consulte as [Notas de versão da Adobe Campaign Classic](../../rn/using/latest-r
 Uma nova seção foi adicionada com informações detalhadas sobre como executar o teste A/B usando workflows. [Leia mais](../../delivery/using/get-started-a-b-testing.md)
 
 A seção Adobe Campaign Enhanced MTA foi movida [aqui](../../delivery/using/sending-with-enhanced-mta.md).
+
+Uma nova página foi adicionada para fornecer uma visão geral dos recursos de rastreamento em [!DNL Campaign Classic]. [Leia mais](../../delivery/using/about-message-tracking.md)
+
+Uma seção de solução de problemas foi adicionada para ajudá-lo a resolver problemas comuns relacionados ao rastreamento. [Leia mais](../../delivery/using/tracking-troubleshooting.md)
 
 A seção **Enviar um email** foi reorganizada e esclarecida com novas subseções. [Leia mais](../../delivery/using/sending-messages.md)
 
@@ -59,7 +63,7 @@ Foi adicionado um caso de uso sobre como usar a funcionalidade de mesclagem de *
 
 A descrição completa do protocolo e da página de configurações do conector SMS agora está disponível [aqui](../../delivery/using/sms-protocol.md).
 
-Uma observação foi adicionada à seção **Mensagens transacionais** para avisar que as pastas do evento não devem ser definidas como visualizações no instância de execução, para evitar problemas de direito de acesso. [Leia mais](../../message-center/using/event-collection.md)
+Uma observação foi adicionada à seção **Mensagens transacionais** para avisar que as pastas de eventos não devem ser definidas como visualizações no instância de execução, para evitar problemas de direito de acesso. [Leia mais](../../message-center/using/event-collection.md)
 
 ## Novembro de 2020 {#nov-2020}
 
