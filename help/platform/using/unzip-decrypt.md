@@ -1,33 +1,33 @@
 ---
 solution: Campaign Classic
 product: campaign
-title: Descompactando ou descriptografando um arquivo
+title: Descompactação ou descriptografia de um arquivo
 description: Saiba como descompactar ou descriptografar um arquivo no Campaign Classic antes do processamento.
 audience: platform
 content-type: reference
 topic-tags: importing-and-exporting-data
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 3139a9bf5036086831e23acef21af937fcfda740
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '661'
-ht-degree: 93%
+ht-degree: 100%
 
 ---
 
 
-# Descompactando ou descriptografando um arquivo {#unzipping-or-decrypting-a-file-before-processing}
+# Descompactação ou descriptografia de um arquivo {#unzipping-or-decrypting-a-file-before-processing}
 
 O Adobe Campaign permite importar arquivos compactados ou criptografados. Antes de serem lidos em uma atividade [Data loading (file)](../../workflow/using/data-loading--file-.md), é possível definir um pré-processamento para descompactar ou descriptografar o arquivo.
 
 Para fazer isso:
 
-1. Use o [Painel de controle do Campaign](https://docs.adobe.com/content/help/pt-BR/control-panel/using/instances-settings/gpg-keys-management.html#decrypting-data) para gerar um par de chave pública/privada.
+1. Use o [Painel de controle do Campaign](https://docs.adobe.com/content/help/en/control-panel/using/instances-settings/gpg-keys-management.html#decrypting-data) para gerar um par de chave pública/privada.
 
    >[!NOTE]
    >
    >O Painel de controle do Campaign está disponível para todos os clientes hospedados no AWS (exceto para clientes que hospedam suas instâncias de marketing no local).
 
-1. Se sua instalação do Adobe Campaign for hospedada pelo Adobe, entre em contato com o [Adobe Customer Care](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html) para ter os utilitários necessários instalados no servidor.
+1. Caso sua instalação do Adobe Campaign seja hospedada pela Adobe, entre em contato com o [Atendimento ao cliente da Adobe](https://helpx.adobe.com/br/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html) para ter os utilitários necessários instalados no servidor.
 1. Caso a instalação do Adobe Campaign seja no local, instale o utilitário que deseja usar (por exemplo: GPG, GZIP) e as chaves necessárias (chave de criptografia) no servidor de aplicativos.
 
 Em seguida, você pode usar os comandos de pré-processamento desejados em seus workflows:
@@ -54,7 +54,7 @@ Nesse caso de uso, criaremos um workflow para importar dados que foram criptogra
 
 As etapas para executar esse caso de uso são as seguintes:
 
-1. Use o Painel de controle do Campaign para gerar um par de chaves (público/privado). As etapas detalhadas estão disponíveis na [documentação do Painel de controle do Campaign](https://docs.adobe.com/content/help/en/control-panel/using/instances-settings/gpg-keys-management.html#decrypting-data).
+1. Use o Painel de controle do Campaign para gerar um par de chaves (público/privado). As etapas detalhadas estão disponíveis na [documentação do Painel de controle do Campaign](https://docs.adobe.com/content/help/pt-BR/control-panel/using/instances-settings/gpg-keys-management.html#decrypting-data).
 
    * A chave pública será compartilhada com o sistema externo, que a usará para criptografar os dados que serão enviados para o Campaign.
    * A chave privada será usada pelo Campaign Classic para descriptografar os dados criptografados recebidos.
