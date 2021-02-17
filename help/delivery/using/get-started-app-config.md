@@ -10,7 +10,7 @@ translation-type: tm+mt
 source-git-commit: 965aee2e310dd7e35d7a65bf9a1bda5dc8eb0959
 workflow-type: tm+mt
 source-wordcount: '295'
-ht-degree: 85%
+ht-degree: 90%
 
 ---
 
@@ -35,7 +35,7 @@ Para enviar notificações por push no Adobe Campaign, é necessário:
 
 ![](assets/do-not-localize/how-to-video.png) [Saiba como instalar o pacote de aplicativo móvel em vídeo](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/sending-messages/push-channel/installing-the-mobile-app-channel.html?lang=pt-BR#sending-messages)
 
-Como cliente híbrido/hospedado, entre em contato com a equipe [Adobe Customer Care](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html) para acessar o canal de notificação por push na Campanha.
+Como um cliente híbrido/hospedado, entre em contato com a equipe de [Atendimento ao cliente da Adobe](https://helpx.adobe.com/br/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html) para acessar o canal de notificação por push no Campaign.
 
 Como cliente local, é necessário instalar um pacote integrado.
 
