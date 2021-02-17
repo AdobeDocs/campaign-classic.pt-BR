@@ -8,11 +8,11 @@ content-type: reference
 topic-tags: campaign-classic-deprecated-features
 internal: n
 snippet: y
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 4efe5f8a9130e7925194e56e088b3745c0cbd11a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1632'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -47,7 +47,7 @@ Os clientes são aconselhados a verificar se utilizam o recurso/funcionalidade e
   </tr>
   <tr>
   <td>Conectores CRM<br></td>
-   <td><p>A partir da versão Campaign 20.3, os seguintes conectores CRM estão descontinuados com a Campanha:</p>
+   <td><p>A partir da versão 20.3 do Campaign, os seguintes conectores CRM não serão mais utilizados com o Campaign:</p>
    <ul>
    <li>API Soap - no local: 2007, 2015, 2016</li>
    <li>API Soap - online: 2015, 2016</li>
@@ -133,7 +133,7 @@ Esta seção lista os recursos e funcionalidades removidos do Campaign Classic.
    <td>A partir da versão 19.1 do Campaign, as APIs do Campaign Classic estarão disponíveis em uma página dedicada. Se estiver usando o arquivo jsapi.chm legado, agora deverá consultar a <a href="https://docs.adobe.com/content/help/en/campaign-classic/technicalresources/api/index.html">nova versão online</a>.</td>
   </tr> 
   <tr> 
-   <td>Orquestração de campanha           - Marketing preditivo</td>
+   <td>Orquestração de campanha - Marketing preditivo</td>
    <td>A partir da versão 18.10 do Campaign, os recursos de marketing preditivo não estarão mais disponíveis.</td>
   </tr> 
   <tr> 
