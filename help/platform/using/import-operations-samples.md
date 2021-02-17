@@ -6,11 +6,11 @@ description: Saiba mais sobre as importações genéricas que você pode executa
 audience: platform
 content-type: reference
 topic-tags: importing-and-exporting-data
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 37cc6cd8b71ec82cd4e6a910d6664a51ed5c091e
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '995'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -140,7 +140,7 @@ Queremos atualizar registros existentes no banco de dados e criar novos arquivos
 
       ![](assets/s_ncs_user_import_example06_03.png)
 
-## Enriquecer os valores com os de um arquivo externo {#example--enrich-the-values-with-those-of-an-external-file}
+## Enriquecer os valores com informações de um arquivo externo {#example--enrich-the-values-with-those-of-an-external-file}
 
 Queremos modificar determinados campos em uma tabela de banco de dados a partir de um arquivo de texto, dando prioridade aos valores contidos no banco de dados.
 
@@ -191,7 +191,7 @@ Siga as etapas abaixo:
 
    Somente os valores que estavam vazios foram substituídos por valores do arquivo de texto. Porém, o valor existente no banco de dados não foi substituído pelo valor do arquivo de importação.
 
-## Atualizar e enriquecer os valores daqueles em um arquivo externo {#example--update-and-enrich-the-values-from-those-in-an-external-file}
+## Atualizar e enriquecer os valores com as informações de um arquivo externo {#example--update-and-enrich-the-values-from-those-in-an-external-file}
 
 Queremos modificar determinados campos em uma tabela de banco de dados a partir de um arquivo de texto, dando prioridade aos valores contidos no arquivo de texto.
 
