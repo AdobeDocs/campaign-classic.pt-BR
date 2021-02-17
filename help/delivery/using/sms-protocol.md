@@ -819,7 +819,7 @@ Se você tiver várias contas na mesma instância do Adobe Campaign que se conec
 ### Habilitar rastreamentos SMPP detalhados durante verificações {#enable-verbose}
 
 Você deve sempre ativar rastreamentos SMPP detalhados durante as verificações.
-Mesmo que você não possa verificar os registros sozinho, será mais fácil para o [Atendimento ao cliente do Adobe](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html) ajudá-lo.
+Mesmo se você não conseguir verificar os registros sozinho, será mais fácil para o [Atendimento ao cliente da Adobe](https://helpx.adobe.com/br/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html) ajudá-lo.
 
 ### Testar seu SMS {#test}
 
