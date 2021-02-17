@@ -6,11 +6,11 @@ description: Sobre perfis
 audience: platform
 content-type: reference
 topic-tags: profile-management
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: ba460d8347c987291681641a1be208027acf1d2f
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '952'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -119,7 +119,7 @@ Vídeos extras sobre procedimentos do Campaign Classic estão disponíveis [aqui
 
 **Consulte também**
 
-* [Gerenciamento de privacidade na Campanhas](https://helpx.adobe.com/br/campaign/kb/acc-privacy.html)
+* [Gerenciamento da privacidade no Campaign](https://helpx.adobe.com/br/campaign/kb/acc-privacy.html)
 
 * [Definir a população de público-alvo](../../delivery/using/define-the-right-audience.md)
 
