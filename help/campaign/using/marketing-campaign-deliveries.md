@@ -6,11 +6,11 @@ description: Saiba mais sobre deliveries de campanha de marketing
 audience: campaign
 content-type: reference
 topic-tags: orchestrate-campaigns
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 1cde12d33551206da12e03a7e8deb198d427ab3a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2926'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -281,7 +281,7 @@ Após todas as aprovações serem concedidas, o status do delivery será alterad
 
 >[!NOTE]
 >
->Os workflows técnicos relacionados ao pacote de Campanha são apresentados em [Lista de workflows técnicos](../../workflow/using/about-technical-workflows.md).
+>Os workflows técnicos relacionados ao pacote do Campaign são apresentados na [Lista de workflows técnicos](../../workflow/using/about-technical-workflows.md).
 
 **Etapa 1 - Aprovação de arquivo**
 
