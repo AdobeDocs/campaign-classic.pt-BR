@@ -6,9 +6,9 @@ description: Monitore seus workflows do Campaign com o Workflow HeatMap
 audience: workflow
 content-type: reference
 topic-tags: use-cases
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: d34435b0b8714a87add6a5e3f82e4f94376f205b
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1189'
 ht-degree: 100%
 
