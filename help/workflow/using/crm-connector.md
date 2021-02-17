@@ -6,25 +6,25 @@ description: Saiba mais sobre o Conector CRM e configure a sincronização de da
 audience: workflow
 content-type: reference
 topic-tags: targeting-activities
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 2838ced5f5d562914c0791e6a0b8f02dd61006b4
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '113'
-ht-degree: 58%
+ht-degree: 100%
 
 ---
 
 
 # Conector CRM{#crm-connector}
 
-A atividade **conector CRM** permite configurar a sincronização de dados entre o Adobe Campaign e um sistema CRM.
+A atividade do **Conector CRM** permite configurar a sincronização de dados entre o Adobe Campaign e um sistema CRM.
 
 Para obter mais informações sobre conectores CRM no Adobe Campaign, consulte esta [seção](../../platform/using/crm-connectors.md).
 
 Com essa atividade, você pode:
 
 * Importar do CRM
-* Exportar para CRM
+* Exportar para o CRM
 * Importar objetos excluídos no CRM
 * Excluir objetos no CRM
 
