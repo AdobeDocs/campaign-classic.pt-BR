@@ -12,7 +12,7 @@ translation-type: tm+mt
 source-git-commit: 346b72d522c947b2a2552176b910ded8d622f3ab
 workflow-type: tm+mt
 source-wordcount: '207'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -56,7 +56,7 @@ Eles ajudarão você a descobrir os diferentes contextos nos quais os workflows 
 * [Criptografar e exportar dados usando uma chave instalada no Painel de controle do Campaign](../../workflow/using/how-to-use-workflow-data.md#use-case-gpg-encrypt)
 * [Atualização da lista trimestral usando um query incremental](../../workflow/using/quarterly-list-update.md)
 * [Uso da funcionalidade de mesclagem de atividades de desduplicação](../../workflow/using/deduplication-merge.md)
-* [Configurar um fluxo de trabalho de importação recorrente](../../workflow/using/recurring-import-workflow.md)
+* [Configuração de um fluxo de trabalho de importação recorrente](../../workflow/using/recurring-import-workflow.md)
 
 ## Direcionamento {#designing-queries}
 
