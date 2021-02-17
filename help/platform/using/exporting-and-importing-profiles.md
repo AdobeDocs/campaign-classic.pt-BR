@@ -6,11 +6,11 @@ description: Como exportar e importar perfis
 audience: platform
 content-type: reference
 topic-tags: profile-management
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: ba460d8347c987291681641a1be208027acf1d2f
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '145'
-ht-degree: 88%
+ht-degree: 100%
 
 ---
 
@@ -23,7 +23,7 @@ Você pode [usar workflows](#use-workflows) para importar ou exportar perfis de 
 
 ## Usar workflows{#use-workflows}
 
-Exportações e importações são configuradas em modelos dedicados executados por meio de workflows por meio de atividades de importação e exportação. Elas podem ser repetidas automaticamente de acordo com um agendamento, por exemplo, para automatizar a troca de dados entre vários sistemas de informações. [Saiba mais](../../platform/using/import-export-workflows.md#best-practices-when-importing-data)
+As exportações e importações são configuradas em modelos dedicados que são executados por meio de workflows através de atividades de importação e exportação. Elas podem ser repetidas automaticamente de acordo com um agendamento, por exemplo, para automatizar a troca de dados entre vários sistemas de informações. [Saiba mais](../../platform/using/import-export-workflows.md#best-practices-when-importing-data)
 
 Caso necessário, é possível criar um trabalho ocasional de importação ou exportação por meio do recurso **[!UICONTROL Generic imports and exports]** descrito abaixo.
 
