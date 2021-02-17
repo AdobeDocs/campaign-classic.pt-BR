@@ -6,11 +6,11 @@ description: Saiba mais sobre o conector SMS e como configurá-lo.
 audience: delivery
 content-type: reference
 topic-tags: configuring-channels
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 3139a9bf5036086831e23acef21af937fcfda740
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2751'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -203,7 +203,7 @@ Com o hexadecimal, é possível diferenciar entre caracteres semelhantes. Um L m
 
 Para converter o unicode em hexadecimal, você pode usar ferramentas online, como o site do [conversor de código Unicode](https://r12a.github.io/app-conversion/). Digite o texto, verifique se não há informações de identificação pessoal, como números de telefone, e clique em **Converter**. Você verá os valores hexadecimais na parte inferior (zona UTF-32).
 
-Ao abrir tíquetes sobre problemas de codificação, seja com o provedor ou [Atendimento ao cliente do Adobe](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html), sempre inclua uma versão hexadecimal do que você digita e do que você vê.
+Ao abrir tíquetes sobre problemas de codificação, para o provedor ou o [Atendimento ao cliente da Adobe](https://helpx.adobe.com/br/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html), sempre inclua uma versão hexadecimal do que você digita e do que vê.
 
 **Etapa 3: saiba o que você deve enviar**
 
