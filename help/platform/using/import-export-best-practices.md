@@ -6,30 +6,30 @@ description: Saiba mais sobre as práticas recomendadas a serem seguidas ao impo
 audience: automating
 content-type: reference
 topic-tags: workflow-general-operation
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: a2a99135bdd74d87c04262b53e074b6aa05e7915
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '512'
-ht-degree: 75%
+ht-degree: 100%
 
 ---
 
 
-# Importar e exportar práticas recomendadas {#import-export-best-practices}
+# Práticas recomendadas de importação e exportação {#import-export-best-practices}
 
-Ser cuidadoso e seguir apenas algumas regras simples detalhadas abaixo ajudará a garantir a consistência dos dados dentro do banco de dados e evitar erros comuns durante a atualização ou exportação de dados.
+Ser cuidadoso e seguir as regras simples detalhadas abaixo ajudará a garantir a consistência dos dados dentro do banco de dados e evitar erros comuns durante a atualização ou exportação de dados.
 
-## Uso de modelos de fluxo de trabalho {#using-import-templates}
+## Utilização de modelos de fluxo de trabalho {#using-import-templates}
 
 A maioria dos workflows destinados à importação de dados deve conter as seguintes atividades: **[!UICONTROL Load file]**, **[!UICONTROL Reconciliation]**, **[!UICONTROL Segmentation]**, **[!UICONTROL Deduplication]**, **[!UICONTROL Update data]**.
 
-O uso de modelos de fluxo de trabalho torna muito conveniente preparar importações semelhantes e garantir a consistência dos dados no banco de dados.
+É muito conveniente usar modelos de fluxo de trabalho para preparar importações semelhantes e garantir a consistência dos dados no banco de dados.
 
 Em muitos projetos, as importações são criadas sem a atividade **[!UICONTROL Deduplication]** porque os arquivos usados no projeto não têm duplicatas. As duplicatas às vezes surgem da importação de arquivos diferentes. A eliminação de duplicatas é difícil. Portanto, a etapa de eliminação de duplicatas é uma boa precaução em todos os workflows de importação.
 
 Não confie na suposição de que os dados de entrada são consistentes e corretos, ou que o departamento de TI ou o supervisor do Adobe Campaign irá resolver isso. Durante o projeto, mantenha a limpeza dos dados em mente. Elimine duplicatas, reconcilie e mantenha de consistência ao importar dados.
 
-Um exemplo de um modelo de fluxo de trabalho genérico projetado para importar dados está disponível no [Exemplo: Modelo de fluxo de trabalho para importar a seção de dados](../../platform/using/creating-import-export-templates.md).
+Um exemplo de modelo de fluxo de trabalho genérico projetado para importar dados está disponível na seção [Exemplo: modelo de fluxo de trabalho para importar dados](../../platform/using/creating-import-export-templates.md).
 
 ## Uso dos formatos de arquivo simples {#using-flat-file-formats}
 
@@ -52,9 +52,9 @@ Smith;Clara;08/02/1989;hayden.smith@example.com;124567
 Durance;Allison;15/12/1978;allison.durance@example.com;120987
 ```
 
-## Uso da compactação {#using-compression}
+## Utilização da compactação {#using-compression}
 
-Use arquivos compactados para importações e exportações sempre que possível. O GZIP é suportado por padrão. Você pode adicionar pré-processamento ao importar arquivos ou pós-processamento ao extrair dados, respectivamente nas atividades de fluxo de trabalho **[!UICONTROL Load file]** e **[!UICONTROL Extract file]**.
+Use arquivos compactados para importações e exportações sempre que possível. O GZIP é compatível por padrão. Você pode adicionar pré-processamento ao importar arquivos ou pós-processamento ao extrair dados, respectivamente nas atividades de fluxo de trabalho **[!UICONTROL Load file]** e **[!UICONTROL Extract file]**.
 
 **Tópicos relacionados:**
 
@@ -63,7 +63,7 @@ Use arquivos compactados para importações e exportações sempre que possível
 
 ## Importação no modo Delta {#importing-in-delta-mode}
 
-As importações regulares devem ser efetuadas no modo delta. Isso significa que somente os dados modificados ou novos são enviados ao Adobe Campaign, em vez da tabela toda sempre.
+Importações regulares devem ser feitas no modo delta. Isso significa que somente os dados modificados ou novos são enviados ao Adobe Campaign, em vez da tabela toda sempre.
 
 As importações completas devem ser usadas somente para carregamento inicial.
 
