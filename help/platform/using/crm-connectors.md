@@ -2,15 +2,15 @@
 solution: Campaign Classic
 product: campaign
 title: Conectores CRM
-description: Introdução aos Conectores CRM na Campanha
+description: Introdução aos Conectores CRM no Campaign
 audience: platform
 content-type: reference
 topic-tags: connectors
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 2838ced5f5d562914c0791e6a0b8f02dd61006b4
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '356'
-ht-degree: 62%
+ht-degree: 100%
 
 ---
 
@@ -30,7 +30,7 @@ Esses conectores permitem uma integração de dados rápida e fácil: o Adobe Ca
 
 ### Sistemas compatíveis {#compatible-crm-systems-and-limitations}
 
-O CRM e as versões com suporte são detalhados na Campanha [Matriz de compatibilidade](../../rn/using/compatibility-matrix.md).
+O CRM e as versões compatíveis estão detalhados na [Matriz de compatibilidade](../../rn/using/compatibility-matrix.md) do Campaign.
 
 >[!NOTE]
 >
@@ -43,11 +43,11 @@ Saiba mais sobre o procedimento passo a passo para conectar o Campaign e o Micro
 Em geral, para usar conectores CRM no Adobe Campaign, siga estas etapas:
 
 1. Crie uma nova conta externa através do nó **[!UICONTROL Administration > Platform > External accounts]** da árvore do Adobe Campaign.
-1. Selecione o sistema CRM ao qual você precisa conectar a Campanha.
+1. Selecione o sistema CRM ao qual você precisa conectar o Campaign.
 1. Digite as configurações para habilitar a conexão.
-1. Execute o assistente de configuração para gerar a tabela CRM disponível: o assistente de configuração permite que você colete tabelas e crie o schema correspondente.
+1. Execute o assistente de configuração para gerar a tabela CRM disponível: o assistente de configuração permite que você colete tabelas e crie o esquema correspondente.
 
-   Exemplo do assistente de configuração **Salesforce**:
+   Exemplo do assistente de configuração do **Salesforce**:
 
    ![](assets/crm_connectors_sfdc_launch.png)
 
@@ -57,7 +57,7 @@ Em geral, para usar conectores CRM no Adobe Campaign, siga estas etapas:
 
 1. Verifique o schema gerado no Adobe Campaign no nó **[!UICONTROL Administration > Configuration > Data schemas]**.
 
-   Exemplo para o schema **Salesforce**:
+   Exemplo do esquema do **Salesforce**:
 
    ![](assets/crm_connectors_sfdc_table.png)
 
@@ -69,7 +69,7 @@ Em geral, para usar conectores CRM no Adobe Campaign, siga estas etapas:
    >
    >É possível substituir todos os valores de uma lista discriminada do Adobe Campaign pelos valores do CRM: para fazer isso, selecione **[!UICONTROL Yes]** na coluna **[!UICONTROL Replace]**.
 
-   Exemplo para **listas discriminadas do Salesforce**:
+   Exemplo das listas discriminadas do **Salesforce**:
 
    ![](assets/crm_connectors_sfdc_enum.png)
 
