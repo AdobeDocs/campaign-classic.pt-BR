@@ -1,27 +1,27 @@
 ---
 solution: Campaign Classic
 product: campaign
-title: Configurando trabalhos de exportação
+title: Configuração de trabalhos de exportação
 description: Saiba como configurar e executar trabalhos de exportação no Campaign Classic.
 audience: platform
 content-type: reference
 topic-tags: importing-and-exporting-data
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: ba460d8347c987291681641a1be208027acf1d2f
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '926'
-ht-degree: 87%
+ht-degree: 100%
 
 ---
 
 
-# Configurando trabalhos de exportação {#executing-export-jobs}
+# Configuração de trabalhos de exportação {#executing-export-jobs}
 
 Os trabalhos de exportação permitem acessar e extrair dados do banco de dados: contatos, clientes, listas, segmentos etc.
 
-Por exemplo, pode ser útil usar dados de rastreamento de campanha (histórico de rastreamento etc.) em uma planilha. Os dados de saída podem estar em formato txt, CSV, TAB ou XML.
+Por exemplo, pode ser útil usar dados de rastreamento de campanha (histórico de rastreamento etc.) em uma planilha. Os dados de output podem estar em formato txt, CSV, TAB ou XML.
 
-O assistente de exportação permite configurar uma exportação, definir suas opções e iniciar a execução. É uma série de telas cujo conteúdo depende do tipo de exportação (simples ou múltipla) e dos direitos do operador.
+O assistente de exportação permite configurar uma exportação, definir suas opções e iniciar a execução. É uma série de telas cujo conteúdo depende do tipo de importação (simples ou múltipla) e dos direitos do operador.
 
 O assistente de exportação é exibido após a criação de um novo trabalho de exportação (consulte [Criação de trabalhos de importação e exportação](../../platform/using/creating-import-export-jobs.md).
 
@@ -131,4 +131,4 @@ Clique em **[!UICONTROL Start]** para iniciar a exportação de dados.
 
 ![](assets/s_ncs_user_export_wizard08.png)
 
-Você pode monitorar a execução do trabalho de importação (consulte [Monitorando a execução de trabalhos](../../platform/using/monitoring-jobs-execution.md).
+Você pode monitorar a execução do trabalho de importação (consulte [Monitoração da execução de trabalhos](../../platform/using/monitoring-jobs-execution.md).
