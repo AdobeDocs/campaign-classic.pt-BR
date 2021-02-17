@@ -13,7 +13,7 @@ translation-type: tm+mt
 source-git-commit: c5c881d6919a8715e6588fb39793f562a16873bb
 workflow-type: tm+mt
 source-wordcount: '484'
-ht-degree: 78%
+ht-degree: 97%
 
 ---
 
@@ -22,7 +22,7 @@ ht-degree: 78%
 
 >[!CAUTION]
 >
->Se você estiver usando uma versão mais antiga da integração de acionadores por meio da autenticação oAuth, **será necessário mover para o Adobe I/O conforme descrito abaixo**. O modo de autenticação do oAuth herdado será desativado em 30 de abril de 2021. [Saiba mais](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-discussions/adobe-analytics-legacy-api-end-of-life-notice/td-p/385411)
+>Se você estiver usando uma versão mais antiga da integração de acionadores por meio da autenticação oAuth, **será necessário mover para o Adobe I/O conforme descrito abaixo**. O modo de autenticação oAuth herdado será desativado em 30 de abril de 2021. [Saiba mais](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-discussions/adobe-analytics-legacy-api-end-of-life-notice/td-p/385411)
 >
 >Observe que durante essa mudança para o Adobe I/O, alguns acionadores recebidos podem ser perdidos.
 
@@ -33,7 +33,7 @@ Essa integração se aplica somente a partir das **versões Campaign Classic 20.
 Antes de iniciar esta implementação, verifique se você tem:
 
 * um **identificador de organização** valido: o identificador de organização do Identity Management System (IMS) é o identificador exclusivo da Adobe Experience Cloud, usado por exemplo para o serviço VisitorID e o IMS Single-Sign On (SSO). [Saiba mais](https://experienceleague.adobe.com/docs/core-services/interface/manage-users-and-products/organizations.html?lang=pt-BR)
-* um **Acesso de desenvolvedor** para sua organização.  Se você precisar solicitar os privilégios de Administrador do Sistema da IMS Org, siga o procedimento detalhado [nesta página](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/manage-developers.ug.html) e forneça esse acesso a todos os perfis do produto.
+* um **Acesso de desenvolvedor** para sua organização.  Se você precisar solicitar os privilégios de Administrador do Sistema da IMS Org, siga o procedimento detalhado [nesta página](https://helpx.adobe.com/br/enterprise/admin-guide.html/enterprise/using/manage-developers.ug.html) e forneça esse acesso a todos os perfis do produto.
 
 ## Etapa 1: Criar/atualizar projeto do Adobe I/O {#creating-adobe-io-project}
 
@@ -43,7 +43,7 @@ Antes de iniciar esta implementação, verifique se você tem:
    >
    > Verifique se você está conectado ao portal correto do Organization.
 
-1. Extraia o identificador do cliente de integração existente (ID do cliente) do arquivo de configuração da instância ims/authIMSTAClientId. Um atributo não existente ou vazio indica que o identificador do cliente não está configurado.
+1. Extraia o identificador do cliente de integração (ID do cliente) existente a partir do arquivo de configuração da instância ims/authIMSTAClientId. Um atributo não existente ou vazio indica que o identificador do cliente não está configurado.
 
    >[!NOTE]
    >
@@ -65,7 +65,7 @@ Antes de iniciar esta implementação, verifique se você tem:
 
    ![](assets/do-not-localize/adobe_io_3.png)
 
-1. Se a ID do cliente estava vazia, selecione **[!UICONTROL Generate a key pair]** para criar um par de chaves públicas e privadas.
+1. Se a ID do cliente estiver vazia, selecione **[!UICONTROL Generate a key pair]** para criar um par de chaves público e privado.
 
    ![](assets/do-not-localize/adobe_io_4.png)
 
@@ -87,7 +87,7 @@ Antes de iniciar esta implementação, verifique se você tem:
 
 >[!CAUTION]
 >
->O certificado Adobe I/O expirará após 12 meses. Você precisa gerar um novo par de chaves todos os anos.
+>O certificado do Adobe I/O expirará após 12 meses. Você precisa gerar um novo par de chaves todos os anos.
 
 ## Etapa 2: adicionar as credenciais do projeto no Adobe Campaign {#add-credentials-campaign}
 
@@ -101,7 +101,7 @@ nlserver config -instance:<instance name> -setimsjwtauth:Organization_Id/Client_
 >
 >Você deve codificar a chave privada no formato base64 UTF-8. Lembre-se de remover a nova linha da chave antes de codificá-la, exceto para a chave privada. A chave privada precisa ser a mesma usada para criar a integração. Para testar a codificação base64 da chave privada, você pode usar [este site](https://www.base64encode.org/).
 
-## Etapa 3: atualizar tag de pipeline {#update-pipelined-tag}
+## Etapa 3: atualizar a tag de pipeline {#update-pipelined-tag}
 
 Para atualizar a tag [!DNL pipelined], é necessário atualizar o tipo de autenticação para o projeto do Adobe I/O no arquivo de configuração **config-&lt; instance-name >.xml** da seguinte maneira:
 
