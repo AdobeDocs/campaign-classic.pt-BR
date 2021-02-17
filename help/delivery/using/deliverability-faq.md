@@ -6,11 +6,11 @@ description: Quais são os principais pontos a serem verificados ao gerenciar a 
 audience: delivery
 content-type: reference
 topic-tags: deliverability-management
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 3139a9bf5036086831e23acef21af937fcfda740
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1343'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -42,7 +42,7 @@ Ao receber sempre a mesma mensagem de erro para um ISP, o email ou IP pode ter s
 * Atualize os formulários de subscrição para detectar qualquer erro nos nomes de domínio inseridos (por exemplo: gmaul.com ou yaho.com).
 * Se ocorrer erros que indicam que as mensagens são declaradas como spam ou que estão constantemente bloqueadas, tente excluir os destinatários que não abriram ou clicaram em uma das mensagens nos últimos 12 meses a partir do público-alvo.
 
-Se o problema persistir, entre em contato com os serviços comerciais ou de entrega, [Adobe Customer Care](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html).
+Se o problema persistir, entre em contato com os serviços comerciais ou de entrega, [Atendimento ao cliente da Adobe](https://helpx.adobe.com/br/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html).
 
 ## Lista de bloqueios × quarentena {#denylist-versus-quarantine}
 
