@@ -1,14 +1,14 @@
 ---
-keywords: Campaign Classic;home;populares tópicos
+keywords: Campaign Classic;página inicial;tópicos populares
 solution: Campaign Classic
 product: campaign
 title: Documentação do produto Adobe Campaign Classic
 topic: Premium
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: b5b9e42eca25193cf4d69f654e74a02afd8adca9
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '296'
-ht-degree: 81%
+ht-degree: 100%
 
 ---
 
@@ -19,19 +19,17 @@ ht-degree: 81%
 
 ## Novidades
 
-* **[Conectando-se pelo IMS/Adobe ID? Atualize para as compilações mais recentes](integrations/using/about-adobe-id.md)**<br/> Se você estiver usando o IMS para se conectar à Campanha, é necessário atualizar para poder se conectar à Campanha após** 31 de março de 2021 **.
+* **[Conectando-se pelo IMS/Adobe ID? Atualize para as builds mais recentes](integrations/using/about-adobe-id.md)**<br/> Se você estiver usando o IMS para se conectar ao Campaign, é necessário atualizar para poder se conectar ao Campaign após** 31 de março de 2021 **.
 
-* **[Proteja suas ](https://helpx.adobe.com/campaign/kb/gold-standard-upgrade.html)**<br/> instâncias de CampanhaAtualize para as compilações mais recentes para proteger sua plataforma de Campanha.
+* **[Proteja suas instâncias do Campaign](https://helpx.adobe.com/campaign/kb/gold-standard-upgrade.html)**<br/> Atualize para as builds mais recentes para proteger a plataforma do Campaign.
 
 * **[Remover devoluções definitivas incorretas](https://helpx.adobe.com/campaign/kb/update-bounce-qualification.html)**<br/> Saiba como atualizar devoluções definitivas incorretas depois da paralisação do Gmail
 
 * **[Atualizar a integração dos acionadores da Adobe Experience Cloud](integrations/using/configuring-adobe-io.md)**<br/> O serviço de autenticação herdado oAuth chegou ao fim da vida útil. Saiba como migrar para o Adobe I/O.
 
-* **[Mover para a API do provedor APNs com base em HTTP/2](https://helpx.adobe.com/br/campaign/kb/migrate-to-apns-http2.html)**<br/>
-Saiba como migrar do protocolo binário legado para a API do provedor APNs com base em HTTP/2
+* **[Mover para a API do provedor de APNs com base em HTTP/2](https://helpx.adobe.com/br/campaign/kb/migrate-to-apns-http2.html)**<br/> Saiba como migrar do protocolo binário legado para a API do provedor APNs com base em HTTP/2
 
-* **[Obtenha suporte](https://helpx.adobe.com/br/campaign/kb/ac-support.html)**<br/>
-Acesse as perguntas frequentes, as práticas recomendadas, os recursos de ajuda e solicite ajuda.
+* **[Obtenha suporte](https://helpx.adobe.com/br/campaign/kb/ac-support.html)**<br/> Acesse as perguntas frequentes, as práticas recomendadas, os recursos de ajuda e solicite ajuda
 
 [Mais atualizações](/help/rn/using/documentation-updates.md)
 
@@ -89,6 +87,6 @@ Acesse as perguntas frequentes, as práticas recomendadas, os recursos de ajuda 
 | [Vídeos explicativos](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html?lang=pt-BR) | [Modelo de dados do Campaign](configuration/using/about-data-model.md) |
 | [Matriz de compatibilidade](rn/using/compatibility-matrix.md) | [JSAPI do Campaign](https://docs.adobe.com/content/help/en/campaign-classic/technicalresources/api/p-1.html) |
 | [Introdução ao Campaign](platform/using/about-adobe-campaign-classic.md) | [Guia de implementação](https://helpx.adobe.com/br/campaign/kb/acc-implementation.html) |
-| [Atualização do Gold Standard ](https://helpx.adobe.com/campaign/kb/gold-standard.html) | [Guia de rastreamento](https://helpx.adobe.com/br/campaign/kb/acc-tracking.html) |
+| [Atualização do Gold Standard ](https://helpx.adobe.com/br/campaign/kb/gold-standard.html) | [Guia de rastreamento](https://helpx.adobe.com/br/campaign/kb/acc-tracking.html) |
 | [Recursos obsoletos](rn/using/deprecated-features.md) | [Lista de verificação de segurança e privacidade](https://helpx.adobe.com/br/campaign/kb/acc-security.html) |
 | [Painel de controle do Campaign](https://experienceleague.adobe.com/docs/control-panel/using/control-panel-home.html?lang=pt-BR) | [Orientações de monitoramento](production/using/monitoring-guidelines.md) |
