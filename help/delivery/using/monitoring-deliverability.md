@@ -6,11 +6,11 @@ description: Saiba mais sobre as ferramentas e as diretrizes sobre o monitoramen
 audience: delivery
 content-type: reference
 topic-tags: deliverability-management
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 11377b0218e20da9b1a5398539ebaa192801b283
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '773'
-ht-degree: 93%
+ht-degree: 100%
 
 ---
 
@@ -71,7 +71,7 @@ As informações fornecidas são em tempo real, o que permite uma assistência p
 
 ## Relatório de monitoramento técnico da capacidade de entrega {#technical-deliverability-monitoring}
 
-O relatório **Technical Deliverability Monitoring** inclui vários indicadores de qualidade de entrega para sua plataforma. Você pode receber esse relatório diário por email. Para solicitar, abra um [Caso de suporte](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html) específico e especifique:
+O relatório de **Monitoramento técnico de qualidade de entrega** inclui vários indicadores de qualidade da capacidade de entrega para sua plataforma. Você pode receber esse relatório diário por email. Para solicitar, abra um [Caso de suporte](https://helpx.adobe.com/br/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html) específico e detalhe as seguintes informações:
 
 * o nome da instância
 * os endereços de email para os quais enviar o relatório
