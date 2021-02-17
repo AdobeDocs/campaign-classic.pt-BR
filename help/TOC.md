@@ -12,7 +12,7 @@ translation-type: tm+mt
 source-git-commit: efa36dc08ce4dd59805bb9eba63a4249e14609d7
 workflow-type: tm+mt
 source-wordcount: '2349'
-ht-degree: 94%
+ht-degree: 98%
 
 ---
 
@@ -70,13 +70,13 @@ ht-degree: 94%
    + Importação e exportação de dados {#importing-and-exporting-data}
       + [Introdução à importação e exportação de dados](platform/using/get-started-data-import-export.md)
       + [Importação e exportação de dados usando workflows](platform/using/import-export-workflows.md)
-      + Trabalhar com importações e exportações genéricas {#generic-imports-exports}
+      + Trabalho com importações e exportações genéricas {#generic-imports-exports}
          + [Introdução às importações e exportações genéricas](platform/using/about-generic-imports-exports.md)
          + [Criação de modelos de importação e exportação](platform/using/creating-import-export-templates.md)
          + [Criação de trabalhos de importação e exportação](platform/using/creating-import-export-jobs.md)
          + [Configurar trabalhos de importação](platform/using/executing-import-jobs.md)
-         + [Configurando trabalhos de exportação](platform/using/executing-export-jobs.md)
-         + [Monitorando a execução de trabalhos](platform/using/monitoring-jobs-execution.md)
+         + [Configurar trabalhos de exportação](platform/using/executing-export-jobs.md)
+         + [Monitoração da execução de trabalhos](platform/using/monitoring-jobs-execution.md)
          + [Modelos de importação genérica](platform/using/import-operations-samples.md)
       + Gerenciamento da criptografia e compactação de dados {#managing-data-encryption-compression}
          + [Descompactação ou descriptografia de um arquivo antes do processamento](platform/using/unzip-decrypt.md)
@@ -385,7 +385,7 @@ ht-degree: 94%
       + [Sobre atividades](workflow/using/about-activities.md)
       + [Criação de um workflow](workflow/using/building-a-workflow.md)
       + [Direcionamento de dados](workflow/using/targeting-data.md)
-      + [Como usar os dados de workflow](workflow/using/how-to-use-workflow-data.md)
+      + [Como usar os dados de fluxo de trabalho](workflow/using/how-to-use-workflow-data.md)
       + [Práticas recomendadas do fluxo de trabalho](workflow/using/workflow-best-practices.md)
    + Execução de um fluxo de trabalho {#executing-a-workflow}
       + [Iniciar um workflow](workflow/using/starting-a-workflow.md)
@@ -471,7 +471,7 @@ ht-degree: 94%
          + [Enriquecimento de dados](workflow/using/enriching-data.md)
          + [Uso de agregações](workflow/using/using-aggregates.md)
          + [Uso da funcionalidade de mesclagem da atividade de desduplicação](workflow/using/deduplication-merge.md)
-         + [Configurar um fluxo de trabalho de importação recorrente](workflow/using/recurring-import-workflow.md)
+         + [Configuração de um fluxo de trabalho de importação recorrente](workflow/using/recurring-import-workflow.md)
       + Projeto de queries {#designing-queries}
          + [Atualização da lista trimestral usando um query incremental](workflow/using/quarterly-list-update.md)
       + Direcionamento {#designing-queries}
