@@ -6,11 +6,11 @@ description: Área de trabalho do Adobe Campaign
 audience: platform
 content-type: reference
 topic-tags: starting-with-adobe-campaign
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: ba460d8347c987291681641a1be208027acf1d2f
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2157'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -25,7 +25,7 @@ Na seção central da home page, você pode usar links para acessar o portal de 
 
 ![](assets/d_ncs_user_interface_home.png)
 
-![](assets/do-not-localize/how-to-video.png)[ Espaço de trabalho do Discover Campaign em vídeo](#video)
+![](assets/do-not-localize/how-to-video.png) Conheça o espaço de trabalho do Campaign em [vídeo](#video)
 
 >[!NOTE]
 >
@@ -392,7 +392,7 @@ Nos campos que expressam uma duração (por exemplo, período de validade dos re
 
 ## Vídeo tutorial {#video}
 
-Este vídeo apresenta a área de trabalho do Campaign Classic.
+Este vídeo apresenta o espaço de trabalho do Campaign Classic.
 
 >[!VIDEO](https://video.tv.adobe.com/v/35130?quality=12)
 
