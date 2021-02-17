@@ -6,11 +6,11 @@ description: Crie deliveries para enviar mensagens personalizadas em diferentes 
 audience: delivery
 content-type: reference
 topic-tags: about-deliveries-and-channels
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 44f2aed49a12d51bb3b38f304e6b922f0faf68cc
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1210'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
@@ -88,11 +88,11 @@ Os canais online permitem que você crie mensagens (email, SMS, delivery de apli
 
 ## Outros canais {#other-channels}
 
-template do delivery Adobe Campaign oferta Telephone, usado para criar delivery externos. O uso desse canal implica que você configure metodologias dedicadas para processar arquivos de saída. As etapas de configuração são as mesmas do [Canal de mala direta](../../delivery/using/about-direct-mail-channel.md).
+O modelo de entrega do Adobe Campaign oferece o Telephone, usado para criar entregas externas. A utilização desse canal implica que você configure metodologias específicas para processar arquivos de output. As etapas de configuração são as mesmas do [Canal de correspondência direta](../../delivery/using/about-direct-mail-channel.md).
 
 >[!NOTE]
 >
->O canal Telephone não está disponível prontamente. A implementação requer a consultoria de Adobe ou um parceiro de Adobe. Entre em contato com seu representante de Adobe para obter mais informações.
+>O canal Telephone não está disponível prontamente. A implementação requer o envolvimento da Adobe Consulting ou de um Parceiro da Adobe. Entre em contato com seu representante da Adobe para obter mais informações.
 
 Além disso, os deliveries do tipo &quot;Outros&quot; usam um template técnico específico que não executa um processo: isso permite gerenciar ações de marketing executadas fora da plataforma Adobe Campaign.
 
