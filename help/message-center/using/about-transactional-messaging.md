@@ -6,11 +6,11 @@ description: 'Enviar mensagens por disparo com base em eventos gerados a partir 
 audience: message-center
 content-type: reference
 topic-tags: introduction
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 3139a9bf5036086831e23acef21af937fcfda740
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '171'
-ht-degree: 88%
+ht-degree: 100%
 
 ---
 
@@ -29,4 +29,4 @@ Nesta arquitetura específica, a célula de execução é separada da instância
 
 >[!NOTE]
 >
->Para criar novos usuários para instâncias de execução do Centro de Mensagens hospedados na Adobe Cloud, é necessário entrar em contato com o [Adobe Customer Care](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html). Os usuários do Centro de mensagens são operadores específicos que exigem permissões dedicadas para acessar pastas de &#39;eventos em tempo real&#39; (nmsRtEvent).
+>Para criar novos usuários para as instâncias de execução do Centro de mensagens hospedadas na Adobe Cloud, você precisará entrar em contato com o [Atendimento ao cliente da Adobe](https://helpx.adobe.com/br/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html). Os usuários do Centro de mensagens são operadores específicos que exigem permissões dedicadas para acessar pastas de &quot;eventos em tempo real&quot; (nmsRtEvent).
