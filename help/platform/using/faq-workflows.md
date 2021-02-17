@@ -6,11 +6,11 @@ description: Perguntas frequentes sobre o Adobe Campaign Classic
 audience: platform
 content-type: reference
 topic-tags: starting-with-adobe-campaign
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: bb7e3ce726e2c589c033686cf3ab2960de140d91
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '362'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -25,7 +25,7 @@ Saiba como organizar processos e tarefas com fluxos de trabalho do Adobe Campaig
 
 ## Como posso importar dados no Campaign? {#how-can-i-import-data-in-campaign-}
 
-Saiba mais sobre as práticas recomendadas para importar dados em [esta seção](../../platform/using/import-export-best-practices.md).
+Saiba mais sobre as práticas recomendadas para importar dados [nesta seção](../../platform/using/import-export-best-practices.md).
 
 ## Posso monitorar a execução do fluxo de trabalho? {#can-i-monitor-workflow-execution-}
 
