@@ -2,28 +2,28 @@
 solution: Campaign Classic
 product: campaign
 title: Configurar trabalhos de importação
-description: Saiba como configurar e executar tarefas de importação no Campaign Classic.
+description: Saiba como configurar e executar trabalhos de importação no Campaign Classic.
 audience: platform
 content-type: reference
 topic-tags: importing-and-exporting-data
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: ba460d8347c987291681641a1be208027acf1d2f
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2958'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
 
-# Configurando trabalhos de importação {#executing-import-jobs}
+# Configuração de trabalhos de importação {#executing-import-jobs}
 
-A Adobe Campaign permite importar dados para o banco de dados de um ou mais arquivos no formato de texto, CSV, TAB ou XML. Esses arquivos são associados a uma tabela (principal ou vinculada) e cada campo do arquivo de origem é associado a um campo do banco de dados.
+O Adobe Campaign permite importar dados para o banco de dados de um ou mais arquivos no texto, no formato CSV, TAB ou XML. Esses arquivos são associados a uma tabela (principal ou vinculada) e cada campo do arquivo de origem é associado a um campo do banco de dados.
 
 >[!NOTE]
 >
 >É possível importar dados sem mapeá-los com os dados do banco de dados usando a função **[!UICONTROL Import a list]**. Os dados podem ser usados exclusivamente em workflows por meio do objeto **[!UICONTROL Read list]**. Para obter mais informações, consulte [esta página](../../workflow/using/read-list.md).
 
-O assistente de importação permite configurar uma importação, definir suas opções (como transformação de dados) e iniciar a execução. É uma série de telas cujo conteúdo depende do tipo de importação (simples ou múltipla) e dos direitos do operador.
+O assistente de importação permite configurar a importação, definir suas opções (como transformação de dados) e iniciar a execução. É uma série de telas cujo conteúdo depende do tipo de importação (simples ou múltipla) e dos direitos do operador.
 
 O assistente de importação é exibido após a criação de um novo trabalho de importação (consulte [Criação de trabalhos de importação e exportação](../../platform/using/creating-import-export-jobs.md).
 
@@ -335,4 +335,4 @@ A última etapa do assistente permite iniciar a importação de dados. Para faze
 
 ![](assets/s_ncs_user_import_wizard06_1.png)
 
-Você pode monitorar a execução do trabalho de importação (consulte [Monitorando a execução de trabalhos](../../platform/using/monitoring-jobs-execution.md).
+Você pode monitorar a execução do trabalho de importação (consulte [Monitoração da execução de trabalhos](../../platform/using/monitoring-jobs-execution.md).
