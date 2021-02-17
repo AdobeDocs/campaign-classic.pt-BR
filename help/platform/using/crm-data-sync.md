@@ -2,28 +2,28 @@
 solution: Campaign Classic
 product: campaign
 title: Sincronização de dados dos Conectores CRM
-description: Gerenciar dados entre a Campanha e o CRM
+description: Gerenciar dados entre o Campaign e o CRM
 audience: platform
 content-type: reference
 topic-tags: connectors
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 2838ced5f5d562914c0791e6a0b8f02dd61006b4
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1531'
-ht-degree: 86%
+ht-degree: 100%
 
 ---
 
 
-# Sincronização de dados entre a Campanha e o CRM {#data-synchronization}
+# Sincronização de dados entre o Campaign e o CRM {#data-synchronization}
 
-A sincronização de dados entre a Adobe Campaign e o CRM é realizada por meio de uma atividade de fluxo de trabalho dedicada: [Conector CRM](../../workflow/using/crm-connector.md).
+A sincronização de dados entre o Adobe Campaign e o CRM é realizada por meio de uma atividade dedicada de fluxo de trabalho: [conector CRM](../../workflow/using/crm-connector.md).
 
 Por exemplo, para importar os dados do Microsoft Dynamics para o Adobe Campaign, crie o seguinte tipo de fluxo de trabalho:
 
 ![](assets/crm_connectors_msdynamics_07.png)
 
-Esse workflow importa contatos por meio do Microsoft Dynamics, sincroniza com os dados existentes do Adobe Campaign, exclui os contatos duplicados e atualiza o banco de dados do Adobe Campaign.
+Esse fluxo de trabalho importa contatos por meio do Microsoft Dynamics, sincroniza com os dados existentes do Adobe Campaign, exclui os contatos duplicados e atualiza o banco de dados do Adobe Campaign.
 
 A atividade **[!UICONTROL CRM Connector]** precisa ser configurada para sincronizar dados.
 
@@ -32,13 +32,13 @@ A atividade **[!UICONTROL CRM Connector]** precisa ser configurada para sincroni
 Com essa atividade, você pode:
 
 * Importar do CRM - [Saiba mais](#importing-from-the-crm)
-* Exportar para CRM - [Saiba mais](#exporting-to-the-crm)
+* Exportar para o CRM - [Saiba mais](#exporting-to-the-crm)
 * Importar objetos excluídos no CRM - [Saiba mais](#importing-objects-deleted-in-the-crm)
 * Excluir objetos no CRM - [Saiba mais](#deleting-objects-in-the-crm)
 
 ![](assets/crm_task_select_op.png)
 
-Selecione a conta externa que corresponde ao CRM com a qual você deseja configurar a sincronização e selecione o objeto a ser sincronizado: contas, oportunidades, clientes potenciais, contatos etc.
+Selecione a conta externa que corresponde ao CRM que você deseja configurar a sincronização, e depois selecione o objeto a ser sincronizado: contas, oportunidades, clientes potencias, contatos, etc.
 
 ![](assets/crm_task_select_obj.png)
 
@@ -50,7 +50,7 @@ Para importar dados através do CRM no Adobe Campaign, você precisa criar o seg
 
 ![](assets/crm_wf_import.png)
 
-Para uma atividade de importação, as etapas de configuração da atividade **[!UICONTROL CRM Connector]** são:
+Para uma atividade de importação, as etapas de configuração da atividade do **[!UICONTROL CRM Connector]** são:
 
 1. Selecione uma operação **[!UICONTROL Import from the CRM]**.
 1. Vá até a lista suspensa **[!UICONTROL Remote object]** e selecione o objeto relacionado ao processo. Esse objeto coincide com uma das tabelas criadas no Adobe Campaign durante a configuração do conector.
@@ -126,7 +126,7 @@ Para garantir uma operação eficiente com os vários CRMs, os filtros precisam 
 * Não há suporte para comparações JOIN.
 * A expressão na coluna à esquerda deve ser um campo. Ele não pode ser uma combinação de várias expressões, um número, etc.
 
-Por exemplo, as seguintes condições de filtragem NÃO serão válidas para uma importação de CRM, pois o operador OU é colocado no mesmo nível dos operadores AND:
+Por exemplo, as condições de filtragem a seguir NÃO serão válidas para uma importação de CRM, pois o operador OR é colocado no mesmo nível que os operadores AND:
 
 * O operador OR é colocado no mesmo nível que os operadores AND
 * As comparações são realizadas em cadeias de texto
@@ -161,14 +161,14 @@ Para exportar dados para o CRM, você precisa criar o seguinte tipo de workflow:
 
 ![](assets/crm_export_diagram.png)
 
-Para uma exportação, aplique a seguinte configuração à atividade **[!UICONTROL CRM Connector]**:
+Para uma exportação, aplique a seguinte configuração à atividade do **[!UICONTROL CRM Connector]**:
 
 1. Selecione uma operação **[!UICONTROL Export to CRM]**.
 1. Vá até a lista suspensa **[!UICONTROL Remote object]** e selecione o objeto relacionado ao processo. Esse objeto coincide com uma das tabelas criadas no Adobe Campaign durante a configuração do conector.
 
    >[!IMPORTANT]
    >
-   >A função de exportação da atividade **[!UICONTROL CRM Connector]** pode inserir ou atualizar campos no lado do CRM. Para habilitar atualizações de campo no CRM, você precisa especificar a chave primária da tabela remota. Se a chave estiver faltando, os dados serão inseridos (ao invés de serem atualizados).
+   >A função de exportação da atividade do **[!UICONTROL CRM Connector]** pode inserir ou atualizar campos no lado do CRM. Para habilitar atualizações de campo no CRM, você precisa especificar a chave primária da tabela remota. Se a chave estiver faltando, os dados serão inseridos (ao invés de serem atualizados).
 
 1. Na seção **[!UICONTROL Mapping]**, especifique os campos que serão exportados e o mapeamento no CRM.
 
@@ -224,7 +224,7 @@ As rejeições são coletadas com o código de erro e a mensagem relacionada, is
 >
 >Mesmo quando a opção **[!UICONTROL Process rejects]** não está habilitada, um aviso é gerado para cada coluna rejeitada com um código de erro e uma mensagem.
 
-A transição **[!UICONTROL Reject]** de saída permite que você acesse o schema de saída que contém as colunas específicas relevantes para mensagens e códigos de erro. Para Salesforce.com, esta coluna é **errorSymbol** (símbolo de erro, diferente do código de erro), **errorMessage** (descrição do contexto de erro).
+A transição **[!UICONTROL Reject]** de saída permite que você acesse o schema de saída que contém as colunas específicas relevantes para mensagens e códigos de erro. Para o Salesforce.com, essa coluna é **errorSymbol** (símbolo de erro, diferente do código de erro), **errorMessage** (descrição do contexto de erro).
 
 ## Importação de objetos excluídos no CRM {#importing-objects-deleted-in-the-crm}
 
