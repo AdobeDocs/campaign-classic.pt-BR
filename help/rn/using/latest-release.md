@@ -2,15 +2,15 @@
 solution: Campaign Classic
 product: campaign
 title: Versão mais recente
-description: Versão mais recente do Campaign Classic    Observações
+description: Versão mais recente do Campaign Classic Observações
 audience: rns
 content-type: reference
 topic-tags: latest-release-notes
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: b5b9e42eca25193cf4d69f654e74a02afd8adca9
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1977'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
@@ -37,9 +37,9 @@ _27 de outubro de 2020_
 
 >[!CAUTION]
 >
-> * Esta versão é fornecida com um novo protocolo de conexão: se você estiver se conectando à Campanha pelo Adobe Identity Service (IMS), a atualização é obrigatória para o servidor de Campanha e o console do cliente poderem se conectar à Campanha após **31 de março de 2021**.
+> * Esta versão é fornecida com um novo protocolo de conexão: se você estiver se conectando ao Campaign pelo Adobe Identity Service (IMS), a atualização é obrigatória para o servidor do Campaign e o console do cliente poderem se conectar ao Campaign após **31 de março de 2021**.
 > * Esta versão vem com uma [correção de segurança](https://helpx.adobe.com/security/products/campaign/apsb21-04.html): a atualização é obrigatória para reforçar a segurança do ambiente.
-> * Se você estiver usando a integração de Acionadores da Experience Cloud por meio da autenticação do Auth, será necessário mover-se para a Adobe I/O conforme descrito [nesta página](../../integrations/using/configuring-adobe-io.md). O modo de autenticação do oAuth herdado será desativado em **30 de abril de 2021**.
+> * Se você estiver usando os acionadores da Experience Cloud por meio da autenticação oAuth, será necessário mover-se para o Adobe I/O conforme descrito [nesta página](../../integrations/using/configuring-adobe-io.md). O modo de autenticação oAuth herdado será desativado em **30 de abril de 2021**.
 
 
 **Novidades**
