@@ -34,10 +34,8 @@ _22 de dezembro de 2020_
 > * Esta versão é fornecida com um novo protocolo de conexão: se você estiver se conectando ao Campaign pelo Adobe Identity Service (IMS), a atualização é obrigatória para o servidor do Campaign e o console do cliente poderem se conectar ao Campaign após **31 de março de 2021**.
 > * Esta versão vem com uma [correção de segurança](https://helpx.adobe.com/security/products/campaign/apsb21-04.html): a atualização é obrigatória para reforçar a segurança do ambiente.
 > * Se você estiver usando a integração de acionadores da Experience Cloud por meio da autenticação oAuth, será necessário migrar para o Adobe I/O conforme descrito [nesta página](../../integrations/using/configuring-adobe-io.md). O modo de autenticação oAuth herdado será desativado em **30 de abril de 2021**.
-
 >
->
-Saiba mais nas [Perguntas frequentes sobre atualização do Gold Standard 11](https://helpx.adobe.com/campaign/kb/gold-standard-upgrade.html).
+>Saiba mais nas [Perguntas frequentes sobre atualização do Gold Standard 11](https://helpx.adobe.com/campaign/kb/gold-standard-upgrade.html).
 
 O build 9032@d3b452f inclui os seguintes aprimoramentos e correções:
 
