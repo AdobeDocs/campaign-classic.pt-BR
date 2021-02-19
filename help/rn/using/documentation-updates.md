@@ -10,7 +10,7 @@ translation-type: tm+mt
 source-git-commit: 55cc09c0446e389029890e45b790bb5ec6ffdc27
 workflow-type: tm+mt
 source-wordcount: '3947'
-ht-degree: 93%
+ht-degree: 98%
 
 ---
 
@@ -19,7 +19,7 @@ ht-degree: 93%
 
 Esta página lista todos os novos recursos e atualizações de documentação por mês e versão do Campaign.
 
-Consulte as [Notas de versão da Adobe Campaign Classic](../../rn/using/latest-release.md) para ver as atualizações relacionadas à versão.
+Consulte as [Notas de versão do Adobe Campaign Classic](../../rn/using/latest-release.md) para ver as atualizações relacionadas à versão.
 
 ## Fevereiro de 2021 {#feb-2021}
 
@@ -35,35 +35,35 @@ A seção **Enviar um email** foi reorganizada e esclarecida com novas subseçõ
 
 ## Janeiro de 2021 {#jan-2021}
 
-A seção de atividade **[!UICONTROL Fork]** foi aprimorada com as práticas recomendadas. [Leia mais](../../workflow/using/fork.md)
+A seção de atividade **[!UICONTROL Fork]** foi aprimorada com práticas recomendadas. [Leia mais](../../workflow/using/fork.md)
 
-A seção **CRM Connectors** foi atualizada, melhorada e reorganizada. [Leia mais](../../platform/using/crm-connectors.md).
+A seção **Conectores CRM** foi atualizada, melhorada e reorganizada. [Leia mais](../../platform/using/crm-connectors.md).
 
-As etapas para conectar **Adobe Campaign e Microsoft Dynamics** agora estão detalhadas em uma página dedicada. [Leia mais](../../platform/using/crm-ms-dynamics.md).
+As etapas para conectar **o Adobe Campaign e o Microsoft Dynamics** agora estão detalhadas em uma página dedicada. [Leia mais](../../platform/using/crm-ms-dynamics.md).
 
-A oracle On Demand API agora está obsoleta como um CRM conectado à Campanha. [Leia mais](../../rn/using/deprecated-features.md).
+A API Oracle On Demand agora está obsoleta como um CRM conectado ao Campaign. [Leia mais](../../rn/using/deprecated-features.md).
 
-Saiba como descobrir a versão atual do servlet Web Tomcat incorporado usado em uma instância do Adobe Campaign [here](../../production/using/locate-tomcat-version.md).
+Saiba como descobrir a versão atual do servlet Web Tomcat incorporado usado em uma instância do Adobe Campaign [aqui](../../production/using/locate-tomcat-version.md).
 
-A lista de workflows técnicos com seus pacotes associados foi aprimorada e centralizada em uma única página. [Leia mais](../../workflow/using/about-technical-workflows.md)
+A lista de workflows técnicos com seus pacotes associados foi aprimorada e centralizada em uma página única. [Leia mais](../../workflow/using/about-technical-workflows.md)
 
-A seção de solução de problemas do guia **Monitoring** foi reorganizada e aprimorada com uma landing page. [Leia mais](../../production/using/troubleshooting.md).
+A seção de solução de problemas do manual de **Monitoramento** foi reorganizada e aprimorada com uma página de aterrissagem. [Leia mais](../../production/using/troubleshooting.md).
 
 Uma nova seção **Importar e exportar dados** está disponível com novas páginas relacionadas a workflows, compactação de dados, criptografia e práticas recomendadas de importação. [Leia mais](../../platform/using/get-started-data-import-export.md)
 
 ## Dezembro de 2020 {#dec-2020}
 
-A seção **Monitorização de Delivery** foi reorganizada em tópicos temáticos. [Leia mais](../../delivery/using/about-delivery-monitoring.md)
+A seção de **Monitoramento de entrega** foi reorganizada por tópicos temáticos. [Leia mais](../../delivery/using/about-delivery-monitoring.md)
 
 Foi adicionado um caso de uso sobre como adicionar endereços IP de remetentes aos logs do delivery. [Leia mais](../../delivery/using/delivery-dashboard.md#use-case)
 
 As perguntas frequentes sobre privacidade foram movidas para [esta seção](../../platform/using/privacy-faq.md).
 
-Foi adicionado um caso de uso sobre como usar a funcionalidade de mesclagem de **[!UICONTROL Deduplication]** atividade. [Leia mais](../../workflow/using/deduplication-merge.md)
+Foi adicionado um caso de uso sobre como usar a funcionalidade de mesclagem da atividade de **[!UICONTROL Deduplication]**. [Leia mais](../../workflow/using/deduplication-merge.md)
 
 A descrição completa do protocolo e da página de configurações do conector SMS agora está disponível [aqui](../../delivery/using/sms-protocol.md).
 
-Uma observação foi adicionada à seção **Mensagens transacionais** para avisar que as pastas de eventos não devem ser definidas como visualizações no instância de execução, para evitar problemas de direito de acesso. [Leia mais](../../message-center/using/event-collection.md)
+Uma observação foi adicionada à seção **Mensagens transacionais** para avisar que as pastas de eventos não devem ser definidas como visualizações nas instâncias de execução para evitar problemas de direitos de acesso. [Leia mais](../../message-center/using/event-collection.md)
 
 ## Novembro de 2020 {#nov-2020}
 
