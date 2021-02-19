@@ -50,7 +50,7 @@ Você deve ter um ambiente de teste/desenvolvimento para realizar testes de migr
 
 >[!NOTE]
 >
->O comando de atualização da Adobe Campaign (**postupgrade**) permite sincronizar recursos e atualizar schemas e o banco de dados. Essa operação só pode ser realizada uma vez e somente no servidor de aplicativos. Depois de sincronizar os recursos, o comando **pós-upgrade** permite detectar se a sincronização gera erros ou avisos.
+>O comando de atualização do Adobe Campaign (**postupgrade**) permite sincronizar recursos e atualizar schemas e o banco de dados. Essa operação só pode ser realizada uma vez e somente no servidor de aplicativos. Depois de sincronizar os recursos, o comando **pós-upgrade** permite detectar se a sincronização gera erros ou avisos.
 
 ## Ferramentas de migração {#migration-tools}
 
