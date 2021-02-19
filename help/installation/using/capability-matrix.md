@@ -10,7 +10,7 @@ translation-type: tm+mt
 source-git-commit: 1cde12d33551206da12e03a7e8deb198d427ab3a
 workflow-type: tm+mt
 source-wordcount: '303'
-ht-degree: 38%
+ht-degree: 39%
 
 ---
 
@@ -57,4 +57,4 @@ O Adobe Campaign oferece a opção **Federated Data Access** (FDA) para processa
 * [Campaign Classic upgrades](../../rn/using/rn-overview.md)
 * [Recursos descontinuados e removidos](../../rn/using/deprecated-features.md)
 * [Versões Gold Standard](../../rn/using/gold-standard.md)
-* [Programa Gold Standard](https://helpx.adobe.com/br/campaign/kb/gold-standard.html)
+* [Programa Gold Standard](https://helpx.adobe.com/campaign/kb/gold-standard.html)
