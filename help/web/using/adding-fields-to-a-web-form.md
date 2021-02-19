@@ -6,9 +6,9 @@ description: Inclusão de campos em um formulário web
 audience: web
 content-type: reference
 topic-tags: web-forms
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: 21219f4a85a0caec4531acda33ab8bba5c7605d6
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '2457'
 ht-degree: 100%
 
@@ -381,6 +381,7 @@ Você pode armazenar o link para esses arquivos em uma variável local ou em um 
 >* O Adobe Campaign não controla o tamanho ou o tipo de recurso carregado: portanto, é altamente recomendável usar campos de carregamento para sites de intranet tipo seguro.
 >* Se vários servidores estiverem vinculados à instância (&quot;balanceamento de carga&quot;), você precisará verificar se as chamadas para o formulário web chegam no mesmo servidor.
 >* Essas implementações exigem a assistência da equipe de consulta do Adobe Campaign.
+
 >
 
 
