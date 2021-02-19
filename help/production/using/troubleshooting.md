@@ -10,7 +10,7 @@ translation-type: tm+mt
 source-git-commit: 0f2986f88f72c191262248029ec620fad538c218
 workflow-type: tm+mt
 source-wordcount: '219'
-ht-degree: 13%
+ht-degree: 21%
 
 ---
 
@@ -65,4 +65,4 @@ Vá para as seções abaixo para ler sobre problemas mais específicos:
 
 * [Rastreamento em pilha no Linux](../../production/using/stack-trace-in-linux.md)
 * [Comportamento JSP](../../production/using/jsp-behavior.md)
-* [Localizando versão do Tomcat](../../production/using/locate-tomcat-version.md)
+* [Localizar versão do Tomcat](../../production/using/locate-tomcat-version.md)
