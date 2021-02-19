@@ -6,9 +6,9 @@ description: Relatórios sobre deliveries
 audience: reporting
 content-type: reference
 topic-tags: accessing-built-in-reports
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '701'
 ht-degree: 100%
 
@@ -120,9 +120,9 @@ Os seguintes logs correspondem à abertura e aos dois cliques realizados pela pe
 |---|---|---|---|
 | John | - | - | - |
 | Marie | - | - | +1 |
-| Florian | +1 | +1 | +1 |
+| Florim | +1 | +1 | +1 |
 | Pessoa desconhecida | - | +1 | - |
-| Total intermediário | 1 | 2 | 2 |
+| Total intermediário | 3 | 2 | 2 |
 
 ## Etapa 4 - Henry {#step-4--henry}
 
@@ -144,7 +144,7 @@ As aberturas e os 4 cliques realizados pelo Henry aparecem nos seguintes logs:
 |---|---|---|---|
 | John | - | - | - |
 | Marie | - | - | +1 |
-| Florian | +1 | +1 | +1 |
+| Florim | +1 | +1 | +1 |
 | Pessoa desconhecida | - | +1 | - |
 | Henry | +1 | +4 | +1 |
 | Total intermediário | 2 | 6 | 3 |
