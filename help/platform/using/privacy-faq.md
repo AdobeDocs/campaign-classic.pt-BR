@@ -6,9 +6,9 @@ description: Saiba mais sobre privacidade e consentimento
 audience: platform
 content-type: reference
 topic-tags: starting-with-adobe-campaign
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: 450889f845b7c5adad1085d7eba70e23030e6609
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '809'
 ht-degree: 100%
 
