@@ -6,9 +6,9 @@ description: Saiba mais sobre como direcionar dados em um workflow
 audience: workflow
 content-type: reference
 topic-tags: -general-operation
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: bb7e3ce726e2c589c033686cf3ab2960de140d91
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '1904'
 ht-degree: 100%
 
