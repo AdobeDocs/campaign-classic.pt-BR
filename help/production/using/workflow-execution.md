@@ -71,7 +71,7 @@ Pode haver várias causas para esse problema, siga as etapas abaixo para resolv�
 
    Para resolver esse problema, pare workflows indesejados e exclua delivery com falha. Se o limite for atingido, isso permitirá a execução de novos processos.
 
-   Para verificar o número de workflows em execução de sua instância, recomendamos usar as visualizações predefinidas, acessíveis por padrão na pasta **[!UICONTROL Administration]** / **[!UICONTROL Audit]**. Para saber mais, consulte [esta página](../../workflow/using/monitoring-workflow-execution.md#filtering-workflows-status).
+   Para verificar o número de workflows em execução de sua instância, recomendamos usar as visualizações predefinidas, acessíveis por padrão na pasta **[!UICONTROL Administration]** / **[!UICONTROL Audit]**. Para obter mais informações, consulte [esta página](../../workflow/using/monitoring-workflow-execution.md#filtering-workflows-status).
 
    >[!IMPORTANT]
    >
