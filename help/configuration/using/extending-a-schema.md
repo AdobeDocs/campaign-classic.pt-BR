@@ -21,7 +21,7 @@ ht-degree: 10%
 >
 >Alguns schemas incorporados não devem ser estendidos: principalmente aquelas para as quais são definidas as seguintes configurações:\
 >**dataSource=&quot;file&quot;** e  **mappingType=&quot;xmlFile&quot;**.\
->Os seguintes schemas não devem ser prolongados: **xtk:entityBackupNew**, **xtk:entityBackupOriginal**, **xtk:entityOriginal**, **xtk:form**, **xtk:srcSchema**, **ncm:publishing**, **nl:Monitoring**, **nms:calendário**, **nms:remoteTracking**, **nms:userAgentRules&lt;a 19/>,** xtk:builder **,** xtk:conexões **,** xtk:dbInit **,** xtk:funcList&lt;a27>, **xtk:fusion**, **xtk: jst**, **xtk:navtree**, **xtk:queryDef**, **xtk:resourceMenu**, **xtk:schema&lt;a 39/>,** xtk:scriptContext **,** xtk:session **,** xtk:sqlSchema **,** xtk:strings **.******
+>Os seguintes schemas não devem ser prolongados: **xtk:entityBackupNew**, **xtk:entityBackupOriginal**, **xtk:entityOriginal**, **xtk:form**, **xtk:srcSchema**, **ncm:publishing**, **nl:Monitoring**, **nms:calendário**, **nms:remoteTracking**, **nms:userAgentRules&lt;a 19/>,** xtk:builder **,** xtk:conexões **,** xtk:dbInit **,** xtk:funcList **,** xtk:fusion **,** xtk: jst **,** xtk:navtree **,** xtk:queryDef **,** xtk:resourceMenu **,** xtk:schema&lt;a 39/>, **xtk:scriptContext**, **xtk:session**, **xtk:sqlSchema**, **xtk:strings**.****
 >Esta lista não é exaustiva.
 
 Existem dois métodos para estender um schema existente:
