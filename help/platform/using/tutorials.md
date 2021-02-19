@@ -47,8 +47,8 @@ Descubra os principais recursos do Adobe Campaign em vídeo. [Saiba mais](https:
 
 ### Sessões de treinamento e vídeos
 
-Além desses vídeos curtos e detalhados, você pode encontrar cursos [de](https://learning.adobe.com/catalog.html) treinamento e assistir a vídeos [de](https://www.adobe.com/training/video.html) apresentação de recursos em Adobe.com.
+Além desses vídeos curtos e detalhados, você pode encontrar [cursos de treinamento](https://learning.adobe.com/catalog.html) e assistir aos recursos [vídeos de apresentação](https://www.adobe.com/training/video.html) no Adobe.com.
 
 ### Cursos da Experience League
 
-Você também pode visitar os Cursos [](https://experienceleague.adobe.com/?lang=en#dashboard/learning) recomendados para Adobe Campaign Classic: os cursos são coleções especializadas de lições que ajudam você a adquirir habilidades e conhecimento rapidamente.
+Você também pode visitar os [Cursos recomendados](https://experienceleague.adobe.com/?lang=en#dashboard/learning) para Adobe Campaign Classic: os cursos são coleções especializadas de lições que ajudam você a adquirir habilidades e conhecimento rapidamente.
