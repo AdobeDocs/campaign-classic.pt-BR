@@ -21,7 +21,7 @@ O modelo de dados conceituais do banco de dados do Adobe Campaign consiste em um
 
 ## Visão geral {#data-model-overview}
 
-A Adobe Campaign depende de um banco de dados relacional que contém tabelas vinculadas. A estrutura básica do modelo de dados da Adobe Campaign pode ser descrita da seguinte maneira.
+A Adobe Campaign depende de um banco de dados relacional que contém tabelas vinculadas. A estrutura básica do modelo de dados Adobe Campaign pode ser descrita da seguinte forma.
 
 ### tabela recipient {#recipient-table}
 
