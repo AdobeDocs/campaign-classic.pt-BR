@@ -6,9 +6,9 @@ description: Saiba mais sobre o desempenho do delivery e como solucionar problem
 audience: delivery
 content-type: reference
 topic-tags: monitoring-deliveries
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: f3ba836bbb5a5f82d6a7868dcb15edc8e61b9a5b
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '789'
 ht-degree: 100%
 
