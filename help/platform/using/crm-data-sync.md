@@ -6,9 +6,9 @@ description: Gerenciar dados entre o Campaign e o CRM
 audience: platform
 content-type: reference
 topic-tags: connectors
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: 2838ced5f5d562914c0791e6a0b8f02dd61006b4
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '1531'
 ht-degree: 100%
 
