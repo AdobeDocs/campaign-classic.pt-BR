@@ -79,12 +79,12 @@ Para desconectar-se do Adobe Campaign, use o primeiro ícone na barra de ícones
 >
 >Você também pode fechar o aplicativo sem fazer logoff.
 
-## Getting your Adobe Campaign version {#getting-your-campaign-version}
+## Obter a versão do Adobe Campaign {#getting-your-campaign-version}
 
 O menu **[!UICONTROL Help > About...]** permite acessar as seguintes informações:
 
-* **número da versão** para o console do cliente e o servidor de aplicativos do Campaign
-* **número da compilação** para o console do cliente e o servidor de aplicativos do Campaign
+* **número de** versão para o console do cliente Campaign e o servidor de aplicativos
+* **** buildnumber para o console do cliente Campaign e o servidor de aplicativos
 * um link para entrar em contato com o Atendimento ao cliente da Adobe
 * links para Política de privacidade da Adobe, Termos de uso e Política de cookies
 
