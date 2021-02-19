@@ -6,9 +6,9 @@ description: Sincronia de público
 audience: integrations
 content-type: reference
 topic-tags: acs-connector
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '1153'
 ht-degree: 100%
 
@@ -139,7 +139,7 @@ Ao criar um workflow de delivery no Campaign Standard, é possível usar esse p�
 
 ## Envio e monitoramento do delivery {#send-and-monitor-your-delivery}
 
-Quando o delivery e seu conteúdo estiverem prontos, envie o delivery, conforme descrito com mais detalhes [nesta seção](https://docs.adobe.com/content/help/pt-BR/campaign-standard/using/managing-processes-and-data/channel-activities/email-delivery.html):
+Quando o delivery e seu conteúdo estiverem prontos, envie o delivery, conforme descrito com mais detalhes [nesta seção](https://docs.adobe.com/content/help/en/campaign-standard/using/managing-processes-and-data/channel-activities/email-delivery.html):
 
 1. Execute o workflow de delivery. Essa etapa prepara o email para envio.
 1. No painel de delivery, confirme manualmente se o delivery pode ser enviado.
