@@ -33,5 +33,5 @@ Você também pode integrar o Campaign com vários outros sistemas, como:
 
 >[!NOTE]
 >
->A disponibilidade desses módulos e sua configuração podem depender do tipo de implantação da sua instalação. Refer to [Campaign on-premise - hosted capabilities matrix](../../installation/using/capability-matrix.md).
+>A disponibilidade desses módulos e sua configuração podem depender do tipo de implantação da sua instalação. Consulte [Campanha no local - matriz de recursos hospedados](../../installation/using/capability-matrix.md).
 
