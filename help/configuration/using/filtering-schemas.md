@@ -63,7 +63,7 @@ Esses filtros são inseridos no nível **element** principal dos schemas e, como
 >
 >Se nenhum filtro for especificado, todos os operadores terão permissões de leitura e gravação no schema.
 
-## Protegendo schemas integrados {#protecting-built-in-schemas}
+## Protegendo schemas incorporados {#protecting-built-in-schemas}
 
 Por padrão, os schemas incorporados só podem ser acessados com permissões de GRAVAÇÃO para operadores com direitos de ADMINISTRAÇÃO:
 
