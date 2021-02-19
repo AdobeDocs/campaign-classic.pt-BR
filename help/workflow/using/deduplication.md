@@ -6,9 +6,9 @@ description: Saiba mais sobre a atividade de workflow de desduplicação
 audience: workflow
 content-type: reference
 topic-tags: targeting-activities
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: 55e2297c5c60a48be230d06a3c1880d79b8ea5f2
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '1089'
 ht-degree: 100%
 
@@ -66,6 +66,7 @@ Para configurar uma desduplicação, insira o rótulo, o método e os critérios
    >[!NOTE]
    >
    >Se os dados externos estiverem sendo usados como entrada, por exemplo, de um arquivo externo, selecione a opção **[!UICONTROL Temporary schema]**.
+
    >
    >Na próxima etapa, a opção **[!UICONTROL Other]** permite selecionar o critério ou os critérios a serem usados:
 
