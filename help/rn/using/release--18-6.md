@@ -23,7 +23,7 @@ ht-degree: 98%
 
 >[!CAUTION]
 >
->Esta configuração foi retomada. Atualize [para a versão](../../production/using/build-upgrade.md) mais recente ou entre em contato com o Atendimento [ao cliente da](https://helpx.adobe.com/br/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html)Adobe.
+>Esta configuração foi retomada. Atualize [para a versão mais recente](../../production/using/build-upgrade.md) ou entre em contato com o [Atendimento ao cliente do Adobe](https://helpx.adobe.com/br/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html).
 
 **Novidades**
 
@@ -79,7 +79,7 @@ Para obter mais informações sobre faixa de query, consulte esses artigos:
 
 >[!CAUTION]
 >
->Esta configuração foi retomada. [Atualize para a configuração mais recente](../../production/using/build-upgrade.md) ou entre em contato com o [suporte técnico](https://helpx.adobe.com/br/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html).
+>Esta configuração foi retomada. [Atualize para a configuração mais recente](../../production/using/build-upgrade.md) ou entre em contato com o [suporte técnico](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html).
 
 **Novidades**
 
@@ -97,7 +97,7 @@ Para obter mais informações sobre faixa de query, consulte esses artigos:
   </tr> 
   <tr> 
    <td> Suporte do Windows Server 2016<br /> </td> 
-   <td> O Adobe Campaign agora é compatível com o Windows Server 2016. Consulte <a href="https://helpx.adobe.com/br/campaign/kb/compatibility-matrix.html">Matriz de compatibilidade do Campaign Classic</a>.<br /> </td> 
+   <td> O Adobe Campaign agora é compatível com o Windows Server 2016. Consulte <a href="https://helpx.adobe.com/campaign/kb/compatibility-matrix.html">Matriz de compatibilidade do Campaign Classic</a>.<br /> </td> 
   </tr> 
  </tbody> 
 </table>
