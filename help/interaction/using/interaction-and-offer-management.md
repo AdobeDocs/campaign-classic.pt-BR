@@ -6,9 +6,9 @@ description: Envie as melhores ofertas aos seus contatos com base nas regras de 
 audience: interaction
 content-type: reference
 topic-tags: interaction-overview
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: 20dcdd91d71158bc373db68c3f61f6808b240bd2
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '286'
 ht-degree: 100%
 
