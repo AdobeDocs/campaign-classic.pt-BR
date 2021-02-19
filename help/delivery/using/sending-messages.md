@@ -20,7 +20,7 @@ ht-degree: 5%
 Depois que seu email for criado e configurado, você poderá enviá-lo para o público alvo principal. Esta seção apresenta as etapas principais para confirmar o delivery de um email.
 
 1. Certifique-se de configurar todas as configurações específicas para o delivery de email. Para obter mais informações, consulte [Parâmetros de e-mail](../../delivery/using/email-parameters.md).
-1. Quando o email estiver pronto, antes de enviá-lo para o público alvo principal, é recomendável detectar possíveis erros enviando provas. Para obter mais informações, consulte [Envio de uma prova](../../delivery/using/steps-validating-the-delivery.md#sending-a-proof).
+1. Quando o e-mail estiver pronto, antes de enviá-lo para o público alvo principal, é recomendável detectar possíveis erros enviando provas. Para obter mais informações, consulte [Envio de uma prova](../../delivery/using/steps-validating-the-delivery.md#sending-a-proof).
 
 1. Depois de concluído, você deve validar o email iniciando a análise. Para fazer isso, clique em **[!UICONTROL Send]**, selecione uma ação e clique em **[!UICONTROL Analyze]**. Para obter mais informações, consulte [Abrindo a análise](../../delivery/using/steps-validating-the-delivery.md#analyzing-the-delivery).
 
