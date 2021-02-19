@@ -10,7 +10,7 @@ translation-type: tm+mt
 source-git-commit: 5639f08ad709597d5f5c9e6bbd6932cffcbde40f
 workflow-type: tm+mt
 source-wordcount: '2368'
-ht-degree: 3%
+ht-degree: 4%
 
 ---
 
@@ -19,7 +19,7 @@ ht-degree: 3%
 
 Esta seção fornecerá uma apresentação detalhada sobre o processo de atualização e as etapas para identificar e resolver conflitos.
 
-A atualização da construção deve ser efetuada com cautela, os seus impactos devem ser devidamente considerados antes e o procedimento deve ser concluído com um elevado nível de disciplina. Para garantir uma atualização bem-sucedida, verifique se somente usuários especialistas executam as etapas descritas abaixo. Além disso, recomendamos entrar em contato com o [Atendimento ao cliente do Adobe](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html) antes de iniciar qualquer atualização.
+A atualização da construção deve ser efetuada com cautela, os seus impactos devem ser devidamente considerados antes e o procedimento deve ser concluído com um elevado nível de disciplina. Para garantir uma atualização bem-sucedida, verifique se somente usuários especialistas executam as etapas descritas abaixo. Além disso, recomendamos entrar em contato com o [Atendimento ao cliente do Adobe](https://helpx.adobe.com/br/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html) antes de iniciar qualquer atualização.
 
 Os seguintes pré-requisitos são necessários:
 
@@ -29,7 +29,7 @@ Os seguintes pré-requisitos são necessários:
 
 Você pode encontrar mais informações nestas seções: [Atualizando o Adobe Campaign](../../production/using/upgrading.md), [Migrando para uma nova versão](../../migration/using/about-migration.md).
 
-Para instâncias hospedadas e híbridas, você deve solicitar a atualização da compilação para a equipe de Operações Técnicas do Adobe. Para obter mais informações, consulte a seção Perguntas frequentes na parte inferior se esta página estiver disponível. Consulte também as [perguntas frequentes sobre atualização da compilação](../../platform/using/faq-build-upgrade.md).
+Para instâncias hospedadas e híbridas, você deve solicitar a atualização da compilação para a equipe de Operações Técnicas do Adobe. Para obter mais informações, consulte a seção Perguntas frequentes na parte inferior se esta página estiver disponível. Consulte também as [perguntas frequentes sobre a atualização da compilação](../../platform/using/faq-build-upgrade.md).
 
 ## Preparar a atualização
 
@@ -204,7 +204,7 @@ Os seguintes serviços precisam ser reiniciados:
 
 ### Atualização de consoles cliente
 
-O console do cliente deve estar na mesma compilação que a instância do servidor.
+O console do cliente deve estar na mesma build da instância do servidor.
 
 Na máquina em que o servidor de aplicativos Adobe Campaign está instalado (nlserverweb), baixe e copie o arquivo:
 
@@ -414,5 +414,5 @@ Estas são as etapas para executar uma mesclagem complexa:
 
 * [Perguntas frequentes de atualização de build](../../platform/using/faq-build-upgrade.md)
 * [Notas de versão do Campaign Classic ](../../rn/using/rn-overview.md)
-* [Opções de ajuda e suporte para Campaign Classic](https://helpx.adobe.com/campaign/kb/ac-support.html#acc-support-req)
+* [Opções de ajuda e suporte para o Campaign Classic](https://helpx.adobe.com/br/campaign/kb/ac-support.html#acc-support-req)
 * [Programa Gold Standard](https://helpx.adobe.com/br/campaign/kb/gold-standard.html)
