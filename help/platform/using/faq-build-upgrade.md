@@ -6,9 +6,9 @@ description: Perguntas frequentes sobre atualizações de build do Campaign
 audience: platform
 content-type: reference
 topic-tags: starting-with-adobe-campaign
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: 5639f08ad709597d5f5c9e6bbd6932cffcbde40f
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '2017'
 ht-degree: 100%
 
@@ -104,7 +104,7 @@ Identifique tempos de tráfego baixos ou de baixo volume que seriam ideais para 
 
 Revise nossa [lista de verificação de atualização de build abaixo](#check-list) e seus planos de teste e verifique se os recursos que podem executar esses testes estão disponíveis dentro de 24 a 48 horas da conclusão de uma atualização.
 
-Para saber mais, [consulte este documento](https://helpx.adobe.com/br/campaign/kb/acc-build-upgrade.html).
+Para saber mais, [consulte este documento](https://helpx.adobe.com/campaign/kb/acc-build-upgrade.html).
 
 ## As atualizações de build podem ser realizadas à noite ou fora do horário comercial?
 
@@ -207,5 +207,5 @@ todo o conteúdo é exibido e está presente.
 
 * [Atualização de uma build](../../production/using/build-upgrade.md)
 * [Notas de versão do Campaign Classic ](../../rn/using/rn-overview.md)
-* [Opções de ajuda e suporte para o Campaign Classic](https://helpx.adobe.com/br/campaign/kb/ac-support.html#acc-support-req)
-* [Programa Gold Standard](https://helpx.adobe.com/br/campaign/kb/gold-standard.html)
+* [Opções de ajuda e suporte para o Campaign Classic](https://helpx.adobe.com/campaign/kb/ac-support.html#acc-support-req)
+* [Programa Gold Standard](https://helpx.adobe.com/campaign/kb/gold-standard.html)
