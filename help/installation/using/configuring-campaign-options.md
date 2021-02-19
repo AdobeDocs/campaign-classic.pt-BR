@@ -682,7 +682,7 @@ Alguns deles são incorporados ao instalar a Campanha e outros podem ser adicion
    <td> Durante a migração, a estrutura em árvore é automaticamente reorganizada com base nos novos padrões de versão.<br /> Essa opção permite desativar a migração automática da árvore de navegação. Se você usá-la, após a migração, terá que excluir pastas obsoletas, adicionar as novas pastas e executar todas as verificações necessárias.<br /> 
     <ul> 
      <li> <p> <span class="uicontrol">Tipo de dados:</span> Número inteiro</p> </li> 
-     <li> <p> <span class="uicontrol">Valor (texto)</span> : 3 </p> </li> 
+     <li> <p> <span class="uicontrol">Valor (texto)</span> : 1 </p> </li> 
     </ul> Essa opção só deve ser usada se a árvore de navegação predefinida tiver sofrido muitas alterações.<br /> Para obter mais informações, consulte <a href="../../migration/using/specific-configurations-in-v5-11.md#campaign-vseven-tree-structure">esta seção</a>.<br /> </td> 
   </tr> 
   <tr> 
@@ -790,7 +790,7 @@ Alguns deles são incorporados ao instalar a Campanha e outros podem ser adicion
  </tbody> 
 </table>
 
-## Server {#server}
+## Servidor {#server}
 
 <table> 
  <thead> 
