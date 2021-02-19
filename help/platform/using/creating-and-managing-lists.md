@@ -10,7 +10,7 @@ translation-type: tm+mt
 source-git-commit: 20dcdd91d71158bc373db68c3f61f6808b240bd2
 workflow-type: tm+mt
 source-wordcount: '805'
-ht-degree: 97%
+ht-degree: 99%
 
 ---
 
@@ -142,4 +142,4 @@ Aprenda a criar um workflow para direcionar os recipients e como torná-lo recor
 
 >[!VIDEO](https://video.tv.adobe.com/v/25603?quality=12)
 
-Vídeos de instruções adicionais do Campaign Classic estão disponíveis [aqui](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html).
+Vídeos extras sobre procedimentos do Campaign Classic estão disponíveis [aqui](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html?lang=pt-BR).
