@@ -6,9 +6,9 @@ description: Sincronia de perfis
 audience: integrations
 content-type: reference
 topic-tags: acs-connector
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '1201'
 ht-degree: 100%
 
@@ -61,7 +61,7 @@ As etapas abaixo para alterar um ponto único de dados oferecem um exemplo simpl
 
    ![](assets/acs_connect_profile_sync_03.png)
 
-1. Confirme se o nome do recipient foi atualizado no Campaign Standard. Para saber onde encontrar perfis no Campaign Standard, consulte [Noções básicas de navegação](https://docs.adobe.com/content/help/pt-BR/campaign-standard/using/getting-started/discovering-the-interface/interface-description.html).
+1. Confirme se o nome do recipient foi atualizado no Campaign Standard. Para saber onde encontrar perfis no Campaign Standard, consulte [Noções básicas de navegação](https://docs.adobe.com/content/help/en/campaign-standard/using/getting-started/discovering-the-interface/interface-description.html).
 
    ![](assets/acs_connect_profile_sync_04.png)
 
@@ -174,7 +174,7 @@ Siga as instruções em [Criar um workflow](#creating-a-workflow) e [Criar um de
 
    ![](assets/acs_connect_profile_sync_22.png)
 
-1. Vá para o Campaign Standard e abra os detalhes do perfil do recipient. Confirme se uma caixa de seleção aparece ao lado de **[!UICONTROL No longer contact (by any channel)]**. Para saber onde encontrar perfis no Campaign Standard, consulte [Noções básicas de navegação](https://docs.adobe.com/content/help/pt-BR/campaign-standard/using/getting-started/discovering-the-interface/interface-description.html).
+1. Vá para o Campaign Standard e abra os detalhes do perfil do recipient. Confirme se uma caixa de seleção aparece ao lado de **[!UICONTROL No longer contact (by any channel)]**. Para saber onde encontrar perfis no Campaign Standard, consulte [Noções básicas de navegação](https://docs.adobe.com/content/help/en/campaign-standard/using/getting-started/discovering-the-interface/interface-description.html).
 
    ![](assets/acs_connect_profile_sync_23.png)
 
