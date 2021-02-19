@@ -10,7 +10,7 @@ translation-type: tm+mt
 source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
 workflow-type: tm+mt
 source-wordcount: '590'
-ht-degree: 40%
+ht-degree: 41%
 
 ---
 
@@ -71,6 +71,6 @@ Em várias atividades de fluxo de trabalho da Adobe Campaign, você pode usar os
 
 * **Criar subconjuntos**  - A  [](../../workflow/using/split.md) Divitatividade permite criar subconjuntos. Você pode usar dados externos para definir os critérios de filtragem a serem usados. Para obter mais informações, consulte [esta página](../../workflow/using/split.md).
 
-* **Carregar banco de dados**  externo - você pode usar os dados externos na atividade  [de carregamento](../../workflow/using/data-loading--rdbms-.md)  de dados (RDBMS). Saiba mais em [esta página](../../workflow/using/data-loading--rdbms-.md).
+* **Carregar banco de dados**  externo - você pode usar os dados externos na atividade  [de carregamento](../../workflow/using/data-loading--rdbms-.md)  de dados (RDBMS). Saiba mais [nesta página](../../workflow/using/data-loading--rdbms-.md).
 
-* **Adicionar informações e links**  - A  [](../../workflow/using/enrichment.md) Enriquecimento permite que você adicione dados adicionais à tabela de trabalho do fluxo de trabalho e links para uma tabela externa. Neste contexto, ele pode usar dados de um banco de dados externo. Saiba mais em [esta página](../../workflow/using/enrichment.md).
+* **Adicionar informações e links**  - A  [](../../workflow/using/enrichment.md) Enriquecimento permite que você adicione dados adicionais à tabela de trabalho do fluxo de trabalho e links para uma tabela externa. Neste contexto, ele pode usar dados de um banco de dados externo. Saiba mais [nesta página](../../workflow/using/enrichment.md).
