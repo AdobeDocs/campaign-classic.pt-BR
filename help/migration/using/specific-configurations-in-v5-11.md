@@ -36,7 +36,7 @@ Durante a migração, você **deve** verificar o caminho do arquivo de log espec
 
 Se o arquivo estiver vazio ou não, verifique se essas IDs não são usadas para configuração em outro lugar (e adapte a configuração, se isso for o caso).
 
-## Fluxos de trabalho {#workflows}
+## Workflows {#workflows}
 
 Como o nome do diretório de instalação do Adobe Campaign foi alterado, alguns workflows podem não funcionar após a migração. Se um fluxo de trabalho fizer referência ao diretório nl5 em uma de suas atividades, isso gerará um erro. Substitua esta referência por **build**. Você pode executar um query SQL para identificar esses workflows (exemplo do PostgreSQL):
 
@@ -114,7 +114,7 @@ Uma opção foi adicionada para desativar a migração automática da árvore de
 
 * Nome interno: NlMigration_KeepFolderStructure
 * Tipo de dados: Número inteiro
-* Valor (texto): 1
+* Valor (texto): 3
 
 Se você usar essa opção, após a migração, será necessário excluir pastas obsoletas, adicionar as novas pastas e executar todas as verificações necessárias.
 
