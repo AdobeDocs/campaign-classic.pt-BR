@@ -69,11 +69,12 @@ As etapas a seguir devem ser executadas com muito cuidado: alguns processos aind
 >
 >* O procedimento a seguir é válido na linguagem PostgreSQL. Se a linguagem SQL for diferente (Oracle, por exemplo), os query SQL devem ser adaptados.
 >* Os comandos abaixo se aplicam no contexto de uma instância **prod** e uma instância **dev** em PostgreSQL.
+
 >
 
 
 
-### Etapa 1 - Faça um backup dos dadosdo ambiente de origem (prod) {#step-1---make-a-backup-of-the-source-environment--prod--data}
+### Etapa 1 - Faça um backup dos dados {#step-1---make-a-backup-of-the-source-environment--prod--data} do ambiente de origem (prod)
 
 Copiar os bancos de dados
 
