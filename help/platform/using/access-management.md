@@ -6,9 +6,9 @@ description: Gerenciamento de acesso
 audience: platform
 content-type: reference
 topic-tags: administration-basics
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: c24cdd21c2426ea12a1cbd76d78154256bc814c8
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '3019'
 ht-degree: 100%
 
@@ -208,7 +208,7 @@ Por padrão, o operador técnico &#39;webapp&#39; tem o direito nomeado ADMINIST
 
 >[!NOTE]
 >
->Para obter mais informações sobre Diretrizes de segurança, consulte a [lista de verificação de configuração do Adobe Campaign Security](https://helpx.adobe.com/br/campaign/kb/acc-security.html).
+>Para obter mais informações sobre Diretrizes de segurança, consulte a [lista de verificação de configuração do Adobe Campaign Security](https://helpx.adobe.com/campaign/kb/acc-security.html).
 
 ## Grupos de operadores {#operator-groups}
 
