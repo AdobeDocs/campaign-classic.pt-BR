@@ -6,9 +6,9 @@ description: Bancos de dados da lista de bloqueios
 audience: delivery
 content-type: reference
 topic-tags: deliverability-management
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: 3139a9bf5036086831e23acef21af937fcfda740
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '392'
 ht-degree: 100%
 
@@ -43,13 +43,13 @@ Veja a seguir uma lista das RBLs mais utilizadas. Para obter uma lista mais abra
 
    Consulte [https://www.uribl.com/](https://www.uribl.com/)
 
-   Esta lista identifica os domínios que aparecem regularmente nas mensagens declaradas como spam. Se o seu domínio aparecer nessa lista, ele poderá afetar significativamente seu deliverability. Você deve informar os serviços de capacidade de entrega e o [Atendimento ao cliente da Adobe](https://helpx.adobe.com/br/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html) imediatamente.
+   Esta lista identifica os domínios que aparecem regularmente nas mensagens declaradas como spam. Se o seu domínio aparecer nessa lista, ele poderá afetar significativamente seu deliverability. Você deve informar os serviços de capacidade de entrega e o [Atendimento ao cliente da Adobe](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html) imediatamente.
 
 * **SURBL**
 
    Consulte [http://www.surbl.org/](http://www.surbl.org/)
 
-   SURBL identifica os sites que aparecem regularmente como spam. Se o seu domínio aparecer nessa lista, ele poderá afetar significativamente seu deliverability. Você deve informar os serviços de capacidade de entrega e o [Atendimento ao cliente da Adobe](https://helpx.adobe.com/br/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html) imediatamente.
+   SURBL identifica os sites que aparecem regularmente como spam. Se o seu domínio aparecer nessa lista, ele poderá afetar significativamente seu deliverability. Você deve informar os serviços de capacidade de entrega e o [Atendimento ao cliente da Adobe](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html) imediatamente.
 
 * **iX Manitu**
 
