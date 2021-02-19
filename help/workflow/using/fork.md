@@ -6,9 +6,9 @@ description: Saiba mais sobre a atividade de workflow de bifurcação
 audience: workflow
 content-type: reference
 topic-tags: flow-control-activities
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: e5f718908d0bb6893e54c51700865ecda09c80db
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '196'
 ht-degree: 100%
 
