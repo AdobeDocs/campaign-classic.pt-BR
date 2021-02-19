@@ -6,9 +6,9 @@ description: Saiba como gerenciar solicitações de privacidade
 audience: platform
 content-type: reference
 topic-tags: starting-with-adobe-campaign
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '2444'
 ht-degree: 100%
 
@@ -46,7 +46,7 @@ O Adobe Campaign oferece aos controladores de dados duas possibilidades para exe
 
 ### Pré-requisitos {#prerequesites}
 
-O Adobe Campaign oferece ferramentas de controladores de dados para criar e processar solicitações de privacidade de dados armazenados no Adobe Campaign. No entanto, é responsabilidade do Controlador de dados gerenciar o relacionamento com o Titular de dados (email, atendimento ao cliente ou um portal da web).
+O Adobe Campaign oferece ferramentas de Controladores de dados para criar e processar solicitações de privacidade de dados armazenados no Adobe Campaign. No entanto, é responsabilidade do Controlador de dados gerenciar o relacionamento com o Titular de dados (email, atendimento ao cliente ou um portal da web).
 
 É sua responsabilidade como Controlador de dados confirmar a identidade do Titular de dados que faz a solicitação e pede a confirmação de que os dados retornados ao solicitante pertençam ao Titular de dados.
 
@@ -131,7 +131,7 @@ Se você criou tabelas personalizadas que tenham um link para a tabela do recipi
 
 ### Status de solicitação de privacidade {#privacy-request-statuses}
 
-Estes são os diferentes status das solicitações de privacidade:
+Estes são os diferentes status de solicitações de acesso a dados pessoais:
 
 * **[!UICONTROL New]** / **[!UICONTROL Retry pending]**: em andamento, o workflow ainda não processou a solicitação.
 * **[!UICONTROL Processing]** / **[!UICONTROL Retry in progress]**: o workflow está processando a solicitação.
@@ -380,7 +380,7 @@ Este é um exemplo de como você pode chamar a API a partir de um JS dentro do C
 
 ## Recusar a venda de informações pessoais (CCPA) {#sale-of-personal-information-ccpa}
 
-O **Ato de privacidade do consumidor da Califórnia** (CCPA) fornece aos residentes da Califórnia novos direitos no que diz respeito a suas informações pessoais e impõe responsabilidades de proteção de dados a determinadas entidades com negócios na Califórnia.
+Os **Direitos de privacidade do consumidor da Califórnia** (CCPA) fornecem aos residentes da Califórnia novos direitos no que diz respeito a suas informações pessoais e impõe responsabilidades de proteção de dados a determinadas entidades com negócios na Califórnia.
 
 A configuração e utilização dos pedidos de acesso e exclusão são comuns. a GDPR e CCPA. Esta seção apresenta a opção de recusa da venda de dados pessoais, sendo específica ao CCPA.
 
@@ -392,7 +392,7 @@ Para isso, é necessário estender a tabela Perfis e adicionar um campo **[!UICO
 
 >[!IMPORTANT]
 >
->É sua responsabilidade como Controlador de dados receber a solicitação do Titular de dados e rastrear os dados da solicitação para CCPA. Como provedor de tecnologia, só oferecemos um modo de optar pela recusa. Para obter mais informações sobre sua função como Controlador de dados, consulte [Dados pessoais e Personalidades](../../platform/using/privacy-and-recommendations.md#personal-data).
+>É sua responsabilidade como Controlador de dados receber a solicitação do Titular de dados e rastrear os dados da solicitação para CCPA. Como provedor de tecnologia, oferecemos somente uma maneira de recusar a participação. Para obter mais informações sobre sua função como Controlador de dados, consulte [Dados pessoais e Personalidades](../../platform/using/privacy-and-recommendations.md#personal-data).
 
 ### Pré-requisito {#ccpa-prerequisite}
 
