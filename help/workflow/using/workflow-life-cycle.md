@@ -6,9 +6,9 @@ description: Saiba mais sobre o ciclo de vida de um workflow
 audience: workflow
 content-type: reference
 topic-tags: -general-operation
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '267'
 ht-degree: 100%
 
