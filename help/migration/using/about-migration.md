@@ -19,7 +19,7 @@ ht-degree: 4%
 
 Este documento detalha os pré-requisitos para uma migração, as etapas para uma migração para o Adobe Campaign Classic (v7), as configurações adicionais, necessárias e opcionais, dependendo de sua configuração.
 
-O processo de migração tem de ser levado a cabo com cautela, os seus impactos têm de ser devidamente considerados antes e o procedimento tem de ser executado com rigor. Ela só deve ser executada por um usuário especialista. Recomendamos entrar em contato com o [Atendimento ao cliente do Adobe](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html) antes de iniciar qualquer procedimento de migração.
+O processo de migração tem de ser levado a cabo com cautela, os seus impactos têm de ser devidamente considerados antes e o procedimento tem de ser executado com rigor. Ela só deve ser executada por um usuário especialista. Recomendamos entrar em contato com o [Atendimento ao cliente do Adobe](https://helpx.adobe.com/br/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html) antes de iniciar qualquer procedimento de migração.
 
 A migração deve ser testada antecipadamente no ambiente de desenvolvimento para garantir que ela funcione sem problemas e sem erros. A migração do ambiente de produção só deve ser realizada depois que o ambiente de desenvolvimento migrado for totalmente validado.
 
