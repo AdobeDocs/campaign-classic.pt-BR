@@ -6,9 +6,9 @@ description: Lista de relatórios
 audience: reporting
 content-type: reference
 topic-tags: accessing-built-in-reports
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '1007'
 ht-degree: 100%
 
@@ -262,7 +262,7 @@ Para obter mais informações sobre o conteúdo desses relatórios, consulte [es
   <tr> 
    <td> Exploração de linhas de custo (budgetExplorerProgram)<br /> </td> 
    <td> Análise descritiva de linhas de custo.<br /> </td> 
-   <td> nms:program<br /> </td> 
+   <td> nms:programa<br /> </td> 
   </tr> 
   <tr> 
    <td> Resumo do(s) orçamento(s) (orçamento)<br /> </td> 
