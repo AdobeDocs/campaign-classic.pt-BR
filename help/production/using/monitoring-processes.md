@@ -41,7 +41,7 @@ Outras maneiras de monitorar os diferentes processos do Campaign são apresentad
 
 ### Indicadores do sistema {#system-indicators}
 
-A lista dos indicadores do sistema permite exibir informações sobre a máquina, como sua memória física e virtual, processos ativos e espaço em disco disponível. Os indicadores são diferentes para os sistemas operacionais Linux e Windows. Vá para a página **[!UICONTROL Instance Monitoring]** e clique no link **[!UICONTROL Display]** para abrir a lista dos indicadores
+A lista dos indicadores do sistema permite exibir informações sobre a máquina, como sua memória física e virtual, processos ativos e espaço em disco disponível. Os indicadores são diferentes para os sistemas operacionais Linux e Windows. Vá para a página **[!UICONTROL Instance Monitoring]** e clique no link **[!UICONTROL Display]** para abrir a lista de indicadores
 
 #### Windows {#in-windows}
 
@@ -255,6 +255,7 @@ Eles estão agrupados em **Monitoramento** > &#39;Monitoramento SMTP&#39;.
 >
 >* As informações relacionadas ao Monitoramento SMTP só estarão disponíveis se o canal de email tiver sido ativado.
 >* Os **[!UICONTROL SMTP sending statistics]** só serão oferecidos se o servidor de estatísticas for iniciado na instância.
+
 >
 
 
