@@ -6,9 +6,9 @@ description: Validação do delivery
 audience: delivery
 content-type: reference
 topic-tags: about-deliveries-and-channels
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: 6d5dbc16ed6c6e5a2e62ceb522e2ccd64b142825
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '1667'
 ht-degree: 100%
 
@@ -136,6 +136,7 @@ Para detectar possíveis erros na configuração da mensagem, a Adobe recomenda 
 >
 >* Os modos de validação disponíveis estão detalhados em [Alterar o modo de aprovação](../../delivery/using/steps-validating-the-delivery.md#changing-the-approval-mode).
 >* A configuração do target de prova é explicada em [Definição de um target de prova específico](../../delivery/using/steps-defining-the-target-population.md#defining-a-specific-proof-target).
+
 >
 
 
