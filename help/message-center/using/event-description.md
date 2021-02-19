@@ -6,9 +6,9 @@ description: Saiba mais sobre o evento de mensagens transacionais
 audience: message-center
 content-type: reference
 topic-tags: introduction
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: 3a9c435a6469f291c4ecdb30eceb83c4f000f5e0
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '746'
 ht-degree: 100%
 
