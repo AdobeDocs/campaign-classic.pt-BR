@@ -6,9 +6,9 @@ description: Edição de conteúdo
 audience: web
 content-type: reference
 topic-tags: editing-html-content
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: 43037b2b6b4e3b42f4b666d85a664b9fb117a015
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '1214'
 ht-degree: 100%
 
@@ -137,6 +137,7 @@ Blocos de personalização e campos só podem ser inseridos em blocos de tipo de
 >* Nova janela (_blank)
 >* Janela atual (_self)
 >* Comportamento do navegador padrão
+
 >
 
 
@@ -202,8 +203,9 @@ As opções disponíveis são as seguintes:
 >[!NOTE]
 >
 >* Ícone **Delete**: exclui o bloco e todo o conteúdo.
->
->* Ícone **Duplicate**: duplica o bloco e todos os estilos relacionados ao bloco.
+   >
+   >
+* Ícone **Duplicate**: duplica o bloco e todos os estilos relacionados ao bloco.
 
 
 ## Gerenciamento de imagens e animações {#managing-images-and-animations}
