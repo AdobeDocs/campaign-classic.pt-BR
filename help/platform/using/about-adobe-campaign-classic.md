@@ -10,7 +10,7 @@ translation-type: tm+mt
 source-git-commit: cea4a26935312b1cb119a3fa671af7bf00788fe9
 workflow-type: tm+mt
 source-wordcount: '911'
-ht-degree: 95%
+ht-degree: 97%
 
 ---
 
@@ -23,7 +23,7 @@ O Adobe Campaign permite coordenar a criação de campanhas de marketing convers
 
 >[!NOTE]
 >
->O Adobe Campaign Classic está disponível nas versões v6.11 e v7. Except when mentioned, help materials apply to both versions, in the [latest build](../../rn/using/latest-release.md). As capturas de tela refletem a interface do usuário do Campaign Classic v7.
+>O Adobe Campaign Classic está disponível nas versões v6.11 e v7. Exceto quando mencionado, os materiais de ajuda se aplicam a ambas as versões, na [compilação mais recente](../../rn/using/latest-release.md). As capturas de tela refletem a interface do usuário do Campaign Classic v7.
 
 ![](assets/do-not-localize/how-to-video.png) [Descubra as principais características e recursos no vídeo](#video)
 
@@ -93,4 +93,4 @@ Este vídeo apresenta os principais recursos e recursos do Campaign Classic.
 
 >[!VIDEO](https://video.tv.adobe.com/v/35129?quality=12)
 
-Vídeos de instruções adicionais do Campaign Classic estão disponíveis [aqui](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html).
+Vídeos extras sobre procedimentos do Campaign Classic estão disponíveis [aqui](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html?lang=pt-BR).
