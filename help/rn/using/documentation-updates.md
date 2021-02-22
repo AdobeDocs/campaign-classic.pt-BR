@@ -7,10 +7,10 @@ audience: rns
 content-type: reference
 topic-tags: latest-documentation-updates
 translation-type: tm+mt
-source-git-commit: 55cc09c0446e389029890e45b790bb5ec6ffdc27
+source-git-commit: 33debcd6e399d2780277644103a620d46c22022e
 workflow-type: tm+mt
-source-wordcount: '3947'
-ht-degree: 98%
+source-wordcount: '4045'
+ht-degree: 96%
 
 ---
 
@@ -21,7 +21,19 @@ Esta página lista todos os novos recursos e atualizações de documentação po
 
 Consulte as [Notas de versão do Adobe Campaign Classic](../../rn/using/latest-release.md) para ver as atualizações relacionadas à versão.
 
-## Fevereiro de 2021 {#feb-2021}
+## Fevereiro de 2021 {#release-21.1}
+
+**Atualizações da documentação que vêm com a versão 21.1**
+
+O novo recurso **Email Feedback Service** (beta privado) está documentado [aqui](../../delivery/using/sending-with-enhanced-mta.md#email-feedback-service).
+
+A seção **Arquivo de configuração do servidor** foi atualizada com os parâmetros de configuração necessários para que a Campanha se conecte a outro serviço usando IMS. [Leia mais](../../installation/using/the-server-configuration-file.md#ims)
+
+Na lista dos status do delivery, a descrição de **Considerada pelo provedor de serviço** foi atualizada: esse status agora também é usado para delivery de email enviados usando o [Serviço de feedback de email](../../delivery/using/sending-with-enhanced-mta.md#email-feedback-service). [Leia mais](../../delivery/using/delivery-statuses.md#list-delivery-statuses)
+
+Os atalhos de teclado disponíveis na nova tela de logon para conexão com o Adobe Campaign agora estão documentados. [Leia mais](../../platform/using/launching-adobe-campaign.md#connecting-to-adobe-campaign)
+
+**Outras atualizações**
 
 Uma nova seção foi adicionada com informações detalhadas sobre como executar o teste A/B usando workflows. [Leia mais](../../delivery/using/get-started-a-b-testing.md)
 
@@ -100,7 +112,7 @@ A matriz de Compatibilidade foi atualizada. [Leia mais](../../rn/using/compatibi
 A página de recursos obsoletos e removidos foi atualizada. [Leia mais](../../rn/using/deprecated-features.md)
 
 As notas de versão e a matriz de compatibilidade para a versão Gold Standard estão disponíveis em uma seção exclusiva.
-[Leia mais](../../rn/using/gold-standard.md#gs-10).
+[Leia mais](../../rn/using/gold-standard.md#gs-11).
 
 A integração dos acionadores originalmente baseada na configuração da autenticação oAUTH para acessar o pipeline, agora foi alterada e movida para o Adobe I/O. [Saiba mais](../../integrations/using/configuring-adobe-io.md)
 
