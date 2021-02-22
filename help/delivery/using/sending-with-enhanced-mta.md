@@ -7,10 +7,10 @@ audience: delivery
 content-type: reference
 topic-tags: sending-emails
 translation-type: tm+mt
-source-git-commit: 07ed17a093cb6fb2d7aae376325a127c61b1dcc2
+source-git-commit: c64b6eccd0ad45ebcf4ecc18150f4409f5c66bc2
 workflow-type: tm+mt
-source-wordcount: '1398'
-ht-degree: 6%
+source-wordcount: '1880'
+ht-degree: 5%
 
 ---
 
@@ -28,6 +28,10 @@ Ele é implementado para melhorar a escalabilidade, aumentar a throughput do del
 Se você tiver provisionado uma instância Campaign Classic após setembro de 2018, estará usando o MTA aprimorado. Para todos os outros clientes do Campaign Classic, consulte as [Perguntas frequentes](#enhanced-mta-faq) abaixo.
 
 A implementação aprimorada do MTA pode afetar algumas das funcionalidades de Campanha existentes. Para obter mais informações, consulte [Especificidades MTA aprimoradas](#enhanced-mta-impacts).
+
+>[!NOTE]
+>
+>Se você for um usuário final do Adobe Campaign e quiser saber se sua instância foi atualizada para o MTA aprimorado, entre em contato com o administrador da Campanha interna.
 
 ## Perguntas frequentes {#enhanced-mta-faq}
 
@@ -129,24 +133,6 @@ As qualificações de rejeição na tabela **[!UICONTROL Delivery log qualificat
 
 Para obter mais informações sobre qualificação de rejeição, consulte [esta seção](../../delivery/using/understanding-delivery-failures.md#bounce-mail-qualification).
 
-### Status enviado com MTA aprimorado
-
-Na visualização **[!UICONTROL Summary]** de um delivery de e-mail [painel](../../delivery/using/delivery-dashboard.md), a porcentagem **[!UICONTROL Success]** é start em 100% e, em seguida, diminui progressivamente durante todo o delivery [período de validade](../../delivery/using/steps-sending-the-delivery.md#defining-validity-period), à medida que as rejeições em software e hardware são reportadas de volta do MTA aprimorado à Campanha.
-
-Na verdade, todas as mensagens são exibidas como **[!UICONTROL Sent]** no [remetendo logs](../../delivery/using/delivery-dashboard.md#delivery-logs-and-history) assim que são repassadas com êxito da Campanha para o MTA Avançado. Eles permanecem nesse status, a menos que [bounce](../../delivery/using/understanding-delivery-failures.md#delivery-failure-types-and-reasons) para essa mensagem seja comunicada de volta do MTA aprimorado para a Campanha.
-
-Quando as mensagens de ressalto rígido são reportadas do MTA Avançado, seu status muda de **[!UICONTROL Sent]** para **[!UICONTROL Failed]** e a porcentagem **[!UICONTROL Success]** é diminuída de acordo.
-
-Quando as mensagens de salto em modo suave são reportadas de volta do MTA aprimorado, elas ainda são exibidas como **[!UICONTROL Sent]** e a porcentagem **[!UICONTROL Success]** ainda não é atualizada. As mensagens de ressalto automático são então [repetidas](../../delivery/using/understanding-delivery-failures.md#retries-after-a-delivery-temporary-failure) durante todo o período de validade do delivery:
-
-* Se uma nova tentativa for bem-sucedida antes do final do período de validade, o status da mensagem permanecerá como **[!UICONTROL Sent]** e a porcentagem **[!UICONTROL Success]** permanecerá inalterada.
-
-* Caso contrário, o status mudará para **[!UICONTROL Failed]** e a porcentagem **[!UICONTROL Success]** será diminuída de acordo.
-
-Consequentemente, você deve aguardar até o final do período de validade para ver a porcentagem final **[!UICONTROL Success]** e o número final das mensagens **[!UICONTROL Sent]** e **[!UICONTROL Failed]**.
-
-<!--The fact that the Success percentage will go to 100% very quickly indicates that your instance has been upgraded to the Enhanced MTA.-->
-
 ### Taxa de transferência da entrega
 
 O gráfico de throughput do Delivery da Campanha não exibirá mais a throughput para seus recipient de e-mail. Esse gráfico agora mostrará a velocidade de saída para o relé de suas mensagens da Campanha para o MTA aprimorado.
@@ -167,3 +153,78 @@ Para obter mais informações sobre o período de validade, consulte [esta seç�
 
 A assinatura de autenticação de email DKIM (DomainKeys Identified Mail) é feita pelo MTA aprimorado. A assinatura do DKIM pelo MTA nativo do Campaign será desativada na tabela Domain management como parte da atualização do MTA aprimorado.
 Para obter mais informações sobre o DKIM, consulte [esta seção](../../delivery/using/technical-recommendations.md#dkim).
+
+### Relatórios bem-sucedido do delivery
+
+Na visualização **[!UICONTROL Summary]** de um delivery de e-mail [painel](../../delivery/using/delivery-dashboard.md), a porcentagem **[!UICONTROL Success]** é start em 100% e, em seguida, diminui progressivamente durante todo o delivery [período de validade](../../delivery/using/steps-sending-the-delivery.md#defining-validity-period), à medida que as rejeições em software e hardware são reportadas de volta do MTA aprimorado à Campanha.
+
+Na verdade, todas as mensagens são exibidas como **[!UICONTROL Sent]** no [remetendo logs](../../delivery/using/delivery-dashboard.md#delivery-logs-and-history) assim que são repassadas com êxito da Campanha para o MTA Avançado. Eles permanecem nesse status, a menos que [bounce](../../delivery/using/understanding-delivery-failures.md#delivery-failure-types-and-reasons) para essa mensagem seja comunicada de volta do MTA aprimorado para a Campanha.
+
+Quando as mensagens de ressalto rígido são reportadas do MTA Avançado, seu status muda de **[!UICONTROL Sent]** para **[!UICONTROL Failed]** e a porcentagem **[!UICONTROL Success]** é diminuída de acordo.
+
+Quando as mensagens de salto em modo suave são reportadas de volta do MTA aprimorado, elas ainda são exibidas como **[!UICONTROL Sent]** e a porcentagem **[!UICONTROL Success]** ainda não é atualizada. As mensagens de ressalto automático são então [repetidas](../../delivery/using/understanding-delivery-failures.md#retries-after-a-delivery-temporary-failure) durante todo o período de validade do delivery:
+
+* Se uma nova tentativa for bem-sucedida antes do final do período de validade, o status da mensagem permanecerá como **[!UICONTROL Sent]** e a porcentagem **[!UICONTROL Success]** permanecerá inalterada.
+
+* Caso contrário, o status mudará para **[!UICONTROL Failed]** e a porcentagem **[!UICONTROL Success]** será diminuída de acordo.
+
+Consequentemente, você deve aguardar até o final do período de validade para ver a porcentagem final **[!UICONTROL Success]** e o número final das mensagens **[!UICONTROL Sent]** e **[!UICONTROL Failed]**.
+
+<!--The fact that the Success percentage will go to 100% very quickly indicates that your instance has been upgraded to the Enhanced MTA.-->
+
+### Serviço de feedback por email (beta) {#email-feedback-service}
+
+Com o recurso EFS (Email Feedback Service), o status de cada email é relatado com precisão, pois o feedback é capturado diretamente do MTA Avançado (Message Transfer Agent).
+
+>[!IMPORTANT]
+>
+>O Serviço de Comentários por Email está disponível no momento como um recurso beta.
+>
+>Se você estiver interessado em participar deste programa beta, preencha [este formulário](https://forms.office.com/Pages/ResponsePage.aspx?id=Wht7-jR7h0OUrtLBeN7O4Rol2vQGupxItW9_BerXV6VUQTJPN1Q5WUI4OFNTWkYzQjg3WllUSDAxWi4u) e nós voltaremos a você.
+
+Depois que o delivery é iniciado, não há alteração na porcentagem **[!UICONTROL Success]** quando a mensagem é retransmitida com êxito da Campanha para o MTA aprimorado.
+
+<!--![](assets/efs-sending.png)-->
+
+Os logs do delivery mostram o status **[!UICONTROL Taken into account by the service provider]** para cada endereço direcionado.
+
+<!--![](assets/efs-pending.png)-->
+
+Quando a mensagem é realmente entregue aos perfis direcionados e uma vez que essas informações são reportadas em tempo real do MTA aprimorado, os logs do delivery mostram o status **[!UICONTROL Sent]** para cada endereço que recebeu a mensagem com êxito. A porcentagem **[!UICONTROL Success]** é aumentada de acordo com cada delivery bem-sucedido.
+
+Quando mensagens de ressalto rígido são reportadas do MTA aprimorado, o status do log muda de **[!UICONTROL Taken into account by the service provider]** para **[!UICONTROL Failed]**<!-- and the **[!UICONTROL Bounces + errors]** percentage is increased accordingly-->.
+
+Quando mensagens de salto em modo suave são reportadas de volta do MTA aprimorado, o status do log permanece inalterado (**[!UICONTROL Taken into account by the service provider]**): somente o [motivo do erro](../../delivery/using/understanding-delivery-failures.md#delivery-failure-types-and-reasons) é atualizado<!-- and the **[!UICONTROL Bounces + errors]** percentage is increased accordingly-->. A porcentagem **[!UICONTROL Success]** permanece inalterada. As mensagens de ressalto automático são então repetidas durante todo o período de validade do delivery [a1/>:](../../delivery/using/steps-sending-the-delivery.md#defining-validity-period)
+
+* Se uma nova tentativa for bem-sucedida antes do final do período de validade, o status da mensagem mudará para **[!UICONTROL Sent]** e a porcentagem **[!UICONTROL Success]** será aumentada de acordo.
+
+* Caso contrário, o status mudará para **[!UICONTROL Failed]**. A porcentagem **[!UICONTROL Success]** <!--and **[!UICONTROL Bounces + errors]** -->permanece inalterada.
+
+>[!NOTE]
+>
+>Para obter mais informações sobre saltos duros e suaves, consulte [esta seção](../../delivery/using/understanding-delivery-failures.md#delivery-failure-types-and-reasons).
+>
+>Para obter mais informações sobre o tentativas após uma falha temporária de delivery, consulte [esta seção](../../delivery/using/understanding-delivery-failures.md#retries-after-a-delivery-temporary-failure).
+
+
+As tabelas abaixo mostram as alterações nos KPIs e no envio de status de registros introduzidos pelo recurso EFS.
+
+**Com o serviço de feedback por email**
+
+| Etapa do processo de envio | Resumo do KPI | Status de envio de logs |
+|--- |--- |--- |
+| A mensagem foi repassada com êxito da Campanha para o MTA Avançado | **[!UICONTROL Success]** porcentagem não é exibida (start de 0%) | Taken into account by the service provider |
+| Mensagens de salto rígido são relatadas de volta do MTA aprimorado | Nenhuma alteração na porcentagem **[!UICONTROL Success]** | Failed |
+| Mensagens de ressalto automático são reportadas de volta do MTA aprimorado | Nenhuma alteração na porcentagem **[!UICONTROL Success]** | Tomada em consideração pelo provedor de serviço |
+| Tentativas de mensagens de salto automático bem-sucedidas | **[!UICONTROL Success]** a percentagem é aumentada em conformidade | Sent |
+| Tentativas de mensagens de salto automático falham | Nenhuma alteração na porcentagem **[!UICONTROL Success]** | Falha |
+
+**Sem Serviço de Comentários por Email**
+
+| Etapa do processo de envio | Resumo do KPI | Status de envio de logs |
+|--- |--- |--- |
+| A mensagem foi repassada com êxito da Campanha para o MTA Avançado | **[!UICONTROL Success]** porcentagem de start em 100% | Enviados |
+| Mensagens de salto rígido são relatadas de volta do MTA aprimorado | **[!UICONTROL Success]** a porcentagem é reduzida em conformidade | Falha |
+| Mensagens de ressalto automático são reportadas de volta do MTA aprimorado | Nenhuma alteração na porcentagem **[!UICONTROL Success]** | Enviados |
+| Tentativas de mensagens de salto automático bem-sucedidas | Nenhuma alteração na porcentagem **[!UICONTROL Success]** | Enviados | **[!UICONTROL Success]** a percentagem é aumentada em conformidade | Enviados |
+| Tentativas de mensagens de salto automático falham | **[!UICONTROL Success]** a porcentagem é reduzida em conformidade | Falha |
