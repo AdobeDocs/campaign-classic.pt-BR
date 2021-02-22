@@ -7,10 +7,10 @@ audience: platform
 content-type: reference
 topic-tags: starting-with-adobe-campaign
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: 33debcd6e399d2780277644103a620d46c22022e
 workflow-type: tm+mt
-source-wordcount: '504'
-ht-degree: 86%
+source-wordcount: '558'
+ht-degree: 78%
 
 ---
 
@@ -33,7 +33,7 @@ Você pode se conectar ao Adobe Campaign usando sua Adobe ID. Para obter mais in
 
 Também é possível conectar-se com uma combinação exclusiva de login e senha:
 
-1. Digite o identificador da conta do operador no campo **[!UICONTROL login]**.
+1. Digite o identificador da conta do operador no campo **[!UICONTROL Login]**.
 
    Seu identificador é fornecido pelo administrador da plataforma Adobe Campaign.
 
@@ -41,9 +41,14 @@ Também é possível conectar-se com uma combinação exclusiva de login e senha
 
    Na primeira vez que você acessar o banco de dados, sua senha será fornecida pelo administrador. Depois de conectado, você poderá alterar a senha usando o menu **[!UICONTROL Tools > Change password...]** Os detalhes sobre operadores e conexões estão disponíveis em [Gerenciamento de acesso](../../platform/using/access-management.md).
 
-1. Clique em **[!UICONTROL LOG IN]** para confirmar.
+1. Clique em **[!UICONTROL LOG IN]** para confirmar.<!--You can also press the **Enter** key to launch connection.-->
 
 Agora, você pode acessar a [área de trabalho do Adobe Campaign](../../platform/using/adobe-campaign-workspace.md).
+
+Alguns atalhos do teclado estão disponíveis em **[!UICONTROL Sign in screen]**:
+* Todos os itens acionáveis podem ser selecionados pelas teclas **Tab** (de cima para baixo) ou **Tab** + **Shift** (de baixo para cima).
+* Para iniciar a conexão, você também pode pressionar a tecla **Enter**.
+* Você pode usar a tecla **Escape** para redefinir os campos **[!UICONTROL Login]** e **[!UICONTROL Password]** para os últimos valores de conexão bem-sucedidos.
 
 ## Configurar conexões {#setting-up-connections}
 
@@ -101,5 +106,5 @@ Saiba mais sobre a Gold Standard [neste artigo](https://helpx.adobe.com/br/campa
 **Tópicos relacionados**:
 
 * [Opções de Ajuda e suporte da Adobe Campaign](https://helpx.adobe.com/br/campaign/kb/ac-support.html#acc-support)
-* [Distribuição de software Adobe](https://docs.adobe.com/content/help/pt-BR/experience-cloud/software-distribution/home.html)
+* [Distribuição de software Adobe Campaign](https://experience.adobe.com/#/downloads/content/software-distribution/en/campaign.html)
 * [Sessões de suporte e especialista da Adobe Experience Cloud](https://helpx.adobe.com/br/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html)
