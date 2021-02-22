@@ -7,9 +7,9 @@ audience: delivery
 content-type: reference
 topic-tags: monitoring-deliveries
 translation-type: tm+mt
-source-git-commit: 6d5dbc16ed6c6e5a2e62ceb522e2ccd64b142825
+source-git-commit: 22f44f5723ab35e95caa438583fe06314c763ba1
 workflow-type: tm+mt
-source-wordcount: '2799'
+source-wordcount: '2605'
 ht-degree: 100%
 
 ---
@@ -70,7 +70,7 @@ As seguintes informações estão disponíveis para cada endereço:
 >O aumento no número em quarentena é um efeito normal, relacionado ao &quot;desgaste&quot; do banco de dados. Por exemplo, se o tempo de vida de um endereço de email for considerado três anos e a tabela de recipients aumentar em 50% todo ano, o aumento da quarentena poderá ser calculado da seguinte maneira:
 >
 >Fim do Ano 1: (1*0.33)/(1+0.5)=22%.
->Fim do Ano 2: ((1.22*0.33)+0.33)/(1.5+0.75)=32.5%.
+Fim do Ano 2: ((1.22*0.33)+0.33)/(1.5+0.75)=32.5%.
 
 ### Identificação de endereços em quarentena nos relatórios de delivery {#identifying-quarantined-addresses-in-delivery-reports}
 
@@ -113,8 +113,7 @@ Os endereços são removidos automaticamente da lista de quarentena nos seguinte
 O status muda então para **[!UICONTROL Valid]**.
 
 >[!IMPORTANT]
->
->Os recipients com um endereço em um status **[!UICONTROL Quarantine]** ou **[!UICONTROL On denylist]** nunca serão removidos, mesmo se receberem um email.
+Os recipients com um endereço em um status **[!UICONTROL Quarantine]** ou **[!UICONTROL On denylist]** nunca serão removidos, mesmo se receberem um email.
 
 Você pode alterar o número de erros e o período entre dois erros. Para fazer isso, altere as configurações correspondentes no assistente de implantação (**[!UICONTROL Email channel]** > **[!UICONTROL Advanced parameters]**). Para obter mais informações sobre o assistente de implantação, consulte [esta seção](../../installation/using/deploying-an-instance.md).
 
@@ -150,24 +149,7 @@ Os itens colocados em quarentena são tokens de dispositivo.
 
 ### Quarentena do iOS {#ios-quarantine}
 
-**Para iOS - conector binário**
-
->[!NOTE]
->
->A partir da versão 20.3 do Campaign, o conector binário herdado do iOS se tornará obsoleto. Se estiver usando este conector, precisará adaptar sua implementação adequadamente. [Saiba mais](https://helpx.adobe.com/campaign/kb/migrate-to-apns-http2.html)
-
-Para cada notificação, o Adobe Campaign recebe os erros síncronos e assíncronos do servidor APNS. Para os seguintes erros síncronos, o Adobe Campaign gera erros suaves:
-
-* Problemas de comprimento da carga: sem tentativa, o motivo da falha é **[!UICONTROL Unreachable]**.
-* Problemas de expiração de certificado: sem tentativa, o motivo da falha é **[!UICONTROL Unreachable]**.
-* A conexão perdida durante o delivery: tentativa executada, o motivo da falha é **[!UICONTROL Unreachable]**.
-* Problema de configuração de serviço (certificado inválido, senha de certificado inválida, sem certificado): sem tentativa, o motivo da falha é **[!UICONTROL Unreachable]**.
-
-O servidor APNS notifica de forma assíncrona o Adobe Campaign que um token de dispositivo teve o registro cancelado (quando o aplicativo móvel foi desinstalado pelo usuário). O workflow **[!UICONTROL mobileAppOptOutMgt]** é executado a cada 6 horas para contatar os serviços de feedback APNs e atualizar a tabela **AppSubscriptionRcp**. Para todos os tokens desativados, o campo **Desativado** é definido como **Verdadeiro** e a subscrição vinculada a esse token de dispositivo será excluída automaticamente de deliveries futuros.
-
-**Para iOS - conector HTTP/V2**
-
-O protocolo HTTP/V2 permite um feedback e status direto para cada delivery por push. Se o conector do protocolo HTTP/V2 for usado, o serviço de feedback não será mais chamado pelo workflow **[!UICONTROL mobileAppOptOutMgt]**. Os tokens não registrados são tratados de forma diferente entre o conector binário do iOS e o conector HTTP/V2 do iOS. Um token é considerado não registrado quando um aplicativo móvel é desinstalado ou reinstalado.
+O protocolo HTTP/V2 permite um feedback e status direto para cada delivery por push. Se o conector do protocolo HTTP/V2 for usado, o serviço de feedback não será mais chamado pelo workflow **[!UICONTROL mobileAppOptOutMgt]**. Um token é considerado não registrado quando um aplicativo móvel é desinstalado ou reinstalado.
 
 Em sincronia, se o APNs retornar um status &quot;não registrado&quot; para uma mensagem, o token do público alvo será colocado imediatamente em quarentena.
 
@@ -271,11 +253,10 @@ O workflow **[!UICONTROL mobileAppOptOutMgt]** é executado a cada 6 horas para 
 Durante a análise de delivery, todos os dispositivos excluídos do target são automaticamente adicionados à tabela **excludeLogAppSubRcp** .
 
 >[!NOTE]
->
->Para clientes que usam o conector Baidu, aqui estão os diferentes tipos de erros:
->* Problema de conexão no início do delivery: falha do tipo **[!UICONTROL Undefined]**, razão da falha **[!UICONTROL Unreachable]**, a tentativa é executada.
->* Perda de conexão durante um delivery: erro leve, razão da falha **[!UICONTROL Refused]**, a tentativa é executada.
->* Erro síncrono retornado pelo Baidu durante o envio: erro grave, motivo da falha **[!UICONTROL Refused]**, não haverá nova tentativa.
+Para clientes que usam o conector Baidu, aqui estão os diferentes tipos de erros:
+* Problema de conexão no início do delivery: falha do tipo **[!UICONTROL Undefined]**, razão da falha **[!UICONTROL Unreachable]**, a tentativa é executada.
+* Perda de conexão durante um delivery: erro leve, razão da falha **[!UICONTROL Refused]**, a tentativa é executada.
+* Erro síncrono retornado pelo Baidu durante o envio: erro grave, motivo da falha **[!UICONTROL Refused]**, não haverá nova tentativa.
 
 O Adobe Campaign contata o servidor Baidu a cada 10 minutos para recuperar o status da mensagem enviada e atualiza os broadlogs. Se uma mensagem for declarada como enviada, o status da mensagem nos broadlogs será definido como **[!UICONTROL Received]**. Se o Baidu declarar um erro, o status será definido como **[!UICONTROL Failed]**.
 
@@ -495,8 +476,7 @@ O mecanismo de quarentena do Android V2 usa o mesmo processo que o Android V1, o
 O mecanismo de quarentena para mensagens SMS é globalmente igual ao processo geral. Consulte [Sobre quarentenas](#about-quarantines). As especificidades para SMS estão listadas abaixo.
 
 >[!NOTE]
->
->A tabela **[!UICONTROL Delivery log qualification]** não se aplica ao conector **SMPP genérico estendido**.
+A tabela **[!UICONTROL Delivery log qualification]** não se aplica ao conector **SMPP genérico estendido**.
 
 <table> 
  <tbody> 
@@ -554,9 +534,8 @@ O conector SMPP recupera dados da mensagem SR (Relatório do Status) que é reto
 Antes de um novo tipo de erro ser qualificado, o motivo da falha é sempre definido como **Refused** por padrão.
 
 >[!NOTE]
->
->Os tipos de falha e os motivos para falha são os mesmos dos emails. Consulte [Tipos e motivos de falha de delivery](../../delivery/using/understanding-delivery-failures.md#delivery-failure-types-and-reasons).
->Peça ao seu provedor uma lista de códigos e status de erros para definir os tipos apropriados de falhas e os motivos para falha na tabela de qualificação de log de delivery.
+Os tipos de falha e os motivos para falha são os mesmos dos emails. Consulte [Tipos e motivos de falha de delivery](../../delivery/using/understanding-delivery-failures.md#delivery-failure-types-and-reasons).
+Peça ao seu provedor uma lista de códigos e status de erros para definir os tipos apropriados de falhas e os motivos para falha na tabela de qualificação de log de delivery.
 
 Exemplo de uma mensagem gerada:
 
