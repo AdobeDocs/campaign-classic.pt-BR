@@ -7,7 +7,7 @@ audience: rns
 content-type: reference
 topic-tags: latest-release-notes
 translation-type: tm+mt
-source-git-commit: 51993e6f606132e425553da67687aca76e166dbd
+source-git-commit: 33debcd6e399d2780277644103a620d46c22022e
 workflow-type: tm+mt
 source-wordcount: '437'
 ht-degree: 100%
@@ -55,7 +55,7 @@ Como usuário local, você pode fazer a atualização. Para isso, [baixe a build
 
 ### Gold Standard{#upgrade-for-gold-standard-users}
 
-Como usuário convidado do Gold Standard, você se beneficiará automaticamente da atualização Gold Standard com o [build GA mais recente do Gold Standard](../../rn/using/gold-standard.md#gs-10) sem ter de realizar nenhuma ação. [Saiba mais](https://helpx.adobe.com/br/campaign/kb/gold-standard.html).
+Como usuário convidado do Gold Standard, você se beneficiará automaticamente da atualização Gold Standard com o [build GA mais recente do Gold Standard](../../rn/using/gold-standard.md#gs-11) sem ter de realizar nenhuma ação. [Saiba mais](https://helpx.adobe.com/br/campaign/kb/gold-standard.html).
 
 >[!NOTE]
 >A matriz de compatibilidade para Gold Standard está disponível na [matriz de compatibilidade de DG](../../rn/using/compatibility-matrix-gs.md).
