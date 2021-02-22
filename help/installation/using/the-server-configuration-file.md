@@ -7,10 +7,10 @@ audience: installation
 content-type: reference
 topic-tags: appendices
 translation-type: tm+mt
-source-git-commit: f39a84108c1f3327a469d5a230518652647ed63e
+source-git-commit: 2de8261feda6e64a84bd82e9fb71bc1fddf77113
 workflow-type: tm+mt
-source-wordcount: '7846'
-ht-degree: 7%
+source-wordcount: '7929'
+ht-degree: 8%
 
 ---
 
@@ -32,6 +32,7 @@ Os primeiros parâmetros estão dentro do nó **shared**. Eles estão relacionad
 * [dnsConfig](#dnsconfig)
 * [exec](#exec)
 * [htmlToPdf](#htmltopdf)
+* [ações](#ims)
 * [javaScript](#javascript)
 * [mailExchanger](#mailexchanger)
 * [módulo](#module)
@@ -336,7 +337,7 @@ No nó **dataStore > dataSource > dbcnx**, defina as configurações de conexão
   </tr> 
   <tr> 
    <td> provider<br /> </td> 
-   <td> Tipo (lista discriminada). Os valores possíveis são 'Oracle', 'MSSQL' (Microsoft SQL Server), 'PostgreSQL' (PostgreSQL, Greenplum), 'Teradata', 'DB2', 'MySQL', 'Netezza', 'AsterData', 'SAPHANA' (SAP HANA), 'RedShift' (Amazon Redshift), 'ODBC' (Sybase ASE, Sybase IQ), "Relay" (relé HTTP para banco de dados remoto).<br /> </td> 
+   <td> Tipo (lista discriminada). Os valores possíveis são 'Oracle', 'MSSQL' (Microsoft SQL Server), 'PostgreSQL' (PostgreSQL, Greenplum), 'Teradata', 'DB2', 'MySQL', 'Netezza', 'AsterData', 'SAPHANA' (SAP HANA), 'RedShift' (Amazon Redshift base), 'ODBC' (SydBC) ASE, Sybase IQ), "Relay" (relé HTTP para banco de dados remoto).<br /> </td> 
    <td> Cadeia de caracteres<br /> </td> 
    <td> 'Oracle'<br /> </td> 
   </tr> 
@@ -637,6 +638,71 @@ Exemplo para phantomjs:
 ```
 phantomjs - -ignore-ssl-errors=true '$(XTK_INSTALL_DIR)/bin/htmlToPdf.js' '-out:{outPdf}' '-post:{postFile}' '-url:{originUrl}' -sessiontoken:{sessiontoken} -format:{format} -orientation:{orientation} -marginTop:{marginTop} -marginLeft:{marginLeft} -marginRight:{marginRight} -marginBottom:{marginBottom}
 ```
+
+## ims {#ims}
+
+Estes são os diferentes parâmetros do nó **ims**. Esta é a configuração para a Campanha se conectar a outro serviço usando [IMS](../../integrations/using/about-adobe-id.md).
+
+<table> 
+ <thead> 
+  <tr> 
+   <th> Parâmetro </th> 
+   <th> Descrição </th> 
+   <th> Tipo </th> 
+   <th> Valor padrão </th> 
+  </tr> 
+ </thead> 
+ <tbody> 
+  <tr> 
+   <td> authIMSClientId<br /> </td> 
+   <td> ID do cliente<br /> </td> 
+   <td> Cadeia de caracteres<br /> </td> 
+   <td> <br /> </td> 
+  </tr> 
+  <tr> 
+   <td> authIMSClientSecret<br /> </td> 
+   <td> Chave secreta (criptografada em AES)<br /> </td> 
+   <td> Cadeia de caracteres<br /> </td> 
+   <td> <br /> </td> 
+  </tr> 
+  <tr> 
+   <td> authIMSCode<br /> </td> 
+   <td> Código de autorização (criptografado em AES)<br /> </td> 
+   <td> Cadeia de caracteres<br /> </td> 
+   <td> <br /> </td> 
+  </tr> 
+  <tr> 
+   <td> authIMSEndpoint<br /> </td> 
+   <td> URL do servidor IMS<br /> </td> 
+   <td> Cadeia de caracteres<br /> </td> 
+   <td> 'https://ims-na1.adobelogin.com'<br /> </td> 
+  </tr> 
+  <tr> 
+   <td> authIMSTAClientId<br /> </td> 
+   <td> ID do cliente da conta técnica<br /> </td> 
+   <td> Cadeia de caracteres<br /> </td> 
+   <td> <br /> </td> 
+  </tr> 
+  <tr> 
+   <td> authIMSTAClientSecret<br /> </td> 
+   <td> Chave secreta da conta técnica (criptografada em AES)<br /> </td> 
+   <td> Cadeia de caracteres<br /> </td> 
+   <td> <br /> </td> 
+  </tr> 
+  <tr> 
+   <td> authIMSTAId<br /> </td> 
+   <td> ID da conta técnica<br /> </td> 
+   <td> Cadeia de caracteres<br /> </td> 
+   <td> <br /> </td> 
+  </tr> 
+  <tr> 
+   <td> authIMSTAPrivateKey<br /> </td> 
+   <td> Chave privada da conta técnica (criptografada em AES)<br /> </td> 
+   <td> Cadeia de caracteres<br /> </td> 
+   <td> <br /> </td> 
+  </tr> 
+ </tbody> 
+</table>
 
 ## javaScript {#javascript}
 
