@@ -7,10 +7,10 @@ audience: production
 content-type: reference
 topic-tags: updating-adobe-campaign
 translation-type: tm+mt
-source-git-commit: 5639f08ad709597d5f5c9e6bbd6932cffcbde40f
+source-git-commit: 33debcd6e399d2780277644103a620d46c22022e
 workflow-type: tm+mt
 source-wordcount: '2368'
-ht-degree: 4%
+ht-degree: 5%
 
 ---
 
@@ -84,7 +84,7 @@ Antes de iniciar a atualização da compilação, os clientes locais precisam ex
 
 1. Obtenha a versão mais recente do seu [arquivo de configuração do servidor](../../installation/using/the-server-configuration-file.md).
 
-1. Baixe a versão mais recente. [Saiba mais sobre o Centro](https://docs.adobe.com/content/help/pt-BR/experience-cloud/software-distribution/home.html) de download.
+1. [Baixe a versão](https://experience.adobe.com/#/downloads/content/software-distribution/en/campaign.html) mais recente. [Saiba mais](https://docs.adobe.com/content/help/pt-BR/experience-cloud/software-distribution/home.html).
 
 Você também precisa saber todas as [linhas de comando úteis](../../installation/using/command-lines.md) antes de iniciar uma atualização de compilação:
 
@@ -163,7 +163,7 @@ Para substituir todos os arquivos pela nova versão, é necessário que todas as
 
 ### Atualizar o aplicativo Adobe Campaign Server
 
-1. Execute o arquivo **Setup.exe**. Se precisar baixar esse arquivo, acesse [o Centro de download](https://docs.adobe.com/content/help/en/experience-cloud/software-distribution/home.html).
+1. Execute o arquivo **Setup.exe**. Se precisar baixar esse arquivo, acesse [o Centro de download](https://experience.adobe.com/#/downloads/content/software-distribution/en/campaign.html).
 
 1. Selecione o modo de instalação: **Atualizar** ou **Reparar**.
 
@@ -365,8 +365,8 @@ Há diferentes tipos de mesclagem:
 #### Onde encontrar o código?
 
 1. O código incorporado é armazenado em arquivos XML na pasta datakit. Encontre o arquivo XML que corresponde ao objeto em conflito. Exemplo: installationDirectory\datakit\nms\fra\form\recipient.xml
-1. Recuperar a versão original: por meio do [Centro de download](https://docs.adobe.com/content/help/en/experience-cloud/software-distribution/home.html) ou de outra instalação não atualizada do produto.
-1. Recuperar a nova versão: pelo [Centro de download](https://docs.adobe.com/content/help/en/experience-cloud/software-distribution/home.html) ou pelos arquivos instalados do cliente.
+1. Recuperar a versão original: por meio do [Centro de download](https://experience.adobe.com/#/downloads/content/software-distribution/en/campaign.html) ou de outra instalação não atualizada do produto.
+1. Recuperar a nova versão: pelo [Centro de download](https://experience.adobe.com/#/downloads/content/software-distribution/en/campaign.html) ou pelos arquivos instalados do cliente.
 1. Recuperar a versão personalizada: recupere o código-fonte do objeto no cliente da Campanha.
 
 ### Como fazer um diferencial?
