@@ -7,7 +7,7 @@ audience: platform
 content-type: reference
 topic-tags: administration-basics
 translation-type: tm+mt
-source-git-commit: 4efe5f8a9130e7925194e56e088b3745c0cbd11a
+source-git-commit: f00c0bda0ab3f2e07c015f4cfe5e3942f5620841
 workflow-type: tm+mt
 source-wordcount: '1525'
 ht-degree: 89%
@@ -147,7 +147,7 @@ Bancos de dados externos compatíveis com a Campanha estão listados na [Matriz 
 
 As configurações de conta externa dependem do mecanismo de banco de dados. Saiba mais nas seguintes seções:
 
-* Configurar acesso a [Azure synapse](../../installation/using/configure-fda-synapse.md)
+* Configurar acesso a [Azure Synapse](../../installation/using/configure-fda-synapse.md)
 * Configurar acesso a [Hadoop](../../installation/using/configure-fda-hadoop.md)
 * Configurar acesso a [Oracle](../../installation/using/configure-fda-oracle.md)
 * Configurar acesso a [Netezza](../../installation/using/configure-fda-netezza.md)
@@ -408,7 +408,7 @@ Para configurar a conta externa do Salesforce CRM para funcionar com o Adobe Cam
 
 * **[!UICONTROL API version]**
 
-   Versão da API entre **[!UICONTROL Version 37]**, **[!UICONTROL Version 21]** ou **[!UICONTROL Version 15]**.
+   Versão da API entre **[!UICONTROL Version 49]**, **[!UICONTROL Version 37]**, **[!UICONTROL Version 21]** ou **[!UICONTROL Version 15]**.
 
 Para essa conta externa, você precisa configurar o Salesforce CRM com o assistente de configuração.
 
