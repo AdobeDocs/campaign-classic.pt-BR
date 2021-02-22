@@ -80,19 +80,14 @@ Esta é uma lista dos comandos de administração comuns acessíveis no Linux (c
    >* No evento de uma emergência, use a opção **-imediato** para forçar uma interrupção imediata do processo (equivalente ao comando Unix **kill -9**).
    >* Use a opção **-noconsole** para garantir que o módulo iniciado não exibirá nada no console. Seus registros serão gravados no disco por meio do módulo **syslogd**.
    >* Use a opção **-verbose** para exibir informações adicionais sobre ações do processo.
-
-      >
-      >   
-      Exemplo:
-      >
-      >   
-      **nlserver restart web -verbose**
-      >
-      >   
-      **start nlserver mta@myinstance - verbose**
-      >
-      >   
-      Essa opção adiciona outros logs. Recomendamos iniciar os processos novamente sem a opção **-verbose** depois de encontrar as informações desejadas, para evitar o sobrecarregamento de logs.
+   >
+   >   Exemplo:
+   >
+   >   **nlserver restart web -verbose**
+   >
+   >   **start nlserver mta@myinstance - verbose**
+   >
+   >   Essa opção adiciona outros logs. Recomendamos iniciar os processos novamente sem a opção **-verbose** depois de encontrar as informações desejadas, para evitar o sobrecarregamento de logs.
 
 
 * Start todos os processos do Adobe Campaign (equivalente à inicialização do serviço **nlserver6**):
