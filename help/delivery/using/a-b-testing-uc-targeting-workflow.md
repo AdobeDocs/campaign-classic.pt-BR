@@ -7,10 +7,10 @@ audience: delivery
 content-type: reference
 topic-tags: a-b-testing
 translation-type: tm+mt
-source-git-commit: 177b4e74c75e4fcca70dc90b5ff2c0406181e0f7
+source-git-commit: 50a10e16f320a67cb4ad0e31c1cbe8a9365b7887
 workflow-type: tm+mt
-source-wordcount: '124'
-ht-degree: 90%
+source-wordcount: '136'
+ht-degree: 82%
 
 ---
 
@@ -34,3 +34,5 @@ ht-degree: 90%
 1. Use o mouse para arrastar e soltar atividades no diagrama do workflow, incluindo uma **[!UICONTROL Query]** (guia **[!UICONTROL Target]**), uma **[!UICONTROL Split]** (guia **[!UICONTROL Target]**), duas **[!UICONTROL Email deliveries]** (guia **[!UICONTROL Deliveries]**), uma atividade **[!UICONTROL Wait]** (guia **[!UICONTROL Flow Control]**), uma atividade **[!UICONTROL JavaScript code]** (guia **[!UICONTROL Actions]**), e uma atividade **[!UICONTROL Delivery]** (guia **[!UICONTROL Actions]**).
 
 ![](assets/use_case_abtesting_targetwkfl_004.png)
+
+Agora você pode configurar as amostras de população (consulte [Etapa 2: Configure amostras de população](../../delivery/using/a-b-testing-uc-population-samples.md)).
