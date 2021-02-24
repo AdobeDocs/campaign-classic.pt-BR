@@ -7,10 +7,10 @@ audience: delivery
 content-type: reference
 topic-tags: a-b-testing
 translation-type: tm+mt
-source-git-commit: 346b72d522c947b2a2552176b910ded8d622f3ab
+source-git-commit: 50a10e16f320a67cb4ad0e31c1cbe8a9365b7887
 workflow-type: tm+mt
-source-wordcount: '239'
-ht-degree: 52%
+source-wordcount: '244'
+ht-degree: 51%
 
 ---
 
@@ -29,13 +29,14 @@ Além disso, o teste detalhado neste caso de uso relacionou-se apenas a dois del
 
 As principais etapas para executar esse caso de uso são:
 
-* [Etapa 1: Criar um fluxo de trabalho de definição de metas](#step-1--creating-a-targeting-workflow)
-* [Etapa 2: Configurar amostras de população](#step-2--configuring-population-samples)
-* [Etapa 3: Criar dois templates do delivery](#step-3--creating-two-delivery-templates)
-* [Etapa 4: Configurar os delivery no fluxo de trabalho](#step-4--configuring-the-deliveries-in-the-workflow)
-* [Etapa 5: Criar o script](#step-5--creating-the-script)
-* [Etapa 7: Start do fluxo de trabalho](#step-7--starting-the-workflow)
-* [Etapa 8: Analise o resultado](#step-8--analyzing-the-result).
+* [Etapa 1: Criar um fluxo de trabalho de definição de metas](../../delivery/using/a-b-testing-uc-targeting-workflow.md)
+* [Etapa 2: Configurar amostras de população](../../delivery/using/a-b-testing-uc-population-samples.md)
+* [Etapa 3: Criar dois templates do delivery](../../delivery/using/a-b-testing-uc-delivery-templates.md)
+* [Etapa 4: Configurar os delivery no fluxo de trabalho](../../delivery/using/a-b-testing-uc-configuring-deliveries.md)
+* [Etapa 5: Criar o script](../../delivery/using/a-b-testing-uc-script.md)
+* [Etapa 6: Definir o delivery final](../../delivery/using/a-b-testing-uc-final-delivery.md)
+* [Etapa 7: Start do fluxo de trabalho](../../delivery/using/a-b-testing-uc-start-workflow.md)
+* [Etapa 8: Analisar o resultado](../../delivery/using/a-b-testing-uc-analyzing.md)
 
 **Tópicos relacionados:**
 
