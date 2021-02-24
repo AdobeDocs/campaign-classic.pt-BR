@@ -7,10 +7,10 @@ audience: rns
 content-type: reference
 topic-tags: latest-documentation-updates
 translation-type: tm+mt
-source-git-commit: 33debcd6e399d2780277644103a620d46c22022e
+source-git-commit: 5e6a30cd70c6eb21398fda4ac0572fcefa780e0d
 workflow-type: tm+mt
-source-wordcount: '4045'
-ht-degree: 96%
+source-wordcount: '4066'
+ht-degree: 95%
 
 ---
 
@@ -62,6 +62,8 @@ A lista de workflows técnicos com seus pacotes associados foi aprimorada e cent
 A seção de solução de problemas do manual de **Monitoramento** foi reorganizada e aprimorada com uma página de aterrissagem. [Leia mais](../../production/using/troubleshooting.md).
 
 Uma nova seção **Importar e exportar dados** está disponível com novas páginas relacionadas a workflows, compactação de dados, criptografia e práticas recomendadas de importação. [Leia mais](../../platform/using/get-started-data-import-export.md)
+
+Foram adicionadas informações sobre como adicionar links em emails que podem ser personalizados e que oferecem suporte ao rastreamento. [Leia mais](../../delivery/using/tracking-personalized-links.md).
 
 ## Dezembro de 2020 {#dec-2020}
 
