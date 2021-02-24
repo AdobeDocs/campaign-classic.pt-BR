@@ -7,7 +7,7 @@ audience: rns
 content-type: reference
 topic-tags: latest-documentation-updates
 translation-type: tm+mt
-source-git-commit: 5e6a30cd70c6eb21398fda4ac0572fcefa780e0d
+source-git-commit: 9f898e28b981ea4257c9f4b73a579d322ddbba89
 workflow-type: tm+mt
 source-wordcount: '4066'
 ht-degree: 95%
@@ -45,6 +45,8 @@ Uma seção de solução de problemas foi adicionada para ajudá-lo a resolver p
 
 A seção **Enviar um email** foi reorganizada e esclarecida com novas subseções. [Leia mais](../../delivery/using/sending-messages.md)
 
+Foram adicionadas informações sobre como adicionar links em emails que podem ser personalizados e que oferecem suporte ao rastreamento. [Leia mais](../../delivery/using/tracking-personalized-links.md).
+
 ## Janeiro de 2021 {#jan-2021}
 
 A seção de atividade **[!UICONTROL Fork]** foi aprimorada com práticas recomendadas. [Leia mais](../../workflow/using/fork.md)
@@ -62,8 +64,6 @@ A lista de workflows técnicos com seus pacotes associados foi aprimorada e cent
 A seção de solução de problemas do manual de **Monitoramento** foi reorganizada e aprimorada com uma página de aterrissagem. [Leia mais](../../production/using/troubleshooting.md).
 
 Uma nova seção **Importar e exportar dados** está disponível com novas páginas relacionadas a workflows, compactação de dados, criptografia e práticas recomendadas de importação. [Leia mais](../../platform/using/get-started-data-import-export.md)
-
-Foram adicionadas informações sobre como adicionar links em emails que podem ser personalizados e que oferecem suporte ao rastreamento. [Leia mais](../../delivery/using/tracking-personalized-links.md).
 
 ## Dezembro de 2020 {#dec-2020}
 
