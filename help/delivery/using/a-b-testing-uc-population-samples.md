@@ -7,10 +7,10 @@ audience: delivery
 content-type: reference
 topic-tags: a-b-testing
 translation-type: tm+mt
-source-git-commit: 177b4e74c75e4fcca70dc90b5ff2c0406181e0f7
+source-git-commit: 50a10e16f320a67cb4ad0e31c1cbe8a9365b7887
 workflow-type: tm+mt
-source-wordcount: '160'
-ht-degree: 92%
+source-wordcount: '174'
+ht-degree: 85%
 
 ---
 
@@ -80,3 +80,5 @@ Esta atividade permite criar várias populações: a que recebe a delivery A, aq
    * Altere o rótulo para especificar que esta população não inclui A nem B e clique em **[!UICONTROL OK]** para fechar a atividade.
 
       ![](assets/use_case_abtesting_createrecipients_013.png)
+
+Agora você pode criar os dois templates do delivery (consulte [Etapa 3: Crie dois templates do delivery](../../delivery/using/a-b-testing-uc-delivery-templates.md)).
