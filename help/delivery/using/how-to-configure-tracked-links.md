@@ -7,10 +7,10 @@ audience: delivery
 content-type: reference
 topic-tags: tracking-messages
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: 5e6a30cd70c6eb21398fda4ac0572fcefa780e0d
 workflow-type: tm+mt
-source-wordcount: '443'
-ht-degree: 100%
+source-wordcount: '478'
+ht-degree: 92%
 
 ---
 
@@ -19,11 +19,14 @@ ht-degree: 100%
 
 Para cada entrega, você pode rastrear a recepção das mensagens e a ativação dos links inseridos no conteúdo da mensagem. Isso permite rastrear o comportamento dos destinatários seguindo as ações de entrega que foram direcionadas.
 
+O rastreamento se aplica a mensagens, mas o rastreamento na web permite monitorar como os recipients navegam em um site (páginas visitadas, compras). A configuração de rastreamento na web é apresentada [nesta seção](../../configuration/using/about-web-tracking.md).
+
 >[!NOTE]
 >
->O rastreamento se aplica a mensagens, mas o rastreamento na web permite monitorar como os recipients navegam em um site (páginas visitadas, compras).
->
->A configuração de rastreamento na web é apresentada [nesta seção](../../configuration/using/about-web-tracking.md).
+>Os links no conteúdo de email que contêm personalização precisam de sintaxe específica para serem rastreados. Para obter mais informações sobre como adicionar links em emails que podem ser personalizados e que oferecem suporte ao rastreamento, consulte [esta seção](../../delivery/using/tracking-personalized-links.md).
+
+
+
 
 O rastreamento de mensagens é habilitado por padrão. Para personalizar como URLs são rastreados, siga as etapas abaixo:
 
