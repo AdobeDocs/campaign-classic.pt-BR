@@ -7,9 +7,9 @@ audience: delivery
 content-type: reference
 topic-tags: tracking-messages
 translation-type: tm+mt
-source-git-commit: 55cc09c0446e389029890e45b790bb5ec6ffdc27
+source-git-commit: 5e6a30cd70c6eb21398fda4ac0572fcefa780e0d
 workflow-type: tm+mt
-source-wordcount: '690'
+source-wordcount: '685'
 ht-degree: 24%
 
 ---
@@ -57,7 +57,7 @@ As opções de rastreamento podem ser configuradas por meio da ativação ou des
 
 **Personalização do link rastreado**
 
-Os recursos de rastreamento de Campaign Classic permitem que você adicione links em emails que podem ser personalizados e que oferecem suporte ao rastreamento. [Saiba mais](https://helpx.adobe.com/campaign/kb/tracking-personnalized-links.html)
+Os recursos de rastreamento de Campaign Classic permitem que você adicione links em emails que podem ser personalizados e que oferecem suporte ao rastreamento. [Saiba mais](../../delivery/using/tracking-personalized-links.md)
 
 **Logs de rastreamento**
 
