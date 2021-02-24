@@ -7,7 +7,7 @@ audience: delivery
 content-type: reference
 topic-tags: tracking-messages
 translation-type: tm+mt
-source-git-commit: 151667637a12667f5eda1590e64e01de493be9ce
+source-git-commit: 9f898e28b981ea4257c9f4b73a579d322ddbba89
 workflow-type: tm+mt
 source-wordcount: '636'
 ht-degree: 1%
@@ -59,7 +59,7 @@ Em que:
 
 O objeto pode ser:
 
-* *&quot;delivery&quot;: para o delivery atual (consulte os detalhes e as restrições na subseção abaixo).
+* &quot;delivery&quot;: para o delivery atual (consulte os detalhes e as restrições na subseção abaixo).
 * &quot;fornecedor&quot;: para o provedor/roteamento atual do delivery (nms:externalAccount).
 * Um objeto de script extra: se um objeto for carregado no contexto por meio de: **Propriedades** > **Personalização** > **Adicione objetos no contexto de execução**.
 * Item do ciclo foreach: consulte a seção [Foreach](#<%@-foreach) abaixo.
