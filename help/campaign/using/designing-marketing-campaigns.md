@@ -6,9 +6,9 @@ description: Defina, otimize, execute e analise campanhas de marketing.
 audience: campaign
 content-type: reference
 topic-tags: about-marketing-campaigns
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: cea4a26935312b1cb119a3fa671af7bf00788fe9
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '448'
 ht-degree: 100%
 
@@ -68,6 +68,6 @@ Os seguintes conceitos precisam ser conhecidos no contexto do Campaign:
 
 Este vídeo apresenta os principais conceitos das campanhas de marketing.
 
->[!VIDEO](https://video.tv.adobe.com/v/35131?quality=12&captions=por_br)
+>[!VIDEO](https://video.tv.adobe.com/v/35131?quality=12)
 
 Vídeos extras sobre procedimentos do Campaign Classic estão disponíveis [aqui](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html?lang=pt-BR).
