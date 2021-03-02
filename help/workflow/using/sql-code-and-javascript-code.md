@@ -7,10 +7,10 @@ audience: workflow
 content-type: reference
 topic-tags: action-activities
 translation-type: tm+mt
-source-git-commit: 8bcfc8826a66517e6a648dbc57b681778718c33c
+source-git-commit: add0efb4efd5a37129c649b942799622947f3143
 workflow-type: tm+mt
-source-wordcount: '226'
-ht-degree: 100%
+source-wordcount: '261'
+ht-degree: 86%
 
 ---
 
@@ -59,3 +59,12 @@ Para ignorar esse limite, é necessário definir o valor como **0**.
 * **[!UICONTROL Next calls]**: A segunda zona do editor contém o script a ser executado durante as próximas chamadas.
 * **[!UICONTROL Transitions]**: Você pode definir várias transições de atividade de output.
 * **[!UICONTROL Schedule]**: A guia **[!UICONTROL Schedule]** permite agendar quando acionar a atividade.
+
+O JavaScript avançado é uma tarefa persistente e é retomado periodicamente se não tiver sido marcado como concluído. Para encerrar a tarefa e evitar futuras recuperações, você deve usar o método **task.setCompleted()** na seção **[!UICONTROL Next calls]**:
+
+```
+task.postEvent(task.transitionByName("ok")); // to transition to Ok branch
+task.setCompleted();
+
+return 0;
+```
