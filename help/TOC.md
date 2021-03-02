@@ -9,9 +9,9 @@ solution: Campaign Classic
 sub-product: Adobe Campaign Classic
 type: Documentação
 translation-type: tm+mt
-source-git-commit: 6dbf77c29dddc4b718910835520e4480e01d0d4a
+source-git-commit: 4a56feac374506bb33ae6770aa247a197f1669fb
 workflow-type: tm+mt
-source-wordcount: '2368'
+source-wordcount: '2372'
 ht-degree: 97%
 
 ---
@@ -125,11 +125,11 @@ ht-degree: 97%
       + [Criação de um delivery de email](delivery/using/creating-an-email-delivery.md)
       + [Definição do conteúdo do email](delivery/using/defining-the-email-content.md)
       + [Definição do conteúdo interativo ](delivery/using/defining-interactive-content.md)
-      + Envio de emails {#sending-an-email}
-         + [Confirmação do delivery de email](delivery/using/sending-messages.md)
+      + Envio do delivery de email {#sending-an-email}
+         + [Etapas principais para enviar um email](delivery/using/sending-messages.md)
          + [Parâmetros de email](delivery/using/email-parameters.md)
          + [Envio com o MTA aprimorado](delivery/using/sending-with-enhanced-mta.md)
-         + [Envio de telefones japoneses](delivery/using/sending-emails-on-japanese-mobiles.md)
+         + [Envio de celulares japoneses](delivery/using/sending-emails-on-japanese-mobiles.md)
       + [Anexo de arquivos](delivery/using/attaching-files.md)
    + Envio de mensagens em celulares {#sending-messages-on-mobiles}
       + [Canal SMS](delivery/using/sms-channel.md)
@@ -177,8 +177,8 @@ ht-degree: 97%
          + [Sobre este caso de uso](delivery/using/a-b-testing-use-case.md)
          + [Criar um workflow para construção do target](delivery/using/a-b-testing-uc-targeting-workflow.md)
          + [Configuração de amostras de população](delivery/using/a-b-testing-uc-population-samples.md)
-         + [Criação dos templates do delivery](delivery/using/a-b-testing-uc-delivery-templates.md)
-         + [Configuração dos delivery](delivery/using/a-b-testing-uc-configuring-deliveries.md)
+         + [Criação de templates do delivery](delivery/using/a-b-testing-uc-delivery-templates.md)
+         + [Configuração de deliveries](delivery/using/a-b-testing-uc-configuring-deliveries.md)
          + [Criação do script](delivery/using/a-b-testing-uc-script.md)
          + [Definição da delivery final](delivery/using/a-b-testing-uc-final-delivery.md)
          + [Início do workflow](delivery/using/a-b-testing-uc-start-workflow.md)
@@ -199,14 +199,14 @@ ht-degree: 97%
    + Rastreamento de mensagens {#tracking-messages}
       + [Sobre o rastreamento de mensagens](delivery/using/about-message-tracking.md)
       + [Como configurar links rastreados](delivery/using/how-to-configure-tracked-links.md)
-      + Rastrear links personalizados {#tracking-personalized-links}
+      + Rastreamento de links personalizados {#tracking-personalized-links}
          + [Introdução ao rastreamento de links personalizados](delivery/using/tracking-personalized-links.md)
          + [Detecção de URLs de rastreamento](delivery/using/detecting-tracking-urls.md)
          + [Instruções de pré-processamento para rastreamento](delivery/using/pre-processing-instructions.md)
       + [Configuração das opções de rastreamento de URL](delivery/using/personalizing-url-tracking.md)
       + [Acessando os logs de rastreamento](delivery/using/accessing-the-tracking-logs.md)
       + [Testar o rastreamento](delivery/using/testing-tracking.md)
-      + [Acompanhamento da solução de problemas](delivery/using/tracking-troubleshooting.md)
+      + [Rastreamento de problemas](delivery/using/tracking-troubleshooting.md)
    + Gerenciamento de deliverability {#deliverability-management}
       + [Sobre a capacidade de delivery](delivery/using/about-deliverability.md)
       + [Pontos principais a serem verificados](delivery/using/deliverability-key-points.md)
