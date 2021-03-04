@@ -7,15 +7,15 @@ audience: reporting
 content-type: reference
 topic-tags: creating-new-reports
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: 11ff62238a8fb73658f2263c25dbeb27d2e0fb23
 workflow-type: tm+mt
-source-wordcount: '166'
-ht-degree: 100%
+source-wordcount: '167'
+ht-degree: 96%
 
 ---
 
 
-# Sobre a criação de relatórios no Campaign{#about-reports-creation-in-campaign}
+# Etapas principais para criar um relatório{#about-reports-creation-in-campaign}
 
 Para produzir estatísticas com os dados do banco de dados do Campaign, é possível criar relatórios e adaptar seu conteúdo e layout com base nas necessidades. Esses relatórios podem ser compartilhados com outros operadores.
 
