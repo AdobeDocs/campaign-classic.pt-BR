@@ -7,15 +7,15 @@ audience: web
 content-type: reference
 topic-tags: web-applications
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: 11ff62238a8fb73658f2263c25dbeb27d2e0fb23
 workflow-type: tm+mt
-source-wordcount: '947'
-ht-degree: 100%
+source-wordcount: '948'
+ht-degree: 99%
 
 ---
 
 
-# Casos de uso: criação de visões gerais{#use-cases-creating-overviews}
+# Casos de uso: criar páginas de visão geral{#use-cases-creating-overviews}
 
 No exemplo a seguir, criaremos aplicativos tipo visão geral para exibir todas as aplicações web no banco de dados. Configure os seguintes elementos:
 
