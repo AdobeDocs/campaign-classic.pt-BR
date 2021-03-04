@@ -1,21 +1,21 @@
 ---
 solution: Campaign Classic
 product: campaign
-title: Gerenciamento de direitos
-description: Gerenciamento de direitos
+title: Gerenciar permissões de fluxo de trabalho
+description: Saiba como gerenciar permissões de fluxo de trabalho
 audience: workflow
 content-type: reference
 topic-tags: advanced-management
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: 11ff62238a8fb73658f2263c25dbeb27d2e0fb23
 workflow-type: tm+mt
-source-wordcount: '315'
-ht-degree: 100%
+source-wordcount: '321'
+ht-degree: 96%
 
 ---
 
 
-# Gerenciamento de direitos{#managing-rights}
+# Gerenciar permissões de fluxo de trabalho{#managing-rights}
 
 Se não forem Administradores, os operadores do Adobe Campaign precisam de direitos de acesso para criar, executar ou modificar workflows.
 
