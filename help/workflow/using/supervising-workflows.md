@@ -7,15 +7,15 @@ audience: workflow
 content-type: reference
 topic-tags: use-cases
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: 11ff62238a8fb73658f2263c25dbeb27d2e0fb23
 workflow-type: tm+mt
-source-wordcount: '643'
-ht-degree: 100%
+source-wordcount: '646'
+ht-degree: 99%
 
 ---
 
 
-# Supervisão de worflows{#supervising-workflows}
+# Caso de uso: supervisionar seus workflows{#supervising-workflows}
 
 Esse caso de uso detalha a criação de um workflow que permite monitorar o status de um conjunto de workflows que são &quot;pausados&quot;, &quot;interrompido&quot; ou &quot;com erros&quot;.
 
