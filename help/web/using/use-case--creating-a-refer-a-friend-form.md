@@ -7,15 +7,15 @@ audience: web
 content-type: reference
 topic-tags: online-surveys
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: 11ff62238a8fb73658f2263c25dbeb27d2e0fb23
 workflow-type: tm+mt
-source-wordcount: '621'
-ht-degree: 100%
+source-wordcount: '619'
+ht-degree: 99%
 
 ---
 
 
-# Caso de uso: criação de um formulário Indique um Amigo{#use-case-creating-a-refer-a-friend-form}
+# Caso de uso: criar um formulário de referência{#use-case-creating-a-refer-a-friend-form}
 
 Neste exemplo, queremos oferecer uma competição aos recipients do banco de dados. O formulário Web terá uma seção para inserir respostas e outra para indicar um amigo inserindo seu endereço de email.
 
