@@ -7,15 +7,15 @@ audience: reporting
 content-type: reference
 topic-tags: creating-new-reports
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: 11ff62238a8fb73658f2263c25dbeb27d2e0fb23
 workflow-type: tm+mt
 source-wordcount: '923'
-ht-degree: 100%
+ht-degree: 99%
 
 ---
 
 
-# Criação de um novo relatório{#creating-a-new-report}
+# Criar um novo relatório{#creating-a-new-report}
 
 Para criar um relatório, siga as etapas abaixo:
 
