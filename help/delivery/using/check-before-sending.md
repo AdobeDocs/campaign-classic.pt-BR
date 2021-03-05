@@ -6,7 +6,7 @@ audience: delivery
 content-type: reference
 topic-tags: deliveries-best-practices
 translation-type: tm+mt
-source-git-commit: 1330d4658d039f27a98535bf9885bffbfa0be3c9
+source-git-commit: 87028ec81a8cae6793d45d7c840511b59cd0287c
 workflow-type: tm+mt
 source-wordcount: '861'
 ht-degree: 100%
@@ -64,7 +64,7 @@ Como etapa final, maximize suas chances e aproveite o potencial do Adobe Campaig
 
 ### Passar por um processo de validação
 
-Você pode definir um processo de validação completo, envolvendo operadores e grupos do Adobe Campaign, para validar tanto o público-alvo quanto o conteúdo da mensagem. Dessa forma, será possível monitorar e controlar totalmente os diversos processos da campanha: direcionamento, conteúdo, orçamento, extração e envio de prova. Dependendo das suas permissões, os usuários serão notificados, receberão provas e poderão validar ou rejeitar a mensagem. Saiba mais [nesta seção](../../campaign/using/marketing-campaign-approval.md#approval-process).
+Você pode definir um processo de validação completo, envolvendo operadores e grupos do Adobe Campaign, para validar tanto o público-alvo quanto o conteúdo da mensagem. Dessa forma, será possível monitorar e controlar totalmente os diversos processos da campanha: direcionamento, conteúdo, orçamento, extração e envio de prova. Dependendo das suas permissões, os usuários serão notificados, receberão provas e poderão validar ou rejeitar a mensagem. Saiba mais [nesta seção](../../campaign/using/marketing-campaign-approval.md).
 
 ### Usar ondas
 
