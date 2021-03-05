@@ -1,21 +1,21 @@
 ---
 solution: Campaign Classic
 product: campaign
-title: Configuração de campanhas de marketing
-description: Configuração de campanhas de marketing
+title: Criar campanhas de marketing
+description: Saiba como criar e executar campanhas de marketing
 audience: campaign
 content-type: reference
 topic-tags: orchestrate-campaigns
-translation-type: ht
-source-git-commit: cea4a26935312b1cb119a3fa671af7bf00788fe9
-workflow-type: ht
-source-wordcount: '1263'
-ht-degree: 100%
+translation-type: tm+mt
+source-git-commit: 87028ec81a8cae6793d45d7c840511b59cd0287c
+workflow-type: tm+mt
+source-wordcount: '1253'
+ht-degree: 91%
 
 ---
 
 
-# Configuração de campanhas de marketing{#setting-up-marketing-campaigns}
+# Introdução a campanhas de marketing{#setting-up-marketing-campaigns}
 
 As campanhas incluem ações (deliveries) e processos (importação ou extração de arquivos), além de recursos (documentos de marketing e delivery outlines). Eles são usados em campanhas de marketing. As campanhas são parte de um programa, e os programas estão incluídos em um plano de campanha.
 
@@ -23,33 +23,21 @@ As campanhas incluem ações (deliveries) e processos (importação ou extraçã
 
 Para criar uma campanha de marketing:
 
-1. Crie uma campanha: descubra campanhas e suas características: etiqueta, tipo, datas de início e término, orçamento, recursos associados, gerentes e participantes.
+1. Crie uma campanha: descubra campanhas e suas características: etiqueta, tipo, datas de início e término, orçamento, recursos associados, gerentes e participantes. [Saiba mais](#creating-a-campaign).
 
-   Consulte [Criação de uma campanha](#creating-a-campaign).
+1. Defina a população do target: crie um workflow com queries de direcionamento. [Saiba mais](../../campaign/using/marketing-campaign-deliveries.md#selecting-the-target-population).
 
-1. Defina a população do target: crie um workflow com queries de direcionamento.
+1. Crie deliveries: selecione os canais e defina o conteúdo a ser enviado. [Saiba mais](../../campaign/using/marketing-campaign-deliveries.md#creating-deliveries).
 
-   Consulte [Seleção da população do target](../../campaign/using/marketing-campaign-deliveries.md#selecting-the-target-population)
+1. Aprove deliveries. [Saiba mais](../../campaign/using/marketing-campaign-approval.md).
 
-1. Crie deliveries: selecione os canais e defina o conteúdo a ser enviado.
+1. Monitore deliveries [Saiba mais](../../campaign/using/marketing-campaign-monitoring.md).
 
-   Consulte [Criação de deliveries](../../campaign/using/marketing-campaign-deliveries.md#creating-deliveries).
+1. Planeje campanhas e custos associados. [Saiba mais](../../campaign/using/providers--stocks-and-budgets.md#creating-service-providers-and-their-cost-structures).
 
-1. Aprove deliveries.
+Quando essas etapas forem concluídas, será possível iniciar os deliveries (consulte [esta seção](../../campaign/using/marketing-campaign-deliveries.md#starting-a-delivery)), verificar os dados, processos e informações relacionados aos deliveries e, se necessário, gerenciar os documentos associados (consulte [esta seção](../../campaign/using/marketing-campaign-deliveries.md#managing-associated-documents)). Também é possível rastrear a execução das fases de processamento das campanhas e remessas (consulte [esta seção](../../campaign/using/marketing-campaign-monitoring.md)).
 
-   Consulte [Processo de aprovação](../../campaign/using/marketing-campaign-approval.md#approval-process).
-
-1. Monitore deliveries
-
-   Consulte [Monitoramento](../../campaign/using/marketing-campaign-monitoring.md).
-
-1. Planeje campanhas e custos associados.
-
-   Consulte [Criação de provedores de serviços e suas estruturas de custo](../../campaign/using/providers--stocks-and-budgets.md#creating-service-providers-and-their-cost-structures).
-
-Quando essas etapas forem concluídas, será possível iniciar os deliveries (consulte [Iniciando um delivery](../../campaign/using/marketing-campaign-deliveries.md#starting-a-delivery)), verificar os dados, processos e informações relacionados aos deliveries e, se necessário, gerenciar os documentos associados (consulte [Gerenciamento de documentos associados](../../campaign/using/marketing-campaign-deliveries.md#managing-associated-documents)). Também é possível rastrear a execução das fases de processamento das campanhas e deliveries (consulte [Rastreamento](../../campaign/using/marketing-campaign-monitoring.md)).
-
-## Criação de plano e programa de hierarquia {#creating-plan-and-program-hierarchy}
+## Criar plano e hierarquia de programa {#creating-plan-and-program-hierarchy}
 
 Para configurar a hierarquia de pastas para planos de marketing e programas:
 
@@ -69,7 +57,7 @@ Para configurar a hierarquia de pastas para planos de marketing e programas:
 1. Clique com o botão direito do mouse no plano recém-criado e selecione **Create a new &#39;Program&#39; folder**.
 1. Repita as etapas acima para renomear a nova pasta do programa e seu nome interno.
 
-## Criação de uma campanha {#creating-a-campaign}
+## Criar uma campanha {#creating-a-campaign}
 
 ### Adicionar uma campanha {#adding-a-campaign}
 
@@ -119,7 +107,7 @@ Uma campanha periódica é uma campanha criada automaticamente de acordo com o a
 
 As campanhas recorrentes são criadas a partir de um template específico que define o template de workflow a ser executado e o agendamento de execução.
 
-#### Criação de um template para campanhas recorrentes {#creating-the-campaign-template}
+#### Crie um modelo para campanhas recorrentes {#creating-the-campaign-template}
 
 1. Crie um template de campanha **[!UICONTROL Recurring]**.
 
@@ -237,6 +225,6 @@ Cada campanha periódica contém os mesmos elementos. Uma vez criado, ele é ger
 
 Este vídeo mostra como criar um plano de marketing, programas e campanhas.
 
->[!VIDEO](https://video.tv.adobe.com/v/35132?quality=12&captions=por_br)
+>[!VIDEO](https://video.tv.adobe.com/v/35132?quality=12)
 
-Vídeos extras sobre procedimentos do Campaign Classic estão disponíveis [aqui](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html?lang=pt-BR).
+Vídeos extras sobre procedimentos do Campaign estão disponíveis [aqui](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html?lang=pt-BR).
