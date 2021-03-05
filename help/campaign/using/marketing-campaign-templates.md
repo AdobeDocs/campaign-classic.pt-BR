@@ -6,22 +6,32 @@ description: Templates de campanha de marketing
 audience: campaign
 content-type: reference
 topic-tags: orchestrate-campaigns
-translation-type: ht
-source-git-commit: 20dcdd91d71158bc373db68c3f61f6808b240bd2
-workflow-type: ht
-source-wordcount: '1124'
-ht-degree: 100%
+translation-type: tm+mt
+source-git-commit: 87028ec81a8cae6793d45d7c840511b59cd0287c
+workflow-type: tm+mt
+source-wordcount: '1128'
+ht-degree: 80%
 
 ---
 
 
-# Templates de campanha de marketing {#campaign-templates}
+# Criar e configurar templates de campanha {#campaign-templates}
 
-Os templates do Campaign são centralizados no nó **[!UICONTROL Resources > Templates > Campaign templates]**. Um template de parâmetro é fornecido como padrão. Ele permite criar uma nova campanha usando todos os módulos disponíveis (Documentos, tarefas, seed addresses, etc.), mas os módulos oferecidos dependem dos seus direitos e da configuração da plataforma Adobe Campaign.
+Todas as campanhas de marketing são baseadas em um template, que armazena as principais características e recursos. Os templates do Campaign são centralizados no nó **[!UICONTROL Resources > Templates > Campaign templates]**. Um template de parâmetro é fornecido como padrão. Ele permite criar uma nova campanha usando todos os módulos disponíveis (Documentos, tarefas, seed addresses, etc.), mas os módulos oferecidos dependem dos seus direitos e da configuração da plataforma Adobe Campaign.
 
-## Criar ou duplicar um template de campanha {#creating-or-duplicating-a-campaign-template}
+![](assets/s_ncs_user_campaign_op_template_node.png)
 
-Para criar um novo template, execute as seguintes etapas:
+>[!NOTE]
+>
+>A árvore é exibida ao clicar no ícone **[!UICONTROL Explorer]** na página inicial.
+
+Um template incorporado é fornecido para criar uma campanha para a qual nenhuma configuração específica foi definida. Você pode criar e configurar seus templates de campanha e, em seguida, criar campanhas a partir desses templates.
+
+![](assets/do-not-localize/how-to-video.png) Para saber mais sobre criações de campanha, assista a [este vídeo](../../campaign/using/marketing-campaign-deliveries.md#create-email-video).
+
+## Criar um template de campanha {#creating-or-duplicating-a-campaign-template}
+
+Para criar um template de campanha, siga as etapas abaixo:
 
 1. Abra o **Gerenciador** de Campanha.
 1. Em **Resources > Templates > Campaign templates**, clique em **New** na barra de ferramentas acima da lista de templates.
@@ -47,39 +57,19 @@ Para criar um novo template, execute as seguintes etapas:
 1. Crie o workflow de acordo com suas necessidades.
 1. Clique em **Save**. Agora, seu template está pronto para ser usado em uma campanha.
 
-Você também pode duplicar o template padrão para reutilizar e adaptar a configuração.
+Você também pode **duplicar** o template padrão para reutilizar e adaptar sua configuração.
 
 As várias guias e subguias do template de campanha permitem que você acesse as configurações, descritas em [Configuração geral](#general-configuration).
 
 ![](assets/s_ncs_user_new_op_template_duplicate.png)
 
-## Configuração de um template de campanha {#configuring-a-campaign-template}
+## Selecionar módulos {#select-modules}
 
-As campanhas são baseadas em templates que reúnem um conjunto de parâmetros predefinidos.
-
-Em uma configuração padrão, os templates de campanha são centralizados no nó **[!UICONTROL Resources > Templates > Campaign templates]** da árvore do Adobe Campaign.
-
-![](assets/s_ncs_user_campaign_op_template_node.png)
-
->[!NOTE]
->
->A árvore é exibida ao clicar no ícone **[!UICONTROL Explorer]** na página inicial.
-
-Um template pronto para usar é fornecido para criar uma campanha para a qual nenhuma configuração específica foi definida. Você pode criar e configurar seus templates de campanha e, em seguida, criar campanhas a partir desses templates.
-
-A criação e a configuração dos templates de campanha são apresentadas em [Templates de campanha](#campaign-templates).
-
-![](assets/do-not-localize/how-to-video.png) Para saber mais sobre criações de campanha, assista a [este vídeo](../../campaign/using/marketing-campaign-deliveries.md#create-email-video).
-
-## Configuração dos módulos disponíveis {#configuration-of-the-available-modules}
-
-### Seleção do módulo {#module-selection}
-
-O link **[!UICONTROL Advanced campaign settings...]** permite habilitar e desabilitar tarefas para as campanhas com base neste modelo. Selecione as funções que deseja habilitar nas campanhas criadas com base neste template.
+O link **[!UICONTROL Advanced campaign settings...]** permite habilitar e desabilitar tarefas para as campanhas com base neste modelo. Selecione os recursos que deseja habilitar nas campanhas criadas com base neste template.
 
 ![](assets/s_ncs_user_op_template_tab1.3.png)
 
-Se uma funcionalidade não estiver selecionada, os elementos relativos ao processo (menus, ícones, opções, guias, subguias etc.) não aparecerão na interface do template ou em campanhas baseadas nesse template. As guias à esquerda dos detalhes da campanha geralmente coincidem com os processos selecionados no template. Por exemplo, se a opção **Expenses and objectives** não estiver selecionada, a guia correspondente a **[!UICONTROL Budget]** não será exibida em campanhas que se baseiam no template.
+Se um recurso não estiver selecionado, os elementos relativos ao processo (menus, ícones, opções, guias, subguias etc.) não aparecerão na interface do template ou em campanhas baseadas nesse template. As guias à esquerda dos detalhes da campanha geralmente coincidem com os processos selecionados no template. Por exemplo, se a opção **Expenses and objectives** não estiver selecionada, a guia correspondente a **[!UICONTROL Budget]** não será exibida em campanhas que se baseiam no template.
 
 Além disso, os atalhos para as janelas de configuração são adicionados ao painel de campanha. Quando uma funcionalidade é habilitada, um link direto dá acesso a ela a partir do painel de campanha.
 
@@ -103,35 +93,35 @@ Os links e as guias a seguir serão exibidos:
 
 ![](assets/s_ncs_user_op_template_tab2.3ex.png)
 
-### Tipologia de módulos habilitados {#typology-of-enabled-modules}
+## Tipologia de módulos {#typology-of-enabled-modules}
 
 * **Grupo de controle**
 
-   Quando este módulo está selecionado, uma guia adicional é adicionada às configurações avançadas do template e às campanhas baseadas nesse template. A configuração pode ser definida por meio do template ou individualmente para cada campanha.
+   Quando este módulo está selecionado, uma guia adicional é adicionada às configurações avançadas do template e às campanhas baseadas nesse template. A configuração pode ser definida por meio do template ou individualmente para cada campanha. Saiba mais sobre grupos de controle em [esta seção](../../campaign/using/marketing-campaign-deliveries.md#defining-a-control-group).
 
    ![](assets/s_ncs_user_op_template_activate_1.png)
 
 * **Seed addresses**
 
-   Quando este módulo está selecionado, uma guia adicional é adicionada às configurações avançadas do template e às campanhas baseadas nesse template. A configuração pode ser definida por meio do template ou individualmente para cada campanha.
+   Quando este módulo está selecionado, uma guia adicional é adicionada às configurações avançadas do template e às campanhas baseadas nesse template. A configuração pode ser definida por meio do template ou individualmente para cada campanha. Saiba mais sobre seed addresses em [esta seção](../../delivery/using/about-seed-addresses.md).
 
    ![](assets/s_ncs_user_op_template_activate_2.png)
 
 * **Documentos**
 
-   Quando este módulo é selecionado, uma guia adicional é adicionada à guia **[!UICONTROL Edition]** do template e às campanhas com base nesse template. Os documentos anexados podem ser adicionados a partir do template ou individualmente para cada campanha.
+   Quando este módulo é selecionado, uma guia adicional é adicionada à guia **[!UICONTROL Edition]** do template e às campanhas com base nesse template. Os documentos anexados podem ser adicionados a partir do template ou individualmente para cada campanha. Saiba mais sobre documentos em [esta seção](../../campaign/using/marketing-campaign-deliveries.md#managing-associated-documents).
 
    ![](assets/s_ncs_user_op_template_activate_3.png)
 
 * **Estrutura**
 
-   Quando esse módulo é selecionado, uma subguia **[!UICONTROL Delivery outlines]** é adicionada à guia **[!UICONTROL Documents]** para definir delivery outlines para a campanha.
+   Quando esse módulo é selecionado, uma subguia **[!UICONTROL Delivery outlines]** é adicionada à guia **[!UICONTROL Documents]** para definir delivery outlines para a campanha. Saiba mais sobre delivery outlines em [this section](../../campaign/using/marketing-campaign-deliveries.md#associating-and-structuring-resources-linked-via-a-delivery-outline).
 
    ![](assets/s_ncs_user_op_template_activate_4.png)
 
 * **Direcionamento e workflows**
 
-   Ao selecionar o módulo **[!UICONTROL Targeting and workflows]**, uma guia é adicionada para permitir que você crie um ou mais workflows para campanhas com base nesse template. Os workflows também podem ser configurados individualmente para cada campanha com base nesse template.
+   Ao selecionar o módulo **[!UICONTROL Targeting and workflows]**, uma guia é adicionada para permitir que você crie um ou mais workflows para campanhas com base nesse template. Os workflows também podem ser configurados individualmente para cada campanha com base neste template.Saiba mais sobre workflows da campanha em [esta seção](../../campaign/using/marketing-campaign-deliveries.md#building-the-main-target-in-a-workflow).
 
    ![](assets/s_ncs_user_op_template_activate_5.png)
 
@@ -141,23 +131,21 @@ Os links e as guias a seguir serão exibidos:
 
 * **Aprovação**
 
-   Se você selecionar a opção **[!UICONTROL Approval]**, será possível selecionar os processos que serão aprovados, assim como os operadores de aprovação.
+   Se você selecionar a opção **[!UICONTROL Approval]**, será possível selecionar os processos que serão aprovados, assim como os operadores de aprovação. Saiba mais sobre aprovações em [esta seção](../../campaign/using/marketing-campaign-approval.md#selecting-reviewers).
 
    ![](assets/s_ncs_user_op_template_activate_5b.png)
 
-* **Despesas e direcionamentos**
+   Você pode optar por habilitar ou não a aprovação do processo por meio da guia **[!UICONTROL Approvals]** da seção de configurações avançadas dos templates. As tarefas para as quais a aprovação é selecionada devem ser aprovadas para que o delivery de mensagens seja autorizado.
+
+   Você deve associar um operador de revisor ou grupo de operadores a cada aprovação habilitada.
+
+* **Despesas e objetivos**
 
    Quando esse módulo é selecionado, uma guia **[!UICONTROL Budget]** é adicionada aos detalhes do template e às campanhas com base nesse template para que o orçamento associado possa ser selecionado.
 
    ![](assets/s_ncs_user_op_template_activate_7.png)
 
-### Aprovação de tarefas {#approval-of-jobs}
-
-Você pode optar por habilitar ou não a aprovação do processo por meio da guia **[!UICONTROL Approvals]** da seção de configurações avançadas dos templates. As tarefas para as quais a aprovação é selecionada devem ser aprovadas para que o delivery de mensagens seja autorizado.
-
-Você deve associar um operador de revisor ou grupo de operadores a cada aprovação habilitada.
-
-## Configuração geral {#general-configuration}
+## Propriedades e execução {#general-configuration}
 
 ### Propriedades do template {#template-properties}
 
@@ -172,7 +160,7 @@ Ao criar um template de campanha, você precisa inserir as seguintes informaçõ
    >
    >Para obter mais informações sobre enumerações, consulte a seção [Introdução](../../platform/using/managing-enumerations.md).
 
-* Selecione o **tipo de campanha**: exclusiva, recorrente ou periódica. Por padrão, os templates de campanha se aplicam a campanhas exclusivas. As campanhas recorrentes e periódicas são detalhadas aqui: [Campanhas recorrentes e periódicas](../../campaign/using/setting-up-marketing-campaigns.md#recurring-and-periodic-campaigns).
+* Selecione o **tipo de campanha**: exclusiva, recorrente ou periódica. Por padrão, os templates de campanha se aplicam a campanhas exclusivas. As campanhas recorrentes e periódicas são detalhadas [nesta seção](../../campaign/using/setting-up-marketing-campaigns.md#recurring-and-periodic-campaigns).
 * Especifique a duração da campanha, ou seja, o número de dias em que a campanha ocorrerá. Ao criar uma campanha com base nesse template, as datas de início e término da campanha serão preenchidas automaticamente.
 
    Se a campanha for recorrente, você deverá especificar as datas de início e término da campanha diretamente no template.
@@ -185,9 +173,9 @@ O link **[!UICONTROL Advanced campaign settings...]** permite configurar as opç
 
 ![](assets/s_ncs_user_op_template_tab1.2.png)
 
-## Programação reversa de campanha {#campaign-reverse-scheduling}
+## Rastrear a execução da campanha{#campaign-reverse-scheduling}
 
-Você pode criar uma agenda reversa para uma campanha, por exemplo, para preparar um evento cuja data é conhecida antecipadamente. Os templates de campanha agora permitem calcular a data de início de uma tarefa com base na data de término de uma campanha.
+Você pode criar um agendamento para uma campanha e acompanhar as realizações, por exemplo, para preparar um agendamento de evento para uma data específica. Os templates de campanha agora permitem calcular a data de início de uma tarefa com base na data de término de uma campanha.
 
 Na caixa de configuração da tarefa, vá para a área **[!UICONTROL Implementation schedule]** e marque a caixa **[!UICONTROL The start date is calculated based on the campaign end date]**. (Aqui, “start date” é a data de início da tarefa). Vá para o campo **[!UICONTROL Start]** e insira um intervalo: a tarefa iniciará antes da data de término da campanha. Se você inserir um período mais longo do que a campanha deve durar, a tarefa começará antes da campanha.
 
