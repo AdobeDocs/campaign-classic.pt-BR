@@ -1,29 +1,29 @@
 ---
 solution: Campaign Classic
 product: campaign
-title: Criar campanhas de marketing
+title: Projete e execute campanhas de marketing
 description: Defina, otimize, execute e analise campanhas de marketing.
 audience: campaign
 content-type: reference
 topic-tags: about-marketing-campaigns
 translation-type: tm+mt
-source-git-commit: cea4a26935312b1cb119a3fa671af7bf00788fe9
+source-git-commit: 87028ec81a8cae6793d45d7c840511b59cd0287c
 workflow-type: tm+mt
-source-wordcount: '448'
-ht-degree: 100%
+source-wordcount: '443'
+ht-degree: 92%
 
 ---
 
 
-# Criar campanhas de marketing{#designing-marketing-campaigns}
+# Projete e execute campanhas de marketing{#designing-marketing-campaigns}
 
-O Adobe Campaign permite que você defina, otimize, execute e analise campanhas de comunicação e marketing. O Adobe Campaign atua como uma central de execução e pedido unificada para estratégias de marketing. Para obter mais informações, consulte [Accessing campaigns](../../campaign/using/accessing-campaigns.md) and [Setting up marketing campaigns](../../campaign/using/setting-up-marketing-campaigns.md).
+O Adobe Campaign permite que você defina, otimize, execute e analise campanhas de comunicação e marketing. O Adobe Campaign atua como uma central de execução e pedido unificada para estratégias de marketing. Para obter mais informações, consulte [Acesse campanhas](../../campaign/using/accessing-campaigns.md) e [Criar campanhas de marketing](../../campaign/using/setting-up-marketing-campaigns.md).
 
 Além disso, o módulo **GMarketing Resource Management (MRM)** permite controlar ações de marketing em um modo colaborativo fornecendo gerenciamento completo e rastreamento em tempo real das tarefas, orçamentos e recursos de marketing envolvidos. O Gerenciamento de recursos de marketing permite otimizar e regular o gerenciamento de processos internos e externos, recursos e campanhas de marketing, bem como relações de terceiros (agências, impressoras etc.). Para obter mais informações, consulte [esta seção](../../campaign/using/about-marketing-resource-management.md).
 
 >[!NOTE]
 >
->Para saber mais sobre as funcionalidades principais do Adobe Campaign, consulte a seção [Introdução](../../platform/using/about-adobe-campaign-classic.md) .\
+>Para obter mais informações sobre as funcionalidades principais do Adobe Campaign, consulte [esta seção](../../platform/using/about-adobe-campaign-classic.md).\
 >Os recursos relacionados à definição de metas de população, personalização de mensagens e delivery de mensagens nos diversos canais são detalhados [nesta seção](../../delivery/using/steps-about-delivery-creation-steps.md).
 
 ![](assets/do-not-localize/how-to-video.png) [Descubra os principais conceitos das campanhas de marketing em vídeo](#video)
@@ -62,7 +62,7 @@ Os seguintes conceitos precisam ser conhecidos no contexto do Campaign:
 
    Um delivery outline é uma descrição estruturada de um delivery. Cada delivery pode se referir a um delivery outline que contenha, por exemplo, as ofertas relacionadas, documentos a serem anexados ou um link para lojas. Uma oferta pode ser referida no delivery de acordo com o delivery outline selecionado.
 
-   Para obter mais informações, consulte [Associando e estruturando recursos vinculados por um outline de delivery](../../campaign/using/marketing-campaign-deliveries.md#associating-and-structuring-resources-linked-via-a-delivery-outline).
+   Para obter mais informações, consulte [esta seção](../../campaign/using/marketing-campaign-deliveries.md#associating-and-structuring-resources-linked-via-a-delivery-outline).
 
 ## Tutorial {#video}
 
