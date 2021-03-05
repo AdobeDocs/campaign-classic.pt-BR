@@ -7,10 +7,10 @@ audience: interaction
 content-type: reference
 topic-tags: delivering-an-offer
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: 87028ec81a8cae6793d45d7c840511b59cd0287c
 workflow-type: tm+mt
-source-wordcount: '798'
-ht-degree: 100%
+source-wordcount: '803'
+ht-degree: 97%
 
 ---
 
@@ -28,7 +28,7 @@ Para apresentar uma oferta durante uma campanha de marketing, basta criar uma a�
 
 ![](assets/offer_delivery_009.png)
 
-Para obter mais informações sobre as deliveries e campanhas de marketing, consulte [Delivery](../../delivery/using/about-direct-mail-channel.md) e [Campaign](../../campaign/using/setting-up-marketing-campaigns.md).
+Saiba mais sobre deliveries de correspondência direta [nesta seção](../../delivery/using/about-direct-mail-channel.md). Saiba mais sobre campanhas de marketing [nesta seção](../../campaign/using/setting-up-marketing-campaigns.md).
 
 ### Etapas principais para inserir uma oferta em uma delivery {#main-steps-for-inserting-an-offer-into-a-delivery}
 
