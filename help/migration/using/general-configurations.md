@@ -7,9 +7,9 @@ audience: migration
 content-type: reference
 topic-tags: configuration
 translation-type: tm+mt
-source-git-commit: 693e38477b318ee44e0373a04d8524ddf128fe36
+source-git-commit: 278dec636373b5ccd3b631bd29607ebe894d53c3
 workflow-type: tm+mt
-source-wordcount: '2786'
+source-wordcount: '2787'
 ht-degree: 0%
 
 ---
@@ -616,7 +616,7 @@ Todos os relatórios padrão usam atualmente o mecanismo de renderização v6.x.
 
 ### Relatórios personalizados {#personalized-reports}
 
-<!--If you want to have the blue banner from v7 (allowing you access to the universes), you must republish reports. If you encounter problems, you can force the v6.0 rendering engine. To do this, go to **[!UICONTROL Properties]** within the report, click **[!UICONTROL Rendering]** and choose the **[!UICONTROL Version 6.0 (Flash & OpenOffice)]** rendering engine.
+<!--If you want to have the blue banner from v7 (allowing you access to the tabs), you must republish reports. If you encounter problems, you can force the v6.0 rendering engine. To do this, go to **[!UICONTROL Properties]** within the report, click **[!UICONTROL Rendering]** and choose the **[!UICONTROL Version 6.0 (Flash & OpenOffice)]** rendering engine.
 
 ![](assets/migration_reports_1.png)
 -->
@@ -631,7 +631,7 @@ Há duas famílias de aplicações web:
 
 ### Aplicações Web identificadas {#identified-web-applications}
 
-Assim como para os relatórios (consulte [Reports](#reports)), se você adicionou JavaScript, é necessário verificar e adaptar se necessário. Se você quiser se beneficiar do banner azul v7 (contendo os universos), será necessário republicar o aplicativo web. Se o código JavaScript estiver funcionando, é possível selecionar o mecanismo de renderização v6.x. Se esse não for o caso, você poderá usar o mecanismo de renderização v6.0 durante a adaptação do código e, em seguida, usar o mecanismo de renderização v6.x.
+Assim como para os relatórios ([saiba mais](#reports)), se tiver adicionado o JavaScript, você deve verificar e adaptar se necessário. Se você quiser se beneficiar do banner azul v7 (contendo as guias azuis), será necessário republicar o aplicativo web. Se o código JavaScript estiver funcionando, é possível selecionar o mecanismo de renderização v6.x. Se esse não for o caso, você poderá usar o mecanismo de renderização v6.0 durante a adaptação do código e, em seguida, usar o mecanismo de renderização v6.x.
 
 >[!NOTE]
 As etapas para selecionar o mecanismo de renderização são as mesmas que para selecionar relatórios. Consulte [Relatórios personalizados](#personalized-reports).
