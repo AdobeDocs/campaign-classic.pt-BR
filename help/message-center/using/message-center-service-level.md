@@ -7,17 +7,17 @@ audience: message-center
 content-type: reference
 topic-tags: reports
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: 278dec636373b5ccd3b631bd29607ebe894d53c3
 workflow-type: tm+mt
 source-wordcount: '232'
-ht-degree: 100%
+ht-degree: 92%
 
 ---
 
 
 # Nível de serviço do Centro de mensagens{#message-center-service-level}
 
-Esse relatório exibe as estatísticas de delivery relacionadas às mensagens transacionais, bem como a discriminação de erros. Você pode clicar em um tipo de erro para exibir seus detalhes. Esse relatório, destinado aos administradores técnicos, também pode ser acessado por meio do universo **[!UICONTROL Monitoring]** na instância de controle.
+Esse relatório exibe as estatísticas de delivery relacionadas às mensagens transacionais, bem como a discriminação de erros. Você pode clicar em um tipo de erro para exibir seus detalhes. Esse relatório, destinado aos administradores técnicos, também pode ser acessado por meio da guia **[!UICONTROL Monitoring]** na instância de controle.
 
 ![](assets/mc_reports_1.png)
 
