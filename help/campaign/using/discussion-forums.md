@@ -6,9 +6,9 @@ description: Fóruns de discussão
 audience: campaign
 content-type: reference
 topic-tags: tasks--resources-and-budgets
-translation-type: ht
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
-workflow-type: ht
+translation-type: tm+mt
+source-git-commit: 693e38477b318ee44e0373a04d8524ddf128fe36
+workflow-type: tm+mt
 source-wordcount: '723'
 ht-degree: 100%
 
@@ -95,7 +95,7 @@ A inscrição de um fórum permite seguir as discussões. Inscritos receberão u
 
    ![](assets/platform_dashboard_operator_subscr_forums.png)
 
-   Para obter mais informações sobre painéis pessoais, consulte [esta seção](../../platform/using/access-management.md#operators).
+   Para obter mais informações sobre painéis pessoais, consulte [esta seção](../../platform/using/access-management-operators.md).
 
 * Para ver quem se inscreveu em um fórum, clique no link **[!UICONTROL List of subscribers to this discussion forum]** acima da lista de mensagens.
 
