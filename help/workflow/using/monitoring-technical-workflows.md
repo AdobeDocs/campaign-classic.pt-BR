@@ -7,10 +7,10 @@ audience: workflow
 content-type: reference
 topic-tags: use-cases
 translation-type: tm+mt
-source-git-commit: a9d58e25ab17baaabf4ff8c109b53e83c7d93218
+source-git-commit: 278dec636373b5ccd3b631bd29607ebe894d53c3
 workflow-type: tm+mt
 source-wordcount: '518'
-ht-degree: 100%
+ht-degree: 98%
 
 ---
 
@@ -23,7 +23,7 @@ Outras maneiras de monitorar os diferentes processos do Campaign são apresentad
 
 ## Painel de monitoramento de instância {#instance-monitoring-dashboard}
 
-O painel de monitoramento da instância pode ser acessado por meio do universo **[!UICONTROL Monitoring]**.
+O painel de monitoramento da instância pode ser acessado por meio da guia **[!UICONTROL Monitoring]** .
 
 ![](assets/monitoring_technical_workflows1.png)
 
