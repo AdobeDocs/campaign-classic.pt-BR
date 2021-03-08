@@ -7,10 +7,10 @@ audience: reporting
 content-type: reference
 topic-tags: creating-new-reports
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: 278dec636373b5ccd3b631bd29607ebe894d53c3
 workflow-type: tm+mt
-source-wordcount: '755'
-ht-degree: 100%
+source-wordcount: '754'
+ht-degree: 95%
 
 ---
 
@@ -29,7 +29,7 @@ O acesso ao relatório pode ser limitado a um contexto específico ou a um espa�
 
 * **[!UICONTROL Single selection]**: o relatório só pode ser acessado quando uma entidade específica for selecionada.
 * **[!UICONTROL Multiple selection]**: o relatório é acessado quando várias entidades são selecionadas.
-* **[!UICONTROL Global]**: o relatório é acessado através da lista de relatórios disponíveis no universo Reports.
+* **[!UICONTROL Global]** : o relatório é acessado através da lista de relatórios disponíveis na  **[!UICONTROL Reports]** guia .
 
 ### Sequência de exibição {#display-sequence}
 
@@ -63,7 +63,7 @@ O relatório também pode ser compartilhado com operadores ou grupos de operador
 
 ### Definição das opções de filtro {#defining-the-filtering-options}
 
-O universo **[!UICONTROL Reports]** exibe todos os relatórios disponíveis na plataforma e para os quais o operador conectado tem direito de acesso.
+A guia **[!UICONTROL Reports]** exibe todos os relatórios disponíveis na plataforma e para os quais o operador conectado tem direito de acesso.
 
 Por padrão, eles são classificados por relevância, mas é possível aplicar outros tipos de filtros: alfabético, por idade, etc.
 
