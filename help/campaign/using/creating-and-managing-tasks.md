@@ -6,11 +6,11 @@ description: Criar e gerenciar tarefas
 audience: campaign
 content-type: reference
 topic-tags: tasks--resources-and-budgets
-translation-type: ht
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
-workflow-type: ht
-source-wordcount: '3733'
-ht-degree: 100%
+translation-type: tm+mt
+source-git-commit: 278dec636373b5ccd3b631bd29607ebe894d53c3
+workflow-type: tm+mt
+source-wordcount: '3732'
+ht-degree: 99%
 
 ---
 
@@ -25,7 +25,7 @@ As tarefas podem ser criadas, exibidas e monitoradas a partir da lista de tarefa
 
 As tarefas são anexadas à campanha e podem ter dependências, ou seja, tarefas associadas. Cada tarefa tem um status, prioridade, carga estimada e custos relacionados.
 
-Todas as tarefas são agrupadas em uma lista acessível pelo universo **Campaigns** . Para obter mais informações, consulte [Acesso a tarefas](#accessing-tasks).
+Todas as tarefas são agrupadas em uma lista acessível por meio da guia **Campaigns**. Para obter mais informações, consulte [Acesso a tarefas](#accessing-tasks).
 
 Elas podem ser exibidas na agenda do programa ao qual pertencem.
 
@@ -35,7 +35,7 @@ Elas podem ser exibidas na agenda do programa ao qual pertencem.
 
 ### Exibir tarefas {#displaying-tasks}
 
-As tarefas são exibidas na lista de tarefas acessível por meio do universo **[!UICONTROL Campaigns]**.
+As tarefas são exibidas na lista de tarefas acessível por meio da guia **[!UICONTROL Campaigns]** .
 
 ![](assets/s_ncs_user_task_edit_view.png)
 
@@ -57,7 +57,7 @@ Clique em uma tarefa para editá-la.
 
 ## Criar uma nova tarefa {#creating-a-new-task}
 
-Para criar uma tarefa, clique no link **[!UICONTROL Tasks]** no universo Campaigns e selecione **[!UICONTROL Create]**.
+Para criar uma tarefa, clique no link **[!UICONTROL Tasks]** na guia **[!UICONTROL Campaigns]** e selecione **[!UICONTROL Create]**.
 
 ![](assets/s_ncs_user_task_create_new.png)
 
@@ -436,6 +436,7 @@ Uma tarefa pode ser: **[!UICONTROL Scheduled]**, **[!UICONTROL In progress]**, *
 >
 >* O status da tarefa é atualizado automaticamente.
 >* Mesmo que o período de validade seja concluído, as tarefas que não foram fechadas ainda aparecerão na lista de tarefas em andamento. Um aviso notifica os operadores que a tarefa está atrasada.
+
 >
 
 
