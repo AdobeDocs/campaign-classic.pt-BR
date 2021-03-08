@@ -7,10 +7,10 @@ audience: social
 content-type: reference
 topic-tags: configuration
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: 278dec636373b5ccd3b631bd29607ebe894d53c3
 workflow-type: tm+mt
 source-wordcount: '710'
-ht-degree: 100%
+ht-degree: 98%
 
 ---
 
@@ -69,7 +69,7 @@ Esta etapa requer acesso simultâneo ao console do Adobe Campaign e um navegador
 
    ![](assets/social_twitter_service_002.png)
 
-* **Adobe Campaign**: vá para o universo **[!UICONTROL Profiles and targets]**, clique em **[!UICONTROL Services and Subscriptions]** e clique em **[!UICONTROL Create]**.
+* **Adobe Campaign**: vá para a  **[!UICONTROL Profiles and targets]** guia , clique no  **[!UICONTROL Services and Subscriptions]** link e clique no  **[!UICONTROL Create]** botão .
 
    ![](assets/social_twitter_service_007.png)
 
