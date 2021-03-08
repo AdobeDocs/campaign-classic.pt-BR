@@ -6,11 +6,11 @@ description: Acesso às campanhas de marketing
 audience: campaign
 content-type: reference
 topic-tags: about-marketing-campaigns
-translation-type: ht
-source-git-commit: c625b4109e2cb47446331cd009ff9827c8267c93
-workflow-type: ht
-source-wordcount: '1046'
-ht-degree: 100%
+translation-type: tm+mt
+source-git-commit: 278dec636373b5ccd3b631bd29607ebe894d53c3
+workflow-type: tm+mt
+source-wordcount: '1045'
+ht-degree: 92%
 
 ---
 
@@ -27,11 +27,11 @@ Depois de se conectar ao Adobe Campaign, você verá a home page.
 
 ![](assets/campaign_global_view.png)
 
-Clique nos links na barra de navegação para acessar os vários universos.
+Clique nos links na barra de navegação para acessar os vários recursos.
 
-Os elementos da campanha são encontrados no universo **[!UICONTROL Campaigns]**: é possível ter uma visão geral dos programas e das campanhas de marketing, bem como as subdefinições. Um programa de marketing é composto por campanhas, que são compostas por deliveries, tarefas, recursos vinculados etc. No contexto de gestão de campanhas de marketing usando o Campaign, as informações relacionadas às remessas, orçamentos, revisores e documentos vinculados são encontradas nas campanhas.
+Os elementos da campanha são encontrados na guia **[!UICONTROL Campaigns]** : aqui você pode ver uma visão geral dos programas e campanhas de marketing, bem como suas subdefinições. Um programa de marketing é composto por campanhas, que são compostas por deliveries, tarefas, recursos vinculados etc. No contexto de gestão de campanhas de marketing usando o Campaign, as informações relacionadas às remessas, orçamentos, revisores e documentos vinculados são encontradas nas campanhas.
 
-O bloco de navegação do universo **[!UICONTROL Campaigns]** oferece várias entradas, dependendo dos módulos instalados na instância. Como exemplo, você pode acessar:
+O bloco **[!UICONTROL Browsing]** da guia **[!UICONTROL Campaigns]** oferece várias entradas, dependendo dos módulos instalados na instância. Como exemplo, você pode acessar:
 
 * **Calendário da campanha**: calendário de planos, programas de marketing, remessas e campanhas. Consulte [Calendário da campanha](#campaign-calendar).
 * **Campanhas**: acesso às campanhas contidas em todos os programas de marketing.
@@ -46,7 +46,7 @@ O bloco de navegação do universo **[!UICONTROL Campaigns]** oferece várias en
 
 ### Calendário da campanha {#campaign-calendar}
 
-Cada campanha pertence a um programa que, por sua vez, pertence a um plano. Planos, programas e campanhas são acessados por meio do menu **[!UICONTROL Campaign calendar]** no universo **Campanhas**.
+Cada campanha pertence a um programa que, por sua vez, pertence a um plano. Planos, programas e campanhas são acessados por meio do menu **[!UICONTROL Campaign calendar]** na guia **Campanhas**.
 
 Para editar um plano, programa, campanha ou delivery, clique no nome no calendário e clique em **[!UICONTROL Open...]**. Ele é exibido em uma nova guia, conforme mostrado abaixo:
 
@@ -95,7 +95,7 @@ As campanhas podem ser acessadas por meio do calendário da campanha, da guia **
    ![](assets/campaign_op_edit.png)
 
 1. Na guia **[!UICONTROL Schedule]** do programa, o modo de edição é igual ao que pode ser acessado pelo calendário da campanha.
-1. Através do link **[!UICONTROL Campaigns]** do universo **[!UICONTROL Campaigns]**, clique no nome da campanha que deseja editar.
+1. Através do link **[!UICONTROL Campaigns]** da guia **[!UICONTROL Campaigns]**, clique no nome da campanha que deseja editar.
 
    ![](assets/campaign_edit_from_list.png)
 
