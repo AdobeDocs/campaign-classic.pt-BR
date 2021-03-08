@@ -7,10 +7,10 @@ audience: message-center
 content-type: reference
 topic-tags: instance-configuration
 translation-type: tm+mt
-source-git-commit: 5bc6c8a824929c6a61cf562fc961e5bdd1867837
+source-git-commit: 693e38477b318ee44e0373a04d8524ddf128fe36
 workflow-type: tm+mt
-source-wordcount: '998'
-ht-degree: 100%
+source-wordcount: '999'
+ht-degree: 98%
 
 ---
 
@@ -21,6 +21,7 @@ ht-degree: 100%
 >
 >* Extensões de schema feitas nos schemas usados pelos [workflows técnicos do Centro de Mensagens](../../message-center/using/technical-workflows.md) em instâncias de controle ou de execução precisam ser duplicadas nas outras instâncias usadas pelo módulo de mensagens transacionais do Adobe Campaign.
 >* A instância de controle e a instância de execução devem ser instaladas em máquinas diferentes. Elas não podem compartilhar a mesma instância do Campaign.
+
 >
 
 
@@ -137,11 +138,11 @@ Na árvore de todas as instâncias de execução, crie uma pasta por operador (*
 
 Para usar várias instâncias de controle, essa configuração deve ser executada em TODAS as instâncias de execução.
 
-1. Crie uma pasta por operador no nó **[!UICONTROL Administration > Production > Message Center]**: **Folder 1** e **Folder 2**. Para obter mais informações sobre criação de pastas e visualizações, consulte [Plataforma](../../platform/using/access-management.md#folders-and-views).
+1. Crie uma pasta por operador no nó **[!UICONTROL Administration > Production > Message Center]**: **Folder 1** e **Folder 2**. Para obter mais informações sobre criação de pastas e visualizações, consulte [esta página](../../platform/using/access-management-folders.md).
 
    ![](assets/messagecenter_multi_control_3.png)
 
-1. Crie os operadores **mc1** e **mc2** duplicando o operador do Centro de Mensagens fornecido por padrão (**mc**). Para obter mais informações sobre criação de operadores, consulte [esta seção](../../platform/using/access-management.md#operators).
+1. Crie os operadores **mc1** e **mc2** duplicando o operador do Centro de Mensagens fornecido por padrão (**mc**). Para obter mais informações sobre criação de operadores, consulte [esta seção](../../platform/using/access-management-operators.md).
 
    ![](assets/messagecenter_multi_control_4.png)
 
