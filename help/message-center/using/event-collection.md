@@ -7,10 +7,10 @@ audience: message-center
 content-type: reference
 topic-tags: event-processing
 translation-type: tm+mt
-source-git-commit: d1130691e40c0cac183db37a4c0b410d00bb696a
+source-git-commit: 693e38477b318ee44e0373a04d8524ddf128fe36
 workflow-type: tm+mt
-source-wordcount: '137'
-ht-degree: 100%
+source-wordcount: '138'
+ht-degree: 90%
 
 ---
 
@@ -28,4 +28,4 @@ Depois que são coletados, os eventos são divididos, por workflows técnicos, e
 
 >[!NOTE]
 >
->No instância de execução, as pastas **[!UICONTROL Real time events]** ou **[!UICONTROL Batch events]** não devem ser definidas como visualizações, pois isso pode levar a problemas de [direito de acesso](../../platform/using/access-management.md#about-permissions). Para obter mais informações sobre como configurar uma pasta como uma visualização, consulte [Sobre visualizações](../../platform/using/access-management.md#about-views).
+>No instância de execução, as pastas **[!UICONTROL Real time events]** ou **[!UICONTROL Batch events]** não devem ser definidas como visualizações, pois isso pode levar a problemas de direito de acesso. Para obter mais informações sobre como configurar uma pasta como visualização, consulte [esta seção](../../platform/using/access-management-folders.md).
