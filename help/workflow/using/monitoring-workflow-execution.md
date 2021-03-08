@@ -7,7 +7,7 @@ audience: workflow
 content-type: reference
 topic-tags: use-cases
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: 693e38477b318ee44e0373a04d8524ddf128fe36
 workflow-type: tm+mt
 source-wordcount: '1998'
 ht-degree: 100%
@@ -271,7 +271,7 @@ Para fazer isso:
 
 1. Clique com o botão direito do mouse na pasta onde deseja adicionar a exibição.
 1. Em **[!UICONTROL Add new folder]** / **[!UICONTROL Administration]**, selecione a exibição que deseja adicionar.
-1. Ao adicionar a pasta à árvore, certifique-se de configurá-la como uma exibição, para que ela exiba todos os workflows, qualquer que seja a pasta de origem. Para obter mais informações sobre como configurar as exibições, consulte [esta seção](../../platform/using/access-management.md#adding-folders-and-creating-views).
+1. Ao adicionar a pasta à árvore, certifique-se de configurá-la como uma exibição, para que ela exiba todos os workflows, qualquer que seja a pasta de origem. Para obter mais informações sobre como configurar as exibições, consulte [esta seção](../../platform/using/access-management-folders.md).
 
 Além dessas exibições, é possível configurar as pastas de filtros que permitem filtrar a lista de workflows de acordo com o status de execução. Para fazer isso:
 
