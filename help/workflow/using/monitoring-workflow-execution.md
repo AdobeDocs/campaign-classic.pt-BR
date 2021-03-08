@@ -7,10 +7,10 @@ audience: workflow
 content-type: reference
 topic-tags: use-cases
 translation-type: tm+mt
-source-git-commit: 693e38477b318ee44e0373a04d8524ddf128fe36
+source-git-commit: 278dec636373b5ccd3b631bd29607ebe894d53c3
 workflow-type: tm+mt
-source-wordcount: '1998'
-ht-degree: 100%
+source-wordcount: '2000'
+ht-degree: 98%
 
 ---
 
@@ -111,7 +111,7 @@ As tabelas de trabalho do workflow é excluído automaticamente quando o workflo
 
 ## Gestão de erros {#managing-errors}
 
-Quando ocorre um erro, o workflow é pausado e a atividade está sendo executada quando a ocorrência do erro pisca em vermelho. Na visão geral do workflow (universo **[!UICONTROL Monitoring]** > link **[!UICONTROL Workflows]**), é possível exibi-los apenas com erros, como mostrado abaixo.
+Quando ocorre um erro, o workflow é pausado e a atividade está sendo executada quando a ocorrência do erro pisca em vermelho. Na visão geral do workflow, no link **[!UICONTROL Monitoring]** - **[!UICONTROL Workflows]** , é possível exibir workflows somente com erros, conforme mostrado abaixo.
 
 ![](assets/wf-global-view_filter_only_errors.png)
 
@@ -169,7 +169,7 @@ Se possível, recomendamos reiniciar completamente o workflow após realizar as 
 
 A página **[!UICONTROL Instance supervision]** permite visualizar a atividade do servidor do Adobe Campaign e exibir a lista de workflows e deliveries com erros.
 
-Para acessar essa página, acesse o universo **[!UICONTROL Monitoring]** e clique no link **[!UICONTROL General view]**.
+Para acessar essa página, vá para a guia **[!UICONTROL Monitoring]** e clique no link **[!UICONTROL General view]**.
 
 ![](assets/wf-monitoring_from-homepage.png)
 
