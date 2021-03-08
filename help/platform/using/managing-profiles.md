@@ -7,10 +7,10 @@ audience: platform
 content-type: reference
 topic-tags: profile-management
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: 693e38477b318ee44e0373a04d8524ddf128fe36
 workflow-type: tm+mt
-source-wordcount: '228'
-ht-degree: 100%
+source-wordcount: '229'
+ht-degree: 97%
 
 ---
 
@@ -27,7 +27,7 @@ Cada nó coincide com uma pasta. Os dados de cada pasta devem ser considerados p
 
 >[!NOTE]
 >
->Para exibir a lista de todos os destinatários no banco de dados, crie uma visualização. Consulte [Pastas e exibições](../../platform/using/access-management.md#folders-and-views).
+>Para exibir a lista de todos os destinatários no banco de dados, crie uma visualização. Saiba mais em [Pastas e exibições](../../platform/using/access-management-folders.md).
 
 ## Movimentação de destinatários {#moving-recipients}
 
