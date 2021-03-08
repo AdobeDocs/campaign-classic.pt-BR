@@ -7,10 +7,10 @@ audience: workflow
 content-type: reference
 topic-tags: -general-operation
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: 278dec636373b5ccd3b631bd29607ebe894d53c3
 workflow-type: tm+mt
 source-wordcount: '1609'
-ht-degree: 100%
+ht-degree: 99%
 
 ---
 
@@ -120,7 +120,7 @@ Nas propriedades do fluxo de trabalho, selecione um grupo supervisor, seja o gru
 
 Antes de começar a construir um workflow, lembre-se de definir supervisores de workflow. Eles serão notificados por email em caso de erro. Para obter mais informações, consulte [Gerenciando erros](../../workflow/using/monitoring-workflow-execution.md#managing-errors).
 
-Verifique regularmente o universo **[!UICONTROL Monitoring]** para visualizar o status geral dos fluxos de trabalho ativos. Para obter mais informações, consulte [Supervisão de instância](../../workflow/using/monitoring-workflow-execution.md#instance-supervision).
+Verifique regularmente a guia **[!UICONTROL Monitoring]** para visualizar o status geral dos workflows ativos. Para obter mais informações, consulte [Supervisão de instância](../../workflow/using/monitoring-workflow-execution.md#instance-supervision).
 
 O Workflow HeatMap permite aos administradores da plataforma Adobe Campaign monitorarem a carga na instância e planejarem os workflows correspondentes. Para obter mais informações, consulte [Monitoramento de workflow](../../workflow/using/heatmap.md).
 
