@@ -7,10 +7,10 @@ audience: reporting
 content-type: reference
 topic-tags: designing-reports-with-cubes
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: 278dec636373b5ccd3b631bd29607ebe894d53c3
 workflow-type: tm+mt
 source-wordcount: '718'
-ht-degree: 100%
+ht-degree: 98%
 
 ---
 
@@ -121,7 +121,7 @@ Depois que o cubo é configurado, ele pode ser usado como um template para criar
 
 Para fazer isso:
 
-1. Clique no botão **[!UICONTROL Create]** do universo **[!UICONTROL Reports]** e selecione o cubo que acabou de criar.
+1. Clique no botão **[!UICONTROL Create]** da guia **[!UICONTROL Reports]** e selecione o cubo que acabou de criar.
 
    ![](assets/s_advuser_cube_wz_14.png)
 
