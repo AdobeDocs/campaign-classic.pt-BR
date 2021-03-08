@@ -7,10 +7,10 @@ audience: platform
 content-type: reference
 topic-tags: starting-with-adobe-campaign
 translation-type: tm+mt
-source-git-commit: 450889f845b7c5adad1085d7eba70e23030e6609
+source-git-commit: 278dec636373b5ccd3b631bd29607ebe894d53c3
 workflow-type: tm+mt
-source-wordcount: '809'
-ht-degree: 100%
+source-wordcount: '797'
+ht-degree: 97%
 
 ---
 
@@ -74,7 +74,7 @@ Nos casos em que é necessário o consentimento para determinadas atividades de 
 
 Pode até haver instâncias em que certos consentimentos precisem ser atualizados para que possam continuar usando os dados a partir de agora.
 
-Em vez de considerar esses requisitos de consentimento aprimorados como um risco para o universo mercadológico, os profissionais de marketing poderiam adotá-los como um verdadeiro indicador de engajamento e lealdade da marca, assim como da satisfação e confiança do cliente.
+Os profissionais de marketing devem adotar esses requisitos de consentimento aprimorados como um verdadeiro indicador de envolvimento e fidelidade da marca, bem como de satisfação e confiança do cliente.
 
 ## Gerenciar o consentimento {#manage-consent}
 
