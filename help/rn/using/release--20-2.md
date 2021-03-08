@@ -7,7 +7,7 @@ audience: rns
 content-type: reference
 topic-tags: campaign-release-notes, latest-release-notes
 translation-type: tm+mt
-source-git-commit: 571821ce775a7c354d01404d14faee8d2a21c170
+source-git-commit: 693e38477b318ee44e0373a04d8524ddf128fe36
 workflow-type: tm+mt
 source-wordcount: '2556'
 ht-degree: 98%
@@ -225,7 +225,7 @@ Saiba mais na [matriz de compatibilidade do Campaign](https://helpx.adobe.com/br
 
 * Você não pode mais usar sua própria conta Litmus para provisionar e usar a renderização da caixa de entrada no Adobe Campaign. [Saiba mais](../../delivery/using/inbox-rendering.md).
 
-* Para distinguir melhor as visualizações das pastas, a cor dos nomes das visualizações foi alterada de azul escuro para ciano escuro. [Leia mais](../../platform/using/access-management.md#about-views)
+* Para distinguir melhor as visualizações das pastas, a cor dos nomes das visualizações foi alterada de azul escuro para ciano escuro. [Leia mais](../../platform/using/access-management-folders.md)
 
 * O Campaign Classic agora pode ser conectado a contas do Microsoft Dynamics CRM hospedadas nas regiões do Reino Unido, Índia e Canadá. Isso se aplica aos tipos de implantação do Office 365 e no local (Dynamics 2015).
 
