@@ -6,11 +6,11 @@ description: Criar uma campanha local
 audience: campaign
 content-type: reference
 topic-tags: distributed-marketing
-translation-type: ht
-source-git-commit: c625b4109e2cb47446331cd009ff9827c8267c93
-workflow-type: ht
-source-wordcount: '1567'
-ht-degree: 100%
+translation-type: tm+mt
+source-git-commit: 278dec636373b5ccd3b631bd29607ebe894d53c3
+workflow-type: tm+mt
+source-wordcount: '1564'
+ht-degree: 96%
 
 ---
 
@@ -151,7 +151,7 @@ Localize o HTML do seu delivery. Por exemplo, no campo **[!UICONTROL Delivery > 
 
 ![](assets/mkt_dist_local_campaign_localize_html.png)
 
-Salve seu template de campanha. Agora é possível usá-lo na exibição **Campaign packages** no universo **Campaigns**, clicando no botão **[!UICONTROL Create]**.
+Salve seu template de campanha. Agora você pode usá-lo na visualização **[!UICONTROL Campaign packages]** na guia **[!UICONTROL Campaigns]** clicando no botão **[!UICONTROL Create]**.
 
 ![](assets/mkt_distr_9.png)
 
@@ -270,7 +270,7 @@ Para solicitar uma campanha:
 
    Para obter mais informações, consulte a seção [Approval process](#approval-process).
 
-1. O operador local é, então, notificado de que a campanha está disponível: a disponibilidade da campanha pode ser encontrada na lista de pacotes de campanha no universo **Campaigns.** A campanha pode ser usada. Para obter mais informações, consulte [Como acessar campanhas](../../campaign/using/accessing-campaigns.md).
+1. O operador local é então notificado de que a campanha está disponível: a disponibilidade da campanha pode ser encontrada na lista de pacotes de campanha dentro da guia **Campaigns**. A campanha pode ser usada. Para obter mais informações, consulte [Como acessar campanhas](../../campaign/using/accessing-campaigns.md).
 
    A opção **[!UICONTROL Start targeting with order approval]** permite que a entidade local execute a campanha assim que o pedido for aprovado.
 
@@ -280,7 +280,7 @@ Para solicitar uma campanha:
 
 Para confirmar um pedido de campanha, a entidade central deve aprová-lo.
 
-A visão geral dos **[!UICONTROL Campaign orders]**, acessada por meio do universo **Campaigns**, permite a visualização do status dos pedidos de campanha e a aprovação deles.
+A visão geral **[!UICONTROL Campaign orders]** , acessada por meio da guia **Campaigns** , permite a visualização do status dos pedidos de campanha e a aprovação deles.
 
 >[!NOTE]
 >
