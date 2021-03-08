@@ -6,11 +6,11 @@ description: Provedores, estoques e orçamentos
 audience: campaign
 content-type: reference
 topic-tags: orchestrate-campaigns
-translation-type: ht
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
-workflow-type: ht
+translation-type: tm+mt
+source-git-commit: 278dec636373b5ccd3b631bd29607ebe894d53c3
+workflow-type: tm+mt
 source-wordcount: '1902'
-ht-degree: 100%
+ht-degree: 99%
 
 ---
 
@@ -206,7 +206,7 @@ O procedimento para configurar o estoque e o gerenciamento de pedidos no Adobe C
 
 ### Gerenciamento de estoque {#stock-management}
 
-O Adobe Campaign pode alertar um grupo de operadores se o estoque tiver executado ou atingir um limite mínimo. Os níveis de estoque são acessíveis por meio do link **[!UICONTROL Stocks]** do universo **[!UICONTROL Campaigns]** através do link **[!UICONTROL Other choices]** da área de navegação.
+O Adobe Campaign pode alertar um grupo de operadores se o estoque tiver executado ou atingir um limite mínimo. Os níveis de estoque são acessíveis por meio do link **[!UICONTROL Stocks]** da guia **[!UICONTROL Campaigns]** através do link **[!UICONTROL Other choices]** da área de navegação.
 
 ![](assets/s_ncs_user_stocks_view.png)
 
