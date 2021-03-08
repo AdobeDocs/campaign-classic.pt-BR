@@ -7,10 +7,10 @@ audience: platform
 content-type: reference
 topic-tags: importing-and-exporting-data
 translation-type: tm+mt
-source-git-commit: ba460d8347c987291681641a1be208027acf1d2f
+source-git-commit: 693e38477b318ee44e0373a04d8524ddf128fe36
 workflow-type: tm+mt
-source-wordcount: '2958'
-ht-degree: 100%
+source-wordcount: '2960'
+ht-degree: 99%
 
 ---
 
@@ -291,7 +291,7 @@ A próxima etapa do assistente de importação permite selecionar ou criar a pas
 
       >[!NOTE]
       >
-      >A pasta padrão de um operador é a primeira pasta que o operador tem acesso de gravação. Consulte [Gerenciamento de acesso a pastas](../../platform/using/access-management.md#folder-access-management).
+      >A pasta padrão de um operador é a primeira pasta que o operador tem acesso de gravação. Saiba mais em [Gerenciamento de acesso a pastas](../../platform/using/access-management-folders.md).
 
       Para selecionar a pasta de importação, clique na seta à direita do campo **[!UICONTROL Folder]** e selecione a pasta correspondente. Você também pode usar o ícone **[!UICONTROL Select link]** para exibir a árvore em uma nova janela ou criar uma nova pasta.
 
