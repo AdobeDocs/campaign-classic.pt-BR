@@ -9,9 +9,9 @@ solution: Campaign Classic
 sub-product: Adobe Campaign Classic
 type: Documentação
 translation-type: tm+mt
-source-git-commit: 87028ec81a8cae6793d45d7c840511b59cd0287c
+source-git-commit: 693e38477b318ee44e0373a04d8524ddf128fe36
 workflow-type: tm+mt
-source-wordcount: '2391'
+source-wordcount: '2412'
 ht-degree: 59%
 
 ---
@@ -94,7 +94,11 @@ ht-degree: 59%
       + [Etapas para criar um query](platform/using/steps-to-create-a-query.md)
       + [Definir condições de filtro](platform/using/defining-filter-conditions.md)
    + Permissões {#permissions}
-      + [Gerenciamento de acesso](platform/using/access-management.md)
+      + [Introdução a permissões](platform/using/access-management.md)
+      + [Criar e gerenciar operadores](platform/using/access-management-operators.md)
+      + [Criar e gerenciar grupos](platform/using/access-management-groups.md)
+      + [Usar direitos nomeados para configurar permissões](platform/using/access-management-named-rights.md)
+      + [Gerenciar acesso a pastas](platform/using/access-management-folders.md)
    + Pacotes de dados e enumerações {#administration-basics}
       + [Pacotes de dados](platform/using/working-with-data-packages.md)
       + [Enumerações](platform/using/managing-enumerations.md)
