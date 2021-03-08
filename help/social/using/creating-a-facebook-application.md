@@ -7,10 +7,10 @@ audience: social
 content-type: reference
 topic-tags: configuration
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: 278dec636373b5ccd3b631bd29607ebe894d53c3
 workflow-type: tm+mt
 source-wordcount: '983'
-ht-degree: 100%
+ht-degree: 98%
 
 ---
 
@@ -109,7 +109,7 @@ As etapas de configuração são as seguintes:
 
 O aplicativo do Facebook do Adobe Campaign permite exibir o conteúdo personalizado no seu aplicativo do Facebook. Para cada aplicativo do Facebook, é necessário criar um aplicativo Web no Adobe Campaign. Para criar um aplicativo Web do Facebook, proceda da seguinte maneira:
 
-1. Vá para o universo **[!UICONTROL Social networks]**, clique no link **[!UICONTROL Applications]** e no botão **[!UICONTROL Create]**.
+1. Vá para a guia **[!UICONTROL Social networks]**, clique no link **[!UICONTROL Applications]** e, em seguida, no botão **[!UICONTROL Create]**.
 
    ![](assets/social_webapp_001.png)
 
