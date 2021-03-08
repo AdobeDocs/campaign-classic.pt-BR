@@ -7,10 +7,10 @@ audience: delivery
 content-type: reference
 topic-tags: subscriptions-and-referrals
 translation-type: tm+mt
-source-git-commit: ba460d8347c987291681641a1be208027acf1d2f
+source-git-commit: 278dec636373b5ccd3b631bd29607ebe894d53c3
 workflow-type: tm+mt
-source-wordcount: '1099'
-ht-degree: 100%
+source-wordcount: '1098'
+ht-degree: 98%
 
 ---
 
@@ -44,7 +44,7 @@ Há três modos de serviço de subscrição/unsubscription:
 
 É possível criar e gerenciar subscrições de serviços de informações com mensagens de confirmação associadas ou entregas automáticas aos assinantes.
 
-Para acessar o mapa de serviços de informações, acesse o universo **[!UICONTROL Profiles and Targets]** e clique no link **[!UICONTROL Services and Subscriptions]**.
+Para acessar o mapa de serviços de informações, abra a guia **[!UICONTROL Profiles and Targets]** e clique no link **[!UICONTROL Services and Subscriptions]**.
 
 ![](assets/s_ncs_user_services_new.png)
 
