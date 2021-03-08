@@ -7,10 +7,10 @@ audience: campaign
 content-type: reference
 topic-tags: orchestrate-campaigns
 translation-type: tm+mt
-source-git-commit: 87028ec81a8cae6793d45d7c840511b59cd0287c
+source-git-commit: 278dec636373b5ccd3b631bd29607ebe894d53c3
 workflow-type: tm+mt
 source-wordcount: '755'
-ht-degree: 69%
+ht-degree: 67%
 
 ---
 
@@ -98,7 +98,7 @@ Uma estrutura pode conter itens e campos de personalização, recursos e ofertas
 
    ![](assets/s_ncs_user_op_add_composition_field_button.png)
 
-* Os recursos são de marketing, gerados no painel de recursos de marketing acessado por meio do link **[!UICONTROL Resources]** do universo **[!UICONTROL Campaigns]**.
+* Os recursos são de marketing, gerados no painel de recursos de marketing acessado por meio do link **[!UICONTROL Resources]** da guia **[!UICONTROL Campaigns]**.
 
    ![](assets/s_ncs_user_mkg_resource_ovv.png)
 
