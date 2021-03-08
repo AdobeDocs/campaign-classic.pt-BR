@@ -7,7 +7,7 @@ audience: workflow
 content-type: reference
 topic-tags: action-activities
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: 693e38477b318ee44e0373a04d8524ddf128fe36
 workflow-type: tm+mt
 source-wordcount: '394'
 ht-degree: 100%
@@ -25,7 +25,7 @@ Antes de configurar a atividade, verifique se os pré-requisitos a seguir estão
 
 * A atividade está disponível somente para fontes de dados remotas. O pacote **[!UICONTROL FDA]** (Federated Data Access) deve, portanto, ser instalado em sua instância. [Saiba mais](../../installation/using/about-fda.md).
 * O esquema de saída deve existir no banco de dados e estar vinculado a um banco de dados do FDA. [Saiba mais](../../configuration/using/about-schema-reference.md).
-* O operador que executa o fluxo de trabalho deve ter o item **[!UICONTROL USE SQL DATA MANAGEMENT ACTIVITY (useSqlDmActivity)]** nomeado corretamente. [Saiba mais](../../platform/using/access-management.md#named-rights).
+* O operador que executa o fluxo de trabalho deve ter o item **[!UICONTROL USE SQL DATA MANAGEMENT ACTIVITY (useSqlDmActivity)]** nomeado corretamente. [Saiba mais](../../platform/using/access-management-named-rights.md).
 
 ## Configurando a atividade de gestão de dados SQL {#configuring-the-sql-data-management-activity}
 
