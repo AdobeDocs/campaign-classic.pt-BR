@@ -7,17 +7,17 @@ audience: platform
 content-type: reference
 topic-tags: administration-basics
 translation-type: tm+mt
-source-git-commit: 693e38477b318ee44e0373a04d8524ddf128fe36
+source-git-commit: d6993725ed4060f2affce98c4a8a5211bda03bdf
 workflow-type: tm+mt
-source-wordcount: '749'
-ht-degree: 96%
+source-wordcount: '747'
+ht-degree: 92%
 
 ---
 
 
 # Gerenciar acesso a pastas{#folder-access-management}
 
-Cada pasta da árvore tem direitos de acesso de leitura, gravação e exclusão atribuídos a ela. Para acessar um arquivo, um operador ou grupo de operadores deve ter pelo menos acesso de leitura a ele.
+Cada pasta da árvore de navegação do Explorer tem direitos de acesso de leitura, gravação e exclusão anexados a ela. Para acessar um arquivo, um operador ou grupo de operadores deve ter pelo menos acesso de leitura a ele.
 
 ## Permissões em uma pasta
 
@@ -71,7 +71,7 @@ Pastas são nós na árvore do Adobe Campaign. Esses nós são criados clicando 
 
 ![](assets/s_ncs_user_add_folder_in_tree.png)
 
-É possível conceder permissões a essas pastas como em todas as outras pastas da árvore. Consulte [Gerenciamento de acesso a pastas](#folder-access-management).
+Você pode personalizar a árvore de navegação do Explorer. Saiba mais sobre as etapas de configuração e as práticas recomendadas [nesta seção](adobe-campaign-workspace.md).
 
 ### Sobre visualizações {#about-views}
 
