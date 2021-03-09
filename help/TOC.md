@@ -9,10 +9,10 @@ solution: Campaign Classic
 sub-product: Adobe Campaign Classic
 type: Documentação
 translation-type: tm+mt
-source-git-commit: 693e38477b318ee44e0373a04d8524ddf128fe36
+source-git-commit: 60b4565ec6dc3e7ffc4ffcff69fbcca9fa870614
 workflow-type: tm+mt
-source-wordcount: '2412'
-ht-degree: 59%
+source-wordcount: '2457'
+ht-degree: 58%
 
 ---
 
@@ -42,7 +42,9 @@ ht-degree: 59%
    + Comece com o Adobe Campaign {#starting-with-adobe-campaign}
       + [Introdução ao Adobe Campaign Classic](platform/using/about-adobe-campaign-classic.md)
       + [Iniciar o Adobe Campaign](platform/using/launching-adobe-campaign.md)
-      + [Área de trabalho do Adobe Campaign](platform/using/adobe-campaign-workspace.md)
+      + Área de trabalho do Adobe Campaign{#campaign-workspace}
+         + [Introdução à interface do usuário do Campaign](platform/using/adobe-campaign-workspace.md)
+         + [Procurar e personalizar listas](platform/using/adobe-campaign-ui-lists.md)
       + Perguntas frequentes {#faq}
          + [ principais perguntas](platform/using/common-questions.md)
          + [Conceitos globais](platform/using/faq-key-concepts.md)
@@ -55,7 +57,7 @@ ht-degree: 59%
          + [Configuração](platform/using/faq-campaign-config.md)
          + [Relatórios](platform/using/faq-reporting.md)
          + [Desenvolvimento](platform/using/faq-developers.md)
-      + [Tutoriais](platform/using/tutorials.md)
+         + [Tutoriais](platform/using/tutorials.md)
    + Privacidade {#privacy}
       + [Privacidade e consentimento](platform/using/privacy-and-recommendations.md)
       + [Gerenciamento de privacidade](platform/using/privacy-management.md)
@@ -140,6 +142,7 @@ ht-degree: 59%
       + [Canal SMS](delivery/using/sms-channel.md)
       + [Protocolo e configurações do conector SMS](delivery/using/sms-protocol.md)
       + [Solução de problemas de SMS](delivery/using/troubleshooting-sms.md)
+      + [Migrar para o conector SMPP genérico estendido](delivery/using/unsupported-connector-migration.md)
    + [Enviar mensagens LINE](delivery/using/line-channel.md)
    + Enviar notificações por push {#sending-push-notifications}
       + [Sobre o canal de aplicativo móvel](delivery/using/about-mobile-app-channel.md)
@@ -674,6 +677,14 @@ ht-degree: 59%
       + [Conectar ao banco de dados](installation/using/connecting-to-database.md)
       + [Criar o schema de dados](installation/using/creating-data-schema.md)
       + [Definir mapeamento de dados](installation/using/defining-data-mapping.md)
+   + Lista de verificação de segurança e privacidade {#security-privacy}
+      + [Introdução à segurança e privacidade](installation/using/get-started-security-privacy.md)
+      + [Privacidade](installation/using/privacy.md)
+      + [Gerenciamento de acesso](installation/using/access-management.md)
+      + [Diretrizes de script e codificação](installation/using/scripting-coding-guidelines.md)
+      + [Rede, banco de dados e SSL/TLS](installation/using/network-database.md)
+      + [Configuração do servidor](installation/using/server-configuration.md)
+      + [Configuração do servidor da web](installation/using/web-server-configuration.md)
    + Apêndices {#appendices}
       + [Arquivo de configuração do servidor](installation/using/the-server-configuration-file.md)
       + [Endpoints de rede do Campaign ](installation/using/campaign-network-endpoints.md)
@@ -790,9 +801,8 @@ ht-degree: 59%
       + [Métodos SOAP em JavaScript](configuration/using/soap-methods-in-javascript.md)
       + [Adição de funções SQL extras](configuration/using/adding-additional-sql-functions.md)
    + Hierarquia de navegação {#navigation-hierarchy}
-      + [Sobre a hierarquia de navegação](configuration/using/about-navigation-hierarchy.md)
-      + [Configuração](configuration/using/configuration.md)
-      + [Edição](configuration/using/edition.md)
+      + [Configurar a hierarquia do Explorer](configuration/using/configuration.md)
+      + [Editar a hierarquia do Explorer](configuration/using/edition.md)
    + Usar tabela de recipient personalizada {#use-a-custom-recipient-table}
       + [Sobre tabela de recipient personalizada](configuration/using/about-custom-recipient-table.md)
       + [Características do schema](configuration/using/schema-characteristics.md)
