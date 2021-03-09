@@ -7,15 +7,19 @@ audience: configuration
 content-type: reference
 topic-tags: navigation-hierarchy
 translation-type: tm+mt
-source-git-commit: 04b8287dba00adbc391d611cbaf63b36a4bc3d10
+source-git-commit: 4a17b25516bd9cec409a16cff1e336c13f0df5a4
 workflow-type: tm+mt
-source-wordcount: '1161'
+source-wordcount: '1191'
 ht-degree: 2%
 
 ---
 
 
-# Configuração{#configuration}
+# Configurar a árvore de navegação do Campaign Explorer{#configuration}
+
+Como um usuário especialista, você pode adicionar pastas à árvore do explorador e personalizá-la.
+
+Saiba mais sobre o explorador do Campaign e a hierarquia de navegação [nesta seção](../../platform/using/adobe-campaign-workspace.md#about-navigation-hierarchy).
 
 Os tipos de pastas usados pela lista de navegação são descritos em um documento XML que obedece à gramática do schema **xtk:navtree**.
 
