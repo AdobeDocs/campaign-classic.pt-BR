@@ -7,21 +7,21 @@ audience: configuration
 content-type: reference
 topic-tags: navigation-hierarchy
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: d6993725ed4060f2affce98c4a8a5211bda03bdf
 workflow-type: tm+mt
-source-wordcount: '119'
-ht-degree: 2%
+source-wordcount: '123'
+ht-degree: 1%
 
 ---
 
 
-# Edição{#edition}
+# Editar árvore de navegação do Campaign Explorer{#edition}
 
-A tela para criar e configurar os documentos de configuração da hierarquia de navegação pode ser acessada pelo nó **[!UICONTROL Administration > Configuration > Navigation hierarchies]**:
+A tela para criar e configurar os documentos de configuração da hierarquia de navegação é acessível por meio do nó **[!UICONTROL Administration > Configuration > Navigation hierarchies]**:
 
 ![](assets/d_ncs_integration_navigation_arbo.png)
 
-A configuração da hierarquia de navegação é dividida em vários documentos XML. Funciona de acordo com um princípio semelhante ao da extensão do schema: todos os documentos são unidos para gerar um único documento contendo a configuração inteira. Este documento não pode ser editado e é exibido na guia &quot;Pré-visualização&quot;.
+A configuração da hierarquia de navegação é dividida em vários documentos XML. Ela opera em um princípio semelhante à extensão do schema: todos os documentos são mesclados para gerar um único documento contendo toda a configuração. Este documento não pode ser editado e é exibido por meio da guia &quot;Preview&quot;.
 
 O campo de edição fornece o conteúdo do documento XML:
 
@@ -29,9 +29,9 @@ O campo de edição fornece o conteúdo do documento XML:
 
 >[!NOTE]
 >
->O controle de edição &quot;Nome&quot; permite que você insira a chave do documento que consiste no nome e na namespace. Os atributos &quot;name&quot; e &quot;namespace&quot; do elemento **`<navtree>`** são automaticamente atualizados no campo de edição XML do schema.
+>O controle de edição &quot;Name&quot; permite inserir a chave do documento que consiste no nome e no namespace. Os atributos &quot;name&quot; e &quot;namespace&quot; do elemento **`<navtree>`** são atualizados automaticamente no campo de edição XML do esquema.
 
-A pré-visualização gera automaticamente o documento mesclado que contém a configuração completa:
+A visualização gera automaticamente o documento mesclado contendo a configuração completa:
 
 ![](assets/d_ncs_integration_navigation_preview.png)
 
