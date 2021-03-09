@@ -7,7 +7,7 @@ audience: configuration
 content-type: reference
 topic-tags: use-a-custom-recipient-table
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: d6327cb5307ab5d37c15afa45dfd180ef04cb5a2
 workflow-type: tm+mt
 source-wordcount: '303'
 ht-degree: 6%
@@ -17,35 +17,35 @@ ht-degree: 6%
 
 # Configuração da interface{#configuring-the-interface}
 
-Para visualização e diálogo com a nova tabela de recipient na interface do Adobe Campaign, aplique as seguintes etapas:
+Para exibir e diálogo com a nova tabela de recipients na interface do Adobe Campaign, siga as etapas abaixo:
 
-* Crie um novo formulário para editar o conteúdo da nova tabela de recipient.
-* Digite um novo tipo na pasta da árvore do explorador.
-* Crie um novo aplicativo da Web para acessar a tabela personalizada por meio do home page Adobe Campaign.
+* Crie um novo formulário para editar o conteúdo da nova tabela de recipients.
+* Insira um novo tipo na pasta da árvore do explorador.
+* Crie um novo aplicativo da Web para acessar a tabela personalizada por meio da página inicial do Adobe Campaign.
 
-A Adobe Campaign usa uma variável global &quot;Nms_DefaultRcpSchema&quot; para dialogar com o banco de dados do recipient padrão (nms:recipient). Esta variável deve, por conseguinte, ser alterada.
+O Adobe Campaign usa uma variável global &quot;Nms_DefaultRcpSchema&quot; para diálogo com o banco de dados do recipient padrão (nms:recipient). Portanto, essa variável precisa ser alterada.
 
 1. Vá para o nó **[!UICONTROL Administration>Platform>Options]** do explorador.
-1. Altere o valor da variável **Nms_DefaultRcpSchema** pelo nome do schema que corresponde à tabela do recipient externo (neste caso: cus:individual).
+1. Altere o valor da variável **Nms_DefaultRcpSchema** com o nome do schema que corresponde à tabela de recipients externos (neste caso: cus:individual).
 1. Salve as alterações.
 
 ## Criação de um novo de formulário{#creating-a-new-form-}
 
-A criação de um novo formulário permitirá que você visualização e edite os dados da tabela de recipient externos.
+A criação de um novo formulário permitirá exibir e editar os dados da tabela de destinatários externos.
 
 >[!IMPORTANT]
 >
->O nome do formulário deve ser idêntico ao nome do schema a que se refere.
+>O nome do formulário deve ser idêntico ao nome do schema abordado.
 
-1. Vá para o nó **Administração > Configuração > Formulários de entrada** do explorador.
-1. Crie um novo arquivo **xtk:form** digite **form**.
+1. Vá para o nó **Administration > Configuration > Input forms** do explorador.
+1. Crie um novo arquivo **xtk:form** tipo **form**.
 1. Descreva todos os monitoramentos e campos necessários, dependendo do modelo da tabela.
 
    >[!NOTE]
    >
    >Para saber mais sobre os arquivos do tipo **form**, consulte [esta página](../../configuration/using/identifying-a-form.md).
 
-   Em nosso exemplo atual, o arquivo **form** deve ser baseado no schema **cus:individual** e, portanto, ter o seguinte layout:
+   No nosso exemplo atual, o arquivo **form** deve ser baseado no schema **cus:individual** e, portanto, ter o seguinte layout:
 
    ```
    <container colspan="2">
@@ -65,14 +65,14 @@ A criação de um novo formulário permitirá que você visualização e edite o
 ## Criação de um novo tipo de pasta na hierarquia de navegação {#creating-a-new-type-of-folder-in-the-navigation-hierarchy}
 
 1. Vá para o nó **[!UICONTROL Administration>Configuration>Navigation hierarchies]**
-1. Crie um novo documento **xtk:navtree** digite **navtree**.
+1. Crie um novo documento **xtk:navtree** do tipo **navtree**.
 1. Descreva todos os monitoramentos e campos necessários, dependendo do modelo da tabela.
 
    >[!NOTE]
    >
-   >Para obter mais informações sobre arquivos do tipo **navtree**, consulte [esta página](../../configuration/using/about-navigation-hierarchy.md).
+   >Para obter mais informações sobre arquivos do tipo **navtree**, consulte [esta página](../../platform/using/adobe-campaign-workspace.md#about-navigation-hierarchy).
 
-   No exemplo atual, o arquivo **navtree** deve ter por base o schema **cus:individual** e, portanto, ter o seguinte formato:
+   No exemplo atual, o arquivo **navtree** deve ser baseado no schema **cus:individual** e, portanto, ter o seguinte formulário:
 
    ```
     <model name="root">
