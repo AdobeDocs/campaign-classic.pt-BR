@@ -2,15 +2,15 @@
 solution: Campaign Classic
 product: campaign
 title: Área de trabalho do Adobe Campaign
-description: Área de trabalho do Adobe Campaign
-audience: platform
-content-type: reference
-topic-tags: starting-with-adobe-campaign
+description: Saiba como usar e personalizar a área de trabalho do Campaign
+feature: Visão geral
+role: Engenheiro de dados
+level: Iniciante
 translation-type: tm+mt
-source-git-commit: ba460d8347c987291681641a1be208027acf1d2f
+source-git-commit: c91d9c39d92779ed0366905a944f065c427b1e5a
 workflow-type: tm+mt
-source-wordcount: '2157'
-ht-degree: 100%
+source-wordcount: '1260'
+ht-degree: 76%
 
 ---
 
@@ -71,7 +71,7 @@ Para obter mais informações sobre como criar uma instância, consulte esta [p�
 
 ## Elementos básicos de navegação {#navigation-basics}
 
-### Páginas de navegação {#browsing-pages}
+### Procurar páginas {#browsing-pages}
 
 As várias funcionalidades da plataforma são divididas em recursos principais: use os links exibidos na seção superior da interface para acessá-las.
 
@@ -85,7 +85,7 @@ As listas estão disponíveis no link **[!UICONTROL Lists]** na seção à esque
 
 ![](assets/recipient_list_overview.png)
 
-### Utilização de guias {#using-tabs}
+### Usar guias {#using-tabs}
 
 * Quando você clica em um recurso principal ou em um link, a página relevante substitui a página atual. Para voltar à página anterior, clique no botão **[!UICONTROL Back]** na barra de ferramentas. Para retornar à página inicial, clique no botão **[!UICONTROL Home]**.
 
@@ -107,19 +107,56 @@ Por exemplo, na página de delivery, use o botão **[!UICONTROL Create]** para c
 
 ## Usar o explorador do Adobe Campaign {#using-adobe-campaign-explorer}
 
-### Sobre o explorador do Adobe Campaign {#about-adobe-campaign-explorer}
-
 O explorador do Adobe Campaign é acessível por meio do ícone da barra de ferramentas. Ele permite que você acesse todos os recursos do Adobe Campaign, as telas de configuração e uma visão mais detalhada de alguns dos elementos da plataforma.
 
 O espaço de trabalho **[!UICONTROL Explorer]** é dividido em três zonas:
 
 ![](assets/s_ncs_user_navigation.png)
 
-**1 - Tree**: é possível personalizar o conteúdo da árvore (adicionar, mover ou excluir nós). Esse procedimento destina-se somente a usuários especializados. Para obter mais informações, consulte [esta página](../../configuration/using/about-navigation-hierarchy.md).
+**1 - Tree**: é possível personalizar o conteúdo da árvore (adicionar, mover ou excluir nós). Esse procedimento destina-se somente a usuários especializados. Para obter mais informações, consulte [esta seção](#about-navigation-hierarchy).).
 
-**2 - List**: é possível filtrar essa lista, executar pesquisas, adicionar informações ou classificar dados.
+**2 - List**: é possível filtrar essa lista, executar pesquisas, adicionar informações ou classificar dados. [Saiba mais](adobe-campaign-ui-lists.md).
 
 **3 - Details**: é possível exibir os detalhes do elemento selecionado. O ícone na seção superior direita permite exibir essas informações no formato de tela inteira.
+
+### Pastas e árvore de navegação{#about-navigation-hierarchy}
+
+A árvore de navegação funciona como um navegador de arquivos (por exemplo, Windows Explorer). As pastas podem conter subpastas. Selecionar um nó exibe a exibição correspondente ao nó.
+
+A exibição exibida é uma lista associada a um schema e um formulário de entrada para editar a linha selecionada.
+
+![](assets/d_ncs_integration_navigation.png)
+
+Para adicionar uma nova pasta à árvore, clique com o botão direito do mouse na pasta na ramificação onde deseja inserir uma pasta e selecione **[!UICONTROL Add new folder]** . No menu de atalho, selecione o tipo de arquivo a ser criado.
+
+![](assets/d_ncs_integration_navigation_create.png)
+
+Saiba como configurar a árvore de navegação do Campaign [nesta seção](../../configuration/using/configuration.md).
+
+Saiba como definir permissões em pastas [nesta seção](access-management-folders.md).
+
+### Práticas recomendadas de configuração de pasta
+
+* **Usar pastas incorporadas**
+
+   Usar as pastas integradas facilita que as pessoas não envolvidas no projeto usem, mantenham e solucionem problemas do aplicativo. Você não deve criar estruturas de pastas personalizadas para recipients, listas, deliveries etc., mas usar as pastas padrão, como Administração, Perfis e direcionamentos, Gerenciamento de campanha.
+
+* **Criar subpastas**
+
+   Coloque workflows técnicos na pasta padrão: Administração / Produção / Fluxos de trabalho técnicos e criar subdiretórios por tipo de fluxo de trabalho.
+
+* **Definir uma convenção de nomenclatura**
+
+   Por exemplo, é possível nomear os workflows em ordem alfabética, para que apareçam classificados na ordem de execução.
+
+   Por exemplo:
+
+   * A1 - destinatários da importação, começa às 10:00;
+   * A2 - importar tíquetes, começa às 11:00.
+
+* **Criar modelos para os usuários começarem com**
+
+   Crie templates de delivery, templates de workflow, templates de campanha específicos para usuários. Essa estrutura pode economizar tempo e garantir que o mapeamento de delivery e as tipologias corretas sejam usadas para cada usuário.
 
 ### Resolução da tela {#screen-resolution}
 
@@ -127,208 +164,15 @@ Para navegação e usabilidade ideais, a Adobe recomenda usar uma resolução m�
 
 >[!CAUTION]
 >
->Resoluções abaixo de 1600 x 900 pixels podem não ser compatíveis com o Adobe Campaign.
+>Resoluções abaixo de 1600x900 pixels são compatíveis com o Adobe Campaign.
 
 Na área de trabalho do **[!UICONTROL Explorer]**, se alguma parte da zona **[!UICONTROL Details]** aparecer cortada, amplie-a usando a seta na parte superior da zona ou clique no botão **[!UICONTROL Enlarge]**.
 
 ![](assets/s_ncs_user_resolution.png)
 
-### Listas de navegação {#browsing-lists}
+### Procurar e personalizar listas {#browsing-lists}
 
-Para navegar em uma lista, você pode usar **as barras de rolagem** (horizontal e vertical) para rolar por ela sem alterar a seleção do registro, **o botão de rolagem do mouse** ou **as setas do teclado**.
-
->[!NOTE]
->
->A configuração e personalização do conteúdo da lista são apresentadas em [Configuração de listas](#configuring-lists).
->
->Também é possível classificar e filtrar dados. Consulte [Opções de filtro](../../platform/using/filtering-options.md).
-
-### Contagem de registros {#counting-records}
-
-Por padrão, o Adobe Campaign carrega os 200 primeiros registros de uma lista. Isso significa que a exibição não mostra necessariamente todos os registros da tabela que você está visualizando. Você pode executar uma contagem do número de registros na lista e carregar mais registros.
-
-Na parte inferior direita da tela da lista, um **[!UICONTROL counter]** mostra quantos registros foram carregados e o número total de registros no banco de dados (após a aplicação de filtros):
-
-![](assets/s_ncs_user_nb_200_0.png)
-
-Se um &quot;**?**&quot; aparecer em vez do número à direita, clique no contador para iniciar o cálculo.
-
-### Carregar mais registros {#loading-more-records}
-
-Para carregar (e portanto exibir) registros adicionais (200 linhas por padrão) clique em **[!UICONTROL Continue loading]**.
-
-![](assets/s_ncs_user_load_list.png)
-
-Para carregar todos os registros, clique com o botão direito do mouse na lista e selecione **[!UICONTROL Load all]**.
-
->[!CAUTION]
->
->Dependendo do número de registros, o tempo para carregar a lista completa pode ser longo.
-
-### Alterar o número padrão de registros {#change-default-number-of-records}
-
-Para alterar o número padrão de registros carregados, clique em **[!UICONTROL Configure list]** no canto inferior direito da lista.
-
-![](assets/s_ncs_user_configure_list.png)
-
-Na janela de configuração da lista, clique em &quot;Advanced parameters&quot; (no lado inferior esquerdo) e altere o número de linhas a serem recuperadas.
-
-![](assets/s_ncs_user_configurelist_advancedparam.png)
-
-## Configuração de listas {#configuring-lists}
-
-### Adicionar colunas {#add-columns}
-
-Há duas maneiras de adicionar uma coluna a uma lista.
-
-É possível adicionar rapidamente uma coluna a uma lista dos detalhes de um registro. Para fazer isso:
-
-1. Em uma tela de detalhes, clique com o botão direito do mouse no campo que você deseja exibir em uma coluna.
-1. Selecione **[!UICONTROL Add in the list]**.
-
-   A coluna é adicionada à direita das colunas existentes.
-
-![](assets/s_ncs_user_add_in_list.png)
-
-Outra maneira de adicionar colunas, por exemplo, se você quiser exibir dados que não são exibidos na tela de detalhes, é usar a janela de configuração de listas. Para fazer isso:
-
-1. Clique em **[!UICONTROL Configure list]** abaixo e à direita da lista.
-
-   ![](assets/s_ncs_user_configure_list.png)
-
-1. Na janela de configuração da lista, clique duas vezes no campo a ser adicionado na lista **[!UICONTROL Available fields]** para adicioná-lo às colunas de saída em **[!UICONTROL Output columns]**.
-
-   ![](assets/s_ncs_user_configurelist.png)
-
-   >[!NOTE]
-   >
-   >Por padrão, campos avançados não são exibidos. Para exibi-los, clique em **Display advanced fields** abaixo e à direita da lista de campos disponíveis.
-   >
-   >Os rótulos são exibidos por tabela e em ordem alfabética.
-   >
-   >Use o campo **Search** para executar uma pesquisa nos campos disponíveis. Para obter mais informações, consulte [Classificar uma lista](#sorting-a-list).
-   >
-   >Os campos são identificados por ícones específicos: SQL fields, linked tables, calculated fields, etc. Para cada campo selecionado, a descrição é exibida abaixo da lista de campos disponíveis. [Configuração de listas](#configuring-lists).
-   >
-   >Também é possível classificar e filtrar dados. Consulte [Opções de filtro](../../platform/using/filtering-options.md).
-
-1. Repita o processo para cada coluna a ser exibida.
-1. Use as setas para modificar a **ordem de exibição**. A coluna mais alta estará à esquerda na lista de registros.
-
-   ![](assets/s_ncs_user_columns_order_down.png)
-
-1. Se precisar, clique em **[!UICONTROL Distribution of values]** para exibir a repartição de valores para o campo selecionado na pasta atual.
-
-   ![](assets/s_ncs_user_configurelist_values.png)
-
-1. Clique em **[!UICONTROL OK]** para confirmar a configuração e exibir o resultado.
-
-### Criar uma nova coluna {#create-a-new-column}
-
-É possível criar novas colunas para exibir campos adicionais na lista. Para fazer isso:
-
-1. Clique em **[!UICONTROL Configure the list]** abaixo e à direita da lista.
-1. Clique em **[!UICONTROL Add]** para exibir um novo campo na lista.
-
-### Remover uma coluna {#remove-a-column}
-
-É possível mascarar uma ou mais colunas em uma lista de registros usando a opção **[!UICONTROL Configure list]**, localizada abaixo e à direita da lista.
-
-![](assets/s_ncs_user_configure_list.png)
-
-Na janela de configuração da lista, selecione a coluna a ser compactada na zona **[!UICONTROL Output columns]** e clique no botão Delete.
-
-![](assets/s_ncs_user_removecolumn_icon.png)
-
-Repita o processo para cada coluna a ser mascarada. Clique em **[!UICONTROL OK]** para confirmar a configuração e exibir o resultado.
-
-### Ajustar a largura da coluna {#adjust-column-width}
-
-Quando uma lista está ativa, ou seja, com pelo menos uma linha selecionada, você pode usar a tecla F9 para ajustar a largura das colunas. Assim, todas as colunas podem ser exibidas na tela.
-
-### Exibir registros de subpastas {#display-sub-folders-records}
-
-As listas podem exibir:
-
-* Os registros contidos somente na pasta selecionada,
-* Ou os registros da pasta selecionada e também suas subpastas.
-
-Para alternar de um modo de exibição para outro, clique em **[!UICONTROL Display sub-levels]**, na barra de ferramentas.
-
-![](assets/s_ncs_user_display_children_icon.png)
-
-### Salvar uma configuração de lista {#saving-a-list-configuration}
-
-As configurações de lista são definidas localmente no nível da estação de trabalho. Quando o cache local é limpo, as configurações locais são desabilitadas.
-
-Por padrão, os parâmetros de exibição definidos se aplicam a todas as listas com o tipo de pasta correspondente. Assim, ao modificar como a lista de destinatários é exibida de uma pasta, essa configuração será aplicada a todas as outras pastas do destinatário.
-
-No entanto, é possível salvar mais de uma configuração a ser aplicada a pastas diferentes do mesmo tipo. A configuração é salva com as propriedades da pasta contendo os dados e pode ser aplicada novamente.
-
-Por exemplo, para uma pasta de delivery, é possível configurar a seguinte exibição:
-
-![](assets/s_ncs_user_folder_save_config_1.png)
-
-Para salvar essa configuração de lista de modo que ela possa ser reutilizada, siga as etapas abaixo:
-
-1. Clique com o botão direito na pasta que contém os dados exibidos.
-1. Selecione **[!UICONTROL Properties]**.
-1. Clique em **[!UICONTROL Advanced settings]** e especifique um nome no campo **[!UICONTROL Configuration]**.
-
-   ![](assets/s_ncs_user_folder_save_config_2.png)
-
-1. Clique em **[!UICONTROL OK]** e em **[!UICONTROL Save]**.
-
-Você pode aplicar essa configuração a outra pasta **Delivery**:
-
-![](assets/s_ncs_user_folder_save_config_3.png)
-
-Clique em **[!UICONTROL Save]** na janela de propriedades da pasta. A lista de exibição é modificada para corresponder à configuração especificada:
-
-![](assets/s_ncs_user_folder_save_config_5.png)
-
-## Exportar uma lista {#exporting-a-list}
-
-Para exportar dados de uma lista, você deve usar um assistente de exportação. Para acessá-lo, selecione os elementos a serem exportados da lista, clique com o botão direito do mouse e selecione **[!UICONTROL Export...]**.
-
-A utilização das funções de importação e exportação é explicada em [Importações e exportações genéricas](../../platform/using/about-generic-imports-exports.md).
-
->[!CAUTION]
->
->Os elementos de uma lista não devem ser exportados usando a função Copiar/Colar.
-
-## Classificar uma lista {#sorting-a-list}
-
-As listas podem conter uma grande quantidade de dados. Você pode classificar esses dados ou aplicar filtros simples ou avançados. A classificação permite exibir dados em ordem crescente ou decrescente. Os filtros permitem definir e combinar critérios para exibir apenas os dados selecionados.
-
-Clique no cabeçalho da coluna para aplicar uma classificação crescente ou decrescente ou para cancelar a classificação de dados. O status da classificação ativa e a ordem de classificação são indicados por uma seta azul antes do rótulo da coluna. Um traço vermelho antes do rótulo da coluna significa que a classificação é aplicada aos dados indexados do banco de dados. Esse método é usado para otimizar tarefas de classificação.
-
-Você também pode configurar a classificação ou combinar critérios de classificação. Para fazer isso, siga as etapas abaixo:
-
-1. **[!UICONTROL Configure list]** abaixo e à direita da lista.
-
-   ![](assets/s_ncs_user_configure_list.png)
-
-1. Na janela de configuração da lista, clique na guia **[!UICONTROL Sorting]**.
-1. Selecione os campos a serem classificados e a direção da classificação (crescente ou decrescente).
-
-   ![](assets/s_ncs_user_configurelist_sort.png)
-
-1. A prioridade é definida pela ordem das colunas de classificação. Para alterar a prioridade, use os ícones apropriados para alterar a ordem das colunas.
-
-   ![](assets/s_ncs_user_configurelist_move.png)
-
-   A prioridade de classificação não afeta a exibição das colunas na lista.
-
-1. Clique em **[!UICONTROL Ok]** para confirmar essa configuração e exibir o resultado na lista.
-
-### Pesquisar elementos {#running-a-search}
-
-Você pode executar uma pesquisa dos campos disponíveis em um editor utilizando o campo **[!UICONTROL Search]**, localizado acima da lista de campos. Pressione **Enter** no teclado ou navegue pela lista. Os campos que correspondem à pesquisa terão rótulos em negrito.
-
->[!NOTE]
->
->É possível criar filtros para exibir apenas alguns dos dados em uma lista. Consulte [Criação de filtros](../../platform/using/creating-filters.md).
+Saiba como navegar, gerenciar e personalizar listas [nesta seção](adobe-campaign-ui-lists.md).
 
 ## Formatos e unidades {#formats-and-units}
 
