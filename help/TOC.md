@@ -9,9 +9,9 @@ solution: Campaign Classic
 sub-product: Adobe Campaign Classic
 type: Documentação
 translation-type: tm+mt
-source-git-commit: 60b4565ec6dc3e7ffc4ffcff69fbcca9fa870614
+source-git-commit: f170f554935700161c457bb34bace8c403f4262b
 workflow-type: tm+mt
-source-wordcount: '2457'
+source-wordcount: '2458'
 ht-degree: 58%
 
 ---
@@ -38,6 +38,7 @@ ht-degree: 58%
       + [Versão 18.4](rn/using/release--18-4.md)
    + [Recursos obsoletos](rn/using/deprecated-features.md)
    + [Matriz de compatibilidade](rn/using/compatibility-matrix.md)
+   + [Notas técnicas](technotes/technote.md)
 + Introdução {#getting-started}
    + Comece com o Adobe Campaign {#starting-with-adobe-campaign}
       + [Introdução ao Adobe Campaign Classic](platform/using/about-adobe-campaign-classic.md)
