@@ -9,9 +9,9 @@ topic-tags: campaign-classic-deprecated-features
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 425b2e5748703a8349b6f70968d1ef4c71f72b21
+source-git-commit: f78fa94fb4fb9236222886a167a46d252497b2aa
 workflow-type: tm+mt
-source-wordcount: '1717'
+source-wordcount: '1712'
 ht-degree: 95%
 
 ---
@@ -47,10 +47,10 @@ Os clientes são aconselhados a verificar se utilizam o recurso/funcionalidade e
   </tr>
     <tr>
   <td>Relatório de monitoramento técnico da capacidade de entrega<br></td>
-   <td><p>A partir da versão de Campanha 21.1, o Relatório de monitoramento técnico de entrega está obsoleto.</p>
-   <p>Se necessário, você pode receber esse relatório diariamente por e-mail até a data de remoção do recurso. Para solicitar, abra um <a href="https://helpx.adobe.com/br/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html">Caso de suporte</a> específico e especifique o nome da instância e os endereços de email para os quais enviar o relatório.</p> 
-   <p>A Adobe recomenda que você se envolva com a Equipe de Disponibilidade para definir as melhores ferramentas para monitorar o desempenho de entrega da instância.</p>
-  <p><em>Data de remoção do público alvo: Final de 2021</em></p>
+   <td><p>A partir da versão 21.1 do Campaign, o Relatório de monitoramento técnico da capacidade de entrega ficará obsoleto.</p>
+   <p>Se necessário, você pode receber esse relatório diariamente por e-mail até a data de remoção do recurso. Para solicitar, abra um <a href="https://helpx.adobe.com/br/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html">Caso de suporte</a> específico e especifique o nome da instância e o(s) endereço(s) de email para o qual enviar o relatório.</p> 
+   <p>A Adobe recomenda que você se envolva com a Equipe de avaliação do delivery para definir as melhores ferramentas para monitorar o desempenho de capacidade de entrega da sua instância.</p>
+  <p><em>Data de remoção do Target: Final de 2021</em></p>
   </td>
  </tr>
   <tr>
@@ -100,7 +100,7 @@ No local: atualização 1 de 2016, 2016</li>
    <li>iOS</li>
    </ul>
   <p>Se estiver usando um desses conectores, precisará adaptar sua implementação adequadamente. <a href="../../delivery/using/sms-channel.md">Saiba mais</a></p> 
-  <p>Saiba como migrar conectores herdados <a href="https://helpx.adobe.com/br/campaign/kb/sms-connector.html">nesta nota técnica</a>.</p>
+  <p>Saiba como migrar conectores herdados <a href="../../delivery/using/unsupported-connector-migration.md">nesta nota técnica</a>.</p>
   <p><em>Data de remoção do Target: abril de 2021</em></p>
   </td> 
  </tr>
