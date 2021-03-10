@@ -5,10 +5,10 @@ product: campaign
 title: Documentação do produto Adobe Campaign Classic
 topic: Premium
 translation-type: tm+mt
-source-git-commit: b5b9e42eca25193cf4d69f654e74a02afd8adca9
+source-git-commit: 832d81c02c590afbe933f9ba63accbc0ba82f180
 workflow-type: tm+mt
-source-wordcount: '296'
-ht-degree: 100%
+source-wordcount: '312'
+ht-degree: 91%
 
 ---
 
@@ -18,6 +18,8 @@ ht-degree: 100%
 ![](platform/using/assets/do-not-localize/banner_acc_doc.jpg)
 
 ## Novidades
+
+* **[Atualizar o ](technotes/ios-certificate-update.md)**<br/> certificado APNsEm 29 de março de 2021, uma atualização APNs afetará o canal do Campaign iOS. É necessário atualizar a configuração para evitar a interrupção do canal de push do iOS.
 
 * **[Conectando-se pelo IMS/Adobe ID? Atualize para as builds mais recentes](integrations/using/about-adobe-id.md)**<br/> Se você estiver usando o IMS para se conectar ao Campaign, é necessário atualizar para poder se conectar ao Campaign após** 31 de março de 2021 **.
 
@@ -86,7 +88,6 @@ ht-degree: 100%
 | [Notas de versão](/help/rn/using/latest-release.md) | [Lista de mensagens de erro](https://docs.adobe.com/content/help/en/campaign-classic/technicalresources/error_messages/error_codes.html) |
 | [Vídeos explicativos](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html?lang=pt-BR) | [Modelo de dados do Campaign](configuration/using/about-data-model.md) |
 | [Matriz de compatibilidade](rn/using/compatibility-matrix.md) | [JSAPI do Campaign](https://docs.adobe.com/content/help/en/campaign-classic/technicalresources/api/p-1.html) |
-| [Introdução ao Campaign](platform/using/about-adobe-campaign-classic.md) | [Guia de implementação](https://helpx.adobe.com/br/campaign/kb/acc-implementation.html) |
 | [Atualização do Gold Standard ](https://helpx.adobe.com/br/campaign/kb/gold-standard.html) | [Guia de rastreamento](https://helpx.adobe.com/br/campaign/kb/acc-tracking.html) |
 | [Recursos obsoletos](rn/using/deprecated-features.md) | [Lista de verificação de segurança e privacidade](https://helpx.adobe.com/br/campaign/kb/acc-security.html) |
 | [Painel de controle do Campaign](https://experienceleague.adobe.com/docs/control-panel/using/control-panel-home.html?lang=pt-BR) | [Orientações de monitoramento](production/using/monitoring-guidelines.md) |
