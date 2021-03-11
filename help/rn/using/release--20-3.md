@@ -7,10 +7,10 @@ audience: rns
 content-type: reference
 topic-tags: campaign-release-notes, latest-release-notes
 translation-type: tm+mt
-source-git-commit: 571821ce775a7c354d01404d14faee8d2a21c170
+source-git-commit: 91313fdc7aed6597d8d54d65b747c835e0cd9ccb
 workflow-type: tm+mt
 source-wordcount: '1941'
-ht-degree: 98%
+ht-degree: 95%
 
 ---
 
@@ -33,9 +33,9 @@ _27 de outubro de 2020_
 
 >[!CAUTION]
 >
-> * Esta versão é fornecida com um novo protocolo de conexão: se você estiver se conectando ao Campaign pelo Adobe Identity Service (IMS), a atualização é obrigatória para o servidor do Campaign e o console do cliente poderem se conectar ao Campaign após **31 de março de 2021**.
+> * Esta versão vem com um novo protocolo de conexão: se você estiver se conectando ao Campaign pelo Adobe Identity Service (IMS), a atualização é obrigatória para o servidor do Campaign e o console do cliente poderem se conectar ao Campaign depois de **30 de junho de 2021**.
 > * Esta versão vem com uma [correção de segurança](https://helpx.adobe.com/security/products/campaign/apsb21-04.html): a atualização é obrigatória para reforçar a segurança do ambiente.
-> * Se você estiver usando a integração dos acionadores da Experience Cloud por meio da autenticação oAuth, será necessário migrar para o Adobe I/O conforme descrito [nesta página](../../integrations/using/configuring-adobe-io.md). O modo de autenticação oAuth herdado será desativado em **30 de abril de 2021**.
+> * Se estiver usando a integração Experience Cloud Triggers por meio da autenticação oAuth, será necessário mover para o Adobe I/O conforme descrito [nesta página](../../integrations/using/configuring-adobe-io.md). O modo de autenticação oAuth herdado será desativado em **30 de abril de 2021**.
 
 
 **Novidades**
@@ -116,7 +116,7 @@ Saiba mais na [página sobre recursos obsoletos e removidos](../../rn/using/depr
 **Aprimoramentos**
 
 * Vários aprimoramentos foram feitos no **console do cliente**:
-   * O protocolo de conexão foi atualizado para seguir o novo mecanismo de autenticação IMS. A atualização do console do servidor e do cliente é obrigatória para se conectar após 31 de março de 2021.
+   * O protocolo de conexão foi atualizado para seguir o novo mecanismo de autenticação IMS. A atualização do console do servidor e do cliente é obrigatória para se conectar após 30 de junho de 2021.
    * Para evitar incompatibilidade com algumas restrições de regras de GPO de segurança da Internet, a tela de logon do console do cliente do Campaign foi substituída por um formulário Windows padrão integrado.
    * Correção de um problema ao copiar/colar atividades em um workflow usando o console do cliente de 64 bits. (NEO-27635)
 
