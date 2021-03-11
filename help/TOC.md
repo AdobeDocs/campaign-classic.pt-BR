@@ -9,9 +9,9 @@ solution: Campaign Classic
 sub-product: Adobe Campaign Classic
 type: Documentação
 translation-type: tm+mt
-source-git-commit: de017afc1e5d30b561ed2bb7485756f30ef8778a
+source-git-commit: 2a82c1f67d8bc6d8499383a600a003480e82510f
 workflow-type: tm+mt
-source-wordcount: '2461'
+source-wordcount: '2464'
 ht-degree: 58%
 
 ---
@@ -40,8 +40,9 @@ ht-degree: 58%
    + [Matriz de compatibilidade](rn/using/compatibility-matrix.md)
    + [Notas técnicas](technotes/technote.md)
    + [Atualização de certificado do iOS](technotes/ios-certificate-update.md)
+   + [Atualizações de configuração da campanha](technotes/acc-config-updates.md)
 + Introdução {#getting-started}
-   + Comece com o Adobe Campaign {#starting-with-adobe-campaign}
+   + Comece com Adobe Campaign {#starting-with-adobe-campaign}
       + [Introdução ao Adobe Campaign Classic](platform/using/about-adobe-campaign-classic.md)
       + [Iniciar o Adobe Campaign](platform/using/launching-adobe-campaign.md)
       + Área de trabalho do Adobe Campaign{#campaign-workspace}
@@ -358,11 +359,11 @@ ht-degree: 58%
       + [Publicar, acompanhar e usar dados coletados](web/using/publish--track-and-use-collected-data.md)
       + [Configurar pesquisas](web/using/configuring-surveys.md)
       + [Caso de uso: criar um formulário de referência](web/using/use-case--creating-a-refer-a-friend-form.md)
-+ Integrar com a Adobe Experience Cloud {#integrating-with-adobe-experience-cloud}
++ Integrar com o Adobe Experience Cloud {#integrating-with-adobe-experience-cloud}
    + [Sobre integrações do Campaign](integrations/using/about-campaign-integrations.md)
    + Compartilhamento de público {#audience-sharing}
       + [Compartilhe públicos-alvo com [!DNL Adobe Experience Cloud]](integrations/using/sharing-audiences-with-adobe-experience-cloud.md)
-      + [Enviar solicitação para a Adobe](integrations/using/submitting-request-to-adobe.md)
+      + [Enviar solicitação para o Adobe](integrations/using/submitting-request-to-adobe.md)
       + [Configurar a integração de públicos compartilhados no [!DNL Adobe Campaign]](integrations/using/configuring-shared-audiences-integration-in-adobe-campaign.md)
       + [Solução de problemas](integrations/using/troubleshooting.md)
       + [Importar e exportar públicos](integrations/using/importing-and-exporting-audiences.md)
@@ -378,9 +379,9 @@ ht-degree: 58%
       + [Integrar com [!DNL Adobe Target]](integrations/using/integrating-with-adobe-target.md)
       + [Configure a integração com [!DNL Adobe Target]](integrations/using/configuring-the-integration-with-adobe-target.md)
       + [Inserir uma imagem dinâmica](integrations/using/inserting-a-dynamic-image.md)
-   + Conectar-se por meio de uma Adobe ID {#connecting-via-an-adobe-id}
+   + Conectar-se via Adobe ID {#connecting-via-an-adobe-id}
       + [Sobre [!DNL Adobe ID]](integrations/using/about-adobe-id.md)
-      + [Configurar o Adobe [!DNL IMS]](integrations/using/configuring-ims.md)
+      + [Configurar Adobe [!DNL IMS]](integrations/using/configuring-ims.md)
       + [Implementar o Adobe [!DNL IMS]](integrations/using/implementing-ims.md)
       + [Solução de problemas com o IMS](integrations/using/ims-troubleshooting.md)
    + ACS Connector {#acs-connector}
@@ -392,7 +393,7 @@ ht-degree: 58%
    + Acionadores da Adobe Experience Cloud {#experience-triggers}
       + [Introdução a [!DNL Experience Cloud Triggers]](integrations/using/about-triggers.md)
       + [Configurar pipeline](integrations/using/configuring-pipeline.md)
-      + [Configurar o Adobe I/O para [!DNL Experience Cloud Triggers]](integrations/using/configuring-adobe-io.md)
+      + [Configure o Adobe I/O para [!DNL Experience Cloud Triggers]](integrations/using/configuring-adobe-io.md)
       + [Configurar eventos para implementação personalizada](integrations/using/events.md)
       + [Monitoramento de pipeline](integrations/using/pipeline-monitoring.md)
       + [Solução de problemas de pipeline](integrations/using/pipeline-troubleshooting.md)
@@ -652,7 +653,7 @@ ht-degree: 58%
       + [Criar e configurar o banco de dados](installation/using/creating-and-configuring-the-database.md)
       + [Configuração do servidor do Campaign](installation/using/campaign-server-configuration.md)
       + [Implantar uma instância](installation/using/deploying-an-instance.md)
-      + [Instalar pacotes incorporados do Campaign Classic](installation/using/installing-campaign-standard-packages.md)
+      + [Instale os pacotes integrados do Campaign Classic](installation/using/installing-campaign-standard-packages.md)
    + Configurações adicionais {#additional-configurations}
       + [Configurar o servidor do Campaign](installation/using/configuring-campaign-server.md)
       + [Conectar-se por meio do LDAP](installation/using/connecting-through-ldap.md)
@@ -713,7 +714,7 @@ ht-degree: 58%
       + [Restauração](production/using/restoration.md)
       + [Ambientes duplicados](production/using/duplicating-environments.md)
       + [Workflow de limpeza do banco de dados](production/using/database-cleanup-workflow.md)
-   + Atualizar o Adobe Campaign {#updating-adobe-campaign}
+   + Atualizar Adobe Campaign {#updating-adobe-campaign}
       + [Introdução](production/using/introduction.md)
       + [Executar uma atualização de build](production/using/build-upgrade.md)
       + [Procedimento de atualização (no local)](production/using/upgrading.md)
