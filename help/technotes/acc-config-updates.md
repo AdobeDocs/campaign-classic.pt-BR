@@ -6,7 +6,7 @@ description: Nota técnica
 hide: true
 hidefromtoc: true
 translation-type: tm+mt
-source-git-commit: 248c74485e8e5889ca630c8f60ac2fa085204c51
+source-git-commit: 087abb5765b089aa707f3d3a6d33ad0949b26bc8
 workflow-type: tm+mt
 source-wordcount: '896'
 ht-degree: 14%
@@ -50,7 +50,7 @@ Você precisa atualizar para uma das builds mais recentes listadas acima.
 
    A nova build é compatível com pelo menos a versão do Campaign Classic 17.9, mas para evitar qualquer lacuna de segurança, o Adobe recomenda que todas as instâncias sejam atualizadas para uma nova build. 
 
-* Como cliente local, você deve atualizar instâncias de marketing e mid-sourcing para uma nova build.
+* Como cliente local, você deve atualizar instâncias de marketing e mid-sourcing para uma build mais recente.
 
 >[!CAUTION]
 >
