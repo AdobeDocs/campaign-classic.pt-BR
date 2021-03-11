@@ -6,10 +6,10 @@ description: Nota técnica
 hide: true
 hidefromtoc: true
 translation-type: tm+mt
-source-git-commit: 87844fae046dff69193d3462c802057499f406ef
+source-git-commit: 248c74485e8e5889ca630c8f60ac2fa085204c51
 workflow-type: tm+mt
-source-wordcount: '772'
-ht-degree: 11%
+source-wordcount: '896'
+ht-degree: 14%
 
 ---
 
@@ -69,23 +69,33 @@ O Adobe Identity Service (IMS) deixará de oferecer suporte às versões antigas
 
 **Você é afetado?**
 
-Se estiver se conectando ao Campaign [por meio de um Adobe ID](../integrations/using/about-adobe-id.md), por meio do Adobe Identity Service (IMS), a atualização para uma das novas versões listadas acima é obrigatória para o servidor do Campaign e o console do cliente poderem se conectar ao Campaign após **30 de junho de 2021**.
+Se você estiver se conectando ao Campaign [por meio de um Adobe ID](../integrations/using/about-adobe-id.md), por meio do Adobe Identity Service (IMS), a atualização para uma das novas versões listadas acima é obrigatória. Estas versões são fornecidas com um novo protocolo de conexão: a atualização é obrigatória para o servidor do Campaign e o console do cliente poderem se conectar ao Campaign depois de **30 de junho de 2021**.
 
 **Como atualizar?**
 
 Como cliente hospedado, nenhuma ação é necessária: O Adobe já atualizou suas instâncias para uma versão mais recente.
 
-Como cliente local/híbrido, é necessário atualizar para uma das versões mais recentes para se beneficiar do novo Console do cliente e garantir uma transição contínua **antes de 31 de março de 2021**.
+Como cliente local/híbrido, é necessário atualizar para uma das versões mais recentes para se beneficiar do novo Console do cliente e garantir uma transição contínua **antes de 30 de junho de 2021**.
+
+Depois que todas as instâncias forem atualizadas, o console do cliente também precisará ser atualizado para essa versão.
+
+* Saiba como acessar o [Adobe Software Distribution](https://experienceleague.adobe.com/docs/experience-cloud/software-distribution/home.html?lang=en).
+
+* [Saiba como instalar o console do cliente do Campaign](../installation/using/installing-the-client-console.md).
 
 ## Integração com Experience Cloud Triggers
 
-O serviço herdado de autenticação oAuth chegou ao fim da vida útil e será descontinuado em 30 de junho de 2021. [Saiba mais](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-discussions/adobe-analytics-legacy-api-end-of-life-notice/td-p/385411).
+O serviço de autenticação oAuth herdado chegou ao fim da vida útil. A autenticação da integração dos acionadores, originalmente baseada na configuração da autenticação oAUTH para acessar o pipeline, foi movida para o Adobe I/O. Ele será aposentado em 30 de junho de 2021. [Saiba mais](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-discussions/adobe-analytics-legacy-api-end-of-life-notice/td-p/385411).
 
 **Você é afetado?**
 
 Se você estiver usando uma versão mais antiga da integração de acionadores por meio da autenticação oAuth, **será necessário mover para o Adobe I/O**.
 
 **Como atualizar?**
+
+Depois que as instâncias são atualizadas para uma versão mais nova, todos os clientes precisam seguir o [procedimento para mover para o novo modo de autenticação](../integrations/using/configuring-adobe-io.md). Isso requer gerar o novo token de Adobe I/O e usá-lo na implementação.  
+
+Além disso, para ambientes híbridos, os clientes precisam garantir que o pipeline de assimilação esteja configurado na instância de mid-sourcing. [Saiba mais](../integrations/using/configuring-pipeline.md).
 
 [Saiba como migrar para o Adobe I/O](../integrations/using/configuring-adobe-io.md).
 
@@ -119,4 +129,4 @@ Como cliente hospedado, nenhuma ação é necessária: O Adobe já incorporou o 
 
 Como cliente local/híbrido, você precisa atualizar sua configuração para garantir uma transição contínua **antes de 29 de março de 2021**.
 
-[Saiba como incorporar o novo certificado](ios-certificate-update.md)
+[Saiba como incorporar o novo certificado](ios-certificate-update.md).
