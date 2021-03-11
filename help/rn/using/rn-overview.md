@@ -7,7 +7,7 @@ audience: rns
 content-type: reference
 topic-tags: latest-release-notes
 translation-type: tm+mt
-source-git-commit: 33debcd6e399d2780277644103a620d46c22022e
+source-git-commit: e6f6cfe1c1aa0d896fb6400d63b6023a983c6192
 workflow-type: tm+mt
 source-wordcount: '437'
 ht-degree: 100%
@@ -35,7 +35,7 @@ As **últimas builds do GA** são: [Gold Standard versão 11](../../rn/using/gol
 
 ![](assets/do-not-localize/blue3.png) **Versão candidata** (VC) - versão mais recente com novos recursos.
 
-A **última build RC** é a [versão 20.3 do Campaign Classic](../../rn/using/latest-release.md)
+A **última build RC** é a [versão 21.1 do Campaign Classic](../../rn/using/latest-release.md)
 
 ![](assets/do-not-localize/red3.png) **Obsoleto** – nenhuma implantação. As implementações existentes devem ser atualizadas.
 
