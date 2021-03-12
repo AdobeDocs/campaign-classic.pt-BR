@@ -7,7 +7,7 @@ audience: delivery
 content-type: reference
 topic-tags: configuring-channels
 translation-type: tm+mt
-source-git-commit: a157082070b22e3621cb81411a5ddde387fd5fcf
+source-git-commit: 74610fa197dd9ef27342e08dd0ba3403c1a9acc0
 workflow-type: tm+mt
 source-wordcount: '8458'
 ht-degree: 99%
@@ -483,7 +483,7 @@ A especificação de código curto é útil para dois recursos:
 
 * A visualização exibirá o código curto se nenhum número de origem for fornecido. Isso refletirá o verdadeiro comportamento do dispositivo móvel.
 
-* A configuração de lista de bloqueios do recurso de resposta automática envia somente para a quarentena do usuário por um código curto específico.
+* A configuração de lista de bloqueios do recurso de resposta automática só envia para a quarentena o usuário para um código curto específico.
 
 #### TON/NPI de origem, TON/NPI de destino {#ton-npi}
 
@@ -601,8 +601,8 @@ Pode ser útil para depuração ou teste.
 Você pode escolher entre três valores diferentes para a validação do certificado:
 
 * Verificação de certificação completa (incluindo o nome do host), padrão.
-* Ignore a verificação do nome do host.
-* Ignore a verificação do certificado.
+* Ignorar a verificação do nome do host.
+* Ignorar a verificação do certificado.
 
 #### Vincular TON/NPI {#bind-ton-npi}
 
@@ -718,9 +718,9 @@ Essa configuração permite adicionar apenas uma opção TLV por mensagem.
 
 >[!IMPORTANT]
 >
->No Adobe Campaign Classic e em uma arquitetura híbrida, a aplicação da resposta automática ao conector SMPP estendido requer a adição de acesso de gravação para o operador mid na pasta **Conta externa**.
+>No Adobe Campaign Classic e em uma arquitetura híbrida, a aplicação de resposta automática para o conector SMPP estendido requer a adição de acesso de gravação ao operador mid na pasta **External account**.
 
-Esse recurso permite responder rapidamente o texto ao MO e manipular o envio por código curto para lista de bloqueios.
+Esse recurso permite responder rapidamente ao texto para o MO e processar o envio por código curto para a lista de bloqueios.
 
 As colunas **Palavra-chave** e **Código curto** definem condições para acionar a resposta automática. Se ambos os campos forem correspondentes, o MO será enviado, e a ação adicional será acionada. Para especificar um curinga, deixe o campo vazio. A palavra-chave corresponde à primeira palavra alfanumérica no texto MO, ignorando a pontuação e os espaços à esquerda. Isso significa que o campo **Palavra-chave** não pode conter espaços e deve ser uma única palavra.
 
