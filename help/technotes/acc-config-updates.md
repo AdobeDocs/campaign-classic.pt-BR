@@ -6,19 +6,19 @@ description: Nota técnica
 hide: true
 hidefromtoc: true
 translation-type: tm+mt
-source-git-commit: 26d6e52a03d6123092c811a93612c8d05f75f6fb
+source-git-commit: 74610fa197dd9ef27342e08dd0ba3403c1a9acc0
 workflow-type: tm+mt
-source-wordcount: '905'
-ht-degree: 14%
+source-wordcount: '918'
+ht-degree: 15%
 
 ---
 
 
 # Atualizações de configuração do Adobe Campaign - março de 2021 {#acc-config-updates}
 
-Você precisa manter sua infraestrutura e configurações atualizadas com as builds e correções de produtos mais recentes. Essas correções são obrigatórias para garantir a continuidade e a segurança do serviço.
+Você deve manter sua infraestrutura e configurações atualizadas com as builds e correções de produtos mais recentes. Essas correções são obrigatórias para garantir a continuidade e a segurança do serviço.
 
-Os usuários da campanha precisam atualizar para uma das versões mais recentes abaixo:
+Os usuários da campanha devem atualizar para uma das versões mais recentes abaixo:
 
 * Gold Standard 11. [Saiba mais](../rn/using/gold-standard.md)
 * Campaign versão 21.1.1. [Saiba mais](../rn/using/latest-release.md)
@@ -32,7 +32,11 @@ Esses builds garantem a continuidade de determinados serviços do Campaign: Expe
 
 Como cliente hospedado, o Adobe informará você sobre as atualizações de build necessárias a intervalos regulares. Você precisa atualizar de acordo com as recomendações para garantir a conformidade.
 
-Como cliente local/híbrido, é necessário atualizar para uma das versões listadas acima. Além disso, algumas tarefas manuais devem ser executadas para garantir que seu ambiente esteja seguro e pronto para futuras alterações de sistemas de Adobe ou de terceiros.
+Como cliente local/híbrido, você deve atualizar para uma das versões listadas acima. Além disso, algumas tarefas manuais devem ser executadas para garantir que seu ambiente esteja seguro e pronto para futuras alterações de sistemas Adobe ou de terceiros.
+
+>[!NOTE]
+>
+>Para qualquer dúvida sobre essas alterações, entre em contato com o [Adobe Customer Care](https://helpx.adobe.com/br/enterprise/admin-guide.html).
 
 ## Atualizações de segurança
 
@@ -69,7 +73,7 @@ O Adobe Identity Service (IMS) deixará de oferecer suporte às versões antigas
 
 **Você é afetado?**
 
-Se você estiver se conectando ao Campaign [por meio de um Adobe ID](../integrations/using/about-adobe-id.md), por meio do Adobe Identity Service (IMS), a atualização para uma das novas versões listadas acima é obrigatória. Estas versões são fornecidas com um novo protocolo de conexão: a atualização é obrigatória para o servidor do Campaign e o console do cliente poderem se conectar ao Campaign depois de **30 de junho de 2021**.
+Se você estiver se conectando ao Campaign [por meio de um Adobe ID](../integrations/using/about-adobe-id.md), por meio do Adobe Identity Service (IMS), a atualização para uma das novas versões listadas acima é obrigatória. Essas versões são fornecidas com um novo protocolo de conexão: a atualização é obrigatória para o servidor do Campaign e o console do cliente poderem se conectar ao Campaign depois de **30 de junho de 2021**.
 
 **Como atualizar?**
 
