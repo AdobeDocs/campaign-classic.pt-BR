@@ -6,9 +6,9 @@ description: Nota técnica
 hide: true
 hidefromtoc: true
 translation-type: tm+mt
-source-git-commit: df04057716726a74196add3fbc400fffaca26fc9
+source-git-commit: 26d6e52a03d6123092c811a93612c8d05f75f6fb
 workflow-type: tm+mt
-source-wordcount: '896'
+source-wordcount: '905'
 ht-degree: 14%
 
 ---
@@ -30,9 +30,9 @@ Os usuários da campanha precisam atualizar para uma das versões mais recentes 
 
 Esses builds garantem a continuidade de determinados serviços do Campaign: Experience Cloud Triggers integração, autenticação APNs e o novo protocolo de conexão que afeta o mecanismo de autenticação do Adobe Identity Management Service (IMS).
 
-Como cliente hospedado, nenhuma ação é necessária: O Adobe é o proprietário das atualizações de atualização e configuração da build para você.
+Como cliente hospedado, o Adobe informará você sobre as atualizações de build necessárias a intervalos regulares. Você precisa atualizar de acordo com as recomendações para garantir a conformidade.
 
-Como cliente local/híbrido, é necessário atualizar para uma das versões listadas acima. Além disso, você precisa executar algumas tarefas manuais para garantir que seu ambiente esteja seguro e pronto para futuras alterações de sistemas Adobe ou de terceiros.
+Como cliente local/híbrido, é necessário atualizar para uma das versões listadas acima. Além disso, algumas tarefas manuais devem ser executadas para garantir que seu ambiente esteja seguro e pronto para futuras alterações de sistemas de Adobe ou de terceiros.
 
 ## Atualizações de segurança
 
