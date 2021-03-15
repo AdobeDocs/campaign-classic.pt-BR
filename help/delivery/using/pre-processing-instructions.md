@@ -7,10 +7,10 @@ audience: delivery
 content-type: reference
 topic-tags: tracking-messages
 translation-type: tm+mt
-source-git-commit: 7a58da8fd20abbff9dcf8361536310de49a7905f
+source-git-commit: 8aab4bc23d688aa225cfc636936cf2835840e410
 workflow-type: tm+mt
 source-wordcount: '642'
-ht-degree: 84%
+ht-degree: 79%
 
 ---
 
@@ -24,8 +24,8 @@ Elas só são aplicáveis no contexto do conteúdo do delivery. É a única mane
 Há três tipos de instruções:
 
 * **[!DNL include]**: principalmente para fatorar alguns códigos em opções, blocos de personalização, arquivos externos ou páginas. [Saiba mais](#include)
-* &quot;**[!DNL value]**&quot;: para dar acesso aos campos do delivery, às variáveis do delivery e aos objetos personalizados carregados no delivery. [Saiba mais](#value)
-* &quot;**[!DNL foreach]**&quot;: para executar um loop em uma matriz carregada como um objeto personalizado. [Saiba mais](#foreach)
+* **[!DNL value]**: para dar acesso aos campos do delivery, às variáveis do delivery e aos objetos personalizados carregados no delivery. [Saiba mais](#value)
+* **[!DNL foreach]**: para executar um loop em uma matriz carregada como um objeto personalizado. [Saiba mais](#foreach)
 
 Elas podem ser testadas diretamente no assistente do delivery. Elas são aplicáveis na pré-visualização de conteúdo e quando você clica no botão de rastreamento para ver a lista dos URLs.
 
@@ -75,8 +75,8 @@ Em que:
 
 * **[!DNL object]**: nome do objeto (por exemplo: delivery, provedor e assim por diante).
 O objeto pode ser:
-   * &quot;delivery&quot;: para o delivery atual (consulte os detalhes e as restrições na subseção abaixo).
-   * &quot;provider&quot;: para o provedor/roteamento atual do delivery (nms:externalAccount).
+   * **[!DNL delivery]**: para o delivery atual (consulte os detalhes e as restrições na subseção abaixo).
+   * **[!DNL provider]**: para o provedor/roteamento atual do delivery (nms:externalAccount).
    * Um objeto de script extra: se um objeto for carregado no contexto por meio de: **Propriedades** > **Personalização** > **Adicionar objetos no contexto de execução**.
    * Item do loop foreach: consulte a seção [Foreach](#foreach) abaixo.
 * **[!DNL xpath]**: xpath do campo.
@@ -101,22 +101,28 @@ Para personalização por email, o objeto de delivery pode ser acessado de duas 
    ```
 
 
->[!NOTE]
->
->* Para a instrução `<%@ value object="delivery" xpath="@myCustomField" %>`, há outra limitação para deliveries enviados via mid-sourcing. O campo personalizado @myCustomField deve ser adicionado ao esquema nms:delivery nas plataformas de marketing e mid-sourcing.
-   >
-   >
-* Para parâmetros/variáveis de delivery, use a seguinte sintaxe (usando o objeto de delivery):
->
->
-`<%@ value object="delivery" xpath="variables/var[@name='myVar']/@stringValue" %>`
+**Cuidado**
+
+Se você estiver usando a seguinte instrução para deliveries enviados via mid-sourcing, o campo personalizado **@myCustomField** deverá ser adicionado ao schema nms:delivery nas plataformas de marketing e mid-sourcing:
+
+```
+<%@ value object="delivery" xpath="@myCustomField" %>
+```
+
+Para parâmetros/variáveis de delivery, use a seguinte sintaxe (usando o objeto de delivery):
+
+```
+<%@ value object="delivery" xpath="variables/var[@name='myVar']/@stringValue" %>
+```
 
 ### [!DNL value] em uma seção Javascript  {#value-in-javascript}
 
 Para permitir o uso do valor &lt;%@ em seções Javascript, dois objetos especiais são substituídos por &lt;% e %>:
 
-* `<%@ value object='startScript' %>`
-* `<%@ value object='endScript' %>`
+```
+<%@ value object='startScript' %>
+<%@ value object='endScript' %>
+```
 
 Por exemplo:
 
