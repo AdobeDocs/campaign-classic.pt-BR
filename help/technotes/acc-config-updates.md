@@ -6,10 +6,10 @@ description: Nota técnica
 hide: true
 hidefromtoc: true
 translation-type: tm+mt
-source-git-commit: 504a948daa60155b7c4970be24bd6d2049e5395b
+source-git-commit: 1233eef1d7b454daea021e1e3077890284813d9a
 workflow-type: tm+mt
-source-wordcount: '989'
-ht-degree: 13%
+source-wordcount: '1026'
+ht-degree: 15%
 
 ---
 
@@ -105,7 +105,15 @@ O serviço de autenticação oAuth herdado chegou ao fim da vida útil. A autent
 
 **Você é afetado?**
 
-Se suas instâncias estiverem em execução em uma versão **anterior à Campanha 19.1.8, 20.2.4, Gold Standard 11**, você estará usando uma versão mais antiga da integração de acionadores por meio da autenticação oAuth: **é necessário mover para Adobe I/O**.
+Se suas instâncias estiverem em execução em uma versão **anterior à Campanha 19.1.8, 20.2.4, Gold Standard 11**, você estará usando uma versão mais antiga da integração de acionadores por meio da autenticação oAuth: **é necessário atualizar para uma versão mais recente e ir para Adobe I/O**.
+
+A atualização para uma das novas versões listadas abaixo é obrigatória:
+
+* Gold Standard 11. [Saiba mais](../rn/using/gold-standard.md)
+* Campaign versão 21.1.1. [Saiba mais](../rn/using/latest-release.md)
+* Campaign versão 20.3.3. [Saiba mais](../rn/using/release--20-3.md)
+* Campaign versão 20.2.4. [Saiba mais](../rn/using/release--20-2.md)
+* Campaign versão 19.1.8. [Saiba mais](../rn/using/release--19-1.md)
 
 **Como atualizar?**
 
