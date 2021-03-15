@@ -6,10 +6,10 @@ description: Nota técnica
 hide: true
 hidefromtoc: true
 translation-type: tm+mt
-source-git-commit: 74610fa197dd9ef27342e08dd0ba3403c1a9acc0
+source-git-commit: c9e3d12f8975b2c87f6f4aaf306fae71803786ad
 workflow-type: tm+mt
-source-wordcount: '918'
-ht-degree: 15%
+source-wordcount: '941'
+ht-degree: 14%
 
 ---
 
@@ -44,7 +44,7 @@ As versões mais recentes do Campaign são fornecidas com uma correção de segu
 
 **Você é afetado?**
 
-Se o ambiente estiver em uma build inferior à Campanha 21.1, você será afetado.
+Se o ambiente estiver em uma build inferior à Campanha 19.1.8, 19.2.4, 20.1.4, 20.2.4, 20.3.3 ou Gold Standard 11, você será afetado.
 
 **Como atualizar?**
 
@@ -66,6 +66,11 @@ Você precisa atualizar para uma das builds mais recentes listadas acima.
 A build Gold Standard 11 mais recente corrige uma regressão que impedia o uso de alguns componentes do console, como o seletor de datas e o gerenciamento de imagens nos deliveries. A atualização do console é obrigatória.
 
 [Saiba mais](../rn/using/gold-standard.md).
+
+
+>[!NOTE]
+>
+>As atualizações de outras versões estarão disponíveis em breve.
 
 ## Conectar-se ao Campaign por meio do IMS
 
@@ -93,7 +98,7 @@ O serviço de autenticação oAuth herdado chegou ao fim da vida útil. A autent
 
 **Você é afetado?**
 
-Se você estiver usando uma versão mais antiga da integração de acionadores por meio da autenticação oAuth, **será necessário mover para o Adobe I/O**.
+Se o ambiente estiver em uma build inferior ao Campaign 19.1.8, 20.2.4, Gold Standard 11, você está usando uma versão mais antiga da integração de acionadores por meio da autenticação oAuth: **é necessário mover para Adobe I/O**.
 
 **Como atualizar?**
 
