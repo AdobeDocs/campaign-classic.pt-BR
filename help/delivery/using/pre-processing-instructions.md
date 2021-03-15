@@ -7,10 +7,10 @@ audience: delivery
 content-type: reference
 topic-tags: tracking-messages
 translation-type: tm+mt
-source-git-commit: 768fe62db4efd1217c22973c7e5dc31097d67bae
+source-git-commit: 7a58da8fd20abbff9dcf8361536310de49a7905f
 workflow-type: tm+mt
-source-wordcount: '647'
-ht-degree: 86%
+source-wordcount: '642'
+ht-degree: 84%
 
 ---
 
@@ -23,9 +23,9 @@ Elas só são aplicáveis no contexto do conteúdo do delivery. É a única mane
 
 Há três tipos de instruções:
 
-* &quot;**include**&quot;: principalmente para fatorar alguns códigos em opções, blocos de personalização, arquivos externos ou páginas
-* &quot;**value**&quot;: para dar acesso aos campos do delivery, às variáveis do delivery e aos objetos personalizados carregados no delivery
-* &quot;**foreach**&quot;: para executar um loop em uma matriz carregada como um objeto personalizado.
+* **[!DNL include]**: principalmente para fatorar alguns códigos em opções, blocos de personalização, arquivos externos ou páginas. [Saiba mais](#include)
+* &quot;**[!DNL value]**&quot;: para dar acesso aos campos do delivery, às variáveis do delivery e aos objetos personalizados carregados no delivery. [Saiba mais](#value)
+* &quot;**[!DNL foreach]**&quot;: para executar um loop em uma matriz carregada como um objeto personalizado. [Saiba mais](#foreach)
 
 Elas podem ser testadas diretamente no assistente do delivery. Elas são aplicáveis na pré-visualização de conteúdo e quando você clica no botão de rastreamento para ver a lista dos URLs.
 
@@ -33,15 +33,33 @@ Elas podem ser testadas diretamente no assistente do delivery. Elas são aplicá
 
 Os seguintes exemplos estão entre os mais usados:
 
-* Incluindo o link de mirror page: `<%@ include view="MirrorPage" %>`
-* URL de mirror page: &quot;Exibir como `<a href="<%@ include view='MirrorPageUrl' %>" _label="Mirror Page" _type="mirrorPage">web page"`
-* URL de unsubscription pronto para uso: `<%@ include option='NmsServer_URL' %>/webApp/unsub?id=<%= escapeUrl(recipient.cryptedId)%>`
-* Outros exemplos:
-   * `<%@ include file='http://www.google.com' %>`
-   * `<%@ include file='file:///X:/france/service/test.html' %>`
-   * `<%@ include option='NmsServer_URL' %>`
+* Incluindo o link de mirror page:
 
-Use o botão de personalização no assistente do delivery para obter a sintaxe correta.
+   ```
+   <%@ include view="MirrorPage" %>  
+   ```
+
+* URL da página espelhada:
+
+   ```
+   View as a <a href="<%@ include view='MirrorPageUrl' %>" _label="Mirror Page" _type="mirrorPage">web page.
+   ```
+
+* URL de unsubscription pronto para uso:
+
+   ```
+   <%@ include option='NmsServer_URL' %>/webApp/unsub?id=<%= escapeUrl(recipient.cryptedId)%>
+   ```
+
+* Outros exemplos:
+
+   ```
+   <%@ include file='http://www.google.com' %>
+   <%@ include file='file:///X:/france/service/test.html' %>
+   <%@ include option='NmsServer_URL' %>
+   ```
+
+   Use o botão de personalização no assistente do delivery para obter a sintaxe correta.
 
 ## [!DNL value] {#value}
 
@@ -49,7 +67,9 @@ Essa instrução dá acesso aos parâmetros do delivery que são constantes para
 
 Sintaxe:
 
-`<%@ value object="myObject" xpath="@myField" index="1" %>`
+```
+<%@ value object="myObject" xpath="@myField" index="1" %>
+```
 
 Em que:
 
@@ -66,19 +86,30 @@ O objeto pode ser:
 
 Para personalização por email, o objeto de delivery pode ser acessado de duas formas:
 
-* No JavaScript. Por exemplo: `<%= delivery.myField %>`.
+* Utilização do JavaScript:
+
+   ```
+   <%= delivery.myField %>`.
+   ```
 
    No delivery de objetos JavaScript, não há suporte para campos personalizados. Eles funcionam na pré-visualização, mas não no MTA, porque o MTA só pode acessar o esquema de delivery pronto para uso.
 
-* Por meio do `<%@ value object="delivery"` pré-processamento.
+* Uso de um pré-processamento:
 
-Para a instrução `<%@ value object="delivery" xpath="@myCustomField" %>`, há outra limitação para deliveries enviados via mid-sourcing. O campo personalizado @myCustomField deve ser adicionado ao esquema nms:delivery nas plataformas de marketing e mid-sourcing.
+   ```
+   <%@ value object="delivery"
+   ```
+
 
 >[!NOTE]
 >
->Para parâmetros/variáveis de delivery, use a seguinte sintaxe (usando o objeto de delivery):
+>* Para a instrução `<%@ value object="delivery" xpath="@myCustomField" %>`, há outra limitação para deliveries enviados via mid-sourcing. O campo personalizado @myCustomField deve ser adicionado ao esquema nms:delivery nas plataformas de marketing e mid-sourcing.
+   >
+   >
+* Para parâmetros/variáveis de delivery, use a seguinte sintaxe (usando o objeto de delivery):
 >
->`<%@ value object="delivery" xpath="variables/var[@name='myVar']/@stringValue" %>`
+>
+`<%@ value object="delivery" xpath="variables/var[@name='myVar']/@stringValue" %>`
 
 ### [!DNL value] em uma seção Javascript  {#value-in-javascript}
 
@@ -100,14 +131,16 @@ Essa instrução permite a iteração em uma matriz de objetos carregada no deli
 
 Sintaxe:
 
-`<%@ foreach object="myObject" xpath="myLink" index="3" item="myItem" %> <%@ end %>`
+```
+<%@ foreach object="myObject" xpath="myLink" index="3" item="myItem" %> <%@ end %>
+```
 
 Em que:
 
-* &quot;object&quot;: nome do objeto do qual iniciar; geralmente, é um objeto de script extra, mas pode ser um delivery.
-* &quot;xpath&quot; (opcional): xpath da coleção na qual executar um loop. O padrão é &quot;.&quot;, o que significa que o objeto é a matriz na qual executar um loop.
-* &quot;índice&quot; (opcional): se xpath não for &quot;.&quot; e o objeto é uma matriz em si, índice de item do objeto (começa em 0).
-* &quot;Item&quot; (opcional): nome de um novo objeto acessível com o valor &lt;%@ dentro do loop foreach. Padrão com o nome do link no esquema.
+* **[!DNL object]**: nome do objeto do qual iniciar; geralmente, é um objeto de script extra, mas pode ser um delivery.
+* **[!DNL xpath]** (opcional): xpath da coleção na qual executar um loop. O padrão é &quot;.&quot;, o que significa que o objeto é a matriz na qual executar um loop.
+* **[!DNL index]** (opcional): se xpath não for &quot;.&quot; e o objeto é uma matriz em si, índice de item do objeto (começa em 0).
+* **[!DNL item]** (opcional): nome de um novo objeto acessível com o valor &lt;%@ dentro do loop foreach. Padrão com o nome do link no esquema.
 
 Exemplo:
 
