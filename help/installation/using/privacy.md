@@ -7,9 +7,9 @@ audience: installation
 content-type: reference
 topic-tags: prerequisites-and-recommendations-
 translation-type: tm+mt
-source-git-commit: f03554302c77a39a3ad68d47417ed930f43302b7
+source-git-commit: 768fe62db4efd1217c22973c7e5dc31097d67bae
 workflow-type: tm+mt
-source-wordcount: '779'
+source-wordcount: '772'
 ht-degree: 30%
 
 ---
@@ -23,7 +23,7 @@ O Adobe Campaign oferece um conjunto de ferramentas que ajuda na Conformidade da
 
 Consulte [esta página](../../platform/using/privacy-management.md) para obter informações gerais sobre o que é o Gerenciamento de privacidade e as etapas de implementação no Adobe Campaign. Além disso, você encontrará as práticas recomendadas e uma visão geral do processo de usuários e personas.
 
-## Personalização de URL
+## Personalização de URL {#url-personalization}
 
 Quando adicionar links personalizados ao seu conteúdo, evite sempre personalização na parte do hostname do URL para evitar possíveis falhas de segurança. Os exemplos a seguir nunca devem ser usados em todos os atributos de URL &lt;`a href="">` ou `<img src="">`:
 
@@ -57,7 +57,7 @@ Para melhorar a segurança, um novo mecanismo de assinatura para rastrear links 
 >
 >Quando um URL assinado mal formado é clicado, ele retornará o seguinte erro: &quot;O URL solicitado &#39;... &#39; não foi encontrado.&quot;
 
-Além disso, clientes hospedados e híbridos na Build 19.1.4 (9032@3a9dc9c e 9032@800be2e) e no Campaign 20.2 podem usar um aprimoramento para desativar URLs gerados em compilações anteriores. Essa opção está desabilitada por padrão. É possível entrar em contato com o [Atendimento ao cliente](https://helpx.adobe.com/br/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html) para ativar esse recurso.
+Além disso, a partir da versão Campaign 20.2 e Gold Standard, os clientes hospedados e híbridos poderão usar um aprimoramento para desativar URLs gerados de builds anteriores. Essa opção está desabilitada por padrão. É possível entrar em contato com o [Atendimento ao cliente](https://helpx.adobe.com/br/enterprise/admin-guide.html) para ativar esse recurso.
 
 Para ativar esse novo recurso, os clientes locais precisam seguir estas etapas em todos os servidores do Campaign:
 
@@ -65,7 +65,7 @@ Para ativar esse novo recurso, os clientes locais precisam seguir estas etapas e
 1. Reinicie o serviço **nlserver**.
 1. No servidor de rastreamento, reinicie o servidor da Web (apache2 em Debian, httpd em CentOS/RedHat, IIS no Windows).
 
-Os clientes que estiverem executando a Build 19.1.4 (9032@3a9dc9c) podem enfrentar problemas com deliveries de notificação por push usando o link de rastreamento ou com deliveries usando tags de âncora. Em caso positivo, a Adobe recomenda desativar o novo mecanismo de assinatura para links de rastreamento:
+Os clientes que estiverem executando no Gold Standard 19.1.4 podem enfrentar problemas com os deliveries de notificação por push usando o link de rastreamento ou com deliveries usando tags de âncora. Em caso positivo, o Adobe recomenda desativar o novo mecanismo de assinatura para links de rastreamento:
 
 **Os** clientes hospedados e híbridos devem entrar em contato com o  [Atendimento ao ](https://helpx.adobe.com/br/enterprise/using/support-for-experience-cloud.html) cliente para desativar esse mecanismo.
 
