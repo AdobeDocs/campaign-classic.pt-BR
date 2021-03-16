@@ -6,11 +6,11 @@ description: Saiba como executar testes A/B por meio de um caso de uso dedicado.
 audience: delivery
 content-type: reference
 topic-tags: a-b-testing
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 50a10e16f320a67cb4ad0e31c1cbe8a9365b7887
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '335'
-ht-degree: 92%
+ht-degree: 100%
 
 ---
 
@@ -170,4 +170,4 @@ O exemplo acima permite selecionar o conteúdo de uma delivery com base na taxa 
 * Taxa de cancelamento de subscrição mais baixa: `[indicators/@optOutRatio]`,
 * Valor da transação: `[indicators/@amount]`.
 
-Agora você pode definir o delivery final (consulte [Etapa 6: Defina o delivery final](../../delivery/using/a-b-testing-uc-final-delivery.md)).
+Agora você pode definir o delivery final (consulte [Etapa 6: definir o delivery final](../../delivery/using/a-b-testing-uc-final-delivery.md)).
