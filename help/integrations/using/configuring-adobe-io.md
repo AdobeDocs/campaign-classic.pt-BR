@@ -9,10 +9,10 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 25673f33c626edd5b7f4c7ba240364b3ea8d616a
+source-git-commit: 42166334d361ffdac13842cd9d07ca7c9859bbb2
 workflow-type: tm+mt
-source-wordcount: '484'
-ht-degree: 97%
+source-wordcount: '580'
+ht-degree: 75%
 
 ---
 
@@ -21,9 +21,9 @@ ht-degree: 97%
 
 >[!CAUTION]
 >
->Se você estiver usando uma versão mais antiga da integração de acionadores por meio da autenticação oAuth, **será necessário mover para o Adobe I/O conforme descrito abaixo**. O modo de autenticação oAuth herdado será desativado em 30 de abril de 2021. [Saiba mais](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-discussions/adobe-analytics-legacy-api-end-of-life-notice/td-p/385411)
+>Se você estiver usando uma versão mais antiga da integração de acionadores por meio da autenticação oAuth, **será necessário mover para o Adobe I/O conforme descrito abaixo**. O modo de autenticação oAuth herdado será desativado em **30 de abril de 2021**. [Saiba mais](https://github.com/AdobeDocs/analytics-1.4-apis/blob/master/docs/APIEOL.md?mv=email).
 >
->Observe que durante essa mudança para o Adobe I/O, alguns acionadores recebidos podem ser perdidos.
+>Observe que durante essa mudança para [!DNL Adobe I/O], alguns acionadores recebidos podem ser perdidos.
 
 ## Pré-requisitos {#adobe-io-prerequisites}
 
@@ -36,7 +36,7 @@ Antes de iniciar esta implementação, verifique se você tem:
 
 ## Etapa 1: Criar/atualizar projeto do Adobe I/O {#creating-adobe-io-project}
 
-1. Acesse o Adobe I/O e faça logon com o direito Administrador do sistema para o IMS Organization.
+1. Acesse [!DNL Adobe I/O] e faça logon com o Administrador do sistema diretamente para a Organização IMS.
 
    >[!NOTE]
    >
@@ -66,17 +66,22 @@ Antes de iniciar esta implementação, verifique se você tem:
 
 1. Se a ID do cliente estiver vazia, selecione **[!UICONTROL Generate a key pair]** para criar um par de chaves público e privado.
 
+   As chaves serão baixadas automaticamente com uma data de expiração padrão de 365 dias. Depois de expirar, você precisará criar um novo par de chaves e atualizar a integração no arquivo de configuração. Usando a Opção 2, você pode optar por criar e carregar manualmente seu **[!UICONTROL Public key]** com uma data de expiração mais longa.
+
    ![](assets/do-not-localize/adobe_io_4.png)
 
-1. Carregue sua chave pública e clique em **[!UICONTROL Next]**.
+1. Clique em **[!UICONTROL Next]**.
 
    ![](assets/do-not-localize/adobe_io_5.png)
 
-1. Escolha o perfil de produto chamado **Analytics-&lt; Org Name >** e clique em **[!UICONTROL Save configured API]**.
+1. Escolha qualquer **[!UICONTROL Product profile]** existente ou crie um novo, se necessário. Em seguida, clique em **[!UICONTROL Save configured API]**.
+
+   Para obter mais informações sobre [!DNL Analytics] **[!UICONTROL Product Profiles]**, consulte a [documentação do Adobe Analytics](https://experienceleague.adobe.com/docs/analytics/admin/admin-console/home.html#admin-console).
 
    ![](assets/do-not-localize/adobe_io_6.png)
 
-1. Em seu projeto, selecione **[!UICONTROL Service Account (JWT)]** e copie as seguintes informações:
+1. Em seu projeto, selecione **[!UICONTROL Adobe Analytics]** e copie as seguintes informações em **[!UICONTROL Service Account (JWT)]**:
+
    * **[!UICONTROL Client ID]**
    * **[!UICONTROL Client Secret]**
    * **[!UICONTROL Technical account ID]**
@@ -86,7 +91,7 @@ Antes de iniciar esta implementação, verifique se você tem:
 
 >[!CAUTION]
 >
->O certificado do Adobe I/O expirará após 12 meses. Você precisa gerar um novo par de chaves todos os anos.
+>O certificado do Adobe I/O expirará após 12 meses. Você precisa gerar um novo par de chaves todo ano.
 
 ## Etapa 2: adicionar as credenciais do projeto no Adobe Campaign {#add-credentials-campaign}
 
@@ -96,9 +101,17 @@ Para adicionar as credenciais do projeto no Adobe Campaign, execute o seguinte c
 nlserver config -instance:<instance name> -setimsjwtauth:Organization_Id/Client_Id/Technical_Account_ID/<Client_Secret>/<Base64_encoded_Private_Key>
 ```
 
->[!NOTE]
->
->Você deve codificar a chave privada no formato base64 UTF-8. Lembre-se de remover a nova linha da chave antes de codificá-la, exceto para a chave privada. A chave privada precisa ser a mesma usada para criar a integração. Para testar a codificação base64 da chave privada, você pode usar [este site](https://www.base64encode.org/).
+A chave privada deve ser codificada no formato base64 UTF-8. Para fazer isso:
+
+1. Use a chave privada gerada na [Etapa 1: criar/atualizar a seção Projeto do Adobe I/O](#creating-adobe-io-project). A chave privada precisa ser a mesma usada para criar a integração.
+
+1. Codifique a chave privada usando o seguinte comando: ```base64 ./private.key```.
+
+   >[!NOTE]
+   >
+   >Às vezes, linhas adicionais podem ser adicionadas automaticamente ao copiar/colar a chave privada. Lembre-se de removê-la antes de codificar sua chave privada.
+
+1. Use a chave privada recém-gerada codificada no formato base64 UTF-8 para executar o comando detalhado acima.
 
 ## Etapa 3: atualizar a tag de pipeline {#update-pipelined-tag}
 
