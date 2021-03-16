@@ -6,18 +6,18 @@ description: Saiba como executar testes A/B por meio de um caso de uso dedicado.
 audience: delivery
 content-type: reference
 topic-tags: a-b-testing
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 177b4e74c75e4fcca70dc90b5ff2c0406181e0f7
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '103'
-ht-degree: 88%
+ht-degree: 100%
 
 ---
 
 
 # Análise do resultado {#step-8--analyzing-the-result}
 
-Depois que as deliveries forem enviadas, é possível verificar quais recipients receberam e se eles abriram ou não a entrega.
+Depois que os deliveries de teste forem enviados, será possível verificar a quais recipients eles foram enviados e se foram abertos ou não.
 
 * Para descobrir quais recipients foram selecionados, abra um pelo painel de campanha e clique na guia **[!UICONTROL Delivery]** Delivery.
 
