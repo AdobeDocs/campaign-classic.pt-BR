@@ -6,11 +6,11 @@ description: Iniciar o Adobe Campaign
 audience: platform
 content-type: reference
 topic-tags: starting-with-adobe-campaign
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 33debcd6e399d2780277644103a620d46c22022e
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '558'
-ht-degree: 78%
+ht-degree: 100%
 
 ---
 
@@ -43,7 +43,7 @@ Também é possível conectar-se com uma combinação exclusiva de login e senha
 
 1. Clique em **[!UICONTROL LOG IN]** para confirmar.<!--You can also press the **Enter** key to launch connection.-->
 
-Agora, você pode acessar a [área de trabalho do Adobe Campaign](../../platform/using/adobe-campaign-workspace.md).
+Agora, você pode acessar o [Workspace do Adobe Campaign](../../platform/using/adobe-campaign-workspace.md).
 
 Alguns atalhos do teclado estão disponíveis em **[!UICONTROL Sign in screen]**:
 * Todos os itens acionáveis podem ser selecionados pelas teclas **Tab** (de cima para baixo) ou **Tab** + **Shift** (de baixo para cima).
@@ -84,18 +84,18 @@ Para desconectar-se do Adobe Campaign, use o primeiro ícone na barra de ícones
 >
 >Você também pode fechar o aplicativo sem fazer logoff.
 
-## Obter a versão do Adobe Campaign {#getting-your-campaign-version}
+## Conheça a sua versão do Adobe Campaign {#getting-your-campaign-version}
 
 O menu **[!UICONTROL Help > About...]** permite acessar as seguintes informações:
 
-* **número de** versão para o console do cliente Campaign e o servidor de aplicativos
-* **** buildnumber para o console do cliente Campaign e o servidor de aplicativos
+* **número de** versão do console do cliente Campaign e o servidor de aplicativos
+* **número da** compilação do console do cliente Campaign e o servidor de aplicativos
 * um link para entrar em contato com o Atendimento ao cliente da Adobe
 * links para Política de privacidade da Adobe, Termos de uso e Política de cookies
 
 ![](assets/about-acc.png)
 
-Sempre que você entrar em contato com a equipe de Atendimento ao cliente do Adobe, precisará fornecer o número da versão e o número da compilação do console do cliente Adobe Campaign e do servidor de aplicativos.
+Sempre que entrar em contato com a equipe de Atendimento ao cliente da Adobe, você precisará fornecer o número da versão e o número da compilação do seu console de cliente do Adobe Campaign e do servidor de aplicativos.
 
 Se estiver executando na [versão Campaign Gold Standard](../../rn/using/gold-standard.md), você também precisará compartilhar os caracteres SHA/1 exibidos na caixa **[!UICONTROL About]**. Por exemplo, para a versão **Gold Standard 10**, o número da build mostrará a **build 9032@efd8a94**, como mostrado abaixo:
 
@@ -105,6 +105,6 @@ Saiba mais sobre a Gold Standard [neste artigo](https://helpx.adobe.com/br/campa
 
 **Tópicos relacionados**:
 
-* [Opções de Ajuda e suporte da Adobe Campaign](https://helpx.adobe.com/br/campaign/kb/ac-support.html#acc-support)
-* [Distribuição de software Adobe Campaign](https://experience.adobe.com/#/downloads/content/software-distribution/en/campaign.html)
-* [Sessões de suporte e especialista da Adobe Experience Cloud](https://helpx.adobe.com/br/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html)
+* [Opções de Ajuda e Suporte do Adobe Campaign](https://helpx.adobe.com/br/campaign/kb/ac-support.html#acc-support)
+* [Distribuição de Software Adobe Campaign](https://experience.adobe.com/#/downloads/content/software-distribution/br/campaign.html)
+* [Suporte e sessões especializadas para o Adobe Experience Cloud](https://helpx.adobe.com/br/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html)
