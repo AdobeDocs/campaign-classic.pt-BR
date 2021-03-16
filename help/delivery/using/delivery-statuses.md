@@ -6,11 +6,11 @@ description: Saiba mais sobre os status disponíveis no painel do delivery.
 audience: delivery
 content-type: reference
 topic-tags: monitoring-deliveries
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 29801740c10dc182bdb5f00114298d04385a3e1b
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '617'
-ht-degree: 94%
+ht-degree: 100%
 
 ---
 
@@ -68,8 +68,8 @@ Para obter mais detalhes sobre as diferentes falhas de delivery que podem ser en
    <td> O delivery foi cancelado por um operador.<br /> </td> 
   </tr> 
   <tr> 
-   <td> Taken into account by the service provider<br /> </td> 
-   <td> O provedor de serviços SMS recebeu o delivery.<br /> Para instalações hospedadas ou híbridas, se você atualizou para o MTA  <a href="../../delivery/using/sending-with-enhanced-mta.md" target="_blank">aprimorado</a>, a mensagem foi repassada com êxito da Campanha para o MTA aprimorado.</td> 
+   <td> Levado em consideração pelo provedor de serviço<br /> </td> 
+   <td> O provedor de serviços SMS recebeu o delivery.<br /> Para instalações hospedadas ou híbridas, se você atualizou para o <a href="../../delivery/using/sending-with-enhanced-mta.md" target="_blank">MTA aprimorado</a>, a mensagem foi repassada com êxito do Campaign para o MTA aprimorado.</td> 
   </tr> 
   <tr> 
    <td> Received on mobile<br /> </td> 
@@ -129,7 +129,7 @@ Se o delivery não estiver sendo enviado e o status permanecer **[!UICONTROL Pen
 
    Nesse caso, verifique a configuração do gerenciamento de tráfego (afinidade IP) e use o campo **[!UICONTROL Managing affinities with IP addresses]** para vincular deliveries ao MTA que gerencia a afinidade. Para obter mais informações sobre afinidades, consulte [esta seção](../../installation/using/configuring-campaign-server.md#personalizing-delivery-parameters).
 
-* Quando muitas campanhas estão em execução, o status do delivery permanece no status &quot;Pendente&quot;.
+* Quando muitas campanhas são executadas, o status do delivery permanece como &quot;Pendente&quot;.
 
    O limite de campanhas simultâneas é definido na opção **[!UICONTROL NmsOperation_LimitConcurrency]**. O valor padrão é 10.
 
