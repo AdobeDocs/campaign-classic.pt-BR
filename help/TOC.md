@@ -6,12 +6,12 @@ title: Guia do Campaign Classic
 breadcrumb-url: /docs/campaign-classic/using/campaign-classic-home.html
 user-guide-description: Projete, planeje, execute, gerencie e otimize campanhas de marketing entre canais que proporcionam um alto retorno sobre o investimento em marketing.
 solution: Campaign Classic
-sub-product: Adobe Campaign Classic
+sub-product: adobe campaign classic
 type: Documentação
 translation-type: tm+mt
-source-git-commit: 2a82c1f67d8bc6d8499383a600a003480e82510f
+source-git-commit: 4552b8c73f0d547a9bb2dc7d8489927ea687f575
 workflow-type: tm+mt
-source-wordcount: '2464'
+source-wordcount: '2467'
 ht-degree: 58%
 
 ---
@@ -114,6 +114,7 @@ ht-degree: 58%
          + [Conecte-se com o Microsoft Dynamics 365](platform/using/crm-ms-dynamics.md)
          + [Sincronizar dados com o CRM](platform/using/crm-data-sync.md)
       + [Conector de dados do Adobe Analytics](platform/using/adobe-analytics-data-connector.md)
+   + [Opções de ajuda e suporte](support.md)
 + Criar e enviar mensagens {#sending-messages}
    + [Introdução a mensagens](delivery/using/communication-channels.md)
    + Etapas principais ao criar um delivery {#key-steps-when-creating-a-delivery}
@@ -217,7 +218,7 @@ ht-degree: 58%
       + [Configurar opções de rastreamento de URL](delivery/using/personalizing-url-tracking.md)
       + [Acessar os logs de rastreamento](delivery/using/accessing-the-tracking-logs.md)
       + [Rastreamento de teste](delivery/using/testing-tracking.md)
-      + [Rastreamento de problemas](delivery/using/tracking-troubleshooting.md)
+      + [Rastreamento da solução de problemas](delivery/using/tracking-troubleshooting.md)
    + Gerenciamento de deliverability {#deliverability-management}
       + [Sobre a capacidade de delivery](delivery/using/about-deliverability.md)
       + [Pontos principais a serem verificados](delivery/using/deliverability-key-points.md)
@@ -329,7 +330,7 @@ ht-degree: 58%
       + [Casos de uso: criar visões gerais](web/using/use-cases--creating-overviews.md)
       + [Tradução de uma aplicação web](web/using/translating-a-web-application.md)
       + [Rastrear visitas em uma aplicação web](web/using/tracking-a-web-application.md)
-      + [Opt out de rastreamento da aplicação web](web/using/web-application-tracking-opt-out.md)
+      + [Recusar rastreamento da aplicação web](web/using/web-application-tracking-opt-out.md)
    + Editar conteúdo HTML {#editing-html-content}
       + [Introdução ao editor de HTML](web/using/about-campaign-html-editor.md)
       + [Gerenciamento de templates](web/using/template-management.md)
