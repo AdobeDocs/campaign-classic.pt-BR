@@ -7,9 +7,9 @@ audience: platform
 content-type: reference
 topic-tags: starting-with-adobe-campaign
 translation-type: tm+mt
-source-git-commit: 5639f08ad709597d5f5c9e6bbd6932cffcbde40f
+source-git-commit: 4d5d14565726c5c6e7c4e2e8a82cfa8cef87be0f
 workflow-type: tm+mt
-source-wordcount: '2017'
+source-wordcount: '2015'
 ht-degree: 100%
 
 ---
@@ -168,7 +168,7 @@ Sim. O servidor é desligado durante uma atualização para garantir que a integ
 
 Se você enfrentar problemas após uma atualização de build, entre em contato com o [Atendimento ao cliente da Adobe](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html). O Atendimento ao cliente agendará as datas de criação e abrirá tíquetes relacionados à atualização da build.
 
-Saiba mais sobre as [opções de Ajuda e Suporte para o Campaign Classic](https://helpx.adobe.com/br/campaign/kb/ac-support.html#acc-support-req)
+Saiba mais sobre as [opções de Ajuda e Suporte para o Campaign Classic](https://helpx.adobe.com/br/campaign/kb/ac-support.html)
 
 ## Lista de verificação de atualização de build {#check-list}
 
@@ -207,5 +207,5 @@ todo o conteúdo é exibido e está presente.
 
 * [Atualização de uma build](../../production/using/build-upgrade.md)
 * [Notas de versão do Campaign Classic ](../../rn/using/rn-overview.md)
-* [Opções de ajuda e suporte para o Campaign Classic](https://helpx.adobe.com/campaign/kb/ac-support.html#acc-support-req)
+* [Opções de ajuda e suporte para o Campaign Classic](https://helpx.adobe.com/campaign/kb/ac-support.html)
 * [Programa Gold Standard](https://helpx.adobe.com/campaign/kb/gold-standard.html)
