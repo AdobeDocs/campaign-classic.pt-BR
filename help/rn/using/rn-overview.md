@@ -7,9 +7,9 @@ audience: rns
 content-type: reference
 topic-tags: latest-release-notes
 translation-type: tm+mt
-source-git-commit: e6f6cfe1c1aa0d896fb6400d63b6023a983c6192
+source-git-commit: 4d5d14565726c5c6e7c4e2e8a82cfa8cef87be0f
 workflow-type: tm+mt
-source-wordcount: '437'
+source-wordcount: '436'
 ht-degree: 100%
 
 ---
@@ -55,14 +55,14 @@ Como usuário local, você pode fazer a atualização. Para isso, [baixe a build
 
 ### Gold Standard{#upgrade-for-gold-standard-users}
 
-Como usuário convidado do Gold Standard, você se beneficiará automaticamente da atualização Gold Standard com o [build GA mais recente do Gold Standard](../../rn/using/gold-standard.md#gs-11) sem ter de realizar nenhuma ação. [Saiba mais](https://helpx.adobe.com/br/campaign/kb/gold-standard.html).
+Como usuário convidado do Gold Standard, você se beneficiará automaticamente da atualização Gold Standard com o [build GA mais recente do Gold Standard](../../rn/using/gold-standard.md#gs-11) sem ter de realizar nenhuma ação. [Saiba mais](https://helpx.adobe.com/campaign/kb/gold-standard.html).
 
 >[!NOTE]
 >A matriz de compatibilidade para Gold Standard está disponível na [matriz de compatibilidade de DG](../../rn/using/compatibility-matrix-gs.md).
 
 ## Suporte e outros links úteis{#support}
 
-* [Ajuda e suporte](https://helpx.adobe.com/br/campaign/kb/ac-support.html#acc-support)
+* [Ajuda e suporte](https://helpx.adobe.com/br/campaign/kb/ac-support.html)
 * [Versões do Painel de controle do Campaign](https://docs.adobe.com/content/help/pt-BR/control-panel/using/release-notes.html)
 * [Atualizações mais recentes da documentação](../../rn/using/documentation-updates.md)
 * [Recursos descontinuados e removidos](../../rn/using/deprecated-features.md)
