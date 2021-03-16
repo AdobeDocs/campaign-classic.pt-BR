@@ -1,23 +1,23 @@
 ---
 solution: Campaign Classic
 product: campaign
-title: Criação dos templates do delivery
+title: Criação dos modelos de delivery
 description: Saiba como executar testes A/B por meio de um caso de uso dedicado.
 audience: delivery
 content-type: reference
 topic-tags: a-b-testing
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 50a10e16f320a67cb4ad0e31c1cbe8a9365b7887
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '92'
-ht-degree: 59%
+ht-degree: 100%
 
 ---
 
 
-# Criação dos templates do delivery {#step-3--creating-two-delivery-templates}
+# Criação de modelos de delivery {#step-3--creating-two-delivery-templates}
 
-Agora devemos criar dois templates de delivery. Cada modelo será referenciado em uma atividade de **[!UICONTROL Email delivery]** vinculada à atividade **[!UICONTROL Split]**. Para obter mais informações, consulte esta [seção](../../delivery/using/about-templates.md).
+Agora devemos criar dois modelos de delivery. Cada modelo será referenciado em uma atividade de **[!UICONTROL Email delivery]** vinculada à atividade **[!UICONTROL Split]**. Para obter mais informações, consulte esta [seção](../../delivery/using/about-templates.md).
 
 1. Vá para a pasta de **[!UICONTROL Resources > Delivery template]**.
 1. Duplicar o template de delivery **[!UICONTROL Email]**.
@@ -32,4 +32,4 @@ Agora devemos criar dois templates de delivery. Cada modelo será referenciado e
 
    ![](assets/use_case_abtesting_deliverymodel_003.png)
 
-Agora você pode configurar os delivery no fluxo de trabalho (consulte [Etapa 4: Configure os delivery no fluxo de trabalho](../../delivery/using/a-b-testing-uc-configuring-deliveries.md)).
+Agora você pode configurar os deliveries no fluxo de trabalho (consulte [Etapa 4: configurar os deliveries no fluxo de trabalho](../../delivery/using/a-b-testing-uc-configuring-deliveries.md)).
