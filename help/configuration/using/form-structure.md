@@ -7,7 +7,7 @@ audience: configuration
 content-type: reference
 topic-tags: input-forms
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: f82f71f4eed44f4f12ab7a65188d25ff6c552d35
 workflow-type: tm+mt
 source-wordcount: '2384'
 ht-degree: 4%
@@ -17,9 +17,9 @@ ht-degree: 4%
 
 # Estrutura do formulário{#form-structure}
 
-A descrição de um formulário é um documento XML estruturado que observa a gramática do schema de formulário **xtk:form**.
+A descrição de um formulário é um documento XML estruturado que está de acordo com a gramática do schema de formulários **xtk:form**.
 
-O documento XML do formulário de entrada deve conter o elemento raiz `<form>` com os atributos **name** e **namespace** para preencher o nome do formulário e a namespace.
+O documento XML do formulário de entrada deve conter o elemento raiz `<form>` com os atributos **name** e **namespace** para preencher o nome e o namespace do formulário.
 
 ```
 <form name="form_name" namespace="name_space">
@@ -27,7 +27,7 @@ O documento XML do formulário de entrada deve conter o elemento raiz `<form>` c
 </form>
 ```
 
-Por padrão, um formulário é associado ao schema de dados com o mesmo nome e namespace. Para associar um formulário a um nome diferente, defina o atributo **entity-schema** do elemento `<form>` como o nome da chave do schema. Para ilustrar a estrutura de um formulário de entrada, descreva uma interface usando o schema de exemplo &quot;cus:recipient&quot;:
+Por padrão, um formulário é associado ao schema de dados com o mesmo nome e namespace. Para associar um formulário a um nome diferente, defina o atributo **entity-schema** do elemento `<form>` para o nome da chave do schema. Para ilustrar a estrutura de um formulário de entrada, vamos descrever uma interface usando o schema de exemplo &quot;cus:recipient&quot;:
 
 ```
 <srcSchema name="recipient" namespace="cus">
@@ -57,7 +57,7 @@ O formulário de entrada com base no schema de exemplo:
 </form>
 ```
 
-A descrição dos start de controle de edição do elemento raiz `<form>`. Um controle de edição é inserido em um elemento **`<input>`** com o atributo **xpath** contendo o caminho do campo do schema.
+A descrição dos controles de edição começa no elemento raiz `<form>` . Um controle de edição é inserido em um elemento **`<input>`** com o atributo **xpath** contendo o caminho do campo do schema.
 
 O controle de edição se adapta automaticamente ao tipo de dados correspondente e usa o rótulo definido no schema.
 
@@ -66,11 +66,11 @@ O controle de edição se adapta automaticamente ao tipo de dados correspondente
 >Você pode sobrecarregar o rótulo definido em seu schema de dados adicionando o atributo **label** ao elemento `<input>`:\
 >`<input label="E-mail address" xpath="@name" />`
 
-Por padrão, cada campo é exibido em uma única linha e ocupa todo o espaço disponível dependendo do tipo de dados.
+Por padrão, cada campo é exibido em uma única linha e ocupa todo o espaço disponível, dependendo do tipo de dados.
 
 ## Formatação {#formatting}
 
-O layout dos controles se parece com o layout usado em tabelas HTML, com a possibilidade de dividir um controle em várias colunas, elementos de entrelaçamento ou especificar a ocupação do espaço disponível. Lembre-se, no entanto, de que a formatação permite apenas dividir a área para cima por proporções; não é possível especificar dimensões fixas para um objeto.
+O layout dos controles se parece com o layout usado em tabelas HTML, com a possibilidade de dividir um controle em várias colunas, entrelaçar elementos ou especificar a ocupação do espaço disponível. Lembre-se, no entanto, que a formatação permite dividir a área para cima por proporções; não é possível especificar dimensões fixas para um objeto.
 
 Para exibir os controles do exemplo acima em duas colunas:
 
@@ -102,7 +102,7 @@ O atributo **colspan** em um controle estende o controle pelo número de colunas
 </form> 
 ```
 
-Ao preencher o atributo **type=&quot;frame&quot;**, o container adiciona um quadro ao redor dos controles filho com o rótulo contido no atributo **label**:
+Ao preencher o atributo **type=&quot;frame&quot;**, o contêiner adiciona um quadro ao redor dos controles filhos com o rótulo contido no atributo **label**:
 
 ![](assets/d_ncs_integration_form_exemple4.png)
 
@@ -136,11 +136,11 @@ Um texto de ajuda foi adicionado usando a tag `<static>` com o tipo de ajuda. O 
 
 ## Containeres {#containers}
 
-Os containeres permitem agrupar um conjunto de controles. Eles são representados pelo elemento **`<container>`**. Eles foram usados acima para formatar controles em várias colunas.
+Os containeres permitem agrupar um conjunto de controles. Eles são representados pelo elemento **`<container>`** . Eles foram usados acima para formatar controles em várias colunas.
 
-O atributo **xpath** em `<container>` permite simplificar a referência dos controles secundários. A referência dos controles é então relativa ao pai `<container>`.
+O atributo **xpath** em um `<container>` permite simplificar a referência de controles secundários. A referência de controles é então relativa ao pai `<container>`.
 
-Exemplo de um container sem &quot;xpath&quot;:
+Exemplo de um contêiner sem &quot;xpath&quot;:
 
 ```
 <container colcount="2">
@@ -158,13 +158,13 @@ Exemplo com a adição de &quot;xpath&quot; ao elemento chamado &quot;location&q
 </container>
 ```
 
-### Tipos de container {#types-of-container}
+### Tipos de contêiner {#types-of-container}
 
-Container são usados para construir controles complexos usando um conjunto de campos formatados em páginas.
+Os contêineres são usados para construir controles complexos usando um conjunto de campos formatados em páginas.
 
-#### Container de tabulação {#tab-container}
+#### Tabulação do contêiner {#tab-container}
 
-Um container de guia formata dados em páginas que são acessíveis a partir de guias.
+Um contêiner de guia formata dados em páginas que são acessíveis a partir de guias.
 
 ![](assets/d_ncs_integration_form_exemple6.png)
 
@@ -181,7 +181,7 @@ Um container de guia formata dados em páginas que são acessíveis a partir de 
 </container>
 ```
 
-O container principal é definido pelo atributo **type=&quot;notebook&quot;**. As guias são declaradas nos container filhos e o rótulo das guias é preenchido a partir do atributo **label**.
+O contêiner principal é definido pelo atributo **type=&quot;notebook&quot;**. As guias são declaradas nos containers secundários e o rótulo das guias é preenchido a partir do atributo **label**.
 
 >[!NOTE]
 >
@@ -191,7 +191,7 @@ O container principal é definido pelo atributo **type=&quot;notebook&quot;**. A
 
 #### Lista de ícones {#icon-list}
 
-Esse container exibe uma barra de ícones vertical que permite selecionar as páginas a serem exibidas.
+Esse contêiner exibe uma barra de ícones vertical que permite selecionar as páginas a serem exibidas.
 
 ![](assets/d_ncs_integration_form_exemple8.png)
 
@@ -208,15 +208,15 @@ Esse container exibe uma barra de ícones vertical que permite selecionar as pá
 </container>
 ```
 
-O container principal é definido pelo atributo **type=&quot;iconbox&quot;**. As páginas associadas aos ícones são declaradas nos container secundários. O rótulo dos ícones é preenchido a partir do atributo **label**.
+O contêiner principal é definido pelo atributo **type=&quot;iconbox&quot;**. As páginas associadas aos ícones são declaradas nos containers secundários. O rótulo dos ícones é preenchido a partir do atributo **label**.
 
-O ícone de uma página é preenchido a partir do atributo `img="<image>"`, onde `<image>` é o nome da imagem correspondente à sua chave composta pelo nome e pela namespace (por exemplo, &quot;xtk:properties.png&quot;).
+O ícone de uma página é preenchido a partir do atributo `img="<image>"`, onde `<image>` é o nome da imagem correspondente à sua chave composta do nome e do namespace (por exemplo, &quot;xtk:properties.png&quot;).
 
 As imagens estão disponíveis no nó **[!UICONTROL Administration > Configuration > Images]**.
 
-#### Container de visibilidade {#visibility-container}
+#### Contêiner de visibilidade {#visibility-container}
 
-É possível mascarar um conjunto de controles por uma condição dinâmica.
+É possível mascarar um conjunto de controles por meio de uma condição dinâmica.
 
 Este exemplo ilustra a visibilidade dos controles no valor do campo &quot;Gênero&quot;:
 
@@ -229,17 +229,17 @@ Este exemplo ilustra a visibilidade dos controles no valor do campo &quot;Gêner
 </container>
 ```
 
-Um container de visibilidade é definido pelo atributo **type=&quot;visibleGroup&quot;**. O atributo **visibleIf** contém a condição de visibilidade.
+Um contêiner de visibilidade é definido pelo atributo **type=&quot;visibleGroup&quot;**. O atributo **visibleIf** contém a condição de visibilidade.
 
 Exemplos de sintaxe de condição:
 
-* **visibleIf=&quot;@email=&#39;peter.martinezATneeolane.net&#39;&quot;**: testa a igualdade em dados do tipo string. O valor de comparação deve estar entre aspas.
+* **visibleIf=&quot;@email=&#39;peter.martinezATneolane.net&#39;&quot;**: testa a igualdade em dados do tipo string. O valor de comparação deve estar entre aspas.
 * **visibleIf=&quot;@gender >= 1 e @gender != 2&quot;**: em um valor numérico.
-* **visibleIf=&quot;@boolean1==true ou @boolean2==false&quot;**: teste em campos booleanos.
+* **visibleIf=&quot;@boolean1=true ou @boolean2=false&quot;**: teste em campos booleanos.
 
-#### Habilitando container {#enabling-container}
+#### Habilitar contêiner {#enabling-container}
 
-Esse container permite ativar ou desativar um conjunto de dados de uma condição dinâmica. Desativar um controle impede que ele seja editado. O exemplo a seguir ilustra a ativação de controles a partir do valor do campo &quot;Gênero&quot;:
+Esse contêiner permite ativar ou desativar um conjunto de dados de uma condição dinâmica. Desativar um controle impede que ele seja editado. O exemplo a seguir ilustra a ativação de controles do valor do campo &quot;Gênero&quot;:
 
 ```
 <container type="enabledGroup" enabledIf="@gender=1">
@@ -250,7 +250,7 @@ Esse container permite ativar ou desativar um conjunto de dados de uma condiçã
 </container>
 ```
 
-Um container ativador é definido pelo atributo **type=&quot;enabledGroup&quot;**. O atributo **enabledIf** contém a condição de ativação.
+Um contêiner de ativação é definido pelo atributo **type=&quot;enabledGroup&quot;**. O atributo **enabledIf** contém a condição de ativação.
 
 ## Editar um link {#editing-a-link}
 
@@ -268,17 +268,17 @@ O controle de edição do link em seu formulário de entrada é o seguinte:
 <input xpath="company"/>
 ```
 
-A seleção de públicos alvos pode ser acessada pelo campo de edição. A entrada é assistida por um tipo anterior para que um elemento de público alvo possa ser facilmente encontrado a partir dos primeiros caracteres inseridos. A pesquisa é então baseada na **sequência de caracteres de computação** definida no schema direcionado. Se o schema não existir após a validação no controle, uma mensagem de confirmação da criação do público alvo em tempo real será exibida. A confirmação cria um novo registro na tabela público alvo e o associa ao link.
+A seleção de destino é acessível por meio do campo de edição. A entrada é assistida por um avanço de tipo para que um elemento de destino possa ser facilmente encontrado a partir dos primeiros caracteres inseridos. A pesquisa é então baseada no **Compute string** definido no schema direcionado. Se o schema não existir após a validação no controle, uma mensagem de confirmação da criação do target em tempo real será exibida. A confirmação cria um novo registro na tabela de target e o associa ao link .
 
-Uma lista suspensa é usada para selecionar um elemento de público alvo da lista de registros já criados.
+Uma lista suspensa é usada para selecionar um elemento de destino da lista de registros já criados.
 
-O ícone **[!UICONTROL Modify the link]** (pasta) inicia um formulário de seleção com a lista de elementos direcionados e uma zona de filtro:
+O ícone **[!UICONTROL Modify the link]** (pasta) inicia um formulário de seleção com a lista de elementos pretendidos e uma zona de filtro:
 
 ![](assets/d_ncs_integration_form_exemple10.png)
 
-O ícone **[!UICONTROL Edit link]** (lente de aumento) inicia o formulário de edição do elemento vinculado. Por padrão, o formulário usado é deduzido na chave do schema direcionado. O atributo **form** permite forçar o nome do formulário de edição (por exemplo, &quot;cus:empresa2&quot;).
+O ícone **[!UICONTROL Edit link]** (lente de aumento) inicia o formulário de edição do elemento vinculado. O formulário usado é deduzido por padrão na chave do schema direcionado. O atributo **form** permite forçar o nome do formulário de edição (por exemplo, &quot;cus:company2&quot;).
 
-Você pode restringir a escolha de elementos de público alvo adicionando o elemento **`<sysfilter>`** da definição do link no formulário de entrada:
+Você pode restringir a escolha de elementos target adicionando o elemento **`<sysfilter>`** da definição do link no formulário de entrada:
 
 ```
 <input xpath="company">
@@ -288,7 +288,7 @@ Você pode restringir a escolha de elementos de público alvo adicionando o elem
 </input>
 ```
 
-Você também pode classificar a lista com o elemento **`<orderby>`**:
+Também é possível classificar a lista com o elemento **`<orderby>`** :
 
 ```
 <input xpath="company">
@@ -300,19 +300,19 @@ Você também pode classificar a lista com o elemento **`<orderby>`**:
 
 ### Propriedades de controle {#control-properties}
 
-* **noAutoComplete**: desativa o tipo ahead (com o valor &quot;true&quot;)
-* **createMode**: cria o link dinamicamente se ele não existir. Os valores possíveis são:
+* **noAutoComplete**: desativa o tipo forward (com o valor &quot;true&quot;)
+* **createMode**: cria o link dinamicamente, se ele não existir. Os valores possíveis são:
 
-   * **none**: desativa a criação. Uma mensagem de erro será exibida se o link não existir
+   * **nenhum**: desativa a criação. Uma mensagem de erro será exibida se o link não existir
    * **em linha**: cria o link com o conteúdo no campo de edição
-   * **edição**: exibe o formulário de edição no link. Quando o formulário é validado, os dados são salvos (modo padrão)
+   * **edição**: exibe o formulário de edição no link . Quando o formulário é validado, os dados são salvos (modo padrão)
 
 * **noZoom**: nenhum formulário de edição no link (com o valor &quot;true&quot;)
 * **formulário**: sobrecarrega o formulário de edição do elemento direcionado
 
 ## Lista de links {#list-of-links}
 
-Um link inserido no schema de dados como um elemento de coleção (unbound=&quot;true&quot;) deve passar por uma lista para visualização de todos os elementos associados a ela.
+Um link inserido no schema de dados como um elemento de coleção (unbound=&quot;true&quot;) deve passar por uma lista para exibir todos os elementos associados a ele.
 
 O princípio consiste em exibir a lista de elementos vinculados com carregamento de dados otimizado (download por lote de dados, execução da lista somente se estiver visível).
 
@@ -335,17 +335,17 @@ A lista em seu formulário de entrada:
 </input>
 ```
 
-O controle de lista é definido pelo atributo **type=&quot;linklist&quot;**. O caminho da lista deve se referir ao link da coleção.
+O controle de lista é definido pelo atributo **type=&quot;linklist&quot;**. O caminho da lista deve se referir ao link de coleção.
 
-As colunas são declaradas pelos elementos **`<input>`** da lista. O atributo **xpath** refere-se ao caminho do campo no schema do público alvo.
+As colunas são declaradas por meio dos elementos **`<input>`** da lista. O atributo **xpath** refere-se ao caminho do campo no schema de destino.
 
 Uma barra de ferramentas com um rótulo (definido no link no schema) é colocada automaticamente acima da lista.
 
-A lista pode ser filtrada pelo botão **[!UICONTROL Filters]** e configurada para adicionar e classificar as colunas.
+A lista pode ser filtrada por meio do botão **[!UICONTROL Filters]** e configurada para adicionar e classificar as colunas.
 
-Os botões **[!UICONTROL Add]** e **[!UICONTROL Delete]** permitem que você adicione e exclua elementos da coleção no link. Por padrão, a adição de um elemento inicia o formulário de edição do schema do público alvo.
+Os botões **[!UICONTROL Add]** e **[!UICONTROL Delete]** permitem adicionar e excluir elementos de coleção no link. Por padrão, a adição de um elemento inicia o formulário de edição do schema de destino.
 
-O botão **[!UICONTROL Detail]** é adicionado automaticamente quando o atributo **zoom=&quot;true&quot;** é preenchido na tag **`<input>`** da lista: permite que você inicie o formulário de edição da linha selecionada.
+O botão **[!UICONTROL Detail]** é adicionado automaticamente quando o atributo **zoom=&quot;true&quot;** é preenchido na tag **`<input>`** da lista: ele permite iniciar o formulário de edição da linha selecionada.
 
 A filtragem e a classificação podem ser aplicadas quando a lista está sendo carregada:
 
@@ -364,9 +364,9 @@ A filtragem e a classificação podem ser aplicadas quando a lista está sendo c
 
 ### Tabela de relacionamento {#relationship-table}
 
-Uma tabela de relacionamento permite vincular duas tabelas com a cardinalidade N-N. A tabela de relacionamento contém apenas os links para as duas tabelas.
+Uma tabela de relacionamento permite vincular duas tabelas com uma cardinalidade N-N. A tabela de relacionamento contém apenas os links para as duas tabelas.
 
-A adição de um elemento à lista deve, portanto, permitir que você conclua uma lista de um dos dois links na tabela de relacionamento.
+A adição de um elemento à lista deve, portanto, permitir que você complete uma lista de um dos dois links na tabela do relacionamento.
 
 Exemplo de uma tabela de relacionamento em um schema:
 
@@ -377,7 +377,7 @@ Exemplo de uma tabela de relacionamento em um schema:
 </srcSchema>
 ```
 
-Para o nosso exemplo, nós nos start com a forma de entrada do schema &quot;cus:recipient&quot;. A lista deve exibir as associações com subscrições nos serviços e permitir que você adicione uma subscrição selecionando um serviço existente.
+Para nosso exemplo, começamos com o formulário de entrada do schema &quot;cus:recipient&quot;. A lista deve exibir as associações com assinaturas de serviços e deve permitir adicionar uma assinatura selecionando um serviço existente.
 
 ![](assets/d_ncs_integration_form_exemple12.png)
 
@@ -388,7 +388,7 @@ Para o nosso exemplo, nós nos start com a forma de entrada do schema &quot;cus:
 </input>
 ```
 
-O atributo **xpathChoiceTarget** permite iniciar um formulário de seleção a partir do link inserido. A criação do registro da tabela de relacionamento atualizará automaticamente o link para o recipient atual e para o serviço selecionado.
+O atributo **xpathChoiceTarget** permite iniciar um formulário de seleção no link inserido. A criação do registro da tabela de relacionamento atualizará automaticamente o link para o recipient atual e o serviço selecionado.
 
 >[!NOTE]
 >
@@ -396,20 +396,20 @@ O atributo **xpathChoiceTarget** permite iniciar um formulário de seleção a p
 
 ### Propriedades da lista {#list-properties}
 
-* **noToolbar**: oculta a barra de ferramentas (com o valor &quot;true&quot;)
+* **naToolbar**: oculta a barra de ferramentas (com o valor &quot;true&quot;)
 * **toolbarCaption**: sobrecarrega o rótulo da barra de ferramentas
-* **toolbarAlign**: modifica a geometria vertical ou horizontal da barra de ferramentas (possíveis valores: &quot;vertical&quot;|&quot;horizontal&quot;)
+* **toolbarAlign**: modifica a geometria vertical ou horizontal da barra de ferramentas (valores possíveis: &quot;vertical&quot;|&quot;horizontal&quot;)
 * **img**: exibe a imagem associada à lista
 * **formulário**: sobrecarrega o formulário de edição do elemento direcionado
 * **zoom**: adiciona o  **[!UICONTROL Zoom]** botão para editar o elemento direcionado
-* **xpathEditTarget**: define a edição no link inserido
+* **xpathEditTarget**: conjuntos de edição no link inserido
 * **xpathChoiceTarget**: para além disso, inicia o formulário de seleção no link inserido
 
-## Controles de lista de memória {#memory-list-controls}
+## Controles da lista de memória {#memory-list-controls}
 
-As listas de memória permitem que você edite os elementos da coleção usando o pré-carregamento de dados da lista. Esta lista não pode ser filtrada ou configurada.
+As listas de memória permitem editar os elementos de coleção usando o pré-carregamento de dados da lista. Esta lista não pode ser filtrada ou configurada.
 
-Essas listas são usadas em elementos de coleção mapeados XML ou em links de baixo volume.
+Essas listas são usadas em elementos de coleção XML mapeados ou em links de baixo volume.
 
 ### Lista de colunas {#column-list}
 
@@ -430,7 +430,7 @@ As colunas são declaradas nas tags filho **`<input>`** da lista. O rótulo e o 
 
 >[!NOTE]
 >
->As setas de ordem de classificação são adicionadas automaticamente quando o atributo **order=&quot;true&quot;** é adicionado ao elemento de coleta no schema de dados.
+>As setas de ordem de classificação são adicionadas automaticamente quando o atributo **ordered=&quot;true&quot;** é adicionado ao elemento de coleção no schema de dados.
 
 Os botões da barra de ferramentas podem ser alinhados horizontalmente:
 
@@ -447,7 +447,7 @@ O atributo **toolbarCaption** força o alinhamento horizontal da barra de ferram
 
 #### Ampliação de uma lista {#zoom-in-a-list}
 
-A inserção e edição dos dados em uma lista podem ser inseridas em um formulário de edição separado.
+A inserção e a edição dos dados em uma lista podem ser inseridas em um formulário de edição separado.
 
 ![](assets/d_ncs_integration_form_exemple15.png)
 
@@ -463,17 +463,17 @@ A inserção e edição dos dados em uma lista podem ser inseridas em um formul�
 </input>
 ```
 
-O formulário de edição é preenchido a partir do elemento `<form>` na definição da lista. Sua estrutura é idêntica à de um formulário de entrada. O botão **[!UICONTROL Detail]** é adicionado automaticamente quando o atributo **zoom=&quot;true&quot;** é concluído na tag **`<input>`** da lista. Esse atributo permite iniciar o formulário de edição da linha selecionada.
+O formulário de edição é preenchido a partir do elemento `<form>` sob a definição da lista. Sua estrutura é idêntica à de um formulário de entrada. O botão **[!UICONTROL Detail]** é adicionado automaticamente quando o atributo **zoom=&quot;true&quot;** é preenchido na tag **`<input>`** da lista. Esse atributo permite iniciar o formulário de edição da linha selecionada.
 
 >[!NOTE]
 >
->Adicionar o atributo **zoomOnAdd=&quot;true&quot;** força o formulário de edição a ser chamado quando um elemento de lista é inserido.
+>A adição do atributo **zoomOnAdd=&quot;true&quot;** força o formulário de edição a ser chamado quando um elemento de lista é inserido.
 
 ### Propriedades da lista {#list-properties-1}
 
-* **noToolbar**: oculta a barra de ferramentas (com o valor &quot;true&quot;)
+* **naToolbar**: oculta a barra de ferramentas (com o valor &quot;true&quot;)
 * **toolbarCaption**: sobrecarrega o rótulo da barra de ferramentas
-* **toolbarAlign**: modifica o posicionamento da barra de ferramentas (possíveis valores: &quot;vertical&quot;|&quot;horizontal&quot;)
+* **toolbarAlign**: modifica o posicionamento da barra de ferramentas (valores possíveis: &quot;vertical&quot;|&quot;horizontal&quot;)
 * **img**: exibe a imagem associada à lista
 * **formulário**: sobrecarrega o formulário de edição do elemento direcionado
 * **zoom**: adiciona o  **[!UICONTROL Zoom]** botão para editar o elemento direcionado
@@ -482,7 +482,7 @@ O formulário de edição é preenchido a partir do elemento `<form>` na defini�
 
 ## Campos não editáveis {#non-editable-fields}
 
-Para exibir um campo e impedir sua edição, use a tag **`<value>`** ou preencha o atributo **readOnly=&quot;true&quot;** na tag **`<input>`**.
+Para exibir um campo e impedir que ele seja editado, use a tag **`<value>`** ou complete o atributo **readOnly=&quot;true&quot;** na tag **`<input>`**.
 
 Exemplo no campo &quot;Gênero&quot;:
 
@@ -495,7 +495,7 @@ Exemplo no campo &quot;Gênero&quot;:
 
 ## Botão de opção {#radio-button}
 
-Um botão de opção permite escolher entre várias opções. As tags **`<input>`** são usadas para lista das opções possíveis, e o atributo **checkValue** especifica o valor associado à escolha.
+Um botão de opção permite escolher entre várias opções. As tags **`<input>`** são usadas para listar as opções possíveis, e o atributo **checkedValue** especifica o valor associado à escolha.
 
 Exemplo no campo &quot;Gênero&quot;:
 
@@ -509,7 +509,7 @@ Exemplo no campo &quot;Gênero&quot;:
 
 ## Caixa de seleção {#checkbox}
 
-Uma caixa de seleção reflete um estado Booliano (selecionado ou não). Por padrão, esse controle é usado pelos campos &quot;Booliano&quot; (true/false). Uma variável com um valor padrão de 0 ou 1 pode ser associada a esse botão. Esse valor pode ser sobrecarregado pelos atributos **checkValue**.
+Uma caixa de seleção reflete um estado booleano (selecionado ou não). Por padrão, esse controle é usado por campos &quot;Boolean&quot; (true/false). Uma variável com um valor padrão de 0 ou 1 pode ser associada a esse botão. Esse valor pode ser sobrecarregado por meio dos atributos **checkValue**.
 
 ```
 <input xpath="@boolean1"/>
@@ -518,11 +518,11 @@ Uma caixa de seleção reflete um estado Booliano (selecionado ou não). Por pad
 
 ![](assets/d_ncs_integration_form_exemple20.png)
 
-## Edição da hierarquia de navegação {#navigation-hierarchy-edit}
+## Editar hierarquia de navegação {#navigation-hierarchy-edit}
 
 Esse controle cria uma árvore em um conjunto de campos a serem editados.
 
-Os controles a serem editados são agrupados em **`<container>`** inseridos na tag **`<input>`** do controle de árvore:
+Os controles a serem editados são agrupados em um **`<container>`** inserido na tag **`<input>`** do controle de árvore:
 
 ```
 <input nolabel="true" type="treeEdit">
@@ -539,7 +539,7 @@ Os controles a serem editados são agrupados em **`<container>`** inseridos na t
 
 ![](assets/d_ncs_integration_form_exemple18.png)
 
-## campo expressão {#expression-field}
+## Campo de expressão {#expression-field}
 
 Um campo de expressão atualiza um campo dinamicamente de uma expressão; a tag **`<input>`** é usada com um atributo **xpath** para inserir o caminho do campo a ser atualizado e um atributo **expr** contendo a expressão de atualização.
 
@@ -551,20 +551,20 @@ Um campo de expressão atualiza um campo dinamicamente de uma expressão; a tag 
 
 ## Contexto dos formulários {#context-of-forms}
 
-A execução de um formulário de entrada inicializa um documento XML contendo os dados da entidade que está sendo editada. Esse documento representa o contexto do formulário e pode ser usado como um espaço de trabalho.
+A execução de um formulário de entrada inicializa um documento XML contendo os dados da entidade que está sendo editada. Este documento representa o contexto do formulário e pode ser usado como um espaço de trabalho.
 
 ### Atualização do contexto {#updating-the-context}
 
-Para modificar o contexto do formulário, use a tag **`<set expr="<value>" xpath="<field>"/>`**, onde **`<field>`** é o campo de destino, e **`<value>`** é a expressão ou o valor da atualização.
+Para modificar o contexto do formulário, use a tag `<set expr="<value>" xpath="<field>"/>` , onde `<field>` é o campo de destino, e `<value>` é a expressão ou valor de atualização.
 
-Exemplos de uso da tag **`<set>`**:
+Exemplos de uso da tag `<set>`:
 
-* **`<set expr="'Test'" xpath="/tmp/@test" />`**: posiciona o valor &#39;Test&#39; no local temporário /tmp/@test1
+* **`<set expr="'Test'" xpath="/tmp/@test" />`**: posiciona o valor &quot;Test&quot; no local temporário /tmp/@test1
 * **`<set expr="'Test'" xpath="@lastName" />`**: atualiza a entidade no atributo &quot;lastName&quot; com o valor &quot;Test&quot;
 * **`<set expr="true" xpath="@boolean1" />`**: define o valor do campo &quot;boolean1&quot; como &quot;true&quot;
 * **`<set expr="@lastName" xpath="/tmp/@test" />`**: atualizações com o conteúdo do atributo &quot;lastName&quot;
 
-O contexto do formulário pode ser atualizado ao inicializar e fechar o formulário por meio das tags **`<enter>`** e **`<leave>`**.
+O contexto do formulário pode ser atualizado ao inicializar e fechar o formulário por meio das tags **`<enter>`** e **`<leave>`** .
 
 ```
 <form name="recipient" namespace="cus">
@@ -580,9 +580,9 @@ O contexto do formulário pode ser atualizado ao inicializar e fechar o formulá
 
 >[!NOTE]
 >
->Os `<enter>` e `<leave>`   as tags podem ser usadas em `<container>` das páginas (tipos &quot;notebook&quot; e &quot;iconbox&quot;).
+>Os `<enter>` e `<leave>`   as tags podem ser usadas no `<container>` das páginas (tipos &quot;notebook&quot; e &quot;iconbox&quot;).
 
-### linguagem de expressão {#expression-language-}
+### Idioma da expressão {#expression-language-}
 
 Um idioma macro pode ser usado na definição do formulário para executar testes condicionais.
 
@@ -606,7 +606,7 @@ A tag **`<check expr="<condition>" />`** combinada com a tag **`<error>`** imped
 
 ## Assistentes {#wizards}
 
-Um assistente guia você por um conjunto de etapas de entrada de dados na forma de páginas. Os dados inseridos são salvos quando o formulário é validado.
+Um assistente o orienta por um conjunto de etapas de entrada de dados no formulário de páginas. Os dados inseridos são salvos ao validar o formulário.
 
 Um assistente tem a seguinte estrutura:
 
@@ -625,7 +625,7 @@ Um assistente tem a seguinte estrutura:
 
 ![](assets/d_ncs_integration_form_exemple19.png)
 
-A presença do atributo **type=&quot;Wizard&quot;** no elemento `<form>` permite definir o modo do assistente na construção do formulário. As páginas são concluídas a partir dos elementos `<container>`, que são filhos do elemento `<form>`. O elemento `<container>` de uma página é preenchido com os atributos de título do título e desc para exibir a descrição sob o título da página. Os botões **[!UICONTROL Previous]** e **[!UICONTROL Next]** são adicionados automaticamente para permitir a navegação entre páginas.
+A presença do atributo **type=&quot;wizard&quot;** no elemento `<form>` permite definir o modo do assistente na construção do formulário. As páginas são concluídas a partir de elementos `<container>`, que são filhos do elemento `<form>`. O elemento `<container>` de uma página é preenchido com os atributos de título do título e desc para exibir a descrição sob o título da página. Os botões **[!UICONTROL Previous]** e **[!UICONTROL Next]** são adicionados automaticamente para permitir a navegação entre páginas.
 
 O botão **[!UICONTROL Finish]** salva os dados inseridos e fecha o formulário.
 
@@ -642,22 +642,22 @@ A tag **`<soapcall>`** contém a chamada para o método com os seguintes parâme
 </soapCall>
 ```
 
-O nome do serviço e seu schema de implementação são inseridos pelos atributos **name** e **service** da tag **`<soapcall>`**.
+O nome do serviço e seu schema de implementação são inseridos por meio dos atributos **name** e **service** da tag **`<soapcall>`**.
 
-Os parâmetros de entrada são descritos nos elementos **`<param>`** sob a tag **`<soapcall>`**.
+Os parâmetros de entrada são descritos nos elementos **`<param>`** sob a tag **`<soapcall>`** .
 
-O tipo de parâmetro deve ser especificado pelo atributo **type**. Os tipos possíveis são os seguintes:
+O tipo de parâmetro deve ser especificado por meio do atributo **type**. Os tipos possíveis são os seguintes:
 
-* **string**: cadeia de caracteres
+* **string**: sequência de caracteres
 * **booleano**: Booleano
 * **byte**: Número inteiro de 8 bits
-* **curta**: Número inteiro de 16 bits
+* **abreviado**: Número inteiro de 16 bits
 * **long**: Número inteiro de 32 bits
-* **curta**: Número inteiro de 16 bits
-* **duplo**: Número de ponto flutuante de precisão do duplo
-* **DOMElement**: nó tipo elemento
+* **abreviado**: Número inteiro de 16 bits
+* **double**: número de ponto flutuante de precisão dupla
+* **DOMElement**: nó do tipo elemento
 
-O atributo **exprIn** contém a localização dos dados a serem transmitidos como parâmetro.
+O atributo **exprIn** contém o local dos dados a serem passados como parâmetro.
 
 **Exemplo**:
 
