@@ -1,23 +1,23 @@
 ---
 solution: Campaign Classic
 product: campaign
-title: Acompanhamento da solução de problemas
-description: Esta seção fornece perguntas comuns relacionadas à configuração e implementação do rastreamento no Adobe Campaign Classic.
+title: Solução de problemas do rastreamento
+description: Esta seção fornece perguntas comuns relacionadas à configuração e à implementação do rastreamento no Adobe Campaign Classic.
 audience: delivery
 content-type: reference
 topic-tags: tracking-messages
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: efa36dc08ce4dd59805bb9eba63a4249e14609d7
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '759'
-ht-degree: 0%
+ht-degree: 100%
 
 ---
 
 
-# Acompanhamento da solução de problemas {#tracking-troubleshooting}
+# Solução de problemas de rastreamento {#tracking-troubleshooting}
 
-Nesta seção, você encontrará perguntas comuns relacionadas à configuração e implementação do rastreamento no Adobe Campaign Classic.
+Nesta seção, você encontrará perguntas comuns relacionadas à configuração e à implementação do rastreamento no Adobe Campaign Classic.
 
 ## O fluxo de trabalho de rastreamento está falhando {#tracking-workflow-failing}
 
@@ -27,11 +27,11 @@ Meu fluxo de trabalho de rastreamento está falhando. Como posso detectar as lin
 >
 >Disponível somente para Windows
 
-O arquivo de log de rastreamento corrompido .../nl6/var/&lt;nome_da_instância>/redir/log/0x0000 log pode interromper o fluxo de trabalho de rastreamento. Para detectar facilmente linhas corrompidas e removê-las para retomar o fluxo de trabalho de rastreamento, você pode usar os comandos abaixo.
+O arquivo de log de rastreamento corrompido .../nl6/var/&lt;instance_name>/redir/log/0x0000 log pode interromper o fluxo de trabalho de rastreamento. Para detectar facilmente linhas corrompidas e removê-las para retomar o fluxo de trabalho de rastreamento, você pode usar os comandos abaixo.
 
-### Eu sei em qual arquivo a linha corrompida está
+### Sei em qual arquivo está a linha corrompida
 
-Nesse caso, linhas corrompidas podem ser encontradas no arquivo 0x0000000000A0000.log, mas o mesmo processo pode ser aplicado a um conjunto de arquivos, um por um.
+Nesse caso, linhas corrompidas podem ser encontradas no arquivo de log 0x00000000000A0000.log, mas o mesmo processo pode ser aplicado a um conjunto de arquivos, um por um.
 
 ```
 $ cd {install directory}/var/{instance name}/redir/log
@@ -40,9 +40,9 @@ $ cat 0x00000000000A0000.log | sed -nE '/^[[:alnum:]]{2}x[[:alnum:]]*\t[0-9T:\.-
 
 Em seguida, você pode interromper o fluxo de trabalho de rastreamento, excluir as linhas corrompidas e reiniciar o fluxo de trabalho.
 
-### Não estou agora em qual arquivo a linha corrompida está
+### Não sei em qual arquivo está a linha corrompida
 
-1. use a seguinte linha de comando para fazer check-in de todos os arquivos de rastreamento.
+1. use a seguinte linha de comando para fazer verificar em todos os arquivos de rastreamento.
 
    ```
    $ cd {install directory}/var/{instance name}/redir/log
@@ -58,7 +58,7 @@ Em seguida, você pode interromper o fluxo de trabalho de rastreamento, excluir 
 
    >[!NOTE]
    >
-   >A devolução de carro foi adicionada antes do Agente do usuário para permitir uma melhor leitura e não reflete a renderização efetiva.
+   >Um retorno de carro foi adicionado antes do Agente do Usuário para permitir melhor leitura e não reflete a renderização real.
 
 1. Execute um comando grep para localizar o arquivo correspondente.
 
@@ -68,7 +68,7 @@ $ grep -Rn <Log Id>
 $ grep -Rn 50x000000000FD7EC86
 ```
 
-1. Localize o registro com falha com o nome do arquivo e o número da linha. Por exemplo:
+1. Localize o log com falha com o nome do arquivo e o número da linha. Por exemplo:
 
    ```
    ./0x000000000FD7E000.log:3207:50x000000000FD7EC86 2017-06-24T21:00:50.96 1f506d71 1aeab4b6 1af77020 0 e5155671-4ab7-4ce4-a763-3b82dda6d881 h
@@ -77,19 +77,19 @@ $ grep -Rn 50x000000000FD7EC86
 
    >[!NOTE]
    >
-   >Um retorno de carro foi adicionado antes do Agente do usuário para permitir uma melhor leitura e não reflete uma renderização efetiva.
+   >Um retorno de carro foi adicionado antes do Agente do Usuário para permitir melhor leitura e não reflete a renderização real.
 
 Em seguida, você pode interromper o fluxo de trabalho de rastreamento, excluir as linhas corrompidas e reiniciar o fluxo de trabalho.
 
 ## Os links de rastreamento falham intermitentemente {#tracking-links-fail-intermittently}
 
-Ao tentar acessar os links de rastreamento, a seguinte mensagem é exibida:
+Quando você tenta acessar os links de rastreamento, a seguinte mensagem é exibida:
 
 `Requested URL '/r/ id=h787bc0,281a4d8,281a4da&amp;p1=1' cannot be found`
 
-1. Acesse &lt;redirecçãoserver>/r/test URL e verifique se o número da compilação e o host local foram retornados pela solicitação.
+1. Acesse a URL &lt;redirection_server>/r/test e verifique se o número da compilação e o host local foram retornados pela solicitação.
 
-1. Verifique a configuração spareServer no arquivo serverConf.xml para o servidor de rastreamento. Essa configuração deve estar no modo de redirecionamento.
+1. Verifique a configuração spareServer no arquivo serverConf.xml do servidor de rastreamento. Essa configuração deve estar no modo de redirecionamento.
 
    ```
    <redirection>
@@ -104,23 +104,23 @@ Ao tentar acessar os links de rastreamento, a seguinte mensagem é exibida:
    </redirection>
    ```
 
-1. Verifique manualmente se o arquivo &lt;deliveryID>.xml existe no computador em ...diretório /nl6/var/&lt;nome_da_instância>/redir/url/&lt;AAAA> (AAAA representa o ano do delivery).
+1. Verifique manualmente se o arquivo &lt;deliveryID>.xml existe no computador no diretório .../nl6/var/&lt;instance_name>/redir/url/&lt;YYYY> (YYYY representa o ano do delivery).
 
 1. Verifique manualmente se &lt;trackingUrlId> pode ser encontrado no arquivo &lt;deliveryID>.xml.
 
-1. Verifique a existência manual de BroadlogID no delivery deliveryID relacionado.
+1. Verifique manualmente a existência de broadlogID no delivery deliveryID relacionado.
 
-1. Verifique as permissões dos arquivos &lt;deliveryID>.xml em ...diretório /nl6/var/&lt;nome_da_instância>/redir/url/year.
+1. Verifique as permissões dos arquivos &lt;deliveryID>.xml no diretório .../nl6/var/&lt;instance_name>/redir/url/year.
 
-   Eles devem ter pelo menos 644 permissões para que o Apache possa ler urls de rastreamento para redirecionar o link solicitado.
+   Deve haver pelo menos 644 permissões para que o Apache possa ler urls de rastreamento a fim de redirecionar o link solicitado.
 
-## A atualizar a opção NmsTracking_Pointer? {#updating-option}
+## Atualizando a opção NmsTracking_Pointer? {#updating-option}
 
 Siga estas etapas ao atualizar a opção NmsTracking_Pointer:
 
-1. Pare o fluxo de trabalho de rastreamento.
+1. Interrompa o fluxo de trabalho de rastreamento.
 
-1. Pare o serviço trackinglogd.
+1. Interrompa o serviço trackinglogd.
 
 1. Atualize a opção NmsTracking_Pointer para o valor desejado.
 
@@ -130,9 +130,9 @@ Siga estas etapas ao atualizar a opção NmsTracking_Pointer:
 
 ## O rastreamento não parece funcionar com algum WebMail {#webmail}
 
-Você pode personalizar a fórmula de rastreamento de cliques e especificar uma fórmula de rastreamento Adobe Analytics personalizada.
+Você pode personalizar a fórmula de rastreamento de cliques e especificar uma fórmula de rastreamento do Adobe Analytics personalizada.
 
-Esse tipo de personalização precisa ser feito com cautela para evitar a adição de caracteres adicionais de avanço de linha. Todos os caracteres de alimentação em linha presentes fora da expressão javascript estarão presentes na fórmula final.
+Esse tipo de personalização precisa ser feito com cautela para evitar a adição de caracteres de avanço de linha. Todos os caracteres de avanço de linha presentes fora da expressão JavaScript estarão presentes na fórmula final.
 
 Esse tipo de caractere extra de avanço de linha no URL de rastreamento levará a problemas em algum WebMail (AOL, GMail etc.).
 
@@ -159,7 +159,7 @@ Esse tipo de caractere extra de avanço de linha no URL de rastreamento levará 
    %>&cid=<%= message.delivery.internalName %>&bid=<%= message.id.toString().toLowerCase() %><% } %>
    ```
 
-Para entender onde a alimentação de linha extra é possível substituir a expressão javascript por uma STRING de string fixa.
+Para entender onde está o avanço de linha extra, é possível substituir a expressão JavaScript por uma STRING de string fixa.
 
 ```
 // Incorrect
@@ -195,7 +195,7 @@ STRING1&cid=STRING2&bid=STRING3
    %>
    ```
 
-Para entender onde a alimentação de linha extra é possível substituir a expressão javascript por uma STRING de string fixa.
+Para entender onde está o avanço de linha extra, é possível substituir a expressão JavaScript por uma STRING de string fixa.
 
 ```
 // Incorrect
@@ -207,22 +207,22 @@ STRING1&cid=STRING2&bid=STRING3&SHPID=STRING4
 
 ## A recuperação de logs de rastreamento é muito lenta {#slow-retrieval}
 
-Quando a instância não recupera logs de rastreamento diretos, mas de um servidor Adobe Campaign Classic distante, os registros são recuperados por meio da chamada SOAP GetTrackingLogs definida no schema remoteTracking.
+Quando a instância não recupera logs de rastreamento diretamente, mas de um servidor Adobe Campaign Classic distante, os logs são recuperados por meio da chamada SOAP GetTrackingLogs definida no esquema remoteTracking.
 
 Uma opção no arquivo serverConf.xml permite que você defina o número de logs recuperados simultaneamente por meio deste método: logCountPerRequest.
 
-O valor padrão de logCountPerRequest sendo 1000 pode ser muito pequeno em alguns casos. Os valores aceitos devem estar entre 0 e 10.000.
+O valor padrão de logCountPerRequest igual a 1000 pode ser muito pequeno em alguns casos. Os valores aceitos devem estar entre 0 e 10.000.
 
-## Não foi possível vincular logs de rastreamento a recipient {#link-recipients}
+## Não foi possível vincular logs de rastreamento a recipients {#link-recipients}
 
-No Adobe Campaign Classic, um target mapping deve ser único em termos de schema de recipient vs schemas de registro de transmissão/rastreamento.
+No Adobe Campaign Classic, um target mapping deve ser único em termos de esquema de recipient versus esquemas broadlog/trackinglog.
 
 ![](assets/tracking-troubleshooting.png)
 
-Não é possível usar vários schemas de direcionamento com o mesmo schema de rastreamento de log, pois o fluxo de trabalho de rastreamento não conseguirá reconciliar os dados com a ID de direcionamento.
+Não é possível usar vários esquemas de direcionamento com o mesmo esquema trackinglog, pois o fluxo de trabalho de rastreamento não conseguirá reconciliar os dados com a id de direcionamento.
 
-Se você não quiser usar o target mapping predefinido com nms:recipient, recomendamos as seguintes abordagens:
+Se você não quiser usar o target mapping pronto para uso com nms:recipient, recomendamos as seguintes abordagens:
 
-* Se quiser usar o targeting dimension personalizado, é necessário criar o schema wideLog/trackingLog personalizado usando nms:Broadlog como modelo (por exemplo, nms:wideLogRcp, nms:wideLogSvc, etc.).
+* Se quiser usar o targeting dimension personalizado, será necessário criar o esquema broadLog/trackingLog personalizado usando nms:broadlog como modelo (por exemplo, nms:broadLogRcp, nms:broadLogSvc etc.).
 
-* Se você quiser usar OOB trackingLogRcp/wideLogRcp, o targeting dimension precisa ser nms:recipient e a dimensão de filtragem pode ser um schema personalizado.
+* Se você quiser usar OOB trackingLogRcp/broadLogRcp, o targeting dimension precisará ser nms:recipient e a dimensão de filtragem poderá ser um esquema personalizado.
