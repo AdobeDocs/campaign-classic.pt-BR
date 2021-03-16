@@ -6,11 +6,11 @@ description: Esta seção fornece informações gerais específicas para o canal
 audience: delivery
 content-type: reference
 topic-tags: sending-push-notifications
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 22f44f5723ab35e95caa438583fe06314c763ba1
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '674'
-ht-degree: 93%
+ht-degree: 100%
 
 ---
 
@@ -56,7 +56,7 @@ Correspondendo a esses dois canais, há duas atividades de delivery nos workflow
 
 O workflow **[!UICONTROL NMAC opt-out management]** (mobileAppOptOutMgt) atualiza a notificação de cancelamentos de subscrições em dispositivos móveis. Para obter mais informações sobre esse fluxo de trabalho, consulte a [lista de workflows técnicos](../../workflow/using/about-technical-workflows.md).
 
-A Adobe Campaign é compatível com APNs HTTP/2. Para obter mais detalhes sobre as etapas de configuração, consulte [Configuração de um aplicativo para dispositivos móveis na seção Adobe Campaign](../../delivery/using/configuring-the-mobile-application.md).
+O Adobe Campaign é compatível com APNs HTTP/2. Para obter mais detalhes sobre as etapas de configuração, consulte [Configuração de um aplicativo para dispositivos móveis na seção Adobe Campaign](../../delivery/using/configuring-the-mobile-application.md).
 
 ## Caminho dos dados {#data-path}
 
@@ -85,7 +85,7 @@ Estas informações estão disponíveis no Adobe Campaign:
 
 ![](assets/nmac_delivery_view.png)
 
-O servidor Adobe Campaign deve poder entrar em contato com o servidor APNs na porta 443 para o conector HTTP/2 do iOS.
+O servidor do Adobe Campaign deve poder entrar em contato com o servidor de APNs na porta 443 para o conector HTTP/2 do iOS.
 
 Para verificar se funciona corretamente, use os seguintes comandos:
 
@@ -101,5 +101,5 @@ Para verificar se funciona corretamente, use os seguintes comandos:
    telnet gateway.push.apple.com
    ```
 
-Com o conector HTTP/2 do iOS, o MTA, o servidor da Web e o servidor de fluxo de trabalho devem poder entrar em contato com os APNs na porta 443.
+Se um conector HTTP/2 do iOS for usado, o MTA, o servidor da web e o fluxo de trabalho deverão ser capazes de contatar APNs na porta 443.
 
