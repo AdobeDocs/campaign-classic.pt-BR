@@ -6,18 +6,18 @@ description: Saiba como executar testes A/B por meio de um caso de uso dedicado.
 audience: delivery
 content-type: reference
 topic-tags: a-b-testing
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 50a10e16f320a67cb4ad0e31c1cbe8a9365b7887
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '174'
-ht-degree: 85%
+ht-degree: 100%
 
 ---
 
 
 # Configuração de amostras de população {#step-2--configuring-population-samples}
 
-## Configuração da atividade Query {#configuring-the-query-activity}
+## Configuração da atividade de Query {#configuring-the-query-activity}
 
 * Clique duas vezes na atividade **[!UICONTROL Query]**.
 
@@ -81,4 +81,4 @@ Esta atividade permite criar várias populações: a que recebe a delivery A, aq
 
       ![](assets/use_case_abtesting_createrecipients_013.png)
 
-Agora você pode criar os dois templates do delivery (consulte [Etapa 3: Crie dois templates do delivery](../../delivery/using/a-b-testing-uc-delivery-templates.md)).
+Agora você pode criar os dois modelos do delivery (consulte [Etapa 3: criar dois modelos do delivery](../../delivery/using/a-b-testing-uc-delivery-templates.md)).
