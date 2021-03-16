@@ -7,10 +7,10 @@ audience: rns
 content-type: reference
 topic-tags: latest-documentation-updates
 translation-type: tm+mt
-source-git-commit: 660b9ad4351fe611d99962f2b163858b1f70bc84
+source-git-commit: 4d5d14565726c5c6e7c4e2e8a82cfa8cef87be0f
 workflow-type: tm+mt
-source-wordcount: '4170'
-ht-degree: 93%
+source-wordcount: '4193'
+ht-degree: 97%
 
 ---
 
@@ -22,6 +22,8 @@ Esta página lista todos os novos recursos e atualizações de documentação po
 Consulte as [Notas de versão do Adobe Campaign Classic](../../rn/using/latest-release.md) para ver as atualizações relacionadas à versão.
 
 ## Março de 2021 {#march-2021}
+
+Uma nova página foi adicionada com diretrizes e referências para obter suporte sobre o Campaign Classic. [Saiba mais](https://helpx.adobe.com/br/campaign/kb/ac-support.html)
 
 Uma nova seção foi adicionada com práticas recomendadas e verificações a serem executadas em relação à segurança e privacidade. [Leia mais](../../installation/using/get-started-security-privacy.md)
 
@@ -38,29 +40,29 @@ Foram adicionadas informações na seção de atividade **[!UICONTROL Advanced J
 
 ## Fevereiro de 2021 {#release-21.1}
 
-**Atualizações de documentação que vêm com a versão 21.1**
+**Atualizações da documentação que vêm com a versão 21.1**
 
-O novo recurso **Email Feedback Service** (beta privado) está documentado [aqui](../../delivery/using/sending-with-enhanced-mta.md#email-feedback-service).
+O novo recurso **Serviço de email de feedback** (beta privado) está documentado [aqui](../../delivery/using/sending-with-enhanced-mta.md#email-feedback-service).
 
-A seção **Server configuration file** foi atualizada com os parâmetros de configuração necessários para o Campaign se conectar a outro serviço usando IMS. [Leia mais](../../installation/using/the-server-configuration-file.md#ims)
+A seção **Arquivo de configuração do servidor** foi atualizada com os parâmetros de configuração necessários para que o Campaign se conecte a outro serviço usando IMS. [Leia mais](../../installation/using/the-server-configuration-file.md#ims)
 
-Na lista de status do delivery, a descrição para **Taken into account by the service provider** foi atualizada: esse status agora também é usado para deliveries de email enviados usando o [Serviço de feedback de email](../../delivery/using/sending-with-enhanced-mta.md#email-feedback-service). [Leia mais](../../delivery/using/delivery-statuses.md#list-delivery-statuses)
+Na lista dos status do delivery, a descrição de **Levado em consideração pelo provedor de serviço** foi atualizada: esse status agora também é usado para deliveries de email enviados usando o [Serviço de feedback de email](../../delivery/using/sending-with-enhanced-mta.md#email-feedback-service). [Leia mais](../../delivery/using/delivery-statuses.md#list-delivery-statuses)
 
-Os atalhos de teclado disponíveis na nova tela de logon para se conectar ao Adobe Campaign agora estão documentados. [Leia mais](../../platform/using/launching-adobe-campaign.md#connecting-to-adobe-campaign)
+Os atalhos de teclado disponíveis na nova tela de logon para conexão com o Adobe Campaign agora estão documentados. [Leia mais](../../platform/using/launching-adobe-campaign.md#connecting-to-adobe-campaign)
 
 **Outras atualizações**
 
 Uma nova seção foi adicionada com informações detalhadas sobre como executar o teste A/B usando workflows. [Leia mais](../../delivery/using/get-started-a-b-testing.md)
 
-A seção MTA aprimorado do Adobe Campaign foi movida [aqui](../../delivery/using/sending-with-enhanced-mta.md).
+A seção do MTA aprimorado do Adobe Campaign foi movida para [este local](../../delivery/using/sending-with-enhanced-mta.md).
 
 Uma nova página foi adicionada para fornecer uma visão geral dos recursos de rastreamento no [!DNL Campaign Classic]. [Leia mais](../../delivery/using/about-message-tracking.md)
 
 Uma seção de solução de problemas foi adicionada para ajudar você a resolver problemas comuns relacionados ao rastreamento. [Leia mais](../../delivery/using/tracking-troubleshooting.md)
 
-A seção **Envio de um email** foi reorganizada e esclarecida com novas subseções. [Leia mais](../../delivery/using/sending-messages.md)
+A seção **Enviar um email** foi reorganizada e esclarecida com novas subseções. [Leia mais](../../delivery/using/sending-messages.md)
 
-Foram adicionadas informações sobre como adicionar links em emails que podem ser personalizados e que oferecem suporte ao rastreamento. [Leia mais](../../delivery/using/tracking-personalized-links.md).
+Foram incluídas informações sobre como adicionar links a emails que podem ser personalizados e que oferecem suporte ao rastreamento. [Leia mais](../../delivery/using/tracking-personalized-links.md).
 
 ## Janeiro de 2021 {#jan-2021}
 
