@@ -5,9 +5,9 @@ title: Configuração da integração do Adobe Experience Manager
 description: Saiba como configurar a integração do Campaign-AEM
 audience: integrations
 content-type: reference
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: a157082070b22e3621cb81411a5ddde387fd5fcf
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '563'
 ht-degree: 100%
 
