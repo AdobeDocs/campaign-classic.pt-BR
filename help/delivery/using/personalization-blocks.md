@@ -6,11 +6,11 @@ description: Blocos de personalização
 audience: delivery
 content-type: reference
 topic-tags: personalizing-deliveries
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: df7c27e763e7e0c02189ed972f33eb03ca2a915f
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '895'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -128,7 +128,7 @@ Uma lista de blocos de personalização está disponível por padrão para ajuda
    >Este bloco pode ser usado em deliveries somente para visitantes.
 
 * **[!UICONTROL Registration confirmation]**: insere um link que permite confirmar a subscrição.
-* **[!UICONTROL Social network sharing links]** : insere botões que permitem ao recipient compartilhar um link para o conteúdo do mirror page com o cliente de email, Facebook, Twitter e LinkedIn (consulte Marketing  [viral: encaminhar para um amigo](../../delivery/using/viral-and-social-marketing.md#viral-marketing--forward-to-a-friend)).
+* **[!UICONTROL Social network sharing links]**: insere botões que permitem que o recipient compartilhe um link para o conteúdo da mirror page no cliente de email, Facebook, Twitter e LinkedIn (consulte [Marketing viral: encaminhar para um amigo](../../delivery/using/viral-and-social-marketing.md#viral-marketing--forward-to-a-friend)).
 * **[!UICONTROL Style of content emails]** e **[!UICONTROL Notification style]**: geram um código que formata um email com estilos HTML predefinidos. Esses blocos devem ser inseridos no código-fonte do delivery, na seção **[!UICONTROL ...]**, nos tags **`<style>...</style>`**.
 * **[!UICONTROL Offer acceptance URL in unitary mode]**: insere um URL que permite definir uma oferta de Interação para **[!UICONTROL Accepted]** (consulte [esta seção](../../interaction/using/offer-analysis-report.md)).
 
