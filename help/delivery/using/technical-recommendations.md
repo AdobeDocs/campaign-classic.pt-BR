@@ -6,9 +6,9 @@ description: Descubra técnicas, configurações e ferramentas que você pode us
 audience: delivery
 content-type: reference
 topic-tags: deliverability-management
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 72fdac4afba6c786cfbd31f4a916b0539ad833e3
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2427'
 ht-degree: 100%
 
