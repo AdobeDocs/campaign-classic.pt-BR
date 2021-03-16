@@ -6,10 +6,10 @@ description: Nota técnica
 hide: true
 hidefromtoc: true
 translation-type: tm+mt
-source-git-commit: 1233eef1d7b454daea021e1e3077890284813d9a
+source-git-commit: 849a95c718f9dc58aeabc8a49d3bf8290ea79b86
 workflow-type: tm+mt
-source-wordcount: '1026'
-ht-degree: 15%
+source-wordcount: '1031'
+ht-degree: 14%
 
 ---
 
@@ -101,7 +101,7 @@ Depois que todas as instâncias forem atualizadas, o Console do cliente também 
 
 ## Integração com Experience Cloud Triggers
 
-O serviço de autenticação oAuth herdado chegou ao fim da vida útil. A autenticação da integração dos acionadores, originalmente baseada na configuração da autenticação oAUTH para acessar o pipeline, foi movida para o Adobe I/O. Ele será removido em **30 de abril de 2021**. [Saiba mais](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-discussions/adobe-analytics-legacy-api-end-of-life-notice/td-p/385411).
+O serviço de autenticação oAuth herdado chegou ao fim da vida útil. A autenticação de integração de acionadores, originalmente baseada na configuração de autenticação oAuth para acessar o pipeline, foi movida para o Adobe I/O. Ele será removido em **30 de abril de 2021**. [Saiba mais](https://github.com/AdobeDocs/analytics-1.4-apis/blob/master/docs/APIEOL.md?mv=email).
 
 **Você é afetado?**
 
