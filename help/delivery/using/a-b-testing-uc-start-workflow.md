@@ -1,21 +1,21 @@
 ---
 solution: Campaign Classic
 product: campaign
-title: Início do workflow
+title: Início do fluxo de trabalho
 description: Saiba como executar testes A/B por meio de um caso de uso dedicado.
 audience: delivery
 content-type: reference
 topic-tags: a-b-testing
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 50a10e16f320a67cb4ad0e31c1cbe8a9365b7887
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '88'
-ht-degree: 73%
+ht-degree: 100%
 
 ---
 
 
-# Início do workflow {#step-7--starting-the-workflow}
+# Início do fluxo de trabalho {#step-7--starting-the-workflow}
 
 1. Clique em **[!UICONTROL Start]** para iniciar o workflow.
 
@@ -31,4 +31,4 @@ ht-degree: 73%
 
 1. Após o conteúdo da terceira delivery ser determinado, aprove o target e o conteúdo.
 
-Agora você pode analisar o resultado (consulte [Etapa 8: Analise o resultado](../../delivery/using/a-b-testing-uc-analyzing.md)).
+Agora você pode analisar o resultado (consulte [Etapa 8: analisar o resultado](../../delivery/using/a-b-testing-uc-analyzing.md)).
