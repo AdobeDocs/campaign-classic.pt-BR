@@ -7,7 +7,7 @@ audience: delivery
 content-type: reference
 topic-tags: monitoring-deliveries
 translation-type: tm+mt
-source-git-commit: 54ba9d2ee05b1bd7de7616142e8ad6bcbac5f8eb
+source-git-commit: bc35a95d7deed1f0fd432ef8639f307ecf4d8e1f
 workflow-type: tm+mt
 source-wordcount: '288'
 ht-degree: 100%
@@ -38,8 +38,8 @@ Um painel dedicado está disponível para cada delivery. Isso permite o monitora
 
 Para garantir que seus deliveries tenham bom desempenho, várias diretrizes devem ser seguidas. Problemas comuns que você pode encontrar ao enviar deliveries também estão disponíveis para ajudá-lo a enviar deliveries com mais eficiência.
 
-* [Desempenhos do delivery e práticas recomendadas](../../delivery/using/list-of-deliveries.md)
-* [Solução de problemas de envio de delivery](../../delivery/using/delivery-dashboard.md)
+* [Desempenhos do delivery e práticas recomendadas](../../delivery/using/delivery-performances.md)
+* [Solução de problemas de envio de delivery](../../delivery/using/delivery-troubleshooting.md)
 
 <img src="assets/do-not-localize/icon_failure.svg" width="60px">
 
