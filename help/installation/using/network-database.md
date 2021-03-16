@@ -7,10 +7,10 @@ audience: installation
 content-type: reference
 topic-tags: prerequisites-and-recommendations-
 translation-type: tm+mt
-source-git-commit: f03554302c77a39a3ad68d47417ed930f43302b7
+source-git-commit: 63b2e6b95812f1649e636580984a1f0dcc9c5c53
 workflow-type: tm+mt
-source-wordcount: '136'
-ht-degree: 33%
+source-wordcount: '135'
+ht-degree: 26%
 
 ---
 
@@ -28,9 +28,9 @@ Quando possível, use um canal seguro: POP3S em vez de POP3 (ou POP3 sobre TLS).
 
 ## Banco de dados
 
-É indispensável que a segurança do mecanismo de banco de dados seja seguida.
+Você deve aplicar as práticas recomendadas de segurança do mecanismo de banco de dados.
 
-### Configuração SSL/TLS*
+## Configuração SSL/TLS
 
 Para a verificação do certificado, é possível usar o openssl. Para verificação das cifras ativas, é possível usar o nmap:
 
