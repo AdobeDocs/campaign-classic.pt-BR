@@ -6,11 +6,11 @@ description: Saiba como iniciar a configuração do aplicativo móvel
 audience: delivery
 content-type: reference
 topic-tags: sending-push-notifications
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 965aee2e310dd7e35d7a65bf9a1bda5dc8eb0959
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '295'
-ht-degree: 90%
+ht-degree: 100%
 
 ---
 
@@ -37,11 +37,11 @@ Para enviar notificações por push no Adobe Campaign, é necessário:
 
 Como um cliente híbrido/hospedado, entre em contato com a equipe de [Atendimento ao cliente da Adobe](https://helpx.adobe.com/br/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html) para acessar o canal de notificação por push no Campaign.
 
-Como cliente local, é necessário instalar um pacote integrado.
+Como cliente local, você precisa instalar um pacote integrado.
 
 >[!CAUTION]
 >
->Saiba mais sobre a Campanha de pacotes incorporados, práticas recomendadas e recomendações em [esta página](../../installation/using/installing-campaign-standard-packages.md).
+>Saiba mais sobre os pacotes inctegrados do Campaign, as práticas recomendadas e as recomendações [nesta página](../../installation/using/installing-campaign-standard-packages.md).
 
 As etapas de instalação são:
 
