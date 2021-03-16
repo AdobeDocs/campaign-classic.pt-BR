@@ -1,21 +1,21 @@
 ---
 solution: Campaign Classic
 product: campaign
-title: Criar um workflow para construção do target
+title: Criar um fluxo de trabalho de direcionamento
 description: Saiba como executar testes A/B por meio de um caso de uso dedicado.
 audience: delivery
 content-type: reference
 topic-tags: a-b-testing
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 50a10e16f320a67cb4ad0e31c1cbe8a9365b7887
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '136'
-ht-degree: 82%
+ht-degree: 100%
 
 ---
 
 
-# Criação de um workflow para construção do target {#step-1--creating-a-targeting-workflow}
+# Criação de um fluxo de trabalho de direcionamento {#step-1--creating-a-targeting-workflow}
 
 É necessário criar o workflow na guia **[!UICONTROL Targeting and Workflows]** de uma campanha. Ele é composto de uma atividade **[!UICONTROL Query]**, uma atividade **[!UICONTROL Split]** vinculada às duas atividades **[!UICONTROL Email delivery]**, uma atividade **[!UICONTROL Wait]**, uma atividade **[!UICONTROL JavaScript code]** e uma atividade **[!UICONTROL Delivery]**.
 
@@ -35,4 +35,4 @@ ht-degree: 82%
 
 ![](assets/use_case_abtesting_targetwkfl_004.png)
 
-Agora você pode configurar as amostras de população (consulte [Etapa 2: Configure amostras de população](../../delivery/using/a-b-testing-uc-population-samples.md)).
+Agora você pode configurar as amostras de população (consulte [Etapa 2: configurar amostras de população](../../delivery/using/a-b-testing-uc-population-samples.md)).
