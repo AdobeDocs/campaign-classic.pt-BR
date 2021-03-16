@@ -6,11 +6,11 @@ description: Configuração e envio do delivery
 audience: delivery
 content-type: reference
 topic-tags: about-deliveries-and-channels
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 72fdac4afba6c786cfbd31f4a916b0539ad833e3
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1521'
-ht-degree: 89%
+ht-degree: 100%
 
 ---
 
@@ -35,21 +35,21 @@ Antes de enviar o delivery, você poderá definir os parâmetros de envio nas pr
    >
    >Quando o delivery é duplicado, o parâmetro é redefinido.
 
-* **[!UICONTROL Send using multiple waves]**: Para obter mais informações, consulte  [Enviar usando várias ondas](#sending-using-multiple-waves).
+* **[!UICONTROL Send using multiple waves]**: para obter mais informações, consulte [Enviar usando várias ondas](#sending-using-multiple-waves).
 
 * **[!UICONTROL Test SMTP delivery]**: essa opção permite testar o envio de um delivery via SMTP. O delivery é processado para conexão com o servidor SMTP, mas não é enviado.
 
    >[!NOTE]
    >
-   >A utilização dessa opção não é recomendada ao instalar usando o mid-sourcing para acionar a mta. Para obter mais informações sobre como configurar um servidor SMTP, consulte [nesta seção](../../installation/using/configuring-campaign-server.md#personalizing-delivery-parameters).
+   >A utilização dessa opção não é recomendada ao instalar usando o mid-sourcing para não chamar mta. Para obter mais informações sobre como configurar o servidor SMTP, consulte [esta seção](../../installation/using/configuring-campaign-server.md#personalizing-delivery-parameters).
 
 * **[!UICONTROL Email BCC]**: essa opção permite armazenar emails em um sistema externo por meio do CCO simplesmente adicionando um endereço de email de CCO ao target da sua mensagem. Para obter mais informações, consulte [esta seção](../../delivery/using/sending-messages.md#archiving-emails).
 
-## Confirmando delivery {#confirming-delivery}
+## Confirmação do delivery {#confirming-delivery}
 
-Quando o delivery estiver configurado e pronto para ser enviado, verifique se você executou a análise do delivery.
+Depois que o delivery estiver configurado e pronto para ser enviado, certifique-se de executar a análise do delivery.
 
-Para fazer isso, clique em **[!UICONTROL Send]**, selecione a ação desejada e clique em **[!UICONTROL Analyze]**. Para obter mais informações, consulte [Abrindo a análise](../../delivery/using/steps-validating-the-delivery.md#analyzing-the-delivery).
+Para fazer isso, clique em **[!UICONTROL Send]**, selecione a ação desejada e clique em **[!UICONTROL Analyze]**. Para obter mais informações, consulte [Iniciar a análise](../../delivery/using/steps-validating-the-delivery.md#analyzing-the-delivery).
 
 ![](assets/s_ncs_user_email_del_send.png)
 
@@ -173,9 +173,9 @@ As mensagens temporariamente não entregues devido a um erro **Suave** ou **Igno
 
 >[!IMPORTANT]
 >
->Para instalações hospedadas ou híbridas, se você tiver atualizado para [MTA aprimorado](../../delivery/using/sending-with-enhanced-mta.md), as configurações de nova tentativa no delivery não serão mais usadas pela Campanha. As tentativas de rejeição em modo suave e o tempo entre elas são determinados pelo MTA aprimorado com base no tipo e na gravidade das respostas de rejeição provenientes do domínio de email da mensagem.
+>Para instalações hospedadas ou híbridas, se você tiver atualizado para o [MTA aprimorado](../../delivery/using/sending-with-enhanced-mta.md), as configurações de nova tentativa no delivery não serão mais usadas pelo Campaign. As tentativas de rejeição temporária e o tempo entre elas são determinados pelo MTA aprimorado com base no tipo e na gravidade das respostas de rejeição provenientes do domínio de email da mensagem.
 
-Para instalações no local e instalações hospedadas/híbridas usando a Campanha herdada MTA, a seção central da guia **[!UICONTROL Delivery]** para parâmetros de delivery indica quantas tentativas devem ser executadas no dia seguinte ao delivery e o atraso mínimo entre as tentativas.
+Para instalações no local e instalações hospedadas/híbridas usando o MTA herdado do Campaign, a seção central da guia **[!UICONTROL Delivery]** para parâmetros de delivery indica quantas tentativas devem ser executadas no dia seguinte ao delivery e o atraso mínimo entre as tentativas.
 
 ![](assets/s_ncs_user_wizard_retry_param.png)
 
@@ -193,7 +193,7 @@ Quando o delivery for iniciado, as mensagens (e todas as tentativas) poderão se
 
    >[!IMPORTANT]
    >
-   >Para instalações hospedadas ou híbridas, se você tiver atualizado para [MTA aprimorado](../../delivery/using/sending-with-enhanced-mta.md), a configuração **[!UICONTROL Delivery duration]** em seus delivery de e-mail de Campanha será usada somente se definida como **3,5 dias ou menos**. Se você definir um valor superior a 3,5 dias, ele não será considerado.
+   >Para instalações hospedadas ou híbridas, se você tiver atualizado para o [MTA aprimorado](../../delivery/using/sending-with-enhanced-mta.md), a configuração **[!UICONTROL Delivery duration]** nos deliveries de email do Campaign será usada somente se definida como **3,5 dias ou menos.**. Se você definir um valor superior a 3,5 dias, ele não será levado em consideração.
 
 * **Limite da validade de recursos**: o campo **[!UICONTROL Validity limit]** é usado para recursos carregados, principalmente para a mirror page e imagens. Os recursos desta página são válidos por um tempo limitado (para economizar espaço em disco).
 
