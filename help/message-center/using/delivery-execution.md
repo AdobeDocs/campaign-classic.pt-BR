@@ -6,11 +6,11 @@ description: Execução do delivery
 audience: message-center
 content-type: reference
 topic-tags: event-processing
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: fd6195ca447fa0345189f3153f44ad2f9a067210
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '220'
-ht-degree: 85%
+ht-degree: 100%
 
 ---
 
@@ -29,13 +29,13 @@ Todos os deliveries são agrupados na pasta **[!UICONTROL Administration > Produ
 
 ![](assets/messagecenter_deliveries_execinstances_001.png)
 
-Por padrão, eles são classificados em subpastas por mês de delivery. Essa classificação poderá ser alterada nas propriedades do template de mensagem conforme mostrado abaixo.
+Por padrão, eles são classificados em subpastas por mês de delivery. Essa classificação poderá ser alterada nas propriedades do modelo de mensagem conforme mostrado abaixo.
 
 ![](assets/messagecenter_deliveries_properties_001.png)
 
 >[!NOTE]
 >
->Para instalações hospedadas ou híbridas, se você tiver atualizado para [MTA aprimorado](../../delivery/using/sending-with-enhanced-mta.md), todos os mensagens transacionais também poderão ser enviados com o Adobe Campaign Enhanced MTA para melhorar a capacidade de entrega, a taxa de transferência e a manipulação de rejeição. Todos os impactos são os mesmos das mensagens de marketing padrão.
+>Para instalações hospedadas ou híbridas, se você atualizou para o [MTA aprimorado](../../delivery/using/sending-with-enhanced-mta.md), todas as mensagens transacionais também podem ser enviadas com o MTA aprimorado do Adobe Campaign para melhorar a capacidade de entrega, a taxa de transferência e o tratamento de rejeições. Todos os impactos são os mesmos que os das mensagens de marketing padrão.
 
 ## Monitoramento de mensagens transacionais {#transactional-message-monitoring}
 
