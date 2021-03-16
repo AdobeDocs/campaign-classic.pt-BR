@@ -6,11 +6,11 @@ description: Saiba mais sobre as opções e configurações específicas do deli
 audience: delivery
 content-type: reference
 topic-tags: sending-emails
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: e84387c7c396c60c429c3f625870a97a7fdaef5a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '888'
-ht-degree: 90%
+ht-degree: 100%
 
 ---
 
@@ -19,11 +19,11 @@ ht-degree: 90%
 
 Esta seção apresenta as opções e os parâmetros específicos do delivery de email.
 
-## Email Cco {#email-bcc}
+## CCO de email {#email-bcc}
 
-O Adobe Campaign permite que você armazene emails em um sistema externo por meio do CCo simplesmente adicionando um endereço de email do CCo ao seu destino de mensagem.
+O Adobe Campaign permite que você armazene emails em um sistema externo por meio do CCO simplesmente adicionando um endereço de email de CCO ao seu target de mensagem.
 
-Uma vez ativada a opção, uma cópia exata de todas as mensagens enviadas será mantida para este delivery.
+Uma vez ativada a opção, uma cópia exata de todas as mensagens enviadas será mantida para esse delivery.
 
 Para obter mais informações sobre a configuração e práticas recomendadas de Cco de email, consulte [esta seção](../../installation/using/email-archiving.md).
 
@@ -31,7 +31,7 @@ Para obter mais informações sobre a configuração e práticas recomendadas de
 >
 >A Cco de email é um recurso opcional. Verifique seu contrato de licença e entre em contato com o executivo da sua conta para ativá-la.
 
-Ao criar um novo delivery ou template do delivery, o Email Cc não é ativado por padrão. É necessário ativá-lo manualmente no nível do delivery de e-mail ou do template do delivery.
+Ao criar um novo delivery ou template do delivery, o Email Cc não é ativado por padrão. Você precisa ativá-lo manualmente no nível do delivery de email ou do template do delivery.
 
 Para ativar o Email Cco para um template do delivery de email, siga as etapas abaixo:
 
@@ -92,7 +92,7 @@ Nas propriedades de delivery, o campo **[!UICONTROL Mode]** da guia **[!UICONTRO
 Além do modo padrão, as seguintes opções também estão disponíveis:
 
 * **[!UICONTROL Force the generation of the mirror page]**: mesmo se nenhum link para a mirror page for inserido no delivery, ela será criada.
-* **[!UICONTROL Do not generate the mirror page]**: nenhuma mirror page é gerada, mesmo se o link estiver presente no delivery.
+* **[!UICONTROL Do not generate the mirror page]**: nenhuma mirror page será gerada, mesmo se o link estiver presente no delivery.
 * **[!UICONTROL Generates a mirror page accessible using only the message identifier]**: essa opção permite acessar o conteúdo da mirror page, com informações de personalização, na janela de log do delivery. Para fazer isso, após o fim do , clique na guia **[!UICONTROL Delivery]** Delivery e selecione a linha do recipient cuja mirror page você deseja exibir. Clique no link **[!UICONTROL Display the mirror page for this message...]**.
 
    ![](assets/s_ncs_user_wizard_miror_page_link.png)
@@ -115,11 +115,11 @@ A guia **[!UICONTROL SMTP]** dos parâmetros de delivery permite configurar a ge
 
 Por padrão, os emails devolvido são recebidos na caixa de erro padrão da plataforma, mas você pode definir um endereço de erro específico para o delivery.
 
-Você também pode definir um endereço específico nessa tela para investigar os motivos para a devolução dos emails quando não puderem ser qualificados automaticamente pelo aplicativo. Para cada um desses campos, o ícone **Adicionar campos personalizados** permite que você adicione parâmetros de personalização.
+Você também pode definir um endereço específico nessa tela para investigar os motivos para a devolução dos emails quando não puderem ser qualificados automaticamente pelo aplicativo. Para cada um desses campos, o ícone **Adicionar campos personalizados** permite adicionar parâmetros de personalização.
 
 ![](assets/s_ncs_user_email_del_properties_smtp_tab.png)
 
-Para obter mais informações sobre o gerenciamento de e-mails de rejeição, consulte [esta seção](../../delivery/using/understanding-delivery-failures.md#bounce-mail-management).
+Para obter mais informações sobre gerenciamento de rejeição de emails, consulte [esta seção](../../delivery/using/understanding-delivery-failures.md#bounce-mail-management).
 
 ## Adição de cabeçalhos SMTP {#adding-smtp-headers}
 
