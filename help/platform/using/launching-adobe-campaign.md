@@ -6,10 +6,10 @@ description: Iniciar o Adobe Campaign
 audience: platform
 content-type: reference
 topic-tags: starting-with-adobe-campaign
-translation-type: ht
-source-git-commit: 33debcd6e399d2780277644103a620d46c22022e
-workflow-type: ht
-source-wordcount: '558'
+translation-type: tm+mt
+source-git-commit: 4d5d14565726c5c6e7c4e2e8a82cfa8cef87be0f
+workflow-type: tm+mt
+source-wordcount: '557'
 ht-degree: 100%
 
 ---
@@ -101,10 +101,10 @@ Se estiver executando na [versão Campaign Gold Standard](../../rn/using/gold-st
 
 ![](assets/about-acc-gs.png)
 
-Saiba mais sobre a Gold Standard [neste artigo](https://helpx.adobe.com/br/campaign/kb/gold-standard.html).
+Saiba mais sobre a Gold Standard [neste artigo](https://helpx.adobe.com/campaign/kb/gold-standard.html).
 
 **Tópicos relacionados**:
 
-* [Opções de Ajuda e Suporte do Adobe Campaign](https://helpx.adobe.com/br/campaign/kb/ac-support.html#acc-support)
+* [Opções de Ajuda e Suporte do Adobe Campaign](https://helpx.adobe.com/br/campaign/kb/ac-support.html)
 * [Distribuição de Software Adobe Campaign](https://experience.adobe.com/#/downloads/content/software-distribution/br/campaign.html)
 * [Suporte e sessões especializadas para o Adobe Experience Cloud](https://helpx.adobe.com/br/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html)
