@@ -1,21 +1,21 @@
 ---
 solution: Campaign Classic
 product: campaign
-title: Configuração dos delivery
+title: Configuração dos deliveries
 description: Saiba como executar testes A/B por meio de um caso de uso dedicado.
 audience: delivery
 content-type: reference
 topic-tags: a-b-testing
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 50a10e16f320a67cb4ad0e31c1cbe8a9365b7887
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '242'
-ht-degree: 89%
+ht-degree: 100%
 
 ---
 
 
-# Configuração das deliveries no workflow {#step-4--configuring-the-deliveries-in-the-workflow}
+# Configuração dos deliveries no fluxo de trabalho {#step-4--configuring-the-deliveries-in-the-workflow}
 
 A próxima etapa é configurar as deliveries. Estão destinados às três populações criadas na fase anterior: [Etapa 2: configuração de amostras de população](#step-2--configuring-population-samples). As duas primeiras deliverys permitem enviar conteúdo diferente para a população A e B. A terceiro delivery é destinada à população que não recebeu A nem B. O conteúdo será calculado por um script e será idêntico a A ou ao B, dependendo de qual deles obteve a maior taxa de abertura. Precisamos configurar um período de espera para o terceiro delivery, para descobrir o resultado dos deliveries A e B. É por isso que o terceiro delivery inclui uma atividade **[!UICONTROL Wait]**.
 
@@ -52,4 +52,4 @@ A próxima etapa é configurar as deliveries. Estão destinados às três popula
 
    ![](assets/use_case_abtesting_createdeliveries_008.png)
 
-Agora você pode criar o script (consulte [Etapa 5: Crie o script](../../delivery/using/a-b-testing-uc-script.md)).
+Agora você pode criar o script (consulte [Etapa 5: criar o script](../../delivery/using/a-b-testing-uc-script.md)).
