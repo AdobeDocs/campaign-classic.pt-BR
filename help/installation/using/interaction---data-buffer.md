@@ -7,36 +7,41 @@ audience: installation
 content-type: reference
 topic-tags: additional-configurations
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: d88815e36f7be1b010dcaeee51013a5da769b4a8
 workflow-type: tm+mt
-source-wordcount: '256'
-ht-degree: 3%
+source-wordcount: '299'
+ht-degree: 17%
 
 ---
 
 
 # Interação - buffer de dados{#interaction-data-buffer}
 
+É possível configurar uma zona de buffer de dados para aumentar o desempenho do Interaction de entrada ao dessincronizar os cálculos de apresentação de oferta. Essa configuração deve ser executada no próprio arquivo de configuração da instância (config-Instance.xml).
+
+No Adobe Campaign, uma **zona de buffer de dados** foi introduzida no módulo Interação. Isso permite **aumentar o desempenho** da interação de entrada ao dessincronizar cálculos de estoque e oferta.
+
+Ela só diz respeito à interação de entrada, seja por uma chamada (com ou sem dados de chamada) ou por uma atualização de status (updateStatus).
+
+Para evitar uma fila ao escrever propostas relacionadas a um recipient, um novo processo gera uma **zona de buffer de dados** que permite que as propostas sejam **escritas de forma assíncrona**. Essa zona de buffer de dados é periodicamente lida e esvaziada. O período padrão é de cerca de um segundo.A escrita da proposta é então agrupada.
+
 >[!NOTE]
 >
->Algumas configurações só podem ser executadas por Adobe para implantações hospedadas por Adobe. Por exemplo, para acessar os arquivos de configuração do servidor e da instância. Para saber mais sobre as diferentes implantações, consulte a seção [Hospedagem de modelos](../../installation/using/hosting-models.md) ou [esta página](../../installation/using/capability-matrix.md).
-
-No Adobe Campaign, uma **zona de buffer de dados** foi introduzida no módulo Interação. Isso permite que você **aumente o desempenho** da interação de entrada ao dessincronizar cálculos de estoque e oferta.
-
-Só diz respeito à Interação de entrada, seja por uma chamada (com ou sem dados de chamada) ou por uma atualização de status (updateStatus).
-
-Para evitar uma fila ao gravar propostas relacionadas a um recipient, um novo processo gera uma **zona de buffer de dados** que permite que as propostas sejam **escritas de forma assíncrona**. Essa zona de buffer de dados é periodicamente lida e esvaziada. O período padrão está no espaço de aproximadamente um segundo.A escrita de propostas é, portanto, agrupada.
+>Esse parâmetro é essencial se usar o Interaction com uma arquitetura distribuída.
 
 A zona de buffer de dados **configuration** pode ser feita no arquivo de configuração da instância (config-Instance.xml).
 
->[!NOTE]
+>[!CAUTION]
 >
->Qualquer alteração feita na configuração requer uma reinicialização do servidor da Web (Apache:IIS) e dos processos da Adobe Campaign.\
->Depois de configurar a zona de buffer de dados, verifique se há uma configuração de hardware adaptada disponível. (quantidade de memória presente).
+>Algumas configurações só podem ser executadas pelo Adobe para implantações hospedadas pelo Adobe. Por exemplo, para acessar os arquivos de configuração do servidor e da instância. Para saber mais sobre as diferentes implantações, consulte a seção [Modelos de hospedagem](../../installation/using/hosting-models.md) ou [esta página](../../installation/using/capability-matrix.md).
+>
+>Qualquer alteração feita na configuração requer uma reinicialização do servidor da Web (Apache:IIS) e dos processos do Adobe Campaign.\
+>Após configurar a zona de buffer de dados, verifique se uma configuração de hardware adaptada está disponível. (quantidade de memória presente).
 
-Depois de configurar a zona de buffer de dados, verifique se há uma configuração de hardware adaptada disponível. (quantidade de memória presente).
 
-A definição de um daemon de gravação (processo chamado: interações) é o seguinte:
+Após configurar a zona de buffer de dados, verifique se uma configuração de hardware adaptada está disponível. (quantidade de memória presente).
+
+A definição de um daemon de gravação (processo chamado: interação) é o seguinte:
 
 ```
 <interactiond args="" autoStart="false" callDataSize="0" initScript="" maxProcessMemoryAlertMb="1800"
@@ -44,7 +49,7 @@ maxProcessMemoryWarningMb="1600" maxSharedEntries="25000" nextOffersSize="0"
 processRestartTime="06:00:00" runLevel="10" targetKeySize="16"/>
 ```
 
-Se você usar a Interação de entrada, o atributo @autostart deverá ser &quot;true&quot; para iniciar automaticamente o processo quando o servidor Adobe Campaign for iniciado.
+Se você usar a Interação de entrada, o atributo @autostart deverá ser &quot;true&quot; para iniciar automaticamente o processo quando o servidor do Adobe Campaign for iniciado.
 
 Detalhes do argumento:
 
