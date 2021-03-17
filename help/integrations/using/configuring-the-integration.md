@@ -5,9 +5,9 @@ title: Configuração da integração do Adobe Experience Manager
 description: Saiba como configurar a integração do Campaign-AEM
 audience: integrations
 content-type: reference
-translation-type: ht
-source-git-commit: a157082070b22e3621cb81411a5ddde387fd5fcf
-workflow-type: ht
+translation-type: tm+mt
+source-git-commit: d88815e36f7be1b010dcaeee51013a5da769b4a8
+workflow-type: tm+mt
 source-wordcount: '563'
 ht-degree: 100%
 
@@ -52,7 +52,7 @@ O pacote **[!UICONTROL AEM integration]** define o operador **[!UICONTROL aemser
 
 >[!CAUTION]
 >
->É altamente recomendável criar uma zona de segurança dedicada ao AEM para evitar problemas de segurança. Para obter mais informações, consulte o [Guia](../../installation/using/configuring-campaign-server.md#defining-security-zones) de instalação.
+>É altamente recomendável criar uma zona de segurança dedicada ao AEM para evitar problemas de segurança. Para obter mais informações, consulte o [Guia](../../installation/using/security-zones.md) de instalação.
 
 Se a sua instância do Campaign for hospedada pela Adobe, entre em contato com a equipe de [Atendimento ao cliente da Adobe](https://helpx.adobe.com/br/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html). Se você estiver usando o Campaign no local, siga as etapas abaixo:
 
