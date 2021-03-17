@@ -7,35 +7,35 @@ audience: installation
 content-type: reference
 topic-tags: deployment-types-
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: ae4b2ba6db140cdfb9ec4a38231fcc3e54b1478c
 workflow-type: tm+mt
-source-wordcount: '1132'
-ht-degree: 1%
+source-wordcount: '1090'
+ht-degree: 2%
 
 ---
 
 
 # Implantação independente{#standalone-deployment}
 
-Esta configuração inclui todos os componentes no mesmo computador:
+Essa configuração inclui todos os componentes no mesmo computador:
 
-* processo de aplicação (Web),
-* processo de delivery (mta),
-* processo de redirecionamento (localização),
-* processo de fluxo de trabalho e tarefas programadas (wfserver),
-* processo de envio de correio (inMail),
-* processo estatístico (estado).
+* processo de aplicação (web),
+* processo de entrega (mta),
+* processo de redirecionamento (rastreamento),
+* processo de fluxo de trabalho e tarefas agendadas (wfserver),
+* processo de email de devolução (inMail),
+* processo de estatísticas (stat).
 
-A comunicação geral entre os processos é feita de acordo com o seguinte schema:
+A comunicação geral entre os processos é realizada de acordo com o seguinte schema:
 
 ![](assets/s_900_ncs_install_standaloneconfig.png)
 
-Esse tipo de configuração pode ser executado ao gerenciar listas com menos de 100.000 recipient e, por exemplo, com as seguintes camadas de software:
+Esse tipo de configuração pode ser executado ao gerenciar listas de menos de 100.000 recipients e com, por exemplo, as seguintes camadas de software:
 
 * Linux,
 * Apache,
 * PostgreSQL,
-* Correio.
+* Qmail.
 
 À medida que o volume cresce, uma variante dessa arquitetura move o servidor de banco de dados para outro computador para melhorar o desempenho.
 
@@ -53,9 +53,9 @@ Esse tipo de configuração pode ser executado ao gerenciar listas com menos de 
 ### Desvantagens {#disadvantages}
 
 * Um computador crítico em caso de incidente.
-* Largura de banda limitada ao transmitir mensagens (em nossa experiência, cerca de várias dezenas de milhares de emails por hora).
+* Largura de banda limitada ao transmitir mensagens (em nossa experiência, cerca de dezenas de milhares de emails por hora).
 * Possível atraso do aplicativo ao transmitir.
-* O servidor de aplicativos deve estar disponível de fora (enquanto estiver localizado no DMZ, por exemplo), pois hospeda o servidor de redirecionamento.
+* O servidor de aplicativos deve estar disponível externamente (enquanto estiver localizado no DMZ, por exemplo), pois ele hospeda o servidor de redirecionamento.
 
 ## Etapas de instalação e configuração {#installation-and-configuration-steps}
 
@@ -63,11 +63,11 @@ Esse tipo de configuração pode ser executado ao gerenciar listas com menos de 
 
 * JDK,
 * Servidor Web (IIS, Apache),
-* Acesso a um servidor de bases de dados,
-* Caixa de correio de rejeição acessível via POP3,
+* Acesso a um servidor de banco de dados,
+* Caixa de entrada de devolução acessível via POP3,
 * Criação de dois aliases DNS:
 
-   * a primeira exposta ao público para rastreamento e indicação do computador no seu IP público;
+   * A primeira pessoa exposta ao público para rastrear e apontar para o computador no seu IP público;
    * o segundo alias exposto a usuários internos para acesso ao console e apontando para o mesmo computador.
 
 * Firewall configurado para abrir SMTP (25), DNS (53), HTTP (80), HTTPS (443), SQL (1521 para Oracle, 5432 para PostgreSQL etc.) portas. Para obter mais informações, consulte [Configuração de rede](../../installation/using/network-configuration.md).
@@ -75,18 +75,18 @@ Esse tipo de configuração pode ser executado ao gerenciar listas com menos de 
 Nos exemplos a seguir, os parâmetros da instância são:
 
 * Nome da instância: **demo**
-* Máscara de DNS: **console.campanha.net*** (somente para conexões de console do cliente e para relatórios)
+* Máscara de DNS: **console.campaign.net*** (somente para conexões de console do cliente e para relatórios)
 * Banco de dados: **campanha:demo@dbsrv**
 
-### Instalação e configuração (máquina única) {#installing-and-configuring--single-machine-}
+### Instalar e configurar (máquina única) {#installing-and-configuring--single-machine-}
 
 Siga as etapas abaixo:
 
-1. Siga o procedimento de instalação do servidor Adobe Campaign: pacote **nlserver** no Linux ou **setup.exe** no Windows.
+1. Siga o procedimento de instalação do servidor Adobe Campaign: **pacote nlserver** no Linux ou **setup.exe** no Windows.
 
-   Para obter mais informações, consulte [Pré-requisitos de instalação da Campanha no Linux](../../installation/using/prerequisites-of-campaign-installation-in-linux.md) (Linux) e [Pré-requisitos de instalação da Campanha no Windows](../../installation/using/prerequisites-of-campaign-installation-in-windows.md) (Windows).
+   Para obter mais informações, consulte [Pré-requisitos da instalação do Campaign no Linux](../../installation/using/prerequisites-of-campaign-installation-in-linux.md) (Linux) e [Pré-requisitos da instalação do Campaign no Windows](../../installation/using/prerequisites-of-campaign-installation-in-windows.md) (Windows).
 
-1. Depois que o servidor Adobe Campaign estiver instalado, start o servidor de aplicativos (Web) usando o comando **nlserver web -tomcat** (o módulo Web permite que você start o Tomcat no modo independente do servidor Web acompanhando na porta 8080) e certifique-se de que os start Tomcat estejam corretos:
+1. Depois que o servidor do Adobe Campaign for instalado, inicie o servidor de aplicativos (web) usando o comando **nlserver web -tomcat** (o módulo da Web permite iniciar o Tomcat no modo de servidor da Web independente ouvindo na porta 8080) e para garantir que o Tomcat inicie corretamente:
 
    ```
    12:08:18 >   Application server for Adobe Campaign Classic (7.X YY.R build XXX@SHA1) of DD/MM/YYYY
@@ -97,16 +97,16 @@ Siga as etapas abaixo:
 
    >[!NOTE]
    >
-   >Na primeira vez que o módulo Web é executado, ele cria os arquivos **config-default.xml** e **serverConf.xml** no diretório **conf** na pasta de instalação. Todos os parâmetros disponíveis em **serverConf.xml** estão listados nesta [seção](../../installation/using/the-server-configuration-file.md).
+   >Na primeira vez que o módulo Web é executado, ele cria os arquivos **config-default.xml** e **serverConf.xml** no diretório **conf** na pasta de instalação. Todos os parâmetros disponíveis no **serverConf.xml** são listados nesta [seção](../../installation/using/the-server-configuration-file.md).
 
    Pressione **Ctrl+C** para parar o servidor.
 
    Para obter mais informações, consulte as seguintes seções:
 
-   * Para Linux: [Primeiro start do servidor](../../installation/using/installing-packages-with-linux.md#first-start-up-of-the-server),
-   * Para Windows: [Primeiro start do servidor](../../installation/using/installing-the-server.md#first-start-up-of-the-server).
+   * Para Linux: [Primeira inicialização do servidor](../../installation/using/installing-packages-with-linux.md#first-start-up-of-the-server),
+   * Para Windows: [Primeira inicialização do servidor](../../installation/using/installing-the-server.md#first-start-up-of-the-server).
 
-1. Altere a senha **internal** usando o comando:
+1. Altere a senha **interna** usando o comando:
 
    ```
    nlserver config -internalpassword
@@ -114,7 +114,7 @@ Siga as etapas abaixo:
 
    Para obter mais informações, consulte [Identificador interno](../../installation/using/campaign-server-configuration.md#internal-identifier).
 
-1. Crie a instância **demo** com as máscaras DNS para rastreamento (neste caso, **tracking.campanha.net**) e acesso aos consoles do cliente (neste caso, **console.campanha.net**). Há duas maneiras de fazer isso:
+1. Crie a instância **demo** com as máscaras DNS para rastreamento (neste caso, **tracking.campaign.net**) e o acesso aos consoles do cliente (neste caso, **console.campaign.net**). Há duas maneiras de fazer isso:
 
    * Crie a instância por meio do console:
 
@@ -132,7 +132,7 @@ Siga as etapas abaixo:
 
       Para obter mais informações, consulte [Criação de uma instância](../../installation/using/command-lines.md#creating-an-instance).
 
-1. Edite o arquivo **config-demo.xml** (criado na etapa anterior ao lado de **config-default.xml**) e certifique-se de **mta** (delivery), **wfserver** (fluxo de trabalho), **inMail** (salto ) e **stat** (estatísticas) os processos estão ativados. Em seguida, configure o endereço do servidor de estatísticas:
+1. Edite o arquivo **config-demo.xml** (criado na etapa anterior ao lado de **config-default.xml**) e verifique se **mta** (delivery), **wfserver** (workflow), **inMail** (emails devolvidos) e **stat** (estatísticas) os processos estão ativados. Em seguida, configure o endereço do servidor de estatísticas:
 
    ```
    <?xml version='1.0'?>
@@ -152,7 +152,7 @@ Siga as etapas abaixo:
 
    Para obter mais informações, consulte [Ativando processos](../../installation/using/campaign-server-configuration.md#enabling-processes).
 
-1. Edite o arquivo **serverConf.xml** e especifique o domínio do delivery, em seguida, especifique os endereços IP (ou host) dos servidores DNS usados pelo módulo MTA para responder a query DNS do tipo MX.
+1. Edite o arquivo **serverConf.xml** e especifique o domínio de delivery, em seguida, especifique os endereços IP (ou host) dos servidores DNS usados pelo módulo MTA para responder consultas DNS do tipo MX.
 
    ```
    <dnsConfig localDomain="campaign.com" nameServers="192.0.0.1, 192.0.0.2"/>
@@ -160,23 +160,18 @@ Siga as etapas abaixo:
 
    >[!NOTE]
    >
-   >O parâmetro **nameServers** só é utilizado no Windows.
+   >O parâmetro **nameServers** é usado somente no Windows.
 
-   Para obter mais informações, consulte [configuração do servidor de Campanha](../../installation/using/campaign-server-configuration.md).
+   Para obter mais informações, consulte [Configuração do servidor do Campaign](../../installation/using/campaign-server-configuration.md).
 
-1. Copie o programa de configuração do console do cliente (**setup-client-7.XX**, **YYYYYY.exe** para v7 ou **setup-client-6.XX**, **YYYYY.exe** para v6.1) para **/datakit/nl pasta/eng/jsp**.
-
-   Para obter mais informações, consulte as seguintes seções:
-
-   * Para Linux: [Disponibilidade do console do cliente para Linux](../../installation/using/client-console-availability-for-linux.md)
-   * Para Windows: [Disponibilidade do console do cliente para Windows](../../installation/using/client-console-availability-for-windows.md)
+1. Copie o programa de configuração do console do cliente (**setup-client-7.XX**, **YYYY.exe** para v7 ou **setup-client-6.XX**, **YYYY.exe** para v6.1) para **/datakit/nl pasta eng/jsp**. [Saiba mais](../../installation/using/client-console-availability-for-windows.md).
 
 1. Siga o procedimento de integração do servidor Web (IIS, Apache) descrito nas seguintes seções:
 
    * Para Linux: [Integração em um servidor Web para Linux](../../installation/using/integration-into-a-web-server-for-linux.md)
    * Para Windows: [Integração em um servidor Web para Windows](../../installation/using/integration-into-a-web-server-for-windows.md)
 
-1. Start o site e teste o redirecionamento usando o URL: https://tracking.campaign.net/r/test.
+1. Inicie o site e teste o redirecionamento usando a URL: https://tracking.campaign.net/r/test.
 
    O navegador deve exibir a seguinte mensagem:
 
@@ -189,11 +184,11 @@ Siga as etapas abaixo:
    * Para Linux: [Iniciar o servidor Web e testar a configuração](../../installation/using/integration-into-a-web-server-for-linux.md#launching-the-web-server-and-testing-the-configuration)
    * Para Windows: [Iniciar o servidor Web e testar a configuração](../../installation/using/integration-into-a-web-server-for-windows.md#launching-the-web-server-and-testing-the-configuration)
 
-1. Start o servidor Adobe Campaign (**net start nlserver6** no Windows, **/etc/init.d/nlserver6 start** no Linux) e execute o comando **nlserver pdump** mais uma vez para verificar a presença de todos os módulos ativados.
+1. Inicie o servidor Adobe Campaign (**net start nlserver6** no Windows, **/etc/init.d/nlserver6 start** no Linux) e execute o comando **nlserver pdump** mais uma vez para verificar a presença de todos os módulos ativados.
 
    >[!NOTE]
    >
-   >A partir do 20.1, recomendamos usar o seguinte comando (para Linux): **servidor nlserver do start systemctl**
+   >A partir da versão 20.1, recomendamos usar o seguinte comando (para Linux): **systemctl start nlserver**
 
    ```
    12:09:54 >   Application server for Adobe Campaign Classic (7.X YY.R build XXX@SHA1) of DD/MM/YYYY
@@ -206,22 +201,17 @@ Siga as etapas abaixo:
    web@default (28671) - 40.5 MB
    ```
 
-   Esse comando também permite que você saiba a versão e o número da compilação do servidor Adobe Campaign instalado no computador.
+   Esse comando também permite saber a versão e o número da build do servidor Adobe Campaign instalado no computador.
 
 1. Teste o módulo **nlserver web** usando o URL: https://console.campaign.net/nl/jsp/logon.jsp
 
    Esse URL permite que você acesse a página de download do programa de configuração do cliente.
 
-   Digite o logon **interno** e a senha associada ao acessar a página do controle de acesso.
+   Insira o logon **interno** e a senha associada ao acessar a página de controle de acesso. [Saiba mais](../../installation/using/client-console-availability-for-windows.md).
 
    ![](assets/s_ncs_install_access_client.png)
 
-   Para obter mais informações, consulte as seguintes seções:
-
-   * Para Linux: [Disponibilidade do console do cliente para Linux](../../installation/using/client-console-availability-for-linux.md)
-   * Para Windows: [Disponibilidade do console do cliente para Windows](../../installation/using/client-console-availability-for-windows.md)
-
-1. Start do console do cliente Adobe Campaign (da página de download anterior ou iniciado diretamente no servidor para uma instalação do Windows), defina o URL de conexão do servidor como https://console.campaign.net e conecte usando o logon **interno**.
+1. Inicie o console do cliente do Adobe Campaign (na página de download anterior ou iniciado diretamente no servidor para uma instalação do Windows), defina o URL da conexão do servidor como https://console.campaign.net e conecte usando o logon **interno**.
 
    Consulte [Criação de uma instância e logon](../../installation/using/creating-an-instance-and-logging-on.md) e [Identificador interno](../../installation/using/campaign-server-configuration.md#internal-identifier).
 
@@ -229,29 +219,29 @@ Siga as etapas abaixo:
 
    ![](assets/s_ncs_install_db_oracle_creation01.png)
 
-   Siga as etapas do assistente e crie o banco de dados associado à instância de conexão.
+   Siga as etapas no assistente e crie o banco de dados associado à instância de conexão.
 
    Para obter mais informações, consulte [Criação e configuração do banco de dados](../../installation/using/creating-and-configuring-the-database.md).
 
    Depois que o banco de dados for criado, faça logoff.
 
-1. Faça logon novamente no console do cliente usando o logon **admin** sem uma senha e start o assistente de implantação (menu **[!UICONTROL Tools > Advanced]**) para concluir a configuração da instância.
+1. Faça logon novamente no console do cliente usando o logon **admin** sem uma senha e inicie o assistente de implantação (menu **[!UICONTROL Tools > Advanced]** ) para concluir a configuração da instância.
 
    Para obter mais informações, consulte [Implantação de uma instância](../../installation/using/deploying-an-instance.md).
 
-   Os principais parâmetros a serem definidos são os seguintes:
+   Os principais parâmetros a serem definidos são:
 
-   * Delivery de e-mail: endereços de remetente e resposta e a caixa de correio de erro para o correio de rejeição.
-   * Acompanhamento: Preencha o URL externo usado para redirecionamento e o URL interno, clique em **Registro no(s) servidor(es) de rastreamento** e valide-o na instância **demo** do servidor de rastreamento.
+   * Delivery por email: endereços de remetente e resposta e a caixa de entrada de erro para email de devolução.
+   * Rastreamento: Preencha a URL externa usada para o redirecionamento e a URL interna, clique em **Registration on the tracking server(s)** e valide-a na instância **demo** do servidor de rastreamento.
 
       Para obter mais informações, consulte [Configuração de rastreamento](../../installation/using/deploying-an-instance.md#tracking-configuration).
 
       ![](assets/s_ncs_install_deployment_wiz_09.png)
 
-      Como o servidor Adobe Campaign é usado tanto como o servidor de aplicativos quanto o servidor de redirecionamento, o URL interno usado para coletar logs de rastreamento e transferir URLs é uma conexão interna direta com o Tomcat (https://localhost:8080).
+      Como o servidor do Adobe Campaign é usado como o servidor de aplicativos e o servidor de redirecionamento, a URL interna usada para coletar logs de rastreamento e URLs de transferência é uma conexão interna direta com o Tomcat (https://localhost:8080).
 
-   * Gerenciamento de rejeição: Insira os parâmetros para manipular o correio de rejeição (não considere a seção **Mensagens de rejeição não processadas**).
-   * Acesso de: Forneça os dois URLs para relatórios, Formulários web e mirrores page.
+   * Gerenciamento de devolução: Insira os parâmetros para lidar com emails de devolução (não considere a seção **Unprocessed bounce mails**).
+   * Acesso de: Forneça os dois URLs para relatórios, formulários web e mirror pages.
 
       ![](assets/d_ncs_install_web_url.png)
 
