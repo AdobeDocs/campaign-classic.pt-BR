@@ -7,9 +7,9 @@ audience: delivery
 content-type: reference
 topic-tags: sending-emails
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: d88815e36f7be1b010dcaeee51013a5da769b4a8
 workflow-type: tm+mt
-source-wordcount: '947'
+source-wordcount: '925'
 ht-degree: 100%
 
 ---
@@ -101,11 +101,6 @@ A opção **[!UICONTROL The file content is personalized and converted into PDF 
 Para este tipo de anexo, sigas as seguintes etapas de configuração:
 
 1. Selecione o arquivo a ser carregado.
-
-   >[!NOTE]
-   >
-   >O arquivo de origem deve ser criado no LibreOffice. A instância deve ser configurada com os pré-requisitos detalhados [nesta seção](../../installation/using/before-starting.md).
-
 1. Especifique o rótulo se necessário.
 1. Selecione **[!UICONTROL Upload file on the server]** e clique em **[!UICONTROL Update on server]** para iniciar a transferência.
 1. Você pode exibir uma pré-visualização. Para fazer isso, selecione um recipient.
