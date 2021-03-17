@@ -7,10 +7,10 @@ audience: installation
 content-type: reference
 topic-tags: prerequisites-and-recommendations-
 translation-type: tm+mt
-source-git-commit: f03554302c77a39a3ad68d47417ed930f43302b7
+source-git-commit: d88815e36f7be1b010dcaeee51013a5da769b4a8
 workflow-type: tm+mt
-source-wordcount: '1186'
-ht-degree: 41%
+source-wordcount: '1156'
+ht-degree: 42%
 
 ---
 
@@ -29,8 +29,6 @@ ht-degree: 41%
 >
 >
 Para verificar se sua instância está hospedada no AWS, siga as etapas detalhadas [nessa seção](https://experienceleague.adobe.com/docs/control-panel/using/faq.html).
-
-Para saber como usar a interface de usuário de autoatendimento de zonas de segurança para gerenciar entradas na configuração da zona de segurança VPN, consulte [esta nota técnica](https://helpx.adobe.com/br/campaign/kb/configuring-security-zones-self-service.html).
 
 * Certifique-se de que seu proxy reverso não seja permitido na sub-rede. Se for o caso, o tráfego **all** será detectado como proveniente deste IP local, então será confiável.
 
@@ -94,7 +92,7 @@ Existem três modos de proteção de conexão:
 
 * **Bloqueio** : todos os URLs fora da lista de permissões são bloqueados, com uma mensagem de erro. Este é o modo padrão depois de um pós-upgrade.
 * **Permissivo** : todos os URLs fora da lista de permissões são permitidos.
-* **Aviso** : todos os URLs que não estão na lista de permissões são permitidos, mas o interpretador JS emite um aviso, para que o administrador possa coletá-los. Esse modo adiciona mensagens de aviso JST-310027.
+* **Aviso** : todos os URLs não na lista de permissões são permitidos, mas o interpretador JS emite um aviso, para que o administrador possa coletá-los. Esse modo adiciona mensagens de aviso JST-310027.
 
 ```
 <urlPermission action="warn" debugTrace="true">
@@ -127,6 +125,6 @@ O Adobe Campaign permite definir uma senha simples no elemento `<dbcnx .../>` . 
 
 Por padrão, o Adobe Campaign não coloca uma sessão em um IP específico, mas você pode ativá-lo para impedir que a sessão seja roubada. Para fazer isso, no arquivo [serverConf.xml](../../installation/using/the-server-configuration-file.md), defina o atributo checkIPConsistent como **true** no nó `<authentication>`.
 
-Por padrão, o MTA do Adobe Campaign não usa uma conexão segura para enviar conteúdo ao servidor SMTP. Esse recurso deve ser habilitado (pode reduzir a velocidade de entrega). Para fazer isso, defina enableTLS como tr**ue no nó `<smtp ...>`.
+Por padrão, o MTA do Adobe Campaign não usa uma conexão segura para enviar conteúdo ao servidor SMTP. Esse recurso deve ser habilitado (pode reduzir a velocidade de entrega). Para fazer isso, defina **enableTLS** para **true** no nó `<smtp ...>`.
 
 Você pode reduzir a duração de uma sessão no nó de autenticação (atributo sessionTimeOutSec).
