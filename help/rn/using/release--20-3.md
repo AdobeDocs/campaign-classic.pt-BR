@@ -27,7 +27,7 @@ _11 de janeiro de 2021_
 
 * Correção de um problema de regressão relacionado ao processo de geração de banda larga que pode causar o travamento do processo de MTA.
 
-## ![](assets/do-not-localize/red_2.png) Versão 20.3.1 - Build 9228 {#release-20-3-1-build-9228}
+## ![](assets/do-not-localize/red_2.png) Versão 20.3.1 - Compilação 9228 {#release-20-3-1-build-9228}
 
 _27 de outubro de 2020_
 
@@ -80,7 +80,7 @@ _27 de outubro de 2020_
 
 **Aprimoramentos de segurança**
 
-* Carregamento seguro de bibliotecas: a fim de proteger de ataques de pré-carregamento de DLL, o Campaign agora carrega as DLLs do Windows somente do caminho padrão de DLL do sistema do Windows ao carregar o Cliente do Campaign (nlclient). [Saiba mais](https://support.microsoft.com/en-us/help/2389418/secure-loading-of-libraries-to-prevent-dll-preloading-attacks) (NEO-24147)
+* Carregamento seguro de bibliotecas: a fim de proteger de ataques de pré-carregamento de DLL, o Campaign agora carrega as DLLs do Windows somente do caminho padrão de DLL do sistema do Windows ao carregar o Cliente do Campaign (nlclient). [Saiba mais](https://support.microsoft.com/pt-BR/topic/secure-loading-of-libraries-to-prevent-dll-preloading-attacks-d41303ec-0748-9211-f317-2edc819682e1) (NEO-24147)
 * Correção de um problema de segurança para reforçar a proteção contra ataques SSRF (Server Side Request Forgery). (NEO-25661)
 
 
