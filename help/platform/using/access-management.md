@@ -7,7 +7,7 @@ audience: platform
 content-type: reference
 topic-tags: administration-basics
 translation-type: tm+mt
-source-git-commit: f7e4f129a96e80ec169428057f661165d8b967c9
+source-git-commit: d88815e36f7be1b010dcaeee51013a5da769b4a8
 workflow-type: tm+mt
 source-wordcount: '253'
 ht-degree: 66%
@@ -25,7 +25,7 @@ O Adobe Campaign permite definir e gerenciar os direitos atribuídos aos diverso
 
 As permissões se aplicam a perfis ou grupos de operadores.
 
-Os perfis são preenchidos por parâmetros de segurança vinculados ao modo de conexão do operador para o Adobe Campaign. Para obter mais informações sobre zonas de segurança em [esta página](../../installation/using/configuring-campaign-server.md#defining-security-zones).
+Os perfis são preenchidos por parâmetros de segurança vinculados ao modo de conexão do operador para o Adobe Campaign. Para obter mais informações sobre zonas de segurança em [esta página](../../installation/using/security-zones.md).
 
 Há dois tipos de permissões que você pode conceder a um usuário:
 
