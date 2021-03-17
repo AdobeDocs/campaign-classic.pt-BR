@@ -64,7 +64,7 @@ _22 de dezembro de 2020_
 
 
 
-## ![](assets/do-not-localize/red_2.png) Versão 20.2.3 - Build 9182 {#release-20-2-3-build-9182}
+## ![](assets/do-not-localize/red_2.png) Versão 20.2.3 - Compilação 9182 {#release-20-2-3-build-9182}
 
 _11 de setembro de 2020_
 
@@ -89,7 +89,7 @@ _11 de setembro de 2020_
 * Correção de uma regressão durante a pós-atualização, causando um início incorreto do nlserver (logs de erros).
 * O gerenciamento de atualizações da memória compartilhada foi aprimorado. As etapas adicionais necessárias na versão 20.2 não são mais necessárias.
 
-## ![](assets/do-not-localize/red_2.png) Versão 20.2.2 - Build 9180 {#release-20-2-2-build-9180}
+## ![](assets/do-not-localize/red_2.png) Versão 20.2.2 - Compilação 9180 {#release-20-2-2-build-9180}
 
 _22 de julho de 2020_
 
@@ -118,7 +118,7 @@ _22 de julho de 2020_
 
 ![](assets/do-not-localize/cp-icon.png) **Nova versão de junho do Painel de controle do Campaign** com monitoramento de perfis ativos, auditoria de entregabilidade de subdomínio e gerenciamento de chaves GPG. [Saiba mais](https://docs.adobe.com/content/help/en/control-panel/using/release-notes.html).
 
-## ![](assets/do-not-localize/red_2.png) Versão 20.2.1 - Build 9178 {#release-20-2-1-build-9178}
+## ![](assets/do-not-localize/red_2.png) Versão 20.2.1 - Compilação 9178 {#release-20-2-1-build-9178}
 
 _8 de junho de 2020_
 
