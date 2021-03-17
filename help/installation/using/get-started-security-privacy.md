@@ -7,17 +7,17 @@ audience: installation
 content-type: reference
 topic-tags: prerequisites-and-recommendations-
 translation-type: tm+mt
-source-git-commit: 45a77d3fc143ab9c6f9f17ab6118f8816254f6fd
+source-git-commit: 922603492d2c98d751683d3aa481e9ab19bca70c
 workflow-type: tm+mt
-source-wordcount: '441'
-ht-degree: 32%
+source-wordcount: '450'
+ht-degree: 27%
 
 ---
 
 
 # Introdução à segurança e privacidade {#get-started-security-privacy}
 
-Esta seção apresentará os principais elementos sobre segurança e privacidade.
+Esta seção apresentará os principais elementos sobre segurança e privacidade. Algumas configurações só podem ser executadas por clientes locais.
 
 ## Privacidade
 
@@ -48,13 +48,13 @@ O gerenciamento de acesso é uma parte importante do fortalecimento da seguranç
 
 <img src="assets/do-not-localize/icon_scripting.svg" width="60px">
 
-Ao desenvolver no Adobe Campaign (fluxos de trabalho, Javascript, JSSP, etc.), siga sempre estas diretrizes:
+Ao desenvolver no Adobe Campaign (fluxos de trabalho, Javascript, JSSP etc.), sempre siga estas diretrizes:
 
 * **Scripting**: tente evitar instruções SQL. Use funções parametrizadas em vez de concatenação de strings e evite a injeção de SQL colocando as funções SQL a serem utilizadas na lista de permissões.
 
-* **Proteção do modelo** de dados: use direitos nomeados para limitar as ações do operador, adicione filtros do sistema (sysFilter)
+* **Proteger o modelo** de dados: use direitos nomeados para limitar as ações do operador, adicione filtros do sistema (sysFilter)
 
-* **Adição de captchas em aplicativos da Web**: aprenda como adicionar captchas em suas páginas de aterrissagem e páginas de assinatura públicas.
+* **Adicionar captchas em aplicações** web: saiba como adicionar captchas em suas páginas de aterrissagem e páginas de assinatura públicas.
 
 [Leia mais](../../installation/using/scripting-coding-guidelines.md)
 
@@ -92,9 +92,9 @@ A configuração deve ser executada em todos os servidores. Os arquivos de confi
 
 Várias práticas recomendadas devem ser seguidas ao configurar seu servidor da Web (Apache/IIS):
 
-* Desative a versão e as cifras SSL antigas:
-* Remova o método TRACE:
-* Remova o banner:
-* Limite o tamanho da consulta para impedir que arquivos importantes sejam carregados:
+* Desative a versão e as cifras SSL antigas
+* Remova o método TRACE
+* Remova o banner
+* Limite o tamanho da consulta para impedir que arquivos importantes sejam carregados
 
 [Leia mais](../../installation/using/web-server-configuration.md)
