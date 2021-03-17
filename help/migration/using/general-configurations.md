@@ -7,7 +7,7 @@ audience: migration
 content-type: reference
 topic-tags: configuration
 translation-type: tm+mt
-source-git-commit: 278dec636373b5ccd3b631bd29607ebe894d53c3
+source-git-commit: d88815e36f7be1b010dcaeee51013a5da769b4a8
 workflow-type: tm+mt
 source-wordcount: '2787'
 ht-degree: 0%
@@ -44,7 +44,7 @@ Para usar o modo TIMESTAMP WITH TIMEZONE , também é necessário adicionar a op
 
 ### Oracle {#oracle}
 
-Se você receber um erro **ORA 01805** durante o pós-upgrade, isso significa que os arquivos de fuso horário Oracle entre o servidor de aplicativos e o servidor de banco de dados estão fora de sincronia. Para sincronizá-los novamente, siga as etapas abaixo:
+Se você receber um erro **ORA 01805** durante a pós-atualização, isso significa que os arquivos de fuso horário do Oracle entre o servidor de aplicativos e o servidor de banco de dados estão fora de sincronia. Para sincronizá-los novamente, siga as etapas abaixo:
 
 1. Para identificar o arquivo de fuso horário usado, execute o seguinte comando:
 
@@ -58,7 +58,7 @@ Se você receber um erro **ORA 01805** durante o pós-upgrade, isso significa qu
 
 Para obter mais informações, visite: [https://docs.oracle.com/cd/E11882_01/server.112/e10729/ch4datetime.htm#NLSPG004](https://docs.oracle.com/cd/E11882_01/server.112/e10729/ch4datetime.htm#NLSPG004).
 
-Um desalinhamento de fuso horário entre o cliente e o servidor também pode causar alguns atrasos. É por isso que recomendamos usar a mesma versão da biblioteca Oracle nos lados cliente e servidor, ambos os fusos horários devem ser os mesmos.
+Um desalinhamento de fuso horário entre o cliente e o servidor também pode causar alguns atrasos. É por isso que recomendamos usar a mesma versão da biblioteca do Oracle nos lados cliente e servidor, ambos os fusos horários devem ser os mesmos.
 
 Para verificar se ambos os lados estão nos mesmos fusos horários:
 
@@ -92,7 +92,7 @@ O Adobe Campaign v7 envolve o conceito de **zonas de segurança**. Cada usuário
 
 **Após a pós-atualização**  (antes da reinicialização do servidor), você deve configurar as zonas de segurança.
 
-A configuração da zona de segurança é encontrada em [nesta seção](../../installation/using/configuring-campaign-server.md#defining-security-zones).
+A configuração da zona de segurança é encontrada em [nesta seção](../../installation/using/security-zones.md).
 
 ### Senhas do usuário {#user-passwords}
 
@@ -246,7 +246,7 @@ Não é mais possível usar um atributo XML como chave de tabela.
 
 ### SQLData {#sqldata}
 
-Para fortalecer a segurança da instância, uma nova sintaxe foi introduzida no Adobe Campaign v7 para substituir a sintaxe baseada em SQLData. Se você usar esses elementos de código com essa sintaxe, será necessário modificá-los. Os principais elementos em causa são:
+Para fortalecer a segurança da instância, uma nova sintaxe foi introduzida no Adobe Campaign v7 para substituir a sintaxe baseada no SQLData. Se você usar esses elementos de código com essa sintaxe, será necessário modificá-los. Os principais elementos em causa são:
 
 * Filtragem por subconsulta: a nova sintaxe é baseada no elemento `<subQuery>` para definir um subquery
 * Agregados: a nova sintaxe é &quot;função agregada (coleção)&quot;
@@ -260,7 +260,7 @@ O schema queryDef (xtk:queryDef) foi modificado:
 
 Quando um atributo &quot;@expr&quot; é usado, o SQLData pode estar presente. Uma pesquisa pelos seguintes termos pode ser realizada: &quot;SQLData&quot;, &quot;aliasSqlTable&quot;, &quot;sql&quot;.
 
-As instâncias do Adobe Campaign v7 são protegidas por padrão. A segurança vem em termos de definições de zonas de segurança no arquivo **[!UICONTROL serverConf.xml]**: o atributo **allowSQLInjection** gerencia a segurança da sintaxe SQL.
+As instâncias do Adobe Campaign v7 são seguras por padrão. A segurança vem em termos de definições de zonas de segurança no arquivo **[!UICONTROL serverConf.xml]**: o atributo **allowSQLInjection** gerencia a segurança da sintaxe SQL.
 
 Se ocorrer um erro de SQLData durante a execução pós-atualização, você deve modificar esse atributo para permitir temporariamente o uso de sintaxes baseadas em SQLData, permitindo a reescrita do código. Para fazer isso, a seguinte opção deve ser alterada no arquivo **serverConf.xml**:
 
