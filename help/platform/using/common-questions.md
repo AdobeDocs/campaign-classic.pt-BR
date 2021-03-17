@@ -7,7 +7,7 @@ audience: platform
 content-type: reference
 topic-tags: starting-with-adobe-campaign
 translation-type: tm+mt
-source-git-commit: 4d5d14565726c5c6e7c4e2e8a82cfa8cef87be0f
+source-git-commit: baa41d876b889d2746f593e97f6b624dfffa5911
 workflow-type: tm+mt
 source-wordcount: '524'
 ht-degree: 100%
@@ -41,7 +41,7 @@ O fluxo de trabalho de limpeza do banco de dados exclui dados obsoletos para evi
 
 ## 3. Como posso configurar zonas de segurança? {#how-can-i-configure-security-zones-}
 
-A interface de autoatendimento de zonas de segurança pode ser usada para gerenciar entradas na configuração de zona de segurança VPN de uma implantação do Adobe Campaign Classic. Leia [esta seção](../../installation/using/configuring-campaign-server.md#defining-security-zones) para saber mais sobre zonas de segurança no Campaign.
+A interface de autoatendimento de zonas de segurança pode ser usada para gerenciar entradas na configuração de zona de segurança VPN de uma implantação do Adobe Campaign Classic. Leia [esta seção](../../installation/using/security-zones.md) para saber mais sobre zonas de segurança no Campaign.
 
 [Clique aqui para saber mais](https://helpx.adobe.com/br/campaign/kb/configuring-security-zones-self-service.html) sobre a interface do usuário de autoatendimento da Zona de Segurança.
 
