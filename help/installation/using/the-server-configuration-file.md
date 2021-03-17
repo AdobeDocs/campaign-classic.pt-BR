@@ -7,7 +7,7 @@ audience: installation
 content-type: reference
 topic-tags: appendices
 translation-type: tm+mt
-source-git-commit: 1bd40c6acaceb1bb4839807ae89c6956bc2b8d69
+source-git-commit: d88815e36f7be1b010dcaeee51013a5da769b4a8
 workflow-type: tm+mt
 source-wordcount: '7970'
 ht-degree: 7%
@@ -21,7 +21,7 @@ A configuração geral do Adobe Campaign é definida no arquivo **serverConf.xml
 
 >[!NOTE]
 >
->As configurações do lado do servidor só podem ser executadas pelo Adobe para implantações hospedadas pelo Adobe. Para saber mais sobre as diferentes implantações, consulte a seção [Modelos de hospedagem](../../installation/using/hosting-models.md) ou [esta página](../../installation/using/capability-matrix.md). As etapas de instalação e configuração para modelos hospedados e híbridos são apresentadas nesta [seção](../../installation/using/hosted-model.md).
+>As configurações do lado do servidor só podem ser executadas pelo Adobe para implantações hospedadas pelo Adobe. Para saber mais sobre as diferentes implantações, consulte a seção [Modelos de hospedagem](../../installation/using/hosting-models.md) ou [esta página](../../installation/using/capability-matrix.md). As etapas de instalação e configuração para modelos hospedados e híbridos são apresentadas nesta [seção](../../installation/using/hosting-models.md).
 
 Os primeiros parâmetros estão dentro do nó **shared**. Eles estão relacionados à instância . Eles são potencialmente usados por todos os comandos nlserver (nlserver web, nlserver wfserver etc.). As outras seções estão relacionadas a um subcomando nlserver específico.
 
@@ -2193,7 +2193,7 @@ Aqui estão os diferentes parâmetros do nó **repair**. Esta é a configuraçã
 
 Aqui estão os diferentes parâmetros do nó **securityZone**.
 
-Para obter mais informações, consulte [Definindo zonas de segurança](../../installation/using/configuring-campaign-server.md#defining-security-zones).
+Para obter mais informações, consulte [Definindo zonas de segurança](../../installation/using/security-zones.md).
 
 <table> 
  <thead> 
@@ -2291,7 +2291,7 @@ Esta é a configuração padrão:
 
 Aqui estão os diferentes parâmetros do nó **securityZone > subNetwork**.
 
-Para obter mais informações, consulte [Definindo zonas de segurança](../../installation/using/configuring-campaign-server.md#defining-security-zones).
+Para obter mais informações, consulte [Definindo zonas de segurança](../../installation/using/security-zones.md).
 
 <table> 
  <thead> 
