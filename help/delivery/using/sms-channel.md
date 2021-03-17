@@ -10,7 +10,7 @@ translation-type: tm+mt
 source-git-commit: f78fa94fb4fb9236222886a167a46d252497b2aa
 workflow-type: tm+mt
 source-wordcount: '3131'
-ht-degree: 98%
+ht-degree: 99%
 
 ---
 
@@ -33,7 +33,7 @@ Para enviar para um celular, você precisa:
 
 1. Uma conta externa especificando um conector e tipo de mensagem.
 
-   Observe que os seguintes conectores serão descontinuados a partir da versão 20.2: SMPP genérico (SMPP versão 3.4 com suporte para modo binário), Sybase365 (SAP SMS 365), CLX Communications, Tele2, O2 e iOS. Embora os recursos obsoletos ainda estejam disponíveis, eles não serão aprimorados e nem terão suporte. Para obter mais informações, consulte esta [página](https://helpx.adobe.com/br/campaign/kb/deprecated-and-removed-features.html).
+   Observe que os seguintes conectores serão descontinuados a partir da versão 20.2: Generic SMPP (SMPP versão 3.4 com suporte para modo binário), Sybase365 (SAP SMS 365), CLX Communications, Tele2, O2 e iOS. Embora os recursos obsoletos ainda estejam disponíveis, eles não serão aprimorados e nem terão suporte. Para obter mais informações, consulte esta [página](https://helpx.adobe.com/br/campaign/kb/deprecated-and-removed-features.html).
 
 1. Um template do delivery no qual essa conta externa é referenciada.
 
