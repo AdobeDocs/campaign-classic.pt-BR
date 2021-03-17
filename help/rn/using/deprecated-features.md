@@ -12,7 +12,7 @@ translation-type: tm+mt
 source-git-commit: f78fa94fb4fb9236222886a167a46d252497b2aa
 workflow-type: tm+mt
 source-wordcount: '1712'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
@@ -46,11 +46,11 @@ Os clientes são aconselhados a verificar se utilizam o recurso/funcionalidade e
    <td><strong>Substituição</strong></td>
   </tr>
     <tr>
-  <td>Relatório de monitoramento técnico da capacidade de entrega<br></td>
-   <td><p>A partir da versão 21.1 do Campaign, o Relatório de monitoramento técnico da capacidade de entrega ficará obsoleto.</p>
-   <p>Se necessário, você pode receber esse relatório diariamente por e-mail até a data de remoção do recurso. Para solicitar, abra um <a href="https://helpx.adobe.com/br/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html">Caso de suporte</a> específico e especifique o nome da instância e o(s) endereço(s) de email para o qual enviar o relatório.</p> 
-   <p>A Adobe recomenda que você se envolva com a Equipe de avaliação do delivery para definir as melhores ferramentas para monitorar o desempenho de capacidade de entrega da sua instância.</p>
-  <p><em>Data de remoção do Target: Final de 2021</em></p>
+  <td>Relatório de monitoramento técnico da avaliação do delivery<br></td>
+   <td><p>A partir da versão do Campaign 21.1, o Relatório de monitoramento técnico da avaliação do delivery está obsoleto.</p>
+   <p>Se necessário, você pode receber esse relatório diariamente por email até a data de remoção do recurso. Para solicitá-lo, abra um <a href="https://helpx.adobe.com/br/enterprise/admin-guide.html">Caso de suporte</a> específico e indique o nome da instância e os endereços de email para os quais enviar o relatório.</p> 
+   <p>A Adobe recomenda que você interaja com a Equipe de avaliação do delivery a fim de definir as melhores ferramentas para monitorar o desempenho da avaliação do delivery da instância.</p>
+  <p><em>Data de remoção do target: fim de 2021</em></p>
   </td>
  </tr>
   <tr>
