@@ -2,42 +2,71 @@
 solution: Campaign Classic
 product: campaign
 title: Modelos de hospedagem
-description: Descubra os modelos de hospedagem de Campanhas
-audience: installation
-content-type: reference
-topic-tags: architecture-and-hosting-models
+description: Modelos de hospedagem do Discover Campaign
+feature: Visão geral
+role: Arquiteto
+level: Iniciante
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: d88815e36f7be1b010dcaeee51013a5da769b4a8
 workflow-type: tm+mt
-source-wordcount: '334'
-ht-degree: 1%
+source-wordcount: '634'
+ht-degree: 2%
 
 ---
 
 
 # Modelos de hospedagem{#hosting-models}
 
-A Adobe Campaign oferta uma escolha de três modelos de hospedagem, proporcionando flexibilidade e liberdade para escolher o melhor modelo ou modelos para atender às necessidades da empresa.
+A Adobe Campaign oferece uma escolha de três modelos de hospedagem, proporcionando flexibilidade e liberdade para escolher o melhor modelo ou modelos para atender às necessidades dos negócios.
 
 >[!NOTE]
 >
->Para ambientes hospedados no Adobe, as etapas principais de instalação e configuração só podem ser executadas por Adobe, como a configuração do servidor e a personalização dos arquivos de configuração da instância. Para saber mais sobre as principais diferenças entre os modos de implantação, consulte [esta página](../../installation/using/capability-matrix.md).
+>Para ambientes hospedados no Adobe, as etapas principais de instalação e configuração só podem ser executadas pelo Adobe, como configurar o servidor e personalizar os arquivos de configuração da instância. Para saber mais sobre as principais diferenças entre modos de implantação, consulte [esta página](../../installation/using/capability-matrix.md).
 
-* **Managed Services (hospedado)**
+## Managed Services / Hospedado
 
-   A Adobe Campaign pode ser implantada como um serviço gerenciado: todos os componentes do Adobe Campaign, incluindo a interface do usuário, o mecanismo de gerenciamento de execução e o banco de dados de Campanha do cliente são totalmente hospedados pela Adobe, incluindo execução de e-mail, mirrores page, servidor de rastreamento e componentes da Web externos, como página/centro de preferências e landings page de cancelamento de inscrição. O Adobe aloca até três instâncias na nuvem — Desenvolvimento, Teste/Palco e Produção. As etapas de instalação e configuração deste modelo de hospedagem são apresentadas [nesta seção](../../installation/using/hosted-model.md).
+O Adobe Campaign pode ser implantado como um Serviço gerenciado: todos os componentes do Adobe Campaign, incluindo a interface do usuário, o mecanismo de gerenciamento de execução e o banco de dados do Campaign do cliente são totalmente hospedados pelo Adobe, incluindo execução de email, mirror pages, servidor de rastreamento e componentes da Web voltados para o exterior, como cancelar a assinatura da página/centro de preferências e landing pages.
 
-   ![](assets/deployment_hosted.png)
+![](assets/deployment_hosted.png)
 
-* **Local**
+Como cliente hospedado, a maioria das etapas de instalação e configuração é executada pelo Adobe. Você pode acessar as seguintes seções para personalizar sua implementação:
 
-   A Adobe Campaign pode ser implantada no local: todos os componentes da Adobe Campaign, incluindo a interface do usuário, o mecanismo de gerenciamento de execução e o banco de dados, residem no local no data center do cliente. Neste modelo de implantação, o cliente gerencia todas as atualizações e atualizações de software e hardware, e um administrador de banco de dados dedicado precisa executar tarefas de manutenção e otimização para garantir o gerenciamento de instâncias de Campanha. As diretrizes de implantação para clientes locais são apresentadas [nesta seção](../../installation/using/before-starting.md).
+* Configurar URLs de página de rastreamento e mirror page por marca. Para mensagens transacionais, consulte [nesta seção](../../message-center/using/configuring-multibranding.md).
+* Instale o console do cliente: consulte [nesta seção](../../installation/using/installing-the-client-console.md).
+* Saiba mais sobre as ferramentas de deliverability e as práticas recomendadas lendo o [guia de introdução](../../delivery/using/deliverability-key-points.md) e a [documentação detalhada](../../delivery/using/about-deliverability.md).
+* Configure as opções do Campaign: consulte [nesta seção](../../installation/using/configuring-campaign-options.md).
+* Configurar conectores CRM: consulte [nesta seção](../../platform/using/crm-connectors.md).
 
-   ![](assets/deployment_onpremise.png)
+## No local
 
-* **Híbrido**
+O Adobe Campaign pode ser implantado no local: todos os componentes do Adobe Campaign, incluindo a interface do usuário, o mecanismo de gerenciamento de execução e o banco de dados, residem no local no data center do cliente. Neste modelo de implantação, o cliente gerencia todas as atualizações e atualizações de software e hardware, e um administrador de banco de dados dedicado precisa executar tarefas de manutenção e otimização para garantir o gerenciamento da instância do Campaign.
 
-   Quando implantado como um modelo híbrido, o software da solução Adobe Campaign reside no local do cliente e o gerenciamento da execução é fornecido como um serviço em nuvem pela Adobe. A instância de marketing da Adobe Campaign é instalada dentro do firewall de um cliente, portanto, as informações pessoais identificáveis (PII) permanecem internas e somente os dados necessários para personalizar e-mails são enviados para a Cloud para execução de e-mails. A instância de execução, hospedada na Cloud, recebe as solicitações da instância Local para fornecer emails. Esta instância personaliza todos os emails e os entrega. Nenhum dado de qualquer tipo é permanentemente armazenado na nuvem. As etapas de instalação e configuração deste modelo de hospedagem são apresentadas [nesta seção](../../installation/using/hybrid-model.md).
+![](assets/deployment_onpremise.png)
 
-   ![](assets/deployment_hybrid.png)
+Como cliente local, antes de começar a implantar o Campaign Classic, atenda aos seguintes pré-requisitos e recomendações:
 
+* Leia a [Matriz de compatibilidade](../../rn/using/compatibility-matrix.md) que lista todas as versões dos sistemas e componentes compatíveis com o Adobe Campaign.
+* Dependendo do seu ambiente, leia os [pré-requisitos para Windows](../../installation/using/prerequisites-of-campaign-installation-in-windows.md) e [pré-requisitos para Linux](../../installation/using/prerequisites-of-campaign-installation-in-linux.md).
+* Saiba mais sobre as recomendações relacionadas aos mecanismos de banco de dados [nesta seção](../../installation/using/database.md).
+* Verifique se as camadas de acesso ao banco de dados necessárias estão instaladas no servidor e acessíveis na conta do Adobe Campaign. [Saiba mais](../../installation/using/application-server.md).
+* Configure suas redes, pois alguns processos precisam se comunicar com outras pessoas ou acessar a LAN e a Internet. Isso significa que algumas portas TCP precisam estar abertas para esses processos. [Saiba ](../../installation/using/network-configuration.md) mais sobre os requisitos de configuração de rede.
+* Leia [Lista de verificação de segurança e privacidade da campanha](https://helpx.adobe.com/br/campaign/kb/acc-security.html).
+* Verifique as diretrizes gerais para estimar os requisitos de hardware para a implantação no local [neste artigo](https://helpx.adobe.com/br/campaign/kb/hardware-sizing-guide.html).
+
+## Híbrido
+
+Quando implantado como um modelo híbrido, o software da solução Adobe Campaign fica no local, no local do cliente, e o gerenciamento de execução é fornecido como um serviço em nuvem pelo Adobe. A instância de marketing do Adobe Campaign é instalada dentro do firewall de um cliente, portanto, as informações de identificação pessoal (PII) permanecem internas e somente os dados necessários para personalizar emails são enviados para a nuvem para execução de email. A instância de execução, hospedada na nuvem, recebe as solicitações da instância No local para fornecer emails. Essa instância personaliza todos os emails e os entrega. Nenhum dado de qualquer tipo é permanentemente armazenado na nuvem.
+
+![](assets/deployment_hybrid.png)
+
+Como cliente híbrido, a maioria das etapas de instalação e configuração é executada pelo Adobe. Você pode acessar as seguintes seções para personalizar sua implementação:
+
+* Configurar mensagens transacionais: consulte [nesta seção](../../message-center/using/transactional-messaging-architecture.md).
+* Configurar URLs de página de rastreamento e mirror page por marca. Para mensagens transacionais, consulte [nesta seção](../../message-center/using/configuring-multibranding.md).
+* Instale o console do cliente: consulte [nesta seção](../../installation/using/installing-the-client-console.md).
+* Instalar pacotes incorporados: consulte [nesta seção](../../installation/using/installing-campaign-standard-packages.md).
+* Capacidade de entrega: configure [MX rules](../../installation/using/email-deliverability.md#mx-configuration) e [formatos de email](../../installation/using/email-deliverability.md#managing-email-formats). Saiba mais sobre as ferramentas de deliverability e as práticas recomendadas lendo o [guia de introdução](../../delivery/using/deliverability-key-points.md) e a [documentação detalhada](../../delivery/using/about-deliverability.md).
+* Configure as opções do Campaign: consulte [nesta seção](../../installation/using/configuring-campaign-options.md).
+* Configure um banco de dados externo (Federated Data Access): consulte [nesta seção](../../installation/using/about-fda.md).
+* Configuração de conectores CRM: consulte [nesta seção](../../platform/using/crm-connectors.md).
+* Para saber mais sobre os princípios de implantação de mid-sourcing, consulte [nesta seção](../../installation/using/mid-sourcing-deployment.md).
