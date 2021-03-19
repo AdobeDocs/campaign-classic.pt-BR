@@ -9,9 +9,9 @@ solution: Campaign Classic
 sub-product: adobe campaign classic
 type: Documentação
 translation-type: tm+mt
-source-git-commit: 3fe7cc4863fe512d433c3f0b0f25e912999b1876
+source-git-commit: 95d0686c4ddeb4e25eb918ca92cbd6a0b1aa1f3c
 workflow-type: tm+mt
-source-wordcount: '2474'
+source-wordcount: '2473'
 ht-degree: 56%
 
 ---
@@ -651,7 +651,7 @@ ht-degree: 56%
       + [Gerenciamento de fuso horário](installation/using/time-zone-management.md)
       + [Instalar um servidor mid-sourcing](installation/using/mid-sourcing-server.md)
    + Implantar campanha (no local) {#initial-configuration}
-      + [Sobre a configuração inicial](installation/using/about-initial-configuration.md)
+      + [Principais etapas](installation/using/about-initial-configuration.md)
       + [Criar uma instância e fazer logon](installation/using/creating-an-instance-and-logging-on.md)
       + [Criar e configurar o banco de dados](installation/using/creating-and-configuring-the-database.md)
       + [Configurar o servidor do Campaign](installation/using/campaign-server-configuration.md)
