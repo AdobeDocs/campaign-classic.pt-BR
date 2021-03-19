@@ -1,15 +1,15 @@
 ---
 solution: Campaign Classic
 product: campaign
-title: Versão 18.10
-description: Versão 18.10
-audience: rns
-content-type: reference
-topic-tags: latest-release-notes
+title: Notas de versão do Campaign 18.10
+description: Notas de versão do Campaign 18.10
+feature: Visão geral
+role: Profissional
+level: Iniciante
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: ce60b2bd0a9d75ca429af2f740832b408ce3c48b
 workflow-type: tm+mt
-source-wordcount: '2366'
+source-wordcount: '2375'
 ht-degree: 98%
 
 ---
@@ -58,7 +58,7 @@ ht-degree: 98%
 
 >[!CAUTION]
 >
->Esta configuração foi retomada. Atualize [para a versão mais recente](../../production/using/build-upgrade.md) ou entre em contato com o [Atendimento ao cliente do Adobe](https://helpx.adobe.com/br/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html).
+>Esta configuração foi retomada. [atualize para a build mais recente](../../production/using/build-upgrade.md) ou entre em contato com [Atendimento ao Cliente do Adobe](https://helpx.adobe.com/br/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html).
 
 **Aprimoramentos**
 
@@ -82,7 +82,7 @@ ht-degree: 98%
 
 >[!CAUTION]
 >
->Esta configuração foi retomada. Atualize [para a versão mais recente](../../production/using/build-upgrade.md) ou entre em contato com o [Atendimento ao cliente do Adobe](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html).
+>Esta configuração foi retomada. [atualize para a build mais recente](../../production/using/build-upgrade.md) ou entre em contato com [Atendimento ao Cliente do Adobe](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html).
 
 **Aprimoramentos**
 
@@ -104,7 +104,7 @@ ht-degree: 98%
 
 >[!CAUTION]
 >
->Esta configuração foi retomada. Atualize [para a versão mais recente](../../production/using/build-upgrade.md) ou entre em contato com o [Atendimento ao cliente do Adobe](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html).
+>Esta configuração foi retomada. [atualize para a build mais recente](../../production/using/build-upgrade.md) ou entre em contato com [Atendimento ao Cliente do Adobe](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html).
 
 **Novidades**
 
@@ -217,7 +217,7 @@ Essas alterações de índice podem levar a um aumento do tempo necessário para
 * Correção de um problema que ocorria ao configurar uma conta externa do canal móvel usando o conector SMPP genérico estendido: se você especificou usando parâmetros diferentes para o receptor, o transmissor usaria esses parâmetros incorretamente em vez de seus próprios parâmetros.
 * Correção de um problema que resultava em falha nos deliveries programados ao definir uma frequência para a regra de pressão, porque os deliveries eram constantemente recalculados após a primeira arbitragem. (NEO-10016)
 * Correção de um problema que resultava em falha no servidor Web IIS durante o processo de reciclagem do Pool de Aplicativos (na biblioteca nlsrvmod.dll). (NEO-10862)
-* Correção de um problema que poderia impedir a pesquisa de um recipient na tela **Perfis e Target.** (NEO-8228)
+* Correção de um problema que poderia impedir a pesquisa de um recipient na tela **Perfis e Target.** (NEO8228)
 * Correção de um problema que poderia resultar em erro de tempo limite ao acessar a pasta Histórico de Eventos no caso de um número alto de registros. (NEO-11738)
 * Correção de um problema que poderia resultar em recipients de delivery LINE retornados incorretamente como &quot;Inacessível&quot;. (NEO-10833)
 * Correção de um problema ao executar um query de workflow com uma coluna adicional no Oracle. (NEO-11615)
