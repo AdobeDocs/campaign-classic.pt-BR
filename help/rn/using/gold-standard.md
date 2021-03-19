@@ -1,29 +1,23 @@
 ---
 solution: Campaign Classic
 product: campaign
-title: 'Versão Gold Standard '
+title: 'Notas de versão do Gold Standard '
 description: Notas de versão do Campaign Classic Gold Standard
-audience: rns
-content-type: reference
-topic-tags: latest-release-notes
+feature: Visão geral
+role: Profissional
+level: Iniciante
 translation-type: tm+mt
-source-git-commit: 91313fdc7aed6597d8d54d65b747c835e0cd9ccb
+source-git-commit: 1f718e26aeaa5ed5a58dfd0e3bc29d2dd9e995ee
 workflow-type: tm+mt
-source-wordcount: '1112'
-ht-degree: 88%
+source-wordcount: '1055'
+ht-degree: 85%
 
 ---
 
 
 # Versões Gold Standard{#gold-standard}
 
-O Gold Standard é a versão de suporte a longo prazo do Campaign Classic. Como usuário convidado do Gold Standard, você se beneficia automaticamente da atualização do Gold Standard com a versão estável mais recente sem ter de realizar nenhuma ação. Os clientes locais e híbridos também podem se beneficiar das versões Gold Standard.
-
-Se você migrar de um build antigo, recomendamos que atualize primeiro para essa versão.
-
-Esta página lista versões do Gold Standard.
-
-Para obter mais informações sobre o programa do Campaign Gold Standard, consulte [este artigo](https://helpx.adobe.com/br/campaign/kb/gold-standard.html).
+Esta página lista versões do Gold Standard. Saiba mais sobre o Campaign Gold Standard [nesta página](gs-overview.md).
 
 ## ![](assets/do-not-localize/green_2.png) Versão Gold Standard 11{#gs-11}
 
@@ -37,7 +31,7 @@ A build 9032@10c2709 inclui a seguinte correção:
 
 >[!NOTE]
 >
-> Conecte-se a [Adobe Software Distribution](https://experience.adobe.com/#/downloads/content/software-distribution/en/campaign.html) para baixar a nova versão. Saiba como propor a atualização do console para todos os usuários finais [nesta página](../../installation/using/client-console-availability-for-windows.md).
+> Conecte-se a [Adobe Software Distribution](https://experience.adobe.com/#/downloads/content/software-distribution/br/campaign.html) para baixar a nova versão. Saiba como propor a atualização do console para todos os usuários finais [nesta página](../../installation/using/client-console-availability-for-windows.md).
 
 
 _22 de dezembro de 2020_
@@ -46,7 +40,7 @@ _22 de dezembro de 2020_
 >
 > * Esta versão vem com um novo protocolo de conexão: se você estiver se conectando ao Campaign pelo Adobe Identity Service (IMS), a atualização é obrigatória para o servidor do Campaign e o console do cliente poderem se conectar ao Campaign depois de **30 de junho de 2021**.
 > * Esta versão vem com uma [correção de segurança](https://helpx.adobe.com/security/products/campaign/apsb21-04.html): a atualização é obrigatória para reforçar a segurança do ambiente.
-> * Se estiver usando a integração Experience Cloud Triggers por meio da autenticação oAuth, será necessário mover para o Adobe I/O conforme descrito [nesta página](../../integrations/using/configuring-adobe-io.md). O modo de autenticação oAuth herdado será desativado em **30 de abril de 2021**.
+> * Se estiver usando a integração Experience Cloud Triggers por meio da autenticação oAuth, será necessário mover para o Adobe I/O conforme descrito [nesta página](../../integrations/using/configuring-adobe-io.md). O modo de autenticação oAuth herdado com o Campaign será desativado em **30 de novembro de 2021**.
 
 >
 >
