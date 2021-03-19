@@ -6,9 +6,9 @@ description: Nota técnica
 hide: true
 hidefromtoc: true
 translation-type: tm+mt
-source-git-commit: 3fe7cc4863fe512d433c3f0b0f25e912999b1876
+source-git-commit: 587daebd8a779bb9d0917fd2dfab4144494809e3
 workflow-type: tm+mt
-source-wordcount: '1031'
+source-wordcount: '1027'
 ht-degree: 14%
 
 ---
@@ -72,11 +72,11 @@ A build Gold Standard 11 mais recente corrige uma regressão que impedia o uso d
 
 O Adobe Identity Service (IMS) interromperá o suporte a versões antigas do Internet Explorer a partir de **30 de junho de 2021**. [Saiba mais](https://helpx.adobe.com/x-productkb/global/update-operating-system-and-browser.html).
 
-O Console do cliente do Campaign foi atualizado para garantir a compatibilidade com o Adobe IMS nas seguintes versões do Campaign:
+O Console do cliente do Campaign foi atualizado para garantir a compatibilidade com o Adobe IMS.
 
 **Você é afetado?**
 
-Se você estiver se conectando ao Campaign [por meio de um Adobe ID](../integrations/using/about-adobe-id.md), por meio do Adobe Identity Service (IMS), a atualização para uma das novas versões listadas abaixo é obrigatória:
+Se você estiver se conectando ao Campaign [por meio de um Adobe ID](../integrations/using/about-adobe-id.md), por meio do Adobe Identity Management Service (IMS), a atualização para uma das novas versões listadas abaixo é obrigatória:
 
 * Gold Standard 11. [Saiba mais](../rn/using/gold-standard.md)
 * Campaign versão 21.1.1. [Saiba mais](../rn/using/latest-release.md)
