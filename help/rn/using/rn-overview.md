@@ -3,13 +3,13 @@ solution: Campaign Classic
 product: campaign
 title: Introdução às atualizações
 description: Saiba mais sobre as atualizações do Campaign Classic
-audience: rns
-content-type: reference
-topic-tags: latest-release-notes
+feature: Visão geral
+role: Profissional
+level: Iniciante
 translation-type: tm+mt
-source-git-commit: 4d5d14565726c5c6e7c4e2e8a82cfa8cef87be0f
+source-git-commit: 3fe7cc4863fe512d433c3f0b0f25e912999b1876
 workflow-type: tm+mt
-source-wordcount: '436'
+source-wordcount: '435'
 ht-degree: 100%
 
 ---
@@ -51,11 +51,11 @@ Para manter sua implementação atualizada, leia os [recursos obsoletos e removi
 
 Como cliente hospedado (Managed Service ou Hybrid), você precisa entrar em contato com a equipe de atendimento ao cliente para atualizar seu ambiente.
 
-Como usuário local, você pode fazer a atualização. Para isso, [baixe a build estável mais recente](https://experience.adobe.com/#/downloads/content/software-distribution/en/campaign.html) e atualize todos os seus ambientes. Saiba mais sobre o [processo de atualização](../../production/using/build-upgrade.md) e consulte as [perguntas frequentes sobre atualização de build](../../platform/using/faq-build-upgrade.md).
+Como usuário local, você pode fazer a atualização. Para isso, [baixe a build estável mais recente](https://experience.adobe.com/#/downloads/content/software-distribution/br/campaign.html) e atualize todos os seus ambientes. Saiba mais sobre o [processo de atualização](../../production/using/build-upgrade.md) e consulte as [perguntas frequentes sobre atualização de build](../../platform/using/faq-build-upgrade.md).
 
 ### Gold Standard{#upgrade-for-gold-standard-users}
 
-Como usuário convidado do Gold Standard, você se beneficiará automaticamente da atualização Gold Standard com o [build GA mais recente do Gold Standard](../../rn/using/gold-standard.md#gs-11) sem ter de realizar nenhuma ação. [Saiba mais](https://helpx.adobe.com/campaign/kb/gold-standard.html).
+Como usuário convidado do Gold Standard, você se beneficiará automaticamente da atualização Gold Standard com o [build GA mais recente do Gold Standard](../../rn/using/gold-standard.md#gs-11) sem ter de realizar nenhuma ação. [Saiba mais](../../rn/using/gs-overview.md).
 
 >[!NOTE]
 >A matriz de compatibilidade para Gold Standard está disponível na [matriz de compatibilidade de DG](../../rn/using/compatibility-matrix-gs.md).
