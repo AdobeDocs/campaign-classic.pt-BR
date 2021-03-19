@@ -1,16 +1,16 @@
 ---
 solution: Campaign Classic
 product: campaign
-title: Versão 18.4
-description: Versão 18.4
-audience: rn
-content-type: reference
-topic-tags: latest-release-notes
+title: Notas de versão do Campaign 18.4
+description: Notas de versão do Campaign 18.4
+feature: null
+role: null
+level: null
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: ce60b2bd0a9d75ca429af2f740832b408ce3c48b
 workflow-type: tm+mt
-source-wordcount: '2262'
-ht-degree: 100%
+source-wordcount: '2267'
+ht-degree: 99%
 
 ---
 
@@ -82,7 +82,7 @@ ht-degree: 100%
 **Aprimoramentos**
 
 * Correção de um problema que impedia o funcionamento da atualização do Windows Server.
-* Correção de um problema na atividade **[!UICONTROL Survey Result]** ao usar dados armazenados em XML. O relatório foi exibido incorretamente. (NEO-10816)
+* Correção de um problema na atividade **[!UICONTROL Survey Result]** ao usar dados armazenados em XML. O relatório foi exibido incorretamente. (NEO10816)
 * Correção de um problema de desempenho que poderia ocorrer com o processo inMail ao usar um servidor de email de devolução. (NEO-10641)
 * Correção de um problema de atualização de banco de dados que pode ocorrer ao atualizar mais de 1000 schemas.
 
