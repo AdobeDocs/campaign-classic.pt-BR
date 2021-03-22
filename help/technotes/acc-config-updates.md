@@ -6,9 +6,9 @@ description: Nota técnica
 hide: true
 hidefromtoc: true
 translation-type: tm+mt
-source-git-commit: 9b4b1bb5d016df8a7933ac0b96c6f110b0c4d7ac
+source-git-commit: b036dccc012b1948837549492d9a1b0726af459d
 workflow-type: tm+mt
-source-wordcount: '1025'
+source-wordcount: '1068'
 ht-degree: 14%
 
 ---
@@ -43,6 +43,8 @@ Se o ambiente estiver em uma build inferior à listada abaixo, você será afeta
 * Campaign versão 19.2.4. [Saiba mais](../rn/using/release--19-2.md)
 * Campaign versão 19.1.8. [Saiba mais](../rn/using/release--19-1.md)
 
+Saiba como verificar sua versão [nesta seção](../platform/using/launching-adobe-campaign.md#getting-your-campaign-version).
+
 **Como atualizar?**
 
 Você precisa atualizar para uma das builds mais recentes listadas acima.
@@ -60,13 +62,12 @@ Você precisa atualizar para uma das builds mais recentes listadas acima.
 
 ## Atualização do console do cliente do Campaign
 
-A build Gold Standard 11 mais recente corrige uma regressão que impedia o uso de alguns componentes do Console do cliente, como o seletor de datas e o gerenciamento de imagens nos deliveries. A atualização do console é obrigatória.
+As versões a seguir corrigem uma regressão que impedia o uso de alguns componentes do Console do Cliente, como o seletor de datas e o gerenciamento de imagens nos deliveries. **A** atualização do console é obrigatória.
 
-[Saiba mais](../rn/using/gold-standard.md).
-
->[!NOTE]
->
->Essa correção também está disponível nas versões mais recentes [19.1.8](../rn/using/release--19-1.md#release-19-1-8-build-9039), [19.2.4](../rn/using/release--19-2.md#release-19-2-4-build-9082) e [20.1.4](../rn/using/release--20-1.md#release-20-1-4-build-9126).
+* Versão mais recente do Gold Standard 11 9032@10c2709. [Saiba mais](../rn/using/gold-standard.md)
+* Campaign versão 20.1.4. [Saiba mais](../rn/using/release--20-1.md)
+* Campaign versão 19.2.4. [Saiba mais](../rn/using/release--19-2.md)
+* Campaign versão 19.1.8. [Saiba mais](../rn/using/release--19-1.md)
 
 ## Atualização do sistema Adobe Identity Management (IMS)
 
@@ -87,6 +88,8 @@ Se você estiver se conectando ao Campaign [por meio de um Adobe ID](../integrat
 * Campaign versão 19.1.8. [Saiba mais](../rn/using/release--19-1.md)
 
 Essas versões são fornecidas com um novo protocolo de conexão: a atualização é obrigatória para o servidor do Campaign e o Console do cliente poderem se conectar ao Campaign após **30 de junho de 2021**.
+
+Saiba como verificar sua versão [nesta seção](../platform/using/launching-adobe-campaign.md#getting-your-campaign-version).
 
 **Como atualizar?**
 
@@ -116,6 +119,8 @@ A atualização para uma das novas versões listadas abaixo é obrigatória:
 * Campaign versão 20.2.4. [Saiba mais](../rn/using/release--20-2.md)
 * Campaign versão 19.1.8. [Saiba mais](../rn/using/release--19-1.md)
 
+Saiba como verificar sua versão [nesta seção](../platform/using/launching-adobe-campaign.md#getting-your-campaign-version).
+
 **Como atualizar?**
 
 Depois que as instâncias são atualizadas para uma versão mais nova, todos os clientes precisam seguir o [procedimento para mover para o novo modo de autenticação](../integrations/using/configuring-adobe-io.md). Isso requer gerar o novo token de Adobe I/O e usá-lo na implementação.  
@@ -133,6 +138,8 @@ O serviço Apple Push Notification (APNs) não oferecerá mais suporte ao protoc
 **Você é afetado?**
 
 Se suas instâncias estiverem em execução em uma versão **anterior ao Campaign 21.1,** e enviarem notificações por push com o protocolo binário herdado da Apple, será necessário atualizar para a API do provedor APNs baseada em HTTP/2.
+
+Saiba como verificar sua versão [nesta seção](../platform/using/launching-adobe-campaign.md#getting-your-campaign-version).
 
 **Como atualizar?**
 
@@ -157,7 +164,6 @@ Como cliente hospedado, nenhuma ação é necessária: O Adobe já incorporou o 
 Como cliente local/híbrido, você precisa atualizar sua configuração para garantir uma transição contínua **antes de 29 de março de 2021**.
 
 [Saiba como incorporar o novo certificado](ios-certificate-update.md).
-
 
 ## Links úteis
 
