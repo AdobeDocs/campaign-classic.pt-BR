@@ -7,10 +7,10 @@ feature: null
 role: null
 level: null
 translation-type: tm+mt
-source-git-commit: ce60b2bd0a9d75ca429af2f740832b408ce3c48b
+source-git-commit: 96f5709b4c67d1979286cc1f71069a64435c5c70
 workflow-type: tm+mt
-source-wordcount: '1418'
-ht-degree: 96%
+source-wordcount: '1484'
+ht-degree: 93%
 
 ---
 
@@ -18,6 +18,16 @@ ht-degree: 96%
 # Versão 19.2{#release-19-2}
 
 ## ![](assets/do-not-localize/limited_2.png) Versão 19.2.4 - Build 9082 {#release-19-2-4-build-9082}
+
+_22 de março de 2021_
+
+* Correção de uma regressão que impedia o uso de alguns componentes do console, como o seletor de datas e o gerenciamento de imagens nos deliveries. (NEO-31453, NEO-31454)
+
+**Somente a atualização do console é obrigatória. Não é necessária nenhuma atualização do servidor.**
+
+>[!NOTE]
+>
+> Conecte-se a [Adobe Software Distribution](https://experience.adobe.com/#/downloads/content/software-distribution/br/campaign.html) para baixar a nova versão. Saiba como propor a atualização do console para todos os usuários finais [nesta página](../../installation/using/client-console-availability-for-windows.md).
 
 _23 de dezembro de 2020_
 
