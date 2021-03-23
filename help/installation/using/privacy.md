@@ -7,9 +7,9 @@ audience: installation
 content-type: reference
 topic-tags: prerequisites-and-recommendations-
 translation-type: tm+mt
-source-git-commit: 768fe62db4efd1217c22973c7e5dc31097d67bae
+source-git-commit: b77a56a97e499f60c092fae45c7809f7bfd9f2ea
 workflow-type: tm+mt
-source-wordcount: '772'
+source-wordcount: '768'
 ht-degree: 30%
 
 ---
@@ -57,7 +57,7 @@ Para melhorar a segurança, um novo mecanismo de assinatura para rastrear links 
 >
 >Quando um URL assinado mal formado é clicado, ele retornará o seguinte erro: &quot;O URL solicitado &#39;... &#39; não foi encontrado.&quot;
 
-Além disso, a partir da versão Campaign 20.2 e Gold Standard, os clientes hospedados e híbridos poderão usar um aprimoramento para desativar URLs gerados de builds anteriores. Essa opção está desabilitada por padrão. É possível entrar em contato com o [Atendimento ao cliente](https://helpx.adobe.com/br/enterprise/admin-guide.html) para ativar esse recurso.
+Além disso, a partir da versão 20.2 e [!DNL Gold Standard] do Campaign, os clientes hospedados e híbridos poderão usar um aprimoramento para desativar URLs gerados em compilações anteriores. Essa opção está desabilitada por padrão. É possível entrar em contato com o [Atendimento ao cliente](https://helpx.adobe.com/br/enterprise/admin-guide.html) para ativar esse recurso.
 
 Para ativar esse novo recurso, os clientes locais precisam seguir estas etapas em todos os servidores do Campaign:
 
@@ -65,7 +65,7 @@ Para ativar esse novo recurso, os clientes locais precisam seguir estas etapas e
 1. Reinicie o serviço **nlserver**.
 1. No servidor de rastreamento, reinicie o servidor da Web (apache2 em Debian, httpd em CentOS/RedHat, IIS no Windows).
 
-Os clientes que estiverem executando no Gold Standard 19.1.4 podem enfrentar problemas com os deliveries de notificação por push usando o link de rastreamento ou com deliveries usando tags de âncora. Em caso positivo, o Adobe recomenda desativar o novo mecanismo de assinatura para links de rastreamento:
+Os clientes que estiverem executando em [!DNL Gold Standard] 19.1.4 podem enfrentar problemas com os deliveries de notificação por push usando o link de rastreamento ou com deliveries usando tags de âncora. Em caso positivo, o Adobe recomenda desativar o novo mecanismo de assinatura para links de rastreamento:
 
 **Os** clientes hospedados e híbridos devem entrar em contato com o  [Atendimento ao ](https://helpx.adobe.com/br/enterprise/using/support-for-experience-cloud.html) cliente para desativar esse mecanismo.
 
