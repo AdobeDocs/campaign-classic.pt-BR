@@ -7,9 +7,9 @@ audience: delivery
 content-type: reference
 topic-tags: about-deliveries-and-channels
 translation-type: tm+mt
-source-git-commit: 44f2aed49a12d51bb3b38f304e6b922f0faf68cc
+source-git-commit: 8bf1b5b1a6763cf933d86f2af61b2bb68e870222
 workflow-type: tm+mt
-source-wordcount: '1210'
+source-wordcount: '1204'
 ht-degree: 100%
 
 ---
@@ -23,7 +23,7 @@ As funcionalidades principais incluem definição de metas, definição e person
 
 >[!NOTE]
 >
->O Adobe Campaign oferece um conjunto de ferramentas para monitorar sua capacidade de delivery e otimizar o envio de emails. Para obter mais informações, consulte a [Introdução à capacidade de delivery](../../delivery/using/deliverability-key-points.md) e [Gerenciamento de capacidade de delivery](../../delivery/using/about-deliverability.md).
+>O Adobe Campaign oferece um conjunto de ferramentas para monitorar sua capacidade de delivery e otimizar o envio de emails. Saiba mais [nesta seção](../../delivery/using/about-deliverability.md).
 
 O envio de deliveries pode ser automatizado preparando-se um delivery e/ou enviando-o no processo de um workflow. Para obter mais informações sobre atividades do tipo delivery em workflows, consulte [esta seção](../../workflow/using/about-action-activities.md).
 
