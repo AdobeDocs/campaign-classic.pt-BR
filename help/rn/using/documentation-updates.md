@@ -7,10 +7,10 @@ feature: Visão geral
 role: Profissional
 level: Iniciante
 translation-type: tm+mt
-source-git-commit: 3fe7cc4863fe512d433c3f0b0f25e912999b1876
+source-git-commit: d41119e61ee2088e1b8cab65354547420f8e7737
 workflow-type: tm+mt
-source-wordcount: '4194'
-ht-degree: 96%
+source-wordcount: '4250'
+ht-degree: 95%
 
 ---
 
@@ -37,6 +37,8 @@ Saiba como criar e gerenciar suas campanhas por meio dessas novas páginas:
 * [Configurar e gerenciar o processo de aprovação](../../campaign/using/marketing-campaign-approval.md)
 
 Foram adicionadas informações na seção de atividade **[!UICONTROL Advanced JavaScript]** sobre como usar o método task.setCompleted() para encerrar a tarefa e impedir futuras recuperações. [Leia mais](../../workflow/using/sql-code-and-javascript-code.md#adv-js-code-desc)
+
+A seção [Deliverability](../../delivery/using/about-deliverability.md) foi atualizada e agora inclui links para o novo [Adobe Deliverability Best Practice Guide](https://experienceleague.corp.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/introduction.html). Todas as informações genéricas relacionadas à capacidade de entrega que podem ser aplicadas a várias soluções do Adobe foram movidas para o [Guia de Práticas Recomendadas Apêndice](https://experienceleague.corp.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/additional-resources/general-resources.html#additional-resources).
 
 ## Fevereiro de 2021 {#release-21.1}
 
@@ -130,7 +132,7 @@ A matriz de Compatibilidade foi atualizada. [Leia mais](../../rn/using/compatibi
 
 A página de recursos obsoletos e removidos foi atualizada. [Leia mais](../../rn/using/deprecated-features.md)
 
-As notas de versão e a matriz de compatibilidade para a versão Gold Standard estão disponíveis em uma seção exclusiva.
+As notas de versão e a matriz de compatibilidade para a versão [!DNL Gold Standard] agora estão disponíveis em uma seção dedicada.
 [Leia mais](../../rn/using/gold-standard.md#gs-11).
 
 A integração dos acionadores originalmente baseada na configuração da autenticação oAUTH para acessar o pipeline, agora foi alterada e movida para o Adobe I/O. [Saiba mais](../../integrations/using/configuring-adobe-io.md)
@@ -167,7 +169,7 @@ Adição de uma observação sobre o uso de dados adicionais com seeds addresses
 
 Conheça as práticas recomendadas relacionadas ao design do delivery e ao envio com o Campaign em uma seção dedicada. [Leia mais](../../delivery/using/delivery-best-practices.md)
 
-Uma landing page de práticas recomendadas de deliverability foi aprimorada para facilitar o acesso às subseções. [Leia mais](../../delivery/using/deliverability-key-points.md)
+Uma landing page de práticas recomendadas de deliverability foi aprimorada para facilitar o acesso às subseções. [Leia mais](../../delivery/using/about-deliverability.md)
 
 Os vídeos do passo a passo estão disponíveis nos seguintes tópicos:
 
@@ -206,7 +208,7 @@ A seção atividade de **[!UICONTROL AND-join]** foi aprimorada com informaçõe
 
 Um caso de uso sobre como atualizar automaticamente uma lista usando um query incremental foi adicionado aos casos de uso do workflow. [Leia mais](../../workflow/using/about-workflow-use-cases.md)
 
-As [Notas de versão](../../rn/using/latest-release.md) foram reorganizadas: uma [página de visão geral](../../rn/using/latest-release.md) foi adicionada com informações sobre status de criação, processo de atualização, recomendações e links importantes. Uma página dedicada às [versões do Gold Standard](../../rn/using/gold-standard.md) também foi adicionada e a [matriz de Compatibilidade](../../rn/using/compatibility-matrix.md) foi integrada.
+As [Notas de versão](../../rn/using/latest-release.md) foram reorganizadas: uma [página de visão geral](../../rn/using/latest-release.md) foi adicionada com informações sobre status de criação, processo de atualização, recomendações e links importantes. Uma página dedicada às [[!DNL Gold Standard] versões do ](../../rn/using/gold-standard.md) também foi adicionada e a [matriz de Compatibilidade](../../rn/using/compatibility-matrix.md) foi integrada.
 
 Uma nova seção foi adicionada com diretrizes relacionadas ao monitoramento do Campaign Classic. [Leia mais](../../production/using/monitoring-guidelines.md)
 
@@ -266,7 +268,7 @@ A seção Monitoramento da capacidade de delivery foi movida e aprimorada. [Leia
 
 A seção Solução de problemas da capacidade de delivery foi movida e aprimorada. [Leia mais](../../delivery/using/deliverability-faq.md)
 
-As diretrizes de capacidade de delivery ao iniciar uma nova seção da plataforma foram aprimoradas. [Leia mais](../../delivery/using/starting-new-platform.md)
+As diretrizes de capacidade de delivery ao iniciar uma nova plataforma foram aprimoradas. [Leia mais](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/introduction.html#transition-process)
 
 A seção Enviar emails transacionais com anexos foi movida e atualizada. [Leia mais](../../message-center/using/transactional-email-with-attachments.md)
 
@@ -476,7 +478,7 @@ Uma seção foi adicionada descrevendo as etapas de instalação e configuraçã
 
 Uma seção foi adicionada descrevendo as etapas de desinstalação do servidor do Campaign. [Leia mais](../../installation/using/uninstalling-campaign.md)
 
-Os guias de introdução de [segurança](https://helpx.adobe.com/br/campaign/kb/acc-security.html), [delivery](../../delivery/using/deliverability-key-points.md) e [privacidade](../../platform/using/privacy-management.md) foram atualizados.
+Os guias de introdução de [segurança](https://helpx.adobe.com/br/campaign/kb/acc-security.html), [delivery](../../delivery/using/about-deliverability.md) e [privacidade](../../platform/using/privacy-management.md) foram atualizados.
 
 A descrição da opção de fluxo de trabalho de pré-processo foi atualizada para refletir as alterações no produto. [Leia mais](../../workflow/using/data-loading--file-.md)
 
