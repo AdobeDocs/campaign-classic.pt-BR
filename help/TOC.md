@@ -9,9 +9,9 @@ solution: Campaign Classic
 sub-product: adobe campaign classic
 type: Documentação
 translation-type: tm+mt
-source-git-commit: 95d0686c4ddeb4e25eb918ca92cbd6a0b1aa1f3c
+source-git-commit: 0b3bc9547d756352f4af5dac713f85666c96c425
 workflow-type: tm+mt
-source-wordcount: '2473'
+source-wordcount: '2448'
 ht-degree: 56%
 
 ---
@@ -24,10 +24,10 @@ ht-degree: 56%
 + Notas de versão {#release-notes}
    + [Introdução às atualizações](rn/using/rn-overview.md)
    + [Versão mais recente](rn/using/latest-release.md)
-   + Versão Gold Standard {#gs-release}
-      + [O que é o Gold Standard](rn/using/gs-overview.md)
-      + [Notas de versão do Gold Standard ](rn/using/gold-standard.md)
-      + [Matriz de compatibilidade do Gold Standard](rn/using/compatibility-matrix-gs.md)
+   + [!DNL Gold Standard] versão  {#gs-release}
+      + [O que é o [!DNL Gold Standard]](rn/using/gs-overview.md)
+      + [[!DNL Gold Standard] notas de versão](rn/using/gold-standard.md)
+      + [[!DNL Gold Standard] matriz de compatibilidade](rn/using/compatibility-matrix-gs.md)
    + Versões anteriores {#previous-releases}
       + [Versão 20.3](rn/using/release--20-3.md)
       + [Versão 20.2](rn/using/release--20-2.md)
@@ -220,18 +220,12 @@ ht-degree: 56%
       + [Acessar os logs de rastreamento](delivery/using/accessing-the-tracking-logs.md)
       + [Rastreamento de teste](delivery/using/testing-tracking.md)
       + [Rastreamento da solução de problemas](delivery/using/tracking-troubleshooting.md)
-   + Gerenciamento de deliverability {#deliverability-management}
-      + [Sobre a capacidade de delivery](delivery/using/about-deliverability.md)
-      + [Pontos principais a serem verificados](delivery/using/deliverability-key-points.md)
-      + [Início de uma nova plataforma](delivery/using/starting-new-platform.md)
+   + Gerenciamento da capacidade de entrega {#deliverability-management}
+      + [O que é a capacidade de entrega](delivery/using/about-deliverability.md)
       + [Controle do conteúdo da mensagem](delivery/using/control-message-content.md)
-      + [Aprimoramento da reputação](delivery/using/improve-reputation.md)
-      + [Recomendações técnicas](delivery/using/technical-recommendations.md)
       + [Monitoramento da capacidade de entrega](delivery/using/monitoring-deliverability.md)
       + [Renderização da caixa de entrada](delivery/using/inbox-rendering.md)
       + [SpamAssassin](delivery/using/spamassassin.md)
-      + [Práticas recomendadas de reengajamento](delivery/using/re-engagement-best-practices.md)
-      + [Bancos de dados da lista de bloqueios](delivery/using/block-list-databases.md)
       + [Solução de problemas](delivery/using/deliverability-faq.md)
    + Módulo de gestão de conteúdo {#content-management}
       + [Sobre a gestão de conteúdo](delivery/using/about-content-management.md)
