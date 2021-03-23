@@ -5,11 +5,11 @@ title: Criar conteúdo personalizado
 audience: delivery
 content-type: reference
 topic-tags: deliveries-best-practices
-translation-type: ht
-source-git-commit: 2aa1a1c5da7b552cae916885c011aa4aaf9b61db
-workflow-type: ht
-source-wordcount: '1266'
-ht-degree: 100%
+translation-type: tm+mt
+source-git-commit: d1b38acc5209a5c96ab7a35fe9640159141b110f
+workflow-type: tm+mt
+source-wordcount: '1278'
+ht-degree: 98%
 
 ---
 
@@ -114,7 +114,7 @@ Para evitar erros comuns de formatação, verifique os seguintes elementos:
 
 * Uso de **caracteres autorizados** em emails: a lista de caracteres válidos para endereços de email é definida na opção &quot;XtkEmail_Characters&quot;. Saiba como acessar as opções do Campaign [nesta seção](../../installation/using/configuring-campaign-options.md). Para trabalhar corretamente com caracteres especiais, o Adobe Campaign precisa ser instalado em Unicode.
 
-* Configuração da **autenticação de email**: verifique se os cabeçalhos de email contêm a assinatura DKIM. Com a autenticação DKIM (Domain Keys Identified Mail), o servidor de email de recebimento pode verificar se uma mensagem foi enviada pela pessoa ou entidade que alega tê-la enviado e se o conteúdo da mensagem foi alterado entre o momento em que foi originalmente enviada (e o DKIM “assinado”) e o momento em que foi recebida. Em geral, esse padrão usa o domínio no cabeçalho “De” ou “Remetente”. Para obter mais informações, consulte [esta seção](../../delivery/using/technical-recommendations.md#dkim).
+* Configuração da **autenticação de email**: verifique se os cabeçalhos de email contêm a assinatura DKIM. Com a autenticação DKIM (Domain Keys Identified Mail), o servidor de email de recebimento pode verificar se uma mensagem foi enviada pela pessoa ou entidade que alega tê-la enviado e se o conteúdo da mensagem foi alterado entre o momento em que foi originalmente enviada (e o DKIM “assinado”) e o momento em que foi recebida. Em geral, esse padrão usa o domínio no cabeçalho “De” ou “Remetente”. Para obter mais informações, consulte o [Guia de práticas recomendadas de capacidade de entrega do Adobe](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/transition-process/infrastructure.html#authentication).
 
 ### Design de email responsivo
 
