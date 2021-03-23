@@ -6,11 +6,11 @@ description: Saiba mais sobre o escopo e as especificidades do envio de emails c
 audience: delivery
 content-type: reference
 topic-tags: sending-emails
-translation-type: ht
-source-git-commit: c64b6eccd0ad45ebcf4ecc18150f4409f5c66bc2
-workflow-type: ht
-source-wordcount: '1880'
-ht-degree: 100%
+translation-type: tm+mt
+source-git-commit: d1b38acc5209a5c96ab7a35fe9640159141b110f
+workflow-type: tm+mt
+source-wordcount: '1892'
+ht-degree: 98%
 
 ---
 
@@ -152,7 +152,7 @@ Para obter mais informações sobre o período de validade, consulte [esta seç�
 ### Assinatura DKIM
 
 A assinatura de autenticação de email DKIM (DomainKeys Identified Mail) é feita pelo MTA aprimorado. A assinatura DKIM pelo MTA nativo do Campaign será desativada na tabela Gerenciamento de domínio como parte da atualização do MTA aprimorado.
-Para obter mais informações sobre o DKIM, consulte [esta seção](../../delivery/using/technical-recommendations.md#dkim).
+Para obter mais informações sobre DKIM, consulte o [Guia de práticas recomendadas de capacidade de entrega do Adobe](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/transition-process/infrastructure.html#authentication).
 
 ### Relatórios de sucesso do delivery
 
