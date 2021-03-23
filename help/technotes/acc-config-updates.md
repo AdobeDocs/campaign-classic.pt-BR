@@ -6,9 +6,9 @@ description: Nota técnica
 hide: true
 hidefromtoc: true
 translation-type: tm+mt
-source-git-commit: b036dccc012b1948837549492d9a1b0726af459d
+source-git-commit: 01f4e4ee841a797f4be61ffc01096b7f651ce963
 workflow-type: tm+mt
-source-wordcount: '1068'
+source-wordcount: '1114'
 ht-degree: 14%
 
 ---
@@ -16,20 +16,22 @@ ht-degree: 14%
 
 # Atualizações de configuração do Adobe Campaign - março de 2021 {#acc-config-updates}
 
-Você deve manter sua infraestrutura e configurações atualizadas com as builds e correções de produtos mais recentes. Essas correções são obrigatórias para garantir a continuidade e a segurança do serviço. Além disso, é necessário adaptar sua implementação para alinhar-se às alterações de terceiros.
+A infraestrutura e as configurações devem ser atualizadas regularmente com as compilações e correções de produtos mais recentes. Essas correções são necessárias para garantir a continuidade do serviço e a segurança. Além disso, as atualizações serão necessárias para se alinharem às alterações de terceiros.
 
-Como cliente hospedado, o Adobe informará você sobre as atualizações de build necessárias a intervalos regulares. Você precisa atualizar de acordo com as recomendações para garantir a conformidade.
+Como **Cliente hospedado ou Managed Services**, o Adobe informará você sobre atualizações de build em intervalos regulares. Você deverá atualizar de acordo com as recomendações para garantir a conformidade.
 
-Como cliente local/híbrido, por motivos de segurança, você deve atualizar para uma das versões listadas nesta página. Além disso, algumas tarefas manuais devem ser executadas para garantir que seu ambiente esteja seguro e pronto para futuras alterações de sistemas Adobe ou de terceiros.
+Como um **Cliente local ou híbrido**, você deve atualizar sua implementação a intervalos regulares, de acordo com as builds mais recentes lançadas.
+
+Por motivos de segurança, agora é necessário atualizar para uma das versões listadas abaixo. Além das etapas de atualização padrão, algumas tarefas manuais devem ser executadas para garantir que seu ambiente esteja seguro e pronto para futuras alterações de sistemas de Adobe ou de terceiros.
 
 >[!NOTE]
 >
->Para qualquer dúvida sobre essas alterações, entre em contato com o [Adobe Customer Care](https://helpx.adobe.com/br/enterprise/admin-guide.html).
+>Para dúvidas sobre essas alterações, entre em contato com o [Adobe Customer Care](https://helpx.adobe.com/br/enterprise/admin-guide.html).
 
 
 ## Atualizações de segurança
 
-As versões mais recentes do Campaign são fornecidas com uma correção de segurança que reforça a proteção contra problemas de falsificação de solicitação do lado do servidor (SSRF). Saiba mais [nesta página](https://helpx.adobe.com/security/products/campaign/apsb21-04.html).
+As versões mais recentes do Campaign vêm com uma correção de segurança que reforça a proteção contra problemas de SSRF (Server Side Request Forgery). Saiba mais [nesta página](https://helpx.adobe.com/security/products/campaign/apsb21-04.html).
 
 **Você é afetado?**
 
@@ -49,20 +51,20 @@ Saiba como verificar sua versão [nesta seção](../platform/using/launching-ado
 
 Você precisa atualizar para uma das builds mais recentes listadas acima.
 
-* Como cliente híbrido, o Adobe atualizará a instância de marketing para a nova versão e você será altamente recomendado atualizar a instância de marketing também.
+* Como um cliente híbrido, o Adobe informará sobre as datas de atualização programadas para suas instâncias de mid-sourcing. O Adobe recomenda que você atualize sua instância de marketing também.
 
-   A nova build é compatível com pelo menos a versão do Campaign Classic 17.9, mas para evitar qualquer lacuna de segurança, o Adobe recomenda que todas as instâncias sejam atualizadas para uma nova build. 
+   A nova build é compatível com a versão do Campaign Classic 17.9, mas o Adobe recomenda enfaticamente uma atualização em todas as instâncias para lidar com vulnerabilidades de segurança
 
-* Como cliente local, você deve atualizar instâncias de marketing e mid-sourcing para uma build mais recente.
+* Como cliente local, você deve atualizar instâncias de marketing e mid-sourcing para a build mais recente.
 
 >[!CAUTION]
 >
->Se não for possível atualizar por enquanto, **você deve entrar em contato com a equipe de Atendimento ao Cliente do Adobe para aplicar manualmente uma correção de segurança em suas instâncias**.
+>Se não for possível atualizar dentro do período de tempo recomendado, **você deve entrar em contato com a equipe de Atendimento ao Cliente do Adobe para aplicar uma correção de segurança manual de curto prazo em suas instâncias**.
 
 
-## Atualização do console do cliente do Campaign
+## Atualização do console do cliente do Campaign Classic
 
-As versões a seguir corrigem uma regressão que impedia o uso de alguns componentes do Console do Cliente, como o seletor de datas e o gerenciamento de imagens nos deliveries. **A** atualização do console é obrigatória.
+As versões do console **agora disponíveis** abaixo devem ser instaladas para resolver uma regressão identificada recentemente. Essa regressão impedia o uso de alguns componentes do Console do cliente, como o seletor de datas e o gerenciamento de imagens nos deliveries. **A** atualização do console é obrigatória.
 
 * Versão mais recente do Gold Standard 11 9032@10c2709. [Saiba mais](../rn/using/gold-standard.md)
 * Campaign versão 20.1.4. [Saiba mais](../rn/using/release--20-1.md)
@@ -71,9 +73,9 @@ As versões a seguir corrigem uma regressão que impedia o uso de alguns compone
 
 ## Atualização do sistema Adobe Identity Management (IMS)
 
-O Adobe Identity Service (IMS) interromperá o suporte a versões antigas do Internet Explorer a partir de **30 de junho de 2021**. [Saiba mais](https://helpx.adobe.com/x-productkb/global/update-operating-system-and-browser.html).
+O Adobe Identity Service (IMS) interromperá o suporte a versões antigas do Internet Explorer em **30 de junho de 2021**. [Saiba mais](https://helpx.adobe.com/x-productkb/global/update-operating-system-and-browser.html).
 
-O Console do cliente do Campaign foi atualizado para garantir a compatibilidade com o Adobe IMS.
+Uma atualização do Console do Cliente do Campaign é necessária para garantir a compatibilidade com o Adobe IMS.
 
 **Você é afetado?**
 
@@ -93,7 +95,7 @@ Saiba como verificar sua versão [nesta seção](../platform/using/launching-ado
 
 **Como atualizar?**
 
-Como cliente hospedado, nenhuma ação é necessária: O Adobe já atualizou suas instâncias para uma versão mais recente.
+Como cliente hospedado, o Adobe trabalhará com você para atualizar suas instâncias para a versão mais recente em breve.
 
 Como cliente local/híbrido, é necessário atualizar para uma das versões mais recentes para se beneficiar do novo Console do cliente e garantir uma transição contínua **antes de 30 de junho de 2021**.
 
@@ -137,13 +139,13 @@ O serviço Apple Push Notification (APNs) não oferecerá mais suporte ao protoc
 
 **Você é afetado?**
 
-Se suas instâncias estiverem em execução em uma versão **anterior ao Campaign 21.1,** e enviarem notificações por push com o protocolo binário herdado da Apple, será necessário atualizar para a API do provedor APNs baseada em HTTP/2.
+Se suas instâncias estiverem em execução em uma versão **anterior ao Campaign 21.1,** e você enviar notificações por push com o protocolo binário herdado da Apple, será necessário atualizar para a API do provedor APNs baseada em HTTP/2.
 
 Saiba como verificar sua versão [nesta seção](../platform/using/launching-adobe-campaign.md#getting-your-campaign-version).
 
 **Como atualizar?**
 
-Como cliente hospedado, nenhuma ação é necessária: O Adobe já atualizou suas instâncias para a API baseada em HTTP/2.
+Como cliente hospedado, se você tiver atualizado para a nova build, o Adobe já atualizou suas instâncias para a API baseada em HTTP/2.
 
 Como cliente local/hospedado, é necessário atualizar sua configuração. [Saiba como migrar para HTTP/2](https://helpx.adobe.com/campaign/kb/migrate-to-apns-http2.html)
 
