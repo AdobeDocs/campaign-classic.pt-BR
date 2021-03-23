@@ -7,10 +7,10 @@ audience: delivery
 content-type: reference
 topic-tags: monitoring-deliveries
 translation-type: tm+mt
-source-git-commit: f3ba836bbb5a5f82d6a7868dcb15edc8e61b9a5b
+source-git-commit: d1b38acc5209a5c96ab7a35fe9640159141b110f
 workflow-type: tm+mt
 source-wordcount: '789'
-ht-degree: 100%
+ht-degree: 98%
 
 ---
 
@@ -37,7 +37,7 @@ Depois de clicar no botão **[!UICONTROL Send]**, seu delivery parece demorar ma
 
 * Pode ter ocorrido limitação dentro do MTA do Adobe Campaign. Isso é causado por:
 
-   * Mensagens pendentes (**[!UICONTROL quotas met]** message): as cotas declaradas pelas regras MX declarativas definidas no Campaign foram atendidas. Para obter mais informações sobre esse tipo de mensagem, consulte [esta página](../../delivery/using/deliverability-faq.md). Para saber mais sobre as regras MX, consulte [esta página](../../delivery/using/technical-recommendations.md#mx-rules).
+   * Mensagens pendentes (**[!UICONTROL quotas met]** message): as cotas declaradas pelas regras MX declarativas definidas no Campaign foram atendidas. Para obter mais informações sobre esse tipo de mensagem, consulte [esta página](../../delivery/using/deliverability-faq.md). Para saber mais sobre as regras MX, consulte [esta seção](../../installation/using/email-deliverability.md#about-mx-rules).
 
    * Mensagens pendentes (mensagem **[!UICONTROL dynamic flow control]**): o MTA do Campaign encontrou erros ao tentar entregar mensagens para um determinado ISP, o que faz com que um atraso evite uma densidade de erros muito grande e, portanto, enfrente uma possível inclusão na lista de bloqueios.
 
