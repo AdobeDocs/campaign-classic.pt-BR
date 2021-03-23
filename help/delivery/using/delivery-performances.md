@@ -7,10 +7,10 @@ audience: delivery
 content-type: reference
 topic-tags: monitoring-deliveries
 translation-type: tm+mt
-source-git-commit: 5b43412286762977c416665d296908a9bfc9b20a
+source-git-commit: 8bf1b5b1a6763cf933d86f2af61b2bb68e870222
 workflow-type: tm+mt
-source-wordcount: '452'
-ht-degree: 100%
+source-wordcount: '458'
+ht-degree: 95%
 
 ---
 
@@ -53,6 +53,6 @@ Se os desempenhos de delivery forem ruins, você poderá verificar:
 
 * **O tamanho do delivery**: deliveries grandes podem levar mais tempo para serem concluídos. Os MTA filho estão configurados para lidar com um tamanho de lote padrão, que funciona para a maioria das instâncias, mas precisam ser verificados quando os deliveries estiverem constantemente lentos.
 * **O target do delivery**: os desempenhos de delivery são afetados por erros de devolução temporária, que são manipulados de acordo com a configuração de repetição. Quanto maior o número de erros, mais tentativas são necessárias.
-* **O carregamento da plataforma geral**: quando vários deliveries grandes estão sendo enviados, a plataforma geral pode ser afetada. Você também pode verificar problemas de reputação de IP e capacidade de delivery. Para obter mais informações, consulte o [Guia de práticas recomendadas de capacidade de delivery](../../delivery/using/deliverability-key-points.md) do Adobe Campaign e [esta página](../../delivery/using/about-deliverability.md).
+* **O carregamento da plataforma geral**: quando vários deliveries grandes estão sendo enviados, a plataforma geral pode ser afetada. Você também pode verificar problemas de reputação de IP e capacidade de delivery. Para obter mais informações, consulte [esta seção](../../delivery/using/about-deliverability.md) e o [Adobe Deliverability Best Practice Guide](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/introduction.html).
 
 A manutenção da plataforma e do banco de dados também pode afetar os desempenhos de envio de delivery. Para obter mais informações, consulte [esta página](../../production/using/database-performances.md).
