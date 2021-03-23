@@ -6,7 +6,7 @@ audience: delivery
 content-type: reference
 topic-tags: deliveries-best-practices
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: 8bf1b5b1a6763cf933d86f2af61b2bb68e870222
 workflow-type: tm+mt
 source-wordcount: '733'
 ht-degree: 100%
@@ -50,7 +50,7 @@ Para alcançar a caixa de entrada de seus recipients sem ser rejeitado ou ser ma
 
    * Ao verificar seu email quanto à capacidade de delivery, você deseja se concentrar em quatro categorias principais: qualidade de dados, mensagem e conteúdo, infraestrutura de envio e reputação. Para aprofundar esse tópico, consulte [esta seção](../../delivery/using/about-deliverability.md).
 
-* Aplique as recomendações detalhadas [neste documento](../../delivery/using/deliverability-key-points.md).
+* Aplique as recomendações detalhadas [neste documento](../../delivery/using/about-deliverability.md).
 
 * Entre em contato com seu representante da Adobe para obter assistência.
 
