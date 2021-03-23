@@ -7,10 +7,10 @@ audience: platform
 content-type: reference
 topic-tags: starting-with-adobe-campaign
 translation-type: tm+mt
-source-git-commit: 4d5d14565726c5c6e7c4e2e8a82cfa8cef87be0f
+source-git-commit: b77a56a97e499f60c092fae45c7809f7bfd9f2ea
 workflow-type: tm+mt
-source-wordcount: '2015'
-ht-degree: 100%
+source-wordcount: '2034'
+ht-degree: 98%
 
 ---
 
@@ -21,7 +21,7 @@ O Adobe Campaign é atualizado regularmente. Se você conhece as [Notas de vers�
 
 É imprescindível que nossos clientes executem a versão mais recente do Adobe Campaign. Isso também nos permite ajudar com muito mais eficiência em caso de problemas. Identificar, reproduzir e corrigir um problema em uma build antiga geralmente leva mais tempo, sem mencionar que alguns problemas que você pode encontrar podem muito bem já terem sido corrigidos em uma nova versão da build.
 
-Portanto, iniciamos o programa [Gold Standard](https://helpx.adobe.com/br/campaign/kb/gold-standard.html) para trabalhar em colaboração com nossos clientes, a fim de atualizar seus ambientes de forma proativa e regular.
+[!DNL Gold Standard] O é a versão de suporte a longo prazo do Campaign Classic. Como um usuário hospedado [!DNL Gold Standard], você se beneficia automaticamente da atualização [!DNL Gold Standard] com a versão estável mais recente, sem ter de tomar nenhuma ação. Os clientes locais e híbridos também podem se beneficiar das versões [!DNL Gold Standard]. Se você migrar de um build antigo, recomendamos que atualize primeiro para essa versão. [Saiba mais](../../rn/using/gs-overview.md).
 
 ## O que é uma atualização de build?
 
@@ -208,4 +208,4 @@ todo o conteúdo é exibido e está presente.
 * [Atualização de uma build](../../production/using/build-upgrade.md)
 * [Notas de versão do Campaign Classic ](../../rn/using/rn-overview.md)
 * [Opções de ajuda e suporte para o Campaign Classic](https://helpx.adobe.com/campaign/kb/ac-support.html)
-* [Programa Gold Standard](https://helpx.adobe.com/campaign/kb/gold-standard.html)
+* [[!DNL Gold Standard] programa](../../rn/using/gs-overview.md)
