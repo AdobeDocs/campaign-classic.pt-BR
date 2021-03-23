@@ -7,10 +7,10 @@ audience: platform
 content-type: reference
 topic-tags: starting-with-adobe-campaign
 translation-type: tm+mt
-source-git-commit: 4d5d14565726c5c6e7c4e2e8a82cfa8cef87be0f
+source-git-commit: b77a56a97e499f60c092fae45c7809f7bfd9f2ea
 workflow-type: tm+mt
-source-wordcount: '557'
-ht-degree: 100%
+source-wordcount: '548'
+ht-degree: 98%
 
 ---
 
@@ -97,11 +97,11 @@ O menu **[!UICONTROL Help > About...]** permite acessar as seguintes informaçõ
 
 Sempre que entrar em contato com a equipe de Atendimento ao cliente da Adobe, você precisará fornecer o número da versão e o número da compilação do seu console de cliente do Adobe Campaign e do servidor de aplicativos.
 
-Se estiver executando na [versão Campaign Gold Standard](../../rn/using/gold-standard.md), você também precisará compartilhar os caracteres SHA/1 exibidos na caixa **[!UICONTROL About]**. Por exemplo, para a versão **Gold Standard 10**, o número da build mostrará a **build 9032@efd8a94**, como mostrado abaixo:
+Se estiver executando na [ [!DNL Gold Standard] versão Campaign ](../../rn/using/gold-standard.md), você também precisará compartilhar os caracteres SHA/1 exibidos na caixa **[!UICONTROL About]**. Por exemplo, para a versão **Gold Standard 10**, o número da build mostrará a **build 9032@efd8a94**, como mostrado abaixo:
 
 ![](assets/about-acc-gs.png)
 
-Saiba mais sobre a Gold Standard [neste artigo](https://helpx.adobe.com/campaign/kb/gold-standard.html).
+Saiba mais sobre [!DNL Gold Standard] [neste artigo](../../rn/using/gs-overview.md)).
 
 **Tópicos relacionados**:
 
