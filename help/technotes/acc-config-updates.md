@@ -6,7 +6,7 @@ description: Nota técnica
 hide: true
 hidefromtoc: true
 translation-type: tm+mt
-source-git-commit: 01f4e4ee841a797f4be61ffc01096b7f651ce963
+source-git-commit: bdd746120f2162cf48eeb9d519513656bd4e75aa
 workflow-type: tm+mt
 source-wordcount: '1114'
 ht-degree: 14%
@@ -29,7 +29,7 @@ Por motivos de segurança, agora é necessário atualizar para uma das versões 
 >Para dúvidas sobre essas alterações, entre em contato com o [Adobe Customer Care](https://helpx.adobe.com/br/enterprise/admin-guide.html).
 
 
-## Atualizações de segurança
+## Atualizações de segurança {#acc-security-updates}
 
 As versões mais recentes do Campaign vêm com uma correção de segurança que reforça a proteção contra problemas de SSRF (Server Side Request Forgery). Saiba mais [nesta página](https://helpx.adobe.com/security/products/campaign/apsb21-04.html).
 
@@ -62,7 +62,7 @@ Você precisa atualizar para uma das builds mais recentes listadas acima.
 >Se não for possível atualizar dentro do período de tempo recomendado, **você deve entrar em contato com a equipe de Atendimento ao Cliente do Adobe para aplicar uma correção de segurança manual de curto prazo em suas instâncias**.
 
 
-## Atualização do console do cliente do Campaign Classic
+## Atualização do console do cliente do Campaign Classic {#acc-cc-updates}
 
 As versões do console **agora disponíveis** abaixo devem ser instaladas para resolver uma regressão identificada recentemente. Essa regressão impedia o uso de alguns componentes do Console do cliente, como o seletor de datas e o gerenciamento de imagens nos deliveries. **A** atualização do console é obrigatória.
 
@@ -105,7 +105,7 @@ Depois que todas as instâncias forem atualizadas, o Console do cliente também 
 
 * [Saiba como instalar o Console](../installation/using/installing-the-client-console.md) do cliente do Campaign.
 
-## Integração com Experience Cloud Triggers
+## Integração com Experience Cloud Triggers {#acc-triggers-updates}
 
 O serviço de autenticação oAuth herdado chegou ao fim da vida útil. A autenticação da integração dos acionadores, originalmente baseada na configuração da autenticação oAUTH para acessar o pipeline, foi movida para o Adobe I/O. Ele será removido em **30 de novembro de 2021**. [Saiba mais](https://github.com/AdobeDocs/analytics-1.4-apis/blob/master/docs/APIEOL.md?mv=email).
 
@@ -131,7 +131,7 @@ Além disso, para ambientes híbridos, os clientes precisam garantir que o pipel
 
 [Saiba como migrar para o Adobe I/O](../integrations/using/configuring-adobe-io.md).
 
-## Atualizações de APNs
+## Atualizações de APNs {#acc-apns-updates}
 
 ### API do provedor APNs com base em HTTP/2
 
