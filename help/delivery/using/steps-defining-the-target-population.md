@@ -7,10 +7,10 @@ audience: delivery
 content-type: reference
 topic-tags: about-deliveries-and-channels
 translation-type: tm+mt
-source-git-commit: ba460d8347c987291681641a1be208027acf1d2f
+source-git-commit: 8e0c6951be9d2f9fb0e58af213cb8db4079f2225
 workflow-type: tm+mt
-source-wordcount: '1579'
-ht-degree: 100%
+source-wordcount: '1599'
+ht-degree: 95%
 
 ---
 
@@ -19,12 +19,12 @@ ht-degree: 100%
 
 ## Sobre as populações do target {#about-target-populations}
 
-Para cada delivery, você poderá definir vários tipos de populações do target. A seção abaixo fornece mais informações sobre como selecionar:
+Para cada delivery, você pode definir vários tipos de populações do target:
 
-* Os principais recipients do delivery. [Leia mais](../../delivery/using/steps-defining-the-target-population.md#selecting-the-main-target)
-* Os recipients de mensagens de prova para configurar um ciclo de validação. [Leia mais](../../delivery/using/steps-defining-the-target-population.md#defining-a-specific-proof-target)
-
-Além disso, se o delivery estiver incluído em uma campanha de marketing, você também poderá definir [seeds addresses](../../delivery/using/about-seed-addresses.md) e [grupos de controle](../../campaign/using/marketing-campaign-deliveries.md#defining-a-control-group).
+* **Público-alvo** principal: perfis que receberão mensagens. [Saiba mais](../../delivery/using/steps-defining-the-target-population.md#selecting-the-main-target)
+* **Prova**: recipients de mensagens de prova, envolvidos no ciclo de validação. [Saiba mais](../../delivery/using/steps-defining-the-target-population.md#defining-a-specific-proof-target)
+* **Seed addresses**: recipients que estão fora do target do delivery, mas receberão o delivery (somente no contexto de uma campanha de marketing). [Saiba mais](../../delivery/using/about-seed-addresses.md)
+* **Grupos** de controle: população que não receberá o delivery, usado para rastrear o comportamento e o impacto da campanha (somente no contexto de uma campanha de marketing). [Saiba mais](../../campaign/using/marketing-campaign-target.md#defining-a-control-group).
 
 ## Selecionar os principais recipients do delivery {#selecting-the-main-target}
 
