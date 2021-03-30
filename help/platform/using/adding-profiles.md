@@ -3,19 +3,19 @@ solution: Campaign Classic
 product: campaign
 title: Adição de perfis
 description: Adição de perfis
-audience: platform
-content-type: reference
-topic-tags: profile-management
+feature: Perfis
+role: Profissional
+level: Iniciante
 translation-type: tm+mt
-source-git-commit: bb7e3ce726e2c589c033686cf3ab2960de140d91
+source-git-commit: f2bd093d3a010e079b7f5adf3371e21d07a4f3ae
 workflow-type: tm+mt
-source-wordcount: '74'
-ht-degree: 100%
+source-wordcount: '78'
+ht-degree: 97%
 
 ---
 
 
-# Adição de perfis{#adding-profiles}
+# Adicionar perfis{#adding-profiles}
 
 Na maioria dos casos, os perfis são [importados para o Campaign por meio de um fluxo de trabalho](../../platform/using/import-export-workflows.md). No entanto, é possível adicionar um ou mais perfis diretamente na interface ao clicar no botão **[!UICONTROL Create]** Eles serão adicionados ao banco de dados.
 
