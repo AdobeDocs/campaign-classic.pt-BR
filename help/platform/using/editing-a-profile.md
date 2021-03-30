@@ -7,15 +7,15 @@ audience: platform
 content-type: reference
 topic-tags: profile-management
 translation-type: tm+mt
-source-git-commit: 6d5dbc16ed6c6e5a2e62ceb522e2ccd64b142825
+source-git-commit: b05b8daad449aeb1f5226fdd76744776c6553b63
 workflow-type: tm+mt
 source-wordcount: '471'
-ht-degree: 100%
+ht-degree: 97%
 
 ---
 
 
-# Edição de um perfil{#editing-a-profile}
+# Editar um perfil{#editing-a-profile}
 
 Para exibir informações relacionadas a um perfil, clique no nome na lista de perfis.
 
@@ -67,7 +67,7 @@ Esta tela exibe os grupos aos quais o perfil selecionado pertence. Clique em **[
 
 ![](assets/s_ncs_user_profile_groups_tab_details.png)
 
-Para obter mais informações, consulte [Criação e gerenciamento de listas](../../platform/using/creating-and-managing-lists.md).
+Para obter mais informações, consulte [Criar e gerenciar listas](../../platform/using/creating-and-managing-lists.md).
 
 ## Guia Subscriptions {#subscriptions-tab}
 
