@@ -7,15 +7,15 @@ audience: platform
 content-type: reference
 topic-tags: importing-and-exporting-data
 translation-type: tm+mt
-source-git-commit: 3139a9bf5036086831e23acef21af937fcfda740
+source-git-commit: 564eaedb09282c85593f638617baded0a63494a0
 workflow-type: tm+mt
-source-wordcount: '538'
-ht-degree: 100%
+source-wordcount: '603'
+ht-degree: 81%
 
 ---
 
 
-# Compactação ou criptografia de um arquivo {#zipping-or-encrypting-a-file}
+# Compactar ou criptografar um arquivo {#zipping-or-encrypting-a-file}
 
 O Adobe Campaign permite exportar arquivos compactados ou criptografados. Ao definir uma exportação por meio da atividade **[!UICONTROL Data extraction (file)]**, é possível definir um pós-processamento para compactar ou criptografar o arquivo.
 
@@ -25,7 +25,9 @@ Para fazer isso:
 
    >[!NOTE]
    >
-   >O Painel de controle do Campaign está disponível para todos os clientes hospedados no AWS (exceto para clientes que hospedam suas instâncias de marketing no local).
+   >O Painel de controle do Campaign é acessível a todos os usuários administradores. As etapas para conceder acesso de Administrador a um usuário estão detalhadas em [this page](https://experienceleague.adobe.com/docs/control-panel/using/discover-control-panel/managing-permissions.html?lang=en#discover-control-panel).
+   >
+   >Observe que sua instância deve ser hospedada no AWS e atualizada com a build mais recente do [Gold Standard](../../rn/using/gs-overview.md) ou a build mais recente do GA (21.1)](../../rn/using/latest-release.md). [ Saiba como verificar sua versão em [this section](../../platform/using/launching-adobe-campaign.md#getting-your-campaign-version). Para verificar se sua instância está hospedada no AWS, siga as etapas detalhadas em [this page](https://experienceleague.adobe.com/docs/control-panel/using/faq.html).
 
 1. Caso sua instalação do Adobe Campaign seja hospedada pela Adobe, entre em contato com o [Atendimento ao cliente da Adobe](https://helpx.adobe.com/br/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html) para ter os utilitários necessários instalados no servidor.
 1. Caso a instalação do Adobe Campaign seja no local, instale o utilitário que deseja usar (por exemplo: GPG, GZIP) e as chaves necessárias (chave de criptografia) no servidor de aplicativos.
@@ -34,10 +36,10 @@ Em seguida, você pode usar comandos ou códigos na guia **[!UICONTROL Script]**
 
 **Tópicos relacionados:**
 
-* [Descompactação ou descriptografia de um arquivo antes do processamento](../../platform/using/unzip-decrypt.md)
+* [Descompacte ou descriptografe um arquivo antes do processamento](../../platform/using/unzip-decrypt.md)
 * [Atividade de extração de dados (arquivo)](../../workflow/using/extraction--file-.md).
 
-## Caso de uso: criptografar e exportar dados usando uma chave instalada no Painel de controle do Campaign {#use-case-gpg-encrypt}
+## Caso de uso: Criptografar e exportar dados usando uma chave instalada no Painel de controle do Campaign {#use-case-gpg-encrypt}
 
 Nesse caso de uso, criaremos um workflow para criptografar e exportar dados usando uma chave instalada no Painel de controle do Campaign.
 
