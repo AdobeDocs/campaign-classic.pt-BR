@@ -3,14 +3,14 @@ solution: Campaign Classic
 product: campaign
 title: Criar e gerenciar grupos de operadores
 description: Saiba como conceder acesso a grupos de operadores
-audience: platform
-content-type: reference
-topic-tags: administration-basics
+feature: Gerenciamento de acesso
+role: Profissional de negócios, Administrador
+level: Iniciante
 translation-type: tm+mt
-source-git-commit: 693e38477b318ee44e0373a04d8524ddf128fe36
+source-git-commit: f2bd093d3a010e079b7f5adf3371e21d07a4f3ae
 workflow-type: tm+mt
-source-wordcount: '498'
-ht-degree: 95%
+source-wordcount: '504'
+ht-degree: 94%
 
 ---
 
@@ -68,7 +68,6 @@ Os grupos de operadores padrão são:
 
    * **[!UICONTROL INSERT FOLDERS]**: direito de inserir pastas à árvore do Adobe Campaign (se você tiver o direito de editar ramificações),
    * **[!UICONTROL WORKFLOW]**: direito de usar workflows.
-
    >[!NOTE]
    >
    >Esse grupo não permite que os operadores iniciem deliveries.
@@ -100,6 +99,3 @@ Esse grupo contém os seguintes direitos nomeados:
 
    * **[!UICONTROL INSERT FOLDERS]**: direito de inserir pastas à árvore do Adobe Campaign (se você tiver o direito de editar ramificações),
    * **[!UICONTROL EDIT FOLDERS]**: direito de alterar as propriedades da pasta, como nome interno, rótulo, imagem associada, pedido de subpastas etc.
-
-
-
