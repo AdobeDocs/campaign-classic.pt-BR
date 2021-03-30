@@ -3,19 +3,19 @@ solution: Campaign Classic
 product: campaign
 title: Sobre query no Campaign
 description: Sobre query no Campaign
-audience: platform
-content-type: reference
-topic-tags: creating-queries
+feature: Editor de consultas
+role: Profissional de negócios, arquiteto de dados
+level: Iniciante
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: f2bd093d3a010e079b7f5adf3371e21d07a4f3ae
 workflow-type: tm+mt
-source-wordcount: '177'
-ht-degree: 100%
+source-wordcount: '184'
+ht-degree: 94%
 
 ---
 
 
-# Sobre query no Campaign{#about-queries-in-campaign}
+# Introdução a consultas{#about-queries-in-campaign}
 
 A ferramenta de query do Adobe Campaign pode ser encontrada em vários níveis do software: para criar uma população do target, segmentação de clientes, logs de rastreamento de extração e filtragem, filtros de compilação etc.
 
