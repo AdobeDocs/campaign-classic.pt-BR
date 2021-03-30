@@ -3,13 +3,13 @@ solution: Campaign Classic
 product: campaign
 title: Sobre o Adobe Campaign Classic
 description: Conheça os principais recursos, a interface do usuário e as diretrizes globais.
-audience: platform
-content-type: reference
-topic-tags: starting-with-adobe-campaign
+feature: Visão geral
+role: Profissional
+level: Iniciante
 translation-type: tm+mt
-source-git-commit: cea4a26935312b1cb119a3fa671af7bf00788fe9
+source-git-commit: f2bd093d3a010e079b7f5adf3371e21d07a4f3ae
 workflow-type: tm+mt
-source-wordcount: '911'
+source-wordcount: '915'
 ht-degree: 97%
 
 ---
@@ -23,7 +23,7 @@ O Adobe Campaign permite coordenar a criação de campanhas de marketing convers
 
 >[!NOTE]
 >
->O Adobe Campaign Classic está disponível nas versões v6.11 e v7. Exceto quando mencionado, os materiais de ajuda se aplicam a ambas as versões, na [compilação mais recente](../../rn/using/latest-release.md). As capturas de tela refletem a interface do usuário do Campaign Classic v7.
+>O Adobe Campaign Classic está disponível nas versões v6.11 e v7. Exceto quando mencionado, os materiais de ajuda se aplicam a ambas as versões, na [build mais recente](../../rn/using/latest-release.md). As capturas de tela refletem a interface do usuário do Campaign Classic v7.
 
 ![](assets/do-not-localize/how-to-video.png) [Descubra as principais características e recursos no vídeo](#video)
 
@@ -89,7 +89,7 @@ Os recursos abaixo estão disponíveis. A disponibilidade desses recursos depend
 
 ## Vídeo tutorial {#video}
 
-Este vídeo apresenta os principais recursos e recursos do Campaign Classic.
+Este vídeo apresenta os principais recursos e funcionalidades do Campaign Classic.
 
 >[!VIDEO](https://video.tv.adobe.com/v/35129?quality=12)
 
