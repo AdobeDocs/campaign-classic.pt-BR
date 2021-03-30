@@ -7,15 +7,15 @@ audience: platform
 content-type: reference
 topic-tags: importing-and-exporting-data
 translation-type: tm+mt
-source-git-commit: ba460d8347c987291681641a1be208027acf1d2f
+source-git-commit: b05b8daad449aeb1f5226fdd76744776c6553b63
 workflow-type: tm+mt
 source-wordcount: '926'
-ht-degree: 100%
+ht-degree: 94%
 
 ---
 
 
-# Configuração de trabalhos de exportação {#executing-export-jobs}
+# Configurar trabalhos de exportação {#executing-export-jobs}
 
 Os trabalhos de exportação permitem acessar e extrair dados do banco de dados: contatos, clientes, listas, segmentos etc.
 
@@ -23,9 +23,9 @@ Por exemplo, pode ser útil usar dados de rastreamento de campanha (histórico d
 
 O assistente de exportação permite configurar uma exportação, definir suas opções e iniciar a execução. É uma série de telas cujo conteúdo depende do tipo de importação (simples ou múltipla) e dos direitos do operador.
 
-O assistente de exportação é exibido após a criação de um novo trabalho de exportação (consulte [Criação de trabalhos de importação e exportação](../../platform/using/creating-import-export-jobs.md).
+O assistente de exportação é exibido após a criação de um novo trabalho de exportação (consulte [Criar trabalhos de importação e exportação](../../platform/using/creating-import-export-jobs.md).
 
-## Etapa 1 - Escolha do template de exportação {#step-1---choosing-the-export-template}
+## Etapa 1 - Escolher o modelo de exportação {#step-1---choosing-the-export-template}
 
 Ao iniciar o assistente de exportação, primeiro é necessário selecionar um template. Como exemplo, para configurar a exportação de destinatários que se registraram recentemente, siga as etapas abaixo:
 
@@ -63,7 +63,7 @@ Por padrão, quando a exportação é iniciada a partir do nó **[!UICONTROL Job
 
    Você deve inserir a data da última modificação. Ele pode ser calculado ou recuperado de um campo.
 
-## Etapa 3 - Definição do formato de saída {#step-3---defining-the-output-format}
+## Etapa 3 - Definir o formato de saída {#step-3---defining-the-output-format}
 
 Selecione um formato de saída para o arquivo de exportação. Os formatos a seguir podem ser usados: texto, texto fixed-column, CSV e XML.
 
@@ -85,7 +85,7 @@ Selecione os campos a serem exportados. Para fazer isso:
 
 1. Clique no botão **[!UICONTROL Add]** para chamar as funções. Para mais informações, consulte as [Lista de funções](../../platform/using/defining-filter-conditions.md#list-of-functions).
 
-## Etapa 5 - Classificação das colunas {#step-5---sorting-columns}
+## Etapa 5 - Classificar colunas {#step-5---sorting-columns}
 
 Selecione a ordem de classificação das colunas.
 
@@ -131,4 +131,4 @@ Clique em **[!UICONTROL Start]** para iniciar a exportação de dados.
 
 ![](assets/s_ncs_user_export_wizard08.png)
 
-Você pode monitorar a execução do trabalho de importação (consulte [Monitoração da execução de trabalhos](../../platform/using/monitoring-jobs-execution.md).
+Em seguida, você pode monitorar a execução do trabalho de importação (consulte [Monitorar a execução de tarefas](../../platform/using/monitoring-jobs-execution.md).
