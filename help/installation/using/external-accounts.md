@@ -2,22 +2,22 @@
 solution: Campaign Classic
 product: campaign
 title: Contas externas
-description: Saiba como criar o conta externa
+description: Saiba como criar contas externas
 audience: platform
 content-type: reference
 topic-tags: administration-basics
 translation-type: tm+mt
-source-git-commit: f00c0bda0ab3f2e07c015f4cfe5e3942f5620841
+source-git-commit: bfe2e29ed904b6a04bab28455301437c63ab8118
 workflow-type: tm+mt
-source-wordcount: '1525'
-ht-degree: 89%
+source-wordcount: '1612'
+ht-degree: 85%
 
 ---
 
 
 # Contas externas{#external-accounts}
 
-O Adobe Campaign vem com um conjunto de contas externas predefinidas. Para configurar conexões com sistemas externos, é possível criar novas contas externas.
+O Adobe Campaign vem com um conjunto de contas externas predefinidas. Para configurar conexões com sistemas externos, você pode criar novas contas externas.
 
 As contas externas são usadas por processos técnicos, como workflows técnicos ou workflows da campanha. Ao configurar uma transferência de arquivos em um workflow ou uma troca de dados com qualquer outro aplicativo (Adobe Target, Experience Manager etc.), você precisa selecionar uma conta externa.
 
@@ -35,12 +35,13 @@ Você pode configurar os seguintes tipos de contas externas:
 * [Conta externa do Serviço de Armazenamento Simples da Amazon (S3)](#amazon-simple-storage-service--s3--external-account)
 * [Conta externa do Microsoft Dynamics CRM](#microsoft-dynamics-crm-external-account)
 * [Conta externa do Salesforce CRM](#salesforce-crm-external-account)
+* [Conta externa de armazenamento do Azure Blob ](#azure-blob-external-account)
 
 ## Criação de uma conta externa {#creating-an-external-account}
 
 Para criar uma nova conta externa, siga as etapas abaixo. As configurações detalhadas dependem do tipo de conta externa.
 
-1. Na Campanha **[!UICONTROL Explorer]**, selecione **[!UICONTROL Administration]** &#39;>&#39; **[!UICONTROL Platform]** &#39;>&#39; **[!UICONTROL External accounts]**.
+1. Em Campanha **[!UICONTROL Explorer]**, selecione **[!UICONTROL Administration]** &#39;>&#39; **[!UICONTROL Platform]** &#39;>&#39; **[!UICONTROL External accounts]**.
 
    ![](assets/ext_account_1.png)
 
@@ -98,7 +99,7 @@ A conta externa **[!UICONTROL Routing]** permite configurar cada canal disponív
 Os seguintes canais podem ser configurados:
 
 * [Email](../../installation/using/deploying-an-instance.md#email-channel-parameters)
-* [Móvel (SMS)](../../delivery/using/sms-channel.md#creating-an-smpp-external-account)
+* [Móvel (SMS)](../../delivery/using/sms-set-up.md#creating-an-smpp-external-account)
 * [Telefone](../../delivery/using/steps-about-delivery-creation-steps.md#other-channels)
 * [Correspondência direta](../../delivery/using/about-direct-mail-channel.md)
 * [Agência](../../delivery/using/steps-about-delivery-creation-steps.md#other-channels)
@@ -139,22 +140,22 @@ Para saber onde localizar essas credenciais, consulte esta [página](https://hel
 
 ## Conta externa do banco de dados externo {#external-database-external-account}
 
-Use a conta externa de tipo **Banco de dados externo** para se conectar a um banco de dados externo. Saiba mais sobre a opção Federated Data Acces (FDA) em [esta seção](../../installation/using/about-fda.md).
+Use a conta externa do tipo **External database** para se conectar a um banco de dados externo. Saiba mais sobre a opção Federated Data Access (FDA) em [this section](../../installation/using/about-fda.md).
 
-Bancos de dados externos compatíveis com a Campanha estão listados na [Matriz de compatibilidade](../../rn/using/compatibility-matrix.md)
+Bancos de dados externos compatíveis com o Campaign estão listados na [Matriz de compatibilidade](../../rn/using/compatibility-matrix.md)
 
 ![](assets/ext_account_11.png)
 
-As configurações de conta externa dependem do mecanismo de banco de dados. Saiba mais nas seguintes seções:
+As configurações da conta externa dependem do mecanismo de banco de dados. Saiba mais nas seguintes seções:
 
-* Configurar acesso a [Azure Synapse](../../installation/using/configure-fda-synapse.md)
-* Configurar acesso a [Hadoop](../../installation/using/configure-fda-hadoop.md)
-* Configurar acesso a [Oracle](../../installation/using/configure-fda-oracle.md)
-* Configurar acesso a [Netezza](../../installation/using/configure-fda-netezza.md)
-* Configurar acesso a [SAP HANA](../../installation/using/configure-fda-sap-hana.md)
-* Configurar acesso a [Snowflake](../../installation/using/configure-fda-snowflake.md)
-* Configurar acesso a [Sybase IQ](../../installation/using/configure-fda-sybase.md)
-* Configurar acesso a [Teradata](../../installation/using/configure-fda-teradata.md)
+* Configurar o acesso ao [Azure synapse](../../installation/using/configure-fda-synapse.md)
+* Configurar o acesso ao [Hadoop](../../installation/using/configure-fda-hadoop.md)
+* Configurar o acesso ao [Oracle](../../installation/using/configure-fda-oracle.md)
+* Configurar o acesso ao [Netezza](../../installation/using/configure-fda-netezza.md)
+* Configurar o acesso a [SAP HANA](../../installation/using/configure-fda-sap-hana.md)
+* Configurar o acesso a [Snowflake](../../installation/using/configure-fda-snowflake.md)
+* Configurar o acesso ao [Sybase IQ](../../installation/using/configure-fda-sybase.md)
+* Configurar o acesso ao [Teradata](../../installation/using/configure-fda-teradata.md)
 
 ## Conta externa do Web Analytics {#web-analytics-external-account}
 
@@ -330,11 +331,11 @@ Para saber onde encontrar a ID da chave de acesso e a chave de acesso secreta, c
 
 A conta externa **[!UICONTROL Microsoft Dynamics CRM]** permite importar e exportar os dados do Microsoft Dynamics para o Adobe Campaign.
 
-Saiba mais sobre a Campanha - conector do Microsoft Dynamics CRM nesta [página](../../platform/using/crm-ms-dynamics.md).
+Saiba mais sobre o Campaign - Conector do Microsoft Dynamics CRM neste [page](../../platform/using/crm-ms-dynamics.md).
 
 >[!NOTE]
 >
-> **[!UICONTROL On-premise]** e os tipos  **[!UICONTROL Office 365]** de implantação agora estão obsoletos. [Saiba mais](../../rn/using/deprecated-features.md).
+> **[!UICONTROL On-premise]** Os tipos de  **[!UICONTROL Office 365]** implantação e agora estão obsoletos. [Saiba mais](../../rn/using/deprecated-features.md).
 
 Com o tipo de implantação **[!UICONTROL Web API]** e autenticação **[!UICONTROL Password credentials]**, é necessário fornecer os seguintes detalhes:
 
@@ -413,3 +414,23 @@ Para configurar a conta externa do Salesforce CRM para funcionar com o Adobe Cam
 Para essa conta externa, você precisa configurar o Salesforce CRM com o assistente de configuração.
 
 Para obter mais informações sobre essa configuração, consulte esta [página](../../platform/using/crm-connectors.md).
+
+## Conta externa de armazenamento do Azure Blob (#azure-blob-external-account)
+
+A conta externa de **Azure Blob storage** pode ser usada para importar ou exportar dados para o Adobe Campaign usando uma atividade de workflow **[!UICONTROL Transfer file]** . Para obter mais informações, consulte esta [seção](../../workflow/using/file-transfer.md).
+
+![](assets/ext_account_23.png)
+
+Para configurar o **[!UICONTROL Azure external account]** para funcionar com o Adobe Campaign, você precisa fornecer os seguintes detalhes:
+
+* **[!UICONTROL Server]**
+
+   URL do servidor de armazenamento do Azure Blob.
+
+* **[!UICONTROL Encryption]**
+
+   Tipo de criptografia escolhida entre **[!UICONTROL None]** ou **[!UICONTROL SSL]**.
+
+* **[!UICONTROL Access key]**
+
+   Para saber onde encontrar o **[!UICONTROL Access key]**, consulte esta [página](https://docs.microsoft.com/en-us/azure/storage/common/storage-account-keys-manage?tabs=azure-portal).
