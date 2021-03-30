@@ -7,10 +7,10 @@ feature: Visão geral
 role: Profissional
 level: Iniciante
 translation-type: tm+mt
-source-git-commit: d41119e61ee2088e1b8cab65354547420f8e7737
+source-git-commit: 57c1ca827beac9a3c95e63ca17fdb43be237eb28
 workflow-type: tm+mt
-source-wordcount: '4250'
-ht-degree: 95%
+source-wordcount: '4275'
+ht-degree: 94%
 
 ---
 
@@ -23,7 +23,9 @@ Consulte as [Notas de versão do Adobe Campaign Classic](../../rn/using/latest-r
 
 ## Março de 2021 {#march-2021}
 
-Uma nova página foi adicionada com diretrizes e referências para obter suporte sobre o Campaign Classic. [Saiba mais](https://helpx.adobe.com/br/campaign/kb/ac-support.html)
+O [Introdução à seção SMS](../../delivery/using/sms-channel.md) foi reorganizado e aprimorado. Agora você pode aprender a configurar o canal SMS](../../delivery/using/sms-set-up.md), [criar um SMS](../../delivery/using/sms-create.md), [enviar e rastrear SMS](../../delivery/using/sms-send.md) em seções dedicadas.[
+
+A página &quot;Opções de ajuda e suporte&quot; do Campaign Classic foi integrada à documentação principal. [Leia mais](../../support.md)
 
 Uma nova seção foi adicionada com práticas recomendadas e verificações a serem executadas em relação à segurança e privacidade. [Leia mais](../../installation/using/get-started-security-privacy.md)
 
@@ -440,7 +442,7 @@ Uma nova página de práticas recomendadas do Adobe Analytics Data Connector foi
 
 O guia de introdução às práticas recomendadas de delivery foi movido e atualizado. [Leia mais](../../delivery/using/delivery-best-practices.md)
 
-Uma recomendação foi adicionada à documentação do canal SMS para evitar problemas ao usar várias contas externas aproveitando o conector SMPP genérico estendido com a mesma conta do provedor. [Leia mais](../../delivery/using/sms-channel.md#automatic-reply)
+Uma recomendação foi adicionada à documentação do canal SMS para evitar problemas ao usar várias contas externas aproveitando o conector SMPP genérico estendido com a mesma conta do provedor. [Leia mais](../../delivery/using/sms-set-up.md#automatic-reply)
 
 Foram adicionadas informações na documentação de atividade do Scheduler sobre como evitar execuções simultâneas de um fluxo de trabalho. [Leia mais](../../workflow/using/scheduler.md)
 
