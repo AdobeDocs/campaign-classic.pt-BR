@@ -7,15 +7,15 @@ audience: delivery
 content-type: reference
 topic-tags: sending-emails
 translation-type: tm+mt
-source-git-commit: d88815e36f7be1b010dcaeee51013a5da769b4a8
+source-git-commit: 9237e11edec4114b2bd0932e6128775f36aad27c
 workflow-type: tm+mt
-source-wordcount: '925'
-ht-degree: 100%
+source-wordcount: '928'
+ht-degree: 99%
 
 ---
 
 
-# Anexo de arquivos{#attaching-files}
+# Anexar arquivos a um email{#attaching-files}
 
 ## Sobre anexos de email {#about-email-attachments}
 
@@ -34,7 +34,7 @@ Há dois casos possíveis:
 >
 >Esse tipo de configuração é geralmente executada nos templates do delivery. Para obter mais informações, consulte [Sobre templates](../../delivery/using/about-templates.md).
 
-## Anexo de arquivo local {#attaching-a-local-file}
+## Anexar um arquivo local {#attaching-a-local-file}
 
 Para anexar um arquivo local a um delivery, siga as etapas abaixo.
 
@@ -117,7 +117,7 @@ Para este tipo de anexo, sigas as seguintes etapas de configuração:
 >
 >Para evitar problemas de desempenho, se incluir imagens baixadas em tempo real de um URL personalizado como anexo, cada tamanho de imagem não deve exceder 100.000 bytes por padrão. Esse limite recomendado pode ser configurado na [ lista das opções do Campaign Classic ](../../installation/using/configuring-campaign-options.md#delivery).
 
-### Anexo de arquivo calculado {#attach-a-calculated-file}
+### Anexe um arquivo calculado {#attach-a-calculated-file}
 
 Você pode calcular o nome do anexo durante a preparação do delivery. Para fazer isso, selecione a opção.**[!UICONTROL The file name is calculated during delivery analysis (it cannot depend on the recipient)]**
 
@@ -140,7 +140,7 @@ Você pode calcular o nome do anexo durante a preparação do delivery. Para faz
 
    ![](assets/s_ncs_user_wizard_email_calc_attachement_05.png)
 
-### Anexo de arquivo personalizado {#attach-a-personalized-file}
+### Anexar um arquivo personalizado {#attach-a-personalized-file}
 
 Ao selecionar o anexo, você pode escolher a opção **[!UICONTROL The file name is calculated during delivery for each recipient (it can depend on the recipient)]**. Em seguida, você pode mapear os dados de personalização do recipient com o nome do arquivo a ser enviado.
 
