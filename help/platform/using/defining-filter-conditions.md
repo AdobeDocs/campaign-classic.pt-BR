@@ -7,17 +7,17 @@ audience: platform
 content-type: reference
 topic-tags: creating-queries
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: b05b8daad449aeb1f5226fdd76744776c6553b63
 workflow-type: tm+mt
 source-wordcount: '3229'
-ht-degree: 100%
+ht-degree: 99%
 
 ---
 
 
-# Definição de condições de filtro{#defining-filter-conditions}
+# Definir condições de filtro{#defining-filter-conditions}
 
-## Escolha do operador {#choosing-the-operator}
+## Escolha o operador {#choosing-the-operator}
 
 Nas condições de filtragem, é necessário vincular dois valores usando um operador.
 
@@ -117,7 +117,7 @@ Abaixo está uma lista dos operadores disponíveis:
  </tbody> 
 </table>
 
-## Uso de AND, OR, EXCEPT {#using-and--or--except}
+## Use AND, OR, EXCETO {#using-and--or--except}
 
 Para queries usando várias condições de filtragem, você precisa definir links entre as condições. Há três links possíveis:
 
@@ -146,7 +146,7 @@ Este exemplo mostra um filtro que permite exibir: destinatários que falam espan
 
 ![](assets/query_editor_nveau_31.png)
 
-## Priorização das condições {#prioritizing-conditions}
+## Priorizar condições {#prioritizing-conditions}
 
 Esta seção explica como priorizar condições com ajuda das setas azuis na barra de ferramentas.
 
@@ -259,13 +259,13 @@ Vincular a uma tabela e elemento de coleção:
 
 >[!NOTE]
 >
->* Use o botão **[!UICONTROL Add]** (acima da barra de ícones lateral) para adicionar uma coluna de saída na qual editaremos a expressão. Para saber mais, consulte [Criação de expressões](#building-expressions).
+>* Use o botão **[!UICONTROL Add]** (acima da barra de ícones lateral) para adicionar uma coluna de saída na qual editaremos a expressão. Para obter mais informações sobre edição de expressão, consulte [esta seção](#building-expressions).
 >* Exclua uma coluna de saída clicando no &#39;x&#39; vermelho (**Excluir**).
 >* Altere a ordem das colunas de saída usando as setas.
 >* O **[!UICONTROL Distribution of values]** é uma maneira de exibir a distribuição dos valores do campo selecionado (por exemplo, as distribuições vinculadas às cidades de recipients, idiomas do recipient, etc.).
 
 
-## Criação de campos calculados {#creating-calculated-fields}
+## Criar campos calculados {#creating-calculated-fields}
 
 Se necessário, adicione uma coluna durante a formatação de dados. Um campo calculado adiciona uma coluna à seção de visualização de dados. Clique em **[!UICONTROL Add a calculated field]**.
 
@@ -306,7 +306,7 @@ Para remover esse campo calculado, clique na cruz **[!UICONTROL Remove the calcu
 
 ![](assets/query_editor_nveau_58.png)
 
-## Criação de expressões {#building-expressions}
+## Criar expressões {#building-expressions}
 
 A ferramenta de edição de expressão permite calcular agregações, gerar funções ou editar uma fórmula usando uma expressão.
 
