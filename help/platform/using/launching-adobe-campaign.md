@@ -7,19 +7,19 @@ audience: platform
 content-type: reference
 topic-tags: starting-with-adobe-campaign
 translation-type: tm+mt
-source-git-commit: b77a56a97e499f60c092fae45c7809f7bfd9f2ea
+source-git-commit: 7b1e6dd00943e10dff693d78b3aa7cf2ad3e6727
 workflow-type: tm+mt
-source-wordcount: '548'
-ht-degree: 98%
+source-wordcount: '543'
+ht-degree: 94%
 
 ---
 
 
-# Iniciar o Adobe Campaign{#launching-adobe-campaign}
+# Inicie o Adobe Campaign{#launching-adobe-campaign}
 
 O console do Campaign Client é um cliente avançado que permite a conexão com seu(s) servidor(es) de aplicativos do Campaign. Saiba como baixar e configurar o console do cliente [nesta página](../../installation/using/installing-the-client-console.md).
 
-## Introdução ao Adobe Campaign {#starting-adobe-campaign}
+## Inicie o Adobe Campaign {#starting-adobe-campaign}
 
 Você pode iniciar o Adobe Campaign selecionando **[!UICONTROL Start / All Programs / Adobe Campaign v.X / Adobe Campaign client console]**.
 
@@ -27,7 +27,7 @@ A janela de conexão do console do cliente permite selecionar ou configurar banc
 
 ![](assets/acc-logon.png)
 
-## Conexão com o Adobe Campaign {#connecting-to-adobe-campaign}
+## Conectar-se ao Adobe Campaign {#connecting-to-adobe-campaign}
 
 Você pode se conectar ao Adobe Campaign usando sua Adobe ID. Para obter mais informações, consulte [esta página](../../integrations/using/about-adobe-id.md).
 
@@ -84,7 +84,7 @@ Para desconectar-se do Adobe Campaign, use o primeiro ícone na barra de ícones
 >
 >Você também pode fechar o aplicativo sem fazer logoff.
 
-## Conheça a sua versão do Adobe Campaign {#getting-your-campaign-version}
+## Obtenha sua versão do Adobe Campaign {#getting-your-campaign-version}
 
 O menu **[!UICONTROL Help > About...]** permite acessar as seguintes informações:
 
@@ -105,6 +105,6 @@ Saiba mais sobre [!DNL Gold Standard] [neste artigo](../../rn/using/gs-overview.
 
 **Tópicos relacionados**:
 
-* [Opções de Ajuda e Suporte do Adobe Campaign](https://helpx.adobe.com/br/campaign/kb/ac-support.html)
+* [Opções de Ajuda e Suporte do Adobe Campaign](../../support.md)
 * [Distribuição de Software Adobe Campaign](https://experience.adobe.com/#/downloads/content/software-distribution/br/campaign.html)
 * [Suporte e sessões especializadas para o Adobe Experience Cloud](https://helpx.adobe.com/br/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html)
