@@ -7,15 +7,15 @@ audience: platform
 content-type: reference
 topic-tags: importing-and-exporting-data
 translation-type: tm+mt
-source-git-commit: 693e38477b318ee44e0373a04d8524ddf128fe36
+source-git-commit: b05b8daad449aeb1f5226fdd76744776c6553b63
 workflow-type: tm+mt
-source-wordcount: '2960'
-ht-degree: 99%
+source-wordcount: '2955'
+ht-degree: 97%
 
 ---
 
 
-# Configuração de trabalhos de importação {#executing-import-jobs}
+# Configurar tarefas de importação {#executing-import-jobs}
 
 O Adobe Campaign permite importar dados para o banco de dados de um ou mais arquivos no texto, no formato CSV, TAB ou XML. Esses arquivos são associados a uma tabela (principal ou vinculada) e cada campo do arquivo de origem é associado a um campo do banco de dados.
 
@@ -25,7 +25,7 @@ O Adobe Campaign permite importar dados para o banco de dados de um ou mais arqu
 
 O assistente de importação permite configurar a importação, definir suas opções (como transformação de dados) e iniciar a execução. É uma série de telas cujo conteúdo depende do tipo de importação (simples ou múltipla) e dos direitos do operador.
 
-O assistente de importação é exibido após a criação de um novo trabalho de importação (consulte [Criação de trabalhos de importação e exportação](../../platform/using/creating-import-export-jobs.md).
+O assistente de importação é exibido após a criação de um novo trabalho de importação (consulte [Criar trabalhos de importação e exportação](../../platform/using/creating-import-export-jobs.md).
 
 >[!NOTE]
 >
@@ -35,7 +35,7 @@ O assistente de importação é exibido após a criação de um novo trabalho de
 
 No arquivo de origem, cada linha coincide com um registro. Os dados em registros são separados por delimitadores (espaço, tabulação, caractere etc.). Isso significa que os dados são recuperados no formulário de colunas e cada coluna é associada a um campo do banco de dados.
 
-## Etapa 1 - Escolha do template de importação {#step-1---choosing-the-import-template}
+## Etapa 1 - Escolher o template de importação {#step-1---choosing-the-import-template}
 
 Ao iniciar o assistente de importação, primeiro é necessário selecionar um template. Como exemplo, para configurar a importação de destinatários que receberam um boletim informativo, siga as etapas abaixo:
 
@@ -85,7 +85,7 @@ O link **[!UICONTROL Advanced parameters]** permite acessar as seguintes opçõe
 
    * **[!UICONTROL Do not update enumerations]**
 
-      Selecione essa opção para evitar o enriquecimento da lista de valores enumerados no banco de dados. Consulte [Gerenciamento de listas discriminadas](../../platform/using/managing-enumerations.md).
+      Selecione essa opção para evitar o enriquecimento da lista de valores enumerados no banco de dados. Consulte [Gerenciar enumerações](../../platform/using/managing-enumerations.md).
 
 * **[!UICONTROL Variables]** Guia
 
@@ -115,7 +115,7 @@ Use as opções oferecidas acima desta exibição para configurar a importação
 * **[!UICONTROL Auto-detect format]** é utilizado para reinicializar o formato da fonte de dados. Essa opção permite reaplicar os formatos originais aos dados que foram formatados por meio da **[!UICONTROL Click here to change the file format...]**.
 * O link **[!UICONTROL Advanced parameters]** permite filtrar os dados de origem e acessar as opções avançadas. Nessa tela, é possível importar apenas parte do arquivo. É possível definir um filtro, por exemplo, para importar usuários do tipo ‘Prospecto’ ou &#39;Cliente&#39; de acordo com o valor da linha correspondente. Essas opções devem ser usadas somente por usuários especialistas do JavaScript.
 
-### Alteração do formato de arquivo {#changing-the-file-format}
+### Alterar o formato de arquivo {#changing-the-file-format}
 
 A opção **[!UICONTROL Click here to change the file format...]** permite formatar os dados do arquivo de origem e, em particular, especificar o separador de colunas e o tipo de dados para cada campo. Essa configuração é executada por meio da seguinte janela:
 
@@ -244,7 +244,7 @@ A desduplicação emite um registro presente no arquivo de origem e no banco de 
 
 As opções **[!UICONTROL Reject]** e **[!UICONTROL Ignore]** operam como apresentado acima.
 
-### Comportamento no caso de um erro {#behavior-in-the-event-of-an-error}
+### No caso de erro {#behavior-in-the-event-of-an-error}
 
 A maioria das operações de transferência de dados gera vários tipos de erros (formato de linha incoerente, endereço de email inválido etc.). Todos os erros e avisos gerados pelo mecanismo de importação são armazenados e vinculados à instância de importação.
 
@@ -311,7 +311,7 @@ A próxima etapa do assistente de importação permite selecionar ou criar a pas
 
       ![](assets/s_ncs_user_import_wizard05_5.png)
 
-      Você pode criar uma nova lista para esses destinatários clicando em **[!UICONTROL Select link]** e depois em **[!UICONTROL Create]**. A criação e o gerenciamento de listas são apresentados em [Criação e gerenciamento de listas](../../platform/using/creating-and-managing-lists.md).
+      Você pode criar uma nova lista para esses destinatários clicando em **[!UICONTROL Select link]** e depois em **[!UICONTROL Create]**. A criação e o gerenciamento de listas são apresentados em [this section](../../platform/using/creating-and-managing-lists.md).
 
       ![](assets/s_ncs_user_import_wizard05_6.png)
 
@@ -335,4 +335,4 @@ A última etapa do assistente permite iniciar a importação de dados. Para faze
 
 ![](assets/s_ncs_user_import_wizard06_1.png)
 
-Você pode monitorar a execução do trabalho de importação (consulte [Monitoração da execução de trabalhos](../../platform/using/monitoring-jobs-execution.md).
+Em seguida, você pode monitorar a execução do trabalho de importação (consulte [Monitorar a execução de tarefas](../../platform/using/monitoring-jobs-execution.md).
