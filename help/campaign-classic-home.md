@@ -5,10 +5,10 @@ product: campaign
 title: Documentação do produto Adobe Campaign Classic
 topic: Premium
 translation-type: tm+mt
-source-git-commit: 9ce945af1ed1cabd5041a28812e540f814211071
+source-git-commit: 9f1c4110ef49c87719f1cc84ad08f687865561d1
 workflow-type: tm+mt
-source-wordcount: '300'
-ht-degree: 82%
+source-wordcount: '295'
+ht-degree: 81%
 
 ---
 
@@ -29,9 +29,9 @@ ht-degree: 82%
 
 * **[Atualizar a integração dos acionadores da Adobe Experience Cloud](integrations/using/configuring-adobe-io.md)**<br/> O serviço de autenticação herdado oAuth chegou ao fim da vida útil. Saiba como migrar para o Adobe I/O.
 
-* **[Mover para a API do provedor de APNs com base em HTTP/2](https://helpx.adobe.com/br/campaign/kb/migrate-to-apns-http2.html)**<br/> Saiba como migrar do protocolo binário legado para a API do provedor APNs com base em HTTP/2
+* **[Mover para a API do provedor de APNs com base em HTTP/2](https://helpx.adobe.com/campaign/kb/migrate-to-apns-http2.html)**<br/> Saiba como migrar do protocolo binário legado para a API do provedor APNs com base em HTTP/2
 
-* **[Obtenha suporte](https://helpx.adobe.com/br/campaign/kb/ac-support.html)**<br/> Acesse as perguntas frequentes, as práticas recomendadas, os recursos de ajuda e solicite ajuda
+* **[Obtenha suporte](support.md)**<br/> Acesse as perguntas frequentes, as práticas recomendadas, os recursos de ajuda e solicite ajuda
 
 [Mais atualizações](/help/rn/using/documentation-updates.md)
 
