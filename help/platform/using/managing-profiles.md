@@ -7,15 +7,15 @@ audience: platform
 content-type: reference
 topic-tags: profile-management
 translation-type: tm+mt
-source-git-commit: 693e38477b318ee44e0373a04d8524ddf128fe36
+source-git-commit: b05b8daad449aeb1f5226fdd76744776c6553b63
 workflow-type: tm+mt
 source-wordcount: '229'
-ht-degree: 97%
+ht-degree: 93%
 
 ---
 
 
-# Gerenciamento de perfis{#managing-profiles}
+# Gerenciar perfis{#managing-profiles}
 
 ## Árvore do destinatário {#recipient-tree}
 
@@ -29,15 +29,15 @@ Cada nó coincide com uma pasta. Os dados de cada pasta devem ser considerados p
 >
 >Para exibir a lista de todos os destinatários no banco de dados, crie uma visualização. Saiba mais em [Pastas e exibições](../../platform/using/access-management-folders.md).
 
-## Movimentação de destinatários {#moving-recipients}
+## Mover destinatários {#moving-recipients}
 
 É possível selecionar um ou mais destinatários, arrastá-los da lista de destinatários e soltá-los na pasta desejada. Uma mensagem de aviso solicita que você confirme esta ação.
 
-## Como copiar um destinatário {#copying-a-recipient}
+## Copiar um destinatário {#copying-a-recipient}
 
 Para copiar um destinatário na mesma pasta, clique com o botão direito do mouse no destinatário desejado e selecione **[!UICONTROL Copy]**.
 
-## Como excluir destinatários {#deleting-recipients}
+## Excluir destinatários {#deleting-recipients}
 
 Para excluir destinatários, mova-os para uma pasta específica e, em seguida, limpe o conteúdo dessa pasta. É **altamente recomendável não usar** a opção **[!UICONTROL Delete]** neste caso.
 
