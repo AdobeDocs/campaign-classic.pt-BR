@@ -7,15 +7,15 @@ audience: platform
 content-type: reference
 topic-tags: profile-management
 translation-type: tm+mt
-source-git-commit: ba460d8347c987291681641a1be208027acf1d2f
+source-git-commit: b05b8daad449aeb1f5226fdd76744776c6553b63
 workflow-type: tm+mt
 source-wordcount: '145'
-ht-degree: 100%
+ht-degree: 97%
 
 ---
 
 
-# Importação e exportação de dados{#exporting-and-importing-profiles}
+# Importar e exportar perfis{#exporting-and-importing-profiles}
 
 Você pode [usar workflows](#use-workflows) para importar ou exportar perfis de recipient para o banco de dados do Adobe Campaign, ou configurar [importações genéricas bem como exportar trabalhos](#create-jobs).
 
