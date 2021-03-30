@@ -7,17 +7,17 @@ audience: platform
 content-type: reference
 topic-tags: filtering-data
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: b05b8daad449aeb1f5226fdd76744776c6553b63
 workflow-type: tm+mt
 source-wordcount: '257'
-ht-degree: 100%
+ht-degree: 94%
 
 ---
 
 
 # Caso de uso{#use-case}
 
-## Criação de um filtro no formato de email dos assinantes {#creating-a-filter-on-the-email-format-of-subscribers}
+## Crie um filtro no formato de email dos assinantes {#creating-a-filter-on-the-email-format-of-subscribers}
 
 Este caso de uso irá demonstrar como criar um filtro para classificar assinaturas de boletim informativo com base no formato do email do destinatário.
 
