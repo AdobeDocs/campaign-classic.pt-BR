@@ -7,7 +7,7 @@ feature: null
 role: null
 level: null
 translation-type: tm+mt
-source-git-commit: ce60b2bd0a9d75ca429af2f740832b408ce3c48b
+source-git-commit: 6a856c95f21b52c66a9b7359133227394fae05a5
 workflow-type: tm+mt
 source-wordcount: '2267'
 ht-degree: 99%
@@ -144,7 +144,7 @@ ht-degree: 99%
 * A capacidade de os administradores definirem ou redefinirem a senha de qualquer operador foi restaurada. Para fazer isso, clique com o botão direito do mouse em um operador, selecione **[!UICONTROL Actions]** > **[!UICONTROL Reset password]** e defina a nova senha do operador. Recomendamos que os operadores alterem sua senha ao se reconectarem pela primeira vez. Para obter mais informações, consulte a [documentação detalhada](../../production/using/lost-password.md).
 * Para dar suporte ao novo recurso de multilocação no Adobe Target, um novo parâmetro “at_property” agora pode ser adicionado às URLs ao configurar as opções e as contas externas para a integração com o Target. O valor a ser usado para esse parâmetro pode ser encontrado no Adobe Target e será usado pelo Campaign ao realizar chamadas para o Target. Para obter mais informações, consulte a [documentação detalhada](../../integrations/using/inserting-a-dynamic-image.md).
 * Agora é possível especificar uma landing page padrão para abrir ao clicar em uma imagem servida pelo Adobe Target. Antes, clicar naquela imagem levava à imagem padrão ao criar o email. Para obter mais informações, consulte a [documentação detalhada](../../integrations/using/inserting-a-dynamic-image.md).
-* Adição da caixa de seleção **Enable SMPP traces** na conta externa para forçar registros de rastreamentos. Para obter mais informações, consulte a [documentação detalhada](../../delivery/using/sms-channel.md#creating-an-smpp-external-account).
+* Adição da caixa de seleção **Enable SMPP traces** na conta externa para forçar registros de rastreamentos. Para obter mais informações, consulte a [documentação detalhada](../../delivery/using/sms-set-up.md#creating-an-smpp-external-account).
 
 **Evoluções técnicas**
 
