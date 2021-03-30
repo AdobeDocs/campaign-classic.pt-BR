@@ -3,15 +3,12 @@ solution: Campaign Classic
 product: campaign
 title: 'Opções de ajuda e suporte para Campaign Classic '
 description: Precisa de suporte para o Campaign Classic? Você está no lugar certo!
-audience: rns
-content-type: reference
-topic-tags: latest-release-notes
 hidefromtoc: true
 translation-type: tm+mt
-source-git-commit: 1d9c96d1cd8ba2a8099271165a1671d5589230fb
+source-git-commit: 108f6cf912bb855fd34263d9e069260769a3ef6a
 workflow-type: tm+mt
-source-wordcount: '686'
-ht-degree: 63%
+source-wordcount: '771'
+ht-degree: 54%
 
 ---
 
@@ -97,8 +94,14 @@ Como atualizar para uma nova build? como monitorar a execução do fluxo de trab
 
 ### O que é o Painel de controle?
 
-O Painel de controle ajuda a aumentar a eficiência do seu trabalho como administrador de produtos do Campaign Classic, permitindo que você gerencie configurações e rastreie os usos de cada uma de suas instâncias.
+O Painel de controle do Campaign ajuda a aumentar a eficiência do seu trabalho como administrador de produtos do Campaign Classic, permitindo gerenciar configurações e rastrear o uso de cada uma de suas instâncias.
 [Clique ](https://docs.adobe.com/content/hecontrol-panel/using/discover-control-panel/key-features.html) aqui para obter mais informações.
+
+>[!NOTE]
+>
+>O Painel de controle do Campaign é acessível a todos os usuários administradores. As etapas para conceder acesso de Administrador a um usuário estão detalhadas [nesta seção](https://experienceleague.adobe.com/docs/control-panel/using/discover-control-panel/managing-permissions.html?lang=en#discover-control-panel).
+>
+>Observe que sua instância deve ser hospedada no AWS e atualizada com a build mais recente do [Gold Standard](rn/using/gs-overview.md) ou a build mais recente do GA (21.1)](rn/using/latest-release.md). [ Saiba como verificar sua versão em [this section](platform/using/launching-adobe-campaign.md#getting-your-campaign-version). Para verificar se sua instância está hospedada no AWS, siga as etapas detalhadas em [this page](https://experienceleague.adobe.com/docs/control-panel/using/faq.html).
 
 ### Como acessar o Painel de controle?
 
