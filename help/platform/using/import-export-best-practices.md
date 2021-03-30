@@ -7,10 +7,10 @@ audience: automating
 content-type: reference
 topic-tags: workflow-general-operation
 translation-type: tm+mt
-source-git-commit: a2a99135bdd74d87c04262b53e074b6aa05e7915
+source-git-commit: b05b8daad449aeb1f5226fdd76744776c6553b63
 workflow-type: tm+mt
 source-wordcount: '512'
-ht-degree: 100%
+ht-degree: 97%
 
 ---
 
@@ -31,7 +31,7 @@ Não confie na suposição de que os dados de entrada são consistentes e corret
 
 Um exemplo de modelo de fluxo de trabalho genérico projetado para importar dados está disponível na seção [Exemplo: modelo de fluxo de trabalho para importar dados](../../platform/using/creating-import-export-templates.md).
 
-## Uso dos formatos de arquivo simples {#using-flat-file-formats}
+## Usar formatos de arquivo simples {#using-flat-file-formats}
 
 O formato mais eficiente para importações é o arquivo simples. Arquivos simples podem ser importados no modo em massa no nível do banco de dados.
 
@@ -52,7 +52,7 @@ Smith;Clara;08/02/1989;hayden.smith@example.com;124567
 Durance;Allison;15/12/1978;allison.durance@example.com;120987
 ```
 
-## Utilização da compactação {#using-compression}
+## Usar compactação {#using-compression}
 
 Use arquivos compactados para importações e exportações sempre que possível. O GZIP é compatível por padrão. Você pode adicionar pré-processamento ao importar arquivos ou pós-processamento ao extrair dados, respectivamente nas atividades de fluxo de trabalho **[!UICONTROL Load file]** e **[!UICONTROL Extract file]**.
 
@@ -61,13 +61,13 @@ Use arquivos compactados para importações e exportações sempre que possível
 * [Atividade de carregamento de dados (arquivo)](../../workflow/using/data-loading--file-.md)
 * [Atividade de extração de dados (arquivo)](../../workflow/using/extraction--file-.md)
 
-## Importação no modo Delta {#importing-in-delta-mode}
+## Importar no modo Delta {#importing-in-delta-mode}
 
 Importações regulares devem ser feitas no modo delta. Isso significa que somente os dados modificados ou novos são enviados ao Adobe Campaign, em vez da tabela toda sempre.
 
 As importações completas devem ser usadas somente para carregamento inicial.
 
-## Manutenção da consistência {#maintaining-consistency}
+## Manter consistência {#maintaining-consistency}
 
 Para manter a consistência dos dados no banco de dados do Adobe Campaign, siga os princípios abaixo:
 
