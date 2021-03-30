@@ -7,21 +7,21 @@ audience: platform
 content-type: reference
 topic-tags: importing-and-exporting-data
 translation-type: tm+mt
-source-git-commit: ba460d8347c987291681641a1be208027acf1d2f
+source-git-commit: b05b8daad449aeb1f5226fdd76744776c6553b63
 workflow-type: tm+mt
 source-wordcount: '261'
-ht-degree: 100%
+ht-degree: 92%
 
 ---
 
 
-# Importação e exportação de dados usando workflows {#import-export-workflows}
+# Importar e exportar dados usando workflows {#import-export-workflows}
 
 ## Coleta de dados {#collecting-data-workflows}
 
 Os workflows podem ser uma maneira útil de automatizar alguns dos processos de importação. Se você importa dados de um arquivo local ou de um SFTP, você pode usar workflows para padronizar os procedimentos de gerenciamento de dados.
 
-### Usando dados de uma lista: lista de leitura {#using-data-from-a-list--read-list}
+### Use dados de uma lista: Lista de leitura {#using-data-from-a-list--read-list}
 
 Os dados enviados em um workflow podem vir de listas em que os dados foram preparados e estruturados antecipadamente.
 
@@ -29,7 +29,7 @@ Esta lista pode ter sido criada diretamente no Adobe Campaign ou importada pela 
 
 Para obter mais informações sobre como usar a atividade da lista de leitura em um fluxo de trabalho, consulte [esta página](../../workflow/using/read-list.md).
 
-### Carregamento de dados de um arquivo {#loading-data-from-a-file}
+### Carregar dados de um arquivo {#loading-data-from-a-file}
 
 Os dados processados em um workflow podem ser extraídos de um arquivo estruturado para serem importados para o Adobe Campaign.
 
@@ -47,7 +47,7 @@ Durance;Allison;15/12/1978;allison.durance@example.com;120987
 
 Depois que os dados forem coletados, você poderá usá-los em seus workflows, por exemplo, para enriquecer uma entrega ou atualizar o banco de dados. Para obter mais informações, consulte [esta página](../../workflow/using/how-to-use-workflow-data.md).
 
-## Exportação de dados {#exporting-data-via-a-workflow}
+## Exportar dados {#exporting-data-via-a-workflow}
 
 Os workflows podem ser uma maneira útil de automatizar alguns dos processos de exportação ou exportar conjuntos precisos de dados após usar algumas atividades disponíveis de gerenciamento de dados disponíveis para transformar seus dados.
 
