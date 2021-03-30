@@ -3,14 +3,14 @@ solution: Campaign Classic
 product: campaign
 title: Usar direitos nomeados para configurar permissões
 description: Saiba como usar direitos nomeados para configurar permissões
-audience: platform
-content-type: reference
-topic-tags: administration-basics
+feature: Gerenciamento de acesso
+role: Profissional de negócios, Administrador
+level: Iniciante
 translation-type: tm+mt
-source-git-commit: 693e38477b318ee44e0373a04d8524ddf128fe36
+source-git-commit: f2bd093d3a010e079b7f5adf3371e21d07a4f3ae
 workflow-type: tm+mt
-source-wordcount: '503'
-ht-degree: 95%
+source-wordcount: '509'
+ht-degree: 94%
 
 ---
 
