@@ -7,10 +7,10 @@ audience: delivery
 content-type: reference
 topic-tags: sending-emails
 translation-type: tm+mt
-source-git-commit: d1b38acc5209a5c96ab7a35fe9640159141b110f
+source-git-commit: 6eb29742d5884096f2d06b763823aede48f5dcb3
 workflow-type: tm+mt
-source-wordcount: '1892'
-ht-degree: 98%
+source-wordcount: '1921'
+ht-degree: 96%
 
 ---
 
@@ -98,7 +98,7 @@ Para os clientes que usam a funcionalidade de mensagens transacionais do Adobe C
 
 ### Cabeçalhos do MTA aprimorado
 
-As instâncias mais recentes do Campaign Classic incluem código que adiciona os cabeçalhos do MTA aprimorado necessários a cada mensagem. Se você estiver usando o Adobe Campaign 19.1 (compilação 9032) ou superior e esse não for o caso, será necessário adicionar o parâmetro &quot;useMomentum=true&quot; à configuração da instância de marketing (no arquivo [serverConf.xml](../../installation/using/the-server-configuration-file.md#mta)).
+As instâncias mais recentes do Campaign Classic incluem código que adiciona os cabeçalhos do MTA aprimorado necessários a cada mensagem. Se estiver usando o Adobe Campaign 19.1 (build 9032) ou superior e se esse não for o caso, você deverá solicitar [Adobe Customer Care](https://helpx.adobe.com/br/enterprise/admin-guide.html) para adicionar o parâmetro &quot;useMomentum=true&quot; à configuração da instância de execução (no arquivo [serverConf.xml](../../installation/using/the-server-configuration-file.md#mta)), que pode ser a instância de marketing mid [instância de-sourcing](../../installation/using/mid-sourcing-server.md) ou [instância de execução de mensagens transacionais](../../message-center/using/creating-a-shared-connection.md#execution-instance), dependendo da sua configuração.
 
 No entanto, se você estiver usando uma instância mais antiga que não inclui esse código, uma nova regra de tipologia chamada **[!UICONTROL Typology Rule for Enhanced MTAs]** deverá ser adicionada a todas as tipologias existentes na instância do Campaign.
 Essa regra é adicionada por um pacote **[!UICONTROL Typology]** instalado como parte da atualização para o MTA aprimorado.
