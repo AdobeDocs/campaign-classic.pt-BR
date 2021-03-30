@@ -1,21 +1,21 @@
 ---
 solution: Campaign Classic
 product: campaign
-title: Sobre a personalização
-description: Sobre a personalização
+title: Introdução à personalização
+description: Saiba como personalizar mensagens e usar conteúdo condicional no Campaign
 audience: delivery
 content-type: reference
 topic-tags: personalizing-deliveries
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: 9237e11edec4114b2bd0932e6128775f36aad27c
 workflow-type: tm+mt
-source-wordcount: '125'
-ht-degree: 100%
+source-wordcount: '138'
+ht-degree: 86%
 
 ---
 
 
-# Sobre a personalização{#about-personalization}
+# Introdução à personalização do Twitter{#about-personalization}
 
 As mensagens entregues pelo Adobe Campaign podem ser personalizadas de várias maneiras diferentes, relacionadas ao conteúdo ou à aparência das mensagens. Essas maneiras podem ser combinadas de acordo com os critérios obtidos especialmente dos perfis do destinatário. Para deliveries de email, você pode definir os elementos e as condições de personalização de um delivery diretamente em JavaScript na guia **[!UICONTROL Source]** da mensagem. Em geral, o Adobe Campaign permite:
 
