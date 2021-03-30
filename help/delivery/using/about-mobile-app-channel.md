@@ -6,26 +6,24 @@ description: Esta seção fornece informações gerais específicas para o canal
 audience: delivery
 content-type: reference
 topic-tags: sending-push-notifications
-translation-type: ht
-source-git-commit: 22f44f5723ab35e95caa438583fe06314c763ba1
-workflow-type: ht
-source-wordcount: '674'
-ht-degree: 100%
+translation-type: tm+mt
+source-git-commit: 9237e11edec4114b2bd0932e6128775f36aad27c
+workflow-type: tm+mt
+source-wordcount: '659'
+ht-degree: 93%
 
 ---
 
 
-# Sobre o canal de aplicativo móvel{#about-mobile-app-channel}
+# Introdução ao canal de aplicativo móvel{#about-mobile-app-channel}
+
+O **Mobile App Channel** permite usar a plataforma Adobe Campaign para enviar notificações por push personalizadas para terminais iOS e Android por meio de aplicativos.
 
 >[!CAUTION]
 >
 >Este documento detalha o processo de integração de seu aplicativo móvel com a plataforma Adobe Campaign. Ele não fornece informações sobre como criar o aplicativo móvel ou como configurá-lo para gerenciar notificações. Se desejar mais informações sobre isso, consulte a [documentação](https://developer.apple.com/) oficial da Apple e a [documentação](https://developer.android.com/index.html) do Android.
 
-As seções abaixo fornecem informações específicas para o canal do aplicativo móvel.
-
-Para informações gerais sobre como criar um delivery, consulte [esta seção](../../delivery/using/steps-about-delivery-creation-steps.md).
-
-O **Mobile App Channel** permite usar a plataforma Adobe Campaign para enviar notificações personalizadas para terminais iOS e Android por meio de aplicativos. Dois canais de delivery estão disponíveis:
+Dois canais de delivery estão disponíveis:
 
 * Um canal iOS que permite enviar notificações para dispositivos móveis Apple.
 
@@ -38,6 +36,7 @@ O **Mobile App Channel** permite usar a plataforma Adobe Campaign para enviar no
 Correspondendo a esses dois canais, há duas atividades de delivery nos workflows de campanha:
 
 ![](assets/nmac_intro_3.png)
+
 
 >[!NOTE]
 >
@@ -56,7 +55,9 @@ Correspondendo a esses dois canais, há duas atividades de delivery nos workflow
 
 O workflow **[!UICONTROL NMAC opt-out management]** (mobileAppOptOutMgt) atualiza a notificação de cancelamentos de subscrições em dispositivos móveis. Para obter mais informações sobre esse fluxo de trabalho, consulte a [lista de workflows técnicos](../../workflow/using/about-technical-workflows.md).
 
-O Adobe Campaign é compatível com APNs HTTP/2. Para obter mais detalhes sobre as etapas de configuração, consulte [Configuração de um aplicativo para dispositivos móveis na seção Adobe Campaign](../../delivery/using/configuring-the-mobile-application.md).
+O Adobe Campaign é compatível com APNs HTTP/2. Para obter mais detalhes sobre as etapas de configuração, consulte a seção [this section](../../delivery/using/configuring-the-mobile-application.md).
+
+Para informações gerais sobre como criar um delivery, consulte [esta seção](../../delivery/using/steps-about-delivery-creation-steps.md).
 
 ## Caminho dos dados {#data-path}
 
