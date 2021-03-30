@@ -7,9 +7,9 @@ audience: platform
 content-type: reference
 topic-tags: starting-with-adobe-campaign
 translation-type: tm+mt
-source-git-commit: b77a56a97e499f60c092fae45c7809f7bfd9f2ea
+source-git-commit: 7b1e6dd00943e10dff693d78b3aa7cf2ad3e6727
 workflow-type: tm+mt
-source-wordcount: '2034'
+source-wordcount: '2024'
 ht-degree: 98%
 
 ---
@@ -168,7 +168,7 @@ Sim. O servidor é desligado durante uma atualização para garantir que a integ
 
 Se você enfrentar problemas após uma atualização de build, entre em contato com o [Atendimento ao cliente da Adobe](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html). O Atendimento ao cliente agendará as datas de criação e abrirá tíquetes relacionados à atualização da build.
 
-Saiba mais sobre as [opções de Ajuda e Suporte para o Campaign Classic](https://helpx.adobe.com/br/campaign/kb/ac-support.html)
+Saiba mais sobre as [opções de Ajuda e Suporte para o Campaign Classic](../../support.md)
 
 ## Lista de verificação de atualização de build {#check-list}
 
@@ -207,5 +207,5 @@ todo o conteúdo é exibido e está presente.
 
 * [Atualização de uma build](../../production/using/build-upgrade.md)
 * [Notas de versão do Campaign Classic ](../../rn/using/rn-overview.md)
-* [Opções de ajuda e suporte para o Campaign Classic](https://helpx.adobe.com/campaign/kb/ac-support.html)
+* [Opções de ajuda e suporte para o Campaign Classic](../../support.md)
 * [[!DNL Gold Standard] programa](../../rn/using/gs-overview.md)
