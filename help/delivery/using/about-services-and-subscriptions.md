@@ -7,17 +7,17 @@ audience: delivery
 content-type: reference
 topic-tags: subscriptions-and-referrals
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: 9237e11edec4114b2bd0932e6128775f36aad27c
 workflow-type: tm+mt
 source-wordcount: '149'
-ht-degree: 100%
+ht-degree: 97%
 
 ---
 
 
 # Sobre serviços e subscrições{#about-services-and-subscriptions}
 
-O Adobe Campaign permite que você crie e administre serviços de informações, como boletins informativos e gerencie as subscrições a esses serviços. Vários serviços podem ser definidos em paralelo, por exemplo: boletins informativos especializados para determinadas categorias de produtos, temas ou áreas de um site, subscrições a vários tipos de mensagens de alerta e notificações em tempo real. Consulte [Gerenciamento de subscrições](../../delivery/using/managing-subscriptions.md).
+O Adobe Campaign permite que você crie e administre serviços de informações, como boletins informativos e gerencie as subscrições a esses serviços. Vários serviços podem ser definidos em paralelo, por exemplo: boletins informativos especializados para determinadas categorias de produtos, temas ou áreas de um site, subscrições a vários tipos de mensagens de alerta e notificações em tempo real. Consulte [Gerenciar assinaturas](../../delivery/using/managing-subscriptions.md).
 
 Também é possível permitir que seus recipients de delivery os compartilhem com membros de sua rede social ou profissional. Para fazer isso, insira os links relevantes no seu delivery. Em seguida, você poderá controlar esse processo de compartilhamento, bem como o número de visitas às páginas relacionadas. Para obter mais informações, consulte [Marketing viral e social](../../delivery/using/viral-and-social-marketing.md).
 
