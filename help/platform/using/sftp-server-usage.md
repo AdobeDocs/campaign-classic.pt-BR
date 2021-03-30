@@ -7,10 +7,10 @@ audience: platform
 content-type: reference
 topic-tags: importing-and-exporting-data
 translation-type: tm+mt
-source-git-commit: 3139a9bf5036086831e23acef21af937fcfda740
+source-git-commit: 564eaedb09282c85593f638617baded0a63494a0
 workflow-type: tm+mt
-source-wordcount: '1102'
-ht-degree: 100%
+source-wordcount: '1158'
+ht-degree: 93%
 
 ---
 
@@ -43,9 +43,11 @@ Para evitar esses problemas, a Adobe recomenda seguir as práticas recomendadas 
 
 >[!NOTE]
 >
->Se sua instância estiver hospedada no AWS, é possível monitorar o armazenamento do servidor SFTP com o [Painel de Controle](https://docs.adobe.com/content/help/pt-BR/control-panel/using/sftp-management/sftp-storage-management.html) do Campaign Classic.
+>Se sua instância estiver hospedada no AWS, é possível monitorar o armazenamento do servidor SFTP com o [Painel de Controle](https://docs.adobe.com/content/help/pt-BR/control-panel/using/sftp-management/sftp-storage-management.html) do Campaign Classic. Para verificar se sua instância está hospedada no AWS, siga as etapas detalhadas em [this page](https://experienceleague.adobe.com/docs/control-panel/using/faq.html).
 >
->Para verificar se sua instância está hospedada no AWS, siga as etapas detalhadas [nessa seção](https://docs.adobe.com/content/help/pt-BR/control-panel/using/faq.html#ims-org-id) .
+>O Painel de controle do Campaign é acessível a todos os usuários administradores. As etapas para conceder acesso de Administrador a um usuário estão detalhadas em [this page](https://experienceleague.adobe.com/docs/control-panel/using/discover-control-panel/managing-permissions.html?lang=en#discover-control-panel).
+>
+>Observe que sua instância deve ser atualizada com a build mais recente do [Gold Standard](../../rn/using/gs-overview.md) ou a build mais recente do GA (21.1)](../../rn/using/latest-release.md). [ Saiba como verificar sua versão em [this section](../../platform/using/launching-adobe-campaign.md#getting-your-campaign-version).
 
 * As capacidades do tamanho do servidor variam de acordo com sua licença. Em qualquer caso, mantenha o mínimo de dados possíveis e somente pelo tempo necessário (o limite máximo de tempo é 15 dias).
 
