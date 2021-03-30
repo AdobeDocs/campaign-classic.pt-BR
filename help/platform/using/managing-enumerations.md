@@ -7,17 +7,15 @@ audience: platform
 content-type: reference
 topic-tags: administration-basics
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: b05b8daad449aeb1f5226fdd76744776c6553b63
 workflow-type: tm+mt
-source-wordcount: '877'
-ht-degree: 100%
+source-wordcount: '875'
+ht-degree: 96%
 
 ---
 
 
-# Gerenciamento de enumerações{#managing-enumerations}
-
-## Sobre enumerações {#about-enumerations}
+# Gerenciar enumerações{#managing-enumerations}
 
 Uma enumeração (também conhecida como &#39;lista discriminada&#39;) é uma lista de valores sugeridos pelo sistema para preencher certos campos. Enumerações permitem padronizar os valores desses campos e ajuda na entrada de dados ou no uso de queries.
 
@@ -46,7 +44,7 @@ Os valores desse tipo de campo são definidos e a administração geral desses c
 
 * Se a opção **[!UICONTROL Closed]** for selecionada, os usuários não poderão criar novos valores, mas apenas escolher entre os valores disponíveis.
 
-## Padronização de dados {#standardizing-data}
+## Padronizar dados {#standardizing-data}
 
 ### Sobre a limpeza de alias {#about-alias-cleansing}
 
@@ -72,7 +70,7 @@ A opção **[!UICONTROL Alias cleansing]** possibilita o uso de aliases para a l
 
 ![](assets/s_ncs_user_itemized_list_alias_option.png)
 
-#### Criação de um alias {#creating-an-alias}
+#### Criar um alias {#creating-an-alias}
 
 Para criar um alias, clique em **[!UICONTROL Add]**.
 
@@ -90,7 +88,7 @@ Verifique os parâmetros antes de confirmar essa operação.
 
 ![](assets/s_ncs_user_itemized_list_alias_create_3.png)
 
-Assim, quando um usuário insere o valor **NEILSEN** em um campo “company” (no console do Adobe Campaign ou em um formulário), ele é substituído automaticamente pelo valor **NIELSEN Ltd**. O valor é substituído pelo workflow **Alias cleansing.** Consulte [Execução de limpeza de dados](#running-data-cleansing).
+Assim, quando um usuário insere o valor **NEILSEN** em um campo “company” (no console do Adobe Campaign ou em um formulário), ele é substituído automaticamente pelo valor **NIELSEN Ltd**. O valor é substituído pelo workflow **Alias cleansing.** Consulte [Executar limpeza de dados](#running-data-cleansing).
 
 ![](assets/s_ncs_user_itemized_list_alias_use.png)
 
@@ -112,15 +110,15 @@ Quando a execução for concluída, o alias será adicionado à lista de aliases
 
 ![](assets/s_ncs_user_itemized_list_alias_detail2.png)
 
-#### Recuperação de ocorrências de alias {#retrieving-alias-hits}
+#### Recuperar ocorrências de alias {#retrieving-alias-hits}
 
 Os valores inseridos pelos usuários podem ser convertidos em aliases. Efetivamente, quando o usuário insere um valor que não está incluído na lista discriminada, o valor é armazenado na guia **[!UICONTROL Alias]**.
 
-O workflow técnico **Alias cleansing** recupera esses valores todas as noites para atualizar a lista discriminada. Consulte [Execução de limpeza de dados](#running-data-cleansing)
+O workflow técnico **Alias cleansing** recupera esses valores todas as noites para atualizar a lista discriminada. Consulte [Executar limpeza de dados](#running-data-cleansing)
 
-Se necessário, a coluna **[!UICONTROL Hits]** pode exibir o número de vezes que esse valor foi inserido. O cálculo desse valor pode demorar e consumir memória. Para obter mais informações, consulte [Cálculo das ocorrências de entrada](#calculating-entry-occurrences).
+Se necessário, a coluna **[!UICONTROL Hits]** pode exibir o número de vezes que esse valor foi inserido. O cálculo desse valor pode demorar e consumir memória. Para obter mais informações, consulte [Calcular ocorrências de entrada](#calculating-entry-occurrences).
 
-### Execução de limpeza de dados {#running-data-cleansing}
+### Executar limpeza de dados {#running-data-cleansing}
 
 A limpeza de dados é realizada pelo workflow técnico **[!UICONTROL Alias cleansing]**. As configurações definidas para enumerações são aplicadas durante a execução. Consulte [Workflow de limpeza de alias](#alias-cleansing-workflow).
 
@@ -134,7 +132,7 @@ O link **[!UICONTROL Advanced parameters...]** permite definir a data a partir d
 
 Clique no botão **[!UICONTROL Start]** para executar a limpeza de dados.
 
-#### Cálculo das ocorrências de entrada {#calculating-entry-occurrences}
+#### Calcular ocorrências de entrada {#calculating-entry-occurrences}
 
 A subguia **[!UICONTROL Alias]** de uma lista discriminada pode exibir o número de ocorrências de um alias entre todos os valores inseridos. Essas informações são uma estimativa e serão exibidas na coluna **[!UICONTROL Hits]**.
 
