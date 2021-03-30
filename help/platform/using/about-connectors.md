@@ -3,23 +3,23 @@ solution: Campaign Classic
 product: campaign
 title: Sobre conectores
 description: Sobre conectores
-audience: platform
-content-type: reference
-topic-tags: connectors
+feature: Visão geral
+role: Profissional de negócios, arquiteto de dados
+level: Iniciante
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: f2bd093d3a010e079b7f5adf3371e21d07a4f3ae
 workflow-type: tm+mt
-source-wordcount: '193'
-ht-degree: 96%
+source-wordcount: '203'
+ht-degree: 90%
 
 ---
 
 
-# Sobre conectores{#about-connectors}
+# Introdução aos conectores{#about-connectors}
 
 O Adobe Campaign oferece vários conectores que permitem a comunicação com aplicativos externos, conexão com mecanismos de banco de dados e integração com o Adobe Analytics para compartilhar dados.
 
-Esses conectores são:
+Os conectores disponíveis estão listados abaixo:
 
 * O conector FDA (**Federated Data Access**) permite conectar o Campaign a um ou mais bancos de dados externos e processar as informações armazenadas neles sem afetar os dados do Campaign. [Saiba mais](../../installation/using/about-fda.md).
 * Os conectores CRM permitem trocar dados entre o Adobe Campaign e a solução CRM usando atividades dedicadas de workflow. [Saiba mais](../../platform/using/crm-connectors.md).
@@ -33,5 +33,5 @@ Você também pode integrar o Campaign com vários outros sistemas, como:
 
 >[!NOTE]
 >
->A disponibilidade desses módulos e sua configuração podem depender do tipo de implantação da sua instalação. Consulte [Campanha no local - matriz de recursos hospedados](../../installation/using/capability-matrix.md).
+>A disponibilidade desses módulos e sua configuração podem depender do tipo de implantação da sua instalação. Consulte [Campaign no local - matriz de recursos hospedados](../../installation/using/capability-matrix.md).
 
