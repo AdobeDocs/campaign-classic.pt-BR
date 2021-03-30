@@ -7,9 +7,9 @@ feature: Visão geral
 role: Profissional
 level: Iniciante
 translation-type: tm+mt
-source-git-commit: b77a56a97e499f60c092fae45c7809f7bfd9f2ea
+source-git-commit: 7b1e6dd00943e10dff693d78b3aa7cf2ad3e6727
 workflow-type: tm+mt
-source-wordcount: '423'
+source-wordcount: '418'
 ht-degree: 93%
 
 ---
@@ -62,7 +62,7 @@ Como um usuário hospedado [!DNL Gold Standard], você se beneficiará automatic
 
 ## Suporte e outros links úteis{#support}
 
-* [Ajuda e suporte](https://helpx.adobe.com/br/campaign/kb/ac-support.html)
+* [Ajuda e suporte](../../support.md)
 * [Versões do Painel de controle do Campaign](https://docs.adobe.com/content/help/pt-BR/control-panel/using/release-notes.html)
 * [Atualizações mais recentes da documentação](../../rn/using/documentation-updates.md)
 * [Recursos descontinuados e removidos](../../rn/using/deprecated-features.md)
