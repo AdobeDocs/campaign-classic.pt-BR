@@ -8,7 +8,7 @@ content-type: reference
 topic-tags: sending-messages-on-mobiles
 hidefromtoc: true
 translation-type: tm+mt
-source-git-commit: 584c11cc46d3a0cea3dcbbaef2700200fbdb8201
+source-git-commit: 6a856c95f21b52c66a9b7359133227394fae05a5
 workflow-type: tm+mt
 source-wordcount: '453'
 ht-degree: 2%
@@ -22,7 +22,7 @@ A partir da versão 20.2, os conectores herdados serão descontinuados. Este doc
 
 >[!CAUTION]
 >
->Essa migração não é obrigatória, mas é recomendada pela Adobe e garantirá que você esteja executando a versão mais recente compatível do software.
+>Essa migração não é obrigatória, mas é recomendada pelo Adobe e garantirá que você esteja executando a versão mais recente compatível do software.
 
 ## Sobre conectores SMS {#about-sms-connectors}
 
@@ -47,7 +47,7 @@ Os conectores SMS antigos estão usando o conector SMS Java que sobrecarrega o p
 >
 >Mesmo que você possa transpor os parâmetros, a configuração do conector **[!UICONTROL Extended Generic SMPP]** exige que você converse com seu provedor que fornecerá as informações necessárias para preencher o restante dos parâmetros. Para obter mais informações, consulte esta [página](../../delivery/using/sms-protocol.md).
 
-Primeiro, será necessário criar uma nova conta externa **[!UICONTROL Extended Generic SMPP]** e depois transpor alguns parâmetros. Você pode encontrar as etapas detalhadas nesta [página](../../delivery/using/sms-channel.md#creating-an-smpp-external-account).
+Primeiro, será necessário criar uma nova conta externa **[!UICONTROL Extended Generic SMPP]** e depois transpor alguns parâmetros. Você pode encontrar as etapas detalhadas nesta [página](../../delivery/using/sms-set-up.md#creating-an-smpp-external-account).
 
 Agora é necessário preencher os parâmetros da guia **[!UICONTROL Mobile]** da conta externa recém-criada **[!UICONTROL Extended Generic SMPP]**, dependendo do conector anterior.
 
