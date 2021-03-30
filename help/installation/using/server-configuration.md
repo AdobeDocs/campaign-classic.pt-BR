@@ -7,10 +7,10 @@ audience: installation
 content-type: reference
 topic-tags: prerequisites-and-recommendations-
 translation-type: tm+mt
-source-git-commit: d88815e36f7be1b010dcaeee51013a5da769b4a8
+source-git-commit: 564eaedb09282c85593f638617baded0a63494a0
 workflow-type: tm+mt
-source-wordcount: '1156'
-ht-degree: 42%
+source-wordcount: '1206'
+ht-degree: 39%
 
 ---
 
@@ -19,16 +19,16 @@ ht-degree: 42%
 
 ## Configuração de zonas de segurança
 
->[!IMPORTANT]
->
->A partir da build 8977, a Interface do Usuário de autoatendimento das zonas de segurança não está mais disponível.
->
->* Se você estiver hospedado no AWS, a adição de IP à lista de permissões deve ser realizada no Painel de controle do Campaign. Para obter mais informações, consulte a [documentação específica](https://experienceleague.adobe.com/docs/control-panel/using/instances-settings/ip-allow-listing-instance-access.html).
->* Se você não estiver hospedado no AWS, entre em contato com a equipe de suporte da Adobe para adicionar IPs à lista de permissões.
+A partir da build 8977, a Interface do Usuário de autoatendimento das zonas de segurança não está mais disponível. Se você não estiver hospedado no AWS, entre em contato com a equipe de suporte da Adobe para adicionar IPs à lista de permissões. Caso contrário, a adição de IP à lista de permissões deve ser executada no [Painel de controle](https://experienceleague.adobe.com/docs/control-panel/using/instances-settings/ip-allow-listing-instance-access.html).
 
+Para verificar se sua instância está hospedada no AWS, siga as etapas detalhadas em [this page](https://experienceleague.adobe.com/docs/control-panel/using/faq.html).
+
+>[!NOTE]
+> 
+>O Painel de controle do Campaign é acessível a todos os usuários administradores. As etapas para conceder acesso de Administrador a um usuário estão detalhadas [nesta seção](https://experienceleague.adobe.com/docs/control-panel/using/discover-control-panel/managing-permissions.html?lang=en#discover-control-panel).
 >
->
-Para verificar se sua instância está hospedada no AWS, siga as etapas detalhadas [nessa seção](https://experienceleague.adobe.com/docs/control-panel/using/faq.html).
+>Observe que sua instância deve ser hospedada no AWS e atualizada com a build mais recente do [Gold Standard](../../rn/using/gs-overview.md) ou a build mais recente do GA (21.1)](../../rn/using/latest-release.md). [ Saiba como verificar sua versão em [this section](../../platform/using/launching-adobe-campaign.md#getting-your-campaign-version).
+
 
 * Certifique-se de que seu proxy reverso não seja permitido na sub-rede. Se for o caso, o tráfego **all** será detectado como proveniente deste IP local, então será confiável.
 
