@@ -7,15 +7,15 @@ audience: platform
 content-type: reference
 topic-tags: connectors
 translation-type: tm+mt
-source-git-commit: 2838ced5f5d562914c0791e6a0b8f02dd61006b4
+source-git-commit: b05b8daad449aeb1f5226fdd76744776c6553b63
 workflow-type: tm+mt
-source-wordcount: '1531'
-ht-degree: 100%
+source-wordcount: '1530'
+ht-degree: 98%
 
 ---
 
 
-# Sincronização de dados entre o Campaign e o CRM {#data-synchronization}
+# Sincronizar dados entre o Campaign e o CRM {#data-synchronization}
 
 A sincronização de dados entre o Adobe Campaign e o CRM é realizada por meio de uma atividade dedicada de fluxo de trabalho: [conector CRM](../../workflow/using/crm-connector.md).
 
@@ -44,7 +44,7 @@ Selecione a conta externa que corresponde ao CRM que você deseja configurar a s
 
 A configuração dessa atividade depende do processo a ser executado. Várias configurações são detalhadas abaixo.
 
-## Importação do CRM {#importing-from-the-crm}
+## Importar do CRM {#importing-from-the-crm}
 
 Para importar dados através do CRM no Adobe Campaign, você precisa criar o seguinte tipo de workflow:
 
@@ -82,9 +82,9 @@ Para uma atividade de importação, as etapas de configuração da atividade do 
 
    Para obter mais informações, consulte [Gerenciamento de variáveis](#variable-management).
 
-### Gerenciamento de variáveis {#variable-management}
+### Gerenciar variáveis {#variable-management}
 
-Habilitar a opção **[!UICONTROL Automatic index]** permite coletar apenas objetos modificados desde a última importação.
+Ative a opção **[!UICONTROL Automatic index]** para coletar somente objetos modificados desde a última importação.
 
 ![](assets/crm_task_import_option.png)
 
@@ -226,7 +226,7 @@ As rejeições são coletadas com o código de erro e a mensagem relacionada, is
 
 A transição **[!UICONTROL Reject]** de saída permite que você acesse o schema de saída que contém as colunas específicas relevantes para mensagens e códigos de erro. Para o Salesforce.com, essa coluna é **errorSymbol** (símbolo de erro, diferente do código de erro), **errorMessage** (descrição do contexto de erro).
 
-## Importação de objetos excluídos no CRM {#importing-objects-deleted-in-the-crm}
+## Importar objetos excluídos no CRM {#importing-objects-deleted-in-the-crm}
 
 Para habilitar a configuração de um processo extenso de sincronização de dados, você pode importar objetos excluídos do CRM para o Adobe Campaign.
 
@@ -242,7 +242,7 @@ Para fazer isso, siga as etapas abaixo:
    >
    >O período de exclusão do elemento deve coincidir com as limitações específicas do CRM. Isso significa que para o Salesforce.com, por exemplo, elementos excluídos há mais de 30 dias não podem ser recuperados.
 
-## Exclusão de objetos no CRM {#deleting-objects-in-the-crm}
+## Excluir objetos no CRM {#deleting-objects-in-the-crm}
 
 Para excluir objetos no lado do CRM, você precisa especificar a chave primária dos elementos remotos a serem excluídos.
 
