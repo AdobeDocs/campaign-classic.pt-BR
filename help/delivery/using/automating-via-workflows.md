@@ -7,15 +7,15 @@ audience: delivery
 content-type: reference
 topic-tags: content-management
 translation-type: tm+mt
-source-git-commit: 3eecc16442a11849c12819cf83392f60c5b82a13
+source-git-commit: 9237e11edec4114b2bd0932e6128775f36aad27c
 workflow-type: tm+mt
-source-wordcount: '1186'
-ht-degree: 100%
+source-wordcount: '1185'
+ht-degree: 97%
 
 ---
 
 
-# Automatização via workflows{#automating-via-workflows}
+# Automatizar com workflows{#automating-via-workflows}
 
 ## Atividade de gestão de conteúdo {#content-management-activity}
 
@@ -78,7 +78,7 @@ A opção **Generate an output transition** permite adicionar uma transição de
 
 ## Exemplos {#examples}
 
-### Automatização da criação e do delivery de conteúdo {#automating-content-creation-and-delivery}
+### Automatize a criação e o delivery de conteúdo {#automating-content-creation-and-delivery}
 
 O exemplo a seguir automatiza a criação e o delivery de um bloco de conteúdo.
 
@@ -160,7 +160,7 @@ O conteúdo de delivery é preenchido por meio do evento de entrada.
 
 A última etapa para concluir a atividade é preparar e depois iniciar o delivery.
 
-### Criar conteúdo e publicar mais tarde {#creating-content-and-publishing-it-later}
+### Criar conteúdo para publicação posterior {#creating-content-and-publishing-it-later}
 
 Este exemplo cria um bloco de conteúdo e uma publicação de arquivo de lançamento após um atraso específico.
 
@@ -192,7 +192,7 @@ A atividade **Código JavaScript** recupera o nome completo de cada arquivo gera
 
 ![](assets/d_ncs_content_workflow9.png)
 
-### Criação do delivery e seu conteúdo {#creating-the-delivery-and-its-content}
+### Crie o delivery e seu conteúdo {#creating-the-delivery-and-its-content}
 
 Esse exemplo usa o mesmo conceito do primeiro exemplo, mas cria a ação de delivery na primeira etapa.
 
@@ -218,7 +218,7 @@ A ação final da atividade é preparar e iniciar o delivery.
 
 Se o seu conteúdo do delivery estiver disponível em um arquivo HTML localizado em servidores FTP ou SFTP, é possível carregá-los facilmente nos deliveries do Adobe Campaign. Consulte [esse exemplo](../../workflow/using/loading-delivery-content.md).
 
-### Importação de conteúdo do conector do Amazon Simple Storage Service (S3){#importing-content-from-amazon-simple-storage-service--s3--connector}
+### Importar conteúdo do conector do Amazon Simple Storage Service (S3) {#importing-content-from-amazon-simple-storage-service--s3--connector}
 
 Se o conteúdo do delivery estiver localizado nos buckets do Amazon Simple Storage Service (S3), é possível carregá-los facilmente nos deliveries do Adobe Campaign. Consulte [esse exemplo](../../workflow/using/loading-delivery-content.md).
 
