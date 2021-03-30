@@ -7,23 +7,23 @@ audience: platform
 content-type: reference
 topic-tags: profile-management
 translation-type: tm+mt
-source-git-commit: ba460d8347c987291681641a1be208027acf1d2f
+source-git-commit: b05b8daad449aeb1f5226fdd76744776c6553b63
 workflow-type: tm+mt
 source-wordcount: '705'
-ht-degree: 100%
+ht-degree: 97%
 
 ---
 
 
-# Atualização dos dados{#updating-data}
+# Atualização de dados{#updating-data}
 
 Os dados vinculados ao perfil de um destinatário podem ser atualizados manualmente ou automaticamente.
 
-## Configuração de uma atualização automática {#setting-up-an-automatic-update}
+## Configurar uma atualização automática {#setting-up-an-automatic-update}
 
 Uma atualização automática pode ser configurada por meio de um fluxo de trabalho. Para obter mais informações, consulte [esta seção](../../workflow/using/update-data.md).
 
-## Como executar uma atualização em massa {#performing-a-mass-update}
+## Execute uma atualização em massa {#performing-a-mass-update}
 
 Para executar atualizações manuais, clique com o botão direito do mouse nos recipients selecionados para usar o menu de atalho **[!UICONTROL Actions]** ou use o ícone **[!UICONTROL Actions]**.
 
@@ -79,7 +79,7 @@ Clique em **[!UICONTROL Compute]** para exibir o resultado da sua escolha.
 
 Verifique as colunas **[!UICONTROL Result]** das duas seções da janela e clique em **[!UICONTROL Finish]** para executar a mesclagem.
 
-## Exportação de dados {#exporting-data}
+## Exportar dados {#exporting-data}
 
 O conteúdo de uma lista pode ser exportado. Para configurar e executar a exportação:
 
@@ -94,7 +94,7 @@ O conteúdo de uma lista pode ser exportado. Para configurar e executar a export
 
    Para obter mais informações sobre como configurar o assistente de exportação, consulte [esta seção](../../platform/using/executing-export-jobs.md).
 
-## Como assinar um serviço {#subscribing-to-a-service}
+## Assinar um serviço {#subscribing-to-a-service}
 
 Na maioria dos casos, os destinatários assinam um boletim informativo por meio de uma página dedicada, conforme explicado [nesta seção](../../delivery/using/managing-subscriptions.md). No entanto, os perfis dos destinatários filtrados podem assinar manualmente um serviço (boletim informativo ou Serviço Viral). Para fazer isso:
 
