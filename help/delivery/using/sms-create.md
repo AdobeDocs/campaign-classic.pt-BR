@@ -7,15 +7,15 @@ audience: delivery
 content-type: reference
 topic-tags: sending-messages-on-mobiles
 translation-type: tm+mt
-source-git-commit: 64f5b108173806aff53f7240e8c9d499cc332d72
+source-git-commit: 5a084ebe5295d19de24cf92c721d4692f0f5deb8
 workflow-type: tm+mt
-source-wordcount: '434'
-ht-degree: 82%
+source-wordcount: '432'
+ht-degree: 84%
 
 ---
 
 
-# Criar e enviar um delivery de SMS {#creating-a-sms-delivery}
+# Criar um delivery de SMS {#creating-a-sms-delivery}
 
 ## Selecione o canal de delivery {#selecting-the-delivery-channel}
 
