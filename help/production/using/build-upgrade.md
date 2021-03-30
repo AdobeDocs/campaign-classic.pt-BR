@@ -7,9 +7,9 @@ audience: production
 content-type: reference
 topic-tags: updating-adobe-campaign
 translation-type: tm+mt
-source-git-commit: b77a56a97e499f60c092fae45c7809f7bfd9f2ea
+source-git-commit: 7b1e6dd00943e10dff693d78b3aa7cf2ad3e6727
 workflow-type: tm+mt
-source-wordcount: '2360'
+source-wordcount: '2355'
 ht-degree: 4%
 
 ---
@@ -414,5 +414,5 @@ Estas são as etapas para executar uma mesclagem complexa:
 
 * [Perguntas frequentes de atualização de build](../../platform/using/faq-build-upgrade.md)
 * [Notas de versão do Campaign Classic ](../../rn/using/rn-overview.md)
-* [Opções de ajuda e suporte para o Campaign Classic](https://helpx.adobe.com/br/campaign/kb/ac-support.html)
+* [Opções de ajuda e suporte para o Campaign Classic](../../support.md)
 * [[!DNL Gold Standard] programa](../../rn/using/gs-overview.md)
