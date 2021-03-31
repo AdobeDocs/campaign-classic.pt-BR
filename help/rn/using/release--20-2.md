@@ -7,10 +7,10 @@ feature: Visão geral
 role: Profissional
 level: Iniciante
 translation-type: tm+mt
-source-git-commit: 1f718e26aeaa5ed5a58dfd0e3bc29d2dd9e995ee
+source-git-commit: a25f9464a762defa5d9a3b45bb60a387c65b7c97
 workflow-type: tm+mt
-source-wordcount: '2562'
-ht-degree: 97%
+source-wordcount: '2833'
+ht-degree: 89%
 
 ---
 
@@ -19,7 +19,26 @@ ht-degree: 97%
 
 ![](assets/do-not-localize/cp-icon.png) **Nova versão de outubro do Painel de controle do Campaign** com configuração de domínio usando CNAMEs e novos recursos de monitoramento de banco de dados. [Saiba mais](https://docs.adobe.com/content/help/pt-BR/control-panel/using/release-notes.html).
 
-## ![](assets/do-not-localize/green_2.png) Versão 20.2.4 - Build 9187 {#release-20-2-4-build-9187}
+## ![](assets/do-not-localize/green_2.png) Versão 20.2.5 - Compilação 9188 {#release-20-2-5-build-9188}
+
+_31 de março de 2020_
+
+**Aprimoramentos**
+
+* Foi feito um aprimoramento para evitar falhas em chamadas soap inválidas. Isso pode fazer com que a instância pare de funcionar ao tentar executar consultas complexas específicas. (NEO-28796, NEO-30553)
+* Correção de uma regressão que impedia o envio de deliveries de SMS com TLS devido à verificação do nome de host. (NEO-29581)
+* Correção de um problema que impedia que links de rastreamento assinados funcionassem em alguns clientes de email. (NEO-28414, NEO-29615)
+* Correção de uma sequência de ID de rastreamento ao usar tags de rastreamento do webApp que poderia causar conflitos com IDs duplicadas. (NEO-27931)
+* Correção de um problema que fazia com que workflows em execução fossem interrompidos pela reinicialização diária do wfserver. (NEO-30047)
+* Correção de um problema de segurança usando chamadas de API feitas por usuários não administradores ao tentar sincronizar modelos do Adobe Experience Manager. (NEO-32389, NEO-23487)
+* Correção de um problema que resultava em falha do console ao fechar uma caixa de diálogo de delivery em um delivery criado com de um template. (NEO-31547)
+* Correção de um problema que ocorria ao criar e salvar um delivery dentro da guia **Targeting &amp; Workflow** de uma campanha: a pré-visualização falharia com o seguinte erro. (NEO29440)
+* Correção de um problema em que o Tomcat 8.5 enviava respostas inválidas que causavam erros nos logs de mensagens transacionais. (NEO-30858)
+* Correção de um problema de regressão que causava corrupção da memória no gerenciamento de encadeamento externo e afetava o desempenho.
+* Correção de um problema que poderia causar falha no workflow Faturamento ao usar um target mapping personalizado. A chave primária do esquema personalizado é armazenada na coluna &quot;sourceId&quot; que permitia apenas valores inteiros. Agora permite números inteiros e valores de sequências. (NEO-25914, NEO-28146)
+* Correção de uma regressão que impedia o uso de alguns componentes do console, como o seletor de datas e o gerenciamento de imagens nos deliveries. (NEO-31453)
+
+## ![](assets/do-not-localize/red_2.png) Versão 20.2.4 - Build 9187 {#release-20-2-4-build-9187}
 
 _22 de dezembro de 2020_
 
@@ -28,7 +47,6 @@ _22 de dezembro de 2020_
 > * Esta versão vem com um novo protocolo de conexão: se você estiver se conectando ao Campaign pelo Adobe Identity Service (IMS), a atualização é obrigatória para o servidor do Campaign e o console do cliente poderem se conectar ao Campaign depois de **30 de junho de 2021**.
 > * Esta versão vem com uma [correção de segurança](https://helpx.adobe.com/security/products/campaign/apsb21-04.html): a atualização é obrigatória para reforçar a segurança do ambiente.
 > * Se estiver usando a integração Experience Cloud Triggers por meio da autenticação oAuth, será necessário mover para o Adobe I/O conforme descrito [nesta página](../../integrations/using/configuring-adobe-io.md). O modo de autenticação oAuth herdado com o Campaign será desativado em **30 de novembro de 2021**.
-
 
 
 **Aprimoramentos**
