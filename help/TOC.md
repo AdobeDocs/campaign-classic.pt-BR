@@ -9,9 +9,9 @@ solution: Campaign Classic
 sub-product: adobe campaign classic
 type: Documentação
 translation-type: tm+mt
-source-git-commit: 9237e11edec4114b2bd0932e6128775f36aad27c
+source-git-commit: 37802e52f1d1d38d9c3d59c439f23114a594bfef
 workflow-type: tm+mt
-source-wordcount: '2462'
+source-wordcount: '2481'
 ht-degree: 55%
 
 ---
@@ -113,6 +113,7 @@ ht-degree: 55%
       + Conectores CRM{#crm-connectors}
          + [Introdução aos Conectores CRM](platform/using/crm-connectors.md)
          + [Conecte-se com o Microsoft Dynamics 365](platform/using/crm-ms-dynamics.md)
+         + [Conecte-se com o Salesforce.com](platform/using/crm-sfdc.md)
          + [Sincronizar dados com o CRM](platform/using/crm-data-sync.md)
       + [Conector de dados do Adobe Analytics](platform/using/adobe-analytics-data-connector.md)
    + [Opções de ajuda e suporte](support.md)
@@ -211,6 +212,7 @@ ht-degree: 55%
       + [Solução de problemas de delivery](delivery/using/delivery-troubleshooting.md)
       + [Status de delivery](delivery/using/delivery-statuses.md)
       + [Entender as falhas do delivery](delivery/using/understanding-delivery-failures.md)
+      + [Atualizar qualificação de devolução após uma interrupção de ISP](delivery/using/update-bounce-qualification.md)
       + [Entender o gerenciamento de quarentenas](delivery/using/understanding-quarantine-management.md)
    + Rastrear mensagens {#tracking-messages}
       + [Sobre o rastreamento de mensagens](delivery/using/about-message-tracking.md)
@@ -398,7 +400,7 @@ ht-degree: 55%
       + [Criar um fluxo de trabalho](workflow/using/building-a-workflow.md)
       + [Dados do target](workflow/using/targeting-data.md)
       + [Usar dados de fluxo de trabalho](workflow/using/how-to-use-workflow-data.md)
-      + [Práticas recomendadas para workflows](workflow/using/workflow-best-practices.md)
+      + [Melhores práticas para fluxo de trabalho](workflow/using/workflow-best-practices.md)
    + Executar um workflow {#executing-a-workflow}
       + [Iniciar um fluxo de trabalho](workflow/using/starting-a-workflow.md)
       + [Ciclo de vida do workflow](workflow/using/workflow-life-cycle.md)
@@ -658,6 +660,7 @@ ht-degree: 55%
       + [Configurações do servidor do Campaign](installation/using/configuring-campaign-server.md)
       + [Definir zonas de segurança](installation/using/security-zones.md)
       + [Configurações técnicas de email](installation/using/email-deliverability.md)
+      + [Uso de servidores MX com o Campaign](installation/using/using-mx-servers.md)
       + [Configurar email Cco](installation/using/email-archiving.md)
       + [Configurar o SpamAssassin](installation/using/configuring-spamassassin.md)
    + Conecte-se ao Campaign{#connect-to-campaign}
@@ -672,6 +675,7 @@ ht-degree: 55%
       + [Configurar contas externas](installation/using/external-accounts.md)
       + Configurar o Federated Data Access{#configure-fda}
          + [Introdução ao Federated Data Access](installation/using/about-fda.md)
+         + [Práticas recomendadas e limitações](installation/using/fda-best-practices.md)
          + Diretrizes de configuração {#config-databases}
             + [Etapas de configuração](installation/using/configure-fda.md)
             + [Configurar Snowflake](installation/using/configure-fda-snowflake.md)
