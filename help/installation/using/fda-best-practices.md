@@ -6,14 +6,14 @@ description: Saiba mais sobre as práticas recomendadas e limitações ao trabal
 audience: platform
 content-type: reference
 topic-tags: connectors
+exl-id: f3980859-2837-416b-a0ef-2b369d2d50bd
 translation-type: tm+mt
-source-git-commit: 0a92ebd6c9400f8caf43da8f633c7755a3fb77ce
+source-git-commit: 3b5a6e6f03d9cb26ed372c3df069cbada36756a2
 workflow-type: tm+mt
 source-wordcount: '446'
 ht-degree: 37%
 
 ---
-
 
 # Práticas recomendadas e limitações
 
@@ -60,4 +60,3 @@ Evite o máximo possível as operações que precisam usar o banco de dados tant
 Se você quiser realizar a personalização de deliveries usando dados do banco de dados externo, colete os dados para usar em um workflow para torná-lo disponível em uma tabela temporária. Em seguida, use os dados da tabela temporária para personalizar seu delivery.
 
 A opção FDA está sujeita às limitações do sistema de banco de dados externo que você usa.
-
