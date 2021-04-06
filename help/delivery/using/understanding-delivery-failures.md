@@ -6,14 +6,14 @@ description: Entenda as falhas de delivery
 audience: delivery
 content-type: reference
 topic-tags: monitoring-deliveries
+exl-id: 86c7169a-2c71-4c43-8a1a-f39871b29856
 translation-type: tm+mt
-source-git-commit: d1b38acc5209a5c96ab7a35fe9640159141b110f
+source-git-commit: b7a3046600845781a7393a9d1e9659550d9bfcdd
 workflow-type: tm+mt
-source-wordcount: '2580'
-ht-degree: 99%
+source-wordcount: '2614'
+ht-degree: 98%
 
 ---
-
 
 # Noções básicas sobre falhas de delivery{#understanding-delivery-failures}
 
@@ -263,6 +263,10 @@ Os emails de devolução podem ter o seguinte status de qualificação:
 * **[!UICONTROL Ignore]**: o e-mail de rejeição é ignorado pelo MTA do Campaign, o que significa que essa rejeição nunca fará com que o endereço do destinatário seja colocado em quarentena. Ele não será usado pelo workflow **Atualizar para entrega** e não será enviado para instâncias do cliente.
 
 ![](assets/deliverability_qualif_status.png)
+
+>[!NOTE]
+>
+>No caso de uma interrupção de um ISP, os emails enviados pelo Campaign serão marcados incorretamente como rejeições. Para corrigir isso, você precisa atualizar a qualificação de devolução. Para obter mais informações, consulte [esta seção](../../delivery/using/update-bounce-qualification.md).
 
 ### Regras de gerenciamento de email {#email-management-rules}
 
