@@ -1,19 +1,19 @@
 ---
 solution: Campaign Classic
 product: campaign
-title: Deliverability de email
-description: Deliverability de email
+title: Configuração técnica de email
+description: Saiba como configurar o Campaign para controlar a saída de suas instâncias ao entregar emails.
 audience: installation
 content-type: reference
 topic-tags: additional-configurations
+exl-id: 515adad2-6129-450a-bb9e-fc80127835af
 translation-type: tm+mt
-source-git-commit: d1b38acc5209a5c96ab7a35fe9640159141b110f
+source-git-commit: c62caeacd374b31f597f3c4b23318b8705fbda61
 workflow-type: tm+mt
-source-wordcount: '2993'
-ht-degree: 21%
+source-wordcount: '3022'
+ht-degree: 20%
 
 ---
-
 
 # Configurações técnicas de email{#email-deliverability}
 
@@ -27,7 +27,7 @@ A seção a seguir fornece uma visão geral da configuração necessária para c
 
 Para obter mais informações sobre os conceitos e as práticas recomendadas relacionadas ao delivery com o Adobe Campaign, consulte esta [seção](../../delivery/using/about-deliverability.md).
 
-Para aprofundar o assunto, incluindo todas as recomendações técnicas relacionadas ao envio e ao recebimento eficientes de emails por uma plataforma Adobe, consulte o [Adobe Deliverability Best Practice Guide](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/introduction.html).
+Para aprofundar o assunto, incluindo todas as recomendações técnicas relacionadas ao envio e ao recebimento eficientes de emails por uma plataforma Adobe, consulte o [Adobe Deliverability Best Practice Guide](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/introduction.html?lang=pt-BR).
 
 ## Princípio operacional {#operating-principle}
 
@@ -135,9 +135,11 @@ Por padrão, o servidor de estatísticas escuta na porta 777. Essa porta pode se
 >
 >Para instalações hospedadas ou híbridas, se você atualizou para o [MTA aprimorado](../../delivery/using/sending-with-enhanced-mta.md), as regras de taxa de trasferência do delivery **[!UICONTROL MX management]** não são mais usadas. O MTA aprimorado usa regras de MX próprias que permitem personalizar a taxa de transferência por domínio com base na sua própria reputação histórica de email e no feedback em tempo real proveniente dos domínios em que você está enviando emails.
 
-As seções abaixo se aplicam apenas a instalações locais e instalações hospedadas/híbridas usando o MTA herdado do Campaign.
-
 ### Sobre as regras MX {#about-mx-rules}
+
+>[!NOTE]
+>
+>Esta seção e as seções abaixo se aplicam apenas a instalações locais e instalações hospedadas/híbridas usando o MTA herdado do Campaign.
 
 As regras MX (Mail eXchanger) são as regras que gerenciam a comunicação entre um servidor de envio e um servidor de recebimento.
 
@@ -301,6 +303,10 @@ Os seguintes parâmetros disponíveis para cada regra são:
 Exemplo de configuração:
 
 ![](assets/s_ncs_install_mx_mgt_rule_details.png)
+
+>[!NOTE]
+>
+>Para obter mais informações sobre como usar servidores MX com Adobe Campaign, consulte [esta seção](../../installation/using/using-mx-servers.md).
 
 ### Gerenciamento de formatos de email {#managing-email-formats}
 
