@@ -6,11 +6,11 @@ description: Criação de uma conexão compartilhada
 audience: message-center
 content-type: reference
 topic-tags: instance-configuration
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: d88815e36f7be1b010dcaeee51013a5da769b4a8
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '999'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
