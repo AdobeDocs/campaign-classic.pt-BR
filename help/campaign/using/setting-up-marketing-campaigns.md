@@ -6,11 +6,11 @@ description: Saiba como criar e executar campanhas de marketing
 audience: campaign
 content-type: reference
 topic-tags: orchestrate-campaigns
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 87028ec81a8cae6793d45d7c840511b59cd0287c
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1253'
-ht-degree: 91%
+ht-degree: 100%
 
 ---
 
@@ -25,9 +25,9 @@ Para criar uma campanha de marketing:
 
 1. Crie uma campanha: descubra campanhas e suas características: etiqueta, tipo, datas de início e término, orçamento, recursos associados, gerentes e participantes. [Saiba mais](#creating-a-campaign).
 
-1. Defina a população do target: crie um workflow com queries de direcionamento. [Saiba mais](../../campaign/using/marketing-campaign-deliveries.md#selecting-the-target-population).
+1. Defina a população do target: crie um fluxo de trabalho com consultas de direcionamento. [Saiba mais](../../campaign/using/marketing-campaign-deliveries.md#selecting-the-target-population).
 
-1. Crie deliveries: selecione os canais e defina o conteúdo a ser enviado. [Saiba mais](../../campaign/using/marketing-campaign-deliveries.md#creating-deliveries).
+1. Crie deliveries: selecione os canais e defina o conteúdo que será enviado. [Saiba mais](../../campaign/using/marketing-campaign-deliveries.md#creating-deliveries).
 
 1. Aprove deliveries. [Saiba mais](../../campaign/using/marketing-campaign-approval.md).
 
@@ -35,7 +35,7 @@ Para criar uma campanha de marketing:
 
 1. Planeje campanhas e custos associados. [Saiba mais](../../campaign/using/providers--stocks-and-budgets.md#creating-service-providers-and-their-cost-structures).
 
-Quando essas etapas forem concluídas, será possível iniciar os deliveries (consulte [esta seção](../../campaign/using/marketing-campaign-deliveries.md#starting-a-delivery)), verificar os dados, processos e informações relacionados aos deliveries e, se necessário, gerenciar os documentos associados (consulte [esta seção](../../campaign/using/marketing-campaign-deliveries.md#managing-associated-documents)). Também é possível rastrear a execução das fases de processamento das campanhas e remessas (consulte [esta seção](../../campaign/using/marketing-campaign-monitoring.md)).
+Quando essas etapas forem concluídas, você poderá iniciar os deliveries (consulte [esta seção](../../campaign/using/marketing-campaign-deliveries.md#starting-a-delivery)), verifique os dados, os processos e as informações relativos aos deliveries e, se necessário, gerencie os documentos associados (consulte [esta seção](../../campaign/using/marketing-campaign-deliveries.md#managing-associated-documents)). Você também pode acompanhar a execução das fases de processamento de campanhas e deliveries (consulte [esta seção](../../campaign/using/marketing-campaign-monitoring.md)).
 
 ## Criar plano e hierarquia de programa {#creating-plan-and-program-hierarchy}
 
@@ -61,7 +61,7 @@ Para configurar a hierarquia de pastas para planos de marketing e programas:
 
 ### Adicionar uma campanha {#adding-a-campaign}
 
-Você pode criar uma campanha através da lista de campanhas. Para exibir essa visualização, selecione o menu **[!UICONTROL Campaigns]** no painel **[!UICONTROL Campaigns]**.
+Você pode criar uma campanha por meio da lista de campanhas. Para exibir essa visualização, selecione o menu **[!UICONTROL Campaigns]** no painel **[!UICONTROL Campaigns]**.
 
 ![](assets/s_ncs_user_add_an_op_from_list.png)
 
@@ -105,9 +105,9 @@ Uma campanha periódica é uma campanha criada automaticamente de acordo com o a
 
 ### Criar uma campanha recorrente {#creating-a-recurring-campaign}
 
-As campanhas recorrentes são criadas a partir de um template específico que define o template de workflow a ser executado e o agendamento de execução.
+As campanhas recorrentes são criadas com base em um modelo específico que define o modelo do fluxo de trabalho que será executado e a programação de execução.
 
-#### Crie um modelo para campanhas recorrentes {#creating-the-campaign-template}
+#### Criar um modelo para campanhas recorrentes {#creating-the-campaign-template}
 
 1. Crie um template de campanha **[!UICONTROL Recurring]**.
 
@@ -227,4 +227,4 @@ Este vídeo mostra como criar um plano de marketing, programas e campanhas.
 
 >[!VIDEO](https://video.tv.adobe.com/v/35132?quality=12)
 
-Vídeos extras sobre procedimentos do Campaign estão disponíveis [aqui](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html?lang=pt-BR).
+Vídeos explicativos extras sobre o Campaign estão disponíveis [aqui](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html?lang=pt-BR).
