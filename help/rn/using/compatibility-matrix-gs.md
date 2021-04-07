@@ -1,19 +1,19 @@
 ---
 solution: Campaign Classic
 product: campaign
-title: Matriz de compatibilidade para Campaign [!DNL Gold Standard]
+title: Matriz de compatibilidade do Campaign [!DNL Gold Standard]
 description: Matriz de compatibilidade do Campaign Classic para  [!DNL Gold Standard] release
 feature: Visão geral
-role: Profissional
-level: Iniciante
+role: Business Practitioner
+level: Beginner
+exl-id: 5c0ccaf6-7f82-4e4b-9247-261dbd0f127c
 translation-type: tm+mt
-source-git-commit: b77a56a97e499f60c092fae45c7809f7bfd9f2ea
+source-git-commit: 6854d06f8dc445b56ddfde7777f02916a60f2b63
 workflow-type: tm+mt
-source-wordcount: '512'
+source-wordcount: '509'
 ht-degree: 98%
 
 ---
-
 
 # [!DNL Gold Standard] Matriz de compatibilidade{#compatibility-matrix-gs}
 
@@ -178,7 +178,7 @@ O Adobe Campaign Classic é compatível com todos os sistemas e ferramentas list
 <p>API versão 15</p>
 </td>
 </tr>
-<tr><td>API Oracle On Demand</td>
+<tr><td>API Oracle por demanda</td>
 <td>
 <p>API de serviços da Web v1.0</p>
 </td>
@@ -324,4 +324,4 @@ O Internet Explorer 11 é compatível.
 * [Notas de versão do Campaign Classic](../../rn/using/latest-release.md)
 * [Guia de instalação](../../installation/using/general-architecture.md)
 * [Recursos e sistemas obsoletos](../../rn/using/deprecated-features.md)
-* [Criar procedimento de atualização](https://helpx.adobe.com/br/campaign/kb/acc-build-upgrade.html)
+* [Criar procedimento de atualização](https://experienceleague.adobe.com/docs/campaign-classic/using/monitoring-campaign-classic/updating-adobe-campaign/build-upgrade.html?lang=pt-BR#monitoring-campaign-classic)
