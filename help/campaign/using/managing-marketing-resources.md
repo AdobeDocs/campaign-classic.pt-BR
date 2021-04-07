@@ -6,11 +6,11 @@ description: Gerenciar recursos de marketing
 audience: campaign
 content-type: reference
 topic-tags: tasks--resources-and-budgets
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 278dec636373b5ccd3b631bd29607ebe894d53c3
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1383'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -23,7 +23,7 @@ Para cada recurso de marketing gerenciado pelo Adobe Campaign, é possível acom
 
 ## Adicionar um recurso de marketing {#adding-a-marketing-resource}
 
-Os recursos de marketing são acessados por meio da guia **[!UICONTROL Campaigns]** .
+Os recursos de marketing são acessados pela guia **[!UICONTROL Campaigns]**.
 
 Para adicionar um recurso, clique no botão **[!UICONTROL Create]**.
 
