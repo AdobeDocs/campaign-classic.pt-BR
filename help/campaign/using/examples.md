@@ -6,11 +6,11 @@ description: Exemplos
 audience: campaign
 content-type: reference
 topic-tags: distributed-marketing
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 278dec636373b5ccd3b631bd29607ebe894d53c3
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1296'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -161,7 +161,7 @@ Depois que as verificações foram aprovadas, a campanha poderá iniciar automat
 
 #### Publicar a campanha {#publishing-the-campaign}
 
-Agora você pode adicionar um **pacote de campanha** da guia **[!UICONTROL Campaigns]**.
+Agora você pode adicionar um **pacote de campanha** na guia **[!UICONTROL Campaigns]**.
 
 1. Escolha a **[!UICONTROL Reference campaign]**. Na guia **[!UICONTROL Edit]** do pacote, é possível selecionar o **[!UICONTROL Approval mode]** para usar na campanha:
 
