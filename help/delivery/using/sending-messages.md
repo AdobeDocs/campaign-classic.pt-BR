@@ -6,18 +6,18 @@ description: Saiba como confirmar o delivery de um email e descubra as especific
 audience: delivery
 content-type: reference
 topic-tags: sending-emails
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 4a56feac374506bb33ae6770aa247a197f1669fb
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '215'
-ht-degree: 90%
+ht-degree: 100%
 
 ---
 
 
 # Etapas principais para enviar um email {#confirming-email-delivery}
 
-Depois que o email for criado e configurado, você poderá enviá-lo ao público-alvo principal. Esta seção apresenta as principais etapas para verificar e confirmar o delivery de um email.
+Depois que o email for criado e configurado, você poderá enviá-lo ao público-alvo principal. Esta seção apresenta as etapas principais para verificar e confirmar o delivery de um email.
 
 1. Defina todas as configurações específicas para o delivery de email. Para obter mais informações, consulte [Parâmetros de email](../../delivery/using/email-parameters.md).
 1. Quando o email está pronto, antes de enviá-lo ao público-alvo principal, é recomendável detectar possíveis erros enviando provas. Para obter mais informações, consulte [Envio de uma prova](../../delivery/using/steps-validating-the-delivery.md#sending-a-proof).
