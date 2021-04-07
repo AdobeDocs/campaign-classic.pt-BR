@@ -6,28 +6,28 @@ description: Saiba mais sobre documentos de campanha de marketing e delivery out
 audience: campaign
 content-type: reference
 topic-tags: orchestrate-campaigns
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 278dec636373b5ccd3b631bd29607ebe894d53c3
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '755'
-ht-degree: 67%
+ht-degree: 100%
 
 ---
 
 
 # Gerenciar documentos associados {#managing-associated-documents}
 
-Você pode associar vários documentos a uma campanha: relatórios, fotos, páginas da Web, diagramas, etc. Esses documentos podem estar em qualquer formato (Microsoft Word, PowerPoint, PNG, JPG, Acrobat PDF etc.).
+Você pode associar vários documentos a uma campanha: relatórios, fotos, páginas da Web, diagramas etc. Esses documentos podem estar em qualquer formato (Microsoft Word, PowerPoint, PNG, JPG, Acrobat PDF etc.).
 
 >[!IMPORTANT]
 >
->Esse recurso é reservado para ativos e documentos pequenos.
+>Esse recurso é reservado para assets e documentos pequenos.
 
-Em uma campanha, você também pode consultar outros itens, como cupons promocionais, ofertas especiais relacionadas a uma marca ou loja específica, etc. Quando esses elementos são incluídos em um outline, eles podem ser associados a um delivery de mala direta. Consulte [Associar e estruturar recursos vinculados por meio de um delivery outline](#associating-and-structuring-resources-linked-via-a-delivery-outline).
+Em uma campanha, você também pode consultar outros itens, como cupons promocionais, ofertas especiais relacionadas a uma marca ou loja específica etc. Quando esses elementos são incluídos em um outline, eles podem ser associados a um delivery de correspondência direta. Consulte [Associar e estruturar recursos vinculados por meio de um delivery outline](#associating-and-structuring-resources-linked-via-a-delivery-outline).
 
 >[!NOTE]
 >
->Se você estiver usando o módulo Gerenciamento de recursos de marketing do Campaign, também poderá gerenciar uma biblioteca de recursos de marketing que estão disponíveis para vários usuários para trabalho colaborativo. [Saiba mais](../../campaign/using/managing-marketing-resources.md).
+>Se estiver usando o módulo de Gerenciamento de recurso de marketing do Campaign, você também poderá gerenciar uma biblioteca de recursos de marketing que estão disponíveis para vários usuários para trabalho colaborativo. [Saiba mais](../../campaign/using/managing-marketing-resources.md).
 
 ## Adicionar documentos {#adding-documents}
 
@@ -60,15 +60,15 @@ Eles também podem ser editados e modificados nessa visualização.
 
 >[!NOTE]
 >
->Delivery outlines são usados exclusivamente no contexto de campanhas de mala direta.
+>Delivery outlines são usados exclusivamente no contexto de campanhas de correspondência direta.
 
 Um delivery outline indica um conjunto estruturado de elementos (documentos, lojas, cupons promocionais etc.) criado pela empresa e para uma campanha específica.
 
-Esses elementos são agrupados em delivery outlines e cada delivery outline será associado a um delivery; ele será referenciado no arquivo de extração enviado ao **service provider** para ser anexado ao delivery. Por exemplo, você pode criar um delivery outline que se refere a uma unidade e aos folhetos de marketing que ela usa.
+Esses elementos são agrupados em delivery outlines, e cada delivery outline será associado a um delivery; ele será referenciado no arquivo de extração enviado para o **provedor de serviço** para ser anexado ao delivery. Por exemplo, você pode criar um delivery outline que se refere a uma unidade e aos folhetos de marketing que ela usa.
 
 Para uma campanha, delivery outlines permitem que você estruture elementos externos a serem associados ao delivery de acordo com determinados critérios: a unidade relacionada, a oferta promocional concedida, o convite para um evento local etc.
 
-### Criar uma estrutura de tópicos {#creating-an-outline}
+### Criar um outline {#creating-an-outline}
 
 Para criar um outline, clique na guia **[!UICONTROL Delivery outlines]** da campanha relacionada e depois clique na subguia **[!UICONTROL Edit > Documents]**.
 
@@ -76,7 +76,7 @@ Para criar um outline, clique na guia **[!UICONTROL Delivery outlines]** da camp
 >
 >Se essa guia não estiver presente, significa que esse recurso não está disponível para esta campanha. Consulte a configuração do template de campanha.
 >   
->Para saber mais sobre os templates de , consulte [esta seção](../../campaign/using/marketing-campaign-templates.md#campaign-templates).
+>Para saber mais sobre modelos, consulte [esta seção](../../campaign/using/marketing-campaign-templates.md#campaign-templates).
 
 ![](assets/s_ncs_user_op_composition_link.png)
 
@@ -98,7 +98,7 @@ Uma estrutura pode conter itens e campos de personalização, recursos e ofertas
 
    ![](assets/s_ncs_user_op_add_composition_field_button.png)
 
-* Os recursos são de marketing, gerados no painel de recursos de marketing acessado por meio do link **[!UICONTROL Resources]** da guia **[!UICONTROL Campaigns]**.
+* São recursos de marketing gerados no painel de recursos de marketing acessado por meio do link **[!UICONTROL Resources]** da guia **[!UICONTROL Campaigns]**.
 
    ![](assets/s_ncs_user_mkg_resource_ovv.png)
 
@@ -106,7 +106,7 @@ Uma estrutura pode conter itens e campos de personalização, recursos e ofertas
    >
    >Para obter mais informações sobre recursos de marketing, consulte [esta seção](../../campaign/using/managing-marketing-resources.md).
 
-### Selecione uma estrutura {#selecting-an-outline}
+### Selecionar um outline {#selecting-an-outline}
 
 Para cada delivery, você pode selecionar o outline para associar na seção reservada para o outline da extração, como no exemplo a seguir:
 
