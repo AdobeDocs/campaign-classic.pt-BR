@@ -1,16 +1,16 @@
 ---
 solution: Campaign Classic
 product: campaign
-title: Detecção de URLs de rastreamento
+title: Detectar URLs de rastreamento
 description: Saiba mais sobre o padrão recomendado para rastrear URLs
 audience: delivery
 content-type: reference
 topic-tags: tracking-messages
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 768fe62db4efd1217c22973c7e5dc31097d67bae
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '297'
-ht-degree: 88%
+ht-degree: 100%
 
 ---
 
@@ -37,11 +37,11 @@ Após o processamento das instruções `<%@`, o URL a ser rastreado tem a seguin
 
 ## Padrão não seguro
 
-Quando adicionar links personalizados ao seu conteúdo, evite sempre personalização na parte do hostname do URL para evitar possíveis falhas de segurança. Saiba mais [nesta página](../../installation/using/privacy.md#url-personalization).
+Ao adicionar links personalizados ao seu conteúdo, sempre evite qualquer personalização na parte do nome do host do URL para evitar possíveis brechas de segurança. Saiba mais [nesta página](../../installation/using/privacy.md#url-personalization).
 
 Por exemplo, a sintaxe `<a href="http://<%=myURL%>">` não é **segura** e deve ser evitada.
 
-* O uso dessa sintaxe pode levar a problemas de segurança se o link gerado pelo Adobe Campaign contiver um ou mais parâmetros.
+* O uso dessa sintaxe poderá causar problemas de segurança se o link gerado pelo Adobe Campaign contiver um ou mais parâmetros.
 * O Tidy pode corrigir incorretamente alguns links, o que pode acontecer aleatoriamente. O sintoma típico é um item de HTML que está visível nas provas de email, mas não na pré-visualização.
 * Utilizar o recurso de escape no URL é problemático. Alguns caracteres no URL podem causar problemas.
 * Não é possível ter um parâmetro com o nome ID em conflito com o parâmetro no URL de redirecionamento.
