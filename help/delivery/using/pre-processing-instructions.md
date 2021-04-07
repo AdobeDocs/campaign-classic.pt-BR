@@ -6,24 +6,24 @@ description: Saiba mais sobre as instruções de pré-processamento a serem usad
 audience: delivery
 content-type: reference
 topic-tags: tracking-messages
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 8aab4bc23d688aa225cfc636936cf2835840e410
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '642'
-ht-degree: 79%
+ht-degree: 100%
 
 ---
 
 
 # Instruções de pré-processamento {#pre-processing-instructions}
 
-Você pode usar uma sintaxe específica no conteúdo do delivery para adicionar instruções e criar scripts para o URL do email rastreado. As instruções &lt;%@ não são JavaScript: essa sintaxe é específica para o Adobe Campaign.
+Você pode usar uma sintaxe específica no conteúdo do delivery para adicionar instruções e criar scripts para o URL do email rastreado. As instruções &lt;%@ não estão em JavaScript: essa sintaxe é específica do Adobe Campaign.
 
 Elas só são aplicáveis no contexto do conteúdo do delivery. É a única maneira de criar o script do URL de um email e ainda rastreá-lo (além de parâmetros de URL). Elas podem ser vistas como uma cópia/colagem automática aplicada durante a análise do delivery antes de detectar os links a serem rastreados.
 
 Há três tipos de instruções:
 
-* **[!DNL include]**: principalmente para fatorar alguns códigos em opções, blocos de personalização, arquivos externos ou páginas. [Saiba mais](#include)
+* **[!DNL include]**: principalmente para fatorizar alguns códigos em opções, blocos de personalização, arquivos externos ou páginas. [Saiba mais](#include)
 * **[!DNL value]**: para dar acesso aos campos do delivery, às variáveis do delivery e aos objetos personalizados carregados no delivery. [Saiba mais](#value)
 * **[!DNL foreach]**: para executar um loop em uma matriz carregada como um objeto personalizado. [Saiba mais](#foreach)
 
@@ -39,7 +39,7 @@ Os seguintes exemplos estão entre os mais usados:
    <%@ include view="MirrorPage" %>  
    ```
 
-* URL da página espelhada:
+* URL da mirror page:
 
    ```
    View as a <a href="<%@ include view='MirrorPageUrl' %>" _label="Mirror Page" _type="mirrorPage">web page.
@@ -80,7 +80,7 @@ O objeto pode ser:
    * Um objeto de script extra: se um objeto for carregado no contexto por meio de: **Propriedades** > **Personalização** > **Adicionar objetos no contexto de execução**.
    * Item do loop foreach: consulte a seção [Foreach](#foreach) abaixo.
 * **[!DNL xpath]**: xpath do campo.
-* **[!DNL index]** (opcional): se  **[!DNL object]** for uma matriz (para objetos de script extras), o índice de item na matriz (Inicia em 0).
+* **[!DNL index]** (opcional): se **[!DNL object]** é uma matriz (para objetos de script extras), índice de item na matriz (começa em 0).
 
 ### [!DNL delivery] objeto {#delivery-object}
 
@@ -94,7 +94,7 @@ Para personalização por email, o objeto de delivery pode ser acessado de duas 
 
    No delivery de objetos JavaScript, não há suporte para campos personalizados. Eles funcionam na pré-visualização, mas não no MTA, porque o MTA só pode acessar o esquema de delivery pronto para uso.
 
-* Uso de um pré-processamento:
+* Utilização de um pré-processamento:
 
    ```
    <%@ value object="delivery"
@@ -103,7 +103,7 @@ Para personalização por email, o objeto de delivery pode ser acessado de duas 
 
 **Cuidado**
 
-Se você estiver usando a seguinte instrução para deliveries enviados via mid-sourcing, o campo personalizado **@myCustomField** deverá ser adicionado ao schema nms:delivery nas plataformas de marketing e mid-sourcing:
+Se você estiver usando a seguinte instrução para deliveries enviados via mid-sourcing, o campo personalizado **@myCustomField** deverá ser adicionado ao esquema nms:delivery nas plataformas de marketing e mid-sourcing:
 
 ```
 <%@ value object="delivery" xpath="@myCustomField" %>
@@ -115,9 +115,9 @@ Para parâmetros/variáveis de delivery, use a seguinte sintaxe (usando o objeto
 <%@ value object="delivery" xpath="variables/var[@name='myVar']/@stringValue" %>
 ```
 
-### [!DNL value] em uma seção Javascript  {#value-in-javascript}
+### [!DNL value] em uma seção JavaScript {#value-in-javascript}
 
-Para permitir o uso do valor &lt;%@ em seções Javascript, dois objetos especiais são substituídos por &lt;% e %>:
+Para permitir o uso do valor &lt;%@ em seções de JavaScript, dois objetos especiais são substituídos por &lt;% e %>:
 
 ```
 <%@ value object='startScript' %>
