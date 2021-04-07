@@ -6,11 +6,11 @@ description: Acesso às campanhas de marketing
 audience: campaign
 content-type: reference
 topic-tags: about-marketing-campaigns
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 278dec636373b5ccd3b631bd29607ebe894d53c3
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1045'
-ht-degree: 92%
+ht-degree: 100%
 
 ---
 
@@ -29,7 +29,7 @@ Depois de se conectar ao Adobe Campaign, você verá a home page.
 
 Clique nos links na barra de navegação para acessar os vários recursos.
 
-Os elementos da campanha são encontrados na guia **[!UICONTROL Campaigns]** : aqui você pode ver uma visão geral dos programas e campanhas de marketing, bem como suas subdefinições. Um programa de marketing é composto por campanhas, que são compostas por deliveries, tarefas, recursos vinculados etc. No contexto de gestão de campanhas de marketing usando o Campaign, as informações relacionadas às remessas, orçamentos, revisores e documentos vinculados são encontradas nas campanhas.
+Os elementos de campanha são encontrados na guia **[!UICONTROL Campaigns]**: aqui você pode ter uma visão geral dos programas e campanhas de marketing, bem como de seus subconjuntos. Um programa de marketing é composto por campanhas, que são compostas por deliveries, tarefas, recursos vinculados etc. No contexto de gerenciamento de campanhas de marketing usando o Campaign, as informações relacionadas aos deliveries, orçamentos, revisores e documentos vinculados são encontrados nas campanhas.
 
 O bloco **[!UICONTROL Browsing]** da guia **[!UICONTROL Campaigns]** oferece várias entradas, dependendo dos módulos instalados na instância. Como exemplo, você pode acessar:
 
@@ -95,7 +95,7 @@ As campanhas podem ser acessadas por meio do calendário da campanha, da guia **
    ![](assets/campaign_op_edit.png)
 
 1. Na guia **[!UICONTROL Schedule]** do programa, o modo de edição é igual ao que pode ser acessado pelo calendário da campanha.
-1. Através do link **[!UICONTROL Campaigns]** da guia **[!UICONTROL Campaigns]**, clique no nome da campanha que deseja editar.
+1. Por meio do link **[!UICONTROL Campaigns]** da guia **[!UICONTROL Campaigns]**, clique no nome da campanha que deseja editar.
 
    ![](assets/campaign_edit_from_list.png)
 
