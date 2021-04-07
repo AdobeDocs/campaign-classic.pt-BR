@@ -6,11 +6,11 @@ description: Saiba como escrever links em emails que podem ser personalizados e 
 audience: delivery
 content-type: reference
 topic-tags: tracking-messages
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 6b81d0ea22bf9d8f33e486535b4ce02fbae7b9ae
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '219'
-ht-degree: 87%
+ht-degree: 100%
 
 ---
 
@@ -24,7 +24,7 @@ A utilização do JavaScript no conteúdo de email (HTML ou Texto) permite gerar
 * O script não pode acessar o banco de dados diretamente (as funções SQL e API não estão disponíveis),
 * O Adobe Campaign deve ser capaz de detectar URLs para que os links possam ser rastreados. [Saiba mais](detecting-tracking-urls.md)
 
-Você pode adicionar instruções específicas de pré-processamento para criar scripts e rastreá-los. [Saiba mais](pre-processing-instructions.md)
+Você pode adicionar instruções específicas de pré-processamento para fazer o script do URL e rastreá-lo. [Saiba mais](pre-processing-instructions.md)
 
 Para detecção de rastreamento, o Adobe Campaign incorpora o [Tidy](http://www.html-tidy.org/) para analisar a origem HTML e detectar o padrão. Ele lista todos os URLs do conteúdo para que possam ser rastreados individualmente. O Adobe Campaign usa o Tidy novamente para substituir o URL (`http://myurl.com`) por um URL que aponte para o servidor de redirecionamento do Adobe Campaign.
 
