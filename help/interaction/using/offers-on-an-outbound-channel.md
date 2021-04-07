@@ -6,11 +6,11 @@ description: Ofertas em um canal de saída
 audience: interaction
 content-type: reference
 topic-tags: case-study
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 278dec636373b5ccd3b631bd29607ebe894d53c3
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '445'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -64,7 +64,7 @@ Em nosso banco de dados, há uma categoria de ofertas de viagem para a África. 
 
 ## Executar uma simulação de oferta {#perform-an-offer-simulation}
 
-1. Na guia **[!UICONTROL Profiles and Targets]**, clique no link **[!UICONTROL Simulations]** e, em seguida, clique no botão **[!UICONTROL Create]**.
+1. Na guia **[!UICONTROL Profiles and Targets]**, clique no link **[!UICONTROL Simulations]** e depois clique no botão **[!UICONTROL Create]**.
 
    ![](assets/offer_simulation_001.png)
 
