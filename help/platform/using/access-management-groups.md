@@ -4,16 +4,16 @@ product: campaign
 title: Criar e gerenciar grupos de operadores
 description: Saiba como conceder acesso a grupos de operadores
 feature: Gerenciamento de acesso
-role: Profissional de negócios, Administrador
-level: Iniciante
+role: Business Practitioner, Administrator
+level: Beginner
+exl-id: d5833d3d-e8ef-4f2b-8084-4ba825c79525
 translation-type: tm+mt
-source-git-commit: f2bd093d3a010e079b7f5adf3371e21d07a4f3ae
+source-git-commit: 6854d06f8dc445b56ddfde7777f02916a60f2b63
 workflow-type: tm+mt
-source-wordcount: '504'
-ht-degree: 94%
+source-wordcount: '500'
+ht-degree: 99%
 
 ---
-
 
 # Criar e gerenciar grupos de operadores {#operator-groups}
 
