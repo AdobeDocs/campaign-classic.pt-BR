@@ -6,11 +6,11 @@ description: Rastrear uma campanha
 audience: campaign
 content-type: reference
 topic-tags: distributed-marketing
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 278dec636373b5ccd3b631bd29607ebe894d53c3
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '409'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -28,7 +28,7 @@ Isso permite:
 
 ## Pacotes de filtro {#filter-packages}
 
-Na guia **[!UICONTROL Campaigns]**, é possível exibir a lista de **[!UICONTROL Campaign packages]** que reagrupa todas as campanhas existentes de Marketing Distribuído. É possível filtrar essa lista para exibir somente as campanhas publicadas, atrasadas, pendentes de aprovação etc. Para fazer isso, clique nos links na seção superior desta exibição ou use o link **[!UICONTROL Filter list]** e selecione o status do pacote da campanha a ser exibido.
+Na guia **[!UICONTROL Campaigns]**, é possível exibir a lista de **[!UICONTROL Campaign packages]** que reagrupa todas as campanhas de marketing distribuído existentes. É possível filtrar essa lista para exibir somente as campanhas publicadas, atrasadas, pendentes de aprovação etc. Para fazer isso, clique nos links na seção superior desta exibição ou use o link **[!UICONTROL Filter list]** e selecione o status do pacote da campanha a ser exibido.
 
 ![](assets/mkg_dist_catalog_filter.png)
 
