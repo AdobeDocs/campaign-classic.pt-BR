@@ -8,22 +8,22 @@ content-type: reference
 index: y
 internal: n
 snippet: y
+exl-id: ab30f697-3022-4a29-bbdb-14ca12ec9c3e
 translation-type: tm+mt
-source-git-commit: b77a56a97e499f60c092fae45c7809f7bfd9f2ea
+source-git-commit: 6854d06f8dc445b56ddfde7777f02916a60f2b63
 workflow-type: tm+mt
 source-wordcount: '577'
-ht-degree: 74%
+ht-degree: 100%
 
 ---
-
 
 # Configuração do Adobe I/O para acionadores da Adobe Experience Cloud {#configuring-adobe-io}
 
 >[!CAUTION]
 >
->Se você estiver usando uma versão mais antiga da integração de acionadores por meio da autenticação oAuth, **será necessário mover para o Adobe I/O conforme descrito abaixo**. O modo de autenticação oAuth herdado com o Campaign com o Campaign será desativado em 30 de novembro de 2021. [Saiba mais](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-discussions/adobe-analytics-legacy-api-end-of-life-notice/td-p/385411)
+>Se você estiver usando uma versão mais antiga da integração de acionadores por meio da autenticação oAuth, **será necessário mover para o Adobe I/O conforme descrito abaixo**. O modo de autenticação oAuth herdado com o Campaign será desativado em 30 de novembro de 2021. [Saiba mais](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-discussions/adobe-analytics-legacy-api-end-of-life-notice/td-p/385411)
 >
->Observe que durante essa mudança para [!DNL Adobe I/O], alguns acionadores recebidos podem ser perdidos.
+>Observe que, durante a migração para o [!DNL Adobe I/O], alguns acionadores de entrada podem ser perdidos.
 
 ## Pré-requisitos {#adobe-io-prerequisites}
 
@@ -36,11 +36,11 @@ Antes de iniciar esta implementação, verifique se você tem:
 
 ## Etapa 1: Criar/atualizar projeto do Adobe I/O {#creating-adobe-io-project}
 
-1. Acesse [!DNL Adobe I/O] e faça logon com o Administrador do sistema diretamente para a Organização IMS.
+1. Acesse [!DNL Adobe I/O] e faça logon com o direito de Administrador do sistema para a Organização IMS.
 
    >[!NOTE]
    >
-   > Verifique se você está conectado ao portal correto do Organization.
+   > Verifique se você está conectado ao portal correto da organização.
 
 1. Extraia o identificador do cliente de integração (ID do cliente) existente a partir do arquivo de configuração da instância ims/authIMSTAClientId. Um atributo não existente ou vazio indica que o identificador do cliente não está configurado.
 
@@ -66,7 +66,7 @@ Antes de iniciar esta implementação, verifique se você tem:
 
 1. Se a ID do cliente estiver vazia, selecione **[!UICONTROL Generate a key pair]** para criar um par de chaves público e privado.
 
-   As chaves serão baixadas automaticamente com uma data de expiração padrão de 365 dias. Depois de expirar, você precisará criar um novo par de chaves e atualizar a integração no arquivo de configuração. Usando a Opção 2, você pode optar por criar e carregar manualmente seu **[!UICONTROL Public key]** com uma data de expiração mais longa.
+   As chaves serão baixadas automaticamente com uma data de expiração padrão de 365 dias. Depois de expirar, você precisará criar um novo par de chaves e atualizar a integração no arquivo de configuração. Usando a Opção 2, você pode optar por criar e fazer upload manualmente da **[!UICONTROL Public key]** com uma data de expiração mais longa.
 
    ![](assets/do-not-localize/adobe_io_4.png)
 
@@ -76,7 +76,7 @@ Antes de iniciar esta implementação, verifique se você tem:
 
 1. Escolha qualquer **[!UICONTROL Product profile]** existente ou crie um novo, se necessário. Em seguida, clique em **[!UICONTROL Save configured API]**.
 
-   Para obter mais informações sobre [!DNL Analytics] **[!UICONTROL Product Profiles]**, consulte a [documentação do Adobe Analytics](https://experienceleague.adobe.com/docs/analytics/admin/admin-console/home.html#admin-console).
+   Para obter mais informações sobre [!DNL Analytics] **[!UICONTROL Product Profiles]**, consulte a [documentação do Adobe Analytics](https://experienceleague.adobe.com/docs/analytics/admin/admin-console/home.html?lang=pt-BR#admin-console).
 
    ![](assets/do-not-localize/adobe_io_6.png)
 
@@ -109,7 +109,7 @@ A chave privada deve ser codificada no formato base64 UTF-8. Para fazer isso:
 
    >[!NOTE]
    >
-   >Às vezes, linhas adicionais podem ser adicionadas automaticamente ao copiar/colar a chave privada. Lembre-se de removê-la antes de codificar sua chave privada.
+   >Às vezes, uma linha extra pode ser adicionada automaticamente ao copiar/colar a chave privada. Lembre-se de removê-la antes de codificar sua chave privada.
 
 1. Use a chave privada recém-gerada codificada no formato base64 UTF-8 para executar o comando detalhado acima.
 
