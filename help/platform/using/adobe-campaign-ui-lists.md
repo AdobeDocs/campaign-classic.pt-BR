@@ -2,15 +2,15 @@
 solution: Campaign Classic
 product: campaign
 title: Gerenciar e personalizar listas
-description: Saiba como navegar e configurar listas
+description: Saiba como procurar e configurar listas
 audience: platform
 content-type: reference
 topic-tags: starting-with-adobe-campaign
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: d6327cb5307ab5d37c15afa45dfd180ef04cb5a2
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1151'
-ht-degree: 93%
+ht-degree: 100%
 
 ---
 
@@ -19,7 +19,7 @@ ht-degree: 93%
 
 Você pode acessar as listas de registros no banco de dados do Campaign usando o Explorer. Você pode filtrar essas listas, executar pesquisas, adicionar informações, filtrar e classificar dados.
 
-## Contagem de registros {#counting-records}
+## Contar registros {#counting-records}
 
 Por padrão, o Adobe Campaign carrega os 200 primeiros registros de uma lista. Isso significa que a exibição não mostra necessariamente todos os registros da tabela que você está visualizando. Você pode executar uma contagem do número de registros na lista e carregar mais registros.
 
@@ -47,7 +47,7 @@ Para alterar o número padrão de registros carregados, clique em **[!UICONTROL 
 
 ![](assets/s_ncs_user_configure_list.png)
 
-Na janela de configuração da lista, clique em **[!UICONTROL Advanced parameters]** (canto inferior esquerdo) e altere o número de linhas a serem recuperadas.
+Na janela de configuração da lista, clique em **[!UICONTROL Advanced parameters]** (canto inferior esquerdo) e altere o número de linhas que serão recuperadas.
 
 ![](assets/s_ncs_user_configurelist_advancedparam.png)
 
@@ -84,7 +84,7 @@ Outra maneira de adicionar colunas, por exemplo, se você quiser exibir dados qu
    >
    >Use o campo **Search** para executar uma pesquisa nos campos disponíveis. Para obter mais informações, consulte [esta seção](#sorting-a-list).
    >
-   >Os campos são identificados por ícones específicos: SQL fields, linked tables, calculated fields, etc. Para cada campo selecionado, a descrição é exibida abaixo da lista de campos disponíveis. [Saiba mais](#configuring-lists).
+   >Os campos são identificados por ícones específicos: campos SQL, tabelas vinculadas, campos calculados etc. Para cada campo selecionado, a descrição é exibida abaixo da lista de campos disponíveis. [Saiba mais](#configuring-lists).
    >
    >Também é possível classificar e filtrar dados. Consulte [esta seção](../../platform/using/filtering-options.md).
 
@@ -159,7 +159,7 @@ Você pode aplicar essa configuração a outra pasta **Delivery**:
 
 ![](assets/s_ncs_user_folder_save_config_3.png)
 
-Clique em **[!UICONTROL Save]** na janela de propriedades da pasta. A lista de exibição é modificada para corresponder à configuração especificada:
+Clique em **[!UICONTROL Save]** na janela de propriedades da pasta. A exibição de lista é modificada para corresponder à configuração especificada:
 
 ![](assets/s_ncs_user_folder_save_config_5.png)
 
