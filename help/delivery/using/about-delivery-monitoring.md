@@ -6,9 +6,9 @@ description: Saiba mais sobre os recursos de monitoramento de delivery do Campai
 audience: delivery
 content-type: reference
 topic-tags: monitoring-deliveries
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: bc35a95d7deed1f0fd432ef8639f307ecf4d8e1f
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '288'
 ht-degree: 100%
 
