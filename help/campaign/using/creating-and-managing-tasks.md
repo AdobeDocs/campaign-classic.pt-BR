@@ -6,11 +6,11 @@ description: Criar e gerenciar tarefas
 audience: campaign
 content-type: reference
 topic-tags: tasks--resources-and-budgets
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 278dec636373b5ccd3b631bd29607ebe894d53c3
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '3732'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -25,7 +25,7 @@ As tarefas podem ser criadas, exibidas e monitoradas a partir da lista de tarefa
 
 As tarefas são anexadas à campanha e podem ter dependências, ou seja, tarefas associadas. Cada tarefa tem um status, prioridade, carga estimada e custos relacionados.
 
-Todas as tarefas são agrupadas em uma lista acessível por meio da guia **Campaigns**. Para obter mais informações, consulte [Acesso a tarefas](#accessing-tasks).
+Todas as tarefas são agrupadas em uma lista acessível pela guia **Campanhas**. Para obter mais informações, consulte [Acesso a tarefas](#accessing-tasks).
 
 Elas podem ser exibidas na agenda do programa ao qual pertencem.
 
@@ -35,7 +35,7 @@ Elas podem ser exibidas na agenda do programa ao qual pertencem.
 
 ### Exibir tarefas {#displaying-tasks}
 
-As tarefas são exibidas na lista de tarefas acessível por meio da guia **[!UICONTROL Campaigns]** .
+As tarefas são exibidas na lista de tarefas acessível por meio da guia **[!UICONTROL Campaigns]**.
 
 ![](assets/s_ncs_user_task_edit_view.png)
 
