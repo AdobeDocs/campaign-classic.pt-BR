@@ -6,11 +6,11 @@ description: Sobre cubos
 audience: reporting
 content-type: reference
 topic-tags: designing-reports-with-cubes
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 278dec636373b5ccd3b631bd29607ebe894d53c3
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '733'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -89,7 +89,7 @@ Os cubos são armazenados no nó **[!UICONTROL Administration > Configuration > 
 
 Os principais contextos de uso para cubos são:
 
-* É possível realizar exportações de dados diretamente em um relatório, projetado na guia **[!UICONTROL Reports]** da plataforma Adobe Campaign.
+* É possível realizar exportações de dados diretamente em um relatório, projetado na guia **[!UICONTROL Reports]** da plataforma do Adobe Campaign.
 
    Para fazer isso, crie um novo relatório e selecione o cubo que deseja usar.
 
