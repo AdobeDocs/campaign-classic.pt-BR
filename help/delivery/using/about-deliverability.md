@@ -6,14 +6,14 @@ description: Saiba mais sobre as práticas recomendadas de delivery
 audience: delivery
 content-type: reference
 topic-tags: deliverability-management
+exl-id: f301b34c-244c-4279-b23f-8224ea8eedbe
 translation-type: tm+mt
-source-git-commit: 0420de856d1506ab92d8f0e0824bf439e0ac7dc7
+source-git-commit: 6854d06f8dc445b56ddfde7777f02916a60f2b63
 workflow-type: tm+mt
 source-wordcount: '716'
-ht-degree: 11%
+ht-degree: 12%
 
 ---
-
 
 # O que é a capacidade de entrega{#about-deliverability}
 
@@ -21,7 +21,7 @@ A capacidade de delivery permite medir o sucesso das campanhas em chegar à caix
 
 Mais precisamente, a capacidade de fornecimento de email refere-se ao conjunto de características que determinam a capacidade de uma mensagem de alcançar seu destino por meio de um endereço de email pessoal, dentro de um curto período e com a qualidade esperada em termos de conteúdo e formato.
 
-Para aprofundar o assunto e saber mais sobre os termos, conceitos e abordagens principais da capacidade de entrega, consulte o [Guia de práticas recomendadas de capacidade de entrega do Adobe](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/introduction.html).
+Para aprofundar o assunto e saber mais sobre os termos, conceitos e abordagens principais da capacidade de entrega, consulte o [Guia de práticas recomendadas de capacidade de entrega do Adobe](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/introduction.html?lang=pt-BR).
 
 ## Como melhorar a capacidade de entrega {#deliverability-key-points}
 
