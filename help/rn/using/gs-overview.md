@@ -4,16 +4,16 @@ product: campaign
 title: '[!DNL Gold Standard] atualizar'
 description: 'Saiba o que é Campaign Classic [!DNL Gold Standard] '
 feature: Visão geral
-role: Profissional
-level: Iniciante
+role: Business Practitioner
+level: Beginner
+exl-id: c36a78f6-3332-465d-92f5-48f70b8bdddd
 translation-type: tm+mt
-source-git-commit: b77a56a97e499f60c092fae45c7809f7bfd9f2ea
+source-git-commit: 6854d06f8dc445b56ddfde7777f02916a60f2b63
 workflow-type: tm+mt
-source-wordcount: '559'
-ht-degree: 74%
+source-wordcount: '556'
+ht-degree: 88%
 
 ---
-
 
 # [!DNL Gold Standard] versões  {#gs-overviews}
 
@@ -23,15 +23,15 @@ A Adobe e o Adobe Campaign têm o compromisso de fornecer a você a melhor exper
 
 O Adobe Campaign Classic, especificamente, usa uma variedade de tecnologias para fornecer valor. Essa combinação de tecnologias exige que você atualize regularmente suas instâncias do Campaign Classic para garantir que as versões mais atualizadas estejam sendo usadas para oferecer segurança, estabilidade e desempenho superiores.
 
-[!DNL Gold Standard] O é a versão de suporte a longo prazo do Campaign Classic. Como um usuário hospedado [!DNL Gold Standard], você se beneficia automaticamente da atualização [!DNL Gold Standard] com a versão estável mais recente, sem ter de tomar nenhuma ação. Os clientes locais e híbridos também podem se beneficiar das versões [!DNL Gold Standard]. Se você migrar de um build antigo, recomendamos que atualize primeiro para essa versão.
+[!DNL Gold Standard] O é a versão de suporte a longo prazo do Campaign Classic. Como um usuário hospedado [!DNL Gold Standard], você se beneficia automaticamente da atualização [!DNL Gold Standard] com a versão estável mais recente, sem ter de tomar nenhuma ação. Os clientes locais e híbridos também podem se beneficiar das versões [!DNL Gold Standard]. Se você migrar de uma compilação antiga, recomendamos atualizar primeiro para essa versão.
 
 ## Por que minha empresa precisa dessa atualização?
 
-Como cliente hospedado, se sua conta tiver sido identificada como necessitando atualizar uma ou mais tecnologias relacionadas ao Campaign Classic, bem como atualizar a build e/ou versão atual, você será notificado diretamente pelo Adobe.
+Como um cliente hospedado, se sua conta precisar atualizar uma ou mais das tecnologias relacionadas ao Campaign Classic, bem como atualizar a compilação e/ou versão atual, você será notificado diretamente pela Adobe.
 
 Como cliente local ou híbrido em uma versão mais antiga, o Adobe incentiva a mudança para o [!DNL Gold Standard] mais recente.
 
-Dessa forma, sua conta ficará protegida contra vulnerabilidades, além de se valer da tecnologia de desempenho atualizada. Você também poderá fazer atualizações regulares e com mais facilidade na sua conta, que exigirão menos trabalho e intervenção manual.
+Dessa forma, sua conta ficará protegida contra vulnerabilidades, além de aproveitar a tecnologia de desempenho atualizada. Você também poderá fazer atualizações regulares e com mais facilidade na sua conta, que exigirão menos trabalho e intervenção manual.
 
 ## Qual é o processo e o cronograma dessa atualização?
 
@@ -47,7 +47,7 @@ Estamos empenhados em garantir que você tenha as informações relevantes do pr
   <td>
       <img alt="Segurança" src="assets/do-not-localize/security.png"/>
     <div>
-    <strong>Segurança aprimorada</strong>
+    <strong>Segurança avançada</strong>
     </div>
     <ul>
     <li>Uma combinação de tecnologias usadas para potencializar o Adobe Campaign Classic trabalha em conjunto para agregar valor.</li>
@@ -84,7 +84,7 @@ Estamos empenhados em garantir que você tenha as informações relevantes do pr
   </td>
 
 <td>
-      <img alt="Atualização da build" src="assets/do-not-localize/upgrades.png" />
+      <img alt="Atualização da compilação" src="assets/do-not-localize/upgrades.png" />
     <div>
     <strong>Atualizações mais fáceis</strong>
     </a>
@@ -101,5 +101,5 @@ Estamos empenhados em garantir que você tenha as informações relevantes do pr
 ## Recursos adicionais
 
 * [[!DNL Gold Standard] notas de versão](gold-standard.md)
-* [Perguntas frequentes de atualização de build](../../platform/using/faq-build-upgrade.md)
+* [Perguntas frequentes de atualização da compilação](../../platform/using/faq-build-upgrade.md)
 * [[!DNL Gold Standard] matriz de compatibilidade](compatibility-matrix-gs.md)
