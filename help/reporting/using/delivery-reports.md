@@ -6,11 +6,11 @@ description: Relatórios de delivery
 audience: reporting
 content-type: reference
 topic-tags: accessing-built-in-reports
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 278dec636373b5ccd3b631bd29607ebe894d53c3
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1443'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -19,7 +19,7 @@ ht-degree: 99%
 
 Você pode acompanhar a execução de deliveries por meio de vários relatórios acessíveis a partir da visão geral de delivery. Para exibir relatórios, siga as etapas abaixo:
 
-1. Vá para a guia **[!UICONTROL Campaigns]** e clique no link **[!UICONTROL Delivery]** para exibir a lista de deliveries.
+1. Acesse a guia **[!UICONTROL Campaigns]** e clique no link **[!UICONTROL Delivery]** para exibir a lista de deliveries.
 1. Clique no nome do delivery que deseja exibir para ver seus detalhes.
 
    ![](assets/s_ncs_user_detailled_report.png)
