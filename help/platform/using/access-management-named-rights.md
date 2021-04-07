@@ -4,16 +4,16 @@ product: campaign
 title: Usar direitos nomeados para configurar permissões
 description: Saiba como usar direitos nomeados para configurar permissões
 feature: Gerenciamento de acesso
-role: Profissional de negócios, Administrador
-level: Iniciante
+role: Business Practitioner, Administrator
+level: Beginner
+exl-id: 07470a91-d8d2-4c41-9555-05522c8068f0
 translation-type: tm+mt
-source-git-commit: f2bd093d3a010e079b7f5adf3371e21d07a4f3ae
+source-git-commit: 6854d06f8dc445b56ddfde7777f02916a60f2b63
 workflow-type: tm+mt
-source-wordcount: '509'
-ht-degree: 94%
+source-wordcount: '505'
+ht-degree: 99%
 
 ---
-
 
 # Usar direitos nomeados para configurar permissões{#named-rights}
 
@@ -47,7 +47,7 @@ Esses direitos são os seguintes:
 
 * **[!UICONTROL PREPARE DELIVERIES]**: direito de criar, editar e salvar um delivery. Os usuários com o direito **[!UICONTROL PREPARE DELIVERIES]** também podem iniciar o processo de análise do delivery.
 
-* **[!UICONTROL PRIVACY DATA RIGHT]**: direito de coletar e excluir dados de privacidade. Para obter mais informações, consulte esta [página](https://helpx.adobe.com/br/campaign/kb/acc-privacy.html).
+* **[!UICONTROL PRIVACY DATA RIGHT]**: direito de coletar e excluir dados de privacidade. Para obter mais informações, consulte esta [página](https://helpx.adobe.com/campaign/kb/acc-privacy.html).
 
 * **[!UICONTROL PROGRAM EXECUTION]**: direito de executar comandos em várias linguagens de programação.
 
