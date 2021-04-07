@@ -4,16 +4,16 @@ product: campaign
 title: Introdução aos operadores do Campaign
 description: Saiba como criar e gerenciar usuários do Campaign
 feature: Gerenciamento de acesso
-role: Profissional de negócios, Administrador
-level: Iniciante
+role: Business Practitioner, Administrator
+level: Beginner
+exl-id: 580282ce-ee30-422a-8724-9c328637cc39
 translation-type: tm+mt
-source-git-commit: f2bd093d3a010e079b7f5adf3371e21d07a4f3ae
+source-git-commit: 6854d06f8dc445b56ddfde7777f02916a60f2b63
 workflow-type: tm+mt
-source-wordcount: '1152'
-ht-degree: 96%
+source-wordcount: '1148'
+ht-degree: 99%
 
 ---
-
 
 # Criar e gerenciar operadores {#operators}
 
@@ -75,9 +75,9 @@ Após criar o perfil do operador, você pode adicionar ou atualizar suas informa
 
 >[!NOTE]
 >
->O campo **[!UICONTROL Session timeout]** permite ajustar o atraso antes do tempo limite da sessão FDA. Para obter mais informações, consulte [Sobre Federated Data Access](../../installation/using/about-fda.md).
+>O campo **[!UICONTROL Session timeout]** permite ajustar o atraso antes do tempo limite da sessão FDA. Para obter mais informações, consulte [Sobre o Federated Data Access](../../installation/using/about-fda.md).
 
-## Defina o fuso horário do operador {#time-zone-of-the-operator}
+## Definir o fuso horário do operador {#time-zone-of-the-operator}
 
 Na guia **[!UICONTROL General]**, é possível selecionar o fuso horário do operador. Por padrão, os operadores trabalham no fuso horário do servidor. No entanto, é possível selecionar outro fuso horário usando a lista suspensa.
 
@@ -185,4 +185,4 @@ Por padrão, o operador técnico &#39;webapp&#39; tem o direito nomeado ADMINIST
 
 >[!NOTE]
 >
->Para obter mais informações sobre Diretrizes de segurança, consulte a [lista de verificação de configuração do Adobe Campaign Security](https://helpx.adobe.com/br/campaign/kb/acc-security.html).
+>Para obter mais informações sobre Diretrizes de segurança, consulte a [lista de verificação de configuração do Adobe Campaign Security](https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/security-privacy/get-started-security-privacy.html?lang=pt-BR#installing-campaign-classic).
