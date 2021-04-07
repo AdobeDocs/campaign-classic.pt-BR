@@ -1,21 +1,21 @@
 ---
 solution: Campaign Classic
 product: campaign
-title: Sobre templates de mensagem transacional
-description: Introdução a templates de mensagem transacional
+title: Sobre modelos de mensagem transacional
+description: Introdução a modelos de mensagem transacional
 audience: message-center
 content-type: reference
 topic-tags: message-templates
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 11ff62238a8fb73658f2263c25dbeb27d2e0fb23
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '103'
-ht-degree: 86%
+ht-degree: 100%
 
 ---
 
 
-# Sobre templates de mensagem transacional{#introduction}
+# Sobre modelos de mensagem transacional{#introduction}
 
 Para garantir que cada evento possa ser alterado em uma mensagem personalizada, você precisa criar um template de mensagem para corresponder a cada tipo de evento. Os templates contêm as informações necessárias para personalizar a mensagem transacional. Você também pode usar templates para testar a pré-visualização da mensagem e enviar provas usando seed addresses antes de entregar ao target final.
 
