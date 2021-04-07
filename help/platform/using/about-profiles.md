@@ -4,16 +4,16 @@ product: campaign
 title: Sobre perfis
 description: Sobre perfis
 feature: Perfis, públicos-alvo
-role: Profissional de negócios, arquiteto de dados
-level: Iniciante
+role: Business Practitioner, Data Architect
+level: Beginner
+exl-id: 54f1ad6c-54b0-4448-8c38-806dd75c1dae
 translation-type: tm+mt
-source-git-commit: 564eaedb09282c85593f638617baded0a63494a0
+source-git-commit: 6854d06f8dc445b56ddfde7777f02916a60f2b63
 workflow-type: tm+mt
-source-wordcount: '999'
+source-wordcount: '994'
 ht-degree: 76%
 
 ---
-
 
 # Introdução a perfis{#about-profiles}
 
