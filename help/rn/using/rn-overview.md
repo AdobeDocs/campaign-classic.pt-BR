@@ -4,16 +4,16 @@ product: campaign
 title: Introdução às atualizações
 description: Saiba mais sobre as atualizações do Campaign Classic
 feature: Visão geral
-role: Profissional
-level: Iniciante
+role: Business Practitioner
+level: Beginner
+exl-id: 7a05fdff-8f9d-4e8d-812e-0f1509db5499
 translation-type: tm+mt
-source-git-commit: 7b1e6dd00943e10dff693d78b3aa7cf2ad3e6727
+source-git-commit: 6854d06f8dc445b56ddfde7777f02916a60f2b63
 workflow-type: tm+mt
-source-wordcount: '418'
+source-wordcount: '415'
 ht-degree: 93%
 
 ---
-
 
 # Introdução às atualizações{#rn-overview}
 
@@ -35,7 +35,7 @@ As **últimas builds do GA** são: [[!DNL Gold Standard]  versão 11](../../rn/u
 
 ![](assets/do-not-localize/blue3.png) **Versão candidata** (VC) - versão mais recente com novos recursos.
 
-A **última build RC** é a [versão 21.1 do Campaign Classic](../../rn/using/latest-release.md)
+A **última compilação RC** é a [versão 21.1 do Campaign Classic](../../rn/using/latest-release.md)
 
 ![](assets/do-not-localize/red3.png) **Obsoleto** – nenhuma implantação. As implementações existentes devem ser atualizadas.
 
@@ -63,7 +63,7 @@ Como um usuário hospedado [!DNL Gold Standard], você se beneficiará automatic
 ## Suporte e outros links úteis{#support}
 
 * [Ajuda e suporte](../../support.md)
-* [Versões do Painel de controle do Campaign](https://docs.adobe.com/content/help/pt-BR/control-panel/using/release-notes.html)
+* [Versões do Painel de controle do Campaign](https://experienceleague.adobe.com/docs/control-panel/using/release-notes.html?lang=pt-BR)
 * [Atualizações mais recentes da documentação](../../rn/using/documentation-updates.md)
 * [Recursos descontinuados e removidos](../../rn/using/deprecated-features.md)
 
