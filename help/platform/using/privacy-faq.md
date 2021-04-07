@@ -6,11 +6,11 @@ description: Saiba mais sobre privacidade e consentimento
 audience: platform
 content-type: reference
 topic-tags: starting-with-adobe-campaign
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 278dec636373b5ccd3b631bd29607ebe894d53c3
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '797'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -74,7 +74,7 @@ Nos casos em que é necessário o consentimento para determinadas atividades de 
 
 Pode até haver instâncias em que certos consentimentos precisem ser atualizados para que possam continuar usando os dados a partir de agora.
 
-Os profissionais de marketing devem adotar esses requisitos de consentimento aprimorados como um verdadeiro indicador de envolvimento e fidelidade da marca, bem como de satisfação e confiança do cliente.
+Os profissionais de marketing devem adotar esses requisitos de consentimento aprimorados como um verdadeiro indicador de fidelidade e envolvimento com a marca, bem como de satisfação e confiança do cliente.
 
 ## Gerenciar o consentimento {#manage-consent}
 
