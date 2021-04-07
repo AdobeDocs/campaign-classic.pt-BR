@@ -6,11 +6,11 @@ description: Saiba mais sobre deliveries de campanha de marketing
 audience: campaign
 content-type: reference
 topic-tags: orchestrate-campaigns
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 278dec636373b5ccd3b631bd29607ebe894d53c3
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1487'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -199,7 +199,7 @@ Uma estrutura pode conter itens e campos de personalização, recursos e ofertas
 
    ![](assets/s_ncs_user_op_add_composition_field_button.png)
 
-* Os recursos são de marketing, gerados no painel de recursos de marketing acessado por meio do link **[!UICONTROL Resources]** da guia **[!UICONTROL Campaigns]**.
+* Os recursos são de marketing, gerados no painel de recurso de marketing acessado por meio do link **[!UICONTROL Resources]** da guia **[!UICONTROL Campaigns]**.
 
    ![](assets/s_ncs_user_mkg_resource_ovv.png)
 
