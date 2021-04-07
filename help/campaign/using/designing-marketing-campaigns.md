@@ -1,30 +1,30 @@
 ---
 solution: Campaign Classic
 product: campaign
-title: Projete e execute campanhas de marketing
+title: Projetar e executar campanhas de marketing
 description: Defina, otimize, execute e analise campanhas de marketing.
 audience: campaign
 content-type: reference
 topic-tags: about-marketing-campaigns
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 87028ec81a8cae6793d45d7c840511b59cd0287c
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '443'
-ht-degree: 92%
+ht-degree: 100%
 
 ---
 
 
-# Projete e execute campanhas de marketing{#designing-marketing-campaigns}
+# Projetar e executar campanhas de marketing{#designing-marketing-campaigns}
 
-O Adobe Campaign permite que você defina, otimize, execute e analise campanhas de comunicação e marketing. O Adobe Campaign atua como uma central de execução e pedido unificada para estratégias de marketing. Para obter mais informações, consulte [Acesse campanhas](../../campaign/using/accessing-campaigns.md) e [Criar campanhas de marketing](../../campaign/using/setting-up-marketing-campaigns.md).
+O Adobe Campaign permite que você defina, otimize, execute e analise campanhas de comunicação e marketing. O Adobe Campaign atua como uma central de execução e pedido unificada para estratégias de marketing. Para obter mais informações, consulte [Acessar campanhas](../../campaign/using/accessing-campaigns.md) e [Criar campanhas de marketing](../../campaign/using/setting-up-marketing-campaigns.md).
 
 Além disso, o módulo **GMarketing Resource Management (MRM)** permite controlar ações de marketing em um modo colaborativo fornecendo gerenciamento completo e rastreamento em tempo real das tarefas, orçamentos e recursos de marketing envolvidos. O Gerenciamento de recursos de marketing permite otimizar e regular o gerenciamento de processos internos e externos, recursos e campanhas de marketing, bem como relações de terceiros (agências, impressoras etc.). Para obter mais informações, consulte [esta seção](../../campaign/using/about-marketing-resource-management.md).
 
 >[!NOTE]
 >
 >Para obter mais informações sobre as funcionalidades principais do Adobe Campaign, consulte [esta seção](../../platform/using/about-adobe-campaign-classic.md).\
->Os recursos relacionados à definição de metas de população, personalização de mensagens e delivery de mensagens nos diversos canais são detalhados [nesta seção](../../delivery/using/steps-about-delivery-creation-steps.md).
+>Os recursos relacionados ao direcionamento de população, personalização de mensagens e delivery de mensagem nos diversos canais são detalhados [nesta seção](../../delivery/using/steps-about-delivery-creation-steps.md).
 
 ![](assets/do-not-localize/how-to-video.png) [Descubra os principais conceitos das campanhas de marketing em vídeo](#video)
 
