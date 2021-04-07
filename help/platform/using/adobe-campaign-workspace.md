@@ -1,21 +1,21 @@
 ---
 solution: Campaign Classic
 product: campaign
-title: Área de trabalho do Adobe Campaign
-description: Saiba como usar e personalizar a área de trabalho do Campaign
+title: Workspace do Adobe Campaign
+description: Saiba como usar e personalizar o workspace do Campaign
 feature: Visão geral
 role: Engenheiro de dados
 level: Iniciante
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: c91d9c39d92779ed0366905a944f065c427b1e5a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1260'
-ht-degree: 76%
+ht-degree: 100%
 
 ---
 
 
-# Área de trabalho do Adobe Campaign{#adobe-campaign-workspace}
+# Workspace do Adobe Campaign{#adobe-campaign-workspace}
 
 ## Explorar a interface do Adobe Campaign {#about-adobe-campaign-interface}
 
@@ -97,7 +97,7 @@ As listas estão disponíveis no link **[!UICONTROL Lists]** na seção à esque
 
 ### Criar um elemento {#creating-an-element}
 
-Cada seção de recurso principal permite navegar entre os elementos disponíveis. Para fazer isso, use os atalhos na seção **[!UICONTROL Browsing]**. O link **[!UICONTROL Other choices]** permite acessar todas as outras páginas, independentemente do ambiente.
+Cada seção de recurso principal permite procurar entre os elementos disponíveis. Para fazer isso, use os atalhos na seção **[!UICONTROL Browsing]**. O link **[!UICONTROL Other choices]** permite acessar todas as outras páginas, independentemente do ambiente.
 
 Você pode criar um novo elemento (delivery, aplicativo web, workflow etc.) usando os atalhos na seção **[!UICONTROL Create]** à esquerda da tela. Use o botão **[!UICONTROL Create]** acima da lista para adicionar novos elementos a ela.
 
@@ -115,19 +115,19 @@ O espaço de trabalho **[!UICONTROL Explorer]** é dividido em três zonas:
 
 **1 - Tree**: é possível personalizar o conteúdo da árvore (adicionar, mover ou excluir nós). Esse procedimento destina-se somente a usuários especializados. Para obter mais informações, consulte [esta seção](#about-navigation-hierarchy).).
 
-**2 - List**: é possível filtrar essa lista, executar pesquisas, adicionar informações ou classificar dados. [Saiba mais](adobe-campaign-ui-lists.md).
+**2 - Lista**: é possível filtrar essa lista, executar pesquisas, adicionar informações ou classificar dados. [Saiba mais](adobe-campaign-ui-lists.md).
 
 **3 - Details**: é possível exibir os detalhes do elemento selecionado. O ícone na seção superior direita permite exibir essas informações no formato de tela inteira.
 
 ### Pastas e árvore de navegação{#about-navigation-hierarchy}
 
-A árvore de navegação funciona como um navegador de arquivos (por exemplo, Windows Explorer). As pastas podem conter subpastas. Selecionar um nó exibe a exibição correspondente ao nó.
+A árvore de navegação funciona como um navegador de arquivos (por exemplo, Windows Explorer). As pastas podem conter subpastas. Selecionar um nó exibe a visualização correspondente ao nó.
 
-A exibição exibida é uma lista associada a um schema e um formulário de entrada para editar a linha selecionada.
+A visualização exibida é uma lista associada a um esquema e um formulário de entrada para editar a linha selecionada.
 
 ![](assets/d_ncs_integration_navigation.png)
 
-Para adicionar uma nova pasta à árvore, clique com o botão direito do mouse na pasta na ramificação onde deseja inserir uma pasta e selecione **[!UICONTROL Add new folder]** . No menu de atalho, selecione o tipo de arquivo a ser criado.
+Para adicionar uma nova pasta à árvore, clique com o botão direito do mouse na pasta na ramificação em que deseja inserir uma pasta e selecione **[!UICONTROL Add new folder]**. No menu de atalho, selecione o tipo de arquivo que será criado.
 
 ![](assets/d_ncs_integration_navigation_create.png)
 
@@ -137,13 +137,13 @@ Saiba como definir permissões em pastas [nesta seção](access-management-folde
 
 ### Práticas recomendadas de configuração de pasta
 
-* **Usar pastas incorporadas**
+* **Usar pastas integradas**
 
-   Usar as pastas integradas facilita que as pessoas não envolvidas no projeto usem, mantenham e solucionem problemas do aplicativo. Você não deve criar estruturas de pastas personalizadas para recipients, listas, deliveries etc., mas usar as pastas padrão, como Administração, Perfis e direcionamentos, Gerenciamento de campanha.
+   Usar as pastas integradas faz com que as pessoas não envolvidas no projeto usem, mantenham e solucionem problemas do aplicativo com mais facilidade. Você não deve criar estruturas de pastas personalizadas para recipients, listas, deliveries etc., mas usar as pastas padrão, como Administração, Perfis e direcionamentos e Gestão de campanha.
 
 * **Criar subpastas**
 
-   Coloque workflows técnicos na pasta padrão: Administração / Produção / Fluxos de trabalho técnicos e criar subdiretórios por tipo de fluxo de trabalho.
+   Coloque workflows técnicos na pasta padrão: Administração/Produção/Workflows técnicos e crie subdiretórios por tipo de fluxo de trabalho.
 
 * **Definir uma convenção de nomenclatura**
 
@@ -151,12 +151,12 @@ Saiba como definir permissões em pastas [nesta seção](access-management-folde
 
    Por exemplo:
 
-   * A1 - destinatários da importação, começa às 10:00;
-   * A2 - importar tíquetes, começa às 11:00.
+   * A1 - importar recipients, começa às 10h;
+   * A2 - importar tíquetes, começa às 11h.
 
 * **Criar modelos para os usuários começarem com**
 
-   Crie templates de delivery, templates de workflow, templates de campanha específicos para usuários. Essa estrutura pode economizar tempo e garantir que o mapeamento de delivery e as tipologias corretas sejam usadas para cada usuário.
+   Crie templates de delivery, templates de fluxo de trabalho, templates de campanha específicos para usuários. Essa estrutura pode economizar tempo e garantir que o mapeamento de delivery e as tipologias corretas sejam usadas para cada usuário.
 
 ### Resolução da tela {#screen-resolution}
 
@@ -164,15 +164,15 @@ Para navegação e usabilidade ideais, a Adobe recomenda usar uma resolução m�
 
 >[!CAUTION]
 >
->Resoluções abaixo de 1600x900 pixels são compatíveis com o Adobe Campaign.
+>Resoluções abaixo de 1600x900 pixels são aceitos pelo Adobe Campaign.
 
-Na área de trabalho do **[!UICONTROL Explorer]**, se alguma parte da zona **[!UICONTROL Details]** aparecer cortada, amplie-a usando a seta na parte superior da zona ou clique no botão **[!UICONTROL Enlarge]**.
+No workspace do **[!UICONTROL Explorer]**, se alguma parte da zona **[!UICONTROL Details]** aparecer cortada, amplie-a usando a seta na parte superior da zona ou clique no botão **[!UICONTROL Enlarge]**.
 
 ![](assets/s_ncs_user_resolution.png)
 
 ### Procurar e personalizar listas {#browsing-lists}
 
-Saiba como navegar, gerenciar e personalizar listas [nesta seção](adobe-campaign-ui-lists.md).
+Saiba como procurar, gerenciar e personalizar listas [nesta seção](adobe-campaign-ui-lists.md).
 
 ## Formatos e unidades {#formats-and-units}
 
