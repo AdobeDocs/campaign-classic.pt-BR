@@ -6,11 +6,11 @@ description: Uso de cubos para exploração de dados
 audience: reporting
 content-type: reference
 topic-tags: designing-reports-with-cubes
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 278dec636373b5ccd3b631bd29607ebe894d53c3
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '956'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -152,7 +152,7 @@ Para agrupar uma população em uma lista, siga as etapas abaixo:
 
    Você pode salvar o conteúdo do carrinho ou esvaziá-lo.
 
-   A lista relevante é acessada pela guia **[!UICONTROL Profiles and targets]** .
+   A lista relevante é acessada pela guia **[!UICONTROL Profiles and targets]**.
 
    ![](assets/s_advuser_cube_in_report_config_02g.png)
 
