@@ -4,18 +4,18 @@ product: campaign
 title: Introdução a permissões
 description: Saiba como conceder acesso aos recursos do Campaign
 feature: Gerenciamento de acesso
-role: Profissional de negócios, Administrador
-level: Iniciante
+role: Business Practitioner, Administrator
+level: Beginner
+exl-id: 9b616715-33cd-43ba-8548-8d96a179408e
 translation-type: tm+mt
-source-git-commit: f2bd093d3a010e079b7f5adf3371e21d07a4f3ae
+source-git-commit: 6854d06f8dc445b56ddfde7777f02916a60f2b63
 workflow-type: tm+mt
-source-wordcount: '259'
-ht-degree: 65%
+source-wordcount: '255'
+ht-degree: 99%
 
 ---
 
-
-# Comece com permissões{#access-management}
+# Introdução a permissões{#access-management}
 
 O Adobe Campaign permite definir e gerenciar os direitos atribuídos aos diversos operadores. Veja um conjunto de direitos e restrições que autorizam ou negam:
 
@@ -25,17 +25,17 @@ O Adobe Campaign permite definir e gerenciar os direitos atribuídos aos diverso
 
 As permissões se aplicam a perfis ou grupos de operadores.
 
-Os perfis são preenchidos por parâmetros de segurança vinculados ao modo de conexão do operador para o Adobe Campaign. Para obter mais informações sobre zonas de segurança em [esta página](../../installation/using/security-zones.md).
+Os perfis são preenchidos por parâmetros de segurança vinculados ao modo de conexão do operador para o Adobe Campaign. Para obter mais informações sobre zonas de segurança consulte [esta página](../../installation/using/security-zones.md).
 
 Há dois tipos de permissões que você pode conceder a um usuário:
 
-* Você pode definir grupos de operadores para atribuir direitos e, em seguida, associar os operadores a um ou mais grupos. Isso permite que você reutilize os direitos e torne os perfis de operadores mais consistentes. Também facilita o gerenciamento e a manutenção de perfis. A criação e o gerenciamento de grupos são apresentados em [this section](access-management-groups.md).
+* Você pode definir grupos de operadores para atribuir direitos e, em seguida, associar os operadores a um ou mais grupos. Isso permite que você reutilize os direitos e torne os perfis de operadores mais consistentes. Também facilita o gerenciamento e a manutenção de perfis. A criação e o gerenciamento de grupos são apresentados [nesta seção](access-management-groups.md).
 
-* Você pode atribuir direitos nomeados diretamente aos usuários, em alguns casos para sobrecarregar os direitos alocados por meio de grupos. Esses direitos são apresentados em [this page](access-management-named-rights.md).
+* Você pode atribuir direitos nomeados diretamente aos usuários, em alguns casos para aumentar os direitos alocados por meio de grupos. Esses direitos são apresentados [nesta página](access-management-named-rights.md).
 
 >[!NOTE]
 >
->Antes de começar a definir as permissões, a Adobe recomenda que você leia a [Lista de verificação de configuração de segurança](https://helpx.adobe.com/br/campaign/kb/acc-security.html).
+>Antes de começar a definir as permissões, a Adobe recomenda que você leia a [Lista de verificação de configuração de segurança](https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/security-privacy/get-started-security-privacy.html?lang=pt-BR#installing-campaign-classic).
 
 Saiba como conceder acesso e configurar permissões nestas seções:
 
@@ -47,13 +47,13 @@ Saiba como conceder acesso e configurar permissões nestas seções:
 
 * [Gerenciar o acesso à pasta do Campaign](access-management-folders.md)
 
-* [Matriz de direitos de acesso](access-management-named-rights.md#access-rights-matrix)
+* [Acessar matriz de direitos](access-management-named-rights.md#access-rights-matrix)
 
 
 Consulte também:
 
-* [Gerenciar permissões para fluxos de trabalho](../../workflow/using/managing-rights.md)
+* [Gerenciar permissões para workflows](../../workflow/using/managing-rights.md)
 * [Gerenciar permissões para marketing distribuído](../../campaign/using/about-distributed-marketing.md#operators-and-entities)
 * [Gerenciar permissões do módulo de interação](../../interaction/using/operator-profiles.md)
-* [Filtrar o acesso a schemas](../../configuration/using/filtering-schemas.md)
-* [Restrição da exibição de PI](../../configuration/using/restricting-pii-view.md)
+* [Filtrar o acesso a esquemas](../../configuration/using/filtering-schemas.md)
+* [Restrição da visualização de PI](../../configuration/using/restricting-pii-view.md)
