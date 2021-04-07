@@ -6,18 +6,18 @@ description: Criação de uma nova aplicação web
 audience: web
 content-type: reference
 topic-tags: web-applications
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 11ff62238a8fb73658f2263c25dbeb27d2e0fb23
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '361'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
 
-# Criar uma nova aplicação Web{#creating-a-new-web-application}
+# Criar um novo aplicativo web{#creating-a-new-web-application}
 
-Os tipos de aplicação web são selecionados durante a criação.
+Os tipos de aplicativo web são selecionados durante a criação.
 
 Vá para a guia **Campaigns** e selecione o menu **[!UICONTROL Web Applications]**. Clique no botão **[!UICONTROL Create]**. Selecione o template de aplicação web que deseja usar:
 
