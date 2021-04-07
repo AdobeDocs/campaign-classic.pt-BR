@@ -6,16 +6,16 @@ description: Rastreamento de uma aplicação web
 audience: web
 content-type: reference
 topic-tags: web-applications
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 11ff62238a8fb73658f2263c25dbeb27d2e0fb23
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '411'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
 
-# Rastrear visitas em uma aplicação web{#tracking-a-web-application}
+# Rastrear visitas em um aplicativo web{#tracking-a-web-application}
 
 O Adobe Campaign permite rastrear e medir visitas em páginas de aplicativos web inserindo tags de rastreamento. Essa funcionalidade pode ser usada para todos os tipos de aplicações web (formulários, pesquisas online, páginas da Web criadas usando o DCE, etc.).
 
