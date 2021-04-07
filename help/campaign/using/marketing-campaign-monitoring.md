@@ -6,11 +6,11 @@ description: Monitorar campanhas de marketing
 audience: campaign
 content-type: reference
 topic-tags: orchestrate-campaigns
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 87028ec81a8cae6793d45d7c840511b59cd0287c
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '245'
-ht-degree: 93%
+ht-degree: 100%
 
 ---
 
@@ -49,10 +49,10 @@ Para verificar o status de um delivery, edite-o e exiba seu painel e guias.
 
 >[!NOTE]
 >
->As informações relacionadas aos detalhes do delivery estão disponíveis na seção [this section](../../delivery/using/about-message-tracking.md).
+>As informações relacionadas aos detalhes do delivery estão disponíveis [nesta seção](../../delivery/using/about-message-tracking.md).
 
 ## Rastreamento da execução {#execution-tracking}
 
 Você pode consultar o status de clicando em **[!UICONTROL Deliveries]** Deliveries, acessível na página inicial do Adobe Campaign. Consulte [Rastreamento de delivery](#delivery-tracking).
 
-As informações relativas aos processos executados em uma campanha são coletadas na guia **[!UICONTROL Edit > Audit]** da campanha. Você pode exibir a lista de remessas na campanha. [Saiba mais](#tracking-a-campaign).
+As informações relativas aos processos executados em uma campanha são coletadas na guia **[!UICONTROL Edit > Audit]** da campanha. Você pode visualizar a lista de deliveries na campanha. [Saiba mais](#tracking-a-campaign).
