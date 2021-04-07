@@ -6,18 +6,18 @@ description: Utilização de um template de formulário web
 audience: web
 content-type: reference
 topic-tags: web-forms
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 11ff62238a8fb73658f2263c25dbeb27d2e0fb23
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '211'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
 
-# Usar um modelo de formulário web{#using-a-web-form-template}
+# Utilização de um modelo de formulário web{#using-a-web-form-template}
 
-Os templates são configurações reutilizáveis que permitem criar novos formulários. Por padrão, os modelos de formulário são armazenados com os modelos de aplicações web no nó **[!UICONTROL Resources > Templates > Web application templates]**.
+Os modelos são configurações reutilizáveis que permitem criar novos formulários. Por padrão, os modelos de formulário são armazenados com os modelos de aplicações web no nó **[!UICONTROL Resources > Templates > Web application templates]**.
 
 Aqui é possível criar novos modelos ou alterar um formulário existente em um modelo.
 
