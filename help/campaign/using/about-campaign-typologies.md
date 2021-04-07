@@ -6,9 +6,9 @@ description: Sobre tipologias de campanha
 audience: campaign
 content-type: reference
 topic-tags: campaign-optimization
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 87028ec81a8cae6793d45d7c840511b59cd0287c
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '495'
 ht-degree: 100%
 
@@ -78,7 +78,7 @@ Este vídeo ensina a implementar o gerenciamento de fadiga no Adobe Campaign Cla
 
 >[!VIDEO](https://video.tv.adobe.com/v/25091?quality=12)
 
-Vídeos extras sobre procedimentos do Campaign estão disponíveis [aqui](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html?lang=pt-BR).
+Vídeos explicativos extras sobre o Campaign estão disponíveis [aqui](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html?lang=pt-BR).
 
 **Tópicos relacionados**
 
