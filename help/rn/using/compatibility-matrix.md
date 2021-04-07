@@ -1,19 +1,19 @@
 ---
 solution: Campaign Classic
 product: campaign
-title: Matriz de compatibilidade para Campaign Classic
+title: Matriz de compatibilidade do Campaign Classic
 description: Matriz de compatibilidade do Campaign Classic
 feature: Visão geral
-role: Profissional
-level: Iniciante
+role: Business Practitioner
+level: Beginner
+exl-id: b8c1f287-06f4-4c34-8cca-b0c7676abbc2
 translation-type: tm+mt
-source-git-commit: b77a56a97e499f60c092fae45c7809f7bfd9f2ea
+source-git-commit: 6854d06f8dc445b56ddfde7777f02916a60f2b63
 workflow-type: tm+mt
-source-wordcount: '527'
-ht-degree: 97%
+source-wordcount: '524'
+ht-degree: 98%
 
 ---
-
 
 # Matriz de compatibilidade{#compatibility-matrix}
 
