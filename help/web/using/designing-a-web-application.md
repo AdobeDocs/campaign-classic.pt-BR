@@ -6,16 +6,16 @@ description: Criação de uma aplicação web
 audience: web
 content-type: reference
 topic-tags: web-applications
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 11ff62238a8fb73658f2263c25dbeb27d2e0fb23
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '361'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
 
-# Criar uma aplicação Web{#designing-a-web-application}
+# Criar um aplicativo web{#designing-a-web-application}
 
 Aplicativos web são criados e gerenciados de acordo com o mesmo princípio de [pesquisas online](../../web/using/about-surveys.md).
 
