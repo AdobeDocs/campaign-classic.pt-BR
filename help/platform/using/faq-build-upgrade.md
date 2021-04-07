@@ -6,14 +6,14 @@ description: Perguntas frequentes sobre atualizações de build do Campaign
 audience: platform
 content-type: reference
 topic-tags: starting-with-adobe-campaign
+exl-id: 85e2135d-a1a3-44f0-a4f9-de38db5c8726
 translation-type: tm+mt
-source-git-commit: 7b1e6dd00943e10dff693d78b3aa7cf2ad3e6727
+source-git-commit: 6854d06f8dc445b56ddfde7777f02916a60f2b63
 workflow-type: tm+mt
 source-wordcount: '2024'
 ht-degree: 98%
 
 ---
-
 
 # Perguntas frequentes de atualização de build {#build-upgrade-faq}
 
@@ -21,7 +21,7 @@ O Adobe Campaign é atualizado regularmente. Se você conhece as [Notas de vers�
 
 É imprescindível que nossos clientes executem a versão mais recente do Adobe Campaign. Isso também nos permite ajudar com muito mais eficiência em caso de problemas. Identificar, reproduzir e corrigir um problema em uma build antiga geralmente leva mais tempo, sem mencionar que alguns problemas que você pode encontrar podem muito bem já terem sido corrigidos em uma nova versão da build.
 
-[!DNL Gold Standard] O é a versão de suporte a longo prazo do Campaign Classic. Como um usuário hospedado [!DNL Gold Standard], você se beneficia automaticamente da atualização [!DNL Gold Standard] com a versão estável mais recente, sem ter de tomar nenhuma ação. Os clientes locais e híbridos também podem se beneficiar das versões [!DNL Gold Standard]. Se você migrar de um build antigo, recomendamos que atualize primeiro para essa versão. [Saiba mais](../../rn/using/gs-overview.md).
+[!DNL Gold Standard] O é a versão de suporte a longo prazo do Campaign Classic. Como um usuário hospedado [!DNL Gold Standard], você se beneficia automaticamente da atualização [!DNL Gold Standard] com a versão estável mais recente, sem ter de tomar nenhuma ação. Os clientes locais e híbridos também podem se beneficiar das versões [!DNL Gold Standard]. Se você migrar de uma compilação antiga, recomendamos atualizar primeiro para essa versão. [Saiba mais](../../rn/using/gs-overview.md).
 
 ## O que é uma atualização de build?
 
