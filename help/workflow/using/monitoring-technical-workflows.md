@@ -6,11 +6,11 @@ description: Monitoramento de workflows técnicos
 audience: workflow
 content-type: reference
 topic-tags: use-cases
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 278dec636373b5ccd3b631bd29607ebe894d53c3
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '518'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -23,7 +23,7 @@ Outras maneiras de monitorar os diferentes processos do Campaign são apresentad
 
 ## Painel de monitoramento de instância {#instance-monitoring-dashboard}
 
-O painel de monitoramento da instância pode ser acessado por meio da guia **[!UICONTROL Monitoring]** .
+O painel de monitoramento da instância pode ser acessado por meio da guia **[!UICONTROL Monitoring]**.
 
 ![](assets/monitoring_technical_workflows1.png)
 
