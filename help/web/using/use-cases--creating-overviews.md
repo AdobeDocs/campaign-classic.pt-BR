@@ -6,11 +6,11 @@ description: '"Casos de uso: criação de visões gerais"'
 audience: web
 content-type: reference
 topic-tags: web-applications
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 11ff62238a8fb73658f2263c25dbeb27d2e0fb23
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '948'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
