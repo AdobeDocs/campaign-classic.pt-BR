@@ -6,11 +6,11 @@ description: Configuração do acesso ao relatório
 audience: reporting
 content-type: reference
 topic-tags: creating-new-reports
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 278dec636373b5ccd3b631bd29607ebe894d53c3
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '754'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
@@ -29,7 +29,7 @@ O acesso ao relatório pode ser limitado a um contexto específico ou a um espa�
 
 * **[!UICONTROL Single selection]**: o relatório só pode ser acessado quando uma entidade específica for selecionada.
 * **[!UICONTROL Multiple selection]**: o relatório é acessado quando várias entidades são selecionadas.
-* **[!UICONTROL Global]** : o relatório é acessado através da lista de relatórios disponíveis na  **[!UICONTROL Reports]** guia .
+* **[!UICONTROL Global]** : o relatório é acessado por meio da lista de relatórios disponíveis na guia **[!UICONTROL Reports]**.
 
 ### Sequência de exibição {#display-sequence}
 
