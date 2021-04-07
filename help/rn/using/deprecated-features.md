@@ -6,11 +6,11 @@ description: Esta página lista recursos obsoletos e removidos do Adobe Campaign
 feature: Visão geral
 role: Profissional
 level: Iniciante
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: ce60b2bd0a9d75ca429af2f740832b408ce3c48b
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1716'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
