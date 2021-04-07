@@ -1,26 +1,26 @@
 ---
 solution: Campaign Classic
 product: campaign
-title: Público-alvo da campanha de marketing
-description: Saiba como definir o público-alvo de suas campanhas de marketing
+title: Audiência da campanha de marketing
+description: Saiba como definir a audiência das campanhas de marketing
 audience: campaign
 content-type: reference
 topic-tags: orchestrate-campaigns
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 87028ec81a8cae6793d45d7c840511b59cd0287c
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1485'
-ht-degree: 90%
+ht-degree: 100%
 
 ---
 
 
-# Selecione o público-alvo de suas campanhas {#marketing-campaign-deliveries}
+# Selecionar a audiência de suas campanhas {#marketing-campaign-deliveries}
 
 Em uma campanha de marketing, para cada delivery, é possível definir:
 
-* O público – Saiba mais em [Criação de público em um workflow](#building-the-main-target-in-a-workflow) e [Seleção da população do público alvo](#selecting-the-target-population).
-* Um grupo de controle - Saiba mais em [nesta seção](#defining-a-control-group).
+* A audiência – saiba mais em [Criação de audiência em um fluxo de trabalho](#building-the-main-target-in-a-workflow) e [Seleção da população-alvo](#selecting-the-target-population).
+* Um grupo de controle ‒ saiba mais [nesta seção](#defining-a-control-group).
 * Seed addresses – saiba mais [nesta seção](../../delivery/using/about-seed-addresses.md).
 
 Algumas dessas informações podem ser herdadas do [template de campanha](../../campaign/using/marketing-campaign-templates.md#campaign-templates).
@@ -29,9 +29,9 @@ Para criar o público alvo do delivery, você pode definir critérios de filtrag
 
 ## Enviar para um grupo
 
-Você pode importar uma população para uma lista e depois direcionar essa lista nas remessas. Para fazer isso, siga as etapas abaixo:
+Você pode importar uma população para uma lista e, depois, direcionar essa lista nos deliveries. Para fazer isso, siga as etapas abaixo:
 
-1. Edite o delivery relacionado e clique no link **[!UICONTROL To]** para alterar a população do target.
+1. Edite o delivery em questão e clique no link **[!UICONTROL To]** para mudar a população direcionada.
 
 1. Na guia **[!UICONTROL Main target]**, selecione a opção **[!UICONTROL Defined via the database]** e clique em **[!UICONTROL Add]** para selecionar os recipients.
 
@@ -41,13 +41,13 @@ Você pode importar uma população para uma lista e depois direcionar essa list
 
 ![](assets/s_user_target_group_next.png)
 
-## Criar o público-alvo em um workflow de campanha {#building-the-main-target-in-a-workflow}
+## Criar a audiência em um fluxo de trabalho de campanha {#building-the-main-target-in-a-workflow}
 
-O target principal de um delivery também pode ser definido no workflow da campanha: esse ambiente gráfico permite criar um target usando queries, testes e operadores: união, desduplicação, compartilhamento etc.
+O objetivo principal de um delivery também pode ser definido no fluxo de trabalho da campanha: este ambiente gráfico permite que você crie um destino usando consultas, testes e operadores: união, desduplicação, compartilhamento etc.
 
 >[!IMPORTANT]
 >
->Você não deve adicionar mais de 28 workflows em uma campanha. Acima desse limite, os workflows adicionais não ficam visíveis na interface e podem gerar erros.
+>Você não deve adicionar mais de 28 workflows a uma campanha. Acima desse limite, os workflows adicionais não ficam visíveis na interface e podem gerar erros.
 
 ### Criar o workflow {#creating-a-targeting-workflow}
 
@@ -165,7 +165,7 @@ Os ícones da barra de ferramentas permitem tomar medidas referentes à execuç�
 
    No Explorer, selecione **[!UICONTROL Administration > Production > Object created automatically > Campaign workflows]** para acessar e atuar em todos os workflows da campanha.
 
-   Você pode interromper o workflow definitivamente clicando no ícone **[!UICONTROL Actions]** e selecionando a interrupção **[!UICONTROL Unconditional]**. Esta ação encerra o workflow da campanha.
+   Você pode interromper o workflow definitivamente clicando no ícone **[!UICONTROL Actions]** e selecionando a interrupção **[!UICONTROL Unconditional]**. Esta ação encerra o fluxo de trabalho da campanha.
 
    ![](assets/s_user_segmentation_stop_unconditional.png)
 
@@ -177,7 +177,7 @@ O grupo de controle pode ser extraído do target principal e/ou vir de um grupo 
 
 ### Ativar o grupo de controle para uma campanha {#activating-the-control-group-for-a-campaign}
 
-Você pode definir um grupo de controle no nível da campanha, nesse caso, o grupo de controle será aplicado a cada delivery da campanha relacionado.
+Você pode definir um grupo de controle no nível da campanha. Nesse caso, o grupo de controle será aplicado a cada delivery da campanha em questão.
 
 1. Edite a campanha relacionada e clique na guia **[!UICONTROL Edit]**.
 1. Clique em **[!UICONTROL Advanced campaign settings]**.
@@ -210,7 +210,7 @@ Por padrão, a configuração do grupo de controle definida no nível da campanh
 
 O procedimento de configuração é apresentado em [Extração do grupo de controle do público-alvo principal](#extracting-the-control-group-from-the-main-target) e [Adicionar um grupo de controle](#adding-a-population).
 
-### Extrair o grupo de controle do destino principal {#extracting-the-control-group-from-the-main-target}
+### Extração do grupo de controle do target principal {#extracting-the-control-group-from-the-main-target}
 
 Você pode extrair recipients do target principal do delivery. Nesse caso, os recipients serão retirados do target das ações de delivery afetadas por essa configuração. Essa extração pode ser aleatória ou pode ser resultado da classificação de recipients.
 
@@ -238,10 +238,10 @@ Você pode definir uma nova população a ser usada como um grupo de controle. E
 >O editor de query do Adobe Campaign é apresentado [nesta seção](../../workflow/using/query.md).
 
 
-#### Vídeo tutorial {#create-email-video}
+#### Vídeo de tutorial {#create-email-video}
 
 Este vídeo explica como criar uma campanha e um email no Adobe Campaign.
 
 >[!VIDEO](https://video.tv.adobe.com/v/25604?quality=12)
 
-Vídeos extras sobre procedimentos do Campaign estão disponíveis [aqui](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html?lang=pt-BR).
+Vídeos extras explicativos do Campaign estão disponíveis [aqui](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html?lang=pt-BR).
