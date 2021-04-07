@@ -4,16 +4,16 @@ product: campaign
 title: Atualizações da documentação do Adobe Campaign Classic
 description: Esta página lista todos os novos recursos e atualizações na documentação do Adobe Campaign Classic
 feature: Visão geral
-role: Profissional
-level: Iniciante
+role: Business Practitioner
+level: Beginner
+exl-id: 07c1f4a3-cf16-4a9b-b402-e13258799f91
 translation-type: tm+mt
-source-git-commit: 57c1ca827beac9a3c95e63ca17fdb43be237eb28
+source-git-commit: 6854d06f8dc445b56ddfde7777f02916a60f2b63
 workflow-type: tm+mt
-source-wordcount: '4275'
-ht-degree: 94%
+source-wordcount: '4272'
+ht-degree: 96%
 
 ---
-
 
 # Atualizações de documentação{#documentation-updates}
 
@@ -27,18 +27,18 @@ O [Introdução à seção SMS](../../delivery/using/sms-channel.md) foi reorgan
 
 A página &quot;Opções de ajuda e suporte&quot; do Campaign Classic foi integrada à documentação principal. [Leia mais](../../support.md)
 
-Uma nova seção foi adicionada com práticas recomendadas e verificações a serem executadas em relação à segurança e privacidade. [Leia mais](../../installation/using/get-started-security-privacy.md)
+Uma nova seção foi adicionada com práticas recomendadas e verificações que devem ser executadas em relação à segurança e à privacidade. [Leia mais](../../installation/using/get-started-security-privacy.md)
 
-O [capítulo de gerenciamento de permissões](../../platform/using/access-management.md) foi aprimorado e dividido em seções, incluindo detalhes sobre [Operadores](../../platform/using/access-management-operators.md) , [Grupos de operadores](../../platform/using/access-management-groups.md) , [Direitos nomeados](../../platform/using/access-management-named-rights.md) e [Gerenciamento de pastas](../../platform/using/access-management-folders.md) .
+O [capítulo de gerenciamento de permissões](../../platform/using/access-management.md) foi aprimorado e dividido em seções, incluindo detalhes sobre [Operadores](../../platform/using/access-management-operators.md), [Grupos de operadores](../../platform/using/access-management-groups.md), [Direitos nomeados](../../platform/using/access-management-named-rights.md) e [Gerenciamento de pastas](../../platform/using/access-management-folders.md).
 
-Saiba como criar e gerenciar suas campanhas por meio dessas novas páginas:
-* [Criar e configurar templates de campanha](../../campaign/using/marketing-campaign-templates.md)
+Saiba como criar e gerenciar campanhas por meio destas novas páginas:
+* [Criar e configurar modelos de campanha](../../campaign/using/marketing-campaign-templates.md)
 * [Deliveries de campanha de marketing](../../campaign/using/marketing-campaign-deliveries.md)
-* [Selecione o público-alvo de suas campanhas](../../campaign/using/marketing-campaign-target.md)
+* [Selecionar a audiência das campanhas](../../campaign/using/marketing-campaign-target.md)
 * [Gerenciar documentos associados](../../campaign/using/marketing-campaign-assets.md)
 * [Configurar e gerenciar o processo de aprovação](../../campaign/using/marketing-campaign-approval.md)
 
-Foram adicionadas informações na seção de atividade **[!UICONTROL Advanced JavaScript]** sobre como usar o método task.setCompleted() para encerrar a tarefa e impedir futuras recuperações. [Leia mais](../../workflow/using/sql-code-and-javascript-code.md#adv-js-code-desc)
+Foram adicionadas informações à seção de atividade **[!UICONTROL Advanced JavaScript]** sobre como usar o método task.setCompleted() para finalizar a tarefa e impedir futuras recuperações. [Leia mais](../../workflow/using/sql-code-and-javascript-code.md#adv-js-code-desc)
 
 A seção [Deliverability](../../delivery/using/about-deliverability.md) foi atualizada e agora inclui links para o novo [Adobe Deliverability Best Practice Guide](https://experienceleague.corp.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/introduction.html). Todas as informações genéricas relacionadas à capacidade de entrega que podem ser aplicadas a várias soluções do Adobe foram movidas para o [Guia de Práticas Recomendadas Apêndice](https://experienceleague.corp.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/additional-resources/general-resources.html#additional-resources).
 
