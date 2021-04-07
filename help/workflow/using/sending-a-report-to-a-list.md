@@ -6,11 +6,11 @@ description: Saiba como enviar um relatório para uma lista com um workflow
 audience: workflow
 content-type: reference
 topic-tags: use-cases
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 278dec636373b5ccd3b631bd29607ebe894d53c3
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '623'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -29,7 +29,7 @@ As principais etapas de implementação para este caso de uso são:
 
 ## Etapa 1 – Criação da lista de recipients {#step-1--creating-the-recipient-list}
 
-Vá para a guia **[!UICONTROL Profiles and targets]**, clique no link **[!UICONTROL Lists]** e, em seguida, no botão **[!UICONTROL Create]**. Selecione **[!UICONTROL New list]** e crie uma nova lista de recipients para a qual o relatório será enviado.
+Acesse a guia **[!UICONTROL Profiles and targets]**, clique no link **[!UICONTROL Lists]** e depois no botão **[!UICONTROL Create]**. Selecione **[!UICONTROL New list]** e crie uma nova lista de recipients para a qual o relatório será enviado.
 
 ![](assets/use_case_report_1.png)
 
