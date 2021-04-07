@@ -6,11 +6,11 @@ description: Gerenciamento de templates
 audience: web
 content-type: reference
 topic-tags: editing-html-content
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 278dec636373b5ccd3b631bd29607ebe894d53c3
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '114'
-ht-degree: 92%
+ht-degree: 100%
 
 ---
 
@@ -29,7 +29,7 @@ Para adicionar um modelo, consulte [Opções globais](../../web/using/content-ed
 
 Após configurar um delivery, você pode salvá-lo como template para reutilização de deliveries futuros.
 
-Na guia **Campaigns**, abra o delivery escolhido. Clique no botão **Salvar como template**, nomeie o template e salve.
+Na guia **Campanhas**, abra o delivery escolhido. Clique no botão **Salvar como template**, nomeie o template e salve.
 
 ![](assets/dce_save_model.png)
 
