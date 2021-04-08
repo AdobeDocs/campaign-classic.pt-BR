@@ -6,20 +6,20 @@ description: Configuração
 audience: configuration
 content-type: reference
 topic-tags: navigation-hierarchy
+exl-id: c7ae7240-0c12-4420-bbb3-4268c9ade3e7
 translation-type: tm+mt
-source-git-commit: 4a17b25516bd9cec409a16cff1e336c13f0df5a4
+source-git-commit: d7eabfbebf016d2632d95d34a5b36719ccc1d88a
 workflow-type: tm+mt
 source-wordcount: '1191'
 ht-degree: 2%
 
 ---
 
-
 # Configurar a árvore de navegação do Campaign Explorer{#configuration}
 
 Como um usuário especialista, você pode adicionar pastas à árvore do explorador e personalizá-la.
 
-Saiba mais sobre o explorador do Campaign e a hierarquia de navegação [nesta seção](../../platform/using/adobe-campaign-workspace.md#about-navigation-hierarchy).
+Saiba mais sobre o explorador do Campaign e a hierarquia de navegação [nesta seção](../../platform/using/adobe-campaign-explorer.md#about-navigation-hierarchy).
 
 Os tipos de pastas usados pela lista de navegação são descritos em um documento XML que obedece à gramática do schema **xtk:navtree**.
 
@@ -312,4 +312,3 @@ A configuração do **`<nodemodel>`** no link da pasta chamada &quot;folder&quot
 ...
 </nodeModel>
 ```
-
