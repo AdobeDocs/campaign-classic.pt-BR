@@ -7,9 +7,9 @@ hide: true
 hidefromtoc: true
 exl-id: 7db02123-2e2a-40d9-8385-728ff69985e4
 translation-type: tm+mt
-source-git-commit: 2c47a3e42260a0f04d2c9a665f28c532212997f8
+source-git-commit: d7eabfbebf016d2632d95d34a5b36719ccc1d88a
 workflow-type: tm+mt
-source-wordcount: '1114'
+source-wordcount: '1107'
 ht-degree: 14%
 
 ---
@@ -117,7 +117,6 @@ A atualização para uma das novas versões listadas abaixo é obrigatória:
 
 * Gold Standard 11. [Saiba mais](../rn/using/gold-standard.md)
 * Campaign versão 21.1.1. [Saiba mais](../rn/using/latest-release.md)
-* Campaign versão 20.3.3. [Saiba mais](../rn/using/release--20-3.md)
 * Campaign versão 20.2.5. [Saiba mais](../rn/using/release--20-2.md)
 * Campaign versão 19.1.8. [Saiba mais](../rn/using/release--19-1.md)
 
@@ -135,7 +134,7 @@ Além disso, para ambientes híbridos, os clientes precisam garantir que o pipel
 
 ### API do provedor APNs com base em HTTP/2
 
-O serviço Apple Push Notification (APNs) não oferecerá mais suporte ao protocolo binário herdado a partir de **31 de março de 2021**. [Leia mais](https://developer.apple.com/news/?id=c88acm2b).
+Desde **31 de março de 2021**, o serviço Apple Push Notification (APNs) não oferece mais suporte ao protocolo binário herdado. [Leia mais](https://developer.apple.com/news/?id=c88acm2b).
 
 **Você é afetado?**
 
@@ -151,7 +150,7 @@ Como cliente local/híbrido, você precisa atualizar sua configuração. [Saiba 
 
 ### Atualizações de certificado raiz APNs
 
-Em 29 de março de 2021, uma atualização de infraestrutura do serviço de notificação por push (APNs) da Apple afetará o canal do Adobe Campaign Classic iOS. Uma alteração na configuração do sistema operacional é **mandatory** para evitar a interrupção do canal de push do iOS.
+Em 29 de março de 2021, uma atualização de infraestrutura do serviço de notificação por push (APNs) da Apple afetou o canal do Adobe Campaign Classic iOS. Uma alteração na configuração do sistema operacional é **mandatory** para evitar a interrupção do canal de push do iOS.
 
 Saiba mais sobre as alterações de APNs [nesta página](https://developer.apple.com/news/?id=7gx0a2lp).
 
