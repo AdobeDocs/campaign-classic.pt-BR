@@ -5,14 +5,14 @@ title: Nota técnica
 description: Nota técnica
 hide: true
 hidefromtoc: true
+exl-id: 7db02123-2e2a-40d9-8385-728ff69985e4
 translation-type: tm+mt
-source-git-commit: bdd746120f2162cf48eeb9d519513656bd4e75aa
+source-git-commit: 2c47a3e42260a0f04d2c9a665f28c532212997f8
 workflow-type: tm+mt
 source-wordcount: '1114'
 ht-degree: 14%
 
 ---
-
 
 # Atualizações de configuração do Adobe Campaign - março de 2021 {#acc-config-updates}
 
@@ -26,7 +26,7 @@ Por motivos de segurança, agora é necessário atualizar para uma das versões 
 
 >[!NOTE]
 >
->Para dúvidas sobre essas alterações, entre em contato com o [Adobe Customer Care](https://helpx.adobe.com/br/enterprise/admin-guide.html).
+>Para dúvidas sobre essas alterações, entre em contato com o [Adobe Customer Care](https://helpx.adobe.com/br/enterprise/admin-guide.html/br/enterprise/using/support-for-experience-cloud.ug.html).
 
 
 ## Atualizações de segurança {#acc-security-updates}
@@ -118,7 +118,7 @@ A atualização para uma das novas versões listadas abaixo é obrigatória:
 * Gold Standard 11. [Saiba mais](../rn/using/gold-standard.md)
 * Campaign versão 21.1.1. [Saiba mais](../rn/using/latest-release.md)
 * Campaign versão 20.3.3. [Saiba mais](../rn/using/release--20-3.md)
-* Campaign versão 20.2.4. [Saiba mais](../rn/using/release--20-2.md)
+* Campaign versão 20.2.5. [Saiba mais](../rn/using/release--20-2.md)
 * Campaign versão 19.1.8. [Saiba mais](../rn/using/release--19-1.md)
 
 Saiba como verificar sua versão [nesta seção](../platform/using/launching-adobe-campaign.md#getting-your-campaign-version).
@@ -147,7 +147,7 @@ Saiba como verificar sua versão [nesta seção](../platform/using/launching-ado
 
 Como cliente hospedado, se você tiver atualizado para a nova build, o Adobe já atualizou suas instâncias para a API baseada em HTTP/2.
 
-Como cliente local/hospedado, é necessário atualizar sua configuração. [Saiba como migrar para HTTP/2](https://helpx.adobe.com/campaign/kb/migrate-to-apns-http2.html)
+Como cliente local/híbrido, você precisa atualizar sua configuração. [Saiba como migrar para HTTP/2](https://helpx.adobe.com/campaign/kb/migrate-to-apns-http2.html)
 
 ### Atualizações de certificado raiz APNs
 
@@ -170,6 +170,6 @@ Como cliente local/híbrido, você precisa atualizar sua configuração para gar
 ## Links úteis
 
 * [Atualizar seu ambiente](../production/using/build-upgrade.md)
-* [Perguntas frequentes de atualização de build](../platform/using/faq-build-upgrade.md)
+* [Perguntas frequentes de atualização da compilação](../platform/using/faq-build-upgrade.md)
 * [Baixar a build do Campaign Classic](https://experience.adobe.com/#/downloads/content/software-distribution/br/campaign.html)
 * [Disponibilizar o novo Console do cliente para os usuários](../installation/using/client-console-availability-for-windows.md)
