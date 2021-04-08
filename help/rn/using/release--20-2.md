@@ -4,24 +4,22 @@ product: campaign
 title: Versão 20.2
 description: Versão 20.2
 feature: Visão geral
-role: Profissional
-level: Iniciante
+role: Business Practitioner
+level: Beginner
+exl-id: fcaab1aa-c8f9-4606-b0d8-eb481a38f588
 translation-type: tm+mt
-source-git-commit: a25f9464a762defa5d9a3b45bb60a387c65b7c97
+source-git-commit: 65662a49aefdd6b5f85b39677908696f093779e8
 workflow-type: tm+mt
-source-wordcount: '2833'
-ht-degree: 89%
+source-wordcount: '2830'
+ht-degree: 92%
 
 ---
 
-
 # Versão 20.2{#release-20-2}
-
-![](assets/do-not-localize/cp-icon.png) **Nova versão de outubro do Painel de controle do Campaign** com configuração de domínio usando CNAMEs e novos recursos de monitoramento de banco de dados. [Saiba mais](https://docs.adobe.com/content/help/pt-BR/control-panel/using/release-notes.html).
 
 ## ![](assets/do-not-localize/green_2.png) Versão 20.2.5 - Compilação 9188 {#release-20-2-5-build-9188}
 
-_31 de março de 2020_
+_31 de março de 2021_
 
 **Aprimoramentos**
 
@@ -44,9 +42,9 @@ _22 de dezembro de 2020_
 
 >[!CAUTION]
 >
-> * Esta versão vem com um novo protocolo de conexão: se você estiver se conectando ao Campaign pelo Adobe Identity Service (IMS), a atualização é obrigatória para o servidor do Campaign e o console do cliente poderem se conectar ao Campaign depois de **30 de junho de 2021**.
+> * Esta versão é fornecida com um novo protocolo de conexão: se você estiver se conectando ao Campaign pelo Serviço de identidade da Adobe (IMS), a atualização será obrigatória para o servidor do Campaign e o console do cliente poderem se conectar ao Campaign após **30 de junho de 2021**.
 > * Esta versão vem com uma [correção de segurança](https://helpx.adobe.com/security/products/campaign/apsb21-04.html): a atualização é obrigatória para reforçar a segurança do ambiente.
-> * Se estiver usando a integração Experience Cloud Triggers por meio da autenticação oAuth, será necessário mover para o Adobe I/O conforme descrito [nesta página](../../integrations/using/configuring-adobe-io.md). O modo de autenticação oAuth herdado com o Campaign será desativado em **30 de novembro de 2021**.
+> * Se você estiver usando a integração dos acionadores da Experience Cloud por meio da autenticação oAuth, será necessário migrar para o Adobe I/O conforme descrito [nesta página](../../integrations/using/configuring-adobe-io.md). O modo de autenticação oAuth herdado com o Campaign será desativado em **30 de novembro de 2021**.
 
 
 **Aprimoramentos**
@@ -82,7 +80,9 @@ _22 de dezembro de 2020_
 
 
 
-## ![](assets/do-not-localize/red_2.png) Versão 20.2.3 - Compilação 9182 {#release-20-2-3-build-9182}
+![](assets/do-not-localize/cp-icon.png) **Nova versão de outubro do Painel de controle do Campaign** com configuração de domínio usando CNAMEs e novos recursos de monitoramento de banco de dados. [Saiba mais](https://docs.adobe.com/content/help/pt-BR/control-panel/using/release-notes.html).
+
+## ![](assets/do-not-localize/red_2.png) Versão 20.2.3 - Build 9182 {#release-20-2-3-build-9182}
 
 _11 de setembro de 2020_
 
