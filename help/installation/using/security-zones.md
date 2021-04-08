@@ -8,15 +8,15 @@ content-type: reference
 topic-tags: additional-configurations
 exl-id: 67dda58f-97d1-4df5-9648-5f8a1453b814
 translation-type: tm+mt
-source-git-commit: 830ec0ed80fdc6e27a8cc782b0e4b79abf033450
+source-git-commit: e31d386af4def80cdf258457fc74205b1ca823b3
 workflow-type: tm+mt
-source-wordcount: '1013'
-ht-degree: 2%
+source-wordcount: '1462'
+ht-degree: 11%
 
 ---
 
 
-# Definir zonas de segurança {#defining-security-zones}
+# Definir zonas de segurança (no local){#defining-security-zones}
 
 Cada operador precisa ser vinculado a uma zona para fazer logon em uma instância e o IP do operador deve ser incluído nos endereços ou conjuntos de endereços definidos na zona de segurança. A configuração da zona de segurança é realizada no arquivo de configuração do servidor do Adobe Campaign.
 
@@ -28,7 +28,7 @@ Os operadores são vinculados a uma zona de segurança a partir do seu perfil no
 >
 >Como cliente **hospedado**, se você puder acessar [Painel de controle do Campaign](https://experienceleague.adobe.com/docs/control-panel/using/control-panel-home.html?lang=pt-BR), poderá usar a interface de autoatendimento da Zona de segurança. [Saiba mais](https://experienceleague.adobe.com/docs/control-panel/using/instances-settings/ip-allow-listing-instance-access.html)
 >
->Outros clientes **híbridos/hospedados** precisam entrar em contato com o Adobe para configurar zonas de segurança para suas instâncias.
+>Outros clientes **híbridos/hospedados** precisam entrar em contato com a equipe de suporte do Adobe para adicionar IP à lista de permissões.
 
 
 ## Criar zonas de segurança {#creating-security-zones}
@@ -36,7 +36,7 @@ Os operadores são vinculados a uma zona de segurança a partir do seu perfil no
 Uma zona é definida por:
 
 * um ou mais intervalos de endereços IP (IPv4 e IPv6)
-* um nome técnico vinculado a cada intervalo de endereços IP
+* um nome técnico associado a cada intervalo de endereços IP
 
 As zonas de segurança são interbloqueadas, o que significa que definir uma nova zona dentro de outra reduz o número de operadores que podem fazer logon nela, enquanto aumenta os direitos atribuídos a cada operador.
 
@@ -218,3 +218,36 @@ Depois que as zonas forem definidas e a enumeração **[!UICONTROL Security zone
    ![](assets/zone_operator_selection.png)
 
 1. Clique em **[!UICONTROL OK]** e salve as modificações para aplicar essas alterações.
+
+
+
+## Recomendações
+
+* Certifique-se de que seu proxy reverso não seja permitido na sub-rede. Se for o caso, o tráfego **all** será detectado como proveniente deste IP local, então será confiável.
+
+* Minimize o uso de sessionTokenOnly=&quot;true&quot;:
+
+   * Aviso: Se este atributo for definido como true, o operador poderá ser exposto a um **ataque CRSF**.
+   * Além disso, o cookie sessionToken não é definido com um sinalizador httpOnly, portanto, algum código javascript do lado do cliente pode lê-lo.
+   * No entanto, o Centro de Mensagens em várias células de execução precisa de sessionTokenOnly: crie uma nova zona de segurança com sessionTokenOnly definido como &quot;true&quot; e adicione **somente o(s) IP(s) necessário(s)** nessa zona.
+
+* Quando possível, defina todos allowHTTP, showErrors como false (não para localhost) e verifique-os.
+
+   * allowHTTP = &quot;false&quot;: força os operadores a usar HTTPS
+   * showErrors = &quot;false&quot;: oculta erros técnicos (incluindo os SQL). Impede a exibição de informações demais, mas reduz a capacidade do profissional de marketing resolver erros (sem solicitar mais informações de um administrador)
+
+* Defina allowDebug como true somente nos IPs usados pelos usuários/administradores de marketing que precisam criar pesquisas (na pré-visualização, na verdade), aplicativos da Web e relatórios. Esse sinalizador permite que esses IPs obtenham regras de retransmissão exibidas e os executa.
+
+* Nunca defina allowEmptyPassword, allowUserPassword, allowSQLInjection como true. Estes atributos estão aqui apenas para permitir uma fácil migração das versões 5 e 6.0:
+
+   * **** Os operadores allowEmptyPasswordlets têm uma senha vazia. Se este for o seu caso, notifique todos os seus operadores para eles definirem uma senha com um prazo. Depois que esse prazo expirar, altere esse atributo para false.
+
+   * **** Os operadores allowUserPasswordlets enviam suas credenciais como parâmetros (para que sejam registrados por apache/IIS/proxy). Esse recurso foi usado anteriormente para simplificar o uso da API. Você pode verificar em seu guia (ou na especificação) se alguns aplicativos de terceiros usam isso. Em caso positivo, é necessário notificá-los para alterar a maneira como eles usam nossa API e, assim que possível, remover esse recurso.
+
+   * **** allowSQLInjection permite que o usuário realize injeções de SQL usando uma sintaxe antiga. Assim que possível, execute as correções descritas em [this page](../../migration/using/general-configurations.md) para poder definir este atributo como false. É possível usar /nl/jsp/ping.jsp?zones=true para verificar a configuração de sua zona de segurança. Esta página exibe o status ativo das medidas de segurança (calculadas com esses sinalizadores de segurança) para o IP atual.
+
+* HttpOnly cookie/useSecurityToken: consulte o sinalizador **sessionTokenOnly** .
+
+* Minimizar IPs adicionados à lista de permissões: adicionamos os 3 intervalos para redes privadas em zonas de segurança, de modo rápido e prático. É improvável usar todos esses endereços IP. Então mantenha apenas os que você precisa.
+
+* Atualize o operador interno/webApp para estar acessível somente no host local.
