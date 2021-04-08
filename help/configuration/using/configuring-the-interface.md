@@ -6,14 +6,14 @@ description: Configuração da interface
 audience: configuration
 content-type: reference
 topic-tags: use-a-custom-recipient-table
+exl-id: 9f50f258-845e-4895-b1ef-b73744dea326
 translation-type: tm+mt
-source-git-commit: d6327cb5307ab5d37c15afa45dfd180ef04cb5a2
+source-git-commit: d7eabfbebf016d2632d95d34a5b36719ccc1d88a
 workflow-type: tm+mt
 source-wordcount: '303'
 ht-degree: 6%
 
 ---
-
 
 # Configuração da interface{#configuring-the-interface}
 
@@ -70,7 +70,7 @@ A criação de um novo formulário permitirá exibir e editar os dados da tabela
 
    >[!NOTE]
    >
-   >Para obter mais informações sobre arquivos do tipo **navtree**, consulte [esta página](../../platform/using/adobe-campaign-workspace.md#about-navigation-hierarchy).
+   >Para obter mais informações sobre arquivos do tipo **navtree**, consulte [esta página](../../platform/using/adobe-campaign-explorer.md#about-navigation-hierarchy).
 
    No exemplo atual, o arquivo **navtree** deve ser baseado no schema **cus:individual** e, portanto, ter o seguinte formulário:
 
@@ -91,4 +91,3 @@ A criação de um novo formulário permitirá exibir e editar os dados da tabela
    ```
 
 1. Salve a criação.
-
