@@ -10,10 +10,10 @@ internal: n
 snippet: y
 exl-id: ab30f697-3022-4a29-bbdb-14ca12ec9c3e
 translation-type: tm+mt
-source-git-commit: 6854d06f8dc445b56ddfde7777f02916a60f2b63
+source-git-commit: f3ca92325f70cb3b9cca1ec5f6b7ddb5a02f9159
 workflow-type: tm+mt
-source-wordcount: '577'
-ht-degree: 100%
+source-wordcount: '583'
+ht-degree: 98%
 
 ---
 
@@ -74,9 +74,9 @@ Antes de iniciar esta implementação, verifique se você tem:
 
    ![](assets/do-not-localize/adobe_io_5.png)
 
-1. Escolha qualquer **[!UICONTROL Product profile]** existente ou crie um novo, se necessário. Em seguida, clique em **[!UICONTROL Save configured API]**.
+1. Escolha qualquer **[!UICONTROL Product profile]** existente ou crie um novo, se necessário. Nenhuma permissão é necessária para este **[!UICONTROL Product profile]**. Para obter mais informações sobre [!DNL Analytics] **[!UICONTROL Product Profiles]**, consulte a [documentação do Adobe Analytics](https://experienceleague.adobe.com/docs/analytics/admin/admin-console/home.html?lang=pt-BR#admin-console).
 
-   Para obter mais informações sobre [!DNL Analytics] **[!UICONTROL Product Profiles]**, consulte a [documentação do Adobe Analytics](https://experienceleague.adobe.com/docs/analytics/admin/admin-console/home.html?lang=pt-BR#admin-console).
+   Em seguida, clique em **[!UICONTROL Save configured API]**.
 
    ![](assets/do-not-localize/adobe_io_6.png)
 
