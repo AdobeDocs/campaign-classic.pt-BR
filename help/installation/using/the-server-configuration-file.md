@@ -8,7 +8,7 @@ content-type: reference
 topic-tags: appendices
 exl-id: 70cd6a4b-c839-4bd9-b9a7-5a12e59c0cbf
 translation-type: tm+mt
-source-git-commit: 0c83c989c7e3718a989a4943f5cde7ad4717fddc
+source-git-commit: e165af411d2580d69694f1730116cb198418bfe2
 workflow-type: tm+mt
 source-wordcount: '7970'
 ht-degree: 7%
@@ -2814,7 +2814,7 @@ Estes são os diferentes parâmetros do nó **trackinglogd**. Esta é a configur
 
 Aqui estão os diferentes parâmetros do nó **web**. Esta é a configuração do Módulo Web.
 
-Para obter mais informações, consulte esta [seção](../../installation/using/configuring-campaign-server.md#default-port-for-tomcat).
+Para obter mais informações, consulte esta [seção](configuring-campaign-server.md#default-port-for-tomcat).
 
 <table> 
  <thead> 
@@ -2858,13 +2858,13 @@ Para obter mais informações, consulte esta [seção](../../installation/using/
   </tr> 
   <tr> 
    <td> controlPort<br /> </td> 
-   <td> Porta de controle de escuta Tomcat: consulte <a href="../../installation/using/configuring-campaign-server.md#configuring-tomcat" target="_blank">Configuração do Tomcat</a>.<br /> </td> 
+   <td> Porta de controle de escuta Tomcat: consulte <a href="configure-tomcat.md" target="_blank">Configurar Tomcat</a>.<br /> </td> 
    <td> Curto<br /> </td> 
    <td> 8005<br /> </td> 
   </tr> 
   <tr> 
    <td> httpPort<br /> </td> 
-   <td> Porta de escuta HTTP Tomcat: consulte <a href="../../installation/using/configuring-campaign-server.md#configuring-tomcat" target="_blank">Configuração do Tomcat</a>.<br /> </td> 
+   <td> Porta de escuta HTTP Tomcat: consulte <a href="configure-tomcat.md" target="_blank">Configurar Tomcat</a>.<br /> </td> 
    <td> Curto<br /> </td> 
    <td> 8080<br /> </td> 
   </tr> 
@@ -3149,7 +3149,7 @@ Para obter mais informações, consulte [Segurança de página dinâmica e retra
   </tr> 
   <tr> 
    <td> targetUrl<br /> </td> 
-   <td> URL da página de destino: consulte <a href="../../installation/using/configuring-campaign-server.md#configuring-tomcat" target="_blank">Configuração do Tomcat</a>.<br /> </td> 
+   <td> URL da página de destino: consulte <a href="configure-tomcat.md" target="_blank">Configurar Tomcat</a>.<br /> </td> 
    <td> Cadeia de caracteres<br /> </td> 
    <td> <br /> </td> 
   </tr> 
