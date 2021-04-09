@@ -6,14 +6,14 @@ description: 'Configurações gerais '
 audience: migration
 content-type: reference
 topic-tags: configuration
+exl-id: 7aad0e49-8d9c-40c7-9d6a-42fee0ae5870
 translation-type: tm+mt
-source-git-commit: d88815e36f7be1b010dcaeee51013a5da769b4a8
+source-git-commit: b0a1e0596e985998f1a1d02236f9359d0482624f
 workflow-type: tm+mt
-source-wordcount: '2787'
+source-wordcount: '2786'
 ht-degree: 0%
 
 ---
-
 
 # Configurações gerais {#general-configurations}
 
@@ -104,7 +104,7 @@ nlserver config -internalpassword
 
 >[!IMPORTANT]
 >
->A senha **interna** deve ser idêntica para todos os servidores de rastreamento. Para obter mais informações, consulte [esta seção](../../installation/using/campaign-server-configuration.md#internal-identifier) e [esta seção](../../platform/using/access-management.md).
+>A senha **interna** deve ser idêntica para todos os servidores de rastreamento. Para obter mais informações, consulte [esta seção](../../installation/using/configuring-campaign-server.md#internal-identifier) e [esta seção](../../platform/using/access-management.md).
 
 ### Novos recursos na v7 {#new-features-in-v7}
 
@@ -473,7 +473,7 @@ Se você optar por resolver manualmente o conflito, proceda da seguinte maneira:
 
 ## Tomcat {#tomcat}
 
-O servidor Tomcat integrado no Adobe Campaign v7 mudou de versão (Tomcat 7). A pasta de instalação (tomcat-6) também foi alterada (tomcat 7). Após a pós-atualização, verifique se os caminhos vinculam à pasta atualizada (no arquivo **[!UICONTROL serverConf.xml]**):
+O servidor Tomcat integrado no Adobe Campaign v7 mudou de versão. A pasta de instalação (tomcat-6) também foi alterada (tomcat 7). Após a pós-atualização, verifique se os caminhos vinculam à pasta atualizada (no arquivo **[!UICONTROL serverConf.xml]**):
 
 ```
 $(XTK_INSTALL_DIR)/tomcat-8/bin/bootstrap.jar 
@@ -622,7 +622,7 @@ Todos os relatórios padrão usam atualmente o mecanismo de renderização v6.x.
 -->
 Se quiser se beneficiar das novas funcionalidades do relatório, será necessário republicar os relatórios. Para fazer isso, edite o relatório **[!UICONTROL Properties]**, clique em **[!UICONTROL Rendering]** e selecione o mecanismo de renderização v.6.x. Nesse caso, verifique todos os scripts e altere-os, se necessário. Em relação à exportação de PDF, se você adicionou um script específico para o Open Office, isso não funcionará mais com o novo mecanismo de exportação de PDF (PhantomJS).
 
-## Aplicações web {#web-applications}
+## Aplicativos web {#web-applications}
 
 Há duas famílias de aplicações web:
 
