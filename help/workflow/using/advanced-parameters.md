@@ -6,14 +6,14 @@ description: Parâmetros avançados
 audience: workflow
 content-type: reference
 topic-tags: advanced-management
+exl-id: 6c90ac2f-0d2b-48b0-9245-3e5e3a3d027c
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: b0a1e0596e985998f1a1d02236f9359d0482624f
 workflow-type: tm+mt
-source-wordcount: '464'
+source-wordcount: '488'
 ht-degree: 100%
 
 ---
-
 
 # Parâmetros avançados{#advanced-parameters}
 
@@ -49,7 +49,10 @@ Geralmente, essas opções são selecionadas no carrinho clicando com o botão d
 
 ## Afinidade {#affinity}
 
-Este campo permite que você force a execução de uma atividade em uma máquina específica. Para obter mais informações, consulte [Gerenciamento de tendências](../../workflow/using/managing-propensity.md).
+É possível optar forçar a execução de um workflow ou uma atividade de workflow em uma máquina específica. Para fazer isso, é necessário definir uma ou mais tendências no nível do workflow ou da atividade relacionada.
+
+A configuração de workflow de alta disponibilidade é detalhada nesta [seção](../../installation/using/configuring-campaign-server.md#high-availability-workflows-and-affinities).
+
 
 ## Max. período de execução {#max--execution-period}
 
