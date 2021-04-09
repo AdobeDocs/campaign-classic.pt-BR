@@ -6,14 +6,14 @@ description: Saiba mais sobre as principais práticas recomendadas de configura�
 audience: installation
 content-type: reference
 topic-tags: prerequisites-and-recommendations-
+exl-id: fc0d3f16-5f62-473d-a1de-aab574eff734
 translation-type: tm+mt
-source-git-commit: f03554302c77a39a3ad68d47417ed930f43302b7
+source-git-commit: b0a1e0596e985998f1a1d02236f9359d0482624f
 workflow-type: tm+mt
-source-wordcount: '344'
+source-wordcount: '325'
 ht-degree: 4%
 
 ---
-
 
 # Configuração do servidor da web {#web-server-configuration}
 
@@ -49,7 +49,7 @@ Abaixo você encontrará algumas das principais práticas recomendadas relaciona
    **No IIS**  (consulte a  [documentação](https://www.iis.net/configreference/system.webserver/security/requestfiltering/verbs)), execute a seguinte configuração:
 
    * Certifique-se de que o serviço ou recurso de função **Filtragem de Solicitação** está instalado.
-   * No painel **Filtragem de solicitação**, clique na guia verbos HTTP e, em seguida, clique em Negar verbo. No painel Ações, insira TRACE na caixa de diálogo aberta.
+   * No painel **Filtragem de solicitação**, clique na guia verbos HTTP e, em seguida, clique em Negar verbo. No painel Ações, digite TRACE na caixa de diálogo aberta.
 
 * Remova o banner:
 
@@ -58,7 +58,7 @@ Abaixo você encontrará algumas das principais práticas recomendadas relaciona
    * ServerSignature **Off**
    * ServerTokens **Prod**
 
-   **No IIS**  (consulte a  [documentação](https://www.iis.net/configreference/system.webserver/security/requestfiltering/verbs)), execute a seguinte configuração:
+   **No IIS**, execute a seguinte configuração:
 
    * Instale **URLScan**.
    * Edite o arquivo **Urlscan.ini** para ter **RemoveServerHeader=1**
@@ -66,7 +66,7 @@ Abaixo você encontrará algumas das principais práticas recomendadas relaciona
 
 * Limite o tamanho da consulta para impedir que arquivos importantes sejam carregados:
 
-   **No Apache**  (consulte a  [documentação](http://httpd.apache.org/docs/2.2/mod/core.html#limitrequestbody)), adicione a diretiva  **** LimitRequestBodypolicy (tamanho em bytes) no / diretório.
+   **No Apache**, adicione a diretiva  **** LimitRequestBodypolicy (tamanho em bytes) no diretório / .
 
    ```
    <Directory />
@@ -80,5 +80,5 @@ Abaixo você encontrará algumas das principais práticas recomendadas relaciona
 
 Tópicos relacionados:
 
-* [Visão geral da conformidade com a Adobe Marketing Cloud](https://marketing.adobe.com/resources/help/en_US/xref/Adobe-Marketing-Cloud-Privacy-and-Security-Overview.pdf)  (PDF)
-* [Visão geral do Adobe Campaign Security](https://wwwimages.adobe.com/content/dam/acom/en/marketing-cloud/campaign/pdfs/54658.en.campaign.wp.adb-security.pdf)  (PDF)
+* [Visão geral](https://marketing.adobe.com/resources/help/en_US/xref/Adobe-Marketing-Cloud-Privacy-and-Security-Overview.pdf)  da conformidade com o Adobe Marketing Cloud (PDF)
+* [Visão geral](https://wwwimages.adobe.com/content/dam/acom/en/marketing-cloud/campaign/pdfs/54658.en.campaign.wp.adb-security.pdf)  da Segurança do Adobe Campaign (PDF)
