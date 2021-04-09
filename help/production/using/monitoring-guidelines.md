@@ -6,14 +6,14 @@ description: Descubra as diretrizes e práticas recomendadas para monitorar proc
 audience: production
 content-type: reference
 topic-tags: introduction
+exl-id: ca0c33c5-7350-462a-bc65-4cab51e529d9
 translation-type: tm+mt
-source-git-commit: 564eaedb09282c85593f638617baded0a63494a0
+source-git-commit: b0a1e0596e985998f1a1d02236f9359d0482624f
 workflow-type: tm+mt
-source-wordcount: '771'
-ht-degree: 9%
+source-wordcount: '770'
+ht-degree: 20%
 
 ---
-
 
 # Orientações de monitoramento {#monitoring-guidelines}
 
@@ -44,19 +44,19 @@ Outras maneiras de monitorar os diferentes processos do Campaign estão disponí
 
 **Ferramentas de monitoramento automático**
 
-Vários métodos automáticos estão disponíveis. para ajudá-lo a monitorar a instância. Você pode, por exemplo, configurar relatórios de email com anomalias detectadas, recuperar uma lista de indicadores no formato XML etc. [Clique ](../../production/using/monitoring-processes.md#automatic-monitoring) aqui para obter mais informações.
+Vários métodos automáticos estão disponíveis. para ajudá-lo a monitorar a instância. Você pode, por exemplo, configurar relatórios de email com anomalias detectadas, recuperar uma lista de indicadores no formato XML etc. [Clique aqui](../../production/using/monitoring-processes.md#automatic-monitoring) para obter mais informações.
 
 **Trilha de auditoria**
 
-A Trilha de auditoria permite visualizar o histórico completo de alterações relacionadas a opções, fluxos de trabalho e schemas em sua instância. [Clique ](../../production/using/audit-trail.md) aqui para obter mais informações.
+A Trilha de auditoria permite visualizar o histórico completo de alterações relacionadas a opções, fluxos de trabalho e schemas em sua instância. [Clique aqui](../../production/using/audit-trail.md) para obter mais informações.
 
 **Painel de controle do Campaign**
 
-O Painel de controle do Campaign permite gerenciar várias configurações da sua instância: gerencie permissões de URL, verifique os detalhes da instância, como as versões de build dos servidores etc. Ela também permite monitorar o espaço disponível nos servidores SFTP conectados à sua instância. [Clique ](https://docs.adobe.com/content/help/pt-BR/control-panel/using/control-panel-home.translate.html) aqui para obter mais informações.
+O Painel de controle do Campaign permite gerenciar várias configurações da sua instância: gerencie permissões de URL, verifique os detalhes da instância, como as versões de build dos servidores etc. Ela também permite monitorar o espaço disponível nos servidores SFTP conectados à sua instância. [Clique aqui](https://docs.adobe.com/content/help/pt-BR/control-panel/using/control-panel-home.translate.html) para obter mais informações.
 
 >[!NOTE]
 >
->O Painel de controle do Campaign é acessível a todos os usuários administradores. As etapas para conceder acesso de Administrador a um usuário estão detalhadas em [this page](https://experienceleague.adobe.com/docs/control-panel/using/discover-control-panel/managing-permissions.html?lang=en#discover-control-panel).
+>O Painel de controle do Campaign é acessível a todos os usuários administradores. As etapas para conceder acesso de Administrador a um usuário estão detalhadas [nesta página](https://experienceleague.adobe.com/docs/control-panel/using/discover-control-panel/managing-permissions.html?lang=pt-BR#discover-control-panel).
 >
 >Observe que sua instância deve ser hospedada no AWS e atualizada com a build mais recente do [Gold Standard](../../rn/using/gs-overview.md) ou a build mais recente do GA (21.1)](../../rn/using/latest-release.md). [ Saiba como verificar sua versão em [this section](../../platform/using/launching-adobe-campaign.md#getting-your-campaign-version). Para verificar se sua instância está hospedada no AWS, siga as etapas detalhadas em [this page](https://experienceleague.adobe.com/docs/control-panel/using/faq.html).
 
@@ -66,7 +66,7 @@ O Painel de controle do Campaign permite gerenciar várias configurações da su
 
 **Workflow HeatMap**
 
-O Workflow HeatMap forneceu uma representação visual de todos os workflows que estão sendo executados em sua instância. Ela permite monitorar facilmente a carga na instância e planejar os workflows de acordo. [Clique ](../../workflow/using/heatmap.md) aqui para obter mais informações.
+O Workflow HeatMap forneceu uma representação visual de todos os workflows que estão sendo executados em sua instância. Ela permite monitorar facilmente a carga na instância e planejar os workflows de acordo. [Clique aqui](../../workflow/using/heatmap.md) para obter mais informações.
 
 **Trilha de auditoria**
 
@@ -74,11 +74,11 @@ A Trilha de auditoria permite visualizar todas as modificações que foram feita
 
 **Solução de problemas de workflows**
 
-Ações específicas podem ser executadas ao encontrar problemas com uma execução de workflow. [Clique ](../../production/using/workflow-execution.md) aqui para obter mais informações
+Ações específicas podem ser executadas ao encontrar problemas com uma execução de workflow. [Clique aqui](../../production/using/workflow-execution.md) para obter mais informações
 
 **Monitoramento do status do workflow**
 
-Além do heatmap, é possível criar um workflow que permitirá monitorar o status de um conjunto de workflows e enviar mensagens recorrentes aos supervisores. [Clique ](../../workflow/using/supervising-workflows.md) aqui para obter mais informações.
+Além do heatmap, é possível criar um workflow que permitirá monitorar o status de um conjunto de workflows e enviar mensagens recorrentes aos supervisores. [Clique aqui](../../workflow/using/supervising-workflows.md) para obter mais informações.
 
 **Orientações gerais**
 
@@ -111,23 +111,23 @@ problemas de deliveryAs ações específicas podem ser executadas ao encontrar p
 
 **Workflow de limpeza do banco de dados**
 
-O fluxo de trabalho Database cleanup permite excluir dados obsoletos do banco de dados. É recomendável evitar o crescimento exponencial do banco de dados. [Clique ](../../production/using/database-cleanup-workflow.md) aqui para obter mais informações.
+O fluxo de trabalho Database cleanup permite excluir dados obsoletos do banco de dados. É recomendável evitar o crescimento exponencial do banco de dados. [Clique aqui](../../production/using/database-cleanup-workflow.md) para obter mais informações.
 
 **Solução de problemas de desempenho do banco de dados**
 
-Ações específicas podem ser executadas ao encontrar problemas com desempenho do banco de dados. [Clique ](../../production/using/database-performances.md) aqui para obter mais informações.
+Ações específicas podem ser executadas ao encontrar problemas com desempenho do banco de dados. [Clique aqui](../../production/using/database-performances.md) para obter mais informações.
 
 **Manutenção do banco de dados**
 
 *apenas modelos de hospedagem local e híbrida*
 
-Recomendamos que você faça a manutenção do banco de dados regularmente para evitar o consumo excessivo de espaço em disco, afetando assim o acesso ao banco de dados. [Clique ](../../production/using/recommendations.md) aqui para obter mais informações.
+Recomendamos que você faça a manutenção do banco de dados regularmente para evitar o consumo excessivo de espaço em disco, afetando assim o acesso ao banco de dados. [Clique aqui](../../production/using/recommendations.md) para obter mais informações.
 
 **Backup e restauração**
 
 *apenas modelos de hospedagem local e híbrida*
 
-O backup é essencial para evitar a perda de dados em caso de problema (físico ou relacionado ao sistema) em uma máquina. [Clique ](../../production/using/backup.md) aqui para obter mais informações. O procedimento de restauração é descrito em [this section](../../production/using/restoration.md).
+O backup é essencial para evitar a perda de dados em caso de problema (físico ou relacionado ao sistema) em uma máquina. [Clique aqui](../../production/using/backup.md) para obter mais informações. O procedimento de restauração é descrito em [this section](../../production/using/restoration.md).
 
 ## Princípios técnicos do Campaign Classic {#campaign-classic-technical-principles}
 
@@ -142,7 +142,7 @@ Os recursos técnicos estão disponíveis na documentação do Campaign Classic.
 
 *Somente modelos de hospedagem local e híbrida*
 
-* [Configurações obrigatórias do servidor](../../installation/using/campaign-server-configuration.md)
+* [Configurações do servidor](../../installation/using/configuring-campaign-server.md)
 * [Configuração do arquivo Serverconf.xml](../../installation/using/the-server-configuration-file.md)
 * [Configuração do servidor para entrega](../../installation/using/email-deliverability.md)
 * [Linhas de comando para criar uma instância e declarar um banco de dados](../../installation/using/command-lines.md)
