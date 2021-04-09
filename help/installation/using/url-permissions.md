@@ -8,21 +8,31 @@ content-type: reference
 topic-tags: additional-configurations
 exl-id: 67dda58f-97d1-4df5-9648-5f8a1453b814
 translation-type: tm+mt
-source-git-commit: b0a1e0596e985998f1a1d02236f9359d0482624f
+source-git-commit: 8ab0aab42accbd1253d53e8133f5af0a38c724ea
 workflow-type: tm+mt
-source-wordcount: '276'
-ht-degree: 36%
+source-wordcount: '338'
+ht-degree: 32%
 
 ---
 
 
-# Configurar permissões de URL {#url-permissions}
+# Configurar permissões de URL (no local){#url-permissions}
 
 A lista padrão de URLs que podem ser chamados por códigos JavaScript (workflows, etc.) pelas instâncias do Campaign Classic é limitada. Esses são os URLs que permitem que as instâncias funcionem corretamente.
 
 Por padrão, as instâncias não têm permissão para se conectar a URLs externos. No entanto, é possível adicionar URLs externos à lista de URLs autorizados para que sua instância possa se conectar a eles. Dessa forma, você pode conectar as instâncias do Campaign a sistemas externos, como servidores ou sites SFTP para habilitar a transferência de arquivos e/ou dados.
 
+>[!NOTE]
+>
+>Este procedimento está restrito a **implantações locais**.
+>
+>Como cliente **hospedado**, se você puder acessar [Painel de controle do Campaign](https://experienceleague.adobe.com/docs/control-panel/using/control-panel-home.html?lang=pt-BR), poderá usar a interface de autoatendimento de permissões de URL. [Saiba mais](https://experienceleague.adobe.com/docs/control-panel/using/instances-settings/url-permissions.html)
+>
+>Outros clientes **híbridos/hospedados** precisam entrar em contato com a equipe de suporte do Adobe para adicionar IP à lista de permissões.
+
+
 Para implantações **Hybrid** e **No local**, o administrador precisa fazer referência a um novo **urlPermission** no arquivo **serverConf.xml**.
+
 
 Três modos de proteção de conexão estão disponíveis:
 
@@ -46,7 +56,7 @@ Três modos de proteção de conexão estão disponíveis:
 
 Para obter mais informações, consulte esta seção.
 
-* [Documentação do Painel de controle do Campaign](https://experienceleague.adobe.com/docs/control-panel/using/control-panel-home.html?lang=pt-BR)
+* [Documentação do Painel de controle do Campaign](https://experienceleague.adobe.com/docs/control-panel/using/control-panel-home.html)
 * [Modelos de hospedagem](hosting-models.md)
 * [Configuração do servidor do Campaign](configuring-campaign-server.md)
 * [Parâmetros do arquivo de configuração do servidor do Campaign](the-server-configuration-file.md)
