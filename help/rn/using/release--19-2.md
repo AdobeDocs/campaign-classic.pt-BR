@@ -6,14 +6,14 @@ description: Notas de versão do Campaign 19.2
 feature: null
 role: null
 level: null
+exl-id: 3c529e4e-8787-41d2-b85d-3feaa5432196
 translation-type: tm+mt
-source-git-commit: 96f5709b4c67d1979286cc1f71069a64435c5c70
+source-git-commit: ae4f86f3703b9bfe7f08fd5c2580dd5da8c28cbd
 workflow-type: tm+mt
 source-wordcount: '1484'
-ht-degree: 93%
+ht-degree: 99%
 
 ---
-
 
 # Versão 19.2{#release-19-2}
 
@@ -27,13 +27,13 @@ _22 de março de 2021_
 
 >[!NOTE]
 >
-> Conecte-se a [Adobe Software Distribution](https://experience.adobe.com/#/downloads/content/software-distribution/br/campaign.html) para baixar a nova versão. Saiba como propor a atualização do console para todos os usuários finais [nesta página](../../installation/using/client-console-availability-for-windows.md).
+> Conecte-se à [Distribuição de software da Adobe](https://experience.adobe.com/#/downloads/content/software-distribution/br/campaign.html) para baixar a nova versão. Saiba como propor a atualização do console para todos os usuários finais [nesta página](../../installation/using/client-console-availability-for-windows.md).
 
 _23 de dezembro de 2020_
 
 >[!CAUTION]
 >
-> * Esta versão vem com um novo protocolo de conexão: se você estiver se conectando ao Campaign pelo Adobe Identity Service (IMS), a atualização é obrigatória para o servidor do Campaign e o console do cliente poderem se conectar ao Campaign depois de **30 de junho de 2021**.
+> * Esta versão é fornecida com um novo protocolo de conexão: se você estiver se conectando ao Campaign pelo Serviço de identidade da Adobe (IMS), a atualização será obrigatória para o servidor do Campaign e o console do cliente poderem se conectar ao Campaign após **30 de junho de 2021**.
    >
    > 
 * Esta versão vem com uma [correção de segurança](https://helpx.adobe.com/security/products/campaign/apsb21-04.html): a atualização é obrigatória para reforçar a segurança do ambiente.
@@ -141,7 +141,7 @@ _2 de dezembro de 2019_
    * A opção **XtkCleanup_NoStats** foi aprimorada para PostgreSQL para controlar melhor o comportamento da etapa de otimização de armazenamento do workflow de limpeza do banco de dados. [Leia mais](../../production/using/database-cleanup-workflow.md#statistics-update)
 * Um mecanismo de bloqueio de conta foi adicionado à API **logon()**. Impede novas tentativas de login após um certo número de tentativas com falha consecutivas em um período especificado.
 * Uma nova opção **Maximum personalization run time** nas propriedades de delivery permite definir um período de tempo limite para o tempo de execução de personalização, a fim de evitar que a fase de personalização seja executada por muito tempo. [Leia mais](../../delivery/using/personalization-fields.md#timing-out-personalization)
-* A opção **ftp protocol** foi adicionada para permitir que você use uma configuração proxy para conexões SFTP. [Leia mais](../../installation/using/configuring-campaign-server.md#proxy-connection-configuration)
+* A opção **ftp protocol** foi adicionada para permitir que você use uma configuração proxy para conexões SFTP. [Leia mais](../../installation/using/file-res-management.md)
 * Novo suporte de acesso proxy a um servidor externo SFTP para ambientes locais.
 * Uma garantia específica foi adicionada para impedir a instalação de pacotes que não são compatíveis com a instância do Campaign. [Leia mais](../../installation/using/installing-campaign-standard-packages.md)
 
@@ -188,8 +188,6 @@ A build 1.0.26 do SDK do iOS está disponível. Nesta nova build, adicionamos o 
 * Correção de um problema ao acessar modelos preditivos. (NEO-19713)
 * Correção de um problema que afetava a amostragem aleatória na atividade **Split** do workflow com o banco de dados FDA do Hadoop. (NEO-16636)
 * Correção de uma regressão no Oracle que resultava em algumas funções consideradas inválidas após a atualização. (NEO-12759)
-
-
 
 
 
