@@ -6,11 +6,10 @@ description: Configuração do Campaign Tomcat
 audience: installation
 content-type: reference
 topic-tags: initial-configuration
-exl-id: a2126458-2ae5-47c6-ad13-925f0e067ecf
 translation-type: tm+mt
-source-git-commit: b0a1e0596e985998f1a1d02236f9359d0482624f
+source-git-commit: 8ab0aab42accbd1253d53e8133f5af0a38c724ea
 workflow-type: tm+mt
-source-wordcount: '207'
+source-wordcount: '214'
 ht-degree: 0%
 
 ---
@@ -21,6 +20,11 @@ ht-degree: 0%
 O Adobe Campaign usa um **servlet da Web incorporado chamado Apache Tomcat** para processar solicitações HTTP/HTTPS entre o aplicativo e qualquer interface externa (incluindo Console do cliente, links de URL rastreados, chamadas SOAP e outras). Geralmente, há um servidor da Web externo (geralmente IIS ou Apache) na frente disso para qualquer instância do Adobe Campaign voltada para o exterior.
 
 Saiba mais sobre o Tomcat no Campaign e como localizar a versão do Tomcat em [this page](../../production/using/locate-tomcat-version.md).
+
+>[!NOTE]
+>
+>Este procedimento está restrito a **implantações locais**.
+
 
 ## Porta padrão para Apache Tomcat {#default-port-for-tomcat}
 
