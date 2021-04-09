@@ -8,9 +8,9 @@ content-type: reference
 topic-tags: additional-configurations
 exl-id: 46c8ed46-0947-47fb-abda-6541b12b6f0c
 translation-type: tm+mt
-source-git-commit: b0a1e0596e985998f1a1d02236f9359d0482624f
+source-git-commit: ae4f86f3703b9bfe7f08fd5c2580dd5da8c28cbd
 workflow-type: tm+mt
-source-wordcount: '2575'
+source-wordcount: '1580'
 ht-degree: 2%
 
 ---
@@ -38,9 +38,6 @@ Os arquivos de configuração do Campaign Classic são armazenados na pasta **co
 * **serverConf.xml**: configuração geral para todas as instâncias. Este arquivo combina os parâmetros técnicos do servidor do Adobe Campaign: eles são compartilhados por todas as instâncias. A descrição de alguns desses parâmetros é detalhada abaixo. Os diferentes nós e parâmetros e listados nesta [seção](../../installation/using/the-server-configuration-file.md).
 * **config-`<instance>`.xml**  (onde  **** instâncias é o nome da instância): configuração específica da instância. Se você compartilhar seu servidor entre várias instâncias, insira os parâmetros específicos para cada instância em seu arquivo relevante.
 
-As diretrizes gerais de configuração do servidor são detalhadas em [Configuração do servidor do Campaign](../../installation/using/configuring-campaign-server.md).
-
-
 ## Escopo de configuração
 
 Configure ou adapte o servidor do Campaign de acordo com suas necessidades e configuração. Você pode:
@@ -50,12 +47,12 @@ Configure ou adapte o servidor do Campaign de acordo com suas necessidades e con
 * Configurar [Permissões de URL](url-permissions.md)
 * Definir [Zonas de Segurança](security-zones.md)
 * Configurar [Configurações do Tomcat](configure-tomcat.md)
-* Personalizar [Parâmetros de entrega](#delivery-settings)
+* Personalizar [Parâmetros de entrega](configure-delivery-settings.md)
 * Defina [Segurança de página dinâmica e retransmissões](#dynamic-page-security-and-relays)
 * Restringir a lista de [Comandos externos permitidos](#restricting-authorized-external-commands)
 * Configurar [Rastreamento redundante](#redundant-tracking)
 * Gerenciar [Alta disponibilidade e afinidades de fluxo de trabalho](#high-availability-workflows-and-affinities)
-* Configurar o gerenciamento de arquivos - [Saiba mais](#file-and-resmanagement)
+* Configurar o gerenciamento de arquivos - [Saiba mais](file-res-management.md)
    * Limitar o formato de upload de arquivos
    * Habilitar acesso a recursos públicos
    * Configurar conexão proxy
@@ -139,88 +136,6 @@ Você pode configurar o diretório de armazenamento (**var** diretório) dos dad
 * No Linux, vá para o arquivo **customer.sh** e indique: **exportar XTK_VAR_DIR=/app/log/AdobeCampaign**.
 
    Para obter mais informações, consulte [Personalizar parâmetros](../../installation/using/installing-packages-with-linux.md#personalizing-parameters).
-
-## Definir configurações de delivery {#delivery-settings}
-
-Os parâmetros de delivery devem ser configurados na pasta **serverConf.xml**.
-
-* **Configuração** DNS: especifique o domínio de delivery e os endereços IP (ou host) dos servidores DNS usados para responder a consultas DNS do tipo MX feitas pelo módulo MTA a partir de  **`<dnsconfig>`** agora.
-
-   >[!NOTE]
-   >
-   >O parâmetro **nameServers** é essencial para uma instalação no Windows. Para uma instalação no Linux, ela deve ficar vazia.
-
-   ```
-   <dnsConfig localDomain="domain.com" nameServers="192.0.0.1,192.0.0.2"/>
-   ```
-
-Você também pode executar as seguintes configurações, dependendo das suas necessidades e configurações: configure um [retransmissão SMTP](#smtp-relay), adapte o número de [processos filho MTA](#mta-child-processes), [Gerenciar tráfego SMTP de saída](#managing-outbound-smtp-traffic-with-affinities).
-
-### Retransmissão SMTP {#smtp-relay}
-
-O módulo MTA atua como um agente de transferência de email nativo para transmissão SMTP (porta 25).
-
-No entanto, é possível substituí-lo por um servidor de retransmissão se a política de segurança o exigir. Nesse caso, a taxa de transferência global será a de retransmissão (desde que a taxa de transferência do servidor de retransmissão seja inferior à da Adobe Campaign).
-
-Nesse caso, esses parâmetros são definidos configurando o servidor SMTP na seção **`<relay>`**. Você deve especificar o endereço IP (ou host) do servidor SMTP usado para transferir emails e sua porta associada (25 por padrão).
-
-```
-<relay address="192.0.0.3" port="25"/>
-```
-
->[!IMPORTANT]
->
->Esse modo operacional implica limitações graves nos deliveries, pois pode reduzir bastante a taxa de transferência devido aos desempenhos intrínsecos do servidor de retransmissão (latência, bandwith...). Além disso, a capacidade de qualificar erros de delivery síncronos (detectados pela análise do tráfego SMTP) será limitada e o envio não será possível se o servidor de retransmissão não estiver disponível.
-
-### Processos filho MTA {#mta-child-processes}
-
-É possível controlar o número de processos secundários (maxSpareServers por padrão 2) para otimizar o desempenho da transmissão de acordo com a potência da CPU dos servidores e os recursos de rede disponíveis. Essa configuração deve ser feita na seção **`<master>`** da configuração MTA em cada computador individual.
-
-```
-<master dataBasePoolPeriodSec="30" dataBaseRetryDelaySec="60" maxSpareServers="2" minSpareServers="0" startSpareServers="0">
-```
-
-Consulte também [Otimização do envio de email](../../installation/using/email-deliverability.md#email-sending-optimization).
-
-### Gerenciar o tráfego SMTP de saída com afinidades {#managing-outbound-smtp-traffic-with-affinities}
-
->[!IMPORTANT]
->
->A configuração de afinidade precisa ser consistente de um servidor para outro. Recomendamos que você entre em contato com o Adobe para obter a configuração de afinidade, pois as alterações de configuração devem ser replicadas em todos os servidores de aplicativos que executam o MTA.
-
-Você pode melhorar o tráfego SMTP de saída por meio de afinidades com endereços IP.
-
-Para fazer isso, siga as etapas abaixo:
-
-1. Insira as afinidades na seção **`<ipaffinity>`** do arquivo **serverConf.xml**.
-
-   Uma afinidade pode ter vários nomes diferentes: para separá-los, use o caractere **;**.
-
-   Exemplo:
-
-   ```
-    IPAffinity name="mid.Server;WWserver;local.Server">
-             <IP address="XX.XXX.XX.XX" heloHost="myserver.us.campaign.net" publicId="123" excludeDomains="neo.*" weight="5"/
-   ```
-
-   Para visualizar os parâmetros relevantes, consulte o arquivo **serverConf.xml**.
-
-1. Para ativar a seleção de afinidade nas listas suspensas, é necessário adicionar os nomes de afinidade na enumeração **IPAffinity**.
-
-   ![](assets/ipaffinity_enum.png)
-
-   >[!NOTE]
-   >
-   >As enumerações são detalhadas em [this document](../../platform/using/managing-enumerations.md).
-
-   Você pode selecionar a afinidade a ser usada, conforme mostrado abaixo para tipologias:
-
-   ![](assets/ipaffinity_typology.png)
-
-   >[!NOTE]
-   >
-   >Você também pode consultar [Configuração do servidor de delivery](../../installation/using/email-deliverability.md#delivery-server-configuration).
-
 
 
 ## Segurança de página dinâmica e retransmissões {#dynamic-page-security-and-relays}
@@ -359,118 +274,7 @@ A propriedade **enableIf** é opcional (vazia por padrão) e permite habilitar a
 
 Para obter o nome do host do computador, execute o seguinte comando: **hostname -s**.
 
-## Gerenciamento de arquivos e recursos{#file-and-resmanagement}
 
-### Limitar o formato do arquivo de upload {#limiting-uploadable-files}
-
-Use o atributo **uploadWhiteList** para restringir os tipos de arquivo disponíveis para upload no servidor Adobe Campaign.
-
-Esse atributo está disponível no elemento **dataStore** do arquivo **serverConf.xml**. Todos os parâmetros disponíveis no **serverConf.xml** são listados nesta [seção](../../installation/using/the-server-configuration-file.md).
-
-O valor padrão deste atributo é **.+** e permite carregar qualquer tipo de arquivo.
-
-Para limitar os formatos possíveis, substitua o valor do atributo por uma expressão Java regular válida. É possível inserir vários valores separando-os por vírgula.
-
-Por exemplo: **uploadWhiteList=&quot;.*.png,*.jpg&quot;** permitirá carregar os formatos PNG e JPG no servidor. Nenhum outro formato será aceito.
-
->[!NOTE]
->
->No Internet Explorer, o caminho de arquivo completo deve ser verificado pela expressão regular.
-
-Você também pode impedir que arquivos importantes sejam carregados configurando o Servidor Web. [Saiba mais](web-server-configuration.md)
-
-### Configuração da conexão proxy {#proxy-connection-configuration}
-
-Você pode conectar o servidor do Campaign a um sistema externo por meio de um proxy, usando uma atividade de workflow de **Transferência de arquivo** por exemplo. Para isso, é necessário configurar a seção **proxyConfig** do arquivo **serverConf.xml** por meio de um comando específico. Todos os parâmetros disponíveis no **serverConf.xml** são listados nesta [seção](../../installation/using/the-server-configuration-file.md).
-
-As seguintes conexões de proxy são possíveis: HTTP, HTTPS, FTP, SFTP. Observe que, a partir da versão 20.2 do Campaign, os parâmetros do protocolo HTTP e HTTPS são **não estão mais disponíveis**. Esses parâmetros ainda são mencionados abaixo, pois permanecem disponíveis em builds anteriores - incluindo 9032.
-
->[!CAUTION]
->
->Somente o modo de autenticação básico é compatível. A autenticação NTLM não é suportada.
->
->Não há suporte para proxies SOCKS.
-
-
-Você pode usar o seguinte comando:
-
-```
-nlserver config -setproxy:[protocol]/[serverIP]:[port]/[login][:‘https’|'http’]
-```
-
-os parâmetros de protocolo podem ser &quot;http&quot;, &quot;https&quot; ou &quot;ftp&quot;.
-
-Se você estiver configurando o FTP na mesma porta que o tráfego HTTP/HTTPS, poderá usar o seguinte:
-
-```
-nlserver config -setproxy:http/198.51.100.0:8080/user
-```
-
-As opções &quot;http&quot; e &quot;https&quot; só são usadas quando o parâmetro do protocolo é &quot;ftp&quot; e indicam se o tunelamento na porta especificada será executado por HTTPS ou por HTTP.
-
-Se você usar portas diferentes para tráfego FTP/SFTP e HTTP/HTTPS por servidor proxy, deverá definir o parâmetro de protocolo &quot;ftp&quot;.
-
-
-Por exemplo:
-
-```
-nlserver config -setproxy:ftp/198.51.100.0:8080/user:’http’
-```
-
-Em seguida, digite a senha.
-
-As conexões HTTP são definidas no parâmetro proxyHTTP:
-
-```
-<proxyConfig enabled=“1” override=“localhost*” useSingleProxy=“0”>
-<proxyHTTP address=“198.51.100.0" login=“user” password=“*******” port=“8080”/>
-</proxyConfig>
-```
-
-As conexões HTTPS são definidas no parâmetro proxyHTTPS:
-
-```
-<proxyConfig enabled=“1" override=“localhost*” useSingleProxy=“0">
-<proxyHTTPS address=“198.51.100.0” login=“user” password=“******” port=“8080"/>
-</proxyConfig>
-```
-
-As conexões FTP/FTPS são definidas no parâmetro proxyFTP:
-
-```
-<proxyConfig enabled=“1" override=“localhost*” useSingleProxy=“0">
-<proxyFTP address=“198.51.100.0” login=“user” password=“******” port=“5555" https=”true”/>
-</proxyConfig>
-```
-
-Se você usar o mesmo proxy para vários tipos de conexão, somente o proxyHTTP será definido com useSingleProxy definido como &quot;1&quot; ou &quot;true&quot;.
-
-Se você tiver conexões internas que devem passar pelo proxy, adicione-as no parâmetro override .
-
-Se quiser desativar temporariamente a conexão proxy, defina o parâmetro ativado como &quot;false&quot; ou &quot;0&quot;.
-
-### Gerenciar recursos públicos {#managing-public-resources}
-
-Para estarem disponíveis publicamente, as imagens usadas em emails e recursos públicos vinculados a campanhas devem estar presentes em um servidor acessível externamente. Eles podem então estar disponíveis para recipients ou operadores externos. [Saiba mais](../../installation/using/deploying-an-instance.md#managing-public-resources).
-
-Os recursos públicos são armazenados no diretório **/var/res/instance** do diretório de instalação do Adobe Campaign.
-
-O URL correspondente é: **http://server/res/instance** onde **instance** é o nome da instância de rastreamento.
-
-Você pode especificar outro diretório adicionando um nó ao arquivo **conf-`<instance>`.xml** para configurar o armazenamento no servidor. Isso significa adicionar as seguintes linhas:
-
-```
-<serverconf>
-  <shared>
-    <dataStore hosts="media*" lang="fra">
-      <virtualDir name="images" path="/var/www/images"/>
-     <virtualDir name="publicFileRes" path="$(XTK_INSTALL_DIR)/var/res/$(INSTANCE_NAME)/"/>
-    </dataStore>
-  </shared>
-</serverconf>
-```
-
-Nesse caso, o novo URL para os recursos públicos fornecidos na parte superior da janela do assistente de implantação deve apontar para essa pasta.
 
 ## Fluxos de trabalho e afinidades de alta disponibilidade {#high-availability-workflows-and-affinities}
 
