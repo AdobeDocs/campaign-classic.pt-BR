@@ -4,16 +4,16 @@ product: campaign
 title: Notas de versão do Campaign 18.10
 description: Notas de versão do Campaign 18.10
 feature: Visão geral
-role: Profissional
-level: Iniciante
+role: Business Practitioner
+level: Beginner
+exl-id: 57996f77-4ac2-402a-95db-b75d4bea4eeb
 translation-type: tm+mt
-source-git-commit: ce60b2bd0a9d75ca429af2f740832b408ce3c48b
+source-git-commit: ae4f86f3703b9bfe7f08fd5c2580dd5da8c28cbd
 workflow-type: tm+mt
-source-wordcount: '2375'
+source-wordcount: '2372'
 ht-degree: 98%
 
 ---
-
 
 # Versão 18.10{#release-18-10}
 
@@ -148,7 +148,7 @@ ht-degree: 98%
 
 * As APIs do Campaign Classic agora estão disponíveis em uma [página dedicada](https://docs.adobe.com/content/help/en/campaign-classic/technicalresources/api/index.html). Se estiver usando o arquivo jsapi.chm, agora deverá fazer referência a nova versão online.
 * PostgreSQL 10, Debian 9 e Teradata 16.20 agora são suportados. Consulte a [Matriz de Compatibilidade](https://helpx.adobe.com/br/campaign/kb/compatibility-matrix.html).
-* Ao criar uma conexão SFTP, agora você pode usar a autenticação de proxy. Para obter mais informações, consulte a [documentação detalhada](../../installation/using/configuring-campaign-server.md#proxy-connection-configuration) (NEO-9868).
+* Ao criar uma conexão SFTP, agora você pode usar a autenticação de proxy. Para obter mais informações, consulte a [documentação detalhada](../../installation/using/file-res-management.md) (NEO-9868).
 * A opção **Fórmula de cálculo de data** está agora disponível nas propriedades de delivery ao criar um delivery único usando o template de delivery de mala direta. (NEO-9792)
 * A gestão de nomes de domínio foi aprimorado para rastreamento de cookies e aplicações Web. Consulte a seção &quot;Evoluções técnicas&quot; abaixo para obter mais informações.
 * A importação de ativos compartilhados da Adobe Experience Cloud em um delivery ou landing page foi aprimorada em termos de segurança e desempenho.
@@ -240,4 +240,3 @@ Essas alterações de índice podem levar a um aumento do tempo necessário para
 * Correção de um erro no Oracle que ocorria quando uma nova composição de delivery era salva após selecionar um elemento de um schema específico **baseado em um modo de exibição SQL**. (NEO-11682)
 * Correção de um problema que resultou em arquivos de rejeição gerados que continha falsos positivos ao processar um arquivo zip contendo um arquivo .csv por uma atividade de carregar arquivo usando a opção de Descompactação.
 * xtkjoblog agora foi removido pela atividade de limpeza.
-
