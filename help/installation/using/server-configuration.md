@@ -1,25 +1,25 @@
 ---
 solution: Campaign Classic
 product: campaign
-title: Configuração do servidor
-description: Saiba mais sobre as práticas recomendadas de configuração do servidor.
+title: Configuração de segurança do servidor
+description: Saiba mais sobre as práticas recomendadas de configuração do servidor
 audience: installation
 content-type: reference
 topic-tags: prerequisites-and-recommendations-
 exl-id: e1aff73a-54fb-444e-b183-df11c9b3df31
 translation-type: tm+mt
-source-git-commit: e31d386af4def80cdf258457fc74205b1ca823b3
+source-git-commit: b0a1e0596e985998f1a1d02236f9359d0482624f
 workflow-type: tm+mt
-source-wordcount: '620'
-ht-degree: 46%
+source-wordcount: '625'
+ht-degree: 43%
 
 ---
 
-# Configuração do servidor {#server-configuration}
+# Configurações de segurança do servidor {#server-configuration}
 
 ## Proteção de upload de arquivo
 
-Verifique com os usuários operacionais que tipo de arquivos eles enviam ao servidor usando a interface nlclient/web. Como lembrete, as necessidades de negócios podem ser:
+Verifique com usuários operacionais que tipo de arquivos eles fazem upload para o servidor usando o Console do Cliente do Campaign ou a interface da Web. Como lembrete, as necessidades de negócios podem ser:
 
 * imagens (jpg, gif, png, ...)
 * conteúdo (zip, html, css...)
