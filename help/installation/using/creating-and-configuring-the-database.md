@@ -6,29 +6,29 @@ description: Criação e configuração do banco de dados
 audience: installation
 content-type: reference
 topic-tags: initial-configuration
+exl-id: f40bab8c-5064-40d9-beed-101a9f22c094
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: b0a1e0596e985998f1a1d02236f9359d0482624f
 workflow-type: tm+mt
 source-wordcount: '1296'
-ht-degree: 1%
+ht-degree: 2%
 
 ---
 
-
 # Criação e configuração do banco de dados{#creating-and-configuring-the-database}
 
-Quando você cria um banco de dados, a Adobe Campaign fornece duas opções diferentes:
+Ao criar um banco de dados, o Adobe Campaign fornece duas opções diferentes:
 
-1. Criação ou reciclagem de um banco de dados: escolha essas opções se desejar criar um novo banco de dados ou reutilizar um existente. Consulte [Caso 1: Criação/reciclagem de um banco de dados](#case-1--creating-recycling-a-database).
-1. Usando um banco de dados existente: escolha essa opção se um banco de dados vazio já tiver sido criado pelo administrador e você quiser usá-lo; ou para estender a estrutura de um banco de dados existente. Consulte [Caso 2: Usando um banco de dados existente](#case-2--using-an-existing-database).
+1. Criação ou reciclagem de um banco de dados: escolha essas opções se quiser criar um novo banco de dados ou reutilizar um existente. Consulte [Caso 1: Criação/reciclagem de um banco de dados](#case-1--creating-recycling-a-database).
+1. Usando um banco de dados existente: escolha essa opção se um banco de dados vazio já tiver sido criado pelo administrador e desejar usá-lo; ou para estender a estrutura de um banco de dados existente. Consulte [Caso 2: Usando um banco de dados existente](#case-2--using-an-existing-database).
 
-As etapas de configuração são detalhadas a seguir.
+As etapas de configuração são detalhadas abaixo.
 
 >[!CAUTION]
 >
->Os nomes de bancos de dados, usuários e schemas não devem start com um número ou incluir caracteres especiais.
+>Os nomes de bancos de dados, usuários e esquemas não devem começar com um número ou incluir caracteres especiais.
 >
->Somente o identificador **internal** pode realizar essas operações. Para obter mais informações, consulte [Identificador interno](../../installation/using/campaign-server-configuration.md#internal-identifier).
+>Somente o identificador **interno** pode realizar essas operações. Para obter mais informações, consulte [esta seção](../../installation/using/configuring-campaign-server.md#internal-identifier).
 
 ## Caso 1: Criação/reciclagem de um banco de dados {#case-1--creating-recycling-a-database}
 
@@ -36,20 +36,20 @@ As etapas para criar um banco de dados ou reciclar uma base existente são apres
 
 As seguintes etapas estão envolvidas:
 
-* [Etapa 1 - Selecionar o mecanismo](#step-1---selecting-the-database-engine) de banco de dados,
+* [Etapa 1 - Seleção do mecanismo](#step-1---selecting-the-database-engine) de banco de dados,
 * [Etapa 2 - Conexão com o servidor](#step-2---connecting-to-the-server),
 * [Etapa 3 - Conexão e características do banco de dados](#step-3---connection-and-characteristics-of-the-database),
 * [Etapa 4 - Pacotes para instalar](#step-4---packages-to-install),
 * [Etapa 5 - Etapas](#step-5---creation-steps) de criação,
 * [Etapa 6 - Criação do banco de dados](#step-6---creating-the-database).
 
-### Etapa 1 - Selecionar o mecanismo de banco de dados {#step-1---selecting-the-database-engine}
+### Etapa 1 - Seleção do mecanismo de banco de dados {#step-1---selecting-the-database-engine}
 
 Selecione o mecanismo de banco de dados entre aqueles na lista suspensa.
 
 ![](assets/s_ncs_install_db_select_engine.png)
 
-Os bancos de dados suportados estão listados na Campanha [Matriz de compatibilidade](../../rn/using/compatibility-matrix.md).
+Os bancos de dados compatíveis são listados no Campaign [Matriz de compatibilidade](../../rn/using/compatibility-matrix.md).
 
 Identifique o servidor e escolha o tipo de operação a ser executada. Nesse caso, **[!UICONTROL Create or recycle a database]**.
 
@@ -63,30 +63,30 @@ Dependendo do mecanismo de banco de dados selecionado, as informações de ident
 
    >[!CAUTION]
    >
-   > A partir do 20.3, a autenticação do Windows NT é descontinuada. **[!UICONTROL SQL Server authentication]** agora é o único modo de autenticação disponível para o Microsoft SQL Server. [Leia mais](../../rn/using/deprecated-features.md)
+   > A partir da versão 20.3, a autenticação do Windows NT será descontinuada. **[!UICONTROL SQL Server authentication]** O agora é o único modo de autenticação disponível para o Microsoft SQL Server. [Leia mais](../../rn/using/deprecated-features.md)
 
    ![](assets/s_ncs_install_db_mssql_creation01.png)
 
 ### Etapa 2 - Conexão com o servidor {#step-2---connecting-to-the-server}
 
-Na janela **[!UICONTROL Server access]**, defina o acesso ao servidor de banco de dados.
+Na janela **[!UICONTROL Server access]**, defina o acesso do servidor do banco de dados.
 
 ![](assets/s_ncs_install_db_oracle_creation02.png)
 
-Para fazer isso, digite o nome e a senha de uma **conta do sistema administrativo** que tenha permissão para acessar os bancos de dados, ou seja:
+Para fazer isso, insira o nome e a senha de uma **Administration system account** que tem permissão para acessar os bancos de dados, ou seja:
 
-* **** sistema para uma base de dados Oracle,
-* **** procurar uma base de dados do Microsoft SQL Server,
-* **** pós-infração para um banco de dados PostgreSQL,
+* **** para um banco de dados do Oracle,
+* **** para um banco de dados do Microsoft SQL Server,
+* **** postgresfor a um banco de dados PostgreSQL,
 * **db2inst1** para um banco de dados DB2.
 
 ### Etapa 3 - Conexão e características do banco de dados {#step-3---connection-and-characteristics-of-the-database}
 
-A etapa a seguir permite que você defina as configurações para logon no banco de dados.
+A etapa a seguir permite definir as configurações para fazer logon no banco de dados.
 
 ![](assets/s_ncs_install_db_oracle_creation03.png)
 
-É necessário definir as seguintes configurações:
+Você precisa definir as seguintes configurações:
 
 * Especifique o nome do banco de dados a ser criado.
 
@@ -94,16 +94,16 @@ A etapa a seguir permite que você defina as configurações para logon no banco
    >
    >Para um banco de dados DB2, o nome do banco de dados não deve exceder 8 caracteres.
 
-* Informe a senha da conta vinculada a este banco de dados.
-* Indique se o banco de dados deve ou não estar em Unicode.
+* Insira a senha da conta vinculada a este banco de dados.
+* Indique se o banco de dados deve estar ou não em Unicode.
 
-   A opção **[!UICONTROL Unicode database]** permite que você armazene todos os tipos de caracteres em Unicode, independentemente do idioma.
+   A opção **[!UICONTROL Unicode database]** permite armazenar todos os tipos de caracteres em Unicode, independentemente do idioma.
 
    >[!NOTE]
    >
-   >Com um banco de dados Oracle, a opção **[!UICONTROL Unicode storage]** permite que você use os campos de tipo **NCLOB** e **NVARCHAR**.
+   >Com um banco de dados do Oracle, a opção **[!UICONTROL Unicode storage]** permite usar os campos do tipo **NCLOB** e **NVARCHAR**.
    > 
-   >Se você não selecionar essa opção, o conjunto de caracteres (conjunto de caracteres) do banco de dados Oracle deverá ativar o armazenamento de dados em todos os idiomas (recomenda-se AL32UTF8).
+   >Se você não selecionar essa opção, o conjunto de caracteres (charset) do banco de dados do Oracle deverá habilitar o armazenamento de dados em todos os idiomas (AL32UTF8 é recomendado).
 
 * Escolha um fuso horário para o banco de dados e especifique se deseja que ele esteja em UTC (se disponível).
 
@@ -113,7 +113,7 @@ A etapa a seguir permite que você defina as configurações para logon no banco
 
 Selecione os pacotes que deseja instalar.
 
-Consulte seu contrato de licença para verificar quais soluções e opções você tem direito de instalar, como &quot;Interação&quot; ou &quot;Marketing social&quot;.
+Consulte o contrato de licença para verificar quais soluções e opções você tem direito a instalar, como &quot;Interação&quot; ou &quot;Marketing social&quot;.
 
 ![](assets/s_ncs_install_modules.png)
 
@@ -123,7 +123,7 @@ A janela **[!UICONTROL Creation steps]** permite exibir e editar o script SQL us
 
 ![](assets/s_ncs_install_db_oracle_creation04.png)
 
-* Para um banco de dados Oracle, Microsoft SQL Server ou PostgreSQL, o administrador também pode definir **parâmetros de armazenamento** a serem usados ao criar objetos de banco de dados.
+* Para um Oracle, Microsoft SQL Server ou banco de dados PostgreSQL, o administrador também pode definir os **parâmetros de armazenamento** a serem usados ao criar objetos de banco de dados.
 
    Esses parâmetros recebem os nomes exatos do tablespace (aviso: diferencia maiúsculas de minúsculas). Eles são armazenados respectivamente no nó **[!UICONTROL Administration > Platform > Options]** nas seguintes opções (consulte [esta seção](../../installation/using/configuring-campaign-options.md#database)):
 
@@ -132,44 +132,44 @@ A janela **[!UICONTROL Creation steps]** permite exibir e editar o script SQL us
    * **WdbcOptions_TableSpaceWork**: tabelas de trabalho sem schema
    * **WdbcOptions_TableSpaceWorkIndex**: índice de tabelas de trabalho sem schema
 
-* Para um banco de dados Oracle, o usuário do Adobe Campaign deve ter acesso às bibliotecas do Oracle, normalmente como membro do grupo **oinstall**.
-* A opção **[!UICONTROL Set or change the administrator password]** permite que você insira a senha vinculada ao operador Adobe Campaign com direitos de administrador.
+* Para um banco de dados do Oracle, o usuário do Adobe Campaign deve ter acesso às bibliotecas do Oracle, normalmente como membro do grupo **oinstall**.
+* A opção **[!UICONTROL Set or change the administrator password]** permite inserir a senha vinculada ao operador do Adobe Campaign com direitos de administrador.
 
-   Recomendamos definir uma senha de administrador de conta da Adobe Campaign para fins de segurança.
+   Recomendamos definir uma senha de administrador de conta do Adobe Campaign para fins de segurança.
 
 ### Etapa 6 - Criação do banco de dados {#step-6---creating-the-database}
 
-A etapa final do assistente permite que você crie o banco de dados. Clique em **[!UICONTROL Start]** para confirmar.
+A etapa final do assistente permite criar o banco de dados. Clique em **[!UICONTROL Start]** para confirmar.
 
 ![](assets/s_ncs_install_db_oracle_creation06.png)
 
-Depois que o banco de dados for criado, você poderá se conectar novamente para finalizar a configuração da instância.
+Depois que o banco de dados for criado, você poderá se reconectar para finalizar a configuração da instância.
 
-Agora você deve start o assistente de implantação para concluir a configuração da instância. Consulte [Assistente de implantação](../../installation/using/deploying-an-instance.md#deployment-wizard).
+Agora, você deve iniciar o assistente de implantação para concluir a configuração da instância. Consulte [Assistente de implantação](../../installation/using/deploying-an-instance.md#deployment-wizard).
 
 As configurações de conexão do banco de dados vinculado à instância são armazenadas no arquivo **`/conf/config-<instance>.xml`** encontrado no diretório de instalação do Adobe Campaign.
 
-Exemplo de uma configuração do Microsoft SQL Server no banco de dados base61 vinculado à conta &#39;campanha&#39; com sua senha criptografada:
+Exemplo de configuração do Microsoft SQL Server no banco de dados base61 vinculado à conta &#39;campaign&#39; com sua senha criptografada:
 
 ```
 <dbcnx encrypted="1" login="campaign:myBase" password="myPassword" provider="DB" server="dbServer"/>
 ```
 
-## Caso 2: Usando um banco de dados existente {#case-2--using-an-existing-database}
+## Caso 2: Uso de um banco de dados existente {#case-2--using-an-existing-database}
 
-O banco de dados, assim como o usuário, devem ter sido criados pelo administrador do banco de dados e os direitos de acesso configurados corretamente.
+O banco de dados, assim como o usuário, devem ter sido criados pelo administrador do banco de dados e os direitos de acesso devem ter sido configurados corretamente.
 
-Por exemplo, para um banco de dados Oracle, os direitos mínimos obrigatórios são: CONCEDER CONNECT, RECURSOS E ESPAÇO DE TRABALHO ILIMITADO.
+Por exemplo, para um banco de dados do Oracle, os direitos mínimos necessários são: CONCEDER CONNECT, RECURSO E ESPAÇO DE TABELA ILIMITADO.
 
 Para usar um banco de dados existente, as etapas de configuração são as seguintes:
 
-* [Etapa 1 - Escolhendo o mecanismo](#step-1---choosing-the-database-engine) de banco de dados,
+* [Etapa 1 - Escolha do mecanismo](#step-1---choosing-the-database-engine) de banco de dados,
 * [Etapa 2 - Configurações](#step-2---database-connection-settings) de conexão do banco de dados,
 * [Etapa 3 - Pacotes para instalar](#step-3---packages-to-install),
 * [Etapa 4 - Etapas](#step-4---creation-steps) de criação,
 * [Etapa 5 - Criação do banco de dados](#step-5---creating-the-database).
 
-### Etapa 1 - Escolhendo o mecanismo de banco de dados {#step-1---choosing-the-database-engine}
+### Etapa 1 - Escolha do mecanismo de banco de dados {#step-1---choosing-the-database-engine}
 
 Escolha o mecanismo de banco de dados na lista suspensa.
 
@@ -190,21 +190,21 @@ Dependendo do mecanismo de banco de dados selecionado, as informações de ident
 
       ![](assets/s_ncs_install_db_mssql_exists_01.png)
 
-### Etapa 2 - Configurações de conexão de banco de dados {#step-2---database-connection-settings}
+### Etapa 2 - Configurações de conexão do banco de dados {#step-2---database-connection-settings}
 
 Na janela **[!UICONTROL Database]**, defina as configurações de conexão do banco de dados.
 
 ![](assets/s_ncs_install_db_oracle_exists_02.png)
 
-É necessário definir as seguintes configurações:
+Você precisa definir as seguintes configurações:
 
-* Digite o nome do banco de dados a ser usado,
-* Digite o nome e a senha da conta associada ao banco de dados,
+* Insira o nome do banco de dados a ser usado,
+* Insira o nome e a senha da conta associada a este banco de dados,
 
    >[!NOTE]
    >
-   >Verifique se o nome do schema e do usuário correspondem. A maneira recomendada de criar o banco de dados é através do cliente do console de campanha.
-   >Para um banco de dados Oracle, não é necessário inserir o nome da conta.
+   >Certifique-se de que o nome do esquema e do nome de usuário correspondam. A maneira recomendada de criar o banco de dados é por meio do cliente do console do Campaign.
+   >Para um banco de dados do Oracle, não é necessário inserir o nome da conta.
 
 * Indique se o banco de dados deve ser Unicode ou não.
 
@@ -212,7 +212,7 @@ Na janela **[!UICONTROL Database]**, defina as configurações de conexão do ba
 
 Selecione os pacotes que deseja instalar.
 
-Consulte seu contrato de licença para verificar quais soluções e opções você tem direito a instalar, como &quot;Interação&quot; ou &quot;Clientes potenciais&quot;.
+Consulte o contrato de licença para verificar quais soluções e opções você tem direito a instalar, como &quot;Interação&quot; ou &quot;Leads&quot;.
 
 ![](assets/s_ncs_install_modules.png)
 
@@ -222,27 +222,26 @@ A janela **[!UICONTROL Creation steps]** permite exibir e editar o script SQL us
 
 ![](assets/s_ncs_install_db_oracle_creation04.png)
 
-* Para bancos de dados Oracle, Microsoft SQL Server ou PostgreSQL, o administrador pode definir **parâmetros de armazenamento** a serem usados ao criar objetos de banco de dados.
-* Para um banco de dados Oracle, o usuário do Adobe Campaign deve ter acesso às bibliotecas do Oracle, normalmente como membro do grupo **oinstall**.
-* A opção **[!UICONTROL Set or change the administrator password]** permite que você insira a senha vinculada ao operador Adobe Campaign com direitos de administrador.
+* Para bancos de dados Oracle, Microsoft SQL Server ou PostgreSQL, o administrador pode definir os **parâmetros de armazenamento** a serem usados ao criar objetos de banco de dados.
+* Para um banco de dados do Oracle, o usuário do Adobe Campaign deve ter acesso às bibliotecas do Oracle, normalmente como membro do grupo **oinstall**.
+* A opção **[!UICONTROL Set or change the administrator password]** permite inserir a senha vinculada ao operador do Adobe Campaign com direitos de administrador.
 
-   Recomendamos definir uma senha de administrador de conta da Adobe Campaign para fins de segurança.
+   Recomendamos definir uma senha de administrador de conta do Adobe Campaign para fins de segurança.
 
 ### Etapa 5 - Criação do banco de dados {#step-5---creating-the-database}
 
-A etapa final do assistente permite que você crie o banco de dados. Clique em **[!UICONTROL Start]** para confirmar.
+A etapa final do assistente permite criar o banco de dados. Clique em **[!UICONTROL Start]** para confirmar.
 
 ![](assets/s_ncs_install_db_oracle_creation06.png)
 
-Quando a criação do banco de dados estiver concluída, você poderá se reconectar para finalizar a configuração da instância.
+Quando a criação do banco de dados for concluída, você poderá se reconectar para finalizar a configuração da instância.
 
-Agora você deve start o assistente de implantação para concluir a configuração da instância. Consulte [Assistente de implantação](../../installation/using/deploying-an-instance.md#deployment-wizard).
+Agora, você deve iniciar o assistente de implantação para concluir a configuração da instância. Consulte [Assistente de implantação](../../installation/using/deploying-an-instance.md#deployment-wizard).
 
 As configurações de conexão do banco de dados vinculado à instância são armazenadas no arquivo **`/conf/config-<instance>.xml`** encontrado no diretório de instalação do Adobe Campaign.
 
-Exemplo de uma configuração do Microsoft SQL Server no banco de dados base61 vinculado à conta &#39;campanha&#39; com sua senha criptografada:
+Exemplo de configuração do Microsoft SQL Server no banco de dados base61 vinculado à conta &#39;campaign&#39; com sua senha criptografada:
 
 ```
 <dbcnx encrypted="1" login="campaign:myBase" password="myPassword" provider="DB" server="dbServer"/>
 ```
-
