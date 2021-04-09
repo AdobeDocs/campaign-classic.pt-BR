@@ -2,37 +2,37 @@
 solution: Campaign Classic
 product: campaign
 title: Solução de problemas de produção
-description: Descubra procedimentos de solução de problemas de produção relacionados ao procedimento de configuração, monitoramento, upgrade, processamento de dados e manutenção do banco de dados da Adobe Campaign.
+description: Descubra os procedimentos de solução de problemas de produção relacionados à configuração, monitoramento, processo de atualização, processamento de dados e procedimento de manutenção de banco de dados do Adobe Campaign.
 audience: production
 content-type: reference
 topic-tags: troubleshooting
+exl-id: 78c65b31-e3d9-4a46-a101-26f35d00a4ee
 translation-type: tm+mt
-source-git-commit: 0f2986f88f72c191262248029ec620fad538c218
+source-git-commit: b0a1e0596e985998f1a1d02236f9359d0482624f
 workflow-type: tm+mt
 source-wordcount: '219'
-ht-degree: 21%
+ht-degree: 20%
 
 ---
 
-
 # Solução de problemas de produção{#troubleshooting}
 
-Esta seção contém procedimentos de solução de problemas relacionados a problemas gerais de produção da Adobe Campaign, como execução de delivery e fluxos de trabalho, monitoramento, manutenção do banco de dados, conexão etc.
+Esta seção contém procedimentos de solução de problemas relacionados a problemas gerais de produção do Adobe Campaign, como execução de delivery e workflow, monitoramento, manutenção de banco de dados, conexão etc.
 
 ## Problemas comuns e gerais {#common-and-general-issues}
 
-* Essa [página](../../production/using/modules-and-frequent-issues.md) apresenta os problemas mais frequentes encontrados para os módulos listados.
-* Este [page](../../production/using/workflow-execution.md) lista procedimentos comuns de solução de problemas que você deve seguir ao enfrentar problemas com a execução do fluxo de trabalho.
-* Essa [página](../../production/using/lost-password.md) detalha como alterar ou recuperar uma senha perdida.
-* Essa [page](../../production/using/console-update.md) detalha como reativar a solicitação de atualização do console se você desativou a opção correspondente.
+* Este [page](../../production/using/modules-and-frequent-issues.md) apresenta os problemas mais frequentes encontrados para os módulos listados.
+* Essa [página](../../production/using/workflow-execution.md) lista os procedimentos comuns de solução de problemas que você deve seguir ao enfrentar problemas com a execução do workflow.
+* Esta [página](../../production/using/lost-password.md) detalha como alterar ou recuperar uma senha perdida.
+* Essa [página](../../production/using/console-update.md) detalha como reativar a solicitação de atualização do console se você desativar a opção correspondente.
 
 ## Solução de problemas de delivery {#delivery-troubleshooting}
 
-Ações específicas podem ser executadas quando houver problemas com delivery:
+Ações específicas podem ser executadas quando houver problemas com deliveries:
 * [Problemas com delivery](../../production/using/performance-and-throughput-issues.md#deliverability_issues)
 * [Problemas de exibição de imagem](../../production/using/image-display-issues.md)
 * [Imagem ausente](../../production/using/images-missing.md)
-* [Problemas](../../production/using/temporary-files.md)  de arquivos temporários (somente *modelos de hospedagem* no local)
+* [Problemas com arquivos temporários](../../production/using/temporary-files.md)  (somente *modelos de hospedagem local*)
 
 **Tópicos relacionados**:
 
@@ -40,14 +40,14 @@ Ações específicas podem ser executadas quando houver problemas com delivery:
 
 ## Trabalhar com logs {#working-with-logs}
 
-Estas são algumas dicas para ajudar a melhorar sua experiência com registros:
+Estas são algumas dicas para ajudar a melhorar sua experiência com logs:
 
 * [Precisão do log](../../production/using/log-precision.md)
-* [Rastreamento de problemas de registro](../../production/using/tracking-logs-issues.md)
+* [Problemas de log de rastreamento](../../production/using/tracking-logs-issues.md)
 
 ## Problemas de banco de dados {#database-issues}
 
-Descubra como resolver problemas de desempenho lendo as seguintes seções:
+Descubra como você pode resolver problemas de desempenho lendo as seguintes seções:
 
 * [Desempenho do banco de dados](../../production/using/database-performances.md)
 * [Codificação do banco de dados Oracle](../../production/using/encoding-of-the-oracle-database.md)
@@ -61,7 +61,7 @@ Caso encontre problemas de conexão, veja algumas maneiras de corrigi-los:
 
 ## Solução de problemas técnicos {#technical-troubleshooting}
 
-Vá para as seções abaixo para ler sobre problemas mais específicos:
+Acesse as seções abaixo para ler sobre problemas mais específicos:
 
 * [Rastreamento em pilha no Linux](../../production/using/stack-trace-in-linux.md)
 * [Comportamento JSP](../../production/using/jsp-behavior.md)
