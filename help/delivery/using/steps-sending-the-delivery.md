@@ -8,7 +8,7 @@ content-type: reference
 topic-tags: about-deliveries-and-channels
 exl-id: 0411686e-4f13-401e-9333-e14b05ebe9cd
 translation-type: tm+mt
-source-git-commit: b0a1e0596e985998f1a1d02236f9359d0482624f
+source-git-commit: ae4f86f3703b9bfe7f08fd5c2580dd5da8c28cbd
 workflow-type: tm+mt
 source-wordcount: '1521'
 ht-degree: 100%
@@ -41,7 +41,7 @@ Antes de enviar o delivery, você poderá definir os parâmetros de envio nas pr
 
    >[!NOTE]
    >
-   >A utilização dessa opção não é recomendada ao instalar usando o mid-sourcing para não chamar mta. Para obter mais informações sobre como configurar o servidor SMTP, consulte [esta seção](../../installation/using/configuring-campaign-server.md#delivery-settings).
+   >A utilização dessa opção não é recomendada ao instalar usando o mid-sourcing para não chamar mta. Para obter mais informações sobre como configurar o servidor SMTP, consulte [esta seção](../../installation/using/configure-delivery-settings.md).
 
 * **[!UICONTROL Email BCC]**: essa opção permite armazenar emails em um sistema externo por meio do CCO simplesmente adicionando um endereço de email de CCO ao target da sua mensagem. Para obter mais informações, consulte [esta seção](../../delivery/using/sending-messages.md#archiving-emails).
 
