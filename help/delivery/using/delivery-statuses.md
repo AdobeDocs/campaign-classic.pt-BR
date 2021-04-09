@@ -6,14 +6,14 @@ description: Saiba mais sobre os status disponíveis no painel do delivery.
 audience: delivery
 content-type: reference
 topic-tags: monitoring-deliveries
+exl-id: 0663257a-3a70-4e0c-bbeb-8242aaa0876d
 translation-type: tm+mt
-source-git-commit: 8bf1b5b1a6763cf933d86f2af61b2bb68e870222
+source-git-commit: b0a1e0596e985998f1a1d02236f9359d0482624f
 workflow-type: tm+mt
 source-wordcount: '629'
-ht-degree: 94%
+ht-degree: 95%
 
 ---
-
 
 # Status de delivery {#delivery-statuses}
 
@@ -87,7 +87,7 @@ Para obter mais detalhes sobre as diferentes falhas de delivery que podem ser en
  </tbody> 
 </table>
 
-Para saber como otimizar a capacidade de delivery dos emails do Adobe Campaign, consulte [esta seção](../../delivery/using/about-deliverability.md). Para um mergulho mais profundo na capacidade de entrega, consulte o [Guia de práticas recomendadas de capacidade de entrega do Adobe](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/introduction.html).
+Para saber como otimizar a capacidade de delivery dos emails do Adobe Campaign, consulte [esta seção](../../delivery/using/about-deliverability.md). Para um mergulho mais profundo na capacidade de entrega, consulte o [Guia de práticas recomendadas de capacidade de entrega do Adobe](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/introduction.html?lang=pt-BR).
 
 ## Status pendente {#pending-status}
 
@@ -127,7 +127,7 @@ Se o delivery não estiver sendo enviado e o status permanecer **[!UICONTROL Pen
 
 * Pode ser que o delivery esteja usando uma afinidade não configurada no servidor emissor.
 
-   Nesse caso, verifique a configuração do gerenciamento de tráfego (afinidade IP) e use o campo **[!UICONTROL Managing affinities with IP addresses]** para vincular deliveries ao MTA que gerencia a afinidade. Para obter mais informações sobre afinidades, consulte [esta seção](../../installation/using/configuring-campaign-server.md#personalizing-delivery-parameters).
+   Nesse caso, verifique a configuração do gerenciamento de tráfego (afinidade IP) e use o campo **[!UICONTROL Managing affinities with IP addresses]** para vincular deliveries ao MTA que gerencia a afinidade. Para obter mais informações sobre afinidades, consulte [esta seção](../../installation/using/configuring-campaign-server.md#delivery-settings).
 
 * Quando muitas campanhas são executadas, o status do delivery permanece como &quot;Pendente&quot;.
 
