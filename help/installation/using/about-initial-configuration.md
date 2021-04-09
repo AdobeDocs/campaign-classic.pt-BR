@@ -6,14 +6,14 @@ description: Sobre a configuração inicial
 audience: installation
 content-type: reference
 topic-tags: initial-configuration
+exl-id: f77ba178-0dfb-4a2e-b33b-971765d42298
 translation-type: tm+mt
-source-git-commit: 95d0686c4ddeb4e25eb918ca92cbd6a0b1aa1f3c
+source-git-commit: b0a1e0596e985998f1a1d02236f9359d0482624f
 workflow-type: tm+mt
 source-wordcount: '167'
-ht-degree: 3%
+ht-degree: 8%
 
 ---
-
 
 # Etapas principais para configurar e implantar sua instância{#about-initial-configuration}
 
@@ -21,9 +21,9 @@ Quando a instalação do Adobe Campaign for concluída, será necessário config
 
 1. Crie a instância e a conexão relacionada, consulte [Criação de uma instância e logon](../../installation/using/creating-an-instance-and-logging-on.md).
 1. Crie e configure o banco de dados, consulte [Criação e configuração do banco de dados](../../installation/using/creating-and-configuring-the-database.md).
-1. Configure o servidor do Adobe Campaign, consulte [Configuração do servidor do Campaign](../../installation/using/campaign-server-configuration.md).
+1. Configure o servidor do Adobe Campaign, consulte [Configuração do servidor do Campaign](../../installation/using/configuring-campaign-server.md).
 1. Implante a instância, consulte [Implantação de uma instância](../../installation/using/deploying-an-instance.md).
 
-A configuração da instância implica habilitar processos (Web, mta, wfserver etc.) para ser iniciado no servidor e configurar módulos para envio de e-mail, para rastreamento etc. Para cada instância, os processos do Adobe Campaign são ativados no servidor. Para obter mais informações, consulte [Ativando processos](../../installation/using/campaign-server-configuration.md#enabling-processes).
+A configuração da instância implica habilitar processos (Web, mta, wfserver etc.) para ser iniciado no servidor e configurar módulos para envio de e-mail, para rastreamento etc. Para cada instância, os processos do Adobe Campaign são ativados no servidor. Para obter mais informações, consulte [esta seção](../../installation/using/configuring-campaign-server.md#enabling-processes).
 
 Configurações adicionais podem ser necessárias para cada instância (dependendo dos módulos usados, da arquitetura e das necessidades) para otimizar a operação do Adobe Campaign.
