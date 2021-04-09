@@ -8,7 +8,7 @@ content-type: reference
 topic-tags: monitoring-deliveries
 exl-id: 0663257a-3a70-4e0c-bbeb-8242aaa0876d
 translation-type: tm+mt
-source-git-commit: b0a1e0596e985998f1a1d02236f9359d0482624f
+source-git-commit: ae4f86f3703b9bfe7f08fd5c2580dd5da8c28cbd
 workflow-type: tm+mt
 source-wordcount: '629'
 ht-degree: 95%
@@ -127,7 +127,7 @@ Se o delivery não estiver sendo enviado e o status permanecer **[!UICONTROL Pen
 
 * Pode ser que o delivery esteja usando uma afinidade não configurada no servidor emissor.
 
-   Nesse caso, verifique a configuração do gerenciamento de tráfego (afinidade IP) e use o campo **[!UICONTROL Managing affinities with IP addresses]** para vincular deliveries ao MTA que gerencia a afinidade. Para obter mais informações sobre afinidades, consulte [esta seção](../../installation/using/configuring-campaign-server.md#delivery-settings).
+   Nesse caso, verifique a configuração do gerenciamento de tráfego (afinidade IP) e use o campo **[!UICONTROL Managing affinities with IP addresses]** para vincular deliveries ao MTA que gerencia a afinidade. Para obter mais informações sobre afinidades, consulte [esta seção](../../installation/using/configure-delivery-settings.md).
 
 * Quando muitas campanhas são executadas, o status do delivery permanece como &quot;Pendente&quot;.
 
