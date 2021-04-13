@@ -9,10 +9,10 @@ solution: Campaign Classic
 sub-product: adobe campaign classic
 type: Documentation
 translation-type: tm+mt
-source-git-commit: ae4f86f3703b9bfe7f08fd5c2580dd5da8c28cbd
+source-git-commit: 60ab99d006599edfcb997829ea0c452a2daea219
 workflow-type: tm+mt
-source-wordcount: '2489'
-ht-degree: 97%
+source-wordcount: '2516'
+ht-degree: 96%
 
 ---
 
@@ -213,7 +213,7 @@ ht-degree: 97%
       + [Solução de problemas de delivery](delivery/using/delivery-troubleshooting.md)
       + [Status de delivery](delivery/using/delivery-statuses.md)
       + [Entender as falhas de delivery](delivery/using/understanding-delivery-failures.md)
-      + [Atualizar qualificação de devolução após uma interrupção de ISP](delivery/using/update-bounce-qualification.md)
+      + [Atualizar qualificação de rejeição após uma interrupção de ISP](delivery/using/update-bounce-qualification.md)
       + [Entender o gerenciamento de quarentenas](delivery/using/understanding-quarantine-management.md)
    + Rastrear mensagens {#tracking-messages}
       + [Sobre o rastreamento de mensagens](delivery/using/about-message-tracking.md)
@@ -394,6 +394,10 @@ ht-degree: 97%
       + [Configurar eventos para implementação personalizada](integrations/using/events.md)
       + [Monitoramento de pipeline](integrations/using/pipeline-monitoring.md)
       + [Solução de problemas de pipeline](integrations/using/pipeline-troubleshooting.md)
+   + Fontes e destinos do Adobe Experience Platform {#aep-sources-destinations}
+      + [Introdução a fontes e destinos](integrations/using/get-started-sources-destinations.md)
+      + [Assimilar públicos da Adobe Experience Platform no Campaign](integrations/using/ingest-aep-data.md)
+      + [Exportar dados do Campaign para o Adobe Experience Platform](integrations/using/export-campaign-data.md)
 + Automatizar com workflows {#automating-with-workflows}
    + Introdução a workflows {#introduction}
       + [Sobre workflows](workflow/using/about-workflows.md)
