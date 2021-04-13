@@ -8,10 +8,10 @@ role: Business Practitioner
 level: Beginner
 exl-id: 07c1f4a3-cf16-4a9b-b402-e13258799f91
 translation-type: tm+mt
-source-git-commit: 6854d06f8dc445b56ddfde7777f02916a60f2b63
+source-git-commit: 815648f97d2f5e15c1d5ddc340d384d440d0d6b2
 workflow-type: tm+mt
-source-wordcount: '4272'
-ht-degree: 96%
+source-wordcount: '4304'
+ht-degree: 97%
 
 ---
 
@@ -20,6 +20,10 @@ ht-degree: 96%
 Esta página lista todos os novos recursos e atualizações de documentação por mês e versão do Campaign.
 
 Consulte as [Notas de versão do Adobe Campaign Classic](../../rn/using/latest-release.md) para ver as atualizações relacionadas à versão.
+
+## 2 de abril de 2021 {#april-2021}
+
+Uma nova seção foi sobre como trabalhar com Fontes e Destinos da Adobe Experience Platform para compartilhar dados entre o Campaign Classic e o Adobe Real-time Customer Data Platform (RTCDP). [Leia mais](../../integrations/using/get-started-sources-destinations.md)
 
 ## Março de 2021 {#march-2021}
 
@@ -40,7 +44,7 @@ Saiba como criar e gerenciar campanhas por meio destas novas páginas:
 
 Foram adicionadas informações à seção de atividade **[!UICONTROL Advanced JavaScript]** sobre como usar o método task.setCompleted() para finalizar a tarefa e impedir futuras recuperações. [Leia mais](../../workflow/using/sql-code-and-javascript-code.md#adv-js-code-desc)
 
-A seção [Deliverability](../../delivery/using/about-deliverability.md) foi atualizada e agora inclui links para o novo [Adobe Deliverability Best Practice Guide](https://experienceleague.corp.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/introduction.html). Todas as informações genéricas relacionadas à capacidade de entrega que podem ser aplicadas a várias soluções do Adobe foram movidas para o [Guia de Práticas Recomendadas Apêndice](https://experienceleague.corp.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/additional-resources/general-resources.html#additional-resources).
+A seção [Capacidade de delivery](../../delivery/using/about-deliverability.md) foi atualizada e agora inclui links para o novo [Manual de práticas recomendadas de capacidade de delivery da Adobe](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/introduction.html?lang=pt-BR). Todas as informações genéricas relacionadas à capacidade de delivery que podem ser aplicadas a várias soluções da Adobe foram movidas para o [Apêndice do manual de práticas recomendadas](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/additional-resources/general-resources.html?lang=pt-BR#additional-resources).
 
 ## Fevereiro de 2021 {#release-21.1}
 
