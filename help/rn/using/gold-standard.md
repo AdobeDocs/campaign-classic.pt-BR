@@ -8,10 +8,10 @@ role: Business Practitioner
 level: Beginner
 exl-id: 9e3a11b1-3070-4d90-91d5-7c559bdd500e
 translation-type: tm+mt
-source-git-commit: 6854d06f8dc445b56ddfde7777f02916a60f2b63
+source-git-commit: ac01b3c064209362cc6142a716d2892c27753d76
 workflow-type: tm+mt
-source-wordcount: '1023'
-ht-degree: 96%
+source-wordcount: '1058'
+ht-degree: 94%
 
 ---
 
@@ -20,6 +20,14 @@ ht-degree: 96%
 Esta página lista [!DNL Gold Standard] versões. Saiba mais sobre o Campaign [!DNL Gold Standard] [nesta página](gs-overview.md).
 
 ## ![](assets/do-not-localize/green_2.png) [!DNL Gold Standard] Versão 11{#gs-11}
+
+_14 de abril de 2021_
+
+A build 9032@d030c36 inclui a seguinte correção:
+
+* Correção de uma regressão do console do cliente que causava mensagens de erro persistentes na tela de conexão IMS. (NEO-34821)
+
+**Somente a atualização do console é obrigatória. Não é necessária nenhuma atualização do servidor.**
 
 _2 de março de 2021_
 
