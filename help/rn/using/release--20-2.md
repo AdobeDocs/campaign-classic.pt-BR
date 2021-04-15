@@ -8,16 +8,26 @@ role: Business Practitioner
 level: Beginner
 exl-id: fcaab1aa-c8f9-4606-b0d8-eb481a38f588
 translation-type: tm+mt
-source-git-commit: ae4f86f3703b9bfe7f08fd5c2580dd5da8c28cbd
+source-git-commit: 1c59afc7021af604559184cd0c21129af3759a8c
 workflow-type: tm+mt
-source-wordcount: '2830'
-ht-degree: 92%
+source-wordcount: '2970'
+ht-degree: 91%
 
 ---
 
 # Versão 20.2{#release-20-2}
 
 ## ![](assets/do-not-localize/green_2.png) Versão 20.2.5 - Compilação 9188 {#release-20-2-5-build-9188}
+
+_15 de abril de 2021_
+
+* Correção de uma regressão do console do cliente que causava mensagens de erro persistentes na tela de conexão IMS. (NEO-34821)
+
+**Somente a atualização do console é obrigatória. Não é necessária nenhuma atualização do servidor.**
+
+>[!NOTE]
+>
+> Conecte-se à [Distribuição de software da Adobe](https://experience.adobe.com/#/downloads/content/software-distribution/br/campaign.html) para baixar a nova versão. Saiba como propor a atualização do console para todos os usuários finais [nesta página](../../installation/using/client-console-availability-for-windows.md).
 
 _31 de março de 2021_
 
@@ -37,6 +47,17 @@ _31 de março de 2021_
 * Correção de uma regressão que impedia o uso de alguns componentes do console, como o seletor de datas e o gerenciamento de imagens nos deliveries. (NEO-31453)
 
 ## ![](assets/do-not-localize/red_2.png) Versão 20.2.4 - Build 9187 {#release-20-2-4-build-9187}
+
+_15 de abril de 2021_
+
+* Correção de uma regressão do console do cliente que causava mensagens de erro persistentes na tela de conexão IMS. (NEO34821)
+* Correção de uma regressão que impedia o uso de alguns componentes do console, como o seletor de datas e o gerenciamento de imagens nos deliveries. (NEO-31453, NEO-31454)
+
+**Somente a atualização do console é obrigatória. Não é necessária nenhuma atualização do servidor.**
+
+>[!NOTE]
+>
+> Conecte-se à [Distribuição de software da Adobe](https://experience.adobe.com/#/downloads/content/software-distribution/en/campaign.html) para baixar a nova versão. Saiba como propor a atualização do console para todos os usuários finais [nesta página](../../installation/using/client-console-availability-for-windows.md).
 
 _22 de dezembro de 2020_
 
