@@ -4,20 +4,30 @@ product: campaign
 title: Versão 20.1
 description: Versão 20.1
 feature: Visão geral
-role: Profissional
-level: Iniciante
+role: Business Practitioner
+level: Beginner
+exl-id: 7e4234c9-3d8f-4014-a870-75e91cfad725
 translation-type: tm+mt
-source-git-commit: 96f5709b4c67d1979286cc1f71069a64435c5c70
+source-git-commit: da87e8aac5d5419c8b21803e4041da166d8ffde9
 workflow-type: tm+mt
-source-wordcount: '1505'
-ht-degree: 93%
+source-wordcount: '1560'
+ht-degree: 98%
 
 ---
-
 
 # Versão 20.1{#release-20-1}
 
 ## ![](assets/do-not-localize/limited_2.png) Versão 20.1.4 - Build 9126 {#release-20-1-4-build-9126}
+
+_15 de abril de 2021_
+
+* Correção de uma regressão do console do cliente que causava mensagens de erro persistentes na tela de conexão IMS. (NEO-34821)
+
+**Somente a atualização do console é obrigatória. Não é necessária nenhuma atualização do servidor.**
+
+>[!NOTE]
+>
+> Conecte-se à [Distribuição de software da Adobe](https://experience.adobe.com/#/downloads/content/software-distribution/br/campaign.html) para baixar a nova versão. Saiba como propor a atualização do console para todos os usuários finais [nesta página](../../installation/using/client-console-availability-for-windows.md).
 
 _22 de março de 2021_
 
@@ -27,13 +37,13 @@ _22 de março de 2021_
 
 >[!NOTE]
 >
-> Conecte-se a [Adobe Software Distribution](https://experience.adobe.com/#/downloads/content/software-distribution/br/campaign.html) para baixar a nova versão. Saiba como propor a atualização do console para todos os usuários finais [nesta página](../../installation/using/client-console-availability-for-windows.md).
+> Conecte-se à [Distribuição de software da Adobe](https://experience.adobe.com/#/downloads/content/software-distribution/en/campaign.html) para baixar a nova versão. Saiba como propor a atualização do console para todos os usuários finais [nesta página](../../installation/using/client-console-availability-for-windows.md).
 
 _23 de dezembro de 2020_
 
 >[!CAUTION]
 >
-> * Esta versão vem com um novo protocolo de conexão: se você estiver se conectando ao Campaign pelo Adobe Identity Service (IMS), a atualização é obrigatória para o servidor do Campaign e o console do cliente poderem se conectar ao Campaign depois de **30 de junho de 2021**.
+> * Esta versão é fornecida com um novo protocolo de conexão: se você estiver se conectando ao Campaign pelo Serviço de identidade da Adobe (IMS), a atualização será obrigatória para o servidor do Campaign e o console do cliente poderem se conectar ao Campaign após **30 de junho de 2021**.
    >
    > 
 * Esta versão vem com uma [correção de segurança](https://helpx.adobe.com/security/products/campaign/apsb21-04.html): a atualização é obrigatória para reforçar a segurança do ambiente.
