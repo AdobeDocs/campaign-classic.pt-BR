@@ -3,7 +3,7 @@ solution: Campaign Classic
 product: campaign
 title: Gerenciar acesso às pastas do Campaign
 description: Saiba como conceder acesso às pastas do Campaign e criar visualizações
-feature: Configurações do aplicativo
+feature: Application Settings
 role: Business Practitioner, Administrator
 level: Beginner
 exl-id: 0ba8a3d0-36d7-42f3-b281-0255e49b5fa3

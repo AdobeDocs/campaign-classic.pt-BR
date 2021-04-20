@@ -3,7 +3,7 @@ solution: Campaign Classic
 product: campaign
 title: Introdução a permissões
 description: Saiba como conceder acesso aos recursos do Campaign
-feature: Gerenciamento de acesso
+feature: Access Management
 role: Business Practitioner, Administrator
 level: Beginner
 exl-id: 9b616715-33cd-43ba-8548-8d96a179408e

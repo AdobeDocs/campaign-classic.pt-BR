@@ -3,7 +3,7 @@ solution: Campaign Classic
 product: campaign
 title: Recursos obsoletos e removidos do Campaign Classic
 description: Esta página lista recursos obsoletos e removidos do Adobe Campaign Classic
-feature: Visão geral
+feature: Overview
 role: Business Practitioner
 level: Beginner
 exl-id: d60d67de-6618-4f3b-be4a-ad7633ab5645

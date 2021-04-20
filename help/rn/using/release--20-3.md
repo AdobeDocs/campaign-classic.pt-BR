@@ -3,9 +3,9 @@ solution: Campaign Classic
 product: campaign
 title: Notas de versão do Campaign 20.3
 description: Notas de versão do Campaign 20.3
-feature: Visão geral
-role: Profissional
-level: Iniciante
+feature: Overview
+role: Business Practitioner
+level: Beginner
 translation-type: tm+mt
 source-git-commit: 1f718e26aeaa5ed5a58dfd0e3bc29d2dd9e995ee
 workflow-type: tm+mt

@@ -3,7 +3,7 @@ solution: Campaign Classic
 product: campaign
 title: Versão 20.2
 description: Versão 20.2
-feature: Visão geral
+feature: Overview
 role: Business Practitioner
 level: Beginner
 exl-id: fcaab1aa-c8f9-4606-b0d8-eb481a38f588

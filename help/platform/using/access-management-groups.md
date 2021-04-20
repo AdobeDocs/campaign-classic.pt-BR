@@ -3,7 +3,7 @@ solution: Campaign Classic
 product: campaign
 title: Criar e gerenciar grupos de operadores
 description: Saiba como conceder acesso a grupos de operadores
-feature: Gerenciamento de acesso
+feature: Access Management
 role: Business Practitioner, Administrator
 level: Beginner
 exl-id: d5833d3d-e8ef-4f2b-8084-4ba825c79525

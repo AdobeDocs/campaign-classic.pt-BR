@@ -3,9 +3,9 @@ solution: Campaign Classic
 product: campaign
 title: Conector de dados do Adobe Analytics
 description: Conector de dados do Adobe Analytics
-feature: Visão geral
-role: Profissional de negócios, Administrador
-level: Iniciante
+feature: Overview
+role: Business Practitioner, Administrator
+level: Beginner
 translation-type: tm+mt
 source-git-commit: f2bd093d3a010e079b7f5adf3371e21d07a4f3ae
 workflow-type: tm+mt

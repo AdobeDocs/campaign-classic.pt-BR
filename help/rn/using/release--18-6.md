@@ -6,9 +6,9 @@ description: Notas de versão do Campaign 18.6
 audience: rn
 content-type: reference
 topic-tags: latest-release-notes
-feature: Visão geral
-role: Profissional
-level: Iniciante
+feature: Overview
+role: Business Practitioner
+level: Beginner
 translation-type: tm+mt
 source-git-commit: ce60b2bd0a9d75ca429af2f740832b408ce3c48b
 workflow-type: tm+mt
