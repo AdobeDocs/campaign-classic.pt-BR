@@ -9,10 +9,10 @@ solution: Campaign Classic
 sub-product: adobe campaign classic
 type: Documentation
 translation-type: tm+mt
-source-git-commit: 60ab99d006599edfcb997829ea0c452a2daea219
+source-git-commit: b741b10fd1d3a94a3e6c71e95ff43cc0ee54ebc7
 workflow-type: tm+mt
-source-wordcount: '2516'
-ht-degree: 96%
+source-wordcount: '2519'
+ht-degree: 97%
 
 ---
 
@@ -42,6 +42,7 @@ ht-degree: 96%
    + [Notas técnicas](technotes/technote.md)
    + [Atualização de certificado do iOS](technotes/ios-certificate-update.md)
    + [Atualizações de configuração do Campaign](technotes/acc-config-updates.md)
+   + [Atualização de URLs rastreados](technotes/tracked-urls.md)
 + Introdução {#getting-started}
    + Primeiros passos com o Adobe Campaign {#starting-with-adobe-campaign}
       + [Introdução ao Adobe Campaign Classic](platform/using/about-adobe-campaign-classic.md)
@@ -394,10 +395,10 @@ ht-degree: 96%
       + [Configurar eventos para implementação personalizada](integrations/using/events.md)
       + [Monitoramento de pipeline](integrations/using/pipeline-monitoring.md)
       + [Solução de problemas de pipeline](integrations/using/pipeline-troubleshooting.md)
-   + Fontes e destinos do Adobe Experience Platform {#aep-sources-destinations}
+   + Fontes e destinos da Adobe Experience Platform {#aep-sources-destinations}
       + [Introdução a fontes e destinos](integrations/using/get-started-sources-destinations.md)
       + [Assimilar públicos da Adobe Experience Platform no Campaign](integrations/using/ingest-aep-data.md)
-      + [Exportar dados do Campaign para o Adobe Experience Platform](integrations/using/export-campaign-data.md)
+      + [Exportar dados do Campaign para a Adobe Experience Platform](integrations/using/export-campaign-data.md)
 + Automatizar com workflows {#automating-with-workflows}
    + Introdução a workflows {#introduction}
       + [Sobre workflows](workflow/using/about-workflows.md)
