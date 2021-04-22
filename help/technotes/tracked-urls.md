@@ -6,9 +6,9 @@ description: Nota técnica
 hide: true
 hidefromtoc: true
 translation-type: tm+mt
-source-git-commit: f47b0ecfd3e35d15a78779fd9f38cc93c798d5d2
+source-git-commit: 65ff09dd8ded029178c4c85489bf01ef80d16e8d
 workflow-type: tm+mt
-source-wordcount: '336'
+source-wordcount: '343'
 ht-degree: 7%
 
 ---
@@ -27,13 +27,13 @@ Para melhorar a segurança, o mecanismo de assinatura para rastrear links em ema
 
 Se seu ambiente estiver em execução em uma das versões listadas abaixo, você poderá ser afetado:
 
-* Gold Standard 7 - 11. [Saiba mais](../rn/using/gold-standard.md)
-* Campanha 21.1.1 - 21.1.2. [Saiba mais](../rn/using/latest-release.md)
-* Campanha 20.3.1 - 20.3.3. [Saiba mais](../rn/using/release--20-3.md)
-* Campaign 20.2.1 - 20.2.3 versões. [Saiba mais](../rn/using/release--20-2.md)
-* Campanha 20.1.1 - 21.1.3 versões. [Saiba mais](../rn/using/release--20-1.md)
-* Campanha 19.2.2 - Versões 19.2.3. [Saiba mais](../rn/using/release--19-2.md)
-* Campanha 19.1.5 - Versões 19.1.7. [Saiba mais](../rn/using/release--19-1.md)
+* Gold Standard 7 a 11. [Saiba mais](../rn/using/gold-standard.md)
+* Versões 21.1.1 a 21.1.2 do Campaign. [Saiba mais](../rn/using/latest-release.md)
+* Versões 20.3.1 a 20.3.3 do Campaign. [Saiba mais](../rn/using/release--20-3.md)
+* Versões 20.2.1 a 20.2.3 do Campaign. [Saiba mais](../rn/using/release--20-2.md)
+* Versões 20.1.1 a 21.1.3 do Campaign. [Saiba mais](../rn/using/release--20-1.md)
+* Versões 19.2.2 a 19.2.3 do Campaign. [Saiba mais](../rn/using/release--19-2.md)
+* Versões 19.1.5 a 19.1.7 do Campaign. [Saiba mais](../rn/using/release--19-1.md)
 
 Saiba como verificar sua versão [nesta seção](../platform/using/launching-adobe-campaign.md#getting-your-campaign-version).
 
