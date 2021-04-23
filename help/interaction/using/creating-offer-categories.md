@@ -6,14 +6,14 @@ description: Criação de categorias de ofertas
 audience: interaction
 content-type: reference
 topic-tags: managing-an-offer-catalog
-translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
-workflow-type: tm+mt
+exl-id: ed97a1b5-c870-4b67-98b6-16adc316fd46
+translation-type: ht
+source-git-commit: 6854d06f8dc445b56ddfde7777f02916a60f2b63
+workflow-type: ht
 source-wordcount: '266'
 ht-degree: 100%
 
 ---
-
 
 # Criação de categorias de ofertas{#creating-offer-categories}
 
@@ -60,4 +60,3 @@ Para criar uma categoria adicional, siga as etapas abaixo:
 Um resumo das regras de qualificação está disponível no painel das ofertas incluídas na categoria. Para visualizá-las, clique no link **[!UICONTROL Schedule and eligibility rules of the offer]**.
 
 ![](assets/offer_create_006.png)
-
