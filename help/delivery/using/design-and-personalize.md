@@ -5,14 +5,14 @@ title: Criar conteúdo personalizado
 audience: delivery
 content-type: reference
 topic-tags: deliveries-best-practices
-translation-type: tm+mt
-source-git-commit: 40edacce1812a1722e5a23e5db7da11687c44ac8
-workflow-type: tm+mt
+exl-id: 5bf727d2-83b1-4a99-be25-041eee8d234c
+translation-type: ht
+source-git-commit: 6854d06f8dc445b56ddfde7777f02916a60f2b63
+workflow-type: ht
 source-wordcount: '1278'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
-
 
 # Criar conteúdo personalizado {#build-personalized-content}
 
@@ -114,7 +114,7 @@ Para evitar erros comuns de formatação, verifique os seguintes elementos:
 
 * Uso de **caracteres autorizados** em emails: a lista de caracteres válidos para endereços de email é definida na opção &quot;XtkEmail_Characters&quot;. Saiba como acessar as opções do Campaign [nesta seção](../../installation/using/configuring-campaign-options.md). Para trabalhar corretamente com caracteres especiais, o Adobe Campaign precisa ser instalado em Unicode.
 
-* Configuração da **autenticação de email**: verifique se os cabeçalhos de email contêm a assinatura DKIM. Com a autenticação DKIM (Domain Keys Identified Mail), o servidor de email de recebimento pode verificar se uma mensagem foi enviada pela pessoa ou entidade que alega tê-la enviado e se o conteúdo da mensagem foi alterado entre o momento em que foi originalmente enviada (e o DKIM “assinado”) e o momento em que foi recebida. Em geral, esse padrão usa o domínio no cabeçalho “De” ou “Remetente”. Para obter mais informações, consulte o [Guia de práticas recomendadas de capacidade de entrega do Adobe](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/transition-process/infrastructure.html#authentication).
+* Configuração da **autenticação de email**: verifique se os cabeçalhos de email contêm a assinatura DKIM. Com a autenticação DKIM (Domain Keys Identified Mail), o servidor de email de recebimento pode verificar se uma mensagem foi enviada pela pessoa ou entidade que alega tê-la enviado e se o conteúdo da mensagem foi alterado entre o momento em que foi originalmente enviada (e o DKIM “assinado”) e o momento em que foi recebida. Em geral, esse padrão usa o domínio no cabeçalho “De” ou “Remetente”. Para obter mais informações, consulte o [Manual de práticas recomendadas de capacidade de delivery da Adobe](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/transition-process/infrastructure.html?lang=pt-BR#authentication).
 
 ### Design de email responsivo
 
@@ -154,7 +154,7 @@ Para serem acessadas de fora, as imagens usadas em emails e recursos públicos v
 
 * Caso as imagens não sejam exibidas, verifique se elas estão disponíveis no servidor. Para fazer isso, clique na guia Origem no delivery. Localize suas imagens e copie e cole o URL de cada imagem em um navegador da web. Caso as imagens não sejam exibidas, entre em contato com o administrador de TI ou fornecedor terceirizado e disponibilize seu conteúdo de delivery.
 
-## Visualizar sua mensagem   {#preview-msg}
+## Visualizar sua mensagem {#preview-msg}
 
 A Adobe recomenda visualizar a mensagem para verificar a personalização e como os recipients verão o delivery.
 
