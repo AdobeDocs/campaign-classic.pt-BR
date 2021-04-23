@@ -6,14 +6,14 @@ description: Saiba como executar testes A/B por meio de um caso de uso dedicado.
 audience: delivery
 content-type: reference
 topic-tags: a-b-testing
+exl-id: aa21fa33-aef9-484a-b454-0cd5a6868a98
 translation-type: ht
-source-git-commit: 50a10e16f320a67cb4ad0e31c1cbe8a9365b7887
+source-git-commit: 6854d06f8dc445b56ddfde7777f02916a60f2b63
 workflow-type: ht
 source-wordcount: '136'
 ht-degree: 100%
 
 ---
-
 
 # Criação de um fluxo de trabalho de direcionamento {#step-1--creating-a-targeting-workflow}
 
