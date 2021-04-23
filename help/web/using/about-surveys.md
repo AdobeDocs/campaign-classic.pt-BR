@@ -6,14 +6,14 @@ description: Introdução às pesquisas do Campaign
 audience: web
 content-type: reference
 topic-tags: online-surveys
-translation-type: tm+mt
-source-git-commit: e76eb171aac1f7088ff8647f99c928ec349b24fc
-workflow-type: tm+mt
+exl-id: 7061a4f1-006f-4f19-8761-918d8930d885
+translation-type: ht
+source-git-commit: 6854d06f8dc445b56ddfde7777f02916a60f2b63
+workflow-type: ht
 source-wordcount: '590'
 ht-degree: 100%
 
 ---
-
 
 # Introdução às pesquisas{#about-surveys}
 
@@ -84,4 +84,3 @@ As pesquisas são armazenadas no nó **[!UICONTROL Resources > Online > Web Appl
 >[!NOTE]
 >
 >As informações de configuração estão disponíveis [nesta seção](../../web/using/about-web-forms.md).
-
