@@ -6,14 +6,14 @@ description: Escopo de simulação
 audience: interaction
 content-type: reference
 topic-tags: simulating-offers
-translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
-workflow-type: tm+mt
+exl-id: 4f6b3de2-3fdf-441d-925d-476e20e75c6f
+translation-type: ht
+source-git-commit: 6854d06f8dc445b56ddfde7777f02916a60f2b63
+workflow-type: ht
 source-wordcount: '236'
 ht-degree: 100%
 
 ---
-
 
 # Escopo de simulação{#simulation-scope}
 
@@ -51,4 +51,3 @@ Também é possível optar por realizar a simulação em todas as ofertas ou ape
 Para fazer isso, clique no botão **[!UICONTROL Add]** e selecione os campos apropriados. Os eixos serão usados para calcular a simulação e são exibidos no relatório de análise. Para obter mais informações, consulte [Rastreamento de simulação](../../interaction/using/simulation-tracking.md).
 
 ![](assets/offer_simulation_011.png)
-
