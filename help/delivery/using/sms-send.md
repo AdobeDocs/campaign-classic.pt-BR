@@ -6,14 +6,14 @@ description: Saiba como enviar, monitorar e rastrear SMS no Campaign
 audience: delivery
 content-type: reference
 topic-tags: sending-messages-on-mobiles
-translation-type: tm+mt
-source-git-commit: 6a856c95f21b52c66a9b7359133227394fae05a5
-workflow-type: tm+mt
+exl-id: 442672ee-5037-49b7-a06f-3a99920ce2b6
+translation-type: ht
+source-git-commit: 6854d06f8dc445b56ddfde7777f02916a60f2b63
+workflow-type: ht
 source-wordcount: '958'
-ht-degree: 93%
+ht-degree: 100%
 
 ---
-
 
 # Enviar, monitorar e rastrear deliveries de SMS{#sms-properties}
 
@@ -24,7 +24,7 @@ Para aprovar sua mensagem e enviá-la aos recipients do delivery que está sendo
 O processo detalhado da validação e envio de um delivery é apresentado nas seções abaixo:
 
 * [Validar o delivery](../../delivery/using/steps-validating-the-delivery.md)
-* [Envio do delivery](../../delivery/using/steps-sending-the-delivery.md)
+* [Enviar o delivery](../../delivery/using/steps-sending-the-delivery.md)
 
 ## Parâmetros avançados {#advanced-parameters}
 
@@ -63,7 +63,7 @@ As seguintes opções estão disponíveis:
 Após enviar as mensagens, você pode monitorar e rastrear seus deliveries. Para obter mais informações, consulte essas seções.
 
 * [Monitorar um delivery](../../delivery/using/about-delivery-monitoring.md)
-* [Entender as falhas do delivery](../../delivery/using/understanding-delivery-failures.md)
+* [Entender as falhas de delivery](../../delivery/using/understanding-delivery-failures.md)
 * [Sobre o rastreamento de mensagens](../../delivery/using/about-message-tracking.md)
 
 ## Processar mensagens de entrada {#processing-inbound-messages}
@@ -120,7 +120,7 @@ O nome do remetente desse tipo de mensagem é um código curto geralmente usado 
 
 >[!IMPORTANT]
 >
->O procedimento detalhado a seguir é válido apenas para conectores SMPP, exceto para o conector SMPP genérico estendido. Para obter mais informações, consulte a seção [Create an SMPP external account](sms-set-up.md#creating-an-smpp-external-account) .
+>O procedimento detalhado a seguir é válido apenas para conectores SMPP, exceto para o conector SMPP genérico estendido. Para obter mais informações, consulte a seção [Criar uma conta externa SMPP](sms-set-up.md#creating-an-smpp-external-account).
 >
 >Faz parte do processo de certificação realizado pelos operadores norte-americanos para campanhas de marketing nos EUA. Essas respostas às mensagens SMS de assinantes que contêm a palavra-chave devem ser enviadas de volta a eles imediatamente após receber uma mensagem deles.
 
@@ -167,6 +167,6 @@ O nome do remetente desse tipo de mensagem é um código curto geralmente usado 
 
 >[!IMPORTANT]
 >
->Esses tipos de mensagens automáticas não mantêm um histórico. Portanto, não aparecem no delivery dashboard. [Saiba mais](../../delivery/using/delivery-dashboard.md).
+>Esses tipos de mensagens automáticas não mantêm um histórico. Portanto, não aparecem no painel de delivery. [Saiba mais](../../delivery/using/delivery-dashboard.md).
 >
 >Essas mensagens não são consideradas nas regras de pressão comercial. [Saiba mais](../../campaign/using/pressure-rules.md).
