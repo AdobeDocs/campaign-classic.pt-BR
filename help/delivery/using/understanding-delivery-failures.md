@@ -7,11 +7,11 @@ audience: delivery
 content-type: reference
 topic-tags: monitoring-deliveries
 exl-id: 86c7169a-2c71-4c43-8a1a-f39871b29856
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: b7a3046600845781a7393a9d1e9659550d9bfcdd
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2614'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -87,31 +87,31 @@ Os possíveis motivos para uma falha de delivery são:
   </tr> 
   <tr> 
    <td> Endereço de controle </td> 
-   <td> Ignorado </td> 
+   <td> Ignored </td> 
    <td> 127 </td> 
    <td> O endereço do recipient faz parte do grupo de controle.<br /> </td> 
   </tr> 
   <tr> 
    <td> Duplo </td> 
-   <td> Ignorado </td> 
+   <td> Ignored </td> 
    <td> 10 </td> 
    <td> O endereço do recipient já estava nesse delivery.<br /> </td> 
   </tr> 
   <tr> 
    <td> Erro ignorado </td> 
-   <td> Ignorado </td> 
+   <td> Ignored </td> 
    <td> 25 </td> 
    <td> O endereço está na lista de permissões. O erro é então ignorado e um email será enviado.<br /> </td> 
   </tr> 
   <tr> 
    <td> Excluído após arbitragem </td> 
-   <td> Ignorado </td> 
+   <td> Ignored </td> 
    <td> 12 </td> 
    <td> O recipient foi excluído por uma regra de tipologia de 'arbitragem' de campanha.<br /> </td> 
   </tr> 
   <tr> 
    <td> Excluído por uma regra SQL </td> 
-   <td> Ignorado </td> 
+   <td> Ignored </td> 
    <td> 11 </td> 
    <td> O recipient foi excluído por uma regra de tipologia de campanha do tipo "SQL".<br /> </td> 
   </tr> 
@@ -129,7 +129,7 @@ Os possíveis motivos para uma falha de delivery são:
   </tr> 
   <tr> 
    <td> Não conectado </td> 
-   <td> Ignorado </td> 
+   <td> Ignored </td> 
    <td> 6 </td> 
    <td> O telefone celular do recipient está desligado ou não conectado à rede quando a mensagem é enviada.<br /> </td> 
   </tr> 
@@ -141,7 +141,7 @@ Os possíveis motivos para uma falha de delivery são:
   </tr> 
   <tr> 
    <td> Não se qualifica para as ofertas </td> 
-   <td> Ignorado </td> 
+   <td> Ignored </td> 
    <td> 16 </td> 
    <td> O recipient não foi qualificado para as ofertas no delivery.<br /> </td> 
   </tr> 
@@ -153,13 +153,13 @@ Os possíveis motivos para uma falha de delivery são:
   </tr> 
   <tr> 
    <td> Target limitado em tamanho </td> 
-   <td> Ignorado </td> 
+   <td> Ignored </td> 
    <td> 17 </td> 
    <td> O tamanho máximo de delivery foi atingido para o recipient.<br /> </td> 
   </tr> 
   <tr> 
    <td> Endereço não qualificado </td> 
-   <td> Ignorado </td> 
+   <td> Ignored </td> 
    <td> 15 </td> 
    <td> O endereço postal não foi qualificado.<br /> </td> 
   </tr> 
@@ -205,7 +205,7 @@ Uma mensagem pode falhar imediatamente (erro síncrono), ou posteriormente, apó
    >
    >A configuração da caixa de entrada de devolução é detalhada [nesta seção](../../installation/using/deploying-an-instance.md#managing-bounced-emails).
 
-   O [loop de comentários](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/transition-process/infrastructure.html#feedback-loops) funciona como emails de devolução. Quando um usuário classifica um email como spam, você pode configurar regras de email no Adobe Campaign para bloquear todos os deliveries a esse usuário. Mensagens enviadas para usuários que classificaram um email como spam são automaticamente redirecionadas para uma caixa de email especificamente criada para essa finalidade. Os endereços desses usuários são incluídos na lista de bloqueios mesmo sem um clique no link de cancelamento de assinatura. Os endereços são incluídos na lista de bloqueios na tabela de quarentena (**NmsAddress**) e não na tabela de recipient (**NmsRecipient**).
+   O [loop de comentários](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/transition-process/infrastructure.html?lang=pt-BR#feedback-loops) funciona como emails de devolução. Quando um usuário classifica um email como spam, você pode configurar regras de email no Adobe Campaign para bloquear todos os deliveries a esse usuário. Mensagens enviadas para usuários que classificaram um email como spam são automaticamente redirecionadas para uma caixa de email especificamente criada para essa finalidade. Os endereços desses usuários são incluídos na lista de bloqueios mesmo sem um clique no link de cancelamento de assinatura. Os endereços são incluídos na lista de bloqueios na tabela de quarentena (**NmsAddress**) e não na tabela de recipient (**NmsRecipient**).
 
    >[!NOTE]
    >
@@ -266,7 +266,7 @@ Os emails de devolução podem ter o seguinte status de qualificação:
 
 >[!NOTE]
 >
->No caso de uma interrupção de um ISP, os emails enviados pelo Campaign serão marcados incorretamente como rejeições. Para corrigir isso, você precisa atualizar a qualificação de devolução. Para obter mais informações, consulte [esta seção](../../delivery/using/update-bounce-qualification.md).
+>No caso de uma interrupção de um ISP, os emails enviados pelo Campaign serão marcados incorretamente como rejeições. Para corrigir isso, você precisa atualizar a qualificação de rejeição. Para obter mais informações, consulte [esta seção](../../delivery/using/update-bounce-qualification.md).
 
 ### Regras de gerenciamento de email {#email-management-rules}
 
