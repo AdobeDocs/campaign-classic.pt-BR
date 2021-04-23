@@ -6,14 +6,14 @@ description: Saiba como gerenciar aprovações de campanhas de marketing
 audience: campaign
 content-type: reference
 topic-tags: orchestrate-campaigns
+exl-id: 8cbb2445-f5e4-4a25-ba7e-56e39ca9d3ce
 translation-type: ht
-source-git-commit: 67364f80ddc51d4792e73bbf39d388bdf4297005
+source-git-commit: 6854d06f8dc445b56ddfde7777f02916a60f2b63
 workflow-type: ht
 source-wordcount: '2434'
 ht-degree: 100%
 
 ---
-
 
 # Configurar e gerenciar o processo de aprovação {#approving-marketing-campaigns}
 
@@ -253,6 +253,7 @@ Para selecionar uma lista de operadores, clique no link **[!UICONTROL Edit...]**
 >* Se uma lista de revisores for definida, um trabalho será aprovado assim que um revisor aceitá-lo. O link de aprovação relevante não é mais oferecido no painel. Quando o envio de notificações estiver habilitado, se outro revisor clicar no link de aprovação na mensagem de notificação, será exibida uma notificação de que outro operador já aprovou a tarefa.
 >* Você pode definir um agendamento de aprovação para a campanha na seção inferior da janela de edição do revisor. Por padrão, os revisores têm três dias a partir da data de envio para aprovar um processo. É possível configurar um lembrete que é enviado automaticamente para os operadores relacionados antes do prazo de aprovação.
 >* Você pode adicionar lembretes desta seção.
+
 >
 
 
