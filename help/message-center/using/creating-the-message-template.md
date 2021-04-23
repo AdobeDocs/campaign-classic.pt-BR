@@ -6,14 +6,14 @@ description: Criação do template de mensagem
 audience: message-center
 content-type: reference
 topic-tags: message-templates
-translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
-workflow-type: tm+mt
+exl-id: a52bc140-072e-4f81-b6da-f1b38662bce5
+translation-type: ht
+source-git-commit: 6854d06f8dc445b56ddfde7777f02916a60f2b63
+workflow-type: ht
 source-wordcount: '129'
 ht-degree: 100%
 
 ---
-
 
 # Criação do template de mensagem{#creating-the-message-template}
 
@@ -40,4 +40,3 @@ ht-degree: 100%
 1. Insira uma natureza e uma descrição, depois clique em **[!UICONTROL Continue]** para criar o corpo da mensagem (consulte [Criar conteúdo da mensagem](../../message-center/using/creating-message-content.md)).
 
    ![](assets/messagecenter_create_model_004.png)
-
