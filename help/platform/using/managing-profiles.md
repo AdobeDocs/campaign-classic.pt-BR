@@ -7,11 +7,11 @@ audience: platform
 content-type: reference
 topic-tags: profile-management
 exl-id: e1d0556a-6f30-4863-9025-eb9c1b8b53d3
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 6854d06f8dc445b56ddfde7777f02916a60f2b63
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '229'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -29,17 +29,17 @@ Cada nó coincide com uma pasta. Os dados de cada pasta devem ser considerados p
 >
 >Para exibir a lista de todos os destinatários no banco de dados, crie uma visualização. Saiba mais em [Pastas e exibições](../../platform/using/access-management-folders.md).
 
-## Mover destinatários {#moving-recipients}
+## Mover recipients {#moving-recipients}
 
 É possível selecionar um ou mais destinatários, arrastá-los da lista de destinatários e soltá-los na pasta desejada. Uma mensagem de aviso solicita que você confirme esta ação.
 
-## Copiar um destinatário {#copying-a-recipient}
+## Copiar um recipient {#copying-a-recipient}
 
-Para copiar um destinatário na mesma pasta, clique com o botão direito do mouse no destinatário desejado e selecione **[!UICONTROL Copy]**.
+Para copiar um destinatário na mesma pasta, clique com o botão direito do mouse no recipient desejado e selecione **[!UICONTROL Copy]**.
 
-## Excluir destinatários {#deleting-recipients}
+## Excluir recipients {#deleting-recipients}
 
-Para excluir destinatários, mova-os para uma pasta específica e, em seguida, limpe o conteúdo dessa pasta. É **altamente recomendável não usar** a opção **[!UICONTROL Delete]** neste caso.
+Para excluir recipients, mova-os para uma pasta específica e, em seguida, limpe o conteúdo dessa pasta. É **altamente recomendável não usar** a opção **[!UICONTROL Delete]** neste caso.
 
 Para limpar uma pasta, use o menu **[!UICONTROL Actions > Purge folder]**, acessível clicando com o botão direito do mouse na pasta desejada.
 
