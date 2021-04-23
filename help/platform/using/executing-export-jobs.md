@@ -6,14 +6,14 @@ description: Saiba como configurar e executar trabalhos de exportação no Campa
 audience: platform
 content-type: reference
 topic-tags: importing-and-exporting-data
-translation-type: tm+mt
-source-git-commit: b05b8daad449aeb1f5226fdd76744776c6553b63
-workflow-type: tm+mt
+exl-id: 94fc473a-dc49-41e8-b572-51c162b09996
+translation-type: ht
+source-git-commit: 6854d06f8dc445b56ddfde7777f02916a60f2b63
+workflow-type: ht
 source-wordcount: '926'
-ht-degree: 94%
+ht-degree: 100%
 
 ---
-
 
 # Configurar trabalhos de exportação {#executing-export-jobs}
 
@@ -83,7 +83,7 @@ Selecione os campos a serem exportados. Para fazer isso:
 
    ![](assets/s_ncs_user_export_wizard04.png)
 
-1. Clique no botão **[!UICONTROL Add]** para chamar as funções. Para mais informações, consulte as [Lista de funções](../../platform/using/defining-filter-conditions.md#list-of-functions).
+1. Clique no botão **[!UICONTROL Add]** para chamar as funções. Para obter mais informações, consulte a [Lista de funções](../../platform/using/defining-filter-conditions.md#list-of-functions).
 
 ## Etapa 5 - Classificar colunas {#step-5---sorting-columns}
 
@@ -131,4 +131,4 @@ Clique em **[!UICONTROL Start]** para iniciar a exportação de dados.
 
 ![](assets/s_ncs_user_export_wizard08.png)
 
-Em seguida, você pode monitorar a execução do trabalho de importação (consulte [Monitorar a execução de tarefas](../../platform/using/monitoring-jobs-execution.md).
+Você pode monitorar a execução do trabalho de importação (consulte [Monitorar trabalhos de exportação](../../platform/using/monitoring-jobs-execution.md).
