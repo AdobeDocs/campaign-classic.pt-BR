@@ -6,14 +6,14 @@ description: Criação de uma conexão compartilhada
 audience: message-center
 content-type: reference
 topic-tags: instance-configuration
+exl-id: 23a384d1-27ce-46c2-98c3-0fb60a5c50ee
 translation-type: ht
-source-git-commit: d88815e36f7be1b010dcaeee51013a5da769b4a8
+source-git-commit: 6854d06f8dc445b56ddfde7777f02916a60f2b63
 workflow-type: ht
 source-wordcount: '999'
 ht-degree: 100%
 
 ---
-
 
 # Criação de uma conexão compartilhada{#creating-a-shared-connection}
 
@@ -21,6 +21,7 @@ ht-degree: 100%
 >
 >* Extensões de schema feitas nos schemas usados pelos [workflows técnicos do Centro de Mensagens](../../message-center/using/technical-workflows.md) em instâncias de controle ou de execução precisam ser duplicadas nas outras instâncias usadas pelo módulo de mensagens transacionais do Adobe Campaign.
 >* A instância de controle e a instância de execução devem ser instaladas em máquinas diferentes. Elas não podem compartilhar a mesma instância do Campaign.
+
 >
 
 
@@ -156,4 +157,3 @@ Para usar várias instâncias de controle, essa configuração deve ser executad
 1. Forneça permissões de leitura e gravação ao operador para sua pasta. Para fazer isso, clique com o botão direito do mouse e selecione **[!UICONTROL Properties]**. Em seguida, selecione a guia **[!UICONTROL Security]** e adicione o operador relevante (**mc1** para **Folder 1** e **mc2** para **Folder 2**). Verifique se as caixas **[!UICONTROL Read/Write data]** estão marcadas.
 
    ![](assets/messagecenter_multi_control_6.png)
-
