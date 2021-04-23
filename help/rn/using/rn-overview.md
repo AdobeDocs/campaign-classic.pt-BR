@@ -3,15 +3,15 @@ solution: Campaign Classic
 product: campaign
 title: Introdução às atualizações
 description: Saiba mais sobre as atualizações do Campaign Classic
-feature: Overview
+feature: Visão geral
 role: Business Practitioner
 level: Beginner
 exl-id: 7a05fdff-8f9d-4e8d-812e-0f1509db5499
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 8294b522efb51cb1b961c9284675c7966132e957
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '415'
-ht-degree: 93%
+ht-degree: 100%
 
 ---
 
@@ -29,7 +29,7 @@ Um status é associado a cada build. Você encontrará abaixo a lista de status 
 
 ![](assets/do-not-localize/green3.png) **Disponibilidade geral** (DG) - validada na produção e recomendada pela Adobe.
 
-As **últimas builds do GA** são: [[!DNL Gold Standard]  versão 11](../../rn/using/gold-standard.md) e [versão 20.2.5 do Campaign](../../rn/using/release--20-2.md)
+As **últimas compilações do GA** são: [[!DNL Gold Standard]  versão 11](../../rn/using/gold-standard.md) e [versão 20.2.5 do Campaign](../../rn/using/release--20-2.md)
 
 ![](assets/do-not-localize/limited3.png) **Disponibilidade limitada** (DL) - somente instalação sob demanda.
 
@@ -51,14 +51,14 @@ Para manter sua implementação atualizada, leia os [recursos obsoletos e removi
 
 Como cliente hospedado (Managed Service ou Hybrid), você precisa entrar em contato com a equipe de atendimento ao cliente para atualizar seu ambiente.
 
-Como usuário local, você pode fazer a atualização. Para isso, [baixe a build estável mais recente](https://experience.adobe.com/#/downloads/content/software-distribution/br/campaign.html) e atualize todos os seus ambientes. Saiba mais sobre o [processo de atualização](../../production/using/build-upgrade.md) e consulte as [perguntas frequentes sobre atualização de build](../../platform/using/faq-build-upgrade.md).
+Como usuário local, você pode fazer a atualização. Para isso, [baixe a build estável mais recente](https://experience.adobe.com/#/downloads/content/software-distribution/en/campaign.html) e atualize todos os seus ambientes. Saiba mais sobre o [processo de atualização](../../production/using/build-upgrade.md) e consulte as [perguntas frequentes sobre atualização de build](../../platform/using/faq-build-upgrade.md).
 
 ### [!DNL Gold Standard]{#upgrade-for-gold-standard-users}
 
-Como um usuário hospedado [!DNL Gold Standard], você se beneficiará automaticamente da atualização [!DNL Gold Standard] com a [última GA [!DNL Gold Standard] build](../../rn/using/gold-standard.md#gs-11) sem nenhuma ação. [Saiba mais](../../rn/using/gs-overview.md).
+Como usuário convidado do [!DNL Gold Standard], você se beneficiará automaticamente da atualização para o [!DNL Gold Standard] com a compilação [mais recente [!DNL Gold Standard] do GA](../../rn/using/gold-standard.md#gs-11) sem realizar nenhuma ação. [Saiba mais](../../rn/using/gs-overview.md).
 
 >[!NOTE]
->A matriz de compatibilidade para [!DNL Gold Standard] está disponível na [matriz de compatibilidade GA](../../rn/using/compatibility-matrix-gs.md).
+>A matriz de compatibilidade do [!DNL Gold Standard] está disponível na [Matriz de compatibilidade de GA](../../rn/using/compatibility-matrix-gs.md).
 
 ## Suporte e outros links úteis{#support}
 
