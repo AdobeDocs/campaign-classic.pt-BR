@@ -3,15 +3,15 @@ solution: Campaign Classic
 product: campaign
 title: Matriz de compatibilidade do Campaign Classic
 description: Matriz de compatibilidade do Campaign Classic
-feature: Overview
+feature: Visão geral
 role: Business Practitioner
 level: Beginner
 exl-id: b8c1f287-06f4-4c34-8cca-b0c7676abbc2
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 6854d06f8dc445b56ddfde7777f02916a60f2b63
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '524'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -19,7 +19,7 @@ ht-degree: 98%
 
 Este documento lista todos os sistemas e componentes compatíveis com [a última build](../../rn/using/latest-release.md) do **Adobe Campaign Classic**. Os produtos e as versões que não estão nessa lista não são compatíveis com o Adobe Campaign.
 
-Se você for um usuário [!DNL Gold Standard], consulte a [[!DNL Gold Standard] Matriz de Compatibilidade](../../rn/using/compatibility-matrix-gs.md).
+Se você for um usuário do [!DNL Gold Standard], consulte a Matriz de compatibilidade do [[!DNL Gold Standard] ](../../rn/using/compatibility-matrix-gs.md).
 
 ## Observações importantes{#important-notes}
 
