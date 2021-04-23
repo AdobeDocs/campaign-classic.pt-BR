@@ -6,14 +6,14 @@ description: Saiba mais sobre a atividade de workflow Aguardar
 audience: workflow
 content-type: reference
 topic-tags: flow-control-activities
-translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
-workflow-type: tm+mt
+exl-id: 4872f756-14d7-4e37-a9cf-b929c77e34ca
+translation-type: ht
+source-git-commit: 6854d06f8dc445b56ddfde7777f02916a60f2b63
+workflow-type: ht
 source-wordcount: '192'
 ht-degree: 100%
 
 ---
-
 
 # Aguardar{#wait}
 
@@ -32,4 +32,3 @@ No campo **[!UICONTROL Duration]**, o valor pode ser expresso na unidade de sua 
 * Enquanto que, por exemplo, se as configurações regionais forem definidas como &quot;Français&quot;: **s** para segundos, **mn** para minutos, **h** para horas, **j** para dias, **m** para meses e **a** para anos. No momento da aprovação, o valor é convertido automaticamente na unidade mais legível, como no exemplo acima, **90s** foi convertido para **1mn 30s**.
 
    A unidade padrão é dia (**d**).
-
