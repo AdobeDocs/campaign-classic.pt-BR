@@ -6,14 +6,14 @@ description: '"Casos de uso: criação de visões gerais"'
 audience: web
 content-type: reference
 topic-tags: web-applications
+exl-id: a1ac3aab-dc81-4533-9207-26d5dc5e1c88
 translation-type: ht
-source-git-commit: 11ff62238a8fb73658f2263c25dbeb27d2e0fb23
+source-git-commit: 6854d06f8dc445b56ddfde7777f02916a60f2b63
 workflow-type: ht
 source-wordcount: '948'
 ht-degree: 100%
 
 ---
-
 
 # Casos de uso: criar páginas de visão geral{#use-cases-creating-overviews}
 
@@ -224,4 +224,3 @@ Esses dois elementos serão agrupados no mesmo container para ser agrupados graf
 A aplicação web agora está configurada. É possível clicar na guia **[!UICONTROL Preview]** para pré-visualizá-la.
 
 ![](assets/s_ncs_configuration_webapp_result.png)
-
