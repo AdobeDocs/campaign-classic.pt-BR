@@ -6,14 +6,14 @@ description: Saiba como integrar o SDK do Campaign ao seu aplicativo móvel
 audience: delivery
 content-type: reference
 topic-tags: sending-push-notifications
-translation-type: tm+mt
-source-git-commit: 3139a9bf5036086831e23acef21af937fcfda740
-workflow-type: tm+mt
+exl-id: a5f6b82d-5561-4e56-b2ed-7fd6fd8c2b55
+translation-type: ht
+source-git-commit: 6854d06f8dc445b56ddfde7777f02916a60f2b63
+workflow-type: ht
 source-wordcount: '955'
 ht-degree: 100%
 
 ---
-
 
 # Integração do SDK do Campaign ao seu aplicativo {#integrating-campaign-sdk-into-the-mobile-application}
 
@@ -368,12 +368,12 @@ O protótipo **registerDeviceStatus** é:
   <tr> 
    <td> ACCRegisterDeviceStatusFailureMarketingServerHostnameEmpty <br /> </td>
    <td> O nome de host do servidor de marketing ACC está vazio ou não está definido.<br /> </td>
-   <td> VAZIO<br /> </td>
+   <td> EMPTY<br /> </td>
   </tr>
   <tr> 
    <td> ACCRegisterDeviceStatusFailureIntegrationKeyEmpty <br /> </td>
    <td> A chave de integração está vazia ou não está definida.<br /> </td>
-   <td> VAZIO<br /> </td>
+   <td> EMPTY<br /> </td>
   </tr>
   <tr> 
    <td> ACCRegisterDeviceStatusFailureConnectionIssue<br /> </td>
@@ -383,7 +383,7 @@ O protótipo **registerDeviceStatus** é:
   <tr> 
    <td> ACCRegisterDeviceStatusFailureUnknownUUID<br /> </td>
    <td> O UUID fornecido (chave de integração) é desconhecido.<br /> </td>
-   <td> VAZIO<br /> </td>
+   <td> EMPTY<br /> </td>
   </tr>
   <tr> 
    <td> ACCRegisterDeviceStatusFailureUnexpectedError<br /> </td>
