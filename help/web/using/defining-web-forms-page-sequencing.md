@@ -6,14 +6,14 @@ description: Definição do sequenciamento de páginas dos formulários web
 audience: web
 content-type: reference
 topic-tags: web-forms
-translation-type: tm+mt
-source-git-commit: 21219f4a85a0caec4531acda33ab8bba5c7605d6
-workflow-type: tm+mt
+exl-id: c5b5c398-c13b-4ebe-88b2-8ff84741422e
+translation-type: ht
+source-git-commit: 6854d06f8dc445b56ddfde7777f02916a60f2b63
+workflow-type: ht
 source-wordcount: '702'
 ht-degree: 100%
 
 ---
-
 
 # Definição do sequenciamento de páginas dos formulários web{#defining-web-forms-page-sequencing}
 
@@ -125,4 +125,3 @@ Para personalizar essa página, clique duas vezes em **[!UICONTROL End]** e insi
 
 * Você pode copiar e colar conteúdo HTML existente. Para fazer isso, clique em **[!UICONTROL Display source code]** e insira o código HTML.
 * Você pode usar uma URL externa; para fazer isso, selecione a opção correspondente e digite a URL da página a ser exibida.
-
