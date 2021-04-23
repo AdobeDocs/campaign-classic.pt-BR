@@ -6,14 +6,14 @@ description: Saiba como criar trabalhos de importação e exportação no Campai
 audience: platform
 content-type: reference
 topic-tags: importing-and-exporting-data
-translation-type: tm+mt
-source-git-commit: b05b8daad449aeb1f5226fdd76744776c6553b63
-workflow-type: tm+mt
+exl-id: 85c48712-3704-41db-a255-a07ca8d02ec4
+translation-type: ht
+source-git-commit: 6854d06f8dc445b56ddfde7777f02916a60f2b63
+workflow-type: ht
 source-wordcount: '133'
-ht-degree: 90%
+ht-degree: 100%
 
 ---
-
 
 # Criar trabalhos de importação e exportação {#creating-import-export-jobs}
 
