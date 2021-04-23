@@ -5,14 +5,14 @@ title: Configuração do pipeline
 description: Saiba como configurar o pipeline
 audience: integrations
 content-type: reference
-translation-type: tm+mt
-source-git-commit: b77a56a97e499f60c092fae45c7809f7bfd9f2ea
-workflow-type: tm+mt
+exl-id: 2d214c36-8429-4b2b-b1f5-fe2730581bba
+translation-type: ht
+source-git-commit: 6854d06f8dc445b56ddfde7777f02916a60f2b63
+workflow-type: ht
 source-wordcount: '906'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
-
 
 # Configuração de pipeline {#configuring-pipeline}
 
@@ -28,7 +28,7 @@ Os acionadores são usados para segmentação por um workflow de campanha que en
 
 Antes de iniciar esta configuração, verifique se você está usando:
 
-* Adobe Campaign 20.3, 20.2.4, 19.1.8 ou [!DNL Gold Standard] 11 mínimo
+* Adobe Campaign 20.3, 20.2.4, 19.1.8 ou [!DNL Gold Standard] 11 no mínimo
 * Versão do Adobe Analytics Standard
 
 Você também precisará:
