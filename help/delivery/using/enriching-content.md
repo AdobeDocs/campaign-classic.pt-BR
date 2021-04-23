@@ -6,14 +6,14 @@ description: Enriquecimento de conteúdo
 audience: delivery
 content-type: reference
 topic-tags: content-management
-translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
-workflow-type: tm+mt
+exl-id: a4472a7c-a16b-4d10-a8ca-f74ca5f62de4
+translation-type: ht
+source-git-commit: 6854d06f8dc445b56ddfde7777f02916a60f2b63
+workflow-type: ht
 source-wordcount: '661'
 ht-degree: 100%
 
 ---
-
 
 # Enriquecimento de conteúdo{#enriching-content}
 
@@ -260,4 +260,3 @@ O resultado obtido após a execução do script:
 O conteúdo do código JavaScript é adicionado por meio da pasta **[!UICONTROL Administration > Configuration > Content management > JavaScript Codes]** e deve ser preenchido no template de publicação para cada transformação.
 
 ![](assets/d_ncs_content_link5.png)
-
