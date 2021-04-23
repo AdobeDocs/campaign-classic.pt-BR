@@ -6,14 +6,14 @@ description: Sobre atividades de evento
 audience: workflow
 content-type: reference
 topic-tags: event-activities
-translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
-workflow-type: tm+mt
+exl-id: ed27159e-2fce-4b1c-92e8-581901b82f60
+translation-type: ht
+source-git-commit: 6854d06f8dc445b56ddfde7777f02916a60f2b63
+workflow-type: ht
 source-wordcount: '104'
 ht-degree: 100%
 
 ---
-
 
 # Sobre atividades de evento{#about-event-activities}
 
@@ -23,4 +23,3 @@ A principal tarefa dessas atividades consiste em aguardar um evento. Pode ser, p
 * Transferência de arquivo: transfere um arquivo para um servidor. Consulte [Transferência de arquivos](../../workflow/using/file-transfer.md).
 * Download da Web: baixa um arquivo da Web. Consulte [Download da Web](../../workflow/using/web-download.md).
 * SMS e recepção de email: recupera e processa emails ou SMS. Consulte [SMS de entrada](../../workflow/using/inbound-sms.md) e [emails de entrada](../../workflow/using/inbound-emails.md).
-
