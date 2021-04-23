@@ -6,14 +6,14 @@ description: Gerenciamento de enumerações
 audience: platform
 content-type: reference
 topic-tags: administration-basics
-translation-type: tm+mt
-source-git-commit: b05b8daad449aeb1f5226fdd76744776c6553b63
-workflow-type: tm+mt
+exl-id: 2ece058d-b493-4fea-b3db-322cf7ea7f4f
+translation-type: ht
+source-git-commit: 6854d06f8dc445b56ddfde7777f02916a60f2b63
+workflow-type: ht
 source-wordcount: '875'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
-
 
 # Gerenciar enumerações{#managing-enumerations}
 
@@ -114,7 +114,7 @@ Quando a execução for concluída, o alias será adicionado à lista de aliases
 
 Os valores inseridos pelos usuários podem ser convertidos em aliases. Efetivamente, quando o usuário insere um valor que não está incluído na lista discriminada, o valor é armazenado na guia **[!UICONTROL Alias]**.
 
-O workflow técnico **Alias cleansing** recupera esses valores todas as noites para atualizar a lista discriminada. Consulte [Executar limpeza de dados](#running-data-cleansing)
+O fluxo de trabalho técnico **Limpeza de alias** recupera esses valores todas as noites para atualizar a lista discriminada. Consulte [Executar limpeza de dados](#running-data-cleansing)
 
 Se necessário, a coluna **[!UICONTROL Hits]** pode exibir o número de vezes que esse valor foi inserido. O cálculo desse valor pode demorar e consumir memória. Para obter mais informações, consulte [Calcular ocorrências de entrada](#calculating-entry-occurrences).
 
@@ -161,4 +161,3 @@ O workflow **Alias cleansing** executa a limpeza do valor de enumerações. É e
 É acessado pelo nó **[!UICONTROL Administration > Production > Technical workflows]**.
 
 ![](assets/s_ncs_user_itemized_list_alias_wf.png)
-
