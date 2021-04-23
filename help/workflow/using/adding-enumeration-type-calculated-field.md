@@ -6,14 +6,14 @@ description: Aprenda a adicionar um campo calculado do tipo lista discriminada
 audience: workflow
 content-type: reference
 topic-tags: use-cases
-translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
-workflow-type: tm+mt
+exl-id: 3f606d3a-0af5-4315-bb08-1b21a71f1721
+translation-type: ht
+source-git-commit: 6854d06f8dc445b56ddfde7777f02916a60f2b63
+workflow-type: ht
 source-wordcount: '412'
 ht-degree: 100%
 
 ---
-
 
 # Adição de um campo calculado do tipo de Enumeration {#adding-an-enumeration-type-calculated-field}
 
