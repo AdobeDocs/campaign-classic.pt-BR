@@ -6,14 +6,14 @@ description: Dados adicionais
 audience: interaction
 content-type: reference
 topic-tags: advanced-parameters
-translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
-workflow-type: tm+mt
+exl-id: 01adb584-5308-4d41-a6f1-223a97efa10f
+translation-type: ht
+source-git-commit: 6854d06f8dc445b56ddfde7777f02916a60f2b63
+workflow-type: ht
 source-wordcount: '717'
 ht-degree: 100%
 
 ---
-
 
 # Dados adicionais{#additional-data}
 
@@ -123,4 +123,3 @@ Na coluna **[!UICONTROL Storage path]**, selecione o campo de armazenamento na t
 É possível recuperar dados de chamada quando a proposta for gerada ou quando for aceita (quando a pessoa clicar na oferta).
 
 ![](assets/ita_calldata_storage.png)
-
