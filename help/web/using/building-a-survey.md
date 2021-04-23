@@ -6,14 +6,14 @@ description: Criar uma pesquisa
 audience: web
 content-type: reference
 topic-tags: online-surveys
-translation-type: tm+mt
-source-git-commit: e76eb171aac1f7088ff8647f99c928ec349b24fc
-workflow-type: tm+mt
+exl-id: 8d83dfd5-70ec-4656-965b-f6b5e6f9eec1
+translation-type: ht
+source-git-commit: 6854d06f8dc445b56ddfde7777f02916a60f2b63
+workflow-type: ht
 source-wordcount: '796'
 ht-degree: 100%
 
 ---
-
 
 # Criar uma pesquisa{#building-a-survey}
 
@@ -137,4 +137,3 @@ Quando a página é atualizada, as perguntas exibidas não são as mesmas.
 >[!CAUTION]
 >
 >Ao exibir uma pergunta aleatória (opção **[!UICONTROL Display randomly]** marcada na página), não use perguntas de múltipla escolha para as quais uma ou mais seleções são obrigatórias.
-
