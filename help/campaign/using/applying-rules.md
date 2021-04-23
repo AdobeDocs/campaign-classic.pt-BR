@@ -6,14 +6,14 @@ description: Aplicar regras
 audience: campaign
 content-type: reference
 topic-tags: campaign-optimization
+exl-id: 09ec0fc0-76ed-4c73-8bdf-c931e2103aa9
 translation-type: ht
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: 6854d06f8dc445b56ddfde7777f02916a60f2b63
 workflow-type: ht
 source-wordcount: '977'
 ht-degree: 100%
 
 ---
-
 
 # Aplicar regras{#applying-rules}
 
@@ -146,4 +146,3 @@ A guia **[!UICONTROL Distributed Marketing]** permite definir o remapeamento de 
 >
 >Em tipologias e regras de tipologia, a guia **[!UICONTROL Distributed Marketing]** será adicionada caso a licença inclua essa opção: verifique o contrato de licença.\
 >Para obter mais informações sobre Marketing distribuído, consulte [Sobre marketing distribuído](../../campaign/using/about-distributed-marketing.md).
-
