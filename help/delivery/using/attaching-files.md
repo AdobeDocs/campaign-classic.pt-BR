@@ -7,11 +7,11 @@ audience: delivery
 content-type: reference
 topic-tags: sending-emails
 exl-id: db65e83e-276f-4163-98c3-3658a48acffc
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 6854d06f8dc445b56ddfde7777f02916a60f2b63
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '928'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -117,7 +117,7 @@ Para este tipo de anexo, sigas as seguintes etapas de configuração:
 >
 >Para evitar problemas de desempenho, se incluir imagens baixadas em tempo real de um URL personalizado como anexo, cada tamanho de imagem não deve exceder 100.000 bytes por padrão. Esse limite recomendado pode ser configurado na [ lista das opções do Campaign Classic ](../../installation/using/configuring-campaign-options.md#delivery).
 
-### Anexe um arquivo calculado {#attach-a-calculated-file}
+### Anexar um arquivo calculado {#attach-a-calculated-file}
 
 Você pode calcular o nome do anexo durante a preparação do delivery. Para fazer isso, selecione a opção.**[!UICONTROL The file name is calculated during delivery analysis (it cannot depend on the recipient)]**
 
