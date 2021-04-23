@@ -6,14 +6,14 @@ description: Importação e exportação de públicos
 audience: integrations
 content-type: reference
 topic-tags: audience-sharing
-translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
-workflow-type: tm+mt
+exl-id: c2293fc5-c9ba-4a73-8f39-fa7cdd06e8dd
+translation-type: ht
+source-git-commit: 6854d06f8dc445b56ddfde7777f02916a60f2b63
+workflow-type: ht
 source-wordcount: '629'
 ht-degree: 100%
 
 ---
-
 
 # Importação e exportação de públicos{#importing-and-exporting-audiences}
 
@@ -82,4 +82,3 @@ A sincronização entre o Adobe Campaign e o Serviço principal de pessoas leva 
 >[!NOTE]
 >
 >Para serem reconciliados, os registros devem ter uma ID da Adobe Experience Cloud (&#39;ID do visitante&#39; ou &#39;ID declarada&#39;). Os registros que não têm uma ID da Adobe Experience Cloud são ignorados ao exportar e importar públicos.
-
