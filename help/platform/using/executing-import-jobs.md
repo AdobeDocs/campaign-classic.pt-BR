@@ -7,11 +7,11 @@ audience: platform
 content-type: reference
 topic-tags: importing-and-exporting-data
 exl-id: 05909ea6-2c93-42ff-9142-1dd14fa6fdec
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 6854d06f8dc445b56ddfde7777f02916a60f2b63
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2955'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -244,7 +244,7 @@ A desduplicação emite um registro presente no arquivo de origem e no banco de 
 
 As opções **[!UICONTROL Reject]** e **[!UICONTROL Ignore]** operam como apresentado acima.
 
-### No caso de erro {#behavior-in-the-event-of-an-error}
+### Em caso de erro {#behavior-in-the-event-of-an-error}
 
 A maioria das operações de transferência de dados gera vários tipos de erros (formato de linha incoerente, endereço de email inválido etc.). Todos os erros e avisos gerados pelo mecanismo de importação são armazenados e vinculados à instância de importação.
 
@@ -311,7 +311,7 @@ A próxima etapa do assistente de importação permite selecionar ou criar a pas
 
       ![](assets/s_ncs_user_import_wizard05_5.png)
 
-      Você pode criar uma nova lista para esses destinatários clicando em **[!UICONTROL Select link]** e depois em **[!UICONTROL Create]**. A criação e o gerenciamento de listas são apresentados em [this section](../../platform/using/creating-and-managing-lists.md).
+      Você pode criar uma nova lista para esses destinatários clicando em **[!UICONTROL Select link]** e depois em **[!UICONTROL Create]**. A criação e o gerenciamento de listas são apresentados [nesta seção](../../platform/using/creating-and-managing-lists.md).
 
       ![](assets/s_ncs_user_import_wizard05_6.png)
 
@@ -335,4 +335,4 @@ A última etapa do assistente permite iniciar a importação de dados. Para faze
 
 ![](assets/s_ncs_user_import_wizard06_1.png)
 
-Em seguida, você pode monitorar a execução do trabalho de importação (consulte [Monitorar a execução de tarefas](../../platform/using/monitoring-jobs-execution.md).
+Você pode monitorar a execução do trabalho de importação (consulte [Monitorar execução de trabalhos](../../platform/using/monitoring-jobs-execution.md).
