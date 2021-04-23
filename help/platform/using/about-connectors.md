@@ -3,21 +3,21 @@ solution: Campaign Classic
 product: campaign
 title: Sobre conectores
 description: Sobre conectores
-feature: Overview
+feature: Visão geral
 role: Business Practitioner, Data Architect
 level: Beginner
-translation-type: tm+mt
-source-git-commit: f2bd093d3a010e079b7f5adf3371e21d07a4f3ae
-workflow-type: tm+mt
-source-wordcount: '203'
-ht-degree: 90%
+exl-id: 05080d7f-f2d6-4ffe-b112-05b26a3a8a1d
+translation-type: ht
+source-git-commit: 6854d06f8dc445b56ddfde7777f02916a60f2b63
+workflow-type: ht
+source-wordcount: '198'
+ht-degree: 100%
 
 ---
 
+# Introdução a conectores{#about-connectors}
 
-# Introdução aos conectores{#about-connectors}
-
-O Adobe Campaign oferece vários conectores que permitem a comunicação com aplicativos externos, conexão com mecanismos de banco de dados e integração com o Adobe Analytics para compartilhar dados.
+O Adobe Campaign oferece vários conectores que permitem a comunicação com aplicativos externos, a conexão com mecanismos de banco de dados e a integração com o Adobe Analytics para compartilhar dados.
 
 Os conectores disponíveis estão listados abaixo:
 
@@ -34,4 +34,3 @@ Você também pode integrar o Campaign com vários outros sistemas, como:
 >[!NOTE]
 >
 >A disponibilidade desses módulos e sua configuração podem depender do tipo de implantação da sua instalação. Consulte [Campaign no local - matriz de recursos hospedados](../../installation/using/capability-matrix.md).
-
