@@ -6,14 +6,14 @@ description: Definição do layout de formulários web
 audience: web
 content-type: reference
 topic-tags: web-forms
-translation-type: tm+mt
-source-git-commit: 21219f4a85a0caec4531acda33ab8bba5c7605d6
-workflow-type: tm+mt
+exl-id: 23ca17f8-de1a-4f9c-8357-3965dc3329b1
+translation-type: ht
+source-git-commit: 6854d06f8dc445b56ddfde7777f02916a60f2b63
+workflow-type: ht
 source-wordcount: '523'
 ht-degree: 100%
 
 ---
-
 
 # Definição do layout de formulários web{#defining-web-forms-layout}
 
@@ -91,4 +91,3 @@ Os seguintes alinhamentos são suportados:
 * Esquerda/Direita: o rótulo é posicionado à direita ou à esquerda do campo,
 * Acima/Abaixo: o rótulo está posicionado acima ou abaixo do campo,
 * Oculto: o rótulo não é exibido.
-
