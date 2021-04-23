@@ -6,14 +6,14 @@ description: Como exportar e importar perfis
 audience: platform
 content-type: reference
 topic-tags: profile-management
-translation-type: tm+mt
-source-git-commit: b05b8daad449aeb1f5226fdd76744776c6553b63
-workflow-type: tm+mt
+exl-id: fd0f7b6e-84e1-442d-ae88-817fb6758d64
+translation-type: ht
+source-git-commit: 6854d06f8dc445b56ddfde7777f02916a60f2b63
+workflow-type: ht
 source-wordcount: '145'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
-
 
 # Importar e exportar perfis{#exporting-and-importing-profiles}
 
