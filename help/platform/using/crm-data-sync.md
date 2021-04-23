@@ -6,14 +6,14 @@ description: Gerenciar dados entre o Campaign e o CRM
 audience: platform
 content-type: reference
 topic-tags: connectors
-translation-type: tm+mt
-source-git-commit: b05b8daad449aeb1f5226fdd76744776c6553b63
-workflow-type: tm+mt
+exl-id: 7f9eda15-76e8-40a1-8302-004cea085778
+translation-type: ht
+source-git-commit: 6854d06f8dc445b56ddfde7777f02916a60f2b63
+workflow-type: ht
 source-wordcount: '1530'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
-
 
 # Sincronizar dados entre o Campaign e o CRM {#data-synchronization}
 
@@ -46,7 +46,7 @@ A configuração dessa atividade depende do processo a ser executado. Várias co
 
 ## Importar do CRM {#importing-from-the-crm}
 
-Para importar dados através do CRM no Adobe Campaign, você precisa criar o seguinte tipo de workflow:
+Para importar dados por meio do CRM no Adobe Campaign, você precisa criar o seguinte tipo de fluxo de trabalho:
 
 ![](assets/crm_wf_import.png)
 
@@ -84,7 +84,7 @@ Para uma atividade de importação, as etapas de configuração da atividade do 
 
 ### Gerenciar variáveis {#variable-management}
 
-Ative a opção **[!UICONTROL Automatic index]** para coletar somente objetos modificados desde a última importação.
+Habilite a opção **[!UICONTROL Automatic index]** para coletar apenas objetos modificados desde a última importação.
 
 ![](assets/crm_task_import_option.png)
 
@@ -244,7 +244,7 @@ Para fazer isso, siga as etapas abaixo:
 
 ## Excluir objetos no CRM {#deleting-objects-in-the-crm}
 
-Para excluir objetos no lado do CRM, você precisa especificar a chave primária dos elementos remotos a serem excluídos.
+Para excluir objetos no lado do CRM, você precisa especificar a chave primária dos elementos remotos que serão excluídos.
 
 ![](assets/crm_delete_in_crm.png)
 
