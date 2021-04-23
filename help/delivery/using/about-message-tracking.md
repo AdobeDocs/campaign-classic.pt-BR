@@ -6,14 +6,14 @@ description: Saiba mais sobre as diretrizes gerais para rastreamento no Adobe Ca
 audience: delivery
 content-type: reference
 topic-tags: tracking-messages
+exl-id: 43779505-9917-4e99-af25-b00a9d29a645
 translation-type: ht
-source-git-commit: e52d1963b72593c5dab8ced9e459d25b05044022
+source-git-commit: 6854d06f8dc445b56ddfde7777f02916a60f2b63
 workflow-type: ht
 source-wordcount: '685'
 ht-degree: 100%
 
 ---
-
 
 # Introdução ao rastreamento de mensagens {#get-started-tracking}
 
