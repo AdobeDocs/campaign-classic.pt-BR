@@ -6,14 +6,14 @@ description: Saiba como iniciar e descobrir as ações de workflow na barra de f
 audience: workflow
 content-type: reference
 topic-tags: -general-operation
-translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
-workflow-type: tm+mt
+exl-id: d345ba62-c2fb-43df-a2a1-e9e4292d301a
+translation-type: ht
+source-git-commit: 6854d06f8dc445b56ddfde7777f02916a60f2b63
+workflow-type: ht
 source-wordcount: '772'
 ht-degree: 100%
 
 ---
-
 
 # Iniciar um workflow  {#starting-a-workflow}
 
