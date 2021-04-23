@@ -6,14 +6,14 @@ description: '"Casos de uso: formulários web"'
 audience: web
 content-type: reference
 topic-tags: web-forms
-translation-type: tm+mt
-source-git-commit: 21219f4a85a0caec4531acda33ab8bba5c7605d6
-workflow-type: tm+mt
+exl-id: 7aa4646d-1325-47c2-b553-6fe375c48973
+translation-type: ht
+source-git-commit: 6854d06f8dc445b56ddfde7777f02916a60f2b63
+workflow-type: ht
 source-wordcount: '957'
 ht-degree: 100%
 
 ---
-
 
 # Casos de uso: formulários web{#use-cases-web-forms}
 
@@ -217,4 +217,3 @@ A exibição condicional da coluna à direita é configurada nos containers:
 * Visibilidade condicional de campos para um veículo comercial:
 
    ![](assets/s_ncs_admin_survey_condition_config3.png)
-
