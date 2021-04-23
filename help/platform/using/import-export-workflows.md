@@ -6,14 +6,14 @@ description: Saiba como importar e exportar dados usando workflows no Campaign C
 audience: platform
 content-type: reference
 topic-tags: importing-and-exporting-data
-translation-type: tm+mt
-source-git-commit: b05b8daad449aeb1f5226fdd76744776c6553b63
-workflow-type: tm+mt
+exl-id: 266ecd49-7101-4ff1-941f-1f9b39b44955
+translation-type: ht
+source-git-commit: 6854d06f8dc445b56ddfde7777f02916a60f2b63
+workflow-type: ht
 source-wordcount: '261'
-ht-degree: 92%
+ht-degree: 100%
 
 ---
-
 
 # Importar e exportar dados usando workflows {#import-export-workflows}
 
@@ -21,9 +21,9 @@ ht-degree: 92%
 
 Os workflows podem ser uma maneira útil de automatizar alguns dos processos de importação. Se você importa dados de um arquivo local ou de um SFTP, você pode usar workflows para padronizar os procedimentos de gerenciamento de dados.
 
-### Use dados de uma lista: Lista de leitura {#using-data-from-a-list--read-list}
+### usar dados de uma lista: Lista de leitura {#using-data-from-a-list--read-list}
 
-Os dados enviados em um workflow podem vir de listas em que os dados foram preparados e estruturados antecipadamente.
+Os dados enviados em um fluxo de trabalho podem vir de listas em que os dados foram preparados e estruturados antecipadamente.
 
 Esta lista pode ter sido criada diretamente no Adobe Campaign ou importada pela opção **[!UICONTROL Import a list]**. Para obter mais informações sobre essa opção, consulte esta [página](../../platform/using/about-generic-imports-exports.md).
 
