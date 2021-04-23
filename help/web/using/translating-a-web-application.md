@@ -6,14 +6,14 @@ description: Tradução de uma aplicação web
 audience: web
 content-type: reference
 topic-tags: web-applications
-translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
-workflow-type: tm+mt
+exl-id: 82c5c610-8161-4686-aa79-1b690e763765
+translation-type: ht
+source-git-commit: 6854d06f8dc445b56ddfde7777f02916a60f2b63
+workflow-type: ht
 source-wordcount: '363'
 ht-degree: 100%
 
 ---
-
 
 # Tradução de uma aplicação web{#translating-a-web-application}
 
@@ -61,4 +61,3 @@ Para sinalizar as cadeias de caracteres a ser traduzidas:
 1. Traduza e aprove as cadeias de caracteres.
 
    Você pode pré-visualizar as traduções selecionando o idioma desejado na guia **[!UICONTROL Preview]** na aplicação web.
-
