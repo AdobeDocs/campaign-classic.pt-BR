@@ -3,15 +3,15 @@ solution: Campaign Classic
 product: campaign
 title: Sobre perfis
 description: Sobre perfis
-feature: Profiles, Audiences
+feature: Perfis e públicos
 role: Business Practitioner, Data Architect
 level: Beginner
 exl-id: 54f1ad6c-54b0-4448-8c38-806dd75c1dae
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: d7eabfbebf016d2632d95d34a5b36719ccc1d88a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '994'
-ht-degree: 78%
+ht-degree: 100%
 
 ---
 
@@ -19,9 +19,9 @@ ht-degree: 78%
 
 Os perfis são centralizados no banco de dados do Adobe Campaign. Há vários mecanismos possíveis para obter perfis e criar esse banco de dados: coleta online via formulários Web, importação manual ou automática de arquivos de texto, replicação com bancos de dados corporativos ou outros sistemas de informações. Com o Adobe Campaign, você pode incorporar o histórico de marketing, informações de compras, preferências, dados de CRM e quaisquer dados de PI relevantes em uma exibição consolidada para analisar e tomar decisões.
 
-“**Perfil**” significa um registro de informações (por exemplo: um registro na tabela nmsRecipient ou uma tabela externa contendo uma ID de cookie, ID do cliente, identificador móvel ou outras informações relevantes para um canal específico) representando um cliente final, um prospecto ou um cliente potencial.
+“**Perfil**” significa um registro de informações (por exemplo: um registro na tabela nmsRecipient ou uma tabela externa contendo uma ID de cookie, uma ID do cliente, um identificador móvel ou outras informações relevantes para um canal específico) representando um cliente final, um prospecto ou um cliente potencial.
 
-No Adobe Campaign, os recipients são os perfis padrão direcionados para envio de deliveries (emails, SMS, etc.). Os dados do destinatário armazenados no banco de dados permitem filtrar o target que receberá qualquer delivery e adicionar dados de personalização ao seu conteúdo de delivery. Existem outros tipos de perfis no banco de dados. Esses perfis foram projetados para diferentes usos. Por exemplo, perfis iniciais são feitos para testar seus deliveries antes que sejam enviados ao público-alvo final.
+No Adobe Campaign, os recipients são os perfis padrão direcionados para envio de deliveries (emails, SMS etc.). Os dados do recipient armazenados no banco de dados permitem filtrar o target que receberá qualquer delivery e adicionar dados de personalização ao conteúdo de delivery. Existem outros tipos de perfis no banco de dados. Esses perfis foram projetados para diferentes usos. Por exemplo, perfis iniciais são feitos para testar seus deliveries antes que sejam enviados ao público-alvo final.
 
 ![](assets/do-not-localize/how-to-video.png) [Compreender o conceito de perfis em vídeo](#create-profiles-video)
 
@@ -59,7 +59,7 @@ Ele também dá acesso a:
 
 * listas - [Saiba mais](../../platform/using/creating-and-managing-lists.md)
 * serviços de assinatura - [Saiba mais](../../delivery/using/managing-subscriptions.md)
-* aplicações Web - [Saiba mais](../../web/using/about-web-applications.md)
+* aplicativos Web - [Saiba mais](../../web/using/about-web-applications.md)
 * importações e exportações (tarefas) - [Saiba mais](../../platform/using/about-generic-imports-exports.md)
 * workflows para construção do target - [Saiba mais](../../workflow/using/building-a-workflow.md#implementation-steps-)
 
@@ -67,39 +67,39 @@ A página de destinatários permite executar operações frequentes em perfis: e
 
 Para manipulações de perfil mais avançadas, é necessário editar a árvore do Adobe Campaign. Para fazer isso, clique no link **[!UICONTROL Explorer]** na página inicial do Adobe Campaign.
 
-Por padrão, os recipients são armazenados no nó **[!UICONTROL Profiles and Targets > Recipients]** da árvore. É possível criar destinatários nesta tela, bem como:
+Por padrão, os recipients são armazenados no nó **[!UICONTROL Profiles and Targets > Recipients]** da árvore. É possível criar recipients nesta visualização, bem como:
 
 * classificar e filtrar os perfis do banco de dados - [Saiba mais](../../platform/using/filtering-options.md)
 * mover, copiar ou excluir perfis do banco de dados - [Saiba mais](../../platform/using/managing-profiles.md),
 * atualizar perfis - [Saiba mais](../../platform/using/updating-data.md)
-* destinatários da exportação - [Saiba mais](../../platform/using/exporting-and-importing-profiles.md)
+* exportar recipients - [Saiba mais](../../platform/using/exporting-and-importing-profiles.md)
 * criar grupos de recipients - [Saiba mais](../../platform/using/creating-and-managing-lists.md)
 
 Para acessar funcionalidades e configurações avançadas, clique no ícone **[!UICONTROL Explorer]**.
 
 ![](assets/d_ncs_user_interface01.png)
 
-O layout geral do Adobe Campaign Explorer é apresentado em [this page](../../platform/using/adobe-campaign-explorer.md).
+O layout geral do explorador do Adobe Campaign é apresentado [nesta página](../../platform/using/adobe-campaign-explorer.md).
 
 >[!NOTE]
 >
->Também é possível exibir uma visualização avançada dessa lista na árvore do Adobe Campaign clicando no link **[!UICONTROL Profiles and targets > Recipients]**. A exibição da lista pode ser configurada para atender às suas necessidades. É possível adicionar ou excluir colunas, definir a ordem das colunas, classificar dados etc. A configuração de exibição de lista é descrita em [this page](../../platform/using/adobe-campaign-ui-lists.md).
+>Também é possível exibir uma visualização avançada dessa lista na árvore do Adobe Campaign clicando no link **[!UICONTROL Profiles and targets > Recipients]**. A exibição da lista pode ser configurada para atender às suas necessidades. É possível adicionar ou excluir colunas, definir a ordem das colunas, classificar dados etc. A configuração de exibição de lista é descrita [nesta página](../../platform/using/adobe-campaign-ui-lists.md).
 >
->Também é possível definir as visualizações de destinatários. Para obter mais informações sobre essa funcionalidade, consulte [esta seção](../../platform/using/access-management-folders.md).
+>Também é possível definir as visualizações de recipients. Para obter mais informações sobre esta funcionalidade, consulte [esta seção](../../platform/using/access-management-folders.md).
 
 ## Perfis ativos {#active-profiles}
 
 Os perfis ativos são aqueles que são contados para fins de cobrança.
 
-A contagem de perfis ativos está disponível somente para **Instâncias de marketing**. Não está disponível para instância de execução, ou seja, instâncias de MID (mid-sourcing) e RT (Centro de mensagens/Mensagens em tempo real).
+A contagem de perfis ativos está disponível somente para **Instâncias de marketing**. Não está disponível para Instâncias de execução, ou seja, instâncias de MID (mid-sourcing) e RT (Centro de mensagens/Mensagens em tempo real).
 
-Se você estiver hospedado no AWS, também poderá monitorar o número de perfis ativos usados em suas instâncias diretamente do Painel de controle do Campaign. Para obter mais informações, consulte a [documentação do Painel de controle do Campaign](https://docs.adobe.com/content/help/pt-BR/control-panel/using/performance-monitoring/active-profiles-monitoring.html).
+Se você estiver hospedado no AWS, também será possível monitorar o número de perfis ativos usados em suas instâncias diretamente do Painel de controle do Campaign. Para obter mais informações, consulte a [documentação do Painel de controle do Campaign](https://experienceleague.adobe.com/docs/control-panel/using/performance-monitoring/active-profiles-monitoring.html?lang=pt-BR).
 
 >[!NOTE]
 >
 >O Painel de controle do Campaign é acessível a todos os usuários administradores. As etapas para conceder acesso de Administrador a um usuário estão detalhadas [nesta seção](https://experienceleague.adobe.com/docs/control-panel/using/discover-control-panel/managing-permissions.html?lang=pt-BR#discover-control-panel).
 >
->Observe que sua instância deve ser hospedada no AWS e atualizada com a build mais recente do [Gold Standard](../../rn/using/gs-overview.md) ou a build mais recente do GA (21.1)](../../rn/using/latest-release.md). [ Saiba como verificar sua versão em [this section](../../platform/using/launching-adobe-campaign.md#getting-your-campaign-version). Para verificar se sua instância está hospedada no AWS, siga as etapas detalhadas em [this page](https://experienceleague.adobe.com/docs/control-panel/using/faq.html).
+>Observe que sua instância deve ser hospedada no AWS e atualizada com a compilação mais recente do [Gold Standard](../../rn/using/gs-overview.md) ou a compilação mais recente do GA (21.1)](../../rn/using/latest-release.md). [ Saiba como verificar sua versão [nesta seção](../../platform/using/launching-adobe-campaign.md#getting-your-campaign-version). Para verificar se sua instância está hospedada no AWS, siga as etapas detalhadas [nesta página](https://experienceleague.adobe.com/docs/control-panel/using/faq.html?lang=pt-BR).
 
 A cobrança só afeta perfis que estão **ativos**. Um perfil é considerado ativo quando ele é visado ou recebe comunicação nos últimos 12 meses por meio de qualquer canal.
 
