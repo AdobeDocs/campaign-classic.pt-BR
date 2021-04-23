@@ -6,14 +6,14 @@ description: Crie sua primeira pesquisa com o Campaign
 audience: web
 content-type: reference
 topic-tags: online-surveys
-translation-type: tm+mt
-source-git-commit: e76eb171aac1f7088ff8647f99c928ec349b24fc
-workflow-type: tm+mt
+exl-id: 22e14b24-59ba-4a92-8ffb-f5336793d64f
+translation-type: ht
+source-git-commit: 6854d06f8dc445b56ddfde7777f02916a60f2b63
+workflow-type: ht
 source-wordcount: '912'
 ht-degree: 100%
 
 ---
-
 
 # Etapas principais para criar uma pesquisa{#getting-started-with-surveys}
 
@@ -152,4 +152,3 @@ Você pode monitorar as respostas do usuário por meio de relatórios e logs. Co
 >A URL pública inclui o nome interno da pesquisa. Quando o nome interno é modificado, a URL é atualizada automaticamente: todos os links para a pesquisa também devem ser atualizados.
 >
 >Se os deliveries que contêm o link para o formulário já tiverem sido enviados, este link não funcionará mais.
-
