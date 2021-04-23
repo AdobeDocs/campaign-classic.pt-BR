@@ -7,11 +7,11 @@ audience: delivery
 content-type: reference
 topic-tags: monitoring-deliveries
 exl-id: 0663257a-3a70-4e0c-bbeb-8242aaa0876d
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: ae4f86f3703b9bfe7f08fd5c2580dd5da8c28cbd
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '629'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
@@ -87,7 +87,7 @@ Para obter mais detalhes sobre as diferentes falhas de delivery que podem ser en
  </tbody> 
 </table>
 
-Para saber como otimizar a capacidade de delivery dos emails do Adobe Campaign, consulte [esta seção](../../delivery/using/about-deliverability.md). Para um mergulho mais profundo na capacidade de entrega, consulte o [Guia de práticas recomendadas de capacidade de entrega do Adobe](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/introduction.html?lang=pt-BR).
+Para saber como otimizar a capacidade de delivery dos emails do Adobe Campaign, consulte [esta seção](../../delivery/using/about-deliverability.md). Para obter informações mais detalhadas sobre a capacidade de delivery, consulte o [Manual de práticas recomendadas de capacidade de delivery da Adobe](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/introduction.html?lang=pt-BR).
 
 ## Status pendente {#pending-status}
 
