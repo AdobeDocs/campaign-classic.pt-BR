@@ -6,14 +6,14 @@ description: Saiba mais sobre a atividade do workflow do Delivery outline
 audience: workflow
 content-type: reference
 topic-tags: targeting-activities
-translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
-workflow-type: tm+mt
+exl-id: b4dee085-ccc4-43fd-850d-1501a99272aa
+translation-type: ht
+source-git-commit: 6854d06f8dc445b56ddfde7777f02916a60f2b63
+workflow-type: ht
 source-wordcount: '267'
 ht-degree: 100%
 
 ---
-
 
 # Delivery outline{#delivery-outline}
 
@@ -48,4 +48,3 @@ A atividade de **delivery outline**, disponível nos workflows da campanha, perm
    A pré-visualização leva em conta o número de ofertas especificadas no delivery. Ao executar um workflow, é o número especificado no delivery outline que é levado em conta.
 
    ![](assets/int_compo_offre_wf1.png)
-
