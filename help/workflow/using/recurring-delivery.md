@@ -6,14 +6,14 @@ description: Saiba mais sobre a atividade de workflow de delivery recorrente
 audience: workflow
 content-type: reference
 topic-tags: action-activities
-translation-type: tm+mt
-source-git-commit: 20dcdd91d71158bc373db68c3f61f6808b240bd2
-workflow-type: tm+mt
+exl-id: efd2cdfb-2e5f-4672-8be8-a424481b11ed
+translation-type: ht
+source-git-commit: 6854d06f8dc445b56ddfde7777f02916a60f2b63
+workflow-type: ht
 source-wordcount: '221'
 ht-degree: 100%
 
 ---
-
 
 # Delivery recorrente{#recurring-delivery}
 
@@ -53,4 +53,3 @@ Este vídeo explica como configurar um delivery recorrente e uma atividade de sc
 >[!VIDEO](https://video.tv.adobe.com/v/25040?quality=12)
 
 Vídeos extras sobre procedimentos do Campaign Classic estão disponíveis [aqui](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html?lang=pt-BR).
-
