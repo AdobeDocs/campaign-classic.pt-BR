@@ -6,14 +6,14 @@ description: Publicar o pacote de campanha
 audience: campaign
 content-type: reference
 topic-tags: distributed-marketing
+exl-id: e96add16-cbc8-43af-acff-06a95d5b7749
 translation-type: ht
-source-git-commit: c625b4109e2cb47446331cd009ff9827c8267c93
+source-git-commit: 6854d06f8dc445b56ddfde7777f02916a60f2b63
 workflow-type: ht
 source-wordcount: '456'
 ht-degree: 100%
 
 ---
-
 
 # Publicar o pacote de campanha{#publishing-the-campaign-package}
 
