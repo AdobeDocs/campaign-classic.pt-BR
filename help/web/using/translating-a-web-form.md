@@ -6,14 +6,14 @@ description: Tradução de um formulário web
 audience: web
 content-type: reference
 topic-tags: web-forms
-translation-type: tm+mt
-source-git-commit: 21219f4a85a0caec4531acda33ab8bba5c7605d6
-workflow-type: tm+mt
+exl-id: 72959141-ca18-4512-80c7-239efd31f711
+translation-type: ht
+source-git-commit: 6854d06f8dc445b56ddfde7777f02916a60f2b63
+workflow-type: ht
 source-wordcount: '1565'
 ht-degree: 100%
 
 ---
-
 
 # Tradução de um formulário web{#translating-a-web-form}
 
@@ -477,4 +477,3 @@ Para traduzir aplicações web para idiomas diferentes do padrão (consulte [Alt
 1. Clique no botão **[!UICONTROL Add]**, em seguida, digite o **[!UICONTROL Internal name]**, **[!UICONTROL Label]** e o identificador da imagem (sinalizador). Para adicionar uma nova imagem, entre em contato com o administrador.
 
    ![](assets/s_ncs_admin_survey_trad_new_itemized_list_2.png)
-
