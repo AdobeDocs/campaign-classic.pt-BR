@@ -6,14 +6,14 @@ description: Criar e gerenciar tarefas
 audience: campaign
 content-type: reference
 topic-tags: tasks--resources-and-budgets
+exl-id: cc1200fa-f6d8-4f41-aed1-d1a7f229447a
 translation-type: ht
-source-git-commit: 278dec636373b5ccd3b631bd29607ebe894d53c3
+source-git-commit: 6854d06f8dc445b56ddfde7777f02916a60f2b63
 workflow-type: ht
 source-wordcount: '3732'
 ht-degree: 100%
 
 ---
-
 
 # Criar e gerenciar tarefas{#creating-and-managing-tasks}
 
@@ -436,6 +436,7 @@ Uma tarefa pode ser: **[!UICONTROL Scheduled]**, **[!UICONTROL In progress]**, *
 >
 >* O status da tarefa é atualizado automaticamente.
 >* Mesmo que o período de validade seja concluído, as tarefas que não foram fechadas ainda aparecerão na lista de tarefas em andamento. Um aviso notifica os operadores que a tarefa está atrasada.
+
 >
 
 
@@ -510,4 +511,3 @@ Abaixo estão os estágios de um ciclo completo de vida de tarefa para o qual a 
    >[!NOTE]
    >
    >Uma vez concluída a tarefa, seu ciclo de vida pode ser reinicializado pela pessoa encarregada dela. Para fazer isso, abra a tarefa e clique no link **[!UICONTROL Reset task to execute it again...]** na parte inferior do painel.
-
