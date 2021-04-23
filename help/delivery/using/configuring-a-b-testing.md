@@ -6,14 +6,14 @@ description: Saiba como configurar o teste A/B no Campaign Classic.
 audience: delivery
 content-type: reference
 topic-tags: a-b-testing
+exl-id: 6adf2e75-63b1-44ad-8925-03beb3bc0bdd
 translation-type: ht
-source-git-commit: a341980e9d940857388bb2755e5eaa74824cf6ea
+source-git-commit: 6854d06f8dc445b56ddfde7777f02916a60f2b63
 workflow-type: ht
 source-wordcount: '212'
 ht-degree: 100%
 
 ---
-
 
 # Configuração de teste A/B {#configuring-a-b-testing}
 
@@ -39,4 +39,4 @@ Esta seção detalha como criar um fluxo de trabalho para executar um teste A/B.
 
 Agora, você pode iniciar o fluxo de trabalho. Depois que os deliveries forem enviados, você poderá rastrear o comportamento dos três subconjuntos nos logs do delivery para ver qual assunto foi o mais bem-sucedido.
 
-Os workflows também permitem que você automatize seus processos identificando automaticamente a variante do delivery que teve melhor desempenho e, em seguida, enviando-a à população restante. Para obter mais informações, consulte este [caso de uso dedicado](../../delivery/using/a-b-testing-use-case.md).
+Os workflows também permitem que você automatize seus processos identificando automaticamente a variante do delivery que teve melhor desempenho e, em seguida, enviando-a à população restante. Para saber mais, consulte este [caso de uso](../../delivery/using/a-b-testing-use-case.md) dedicado.
