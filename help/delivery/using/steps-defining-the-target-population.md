@@ -6,25 +6,25 @@ description: Definição da população do target
 audience: delivery
 content-type: reference
 topic-tags: about-deliveries-and-channels
-translation-type: tm+mt
-source-git-commit: 8e0c6951be9d2f9fb0e58af213cb8db4079f2225
-workflow-type: tm+mt
+exl-id: d0ed7be7-3147-4cb8-9ce7-ea51602e9048
+translation-type: ht
+source-git-commit: 6854d06f8dc445b56ddfde7777f02916a60f2b63
+workflow-type: ht
 source-wordcount: '1599'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
-
 
 # Definição da população do target {#defining-the-target-population}
 
 ## Sobre as populações do target {#about-target-populations}
 
-Para cada delivery, você pode definir vários tipos de populações do target:
+Para cada delivery, você poderá definir vários tipos de populações do target.
 
-* **Público-alvo** principal: perfis que receberão mensagens. [Saiba mais](../../delivery/using/steps-defining-the-target-population.md#selecting-the-main-target)
+* **Audiência principal**: perfis que receberão mensagens. [Saiba mais](../../delivery/using/steps-defining-the-target-population.md#selecting-the-main-target)
 * **Prova**: recipients de mensagens de prova, envolvidos no ciclo de validação. [Saiba mais](../../delivery/using/steps-defining-the-target-population.md#defining-a-specific-proof-target)
 * **Seed addresses**: recipients que estão fora do target do delivery, mas receberão o delivery (somente no contexto de uma campanha de marketing). [Saiba mais](../../delivery/using/about-seed-addresses.md)
-* **Grupos** de controle: população que não receberá o delivery, usado para rastrear o comportamento e o impacto da campanha (somente no contexto de uma campanha de marketing). [Saiba mais](../../campaign/using/marketing-campaign-target.md#defining-a-control-group).
+* **Grupos de controle**: população que não receberá o delivery, usado para rastrear o comportamento e o impacto da campanha (somente no contexto de uma campanha de marketing). [Saiba mais](../../campaign/using/marketing-campaign-target.md#defining-a-control-group).
 
 ## Selecionar os principais recipients do delivery {#selecting-the-main-target}
 
