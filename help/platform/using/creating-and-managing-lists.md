@@ -3,17 +3,17 @@ solution: Campaign Classic
 product: campaign
 title: Criação e gerenciamento de listas
 description: Saiba como criar e gerenciar listas
-feature: Profiles
+feature: Perfis
 role: Business Practitioner
 level: Beginner
-translation-type: tm+mt
-source-git-commit: b05b8daad449aeb1f5226fdd76744776c6553b63
-workflow-type: tm+mt
-source-wordcount: '808'
-ht-degree: 94%
+exl-id: 711b84cd-bac8-4f1a-9999-0124fbfc3a01
+translation-type: ht
+source-git-commit: 6854d06f8dc445b56ddfde7777f02916a60f2b63
+workflow-type: ht
+source-wordcount: '805'
+ht-degree: 100%
 
 ---
-
 
 # Criar e gerenciar listas{#creating-and-managing-lists}
 
@@ -37,7 +37,7 @@ Dois tipos de listas estão disponíveis no Adobe Campaign:
 
 ![](assets/do-not-localize/how-to-video.png) [Descubra este recurso no vídeo](#create-list-video)
 
-## Criar uma lista de perfis a partir de um grupo {#creating-a-profile-list-from-a-group}
+## Criar uma lista de perfis de um grupo {#creating-a-profile-list-from-a-group}
 
 As listas do tipo **[!UICONTROL Group]** criadas por meio do link **[!UICONTROL Profiles and targets]** devem ser baseadas na tabela de perfil padrão do Adobe Campaign (nms:recipient).
 
@@ -126,7 +126,7 @@ Para remover um perfil de uma lista, é possível:
 >
 >Quando você exclui uma lista, os perfis na lista não são afetados, mas os dados nesses perfis são atualizados.
 
-## Vídeo tutorial {#create-list-video}
+## Tutorial em vídeo {#create-list-video}
 
 ### Como criar uma lista de recipients
 
@@ -136,10 +136,10 @@ Aprenda a criar um público-alvo configurando uma lista de recipients do Explore
 
 >[!VIDEO](https://video.tv.adobe.com/v/25602/quality=12)
 
-### Como usar um workflow para criar uma lista de recipients {#create-list-in-a-wf-video}
+### Como usar um fluxo de trabalho para criar uma lista de recipients {#create-list-in-a-wf-video}
 
-Aprenda a criar um workflow para direcionar os recipients e como torná-lo recorrente antes de usar a lista em um público-alvo de email.
+Saiba como criar um fluxo de trabalho para direcionar os recipients e como torná-lo recorrente antes de usar a lista em um target de email.
 
 >[!VIDEO](https://video.tv.adobe.com/v/25603?quality=12)
 
-Vídeos extras sobre procedimentos do Campaign Classic estão disponíveis [aqui](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html?lang=pt-BR).
+Vídeos extras com instruções do Campaign Classic estão disponíveis [aqui](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html?lang=pt-BR).
