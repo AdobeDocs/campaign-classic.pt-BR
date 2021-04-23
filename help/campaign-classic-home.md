@@ -8,7 +8,7 @@ translation-type: tm+mt
 source-git-commit: bd6f77606517a0d3ceaa3c2b398733521af3ae43
 workflow-type: tm+mt
 source-wordcount: '293'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
@@ -18,11 +18,11 @@ ht-degree: 95%
 
 ## Novidades
 
-* **[Atualizar o ](technotes/ios-certificate-update.md)**<br/> certificado APNsEm 29 de março de 2021, uma atualização APNs afetou o canal do Campaign iOS. É necessário atualizar a configuração para evitar a interrupção do canal de push do iOS.
+* **[Atualize seu certificado APNs](technotes/ios-certificate-update.md)**<br/> Em 29 de março de 2021, uma atualização de APNs afetou o canal do Campaign iOS. É necessário atualizar a configuração para evitar a interrupção do canal de push do iOS.
 
 * **[Conectando-se pelo IMS/Adobe ID? Atualize para as builds mais recentes](integrations/using/about-adobe-id.md)**<br/> Se estiver usando o IMS para se conectar ao Campaign, você deverá fazer upgrade para poder se conectar ao Campaign após** 30 de junho de 2021 **.
 
-* **[Proteja suas instâncias do Campaign](technotes/acc-config-updates.md)**<br/>Atualize para as builds mais recentes para proteger a plataforma do Campaign.
+* **[Proteja suas instâncias do Campaign](technotes/acc-config-updates.md)**<br/>Atualize para as compilações mais recentes para proteger a plataforma do Campaign.
 
 * **[Remover devoluções definitivas incorretas](https://helpx.adobe.com/campaign/kb/update-bounce-qualification.html)**<br/> Saiba como atualizar devoluções definitivas incorretas depois da paralisação do Gmail
 
@@ -30,7 +30,7 @@ ht-degree: 95%
 
 * **[Mover para a API do provedor de APNs com base em HTTP/2](https://helpx.adobe.com/campaign/kb/migrate-to-apns-http2.html)**<br/> Saiba como migrar do protocolo binário legado para a API do provedor APNs com base em HTTP/2
 
-* **[Obtenha suporte](support.md)**<br/> Acesse as perguntas frequentes, as práticas recomendadas, os recursos de ajuda e solicite ajuda
+* **[Obtenha suporte](support.md)**<br/> Acesse perguntas frequentes, práticas recomendadas e recursos de ajuda e solicite assistência
 
 [Mais atualizações](/help/rn/using/documentation-updates.md)
 
@@ -87,6 +87,6 @@ ht-degree: 95%
 | [Notas de versão](/help/rn/using/latest-release.md) | [Lista de mensagens de erro](https://docs.adobe.com/content/help/en/campaign-classic/technicalresources/error_messages/error_codes.html) |
 | [Vídeos explicativos](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html?lang=pt-BR) | [Modelo de dados do Campaign](configuration/using/about-data-model.md) |
 | [Matriz de compatibilidade](rn/using/compatibility-matrix.md) | [JSAPI do Campaign](https://docs.adobe.com/content/help/en/campaign-classic/technicalresources/api/p-1.html) |
-| [[!DNL Gold Standard] atualizar](rn/using/gs-overview.md) | [Guia de rastreamento](https://helpx.adobe.com/br/campaign/kb/acc-tracking.html) |
+| Atualização do [[!DNL Gold Standard] ](rn/using/gs-overview.md) | [Manual de rastreamento](https://helpx.adobe.com/br/campaign/kb/acc-tracking.html) |
 | [Recursos obsoletos](rn/using/deprecated-features.md) | [Lista de verificação de segurança e privacidade](https://helpx.adobe.com/br/campaign/kb/acc-security.html) |
 | [Painel de controle do Campaign](https://experienceleague.adobe.com/docs/control-panel/using/control-panel-home.html?lang=pt-BR) | [Orientações de monitoramento](production/using/monitoring-guidelines.md) |
