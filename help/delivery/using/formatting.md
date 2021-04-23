@@ -6,14 +6,14 @@ description: Formatação
 audience: delivery
 content-type: reference
 topic-tags: content-management
-translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
-workflow-type: tm+mt
+exl-id: d9688dc4-20c6-4a9a-990f-465f39b2faa2
+translation-type: ht
+source-git-commit: 6854d06f8dc445b56ddfde7777f02916a60f2b63
+workflow-type: ht
 source-wordcount: '1448'
 ht-degree: 100%
 
 ---
-
 
 # Formatação{#formatting}
 
