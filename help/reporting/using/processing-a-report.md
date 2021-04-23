@@ -6,14 +6,14 @@ description: Processamento de um relatório
 audience: reporting
 content-type: reference
 topic-tags: analyzing-populations
-translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
-workflow-type: tm+mt
+exl-id: d133efec-33e1-4711-a90f-e40385059386
+translation-type: ht
+source-git-commit: 6854d06f8dc445b56ddfde7777f02916a60f2b63
+workflow-type: ht
 source-wordcount: '814'
 ht-degree: 100%
 
 ---
-
 
 # Uso de um relatório de análise {#processing-a-report}
 
@@ -152,4 +152,3 @@ Para criar um histórico, siga as etapas abaixo:
 1. Use o botão de acesso de arquivo para mostrar análises anteriores.
 
    ![](assets/reporting_descriptive_historize_access.png)
-
