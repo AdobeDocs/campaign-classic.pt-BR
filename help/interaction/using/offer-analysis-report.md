@@ -6,14 +6,14 @@ description: Relatório da análise da oferta
 audience: interaction
 content-type: reference
 topic-tags: tracking-offers
-translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
-workflow-type: tm+mt
+exl-id: 44c57b0c-3561-4943-812f-945f5fcbb142
+translation-type: ht
+source-git-commit: 6854d06f8dc445b56ddfde7777f02916a60f2b63
+workflow-type: ht
 source-wordcount: '82'
 ht-degree: 100%
 
 ---
-
 
 # Relatório da análise da oferta{#offer-analysis-report}
 
@@ -40,4 +40,3 @@ As estatísticas são classificadas com base em três critérios:
 Os dados podem ser filtrados com base em vários critérios disponíveis na seção superior do relatório. Após selecionar os critérios desejados, clique no link **[!UICONTROL Refresh]** para aplicá-los ao relatório.
 
 ![](assets/offer_report_criteria.png)
-
