@@ -3,7 +3,7 @@ solution: Campaign Classic
 product: campaign
 title: Atualizações da documentação do Adobe Campaign Classic
 description: Esta página lista todos os novos recursos e atualizações na documentação do Adobe Campaign Classic
-feature: Overview
+feature: Visão geral
 role: Business Practitioner
 level: Beginner
 exl-id: 07c1f4a3-cf16-4a9b-b402-e13258799f91
@@ -11,7 +11,7 @@ translation-type: tm+mt
 source-git-commit: 69630f1450241e15d385dc03a3a2b02f6f7c850b
 workflow-type: tm+mt
 source-wordcount: '4304'
-ht-degree: 97%
+ht-degree: 99%
 
 ---
 
@@ -27,7 +27,7 @@ Uma nova seção foi sobre como trabalhar com Fontes e Destinos da Adobe Experie
 
 ## Março de 2021 {#march-2021}
 
-O [Introdução à seção SMS](../../delivery/using/sms-channel.md) foi reorganizado e aprimorado. Agora você pode aprender a configurar o canal SMS](../../delivery/using/sms-set-up.md), [criar um SMS](../../delivery/using/sms-create.md), [enviar e rastrear SMS](../../delivery/using/sms-send.md) em seções dedicadas.[
+A [seção Introdução ao SMS](../../delivery/using/sms-channel.md) foi reorganizada e aprimorada. Agora você pode aprender a [configurar o canal de SMS](../../delivery/using/sms-set-up.md), [criar um SMS](../../delivery/using/sms-create.md), [enviar e rastrear SMS](../../delivery/using/sms-send.md) em seções dedicadas.
 
 A página &quot;Opções de ajuda e suporte&quot; do Campaign Classic foi integrada à documentação principal. [Leia mais](../../support.md)
 
@@ -138,7 +138,7 @@ A matriz de Compatibilidade foi atualizada. [Leia mais](../../rn/using/compatibi
 
 A página de recursos obsoletos e removidos foi atualizada. [Leia mais](../../rn/using/deprecated-features.md)
 
-As notas de versão e a matriz de compatibilidade para a versão [!DNL Gold Standard] agora estão disponíveis em uma seção dedicada.
+As notas de versão e a matriz de compatibilidade para a versão do [!DNL Gold Standard] agora estão disponíveis em uma seção dedicada.
 [Leia mais](../../rn/using/gold-standard.md#gs-11).
 
 A integração dos acionadores originalmente baseada na configuração da autenticação oAUTH para acessar o pipeline, agora foi alterada e movida para o Adobe I/O. [Saiba mais](../../integrations/using/configuring-adobe-io.md)
@@ -214,7 +214,7 @@ A seção atividade de **[!UICONTROL AND-join]** foi aprimorada com informaçõe
 
 Um caso de uso sobre como atualizar automaticamente uma lista usando um query incremental foi adicionado aos casos de uso do workflow. [Leia mais](../../workflow/using/about-workflow-use-cases.md)
 
-As [Notas de versão](../../rn/using/latest-release.md) foram reorganizadas: uma [página de visão geral](../../rn/using/latest-release.md) foi adicionada com informações sobre status de criação, processo de atualização, recomendações e links importantes. Uma página dedicada às [[!DNL Gold Standard] versões do ](../../rn/using/gold-standard.md) também foi adicionada e a [matriz de Compatibilidade](../../rn/using/compatibility-matrix.md) foi integrada.
+As [Notas de versão](../../rn/using/latest-release.md) foram reorganizadas: uma [página de visão geral](../../rn/using/latest-release.md) foi adicionada com informações sobre status de criação, processo de atualização, recomendações e links importantes. Uma página dedicada às versões do [[!DNL Gold Standard] também foi ](../../rn/using/gold-standard.md) adicionada e a [Matriz de compatibilidade](../../rn/using/compatibility-matrix.md) foi integrada.
 
 Uma nova seção foi adicionada com diretrizes relacionadas ao monitoramento do Campaign Classic. [Leia mais](../../production/using/monitoring-guidelines.md)
 
@@ -274,7 +274,7 @@ A seção Monitoramento da capacidade de delivery foi movida e aprimorada. [Leia
 
 A seção Solução de problemas da capacidade de delivery foi movida e aprimorada. [Leia mais](../../delivery/using/deliverability-faq.md)
 
-As diretrizes de capacidade de delivery ao iniciar uma nova plataforma foram aprimoradas. [Leia mais](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/introduction.html#transition-process)
+As diretrizes de capacidade de delivery ao iniciar uma nova seção da plataforma foram aprimoradas. [Leia mais](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/introduction.html?lang=pt-BR)
 
 A seção Enviar emails transacionais com anexos foi movida e atualizada. [Leia mais](../../message-center/using/transactional-email-with-attachments.md)
 
