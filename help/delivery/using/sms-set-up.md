@@ -1,33 +1,33 @@
 ---
 solution: Campaign Classic
 product: campaign
-title: Configurar canal SMS do Campaign
-description: Saiba como configurar o canal SMS no Campaign
+title: Configurar canal de SMS do Campaign
+description: Saiba como configurar o canal de SMS no Campaign
 audience: delivery
 content-type: reference
 topic-tags: sending-messages-on-mobiles
-translation-type: tm+mt
-source-git-commit: 5a084ebe5295d19de24cf92c721d4692f0f5deb8
-workflow-type: tm+mt
+exl-id: a2783a5e-6d38-41a1-b5c6-24ab489116f8
+translation-type: ht
+source-git-commit: 6854d06f8dc445b56ddfde7777f02916a60f2b63
+workflow-type: ht
 source-wordcount: '1677'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
-
-# Configurar canal SMS {#setting-up-sms-channel}
+# Configurar canal de SMS {#setting-up-sms-channel}
 
 Para enviar para um celular, você precisa:
 
 1. Uma conta externa especificando um conector e tipo de mensagem.
 
-   Observe que os conectores herdados agora estão obsoletos. Embora os recursos obsoletos ainda estejam disponíveis, eles não serão aprimorados e nem terão suporte. Saiba mais [nesta página](../../rn/using/deprecated-features.md).
+   Observe que os conectores herdados agora estão obsoletos. Embora os recursos obsoletos ainda estejam disponíveis, eles não serão aprimorados nem terão suporte. Saiba mais [nesta página](../../rn/using/deprecated-features.md).
 
 1. Um template do delivery no qual essa conta externa é referenciada.
 
 ## Criar uma conta externa SMPP {#creating-an-smpp-external-account}
 
-Para enviar um SMS para um telefone celular, primeiro é necessário criar a conta externa SMPP.
+Para enviar um SMS a um telefone celular, primeiro é necessário criar a conta externa SMPP.
 Para obter mais informações sobre o protocolo e as configurações de SMS, consulte esta [página](../../delivery/using/sms-protocol.md).
 
 Para fazer isso, siga as etapas abaixo:
@@ -343,7 +343,7 @@ Para evitar isso, aplique uma das seguintes soluções, dependendo do provedor q
 
    ![](assets/extended_smpp_system-type.png)
 
-As etapas para configurar uma conta externa usando o conector Extended generic SMPP estão detalhadas na seção [Create an SMPP external account](#creating-an-smpp-external-account) .
+As etapas para configurar uma conta externa usando o conector SMPP genérico estendido estão detalhadas na seção [Criar uma conta externa SMPP](#creating-an-smpp-external-account).
 
 ## Alterar o template do delivery {#changing-the-delivery-template}
 
