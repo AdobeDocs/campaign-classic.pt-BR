@@ -7,11 +7,11 @@ audience: platform
 content-type: reference
 topic-tags: starting-with-adobe-campaign
 exl-id: 9f1b0974-f8bd-430f-88fe-9c09b0074d3b
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 6854d06f8dc445b56ddfde7777f02916a60f2b63
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '512'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -29,7 +29,7 @@ Precisa de ajuda enquanto trabalha com o Campaign Classic? Leia abaixo as 10 pri
 
 O Adobe Campaign Classic, especificamente, usa uma variedade de tecnologias para fornecer valor. Essa combinação de tecnologias exige que você atualize regularmente suas instâncias do Campaign Classic para garantir que as versões mais atualizadas estejam sendo usadas para oferecer segurança, estabilidade e desempenho superiores.
 
-Se você estiver usando o Adobe Managed Services, poderá se beneficiar da atualização do Campaign [!DNL Gold Standard]. Para obter mais informações, consulte [esta página](../../rn/using/gs-overview.md).
+Se estiver usando o Adobe Managed Services, você poderá se beneficiar da atualização do Campaign [!DNL Gold Standard]. Para obter mais informações, consulte [este artigo](../../rn/using/gs-overview.md).
 
 [Leia esta seção](../../production/using/build-upgrade.md) para saber como atualizar seu ambiente e leia as [perguntas frequentes](../../platform/using/faq-build-upgrade.md) sobre este tópico específico.
 
@@ -43,7 +43,7 @@ O fluxo de trabalho de limpeza do banco de dados exclui dados obsoletos para evi
 
 A interface de autoatendimento de zonas de segurança pode ser usada para gerenciar entradas na configuração de zona de segurança VPN de uma implantação do Adobe Campaign Classic. Leia [esta seção](../../installation/using/security-zones.md) para saber mais sobre zonas de segurança no Campaign.
 
-[Clique aqui para saber mais](https://helpx.adobe.com/br/campaign/kb/configuring-security-zones-self-service.html) sobre a interface do usuário de autoatendimento da Zona de Segurança.
+[Clique aqui para saber mais](https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/additional-configurations/security-zones.html?lang=pt-BR#installing-campaign-classic) sobre a interface do usuário de autoatendimento da Zona de Segurança.
 
 ## 4. Como posso garantir que meu delivery seja enviado sem erros? {#how-can-i-make-sure-my-delivery-is-sent-without-errors-}
 
