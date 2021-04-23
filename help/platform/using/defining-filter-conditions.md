@@ -6,18 +6,18 @@ description: Definição de condições de filtro
 audience: platform
 content-type: reference
 topic-tags: creating-queries
-translation-type: tm+mt
-source-git-commit: b05b8daad449aeb1f5226fdd76744776c6553b63
-workflow-type: tm+mt
+exl-id: b62e23e5-f1b7-44c4-82d9-95c6b3240352
+translation-type: ht
+source-git-commit: 6854d06f8dc445b56ddfde7777f02916a60f2b63
+workflow-type: ht
 source-wordcount: '3229'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
-
 # Definir condições de filtro{#defining-filter-conditions}
 
-## Escolha o operador {#choosing-the-operator}
+## Escolher o operador {#choosing-the-operator}
 
 Nas condições de filtragem, é necessário vincular dois valores usando um operador.
 
@@ -117,7 +117,7 @@ Abaixo está uma lista dos operadores disponíveis:
  </tbody> 
 </table>
 
-## Use AND, OR, EXCETO {#using-and--or--except}
+## Usar AND, OR, EXCEPT {#using-and--or--except}
 
 Para queries usando várias condições de filtragem, você precisa definir links entre as condições. Há três links possíveis:
 
@@ -259,7 +259,7 @@ Vincular a uma tabela e elemento de coleção:
 
 >[!NOTE]
 >
->* Use o botão **[!UICONTROL Add]** (acima da barra de ícones lateral) para adicionar uma coluna de saída na qual editaremos a expressão. Para obter mais informações sobre edição de expressão, consulte [esta seção](#building-expressions).
+>* Use o botão **[!UICONTROL Add]** (acima da barra de ícones lateral) para adicionar uma coluna de saída na qual editaremos a expressão. Para obter mais informações sobre como editar uma expressão, consulte [esta seção](#building-expressions).
 >* Exclua uma coluna de saída clicando no &#39;x&#39; vermelho (**Excluir**).
 >* Altere a ordem das colunas de saída usando as setas.
 >* O **[!UICONTROL Distribution of values]** é uma maneira de exibir a distribuição dos valores do campo selecionado (por exemplo, as distribuições vinculadas às cidades de recipients, idiomas do recipient, etc.).
