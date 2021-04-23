@@ -6,14 +6,14 @@ description: Sincronia de público
 audience: integrations
 content-type: reference
 topic-tags: acs-connector
-translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
-workflow-type: tm+mt
+exl-id: 88e581cf-43cd-4c43-9347-d016c62fdf42
+translation-type: ht
+source-git-commit: 6854d06f8dc445b56ddfde7777f02916a60f2b63
+workflow-type: ht
 source-wordcount: '1153'
 ht-degree: 100%
 
 ---
-
 
 # Sincronia de público{#synchronizing-audiences}
 
@@ -139,7 +139,7 @@ Ao criar um workflow de delivery no Campaign Standard, é possível usar esse p�
 
 ## Envio e monitoramento do delivery {#send-and-monitor-your-delivery}
 
-Quando o delivery e seu conteúdo estiverem prontos, envie o delivery, conforme descrito com mais detalhes [nesta seção](https://docs.adobe.com/content/help/en/campaign-standard/using/managing-processes-and-data/channel-activities/email-delivery.html):
+Quando o delivery e seu conteúdo estiverem prontos, envie o delivery, conforme descrito com mais detalhes [nesta seção](https://docs.adobe.com/content/help/pt-BR/campaign-standard/using/managing-processes-and-data/channel-activities/email-delivery.html):
 
 1. Execute o workflow de delivery. Essa etapa prepara o email para envio.
 1. No painel de delivery, confirme manualmente se o delivery pode ser enviado.
@@ -151,4 +151,3 @@ Quando o delivery e seu conteúdo estiverem prontos, envie o delivery, conforme 
       As quarentenas são sincronizados automaticamente de volta ao Campaign v7. Isso possibilita que as informações não entregues sejam consideradas para o próximo target realizado no Campaign v7.
 
       Você pode encontrar mais informações sobre gestão de quarentena no Campaign Standard [nesta seção](https://docs.adobe.com/content/help/pt-BR/campaign-standard/using/testing-and-sending/monitoring-messages/understanding-quarantine-management.html).
-
