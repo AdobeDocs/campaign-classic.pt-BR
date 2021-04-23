@@ -6,20 +6,20 @@ description: Caso de uso
 audience: platform
 content-type: reference
 topic-tags: filtering-data
-translation-type: tm+mt
-source-git-commit: b05b8daad449aeb1f5226fdd76744776c6553b63
-workflow-type: tm+mt
+exl-id: 85ded096-7d27-41b3-8ef2-93f5ca8def82
+translation-type: ht
+source-git-commit: 6854d06f8dc445b56ddfde7777f02916a60f2b63
+workflow-type: ht
 source-wordcount: '257'
-ht-degree: 94%
+ht-degree: 100%
 
 ---
 
-
 # Caso de uso{#use-case}
 
-## Crie um filtro no formato de email dos assinantes {#creating-a-filter-on-the-email-format-of-subscribers}
+## Criar um filtro no formato do email dos assinantes {#creating-a-filter-on-the-email-format-of-subscribers}
 
-Este caso de uso irá demonstrar como criar um filtro para classificar assinaturas de boletim informativo com base no formato do email do destinatário.
+Este caso de uso demonstrará como criar um filtro para classificar assinaturas de informativo com base no formato do email do recipient.
 
 Para fazer isso, precisamos usar um filtro predefinido: esses filtros estão vinculados a um tipo de documento e são acessados por meio do nó **[!UICONTROL Administration > Configuration > Predefined filters]**. Esses filtros de dados podem ser usados para cada tipo de editor (ou documento) no aplicativo.
 
@@ -46,7 +46,7 @@ Siga as etapas abaixo:
 
    Você pode acessar esses campos para definir condições de filtro no corpo do editor de filtro. Um filtro de aplicativo é definido exatamente da mesma maneira como um filtro avançado. Consulte [Criar um filtro avançado](../../platform/using/creating-filters.md#creating-an-advanced-filter).
 
-1. Crie um novo filtro em assinaturas para exibir somente assinaturas com um formato de email indefinido:
+1. Crie um novo filtro em assinaturas para exibir somente assinaturas com um formato do email indefinido:
 
    ![](assets/s_ncs_user_filter_parameters.png)
 
@@ -58,4 +58,3 @@ Siga as etapas abaixo:
    O nome do filtro atual é exibido acima da lista. Para cancelar o filtro, clique no ícone **[!UICONTROL Delete this filter]**.
 
    ![](assets/s_ncs_user_filter_on_subscriptions.png)
-
