@@ -3,17 +3,17 @@ solution: Campaign Classic
 product: campaign
 title: Sobre o Adobe Campaign Classic
 description: Conheça os principais recursos, a interface do usuário e as diretrizes globais.
-feature: Overview
+feature: Visão geral
 role: Business Practitioner
 level: Beginner
-translation-type: tm+mt
-source-git-commit: f2bd093d3a010e079b7f5adf3371e21d07a4f3ae
-workflow-type: tm+mt
-source-wordcount: '915'
-ht-degree: 97%
+exl-id: 8febceb0-9694-4045-a630-a7ff2fd18943
+translation-type: ht
+source-git-commit: 6854d06f8dc445b56ddfde7777f02916a60f2b63
+workflow-type: ht
+source-wordcount: '912'
+ht-degree: 100%
 
 ---
-
 
 # Introdução ao Campaign Classic{#about-adobe-campaign-classic}
 
@@ -23,7 +23,7 @@ O Adobe Campaign permite coordenar a criação de campanhas de marketing convers
 
 >[!NOTE]
 >
->O Adobe Campaign Classic está disponível nas versões v6.11 e v7. Exceto quando mencionado, os materiais de ajuda se aplicam a ambas as versões, na [build mais recente](../../rn/using/latest-release.md). As capturas de tela refletem a interface do usuário do Campaign Classic v7.
+>O Adobe Campaign Classic está disponível nas versões v6.11 e v7. Exceto quando mencionado, os materiais de ajuda aplicam-se a ambas as versões na [compilação mais recente](../../rn/using/latest-release.md). As capturas de tela refletem a interface do usuário do Campaign Classic v7.
 
 ![](assets/do-not-localize/how-to-video.png) [Descubra as principais características e recursos no vídeo](#video)
 
@@ -67,7 +67,7 @@ Você pode combinar as funcionalidades de delivery e as funcionalidades avançad
 
 ## Principais recursos e complementos {#core-capabilities-and-add-ons}
 
-O Adobe Campaign oferece um conjunto de recursos para ajudá-lo a implementar e otimizar as funcionalidades de marketing conversacional de acordo com a sua necessidade e arquitetura. Alguns deles são recursos básicos, enquanto outros dependem da instalação de um pacote e de sua configuração. Uma descrição detalhada do produto está disponível aqui: [descrição do produto Adobe Campaign Classic](https://helpx.adobe.com/legal/product-descriptions/adobe-campaign-classic---product-description.html).
+O Adobe Campaign oferece um conjunto de recursos para ajudá-lo a implementar e otimizar as funcionalidades de marketing conversacional de acordo com a sua necessidade e arquitetura. Alguns deles são recursos básicos, enquanto outros dependem da instalação de um pacote e de sua configuração. Uma descrição detalhada do produto está disponível aqui: [descrição do produto Adobe Campaign Classic](https://helpx.adobe.com/br/legal/product-descriptions/adobe-campaign-classic---product-description.html).
 
 Os recursos abaixo estão disponíveis. A disponibilidade desses recursos dependem do seu contrato de licença.
 
@@ -87,10 +87,10 @@ Os recursos abaixo estão disponíveis. A disponibilidade desses recursos depend
 * [Serviços da Web](../../configuration/using/about-web-services.md) - use o Campaign com APIs/Serviços da Web;
 * [Relatórios](../../reporting/using/about-adobe-campaign-reporting-tools.md) - acesse relatórios internos, analise dados e projete seus próprios relatórios.
 
-## Vídeo tutorial {#video}
+## Tutoriais em vídeo {#video}
 
 Este vídeo apresenta os principais recursos e funcionalidades do Campaign Classic.
 
 >[!VIDEO](https://video.tv.adobe.com/v/35129?quality=12)
 
-Vídeos extras sobre procedimentos do Campaign Classic estão disponíveis [aqui](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html?lang=pt-BR).
+Vídeos extras com instruções do Campaign Classic estão disponíveis [aqui](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html?lang=pt-BR).
