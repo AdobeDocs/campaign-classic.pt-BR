@@ -6,18 +6,18 @@ description: Esta seção fornece informações gerais específicas para o canal
 audience: delivery
 content-type: reference
 topic-tags: sending-push-notifications
-translation-type: tm+mt
-source-git-commit: 9237e11edec4114b2bd0932e6128775f36aad27c
-workflow-type: tm+mt
+exl-id: c3b0406f-f652-42f4-ad0d-23fb719cd1b6
+translation-type: ht
+source-git-commit: 6854d06f8dc445b56ddfde7777f02916a60f2b63
+workflow-type: ht
 source-wordcount: '659'
-ht-degree: 93%
+ht-degree: 100%
 
 ---
 
-
 # Introdução ao canal de aplicativo móvel{#about-mobile-app-channel}
 
-O **Mobile App Channel** permite usar a plataforma Adobe Campaign para enviar notificações por push personalizadas para terminais iOS e Android por meio de aplicativos.
+O **Canal de aplicativo móvel** permite usar a plataforma do Adobe Campaign para enviar notificações personalizadas para terminais iOS e Android por meio de aplicativos
 
 >[!CAUTION]
 >
@@ -55,7 +55,7 @@ Correspondendo a esses dois canais, há duas atividades de delivery nos workflow
 
 O workflow **[!UICONTROL NMAC opt-out management]** (mobileAppOptOutMgt) atualiza a notificação de cancelamentos de subscrições em dispositivos móveis. Para obter mais informações sobre esse fluxo de trabalho, consulte a [lista de workflows técnicos](../../workflow/using/about-technical-workflows.md).
 
-O Adobe Campaign é compatível com APNs HTTP/2. Para obter mais detalhes sobre as etapas de configuração, consulte a seção [this section](../../delivery/using/configuring-the-mobile-application.md).
+O Adobe Campaign é compatível com APNs HTTP/2. Para obter mais informações sobre as etapas de configuração, consulte [esta seção](../../delivery/using/configuring-the-mobile-application.md).
 
 Para informações gerais sobre como criar um delivery, consulte [esta seção](../../delivery/using/steps-about-delivery-creation-steps.md).
 
@@ -103,4 +103,3 @@ Para verificar se funciona corretamente, use os seguintes comandos:
    ```
 
 Se um conector HTTP/2 do iOS for usado, o MTA, o servidor da web e o fluxo de trabalho deverão ser capazes de contatar APNs na porta 443.
-
