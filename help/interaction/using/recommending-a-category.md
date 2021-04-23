@@ -6,14 +6,14 @@ description: Recomendando uma categoria
 audience: interaction
 content-type: reference
 topic-tags: managing-an-offer-catalog
-translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
-workflow-type: tm+mt
+exl-id: cb062cb2-dfea-46aa-8d9e-580e4dc7bb25
+translation-type: ht
+source-git-commit: 6854d06f8dc445b56ddfde7777f02916a60f2b63
+workflow-type: ht
 source-wordcount: '161'
 ht-degree: 100%
 
 ---
-
 
 # Recomendando uma categoria{#recommending-a-category}
 
@@ -26,4 +26,3 @@ Para incluir sempre uma categoria nas recomendações, aplique as seguintes etap
 1. Termine e aprove clicando em **[!UICONTROL Save]**.
 
    ![](assets/offer_cat_default_001.png)
-
