@@ -6,14 +6,14 @@ description: Glossário
 audience: interaction
 content-type: reference
 topic-tags: interaction-overview
-translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
-workflow-type: tm+mt
+exl-id: 9e199b7c-9307-4797-bf86-7940388555bc
+translation-type: ht
+source-git-commit: 6854d06f8dc445b56ddfde7777f02916a60f2b63
+workflow-type: ht
 source-wordcount: '1094'
 ht-degree: 100%
 
 ---
-
 
 # Glossário{#glossary}
 
@@ -78,4 +78,3 @@ Abaixo está a definição dos elementos principais de interação.
 * **Filtros predefinidos**: regras de filtragem predefinidas podem considerar os parâmetros de oferta (por exemplo, um código de oferta). Eles podem ser reutilizados após a criação de ofertas.
 * **Representação da oferta**: informações usadas pelo canal para exibir a oferta. A representação da oferta pode ser construída a partir da função de renderização do espaço em que a oferta é representada ou inserida diretamente na interface (por exemplo, no bloco HTML). Uma oferta pode ser representada por espaço.
 * **Processo de transição**: um processo ativado em um ambiente identificado, responsável por direcionar a chamada a um ambiente anônimo se o contato não tiver sido identificado explicitamente e/ou implicitamente.
-
