@@ -6,14 +6,14 @@ description: Criação de indicadores
 audience: reporting
 content-type: reference
 topic-tags: designing-reports-with-cubes
+exl-id: e4806bb8-de9d-47e4-8b37-d6c0565b7f5a
 translation-type: ht
-source-git-commit: 278dec636373b5ccd3b631bd29607ebe894d53c3
+source-git-commit: 6854d06f8dc445b56ddfde7777f02916a60f2b63
 workflow-type: ht
 source-wordcount: '718'
 ht-degree: 100%
 
 ---
-
 
 # Criação de indicadores{#creating-indicators}
 
@@ -136,4 +136,3 @@ Para fazer isso:
    Para fazer isso, use os ícones apropriados:
 
    ![](assets/s_advuser_cube_wz_16.png)
-
