@@ -6,14 +6,14 @@ description: Automatização via workflows
 audience: delivery
 content-type: reference
 topic-tags: content-management
-translation-type: tm+mt
-source-git-commit: 9237e11edec4114b2bd0932e6128775f36aad27c
-workflow-type: tm+mt
+exl-id: bc6ebf5d-cc21-4750-9713-2bf259e7d6bf
+translation-type: ht
+source-git-commit: 6854d06f8dc445b56ddfde7777f02916a60f2b63
+workflow-type: ht
 source-wordcount: '1185'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
-
 
 # Automatizar com workflows{#automating-via-workflows}
 
@@ -78,7 +78,7 @@ A opção **Generate an output transition** permite adicionar uma transição de
 
 ## Exemplos {#examples}
 
-### Automatize a criação e o delivery de conteúdo {#automating-content-creation-and-delivery}
+### Automatizar a criação e o delivery de conteúdo {#automating-content-creation-and-delivery}
 
 O exemplo a seguir automatiza a criação e o delivery de um bloco de conteúdo.
 
@@ -192,7 +192,7 @@ A atividade **Código JavaScript** recupera o nome completo de cada arquivo gera
 
 ![](assets/d_ncs_content_workflow9.png)
 
-### Crie o delivery e seu conteúdo {#creating-the-delivery-and-its-content}
+### Criar o delivery e seu conteúdo {#creating-the-delivery-and-its-content}
 
 Esse exemplo usa o mesmo conceito do primeiro exemplo, mas cria a ação de delivery na primeira etapa.
 
