@@ -6,14 +6,14 @@ description: Integração de uma oferta via workflow
 audience: interaction
 content-type: reference
 topic-tags: delivering-an-offer
-translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
-workflow-type: tm+mt
+exl-id: 33d318f3-1eb4-4c74-8c20-8b9f0442c7c3
+translation-type: ht
+source-git-commit: 6854d06f8dc445b56ddfde7777f02916a60f2b63
+workflow-type: ht
 source-wordcount: '1043'
 ht-degree: 100%
 
 ---
-
 
 # Integração de uma oferta via workflow{#integrating-an-offer-via-a-workflow}
 
@@ -173,4 +173,3 @@ Para fazer isso, realize o seguinte processo:
       ![](assets/int_offer_per_cell1.png)
 
 1. Em seguida, configure uma atividade de delivery que corresponda ao canal escolhido. Para obter mais informações, consulte a seção [Inserção de uma apresentação de oferta em um delivery](../../interaction/using/integrating-an-offer-via-the-wizard.md#inserting-an-offer-proposition-into-a-delivery).
-
