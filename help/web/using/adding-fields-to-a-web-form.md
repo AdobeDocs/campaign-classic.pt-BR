@@ -6,14 +6,14 @@ description: Inclusão de campos em um formulário web
 audience: web
 content-type: reference
 topic-tags: web-forms
-translation-type: tm+mt
-source-git-commit: 21219f4a85a0caec4531acda33ab8bba5c7605d6
-workflow-type: tm+mt
+exl-id: 827b6575-7206-4dfc-b2c6-b95a6d5730b1
+translation-type: ht
+source-git-commit: 6854d06f8dc445b56ddfde7777f02916a60f2b63
+workflow-type: ht
 source-wordcount: '2457'
 ht-degree: 100%
 
 ---
-
 
 # Inclusão de campos em um formulário web{#adding-fields-to-a-web-form}
 
@@ -381,6 +381,7 @@ Você pode armazenar o link para esses arquivos em uma variável local ou em um 
 >* O Adobe Campaign não controla o tamanho ou o tipo de recurso carregado: portanto, é altamente recomendável usar campos de carregamento para sites de intranet tipo seguro.
 >* Se vários servidores estiverem vinculados à instância (&quot;balanceamento de carga&quot;), você precisará verificar se as chamadas para o formulário web chegam no mesmo servidor.
 >* Essas implementações exigem a assistência da equipe de consulta do Adobe Campaign.
+
 >
 
 
@@ -396,4 +397,3 @@ Para fazer isso, coloque uma **constante** na página e especifique o valor e o 
 No exemplo a seguir, o arquivo de **origem** do perfil do recipient é preenchido automaticamente sempre que um usuário aprova essa página. A constante não é exibida na página.
 
 ![](assets/s_ncs_admin_survey_constante.png)
-
