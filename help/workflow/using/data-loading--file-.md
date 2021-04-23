@@ -6,14 +6,14 @@ description: Saiba mais sobre a atividade de workflow de carregamento de dados (
 audience: workflow
 content-type: reference
 topic-tags: action-activities
-translation-type: tm+mt
-source-git-commit: ba460d8347c987291681641a1be208027acf1d2f
-workflow-type: tm+mt
+exl-id: a380e486-a40c-4bf6-b7f4-7dcd76c34085
+translation-type: ht
+source-git-commit: 6854d06f8dc445b56ddfde7777f02916a60f2b63
+workflow-type: ht
 source-wordcount: '1052'
 ht-degree: 100%
 
 ---
-
 
 # Carregamento de dados (arquivo){#data-loading-file}
 
@@ -132,4 +132,3 @@ O exemplo a seguir permite coletar um arquivo no servidor todos os dias, carrega
 1. Então especifique os processos a serem executados para cada tipo de público. No nosso exemplo, vamos **[!UICONTROL Update the data]** no banco de dados. Para fazer isso, posicione uma atividade **[!UICONTROL Update data]** no final de cada transição de saída da atividade Split.
 
    A atividade **[!UICONTROL Update data]** está detalhada na seção [Update data](../../workflow/using/update-data.md).
-
