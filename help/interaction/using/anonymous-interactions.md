@@ -6,14 +6,14 @@ description: Interações anônimas
 audience: interaction
 content-type: reference
 topic-tags: unitary-interactions
-translation-type: tm+mt
-source-git-commit: 20dcdd91d71158bc373db68c3f61f6808b240bd2
-workflow-type: tm+mt
+exl-id: a8face46-a933-4f2c-8299-ccb66f05967d
+translation-type: ht
+source-git-commit: 6854d06f8dc445b56ddfde7777f02916a60f2b63
+workflow-type: ht
 source-wordcount: '431'
 ht-degree: 100%
 
 ---
-
 
 # Interações anônimas{#anonymous-interactions}
 
@@ -60,4 +60,3 @@ Se não houver elemento que permitam identificar um contato ou se não quiser su
 Para fazer isso, marque a opção **[!UICONTROL Fall back on an anonymous environment if no individuals were identified]** e, em seguida, especifique o ambiente dedicado para esses visitantes não identificados em **[!UICONTROL Linked anonymous space]** quando especificar um espaço de oferta.
 
 ![](assets/anonymous_to_anonymous_environment.png)
-
