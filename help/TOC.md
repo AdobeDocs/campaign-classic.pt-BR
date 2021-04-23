@@ -12,7 +12,7 @@ translation-type: tm+mt
 source-git-commit: b741b10fd1d3a94a3e6c71e95ff43cc0ee54ebc7
 workflow-type: tm+mt
 source-wordcount: '2519'
-ht-degree: 97%
+ht-degree: 99%
 
 ---
 
@@ -24,10 +24,10 @@ ht-degree: 97%
 + Notas de versão {#release-notes}
    + [Introdução às atualizações](rn/using/rn-overview.md)
    + [Versão mais recente](rn/using/latest-release.md)
-   + [!DNL Gold Standard] versão  {#gs-release}
+   + [!DNL Gold Standard] versão {#gs-release}
       + [O que é o [!DNL Gold Standard]](rn/using/gs-overview.md)
-      + [[!DNL Gold Standard] notas de versão](rn/using/gold-standard.md)
-      + [[!DNL Gold Standard] matriz de compatibilidade](rn/using/compatibility-matrix-gs.md)
+      + Notas de versão do [[!DNL Gold Standard] ](rn/using/gold-standard.md)
+      + Matriz de compatibilidade do [[!DNL Gold Standard] ](rn/using/compatibility-matrix-gs.md)
    + Versões anteriores {#previous-releases}
       + [Versão 20.3](rn/using/release--20-3.md)
       + [Versão 20.2](rn/using/release--20-2.md)
@@ -49,7 +49,7 @@ ht-degree: 97%
       + [Iniciar o Adobe Campaign](platform/using/launching-adobe-campaign.md)
       + Workspace do Adobe Campaign{#campaign-workspace}
          + [Introdução à interface do Campaign](platform/using/adobe-campaign-workspace.md)
-         + [Usar o Campaign Explorer](platform/using/adobe-campaign-explorer.md)
+         + [Usar o explorador do Campaign](platform/using/adobe-campaign-explorer.md)
          + [Procurar e personalizar listas](platform/using/adobe-campaign-ui-lists.md)
       + Perguntas frequentes {#faq}
          + [Principais perguntas](platform/using/common-questions.md)
@@ -148,9 +148,9 @@ ht-degree: 97%
       + [Anexar arquivos](delivery/using/attaching-files.md)
    + Enviar SMS {#sending-messages-on-mobiles}
       + [Introdução ao SMS](delivery/using/sms-channel.md)
-      + [Configurar canal SMS](delivery/using/sms-set-up.md)
+      + [Configurar canal de SMS](delivery/using/sms-set-up.md)
       + [Criar um SMS](delivery/using/sms-create.md)
-      + [Enviar e rastrear SMS](delivery/using/sms-send.md)
+      + [Enviar e rastrear um SMS](delivery/using/sms-send.md)
       + [Protocolo e configurações do conector SMS](delivery/using/sms-protocol.md)
       + [Solução de problemas de SMS](delivery/using/troubleshooting-sms.md)
       + [Migrar para o conector SMPP genérico estendido](delivery/using/unsupported-connector-migration.md)
@@ -227,10 +227,10 @@ ht-degree: 97%
       + [Acessar os logs de rastreamento](delivery/using/accessing-the-tracking-logs.md)
       + [Rastreamento de teste](delivery/using/testing-tracking.md)
       + [Rastreamento da solução de problemas](delivery/using/tracking-troubleshooting.md)
-   + Gerenciamento da capacidade de entrega {#deliverability-management}
-      + [O que é a capacidade de entrega](delivery/using/about-deliverability.md)
+   + Gerenciamento da capacidade de delivery {#deliverability-management}
+      + [O que é a capacidade de delivery](delivery/using/about-deliverability.md)
       + [Controle do conteúdo da mensagem](delivery/using/control-message-content.md)
-      + [Monitoramento da capacidade de entrega](delivery/using/monitoring-deliverability.md)
+      + [Monitoramento da capacidade de delivery](delivery/using/monitoring-deliverability.md)
       + [Renderização da caixa de entrada](delivery/using/inbox-rendering.md)
       + [SpamAssassin](delivery/using/spamassassin.md)
       + [Solução de problemas](delivery/using/deliverability-faq.md)
@@ -668,7 +668,7 @@ ht-degree: 97%
       + [Configurar Tomcat](installation/using/configure-tomcat.md)
       + [Definir configurações de delivery](installation/using/configure-delivery-settings.md)
       + [Configurações técnicas de email](installation/using/email-deliverability.md)
-      + [Uso de servidores MX com o Campaign](installation/using/using-mx-servers.md)
+      + [Utilização de servidores MX com o Campaign](installation/using/using-mx-servers.md)
       + [Configurar email Cco](installation/using/email-archiving.md)
       + [Configurar o SpamAssassin](installation/using/configuring-spamassassin.md)
    + Conectar-se ao Campaign{#connect-to-campaign}
