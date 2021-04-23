@@ -6,14 +6,14 @@ description: Sobre os modelos
 audience: delivery
 content-type: reference
 topic-tags: using-delivery-templates
-translation-type: tm+mt
-source-git-commit: 9237e11edec4114b2bd0932e6128775f36aad27c
-workflow-type: tm+mt
+exl-id: d943898c-06fe-451d-aa28-8a95665f4112
+translation-type: ht
+source-git-commit: 6854d06f8dc445b56ddfde7777f02916a60f2b63
+workflow-type: ht
 source-wordcount: '275'
-ht-degree: 94%
+ht-degree: 100%
 
 ---
-
 
 # Sobre os modelos{#about-templates}
 
