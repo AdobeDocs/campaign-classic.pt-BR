@@ -6,14 +6,14 @@ description: Saiba mais sobre a atividade de workflow de Lista de leitura
 audience: workflow
 content-type: reference
 topic-tags: targeting-activities
-translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
-workflow-type: tm+mt
+exl-id: 99f82e91-45cd-4dff-b8a4-3ad87f2f9639
+translation-type: ht
+source-git-commit: 6854d06f8dc445b56ddfde7777f02916a60f2b63
+workflow-type: ht
 source-wordcount: '488'
 ht-degree: 100%
 
 ---
-
 
 # Lista de leitura{#read-list}
 
@@ -70,4 +70,3 @@ Os perfis contidos na pasta **Novos Contatos** devem ser target de uma ação de
    ![](assets/s_advuser_list_read_sample_4.png)
 
 1. Em seguida, selecione o campo correspondente ao endereço de email nos dois conjuntos (Origem e Destino). As colunas serão vinculadas e os recipients cujo endereço de email estiver na lista de endereços importados serão excluídos do target.
-
