@@ -6,14 +6,14 @@ description: Princípios do conector ACS e ciclo de dados
 audience: integrations
 content-type: reference
 topic-tags: acs-connector
-translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
-workflow-type: tm+mt
+exl-id: 689b6117-5143-4f85-8582-2c74cae72ca2
+translation-type: ht
+source-git-commit: 6854d06f8dc445b56ddfde7777f02916a60f2b63
+workflow-type: ht
 source-wordcount: '1990'
 ht-degree: 100%
 
 ---
-
 
 # Princípios do conector ACS e ciclo de dados{#acs-connector-principles-and-data-cycle}
 
@@ -327,4 +327,3 @@ Com a implementação básica, a tabela de recipients inicial é replicada. Se a
 
 1. Se o gerenciamento de direitos for com base em pastas, vá para **[!UICONTROL Administration > ACS Connector > Rights management > Folder mapping]** e defina um grupo de segurança para as pastas vinculadas às tabelas personalizadas. Consulte [Conversão de direitos](#rights-conversion).
 1. Use o workflow **[!UICONTROL New replication]** (não o modelo, mas a própria instância do fluxo de trabalho) para incluir a tabela personalizada e os campos a serem replicados. Consulte [Workflows técnicos e de replicação](#technical-and-replication-workflows).
-
