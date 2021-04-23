@@ -6,14 +6,14 @@ description: Marketing viral e social
 audience: delivery
 content-type: reference
 topic-tags: subscriptions-and-referrals
-translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
-workflow-type: tm+mt
+exl-id: 10fd561f-1b07-490e-9f66-d67e44a0def5
+translation-type: ht
+source-git-commit: 6854d06f8dc445b56ddfde7777f02916a60f2b63
+workflow-type: ht
 source-wordcount: '564'
 ht-degree: 100%
 
 ---
-
 
 # Marketing viral e social{#viral-and-social-marketing}
 
@@ -101,4 +101,3 @@ O compartilhamento e o acesso a informações compartilhadas são rastreados. Es
 * em um relatório dedicado **[!UICONTROL Sharing to social networks]**:
 
    ![](assets/s_ncs_user_viral_report.png)
-
