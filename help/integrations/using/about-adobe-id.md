@@ -7,11 +7,11 @@ audience: integrations
 content-type: reference
 topic-tags: connecting-via-an-adobe-id
 exl-id: 8dad8fa9-674c-433c-af30-8c6d0aadf525
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 2c47a3e42260a0f04d2c9a665f28c532212997f8
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '191'
-ht-degree: 91%
+ht-degree: 100%
 
 ---
 
@@ -29,9 +29,9 @@ Usuários do Campaign pode se conectar ao Adobe Campaign usando sua Adobe ID. Es
 
 >[!IMPORTANT]
 >
->Se você estiver se conectando ao Campaign pelo Serviço de identidade da Adobe (IMS), será necessário atualizar para a compilação mais recente para poder se conectar ao Campaign depois de **30 de junho de 2021**. Essa atualização é obrigatória para o servidor do Campaign e o console do cliente. Dependendo da sua versão atual, você deve atualizar para uma das seguintes versões:
+>Se você estiver se conectando ao Campaign pelo Serviço de identidade da Adobe (IMS), será necessário atualizar para a compilação mais recente para poder se conectar ao Campaign depois de **30 de junho de 2021**. Essa atualização é obrigatória para o servidor do Campaign e o console do cliente. Dependendo da sua versão atual, é necessário atualizar para uma das seguintes versões:
 >
-> * [Campanha [!DNL Gold Standard] 11](../../rn/using/gold-standard.md)
+> * [Campaign [!DNL Gold Standard] 11](../../rn/using/gold-standard.md)
 > * [Campaign 20.3.3](../../rn/using/latest-release.md)
 > * [Campaign 20.2.5](../../rn/using/release--20-2.md)
 > * [Campaign 20.1.4](../../rn/using/release--20-1.md)
