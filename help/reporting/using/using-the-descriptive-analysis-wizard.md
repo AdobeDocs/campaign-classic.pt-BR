@@ -6,14 +6,14 @@ description: Uso do assistente de análise descritiva
 audience: reporting
 content-type: reference
 topic-tags: analyzing-populations
-translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
-workflow-type: tm+mt
+exl-id: 848d67c7-d1dc-4eba-bcb8-672e76d8ce87
+translation-type: ht
+source-git-commit: 6854d06f8dc445b56ddfde7777f02916a60f2b63
+workflow-type: ht
 source-wordcount: '1558'
 ht-degree: 100%
 
 ---
-
 
 # Uso do assistente de análise descritiva{#using-the-descriptive-analysis-wizard}
 
@@ -235,4 +235,3 @@ As seguintes operações são possíveis:
    ![](assets/reporting_descriptive_view_report.png)
 
    Para fazer alterações no relatório, consulte [Processamento de um relatório](../../reporting/using/processing-a-report.md).
-
