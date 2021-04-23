@@ -6,14 +6,14 @@ description: Testar o rastreamento
 audience: delivery
 content-type: reference
 topic-tags: tracking-messages
-translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
-workflow-type: tm+mt
+exl-id: 16ad36b7-c13e-4b77-86ca-41c9ef174172
+translation-type: ht
+source-git-commit: 6854d06f8dc445b56ddfde7777f02916a60f2b63
+workflow-type: ht
 source-wordcount: '250'
 ht-degree: 100%
 
 ---
-
 
 # Testar o rastreamento{#testing-tracking}
 
@@ -39,4 +39,3 @@ ht-degree: 100%
    Para verificar o rastreamento do log de email, procure os valores **Open** e **[!UICONTROL Email click]** na coluna **Type**.
 
    Se os logs abertos não forem exibidos, acesse o delivery e as **Properties** para garantir que as opções **Active tracking** e **[!UICONTROL Opens tracking]** estão habilitadas.
-
