@@ -6,14 +6,14 @@ description: Tutoriais
 audience: platform
 content-type: reference
 topic-tags: starting-with-adobe-campaign
-translation-type: tm+mt
-source-git-commit: 8bf1b5b1a6763cf933d86f2af61b2bb68e870222
-workflow-type: tm+mt
+exl-id: e612a4e7-f4ef-4db4-afab-5544b73430d3
+translation-type: ht
+source-git-commit: 6854d06f8dc445b56ddfde7777f02916a60f2b63
+workflow-type: ht
 source-wordcount: '398'
-ht-degree: 80%
+ht-degree: 100%
 
 ---
-
 
 # Tutoriais{#tutorials}
 
@@ -41,14 +41,14 @@ Saiba mais sobre o Adobe Campaign verificando os seguintes casos de uso e exempl
 
 Além da documentação do produto, você pode acessar os recursos de autoajuda do Campaign listados abaixo.
 
-### Vídeos tutoriais
+### Tutoriais em vídeo
 
-Descubra os principais recursos do Adobe Campaign em vídeo. [Saiba mais](https://docs.adobe.com/content/help/pt-BR/campaign-classic-learn/tutorials/overview.html)
+Descubra os principais recursos do Adobe Campaign em vídeo. [Saiba mais](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html?lang=pt-BR)
 
 ### Sessões de treinamento e vídeos
 
-Além desses vídeos curtos e detalhados, você pode encontrar [cursos de treinamento](https://learning.adobe.com/catalog.html) e assistir aos recursos [vídeos de apresentação](https://www.adobe.com/training/video.html) no Adobe.com.
+Além desses vídeos curtos e detalhados, você pode encontrar [cursos de treinamento](https://learning.adobe.com/catalog.html) e assistir aos [vídeos de apresentação](https://experienceleague.adobe.com/docs/home-tutorials.html?lang=pt-BR) em Adobe.com.
 
 ### Cursos da Experience League
 
-Você também pode visitar os [Cursos Recomendados](https://experienceleague.adobe.com/?lang=en#dashboard/learning) para o Adobe Campaign Classic: os cursos são coleções de lições especializadas que rapidamente ajudam a adquirir habilidades e conhecimento.
+Você também pode visitar os [Cursos recomendados](https://experienceleague.adobe.com/?lang=br#dashboard/learning) para o Adobe Campaign Classic: os cursos são coleções de lições especializadas que rapidamente ajudam a adquirir habilidades e conhecimento.
