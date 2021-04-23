@@ -6,14 +6,14 @@ description: Noções básicas sobre gestão de quarentena
 audience: delivery
 content-type: reference
 topic-tags: monitoring-deliveries
-translation-type: tm+mt
-source-git-commit: 6a856c95f21b52c66a9b7359133227394fae05a5
-workflow-type: tm+mt
+exl-id: cfd8f5c9-f368-4a31-a1e2-1d77ceae5ced
+translation-type: ht
+source-git-commit: 6854d06f8dc445b56ddfde7777f02916a60f2b63
+workflow-type: ht
 source-wordcount: '2613'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
-
 
 # Noções básicas sobre gestão de quarentena{#understanding-quarantine-management}
 
@@ -125,7 +125,7 @@ O Adobe Campaign gerencia a quarentena de acordo com o tipo de falha do delivery
 * **Erro grave**: o endereço de email correspondente é enviado imediatamente para quarentena.
 * **Erro suave**: erros suaves não enviam um endereço imediatamente para quarentena, mas incrementam um contador de erros. Para obter mais informações, consulte [Gerenciamento de erros leves](#soft-error-management).
 
-Se um usuário qualificar um email como spam ([loop de feedback](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/transition-process/infrastructure.html#feedback-loops)), a mensagem será automaticamente redirecionada para uma caixa de entrada técnica gerenciada pelo Adobe. O endereço de email do usuário é enviado automaticamente para quarentena.
+Se um usuário qualificar um email como spam ([loop de feedback](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/transition-process/infrastructure.html?lang=pt-BR#feedback-loops)), a mensagem será automaticamente redirecionada para uma caixa de entrada técnica gerenciada pela Adobe. O endereço de email do usuário é enviado automaticamente para quarentena.
 
 Na lista de endereços em quarentena, o campo **[!UICONTROL Error reason]** indica por que o endereço selecionado foi colocado em quarentena. A quarentena no Adobe Campaign diferencia maiúsculas de minúsculas. Certifique-se de importar endereços de email em letras minúsculas, para que não sejam redirecionados posteriormente.
 
