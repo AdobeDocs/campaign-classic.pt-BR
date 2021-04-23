@@ -6,14 +6,14 @@ description: Relatórios sobre deliveries
 audience: reporting
 content-type: reference
 topic-tags: accessing-built-in-reports
-translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
-workflow-type: tm+mt
+exl-id: 69b810f3-aa8b-4ab5-95c1-831257d7fcb9
+translation-type: ht
+source-git-commit: 6854d06f8dc445b56ddfde7777f02916a60f2b63
+workflow-type: ht
 source-wordcount: '701'
 ht-degree: 100%
 
 ---
-
 
 # Pessoa/pessoas e recipients {#person-people-and-recipients}
 
@@ -120,9 +120,9 @@ Os seguintes logs correspondem à abertura e aos dois cliques realizados pela pe
 |---|---|---|---|
 | John | - | - | - |
 | Marie | - | - | +1 |
-| Florim | +1 | +1 | +1 |
+| Florian | +1 | +1 | +1 |
 | Pessoa desconhecida | - | +1 | - |
-| Total intermediário | 3 | 2 | 2 |
+| Total intermediário | 1 | 2 | 2 |
 
 ## Etapa 4 - Henry {#step-4--henry}
 
@@ -144,7 +144,7 @@ As aberturas e os 4 cliques realizados pelo Henry aparecem nos seguintes logs:
 |---|---|---|---|
 | John | - | - | - |
 | Marie | - | - | +1 |
-| Florim | +1 | +1 | +1 |
+| Florian | +1 | +1 | +1 |
 | Pessoa desconhecida | - | +1 | - |
 | Henry | +1 | +4 | +1 |
 | Total intermediário | 2 | 6 | 3 |
@@ -173,3 +173,4 @@ A reatividade bruta e a estimativa de encaminhamento são calculadas como descri
 >* A representa o indicador **[!UICONTROL Clicks]** (destinatários que clicaram).
 >* B representa o indicador **[!UICONTROL Distinct clicks for the population reached]** (pessoas que clicaram).
 >* C representa o indicador **[!UICONTROL Distinct opens for the population reached]** (destinatários que abriram).
+
