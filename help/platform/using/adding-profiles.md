@@ -3,17 +3,17 @@ solution: Campaign Classic
 product: campaign
 title: Adição de perfis
 description: Adição de perfis
-feature: Profiles
+feature: Perfis
 role: Business Practitioner
 level: Beginner
-translation-type: tm+mt
-source-git-commit: f2bd093d3a010e079b7f5adf3371e21d07a4f3ae
-workflow-type: tm+mt
-source-wordcount: '78'
-ht-degree: 97%
+exl-id: befa8948-ef2e-4f4d-a002-3f26d8516a0d
+translation-type: ht
+source-git-commit: 6854d06f8dc445b56ddfde7777f02916a60f2b63
+workflow-type: ht
+source-wordcount: '75'
+ht-degree: 100%
 
 ---
-
 
 # Adicionar perfis{#adding-profiles}
 
