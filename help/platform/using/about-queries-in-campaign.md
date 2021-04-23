@@ -3,17 +3,17 @@ solution: Campaign Classic
 product: campaign
 title: Sobre query no Campaign
 description: Sobre query no Campaign
-feature: Query Editor
+feature: Editor de consultas
 role: Business Practitioner, Data Architect
 level: Beginner
-translation-type: tm+mt
-source-git-commit: f2bd093d3a010e079b7f5adf3371e21d07a4f3ae
-workflow-type: tm+mt
-source-wordcount: '184'
-ht-degree: 94%
+exl-id: 2db1034d-cad6-4fb0-8646-dd9099080ab0
+translation-type: ht
+source-git-commit: 6854d06f8dc445b56ddfde7777f02916a60f2b63
+workflow-type: ht
+source-wordcount: '179'
+ht-degree: 100%
 
 ---
-
 
 # Introdução a consultas{#about-queries-in-campaign}
 
