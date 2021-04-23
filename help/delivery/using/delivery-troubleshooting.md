@@ -6,14 +6,14 @@ description: Saiba mais sobre o desempenho do delivery e como solucionar problem
 audience: delivery
 content-type: reference
 topic-tags: monitoring-deliveries
-translation-type: tm+mt
-source-git-commit: d1b38acc5209a5c96ab7a35fe9640159141b110f
-workflow-type: tm+mt
+exl-id: 37b1d7fb-7ceb-4647-9aac-c8a80495c5bf
+translation-type: ht
+source-git-commit: 6854d06f8dc445b56ddfde7777f02916a60f2b63
+workflow-type: ht
 source-wordcount: '789'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
-
 
 # Solução de problemas de envio de delivery {#delivery-troubleshooting}
 
