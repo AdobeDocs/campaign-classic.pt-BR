@@ -6,14 +6,14 @@ description: Sobre as atividades de controle de fluxo
 audience: workflow
 content-type: reference
 topic-tags: flow-control-activities
-translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
-workflow-type: tm+mt
+exl-id: 3810cbd0-159c-4161-b568-1f61dcea0300
+translation-type: ht
+source-git-commit: 6854d06f8dc445b56ddfde7777f02916a60f2b63
+workflow-type: ht
 source-wordcount: '233'
 ht-degree: 100%
 
 ---
-
 
 # Sobre as atividades de controle de fluxo{#about-flow-control-activities}
 
@@ -32,4 +32,3 @@ As seguintes atividades são atividades de banco de dados: a sua principal taref
 * **Approval**: permite enviar um e-mail para um operador ou grupo de operadores e esperar a aprovação para continuar a execução. Consulte a seção [Aprovação](../../workflow/using/approval.md).
 * **Alert**: permite enviar um aviso a um operador ou grupo de operadores. Consulte a seção [Alerta](../../workflow/using/alert.md).
 * **Task**: permite configurar a execução de tarefas. Consulte a seção [Tarefa](../../workflow/using/task.md).
-
