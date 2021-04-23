@@ -6,14 +6,14 @@ description: Respostas dos formulários web
 audience: web
 content-type: reference
 topic-tags: web-forms
-translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
-workflow-type: tm+mt
+exl-id: 5d48bb27-1884-47f1-acb7-dff5113565bc
+translation-type: ht
+source-git-commit: 6854d06f8dc445b56ddfde7777f02916a60f2b63
+workflow-type: ht
 source-wordcount: '860'
 ht-degree: 100%
 
 ---
-
 
 # Respostas dos formulários web{#web-forms-answers}
 
@@ -142,4 +142,3 @@ Você pode selecionar uma pasta de pesquisa para a reconciliação e a pasta de 
 >As possíveis operações são: **[!UICONTROL Simple reconciliation]**, **[!UICONTROL Update or insertion]**, **[!UICONTROL Insertion]**, **[!UICONTROL Update]**, **[!UICONTROL Deletion]**.\
 >A pasta padrão de um operador é a primeira pasta a que o operador tem permissão de gravação.\
 >Consulte [esta seção](../../platform/using/access-management.md).
-
