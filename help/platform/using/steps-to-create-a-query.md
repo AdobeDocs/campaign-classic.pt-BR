@@ -6,14 +6,14 @@ description: Etapas para criar um query
 audience: platform
 content-type: reference
 topic-tags: creating-queries
-translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
-workflow-type: tm+mt
+exl-id: cf914366-8bac-4d68-a0cc-2a43d102eef2
+translation-type: ht
+source-git-commit: 6854d06f8dc445b56ddfde7777f02916a60f2b63
+workflow-type: ht
 source-wordcount: '841'
 ht-degree: 100%
 
 ---
-
 
 # Etapas para criar um query{#steps-to-create-a-query}
 
@@ -138,4 +138,3 @@ Neste exemplo, dados são classificados em ordem crescente com base na idade do 
 >[!NOTE]
 >
 >Por padrão, apenas as primeiras 200 linhas são exibidas na janela **[!UICONTROL Data preview]**. Para alterar isso, digite um número na caixa **[!UICONTROL Lines to display]** e clique em **[!UICONTROL Start the preview of the data]**.
-
