@@ -6,14 +6,14 @@ description: '"Caso de uso: criação de um formulário Indique um Amigo"'
 audience: web
 content-type: reference
 topic-tags: online-surveys
+exl-id: bd94c41a-813a-4ddb-a2bd-c3deab022482
 translation-type: ht
-source-git-commit: 11ff62238a8fb73658f2263c25dbeb27d2e0fb23
+source-git-commit: 6854d06f8dc445b56ddfde7777f02916a60f2b63
 workflow-type: ht
 source-wordcount: '619'
 ht-degree: 100%
 
 ---
-
 
 # Caso de uso: criar um formulário de referência{#use-case-creating-a-refer-a-friend-form}
 
@@ -126,4 +126,3 @@ Para configurar e criar o bloco de referência, siga as etapas abaixo:
    ![](assets/s_ncs_admin_survey_viral_sample_9.png)
 
    Seu perfil contém as informações inseridas por quem indicou. Ele é armazenado com base nas configurações inseridas no script de formulário. Se decidirem subscrever o boletim informativo, eles serão salvos na tabela de recipients.
-
