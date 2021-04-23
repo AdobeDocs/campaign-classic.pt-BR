@@ -6,24 +6,24 @@ description: Atualização dos dados
 audience: platform
 content-type: reference
 topic-tags: profile-management
-translation-type: tm+mt
-source-git-commit: b05b8daad449aeb1f5226fdd76744776c6553b63
-workflow-type: tm+mt
+exl-id: f7dfbc22-4ac3-4b61-927f-34ecc4e35154
+translation-type: ht
+source-git-commit: 6854d06f8dc445b56ddfde7777f02916a60f2b63
+workflow-type: ht
 source-wordcount: '705'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
+# Atualizar dados{#updating-data}
 
-# Atualização de dados{#updating-data}
-
-Os dados vinculados ao perfil de um destinatário podem ser atualizados manualmente ou automaticamente.
+Os dados vinculados ao perfil de um recipient podem ser atualizados manual ou automaticamente.
 
 ## Configurar uma atualização automática {#setting-up-an-automatic-update}
 
 Uma atualização automática pode ser configurada por meio de um fluxo de trabalho. Para obter mais informações, consulte [esta seção](../../workflow/using/update-data.md).
 
-## Execute uma atualização em massa {#performing-a-mass-update}
+## Executar uma atualização em massa {#performing-a-mass-update}
 
 Para executar atualizações manuais, clique com o botão direito do mouse nos recipients selecionados para usar o menu de atalho **[!UICONTROL Actions]** ou use o ícone **[!UICONTROL Actions]**.
 
@@ -127,4 +127,3 @@ Para verificar o processo, acesse a guia **[!UICONTROL Subscriptions]** nos perf
 >[!NOTE]
 >
 >Para obter mais informações sobre como criar e configurar serviços de informações, consulte [esta página](../../delivery/using/managing-subscriptions.md).
-
