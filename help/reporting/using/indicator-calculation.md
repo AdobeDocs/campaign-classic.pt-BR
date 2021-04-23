@@ -6,14 +6,14 @@ description: Cálculo do indicador
 audience: reporting
 content-type: reference
 topic-tags: accessing-built-in-reports
-translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
-workflow-type: tm+mt
+exl-id: 52ca1595-16b3-4323-9122-d1ac13c08147
+translation-type: ht
+source-git-commit: 6854d06f8dc445b56ddfde7777f02916a60f2b63
+workflow-type: ht
 source-wordcount: '2972'
 ht-degree: 100%
 
 ---
-
 
 # Cálculo do indicador {#indicator-calculation}
 
@@ -61,7 +61,7 @@ Este relatório é baseado na tabela **[!UICONTROL Delivery and tracking statist
 <table> 
  <thead> 
   <tr> 
-   <th> <strong>Rótulo</strong> <br /> </th> 
+   <th> <strong>Label</strong> <br /> </th> 
    <th> <strong>Nome do campo</strong> <br /> </th> 
    <th> <strong>Descrição do indicador</strong> <br /> </th> 
    <th> <strong>Fórmula do cálculo de indicador</strong> <br /> </th> 
@@ -144,7 +144,7 @@ Este relatório é baseado na tabela **[!UICONTROL Internet Browser Statistics]*
 <table> 
  <thead> 
   <tr> 
-   <th> <strong>Rótulo</strong> <br /> </th> 
+   <th> <strong>Label</strong> <br /> </th> 
    <th> <strong>Nome do campo</strong> <br /> </th> 
    <th> <strong>Descrição do indicador</strong> <br /> </th> 
    <th> <strong>Fórmula do cálculo de indicador</strong> <br /> </th> 
@@ -177,7 +177,7 @@ Este relatório é baseado na tabela **[!UICONTROL Internet Browser Statistics]*
 <table> 
  <thead> 
   <tr> 
-   <th> <strong>Rótulo</strong> <br /> </th> 
+   <th> <strong>Label</strong> <br /> </th> 
    <th> <strong>Nome do campo</strong> <br /> </th> 
    <th> <strong>Descrição do indicador</strong> <br /> </th> 
    <th> <strong>Fórmula do cálculo de indicador</strong> <br /> </th> 
@@ -212,7 +212,7 @@ Este relatório é baseado nas tabelas **[!UICONTROL Delivery]** (nms:delivery),
 <table> 
  <thead> 
   <tr> 
-   <th> <strong>Rótulo</strong> <br /> </th> 
+   <th> <strong>Label</strong> <br /> </th> 
    <th> <strong>Nome do campo</strong> <br /> </th> 
    <th> <strong>Descrição do indicador</strong> <br /> </th> 
    <th> <strong>Fórmula do cálculo de indicador</strong> <br /> </th> 
@@ -281,7 +281,7 @@ Este relatório é baseado nas tabelas **[!UICONTROL Delivery]** (nms:delivery),
 <table> 
  <thead> 
   <tr> 
-   <th> <strong>Rótulo</strong> <br /> </th> 
+   <th> <strong>Label</strong> <br /> </th> 
    <th> <strong>Nome do campo</strong> <br /> </th> 
    <th> <strong>Descrição do indicador</strong> <br /> </th> 
    <th> <strong>Fórmula do cálculo de indicador</strong> <br /> </th> 
@@ -314,7 +314,7 @@ Este relatório é baseado nas tabelas **[!UICONTROL Delivery]** (nms:delivery),
 <table> 
  <thead> 
   <tr> 
-   <th> <strong>Rótulo</strong> <br /> </th> 
+   <th> <strong>Label</strong> <br /> </th> 
    <th> <strong>Nome do campo</strong> <br /> </th> 
    <th> <strong>Descrição do indicador</strong> <br /> </th> 
    <th> <strong>Fórmula do cálculo de indicador</strong> <br /> </th> 
@@ -349,7 +349,7 @@ Este relatório é baseado nas tabelas **[!UICONTROL Delivery]** (nms:delivery),
 <table> 
  <thead> 
   <tr> 
-   <th> <strong>Rótulo</strong> <br /> </th> 
+   <th> <strong>Label</strong> <br /> </th> 
    <th> <strong>Nome do campo</strong> <br /> </th> 
    <th> <strong>Descrição do indicador</strong> <br /> </th> 
    <th> <strong>Fórmula do cálculo de indicador</strong> <br /> </th> 
@@ -386,7 +386,7 @@ Este relatório é baseado na tabela **[!UICONTROL Internet Browser Statistics]*
 <table> 
  <thead> 
   <tr> 
-   <th> <strong>Rótulo</strong> <br /> </th> 
+   <th> <strong>Label</strong> <br /> </th> 
    <th> <strong>Nome do campo</strong> <br /> </th> 
    <th> <strong>Descrição do indicador</strong> <br /> </th> 
    <th> <strong>Fórmula do cálculo de indicador</strong> <br /> </th> 
@@ -397,7 +397,7 @@ Este relatório é baseado na tabela **[!UICONTROL Internet Browser Statistics]*
    <td> Visitantes<br /> </td> 
    <td> @totalVisitors / @days<br /> </td> 
    <td> Média diária do número total de recipients alvos por sistema operacional que clicaram em um delivery pelo menos uma vez.<br /> </td> 
-   <td> Sum(@visitantes)<br /> </td> 
+   <td> Sum(@visitors)<br /> </td> 
   </tr> 
   <tr> 
    <td> Páginas exibidas<br /> </td> 
@@ -419,7 +419,7 @@ Este relatório é baseado na tabela **[!UICONTROL Internet Browser Statistics]*
 <table> 
  <thead> 
   <tr> 
-   <th> <strong>Rótulo</strong> <br /> </th> 
+   <th> <strong>Label</strong> <br /> </th> 
    <th> <strong>Nome do campo</strong> <br /> </th> 
    <th> <strong>Descrição do indicador</strong> <br /> </th> 
    <th> <strong>Fórmula do cálculo de indicador</strong> <br /> </th> 
@@ -428,7 +428,7 @@ Este relatório é baseado na tabela **[!UICONTROL Internet Browser Statistics]*
  <tbody> 
   <tr> 
    <td> Taxa de uso<br /> </td> 
-   <td> @visitantes<br /> </td> 
+   <td> @visitors<br /> </td> 
    <td> Porcentagem do número de visitantes por dia nesse sistema operacional em comparação ao número de visitantes medidos no dia com mais visitas.<br /> </td> 
    <td> percent(sum(@visitors), max(@visitorsOfTheDay))<br /> </td> 
   </tr> 
@@ -454,7 +454,7 @@ Este relatório é baseado na tabela **[!UICONTROL Services]** (nms:service).
 <table> 
  <thead> 
   <tr> 
-   <th> <strong>Rótulo</strong> <br /> </th> 
+   <th> <strong>Label</strong> <br /> </th> 
    <th> <strong>Nome do campo</strong> <br /> </th> 
    <th> <strong>Descrição do indicador</strong> <br /> </th> 
    <th> <strong>Fórmula do cálculo de indicador</strong> <br /> </th> 
@@ -501,7 +501,7 @@ Este relatório é baseado nas tabelas **[!UICONTROL Delivery and tracking stati
 <table> 
  <thead> 
   <tr> 
-   <th> <strong>Rótulo</strong> <br /> </th> 
+   <th> <strong>Label</strong> <br /> </th> 
    <th> <strong>Nome do campo</strong> <br /> </th> 
    <th> <strong>Descrição do indicador</strong> <br /> </th> 
    <th> <strong>Fórmula do cálculo de indicador</strong> <br /> </th> 
@@ -594,9 +594,9 @@ Este relatório é baseado nas tabelas **[!UICONTROL Delivery and tracking stati
   </tr> 
   <tr> 
    <td> Cliques do recipient<br /> </td> 
-   <td> @customerClick<br /> </td> 
+   <td> @recipientClick<br /> </td> 
    <td> Contagem distinta de @broadLog-ids com um tipo de URL que é igual a "clique de mail".<br /> </td> 
-   <td> Countdifferent(Iif([url/@type]=1, @wideLog-id, 0))<br /> </td> 
+   <td> Countdistinct(Iif([url/@type]=1, @broadLog-id, 0))<br /> </td> 
   </tr> 
   <tr> 
    <td> Reatividade estimada<br /> </td> 
@@ -650,43 +650,43 @@ Este relatório é baseado nas tabelas **[!UICONTROL Delivery and tracking stati
    <td> Email<br /> </td> 
    <td> @email<br /> </td> 
    <td> Soma de todos os @totalClicks com uma categoria de URL que é igual a "email".<br /> </td> 
-   <td> Sum(iIf([url/@categoria]='email',@totalClicks,0))<br /> </td> 
+   <td> Sum(iIf([url/@category]='email',@totalClicks,0))<br /> </td> 
   </tr> 
   <tr> 
    <td> Facebook<br /> </td> 
    <td> @facebook<br /> </td> 
    <td> Soma de todos os @totalClicks com uma categoria de URL que é igual a "facebook".<br /> </td> 
-   <td> Sum(iIf([url/@categoria]='facebook',@totalClicks,0))<br /> </td> 
+   <td> Sum(iIf([url/@category]='facebook',@totalClicks,0))<br /> </td> 
   </tr> 
   <tr> 
    <td> Twitter<br /> </td> 
    <td> @twitter<br /> </td> 
    <td> Soma de todos os @totalClicks com uma categoria de URL que é igual a "twitter".<br /> </td> 
-   <td> Sum(iIf([url/@categoria]='twitter',@totalClicks,0))<br /> </td> 
+   <td> Sum(iIf([url/@category]='twitter',@totalClicks,0))<br /> </td> 
   </tr> 
   <tr> 
-   <td> Delicioso<br /> </td> 
-   <td> @delicioso<br /> </td> 
+   <td> Delicious<br /> </td> 
+   <td> @delicious<br /> </td> 
    <td> Soma de todos os @totalClicks com uma categoria de URL que é igual a "delicious".<br /> </td> 
-   <td> Sum(iIf([url/@categoria]='delicioso',@totalClicks,0))<br /> </td> 
+   <td> Sum(iIf([url/@category]='delicious',@totalClicks,0))<br /> </td> 
   </tr> 
   <tr> 
    <td> Digg<br /> </td> 
    <td> @digg<br /> </td> 
    <td> Soma de todos os @totalClicks com uma categoria de URL que é igual a "digg".<br /> </td> 
-   <td> Sum(iIf([url/@categoria]='digg',@totalClicks,0))<br /> </td> 
+   <td> Sum(iIf([url/@category]='digg',@totalClicks,0))<br /> </td> 
   </tr> 
   <tr> 
    <td> Google<br /> </td> 
    <td> @google<br /> </td> 
    <td> Soma de todos os @totalClicks com uma categoria de URL que é igual a "google".<br /> </td> 
-   <td> Sum(iIf([url/@categoria]='google',@totalClicks,0))<br /> </td> 
+   <td> Sum(iIf([url/@category]='google',@totalClicks,0))<br /> </td> 
   </tr> 
   <tr> 
    <td> Linkedin<br /> </td> 
    <td> @linkedin<br /> </td> 
    <td> Soma de todos os @totalClicks com uma categoria de URL que é igual a "linkedin".<br /> </td> 
-   <td> Sum(iIf([url/@categoria]='linkedin',@totalClicks,0))<br /> </td> 
+   <td> Sum(iIf([url/@category]='linkedin',@totalClicks,0))<br /> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -698,7 +698,7 @@ Este relatório é baseado na tabela **[!UICONTROL Delivery]** (nms:delivery).
 <table> 
  <thead> 
   <tr> 
-   <th> <strong>Rótulo</strong> <br /> </th> 
+   <th> <strong>Label</strong> <br /> </th> 
    <th> <strong>Nome do campo</strong> <br /> </th> 
    <th> <strong>Descrição do indicador</strong> <br /> </th> 
    <th> <strong>Fórmula do cálculo de indicador</strong> <br /> </th> 
@@ -745,7 +745,7 @@ Este relatório é baseado na tabela **[!UICONTROL Delivery]** (nms:delivery).
 <table> 
  <thead> 
   <tr> 
-   <th> <strong>Rótulo</strong> <br /> </th> 
+   <th> <strong>Label</strong> <br /> </th> 
    <th> <strong>Nome do campo</strong> <br /> </th> 
    <th> <strong>Descrição do indicador</strong> <br /> </th> 
    <th> <strong>Fórmula do cálculo de indicador</strong> <br /> </th> 
@@ -804,7 +804,7 @@ Este relatório é baseado na tabela **[!UICONTROL Delivery]** (nms:delivery).
 <table> 
  <thead> 
   <tr> 
-   <th> <strong>Rótulo</strong> <br /> </th> 
+   <th> <strong>Label</strong> <br /> </th> 
    <th> <strong>Nome do campo</strong> <br /> </th> 
    <th> <strong>Descrição do indicador</strong> <br /> </th> 
    <th> <strong>Fórmula do cálculo de indicador</strong> <br /> </th> 
@@ -813,7 +813,7 @@ Este relatório é baseado na tabela **[!UICONTROL Delivery]** (nms:delivery).
  <tbody> 
   <tr> 
    <td> Transações<br /> </td> 
-   <td> @transações<br /> </td> 
+   <td> @transactions<br /> </td> 
    <td> Soma de todos os @totalClicks com um tipo de URL que é igual a "Transação".<br /> </td> 
    <td> sum(Iif([url/@type] = 5, @totalClicks, 0))<br /> </td> 
   </tr> 
@@ -825,7 +825,7 @@ Este relatório é baseado na tabela **[!UICONTROL Delivery]** (nms:delivery).
   </tr> 
   <tr> 
    <td> Abertura<br /> </td> 
-   <td> @abre<br /> </td> 
+   <td> @opens<br /> </td> 
    <td> Soma de todos os @totalClicks com uma chave primária de URL que é igual a 1.<br /> </td> 
    <td> sum(Iif([@url-id] = 1, @totalClicks, 0))<br /> </td> 
   </tr> 
@@ -839,7 +839,7 @@ Este relatório é baseado na tabela **[!UICONTROL Delivery and tracking statist
 <table> 
  <thead> 
   <tr> 
-   <th> <strong>Rótulo</strong> <br /> </th> 
+   <th> <strong>Label</strong> <br /> </th> 
    <th> <strong>Nome do campo</strong> <br /> </th> 
    <th> <strong>Descrição do indicador</strong> <br /> </th> 
    <th> <strong>Fórmula do cálculo de indicador</strong> <br /> </th> 
@@ -850,7 +850,7 @@ Este relatório é baseado na tabela **[!UICONTROL Delivery and tracking statist
    <td> Emails processados<br /> </td> 
    <td> @processed<br /> </td> 
    <td> Número total de mensagens com status "Pronta", "Enviada" ou "Falha".<br /> </td> 
-   <td> @ready + @error + @success<br /> </td> 
+   <td> @prepared + @error + @success<br /> </td> 
   </tr> 
   <tr> 
    <td> Entregue<br /> </td> 
@@ -872,13 +872,13 @@ Este relatório é baseado na tabela **[!UICONTROL Delivery and tracking statist
   </tr> 
   <tr> 
    <td> Aberturas<br /> </td> 
-   <td> @customerOpen<br /> </td> 
+   <td> @recipientOpen<br /> </td> 
    <td> Número total de @broadLog-ids nos logs de rastreamento.<br /> </td> 
-   <td> Contínuo ([@wideLog-id])<br /> </td> 
+   <td> Countdistinct ([@broadLog-id])<br /> </td> 
   </tr> 
   <tr> 
    <td> Cliques<br /> </td> 
-   <td> @peopleClick<br /> </td> 
+   <td> @personClick<br /> </td> 
    <td> Número total de @source-ids para os quais a categoria de URL é igual a "Clique de email". <br /> </td> 
    <td> Countdistinct(Iif([url/@type]=1, @source-id, 0)) <br /> </td> 
   </tr> 
@@ -898,7 +898,7 @@ Este relatório baseia-se nas tabelas de **Deliveries** (nms:delivery) e **Logs 
 <table> 
  <thead> 
   <tr> 
-   <th> <strong>Rótulo</strong> <br /> </th> 
+   <th> <strong>Label</strong> <br /> </th> 
    <th> <strong>Nome do campo</strong> <br /> </th> 
    <th> <strong>Descrição do indicador</strong> <br /> </th> 
    <th> <strong>Fórmula do cálculo de indicador</strong> <br /> </th> 
