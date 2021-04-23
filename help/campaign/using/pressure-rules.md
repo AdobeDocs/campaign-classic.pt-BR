@@ -6,14 +6,14 @@ description: Regras de pressão
 audience: campaign
 content-type: reference
 topic-tags: campaign-optimization
+exl-id: c23212f2-fdf8-4820-b389-546f7c84db27
 translation-type: ht
-source-git-commit: c625b4109e2cb47446331cd009ff9827c8267c93
+source-git-commit: 6854d06f8dc445b56ddfde7777f02916a60f2b63
 workflow-type: ht
 source-wordcount: '3253'
 ht-degree: 100%
 
 ---
-
 
 # Regras de pressão{#pressure-rules}
 
@@ -156,12 +156,14 @@ Por exemplo, uma regra de pressão que define um limite de 2 mensagens por seman
 >
 >* Insira **15d** no campo **[!UICONTROL Concerned period]**: no cálculo são considerados os deliveries realizados em até duas semanas antes da data do delivery no qual a regra é aplicada,
 >
->  ou
+>  
+ou
 >
 >* Digite **7d** no campo **[!UICONTROL Period considered]** E verifique a **[!UICONTROL Take the deliveries into account in the provisional calendar]**\
->: são considerados no cálculo os deliveries realizados até 7 dias antes da data de delivery e os programados até 7 dias após a data de delivery.
+   >: são considerados no cálculo os deliveries realizados até 7 dias antes da data de delivery e os programados até 7 dias após a data de delivery.
 >
->A data de início do período depende de como o banco de dados está configurado.
+>
+A data de início do período depende de como o banco de dados está configurado.
 
 Por exemplo, ao aplicar uma regra de pressão de 15 dias sem agrupar a um delivery com data 11/12, serão considerados os deliveries entre 27/11 e 12/12. Se a regra de pressão considerar os envios do calendário provisional, todas as programações entre 27/11 e 27/12 são consideradas. Por fim, ao configurar na regra um agrupamento por mês, todos os envios em novembro e dezembro são considerados para calcular o limite (de 01/11 a 31/12).
 
