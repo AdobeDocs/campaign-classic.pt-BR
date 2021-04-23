@@ -6,16 +6,16 @@ description: Acessando os logs de rastreamento
 audience: delivery
 content-type: reference
 topic-tags: tracking-messages
-translation-type: tm+mt
-source-git-commit: 9237e11edec4114b2bd0932e6128775f36aad27c
-workflow-type: tm+mt
+exl-id: df494786-5950-4646-aa9c-4dde45845057
+translation-type: ht
+source-git-commit: 6854d06f8dc445b56ddfde7777f02916a60f2b63
+workflow-type: ht
 source-wordcount: '89'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
-
-# Acesse os logs de rastreamento{#accessing-the-tracking-logs}
+# Acessar os logs de rastreamento{#accessing-the-tracking-logs}
 
 Quando o delivery é enviado e o rastreamento é ativado, o workflow técnico **[!UICONTROL Tracking]** é encarregado de obter os dados de rastreamento. Por padrão, isso é executado por hora.
 
