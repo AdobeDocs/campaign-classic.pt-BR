@@ -6,14 +6,14 @@ description: Ofertas em um canal de saída
 audience: interaction
 content-type: reference
 topic-tags: case-study
+exl-id: 77fee343-09d1-4d60-be43-efe02953a70c
 translation-type: ht
-source-git-commit: 278dec636373b5ccd3b631bd29607ebe894d53c3
+source-git-commit: 6854d06f8dc445b56ddfde7777f02916a60f2b63
 workflow-type: ht
 source-wordcount: '445'
 ht-degree: 100%
 
 ---
-
 
 # Ofertas em um canal de saída{#offers-on-an-outbound-channel}
 
@@ -126,4 +126,3 @@ Em nosso banco de dados, há uma categoria de ofertas de viagem para a África. 
 1. Para salvar os dados da simulação, use o histórico ou as funções de exportação disponíveis no relatório.
 
    ![](assets/offer_simulation_example_013.png)
-
