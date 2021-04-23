@@ -6,14 +6,14 @@ description: Introdução aos formulários web no Campaign
 audience: web
 content-type: reference
 topic-tags: web-forms
-translation-type: tm+mt
-source-git-commit: e76eb171aac1f7088ff8647f99c928ec349b24fc
-workflow-type: tm+mt
+exl-id: 63602bed-ace6-4632-a735-5d268a7d72d0
+translation-type: ht
+source-git-commit: 6854d06f8dc445b56ddfde7777f02916a60f2b63
+workflow-type: ht
 source-wordcount: '497'
 ht-degree: 100%
 
 ---
-
 
 # Introdução aos formulários web{#about-web-forms}
 
@@ -80,6 +80,7 @@ As seções a seguir detalham como definir o conteúdo e o layout nas telas do f
 >
 >* Durante o design da página, é possível exibir a renderização final na guia **[!UICONTROL Preview]**. Para visualizar as alterações, salve o formulário primeiro. Todos os erros são exibidos na guia **[!UICONTROL Log]**.
 >* Para garantir que a exibição da página e o armazenamento de informações ocorram na sequência apropriada, habilite o modo de depuração no formulário Web. Para fazer isso, vá para a subguia **[!UICONTROL Preview]** e marque a caixa **[!UICONTROL Enable debug mode]**: todas as informações coletadas e possíveis erros de execução são exibidos na parte inferior de cada página.
+
 >
 
 
@@ -97,4 +98,3 @@ Nesse caso, primeiro selecione o tipo de campo que deve ser adicionado e o modo 
 Clique em **[!UICONTROL Ok]** para aprovar a seleção.
 
 ![](assets/s_ncs_admin_webform_confirm_storage.png)
-
