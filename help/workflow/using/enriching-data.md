@@ -6,14 +6,14 @@ description: Saiba mais sobre a atividade do workflow de enriquecimento
 audience: workflow
 content-type: reference
 topic-tags: use-cases
-translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
-workflow-type: tm+mt
+exl-id: ab786cf1-74a4-4185-a63d-84e776a2f776
+translation-type: ht
+source-git-commit: 6854d06f8dc445b56ddfde7777f02916a60f2b63
+workflow-type: ht
 source-wordcount: '747'
 ht-degree: 100%
 
 ---
-
 
 # Enriquecimento de dados{#enriching-data}
 
@@ -125,4 +125,3 @@ Para classificar os recipients com base em suas pontuações, uma atividade **[!
 1. Adicione uma atividade do tipo **[!UICONTROL Delivery]** para cada subconjunto, usando um template de delivery diferente para cada um.
 
    ![](assets/uc1_enrich_20.png)
-
