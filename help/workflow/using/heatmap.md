@@ -1,15 +1,15 @@
 ---
 solution: Campaign Classic
 product: campaign
-title: Workflow HeatMap
+title: HeatMap do fluxo de trabalho
 description: Monitore seus workflows do Campaign com o Workflow HeatMap
 audience: workflow
 content-type: reference
 topic-tags: use-cases
 exl-id: f1016ddf-0c87-4611-a878-d01f3684935f
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 5b1c4426a0d59861aa61a7e53154b9adfda31d71
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1128'
 ht-degree: 100%
 
