@@ -6,14 +6,14 @@ description: Configurações de execução
 audience: interaction
 content-type: reference
 topic-tags: simulating-offers
-translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
-workflow-type: tm+mt
+exl-id: e2dea4a0-9ed8-47b6-a16b-eeee653d2290
+translation-type: ht
+source-git-commit: 6854d06f8dc445b56ddfde7777f02916a60f2b63
+workflow-type: ht
 source-wordcount: '138'
 ht-degree: 100%
 
 ---
-
 
 # Configurações de execução{#execution-settings}
 
@@ -26,4 +26,3 @@ Essas configurações podem ser alteradas posteriormente na guia **[!UICONTROL G
 * **[!UICONTROL Schedule execution for a time of low activity]**: permite agendar a simulação com base na prioridade escolhida (baixa, média ou alta) para otimizar os desempenhos do Adobe Campaign.
 * **[!UICONTROL Priority]**: este é o nível aplicado à simulação para o agendá-la. Quando a opção **[!UICONTROL Schedule execution for a time of low activity]** é marcada, o fluxo de trabalho de processamento de campanha seleciona um momento de baixa atividade para iniciar a campanha.
 * **[!UICONTROL Log SQL queries in the journal]**: essa funcionalidade destina-se somente a usuários especializados. Ela permite adicionar uma guia ao log exibindo queries SQL para detectar possíveis defeitos se a simulação terminar com erros.
-
