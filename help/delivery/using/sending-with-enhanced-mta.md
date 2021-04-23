@@ -6,14 +6,14 @@ description: Saiba mais sobre o escopo e as especificidades do envio de emails c
 audience: delivery
 content-type: reference
 topic-tags: sending-emails
-translation-type: tm+mt
-source-git-commit: 6eb29742d5884096f2d06b763823aede48f5dcb3
-workflow-type: tm+mt
+exl-id: 58cc23f4-9ab0-45c7-9aa2-b08487ec7e91
+translation-type: ht
+source-git-commit: 6854d06f8dc445b56ddfde7777f02916a60f2b63
+workflow-type: ht
 source-wordcount: '1921'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
-
 
 # Envio com o MTA aprimorado {#sending-with-enhanced-mta}
 
@@ -98,7 +98,7 @@ Para os clientes que usam a funcionalidade de mensagens transacionais do Adobe C
 
 ### Cabeçalhos do MTA aprimorado
 
-As instâncias mais recentes do Campaign Classic incluem código que adiciona os cabeçalhos do MTA aprimorado necessários a cada mensagem. Se estiver usando o Adobe Campaign 19.1 (build 9032) ou superior e se esse não for o caso, você deverá solicitar [Adobe Customer Care](https://helpx.adobe.com/br/enterprise/admin-guide.html) para adicionar o parâmetro &quot;useMomentum=true&quot; à configuração da instância de execução (no arquivo [serverConf.xml](../../installation/using/the-server-configuration-file.md#mta)), que pode ser a instância de marketing mid [instância de-sourcing](../../installation/using/mid-sourcing-server.md) ou [instância de execução de mensagens transacionais](../../message-center/using/creating-a-shared-connection.md#execution-instance), dependendo da sua configuração.
+As instâncias mais recentes do Campaign Classic incluem código que adiciona os cabeçalhos do MTA aprimorado necessários a cada mensagem. Se estiver usando o Adobe Campaign 19.1 (compilação 9032) ou superior e se esse não for o caso, você deverá solicitar ao [Atendimento ao cliente da Adobe](https://helpx.adobe.com/br/enterprise/admin-guide.html/br/enterprise/using/support-for-experience-cloud.ug.html) que adicione o parâmetro &quot;useMomentum=true&quot; à configuração da instância de execução (no arquivo [serverConf.xml](../../installation/using/the-server-configuration-file.md#mta)), que pode ser a instância de marketing, [a instância de mid-sourcing](../../installation/using/mid-sourcing-server.md) ou a [instância de execução de mensagens transacionais](../../message-center/using/creating-a-shared-connection.md#execution-instance), dependendo da sua configuração.
 
 No entanto, se você estiver usando uma instância mais antiga que não inclui esse código, uma nova regra de tipologia chamada **[!UICONTROL Typology Rule for Enhanced MTAs]** deverá ser adicionada a todas as tipologias existentes na instância do Campaign.
 Essa regra é adicionada por um pacote **[!UICONTROL Typology]** instalado como parte da atualização para o MTA aprimorado.
@@ -152,7 +152,7 @@ Para obter mais informações sobre o período de validade, consulte [esta seç�
 ### Assinatura DKIM
 
 A assinatura de autenticação de email DKIM (DomainKeys Identified Mail) é feita pelo MTA aprimorado. A assinatura DKIM pelo MTA nativo do Campaign será desativada na tabela Gerenciamento de domínio como parte da atualização do MTA aprimorado.
-Para obter mais informações sobre DKIM, consulte o [Guia de práticas recomendadas de capacidade de entrega do Adobe](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/transition-process/infrastructure.html#authentication).
+Para obter mais informações sobre DKIM, consulte o [Manual de práticas recomendadas de capacidade de delivery da Adobe](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/transition-process/infrastructure.html?lang=pt-BR#authentication).
 
 ### Relatórios de sucesso do delivery
 
