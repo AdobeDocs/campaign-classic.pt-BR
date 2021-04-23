@@ -6,14 +6,14 @@ description: Coleta de dados para analisar
 audience: reporting
 content-type: reference
 topic-tags: creating-new-reports
-translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
-workflow-type: tm+mt
+exl-id: cf621374-88f9-4def-8bea-87e0ea69ecd3
+translation-type: ht
+source-git-commit: 6854d06f8dc445b56ddfde7777f02916a60f2b63
+workflow-type: ht
 source-wordcount: '503'
 ht-degree: 100%
 
 ---
-
 
 # Coleta de dados para analisar{#collecting-data-to-analyze}
 
@@ -81,4 +81,3 @@ Configure o número de registros para extrair via query utilizando as opções d
 
 * **[!UICONTROL Limit to first record]** para extrair um resultado,
 * **[!UICONTROL Size]** para extrair um número definido de registros.
-
