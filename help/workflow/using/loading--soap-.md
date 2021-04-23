@@ -6,14 +6,14 @@ description: Carregamento (SOAP)
 audience: workflow
 content-type: reference
 topic-tags: action-activities
-translation-type: tm+mt
-source-git-commit: ba460d8347c987291681641a1be208027acf1d2f
-workflow-type: tm+mt
+exl-id: 20414e73-2ba9-44f9-8e16-cb6604933ee0
+translation-type: ht
+source-git-commit: 6854d06f8dc445b56ddfde7777f02916a60f2b63
+workflow-type: ht
 source-wordcount: '251'
 ht-degree: 100%
 
 ---
-
 
 # Carregamento (SOAP){#loading-soap}
 
@@ -54,4 +54,3 @@ A operação é como descrita a seguir:
       O código dessa guia será chamado em um loop pelo Adobe Campaign até que um objeto XML nulo seja retornado.
 
    * **[!UICONTROL Finalization]**: fecha a conexão e/ou libera outros recursos criados durante o processamento.
-
