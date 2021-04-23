@@ -6,14 +6,14 @@ description: Saiba mais sobre deliveries de campanha de marketing
 audience: campaign
 content-type: reference
 topic-tags: orchestrate-campaigns
+exl-id: 1dd3c080-444d-45f8-9562-d2d01a9d2860
 translation-type: ht
-source-git-commit: 278dec636373b5ccd3b631bd29607ebe894d53c3
+source-git-commit: 6854d06f8dc445b56ddfde7777f02916a60f2b63
 workflow-type: ht
 source-wordcount: '1487'
 ht-degree: 100%
 
 ---
-
 
 # Deliveries de campanha de marketing {#marketing-campaign-deliveries}
 
@@ -235,10 +235,10 @@ O modelo de exportação deve estar associado ao provedor de serviços seleciona
 >
 >Para saber mais sobre exportações, consulte a seção [Introdução](../../platform/using/get-started-data-import-export.md) .
 
-#### Vídeo tutorial {#create-email-video}
+#### Vídeo de tutorial {#create-email-video}
 
 Este vídeo explica como criar uma campanha e um email no Adobe Campaign.
 
 >[!VIDEO](https://video.tv.adobe.com/v/25604?quality=12)
 
-Vídeos extras sobre procedimentos do Campaign estão disponíveis [aqui](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html?lang=pt-BR).
+Vídeos extras explicativos do Campaign estão disponíveis [aqui](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html?lang=pt-BR).
