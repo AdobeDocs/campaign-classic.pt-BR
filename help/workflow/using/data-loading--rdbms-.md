@@ -6,14 +6,14 @@ description: Saiba mais sobre a atividade do workflow de carregamento de dados (
 audience: workflow
 content-type: reference
 topic-tags: action-activities
-translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
-workflow-type: tm+mt
+exl-id: 6e24d5fe-4830-49b4-a0fe-624c5644c920
+translation-type: ht
+source-git-commit: 6854d06f8dc445b56ddfde7777f02916a60f2b63
+workflow-type: ht
 source-wordcount: '187'
 ht-degree: 100%
 
 ---
-
 
 # Carregamento de dados (RDBMS){#data-loading-rdbms}
 
@@ -38,4 +38,3 @@ A operação é como descrita a seguir:
 1. Você pode definir um filtro nesses dados. Para fazer isso, clique em **[!UICONTROL Edit query....]**.
 
    Os dados coletados desta forma podem ser usados durante o ciclo de vida do workflow.
-
