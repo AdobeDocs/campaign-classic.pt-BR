@@ -6,14 +6,14 @@ description: Saiba como criar modelos de importação e exportação no Campaign
 audience: platform
 content-type: reference
 topic-tags: importing-and-exporting-data
-translation-type: tm+mt
-source-git-commit: b05b8daad449aeb1f5226fdd76744776c6553b63
-workflow-type: tm+mt
+exl-id: 1180e664-5ead-4d5d-b1c3-6fe397c1f3a2
+translation-type: ht
+source-git-commit: 6854d06f8dc445b56ddfde7777f02916a60f2b63
+workflow-type: ht
 source-wordcount: '128'
-ht-degree: 89%
+ht-degree: 100%
 
 ---
-
 
 # Criar modelos de importação e exportação {#creating-import-export-templates}
 
