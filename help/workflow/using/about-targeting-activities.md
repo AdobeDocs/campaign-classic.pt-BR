@@ -6,14 +6,14 @@ description: Sobre as atividades de direcionamento
 audience: workflow
 content-type: reference
 topic-tags: targeting-activities
-translation-type: tm+mt
-source-git-commit: bb7e3ce726e2c589c033686cf3ab2960de140d91
-workflow-type: tm+mt
+exl-id: 5028ad4c-e427-4e78-962d-c5ea54390db5
+translation-type: ht
+source-git-commit: 6854d06f8dc445b56ddfde7777f02916a60f2b63
+workflow-type: ht
 source-wordcount: '404'
 ht-degree: 100%
 
 ---
-
 
 # Sobre as atividades de direcionamento{#about-targeting-activities}
 
@@ -39,4 +39,3 @@ Essas atividades permitem construir um ou mais targets definindo conjuntos e div
 * **Atualização de lista**: registra o resultado das atividades de entrada em uma lista. Consulte a seção [List update](../../workflow/using/list-update.md).
 * **Dados de atualização**: permite que você atualize os dados em grande escala no banco de dados. Consulte a seção [Update data](../../workflow/using/update-data.md).
 * **Conector do CRM**: permite configurar a sincronização entre o Adobe Campaign e um CRM. Consulte a seção [CRM Connector](../../workflow/using/crm-connector.md).
-
