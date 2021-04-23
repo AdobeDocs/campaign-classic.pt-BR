@@ -6,14 +6,14 @@ description: Sobre a criação de relatórios no Campaign
 audience: reporting
 content-type: reference
 topic-tags: creating-new-reports
+exl-id: 262c1469-94b4-4f81-9f6f-5c7f481765da
 translation-type: ht
-source-git-commit: 11ff62238a8fb73658f2263c25dbeb27d2e0fb23
+source-git-commit: 6854d06f8dc445b56ddfde7777f02916a60f2b63
 workflow-type: ht
 source-wordcount: '167'
 ht-degree: 100%
 
 ---
-
 
 # Etapas principais para criar um relatório{#about-reports-creation-in-campaign}
 
@@ -31,4 +31,3 @@ Para criar, publicar e entregar um relatório de análise com seus dados, siga a
 1. Configure as opções de exibição: tipo de exibição, relatórios compartilhados: consulte [Contexto de exibição do relatório](../../reporting/using/configuring-access-to-the-report.md#report-display-context), [Definição de um conteúdo condicional ](../../reporting/using/defining-a-conditional-content.md)e [Configuração do acesso ao relatório](../../reporting/using/configuring-access-to-the-report.md),
 1. Publicar o relatório (assistente de publicação): consulte [Publicação de relatório](../../reporting/using/configuring-access-to-the-report.md#publishing-the-report),
 1. Converta o relatório: exportar, histórico, exibir em um navegador: consulte [Ações sobre relatórios](../../reporting/using/actions-on-reports.md).
-
