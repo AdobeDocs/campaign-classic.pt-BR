@@ -6,14 +6,14 @@ description: Saiba mais sobre as práticas recomendadas a serem seguidas ao impo
 audience: automating
 content-type: reference
 topic-tags: workflow-general-operation
-translation-type: tm+mt
-source-git-commit: b05b8daad449aeb1f5226fdd76744776c6553b63
-workflow-type: tm+mt
+exl-id: 03d35202-d221-4136-aad4-00704aabb356
+translation-type: ht
+source-git-commit: 6854d06f8dc445b56ddfde7777f02916a60f2b63
+workflow-type: ht
 source-wordcount: '512'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
-
 
 # Práticas recomendadas de importação e exportação {#import-export-best-practices}
 
@@ -67,7 +67,7 @@ Importações regulares devem ser feitas no modo delta. Isso significa que somen
 
 As importações completas devem ser usadas somente para carregamento inicial.
 
-## Manter consistência {#maintaining-consistency}
+## Manter a consistência {#maintaining-consistency}
 
 Para manter a consistência dos dados no banco de dados do Adobe Campaign, siga os princípios abaixo:
 
