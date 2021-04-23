@@ -6,14 +6,14 @@ description: Criação do conteúdo da mensagem
 audience: message-center
 content-type: reference
 topic-tags: message-templates
-translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
-workflow-type: tm+mt
+exl-id: 0528c856-5dc2-4b8c-a389-f615a9052a9e
+translation-type: ht
+source-git-commit: 6854d06f8dc445b56ddfde7777f02916a60f2b63
+workflow-type: ht
 source-wordcount: '267'
 ht-degree: 100%
 
 ---
-
 
 # Criação do conteúdo da mensagem{#creating-message-content}
 
@@ -44,4 +44,3 @@ Para inserir tags de personalização no corpo de uma mensagem de email, siga as
 1. Preencha a tag usando a seguinte sintaxe: **element name**.@**attribute name** como mostrado abaixo.
 
    ![](assets/messagecenter_create_custo_003.png)
-
