@@ -6,14 +6,14 @@ description: Configuração do acesso ao relatório
 audience: reporting
 content-type: reference
 topic-tags: creating-new-reports
+exl-id: 1e5ab922-481c-4dce-a05e-a58408002e24
 translation-type: ht
-source-git-commit: 278dec636373b5ccd3b631bd29607ebe894d53c3
+source-git-commit: 6854d06f8dc445b56ddfde7777f02916a60f2b63
 workflow-type: ht
 source-wordcount: '754'
 ht-degree: 100%
 
 ---
-
 
 # Configuração do acesso ao relatório{#configuring-access-to-the-report}
 
@@ -136,4 +136,3 @@ A publicação do relatório é obrigatória para compartilhá-lo com outros ope
    ![](assets/s_ncs_advuser_report_publish_02.png)
 
 1. Clique no ícone **[!UICONTROL Enlarge]** para abrir o relatório em um navegador da web.
-
