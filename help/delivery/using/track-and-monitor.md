@@ -5,18 +5,18 @@ title: Rastrear e monitorar mensagens
 audience: delivery
 content-type: reference
 topic-tags: deliveries-best-practices
-translation-type: tm+mt
-source-git-commit: 53e239c04f9c4239a5c32e4f25549cbc5f6ece50
-workflow-type: tm+mt
+exl-id: a039a288-2e7b-4f35-9885-ead3ed4347af
+translation-type: ht
+source-git-commit: 6854d06f8dc445b56ddfde7777f02916a60f2b63
+workflow-type: ht
 source-wordcount: '444'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
-
 # Rastrear e monitorar {#track-and-monitor}
 
-Você clicou no botão **Send**? Vamos ver o que acontece. Depois que o delivery é enviado, o Adobe Campaign permite acompanhar as mensagens enviadas e descobrir como os recipients reagem ao seu delivery. Isso o ajudará a melhorar o envio futuro e a otimizar as próximas campanhas.
+Você clicou no botão **Enviar**? Vamos ver o que acontece. Depois que o delivery é enviado, o Adobe Campaign permite acompanhar as mensagens enviadas e descobrir como os recipients reagem ao seu delivery. Isso o ajudará a melhorar o envio futuro e a otimizar as próximas campanhas.
 
 ## Monitoramento de deliveries {#monitoring-deliveries}
 
