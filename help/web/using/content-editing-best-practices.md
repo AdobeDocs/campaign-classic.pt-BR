@@ -6,14 +6,14 @@ description: Práticas recomendadas de edição de conteúdo
 audience: web
 content-type: reference
 topic-tags: editing-html-content
-translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
-workflow-type: tm+mt
+exl-id: c1eccb48-59bf-412f-9c18-9cda2a022096
+translation-type: ht
+source-git-commit: 6854d06f8dc445b56ddfde7777f02916a60f2b63
+workflow-type: ht
 source-wordcount: '548'
 ht-degree: 100%
 
 ---
-
 
 # Práticas recomendadas de edição de conteúdo{#content-editing-best-practices}
 
@@ -94,4 +94,3 @@ A seção superior do editor exibe mensagens relacionadas ao status do conteúdo
 * Há n campos ou blocos de personalização para configurar.
 * O conteúdo do delivery está pronto, execute a análise novamente para aplicar as alterações.
 * O delivery está pronto para ser enviado.
-
