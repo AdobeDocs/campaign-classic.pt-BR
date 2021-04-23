@@ -6,14 +6,14 @@ description: Saiba como criar hipóteses no Gestor de resposta do Campaign
 audience: campaign
 content-type: reference
 topic-tags: response-manager
+exl-id: e0b3bc9f-5e81-463f-a59e-cd972a47109b
 translation-type: ht
-source-git-commit: 87028ec81a8cae6793d45d7c840511b59cd0287c
+source-git-commit: 6854d06f8dc445b56ddfde7777f02916a60f2b63
 workflow-type: ht
 source-wordcount: '1051'
 ht-degree: 100%
 
 ---
-
 
 # Criar hipóteses{#creating-hypotheses}
 
@@ -181,4 +181,3 @@ Neste exemplo, queremos criar uma hipótese vinculada a um delivery. Esta hipót
 1. Na árvore do Adobe Campaign, acesse o nó **[!UICONTROL Campaign management > Measurement hypotheses]** para verificar os indicadores calculados pela hipótese.
 
    ![](assets/response_hypothesis_delivery_example_010.png)
-
