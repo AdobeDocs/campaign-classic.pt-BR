@@ -6,9 +6,9 @@ description: Nota técnica
 hide: true
 hidefromtoc: true
 translation-type: tm+mt
-source-git-commit: 65ff09dd8ded029178c4c85489bf01ef80d16e8d
+source-git-commit: e1b09767a8eed3a7dc90e4db0429238d86d39570
 workflow-type: tm+mt
-source-wordcount: '343'
+source-wordcount: '355'
 ht-degree: 7%
 
 ---
@@ -27,13 +27,13 @@ Para melhorar a segurança, o mecanismo de assinatura para rastrear links em ema
 
 Se seu ambiente estiver em execução em uma das versões listadas abaixo, você poderá ser afetado:
 
-* Gold Standard 7 a 11. [Saiba mais](../rn/using/gold-standard.md)
-* Versões 21.1.1 a 21.1.2 do Campaign. [Saiba mais](../rn/using/latest-release.md)
-* Versões 20.3.1 a 20.3.3 do Campaign. [Saiba mais](../rn/using/release--20-3.md)
-* Versões 20.2.1 a 20.2.3 do Campaign. [Saiba mais](../rn/using/release--20-2.md)
-* Versões 20.1.1 a 21.1.3 do Campaign. [Saiba mais](../rn/using/release--20-1.md)
-* Versões 19.2.2 a 19.2.3 do Campaign. [Saiba mais](../rn/using/release--19-2.md)
-* Versões 19.1.5 a 19.1.7 do Campaign. [Saiba mais](../rn/using/release--19-1.md)
+* Gold Standard 8 a 11. [Saiba mais](../rn/using/gold-standard.md#gs-8)
+* Campanha 21.1.1 (build 9277) para versões 21.1.2 (build 9282). [Saiba mais](../rn/using/latest-release.md)
+* Campanha 20.3.1 (build 9228) a versões 20.3.3 (build 9234). [Saiba mais](../rn/using/release--20-3.md)
+* Campanha 20.2.1 (build 9178) a versões 20.2.3 (build 9182). [Saiba mais](../rn/using/release--20-2.md)
+* Campanha 20.1.1 (build 9122) para versões 21.1.3 (build 9124). [Saiba mais](../rn/using/release--20-1.md)
+* Campanha 19.2.2 (build 9080) a versões 19.2.3 (build 9081). [Saiba mais](../rn/using/release--19-2.md)
+* Campanha 19.1.5 (build 9033) para versões 19.1.7 (build 9036). [Saiba mais](../rn/using/release--19-1.md)
 
 Saiba como verificar sua versão [nesta seção](../platform/using/launching-adobe-campaign.md#getting-your-campaign-version).
 
@@ -66,5 +66,5 @@ Quando a atualização estiver concluída, todos os links funcionarão conforme 
 
 >[!NOTE]
 >
->Para dúvidas sobre essas alterações, entre em contato com o [Adobe Customer Care](https://helpx.adobe.com/br/enterprise/admin-guide.html/br/enterprise/using/support-for-experience-cloud.ug.html).
+>Para dúvidas sobre essas alterações, entre em contato com o [Adobe Customer Care](https://helpx.adobe.com/br/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html).
 
