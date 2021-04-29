@@ -4,11 +4,11 @@ solution: Campaign Classic
 product: campaign
 title: Documentação do produto Adobe Campaign Classic
 exl-id: 6b3f1689-80de-49fd-b7ee-7a2a1931d157
-translation-type: ht
-source-git-commit: bd6f77606517a0d3ceaa3c2b398733521af3ae43
-workflow-type: ht
-source-wordcount: '293'
-ht-degree: 100%
+translation-type: tm+mt
+source-git-commit: 52341396fd85e470257e37a1d9404eae775acda8
+workflow-type: tm+mt
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -18,13 +18,13 @@ ht-degree: 100%
 
 ## Novidades
 
+* **[Remover ](https://helpx.adobe.com/campaign/kb/update-bounce-qualification.html)**<br/> devoluções incorretasSaiba como atualizar devoluções incorretas após a interrupção da Apple
+
 * **[Atualize seu certificado APNs](technotes/ios-certificate-update.md)**<br/> Em 29 de março de 2021, uma atualização de APNs afetou o canal do Campaign iOS. É necessário atualizar a configuração para evitar a interrupção do canal de push do iOS.
 
 * **[Conectando-se pelo IMS/Adobe ID? Atualize para as builds mais recentes](integrations/using/about-adobe-id.md)**<br/> Se estiver usando o IMS para se conectar ao Campaign, você deverá fazer upgrade para poder se conectar ao Campaign após** 30 de junho de 2021 **.
 
 * **[Proteja suas instâncias do Campaign](technotes/acc-config-updates.md)**<br/>Atualize para as compilações mais recentes para proteger a plataforma do Campaign.
-
-* **[Remover devoluções definitivas incorretas](https://helpx.adobe.com/campaign/kb/update-bounce-qualification.html)**<br/> Saiba como atualizar devoluções definitivas incorretas depois da paralisação do Gmail
 
 * **[Atualizar a integração dos acionadores da Adobe Experience Cloud](integrations/using/configuring-adobe-io.md)**<br/> O serviço de autenticação herdado oAuth chegou ao fim da vida útil. Saiba como migrar para o Adobe I/O.
 
