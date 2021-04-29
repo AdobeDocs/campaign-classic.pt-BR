@@ -9,9 +9,9 @@ topic-tags: monitoring-deliveries
 hidefromtoc: true
 exl-id: 34be23f7-17fa-475e-9663-2e353d76b172
 translation-type: tm+mt
-source-git-commit: 7c161862a4ce2e86e7968fd61af6b8ca28d6623f
+source-git-commit: 378be6d4ef4ff69818d45c608a61b9a3506398be
 workflow-type: tm+mt
-source-wordcount: '425'
+source-wordcount: '427'
 ht-degree: 59%
 
 ---
@@ -20,7 +20,7 @@ ht-degree: 59%
 
 ## Contexto
 
-Em 26 de abril de 2021, um problema global na Apple resultou no envio incorreto de algumas mensagens de email enviadas para endereços de email válidos da Apple como endereços de email inválidos por servidores da Apple com a seguinte resposta:  &quot;550 5.1.1 <email address>: a pesquisa de usuário foi bem-sucedida, mas nenhum registro de usuário foi encontrado.&quot;
+Em 26 de abril de 2021, um problema global na Apple resultou no envio incorreto de algumas mensagens de email enviadas para endereços de email válidos da Apple como endereços de email inválidos por servidores da Apple com a seguinte resposta:  &quot;550 5.1.1 &#39;endereço de e-mail&#39;: a pesquisa de usuário foi bem-sucedida, mas nenhum registro de usuário foi encontrado.&quot;
 
 Esse problema ocorreu em 26/4 e durou de 7:00 às 1:00 EST.
 
