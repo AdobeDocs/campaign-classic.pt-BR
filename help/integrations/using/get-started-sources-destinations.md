@@ -1,47 +1,47 @@
 ---
 solution: Campaign Classic
 product: campaign
-title: Introdução a fontes e destinos
-description: Saiba mais sobre Fontes e Destinos do Adobe Experience Platform.
+title: Introdução a origens e destinos
+description: Saiba mais sobre origens e destinos da Adobe Experience Platform.
 audience: integrations
 content-type: reference
-translation-type: tm+mt
-source-git-commit: b4da54c122e75a175f6f586a05955b3dfed00c1e
-workflow-type: tm+mt
+exl-id: 8cee52c7-ea56-4701-8ebb-eb18afffea51
+translation-type: ht
+source-git-commit: 44ea4acb384fd7cb9de8b5be8132446ee0023cfe
+workflow-type: ht
 source-wordcount: '307'
-ht-degree: 1%
+ht-degree: 100%
 
 ---
 
+# Introdução a origens e destinos {#rtcdp}
 
-# Introdução às Fontes e Destinos {#rtcdp}
+## Sobre origens e destinos
 
-## Sobre fontes e destinos
+Com a Adobe Experience Platform, você pode compartilhar dados entre o Campaign Classic e a Plataforma de dados do cliente em tempo real (RTCDP) da Adobe. Isso permite direcionar os públicos da Adobe Experience Platform nos workflows do Campaign e enviar de volta para a Plataforma de dados do cliente em tempo real da Adobe relacionados a esses públicos, como envios, aberturas e cliques.
 
-Com o Adobe Experience Platform, você pode compartilhar dados entre o Campaign Classic e o Adobe Real-time Customer Data Platform (RTCDP). Isso permite direcionar os públicos-alvo da Adobe Experience Platform nos fluxos de trabalho do Campaign e enviar de volta para o Adobe Real-time Customer Data Platform relacionados a esses públicos-alvo, como envios, aberturas e cliques.
-
-* Com **Destinos**, assimile públicos do Adobe Experience Platform ao Campaign Classic. Isso permite ativar seus dados conhecidos e desconhecidos para suas campanhas de marketing.
-* Com **Fontes**, exporte dados Campaign Classic (por exemplo, envia, abre, clica) para o Adobe Experience Platform. Isso permite centralizar os dados coletados de fontes diferentes em um único local e usar os insights obtidos com eles para fazer mais.
+* Com **Destinos**, assimile públicos da Adobe Experience Platform no Campaign Classic. Isso permite ativar os dados conhecidos e desconhecidos para suas campanhas de marketing.
+* Com **Origens**, exporte dados do Campaign Classic (por exemplo, envios, aberturas e cliques) para a Adobe Experience Platform. Isso permite centralizar os dados coletados de origens diferentes em um único local e usar os insights obtidos com eles para fazer mais.
 
 >[!IMPORTANT]
 >
->Lembre-se dos limites de armazenamento SFTP, limites de armazenamento de banco de dados e limites de perfil ativos de acordo com seu contrato da Adobe Campaign ao executar essa integração.
+>Lembre-se dos limites de armazenamento SFTP, armazenamento do banco de dados e perfil ativo conforme o contrato do Adobe Campaign ao fazer essa integração.
 
-Para obter uma visão geral mais detalhada do Adobe Real-time Customer Data Platform, Destinos e Fontes, consulte estas páginas:
+Para obter uma visão geral mais detalhada da Plataforma de dados do cliente em tempo real da Adobe, Origens e Fontes, consulte estas páginas:
 
-* [Plataforma de dados do cliente em tempo real da Adobe](https://experienceleague.adobe.com/docs/experience-platform/rtcdp/overview.html)
-* [Documentação de destinos](https://experienceleague.adobe.com/docs/experience-platform/destinations/home.html)
-* [Documentação de fontes](https://experienceleague.adobe.com/docs/experience-platform/sources/home.html)
+* [Plataforma de dados do cliente em tempo real da Adobe](https://experienceleague.adobe.com/docs/experience-platform/rtcdp/overview.html?lang=pt-BR)
+* [Documentação de destinos](https://experienceleague.adobe.com/docs/experience-platform/destinations/home.html?lang=pt-BR)
+* [Documentação de origens](https://experienceleague.adobe.com/docs/experience-platform/sources/home.html?lang=pt-BR)
 
-## Conecte o Campaign Classic ao Adobe Experience Platform
+## Conectar o Campaign Classic à Adobe Experience Platform
 
-Para compartilhar dados entre o Adobe Experience Platform e o Campaign Classic, primeiro é necessário conectar o Adobe Campaign como um **Destino** e conectar seu local de armazenamento de blobs do AWS S3 ou Azure como um **Origem** na Adobe experience Platform.
+Para compartilhar dados entre a Adobe Experience Platform e o Campaign Classic, primeiro é necessário conectar o Adobe Campaign como um **Destino** e conectar seu local de armazenamento de blobs do AWS S3 ou Azure como uma **Origem** na Adobe Experience Platform.
 
-Após configurar os conectores, é possível configurar uma importação de dados ou exportar para o Campaign Classic usando workflows.
+Após configurar os conectores, é possível configurar uma importação ou exportação de dados para o Campaign Classic usando workflows.
 
 ![](assets/rtcdp-schema.png)
 
 Para obter mais detalhes sobre como configurar esses processos de importação e exportação, consulte estas seções:
 
-* [Assimilar segmentos do Adobe Experience Platform no Campaign](../../integrations/using/ingest-aep-data.md)
-* [Exportar dados do Campaign para o Adobe Experience Platform](../../integrations/using/export-campaign-data.md)
+* [Assimilar segmentos da Adobe Experience Platform no Campaign](../../integrations/using/ingest-aep-data.md)
+* [Exportar dados do Campaign para a Adobe Experience Platform](../../integrations/using/export-campaign-data.md)
