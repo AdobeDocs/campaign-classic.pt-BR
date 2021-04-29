@@ -7,11 +7,11 @@ feature: Visão geral
 role: Business Practitioner
 level: Beginner
 exl-id: d65869ca-a785-4327-8e8d-791c28e4696c
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: abd5c7430c3f7a1a056a014ad46a0b94157e259f
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '921'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -23,11 +23,11 @@ Esta página lista novos recursos, melhorias e correções que vêm com a **vers
 >
 >As compilações de **Disponibilidade geral (GA) do Campaign** são: [[!DNL Gold Standard] Versão 11](../../rn/using/gold-standard.md#gs-11) e [Versão 20.2.5 do Campaign](../../rn/using/release--20-2.md).
 
-## ![](assets/do-not-localize/blue_2.png) Versão 21.1.2 - Compilação 9282 {#release-21-1-2-build-9282}
+## ![](assets/do-not-localize/blue_2.png) Versão 21.1.2 – Compilação 9282 {#release-21-1-2-build-9282}
 
 _15 de abril de 2021_
 
-* O gerenciamento de senhas foi aprimorado para otimizar a segurança.
+* O gerenciamento de senhas foi aprimorado para otimizar a memória.
 * Correção de um problema que poderia causar falhas de MTA.
 
 ## ![](assets/do-not-localize/red_2.png) Versão 21.1.1 - Compilação 9277 {#release-21-1-1-build-9277}
