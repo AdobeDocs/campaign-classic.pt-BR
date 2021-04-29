@@ -26,8 +26,8 @@ ht-degree: 100%
    + [Versão mais recente](rn/using/latest-release.md)
    + [!DNL Gold Standard] versão {#gs-release}
       + [O que é o [!DNL Gold Standard]](rn/using/gs-overview.md)
-      + Notas de versão do [[!DNL Gold Standard] ](rn/using/gold-standard.md)
-      + Matriz de compatibilidade do [[!DNL Gold Standard] ](rn/using/compatibility-matrix-gs.md)
+      + [Notas de versão do [!DNL Gold Standard] ](rn/using/gold-standard.md)
+      + [Matriz de compatibilidade do [!DNL Gold Standard] ](rn/using/compatibility-matrix-gs.md)
    + Versões anteriores {#previous-releases}
       + [Versão 20.3](rn/using/release--20-3.md)
       + [Versão 20.2](rn/using/release--20-2.md)
@@ -823,7 +823,7 @@ ht-degree: 100%
       + [Configuração da interface](configuration/using/configuring-the-interface.md)
       + [Seed addresses](configuration/using/seed-addresses.md)
       + [Criação de filtros](configuration/using/creating-filters.md)
-      +  [Criação de uma lista de perfis com base em um workflow ](configuration/using/creating-a-profile-list-with-a-workflow.md)
+      + [Criação de uma lista de perfis com base em um workflow ](configuration/using/creating-a-profile-list-with-a-workflow.md)
       + [Gerenciamento de fluxos de trabalho](configuration/using/managing-workflows.md)
       + [Gerenciamento de relatórios](configuration/using/managing-reports.md)
    + Configuração do rastreamento Web {#setting-up-web-tracking}
