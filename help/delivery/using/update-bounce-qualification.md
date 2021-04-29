@@ -8,11 +8,11 @@ content-type: reference
 topic-tags: monitoring-deliveries
 hidefromtoc: true
 exl-id: 34be23f7-17fa-475e-9663-2e353d76b172
-translation-type: ht
-source-git-commit: 3b5a6e6f03d9cb26ed372c3df069cbada36756a2
-workflow-type: ht
-source-wordcount: '475'
-ht-degree: 100%
+translation-type: tm+mt
+source-git-commit: ad7f0725a5ce1dea9b5b3ab236c839a816b29382
+workflow-type: tm+mt
+source-wordcount: '425'
+ht-degree: 61%
 
 ---
 
@@ -22,22 +22,19 @@ ht-degree: 100%
 
 No caso de uma interrupção de um ISP, os emails enviados por meio do Campaign não podem ser entregues com êxito ao recipient: esses emails serão marcados incorretamente como rejeições.
 
-Em dezembro de 2020, um problema global no Gmail fez com que mensagens de email enviadas para endereços de email Gmail válidos fossem rejeitadas incorretamente como endereços de email inválidos pelos servidores do Gmail, com a seguinte resposta: *&quot;550-5.1.1 A conta de email que você tentou acessar não existe.&quot;*
-
-O Google declarou que as interrupções e as falhas do Gmail que causaram esse problema começaram em 14 de dezembro às 6h55 e terminaram às 18h09 EST em 15 de dezembro. Nossa análise de dados também mostrou um pico muito curto de rejeições no Gmail às 2h06 EST no dia 16 de dezembro, com a maioria ocorrendo no dia 15 de dezembro entre 14h EST e 18h30 EST.
+Em 26 de abril de 2021, um problema global na Apple resultou no envio incorreto de algumas mensagens de email enviadas para endereços de email válidos da Apple como endereços de email inválidos por servidores da Apple com a seguinte resposta: *&quot;550 5.1.1 <email address>: a pesquisa de usuário foi bem-sucedida, mas nenhum registro de usuário foi encontrado.&quot;*Esse problema ocorreu em 26/4 e durou de 7:00 às 1:00 EST.
 
 >[!NOTE]
 >
->Você pode verificar o Painel de status do Google Workspace [nesta página](https://www.google.com/appsstatus#hl=en&amp;v=status).
-
+>Você pode verificar o Painel de status do sistema da Apple em [this page](https://www.apple.com/support/systemstatus/).
 
 De acordo com a lógica padrão de manipulação de rejeição, o Adobe Campaign adicionou automaticamente esses recipients à lista de quarentena com uma configuração **[!UICONTROL Status]** de **[!UICONTROL Quarantine]**. Para corrigir isso, você precisa atualizar a tabela de quarentena no Campaign localizando e removendo esses recipients ou alterando seus **[!UICONTROL Status]** para **[!UICONTROL Valid]** para que o fluxo de trabalho de limpeza noturna os remova.
 
-Para encontrar os recipients que foram afetados por esse problema do Gmail, ou caso isso aconteça novamente com qualquer outro ISP, consulte as instruções abaixo.
+Para encontrar os recipients que foram afetados por esse problema do , ou caso isso aconteça novamente com qualquer outro ISP, consulte as instruções abaixo.
 
 ## Processo para atualização
 
-Você precisará executar um query na tabela de quarentena para filtrar todos os recipients do Gmail (ou de outro ISP) que foram potencialmente afetados pela interrupção para que possam ser removidos da lista de quarentena e incluídos em futuros deliveries de email do Campaign.
+Você precisará executar um query na tabela de quarentena para filtrar todos os recipients da Apple - que inclui, @icloud.com, @me.com, @mac.com - que foram potencialmente afetados pela interrupção para que possam ser removidos da lista de quarentena e incluídos em futuros deliveries de email do Campaign.
 
 Com base no período do incidente, abaixo estão as diretrizes recomendadas para esse query.
 
@@ -47,16 +44,16 @@ Com base no período do incidente, abaixo estão as diretrizes recomendadas para
 
 * Para instâncias do Campaign com informações de resposta de rejeição SMTP no campo **[!UICONTROL Error text]** da lista de quarentena:
 
-   * **O texto de erro (texto de quarentena)** contém &quot;550-5.1.1 A conta de email que você tentou acessar não existe&quot; E o texto de **Erro (texto de quarentena)** contém &quot;support.google.com&quot; **
-   * **Atualizar status (@lastModified)** em ou após 14/12/2020 6:55:00
-   * **Atualizar status (@lastModified)** em ou antes de 16/12/2020 6:00:00
+   * **O texto de erro (texto de quarentena)** contém &quot;pesquisa de usuário bem-sucedida, mas nenhum registro de usuário encontrado&quot; E o texto  **Erro (texto de quarentena)** contém &quot;support.apple.com&quot; **
+   * **Atualizar status (@lastModified)** em ou após 26/4/2021 07:00:00
+   * **Atualizar status (@lastModified)** em ou antes de 26/04/2021 13:00:00 PM
 
 * Para instâncias do Campaign com informações de regra de Email de entrada no campo **[!UICONTROL Error text]** da lista de quarentena:
 
    * **O texto de erro (texto de quarentena)** contém &quot;Momen_Code10_InvalidRecipient&quot;
-   * **O domínio de email (@domain)** é igual a &quot;gmail.com&quot; OU o domínio de email (@domain) é igual a &quot;googlemail.com&quot;
-   * **Atualizar status (@lastModified)** em ou após 14/12/2020 6:55:00
-   * **Atualizar status (@lastModified)** em ou antes de 16/12/2020 6:00:00
+   * **Email domain (@domain)** equal to icloud.com&quot; OR Email domain (@domain) equal to me.com&quot; OR Email domain (@domain) equal to mac.com&quot;
+   * **Atualizar status (@lastModified)** em ou após 26/4/2021 07:00:00
+   * **Atualizar status (@lastModified)** em ou antes de 26/04/2021 13:00:00 PM
 
 Depois de ter a lista de recipients afetados, você pode defini-los como um status **[!UICONTROL Valid]** para que sejam removidos da lista de quarentena pelo fluxo de trabalho **[!UICONTROL Database cleanup]** ou simplesmente excluí-los da tabela.
 
