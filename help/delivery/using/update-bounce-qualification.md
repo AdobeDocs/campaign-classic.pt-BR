@@ -9,7 +9,7 @@ topic-tags: monitoring-deliveries
 hidefromtoc: true
 exl-id: 34be23f7-17fa-475e-9663-2e353d76b172
 translation-type: tm+mt
-source-git-commit: 9260b467119475e9e0352b6e521d6f2ca426165c
+source-git-commit: 718b490d48c6cfabdb24ab18dffb6db664f2a46c
 workflow-type: tm+mt
 source-wordcount: '427'
 ht-degree: 59%
@@ -53,7 +53,7 @@ Com base no período do incidente, abaixo estão as diretrizes recomendadas para
 * Para instâncias do Campaign com informações de regra de Email de entrada no campo **[!UICONTROL Error text]** da lista de quarentena:
 
    * **O texto de erro (texto de quarentena)** contém &quot;Momen_Code10_InvalidRecipient&quot;
-   * **Email domain (@domain)** equal to icloud.com&quot; OR Email domain (@domain) equal to me.com&quot; OR Email domain (@domain) equal to mac.com&quot;
+   * **Email domain (@domain)** equal to icloud.com OR  **Email domain (@domain)** equal to me.com OR  **Email domain (@domain)** equal to mac.com
    * **Atualizar status (@lastModified)** em ou após 26/4/2021 07:00:00
    * **Atualizar status (@lastModified)** em ou antes de 26/04/2021 13:00:00 PM
 
