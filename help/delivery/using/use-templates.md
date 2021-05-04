@@ -6,11 +6,11 @@ audience: delivery
 content-type: reference
 topic-tags: deliveries-best-practices
 exl-id: a5da3f29-5eab-428c-b7c3-d9e4243fe628
-translation-type: ht
-source-git-commit: 6854d06f8dc445b56ddfde7777f02916a60f2b63
-workflow-type: ht
-source-wordcount: '580'
-ht-degree: 100%
+translation-type: tm+mt
+source-git-commit: d5579fa1928888a088fe99b685f4d12bf2bde25b
+workflow-type: tm+mt
+source-wordcount: '577'
+ht-degree: 96%
 
 ---
 
@@ -26,7 +26,7 @@ Um [template do delivery](../../delivery/using/creating-a-delivery-template.md) 
 
 Quando você gerencia várias marcas no Adobe Campaign, a Adobe recomenda ter um subdomínio por marca. Por exemplo, um banco pode ter vários subdomínios correspondentes a cada uma de suas agências regionais. Se um banco for proprietário do domínio bluebank.com, seus subdomínios podem ser @ny.bluebank.com, @ma.bluebank.com, @ca.bluebank.com, etc. Ter um template do delivery por subdomínio permite usar sempre os parâmetros pré-configurados certos para cada marca, o que evita erros e economiza tempo.
 
-**Dica**: para evitar erros de configuração no Campaign Standard, recomendamos duplicar um template nativo e alterar as propriedades em vez de criar um novo template.
+**Dica**: Para evitar erros de configuração, recomendamos que você duplique um template nativo e altere suas propriedades em vez de criar um novo template.
 
 ## Configurar endereços
 
