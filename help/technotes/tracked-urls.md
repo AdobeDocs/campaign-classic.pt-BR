@@ -6,7 +6,7 @@ description: Nota técnica
 hide: true
 hidefromtoc: true
 translation-type: tm+mt
-source-git-commit: e1b09767a8eed3a7dc90e4db0429238d86d39570
+source-git-commit: 51773f48bac90febe44c6796b8cc08fce072bab3
 workflow-type: tm+mt
 source-wordcount: '355'
 ht-degree: 7%
@@ -30,7 +30,7 @@ Se seu ambiente estiver em execução em uma das versões listadas abaixo, você
 * Gold Standard 8 a 11. [Saiba mais](../rn/using/gold-standard.md#gs-8)
 * Campanha 21.1.1 (build 9277) para versões 21.1.2 (build 9282). [Saiba mais](../rn/using/latest-release.md)
 * Campanha 20.3.1 (build 9228) a versões 20.3.3 (build 9234). [Saiba mais](../rn/using/release--20-3.md)
-* Campanha 20.2.1 (build 9178) a versões 20.2.3 (build 9182). [Saiba mais](../rn/using/release--20-2.md)
+* Campanha 20.2.1 (build 9178) a versões 20.2.4 (build 9187). [Saiba mais](../rn/using/release--20-2.md)
 * Campanha 20.1.1 (build 9122) para versões 21.1.3 (build 9124). [Saiba mais](../rn/using/release--20-1.md)
 * Campanha 19.2.2 (build 9080) a versões 19.2.3 (build 9081). [Saiba mais](../rn/using/release--19-2.md)
 * Campanha 19.1.5 (build 9033) para versões 19.1.7 (build 9036). [Saiba mais](../rn/using/release--19-1.md)
