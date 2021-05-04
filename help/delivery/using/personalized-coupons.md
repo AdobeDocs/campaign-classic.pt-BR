@@ -7,11 +7,11 @@ audience: delivery
 content-type: reference
 topic-tags: personalizing-deliveries
 exl-id: 182939bb-7aff-4667-bda9-c5d48be3b946
-translation-type: ht
-source-git-commit: 6854d06f8dc445b56ddfde7777f02916a60f2b63
-workflow-type: ht
+translation-type: tm+mt
+source-git-commit: d5579fa1928888a088fe99b685f4d12bf2bde25b
+workflow-type: tm+mt
 source-wordcount: '877'
-ht-degree: 100%
+ht-degree: 98%
 
 ---
 
@@ -115,7 +115,7 @@ No exemplo abaixo, o delivery é criado a partir da Home page. Para obter instru
 
       ![](assets/deliv_coup_11.png)
 
-      O cupom é inserido na mensagem como código em vez do nome que você atribuiu. O código é usado no modelo padrão de dados do Campaign.
+      O cupom é inserido na mensagem como código em vez do nome que você atribuiu. O código é usado no modelo de dados da guia Campaign.
    ![](assets/deliv_coup_12.png)
 
 1. Execute um teste para confirmar o nome atribuído ao cupom. Acesse a guia **[!UICONTROL Preview]** e clique em **[!UICONTROL Test personalization]**. Escolha um recipient para o teste.
