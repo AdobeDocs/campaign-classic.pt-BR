@@ -7,11 +7,11 @@ feature: Perfis e públicos
 role: Business Practitioner, Data Architect
 level: Beginner
 exl-id: 54f1ad6c-54b0-4448-8c38-806dd75c1dae
-translation-type: ht
-source-git-commit: d7eabfbebf016d2632d95d34a5b36719ccc1d88a
-workflow-type: ht
-source-wordcount: '994'
-ht-degree: 100%
+translation-type: tm+mt
+source-git-commit: c733b68a06fba9bb24cd1c1995ffc99a1277be87
+workflow-type: tm+mt
+source-wordcount: '906'
+ht-degree: 99%
 
 ---
 
@@ -93,13 +93,7 @@ Os perfis ativos são aqueles que são contados para fins de cobrança.
 
 A contagem de perfis ativos está disponível somente para **Instâncias de marketing**. Não está disponível para Instâncias de execução, ou seja, instâncias de MID (mid-sourcing) e RT (Centro de mensagens/Mensagens em tempo real).
 
-Se você estiver hospedado no AWS, também será possível monitorar o número de perfis ativos usados em suas instâncias diretamente do Painel de controle do Campaign. Para obter mais informações, consulte a [documentação do Painel de controle do Campaign](https://experienceleague.adobe.com/docs/control-panel/using/performance-monitoring/active-profiles-monitoring.html?lang=pt-BR).
-
->[!NOTE]
->
->O Painel de controle do Campaign é acessível a todos os usuários administradores. As etapas para conceder acesso de Administrador a um usuário estão detalhadas [nesta seção](https://experienceleague.adobe.com/docs/control-panel/using/discover-control-panel/managing-permissions.html?lang=pt-BR#discover-control-panel).
->
->Observe que sua instância deve ser hospedada no AWS e atualizada com a compilação mais recente do [Gold Standard](../../rn/using/gs-overview.md) ou a compilação mais recente do GA (21.1)](../../rn/using/latest-release.md). [ Saiba como verificar sua versão [nesta seção](../../platform/using/launching-adobe-campaign.md#getting-your-campaign-version). Para verificar se sua instância está hospedada no AWS, siga as etapas detalhadas [nesta página](https://experienceleague.adobe.com/docs/control-panel/using/faq.html?lang=pt-BR).
+Se você estiver hospedado no AWS, também será possível monitorar o número de perfis ativos usados em suas instâncias diretamente do Painel de controle do Campaign. Para obter mais informações, consulte a [documentação do Painel de controle do Campaign](https://experienceleague.adobe.com/docs/control-panel/using/performance-monitoring/active-profiles-monitoring.html).
 
 A cobrança só afeta perfis que estão **ativos**. Um perfil é considerado ativo quando ele é visado ou recebe comunicação nos últimos 12 meses por meio de qualquer canal.
 
@@ -109,7 +103,7 @@ Os perfis excluídos durante a preparação do delivery (regras de tipologia, qu
 >
 >Os canais Facebook e Twitter não são considerados.
 
-Você pode ter uma visão geral do **[!UICONTROL Number of active profiles]** a partir do menu **[!UICONTROL Administration > Campaign Management > Customer metrics]** do Campaign Standard. A contagem real é executada pelo **[!UICONTROL Number of active billing profiles]** [workflow técnico](../../workflow/using/about-technical-workflows.md) (**[!UICONTROL billingActiveContactCount]**), que é executado diariamente e adiciona os novos dados ao relatório existente para o período atual no menu **[!UICONTROL Customer metrics]**. Cada período dura 12 meses.
+Você pode ter uma visão geral do **[!UICONTROL Number of active profiles]** a partir do menu **[!UICONTROL Administration > Campaign Management > Customer metrics]** do Campaign A contagem real é executada pelo **[!UICONTROL Number of active billing profiles]** [workflow técnico](../../workflow/using/about-technical-workflows.md) (**[!UICONTROL billingActiveContactCount]**), que é executado diariamente e adiciona os novos dados ao relatório existente para o período atual no menu **[!UICONTROL Customer metrics]**. Cada período dura 12 meses.
 
 ## Vídeo tutorial {#create-profiles-video}
 
