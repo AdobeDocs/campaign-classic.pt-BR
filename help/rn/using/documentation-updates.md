@@ -8,7 +8,7 @@ role: Business Practitioner
 level: Beginner
 exl-id: 07c1f4a3-cf16-4a9b-b402-e13258799f91
 translation-type: tm+mt
-source-git-commit: d5579fa1928888a088fe99b685f4d12bf2bde25b
+source-git-commit: 9781e313e03489d203e14ab0c426aa1001c7a257
 workflow-type: tm+mt
 source-wordcount: '4297'
 ht-degree: 99%
@@ -44,7 +44,7 @@ Saiba como criar e gerenciar campanhas por meio destas novas páginas:
 
 Foram adicionadas informações à seção de atividade **[!UICONTROL Advanced JavaScript]** sobre como usar o método task.setCompleted() para finalizar a tarefa e impedir futuras recuperações. [Leia mais](../../workflow/using/sql-code-and-javascript-code.md#adv-js-code-desc)
 
-A seção [Capacidade de delivery](../../delivery/using/about-deliverability.md) foi atualizada e agora inclui links para o novo [Manual de práticas recomendadas de capacidade de delivery da Adobe](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/introduction.html?lang=pt-BR). Todas as informações genéricas relacionadas à capacidade de delivery que podem ser aplicadas a várias soluções da Adobe foram movidas para o [Apêndice do manual de práticas recomendadas](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/additional-resources/general-resources.html?lang=pt-BR#additional-resources).
+A seção [Capacidade de delivery](../../delivery/using/about-deliverability.md) foi atualizada e agora inclui links para o novo [Manual de práticas recomendadas de capacidade de delivery da Adobe](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/introduction.html?lang=pt-BR). Todas as informações genéricas relacionadas à capacidade de delivery que podem ser aplicadas a várias soluções da Adobe foram movidas para o [Apêndice do manual de práticas recomendadas](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/additional-resources/general-resources.html#additional-resources).
 
 ## Fevereiro de 2021 {#release-21.1}
 
