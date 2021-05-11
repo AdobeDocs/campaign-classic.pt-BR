@@ -7,11 +7,11 @@ feature: Visão geral
 role: Business Practitioner
 level: Beginner
 exl-id: 5c0ccaf6-7f82-4e4b-9247-261dbd0f127c
-translation-type: ht
-source-git-commit: 6854d06f8dc445b56ddfde7777f02916a60f2b63
-workflow-type: ht
-source-wordcount: '509'
-ht-degree: 100%
+translation-type: tm+mt
+source-git-commit: 2ce19e135ce1eb47d760c5407446312bc2d3c303
+workflow-type: tm+mt
+source-wordcount: '541'
+ht-degree: 94%
 
 ---
 
@@ -270,21 +270,27 @@ O Adobe Campaign Classic é compatível com todos os sistemas e ferramentas list
 </tbody>
 </table>
 
-## Sistemas operacionais do console do cliente{#ClientConsoleoperatingsystems-gs}
+
+## Console do cliente {#ClientConsoleoperatingsystems}
+
+Os seguintes sistemas operacionais e navegadores são necessários para usar o Console do cliente do Campaign.
+
+### Sistemas operacionais
 
 <table>
 <tbody>
 <tr>
-<td>Windows Server</td>
+<td>Microsoft Windows Server</td>
 <td>
 <p>2016</p>
 <p>2012</p>
 </td>
+<td>
+</td>
 </tr>
 <tr>
-<td>Windows</td>
+<td>Microsoft Windows</td>
 <td>
-<p>Seven</p>
 <p>8</p>
 <p>10 (recomendado para instâncias em japonês)</p>
 </td>
@@ -292,7 +298,31 @@ O Adobe Campaign Classic é compatível com todos os sistemas e ferramentas list
 </tbody>
 </table>
 
-## Mobile SDK{#MobileSDK-gs}
+### Navegadores
+
+<table>
+<tbody>
+<tr>
+<td>
+<p>Microsoft Edge</p>
+</td>
+<td>
+<p>Versão mais recente</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Microsoft Internet Explorer</p>
+</td>
+<td>
+<p>11</p>
+</td>
+</tr>
+</tbody>
+</table>
+
+
+## Mobile SDK{#MobileSDK}
 
 <table>
 <tbody>
@@ -313,11 +343,54 @@ O Adobe Campaign Classic é compatível com todos os sistemas e ferramentas list
 </tbody>
 </table>
 
-## Navegadores{#Browsers-gs}
+## Navegadores{#Browsers}
 
-A versão mais recente é compatível com os seguintes navegadores: Microsoft Edge, Mozilla Firefox, Google Chrome, Safari.
+Os seguintes navegadores são compatíveis com o Campaign for Web Access.
 
-O Internet Explorer 11 é compatível.
+<table>
+<tbody>
+<tr>
+<td>
+<p>Microsoft Edge</p>
+</td>
+<td>
+<p>Versão mais recente</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Mozilla Firefox</p>
+</td>
+<td>
+<p>Versão mais recente</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Google Chrome</p>
+</td>
+<td>
+<p>Versão mais recente</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Safari</p>
+</td>
+<td>
+<p>Versão mais recente</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Microsoft Internet Explorer</p>
+</td>
+<td>
+<p>11º</p>
+</td>
+</tr>
+</tbody>
+</table>
 
 ## Veja mais aqui{#Morelikethis-gs}
 
