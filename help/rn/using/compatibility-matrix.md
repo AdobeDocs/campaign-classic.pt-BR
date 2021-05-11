@@ -8,7 +8,7 @@ role: Business Practitioner
 level: Beginner
 exl-id: b8c1f287-06f4-4c34-8cca-b0c7676abbc2
 translation-type: tm+mt
-source-git-commit: 548ed5710cced016606283198f81a8f13c65ac10
+source-git-commit: 69f6fcd21b27f095781bca4a62153086382f3d7f
 workflow-type: tm+mt
 source-wordcount: '554'
 ht-degree: 93%
@@ -277,7 +277,7 @@ Para saber mais sobre itens obsoletos, visite [esta página](../../rn/using/depr
 
 ## Console do cliente {#ClientConsoleoperatingsystems}
 
-:warning: Os seguintes sistemas operacionais e navegadores são necessários para usar o Console do cliente do Campaign.
+:warning: Os seguintes sistemas operacionais e navegadores são necessários para usar o Console do Cliente do Campaign.
 
 ### Sistemas operacionais
 
