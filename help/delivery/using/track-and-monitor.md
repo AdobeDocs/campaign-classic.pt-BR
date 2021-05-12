@@ -6,9 +6,9 @@ audience: delivery
 content-type: reference
 topic-tags: deliveries-best-practices
 exl-id: a039a288-2e7b-4f35-9885-ead3ed4347af
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: d5579fa1928888a088fe99b685f4d12bf2bde25b
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '430'
 ht-degree: 100%
 
@@ -39,7 +39,7 @@ Dica: verifique a configuração do gerenciamento de tráfego (afinidade IP). Pa
 
 ## Rastreamento {#tracking-deliveries}
 
-Para conhecer melhor o comportamento dos recipients, você pode acompanhar como eles reagem a um delivery: recebimento, abertura, cliques em links, assinaturas canceladas, etc. No Campaign Classic, essas informações são exibidas na guia Rastreamento dos recipients direcionados pelo delivery e na guia Rastreamento de delivery.
+Para conhecer melhor o comportamento dos recipients, você pode acompanhar como eles reagem a um delivery: recebimento, abertura, cliques em links, assinaturas canceladas, etc. No Campaign Classic, essas informações são exibidas na guia Rastreamento dos recipients direcionados pela entrega e na guia Rastreamento da entrega.
 
 **Dica**: o rastreamento de mensagens é habilitado por padrão. Para configurar URLs, selecione a opção Exibir URLs na seção inferior do assistente do delivery. Para cada URL da mensagem, você pode escolher se deseja ativar o rastreamento.
 
