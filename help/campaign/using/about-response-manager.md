@@ -7,21 +7,18 @@ audience: campaign
 content-type: reference
 topic-tags: response-manager
 exl-id: b5c0e960-2afe-4a98-b82c-d47a74659703
-translation-type: ht
-source-git-commit: 6854d06f8dc445b56ddfde7777f02916a60f2b63
-workflow-type: ht
-source-wordcount: '438'
-ht-degree: 100%
+source-git-commit: dc3151a77350aa2b2acd989a57f5b489c1a98962
+workflow-type: tm+mt
+source-wordcount: '434'
+ht-degree: 91%
 
 ---
 
-# Sobre o gestor de resposta{#about-response-manager}
+# Introdução ao Gestor de Resposta da Campanha{#about-response-manager}
 
-## Objetivos {#objectives}
+O Adobe Campaign oferece um complemento de Gestor de Resposta que permite medir o sucesso e a lucratividade das campanhas de marketing ou apresentações de ofertas nos canais de comunicação: email, celular, mala direta etc.
 
-O Adobe Campaign oferece um aplicativo de gestor de respostas (Gestor de Resposta) que permite medir o sucesso e a lucratividade das campanhas de marketing ou apresentações de ofertas de todos os canais de comunicação (email, celular, telefone, mala direta, fax, agência, etc.).
-
-## Conceito de Hipótese {#hypothesis-concept}
+## Hipótese {#hypothesis-concept}
 
 A hipótese pode ser configurada por um determinado período a partir da data de contato para deduzir o comportamento desses destinos após receber um delivery. Essas hipóteses são baseadas em uma tabela de **transaction** que salva as compras e os seus detalhes.
 
@@ -41,7 +38,7 @@ Também é possível calcular todas as reações da família do recipient que re
 
 Cada hipótese está vinculada a uma única tabela de transação. Um delivery ou oferta pode ser vinculado a várias hipóteses.
 
-## Método {#method}
+## Etapas de implementação {#method}
 
 Antes de começar a usar o Gestor de Resposta, consulte [Configuração](../../campaign/using/configuration.md) e execute as configurações necessárias.
 
