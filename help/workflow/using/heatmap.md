@@ -7,10 +7,10 @@ audience: workflow
 content-type: reference
 topic-tags: use-cases
 exl-id: f1016ddf-0c87-4611-a878-d01f3684935f
-source-git-commit: 53d8e2ff56481497c7805b92a7885a662a1924cf
+source-git-commit: 527ac9f4e408228aaa1354693a191c1e77e76b68
 workflow-type: tm+mt
 source-wordcount: '1128'
-ht-degree: 92%
+ht-degree: 91%
 
 ---
 
@@ -115,7 +115,7 @@ No exemplo abaixo, entre as 8h e a 8h05 da manhã, três workflows estão em exe
 
 Há dois casos principais em que o Campaign Workflow HeatMap pode ser útil.
 
-### Redução do número de workflows simultâneos {#reducing-the-number-of-concurrent-workflows}
+### Reduza o número de workflows simultâneos {#reducing-the-number-of-concurrent-workflows}
 
 Como administrador do Campaign, o Workflow HeatMap pode ajudá-lo a entender a carga na instância e planejar workflows novos ou existentes em momentos apropriados.
 
