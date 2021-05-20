@@ -7,11 +7,10 @@ audience: platform
 content-type: reference
 topic-tags: starting-with-adobe-campaign
 exl-id: 4d9c5b24-83a2-4495-a56c-5bc376d69703
-translation-type: tm+mt
 source-git-commit: 2c275751ab86e98652820bf461c617442480c725
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '558'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -22,7 +21,7 @@ O console do Campaign Client é um cliente avançado que permite a conexão com 
 
 >[!CAUTION]
 >
->Verifique a compatibilidade do sistema e das ferramentas com o Console do Cliente Adobe Campaign na [Matriz de Compatibilidade](../../rn/using/compatibility-matrix.md#ClientConsoleoperatingsystems)
+>Verifique a compatibilidade do sistema e das ferramentas com o Console do cliente do Adobe Campaign na [Matriz de compatibilidade](../../rn/using/compatibility-matrix.md#ClientConsoleoperatingsystems)
 
 ## Iniciar o Adobe Campaign {#starting-adobe-campaign}
 
@@ -110,6 +109,6 @@ Saiba mais sobre o [!DNL Gold Standard] [neste artigo](../../rn/using/gs-overvie
 
 **Tópicos relacionados**:
 
-* [Opções de Ajuda e Suporte do Adobe Campaign](../../support.md)
+* [Opções de ajuda e suporte do Adobe Campaign](../../support.md)
 * [Distribuição de Software Adobe Campaign](https://experience.adobe.com/#/downloads/content/software-distribution/br/campaign.html)
 * [Suporte e sessões especializadas para o Adobe Experience Cloud](https://helpx.adobe.com/br/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html)
