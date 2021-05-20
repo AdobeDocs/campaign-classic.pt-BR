@@ -7,11 +7,10 @@ feature: Visão geral
 role: Business Practitioner
 level: Beginner
 exl-id: 07c1f4a3-cf16-4a9b-b402-e13258799f91
-translation-type: tm+mt
 source-git-commit: 9781e313e03489d203e14ab0c426aa1001c7a257
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '4297'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -37,14 +36,14 @@ O [capítulo de gerenciamento de permissões](../../platform/using/access-manage
 
 Saiba como criar e gerenciar campanhas por meio destas novas páginas:
 * [Criar e configurar modelos de campanha](../../campaign/using/marketing-campaign-templates.md)
-* [Deliveries de campanha de marketing](../../campaign/using/marketing-campaign-deliveries.md)
-* [Selecionar a audiência das campanhas](../../campaign/using/marketing-campaign-target.md)
+* [Entregas de campanha de marketing](../../campaign/using/marketing-campaign-deliveries.md)
+* [Selecionar o público das campanhas](../../campaign/using/marketing-campaign-target.md)
 * [Gerenciar documentos associados](../../campaign/using/marketing-campaign-assets.md)
 * [Configurar e gerenciar o processo de aprovação](../../campaign/using/marketing-campaign-approval.md)
 
 Foram adicionadas informações à seção de atividade **[!UICONTROL Advanced JavaScript]** sobre como usar o método task.setCompleted() para finalizar a tarefa e impedir futuras recuperações. [Leia mais](../../workflow/using/sql-code-and-javascript-code.md#adv-js-code-desc)
 
-A seção [Capacidade de delivery](../../delivery/using/about-deliverability.md) foi atualizada e agora inclui links para o novo [Manual de práticas recomendadas de capacidade de delivery da Adobe](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/introduction.html?lang=pt-BR). Todas as informações genéricas relacionadas à capacidade de delivery que podem ser aplicadas a várias soluções da Adobe foram movidas para o [Apêndice do manual de práticas recomendadas](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/additional-resources/general-resources.html#additional-resources).
+A seção [Capacidade de delivery](../../delivery/using/about-deliverability.md) foi atualizada e agora inclui links para o novo [Manual de práticas recomendadas de capacidade de delivery da Adobe](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/introduction.html?lang=pt-BR). Todas as informações genéricas relacionadas à capacidade de delivery que podem ser aplicadas a várias soluções da Adobe foram movidas para o [Apêndice do manual de práticas recomendadas](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/additional-resources/general-resources.html?lang=pt-BR#additional-resources).
 
 ## Fevereiro de 2021 {#release-21.1}
 
@@ -187,7 +186,7 @@ Os vídeos do passo a passo estão disponíveis nos seguintes tópicos:
 
 * [Como configurar e implantar um template do delivery](../../delivery/using/creating-a-delivery-template.md)
 
-* [Como ativar e usar a AMP para emails](../../delivery/using/defining-interactive-content.md)
+* [Como ativar e usar o AMP para emails](../../delivery/using/defining-interactive-content.md)
 
 * [Como personalizar emails usando blocos de conteúdo dinâmico](../../delivery/using/personalization-blocks.md)
 
@@ -195,9 +194,9 @@ Os vídeos do passo a passo estão disponíveis nos seguintes tópicos:
 
 * [Como gerenciar seed e provas em um email](../../delivery/using/steps-defining-the-target-population.md)
 
-* [Como configurar um delivery recorrente](../../workflow/using/recurring-delivery.md)
+* [Como configurar uma entrega recorrente](../../workflow/using/recurring-delivery.md)
 
-* [Como configurar um delivery contínuo](../../workflow/using/continuous-delivery.md)
+* [Como configurar uma entrega contínua](../../workflow/using/continuous-delivery.md)
 
 Foram adicionadas informações sobre as verificações e ações a serem executadas ao obter o erro “Não foi possível resolver o nome do host” após a conexão com um servidor FTP. [Leia mais](../../platform/using/sftp-server-usage.md)
 
@@ -336,7 +335,7 @@ Os guias de [instalação](../../installation/using/general-architecture.md), [p
 
 O guia de instalação está atualizado e sincronizado com a versão mais recente da matriz de compatibilidade. Novos sistemas compatíveis foram adicionados. As ocorrências em sistemas obsoletos e sem suporte foram removidas. [Leia mais](../../installation/using/general-architecture.md)
 
-A matriz de compatibilidade foi atualizada com os conectores do Hadoop 3.0 e Snowflake FDA. [Leia mais](https://helpx.adobe.com/campaign/kb/compatibility-matrix.html)
+A matriz de compatibilidade foi atualizada com os conectores do Hadoop 3.0 e Snowflake FDA. [Leia mais](https://helpx.adobe.com/br/campaign/kb/compatibility-matrix.html)
 
 Uma prática recomendada na afinidade IP foi adicionada ao guia de instalação. [Leia mais](../../installation/using/email-deliverability.md#list-of-ip-addresses-to-use)
 
@@ -354,7 +353,7 @@ O novo parâmetro para a configuração do relatório de URLs está documentado 
 
 A página **Matriz de recursos no local e hospedada do Campaign Classic** foi atualizada com os novos conectores do FDA. [Leia mais](../../installation/using/capability-matrix.md).
 
-A página **Matriz de recursos do Campaign Classic** foi atualizada. [Leia mais](https://helpx.adobe.com/campaign/kb/compatibility-matrix.html)
+A página **Matriz de recursos do Campaign Classic** foi atualizada. [Leia mais](https://helpx.adobe.com/br/campaign/kb/compatibility-matrix.html)
 
 O novo **[!UICONTROL Cleanup of Nmsaddress]** workflow está documentado [aqui](../../production/using/database-cleanup-workflow.md#cleanup-of-nmsaddress).
 
@@ -404,7 +403,7 @@ Sistema de Mensagens Seguras de SMS (TLS) - [Leia mais](https://helpx.adobe.com/
 
 **Outras atualizações de documentação que vêm com a versão**
 
-A documentação MTA aprimorada do Adobe Campaign está disponível. [Leia mais](https://helpx.adobe.com/campaign/kb/acc-campaign-enhanced-mta.html)
+A documentação MTA aprimorada do Adobe Campaign está disponível. [Leia mais](https://helpx.adobe.com/br/campaign/kb/acc-campaign-enhanced-mta.html)
 
 Uma nova seção foi adicionada sobre como solucionar problemas de um workflow que permanece no estado &quot;Start as soon as possible&quot; em uma campanha. [Leia mais](../../production/using/workflow-execution.md#start-as-soon-as-possible-in-campaigns)
 
@@ -466,7 +465,7 @@ As práticas recomendadas para aprimoramentos de desempenho de workflows e deliv
 
 **Novos recursos incluídos na versão 19.1**
 
-Painel de controle - [Leia mais](https://docs.adobe.com/content/help/en/control-panel/using/control-panel-home.html)
+Painel de controle - [Leia mais](https://docs.adobe.com/content/help/pt-BR/control-panel/using/control-panel-home.translate.html)
 
 Trilha de auditoria - [Leia mais](../../production/using/audit-trail.md)
 
@@ -474,7 +473,7 @@ Trilha de auditoria - [Leia mais](../../production/using/audit-trail.md)
 
 Foi criada uma atualização das perguntas frequentes sobre a nova build. [Leia mais](https://helpx.adobe.com/br/campaign/kb/build-upgrade-faq.html)
 
-A [Matriz de compatibilidade](https://helpx.adobe.com/campaign/kb/compatibility-matrix.html) foi atualizada. A lista de sistemas de banco de dados suportados foi atualizada, assim como as versões do Android/iOS e SDKs relacionados. A [Matriz de compatibilidade 19.0](https://helpx.adobe.com/br/campaign/kb/compatibility-matrix-19-0.html) foi arquivada.
+A [Matriz de compatibilidade](https://helpx.adobe.com/br/campaign/kb/compatibility-matrix.html) foi atualizada. A lista de sistemas de banco de dados suportados foi atualizada, assim como as versões do Android/iOS e SDKs relacionados. A [Matriz de compatibilidade 19.0](https://helpx.adobe.com/br/campaign/kb/compatibility-matrix-19-0.html) foi arquivada.
 
 A página &quot;Deprecated and Removed Features in Campaign Classic&quot; foi atualizada. [Leia mais](https://helpx.adobe.com/br/campaign/kb/deprecated-and-removed-features.html)
 
@@ -529,7 +528,7 @@ Foram adicionadas informações sobre o relatório de faturamento.
 Atualização da documentação sobre a integração de públicos-alvo compartilhados.
 [Leia mais](../../integrations/using/configuring-shared-audiences-integration-in-adobe-campaign.md)
 
-As seguintes notas técnicas foram atualizadas: [SMS connector protocol and settings](https://helpx.adobe.com/campaign/kb/sms-connector-protocol-and-settings.html) e [Sequence auto generation](https://helpx.adobe.com/br/campaign/kb/sequence_auto_generation.html#Switchtoadedicatedsequence).
+As seguintes notas técnicas foram atualizadas: [SMS connector protocol and settings](https://helpx.adobe.com/br/campaign/kb/sms-connector-protocol-and-settings.html) e [Sequence auto generation](https://helpx.adobe.com/br/campaign/kb/sequence_auto_generation.html#Switchtoadedicatedsequence).
 
 A seção Technical workflows foi atualizada. [Leia mais](../../workflow/using/about-technical-workflows.md)
 
