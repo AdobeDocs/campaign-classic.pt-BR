@@ -7,11 +7,10 @@ feature: Visão geral
 role: Business Practitioner
 level: Beginner
 exl-id: 5c0ccaf6-7f82-4e4b-9247-261dbd0f127c
-translation-type: tm+mt
 source-git-commit: 69f6fcd21b27f095781bca4a62153086382f3d7f
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '538'
-ht-degree: 93%
+ht-degree: 100%
 
 ---
 
@@ -273,7 +272,7 @@ O Adobe Campaign Classic é compatível com todos os sistemas e ferramentas list
 
 ## Console do cliente {#ClientConsoleoperatingsystems}
 
-:warning: Os seguintes sistemas operacionais e navegadores são necessários para usar o Console do Cliente do Campaign.
+:aviso: os seguintes sistemas operacionais e navegadores são necessários para usar o Console do cliente do Campaign.
 
 ### Sistemas operacionais
 
@@ -311,7 +310,7 @@ O Adobe Campaign Classic é compatível com todos os sistemas e ferramentas list
 </tbody>
 </table>
 
-## Mobile SDK{#MobileSDK}
+## SDK móvel{#MobileSDK}
 
 <table>
 <tbody>
@@ -375,13 +374,13 @@ Os seguintes navegadores são compatíveis com o Campaign for Web Access.
 <p>Microsoft Internet Explorer</p>
 </td>
 <td>
-<p>11º</p>
+<p>11</p>
 </td>
 </tr>
 </tbody>
 </table>
 
-## Veja mais aqui{#Morelikethis-gs}
+## Mais itens similares{#Morelikethis-gs}
 
 * [Notas de versão do Campaign Classic](../../rn/using/latest-release.md)
 * [Guia de instalação](../../installation/using/general-architecture.md)
