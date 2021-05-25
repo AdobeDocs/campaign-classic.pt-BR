@@ -1,24 +1,24 @@
 ---
-solution: Campaign Classic
+audience: end-user
+breadcrumb-title: Central de ajuda
 product: campaign
-sub-product: adobe campaign classic
-title: Central de ajuda do Adobe Campaign Classic v7
-breadcrumb-title: Campaign Classic v7
+title: Guia do Campaign Classic
 breadcrumb-url: /docs/campaign-classic/using/campaign-classic-home.html
 user-guide-description: Projete, planeje, execute, gerencie e otimize campanhas de marketing entre canais que proporcionam um alto retorno sobre o investimento em marketing.
-audience: end-user
+solution: Campaign Classic
+sub-product: adobe campaign classic
 type: Documentation
-source-git-commit: 43f49ecb651e37a7e166f8823c75d938338b952c
+source-git-commit: 0bb3e853299c3ce0dc1bcbc2fd8a0bd4ef110bee
 workflow-type: tm+mt
-source-wordcount: '2522'
+source-wordcount: '2521'
 ht-degree: 99%
 
 ---
 
 
-# Documentação do Adobe Campaign Classic v7 {#campaign-v7}
+# Guia do Adobe Campaign Classic v7 {#using}
 
-+ [Documentação do Campaign Classic v7](campaign-classic-home.md)
++ [Documentação do produto](campaign-classic-home.md)
 + [Atualizações mais recentes](rn/using/documentation-updates.md)
 + Notas de versão {#release-notes}
    + [Introdução às atualizações](rn/using/rn-overview.md)
