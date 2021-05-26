@@ -7,11 +7,10 @@ feature: Perfis e públicos
 role: Business Practitioner, Data Architect
 level: Beginner
 exl-id: 54f1ad6c-54b0-4448-8c38-806dd75c1dae
-translation-type: ht
-source-git-commit: c733b68a06fba9bb24cd1c1995ffc99a1277be87
-workflow-type: ht
-source-wordcount: '906'
-ht-degree: 100%
+source-git-commit: 214838cabeaec082080b3378f7eba837b8af89ad
+workflow-type: tm+mt
+source-wordcount: '899'
+ht-degree: 93%
 
 ---
 
@@ -91,10 +90,6 @@ O layout geral do explorador do Adobe Campaign é apresentado [nesta página](..
 
 Os perfis ativos são aqueles que são contados para fins de cobrança.
 
-A contagem de perfis ativos está disponível somente para **Instâncias de marketing**. Não está disponível para Instâncias de execução, ou seja, instâncias de MID (mid-sourcing) e RT (Centro de mensagens/Mensagens em tempo real).
-
-Se você estiver hospedado no AWS, também será possível monitorar o número de perfis ativos usados em suas instâncias diretamente do Painel de controle do Campaign. Para obter mais informações, consulte a [documentação do Painel de controle do Campaign](https://experienceleague.adobe.com/docs/control-panel/using/performance-monitoring/active-profiles-monitoring.html?lang=pt-BR#performance-monitoring).
-
 A cobrança só afeta perfis que estão **ativos**. Um perfil é considerado ativo quando ele é visado ou recebe comunicação nos últimos 12 meses por meio de qualquer canal.
 
 Os perfis excluídos durante a preparação do delivery (regras de tipologia, quarentenas) não são levados em consideração. Um perfil que foi direcionado por vários deliveries será contado apenas uma vez.
@@ -103,7 +98,13 @@ Os perfis excluídos durante a preparação do delivery (regras de tipologia, qu
 >
 >Os canais Facebook e Twitter não são considerados.
 
-Você pode ter uma visão geral do **[!UICONTROL Number of active profiles]** no menu **[!UICONTROL Administration > Campaign Management > Customer metrics]** do Campaign. A contagem real é executada pelo **[!UICONTROL Number of active billing profiles]** [workflow técnico](../../workflow/using/about-technical-workflows.md) (**[!UICONTROL billingActiveContactCount]**), que é executado diariamente e adiciona os novos dados ao relatório existente para o período atual no menu **[!UICONTROL Customer metrics]**. Cada período dura 12 meses.
+No explorador do Campaign, navegue **[!UICONTROL Administration > Campaign Management > Customer metrics]** para ter uma visão geral do número de perfis ativos. A contagem real é executada pelo **[!UICONTROL Number of active billing profiles]** ([!UICONTROL billingActiveContactCount]) [workflow técnico](../../workflow/using/about-technical-workflows.md). Esse workflow é executado todos os dias e adiciona os novos dados ao relatório existente para o período atual na pasta **[!UICONTROL Customer metrics]**.
+
+A contagem de perfis ativos está disponível somente para **Instâncias de marketing**. Não está disponível para Instâncias de execução, ou seja, instâncias de MID (mid-sourcing) e RT (Centro de mensagens/Mensagens em tempo real).
+
+>[!NOTE]
+>
+>Você também pode monitorar o número de perfis ativos em sua instância diretamente do Painel de controle do Campaign. Para obter mais informações, consulte a [documentação do Painel de controle do Campaign](https://experienceleague.adobe.com/docs/control-panel/using/performance-monitoring/active-profiles-monitoring.html?lang=pt-BR#performance-monitoring).
 
 ## Vídeo tutorial {#create-profiles-video}
 
