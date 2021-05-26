@@ -7,11 +7,10 @@ audience: integrations
 content-type: reference
 topic-tags: acs-connector
 exl-id: 689b6117-5143-4f85-8582-2c74cae72ca2
-translation-type: ht
-source-git-commit: 6854d06f8dc445b56ddfde7777f02916a60f2b63
-workflow-type: ht
-source-wordcount: '1990'
-ht-degree: 100%
+source-git-commit: bce114f36d1ec4582fc79e750d48155ba0d7cd1f
+workflow-type: tm+mt
+source-wordcount: '1988'
+ht-degree: 99%
 
 ---
 
@@ -85,7 +84,7 @@ A replicação de IDs de delivery e logs de email permitem acessar o histórico 
 
 O ACS Connector sincroniza quarentenas entre o Campaign v7 e o Campaign Standard.
 
-Por exemplo, um perfil que foi replicado do Campaign v7 para o Campaign Standard inclui um endereço de email. Se o endereço de email for colocado em quarentena pelo Campaign Standard, os dados serão passados para o Campaign v7 durante a próxima sincronização. Para obter mais informações sobre quarentenas, consulte a [Gestão de quarentena](../../delivery/using/understanding-quarantine-management.md) e [Quarentenas do Campaign Standard](https://docs.adobe.com/content/help/pt-BR/campaign-standard/using/testing-and-sending/monitoring-messages/understanding-quarantine-management.html).
+Por exemplo, um perfil que foi replicado do Campaign v7 para o Campaign Standard inclui um endereço de email. Se o endereço de email for colocado em quarentena pelo Campaign Standard, os dados serão passados para o Campaign v7 durante a próxima sincronização. Para obter mais informações sobre quarentenas, consulte a [Gestão de quarentena](../../delivery/using/understanding-quarantine-management.md) e [Quarentenas do Campaign Standard](https://experienceleague.adobe.com/docs/campaign-standard/using/testing-and-sending/monitoring-messages/understanding-quarantine-management.html).
 
 ### Uso de perfis replicados {#using-replicated-profiles}
 
