@@ -7,11 +7,10 @@ audience: integrations
 content-type: reference
 topic-tags: acs-connector
 exl-id: 88e581cf-43cd-4c43-9347-d016c62fdf42
-translation-type: ht
-source-git-commit: 6854d06f8dc445b56ddfde7777f02916a60f2b63
-workflow-type: ht
-source-wordcount: '1153'
-ht-degree: 100%
+source-git-commit: bce114f36d1ec4582fc79e750d48155ba0d7cd1f
+workflow-type: tm+mt
+source-wordcount: '1131'
+ht-degree: 96%
 
 ---
 
@@ -139,15 +138,15 @@ Ao criar um workflow de delivery no Campaign Standard, é possível usar esse p�
 
 ## Envio e monitoramento do delivery {#send-and-monitor-your-delivery}
 
-Quando o delivery e seu conteúdo estiverem prontos, envie o delivery, conforme descrito com mais detalhes [nesta seção](https://docs.adobe.com/content/help/pt-BR/campaign-standard/using/managing-processes-and-data/channel-activities/email-delivery.html):
+Quando o delivery e seu conteúdo estiverem prontos, envie o delivery:
 
 1. Execute o workflow de delivery. Essa etapa prepara o email para envio.
 1. No painel de delivery, confirme manualmente se o delivery pode ser enviado.
 1. Monitore relatórios e logs de delivery:
 
-   * **No Campaign Standard**: acesse [reports](https://docs.adobe.com/content/help/pt-BR/campaign-standard/using/reporting/about-reporting/about-dynamic-reports.html) e [logs](https://docs.adobe.com/content/help/pt-BR/campaign-standard/using/testing-and-sending/monitoring-messages/monitoring-a-delivery.html) relacionados como em qualquer delivery.
+   * **No Campaign Standard**: acesse [reports](https://experienceleague.adobe.com/docs/campaign-standard/using/reporting/about-reporting/about-dynamic-reports.html) e [logs](https://experienceleague.adobe.com/docs/campaign-standard/using/testing-and-sending/monitoring-messages/monitoring-a-delivery.html) relacionados como em qualquer delivery.
    * **no Campaign v7 e no Campaign Standard**: IDs de delivery, logs amplos de email e de rastreamento de email são sincronizados com o Campaign v7. Você pode obter a visão de 360° das campanhas de marketing do Campaign v7.
 
       As quarentenas são sincronizados automaticamente de volta ao Campaign v7. Isso possibilita que as informações não entregues sejam consideradas para o próximo target realizado no Campaign v7.
 
-      Você pode encontrar mais informações sobre gestão de quarentena no Campaign Standard [nesta seção](https://docs.adobe.com/content/help/pt-BR/campaign-standard/using/testing-and-sending/monitoring-messages/understanding-quarantine-management.html).
+      Você pode encontrar mais informações sobre gestão de quarentena no Campaign Standard [nesta seção](https://experienceleague.adobe.com/docs/campaign-standard/using/testing-and-sending/monitoring-messages/understanding-quarantine-management.html?lang=en).
