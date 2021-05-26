@@ -7,11 +7,10 @@ audience: platform
 content-type: reference
 topic-tags: administration-basics
 exl-id: 4a17d5e8-c73f-42e7-b641-0fee6a52c5c0
-translation-type: tm+mt
-source-git-commit: 37802e52f1d1d38d9c3d59c439f23114a594bfef
+source-git-commit: bce114f36d1ec4582fc79e750d48155ba0d7cd1f
 workflow-type: tm+mt
-source-wordcount: '1543'
-ht-degree: 80%
+source-wordcount: '1541'
+ht-degree: 78%
 
 ---
 
@@ -189,7 +188,7 @@ As configurações da conta externa dependem do mecanismo de banco de dados. Sai
 * Configurar o acesso ao [Sybase IQ](../../installation/using/configure-fda-sybase.md)
 * Configurar o acesso ao [Teradata](../../installation/using/configure-fda-teradata.md)
 
-### Conexão do Facebook {#facebook-connect-external-account}
+### Facebook connect {#facebook-connect-external-account}
 
 A conta externa **[!UICONTROL Facebook Connect]** permite exibir conteúdo personalizado em seus aplicativos do Facebook, facilitando a aquisição de prospects por meio desta rede social.
 
@@ -243,7 +242,7 @@ Para se conectar ao console do Adobe Campaign por meio de uma Adobe ID, é neces
 
 * **[!UICONTROL IMS organization ID]**
 
-   ID da sua organização IMS. Para encontrar o ID da organização, consulte esta [página](https://docs.adobe.com/content/help/pt-BR/core-services/interface/manage-users-and-products/faq.html) (**Onde encontrar a ID da organização IMS?**).
+   ID da sua organização IMS. Para encontrar a ID da organização, consulte [esta página](https://experienceleague.adobe.com/docs/core-services/interface/manage-users-and-products/faq.html) (**Onde posso encontrar a ID da organização IMS?**).
 
 * **[!UICONTROL Association mask]**
 
@@ -257,7 +256,7 @@ Para se conectar ao console do Adobe Campaign por meio de uma Adobe ID, é neces
 
    Nome do seu locatário do Adobe Experience Cloud.
 
-Para obter mais informações sobre essa configuração, consulte esta [página](../../integrations/using/configuring-ims.md).
+Para obter mais informações sobre essa configuração, consulte [esta página](../../integrations/using/configuring-ims.md).
 
 ## Web Analytics {#web-analytics-external-account}
 
