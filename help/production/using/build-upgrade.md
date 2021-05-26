@@ -6,20 +6,19 @@ description: Saiba mais sobre as principais etapas para atualizar para uma nova 
 audience: production
 content-type: reference
 topic-tags: updating-adobe-campaign
-translation-type: tm+mt
-source-git-commit: 7b1e6dd00943e10dff693d78b3aa7cf2ad3e6727
+exl-id: c5a9c99a-4078-45d8-847b-6df9047a2fe2
+source-git-commit: bce114f36d1ec4582fc79e750d48155ba0d7cd1f
 workflow-type: tm+mt
-source-wordcount: '2355'
+source-wordcount: '2353'
 ht-degree: 4%
 
 ---
-
 
 # Atualização de uma build{#performing-a-build-upgrade}
 
 Esta seção fornecerá uma apresentação detalhada sobre o processo de atualização e as etapas para identificar e resolver conflitos.
 
-A atualização da build deve ser realizada com cuidado, seus impactos devem ser totalmente considerados previamente e o procedimento deve ser concluído com um alto nível de disciplina. Para garantir uma atualização bem-sucedida, verifique se apenas usuários especialistas executam as etapas descritas abaixo. Além disso, recomendamos entrar em contato com o [Atendimento ao cliente do Adobe](https://helpx.adobe.com/br/enterprise/admin-guide.html) antes de iniciar qualquer atualização.
+A atualização da build deve ser realizada com cuidado, seus impactos devem ser totalmente considerados previamente e o procedimento deve ser concluído com um alto nível de disciplina. Para garantir uma atualização bem-sucedida, verifique se apenas usuários especialistas executam as etapas descritas abaixo. Além disso, recomendamos entrar em contato com o [Atendimento ao cliente do Adobe](https://helpx.adobe.com/br/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html) antes de iniciar qualquer atualização.
 
 Os seguintes pré-requisitos são necessários:
 
@@ -84,7 +83,7 @@ Antes de iniciar a atualização da build, os clientes locais precisam executar 
 
 1. Obtenha a versão mais recente do seu [arquivo de configuração do servidor](../../installation/using/the-server-configuration-file.md).
 
-1. [Baixe a build](https://experience.adobe.com/#/downloads/content/software-distribution/br/campaign.html) mais recente. [Saiba mais](https://docs.adobe.com/content/help/pt-BR/experience-cloud/software-distribution/home.html).
+1. [Baixe a build](https://experience.adobe.com/#/downloads/content/software-distribution/en/campaign.html) mais recente. [Saiba mais](https://experienceleague.adobe.com/docs/experience-cloud/software-distribution/home.html?lang=pt-BR).
 
 Você também precisa saber todas as [linhas de comando úteis](../../installation/using/command-lines.md) antes de iniciar uma atualização de compilação:
 
@@ -415,4 +414,4 @@ Estas são as etapas para executar uma mesclagem complexa:
 * [Perguntas frequentes de atualização de build](../../platform/using/faq-build-upgrade.md)
 * [Notas de versão do Campaign Classic ](../../rn/using/rn-overview.md)
 * [Opções de ajuda e suporte para o Campaign Classic](../../support.md)
-* [[!DNL Gold Standard] programa](../../rn/using/gs-overview.md)
+* [Programa do [!DNL Gold Standard]](../../rn/using/gs-overview.md)
