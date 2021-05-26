@@ -7,11 +7,10 @@ audience: integrations
 content-type: reference
 topic-tags: connecting-via-an-adobe-id
 exl-id: 8dad8fa9-674c-433c-af30-8c6d0aadf525
-translation-type: ht
-source-git-commit: 2c47a3e42260a0f04d2c9a665f28c532212997f8
-workflow-type: ht
-source-wordcount: '191'
-ht-degree: 100%
+source-git-commit: bce114f36d1ec4582fc79e750d48155ba0d7cd1f
+workflow-type: tm+mt
+source-wordcount: '189'
+ht-degree: 96%
 
 ---
 
@@ -32,12 +31,11 @@ Usuários do Campaign pode se conectar ao Adobe Campaign usando sua Adobe ID. Es
 >Se você estiver se conectando ao Campaign pelo Serviço de identidade da Adobe (IMS), será necessário atualizar para a compilação mais recente para poder se conectar ao Campaign depois de **30 de junho de 2021**. Essa atualização é obrigatória para o servidor do Campaign e o console do cliente. Dependendo da sua versão atual, é necessário atualizar para uma das seguintes versões:
 >
 > * [Campaign [!DNL Gold Standard] 11](../../rn/using/gold-standard.md)
-> * [Campaign 20.3.3](../../rn/using/latest-release.md)
-> * [Campaign 20.2.5](../../rn/using/release--20-2.md)
-> * [Campaign 20.1.4](../../rn/using/release--20-1.md)
-> * [Campaign 19.2.4](../../rn/using/release--19-2.md)
-> * [Campaign 19.1.8](../../rn/using/release--19-1.md)
->
+* [Campaign 20.3.3](../../rn/using/latest-release.md)
+* [Campaign 20.2.5](../../rn/using/release--20-2.md)
+* [Campaign 20.1.4](../../rn/using/release--20-1.md)
+* [Campaign 19.2.4](../../rn/using/release--19-2.md)
+* [Campaign 19.1.8](../../rn/using/release--19-1.md)
 
 
 
@@ -45,6 +43,6 @@ Usuários do Campaign pode se conectar ao Adobe Campaign usando sua Adobe ID. Es
 
 | Páginas úteis | Recursos adicionais |
 |---|---|
-| [Configuração de IMS](../../integrations/using/configuring-ims.md) | [Perguntas frequentes sobre a Experience Cloud](https://docs.adobe.com/content/help/pt-BR/core-services/interface/manage-users-and-products/faq.html) |
+| [Configuração de IMS](../../integrations/using/configuring-ims.md) | [Perguntas frequentes sobre a Experience Cloud](https://experienceleague.adobe.com/docs/core-services/interface/manage-users-and-products/faq.html) |
 | [Implementação de IMS](../../integrations/using/implementing-ims.md) | [Gerenciamento de acesso](../../platform/using/access-management.md) |
 | [Solução de problemas com o IMS](../../integrations/using/ims-troubleshooting.md) | [Instalação de pacotes do Campaign](../../installation/using/installing-campaign-standard-packages.md) |
