@@ -7,11 +7,10 @@ audience: workflow
 content-type: reference
 topic-tags: use-cases
 exl-id: 38006cca-e945-4b9d-8e2d-ed537b8541d9
-translation-type: ht
-source-git-commit: 6854d06f8dc445b56ddfde7777f02916a60f2b63
-workflow-type: ht
-source-wordcount: '881'
-ht-degree: 100%
+source-git-commit: bce114f36d1ec4582fc79e750d48155ba0d7cd1f
+workflow-type: tm+mt
+source-wordcount: '879'
+ht-degree: 99%
 
 ---
 
@@ -27,7 +26,7 @@ Para configurar esse caso de uso, criamos o seguinte workflow para construção 
 
 Esse workflow (execução diária) seleciona todos os recipients que fazem aniversário na data atual.
 
-![](assets/do-not-localize/how-to-video.png) Esse caso de uso também pode ser encontrado no formato de vídeo. Para obter mais informações, consulte o vídeo [Criação de um workflow](https://docs.adobe.com/content/help/pt-BR/campaign-classic-learn/tutorials/automating-with-workflows/creating-a-workflow.html).
+![](assets/do-not-localize/how-to-video.png) Esse caso de uso também pode ser encontrado no formato de vídeo. Para obter mais informações, consulte o vídeo [Criação de um workflow](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/automating-with-workflows/creating-a-workflow.html).
 
 Para fazer isso, crie uma campanha e clique na guia **[!UICONTROL Targeting and workflows]**. Para obter mais informações, consulte a seção [Building the main target in a workflow](../../campaign/using/marketing-campaign-deliveries.md#building-the-main-target-in-a-workflow).
 
