@@ -8,9 +8,9 @@ content-type: reference
 topic-tags: tasks--resources-and-budgets
 exl-id: 8cf4d30d-f914-438d-8836-030202b6a449
 source-git-commit: 42040c519a9430ff0529913c1d567e9315b1a95d
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '374'
-ht-degree: 66%
+ht-degree: 100%
 
 ---
 
@@ -28,9 +28,9 @@ Os operadores do Adobe Campaign podem coordenar suas ações e aprovar seu progr
 
 Assim, no contexto dos programas e do subprogramas de planos de marketing, as tarefas podem ser criadas e atribuídas aos operadores relacionados, e depois gerenciadas durante todas as suas fases.
 
-**O** MRM também permite gerenciar recursos de marketing nos quais vários participantes estão envolvidos: a integridade e o monitoramento dos recursos são executados por meio de um painel dedicado.
+**O MRM** também permite que você gerencie recursos de marketing em que vários participantes estão envolvidos: a integridade e o monitoramento dos recursos são realizados por meio de um painel dedicado.
 
-Finalmente, a capacidade de gerenciamento de orçamento é estendida para direcionamentos e gerenciamento de linhas de despesas e relatórios integrados estendidos. Em seguida, você pode monitorar e medir a produtividade e o desempenho de todas as atividades de marketing.
+Por fim, a capacidade de gerenciamento de orçamento é estendida para direcionamentos e gerenciamento de linhas de despesas e relatórios integrados estendidos. Em seguida, você pode monitorar e medir a produtividade e o desempenho de todas as atividades de marketing.
 
 ## Conceitos e terminologia {#core-concepts}
 
@@ -52,11 +52,11 @@ No contexto do Gerenciamento de recursos de marketing do Adobe Campaign, os segu
 >
 >Para obter mais informações sobre o espaço de trabalho do Adobe Campaign, consulte [esta seção](../../platform/using/adobe-campaign-workspace.md).
 >  
->Os deliveries e os canais de comunicação estão detalhados em [this section](../../delivery/using/steps-about-delivery-creation-steps.md).
+>Os deliveries e os canais de comunicação estão detalhados [nesta seção](../../delivery/using/steps-about-delivery-creation-steps.md).
 >
->As funcionalidades da campanha de marketing são detalhadas em [nesta seção](../../campaign/using/accessing-marketing-campaigns.md).
+>As funcionalidades da campanha de marketing são detalhadas [nesta seção](../../campaign/using/accessing-marketing-campaigns.md).
 
-Com o complemento Marketing Resource Management (MRM), os planos e programas vêm com recursos adicionais listados abaixo:
+Com o complemento de Gerenciamento de recursos de marketing (MRM), os planos e programas vêm com os recursos adicionais listados abaixo:
 
 * **Gerenciamento de orçamento**. [Saiba mais](../../campaign/using/controlling-costs.md)
 
