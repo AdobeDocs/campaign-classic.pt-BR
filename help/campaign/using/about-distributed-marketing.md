@@ -8,9 +8,9 @@ content-type: reference
 topic-tags: distributed-marketing
 exl-id: c166409b-e040-491e-840a-a41310935d75
 source-git-commit: 42040c519a9430ff0529913c1d567e9315b1a95d
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1132'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -22,7 +22,7 @@ ht-degree: 98%
 >:warning: This capability is not available in Campaign v8. [Learn more](https://experienceleague.adobe.com/docs/campaign/campaign-v8/campaign-home.html)
 -->
 
-O Adobe Campaign oferece um aplicativo de **Marketing distribuído** para implementar campanhas cooperativas entre entidades centrais (sede, departamentos de marketing etc.) e entidades locais (pontos de vendas, agências regionais etc.). Essa cooperação é baseada em um espaço de trabalho compartilhado conhecido como **[!UICONTROL list of campaign packages]**, em que templates de campanha e instâncias criadas centralmente são oferecidos a entidades locais.
+O Adobe Campaign oferece um aplicativo de **Marketing distribuído** para implementar campanhas cooperativas entre entidades centrais (sedes, departamentos de marketing etc.) e entidades locais (pontos de vendas, agências regionais etc.). Essa cooperação é baseada em um espaço de trabalho compartilhado conhecido como **[!UICONTROL list of campaign packages]**, em que templates de campanha e instâncias criadas centralmente são oferecidos a entidades locais.
 
 A entidade central fornece campanhas que entidades locais poderão usar. As campanhas são materializadas por pacotes que representam campanhas locais ou colaborativas. Para usar uma campanha, a entidade local deverá fazer solicitá-la e a solicitação deverá ser aprovada.
 
@@ -59,7 +59,7 @@ A entidade central fornece campanhas que entidades locais poderão usar. As camp
 
 * **Pacote de campanha**
 
-   Template (ou instância de campanha) criado por uma entidade central e disponibilizado para um conjunto de entidades locais.
+   Modelo (ou instância de campanha) criado por uma entidade central e disponibilizado para um conjunto de entidades locais.
 
 * **Campanha local**
 
@@ -82,9 +82,9 @@ A entidade central fornece campanhas que entidades locais poderão usar. As camp
 
 **Solicitar pacotes de campanha**
 
-Se uma entidade local se registra em uma campanha, isso é transformado em um pedido que reagrupa todas as informações relativas à localização da campanha.
+Se uma entidade local se registra para uma campanha, isso é feito em um pedido que reagrupa todas as informações relativas à localização da campanha.
 
-## Espaço de trabalho {#workspace}
+## Workspace {#workspace}
 
 A lista de pacotes da campanha pode ser acessada na guia **Campanhas**: clique no link **[!UICONTROL Campaign packages]**.
 
@@ -149,7 +149,7 @@ O procedimento de implementação depende do tipo de pacote de campanha usado e 
 
 1. Crie um formulário web (Adobe ou extranet) que permita exibir parâmetros de localização, avalie o alvo e o orçamento, bem como pré-visualize o conteúdo e aprove o pedido.
 
-   Para **collaborative campaigns (by target approval)**, crie a tabela onde as aprovações de cada entidade local serão salvas.
+   Para **campanhas colaborativas (por aprovação de target)**, crie a tabela em que as aprovações de cada entidade local serão salvas.
 
 ### Tarefas do administrador funcional {#functional-administrator-side}
 
