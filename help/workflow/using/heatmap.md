@@ -1,24 +1,24 @@
 ---
 solution: Campaign Classic
 product: campaign
-title: Workflow HeatMap da campanha
+title: Workflow HeatMap do Campaign
 description: Monitore seus workflows do com o Workflow HeatMap
 audience: workflow
 content-type: reference
 topic-tags: use-cases
 exl-id: f1016ddf-0c87-4611-a878-d01f3684935f
 source-git-commit: e6969a3ed61bde692b2f72b3711f12ce46a0025f
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1128'
-ht-degree: 91%
+ht-degree: 100%
 
 ---
 
 # Workflow HeatMap {#workflow-heatmap}
 
-O Workflow HeatMap do Campaign consiste em uma representação gráfica colorida de todos os workflows que estão sendo executados no momento. Ela só está disponível para **Administradores do Campaign**.
+O Workflow HeatMap do Campaign consiste em uma representação gráfica colorida de todos os workflows que estão sendo executados no momento. Ele só está disponível para **Administradores do Campaign**.
 
-Descubra outras maneiras de monitorar os processos do Campaign em [esta página](../../production/using/monitoring-guidelines.md).
+Descubra outras maneiras de monitorar os processos do Campaign [nesta página](../../production/using/monitoring-guidelines.md).
 
 ## Introdução ao Workflow HeatMap {#about-the-workflow-heatmap}
 
@@ -66,7 +66,7 @@ O uso do Workflow HeatMap requer uma boa compreensão dos seguintes conceitos: [
 
    ![](assets/wkf_monitoring_filters_duration.png)
 
-1. Você também pode escolher um workflow específico na lista suspensa **[!UICONTROL Workflows]**.
+1. Você também pode escolher um fluxo de trabalho específico na lista suspensa **[!UICONTROL Workflows]**:
 
    ![](assets/wkf_monitoring_filters_workflows.png)
 
@@ -111,11 +111,11 @@ No exemplo abaixo, entre as 8h e a 8h05 da manhã, três workflows estão em exe
 1. Clique na ID ou no nome do workflow para abri-lo diretamente.
 1. Para voltar para a exibição do **[!UICONTROL Campaign Workflow HeatMap]**, clique no botão **[!UICONTROL Home]**.
 
-## Casos de uso: use o HeatMap para executar ações {#use-cases--using-the-heatmap-to-take-actions}
+## Casos de uso: usar o HeatMap para realizar ações {#use-cases--using-the-heatmap-to-take-actions}
 
-Há dois casos principais em que o Campaign Workflow HeatMap pode ser útil.
+Há dois casos principais em que o Workflow HeatMap do Campaign pode ser útil.
 
-### Reduza o número de workflows simultâneos {#reducing-the-number-of-concurrent-workflows}
+### Reduzir o número de workflows simultâneos {#reducing-the-number-of-concurrent-workflows}
 
 Como administrador do Campaign, o Workflow HeatMap pode ajudá-lo a entender a carga na instância e planejar workflows novos ou existentes em momentos apropriados.
 
@@ -130,9 +130,9 @@ Como administrador do Campaign, o Workflow HeatMap pode ajudá-lo a entender a c
    * Se você encontrar problemas de desempenho e se uma ou mais células vermelhas forem exibidas na grade, considere alterar a hora de início de vários workflows. Solicite aos usuários de marketing que movam workflows manualmente de períodos ocupados (&quot;ativos&quot;) para períodos mais disponíveis. Isso deve manter um nível estável de atividade ao longo do dia.
    * Para evitar picos e a sobrecarga da instância, verifique o HeatMap antes de planejar novos workflows e escolha o melhor momento. Considere os intervalos de tempo correspondentes às células cinza ou verde na grade para iniciar novos workflows.
 
-### Encontre workflows de longa duração que afetam desempenhos {#finding-long-running-workflows-that-impact-performance}
+### Encontrar workflows de longa duração que afetam desempenhos {#finding-long-running-workflows-that-impact-performance}
 
-Como administrador do Campaign, o Workflow HeatMap ajuda a encontrar os workflows mais longos que podem retardar a atividade.
+Como administrador do Campaign, o Workflow HeatMap ajuda você a encontrar os workflows mais longos que podem retardar a atividade.
 
 1. Na exibição do **[!UICONTROL Campaign Workflow HeatMap]**, clique no botão **[!UICONTROL Filters]**.
 1. Defina a duração como 1 hora.
@@ -146,7 +146,7 @@ Como administrador do Campaign, o Workflow HeatMap ajuda a encontrar os workflow
    * Aconselhe os usuários de marketing a dividirem os workflows mais longos para reduzir o tempo de processamento.
    * Inicie uma análise mais profunda de workflows específicos e atividades específicas (como JavaScript, importação, exportação etc.) para isolar os problemas e resolvê-los com mais facilidade.
 
-## Use o HeatMap para melhorar o planejamento do workflow {#example--using-the-heatmap-to-improve-workflow-planning}
+## Usar o HeatMap para aprimorar o planejamento do fluxo de trabalho {#example--using-the-heatmap-to-improve-workflow-planning}
 
 O exemplo abaixo mostra como o planejamento pode ser mais eficiente e como o desempenho pode ser melhorado ao usar o Adobe Campaign Workflow HeatMap.
 
