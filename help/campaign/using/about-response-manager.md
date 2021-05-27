@@ -8,15 +8,15 @@ content-type: reference
 topic-tags: response-manager
 exl-id: b5c0e960-2afe-4a98-b82c-d47a74659703
 source-git-commit: dc3151a77350aa2b2acd989a57f5b489c1a98962
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '434'
-ht-degree: 91%
+ht-degree: 100%
 
 ---
 
-# Introdução ao Gestor de Resposta da Campanha{#about-response-manager}
+# Introdução ao gestor de resposta do Campaign{#about-response-manager}
 
-O Adobe Campaign oferece um complemento de Gestor de Resposta que permite medir o sucesso e a lucratividade das campanhas de marketing ou apresentações de ofertas nos canais de comunicação: email, celular, mala direta etc.
+O Adobe Campaign oferece um complemento de Gerenciamento de resposta que permite medir o sucesso e a lucratividade de campanhas de marketing ou propostas de oferta em canais de comunicação: email, celular, correspondência direta etc.
 
 ## Hipótese {#hypothesis-concept}
 
