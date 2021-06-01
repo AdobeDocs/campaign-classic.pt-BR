@@ -1,28 +1,27 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: Rastreamento em pilha no Linux
 description: Rastreamento em pilha no Linux
 audience: production
 content-type: reference
 topic-tags: troubleshooting
-translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+exl-id: 91662d6d-2177-4440-b31f-7b031bd953cb
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '119'
 ht-degree: 11%
 
 ---
 
-
 # Rastreamento em pilha no Linux{#stack-trace-in-linux}
 
-Um **rastreio de pilha** representa um rastreio contido num ficheiro de tipo **core**. Esse arquivo é gerado no evento de um erro de computador. Ele pode identificar a origem do erro.
+Um **rastreamento de pilha** representa um rastreamento contido em um arquivo de tipo **core**. Esse arquivo é gerado no caso de um erro de computador. Ele pode identificar a origem do erro.
 
 >[!NOTE]
 >
->* Um arquivo **core** é chamado **core.`<num>`**.
->* **gdb - O** Depurador GNU deve estar instalado no computador.
+>* Um arquivo **core** é nomeado **core.`<num>`**.
+>* **gdb - O** Depurador GNU deve ser instalado no computador.
+
 >
 
 
@@ -54,9 +53,9 @@ gdb nlserver <coreFile>
 #16 0x5565918a in clone () from /lib/tls/libc.so.6
 ```
 
-O suporte técnico da Adobe Campaign pode solicitar que você execute esse comando usando um executável específico (a ser fornecido por nós).
+O suporte técnico da Adobe Campaign pode solicitar que você execute este comando usando um executável específico (a ser fornecido por nós).
 
-Nesse caso, basta executar o seguinte comando substituindo **nlserver** pelo executável fornecido pela Adobe Campaign:
+Nesse caso, basta executar o seguinte comando, substituindo **nlserver** pelo executável fornecido pelo Adobe Campaign:
 
 ```
 gdb nlserver <coreFile>
@@ -67,4 +66,3 @@ Por exemplo:
 ```
 gdb nlserver.1823 <coreFile>
 ```
-
