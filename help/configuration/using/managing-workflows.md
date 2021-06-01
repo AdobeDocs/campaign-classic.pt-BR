@@ -1,31 +1,28 @@
 ---
-solution: Campaign Classic
 product: campaign
-title: Gerenciamento de fluxos de trabalho
-description: Gerenciamento de fluxos de trabalho
+title: Gerenciamento de workflows
+description: Gerenciamento de workflows
 audience: configuration
 content-type: reference
 topic-tags: use-a-custom-recipient-table
-translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+exl-id: 617b0050-6b04-4c68-9f63-511baae99f41
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '134'
 ht-degree: 11%
 
 ---
 
-
 # Gerenciamento de fluxos de trabalho{#managing-workflows}
 
-Por padrão, seus novos workflows se baseiam em um modelo de fluxo de trabalho que foi pré-configurado e baseado em uma tabela de recipient (nms:recipient). Para que eles sejam baseados automaticamente na tabela personalizada de recipient referenciados na opção **Nms_DefaultRcpSchema** (consulte [Configuração da interface](../../configuration/using/configuring-the-interface.md) seção), é necessário criar um novo modelo de fluxo de trabalho.
+Por padrão, seus novos workflows são baseados em um template de workflow que foi pré-configurado e baseado em uma tabela de recipient (nms:recipient). Para que eles sejam baseados automaticamente na tabela personalizada de recipients referenciados na opção **Nms_DefaultRcpSchema** (consulte [Configuração da interface](../../configuration/using/configuring-the-interface.md) seção), você deve criar um novo modelo de workflow.
 
-Crie um novo modelo pelo nó **[!UICONTROL Resources > Templates > Workflow templates]**. Nas propriedades do modelo, as dimensões fornecidas correspondem à tabela de recipient externos.
+Crie um novo template através do nó **[!UICONTROL Resources > Templates > Workflow templates]** . Nas propriedades do modelo, as dimensões fornecidas correspondem à tabela de recipients externos.
 
-Ao basear seus novos workflows em um modelo criado recentemente, sua tabela personalizada será selecionada por padrão para o direcionamento global e dimensões do filtro do fluxo de trabalho.
+Ao basear seus novos fluxos de trabalho em um modelo criado recentemente, a tabela personalizada será selecionada por padrão para as dimensões de filtragem e direcionamento global do fluxo de trabalho.
 
-Todas as atividades usadas em seu fluxo de trabalho usarão sua tabela personalizada sem precisar de qualquer configuração manual adicional.
+Todas as atividades usadas no workflow usarão a tabela personalizada sem a necessidade de qualquer configuração manual adicional.
 
 Para obter mais informações sobre fluxos de trabalho, consulte [esta seção](../../workflow/using/about-workflows.md).
 
 ![](assets/cfg_external_table_workflow.png)
-
