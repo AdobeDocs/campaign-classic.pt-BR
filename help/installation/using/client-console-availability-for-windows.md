@@ -1,19 +1,17 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: Disponibilidade do console do cliente para Windows
 description: Disponibilidade do console do cliente para Windows
 audience: installation
 content-type: reference
 topic-tags: installing-campaign-in-windows-
-translation-type: tm+mt
-source-git-commit: 1b02c3870ddc01705f01ea992e734cf0810e003a
+exl-id: 57845eae-1f1a-42f4-b2ba-46d454677ae0
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '333'
 ht-degree: 4%
 
 ---
-
 
 # Disponibilidade do console do cliente para Windows{#client-console-availability-for-windows}
 
@@ -21,7 +19,7 @@ Para que os usuários do Adobe Campaign possam fazer logon na instância criada 
 
 ## Disponibilizar o console do cliente
 
-Quando o computador usado para iniciar um servidor de aplicativos do Adobe Campaign (**nlserver web**) recebe conexões de usuário do console do cliente, você pode configurá-lo para disponibilizar o programa de configuração do cliente rico do Adobe Campaign por meio de uma interface HTML. Sempre que uma nova versão do console do cliente estiver disponível, os usuários serão convidados a baixá-la ao iniciar o console do cliente.
+Quando o computador usado para iniciar um servidor de aplicativos do Adobe Campaign (**nlserver web**) recebe conexões de usuário do console do cliente, você pode configurá-lo para disponibilizar o programa de configuração para o cliente avançado do Adobe Campaign por meio de uma interface HTML. Sempre que uma nova versão do console do cliente estiver disponível, os usuários serão convidados a baixá-la ao iniciar o console do cliente.
 
 Para fazer isso, você deve:
 
@@ -30,7 +28,7 @@ Para fazer isso, você deve:
    Esse arquivo é chamado `setup-client-7.X.XXXX.exe` para v7 ou `setup-client-6.X.XXXX.exe` para v6.1, onde `X` é a subversão do Adobe Campaign e `XXXX` é o número da compilação.
 
 1. Copie e cole este pacote na pasta de instalação do Adobe Campaign (no servidor de marketing para instalações híbridas), em **/datakit/nl/eng/jsp**.
-1. Inicie o servidor do Adobe Campaign.
+1. Inicie o servidor Adobe Campaign.
 
 Os usuários do Campaign podem então baixar o programa de instalação do console por meio de um navegador da Web graças ao seguinte URL:
 
@@ -44,7 +42,7 @@ Saiba como instalar o console [nesta seção](../../installation/using/installin
 
 ## Propor aos usuários finais que atualizem seu console do cliente
 
-Quando o console estiver disponível na pasta do servidor do Campaign, os usuários serão convidados a baixar a versão mais recente do console do cliente em uma janela dedicada do prompt. A Adobe recomenda deixar a opção **[!UICONTROL No longer ask this question]** desmarcada para garantir que todos os usuários sejam alertados quando uma nova versão do console estiver disponível.
+Quando o console estiver disponível na pasta do servidor do Campaign, os usuários serão convidados a baixar a versão mais recente do console do cliente em uma janela dedicada do prompt. O Adobe recomenda deixar a opção **[!UICONTROL No longer ask this question]** desmarcada para garantir que todos os usuários sejam alertados quando uma nova versão do console estiver disponível.
 
 Se você selecionar essa opção e optar por não baixar a versão mais recente, nenhum outro usuário será informado sobre novas versões disponíveis.
 
@@ -58,4 +56,3 @@ Caso a opção tenha sido selecionada, é possível redefinir esse prompt. Somen
    ```
 
 1. Exclua a entrada **confAdvisedUpgrade** e feche o Editor do Registro.
-
