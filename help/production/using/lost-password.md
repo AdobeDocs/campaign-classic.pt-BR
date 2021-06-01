@@ -1,31 +1,29 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: Senha perdida
 description: Senha perdida
 audience: production
 content-type: reference
 topic-tags: troubleshooting
-translation-type: tm+mt
-source-git-commit: 1fdee02e98ce66ec184d8587d0838557f027cf75
+exl-id: 064eb41f-6685-4ac1-adc5-40f9d5a2f96d
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '171'
 ht-degree: 8%
 
 ---
 
-
 # Senha perdida{#lost-password}
 
 Você pode alterar ou recuperar uma senha perdida.
 Há dois cenários possíveis:
 
-* [Senha perdida por um operador Adobe Campaign](#password-lost-by-campaign-operator)
+* [Senha perdida por um operador do Adobe Campaign](#password-lost-by-campaign-operator)
 * [Senha interna perdida](#internal-password-lost)  (somente clientes locais)
 
-## Senha perdida por um operador de Campanha {#password-lost-by-campaign-operator}
+## Senha perdida por um operador do Campaign {#password-lost-by-campaign-operator}
 
-Se um operador Adobe Campaign perder a senha, você poderá alterá-la.
+Se um operador do Adobe Campaign perder a senha, você poderá alterá-la.
 Para fazer isso, siga as etapas abaixo:
 
 1. Conecte-se por meio de um operador com direitos de administrador.
@@ -34,16 +32,16 @@ Para fazer isso, siga as etapas abaixo:
 
    ![](assets/operator-passwd.png)
 
-1. Defina a nova senha do operador. Recomendamos que o operador altere sua senha quando ele se reconectar pela primeira vez.
+1. Defina a nova senha do operador. Recomendamos que o operador altere sua senha ao se reconectar pela primeira vez.
 
 ## Senha interna perdida {#internal-password-lost}
 
 >[!NOTE]
 >
->Esta seção aplica-se apenas a clientes locais.
+>Esta seção se aplica somente a clientes locais.
 
 Se a senha interna for perdida, você deverá reinicializá-la.
-Para isso, execute o seguinte procedimento:
+Para fazer isso, siga as etapas abaixo:
 
 1. Edite o arquivo **/usr/local/neolane/nl6/conf/serverConf.xml**.
 
@@ -54,7 +52,7 @@ Para isso, execute o seguinte procedimento:
    <xtk internalPassword="myPassword"/>
    ```
 
-1. Exclua a string entre aspas, neste caso: **myPassword**
+1. Exclua a sequência de caracteres entre aspas, neste caso: **myPassword**
 
    Assim, você obtém a seguinte linha:
 
