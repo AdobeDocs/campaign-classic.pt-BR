@@ -6,10 +6,10 @@ audience: message-center
 content-type: reference
 topic-tags: message-templates
 exl-id: 417004c9-ed96-4b98-a518-a3aa6123ee7b
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: e86350cf12db37e3f2c227563057b97922601729
 workflow-type: tm+mt
 source-wordcount: '560'
-ht-degree: 64%
+ht-degree: 67%
 
 ---
 
@@ -57,13 +57,13 @@ Depois que os endereços forem criados, você poderá exibir sua pré-visualiza�
 
 ## Dados de personalização {#personalization-data}
 
-É possível usar dados no template de mensagem para testar a personalização da mensagem transacional. Essa funcionalidade é usada para gerar uma pré-visualização ou enviar uma prova. Você também pode exibir a renderização da mensagem para vários provedores de acesso à Internet. Para obter mais informações, consulte [renderização da caixa de entrada](../../delivery/using/inbox-rendering.md).
+É possível usar dados no template de mensagem para testar a personalização da mensagem transacional. Essa funcionalidade é usada para gerar uma pré-visualização ou enviar uma prova. Você também pode exibir a renderização da mensagem para vários provedores de acesso à Internet. Para obter mais informações, consulte [Renderização da caixa de entrada](../../delivery/using/inbox-rendering.md).
 
 O objetivo desses dados é testar suas mensagens antes do delivery final. Essas mensagens não coincidem com os dados reais para serem processados. Entretanto, a estrutura XML deve ser idêntica à do evento armazenado na instância de execução, conforme mostrado abaixo:
 
 ![](assets/messagecenter_create_custo_006.png)
 
-Essas informações permitem personalizar o conteúdo da mensagem usando tags de personalização (para obter mais informações, consulte [Criação do conteúdo da mensagem](../../message-center/using/creating-the-message-template.md#creating-message-content)).
+Essas informações permitem personalizar o conteúdo da mensagem usando tags de personalização (para obter mais informações, consulte [Create the message content](../../message-center/using/creating-the-message-template.md#creating-message-content)).
 
 1. Selecione o template de mensagem transacional.
 
@@ -91,7 +91,7 @@ Após criar um ou mais seed addresses e o corpo da mensagem, é possível pré-v
 
    ![](assets/messagecenter_create_seedaddr_009.png)
 
-Com os seed addresses, você também pode exibir a renderização da mensagem para vários provedores de acesso à Internet. Para obter mais informações, consulte [renderização da caixa de entrada](../../delivery/using/inbox-rendering.md).
+Com os seed addresses, você também pode exibir a renderização da mensagem para vários provedores de acesso à Internet. Para obter mais informações, consulte [Renderização da caixa de entrada](../../delivery/using/inbox-rendering.md).
 
 ## Enviar uma prova {#sending-a-proof}
 
