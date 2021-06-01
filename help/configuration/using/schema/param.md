@@ -1,19 +1,17 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: Elementos e atributos
 description: Elementos e atributos
 audience: configuration
 content-type: reference
 topic-tags: schema-reference
-translation-type: tm+mt
-source-git-commit: 922257b157f8d76d6e703b0510ff689d1aa4d067
+exl-id: d8960a2e-6900-4346-9f06-e7dd9d7b5139
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '175'
 ht-degree: 6%
 
 ---
-
 
 # elemento param {#param--element}
 
@@ -23,15 +21,15 @@ param:==help
 
 ## Atributos {#attributes-12}
 
-* @_operation (string)
-* @desc (string)
-* @enum (string)
-* @inout (string)
-* @label (string)
-* @localizable (string)
+* @_operation (cadeia de caracteres)
+* @desc (cadeia de caracteres)
+* @enum (cadeia de caracteres)
+* @inout (cadeia de caracteres)
+* @label (cadeia de caracteres)
+* @localizable (cadeia de caracteres)
 * @name (MNTOKEN)
 * @namespace (MNTOKEN)
-* @type (string)
+* @type (cadeia de caracteres)
 
 ## Pais {#parents-12}
 
@@ -43,34 +41,34 @@ param:==help
 
 ## Descrição {#description-12}
 
-Esse elemento permite que você defina um parâmetro para chamar um método SOAP.
+Esse elemento permite definir um parâmetro para chamar um método SOAP.
 
 ## Descrição do atributo {#attribute-description-12}
 
 * **desc (string)**: descrição que diz respeito ao  `<param>` elemento.
-* **inout (string)**: esse atributo define se o parâmetro está ou não na entrada (in) ou saída (fora) da chamada SOAP. Se este atributo não for especificado, o parâmetro padrão será input (&quot;@inout=in&quot;).
+* **inout (string)**: esse atributo define se o parâmetro está ou não na entrada (in) ou saída (out) da chamada SOAP. Se este atributo não for especificado, o parâmetro padrão é input (&quot;@inout=in&quot;).
 * **label (string)**:  `<param>` label
-* **localizável (string)**: se estiver ativado, esse atributo informará a ferramenta de coleta para recuperar o valor do atributo &quot;@label&quot; para conversão (uso interno).
-* **name (MNTOKEN)**: nome interno do  `<param>`
-* **type (string)**: este atributo define o tipo de  `<param>` elemento
+* **localizável (string)**: se estiver ativado, esse atributo informará a ferramenta de coleta para recuperar o valor do atributo &quot;@label&quot; para tradução (uso interno).
+* **nome (MNTOKEN)**: nome interno da  `<param>`
+* **type (string)**: esse atributo define o tipo de  `<param>` elemento
 
    Lista de tipos disponíveis:
 
    * ANY
    * compartimento
-   * mancha
+   * blob
    * booleano
    * byte
    * CDATA
    * datetime
    * datetimetz
    * datetimenotz
-   * date
+   * data
    * DOMDocument
    * DOMElement
-   * duplo
+   * double
    * enum
-   * flutuante
+   * float
    * html
    * int64
    * link
@@ -78,16 +76,16 @@ Esse elemento permite que você defina um parâmetro para chamar um método SOAP
    * memorando
    * MNTOKEN
    * percent
-   * primário
+   * chave primária
    * short
    * string
    * tempo
-   * tempo
+   * timespan
    * uuid
 
 ## Exemplos {#examples-9}
 
-Definição da configuração de entrada &quot;serviceName&quot; do tipo de string de caractere:
+Definição da configuração de entrada &quot;serviceName&quot; do tipo string de caracteres:
 
 ```
 <param desc="Name of the information service(s) (separated with commas)"
