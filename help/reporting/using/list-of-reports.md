@@ -1,5 +1,4 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: Lista de relatórios
 description: Lista de relatórios
@@ -7,9 +6,8 @@ audience: reporting
 content-type: reference
 topic-tags: accessing-built-in-reports
 exl-id: c01f4850-ab17-44ac-a5e0-ff082ec206b3
-translation-type: ht
-source-git-commit: 6854d06f8dc445b56ddfde7777f02916a60f2b63
-workflow-type: ht
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+workflow-type: tm+mt
 source-wordcount: '1007'
 ht-degree: 100%
 
@@ -227,7 +225,7 @@ Para obter mais informações sobre o conteúdo desses relatórios, consulte [es
   <tr> 
    <td> <strong>Rótulo e nome interno</strong><br /> </td> 
    <td> <strong>Descrição</strong><br /> </td> 
-   <td> <strong>Schema</strong><br /> </td> 
+   <td> <strong>Esquema</strong><br /> </td> 
   </tr> 
   <tr> 
    <td> Custos vinculados ao(s) programa(s) (budgetProgramCost)<br /> </td> 
@@ -347,7 +345,7 @@ Os relatórios a seguir também são fornecidos internamente. Para obter mais in
   <tr> 
    <td> <strong>Rótulo e nome interno</strong><br /> </td> 
    <td> <strong>Descrição</strong><br /> </td> 
-   <td> <strong>Schema</strong><br /> </td> 
+   <td> <strong>Esquema</strong><br /> </td> 
   </tr> 
   <tr> 
    <td> Análise de oferta (offerAnalysis)<br /> </td> 
