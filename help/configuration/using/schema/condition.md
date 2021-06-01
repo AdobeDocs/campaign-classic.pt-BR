@@ -1,31 +1,29 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: Elementos e atributos
 description: Elementos e atributos
 audience: configuration
 content-type: reference
 topic-tags: schema-reference
-translation-type: tm+mt
-source-git-commit: 922257b157f8d76d6e703b0510ff689d1aa4d067
+exl-id: 71e98d45-3660-4d86-a5ca-8e55ae5896eb
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '93'
 ht-degree: 9%
 
 ---
 
-
-# elemento condição {#condition--element}
+# elemento de condição {#condition--element}
 
 ## Modelo de conteúdo {#content-model-2}
 
-condição:==VAZIA
+condição:==EMPTY
 
 ## Atributos {#attributes-2}
 
-* @boolOperador (string)
-* @enabledIf (string)
-* @expr (string)
+* @boolOperator (cadeia de caracteres)
+* @enabledIf (cadeia de caracteres)
+* @expr (cadeia de caracteres)
 
 ## Pais {#parents-2}
 
@@ -45,8 +43,8 @@ Um elemento `<sysfiler>` pode conter várias condições de filtragem.
 
 ## Descrição do atributo {#attribute-description-2}
 
-* **boolOperador (string)**: se vários  `<conditions>` forem definidos dentro do mesmo   `<sysfilter>` elemento, esse atributo permitirá que você os combine. Por padrão, o link lógico está entre `<condition>` elementos é &quot;AND&quot;. O atributo &quot;@boolOperador&quot; permite combinar links de tipo &quot;OU&quot; e &quot;E&quot;.
-* **enabledIf (string)**: teste de ativação de condição.
+* **boolOperator (sequência)**: se várias  `<conditions>` forem definidas no mesmo   `<sysfilter>` elemento, esse atributo permitirá combiná-las. Por padrão, o link lógico está entre os elementos `<condition>` é &quot;AND&quot;. O atributo &quot;@boolOperator&quot; permite combinar links do tipo &quot;OR&quot; e &quot;AND&quot;.
+* **enabledIf (sequência de caracteres)**: teste de ativação de condição.
 * **expr (string)**: uma expressão XTK.
 
 ## Exemplos {#examples-2}
