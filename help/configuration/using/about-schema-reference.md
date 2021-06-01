@@ -1,46 +1,44 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: Sobre referência de schema no Adobe Campaign Classic
-description: Saiba como configurar schemas de extensão para estender o modelo de dados conceituais do banco de dados Adobe Campaign Classic.
+description: Saiba como configurar schemas de extensão para estender o modelo de dados conceituais do banco de dados do Adobe Campaign Classic.
 audience: configuration
 content-type: reference
 topic-tags: schema-reference
-translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+exl-id: f36a1b01-a002-4a21-9255-ea78b5f173fe
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '399'
 ht-degree: 7%
 
 ---
 
+# Sobre referência do esquema{#about-schema-reference}
 
-# Sobre a referência do schema{#about-schema-reference}
+Este capítulo descreve como configurar schemas de extensão para estender o modelo de dados conceituais do banco de dados do Adobe Campaign.
 
-Este capítulo descreve como configurar schemas de extensão para estender o modelo de dados conceituais do banco de dados Adobe Campaign.
+Para obter uma melhor compreensão das tabelas integradas do Campaign e sua interação, consulte o [Campaign Classic data model](https://helpx.adobe.com/br/campaign/kb/acc-datamodel.html).
 
-Para obter uma melhor compreensão das tabelas incorporadas de Campanha e de suas interações, consulte o [modelo de dados Campaign Classic](https://helpx.adobe.com/br/campaign/kb/acc-datamodel.html).
+A estrutura física e lógica dos dados transportados no aplicativo é descrita em XML. Ela obedece a uma gramática específica do Adobe Campaign, chamada de **schema**.
 
-A estrutura física e lógica dos dados transportados no aplicativo é descrita em XML. Ele obedece a uma gramática específica do Adobe Campaign, chamada de **schema**.
-
-Um schema é um documento XML associado a uma tabela de banco de dados. Define a estrutura de dados e descreve a definição SQL da tabela:
+Um schema é um documento XML associado a uma tabela de banco de dados. Ele define a estrutura de dados e descreve a definição SQL da tabela:
 
 * O nome da tabela
 * Campos
 * Índices
 * Links com outras tabelas
 
-Também descreve a estrutura XML usada para armazenar dados:
+Ele também descreve a estrutura XML usada para armazenar dados:
 
 * Elementos e atributos
 * Hierarquia de elementos
-* Tipos de elementos e atributos
+* Tipos de elemento e atributo
 * Valores padrão
 * Rótulos, descrições e outras propriedades.
 
-Schemas permitem que você defina uma entidade no banco de dados. Há um schema para cada entidade.
+Os esquemas permitem definir uma entidade no banco de dados. Existe um schema para cada entidade.
 
-A ilustração a seguir mostra a localização dos schemas no sistema de dados Adobe Campaign:
+A ilustração a seguir mostra a localização dos schemas no sistema de dados do Adobe Campaign:
 
 ![](assets/reference_schema_intro.png)
 
@@ -68,26 +66,26 @@ O primeiro subelemento **`<element>`** coincide com a raiz da entidade.
 
 ![](assets/s_ncs_configuration_schema_and_entity.png)
 
-As tags **`<element>`** definem os nomes dos elementos da entidade. **`<attribute>`** as tags do schema definem os nomes dos atributos nas  **`<element>`** tags às quais foram vinculados.
+As tags **`<element>`** definem os nomes dos elementos da entidade. **`<attribute>`** as tags do schema definem os nomes dos atributos nas  **`<element>`** tags às quais foram vinculadas.
 
 ## Identificação de um schema {#identification-of-a-schema}
 
-Um schema de dados é identificado pelo nome e pela namespace.
+Um schema de dados é identificado por seu nome e namespace.
 
-Uma namespace permite agrupar um conjunto de schemas por área de interesse. Por exemplo, a namespace **cus** é usada para configuração específica do cliente (**customers**).
+Um namespace permite agrupar um conjunto de schemas por área de interesse. Por exemplo, o namespace **cus** é usado para configuração específica do cliente (**customers**).
 
 >[!IMPORTANT]
 >
->Como padrão, o nome da namespace deve ser conciso e conter somente caracteres autorizados de acordo com as regras de nomenclatura XML.
+>Como padrão, o nome do namespace deve ser conciso e deve conter somente caracteres autorizados de acordo com as regras de nomenclatura XML.
 >
 >Os identificadores não devem começar com caracteres numéricos.
 
-Determinadas namespaces são reservadas para descrições das entidades do sistema necessárias para a operação do aplicativo Adobe Campaign:
+Determinados namespaces são reservados para descrições das entidades do sistema necessárias para a operação do aplicativo Adobe Campaign:
 
 * **xtk**: no que diz respeito aos dados do sistema da plataforma,
-* **nl**: relativa à utilização global do pedido,
-* **nms**: relativamente ao delivery (recipient, delivery, localização, etc.),
-* **ncm**: relativamente à gestão de conteúdo,
+* **nl**: sobre a utilização global do pedido,
+* **nms**: relativo ao delivery (recipient, delivery, rastreamento etc.),
+* **ncm**: em matéria de gestão de conteúdos,
 * **temp**: reservado para schemas temporários.
 
-A chave de identificação de um schema é uma cadeia de caracteres construída utilizando a namespace e o nome separado por dois pontos; por exemplo: **cus:recipient**.
+A chave de identificação de um schema é uma cadeia de caracteres criada usando o namespace e o nome separados por dois pontos; por exemplo: **cus:recipient**.
