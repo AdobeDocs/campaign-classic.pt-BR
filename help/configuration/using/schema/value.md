@@ -1,35 +1,33 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: Elementos e atributos
 description: Elementos e atributos
 audience: configuration
 content-type: reference
 topic-tags: schema-reference
-translation-type: tm+mt
-source-git-commit: 922257b157f8d76d6e703b0510ff689d1aa4d067
+exl-id: bad7fb4b-43d9-4033-ae0d-cf191d89114b
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '147'
 ht-degree: 5%
 
 ---
 
-
-# elemento value {#value--element}
+# elemento de valor {#value--element}
 
 ## Modelo de conteúdo {#content-model-16}
 
-value:==help
+valor:==help
 
 ## Atributos {#attributes-16}
 
-* @applyIf (string)
-* @desc (string)
-* @enabledIf (string)
-* @img (string)
-* @label (string)
-* @name (string)
-* @value (string)
+* @applicableIf (cadeia de caracteres)
+* @desc (cadeia de caracteres)
+* @enabledIf (cadeia de caracteres)
+* @img (cadeia de caracteres)
+* @label (cadeia de caracteres)
+* @name (cadeia de caracteres)
+* @value (cadeia de caracteres)
 
 ## Pais {#parents-16}
 
@@ -41,17 +39,17 @@ value:==help
 
 ## Descrição {#description-16}
 
-Esse elemento permite definir os valores armazenados em uma lista discriminada.
+Esse elemento permite definir os valores armazenados em uma enumeração.
 
 ## Descrição do atributo {#attribute-description-16}
 
-* **applyIf (string)**: esse atributo permite tornar um valor de lista discriminada opcional. Ele recebe uma expressão XTK.
-* **desc (string)**: descrição do valor da lista discriminada.
-* **enabledIf (string)**: para ativar o valor da lista discriminada.
-* **img (string)**: imagem vinculada à lista discriminada no formulário &quot;namespace:image_name&quot;. A imagem deve ser importada para o servidor de aplicativos.
-* **label (string)**: rótulo do valor da lista discriminada.
-* **name (string)**: nome interno do valor da lista discriminada.
-* **value (string)**: valor da lista discriminada. O tipo de valor é definido com base no tipo de lista discriminada. Se a lista discriminada for do tipo de string de caractere, ela só poderá conter valores do tipo string de caractere.
+* **applicableIf (cadeia de caracteres)**: esse atributo permite tornar um valor de enumeração opcional. Ele recebe uma expressão XTK.
+* **desc (string)**: descrição do valor de enumeração.
+* **enabledIf (sequência de caracteres)**: para ativar o valor de enumeração.
+* **img (string)**: imagem vinculada à enumeração no formulário &quot;namespace:image_name&quot;. A imagem deve ser importada para o servidor de aplicativos.
+* **label (string)**: do valor de enumeração.
+* **name (sequência de caracteres)**: nome interno do valor de enumeração.
+* **valor (string)**: valor do valor de enumeração. O tipo de valor é definido com base no tipo de enumeração. Se a enumeração for do tipo string de caracteres, ela só poderá conter valores do tipo string de caracteres.
 
 ## Exemplos {#examples-13}
 
