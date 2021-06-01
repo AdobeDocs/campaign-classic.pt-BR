@@ -1,21 +1,19 @@
 ---
-solution: Campaign Classic
 product: campaign
-title: 'Configurações gerais '
-description: 'Configurações gerais '
+title: Configurações gerais
+description: Configurações gerais
 audience: migration
 content-type: reference
 topic-tags: configuration
 exl-id: 7aad0e49-8d9c-40c7-9d6a-42fee0ae5870
-translation-type: tm+mt
-source-git-commit: b0a1e0596e985998f1a1d02236f9359d0482624f
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '2786'
 ht-degree: 0%
 
 ---
 
-# Configurações gerais {#general-configurations}
+# Configurações gerais{#general-configurations}
 
 Esta seção detalha a configuração a ser executada no Adobe Campaign v7 se você estiver migrando de uma v5.11 ou v6.02.
 
@@ -456,8 +454,7 @@ Há três maneiras possíveis de resolver um conflito:
 * **[!UICONTROL Keep the current version]**: significa que a atualização é rejeitada.
 
    >[!IMPORTANT]
-   >
-   >Se selecionar esse modo de resolução, corre o risco de perder patches na nova versão. Portanto, é altamente recomendável que essa opção não seja usada ou reservada apenas para operadores especialistas.
+   Se selecionar esse modo de resolução, corre o risco de perder patches na nova versão. Portanto, é altamente recomendável que essa opção não seja usada ou reservada apenas para operadores especialistas.
 
 Se você optar por resolver manualmente o conflito, proceda da seguinte maneira:
 
@@ -503,14 +500,12 @@ $(XTK_INSTALL_DIR)/tomcat-8/lib/el-api.jar
 No v7, o conteúdo da oferta foi movido. Na v6.02, o conteúdo estava em cada schema de representação (**nms:emailOfferView**). No v7, o conteúdo agora está no schema de ofertas. Após a pós-atualização, o conteúdo não estará visível na interface. Após a pós-atualização, é necessário recriar o conteúdo da oferta ou desenvolver um script que mova automaticamente o conteúdo do schema de representação para o schema de oferta.
 
 >[!IMPORTANT]
->
->Se alguns deliveries usando ofertas configuradas forem enviados após a migração, você deverá excluir e recriar todos esses deliveries no v7. Se não for possível fazer isso, um &quot;modo de compatibilidade&quot; será oferecido. Esse modo não é recomendado porque você não se beneficiará de todos os novos recursos no Interaction v7. Este é um modo de transição que permite concluir campanhas em andamento antes da migração real do 6.1. Para obter mais informações sobre esse modo, entre em contato conosco.
+Se alguns deliveries usando ofertas configuradas forem enviados após a migração, você deverá excluir e recriar todos esses deliveries no v7. Se não for possível fazer isso, um &quot;modo de compatibilidade&quot; será oferecido. Esse modo não é recomendado porque você não se beneficiará de todos os novos recursos no Interaction v7. Este é um modo de transição que permite concluir campanhas em andamento antes da migração real do 6.1. Para obter mais informações sobre esse modo, entre em contato conosco.
 
 Um exemplo de script de movimento (**interactionTo610_full_XX.js**) está disponível na pasta **Migration** na pasta Adobe Campaign v7. Este arquivo mostra um exemplo de script para um cliente usando uma única representação de email por oferta (os campos **[!UICONTROL htmlSource]** e **[!UICONTROL textSource]**). O conteúdo que estava na tabela **NmsEmailOfferView** foi movido para a tabela de oferta.
 
 >[!NOTE]
->
->Usar esse script não permite que você se beneficie das opções de &quot;gestão de conteúdo&quot; e &quot;funções de renderização&quot;. Para se beneficiar dessas funções, você deve repensar as ofertas de catálogo, especialmente o conteúdo da oferta e os espaços de configuração.
+Usar esse script não permite que você se beneficie das opções de &quot;gestão de conteúdo&quot; e &quot;funções de renderização&quot;. Para se beneficiar dessas funções, você deve repensar as ofertas de catálogo, especialmente o conteúdo da oferta e os espaços de configuração.
 
 ```
 loadLibrary("/nl/core/shared/nl.js");
@@ -609,8 +604,7 @@ Este é o procedimento a ser seguido após mover o conteúdo da oferta se você 
 1. Faça testes abrangentes.
 
    >[!NOTE]
-   >
-   >Os nomes das categorias e ofertas online são modificados após a ativação. No canal de entrada, atualize todas as referências para ofertas e categorias.
+   Os nomes das categorias e ofertas online são modificados após a ativação. No canal de entrada, atualize todas as referências para ofertas e categorias.
 
 ## Relatórios {#reports}
 
@@ -638,8 +632,7 @@ Há duas famílias de aplicações web:
 Assim como para os relatórios ([saiba mais](#reports)), se tiver adicionado o JavaScript, você deve verificar e adaptar se necessário. Se você quiser se beneficiar do banner azul v7 (contendo as guias azuis), será necessário republicar o aplicativo web. Se o código JavaScript estiver funcionando, é possível selecionar o mecanismo de renderização v6.x. Se esse não for o caso, você poderá usar o mecanismo de renderização v6.0 durante a adaptação do código e, em seguida, usar o mecanismo de renderização v6.x.
 
 >[!NOTE]
->
->As etapas para selecionar o mecanismo de renderização são as mesmas que para selecionar relatórios. Consulte [Relatórios personalizados](#personalized-reports).
+As etapas para selecionar o mecanismo de renderização são as mesmas que para selecionar relatórios. Consulte [Relatórios personalizados](#personalized-reports).
 
 Os métodos de conexão da aplicação web foram alterados no v7. Se você encontrar problemas de conexão em suas aplicações Web identificadas, deverá ativar temporariamente as opções **allowUserPassword** e **sessionTokenOnly** no arquivo **serverConf.xml**. Após a pós-atualização, modifique esses valores de opção:
 
@@ -672,8 +665,7 @@ sessionTokenOnly="false"
 Se encontrar algum problema, republique a aplicação Web. Se o problema persistir, você poderá selecionar o mecanismo de renderização v6.0. Se você não tiver adicionado o JavaScript, é possível selecionar o mecanismo de renderização v6.x e se beneficiar dos novos recursos.
 
 >[!NOTE]
->
->As etapas para selecionar o mecanismo de renderização são as mesmas que para selecionar relatórios. Consulte [Relatórios personalizados](#personalized-reports).
+As etapas para selecionar o mecanismo de renderização são as mesmas que para selecionar relatórios. Consulte [Relatórios personalizados](#personalized-reports).
 
 ## Red-Hat {#red-hat}
 
