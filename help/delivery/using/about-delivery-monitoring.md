@@ -1,5 +1,4 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: Introdução ao monitoramento de delivery
 description: Saiba mais sobre os recursos de monitoramento de delivery do Campaign Classic.
@@ -7,9 +6,8 @@ audience: delivery
 content-type: reference
 topic-tags: monitoring-deliveries
 exl-id: 9ce11da0-e37b-459e-8ec7-d2bddf59bdf7
-translation-type: ht
-source-git-commit: 6854d06f8dc445b56ddfde7777f02916a60f2b63
-workflow-type: ht
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+workflow-type: tm+mt
 source-wordcount: '288'
 ht-degree: 100%
 
@@ -30,7 +28,7 @@ A lista de deliveries permite que você veja todos os deliveries criados em um �
 Um painel dedicado está disponível para cada delivery. Isso permite o monitoramento de possíveis problemas encontrados durante o envio, bem como vários tipos de informações relacionadas ao delivery: relatórios, mirror pages, exclusões, logs de rastreamento, renderização, etc.
 
 * [Acesso à lista de deliveries](../../delivery/using/list-of-deliveries.md)
-* [Painel de delivery](../../delivery/using/delivery-dashboard.md)
+* [Painel de entrega](../../delivery/using/delivery-dashboard.md)
 
 <img src="assets/do-not-localize/icon_guidelines.svg" width="60px">
 
