@@ -1,19 +1,17 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: Introdução à segurança e privacidade
 description: Saiba mais sobre os principais elementos a serem verificados em relação à segurança e privacidade.
 audience: installation
 content-type: reference
 topic-tags: prerequisites-and-recommendations-
-translation-type: tm+mt
-source-git-commit: 922603492d2c98d751683d3aa481e9ab19bca70c
+exl-id: ec40498e-e673-4792-8dcf-8bb7e852b532
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '450'
-ht-degree: 27%
+ht-degree: 32%
 
 ---
-
 
 # Introdução à segurança e privacidade {#get-started-security-privacy}
 
