@@ -1,19 +1,17 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: Pré-requisitos da instalação do Campaign no Windows
 description: Pré-requisitos da instalação do Campaign no Windows
 audience: installation
 content-type: reference
 topic-tags: installing-campaign-in-windows-
-translation-type: tm+mt
-source-git-commit: ae4b2ba6db140cdfb9ec4a38231fcc3e54b1478c
+exl-id: a7cf59cc-9260-4109-af4c-b2e2a9c999da
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '142'
 ht-degree: 8%
 
 ---
-
 
 # Introdução à instalação do Campaign no Windows {#prerequisites-of-campaign-installation-in-windows}
 
@@ -31,4 +29,3 @@ Depois que as etapas de instalação forem concluídas, será necessário config
 >[!NOTE]
 >
 >Quando o Adobe Campaign é implantado em um ambiente Windows, os usuários com os direitos de acesso necessários podem usar a sintaxe UNC (Universal.Uniform Naming Agreement) para acessar caminhos durante a manipulação de arquivos na rede.
-
