@@ -1,15 +1,13 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: Nota técnica
 description: Nota técnica
 hide: true
 hidefromtoc: true
-translation-type: tm+mt
-source-git-commit: 51773f48bac90febe44c6796b8cc08fce072bab3
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '355'
-ht-degree: 7%
+ht-degree: 36%
 
 ---
 
@@ -21,7 +19,7 @@ Como consequência, o Adobe recomenda desativar o mecanismo de assinatura para l
 
 Observe que os links de unsubscription podem falhar como qualquer outro link, a frequência é variável de host para host, mas é inferior a 1%.
 
-**Você é afetado?**
+**Você será afetado?**
 
 Para melhorar a segurança, o mecanismo de assinatura para rastrear links em emails foi introduzido no [Campaign Gold Standard 8](../rn/using/gold-standard.md#gs8) - abril de 2020 - e é ativado por padrão para todos os clientes que iniciam a Build 19.1.4 (9032@3a9dc9c) e o Campaign 20.2.
 
@@ -60,11 +58,11 @@ Siga a etapa abaixo:
 
 **Qual é o impacto?**
 
-A manutenção requer no máximo 25 minutos de inatividade e durante esse período todos os deliveries, links de rastreamento e chamadas de API não funcionarão.
+A manutenção requer no máximo 25 minutos de inatividade, e durante esse período todos os deliveries, links de rastreamento e chamadas de API não funcionarão.
 
 Quando a atualização estiver concluída, todos os links funcionarão conforme esperado.
 
 >[!NOTE]
 >
->Para dúvidas sobre essas alterações, entre em contato com o [Adobe Customer Care](https://helpx.adobe.com/br/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html).
+>Em caso de dúvidas sobre essas alterações, entre em contato com o [Atendimento ao cliente da Adobe](https://helpx.adobe.com/br/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html).
 
