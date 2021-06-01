@@ -1,22 +1,20 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: Notas de versão do Campaign 18.6
 description: Notas de versão do Campaign 18.6
 audience: rn
 content-type: reference
 topic-tags: latest-release-notes
-feature: Overview
+feature: Visão geral
 role: Business Practitioner
 level: Beginner
-translation-type: tm+mt
-source-git-commit: ce60b2bd0a9d75ca429af2f740832b408ce3c48b
+exl-id: a849ce10-0972-4c42-b10e-67a81c79bc65
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
-source-wordcount: '803'
+source-wordcount: '800'
 ht-degree: 97%
 
 ---
-
 
 # Versão 18.6{#release-18-6}
 
@@ -26,7 +24,7 @@ ht-degree: 97%
 
 >[!CAUTION]
 >
->Esta configuração foi retomada. [atualize para a build mais recente](../../production/using/build-upgrade.md) ou entre em contato com [Atendimento ao Cliente do Adobe](https://helpx.adobe.com/br/enterprise/admin-guide.html).
+>Esta configuração foi retomada. [atualize para a build mais recente](../../production/using/build-upgrade.md) ou entre em contato com [Atendimento ao Cliente do Adobe](https://helpx.adobe.com/br/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html).
 
 **Novidades**
 
