@@ -1,21 +1,19 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: Elementos e atributos
 description: Elementos e atributos
 audience: configuration
 content-type: reference
 topic-tags: schema-reference
-translation-type: tm+mt
-source-git-commit: 922257b157f8d76d6e703b0510ff689d1aa4d067
+exl-id: 54538c3e-3232-4bf7-a09c-dacf0f072be5
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '46'
 ht-degree: 21%
 
 ---
 
-
-# elemento parâmetros {#parameters--element}
+# elemento de parâmetros {#parameters--element}
 
 ## Modelo de conteúdo {#content-model-13}
 
@@ -35,7 +33,7 @@ nenhuma
 
 ## Descrição {#description-13}
 
-Este elemento define um grupo de `<parameter>` elementos.
+Esse elemento define um grupo de elementos `<parameter>`.
 
 ## Uso e contexto de uso {#use-and-context-of-use-8}
 
