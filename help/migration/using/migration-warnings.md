@@ -1,30 +1,27 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: Avisos de migração
 description: Avisos de migração
 audience: migration
 content-type: reference
 topic-tags: migration-overview
-translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+exl-id: 46b46fc9-c7c9-4c74-b5f3-7935d5368520
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '181'
 ht-degree: 3%
 
 ---
 
-
 # Avisos de migração{#migration-warnings}
 
 * O processo de migração é reservado para usuários especialistas. Você deve ser assistido por pelo menos um especialista em banco de dados, um administrador de sistema e um desenvolvedor de aplicativos da Adobe Campaign.
-* Antes de iniciar a migração, verifique se os sistemas e componentes do sistema usados são compatíveis com a v7. Consulte a matriz de compatibilidade [a1/>.](../../rn/using/compatibility-matrix.md)
+* Antes de iniciar a migração, verifique se os sistemas e componentes do sistema usados são compatíveis com o v7. Consulte a [matriz de compatibilidade](../../rn/using/compatibility-matrix.md).
 * Se você usar o Adobe Campaign Cloud Messaging (anteriormente mid-sourcing), entre em contato com a Adobe Campaign antes de iniciar todo o procedimento de migração.
 * Antes de iniciar um processo de migração, você **deve** fazer backup de seus dados.
 * O processo de migração pode levar vários dias para ser concluído.
-* O Adobe Campaign v7 é mais estrito do que as versões 5.11 e 6.02 em termos de configuração. Isso serve principalmente para evitar problemas como corrupção de dados e preservar a integridade dos dados no banco de dados. Consequentemente, certas funções oferecidas na v5.11 e na v6.02 podem não funcionar mais na v7 e podem, portanto, precisar ser adaptadas após a migração. Antes de colocar em produção qualquer coisa, sugerimos que você teste sistematicamente todas as configurações, especialmente os workflows necessários para usar o Adobe Campaign.
+* O Adobe Campaign v7 é mais rigoroso que as versões 5.11 e 6.02 em termos de configuração. Isso é principalmente para evitar problemas como corrupção de dados e preservar a integridade dos dados no banco de dados. Consequentemente, certas funções oferecidas na v5.11 e v6.02 podem não funcionar mais no v7 e podem, portanto, precisar ser adaptadas após a migração. Antes de colocar em produção qualquer item, sugerimos que você teste sistematicamente todas as configurações, especialmente os workflows necessários para usar o Adobe Campaign.
 
 >[!NOTE]
 >
 >Você também deve consultar a seção [Antes de iniciar a migração](../../migration/using/before-starting-migration.md).
-
