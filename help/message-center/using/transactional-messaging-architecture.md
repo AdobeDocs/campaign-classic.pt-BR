@@ -1,5 +1,4 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: Arquitetura de mensagens transacionais
 description: Esta seção descreve a arquitetura de mensagens transacionais do Adobe Campaign Classic e os canais disponíveis para entregar mensagens transacionais.
@@ -7,7 +6,7 @@ audience: message-center
 content-type: reference
 topic-tags: introduction
 exl-id: 0a059397-b037-405b-b9c1-94a4a072674d
-source-git-commit: a9054fb8e10bef37675922b2f81c7615cd04c1bb
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '1100'
 ht-degree: 80%
