@@ -1,50 +1,48 @@
 ---
-solution: Campaign Classic
 product: campaign
-title: Schema de uma tabela existente
-description: Schema de uma tabela existente
+title: Esquema de uma tabela existente
+description: Esquema de uma tabela existente
 audience: configuration
 content-type: reference
 topic-tags: editing-schemas
-translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+exl-id: 964f1027-627c-4f12-91b5-f258e9ba458b
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '216'
 ht-degree: 12%
 
 ---
 
-
-# Schema de uma tabela existente{#schema-of-an-existing-table}
+# Esquema de uma tabela existente{#schema-of-an-existing-table}
 
 ## Visão geral {#overview}
 
-Quando o aplicativo precisar acessar os dados de uma tabela existente, uma visualização SQL ou dados de um banco de dados remoto, crie seu schema no Adobe Campaign com os seguintes dados:
+Quando o aplicativo precisar acessar os dados de uma tabela, uma visualização SQL ou dados de um banco de dados remoto, crie seu schema no Adobe Campaign com os seguintes dados:
 
-* Nome da tabela: digite o nome da tabela (com seu alias quando um dblink é usado) com o atributo &quot;sqltable&quot;,
-* Chave do schema: referência ao(s) campo(s) de reconciliação,
-* índices: utilizados para gerar query,
+* Nome da tabela: insira o nome da tabela (com seu alias quando um dblink é usado) com o atributo &quot;sqltable&quot;,
+* chave do schema: referência ao(s) campo(s) de reconciliação,
+* índices: usado para gerar queries,
 * Os campos e sua localização na estrutura XML: preencher apenas os campos usados no aplicativo,
-* links: se houver junções com as outras tabelas da base.
+* links: se houver associações com as outras tabelas da base.
 
 ## Implementação {#implementation}
 
-Para criar o schema correspondente, aplique as seguintes etapas:
+Para criar o schema correspondente, aplique os seguintes estágios:
 
 1. Edite o nó **[!UICONTROL Administration>Configuration>Data schemas]** da árvore do Adobe Campaign e clique em **[!UICONTROL New]** .
 1. Selecione a opção **[!UICONTROL Access data from an existing table or an SQL view]** e clique em **[!UICONTROL Next]** .
 
    ![](assets/s_ncs_configuration_extand_a_schema.png)
 
-1. Escolha a tabela ou a visualização existente:
+1. Escolha a tabela ou a exibição existente:
 
    ![](assets/s_ncs_configuration_select_table.png)
 
-1. Adapte o conteúdo do schema às suas necessidades.
+1. Adapte o conteúdo do esquema de acordo com suas necessidades.
 
    ![](assets/s_ncs_configuration_view_create_schema.png)
 
-   O schema deve ser preenchido com o atributo visualização=&quot;true&quot; no elemento raiz `<srcSchema>` para não gerar um script SQL de criação de tabela.
+   O schema deve ser preenchido com o atributo view=&quot;true&quot; no elemento raiz `<srcSchema>` para não gerar um script SQL de criação de tabela.
 
 **Exemplo** :
 
@@ -61,6 +59,6 @@ Para criar o schema correspondente, aplique as seguintes etapas:
 
 ## Acesso a um banco de dados externo {#accessing-an-external-database}
 
-A opção **Federated Data Acces - FDA** fornece acesso aos dados armazenados em um banco de dados externo.
+A opção **Federated Data Access - FDA** dá acesso aos dados armazenados em um banco de dados externo.
 
-A configuração a ser realizada nos schemas para acessar dados em um banco de dados externo está detalhada em [this page](../../installation/using/creating-data-schema.md).
+A configuração a ser executada nos schemas para acessar dados em um banco de dados externo é detalhada em [this page](../../installation/using/creating-data-schema.md).
