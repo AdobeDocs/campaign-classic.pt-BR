@@ -1,33 +1,31 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: '"Tag de rastreamento Web: definição"'
 description: '"Tag de rastreamento Web: definição"'
 audience: configuration
 content-type: reference
 topic-tags: setting-up-web-tracking
-translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+exl-id: 0b5575be-57e7-4eee-9c0a-e9ef4b0931bf
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '353'
 ht-degree: 4%
 
 ---
 
-
 # Tag de rastreamento Web: definição{#web-tracking-tag-definition}
 
-Um tag de rastreamento da Web é simplesmente um URL construído com os parâmetros apropriados, enviado para o servidor de redirecionamento por meio de um query HTTP.
+Uma tag de rastreamento Web é simplesmente um URL construído com os parâmetros apropriados, enviado para o servidor de redirecionamento por meio de uma consulta HTTP.
 
 ## Formato dos dados a enviar {#format-of-the-data-to-be-sent}
 
-O formato de um URL de rastreamento da Web é o seguinte: **https://`<name_of_redirection_server>`:`<port>`/r/`<random_number>`?`<parameters>`**
+O formato de um URL de rastreamento Web é o seguinte: **https://`<name_of_redirection_server>`:`<port>`/r/`<random_number>`?`<parameters>`**
 
 >[!NOTE]
 >
 >O número aleatório adicionado ao URL evita problemas causados por navegadores que armazenam páginas da Web em cache.
 
-A tabela a seguir fornece uma lista de parâmetros especiais suportados pelo servidor de redirecionamento.
+A tabela a seguir fornece uma lista de parâmetros especiais compatíveis com o servidor de redirecionamento.
 
 <table>
                      <thead>
@@ -46,18 +44,18 @@ A tabela a seguir fornece uma lista de parâmetros especiais suportados pelo ser
                               <p>Cookie da sessão</p> 
                            </td>
                            <td>
-                              <p>Identificador do delivery e identificador do recipient.</p> 
+                              <p>Identificador de delivery e identificador de recipient.</p> 
                            </td> 
                         </tr>
                         <tr>
                            <td>
-                              <p>uid230</p> 
+                              <p>uuid230</p> 
                            </td>
                            <td>
                               <p>Cookie permanente</p> 
                            </td>
                            <td>
-                              <p>Identificador do recipient (útil se o cookie da sessão estiver ausente).</p> 
+                              <p>Identificador de destinatário (útil se o cookie de sessão estiver ausente).</p> 
                            </td> 
                         </tr>
                         <tr>
@@ -79,7 +77,7 @@ A tabela a seguir fornece uma lista de parâmetros especiais suportados pelo ser
                               <p>Parâmetro de URL</p> 
                            </td>
                            <td>
-                              <p>Identificador de delivery a ser usado se não houver cookie de sessão. Este valor deve ser
+                              <p>Identificador de delivery a ser usado se não houver cookie de sessão. Esse valor deve ser
                                  expresso em hexadecimal.
                               </p> 
                            </td> 
@@ -93,7 +91,7 @@ A tabela a seguir fornece uma lista de parâmetros especiais suportados pelo ser
                            </td>
                            <td>
                               <p>Parâmetro usado para identificar o usuário da Internet. O formato desse parâmetro é "name=value",
-                                 onde o nome é um campo do schema do recipient. Este parâmetro tem prioridade sobre
+                                 onde o nome é um campo do schema do recipient. Esse parâmetro tem prioridade sobre
                                  o identificador contido no cookie da sessão.
                               </p> 
                            </td> 
@@ -101,9 +99,9 @@ A tabela a seguir fornece uma lista de parâmetros especiais suportados pelo ser
                      </tbody>  
                   </table>
 
-**Alguns URLs de rastreamento da Web**
+**Alguns URLs de rastreamento Web**
 
-* Visite uma página de identificação &quot;inicial&quot;
+* Visite uma página de identificador &quot;inicial&quot;
 
    **https://myserver.adobe.com/r/9862?tagid=home**
 
@@ -115,13 +113,13 @@ A tabela a seguir fornece uma lista de parâmetros especiais suportados pelo ser
 
    **https://myserver.adobe.com/r/2353?tagid=home&amp;rcpid=saccount%3D10**
 
-   Um recipient cujo número de conta é 10 é enviado ao home page.
+   Um recipient cujo número de conta é 10 é enviado para a página inicial.
 
 * Uso de um delivery padrão
 
    **https://myserver.adobe.com/r/2456?tagid=home&amp;jobid=e6**
 
-   Um recipient é enviado ao home page. Essas informações serão armazenadas no delivery com o identificador 230 (e6 no banco de dados 16), a menos que um cookie de sessão contendo um identificador de delivery seja enviado com esse query.
+   Um recipient é enviado para a página inicial. Essas informações serão armazenadas no delivery com o identificador 230 (e6 no banco de dados 16), a menos que um cookie de sessão que contenha um identificador de delivery seja enviado com esse query.
 
 >[!NOTE]
 >
@@ -133,4 +131,3 @@ Os seguintes métodos são possíveis:
 
 * Inserir o URL no atributo **&quot;src&quot;** de uma tag HTML **`<img>`** incorporada na página da Web que você deseja rastrear.
 * Chamada direta para o servidor de redirecionamento quando a página da Web que você deseja rastrear for gerada.
-
