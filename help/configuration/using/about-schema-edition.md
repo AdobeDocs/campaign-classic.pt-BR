@@ -1,23 +1,21 @@
 ---
-solution: Campaign Classic
 product: campaign
-title: Sobre a edição do schema
+title: Sobre a edição de esquema
 description: Introdução à edição do schema
 audience: configuration
 content-type: reference
 topic-tags: editing-schemas
-translation-type: tm+mt
-source-git-commit: 87028ec81a8cae6793d45d7c840511b59cd0287c
+exl-id: 9e10b24e-c4de-4e76-bbed-0d05f62120b7
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '1004'
 ht-degree: 9%
 
 ---
 
+# Sobre a edição de esquema{#about-schema-edition}
 
-# Sobre a edição do schema{#about-schema-edition}
-
-O Adobe Campaign emprega esquemas de dados para:
+A Adobe Campaign emprega os Esquemas de dados para:
 
 * Definir como os objetos de dados no aplicativo estão vinculados às tabelas de banco de dados subjacentes.
 * Definir links entre os diferentes objetos de dados no aplicativo Campaign.
@@ -35,7 +33,7 @@ Para adicionar um tipo de dados totalmente novo que não existe pronto para uso 
 
 Depois de estender ou criar um schema para funcionar, a prática recomendada é definir seus elementos de conteúdo XML na mesma ordem em que aparecem abaixo.
 
-## Enumerações {#enumerations}
+## Listas discriminadas {#enumerations}
 
 As enumerações são definidas primeiro, antes do elemento principal do schema. Eles permitem exibir valores em uma lista para restringir as opções que o usuário tem para um determinado campo.
 
@@ -225,4 +223,3 @@ Para obter mais informações, consulte a seção [Atualização da estrutura do
 >[!NOTE]
 >
 >Quando as modificações não afetam a estrutura do banco de dados, basta gerar os schemas novamente. Para fazer isso, selecione os esquemas a serem atualizados, clique com o botão direito do mouse e escolha **[!UICONTROL Actions > Regenerate selected schemas...]** . Para obter mais informações, consulte a seção [Regenerating schemas](../../configuration/using/regenerating-schemas.md) .
-
