@@ -494,7 +494,7 @@ Neste exemplo, declararemos um link para a tabela de schema &quot;nms:address&qu
 <element integrity="own" label="Extension" name="extension" revCardinality="single" revLink="recipient" target="cus:extension" type="link"/>
 ```
 
-### Exemplo 5 {#example-4}
+### Exemplo 4 {#example-4}
 
 Link para uma pasta (schema &quot;xtk:folder&quot;):
 
