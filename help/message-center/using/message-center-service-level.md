@@ -2,26 +2,29 @@
 solution: Campaign Classic
 product: campaign
 title: Nível de serviço do Centro de mensagens
-description: Nível de serviço do Centro de mensagens
+description: Saiba mais sobre o relatório de nível de serviço do Centro de mensagens.
 audience: message-center
 content-type: reference
 topic-tags: reports
 exl-id: b8dc9891-84c8-445d-ad6a-d06048c8faaf
-translation-type: ht
-source-git-commit: 6854d06f8dc445b56ddfde7777f02916a60f2b63
-workflow-type: ht
-source-wordcount: '232'
-ht-degree: 100%
+source-git-commit: d39b15b0efc6cbd6ab24e074713be6f8fc90e5fc
+workflow-type: tm+mt
+source-wordcount: '237'
+ht-degree: 89%
 
 ---
 
-# Nível de serviço do Centro de mensagens{#message-center-service-level}
+# Nível de serviço do Centro de mensagens {#message-center-service-level}
 
-Esse relatório exibe as estatísticas de delivery relacionadas às mensagens transacionais, bem como a discriminação de erros. Você pode clicar em um tipo de erro para exibir seus detalhes. Esse relatório, destinado aos administradores técnicos, também pode ser acessado por meio da guia **[!UICONTROL Monitoring]** na instância de controle.
+Esse relatório exibe as estatísticas de delivery relacionadas às mensagens transacionais, bem como a discriminação de erros. Você pode clicar em um tipo de erro para exibir seus detalhes.
+
+Esse relatório, destinado aos administradores técnicos, também pode ser acessado por meio da guia **[!UICONTROL Monitoring]** na instância de controle.
 
 ![](assets/mc_reports_1.png)
 
-Nesse relatório, você pode exibir as estatísticas gerais ou aquelas relativas a uma instância de execução específica. Você também pode filtrar os dados por canal e por um período específico. Os indicadores exibidos na seção **[!UICONTROL Indicators over the period]** são calculados sobre o período selecionado:
+Nesse relatório, você pode exibir as estatísticas gerais ou aquelas relativas a uma instância de execução específica. Você também pode filtrar os dados por canal e por um período específico.
+
+Os indicadores exibidos na seção **[!UICONTROL Indicators over the period]** são calculados sobre o período selecionado:
 
 * **[!UICONTROL Incoming (throughput event/h)]** : número médio de horas de eventos inseridos na fila do Centro de mensagens.
 * **[!UICONTROL Incoming (event vol)]** : número de eventos inseridos na fila do Centro de mensagens.
@@ -32,4 +35,4 @@ Nesse relatório, você pode exibir as estatísticas gerais ou aquelas relativas
 
 >[!NOTE]
 >
->Os limites de indicador de aviso (laranja) e de alerta (vermelho) podem ser configurados no assistente de implantação. Consulte [Limites de monitoramento](../../message-center/using/monitoring-thresholds.md).
+>Os limites de indicador de aviso (laranja) e de alerta (vermelho) podem ser configurados no assistente de implantação. Consulte [Limites de monitoramento](../../message-center/using/additional-configurations.md#monitoring-thresholds).
