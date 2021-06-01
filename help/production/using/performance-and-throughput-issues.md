@@ -1,19 +1,17 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: Problemas de desempenho e de taxa de transferência
 description: Problemas de desempenho e de taxa de transferência
 audience: production
 content-type: reference
 topic-tags: troubleshooting
-translation-type: tm+mt
-source-git-commit: d1b38acc5209a5c96ab7a35fe9640159141b110f
+exl-id: fe69efda-a052-4f67-9c13-665f011d0a2b
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '711'
-ht-degree: 8%
+ht-degree: 11%
 
 ---
-
 
 # Problemas de desempenho e de taxa de transferência{#performance-and-throughput-issues}
 
@@ -25,7 +23,7 @@ Consulte as [Notas de versão](../../rn/using/latest-release.md) para obter mais
 
 As diretrizes gerais para os requisitos de hardware do Campaign Classic local estão detalhadas neste [page](https://helpx.adobe.com/br/campaign/kb/hardware-sizing-guide.html).
 
-A equipe de consultoria pode fornecer aos clientes hospedados uma ferramenta que permite visualizar facilmente qual espaço é usado por vários tipos de tabelas no banco de dados, bem como o espaço usado no site SFTP. Além disso, fornece ferramentas que permitem limpar dados desnecessários. Entre em contato com o [Adobe Customer Care](https://helpx.adobe.com/br/enterprise/admin-guide.html) se precisar que essa ferramenta seja implementada. Veja algumas coisas importantes a serem verificadas usando esta ferramenta:
+A equipe de consultoria pode fornecer aos clientes hospedados uma ferramenta que permite visualizar facilmente qual espaço é usado por vários tipos de tabelas no banco de dados, bem como o espaço usado no site SFTP. Além disso, fornece ferramentas que permitem limpar dados desnecessários. Entre em contato com o [Adobe Customer Care](https://helpx.adobe.com/br/enterprise/admin-guide.html/br/enterprise/using/support-for-experience-cloud.ug.html) se precisar que essa ferramenta seja implementada. Veja algumas coisas importantes a serem verificadas usando esta ferramenta:
 
 * Se o tamanho do índice for maior que o tamanho da tabela, será necessário haver vácuo.
 * Verifique as tabelas com o máximo de borrão. Se estas tabelas forem frequentemente utilizadas, devem ser aspiradas.
@@ -52,7 +50,7 @@ Esta é uma lista de artigos relacionados às práticas recomendadas de configur
 
 * MTA e MTAChild processos e memória: o módulo **mta** distribui mensagens para seus módulos filho **mtachild**. Cada **mtachild** prepara mensagens antes de solicitar uma autorização do servidor de estatísticas e enviá-las. Consulte esta [página](../../installation/using/email-deliverability.md) para obter mais informações.
 * Configuração TLS: não é recomendado ativar o TLS globalmente porque ele pode reduzir a taxa de transferência. Em vez disso, as configurações de TLS por domínio, gerenciadas pela equipe de deliverability, devem ser ajustadas dependendo das necessidades. Consulte esta [página](../../installation/using/email-deliverability.md#mx-configuration) para obter mais informações.
-* DKIM: para garantir o nível de segurança do DKIM, o 1024b é o tamanho de criptografia recomendado pela prática recomendada. As chaves DKIM inferiores não serão consideradas válidas pela maioria dos provedores de acesso. Consulte [esta página](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/transition-process/infrastructure.html#authentication).
+* DKIM: para garantir o nível de segurança do DKIM, o 1024b é o tamanho de criptografia recomendado pela prática recomendada. As chaves DKIM inferiores não serão consideradas válidas pela maioria dos provedores de acesso. Consulte [esta página](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/transition-process/infrastructure.html?lang=pt-BR#authentication).
 
 ## Problemas com delivery {#deliverability-issues}
 
@@ -67,4 +65,4 @@ Esta é uma lista de práticas recomendadas e artigos relacionados à capacidade
 
 >[!NOTE]
 >
->Consulte também a seção [Deliverability](../../delivery/using/about-deliverability.md) . Para um mergulho mais profundo na capacidade de entrega, consulte o [Guia de práticas recomendadas de capacidade de entrega do Adobe](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/introduction.html).
+>Consulte também a seção [Deliverability](../../delivery/using/about-deliverability.md) . Para obter informações mais detalhadas sobre a capacidade de delivery, consulte o [Manual de práticas recomendadas de capacidade de delivery da Adobe](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/introduction.html?lang=pt-BR).
