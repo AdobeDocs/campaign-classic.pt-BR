@@ -1,5 +1,4 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: Solução de problemas de produção
 description: Descubra os procedimentos de solução de problemas de produção relacionados à configuração, monitoramento, processo de atualização, processamento de dados e procedimento de manutenção de banco de dados do Adobe Campaign.
@@ -7,8 +6,7 @@ audience: production
 content-type: reference
 topic-tags: troubleshooting
 exl-id: 78c65b31-e3d9-4a46-a101-26f35d00a4ee
-translation-type: tm+mt
-source-git-commit: b0a1e0596e985998f1a1d02236f9359d0482624f
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '219'
 ht-degree: 20%
@@ -26,7 +24,7 @@ Esta seção contém procedimentos de solução de problemas relacionados a prob
 * Esta [página](../../production/using/lost-password.md) detalha como alterar ou recuperar uma senha perdida.
 * Essa [página](../../production/using/console-update.md) detalha como reativar a solicitação de atualização do console se você desativar a opção correspondente.
 
-## Solução de problemas de delivery {#delivery-troubleshooting}
+## Solução de problemas de entrega {#delivery-troubleshooting}
 
 Ações específicas podem ser executadas quando houver problemas com deliveries:
 * [Problemas com delivery](../../production/using/performance-and-throughput-issues.md#deliverability_issues)
