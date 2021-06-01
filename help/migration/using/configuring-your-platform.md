@@ -1,19 +1,17 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: Configuração da plataforma
 description: Configuração da plataforma
 audience: migration
 content-type: reference
 topic-tags: migration-procedure
-translation-type: tm+mt
-source-git-commit: d88815e36f7be1b010dcaeee51013a5da769b4a8
+exl-id: ad71dead-c0ca-42d5-baa8-0f340979231a
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '940'
 ht-degree: 2%
 
 ---
-
 
 # Configuração da plataforma{#configuring-your-platform}
 
@@ -115,7 +113,7 @@ Após executar **postupgrade**, os seguintes elementos devem ser considerados e 
 
    No Red Hat, é possível encontrar erros ao editar determinados esquemas. Para obter mais informações, consulte a seção [Red-Hat](../../migration/using/general-configurations.md#red-hat) .
 
-* Fluxos de trabalho
+* Workflows
 
    Ao migrar de uma plataforma v5.11, você deve controlar o diretório de tempo de execução dos workflows. Para obter mais informações, consulte a seção [Workflows](../../migration/using/specific-configurations-in-v5-11.md#workflows) .
 
@@ -130,4 +128,3 @@ Após executar **postupgrade**, os seguintes elementos devem ser considerados e 
 * Interação
 
    Se você usar **Interaction**, deverá ajustar os parâmetros após a migração. Para obter mais informações, consulte a seção [Interaction](../../migration/using/general-configurations.md#interaction) .
-
