@@ -3,21 +3,20 @@ solution: Campaign Classic
 product: campaign
 title: Versão 20.2
 description: Versão 20.2
-feature: Overview
+feature: Visão geral
 role: Business Practitioner
 level: Beginner
 exl-id: fcaab1aa-c8f9-4606-b0d8-eb481a38f588
-translation-type: tm+mt
-source-git-commit: 1c59afc7021af604559184cd0c21129af3759a8c
+source-git-commit: b211948f1b6a64d0734d1d23f6df4951af88445a
 workflow-type: tm+mt
 source-wordcount: '2970'
-ht-degree: 91%
+ht-degree: 92%
 
 ---
 
 # Versão 20.2{#release-20-2}
 
-## ![](assets/do-not-localize/green_2.png) Versão 20.2.5 - Compilação 9188 {#release-20-2-5-build-9188}
+## ![](assets/do-not-localize/green_2.png) Versão 20.2.5 – Compilação 9188 {#release-20-2-5-build-9188}
 
 _15 de abril de 2021_
 
@@ -27,7 +26,7 @@ _15 de abril de 2021_
 
 >[!NOTE]
 >
-> Conecte-se à [Distribuição de software da Adobe](https://experience.adobe.com/#/downloads/content/software-distribution/br/campaign.html) para baixar a nova versão. Saiba como propor a atualização do console para todos os usuários finais [nesta página](../../installation/using/client-console-availability-for-windows.md).
+> Conecte-se à [Distribuição de software da Adobe](https://experience.adobe.com/#/downloads/content/software-distribution/en/campaign.html) para baixar a nova versão. Saiba como propor a atualização do console para todos os usuários finais [nesta página](../../installation/using/client-console-availability-for-windows.md).
 
 _31 de março de 2021_
 
@@ -236,7 +235,7 @@ Saiba mais na [matriz de compatibilidade do Campaign](https://helpx.adobe.com/br
 
 **Aprimoramentos**
 
-* As mensagens transacionais foram aprimoradas para melhorar a experiência do usuário. Agora é possível desfazer a publicação de um template de mensagem transacional, o que o exclui das instâncias de execução. [Saiba mais](../../message-center/using/template-unpublication.md).
+* As mensagens transacionais foram aprimoradas para melhorar a experiência do usuário. Agora é possível desfazer a publicação de um template de mensagem transacional, o que o exclui das instâncias de execução. [Saiba mais](../../message-center/using/publishing-message-templates.md#template-unpublication).
 
 * Há novas opções disponíveis para definir limitações ao enviar emails com imagens ou anexos. Essas grades de proteção podem evitar problemas de desempenho, o que é particularmente útil com mensagens transacionais. [Leia mais](../../installation/using/configuring-campaign-options.md#delivery)
 
