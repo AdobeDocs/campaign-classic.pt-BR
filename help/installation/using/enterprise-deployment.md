@@ -1,5 +1,4 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: Implantação empresarial
 description: Implantação empresarial
@@ -7,11 +6,10 @@ audience: installation
 content-type: reference
 topic-tags: deployment-types-
 exl-id: 38c14010-203a-47ab-b23d-6f431dab9a88
-translation-type: tm+mt
-source-git-commit: b0a1e0596e985998f1a1d02236f9359d0482624f
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '1221'
-ht-degree: 4%
+ht-degree: 6%
 
 ---
 
@@ -102,7 +100,7 @@ As etapas para instalar o primeiro servidor são:
 
    Pressione **Ctrl+C** para parar o servidor.
 
-   Para obter mais informações, consulte as seguintes seções:
+   Para obter mais informações, consulte estas seções:
 
    * Para Linux: [Primeira inicialização do servidor](../../installation/using/installing-packages-with-linux.md#first-start-up-of-the-server)
    * Para Windows: [Primeira inicialização do servidor](../../installation/using/installing-the-server.md#first-start-up-of-the-server)
@@ -245,7 +243,7 @@ Siga as etapas abaixo:
 
 1. Inicie os servidores da Adobe Campaign.
 
-   Para obter mais informações, consulte as seguintes seções:
+   Para obter mais informações, consulte estas seções:
 
    * Para Linux: [Primeira inicialização do servidor](../../installation/using/installing-packages-with-linux.md#first-start-up-of-the-server)
    * Para Windows: [Primeira inicialização do servidor](../../installation/using/installing-the-server.md#first-start-up-of-the-server)
@@ -284,7 +282,7 @@ As etapas são as seguintes:
    <redir status="OK" date="AAAA/MM/JJ HH:MM:SS" build="XXXX" host="tracking.campaign.net" localHost="front_srv2"/>
    ```
 
-   Para obter mais informações, consulte as seguintes seções:
+   Para obter mais informações, consulte estas seções:
 
    * Para Linux: [Iniciar o servidor Web e testar a configuração](../../installation/using/integration-into-a-web-server-for-linux.md#launching-the-web-server-and-testing-the-configuration),
    * Para Windows: [Iniciar o servidor Web e testar a configuração](../../installation/using/integration-into-a-web-server-for-windows.md#launching-the-web-server-and-testing-the-configuration).
