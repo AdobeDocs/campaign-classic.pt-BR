@@ -1,5 +1,4 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: Criação de notificações por push
 description: Saiba como criar notificações por push
@@ -7,9 +6,8 @@ audience: delivery
 content-type: reference
 topic-tags: sending-push-notifications
 exl-id: 13ccc5d6-4355-42ba-80dc-30a45d3b69a4
-translation-type: ht
-source-git-commit: 6854d06f8dc445b56ddfde7777f02916a60f2b63
-workflow-type: ht
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+workflow-type: tm+mt
 source-wordcount: '835'
 ht-degree: 100%
 
@@ -132,7 +130,7 @@ Para enviar uma prova e o delivery final, use o mesmo processo que os deliveries
 
 O processo detalhado da validação e envio de um delivery é apresentado nas seções abaixo:
 
-* [Validando o dleivery](../../delivery/using/steps-validating-the-delivery.md)
+* [Validação do delivery](../../delivery/using/steps-validating-the-delivery.md)
 * [Enviando o delivery](../../delivery/using/steps-sending-the-delivery.md)
 
 Após enviar as mensagens, você pode monitorar e rastrear seus deliveries. Para obter mais informações, consulte essas seções.
