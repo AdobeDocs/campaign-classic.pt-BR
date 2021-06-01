@@ -1,5 +1,4 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: Sobre casos de uso de fluxo de trabalho
 description: Saiba mais sobre casos de uso que você pode executar usando workflows do Campaign Classic.
@@ -9,9 +8,8 @@ topic-tags: about-workflows-and-data-management
 internal: n
 snippet: y
 exl-id: 7c093b34-6b0e-4403-9d9d-fba9ba39ea41
-translation-type: ht
-source-git-commit: 6854d06f8dc445b56ddfde7777f02916a60f2b63
-workflow-type: ht
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+workflow-type: tm+mt
 source-wordcount: '207'
 ht-degree: 100%
 
@@ -29,13 +27,13 @@ Eles ajudarão você a descobrir os diferentes contextos nos quais os workflows 
 
 * [O uso da atividade de aprovação local](../../workflow/using/using-the-local-approval-activity.md)
 * [Teste A/B](../../delivery/using/a-b-testing-use-case.md)
-* [Envio de um e-mail de aniversário](../../workflow/using/sending-a-birthday-email.md)
+* [Envio de um email de aniversário](../../workflow/using/sending-a-birthday-email.md)
 * [Carregamento de conteúdo de delivery](../../workflow/using/loading-delivery-content.md)
-* [Fluxo de trabalho de delivery entre canais](../../workflow/using/cross-channel-delivery-workflow.md)
-* [Enriquecimento de e-mail com campos de data personalizados](../../workflow/using/email-enrichment-with-custom-date-fields.md)
-* [Automação da criação, edição e publicação de conteúdo](../../delivery/using/automating-via-workflows.md#examples)
+* [Fluxo de trabalho de entrega entre canais](../../workflow/using/cross-channel-delivery-workflow.md)
+* [Enriquecimento de email com campos de data personalizados](../../workflow/using/email-enrichment-with-custom-date-fields.md)
+* [Automação de criação, edição e publicação de conteúdo](../../delivery/using/automating-via-workflows.md#examples)
 
-## Monitoramento de {#monitoring}
+## Monitoramento {#monitoring}
 
 <img src="assets/do-not-localize/icon_monitoring.svg" width="60px">
 
