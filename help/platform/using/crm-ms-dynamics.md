@@ -1,5 +1,4 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: Campaign - Conector do Microsoft Dynamics CRM
 description: Conecte o Campaign e o Microsoft Dynamics
@@ -7,9 +6,8 @@ audience: platform
 content-type: reference
 topic-tags: connectors
 exl-id: 26737940-b3ce-425c-9604-f4cefd19afaa
-translation-type: ht
-source-git-commit: 37802e52f1d1d38d9c3d59c439f23114a594bfef
-workflow-type: ht
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+workflow-type: tm+mt
 source-wordcount: '947'
 ht-degree: 100%
 
@@ -50,10 +48,10 @@ No Campaign Classic:
 
 
 >[!CAUTION]
->
 > Ao conectar o Adobe Campaign com o Microsoft Dynamics, não é possível:
 > * Instalar plug-ins que podem alterar o comportamento do CRM, o que pode levar a problemas de compatibilidade com o Adobe Campaign
 > * Selecionar várias listas discriminadas
+
 >
 
 
