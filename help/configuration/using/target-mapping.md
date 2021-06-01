@@ -1,42 +1,40 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: Target mapping
 description: Saiba como criar um target mapping
 audience: configuration
 content-type: reference
 topic-tags: use-a-custom-recipient-table
-translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+exl-id: 38333669-5598-4811-a121-b677c1413f56
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '507'
 ht-degree: 3%
 
 ---
 
-
 # Target mapping{#target-mapping}
 
-A criação de target mapping é necessária em dois casos:
+A criação do target mapping é necessária em dois casos:
 
-* se você usar uma tabela de recipient diferente da fornecida pela Adobe Campaign,
-* se você configurar uma dimensão do filtro diferente do targeting dimension padrão na tela do target mapping.
+* se usar uma tabela de recipients diferente da fornecida pelo Adobe Campaign,
+* se você configurar uma dimensão de filtro diferente do targeting dimension padrão na tela de target mapping.
 
-O assistente de criação de target mapping o ajudará a criar todos os schemas necessários para usar sua tabela personalizada.
+O assistente de criação de target mapping ajudará você a criar todos os schemas necessários para usar sua tabela personalizada.
 
 ## Criação e configuração de schemas vinculados à tabela personalizada {#creating-and-configuring-schemas-linked-to-the-custom-table}
 
-Antes de criar um target mapping, são necessárias várias configurações para que a Adobe Campaign funcione com um novo schema de dados do recipient.
+Antes de criar um target mapping, várias configurações são necessárias para que o Adobe Campaign funcione com um novo schema de dados de recipient.
 
 Para fazer isso, siga as etapas abaixo:
 
-1. Crie um novo schema de dados que integre os campos da tabela personalizada que você deseja usar.
+1. Crie um novo schema de dados que integre os campos da tabela personalizada que deseja usar.
 
-   Para obter mais informações, consulte [referência de Schema (xtk:srcSchema)](../../configuration/using/about-schema-reference.md).
+   Para obter mais informações, consulte [Referência de esquema (xtk:srcSchema)](../../configuration/using/about-schema-reference.md).
 
-   Em nosso exemplo, criaremos um schema de cliente, uma tabela muito simples contendo os seguintes campos: ID, nome, sobrenome, endereço de email, número de telefone celular. O objetivo é poder enviar alertas por correio eletrônico ou SMS aos indivíduos armazenados nesta tabela.
+   Em nosso exemplo, criaremos um schema do cliente, uma tabela muito simples contendo os seguintes campos: ID, nome, sobrenome, endereço de email, número do celular. O objetivo é poder enviar alertas de email ou SMS para os indivíduos armazenados nesta tabela.
 
-   Schema de exemplo (cus:individual)
+   Exemplo de schema (cus:individual)
 
    ```
    <srcSchema name="individual" namespace="cus" label="Individuals">
@@ -53,7 +51,7 @@ Para fazer isso, siga as etapas abaixo:
    </srcSchema>
    ```
 
-1. Declarar seu schema como uma visualização externa usando o atributo =&quot;true&quot;. Consulte [O atributo de visualização](../../configuration/using/schema-characteristics.md#the-view-attribute).
+1. Declare o schema como uma exibição externa usando o atributo =&quot;true&quot;. Consulte [O atributo de exibição](../../configuration/using/schema-characteristics.md#the-view-attribute).
 
    ```
     <srcSchema desc="External recipient table" namespace="cus" view="true"....>
@@ -61,7 +59,7 @@ Para fazer isso, siga as etapas abaixo:
     </srcSchema>
    ```
 
-1. Se precisar adicionar um endereço de mala direta, use o seguinte tipo de estrutura:
+1. Se precisar adicionar um endereço de correspondência direta, use o seguinte tipo de estrutura:
 
    ```
    <element advanced="true" name="postalAddress" template="nms:common:postalAddress">
@@ -83,43 +81,43 @@ Para fazer isso, siga as etapas abaixo:
    ```
 
 1. Clique no nó **[!UICONTROL Administration > Campaign management > Target mappings]**.
-1. Clique no botão **Novo** para abrir o assistente de criação de target mapping.
-1. Digite o campo **Label** e selecione o schema que você acabou de criar no campo **Targeting dimension**.
+1. Clique no botão **New** para abrir o assistente de criação de target mapping.
+1. Insira o campo **Label** e selecione o schema que acabou de criar no campo **Targeting dimension**.
 
    ![](assets/mapping_diffusion_wizard_1.png)
 
-1. Na janela **Editar formulários de endereço**, selecione os campos do schema que correspondem aos vários endereços de delivery. Aqui, podemos mapear os campos **@email** e **@mobile**.
+1. Na janela **Edit address forms**, selecione os campos do schema que correspondem aos vários endereços de delivery. Aqui, podemos mapear os campos **@email** e **@mobile**.
 
    ![](assets/mapping_diffusion_wizard_2.png)
 
-1. Na seguinte janela **Armazenamento**, digite o **Sufixo do campo schemas de extensão** para diferenciar os novos schemas dos schemas predefinidos fornecidos pela Adobe Campaign.
+1. Na seguinte janela **Storage**, insira o **Suffix do campo extension schemas** para diferenciar os novos schemas dos esquemas prontos para uso fornecidos pelo Adobe Campaign.
 
-   Clique em **[!UICONTROL Define new additional fields]** para selecionar a dimensão que deseja público alvo em seu delivery.
+   Clique em **[!UICONTROL Define new additional fields]** para selecionar a dimensão que deseja direcionar no delivery.
 
-   Por padrão, o gerenciamento de exclusão é armazenado nas mesmas tabelas que as mensagens. Marque a caixa **Gerar um schema de armazenamento para rastreamento** se desejar configurar o armazenamento para o rastreamento vinculado ao target mapping.
+   Por padrão, o gerenciamento de exclusão é armazenado nas mesmas tabelas que as mensagens. Marque a caixa **Generate a storage schema for tracking** se desejar configurar o armazenamento para o rastreamento vinculado ao target mapping.
 
    ![](assets/mapping_diffusion_wizard_3.png)
 
    >[!IMPORTANT]
    >
-   >A Adobe Campaign não suporta vários schemas de recipient, conhecidos como schemas de definição de metas, vinculados aos mesmos schemas de registro de transmissão e/ou rastreamento. Caso contrário, isso pode resultar em anomalias na reconciliação de dados posteriormente. Para obter mais informações sobre isso, consulte a página [Recomendações e limitações](../../configuration/using/about-custom-recipient-table.md).
+   >O Adobe Campaign não oferece suporte a vários esquemas de recipient, conhecidos como esquemas de direcionamento, vinculados aos mesmos esquemas de broadlog e/ou de trackinglog. Caso contrário, isso pode levar a anomalias na reconciliação de dados posteriormente. Para obter mais informações, consulte a página [Recomendação e limitações](../../configuration/using/about-custom-recipient-table.md).
 
-1. Na janela **Extensões**, selecione os schemas opcionais que deseja gerar (a lista dos schemas disponíveis depende dos módulos instalados na plataforma Adobe Campaign).
+1. Na janela **Extensions**, selecione os schemas opcionais que deseja gerar (a lista de schemas disponíveis depende dos módulos instalados na plataforma Adobe Campaign).
 
    ![](assets/mapping_diffusion_wizard_4.png)
 
-1. Clique no botão **Salvar** para fechar o assistente.
+1. Clique no botão **Save** para fechar o assistente.
 
-   O assistente usa o schema do start para criar todos os outros schemas necessários para que o novo target mapping funcione.
+   O assistente usa o schema start para criar todos os outros schemas necessários para que o novo target mapping funcione.
 
    ![](assets/mapping_schema_list.png)
 
-## Usando o target mapping {#using-target-mapping}
+## Uso do target mapping {#using-target-mapping}
 
-Há duas maneiras de usar o novo schema como público alvo de um delivery:
+Há duas maneiras de usar o novo schema como target de um delivery:
 
-* Criar um ou mais templates do delivery com base no mapeamento
-* Selecione o mapeamento diretamente durante a seleção do público alvo ao criar um delivery, como mostrado abaixo:
+* Criar um ou mais templates de delivery com base no mapeamento
+* Selecione o mapeamento diretamente durante a seleção de target ao criar um delivery, conforme mostrado abaixo:
 
 ![](assets/mapping_selection_ciblage.png)
 
