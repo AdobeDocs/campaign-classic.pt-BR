@@ -1,5 +1,4 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: Implantação independente
 description: Implantação independente
@@ -7,11 +6,10 @@ audience: installation
 content-type: reference
 topic-tags: deployment-types-
 exl-id: 194366ab-fd9f-4431-9163-ae16c1f96db2
-translation-type: tm+mt
-source-git-commit: b0a1e0596e985998f1a1d02236f9359d0482624f
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '1086'
-ht-degree: 3%
+ht-degree: 5%
 
 ---
 
@@ -101,7 +99,7 @@ Siga as etapas abaixo:
 
    Pressione **Ctrl+C** para parar o servidor.
 
-   Para obter mais informações, consulte as seguintes seções:
+   Para obter mais informações, consulte estas seções:
 
    * Para Linux: [Primeira inicialização do servidor](../../installation/using/installing-packages-with-linux.md#first-start-up-of-the-server),
    * Para Windows: [Primeira inicialização do servidor](../../installation/using/installing-the-server.md#first-start-up-of-the-server).
@@ -179,7 +177,7 @@ Siga as etapas abaixo:
    <redir status="OK" date="AAAA/MM/JJ HH:MM:SS" build="XXXX" host="tracking.campaign.net" localHost="localhost"/>
    ```
 
-   Para obter mais informações, consulte as seguintes seções:
+   Para obter mais informações, consulte estas seções:
 
    * Para Linux: [Iniciar o servidor Web e testar a configuração](../../installation/using/integration-into-a-web-server-for-linux.md#launching-the-web-server-and-testing-the-configuration)
    * Para Windows: [Iniciar o servidor Web e testar a configuração](../../installation/using/integration-into-a-web-server-for-windows.md#launching-the-web-server-and-testing-the-configuration)
