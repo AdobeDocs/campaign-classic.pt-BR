@@ -1,19 +1,17 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: Diretrizes de script e codificação
 description: Saiba mais sobre as diretrizes a serem seguidas ao desenvolver no Adobe Campaign (fluxos de trabalho, Javascript, JSSP, etc.).
 audience: installation
 content-type: reference
 topic-tags: prerequisites-and-recommendations-
-translation-type: tm+mt
-source-git-commit: f03554302c77a39a3ad68d47417ed930f43302b7
+exl-id: 1f96c3df-0ef2-4f5f-9c36-988cbcc0769f
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '757'
-ht-degree: 43%
+ht-degree: 44%
 
 ---
-
 
 # Diretrizes de script e codificação {#scripting-coding-guidelines}
 
