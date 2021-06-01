@@ -2,26 +2,29 @@
 solution: Campaign Classic
 product: campaign
 title: Tempo de processamento do Centro de mensagens
-description: Tempo de processamento do Centro de mensagens
+description: Saiba mais sobre o relatório de tempo de processamento do Centro de mensagens.
 audience: message-center
 content-type: reference
 topic-tags: reports
 exl-id: c797fd94-0c8d-480b-b22a-1489ac331e77
-translation-type: ht
-source-git-commit: 6854d06f8dc445b56ddfde7777f02916a60f2b63
-workflow-type: ht
-source-wordcount: '212'
-ht-degree: 100%
+source-git-commit: d39b15b0efc6cbd6ab24e074713be6f8fc90e5fc
+workflow-type: tm+mt
+source-wordcount: '217'
+ht-degree: 88%
 
 ---
 
-# Tempo de processamento do Centro de mensagens{#message-center-processing-time}
+# Tempo de processamento do Centro de mensagens {#message-center-processing-time}
 
-Esse relatório exibe os indicadores principais relacionados à fila em tempo real. Esse relatório, destinado aos administradores técnicos, também pode ser acessado por meio da guia **[!UICONTROL Monitoring]** na instância de controle.
+Esse relatório exibe os indicadores principais relacionados à fila em tempo real.
+
+Esse relatório, destinado aos administradores técnicos, também pode ser acessado por meio da guia **[!UICONTROL Monitoring]** na instância de controle.
 
 ![](assets/mc_reports_2.png)
 
-Assim como para o relatório **[!UICONTROL Message Center service level]**, você pode exibir as estatísticas gerais ou aquelas relativas a uma instância de execução específica. Você também pode filtrar os dados por canal e por um período específico. Os indicadores exibidos na seção **[!UICONTROL Indicators over the period]** são calculados sobre o período selecionado:
+Assim como para o relatório **[!UICONTROL Message Center service level]**, você pode exibir as estatísticas gerais ou aquelas relativas a uma instância de execução específica. Você também pode filtrar os dados por canal e por um período específico.
+
+Os indicadores exibidos na seção **[!UICONTROL Indicators over the period]** são calculados sobre o período selecionado:
 
 * **[!UICONTROL Average queuing time]**: o tempo médio que processou eventos com êxito no Centro de mensagens. Somente o tempo de processamento é levado em conta.
 * **[!UICONTROL Average message sending time (s)]**: o tempo médio que processou eventos com êxito no Centro de mensagens. Somente o tempo de delivery mta é levado em conta.
@@ -32,4 +35,4 @@ Assim como para o relatório **[!UICONTROL Message Center service level]**, voc�
 
 >[!NOTE]
 >
->Os limites de indicador de aviso (laranja) e de alerta (vermelho) podem ser configurados no assistente de implantação do Adobe Campaign. Consulte [Limites de monitoramento](../../message-center/using/monitoring-thresholds.md).
+>Os limites de indicador de aviso (laranja) e de alerta (vermelho) podem ser configurados no assistente de implantação do Adobe Campaign. Consulte [Limites de monitoramento](../../message-center/using/additional-configurations.md#monitoring-thresholds).
