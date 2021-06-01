@@ -1,28 +1,26 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: Configuração do acesso ao SAP HANA
 description: Saiba como configurar o acesso ao SAP HANA no FDA
 audience: platform
 content-type: reference
 topic-tags: connectors
-translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+exl-id: 39bfe775-e182-4a0b-ad3c-b7a901297c90
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '263'
 ht-degree: 71%
 
 ---
 
-
 # Configuração do acesso ao SAP HANA {#configure-access-to-sap-hana}
 
-Use a opção Campanha [Federated Data Acces](../../installation/using/about-fda.md) (FDA) para processar informações armazenadas em um banco de dados externo. Siga as etapas abaixo para configurar o acesso ao SAP HANA.
+Use a opção Campaign [Federated Data Access](../../installation/using/about-fda.md) (FDA) para processar informações armazenadas em um banco de dados externo. Siga as etapas abaixo para configurar o acesso ao SAP HANA.
 
-1. Configurar [banco de dados SAP HANA](#sap-config)
-1. Configure o SAP HANA [conta externa](#sap-external) na Campanha
+1. Configurar [banco de dados do SAP HANA](#sap-config)
+1. Configure o SAP HANA [external account](#sap-external) no Campaign
 
-## Drivers SAP HANA {#sap-config}
+## Drivers de SAP HANA {#sap-config}
 
 A conexão com um banco de dados externo SAP HANA no FDA exige determinadas configurações adicionais no servidor do Adobe Campaign:
 
@@ -60,11 +58,11 @@ A conexão com um banco de dados externo SAP HANA no FDA exige determinadas conf
    * **LD_LIBRARY_PATH**: deve incluir o link para o cliente SAP Hana (/usr/sap/hdbclient/libodbcHDB.so) por padrão.
    * **ODBCINI**: local do arquivo odbc.ini (por exemplo /etc/odbc.ini).
 
-## CONTA EXTERNA SAP HANA{#sap-external}
+## Conta externa do SAP HANA{#sap-external}
 
-A conta externa SAP HANA permite que você conecte a instância da Campanha ao banco de dados externo da SAP HANA.
+A conta externa do SAP HANA permite conectar a instância do Campaign ao banco de dados externo do SAP HANA.
 
-1. Na Campanha **[!UICONTROL Explorer]**, clique em **[!UICONTROL Administration]** &#39;>&#39; **[!UICONTROL Platform]** &#39;>&#39; **[!UICONTROL External accounts]**.
+1. Em Campanha **[!UICONTROL Explorer]**, clique em **[!UICONTROL Administration]** &#39;>&#39; **[!UICONTROL Platform]** &#39;>&#39; **[!UICONTROL External accounts]**.
 
 1. Clique em **[!UICONTROL New]** e selecione **[!UICONTROL External database]** como **[!UICONTROL Type]**.
 
