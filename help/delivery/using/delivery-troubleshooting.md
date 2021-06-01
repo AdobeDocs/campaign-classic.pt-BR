@@ -1,5 +1,4 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: Solução de problemas
 description: Saiba mais sobre o desempenho do delivery e como solucionar problemas relacionados ao monitoramento do delivery.
@@ -7,9 +6,8 @@ audience: delivery
 content-type: reference
 topic-tags: monitoring-deliveries
 exl-id: 37b1d7fb-7ceb-4647-9aac-c8a80495c5bf
-translation-type: ht
-source-git-commit: 6854d06f8dc445b56ddfde7777f02916a60f2b63
-workflow-type: ht
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+workflow-type: tm+mt
 source-wordcount: '789'
 ht-degree: 100%
 
@@ -23,8 +21,8 @@ Além disso, siga as práticas recomendadas e a lista de verificação detalhada
 
 **Tópicos relacionados:**
 
-* [Status de delivery](../../delivery/using/delivery-statuses.md)
-* [Painel de delivery](../../delivery/using/delivery-dashboard.md)
+* [Status da entrega](../../delivery/using/delivery-statuses.md)
+* [Painel de entrega](../../delivery/using/delivery-dashboard.md)
 * [Noções básicas sobre falhas de delivery](../../delivery/using/understanding-delivery-failures.md)
 
 ## Deliveries lentos {#slow-deliveries}
