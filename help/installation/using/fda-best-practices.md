@@ -1,5 +1,4 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: Práticas recomendadas e limitações do FDA do Campaign
 description: Saiba mais sobre as práticas recomendadas e limitações ao trabalhar com um banco de dados externo (FDA)
@@ -7,8 +6,7 @@ audience: platform
 content-type: reference
 topic-tags: connectors
 exl-id: f3980859-2837-416b-a0ef-2b369d2d50bd
-translation-type: tm+mt
-source-git-commit: 3b5a6e6f03d9cb26ed372c3df069cbada36756a2
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '446'
 ht-degree: 37%
@@ -47,7 +45,7 @@ Em várias atividades de workflow do Adobe Campaign, você pode usar os dados ar
 
 * **Adição de informações e links**  - A atividade  [](../../workflow/using/enrichment.md) de Enriquecimento permite adicionar dados adicionais à tabela de trabalho do workflow e vincula a uma tabela externa. Nesse contexto, é possível usar dados de um banco de dados externo. Saiba mais [nesta página](../../workflow/using/enrichment.md).
 
-## Limitações de FDA {#limitations}
+## Limitações do FDA {#limitations}
 
 A opção FDA é feita para manipular os dados em bancos de dados externos em modo de lote em workflows. Para evitar problemas de desempenho, não é recomendável usar o módulo FDA no contexto de operações unitárias, como: personalização, interação, mensagens em tempo real etc.
 
