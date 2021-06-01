@@ -7,7 +7,7 @@ feature: Visão geral
 role: Business Practitioner
 level: Beginner
 exl-id: 07c1f4a3-cf16-4a9b-b402-e13258799f91
-source-git-commit: bce114f36d1ec4582fc79e750d48155ba0d7cd1f
+source-git-commit: b211948f1b6a64d0734d1d23f6df4951af88445a
 workflow-type: tm+mt
 source-wordcount: '4367'
 ht-degree: 98%
@@ -113,7 +113,7 @@ Foi adicionado um caso de uso sobre como usar a funcionalidade de mesclagem da a
 
 A descrição completa do protocolo e da página de configurações do conector SMS agora está disponível [aqui](../../delivery/using/sms-protocol.md).
 
-Uma observação foi adicionada à seção **Mensagens transacionais** para avisar que as pastas de eventos não devem ser definidas como visualizações nas instâncias de execução para evitar problemas de direitos de acesso. [Leia mais](../../message-center/using/event-collection.md)
+Uma observação foi adicionada à seção **Mensagens transacionais** para avisar que as pastas de eventos não devem ser definidas como visualizações nas instâncias de execução para evitar problemas de direitos de acesso. [Leia mais](../../message-center/using/about-event-processing.md#event-collection)
 
 ## Novembro de 2020 {#nov-2020}
 
@@ -259,7 +259,7 @@ Leis de privacidade da Tailândia e do Brasil – [Leia mais](https://helpx.adob
 
 **Outras atualizações de documentação que vêm com a versão**
 
-A nova opção que permite desfazer a publicação de um template de mensagem transacional está documentada [nesta seção](../../message-center/using/template-unpublication.md).
+A nova opção que permite desfazer a publicação de um template de mensagem transacional está documentada [nesta seção](../../message-center/using/publishing-message-templates.md#template-unpublication).
 
 As novas opções que permitem definir limitações ao enviar emails que incluem imagens baixadas de um URL personalizado e anexos foram adicionadas à lista de opções do Campaign Classic. [Leia mais](../../installation/using/configuring-campaign-options.md#delivery)
 
@@ -519,7 +519,7 @@ A seção Sub-workflow activity foi aprimorada com um exemplo de uso. [Leia mais
 
 A página [Matriz de recursos no local e hospedada do Campaign Classic](../../installation/using/capability-matrix.md) foi atualizada com informações relacionadas a email Cco.
 
-A documentação de Mensagens transacionais foi atualizada com uma nota relacionada à publicação do modelo. [Leia mais](../../message-center/using/template-publication.md)
+A documentação de Mensagens transacionais foi atualizada com uma nota relacionada à publicação do modelo. [Leia mais](../../message-center/using/publishing-message-templates.md#template-publication)
 
 A seção Unprocessed bounce mails foi atualizada com mais detalhes sobre os campos Forwarding address e Address for errors. [Leia mais](../../installation/using/deploying-an-instance.md)
 
