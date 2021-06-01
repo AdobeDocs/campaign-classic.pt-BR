@@ -1,13 +1,12 @@
 ---
-solution: Campaign Classic
 product: campaign
-title: Orientações de monitoramento
+title: Diretrizes de monitoramento
 description: Descubra as diretrizes e práticas recomendadas para monitorar processos e instâncias do Campaign.
 audience: production
 content-type: reference
 topic-tags: introduction
 exl-id: ca0c33c5-7350-462a-bc65-4cab51e529d9
-source-git-commit: bce114f36d1ec4582fc79e750d48155ba0d7cd1f
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '768'
 ht-degree: 27%
