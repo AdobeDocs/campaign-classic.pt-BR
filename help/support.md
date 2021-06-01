@@ -1,14 +1,13 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: 'Opções de ajuda e suporte para Campaign Classic '
 description: Precisa de suporte para o Campaign Classic? Você está no lugar certo.
 hidefromtoc: true
 exl-id: 3a84236f-89e5-4b8b-9a98-afdc006fd6e0
-source-git-commit: bce114f36d1ec4582fc79e750d48155ba0d7cd1f
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '799'
-ht-degree: 75%
+ht-degree: 86%
 
 ---
 
@@ -16,7 +15,7 @@ ht-degree: 75%
 
 Precisa de suporte para o Campaign Classic? Você está no lugar certo.
 
-Obtenha suporte usando nossas perguntas frequentes, melhores práticas, recursos online e portal de suporte. Você também pode associar-se à comunidade do Campaign, perguntar aos especialistas ou registrar um problema.
+Obtenha suporte usando as perguntas frequentes, as práticas recomendadas, os recursos online e o portal de suporte. Você também pode associar-se à comunidade do Campaign, perguntar aos especialistas ou registrar um problema.
 
 <table>
     <tr>
@@ -32,7 +31,7 @@ Obtenha suporte usando nossas perguntas frequentes, melhores práticas, recursos
 
 ### Perguntas frequentes
 
-Como atualizar para uma nova build? como monitorar a execução do fluxo de trabalho? o que é o fluxo de trabalho de limpeza do banco de dados? [Leia as 10 principais perguntas](platform/using/common-questions.md).
+Como atualizar para um novo build? como monitorar a execução do fluxo de trabalho? o que é o fluxo de trabalho de limpeza do banco de dados? [Leia as 10 principais perguntas](platform/using/common-questions.md).
 
 <table>
     <tr><td><strong>Perguntas e respostas sobre tópicos</strong></td><td><strong>Problemas comuns</strong></td><td><strong>Práticas recomendadas</strong></td><td><strong>Como</strong></td></tr>
@@ -42,7 +41,7 @@ Como atualizar para uma nova build? como monitorar a execução do fluxo de trab
         <li><a href="platform/using/faq-key-concepts.md">Principais conceitos</a></li>
         <li><a href="platform/using/faq-campaign-config.md">Configurações do Campaign</a></li>
         <li><a href="platform/using/faq-reporting.md">Relatórios</a></li>
-        <li><a href="platform/using/faq-build-upgrade.md">Atualização da compilação</a></li>
+        <li><a href="platform/using/faq-build-upgrade.md">Atualização da build</a></li>
         <li><a href="platform/using/faq-messages.md">Testar, enviar e rastrear mensagens</a></li>
         <li><a href="platform/using/faq-workflows.md">Workflows</a></li>
         <li><a href="platform/using/faq-developers.md">Desenvolvedores</a></li>
@@ -56,7 +55,7 @@ Como atualizar para uma nova build? como monitorar a execução do fluxo de trab
         <li><a href="workflow/using/workflow-best-practices.md">Otimizar o desempenho do fluxo de trabalho</a></li>
         <li><a href="workflow/using/monitoring-workflow-execution.md">Solução de problemas de execução de fluxo de trabalho</a></li>
         <li><a href="platform/using/sftp-server-usage.md">Uso do servidor SFTP</a></li>
-        <li><a href="delivery/using/understanding-delivery-failures.md">Entender as falhas de delivery</a></li>
+        <li><a href="delivery/using/understanding-delivery-failures.md">Entender as falhas de entrega</a></li>
         </ul>
     </td>
    <td valign="top">
@@ -94,7 +93,7 @@ Como atualizar para uma nova build? como monitorar a execução do fluxo de trab
 ### O que é o Painel de controle do Campaign?
 
 O Painel de controle do Campaign ajuda a aumentar a eficiência do seu trabalho como administrador de produtos do Campaign Classic, permitindo gerenciar configurações e rastrear o uso de cada uma de suas instâncias.
-[Clique aqui](https://experienceleague.adobe.com/docs/control-panel/using/discover-control-panel/key-features.html) para obter mais informações.
+[Clique aqui](https://experienceleague.adobe.com/docs/control-panel/using/discover-control-panel/key-features.html?lang=pt-BR) para obter mais informações.
 
 >[!NOTE]
 >
@@ -104,7 +103,7 @@ O Painel de controle do Campaign ajuda a aumentar a eficiência do seu trabalho 
 
 ### Como acessar o Painel de controle do Campaign?
 
-O Painel de controle do Campaign está disponível diretamente na Adobe Experience Cloud. Ele pode ser acessado apenas por usuários administradores. [Clique aqui](https://experienceleague.adobe.com/docs/control-panel/using/discover-control-panel/accessing-control-panel.html) para obter mais informações.
+O Painel de controle do Campaign está disponível diretamente na Adobe Experience Cloud. Ele pode ser acessado apenas por usuários administradores. [Clique aqui](https://experienceleague.adobe.com/docs/control-panel/using/discover-control-panel/accessing-control-panel.html?lang=pt-BR) para obter mais informações.
 
 ### Perguntas frequentes sobre o Painel de controle do Campaign
 
@@ -117,17 +116,17 @@ No Painel de controle do Campaign, é possível interagir com todos os servidore
 ### Subdomínios e certificados
 
 Você pode monitorar os subdomínios e seus certificados. Saiba mais nestas páginas:
-* [Marca de subdomínio](https://experienceleague.adobe.com/docs/control-panel/using/subdomains-and-certificates/subdomains-branding.html)
-* [Configurar um novo subdomínio](https://experienceleague.adobe.com/docs/control-panel/using/subdomains-and-certificates/setting-up-new-subdomain.html)
-* [Monitorar certificados SSL](https://experienceleague.adobe.com/docs/control-panel/using/subdomains-and-certificates/monitoring-ssl-certificates.html)
+* [Marca de subdomínio](https://experienceleague.adobe.com/docs/control-panel/using/subdomains-and-certificates/subdomains-branding.html?lang=pt-BR)
+* [Configurar um novo subdomínio](https://experienceleague.adobe.com/docs/control-panel/using/subdomains-and-certificates/setting-up-new-subdomain.html?lang=pt-BR)
+* [Monitorar certificados SSL](https://experienceleague.adobe.com/docs/control-panel/using/subdomains-and-certificates/monitoring-ssl-certificates.html?lang=pt-BR)
 
 ### Configurações de instância
 
 Saiba como gerenciar as configurações de instâncias do Campaign Classic no Painel de controle. Saiba mais nestas páginas:
-* [Adicione IPs na ](https://experienceleague.adobe.com/docs/control-panel/using/instances-settings/ip-allow-listing-instance-access.html) lista de permissões para acessar suas instâncias do Campaign
-* [Gerenciar permissões de URL](https://experienceleague.adobe.com/docs/control-panel/using/instances-settings/url-permissions.html)
-* [Detalhes da instância de acesso](https://experienceleague.adobe.com/docs/control-panel/using/instances-settings/instance-details.html)
-* [Gerenciar chaves GPG para criptografia de dados](https://experienceleague.adobe.com/docs/control-panel/using/instances-settings/gpg-keys-management.html)
+* [Adicione IPs na ](https://experienceleague.adobe.com/docs/control-panel/using/instances-settings/ip-allow-listing-instance-access.html?lang=pt-BR) lista de permissões para acessar suas instâncias do Campaign
+* [Gerenciar permissões de URL](https://experienceleague.adobe.com/docs/control-panel/using/instances-settings/url-permissions.html?lang=pt-BR)
+* [Detalhes da instância de acesso](https://experienceleague.adobe.com/docs/control-panel/using/instances-settings/instance-details.html?lang=pt-BR)
+* [Gerenciar chaves GPG para criptografia de dados](https://experienceleague.adobe.com/docs/control-panel/using/instances-settings/gpg-keys-management.html?lang=pt-BR)
 
 ## Solicitação de ajuda {#support}
 
@@ -139,13 +138,13 @@ O novo sistema de emissão de bilhetes foi iniciado através de [Adobe Admin Con
 
 Associe-se à Comunidade do Campaign Classic: procure respostas em perguntas existentes ou faça sua pergunta à comunidade. [Participe da conversa](https://experienceleaguecommunities.adobe.cadobe-campaign-classic/ct-p/adobe-campaign-classic-community)
 
-### Acesse o Centro de download do Campaign
+### Acessar o Centro de download do Campaign
 
-A partir de junho de 2020, a solução da Experience Cloud, Software Distribution, substituirá o Neolane Download Center herdado e fornecerá uma experiência mais eficiente para encontrar e baixar softwares, pacotes e ferramentas. [](https://experience.adobe.com/#/downloads/content/software-distributicampaign.html)Clique aqui para acessar a Experience Cloud Software Distribution.
+A partir de junho de 2020, a solução da Experience Cloud, Software Distribution, substituirá o Neolane Download Center herdado e fornecerá uma experiência mais eficiente para encontrar e baixar softwares, pacotes e ferramentas. [Clique aqui](https://experience.adobe.com/#/downloads/content/software-distribution/en/campaign.html) para acessar a Distribuição de software da Experience Cloud.
 Saiba mais sobre o novo Centro de download [nesta página](https://experienceleague.adobe.com/docs/experience-cloud/software-distribution/home.html?lang=pt-BR).
 
 ### Criar um tíquete ou iniciar um chat
 
 A criação de um caso permite que você entre em contato com a Equipe de suporte ao cliente da Adobe sobre qualquer problema que você tiver com produtos da Adobe. Para ajudar a resolver ou solucionar problemas, o Adobe Admin Console permitirá que você fale com o Suporte ao cliente da Adobe.
 
-Para registrar um problema ou iniciar uma sessão de chat nesse novo sistema, conecte-se ao [Adobe Admin Console](https://adminconsole.adobe.com/overview). Siga o procedimento detalhado descrito em [this page](https://helpx.adobe.com/enterprise/using/support-for-experience-cloud.html).
+Para registrar um problema ou iniciar uma sessão de chat nesse novo sistema, conecte-se ao [Adobe Admin Console](https://adminconsole.adobe.com/overview). Siga o procedimento detalhado descrito [nesta página](https://helpx.adobe.com/enterprise/using/support-for-experience-cloud.html).
