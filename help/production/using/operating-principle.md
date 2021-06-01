@@ -1,19 +1,17 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: Princípio operacional
 description: Princípio operacional
 audience: production
 content-type: reference
 topic-tags: production-procedures
-translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+exl-id: 1c032ef9-af11-4947-90c6-76cb9434ae85
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '500'
 ht-degree: 1%
 
 ---
-
 
 # Princípio operacional{#operating-principle}
 
@@ -21,11 +19,11 @@ Tecnicamente, a plataforma Adobe Campaign é baseada em vários módulos.
 
 Há muitos módulos Adobe Campaign. Alguns operam continuamente, enquanto outros são iniciados ocasionalmente para executar tarefas administrativas (por exemplo, para configurar a conexão do banco de dados) ou para executar uma tarefa recorrente (por exemplo, consolidando informações de rastreamento).
 
-Há três tipos de módulos Adobe Campaign:
+Existem três tipos de módulos Adobe Campaign:
 
 * Módulos de várias instâncias: um único processo é executado para todas as instâncias. Isso se aplica aos seguintes módulos: **web**, **syslogd**, **trackinglogd** e **watchdog** (atividades do arquivo **config-default.xml**).
-* Módulos de mono-instância: um processo é executado por instância. Isso se aplica aos seguintes módulos: **mta**, **wfserver**, **inMail**, **sms** e **stat** (atividades do arquivo **config-`<instance>`.xml** ).
-* Módulos do utilitário: são módulos executados ocasionalmente para executar operações ocasionais ou recorrentes (**cleanup**, **config**, logs de rastreamento de download, etc.).
+* Módulos de instância única: um processo é executado por instância. Isso se aplica aos seguintes módulos: **mta**, **wfserver**, **inMail**, **sms** e **stat** (atividades do arquivo **config-`<instance>`.xml**) .
+* Módulos do utilitário: esses são módulos que são executados ocasionalmente para executar operações ocasionais ou recorrentes (**cleanup**, **config**, download de logs de rastreamento etc.).
 
 A administração do módulo é executada usando a ferramenta de linha de comando **nlserver** instalada no diretório **bin** da pasta de instalação.
 
@@ -33,50 +31,50 @@ A sintaxe geral da ferramenta **nlserver** é a seguinte:
 
 **nlserver  `<command>``<command arguments>`**
 
-Para a lista de módulos disponíveis, use o comando **nlserver**.
+Para obter a lista de módulos disponíveis, use o comando **nlserver**.
 
 Os módulos disponíveis são detalhados na tabela a seguir:
 
 | Comando | Descrição |
 |---|---|
-| aliasCleansing | Padronização dos valores de lista discriminada |
-| faturamento | Envio do relatório de atividade do sistema para billing@neolane.net |
-| limpeza | Limpeza do banco de dados: exclui dados obsoletos do banco de dados e executa uma atualização das estatísticas usadas pelo otimizador do mecanismo de banco de dados. |
-| configuração | Modificando a configuração do servidor |
-| base | Cópia de um banco de dados |
-| exportação | Exportar para linha de comando: permite enviar para a linha de comando um modelo de exportação criado no console do cliente Adobe Campaign |
+| aliasCleansing | Padronização dos valores de enumeração |
+| faturamento | Envio do relatório de atividades do sistema para billing@neolane.net |
+| cleanup | Limpando o banco de dados: exclui dados obsoletos do banco de dados e executa uma atualização das estatísticas usadas pelo otimizador do mecanismo de banco de dados. |
+| configuração | Modificação da configuração do servidor |
+| copybase | Cópia de um banco de dados |
+| exportar | Exportando para linha de comando: permite enviar para a linha de comando um modelo de exportação criado no console do cliente do Adobe Campaign |
 | fileconvert | Conversão de um arquivo de tamanho de conjunto |
-| importação | Importando para linha de comando: permite enviar para a linha de comando um modelo de importação criado no console do cliente Adobe Campaign. |
-| inMail | Analisador de correio de entrada |
-| instalação | Disponibilidade do ficheiro de instalação do cliente |
+| importar | Importando para linha de comando: permite enviar para a linha de comando um modelo de importação criado no console do cliente do Adobe Campaign. |
+| inMail | Analisador de email de entrada |
+| instalação | Disponibilidade do arquivo de instalação do cliente |
 | javascript | Execução de scripts JavaScript, com acesso a APIs SOAP. |
 | trabalho | Processamento de linha de comando |
-| fusão | Mesclagem de formulário |
-| midSourcing | Recuperação de informações sobre o delivery |
-| monitor | XML Exibindo o status dos processos do servidor e tarefas programadas, por instância. |
+| mesclar | Mesclagem de formulário |
+| midSourcing | Recuperação de informações de delivery no modo mid-sourcing |
+| monitor | XML Exibição do status de processos de servidor e tarefas agendadas, por instância. |
 | mta | Mensagem de transferência do agente principal |
-| package | Importação ou exportação de arquivos de pacote de entidade |
-| pdump | Exibição de status de processo do servidor |
+| pacote | Importação ou exportação de arquivos de pacote de entidade |
+| pdump | Exibição dos status do processo do servidor |
 | preparação | Preparação de uma ação de delivery |
 | reiniciar | Reinicialização parcial do servidor |
-| pântano | Execução de uma instância de fluxo de trabalho |
-| desligamento | Encerramento total do sistema |
-| sms | Processamento de notificação SMS |
-| sql | Execução de script SQL |
-| start | Start adicionais |
-| stat | Mantém as estatísticas de conexão MTA |
+| runwf | Execução de uma instância de workflow |
+| desligamento | Desligamento completo do sistema |
+| sms | Processamento de notificação por SMS |
+| sql | Execução do script SQL |
+| start | Inicializações adicionais |
+| stat | Mantém estatísticas de conexão MTA |
 | stop | Desligamento parcial do sistema |
 | submitda | Envio de uma ação de delivery |
-| syslogd | Servidor de gravação de log e trace |
-| rastreamento | Consolidação e recuperação de logs de rastreamento |
-| trackinglogd | Rastreamento de gravação e remoção de log do servidor |
-| cão de guarda | Instância de inicialização e monitoramento |
+| syslogd | Servidor de registro e gravação de rastreamento |
+| tracking | Consolidação e recuperação de logs de rastreamento |
+| trackinglogd | Servidor de gravação e limpeza do log de rastreamento |
+| vigia | Inicialização e instância de monitoramento |
 | web | Servidor de aplicativos (HTTP e SOAP) |
-| wfserver | Servidor de fluxo de trabalho |
+| wfserver | Servidor de workflow |
 
 >[!IMPORTANT]
 >
->Há um último módulo: o módulo de rastreamento e retransmissão vinculado ao servidor de aplicativos que, por questões de desempenho, é integrado por mecanismos nativos em um servidor da Web Apache ou IIS por meio de uma biblioteca dinâmica. Não há comando do Adobe Campaign que permita que você start ou administre este módulo. Portanto, você deve usar os comandos do próprio servidor Web.
+>Há um último módulo: o módulo de rastreamento e retransmissão vinculado ao servidor de aplicativos que, por questões de desempenho, é integrado por mecanismos nativos em um servidor Web Apache ou IIS por meio de uma biblioteca dinâmica. Não há um comando do Adobe Campaign que permita iniciar ou administrar esse módulo. Portanto, você deve usar os comandos do próprio servidor da Web.
 
 O uso do módulo e a sintaxe de seus parâmetros são exibidos usando o seguinte comando: **nlserver `[module]` -?**
 
@@ -126,4 +124,3 @@ Usage: nlserver [-verbose:<verbose mode>] [-?|h|H] [-version] [-noconsole]
 -filter : applies the XTK filter contained in the file during loading of the schema entities.
 -setactivationkey : sets the activation key
 ```
-
