@@ -1,60 +1,58 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: Objetos de aplicativo
 description: Objetos de aplicativo
 audience: production
 content-type: reference
 topic-tags: database-maintenance
-translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+exl-id: fb4798d7-0a2c-455b-86b6-3dcb5fd25c82
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '459'
 ht-degree: 4%
 
 ---
 
-
 # Objetos de aplicativo{#application-objects}
 
-Objetos incorporados devem ser monitorados e impedir que cresçam demais é importante.
+Os objetos incorporados devem ser monitorizados e é importante evitar que cresçam demasiado.
 
 ## Sequência de IDs {#sequence-of-ids}
 
-A Adobe Campaign usa uma sequência de ID que deve ser consumida de acordo: **xtkNewId**. Se a sequência for consumida muito rapidamente (ou seja, de 100.000 por dia), você deve verificar se é consistente com as necessidades de sua empresa, como enviar milhões de emails por dia. É possível definir uma sequência dedicada para tabelas específicas. Você pode configurar um fluxo de trabalho para monitorar o uso da ID.
+O Adobe Campaign usa uma sequência de ID que deve ser consumida adequadamente: **xtkNewId**. Se a sequência for consumida muito rapidamente (ou seja, de 100.000 por dia), você deve verificar se é consistente com as necessidades da sua empresa, como enviar milhões de emails por dia. É possível definir uma sequência dedicada para tabelas específicas. Você pode configurar um fluxo de trabalho para monitorar o uso da ID.
 
-Quando a sequência chega a mais de 2 bilhões (2.147.483.648 é o número exato), volta a zero. Deve ser evitada e cria problemas, razão pela qual esta sequência deve ser monitorizada.
+Quando a sequência atinge mais de 2 bilhões (2.147.483.648 é o número exato), volta a zero. Deve ser evitado e cria questões, razão pela qual esta sequência deve ser monitorizada.
 
 Para evitar isso com tabelas grandes, considere usar uma sequência específica. Isso pode ser feito com o atributo **pkSequence** no schema.
 
-Workflows de alta frequência que criam muitos registros consumirão muitas IDs. Portanto, é altamente recomendável evitar muitos registros e altas frequências em workflows.
+Os workflows de alta frequência que criam muitos logs consumirão muitas IDs. Portanto, é altamente recomendável evitar muitos logs e altas frequências em workflows.
 
 Se a sequência já tiver sido cíclica, a melhor solução é alternar para IDs negativas, a partir de -2.147.483.648.
 
 ## Pastas {#folders}
 
-Deve haver menos de 1000 pastas em qualquer instância. Ter mais pastas do que isso pode causar problemas de desempenho com o cliente de Campanha. Você pode configurar um trabalho de monitoramento para contar o número de pastas, workflows, etc., e retornar ao relatório periodicamente.
+Deve haver menos de 1000 pastas em qualquer instância. Ter mais pastas do que isso pode causar problemas de desempenho com o cliente do Campaign. Você pode configurar um trabalho de monitoramento para contar o número de pastas, fluxos de trabalho, etc., e gerar relatórios periodicamente.
 
 Esse método também destaca os usuários que criam muitos objetos.
 
 ## Deliveries {#deliveries}
 
-Deve haver menos de 1000 delivery na instância a qualquer momento. Ter muitos delivery consome espaço no banco de dados e gera problemas. Uma instância que cria mais de 10 delivery por dia deve ser verificada em relação aos requisitos comerciais. Considere o uso de delivery contínuos para criar menos delivery. Para obter mais informações, consulte [esta seção](../../workflow/using/continuous-delivery.md).
+Deve haver menos de 1000 deliveries na instância a qualquer momento. Ter muitos deliveries consome espaço no banco de dados e cria problemas. Uma instância que cria mais de 10 deliveries por dia deve ser verificada em relação às necessidades comerciais. Considere o uso de deliveries contínuos para criar menos deliveries. Para obter mais informações, consulte [esta seção](../../workflow/using/continuous-delivery.md).
 
-Delivery com mais de dois anos devem ser removidos da instância.
+Os deliveries com mais de dois anos devem ser removidos da instância.
 
 ## Arquivos {#files}
 
 O número de arquivos no disco do servidor de aplicativos não deve aumentar indefinidamente.
 
-Os workflows de importação criam arquivos e, portanto, causam a expansão do disco. Isso pode ser evitado usando a atividade padrão [File collector](../../workflow/using/file-collector.md). O coletor de arquivos move os arquivos para uma pasta temporária e os limpa automaticamente.
+Os workflows de importação criam arquivos e, portanto, causam expansão de disco. Isso pode ser evitado usando a atividade padrão [File collector](../../workflow/using/file-collector.md) . O coletor de arquivos move os arquivos para uma pasta temporária e os limpa automaticamente.
 
-Se um fluxo de trabalho importar arquivos e não fizer uso dos recursos padrão, ele precisará ser removido para manter o espaço em disco mínimo.
+Se um workflow importar arquivos e não fizer uso dos recursos padrão, ele precisará ser removido para manter o espaço em disco mínimo.
 
 ## Dados e registros transacionais {#transactional-data-and-logs}
 
-Cada [fluxo de trabalho](../../workflow/using/data-life-cycle.md#work-table) que importa dados para o Adobe Campaign faz com que o tamanho do banco de dados cresça.
+Cada [workflow](../../workflow/using/data-life-cycle.md#work-table) que importa dados para o Adobe Campaign faz com que o tamanho do banco de dados aumente.
 
-Verifique se os workflows de limpeza ou remoção estão em execução e removendo os registros com eficácia. Todos os dados e registros transacionais devem ser removidos. A tarefa de limpeza limpa apenas as tabelas padrão: rastreamento e logs amplos. Tabelas específicas devem ser expurgadas por workflows específicos. Consulte [esta seção](../../workflow/using/monitoring-workflow-execution.md#purging-the-logs).
+Verifique se os workflows de limpeza ou limpeza estão em execução e excluindo registros com eficácia. Todos os dados e logs transacionais devem ser limpos. A tarefa de limpeza limpa apenas as tabelas padrão: rastreamento e logs amplos. Tabelas específicas devem ser removidas por workflows específicos. Consulte [esta seção](../../workflow/using/monitoring-workflow-execution.md#purging-the-logs).
 
-Observe o envelhecimento dos dados transacionais verificando a data de criação mais antiga dos registros.
+Fique atento ao envelhecimento dos dados transacionais, verificando a data de criação mais antiga dos registros.
