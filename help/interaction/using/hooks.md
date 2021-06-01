@@ -1,5 +1,4 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: Ganchos
 description: Ganchos
@@ -7,17 +6,16 @@ audience: interaction
 content-type: reference
 topic-tags: advanced-parameters
 exl-id: e1d7d7c2-61e7-40d6-a8ce-69bc976f8c73
-translation-type: ht
-source-git-commit: 6854d06f8dc445b56ddfde7777f02916a60f2b63
-workflow-type: ht
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+workflow-type: tm+mt
 source-wordcount: '509'
-ht-degree: 100%
+ht-degree: 98%
 
 ---
 
 # Ganchos{#hooks}
 
-Ganchos em Interações permitem modificar o **comportamento do mecanismo padrão**.
+Ganchos em Interaction permite modificar o **comportamento padrão do mecanismo**.
 
 Os ganchos **[!UICONTROL Target loading]** e **[!UICONTROL Proposition post-processing]** são configurados no espaço de ofertas do Adobe Campaign:
 
