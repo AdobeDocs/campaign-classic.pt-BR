@@ -1,19 +1,17 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: Desinstalação do Campaign
-description: Saiba como desinstalar a Campanha
+description: Saiba como desinstalar o Campaign
 audience: installation
 content-type: reference
 topic-tags: appendices
-translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+exl-id: e2b026ba-aaf3-443d-8c36-c908288a14fd
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '36'
 ht-degree: 30%
 
 ---
-
 
 # Desinstalação do Campaign{#uninstalling-campaign}
 
@@ -41,4 +39,4 @@ rm -rf /user/local/neolane
 
 **Windows:**
 
-Consulte esta [página](../../migration/using/migrating-in-windows-for-adobe-campaign-7.md#deleting-and-cleansing-adobe-campaign-previous-version). Não se esqueça de remover a pasta de instalação da Campanha.
+Consulte esta [página](../../migration/using/migrating-in-windows-for-adobe-campaign-7.md#deleting-and-cleansing-adobe-campaign-previous-version). Não se esqueça de remover a pasta de instalação do Campaign.
