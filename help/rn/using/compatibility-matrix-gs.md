@@ -1,5 +1,4 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: Matriz de compatibilidade do Campaign [!DNL Gold Standard]
 description: 'Matriz de compatibilidade do Campaign Classic para a versão do [!DNL Gold Standard] '
@@ -7,7 +6,7 @@ feature: Visão geral
 role: Business Practitioner
 level: Beginner
 exl-id: 5c0ccaf6-7f82-4e4b-9247-261dbd0f127c
-source-git-commit: bce114f36d1ec4582fc79e750d48155ba0d7cd1f
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '523'
 ht-degree: 100%
@@ -263,7 +262,7 @@ O Adobe Campaign Classic é compatível com todos os sistemas e ferramentas list
 <tr><td>Hadoop via HiveSQL</td>
 <td>
 <p>HortonWorks HDP 2.4.X, 2.5.x, 2.6.x</p>
-<p>HDInsight 3.4 (HDP 2.4), 3.5 (HDP 2.5), 3.6 (HDP 2.6)</p>
+<p>HDInsight 3.4 (HDP 2.4), 3.5 (HDP 2.5), 3.6 (HDP 2.6))</p>
 </td>
 </tr>
 </tbody>
