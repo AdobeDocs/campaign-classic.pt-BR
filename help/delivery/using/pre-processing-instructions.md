@@ -1,5 +1,4 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: Instruções de pré-processamento para URLs rastreados
 description: Saiba mais sobre as instruções de pré-processamento a serem usadas para criar o script do URL de um email e ainda rastrear esse URL.
@@ -7,8 +6,8 @@ audience: delivery
 content-type: reference
 topic-tags: tracking-messages
 exl-id: 9d3f5c74-377a-4e24-81e5-bb605f69cf8a
-source-git-commit: fdcb96c3c4afed1f36529e658eda26766226c44f
-workflow-type: ht
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+workflow-type: tm+mt
 source-wordcount: '642'
 ht-degree: 100%
 
