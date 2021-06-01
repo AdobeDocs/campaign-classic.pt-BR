@@ -1,19 +1,17 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: Rede, banco de dados e SSL/TLS
 description: Saiba mais sobre as práticas recomendadas de configuração de rede, banco de dados e SSL/TLS.
 audience: installation
 content-type: reference
 topic-tags: prerequisites-and-recommendations-
-translation-type: tm+mt
-source-git-commit: 63b2e6b95812f1649e636580984a1f0dcc9c5c53
+exl-id: 2a66dfaa-7fff-48de-bdd4-62f3ebfbab19
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '135'
-ht-degree: 26%
+ht-degree: 34%
 
 ---
-
 
 # Rede, banco de dados e SSL/TLS {#network-database}
 
