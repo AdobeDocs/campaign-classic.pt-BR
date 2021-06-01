@@ -1,23 +1,21 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: Alternar para Unicode
 description: Alternar para Unicode
 audience: production
 content-type: reference
 topic-tags: updating-adobe-campaign
-translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+exl-id: 4cfecf2f-cf98-42c1-b979-cdd26d5de48b
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '119'
 ht-degree: 7%
 
 ---
 
-
 # Alternar para Unicode{#switching-to-unicode}
 
-Para uma instância **prod** existente em Linux/PostgreSQL, as etapas para alternar para unicode são as seguintes:
+Para uma instância **prod** existente no Linux/PostgreSQL, as etapas para alternar para unicode são as seguintes:
 
 1. Pare os processos de gravação no banco de dados:
 
@@ -60,7 +58,7 @@ Para uma instância **prod** existente em Linux/PostgreSQL, as etapas para alter
    vi config-prod.xml
    ```
 
-   Adicione o caractere **u** à frente do valor relacionado ao identificador do banco de dados (**databaseId**):
+   Adicione o caractere **u** na frente do valor relacionado ao identificador do banco de dados (**databaseId**):
 
    ```
    <web>
@@ -68,7 +66,7 @@ Para uma instância **prod** existente em Linux/PostgreSQL, as etapas para alter
    </web>
    ```
 
-1. Em servidores que chamam o banco de dados:
+1. Nos servidores que chamam o banco de dados:
 
    ```
    su - neolane
@@ -86,7 +84,7 @@ Para uma instância **prod** existente em Linux/PostgreSQL, as etapas para alter
    </dataSource>
    ```
 
-1. Reinicialize todos os computadores:
+1. Reinicialize todas as máquinas:
 
    ```
    /etc/init.d/apache stop
@@ -95,8 +93,7 @@ Para uma instância **prod** existente em Linux/PostgreSQL, as etapas para alter
    /etc/init.d/apache start
    ```
 
-1. Confirme o switch. Para fazer isso, conecte-se pelo console do Adobe Campaign e:
+1. Confirme o switch. Para fazer isso, conecte-se através do console Adobe Campaign e:
 
-   * verificar se os dados são apresentados corretamente, em especial os caracteres acentuados:
+   * verificar se os dados são exibidos corretamente, em especial os caracteres acentuados:
    * inicie um delivery e verifique se a recuperação de rastreamento funciona.
-
