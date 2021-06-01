@@ -1,25 +1,23 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: Elementos e atributos
 description: Elementos e atributos
 audience: configuration
 content-type: reference
 topic-tags: schema-reference
-translation-type: tm+mt
-source-git-commit: 922257b157f8d76d6e703b0510ff689d1aa4d067
+exl-id: fb0862f9-5dcc-49f2-b99b-9822aaf3a680
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '101'
 ht-degree: 8%
 
 ---
 
-
-# elemento keyfield {#keyfield--element}
+# elemento do campo de chaves {#keyfield--element}
 
 ## Modelo de conteúdo {#content-model-9}
 
-campo de chaves:==VAZIO
+keyfield:==EMPTY
 
 ## Atributos {#attributes-9}
 
@@ -41,7 +39,7 @@ Esse elemento define os campos a serem integrados em um índice ou chave.
 ## Descrição do atributo {#attribute-description-9}
 
 * **xlink (MNTOKEN)**: permite referenciar automaticamente chaves estrangeiras definidas na junção para uma tabela de relação (link N-N).
-* **xpath (MNTOKEN)**: definição de um índice ou chave em um  `<attribute>`  elemento. Esse atributo recebe um Xpath que define o caminho para o atributo do schema que define a chave ou o índice.
+* **xpath (MNTOKEN)**: definição de um índice ou chave em um  `<attribute>`  elemento. Esse atributo recebe um Xpath que define o caminho para o atributo schema que define a chave ou o índice.
 
 ## Exemplos {#examples-}
 
