@@ -1,5 +1,4 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: Práticas recomendadas de desempenho de delivery
 description: Saiba mais sobre o desempenho do delivery e as práticas recomendadas.
@@ -7,9 +6,8 @@ audience: delivery
 content-type: reference
 topic-tags: monitoring-deliveries
 exl-id: cc793d7b-0a26-4a75-97ed-d79c87d9b3b8
-translation-type: ht
-source-git-commit: 6854d06f8dc445b56ddfde7777f02916a60f2b63
-workflow-type: ht
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+workflow-type: tm+mt
 source-wordcount: '458'
 ht-degree: 100%
 
@@ -21,8 +19,8 @@ Recomendamos seguir as diretrizes abaixo para garantir que seus deliveries tenha
 
 **Tópicos relacionados:**
 
-* [Painel de delivery](../../delivery/using/delivery-dashboard.md)
-* [Solução de problemas de delivery](../../delivery/using/delivery-troubleshooting.md)
+* [Painel de entrega](../../delivery/using/delivery-dashboard.md)
+* [Solução de problemas de entrega](../../delivery/using/delivery-troubleshooting.md)
 * [Sobre a capacidade de delivery](../../delivery/using/about-deliverability.md)
 
 ## Práticas recomendadas para desempenho {#best-practices-performance}
