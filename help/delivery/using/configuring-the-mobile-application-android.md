@@ -1,5 +1,4 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: Configuração do aplicativo móvel Android no Adobe Campaign
 description: Saiba como configurar seu aplicativo móvel para Android
@@ -10,9 +9,8 @@ index: y
 internal: n
 snippet: y
 exl-id: 32c35e61-d0a3-478f-b73b-396e2becf7f9
-translation-type: ht
-source-git-commit: 6854d06f8dc445b56ddfde7777f02916a60f2b63
-workflow-type: ht
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+workflow-type: tm+mt
 source-wordcount: '1648'
 ht-degree: 100%
 
