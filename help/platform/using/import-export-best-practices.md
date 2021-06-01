@@ -1,5 +1,4 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: Práticas recomendadas de importação e exportação
 description: Saiba mais sobre as práticas recomendadas a serem seguidas ao importar ou exportar dados.
@@ -7,9 +6,8 @@ audience: automating
 content-type: reference
 topic-tags: workflow-general-operation
 exl-id: 03d35202-d221-4136-aad4-00704aabb356
-translation-type: ht
-source-git-commit: d5579fa1928888a088fe99b685f4d12bf2bde25b
-workflow-type: ht
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+workflow-type: tm+mt
 source-wordcount: '512'
 ht-degree: 100%
 
