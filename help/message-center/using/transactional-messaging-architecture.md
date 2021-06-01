@@ -6,10 +6,10 @@ audience: message-center
 content-type: reference
 topic-tags: introduction
 exl-id: 0a059397-b037-405b-b9c1-94a4a072674d
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: e86350cf12db37e3f2c227563057b97922601729
 workflow-type: tm+mt
-source-wordcount: '1100'
-ht-degree: 80%
+source-wordcount: '1092'
+ht-degree: 76%
 
 ---
 
@@ -57,7 +57,7 @@ As etapas detalhadas para configurar a instância de controle são apresentadas 
 
 >[!NOTE]
 >
->Para obter mais informações sobre a configuração necessária, consulte [Uso de várias instâncias de controle](../../message-center/using/configuring-instances.md#using-several-control-instances).
+>Para obter mais informações sobre a configuração necessária, consulte [Usar várias instâncias de controle](../../message-center/using/configuring-instances.md#using-several-control-instances).
 
 ## Instância de execução {#execution-instance}
 
@@ -181,7 +181,7 @@ Para usar o módulo de mensagem transacional com o LINE, os seguintes elementos 
 
 * Instale o pacote **[!UICONTROL LINE Connect]** em ambas as instâncias.
 * Instale o pacote **[!UICONTROL Transactional message control]** na instância de marketing e o pacote **[!UICONTROL Transactional message execution]** na instância de execução.
-* Cria uma **conta externa** e o **serviço** do LINE em ambas as instâncias com nomes idênticos para que sejam sincronizados. Para obter mais informações sobre como criar uma conta externa e o serviço do LINE, consulte esta [página](../../delivery/using/line-channel.md#creating-a-line-account-and-an-external-account-).
+* Cria uma **conta externa** e o **serviço** do LINE em ambas as instâncias com nomes idênticos para que sejam sincronizados. Para obter mais informações sobre como criar uma conta externa e o serviço do LINE, consulte [esta seção](../../delivery/using/line-channel.md#setting-up-line-channel).
 
 Em seguida, do **[!UICONTROL Explorer]**, em **[!UICONTROL External account]** > **[!UICONTROL Platform]**, é necessário configurar as contas externas diferentes em ambas as instâncias:
 
@@ -248,4 +248,4 @@ Em seguida, do **[!UICONTROL Explorer]**, em **[!UICONTROL External account]** >
 
 
 
-1. Agora você poderá começar a criar mensagens transacionais. Para obter mais informações, consulte esta [página](../../message-center/using/creating-the-message-template.md).
+1. Agora você pode iniciar [criando mensagens transacionais](../../message-center/using/creating-the-message-template.md).
