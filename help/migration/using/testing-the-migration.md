@@ -1,19 +1,17 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: Teste da migração
 description: Teste da migração
 audience: migration
 content-type: reference
 topic-tags: migration-procedure
-translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+exl-id: 228ee9e4-46a0-4d82-b8ba-b019bc0e7cac
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '667'
 ht-degree: 2%
 
 ---
-
 
 # Teste da migração{#testing-the-migration}
 
@@ -23,11 +21,11 @@ Dependendo da sua configuração, há várias maneiras de realizar testes de mig
 
 Você deve ter um ambiente de teste/desenvolvimento para realizar testes de migração. Os ambientes de desenvolvimento estão sujeitos a licença: verifique seu contrato de licença ou entre em contato com o serviço de vendas da Adobe Campaign.
 
-1. Parem todos os desenvolvimentos em curso e levem-nos para o ambiente de produção.
-1. Faça um backup do banco de dados de ambientes de desenvolvimento.
+1. Pare todos os desenvolvimentos em andamento e transfira-os para o ambiente de produção.
+1. Faça um backup do banco de dados do ambiente de desenvolvimento.
 1. Pare todos os processos do Adobe Campaign na instância de desenvolvimento.
-1. Faça backup do banco de dados do ambiente de produção e restaure-o como um ambiente de desenvolvimento.
-1. Antes de iniciar os serviços Adobe Campaign, execute o script de cauterização **congelamentoInstance.js** que permite limpar o banco de dados de quaisquer objetos que estavam sendo executados quando o backup foi iniciado.
+1. Faça um backup do banco de dados do ambiente de produção e o restaure como um ambiente de desenvolvimento.
+1. Antes de iniciar os serviços do Adobe Campaign, execute o script de cauterização **freezeInstance.js** que permite limpar o banco de dados de quaisquer objetos que estavam sendo executados quando o backup foi iniciado.
 
    ```
    nlserver javascript nms:freezeInstance.js -instance:<instance> -arg:<run|dry>
@@ -35,9 +33,9 @@ Você deve ter um ambiente de teste/desenvolvimento para realizar testes de migr
 
    >[!NOTE]
    >
-   >O comando é iniciado por padrão no modo **dry** e lista todas as solicitações que foram executadas por esse comando, sem iniciá-las. Para executar solicitações de cauterização, use **run** no comando.
+   >O comando é iniciado por padrão no modo **dry** e lista todas as solicitações que foram executadas por esse comando, sem iniciá-las. Para executar solicitações de cauterização, use **executar** no comando.
 
-1. Certifique-se de que seus backups estejam corretos tentando restaurá-los. Verifique se você pode acessar seu banco de dados, suas tabelas, seus dados etc.
+1. Certifique-se de que os backups estejam corretos tentando restaurá-los. Certifique-se de acessar o banco de dados, as tabelas, os dados etc.
 1. Teste o procedimento de migração no ambiente de desenvolvimento.
 
    Os procedimentos completos estão detalhados na seção [Pré-requisitos para migração para o Adobe Campaign 7](../../migration/using/prerequisites-for-migration-to-adobe-campaign-7.md).
@@ -46,11 +44,11 @@ Você deve ter um ambiente de teste/desenvolvimento para realizar testes de migr
 
 >[!IMPORTANT]
 >
->Devido a alterações feitas na estrutura de dados, não é possível importar e exportar pacotes de dados entre uma plataforma v5 e uma plataforma v7.
+>Devido a alterações feitas na estrutura de dados, a importação e exportação de pacotes de dados não é possível entre uma plataforma v5 e uma plataforma v7.
 
 >[!NOTE]
 >
->O comando de atualização do Adobe Campaign (**postupgrade**) permite sincronizar recursos e atualizar schemas e o banco de dados. Essa operação só pode ser realizada uma vez e somente no servidor de aplicativos. Depois de sincronizar os recursos, o comando **pós-upgrade** permite detectar se a sincronização gera erros ou avisos.
+>O comando Adobe Campaign update (**postupgrade**) permite sincronizar recursos e atualizar schemas e o banco de dados. Essa operação só pode ser executada uma vez e somente no servidor de aplicativos. Após sincronizar os recursos, o comando **postupgrade** permite detectar se a sincronização gera erros ou avisos.
 
 ## Ferramentas de migração {#migration-tools}
 
@@ -62,7 +60,7 @@ Várias opções permitem medir o impacto de uma migração e identificar os pos
    nlserver.exe config <option> -instance:<instanceName>
    ```
 
-* ou no pós-upgrade:
+* ou na pós-atualização:
 
    ```
    nlserver.exe config -postupgrade <option> -instance:<instanceName>
@@ -70,7 +68,7 @@ Várias opções permitem medir o impacto de uma migração e identificar os pos
 
 >[!NOTE]
 >
->Você deve usar a opção **-instance:`<instanceame>`**. Não recomendamos usar a opção **-allinnesse**.
+>Você deve usar a opção **-instance:`<instanceame>`**. Não recomendamos usar a opção **-allinStatus**.
 
 ### -showCustomEntities e -showDeletedEntities opções {#showcustomentities-and--showdeletedentities-options}
 
@@ -80,19 +78,19 @@ Várias opções permitem medir o impacto de uma migração e identificar os pos
    nlserver.exe config -showCustomEntities -instance:<instanceName>
    ```
 
-   Exemplo de uma mensagem enviada:
+   Exemplo de mensagem enviada:
 
    ```
    xtk_migration:opsecurity2 xtk:entity
    ```
 
-* A opção **-showDeletedEntities** exibe a lista de todos os objetos padrão que estão faltando no banco de dados ou no sistema de arquivos. Para cada objeto ausente, o caminho é especificado.
+* A opção **-showDeletedEntities** exibe a lista de todos os objetos padrão que estão ausentes no banco de dados ou no sistema de arquivos. Para cada objeto ausente, o caminho é especificado.
 
    ```
    nlserver.exe config -showDeletedEntities -instance:<instanceName>
    ```
 
-   Exemplo de uma mensagem enviada:
+   Exemplo de mensagem enviada:
 
    ```
    Out of the box object 'nms:deliveryCustomizationMdl' belonging to the 'xtk:srcSchema' schema has not been found in the file system.
@@ -100,9 +98,9 @@ Várias opções permitem medir o impacto de uma migração e identificar os pos
 
 ### Processo de verificação {#verification-process}
 
-Integrado como padrão no comando pós-atualização, esse processo permite que você exiba avisos e erros que podem fazer a migração falhar. **Se forem exibidos erros, a migração não será executada.** Se isso acontecer, corrija todos os erros e, em seguida, start novamente a pós-atualização.
+Integrado como padrão no comando pós-atualização, esse processo permite exibir avisos e erros que podem causar falha na migração. **Se forem exibidos erros, a migração não será executada.** Se isso acontecer, corrija todos os erros e reinicie o postupgrade.
 
-Você pode start o processo de verificação sozinho (sem migração) usando o comando:
+Você pode iniciar o processo de verificação sozinho (sem migração) usando o comando:
 
 ```
 nlserver.exe config -postupgrade -check -instance:<instanceName>
@@ -119,7 +117,7 @@ As seguintes expressões são pesquisadas (diferencia maiúsculas de minúsculas
   <tr> 
    <th> Expressão<br /> </th> 
    <th> Código de erro<br /> </th> 
-   <th> Tipo de registro<br /> </th> 
+   <th> Tipo de log<br /> </th> 
    <th> Comentários<br /> </th> 
   </tr> 
  </thead> 
@@ -128,7 +126,7 @@ As seguintes expressões são pesquisadas (diferencia maiúsculas de minúsculas
    <td> .@<br /> </td> 
    <td> PU-0001<br /> </td> 
    <td> Aviso<br /> </td> 
-   <td> Esse tipo de sintaxe não é mais suportado na personalização do delivery. Consulte <a href="../../migration/using/general-configurations.md#javascript" target="_blank">JavaScript</a>. Caso contrário, verifique se o tipo de valor está correto.<br /> </td> 
+   <td> Esse tipo de sintaxe não é mais compatível na personalização de delivery. Consulte <a href="../../migration/using/general-configurations.md#javascript" target="_blank">JavaScript</a>. Caso contrário, verifique se o tipo de valor está correto.<br /> </td> 
   </tr> 
   <tr> 
    <td> common.js<br /> </td> 
@@ -140,34 +138,34 @@ As seguintes expressões são pesquisadas (diferencia maiúsculas de minúsculas
    <td> logon(<br /> </td> 
    <td> PU-0003<br /> </td> 
    <td> Aviso<br /> </td> 
-   <td> Este método de conexão não deve mais ser usado. Consulte <a href="../../migration/using/general-configurations.md#identified-web-applications" target="_blank">Aplicativos Web identificados</a>.<br /> </td> 
+   <td> Este método de conexão não deve mais ser usado. Consulte <a href="../../migration/using/general-configurations.md#identified-web-applications" target="_blank">Aplicações Web identificadas</a>.<br /> </td> 
   </tr> 
   <tr> 
-   <td> new SoapMethodCall(<br /> </td> 
+   <td> novo SoapMethodCall(<br /> </td> 
    <td> PU-0004<br /> </td> 
    <td> Aviso<br /> </td> 
-   <td> Esta função só é suportada quando é utilizada no código JavaScript executado a partir de uma zona de segurança que esteja no modo <strong>sessionTokenOnly</strong>.<br /> </td> 
+   <td> Essa função só é suportada quando usada no código JavaScript executado de uma zona de segurança que esteja no modo <strong>sessionTokenOnly</strong>.<br /> </td> 
   </tr> 
   <tr> 
    <td> sql=<br /> </td> 
    <td> PU-0005<br /> </td> 
    <td> Erro<br /> </td> 
-   <td> Esse tipo de erro resulta em uma falha de migração. Consulte <a href="../../migration/using/general-configurations.md#sqldata" target="_blank">SQLData</a>.<br /> </td> 
+   <td> Esse tipo de erro gera uma falha de migração. Consulte <a href="../../migration/using/general-configurations.md#sqldata" target="_blank">SQLData</a>.<br /> </td> 
   </tr> 
   <tr> 
    <td> SQLDATA<br /> </td> 
    <td> PU-0006<br /> </td> 
    <td> Erro<br /> </td> 
-   <td> Esse tipo de erro resulta em uma falha de migração. Consulte <a href="../../migration/using/general-configurations.md#sqldata" target="_blank">SQLData</a>. Se você obter registros de erros do aplicativo da Web tipo visão geral (migração da v6.02), consulte <a href="../../migration/using/specific-configurations-in-v6-02.md#web-applications" target="_blank">Aplicação web</a>.<br /> </td> 
+   <td> Esse tipo de erro gera uma falha de migração. Consulte <a href="../../migration/using/general-configurations.md#sqldata" target="_blank">SQLData</a>. Se você obtiver logs de erro de aplicação Web do tipo visão geral (migração da v6.02), consulte <a href="../../migration/using/specific-configurations-in-v6-02.md#web-applications" target="_blank">Aplicações Web</a>.<br /> </td> 
   </tr> 
  </tbody> 
 </table>
 
-É igualmente efetuada uma verificação da coerência entre a base de dados e os schemas.
+Também é realizada uma verificação de coerência de banco de dados e esquema.
 
 ### Opção de restauração {#restoration-option}
 
-Essa opção permite restaurar objetos predefinidos se tiverem sido modificados. Para cada objeto restaurado, um backup das alterações é armazenado na pasta selecionada:
+Essa opção permite restaurar objetos prontos se tiverem sido modificados. Para cada objeto restaurado, um backup das alterações é armazenado na pasta selecionada:
 
 ```
 nlserver.exe config -postupgrade -restoreFactory:<backupfolder> -instance:<instanceName>
@@ -175,8 +173,8 @@ nlserver.exe config -postupgrade -restoreFactory:<backupfolder> -instance:<insta
 
 >[!NOTE]
 >
->Recomendamos usar caminhos absolutos de pastas e manter a estrutura de árvore de pastas. Por exemplo: backupFolder\nms\srcSchema\billing.xml.
+>É altamente recomendável usar caminhos de pasta absolutos e manter a estrutura de árvore de pastas. Por exemplo: backupFolder\nms\srcSchema\billing.xml.
 
-### Retomando a migração {#resuming-migration}
+### Resumo da migração {#resuming-migration}
 
-Se você reiniciar a pós-atualização após uma falha de migração, ela será retomada do mesmo local em que foi interrompida.
+Se você reiniciar o pós-atualização após uma falha de migração, ele será retomado do mesmo local em que foi interrompido.
