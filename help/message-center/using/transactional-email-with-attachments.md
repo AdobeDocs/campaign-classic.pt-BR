@@ -1,27 +1,26 @@
 ---
 solution: Campaign Classic
 product: campaign
-title: Adicionar anexos a mensagens transacionais com o Adobe Campaign Classic
-description: Saiba como enviar emails transacionais com anexos individuais e/ou personalizados usando o Adobe Campaign Classic
+title: Enviar emails transacionais com anexos
+description: Saiba como enviar emails transacionais com anexos individuais e/ou personalizados usando o Adobe Campaign Classic.
 audience: message-center
 content-type: reference
 topic-tags: use-case
 exl-id: 755d2364-f6c4-4943-97e8-3ed52a0f2665
-translation-type: ht
-source-git-commit: 6854d06f8dc445b56ddfde7777f02916a60f2b63
-workflow-type: ht
-source-wordcount: '629'
-ht-degree: 100%
+source-git-commit: d39b15b0efc6cbd6ab24e074713be6f8fc90e5fc
+workflow-type: tm+mt
+source-wordcount: '625'
+ht-degree: 84%
 
 ---
 
-# Caso de uso: envio de emails transacionais com anexos{#transactional-email-with-attachments}
+# Caso de uso: Enviar emails transacionais com anexos {#transactional-email-with-attachments}
 
 O objetivo deste caso de uso é adicionar anexos de email em tempo real a expedições de saída.
 
 ## Principais etapas{#key-steps}
 
-Neste cenário, veremos como enviar emails transacionais com anexos individuais/personalizados. Os anexos não serão carregados previamente no servidor de mensagens transacionais, mas gerados em tempo real.
+Neste cenário, veremos como enviar emails transacionais com anexos individuais/personalizados. Os anexos não serão carregados previamente no servidor de mensagens transacionais: em vez disso, elas serão geradas em tempo real.
 
 Ao capturar interações ou detalhes do cliente, talvez seja necessário enviar essas informações novamente ao cliente no final do processo, por exemplo, em um arquivo PDF anexado a um email.
 
@@ -48,7 +47,7 @@ Nesse cenário, os anexos não são pré-criados, mas adicionados instantaneamen
 Antes de implementar este cenário, leia atentamente as diretrizes abaixo:
 
 * As instâncias de mensagens transacionais não devem ser usadas para armazenar, exportar ou carregar arquivos ou dados. Eles só podem ser usados para dados do evento e informações relacionadas. Elas não devem ser consideradas como um sistema de armazenamento de arquivos.
-* Como não há acesso direto às instâncias de Mensagens transacionais ou servidores fora da Adobe, não há forma padrão de enviar esses arquivos nesses servidores (sem acesso FTP).
+* Como não há acesso direto às instâncias de mensagens transacionais ou servidores fora do Adobe, não há maneira padrão de enviar esses arquivos nesses servidores (sem acesso FTP).
 * Não é contratualmente correto usar o espaço em disco nas instâncias de mensagens transacionais para armazenar arquivos de qualquer tipo, nem mesmo para anexos.
 * Você precisa usar outro sistema de disco online para hospedar esses arquivos Você precisa de um acesso FTP para este sistema e ser capaz de gravar e excluir arquivos.
 
