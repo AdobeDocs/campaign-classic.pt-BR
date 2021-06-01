@@ -1,42 +1,40 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: Power Boster e Power Cluster
 description: Power Boster e Power Cluster
 audience: installation
 content-type: reference
 topic-tags: deployment-types-
-translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+exl-id: 59364cfc-9917-4057-ad5f-fbca7e261b07
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '396'
 ht-degree: 6%
 
 ---
 
-
 # Power Boster e Power Cluster{#power-booster-and-power-cluster}
 
 ## Visão geral {#overview}
 
-A Adobe Campaign oferece dois conjuntos de opções de arquitetura pré-embaladas para dimensionar sua implantação:
+O Adobe Campaign fornece dois conjuntos de opções de arquitetura pré-embaladas para dimensionar sua implantação:
 
 * **Power Boster**
 
-   Esta opção oferece suporte para uma única instância de execução adicional dissociada da instância principal do aplicativo Adobe Campaign. Instâncias de execução dedicadas podem ser hospedadas remotamente ou por terceiros. Quando implementados, a execução de email, o rastreamento, os mirrores page e as mensagens de rejeição são manipulados independentemente das funções centrais do aplicativo.
+   Essa opção fornece suporte para uma única instância de execução adicional dissociada da instância de aplicativo principal do Adobe Campaign. As instâncias de execução dedicadas podem ser hospedadas remotamente ou por terceiros. Quando implementados, a execução de email, o rastreamento, as mirror pages e as mensagens de devolução são manipuladas independentemente das funções centrais do aplicativo.
 
 * **Cluster de energia**
 
-   Esta opção oferece suporte para 2 a N instâncias de execução agrupadas dissociadas da instância principal do aplicativo Adobe Campaign em relação a um determinado aplicativo. Os clusters podem ser hospedados remotamente, em implantações distribuídas e por terceiros. Além dos benefícios do isolamento do processo, a opção Adobe Campaign Power Cluster permite redundância e estratégias de escalabilidade usando hardware de mercadoria para uma evolução simplificada do SLA ou do desempenho.
+   Essa opção oferece suporte para 2 a N instâncias de execução em cluster dissociadas da instância principal do aplicativo Adobe Campaign em relação a um determinado aplicativo. Os clusters podem ser hospedados remotamente, em implantações distribuídas e por terceiros. Além dos benefícios do isolamento do processo, a opção Adobe Campaign Power Cluster permite redundância e estratégias de escalabilidade usando hardware de mercadoria para uma evolução simplificada do SLA ou do desempenho.
 
 ![](assets/architectural_options_diagram.png)
 
 ## Aplicativos elegíveis {#eligible-applications}
 
-As opções de Power Booster e Power Cluster podem ser usadas pelos seguintes aplicativos:
+As opções Power Booster e Power Cluster podem ser usadas pelos seguintes aplicativos:
 
 * Campanha
-* Delivery
+* Entrega
 * Centro de mensagens
 
 ## Matriz de recomendações arquitetônicas {#matrix-of-architectural-recommendations}
@@ -64,27 +62,26 @@ As opções de Power Booster e Power Cluster podem ser usadas pelos seguintes ap
   <tr> 
    <td> Disponibilidade<br /> </td> 
    <td> A do banco de dados principal<br /> </td> 
-   <td> 24 horas por dia, 7 dias por semana, exceto janelas de manutenção e tempos ociosos para a instância de execução<br /> </td> 
+   <td> 24/7 exceto janelas de manutenção e tempos de inatividade para a instância de execução<br /> </td> 
    <td> Serviço 24/7/365 possível<br /> </td> 
   </tr> 
   <tr> 
    <td> Segurança<br /> </td> 
-   <td> O data mart pode ser acessado da Internet pública<br /> </td> 
-   <td> O Data mart é isolado de componentes frontais e voltados para a Internet<br /> </td> 
-   <td> O Data mart é isolado de componentes frontais e voltados para a Internet<br /> </td> 
+   <td> O Data mart é potencialmente acessível a partir da Internet pública<br /> </td> 
+   <td> O Data Smart é isolado de componentes frontais e voltados para a Internet<br /> </td> 
+   <td> O Data Smart é isolado de componentes frontais e voltados para a Internet<br /> </td> 
   </tr> 
   <tr> 
    <td> Modelo de implantação<br /> </td> 
-   <td> Todos em um site (podem estar no local ou na nuvem)<br /> </td> 
+   <td> Tudo em um site (pode estar no local ou na nuvem)<br /> </td> 
    <td> Marketing no local com execução na nuvem possível<br /> </td> 
-   <td> Marketing no local com execução na nuvem; execução em diferentes geos possíveis<br /> </td> 
+   <td> Marketing no local com execução na nuvem; execução em regiões diferentes possível<br /> </td> 
   </tr> 
  </tbody> 
 </table>
 
 ## Recomendações {#recommendations}
 
-* Uma instância de execução deve ser dedicada a um serviço. Não é possível instalar um pacote para um serviço ao qual você não se inscreveu. Por exemplo, se você assinar a opção **Power Booster** para o serviço **Message Center**, você só poderá instalar o pacote **[!UICONTROL Execution of transactional messages]** na instância de execução dedicada. Verifique o contrato de licença.
+* Uma instância de execução deve ser dedicada a um serviço. Não é possível instalar um pacote para um serviço ao qual você não se inscreveu. Por exemplo, se assinar a opção **Power Boster** para o serviço **Message Center**, você só poderá instalar o pacote **[!UICONTROL Execution of transactional messages]** na instância de execução dedicada. Verifique o contrato de licença.
 * Como as instâncias dedicadas (ou clusters) são instâncias do Adobe Campaign, as recomendações são as mesmas de uma instância principal. Para obter mais informações, consulte [este documento](../../production/using/foreword.md).
-* Para configurar adequadamente a instância de um ponto de visualização de componentes de banco de dados/hardware, entre em contato com o Adobe Campaign Professional Services.
-
+* Para configurar adequadamente a instância do ponto de vista de um banco de dados/componentes de hardware, entre em contato com o Adobe Campaign Professional Services.
