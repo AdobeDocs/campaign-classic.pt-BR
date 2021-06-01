@@ -6,10 +6,10 @@ audience: message-center
 content-type: reference
 topic-tags: instance-configuration
 exl-id: 4d25d740-db57-4d18-8cae-2dd49c4a786e
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: e86350cf12db37e3f2c227563057b97922601729
 workflow-type: tm+mt
-source-wordcount: '749'
-ht-degree: 85%
+source-wordcount: '747'
+ht-degree: 81%
 
 ---
 
@@ -17,7 +17,7 @@ ht-degree: 85%
 
 ## Monitorar limites {#monitoring-thresholds}
 
-Você pode configurar os limites de aviso (laranja) e os limites de alerta (vermelho) dos indicadores que aparecem nos relatórios de **nível de serviço do Centro de Mensagens** e **tempo de processamento do Centro de Mensagens** (consulte [Sobre relatórios transacionais de mensagens](../../message-center/using/about-transactional-messaging-reports.md)).
+Você pode configurar os limites de aviso (laranja) e os limites de alerta (vermelho) dos indicadores que aparecem nos relatórios **Message Center service level** e **Message Center processing time** (consulte [Acessar relatórios de mensagens transacionais](../../message-center/using/about-transactional-messaging-reports.md)).
 
 Para fazer isso, siga as etapas abaixo:
 
@@ -109,7 +109,7 @@ Na(s) instância(s) de execução, siga as etapas abaixo:
 
    >[!NOTE]
    >
-   >Saiba como criar uma conta externa do tipo instância de execução na seção [Control instance](../../message-center/using/configuring-instances.md#control-instance).
+   >Saiba como criar uma conta externa do tipo instância de execução em [this section](../../message-center/using/configuring-instances.md#control-instance).
 
 1. Estenda o schema nms:extAccount para adicionar a URL de rastreamento:
 
