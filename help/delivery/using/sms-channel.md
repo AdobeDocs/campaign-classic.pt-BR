@@ -1,5 +1,4 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: Introdução ao canal de SMS
 description: Introdução ao canal de SMS
@@ -7,9 +6,8 @@ audience: delivery
 content-type: reference
 topic-tags: sending-messages-on-mobiles
 exl-id: 6fc2ab09-8ea7-4865-88ad-bd45eee68958
-translation-type: ht
-source-git-commit: 6854d06f8dc445b56ddfde7777f02916a60f2b63
-workflow-type: ht
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+workflow-type: tm+mt
 source-wordcount: '154'
 ht-degree: 100%
 
@@ -28,9 +26,9 @@ Antes de começar a enviar SMS:
 As principais etapas para enviar um SMS são as seguintes:
 
 * [Configurar o canal de SMS](sms-set-up.md)
-* [Criar um delivery de SMS](sms-create.md)
-* [Definir a audiência](sms-create.md#selecting-the-target-population)
-* [Definir o conteúdo do SMS](sms-create.md#defining-the-sms-content)
+* [Criar uma entrega de SMS](sms-create.md)
+* [Definir o público](sms-create.md#selecting-the-target-population)
+* [Defina o conteúdo do SMS](sms-create.md#defining-the-sms-content)
 * [Enviar, monitorar e rastrear SMS](sms-send.md)
 * [Solução de problemas](troubleshooting-sms.md)
 
