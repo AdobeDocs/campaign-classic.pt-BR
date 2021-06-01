@@ -1,5 +1,4 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: Painel de delivery
 description: Saiba mais sobre o uso do painel de delivery para monitoramento de deliveries.
@@ -7,9 +6,8 @@ audience: delivery
 content-type: reference
 topic-tags: monitoring-deliveries
 exl-id: 44ecc8c6-6584-43eb-96b4-7d8463053123
-translation-type: ht
-source-git-commit: 6854d06f8dc445b56ddfde7777f02916a60f2b63
-workflow-type: ht
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+workflow-type: tm+mt
 source-wordcount: '1173'
 ht-degree: 100%
 
@@ -24,7 +22,7 @@ Ele permite recuperar informações sobre um delivery e editá-las, se necessár
 Estas são as informações que você pode monitorar usando as várias guias disponíveis no painel:
 
 * [Resumo do delivery](#delivery-summary)
-* [Relatórios de delivery](#delivery-reports)
+* [Relatórios do delivery](#delivery-reports)
 * [Logs do delivery, mirror pages, exclusões](#delivery-logs-and-history)
 * [Histórico e logs de rastreamento do delivery](#tracking-logs)
 * [Renderização de delivery](#delivery-rendering)
@@ -36,7 +34,7 @@ Estas são as informações que você pode monitorar usando as várias guias dis
 
 * [Noções básicas sobre falhas de delivery](../../delivery/using/understanding-delivery-failures.md)
 * [Noções básicas sobre gestão de quarentena](../../delivery/using/understanding-quarantine-management.md)
-* [Práticas recomendadas para delivery](../../delivery/using/delivery-best-practices.md)
+* [Práticas recomendadas de delivery](../../delivery/using/delivery-best-practices.md)
 * [Gerenciamento da capacidade de entrega](../../delivery/using/about-deliverability.md)
 
 ## Resumo do delivery {#delivery-summary}
