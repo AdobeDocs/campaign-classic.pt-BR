@@ -1,33 +1,31 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: Seed addresses
-description: Seeds addresses
+description: Seed addresses
 audience: configuration
 content-type: reference
 topic-tags: use-a-custom-recipient-table
-translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+exl-id: a16103bf-0498-4f59-ad96-8bfdeea26577
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '323'
 ht-degree: 4%
 
 ---
 
-
 # Seed addresses{#seed-addresses}
 
-Se a tabela recipient for uma tabela personalizada, configurações adicionais serão necessárias. O schema **[!UICONTROL nms:seedMember]** deve ser estendido. Uma guia adicional é adicionada aos seeds addresses para definir os campos adequados, como mostrado abaixo:
+Se a tabela do recipient for uma tabela personalizada, configurações adicionais serão necessárias. O schema **[!UICONTROL nms:seedMember]** deve ser estendido. Uma guia adicional é adicionada aos seed addresses para definir os campos adequados, conforme mostrado abaixo:
 
 ![](assets/s_ncs_user_seedlist_new_tab.png)
 
-Para obter mais informações sobre como usar seeds addresses, consulte [esta seção](../../delivery/using/about-seed-addresses.md).
+Para obter mais informações sobre o uso de seed addresses, consulte [esta seção](../../delivery/using/about-seed-addresses.md).
 
 ## Implementação {#implementation}
 
-O schema **nms:sementeMember** e o formulário vinculado que saem prontos para uso devem ser estendidos para a configuração do cliente, para referenciar todos os campos necessários. A definição do schema contém comentários detalhando seu modo de configuração.
+O schema **nms:seedMember** e o formulário vinculado que sai pronto para uso devem ser estendidos para a configuração do cliente, para fazer referência a todos os campos necessários. A definição do schema contém comentários detalhando seu modo de configuração.
 
-Definição do schema estendido do quadro recipient:
+Definição do schema estendido da tabela de recipients:
 
 ```
 <srcSchema label="Person" name="person" namespace="cus">
@@ -44,14 +42,14 @@ Definição do schema estendido do quadro recipient:
 
 Siga as etapas abaixo:
 
-1. Crie uma extensão do schema **nms:sementeMember**. Para obter mais informações, consulte [Extensão de um schema](../../configuration/using/extending-a-schema.md).
+1. Crie uma extensão do schema **nms:seedMember**. Para obter mais informações, consulte [Extensão de um schema](../../configuration/using/extending-a-schema.md).
 1. Nesta nova extensão, adicione um novo elemento na raiz de **[!UICONTROL seedMember]** com os seguintes parâmetros:
 
    ```
    name="custom_customNamespace_customSchema"
    ```
 
-   Esse elemento deve conter os campos necessários para exportar as campanhas. Esses campos devem ter o mesmo nome dos campos correspondentes no schema externo. Por exemplo, se o schema for **[!UICONTROL cus:person]**, o schema **[!UICONTROL nms:seedMember]** deverá ser estendido da seguinte forma:
+   Esse elemento deve conter os campos necessários para exportar as campanhas. Esses campos devem ter o mesmo nome dos campos correspondentes no schema externo. Por exemplo, se o schema for **[!UICONTROL cus:person]** , o schema **[!UICONTROL nms:seedMember]** deverá ser estendido da seguinte maneira:
 
    ```
      <srcSchema extendedSchema="nms:seedMember" label="Seed addresses" labelSingular="Seed address" name="seedMember" namespace="cus">
@@ -70,7 +68,7 @@ Siga as etapas abaixo:
 
    >[!NOTE]
    >
-   >A extensão do schema **nms:sementeMember** deve estar em conformidade com as estruturas de uma campanha e um delivery no Adobe Campaign.
+   >A extensão do schema **nms:seedMember** deve estar em conformidade com as estruturas de uma campanha e um delivery no Adobe Campaign.
 
    >[!IMPORTANT]
    >
@@ -78,11 +76,11 @@ Siga as etapas abaixo:
    >    
    >    
    >    * Durante a extensão, você deve especificar um **nome SQL (@sqlname)** para o campo &#39;email&#39;. O nome SQL deve ser diferente do &#39;sEmail&#39; reservado para o schema do recipient.
-   >    * Você deve atualizar a estrutura do banco de dados com o schema criado ao estender **nms:sementeMember**.
-   >    * Na extensão **nms:sementeMember**, o campo que contém o endereço de email deve ter **name=&quot;email&quot;** como um atributo. O nome SQL deve ser diferente de &#39;sEmail&#39;, que já é usado para o schema do recipient. Esse atributo deve ser declarado imediatamente no elemento **`<element name="custom_cus_person" />`**.
+   >    * Você deve atualizar a estrutura do banco de dados com o schema criado ao estender **nms:seedMember**.
+   >    * Na extensão **nms:seedMember**, o campo que contém o endereço de email deve ter **name=&quot;email&quot;** como um atributo. O nome SQL deve ser diferente de &#39;sEmail&#39;, que já está sendo usado para o schema do recipient. Esse atributo deve ser declarado imediatamente no elemento **`<element name="custom_cus_person" />`** .
 
 
-1. Modifique o formulário **[!UICONTROL seedMember]** de acordo para definir uma nova guia &quot;recipient interno&quot; na janela **[!UICONTROL Seed addresses]**. Para obter mais informações, consulte [Estrutura do formulário](../../configuration/using/form-structure.md).
+1. Modifique o formulário **[!UICONTROL seedMember]** de acordo para definir uma nova guia &quot;Internal recipient&quot; na janela **[!UICONTROL Seed addresses]**. Para obter mais informações, consulte [Estrutura do formulário](../../configuration/using/form-structure.md).
 
    ```
    <container colcount="2" label="Internal recipient" name="internal"
@@ -97,4 +95,4 @@ Siga as etapas abaixo:
      </container>
    ```
 
-Se todos os atributos do endereço semente não forem inseridos, a Adobe Campaign substituirá automaticamente os perfis: eles serão inseridos automaticamente durante a personalização usando dados de um perfil existente.
+Se todos os atributos do seed address não forem inseridos, o Adobe Campaign substituirá automaticamente os perfis: eles serão inseridos automaticamente durante a personalização usando dados de um perfil existente.
