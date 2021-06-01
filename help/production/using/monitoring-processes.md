@@ -7,7 +7,7 @@ audience: production
 content-type: reference
 topic-tags: production-procedures
 exl-id: 1f5d8c7e-6f9b-46cd-a9b4-a3b48afb1794
-source-git-commit: 214838cabeaec082080b3378f7eba837b8af89ad
+source-git-commit: b211948f1b6a64d0734d1d23f6df4951af88445a
 workflow-type: tm+mt
 source-wordcount: '3606'
 ht-degree: 1%
@@ -44,7 +44,8 @@ A lista de indicadores do sistema permite exibir informações sobre a máquina,
 
 #### Windows {#in-windows}
 
-* **[!UICONTROL Pending events queued]** : indicador específico do Centro de  **Mensagens**. Consulte [esta seção](../../message-center/using/monitoring-thresholds.md) para obter mais informações.
+* **[!UICONTROL Pending events queued]** : indicador específico do Centro de  **Mensagens**. Consulte [esta seção](../../message-center/using/additional-configurations.md#monitoring-thresholds) para obter mais informações.
+
 * **[!UICONTROL Memory]** : informações relativas à memória física (RAM).
 
    **[!UICONTROL Current value]** : consumo real de memória.
@@ -101,7 +102,8 @@ A lista de indicadores do sistema permite exibir informações sobre a máquina,
 
 ![](assets/production_system_indicators_linux_001.png)
 
-* **[!UICONTROL Pending events queued]** : indicador específico do Centro de  **Mensagens**. Consulte [esta seção](../../message-center/using/monitoring-thresholds.md) para obter mais informações.
+* **[!UICONTROL Pending events queued]** : indicador específico do Centro de  **Mensagens**. Consulte [esta seção](../../message-center/using/additional-configurations.md#monitoring-thresholds) para obter mais informações.
+
 * **[!UICONTROL Load average (1/5/15 minutes)]** : informações relativas à carga, ou seja, a taxa de utilização do processador pelos processos em execução na máquina durante o último minuto, cinco minutos ou quinze minutos
 
    **[!UICONTROL Current value]** : carga real da máquina.
@@ -435,7 +437,7 @@ O Adobe Campaign habilita várias configurações de implantação (para obter m
  <thead> 
   <tr> 
    <th> Tipo de implantação </th> 
-   <th> Monitoramento de </th> 
+   <th> Monitoramento </th> 
   </tr> 
  </thead> 
  <tbody> 
