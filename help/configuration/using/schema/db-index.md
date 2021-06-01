@@ -1,21 +1,19 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: Elementos e atributos
 description: Elementos e atributos
 audience: configuration
 content-type: reference
 topic-tags: schema-reference
-translation-type: tm+mt
-source-git-commit: 922257b157f8d76d6e703b0510ff689d1aa4d067
+exl-id: d7d1e427-12e0-4f07-9e01-d184dbe2ebf1
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '338'
 ht-degree: 2%
 
 ---
 
-
-# dbindex element {#dbindex--element}
+# elemento dbindex {#dbindex--element}
 
 ## Modelo de conteúdo {#content-model-3}
 
@@ -23,9 +21,9 @@ dbindex:==keyfield
 
 ## Atributos {#attributes-3}
 
-* @_operation (string)
-* @applyIf (string)
-* @label (string)
+* @_operation (cadeia de caracteres)
+* @applicableIf (cadeia de caracteres)
+* @label (cadeia de caracteres)
 * @name (MNTOKEN)
 * @unique (booleano)
 
@@ -43,34 +41,34 @@ Esse elemento permite definir um índice vinculado a uma tabela.
 
 ## Uso e contexto de uso {#use-and-context-of-use-3}
 
-É possível definir vários índices. Um índice pode fazer referência a um ou mais campos da tabela. A declaração de índice segue normalmente a definição do elemento principal do schema.
+É possível definir vários índices. Um índice pode fazer referência a um ou mais campos da tabela. A declaração Index geralmente segue a definição do elemento schema principal.
 
-A ordem dos elementos `<keyfield>` definidos em `<dbindex>` é muito importante. O primeiro `<keyfield>` deve ser o critério de indexação no qual os query se baseiam principalmente.
+A ordem dos elementos `<keyfield>` definidos em um `<dbindex>` é muito importante. O primeiro `<keyfield>` deve ser o critério de indexação no qual as consultas se baseiam principalmente.
 
-O nome do índice no banco de dados é calculado concatenando o nome da tabela e o nome do índice. Por exemplo: Nome da tabela &quot;Amostra&quot;, Namespace &quot;Cus&quot;, nome do índice &quot;MyIndex&quot;-> nome do campo de índice durante a consulta da criação do índice: &quot;CusSample_myIndex&quot;.
+O nome do índice no banco de dados é calculado concatenando o nome da tabela e o nome do índice. Por exemplo: Nome da tabela &quot;Amostra&quot;, Namespace &quot;Cus&quot;, nome do índice &quot;MyIndex&quot;-> nome do campo de índice durante a consulta de criação de índice: &quot;CusSample_myIndex&quot;.
 
 ## Descrição do atributo {#attribute-description-3}
 
 * **_operation (cadeia de caracteres)**: define o tipo de gravação no banco de dados.
 
-   Este atributo é usado principalmente ao estender schemas prontos para uso.
+   Esse atributo é usado principalmente na extensão de schemas prontos para uso.
 
    Os valores acessíveis são:
 
-   * &quot;nenhum&quot;: apenas reconciliação. Isso significa que a Adobe Campaign recuperará o elemento sem atualizá-lo ou gerar um erro se ele não existir.
-   * &quot;insertOrUpdate&quot;: atualizar com inserção. Isso significa que a Adobe Campaign atualizará o elemento ou o criará se ele não existir.
-   * &quot;Inserir&quot;: inserção. Isso significa que a Adobe Campaign inserirá o elemento sem verificar se ele existe.
-   * &quot;update&quot;: atualizar. Isso significa que a Adobe Campaign atualizará o elemento ou gerará um erro se ele não existir.
-   * &quot;delete&quot;: exclusão. Isso significa que a Adobe Campaign recuperará e excluirá elementos.
+   * &quot;nenhum&quot;: apenas a reconciliação. Isso significa que o Adobe Campaign recuperará o elemento sem atualizá-lo ou gerar um erro se ele não existir.
+   * &quot;insertOrUpdate&quot;: atualizar com inserção. Isso significa que o Adobe Campaign atualizará o elemento ou o criará se ele não existir.
+   * &quot;inserir&quot;: inserção. Isso significa que o Adobe Campaign inserirá o elemento sem verificar se ele existe.
+   * &quot;update&quot;: atualizar. Isso significa que o Adobe Campaign atualizará o elemento ou gerará um erro se ele não existir.
+   * &quot;delete&quot;: exclusão. Isso significa que o Adobe Campaign recuperará e excluirá elementos.
 
-* **applyIf (string)**: condição para levar em conta o índice - recebe uma expressão XTK.
+* **applicableIf (cadeia de caracteres)**: condição para considerar o índice - recebe uma expressão XTK.
 * **label (string)**: rótulo do índice.
-* **name (MNTOKEN)**: nome de índice exclusivo.
-* **único (booleano)**: se essa opção estiver ativada (@unique=&quot;true&quot;), o atributo garante a exclusividade do índice em todos os campos.
+* **nome (MNTOKEN)**: nome de índice exclusivo.
+* **exclusivo (booleano)**: se essa opção estiver ativada (@unique=&quot;true&quot;), o atributo garantirá a exclusividade do índice em seus campos.
 
 ## Exemplos {#examples-3}
 
-Criação de um índice no campo &quot;id&quot;. (o atributo &quot;@unique&quot; no elemento `<dbindex>` aciona a adição da palavra-chave SQL &quot;UNIQUE&quot; quando o índice é criado no banco de dados (query)).
+Criação de um índice no campo &quot;id&quot;. (o atributo &quot;@unique&quot; no elemento `<dbindex>` aciona a adição da palavra-chave SQL &quot;UNIQUE&quot; quando o índice é criado no banco de dados (query).
 
 ```
 <element label="Sample" name="Sample">
