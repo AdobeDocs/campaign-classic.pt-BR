@@ -6,10 +6,10 @@ audience: message-center
 content-type: reference
 topic-tags: event-processing
 exl-id: 3d85866a-6339-458c-807a-b267cce772b8
-source-git-commit: b46a483594f210c4530a934194c6d2b73deaeaf9
+source-git-commit: e86350cf12db37e3f2c227563057b97922601729
 workflow-type: tm+mt
 source-wordcount: '691'
-ht-degree: 45%
+ht-degree: 46%
 
 ---
 
@@ -85,7 +85,7 @@ O **Histórico de Eventos**, em **[!UICONTROL Event history]** > **[!UICONTROL M
    * Um evento que acabou de ser coletado e que ainda não foi processado. A coluna **[!UICONTROL Number of errors]** mostra o valor 0. O template de email ainda não foi vinculado.
    * Um evento processado, mas cuja confirmação está incorreta. A coluna **[!UICONTROL Number of errors]** mostra um valor que não é 0. Para saber quando esse evento será processado novamente, consulte a coluna **[!UICONTROL Process requested on]**.
 
-* **Delivery** pendente: O evento foi processado e o template do delivery está vinculado. O delivery do email está pendente e o processo de delivery clássico é aplicado. Para obter mais informações, você pode abrir o [delivery](../../delivery/using/about-message-tracking.md).
+* **Delivery** pendente: O evento foi processado e o template do delivery está vinculado. O delivery do email está pendente e o processo de delivery clássico é aplicado. Para obter mais informações, é possível abrir o delivery.
 * **Enviado**,  **** Ignorado e Erro  **de delivery**: Esses status de delivery são recuperados por meio do workflow  **** updateEventsStatus . Para obter mais informações, você poderá abrir o delivery relevante.
 * **Evento não coberto**: Falha na fase de roteamento de mensagens transacionais. Por exemplo, o Adobe Campaign não encontrou o email que atua como template para o evento.
 * **Evento expirado**: O número máximo de tentativas de envio foi atingido. O evento é considerado nulo.
