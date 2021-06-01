@@ -1,21 +1,19 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: Elementos e atributos
 description: Elementos e atributos
 audience: configuration
 content-type: reference
 topic-tags: schema-reference
-translation-type: tm+mt
-source-git-commit: 922257b157f8d76d6e703b0510ff689d1aa4d067
+exl-id: a7ca0300-d250-429c-8ae1-2ae7dee82cf5
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '211'
 ht-degree: 4%
 
 ---
 
-
-# elemento join {#join--element}
+# elemento de junção {#join--element}
 
 ## Modelo de conteúdo {#content-model-7}
 
@@ -23,9 +21,9 @@ join:==EMPTY
 
 ## Atributos {#attributes-7}
 
-* @dstFilterExpr (string)
-* @xpath-dst (string)
-* @xpath-src (string)
+* @dstFilterExpr (cadeia de caracteres)
+* @xpath-dst (cadeia de caracteres)
+* @xpath-src (cadeia de caracteres)
 
 ## Pais {#parents-7}
 
@@ -37,13 +35,13 @@ nenhuma
 
 ## Descrição {#description-7}
 
-Permite definir os campos que criam uma junção entre tabelas SQL.
+Permite definir os campos que criam uma ligação entre tabelas SQL.
 
 ## Uso e contexto de uso {#use-and-context-of-use-5}
 
-Um elemento `<join>` só pode ser usado se o elemento pai `<element>` for do tipo &#39;link&#39;. Isso significa que o elemento pai deve ter o atributo &quot;@type=link&quot; declarado.
+Um elemento `<join>` só poderá ser usado se o elemento primário `<element>` for do tipo &#39;link&#39;. Isso significa que o elemento pai deve ter o atributo &quot;@type=link&quot; declarado.
 
-Não é necessário especificar o nome e a namespace da tabela remota no elemento `<join>`. Eles precisam ser especificados no pai `<element>`.
+Não é necessário especificar o nome e o namespace da tabela remota no elemento `<join>` . Eles precisam ser especificados no pai `<element>`.
 
 Por convenção, os links são definidos no final do schema.
 
@@ -51,19 +49,19 @@ Se o elemento `<join>` não for especificado quando o elemento de tipo de link f
 
 ## Descrição do atributo {#attribute-description-7}
 
-* **dstFilterExpr (string)**: esse atributo permite restringir o número de valores elegíveis na tabela remota.
-* **xpath-dst (string)**: este atributo recebe um Xpath (@name atributo da tabela remota).
-* **xpath-src (string)**: este atributo recebe um atributo Xpath (@name no schema atual).
+* **dstFilterExpr (cadeia de caracteres)**: esse atributo permite restringir o número de valores elegíveis na tabela remota.
+* **xpath-dst (cadeia de caracteres)**: este atributo recebe um Xpath (@name atributo da tabela remota).
+* **xpath-src (cadeia de caracteres)**: este atributo recebe um Xpath (@name attribute no schema atual).
 
 ## Exemplos {#examples-6}
 
-Link entre o campo &#39;email&#39; da tabela atual e o campo &quot;@compagny-id&quot; da tabela remota:
+Link entre o campo &#39;email&#39; da tabela atual e o campo &quot;@company-id&quot; da tabela remota:
 
 ```
 <join xpath-dst="@compagny-id" xpath-src="@email"/>
 ```
 
-Link filtrado para a tabela &quot;cus:Country&quot; com base no conteúdo do campo &quot;@country&quot; que deve conter o valor &#39;EN&#39;:
+Link filtrado para a tabela &quot;cus:Country&quot; com base no conteúdo do campo &quot;@country&quot; que deve conter o valor &quot;EN&quot;:
 
 ```
 <element name="StockEN" type="link" label="MyLink" target="cus:Stock">
