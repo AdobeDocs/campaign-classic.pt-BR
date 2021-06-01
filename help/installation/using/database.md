@@ -1,19 +1,17 @@
 ---
-solution: Campaign Classic
 product: campaign
-title: Recomendações do banco de dados Campaign Classic
+title: Recomendações do banco de dados do Campaign Classic
 description: Recomendações do banco de dados
 audience: installation
 content-type: reference
 topic-tags: prerequisites-and-recommendations-
-translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+exl-id: 8a0426c1-9e8d-4053-bc2b-6a550e2eed2f
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '277'
 ht-degree: 1%
 
 ---
-
 
 # Banco de dados{#database}
 
@@ -25,7 +23,7 @@ Verifique também a seção [Camadas de acesso ao banco de dados](../../installa
 
 ## Microsoft SQL Server {#microsoft-sql-server}
 
-O cliente nativo deve ser instalado nos servidores de aplicativos Adobe Campaign.
+O cliente nativo deve ser instalado nos servidores de aplicativos da Adobe Campaign.
 
 Você pode verificar o cliente nativo no servidor por meio do painel de configuração do driver ODBC, em **SQL Server Native Client 11.0**.
 
@@ -35,17 +33,17 @@ As DLLs de acesso são encontradas no site da Microsoft.
 
 >[!NOTE]
 >
->O acesso ao Microsoft SQL Server de um servidor de aplicativos em execução no Linux não é suportado.
+>Não há suporte para o acesso ao Microsoft SQL Server a partir de um servidor de aplicativos em execução no Linux.
 
 ## Oracle {#oracle}
 
 >[!NOTE]
 >
->Nomes de colunas com caracteres multibytes não são suportados.
+>Nomes de colunas com caracteres multibyte não são suportados.
 
 Os parâmetros **NLS_NCHAR_CHARACTERSET** e **NLS_CHARACTERSET** precisam ser configurados corretamente para que o banco de dados funcione em Unicode ou ANSI.
 
-A Adobe Campaign usa a codificação padrão do Oracle. O uso de outra codificação pode causar problemas de compatibilidade: neste caso, entre em contato com o suporte técnico.
+O Adobe Campaign usa a codificação padrão de Oracles. O uso de outra codificação pode gerar problemas de compatibilidade: neste caso, entre em contato com o suporte técnico.
 
 Para saber mais sobre sua codificação, use o seguinte comando **sqlplus**:
 
@@ -74,11 +72,11 @@ sqlplus
 [login] [password]
 ```
 
-Você também pode consultar o [Oracle Client no Linux](../../installation/using/installing-packages-with-linux.md#oracle-client-in-linux).
+Também é possível consultar [Oracle Client no Linux](../../installation/using/installing-packages-with-linux.md#oracle-client-in-linux).
 
 ## PostgresSQL {#postgressql}
 
-Recomendamos que você instale o suporte a UTF-8 ao instalar o mecanismo de banco de dados. Dessa forma, você poderá criar bancos de dados Unicode.
+Recomendamos que você instale o suporte UTF-8 ao instalar o mecanismo de banco de dados. Dessa forma, você poderá criar bancos de dados Unicode.
 
 **Tópicos relacionados**
 
