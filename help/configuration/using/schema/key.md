@@ -1,32 +1,30 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: Elementos e atributos
 description: Elementos e atributos
 audience: configuration
 content-type: reference
 topic-tags: schema-reference
-translation-type: tm+mt
-source-git-commit: 922257b157f8d76d6e703b0510ff689d1aa4d067
+exl-id: 3d0ef574-27a3-40f2-91a0-70e9583d9980
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '317'
 ht-degree: 2%
 
 ---
 
-
 # elemento chave {#key--element}
 
 ## Modelo de conteúdo {#content-model-8}
 
-key:==keyfield
+tecla:==keyfield
 
 ## Atributos {#attributes-8}
 
 * @allowEmptyPart (booleano)
-* @applyIf (string)
+* @applicableIf (cadeia de caracteres)
 * @internal (booleano)
-* @label (string)
+* @label (cadeia de caracteres)
 * @name (MNTOKEN)
 * @noDbIndex (booleano)
 
@@ -40,7 +38,7 @@ key:==keyfield
 
 ## Descrição {#description-8}
 
-Esse elemento permite que você defina uma chave para identificar um registro na tabela.
+Esse elemento permite definir uma chave para identificar um registro na tabela.
 
 Uma tabela deve ter pelo menos uma chave.
 
@@ -50,22 +48,22 @@ Como regra, as chaves são declaradas após o elemento principal do schema e os 
 
 Uma chave é conhecida como composta se incluir vários campos (ou seja, vários `<keyfield>` filhos). Não use uma chave composta para definir uma chave primária.
 
-Se o elemento principal do schema contiver o atributo &quot;@autopk=true&quot;, a chave primária será exclusiva. Só podemos ter uma chave primária por schema.
+Se o elemento principal do schema contiver o atributo &quot;@autopk=true&quot;, a chave primária será exclusiva. Só podemos ter uma chave primária por esquema.
 
-Os primeiros 1000 identificadores são reservados, portanto, se uma faixa de valores precisar ser definida para chaves, start em 1000.
+Os primeiros 1000 identificadores são reservados, portanto, se uma faixa de valores precisar ser definida para chaves, comece em 1000.
 
 ## Descrição do atributo {#attribute-description-8}
 
-* **allowEmptyPart (booleano)**: no caso de uma chave composta, se esse atributo estiver ativado, a chave será considerada válida se pelo menos uma de suas chaves não estiver vazia. Se esse for o caso, o valor vazio da noção é &quot;0&quot; (booleano ou para todos os tipos de dados numéricos). Por padrão, todas as teclas que compõem uma chave composta precisam ser inseridas.
-* **applyIf (string)**: esse atributo permite tornar a chave opcional. Define a condição de acordo com a qual a definição de chave será aplicada. Este atributo recebe uma expressão XTK.
-* **interno (booleano)**: se estiver ativado, esse atributo informará a Adobe Campaign que a chave é primária.
-* **label (string)**: rótulo da chave.
-* **name (MNTOKEN)**: nome interno da chave.
-* **noDbIndex (booleano)**: se estiver ativado (noDbIndex=&quot;true&quot;), o campo que corresponde à chave não será indexado.
+* **allowEmptyPart (booleano)**: no caso de uma chave composta, se esse atributo estiver ativado, a chave será considerada válida se pelo menos uma de suas chaves não estiver vazia. Se esse for o caso, o valor vazio da noção é &quot;0&quot; (booleano ou para todos os tipos de dados numéricos). Por padrão, todas as chaves que compõem uma chave composta precisam ser inseridas.
+* **applicableIf (cadeia de caracteres)**: esse atributo permite tornar a chave opcional. Ela define a condição de acordo com a qual a definição de chave será aplicada. Esse atributo recebe uma expressão XTK.
+* **interno (booleano)**: se estiver ativado, esse atributo informará o Adobe Campaign que a chave é primária.
+* **label (string)**: da chave.
+* **nome (MNTOKEN)**: nome interno da chave.
+* **noDbIndex (booleano)**: se estiver ativado (noDbIndex=&quot;true&quot;), o campo correspondente à chave não será indexado.
 
 ## Exemplos {#examples-------}
 
-Declaração de uma chave composta que autoriza que o campo &quot;@expr&quot; ou &quot;alias&quot; esteja vazio:
+Declaração de uma chave composta que autoriza o campo &quot;@expr&quot; ou &quot;alias&quot; a ficar vazio:
 
 ```
 <key name="node" allowEmptyPart="true">
@@ -74,7 +72,7 @@ Declaração de uma chave composta que autoriza que o campo &quot;@expr&quot; ou
  </key>
 ```
 
-Declaração de uma chave primária no campo &quot;Nome&quot; do tipo STRING em `<srcschema>` e o query SQL correspondente:
+Declaração de uma chave primária no campo &quot;Nome&quot; do tipo STRING em um `<srcschema>` e a consulta SQL correspondente:
 
 ```
  
