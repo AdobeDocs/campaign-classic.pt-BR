@@ -1,25 +1,23 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: Elementos e atributos
 description: Elementos e atributos
 audience: configuration
 content-type: reference
 topic-tags: schema-reference
-translation-type: tm+mt
-source-git-commit: 922257b157f8d76d6e703b0510ff689d1aa4d067
+exl-id: 8a079bb8-3f53-4144-a065-5bd402649cc7
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '89'
 ht-degree: 10%
 
 ---
 
-
-# elemento compute-string {#compute-string--element}
+# elemento de cadeia de caracteres de computação {#compute-string--element}
 
 ## Modelo de conteúdo {#content-model-1}
 
-cadeia de caracteres de computação:==EMPTY
+compute-string:==EMPTY
 
 ## Atributos {#attributes-1}
 
@@ -35,7 +33,7 @@ nenhuma
 
 ## Descrição {#description-1}
 
-O elemento `<compute-string>` permite que você gere uma string com base em uma expressão XTK para exibir um rótulo &quot;criado&quot; na interface com base em vários valores.
+O elemento `<compute-string>` permite gerar uma string com base em uma expressão XTK para exibir um rótulo &quot;construído&quot; na interface com base em vários valores.
 
 ## Uso e contexto de uso {#use-and-context-of-use-1}
 
@@ -52,7 +50,7 @@ Quando nenhum `<compute-string>` é definido, um elemento `<compute-string>` é 
 <compute-string expr="ToString([@centralCatalog-id]) + ',' + ToString([@localOrgUnit-id])" />
 ```
 
-Resultado da string calculada em um recipient: &quot;João da Silva (john.doe@aol.com)&quot;:
+Resultado da string calculada em um recipient: &quot;John Doe (john.doe@aol.com)&quot;:
 
 ```
 <element name="recipient">
