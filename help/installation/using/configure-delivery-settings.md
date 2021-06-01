@@ -1,5 +1,4 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: Configuração das configurações de Delivery de campanha
 description: Saiba como definir as configurações de Entrega do Campaign
@@ -7,15 +6,14 @@ audience: installation
 content-type: reference
 topic-tags: initial-configuration
 exl-id: 2968d8db-2b4b-48e6-a22e-daba5ffe0576
-translation-type: tm+mt
-source-git-commit: 401e1be234d52f04cbdf8dfa97f51ac227836cd5
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '462'
-ht-degree: 3%
+ht-degree: 5%
 
 ---
 
-# Definir configurações de delivery {#delivery-settings}
+# Definir configurações de entrega {#delivery-settings}
 
 Os parâmetros de delivery devem ser configurados na pasta **serverConf.xml**.
 
@@ -98,5 +96,5 @@ Para fazer isso, siga as etapas abaixo:
 
 **Tópicos relacionados**
 * [Configurações técnicas de email](email-deliverability.md)
-* [Uso de servidores MX com o Campaign](using-mx-servers.md)
+* [Utilização de servidores MX com o Campaign](using-mx-servers.md)
 * [Configurar email Cco](email-archiving.md)
