@@ -1,5 +1,4 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: Sobre a capacidade de delivery no Campaign
 description: Saiba mais sobre as práticas recomendadas de delivery
@@ -7,9 +6,8 @@ audience: delivery
 content-type: reference
 topic-tags: deliverability-management
 exl-id: f301b34c-244c-4279-b23f-8224ea8eedbe
-translation-type: ht
-source-git-commit: 6854d06f8dc445b56ddfde7777f02916a60f2b63
-workflow-type: ht
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+workflow-type: tm+mt
 source-wordcount: '716'
 ht-degree: 100%
 
@@ -33,7 +31,7 @@ Os problemas de capacidade de delivery estão geralmente ligados às medidas de 
 
 >[!NOTE]
 >
->Como os ISPs são obrigados a desenvolver continuamente novas técnicas sofisticadas de filtragem para proteger seus clientes contra remetentes de spam, a capacidade de delivery de email é caracterizada por critérios e regras em constante mudança. Consulte o [Manual de práticas recomendadas de capacidade de delivery da Adobe](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/introduction.html?lang=pt-BR), que é atualizado regularmente.
+>Como os ISPs são obrigados a desenvolver continuamente novas técnicas sofisticadas de filtragem para proteger seus clientes contra remetentes de spam, a capacidade de delivery de email é caracterizada por critérios e regras em constante mudança. Consulte o [Manual de práticas recomendadas de capacidade de delivery da Adobe](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/introduction.html), que é atualizado regularmente.
 
 ### Taxa da capacidade de delivery
 
@@ -94,7 +92,7 @@ O Adobe Campaign permite verificar o desempenho de seus deliveries por meio de u
 
 Para obter mais informações, consulte estas seções:
 
-* [Monitoramento da capacidade de delivery](../../delivery/using/monitoring-deliverability.md)
+* [Monitoramento da capacidade de entrega](../../delivery/using/monitoring-deliverability.md)
 * [Sobre o monitoramento de delivery](../../delivery/using/about-delivery-monitoring.md)
 * [Sobre relatórios internos do Campaign](../../reporting/using/about-campaign-built-in-reports.md)
 
