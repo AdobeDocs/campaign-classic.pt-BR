@@ -1,16 +1,14 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: Nota técnica
 description: Nota técnica
 hide: true
 hidefromtoc: true
 exl-id: 7db02123-2e2a-40d9-8385-728ff69985e4
-translation-type: tm+mt
-source-git-commit: d7eabfbebf016d2632d95d34a5b36719ccc1d88a
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '1107'
-ht-degree: 14%
+ht-degree: 17%
 
 ---
 
@@ -26,14 +24,14 @@ Por motivos de segurança, agora é necessário atualizar para uma das versões 
 
 >[!NOTE]
 >
->Para dúvidas sobre essas alterações, entre em contato com o [Adobe Customer Care](https://helpx.adobe.com/br/enterprise/admin-guide.html/br/enterprise/using/support-for-experience-cloud.ug.html).
+>Em caso de dúvidas sobre essas alterações, entre em contato com o [Atendimento ao cliente da Adobe](https://helpx.adobe.com/br/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html).
 
 
 ## Atualizações de segurança {#acc-security-updates}
 
 As versões mais recentes do Campaign vêm com uma correção de segurança que reforça a proteção contra problemas de SSRF (Server Side Request Forgery). Saiba mais [nesta página](https://helpx.adobe.com/security/products/campaign/apsb21-04.html).
 
-**Você é afetado?**
+**Você será afetado?**
 
 Se o ambiente estiver em uma build inferior à listada abaixo, você será afetado:
 
@@ -77,7 +75,7 @@ O Adobe Identity Service (IMS) interromperá o suporte a versões antigas do Int
 
 Uma atualização do Console do Cliente do Campaign é necessária para garantir a compatibilidade com o Adobe IMS.
 
-**Você é afetado?**
+**Você será afetado?**
 
 Se você estiver se conectando ao Campaign [por meio de um Adobe ID](../integrations/using/about-adobe-id.md), por meio do Adobe Identity Management Service (IMS), a atualização para uma das novas versões listadas abaixo é obrigatória:
 
@@ -109,7 +107,7 @@ Depois que todas as instâncias forem atualizadas, o Console do cliente também 
 
 O serviço de autenticação oAuth herdado chegou ao fim da vida útil. A autenticação da integração dos acionadores, originalmente baseada na configuração da autenticação oAUTH para acessar o pipeline, foi movida para o Adobe I/O. Ele será removido em **30 de novembro de 2021**. [Saiba mais](https://github.com/AdobeDocs/analytics-1.4-apis/blob/master/docs/APIEOL.md?mv=email).
 
-**Você é afetado?**
+**Você será afetado?**
 
 Se suas instâncias estiverem em execução em uma versão **anterior à Campanha 19.1.8, 20.2.4, Gold Standard 11**, você estará usando uma versão mais antiga da integração de acionadores por meio da autenticação oAuth: **é necessário atualizar para uma versão mais recente e ir para Adobe I/O**.
 
@@ -146,7 +144,7 @@ Saiba como verificar sua versão [nesta seção](../platform/using/launching-ado
 
 Como cliente hospedado, se você tiver atualizado para a nova build, o Adobe já atualizou suas instâncias para a API baseada em HTTP/2.
 
-Como cliente local/híbrido, você precisa atualizar sua configuração. [Saiba como migrar para HTTP/2](https://helpx.adobe.com/campaign/kb/migrate-to-apns-http2.html)
+Como cliente local/híbrido, você precisa atualizar sua configuração. [Saiba como migrar para HTTP/2](https://helpx.adobe.com/br/campaign/kb/migrate-to-apns-http2.html)
 
 ### Atualizações de certificado raiz APNs
 
@@ -154,7 +152,7 @@ Em 29 de março de 2021, uma atualização de infraestrutura do serviço de noti
 
 Saiba mais sobre as alterações de APNs [nesta página](https://developer.apple.com/news/?id=7gx0a2lp).
 
-**Você é afetado?**
+**Você será afetado?**
 
 Se estiver usando o Campaign para enviar notificações por push em dispositivos iOS, você será afetado.
 
@@ -169,6 +167,6 @@ Como cliente local/híbrido, você precisa atualizar sua configuração para gar
 ## Links úteis
 
 * [Atualizar seu ambiente](../production/using/build-upgrade.md)
-* [Perguntas frequentes de atualização da compilação](../platform/using/faq-build-upgrade.md)
-* [Baixar a build do Campaign Classic](https://experience.adobe.com/#/downloads/content/software-distribution/br/campaign.html)
+* [Perguntas frequentes de atualização de build](../platform/using/faq-build-upgrade.md)
+* [Baixar a build do Campaign Classic](https://experience.adobe.com/#/downloads/content/software-distribution/en/campaign.html)
 * [Disponibilizar o novo Console do cliente para os usuários](../installation/using/client-console-availability-for-windows.md)
