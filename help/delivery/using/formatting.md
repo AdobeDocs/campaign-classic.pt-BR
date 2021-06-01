@@ -1,5 +1,4 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: Formatação
 description: Formatação
@@ -7,9 +6,8 @@ audience: delivery
 content-type: reference
 topic-tags: content-management
 exl-id: d9688dc4-20c6-4a9a-990f-465f39b2faa2
-translation-type: ht
-source-git-commit: 6854d06f8dc445b56ddfde7777f02916a60f2b63
-workflow-type: ht
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+workflow-type: tm+mt
 source-wordcount: '1448'
 ht-degree: 100%
 
