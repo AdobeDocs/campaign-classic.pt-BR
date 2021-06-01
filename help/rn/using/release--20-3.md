@@ -1,19 +1,17 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: Notas de versão do Campaign 20.3
 description: Notas de versão do Campaign 20.3
-feature: Overview
+feature: Visão geral
 role: Business Practitioner
 level: Beginner
-translation-type: tm+mt
-source-git-commit: 1f718e26aeaa5ed5a58dfd0e3bc29d2dd9e995ee
+exl-id: e927b7fc-95cd-4e08-bab7-ceeb6e67c265
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
-source-wordcount: '1952'
-ht-degree: 95%
+source-wordcount: '1949'
+ht-degree: 98%
 
 ---
-
 
 # Versão 20.3{#release-20-3}
 
@@ -33,9 +31,9 @@ _27 de outubro de 2020_
 
 >[!CAUTION]
 >
-> * Esta versão vem com um novo protocolo de conexão: se você estiver se conectando ao Campaign pelo Adobe Identity Service (IMS), a atualização é obrigatória para o servidor do Campaign e o console do cliente poderem se conectar ao Campaign depois de **30 de junho de 2021**.
+> * Esta versão é fornecida com um novo protocolo de conexão: se você estiver se conectando ao Campaign pelo Serviço de identidade da Adobe (IMS), a atualização será obrigatória para o servidor do Campaign e o console do cliente poderem se conectar ao Campaign após **30 de junho de 2021**.
 > * Esta versão vem com uma [correção de segurança](https://helpx.adobe.com/security/products/campaign/apsb21-04.html): a atualização é obrigatória para reforçar a segurança do ambiente.
-> * Se estiver usando a integração Experience Cloud Triggers por meio da autenticação oAuth, será necessário mover para o Adobe I/O conforme descrito [nesta página](../../integrations/using/configuring-adobe-io.md). O modo de autenticação oAuth herdado com o Campaign será desativado em **30 de novembro de 2021**.
+> * Se você estiver usando a integração dos acionadores da Experience Cloud por meio da autenticação oAuth, será necessário migrar para o Adobe I/O conforme descrito [nesta página](../../integrations/using/configuring-adobe-io.md). O modo de autenticação oAuth herdado com o Campaign será desativado em **30 de novembro de 2021**.
 
 
 **Novidades**
