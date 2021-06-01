@@ -1,5 +1,4 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: Atualização do [!DNL Gold Standard]
 description: 'Conheça o Campaign Classic [!DNL Gold Standard] '
@@ -7,9 +6,8 @@ feature: Visão geral
 role: Business Practitioner
 level: Beginner
 exl-id: c36a78f6-3332-465d-92f5-48f70b8bdddd
-translation-type: ht
-source-git-commit: 6854d06f8dc445b56ddfde7777f02916a60f2b63
-workflow-type: ht
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+workflow-type: tm+mt
 source-wordcount: '556'
 ht-degree: 100%
 
@@ -23,7 +21,7 @@ A Adobe e o Adobe Campaign têm o compromisso de fornecer a você a melhor exper
 
 O Adobe Campaign Classic, especificamente, usa uma variedade de tecnologias para fornecer valor. Essa combinação de tecnologias exige que você atualize regularmente suas instâncias do Campaign Classic para garantir que as versões mais atualizadas estejam sendo usadas para oferecer segurança, estabilidade e desempenho superiores.
 
-[!DNL Gold Standard] é a versão de suporte em longo prazo do Campaign Classic. Como usuário hospedado do [!DNL Gold Standard], você se beneficia automaticamente da atualização do [!DNL Gold Standard] com a versão estável mais recente sem ter de realizar nenhuma ação. Os clientes no local e híbridos também podem se beneficiar das versões do [!DNL Gold Standard]. Se você migrar de uma compilação antiga, recomendamos atualizar primeiro para essa versão.
+[!DNL Gold Standard] é a versão de suporte em longo prazo do Campaign Classic. Como usuário convidado do [!DNL Gold Standard], você se beneficia automaticamente da atualização do [!DNL Gold Standard] com a última versão estável sem realizar nenhuma ação. Os clientes no local e híbridos também podem se beneficiar das versões do [!DNL Gold Standard]. Se você migrar de uma compilação antiga, recomendamos atualizar primeiro para essa versão.
 
 ## Por que minha empresa precisa dessa atualização?
 
@@ -100,6 +98,6 @@ Estamos empenhados em garantir que você tenha as informações relevantes do pr
 
 ## Recursos adicionais
 
-* Notas de versão do [[!DNL Gold Standard] ](gold-standard.md)
-* [Perguntas frequentes de atualização da compilação](../../platform/using/faq-build-upgrade.md)
-* Matriz de compatibilidade do [[!DNL Gold Standard] ](compatibility-matrix-gs.md)
+* [Notas de versão do [!DNL Gold Standard]](gold-standard.md)
+* [Perguntas frequentes de atualização de build](../../platform/using/faq-build-upgrade.md)
+* [Matriz de compatibilidade do [!DNL Gold Standard]](compatibility-matrix-gs.md)
