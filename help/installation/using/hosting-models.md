@@ -3,17 +3,16 @@ solution: Campaign Classic
 product: campaign
 title: Modelos de hospedagem
 description: Modelos de hospedagem do Discover Campaign
-feature: Overview
+feature: Visão geral
 role: Architect
 level: Beginner
-translation-type: tm+mt
-source-git-commit: 09bd634142f643206c38ac5f881302a5d489ecaf
+exl-id: a06b1365-d487-4df1-8f4a-7268b871a427
+source-git-commit: 54d503e97a4374927c4ebe3ba4e0ec05e51d47db
 workflow-type: tm+mt
-source-wordcount: '626'
+source-wordcount: '624'
 ht-degree: 2%
 
 ---
-
 
 # Modelos de hospedagem{#hosting-models}
 
@@ -31,7 +30,7 @@ O Adobe Campaign pode ser implantado como um Serviço gerenciado: todos os compo
 
 Como cliente hospedado, a maioria das etapas de instalação e configuração é executada pelo Adobe. Você pode acessar as seguintes seções para personalizar sua implementação:
 
-* Configurar URLs de página de rastreamento e mirror page por marca. Para mensagens transacionais, consulte [nesta seção](../../message-center/using/configuring-multibranding.md).
+* Configurar URLs de página de rastreamento e mirror page por marca. Para mensagens transacionais, consulte [nesta seção](../../message-center/using/additional-configurations.md#configuring-multibranding).
 * Instale o console do cliente: consulte [nesta seção](../../installation/using/installing-the-client-console.md).
 * Saiba mais sobre as ferramentas de deliverability e as práticas recomendadas lendo a [documentação detalhada](../../delivery/using/about-deliverability.md).
 * Configure as opções do Campaign: consulte [nesta seção](../../installation/using/configuring-campaign-options.md).
@@ -50,7 +49,7 @@ Como cliente local, antes de começar a implantar o Campaign Classic, atenda aos
 * Saiba mais sobre as recomendações relacionadas aos mecanismos de banco de dados [nesta seção](../../installation/using/database.md).
 * Verifique se as camadas de acesso ao banco de dados necessárias estão instaladas no servidor e acessíveis na conta do Adobe Campaign. [Saiba mais](../../installation/using/application-server.md).
 * Configure suas redes, pois alguns processos precisam se comunicar com outras pessoas ou acessar a LAN e a Internet. Isso significa que algumas portas TCP precisam estar abertas para esses processos. [Saiba ](../../installation/using/network-configuration.md) mais sobre os requisitos de configuração de rede.
-* Leia [Lista de verificação de segurança e privacidade da campanha](https://helpx.adobe.com/br/campaign/kb/acc-security.html).
+* Leia [Lista de verificação de segurança e privacidade da campanha](https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/security-privacy/get-started-security-privacy.html?lang=pt-BR#installing-campaign-classic).
 * Verifique as diretrizes gerais para estimar os requisitos de hardware para a implantação no local [neste artigo](https://helpx.adobe.com/br/campaign/kb/hardware-sizing-guide.html).
 
 ## Híbrido
@@ -62,7 +61,7 @@ Quando implantado como um modelo híbrido, o software da solução Adobe Campaig
 Como cliente híbrido, a maioria das etapas de instalação e configuração é executada pelo Adobe. Você pode acessar as seguintes seções para personalizar sua implementação:
 
 * Configurar mensagens transacionais: consulte [nesta seção](../../message-center/using/transactional-messaging-architecture.md).
-* Configurar URLs de página de rastreamento e mirror page por marca. Para mensagens transacionais, consulte [nesta seção](../../message-center/using/configuring-multibranding.md).
+* Configurar URLs de página de rastreamento e mirror page por marca. Para mensagens transacionais, consulte [nesta seção](../../message-center/using/additional-configurations.md#configuring-multibranding).
 * Instale o console do cliente: consulte [nesta seção](../../installation/using/installing-the-client-console.md).
 * Instalar pacotes incorporados: consulte [nesta seção](../../installation/using/installing-campaign-standard-packages.md).
 * Capacidade de entrega: configure [MX rules](../../installation/using/email-deliverability.md#mx-configuration) e [formatos de email](../../installation/using/email-deliverability.md#managing-email-formats). Saiba mais sobre as ferramentas de deliverability e as práticas recomendadas lendo a [documentação detalhada](../../delivery/using/about-deliverability.md).
