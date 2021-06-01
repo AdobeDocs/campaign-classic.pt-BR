@@ -1,34 +1,32 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: Elementos e atributos
 description: Elementos e atributos
 audience: configuration
 content-type: reference
 topic-tags: schema-reference
-translation-type: tm+mt
-source-git-commit: 922257b157f8d76d6e703b0510ff689d1aa4d067
+exl-id: 4cd67278-2623-4508-9a9f-9007c6a5f8ac
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '196'
 ht-degree: 6%
 
 ---
 
-
-# elemento de lista discriminada {#enumeration--element}
+# elemento de enumeração {#enumeration--element}
 
 ## Modelo de conteúdo {#content-model-5}
 
-lista discriminada:==(ajuda| valor)
+enumeração:==(help| value)
 
 ## Atributos {#attributes-5}
 
-* @basetype (string)
-* @default (string)
-* @desc (string)
-* @label (string)
-* @name (string)
-* @template (string)
+* @basetype (cadeia de caracteres)
+* @default (cadeia de caracteres)
+* @desc (cadeia de caracteres)
+* @label (cadeia de caracteres)
+* @name (cadeia de caracteres)
+* @template (cadeia de caracteres)
 
 ## Pais {#parents-5}
 
@@ -41,33 +39,33 @@ lista discriminada:==(ajuda| valor)
 
 ## Descrição {#description-5}
 
-Esse elemento permite definir uma lista discriminada de valor. Uma lista discriminada pertence ao schema no qual está definida, mas pode ser acessada por meio de outro schema.
+Esse elemento permite definir uma enumeração de valor. Uma enumeração pertence ao schema no qual está definida, mas é acessível por meio de outro schema.
 
 ## Uso e contexto de uso {#use-and-context-of-use-4}
 
-As listas discriminadas são definidas no start de um schema (antes de o elemento principal ser definido).
+As enumerações são definidas no início de um schema (antes do elemento principal ser definido).
 
 ## Descrição do atributo {#attribute-description-5}
 
-* **basetype (string)**: tipo dos valores armazenados na lista discriminada.
+* **basetype (cadeia de caracteres)**: tipo dos valores armazenados na enumeração.
 
    Lista de tipos disponíveis:
 
    * ANY
    * compartimento
-   * mancha
+   * blob
    * booleano
    * byte
    * CDATA
    * datetime
    * datetimetz
    * datetimenotz
-   * date
+   * data
    * DOMDocument
    * DOMElement
-   * duplo
+   * double
    * enum
-   * flutuante
+   * float
    * html
    * int64
    * link
@@ -75,22 +73,22 @@ As listas discriminadas são definidas no start de um schema (antes de o element
    * memorando
    * MNTOKEN
    * percent
-   * primário
+   * chave primária
    * short
    * string
    * tempo
-   * tempo
+   * timespan
    * uuid
 
-* **padrão (string)**: Valor padrão. O valor padrão também pode ser um dos valores definidos na lista discriminada.
-* **desc (string)**: Descrição da lista discriminada.
-* **label (string)**: Etiqueta da lista discriminada.
-* **name (string)**: nome interno da lista discriminada.
+* **padrão (string)**: Valor padrão. O valor padrão também pode ser um dos valores definidos na enumeração.
+* **desc (string)**: descrição da enumeração.
+* **label (string)**: rótulo da enumeração.
+* **name (sequência de caracteres)**: nome interno da enumeração.
 * **template (string)**: esse atributo define uma referência a um  `<enumeration>` elemento compartilhado por vários schemas. A definição é copiada automaticamente para o schema atual.
 
 ## Exemplos {#examples-4}
 
-Exemplo de valores de lista discriminada cujos valores são armazenados no banco de dados:
+Exemplo de valores de enumeração cujos valores são armazenados no banco de dados:
 
 ```
     <enumeration name="myEnum">
@@ -103,7 +101,7 @@ Exemplo de valores de lista discriminada cujos valores são armazenados no banco
     </element>
 ```
 
-Definição de uma lista discriminada com um valor padrão:
+Definição de uma enumeração com um valor padrão:
 
 ```
  <enumeration basetype="byte" default="email" name="canal">
