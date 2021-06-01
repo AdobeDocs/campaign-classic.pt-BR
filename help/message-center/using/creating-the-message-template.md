@@ -6,10 +6,10 @@ audience: message-center
 content-type: reference
 topic-tags: message-templates
 exl-id: a52bc140-072e-4f81-b6da-f1b38662bce5
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: e86350cf12db37e3f2c227563057b97922601729
 workflow-type: tm+mt
-source-wordcount: '499'
-ht-degree: 78%
+source-wordcount: '498'
+ht-degree: 72%
 
 ---
 
@@ -47,13 +47,13 @@ Os templates de mensagem transacional contêm as informações necessárias para
    >
    >Um tipo de evento não pode ser vinculado a mais de um template.
 
-1. Insira uma natureza e uma descrição, depois clique em **[!UICONTROL Continue]** para criar o corpo da mensagem (consulte [Criação do conteúdo da mensagem](#creating-message-content)).
+1. Insira uma natureza e uma descrição, depois clique em **[!UICONTROL Continue]** para criar o corpo da mensagem (consulte [Create the message content](#creating-message-content)).
 
    ![](assets/messagecenter_create_model_004.png)
 
 ## Criar o conteúdo da mensagem {#creating-message-content}
 
-A definição do conteúdo da mensagem transacional é a mesma para deliveries comuns no Adobe Campaign. Por exemplo, para um delivery de email, você pode criar conteúdo em formato HTML ou texto, adicionar anexos ou personalizar o objeto do delivery. Para obter mais informações, consulte o capítulo sobre [Delivery de email](../../delivery/using/about-email-channel.md).
+A definição do conteúdo da mensagem transacional é a mesma para deliveries comuns no Adobe Campaign. Por exemplo, para um delivery de email, você pode criar conteúdo em formato HTML ou texto, adicionar anexos ou personalizar o objeto do delivery. Para obter mais informações, consulte o capítulo [Delivery de email](../../delivery/using/about-email-channel.md) .
 
 >[!IMPORTANT]
 >
