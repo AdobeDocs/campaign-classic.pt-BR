@@ -1,5 +1,4 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: Comandos usuais
 description: Comandos usuais
@@ -7,8 +6,7 @@ audience: production
 content-type: reference
 topic-tags: production-procedures
 exl-id: 472ccc04-e68e-4ccb-90e9-7d626a4e794f
-translation-type: tm+mt
-source-git-commit: b0a1e0596e985998f1a1d02236f9359d0482624f
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '408'
 ht-degree: 3%
@@ -29,6 +27,7 @@ O parâmetro **`<command>`** corresponde ao módulo .
 >
 >* Em qualquer caso, você pode adicionar o argumento **-noconsole** para excluir comentários exibidos quando os módulos forem iniciados.
 >* Por outro lado, é possível adicionar o argumento **-verbose** para exibir mais informações.
+
 >
 
 
@@ -162,6 +161,8 @@ Para alterar a senha **interna**: **nlserver config -internalpassword**
 >* Em geral, em vez de modificar os arquivos de configuração manualmente, você pode usar o comando **config**
 >* Para obter a lista de parâmetros, use o **-?** parâmetro:  **configuração nlserver -?**
 >* No caso de um banco de dados do Oracle, você não deve especificar a conta. A sintaxe será a seguinte:
+
 >
->  nlserver config -setdblogin:Oracle:test6@dbserver
+>  
+nlserver config -setdblogin:Oracle:test6@dbserver
 
