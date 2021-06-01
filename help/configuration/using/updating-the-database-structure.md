@@ -1,23 +1,21 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: Atualização da estrutura do banco de dados
 description: Atualização da estrutura do banco de dados
 audience: configuration
 content-type: reference
 topic-tags: editing-schemas
-translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+exl-id: 6c1e061b-8636-4285-8d83-97474544d252
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '137'
 ht-degree: 8%
 
 ---
 
-
 # Atualização da estrutura do banco de dados{#updating-the-database-structure}
 
-Para aplicar as modificações feitas nos schemas, inicie o assistente de atualização do banco de dados. Este assistente pode ser acessado por **[!UICONTROL Tools > Advanced > Update database structure]**. Ele verifica se a estrutura física do banco de dados corresponde à sua descrição lógica e executa os scripts de atualização do SQL.
+Para aplicar as modificações feitas nos schemas, inicie o assistente de atualização do banco de dados. Este assistente pode ser acessado por meio de **[!UICONTROL Tools > Advanced > Update database structure]** . Verifica se a estrutura física do banco de dados corresponde à sua descrição lógica e executa os scripts de atualização SQL.
 
 ![](assets/d_ncs_integration_schema_update.png)
 
@@ -29,15 +27,14 @@ As opções **[!UICONTROL Add stored procedures]** e **[!UICONTROL Import initia
 
 É possível importar um conjunto de dados de um pacote de dados externo. Para fazer isso, selecione **[!UICONTROL Import a package]** e insira o arquivo XML do pacote.
 
-Siga as etapas e visualização o script SQL de atualização do banco de dados:
+Siga as etapas e exiba o script SQL de atualização do banco de dados:
 
 ![](assets/d_ncs_integration_schema_update2.png)
 
 >[!NOTE]
 >
->Isso está em um campo de edição e pode ser modificado para excluir ou adicionar o código SQL.
+>Isso está em um campo de edição e pode ser modificado para excluir ou adicionar código SQL.
 
 Em seguida, inicie a atualização do banco de dados:
 
 ![](assets/d_ncs_integration_schema_update3.png)
-
