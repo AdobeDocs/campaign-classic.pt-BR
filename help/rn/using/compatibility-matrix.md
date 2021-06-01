@@ -1,5 +1,4 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: Matriz de compatibilidade do Campaign Classic
 description: Matriz de compatibilidade do Campaign Classic
@@ -7,8 +6,8 @@ feature: Visão geral
 role: Business Practitioner
 level: Beginner
 exl-id: b8c1f287-06f4-4c34-8cca-b0c7676abbc2
-source-git-commit: 69f6fcd21b27f095781bca4a62153086382f3d7f
-workflow-type: ht
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+workflow-type: tm+mt
 source-wordcount: '554'
 ht-degree: 100%
 
@@ -263,7 +262,7 @@ Para saber mais sobre itens obsoletos, visite [esta página](../../rn/using/depr
 <tr><td>Hadoop via HiveSQL</td>
 <td>
 <p>HortonWorks HDP 2.4.X, 2.5.x, 2.6.x</p>
-<p>HDInsight 3.4 (HDP 2.4), 3.5 (HDP 2.5), 3.6 (HDP 2.6)</p>
+<p>HDInsight 3.4 (HDP 2.4), 3.5 (HDP 2.5), 3.6 (HDP 2.6))</p>
 <p>Cloudera CDH6.x</p>
 </td>
 </tr>
@@ -308,7 +307,7 @@ Para saber mais sobre itens obsoletos, visite [esta página](../../rn/using/depr
 <p>Microsoft Internet Explorer</p>
 </td>
 <td>
-<p>11</p>
+<p>11º</p>
 </td>
 </tr>
 </tbody>
@@ -379,7 +378,7 @@ Os seguintes navegadores são compatíveis com o Campaign for Web Access.
 <p>Microsoft Internet Explorer</p>
 </td>
 <td>
-<p>11</p>
+<p>11º</p>
 </td>
 </tr>
 </tbody>
