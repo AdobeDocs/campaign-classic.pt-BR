@@ -1,5 +1,4 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: Compactação ou criptografia de um arquivo
 description: Saiba como compactar ou criptografar um arquivo no Campaign Classic antes do processamento.
@@ -7,10 +6,10 @@ audience: platform
 content-type: reference
 topic-tags: importing-and-exporting-data
 exl-id: 4596638c-d75a-4e07-a2d8-5befcaad3430
-source-git-commit: bce114f36d1ec4582fc79e750d48155ba0d7cd1f
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '541'
-ht-degree: 92%
+ht-degree: 93%
 
 ---
 
@@ -24,7 +23,7 @@ Para fazer isso:
 
    >[!NOTE]
    >
-   >O Painel de controle do Campaign é restrito a usuários administradores e está disponível somente para determinadas versões do Campaign. [Saiba mais](https://experienceleague.adobe.com/docs/control-panel/using/discover-control-panel/key-features.html)
+   >O Painel de controle do Campaign é restrito a usuários administradores e está disponível somente para determinadas versões do Campaign. [Saiba mais](https://experienceleague.adobe.com/docs/control-panel/using/discover-control-panel/key-features.html?lang=pt-BR)
 
 1. Caso sua instalação do Adobe Campaign seja hospedada pela Adobe, entre em contato com o [Atendimento ao cliente da Adobe](https://helpx.adobe.com/br/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html) para ter os utilitários necessários instalados no servidor.
 1. Caso a instalação do Adobe Campaign seja no local, instale o utilitário que deseja usar (por exemplo: GPG, GZIP) e as chaves necessárias (chave de criptografia) no servidor de aplicativos.
