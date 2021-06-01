@@ -6,10 +6,10 @@ audience: message-center
 content-type: reference
 topic-tags: instance-configuration
 exl-id: 23a384d1-27ce-46c2-98c3-0fb60a5c50ee
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: e86350cf12db37e3f2c227563057b97922601729
 workflow-type: tm+mt
-source-wordcount: '1230'
-ht-degree: 59%
+source-wordcount: '1222'
+ht-degree: 53%
 
 ---
 
@@ -40,7 +40,7 @@ Se estiver usando várias instâncias de execução, será necessário criar qua
 
 >[!NOTE]
 >
->Quando as instâncias de execução são usadas por várias instâncias de controle, os dados podem ser divididos por pasta e por operador. Para obter mais informações, consulte [Uso de várias instâncias de controle](#using-several-control-instances).
+>Quando as instâncias de execução são usadas por várias instâncias de controle, os dados podem ser divididos por pasta e por operador. Para obter mais informações, consulte [Usar várias instâncias de controle](#using-several-control-instances).
 
 ### Criar uma conta externa
 
@@ -91,7 +91,7 @@ Para criar uma conta externa do tipo **[!UICONTROL Execution instance]**, apliqu
 
    ![](assets/messagecenter_create_extaccount_008.png)
 
-   Para obter mais informações sobre o Federated Data Access (FDA), consulte [Acesso a um banco de dados externo](../../installation/using/about-fda.md).
+   Para obter mais informações sobre o Federated Data Access (FDA), consulte [esta seção](../../installation/using/about-fda.md).
 
 1. Clique em **[!UICONTROL Test the connection]** para verificar se a instância de controle e a instância de execução estão vinculadas.
 
@@ -131,7 +131,7 @@ Para usar uma senha vazia, vá para as instâncias de execução e defina uma zo
 
 >[!NOTE]
 >
->Quando as instâncias de execução são usadas por várias instâncias de controle, os dados podem ser divididos por pasta e por operador. Para obter mais informações, consulte [Uso de várias instâncias de controle](#using-several-control-instances).
+>Quando as instâncias de execução são usadas por várias instâncias de controle, os dados podem ser divididos por pasta e por operador. Para obter mais informações, consulte [Usar várias instâncias de controle](#using-several-control-instances).
 
 1. Em uma instância de execução, vá para a pasta do operador ( **[!UICONTROL Administration > Access management > Operators]** ).
 1. Selecione o agente **Message Center**.
@@ -162,11 +162,11 @@ Na árvore de todas as instâncias de execução, crie uma pasta por operador (*
 >
 >As etapas abaixo devem ser executadas **nas instâncias de controle**.
 
-1. Na instância de controle do **Controle 1**, crie uma conta externa por instância de execução e insira o operador **mc1** em cada conta externa. O operador **mc1** será criado em todas as instâncias de execução (consulte [Configurar instâncias de execução](#configuring-execution-instances)).
+1. Na instância de controle **Control 1**, crie uma conta externa por instância de execução e insira o operador **mc1** em cada conta externa. O operador **mc1** será criado em todas as instâncias de execução (consulte [Configurar instâncias de execução](#configuring-execution-instances)).
 
    ![](assets/messagecenter_multi_control_1.png)
 
-1. Na instância de controle do **Controle 2**, crie uma conta externa por instância de execução e insira o operador **mc2** em cada conta externa. O operador **mc2** será criado em todas as instâncias de execução (consulte [Configurar instâncias de execução](#configuring-execution-instances)).
+1. Na instância de controle **Control 2**, crie uma conta externa por instância de execução e insira o operador **mc2** em cada conta externa. O operador **mc2** será criado em todas as instâncias de execução (consulte [Configurar instâncias de execução](#configuring-execution-instances)).
 
    ![](assets/messagecenter_multi_control_2.png)
 
