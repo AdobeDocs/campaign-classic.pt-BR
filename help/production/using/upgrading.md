@@ -1,19 +1,17 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: Atualização para uma nova build
 description: Saiba mais sobre as etapas técnicas para atualizar para uma nova build
 audience: production
 content-type: reference
 topic-tags: updating-adobe-campaign
-translation-type: tm+mt
-source-git-commit: cb24bc78b5cc09307ca470470464f204d9f41278
+exl-id: 4aaa6256-256a-441d-80c9-430f8e427875
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '1149'
 ht-degree: 3%
 
 ---
-
 
 # Atualização para uma nova build (no local){#upgrading}
 
@@ -23,7 +21,8 @@ Antes de iniciar o processo de atualização, determine e confirme qual versão 
 >
 >* O Adobe recomenda fazer um backup do banco de dados em cada instância antes da atualização. Para saber mais, consulte [esta seção](../../production/using/backup.md).
 >* Para executar uma atualização, verifique se você tem a capacidade e as permissões de acessar instâncias e logs.
->* Leia [esta seção](../../installation/using/general-architecture.md) e o capítulo [atualização de compilação](https://helpx.adobe.com/br/campaign/kb/acc-build-upgrade.html) antes de iniciar.
+>* Leia [esta seção](../../installation/using/general-architecture.md) e o capítulo [atualização de compilação](https://experienceleague.adobe.com/docs/campaign-classic/using/monitoring-campaign-classic/updating-adobe-campaign/build-upgrade.html?lang=pt-BR#monitoring-campaign-classic) antes de iniciar.
+
 >
 
 
@@ -50,7 +49,6 @@ Para substituir todos os arquivos pela nova versão, você precisa encerrar toda
       **iisreset /stop**
 
    * Serviço Adobe Campaign: **net stop nlserver6**
-
    >[!IMPORTANT]
    >
    >Você também precisa verificar se o servidor de redirecionamento (webmdl) está parado, para que o arquivo **nlsrvmod.dll** usado pelo IIS possa ser substituído pela nova versão.
@@ -71,7 +69,7 @@ Para executar o arquivo de atualização, siga as etapas abaixo:
 
 1. Execute **setup.exe**.
 
-   Para baixar esse arquivo, conecte-se ao [Portal de distribuição de software](https://experience.adobe.com/#/downloads/content/software-distribution/br/campaign.html) usando suas credenciais de usuário. Saiba mais sobre a Distribuição de software em [this page](https://experienceleague.adobe.com/docs/experience-cloud/software-distribution/home.html?lang=en).
+   Para baixar esse arquivo, conecte-se ao [Portal de distribuição de software](https://experience.adobe.com/#/downloads/content/software-distribution/en/campaign.html) usando suas credenciais de usuário. Saiba mais sobre a Distribuição de software em [this page](https://experienceleague.adobe.com/docs/experience-cloud/software-distribution/home.html?lang=en).
 
 1. Selecione o modo de instalação: escolha **[!UICONTROL Update or repair]**
 1. Clique em **[!UICONTROL Next]** .
@@ -173,8 +171,10 @@ Para fazer isso, execute o seguinte comando:
 >
 >* Seu script pode ser chamado de **httpd** em vez de **apache**.
 >* Você DEVE executar esse comando até obter a seguinte resposta:
->
->   Essa operação é necessária para que o Apache aplique a nova biblioteca.
+
+   >
+   >   
+   Essa operação é necessária para que o Apache aplique a nova biblioteca.
 
 
 Em seguida, reinicie o Apache:
@@ -267,4 +267,3 @@ Na próxima vez que os consoles do cliente estiverem conectados, uma janela info
 >[!NOTE]
 >
 >Verifique se o usuário do Apache tem os direitos de leitura apropriados para esse arquivo de instalação e consulte o [guia de instalação](../../installation/using/general-architecture.md) para obter mais informações.
-
