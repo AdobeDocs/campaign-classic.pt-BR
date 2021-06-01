@@ -1,23 +1,21 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: Descrição do modelo de dados do Adobe Campaign Classic
-description: Este documento descreve o modelo de dados do Adobe Campaign.
+description: Este documento descreve o modelo de dados Adobe Campaign.
 audience: configuration
 content-type: reference
 topic-tags: schema-reference
-translation-type: tm+mt
-source-git-commit: 87028ec81a8cae6793d45d7c840511b59cd0287c
+exl-id: fc0fd23c-f9ea-4e30-b47b-a84143d882ca
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '2374'
 ht-degree: 1%
 
 ---
 
-
 # Descrição do modelo de dados da campanha{#data-model-description}
 
-O Adobe Campaign vem com um modelo de dados predefinido. Esta seção fornece alguns detalhes sobre as tabelas integradas do modelo de dados do Adobe Campaign e suas interações.
+O Adobe Campaign vem com um modelo de dados predefinido. Esta seção fornece alguns detalhes sobre as tabelas integradas do modelo de dados do Adobe Campaign e sua interação.
 
 Para acessar a descrição de cada tabela, vá para **[!UICONTROL Admin > Configuration > Data schemas]**, selecione um recurso da lista e clique na guia **[!UICONTROL Documentation]**.
 
@@ -25,7 +23,7 @@ Para acessar a descrição de cada tabela, vá para **[!UICONTROL Admin > Config
 
 >[!NOTE]
 >
->A estrutura física e lógica dos dados transportados no aplicativo é descrita em XML. Ela obedece a uma gramática específica do Adobe Campaign, chamada de schema. Para obter mais informações sobre schemas do Adobe Campaign, leia [esta seção](../../configuration/using/about-schema-reference.md).
+>A estrutura física e lógica dos dados transportados no aplicativo é descrita em XML. Ela obedece a uma gramática específica do Adobe Campaign, chamada de schema. Para obter mais informações sobre schemas Adobe Campaign, leia [esta seção](../../configuration/using/about-schema-reference.md).
 
 ## Descrição das tabelas principais {#description-main-tables}
 
@@ -37,7 +35,7 @@ O diagrama a seguir mostra as associações entre as principais tabelas de negó
 
 ![](assets/data-model_simplified-diagram.png)
 
-O modelo de dados predefinido do Adobe Campaign inclui as principais tabelas listadas abaixo.
+O modelo de dados Adobe Campaign predefinido inclui as principais tabelas listadas abaixo.
 
 ### NmsRecipient {#NmsRecipient}
 
@@ -71,7 +69,7 @@ A tabela de relacionamento NmsRcpGrpRel contém apenas os dois campos correspond
 
 Esta tabela corresponde ao schema **nms:service** .
 
-No Adobe Campaign, é possível criar e gerenciar assinaturas de serviços de informações (tópicos). A tabela NmsService armazena a definição dos serviços de informações (tópicos) aos quais você oferece aos recipients para assinar (um boletim informativo, por exemplo).
+No Adobe Campaign, é possível criar e gerenciar subscrições de serviços de informações (tópicos). A tabela NmsService armazena a definição dos serviços de informações (tópicos) aos quais você oferece aos recipients para assinar (um boletim informativo, por exemplo).
 
 Os serviços são entidades semelhantes a grupos (agrupamentos de recipients estáticos), exceto que circulam mais informações e permitem o gerenciamento fácil de subscrições e unsubscriptions por meio de formulários.
 
@@ -267,7 +265,7 @@ Esse conjunto de tabelas está vinculado ao módulo **Managing social networks**
 ![](assets/data-model_social.png)
 
 * **NmsVisitor**: Esta tabela corresponde ao  **nms:** visitorschema. Ele contém informações sobre visitantes.
-* **NmsVisitorSub**: Esta tabela corresponde ao  **nms:** visitorSubschema. Ele permite vincular um visitante aos serviços que eles assinaram (Twitter ou Facebook).
-* **NmsFriendShippingRel**: Esta tabela corresponde ao  **nms:** friendlyRelschema. Ela permite vincular visitantes com seus amigos no contexto do serviço do Facebook.
+* **NmsVisitorSub**: Esta tabela corresponde ao  **nms:** visitorSubschema. Ela permite vincular um visitante aos serviços que ele assinou (Twitter ou Facebook).
+* **NmsFriendShippingRel**: Esta tabela corresponde ao  **nms:** friendlyRelschema. Ela permite vincular visitantes com seus amigos no contexto do serviço Facebook.
 * **NmsVisitorInterestRel**: Esta tabela corresponde ao  **nms:** visitorInterestRelschema. Permite vincular visitantes e seus interesses.
 * **NmsInterest**: Esta tabela corresponde ao  **nms:** interestschema. Ele contém a lista de interesses para cada visitante.
