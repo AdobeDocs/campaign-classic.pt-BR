@@ -1,27 +1,25 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: Métodos SOAP em JavaScript
 description: Métodos SOAP em JavaScript
 audience: configuration
 content-type: reference
 topic-tags: api
-translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+exl-id: 62020447-fe59-4363-994d-de4d8032bbd7
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '136'
 ht-degree: 9%
 
 ---
 
-
 # Métodos SOAP em JavaScript{#soap-methods-in-javascript}
 
-Este é o JavaScript executado no servidor Adobe Campaign.
+Este é o JavaScript executado no servidor do Adobe Campaign.
 
 ## Métodos estáticos {#static-methods}
 
-Métodos SOAP estáticos são acessados chamando um método no objeto que representa o schema. Schemas são propriedades de objetos &#39;namespace&#39;. Essas namespaces são variáveis globais, portanto, por exemplo, as variáveis xtk ou nms representam as namespaces correspondentes
+Métodos SOAP estáticos são acessados chamando um método no objeto que representa o esquema. Esquemas são propriedades de objetos &#39;namespace&#39;. Esses namespaces são variáveis globais, portanto, por exemplo, as variáveis xtk ou nms representam os namespaces correspondentes
 
 O exemplo a seguir chama o método PostEvent estático do schema xtk:workflow:
 
@@ -31,7 +29,7 @@ xtk.workflow.PostEvent("WKF1", "signal", "", $recipient-id='123', false)
 
 ## Métodos não estáticos {#non-static-methods}
 
-Para usar métodos SOAP não estáticos, é necessário primeiro recuperar uma entidade usando os métodos &quot;get&quot; ou &quot;create&quot; nos schemas correspondentes.
+Para usar métodos SOAP não estáticos, é necessário primeiro recuperar uma entidade usando os métodos &quot;get&quot; ou &quot;create&quot; nos esquemas correspondentes.
 
 O exemplo a seguir chama o método ExecuteQuery do schema &quot;xtk:queryDef&quot;:
 
@@ -52,7 +50,7 @@ for each (var w in res.workflow)
 
 ## Exemplos {#examples}
 
-* Query na tabela recipient com uma operação &quot;get&quot;:
+* Consulta na tabela de recipients com uma operação &quot;get&quot;:
 
    ```
    var query = xtk.queryDef.create(  
@@ -73,7 +71,7 @@ for each (var w in res.workflow)
    logInfo(recipient.@lastName)
    ```
 
-* Query na tabela recipient com uma operação &quot;select&quot;:
+* Consulta na tabela de recipients com uma operação &quot;select&quot;:
 
    ```
    var query = xtk.queryDef.create(  
@@ -98,9 +96,8 @@ for each (var w in res.workflow)
    }
    ```
 
-* Gravando dados na tabela do recipient:
+* Gravando dados na tabela de recipients:
 
    ```
    xtk.session.Write(<recipient _operation="insert" lastName="Martinez" firstName="Peter" xtkschema="nms:recipient"/>);
    ```
-
