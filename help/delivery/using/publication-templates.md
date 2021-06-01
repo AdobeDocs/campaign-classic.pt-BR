@@ -1,5 +1,4 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: Templates de publicação
 description: Templates de publicação
@@ -7,9 +6,8 @@ audience: delivery
 content-type: reference
 topic-tags: content-management
 exl-id: 3b6e4974-4551-4da2-8eca-577c4f9cbd91
-translation-type: ht
-source-git-commit: 6854d06f8dc445b56ddfde7777f02916a60f2b63
-workflow-type: ht
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+workflow-type: tm+mt
 source-wordcount: '824'
 ht-degree: 100%
 
@@ -89,7 +87,7 @@ As seguintes opções de publicação estão disponíveis:
    >
    >Para obter mais informações sobre a geração de conteúdo, consulte [Criação de uma instância de conteúdo](../../delivery/using/using-a-content-template.md#creating-a-content-instance).
 
-### Delivery {#delivery}
+### Entrega {#delivery}
 
 Essa guia permite selecionar um cenário para iniciar um delivery diretamente no conteúdo. O conteúdo do email será preenchido automaticamente com base no formato de saída (HTML ou Texto).
 
