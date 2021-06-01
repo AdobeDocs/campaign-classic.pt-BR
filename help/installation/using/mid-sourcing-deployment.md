@@ -1,21 +1,19 @@
 ---
-solution: Campaign Classic
 product: campaign
-title: Implantação Mid-sourcing
-description: Implantação Mid-sourcing
+title: Implantação mid-sourcing
+description: Implantação mid-sourcing
 audience: installation
 content-type: reference
 topic-tags: deployment-types-
-translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+exl-id: 8a4d7ef1-de5b-4aee-a527-1b74d987ba61
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '351'
 ht-degree: 2%
 
 ---
 
-
-# Implantação Mid-sourcing{#mid-sourcing-deployment}
+# Implantação mid-sourcing{#mid-sourcing-deployment}
 
 Essa configuração é uma solução intermediária ideal entre uma configuração hospedada (ASP) e a internalização. Os componentes de execução voltados para o exterior são executados em um servidor &quot;mid-sourcing&quot; hospedado na Adobe Campaign.
 
@@ -27,28 +25,28 @@ A comunicação geral entre servidores e processos é realizada de acordo com o 
 
 ![](assets/s_ncs_install_midsourcing.png)
 
-* Os módulos de gerenciamento de execução e rejeição estão desativados na instância.
-* O aplicativo é configurado para executar a execução de mensagens em um servidor remoto &quot;de origem média&quot; que é direcionado por meio de chamadas SOAP (via HTTP ou HTTPS).
+* Os módulos de gerenciamento de execução e rejeição estão desabilitados na instância.
+* O aplicativo é configurado para executar a execução de mensagens em um servidor remoto &quot;mid-sourcing&quot;, que é orientado por chamadas SOAP (via HTTP ou HTTPS).
 
 ## Recursos {#features}
 
 ### Vantagens {#advantages}
 
 * Configuração simplificada do servidor: Não é necessário que o cliente configure módulos voltados para o exterior (mta e inMail).
-* Uso limitado da largura de banda: Como a execução é executada pelo servidor mid-sourcing, somente é necessária largura de banda suficiente para enviar dados de personalização ao servidor mid-sourcing.
-* A alta disponibilidade não é mais um problema interno: O problema é transferido para o servidor mid-sourcing (redirecionamento, mirrores page, servidores de execução etc.).
+* Uso limitado da largura de banda: Como a execução é realizada pelo servidor mid-sourcing, somente é necessária largura de banda suficiente para enviar dados de personalização ao servidor mid-sourcing.
+* A alta disponibilidade não é mais um problema interno: O problema é transferido para o servidor mid-sourcing (redirecionamento, mirror pages, servidores de execução etc.).
 * O banco de dados não sai da empresa: Somente os dados necessários para montar as mensagens são enviados para o servidor mid-sourcing (HTTPS pode ser usado para isso).
-* Esse tipo de implantação pode ser uma solução para arquiteturas de alto volume (muitos recipient no banco de dados), com uma throughput significativa do delivery.
+* Esse tipo de implantação pode ser uma solução para arquiteturas de alto volume (muitos recipients no banco de dados), com uma taxa de transferência de delivery significativa.
 
 ### Desvantagens {#disadvantages}
 
-* Um leve atraso na exibição das informações de execução de mensagens e da funcionalidade do relatórios devido ao tempo necessário para obter as informações do servidor mid-sourcing.
-* O Pesquisa e os formulários da Web permanecem na plataforma cliente.
+* Pequeno atraso na exibição de informações de execução de mensagens e para a funcionalidade de relatórios devido ao tempo necessário para obter informações de volta do servidor mid-sourcing.
+* Pesquisas e formulários web permanecem na plataforma do cliente.
 
 ### Equipamento recomendado {#recommended-equipment}
 
 * Servidor de aplicativos: CPU quad-core de 2 Ghz, 4 GB de RAM, disco rígido SATA de 80 GB RAID de software.
-* Servidor de banco de dados: CPUs bi-quad core de 3 GHz, RAM mínima de 4 GB, disco rígido SAS RAID 10 de 15000 RPM de hardware, número que depende do tamanho e do desempenho esperado do banco de dados.
+* Servidor de banco de dados: CPUs bi-quad core de 3 GHz, mínimo de 4 GB de RAM, hardware RAID 10 disco rígido SAS de 15000 RPM, número que depende do tamanho e do desempenho esperado do banco de dados.
 
 >[!NOTE]
 >
@@ -62,6 +60,6 @@ A comunicação geral entre servidores e processos é realizada de acordo com o 
 * Acesso a um servidor de banco de dados no servidor de aplicativos.
 * Firewall configurado para abrir portas HTTP (80) ou HTTPS (443) no servidor mid-sourcing.
 
-### Instalação e configuração (implantação de mid-sourcing) {#installing-and-configuring--mid-sourcing-deployment-}
+### Instalar e configurar (implantação de mid-sourcing) {#installing-and-configuring--mid-sourcing-deployment-}
 
-Consulte [Mid-sourcing server](../../installation/using/mid-sourcing-server.md).
+Consulte [Servidor Mid-sourcing](../../installation/using/mid-sourcing-server.md).
