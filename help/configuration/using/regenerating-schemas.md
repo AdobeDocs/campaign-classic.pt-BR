@@ -1,34 +1,32 @@
 ---
-solution: Campaign Classic
 product: campaign
-title: Regeneração de schemas
-description: Regeneração de schemas
+title: Regeneração de esquemas
+description: Regeneração de esquemas
 audience: configuration
 content-type: reference
 topic-tags: editing-schemas
-translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+exl-id: 6c48cfea-6d20-4462-a485-71e1575a08a7
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '133'
 ht-degree: 6%
 
 ---
 
+# Regeneração de esquemas{#regenerating-schemas}
 
-# Regeneração de schemas{#regenerating-schemas}
+Ao modificar um schema e salvar as modificações, o schema estendido é gerado automaticamente. No entanto, talvez seja necessário gerar novamente schemas manualmente para aplicar modificações. Para fazer isso:
 
-Quando você modifica um schema e salva as modificações, o schema estendido é gerado automaticamente. No entanto, talvez seja necessário regenerar schemas manualmente para aplicar modificações. Para fazer isso:
-
-1. Selecione os schemas que precisam ser regenerados.
+1. Selecione os esquemas que devem ser regenerados.
 1. Clique com o botão direito do mouse e escolha **[!UICONTROL Actions > Regenerate selected schemas...]** .
 1. Clique em **[!UICONTROL OK]** para confirmar e iniciar o processo.
 
-Você pode verificar a estrutura do schema gerado nas guias Anterior e Documentação. Para obter mais informações, consulte a seção [Princípios](../../configuration/using/data-schemas.md#principles).
+Em seguida, você pode verificar a estrutura do schema gerado nas guias Previw e Documentation . Para obter mais informações, consulte a seção [Principles](../../configuration/using/data-schemas.md#principles) .
 
 >[!NOTE]
 >
->Se for necessário forçar a regeneração de todos os schemas, por exemplo, para resolver certos problemas de dependência nos links inversos, você pode iniciar o seguinte comando do servidor de aplicativos Adobe Campaign:
+>Se for necessário forçar a regeneração de todos os esquemas, por exemplo, para resolver determinados problemas de dependência nos links inversos, é possível iniciar o seguinte comando no servidor de aplicativos do Adobe Campaign:
 >
->**nlserver config -post-upgrade -instance:`&lt;instance_name>&#39; -force**
+>**nlserver config -postupgrade -instance:`&lt;instance_name>&#39; -force**
 >
->Em seguida, reinicie o servidor de aplicativos Adobe Campaign e desconecte/reconecte-se ao console do cliente.
+>Em seguida, reinicie o servidor de aplicativos do Adobe Campaign e desconecte/reconecte ao console do cliente.
