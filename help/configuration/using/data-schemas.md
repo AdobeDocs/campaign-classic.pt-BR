@@ -1,29 +1,27 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: Schemas de dados
 description: Schemas de dados
 audience: configuration
 content-type: reference
 topic-tags: editing-schemas
-translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+exl-id: d4446035-3988-4d89-b7df-7b8528c2e371
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '388'
 ht-degree: 2%
 
 ---
 
-
 # Schemas de dados{#data-schemas}
 
 ## Princípios {#principles}
 
-Para editar, criar e configurar os schemas, clique no nó **[!UICONTROL Administration > Configuration > Data schemas]** do console do cliente Adobe Campaign.
+Para editar, criar e configurar os esquemas, clique no nó **[!UICONTROL Administration > Configuration > Data schemas]** do console do cliente Adobe Campaign.
 
 >[!NOTE]
 >
->Schemas de dados prontos para uso só podem ser excluídos por um administrador do console do Adobe Campaign Classic.
+>Os esquemas de dados prontos para uso só podem ser excluídos por um administrador do console do Adobe Campaign Classic.
 
 ![](assets/d_ncs_integration_schema_navtree.png)
 
@@ -33,7 +31,7 @@ O campo de edição mostra o conteúdo XML do schema de origem:
 
 >[!NOTE]
 >
->O controle de edição &quot;Nome&quot; permite que você insira a chave do schema composta pelo nome e pela namespace. Os atributos &quot;name&quot; e &quot;namespace&quot; do elemento raiz do schema são automaticamente atualizados na zona de edição XML do schema.
+>O controle de edição &quot;Name&quot; permite a inserção da chave do schema formada pelo nome e pelo namespace. Os atributos &quot;name&quot; e &quot;namespace&quot; do elemento raiz do schema são atualizados automaticamente na zona de edição XML do schema.
 
 A pré-visualização gera automaticamente o schema estendido:
 
@@ -43,32 +41,32 @@ A pré-visualização gera automaticamente o schema estendido:
 >
 >Quando o schema de origem é salvo, a geração do schema estendido é iniciada automaticamente.
 
-Se for necessário verificar a estrutura completa de um schema, use a guia pré-visualização. Se o schema tiver sido estendido, você poderá visualizar todas as suas extensões. Como complemento, a guia Documentação exibe todos os atributos e elementos do schema e suas propriedades (Campo SQL, tipo/comprimento, rótulo, descrição). A guia Documentação se aplica somente aos schemas gerados. Para obter mais informações, consulte a seção [Regenerating schemas](../../configuration/using/regenerating-schemas.md).
+Se precisar verificar a estrutura completa de um schema, use a guia preview . Se o schema tiver sido estendido, você poderá visualizar todas as suas extensões. Como complemento, a guia Documentation exibe todos os atributos e elementos do schema e suas propriedades (Campo SQL, tipo/comprimento, rótulo, descrição). A guia Documentação se aplica somente aos esquemas gerados. Para obter mais informações, consulte a seção [Regenerating schemas](../../configuration/using/regenerating-schemas.md) .
 
 ## Exemplo: criar uma tabela de contrato {#example--creating-a-contract-table}
 
-No exemplo a seguir, queremos criar uma nova tabela para **contratos** no modelo de banco de dados do banco de dados Adobe Campaign. Esta tabela permite que você armazene o nome e o sobrenome e os endereços de email de titulares e co-detentores, para cada contrato.
+No exemplo a seguir, queremos criar uma nova tabela para **Contracts** no modelo de banco de dados do banco de dados do Adobe Campaign. Essa tabela permite armazenar nomes e sobrenomes e endereços de email de titulares e cotitulares, para cada contrato.
 
 Para fazer isso, é necessário criar o schema da tabela e atualizar a estrutura do banco de dados para gerar a tabela correspondente. Aplique as seguintes etapas:
 
 1. Edite o nó **[!UICONTROL Administration > Configuration > Data schemas]** da árvore do Adobe Campaign e clique em **[!UICONTROL New]** .
-1. Escolha a opção **[!UICONTROL Create a new table in the data model]** e clique em **[!UICONTROL Next]**.
+1. Escolha a opção **[!UICONTROL Create a new table in the data model]** e clique em **[!UICONTROL Next]** .
 
    ![](assets/s_ncs_configuration_create_new_schema.png)
 
-1. Especifique um nome para a tabela e uma namespace.
+1. Especifique um nome para a tabela e um namespace.
 
    ![](assets/s_ncs_configuration_create_new_param.png)
 
    >[!NOTE]
    >
-   >Por padrão, os schemas criados pelos usuários são armazenados na namespace &#39;cus&#39;. Para obter mais informações, consulte [Identificação de um schema](../../configuration/using/about-schema-reference.md#identification-of-a-schema).
+   >Por padrão, os esquemas criados pelos usuários são armazenados no namespace &#39;cus&#39;. Para obter mais informações, consulte [Identification of a schema](../../configuration/using/about-schema-reference.md#identification-of-a-schema).
 
-1. Crie o conteúdo da tabela. Recomendamos usar o assistente de entrada para garantir que nenhuma configuração esteja ausente. Para fazer isso, clique no botão **[!UICONTROL Insert]** e escolha o tipo de configuração a ser adicionado.
+1. Crie o conteúdo da tabela. Recomendamos o uso do assistente de entrada para garantir que nenhuma configuração esteja ausente. Para fazer isso, clique no botão **[!UICONTROL Insert]** e escolha o tipo de configuração a ser adicionada.
 
    ![](assets/s_ncs_configuration_create_new_content.png)
 
-1. Defina as configurações para a tabela do contrato:
+1. Defina as configurações da tabela de contrato:
 
    ```
    <srcSchema desc="Active contracts" img="ncm:channels.png" label="Contracts" labelSingular="Contract" mappingType="sql" name="Contracts" namespace="cus" xtkschema="xtk:srcSchema">
@@ -86,7 +84,7 @@ Para fazer isso, é necessário criar o schema da tabela e atualizar a estrutura
    </srcSchema>
    ```
 
-   Adicione o tipo de contrato e insira um índice no número do contrato.
+   Adicione o tipo de contrato e coloque um índice no número do contrato.
 
    ```
    <srcSchema _cs="Contracts (cus)" desc="Active contracts" entitySchema="xtk:srcSchema" img="ncm:channels.png"
@@ -120,5 +118,4 @@ Para fazer isso, é necessário criar o schema da tabela e atualizar a estrutura
 
    ![](assets/s_ncs_configuration_structure.png)
 
-1. Atualize a estrutura do banco de dados para criar a tabela à qual o schema será vinculado. Para obter mais informações, consulte [Atualizar a estrutura do banco de dados](../../configuration/using/updating-the-database-structure.md).
-
+1. Atualize a estrutura do banco de dados para criar a tabela à qual o schema será vinculado. Para obter mais informações, consulte [Atualização da estrutura do banco de dados](../../configuration/using/updating-the-database-structure.md).
