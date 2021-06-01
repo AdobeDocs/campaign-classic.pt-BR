@@ -1,19 +1,17 @@
 ---
-solution: Campaign Classic
 product: campaign
-title: Schemas de filtragem
-description: Schemas de filtragem
+title: Esquemas de filtragem
+description: Esquemas de filtragem
 audience: configuration
 content-type: reference
 topic-tags: editing-schemas
-translation-type: tm+mt
-source-git-commit: 693e38477b318ee44e0373a04d8524ddf128fe36
+exl-id: 009bed25-cd35-437c-b789-5b58a6d2d7c6
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '411'
 ht-degree: 0%
 
 ---
-
 
 # Filtrar esquemas{#filtering-schemas}
 
@@ -63,7 +61,7 @@ Esses filtros são inseridos no nível principal **element** dos schemas e, como
 >
 >Se nenhum filtro for especificado, todos os operadores terão permissões de leitura e gravação no schema.
 
-## Proteger esquemas internos {#protecting-built-in-schemas}
+## Esquemas integrados do Protect {#protecting-built-in-schemas}
 
 Por padrão, os esquemas internos só podem ser acessados com permissões de GRAVAÇÃO para operadores com direitos de ADMINISTRATION:
 
@@ -100,7 +98,7 @@ Por padrão, os esquemas internos só podem ser acessados com permissões de GRA
 
 >[!IMPORTANT]
 >
->As permissões de LEITURA e GRAVAÇÃO para o schema **xtk:sessionInfo** só podem ser acessadas pela conta interna de uma instância do Adobe Campaign.
+>As permissões READ e WRITE para o schema **xtk:sessionInfo** só podem ser acessadas pela conta interna de uma instância do Adobe Campaign.
 
 ## Modificar filtros do sistema de esquemas internos {#modifying-system-filters-of-built-in-schemas}
 
@@ -108,9 +106,8 @@ Você ainda pode modificar os filtros do sistema dos esquemas predefinidos que s
 
 >[!NOTE]
 >
->No entanto, a Adobe recomenda que você não modifique os parâmetros padrão para garantir a segurança ideal.
+>No entanto, o Adobe recomenda que você não modifique os parâmetros padrão para garantir a segurança ideal.
 
 1. Crie uma extensão para o schema relacionado ou abra uma extensão existente.
 1. Adicione um elemento filho **`<sysfilter name="<filter name>" _operation="delete"/>`** no elemento principal para excluir a aplicação do filtro sob o mesmo no schema de origem.
 1. Se desejar, você pode adicionar um novo filtro, conforme detalhado em [Filtros do sistema](#system-filters).
-
