@@ -1,25 +1,23 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: Restrição da visualização de PII
 description: Restrição da visualização de PII
 audience: configuration
 content-type: reference
 topic-tags: editing-schemas
-translation-type: tm+mt
-source-git-commit: 693e38477b318ee44e0373a04d8524ddf128fe36
+exl-id: 0f32d62d-a10a-4feb-99fe-4679b98957d4
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '387'
-ht-degree: 2%
+ht-degree: 3%
 
 ---
-
 
 # Restringir visualização de IP{#restricting-pii-view}
 
 ## Visão geral {#overview}
 
-Alguns clientes precisam de usuários de marketing para acessar registros de dados, mas não desejam que eles vejam informações de identificação pessoal (PII), como nome, sobrenome ou endereço de email. O Adobe Campaign propõe uma maneira de proteger a privacidade e evitar que os dados sejam utilizados incorretamente por operadores de campanha regulares.
+Alguns clientes precisam de usuários de marketing para acessar registros de dados, mas não desejam que eles vejam informações de identificação pessoal (PII), como nome, sobrenome ou endereço de email. A Adobe Campaign propõe uma maneira de proteger a privacidade e evitar que os dados sejam utilizados incorretamente pelos operadores de campanha regulares.
 
 ## Implementação {#implementation}
 
@@ -92,4 +90,3 @@ Abaixo está uma amostra da extensão da tabela de log para implementar isso:
 >[!NOTE]
 >
 >Esta restrição aplica-se a utilizadores não técnicos: um usuário técnico, com permissões relacionadas, poderá recuperar dados. Portanto, esse método não é 100% seguro.
-
