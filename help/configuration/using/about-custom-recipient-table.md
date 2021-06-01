@@ -1,19 +1,17 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: Sobre tabela de recipient personalizada
 description: Sobre tabela de recipient personalizada
 audience: configuration
 content-type: reference
 topic-tags: use-a-custom-recipient-table
-translation-type: tm+mt
-source-git-commit: 5871674ee26766cf08439768df3fb07ea0f99e7b
+exl-id: d8cea496-b3f3-420a-bf6e-b7cbb321b30d
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '666'
 ht-degree: 2%
 
 ---
-
 
 # Usar tabela de recipient personalizada{#about-custom-recipient-table}
 
@@ -36,11 +34,11 @@ Essa funcionalidade permite que o Adobe Campaign processe dados de um banco de d
 
 Esta seção descreve os pontos principais que permitem mapear tabelas existentes no Adobe Campaign e a configuração a ser aplicada para executar deliveries com base em qualquer tabela. Por fim, ele descreve como fornecer aos usuários interfaces de consulta tão práticas quanto aquelas disponíveis na tabela de recipients padrão. Para entender o material apresentado nesta seção, é necessário um bom conhecimento dos princípios de projeto de tela e esquema.
 
-## Recomendações e limitações {#recommendations-and-limitations}
+## Recommendations e limitações {#recommendations-and-limitations}
 
 O uso de uma tabela externa de recipient tem as seguintes limitações:
 
-* O Adobe Campaign não oferece suporte a vários esquemas de recipients, conhecidos como schemas de direcionamento, vinculados aos mesmos esquemas de broadlog e/ou trackinglog. Caso contrário, isso pode levar a anomalias na reconciliação de dados posteriormente.
+* O Adobe Campaign não oferece suporte a vários esquemas de recipient, conhecidos como esquemas de direcionamento, vinculados aos mesmos esquemas de broadlog e/ou de trackinglog. Caso contrário, isso pode levar a anomalias na reconciliação de dados posteriormente.
 
    O gráfico abaixo detalha a estrutura relacional necessária para cada schema de recipient personalizado:
    ![](assets/custom_recipient_limitation.png)
@@ -77,4 +75,3 @@ Por exemplo:
 * O bloco de personalização **[!UICONTROL Unsubscription link]** padrão deve ser adaptado.
 * O target mapping dos templates de delivery padrão deve ser modificado.
 * Os formulários V4 não são compatíveis para uso com uma tabela de recipients externos: você deve usar as aplicações web.
-
