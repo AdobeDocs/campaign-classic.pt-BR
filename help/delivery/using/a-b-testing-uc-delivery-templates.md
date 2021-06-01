@@ -1,5 +1,4 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: Criação dos modelos de delivery
 description: Saiba como executar testes A/B por meio de um caso de uso dedicado.
@@ -7,9 +6,8 @@ audience: delivery
 content-type: reference
 topic-tags: a-b-testing
 exl-id: 77b3a906-b76e-49e1-b524-b6f1ae537259
-translation-type: ht
-source-git-commit: 6854d06f8dc445b56ddfde7777f02916a60f2b63
-workflow-type: ht
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+workflow-type: tm+mt
 source-wordcount: '92'
 ht-degree: 100%
 
