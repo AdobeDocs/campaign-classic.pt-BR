@@ -1,5 +1,4 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: O arquivo de configuração do servidor
 description: O arquivo de configuração do servidor
@@ -7,8 +6,7 @@ audience: installation
 content-type: reference
 topic-tags: appendices
 exl-id: 70cd6a4b-c839-4bd9-b9a7-5a12e59c0cbf
-translation-type: tm+mt
-source-git-commit: ae4f86f3703b9bfe7f08fd5c2580dd5da8c28cbd
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '7970'
 ht-degree: 7%
@@ -244,7 +242,7 @@ Estes são os diferentes parâmetros do nó **dataStore**. É aqui que as fontes
  </tbody> 
 </table>
 
-### proxyAjustar {#proxyadjust}
+### proxyAdjust {#proxyadjust}
 
 Aqui estão os diferentes parâmetros do nó **dataStore > proxyAdjust**. Os URLs que correspondem à expressão regular são regenerados com base no URL definido em urlBase.
 
@@ -822,7 +820,7 @@ Estes são os diferentes parâmetros do nó **monitoring**. Esta é a configura�
  </tbody> 
 </table>
 
-## ooconversão {#ooconv}
+## ooconte {#ooconv}
 
 Aqui estão os diferentes parâmetros do nó **oconsole**. Esta é a configuração do servidor de conversão de documentos.
 
@@ -1369,7 +1367,7 @@ No nó **inMail > msgDump**, configure os seguintes parâmetros. Esta é a confi
  </tbody> 
 </table>
 
-## interactiond {#interactiond}
+## interativo {#interactiond}
 
 Aqui estão os diferentes parâmetros do nó **interactiond**. Essa é a configuração do daemon de gravação para eventos de interação de entrada.
 
@@ -1687,7 +1685,7 @@ No nó **cache**, configure os seguintes parâmetros. Essa é a configuração l
  </tbody> 
 </table>
 
-### retransmissão {#relay}
+### relé {#relay}
 
 No nó **mta > relay**, configure os seguintes parâmetros. Essa é a configuração do servidor de email para o delivery de mensagens.
 
@@ -1775,7 +1773,7 @@ Para obter mais informações, consulte esta [seção](../../installation/using/
  </tbody> 
 </table>
 
-### filho {#child}
+### criança {#child}
 
 No nó **mta > child**, configure os seguintes parâmetros. Esta é a configuração de servidores filhos.
 
@@ -2166,7 +2164,7 @@ Estes são os diferentes parâmetros do nó **pipelined**. Esta é a configuraç
  </tbody> 
 </table>
 
-## reparar {#repair}
+## reparação {#repair}
 
 Aqui estão os diferentes parâmetros do nó **repair**. Esta é a configuração do módulo de reparo do banco de dados.
 
@@ -3265,7 +3263,7 @@ Esta é a configuração padrão:
 <responseHeader name="X-XSS-Protection" value="1; mode=block"/>
 ```
 
-### redirecionar {#redirection}
+### redirecionamento {#redirection}
 
 Aqui estão os diferentes parâmetros do nó **web > redirect**. Esta é a configuração do módulo de redirecionamento.
 
