@@ -1,19 +1,17 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: Privacidade
 description: Saiba mais sobre as práticas recomendadas relacionadas à privacidade.
 audience: installation
 content-type: reference
 topic-tags: prerequisites-and-recommendations-
-translation-type: tm+mt
-source-git-commit: b77a56a97e499f60c092fae45c7809f7bfd9f2ea
+exl-id: 0a3473bf-0528-486d-a799-8db86fece522
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '768'
 ht-degree: 30%
 
 ---
-
 
 # Privacidade {#privacy}
 
@@ -25,7 +23,7 @@ Consulte [esta página](../../platform/using/privacy-management.md) para obter i
 
 ## Personalização de URL {#url-personalization}
 
-Quando adicionar links personalizados ao seu conteúdo, evite sempre personalização na parte do hostname do URL para evitar possíveis falhas de segurança. Os exemplos a seguir nunca devem ser usados em todos os atributos de URL &lt;`a href="">` ou `<img src="">`:
+Ao adicionar links personalizados ao seu conteúdo, sempre evite qualquer personalização na parte do nome do host do URL para evitar possíveis brechas de segurança. Os exemplos a seguir nunca devem ser usados em todos os atributos de URL &lt;`a href="">` ou `<img src="">`:
 
 * `<%= url >`
 * `https://<%= url >`
@@ -57,7 +55,7 @@ Para melhorar a segurança, um novo mecanismo de assinatura para rastrear links 
 >
 >Quando um URL assinado mal formado é clicado, ele retornará o seguinte erro: &quot;O URL solicitado &#39;... &#39; não foi encontrado.&quot;
 
-Além disso, a partir da versão 20.2 e [!DNL Gold Standard] do Campaign, os clientes hospedados e híbridos poderão usar um aprimoramento para desativar URLs gerados em compilações anteriores. Essa opção está desabilitada por padrão. É possível entrar em contato com o [Atendimento ao cliente](https://helpx.adobe.com/br/enterprise/admin-guide.html) para ativar esse recurso.
+Além disso, a partir da versão 20.2 e [!DNL Gold Standard] do Campaign, os clientes hospedados e híbridos poderão usar um aprimoramento para desativar URLs gerados em compilações anteriores. Essa opção está desabilitada por padrão. É possível entrar em contato com o [Atendimento ao cliente](https://helpx.adobe.com/br/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html) para ativar esse recurso.
 
 Para ativar esse novo recurso, os clientes locais precisam seguir estas etapas em todos os servidores do Campaign:
 
