@@ -1,5 +1,4 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: Restrição de tempo
 description: Saiba mais sobre a atividade de workflow de restrição de tempo
@@ -7,9 +6,8 @@ audience: workflow
 content-type: reference
 topic-tags: flow-control-activities
 exl-id: 1dc5de05-4d36-4393-8113-d1f97bb7f732
-translation-type: ht
-source-git-commit: 6854d06f8dc445b56ddfde7777f02916a60f2b63
-workflow-type: ht
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+workflow-type: tm+mt
 source-wordcount: '80'
 ht-degree: 100%
 
