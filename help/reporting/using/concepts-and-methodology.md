@@ -1,5 +1,4 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: Conceitos e metodologia
 description: Conceitos e metodologia
@@ -7,9 +6,8 @@ audience: reporting
 content-type: reference
 topic-tags: designing-reports-with-cubes
 exl-id: 5f22fa2c-b648-4126-9a24-1798adfa8f34
-translation-type: ht
-source-git-commit: 6854d06f8dc445b56ddfde7777f02916a60f2b63
-workflow-type: ht
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+workflow-type: tm+mt
 source-wordcount: '1491'
 ht-degree: 100%
 
@@ -96,7 +94,7 @@ Também é possível gerar compartimentos automaticamente. Para fazer isso, cliq
 
 Nesse caso, o filtro selecionado no schema de fatos é ignorado.
 
-### Enumerações {#enumerations}
+### Listas discriminadas {#enumerations}
 
 Para melhorar a relevância e a legibilidade de um relatório, o Adobe Campaign permite criar enumerações específicas para reagrupar diferentes valores no mesmo compartimento. Essas enumerações, reservadas para compartimentalização, são referenciadas nos cubos e exibidas nos relatórios.
 
