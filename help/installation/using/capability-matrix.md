@@ -1,19 +1,17 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: Matriz de recursos no local, híbrida e hospedada do Campaign
 description: Saiba mais sobre as principais diferenças entre implantações locais e hospedadas
 audience: installation
 content-type: reference
 topic-tags: architecture-and-hosting-models
-translation-type: tm+mt
-source-git-commit: b77a56a97e499f60c092fae45c7809f7bfd9f2ea
+exl-id: a2c425a8-9bde-4259-9140-5ada5397ed5f
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '296'
-ht-degree: 36%
+ht-degree: 38%
 
 ---
-
 
 # Matriz de recursos por modelo{#capability-matrix-per-model}
 
@@ -56,5 +54,5 @@ O Adobe Campaign oferece a opção **Federated Data Access** (FDA) para processa
 * [Notas de versão](../../rn/using/latest-release.md)
 * [Atualizações de Campaign Classic](../../rn/using/rn-overview.md)
 * [Recursos descontinuados e removidos](../../rn/using/deprecated-features.md)
-* [[!DNL Gold Standard] versões](../../rn/using/gold-standard.md)
-* [[!DNL Gold Standard] programa](../../rn/using/gs-overview.md)
+* [Versões do [!DNL Gold Standard] ](../../rn/using/gold-standard.md)
+* [Programa do [!DNL Gold Standard]](../../rn/using/gs-overview.md)
