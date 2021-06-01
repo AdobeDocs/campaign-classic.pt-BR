@@ -1,25 +1,23 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: Elementos e atributos
 description: Elementos e atributos
 audience: configuration
 content-type: reference
 topic-tags: schema-reference
-translation-type: tm+mt
-source-git-commit: 922257b157f8d76d6e703b0510ff689d1aa4d067
+exl-id: 8207868c-25ff-4ca9-afdd-41b324c7ac0d
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '47'
 ht-degree: 21%
 
 ---
 
-
 # elemento de ajuda {#help--element}
 
 ## Modelo de conteúdo {#content-model-6}
 
-ajuda:==VAZIO
+ajuda:==EMPTY
 
 ## Atributos {#attributes-6}
 
@@ -35,7 +33,7 @@ nenhuma
 
 ## Descrição {#description-6}
 
-Esse elemento permite que você descreva um `<element>` ou `<attribute>`   element. Ele pode conter apenas texto e é armazenado em XML no banco de dados.
+Esse elemento permite descrever um `<element>` ou `<attribute>`   elemento. Ele só pode conter texto e é armazenado em XML no banco de dados.
 
 ## Descrição do atributo {#attribute-description-6}
 
