@@ -9,7 +9,7 @@ exl-id: 07c1f4a3-cf16-4a9b-b402-e13258799f91
 source-git-commit: 8d535439923d6753777b7edd7fb768f685ec5522
 workflow-type: tm+mt
 source-wordcount: '4396'
-ht-degree: 98%
+ht-degree: 99%
 
 ---
 
@@ -27,17 +27,17 @@ A seção **Mensagens transacionais** foi reorganizada e esclarecida com uma nov
 
 A documentação do relatório do Workflow Heatmap foi atualizada e aprimorada. [Leia mais](../../workflow/using/heatmap.md)
 
-Os requisitos do console do cliente do Campaign foram atualizados na Matriz de Compatibilidade. [Leia mais](../../rn/using/compatibility-matrix.md#ClientConsoleoperatingsystems)
+Os requisitos do console do cliente do Campaign foram atualizados na Matriz de compatibilidade. [Leia mais](../../rn/using/compatibility-matrix.md#ClientConsoleoperatingsystems)
 
-A instalação do Console do cliente do Campaign para etapas foi aprimorada e esclarecida. [Leia mais](../../installation/using/installing-the-client-console.md)
+A instalação do Console do cliente do Campaign em etapas foi aprimorada e esclarecida. [Leia mais](../../installation/using/installing-the-client-console.md)
 
-Uma nova nota técnica foi criada sobre o problema de assinatura de URLs acompanhados. [Leia mais](../../technotes/tracked-urls.md)
+Uma nova nota técnica foi criada sobre o problema de assinatura de URLs rastreados. [Leia mais](../../technotes/tracked-urls.md)
 
 ## Abril de 2021 {#april-2021}
 
 Uma nova seção foi adicionada sobre como trabalhar com Origens e Destinos da Adobe Experience Platform para compartilhar dados entre o Campaign Classic e a Plataforma de dados do cliente em tempo real (RTCDP). [Leia mais](../../integrations/using/get-started-sources-destinations.md)
 
-Uma nova nota técnica foi criada para saber como atualizar a qualificação de devolução após uma interrupção do ISP. [Leia mais](../../delivery/using/update-bounce-qualification.md)
+Uma nova nota técnica foi criada para saber como atualizar a qualificação de rejeição após uma interrupção do ISP. [Leia mais](../../delivery/using/update-bounce-qualification.md)
 
 ## Março de 2021 {#march-2021}
 
@@ -424,7 +424,7 @@ Uma nova seção foi adicionada sobre como solucionar problemas de um workflow q
 
 As novas opções &quot;NmsOperation_DeliveryPreparationWindow&quot; e &quot;WdbcKillSessionPolicy&quot; foram adicionadas à lista de opções do Campaign. [Leia mais](../../installation/using/configuring-campaign-options.md)
 
-Um novo documento que descreve as noções básicas do modelo de dados do Adobe Campaign Classic está disponível. [Leia mais](https://helpx.adobe.com/br/campaign/kb/acc-datamodel.html)
+Um novo documento que descreve as noções básicas do modelo de dados do Adobe Campaign Classic está disponível. [Leia mais](https://experienceleague.adobe.com/docs/campaign-classic/using/configuring-campaign-classic/data-model/about-data-model.html?lang=pt-BR)
 
 A nova opção **Maximum personalization run time** nas propriedades do delivery está documentada nesta [seção](../../delivery/using/personalization-fields.md#timing-out-personalization).
 
