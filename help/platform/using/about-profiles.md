@@ -9,7 +9,7 @@ exl-id: 54f1ad6c-54b0-4448-8c38-806dd75c1dae
 source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '899'
-ht-degree: 93%
+ht-degree: 100%
 
 ---
 
@@ -97,7 +97,7 @@ Os perfis excluídos durante a preparação do delivery (regras de tipologia, qu
 >
 >Os canais Facebook e Twitter não são considerados.
 
-No explorador do Campaign, navegue **[!UICONTROL Administration > Campaign Management > Customer metrics]** para ter uma visão geral do número de perfis ativos. A contagem real é executada pelo **[!UICONTROL Number of active billing profiles]** ([!UICONTROL billingActiveContactCount]) [workflow técnico](../../workflow/using/about-technical-workflows.md). Esse workflow é executado todos os dias e adiciona os novos dados ao relatório existente para o período atual na pasta **[!UICONTROL Customer metrics]**.
+No explorador do Campaign, navegue até **[!UICONTROL Administration > Campaign Management > Customer metrics]** para ter uma visão geral do número de perfis ativos. A contagem real é executada pelo fluxo de trabalho técnico **[!UICONTROL Number of active billing profiles]** ([!UICONTROL billingActiveContactCount]) [](../../workflow/using/about-technical-workflows.md). Esse fluxo de trabalho é executado todos os dias e adiciona os novos dados ao relatório existente para o período atual na pasta **[!UICONTROL Customer metrics]**.
 
 A contagem de perfis ativos está disponível somente para **Instâncias de marketing**. Não está disponível para Instâncias de execução, ou seja, instâncias de MID (mid-sourcing) e RT (Centro de mensagens/Mensagens em tempo real).
 
@@ -119,10 +119,10 @@ Vídeos extras sobre procedimentos do Campaign Classic estão disponíveis [aqui
 
 * [Gerenciamento da privacidade no Campaign](https://helpx.adobe.com/br/campaign/kb/acc-privacy.html)
 
-* [Definir a população de público-alvo](../../delivery/using/define-the-right-audience.md)
+* [Definir a população do target](../../delivery/using/define-the-right-audience.md)
 
-* [Criar query e dados de segmento em workflows](../../workflow/using/targeting-data.md)
+* [Criar queries e dados de segmento em workflows](../../workflow/using/targeting-data.md)
 
 * [Selecionar target mapping](../../delivery/using/selecting-a-target-mapping.md)
 
-* [Definir o público-alvo – práticas recomendadas](../../delivery/using/define-the-right-audience.md)
+* [Definir o público - práticas recomendadas](../../delivery/using/define-the-right-audience.md)
