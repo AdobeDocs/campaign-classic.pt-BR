@@ -9,7 +9,7 @@ exl-id: 7a05fdff-8f9d-4e8d-812e-0f1509db5499
 source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '413'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -61,8 +61,8 @@ Como usuário convidado do [!DNL Gold Standard], você se beneficiará automatic
 ## Suporte e outros links úteis{#support}
 
 * [Ajuda e suporte](../../support.md)
-* [Versões do Painel de controle do Campaign](https://experienceleague.adobe.com/docs/control-panel/using/release-notes.html)
+* [Versões do Painel de controle do Campaign](https://experienceleague.adobe.com/docs/control-panel/using/release-notes.html?lang=pt-BR)
 * [Atualizações mais recentes da documentação](../../rn/using/documentation-updates.md)
 * [Recursos descontinuados e removidos](../../rn/using/deprecated-features.md)
 
-Para ser informado sobre novos lançamentos de solução da Experience Cloud, inscreva-se na [atualização prioritária de produto da Adobe](https://www.adobe.com/subscription/priority-product-update.html).
+Para ser informado sobre novos lançamentos de solução da Experience Cloud, inscreva-se na [Atualização prioritária de produto da Adobe](https://www.adobe.com/br/subscription/priority-product-update.html).
