@@ -8,7 +8,7 @@ exl-id: e9756046-fc67-4afd-b7a9-c8d73614f02e
 source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '160'
-ht-degree: 90%
+ht-degree: 100%
 
 ---
 
@@ -34,4 +34,4 @@ O Adobe Campaign é compatível com o Adobe Experience Manager 6.1, 6.2, 6.3, 6.
 >
 >Os modelos do Adobe Campaign Classic não estão mais disponíveis com o Adobe Experience Manager 6.5.
 
-Para obter mais detalhes, consulte a [documentação do Adobe Experience Manager](https://experienceleague.adobe.com/docs/experience-manager-65/classic-ui/campaign/classic-personalization-ac-campaign.html)
+Para obter mais detalhes, consulte a [documentação do Adobe Experience Manager](https://experienceleague.adobe.com/docs/experience-manager-65/classic-ui/campaign/classic-personalization-ac-campaign.html?lang=pt-BR)
