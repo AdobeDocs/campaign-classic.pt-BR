@@ -22,7 +22,6 @@ Antes de iniciar o processo de atualização, determine e confirme qual versão 
 >* O Adobe recomenda fazer um backup do banco de dados em cada instância antes da atualização. Para saber mais, consulte [esta seção](../../production/using/backup.md).
 >* Para executar uma atualização, verifique se você tem a capacidade e as permissões de acessar instâncias e logs.
 >* Leia [esta seção](../../installation/using/general-architecture.md) e o capítulo [atualização de compilação](https://experienceleague.adobe.com/docs/campaign-classic/using/monitoring-campaign-classic/updating-adobe-campaign/build-upgrade.html?lang=pt-BR#monitoring-campaign-classic) antes de iniciar.
-
 >
 
 
@@ -49,6 +48,7 @@ Para substituir todos os arquivos pela nova versão, você precisa encerrar toda
       **iisreset /stop**
 
    * Serviço Adobe Campaign: **net stop nlserver6**
+
    >[!IMPORTANT]
    >
    >Você também precisa verificar se o servidor de redirecionamento (webmdl) está parado, para que o arquivo **nlsrvmod.dll** usado pelo IIS possa ser substituído pela nova versão.
@@ -171,10 +171,8 @@ Para fazer isso, execute o seguinte comando:
 >
 >* Seu script pode ser chamado de **httpd** em vez de **apache**.
 >* Você DEVE executar esse comando até obter a seguinte resposta:
-
-   >
-   >   
-   Essa operação é necessária para que o Apache aplique a nova biblioteca.
+>
+>   Essa operação é necessária para que o Apache aplique a nova biblioteca.
 
 
 Em seguida, reinicie o Apache:

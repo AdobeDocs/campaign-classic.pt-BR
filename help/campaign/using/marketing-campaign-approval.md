@@ -251,7 +251,6 @@ Para selecionar uma lista de operadores, clique no link **[!UICONTROL Edit...]**
 >* Se uma lista de revisores for definida, um trabalho será aprovado assim que um revisor aceitá-lo. O link de aprovação relevante não é mais oferecido no painel. Quando o envio de notificações estiver habilitado, se outro revisor clicar no link de aprovação na mensagem de notificação, será exibida uma notificação de que outro operador já aprovou a tarefa.
 >* Você pode definir um agendamento de aprovação para a campanha na seção inferior da janela de edição do revisor. Por padrão, os revisores têm três dias a partir da data de envio para aprovar um processo. É possível configurar um lembrete que é enviado automaticamente para os operadores relacionados antes do prazo de aprovação.
 >* Você pode adicionar lembretes desta seção.
-
 >
 
 

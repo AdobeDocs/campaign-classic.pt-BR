@@ -82,7 +82,6 @@ Cada vez que você usa o recurso **[!UICONTROL Inbox rendering]** em um delivery
 >
 >* Cada vez que o relatório de renderização da Caixa de Entrada é gerado, é deduzido um token por cliente da mensagem: um token para a renderização do Outlook 2000, um para a renderização do Outlook 2010, um para a renderização do Apple Mail 9 e assim por diante.
 >* Para o mesmo delivery, se você gerar a renderização da Caixa de Entrada novamente, o número de tokens disponíveis será reduzido novamente pelo número de renderizações geradas.
-
 >
 
 

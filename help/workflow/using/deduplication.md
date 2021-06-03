@@ -64,7 +64,6 @@ Para configurar uma desduplicação, insira o rótulo, o método e os critérios
    >[!NOTE]
    >
    >Se os dados externos estiverem sendo usados como entrada, por exemplo, de um arquivo externo, selecione a opção **[!UICONTROL Temporary schema]**.
-
    >
    >Na próxima etapa, a opção **[!UICONTROL Other]** permite selecionar o critério ou os critérios a serem usados:
 
