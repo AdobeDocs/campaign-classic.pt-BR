@@ -9,7 +9,7 @@ exl-id: 6177f57b-534c-4d86-8f73-d96980c48a77
 source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '847'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -31,8 +31,8 @@ Para que isso funcione, precisamos executar as seguintes etapas no Adobe Campaig
 
 1. [Como inserir a oferta dinâmica em um email](../../integrations/using/inserting-a-dynamic-image.md#inserting-dynamic-offer)
 1. [Criação de ofertas de redirecionamento](../../integrations/using/inserting-a-dynamic-image.md#create-redirect-offers)
-1. [Criação de públicos-alvo](../../integrations/using/inserting-a-dynamic-image.md#audiences-target)
-1. [Como criar uma atividade de segmentação por experiência  ](../../integrations/using/inserting-a-dynamic-image.md#creating-targeting-activity)
+1. [Criação de públicos](../../integrations/using/inserting-a-dynamic-image.md#audiences-target)
+1. [Criação de uma atividade de direcionamento de experiência](../../integrations/using/inserting-a-dynamic-image.md#creating-targeting-activity)
 1. [Pré-visualização e envio de email](../../integrations/using/inserting-a-dynamic-image.md#preview-send-email)
 
 ## Como inserir a oferta dinâmica em um email {#inserting-dynamic-offer}
@@ -58,7 +58,7 @@ No Adobe Campaign, há duas maneiras de inserir uma imagem dinâmica do Target e
 * O **[!UICONTROL Landing Page]**: se desejar que a imagem padrão seja redirecionada para uma landing page padrão. Esse URL é somente para os casos que a imagem padrão é exibida no email final e é opcional.
 * O **[!UICONTROL Additional decision parameters]**: especifique o mapeamento entre os campos definidos nos segmentos do Adobe Target e os campos do Adobe Campaign. Os campos do Adobe Campaign usados devem ter sido especificados no rawbox. No nosso exemplo, adicionamos o campo País.
 
-Se você usar permissões do Enterprise em suas configurações no Adobe Target, adicione a propriedade correspondente nesse campo. Saiba mais sobre as permissões do Target Enterprise [nesta página](https://experienceleague.adobe.com/docs/target/using/administer/manage-users/enterprise/properties-overview.html).
+Se você usar permissões do Enterprise em suas configurações no Adobe Target, adicione a propriedade correspondente nesse campo. Saiba mais sobre as permissões do Target Enterprise [nesta página](https://experienceleague.adobe.com/docs/target/using/administer/manage-users/enterprise/properties-overview.html?lang=pt-BR).
 
 ![](assets/target_13.png)
 
@@ -78,7 +78,7 @@ Em nosso caso, precisamos de duas ofertas de redirecionamento, a terceira (a pad
 
    ![](assets/target_6.png)
 
-1. Siga o mesmo procedimento para a oferta de redirecionamento restante. Para obter mais informações, consulte esta [página](https://docs.adobe.com/help/br/target/using/experiences/offers/offer-redirect.html).
+1. Siga o mesmo procedimento para a oferta de redirecionamento restante. Para obter mais informações, consulte esta [página](https://docs.adobe.com/help/pt-BR/target/using/experiences/offers/offer-redirect.html).
 
 ## Criação de públicos-alvo {#audiences-target}
 
