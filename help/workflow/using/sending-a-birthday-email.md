@@ -9,11 +9,11 @@ exl-id: 38006cca-e945-4b9d-8e2d-ed537b8541d9
 source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '879'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
-# Envio de um e-mail de aniversário{#sending-a-birthday-email}
+# Envio de um email de aniversário{#sending-a-birthday-email}
 
 ## Introdução {#introduction}
 
@@ -25,7 +25,7 @@ Para configurar esse caso de uso, criamos o seguinte workflow para construção 
 
 Esse workflow (execução diária) seleciona todos os recipients que fazem aniversário na data atual.
 
-![](assets/do-not-localize/how-to-video.png) Esse caso de uso também pode ser encontrado no formato de vídeo. Para obter mais informações, consulte o vídeo [Criação de um workflow](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/automating-with-workflows/creating-a-workflow.html).
+![](assets/do-not-localize/how-to-video.png) Esse caso de uso também pode ser encontrado no formato de vídeo. Para obter mais informações, consulte o vídeo [Criação de um workflow](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/automating-with-workflows/creating-a-workflow.html?lang=pt-BR).
 
 Para fazer isso, crie uma campanha e clique na guia **[!UICONTROL Targeting and workflows]**. Para obter mais informações, consulte a seção [Building the main target in a workflow](../../campaign/using/marketing-campaign-deliveries.md#building-the-main-target-in-a-workflow).
 
