@@ -9,7 +9,7 @@ exl-id: 4596638c-d75a-4e07-a2d8-5befcaad3430
 source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '541'
-ht-degree: 93%
+ht-degree: 100%
 
 ---
 
@@ -19,11 +19,11 @@ O Adobe Campaign permite exportar arquivos compactados ou criptografados. Ao def
 
 Para fazer isso:
 
-1. Instale um par de chaves GPG para sua instância usando o [Painel de controle do Campaign](https://experienceleague.adobe.com/docs/control-panel/using/instances-settings/gpg-keys-management.html?lang=en#encrypting-data).
+1. Instale um par de chaves GPG para sua instância usando o [Painel de controle do Campaign](https://experienceleague.adobe.com/docs/control-panel/using/instances-settings/gpg-keys-management.html?lang=pt-BR#encrypting-data).
 
    >[!NOTE]
    >
-   >O Painel de controle do Campaign é restrito a usuários administradores e está disponível somente para determinadas versões do Campaign. [Saiba mais](https://experienceleague.adobe.com/docs/control-panel/using/discover-control-panel/key-features.html?lang=pt-BR)
+   >O Painel de controle do Campaign é restrito a usuários Administradores e está disponível somente para determinadas versões do Campaign. [Saiba mais](https://experienceleague.adobe.com/docs/control-panel/using/discover-control-panel/key-features.html?lang=pt-BR)
 
 1. Caso sua instalação do Adobe Campaign seja hospedada pela Adobe, entre em contato com o [Atendimento ao cliente da Adobe](https://helpx.adobe.com/br/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html) para ter os utilitários necessários instalados no servidor.
 1. Caso a instalação do Adobe Campaign seja no local, instale o utilitário que deseja usar (por exemplo: GPG, GZIP) e as chaves necessárias (chave de criptografia) no servidor de aplicativos.
@@ -84,7 +84,7 @@ As etapas para executar esse caso de uso são as seguintes:
 
 1. Agora você pode executar o workflow. Após a execução, o direcionamento de dados pelo query será exportado para o servidor SFTP em um arquivo .gpg criptografado.
 
-## Tutoriais em vídeo {#video}
+## Tutorial em vídeo {#video}
 
 Este vídeo mostra como usar uma chave GPG para criptografar dados e também está disponível em
 
