@@ -384,4 +384,4 @@ Os seguintes navegadores são compatíveis com o Campaign for Web Access.
 * [Notas de versão do Campaign Classic](../../rn/using/latest-release.md)
 * [Guia de instalação](../../installation/using/general-architecture.md)
 * [Recursos e sistemas obsoletos](../../rn/using/deprecated-features.md)
-* [Criar procedimento de atualização](https://experienceleague.adobe.com/docs/campaign-classic/using/monitoring-campaign-classic/updating-adobe-campaign/build-upgrade.html?lang=pt-BR#monitoring-campaign-classic)
+* [Criar procedimento de atualização](https://helpx.adobe.com/br/campaign/kb/acc-build-upgrade.html)
