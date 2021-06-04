@@ -6,9 +6,9 @@ audience: installation
 content-type: reference
 topic-tags: appendices
 exl-id: a979cd99-afa7-4ce6-ba0f-9495089cba08
-source-git-commit: b99de2a47bac08578d6e660595eb14c0858bf9fd
+source-git-commit: c095d7ddde4b4ac23467ebd0fa8ee2fb613aacdc
 workflow-type: tm+mt
-source-wordcount: '3961'
+source-wordcount: '3941'
 ht-degree: 3%
 
 ---
@@ -51,10 +51,6 @@ O nó **[!UICONTROL Administration / Platform / Options]** permite configurar as
    <td> <span class="uicontrol">DmRendering_SeedTargets</span> <br /> </td> 
    <td> Lista de esquemas para os quais você deseja usar endereços de teste para Renderização da Caixa de Entrada. (os nomes dos elementos são separados por vírgulas) Por exemplo: custom_nms_recipient.<br /> </td> 
   </tr> 
-  <tr> 
-   <td> <span class="uicontrol">EMTA_BCC_ADDRESS</span> </td> 
-   <td> Endereço de email CCO para o qual o MTA aprimorado enviará uma cópia bruta dos emails enviados. <br /> </td> 
-  </tr>
   <tr> 
    <td> <span class="uicontrol">NMS_AtivateOwnerConfirmation</span> <br /> </td> 
    <td><p> Permite que o operador encarregado do delivery confirme o delivery, se um operador ou grupo de operadores específico for designado para iniciar um delivery nas propriedades do delivery.</p><p> Para fazer isso, ative a opção inserindo "1" como o valor. Para desativar essa opção, digite "0".</p><p> O processo de confirmação de delivery funcionará como padrão: somente o operador ou grupo de operadores designado ao delivery nas propriedades de delivery (ou um administrador) poderá confirmar e realizar o delivery. Consulte <a href="../../campaign/using/marketing-campaign-deliveries.md#starting-an-online-delivery">esta seção</a>.</p> </td> 
