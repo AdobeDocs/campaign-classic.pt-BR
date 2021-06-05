@@ -6,9 +6,9 @@ audience: installation
 content-type: reference
 topic-tags: architecture-and-hosting-models
 exl-id: 04e6dc17-427b-4745-84cc-bf45c03dbf81
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 4a41aea9edfe5e6ca0454049cbb2892449eec153
 workflow-type: tm+mt
-source-wordcount: '1336'
+source-wordcount: '1340'
 ht-degree: 0%
 
 ---
@@ -69,7 +69,7 @@ Também lida com workflows técnicos executados periodicamente, incluindo:
 
 * Rastreamento: Recuperação e consolidação de logs de rastreamento. Ele permite recuperar os logs do servidor de redirecionamento e criar os indicadores agregados usados pelo módulo de relatórios.
 * Limpeza: Limpeza do banco de dados. Usado para limpar registros antigos e evitar o crescimento exponencial do banco de dados.
-* Faturamento: Envio automático de um relatório de atividade para a plataforma (tamanho do banco de dados, número de ações de marketing etc.).
+* Faturamento: Envio automático de um relatório de atividade para a plataforma (tamanho do banco de dados, número de ações de marketing, número de perfis ativos etc.).
 
 **Servidor de entrega**  (nlserver mta)
 
