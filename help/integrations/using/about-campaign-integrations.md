@@ -6,10 +6,10 @@ audience: integrations
 content-type: reference
 topic-tags: campaign-integrations
 exl-id: ceb584da-bc97-4b71-9499-59df5e6d10c3
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 4a41aea9edfe5e6ca0454049cbb2892449eec153
 workflow-type: tm+mt
-source-wordcount: '764'
-ht-degree: 100%
+source-wordcount: '757'
+ht-degree: 94%
 
 ---
 
@@ -89,8 +89,8 @@ A tabela a seguir fornece acesso à documentação disponível da integração d
    <td> A integração entre o <strong>serviço principal Triggers</strong> e o Adobe Campaign permite enviar emails personalizados para seus clientes como uma reação a comportamentos específicos que são rastreados em seu site pelo Adobe Analytics.<br /> <p><a href="https://helpx.adobe.com/br/campaign/kb/triggers-and-campaign.html">Saiba mais</a> sobre a integração Adobe Campaign – Experience Cloud Triggers.</p><br /> </td> 
   </tr> 
   <tr> 
-   <td> <strong>Adobe Analytics – Data Connectors</strong><br /> </td> 
-   <td> <strong>Data connectors</strong> (anteriormente conhecido como Adobe Genesis) permite que o Adobe Campaign e o Adobe Analytics se relacionam por meio de segmentos com o comportamento de usuário após uma campanha de email. Por outro lado, ele envia indicadores e atributos de campanhas de email entregues pelo Adobe Campaign para o Adobe Analytics – Data Connector.<br /> <p><a href="../../platform/using/adobe-analytics-data-connector.md">Saiba mais</a> sobre a integração Campaign – Data Connectors.</p><br /> </td> 
+   <td> <strong>Conector Adobe Analytics</strong><br /> </td> 
+   <td> <strong>O Adobe Analytics </strong> Connector permite que o Adobe Campaign e o Adobe Analytics interajam por meio de segmentos relacionados ao comportamento do usuário após uma campanha de email. Por outro lado, ele envia indicadores e atributos de campanhas de email entregues pelo Adobe Campaign para o Adobe Analytics.<br /> <p><a href="../../platform/using/adobe-analytics-connector.md">Saiba </a> mais sobre a integração Campaign - Analytics Connectors.</p><br /> </td> 
   </tr> 
  </tbody> 
 </table>
