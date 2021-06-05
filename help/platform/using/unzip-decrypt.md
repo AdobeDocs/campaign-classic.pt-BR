@@ -6,10 +6,10 @@ audience: platform
 content-type: reference
 topic-tags: importing-and-exporting-data
 exl-id: 1a79da3b-2abc-4bfc-a0ee-8471c478638d
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 6f5e91a719553fbeb97811d30ce6318f857bec80
 workflow-type: tm+mt
-source-wordcount: '726'
-ht-degree: 100%
+source-wordcount: '722'
+ht-degree: 97%
 
 ---
 
@@ -19,7 +19,7 @@ O Adobe Campaign permite importar arquivos compactados ou criptografados. Antes 
 
 Para fazer isso:
 
-1. Use o [Painel de controle do Campaign](https://experienceleague.adobe.com/docs/control-panel/using/instances-settings/gpg-keys-management.html?lang=pt-BR#decrypting-data) para gerar um par de chave pública/privada.
+1. Use o [Painel de controle do Campaign](https://experienceleague.adobe.com/docs/control-panel/using/instances-settings/gpg-keys-management.html#decrypting-data) para gerar um par de chave pública/privada.
 
    >[!NOTE]
    >
@@ -54,7 +54,7 @@ Nesse caso de uso, criaremos um fluxo de trabalho para importar dados que foram 
 
 As etapas para executar esse caso de uso são as seguintes:
 
-1. Use o Painel de controle do Campaign para gerar um par de chaves (público/privado). As etapas detalhadas estão disponíveis na [documentação do Painel de controle do Campaign](https://docs.adobe.com/content/help/en/control-panel/using/instances-settings/gpg-keys-management.html#decrypting-data).
+1. Use o Painel de controle do Campaign para gerar um par de chaves (público/privado). As etapas detalhadas estão disponíveis na [documentação do Painel de controle do Campaign](https://experienceleague.adobe.com/docs/control-panel/using/instances-settings/gpg-keys-management.html#decrypting-data).
 
    * A chave pública será compartilhada com o sistema externo, que a usará para criptografar os dados que serão enviados para o Campaign.
    * A chave privada será usada pelo Campaign Classic para descriptografar os dados criptografados recebidos.
@@ -96,7 +96,7 @@ As etapas para executar esse caso de uso são as seguintes:
 
    ![](assets/gpg_run.png)
 
-## Tutoriais em vídeo {#video}
+## Tutorial em vídeo {#video}
 
 Este vídeo mostra como usar uma chave GPG para descriptografar dados.
 
