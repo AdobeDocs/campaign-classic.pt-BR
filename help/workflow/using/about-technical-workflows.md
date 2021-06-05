@@ -6,10 +6,10 @@ audience: workflow
 content-type: reference
 topic-tags: technical-workflows
 exl-id: 9aed2665-cd4b-419c-b9f2-ea04fc1d8f01
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 4a41aea9edfe5e6ca0454049cbb2892449eec153
 workflow-type: tm+mt
-source-wordcount: '1818'
-ht-degree: 100%
+source-wordcount: '1700'
+ht-degree: 98%
 
 ---
 
@@ -60,7 +60,6 @@ Para obter mais informações sobre como monitorar workflows técnicos, consulte
 | **Mid-sourcing (contadores de delivery)** (defaultMidSourcingDlv) | Transferência para mid-sourcing | Esse fluxo de trabalho coleta informações de contagem para deliveries no servidor mid-sourcing. Informações de contagem incluem indicadores de deliveries gerais, como número de deliveries enviados, etc. As informações de rastreamento, como aberturas, não são incluídas. É acionado a cada dez minutos por padrão. |
 | **Mid-sourcing (logs de delivery)** (defaultMidSourcingLog) | Transferência para mid-sourcing | Esse fluxo de trabalho coleta logs do delivery no servidor mid-sourcing. É acionado a cada hora por padrão. |
 | **Gerenciamento de recusa de NMAC** (mobileAppOptOutMgt) | Canal de aplicativo móvel | Esse workflow atualiza a notificação de unsubscriptions em dispositivos móveis. É acionado a cada 6 horas entre 1:00 AM e meia-noite. Para obter mais detalhes, consulte [esta seção](../../delivery/using/understanding-quarantine-management.md#push-notification-quarantines). |
-| **Número de perfis de faturamento ativos** (billingActiveContactCount) | Delivery | Esse fluxo de trabalho conta o número de perfis ativos. É acionado todas as noites à 1h por padrão. &quot;Perfil&quot; significa um registro de informações (por exemplo: um registro na tabela nmsRecipient ou uma tabela externa contendo um ID de cookie, ID de cliente, identificador de dispositivo móvel ou outras informações relevantes para um canal específico) representando um cliente final, prospecto ou cliente potencial. O faturamento só afeta Perfis que estão &quot;ativos&quot;. Um Perfil é considerado &quot;ativo&quot; quando ele for direcionado ou receber comunicação nos últimos 12 meses por meio de qualquer canal. Os canais Facebook e Twitter não são considerados. É possível ter uma visão geral do Número de perfis ativos no menu Administração > gestão de campanha > Métricas do cliente. |
 | **Notificação de oferta** (offerMgt) | Delivery | Esse fluxo de trabalho implanta ofertas aprovadas no ambiente online, bem como todas as categorias contidas no catálogo de oferta. |
 | **Limpeza de fluxos de trabalho pausados** (cleanupPausedWorkflows) | Delivery | Esse workflow analisa workflows pausados que têm a severidade definida como normal e emite avisos e notificações quando ficam pausados por muito tempo. Após um mês, os workflows técnicos pausados são interrompidos definitivamente. Por padrão, é acionado toda segunda-feira às 5h. Para obter mais informações, consulte[Tratamento de fluxos de trabalho pausados](../../workflow/using/monitoring-workflow-execution.md#handling-of-paused-workflows). |
 | **Limpeza de solicitação de privacidade** (cleanupPrivacyRequests) | Regulamento de Proteção de Dados de Privacidade | Esse fluxo de trabalho apaga os arquivos de solicitação de acesso criados há mais de 90 dias. |
@@ -69,7 +68,7 @@ Para obter mais informações sobre como monitorar workflows técnicos, consulte
 | **Sincronização de apresentação** (propositionSynch) | Controle do mecanismo de oferta com instância de execução | Esse fluxo de trabalho sincroniza as apresentações entre a instância de marketing e a instância de execução usada para interações. |
 | **Recuperação de eventos da Web** (webAnalyticsGetWebEvents) | Conectores de análise da Web | A cada hora, esse fluxo de trabalho baixa segmentos do comportamento do usuário na Internet em um determinado site, os coloca no banco de dados do Adobe Campaign e inicia o fluxo de trabalho de remarketing. |
 | **Agregados de relatórios** (reportingAggregates) | Delivery | Esse fluxo de trabalho atualiza agregados usados em relatórios. É acionado todos os dias às 2h por padrão. |
-| **Envio de indicadores e atributos de campanha** (webAnalyticsSendMetrics) | Conectores de análise da Web | Esse fluxo de trabalho permite enviar indicadores de campanha de email do Adobe Campaign para o Adobe Experience Cloud Suite por meio do conector do Adobe® Genesis. Os indicadores relacionados são: Enviado (iSent), Contagem total de aberturas (iTotalRecipientOpen), Número total de destinatários que clicaram (iTotalRecipientClick), Erros (iError), Recusa (opt-out) (iOptOut). |
+| **Envio de indicadores e atributos de campanha** (webAnalyticsSendMetrics) | Conectores de análise da Web | Esse workflow permite enviar indicadores de campanha de email do Adobe Campaign para o Adobe Experience Cloud Suite por meio do conector do Adobe® Analytics. Os indicadores relacionados são: Enviado (iSent), Contagem total de aberturas (iTotalRecipientOpen), Número total de destinatários que clicaram (iTotalRecipientClick), Erros (iError), Recusa (opt-out) (iOptOut). |
 | **Estoque: pedidos e alertas** (stockMgt) | Campanhas de marketing (Campaign) | Esse fluxo de trabalho inicia o cálculo de estoque nas linhas de pedido e gerencia os limites de aviso. |
 | **Sincronização de fãs do Facebook** (syncFacebookFans) | Redes sociais (Marketing social) | Esse fluxo de trabalho importa os fãs do Facebook para o Adobe Campaign todos os dias às 7h. |
 | **Sincronização de páginas do Facebook** (syncFacebook) | Redes sociais (Marketing social) | Esse fluxo de trabalho sincroniza páginas do Facebook com o Adobe Campaign todos os dias às 7h. |
