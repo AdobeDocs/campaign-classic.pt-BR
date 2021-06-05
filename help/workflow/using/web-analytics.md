@@ -5,17 +5,17 @@ description: Saiba mais sobre o pacote do Web Analytics
 audience: workflow
 content-type: reference
 topic-tags: technical-workflows
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 4a41aea9edfe5e6ca0454049cbb2892449eec153
 workflow-type: tm+mt
 source-wordcount: '182'
-ht-degree: 100%
+ht-degree: 88%
 
 ---
 
 
 # Web Analytics{#web-analytics}
 
-Os workflows detalhados abaixo são instalados com o módulo dos **conectores Web Analytics** por padrão. Para obter mais informações sobre esse módulo, consulte esta[seção](../../platform/using/adobe-analytics-data-connector.md).
+Os workflows detalhados abaixo são instalados com o módulo dos **conectores Web Analytics** por padrão. Para obter mais informações sobre esse módulo, consulte esta[seção](../../platform/using/adobe-analytics-connector.md).
 
 <table> 
  <tbody> 
@@ -27,12 +27,12 @@ Os workflows detalhados abaixo são instalados com o módulo dos **conectores We
   <tr> 
    <td> <span class="uicontrol">Envio de indicadores e atributos de campanha</span> <br /> </td> 
    <td> <span class="uicontrol">webAnalyticsSendMetrics</span> <br /> </td> 
-   <td> Esse workflow permite enviar indicadores de campanha de email do Adobe Campaign para o Adobe Experience Cloud Suite por meio do conector do Adobe® Genesis. Os indicadores relacionados são: <strong>Sent</strong> (iSent), <strong>Total count of opens</strong> (iTotalRecipientOpen), <strong>Total number of recipients who clicked</strong> (iTotalRecipientClick), <strong>Errors</strong> (iError), <strong>Opt-Out</strong> (opt-out) (iOptOut).<br /> </td> 
+   <td> Esse workflow permite enviar indicadores de campanha de email do Adobe Campaign para o Adobe Experience Cloud Suite por meio do conector do Adobe® Analytics. Os indicadores relacionados são: <strong>Sent</strong> (iSent), <strong>Total count of opens</strong> (iTotalRecipientOpen), <strong>Total number of recipients who clicked</strong> (iTotalRecipientClick), <strong>Errors</strong> (iError), <strong>Opt-Out</strong> (opt-out) (iOptOut).<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">Identificação de contatos convertidos</span> <br /> </td> 
    <td> <span class="uicontrol">webAnalyticsFindConverted</span> <br /> </td> 
-   <td> Este workflow indexa os visitantes do site que concluíram sua compra após uma campanha de re-marketing. Os dados coletados por esse fluxo de trabalho podem ser acessados no <span class="uicontrol">Re-marketing efficiency report</span> (consulte esta <a href="../../platform/using/adobe-analytics-data-connector.md#creating-a-re-marketing-campaign">página</a>). <br /> </td> 
+   <td> Este workflow indexa os visitantes do site que concluíram sua compra após uma campanha de re-marketing. Os dados coletados por esse fluxo de trabalho podem ser acessados no <span class="uicontrol">Re-marketing efficiency report</span> (consulte esta <a href="../../platform/using/adobe-analytics-connector.md#creating-a-re-marketing-campaign">página</a>). <br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">Limpeza de eventos</span> <br /> </td> 
