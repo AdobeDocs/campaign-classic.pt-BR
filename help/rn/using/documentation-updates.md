@@ -6,10 +6,10 @@ feature: Visão geral
 role: Business Practitioner
 level: Beginner
 exl-id: 07c1f4a3-cf16-4a9b-b402-e13258799f91
-source-git-commit: 4a41aea9edfe5e6ca0454049cbb2892449eec153
+source-git-commit: fc40dae282c045dd73547e34ea307297f64c66fa
 workflow-type: tm+mt
-source-wordcount: '4421'
-ht-degree: 98%
+source-wordcount: '4470'
+ht-degree: 97%
 
 ---
 
@@ -23,6 +23,18 @@ Consulte as [Notas de versão do Adobe Campaign Classic](../../rn/using/latest-r
 
 A seção **Mensagens transacionais** foi reorganizada e esclarecida com uma nova seção Introdução , incluindo um [schema aprimorado](../../message-center/using/about-transactional-messaging.md#transactional-messaging-operating-principle) para melhor compreensão do processo. [Leia mais](../../message-center/using/about-transactional-messaging.md)
 
+**Atualizações da documentação que vêm com a versão 21.1.3**
+
+Integração com o Adobe Journey Orchestration - [Saiba mais](https://experienceleague.adobe.com/docs/journeys/using/action-journeys/acc-action.html). Um caso de uso passo a passo é apresentado em [this page](https://experienceleague.adobe.com/docs/journeys/using/use-cases-journeys/campaign-classic-use-case.html)
+
+Aprimoramentos de canal LINE - [Saiba mais](../../delivery/using/line-channel.md)
+
+Novo conector FDA Vertica - [Saiba mais](../../installation/using/configure-fda-vertica.md)
+
+Novo conector FDA do Google Big Query - [Saiba mais](../../installation/using/configure-fda-google-big-query.md)
+
+A descrição do workflow técnico &quot;Faturamento (faturamento)&quot; agora inclui as tarefas originalmente executadas pelo &quot;Número de perfis de faturamento ativos (billingActiveContactCount)&quot;. [Leia mais](../../workflow/using/about-technical-workflows.md)
+
 ## Maio de 2021 {#may-2021}
 
 A documentação do relatório do Workflow Heatmap foi atualizada e aprimorada. [Leia mais](../../workflow/using/heatmap.md)
@@ -32,10 +44,6 @@ Os requisitos do console do cliente do Campaign foram atualizados na Matriz de c
 A instalação do Console do cliente do Campaign em etapas foi aprimorada e esclarecida. [Leia mais](../../installation/using/installing-the-client-console.md)
 
 Uma nova nota técnica foi criada sobre o problema de assinatura de URLs rastreados. [Leia mais](../../technotes/tracked-urls.md)
-
-**Atualizações da documentação que vêm com a versão 21.1.3**
-
-A descrição do workflow técnico &quot;Faturamento (faturamento)&quot; agora inclui as tarefas originalmente executadas pelo &quot;Número de perfis de faturamento ativos (billingActiveContactCount)&quot;. [Leia mais](../../workflow/using/about-technical-workflows.md)
 
 ## Abril de 2021 {#april-2021}
 
