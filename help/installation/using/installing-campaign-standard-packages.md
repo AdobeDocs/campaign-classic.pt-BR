@@ -6,7 +6,7 @@ audience: installation
 content-type: reference
 topic-tags: initial-configuration
 exl-id: 2bc077c4-ed65-4157-bfc9-df5d0442f476
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 4a41aea9edfe5e6ca0454049cbb2892449eec153
 workflow-type: tm+mt
 source-wordcount: '1173'
 ht-degree: 16%
@@ -189,7 +189,7 @@ A tabela a seguir lista todos os pacotes incorporados do Campaign.
   </tr> 
   <tr> 
    <td> Conectores de análise da Web<br /> </td> 
-   <td> Permite que o Adobe Campaign e o Adobe Analytics interajam por meio do pacote Web Analytics connectors. Não compatível com as mensagens transacionais (pacote do centro de mensagens). <a href="../../platform/using/adobe-analytics-data-connector.md">Saiba mais</a><br /> </td> 
+   <td> Permite que o Adobe Campaign e o Adobe Analytics interajam por meio do pacote Web Analytics connectors. Não compatível com as mensagens transacionais (pacote do centro de mensagens). <a href="../../platform/using/adobe-analytics-connector.md">Saiba mais</a><br /> </td> 
    <td> Marketing </td> 
   </tr> 
   <tr> 
