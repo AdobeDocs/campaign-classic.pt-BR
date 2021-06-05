@@ -6,10 +6,10 @@ audience: configuration
 content-type: reference
 topic-tags: schema-reference
 exl-id: f36a1b01-a002-4a21-9255-ea78b5f173fe
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 4a41aea9edfe5e6ca0454049cbb2892449eec153
 workflow-type: tm+mt
-source-wordcount: '399'
-ht-degree: 7%
+source-wordcount: '381'
+ht-degree: 8%
 
 ---
 
@@ -17,7 +17,7 @@ ht-degree: 7%
 
 Este capítulo descreve como configurar schemas de extensão para estender o modelo de dados conceituais do banco de dados do Adobe Campaign.
 
-Para obter uma melhor compreensão das tabelas integradas do Campaign e sua interação, consulte o [Campaign Classic data model](https://helpx.adobe.com/br/campaign/kb/acc-datamodel.html).
+Para obter uma melhor compreensão das tabelas integradas do Campaign e sua interação, consulte o [Campaign Classic data model](https://experienceleague.adobe.com/docs/campaign-classic/using/configuring-campaign-classic/data-model/about-data-model.html?lang=pt-BR).
 
 A estrutura física e lógica dos dados transportados no aplicativo é descrita em XML. Ela obedece a uma gramática específica do Adobe Campaign, chamada de **schema**.
 
@@ -74,18 +74,13 @@ Um schema de dados é identificado por seu nome e namespace.
 
 Um namespace permite agrupar um conjunto de schemas por área de interesse. Por exemplo, o namespace **cus** é usado para configuração específica do cliente (**customers**).
 
+A chave de identificação de um schema é uma cadeia de caracteres criada usando o namespace e o nome separados por dois pontos; por exemplo: **cus:recipient**.
+
 >[!IMPORTANT]
 >
->Como padrão, o nome do namespace deve ser conciso e deve conter somente caracteres autorizados de acordo com as regras de nomenclatura XML.
+>O nome do namespace deve ser conciso e deve conter somente caracteres autorizados de acordo com as regras de nomenclatura XML.
 >
 >Os identificadores não devem começar com caracteres numéricos.
+>
+>Os seguintes namespaces são reservados para descrições das entidades do sistema necessárias para a operação do aplicativo Adobe Campaign e não devem ser usados: **xtk**, **nl**, **nms**, **ncm**, **temp**, **ncl**, **crm&lt;a1 3/>,** xxl **.**
 
-Determinados namespaces são reservados para descrições das entidades do sistema necessárias para a operação do aplicativo Adobe Campaign:
-
-* **xtk**: no que diz respeito aos dados do sistema da plataforma,
-* **nl**: sobre a utilização global do pedido,
-* **nms**: relativo ao delivery (recipient, delivery, rastreamento etc.),
-* **ncm**: em matéria de gestão de conteúdos,
-* **temp**: reservado para schemas temporários.
-
-A chave de identificação de um schema é uma cadeia de caracteres criada usando o namespace e o nome separados por dois pontos; por exemplo: **cus:recipient**.
