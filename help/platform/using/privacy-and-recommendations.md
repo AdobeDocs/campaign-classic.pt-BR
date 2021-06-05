@@ -6,7 +6,7 @@ audience: platform
 content-type: reference
 topic-tags: starting-with-adobe-campaign
 exl-id: d2451b62-bddf-4dee-8789-35aaae8348e1
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 4a41aea9edfe5e6ca0454049cbb2892449eec153
 workflow-type: tm+mt
 source-wordcount: '2038'
 ht-degree: 100%
@@ -76,7 +76,7 @@ Ao gerenciar a privacidade, é importante definir quais dados devem ser tratados
 * **Dados pessoais** são informações que podem identificar direta ou indiretamente um indivíduo vivo.
 * **Dados confidenciais pessoais** são informações relacionadas a raça, visão política, crenças religiosas, antecedentes criminais, informações genéticas, dados de saúde, preferência sexual, informações biométricas, bem como participação em uniões comerciais.
 
-Ao integrar o Campaign a outras soluções da Experience Cloud, onde os públicos-alvo podem ser transferidos de um sistema para outro, como o [Adobe Analytics](../../platform/using/adobe-analytics-data-connector.md), o [serviço principal do Audience Manager ou People](../../integrations/using/sharing-audiences-with-adobe-experience-cloud.md), o [Campaign Standard](../../integrations/using/synchronizing-audiences.md) ou outras soluções por meio dos [Conectores de CRM](../../platform/using/crm-connectors.md), é necessário ter cuidado extra com a proteção de dados pessoais.
+Ao integrar o Campaign a outras soluções da Experience Cloud, onde os públicos-alvo podem ser transferidos de um sistema para outro, como o [Adobe Analytics](../../platform/using/adobe-analytics-connector.md), o [serviço principal do Audience Manager ou People](../../integrations/using/sharing-audiences-with-adobe-experience-cloud.md), o [Campaign Standard](../../integrations/using/synchronizing-audiences.md) ou outras soluções por meio dos [Conectores de CRM](../../platform/using/crm-connectors.md), é necessário ter cuidado extra com a proteção de dados pessoais.
 
 As [principais legislações](#privacy-regulations) referem-se às diferentes entidades que gerenciam os dados da seguinte forma:
 * Um **Controlador de dados** é a autoridade que determina os meios e a finalidade de coleta, utilização e compartilhamento de dados pessoais.
