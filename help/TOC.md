@@ -7,10 +7,10 @@ breadcrumb-url: /docs/campaign-classic/using/campaign-classic-home.html
 user-guide-description: Projete, planeje, execute, gerencie e otimize campanhas de marketing entre canais que proporcionam um alto retorno sobre o investimento em marketing.
 sub-product: adobe campaign classic
 type: Documentation
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 4a41aea9edfe5e6ca0454049cbb2892449eec153
 workflow-type: tm+mt
-source-wordcount: '2477'
-ht-degree: 99%
+source-wordcount: '2485'
+ht-degree: 98%
 
 ---
 
@@ -115,7 +115,8 @@ ht-degree: 99%
          + [Conecte-se com o Microsoft Dynamics 365](platform/using/crm-ms-dynamics.md)
          + [Conecte-se com o Salesforce.com](platform/using/crm-sfdc.md)
          + [Sincronizar dados com o CRM](platform/using/crm-data-sync.md)
-      + [Conector de dados do Adobe Analytics](platform/using/adobe-analytics-data-connector.md)
+      + [Conector Adobe Analytics](platform/using/adobe-analytics-connector.md)
+      + [Conector de dados do Adobe Analytics](platform/using/adobe-analytics-data-connector-legacy.md)
    + [Opções de ajuda e suporte](support.md)
 + Criar e enviar mensagens {#sending-messages}
    + [Introdução a mensagens](delivery/using/communication-channels.md)
@@ -670,7 +671,9 @@ ht-degree: 99%
          + [Práticas recomendadas e limitações](installation/using/fda-best-practices.md)
          + Diretrizes de configuração {#config-databases}
             + [Etapas de configuração](installation/using/configure-fda.md)
+            + [Configurar Vertica](installation/using/configure-fda-vertica.md)
             + [Configurar Snowflake](installation/using/configure-fda-snowflake.md)
+            + [Configurar o Google BigQuery](installation/using/configure-fda-google-big-query.md)
             + [Configurar Azure Synapse](installation/using/configure-fda-synapse.md)
             + [Configurar Hadoop](installation/using/configure-fda-hadoop.md)
             + [Configurar Oracle](installation/using/configure-fda-oracle.md)
