@@ -6,9 +6,9 @@ audience: installation
 content-type: reference
 topic-tags: appendices
 exl-id: a979cd99-afa7-4ce6-ba0f-9495089cba08
-source-git-commit: c095d7ddde4b4ac23467ebd0fa8ee2fb613aacdc
+source-git-commit: 4a41aea9edfe5e6ca0454049cbb2892449eec153
 workflow-type: tm+mt
-source-wordcount: '3941'
+source-wordcount: '3972'
 ht-degree: 3%
 
 ---
@@ -16,6 +16,7 @@ ht-degree: 3%
 # Lista de opções do Campaign Classic{#configuring-campaign-options}
 
 O nó **[!UICONTROL Administration / Platform / Options]** permite configurar as opções do Adobe Campaign. Alguns deles são incorporados ao instalar o Campaign e outros podem ser adicionados manualmente quando necessário. As opções disponíveis variam de acordo com os pacotes instalados com sua instância.
+
 
 >[!CAUTION]
 >
@@ -399,6 +400,14 @@ O nó **[!UICONTROL Administration / Platform / Options]** permite configurar as
   </tr> 
  </thead> 
  <tbody> 
+  <tr> 
+   <td> <span class="uicontrol">RestrictEditingOTBSchema</span> <br /> </td> 
+   <td> (a partir da versão 21.1.3) Se 1 for selecionado (valor padrão), essa opção desabilitará a edição de schemas incorporados.<br /> </td> 
+  </tr> 
+  <tr> 
+   <td> <span class="uicontrol">RestrictEditingOTBJavascript</span> <br /> </td> 
+   <td> (a partir da versão 21.1.3) Se 1 for selecionado (valor padrão), essa opção desativará a edição de códigos javascript incorporados.<br /> </td> 
+  </tr> 
   <tr> 
    <td> <span class="uicontrol">XtkAcceptOldPasswords</span> <br /> </td> 
    <td> (Instalar modo de compatibilidade: build&gt;6000) Quando ativada (valor "1"), essa opção permite o uso de senhas antigas armazenadas no banco de dados para a conexão com contas externas ou com a instância.<br /> </td> 
