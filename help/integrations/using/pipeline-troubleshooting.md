@@ -5,10 +5,10 @@ description: Configuração da integração
 audience: integrations
 content-type: reference
 exl-id: 76645a6f-9536-49d6-b12a-fdd6113d31fa
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 45a84e1bf43678bbc31d8bac15a7e6520204fdc2
 workflow-type: tm+mt
-source-wordcount: '580'
-ht-degree: 100%
+source-wordcount: '647'
+ht-degree: 89%
 
 ---
 
@@ -82,3 +82,9 @@ Geralmente, um acionador pode levar de 15 a 90 minutos para iniciar uma campanha
 1. Em pipelined.log, procure erros que possam causar novas tentativas. Caso seja aplicável, corrija os erros.
 1. Verifique o tamanho da fila na página de status [!DNL pipelined]. Se o tamanho da fila for grande, melhore o desempenho do JS.
 1. Como o atraso parece aumentar com o volume, configure os acionadores no Analytics usando menos mensagens.
+
+**Atualização de instâncias de estágio da autenticação herdada para a autenticação de Adobe IO**
+
+Alterar a autenticação da integração na instância do palco não afetará a configuração da instância de produção. Você pode optar por atualizar a instância do palco, atualizar a autenticação para a Adobe IO e testar os acionadores na instância do palco.
+
+A instância de produção continuará a usar a autenticação herdada e não será afetada por essa alteração.
