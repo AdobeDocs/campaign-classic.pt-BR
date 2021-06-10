@@ -6,9 +6,9 @@ audience: platform
 content-type: reference
 topic-tags: administration-basics
 exl-id: 4a17d5e8-c73f-42e7-b641-0fee6a52c5c0
-source-git-commit: 4a41aea9edfe5e6ca0454049cbb2892449eec153
+source-git-commit: 8c47027099559549320abf68016386cc85dcda5a
 workflow-type: tm+mt
-source-wordcount: '1540'
+source-wordcount: '1539'
 ht-degree: 78%
 
 ---
@@ -411,7 +411,7 @@ Como você está configurando essa nova conta externa, é necessário fornecer o
 
 Para saber onde encontrar a ID da chave de acesso e a chave de acesso secreta, consulte a [documentação](https://docs.aws.amazon.com/general/latest/gr/aws-sec-cred-types.html#access-keys-and-secret-access-keys) do Amazon Web Services.
 
-### Armazenamento Azure Blob (#azure-blob-external-account)
+### Armazenamento Azure Blob {#azure-blob-external-account}
 
 A conta externa de **Azure Blob storage** pode ser usada para importar ou exportar dados para o Adobe Campaign usando uma atividade de workflow **[!UICONTROL Transfer file]** . Para obter mais informações, consulte esta [seção](../../workflow/using/file-transfer.md).
 
