@@ -6,9 +6,9 @@ feature: Visão geral
 role: Business Practitioner
 level: Beginner
 exl-id: d60d67de-6618-4f3b-be4a-ad7633ab5645
-source-git-commit: da699fbba527a44a048d5562a8311e70c00f74fd
+source-git-commit: 778f0a9436f26c10b266019f761b499ab7547be1
 workflow-type: tm+mt
-source-wordcount: '1629'
+source-wordcount: '1633'
 ht-degree: 95%
 
 ---
@@ -221,7 +221,8 @@ No local: atualização 1 de 2016, 2016
 
 **RDBMS SERVER**
 
-O Adobe Campaign não é compatível com os seguintes servidores RDBMS:
+A partir da versão do primeiro trimestre 19.1, o Adobe Campaign não é mais compatível com os seguintes servidores RDBMS:
+
 * Oracle 10GR2
 * PostgreSQL 9.0 a 9.3
 * SQL Server 2005
