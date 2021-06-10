@@ -6,10 +6,10 @@ audience: platform
 content-type: reference
 topic-tags: connectors
 exl-id: 0b53b165-a6d8-4604-b3f0-3fa6fce35146
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 11de485a97d112b308c145775537d9b6255f124f
 workflow-type: tm+mt
-source-wordcount: '322'
-ht-degree: 44%
+source-wordcount: '331'
+ht-degree: 42%
 
 ---
 
@@ -40,6 +40,10 @@ Após a criação do schema de dados, é possível processar os dados nos workfl
 Dependendo dos bancos de dados externos que você deseja acessar do Adobe Campaign, você precisará realizar algumas configurações específicas. Essas configurações envolvem essencialmente a instalação de drivers e a declaração de variáveis de ambiente que pertencem a cada RDBMS no servidor do Adobe Campaign, além da configuração da conta externa.
 
 Siga os links abaixo para saber mais:
+
+* Conecte a Campanha e [Vertica](../../installation/using/configure-fda-vertica.md)
+
+* Conecte a Campanha e [Google BigQuery](../../installation/using/configure-fda-google-big-query.md)
 
 * Conectar Campanha e [Azure synapse](../../installation/using/configure-fda-synapse.md)
 
