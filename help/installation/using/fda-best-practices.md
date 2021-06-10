@@ -6,24 +6,14 @@ audience: platform
 content-type: reference
 topic-tags: connectors
 exl-id: f3980859-2837-416b-a0ef-2b369d2d50bd
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 1312f7c319c96851bc83ae21501164e2688d0dff
 workflow-type: tm+mt
-source-wordcount: '446'
-ht-degree: 37%
+source-wordcount: '409'
+ht-degree: 40%
 
 ---
 
 # Práticas recomendadas e limitações
-
-## Criar esquemas temporários {#create-temporary-schemas}
-
-Você pode gerenciar vários acessos ao banco de dados externo Greenplum por meio do FDA. Uma opção dedicada permite criar um schema de trabalho diretamente ao configurar a conta externa.
-
-![](assets/fda_work_table.png)
-
->[!NOTE]
->
->Essa opção só está disponível com PostgreSQL Greenplum.
 
 ## Otimizar a personalização de email com dados externos {#optimizing-email-personalization-with-external-data}
 
