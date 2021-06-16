@@ -1,16 +1,16 @@
 ---
 audience: end-user
-breadcrumb-title: Central de ajuda
+breadcrumb-title: Documentação do Campaign Classic v7
 product: campaign
-title: Guia do Campaign Classic
+title: Manual do Campaign Classic v7
 breadcrumb-url: /docs/campaign-classic/using/campaign-classic-home.html
-user-guide-description: Projete, planeje, execute, gerencie e otimize campanhas de marketing entre canais que proporcionam um alto retorno sobre o investimento em marketing.
+user-guide-description: Com o Adobe Campaign, você pode usar dados avançados do cliente para criar, coordenar e fornecer campanhas dinâmicas que os clientes realmente desejam, por meio de email, dispositivos móveis, canais offline e muito mais.
 sub-product: adobe campaign classic
 type: Documentation
-source-git-commit: 4a41aea9edfe5e6ca0454049cbb2892449eec153
+source-git-commit: a4fc52e68cbca861e1b942e0c7e41f3d5dc3df54
 workflow-type: tm+mt
-source-wordcount: '2485'
-ht-degree: 98%
+source-wordcount: '2498'
+ht-degree: 97%
 
 ---
 
