@@ -6,14 +6,14 @@ audience: delivery
 content-type: reference
 topic-tags: a-b-testing
 exl-id: e6f39180-d161-4226-810a-10bb1c3682ca
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 895aa2fd4fa9c7c71c0073e9be33c12d4e92c9fa
 workflow-type: tm+mt
 source-wordcount: '103'
 ht-degree: 100%
 
 ---
 
-# Análise do resultado {#step-8--analyzing-the-result}
+# Analisar o resultado {#step-8--analyzing-the-result}
 
 Depois que os deliveries de teste forem enviados, será possível verificar a quais recipients eles foram enviados e se foram abertos ou não.
 
