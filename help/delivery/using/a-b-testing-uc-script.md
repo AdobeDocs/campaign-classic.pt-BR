@@ -6,20 +6,20 @@ audience: delivery
 content-type: reference
 topic-tags: a-b-testing
 exl-id: 4143d1b7-0e2b-4672-ad57-e4d7f8fea028
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 895aa2fd4fa9c7c71c0073e9be33c12d4e92c9fa
 workflow-type: tm+mt
-source-wordcount: '335'
-ht-degree: 100%
+source-wordcount: '330'
+ht-degree: 97%
 
 ---
 
-# Criação do script {#step-5--creating-the-script}
+# Criar o script {#step-5--creating-the-script}
 
 A escolha do conteúdo de delivery destinado à população restante é calculada por um script. Este script recupera as informações relacionadas à delivery com a mais alta taxa de abertura e copia o conteúdo para a delivery final.
 
 ## Exemplo de um script {#example-of-a-script}
 
-O script a seguir pode ser usado no workflow para construção do target. Para obter mais informações, consulte [Implementation](#implementation).
+O script a seguir pode ser usado no workflow para construção do target. Para obter mais informações, consulte [esta seção](#implementation).
 
 ```
  // query the database to find the winner (best open rate)
@@ -65,7 +65,7 @@ O script a seguir pode ser usado no workflow para construção do target. Para o
    vars.deliveryId = delivery.id
 ```
 
-Para obter uma explicação detalhada do script, consulte [Detalhes do script](#details-of-the-script).
+Para verificar uma explicação detalhada do script, consulte [esta seção](#details-of-the-script).
 
 ## Implementação {#implementation}
 
@@ -168,4 +168,4 @@ O exemplo acima permite selecionar o conteúdo de uma delivery com base na taxa 
 * Taxa de cancelamento de subscrição mais baixa: `[indicators/@optOutRatio]`,
 * Valor da transação: `[indicators/@amount]`.
 
-Agora você pode definir o delivery final (consulte [Etapa 6: definir o delivery final](../../delivery/using/a-b-testing-uc-final-delivery.md)).
+Agora você pode definir o delivery final. [Saiba mais](a-b-testing-uc-final-delivery.md).
