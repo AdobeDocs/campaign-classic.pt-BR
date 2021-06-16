@@ -6,18 +6,16 @@ audience: workflow
 content-type: reference
 topic-tags: action-activities
 exl-id: 3bb468e2-7bcf-456f-8d8f-1c4e608e2b25
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 895aa2fd4fa9c7c71c0073e9be33c12d4e92c9fa
 workflow-type: tm+mt
-source-wordcount: '312'
-ht-degree: 100%
+source-wordcount: '284'
+ht-degree: 81%
 
 ---
 
 # Deliveries entre canais{#cross-channel-deliveries}
 
 Os cross-channel estão disponíveis na **[!UICONTROL Deliveries]** guia de atividades do workflow da campanha.
-
-Eles permitem criar um delivery específico em um canal específico. Você pode especificar o template no qual deseja basear seu delivery, bem como seu conteúdo, da mesma forma que com um assistente de delivery comum.
 
 Os vários canais disponíveis são:
 
@@ -26,12 +24,14 @@ Os vários canais disponíveis são:
 * [Celular](../../delivery/using/sms-channel.md)
 * [Twitter](../../social/using/publishing-on-twitter.md)
 * [Facebook](../../social/using/publishing-on-facebook.md)
-* [iOS](../../delivery/using/creating-notifications.md#sending-notifications-on-ios)
-* [Android](../../delivery/using/creating-notifications.md#sending-notifications-on-android)
+* [iOS](../../delivery/using/create-notifications-ios.md)
+* [Android](../../delivery/using/create-notifications-android.md)
+
+Selecione o template no qual deseja basear seu delivery e definir seu conteúdo.
 
 Você pode especificar um target para o upstream do delivery de workflow usando as diferentes atividades de target.
 
-Por exemplo, aqui vamos criar um workflow para enviar um email ou SMS para assinantes de notificação por push e, em seguida, uma notificação por push uma semana depois. Para fazer isso:
+No exemplo abaixo, criaremos um workflow para enviar um email ou SMS para assinantes de notificação por push e, em seguida, uma notificação por push uma semana depois. Para fazer isso:
 
 1. Crie uma campanha.
 1. Na guia **[!UICONTROL Targeting and workflows]** da campanha, adicione uma **[!UICONTROL Query]** ao workflow.
@@ -39,7 +39,7 @@ Por exemplo, aqui vamos criar um workflow para enviar um email ou SMS para assin
 
    >[!NOTE]
    >
-   >Para as notificações por push, lembre-se de usar o target dimension de **aplicativos do assinante**.
+   >Para as notificações por push, use o target dimension **subscriber applications** .
 
    ![](assets/cross_channel_delivery_1.png)
 
