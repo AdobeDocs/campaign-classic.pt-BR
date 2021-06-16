@@ -6,14 +6,14 @@ audience: workflow
 content-type: reference
 topic-tags: use-cases
 exl-id: 9959e22e-9aa0-410f-b22c-9ca1cac46b97
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 895aa2fd4fa9c7c71c0073e9be33c12d4e92c9fa
 workflow-type: tm+mt
 source-wordcount: '300'
-ht-degree: 100%
+ht-degree: 98%
 
 ---
 
-# Coordenação das atualizações de dados{#coordinating-data-updates}
+# Coordenar atualizações de dados{#coordinating-data-updates}
 
 Esse caso de uso detalha a criação de um workflow que permite gerenciar atualizações relacionadas ao workflow ao usar várias execuções de um workflow.
 
@@ -53,5 +53,5 @@ Para criar o workflow, siga as etapas abaixo:
 
 **Tópicos relacionados:**
 
-* [Evitando várias execuções simultâneas](../../workflow/using/monitoring-workflow-execution.md#preventing-simultaneous-multiple-executions)
+* [Impedir várias execuções simultâneas](../../workflow/using/monitoring-workflow-execution.md#preventing-simultaneous-multiple-executions)
 * [Atividade de atualização de dados](../../workflow/using/update-data.md)
