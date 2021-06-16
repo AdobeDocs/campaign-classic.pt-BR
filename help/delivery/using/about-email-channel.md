@@ -6,10 +6,10 @@ audience: delivery
 content-type: reference
 topic-tags: sending-emails
 exl-id: dbdfc04a-691b-470d-b96d-4c8a9531327d
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 895aa2fd4fa9c7c71c0073e9be33c12d4e92c9fa
 workflow-type: tm+mt
-source-wordcount: '124'
-ht-degree: 100%
+source-wordcount: '137'
+ht-degree: 82%
 
 ---
 
@@ -20,15 +20,15 @@ O Adobe Campaign permite a entrega de mensagens eletrônicas personalizadas em m
 Antes de começar a enviar emails:
 
 * Verifique se os perfis de recipient contêm pelo menos um endereço de email.
-* Saiba mais sobre as [Práticas recomendadas da entrega](../../delivery/using/delivery-best-practices.md) do Adobe Campaign.
-* Leia sobre [Entregabilidade](../../delivery/using/about-deliverability.md) e [Gerenciamento de Entregabilidade](https://helpx.adobe.com/br/campaign/kb/acc-deliverability.html).
+* Saiba mais sobre as [Práticas recomendadas da entrega](delivery-best-practices.md) do Adobe Campaign.
+* Leia estas seções para saber mais sobre Entregabilidade: [Gerenciamento da capacidade de entrega no Campaign](about-deliverability.md) e [Guia de práticas recomendadas de capacidade de entrega](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/introduction.html?lang=pt-BR).
 
 As principais etapas para enviar um email são as seguintes:
 
-* [Criação de um delivery de email](../../delivery/using/creating-an-email-delivery.md)
-* [Definição da população do target](../../delivery/using/steps-defining-the-target-population.md)
-* [Definição do conteúdo do email](../../delivery/using/defining-the-email-content.md)
-* [Envio do email](../../delivery/using/sending-messages.md)
-* [Monitoramento de um delivery](../../delivery/using/about-delivery-monitoring.md)
+* [Criar uma entrega de email](../../delivery/using/creating-an-email-delivery.md)
+* [Definir a população do target](../../delivery/using/steps-defining-the-target-population.md)
+* [Definir o conteúdo do email](../../delivery/using/defining-the-email-content.md)
+* [Enviar o email](../../delivery/using/sending-messages.md)
+* [Monitorar o delivery](../../delivery/using/about-delivery-monitoring.md)
 
-As seções abaixo fornecem as informações específicas ao canal de email. Para obter mais informações sobre como criar um delivery, consulte [esta seção](../../delivery/using/steps-about-delivery-creation-steps.md).
+As seções abaixo fornecem as informações específicas ao canal de email. Para obter mais informações sobre como criar um delivery, consulte [esta seção](steps-about-delivery-creation-steps.md).
