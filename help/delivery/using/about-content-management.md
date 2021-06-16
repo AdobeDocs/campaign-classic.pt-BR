@@ -6,16 +6,16 @@ audience: delivery
 content-type: reference
 topic-tags: content-management
 exl-id: 87434cc2-1636-4558-ab60-255b7f873c0c
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 895aa2fd4fa9c7c71c0073e9be33c12d4e92c9fa
 workflow-type: tm+mt
 source-wordcount: '245'
-ht-degree: 100%
+ht-degree: 91%
 
 ---
 
 # Sobre a gestão de conteúdo{#about-content-management}
 
-O módulo Adobe Campaign Content Manager é um [pacote padrão](../../installation/using/installing-campaign-standard-packages.md) do Campaign Classic específico que você pode instalar para criar informativos ou sites recorrentes. Ele pode ajudá-lo a criar, validar e publicar suas mensagens.
+O módulo do Adobe Campaign Content Manager é um Campaign Classic específico [pacote integrado](../../installation/using/installing-campaign-standard-packages.md) que você pode instalar para criar informativos ou sites recorrentes. Ele pode ajudá-lo a criar, validar e publicar suas mensagens.
 
 >[!NOTE]
 >
