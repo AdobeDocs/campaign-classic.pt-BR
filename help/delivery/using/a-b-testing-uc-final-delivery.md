@@ -6,14 +6,14 @@ audience: delivery
 content-type: reference
 topic-tags: a-b-testing
 exl-id: bc23a444-a872-48fb-8bba-64b301541089
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 895aa2fd4fa9c7c71c0073e9be33c12d4e92c9fa
 workflow-type: tm+mt
-source-wordcount: '111'
+source-wordcount: '108'
 ht-degree: 100%
 
 ---
 
-# Definição do delivery final {#step-6--defining-the-final-delivery}
+# Definir a entrega final {#step-6--defining-the-final-delivery}
 
 Depois que o script for criado para selecionar o vencedor do teste A/B, será possível definir os parâmetros do delivery final.
 
@@ -26,4 +26,4 @@ Depois que o script for criado para selecionar o vencedor do teste A/B, será po
 
 Ao preparar o delivery especificado na transição (definido por meio da atividade **[!UICONTROL Javascript Code]**), é possível aprovar e iniciar o envio, conforme descrito na próxima etapa.
 
-Agora você pode iniciar o fluxo de trabalho (consulte [Etapa 7: iniciar o fluxo de trabalho](../../delivery/using/a-b-testing-uc-start-workflow.md)).
+Agora, você pode iniciar o fluxo de trabalho. [Saiba mais](a-b-testing-uc-start-workflow.md).
