@@ -7,10 +7,10 @@ content-type: reference
 topic-tags: monitoring-deliveries
 hidefromtoc: true
 exl-id: 34be23f7-17fa-475e-9663-2e353d76b172
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: a129f49d4f045433899fd7fdbd057fb16d0ed36a
 workflow-type: tm+mt
 source-wordcount: '427'
-ht-degree: 100%
+ht-degree: 93%
 
 ---
 
@@ -45,18 +45,18 @@ Com base no período do incidente, abaixo estão as diretrizes recomendadas para
 * Para instâncias do Campaign com informações de resposta de rejeição SMTP no campo **[!UICONTROL Error text]** da lista de quarentena:
 
    * **O texto de erro (texto de quarentena)** contém &quot;pesquisa de usuário bem-sucedida, mas nenhum registro de usuário encontrado&quot; E o texto **Erro (texto de quarentena)** contém &quot;support.apple.com&quot;
-   * **Atualizar status (@lastModified)** em ou após 26/04/2021 7h
-   * **Atualizar status (@lastModified)** em ou antes de 26/04/2021 13h
+   * **Atualizar status (@lastModified)** em ou após 26/04/2021 07:00:00 AM
+   * **Atualizar status (@lastModified)** em ou antes de 26/04/2021 01:00:00 PM
 
 * Para instâncias do Campaign com informações de regra de Email de entrada no campo **[!UICONTROL Error text]** da lista de quarentena:
 
    * **O texto de erro (texto de quarentena)** contém &quot;Momen_Code10_InvalidRecipient&quot;
    * **Domínio de email (@domain)** igual a icloud.com OU **Domínio de email (@domain)** igual a me.com OU **Domínio de email (@domain)** igual a mac.com
-   * **Atualizar status (@lastModified)** em ou depois de 26/04/2021 7h
-   * **Atualizar status (@lastModified)** em ou depois de 26/04/2021 13h
+   * **Atualizar status (@lastModified)** em ou após 26/04/2021 07:00:00 AM
+   * **Atualizar status (@lastModified)** em ou antes de 26/04/2021 01:00:00 PM
 
 Depois de ter a lista de recipients afetados, você pode defini-los como um status **[!UICONTROL Valid]** para que sejam removidos da lista de quarentena pelo fluxo de trabalho **[!UICONTROL Database cleanup]** ou simplesmente excluí-los da tabela.
 
 **Tópicos relacionados:**
-* [Compreender as falhas de delivery](../../delivery/using/understanding-delivery-failures.md)
-* [Qualificação de email de rejeição](../../delivery/using/understanding-delivery-failures.md#bounce-mail-qualification)
+* [Compreender as falhas de delivery](understanding-delivery-failures.md)
+* [Qualificação de email de rejeição](understanding-delivery-failures.md#bounce-mail-qualification)
