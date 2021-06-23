@@ -7,10 +7,10 @@ content-type: reference
 topic-tags: sending-push-notifications
 version: Classic v7
 exl-id: a5f6b82d-5561-4e56-b2ed-7fd6fd8c2b55
-source-git-commit: a4fc52e68cbca861e1b942e0c7e41f3d5dc3df54
+source-git-commit: a129f49d4f045433899fd7fdbd057fb16d0ed36a
 workflow-type: tm+mt
-source-wordcount: '955'
-ht-degree: 100%
+source-wordcount: '954'
+ht-degree: 98%
 
 ---
 
@@ -62,7 +62,7 @@ Para integrar o SDK do Campaign no aplicativo móvel, o administrador funcional 
 
    >[!NOTE]
    >
-   >Essa chave de integração é inserida no console do Adobe Campaign, na guia **[!UICONTROL Information]** do serviço dedicado ao aplicativo móvel. Consulte [Configuração de um aplicativo para dispositivos móveis no Adobe Campaign](../../delivery/using/configuring-the-mobile-application.md).
+   >Essa chave de integração é inserida no console do Adobe Campaign, na guia **[!UICONTROL Information]** do serviço dedicado ao aplicativo móvel. Consulte [Configuração de um aplicativo para dispositivos móveis no Adobe Campaign](configuring-the-mobile-application.md).
 
 * **Um URL de rastreamento**: que corresponde ao endereço do servidor de rastreamento do Adobe Campaign.
 * **Um URL de marketing**: para ativar a coleta de assinaturas.
@@ -290,7 +290,7 @@ A função de registro permite:
 
    >[!NOTE]
    >
-   >A partir da versão 7.0, quando a função **application:didReceiveRemoteNotification:fetchCompletionHandler** é implementada, o sistema operacional só chama essa função. Logo, a função **application:didReceiveRemoteNotification** não é chamada.
+   >A partir da versão 7.0, depois que a função **application:didReceiveRemoteNotification:fetchCompletionHandler** é implementada, o sistema operacional só chama essa função. Logo, a função **application:didReceiveRemoteNotification** não é chamada.
 
 ## Rastreamento de notificação silenciosa {#silent-notification-tracking}
 
@@ -530,7 +530,7 @@ Para implementar o delegado **registerDeviceStatus**, siga estas etapas:
 
 ## Variáveis {#variables}
 
-As variáveis permitem definir o comportamento do aplicativo móvel após receber uma notificação. Essas variáveis devem ser definidas no código do aplicativo para dispositivos móveis e no console do Adobe Campaign, na guia **[!UICONTROL Variables]** no serviço de aplicativo para dispositivos móveis dedicado (consulte [Configuração de um aplicativo para dispositivos móveis no Adobe Campaign](../../delivery/using/configuring-the-mobile-application.md)). Veja um exemplo de um código que permite que um aplicativo móvel colete quaisquer variáveis adicionadas em uma notificação. No nosso exemplo, estamos usando a variável &quot;VAR&quot;.
+As variáveis permitem definir o comportamento do aplicativo móvel após receber uma notificação. Essas variáveis devem ser definidas no código do aplicativo para dispositivos móveis e no console do Adobe Campaign, na guia **[!UICONTROL Variables]** no serviço de aplicativo para dispositivos móveis dedicado (consulte [Configuração de um aplicativo para dispositivos móveis no Adobe Campaign](configuring-the-mobile-application.md)). Veja um exemplo de um código que permite que um aplicativo móvel colete quaisquer variáveis adicionadas em uma notificação. No nosso exemplo, estamos usando a variável &quot;VAR&quot;.
 
 * **No Android**:
 
@@ -576,7 +576,7 @@ As variáveis permitem definir o comportamento do aplicativo móvel após recebe
 >
 >A Adobe recomenda escolher nomes de variáveis curtos, pois o tamanho da notificação é limitado a 4kB para iOS e Android.
 
-## Extensão de serviço de notificação {#notification-service-extension}
+## Extensão de Serviço de Notificação {#notification-service-extension}
 
 **Para iOS**
 
