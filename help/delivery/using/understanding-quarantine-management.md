@@ -6,7 +6,7 @@ audience: delivery
 content-type: reference
 topic-tags: monitoring-deliveries
 exl-id: cfd8f5c9-f368-4a31-a1e2-1d77ceae5ced
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: a129f49d4f045433899fd7fdbd057fb16d0ed36a
 workflow-type: tm+mt
 source-wordcount: '2613'
 ht-degree: 100%
@@ -29,7 +29,7 @@ Os perfis cujos endereços de email ou número de telefone estão em quarentena 
 
 Alguns provedores de acesso à Internet consideram automaticamente emails como spam se a taxa de endereços inválidos é muito alta. A quarentena, portanto, evita que você seja adicionado à lista de bloqueios por esses provedores.
 
-Além disso, a quarentena ajuda a reduzir os custos de envio do SMS, excluindo números de telefone incorretos dos deliveries. Para obter mais informações sobre as práticas recomendadas para proteger e otimizar seus deliveries, consulte [esta página](../../delivery/using/delivery-best-practices.md).
+Além disso, a quarentena ajuda a reduzir os custos de envio do SMS, excluindo números de telefone incorretos dos deliveries. Para obter mais informações sobre as práticas recomendadas para proteger e otimizar seus deliveries, consulte [esta página](delivery-best-practices.md).
 
 ### Quarentena × lista de bloqueios {#quarantine-vs-denylist}
 
@@ -49,7 +49,7 @@ Os endereços em quarentena podem ser listados para um delivery específico ou p
 
 ### Identificação de endereços em quarentena para um delivery {#identifying-quarantined-addresses-for-a-delivery}
 
-Os endereços em quarentena para um delivery específico são listados durante a fase de preparação do delivery, nos logs do delivery do painel de delivery (consulte [Histórico e logs do delivery](../../delivery/using/delivery-dashboard.md#delivery-logs-and-history)).
+Os endereços em quarentena para um delivery específico são listados durante a fase de preparação do delivery, nos logs do delivery do painel de delivery (consulte [Histórico e logs do delivery](delivery-dashboard.md#delivery-logs-and-history)).
 
 ### Identificação de endereços em quarentena para toda a plataforma {#identifying-quarantined-addresses-for-the-entire-platform}
 
@@ -68,7 +68,7 @@ As seguintes informações estão disponíveis para cada endereço:
 >O aumento no número em quarentena é um efeito normal, relacionado ao &quot;desgaste&quot; do banco de dados. Por exemplo, se o tempo de vida de um endereço de email for considerado três anos e a tabela de recipients aumentar em 50% todo ano, o aumento da quarentena poderá ser calculado da seguinte maneira:
 >
 >Fim do Ano 1: (1*0.33)/(1+0.5)=22%.
->Fim do Ano 2: ((1.22*0.33)+0.33)/(1.5+0.75)=32.5%.
+Fim do Ano 2: ((1.22*0.33)+0.33)/(1.5+0.75)=32.5%.
 
 ### Identificação de endereços em quarentena nos relatórios de delivery {#identifying-quarantined-addresses-in-delivery-reports}
 
@@ -111,14 +111,13 @@ Os endereços são removidos automaticamente da lista de quarentena nos seguinte
 O status muda então para **[!UICONTROL Valid]**.
 
 >[!IMPORTANT]
->
->Os recipients com um endereço em um status **[!UICONTROL Quarantine]** ou **[!UICONTROL On denylist]** nunca serão removidos, mesmo se receberem um email.
+Os recipients com um endereço em um status **[!UICONTROL Quarantine]** ou **[!UICONTROL On denylist]** nunca serão removidos, mesmo se receberem um email.
 
 Você pode alterar o número de erros e o período entre dois erros. Para fazer isso, altere as configurações correspondentes no assistente de implantação (**[!UICONTROL Email channel]** > **[!UICONTROL Advanced parameters]**). Para obter mais informações sobre o assistente de implantação, consulte [esta seção](../../installation/using/deploying-an-instance.md).
 
-## Condições para colocar um endereço na quarentena {#conditions-for-sending-an-address-to-quarantine}
+## Condições para enviar um endereço para quarentena {#conditions-for-sending-an-address-to-quarantine}
 
-O Adobe Campaign gerencia a quarentena de acordo com o tipo de falha do delivery e o motivo atribuído durante a qualificação de mensagens de erro (consulte [Qualificação de email de devolução](../../delivery/using/understanding-delivery-failures.md#bounce-mail-qualification)) e os [tipos e motivos de falha de delivery](../../delivery/using/understanding-delivery-failures.md#delivery-failure-types-and-reasons).
+O Adobe Campaign gerencia a quarentena de acordo com o tipo de falha do delivery e o motivo atribuído durante a qualificação de mensagens de erro (consulte [Qualificação de email de devolução](understanding-delivery-failures.md#bounce-mail-qualification)) e os [tipos e motivos de falha de delivery](understanding-delivery-failures.md#delivery-failure-types-and-reasons).
 
 * **Erro ignorado**: os erros ignorados não enviam um endereço para quarentena.
 * **Erro grave**: o endereço de email correspondente é enviado imediatamente para quarentena.
@@ -136,7 +135,7 @@ Ao contrário de erros graves, os erros recuperáveis não enviam um endereço i
 
 * Quando o contador de erros atinge o limite, o endereço vai para a quarentena.
 * Na configuração padrão, o limite é definido em cinco erros, onde dois erros são significativos se ocorrerem pelo menos em 24 horas de intervalo. O endereço é colocado em quarentena no quinto erro.
-* O limite do contador de erros pode ser modificado. Para obter mais informações, consulte [Tentativas após uma falha temporária de delivery](../../delivery/using/understanding-delivery-failures.md#retries-after-a-delivery-temporary-failure).
+* O limite do contador de erros pode ser modificado. Para obter mais informações, consulte [Tentativas após uma falha temporária de delivery](understanding-delivery-failures.md#retries-after-a-delivery-temporary-failure).
 
 O contador de erros será reinicializado se o último erro significativo ocorrer há mais de 10 dias. O status do endereço é alterado para **Válido** e excluído da lista de quarentenas pelo workflow de **limpeza do banco de dados**.
 
@@ -252,11 +251,10 @@ O workflow **[!UICONTROL mobileAppOptOutMgt]** é executado a cada 6 horas para 
 Durante a análise de delivery, todos os dispositivos excluídos do target são automaticamente adicionados à tabela **excludeLogAppSubRcp** .
 
 >[!NOTE]
->
->Para clientes que usam o conector Baidu, aqui estão os diferentes tipos de erros:
->* Problema de conexão no início do delivery: falha do tipo **[!UICONTROL Undefined]**, razão da falha **[!UICONTROL Unreachable]**, a tentativa é executada.
->* Perda de conexão durante um delivery: erro leve, razão da falha **[!UICONTROL Refused]**, a tentativa é executada.
->* Erro síncrono retornado pelo Baidu durante o envio: erro grave, motivo da falha **[!UICONTROL Refused]**, não haverá nova tentativa.
+Para clientes que usam o conector Baidu, aqui estão os diferentes tipos de erros:
+* Problema de conexão no início do delivery: falha do tipo **[!UICONTROL Undefined]**, razão da falha **[!UICONTROL Unreachable]**, a tentativa é executada.
+* Perda de conexão durante um delivery: erro leve, razão da falha **[!UICONTROL Refused]**, a tentativa é executada.
+* Erro síncrono retornado pelo Baidu durante o envio: erro grave, motivo da falha **[!UICONTROL Refused]**, não haverá nova tentativa.
 
 O Adobe Campaign contata o servidor Baidu a cada 10 minutos para recuperar o status da mensagem enviada e atualiza os broadlogs. Se uma mensagem for declarada como enviada, o status da mensagem nos broadlogs será definido como **[!UICONTROL Received]**. Se o Baidu declarar um erro, o status será definido como **[!UICONTROL Failed]**.
 
@@ -476,8 +474,7 @@ O mecanismo de quarentena do Android V2 usa o mesmo processo que o Android V1, o
 O mecanismo de quarentena para mensagens SMS é globalmente igual ao processo geral. Consulte [Sobre quarentenas](#about-quarantines). As especificidades para SMS estão listadas abaixo.
 
 >[!NOTE]
->
->A tabela **[!UICONTROL Delivery log qualification]** não se aplica ao conector **SMPP genérico estendido**.
+A tabela **[!UICONTROL Delivery log qualification]** não se aplica ao conector **SMPP genérico estendido**.
 
 <table> 
  <tbody> 
@@ -528,16 +525,15 @@ O mecanismo de quarentena para mensagens SMS é globalmente igual ao processo ge
 
 **Para o conector SMPP genérico estendido**
 
-Ao usar o protocolo SMPP para enviar mensagens SMS, a gestão de erros é tratada de forma diferente. Para obter mais informações sobre o conector SMPP genérico estendido, consulte [esta página](../../delivery/using/sms-set-up.md#creating-an-smpp-external-account).
+Ao usar o protocolo SMPP para enviar mensagens SMS, a gestão de erros é tratada de forma diferente. Para obter mais informações sobre o conector SMPP genérico estendido, consulte [esta página](sms-set-up.md#creating-an-smpp-external-account).
 
 O conector SMPP recupera dados da mensagem SR (Relatório do Status) que é retornada usando expressões regulares (regexes) para filtrar seu conteúdo. Esses dados são comparados com as informações encontradas na tabela **[!UICONTROL Delivery log qualification]** (disponível no menu **[!UICONTROL Administration]** > **[!UICONTROL Campaign Management]** > **[!UICONTROL Non deliverables Management]**).
 
 Antes de um novo tipo de erro ser qualificado, o motivo da falha é sempre definido como **Refused** por padrão.
 
 >[!NOTE]
->
->Os tipos de falha e os motivos para falha são os mesmos dos emails. Consulte [Tipos e motivos de falha de delivery](../../delivery/using/understanding-delivery-failures.md#delivery-failure-types-and-reasons).
->Peça ao seu provedor uma lista de códigos e status de erros para definir os tipos apropriados de falhas e os motivos para falha na tabela de qualificação de log de delivery.
+Os tipos de falha e os motivos para falha são os mesmos dos emails. Consulte [Tipos e motivos de falha de delivery](understanding-delivery-failures.md#delivery-failure-types-and-reasons).
+Peça ao seu provedor uma lista de códigos e status de erros para definir os tipos apropriados de falhas e os motivos para falha na tabela de qualificação de log de delivery.
 
 Exemplo de uma mensagem gerada:
 
@@ -546,13 +542,13 @@ SR Generic DELIVRD 000|#MESSAGE#
 ```
 
 * Todas as mensagens de erro começam com **SR** para distinguir códigos de erro de SMS de códigos de erro de email.
-* A segunda parte (**Generic** neste exemplo) da mensagem de erro refere-se ao nome da implementação SMSC, como definido no campo **[!UICONTROL SMSC implementation name]** da conta externa do SMS. Consulte [esta página](../../delivery/using/sms-set-up.md#creating-an-smpp-external-account).
+* A segunda parte (**Generic** neste exemplo) da mensagem de erro refere-se ao nome da implementação SMSC, como definido no campo **[!UICONTROL SMSC implementation name]** da conta externa do SMS. Consulte [esta página](sms-set-up.md#creating-an-smpp-external-account).
 
    Como o mesmo código de erro pode ter um significado diferente para cada provedor, esse campo permite que você saiba qual provedor gerou o código de erro. Você pode então encontrar o erro na documentação do provedor relevante.
 
 * A terceira parte (**DELIVRD** neste exemplo) da mensagem de erro corresponde ao código de status recuperado do SR usando a extração de status regex definido na conta externa do SMS.
 
-   Esse regex é especificado na guia **[!UICONTROL SMSC specificities]** da conta externa. Consulte [esta página](../../delivery/using/sms-set-up.md#creating-an-smpp-external-account).
+   Esse regex é especificado na guia **[!UICONTROL SMSC specificities]** da conta externa. Consulte [esta página](sms-set-up.md#creating-an-smpp-external-account).
 
    ![](assets/tech_quarant_error_regex.png)
 
@@ -560,10 +556,10 @@ SR Generic DELIVRD 000|#MESSAGE#
 
 * A quarta parte (**000** neste exemplo) da mensagem de erro corresponde ao código de erro extraído do SR usando a extração de código de erro regex definida na conta externa do SMS.
 
-   Esse regex é especificado na guia **[!UICONTROL SMSC specificities]** da conta externa. Consulte [esta página](../../delivery/using/sms-set-up.md#creating-an-smpp-external-account).
+   Esse regex é especificado na guia **[!UICONTROL SMSC specificities]** da conta externa. Consulte [esta página](sms-set-up.md#creating-an-smpp-external-account).
 
    Por padrão, o regex extrai o campo **err:** conforme definido pela seção **Apêndice B** da **especificação 3.4 SMPP**.
 
-* Tudo que vem após o símbolo da barra vertical (|) é exibido somente na coluna **[!UICONTROL First text]** da tabela **[!UICONTROL Delivery log qualification]**. Este conteúdo é sempre substituído por **#MESSAGE#** após a mensagem ser normalizada. Esse processo evita ter várias entradas para erros semelhantes e é igual ao dos emails. Para obter mais informações, consulte [Qualificação de email de devolução](../../delivery/using/understanding-delivery-failures.md#bounce-mail-qualification).
+* Tudo que vem após o símbolo da barra vertical (|) é exibido somente na coluna **[!UICONTROL First text]** da tabela **[!UICONTROL Delivery log qualification]**. Este conteúdo é sempre substituído por **#MESSAGE#** após a mensagem ser normalizada. Esse processo evita ter várias entradas para erros semelhantes e é igual ao dos emails. Para obter mais informações, consulte [Qualificação de email de devolução](understanding-delivery-failures.md#bounce-mail-qualification).
 
 O conector SMPP genérico estendido aplica uma heurística para encontrar valores padrão adequados: se o status começar com **DELIV**, é considerado um sucesso porque ele corresponde aos status comuns **DELIVRD** ou **DELIVERED** usados pela maioria dos provedores. Qualquer outro status gera uma falha grave.
