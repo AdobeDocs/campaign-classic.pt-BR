@@ -6,9 +6,9 @@ audience: installation
 content-type: reference
 topic-tags: installing-campaign-in-windows-
 exl-id: 041c4431-baae-4e64-9e9a-0daa5123bd8a
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 3958fff140cc9bf6c371f0c4207cafc9a27bb725
 workflow-type: tm+mt
-source-wordcount: '961'
+source-wordcount: '971'
 ht-degree: 4%
 
 ---
@@ -108,6 +108,9 @@ Agora você deve testar se a configuração está correta.
 Para fazer isso, siga as etapas abaixo:
 
 1. Reinicie o servidor IIS usando a linha de comando **iisreset**.
+
+1. Inicie o serviço Adobe Campaign e verifique se ele está em execução.
+
 1. Teste o módulo de rastreamento inserindo o seguinte URL em um navegador da Web:
 
    ```
