@@ -6,7 +6,7 @@ audience: delivery
 content-type: reference
 topic-tags: using-seed-addresses
 exl-id: ae6eb4b0-b419-4661-9d63-e758f0242a0f
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: a129f49d4f045433899fd7fdbd057fb16d0ed36a
 workflow-type: tm+mt
 source-wordcount: '327'
 ht-degree: 100%
@@ -29,7 +29,7 @@ Há três modos de inserção possíveis:
 
 1. Importação de templates de endereços e adaptando-os de acordo com suas necessidades.
 
-   Para fazer isso, clique no link **[!UICONTROL Import seed templates...]** e selecione a pasta que contém os templates de endereço. Para obter mais informações, consulte [esta seção](../../delivery/using/creating-seed-addresses.md#creating-seed-address-templates).
+   Para fazer isso, clique no link **[!UICONTROL Import seed templates...]** e selecione a pasta que contém os templates de endereço. Para obter mais informações, consulte [esta seção](creating-seed-addresses.md#creating-seed-address-templates).
 
    Se necessário, depois da execução, clique duas vezes neles ou no botão **[!UICONTROL Detail...]** para adaptar o conteúdo de cada endereço.
 
@@ -37,13 +37,13 @@ Há três modos de inserção possíveis:
 
    Para fazer isso, clique no link **[!UICONTROL Edit the dynamic condition...]** e insira os parâmetros de seleção do seed address. Por exemplo, você pode incluir todos os seed addresses contidos em uma pasta específica ou seed addresses que pertencem a um departamento específico da sua organização.
 
-   Um exemplo é apresentado nesta seção: [Caso de uso: seleção de seed addresses por critérios](../../delivery/using/use-case--selecting-seed-addresses-on-criteria.md).
+   Um exemplo é apresentado nesta seção: [Caso de uso: seleção de seed addresses por critérios](use-case--selecting-seed-addresses-on-criteria.md).
 
 >[!NOTE]
 >
 >Essa opção é usada quando a tabela do recipient usada não é a tabela padrão **nms:recipient** e você está usando a funcionalidade de Renderização da caixa de entrada disponibilizada com o módulo **[!UICONTROL Deliverability]** do Adobe Campaign.
 >
->Para obter mais informações, consulte [Usar uma tabela de recipient externa](../../delivery/using/using-an-external-recipient-table.md) e a documentação sobre [Renderização de caixa de entrada](../../delivery/using/inbox-rendering.md).
+>Para obter mais informações, consulte [Usar uma tabela de recipient externa](using-an-external-recipient-table.md) e a documentação sobre [Renderização de caixa de entrada](inbox-rendering.md).
 
 Para deliveries, você também pode personalizar a maneira como os endereços são inseridos no arquivo de extração. Por padrão, eles são inseridos na ordem de classificação do arquivo de saída, mas você pode optar por inseri-los no final ou no início do arquivo, ou aleatoriamente entre os recipients do target principal.
 
