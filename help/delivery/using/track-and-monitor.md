@@ -5,7 +5,7 @@ audience: delivery
 content-type: reference
 topic-tags: deliveries-best-practices
 exl-id: a039a288-2e7b-4f35-9885-ead3ed4347af
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: a129f49d4f045433899fd7fdbd057fb16d0ed36a
 workflow-type: tm+mt
 source-wordcount: '430'
 ht-degree: 100%
@@ -21,7 +21,7 @@ Você clicou no botão **Enviar**? Vamos ver o que acontece. Depois que o delive
 Para controlar suas campanhas, você deve garantir que a mensagem tenha sido entregue aos recipients.
 
 No painel de delivery do Campaign é possível verificar as mensagens processadas e os logs de auditoria do delivery.
-Você também pode controlar o status das mensagens nos logs do delivery. [Saiba mais](../../delivery/using/about-delivery-monitoring.md).
+Você também pode controlar o status das mensagens nos logs do delivery. [Saiba mais](about-delivery-monitoring.md).
 
 E se os deliveries não estiverem sendo enviados e seu status permanecer **Pendente**?
 
@@ -41,7 +41,7 @@ Para conhecer melhor o comportamento dos recipients, você pode acompanhar como 
 
 **Dica**: o rastreamento de mensagens é habilitado por padrão. Para configurar URLs, selecione a opção Exibir URLs na seção inferior do assistente do delivery. Para cada URL da mensagem, você pode escolher se deseja ativar o rastreamento.
 
-Para obter mais informações, consulte a seção [Configuração de rastreamento](../../delivery/using/how-to-configure-tracked-links.md) e a descrição dos [Indicadores de rastreamento](../../reporting/using/delivery-reports.md#tracking-indicators).
+Para obter mais informações, consulte a seção [Configuração de rastreamento](how-to-configure-tracked-links.md) e a descrição dos [Indicadores de rastreamento](../../reporting/using/delivery-reports.md#tracking-indicators).
 
 ## Desempenho do delivery {#delivery-performances}
 
@@ -55,7 +55,7 @@ Para obter mais informações, consulte a seção [Configuração de rastreament
 
 * Não tente programar deliveries grandes juntos. Observe que pode levar de 5 a 10 minutos para que a carga seja uniformemente espalhada sobre o sistema.
 
-## Solução de problemas de delivery {#delivery-troubleshooting}
+## Solução de problemas de entrega {#delivery-troubleshooting}
 
 Ações específicas podem ser executadas para a resolução de problemas com deliveries:
 
@@ -63,6 +63,6 @@ Ações específicas podem ser executadas para a resolução de problemas com de
 
 * [Problemas de exibição de imagem](../../production/using/image-display-issues.md)
 
-* [Problemas de desempenho do delivery](../../delivery/using/delivery-performances.md)
+* [Problemas de desempenho do delivery](delivery-performances.md)
 
 * [Problemas com arquivos temporários](../../production/using/temporary-files.md) – *somente clientes locais*
