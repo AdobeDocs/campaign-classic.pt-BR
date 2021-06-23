@@ -6,7 +6,7 @@ audience: delivery
 content-type: reference
 topic-tags: using-delivery-templates
 exl-id: d943898c-06fe-451d-aa28-8a95665f4112
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: a129f49d4f045433899fd7fdbd057fb16d0ed36a
 workflow-type: tm+mt
 source-wordcount: '275'
 ht-degree: 100%
@@ -33,4 +33,4 @@ Há dois tipos de templates:
 
 >[!NOTE]
 >
->Os templates disponíveis dependem dos direitos de acesso, da sua configuração de instância e do contexto. Por exemplo, ao criar um serviço de informações, é possível vincular um template de delivery para mensagens de confirmação: você pode então acessar apenas os modelos cujo target mapping é o mapeamento de subscrição. Para obter mais informações, consulte [Selecionar um target mapping](../../delivery/using/selecting-a-target-mapping.md) e [Sobre serviços e assinaturas](../../delivery/using/about-services-and-subscriptions.md).
+>Os templates disponíveis dependem dos direitos de acesso, da sua configuração de instância e do contexto. Por exemplo, ao criar um serviço de informações, é possível vincular um template de delivery para mensagens de confirmação: você pode então acessar apenas os modelos cujo target mapping é o mapeamento de subscrição. Para obter mais informações, consulte [Selecionar um target mapping](selecting-a-target-mapping.md) e [Sobre serviços e assinaturas](about-services-and-subscriptions.md).
