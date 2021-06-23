@@ -6,7 +6,7 @@ audience: delivery
 content-type: reference
 topic-tags: a-b-testing
 exl-id: 4eb139a0-5342-4084-9f6d-d736e05bf1c6
-source-git-commit: 895aa2fd4fa9c7c71c0073e9be33c12d4e92c9fa
+source-git-commit: a129f49d4f045433899fd7fdbd057fb16d0ed36a
 workflow-type: tm+mt
 source-wordcount: '244'
 ht-degree: 98%
@@ -27,16 +27,16 @@ Além disso, o teste detalhado nesse caso de uso aborda apenas dois deliveries, 
 
 As principais etapas para executar esse caso de uso são:
 
-* [Etapa 1: criar um fluxo de trabalho de direcionamento](../../delivery/using/a-b-testing-uc-targeting-workflow.md)
-* [Etapa 2: configurar amostras de população](../../delivery/using/a-b-testing-uc-population-samples.md)
-* [Etapa 3: criar dois modelos de delivery](../../delivery/using/a-b-testing-uc-delivery-templates.md)
-* [Etapa 4: configurar os deliveries no fluxo de trabalho](../../delivery/using/a-b-testing-uc-configuring-deliveries.md)
-* [Etapa 5: criar o script](../../delivery/using/a-b-testing-uc-script.md)
-* [Etapa 6: definir o delivery final](../../delivery/using/a-b-testing-uc-final-delivery.md)
-* [Etapa 7: iniciar o fluxo de trabalho](../../delivery/using/a-b-testing-uc-start-workflow.md)
-* [Etapa 8: analisar o resultado](../../delivery/using/a-b-testing-uc-analyzing.md)
+* [Etapa 1: criar um fluxo de trabalho de direcionamento](a-b-testing-uc-targeting-workflow.md)
+* [Etapa 2: configurar amostras de população](a-b-testing-uc-population-samples.md)
+* [Etapa 3: criar dois modelos de delivery](a-b-testing-uc-delivery-templates.md)
+* [Etapa 4: configurar os deliveries no fluxo de trabalho](a-b-testing-uc-configuring-deliveries.md)
+* [Etapa 5: criar o script](a-b-testing-uc-script.md)
+* [Etapa 6: definir o delivery final](a-b-testing-uc-final-delivery.md)
+* [Etapa 7: iniciar o fluxo de trabalho](a-b-testing-uc-start-workflow.md)
+* [Etapa 8: analisar o resultado](a-b-testing-uc-analyzing.md)
 
 **Tópicos relacionados:**
 
-* [Introdução ao teste AB](../../delivery/using/get-started-a-b-testing.md)
-* [Configurar teste AB](../../delivery/using/configuring-a-b-testing.md)
+* [Introdução ao teste AB](get-started-a-b-testing.md)
+* [Configurar teste AB](configuring-a-b-testing.md)
