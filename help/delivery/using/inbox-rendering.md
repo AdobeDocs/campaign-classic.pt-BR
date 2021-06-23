@@ -6,7 +6,7 @@ audience: delivery
 content-type: reference
 topic-tags: deliverability-management
 exl-id: a3294e70-ac96-4e51-865f-b969624528ce
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: a129f49d4f045433899fd7fdbd057fb16d0ed36a
 workflow-type: tm+mt
 source-wordcount: '813'
 ht-degree: 100%
@@ -27,7 +27,7 @@ Os clientes de dispositivos móveis, mensagens e webmail disponíveis para a **R
 
 >[!NOTE]
 >
->A renderização da caixa de entrada não é necessária para testar a personalização nos deliveries. A personalização pode ser verificada com as ferramentas do Adobe Campaign, como **[!UICONTROL Preview]** e [Proofs](../../delivery/using/steps-validating-the-delivery.md#sending-a-proof).
+>A renderização da caixa de entrada não é necessária para testar a personalização nos deliveries. A personalização pode ser verificada com as ferramentas do Adobe Campaign, como **[!UICONTROL Preview]** e [Proofs](steps-validating-the-delivery.md#sending-a-proof).
 
 ## Ativação da renderização da Caixa de entrada {#activating-inbox-rendering}
 
@@ -82,6 +82,7 @@ Cada vez que você usa o recurso **[!UICONTROL Inbox rendering]** em um delivery
 >
 >* Cada vez que o relatório de renderização da Caixa de Entrada é gerado, é deduzido um token por cliente da mensagem: um token para a renderização do Outlook 2000, um para a renderização do Outlook 2010, um para a renderização do Apple Mail 9 e assim por diante.
 >* Para o mesmo delivery, se você gerar a renderização da Caixa de Entrada novamente, o número de tokens disponíveis será reduzido novamente pelo número de renderizações geradas.
+
 >
 
 
@@ -96,14 +97,14 @@ Normalmente, o recurso de renderização da Caixa de Entrada é usado para testa
 
 Após criar seu delivery de email e definir seu conteúdo, assim como a população alvo, siga as etapas abaixo.
 
-Para obter mais informações sobre como criar, desenvolver e segmentar um delivery, consulte [esta seção](../../delivery/using/about-email-channel.md).
+Para obter mais informações sobre como criar, desenvolver e segmentar um delivery, consulte [esta seção](about-email-channel.md).
 
 1. Na barra superior do delivery, clique no botão **[!UICONTROL Inbox rendering]**.
 1. Selecione **[!UICONTROL Analyze]** para iniciar o processo de captura.
 
    ![](assets/s_tn_inbox_rendering_button.png)
 
-   Uma prova é enviada. Você pode acessar as miniaturas de renderização nessa prova alguns minutos após o envio dos emails. Para obter mais informações sobre o envio de provas, consulte [esta seção](../../delivery/using/steps-validating-the-delivery.md#sending-a-proof).
+   Uma prova é enviada. Você pode acessar as miniaturas de renderização nessa prova alguns minutos após o envio dos emails. Para obter mais informações sobre o envio de provas, consulte [esta seção](steps-validating-the-delivery.md#sending-a-proof).
 
 1. Após ser enviada, a prova aparece na lista de delivery. Clique duas vezes nela.
 
