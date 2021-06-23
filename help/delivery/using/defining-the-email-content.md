@@ -6,7 +6,7 @@ audience: delivery
 content-type: reference
 topic-tags: sending-emails
 exl-id: 46212929-fd2d-44a2-897e-35f98e88af36
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: a129f49d4f045433899fd7fdbd057fb16d0ed36a
 workflow-type: tm+mt
 source-wordcount: '1990'
 ht-degree: 100%
@@ -23,7 +23,7 @@ Para definir o nome e o endereço do remetente que aparecerá no cabeçalho das 
 
 Todas as informações necessárias para criação dos cabeçalhos de mensagens de email devem ser inseridas nessa janela. Essas informações podem ser personalizadas. Para fazer isso, use os botões à direita dos campos de entrada para inserir campos de personalização.
 
-Para saber como inserir e usar campos de personalização, consulte a seção [Sobre personalização](../../delivery/using/about-personalization.md).
+Para saber como inserir e usar campos de personalização, consulte a seção [Sobre personalização](about-personalization.md).
 
 >[!NOTE]
 >
@@ -53,7 +53,7 @@ Por exemplo, na mensagem acima, o assunto da mensagem é personalizado para cada
 
 >[!NOTE]
 >
->O uso de campos de personalização é apresentado em [Sobre personalização](../../delivery/using/about-personalization.md).
+>O uso de campos de personalização é apresentado em [Sobre personalização](about-personalization.md).
 
 Também é possível inserir emoticons na linha do assunto com a janela pop-up **[!UICONTROL Insert emoticon]**.
 
@@ -91,7 +91,7 @@ As mensagens são enviadas em formato de texto ou HTML por padrão, de acordo co
 
    >[!NOTE]
    >
-   >O uso de campos de personalização é apresentado em [Sobre personalização](../../delivery/using/about-personalization.md).
+   >O uso de campos de personalização é apresentado em [Sobre personalização](about-personalization.md).
 
    As guias na parte inferior da página permitem exibir o código HTML da página que está sendo criada e exibir a renderização da mensagem com sua personalização. Para iniciar essa exibição, clique em **[!UICONTROL Preview]** e selecione um recipient usando o botão **[!UICONTROL Test personalization]** na barra de ferramentas. Você pode selecionar um recipient no(s) target(s) definido(s) ou escolher outro.
 
@@ -133,11 +133,11 @@ Select the format of the email in the lower section of the window:
 
   The message is sent in text format. HTML format will not be sent, but used for the mirror page only when the recipient clicks on the message.-->
 
-## Definição do conteúdo interativo {#amp-for-email-format}
+## Definição do conteúdo interativo  {#amp-for-email-format}
 
 O Adobe Campaign possibilita experimentar o novo formato interativo [AMP for email](https://amp.dev/about/email/), que permite o envio de emails dinâmicos, sob determinadas condições.
 
-Para obter mais informações, consulte [esta seção](../../delivery/using/defining-interactive-content.md).
+Para obter mais informações, consulte [esta seção](defining-interactive-content.md).
 
 ## Uso da gestão de conteúdo {#using-content-management}
 
@@ -151,7 +151,7 @@ Uma guia adicional permite inserir conteúdo que será integrado e formatado aut
 
 >[!NOTE]
 >
->Para obter mais informações sobre o gerenciamento de conteúdo no Adobe Campaign, consulte [esta seção](../../delivery/using/about-content-management.md).
+>Para obter mais informações sobre o gerenciamento de conteúdo no Adobe Campaign, consulte [esta seção](about-content-management.md).
 
 ## Inserir emoticons {#inserting-emoticons}
 
@@ -164,7 +164,7 @@ Uma guia adicional permite inserir conteúdo que será integrado e formatado aut
 
 1. Clique no botão **[!UICONTROL Close]** quando terminar.
 
-Para personalizar a lista de emoticons, consulte esta [página](../../delivery/using/customizing-emoticon-list.md).
+Para personalizar a lista de emoticons, consulte esta [página](customizing-emoticon-list.md).
 
 ## Adição de imagens {#adding-images}
 
@@ -215,7 +215,7 @@ Quando você abre conteúdo HTML com imagens incluídas no assistente do deliver
 
 >[!NOTE]
 >
->Para evitar problemas de desempenho, ao incluir imagens baixadas de um URL personalizado como [anexo](../../delivery/using/attaching-files.md), cada tamanho de imagem não deve exceder 100.000 bytes por padrão. Esse limite recomendado pode ser configurado na [lista de opções do Campaign Classic](../../installation/using/configuring-campaign-options.md#delivery).
+>Para evitar problemas de desempenho, ao incluir imagens baixadas de um URL personalizado como [anexo](attaching-files.md), cada tamanho de imagem não deve exceder 100.000 bytes por padrão. Esse limite recomendado pode ser configurado na [lista de opções do Campaign Classic](../../installation/using/configuring-campaign-options.md#delivery).
 
 Veja a seguir um exemplo de delivery com quatro imagens:
 
