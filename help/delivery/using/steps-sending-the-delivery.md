@@ -6,7 +6,7 @@ audience: delivery
 content-type: reference
 topic-tags: about-deliveries-and-channels
 exl-id: 0411686e-4f13-401e-9333-e14b05ebe9cd
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: a129f49d4f045433899fd7fdbd057fb16d0ed36a
 workflow-type: tm+mt
 source-wordcount: '1521'
 ht-degree: 100%
@@ -41,13 +41,13 @@ Antes de enviar o delivery, você poderá definir os parâmetros de envio nas pr
    >
    >A utilização dessa opção não é recomendada ao instalar usando o mid-sourcing para não chamar mta. Para obter mais informações sobre como configurar o servidor SMTP, consulte [esta seção](../../installation/using/configure-delivery-settings.md).
 
-* **[!UICONTROL Email BCC]**: essa opção permite armazenar emails em um sistema externo por meio do CCO simplesmente adicionando um endereço de email de CCO ao target da sua mensagem. Para obter mais informações, consulte [esta seção](../../delivery/using/sending-messages.md#archiving-emails).
+* **[!UICONTROL Email BCC]**: essa opção permite armazenar emails em um sistema externo por meio do CCO simplesmente adicionando um endereço de email de CCO ao target da sua mensagem. Para obter mais informações, consulte [esta seção](sending-messages.md#archiving-emails).
 
 ## Confirmação do delivery {#confirming-delivery}
 
 Depois que o delivery estiver configurado e pronto para ser enviado, certifique-se de executar a análise do delivery.
 
-Para fazer isso, clique em **[!UICONTROL Send]**, selecione a ação desejada e clique em **[!UICONTROL Analyze]**. Para obter mais informações, consulte [Iniciar a análise](../../delivery/using/steps-validating-the-delivery.md#analyzing-the-delivery).
+Para fazer isso, clique em **[!UICONTROL Send]**, selecione a ação desejada e clique em **[!UICONTROL Analyze]**. Para obter mais informações, consulte [Iniciar a análise](steps-validating-the-delivery.md#analyzing-the-delivery).
 
 ![](assets/s_ncs_user_email_del_send.png)
 
@@ -57,9 +57,9 @@ Você poderá fechar o assistente do delivery e controlar a execução do delive
 
 Após enviar as mensagens, você pode monitorar e rastrear seus deliveries. Para obter mais informações, consulte essas seções.
 
-* [Monitorar um delivery](../../delivery/using/about-delivery-monitoring.md)
-* [Noções básicas sobre falhas de delivery](../../delivery/using/understanding-delivery-failures.md)
-* [Sobre o rastreamento de mensagens](../../delivery/using/about-message-tracking.md)
+* [Monitoramento de uma entrega](about-delivery-monitoring.md)
+* [Noções básicas sobre falhas de entrega](understanding-delivery-failures.md)
+* [Sobre o rastreamento de mensagens](about-message-tracking.md)
 
 ## Agendando o envio do delivery {#scheduling-the-delivery-sending}
 
@@ -131,15 +131,15 @@ Para balancear a carga, você pode dividir deliveries em vários lotes. Configur
       No exemplo abaixo, a primeira onda representa 25% do número total de mensagens incluídas no delivery e iniciará imediatamente. As próximas duas ondas completam o delivery e são definidas para começar em intervalos de seis horas.
 
       ![](assets/s_ncs_user_wizard_waves_create.png)
-   Uma regra de tipologia específica, **[!UICONTROL Wave scheduling check]**, garante que a última onda seja planejada antes do limite da validade do delivery. As tipologias de campanha e suas regras, configuradas na guia **[!UICONTROL Typology]** das propriedades de delivery, são apresentadas em [Processo de validação com tipologias](../../delivery/using/steps-validating-the-delivery.md#validation-process-with-typologies).
+   Uma regra de tipologia específica, **[!UICONTROL Wave scheduling check]**, garante que a última onda seja planejada antes do limite da validade do delivery. As tipologias de campanha e suas regras, configuradas na guia **[!UICONTROL Typology]** das propriedades de delivery, são apresentadas em [Processo de validação com tipologias](steps-validating-the-delivery.md#validation-process-with-typologies).
 
    >[!IMPORTANT]
    >
    >Certifique-se de que as últimas ondas não excedam o prazo do delivery, que é definido na guia **[!UICONTROL Validity]**. Caso contrário, algumas mensagens podem não ser enviadas.
    >
-   >Você também deverá permitir tempo suficiente para novas tentativas ao configurar as últimas ondas. Consulte [esta seção](../../delivery/using/steps-sending-the-delivery.md#configuring-retries).
+   >Você também deverá permitir tempo suficiente para novas tentativas ao configurar as últimas ondas. Consulte [esta seção](steps-sending-the-delivery.md#configuring-retries).
 
-1. Para monitorar seus envios, vá para os logs de delivery. Consulte [esta página](../../delivery/using/delivery-dashboard.md#delivery-logs-and-history).
+1. Para monitorar seus envios, vá para os logs de delivery. Consulte [esta página](delivery-dashboard.md#delivery-logs-and-history).
 
    Você pode ver os deliveries que já foram enviados nas ondas processadas (status **[!UICONTROL Sent]**) e os deliveries a serem enviados nas ondas restantes (status **[!UICONTROL Pending]**).
 
@@ -167,11 +167,11 @@ Os dois exemplos abaixo são os casos de uso mais comuns para usar várias ondas
 
 ## Configurando novas tentativas {#configuring-retries}
 
-As mensagens temporariamente não entregues devido a um erro **Suave** ou **Ignorado** estão sujeitas a uma repetição automática. Os tipos de falha de delivery são apresentados nesta [seção](../../delivery/using/understanding-delivery-failures.md#delivery-failure-types-and-reasons).
+As mensagens temporariamente não entregues devido a um erro **Suave** ou **Ignorado** estão sujeitas a uma repetição automática. Os tipos de falha de delivery são apresentados nesta [seção](understanding-delivery-failures.md#delivery-failure-types-and-reasons).
 
 >[!IMPORTANT]
 >
->Para instalações hospedadas ou híbridas, se você tiver atualizado para o [MTA aprimorado](../../delivery/using/sending-with-enhanced-mta.md), as configurações de nova tentativa no delivery não serão mais usadas pelo Campaign. As tentativas de rejeição temporária e o tempo entre elas são determinados pelo MTA aprimorado com base no tipo e na gravidade das respostas de rejeição provenientes do domínio de email da mensagem.
+>Para instalações hospedadas ou híbridas, se você tiver atualizado para o [MTA aprimorado](sending-with-enhanced-mta.md), as configurações de nova tentativa no delivery não serão mais usadas pelo Campaign. As tentativas de rejeição temporária e o tempo entre elas são determinados pelo MTA aprimorado com base no tipo e na gravidade das respostas de rejeição provenientes do domínio de email da mensagem.
 
 Para instalações no local e instalações hospedadas/híbridas usando o MTA herdado do Campaign, a seção central da guia **[!UICONTROL Delivery]** para parâmetros de delivery indica quantas tentativas devem ser executadas no dia seguinte ao delivery e o atraso mínimo entre as tentativas.
 
@@ -191,7 +191,7 @@ Quando o delivery for iniciado, as mensagens (e todas as tentativas) poderão se
 
    >[!IMPORTANT]
    >
-   >Para instalações hospedadas ou híbridas, se você tiver atualizado para o [MTA aprimorado](../../delivery/using/sending-with-enhanced-mta.md), a configuração **[!UICONTROL Delivery duration]** nos deliveries de email do Campaign será usada somente se definida como **3,5 dias ou menos.**. Se você definir um valor superior a 3,5 dias, ele não será levado em consideração.
+   >Para instalações hospedadas ou híbridas, se você tiver atualizado para o [MTA aprimorado](sending-with-enhanced-mta.md), a configuração **[!UICONTROL Delivery duration]** nos deliveries de email do Campaign será usada somente se definida como **3,5 dias ou menos.**. Se você definir um valor superior a 3,5 dias, ele não será levado em consideração.
 
 * **Limite da validade de recursos**: o campo **[!UICONTROL Validity limit]** é usado para recursos carregados, principalmente para a mirror page e imagens. Os recursos desta página são válidos por um tempo limitado (para economizar espaço em disco).
 
