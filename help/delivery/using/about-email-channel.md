@@ -6,7 +6,7 @@ audience: delivery
 content-type: reference
 topic-tags: sending-emails
 exl-id: dbdfc04a-691b-470d-b96d-4c8a9531327d
-source-git-commit: 895aa2fd4fa9c7c71c0073e9be33c12d4e92c9fa
+source-git-commit: a129f49d4f045433899fd7fdbd057fb16d0ed36a
 workflow-type: tm+mt
 source-wordcount: '137'
 ht-degree: 82%
@@ -25,10 +25,10 @@ Antes de começar a enviar emails:
 
 As principais etapas para enviar um email são as seguintes:
 
-* [Criar uma entrega de email](../../delivery/using/creating-an-email-delivery.md)
-* [Definir a população do target](../../delivery/using/steps-defining-the-target-population.md)
-* [Definir o conteúdo do email](../../delivery/using/defining-the-email-content.md)
-* [Enviar o email](../../delivery/using/sending-messages.md)
-* [Monitorar o delivery](../../delivery/using/about-delivery-monitoring.md)
+* [Criar uma entrega de email](creating-an-email-delivery.md)
+* [Definir a população do target](steps-defining-the-target-population.md)
+* [Definir o conteúdo do email](defining-the-email-content.md)
+* [Enviar o email](sending-messages.md)
+* [Monitorar o delivery](about-delivery-monitoring.md)
 
 As seções abaixo fornecem as informações específicas ao canal de email. Para obter mais informações sobre como criar um delivery, consulte [esta seção](steps-about-delivery-creation-steps.md).
