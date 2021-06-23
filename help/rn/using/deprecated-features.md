@@ -6,9 +6,9 @@ feature: Visão geral
 role: Business Practitioner
 level: Beginner
 exl-id: d60d67de-6618-4f3b-be4a-ad7633ab5645
-source-git-commit: 778f0a9436f26c10b266019f761b499ab7547be1
+source-git-commit: c612b47463427751eff27d6092e371c918c87d93
 workflow-type: tm+mt
-source-wordcount: '1633'
+source-wordcount: '1634'
 ht-degree: 95%
 
 ---
@@ -43,9 +43,9 @@ Os clientes são aconselhados a verificar se utilizam o recurso/funcionalidade e
   </tr>
     <tr>
   <td>Conector de dados do Adobe Analytics<br></td>
-   <td><p>A partir da versão 21.1 do Campaign, o Conector de dados do Adobe Analytics não será mais utilizado.</p>
+   <td><p>A partir da versão 21.1.3 do Campaign, o Conector de dados do Adobe Analytics será descontinuado.</p>
    <p>Se estiver usando este conector, precisará adaptar sua implementação adequadamente. <a href="../../platform/using/adobe-analytics-connector.md">Saiba mais</a></p>
-  <p><em>Data de remoção do público alvo: 2022</em></p>
+  <p><em>Data de remoção do Target: 1° de março de 2022</em></p>
   </td>
  </tr>
     <tr>
@@ -138,7 +138,7 @@ Os seguintes sistemas foram descontinuados para o Campaign Classic. Consulte a [
 
 A partir da versão 20.2, os conectores SMS herdados ficarão obsoletos. Consulte a [seção recursos obsoletos](#deprecated-features)
 
-## Fim da compatibilidade do {#end-of-compatibility}
+## Fim da compatibilidade {#end-of-compatibility}
 
 >[!CAUTION]
 >
