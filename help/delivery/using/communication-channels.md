@@ -6,7 +6,7 @@ audience: delivery
 content-type: reference
 topic-tags: about-deliveries-and-channels
 exl-id: 92b5e013-b619-4f0b-b0b1-1fc2e653ceac
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: a129f49d4f045433899fd7fdbd057fb16d0ed36a
 workflow-type: tm+mt
 source-wordcount: '1204'
 ht-degree: 100%
@@ -21,18 +21,18 @@ As funcionalidades principais incluem definição de metas, definição e person
 
 >[!NOTE]
 >
->O Adobe Campaign oferece um conjunto de ferramentas para monitorar sua capacidade de delivery e otimizar o envio de emails. Saiba mais [nesta seção](../../delivery/using/about-deliverability.md).
+>O Adobe Campaign oferece um conjunto de ferramentas para monitorar sua capacidade de delivery e otimizar o envio de emails. Saiba mais [nesta seção](about-deliverability.md).
 
 O envio de deliveries pode ser automatizado preparando-se um delivery e/ou enviando-o no processo de um workflow. Para obter mais informações sobre atividades do tipo delivery em workflows, consulte [esta seção](../../workflow/using/about-action-activities.md).
 
 O Adobe Campaign oferece os seguintes canais de entrega:
 
-1. **Canal de email**: deliveries de email permitem enviar emails personalizados para a população do target. Consulte [Sobre o canal de email](../../delivery/using/about-email-channel.md).
-1. **Canal de mala direta**: deliveries de mala direta permitem gerar um arquivo de extração que contém dados sobre a população do target. Consulte [Sobre o canal de correspondência direta](../../delivery/using/about-direct-mail-channel.md)
-1. **Canal móvel**: deliveries em canais móveis permitem enviar mensagens SMS ou por LINE personalizadas para a população do target. Consulte [Canal de SMS](../../delivery/using/sms-channel.md).
-1. **Canal de aplicativo móvel**: os deliveries por aplicativo móvel permitem enviar as notificações para sistemas iOs e Android. Consulte o capítulo [Canal de aplicativo móvel](../../delivery/using/about-mobile-app-channel.md).
+1. **Canal de email**: deliveries de email permitem enviar emails personalizados para a população do target. Consulte [Sobre o canal de email](about-email-channel.md).
+1. **Canal de mala direta**: deliveries de mala direta permitem gerar um arquivo de extração que contém dados sobre a população do target. Consulte [Sobre o canal de correspondência direta](about-direct-mail-channel.md)
+1. **Canal móvel**: deliveries em canais móveis permitem enviar mensagens SMS ou por LINE personalizadas para a população do target. Consulte [Canal de SMS](sms-channel.md).
+1. **Canal de aplicativo móvel**: os deliveries por aplicativo móvel permitem enviar as notificações para sistemas iOs e Android. Consulte o capítulo [Canal de aplicativo móvel](about-mobile-app-channel.md).
 
-   Outros canais são descritos [nesta página](../../delivery/using/steps-about-delivery-creation-steps.md#other-channels).
+   Outros canais são descritos [nesta página](steps-about-delivery-creation-steps.md#other-channels).
 
    >[!NOTE]
    >
@@ -49,7 +49,7 @@ As contas externas são configuradas por meio do nó **[!UICONTROL Administratio
 
 ## Deliveries de email {#email-deliveries}
 
-O [Canal de email](../../delivery/using/about-email-channel.md) é um dos canais principais do Adobe Campaign, permitindo agendar e enviar emails personalizados para targets específicos.
+O [Canal de email](about-email-channel.md) é um dos canais principais do Adobe Campaign, permitindo agendar e enviar emails personalizados para targets específicos.
 
 Você pode enviar diferentes tipos de emails:
 
@@ -57,13 +57,13 @@ Você pode enviar diferentes tipos de emails:
 * Emails recorrentes: em uma campanha, envie o mesmo email regularmente e agregue cada envio e seus relatórios periodicamente. O mesmo email é enviado, mas geralmente para um target diferente, com base no target qualificado do dia do envio. Um exemplo comum é um email de aniversário. Para obter mais informações, consulte [Deliveires recorrentes](../../workflow/using/recurring-delivery.md).
 * Emails transacionais: emails unitários que são acionados com base no comportamento dos clientes. Consulte [Mensagens transacionais](../../message-center/using/about-transactional-messaging.md).
 
-Para saber mais sobre o uso de delivery e recomendações, consulte [Práticas recomendadas de Delivery](../../delivery/using/delivery-best-practices.md) de campanha .
+Para saber mais sobre o uso de delivery e recomendações, consulte [Práticas recomendadas de Delivery](delivery-best-practices.md) de campanha .
 
 Para obter mais informações sobre tipos diferentes de entrega, consulte [esta página](#types-of-deliveries).
 
 ## Deliveries móveis {#mobile-deliveries}
 
-O Adobe Campaign permite que você faça deliveires de mensagens por [SMS](../../delivery/using/sms-channel.md) e [LINE](../../delivery/using/line-channel.md) em celulares.
+O Adobe Campaign permite que você faça deliveires de mensagens por [SMS](sms-channel.md) e [LINE](line-channel.md) em celulares.
 
 Para mensagens SMS, você poderá criar, modificar e personalizar mensagens somente no formato de texto. Você também poderá visualizar suas mensagens SMS antes de enviá-las.
 
@@ -76,17 +76,17 @@ Para fazer delivery de mensagens SMS ou LINE a um celular, você vai precisar de
 
 ## Notificações por push {#push-notifications}
 
-O Adobe Campaign permite enviar [notificações por push](../../delivery/using/about-mobile-app-channel.md) personalizadas e segmentadas em dispositivos móveis iOS e Android, por meio de aplicativos dedicados. Depois que as etapas de configuração e integração forem executadas, os deliveries do iOS e do Android poderão ser criados e enviados. Você também poderá criar notificações avançadas com imagens ou vídeos.
+O Adobe Campaign permite enviar [notificações por push](about-mobile-app-channel.md) personalizadas e segmentadas em dispositivos móveis iOS e Android, por meio de aplicativos dedicados. Depois que as etapas de configuração e integração forem executadas, os deliveries do iOS e do Android poderão ser criados e enviados. Você também poderá criar notificações avançadas com imagens ou vídeos.
 
 ## Correspondência direta {#direct-mail}
 
-A [mala direta](../../delivery/using/about-direct-mail-channel.md) é um canal offline que permite personalizar e gerar o arquivo exigido por provedores de mala direta. Ela oferece a possibilidade de misturar canais online e offline nas jornadas do cliente.
+A [mala direta](about-direct-mail-channel.md) é um canal offline que permite personalizar e gerar o arquivo exigido por provedores de mala direta. Ela oferece a possibilidade de misturar canais online e offline nas jornadas do cliente.
 
 Os canais online permitem que você crie mensagens (email, SMS, delivery de aplicativo móvel, etc.) e envie-as para seu público diretamente do Adobe Campaign. Com canais offline, é diferente. Quando você prepara um delivery direto de correspondência direta, o Adobe Campaign gera um arquivo incluindo todos os perfis do target e as informações de contato escolhidas (endereço postal por exemplo). Você poderá enviar esse arquivo para seu provedor de correspondência direta que irá cuidar realmente do envio.
 
 ## Outros canais {#other-channels}
 
-O modelo de entrega do Adobe Campaign oferece o Telephone, usado para criar entregas externas. A utilização desse canal implica que você configure metodologias específicas para processar arquivos de output. As etapas de configuração são as mesmas do [Canal de correspondência direta](../../delivery/using/about-direct-mail-channel.md).
+O modelo de entrega do Adobe Campaign oferece o Telephone, usado para criar entregas externas. A utilização desse canal implica que você configure metodologias específicas para processar arquivos de output. As etapas de configuração são as mesmas do [Canal de correspondência direta](about-direct-mail-channel.md).
 
 >[!NOTE]
 >
@@ -110,7 +110,7 @@ Os deliveries podem ser criados a partir da lista de deliveries ou em um fluxo d
 
 Os workflows também fornecem atividades de delivery específicas de acordo com o tipo de canal que você deseja usar. Para obter mais informações sobre essas atividades, consulte [esta seção](../../workflow/using/cross-channel-deliveries.md).
 
-### Delivery recorrente {#recurring-delivery}
+### Entrega recorrente {#recurring-delivery}
 
 Um **delivery recorrente** permite criar um novo delivery sempre que a atividade for executada. Isso evita que você crie um novo delivery para tarefas recorrentes.
 
@@ -118,7 +118,7 @@ Como exemplo, se você executar esse tipo de atividade uma vez por mês, acabar�
 
 Os deliveries recorrentes são criados em workflows através da [atividade Recurring delivery.](../../workflow/using/recurring-delivery.md) Um exemplo dessa atividade que está sendo usada é apresentado nesta seção: [Criação de um delivery recorrente em um workflow de direcionamento](../../workflow/using/sending-a-birthday-email.md#creating-a-recurring-delivery-in-a-targeting-workflow).
 
-### Delivery contínuo {#continuous-delivery}
+### Entrega contínua {#continuous-delivery}
 
 Um **delivery contínuo** permite que você adicione novos recipients a um delivery existente, o que evita a necessidade de criar um novo delivery a cada execução.
 
