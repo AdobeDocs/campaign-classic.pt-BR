@@ -6,14 +6,14 @@ audience: delivery
 content-type: reference
 topic-tags: monitoring-deliveries
 exl-id: 0663257a-3a70-4e0c-bbeb-8242aaa0876d
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: a129f49d4f045433899fd7fdbd057fb16d0ed36a
 workflow-type: tm+mt
 source-wordcount: '629'
 ht-degree: 100%
 
 ---
 
-# Status de delivery {#delivery-statuses}
+# Status da entrega {#delivery-statuses}
 
 <!--ajouter intro 
 
@@ -23,13 +23,13 @@ Depois que um delivery é enviado, o painel do delivery exibe um status que perm
 
 ![](assets/delivery-status.png)
 
-Para obter mais detalhes sobre as diferentes falhas de delivery que podem ser encontradas e como resolvê-las, consulte [esta página](../../delivery/using/understanding-delivery-failures.md).
+Para obter mais detalhes sobre as diferentes falhas de delivery que podem ser encontradas e como resolvê-las, consulte [esta página](understanding-delivery-failures.md).
 
 **Tópicos relacionados:**
 
-* [Painel de entrega](../../delivery/using/delivery-dashboard.md)
-* [Solução de problemas de entrega](../../delivery/using/delivery-troubleshooting.md)
-* [Sobre a capacidade de delivery](../../delivery/using/about-deliverability.md)
+* [Painel de entrega](delivery-dashboard.md)
+* [Solução de problemas de entrega](delivery-troubleshooting.md)
+* [Sobre a capacidade de entrega](about-deliverability.md)
 
 ## Lista de status de delivery {#list-delivery-statuses}
 
@@ -51,7 +51,7 @@ Para obter mais detalhes sobre as diferentes falhas de delivery que podem ser en
   </tr> 
   <tr> 
    <td> Failed<br /> </td> 
-   <td> O delivery não conseguiu alcançar o recipient devido a um endereço inválido ou a uma caixa de entrada cheia, por exemplo. Ele também pode ser vinculado a um problema com blocos de personalização, pois esses blocos podem gerar erros quando os schemas não correspondem ao mapeamento do delivery. Consulte <a href="../../delivery/using/understanding-delivery-failures.md" target="_blank">Conhecendo as falhas de delivery</a><br /> </td> 
+   <td> O delivery não conseguiu alcançar o recipient devido a um endereço inválido ou a uma caixa de entrada cheia, por exemplo. Ele também pode ser vinculado a um problema com blocos de personalização, pois esses blocos podem gerar erros quando os schemas não correspondem ao mapeamento do delivery. Consulte <a href="understanding-delivery-failures.md" target="_blank">Conhecendo as falhas de delivery</a><br /> </td> 
   </tr>
   <tr> 
    <td> Pending<br /> </td> 
@@ -67,7 +67,7 @@ Para obter mais detalhes sobre as diferentes falhas de delivery que podem ser en
   </tr> 
   <tr> 
    <td> Levado em consideração pelo provedor de serviço<br /> </td> 
-   <td> O provedor de serviços SMS recebeu o delivery.<br /> Para instalações hospedadas ou híbridas, se você atualizou para o <a href="../../delivery/using/sending-with-enhanced-mta.md" target="_blank">MTA aprimorado</a>, a mensagem foi repassada com êxito do Campaign para o MTA aprimorado.</td> 
+   <td> O provedor de serviços SMS recebeu o delivery.<br /> Para instalações hospedadas ou híbridas, se você atualizou para o <a href="sending-with-enhanced-mta.md" target="_blank">MTA aprimorado</a>, a mensagem foi repassada com êxito do Campaign para o MTA aprimorado.</td> 
   </tr> 
   <tr> 
    <td> Received on mobile<br /> </td> 
@@ -85,13 +85,13 @@ Para obter mais detalhes sobre as diferentes falhas de delivery que podem ser en
  </tbody> 
 </table>
 
-Para saber como otimizar a capacidade de delivery dos emails do Adobe Campaign, consulte [esta seção](../../delivery/using/about-deliverability.md). Para obter informações mais detalhadas sobre a capacidade de delivery, consulte o [Manual de práticas recomendadas de capacidade de delivery da Adobe](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/introduction.html?lang=pt-BR).
+Para saber como otimizar a capacidade de delivery dos emails do Adobe Campaign, consulte [esta seção](about-deliverability.md). Para obter informações mais detalhadas sobre a capacidade de delivery, consulte o [Manual de práticas recomendadas de capacidade de delivery da Adobe](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/introduction.html?lang=pt-BR).
 
 ## Status pendente {#pending-status}
 
 Após confirmar o delivery, você pode ver que o status do delivery é **[!UICONTROL Pending]**. Esse status significa que o processo de execução está aguardando a disponibilidade de alguns recursos.
 
-O status **[!UICONTROL Pending]** pode significar que o seu delivery foi agendado e está pendente até a data especificada. Para obter mais informações, consulte a seção [Agendamento de delivery](../../delivery/using/steps-sending-the-delivery.md#scheduling-the-delivery-sending).
+O status **[!UICONTROL Pending]** pode significar que o seu delivery foi agendado e está pendente até a data especificada. Para obter mais informações, consulte a seção [Agendamento de delivery](steps-sending-the-delivery.md#scheduling-the-delivery-sending).
 
 Se o delivery não estiver sendo enviado e o status permanecer **[!UICONTROL Pending]**, poderá ser devido a:
 
@@ -137,5 +137,5 @@ Se o delivery não estiver sendo enviado e o status permanecer **[!UICONTROL Pen
 **Tópicos relacionados:**
 
 * [Histórico e logs do delivery](#delivery-logs-and-history)
-* [Noções básicas sobre falhas de delivery](../../delivery/using/understanding-delivery-failures.md)
-* [Tipos e motivos de falha de delivery](../../delivery/using/understanding-delivery-failures.md#delivery-failure-types-and-reasons)
+* [Noções básicas sobre falhas de entrega](understanding-delivery-failures.md)
+* [Tipos e motivos de falha de delivery](understanding-delivery-failures.md#delivery-failure-types-and-reasons)
