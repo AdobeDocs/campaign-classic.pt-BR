@@ -6,7 +6,7 @@ audience: delivery
 content-type: reference
 topic-tags: sending-emails
 exl-id: 1bb36e71-9f1a-4553-b266-eca3f48688e2
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: a129f49d4f045433899fd7fdbd057fb16d0ed36a
 workflow-type: tm+mt
 source-wordcount: '888'
 ht-degree: 100%
@@ -71,13 +71,13 @@ Selecione o formato do email na seção inferior da janela:
 
 >[!NOTE]
 >
->Para obter mais informações sobre como definir o conteúdo de email, consulte [esta seção](../../delivery/using/defining-the-email-content.md).
+>Para obter mais informações sobre como definir o conteúdo de email, consulte [esta seção](defining-the-email-content.md).
 
 ## Geração da mirror page {#generating-mirror-page}
 
 A mirror page é uma página HTML acessível online através de um navegador da Web. Seu conteúdo é idêntico ao email.
 
-Por padrão, a mirror page é gerada se o link for inserido no conteúdo do email. Para obter mais informações sobre a inserção de blocos de personalização, consulte [Blocos de personalização](../../delivery/using/personalization-blocks.md).
+Por padrão, a mirror page é gerada se o link for inserido no conteúdo do email. Para obter mais informações sobre a inserção de blocos de personalização, consulte [Blocos de personalização](personalization-blocks.md).
 
 Nas propriedades de delivery, o campo **[!UICONTROL Mode]** da guia **[!UICONTROL Validity]** permite modificar o modo de geração desta página.
 
@@ -117,7 +117,7 @@ Você também pode definir um endereço específico nessa tela para investigar o
 
 ![](assets/s_ncs_user_email_del_properties_smtp_tab.png)
 
-Para obter mais informações sobre gerenciamento de rejeição de emails, consulte [esta seção](../../delivery/using/understanding-delivery-failures.md#bounce-mail-management).
+Para obter mais informações sobre gerenciamento de rejeição de emails, consulte [esta seção](understanding-delivery-failures.md#bounce-mail-management).
 
 ## Adição de cabeçalhos SMTP {#adding-smtp-headers}
 
