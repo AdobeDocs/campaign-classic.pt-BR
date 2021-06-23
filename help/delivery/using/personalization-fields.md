@@ -6,7 +6,7 @@ audience: delivery
 content-type: reference
 topic-tags: personalizing-deliveries
 exl-id: 67fd9a67-cb05-46cd-acd5-e42fde6f4d4f
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: a129f49d4f045433899fd7fdbd057fb16d0ed36a
 workflow-type: tm+mt
 source-wordcount: '880'
 ht-degree: 100%
@@ -75,7 +75,7 @@ Ao criar um email, iremos inserir o nome do recipient e depois adicionar a data 
 
 ## Otimização da personalização {#optimizing-personalization}
 
-Você pode otimizar a personalização usando uma opção dedicada: **[!UICONTROL Prepare the personalization data with a workflow]**, disponível na guia **[!UICONTROL Analysis]** das propriedades de delivery. Para saber mais sobre como analisar o delivery, consulte [esta seção](../../delivery/using/steps-validating-the-delivery.md#analyzing-the-delivery).
+Você pode otimizar a personalização usando uma opção dedicada: **[!UICONTROL Prepare the personalization data with a workflow]**, disponível na guia **[!UICONTROL Analysis]** das propriedades de delivery. Para saber mais sobre como analisar o delivery, consulte [esta seção](steps-validating-the-delivery.md#analyzing-the-delivery).
 
 Durante a análise de delivery, essa opção cria e executa automaticamente um workflow que armazena todos os dados vinculados ao público-alvo em uma tabela temporária, incluindo dados de tabelas vinculadas na FDA.
 
@@ -116,7 +116,7 @@ O valor padrão é de 5 segundos.
 
 Se essa opção for definida como 0, não haverá limite de tempo para a fase de personalização.
 
-## Vídeo tutorial {#personalization-fields-video}
+## Tutorial em vídeo {#personalization-fields-video}
 
 Saiba como adicionar um campo de personalização à linha de assunto e ao conteúdo de um delivery de email.
 
