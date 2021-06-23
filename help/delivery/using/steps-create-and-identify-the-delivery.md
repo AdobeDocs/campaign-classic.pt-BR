@@ -6,7 +6,7 @@ audience: delivery
 content-type: reference
 topic-tags: about-deliveries-and-channels
 exl-id: 6e37bc14-b1a9-42af-8c28-ae4b5bcaa055
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: a129f49d4f045433899fd7fdbd057fb16d0ed36a
 workflow-type: tm+mt
 source-wordcount: '271'
 ht-degree: 100%
@@ -30,7 +30,7 @@ Um modelo padrão é fornecido para cada canal que você instalou: mala direta, 
 >
 >Os canais oferecidos na lista dependem do contrato de licença.
 
-Você poderá criar novos modelos de delivery para pré-configurar parâmetros específicos de acordo com suas necessidades. Para obter mais informações, consulte [esta seção](../../delivery/using/about-templates.md).
+Você poderá criar novos modelos de delivery para pré-configurar parâmetros específicos de acordo com suas necessidades. Para obter mais informações, consulte [esta seção](about-templates.md).
 
 ## Identificando o delivery {#identifying-the-delivery}
 
@@ -49,7 +49,7 @@ Você precisa concluir os parâmetros para identificar o delivery. Para fazer is
 
 O conteúdo do delivery está pronto para ser configurado. A definição do conteúdo do delivery é específica para cada canal. Para obter mais informações, consulte a seção dedicada:
 
-* [Definição do conteúdo do email](../../delivery/using/defining-the-email-content.md)
-* [Definição do conteúdo do SMS](../../delivery/using/sms-create.md#defining-the-sms-content)
-* [Definição do conteúdo da correspondência direta](../../delivery/using/defining-the-direct-mail-content.md)
-* [Notificações por push](../../delivery/using/about-mobile-app-channel.md)
+* [Definição do conteúdo do email](defining-the-email-content.md)
+* [Definição do conteúdo do SMS](sms-create.md#defining-the-sms-content)
+* [Definição do conteúdo da correspondência direta](defining-the-direct-mail-content.md)
+* [Notificações por push](about-mobile-app-channel.md)
