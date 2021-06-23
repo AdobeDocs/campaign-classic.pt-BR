@@ -6,14 +6,14 @@ audience: delivery
 content-type: reference
 topic-tags: a-b-testing
 exl-id: ae046ef6-d850-4222-b82c-8ef5b3da7037
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: a129f49d4f045433899fd7fdbd057fb16d0ed36a
 workflow-type: tm+mt
 source-wordcount: '350'
 ht-degree: 100%
 
 ---
 
-# Introdução ao teste A/B {#get-started-a-b-testing}
+# Introdução ao teste AB {#get-started-a-b-testing}
 
 O teste A/B permite que você compare várias versões de um delivery entre si, a fim de identificar qual terá o maior impacto na população direcionada.
 
@@ -23,7 +23,7 @@ No exemplo abaixo, o target do delivery foi dividido em dois grupos, cada um rep
 
 ![](assets/a-b-testing-schema.png)
 
-Com o Campaign Classic, o teste A/B é implementado por meio de workflows, em que você especifica a população a ser direcionada, bem como os grupos que receberão cada variante (consulte [Configurar um teste A/B](../../delivery/using/configuring-a-b-testing.md)).
+Com o Campaign Classic, o teste A/B é implementado por meio de workflows, em que você especifica a população a ser direcionada, bem como os grupos que receberão cada variante (consulte [Configurar um teste A/B](configuring-a-b-testing.md)).
 
 As principais etapas são:
 
@@ -37,4 +37,4 @@ As principais etapas são:
 
 >[!NOTE]
 >
->Os workflows também permitem que você automatize seus processos identificando automaticamente a variante do delivery que teve melhor desempenho e, em seguida, enviando-a à população restante. Para saber mais, consulte este [caso de uso](../../delivery/using/a-b-testing-use-case.md) dedicado.
+>Os workflows também permitem que você automatize seus processos identificando automaticamente a variante do delivery que teve melhor desempenho e, em seguida, enviando-a à população restante. Para saber mais, consulte este [caso de uso](a-b-testing-use-case.md) dedicado.
