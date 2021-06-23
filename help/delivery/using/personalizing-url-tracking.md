@@ -6,7 +6,7 @@ audience: delivery
 content-type: reference
 topic-tags: tracking-messages
 exl-id: 3277726a-fd92-4720-8871-3d0422c7db70
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: a129f49d4f045433899fd7fdbd057fb16d0ed36a
 workflow-type: tm+mt
 source-wordcount: '164'
 ht-degree: 100%
@@ -19,7 +19,7 @@ As configurações avançadas de rastreamento de mensagem são acessíveis por m
 
 >[!NOTE]
 >
->A gestão de imagens em emails também é configurada nessa janela. Consulte [Adição de imagens](../../delivery/using/defining-the-email-content.md#adding-images).
+>A gestão de imagens em emails também é configurada nessa janela. Consulte [Adição de imagens](defining-the-email-content.md#adding-images).
 
 ![](assets/s_ncs_user_email_del_tracking_ico.png)
 
@@ -37,7 +37,7 @@ As configurações avançadas de rastreamento de mensagem são acessíveis por m
 
 Os URLs rastreados são listados na janela central em forma de árvore.
 
-É possível ativar ou desativar o rastreamento individualmente para cada URL da mensagem. Para obter mais informações, consulte [esta seção](../../delivery/using/how-to-configure-tracked-links.md).
+É possível ativar ou desativar o rastreamento individualmente para cada URL da mensagem. Para obter mais informações, consulte [esta seção](how-to-configure-tracked-links.md).
 
 A guia **[!UICONTROL Advanced]** permite personalizar as fórmulas de cálculo dos URLs rastreados e de abertura.
 
