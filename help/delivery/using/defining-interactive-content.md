@@ -6,14 +6,14 @@ audience: delivery
 content-type: reference
 topic-tags: sending-emails
 exl-id: 3110c371-bbf2-4ab2-a701-3f348b5c1e7f
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 94e609f3df94c553e2ec84ee427887a767b9af21
 workflow-type: tm+mt
-source-wordcount: '1578'
+source-wordcount: '1574'
 ht-degree: 100%
 
 ---
 
-# Definição do conteúdo interativo{#defining-interactive-content}
+# Definição do conteúdo interativo {#defining-interactive-content}
 
 O Adobe Campaign possibilita utilizar o novo formato interativo [AMP para Email](https://amp.dev/about/email/), que permite o envio de emails dinâmicos, sob determinadas condições.
 
@@ -27,7 +27,8 @@ Esse recurso está disponível por meio de um pacote dedicado no Adobe Campaign.
 
 >[!NOTE]
 >
-> Para arquiteturas híbridas e hospedadas, o pacote precisa ser instalado em todos os servidores, incluindo o [servidor de mid-sourcing](../../installation/using/mid-sourcing-server.md) e a [instância de execução](../../message-center/using/configuring-instances.md#execution-instance). Entre em contato com o executivo de contas.
+> Para arquiteturas híbridas e hospedadas, o pacote precisa ser instalado em todos os servidores, incluindo o [servidor de mid-sourcing](../../installation/using/mid-sourcing-server.md) e a [instância de execução](../../message-center/using/configuring-instances.md#execution-instance).
+
 
 ## Sobre o AMP for Email {#about-amp-for-email}
 
@@ -126,7 +127,7 @@ Para criar um email por meio do uso do formato AMP, siga as etapas abaixo.
    >
    >Se o email não contiver um HTML ou uma versão do texto sem formatação além do conteúdo do AMP, ele não poderá ser enviado.
 
-## Requisitos de delivery do AMP for Email{#amp-for-email-delivery-requirements}
+## Requisitos de delivery do AMP for Email {#amp-for-email-delivery-requirements}
 
 Ao criar o conteúdo do AMP no Adobe Campaign, para que um email dinâmico seja entregue é necessário atender às condições que são específicas dos provedores de email dos recipients.
 
@@ -201,7 +202,7 @@ Por exemplo, se uma lista de produtos é incluída no email, ao editar os preço
 >
 >Por padrão, a opção **[!UICONTROL AMP inclusion]** está definida como **[!UICONTROL No]**.
 
-## Vídeo tutorial {#amp-email-video}
+## Tutorial em vídeo {#amp-email-video}
 
 O vídeo abaixo explica como ativar o AMP no Adobe Campaign e mostra sua utilização.
 
