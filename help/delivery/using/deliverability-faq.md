@@ -6,7 +6,7 @@ audience: delivery
 content-type: reference
 topic-tags: deliverability-management
 exl-id: f94897c1-b44c-4100-ac50-a89b13fa6f2f
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: a129f49d4f045433899fd7fdbd057fb16d0ed36a
 workflow-type: tm+mt
 source-wordcount: '657'
 ht-degree: 100%
@@ -49,13 +49,13 @@ Se o problema persistir, entre em contato com os serviços comerciais ou de entr
    * O status **[!UICONTROL Denylisted]** é resultado de um ciclo de feedback (quando uma pessoa reporta uma mensagem como spam).
 
    * O status **[!UICONTROL Quarantined]** é resultado de um salto suave ou forte.
-   Para obter mais informações, consulte [esta seção](../../delivery/using/understanding-quarantine-management.md#quarantine-vs-denylist).
+   Para obter mais informações, consulte [esta seção](understanding-quarantine-management.md#quarantine-vs-denylist).
 
 * **O que significam os diferentes motivos de erro de quarentena?**
 
    Aqui estão os 10 possíveis motivos: não definido, usuário desconhecido, domínio inválido, endereço incluído na lista de bloqueios, recusado, erro ignorado, inacessível, conta desativada, caixa de correio cheia e não conectado.
 
-   Para obter mais informações, consulte [Entendendo o gerenciamento da quarentena](../../delivery/using/understanding-quarantine-management.md).
+   Para obter mais informações, consulte [Entendendo o gerenciamento da quarentena](understanding-quarantine-management.md).
 
 ## Remoção da lista de bloqueios {#remove-from-denylist}
 
