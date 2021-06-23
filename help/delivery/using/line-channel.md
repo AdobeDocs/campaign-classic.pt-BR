@@ -6,7 +6,7 @@ audience: delivery
 content-type: reference
 topic-tags: sending-messages-on-mobiles
 exl-id: 1baaabbd-9fd7-4d9b-b78e-d2a559d7dddb
-source-git-commit: 4a41aea9edfe5e6ca0454049cbb2892449eec153
+source-git-commit: a129f49d4f045433899fd7fdbd057fb16d0ed36a
 workflow-type: tm+mt
 source-wordcount: '1162'
 ht-degree: 39%
@@ -58,7 +58,7 @@ Para criar seu serviço [!DNL LINE]:
 
 1. Clique em **[!UICONTROL Save]**.
 
-Para obter mais informações sobre assinaturas e serviços, consulte [Gerenciamento de assinaturas](../../delivery/using/managing-subscriptions.md).
+Para obter mais informações sobre assinaturas e serviços, consulte [Gerenciamento de assinaturas](managing-subscriptions.md).
 
 ### Configurar conta externa LINE {#configure-line-external}
 
@@ -103,13 +103,13 @@ Para criar um delivery [!DNL LINE], é necessário seguir estas etapas:
 
    ![](assets/line_message_01.png)
 
-1. Identifique o delivery com um **[!UICONTROL Label]**, **[!UICONTROL Delivery code]** e **[!UICONTROL Description]**. Para obter mais informações, consulte [esta seção](../../delivery/using/steps-create-and-identify-the-delivery.md#identifying-the-delivery).
+1. Identifique o delivery com um **[!UICONTROL Label]**, **[!UICONTROL Delivery code]** e **[!UICONTROL Description]**. Para obter mais informações, consulte [esta seção](steps-create-and-identify-the-delivery.md#identifying-the-delivery).
 
 1. Clique em **[!UICONTROL Continue]** para criar o delivery de 
 
 1. No editor de delivery, selecione **[!UICONTROL To]** para direcionar os recipients do seu delivery [!DNL LINE]. O direcionamento é realizado em **[!UICONTROL Visitor subscriptions (nms:visitorSub)]**.
 
-   Para obter mais informações, consulte [Identificação das populações-alvo](../../delivery/using/steps-defining-the-target-population.md).
+   Para obter mais informações, consulte [Identificação das populações-alvo](steps-defining-the-target-population.md).
 
    ![](assets/line_message_08.png)
 
@@ -131,13 +131,13 @@ Para criar um delivery [!DNL LINE], é necessário seguir estas etapas:
 
 1. Quando o delivery é criado e configurado corretamente, é possível enviá-lo para o target definido anteriormente.
 
-   Para obter mais informações sobre como enviar um delivery, consulte [Enviar mensagens](../../delivery/using/sending-messages.md).
+   Para obter mais informações sobre como enviar um delivery, consulte [Enviar mensagens](sending-messages.md).
 
 1. Após enviar a mensagem, acesse o relatório para medir a eficácia do delivery.
 
    Para obter mais informações sobre relatórios [!DNL LINE], consulte [Relatórios de acesso](#accessing-reports).
 
-## Defina o tipo de conteúdo {#defining-the-content}
+## Definir o tipo de conteúdo {#defining-the-content}
 
 Para definir o conteúdo de um delivery [!DNL LINE], primeiro é necessário adicionar o tipo de mensagem ao delivery. Cada delivery [!DNL LINE] pode conter até 5 mensagens.
 
@@ -157,7 +157,7 @@ Um delivery **[!UICONTROL Text message]** [!DNL LINE] é uma mensagem enviada ao
 
 ![](assets/line_message_02.png)
 
-A configuração desse tipo de mensagem é semelhante à configuração do **[!UICONTROL Text]** em um email. Para obter mais informações, consulte esta [página](../../delivery/using/defining-the-email-content.md#message-content).
+A configuração desse tipo de mensagem é semelhante à configuração do **[!UICONTROL Text]** em um email. Para obter mais informações, consulte esta [página](defining-the-email-content.md#message-content).
 
 ### Configuração de uma imagem e um delivery de link {#configuring-an-image-and-link-delivery}
 
@@ -199,7 +199,7 @@ Um delivery **[!UICONTROL Image and link]**[!DNL LINE] é uma mensagem enviada a
 
    ![](assets/line_message_05.png)
 
-### Configurar um delivery de mensagem de vídeo {#configuring-a-video-message-delivery}
+### Configuração de um delivery de mensagem de vídeo {#configuring-a-video-message-delivery}
 
 Um delivery **[!UICONTROL Video message]** [!DNL LINE] é uma mensagem enviada aos recipients no formato de um vídeo que pode conter um URL.
 
@@ -239,7 +239,7 @@ Neste exemplo, vamos criar e configurar uma mensagem de texto e uma imagem conte
 
 1. Na janela de configuração do delivery, selecione a população do target.
 
-   Para obter mais informações, consulte [Identificação das populações-alvo](../../delivery/using/steps-defining-the-target-population.md).
+   Para obter mais informações, consulte [Identificação das populações-alvo](steps-defining-the-target-population.md).
 
    ![](assets/line_usecase_02.png)
 
