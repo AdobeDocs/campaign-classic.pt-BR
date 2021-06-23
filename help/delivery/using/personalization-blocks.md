@@ -6,9 +6,9 @@ audience: delivery
 content-type: reference
 topic-tags: personalizing-deliveries
 exl-id: 8d155844-d18a-4165-9886-c3b144109f6e
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: a129f49d4f045433899fd7fdbd057fb16d0ed36a
 workflow-type: tm+mt
-source-wordcount: '895'
+source-wordcount: '857'
 ht-degree: 100%
 
 ---
@@ -68,7 +68,7 @@ Para fazer isso, precisamos inserir os seguintes blocos de personalização:
 
 >[!NOTE]
 >
->Para saber mais sobre a geração da mirror page, consulte [Geração da mirror page](../../delivery/using/sending-messages.md#generating-the-mirror-page).
+>Para saber mais sobre a geração da mirror page, consulte [Geração da mirror page](sending-messages.md#generating-the-mirror-page).
 
 1. Criar um novo delivery ou abrir um tipo de delivery de email existente.
 1. No assistente de delivery, clique em **[!UICONTROL Subject]** para editar e inserir o assunto da mensagem.
@@ -100,24 +100,12 @@ Uma lista de blocos de personalização está disponível por padrão para ajuda
 
    >[!NOTE]
    >
-   >Para saber mais sobre a geração da mirror page, consulte [Geração da mirror page](../../delivery/using/sending-messages.md#generating-the-mirror-page).
+   >Para saber mais sobre a geração da mirror page, consulte [Geração da mirror page](sending-messages.md#generating-the-mirror-page).
 
 * **[!UICONTROL Link to mirror page]**: insere um link para a mirror page (“Se você não conseguir visualizar esta mensagem corretamente, clique aqui”).
 * **[!UICONTROL Unsubscription link]**: insere um link que permite cancelar a inscrição de todos os deliveries (lista de bloqueios).
-* **[!UICONTROL Formatting function for proper nouns]**: gera a função JavaScript **[!UICONTROL toSmartCase]**, que coloca a primeira letra de cada palavra em maiúscula. Este bloco deve ser inserido no código-fonte do delivery, nas tags **`<script>...</script>`**.
-
-   No exemplo abaixo, a função é usada para substituir o elemento &quot;My header&quot; por &quot;My new header&quot; com letras maiúsculas em cada palavra:
-
-   ```
-   <h1 id="sample">My header</h1>
-   <script><%@ include view='toSmartCase'%>;
-   document.getElementById("sample").innerHTML = toSmartCase("My new header");
-   </script>
-   ```
-
-   ![](assets/s_ncs_user_personalized_block_uppercasefunction.png)
-
-* **[!UICONTROL Registration page URL]**: insere um URL de subscrição (consulte [Sobre serviços e subscrições](../../delivery/using/about-services-and-subscriptions.md)).
+* **[!UICONTROL Formatting function for proper nouns]**: gera a função JavaScript **[!UICONTROL toSmartCase]**, que coloca a primeira letra de cada palavra em maiúscula.
+* **[!UICONTROL Registration page URL]**: insere um URL de subscrição (consulte [Sobre serviços e subscrições](about-services-and-subscriptions.md)).
 * **[!UICONTROL Registration link]**: insere um link de subscrição. que foi definido ao configurar a instância.
 * **[!UICONTROL Registration link (with referrer)]** : insere um link de subscrição, permitindo identificar o visitante e o delivery. O link foi definido ao configurar a instância.
 
@@ -126,7 +114,7 @@ Uma lista de blocos de personalização está disponível por padrão para ajuda
    >Este bloco pode ser usado em deliveries somente para visitantes.
 
 * **[!UICONTROL Registration confirmation]**: insere um link que permite confirmar a subscrição.
-* **[!UICONTROL Social network sharing links]**: insere botões que permitem que o recipient compartilhe um link para o conteúdo da mirror page no cliente de email, Facebook, Twitter e LinkedIn (consulte [Marketing viral: encaminhar para um amigo](../../delivery/using/viral-and-social-marketing.md#viral-marketing--forward-to-a-friend)).
+* **[!UICONTROL Social network sharing links]**: insere botões que permitem que o recipient compartilhe um link para o conteúdo da mirror page no cliente de email, Facebook, Twitter e LinkedIn (consulte [Marketing viral: encaminhar para um amigo](viral-and-social-marketing.md#viral-marketing--forward-to-a-friend)).
 * **[!UICONTROL Style of content emails]** e **[!UICONTROL Notification style]**: geram um código que formata um email com estilos HTML predefinidos. Esses blocos devem ser inseridos no código-fonte do delivery, na seção **[!UICONTROL ...]**, nos tags **`<style>...</style>`**.
 * **[!UICONTROL Offer acceptance URL in unitary mode]**: insere um URL que permite definir uma oferta de Interação para **[!UICONTROL Accepted]** (consulte [esta seção](../../interaction/using/offer-analysis-report.md)).
 
@@ -152,7 +140,7 @@ Para criar um bloco de personalização, vá para o explorador e siga as seguint
 
    * Insira o conteúdo (em HTML, texto, JavaScript, etc.) do(s) bloco(s) de personalização e clique em **[!UICONTROL Save]**.
 
-## Vídeo tutorial {#personalization-blocks-video}
+## Tutorial em vídeo {#personalization-blocks-video}
 
 Saiba como criar blocos de conteúdo dinâmico e como usá-los para personalizar o conteúdo do seu delivery de email.
 
