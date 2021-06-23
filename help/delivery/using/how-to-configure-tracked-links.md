@@ -6,10 +6,10 @@ audience: delivery
 content-type: reference
 topic-tags: tracking-messages
 exl-id: ed88e1d6-c0d5-4a85-9f3e-be670f4bcc10
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 0e0912c68d132919eeac9b91b93960e70011153e
 workflow-type: tm+mt
-source-wordcount: '478'
-ht-degree: 100%
+source-wordcount: '582'
+ht-degree: 83%
 
 ---
 
@@ -21,10 +21,17 @@ O rastreamento se aplica a mensagens, mas o rastreamento web permite monitorar c
 
 >[!NOTE]
 >
->Os links no conteúdo de email que contêm personalização precisam de sintaxe específica para serem rastreados. Para obter mais informações sobre como adicionar links a emails que podem ser personalizados e que oferecem suporte ao rastreamento, consulte [esta seção](../../delivery/using/tracking-personalized-links.md).
+>Os links no conteúdo de email que contêm personalização precisam de sintaxe específica para serem rastreados. Para obter mais informações sobre como adicionar links a emails que podem ser personalizados e que oferecem suporte ao rastreamento, consulte [esta seção](tracking-personalized-links.md).
 
+É altamente recomendável colocar URLs em delimitadores na guia **[!UICONTROL Text content]** antes de aplicar a fórmula de rastreamento. Os delimitadores de URL inseridos nessa guia são usados pelo Adobe Campaign para identificar URLs em cadeias de caracteres. Você pode usar estes pares de delimitadores:
+* Parênteses ( )
+* Colchetes [ ]
+* Chaves { }
 
-
+Neste exemplo, o URL https://www.adobe.com é seguido por um ponto e vírgula (;). O ponto e vírgula pode ser interpretado pelos clientes de email do recipient como parte do URL. Como resultado, o link pode estar quebrado. Para evitar esse problema, é possível colocar o URL em delimitadores de uma destas maneiras:
+* (https://www.adobe.com);
+* [https://www.adobe.com];
+* {https://www.adobe.com};
 
 O rastreamento de mensagens é habilitado por padrão. Para personalizar como URLs são rastreados, siga as etapas abaixo:
 
