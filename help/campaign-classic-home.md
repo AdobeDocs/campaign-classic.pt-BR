@@ -3,10 +3,10 @@ keywords: Campaign Classic;página inicial;tópicos populares
 product: campaign
 title: Documentação do produto Adobe Campaign Classic v7
 exl-id: 6b3f1689-80de-49fd-b7ee-7a2a1931d157
-source-git-commit: 615b56c5f4362b0f47ec5700be7d170c0e108f4c
+source-git-commit: a9120e2db43fcb035e9760819e9c53148979da4f
 workflow-type: tm+mt
-source-wordcount: '252'
-ht-degree: 92%
+source-wordcount: '262'
+ht-degree: 84%
 
 ---
 
@@ -18,6 +18,8 @@ ht-degree: 92%
 
 * **[Versão de junho está ativa!](rn/using/latest-release.md)**<br/> Descubra novos recursos, melhorias e correções nas Notas de versão
 
+* **[Perguntas ](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/technotes/apple-mail-privacy-faq.html)**<br/> frequentes sobre a proteção da privacidade do Apple MailEncontre orientações iniciais em resposta ao anúncio da Apple sobre o iOS 15
+
 * **[Remover rejeições permanentes incorretas](delivery/using/update-bounce-qualification.md)**<br/> Saiba como atualizar rejeições permanentes incorretas após a interrupção da Apple
 
 * **[Conectando-se pelo IMS/Adobe ID? Atualize para as builds mais recentes](integrations/using/about-adobe-id.md)**<br/> Se estiver usando o IMS para se conectar ao Campaign, você deverá fazer upgrade para poder se conectar ao Campaign após** 30 de junho de 2021 **
@@ -25,8 +27,6 @@ ht-degree: 92%
 * **[Proteja suas instâncias do Campaign](technotes/acc-config-updates.md)**<br/>Atualize para as compilações mais recentes para proteger a plataforma do Campaign
 
 * **[Atualizar a integração dos acionadores da Adobe Experience Cloud](integrations/using/configuring-adobe-io.md)**<br/> O serviço de autenticação herdado oAuth chegou ao fim da vida útil. Saiba como migrar para o Adobe I/O.
-
-* **[Obtenha suporte](support.md)**<br/> Acesse perguntas frequentes, práticas recomendadas e recursos de ajuda e solicite assistência
 
 [Mais atualizações](/help/rn/using/documentation-updates.md)
 
