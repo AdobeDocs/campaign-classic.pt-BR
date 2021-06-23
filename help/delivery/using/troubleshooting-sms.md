@@ -6,7 +6,7 @@ audience: delivery
 content-type: reference
 topic-tags: configuring-channels
 exl-id: 841f0c2f-90ef-4db0-860a-75fc7c48804a
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: a129f49d4f045433899fd7fdbd057fb16d0ed36a
 workflow-type: tm+mt
 source-wordcount: '2744'
 ht-degree: 100%
@@ -45,7 +45,7 @@ Você terá que entrar em contato com o provedor para diagnosticar possíveis co
    * Algumas contas externas têm a mesma combinação de logon/senha.
 O provedor não tem como saber de qual conta externa o `BIND PDU` vem. Portanto, ele trata todas as conexões de várias contas como uma única. Ele pode ter roteado MO e SR aleatoriamente nas duas contas, causando problemas.
 Se o provedor der suporte a vários códigos curtos para a mesma combinação de logon/senha, você terá que perguntar a ele onde colocar esse código curto no `BIND PDU`. Observe que essa parte das informações deve ser colocada em `BIND PDU`, não em `SUBMIT_SM`, já que `BIND PDU` é o único local que permitirá o roteamento correto de MOs.
-Consulte a seção [Informações em cada tipo de PDU](../../delivery/using/sms-protocol.md#information-pdu) acima para saber qual campo está disponível em `BIND PDU`. Normalmente, você adiciona o código curto a `address_range`, mas isso requer suporte especial do provedor. Entre em contato com ele para saber como espera rotear vários códigos curtos independentemente.
+Consulte a seção [Informações em cada tipo de PDU](sms-protocol.md#information-pdu) acima para saber qual campo está disponível em `BIND PDU`. Normalmente, você adiciona o código curto a `address_range`, mas isso requer suporte especial do provedor. Entre em contato com ele para saber como espera rotear vários códigos curtos independentemente.
 O Adobe Campaign dá suporte à manipulação de vários códigos curtos na mesma conta externa.
 
 ## Problema com a conta externa em geral {#external-account-issues}
@@ -83,7 +83,7 @@ O Adobe Campaign dá suporte à manipulação de vários códigos curtos na mesm
 
 * Verifique as configurações de **Conta externa**. Pergunte ao provedor o valor dos campos.
 
-* Se a conexão for bem-sucedida, mas instável, verifique a seção [Problema com conexões instáveis](../../delivery/using/troubleshooting-sms.md#issues-unstable-connection).
+* Se a conexão for bem-sucedida, mas instável, verifique a seção [Problema com conexões instáveis](troubleshooting-sms.md#issues-unstable-connection).
 
 * Se problemas de conexão forem difíceis de diagnosticar, uma captura de rede poderá fornecer informações. Verifique se a captura de rede é executada simultaneamente enquanto o problema ocorre para que ele seja analisado com eficiência. Você também deve observar a hora exata em que o problema ocorre.
 
@@ -115,9 +115,9 @@ Como corrigir problemas de estabilidade de conexão:
 
 ## Problema ao enviar um MT (SMS normal enviado para um usuário final){#issue-MT}
 
-* Verifique se a conexão está estável. Uma conexão SMPP deve permanecer ativa por pelo menos uma hora continuamente, exceto para transmissores no Adobe Campaign Classic. Consulte a seção [Problema com conexões instáveis](../../delivery/using/sms-protocol.md#issues-unstable-connection).
+* Verifique se a conexão está estável. Uma conexão SMPP deve permanecer ativa por pelo menos uma hora continuamente, exceto para transmissores no Adobe Campaign Classic. Consulte a seção [Problema com conexões instáveis](sms-protocol.md#issues-unstable-connection).
 
-* Se o reinício do MTA fizer com que o envio do MT funcione novamente por um breve período, provavelmente você terá uma limitação devido a uma conexão instável. Consulte a seção [Problema com conexões instáveis](../../delivery/using/troubleshooting-sms.md#issues-unstable-connection).
+* Se o reinício do MTA fizer com que o envio do MT funcione novamente por um breve período, provavelmente você terá uma limitação devido a uma conexão instável. Consulte a seção [Problema com conexões instáveis](troubleshooting-sms.md#issues-unstable-connection).
 
 * Verifique se o log amplo está presente e com o status e as datas corretas. Se não for o caso, poderá ser um problema de delivery ou de preparação de delivery.
 
@@ -139,7 +139,7 @@ Duplicatas frequentemente são causadas por tentativas. É normal haver duplicat
 
 * Se duplicatas forem enviadas com um intervalo de exatamente 60 segundos, provavelmente será um problema referente ao provedor, que não envia um `SUBMIT_SM_RESP` com rapidez suficiente.
 
-* Se há muitos `BIND/UNBIND`, você tem uma conexão instável. Consulte a seção [Problema com conexões instáveis](../../delivery/using/troubleshooting-sms.md#issues-unstable-connection) para obter soluções antes de tentar resolver problemas de mensagens duplicadas.
+* Se há muitos `BIND/UNBIND`, você tem uma conexão instável. Consulte a seção [Problema com conexões instáveis](troubleshooting-sms.md#issues-unstable-connection) para obter soluções antes de tentar resolver problemas de mensagens duplicadas.
 
 Diminuição na quantidade de duplicatas quando há uma nova tentativa:
 
@@ -159,7 +159,7 @@ Se `DELIVER_SM PDU` não for confirmado com êxito, verifique o seguinte:
 
 * Verifique se os erros foram devidamente provisionados na tabela `broadLogMsg`.
 
-Se `DELIVER_SM PDU` tiver sido reconhecido pelo conector SMPP estendido do Adobe Campaign Classic, mas o broadLog não for atualizado corretamente, verifique o processo de reconciliação da ID descrito na seção [MT, SR e entradas de banda larga](../../delivery/using/sms-protocol.md#matching-mt) correspondentes.
+Se `DELIVER_SM PDU` tiver sido reconhecido pelo conector SMPP estendido do Adobe Campaign Classic, mas o broadLog não for atualizado corretamente, verifique o processo de reconciliação da ID descrito na seção [MT, SR e entradas de banda larga](sms-protocol.md#matching-mt) correspondentes.
 
 Se você corrigiu tudo, mas alguns SR inválidos ainda estão nos buffers do provedor, é possível ignorá-los usando a opção &quot;Contagem de confirmação de ID inválida&quot;. Isso deverá ser usado com cuidado e redefinido como 0 o mais rápido possível depois que os buffers estiverem limpos.
 
@@ -179,7 +179,7 @@ Se você corrigiu tudo, mas alguns SR inválidos ainda estão nos buffers do pro
 
 ## Problema durante a preparação do delivery sem a exclusão de recipient em quarentena (em quarentena pelo recurso de resposta automática) {#issue-delivery-preparation}
 
-* Verifique se o formato do número de telefone é exatamente o mesmo na tabela de quarentena e no log de delivery. Caso contrário, consulte esta [seção](../../delivery/using/sms-protocol.md#automatic-reply) se tiver problemas com o prefixo &quot;+&quot; do formato de número de telefone internacional.
+* Verifique se o formato do número de telefone é exatamente o mesmo na tabela de quarentena e no log de delivery. Caso contrário, consulte esta [seção](sms-protocol.md#automatic-reply) se tiver problemas com o prefixo &quot;+&quot; do formato de número de telefone internacional.
 
 * Verifique os códigos curtos. Poderão correr exclusões se o código curto do recipient for igual ao definido na conta externa ou se estiver vazio (vazio = qualquer código curto). Se apenas um código curto for usado para toda a instância do Adobe Campaign, será mais fácil deixar todos os campos de **código curto** vazios.
 
