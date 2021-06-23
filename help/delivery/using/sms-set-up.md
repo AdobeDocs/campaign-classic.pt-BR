@@ -6,7 +6,7 @@ audience: delivery
 content-type: reference
 topic-tags: sending-messages-on-mobiles
 exl-id: a2783a5e-6d38-41a1-b5c6-24ab489116f8
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: a129f49d4f045433899fd7fdbd057fb16d0ed36a
 workflow-type: tm+mt
 source-wordcount: '1677'
 ht-degree: 100%
@@ -26,7 +26,7 @@ Para enviar para um celular, você precisa:
 ## Criar uma conta externa SMPP {#creating-an-smpp-external-account}
 
 Para enviar um SMS a um telefone celular, primeiro é necessário criar a conta externa SMPP.
-Para obter mais informações sobre o protocolo e as configurações de SMS, consulte esta [página](../../delivery/using/sms-protocol.md).
+Para obter mais informações sobre o protocolo e as configurações de SMS, consulte esta [página](sms-protocol.md).
 
 Para fazer isso, siga as etapas abaixo:
 
@@ -42,7 +42,7 @@ Para fazer isso, siga as etapas abaixo:
 
    >[!CAUTION]
    >
-   > Os conectores herdados serão descontinuados e não terão suporte a partir da versão 20.2. Recomendamos o uso do conector **[!UICONTROL Extended generic SMPP]**. Para obter mais informações sobre como migrar para o conector recomendado, consulte esta [página](../../delivery/using/unsupported-connector-migration.md).
+   > Os conectores herdados serão descontinuados e não terão suporte a partir da versão 20.2. Recomendamos o uso do conector **[!UICONTROL Extended generic SMPP]**. Para obter mais informações sobre como migrar para o conector recomendado, consulte esta [página](unsupported-connector-migration.md).
 
 1. A opção **[!UICONTROL Enable verbose SMPP traces in the log file]** permite que você descarte todo o tráfego SMPP em arquivos de log. Essa opção deve ser habilitada para solucionar problemas no conector e comparar com o tráfego visto pelo provedor.
 
@@ -80,7 +80,7 @@ Para fazer isso, siga as etapas abaixo:
 
    Contudo, tendo em conta que determinados provedores exigem o uso do prefixo &quot;+&quot;, recomenda-se verificar com seu provedor e, se necessário, eles irão sugerir que seja habilitada.
 
-   A caixa de seleção **[!UICONTROL Enable TLS over SMPP]** permite criptografar o tráfego SMPP. Para obter mais informações, consulte esta [página](../../delivery/using/sms-protocol.md).
+   A caixa de seleção **[!UICONTROL Enable TLS over SMPP]** permite criptografar o tráfego SMPP. Para obter mais informações, consulte esta [página](sms-protocol.md).
 
 1. Ao configurar um conector **[!UICONTROL Extended generic SMPP]**, você pode definir respostas automáticas.
 
@@ -345,7 +345,7 @@ As etapas para configurar uma conta externa usando o conector SMPP genérico est
 
 ## Alterar o template do delivery {#changing-the-delivery-template}
 
-O Adobe Campaign oferece um template do delivery para celulares. Esse template está disponível no nó **[!UICONTROL Resources > Templates > Delivery templates]**. Para obter mais informações, consulte a seção [Sobre templates](../../delivery/using/about-templates.md)
+O Adobe Campaign oferece um template do delivery para celulares. Esse template está disponível no nó **[!UICONTROL Resources > Templates > Delivery templates]**. Para obter mais informações, consulte a seção [Sobre templates](about-templates.md)
 
 Para delivery via canal SMS, você deve criar um template no qual o conector de canal é referenciado.
 
