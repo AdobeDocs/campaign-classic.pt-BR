@@ -6,7 +6,7 @@ audience: delivery
 content-type: reference
 topic-tags: content-management
 exl-id: e43dd68e-2e95-4367-9029-4622fbcb1759
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: a129f49d4f045433899fd7fdbd057fb16d0ed36a
 workflow-type: tm+mt
 source-wordcount: '427'
 ht-degree: 100%
@@ -31,7 +31,7 @@ O layout será aplicado automaticamente com base nas configurações selecionada
 
 ![](assets/s_ncs_content_deliver_a_content_html.png)
 
-Para obter mais informações, consulte o exemplo de implementação completa: [Criação de conteúdo no assistente de delivery](../../delivery/using/use-case--creating-content-management.md#creating-content-in-the-delivery-wizard).
+Para obter mais informações, consulte o exemplo de implementação completa: [Criação de conteúdo no assistente de delivery](use-case--creating-content-management.md#creating-content-in-the-delivery-wizard).
 
 ## Criação de uma instância de conteúdo {#creating-a-content-instance}
 
@@ -69,13 +69,13 @@ Siga as etapas abaixo:
 
    >[!NOTE]
    >
-   >Você pode autorizar a geração de conteúdos não aprovados. Para fazer isso, altere a opção relevante no template de publicação. Para obter mais informações, consulte [Criação e configuração do template](../../delivery/using/publication-templates.md#creating-and-configuring-the-template).
+   >Você pode autorizar a geração de conteúdos não aprovados. Para fazer isso, altere a opção relevante no template de publicação. Para obter mais informações, consulte [Criação e configuração do template](publication-templates.md#creating-and-configuring-the-template).
 
    O conteúdo HTML e texto é gerado por padrão na pasta da **publicação** da instância do Adobe Campaign. Você pode alterar a pasta da publicação graças à opção **NcmPublishingDir**.
 
 ## Delivery de uma instância de conteúdo {#delivering-a-content-instance}
 
-Para criar e entregar uma instância de conteúdo, um template do delivery precisa ser vinculado ao template de publicação usado para gerar esse conteúdo. Para obter mais informações, consulte [Delivery](../../delivery/using/publication-templates.md#delivery).
+Para criar e entregar uma instância de conteúdo, um template do delivery precisa ser vinculado ao template de publicação usado para gerar esse conteúdo. Para obter mais informações, consulte [Delivery](publication-templates.md#delivery).
 
 Além disso, a pasta de armazenamento de conteúdo deve ser dedicada ao conteúdo obtido deste template de publicação (quando uma pasta de conteúdo permite gerar vários tipos de conteúdo, os deliveries não podem ser criados automaticamente).
 
