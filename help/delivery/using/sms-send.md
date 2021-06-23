@@ -6,7 +6,7 @@ audience: delivery
 content-type: reference
 topic-tags: sending-messages-on-mobiles
 exl-id: 442672ee-5037-49b7-a06f-3a99920ce2b6
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: a129f49d4f045433899fd7fdbd057fb16d0ed36a
 workflow-type: tm+mt
 source-wordcount: '958'
 ht-degree: 100%
@@ -21,8 +21,8 @@ Para aprovar sua mensagem e enviá-la aos recipients do delivery que está sendo
 
 O processo detalhado da validação e envio de um delivery é apresentado nas seções abaixo:
 
-* [Validar a entrega](../../delivery/using/steps-validating-the-delivery.md)
-* [Enviar a entrega](../../delivery/using/steps-sending-the-delivery.md)
+* [Validar a entrega](steps-validating-the-delivery.md)
+* [Enviar a entrega](steps-sending-the-delivery.md)
 
 ## Parâmetros avançados {#advanced-parameters}
 
@@ -60,9 +60,9 @@ As seguintes opções estão disponíveis:
 
 Após enviar as mensagens, você pode monitorar e rastrear seus deliveries. Para obter mais informações, consulte essas seções.
 
-* [Monitorar um delivery](../../delivery/using/about-delivery-monitoring.md)
-* [Entender as falhas de entrega](../../delivery/using/understanding-delivery-failures.md)
-* [Sobre o rastreamento de mensagens](../../delivery/using/about-message-tracking.md)
+* [Monitorar um delivery](about-delivery-monitoring.md)
+* [Entender as falhas de entrega](understanding-delivery-failures.md)
+* [Sobre o rastreamento de mensagens](about-message-tracking.md)
 
 ## Processar mensagens de entrada {#processing-inbound-messages}
 
@@ -165,6 +165,6 @@ O nome do remetente desse tipo de mensagem é um código curto geralmente usado 
 
 >[!IMPORTANT]
 >
->Esses tipos de mensagens automáticas não mantêm um histórico. Portanto, não aparecem no painel de delivery. [Saiba mais](../../delivery/using/delivery-dashboard.md).
+>Esses tipos de mensagens automáticas não mantêm um histórico. Portanto, não aparecem no painel de delivery. [Saiba mais](delivery-dashboard.md).
 >
 >Essas mensagens não são consideradas nas regras de pressão comercial. [Saiba mais](../../campaign/using/pressure-rules.md).
