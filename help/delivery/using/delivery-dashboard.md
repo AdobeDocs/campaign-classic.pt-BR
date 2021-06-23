@@ -6,14 +6,14 @@ audience: delivery
 content-type: reference
 topic-tags: monitoring-deliveries
 exl-id: 44ecc8c6-6584-43eb-96b4-7d8463053123
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: a129f49d4f045433899fd7fdbd057fb16d0ed36a
 workflow-type: tm+mt
 source-wordcount: '1173'
 ht-degree: 100%
 
 ---
 
-# Painel de delivery {#delivery-dashboard}
+# Painel de entrega {#delivery-dashboard}
 
 O **painel de delivery** é fundamental para monitorar seus deliveries e eventuais problemas encontrados durante o envio de mensagens.
 
@@ -21,7 +21,7 @@ Ele permite recuperar informações sobre um delivery e editá-las, se necessár
 
 Estas são as informações que você pode monitorar usando as várias guias disponíveis no painel:
 
-* [Resumo do delivery](#delivery-summary)
+* [Resumo da entrega](#delivery-summary)
 * [Relatórios do delivery](#delivery-reports)
 * [Logs do delivery, mirror pages, exclusões](#delivery-logs-and-history)
 * [Histórico e logs de rastreamento do delivery](#tracking-logs)
@@ -32,16 +32,16 @@ Estas são as informações que você pode monitorar usando as várias guias dis
 
 **Tópicos relacionados:**
 
-* [Noções básicas sobre falhas de delivery](../../delivery/using/understanding-delivery-failures.md)
-* [Noções básicas sobre gestão de quarentena](../../delivery/using/understanding-quarantine-management.md)
-* [Práticas recomendadas de delivery](../../delivery/using/delivery-best-practices.md)
-* [Gerenciamento da capacidade de entrega](../../delivery/using/about-deliverability.md)
+* [Noções básicas sobre falhas de entrega](understanding-delivery-failures.md)
+* [Noções básicas sobre gestão de quarentena](understanding-quarantine-management.md)
+* [Práticas recomendadas de delivery](delivery-best-practices.md)
+* [Gerenciamento da capacidade de entrega](about-deliverability.md)
 
-## Resumo do delivery {#delivery-summary}
+## Resumo da entrega {#delivery-summary}
 
 A guia **[!UICONTROL Summary]** contém as características do delivery: status do delivery, canal usado, informações sobre o remetente, assunto, informações relacionadas à execução.
 
-## Relatórios de delivery {#delivery-reports}
+## Relatórios do delivery {#delivery-reports}
 
 O link **[!UICONTROL Reports]**, acessível na guia **[!UICONTROL Summary]**, permite que você veja um conjunto de relatórios referentes à ação do delivery: relatório geral do delivery, relatório detalhado, relatório do delivery, distribuição de mensagens com falha, taxa de abertura, cliques e transações, etc.
 
@@ -53,7 +53,7 @@ O conteúdo dessa guia pode ser configurado de acordo com os requisitos. Para ob
 
 A guia **[!UICONTROL Delivery]** fornece um histórico das ocorrências neste delivery. Ela contém os logs de delivery, ou seja, a lista de mensagens enviadas e seus status, e as mensagens associadas.
 
-Para um delivery, você pode exibir (por exemplo) apenas os recipients com um delivery com falha ou um endereço em quarentena. Para fazer isso, clique no botão **[!UICONTROL Filters]** e selecione **[!UICONTROL By state]**. Em seguida, selecione o estado na lista suspensa. Vários status são listados [nesta página](../../delivery/using/delivery-statuses.md).
+Para um delivery, você pode exibir (por exemplo) apenas os recipients com um delivery com falha ou um endereço em quarentena. Para fazer isso, clique no botão **[!UICONTROL Filters]** e selecione **[!UICONTROL By state]**. Em seguida, selecione o estado na lista suspensa. Vários status são listados [nesta página](delivery-statuses.md).
 
 >[!NOTE]
 >
@@ -63,7 +63,7 @@ Para um delivery, você pode exibir (por exemplo) apenas os recipients com um de
 
 O link **[!UICONTROL Display the mirror page for this message...]** permite exibir a mirror page do conteúdo do delivery selecionado na lista em uma nova janela.
 
-A mirror page só está disponível para os deliveries para as quais o conteúdo HTML foi definido. Para obter mais informações, consulte [Geração da mirror page](../../delivery/using/sending-messages.md#generating-the-mirror-page).
+A mirror page só está disponível para os deliveries para as quais o conteúdo HTML foi definido. Para obter mais informações, consulte [Geração da mirror page](sending-messages.md#generating-the-mirror-page).
 
 ![](assets/s_ncs_user_wizard_miror_page_link.png)
 
@@ -75,7 +75,7 @@ A guia **[!UICONTROL Tracking]** lista o histórico de rastreamento desse delive
 >
 >Se o rastreamento não estiver ativado para um delivery, essa guia não será exibida.
 
-A configuração de rastreamento é realizada no estágio apropriado do assistente do delivery. Consulte [Como configurar links rastreados](../../delivery/using/how-to-configure-tracked-links.md).
+A configuração de rastreamento é realizada no estágio apropriado do assistente do delivery. Consulte [Como configurar links rastreados](how-to-configure-tracked-links.md).
 
 Os dados de **[!UICONTROL Tracking]** são interpretados nos relatórios de delivery. Consulte [esta seção](../../reporting/using/delivery-reports.md).
 
@@ -87,7 +87,7 @@ A guia **[!UICONTROL Inbox rendering]** permite que você visualize a mensagem e
 
 Assim você pode ter certeza de que a sua mensagem será exibida aos recipients de forma eficaz em uma variedade de clientes da web, webmails e dispositivos.
 
-Para obter mais informações sobre renderização da Caixa de entrada, consulte [esta página](../../delivery/using/inbox-rendering.md)
+Para obter mais informações sobre renderização da Caixa de entrada, consulte [esta página](inbox-rendering.md)
 
 ![](assets/s_tn_inbox_rendering_tokens.png)
 
@@ -97,7 +97,7 @@ A guia **[!UICONTROL Audit]** contém o log de delivery e todas as mensagens rel
 
 O botão **[!UICONTROL Refresh]** permite atualizar os dados. Use o botão **[!UICONTROL Filters]** para definir um filtro nos dados.
 
-Ícones especiais permitem identificar erros ou avisos. Consulte [Análise de delivery](../../delivery/using/steps-validating-the-delivery.md#analyzing-the-delivery).
+Ícones especiais permitem identificar erros ou avisos. Consulte [Análise de delivery](steps-validating-the-delivery.md#analyzing-the-delivery).
 
 A subguia **[!UICONTROL Proofs]** permite visualizar a lista de provas que foram enviadas.
 
