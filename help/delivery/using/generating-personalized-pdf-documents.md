@@ -6,7 +6,7 @@ audience: delivery
 content-type: reference
 topic-tags: personalizing-deliveries
 exl-id: e5239d99-256b-412b-be20-f64f822da9c3
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: a129f49d4f045433899fd7fdbd057fb16d0ed36a
 workflow-type: tm+mt
 source-wordcount: '442'
 ht-degree: 100%
@@ -23,7 +23,7 @@ As seguintes extensões são suportadas: &quot;.docx&quot;, &quot;.doc&quot; e &
 
 Para personalizar seus documentos, as mesmas funcionalidades JavaScript de personalização de email estão disponíveis.
 
-É necessário ativar a opção **[!UICONTROL "The content of the file is personalized and converted to PDF during the delivery of each message"]**. Essa opção é acessível quando você anexa o arquivo ao email de delivery. Para obter mais informações sobre como anexar um arquivo calculado, consulte a seção [Anexando arquivos](../../delivery/using/attaching-files.md).
+É necessário ativar a opção **[!UICONTROL "The content of the file is personalized and converted to PDF during the delivery of each message"]**. Essa opção é acessível quando você anexa o arquivo ao email de delivery. Para obter mais informações sobre como anexar um arquivo calculado, consulte a seção [Anexando arquivos](attaching-files.md).
 
 Exemplo de personalização de cabeçalho de fatura:
 
