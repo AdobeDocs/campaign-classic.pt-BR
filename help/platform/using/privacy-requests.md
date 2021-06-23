@@ -6,7 +6,7 @@ audience: platform
 content-type: reference
 topic-tags: starting-with-adobe-campaign
 exl-id: c7688c2a-f0a7-4c51-a4cf-bf96fe8bf9b6
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 0a80912aae4cab58b6f06918a673aaca3883fbdf
 workflow-type: tm+mt
 source-wordcount: '2415'
 ht-degree: 100%
@@ -15,7 +15,7 @@ ht-degree: 100%
 
 # Gerenciamento de solicitações de privacidade {#privacy-requests}
 
-Para ver uma apresentação geral sobre o Gerenciamento de privacidade, consulte [esta seção](../../platform/using/privacy-management.md).
+Para a apresentação geral sobre o Gerenciamento de privacidade, consulte [esta seção](../../platform/using/privacy-management.md).
 
 Essa informação se aplica a GDPR, CCPA, PDPA e LGPD. Para obter mais informações sobre esses requisitos, consulte [esta seção](../../platform/using/privacy-management.md#privacy-management-regulations).
 
@@ -25,7 +25,7 @@ A recusa pela venda de informações pessoais, específica para o CCPA, é expli
 
 ## Sobre as solicitações de privacidade {#about-privacy-requests}
 
-Para ajudar você a se preparar para as medidas de privacidade, o Adobe Campaign permite manipular as solicitações de Acesso e Exclusão. O **direito de acesso** e o **direito ao esquecimento** (solicitação de exclusão) estão descritos [nesta seção](../../platform/using/privacy-management.md#right-access-forgotten).
+Para facilitar a conformidade com a privacidade, o Adobe Campaign permite manipular solicitações de Acesso e Exclusão. O **direito de acesso** e o **direito ao esquecimento** (solicitação de exclusão) estão descritos [nesta seção](../../platform/using/privacy-management.md#right-access-forgotten).
 
 Vamos ver como criar solicitações de Acesso e Exclusão e como elas são processadas pelo Adobe Campaign.
 
@@ -125,7 +125,7 @@ Se você criou tabelas personalizadas que tenham um link para a tabela do recipi
 >* A Adobe recomenda a criação de um workflow ETL que adicione as linhas que serão excluídas na tabela Acesso de privacidade e permita que o workflow **[!UICONTROL Delete privacy requests data]** execute a exclusão. Por motivos de desempenho, sugerimos que sejam limitadas a 200 perfis por dia.
 
 
-### Status de solicitação de privacidade {#privacy-request-statuses}
+### Status de solicitação de acesso a dados pessoais {#privacy-request-statuses}
 
 Estes são os diferentes status de solicitações de acesso a dados pessoais:
 
@@ -165,7 +165,7 @@ As informações ficam disponíveis no banco de dados por 90 dias. Depois que a 
 
 Exemplo de um arquivo de dados de um titular de dados:
 
-![](assets/privacy-access-file.png)
+![](assets/do-not-localize/privacy-access-file.png)
 
 Os controladores de dados podem criar facilmente um aplicativo da web, incluindo o URL JSSP correspondente, para disponibilizar o arquivo de dados do titular dos dados de uma página da web.
 
@@ -257,7 +257,7 @@ Primeiro, é necessário executar a autenticação por meio da API:
 
 1. Use o método &quot;Logon&quot; e forneça um nome de usuário e senha como parâmetros na solicitação. Você receberá uma resposta contendo um token de sessão. Veja um exemplo de utilização de SoapUI.
 
-   ![](assets/privacy-api.png)
+   ![](assets/do-not-localize/privacy-api.png)
 
 1. Use o token de sessão retornado como autenticação para todas as chamadas de API subsequentes. Ela expira após 24 horas.
 
@@ -269,7 +269,7 @@ Em seguida, chame a API de privacidade:
 
    Veja um exemplo de uso de **[!UICONTROL CreateRequestByName]**. Observe como usamos o token de sessão fornecido acima como autenticação. A resposta é a ID da solicitação criada.
 
-   ![](assets/privacy-api-2.png)
+   ![](assets/do-not-localize/privacy-api-2.png)
 
    Para ajudar você a executar as etapas acima, considere o seguinte:
 
