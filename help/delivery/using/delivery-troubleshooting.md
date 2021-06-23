@@ -6,7 +6,7 @@ audience: delivery
 content-type: reference
 topic-tags: monitoring-deliveries
 exl-id: 37b1d7fb-7ceb-4647-9aac-c8a80495c5bf
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: a129f49d4f045433899fd7fdbd057fb16d0ed36a
 workflow-type: tm+mt
 source-wordcount: '789'
 ht-degree: 100%
@@ -17,25 +17,25 @@ ht-degree: 100%
 
 Esta seção lista problemas comuns que você pode encontrar ao enviar deliveries e como solucioná-los.
 
-Além disso, siga as práticas recomendadas e a lista de verificação detalhada [nesta página](../../delivery/using/delivery-performances.md) para garantir que seus deliveries tenham bom desempenho.
+Além disso, siga as práticas recomendadas e a lista de verificação detalhada [nesta página](delivery-performances.md) para garantir que seus deliveries tenham bom desempenho.
 
 **Tópicos relacionados:**
 
-* [Status da entrega](../../delivery/using/delivery-statuses.md)
-* [Painel de entrega](../../delivery/using/delivery-dashboard.md)
-* [Noções básicas sobre falhas de delivery](../../delivery/using/understanding-delivery-failures.md)
+* [Status da entrega](delivery-statuses.md)
+* [Painel de entrega](delivery-dashboard.md)
+* [Noções básicas sobre falhas de entrega](understanding-delivery-failures.md)
 
 ## Deliveries lentos {#slow-deliveries}
 
 Depois de clicar no botão **[!UICONTROL Send]**, seu delivery parece demorar mais do que o normal. Isso pode ser causado por elementos diferentes:
 
-* Alguns provedores de email podem ter adicionado seus endereços IP a uma lista de bloqueios. Neste caso, verifique seus broadlogs e consulte [esta seção](../../delivery/using/about-deliverability.md).
+* Alguns provedores de email podem ter adicionado seus endereços IP a uma lista de bloqueios. Neste caso, verifique seus broadlogs e consulte [esta seção](about-deliverability.md).
 
-* Seu delivery pode ser muito grande para ser processado rapidamente, isso pode ocorrer com alta personalização do JavaScript ou se o seu delivery pesa mais do que 60 kbytes. Consulte as [Práticas recomendadas de delivery](../../delivery/using/delivery-best-practices.md) do Adobe Campaign para saber mais sobre as diretrizes de conteúdo.
+* Seu delivery pode ser muito grande para ser processado rapidamente, isso pode ocorrer com alta personalização do JavaScript ou se o seu delivery pesa mais do que 60 kbytes. Consulte as [Práticas recomendadas de delivery](delivery-best-practices.md) do Adobe Campaign para saber mais sobre as diretrizes de conteúdo.
 
 * Pode ter ocorrido limitação dentro do MTA do Adobe Campaign. Isso é causado por:
 
-   * Mensagens pendentes (**[!UICONTROL quotas met]** message): as cotas declaradas pelas regras MX declarativas definidas no Campaign foram atendidas. Para obter mais informações sobre esse tipo de mensagem, consulte [esta página](../../delivery/using/deliverability-faq.md). Para saber mais sobre as regras MX, consulte [esta seção](../../installation/using/email-deliverability.md#about-mx-rules).
+   * Mensagens pendentes (**[!UICONTROL quotas met]** message): as cotas declaradas pelas regras MX declarativas definidas no Campaign foram atendidas. Para obter mais informações sobre esse tipo de mensagem, consulte [esta página](deliverability-faq.md). Para saber mais sobre as regras MX, consulte [esta seção](../../installation/using/email-deliverability.md#about-mx-rules).
 
    * Mensagens pendentes (mensagem **[!UICONTROL dynamic flow control]**): o MTA do Campaign encontrou erros ao tentar entregar mensagens para um determinado ISP, o que faz com que um atraso evite uma densidade de erros muito grande e, portanto, enfrente uma possível inclusão na lista de bloqueios.
 
