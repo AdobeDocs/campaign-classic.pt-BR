@@ -6,7 +6,7 @@ audience: delivery
 content-type: reference
 topic-tags: deliverability-management
 exl-id: dcd3a9f9-5fe9-4c28-a4a5-5aed67b036ab
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: a129f49d4f045433899fd7fdbd057fb16d0ed36a
 workflow-type: tm+mt
 source-wordcount: '762'
 ht-degree: 100%
@@ -29,7 +29,7 @@ Para obter dicas adicionais para otimizar a capacidade de delivery ao projetar c
 
 >[!NOTE]
 >
->Para obter mais informações sobre edição de conteúdo de email, consulte [Definição do conteúdo do email](../../delivery/using/defining-the-email-content.md) e [Criar conteúdo personalizado](../../delivery/using/design-and-personalize.md).
+>Para obter mais informações sobre edição de conteúdo de email, consulte [Definição do conteúdo do email](defining-the-email-content.md) e [Criar conteúdo personalizado](design-and-personalize.md).
 
 ## Endereço do remetente {#sender-address}
 
@@ -37,23 +37,23 @@ Determinados ISPs verificam a validade do endereço do remetente (**[!UICONTROL 
 
 Verifique se um endereço correto é fornecido no nível da instância (menu **[!UICONTROL Tools > Advanced > Deployment wizard...]**) ou nos cenários usados com mais frequência.
 
-Para obter mais informações, consulte [Definição do remetente](../../delivery/using/defining-the-email-content.md).
+Para obter mais informações, consulte [Definição do remetente](defining-the-email-content.md).
 
 ## Personalização {#personalization}
 
 Para melhorar a experiência dos recipients e fazer com que eles abram seu email, o Adobe Campaign permite personalizar as mensagens.
 
-Para obter mais informações sobre o uso de campos de personalização no Adobe Campaign, consulte [esta seção](../../delivery/using/personalization-fields.md).
+Para obter mais informações sobre o uso de campos de personalização no Adobe Campaign, consulte [esta seção](personalization-fields.md).
 
-Algumas dicas para otimizar a personalização ao criar o conteúdo são apresentadas [nesta seção](../../delivery/using/design-and-personalize.md#optimize-personalization).
+Algumas dicas para otimizar a personalização ao criar o conteúdo são apresentadas [nesta seção](design-and-personalize.md#optimize-personalization).
 
 ## Formulário e link para opção de não participação {#opt-out}
 
-Por padrão, quando a mensagem é analisada, uma [regra de tipologia](../../delivery/using/steps-validating-the-delivery.md#validation-process-with-typologies) verifica se um link para opção de não participação foi incluído e gera um aviso caso ele esteja ausente. É possível alterar essa regra para gerar um erro ao invés de um simples aviso e, assim, impedir que um delivery saia sem esse link.
+Por padrão, quando a mensagem é analisada, uma [regra de tipologia](steps-validating-the-delivery.md#validation-process-with-typologies) verifica se um link para opção de não participação foi incluído e gera um aviso caso ele esteja ausente. É possível alterar essa regra para gerar um erro ao invés de um simples aviso e, assim, impedir que um delivery saia sem esse link.
 
 Você deve verificar se o link de opt-out funciona corretamente antes de cada vez que enviar. Por exemplo, ao enviar a prova, verifique se o link é válido, se o formulário está online e se a validação altera o valor do campo **[!UICONTROL No longer contact this recipient]** para **[!UICONTROL Yes]**. Você deve fazer essa verificação sistematicamente, pois sempre é possível que ocorra um erro humano ao inserir o link ou ao alterar o formulário.
 
-Saiba como inserir um link para opção de não participação [nesta seção](../../delivery/using/personalization-blocks.md#personalization-blocks-example)
+Saiba como inserir um link para opção de não participação [nesta seção](personalization-blocks.md#personalization-blocks-example)
 
 Se for detectado um problema de cancelamento de subscrição após o início do delivery, ainda será possível realizar um cancelamento de subscrição manualmente (usando a função de atualização em massa, por exemplo) para os recipients que clicam no link de opt-out, mesmo que não tenham conseguido confirmar sua escolha.
 
@@ -67,7 +67,7 @@ Antes de enviar a mensagem, você pode testar a capacidade de resposta dela veri
 
 Para permitir isso, o Adobe Campaign captura a renderização e a disponibiliza em um relatório dedicado. Assim, você pré-visualiza a mensagem enviada nos diferentes contextos nos quais ela pode ser recebida.
 
-Para obter mais informações, consulte [Renderização da caixa de entrada](../../delivery/using/inbox-rendering.md).
+Para obter mais informações, consulte [Renderização da caixa de entrada](inbox-rendering.md).
 
 ## SpamAssassin {#spamassassin}
 
@@ -75,4 +75,4 @@ O Adobe Campaign pode ser configurado para funcionar com o SpamAssassin. Isso pe
 
 Antes de iniciar um delivery, a guia **[!UICONTROL Preview]** permite avaliar os riscos. Uma mensagem de aviso dará o resultado do teste.
 
-Saiba mais nesta [seção](../../delivery/using/spamassassin.md).
+Saiba mais nesta [seção](spamassassin.md).
