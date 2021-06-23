@@ -6,7 +6,7 @@ audience: delivery
 content-type: reference
 topic-tags: sending-emails
 exl-id: 58cc23f4-9ab0-45c7-9aa2-b08487ec7e91
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: a129f49d4f045433899fd7fdbd057fb16d0ed36a
 workflow-type: tm+mt
 source-wordcount: '1921'
 ht-degree: 100%
@@ -129,7 +129,7 @@ As qualificações de rejeição na tabela **[!UICONTROL Delivery log qualificat
 >
 >O MTA aprimorado qualifica a rejeição de SMTP e envia essa qualificação de volta ao Campaign no formato de um código de rejeição mapeado para um motivo de rejeição e qualificação do Campaign.
 
-Para obter mais informações sobre qualificação de rejeição, consulte [esta seção](../../delivery/using/understanding-delivery-failures.md#bounce-mail-qualification).
+Para obter mais informações sobre qualificação de rejeição, consulte [esta seção](understanding-delivery-failures.md#bounce-mail-qualification).
 
 ### Taxa de transferência de delivery
 
@@ -145,7 +145,7 @@ Por exemplo, se o período de validade for definido como o valor padrão de 5 di
 
 Quando uma mensagem estiver na fila do MTA aprimorado por 3,5 dias e não for entregue, o tempo limite expirará, e seu status será atualizado de **[!UICONTROL Sent]** para **[!UICONTROL Failed]** nos logs do delivery.
 
-Para obter mais informações sobre o período de validade, consulte [esta seção](../../delivery/using/steps-sending-the-delivery.md#defining-validity-period).
+Para obter mais informações sobre o período de validade, consulte [esta seção](steps-sending-the-delivery.md#defining-validity-period).
 
 ### Assinatura DKIM
 
@@ -154,13 +154,13 @@ Para obter mais informações sobre DKIM, consulte o [Manual de práticas recome
 
 ### Relatórios de sucesso do delivery
 
-Na exibição **[!UICONTROL Summary]** de um painel de [delivery de email](../../delivery/using/delivery-dashboard.md), a porcentagem de **[!UICONTROL Success]** começa em 100% e diminui progressivamente por todo o [período de validade do delivery](../../delivery/using/steps-sending-the-delivery.md#defining-validity-period), conforme as rejeições temporárias e permanentes são relatadas do MTA aprimorado para o Campaign.
+Na exibição **[!UICONTROL Summary]** de um painel de [delivery de email](delivery-dashboard.md), a porcentagem de **[!UICONTROL Success]** começa em 100% e diminui progressivamente por todo o [período de validade do delivery](steps-sending-the-delivery.md#defining-validity-period), conforme as rejeições temporárias e permanentes são relatadas do MTA aprimorado para o Campaign.
 
-De fato, todas as mensagens são exibidas como **[!UICONTROL Sent]** no [enviando logs](../../delivery/using/delivery-dashboard.md#delivery-logs-and-history) assim que são transmitidas com êxito do Campaign para o MTA aprimorado. Eles permanecem com esse status, a menos que uma [rejeição](../../delivery/using/understanding-delivery-failures.md#delivery-failure-types-and-reasons) para essa mensagem seja comunicada do MTA aprimorado para o Campaign.
+De fato, todas as mensagens são exibidas como **[!UICONTROL Sent]** no [enviando logs](delivery-dashboard.md#delivery-logs-and-history) assim que são transmitidas com êxito do Campaign para o MTA aprimorado. Eles permanecem com esse status, a menos que uma [rejeição](understanding-delivery-failures.md#delivery-failure-types-and-reasons) para essa mensagem seja comunicada do MTA aprimorado para o Campaign.
 
 Quando mensagens de rejeição permanente são relatadas do MTA aprimorado, seu status muda de **[!UICONTROL Sent]** para **[!UICONTROL Failed]** e a porcentagem de **[!UICONTROL Success]** é diminuída de maneira apropriada.
 
-Quando mensagens de rejeição temporária são relatadas do MTA aprimorado, elas ainda são exibidas como **[!UICONTROL Sent]** e a porcentagem de **[!UICONTROL Success]** ainda não é atualizada. As mensagens de rejeição temporária são então [tentadas](../../delivery/using/understanding-delivery-failures.md#retries-after-a-delivery-temporary-failure) durante todo o período de validade do delivery:
+Quando mensagens de rejeição temporária são relatadas do MTA aprimorado, elas ainda são exibidas como **[!UICONTROL Sent]** e a porcentagem de **[!UICONTROL Success]** ainda não é atualizada. As mensagens de rejeição temporária são então [tentadas](understanding-delivery-failures.md#retries-after-a-delivery-temporary-failure) durante todo o período de validade do delivery:
 
 * Se uma tentativa for bem-sucedida antes do fim do período de validade, o status da mensagem permanecerá como **[!UICONTROL Sent]** e a porcentagem de **[!UICONTROL Success]** permanecerá inalterada.
 
@@ -192,7 +192,7 @@ Quando a mensagem é realmente entregue aos perfis direcionados e uma vez que es
 
 Quando mensagens com rejeição permanente são relatadas do MTA aprimorado, o status do log muda de **[!UICONTROL Taken into account by the service provider]** para **[!UICONTROL Failed]**<!-- and the **[!UICONTROL Bounces + errors]** percentage is increased accordingly-->.
 
-Quando mensagens com rejeição temporária são relatadas do MTA aprimorado, o status do log permanece inalterado (**[!UICONTROL Taken into account by the service provider]**): somente o [motivo do erro](../../delivery/using/understanding-delivery-failures.md#delivery-failure-types-and-reasons) é atualizado<!-- and the **[!UICONTROL Bounces + errors]** percentage is increased accordingly-->. A porcentagem de **[!UICONTROL Success]** permanece inalterada. As mensagens com rejeição temporária são então repetidas durante todo o [período de validade do delivery](../../delivery/using/steps-sending-the-delivery.md#defining-validity-period)
+Quando mensagens com rejeição temporária são relatadas do MTA aprimorado, o status do log permanece inalterado (**[!UICONTROL Taken into account by the service provider]**): somente o [motivo do erro](understanding-delivery-failures.md#delivery-failure-types-and-reasons) é atualizado<!-- and the **[!UICONTROL Bounces + errors]** percentage is increased accordingly-->. A porcentagem de **[!UICONTROL Success]** permanece inalterada. As mensagens com rejeição temporária são então repetidas durante todo o [período de validade do delivery](steps-sending-the-delivery.md#defining-validity-period)
 
 * Se uma nova tentativa for bem-sucedida antes do fim do período de validade, o status da mensagem mudará para **[!UICONTROL Sent]** e a porcentagem **[!UICONTROL Success]** será aumentada de maneira apropriada.
 
@@ -200,9 +200,9 @@ Quando mensagens com rejeição temporária são relatadas do MTA aprimorado, o 
 
 >[!NOTE]
 >
->Para obter mais informações sobre rejeições permanentes e temporárias, consulte [esta seção](../../delivery/using/understanding-delivery-failures.md#delivery-failure-types-and-reasons).
+>Para obter mais informações sobre rejeições permanentes e temporárias, consulte [esta seção](understanding-delivery-failures.md#delivery-failure-types-and-reasons).
 >
->Para obter mais informações sobre tentativas após uma falha temporária de delivery, consulte [esta seção](../../delivery/using/understanding-delivery-failures.md#retries-after-a-delivery-temporary-failure).
+>Para obter mais informações sobre tentativas após uma falha temporária de delivery, consulte [esta seção](understanding-delivery-failures.md#retries-after-a-delivery-temporary-failure).
 
 
 As tabelas abaixo mostram as alterações nos KPIs e no envio de status de logs introduzidos pelo recurso EFS.
