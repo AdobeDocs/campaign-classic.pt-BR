@@ -6,10 +6,10 @@ audience: installation
 content-type: reference
 topic-tags: prerequisites-and-recommendations-
 exl-id: 0a3473bf-0528-486d-a799-8db86fece522
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: f31591949bb033ff250cf4b33eddcc2c1d31cc6c
 workflow-type: tm+mt
-source-wordcount: '768'
-ht-degree: 30%
+source-wordcount: '889'
+ht-degree: 21%
 
 ---
 
@@ -47,27 +47,35 @@ Exemplo:
 
 <img src="assets/privacy-query-dynamic-url.png">
 
-### Mecanismo de assinatura
+### Assinatura do URL
 
-Para melhorar a segurança, um novo mecanismo de assinatura para rastrear links em emails foi introduzido na Build 19.1.4 (9032@3a9dc9c) e está disponível na Build 19.1.4 (9032@3a9dc9c) e no Campaign 20.2. Essa opção é habilitada por padrão para todos os clientes.
+Para melhorar a segurança, um mecanismo de assinatura para rastrear links em emails foi introduzido. Ele está disponível na Build 19.1.4 (9032@3a9dc9c) e no Campaign 20.2. Esse recurso é habilitado por padrão.
 
 >[!NOTE]
 >
->Quando um URL assinado mal formado é clicado, ele retornará o seguinte erro: &quot;O URL solicitado &#39;... &#39; não foi encontrado.&quot;
+>Quando um URL assinado mal formado é clicado, esse erro é retornado: &quot;O URL solicitado &#39;...&#39; não foi encontrado.&quot;
 
-Além disso, a partir da versão 20.2 e [!DNL Gold Standard] do Campaign, os clientes hospedados e híbridos poderão usar um aprimoramento para desativar URLs gerados em compilações anteriores. Essa opção está desabilitada por padrão. É possível entrar em contato com o [Atendimento ao cliente](https://helpx.adobe.com/br/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html) para ativar esse recurso.
+Além disso, desde a Campanha 20.2 e a versão [!DNL Gold Standard], você pode usar um aprimoramento para desativar URLs gerados em compilações anteriores. Esse recurso é desativado por padrão. É possível entrar em contato com o [Atendimento ao cliente](https://helpx.adobe.com/br/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html) para ativar esse recurso.
 
-Para ativar esse novo recurso, os clientes locais precisam seguir estas etapas em todos os servidores do Campaign:
+Se estiver executando [!DNL Gold Standard] 19.1.4, poderá enfrentar problemas com os deliveries de notificação por push usando links de rastreamento ou deliveries usando tags de âncora. Nesse caso, recomendamos que você desative a assinatura do URL.
+
+Se você estiver executando o Campaign nas instalações ou em uma arquitetura híbrida, entre em contato com [Atendimento ao cliente](https://helpx.adobe.com/br/enterprise/using/support-for-experience-cloud.html) para desativar a assinatura de URL.
+
+Se você estiver executando o Campaign em uma arquitetura híbrida, antes de ativar a assinatura de URL, verifique se a instância mid-sourcing hospedada foi atualizada da seguinte maneira:
+* Antes da instância de marketing no local
+* Para a mesma versão da instância de marketing local ou para uma versão ligeiramente mais alta
+
+Caso contrário, alguns desses problemas poderão surgir:
+* Antes da atualização da instância mid-sourcing, os URLs são enviados sem assinatura por meio dessa instância.
+* Depois que a instância mid-sourcing for atualizada e a assinatura do URL for ativada em ambas as instâncias, os URLs que tinham sido enviados anteriormente sem assinatura serão rejeitados. O motivo é que uma assinatura é solicitada pelos arquivos de rastreamento que foram fornecidos pela instância de marketing.
+
+Para desativar URLs que foram gerados em compilações anteriores, siga estas etapas em todos os servidores do Campaign ao mesmo tempo:
 
 1. No arquivo de configuração do servidor (serverConf.xml), altere **blockRedirectForUnsignedTrackingLink** para **true**.
 1. Reinicie o serviço **nlserver**.
 1. No servidor de rastreamento, reinicie o servidor da Web (apache2 em Debian, httpd em CentOS/RedHat, IIS no Windows).
 
-Os clientes que estiverem executando em [!DNL Gold Standard] 19.1.4 podem enfrentar problemas com os deliveries de notificação por push usando o link de rastreamento ou com deliveries usando tags de âncora. Em caso positivo, o Adobe recomenda desativar o novo mecanismo de assinatura para links de rastreamento:
-
-**Os** clientes hospedados e híbridos devem entrar em contato com o  [Atendimento ao ](https://helpx.adobe.com/br/enterprise/using/support-for-experience-cloud.html) cliente para desativar esse mecanismo.
-
-**Os** clientes locais devem seguir a etapa abaixo:
+Para ativar a assinatura do URL, siga estas etapas em todos os servidores do Campaign ao mesmo tempo:
 
 1. No arquivo de configuração do servidor (serverConf.xml), altere **signEmailLinks** para **false**.
 1. Reinicie o serviço **nlserver**.
