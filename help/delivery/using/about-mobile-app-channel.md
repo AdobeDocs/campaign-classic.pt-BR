@@ -6,7 +6,7 @@ audience: delivery
 content-type: reference
 topic-tags: sending-push-notifications
 exl-id: c3b0406f-f652-42f4-ad0d-23fb719cd1b6
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: a129f49d4f045433899fd7fdbd057fb16d0ed36a
 workflow-type: tm+mt
 source-wordcount: '659'
 ht-degree: 100%
@@ -53,9 +53,9 @@ Correspondendo a esses dois canais, há duas atividades de delivery nos workflow
 
 O workflow **[!UICONTROL NMAC opt-out management]** (mobileAppOptOutMgt) atualiza a notificação de cancelamentos de subscrições em dispositivos móveis. Para obter mais informações sobre esse fluxo de trabalho, consulte a [lista de workflows técnicos](../../workflow/using/about-technical-workflows.md).
 
-O Adobe Campaign é compatível com APNs HTTP/2. Para obter mais informações sobre as etapas de configuração, consulte [esta seção](../../delivery/using/configuring-the-mobile-application.md).
+O Adobe Campaign é compatível com APNs HTTP/2. Para obter mais informações sobre as etapas de configuração, consulte [esta seção](configuring-the-mobile-application.md).
 
-Para informações gerais sobre como criar um delivery, consulte [esta seção](../../delivery/using/steps-about-delivery-creation-steps.md).
+Para informações gerais sobre como criar um delivery, consulte [esta seção](steps-about-delivery-creation-steps.md).
 
 ## Caminho dos dados {#data-path}
 
