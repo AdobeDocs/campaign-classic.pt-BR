@@ -5,7 +5,7 @@ audience: delivery
 content-type: reference
 topic-tags: deliveries-best-practices
 exl-id: c0533148-b027-4158-9b95-8d2df769e963
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: a129f49d4f045433899fd7fdbd057fb16d0ed36a
 workflow-type: tm+mt
 source-wordcount: '480'
 ht-degree: 100%
@@ -16,7 +16,7 @@ ht-degree: 100%
 
 A segmentação de público-alvo é fundamental: crie suas listas cuidadosamente, teste seus emails em clientes de email populares e dispositivos móveis e verifique se suas listas de email estão atualizadas (sem endereços desconhecidos ou obsoletos). Você também pode enviar provas que ajudam a configurar um ciclo de validação completo.
 
-Saiba mais sobre as populações de públicos-alvos [nesta seção](../../delivery/using/steps-defining-the-target-population.md)
+Saiba mais sobre as populações de públicos-alvos [nesta seção](steps-defining-the-target-population.md)
 
 ## Direcionar o público-alvo correto {#target-the-right-audience}
 
@@ -30,26 +30,26 @@ Por padrão, os modelos de delivery no Campaign Classic direcionam os **Recipien
 
 Você pode, por exemplo, entregar deliveries a visitantes cujos perfis tenham sido coletados nas redes sociais, ou a visitantes que estejam inscritos em um serviço de informação.
 
-Esses mapeamentos são apresentados [nesta seção](../../delivery/using/selecting-a-target-mapping.md).
+Esses mapeamentos são apresentados [nesta seção](selecting-a-target-mapping.md).
 
 Você também pode criar e usar um target mapping personalizado. Para obter mais informações, consulte [esta seção](../../configuration/using/target-mapping.md).
 
 ## Recipients externos {#external-recipients}
 
-Você pode enviar deliveries para destinatários armazenados em um arquivo externo em vez de salvos no banco de dados. Saiba mais [nesta seção](../../delivery/using/steps-defining-the-target-population.md#selecting-external-recipients).
+Você pode enviar deliveries para destinatários armazenados em um arquivo externo em vez de salvos no banco de dados. Saiba mais [nesta seção](steps-defining-the-target-population.md#selecting-external-recipients).
 
 ## Enviar para seus assinantes {#send-to-subscribers}
 
-Para enviar mensagens aos assinantes de um informativo, é possível direcionar diretamente os assinantes para o serviço de informação correspondente. Saiba mais [nesta seção](../../delivery/using/managing-subscriptions.md#delivering-to-the-subscribers-of-a-service).
+Para enviar mensagens aos assinantes de um informativo, é possível direcionar diretamente os assinantes para o serviço de informação correspondente. Saiba mais [nesta seção](managing-subscriptions.md#delivering-to-the-subscribers-of-a-service).
 
 
 ## Testar recipients e endereços de seed {#test-recipients-seed-addresses}
 
 Para testar seu delivery, use provas antes de enviar para o público-alvo principal.
 
-Selecione os recipients de prova apropriados, porque eles validam a forma e o conteúdo da mensagem. As etapas para definir os recipients de prova são apresentadas [nesta seção](../../delivery/using/steps-defining-the-target-population.md#selecting-the-proof-target).
+Selecione os recipients de prova apropriados, porque eles validam a forma e o conteúdo da mensagem. As etapas para definir os recipients de prova são apresentadas [nesta seção](steps-defining-the-target-population.md#selecting-the-proof-target).
 
-Os seed addresses são usados para direcionar recipients que não correspondem aos critérios de direcionamento definidos para testar um delivery antes de enviar ao público-alvo principal. Eles são apresentados [nesta seção](../../delivery/using/about-seed-addresses.md).
+Os seed addresses são usados para direcionar recipients que não correspondem aos critérios de direcionamento definidos para testar um delivery antes de enviar ao público-alvo principal. Eles são apresentados [nesta seção](about-seed-addresses.md).
 
 ## Cancelar endereços duplicados {#deduplicate-addresses}
 
