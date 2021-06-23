@@ -6,7 +6,7 @@ audience: delivery
 content-type: reference
 topic-tags: monitoring-deliveries
 exl-id: 9ce11da0-e37b-459e-8ec7-d2bddf59bdf7
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: a129f49d4f045433899fd7fdbd057fb16d0ed36a
 workflow-type: tm+mt
 source-wordcount: '288'
 ht-degree: 100%
@@ -27,8 +27,8 @@ A lista de deliveries permite que você veja todos os deliveries criados em um �
 
 Um painel dedicado está disponível para cada delivery. Isso permite o monitoramento de possíveis problemas encontrados durante o envio, bem como vários tipos de informações relacionadas ao delivery: relatórios, mirror pages, exclusões, logs de rastreamento, renderização, etc.
 
-* [Acesso à lista de deliveries](../../delivery/using/list-of-deliveries.md)
-* [Painel de entrega](../../delivery/using/delivery-dashboard.md)
+* [Acesso à lista de deliveries](list-of-deliveries.md)
+* [Painel de entrega](delivery-dashboard.md)
 
 <img src="assets/do-not-localize/icon_guidelines.svg" width="60px">
 
@@ -36,8 +36,8 @@ Um painel dedicado está disponível para cada delivery. Isso permite o monitora
 
 Para garantir que seus deliveries tenham bom desempenho, várias diretrizes devem ser seguidas. Problemas comuns que você pode encontrar ao enviar deliveries também estão disponíveis para ajudá-lo a enviar deliveries com mais eficiência.
 
-* [Desempenhos do delivery e práticas recomendadas](../../delivery/using/delivery-performances.md)
-* [Solução de problemas de envio de delivery](../../delivery/using/delivery-troubleshooting.md)
+* [Desempenhos do delivery e práticas recomendadas](delivery-performances.md)
+* [Solução de problemas de envio de delivery](delivery-troubleshooting.md)
 
 <img src="assets/do-not-localize/icon_failure.svg" width="60px">
 
@@ -45,7 +45,7 @@ Para garantir que seus deliveries tenham bom desempenho, várias diretrizes deve
 
 Quando uma mensagem não pode ser enviada a um perfil, o servidor remoto envia automaticamente uma mensagem de erro, que é recebida pela plataforma do Adobe Campaign, que determina se o endereço de email ou o número de telefone deve ir para a quarentena.
 
-[Entender falhas de delivery](../../delivery/using/understanding-delivery-failures.md) é uma etapa fundamental para melhorar as campanhas de marketing.
+[Entender falhas de delivery](understanding-delivery-failures.md) é uma etapa fundamental para melhorar as campanhas de marketing.
 
 <img src="assets/do-not-localize/icon_quarantine.svg" width="60px">
 
@@ -53,4 +53,4 @@ Quando uma mensagem não pode ser enviada a um perfil, o servidor remoto envia a
 
 O Adobe Campaign gerencia uma lista de endereços em quarentena. Os recipients cujo endereço está em quarentena são excluídos por padrão durante a análise de delivery e não serão direcionados.
 
-[Nesta seção](../../delivery/using/understanding-quarantine-management.md) você encontrará informações sobre como identificar e gerenciar endereços em quarentena e aprenderá mais sobre as condições para enviar um endereço à quarentena.
+[Nesta seção](understanding-quarantine-management.md) você encontrará informações sobre como identificar e gerenciar endereços em quarentena e aprenderá mais sobre as condições para enviar um endereço à quarentena.
