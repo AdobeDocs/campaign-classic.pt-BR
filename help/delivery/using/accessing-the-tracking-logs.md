@@ -6,7 +6,7 @@ audience: delivery
 content-type: reference
 topic-tags: tracking-messages
 exl-id: df494786-5950-4646-aa9c-4dde45845057
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: a129f49d4f045433899fd7fdbd057fb16d0ed36a
 workflow-type: tm+mt
 source-wordcount: '89'
 ht-degree: 100%
@@ -27,4 +27,4 @@ Também é acessível por meio da guia **[!UICONTROL Tracking]** do delivery.
 
 >[!NOTE]
 >
->Se não for possível ver a guia **[!UICONTROL Tracking]** de um delivery, significa que o rastreamento não foi ativado. Consulte [esta seção](../../delivery/using/how-to-configure-tracked-links.md).
+>Se não for possível ver a guia **[!UICONTROL Tracking]** de um delivery, significa que o rastreamento não foi ativado. Consulte [esta seção](how-to-configure-tracked-links.md).
