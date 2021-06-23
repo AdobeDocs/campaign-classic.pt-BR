@@ -6,7 +6,7 @@ audience: delivery
 content-type: reference
 topic-tags: personalizing-deliveries
 exl-id: 182939bb-7aff-4667-bda9-c5d48be3b946
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: a129f49d4f045433899fd7fdbd057fb16d0ed36a
 workflow-type: tm+mt
 source-wordcount: '877'
 ht-degree: 100%
@@ -73,7 +73,7 @@ Os valores de **[!UICONTROL status]**, **[!UICONTROL channel]** e **[!UICONTROL 
 
 ## Inserir um cupom em um delivery de email {#inserting-a-coupon-into-an-email-delivery}
 
-No exemplo abaixo, o delivery é criado a partir da Home page. Para obter instruções detalhadas sobre como criar um delivery, consulte [esta seção](../../delivery/using/about-email-channel.md). Você também pode adicionar um cupom a um delivery em um workflow.
+No exemplo abaixo, o delivery é criado a partir da Home page. Para obter instruções detalhadas sobre como criar um delivery, consulte [esta seção](about-email-channel.md). Você também pode adicionar um cupom a um delivery em um workflow.
 
 1. Acesse **[!UICONTROL Campaigns]** e escolha **[!UICONTROL Deliveries]**.
 1. Clique em **[!UICONTROL Create]**.
