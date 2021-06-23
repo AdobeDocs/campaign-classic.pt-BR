@@ -6,7 +6,7 @@ audience: delivery
 content-type: reference
 topic-tags: about-deliveries-and-channels
 exl-id: d0ed7be7-3147-4cb8-9ce7-ea51602e9048
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: a129f49d4f045433899fd7fdbd057fb16d0ed36a
 workflow-type: tm+mt
 source-wordcount: '1599'
 ht-degree: 100%
@@ -19,14 +19,14 @@ ht-degree: 100%
 
 Para cada delivery, você poderá definir vários tipos de populações do target.
 
-* **Audiência principal**: perfis que receberão mensagens. [Saiba mais](../../delivery/using/steps-defining-the-target-population.md#selecting-the-main-target)
-* **Prova**: recipients de mensagens de prova, envolvidos no ciclo de validação. [Saiba mais](../../delivery/using/steps-defining-the-target-population.md#defining-a-specific-proof-target)
-* **Seed addresses**: recipients que estão fora do target do delivery, mas receberão o delivery (somente no contexto de uma campanha de marketing). [Saiba mais](../../delivery/using/about-seed-addresses.md)
+* **Audiência principal**: perfis que receberão mensagens. [Saiba mais](steps-defining-the-target-population.md#selecting-the-main-target)
+* **Prova**: recipients de mensagens de prova, envolvidos no ciclo de validação. [Saiba mais](steps-defining-the-target-population.md#defining-a-specific-proof-target)
+* **Seed addresses**: recipients que estão fora do target do delivery, mas receberão o delivery (somente no contexto de uma campanha de marketing). [Saiba mais](about-seed-addresses.md)
 * **Grupos de controle**: população que não receberá o delivery, usado para rastrear o comportamento e o impacto da campanha (somente no contexto de uma campanha de marketing). [Saiba mais](../../campaign/using/marketing-campaign-target.md#defining-a-control-group).
 
 ## Selecionar os principais recipients do delivery {#selecting-the-main-target}
 
-Na maioria dos casos, o público-alvo principal é extraído do banco de dados do Adobe Campaign (modo padrão). No entanto, os recipients também podem ser armazenados em um arquivo externo. Saiba mais [nesta seção](../../delivery/using/steps-defining-the-target-population.md#selecting-external-recipients).
+Na maioria dos casos, o público-alvo principal é extraído do banco de dados do Adobe Campaign (modo padrão). No entanto, os recipients também podem ser armazenados em um arquivo externo. Saiba mais [nesta seção](steps-defining-the-target-population.md#selecting-external-recipients).
 
 Para selecionar os recipients do delivery, siga as etapas abaixo:
 
@@ -37,7 +37,7 @@ Para selecionar os recipients do delivery, siga as etapas abaixo:
 
 1. Selecione o target mapping na lista suspensa **[!UICONTROL Target mapping]**. O target mapping padrão do Adobe Campaign é **[!UICONTROL Recipients]**, com base no schema **nms:recipient**.
 
-   Outros target mappings estão disponíveis e alguns podem ser relacionados à sua configuração específica. Para obter mais informações sobre target mappings, consulte [Seleção de target mapping](../../delivery/using/selecting-a-target-mapping.md).
+   Outros target mappings estão disponíveis e alguns podem ser relacionados à sua configuração específica. Para obter mais informações sobre target mappings, consulte [Seleção de target mapping](selecting-a-target-mapping.md).
 
 1. Clique no botão **[!UICONTROL Add]** para definir os filtros de restrição.
 
@@ -96,7 +96,7 @@ Para fazer isso:
 
    ![](assets/s_ncs_user_wizard_external_recipients.png)
 
-1. Por padrão, os recipients são importados do banco de dados. Você deverá selecionar o **[!UICONTROL Target mapping]**. Para obter mais informações sobre target mappings, consulte [Selecionar target mapping](../../delivery/using/selecting-a-target-mapping.md)
+1. Por padrão, os recipients são importados do banco de dados. Você deverá selecionar o **[!UICONTROL Target mapping]**. Para obter mais informações sobre target mappings, consulte [Selecionar target mapping](selecting-a-target-mapping.md)
 
    Você também pode escolher **[!UICONTROL Do not import the recipients into the database]**.
 
@@ -150,7 +150,7 @@ As seguintes opções estão disponíveis:
 
    >[!NOTE]
    >
-   >Para obter mais informações sobre o gerenciamento de quarentena, consulte [Noções básicas sobre gestão de quarentena](../../delivery/using/understanding-quarantine-management.md).
+   >Para obter mais informações sobre o gerenciamento de quarentena, consulte [Noções básicas sobre gestão de quarentena](understanding-quarantine-management.md).
 
 * **[!UICONTROL Limit delivery]** para um determinado número de mensagens. Essa opção permite que você insira o número máximo de mensagens a serem enviadas. Se o conteúdo do target exceder o número de mensagens indicadas, uma seleção aleatória será aplicada ao target.
 
@@ -181,11 +181,11 @@ Para selecionar o target das provas, siga as etapas abaixo:
 
 Ao selecionar o target da prova, a opção **[!UICONTROL Definition of a specific proof target]** permite selecionar os recipients da prova nos perfis do banco de dados.
 
-Selecione essa opção para escolher os recipients usando o botão **[!UICONTROL Add]**, como no caso de definição do target principal. Consulte [Seleção do target principal](../../delivery/using/steps-defining-the-target-population.md#selecting-the-main-target).
+Selecione essa opção para escolher os recipients usando o botão **[!UICONTROL Add]**, como no caso de definição do target principal. Consulte [Seleção do target principal](steps-defining-the-target-population.md#selecting-the-main-target).
 
 ![](assets/s_ncs_user_wizard_email01_143.png)
 
-Para saber mais sobre o envio de prova, consulte [esta seção](../../delivery/using/steps-validating-the-delivery.md#sending-a-proof).
+Para saber mais sobre o envio de prova, consulte [esta seção](steps-validating-the-delivery.md#sending-a-proof).
 
 ### Usar substituição de endereço na prova {#using-address-substitution-in-proof}
 
@@ -219,17 +219,17 @@ Você poderá usar **[!UICONTROL Seed addresses]** como target das provas: essa 
 
 >[!NOTE]
 >
->Os seed addresses são apresentados em [Sobre seed addresses](../../delivery/using/about-seed-addresses.md).
+>Os seed addresses são apresentados em [Sobre seed addresses](about-seed-addresses.md).
 
 Você poderá combinar a definição de um target de prova específico e o uso de seed addresses usando a opção **[!UICONTROL Specific target and Seed addresses]**. As configurações relacionadas serão então definidas em duas sub-guias separadas.
 
 Consulte também:
 
 * [Seleção do público-alvo da prova](#selecting-the-proof-target)
-* [Sobre seed addresses](../../delivery/using/about-seed-addresses.md)
-* [Caso de uso: seleção de seed addresses com critérios](../../delivery/using/use-case--selecting-seed-addresses-on-criteria.md)
+* [Sobre seed addresses](about-seed-addresses.md)
+* [Caso de uso: seleção de seed addresses com critérios](use-case--selecting-seed-addresses-on-criteria.md)
 
-## Vídeo tutorial {#seeds-and-proofs-video}
+## Tutorial em vídeo {#seeds-and-proofs-video}
 
 Este vídeo mostra como adicionar seeds e provas a um email existente e o procedimento para o seu envio.
 
