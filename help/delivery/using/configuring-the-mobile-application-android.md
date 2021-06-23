@@ -9,7 +9,7 @@ index: y
 internal: n
 snippet: y
 exl-id: 32c35e61-d0a3-478f-b73b-396e2becf7f9
-source-git-commit: fb2f1769aadbc128d76f343a5fa58ee4e3bda72a
+source-git-commit: a129f49d4f045433899fd7fdbd057fb16d0ed36a
 workflow-type: tm+mt
 source-wordcount: '963'
 ht-degree: 94%
@@ -79,9 +79,9 @@ Para escolher qual conector deseja usar, siga estas etapas:
 
    ![](assets/nmac_service_2.png)
 
-1. Crie seu aplicativo Android. Para obter mais informações, consulte [esta seção](../../delivery/using/configuring-the-mobile-application-android.md#creating-android-app).
+1. Crie seu aplicativo Android. Para obter mais informações, consulte [esta seção](configuring-the-mobile-application-android.md#creating-android-app).
 
-## Crie o aplicativo móvel Android {#creating-android-app}
+## Criar o aplicativo Android para dispositivos móveis {#creating-android-app}
 
 Depois de criar o serviço, é necessário criar o aplicativo Android:
 
@@ -93,7 +93,7 @@ Depois de criar o serviço, é necessário criar o aplicativo Android:
 
    ![](assets/nmac_android.png)
 
-1. Verifique se a mesma **[!UICONTROL Integration key]** está definida no Adobe Campaign e no código do aplicativo por meio do SDK. Para obter mais informações, consulte [esta seção](../../delivery/using/integrating-campaign-sdk-into-the-mobile-application.md).
+1. Verifique se a mesma **[!UICONTROL Integration key]** está definida no Adobe Campaign e no código do aplicativo por meio do SDK. Para obter mais informações, consulte [esta seção](integrating-campaign-sdk-into-the-mobile-application.md).
 
    >[!NOTE]
    >
@@ -111,8 +111,8 @@ Por padrão, o Adobe Campaign salva uma chave no campo **[!UICONTROL User identi
 
 Depois de criar um serviço e um novo aplicativo móvel, é necessário configurar seu aplicativo móvel dependendo da versão da API escolhida.
 
-* **A** configuração HTTP v1 é detalhada  [nesta seção](../../delivery/using/configuring-the-mobile-application-android.md#android-service-httpv1).
-* **A configuração HTTP (herdada)** é detalhada  [nesta seção](../../delivery/using/configuring-the-mobile-application-android.md#android-service-http).
+* **A** configuração HTTP v1 é detalhada  [nesta seção](configuring-the-mobile-application-android.md#android-service-httpv1).
+* **A configuração HTTP (herdada)** é detalhada  [nesta seção](configuring-the-mobile-application-android.md#android-service-http).
 
 #### Configurar API HTTP v1{#android-service-httpv1}
 
@@ -188,4 +188,4 @@ Abaixo estão os nomes de payload do FCM para personalizar ainda mais sua notifi
 
    >[!CAUTION]
    >
-   >Verifique se os nomes da configuração da guia **[!UICONTROL Subscription parameters]** são iguais aos do código do aplicativo móvel. Consulte [esta seção](../../delivery/using/integrating-campaign-sdk-into-the-mobile-application.md).
+   >Verifique se os nomes da configuração da guia **[!UICONTROL Subscription parameters]** são iguais aos do código do aplicativo móvel. Consulte [esta seção](integrating-campaign-sdk-into-the-mobile-application.md).
