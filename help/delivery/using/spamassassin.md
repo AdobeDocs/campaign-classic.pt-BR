@@ -6,7 +6,7 @@ audience: delivery
 content-type: reference
 topic-tags: deliverability-management
 exl-id: 8be6836d-f7dc-4199-b2b2-b6a9cac9d162
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: a129f49d4f045433899fd7fdbd057fb16d0ed36a
 workflow-type: tm+mt
 source-wordcount: '255'
 ht-degree: 100%
@@ -37,7 +37,7 @@ O SpamAssassin aproveita uma variedade de técnicas de detecção de spam, inclu
 
 Após criar seu delivery de email e definir seu conteúdo, siga as etapas abaixo para avaliar os riscos.
 
-Para obter mais informações sobre criar e configurar um delivery, consulte [esta página](../../delivery/using/about-email-channel.md).
+Para obter mais informações sobre criar e configurar um delivery, consulte [esta página](about-email-channel.md).
 
 1. Acesse a guia **[!UICONTROL Preview]**.
 1. Selecione um recipient para pré-visualizar seu delivery.
