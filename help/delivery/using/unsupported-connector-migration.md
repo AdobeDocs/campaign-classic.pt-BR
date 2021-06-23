@@ -7,7 +7,7 @@ content-type: reference
 topic-tags: sending-messages-on-mobiles
 hidefromtoc: true
 exl-id: 60acf80c-8506-410b-ab2c-4f67a5677b43
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: a129f49d4f045433899fd7fdbd057fb16d0ed36a
 workflow-type: tm+mt
 source-wordcount: '453'
 ht-degree: 100%
@@ -43,9 +43,9 @@ Os conectores SMS antigos estão usando o conector SMS Java que sobrecarrega o p
 
 >[!CAUTION]
 >
->Mesmo que você possa transpor os parâmetros, a configuração do conector **[!UICONTROL Extended Generic SMPP]** exige que você converse com seu provedor, que fornecerá as informações necessárias para preencher o restante dos parâmetros. Para obter mais informações, consulte esta [página](../../delivery/using/sms-protocol.md).
+>Mesmo que você possa transpor os parâmetros, a configuração do conector **[!UICONTROL Extended Generic SMPP]** exige que você converse com seu provedor, que fornecerá as informações necessárias para preencher o restante dos parâmetros. Para obter mais informações, consulte esta [página](sms-protocol.md).
 
-Primeiro, será necessário criar uma nova conta externa do **[!UICONTROL Extended Generic SMPP]** e depois transpor alguns parâmetros. Você pode encontrar as etapas detalhadas nesta [página](../../delivery/using/sms-set-up.md#creating-an-smpp-external-account).
+Primeiro, será necessário criar uma nova conta externa do **[!UICONTROL Extended Generic SMPP]** e depois transpor alguns parâmetros. Você pode encontrar as etapas detalhadas nesta [página](sms-set-up.md#creating-an-smpp-external-account).
 
 Agora é necessário preencher os parâmetros da guia **[!UICONTROL Mobile]** da conta externa do **[!UICONTROL Extended Generic SMPP]** recém-criada de acordo com o conector anterior.
 
