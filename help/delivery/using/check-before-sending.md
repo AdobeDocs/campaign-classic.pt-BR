@@ -5,7 +5,7 @@ audience: delivery
 content-type: reference
 topic-tags: deliveries-best-practices
 exl-id: 50d326b0-3c23-4dbf-9df6-d32b48e30f69
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: a129f49d4f045433899fd7fdbd057fb16d0ed36a
 workflow-type: tm+mt
 source-wordcount: '861'
 ht-degree: 100%
@@ -24,7 +24,7 @@ Antes de enviar um delivery, você precisa garantir que seus recipients receber�
 
 Esta etapa permite detectar e corrigir possíveis erros antes de fazer um delivery ao público-alvo principal.
 
-As etapas para validar um delivery são apresentadas [nesta seção](../../delivery/using/steps-validating-the-delivery.md).
+As etapas para validar um delivery são apresentadas [nesta seção](steps-validating-the-delivery.md).
 
 ## Renderização da caixa de entrada {#inbox-and-email-rendering}
 
@@ -36,13 +36,13 @@ A renderização da caixa de entrada permite pré-visualizar as mensagens nos pr
 
 * Os recursos de renderização da caixa de entrada são cruciais para identificar se suas campanhas de email terão êxito em atravessar os filtros dos principais ISPs (Provedores de serviço de internet) e serviços de webmail. Essas ferramentas enviam uma cópia de pré-impressão de um email para uma rede de caixas de entrada de teste, para que você possa ver como a mensagem será exibida ou irá renderizar nesses serviços. Elas também podem incluir relatórios e opções de correção de código que ajudam a identificar e fazer correções rapidamente que melhoram a capacidade de entrega.
 
-Saiba mais [nesta seção](../../delivery/using/inbox-rendering.md).
+Saiba mais [nesta seção](inbox-rendering.md).
 
 ## Mensagens de prova {#proof-messages}
 
 O envio de provas permite a verificação do link de opção de não participação, a mirror page e quaisquer outros links, validação da mensagem, verificação da exibição das imagens, detecção de possíveis erros, etc. Você também pode verificar seu design e renderização em diferentes dispositivos.
 
-Saiba mais [nesta seção](../../delivery/using/steps-validating-the-delivery.md#sending-a-proof).
+Saiba mais [nesta seção](steps-validating-the-delivery.md#sending-a-proof).
 
 ## Configurar deliveries de teste A/B {#a-b-testing-deliveries}
 
@@ -54,7 +54,7 @@ Se você tiver vários conteúdos para um delivery de email, poderá usar o test
 
 * Selecione aquela com a maior taxa de sucesso e envie-a para o restante do seu público-alvo
 
-Saiba mais [nesta seção](../../delivery/using/get-started-a-b-testing.md).
+Saiba mais [nesta seção](get-started-a-b-testing.md).
 
 ## Verifique se a mensagem foi entregue {#make-sure-your-message-is-delivered}
 
@@ -66,7 +66,7 @@ Você pode definir um processo de validação completo, envolvendo operadores e 
 
 ### Usar ondas
 
-Você pode aumentar progressivamente o volume enviado usando ondas. Esse aumento evitará que sua mensagem seja marcada como spam ou pode ser usado quando você quiser restringir o número de mensagens diárias. Ao usar ondas, você pode dividir os deliveries em vários lotes, em vez de enviar grandes volumes de mensagens ao mesmo tempo. Saiba mais [nesta seção](../../delivery/using/steps-sending-the-delivery.md#sending-using-multiple-waves).
+Você pode aumentar progressivamente o volume enviado usando ondas. Esse aumento evitará que sua mensagem seja marcada como spam ou pode ser usado quando você quiser restringir o número de mensagens diárias. Ao usar ondas, você pode dividir os deliveries em vários lotes, em vez de enviar grandes volumes de mensagens ao mesmo tempo. Saiba mais [nesta seção](steps-sending-the-delivery.md#sending-using-multiple-waves).
 
 ### Priorizar mensagens
 
