@@ -6,7 +6,7 @@ audience: delivery
 content-type: reference
 topic-tags: content-management
 exl-id: ade3f1d1-2235-4148-9b6f-721d3f521a15
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: a129f49d4f045433899fd7fdbd057fb16d0ed36a
 workflow-type: tm+mt
 source-wordcount: '238'
 ht-degree: 100%
@@ -25,11 +25,11 @@ Combinar o documento XML e as folhas de estilos de template XSL ou JavaScript ge
 
 Os seguintes recursos são necessários para a configuração de conteúdo:
 
-* Schemas de dados: descrição da estrutura de conteúdo XML. Para obter mais informações, consulte [Schemas de dados](../../delivery/using/data-schemas.md).
-* Formulários de entrada de dados: construção de telas de entrada de dados. Para obter mais informações, consulte [Formulários de entrada](../../delivery/using/input-forms.md).
-* Imagens: imagens usadas em formulários de entrada de dados. Para obter mais informações, consulte [Gestão de imagens](../../delivery/using/formatting.md#image-management).
-* Folhas de estilos: formatação de documentos de saída usando a linguagem XSLT. Para obter mais informações, consulte [Formatação](../../delivery/using/formatting.md).
-* Templates JavaScript: formatação de documentos de saída usando a linguagem JavaScript. Para obter mais informações, consulte [Templates de publicação](../../delivery/using/publication-templates.md).
-* Códigos JavaScript: códigos JavaScript para agregação de dados. Para obter mais informações, consulte [Agregador](../../delivery/using/publication-templates.md#aggregator).
-* Templates de publicação: definição de templates de publicação. Para obter mais informações, consulte [Templates de publicação](../../delivery/using/publication-templates.md).
-* Conteúdo: instâncias de conteúdo a serem criadas e publicadas. Para obter mais informações, consulte [Uso de um template de conteúdo](../../delivery/using/using-a-content-template.md).
+* Schemas de dados: descrição da estrutura de conteúdo XML. Para obter mais informações, consulte [Schemas de dados](data-schemas.md).
+* Formulários de entrada de dados: construção de telas de entrada de dados. Para obter mais informações, consulte [Formulários de entrada](input-forms.md).
+* Imagens: imagens usadas em formulários de entrada de dados. Para obter mais informações, consulte [Gestão de imagens](formatting.md#image-management).
+* Folhas de estilos: formatação de documentos de saída usando a linguagem XSLT. Para obter mais informações, consulte [Formatação](formatting.md).
+* Templates JavaScript: formatação de documentos de saída usando a linguagem JavaScript. Para obter mais informações, consulte [Templates de publicação](publication-templates.md).
+* Códigos JavaScript: códigos JavaScript para agregação de dados. Para obter mais informações, consulte [Agregador](publication-templates.md#aggregator).
+* Templates de publicação: definição de templates de publicação. Para obter mais informações, consulte [Templates de publicação](publication-templates.md).
+* Conteúdo: instâncias de conteúdo a serem criadas e publicadas. Para obter mais informações, consulte [Uso de um template de conteúdo](using-a-content-template.md).
