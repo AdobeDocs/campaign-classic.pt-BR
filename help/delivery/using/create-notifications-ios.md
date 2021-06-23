@@ -6,7 +6,7 @@ audience: delivery
 content-type: reference
 topic-tags: sending-push-notifications
 exl-id: 13ccc5d6-4355-42ba-80dc-30a45d3b69a4
-source-git-commit: 615b56c5f4362b0f47ec5700be7d170c0e108f4c
+source-git-commit: a129f49d4f045433899fd7fdbd057fb16d0ed36a
 workflow-type: tm+mt
 source-wordcount: '783'
 ht-degree: 90%
@@ -15,7 +15,7 @@ ht-degree: 90%
 
 # Criar notificações para iOS{#create-notifications-ios}
 
-Esta seção detalha os elementos específicos para o delivery de notificações iOS. Os conceitos globais sobre a criação de delivery são apresentados [nesta seção](../../delivery/using/steps-about-delivery-creation-steps.md).
+Esta seção detalha os elementos específicos para o delivery de notificações iOS. Os conceitos globais sobre a criação de delivery são apresentados [nesta seção](steps-about-delivery-creation-steps.md).
 
 Comece criando um novo delivery.
 
@@ -37,7 +37,7 @@ Para criar uma notificação por push para dispositivos iOS, siga as etapas abai
    >
    >Para obter mais informações sobre o uso de campos de personalização, consulte [esta seção](about-personalization.md).
    >
-   >Para obter mais informações sobre a inclusão de uma lista de propagação, consulte [Sobre seed addresses](../../delivery/using/about-seed-addresses.md).
+   >Para obter mais informações sobre a inclusão de uma lista de propagação, consulte [Sobre seed addresses](about-seed-addresses.md).
 
 1. Selecione **[!UICONTROL Subscribers of an iOS mobile application (iPhone, iPad)]**, depois o serviço relevante para o aplicativo móvel (Neotrips, neste caso) e clique na versão iOS do aplicativo.
 
@@ -63,7 +63,7 @@ Para criar uma notificação por push para dispositivos iOS, siga as etapas abai
    >
    >Os tipos de notificação **[!UICONTROL Badge]** e **[!UICONTROL Alert and badge]** permitem modificar o valor da notificação (o número acima do logotipo do aplicativo móvel). Para atualizar a notificação, basta inserir 0 como valor. Se o campo estiver vazio, o valor da notificação não será alterado.
 
-1. Clique no ícone **[!UICONTROL Insert emoticon]** para inserir emoticons à notificação via push. Para personalizar a lista de emoticons, consulte [esta seção](../../delivery/using/customizing-emoticon-list.md)
+1. Clique no ícone **[!UICONTROL Insert emoticon]** para inserir emoticons à notificação via push. Para personalizar a lista de emoticons, consulte [esta seção](customizing-emoticon-list.md)
 
 1. O **[!UICONTROL Action button]** permite definir um rótulo para o botão de ação que aparece nas notificações de alerta (campo **action_loc_key** da carga). Se o aplicativo iOS gerencia cadeias de caracteres localizáveis (**Localizable.strings**), digite a chave correspondente nesse campo. Se o aplicativo não gerencia o texto localizável, insira o rótulo que você deseja visualizar no botão de ação. Para mais informações sobre strings localizáveis, consulte a [Apple documentation](https://developer.apple.com/library/archive/documentation/NetworkingInternet/Conceptual/RemoteNotificationsPG/CreatingtheNotificationPayload.html#//apple_ref/doc/uid/TP40008194-CH10-SW1) .
 1. No campo **[!UICONTROL Play a sound]**, selecione o som a ser reproduzido pelo terminal móvel quando a notificação for recebida.
@@ -92,9 +92,9 @@ Para enviar uma prova e o delivery final, use o mesmo processo que os deliveries
 
 Após enviar as mensagens, você pode monitorar e rastrear seus deliveries. Para obter mais informações, consulte essas seções.
 
-* [Notificação por push em quarentena](../../delivery/using/understanding-quarantine-management.md#push-notification-quarantines)
-* [Monitoramento de uma entrega](../../delivery/using/about-delivery-monitoring.md)
-* [Noções básicas sobre falhas de entrega](../../delivery/using/understanding-delivery-failures.md)
+* [Notificação por push em quarentena](understanding-quarantine-management.md#push-notification-quarantines)
+* [Monitoramento de uma entrega](about-delivery-monitoring.md)
+* [Noções básicas sobre falhas de entrega](understanding-delivery-failures.md)
 
 
 ## Criar uma notificação avançada do iOS {#creating-ios-delivery}
