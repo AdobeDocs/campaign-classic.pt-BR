@@ -6,7 +6,7 @@ audience: delivery
 content-type: reference
 topic-tags: tracking-messages
 exl-id: 43779505-9917-4e99-af25-b00a9d29a645
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: a129f49d4f045433899fd7fdbd057fb16d0ed36a
 workflow-type: tm+mt
 source-wordcount: '685'
 ht-degree: 100%
@@ -19,7 +19,7 @@ Graças às suas funcionalidades de rastreamento, o Adobe Campaign permite que v
 
 Essas informações são recuperadas na guia **[!UICONTROL Tracking]** do perfil de cada recipient do delivery. Esta guia apresenta todos os links de URL rastreados e clicados pelo recipient selecionado na lista. Esse é o acúmulo de todos os URLs rastreados nas remessas que ainda estão na tela de envio. A lista pode ser configurada e normalmente contém: o URL clicado, a data e a hora do clique e o documento no qual o URL foi localizado. Para obter mais informações, consulte [esta seção](../../platform/using/editing-a-profile.md#tracking-tab).
 
-O **painel de delivery** também é fundamental para monitorar seus deliveries e eventuais problemas encontrados durante o envio de mensagens. Para obter mais informações, consulte [esta seção](../../delivery/using/delivery-dashboard.md).
+O **painel de delivery** também é fundamental para monitorar seus deliveries e eventuais problemas encontrados durante o envio de mensagens. Para obter mais informações, consulte [esta seção](delivery-dashboard.md).
 
 O diagrama a seguir mostra os estágios da caixa de diálogo entre o usuário e os vários servidores.
 
@@ -47,23 +47,23 @@ Depois que o rastreamento é configurado e os URLs são preenchidos, o servidor 
 
 **Links rastreados**
 
-Você pode rastrear a recepção de mensagens e a ativação dos links inseridos no conteúdo da mensagem para entender melhor o comportamento dos recipients. [Saiba mais](../../delivery/using/how-to-configure-tracked-links.md)
+Você pode rastrear a recepção de mensagens e a ativação dos links inseridos no conteúdo da mensagem para entender melhor o comportamento dos recipients. [Saiba mais](how-to-configure-tracked-links.md)
 
 **Rastreamento de URL**
 
-As opções de rastreamento podem ser configuradas por meio da ativação ou desativação de URLs rastreados. [Saiba mais](../../delivery/using/personalizing-url-tracking.md)
+As opções de rastreamento podem ser configuradas por meio da ativação ou desativação de URLs rastreados. [Saiba mais](personalizing-url-tracking.md)
 
 **Personalização do link rastreado**
 
-Os recursos de rastreamento de Campaign Classic permitem que você adicione links em emails que podem ser personalizados e que oferecem suporte ao rastreamento. [Saiba mais](../../delivery/using/tracking-personalized-links.md)
+Os recursos de rastreamento de Campaign Classic permitem que você adicione links em emails que podem ser personalizados e que oferecem suporte ao rastreamento. [Saiba mais](tracking-personalized-links.md)
 
 **Logs de rastreamento**
 
-O fluxo de trabalho técnico de rastreamento recupera os dados de rastreamento depois que o delivery é enviado e o rastreamento ativado. Esses dados podem ser encontrados na guia Rastreamento do seu delivery. [Saiba mais](../../delivery/using/accessing-the-tracking-logs.md)
+O fluxo de trabalho técnico de rastreamento recupera os dados de rastreamento depois que o delivery é enviado e o rastreamento ativado. Esses dados podem ser encontrados na guia Rastreamento do seu delivery. [Saiba mais](accessing-the-tracking-logs.md)
 
 **Testar o rastreamento**
 
-Antes de enviar as mensagens com o rastreamento, você pode testar o rastreamento na mirror page, em logs de email e em links. [Saiba mais](../../delivery/using/testing-tracking.md)
+Antes de enviar as mensagens com o rastreamento, você pode testar o rastreamento na mirror page, em logs de email e em links. [Saiba mais](testing-tracking.md)
 
 ## Rastreamento de aplicação web {#web-application-tracking}
 
@@ -101,11 +101,11 @@ Este relatório combina os principais indicadores para rastrear o comportamento 
 
 As diferentes tabelas fornecem a lista de indicadores usados nos diferentes relatórios e suas fórmulas de cálculo, dependendo do tipo de delivery. [Saiba mais](../../reporting/using/indicator-calculation.md)
 
-## Solução de problemas de rastreamento {#tracking-troubleshooting}
+## Solução de problemas do rastreamento {#tracking-troubleshooting}
 
 <img src="assets/do-not-localize/icon-troubleshooting.svg" width="60px">
 
-As seguintes dicas de solução de problemas ajudarão você a resolver os problemas mais comuns que ocorrem ao usar o rastreamento no Adobe Campaign Classic. Para obter uma solução de problemas mais avançada, consulte [esta seção](../../delivery/using/tracking-troubleshooting.md).
+As seguintes dicas de solução de problemas ajudarão você a resolver os problemas mais comuns que ocorrem ao usar o rastreamento no Adobe Campaign Classic. Para obter uma solução de problemas mais avançada, consulte [esta seção](tracking-troubleshooting.md).
 
 * Verifique se o processo trackinglogd está em execução
 
