@@ -7,9 +7,9 @@ feature: Visão geral
 role: Business Practitioner, Administrator
 level: Beginner
 exl-id: 5bd12f65-f468-41ab-bbae-e59a6592a803
-source-git-commit: 46e5cac1df419de933d96a3f35f7ac491a1defa5
+source-git-commit: c612b47463427751eff27d6092e371c918c87d93
 workflow-type: tm+mt
-source-wordcount: '1532'
+source-wordcount: '1551'
 ht-degree: 55%
 
 ---
@@ -18,11 +18,15 @@ ht-degree: 55%
 
 ## Sobre a integração do Adobe Analytics Connector {#about-analytics-connector-integration}
 
+O Adobe Analytics Connector permite que o Adobe Campaign e o Adobe Analytics interajam por meio do pacote **[!UICONTROL Web Analytics connectors]**. Ele encaminha dados para o Adobe Campaign na forma de segmentos relativos ao comportamento do usuário após uma campanha de e-mail. Por outro lado, ele envia indicadores e atributos de campanhas de email entregues pelo Adobe Campaign para o Adobe Analytics.
+
 >[!CAUTION]
 >
->O Adobe Analytics Connector não é compatível com as mensagens transacionais (Centro de Mensagens).
+>* O Adobe Analytics Connector não é compatível com as mensagens transacionais (Centro de Mensagens).
+   >
+   >
+* Antes de iniciar, verifique se o Adobe Identity Management System (IMS) está implementado no Campaign. [Saiba mais nesta página](../../integrations/using/about-adobe-id.md).
 
-O Adobe Analytics Connector permite que o Adobe Campaign e o Adobe Analytics interajam por meio do pacote **[!UICONTROL Web Analytics connectors]**. Ele encaminha dados para o Adobe Campaign na forma de segmentos relativos ao comportamento do usuário após uma campanha de e-mail. Por outro lado, ele envia indicadores e atributos de campanhas de email entregues pelo Adobe Campaign para o Adobe Analytics.
 
 Usando o Adobe Analytics Connector, o Adobe Campaign tem uma maneira de medir o público-alvo da Internet (Web Analytics). Graças a essas integrações, o Adobe Campaign pode recuperar dados do comportamento do visitante para um ou mais sites, após uma campanha de marketing, e (após a análise) executar campanhas de re-marketing com uma visualização para convertê-los em compradores. Por outro lado, as ferramentas do Web Analytics permitem que o Adobe Campaign encaminhe indicadores e atributos de campanha para suas plataformas.
 
