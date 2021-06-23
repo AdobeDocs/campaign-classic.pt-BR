@@ -6,7 +6,7 @@ audience: delivery
 content-type: reference
 topic-tags: using-seed-addresses
 exl-id: 3f567b2d-6f98-4831-af84-7db17fd12c6e
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: a129f49d4f045433899fd7fdbd057fb16d0ed36a
 workflow-type: tm+mt
 source-wordcount: '448'
 ht-degree: 100%
@@ -30,9 +30,9 @@ Para usar a substituição de campo aleatório, você deve ter:
 * um delivery com um ou vários campos de personalização,
 * seed addresses cujo **schema de dados** é modificado de acordo com os campos de personalização usados no delivery.
 
-## Criação de um delivery.{#step-1---creating-a-delivery}
+## Criação de um delivery. {#step-1---creating-a-delivery}
 
-As etapas para criar um delivery estão detalhadas na seção [Creating an email delivery](../../delivery/using/creating-an-email-delivery.md).
+As etapas para criar um delivery estão detalhadas na seção [Creating an email delivery](creating-an-email-delivery.md).
 
 Neste exemplo, o gerenciador de delivery criou o boletim informativo.
 
@@ -51,7 +51,7 @@ Neste exemplo, o schema de dados dos seed addresses pega um valor criado pelo sc
 
 Essa enumeração permite especificar o gênero literário favorito de seus clientes.
 
-Para que essa modificação do schema de dados possa ser visualizada no **Formulário de entrada** dos seed addresses, você deve atualizá-lo. Consulte a seção [Atualização do formulário de entrada](../../delivery/using/use-case--selecting-seed-addresses-on-criteria.md#updating-the-input-form).
+Para que essa modificação do schema de dados possa ser visualizada no **Formulário de entrada** dos seed addresses, você deve atualizá-lo. Consulte a seção [Atualização do formulário de entrada](use-case--selecting-seed-addresses-on-criteria.md#updating-the-input-form).
 
 ## Configuração da personalização {#configuring-personalization}
 
@@ -61,7 +61,7 @@ Para que essa modificação do schema de dados possa ser visualizada no **Formul
 
    ![](assets/dlv_seeds_usecase_25.png)
 
-1. Configure sua lista de delivery e seus seed addresses. Consulte [Identificação das populações alvo](../../delivery/using/steps-defining-the-target-population.md).
+1. Configure sua lista de delivery e seus seed addresses. Consulte [Identificação das populações alvo](steps-defining-the-target-population.md).
 
    Neste exemplo, o usuário seleciona usuários cujo **gênero literário favorito** é ficção científica como o principal público alvo.
 
@@ -73,7 +73,7 @@ Para que essa modificação do schema de dados possa ser visualizada no **Formul
 
    >[!NOTE]
    >
-   >Para obter mais informações sobre o link **[!UICONTROL Edit the dynamic condition...]**, consulte o [Caso de uso: seleção de seed addresses em critérios](../../delivery/using/use-case--selecting-seed-addresses-on-criteria.md)
+   >Para obter mais informações sobre o link **[!UICONTROL Edit the dynamic condition...]**, consulte o [Caso de uso: seleção de seed addresses em critérios](use-case--selecting-seed-addresses-on-criteria.md)
 
 1. Clique na guia **[!UICONTROL Preview]** e selecione um seed address para testar a personalização.
 
