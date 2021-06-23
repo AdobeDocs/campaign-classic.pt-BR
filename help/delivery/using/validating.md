@@ -6,7 +6,7 @@ audience: delivery
 content-type: reference
 topic-tags: sending-direct-mail
 exl-id: 42bb395b-b3fe-4d48-8720-5a4cae191984
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: a129f49d4f045433899fd7fdbd057fb16d0ed36a
 workflow-type: tm+mt
 source-wordcount: '241'
 ht-degree: 100%
@@ -15,13 +15,13 @@ ht-degree: 100%
 
 # Validação{#validating}
 
-Os conceitos globais ao validar um delivery são apresentados [nesta seção](../../delivery/using/steps-validating-the-delivery.md).
+Os conceitos globais ao validar um delivery são apresentados [nesta seção](steps-validating-the-delivery.md).
 
-O arquivo de output de um delivery de correspondência direta é gerado durante a análise de delivery. O conteúdo do arquivo depende das colunas de output selecionadas (consulte o [Arquivo de Extração](../../delivery/using/defining-the-direct-mail-content.md#extraction-file)).
+O arquivo de output de um delivery de correspondência direta é gerado durante a análise de delivery. O conteúdo do arquivo depende das colunas de output selecionadas (consulte o [Arquivo de Extração](defining-the-direct-mail-content.md#extraction-file)).
 
 >[!NOTE]
 >
->A fase de análise é detalhada em [Análise de delivery](../../delivery/using/steps-validating-the-delivery.md#analyzing-the-delivery).
+>A fase de análise é detalhada em [Análise de delivery](steps-validating-the-delivery.md#analyzing-the-delivery).
 
 Durante a fase de análise, o arquivo é gerado, mas as informações relativas aos recipients (ou seja, logs do delivery) não são atualizadas. Assim, você pode cancelar esse trabalho sem correr nenhum risco.
 
