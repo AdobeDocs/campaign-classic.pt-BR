@@ -6,14 +6,14 @@ audience: delivery
 content-type: reference
 topic-tags: about-deliveries-and-channels
 exl-id: c2f4d8d0-f0fe-4d1a-92fd-91edaf9729f3
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: a129f49d4f045433899fd7fdbd057fb16d0ed36a
 workflow-type: tm+mt
 source-wordcount: '1663'
 ht-degree: 100%
 
 ---
 
-# Validar o delivery {#validating-the-delivery}
+# Validar a entrega {#validating-the-delivery}
 
 Quando um delivery for criado e configurado, você deverá validá-lo antes de enviá-lo para o target principal.
 
@@ -23,13 +23,13 @@ Para fazer isso:
 
    As regras aplicadas durante a análise são apresentadas [nesta seção](#validation-process-with-typologies). Os modos de validação disponíveis estão detalhados na seção [Alteração do modo de aprovação](#changing-the-approval-mode).
 
-1. **Enviar provas**: esta etapa permite controlar o conteúdo, os URLs, a personalização etc. Saiba mais em [Enviar uma prova](../../delivery/using/steps-validating-the-delivery.md#sending-a-proof) e [Definir um target de prova específico](../../delivery/using/steps-defining-the-target-population.md#defining-a-specific-proof-target).
+1. **Enviar provas**: esta etapa permite controlar o conteúdo, os URLs, a personalização etc. Saiba mais em [Enviar uma prova](steps-validating-the-delivery.md#sending-a-proof) e [Definir um target de prova específico](steps-defining-the-target-population.md#defining-a-specific-proof-target).
 
 >[!IMPORTANT]
 >
 >As duas etapas acima DEVEM SER executadas após cada modificação no conteúdo da mensagem.
 
-## Analisar o delivery {#analyzing-the-delivery}
+## Analise o delivery {#analyzing-the-delivery}
 
 A análise é o estágio em que a população do target é calculada e o conteúdo de delivery é preparado. Uma vez concluído, o delivery estará pronto para ser enviado.
 
@@ -48,7 +48,7 @@ A análise é o estágio em que a população do target é calculada e o conteú
 
    >[!NOTE]
    >
-   >As regras de validação usadas durante a análise são descritas na seção [Processo de validação com tipologias](../../delivery/using/steps-validating-the-delivery.md#validation-process-with-typologies).
+   >As regras de validação usadas durante a análise são descritas na seção [Processo de validação com tipologias](steps-validating-the-delivery.md#validation-process-with-typologies).
 
 1. É possível interromper a análise a qualquer momento, basta clicar em **[!UICONTROL Stop]**.
 
@@ -93,7 +93,7 @@ Essa guia fornece acesso às seguintes opções:
 * **[!UICONTROL Approval mode]** : esse campo permite a definição do delivery manual ou automática quando a análise é concluída. Os modos de validação são apresentados na seção [Alterar o modo de aprovação](#changing-the-approval-mode).
 * **[!UICONTROL Prepare the delivery parts in the database]** : essa opção permite melhorar o desempenho da análise do delivery. Para obter mais informações, consulte [esta seção](#improving-delivery-analysis).
 * **[!UICONTROL Prepare the personalization data with a workflow]** : 
-essa opção permite preparar os dados de personalização contidos no delivery em um workflow automático, o que pode resultar em um aumento significativo no desempenho para executar a personalização. Para obter mais informações, consulte [Otimizar a personalização](../../delivery/using/personalization-fields.md#optimizing-personalization).
+essa opção permite preparar os dados de personalização contidos no delivery em um workflow automático, o que pode resultar em um aumento significativo no desempenho para executar a personalização. Para obter mais informações, consulte [Otimizar a personalização](personalization-fields.md#optimizing-personalization).
 * **[!UICONTROL Start job in a detached process]** : essa opção permite iniciar a análise do delivery em um processo separado. A função de análise usa o processo do servidor de aplicativos Adobe Campaign (Web nlserver) por padrão. Ao selecionar essa opção, você garante que a análise será concluída mesmo no caso de falha do servidor de aplicativos.
 * **[!UICONTROL Log SQL queries generated during the analysis in the journal]**: essa opção adiciona os logs de consulta SQL ao journal de delivery durante a fase de análise.
 * **[!UICONTROL Ignore personalization scripts during sending]**: essa opção permite ignorar a interpretação das diretivas JavaScript encontradas no conteúdo HTML. Eles serão exibidos como nos conteúdos entregues. Essas diretivas são introduzidas com a tag **&lt;%=**.
@@ -132,23 +132,24 @@ Para detectar possíveis erros na configuração da mensagem, a Adobe recomenda 
 
 >[!NOTE]
 >
->* Os modos de validação disponíveis estão detalhados em [Alterar o modo de aprovação](../../delivery/using/steps-validating-the-delivery.md#changing-the-approval-mode).
->* A configuração do target de prova é explicada em [Definir um target de prova específico](../../delivery/using/steps-defining-the-target-population.md#defining-a-specific-proof-target).
+>* Os modos de validação disponíveis estão detalhados em [Alterar o modo de aprovação](steps-validating-the-delivery.md#changing-the-approval-mode).
+>* A configuração do target de prova é explicada em [Definir um target de prova específico](steps-defining-the-target-population.md#defining-a-specific-proof-target).
+
 >
 
 
 
 Para enviar uma prova, siga as etapas abaixo:
 
-1. Verifique se o target de prova foi configurado conforme descrito em [Definir um target de prova específico](../../delivery/using/steps-defining-the-target-population.md#defining-a-specific-proof-target).
+1. Verifique se o target de prova foi configurado conforme descrito em [Definir um target de prova específico](steps-defining-the-target-population.md#defining-a-specific-proof-target).
 1. Clique em **[!UICONTROL Send a proof]** na barra superior do assistente do delivery.
 
    ![](assets/s_ncs_user_email_del_send_proof.png)
 
-1. Inicie a análise de mensagem. Consulte [Analisar o delivery](../../delivery/using/steps-validating-the-delivery.md#analyzing-the-delivery).
-1. Agora você pode enviar o delivery (consulte [Enviar o delivery](../../delivery/using/steps-sending-the-delivery.md)).
+1. Inicie a análise de mensagem. Consulte [Analisar o delivery](steps-validating-the-delivery.md#analyzing-the-delivery).
+1. Agora você pode enviar o delivery (consulte [Enviar o delivery](steps-sending-the-delivery.md)).
 
-   Quando o delivery for enviado, a prova será exibida na lista de delivery e será automaticamente criada e numerada. Ela poderá ser editada se você quiser acessar seu conteúdo e propriedades. Para obter mais informações, consulte esta [página](../../delivery/using/about-delivery-monitoring.md).
+   Quando o delivery for enviado, a prova será exibida na lista de delivery e será automaticamente criada e numerada. Ela poderá ser editada se você quiser acessar seu conteúdo e propriedades. Para obter mais informações, consulte esta [página](about-delivery-monitoring.md).
 
    ![](assets/s_ncs_user_delivery_validation_cycle_03a.png)
 
@@ -173,7 +174,7 @@ A guia **[!UICONTROL Advanced]** das propriedades de delivery permite definir as
 As seguintes opções estão disponíveis:
 
 * A primeira opção permite que você mantenha as duplicatas da prova.
-* As duas opções a seguir permitem manter em quarentena os recipients que estão nas listas de bloqueio e de endereços. Consulte a descrição dessas opções para o target principal em [Personalizar configurações de exclusão](../../delivery/using/steps-defining-the-target-population.md#customizing-exclusion-settings). Diferentemente do target de um delivery, em que esses endereços são excluídos por padrão, eles serão mantidos por padrão para o target de uma prova.
+* As duas opções a seguir permitem manter em quarentena os recipients que estão nas listas de bloqueio e de endereços. Consulte a descrição dessas opções para o target principal em [Personalizar configurações de exclusão](steps-defining-the-target-population.md#customizing-exclusion-settings). Diferentemente do target de um delivery, em que esses endereços são excluídos por padrão, eles serão mantidos por padrão para o target de uma prova.
 * A opção **[!UICONTROL Keep the delivery code for the proof]** permite que você forneça o mesmo código de delivery que o definido para o delivery com o qual ele está relacionado. Este código é especificado na primeira etapa do assistente de delivery.
 * Por padrão, o assunto da prova tem o prefixo &#39;Proof #&#39;, onde # é o número da prova. É possível alterar esse prefixo no campo **[!UICONTROL Label prefix]**.
 
