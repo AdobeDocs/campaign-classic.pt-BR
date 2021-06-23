@@ -6,7 +6,7 @@ audience: delivery
 content-type: reference
 topic-tags: subscriptions-and-referrals
 exl-id: 16dddd4a-2e1a-4c78-8168-f656657bb9b8
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: a129f49d4f045433899fd7fdbd057fb16d0ed36a
 workflow-type: tm+mt
 source-wordcount: '1098'
 ht-degree: 100%
@@ -54,10 +54,10 @@ Para editar um serviço existente, clique em seu respectivo nome. Para criar um 
 
    >[!NOTE]
    >
-   >As subscrições do Facebook e do Twitter estão detalhadas [nesta seção](../../social/using/about-social-marketing.md). As subscrições de aplicativos móveis são detalhadas em [Sobre o canal de aplicativos móveis](../../delivery/using/about-mobile-app-channel.md).
+   >As subscrições do Facebook e do Twitter estão detalhadas [nesta seção](../../social/using/about-social-marketing.md). As subscrições de aplicativos móveis são detalhadas em [Sobre o canal de aplicativos móveis](about-mobile-app-channel.md).
 
 * Para um serviço de tipo de email, selecione o **Modo de delivery**. Os modos possíveis são: **[!UICONTROL Newsletter]** ou **[!UICONTROL Viral]**.
-* Você pode enviar **mensagens de confirmação** para uma subscrição ou unsubscription. Para fazer isso, selecione os templates que devem ser usados para criar os deliveries correspondentes a partir dos campos **[!UICONTROL Subscription]** e **[!UICONTROL Unsubscription]**. Esses templates devem ser configurados com um target mapping do tipo **[!UICONTROL Subscription]** sem um destino definido. Consulte a seção [Sobre canal de email](../../delivery/using/about-email-channel.md).
+* Você pode enviar **mensagens de confirmação** para uma subscrição ou unsubscription. Para fazer isso, selecione os templates que devem ser usados para criar os deliveries correspondentes a partir dos campos **[!UICONTROL Subscription]** e **[!UICONTROL Unsubscription]**. Esses templates devem ser configurados com um target mapping do tipo **[!UICONTROL Subscription]** sem um destino definido. Consulte a seção [Sobre canal de email](about-email-channel.md).
 * Por padrão, as subscrições são ilimitadas. É possível desmarcar a opção **[!UICONTROL Unlimited]** para definir uma duração de validade do serviço. A duração pode ser especificada em dias (**[!UICONTROL d]**) ou meses (**[!UICONTROL m]** ).
 
 Depois que o serviço é salvo, ele será adicionado à lista Services and Subscriptions: Clique no nome para editá-lo. Várias guias estão disponíveis. A guia **[!UICONTROL Subscriptions]** permite visualizar a lista de assinantes do serviço de informação (guia **[!UICONTROL Active subscriptions]**) ou o histórico de subscrição/cancelar subscrição (guia **[!UICONTROL History]**). Além disso, é possível adicionar e excluir assinantes a partir desta guia. Consulte [Adição e exclusão de assinantes](#adding-and-deleting-subscribers)
@@ -146,9 +146,9 @@ Para registrar recipients para um serviço de informação, é possível:
 
 por lei, deliveries de email devem conter um link para cancelamento. Os recipients podem clicar neste link para atualizar seu perfil e ser excluídos do envio dos futuros deliveries.
 
-O link padrão para cancelamento de subscrição é inserido por meio do último botão da barra de ferramentas do editor de conteúdo fornecido no assistente de delivery (consulte [Sobre personalização](../../delivery/using/about-personalization.md)). Quando o recipient clica nesse link, o perfil é adicionado à lista de bloqueios (recusado), significando que este recipient não será mais direcionado para qualquer ação de delivery.
+O link padrão para cancelamento de subscrição é inserido por meio do último botão da barra de ferramentas do editor de conteúdo fornecido no assistente de delivery (consulte [Sobre personalização](about-personalization.md)). Quando o recipient clica nesse link, o perfil é adicionado à lista de bloqueios (recusado), significando que este recipient não será mais direcionado para qualquer ação de delivery.
 
-Os recipients podem, no entanto, optar por cancelar a subscrição de um serviço sem cancelar a subscrição de todos os serviços. Para permitir isso, é possível usar um formulário web (consulte [esta seção](../../web/using/adding-fields-to-a-web-form.md#subscription-checkboxes)) ou inserir um link personalizado de cancelamento de subscrição (consulte [Blocos de personalização](../../delivery/using/personalization-blocks.md)).
+Os recipients podem, no entanto, optar por cancelar a subscrição de um serviço sem cancelar a subscrição de todos os serviços. Para permitir isso, é possível usar um formulário web (consulte [esta seção](../../web/using/adding-fields-to-a-web-form.md#subscription-checkboxes)) ou inserir um link personalizado de cancelamento de subscrição (consulte [Blocos de personalização](personalization-blocks.md)).
 
 Também é possível cancelar a subscrição de um recipient manualmente no perfil do recipient. Para fazer isso, clique na guia **[!UICONTROL Subscriptions]** do recipient, selecione o(s) serviço(s) de informações desejado(s) e clique em **[!UICONTROL Delete]**.
 
