@@ -6,14 +6,14 @@ audience: delivery
 content-type: reference
 topic-tags: sending-messages-on-mobiles
 exl-id: 94aa4628-d973-433d-b963-b078e2d6672b
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: a129f49d4f045433899fd7fdbd057fb16d0ed36a
 workflow-type: tm+mt
 source-wordcount: '432'
 ht-degree: 100%
 
 ---
 
-# Criar um delivery de SMS {#creating-a-sms-delivery}
+# Criar uma entrega de SMS {#creating-a-sms-delivery}
 
 ## Selecionar o canal de delivery {#selecting-the-delivery-channel}
 
@@ -21,14 +21,14 @@ Para criar um novo delivery de SMS, siga as etapas abaixo:
 
 >[!NOTE]
 >
->Os conceitos globais sobre a criação de delivery são apresentados [nesta seção](../../delivery/using/steps-about-delivery-creation-steps.md).
+>Os conceitos globais sobre a criação de delivery são apresentados [nesta seção](steps-about-delivery-creation-steps.md).
 
 1. Crie um novo delivery, por exemplo, no painel do Delivery.
 1. Selecione o template do delivery **Sent to mobiles (SMPP)** que você criou anteriormente. Para obter mais informações, consulte a seção [Alterar o template do delivery](sms-set-up.md#changing-the-delivery-template).
 
    ![](assets/s_user_mobile_wizard.png)
 
-1. Identifique o delivery com um rótulo, código e descrição. Para obter mais informações, consulte [esta seção](../../delivery/using/steps-create-and-identify-the-delivery.md#identifying-the-delivery).
+1. Identifique o delivery com um rótulo, código e descrição. Para obter mais informações, consulte [esta seção](steps-create-and-identify-the-delivery.md#identifying-the-delivery).
 1. Clique em **[!UICONTROL Continue]** para confirmar essas informações e exibir a janela de configuração de mensagem.
 
 ## Defina o conteúdo do SMS {#defining-the-sms-content}
@@ -39,7 +39,7 @@ Para criar o conteúdo do SMS, siga as etapas abaixo:
 
    ![](assets/s_ncs_user_wizard_sms01_138.png)
 
-   O uso de campos de personalização é apresentado na seção [Sobre a personalização](../../delivery/using/about-personalization.md).
+   O uso de campos de personalização é apresentado na seção [Sobre a personalização](about-personalization.md).
 
 1. Clique em **[!UICONTROL Preview]** na parte inferior da página para exibir a renderização da mensagem com sua personalização. Para iniciar a visualização, selecione um recipient usando o botão **[!UICONTROL Test personalization]** na barra de ferramentas. Você pode selecionar um recipient nos targets definidos ou escolher outro recipient.
 
@@ -65,8 +65,8 @@ Para criar o conteúdo do SMS, siga as etapas abaixo:
 
 ## Selecionar a população do target {#selecting-the-target-population}
 
-O processo detalhado ao selecionar a população do target de um delivery é apresentado [nesta seção](../../delivery/using/steps-defining-the-target-population.md).
+O processo detalhado ao selecionar a população do target de um delivery é apresentado [nesta seção](steps-defining-the-target-population.md).
 
-Para obter mais informações sobre o uso de campos de personalização, consulte [esta seção](../../delivery/using/about-personalization.md).
+Para obter mais informações sobre o uso de campos de personalização, consulte [esta seção](about-personalization.md).
 
-Para obter mais informações sobre a inclusão de uma lista de propagação, consulte [esta página](../../delivery/using/about-seed-addresses.md).
+Para obter mais informações sobre a inclusão de uma lista de propagação, consulte [esta página](about-seed-addresses.md).
