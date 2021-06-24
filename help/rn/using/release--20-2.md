@@ -6,9 +6,9 @@ feature: Visão geral
 role: Business Practitioner
 level: Beginner
 exl-id: fcaab1aa-c8f9-4606-b0d8-eb481a38f588
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: c0a3d9217696f5f5622a6af8f64c62b1a9fbce20
 workflow-type: tm+mt
-source-wordcount: '2970'
+source-wordcount: '2972'
 ht-degree: 92%
 
 ---
@@ -29,7 +29,7 @@ _15 de abril de 2021_
 
 _31 de março de 2021_
 
-**Aprimoramentos**
+**Melhorias**
 
 * Foi feito um aprimoramento para evitar falhas em chamadas soap inválidas. Isso pode fazer com que a instância pare de funcionar ao tentar executar consultas complexas específicas. (NEO-28796, NEO-30553)
 * Correção de uma regressão que impedia o envio de deliveries de SMS com TLS devido à verificação do nome de host. (NEO-29581)
@@ -44,7 +44,7 @@ _31 de março de 2021_
 * Correção de um problema que poderia causar falha no workflow Faturamento ao usar um target mapping personalizado. A chave primária do esquema personalizado é armazenada na coluna &quot;sourceId&quot; que permitia apenas valores inteiros. Agora permite números inteiros e valores de sequências. (NEO-25914, NEO-28146)
 * Correção de uma regressão que impedia o uso de alguns componentes do console, como o seletor de datas e o gerenciamento de imagens nos deliveries. (NEO-31453)
 
-## ![](assets/do-not-localize/red_2.png) Versão 20.2.4 - Build 9187 {#release-20-2-4-build-9187}
+## ![](assets/do-not-localize/red_2.png) Versão 20.2.4 – Compilação 9187 {#release-20-2-4-build-9187}
 
 _15 de abril de 2021_
 
@@ -61,7 +61,7 @@ _22 de dezembro de 2020_
 
 >[!CAUTION]
 >
-> * Esta versão é fornecida com um novo protocolo de conexão: se você estiver se conectando ao Campaign pelo Serviço de identidade da Adobe (IMS), a atualização será obrigatória para o servidor do Campaign e o console do cliente poderem se conectar ao Campaign após **30 de junho de 2021**.
+> * Esta versão é fornecida com um novo protocolo de conexão: se você estiver se conectando ao Campaign pelo Serviço de identidade da Adobe (IMS), a atualização será obrigatória para o servidor do Campaign e o console do cliente poderem se conectar ao Campaign após **30 de junho de 2021**.  [Saiba mais](../../technotes/ims-updates.md)
 > * Esta versão vem com uma [correção de segurança](https://helpx.adobe.com/security/products/campaign/apsb21-04.html): a atualização é obrigatória para reforçar a segurança do ambiente.
 > * Se você estiver usando a integração dos acionadores da Experience Cloud por meio da autenticação oAuth, será necessário migrar para o Adobe I/O conforme descrito [nesta página](../../integrations/using/configuring-adobe-io.md). O modo de autenticação oAuth herdado com o Campaign será desativado em **30 de novembro de 2021**.
 
@@ -101,7 +101,7 @@ _22 de dezembro de 2020_
 
 ![](assets/do-not-localize/cp-icon.png) **Nova versão de outubro do Painel de controle do Campaign** com configuração de domínio usando CNAMEs e novos recursos de monitoramento de banco de dados. [Saiba mais](https://docs.adobe.com/content/help/pt-BR/control-panel/using/release-notes.html).
 
-## ![](assets/do-not-localize/red_2.png) Versão 20.2.3 - Build 9182 {#release-20-2-3-build-9182}
+## ![](assets/do-not-localize/red_2.png) Versão 20.2.3 – Compilação 9182 {#release-20-2-3-build-9182}
 
 _11 de setembro de 2020_
 
@@ -126,7 +126,7 @@ _11 de setembro de 2020_
 * Correção de uma regressão durante a pós-atualização, causando um início incorreto do nlserver (logs de erros).
 * O gerenciamento de atualizações da memória compartilhada foi aprimorado. As etapas adicionais necessárias na versão 20.2 não são mais necessárias.
 
-## ![](assets/do-not-localize/red_2.png) Versão 20.2.2 - Compilação 9180 {#release-20-2-2-build-9180}
+## ![](assets/do-not-localize/red_2.png) Versão 20.2.2 – Compilação 9180 {#release-20-2-2-build-9180}
 
 _22 de julho de 2020_
 
@@ -155,7 +155,7 @@ _22 de julho de 2020_
 
 ![](assets/do-not-localize/cp-icon.png) **Nova versão de junho do Painel de controle do Campaign** com monitoramento de perfis ativos, auditoria de entregabilidade de subdomínio e gerenciamento de chaves GPG. [Saiba mais](https://docs.adobe.com/content/help/en/control-panel/using/release-notes.html).
 
-## ![](assets/do-not-localize/red_2.png) Versão 20.2.1 - Compilação 9178 {#release-20-2-1-build-9178}
+## ![](assets/do-not-localize/red_2.png) Versão 20.2.1 – Compilação 9178 {#release-20-2-1-build-9178}
 
 _8 de junho de 2020_
 
