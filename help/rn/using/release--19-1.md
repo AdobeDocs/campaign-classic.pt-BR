@@ -6,16 +6,16 @@ feature: null
 role: null
 level: null
 exl-id: 8540b5f0-194b-45f3-b497-5d30efb318b8
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: c0a3d9217696f5f5622a6af8f64c62b1a9fbce20
 workflow-type: tm+mt
-source-wordcount: '3256'
+source-wordcount: '3258'
 ht-degree: 99%
 
 ---
 
 # Versão 19.1{#release-19-1}
 
-## ![](assets/do-not-localize/limited_2.png) Versão 19.1.8 - Build 9039 {#release-19-1-8-build-9039}
+## ![](assets/do-not-localize/limited_2.png) Versão 19.1.8 – Compilação 9039 {#release-19-1-8-build-9039}
 
 _15 de abril de 2021_
 
@@ -41,7 +41,7 @@ _16 de dezembro de 2020_
 
 >[!CAUTION]
 >
-> * Esta versão é fornecida com um novo protocolo de conexão: se você estiver se conectando ao Campaign pelo Serviço de identidade da Adobe (IMS), a atualização será obrigatória para o servidor do Campaign e o console do cliente poderem se conectar ao Campaign após **30 de junho de 2021**.
+> * Esta versão é fornecida com um novo protocolo de conexão: se você estiver se conectando ao Campaign pelo Serviço de identidade da Adobe (IMS), a atualização será obrigatória para o servidor do Campaign e o console do cliente poderem se conectar ao Campaign após **30 de junho de 2021**. [Saiba mais](../../technotes/ims-updates.md)
 > * Esta versão vem com uma [correção de segurança](https://helpx.adobe.com/security/products/campaign/apsb21-04.html): a atualização é obrigatória para reforçar a segurança do ambiente.
 > * Se você estiver usando a integração dos acionadores da Experience Cloud por meio da autenticação oAuth, será necessário migrar para o Adobe I/O conforme descrito [nesta página](../../integrations/using/configuring-adobe-io.md). O modo de autenticação oAuth herdado com o Campaign será desativado em **30 de novembro de 2021**.
 
@@ -89,7 +89,7 @@ O Tomcat foi atualizado da versão 7 (7.0.103) para a versão 8 (8.5.57). O dire
 
 No Linux, a inicialização do serviço nlserver agora usa uma unidade sistêmica em vez do script /etc/init.d/nlserver6. A migração para o novo esquema de inicialização é executada automaticamente ao instalar o pacote 19.1.8. O /etc/init.d/nlserver6 ainda é fornecido, mas para interagir com o serviço nlserver (start, reinicialização, interrupção etc.), recomendamos que você use o comando systemctl diretamente.
 
-## ![](assets/do-not-localize/red_2.png) Versão 19.1.7 - Build 9036 {#release-19-1-7-build-9036}
+## ![](assets/do-not-localize/red_2.png) Versão 19.1.7 – Compilação 9036 {#release-19-1-7-build-9036}
 
 _15 de setembro de 2020_
 
@@ -131,7 +131,7 @@ _15 de setembro de 2020_
 
 * Correção de uma regressão que resultava na escolha incorreta de um fuso horário na configuração de horário em uma atividade de workflow de **Scheduler**.
 
-## ![](assets/do-not-localize/red_2.png) Versão 19.1.6 - Build 9035 {#release-19-1-6-build-9035}
+## ![](assets/do-not-localize/red_2.png) Versão 19.1.6 – Compilação 9035 {#release-19-1-6-build-9035}
 
 >[!CAUTION]
 >
@@ -147,7 +147,7 @@ _3 de outubro de 2019_
 * Correção de um problema que resultava no não processamento de determinadas mensagens pelo servidor de Mid-Sourcing. (NEO-12395)
 * Correção de um problema que impedia o uso total da atividade do SQL Data Management (o direito nomeado do &quot;SQL Data Management&quot; estava ausente).
 
-## ![](assets/do-not-localize/red_2.png) Versão 19.1.5 - Build 9033{#release-19-1-5-build-9033}
+## ![](assets/do-not-localize/red_2.png) Versão 19.1.5 – Compilação 9033{#release-19-1-5-build-9033}
 
 _13 de agosto de 2019_
 
@@ -165,14 +165,14 @@ _13 de agosto de 2019_
 
 * Correção de uma regressão que resultava na escolha incorreta de um fuso horário na configuração de horário em uma atividade do workflow do Scheduler.
 
-## ![](assets/do-not-localize/green_2.png) Versão 19.1.4 - Build 9032{#release-19-1-4-build-9032}
+## ![](assets/do-not-localize/green_2.png) Versão 19.1.4 – Compilação 9032{#release-19-1-4-build-9032}
 
 >[!NOTE]
 >
 >As versões 19.1.4 [!DNL Gold Standard] são listadas nesta [página](../../rn/using/gold-standard.md).
 
 
-## ![](assets/do-not-localize/red_2.png) Versão 19.1.2 - Build 9029{#release-19-1-2-build-9029}
+## ![](assets/do-not-localize/red_2.png) Versão 19.1.2 – Compilação 9029{#release-19-1-2-build-9029}
 
 _21 de junho de 2019_
 
@@ -188,7 +188,7 @@ _21 de junho de 2019_
 * Agora permitimos a exclusão de registros fictícios criados no Microsoft Dynamics durante o fluxo de trabalho de importação.
 * Permissões aprimoradas para executar o pacote de zona de segurança ao usar a conta interna.
 
-## ![](assets/do-not-localize/red_2.png) Versão 19.1 - Build 9026{#release-19-1-build-9026}
+## ![](assets/do-not-localize/red_2.png) Versão 19.1 – Compilação 9026{#release-19-1-build-9026}
 
 _30 de maio de 2019_
 
