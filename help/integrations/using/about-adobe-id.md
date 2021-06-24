@@ -6,10 +6,10 @@ audience: integrations
 content-type: reference
 topic-tags: connecting-via-an-adobe-id
 exl-id: 8dad8fa9-674c-433c-af30-8c6d0aadf525
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: c0a3d9217696f5f5622a6af8f64c62b1a9fbce20
 workflow-type: tm+mt
-source-wordcount: '189'
-ht-degree: 100%
+source-wordcount: '194'
+ht-degree: 97%
 
 ---
 
@@ -37,6 +37,8 @@ Usuários do Campaign pode se conectar ao Adobe Campaign usando sua Adobe ID. Es
 * [Campaign 19.1.8](../../rn/using/release--19-1.md)
 
 
+
+[!DNL :bulb:] [Saiba mais sobre atualizações do IMS](../../technotes/ims-updates.md)
 
 ## Mais recursos
 
