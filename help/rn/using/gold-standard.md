@@ -6,10 +6,10 @@ feature: Visão geral
 role: Business Practitioner
 level: Beginner
 exl-id: 9e3a11b1-3070-4d90-91d5-7c559bdd500e
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: c0a3d9217696f5f5622a6af8f64c62b1a9fbce20
 workflow-type: tm+mt
-source-wordcount: '1058'
-ht-degree: 100%
+source-wordcount: '1060'
+ht-degree: 99%
 
 ---
 
@@ -17,7 +17,7 @@ ht-degree: 100%
 
 Esta página lista versões do [!DNL Gold Standard]. Saiba mais sobre o Campaign [!DNL Gold Standard] [nesta página](gs-overview.md).
 
-## ![](assets/do-not-localize/green_2.png) [!DNL Gold Standard] versão 11{#gs-11}
+## ![](assets/do-not-localize/green_2.png) [!DNL Gold Standard] Versão 11{#gs-11}
 
 _14 de abril de 2021_
 
@@ -43,11 +43,13 @@ _22 de dezembro de 2020_
 
 >[!CAUTION]
 >
-> * Esta versão é fornecida com um novo protocolo de conexão: se você estiver se conectando ao Campaign pelo Serviço de identidade da Adobe (IMS), a atualização será obrigatória para o servidor do Campaign e o console do cliente poderem se conectar ao Campaign após **30 de junho de 2021**.
+> * Esta versão é fornecida com um novo protocolo de conexão: se você estiver se conectando ao Campaign pelo Serviço de identidade da Adobe (IMS), a atualização será obrigatória para o servidor do Campaign e o console do cliente poderem se conectar ao Campaign após **30 de junho de 2021**. [Saiba mais](../../technotes/ims-updates.md)
 > * Esta versão vem com uma [correção de segurança](https://helpx.adobe.com/security/products/campaign/apsb21-04.html): a atualização é obrigatória para reforçar a segurança do ambiente.
 > * Se você estiver usando a integração dos acionadores da Experience Cloud por meio da autenticação oAuth, será necessário migrar para o Adobe I/O conforme descrito [nesta página](../../integrations/using/configuring-adobe-io.md). O modo de autenticação oAuth herdado com o Campaign será desativado em **30 de novembro de 2021**.
+
 >
->Saiba mais nas perguntas [[!DNL Gold Standard] frequentes de atualização do 11](https://helpx.adobe.com/campaign/kb/gold-standard-upgrade.html).
+>
+Saiba mais nas perguntas [[!DNL Gold Standard] frequentes de atualização do 11](https://helpx.adobe.com/campaign/kb/gold-standard-upgrade.html).
 
 O build 9032@d3b452f inclui os seguintes aprimoramentos e correções:
 
@@ -64,7 +66,7 @@ O build 9032@d3b452f inclui os seguintes aprimoramentos e correções:
 
 * Correção de um problema que resultava em falha em fluxos de trabalho ao executar uma atividade de **Enriquecimento**. (NEO-17338)
 
-## ![](assets/do-not-localize/red_2.png) [!DNL Gold Standard] versão 10{#gs-10}
+## ![](assets/do-not-localize/red_2.png) [!DNL Gold Standard] Versão 10{#gs-10}
 
 _7 de julho de 2020_
 
@@ -76,7 +78,7 @@ Correção de um problema que impedia o funcionamento do rastreamento quando o r
 >
 >Recomendamos que você atualize o console do cliente com o disponível nesta versão. Consulte [esta página](../../installation/using/installing-the-client-console.md)
 
-## ![](assets/do-not-localize/red_2.png) [!DNL Gold Standard] versão 9{#gs-9}
+## ![](assets/do-not-localize/red_2.png) [!DNL Gold Standard] Versão 9{#gs-9}
 
 _22 de junho de 2020_
 
@@ -96,7 +98,7 @@ As seguintes correções estão relacionadas ao mecanismo de segurança do link 
 
 
 
-## ![](assets/do-not-localize/red_2.png) [!DNL Gold Standard] versão 8{#gs-8}
+## ![](assets/do-not-localize/red_2.png) [!DNL Gold Standard] Versão 8{#gs-8}
 
 _29 de abril de 2020_
 
@@ -121,7 +123,7 @@ A build 9032@3a9dc9c inclui as seguintes correções:
 * Correção de uma regressão que resulta em falha do workflow de limpeza.
 * Correção de uma regressão menor nos logs de workflow de limpeza.
 
-## ![](assets/do-not-localize/red_2.png) [!DNL Gold Standard] versão 6{#gs-6}
+## ![](assets/do-not-localize/red_2.png) [!DNL Gold Standard] Versão 6{#gs-6}
 
 _9 de março de 2020_
 
@@ -129,7 +131,7 @@ A build 9032@19f73c5 inclui a seguinte correção:
 
 * Correção de um problema com a conta externa que usa o FTP sobre SSL. (NEO-20498)
 
-## ![](assets/do-not-localize/red_2.png) [!DNL Gold Standard] versão 5{#gs-5}
+## ![](assets/do-not-localize/red_2.png) [!DNL Gold Standard] Versão 5{#gs-5}
 
 _17 de dezembro de 2019_
 
@@ -137,7 +139,7 @@ A build 9032@d6b8062 inclui a seguinte correção:
 
 * Correção de um problema de rastreamento nos seguintes canais de comunicação: dispositivos móveis (SMS, MMS), push (iOS, Android) e redes sociais (Facebook, Twitter). (NEO-19595)
 
-## ![](assets/do-not-localize/red_2.png) [!DNL Gold Standard] versão 4{#gs-4}
+## ![](assets/do-not-localize/red_2.png) [!DNL Gold Standard] Versão 4{#gs-4}
 
 _11 de dezembro de 2019_
 
@@ -145,7 +147,7 @@ A build 9032@bc4a935 inclui a seguinte correção:
 
 * Correção de um problema de desempenho ao enviar mensagens com um banco de dados MSSQL. (NEO-17558)
 
-## ![](assets/do-not-localize/red_2.png) [!DNL Gold Standard] versão 3{#gs-3}
+## ![](assets/do-not-localize/red_2.png) [!DNL Gold Standard] Versão 3{#gs-3}
 
 _20 de novembro de 2019_
 
@@ -155,7 +157,7 @@ A build 9032@3468c7b inclui as seguintes correções:
 * Correção de um problema ao exibir relatórios cumulativos em várias entregas. (NEO-18165)
 * Correção de um problema que poderia bloquear ou fazer o servidor web travar.
 
-## ![](assets/do-not-localize/red_2.png) [!DNL Gold Standard] versão 2{#gs-2}
+## ![](assets/do-not-localize/red_2.png) [!DNL Gold Standard] Versão 2{#gs-2}
 
 _19 de setembro de 2019_
 
@@ -164,7 +166,7 @@ A build 9032@cee805c inclui as seguintes correções:
 * Correção de um problema ao usar o Conector CRM para Salesforce. (NEO-17712)
 * Correção de um problema de índice que causava problemas de desempenho ao enviar mensagens transacionais.
 
-## ![](assets/do-not-localize/red_2.png) Versão 19.1.4 - Build 9032{#release-19-1-4-build-9032}
+## ![](assets/do-not-localize/red_2.png) Versão 19.1.4 – Compilação 9032{#release-19-1-4-build-9032}
 
 _13 de agosto de 2019_
 
