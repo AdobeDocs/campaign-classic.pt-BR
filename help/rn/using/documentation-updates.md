@@ -6,14 +6,14 @@ feature: Visão geral
 role: Business Practitioner
 level: Beginner
 exl-id: 07c1f4a3-cf16-4a9b-b402-e13258799f91
-source-git-commit: fc40dae282c045dd73547e34ea307297f64c66fa
+source-git-commit: 515587695115c23d9b248ecb87a7ae89ea7c62a0
 workflow-type: tm+mt
-source-wordcount: '4470'
+source-wordcount: '4466'
 ht-degree: 97%
 
 ---
 
-# Atualizações de documentação{#documentation-updates}
+# Atualizações da documentação{#documentation-updates}
 
 Esta página lista todos os novos recursos e atualizações de documentação por mês e versão do Campaign.
 
@@ -460,7 +460,7 @@ A documentação do Painel de controle do Campaign foi integrada ao novo conjunt
 
 O guia de introdução às práticas recomendadas de delivery foi atualizado. [Leia mais](../../delivery/using/delivery-best-practices.md)
 
-## Outubro de 2019 {#october-2019}
+## de outubro de 2019 {#october-2019}
 
 A lista de mensagens de erro para o Campaign foi atualizada. [Leia mais](https://docs.adobe.com/content/help/en/campaign-classic/technicalresources/error_messages/error_codes.html)
 
@@ -492,7 +492,7 @@ As práticas recomendadas para aprimoramentos de desempenho de workflows e deliv
 
 **Novos recursos incluídos na versão 19.1**
 
-Painel de controle - [Leia mais](https://docs.adobe.com/content/help/pt-BR/control-panel/using/control-panel-home.translate.html)
+Painel de controle - [Leia mais](https://experienceleague.adobe.com/docs/control-panel/using/control-panel-home.html)
 
 Trilha de auditoria - [Leia mais](../../production/using/audit-trail.md)
 
@@ -599,4 +599,4 @@ A seção &quot;Workflow monitoring&quot; foi atualizada com uma nota para build
 
 Foi adicionado um caso de uso sobre como enviar um email com campos de dados personalizados usando a atividade Enrichment em um fluxo de trabalho. [Leia mais](../../workflow/using/email-enrichment-with-custom-date-fields.md)
 
-Os vídeos em destaque foram movidos para [este local](https://docs.adobe.com/content/help/pt-BR/campaign-classic-learn/tutorials/overview.html).
+Os vídeos em destaque foram movidos para [este local](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html?lang=pt-BR).
