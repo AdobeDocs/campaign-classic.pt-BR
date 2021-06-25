@@ -6,10 +6,10 @@ audience: integrations
 content-type: reference
 topic-tags: acs-connector
 exl-id: 88e581cf-43cd-4c43-9347-d016c62fdf42
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 515587695115c23d9b248ecb87a7ae89ea7c62a0
 workflow-type: tm+mt
-source-wordcount: '1131'
-ht-degree: 100%
+source-wordcount: '1129'
+ht-degree: 99%
 
 ---
 
@@ -121,7 +121,7 @@ Ao criar um workflow de delivery no Campaign Standard, é possível usar esse p�
 
    Essa atividade é usada para recuperar os dados do público selecionado. Se necessário, também é possível aplicar um **[!UICONTROL Source Filtering]** adicional, usando a guia relativa a esta atividade.
 
-1. Adicione uma atividade **[!UICONTROL Email delivery]** e a configure como qualquer outra [atividade de delivery de email](https://docs.adobe.com/content/help/pt-BR/campaign-standard/using/managing-processes-and-data/channel-activities/email-delivery.html).
+1. Adicione uma atividade **[!UICONTROL Email delivery]** e a configure como qualquer outra [atividade de delivery de email](https://experienceleague.adobe.com/docs/campaign-standard/using/managing-processes-and-data/channel-activities/email-delivery.html).
 1. Abra o conteúdo do delivery.
 1. Insira um campo de personalização Localize o nó **[!UICONTROL Additional data (targetData)]** na janela popup. Esse nó contém os dados adicionais do público calculados no workflow inicial para construção do target. Você pode usá-los como qualquer outro campo de personalização.
 
