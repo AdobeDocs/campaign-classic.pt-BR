@@ -5,9 +5,9 @@ description: Nota técnica
 hide: true
 hidefromtoc: true
 exl-id: 7db02123-2e2a-40d9-8385-728ff69985e4
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 037e56040bd63edfdfee5ab6bf73b45d3a138072
 workflow-type: tm+mt
-source-wordcount: '1107'
+source-wordcount: '1099'
 ht-degree: 17%
 
 ---
@@ -37,7 +37,6 @@ Se o ambiente estiver em uma build inferior à listada abaixo, você será afeta
 
 * Gold Standard 11. [Saiba mais](../rn/using/gold-standard.md)
 * Campaign versão 21.1.1. [Saiba mais](../rn/using/latest-release.md)
-* Campaign versão 20.3.3. [Saiba mais](../rn/using/release--20-3.md)
 * Campaign versão 20.2.4. [Saiba mais](../rn/using/release--20-2.md)
 * Campaign versão 20.1.4. [Saiba mais](../rn/using/release--20-1.md)
 * Campaign versão 19.2.4. [Saiba mais](../rn/using/release--19-2.md)
@@ -60,7 +59,7 @@ Você precisa atualizar para uma das builds mais recentes listadas acima.
 >Se não for possível atualizar dentro do período de tempo recomendado, **você deve entrar em contato com a equipe de Atendimento ao Cliente do Adobe para aplicar uma correção de segurança manual de curto prazo em suas instâncias**.
 
 
-## Atualização do console do cliente do Campaign Classic {#acc-cc-updates}
+## Atualização do console do cliente do Campaign Classic  {#acc-cc-updates}
 
 As versões do console **agora disponíveis** abaixo devem ser instaladas para resolver uma regressão identificada recentemente. Essa regressão impedia o uso de alguns componentes do Console do cliente, como o seletor de datas e o gerenciamento de imagens nos deliveries. **A** atualização do console é obrigatória.
 
@@ -81,7 +80,6 @@ Se você estiver se conectando ao Campaign [por meio de um Adobe ID](../integrat
 
 * Gold Standard 11. [Saiba mais](../rn/using/gold-standard.md)
 * Campaign versão 21.1.1. [Saiba mais](../rn/using/latest-release.md)
-* Campaign versão 20.3.3. [Saiba mais](../rn/using/release--20-3.md)
 * Campaign versão 20.2.4. [Saiba mais](../rn/using/release--20-2.md)
 * Campaign versão 20.1.4. [Saiba mais](../rn/using/release--20-1.md)
 * Campaign versão 19.2.4. [Saiba mais](../rn/using/release--19-2.md)
