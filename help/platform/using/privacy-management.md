@@ -6,7 +6,7 @@ audience: platform
 content-type: reference
 topic-tags: starting-with-adobe-campaign
 exl-id: 23c873fd-9016-4d32-842c-772cfff0e23e
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 515587695115c23d9b248ecb87a7ae89ea7c62a0
 workflow-type: tm+mt
 source-wordcount: '887'
 ht-degree: 100%
@@ -57,9 +57,9 @@ Para facilitar a conformidade com a privacidade, o Adobe Campaign permite manipu
 
 * Também conhecido como Eliminação de dados, o **Direito ao esquecimento** (solicitação de exclusão) autoriza o Titular de dados a fazer com que o Controlador de dados apague seus dados pessoais, interrompa a divulgação dos dados e possivelmente o processamento dos dados por parte de terceiros.
 
-Para saber como criar solicitações de **Acesso** e **Exclusão** e como o Adobe Campaign as processa, consulte os [passos para implementação](../../platform/using/privacy-requests.md).
+Para saber como criar solicitações de **Acesso** e **Exclusão** e como o Adobe Campaign as processa, consulte os [passos de implementação](../../platform/using/privacy-requests.md).
 
-<!--Tutorials on Privacy management in Campaign Standard are also available [here](https://docs.adobe.com/content/help/en/campaign-standard-learn/tutorials/privacy/privacy-overview.html).
+<!--Tutorials on Privacy management in Campaign Standard are also available [here](https://experienceleague.adobe.com/docs/campaign-standard-learn/tutorials/privacy/privacy-overview.html).
 https://experienceleague.adobe.com/docs/campaign-standard-learn/tutorials/privacy/privacy-overview.html?lang=en-->
 
 ## Consentimento, retenção e funções {#consent-retention-roles}
