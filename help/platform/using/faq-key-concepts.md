@@ -6,10 +6,10 @@ audience: platform
 content-type: reference
 topic-tags: starting-with-adobe-campaign
 exl-id: f0d884ae-0789-4ad9-a8fa-adeffbb560ea
-source-git-commit: 615b56c5f4362b0f47ec5700be7d170c0e108f4c
+source-git-commit: 515587695115c23d9b248ecb87a7ae89ea7c62a0
 workflow-type: tm+mt
-source-wordcount: '885'
-ht-degree: 100%
+source-wordcount: '881'
+ht-degree: 98%
 
 ---
 
@@ -60,7 +60,7 @@ Consulte [este documento](https://helpx.adobe.com/br/campaign/kb/campaign-privac
 
 Leia [esta seção](../../platform/using/adobe-campaign-workspace.md) para saber mais sobre as noções básicas do espaço de trabalho do Adobe Campaign.
 
-![](assets/do-not-localize/how-to-video.png) [Espaço de trabalho do Discover Campaign em vídeo](https://docs.adobe.com/content/help/pt-BR/campaign-classic-learn/tutorials/getting-started/exploring-the-adobe-campaign-classic-user-interface.html)
+![](assets/do-not-localize/how-to-video.png) [Espaço de trabalho do Discover Campaign em vídeo](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/getting-started/exploring-the-adobe-campaign-classic-user-interface.html)
 
 ## Como posso selecionar o público das minhas mensagens? {#how-can-i-select-the-target-population-of-my-messages-}
 
@@ -82,7 +82,7 @@ Um workflow também pode envolver um ou mais operadores a serem notificados ou q
 
 [Clique aqui para saber mais](../../delivery/using/about-email-channel.md).
 
-![](assets/do-not-localize/how-to-video.png) [Descubra neste vídeo](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/getting-started/creating-a-campaign-and-an-email.html?lang=pt-BR)
+![](assets/do-not-localize/how-to-video.png) [Descubra neste vídeo](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/getting-started/creating-a-campaign-and-an-email.html)
 
 ## Como enviar mensagens SMS? {#how-to-send-sms-messages-}
 
@@ -124,10 +124,10 @@ Saiba como [criar um formulário web](../../web/using/about-web-forms.md): criar
 
 A Adobe avalia constantemente os recursos do produto e, ao longo do tempo, os substitui por versões mais potentes ou decide reimplementar determinadas partes com o objetivo de prepará-las de maneira mais apropriada às expectativas ou extensões futuras. Como o Campaign funciona com ferramentas de terceiros, a compatibilidade é atualizada regularmente a fim de implementar apenas as versões com suporte.
 
-[Clique aqui para saber mais](https://helpx.adobe.com/br/campaign/kb/deprecated-and-removed-features.html).
+[Clique aqui para saber mais](https://experienceleague.adobe.com/docs/campaign-classic/using/release-notes/deprecated-compatibility/deprecated-features.html?lang=pt-BR).
 
 ## São lançadas novas atualizações de documentação e de materiais de ajuda? {#are-there-new-documentation-updates-and-help-materials-released-}
 
-As atualizações de documentação mais recentes do Campaign Classic estão listadas [nesta página](https://docs.adobe.com/content/help/pt-BR/campaign-classic/using/documentation-updates.html).
+As atualizações de documentação mais recentes do Campaign Classic estão listadas [nesta página](https://experienceleague.adobe.com/docs/campaign-classic/using/documentation-updates.html).
 
 Também é possível consultar as notas técnicas mais recentes listadas [nesta página](https://helpx.adobe.com/br/campaign/kb/article-list.html).
