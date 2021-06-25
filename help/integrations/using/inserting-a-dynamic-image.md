@@ -6,14 +6,14 @@ audience: integrations
 content-type: reference
 topic-tags: adobe-target
 exl-id: 6177f57b-534c-4d86-8f73-d96980c48a77
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 515587695115c23d9b248ecb87a7ae89ea7c62a0
 workflow-type: tm+mt
-source-wordcount: '847'
-ht-degree: 100%
+source-wordcount: '846'
+ht-degree: 99%
 
 ---
 
-# Inserir conteúdo dinâmico do Target{#inserting-a-dynamic-image}
+# Inserir conteúdo dinâmico do Target {#inserting-a-dynamic-image}
 
 Neste guia, apresentaremos como integrar uma oferta dinâmica do Target em um e-mail no Adobe Campaign.
 
@@ -78,9 +78,9 @@ Em nosso caso, precisamos de duas ofertas de redirecionamento, a terceira (a pad
 
    ![](assets/target_6.png)
 
-1. Siga o mesmo procedimento para a oferta de redirecionamento restante. Para obter mais informações, consulte esta [página](https://docs.adobe.com/help/pt-BR/target/using/experiences/offers/offer-redirect.html).
+1. Siga o mesmo procedimento para a oferta de redirecionamento restante. Para obter mais informações, consulte esta [página](https://experienceleague.adobe.com/docs/target/using/experiences/offers/offer-redirect.html).
 
-## Criação de públicos-alvo {#audiences-target}
+## Criação de públicos {#audiences-target}
 
 No Target , é necessário criar os dois públicos nos quais as pessoas que visitam a oferta são categorizadas para os diferentes conteúdos a serem entregues. Para cada público, adicione uma regra para definir quem poderá ver a oferta.
 
