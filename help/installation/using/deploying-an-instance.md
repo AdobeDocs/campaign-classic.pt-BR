@@ -6,9 +6,9 @@ audience: installation
 content-type: reference
 topic-tags: initial-configuration
 exl-id: 8b07447c-9a86-4b56-8d29-e0b01357a6ec
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: ee3d643e4ba607b3d7ca816eabf862b867d1f3f4
 workflow-type: tm+mt
-source-wordcount: '3058'
+source-wordcount: '3048'
 ht-degree: 3%
 
 ---
@@ -109,7 +109,7 @@ As seguintes opções estão disponíveis:
 * **[!UICONTROL Exclude recipients who no longer wish to be contacted]** : Quando essa opção é selecionada, os recipients lista de bloqueios não serão contatados,
 * **[!UICONTROL Automatically ignore doubles]** : Quando essa opção é selecionada, o delivery não será feito para duplicar endereços.
 
-### Repetir parâmetros {#retry-parameters}
+### Parâmetros de nova tentativa {#retry-parameters}
 
 As informações sobre as recuperações são fornecidas nos campos **Recuperação de períodos** e **Número de recuperações**: quando um recipient está inacessível, por exemplo, se sua caixa de entrada estiver cheia, por padrão, o programa tentará entrar em contato com ele 5 vezes, com um intervalo de uma hora entre cada tentativa (durante o tempo máximo de delivery). Esses valores podem ser alterados para atender às suas necessidades.
 
@@ -301,7 +301,7 @@ Esse estágio permite incluir as preferências da política de dados.
 * **[!UICONTROL Consider all phone numbers as international ones]** : Quando essa opção é selecionada, o aplicativo aplica o formato internacional a números de telefone (o prefixo do país é obrigatório, pois o número de dígitos não será verificado antes de aplicar a formatação). Se esta opção não estiver selecionada, você deve colocar o prefixo do número de telefone internacional com &quot;+&quot; ou &quot;00&quot; sozinho.
 * **[!UICONTROL Store all phone numbers using the international format]** : Essa opção só diz respeito aos números de  **** telefones domésticos que são importados ou editados. Defina se deseja usar um formato interno (como 425 555 0150) ou o formato internacional (por exemplo, +1 425 555 0150)
 
-## Acesso pela Internet {#access-from-the-internet}
+## Acesso através da Internet {#access-from-the-internet}
 
 >[!IMPORTANT]
 >
@@ -325,7 +325,7 @@ Use esta página para preencher os URLs do servidor para:
 
 O Adobe Campaign permite diferenciar esses três URLs para espalhar a carga em várias plataformas.
 
-## Gerenciamento de recursos públicos {#managing-public-resources}
+## Gestão dos recursos públicos {#managing-public-resources}
 
 >[!IMPORTANT]
 >
@@ -357,7 +357,7 @@ Em um delivery, você pode usar imagens armazenadas na biblioteca de recursos p�
 
 * Para recursos públicos, o URL **https://** server **/res/** instance ****onde **instance**é o nome da instância de rastreamento.
 
-### Detecção de imagem de entrega {#delivery-image-detection}
+### Detecção de imagem de delivery {#delivery-image-detection}
 
 Em um delivery, você pode usar imagens armazenadas na biblioteca de recursos públicos ou qualquer outra imagem ou imagem local armazenada em um servidor.
 
@@ -372,7 +372,7 @@ Você pode especificar várias máscaras de URL usando uma vírgula para separar
 
 ### Modos de publicação {#publication-modes}
 
-A seção inferior do assistente permite selecionar as opções de publicação de recursos públicos e imagens. Essas opções também estão disponíveis para formulários web e pesquisas.
+A seção inferior do assistente permite selecionar as opções de publicação de recursos públicos e imagens.
 
 Os seguintes modos de publicação estão disponíveis:
 
