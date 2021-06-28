@@ -6,7 +6,7 @@ audience: campaign
 content-type: reference
 topic-tags: orchestrate-campaigns
 exl-id: c60c4f86-a957-4c44-a0fe-39b6e3f0e5d6
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 690f7c4e62203127da7a7055afa0ee8ad4a2bce4
 workflow-type: tm+mt
 source-wordcount: '1902'
 ht-degree: 100%
@@ -285,8 +285,8 @@ Os custos de delivery de uma campanha são consolidados no nível da campanha, e
 
 ### Implementação {#implementation}
 
-Em uma campanha, ao selecionar o orçamento, você deve inserir o valor inicial. Os custos calculados serão atualizados automaticamente de acordo com o nível de compromisso dos valores inseridos (despesas feitas, esperadas, reservadas e confirmadas). Consulte [Cálculo de valores](../../campaign/using/controlling-costs.md#calculating-amounts).
+Em uma campanha, ao selecionar o orçamento, você deve inserir o valor inicial. Os custos calculados serão atualizados automaticamente de acordo com o nível de compromisso dos valores inseridos (despesas feitas, esperadas, reservadas e confirmadas). Consulte [Cálculo de valores](../../mrm/using/controlling-costs.md#calculating-amounts).
 
 >[!NOTE]
 >
->O procedimento para a criação de orçamentos é apresentado em [Criação de um orçamento](../../campaign/using/controlling-costs.md#creating-a-budget).
+>O procedimento para a criação de orçamentos é apresentado em [Criação de um orçamento](../../mrm/using/controlling-costs.md#creating-a-budget).
