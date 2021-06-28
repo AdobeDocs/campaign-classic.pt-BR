@@ -6,7 +6,7 @@ audience: web
 content-type: reference
 topic-tags: web-forms
 exl-id: 37aaaa03-0656-4a9b-bcae-74de33e3737b
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 360fd1ed8970c17c0687eaca0a4c1960d6f5838c
 workflow-type: tm+mt
 source-wordcount: '1205'
 ht-degree: 100%
@@ -27,7 +27,7 @@ Na guia **[!UICONTROL General]** da janela de propriedades, você pode modificar
 
 ![](assets/s_ncs_admin_survey_properties_general_tab.png)
 
-O template de formulário é escolhido durante a criação do formulário. Ele não pode ser alterado posteriormente. Para obter mais informações sobre como criar e gerenciar modelos de formulário, consulte [Uso de um modelo de formulário web](../../web/using/using-a-web-form-template.md).
+O template de formulário é escolhido durante a criação do formulário. Ele não pode ser alterado posteriormente. Para obter mais informações sobre como criar e gerenciar modelos de formulário, consulte [Uso de um modelo de formulário web](using-a-web-form-template.md).
 
 ## Armazenamento de dados do formulário {#form-data-storage}
 
@@ -53,7 +53,7 @@ O conteúdo das cadeias de caracteres exibidas é definido na guia **[!UICONTROL
 
 A guia **[!UICONTROL Localization]** permite selecionar os idiomas de design e exibição para o formulário web.
 
-Consulte [Tradução de um formulário web](../../web/using/translating-a-web-form.md).
+Consulte [Tradução de um formulário web](translating-a-web-form.md).
 
 ## Navegação e renderização de formulários {#form-browsing-and-rendering}
 
@@ -77,7 +77,7 @@ Esses elementos são exibidos na parte inferior de cada página. Suas posições
 
 O campo **[!UICONTROL Template]** da guia **[!UICONTROL Rendering]** permite selecionar um tema entre os disponíveis.
 
-Os temas são salvos no nó **[!UICONTROL Administration>Configuration>Form rendering]** da árvore. Consulte [Seleção do modelo de renderização do formulário](../../web/using/form-rendering.md#selecting-the-form-rendering-template)
+Os temas são salvos no nó **[!UICONTROL Administration>Configuration>Form rendering]** da árvore. Consulte [Seleção do modelo de renderização do formulário](form-rendering.md#selecting-the-form-rendering-template)
 
 Uma renderização de amostra é exibida na parte inferior da janela de propriedades. O ícone **[!UICONTROL Edit link]** permite visualizar a configuração do tema selecionado.
 
@@ -85,13 +85,13 @@ Uma renderização de amostra é exibida na parte inferior da janela de propried
 
 ## Textos no formulário {#texts-in-the-form}
 
-A guia **[!UICONTROL Page]** permite definir o conteúdo do cabeçalho e rodapé do formulário. Consulte [Definição de cabeçalhos e rodapés](../../web/using/form-rendering.md#defining-headers-and-footers)
+A guia **[!UICONTROL Page]** permite definir o conteúdo do cabeçalho e rodapé do formulário. Consulte [Definição de cabeçalhos e rodapés](form-rendering.md#defining-headers-and-footers)
 
-Também permite gerenciar traduções. Consulte [Tradução de um formulário web](../../web/using/translating-a-web-form.md).
+Também permite gerenciar traduções. Consulte [Tradução de um formulário web](translating-a-web-form.md).
 
 ## Acessibilidade do formulário {#accessibility-of-the-form}
 
-Um formulário web é acessível aos usuários se ele estiver **[!UICONTROL Online]** e se a data atual estiver dentro de seu período de validade. O status do formulário é modificado durante o estágio de publicação (consulte [Publicação de um formulário](../../web/using/publishing-a-web-form.md#publishing-a-form)). O status é exibido na seção **Project** da guia **[!UICONTROL General]** da janela de propriedades.
+Um formulário web é acessível aos usuários se ele estiver **[!UICONTROL Online]** e se a data atual estiver dentro de seu período de validade. O status do formulário é modificado durante o estágio de publicação (consulte [Publicação de um formulário](publishing-a-web-form.md#publishing-a-form)). O status é exibido na seção **Project** da guia **[!UICONTROL General]** da janela de propriedades.
 
 O período de validade é executado da data **[!UICONTROL Start]** para a data **[!UICONTROL End date]**. Se nenhuma data for especificada nesses campos, o formulário terá validade permanente.
 
@@ -150,7 +150,7 @@ Os parâmetros podem ser adicionados através da guia **[!UICONTROL Parameters..
 
 ![](assets/s_ncs_admin_survey_properties_param.png)
 
-Você deve especificar um local de armazenamento a partir do qual o valor do parâmetro será recuperado. Para fazer isso, selecione uma das opções de armazenamento e clique na guia **[!UICONTROL Storage]** para selecionar o campo ou a variável correspondente. As opções de armazenamento são detalhadas nos [Response storage fields](../../web/using/web-forms-answers.md#response-storage-fields).
+Você deve especificar um local de armazenamento a partir do qual o valor do parâmetro será recuperado. Para fazer isso, selecione uma das opções de armazenamento e clique na guia **[!UICONTROL Storage]** para selecionar o campo ou a variável correspondente. As opções de armazenamento são detalhadas nos [Response storage fields](web-forms-answers.md#response-storage-fields).
 
 O status do entrevistado (0, 1 ou qualquer outro valor) pode então ser adicionado ao URL para acessar o formulário. Essas informações podem ser reutilizadas nas páginas do formulário ou em uma caixa de teste. As páginas exibidas podem ser condicionadas com base no valor do contexto, conforme mostrado abaixo:
 
