@@ -6,7 +6,7 @@ audience: workflow
 content-type: reference
 topic-tags: targeting-activities
 exl-id: 5028ad4c-e427-4e78-962d-c5ea54390db5
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 86963746d3de3396963d221ddbd1ef7d89733d2f
 workflow-type: tm+mt
 source-wordcount: '404'
 ht-degree: 100%
@@ -26,7 +26,7 @@ Essas atividades permitem construir um ou mais targets definindo conjuntos e div
 * **Split**: permite dividir um target em vários subconjuntos. Consulte a seção [Split](../../workflow/using/split.md).
 * **Células**: fornece um modo de exibição dos vários subconjuntos de colunas de dados e facilita a manipulação desses subconjuntos quando há muitos deles. Para obter mais informações, consulte a seção [Cells](../../workflow/using/cells.md).
 * **Ofertas por célula**: permite vincular diferentes ofertas a cada subconjunto de um público. Consulte a seção [Offers by cell](../../workflow/using/offers-by-cell.md).
-* **Respostas da pesquisa**: permite recuperar informações coletadas durante uma pesquisa. Para obter mais informações, consulte esta [seção](../../web/using/getting-started-with-surveys.md).
+* **Respostas da pesquisa**: permite recuperar informações coletadas durante uma pesquisa. Para obter mais informações, consulte esta [seção](../../surveys/using/getting-started-with-surveys.md).
 * **Delivery outline**: permite adicionar um delivery outline. Consulte a seção [Delivery outline](../../workflow/using/delivery-outline.md).
 * **Enriquecimento**: permite adicionar colunas a uma tabela de trabalho ou workflow. Consulte a seção [Enrichment](../../workflow/using/enrichment.md).
 * **Editar schema**: permite transformar, padronizar e, se necessário, enriquecer dados. Para obter mais informações, consulte a seção [Edit schema](../../workflow/using/edit-schema.md).
