@@ -6,7 +6,7 @@ audience: web
 content-type: reference
 topic-tags: web-applications
 exl-id: 4bff6b55-3335-433e-a2ff-5d8c83e8f0d3
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 360fd1ed8970c17c0687eaca0a4c1960d6f5838c
 workflow-type: tm+mt
 source-wordcount: '670'
 ht-degree: 100%
@@ -33,7 +33,7 @@ O Adobe Campaign é fornecido com um banner de exemplo que você deve adaptar à
 >
 >Para criar seu próprio banner, você deve personalizar o banner pronto para uso.
 
-Para ativar o banner, você precisa configurar as propriedades da aplicação web. Consulte a seção [Criação de um aplicativo web](../../web/using/designing-a-web-application.md).
+Para ativar o banner, você precisa configurar as propriedades da aplicação web. Consulte a seção [Criação de um aplicativo web](designing-a-web-application.md).
 
 Se o rastreamento web estiver ativado, você pode ter:
 
@@ -64,7 +64,7 @@ O banner padrão tem a seguinte estrutura:
 
 Você deve substituir a mensagem **Inserir sua mensagem aqui** com o bloco contendo suas informações de rastreamento. Essa substituição deve ser executada em seu novo bloco de personalização relacionado ao banner Opt out.
 
-O banner é fornecido com um CSS específico. No entanto, você pode substituir os estilos ao criar e configurar uma página da Web. Consulte [esta página](../../web/using/content-editor-interface.md).
+O banner é fornecido com um CSS específico. No entanto, você pode substituir os estilos ao criar e configurar uma página da Web. Consulte [esta página](content-editor-interface.md).
 
 ## Definição do cookie de opt out usando API {#setting-the-opt-out-cookie-using-api}
 
