@@ -6,7 +6,7 @@ audience: web
 content-type: reference
 topic-tags: web-applications
 exl-id: a1ac3aab-dc81-4533-9207-26d5dc5e1c88
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 360fd1ed8970c17c0687eaca0a4c1960d6f5838c
 workflow-type: tm+mt
 source-wordcount: '948'
 ht-degree: 100%
@@ -169,7 +169,7 @@ Esses dois elementos serão agrupados no mesmo container para ser agrupados graf
 
    ![](assets/s_ncs_configuration_webapp_container.png)
 
-   Para obter mais informações sobre layout de elementos, consulte [esta seção](../../web/using/about-web-forms.md).
+   Para obter mais informações sobre layout de elementos, consulte [esta seção](about-web-forms.md).
 
 1. Aplique **dotedFilter**.
 
