@@ -6,7 +6,7 @@ audience: web
 content-type: reference
 topic-tags: web-forms
 exl-id: 723a6c47-5323-4914-a014-58be493852cc
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 360fd1ed8970c17c0687eaca0a4c1960d6f5838c
 workflow-type: tm+mt
 source-wordcount: '987'
 ht-degree: 100%
@@ -69,9 +69,9 @@ Para fazer isso, use a guia **[!UICONTROL Advanced]**.
 
 Ela permite que você defina as seguintes propriedades:
 
-* **[!UICONTROL Label position]**: consulte [Definição da posição de rótulos](../../web/using/defining-web-forms-layout.md#defining-the-position-of-labels),
+* **[!UICONTROL Label position]**: consulte [Definição da posição de rótulos](defining-web-forms-layout.md#defining-the-position-of-labels),
 * **[!UICONTROL Label format]**: Quebra de texto ou quebra automática de linha,
-* **[!UICONTROL Number of cells]** : consulte [Posicionamento de campos na página](../../web/using/defining-web-forms-layout.md#positioning-the-fields-on-the-page),
+* **[!UICONTROL Number of cells]** : consulte [Posicionamento de campos na página](defining-web-forms-layout.md#positioning-the-fields-on-the-page),
 * **[!UICONTROL Horizontal alignment]** (à esquerda, à direita, centralizado) e **[!UICONTROL Vertical alignment]** (em cima, embaixo, no meio),
 * **[!UICONTROL Width]** da zona: pode ser expresso como uma porcentagem ou em ems, pontos ou pixels (valor padrão),
 * **[!UICONTROL Length]** máximo: número máximo de caracteres permitidos (para controles do tipo texto, número e senha),
@@ -146,17 +146,17 @@ Na janela de seleção de campo, você pode escolher entre os seguintes dados:
 
 * A árvore principal contém os parâmetros do contexto de formulário. Os parâmetros padrão incluem o Identificador (que corresponde ao identificador criptografado do recipient), Idioma e Origem.
 
-   Para obter mais informações, consulte esta [página](../../web/using/defining-web-forms-properties.md#form-url-parameters).
+   Para obter mais informações, consulte esta [página](defining-web-forms-properties.md#form-url-parameters).
 
 * A subárvore **[!UICONTROL Recipients]** contém os campos de entrada inseridos no formulário e armazenados no banco de dados.
 
-   Para obter mais informações, consulte [Armazenamento de dados no banco de dados](../../web/using/web-forms-answers.md#storing-data-in-the-database).
+   Para obter mais informações, consulte [Armazenamento de dados no banco de dados](web-forms-answers.md#storing-data-in-the-database).
 
-* A subárvore **[!UICONTROL Variables]** contém as variáveis disponíveis para esse formulário. Para obter mais informações, consulte [Armazenamento de dados em uma variável local](../../web/using/web-forms-answers.md#storing-data-in-a-local-variable).
+* A subárvore **[!UICONTROL Variables]** contém as variáveis disponíveis para esse formulário. Para obter mais informações, consulte [Armazenamento de dados em uma variável local](web-forms-answers.md#storing-data-in-a-local-variable).
 
-Para obter mais informações, consulte o caso de uso disponível aqui: [Exibição de opções diferentes de acordo com os valores selecionados](../../web/using/use-cases--web-forms.md#displaying-different-options-depending-on-the-selected-values).
+Para obter mais informações, consulte o caso de uso disponível aqui: [Exibição de opções diferentes de acordo com os valores selecionados](use-cases--web-forms.md#displaying-different-options-depending-on-the-selected-values).
 
-Você também pode condicionar a exibição de páginas de formulário usando o objeto **[!UICONTROL Test]**. Para obter mais informações, consulte esta [página](../../web/using/defining-web-forms-page-sequencing.md#conditional-page-display).
+Você também pode condicionar a exibição de páginas de formulário usando o objeto **[!UICONTROL Test]**. Para obter mais informações, consulte esta [página](defining-web-forms-page-sequencing.md#conditional-page-display).
 
 ## Importação dos elementos de um formulário existente {#importing-elements-from-an-existing-form}
 
