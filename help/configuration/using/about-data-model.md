@@ -6,10 +6,10 @@ audience: configuration
 content-type: reference
 topic-tags: schema-reference
 exl-id: 655b5928-b005-442f-b026-2f1b0c1abb99
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: ee3d643e4ba607b3d7ca816eabf862b867d1f3f4
 workflow-type: tm+mt
-source-wordcount: '983'
-ht-degree: 7%
+source-wordcount: '980'
+ht-degree: 6%
 
 ---
 
@@ -31,7 +31,7 @@ Para obter mais informações sobre a tabela Recipient, consulte [esta seção](
 
 O modelo de dados também inclui uma parte dedicada ao armazenamento de todas as atividades de marketing. Geralmente é a tabela Delivery (**NmsDelivery**). Cada registro nesta tabela representa uma ação de delivery ou um template de delivery. Ele contém todos os parâmetros necessários para executar deliveries, como target, conteúdo, etc.
 
-### Registra tabelas {#log-tables}
+### Tabelas de logs {#log-tables}
 
 Outra parte do modelo de dados permite armazenar temporariamente todos os logs associados à execução das campanhas.
 
@@ -43,13 +43,13 @@ Os logs de delivery e de rastreamento são excluídos após um determinado perí
 
 Finalmente, parte do modelo de dados consiste em dados técnicos usados para o processo do aplicativo, incluindo operadores e direitos de usuário (**NmsGroup**), pastas (**XtkFolder**).
 
-## Uso da tabela de Recipient padrão {#default-recipient-table}
+## Uso da tabela incorporada Recipient {#default-recipient-table}
 
-A tabela Recipient pronta para uso no Adobe Campaign fornece um bom ponto de partida para a criação do modelo de dados. Ela tem vários campos predefinidos e links de tabela que podem ser facilmente estendidos. Isso é particularmente útil quando você está direcionando recipients principalmente porque se encaixa em um modelo de dados simples centrado em recipients.
+A tabela de Recipient integrada no Adobe Campaign fornece um bom ponto de partida para a criação do modelo de dados. Ela tem vários campos predefinidos e links de tabela que podem ser facilmente estendidos. Isso é particularmente útil quando você está direcionando recipients principalmente porque se encaixa em um modelo de dados simples centrado em recipients.
 
-Os benefícios de usar a tabela de Recipient padrão são os seguintes:
+Os benefícios de usar a tabela de Recipient integrada são os seguintes:
 
-* Trabalhar com funcionalidades prontas para uso, como assinaturas, listas de propagação, pesquisas, sociais e assim por diante.
+* Trabalho integrado com funcionalidades como assinaturas, listas de propagação e muito mais.
 * Fornecimento de um banco de dados de marketing com um modelo de dados centrado no recipient.
 * Implementação mais rápida.
 * Manutenção fácil por suporte e parceiros.
@@ -62,7 +62,7 @@ No entanto, é possível estender a tabela Recipient, mas não para reduzir o n�
 
 Além disso, como a tabela Recipient faz parte do produto, tanto a tabela quanto seu formulário associado evoluem conforme o produto muda. Portanto, é necessária uma manutenção extra para verificar se as extensões ainda são válidas na atualização.
 
-## Extensão do modelo de dados {#extending-data-model}
+## Extensão do modelo de dados  {#extending-data-model}
 
 Ao começar com o Adobe Campaign, é necessário avaliar o modelo de dados padrão para verificar qual tabela é a mais adequada para armazenar seus dados de marketing.
 
