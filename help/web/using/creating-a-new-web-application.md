@@ -6,7 +6,7 @@ audience: web
 content-type: reference
 topic-tags: web-applications
 exl-id: 5ccf5a21-48aa-4c0d-8cc8-457eb07d9f74
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 360fd1ed8970c17c0687eaca0a4c1960d6f5838c
 workflow-type: tm+mt
 source-wordcount: '361'
 ht-degree: 100%
@@ -29,19 +29,19 @@ Esse template determina o tipo de aplicação web. É possível criar:
 
 1. Formulários web (+ modificação de perfil)
 
-   Os formulários Web permitem que você ofereça páginas da Web com campos de entrada ou seleção: as informações inseridas pelos usuários podem ser armazenadas no banco de dados do Adobe Campaign. Para obter mais informações, consulte [Formulários web](../../web/using/about-web-forms.md).
+   Os formulários Web permitem que você ofereça páginas da Web com campos de entrada ou seleção: as informações inseridas pelos usuários podem ser armazenadas no banco de dados do Adobe Campaign. Para obter mais informações, consulte [Formulários web](about-web-forms.md).
 
 1. Aplicações web
 
-   O Adobe Campaign permite que você crie aplicações web para ser expostas em uma plataforma Web ou em uma extranet. Isso permite editar dados e registrar informações no Adobe Campaign. Nesse caso, é possível restringir o acesso aos usuários autenticados (via controle de acesso) e configurar o pré-carregamento de dados com base em vários critérios. Para obter mais informações, consulte [esta seção](../../web/using/about-web-applications.md).
+   O Adobe Campaign permite que você crie aplicações web para ser expostas em uma plataforma Web ou em uma extranet. Isso permite editar dados e registrar informações no Adobe Campaign. Nesse caso, é possível restringir o acesso aos usuários autenticados (via controle de acesso) e configurar o pré-carregamento de dados com base em vários critérios. Para obter mais informações, consulte [esta seção](about-web-applications.md).
 
 1. Páginas de aterrissagem
 
-   Uma landing page é uma página HTML cujo conteúdo está disponível em um site e que permite que os usuários insiram informações para ser armazenadas no perfil do banco de dados do Adobe Campaign. O conteúdo desse tipo de página é geralmente criado por uma agência especializada em Web antes de ser importado para o Adobe Campaign para publicação, gestão e acompanhamento. Para obter mais informações, consulte [esta página](../../web/using/creating-a-landing-page.md).
+   Uma landing page é uma página HTML cujo conteúdo está disponível em um site e que permite que os usuários insiram informações para ser armazenadas no perfil do banco de dados do Adobe Campaign. O conteúdo desse tipo de página é geralmente criado por uma agência especializada em Web antes de ser importado para o Adobe Campaign para publicação, gestão e acompanhamento. Para obter mais informações, consulte [esta página](creating-a-landing-page.md).
 
 1. Pesquisas
 
-   O Adobe Campaign permite que você, através da opção **Survey Manager**, projete e gerencie pesquisas online e processe seus resultados: criação dinâmica de campos, gestão de pontuação, exportação de respostas e relatórios dedicados. Para obter mais informações, consulte [esta seção](../../web/using/about-surveys.md).
+   O Adobe Campaign permite que você, através da opção **Survey Manager**, projete e gerencie pesquisas online e processe seus resultados: criação dinâmica de campos, gestão de pontuação, exportação de respostas e relatórios dedicados. Para obter mais informações, consulte [esta seção](../../surveys/using/about-surveys.md).
 
    >[!CAUTION]
    >
@@ -55,4 +55,4 @@ Esse template determina o tipo de aplicação web. É possível criar:
    >
    >**Social Marketing** é um módulo opcional do Adobe Campaign. Verifique o contrato de licença.
 
-O modo de configuração de página e as configurações disponíveis podem ser idênticos para vários tipos de aplicações web. Para obter mais informações, consulte [esta seção](../../web/using/about-web-forms.md).
+O modo de configuração de página e as configurações disponíveis podem ser idênticos para vários tipos de aplicações web. Para obter mais informações, consulte [esta seção](about-web-forms.md).
