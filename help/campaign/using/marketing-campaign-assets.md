@@ -6,7 +6,7 @@ audience: campaign
 content-type: reference
 topic-tags: orchestrate-campaigns
 exl-id: 891252b0-4700-4a2a-a632-63aad5ce75d7
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 690f7c4e62203127da7a7055afa0ee8ad4a2bce4
 workflow-type: tm+mt
 source-wordcount: '755'
 ht-degree: 100%
@@ -25,7 +25,7 @@ Em uma campanha, você também pode consultar outros itens, como cupons promocio
 
 >[!NOTE]
 >
->Se estiver usando o módulo de Gerenciamento de recurso de marketing do Campaign, você também poderá gerenciar uma biblioteca de recursos de marketing que estão disponíveis para vários usuários para trabalho colaborativo. [Saiba mais](../../campaign/using/managing-marketing-resources.md).
+>Se estiver usando o módulo de Gerenciamento de recurso de marketing do Campaign, você também poderá gerenciar uma biblioteca de recursos de marketing que estão disponíveis para vários usuários para trabalho colaborativo. [Saiba mais](../../mrm/using/managing-marketing-resources.md).
 
 ## Adicionar documentos {#adding-documents}
 
@@ -102,7 +102,7 @@ Uma estrutura pode conter itens e campos de personalização, recursos e ofertas
 
    >[!NOTE]
    >
-   >Para obter mais informações sobre recursos de marketing, consulte [esta seção](../../campaign/using/managing-marketing-resources.md).
+   >Para obter mais informações sobre recursos de marketing, consulte [esta seção](../../mrm/using/managing-marketing-resources.md).
 
 ### Selecionar um outline {#selecting-an-outline}
 
