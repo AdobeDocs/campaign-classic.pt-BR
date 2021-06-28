@@ -6,7 +6,7 @@ audience: reporting
 content-type: reference
 topic-tags: designing-reports-with-cubes
 exl-id: 6be12518-86d1-4a13-bbc2-b2ec5141b505
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 86963746d3de3396963d221ddbd1ef7d89733d2f
 workflow-type: tm+mt
 source-wordcount: '475'
 ht-degree: 100%
@@ -35,7 +35,7 @@ Antes de começar neste caso de uso, é preciso ter acesso a uma pesquisa e um c
 
 Para coletar as respostas da pesquisa, siga as etapas abaixo:
 
-1. Crie um workflow e coloque uma atividade **[!UICONTROL Answers to a survey]**. Para obter mais informações sobre o uso dessa atividade, consulte [esta seção](../../web/using/publish--track-and-use-collected-data.md#using-the-collected-data).
+1. Crie um workflow e coloque uma atividade **[!UICONTROL Answers to a survey]**. Para obter mais informações sobre o uso dessa atividade, consulte [esta seção](../../surveys/using/publish--track-and-use-collected-data.md#using-the-collected-data).
 1. Edite a atividade e selecione a pesquisa cujas respostas deseja analisar.
 1. Habilite a opção **[!UICONTROL Select all the answer data]** para coletar todas as informações.
 
