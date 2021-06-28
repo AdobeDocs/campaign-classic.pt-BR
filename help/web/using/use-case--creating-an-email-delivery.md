@@ -6,7 +6,7 @@ audience: web
 content-type: reference
 topic-tags: editing-html-content
 exl-id: e2679f12-459b-466d-9c82-60a28363b104
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 360fd1ed8970c17c0687eaca0a4c1960d6f5838c
 workflow-type: tm+mt
 source-wordcount: '734'
 ht-degree: 100%
@@ -28,7 +28,7 @@ Nosso objetivo final é criar um delivery com um template personalizado que cont
 >
 >Antes de começar, você deve ter pelo menos um **template HTML** configurado para hospedar o conteúdo de seus deliveries futuros.
 >
->No **[!UICONTROL Properties]** do delivery, verifique se **[!UICONTROL Content editing mode]** (na guia **[!UICONTROL Advanced]**) está definido como **[!UICONTROL DCE]**. Para garantir a operação ideal do editor, consulte [Práticas recomendadas de edição de conteúdo](../../web/using/content-editing-best-practices.md).
+>No **[!UICONTROL Properties]** do delivery, verifique se **[!UICONTROL Content editing mode]** (na guia **[!UICONTROL Advanced]**) está definido como **[!UICONTROL DCE]**. Para garantir a operação ideal do editor, consulte [Práticas recomendadas de edição de conteúdo](content-editing-best-practices.md).
 
 ## Etapa 1 - Criação de um delivery {#step-1---creating-a-delivery}
 
@@ -54,7 +54,7 @@ Você também pode importar um conteúdo HTML criado fora do Adobe Campaign sele
 
 ![](assets/dce_select_from_file_template.png)
 
-Você pode salvar esse conteúdo como um template para uso futuro. Após criar um template de conteúdo personalizado, é possível pré-visualizá-lo na lista de templates. Para saber mais, consulte [Gerenciamento de template](../../web/using/template-management.md).
+Você pode salvar esse conteúdo como um template para uso futuro. Após criar um template de conteúdo personalizado, é possível pré-visualizá-lo na lista de templates. Para saber mais, consulte [Gerenciamento de template](template-management.md).
 
 >[!CAUTION]
 >
@@ -70,7 +70,7 @@ Você pode salvar esse conteúdo como um template para uso futuro. Após criar u
 
 * Inserir um link em uma imagem
 
-   Para levar os destinatários do delivery para um endereço externo por meio de uma imagem, clique na imagem relevante para exibir a barra de ferramentas pop-up, coloque o cursor no primeiro ícone e clique em **[!UICONTROL Link to an external URL]**. Para saber mais, consulte [Adição de um link](../../web/using/editing-content.md#adding-a-link).
+   Para levar os destinatários do delivery para um endereço externo por meio de uma imagem, clique na imagem relevante para exibir a barra de ferramentas pop-up, coloque o cursor no primeiro ícone e clique em **[!UICONTROL Link to an external URL]**. Para saber mais, consulte [Adição de um link](editing-content.md#adding-a-link).
 
    ![](assets/dce_externalpage.png)
 
@@ -80,7 +80,7 @@ Você pode salvar esse conteúdo como um template para uso futuro. Após criar u
 
 * Inserir um link no texto
 
-   Para integrar um link externo ao texto no seu delivery, selecione um texto ou um bloco de texto e clique no primeiro ícone na barra de ferramentas pop-up. Clique em **[!UICONTROL Link to an external URL]** e digite o endereço do link no campo **[!UICONTROL URL]**. Para saber mais, consulte [Adição de um link](../../web/using/editing-content.md#adding-a-link).
+   Para integrar um link externo ao texto no seu delivery, selecione um texto ou um bloco de texto e clique no primeiro ícone na barra de ferramentas pop-up. Clique em **[!UICONTROL Link to an external URL]** e digite o endereço do link no campo **[!UICONTROL URL]**. Para saber mais, consulte [Adição de um link](editing-content.md#adding-a-link).
 
    O link pode ser alterado a qualquer momento usando a seção à direita da janela.
 
@@ -102,7 +102,7 @@ Você pode salvar esse conteúdo como um template para uso futuro. Após criar u
 
 * Integrar um link a uma aplicação web
 
-   O Editor de conteúdo digital permite integrar links às aplicações web no console do Adobe Campaign, como uma landing page ou uma página de formulário. Para saber mais, consulte [Vincular a uma aplicação web](../../web/using/editing-content.md#link-to-a-web-application).
+   O Editor de conteúdo digital permite integrar links às aplicações web no console do Adobe Campaign, como uma landing page ou uma página de formulário. Para saber mais, consulte [Vincular a uma aplicação web](editing-content.md#link-to-a-web-application).
 
    Selecione um campo de texto para seu link para uma aplicação web e clique no primeiro ícone. Escolha **[!UICONTROL Link to a Web application]** e selecione a aplicação desejada clicando no ícone no final do campo **Web Application**.
 
