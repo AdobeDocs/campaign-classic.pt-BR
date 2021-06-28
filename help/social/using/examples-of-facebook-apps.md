@@ -6,10 +6,10 @@ audience: social
 content-type: reference
 topic-tags: annexes
 exl-id: 3b8c7db4-9c55-42f6-8e09-e5ab781efe8f
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: c7068c172c35e067d2dbed9233ec3b84633603fd
 workflow-type: tm+mt
-source-wordcount: '1981'
-ht-degree: 100%
+source-wordcount: '2222'
+ht-degree: 94%
 
 ---
 
@@ -297,7 +297,7 @@ A tela **[!UICONTROL Activities]** da página de detalhes do visitante contém a
    >
    >Para que o Adobe Campaign colete os check-ins de um fã, é necessário clicar no botão **[!UICONTROL Subscribe]** na tela de configuração do serviço. Para obter mais informações, consulte [Configuração de contas externas](../../social/using/creating-a-facebook-application.md#configuring-external-accounts).
 
-## Como pré-carregar os campos de um formulário usando dados de perfil do Facebook {#how-to-pre-load-the-fields-of-a-form-using-facebook-profile-data}
+## Como pré-carregar um formulário usando dados de perfil do Facebook {#how-to-pre-load-the-fields-of-a-form-using-facebook-profile-data}
 
 O aplicativo **[!UICONTROL Social Marketing]** também permite adicionar um botão a um formulário, para pré-carregar campos usando informações de perfil do Facebook. Esta opção, que está disponível em todos os templates de aplicativos web (atividades do tipo **[!UICONTROL Page]**), está detalhada [nesta seção](../../web/using/static-elements-in-a-web-form.md#inserting-html-content).
 
@@ -306,3 +306,55 @@ O aplicativo **[!UICONTROL Social Marketing]** também permite adicionar um bot�
 >[!NOTE]
 >
 >Antes de começar a usar essa função, é necessário criar um aplicativo do Facebook e uma conta externa do tipo **[!UICONTROL Facebook Connect]** . Para obter mais informações, consulte [Configuração de contas externas](../../social/using/creating-a-facebook-application.md#configuring-external-accounts).
+
+**Faça pré-carregamento dos campos do formulário com dados obtidos do perfil do Facebook.**
+
+Você cria um formulário web e inclui elementos com os quais o usuário não tem nenhuma interação nas páginas do formulário; são elementos estáticos, como imagens, conteúdo HTML, uma barra horizontal ou um link de hipertexto. Saiba mais sobre elementos estáticos em um formulário web em [this page](../../web/using/static-elements-in-a-web-form.md).
+
+Ao inserir um elemento estático, a opção **[!UICONTROL Preload with Facebook]** permite inserir um botão em um formulário para pré-carregar campos usando informações de perfil do Facebook.
+
+![](assets/web_social_webapp_037.png)
+
+Quando um usuário clica no botão **[!UICONTROL Fill in automatically]**, a solicitação do Facebook para a janela de permissão é aberta.
+
+![](assets/web_social_webapp_029.png)
+
+>[!NOTE]
+>
+>Você pode alterar a lista de direitos estendidos ao configurar a conta externa. Se nenhum direito estendido for configurado, o Facebook encaminhará as informações básicas do perfil por padrão.\
+>Para visualizar a lista de direitos estendidos e sua sintaxe, [consulte a documentação do Facebook](https://developers.facebook.com/docs/reference/api/permissions).
+
+Se o usuário concordar em compartilhar suas informações, os campos do formulário serão pré-carregados.
+
+![](assets/web_social_webapp_030.png)
+
+Para esse caso de uso, criamos uma aplicação web composta pelos seguintes elementos:
+
+* uma página contendo o formulário
+* uma atividade **[!UICONTROL Record]**
+* uma atividade **[!UICONTROL End]**
+
+![](assets/social_webapp_031.png)
+
+Para adicionar um botão de pré-carregamento, siga as etapas abaixo:
+
+1. Crie um formulário.
+
+   ![](assets/social_webapp_032.png)
+
+1. Vá para o mesmo nível que os campos no formulário e adicione um link.
+
+   ![](assets/social_webapp_033.png)
+
+1. Insira o rótulo e selecione o tipo **[!UICONTROL Button]**.
+
+   ![](assets/social_webapp_034.png)
+
+1. Acesse o campo **[!UICONTROL Action]** e selecione **[!UICONTROL Preload with Facebook]**.
+
+   ![](assets/social_webapp_035.png)
+
+1. Vá para o campo **[!UICONTROL Application]** e selecione a conta externa do tipo **[!UICONTROL Facebook Connect]** criada anteriormente. Para obter mais informações, consulte [esta página](../../social/using/creating-a-facebook-application.md#configuring-external-accounts).
+
+   ![](assets/social_webapp_036.png)
+
