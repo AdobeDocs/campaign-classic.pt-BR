@@ -6,7 +6,7 @@ audience: web
 content-type: reference
 topic-tags: editing-html-content
 exl-id: 968430d6-b1dd-47f8-8b31-39aaa18bc05c
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 360fd1ed8970c17c0687eaca0a4c1960d6f5838c
 workflow-type: tm+mt
 source-wordcount: '1214'
 ht-degree: 100%
@@ -135,6 +135,7 @@ Blocos de personalização e campos só podem ser inseridos em blocos de tipo de
 >* Nova janela (_blank)
 >* Janela atual (_self)
 >* Comportamento do navegador padrão
+
 >
 
 
@@ -200,8 +201,9 @@ As opções disponíveis são as seguintes:
 >[!NOTE]
 >
 >* Ícone **Delete**: exclui o bloco e todo o conteúdo.
->
->* Ícone **Duplicate**: duplica o bloco e todos os estilos relacionados ao bloco.
+   >
+   >
+* Ícone **Duplicate**: duplica o bloco e todos os estilos relacionados ao bloco.
 
 
 ## Gerenciamento de imagens e animações {#managing-images-and-animations}
@@ -251,7 +253,7 @@ Por padrão, os campos oferecidos são da tabela **[!UICONTROL Recipient]**. Qua
 
 O nome do campo aparece no editor, destacado em amarelo. Ele será substituído pelo perfil do recipient de destino quando a personalização for gerada (por exemplo, ao pré-visualizar uma landing page).
 
-Um exemplo é apresentado na seção [Inserting a personalization field](../../web/using/creating-a-landing-page.md#inserting-a-personalization-field).
+Um exemplo é apresentado na seção [Inserting a personalization field](creating-a-landing-page.md#inserting-a-personalization-field).
 
 ### Inserção de um bloco de personalização {#inserting-a-personalization-block}
 
