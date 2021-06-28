@@ -6,7 +6,7 @@ audience: installation
 content-type: reference
 topic-tags: initial-configuration
 exl-id: 2bc077c4-ed65-4157-bfc9-df5d0442f476
-source-git-commit: 4a41aea9edfe5e6ca0454049cbb2892449eec153
+source-git-commit: 86963746d3de3396963d221ddbd1ef7d89733d2f
 workflow-type: tm+mt
 source-wordcount: '1173'
 ht-degree: 16%
@@ -68,7 +68,7 @@ A tabela a seguir lista todos os pacotes incorporados do Campaign.
   </tr> 
   <tr> 
    <td> Recursos de marketing (MRM)<br /> </td> 
-   <td> Controla ações de marketing em um modo colaborativo fornecendo gerenciamento e rastreamento das tarefas, orçamentos e recursos de marketing. <a href="../../campaign/using/about-marketing-resource-management.md">Saiba mais</a> <br /> </td> 
+   <td> Controla ações de marketing em um modo colaborativo fornecendo gerenciamento e rastreamento das tarefas, orçamentos e recursos de marketing. <a href="../../mrm/using/about-marketing-resource-management.md">Saiba mais</a> <br /> </td> 
    <td> Marketing</td> 
   </tr> 
   <tr> 
@@ -139,7 +139,7 @@ A tabela a seguir lista todos os pacotes incorporados do Campaign.
   </tr> 
   <tr> 
    <td> Pesquisas Online (Gerenciador de Pesquisas)<br /> </td> 
-   <td> Cria e gerencia formulários online para adicionar ou modificar informações de perfil, para assinar, cancelar a assinatura ou um formulário de entrada de competição. Opcional. <a href="../../web/using/about-surveys.md">Saiba mais</a> <br /> </td> 
+   <td> Cria e gerencia formulários online para adicionar ou modificar informações de perfil, para assinar, cancelar a assinatura ou um formulário de entrada de competição. Opcional. <a href="../../surveys/using/about-surveys.md">Saiba mais</a> <br /> </td> 
    <td> Marketing<br /> </td> 
   </tr> 
   <tr> 
