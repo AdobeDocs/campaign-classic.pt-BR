@@ -4,10 +4,10 @@ title: Migrar para o Adobe Analytics Connector
 description: Campaign - Perguntas frequentes sobre o conector do Analytics
 hide: true
 hidefromtoc: true
-source-git-commit: 248bd7774c01adb44ce33d0499c2b01d013e75bd
+source-git-commit: cde4ed65abb2458fc40639b92314f8d56b18b78c
 workflow-type: tm+mt
-source-wordcount: '757'
-ht-degree: 6%
+source-wordcount: '840'
+ht-degree: 5%
 
 ---
 
@@ -22,12 +22,12 @@ Você deve migrar para a nova integração do Adobe Analytics Connector no Adobe
 
 >[!NOTE]
 >
->Em caso de dúvidas sobre essas alterações, entre em contato com o [Atendimento ao cliente da Adobe](https://helpx.adobe.com/br/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html).
+>Para dúvidas sobre essas alterações, leia as [Perguntas frequentes](#faq-aa). Para obter mais informações, entre em contato com o [Atendimento ao cliente do Adobe](https://helpx.adobe.com/br/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html).
 
 
 ## O que mudou?
 
-Uma nova integração entre o Campaign Classic e o Adobe Analytics está disponível. As alterações importantes estão listadas abaixo.
+Uma nova integração entre o Campaign Classic v7 e o Adobe Analytics está disponível. As alterações importantes estão listadas abaixo.
 
 * A integração entre a autenticação Adobe Campaign Classic e Adobe Analytics foi movida de usuário/senha para Adobe Identity Management Service (IMS). Como consequência, você deve implementar o Adobe IMS e se conectar ao Campaign [por meio de um Adobe ID](../integrations/using/about-adobe-id.md), antes de iniciar a implementação do Analytics Connector.
 
@@ -58,7 +58,7 @@ Como cliente local/híbrido, é necessário atualizar para uma das versões mais
 Depois que todas as instâncias forem atualizadas, você poderá [implementar a nova integração](../platform/using/adobe-analytics-connector.md) no Adobe Analytics Connector e garantir uma transição contínua.
 
 
-## Perguntas frequentes
+## Perguntas frequentes{#faq-aa}
 
 **Como posso obter registros?**
 
@@ -71,17 +71,21 @@ Como um usuário local, você pode implementar o modo detalhado da seguinte mane
 * Para ativar o modo detalhado para a interface do usuário: execute novamente o processo `web` no modo detalhado.
 * Para habilitar o modo detalhado para os workflows **webAnalytics**: selecione a opção **Execute in the engine** nas propriedades do workflow e execute novamente `wfserver` no modo detalhado.
 
-**Proprietário da integração não administrador**
+**O que significa o erro &quot;Proprietário da integração não administrador&quot;?**
 
 Saiba mais sobre o Erro &quot;Proprietário da integração não administrador&quot; dos Data Connectors em [esta página](https://adobeexchangeec.zendesk.com/hc/en-us/articles/360035167932-Adobe-Analytics-Data-Connectors-Integration-Owner-Not-Admin-Error).
 
-**Evars/eventos/conjunto de relatórios existentes no analytics não visíveis no Campaign**
+**Quando a migração para o novo conector for feita, o que acontece com os dados antigos e os conjuntos de relatórios?**
+
+Após a migração, um novo conector (migrado do conector antigo) começará a enviar dados para o mesmo conjunto de relatórios e os dados existentes não serão afetados: será adicionado aos dados existentes.
+
+**Algumas evars/eventos/conjuntos de relatórios existentes no Analytics não estão visíveis no Campaign. O que devo fazer?**
 
 A integração depende de dados no Token de conta técnica para a operação diária. Se não houver permissão para uma dimensão/métrica/conjunto de relatórios do perfil de produto associado ao usuário de conta técnica, as APIs que usamos serão retidas para essas solicitações.
 
 Se estamos lendo os detalhes de um componente do Analytics (como métricas/dimensões/segmentos/conjuntos de relatórios), a API não retornará esses componentes no resultado (que pode parecer que algo foi excluído do lado do Analytics ou não está presente). A API do Analytics rejeitará essas solicitações e rejeitará o erro.
 
-A solução é atualizar o Perfil de produto no Contexto de usuário do Analytics do Token de usuário técnico com os componentes recém-criados/ausentes, adicionando esses componentes em [Adobe Admin Console](https://adminconsole.adobe.com/).
+A solução é atualizar o **Perfil de produto** no Contexto de Usuário do Analytics do Token de Usuário Técnico com os componentes recém-criados/ausentes, adicionando esses componentes em [Adobe Admin Console](https://adminconsole.adobe.com/). Para obter mais orientações, entre em contato com o [Atendimento ao cliente do Adobe](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html).
 
 ## Links úteis
 
