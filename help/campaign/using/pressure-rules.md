@@ -6,7 +6,7 @@ audience: campaign
 content-type: reference
 topic-tags: campaign-optimization
 exl-id: c23212f2-fdf8-4820-b389-546f7c84db27
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 86963746d3de3396963d221ddbd1ef7d89733d2f
 workflow-type: tm+mt
 source-wordcount: '3253'
 ht-degree: 100%
@@ -111,7 +111,7 @@ Você pode indexar o número de mensagens autorizadas de acordo com o segmento a
 
 ![](assets/campaign_opt_pressure_sample.png)
 
-Para definir o limite, você pode usar uma dimensão vinculada à targeting dimension: por exemplo, para incluir mensagens enviadas aos perfis de recipients armazenados na tabela de visitantes (para saber mais sobre a tabela de visitantes, consulte [esta seção](../../web/using/use-case--creating-a-refer-a-friend-form.md)) ou para evitar o envio de mais de uma mensagem por semana para a mesma família de recipients, (o que pode significar vários endereços de email) identificada em uma dimensão vinculada aos recipients.
+Para definir o limite, você pode usar uma dimensão vinculada à targeting dimension: por exemplo, para incluir mensagens enviadas aos perfis de recipients armazenados na tabela de visitantes (para saber mais sobre a tabela de visitantes, consulte [esta seção](../../surveys/using/use-case--creating-a-refer-a-friend-form.md)) ou para evitar o envio de mais de uma mensagem por semana para a mesma família de recipients, (o que pode significar vários endereços de email) identificada em uma dimensão vinculada aos recipients.
 
 Para fazer isso, selecione a opção **[!UICONTROL Count messages on a linked dimension]** e selecione a tabela de visitantes ou de contatos.
 
@@ -154,12 +154,14 @@ Por exemplo, uma regra de pressão que define um limite de 2 mensagens por seman
 >
 >* Insira **15d** no campo **[!UICONTROL Concerned period]**: no cálculo são considerados os deliveries realizados em até duas semanas antes da data do delivery no qual a regra é aplicada,
 >
->  ou
+>  
+ou
 >
 >* Digite **7d** no campo **[!UICONTROL Period considered]** E verifique a **[!UICONTROL Take the deliveries into account in the provisional calendar]**\
->: são considerados no cálculo os deliveries realizados até 7 dias antes da data de delivery e os programados até 7 dias após a data de delivery.
+   >: são considerados no cálculo os deliveries realizados até 7 dias antes da data de delivery e os programados até 7 dias após a data de delivery.
 >
->A data de início do período depende de como o banco de dados está configurado.
+>
+A data de início do período depende de como o banco de dados está configurado.
 
 Por exemplo, ao aplicar uma regra de pressão de 15 dias sem agrupar a um delivery com data 11/12, serão considerados os deliveries entre 27/11 e 12/12. Se a regra de pressão considerar os envios do calendário provisional, todas as programações entre 27/11 e 27/12 são consideradas. Por fim, ao configurar na regra um agrupamento por mês, todos os envios em novembro e dezembro são considerados para calcular o limite (de 01/11 a 31/12).
 
