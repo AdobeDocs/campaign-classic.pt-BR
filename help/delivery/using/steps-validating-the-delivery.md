@@ -6,7 +6,7 @@ audience: delivery
 content-type: reference
 topic-tags: about-deliveries-and-channels
 exl-id: c2f4d8d0-f0fe-4d1a-92fd-91edaf9729f3
-source-git-commit: a129f49d4f045433899fd7fdbd057fb16d0ed36a
+source-git-commit: 690f7c4e62203127da7a7055afa0ee8ad4a2bce4
 workflow-type: tm+mt
 source-wordcount: '1663'
 ht-degree: 100%
@@ -134,6 +134,7 @@ Para detectar possíveis erros na configuração da mensagem, a Adobe recomenda 
 >
 >* Os modos de validação disponíveis estão detalhados em [Alterar o modo de aprovação](steps-validating-the-delivery.md#changing-the-approval-mode).
 >* A configuração do target de prova é explicada em [Definir um target de prova específico](steps-defining-the-target-population.md#defining-a-specific-proof-target).
+
 >
 
 
@@ -207,7 +208,7 @@ A guia **[!UICONTROL Rule]** fornece uma lista das regras de tipologia para sere
 
 >[!NOTE]
 >
->As tipologias do tipo **[!UICONTROL Arbitration]** são usadas dentro da estrutura de gerenciamento de regras de pressão. Para obter mais informações, consulte [esta seção](../../campaign/using/about-marketing-resource-management.md).
+>As tipologias do tipo **[!UICONTROL Arbitration]** são usadas dentro da estrutura de gerenciamento de regras de pressão. Para obter mais informações, consulte [esta seção](../../mrm/using/about-marketing-resource-management.md).
 
 ## Alterar o modo de aprovação {#changing-the-approval-mode}
 
