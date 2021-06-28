@@ -6,10 +6,10 @@ audience: delivery
 content-type: reference
 topic-tags: tracking-messages
 exl-id: 43779505-9917-4e99-af25-b00a9d29a645
-source-git-commit: a129f49d4f045433899fd7fdbd057fb16d0ed36a
+source-git-commit: ee3d643e4ba607b3d7ca816eabf862b867d1f3f4
 workflow-type: tm+mt
 source-wordcount: '685'
-ht-degree: 100%
+ht-degree: 97%
 
 ---
 
@@ -71,7 +71,7 @@ Antes de enviar as mensagens com o rastreamento, você pode testar o rastreament
 
 **Rastreamento de uma aplicação web**
 
-Também é possível rastrear e medir visitas em páginas de aplicação web com tags de rastreamento. Essa funcionalidade pode ser usada para todos os tipos de aplicação web, como formulários e pesquisas online. [Saiba mais](../../web/using/tracking-a-web-application.md)
+Também é possível rastrear e medir visitas em páginas de aplicação web com tags de rastreamento. Essa funcionalidade pode ser usada para todos os tipos de aplicações web, como formulários e landing pages. [Saiba mais](../../web/using/tracking-a-web-application.md)
 
 **Recusar rastreamento da aplicação web**
 
