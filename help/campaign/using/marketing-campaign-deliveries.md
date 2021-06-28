@@ -6,14 +6,14 @@ audience: campaign
 content-type: reference
 topic-tags: orchestrate-campaigns
 exl-id: 1dd3c080-444d-45f8-9562-d2d01a9d2860
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 690f7c4e62203127da7a7055afa0ee8ad4a2bce4
 workflow-type: tm+mt
 source-wordcount: '1487'
 ht-degree: 100%
 
 ---
 
-# Deliveries de campanha de marketing {#marketing-campaign-deliveries}
+# Entregas de campanha de marketing {#marketing-campaign-deliveries}
 
 Os deliveries podem ser criados através do painel da campanha, de um workflow de campanha ou diretamente através da visão geral dos deliveries.
 
@@ -116,7 +116,7 @@ A extração de arquivo inicia duas operações: cálculo de orçamento e cálcu
 
 ## Gerenciar documentos associados {#managing-associated-documents}
 
-Você pode associar vários documentos a uma campanha: relatório, foto, página da Web, diagrama, etc. Esses documentos podem estar em qualquer formato (Microsoft Word, PowerPoint, PNG, JPG, Acrobat PDF etc.). Saiba como vincular documentos a uma campanha [nesta seção](../../campaign/using/marketing-campaign-assets.md).
+Você pode associar vários documentos a uma campanha: relatório, foto, página da Web, diagrama etc. Esses documentos podem estar em qualquer formato (Microsoft Word, PowerPoint, PNG, JPG, Acrobat PDF etc.). Saiba como vincular documentos a uma campanha [nesta seção](../../campaign/using/marketing-campaign-assets.md).
 
 >[!IMPORTANT]
 >
@@ -126,7 +126,7 @@ Em uma campanha que você também pode consultar outros itens, como cupons promo
 
 >[!NOTE]
 >
->Se você estiver usando o MRM, também poderá gerenciar uma biblioteca de recursos de marketing disponíveis para vários participantes de trabalho colaborativo. Consulte [Gerenciar recursos de marketing](../../campaign/using/managing-marketing-resources.md).
+>Se você estiver usando o MRM, também poderá gerenciar uma biblioteca de recursos de marketing disponíveis para vários participantes de trabalho colaborativo. Consulte [Gerenciar recursos de marketing](../../mrm/using/managing-marketing-resources.md).
 
 ### Adicionar documentos {#adding-documents}
 
@@ -203,7 +203,7 @@ Uma estrutura pode conter itens e campos de personalização, recursos e ofertas
 
    >[!NOTE]
    >
-   >Para obter mais informações sobre recursos de marketing, consulte [Gerenciamento de recursos de marketing](../../campaign/using/managing-marketing-resources.md).
+   >Para obter mais informações sobre recursos de marketing, consulte [Gerenciamento de recursos de marketing](../../mrm/using/managing-marketing-resources.md).
 
 #### Selecionar uma estrutura {#selecting-an-outline}
 
@@ -233,7 +233,7 @@ O modelo de exportação deve estar associado ao provedor de serviços seleciona
 >
 >Para saber mais sobre exportações, consulte a seção [Introdução](../../platform/using/get-started-data-import-export.md) .
 
-#### Vídeo de tutorial {#create-email-video}
+#### Tutorial em vídeo {#create-email-video}
 
 Este vídeo explica como criar uma campanha e um email no Adobe Campaign.
 
