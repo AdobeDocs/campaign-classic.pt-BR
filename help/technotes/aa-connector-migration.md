@@ -4,9 +4,9 @@ title: Migrar para o Adobe Analytics Connector
 description: Campaign - Perguntas frequentes sobre o conector do Analytics
 hide: true
 hidefromtoc: true
-source-git-commit: cde4ed65abb2458fc40639b92314f8d56b18b78c
+source-git-commit: 41478c656ffd4e113788149e6cca9ed00602789e
 workflow-type: tm+mt
-source-wordcount: '840'
+source-wordcount: '836'
 ht-degree: 5%
 
 ---
@@ -73,7 +73,7 @@ Como um usuário local, você pode implementar o modo detalhado da seguinte mane
 
 **O que significa o erro &quot;Proprietário da integração não administrador&quot;?**
 
-Saiba mais sobre o Erro &quot;Proprietário da integração não administrador&quot; dos Data Connectors em [esta página](https://adobeexchangeec.zendesk.com/hc/en-us/articles/360035167932-Adobe-Analytics-Data-Connectors-Integration-Owner-Not-Admin-Error).
+Saiba mais sobre o Erro dos Data Connectors `Integration Owner Not Admin` em [esta página](https://adobeexchangeec.zendesk.com/hc/en-us/articles/360035167932-Adobe-Analytics-Data-Connectors-Integration-Owner-Not-Admin-Error).
 
 **Quando a migração para o novo conector for feita, o que acontece com os dados antigos e os conjuntos de relatórios?**
 
