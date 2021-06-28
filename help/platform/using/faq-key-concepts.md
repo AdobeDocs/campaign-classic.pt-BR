@@ -6,7 +6,7 @@ audience: platform
 content-type: reference
 topic-tags: starting-with-adobe-campaign
 exl-id: f0d884ae-0789-4ad9-a8fa-adeffbb560ea
-source-git-commit: 515587695115c23d9b248ecb87a7ae89ea7c62a0
+source-git-commit: 86963746d3de3396963d221ddbd1ef7d89733d2f
 workflow-type: tm+mt
 source-wordcount: '881'
 ht-degree: 98%
@@ -94,7 +94,7 @@ Saiba como usar o Adobe Campaign para [enviar uma notificação por push persona
 
 ## Como criar e compartilhar uma pesquisa on-line? {#how-to-design-and-share-an-online-survey-}
 
-Saiba como [criar uma pesquisa on-line](../../web/using/getting-started-with-surveys.md) e conheça as principais etapas para gerá-la e publicá-la com o Campaign Classic.
+Saiba como [criar uma pesquisa on-line](../../surveys/using/getting-started-with-surveys.md) e conheça as principais etapas para gerá-la e publicá-la com o Campaign Classic.
 
 ## Como criar uma página de aterrissagem? {#how-to-create-landing-page-}
 
