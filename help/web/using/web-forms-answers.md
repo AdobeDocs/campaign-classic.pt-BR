@@ -6,7 +6,7 @@ audience: web
 content-type: reference
 topic-tags: web-forms
 exl-id: 5d48bb27-1884-47f1-acb7-dff5113565bc
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 360fd1ed8970c17c0687eaca0a4c1960d6f5838c
 workflow-type: tm+mt
 source-wordcount: '860'
 ht-degree: 100%
@@ -115,9 +115,9 @@ Para salvar as informações coletadas nas páginas de um formulário, você pre
 
 Há duas maneiras de usar essa caixa:
 
-* Se o formulário web for acessado por um link enviado em um email e se o usuário que acessar o aplicativo já estiver no banco de dados, você poderá verificar a opção **[!UICONTROL Update the preloaded record]**. Para obter mais informações, consulte [Entrega de um formulário por email](../../web/using/publishing-a-web-form.md#delivering-a-form-via-email).
+* Se o formulário web for acessado por um link enviado em um email e se o usuário que acessar o aplicativo já estiver no banco de dados, você poderá verificar a opção **[!UICONTROL Update the preloaded record]**. Para obter mais informações, consulte [Entrega de um formulário por email](publishing-a-web-form.md#delivering-a-form-via-email).
 
-   Nesse caso, o Adobe Campaign usa a chave primária criptografada do perfil do usuário, um identificador exclusivo atribuído a cada perfil pelo Adobe Campaign. Você precisa configurar as informações para pré-carregar a caixa de pré-carregamento. Para obter mais informações, consulte [Pré-carregamento dos dados do formulário](../../web/using/publishing-a-web-form.md#pre-loading-the-form-data).
+   Nesse caso, o Adobe Campaign usa a chave primária criptografada do perfil do usuário, um identificador exclusivo atribuído a cada perfil pelo Adobe Campaign. Você precisa configurar as informações para pré-carregar a caixa de pré-carregamento. Para obter mais informações, consulte [Pré-carregamento dos dados do formulário](publishing-a-web-form.md#pre-loading-the-form-data).
 
    >[!CAUTION]
    >
