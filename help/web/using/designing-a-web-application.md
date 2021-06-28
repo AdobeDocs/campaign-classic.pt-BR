@@ -6,28 +6,22 @@ audience: web
 content-type: reference
 topic-tags: web-applications
 exl-id: dcdf6afc-321e-4027-a350-fff6bbf22e71
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 360fd1ed8970c17c0687eaca0a4c1960d6f5838c
 workflow-type: tm+mt
-source-wordcount: '361'
-ht-degree: 100%
+source-wordcount: '256'
+ht-degree: 85%
 
 ---
 
 # Criar um aplicativo web{#designing-a-web-application}
 
-Aplicativos web são criados e gerenciados de acordo com o mesmo princípio de [pesquisas online](../../web/using/about-surveys.md).
-
-No entanto, as diferenças funcionais são as seguintes:
-
-* As aplicações web não usam campos arquivados. Portanto, os dados podem ser armazenados em campos de banco de dados ou em variáveis locais apenas.
-* Não há relatórios integrados em aplicativos web.
-* Campos adicionais são oferecidos, principalmente para a criação de tabelas e gráficos.
+As aplicações web são criadas e gerenciadas de acordo com o mesmo princípio de [formulários web](about-web-forms.md).
 
 >[!CAUTION]
 >
->É extremamente recomendável que as configurações aplicadas sejam continuamente verificadas para detectar erros com antecedência no processo de criação da aplicação web. Para verificar a renderização de uma modificação, salve o aplicativo e clique na subguia **[!UICONTROL Preview]**.
+>Use a subguia **[!UICONTROL Preview]** para verificar erros durante o design do aplicativo Web.
 >
->Até que a aplicação web seja publicada, as alterações não poderão ser vistas pelo usuário final.
+>Até que a aplicação web seja publicada, as alterações não serão expostas aos usuários finais.
 
 ## Inserção de gráficos em uma aplicação web {#inserting-charts-in-a-web-application}
 
@@ -70,4 +64,3 @@ As aplicações web de formulários de edição para uma extranet são caracteri
 
    Enquanto as aplicações web tipo &quot;Visão geral&quot; têm uma única página, os formulários de edição podem oferecer uma sequência de páginas com base em critérios específicos (testes, seleções, perfil do operador conectado, etc.).
 
-A operação desse tipo de aplicação web é semelhante às **Pesquisas**, mas sem gestão de histórico ou arquivamento de campo. Os usuários normalmente o acessam por meio de uma página de login onde eles devem se identificar.
