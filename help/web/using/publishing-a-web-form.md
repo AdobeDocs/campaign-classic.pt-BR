@@ -6,9 +6,9 @@ audience: web
 content-type: reference
 topic-tags: web-forms
 exl-id: 1c66b8e8-7590-4767-9b2f-a9a509df4508
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 360fd1ed8970c17c0687eaca0a4c1960d6f5838c
 workflow-type: tm+mt
-source-wordcount: '995'
+source-wordcount: '965'
 ht-degree: 100%
 
 ---
@@ -39,7 +39,7 @@ Os seguintes métodos de identificação são possíveis:
 
    ![](assets/s_ncs_admin_survey_preload_methods_002.png)
 
-   Os campos podem ser adicionados às propriedades do formulário por meio da guia **[!UICONTROL Parameters]** (consulte [Adicionar parâmetros](../../web/using/defining-web-forms-properties.md#adding-parameters)). Eles são colocados na URL do formulário ou nas zonas de entrada.
+   Os campos podem ser adicionados às propriedades do formulário por meio da guia **[!UICONTROL Parameters]** (consulte [Adicionar parâmetros](defining-web-forms-properties.md#adding-parameters)). Eles são colocados na URL do formulário ou nas zonas de entrada.
 
    >[!CAUTION]
    >
@@ -81,7 +81,7 @@ Há três estágios no ciclo de vida de um formulário:
 
 1. **Formulário sendo editado**
 
-   Esta é a fase de design inicial. Quando um novo formulário é criado, ele está na fase de edição. Acesse o formulário, somente para fins de teste, e exija que o parâmetro **[!UICONTROL __uuid]** seja usado no URL. Essa URL pode ser acessada na subguia **[!UICONTROL Preview]**. Consulte [Parâmetros da URL do formulário](../../web/using/defining-web-forms-properties.md#form-url-parameters).
+   Esta é a fase de design inicial. Quando um novo formulário é criado, ele está na fase de edição. Acesse o formulário, somente para fins de teste, e exija que o parâmetro **[!UICONTROL __uuid]** seja usado no URL. Essa URL pode ser acessada na subguia **[!UICONTROL Preview]**. Consulte [Parâmetros da URL do formulário](defining-web-forms-properties.md#form-url-parameters).
 
    >[!CAUTION]
    >
@@ -123,7 +123,7 @@ Para ser acessado por usuários, o formulário deve estar em produção e inicia
 
 * Clique no link **[!UICONTROL Personalize the message displayed if the form is closed...]** para definir a mensagem de erro que será exibida se o usuário tentar acessar o formulário enquanto ele não for válido.
 
-   Consulte [Acessibilidade do formulário](../../web/using/defining-web-forms-properties.md#accessibility-of-the-form).
+   Consulte [Acessibilidade do formulário](defining-web-forms-properties.md#accessibility-of-the-form).
 
 ### Delivery de um formulário por email {#delivering-a-form-via-email}
 
@@ -135,7 +135,7 @@ Ao enviar um convite por email, você pode usar a opção **[!UICONTROL Adobe Ca
 
 Nesse caso, a chave de reconciliação para o armazenamento de dados deve ser o identificador criptografado do recipient. Para obter mais informações, consulte [Pré-carregamento dos dados do formulário](#pre-loading-the-form-data).
 
-Nesse caso, você precisa verificar a opção **[!UICONTROL Update the preloaded record]** na caixa de registro. Para obter mais informações, consulte [Salvar respostas de formulários web](../../web/using/web-forms-answers.md#saving-web-forms-answers).
+Nesse caso, você precisa verificar a opção **[!UICONTROL Update the preloaded record]** na caixa de registro. Para obter mais informações, consulte [Salvar respostas de formulários web](web-forms-answers.md#saving-web-forms-answers).
 
 ![](assets/s_ncs_admin_survey_save_box_option.png)
 
@@ -154,7 +154,3 @@ Selecione um recipient e clique no botão **[!UICONTROL Detail...]** para exibir
 ![](assets/s_ncs_admin_survey_trace_edit.png)
 
 Você pode processar os logs de resposta fornecidos em queries, por exemplo, para direcionar somente aqueles que não responderam ao enviar lembretes ou oferecer comunicações específicas apenas aos que responderam.
-
->[!NOTE]
->
->Para obter um rastreamento completo das respostas fornecidas, exporte as respostas e exiba ou crie relatórios dedicados, use o módulo opcional de **Pesquisa.** Para obter mais informações, consulte [esta seção](../../web/using/about-surveys.md).
