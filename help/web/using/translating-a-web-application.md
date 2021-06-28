@@ -6,7 +6,7 @@ audience: web
 content-type: reference
 topic-tags: web-applications
 exl-id: 82c5c610-8161-4686-aa79-1b690e763765
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 360fd1ed8970c17c0687eaca0a4c1960d6f5838c
 workflow-type: tm+mt
 source-wordcount: '363'
 ht-degree: 100%
@@ -21,7 +21,7 @@ Se você selecionar pelo menos um idioma adicional pela guia **[!UICONTROL Local
 
 Essa opção permite indicar se o conteúdo do bloco deve ser traduzido ou não.
 
-As cadeias de caracteres a serem traduzidas são coletadas da mesma forma que as outras cadeias de caracteres da aplicação web, através da guia **[!UICONTROL Translations]** da aplicação. Para obter mais informações, consulte [esta página](../../web/using/translating-a-web-form.md).
+As cadeias de caracteres a serem traduzidas são coletadas da mesma forma que as outras cadeias de caracteres da aplicação web, através da guia **[!UICONTROL Translations]** da aplicação. Para obter mais informações, consulte [esta página](translating-a-web-form.md).
 
 Para sinalizar as cadeias de caracteres a ser traduzidas:
 
