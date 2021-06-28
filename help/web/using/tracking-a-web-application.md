@@ -6,16 +6,16 @@ audience: web
 content-type: reference
 topic-tags: web-applications
 exl-id: 07bd36ce-c701-4998-974f-81fd4fac22a0
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: c7068c172c35e067d2dbed9233ec3b84633603fd
 workflow-type: tm+mt
-source-wordcount: '411'
-ht-degree: 100%
+source-wordcount: '397'
+ht-degree: 91%
 
 ---
 
 # Rastrear visitas em um aplicativo web{#tracking-a-web-application}
 
-O Adobe Campaign permite rastrear e medir visitas em páginas de aplicativos web inserindo tags de rastreamento. Essa funcionalidade pode ser usada para todos os tipos de aplicações web (formulários, pesquisas online, páginas da Web criadas usando o DCE, etc.).
+O Adobe Campaign permite rastrear e medir visitas em páginas de aplicativos web inserindo tags de rastreamento. Essa funcionalidade pode ser usada para todos os tipos de aplicações web (formulários, páginas da Web, etc.).
 
 Assim, você pode definir vários caminhos de navegação e avaliar seu sucesso. Os dados recuperados estão disponíveis nos relatórios de cada aplicativo.
 
@@ -55,13 +55,11 @@ Para identificar a fonte de tráfego em uma aplicação web, o Adobe Campaign pr
 
 >[!NOTE]
 >
->Lembre-se de que o tracking anônimo só é possível se a opção correspondente tiver sido ativada no assistente de implantação.
->
->Para obter mais informações, consulte o [Guia de instalação](../../installation/using/deploying-an-instance.md).
+>O rastreamento anônimo só estará disponível se a opção tiver sido ativada no assistente de implantação ao instalar o Campaign.
 
 ## Aplicações web criadas com o Editor de conteúdo digital (DCE) {#web-applications-designed-with-digital-content-editor--dce-}
 
-Quando um aplicativo web é criado usando o editor de conteúdo HTML, o **Digital Content Editor (DCE)**, tags de rastreamento são inseridas a partir da guia **[!UICONTROL Properties]** do editor. Para obter mais informações sobre o Editor de conteúdo digital (DCE), consulte [esta seção](../../web/using/about-campaign-html-editor.md).
+Quando um aplicativo web é criado usando o editor de conteúdo HTML, o **Digital Content Editor (DCE)**, tags de rastreamento são inseridas a partir da guia **[!UICONTROL Properties]** do editor. Para obter mais informações sobre o Editor de conteúdo digital (DCE), consulte [esta seção](about-campaign-html-editor.md).
 
 ![](assets/trackers_2.png)
 
