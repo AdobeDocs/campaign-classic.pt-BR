@@ -6,9 +6,9 @@ audience: configuration
 content-type: reference
 topic-tags: setting-up-web-tracking
 exl-id: f251eb21-0f3c-4b46-927a-57a3291e705f
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: ee3d643e4ba607b3d7ca816eabf862b867d1f3f4
 workflow-type: tm+mt
-source-wordcount: '209'
+source-wordcount: '207'
 ht-degree: 6%
 
 ---
@@ -29,6 +29,6 @@ Para ativar o rastreamento Web anônimo em sua instância, os seguintes elemento
 
    ![](assets/webtracking_anonymous_set.png)
 
-* Os formulários web e as pesquisas devem ser publicados e executados no servidor de rastreamento. A opção correspondente deve ser selecionada no assistente de implantação.
+* Os formulários web devem ser publicados e executados no servidor de rastreamento. A opção correspondente deve ser selecionada no assistente de implantação.
 
    ![](assets/webtracking_publication_set_for_webapps.png)
