@@ -6,7 +6,7 @@ audience: campaign
 content-type: reference
 topic-tags: orchestrate-campaigns
 exl-id: c2b523ac-e900-4db8-85b0-dafc6ddb3eca
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 690f7c4e62203127da7a7055afa0ee8ad4a2bce4
 workflow-type: tm+mt
 source-wordcount: '245'
 ht-degree: 100%
@@ -27,7 +27,7 @@ Para cada campanha, a guia **[!UICONTROL Tracking]** permite visualizar todas as
 
    ![](assets/s_ncs_user_op_edit_exe_tab_b.png)
 
-* A subguia **[!UICONTROL Tasks]** agrupa todas as tarefas vinculadas à campanha. Essa visualização permite que você as edite ou exclua. As tarefas estão disponíveis com o aplicativo MRM. Eles são detalhados [nesta seção](../../campaign/using/creating-and-managing-tasks.md).
+* A subguia **[!UICONTROL Tasks]** agrupa todas as tarefas vinculadas à campanha. Essa visualização permite que você as edite ou exclua. As tarefas estão disponíveis com o aplicativo MRM. Eles são detalhados [nesta seção](../../mrm/using/creating-and-managing-tasks.md).
 
    ![](assets/s_ncs_user_op_edit_exe_tab_e.png)
 
