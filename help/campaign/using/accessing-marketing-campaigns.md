@@ -6,10 +6,10 @@ audience: campaign
 content-type: reference
 topic-tags: about-marketing-campaigns
 exl-id: 1278bda1-f83c-4d38-8042-e6611755cf36
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: ee3d643e4ba607b3d7ca816eabf862b867d1f3f4
 workflow-type: tm+mt
-source-wordcount: '1045'
-ht-degree: 100%
+source-wordcount: '1046'
+ht-degree: 99%
 
 ---
 
@@ -19,7 +19,7 @@ O Adobe Campaign permite criar, configurar, executar e analisar campanhas de mar
 
 ## Noções básicas da área de trabalho {#workspace-basics}
 
-### Home page {#home-page}
+### Página inicial {#home-page}
 
 Depois de se conectar ao Adobe Campaign, você verá a home page.
 
@@ -34,7 +34,7 @@ O bloco **[!UICONTROL Browsing]** da guia **[!UICONTROL Campaigns]** oferece vá
 * **Calendário da campanha**: calendário de planos, programas de marketing, remessas e campanhas. Consulte [Calendário da campanha](#campaign-calendar).
 * **Campanhas**: acesso às campanhas contidas em todos os programas de marketing.
 * **Remessas**: acesso às remessas vinculadas às campanhas.
-* **Aplicativos de internet**: acesso a aplicativos de internet (formulários, pesquisas, etc.).
+* **Aplicações** Web: acesso a aplicações web (formulários, landing pages, etc.).
 
 >[!NOTE]
 >
@@ -125,7 +125,7 @@ Uma campanha centraliza um conjunto de fornecimentos. Para cada campanha, o agen
 
 Para cada campanha, os operadores podem trocar mensagens por meio de um fórum dedicado.
 
-Para obter mais informações, consulte os [Fóruns de discussão](../../campaign/using/discussion-forums.md).
+Para obter mais informações, consulte os [Fóruns de discussão](../../mrm/using/discussion-forums.md).
 
 #### Relatórios {#reports}
 
