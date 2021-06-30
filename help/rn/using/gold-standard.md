@@ -8,8 +8,8 @@ level: Beginner
 exl-id: 9e3a11b1-3070-4d90-91d5-7c559bdd500e
 source-git-commit: c0a3d9217696f5f5622a6af8f64c62b1a9fbce20
 workflow-type: tm+mt
-source-wordcount: '1060'
-ht-degree: 99%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -44,12 +44,12 @@ _22 de dezembro de 2020_
 >[!CAUTION]
 >
 > * Esta versão é fornecida com um novo protocolo de conexão: se você estiver se conectando ao Campaign pelo Serviço de identidade da Adobe (IMS), a atualização será obrigatória para o servidor do Campaign e o console do cliente poderem se conectar ao Campaign após **30 de junho de 2021**. [Saiba mais](../../technotes/ims-updates.md)
-> * Esta versão vem com uma [correção de segurança](https://helpx.adobe.com/security/products/campaign/apsb21-04.html): a atualização é obrigatória para reforçar a segurança do ambiente.
+> * Esta versão vem com uma [correção de segurança](https://helpx.adobe.com/br/security/products/campaign/apsb21-04.html): a atualização é obrigatória para reforçar a segurança do ambiente.
 > * Se você estiver usando a integração dos acionadores da Experience Cloud por meio da autenticação oAuth, será necessário migrar para o Adobe I/O conforme descrito [nesta página](../../integrations/using/configuring-adobe-io.md). O modo de autenticação oAuth herdado com o Campaign será desativado em **30 de novembro de 2021**.
 
 >
 >
-Saiba mais nas perguntas [[!DNL Gold Standard] frequentes de atualização do 11](https://helpx.adobe.com/campaign/kb/gold-standard-upgrade.html).
+Saiba mais nas perguntas [[!DNL Gold Standard] frequentes de atualização do 11](https://helpx.adobe.com/br/campaign/kb/gold-standard-upgrade.html).
 
 O build 9032@d3b452f inclui os seguintes aprimoramentos e correções:
 
@@ -166,7 +166,7 @@ A build 9032@cee805c inclui as seguintes correções:
 * Correção de um problema ao usar o Conector CRM para Salesforce. (NEO-17712)
 * Correção de um problema de índice que causava problemas de desempenho ao enviar mensagens transacionais.
 
-## ![](assets/do-not-localize/red_2.png) Versão 19.1.4 – Compilação 9032{#release-19-1-4-build-9032}
+## ![](assets/do-not-localize/red_2.png) Versão 19.1.4 – Build 9032{#release-19-1-4-build-9032}
 
 _13 de agosto de 2019_
 
