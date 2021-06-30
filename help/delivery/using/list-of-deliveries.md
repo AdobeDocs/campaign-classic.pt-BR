@@ -8,12 +8,12 @@ topic-tags: monitoring-deliveries
 exl-id: 6c0fd76f-3d79-4b69-b911-f8d99dd18c4b
 source-git-commit: a129f49d4f045433899fd7fdbd057fb16d0ed36a
 workflow-type: tm+mt
-source-wordcount: '160'
-ht-degree: 100%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
-# Acesso à lista de deliveries {#list-of-deliveries}
+# Acesso à lista de entregas {#list-of-deliveries}
 
 Você pode acessar deliveries a partir da lista de delivery, por meio do nó **[!UICONTROL Campaign Management > Deliveries]** da árvore.
 
@@ -32,4 +32,4 @@ Por padrão, a lista de deliveries contém os nomes e os status dos deliveries c
 **Tópicos relacionados:**
 
 * [Painel de entrega](delivery-dashboard.md)
-* [Status da entrega](delivery-statuses.md)
+* [Status de entrega](delivery-statuses.md)
