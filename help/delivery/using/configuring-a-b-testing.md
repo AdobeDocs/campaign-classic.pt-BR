@@ -8,12 +8,12 @@ topic-tags: a-b-testing
 exl-id: 6adf2e75-63b1-44ad-8925-03beb3bc0bdd
 source-git-commit: a129f49d4f045433899fd7fdbd057fb16d0ed36a
 workflow-type: tm+mt
-source-wordcount: '212'
-ht-degree: 100%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
-# Configuração de teste A/B {#configuring-a-b-testing}
+# Configuração de teste AB {#configuring-a-b-testing}
 
 Esta seção detalha como criar um fluxo de trabalho para executar um teste A/B.
 
