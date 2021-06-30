@@ -7,7 +7,7 @@ content-type: reference
 topic-tags: starting-with-adobe-campaign
 exl-id: ce2c90cd-46d9-4365-8013-5c1273b6c176
 source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '797'
 ht-degree: 100%
 
@@ -21,10 +21,10 @@ Estas são algumas das perguntas frequentes sobre privacidade e consentimento ao
 
 ### Quais são os termos principais sobre Privacidade?
 
-Os itens listados abaixo vinculam-se aos principais termos e conceitos relacionados à Privacidade e Consentimento no Adobe Campaign:
+Os itens listados abaixo vinculam-se aos principais termos e conceitos relacionados à Privacidade e ao Consentimento no Adobe Campaign:
 
 * [Regras sobre a gestão da privacidade](../../platform/using/privacy-management.md#privacy-management-regulations)
-* [Dados pessoais e Personalidades](../../platform/using/privacy-and-recommendations.md#personal-data)
+* [Dados pessoais e Personas](../../platform/using/privacy-and-recommendations.md#personal-data)
 * [Direito de acesso e Direito ao esquecimento](../../platform/using/privacy-management.md#right-access-forgotten)
 * [Consentimento, retenção e funções](../../platform/using/privacy-management.md#consent-retention-roles)
 
