@@ -7,16 +7,16 @@ content-type: reference
 topic-tags: event-activities
 exl-id: 8025d207-3bc0-400f-b6a4-a72765e5a9d2
 source-git-commit: 8c47027099559549320abf68016386cc85dcda5a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '549'
-ht-degree: 84%
+ht-degree: 100%
 
 ---
 
 # Transferência de arquivos{#file-transfer}
 
-A atividade de **transferência de arquivos** permite receber ou enviar arquivos, testar a presença de arquivos ou listar arquivos em um servidor. O protocolo usado é o Armazenamento Azure Blob, o Serviço de Armazenamento Simples da Amazon (S3), FTP ou SFTP.
-Com o S3, o Armazenamento Azure Blob ou a conexão SFTP, você também pode importar dados de segmento para o Adobe Campaign com a plataforma de dados do cliente em tempo real do Adobe. Para obter mais informações, consulte esta [documentação](https://experienceleague.adobe.com/docs/experience-platform/destinations/catalog/email-marketing/adobe-campaign.html?lang=pt-BR).
+A atividade de **transferência de arquivos** permite receber ou enviar arquivos, testar a presença de arquivos ou listar arquivos em um servidor. O protocolo usado é Azure Blob Storage, Amazon Simple Storage Service (S3), FTP ou SFTP.
+Com S3, Azure Blob Storage ou conexão SFTP, você também pode importar dados de segmento para o Adobe Campaign com uma plataforma de dados do cliente em tempo real. Para obter mais informações, consulte esta [documentação](https://experienceleague.adobe.com/docs/experience-platform/destinations/catalog/email-marketing/adobe-campaign.html?lang=pt-BR).
 
 >[!NOTE]
 >
@@ -36,7 +36,7 @@ A configuração depende da ação selecionada.
 
    ![](assets/file_transfert_edit.png)
 
-   Marque **[!UICONTROL Use an external account]** para selecionar uma conta das contas do armazenamento do Azure Blob, S3, FTP ou SFTP configuradas no nó **[!UICONTROL Administration > Platform > External accounts]** da árvore. Em seguida, especifique qual diretório no servidor contém o(s) arquivo(s) a ser(em) baixado(s).
+   Marque **[!UICONTROL Use an external account]** para selecionar uma conta do Azure Blob Storage, S3, FTP ou SFTP configurada no nó **[!UICONTROL Administration > Platform > External accounts]** da árvore. Em seguida, especifique qual diretório no servidor contém o(s) arquivo(s) a ser(em) baixado(s).
 
    ![](assets/file_transfert_edit_external.png)
 
@@ -87,7 +87,7 @@ O link **[!UICONTROL Advanced parameters...]** permite acessar as seguintes opç
 
 * **[!UICONTROL Display the session logs]**
 
-   Permite recuperar os logs do armazenamento do Azure Blob, transferência S3, FTP ou SFTP e incluí-los nos logs do workflow.
+   Permite recuperar os logs do armazenamento de Blob do Azure, transferência S3, FTP ou SFTP e incluí-los nos logs de fluxo de trabalho.
 
 * **[!UICONTROL Disable passive mode]**
 
