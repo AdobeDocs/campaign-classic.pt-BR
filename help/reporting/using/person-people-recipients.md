@@ -7,7 +7,7 @@ content-type: reference
 topic-tags: accessing-built-in-reports
 exl-id: 69b810f3-aa8b-4ab5-95c1-831257d7fcb9
 source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '701'
 ht-degree: 100%
 
@@ -149,7 +149,7 @@ As aberturas e os 4 cliques realizados pelo Henry aparecem nos seguintes logs:
 
 ## Resumo {#summary}
 
-No nível do delivery, temos os seguintes resultados:
+No nível da entrega, temos os seguintes resultados:
 
 ![](assets/s_ncs_user_indicators_example.png)
 
