@@ -7,7 +7,7 @@ content-type: reference
 topic-tags: designing-reports-with-cubes
 exl-id: 5f22fa2c-b648-4126-9a24-1798adfa8f34
 source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1491'
 ht-degree: 100%
 
@@ -94,7 +94,7 @@ Também é possível gerar compartimentos automaticamente. Para fazer isso, cliq
 
 Nesse caso, o filtro selecionado no schema de fatos é ignorado.
 
-### Listas discriminadas {#enumerations}
+### Enumerações {#enumerations}
 
 Para melhorar a relevância e a legibilidade de um relatório, o Adobe Campaign permite criar enumerações específicas para reagrupar diferentes valores no mesmo compartimento. Essas enumerações, reservadas para compartimentalização, são referenciadas nos cubos e exibidas nos relatórios.
 
