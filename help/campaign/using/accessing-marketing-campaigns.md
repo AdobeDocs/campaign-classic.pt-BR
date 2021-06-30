@@ -115,7 +115,7 @@ Com o Adobe Campaign você pode configurar processos colaborativos para a criaç
 >
 >A configuração dos modelos de campanha é apresentada em [Campaign templates](../../campaign/using/marketing-campaign-templates.md#campaign-templates).
 
-#### Agendar {#schedule}
+#### Programação {#schedule}
 
 Uma campanha centraliza um conjunto de fornecimentos. Para cada campanha, o agendamento oferece uma visão global de todos os componentes: permite exibir as tarefas e remessas e acessá-las facilmente.
 
