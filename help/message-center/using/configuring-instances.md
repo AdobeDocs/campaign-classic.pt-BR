@@ -7,24 +7,24 @@ content-type: reference
 topic-tags: instance-configuration
 exl-id: 23a384d1-27ce-46c2-98c3-0fb60a5c50ee
 source-git-commit: e86350cf12db37e3f2c227563057b97922601729
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1222'
-ht-degree: 53%
+ht-degree: 100%
 
 ---
 
 
 # Configurar instâncias {#creating-a-shared-connection}
 
-Para usar os recursos de mensagens transacionais, é necessário configurar as instâncias de controle e de execução. Você pode usar:
-* [Uma ](#control-instance) instância de controle associada a uma ou várias instâncias de execução
-* [Várias ](#using-several-control-instances) instâncias de controle associadas a várias instâncias de execução
+Para usar os recursos de mensagens transacionais, é necessário configurar as instâncias de controle e de execução. É possível usar:
+* [Uma instância de controle](#control-instance) associada a uma ou várias instâncias de execução
+* [Várias instâncias de controle](#using-several-control-instances) associadas a várias instâncias de execução
 
 >[!IMPORTANT]
 >
->As extensões de schema afetaram os recursos usados pelos [workflows técnicos do Centro de Mensagens](../../message-center/using/additional-configurations.md#technical-workflows) em instâncias de controle ou de execução precisam ser duplicadas nas outras instâncias usadas pelo módulo de mensagens transacionais.
+>Extensões de esquema afetaram os recursos usados por [workflows técnicos do Centro de mensagens](../../message-center/using/additional-configurations.md#technical-workflows) nas instâncias de controle ou de execução que precisam ser duplicadas nas outras instâncias usadas pelo módulo de mensagens transacionais.
 
-Você também precisa especificar e conectar as instâncias de execução à(s) instância(s) de controle.
+Você também precisa especificar e conectar as instâncias de execução às instâncias de controle.
 
 Todas as etapas necessárias para configurar e conectar as instâncias de controle e de execução são descritas nesta seção.
 
@@ -32,11 +32,11 @@ Todas as etapas necessárias para configurar e conectar as instâncias de contro
 >
 >A instância de controle e a instância de execução devem ser instaladas em máquinas diferentes. Elas não podem compartilhar a mesma instância do Campaign.
 
-## Configure a instância de controle {#control-instance}
+## Configurar a instância de controle {#control-instance}
 
-Para conectar a instância de controle e as instâncias de execução, primeiro é necessário criar e configurar uma conta externa do tipo **[!UICONTROL Execution instance]** **na instância de controle**. Portanto, uma vez [publicado](../../message-center/using/publishing-message-templates.md#template-publication), os templates de mensagem transacional podem ser implantados nas instâncias de execução.
+Para conectar a instância de controle e as instâncias de execução, você primeiro precisa criar e configurar um **[!UICONTROL Execution instance]** tipo de conta externa **na instância de controle**. Portanto, uma vez [publicado](../../message-center/using/publishing-message-templates.md#template-publication), os modelos de mensagem transacional podem ser implantados nas instâncias de execução.
 
-Se estiver usando várias instâncias de execução, será necessário criar quantas contas externas houver instâncias de execução.
+Se você estiver usando várias instâncias de execução, será necessário criar quantas contas externas houver de instâncias de execução.
 
 >[!NOTE]
 >
@@ -75,9 +75,9 @@ Para criar uma conta externa do tipo **[!UICONTROL Execution instance]**, apliqu
 
    >[!NOTE]
    >
-   >Para evitar digitar a senha sempre que fizer logon na instância, especifique o endereço IP da instância de controle na instância de execução Para obter mais informações, consulte [Configurar a(s) instância(s) de execução](#execution-instance).
+   >Para evitar digitar a senha sempre que fizer logon na instância, especifique o endereço IP da instância de controle na instância de execução Para obter mais informações, consulte [Configurar as instâncias de execução](#execution-instance).
 
-1. Especifique o método de recuperação a ser usado pela instância de execução. Os dados a serem recuperados são encaminhados à instância de controle pela instância de execução para adicionar a uma mensagem transacional e a arquivamentos de eventos.
+1. Especifique o método de recuperação que será usado pela instância de execução. Os dados a serem recuperados são encaminhados à instância de controle pela instância de execução para adicionar a uma mensagem transacional e a arquivamentos de eventos.
 
    ![](assets/messagecenter_create_extaccount_007.png)
 
@@ -97,7 +97,7 @@ Para criar uma conta externa do tipo **[!UICONTROL Execution instance]**, apliqu
 
    ![](assets/messagecenter_create_extaccount_006.png)
 
-Ao usar várias instâncias de execução, repita essas etapas para criar quantas contas externas houver instâncias de execução.
+Ao usar várias instâncias de execução, repita essas etapas para criar quantas contas externas houver de instâncias de execução.
 
 ### Identificar instâncias de execução {#identifying-execution-instances}
 
@@ -106,22 +106,22 @@ Cada instância de execução deve ser associada a um identificador exclusivo pa
 Esse identificador pode ser atribuído a cada instância de execução **manualmente**. Nesse caso, essa etapa deve ser executada **em cada instância de execução**. Para fazer isso, use o assistente de implantação conforme detalhado abaixo:
 
 1. Abra o assistente de implantação em uma instância de execução.
-1. Vá para a janela **[!UICONTROL Message Center]**.
+1. Acesse a janela do **[!UICONTROL Message Center]**.
 1. Atribua o identificador escolhido à instância.
 
    ![](assets/messagecenter_id_execinstance_001.png)
 
 1. Repita as etapas acima em cada instância de execução.
 
-O identificador também pode ser **automaticamente** atribuído. Para fazer isso, vá para a **control instance** e clique no botão **[!UICONTROL Initialize connection]**.
+O identificador também pode ser **automaticamente** atribuído. Para fazer isso, vá para a **instância de controle** e clique no botão **[!UICONTROL Initialize connection]**.
 
 ![](assets/messagecenter_create_extaccount_006bis.png)
 
-## Configure a(s) instância(s) de execução {#execution-instance}
+## Configurar as instâncias de execução {#execution-instance}
 
 >[!NOTE]
 >
->As etapas abaixo devem ser executadas **na(s) instância(s) de execução**.
+>As etapas abaixo devem ser executadas **nas instâncias de execução**.
 
 Para conectar as instâncias de execução à instância de controle, siga as etapas abaixo.
 
@@ -133,7 +133,7 @@ Para usar uma senha vazia, vá para as instâncias de execução e defina uma zo
 >
 >Quando as instâncias de execução são usadas por várias instâncias de controle, os dados podem ser divididos por pasta e por operador. Para obter mais informações, consulte [Usar várias instâncias de controle](#using-several-control-instances).
 
-1. Em uma instância de execução, vá para a pasta do operador ( **[!UICONTROL Administration > Access management > Operators]** ).
+1. Em uma instância de execução, acesse a pasta do operador ( **[!UICONTROL Administration > Access management > Operators]** ).
 1. Selecione o agente **Message Center**.
 
    ![](assets/messagecenter_operator_001.png)
@@ -148,11 +148,11 @@ Para usar uma senha vazia, vá para as instâncias de execução e defina uma zo
 
 Ao usar várias instâncias de execução, repita essas etapas para cada instância de execução.
 
-## Use várias instâncias de controle {#using-several-control-instances}
+## Usar várias instâncias de controle {#using-several-control-instances}
 
 Você pode compartilhar um cluster de execução com várias instâncias de controle. Esse tipo de arquitetura requer a seguinte configuração.
 
-Por exemplo, imagine que sua empresa gerencie duas marcas, cada uma com sua própria instância de controle: **Controlo 1** e **Controlo 2**. Duas instâncias de execução também são usadas. É necessário inserir um operador diferente do Centro de Mensagens para cada instância de controle: um operador **mc1** para a instância de **Controle 1** e um operador **mc2** para a instância de **Controle 2** .
+Por exemplo, imagine que sua empresa gerencia duas marcas, cada uma com sua própria instância de controle: **Controe 1** e **Controle 2**. Duas instâncias de execução também são usadas. É necessário inserir um operador diferente do Centro de Mensagens para cada instância de controle: um operador **mc1** para a instância de **Controle 1** e um operador **mc2** para a instância de **Controle 2** .
 
 Na árvore de todas as instâncias de execução, crie uma pasta por operador (**Pasta 1** e **Pasta 2**) e restrinja os dados de cada operador à sua pasta.
 
@@ -162,11 +162,11 @@ Na árvore de todas as instâncias de execução, crie uma pasta por operador (*
 >
 >As etapas abaixo devem ser executadas **nas instâncias de controle**.
 
-1. Na instância de controle **Control 1**, crie uma conta externa por instância de execução e insira o operador **mc1** em cada conta externa. O operador **mc1** será criado em todas as instâncias de execução (consulte [Configurar instâncias de execução](#configuring-execution-instances)).
+1. Na instância de controle **Controle 1**, crie uma conta externa por instância de execução e insira o operador **mc1** em cada conta externa. O operador **mc1** será posteriormente criado em todas as instâncias de execução (consulte [Configurar instâncias de execução](#configuring-execution-instances)).
 
    ![](assets/messagecenter_multi_control_1.png)
 
-1. Na instância de controle **Control 2**, crie uma conta externa por instância de execução e insira o operador **mc2** em cada conta externa. O operador **mc2** será criado em todas as instâncias de execução (consulte [Configurar instâncias de execução](#configuring-execution-instances)).
+1. Na instância de controle **Controle 2**, crie uma conta externa por instância de execução e insira o operador **mc2** em cada conta externa. O operador **mc2** será posteriormente criado em todas as instâncias de execução (consulte [Configurar instâncias de execução](#configuring-execution-instances)).
 
    ![](assets/messagecenter_multi_control_2.png)
 
