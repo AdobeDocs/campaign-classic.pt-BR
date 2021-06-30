@@ -27,7 +27,7 @@ Há três modos de inserção possíveis:
 
    Para fazer isso, clique no botão **[!UICONTROL Add]** e defina o conteúdo dos campos de endereço. Repita para cada endereço.
 
-1. Importação de templates de endereços e adaptando-os de acordo com suas necessidades.
+1. Importe modelos de endereços e adapte-os de acordo com suas necessidades.
 
    Para fazer isso, clique no link **[!UICONTROL Import seed templates...]** e selecione a pasta que contém os templates de endereço. Para obter mais informações, consulte [esta seção](creating-seed-addresses.md#creating-seed-address-templates).
 
