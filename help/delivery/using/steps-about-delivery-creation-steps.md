@@ -8,8 +8,8 @@ topic-tags: about-deliveries-and-channels
 exl-id: 0188c3fe-8176-4904-8505-c47a72c20fcc
 source-git-commit: a129f49d4f045433899fd7fdbd057fb16d0ed36a
 workflow-type: tm+mt
-source-wordcount: '132'
-ht-degree: 100%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -22,9 +22,9 @@ As principais etapas ao criar um delivery são as seguintes:
 1. **Defina o conteúdo do delivery**. A definição de conteúdo do delivery é específico para cada canal. Para obter mais informações, consulte a seção dedicada:
 
    * [Canal de email](defining-the-email-content.md)
-   * [Canal SMS](sms-create.md#defining-the-sms-content)
-   * [Sobre o canal de correspondência direta](defining-the-direct-mail-content.md)
-   * [Canal de Aplicativo para Dispositivos Móveis](about-mobile-app-channel.md)
+   * [Canal de SMS](sms-create.md#defining-the-sms-content)
+   * [Canal de correspondência direta](defining-the-direct-mail-content.md)
+   * [Canal de aplicativo para dispositivos móveis](about-mobile-app-channel.md)
 
 1. **Definição da população do target** [Leia mais](steps-defining-the-target-population.md)
 
