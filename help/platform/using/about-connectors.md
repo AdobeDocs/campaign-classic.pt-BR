@@ -7,9 +7,9 @@ role: Business Practitioner, Data Architect
 level: Beginner
 exl-id: 05080d7f-f2d6-4ffe-b112-05b26a3a8a1d
 source-git-commit: 4a41aea9edfe5e6ca0454049cbb2892449eec153
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '194'
-ht-degree: 93%
+ht-degree: 100%
 
 ---
 
@@ -21,7 +21,7 @@ Os conectores disponíveis estão listados abaixo:
 
 * O conector FDA (**Federated Data Access**) permite conectar o Campaign a um ou mais bancos de dados externos e processar as informações armazenadas neles sem afetar os dados do Campaign. [Saiba mais](../../installation/using/about-fda.md).
 * Os conectores CRM permitem trocar dados entre o Adobe Campaign e a solução CRM usando atividades dedicadas de workflow. [Saiba mais](../../platform/using/crm-connectors.md).
-* Os Conectores do Analytics permitem compartilhar dados entre o Adobe Campaign e a Adobe Analytics. [Saiba mais](../../platform/using/adobe-analytics-connector.md).
+* O Analytics Connectors permite compartilhar dados entre o Adobe Campaign e o Adobe Analytics. [Saiba mais](../../platform/using/adobe-analytics-connector.md).
 
 Você também pode integrar o Campaign com vários outros sistemas, como:
 
