@@ -8,12 +8,12 @@ topic-tags: action-activities
 exl-id: 3bb468e2-7bcf-456f-8d8f-1c4e608e2b25
 source-git-commit: 895aa2fd4fa9c7c71c0073e9be33c12d4e92c9fa
 workflow-type: tm+mt
-source-wordcount: '284'
-ht-degree: 81%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
-# Deliveries entre canais{#cross-channel-deliveries}
+# Entregas entre canais{#cross-channel-deliveries}
 
 Os cross-channel estão disponíveis na **[!UICONTROL Deliveries]** guia de atividades do workflow da campanha.
 
