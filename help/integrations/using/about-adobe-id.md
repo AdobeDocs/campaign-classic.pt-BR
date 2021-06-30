@@ -8,8 +8,8 @@ topic-tags: connecting-via-an-adobe-id
 exl-id: 8dad8fa9-674c-433c-af30-8c6d0aadf525
 source-git-commit: 883ac681e0bf0e4ccf916c745924b7340a4d22f9
 workflow-type: tm+mt
-source-wordcount: '194'
-ht-degree: 97%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
