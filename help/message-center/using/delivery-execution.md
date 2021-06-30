@@ -1,19 +1,19 @@
 ---
 product: campaign
 title: Execução da entrega
-description: Saiba mais sobre a execução e o monitoramento do delivery de mensagens transacionais.
+description: Saiba mais sobre a execução e o monitoramento da entrega de mensagens transacionais.
 audience: message-center
 content-type: reference
 topic-tags: event-processing
 exl-id: 930c6395-0c00-40ee-a925-3e0cae67c55f
 source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '233'
-ht-degree: 85%
+ht-degree: 100%
 
 ---
 
-# Execução do delivery {#delivery-execution}
+# Execução da entrega {#delivery-execution}
 
 ## Envio de mensagem transacional {#transactional-message-send}
 
@@ -37,7 +37,7 @@ Por padrão, eles são classificados em subpastas por mês de delivery. Essa cla
 
 ## Monitoramento de mensagens transacionais {#transactional-message-monitoring}
 
-Para monitorar suas mensagens transacionais, marque os [logs do delivery](../../delivery/using/delivery-dashboard.md#delivery-logs-and-history).
+Para monitorar as mensagens transacionais, verifique os [logs do delivery](../../delivery/using/delivery-dashboard.md#delivery-logs-and-history).
 
 Os deliveries transacionais enviados da instância de execução são sincronizados de volta à instância de controle por meio de um fluxo de trabalho técnico (**[!UICONTROL Message Center execution instance]**) que é executado a cada hora.
 
@@ -72,4 +72,4 @@ To summarize, the deliveries weekly accumulate the events based on the latest ev
 
 Therefore, when extracting transactional messaging delivery logs from the control instance, the delivery ID associated with each delivery log ID changes every week.-->
 
-Para monitorar a atividade e a execução da(s) instância(s) de execução, consulte [Transactional messaging reports](../../message-center/using/about-transactional-messaging-reports.md).
+Para monitorar a atividade e a execução da(s) instância(s) de execução, consulte [Relatórios de mensagens transacionais](../../message-center/using/about-transactional-messaging-reports.md).
