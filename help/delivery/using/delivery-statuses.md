@@ -13,7 +13,7 @@ ht-degree: 100%
 
 ---
 
-# Status da entrega {#delivery-statuses}
+# Status de entrega {#delivery-statuses}
 
 <!--ajouter intro 
 
@@ -138,4 +138,4 @@ Se o delivery não estiver sendo enviado e o status permanecer **[!UICONTROL Pen
 
 * [Histórico e logs do delivery](#delivery-logs-and-history)
 * [Noções básicas sobre falhas de entrega](understanding-delivery-failures.md)
-* [Tipos e motivos de falha de delivery](understanding-delivery-failures.md#delivery-failure-types-and-reasons)
+* [Tipos e motivos de falha de entrega](understanding-delivery-failures.md#delivery-failure-types-and-reasons)
