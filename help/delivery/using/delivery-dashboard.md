@@ -8,8 +8,8 @@ topic-tags: monitoring-deliveries
 exl-id: 44ecc8c6-6584-43eb-96b4-7d8463053123
 source-git-commit: a129f49d4f045433899fd7fdbd057fb16d0ed36a
 workflow-type: tm+mt
-source-wordcount: '1173'
-ht-degree: 100%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -21,7 +21,7 @@ Ele permite recuperar informações sobre um delivery e editá-las, se necessár
 
 Estas são as informações que você pode monitorar usando as várias guias disponíveis no painel:
 
-* [Resumo da entrega](#delivery-summary)
+* [Resumo de delivery](#delivery-summary)
 * [Relatórios do delivery](#delivery-reports)
 * [Logs do delivery, mirror pages, exclusões](#delivery-logs-and-history)
 * [Histórico e logs de rastreamento do delivery](#tracking-logs)
@@ -32,12 +32,12 @@ Estas são as informações que você pode monitorar usando as várias guias dis
 
 **Tópicos relacionados:**
 
-* [Noções básicas sobre falhas de entrega](understanding-delivery-failures.md)
+* [Noções básicas sobre falhas de delivery](understanding-delivery-failures.md)
 * [Noções básicas sobre gestão de quarentena](understanding-quarantine-management.md)
 * [Práticas recomendadas de delivery](delivery-best-practices.md)
-* [Gerenciamento da capacidade de entrega](about-deliverability.md)
+* [Gerenciamento da capacidade de delivery](about-deliverability.md)
 
-## Resumo da entrega {#delivery-summary}
+## Resumo de delivery {#delivery-summary}
 
 A guia **[!UICONTROL Summary]** contém as características do delivery: status do delivery, canal usado, informações sobre o remetente, assunto, informações relacionadas à execução.
 
