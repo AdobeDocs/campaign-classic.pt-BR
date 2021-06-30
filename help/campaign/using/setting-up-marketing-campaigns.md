@@ -7,7 +7,7 @@ content-type: reference
 topic-tags: orchestrate-campaigns
 exl-id: a8fce21f-ffe3-4819-87ca-ac0ad9f21e41
 source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1253'
 ht-degree: 100%
 
@@ -219,7 +219,7 @@ Uma campanha periódica é uma campanha baseada em um template específico que p
 
 Cada campanha periódica contém os mesmos elementos. Uma vez criado, ele é gerenciado como uma campanha padrão.
 
-## Tutoriais em vídeo {#video}
+## Tutorial em vídeo {#video}
 
 Este vídeo mostra como criar um plano de marketing, programas e campanhas.
 
