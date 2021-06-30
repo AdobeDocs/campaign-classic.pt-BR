@@ -7,7 +7,7 @@ content-type: reference
 topic-tags: targeting-activities
 exl-id: fcc51131-15d0-4d39-95cb-371d7044373b
 source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '465'
 ht-degree: 100%
 
@@ -67,7 +67,7 @@ Identifica a população a ser salva no grupo.
 
 * groupId: Identificador de grupo.
 
-## Tutoriais em vídeo {#video}
+## Tutorial em vídeo {#video}
 
 Este vídeo mostra como criar uma lista de recipients pelo Explorer.
 
