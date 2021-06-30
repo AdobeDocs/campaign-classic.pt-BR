@@ -1,27 +1,27 @@
 ---
 product: campaign
 title: Criar modelos de mensagem transacional
-description: Saiba como criar e criar um modelo de mensagem transacional no Adobe Campaign Classic.
+description: Saiba como criar um template de mensagem transacional no Adobe Campaign Classic.
 audience: message-center
 content-type: reference
 topic-tags: message-templates
 exl-id: a52bc140-072e-4f81-b6da-f1b38662bce5
 source-git-commit: e86350cf12db37e3f2c227563057b97922601729
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '498'
-ht-degree: 72%
+ht-degree: 100%
 
 ---
 
-# Criar templates de mensagem transacional {#creating-the-message-template}
+# Criar modelos de mensagem transacional {#creating-the-message-template}
 
-Para garantir que cada evento possa ser alterado em uma mensagem personalizada, você precisa criar um template de mensagem para corresponder a cada tipo de evento.
+Para garantir que cada evento possa ser alterado em uma mensagem personalizada, você precisa criar um modelo de mensagem para corresponder a cada tipo de evento.
 
 >[!IMPORTANT]
 >
 >Os tipos de evento precisam ser criados previamente. Para obter mais informações, consulte [Criar tipos de evento](../../message-center/using/creating-event-types.md).
 
-Os templates de mensagem transacional contêm as informações necessárias para personalizar a mensagem transacional. Você também pode usar templates para testar a pré-visualização da mensagem e enviar provas usando seed addresses antes de entregar ao target final. Para obter mais informações, consulte [Testar templates de mensagem transacional](../../message-center/using/testing-message-templates.md).
+Os modelos de mensagem transacional contêm as informações necessárias para personalizar a mensagem transacional. Você também pode usar modelos para testar a pré-visualização da mensagem e enviar provas usando seed addresses antes de entregar ao target final. Para obter mais informações, consulte [Testar modelos de mensagem transacional](../../message-center/using/testing-message-templates.md).
 
 ## Criar o modelo de mensagem {#creating-message-template}
 
@@ -45,15 +45,15 @@ Os templates de mensagem transacional contêm as informações necessárias para
 
    >[!IMPORTANT]
    >
-   >Um tipo de evento não pode ser vinculado a mais de um template.
+   >Um tipo de evento não pode estar vinculado a mais de um modelo.
 
-1. Insira uma natureza e uma descrição, depois clique em **[!UICONTROL Continue]** para criar o corpo da mensagem (consulte [Create the message content](#creating-message-content)).
+1. Insira uma natureza e uma descrição e clique em **[!UICONTROL Continue]** para criar o corpo da mensagem (consulte [Criar o conteúdo da mensagem](#creating-message-content)).
 
    ![](assets/messagecenter_create_model_004.png)
 
 ## Criar o conteúdo da mensagem {#creating-message-content}
 
-A definição do conteúdo da mensagem transacional é a mesma para deliveries comuns no Adobe Campaign. Por exemplo, para um delivery de email, você pode criar conteúdo em formato HTML ou texto, adicionar anexos ou personalizar o objeto do delivery. Para obter mais informações, consulte o capítulo [Delivery de email](../../delivery/using/about-email-channel.md) .
+A definição do conteúdo da mensagem transacional é a mesma para deliveries comuns no Adobe Campaign. Por exemplo, para um delivery de email, você pode criar conteúdo em formato HTML ou texto, adicionar anexos ou personalizar o objeto do delivery. Para obter mais informações, consulte o capítulo [Entrega de email](../../delivery/using/about-email-channel.md).
 
 >[!IMPORTANT]
 >
@@ -75,7 +75,7 @@ Para inserir tags de personalização no corpo de uma mensagem de email, siga as
 
 1. Insira o corpo da mensagem.
 
-1. No corpo do texto, insira a tag usando o menu **[!UICONTROL Real time events > Event XML]** .
+1. No corpo do texto, insira a tag usando o menu **[!UICONTROL Real time events > Event XML]**.
 
    ![](assets/messagecenter_create_custo_002.png)
 
