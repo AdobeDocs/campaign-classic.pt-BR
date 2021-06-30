@@ -7,7 +7,7 @@ content-type: reference
 topic-tags: advanced-parameters
 exl-id: 083be073-aad4-4c81-aff2-77f5ef3e80db
 source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1011'
 ht-degree: 100%
 
@@ -177,7 +177,7 @@ iinteractionid NUMBER(19, 0)
 
 ### MSSQL {#mssql}
 
-As queries a serem executadas são:
+As consultas que serão executadas são:
 
 ```
 SELECT * INTO NmsPropositionRcp_tmp FROM NmsPropositionRcp WHERE 1 = 0;
