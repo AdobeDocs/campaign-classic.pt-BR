@@ -8,12 +8,12 @@ topic-tags: monitoring-deliveries
 exl-id: 37b1d7fb-7ceb-4647-9aac-c8a80495c5bf
 source-git-commit: a129f49d4f045433899fd7fdbd057fb16d0ed36a
 workflow-type: tm+mt
-source-wordcount: '789'
-ht-degree: 100%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
-# Solução de problemas de envio de delivery {#delivery-troubleshooting}
+# Solução de problemas de envio de entrega {#delivery-troubleshooting}
 
 Esta seção lista problemas comuns que você pode encontrar ao enviar deliveries e como solucioná-los.
 
@@ -47,7 +47,7 @@ Se os deliveries não forem executados em uma data agendada específica, ela pod
 
 Como exemplo, se a ocorrência de mid-sourcing estiver no fuso horário de Brisbane e a instância de produção estiver no fuso horário de Darwin, os fusos horários têm meia hora de diferença um do outro e, no log de auditoria, é possível ver claramente que se o delivery estiver agendado para a produção às 11h56, o mesmo delivery agendado para mid deveria ser às 12h26, com uma diferença de meia hora.
 
-## Falha no status {#failed-status}
+## Status de falha {#failed-status}
 
 Se o status de um delivery de email for **[!UICONTROL Failed]**, ele poderá ser vinculado a um problema com blocos de personalização. Os blocos de personalização em um delivery podem gerar erros quando os schemas não correspondem ao mapeamento do delivery, por exemplo.
 
