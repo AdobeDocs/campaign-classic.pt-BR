@@ -8,8 +8,8 @@ topic-tags: deliverability-management
 exl-id: f301b34c-244c-4279-b23f-8224ea8eedbe
 source-git-commit: a129f49d4f045433899fd7fdbd057fb16d0ed36a
 workflow-type: tm+mt
-source-wordcount: '716'
-ht-degree: 100%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -57,7 +57,7 @@ O Adobe Campaign fornece várias ferramentas para acompanhar e melhorar o desemp
 
 Ao configurar, projetar e testar sua mensagem, siga as práticas recomendadas mencionadas nas seções listadas abaixo. Aproveitar todos os recursos fornecidos pelo Adobe Campaign ajuda a melhorar a capacidade de delivery.
 
-* [Práticas recomendadas de delivery](delivery-best-practices.md)
+* [Práticas recomendadas de entrega](delivery-best-practices.md)
 * [Controle de conteúdo de email](control-message-content.md)
 * [Renderização da caixa de entrada](inbox-rendering.md)
 * [Envio de uma prova](steps-validating-the-delivery.md#sending-a-proof)
@@ -80,8 +80,8 @@ Alguns provedores de acesso à Internet consideram automaticamente emails como s
 
 Para obter mais informações, consulte estas seções:
 
-* [Noções básicas sobre falhas de entrega](understanding-delivery-failures.md)
-* [Noções básicas sobre gestão de quarentena](understanding-quarantine-management.md)
+* [Compreensão de falhas de entrega](understanding-delivery-failures.md)
+* [Compreensão do gerenciamento de quarentena](understanding-quarantine-management.md)
 * [Quarentena × lista de bloqueios](understanding-quarantine-management.md#quarantine-vs-denylist)
 
 ### Usar ferramentas de monitoramento e relatórios
@@ -93,8 +93,8 @@ O Adobe Campaign permite verificar o desempenho de seus deliveries por meio de u
 Para obter mais informações, consulte estas seções:
 
 * [Monitoramento da capacidade de entrega](monitoring-deliverability.md)
-* [Sobre o monitoramento de delivery](about-delivery-monitoring.md)
-* [Sobre relatórios internos do Campaign](../../reporting/using/about-campaign-built-in-reports.md)
+* [Sobre o monitoramento de entrega](about-delivery-monitoring.md)
+* [Sobre relatórios integrados do Campaign](../../reporting/using/about-campaign-built-in-reports.md)
 
 <!--TO REMOVE
 ## Background {#background}
