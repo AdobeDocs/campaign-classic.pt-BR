@@ -7,7 +7,7 @@ content-type: reference
 topic-tags: use-cases
 exl-id: cc29eec9-9c97-4d1b-9567-2581154d7b3f
 source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1272'
 ht-degree: 100%
 
@@ -154,7 +154,7 @@ O email de notificação enviado pela atividade **[!UICONTROL Local approval]** 
 
 ### Aguardar {#wait}
 
-A atividade de espera permite adiar o início da segunda atividade de aprovação local que enviará a notificação de feedback de delivery. No campo **[!UICONTROL Duration]**, inserimos o valor **[!UICONTROL 5d]** (5 dias). As ações executadas por recipients por cinco dias após o envio do delivery serão incluídas na notificação de feedback.
+A atividade de espera permite adiar o início da segunda atividade de aprovação local que enviará a notificação de feedback de entrega. No campo **[!UICONTROL Duration]**, inserimos o valor **[!UICONTROL 5d]** (5 dias). As ações executadas por recipients por cinco dias após o envio do delivery serão incluídas na notificação de feedback.
 
 ![](assets/local_validation_workflow_3.png)
 
