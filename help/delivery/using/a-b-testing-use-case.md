@@ -29,10 +29,10 @@ As principais etapas para executar esse caso de uso são:
 
 * [Etapa 1: criar um fluxo de trabalho de direcionamento](a-b-testing-uc-targeting-workflow.md)
 * [Etapa 2: configurar amostras de população](a-b-testing-uc-population-samples.md)
-* [Etapa 3: criar dois modelos de delivery](a-b-testing-uc-delivery-templates.md)
-* [Etapa 4: configurar os deliveries no fluxo de trabalho](a-b-testing-uc-configuring-deliveries.md)
+* [Etapa 3: criar dois modelos de entrega](a-b-testing-uc-delivery-templates.md)
+* [Etapa 4: configurar as entregas no fluxo de trabalho](a-b-testing-uc-configuring-deliveries.md)
 * [Etapa 5: criar o script](a-b-testing-uc-script.md)
-* [Etapa 6: definir o delivery final](a-b-testing-uc-final-delivery.md)
+* [Etapa 6: definir a entrega final](a-b-testing-uc-final-delivery.md)
 * [Etapa 7: iniciar o fluxo de trabalho](a-b-testing-uc-start-workflow.md)
 * [Etapa 8: analisar o resultado](a-b-testing-uc-analyzing.md)
 
