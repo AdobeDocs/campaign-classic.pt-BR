@@ -7,7 +7,7 @@ content-type: reference
 topic-tags: -general-operation
 exl-id: 39c57f61-2629-4214-91e4-cb97dc039deb
 source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1609'
 ht-degree: 100%
 
@@ -147,7 +147,7 @@ O nome da atividade pode ser encontrado na guia **[!UICONTROL Advanced]**. Não 
 
 Você pode adicionar JavaScript ao inicializar uma atividade do workflow. Isso pode ser feito na guia **[!UICONTROL Advanced]** da atividade.
 
-Para facilitar a identificação do workflow, recomendamos usar traços duplos no início e no fim do rótulo da atividade da seguinte maneira: -- Meu rótulo --.
+Para facilitar a identificação do fluxo de trabalho, recomendamos usar traços duplos no início e no fim do rótulo da atividade da seguinte maneira: -- Meu rótulo --.
 
 ### Sinal {#signal}
 
