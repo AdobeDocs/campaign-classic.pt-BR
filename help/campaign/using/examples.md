@@ -7,7 +7,7 @@ content-type: reference
 topic-tags: distributed-marketing
 exl-id: 2bef6b5e-887e-4c56-bb4b-3583472ca333
 source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1296'
 ht-degree: 100%
 
@@ -15,7 +15,7 @@ ht-degree: 100%
 
 # Exemplos{#examples}
 
-## Criar uma campanha local (por formulário) {#creating-a-local-campaign--by-form-}
+## Criação de uma campanha local (por formulário) {#creating-a-local-campaign--by-form-}
 
 A interface web tipo **By form** envolve o uso de um **aplicativo web**. Dependendo da configuração, essa aplicação web pode conter qualquer tipo de elementos personalizados definidos. Por exemplo, você pode sugerir links para avaliar o target, o orçamento, o conteúdo etc. por meio de APIs dedicadas.
 
