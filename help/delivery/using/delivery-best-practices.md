@@ -7,8 +7,8 @@ topic-tags: deliveries-best-practices
 exl-id: eb5ad5a4-f640-4b26-b04f-b5567761d996
 source-git-commit: a129f49d4f045433899fd7fdbd057fb16d0ed36a
 workflow-type: tm+mt
-source-wordcount: '94'
-ht-degree: 100%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -105,6 +105,6 @@ Consulte também:
 
 * [Introdução à capacidade de entrega](about-deliverability.md)
 
-* [Etapas de criação do delivery](steps-about-delivery-creation-steps.md)
+* [Etapas de criação de entrega](steps-about-delivery-creation-steps.md)
 
 * [Lista de verificação de segurança e privacidade](https://helpx.adobe.com/br/campaign/kb/acc-security.html)
