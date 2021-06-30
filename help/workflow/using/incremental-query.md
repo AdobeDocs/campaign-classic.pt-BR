@@ -7,7 +7,7 @@ content-type: reference
 topic-tags: targeting-activities
 exl-id: abc08232-1a92-41e8-90f1-02e0a673539b
 source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '355'
 ht-degree: 100%
 
@@ -24,7 +24,7 @@ O query é definido da mesma forma que queries padrão, mas sua execução é ag
 **Tópicos relacionados:**
 
 * [Caso de uso: atualização da lista trimestral usando um query incremental](../../workflow/using/quarterly-list-update.md)
-* [Criação de query](../../workflow/using/query.md#creating-a-query)
+* [Criação de consulta](../../workflow/using/query.md#creating-a-query)
 
 >[!CAUTION]
 >
