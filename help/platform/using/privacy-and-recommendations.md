@@ -7,7 +7,7 @@ content-type: reference
 topic-tags: starting-with-adobe-campaign
 exl-id: d2451b62-bddf-4dee-8789-35aaae8348e1
 source-git-commit: 4a41aea9edfe5e6ca0454049cbb2892449eec153
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2038'
 ht-degree: 100%
 
@@ -157,7 +157,7 @@ As etapas de implementação para criar essas solicitações estão detalhadas n
 
 ### Cookies {#cookies}
 
-Graças às suas funcionalidades de rastreamento, o Adobe Campaign permite rastrear a navegação de recipients de delivery usando três tipos de cookies: um cookie de sessão e dois cookies permanentes.
+Graças às suas funcionalidades de rastreamento, o Adobe Campaign permite rastrear a navegação de recipients de entrega usando três tipos de cookies: um cookie de sessão e dois cookies permanentes.
 
 * Um cookie de **sessão**: o cookie **nlid** contém o identificador do email enviado ao contato (**broadlogId**) e ao identificador do modelo de mensagem (**deliveryId**). Ele é adicionado quando o contato clica em um URL incluído em um email enviado pelo Adobe Campaign e permite que você acompanhe seu comportamento na Web. Esse cookie de sessão é apagado automaticamente quando o navegador é fechado. O contato pode configurar o navegador para recusar cookies.
 
