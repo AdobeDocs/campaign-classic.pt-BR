@@ -6,7 +6,7 @@ audience: integrations
 content-type: reference
 exl-id: 54ee88b2-e646-4fb9-abec-957f0096f15f
 source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '563'
 ht-degree: 100%
 
@@ -21,10 +21,10 @@ Para usar essas duas soluções em conjunto, você deve configurá-las para se c
 Siga as etapas abaixo para iniciar a configuração no Adobe Campaign:
 
 1. [Instale o pacote de integração do AEM no Adobe Campaign.](#install-the-aem-integration-package-in-adobe-campaign)
-1. [Configuração da conta externa](#configure-the-external-account)
-1. [Configuração da filtragem de recursos do AEM](#configure-aem-resources-filtering)
+1. [Configurar a conta externa](#configure-the-external-account)
+1. [Configurar a filtragem de recursos do AEM](#configure-aem-resources-filtering)
 
-Para configurações avançadas como gestão de campos e blocos de personalização. Consulte a [documentação](https://helpx.adobe.com/experience-manager/6-5/sites/administering/using/campaignonpremise.html) do Adobe Experience Manager.
+Para configurações avançadas como gestão de campos e blocos de personalização. Consulte a [documentação](https://helpx.adobe.com/br/experience-manager/6-5/sites/administering/using/campaignonpremise.html) do Adobe Experience Manager.
 
 ### Instale o pacote de integração do AEM no Adobe Campaign.{#install-the-aem-integration-package-in-adobe-campaign}
 
@@ -115,16 +115,16 @@ Siga as etapas abaixo para iniciar a configuração no Adobe Experience Manager:
 
 1. Configure a **replicação** para replicar da instância de criação do AEM para a instância de publicação do AEM.
 
-   Para saber como configurar a replicação, consulte a [documentação](https://helpx.adobe.com/experience-manager/6-5/sites/deploying/using/replication.html) do Adobe Experience Manager.
+   Para saber como configurar a replicação, consulte a [documentação](https://helpx.adobe.com/br/experience-manager/6-5/sites/deploying/using/replication.html) do Adobe Experience Manager.
 
 1. Instale o **FeaturePack** de integração na sua instância de criação e, em seguida, replique a instalação na sua instância de publicação. (Somente para versões 5.6.1 e 6.0 do AEM).
 
-   Para saber como instalar o FeaturePack, consulte a [documentação](https://helpx.adobe.com/experience-manager/aem-previous-versions.html) do Adobe Experience Manager.
+   Para saber como instalar o FeaturePack, consulte a [documentação](https://helpx.adobe.com/br/experience-manager/aem-previous-versions.html) do Adobe Experience Manager.
 
 1. Conecte o Adobe Experience Manager ao Adobe Campaign configurando um **Serviço na Nuvem** dedicado.
 
-   Para saber como conectar ambas as soluções pelos Serviços na Nuvem, consulte a [documentação](https://helpx.adobe.com/experience-manager/6-5/sites/administering/using/campaignonpremise.html#ConfiguringAdobeExperienceManager) do Adobe Experience Manager .
+   Para saber como conectar ambas as soluções pelos Serviços na Nuvem, consulte a [documentação](https://helpx.adobe.com/br/experience-manager/6-5/sites/administering/using/campaignonpremise.html#ConfiguringAdobeExperienceManager) do Adobe Experience Manager .
 
 1. Configure o **serviço Externalizador**.
 
-   Para saber como configurá-lo, consulte a [documentação](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/externalizer.html) do Adobe Experience Manager.
+   Para saber como configurá-lo, consulte a [documentação](https://helpx.adobe.com/br/experience-manager/6-5/sites/developing/using/externalizer.html) do Adobe Experience Manager.
