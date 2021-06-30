@@ -7,19 +7,19 @@ content-type: reference
 topic-tags: use-case
 exl-id: 755d2364-f6c4-4943-97e8-3ed52a0f2665
 source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '625'
-ht-degree: 84%
+ht-degree: 100%
 
 ---
 
-# Caso de uso: Enviar emails transacionais com anexos {#transactional-email-with-attachments}
+# Caso de uso: enviar emails transacionais com anexos {#transactional-email-with-attachments}
 
 O objetivo deste caso de uso é adicionar anexos de email em tempo real a expedições de saída.
 
 ## Principais etapas{#key-steps}
 
-Neste cenário, veremos como enviar emails transacionais com anexos individuais/personalizados. Os anexos não serão carregados previamente no servidor de mensagens transacionais: em vez disso, elas serão geradas em tempo real.
+Neste cenário, veremos como enviar emails transacionais com anexos individuais/personalizados. Os anexos não serão carregados previamente no servidor de mensagens transacionais, serão gerados em tempo real.
 
 Ao capturar interações ou detalhes do cliente, talvez seja necessário enviar essas informações novamente ao cliente no final do processo, por exemplo, em um arquivo PDF anexado a um email.
 
@@ -46,8 +46,8 @@ Nesse cenário, os anexos não são pré-criados, mas adicionados instantaneamen
 Antes de implementar este cenário, leia atentamente as diretrizes abaixo:
 
 * As instâncias de mensagens transacionais não devem ser usadas para armazenar, exportar ou carregar arquivos ou dados. Eles só podem ser usados para dados do evento e informações relacionadas. Elas não devem ser consideradas como um sistema de armazenamento de arquivos.
-* Como não há acesso direto às instâncias de mensagens transacionais ou servidores fora do Adobe, não há maneira padrão de enviar esses arquivos nesses servidores (sem acesso FTP).
-* Não é contratualmente correto usar o espaço em disco nas instâncias de mensagens transacionais para armazenar arquivos de qualquer tipo, nem mesmo para anexos.
+* Como não há acesso direto às instâncias de Mensagens transacionais ou servidores fora da Adobe, não há forma padrão de enviar esses arquivos nesses servidores (sem acesso ao FTP).
+* Não é contratualmente correto usar o espaço em disco nas instâncias de mensagens transacionais para armazenar arquivos de qualquer tipo, nem mesmo anexos.
 * Você precisa usar outro sistema de disco online para hospedar esses arquivos Você precisa de um acesso FTP para este sistema e ser capaz de gravar e excluir arquivos.
 
 >[!NOTE]
