@@ -134,7 +134,7 @@ Na atividade **Update data**, a seguinte configuração é necessária:
 
 ![](assets/uc2_enrich_miseajour.png)
 
-## Etapa 3: Enriquecer dados de &#39;Contato&#39; {#step-3--enriching--contact--data-}
+## Etapa 3: Enriquecer dados de &quot;Contato&quot; {#step-3--enriching--contact--data-}
 
 O schema &quot;Contats&quot; está vinculado fisicamente ao esquema &quot;Purchases&quot;. Isso significa que é possível usar outra opção da opção &quot;Enrichment&quot;: adição de dados vinculados à dimensão do filtro.
 
