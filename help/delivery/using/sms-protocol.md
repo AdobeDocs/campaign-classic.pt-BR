@@ -146,7 +146,7 @@ Campos de destaque em `BIND_* PDU`:
 
 `BIND_*_RESP` não tem um campo específico. Confirma se a conexão foi bem-sucedida ou não.
 
-#### UNBIND {#unbind}
+#### DESVINCULAR {#unbind}
 
 Essa PDU deve ser enviada pelo sistema antes da desconexão. Deve aguardar a PDU `UNBIND_RESP` correspondente antes de fechar a conexão.
 
@@ -825,7 +825,7 @@ Se você tiver várias contas na mesma instância do Adobe Campaign que se conec
 Você deve sempre ativar rastreamentos SMPP detalhados durante as verificações.
 Mesmo se você não conseguir verificar os registros sozinho, será mais fácil para o [Atendimento ao cliente da Adobe](https://helpx.adobe.com/br/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html) ajudá-lo.
 
-### Testar seu SMS {#test}
+### Testar o SMS {#test}
 
 * **Enviar SMS com todos os tipos de caracteres**
 Se você precisar enviar SMS com caracteres não GSM ou não ASCII, tente enviar algumas mensagens com o maior número possível de caracteres diferentes. Se você configurar uma tabela de mapeamento de caracteres personalizada, envie pelo menos um SMS para todos os possíveis 
