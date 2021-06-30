@@ -8,12 +8,12 @@ topic-tags: monitoring-deliveries
 exl-id: 86c7169a-2c71-4c43-8a1a-f39871b29856
 source-git-commit: a129f49d4f045433899fd7fdbd057fb16d0ed36a
 workflow-type: tm+mt
-source-wordcount: '2614'
-ht-degree: 100%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
-# Noções básicas sobre falhas de entrega{#understanding-delivery-failures}
+# Compreensão de falhas de entrega{#understanding-delivery-failures}
 
 ## Sobre falhas de delivery {#about-delivery-failures}
 
@@ -31,11 +31,11 @@ As mensagens também podem ser excluídas durante a preparação do delivery se 
 
 **Tópicos relacionados:**
 
-* [Histórico e logs do delivery](delivery-dashboard.md#delivery-logs-and-history)
-* [Falha no status](delivery-performances.md#failed-status)
-* [Tipos e motivos de falha de delivery](#delivery-failure-types-and-reasons)
+* [Histórico e logs da entrega](delivery-dashboard.md#delivery-logs-and-history)
+* [Status de falha](delivery-performances.md#failed-status)
+* [Tipos e motivos de falha de entrega](#delivery-failure-types-and-reasons)
 
-## Tipos e motivos de falha de delivery {#delivery-failure-types-and-reasons}
+## Tipos e motivos de falha de entrega {#delivery-failure-types-and-reasons}
 
 Há três tipos de erros quando uma mensagem falha. Cada tipo de erro determina se um endereço será enviado para a quarentena. Para obter mais informações, consulte [Condições para enviar um endereço para quarentena](understanding-quarantine-management.md#conditions-for-sending-an-address-to-quarantine)
 
@@ -228,10 +228,12 @@ Para instalações no local e instalações hospedadas/híbridas que usam o MTA 
 >Para instalações hospedadas ou híbridas, se você atualizou para o [MTA aprimorado](sending-with-enhanced-mta.md):
 >
 >* As qualificações de rejeição na tabela **[!UICONTROL Delivery log qualification]** não são mais usadas para mensagens de erro de falha de delivery **síncrona.** O MTA aprimorado determinará o tipo de rejeição e a qualificação e enviará essas informações para o Campaign.
->
->* **** As rejeições assíncronas ainda são qualificadas pelo processo do InMail por meio das regras **[!UICONTROL Inbound email]**. Para obter mais informações, consulte as [Regras de gerenciamento de email](#email-management-rules).
->
->* Para instâncias que usarem o MTA aprimorado **sem Webhooks/EFS**, as regras de **[!UICONTROL Inbound email]** também serão usadas para processar os emails rejeitados síncronos provenientes do MTA aprimorado, usando o mesmo endereço de email usado para os emails rejeitados assíncronos.
+   >
+   >
+* As rejeições **assíncronas** ainda são qualificadas pelo processo do InMail por meio das regras **[!UICONTROL Inbound email]**. Para obter mais informações, consulte as [Regras de gerenciamento de email](#email-management-rules).
+   >
+   >
+* Para instâncias que usarem o MTA aprimorado **sem Webhooks/EFS**, as regras de **[!UICONTROL Inbound email]** também serão usadas para processar os emails rejeitados síncronos provenientes do MTA aprimorado, usando o mesmo endereço de email usado para os emails rejeitados assíncronos.
 
 
 Para instalações no local e instalações hospedadas/híbridas usando o MTA herdado do Campaign, quando o delivery de um email falha, o servidor de delivery do Adobe Campaign recebe uma mensagem de erro do servidor de mensagens ou do servidor DNS remoto. A lista de erros é formada por cadeias de caracteres contidas na mensagem retornada pelo servidor remoto. Tipos de falhas e motivos são atribuídos a cada mensagem de erro.
