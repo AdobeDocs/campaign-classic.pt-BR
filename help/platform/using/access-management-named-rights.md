@@ -7,7 +7,7 @@ role: Business Practitioner, Administrator
 level: Beginner
 exl-id: 07470a91-d8d2-4c41-9555-05522c8068f0
 source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '505'
 ht-degree: 100%
 
@@ -45,7 +45,7 @@ Esses direitos são os seguintes:
 
 * **[!UICONTROL PREPARE DELIVERIES]**: direito de criar, editar e salvar um delivery. Os usuários com o direito **[!UICONTROL PREPARE DELIVERIES]** também podem iniciar o processo de análise do delivery.
 
-* **[!UICONTROL PRIVACY DATA RIGHT]**: direito de coletar e excluir dados de privacidade. Para obter mais informações, consulte esta [página](https://helpx.adobe.com/campaign/kb/acc-privacy.html).
+* **[!UICONTROL PRIVACY DATA RIGHT]**: direito de coletar e excluir dados de privacidade. Para obter mais informações, consulte esta [página](https://helpx.adobe.com/br/campaign/kb/acc-privacy.html).
 
 * **[!UICONTROL PROGRAM EXECUTION]**: direito de executar comandos em várias linguagens de programação.
 
