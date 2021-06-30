@@ -27,7 +27,7 @@ As principais etapas para enviar um SMS são as seguintes:
 
 * [Configurar o canal de SMS](sms-set-up.md)
 * [Criar uma entrega de SMS](sms-create.md)
-* [Definir o público](sms-create.md#selecting-the-target-population)
+* [Definir o público-alvo](sms-create.md#selecting-the-target-population)
 * [Defina o conteúdo do SMS](sms-create.md#defining-the-sms-content)
 * [Enviar, monitorar e rastrear SMS](sms-send.md)
 * [Solução de problemas](troubleshooting-sms.md)
