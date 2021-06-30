@@ -15,7 +15,7 @@ ht-degree: 90%
 
 # Configurar amostras de população {#step-2--configuring-population-samples}
 
-## Configure a atividade Query {#configuring-the-query-activity}
+## Configurar a atividade Query {#configuring-the-query-activity}
 
 * Clique duas vezes na atividade **[!UICONTROL Query]**.
 
