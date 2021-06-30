@@ -7,15 +7,15 @@ content-type: reference
 topic-tags: reports
 exl-id: b8dc9891-84c8-445d-ad6a-d06048c8faaf
 source-git-commit: e86350cf12db37e3f2c227563057b97922601729
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '237'
-ht-degree: 87%
+ht-degree: 100%
 
 ---
 
 # Nível de serviço do Centro de mensagens {#message-center-service-level}
 
-Esse relatório exibe as estatísticas de delivery relacionadas às mensagens transacionais, bem como a discriminação de erros. Você pode clicar em um tipo de erro para exibir seus detalhes.
+Esse relatório exibe as estatísticas de entrega relacionadas às mensagens transacionais, bem como o detalhamento de erros. Você pode clicar em um tipo de erro para exibir os detalhes.
 
 Esse relatório, destinado aos administradores técnicos, também pode ser acessado por meio da guia **[!UICONTROL Monitoring]** na instância de controle.
 
@@ -34,4 +34,4 @@ Os indicadores exibidos na seção **[!UICONTROL Indicators over the period]** s
 
 >[!NOTE]
 >
->Os limites de indicador de aviso (laranja) e de alerta (vermelho) podem ser configurados no assistente de implantação. Consulte [Limites do monitor](../../message-center/using/additional-configurations.md#monitoring-thresholds).
+>Os limites de indicador de aviso (laranja) e de alerta (vermelho) podem ser configurados no assistente de implantação. Consulte [Monitorar limites](../../message-center/using/additional-configurations.md#monitoring-thresholds).
