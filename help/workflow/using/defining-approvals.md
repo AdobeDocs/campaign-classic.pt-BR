@@ -7,7 +7,7 @@ content-type: reference
 topic-tags: -general-operation
 exl-id: 4d413d51-ae5d-4e5e-bfaf-4160a6075281
 source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '840'
 ht-degree: 100%
 
@@ -64,7 +64,7 @@ Os grupos de operadores para aprovações devem ser designados como atribuiçõe
 
 ## Expirações {#expirations}
 
-Expirações são transições específicas usadas em diferentes tipos de atividade e particularmente em aprovações. Você pode usar uma expiração para acionar uma ação após um determinado tempo sem resposta. Ela também pode ser usada para perseguir o workflow e atribuir uma aprovação a um grupo diferente.
+Expirações são transições específicas usadas em diferentes tipos de atividade e, particularmente, em aprovações. Você pode usar uma expiração para acionar uma ação após um determinado tempo sem resposta. Ela também pode ser usada para perseguir o workflow e atribuir uma aprovação a um grupo diferente.
 
 A segunda guia nas propriedades da atividade de aprovação permite definir uma ou mais expirações. Na verdade, você pode definir vários tipos de expiração.
 
