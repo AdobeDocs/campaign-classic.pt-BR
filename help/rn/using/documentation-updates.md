@@ -9,7 +9,7 @@ exl-id: 07c1f4a3-cf16-4a9b-b402-e13258799f91
 source-git-commit: 515587695115c23d9b248ecb87a7ae89ea7c62a0
 workflow-type: tm+mt
 source-wordcount: '4466'
-ht-degree: 97%
+ht-degree: 99%
 
 ---
 
@@ -21,19 +21,19 @@ Consulte as [Notas de versão do Adobe Campaign Classic](../../rn/using/latest-r
 
 ## Junho de 2021 {#june-2021}
 
-A seção **Mensagens transacionais** foi reorganizada e esclarecida com uma nova seção Introdução , incluindo um [schema aprimorado](../../message-center/using/about-transactional-messaging.md#transactional-messaging-operating-principle) para melhor compreensão do processo. [Leia mais](../../message-center/using/about-transactional-messaging.md)
+A seção **Mensagens transacionais** foi reorganizada e esclarecida com uma nova seção Introdução, incluindo um [esquema aprimorado](../../message-center/using/about-transactional-messaging.md#transactional-messaging-operating-principle) para compreender melhor o processo. [Leia mais](../../message-center/using/about-transactional-messaging.md)
 
 **Atualizações da documentação que vêm com a versão 21.1.3**
 
-Integração com o Adobe Journey Orchestration - [Saiba mais](https://experienceleague.adobe.com/docs/journeys/using/action-journeys/acc-action.html). Um caso de uso passo a passo é apresentado em [this page](https://experienceleague.adobe.com/docs/journeys/using/use-cases-journeys/campaign-classic-use-case.html)
+Integração com o Adobe Journey Orchestration - [Saiba mais](https://experienceleague.adobe.com/docs/journeys/using/action-journeys/acc-action.html?lang=pt-BR). Um caso de uso passo a passo é apresentado [nesta página](https://experienceleague.adobe.com/docs/journeys/using/use-cases-journeys/campaign-classic-use-case.html?lang=pt-BR)
 
-Aprimoramentos de canal LINE - [Saiba mais](../../delivery/using/line-channel.md)
+Aprimoramentos do canal LINE - [Saiba mais](../../delivery/using/line-channel.md)
 
 Novo conector FDA Vertica - [Saiba mais](../../installation/using/configure-fda-vertica.md)
 
 Novo conector FDA do Google Big Query - [Saiba mais](../../installation/using/configure-fda-google-big-query.md)
 
-A descrição do workflow técnico &quot;Faturamento (faturamento)&quot; agora inclui as tarefas originalmente executadas pelo &quot;Número de perfis de faturamento ativos (billingActiveContactCount)&quot;. [Leia mais](../../workflow/using/about-technical-workflows.md)
+A descrição do fluxo de trabalho técnico &quot;Faturamento (faturamento)&quot; agora inclui as tarefas originalmente executadas pelo &quot;Número de perfis de faturamento ativos (billingActiveContactCount)&quot;. [Leia mais](../../workflow/using/about-technical-workflows.md)
 
 ## Maio de 2021 {#may-2021}
 
@@ -546,7 +546,7 @@ Foram adicionadas duas novas opções à lista de opções do Campaign: XtkSecur
 Foram adicionadas informações sobre as diferentes contas externas disponíveis no Campaign Classic e como configurá-las.
 [Leia mais](../../installation/using/external-accounts.md)
 
-Atualização da seção Updated Analytics Connector para refletir mudanças na interface.
+Atualização da seção do Analytics Connector para refletir mudanças na interface.
 [Leia mais](../../platform/using/adobe-analytics-connector.md)
 
 Foram adicionadas informações sobre o relatório de faturamento.
