@@ -27,7 +27,7 @@ A lista de deliveries permite que você veja todos os deliveries criados em um �
 
 Um painel dedicado está disponível para cada delivery. Isso permite o monitoramento de possíveis problemas encontrados durante o envio, bem como vários tipos de informações relacionadas ao delivery: relatórios, mirror pages, exclusões, logs de rastreamento, renderização, etc.
 
-* [Acesso à lista de deliveries](list-of-deliveries.md)
+* [Acesso à lista de entregas](list-of-deliveries.md)
 * [Painel de entrega](delivery-dashboard.md)
 
 <img src="assets/do-not-localize/icon_guidelines.svg" width="60px">
@@ -36,8 +36,8 @@ Um painel dedicado está disponível para cada delivery. Isso permite o monitora
 
 Para garantir que seus deliveries tenham bom desempenho, várias diretrizes devem ser seguidas. Problemas comuns que você pode encontrar ao enviar deliveries também estão disponíveis para ajudá-lo a enviar deliveries com mais eficiência.
 
-* [Desempenhos do delivery e práticas recomendadas](delivery-performances.md)
-* [Solução de problemas de envio de delivery](delivery-troubleshooting.md)
+* [Desempenhos da entrega e práticas recomendadas](delivery-performances.md)
+* [Solução de problemas de envio de entrega](delivery-troubleshooting.md)
 
 <img src="assets/do-not-localize/icon_failure.svg" width="60px">
 
