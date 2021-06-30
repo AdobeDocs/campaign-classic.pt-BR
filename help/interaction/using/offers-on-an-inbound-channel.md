@@ -7,7 +7,7 @@ content-type: reference
 topic-tags: case-study
 exl-id: 90afced3-465d-4370-8a33-51a7e4356135
 source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2088'
 ht-degree: 100%
 
@@ -22,10 +22,10 @@ O site Neobank deseja exibir uma oferta destinada aos visitantes não identifica
 Para configurar essa interação, nós vamos:
 
 1. [Criar um ambiente anônimo](#creating-an-anonymous-environment)
-1. [Create anonymous offer spaces](#creating-anonymous-offer-spaces)
-1. [Create an offer category and a theme](#creating-an-offer-category-and-a-theme)
-1. [Create anonymous offers.](#creating-anonymous-offers)
-1. [Configure the web offer spaces on the website](#configure-the-web-offer-space-on-the-website)
+1. [Criar espaços de oferta anônimos](#creating-anonymous-offer-spaces)
+1. [Criar uma categoria de oferta e um tema](#creating-an-offer-category-and-a-theme)
+1. [Criar ofertas anônimas.](#creating-anonymous-offers)
+1. [Configurar os espaços de oferta da Web no site](#configure-the-web-offer-space-on-the-website)
 
 ### Criação de um ambiente anônimo {#creating-an-anonymous-environment}
 
@@ -180,9 +180,9 @@ Siga as etapas abaixo:
    1. [Criação de categorias de ofertas em um ambiente anônimo](#creating-offer-categories-in-an-anonymous-environment)
    1. [Criação de ofertas para visitantes anônimos](#creating-offers-for-anonymous-visitors)
 
-* Crie um catálogo de ofertas específico para interações de entrada identificadas ao seguir as etapas:
+* Crie um catálogo de ofertas específico para interações de entrada identificadas executando as seguintes etapas:
 
-   1. [Configuração dos espaços de oferta no ambiente identificado](#configure-the-offer-spaces-in-the-identified-environment)
+   1. [Configure os espaços de oferta no ambiente identificado](#configure-the-offer-spaces-in-the-identified-environment)
    1. [Criação de categorias de ofertas em um ambiente identificado](#creating-offer-categories-in-an-identified-environment)
    1. [Criação de ofertas personalizadas](#creating-personalized-offers)
 
