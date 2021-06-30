@@ -7,8 +7,8 @@ topic-tags: deliveries-best-practices
 exl-id: 5bf727d2-83b1-4a99-be25-041eee8d234c
 source-git-commit: a129f49d4f045433899fd7fdbd057fb16d0ed36a
 workflow-type: tm+mt
-source-wordcount: '1278'
-ht-degree: 100%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
