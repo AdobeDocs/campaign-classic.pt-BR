@@ -7,7 +7,7 @@ content-type: reference
 topic-tags: use-cases
 exl-id: d589180b-8e1d-4149-9b16-3f541018a41f
 source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2000'
 ht-degree: 100%
 
@@ -281,5 +281,5 @@ Além dessas exibições, é possível configurar as pastas de filtros que permi
 
 Para obter mais informações, consulte esta seção.
 
-* [Criação de um filtro avançado](../../platform/using/creating-filters.md#creating-an-advanced-filter)
+* [Criação filtros avançados](../../platform/using/creating-filters.md#creating-an-advanced-filter)
 * [Salvar filtros](../../platform/using/creating-filters.md#saving-a-filter)
