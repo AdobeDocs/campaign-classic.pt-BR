@@ -225,7 +225,7 @@ Você poderá combinar a definição de um target de prova específico e o uso d
 
 Consulte também:
 
-* [Seleção do público-alvo da prova](#selecting-the-proof-target)
+* [Seleção do target da prova](#selecting-the-proof-target)
 * [Sobre seed addresses](about-seed-addresses.md)
 * [Caso de uso: seleção de seed addresses com critérios](use-case--selecting-seed-addresses-on-criteria.md)
 
