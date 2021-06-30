@@ -8,8 +8,8 @@ topic-tags: about-deliveries-and-channels
 exl-id: 0411686e-4f13-401e-9333-e14b05ebe9cd
 source-git-commit: a129f49d4f045433899fd7fdbd057fb16d0ed36a
 workflow-type: tm+mt
-source-wordcount: '1521'
-ht-degree: 100%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -58,7 +58,7 @@ Você poderá fechar o assistente do delivery e controlar a execução do delive
 Após enviar as mensagens, você pode monitorar e rastrear seus deliveries. Para obter mais informações, consulte essas seções.
 
 * [Monitoramento de uma entrega](about-delivery-monitoring.md)
-* [Noções básicas sobre falhas de entrega](understanding-delivery-failures.md)
+* [Compreensão de falhas de entrega](understanding-delivery-failures.md)
 * [Sobre o rastreamento de mensagens](about-message-tracking.md)
 
 ## Agendando o envio do delivery {#scheduling-the-delivery-sending}
