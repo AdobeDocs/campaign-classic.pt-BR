@@ -1,25 +1,25 @@
 ---
 product: campaign
 title: 'Publicar modelos de mensagem '
-description: Saiba mais sobre a publicação e o cancelamento da publicação de template de mensagem transacional no Adobe Campaign Classic.
+description: Saiba mais sobre a publicação e o cancelamento da publicação de modelo de mensagem transacional no Adobe Campaign Classic.
 audience: message-center
 content-type: reference
 topic-tags: message-templates
 exl-id: 1d55f42b-64bf-4b1f-a317-c1f7456aa5b3
 source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '494'
-ht-degree: 85%
+ht-degree: 100%
 
 ---
 
 # Publicar modelos de mensagem {#publishing-template-messages}
 
-## Publicação do modelo {#template-publication}
+## Publicação de modelo {#template-publication}
 
-Quando o [template de mensagem](../../message-center/using/creating-the-message-template.md) criado na instância de controle for concluído e você tiver [testado](../../message-center/using/testing-message-templates.md), poderá publicá-lo. Esse processo também o publicará em todas as instâncias de execução.
+Quando o [modelo de mensagem](../../message-center/using/creating-the-message-template.md) criado na instância de controle for concluído e você tiver [testado](../../message-center/using/testing-message-templates.md), será possível publicá-lo. Esse processo também o publicará em todas as instâncias de execução.
 
-A publicação permite criar automaticamente **dois templates de mensagem** nas instâncias de execução, o que permitirá enviar mensagens vinculadas a **eventos em tempo real** e **eventos batch**.
+A publicação permite criar automaticamente **dois modelos de mensagem** na instância de execução, que permitirá enviar mensagens vinculadas a **eventos em tempo real** e **eventos em lote**.
 
 >[!NOTE]
 >
@@ -47,7 +47,7 @@ Depois que um modelo for publicado, se o evento correspondente for acionado, a i
 >
 >No entanto, se você adicionar um valor não vazio, o campo correspondente será atualizado como normal após a próxima publicação.
 
-## Desfazer a publicação de template {#template-unpublication}
+## Cancelar a publicação do modelo {#template-unpublication}
 
 Depois que um modelo de mensagem é publicado nas instâncias de execução, você pode desfazer a publicação. Para obter mais informações sobre o processo de publicação do modelo, consulte [esta seção](#template-publication).
 
