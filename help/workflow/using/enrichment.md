@@ -7,7 +7,7 @@ content-type: reference
 topic-tags: targeting-activities
 exl-id: 4c7bc0f3-5877-47dc-bd72-dc94fb7bd479
 source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1295'
 ht-degree: 100%
 
@@ -21,7 +21,7 @@ A atividade **[!UICONTROL Enrichment]** permite adicionar informações a uma li
 
 ## Definições {#definitions}
 
-Para utilizar a atividade enrichment, é preciso estar familiarizado com as várias opções disponíveis ao adicionar dados.
+Para utilizar a atividade de enriquecimento, é preciso estar familiarizado com as várias opções disponíveis ao adicionar dados.
 
 ![](assets/enrichment_edit.png)
 
