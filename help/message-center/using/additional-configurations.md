@@ -1,15 +1,15 @@
 ---
 product: campaign
 title: Configurações adicionais
-description: Saiba como configurar configurações adicionais para mensagens transacionais no Adobe Campaign Classic.
+description: Saiba como definir configurações adicionais para mensagens transacionais no Adobe Campaign Classic.
 audience: message-center
 content-type: reference
 topic-tags: instance-configuration
 exl-id: 4d25d740-db57-4d18-8cae-2dd49c4a786e
 source-git-commit: e86350cf12db37e3f2c227563057b97922601729
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '747'
-ht-degree: 81%
+ht-degree: 100%
 
 ---
 
@@ -17,15 +17,15 @@ ht-degree: 81%
 
 ## Monitorar limites {#monitoring-thresholds}
 
-Você pode configurar os limites de aviso (laranja) e os limites de alerta (vermelho) dos indicadores que aparecem nos relatórios **Message Center service level** e **Message Center processing time** (consulte [Acessar relatórios de mensagens transacionais](../../message-center/using/about-transactional-messaging-reports.md)).
+Você pode configurar os limites de aviso (laranja) e os limites de alerta (vermelho) dos indicadores que aparecem nos relatórios de **nível de serviço do Centro de mensagens** e **tempo de processamento do Centro de mensagens** (consulte [Acesso a mensagens transacionais](../../message-center/using/about-transactional-messaging-reports.md)).
 
 Para fazer isso, siga as etapas abaixo:
 
 1. Abra o assistente de implantação na **instância de execução**.
 
-1. Vá para a página **[!UICONTROL Message Center]** .
+1. Acesse a página **[!UICONTROL Message Center]**.
 
-1. Use as setas para alterar os limites.
+1. Use as setas para modificar os limites.
 
    ![](assets/messagecenter_monitor_events_001.png)
 
@@ -49,10 +49,10 @@ Configurações de limpeza de eventos em uma instância de execução:
 
 ![](assets/messagecenter_delete_events_002.png)
 
-Para obter mais informações sobre o workflow de limpeza do banco de dados, consulte [esta seção](../../production/using/database-cleanup-workflow.md).
+Para obter mais informações sobre o fluxo de trabalho de limpeza de banco de dados, consulte [esta seção](../../production/using/database-cleanup-workflow.md).
 
 
-## Fluxos de trabalho técnicos {#technical-workflows}
+## Workflows técnicos {#technical-workflows}
 
 Você deve garantir que os workflows técnicos na instância de controle e as diferentes instâncias de execução tenham sido criados e iniciados realmente antes de implantar qualquer template de mensagem transacional.
 
@@ -109,9 +109,9 @@ Na(s) instância(s) de execução, siga as etapas abaixo:
 
    >[!NOTE]
    >
-   >Saiba como criar uma conta externa do tipo instância de execução em [this section](../../message-center/using/configuring-instances.md#control-instance).
+   >Saiba como criar uma conta externa do tipo instância de execução [nesta seção](../../message-center/using/configuring-instances.md#control-instance).
 
-1. Estenda o schema nms:extAccount para adicionar a URL de rastreamento:
+1. Estenda o esquema nms:extAccount para adicionar o URL de rastreamento:
 
    ```
    <attribute advanced="true" desc="URL of the tracking servers" label="Tracking server URL"
@@ -120,7 +120,7 @@ Na(s) instância(s) de execução, siga as etapas abaixo:
 
    >[!NOTE]
    >
-   >Saiba como estender um schema existente na seção [Extensão de um schema](../../configuration/using/extending-a-schema.md).
+   >Saiba como estender um esquema existente na seção [Extensão de um esquema](../../configuration/using/extending-a-schema.md).
 
 1. Modifique o formulário nms:extAccount:
 
@@ -154,16 +154,16 @@ Na(s) instância(s) de execução, siga as etapas abaixo:
 
 ### Instância de controle {#control-instance}
 
-Na instância de controle, é preciso vincular templates do delivery e contas externas.
+Na instância de controle, é preciso vincular modelos de entrega e contas externas.
 
 Para fazer isso, siga as etapas abaixo:
 
-1. Crie uma conta externa por marca com o mesmo nome interno definido na [execution instance](#execution-instance) (etapa 1).
+1. Crie uma conta externa por marca com o mesmo nome interno, conforme definido na [instância de execução](#execution-instance) (etapa 1).
 
-1. Criar um template do delivery padrão por marca.
+1. Criar um modelo de entrega padrão por marca.
 
    >[!NOTE]
    >
-   >    Saiba como criar um template de delivery em [this section](../../delivery/using/creating-a-delivery-template.md#creating-a-new-template).
+   >    Saiba como criar um modelo de entrega [nesta seção](../../delivery/using/creating-a-delivery-template.md#creating-a-new-template).
 
-1. Em **[!UICONTROL Properties]** do template do delivery, defina o roteamento para a conta externa da marca.
+1. Em **[!UICONTROL Properties]** do modelo de entrega, defina o roteamento para a conta externa da marca.
