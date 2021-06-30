@@ -7,9 +7,9 @@ content-type: reference
 topic-tags: campaign-integrations
 exl-id: ceb584da-bc97-4b71-9499-59df5e6d10c3
 source-git-commit: 4a41aea9edfe5e6ca0454049cbb2892449eec153
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '757'
-ht-degree: 94%
+ht-degree: 100%
 
 ---
 
@@ -89,8 +89,8 @@ A tabela a seguir fornece acesso à documentação disponível da integração d
    <td> A integração entre o <strong>serviço principal Triggers</strong> e o Adobe Campaign permite enviar emails personalizados para seus clientes como uma reação a comportamentos específicos que são rastreados em seu site pelo Adobe Analytics.<br /> <p><a href="https://helpx.adobe.com/br/campaign/kb/triggers-and-campaign.html">Saiba mais</a> sobre a integração Adobe Campaign – Experience Cloud Triggers.</p><br /> </td> 
   </tr> 
   <tr> 
-   <td> <strong>Conector Adobe Analytics</strong><br /> </td> 
-   <td> <strong>O Adobe Analytics </strong> Connector permite que o Adobe Campaign e o Adobe Analytics interajam por meio de segmentos relacionados ao comportamento do usuário após uma campanha de email. Por outro lado, ele envia indicadores e atributos de campanhas de email entregues pelo Adobe Campaign para o Adobe Analytics.<br /> <p><a href="../../platform/using/adobe-analytics-connector.md">Saiba </a> mais sobre a integração Campaign - Analytics Connectors.</p><br /> </td> 
+   <td> <strong>Adobe Analytics Connector</strong><br /> </td> 
+   <td> <strong>O Adobe Analytics Connector</strong> permite que o Adobe Campaign e o Adobe Analytics interajam por meio de segmentos relacionados ao comportamento do usuário após uma campanha de email. Por outro lado, ele envia indicadores e atributos de campanhas de email entregues pelo Adobe Campaign para o Adobe Analytics.<br /> <p><a href="../../platform/using/adobe-analytics-connector.md">Saiba mais</a> sobre a integração do Campaign com o Analytics Connectors.</p><br /> </td> 
   </tr> 
  </tbody> 
 </table>
