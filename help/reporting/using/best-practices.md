@@ -7,7 +7,7 @@ content-type: reference
 topic-tags: reporting-in-adobe-campaign
 exl-id: 0c7f00f3-b16d-41c5-a7b1-f5a59201bf8c
 source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '839'
 ht-degree: 100%
 
@@ -78,7 +78,7 @@ Também recomendamos calcular agregados à noite e usar esses dados agregados di
 
 Você também pode calcular relatórios durante a noite e criar um histórico automaticamente que possa ser visualizado a qualquer momento, sem sobrecarregar o banco de dados.
 
-### Queries {#queries}
+### Consultas {#queries}
 
 Recomendamos usar queries SQL sempre que possível e evitar o pós-processamento JavaScript. Se necessário, use uma atividade de script em um workflow e exclua os dados usados para o cálculo. Você também pode usar dados arquivados para acelerar o tempo de processamento.
 
@@ -90,7 +90,7 @@ if(string(ctx@_historyId)!==""))
 
 Queries que permitem coletar os dados exibidos nos relatórios não devem ser muito complexos, especialmente se aplicados a todos os dados no banco de dados. Para melhorar o desempenho, pode ser útil filtrar os dados antes de executar esses queries: isso significa que o cálculo só fará parte dos dados.
 
-### Desempenho {#performances}
+### Desempenhos {#performances}
 
 As recomendações acima permitem otimizar o cálculo do relatório.
 
