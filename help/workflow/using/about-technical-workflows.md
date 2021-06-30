@@ -7,9 +7,9 @@ content-type: reference
 topic-tags: technical-workflows
 exl-id: 9aed2665-cd4b-419c-b9f2-ea04fc1d8f01
 source-git-commit: 4a41aea9edfe5e6ca0454049cbb2892449eec153
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1700'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -68,7 +68,7 @@ Para obter mais informações sobre como monitorar workflows técnicos, consulte
 | **Sincronização de apresentação** (propositionSynch) | Controle do mecanismo de oferta com instância de execução | Esse fluxo de trabalho sincroniza as apresentações entre a instância de marketing e a instância de execução usada para interações. |
 | **Recuperação de eventos da Web** (webAnalyticsGetWebEvents) | Conectores de análise da Web | A cada hora, esse fluxo de trabalho baixa segmentos do comportamento do usuário na Internet em um determinado site, os coloca no banco de dados do Adobe Campaign e inicia o fluxo de trabalho de remarketing. |
 | **Agregados de relatórios** (reportingAggregates) | Delivery | Esse fluxo de trabalho atualiza agregados usados em relatórios. É acionado todos os dias às 2h por padrão. |
-| **Envio de indicadores e atributos de campanha** (webAnalyticsSendMetrics) | Conectores de análise da Web | Esse workflow permite enviar indicadores de campanha de email do Adobe Campaign para o Adobe Experience Cloud Suite por meio do conector do Adobe® Analytics. Os indicadores relacionados são: Enviado (iSent), Contagem total de aberturas (iTotalRecipientOpen), Número total de destinatários que clicaram (iTotalRecipientClick), Erros (iError), Recusa (opt-out) (iOptOut). |
+| **Envio de indicadores e atributos de campanha** (webAnalyticsSendMetrics) | Conectores de análise da Web | Esse fluxo de trabalho permite enviar indicadores de campanha de email do Adobe Campaign para o Adobe Experience Cloud Suite por meio do conector do Adobe® Analytics. Os indicadores relacionados são: Enviado (iSent), Contagem total de aberturas (iTotalRecipientOpen), Número total de destinatários que clicaram (iTotalRecipientClick), Erros (iError), Recusa (opt-out) (iOptOut). |
 | **Estoque: pedidos e alertas** (stockMgt) | Campanhas de marketing (Campaign) | Esse fluxo de trabalho inicia o cálculo de estoque nas linhas de pedido e gerencia os limites de aviso. |
 | **Sincronização de fãs do Facebook** (syncFacebookFans) | Redes sociais (Marketing social) | Esse fluxo de trabalho importa os fãs do Facebook para o Adobe Campaign todos os dias às 7h. |
 | **Sincronização de páginas do Facebook** (syncFacebook) | Redes sociais (Marketing social) | Esse fluxo de trabalho sincroniza páginas do Facebook com o Adobe Campaign todos os dias às 7h. |
