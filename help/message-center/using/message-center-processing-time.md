@@ -7,9 +7,9 @@ content-type: reference
 topic-tags: reports
 exl-id: c797fd94-0c8d-480b-b22a-1489ac331e77
 source-git-commit: e86350cf12db37e3f2c227563057b97922601729
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '217'
-ht-degree: 86%
+ht-degree: 100%
 
 ---
 
@@ -21,7 +21,7 @@ Esse relatório, destinado aos administradores técnicos, também pode ser acess
 
 ![](assets/mc_reports_2.png)
 
-Assim como para o relatório **[!UICONTROL Message Center service level]**, você pode exibir as estatísticas gerais ou aquelas relativas a uma instância de execução específica. Você também pode filtrar os dados por canal e por um período específico.
+Assim como para o relatório **[!UICONTROL Message Center service level]**, você pode exibir as estatísticas gerais ou as relativas a uma instância de execução específica. Você também pode filtrar os dados por canal e por um período específico.
 
 Os indicadores exibidos na seção **[!UICONTROL Indicators over the period]** são calculados sobre o período selecionado:
 
@@ -34,4 +34,4 @@ Os indicadores exibidos na seção **[!UICONTROL Indicators over the period]** s
 
 >[!NOTE]
 >
->Os limites de indicador de aviso (laranja) e de alerta (vermelho) podem ser configurados no assistente de implantação do Adobe Campaign. Consulte [Limites do monitor](../../message-center/using/additional-configurations.md#monitoring-thresholds).
+>Os limites de indicador de aviso (laranja) e de alerta (vermelho) podem ser configurados no assistente de implantação do Adobe Campaign. Consulte [Monitorar limites](../../message-center/using/additional-configurations.md#monitoring-thresholds).
