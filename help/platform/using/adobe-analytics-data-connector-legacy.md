@@ -19,7 +19,7 @@ ht-degree: 99%
 
 >[!IMPORTANT]
 >
->Conector de dados do Adobe Analytics agora está obsoleta. Embora os recursos obsoletos ainda estejam disponíveis, eles não serão aprimorados nem terão suporte. Saiba mais [nesta página](../../rn/using/deprecated-features.md).
+>O Conector de dados do Adobe Analytics foi descontinuado. Embora os recursos obsoletos ainda estejam disponíveis, eles não serão aprimorados nem terão suporte. Saiba mais [nesta página](../../rn/using/deprecated-features.md).
 
 ## Sobre a integração do conector de dados {#about-data-connector-integration}
 
@@ -153,7 +153,7 @@ A integração do Adobe Campaign nas plataformas do Analytics é realizada usand
 
 >[!NOTE]
 >
->Se estiver usando várias ferramentas de medição de público, você pode selecionar **[!UICONTROL Other]** na lista suspensa **[!UICONTROL Partners]** ao criar a conta externa. Você só pode fazer referência a uma conta externa nas propriedades de delivery: será necessário adaptar a fórmula de URLs controladas adicionando os parâmetros esperados pela Adobe e todas as outras ferramentas de medição usadas.
+>Se estiver usando várias ferramentas de medição de público, você pode selecionar **[!UICONTROL Other]** na lista suspensa **[!UICONTROL Partners]** ao criar a conta externa. Você só pode fazer referência a uma conta externa nas propriedades de entrega: será necessário adaptar a fórmula de URLs rastreadas adicionando os parâmetros esperados pela Adobe e todas as outras ferramentas de medição usadas.
 
 ### Etapa 3: sincronizar o Adobe Campaign e o Adobe Analytics {#step-3--synchronize-adobe-campaign-and-adobe-analytics}
 
@@ -190,7 +190,7 @@ Se segmentos adicionais tiverem sido configurados no assistente do Data Connecto
 
 ![](assets/webanalytics_segments_update.png)
 
-### Workflows técnicos de processos do Web Analytics {#technical-workflows-of-web-analytics-processes}
+### Workflows técnicos de processos de análise da web {#technical-workflows-of-web-analytics-processes}
 
 A troca de dados entre o Adobe Campaign e o Adobe Analytics – Data Connector é realizada por quatro workflows técnicos que são executados como uma tarefa em segundo plano.
 
