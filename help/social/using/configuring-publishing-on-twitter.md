@@ -7,7 +7,7 @@ content-type: reference
 topic-tags: configuration
 exl-id: 2d2a6e32-587d-4a7b-ba1c-d9140da53f64
 source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '710'
 ht-degree: 100%
 
@@ -26,7 +26,7 @@ Para que o Adobe Campaign possa enviar tweets para suas contas do Twitter, é ne
 
 ## Pré-requisitos {#prerequisites}
 
-Comece criando uma ou mais contas do Twitter para enviar seus tweets.
+Comece criando uma ou mais contas do Twitter para enviar tweets.
 
 Para criar uma conta do Twitter, acesse [ https://twitter.com](https://twitter.com).
 
