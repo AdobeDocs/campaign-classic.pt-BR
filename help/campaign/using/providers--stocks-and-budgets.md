@@ -255,7 +255,7 @@ Um alerta é exibido quando um estoque referenciado em um delivery é insuficien
 
 ![](assets/s_ncs_user_stocks_valid_alert.png)
 
-#### Disposições {#orders}
+#### Pedidos {#orders}
 
 A subguia **[!UICONTROL Orders]** permite visualizar pedidos atuais e salvar novos pedidos.
 
