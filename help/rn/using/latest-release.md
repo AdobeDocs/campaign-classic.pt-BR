@@ -7,9 +7,9 @@ role: Business Practitioner
 level: Beginner
 exl-id: d65869ca-a785-4327-8e8d-791c28e4696c
 source-git-commit: 28083eb0271c8c148955fa33978479dc3683eaed
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1953'
-ht-degree: 52%
+ht-degree: 100%
 
 ---
 
@@ -21,7 +21,7 @@ Esta página lista novos recursos, melhorias e correções que vêm com a **vers
 >
 >As compilações de **Disponibilidade geral (GA) do Campaign** são: [[!DNL Gold Standard] Versão 11](../../rn/using/gold-standard.md#gs-11) e [Versão 20.2.5 do Campaign](../../rn/using/release--20-2.md).
 
-## ![](assets/do-not-localize/blue_2.png) Versão 21.1.3 – Compilação 9330 {#release-21-1-3-build-9330}
+## ![](assets/do-not-localize/blue_2.png) Versão 21.1.3 – Build 9330 {#release-21-1-3-build-9330}
 
 _5 de junho de 2021_
 
@@ -36,9 +36,9 @@ _5 de junho de 2021_
 <tbody>
 <tr>
 <td>
-<p>A integração entre o Journey Orchestration e o Adobe Campaign Classic agora está disponível. Ele permite que o Journey Orchestration envie emails, notificações por push e SMS usando recursos de mensagens transacionais Adobe Campaign Classic.</p>
-<p>A conexão entre as instâncias Journey Orchestration e Campaign Classic é configurada pelo Adobe no momento do provisionamento.</p>
-<p>Para obter mais informações, consulte a <a href="https://experienceleague.adobe.com/docs/journeys/using/action-journeys/acc-action.html">documentação do Journey Orchestration</a>. Um caso de uso passo a passo é apresentado nesta <a href="https://experienceleague.adobe.com/docs/journeys/using/use-cases-journeys/campaign-classic-use-case.html">seção</a></p>
+<p>A integração entre o Journey Orchestration e o Adobe Campaign Classic agora está disponível. Ela permite que o Journey Orchestration envie emails, notificações por push e SMS usando recursos de mensagens transacionais do Adobe Campaign Classic.</p>
+<p>A conexão entre as instâncias do Journey Orchestration e do Campaign Classic é configurada pela Adobe no momento do provisionamento.</p>
+<p>Para obter mais informações, consulte a <a href="https://experienceleague.adobe.com/docs/journeys/using/action-journeys/acc-action.html?lang=pt-BR">documentação do Journey Orchestration</a>. Um caso de uso passo a passo é apresentado nesta <a href="https://experienceleague.adobe.com/docs/journeys/using/use-cases-journeys/campaign-classic-use-case.html?lang=pt-BR">seção</a></p>
 </td>
 </tr>
 </tbody>
@@ -96,12 +96,12 @@ _5 de junho de 2021_
 </tbody> 
 </table>
 
-**Aprimoramentos de segurança**
+**Melhorias de segurança**
 
-* O acesso ao método da API **xtk:session#GetConxInfo** que retorna os detalhes completos da conexão do banco de dados agora é restrito somente a usuários administradores. (NEO-27779)
+* O acesso ao método da API **xtk:session#GetCnxInfo** que retorna os detalhes completos da conexão do banco de dados agora é restrito somente a usuários administradores. (NEO-27779)
 * A função decryptString obsoleta foi substituída por decryptPassword nos arquivos JavaScript relacionados ao CRM.
 * O recurso de assinatura de rastreamento foi aprimorado para reduzir o risco de rastreamento de erros de redirecionamento quando ferramentas de terceiros (clientes de email, navegadores da Internet, ferramentas de segurança de link seguro) modificam o link rastreado.
-* Correção de um problema que impedia que URLs rastreadas funcionassem quando contivessem caracteres em maiúsculas. O mecanismo de assinatura de URLs rastreados agora diferencia maiúsculas de minúsculas. (NEO-28414)
+* Correção de um problema que impedia que URLs rastreados funcionassem quando contivessem caracteres em maiúsculas. O mecanismo de assinatura de URLs rastreados agora diferencia maiúsculas de minúsculas. (NEO-28414)
 
 **Atualizações de compatibilidade**
 
@@ -114,49 +114,49 @@ Saiba mais na [matriz de compatibilidade do Campaign](../../rn/using/compatibili
 
 **Recursos obsoletos**
 
-* A partir da versão 21.1 do Campaign, o Conector de dados do Adobe Analytics não será mais utilizado. Se você estiver usando esse conector, precisará adaptar sua implementação adequadamente com o novo conector Adobe Analytics Connector.
+* A partir da versão 21.1 do Campaign, o Conector de dados do Adobe Analytics não será mais utilizado. Se você estiver usando esse conector, precisará adaptar sua implementação adequadamente com o novo Adobe Analytics Connector.
 Para obter mais informações consulte a [documentação detalhada](../../platform/using/adobe-analytics-connector.md).
-* O suporte para Debian 8 foi substituído.
+* O suporte para Debian 8 foi descontinuado.
 * Após a desativação do Oracle CRM na versão 20.3, a conta externa relacionada foi removida da interface.
 
 Saiba mais na [página sobre recursos obsoletos e removidos](../../rn/using/deprecated-features.md).
 
 **Aprimoramentos**
 
-* Foram adicionadas verificações adicionais ao salvar um workflow para garantir que os nomes das atividades sejam exclusivos e que as transições sejam sempre seguidas por uma atividade .
-* O workflow técnico **Faturamento (faturamento)** agora inclui as tarefas originalmente executadas pelo workflow **Número de perfis de faturamento ativos** (billingActiveContactCount), que foi removido. O relatório de email enviado mensalmente pelo workflow agora fornecerá informações sobre o número de perfis ativos na instância. [Leia mais](../../workflow/using/about-technical-workflows.md).
-* Novo atributo **_keyOnMData** foi adicionado para poder usar uma chave para operações em dados de memorando.
+* Foram adicionadas verificações adicionais ao salvar um fluxo de trabalho para garantir que os nomes das atividades sejam únicos e que as transições sejam sempre seguidas por uma atividade.
+* O fluxo de trabalho técnico **Faturamento (faturamento)** agora inclui as tarefas originalmente executadas pelo fluxo de trabalho **Número de perfis de faturamento ativos** (billingActiveContactCount), que foi removido. O relatório de email enviado mensalmente pelo fluxo de trabalho agora fornecerá informações sobre o número de perfis ativos na instância. [Leia mais](../../workflow/using/about-technical-workflows.md).
+* O novo atributo **_keyOnMData** foi adicionado para poder usar uma chave para operações em dados de memorando.
 
 **Outras alterações**
 
-* O terceiro opcional para Windows foi atualizado para a versão 1.1.1h.
-* Na descrição do pacote Debian, nlserver foi alterado para Adobe Campaign Classic server.
+* O terceiro openssl para Windows foi atualizado para a versão 1.1.1h.
+* Na descrição do pacote Debian, nlserver foi alterado para servidor do Adobe Campaign Classic.
 
 **Correções**
 
 * Correção de um problema ao editar o tempo limite da sessão para fazer logoff de usuários após um período específico em que os usuários permaneceram conectados mesmo após o tempo definido.
-* Correção de um problema em que os deliveries eram exibidos como somente leitura, mas ainda podiam ser editados nas propriedades de deliveries.
-* Correção de um erro que fazia com que a barra de ferramentas de edição desaparecesse ao projetar um aplicativo da Web.
-* Correção de um erro que exibia a versão de texto de um email com cabeçalhos Adobe Campaign Classic ao adicionar um link a um email. (NEO-29211
-* Ao usar FDA em conexão HTTPs, o fluxo de trabalho **Mid-sourcing (logs do delivery)** (defaultMidSourcingLog) estava preso no período definido pela opção **NmsMidSourcing_LogsPeriodHour**. Isso evitaria que registros fossem atualizados com dados que ocorressem após esse período de tempo definido. (NEO-30833)
-* Correção de um problema que ocorria após a execução do workflow de sincronização do centro de mensagens. Toda vez que uma pasta de objetos de delivery era movida para uma pasta personalizada, o workflow movia os deliveries de volta para a pasta genérica **Transactional message history**. (NEO-27445)
-* Correção de um problema que exibia uma mensagem de erro ao tentar exibir os relatórios **Broadcast statistics**, **Tracking indicators** e **Statistics of the sharing activities**.
-* A atividade de workflow **Oracle On Demand** foi removida da interface após a desativação do conector Oracle CRM.
-* Correção de um problema que interrompia a execução de workflows de processamento após a reinicialização diária do módulo do servidor de workflow (wfserver). (NEO-30047)
+* Correção de um problema em que as entregas eram exibidas somente como leitura, mas ainda podiam ser editadas nas propriedades de entregas.
+* Correção de um erro que fazia com que a barra de ferramentas de edição desaparecesse ao projetar um aplicativo web.
+* Correção de um erro que exibia a versão de texto de um email com cabeçalhos do Adobe Campaign Classic ao adicionar um link a um email. (NEO-29211
+* Ao usar FDA em conexão HTTPs, o fluxo de trabalho **Mid-sourcing (logs do delivery)** (defaultMidSourcingLog) estava preso no período definido pela opção **NmsMidSourcing_LogsPeriodHour**. Isso evitaria que registros fossem atualizados com dados que ocorressem após esse período definido. (NEO-30833)
+* Correção de um problema que ocorria após a execução do fluxo de trabalho de sincronização do centro de mensagens. Toda vez que uma pasta de objetos de entrega era movida para uma pasta personalizada, o fluxo de trabalho movia as entregas de volta para a pasta genérica **Histórico de mensagem transacional**. (NEO-27445)
+* Correção de um problema que exibia uma mensagem de erro ao tentar exibir os relatórios **Estatísticas de transmissão**, **Indicadores de rastreamento** e **Estatísticas de atividades de compartilhamento**.
+* A atividade de fluxo de trabalho **Oracle por demanda** foi removida da interface após a desativação do conector Oracle CRM.
+* Correção de um problema que interrompia a execução de workflows de processamento após a reinicialização diária do módulo do servidor de fluxo de trabalho (wfserver). (NEO-30047)
 * Correção de um problema que impedia a atualização do documento de gerenciamento MX, o que poderia afetar negativamente a reputação do IP. (NEO-29897)
-* Correção de problemas que causavam falhas do processo da Web ao receber uma chamada SOAP. (NEO28796) (NEO29600)
+* Correção de problemas que causavam falhas do processo da Web ao receber uma chamada SOAP. (NEO-28796) (NEO-29600)
 * Correção de um problema que causava a falha da criação do índice SAP HANA FDA. (NEO-29664)
 * Correção de um problema que poderia manter mensagens transacionais no estado **Aguardando** ao executar chamadas SOAP contendo um cabeçalho. (NEO-28737)
 * Correção de um problema que ocorria ao usar o conector FDA do Teradata: todas as tabelas temporárias foram criadas em apenas um nó do cluster, o que poderia acabar consumindo todo o espaço do spool e causar falha no Teradata. As tabelas temporárias agora são geradas em muitos nós. (NEO-28230)
-* Correção de um problema ao usar aplicações Web que fazia com que tags de rastreamento gerassem chaves primárias incorretas no schema **nms:trackingURL**. (NEO-27931)
+* Correção de um problema ao usar aplicações Web que fazia com que tags de rastreamento gerassem chaves primárias incorretas no esquema **nms:trackingURL**. (NEO-27931)
 * A compatibilidade com o ODBC 3.x foi aprimorada para garantir a precisão da mensagem de erro.
-* Correção de um problema que poderia resultar em falhas do console quando modelos de conteúdo personalizados eram usados em deliveries de email. (NEO-31547)
+* Correção de um problema que poderia resultar em falhas do console quando modelos de conteúdo personalizados eram usados em entregas de email. (NEO-31547)
 * Correção de um problema que impedia o Tomcat de enviar respostas válidas devido a uma conexão lenta ou um tamanho de resposta grande.
 * Correção de um problema que poderia ocorrer durante a leitura de UUID de um banco de dados PostgreSQL.
-* Correção de um problema que poderia levar a problemas de desempenho ao pesquisar dados de proposta vinculados a ofertas. (NEO-27554)
+* Correção de um problema que poderia causar problemas de desempenho ao pesquisar dados de proposta vinculados a ofertas. (NEO-27554)
 * Correção de um problema que resultava na não resposta do processo da Web quando o serviço IMS era ativado, mas não respondia.
-* Correção de um problema que impedia o envio de um delivery com um grupo de provas devido a um mecanismo de associação específico que falhava na personalização do delivery. (NEO-14391)
-* Correção de um problema que falhava ao enviar um alerta com a atividade de alerta se uma query e uma atividade de enriquecimento tivessem como alvo a tabela de delivery. (NEO-25157)
+* Correção de um problema que impedia o envio de uma entrega com um grupo de provas devido a um mecanismo de associação específico que falhava na personalização da entrega. (NEO-14391)
+* Correção de um problema em que não era enviado um alerta com a atividade de alerta se uma consulta e uma atividade de enriquecimento tivessem como alvo a tabela de entrega. (NEO-25157)
 
 ## ![](assets/do-not-localize/red_2.png) Versão 21.1.2 – Compilação 9282 {#release-21-1-2-build-9282}
 
