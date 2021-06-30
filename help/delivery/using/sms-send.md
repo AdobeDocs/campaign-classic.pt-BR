@@ -61,7 +61,7 @@ As seguintes opções estão disponíveis:
 Após enviar as mensagens, você pode monitorar e rastrear seus deliveries. Para obter mais informações, consulte essas seções.
 
 * [Monitorar um delivery](about-delivery-monitoring.md)
-* [Entender as falhas de entrega](understanding-delivery-failures.md)
+* [Entender as falhas de delivery](understanding-delivery-failures.md)
 * [Sobre o rastreamento de mensagens](about-message-tracking.md)
 
 ## Processar mensagens de entrada {#processing-inbound-messages}
