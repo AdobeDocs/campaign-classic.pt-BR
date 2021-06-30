@@ -58,5 +58,5 @@ Com base no período do incidente, abaixo estão as diretrizes recomendadas para
 Depois de ter a lista de recipients afetados, você pode defini-los como um status **[!UICONTROL Valid]** para que sejam removidos da lista de quarentena pelo fluxo de trabalho **[!UICONTROL Database cleanup]** ou simplesmente excluí-los da tabela.
 
 **Tópicos relacionados:**
-* [Compreender as falhas de delivery](understanding-delivery-failures.md)
+* [Compreender as falhas de entrega](understanding-delivery-failures.md)
 * [Qualificação de email de rejeição](understanding-delivery-failures.md#bounce-mail-qualification)
