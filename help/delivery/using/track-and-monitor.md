@@ -59,7 +59,7 @@ Para obter mais informações, consulte a seção [Configuração de rastreament
 
 Ações específicas podem ser executadas para a resolução de problemas com deliveries:
 
-* [Problemas com delivery](../../production/using/performance-and-throughput-issues.md#deliverability_issues)
+* [Problemas na capacidade de delivery](../../production/using/performance-and-throughput-issues.md#deliverability_issues)
 
 * [Problemas de exibição de imagem](../../production/using/image-display-issues.md)
 
