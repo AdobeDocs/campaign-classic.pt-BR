@@ -7,7 +7,7 @@ content-type: reference
 topic-tags: response-manager
 exl-id: 1dc6d03b-698c-4750-9563-0676fcd185df
 source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '448'
 ht-degree: 100%
 
@@ -21,7 +21,7 @@ O resultado dos cálculos da hipótese está disponível em vários níveis da p
 
 ### Indicadores {#indicators}
 
-Depois que a hipótese é calculada, vários indicadores de mensuração são atualizados automaticamente. Eles estão disponíveis na guia **[!UICONTROL General]** da hipótese.
+Depois que a hipótese é calculada, vários indicadores de medição são atualizados automaticamente. Eles estão disponíveis na guia **[!UICONTROL General]** da hipótese.
 
 ![](assets/response_hypothesis_delivery_example_010.png)
 
