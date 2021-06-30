@@ -7,7 +7,7 @@ content-type: reference
 topic-tags: content-management
 exl-id: 8ec52c96-44a2-4544-93b6-9ba251510682
 source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '818'
 ht-degree: 100%
 
@@ -180,7 +180,7 @@ Use os botões da barra de ferramentas para adicionar ou excluir elementos da li
 >
 >As setas de ordenação esquerda e direita são adicionadas automaticamente quando o atributo **ordered=&quot;true&quot;** é preenchido para o elemento de coleção no schema de dados.
 
-## Containeres {#containers}
+## Containers {#containers}
 
 Os containeres permitem agrupar um conjunto de controles. Eles existem por meio do elemento **`<container>`**. Eles já foram usados para formatar controles em várias colunas e para o controle da lista de guias.
 
