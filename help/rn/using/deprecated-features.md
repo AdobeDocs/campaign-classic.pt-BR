@@ -9,7 +9,7 @@ exl-id: d60d67de-6618-4f3b-be4a-ad7633ab5645
 source-git-commit: c612b47463427751eff27d6092e371c918c87d93
 workflow-type: tm+mt
 source-wordcount: '1634'
-ht-degree: 95%
+ht-degree: 99%
 
 ---
 
@@ -43,7 +43,7 @@ Os clientes são aconselhados a verificar se utilizam o recurso/funcionalidade e
   </tr>
     <tr>
   <td>Conector de dados do Adobe Analytics<br></td>
-   <td><p>A partir da versão 21.1.3 do Campaign, o Conector de dados do Adobe Analytics será descontinuado.</p>
+   <td><p>A partir da versão 21.1.3 do Campaign, o Conector de dados do Adobe Analytics não será mais utilizado.</p>
    <p>Se estiver usando este conector, precisará adaptar sua implementação adequadamente. <a href="../../platform/using/adobe-analytics-connector.md">Saiba mais</a></p>
   <p><em>Data de remoção do Target: 1° de março de 2022</em></p>
   </td>
@@ -82,7 +82,7 @@ Esta seção lista os recursos e funcionalidades removidos do Campaign Classic.
    <td><p>A partir da versão 21.1.3 do Campaign, o Canal de fax não estará mais disponível. <a href="../../delivery/using/steps-about-delivery-creation-steps.md">Saiba mais</a></p>
   <tr>
   <td>Domínio demdex<br></td>
-  <td><p> A partir da versão 21.1.3 do Campaign, o domínio demdex usado para importar e exportar públicos para o Adobe Experience Cloud não estará mais disponível. <a href="../../integrations/using/configuring-shared-audiences-integration-in-adobe-campaign.md">Saiba mais</a></p> 
+  <td><p> A partir da versão 21.1.3 do Campaign, o domínio demdex usado para importar e exportar públicos para a Adobe Experience Cloud se tornará obsoleto. <a href="../../integrations/using/configuring-shared-audiences-integration-in-adobe-campaign.md">Saiba mais</a></p> 
   </td>
   </td>
   </tr>
@@ -158,7 +158,7 @@ O Console do cliente do Adobe Campaign Classic não pode mais ser executado nos 
 
 A partir da versão 21.1.3, o suporte para Debian 8 será descontinuado.
 
-A partir da versão 19.1, o Adobe Campaign não é mais compatível com os seguintes sistemas operacionais.
+A partir da versão 19.1, o Adobe Campaign não será mais compatível com os seguintes sistemas operacionais.
 
 * CentOS 6 [Saiba mais](https://wiki.centos.org/Download)
 * Debian 7. [Saiba mais](https://wiki.debian.org/DebianReleases)
@@ -178,7 +178,7 @@ A partir da versão do primeiro trimestre 19.1, o Adobe Campaign não é mais co
 A partir da versão do primeiro trimestre 19.1, o Adobe Campaign não é mais compatível com as seguintes ferramentas.
 
 * Java JDK 7. [Saiba mais](http://www.oracle.com/technetwork/java/javase/eol-135779.html)
-* Libre Office 3.5 / 4.3 / 5.x, exceto quando incorporado em outra ferramenta. [Saiba mais](https://wiki.documentfoundation.org/ReleasePlan/Archive#End-of-Life_Releases)
+* Libre Office 3.5/4.3/5.x, exceto quando incorporado em outra ferramenta. [Saiba mais](https://wiki.documentfoundation.org/ReleasePlan/Archive#End-of-Life_Releases)
 
 ### Mecanismos de banco de dados {#dbe-eol}
 
@@ -219,9 +219,9 @@ No local: atualização 1 de 2016, 2016
 * API da web – Microsoft Dynamics CRM Online: atualização 1 de 2016, 2016
 * API Oracle por demanda&lt;
 
-**RDBMS SERVER**
+**SERVIDOR RDBMS**
 
-A partir da versão do primeiro trimestre 19.1, o Adobe Campaign não é mais compatível com os seguintes servidores RDBMS:
+A partir da versão 19.1, o Adobe Campaign não será mais compatível com os seguintes servidores RDBMS:
 
 * Oracle 10GR2
 * PostgreSQL 9.0 a 9.3
