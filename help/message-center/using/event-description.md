@@ -7,9 +7,9 @@ content-type: reference
 topic-tags: introduction
 exl-id: 9f7f4b6c-2ee8-4091-847d-f616d6abeb6b
 source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '751'
-ht-degree: 94%
+ht-degree: 100%
 
 ---
 
@@ -17,7 +17,7 @@ ht-degree: 94%
 
 ## Modelo de dados de mensagens transacionais {#about-transactional-messaging-datamodel}
 
-As mensagens transacionais dependem do template de dados do Adobe Campaign e usam duas tabelas separadas adicionais. Essas [tabelas](../../configuration/using/data-model-description.md#message-center-module), **NmsRtEvent** e **NmsBatchEvent**, contêm os mesmos campos e permitem gerenciar eventos em tempo real, por um lado, e eventos batch, por outro.
+As mensagens transacionais dependem do modelo de dados do Adobe Campaign e usam duas tabelas separadas adicionais. Essas [tabelas](../../configuration/using/data-model-description.md#message-center-module), **NmsRtEvent** e **NmsBatchEvent** contêm os mesmos campos e permitem gerenciar eventos em tempo real, por um lado, e eventos em lote, por outro.
 
 ## Métodos SOAP {#soap-methods}
 
