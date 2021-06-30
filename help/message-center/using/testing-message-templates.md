@@ -7,15 +7,15 @@ content-type: reference
 topic-tags: message-templates
 exl-id: 417004c9-ed96-4b98-a518-a3aa6123ee7b
 source-git-commit: e86350cf12db37e3f2c227563057b97922601729
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '560'
-ht-degree: 67%
+ht-degree: 100%
 
 ---
 
-# Testar templates de mensagem transacional {#testing-message-templates}
+# Testar modelos de mensagem transacional {#testing-message-templates}
 
-Quando o [template de mensagem](../../message-center/using/creating-the-message-template.md) estiver pronto, siga as etapas abaixo para pré-visualizá-lo e testá-lo.
+Quando o [modelo de mensagem](../../message-center/using/creating-the-message-template.md) estiver pronto, siga as etapas abaixo para pré-visualizá-lo e testá-lo.
 
 ## Gerenciar seed addresses em mensagens transacionais {#managing-seed-addresses-in-transactional-messages}
 
@@ -59,15 +59,15 @@ Depois que os endereços forem criados, você poderá exibir sua pré-visualiza�
 
 É possível usar dados no template de mensagem para testar a personalização da mensagem transacional. Essa funcionalidade é usada para gerar uma pré-visualização ou enviar uma prova. Você também pode exibir a renderização da mensagem para vários provedores de acesso à Internet. Para obter mais informações, consulte [Renderização da caixa de entrada](../../delivery/using/inbox-rendering.md).
 
-O objetivo desses dados é testar suas mensagens antes do delivery final. Essas mensagens não coincidem com os dados reais para serem processados. Entretanto, a estrutura XML deve ser idêntica à do evento armazenado na instância de execução, conforme mostrado abaixo:
+O objetivo desses dados é testar suas mensagens antes da entrega final. Essas mensagens não coincidem com os dados reais que serão processados. Entretanto, a estrutura XML deve ser idêntica à do evento armazenado na instância de execução, conforme mostrado abaixo:
 
 ![](assets/messagecenter_create_custo_006.png)
 
-Essas informações permitem personalizar o conteúdo da mensagem usando tags de personalização (para obter mais informações, consulte [Create the message content](../../message-center/using/creating-the-message-template.md#creating-message-content)).
+Essas informações permitem personalizar o conteúdo da mensagem usando tags de personalização (para obter mais informações, consulte [Criar o conteúdo da mensagem](../../message-center/using/creating-the-message-template.md#creating-message-content)).
 
-1. Selecione o template de mensagem transacional.
+1. Publicar o modelo de mensagem transacional.
 
-1. No modelo , clique na guia **[!UICONTROL Seed addresses]** .
+1. No modelo, clique na guia **[!UICONTROL Seed addresses]**.
 
 1. No conteúdo do evento, insira as informações de teste no formato XML.
 
@@ -95,12 +95,12 @@ Com os seed addresses, você também pode exibir a renderização da mensagem pa
 
 ## Enviar uma prova {#sending-a-proof}
 
-Você pode testar o delivery de mensagens enviando uma prova para um seed address criado anteriormente.
+Você pode testar a entrega de mensagens enviando uma prova para um seed address criado anteriormente.
 
-O envio de uma prova envolve o mesmo processo de [delivery regular](../../delivery/using/steps-validating-the-delivery.md#sending-a-proof). No entanto, com mensagens transacionais, é necessário realizar as seguintes operações antecipadamente:
+O envio de uma prova envolve o mesmo processo de [entrega regular](../../delivery/using/steps-validating-the-delivery.md#sending-a-proof). No entanto, com mensagens transacionais, é necessário realizar as seguintes operações antecipadamente:
 
 * Crie um ou mais [seed addresses](#managing-seed-addresses-in-transactional-messages) com [dados de personalização](#personalization-data).
-* [Crie o conteúdo](../../message-center/using/creating-the-message-template.md#creating-message-content) da mensagem.
+* [Criar o conteúdo da mensagem](../../message-center/using/creating-the-message-template.md#creating-message-content).
 
 Para enviar a prova:
 
@@ -114,8 +114,8 @@ Para enviar a prova:
 
    ![](assets/messagecenter_send_proof_002.png)
 
-É possível acessar as provas em cada template através da guia **[!UICONTROL Audit]**. Para obter mais detalhes, consulte [Enviar uma prova](../../delivery/using/steps-validating-the-delivery.md#sending-a-proof).
+É possível acessar as provas em cada modelo através da guia **[!UICONTROL Audit]**. Para obter mais informações, consulte [Enviar uma prova](../../delivery/using/steps-validating-the-delivery.md#sending-a-proof).
 
 ![](assets/messagecenter_send_proof_003.png)
 
-Seu template de mensagem agora está pronto para ser [publicado](../../message-center/using/publishing-message-templates.md).
+O modelo de mensagem agora está pronto para ser [publicado](../../message-center/using/publishing-message-templates.md).
