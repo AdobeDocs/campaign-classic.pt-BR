@@ -7,9 +7,9 @@ content-type: reference
 topic-tags: importing-and-exporting-data
 exl-id: 1a79da3b-2abc-4bfc-a0ee-8471c478638d
 source-git-commit: 6f5e91a719553fbeb97811d30ce6318f857bec80
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '722'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -19,7 +19,7 @@ O Adobe Campaign permite importar arquivos compactados ou criptografados. Antes 
 
 Para fazer isso:
 
-1. Use o [Painel de controle do Campaign](https://experienceleague.adobe.com/docs/control-panel/using/instances-settings/gpg-keys-management.html#decrypting-data) para gerar um par de chave pública/privada.
+1. Use o [Painel de controle do Campaign](https://experienceleague.adobe.com/docs/control-panel/using/instances-settings/gpg-keys-management.html?lang=pt-BR#decrypting-data) para gerar um par de chave pública/privada.
 
    >[!NOTE]
    >
@@ -54,7 +54,7 @@ Nesse caso de uso, criaremos um fluxo de trabalho para importar dados que foram 
 
 As etapas para executar esse caso de uso são as seguintes:
 
-1. Use o Painel de controle do Campaign para gerar um par de chaves (público/privado). As etapas detalhadas estão disponíveis na [documentação do Painel de controle do Campaign](https://experienceleague.adobe.com/docs/control-panel/using/instances-settings/gpg-keys-management.html#decrypting-data).
+1. Use o Painel de controle do Campaign para gerar um par de chaves (público/privado). As etapas detalhadas estão disponíveis na [documentação do Painel de controle do Campaign](https://experienceleague.adobe.com/docs/control-panel/using/instances-settings/gpg-keys-management.html?lang=pt-BR#decrypting-data).
 
    * A chave pública será compartilhada com o sistema externo, que a usará para criptografar os dados que serão enviados para o Campaign.
    * A chave privada será usada pelo Campaign Classic para descriptografar os dados criptografados recebidos.
