@@ -6,9 +6,9 @@ feature: Visão geral
 role: Business Practitioner
 level: Beginner
 exl-id: 07c1f4a3-cf16-4a9b-b402-e13258799f91
-source-git-commit: 515587695115c23d9b248ecb87a7ae89ea7c62a0
+source-git-commit: 8a0535180640c63201d1a59539eac8c91a53cb8b
 workflow-type: tm+mt
-source-wordcount: '4466'
+source-wordcount: '4456'
 ht-degree: 99%
 
 ---
@@ -462,7 +462,7 @@ O guia de introdução às práticas recomendadas de delivery foi atualizado. [L
 
 ## de outubro de 2019 {#october-2019}
 
-A lista de mensagens de erro para o Campaign foi atualizada. [Leia mais](https://docs.adobe.com/content/help/en/campaign-classic/technicalresources/error_messages/error_codes.html)
+A lista de mensagens de erro para o Campaign foi atualizada. [Leia mais](https://experienceleague.adobe.com/developer/campaign-errors/error_codes.html)
 
 O guia de introdução ao GDPR foi melhorado e aprimorado. Agora se trata uma documentação de gerenciamento de privacidade, incluindo o GDPR e o CCPA. [Leia mais](https://helpx.adobe.com/content/help/br/campaign/kb/campaign-privacy.html)
 
@@ -516,7 +516,7 @@ A descrição da opção de fluxo de trabalho de pré-processo foi atualizada pa
 
 A nota técnica Experience Cloud Triggers foi atualizada. [Leia mais](../../integrations/using/about-triggers.md)
 
-A lista de mensagens de erro foi atualizada. [Leia mais](https://docs.adobe.com/content/help/en/campaign-classic/technicalresources/error_messages/error_codes.html)
+A lista de mensagens de erro foi atualizada. [Leia mais](https://experienceleague.adobe.com/developer/campaign-errors/error_codes.html)
 
 Foram adicionadas mais informações sobre métodos de autenticação SOAP para mensagens transacionais. [Leia mais](../../message-center/using/event-description.md)
 
