@@ -3,10 +3,10 @@ keywords: Campaign Classic;página inicial;tópicos populares
 product: campaign
 title: Documentação do produto Adobe Campaign Classic v7
 exl-id: 6b3f1689-80de-49fd-b7ee-7a2a1931d157
-source-git-commit: c0a3d9217696f5f5622a6af8f64c62b1a9fbce20
+source-git-commit: 8a0535180640c63201d1a59539eac8c91a53cb8b
 workflow-type: tm+mt
-source-wordcount: '262'
-ht-degree: 98%
+source-wordcount: '257'
+ht-degree: 96%
 
 ---
 
@@ -80,7 +80,7 @@ ht-degree: 98%
 
 | Páginas úteis | Recursos para desenvolvedores |
 |---|---|
-| [Notas de versão](/help/rn/using/latest-release.md) | [Lista de mensagens de erro](https://docs.adobe.com/content/help/en/campaign-classic/technicalresources/error_messages/error_codes.html) |
+| [Notas de versão](/help/rn/using/latest-release.md) | [Lista de mensagens de erro](https://experienceleague.adobe.com/developer/campaign-errors/error_codes.html) |
 | [Vídeos explicativos](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html?lang=pt-BR) | [Modelo de dados do Campaign](configuration/using/about-data-model.md) |
 | [Matriz de compatibilidade](rn/using/compatibility-matrix.md) | [JSAPI do Campaign](https://docs.adobe.com/content/help/en/campaign-classic/technicalresources/api/p-1.html) |
 | Atualização do [[!DNL Gold Standard] ](rn/using/gs-overview.md) | [Manual de rastreamento](https://helpx.adobe.com/br/campaign/kb/acc-tracking.html) |
