@@ -6,16 +6,16 @@ audience: installation
 content-type: reference
 topic-tags: initial-configuration
 exl-id: 236afdfe-fb23-4ebb-b000-76e14bf01d9e
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 939552f127207f258448b2a82bb8c4c000371694
 workflow-type: tm+mt
-source-wordcount: '561'
-ht-degree: 1%
+source-wordcount: '612'
+ht-degree: 0%
 
 ---
 
 # Gerenciamento de arquivos e recursos{#file-and-resmanagement}
 
-## Limitar o formato do arquivo de upload {#limiting-uploadable-files}
+## Limitar o formato de arquivo de upload {#limiting-uploadable-files}
 
 Use o atributo **uploadWhiteList** para restringir os tipos de arquivo disponíveis para upload no servidor Adobe Campaign.
 
@@ -102,6 +102,19 @@ Se você usar o mesmo proxy para vários tipos de conexão, somente o proxyHTTP 
 Se você tiver conexões internas que devem passar pelo proxy, adicione-as no parâmetro override .
 
 Se quiser desativar temporariamente a conexão proxy, defina o parâmetro ativado como &quot;false&quot; ou &quot;0&quot;.
+
+Se você precisar usar o conector HTTP/2 do iOS por meio de um proxy, os seguintes modos de proxy HTTP serão compatíveis:
+
+* HTTP sem autenticação
+* Autenticação básica HTTP
+
+Para ativar o modo proxy, a seguinte alteração deve ser feita no arquivo `serverconf.xml`:
+
+```
+<nmac useHTTPProxy="true">
+```
+
+Para obter mais informações sobre esse conector HTTP/2 do iOS, consulte esta [page](../../delivery/using/about-mobile-app-channel.md).
 
 ## Gerenciar recursos públicos {#managing-public-resources}
 
