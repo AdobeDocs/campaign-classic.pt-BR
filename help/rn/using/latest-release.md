@@ -3,11 +3,11 @@ product: campaign
 title: Versão mais recente
 description: Versão mais recente do Campaign Classic Observações
 feature: Visão geral
-role: Business Practitioner
+role: User
 level: Beginner
 exl-id: d65869ca-a785-4327-8e8d-791c28e4696c
-source-git-commit: 28083eb0271c8c148955fa33978479dc3683eaed
-workflow-type: ht
+source-git-commit: 6c28e6cd78ce7a8ee5c0dc7e671de780787b9f57
+workflow-type: tm+mt
 source-wordcount: '1953'
 ht-degree: 100%
 
@@ -158,14 +158,14 @@ Saiba mais na [página sobre recursos obsoletos e removidos](../../rn/using/depr
 * Correção de um problema que impedia o envio de uma entrega com um grupo de provas devido a um mecanismo de associação específico que falhava na personalização da entrega. (NEO-14391)
 * Correção de um problema em que não era enviado um alerta com a atividade de alerta se uma consulta e uma atividade de enriquecimento tivessem como alvo a tabela de entrega. (NEO-25157)
 
-## ![](assets/do-not-localize/red_2.png) Versão 21.1.2 – Compilação 9282 {#release-21-1-2-build-9282}
+## ![](assets/do-not-localize/red_2.png) Versão 21.1.2 – Build 9282 {#release-21-1-2-build-9282}
 
 _15 de abril de 2021_
 
 * O gerenciamento de senhas foi aprimorado para otimizar a memória.
 * Correção de um problema que poderia causar falhas de MTA.
 
-## ![](assets/do-not-localize/red_2.png) Versão 21.1.1 - Compilação 9277 {#release-21-1-1-build-9277}
+## ![](assets/do-not-localize/red_2.png) Versão 21.1.1 – Build 9277 {#release-21-1-1-build-9277}
 
 _22 de fevereiro de 2021_
 
