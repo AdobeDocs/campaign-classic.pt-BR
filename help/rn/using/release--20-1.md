@@ -3,10 +3,10 @@ product: campaign
 title: Versão 20.1
 description: Versão 20.1
 feature: Visão geral
-role: Business Practitioner
+role: User
 level: Beginner
 exl-id: 7e4234c9-3d8f-4014-a870-75e91cfad725
-source-git-commit: 883ac681e0bf0e4ccf916c745924b7340a4d22f9
+source-git-commit: 6c28e6cd78ce7a8ee5c0dc7e671de780787b9f57
 workflow-type: tm+mt
 source-wordcount: '1560'
 ht-degree: 99%
@@ -15,7 +15,7 @@ ht-degree: 99%
 
 # Versão 20.1{#release-20-1}
 
-## ![](assets/do-not-localize/limited_2.png) Versão 20.1.4 – Compilação 9126 {#release-20-1-4-build-9126}
+## ![](assets/do-not-localize/limited_2.png) Versão 20.1.4 – Build 9126 {#release-20-1-4-build-9126}
 
 _15 de abril de 2021_
 
@@ -44,7 +44,7 @@ _23 de dezembro de 2020_
 > * Esta versão é fornecida com um novo protocolo de conexão: se você estiver se conectando ao Campaign pelo Serviço de identidade da Adobe (IMS), a atualização será obrigatória para o servidor do Campaign e o console do cliente poderem se conectar ao Campaign após **30 de junho de 2021**. [Saiba mais](../../technotes/ims-updates.md)
    >
    > 
-* Esta versão vem com uma [correção de segurança](https://helpx.adobe.com/security/products/campaign/apsb21-04.html): a atualização é obrigatória para reforçar a segurança do ambiente.
+* Esta versão vem com uma [correção de segurança](https://helpx.adobe.com/br/security/products/campaign/apsb21-04.html): a atualização é obrigatória para reforçar a segurança do ambiente.
 
 
 * O protocolo de conexão foi atualizado para seguir o novo mecanismo de autenticação IMS.
@@ -53,19 +53,19 @@ _23 de dezembro de 2020_
 
 
 
-## ![](assets/do-not-localize/red_2.png) Versão 20.1.3 – Compilação 9124{#release-20-1-3-build-9124}
+## ![](assets/do-not-localize/red_2.png) Versão 20.1.3 – Build 9124{#release-20-1-3-build-9124}
 
 _6 de maio de 2020_
 
 * Correção de um problema com a atividade **Transferência de Arquivo**, que impedia que a autenticação com a chave SFTP funcionasse no Debian 9. (NEO-23183)
 
-## ![](assets/do-not-localize/red_2.png) Versão 20.1.2 – Compilação 9123{#release-20-1-2-build-9123}
+## ![](assets/do-not-localize/red_2.png) Versão 20.1.2 – Build 9123{#release-20-1-2-build-9123}
 
 _13 de março de 2020_
 
 * Correção de um problema que impedia a implantação da versão em servidores Red Hat 7. (NEO-23332)
 
-## ![](assets/do-not-localize/red_2.png) Versão 20.1 – Compilação 9122{#release-20-1-build-9122}
+## ![](assets/do-not-localize/red_2.png) Versão 20.1 – Build 9122{#release-20-1-build-9122}
 
 _17 de fevereiro de 2020_
 
