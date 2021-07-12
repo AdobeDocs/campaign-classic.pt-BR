@@ -3,11 +3,11 @@ product: campaign
 title: Sobre perfis
 description: Sobre perfis
 feature: Perfis e públicos
-role: Business Practitioner, Data Architect
+role: User, Data Architect
 level: Beginner
 exl-id: 54f1ad6c-54b0-4448-8c38-806dd75c1dae
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
-workflow-type: ht
+source-git-commit: 6c28e6cd78ce7a8ee5c0dc7e671de780787b9f57
+workflow-type: tm+mt
 source-wordcount: '899'
 ht-degree: 100%
 
@@ -105,7 +105,7 @@ A contagem de perfis ativos está disponível somente para **Instâncias de mark
 >
 >Você também pode monitorar o número de perfis ativos em sua instância diretamente do Painel de controle do Campaign. Para obter mais informações, consulte a [documentação do Painel de controle do Campaign](https://experienceleague.adobe.com/docs/control-panel/using/performance-monitoring/active-profiles-monitoring.html?lang=pt-BR).
 
-## Vídeo tutorial {#create-profiles-video}
+## Tutorial em vídeo {#create-profiles-video}
 
 Saiba como acessar os dados do perfil, classificar e filtrar perfis, além de criar e gerenciar perfis manualmente.
 
