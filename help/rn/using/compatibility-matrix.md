@@ -3,13 +3,13 @@ product: campaign
 title: Matriz de compatibilidade do Campaign Classic
 description: Matriz de compatibilidade do Campaign Classic
 feature: Visão geral
-role: Business Practitioner
+role: User
 level: Beginner
 exl-id: b8c1f287-06f4-4c34-8cca-b0c7676abbc2
-source-git-commit: 1caacff8b10c8593945b872d045fdaab3f26190c
+source-git-commit: 6c28e6cd78ce7a8ee5c0dc7e671de780787b9f57
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '549'
+ht-degree: 98%
 
 ---
 
@@ -284,7 +284,7 @@ Para saber mais sobre itens obsoletos, visite [esta página](../../rn/using/depr
 
 ## Console do cliente {#ClientConsoleoperatingsystems}
 
-:warning: Os seguintes sistemas operacionais e navegadores são necessários para usar o Console do Cliente do Campaign.
+:warning: os seguintes sistemas operacionais e navegadores são necessários para usar o Console do cliente do Campaign.
 
 ### Sistemas operacionais
 
