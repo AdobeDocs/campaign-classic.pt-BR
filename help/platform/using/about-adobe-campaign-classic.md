@@ -3,13 +3,13 @@ product: campaign
 title: Sobre o Adobe Campaign Classic
 description: Conheça os principais recursos, a interface do usuário e as diretrizes globais.
 feature: Visão geral
-role: Business Practitioner
+role: User
 level: Beginner
 exl-id: 8febceb0-9694-4045-a630-a7ff2fd18943
-source-git-commit: 86963746d3de3396963d221ddbd1ef7d89733d2f
+source-git-commit: 6c28e6cd78ce7a8ee5c0dc7e671de780787b9f57
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '912'
+ht-degree: 100%
 
 ---
 
@@ -33,7 +33,7 @@ O ciclo de campanha de marketing do Adobe Campaign ilustra as principais áreas 
 
 ![](assets/d_ncs_user_emarketing.png)
 
-### Integrated Customer Profile {#integrated-customer-profile}
+### Perfil de cliente integrado {#integrated-customer-profile}
 
 Os perfis (clientes, clientes potenciais, assinantes de boletim informativo etc.) são centralizados no banco de dados do Adobe Campaign. Há vários mecanismos possíveis para obter perfis e criar esse banco de dados: coleta on-line via formulários Web, importação manual ou automática de arquivos de texto, replicação com bancos de dados corporativos ou outros sistemas de informações. Com o Adobe Campaign, você pode incorporar o histórico de marketing, informações de compras, preferências, dados de CRM e quaisquer dados PII relevantes em uma exibição consolidada para analisar e tomar decisões.
 
@@ -43,7 +43,7 @@ As noções básicas de gerenciamento de perfil são explicadas em [Sobre perfis
 
 ### Segmentação direcionada {#targeted-segmentation}
 
-O Adobe Campaign tem recursos avançados de segmentação que são fáceis de usar e permitem a criação de ofertas diferenciadas e altamente direcionadas. A funcionalidade de análise descritiva permite analisar informações sobre os altos e baixos de suas campanhas de marketing. A gestão de filtros e a funcionalidade do [editor gráfico de consultas](../../platform/using/about-queries-in-campaign.md) permitem filtrar sua população de assinantes e amostras ou criar grupos de destino com base em um número ilimitado de critérios. Os recursos de análise e direcionamento estão descritos [nesta página](../../reporting/using/about-descriptive-analysis.md) e na seção [Criação de filtros](../../platform/using/creating-filters.md).
+O Adobe Campaign tem recursos avançados de segmentação e direcionamento que são fáceis de usar e permitem a criação de ofertas diferenciadas e altamente direcionadas. A funcionalidade de análise descritiva permite analisar informações sobre os altos e baixos de suas campanhas de marketing. A gestão de filtros e a funcionalidade do [editor gráfico de consultas](../../platform/using/about-queries-in-campaign.md) permitem filtrar sua população de assinantes e amostras ou criar grupos de destino com base em um número ilimitado de critérios. Os recursos de análise e direcionamento estão descritos [nesta página](../../reporting/using/about-descriptive-analysis.md) e na seção [Criação de filtros](../../platform/using/creating-filters.md).
 
 A funcionalidade avançada de Gestão de dados amplia os recursos de processamento de dados. Ela simplifica e otimiza o processo de segmentação ao incluir dados não modeladas no datamart. Essa funcionalidade é detalhada [nesta página](../../workflow/using/targeting-data.md#data-management).
 
