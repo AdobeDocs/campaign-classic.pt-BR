@@ -3,10 +3,10 @@ product: campaign
 title: Notas de versão do Campaign 20.3
 description: Notas de versão do Campaign 20.3
 feature: Visão geral
-role: Business Practitioner
+role: User
 level: Beginner
 exl-id: e927b7fc-95cd-4e08-bab7-ceeb6e67c265
-source-git-commit: c0a3d9217696f5f5622a6af8f64c62b1a9fbce20
+source-git-commit: 6c28e6cd78ce7a8ee5c0dc7e671de780787b9f57
 workflow-type: tm+mt
 source-wordcount: '1951'
 ht-degree: 98%
@@ -15,7 +15,7 @@ ht-degree: 98%
 
 # Versão 20.3{#release-20-3}
 
-## ![](assets/do-not-localize/red_2.png) Versão 20.3.3 – Compilação 9234 {#release-20-3-3-build-9234}
+## ![](assets/do-not-localize/red_2.png) Versão 20.3.3 – Build 9234 {#release-20-3-3-build-9234}
 
 _11 de janeiro de 2021_
 
@@ -25,7 +25,7 @@ _11 de janeiro de 2021_
 
 * Correção de um problema de regressão relacionado ao processo de geração de banda larga que pode causar o travamento do processo de MTA.
 
-## ![](assets/do-not-localize/red_2.png) Versão 20.3.1 – Compilação 9228 {#release-20-3-1-build-9228}
+## ![](assets/do-not-localize/red_2.png) Versão 20.3.1 – Build 9228 {#release-20-3-1-build-9228}
 
 _27 de outubro de 2020_
 
