@@ -3,13 +3,13 @@ product: campaign
 title: Notas de versão do Campaign 18.10
 description: Notas de versão do Campaign 18.10
 feature: Visão geral
-role: Business Practitioner
+role: User
 level: Beginner
 exl-id: 57996f77-4ac2-402a-95db-b75d4bea4eeb
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 6c28e6cd78ce7a8ee5c0dc7e671de780787b9f57
 workflow-type: tm+mt
-source-wordcount: '2372'
-ht-degree: 98%
+source-wordcount: '2370'
+ht-degree: 97%
 
 ---
 
@@ -138,7 +138,7 @@ ht-degree: 98%
 
 * Correção de um problema de segurança que poderia resultar em vulnerabilidades para ataques Server Side Request Forgery (SSRF) attacks and denial of service (DoS). (NEO-11453)
 * O conteúdo (redirecionamento de rastreamento, mirror pages, pesquisas etc.) agora será distribuído pelo Campaign com o cabeçalho X-Robots-Tag: nocache. Isso impede o indexação deste conteúdo por mecanismos de pesquisa da Internet. (NEO-11101)
-* Correção de um problema de injeção de XTK na API de subscrição (nms:subscription:Unsubscribe e nms:subscription:Subscribe).
+* Correção de um problema de injeção de XTK na API de assinatura (nms:subscription:Unsubscribe e nms:subscription:Subscribe).
 * Correção de um problema de injeção de XTK em unsubscription da aplicação Web.
 * Senhas removidas que foram exibidas sem segurança em alguns logs SMS.
 
