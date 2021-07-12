@@ -3,10 +3,10 @@ product: campaign
 title: Versão 20.2
 description: Versão 20.2
 feature: Visão geral
-role: Business Practitioner
+role: User
 level: Beginner
 exl-id: fcaab1aa-c8f9-4606-b0d8-eb481a38f588
-source-git-commit: 883ac681e0bf0e4ccf916c745924b7340a4d22f9
+source-git-commit: 6c28e6cd78ce7a8ee5c0dc7e671de780787b9f57
 workflow-type: tm+mt
 source-wordcount: '2968'
 ht-degree: 92%
@@ -15,7 +15,7 @@ ht-degree: 92%
 
 # Versão 20.2{#release-20-2}
 
-## ![](assets/do-not-localize/green_2.png) Versão 20.2.5 – Compilação 9188 {#release-20-2-5-build-9188}
+## ![](assets/do-not-localize/green_2.png) Versão 20.2.5 – Build 9188 {#release-20-2-5-build-9188}
 
 _15 de abril de 2021_
 
@@ -44,7 +44,7 @@ _31 de março de 2021_
 * Correção de um problema que poderia causar falha no workflow Faturamento ao usar um target mapping personalizado. A chave primária do esquema personalizado é armazenada na coluna &quot;sourceId&quot; que permitia apenas valores inteiros. Agora permite números inteiros e valores de sequências. (NEO-25914, NEO-28146)
 * Correção de uma regressão que impedia o uso de alguns componentes do console, como o seletor de datas e o gerenciamento de imagens nos deliveries. (NEO-31453)
 
-## ![](assets/do-not-localize/red_2.png) Versão 20.2.4 – Compilação 9187 {#release-20-2-4-build-9187}
+## ![](assets/do-not-localize/red_2.png) Versão 20.2.4 – Build 9187 {#release-20-2-4-build-9187}
 
 _15 de abril de 2021_
 
@@ -62,7 +62,7 @@ _22 de dezembro de 2020_
 >[!CAUTION]
 >
 > * Esta versão é fornecida com um novo protocolo de conexão: se você estiver se conectando ao Campaign pelo Serviço de identidade da Adobe (IMS), a atualização será obrigatória para o servidor do Campaign e o console do cliente poderem se conectar ao Campaign após **30 de junho de 2021**.  [Saiba mais](../../technotes/ims-updates.md)
-> * Esta versão vem com uma [correção de segurança](https://helpx.adobe.com/security/products/campaign/apsb21-04.html): a atualização é obrigatória para reforçar a segurança do ambiente.
+> * Esta versão vem com uma [correção de segurança](https://helpx.adobe.com/br/security/products/campaign/apsb21-04.html): a atualização é obrigatória para reforçar a segurança do ambiente.
 > * Se você estiver usando a integração dos acionadores da Experience Cloud por meio da autenticação oAuth, será necessário migrar para o Adobe I/O conforme descrito [nesta página](../../integrations/using/configuring-adobe-io.md). O modo de autenticação oAuth herdado com o Campaign será desativado em **30 de novembro de 2021**.
 
 
@@ -101,7 +101,7 @@ _22 de dezembro de 2020_
 
 ![](assets/do-not-localize/cp-icon.png) **Nova versão de outubro do Painel de controle do Campaign** com configuração de domínio usando CNAMEs e novos recursos de monitoramento de banco de dados. [Saiba mais](https://experienceleague.adobe.com/docs/control-panel/using/release-notes.html?lang=pt-BR).
 
-## ![](assets/do-not-localize/red_2.png) Versão 20.2.3 – Compilação 9182 {#release-20-2-3-build-9182}
+## ![](assets/do-not-localize/red_2.png) Versão 20.2.3 – Build 9182 {#release-20-2-3-build-9182}
 
 _11 de setembro de 2020_
 
@@ -126,7 +126,7 @@ _11 de setembro de 2020_
 * Correção de uma regressão durante a pós-atualização, causando um início incorreto do nlserver (logs de erros).
 * O gerenciamento de atualizações da memória compartilhada foi aprimorado. As etapas adicionais necessárias na versão 20.2 não são mais necessárias.
 
-## ![](assets/do-not-localize/red_2.png) Versão 20.2.2 – Compilação 9180 {#release-20-2-2-build-9180}
+## ![](assets/do-not-localize/red_2.png) Versão 20.2.2 – Build 9180 {#release-20-2-2-build-9180}
 
 _22 de julho de 2020_
 
@@ -155,7 +155,7 @@ _22 de julho de 2020_
 
 ![](assets/do-not-localize/cp-icon.png) **Nova versão de junho do Painel de controle do Campaign** com monitoramento de perfis ativos, auditoria de entregabilidade de subdomínio e gerenciamento de chaves GPG. [Saiba mais](https://experienceleague.adobe.com/docs/control-panel/using/release-notes.html).
 
-## ![](assets/do-not-localize/red_2.png) Versão 20.2.1 – Compilação 9178 {#release-20-2-1-build-9178}
+## ![](assets/do-not-localize/red_2.png) Versão 20.2.1 – Build 9178 {#release-20-2-1-build-9178}
 
 _8 de junho de 2020_
 
