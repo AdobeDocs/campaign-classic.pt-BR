@@ -6,10 +6,10 @@ feature: Visão geral
 role: Business Practitioner
 level: Beginner
 exl-id: 9e3a11b1-3070-4d90-91d5-7c559bdd500e
-source-git-commit: c0a3d9217696f5f5622a6af8f64c62b1a9fbce20
+source-git-commit: 6a2440224f9c7c7dad5d979c6c75ef429209d252
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '1056'
+ht-degree: 95%
 
 ---
 
@@ -27,6 +27,17 @@ A compilação 9032@d030c36 inclui a seguinte correção:
 
 **Somente a atualização do console é obrigatória. Não é necessária nenhuma atualização do servidor.**
 
+>[!CAUTION]
+>
+> * Se estiver se conectando ao Campaign com sua Adobe ID, por meio do Adobe Identity Service (IMS), a atualização é obrigatória para o servidor do Campaign e o console do cliente poderem se conectar ao Campaign depois de **30 de junho de 2021**. [Saiba mais](../../technotes/ims-updates.md)
+> * Esta versão vem com uma [correção de segurança](https://helpx.adobe.com/br/security/products/campaign/apsb21-04.html): a atualização é obrigatória para reforçar a segurança do ambiente.
+> * Se você estiver usando a integração dos acionadores da Experience Cloud por meio da autenticação oAuth, será necessário migrar para o Adobe I/O conforme descrito [nesta página](../../integrations/using/configuring-adobe-io.md). O modo de autenticação oAuth herdado com o Campaign será desativado em **30 de novembro de 2021**.
+
+>
+>
+Saiba mais nas perguntas [[!DNL Gold Standard] frequentes de atualização do 11](https://helpx.adobe.com/br/campaign/kb/gold-standard-upgrade.html)
+
+
 _2 de março de 2021_
 
 A compilação 9032@10c2709 inclui a seguinte correção:
@@ -37,20 +48,19 @@ A compilação 9032@10c2709 inclui a seguinte correção:
 
 >[!NOTE]
 >
-> Conecte-se à [Distribuição de software da Adobe](https://experience.adobe.com/#/downloads/content/software-distribution/br/campaign.html) para baixar a nova versão. Saiba como propor a atualização do console para todos os usuários finais [nesta página](../../installation/using/client-console-availability-for-windows.md).
+> Conecte-se à [Distribuição de software da Adobe](https://experience.adobe.com/#/downloads/content/software-distribution/en/campaign.html) para baixar a nova versão. Saiba como propor a atualização do console para todos os usuários finais [nesta página](../../installation/using/client-console-availability-for-windows.md).
 
 _22 de dezembro de 2020_
 
+<!--
 >[!CAUTION]
 >
-> * Esta versão é fornecida com um novo protocolo de conexão: se você estiver se conectando ao Campaign pelo Serviço de identidade da Adobe (IMS), a atualização será obrigatória para o servidor do Campaign e o console do cliente poderem se conectar ao Campaign após **30 de junho de 2021**. [Saiba mais](../../technotes/ims-updates.md)
-> * Esta versão vem com uma [correção de segurança](https://helpx.adobe.com/br/security/products/campaign/apsb21-04.html): a atualização é obrigatória para reforçar a segurança do ambiente.
-> * Se você estiver usando a integração dos acionadores da Experience Cloud por meio da autenticação oAuth, será necessário migrar para o Adobe I/O conforme descrito [nesta página](../../integrations/using/configuring-adobe-io.md). O modo de autenticação oAuth herdado com o Campaign será desativado em **30 de novembro de 2021**.
-
+> * This release comes with a new connection protocol: if you are connecting to Campaign through Adobe Identity Service (IMS), upgrade is mandatory for both Campaign server and client console to be able to connect to Campaign after **June 30, 2021**. [Learn more](../../technotes/ims-updates.md)
+> * This release comes with a [security fix](https://helpx.adobe.com/security/products/campaign/apsb21-04.html): upgrade is mandatory to reinforce your environment security. 
+> * If you are using the Experience Cloud Triggers integration through oAuth authentication, you need to move to Adobe I/O as described [in this page](../../integrations/using/configuring-adobe-io.md). Legacy oAuth authentication mode with Campaign will be retired on **November 30, 2021**.
 >
->
-Saiba mais nas perguntas [[!DNL Gold Standard] frequentes de atualização do 11](https://helpx.adobe.com/br/campaign/kb/gold-standard-upgrade.html).
-
+>Learn more in the [[!DNL Gold Standard] 11 upgrade FAQ](https://helpx.adobe.com/campaign/kb/gold-standard-upgrade.html).
+-->
 O build 9032@d3b452f inclui os seguintes aprimoramentos e correções:
 
 * O protocolo de conexão foi atualizado para seguir o novo mecanismo de autenticação IMS.
