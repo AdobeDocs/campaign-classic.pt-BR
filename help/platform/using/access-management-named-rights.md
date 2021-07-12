@@ -3,11 +3,11 @@ product: campaign
 title: Usar direitos nomeados para configurar permissões
 description: Saiba como usar direitos nomeados para configurar permissões
 feature: Gerenciamento de acesso
-role: Business Practitioner, Administrator
+role: User, Admin
 level: Beginner
 exl-id: 07470a91-d8d2-4c41-9555-05522c8068f0
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
-workflow-type: ht
+source-git-commit: 6c28e6cd78ce7a8ee5c0dc7e671de780787b9f57
+workflow-type: tm+mt
 source-wordcount: '505'
 ht-degree: 100%
 
@@ -65,7 +65,7 @@ Esses direitos são os seguintes:
 >
 >Essa lista pode variar dependendo dos complementos instalados na plataforma.
 
-## Matriz de direitos de acesso {#access-rights-matrix}
+## Acessar matriz de direitos {#access-rights-matrix}
 
 Os grupos padrão e os direitos nomeados permitem que os operadores acessem determinadas pastas na hierarquia de navegação e concedam permissões de leitura, gravação e exclusão.
 
