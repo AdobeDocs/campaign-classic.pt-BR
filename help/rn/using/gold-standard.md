@@ -24,7 +24,7 @@ _14 de abril de 2021_
 A compilação 9032@d030c36 inclui a seguinte correção:
 
 * Correção de uma regressão do console do cliente que causava mensagens de erro persistentes na tela de conexão IMS. (NEO-34821)
-* Esta build de console é necessária para manter [IMS access](../../technotes/ims-updates.md)
+* Esta build de console é necessária para manter [IMS access](../../technotes/ims-updates.md).
 
 **Somente a atualização do console é obrigatória. Não é necessária nenhuma atualização do servidor.**
 
