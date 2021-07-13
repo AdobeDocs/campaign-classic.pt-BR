@@ -6,9 +6,9 @@ feature: Visão geral
 role: User
 level: Beginner
 exl-id: 9e3a11b1-3070-4d90-91d5-7c559bdd500e
-source-git-commit: 6c28e6cd78ce7a8ee5c0dc7e671de780787b9f57
+source-git-commit: c5e1b10b82c8ea1cf8bcb617ee48fe13e16fbfd9
 workflow-type: tm+mt
-source-wordcount: '1056'
+source-wordcount: '1066'
 ht-degree: 95%
 
 ---
@@ -24,19 +24,19 @@ _14 de abril de 2021_
 A compilação 9032@d030c36 inclui a seguinte correção:
 
 * Correção de uma regressão do console do cliente que causava mensagens de erro persistentes na tela de conexão IMS. (NEO-34821)
+* Esta build de console é necessária para manter [IMS access](../../technotes/ims-updates.md)
 
 **Somente a atualização do console é obrigatória. Não é necessária nenhuma atualização do servidor.**
 
 >[!CAUTION]
 >
-> * Se estiver se conectando ao Campaign com sua Adobe ID, por meio do Adobe Identity Service (IMS), a atualização é obrigatória para o servidor do Campaign e o console do cliente poderem se conectar ao Campaign depois de **30 de junho de 2021**. [Saiba mais](../../technotes/ims-updates.md)
+> * Se você estiver se conectando ao Campaign com sua Adobe ID, por meio do Adobe Identity Management Service (IMS), a atualização é obrigatória para o servidor do Campaign e o console do cliente poderem se conectar ao Campaign depois de **30 de junho de 2021**. [Saiba mais](../../technotes/ims-updates.md)
 > * Esta versão vem com uma [correção de segurança](https://helpx.adobe.com/br/security/products/campaign/apsb21-04.html): a atualização é obrigatória para reforçar a segurança do ambiente.
 > * Se você estiver usando a integração dos acionadores da Experience Cloud por meio da autenticação oAuth, será necessário migrar para o Adobe I/O conforme descrito [nesta página](../../integrations/using/configuring-adobe-io.md). O modo de autenticação oAuth herdado com o Campaign será desativado em **30 de novembro de 2021**.
 
 >
 >
 Saiba mais nas perguntas [[!DNL Gold Standard] frequentes de atualização do 11](https://helpx.adobe.com/br/campaign/kb/gold-standard-upgrade.html)
-
 
 _2 de março de 2021_
 
