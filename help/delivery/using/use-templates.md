@@ -1,12 +1,12 @@
 ---
 product: campaign
-title: Usar templates do delivery
+title: Usar modelos de entrega
 audience: delivery
 content-type: reference
 topic-tags: deliveries-best-practices
 exl-id: a5da3f29-5eab-428c-b7c3-d9e4243fe628
 source-git-commit: a129f49d4f045433899fd7fdbd057fb16d0ed36a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '577'
 ht-degree: 100%
 
@@ -18,7 +18,7 @@ Os templates do delivery oferecem mais eficiência ao fornecer cenários prontos
 
 Saiba mais sobre templates do delivery [nesta seção](creating-a-delivery-template.md).
 
-## Introdução a templates do delivery {#gs-templates}
+## Introdução a modelos de entrega {#gs-templates}
 
 Um [template do delivery](creating-a-delivery-template.md) permite definir uma única vez um conjunto de propriedades técnicas e funcionais que atendam às suas necessidades e que possam ser reutilizadas para delivery futuros. Você pode economizar tempo e padronizar deliveries quando necessário.
 
@@ -32,7 +32,7 @@ Quando você gerencia várias marcas no Adobe Campaign, a Adobe recomenda ter um
 
 * Alguns ISPs (provedores de serviço de internet) verificam a validade do endereço do remetente antes de aceitarem mensagens.
 
-* Um endereço mal formado pode resultar na rejeição pelo servidor de recebimento. Você precisa ter certeza de que o endereço informado está correto.
+* Um endereço formado incorretamente pode resultar na rejeição pelo servidor de recebimento. Você precisa ter certeza de que o endereço informado está correto.
 
 * O endereço deve identificar explicitamente o remetente. O domínio deve ser de propriedade e registrado pelo remetente.
 
