@@ -7,13 +7,13 @@ content-type: reference
 topic-tags: a-b-testing
 exl-id: 77b3a906-b76e-49e1-b524-b6f1ae537259
 source-git-commit: 895aa2fd4fa9c7c71c0073e9be33c12d4e92c9fa
-workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+workflow-type: ht
+source-wordcount: '86'
+ht-degree: 100%
 
 ---
 
-# Criar templates do delivery {#step-3--creating-two-delivery-templates}
+# Criar os modelos de entrega {#step-3--creating-two-delivery-templates}
 
 Agora devemos criar dois modelos de delivery. Cada modelo será referenciado em uma atividade de **[!UICONTROL Email delivery]** vinculada à atividade **[!UICONTROL Split]**. Para obter mais informações, consulte [esta seção](about-templates.md).
 
@@ -30,4 +30,4 @@ Agora devemos criar dois modelos de delivery. Cada modelo será referenciado em 
 
    ![](assets/use_case_abtesting_deliverymodel_003.png)
 
-Agora você pode configurar os deliveries no workflow. [Saiba mais](a-b-testing-uc-configuring-deliveries.md).
+Agora você pode configurar as entregas no fluxo de trabalho. [Saiba mais](a-b-testing-uc-configuring-deliveries.md).
