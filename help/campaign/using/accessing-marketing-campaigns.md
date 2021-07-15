@@ -7,9 +7,9 @@ content-type: reference
 topic-tags: about-marketing-campaigns
 exl-id: 1278bda1-f83c-4d38-8042-e6611755cf36
 source-git-commit: ee3d643e4ba607b3d7ca816eabf862b867d1f3f4
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1046'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -17,9 +17,9 @@ ht-degree: 99%
 
 O Adobe Campaign permite criar, configurar, executar e analisar campanhas de marketing. Todas as campanhas de marketing podem ser gerenciadas a partir de um centro de controle unificado.
 
-## Noções básicas da área de trabalho {#workspace-basics}
+## Noções básicas do Workspace {#workspace-basics}
 
-### Página inicial {#home-page}
+### Home page {#home-page}
 
 Depois de se conectar ao Adobe Campaign, você verá a home page.
 
@@ -34,7 +34,7 @@ O bloco **[!UICONTROL Browsing]** da guia **[!UICONTROL Campaigns]** oferece vá
 * **Calendário da campanha**: calendário de planos, programas de marketing, remessas e campanhas. Consulte [Calendário da campanha](#campaign-calendar).
 * **Campanhas**: acesso às campanhas contidas em todos os programas de marketing.
 * **Remessas**: acesso às remessas vinculadas às campanhas.
-* **Aplicações** Web: acesso a aplicações web (formulários, landing pages, etc.).
+* **Aplicativos Web**: acesso a aplicativos Web (formulários, páginas de aterrissagem etc.).
 
 >[!NOTE]
 >
@@ -60,7 +60,7 @@ Você pode filtrar as informações exibidas no calendário da campanha. Para fa
 
 Também é possível usar o campo **[!UICONTROL Search]** para filtrar os itens exibidos.
 
-Os ícones vinculados a cada item permitem a você visualizar o status: concluído, em andamento, sendo editado, etc.
+Os ícones vinculados a cada item permitem visualizar o status: concluído, em andamento, sendo editado etc.
 
 ### Navegação em um programa de marketing {#browsing-in-a-marketing-program}
 
@@ -80,7 +80,7 @@ Ao editar um programa, use as guias descritas abaixo para procurar e configurá-
 
    ![](assets/s_ncs_user_interface_campaign05.png)
 
-#### Campanhas de navegação {#browsing-campaigns}
+#### Procurar campanhas {#browsing-campaigns}
 
 As campanhas podem ser acessadas por meio do calendário da campanha, da guia **[!UICONTROL Schedule]** do programa ou da lista de campanhas.
 
@@ -149,9 +149,9 @@ As campanhas são criadas por meio de templates de campanha. É possível config
 
 >[!NOTE]
 >
->Para acessar as configurações da campanha e fazer alterações, clique no link **[!UICONTROL Advanced campaign parameters...]** na guia **[!UICONTROL Edit]**. Para obter mais informações sobre como configurar parâmetros no nível da campanha para que os deliveries herdem valores automaticamente, consulte [nossa Nota técnica](https://helpx.adobe.com/br/campaign/kb/simplifying-campaign-management-acc.html#Setparametersatthecampaignlevelsodeliveriesinheritvaluesautomatically).
+>Para acessar as configurações da campanha e fazer alterações, clique no link **[!UICONTROL Advanced campaign parameters...]** na guia **[!UICONTROL Edit]**. Para obter mais informações sobre como configurar parâmetros no nível da campanha para que as entregas herdem valores automaticamente, consulte [nossa Nota técnica](https://helpx.adobe.com/br/campaign/kb/simplifying-campaign-management-acc.html#Setparametersatthecampaignlevelsodeliveriesinheritvaluesautomatically).
 
-## Usar a interface da Web {#using-the-web-interface-}
+## Utilização da interface da web {#using-the-web-interface-}
 
 Você pode acessar as telas do console do Adobe Campaign por meio de um navegador da Internet para exibir todas as campanhas e remessas, bem como relatórios e informações dos perfis em seu banco de dados. Este acesso não habilita a criação de registros. Dependendo dos direitos do operador, você pode visualizar e/ou agir nos dados do banco de dados. Por exemplo, você pode aprovar conteúdo de campanha e segmentação, reiniciar ou parar um delivery etc.
 
