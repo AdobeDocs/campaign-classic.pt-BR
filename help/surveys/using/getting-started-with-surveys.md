@@ -7,41 +7,41 @@ content-type: reference
 topic-tags: online-surveys
 exl-id: 22e14b24-59ba-4a92-8ffb-f5336793d64f
 source-git-commit: 86963746d3de3396963d221ddbd1ef7d89733d2f
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '916'
-ht-degree: 90%
+ht-degree: 100%
 
 ---
 
 # Etapas principais para criar uma pesquisa{#getting-started-with-surveys}
 
-Esta é uma rápida visão geral das principais etapas para criar uma pesquisa simples, usando o seguinte template incorporado:
+A seguir há uma visão geral rápida das principais etapas para criar uma pesquisa simples, usando o seguinte modelo incorporado:
 
 ![](assets/s_ncs_admin_survey_result.png)
 
-Estas etapas são:
+São elas:
 
-1. [Etapa 1 - Criar uma pesquisa](#step-1---creating-a-survey),
-1. [Etapa 2 - Selecionar o template](#step-2---selecting-the-template),
-1. [Etapa 3 - Criar a pesquisa](#step-3---building-the-survey),
-1. [Etapa 4 - Criar o conteúdo](#step-4---creating-the-page-content) da página,
-1. [Etapa 5 - Armazenar os dados](#step-5---storing-the-survey-data-) da pesquisa,
-1. [Etapa 6 - Publicar as páginas](#step-6---publishing-the-pages),
-1. [Etapa 7 - Compartilhe sua pesquisa](#step-7---sharing-your-online-survey) online.
+1. [Etapa 1 — criação de uma pesquisa](#step-1---creating-a-survey),
+1. [Etapa 2 — seleção do modelo](#step-2---selecting-the-template),
+1. [Etapa 3 — criação da pesquisa](#step-3---building-the-survey),
+1. [Etapa 4 — criação do conteúdo da página](#step-4---creating-the-page-content),
+1. [Etapa 5 — armazenamento dos dados da pesquisa](#step-5---storing-the-survey-data-),
+1. [Etapa 6 — publicação das páginas](#step-6---publishing-the-pages),
+1. [Etapa 7 — compartilhamento da pesquisa online](#step-7---sharing-your-online-survey).
 
-## Etapa 1 - Criar uma pesquisa {#step-1---creating-a-survey}
+## Etapa 1 — criação de uma pesquisa {#step-1---creating-a-survey}
 
 Para criar uma nova pesquisa, vá para a guia **[!UICONTROL Campaigns]** ou **[!UICONTROL Profiles and targets]** e clique no menu **[!UICONTROL Web Applications]**. Clique no botão **[!UICONTROL Create]** acima da lista de formulários.
 
 ![](assets/s_ncs_admin_survey_create.png)
 
-## Etapa 2 - Selecionar o template {#step-2---selecting-the-template}
+## Etapa 2 — seleção do modelo {#step-2---selecting-the-template}
 
 Selecione um template de pesquisa e nomeie a pesquisa. Esse nome não será visto pelos usuários finais, mas permite a identificação da pesquisa no Adobe Campaign. Clique em **[!UICONTROL Save]** para adicionar a pesquisa à lista de aplicações Web.
 
 ![](assets/s_ncs_admin_survey_wz_00.png)
 
-## Etapa 3 - Criar a pesquisa {#step-3---building-the-survey}
+## Etapa 3 — criação da pesquisa {#step-3---building-the-survey}
 
 As pesquisas são criadas em um diagrama no qual os seguintes elementos são posicionados: a(s) página(s) onde o conteúdo será criado, o pré-carregamento de dados e as etapas de salvamento e as fases de teste. Scripts e queries também podem ser inseridos.
 
@@ -58,7 +58,7 @@ Uma pesquisa deve conter **pelo menos** três componentes: uma página, uma caix
 
    ![](assets/s_ncs_admin_survey_end.png)
 
-## Etapa 4 - Criar o conteúdo da página {#step-4---creating-the-page-content}
+## Etapa 4 — criação do conteúdo da página {#step-4---creating-the-page-content}
 
 No exemplo a seguir, estamos usando uma página do tipo **[!UICONTROL Page (v5 compatibility)]**. Esse tipo de página é acessado por meio do menu avançado da guia **[!UICONTROL Edit]**.
 
@@ -112,7 +112,7 @@ No exemplo a seguir, estamos usando uma página do tipo **[!UICONTROL Page (v5 c
 
    ![](assets/s_ncs_admin_survey_preview.png)
 
-## Etapa 5 - Armazenar os dados da pesquisa {#step-5---storing-the-survey-data-}
+## Etapa 5 — armazenamento dos dados da pesquisa {#step-5---storing-the-survey-data-}
 
 A caixa de armazenamento permite salvar as respostas do usuário no banco de dados. Você deve selecionar uma chave de reconciliação para identificar os perfis já existentes no banco de dados.
 
@@ -124,7 +124,7 @@ No exemplo abaixo, ao salvar (confirmação), se um perfil for salvo no banco de
 
 Clique em **[!UICONTROL OK]** para confirmar e, em seguida, clique em **[!UICONTROL Save]** para salvar a pesquisa
 
-## Etapa 6 - Publicar as páginas {#step-6---publishing-the-pages}
+## Etapa 6 — publicação das páginas {#step-6---publishing-the-pages}
 
 Para que os usuários possam acessar as páginas HTML, a aplicação deve ser disponibilizada. Ela não deve estar mais no estágio de edição, mas no de produção. Para colocar uma pesquisa em produção, você deve publicá-la. Para fazer isso:
 
@@ -137,7 +137,7 @@ Para que os usuários possam acessar as páginas HTML, a aplicação deve ser di
 
    ![](assets/survey_published.png)
 
-## Etapa 7 - Compartilhar sua pesquisa online {#step-7---sharing-your-online-survey}
+## Etapa 7 — compartilhamento da pesquisa online {#step-7---sharing-your-online-survey}
 
 Quando estiver em produção, a pesquisa é acessível no servidor e você pode entregá-la. A URL para acessar a pesquisa é exibida no painel.
 
