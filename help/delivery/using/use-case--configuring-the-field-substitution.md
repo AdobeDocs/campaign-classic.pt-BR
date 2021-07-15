@@ -7,9 +7,9 @@ content-type: reference
 topic-tags: using-seed-addresses
 exl-id: 3f567b2d-6f98-4831-af84-7db17fd12c6e
 source-git-commit: a129f49d4f045433899fd7fdbd057fb16d0ed36a
-workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+workflow-type: ht
+source-wordcount: '448'
+ht-degree: 100%
 
 ---
 
@@ -30,7 +30,7 @@ Para usar a substituição de campo aleatório, você deve ter:
 * um delivery com um ou vários campos de personalização,
 * seed addresses cujo **schema de dados** é modificado de acordo com os campos de personalização usados no delivery.
 
-## Criação de um delivery. {#step-1---creating-a-delivery}
+## Criação de uma entrega {#step-1---creating-a-delivery}
 
 As etapas para criar um delivery estão detalhadas na seção [Creating an email delivery](creating-an-email-delivery.md).
 
@@ -38,7 +38,7 @@ Neste exemplo, o gerenciador de delivery criou o boletim informativo.
 
 ![](assets/dlv_seeds_usecase_24.png)
 
-## Edição do schema de dados dos seed addresses {#editing-the-seed-addresses-data-schema}
+## Edição do esquema de dados dos seed addresses {#editing-the-seed-addresses-data-schema}
 
 As instruções sobre como modificar um schema de dados são detalhadas na seção .
 
