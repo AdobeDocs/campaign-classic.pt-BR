@@ -7,7 +7,7 @@ content-type: reference
 topic-tags: web-applications
 exl-id: 4bff6b55-3335-433e-a2ff-5d8c83e8f0d3
 source-git-commit: 360fd1ed8970c17c0687eaca0a4c1960d6f5838c
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '670'
 ht-degree: 100%
 
@@ -66,7 +66,7 @@ Você deve substituir a mensagem **Inserir sua mensagem aqui** com o bloco conte
 
 O banner é fornecido com um CSS específico. No entanto, você pode substituir os estilos ao criar e configurar uma página da Web. Consulte [esta página](content-editor-interface.md).
 
-## Definição do cookie de opt out usando API {#setting-the-opt-out-cookie-using-api}
+## Definição do cookie de recusa usando a API {#setting-the-opt-out-cookie-using-api}
 
 O Adobe Campaign é fornecido com APIs que permitem gerenciar o valor do cookie e recuperar preferências do usuário.
 
