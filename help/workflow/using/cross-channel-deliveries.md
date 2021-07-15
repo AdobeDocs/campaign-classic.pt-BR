@@ -7,15 +7,15 @@ content-type: reference
 topic-tags: action-activities
 exl-id: 3bb468e2-7bcf-456f-8d8f-1c4e608e2b25
 source-git-commit: 895aa2fd4fa9c7c71c0073e9be33c12d4e92c9fa
-workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+workflow-type: ht
+source-wordcount: '284'
+ht-degree: 100%
 
 ---
 
 # Entregas entre canais{#cross-channel-deliveries}
 
-Os cross-channel estão disponíveis na **[!UICONTROL Deliveries]** guia de atividades do workflow da campanha.
+Entregas entre canais estão disponíveis na guia **[!UICONTROL Deliveries]** de atividades do fluxo de trabalho da campanha.
 
 Os vários canais disponíveis são:
 
@@ -27,11 +27,11 @@ Os vários canais disponíveis são:
 * [iOS](../../delivery/using/create-notifications-ios.md)
 * [Android](../../delivery/using/create-notifications-android.md)
 
-Selecione o template no qual deseja basear seu delivery e definir seu conteúdo.
+Selecionar o modelo no qual deseja basear a entrega e definir seu conteúdo.
 
-Você pode especificar um target para o upstream do delivery de workflow usando as diferentes atividades de target.
+Você pode especificar um target para o upstream de entrega de fluxo de trabalho usando as diferentes atividades de direcionamento.
 
-No exemplo abaixo, criaremos um workflow para enviar um email ou SMS para assinantes de notificação por push e, em seguida, uma notificação por push uma semana depois. Para fazer isso:
+No exemplo abaixo, vamos criar um fluxo de trabalho para enviar um email ou SMS a assinantes de notificação por push e, em seguida, uma notificação por push uma semana depois. Para fazer isso:
 
 1. Crie uma campanha.
 1. Na guia **[!UICONTROL Targeting and workflows]** da campanha, adicione uma **[!UICONTROL Query]** ao workflow.
@@ -39,7 +39,7 @@ No exemplo abaixo, criaremos um workflow para enviar um email ou SMS para assina
 
    >[!NOTE]
    >
-   >Para as notificações por push, use o target dimension **subscriber applications** .
+   >Para as notificações por push, use a dimensão de direcionamento dos **aplicativos de assinante**.
 
    ![](assets/cross_channel_delivery_1.png)
 
