@@ -7,9 +7,9 @@ content-type: reference
 topic-tags: acs-connector
 exl-id: 88e581cf-43cd-4c43-9347-d016c62fdf42
 source-git-commit: 515587695115c23d9b248ecb87a7ae89ea7c62a0
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1129'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -36,7 +36,7 @@ Para isso, é necessário:
 * Direito para executar workflows no Campaign v7 e Campaign Standard.
 * Direita para criar e executar um workflow no Campaign Standard.
 
-## Criação de um workflow para construção do target com dados adicionais no Campaign v7 {#create-a-targeting-workflow-with-additional-data-in-campaign-v7}
+## Criação de um fluxo de trabalho de direcionamento com dados adicionais no Campaign v7 {#create-a-targeting-workflow-with-additional-data-in-campaign-v7}
 
 Targets complexos envolvendo dados adicionais que não são replicados no Campaign Standard só podem ser alcançados usando o Campaign v7.
 
@@ -108,7 +108,7 @@ Uma vez definido o público alvo, é possível compartilhá-lo com ACS por meio 
 
 Se ocorrer um erro na atividade **[!UICONTROL List update]**, significa que a sincronização com o Campaign Standard pode ter falhado. Para ver mais detalhes do que deu errado, acesse **[!UICONTROL Administration]** > **[!UICONTROL ACS Connector]** > **[!UICONTROL Process]** > **[!UICONTROL Diagnosis]**. Esta pasta contém workflows de sincronização acionados pela execução da atividade **[!UICONTROL List update]**. Consulte a seção [Solução de problemas do conector ACS](../../integrations/using/troubleshooting-the-acs-connector.md).
 
-## Recuperação de dados no Campaign Standard e seu uso em um delivery {#retrieve-the-data-in-campaign-standard-and-use-it-in-a-delivery}
+## Recuperação de dados no Campaign Standard e seu uso em uma entrega {#retrieve-the-data-in-campaign-standard-and-use-it-in-a-delivery}
 
 Depois que o fluxo de trabalho de direcionamento é executado no Campaign v7, é possível encontrar o público da lista no modo somente leitura do menu **[!UICONTROL Audiences]** no Campaign Standard.
 
@@ -121,7 +121,7 @@ Ao criar um workflow de delivery no Campaign Standard, é possível usar esse p�
 
    Essa atividade é usada para recuperar os dados do público selecionado. Se necessário, também é possível aplicar um **[!UICONTROL Source Filtering]** adicional, usando a guia relativa a esta atividade.
 
-1. Adicione uma atividade **[!UICONTROL Email delivery]** e a configure como qualquer outra [atividade de delivery de email](https://experienceleague.adobe.com/docs/campaign-standard/using/managing-processes-and-data/channel-activities/email-delivery.html).
+1. Adicione uma atividade **[!UICONTROL Email delivery]** e a configure como qualquer outra [atividade de delivery de email](https://experienceleague.adobe.com/docs/campaign-standard/using/managing-processes-and-data/channel-activities/email-delivery.html?lang=pt-BR).
 1. Abra o conteúdo do delivery.
 1. Insira um campo de personalização Localize o nó **[!UICONTROL Additional data (targetData)]** na janela popup. Esse nó contém os dados adicionais do público calculados no workflow inicial para construção do target. Você pode usá-los como qualquer outro campo de personalização.
 
@@ -135,7 +135,7 @@ Ao criar um workflow de delivery no Campaign Standard, é possível usar esse p�
 
    ![](assets/acs_connect_deliveryworkflow_ready.png)
 
-## Envio e monitoramento do delivery {#send-and-monitor-your-delivery}
+## Envio e monitoramento de entrega {#send-and-monitor-your-delivery}
 
 Quando a entrega e seu conteúdo estiverem prontos, você pode enviá-la.
 
