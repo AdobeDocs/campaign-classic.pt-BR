@@ -7,15 +7,15 @@ content-type: reference
 topic-tags: sending-push-notifications
 exl-id: 13ccc5d6-4355-42ba-80dc-30a45d3b69a4
 source-git-commit: a129f49d4f045433899fd7fdbd057fb16d0ed36a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '783'
-ht-degree: 90%
+ht-degree: 100%
 
 ---
 
 # Criar notificações para iOS{#create-notifications-ios}
 
-Esta seção detalha os elementos específicos para o delivery de notificações iOS. Os conceitos globais sobre a criação de delivery são apresentados [nesta seção](steps-about-delivery-creation-steps.md).
+Esta seção detalha os elementos específicos para a entrega de notificações do iOS. Os conceitos globais sobre a criação de delivery são apresentados [nesta seção](steps-about-delivery-creation-steps.md).
 
 Comece criando um novo delivery.
 
@@ -37,7 +37,7 @@ Para criar uma notificação por push para dispositivos iOS, siga as etapas abai
    >
    >Para obter mais informações sobre o uso de campos de personalização, consulte [esta seção](about-personalization.md).
    >
-   >Para obter mais informações sobre a inclusão de uma lista de propagação, consulte [Sobre seed addresses](about-seed-addresses.md).
+   >Para obter mais informações sobre a inclusão de uma lista de seeds, consulte [Sobre seed addresses](about-seed-addresses.md).
 
 1. Selecione **[!UICONTROL Subscribers of an iOS mobile application (iPhone, iPad)]**, depois o serviço relevante para o aplicativo móvel (Neotrips, neste caso) e clique na versão iOS do aplicativo.
 
@@ -49,13 +49,13 @@ Para criar uma notificação por push para dispositivos iOS, siga as etapas abai
 
    >[!NOTE]
    >
-   >O modo **Silent Push** permite que uma notificação &quot;silenciosa&quot; seja enviada a um aplicativo móvel. O usuário não está ciente da chegada da notificação. Ele é transferido diretamente para o aplicativo.
+   >O modo **Push silencioso** permite que uma notificação &quot;silenciosa&quot; seja enviada a um aplicativo móvel. O usuário não está ciente da chegada da notificação. Ele é transferido diretamente para o aplicativo.
 
 1. No campo **[!UICONTROL Title]**, insira o rótulo do título que deve aparecer na notificação. Isso só aparecerá na lista disponível no centro de notificações. Este campo permite a definição do valor do parâmetro **title** da carga de notificação iOS.
 
 1. Se o conector HTTP/2 é usado, é possível adicionar um subtítulo (valor do parâmetro de **subtitle** da carga de notificação do iOS). Consulte [esta seção](configuring-the-mobile-application.md).
 
-1. Em seguida, insira o **[!UICONTROL Message]** e o **[!UICONTROL Value of the badge]** baseado no tipo de notificação escolhido.
+1. Em seguida, insira o **[!UICONTROL Message]** e o **[!UICONTROL Value of the badge]** com base no tipo de notificação escolhido.
 
    ![](assets/nmac_delivery_ios_5.png)
 
@@ -92,12 +92,12 @@ Para enviar uma prova e o delivery final, use o mesmo processo que os deliveries
 
 Após enviar as mensagens, você pode monitorar e rastrear seus deliveries. Para obter mais informações, consulte essas seções.
 
-* [Notificação por push em quarentena](understanding-quarantine-management.md#push-notification-quarantines)
+* [Quarentenas de notificação por push](understanding-quarantine-management.md#push-notification-quarantines)
 * [Monitoramento de uma entrega](about-delivery-monitoring.md)
-* [Noções básicas sobre falhas de entrega](understanding-delivery-failures.md)
+* [Compreensão de falhas de entrega](understanding-delivery-failures.md)
 
 
-## Criar uma notificação avançada do iOS {#creating-ios-delivery}
+## Criação de uma notificação avançada do iOS {#creating-ios-delivery}
 
 Com o iOS 10 ou superior, é possível gerar notificações ricas. O Adobe Campaign pode enviar notificações usando variáveis que permitirão ao dispositivo exibir uma notificação rica.
 
