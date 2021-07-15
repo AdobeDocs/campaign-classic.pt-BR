@@ -7,7 +7,7 @@ content-type: reference
 topic-tags: monitoring-deliveries
 exl-id: 0663257a-3a70-4e0c-bbeb-8242aaa0876d
 source-git-commit: a129f49d4f045433899fd7fdbd057fb16d0ed36a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '629'
 ht-degree: 100%
 
@@ -31,7 +31,7 @@ Para obter mais detalhes sobre as diferentes falhas de delivery que podem ser en
 * [Solução de problemas de entrega](delivery-troubleshooting.md)
 * [Sobre a capacidade de entrega](about-deliverability.md)
 
-## Lista de status de delivery {#list-delivery-statuses}
+## Lista de status de entrega {#list-delivery-statuses}
 
 <table> 
  <thead> 
