@@ -7,9 +7,9 @@ content-type: reference
 topic-tags: about-deliveries-and-channels
 exl-id: 92b5e013-b619-4f0b-b0b1-1fc2e653ceac
 source-git-commit: a129f49d4f045433899fd7fdbd057fb16d0ed36a
-workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+workflow-type: ht
+source-wordcount: '1204'
+ht-degree: 100%
 
 ---
 
@@ -45,9 +45,9 @@ Dependendo do canal, os modos de delivery poderão ser:
 * Delivery direta em massa via Adobe Campaign (modo padrão para canal de email).
 * Delivery externo por meio de um operador especialista que recebe o arquivo de saída gerado pelo assistente de delivery (modo padrão para o canal de mala direta).
 
-As contas externas são configuradas por meio do nó **[!UICONTROL Administration > Platform > External accounts]**. Essa configuração deve ser executada somente por usuários expert.
+As contas externas são configuradas por meio do nó **[!UICONTROL Administration > Platform > External accounts]**. Essa configuração deve ser executada somente por usuários avançados.
 
-## Deliveries de email {#email-deliveries}
+## Entregas de email {#email-deliveries}
 
 O [Canal de email](about-email-channel.md) é um dos canais principais do Adobe Campaign, permitindo agendar e enviar emails personalizados para targets específicos.
 
@@ -61,7 +61,7 @@ Para saber mais sobre o uso de delivery e recomendações, consulte [Práticas r
 
 Para obter mais informações sobre tipos diferentes de entrega, consulte [esta página](#types-of-deliveries).
 
-## Deliveries móveis {#mobile-deliveries}
+## Entregas por dispositivos móveis {#mobile-deliveries}
 
 O Adobe Campaign permite que você faça deliveires de mensagens por [SMS](sms-channel.md) e [LINE](line-channel.md) em celulares.
 
@@ -72,7 +72,7 @@ Para mensagens por LINE, você poderá enviar texto ou imagens e links.
 Para fazer delivery de mensagens SMS ou LINE a um celular, você vai precisar de:
 
 * Uma conta externa configurada no canal **[!UICONTROL Mobile (SMS)]** ou no canal **[!UICONTROL LINE]**.
-* Um template de delivery por SMS ou LINE que esteja vinculado corretamente a essa conta externa.
+* Um modelo de entrega por SMS ou LINE que esteja vinculado corretamente a essa conta externa.
 
 ## Notificações por push {#push-notifications}
 
@@ -98,11 +98,11 @@ Este canal não tem nenhum mecanismo específico. É um canal genérico que tem 
 
 Esse canal foi projetado apenas para fins descritivos, por exemplo, para definir deliveries para os quais você deseja manter um rastreamento do público-alvo de uma campanha executada em uma ferramenta diferente do Adobe Campaign.
 
-## Tipos de deliveries{#types-of-deliveries}
+## Tipos de entregas{#types-of-deliveries}
 
-Existem três tipos de objetos de delivery no Campaign:
+Existem três tipos de objetos de entrega no Campaign:
 
-### Delivery unitário {#single-delivery}
+### Entrega única {#single-delivery}
 
 Um **delivery** é um objeto de delivery independente executado uma vez. Ele pode ser duplicado, preparado novamente, mas, desde que esteja no seu estado final (cancelado, interrompido, concluído), não poderá ser reutilizado.
 
