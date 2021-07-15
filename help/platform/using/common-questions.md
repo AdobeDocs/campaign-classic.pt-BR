@@ -7,7 +7,7 @@ content-type: reference
 topic-tags: starting-with-adobe-campaign
 exl-id: 9f1b0974-f8bd-430f-88fe-9c09b0074d3b
 source-git-commit: 515587695115c23d9b248ecb87a7ae89ea7c62a0
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '510'
 ht-degree: 100%
 
@@ -31,11 +31,11 @@ Se estiver usando o Adobe Managed Services, você poderá se beneficiar da atual
 
 [Leia esta seção](../../production/using/build-upgrade.md) para saber como atualizar seu ambiente e leia as [perguntas frequentes](../../platform/using/faq-build-upgrade.md) sobre este tópico específico.
 
-## 2. Qual é o workflow de limpeza do banco de dados? {#what-is-the-database-cleanup-workflow-}
+## 2. Qual é o fluxo de trabalho de limpeza do banco de dados? {#what-is-the-database-cleanup-workflow-}
 
 O fluxo de trabalho de limpeza do banco de dados exclui dados obsoletos para evitar o seu crescimento exponencial. O workflow técnico interno é acionado automaticamente sem a intervenção do usuário. Também é acessível por meio do nó **[!UICONTROL Administration > Production > Technical workflows]** do explorador do Campaign.
 
-[Clique aqui para saber mais](../../production/using/database-cleanup-workflow.md) sobre o fluxo de trabalho de limpeza do banco de dados.
+[Clique aqui para saber mais](../../production/using/database-cleanup-workflow.md) sobre o fluxo de trabalho de limpeza de banco de dados.
 
 ## 3. Como posso configurar zonas de segurança? {#how-can-i-configure-security-zones-}
 
@@ -43,13 +43,13 @@ A interface de autoatendimento de zonas de segurança pode ser usada para gerenc
 
 [Clique aqui para saber mais](https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/additional-configurations/security-zones.html?lang=pt-BR#installing-campaign-classic) sobre a interface do usuário de autoatendimento da Zona de Segurança.
 
-## 4. Como posso garantir que meu delivery seja enviado sem erros? {#how-can-i-make-sure-my-delivery-is-sent-without-errors-}
+## 4. Como posso garantir que minha entrega seja enviada sem erros? {#how-can-i-make-sure-my-delivery-is-sent-without-errors-}
 
 O Adobe Campaign vem com um conjunto de painéis e ferramentas para monitorar suas entregas de e-mail.
 
 [Clique aqui para saber](../../delivery/using/about-delivery-monitoring.md) como se certificar de que suas mensagens estejam sendo enviadas, monitorar a execução e tomar medidas apropriadas caso ocorra algum erro.
 
-## 5. Posso monitorar a execução do workflow? {#can-i-monitor-workflow-execution}
+## 5. Posso monitorar a execução do fluxo de trabalho? {#can-i-monitor-workflow-execution}
 
 Entenda como monitorar a execução do fluxo de trabalho do Campaign [nesta página](../../workflow/using/starting-a-workflow.md).
 
