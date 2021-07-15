@@ -10,9 +10,9 @@ internal: n
 snippet: y
 exl-id: 32c35e61-d0a3-478f-b73b-396e2becf7f9
 source-git-commit: a129f49d4f045433899fd7fdbd057fb16d0ed36a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '963'
-ht-degree: 94%
+ht-degree: 100%
 
 ---
 
@@ -33,7 +33,7 @@ As principais etapas são:
 
 Você poderá [criar uma notificação avançada do Android](create-notifications-android.md).
 
-## Configurar conta externa do Android {#configuring-external-account-android}
+## Configuração da conta externa do Android {#configuring-external-account-android}
 
 Para Android, dois conectores estão disponíveis:
 
@@ -58,7 +58,7 @@ Para escolher qual conector deseja usar, siga estas etapas:
 
    * **maxGCMConnectPerChild**: Limite máximo de solicitações HTTP paralelas para o FCM iniciado por cada servidor filho (8 por padrão).
 
-## Configurar um serviço Android {#configuring-android-service}
+## Configuração de um serviço Android {#configuring-android-service}
 
 ![](assets/do-not-localize/how-to-video.png) [Saiba como configurar um serviço Android em vídeo](https://experienceleague.adobe.com/docs/campaign-classic-learn/getting-started-with-push-notifications-for-android/configuring-an-android-service-in-campaign.html?lang=pt-BR#configuring-an-android-service-and-creating-an-android-mobile-application-in-campaign)
 
@@ -97,7 +97,7 @@ Depois de criar o serviço, é necessário criar o aplicativo Android:
 
    >[!NOTE]
    >
-   > O **[!UICONTROL Integration key]** é totalmente personalizável com o valor da string, mas precisa ser exatamente o mesmo especificado no SDK.
+   > A **[!UICONTROL Integration key]** é totalmente personalizável com o valor da sequência de caracteres, mas precisa ser exatamente a mesma especificada no SDK.
 
 1. Selecione o **[!UICONTROL API version]**: HTTP v1 ou HTTP (legado). Essas configurações são detalhadas [nesta seção](#select-api-version)
 
@@ -107,12 +107,12 @@ Depois de criar o serviço, é necessário criar o aplicativo Android:
 
 Por padrão, o Adobe Campaign salva uma chave no campo **[!UICONTROL User identifier]** (@userKey) da tabela **[!UICONTROL Subscriber applications (nms:appSubscriptionRcp)]**. Essa chave permite vincular uma subscrição a um recipient. Para coletar dados adicionais (como uma chave de reconciliação complexa), é necessário aplicar a seguinte configuração:
 
-### Selecione a versão da API{#select-api-version}
+### Selecionar a versão da API{#select-api-version}
 
-Depois de criar um serviço e um novo aplicativo móvel, é necessário configurar seu aplicativo móvel dependendo da versão da API escolhida.
+Depois de criar um serviço e um novo aplicativo para dispositivos móveis, é necessário configurar seu aplicativo para dispositivos móveis, dependendo da versão da API escolhida.
 
-* **A** configuração HTTP v1 é detalhada  [nesta seção](configuring-the-mobile-application-android.md#android-service-httpv1).
-* **A configuração HTTP (herdada)** é detalhada  [nesta seção](configuring-the-mobile-application-android.md#android-service-http).
+* **A configuração HTTP v1** está detalhada [nesta seção](configuring-the-mobile-application-android.md#android-service-httpv1).
+* **A configuração HTTP (herdada)** está detalhada [nesta seção](configuring-the-mobile-application-android.md#android-service-http).
 
 #### Configurar API HTTP v1{#android-service-httpv1}
 
@@ -151,7 +151,7 @@ Abaixo estão os nomes de payload do FCM para personalizar ainda mais sua notifi
 <br>
 <br>
 
-#### Configurar API HTTP (legada){#android-service-http}
+#### Configurar API HTTP (herdada){#android-service-http}
 
 Para configurar a versão da API HTTP (herdada), siga as etapas abaixo:
 
