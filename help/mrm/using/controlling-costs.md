@@ -7,9 +7,9 @@ content-type: reference
 topic-tags: tasks--resources-and-budgets
 exl-id: 6765e307-915a-44d2-a486-85c64e8ec52e
 source-git-commit: 690f7c4e62203127da7a7055afa0ee8ad4a2bce4
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2468'
-ht-degree: 94%
+ht-degree: 100%
 
 ---
 
@@ -31,7 +31,7 @@ As etapas a seguir devem ser aplicadas para implementar o gerenciamento de orça
 
 1. Definir o método de cálculo de custo
 
-   As estruturas de custo são definidas para os provedores de serviços. Consulte [Criar um provedor de serviços e categorias de custo](../../campaign/using/providers--stocks-and-budgets.md#creating-a-service-provider-and-its-cost-categories).
+   As estruturas de custo são definidas para os provedores de serviços. Consulte [Criar um provedor de serviços e suas categorias de custo](../../campaign/using/providers--stocks-and-budgets.md#creating-a-service-provider-and-its-cost-categories).
 
 1. Definir os custos da campanha (remessas/tarefas)
 
@@ -168,7 +168,7 @@ De acordo com as categorias de custo selecionadas, as estruturas de custo corres
 >
 >As categorias e estruturas de custo são apresentadas em [Criar um provedor de serviços e suas categorias de custo](../../campaign/using/providers--stocks-and-budgets.md#creating-a-service-provider-and-its-cost-categories).
 
-## Compromisso de custo, cálculo e carregamento {#cost-commitment--calculation-and-charging}
+## Compromisso de custo, cálculo e cobrança {#cost-commitment--calculation-and-charging}
 
 Os custos podem ser confirmados para remessas e tarefas. De acordo com o progresso do processo ao qual está relacionada, o status de um custo é atualizado.
 
@@ -205,7 +205,7 @@ Os custos dividem-se em três categorias:
 
    O custo real é alimentado manualmente e, se necessário, é dividido em diferentes categorias de despesas.
 
-### Cálculo e carregamento {#calculation-and-charging}
+### Cálculo e cobrança {#calculation-and-charging}
 
 Os custos são calculados por meio de estruturas de custo e cobrados nos orçamentos selecionados nas campanhas, remessas ou tarefas.
 
@@ -229,7 +229,7 @@ Vamos criar uma campanha com:
 
 #### Etapa 2 - Configurar o provedor de serviços e definir as estruturas de custo {#step-2---configuring-the-service-provider-and-defining-the-cost-structures}
 
-1. Crie um provedor de serviços e um modelo de serviço com a estrutura de custo do nó **[!UICONTROL Administration > Campaigns]**. Para obter mais informações, consulte [Criar um provedor de serviços e categorias de custo](../../campaign/using/providers--stocks-and-budgets.md#creating-a-service-provider-and-its-cost-categories).
+1. Crie um provedor de serviços e um modelo de serviço com a estrutura de custo do nó **[!UICONTROL Administration > Campaigns]**. Para obter mais informações, consulte [Criar um provedor de serviços e suas categorias de custo](../../campaign/using/providers--stocks-and-budgets.md#creating-a-service-provider-and-its-cost-categories).
 
    Para deliveries de correspondência direta, crie **[!UICONTROL Envelopes]** de categorias de custo (tipos 114x229 e 162x229), **[!UICONTROL Postage]** e **[!UICONTROL Print]** (tipos A3 e A4). E, em seguida, crie as seguintes estruturas de custo:
 
@@ -249,7 +249,7 @@ Vamos criar uma campanha com:
 
    ![](assets/s_user_cost_mgmt_sample_7.png)
 
-#### Etapa 3 - Cobrar o orçamento na campanha {#step-3---charging-the-budget-in-the-campaign}
+#### Etapa 3 — carregar o orçamento na campanha {#step-3---charging-the-budget-in-the-campaign}
 
 1. Crie uma campanha e selecione o orçamento criado na Etapa 1.
 
@@ -265,7 +265,7 @@ Vamos criar uma campanha com:
 
 1. Clique em **[!UICONTROL Ok]** e então, **[!UICONTROL Save]** para confirmar essas informações. O custo calculado da campanha é, então, atualizado com o custo provisional estimado.
 
-#### Etapa 4 - Criar o delivery de mala direta {#step-4---creating-the-direct-mail-delivery}
+#### Etapa 4 - Criar a entrega de correspondência direta {#step-4---creating-the-direct-mail-delivery}
 
 1. Crie um workflow para a campanha e posicione as atividades de query para selecionar o alvo (aviso, os endereços postais dos recipients devem ser especificados).
 
@@ -299,7 +299,7 @@ Ao editar o custo calculado, é possível verificar a divisão de custo e o stat
 
 #### Etapa 5 - Criar tarefas {#step-5---creating-tasks}
 
-Nesta campanha, adicionaremos as duas tarefas para as quais as estruturas de custo foram criadas anteriormente (consulte [Etapa 2 - Configurar o provedor de serviço e definir as estruturas de custo](#step-2---configuring-the-service-provider-and-defining-the-cost-structures)). Para fazer isso, no painel de campanha, clique no botão **[!UICONTROL Add a task]**. Nomeie a tarefa e clique em **[!UICONTROL Save]**.
+Vamos adicionar a essa campanha as duas tarefas para as quais as estruturas de custo foram criadas anteriormente (consulte [Etapa 2 — configurar um provedor de serviços e definir as categorias de custo](#step-2---configuring-the-service-provider-and-defining-the-cost-structures)). Para fazer isso, no painel de campanha, clique no botão **[!UICONTROL Add a task]**. Nomeie a tarefa e clique em **[!UICONTROL Save]**.
 
 1. A tarefa é, então, adicionada à lista de tarefas. É necessário editá-la para configurá-la.
 
@@ -323,9 +323,9 @@ Nesta campanha, adicionaremos as duas tarefas para as quais as estruturas de cus
 
    ![](assets/s_user_cost_mgmt_sample_17.png)
 
-#### Etapa 6 - Atualizar o status do orçamento da campanha {#step-6---update-the-campaign-budget-status}
+#### Etapa 6 — atualizar o status do orçamento da campanha {#step-6---update-the-campaign-budget-status}
 
-Quando a campanha é configurada, é possível atualizar o status ao alterá-lo para **[!UICONTROL Specified]**. O custo calculado da campanha indicará a soma dos custos calculados do delivery e das tarefas da campanha:
+Quando a campanha é configurada, é possível atualizar o status ao alterá-lo para **[!UICONTROL Specified]**. O custo calculado da campanha indicará a soma dos custos calculados da entrega e das tarefas da campanha:
 
 ![](assets/s_user_cost_mgmt_sample_18.png)
 
@@ -351,7 +351,7 @@ Especifique o número do pedido, o provedor de serviços e o valor total do pedi
 
 ![](assets/s_user_cost_create_order.png)
 
-### Emitir e acompanhar faturas {#issuing-and-tracking-invoices}
+### Emitir e rastrear faturas {#issuing-and-tracking-invoices}
 
 Para cada provedor de serviços, é possível salvar faturas e definir seus status e o orçamento cobrado.
 
