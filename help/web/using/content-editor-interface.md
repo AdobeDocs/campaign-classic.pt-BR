@@ -7,9 +7,9 @@ content-type: reference
 topic-tags: editing-html-content
 exl-id: cb76f3dc-7f3a-49de-89cb-c106865ecb17
 source-git-commit: 360fd1ed8970c17c0687eaca0a4c1960d6f5838c
-workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+workflow-type: ht
+source-wordcount: '533'
+ht-degree: 100%
 
 ---
 
