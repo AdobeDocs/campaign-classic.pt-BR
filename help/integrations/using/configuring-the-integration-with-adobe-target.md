@@ -7,9 +7,9 @@ content-type: reference
 topic-tags: adobe-target
 exl-id: ae8c680f-52a6-4d00-91cd-44d1c3807546
 source-git-commit: 94e609f3df94c553e2ec84ee427887a767b9af21
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '196'
-ht-degree: 89%
+ht-degree: 100%
 
 ---
 
@@ -37,4 +37,4 @@ Para configurar o Adobe Campaign:
 
 >[!CAUTION]
 >
->Para arquiteturas híbridas e hospedadas, essas opções devem ser definidas em todos os servidores, incluindo o [servidor mid-sourcing](../../installation/using/mid-sourcing-server.md) e a [instância de execução](../../message-center/using/configuring-instances.md#execution-instance).
+>Para arquiteturas híbridas e hospedadas, essas opções precisam ser instaladas em todos os servidores, incluindo o [servidor de mid-sourcing](../../installation/using/mid-sourcing-server.md) e a [instância de execução](../../message-center/using/configuring-instances.md#execution-instance).
