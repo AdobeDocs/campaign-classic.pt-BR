@@ -7,9 +7,9 @@ content-type: reference
 topic-tags: monitoring-deliveries
 exl-id: 37b1d7fb-7ceb-4647-9aac-c8a80495c5bf
 source-git-commit: a129f49d4f045433899fd7fdbd057fb16d0ed36a
-workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+workflow-type: ht
+source-wordcount: '789'
+ht-degree: 100%
 
 ---
 
@@ -25,7 +25,7 @@ Além disso, siga as práticas recomendadas e a lista de verificação detalhada
 * [Painel de entrega](delivery-dashboard.md)
 * [Noções básicas sobre falhas de entrega](understanding-delivery-failures.md)
 
-## Deliveries lentos {#slow-deliveries}
+## Entregas lentas {#slow-deliveries}
 
 Depois de clicar no botão **[!UICONTROL Send]**, seu delivery parece demorar mais do que o normal. Isso pode ser causado por elementos diferentes:
 
@@ -41,7 +41,7 @@ Depois de clicar no botão **[!UICONTROL Send]**, seu delivery parece demorar ma
 
 * Um problema do sistema pode impedir que os servidores interajam: isso pode desacelerar todo o processo de envio. Verifique os servidores para garantir que não haja problemas de memória ou recursos que possam afetar o Campaign no processo de obter os dados de personalização, por exemplo.
 
-## Deliveries agendados {#scheduled-deliveries-}
+## Entregas agendadas {#scheduled-deliveries-}
 
 Se os deliveries não forem executados em uma data agendada específica, ela poderá estar relacionada a uma diferença entre o fuso horário dos servidores. A instância mid-sourcing e a instância de produção podem estar em fusos horários diferentes.
 
