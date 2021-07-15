@@ -7,9 +7,9 @@ content-type: reference
 topic-tags: orchestrate-campaigns
 exl-id: c2b523ac-e900-4db8-85b0-dafc6ddb3eca
 source-git-commit: 690f7c4e62203127da7a7055afa0ee8ad4a2bce4
-workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+workflow-type: ht
+source-wordcount: '245'
+ht-degree: 100%
 
 ---
 
@@ -35,7 +35,7 @@ Para cada campanha, a guia **[!UICONTROL Tracking]** permite visualizar todas as
 
    ![](assets/s_ncs_user_op_edit_exe_tab_d.png)
 
-## Controle de delivery {#delivery-tracking}
+## Rastreamento de entrega {#delivery-tracking}
 
 A lista de está disponível através do link **[!UICONTROL Deliveries]** Deliveries do nó do Campaign.
 
