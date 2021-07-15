@@ -1,19 +1,19 @@
 ---
 product: campaign
-title: Publicar, acompanhar e usar dados coletados
+title: Publicar, rastrear e usar dados coletados
 description: Saiba como publicar, rastrear e usar dados coletados em uma pesquisa
 audience: web
 content-type: reference
 topic-tags: online-surveys
 exl-id: 3cf3c486-6640-4d67-95cf-50d5767deb60
 source-git-commit: 86963746d3de3396963d221ddbd1ef7d89733d2f
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '831'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
-# Publicar, acompanhar e usar dados coletados{#publish-track-and-use-collected-data}
+# Publicar, rastrear e usar dados coletados{#publish-track-and-use-collected-data}
 
 Depois que o formulário tiver sido criado, configurado e publicado, é possível compartilhar o link com o público e acompanhar as respostas.
 
@@ -25,13 +25,13 @@ Depois que o formulário tiver sido criado, configurado e publicado, é possíve
 
 Cada pesquisa tem seu próprio painel de controle que permite visualizar seu status, descrição, URL pública e cronograma de disponibilidade. Também permite exibir os relatórios disponíveis. [Saiba mais](#reports-on-surveys).
 
-A URL pública da pesquisa é mostrada no painel:
+O URL público da pesquisa é mostrado no painel:
 
 ![](assets/survey_public_url.png)
 
-## Acompanhamento de resposta {#response-tracking}
+## Rastreamento de resposta {#response-tracking}
 
-Você pode acompanhar as respostas da pesquisa em logs e relatórios.
+Você pode rastrear as respostas da pesquisa em logs e relatórios.
 
 ### Logs de pesquisa {#survey-logs}
 
@@ -49,7 +49,7 @@ A origem é indicada na URL da pesquisa adicionando os seguintes caracteres:
 
 enquanto a pesquisa está sendo editada, o URL contém o parâmetro **[!UICONTROL __uuid]**, indicando que está em uma fase de teste e ainda não online. Ao acessar a pesquisa por meio dessa URL, os registros criados não são considerados no acompanhamento (relatórios). A origem é forçada ao valor **[!UICONTROL Adobe Campaign]**.
 
-Para obter mais informações sobre os parâmetros da URL, consulte [esta página](../../web/using/defining-web-forms-properties.md#form-url-parameters).
+Para obter mais informações sobre parâmetros de URL, consulte [esta página](../../web/using/defining-web-forms-properties.md#form-url-parameters).
 
 ### Relatórios sobre pesquisas {#reports-on-surveys}
 
@@ -109,11 +109,11 @@ As respostas de uma pesquisa podem ser exportadas em um arquivo externo para ser
 
    >[!NOTE]
    >
-   >As exportações de dados e as etapas de sua configuração são detalhadas [nesta seção](../../platform/using/about-generic-imports-exports.md).
+   >As exportações de dados e as etapas de configuração são detalhadas [nesta seção](../../platform/using/about-generic-imports-exports.md).
 
-## Uso dos dados coletados {#using-the-collected-data}
+## Utilização de dados coletados {#using-the-collected-data}
 
-As informações coletadas por pesquisas online podem ser recuperadas dentro da estrutura de um workflow para construção do target. Para fazer isso, use a caixa **[!UICONTROL Survey responses]**.
+As informações coletadas por pesquisas online podem ser recuperadas na estrutura de um fluxo de trabalho de direcionamento. Para fazer isso, use a caixa **[!UICONTROL Survey responses]**.
 
 No exemplo a seguir, queremos fazer uma oferta da Web especialmente para os cinco recipients com pelo menos duas crianças e com as pontuações mais altas em uma pesquisa online. As respostas para essa pesquisa são:
 
@@ -161,4 +161,4 @@ Edite a caixa de divisão para configurá-la:
 
 ## Padronização de dados {#standardizing-data}
 
-É possível configurar processos de padronização no Adobe Campaign para dados coletados usando aliases. Isso permite padronizar os dados armazenados no banco de dados: para fazer isso, defina aliases nas listas discriminadas que contêm as informações relevantes. [Saiba mais](../../platform/using/managing-enumerations.md#about-enumerations)
+É possível configurar processos de padronização no Adobe Campaign para dados coletados usando aliases. Permite padronizar os dados armazenados no banco de dados: para fazer isso, defina aliases nas listas discriminadas que contêm as informações relevantes. [Saiba mais](../../platform/using/managing-enumerations.md#about-enumerations)
