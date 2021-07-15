@@ -7,13 +7,13 @@ content-type: reference
 topic-tags: a-b-testing
 exl-id: ae046ef6-d850-4222-b82c-8ef5b3da7037
 source-git-commit: a129f49d4f045433899fd7fdbd057fb16d0ed36a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '350'
 ht-degree: 100%
 
 ---
 
-# Introdução ao teste AB {#get-started-a-b-testing}
+# Introdução ao teste A/B {#get-started-a-b-testing}
 
 O teste A/B permite que você compare várias versões de um delivery entre si, a fim de identificar qual terá o maior impacto na população direcionada.
 
