@@ -7,15 +7,15 @@ content-type: reference
 topic-tags: monitoring-deliveries
 exl-id: 86c7169a-2c71-4c43-8a1a-f39871b29856
 source-git-commit: a129f49d4f045433899fd7fdbd057fb16d0ed36a
-workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+workflow-type: ht
+source-wordcount: '2614'
+ht-degree: 100%
 
 ---
 
 # Compreensão de falhas de entrega{#understanding-delivery-failures}
 
-## Sobre falhas de delivery {#about-delivery-failures}
+## Sobre falhas de entrega {#about-delivery-failures}
 
 Quando uma mensagem (email, SMS, notificação por push) não pode ser enviada a um perfil, o servidor remoto envia automaticamente uma mensagem de erro, que é recebida pela plataforma do Adobe Campaign, que determina se o endereço de email ou o número de telefone deve ir para a quarentena. Consulte [Gerenciamento de emails de devolução](#bounce-mail-management).
 
@@ -85,31 +85,31 @@ Os possíveis motivos para uma falha de delivery são:
   </tr> 
   <tr> 
    <td> Endereço de controle </td> 
-   <td> Ignorado </td> 
+   <td> Ignored </td> 
    <td> 127 </td> 
    <td> O endereço do recipient faz parte do grupo de controle.<br /> </td> 
   </tr> 
   <tr> 
    <td> Duplo </td> 
-   <td> Ignorado </td> 
+   <td> Ignored </td> 
    <td> 10 </td> 
    <td> O endereço do recipient já estava nesse delivery.<br /> </td> 
   </tr> 
   <tr> 
    <td> Erro ignorado </td> 
-   <td> Ignorado </td> 
+   <td> Ignored </td> 
    <td> 25 </td> 
    <td> O endereço está na lista de permissões. O erro é então ignorado e um email será enviado.<br /> </td> 
   </tr> 
   <tr> 
    <td> Excluído após arbitragem </td> 
-   <td> Ignorado </td> 
+   <td> Ignored </td> 
    <td> 12 </td> 
    <td> O recipient foi excluído por uma regra de tipologia de 'arbitragem' de campanha.<br /> </td> 
   </tr> 
   <tr> 
    <td> Excluído por uma regra SQL </td> 
-   <td> Ignorado </td> 
+   <td> Ignored </td> 
    <td> 11 </td> 
    <td> O recipient foi excluído por uma regra de tipologia de campanha do tipo "SQL".<br /> </td> 
   </tr> 
@@ -127,7 +127,7 @@ Os possíveis motivos para uma falha de delivery são:
   </tr> 
   <tr> 
    <td> Não conectado </td> 
-   <td> Ignorado </td> 
+   <td> Ignored </td> 
    <td> 6 </td> 
    <td> O telefone celular do recipient está desligado ou não conectado à rede quando a mensagem é enviada.<br /> </td> 
   </tr> 
@@ -139,7 +139,7 @@ Os possíveis motivos para uma falha de delivery são:
   </tr> 
   <tr> 
    <td> Não se qualifica para as ofertas </td> 
-   <td> Ignorado </td> 
+   <td> Ignored </td> 
    <td> 16 </td> 
    <td> O recipient não foi qualificado para as ofertas no delivery.<br /> </td> 
   </tr> 
@@ -151,13 +151,13 @@ Os possíveis motivos para uma falha de delivery são:
   </tr> 
   <tr> 
    <td> Target limitado em tamanho </td> 
-   <td> Ignorado </td> 
+   <td> Ignored </td> 
    <td> 17 </td> 
    <td> O tamanho máximo de delivery foi atingido para o recipient.<br /> </td> 
   </tr> 
   <tr> 
    <td> Endereço não qualificado </td> 
-   <td> Ignorado </td> 
+   <td> Ignored </td> 
    <td> 15 </td> 
    <td> O endereço postal não foi qualificado.<br /> </td> 
   </tr> 
@@ -176,7 +176,7 @@ Os possíveis motivos para uma falha de delivery são:
  </tbody> 
 </table>
 
-## Tentativas após uma falha temporária de delivery {#retries-after-a-delivery-temporary-failure}
+## Tentativas após uma falha temporária de entrega {#retries-after-a-delivery-temporary-failure}
 
 Se uma mensagem falhar devido a um erro **suave** ou **grave** que é temporário, novas tentativas serão executadas durante a validade do delivery.
 
@@ -207,9 +207,9 @@ Uma mensagem pode falhar imediatamente (erro síncrono), ou posteriormente, apó
 
    >[!NOTE]
    >
-   >A gestão de reclamações é detalhada na seção de [Gestão de Deliverability](about-deliverability.md) .
+   >O gerenciamento de reclamações é detalhada na seção [Gerenciamento da capacidade de entrega](about-deliverability.md).
 
-## Gestão de emails de devolução {#bounce-mail-management}
+## Gerenciamento de emails rejeitados {#bounce-mail-management}
 
 A plataforma do Adobe Campaign permite gerenciar falhas de delivery de email por meio da funcionalidade de rejeição de mensagens.
 
@@ -317,7 +317,7 @@ Para instalações lno local e instalações hospedadas/híbridas que usam o MTA
 * Você pode escolher se ativa ou não determinados padrões de identificação e chaves de criptografia para verificar o nome do domínio, como **ID do remetente**, **DomainKeys**, **DKIM**, e **S/MIME**.
 * Os parâmetros de **retransmissão SMTP** permitem configurar o endereço IP e a porta de um servidor de retransmissão para um determinado domínio. Para obter mais informações, consulte [esta seção](../../installation/using/configuring-campaign-server.md#smtp-relay).
 
-Se suas mensagens forem exibidas no Outlook com **[!UICONTROL on behalf of]** no endereço do remetente, verifique se não está assinando seus emails com a **ID do remetente**, que é o padrão de autenticação de email proprietário desatualizado da Microsoft. Se a opção **[!UICONTROL Sender ID]** estiver ativada, desmarque a caixa correspondente e entre em contato com o [Atendimento ao cliente da Adobe](https://helpx.adobe.com/br/enterprise/admin-guide.html). Sua capacidade de entrega não será afetada.
+Se suas mensagens forem exibidas no Outlook com **[!UICONTROL on behalf of]** no endereço do remetente, verifique se não está assinando seus emails com a **ID do remetente**, que é o padrão de autenticação de email proprietário desatualizado da Microsoft. Se a opção **[!UICONTROL Sender ID]** estiver ativada, desmarque a caixa correspondente e entre em contato com o [Atendimento ao cliente da Adobe](https://helpx.adobe.com/br/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html). Sua capacidade de entrega não será afetada.
 
 #### Gerenciamento de MX {#mx-management}
 
