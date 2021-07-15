@@ -7,7 +7,7 @@ content-type: reference
 topic-tags: web-forms
 exl-id: 1c66b8e8-7590-4767-9b2f-a9a509df4508
 source-git-commit: 360fd1ed8970c17c0687eaca0a4c1960d6f5838c
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '965'
 ht-degree: 100%
 
@@ -67,13 +67,13 @@ A opção **[!UICONTROL Auto-load data referenced in the form]** permite pré-ca
 
 A opção **[!UICONTROL Load additional data]** permite adicionar informações que não são usadas nas páginas do formulário, mas ainda serão pré-carregadas.
 
-Você pode, por exemplo, pré-carregar o gênero do recipient e direcionar automaticamente para a página apropriada através de uma caixa de teste.
+Por exemplo, é possível pré-carregar o gênero do recipient e direcioná-lo automaticamente para a página apropriada por meio de uma caixa de teste.
 
 ![](assets/s_ncs_admin_survey_preload_ex.png)
 
-## Gerenciamento do delivery e do rastreamento de formulários web {#managing-web-forms-delivery-and-tracking}
+## Gerenciamento de entrega e de rastreamento de formulários Web {#managing-web-forms-delivery-and-tracking}
 
-Depois que o formulário tiver sido criado, configurado e publicado, você poderá entregar e controlar as respostas do usuário.
+Depois que o formulário tiver sido criado, configurado e publicado, você poderá entregar e rastrear as respostas do usuário.
 
 ### Ciclo de vida de um formulário {#life-cycle-of-a-form}
 
@@ -115,7 +115,7 @@ Para alterar o estado de um formulário, você precisa publicá-lo. Para fazer i
 
 ### Disponibilização de um formulário online {#making-a-form-available-online}
 
-Para ser acessado por usuários, o formulário deve estar em produção e iniciado, ou seja, dentro de seu período de validade. As datas de validade são inseridas por meio do link **[!UICONTROL Properties]** do formulário.
+Para ser acessado por usuários, o formulário deve estar em produção e ter sido iniciado, ou seja, estar em seu período de vigência. As datas de validade são inseridas por meio do link **[!UICONTROL Properties]** do formulário.
 
 * Use os campos na seção **[!UICONTROL Project]** para inserir datas de início e término do formulário.
 
@@ -125,7 +125,7 @@ Para ser acessado por usuários, o formulário deve estar em produção e inicia
 
    Consulte [Acessibilidade do formulário](defining-web-forms-properties.md#accessibility-of-the-form).
 
-### Delivery de um formulário por email {#delivering-a-form-via-email}
+### Entrega de um formulário por email {#delivering-a-form-via-email}
 
 Ao enviar um convite por email, você pode usar a opção **[!UICONTROL Adobe Campaign Encryption]** para reconciliação de dados. Para fazer isso, vá para o assistente do delivery e adapte o link ao formulário adicionando o seguinte parâmetro:
 
@@ -135,13 +135,13 @@ Ao enviar um convite por email, você pode usar a opção **[!UICONTROL Adobe Ca
 
 Nesse caso, a chave de reconciliação para o armazenamento de dados deve ser o identificador criptografado do recipient. Para obter mais informações, consulte [Pré-carregamento dos dados do formulário](#pre-loading-the-form-data).
 
-Nesse caso, você precisa verificar a opção **[!UICONTROL Update the preloaded record]** na caixa de registro. Para obter mais informações, consulte [Salvar respostas de formulários web](web-forms-answers.md#saving-web-forms-answers).
+Nesse caso, você precisa verificar a opção **[!UICONTROL Update the preloaded record]** na caixa de registro. Para obter mais informações, consulte [Salvar respostas de formulários Web](web-forms-answers.md#saving-web-forms-answers).
 
 ![](assets/s_ncs_admin_survey_save_box_option.png)
 
-### Rastrear respostas {#log-responses}
+### Registrar respostas {#log-responses}
 
-O rastreamento de resposta pode ser ativado em uma guia dedicada para monitorar o impacto do seu formulário web. Para fazer isso, clique no link **[!UICONTROL Advanced parameters...]** na janela de propriedades do formulário e selecione a opção **[!UICONTROL Log responses]**.
+O rastreamento de resposta pode ser ativado em uma guia dedicada para monitorar o impacto do formulário Web. Para fazer isso, clique no link **[!UICONTROL Advanced parameters...]** na janela de propriedades do formulário e selecione a opção **[!UICONTROL Log responses]**.
 
 ![](assets/s_ncs_admin_survey_trace.png)
 
