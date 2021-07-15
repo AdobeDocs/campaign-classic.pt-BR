@@ -7,7 +7,7 @@ content-type: reference
 topic-tags: sending-emails
 exl-id: 1bb36e71-9f1a-4553-b266-eca3f48688e2
 source-git-commit: a129f49d4f045433899fd7fdbd057fb16d0ed36a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '888'
 ht-degree: 100%
 
@@ -15,7 +15,7 @@ ht-degree: 100%
 
 # Parâmetros de email {#email-parameters}
 
-Esta seção apresenta as opções e os parâmetros específicos do delivery de email.
+Esta seção apresenta as opções e os parâmetros específicos da entrega de email.
 
 ## CCO de email {#email-bcc}
 
@@ -107,7 +107,7 @@ Para fazer isso, selecione a opção **[!UICONTROL Force the encoding used for m
 
 ![](assets/s_ncs_user_email_del_properties_smtp_tab_encoding.png)
 
-## Gestão de emails de devolução {#managing-bounce-emails}
+## Gerenciamento de emails rejeitados {#managing-bounce-emails}
 
 A guia **[!UICONTROL SMTP]** dos parâmetros de delivery permite configurar a gestão de emails devolvidos.
 
@@ -121,7 +121,7 @@ Para obter mais informações sobre gerenciamento de rejeição de emails, consu
 
 ## Adição de cabeçalhos SMTP {#adding-smtp-headers}
 
-É possível adicionar cabeçalhos SMTP aos seus deliveries. Para fazer isso, use a seção relevante da guia **[!UICONTROL SMTP]** no delivery.
+É possível adicionar cabeçalhos SMTP às entregas Para fazer isso, use a seção relevante da guia **[!UICONTROL SMTP]** no delivery.
 
 O script inserido nessa janela deve referenciar um cabeçalho por linha no seguinte formulário: **name:value**.
 
