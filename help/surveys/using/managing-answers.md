@@ -1,15 +1,15 @@
 ---
 product: campaign
 title: Gerenciar respostas
-description: Saiba como gerenciar respostas de pesquisa
+description: Saiba como gerenciar respostas de pesquisas
 audience: web
 content-type: reference
 topic-tags: online-surveys
 exl-id: 0b5dc602-e16f-4bf1-bd8f-352e0bc78996
 source-git-commit: 86963746d3de3396963d221ddbd1ef7d89733d2f
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '841'
-ht-degree: 92%
+ht-degree: 100%
 
 ---
 
@@ -23,9 +23,9 @@ Além dos modos de armazenamento padrão comuns a todos os formulários Web no A
 >
 >Esta opção está disponível somente para aplicações Web do tipo **Pesquisa.** Não é oferecido para outros tipos de formulários Web.
 
-### Armazenar em um campo arquivado {#storing-in-an-archived-field}
+### Armazenamento em um campo arquivado {#storing-in-an-archived-field}
 
-É fácil estender o template de dados adicionando novos espaços de armazenamento para salvar as respostas fornecidas em pesquisas. Para fazer isso, marque a opção **[!UICONTROL Store answers to a question]** ao criar o campo de entrada. Clique no link **[!UICONTROL New field...]** e forneça suas propriedades:
+É fácil estender o modelo de dados adicionando novos espaços de armazenamento para salvar as respostas fornecidas em pesquisas. Para fazer isso, marque a opção **[!UICONTROL Store answers to a question]** ao criar o campo de entrada. Clique no link **[!UICONTROL New field...]** e forneça suas propriedades:
 
 ![](assets/s_ncs_admin_survey_new_space.png)
 
@@ -99,11 +99,11 @@ Para cada formulário, as respostas fornecidas podem ser usadas em campos ou ró
 
 ### Configurações de armazenamento {#storage-settings}
 
-Você pode arquivar respostas para pesquisas em formato XML. Isso permite salvar uma cópia bruta das respostas coletadas, o que pode ser útil caso haja uma padronização excessiva dos dados em uma lista discriminada. [Saiba mais](../../surveys/using/publish--track-and-use-collected-data.md#standardizing-data)
+É possível arquivar respostas de pesquisas em formato XML. Isso permite salvar uma cópia bruta das respostas coletadas, o que pode ser útil caso haja uma padronização excessiva dos dados em uma lista discriminada. [Saiba mais](../../surveys/using/publish--track-and-use-collected-data.md#standardizing-data)
 
 >[!CAUTION]
 >
->O arquivamento de respostas brutas afeta o espaço de armazenamento necessário. Use essa opção com cautela.
+>O arquivamento de respostas brutas interfere no espaço de armazenamento necessário. Use essa opção com cuidado.
 
 Para fazer isso:
 
@@ -116,7 +116,7 @@ Você pode habilitá-lo por padrão para todas as pesquisas (esta opção é apl
 
 ![](assets/s_ncs_admin_survey_xml_global_option.png)
 
-## Gestão de pontuação {#score-management}
+## Gerenciamento de pontuação {#score-management}
 
 Você pode atribuir uma pontuação às opções oferecidas nas páginas do formulário. As pontuações só podem ser vinculadas a perguntas fechadas: caixa de seleção, valor de uma lista suspensa, subscrição e etc.
 
