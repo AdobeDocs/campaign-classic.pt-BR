@@ -11,7 +11,7 @@ hide: true
 source-git-commit: 6c28e6cd78ce7a8ee5c0dc7e671de780787b9f57
 workflow-type: tm+mt
 source-wordcount: '1682'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -21,7 +21,7 @@ ht-degree: 99%
 >
 >O Conector de dados do Adobe Analytics foi descontinuado. Embora os recursos obsoletos ainda estejam disponíveis, eles não serão aprimorados nem terão suporte. Saiba mais [nesta página](../../rn/using/deprecated-features.md).
 
-## Sobre a integração do conector de dados {#about-data-connector-integration}
+## Sobre a integração do Conector de dados {#about-data-connector-integration}
 
 >[!IMPORTANT]
 >
@@ -31,7 +31,7 @@ O conector de dados (anteriormente conhecido como Adobe Genesis) permite que o A
 
 Usando o Data Connector, o Adobe Campaign tem uma forma de medir o público da Internet (Web Analytics). Graças a essas integrações, o Adobe Campaign pode recuperar dados do comportamento do visitante para um ou mais sites, após uma campanha de marketing, e (após a análise) executar campanhas de re-marketing com uma visualização para convertê-los em compradores. Por outro lado, as ferramentas do Web Analytics permitem que o Adobe Campaign encaminhe indicadores e atributos de campanha para suas plataformas.
 
-Para obter mais informações sobre a implementação da integração do Adobe Analytics com o Adobe Campaign, consulte esta [documentação](https://helpx.adobe.com/marketing-cloud/how-to/analytics-ac.html).
+Para obter mais informações sobre a implementação da integração do Adobe Analytics com o Adobe Campaign, consulte esta [documentação](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/connectors/adobe-analytics-data-connector.html?lang=pt-BR).
 
 Os campos de ação para cada ferramenta são os seguintes:
 
@@ -46,15 +46,15 @@ Os campos de ação para cada ferramenta são os seguintes:
    1. recupera e analisa segmentos,
    1. e dispara uma campanha de re-marketing.
 
-## Como configurar a integração {#setting-up-the-integration}
+## Configuração da integração {#setting-up-the-integration}
 
 Para configurar o Data Connector, você deve se conectar à instância do Adobe Campaign e executar as seguintes operações:
 
-* [Etapa 1: configurar integração no Analytics](#step-1--configure-integration-in-analytics)
+* [Etapa 1: configurar a integração no Analytics](#step-1--configure-integration-in-analytics)
 * [Etapa 2: criar a conta externa no Campaign](#step-2--create-the-external-account-in-campaign)
 * [Etapa 3: sincronizar o Adobe Campaign e o Adobe Analytics](#step-3--synchronize-adobe-campaign-and-adobe-analytics)
 
-### Etapa 1: configurar integração no Analytics {#step-1--configure-integration-in-analytics}
+### Etapa 1: configurar a integração no Analytics {#step-1--configure-integration-in-analytics}
 
 As etapas a seguir detalham a configuração do Data Connector usando um assistente.
 
@@ -68,7 +68,7 @@ As etapas a seguir detalham a configuração do Data Connector usando um assiste
 
 1. Na guia **[!UICONTROL Admin]**, selecione **[!UICONTROL Data Connectors]**.
 
-   É necessário ter as seguintes permissões de ferramentas do Analytics para acessar o menu **[!UICONTROL Data Connectors]**. Para obter mais informações, consulte esta [página](https://experienceleague.adobe.com/docs/analytics/admin/admin-console/permissions/analytics-tools.html)
+   É necessário ter as seguintes permissões de ferramentas do Analytics para acessar o menu **[!UICONTROL Data Connectors]**. Para obter mais informações, consulte esta [página](https://experienceleague.adobe.com/docs/analytics/admin/admin-console/permissions/analytics-tools.html?lang=pt-BR)
    * Integrações (Criar)
    * Integrações (Atualizar)
    * Integrações (Excluir)
@@ -115,7 +115,7 @@ Verifique se os **[!UICONTROL Events]** são do tipo Numérico; caso contrário,
 
    ![](assets/adobe_genesis_install_012.png)
 
-   O Data Connector está configurado.
+   O Conector de dados está configurado.
 
 ### Etapa 2: criar a conta externa no Campaign {#step-2--create-the-external-account-in-campaign}
 
@@ -190,9 +190,9 @@ Se segmentos adicionais tiverem sido configurados no assistente do Data Connecto
 
 ![](assets/webanalytics_segments_update.png)
 
-### Workflows técnicos de processos de análise da web {#technical-workflows-of-web-analytics-processes}
+### Fluxos de trabalho técnicos de processos de análise da Web {#technical-workflows-of-web-analytics-processes}
 
-A troca de dados entre o Adobe Campaign e o Adobe Analytics – Data Connector é realizada por quatro workflows técnicos que são executados como uma tarefa em segundo plano.
+A troca de dados entre o Adobe Campaign e o Adobe Analytics – Conector de dados é realizada por quatro fluxos de trabalho técnicos que são executados como uma tarefa em segundo plano.
 
 Eles estão disponíveis na árvore do Adobe Campaign, na pasta **[!UICONTROL Administration > Production > Technical workflows > Web analytics process]**.
 
@@ -235,7 +235,7 @@ Eles estão disponíveis na árvore do Adobe Campaign, na pasta **[!UICONTROL Ad
 
 
 
-## Rastreamento de deliveries no Adobe Campaign {#tracking-deliveries-in-adobe-campaign}
+## Rastreamento de entregas no Adobe Campaign {#tracking-deliveries-in-adobe-campaign}
 
 Para que a Adobe Experience Cloud possa rastrear a atividade nos sites, depois que o Adobe Campaign enviou o delivery, é necessário fazer referência ao conector correspondente nas propriedades de delivery. Para fazer isso, siga as etapas abaixo:
 
@@ -248,9 +248,9 @@ Para que a Adobe Experience Cloud possa rastrear a atividade nos sites, depois q
 
    ![](assets/webanalytics_delivery_properties_002.png)
 
-1. Agora você pode enviar o delivery e acessar o relatório no Adobe Analytics.
+1. Agora você pode enviar a entrega e acessar o respectivo relatório no Adobe Analytics.
 
-## Criação de uma campanha de re-marketing {#creating-a-re-marketing-campaign}
+## Criação de uma campanha de remarketing {#creating-a-re-marketing-campaign}
 
 Para preparar sua campanha de re-marketing, basta criar templates do delivery para campanhas do tipo re-marketing. Em seguida, configure sua campanha de re-marketing e a vincule a um segmento. Cada segmento deve ter uma campanha de re-marketing diferente.
 
