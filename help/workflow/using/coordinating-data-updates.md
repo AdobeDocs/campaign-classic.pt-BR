@@ -7,9 +7,9 @@ content-type: reference
 topic-tags: use-cases
 exl-id: 9959e22e-9aa0-410f-b22c-9ca1cac46b97
 source-git-commit: 895aa2fd4fa9c7c71c0073e9be33c12d4e92c9fa
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '300'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -53,5 +53,5 @@ Para criar o workflow, siga as etapas abaixo:
 
 **Tópicos relacionados:**
 
-* [Impedir várias execuções simultâneas](../../workflow/using/monitoring-workflow-execution.md#preventing-simultaneous-multiple-executions)
-* [Atividade de atualização de dados](../../workflow/using/update-data.md)
+* [Evitar várias execuções simultâneas](../../workflow/using/monitoring-workflow-execution.md#preventing-simultaneous-multiple-executions)
+* [Atividade Atualizar dados](../../workflow/using/update-data.md)
