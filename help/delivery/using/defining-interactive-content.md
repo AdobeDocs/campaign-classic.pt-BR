@@ -7,13 +7,13 @@ content-type: reference
 topic-tags: sending-emails
 exl-id: 3110c371-bbf2-4ab2-a701-3f348b5c1e7f
 source-git-commit: 94e609f3df94c553e2ec84ee427887a767b9af21
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1574'
 ht-degree: 100%
 
 ---
 
-# Definição do conteúdo interativo {#defining-interactive-content}
+# Definição de conteúdo interativo{#defining-interactive-content}
 
 O Adobe Campaign possibilita utilizar o novo formato interativo [AMP para Email](https://amp.dev/about/email/), que permite o envio de emails dinâmicos, sob determinadas condições.
 
@@ -125,11 +125,11 @@ Para criar um email por meio do uso do formato AMP, siga as etapas abaixo.
 
    >[!IMPORTANT]
    >
-   >Se o email não contiver um HTML ou uma versão do texto sem formatação além do conteúdo do AMP, ele não poderá ser enviado.
+   >Se o email não contiver uma versão HTML ou de texto sem formatação além do conteúdo do AMP, ele não poderá ser enviado.
 
-## Requisitos de delivery do AMP for Email {#amp-for-email-delivery-requirements}
+## Requisitos de entrega do AMP for Email {#amp-for-email-delivery-requirements}
 
-Ao criar o conteúdo do AMP no Adobe Campaign, para que um email dinâmico seja entregue é necessário atender às condições que são específicas dos provedores de email dos recipients.
+Ao criar o conteúdo do AMP no Adobe Campaign, para que um email dinâmico seja entregue, é necessário atender às condições que são específicas dos provedores de email dos recipients.
 
 Atualmente, três provedores de e-mail são compatíveis com o teste deste formato: Gmail, Outlook e Mail.ru.
 
@@ -148,9 +148,9 @@ Atualmente, você pode experimentar o envio de um email AMP em duas etapas:
 
 1. O Adobe Campaign permite testar o delivery de um email dinâmico alimentado pela AMP para endereços de email selecionados e adequadamente configurados, a fim de verificar o conteúdo e comportamento. Consulte [Teste de delivery de email AMP para endereços selecionados](#testing-amp-delivery-for-selected-addresses).
 
-1. Depois de testado, é possível enviar um delivery ou uma campanha como parte do programa AMP for Email por meio do registro em provedores de email relevantes, para que o domínio do remetente seja incluído na lista de permissões. Consulte [Delivery de emails do AMP através de registro em um provedor de email](#delivering-amp-emails-by-registering).
+1. Depois de testado, é possível enviar um delivery ou uma campanha como parte do programa AMP for Email por meio do registro em provedores de email relevantes, para que o domínio do remetente seja incluído na lista de permissões. Consulte [Delivery de emails do AMP por meio de registro em um provedor de email](#delivering-amp-emails-by-registering).
 
-### Teste de delivery de email do AMP para endereços selecionados {#testing-amp-delivery-for-selected-addresses}
+### Teste de entrega de email do AMP para endereços selecionados {#testing-amp-delivery-for-selected-addresses}
 
 É possível testar o envio de mensagens dinâmicas do Adobe Campaign para endereços de email selecionados.
 
@@ -168,9 +168,9 @@ Para obter mais detalhes, consulte a documentação do desenvolvedor [Gmail](htt
 
 ![](assets/amp_from_field.png)
 
-Para testar o envio de um email do AMP para um endereço Mail.ru, siga as etapas da [documentação do desenvolvedor do Mail.ru](https://postmaster.mail.ru/amp/?lang=en#howto) (**Se você for uma seção de** usuário).
+Para testar o envio de um email do AMP para um endereço Mail.ru, siga as etapas da [documentação do desenvolvedor do Mail.ru](https://postmaster.mail.ru/amp/?lang=pt-BR#howto) (**Se você for uma seção de** usuário).
 
-### Delivery de emails do AMP através do registro em um provedor de email {#delivering-amp-emails-by-registering}
+### Entrega de emails do AMP por meio do registro em um provedor de email {#delivering-amp-emails-by-registering}
 
 Você pode experimentar a entrega de emails dinâmicos se registrando com os provedores de email aceitos para adicionar o domínio do remetente à lista de permissões.
 
@@ -180,17 +180,17 @@ Você pode experimentar a entrega de emails dinâmicos se registrando com os pro
 
 Depois de testado com alguns endereços, é possível enviar emails do AMP para qualquer endereço do Gmail ou Outlook. Para fazer isso, é necessário fazer o registro no Google ou na Microsoft e aguardar a resposta deles. Siga as etapas apresentadas na documentação do desenvolvedor do [Gmail](https://developers.google.com/gmail/ampemail/register) e [Outlook](https://docs.microsoft.com/en-gb/outlook/amphtml/register-outlook#global-registration). Após o registro bem-sucedido, você se torna um remetente autorizado.
 
-Para enviar o emails AMP para endereços Mail.ru, siga os requisitos e as etapas listados na [documentação do desenvolvedor do Mail.ru](https://postmaster.mail.ru/amp/?lang=en#howto) (**Caso seja uma seção de remetente** de email).
+Para enviar o emails AMP para endereços Mail.ru, siga os requisitos e as etapas listados na [documentação do desenvolvedor do Mail.ru](https://postmaster.mail.ru/amp/?lang=pt-BR#howto) (**Caso seja uma seção de remetente** de email).
 
 ## Envio de um email do AMP {#sending-amp-email}
 
-Quando o conteúdo e o fallback do AMP estão prontos e um destino compatível é definido, é possível enviar o email normalmente.
+Quando o conteúdo e o fallback do AMP estiverem prontos e um destino compatível tiver sido definido, será possível enviar o email normalmente.
 
 Atualmente, somente o Gmail e o Outlook oferecem suporte ao formato AMP, sob determinadas condições. É possível direcionar os endereços de outros provedores de email, mas eles receberão a versão HTML ou texto simples do email.
 
 >[!IMPORTANT]
 >
->Se o email não contiver um HTML ou uma versão do texto sem formatação além do conteúdo do AMP, ele não poderá ser enviado.
+>Se o email não contiver uma versão HTML ou de texto sem formatação além do conteúdo do AMP, ele não poderá ser enviado.
 
 Os recipients correspondentes tem a versão AMP do email exibida na caixa de correio.
 
