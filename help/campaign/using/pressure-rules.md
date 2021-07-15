@@ -7,15 +7,15 @@ content-type: reference
 topic-tags: campaign-optimization
 exl-id: c23212f2-fdf8-4820-b389-546f7c84db27
 source-git-commit: 86963746d3de3396963d221ddbd1ef7d89733d2f
-workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+workflow-type: ht
+source-wordcount: '3253'
+ht-degree: 100%
 
 ---
 
 # Regras de pressão{#pressure-rules}
 
-## Sobre fadiga da marca {#about-marketing-fatigue}
+## Sobre fadiga de marketing {#about-marketing-fatigue}
 
 A implementação do gerenciamento de regras de pressão permite evitar o excesso de solicitações de população no banco de dados, também conhecido como fadiga da marca. Para fazer isso, você pode definir um número máximo de mensagens por recipient. Também permite implementar regras de arbitragem entre campanhas, para enviar a melhor mensagem para o público-alvo.
 
@@ -39,7 +39,7 @@ Caso contrário, o recipient será **[!UICONTROL Excluded by arbitration]**. Par
 
 ## Criação de uma regra de pressão {#creating-a-pressure-rule}
 
-Para configurar arbitragem entre campanhas usando o Adobe Campaign, comece criando tipologias de campanha e definindo regras de tipologia vinculadas (regras de **Pressão** ).
+Para configurar arbitragem entre campanhas usando o Adobe Campaign, comece criando tipologias de campanha e definindo regras de tipologia vinculadas (regras de **Pressão**).
 
 Para criar e configurar uma regra de tipologia **[!UICONTROL Pressure]**, siga estas etapas:
 
@@ -91,7 +91,7 @@ Para criar e configurar uma regra de tipologia **[!UICONTROL Pressure]**, siga e
 
 1. A guia **[!UICONTROL Typologies]** permite visualizar as tipologias de campanha que aplica essa regra ou vincular a regra a uma ou mais tipologias existentes. Para obter mais informações, consulte [Aplicação de tipologias](../../campaign/using/about-campaign-typologies.md#applying-typologies).
 
-## Definindo limites e pesos {#defining-thresholds-and-weights}
+## Definição de limites e pesos {#defining-thresholds-and-weights}
 
 ### Número máximo de mensagens {#maximum-number-of-messages}
 
@@ -137,7 +137,7 @@ No exemplo a seguir, queremos vincular o peso das newsletters sobre música ao e
 
 1. Aplique esta regra a mensagens com os seguintes tópicos: newsletters, ofertas especiais etc. O peso desses deliveries e, portanto, o nível de prioridade, dependerão do escore de propensão de cada recipient.
 
-## Definindo o período {#setting-the-period}
+## Definição do período {#setting-the-period}
 
 As regras de pressão são definidas em períodos de **n** dias consecutivos.
 
@@ -218,7 +218,7 @@ Se esse número excede o limite, as regras de arbitragem definidas na tipologia 
 
 ### Adaptar o limite com base no critério {#adapting-the-threshold-based-on-criterion}
 
-Criaremos uma regra de tipologia para evitar o delivery de mais de 4 mensagens por semana para clientes e 2 mensagens por semana para prospectos.
+Criaremos uma regra de tipologia para evitar a entrega de mais de quatro mensagens por semana para clientes e duas mensagens por semana para clientes potenciais.
 
 Para identificar clientes e prospectos, use o campo **[!UICONTROL Status]**, que contém 0 para prospectos e 1 para clientes.
 
@@ -286,7 +286,7 @@ Durante a análise de delivery, os recipients do delivery são excluídos, se ap
 
    ![](assets/campaign_opt_pressure_sample_1_10.png)
 
-### Calculando o peso do delivery com base em comportamento {#calculating-the-delivery-weight-based-on-behavior}
+### Cálculo do peso da entrega com base em comportamento {#calculating-the-delivery-weight-based-on-behavior}
 
 Você pode definir regras de pressão com base no comportamento do recipient: assim, o peso de um delivery pode se adaptar a critérios que variam de um recipient a outro. Você pode decidir enviar uma mensagem dependendo se um recipient visitou o seu site de Internet, clicou em uma seção específica do último boletim informativo, se inscreveu em um serviço de informação ou até mesmo com base nas respostas de uma pesquisa, um jogo online etc.
 
@@ -310,9 +310,9 @@ Aplique as seguintes etapas de configuração:
    ![](assets/campaign_opt_pressure_sample_2_3.png)
 
 1. Clique em **[!UICONTROL Finish]** para salvar essa regra.
-1. Vincule a regra a uma tipologia de campanha e faça referência a essa tipologia em um delivery para aprová-la.
+1. Vincule a regra a uma tipologia de campanha e faça referência a essa tipologia em uma entrega para aprová-la.
 
-### Enviando somente as mensagens com maior peso {#sending-only-the-highest-weighted-messages}
+### Envio somente das mensagens com maior peso {#sending-only-the-highest-weighted-messages}
 
 Você deseja enviar não mais do que 2 mensagens na mesma semana, com um limite de 2 mensagens por dia a cada um dos recipients, e você deseja que apenas as mensagens com pesos maiores sejam entregues.
 
