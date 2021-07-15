@@ -7,7 +7,7 @@ content-type: reference
 topic-tags: sending-messages-on-mobiles
 exl-id: a2783a5e-6d38-41a1-b5c6-24ab489116f8
 source-git-commit: a129f49d4f045433899fd7fdbd057fb16d0ed36a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1677'
 ht-degree: 100%
 
@@ -343,7 +343,7 @@ Para evitar isso, aplique uma das seguintes soluções, dependendo do provedor q
 
 As etapas para configurar uma conta externa usando o conector SMPP genérico estendido estão detalhadas na seção [Criar uma conta externa SMPP](#creating-an-smpp-external-account).
 
-## Alterar o template do delivery {#changing-the-delivery-template}
+## Alterar o modelo de entrega {#changing-the-delivery-template}
 
 O Adobe Campaign oferece um template do delivery para celulares. Esse template está disponível no nó **[!UICONTROL Resources > Templates > Delivery templates]**. Para obter mais informações, consulte a seção [Sobre templates](about-templates.md)
 
