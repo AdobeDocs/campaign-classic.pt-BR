@@ -6,9 +6,9 @@ audience: integrations
 content-type: reference
 exl-id: 76645a6f-9536-49d6-b12a-fdd6113d31fa
 source-git-commit: 9a126d16b394333163b974ad9690f7c93fb3034a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '692'
-ht-degree: 92%
+ht-degree: 100%
 
 ---
 
@@ -40,7 +40,7 @@ O parâmetro @authPrivateKey do arquivo de configuração da instância está in
 
 1. Verifique se a authPrivateKey está definida.
 1. Verifique se a authPrivateKey: inicia com @, termina com = e tem cerca de 4000 caracteres.
-1. Procure a chave original e verifique se ela tem: formato RSA, 4096 bits de comprimento e inicia com `-----BEGIN RSA PRIVATE KEY-----`.
+1. Procure a chave original e verifique se ela tem formato RSA e 4096 bits de comprimento e se inicia com `-----BEGIN RSA PRIVATE KEY-----`.
    <br> Se necessário, recrie a chave e registre-a no Adobe Analytics.
 1. Verifique se a chave foi codificada na mesma instância como [!DNL pipelined]. <br>Se necessário, refaça a codificação usando a amostra de JavaScript ou workflow.
 
@@ -65,7 +65,7 @@ Os logs devem ser os seguintes:
 2021-05-31T08:43:09.160Z        66462   66501   1       error   log     Error while authenticating: '{"error":"This client: df73c224e5-triggers-test is no longer allowed to get access token."}' (iRc=16384)
 ```
 
-Esta mensagem de erro significa que a autenticação é configurada usando o OAuth base herdado do Omniture. Consulte a documentação [Configuração do Adobe I/O para Adobe Experience Cloud Triggers](../../integrations/using/configuring-adobe-io.md) para atualizar sua autenticação.
+Esta mensagem de erro significa que a autenticação é configurada usando o OAuth base herdado do Omniture. Consulte a documentação [Configuração do Adobe I/O para Acionadores da Adobe Experience Cloud](../../integrations/using/configuring-adobe-io.md) para atualizar sua autenticação.
 
 **Nenhum acionador foi recuperado**
 
