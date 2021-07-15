@@ -4,13 +4,13 @@ breadcrumb-title: Documentação do Campaign Classic v7
 product: campaign
 title: Manual do Campaign Classic v7
 breadcrumb-url: /docs/campaign-classic/using/campaign-classic-home.html
-user-guide-description: Com o Adobe Campaign, você pode usar dados avançados do cliente para criar, coordenar e fornecer campanhas dinâmicas que os clientes realmente desejam, por meio de email, dispositivos móveis, canais offline e muito mais.
+user-guide-description: Com o Adobe Campaign, é possível usar dados avançados do cliente para criar, coordenar e fornecer campanhas dinâmicas que os clientes realmente desejam, por meio de email, dispositivos móveis, canais offline e muito mais.
 sub-product: adobe campaign classic
 type: Documentation
 source-git-commit: ee3d643e4ba607b3d7ca816eabf862b867d1f3f4
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2518'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -117,7 +117,7 @@ ht-degree: 97%
          + [Conecte-se com o Microsoft Dynamics 365](platform/using/crm-ms-dynamics.md)
          + [Conecte-se com o Salesforce.com](platform/using/crm-sfdc.md)
          + [Sincronizar dados com o CRM](platform/using/crm-data-sync.md)
-      + [Conector Adobe Analytics](platform/using/adobe-analytics-connector.md)
+      + [Adobe Analytics Connector](platform/using/adobe-analytics-connector.md)
       + [Conector de dados do Adobe Analytics](platform/using/adobe-analytics-data-connector-legacy.md)
    + [Opções de ajuda e suporte](support.md)
 + Criar e enviar mensagens {#sending-messages}
@@ -192,14 +192,14 @@ ht-degree: 97%
       + [Usar uma tabela externa de recipient](delivery/using/using-an-external-recipient-table.md)
       + [Caso de uso: selecionar seed addresses de acordo com os critérios](delivery/using/use-case--selecting-seed-addresses-on-criteria.md)
       + [Caso de uso: configurar a substituição de campo](delivery/using/use-case--configuring-the-field-substitution.md)
-   + Teste AB {#a-b-testing}
-      + [Introdução ao teste AB](delivery/using/get-started-a-b-testing.md)
-      + [Configurar teste AB](delivery/using/configuring-a-b-testing.md)
+   + Teste A/B {#a-b-testing}
+      + [Introdução ao teste A/B](delivery/using/get-started-a-b-testing.md)
+      + [Configurar teste A/B](delivery/using/configuring-a-b-testing.md)
       + Caso de uso {#use-case}
          + [Sobre este caso de uso](delivery/using/a-b-testing-use-case.md)
          + [Criar um fluxo de trabalho de direcionamento](delivery/using/a-b-testing-uc-targeting-workflow.md)
          + [Configurar amostras de população](delivery/using/a-b-testing-uc-population-samples.md)
-         + [Criar templates do delivery](delivery/using/a-b-testing-uc-delivery-templates.md)
+         + [Criar os modelos de entrega](delivery/using/a-b-testing-uc-delivery-templates.md)
          + [Configurar as entregas](delivery/using/a-b-testing-uc-configuring-deliveries.md)
          + [Criar o script](delivery/using/a-b-testing-uc-script.md)
          + [Definir a entrega final](delivery/using/a-b-testing-uc-final-delivery.md)
@@ -210,7 +210,7 @@ ht-degree: 97%
       + [Gerenciar subscrições](delivery/using/managing-subscriptions.md)
       + [Marketing viral e social](delivery/using/viral-and-social-marketing.md)
    + Monitorar deliveries {#monitoring-deliveries}
-      + [Introdução ao monitoramento de delivery](delivery/using/about-delivery-monitoring.md)
+      + [Introdução ao monitoramento de entrega](delivery/using/about-delivery-monitoring.md)
       + [Acessar a lista de deliveries](delivery/using/list-of-deliveries.md)
       + [Painel de entrega](delivery/using/delivery-dashboard.md)
       + [Práticas recomendadas de desempenho de entrega](delivery/using/delivery-performances.md)
@@ -299,7 +299,7 @@ ht-degree: 97%
    + Relatórios sobre deliveries{#reports-on-deliveries}
       + [Sobre relatórios de deliveries](reporting/using/reports-on-deliveries.md)
       + [Relatórios globais](reporting/using/global-reports.md)
-      + [Relatórios do delivery](reporting/using/delivery-reports.md)
+      + [Relatórios de entrega](reporting/using/delivery-reports.md)
       + [Relatórios cumulativos](reporting/using/cumulative-reports.md)
       + [Cálculo do indicador](reporting/using/indicator-calculation.md)
       + [Pessoa/pessoas e recipients](reporting/using/person-people-recipients.md)
@@ -361,9 +361,9 @@ ht-degree: 97%
    + [Etapas principais para criar uma pesquisa](surveys/using/getting-started-with-surveys.md)
    + [Criar uma pesquisa](surveys/using/building-a-survey.md)
    + [Gerenciar respostas](surveys/using/managing-answers.md)
-   + [Publicar, acompanhar e usar dados coletados](surveys/using/publish--track-and-use-collected-data.md)
+   + [Publicar, rastrear e usar dados coletados](surveys/using/publish--track-and-use-collected-data.md)
    + [Configurar pesquisas](surveys/using/configuring-surveys.md)
-   + [Caso de uso: criar um formulário de referência](surveys/using/use-case--creating-a-refer-a-friend-form.md)
+   + [Caso de uso: criar um formulário de indicação](surveys/using/use-case--creating-a-refer-a-friend-form.md)
    + [Caso de uso: exibir relatório sobre as respostas a uma pesquisa online](surveys/using/use-case--displaying-report-on-answers-to-an-online-survey.md)
 + Integrar com a Adobe Experience Cloud {#integrating-with-adobe-experience-cloud}
    + [Sobre integrações do Campaign](integrations/using/about-campaign-integrations.md)
