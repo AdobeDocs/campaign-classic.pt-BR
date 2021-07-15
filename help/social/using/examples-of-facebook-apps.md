@@ -7,9 +7,9 @@ content-type: reference
 topic-tags: annexes
 exl-id: 3b8c7db4-9c55-42f6-8e09-e5ab781efe8f
 source-git-commit: c7068c172c35e067d2dbed9233ec3b84633603fd
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2222'
-ht-degree: 94%
+ht-degree: 100%
 
 ---
 
@@ -48,7 +48,7 @@ As seguintes limitações estão vinculadas diretamente ao Facebook:
 * Deve criar todos os aplicativos web em HTTPS.
 * Um aplicativo do Facebook exibido por meio de uma guia tem uma largura de 810 pixels.
 
-## Início rápido: criação de um aplicativo do Facebook em 7 etapas {#quick-start--creating-a-facebook-application-in-7-steps}
+## Início rápido: criação de um aplicativo do Facebook em sete etapas {#quick-start--creating-a-facebook-application-in-7-steps}
 
 Este exemplo fornece um processo passo a passo de como exibir um aplicativo criado pelo Adobe Campaign no Facebook. Nesse caso, queremos criar um aplicativo que permita exibir a mensagem **Welcome** quando o usuário clicar na guia do aplicativo (**App01**).
 
@@ -88,7 +88,7 @@ Verifique se a guia do aplicativo **App01** é exibida em sua página do Faceboo
 
 ![](assets/social_webapp_042.png)
 
-## Como encaminhar configurações para um aplicativo do Facebook? {#how-to-forward-settings-to-a-facebook-application-}
+## Como encaminhar configurações a um aplicativo do Facebook? {#how-to-forward-settings-to-a-facebook-application-}
 
 >[!IMPORTANT]
 >
@@ -163,9 +163,9 @@ Ela é composta por três ramos:
 * **[!UICONTROL application parameter equals 'thanks']** : para evitar um erro de exibição vinculado ao Facebook, a página final do aplicativo web aponta para o URL do aplicativo do Facebook ao qual o parâmetro **[!UICONTROL app_data]** é adicionado usando o valor **[!UICONTROL thanks]** (para obter mais informações, consulte: [Finalizar atividade](#end-activity)). O segundo ramo permite descobrir se o usuário vem da atividade **[!UICONTROL End]** do primeiro ramo (e acabou de entrar no concurso) para exibir uma mensagem de agradecimento. Para obter mais informações sobre como usar parâmetros de URL adicionais, consulte: [Como encaminhar configurações para um aplicativo do Facebook?](#how-to-forward-settings-to-a-facebook-application-).
 * **[!UICONTROL Default branch]** : se o usuário já tiver entrado no concurso (ID já inserida) em uma data anterior (parâmetro de aplicativo diferente de **[!UICONTROL thanks]**), exibiremos uma página informando que já estão participando.
 
-### Página do concurso {#competition-page}
+### Página de concurso {#competition-page}
 
-Para contornar o erro de exibição vinculado ao Facebook, também é preciso selecionar **[!UICONTROL Parent window]** ou **[!UICONTROL In the top window]** no campo **[!UICONTROL Window]** da página do concorrente.
+Para contornar o erro de exibição vinculado ao Facebook, também é preciso selecionar **[!UICONTROL Parent window]** ou **[!UICONTROL In the top window]** no campo **[!UICONTROL Window]** da página da competição.
 
 ![](assets/social_webapp_028.png)
 
@@ -224,7 +224,7 @@ Antes de clicar em **[!UICONTROL Ok]**, marque a caixa **[!UICONTROL I agree to 
 >
 >Se quiser os dois tipos de pré-carregamento (via Adobe Campaign e via Facebook), adicione duas caixas de pré-carregamento uma após a outra.
 
-### Atividade Save {#save-activity}
+### Salvar atividade {#save-activity}
 
 A atividade **[!UICONTROL Save]** permite armazenar as informações coletadas durante os estágios anteriores na tabela dos visitantes.
 
@@ -259,7 +259,7 @@ Em nosso exemplo, o valor usado é **thanks**.
 
 ### Tela de detalhes de um visitante {#details-screen-of-a-visitor}
 
-Assim como para os seguidores do Twitter (consulte: [Princípio operacional](../../social/using/publishing-on-twitter.md#operating-principle)), os perfis do Facebook recuperados são armazenados na tabela dos visitantes. Para exibir a lista de visitantes, vá para o nó **[!UICONTROL Profiles and Targets > Visitors]**.
+Assim como é feito com os seguidores do Twitter (consulte: [Princípio operacional](../../social/using/publishing-on-twitter.md#operating-principle)), os perfis do recuperados do Facebook são armazenados na tabela dos visitantes. Para exibir a lista de visitantes, vá para o nó **[!UICONTROL Profiles and Targets > Visitors]**.
 
 Cada prospecto do Facebook que concorda em compartilhar suas informações de perfil é adicionado à lista de visitantes. Se a caixa **[!UICONTROL Friends]** estiver marcada na atividade **[!UICONTROL Pre-load]** (consulte: [Atividade de pré-carregamento](#pre-loading-activity)), os amigos também são adicionados.
 
@@ -307,22 +307,22 @@ O aplicativo **[!UICONTROL Social Marketing]** também permite adicionar um bot�
 >
 >Antes de começar a usar essa função, é necessário criar um aplicativo do Facebook e uma conta externa do tipo **[!UICONTROL Facebook Connect]** . Para obter mais informações, consulte [Configuração de contas externas](../../social/using/creating-a-facebook-application.md#configuring-external-accounts).
 
-**Faça pré-carregamento dos campos do formulário com dados obtidos do perfil do Facebook.**
+**Faça o pré-carregamento dos campos do formulário com dados obtidos do perfil do Facebook**
 
-Você cria um formulário web e inclui elementos com os quais o usuário não tem nenhuma interação nas páginas do formulário; são elementos estáticos, como imagens, conteúdo HTML, uma barra horizontal ou um link de hipertexto. Saiba mais sobre elementos estáticos em um formulário web em [this page](../../web/using/static-elements-in-a-web-form.md).
+É possível criar um formulário Web e incluir elementos com os quais o usuário não tem interação nas páginas do formulário. Trata-se de elementos estáticos, como imagens, conteúdo HTML, uma barra horizontal ou um link de hipertexto. Saiba mais sobre elementos estáticos em um formulário Web [nesta página](../../web/using/static-elements-in-a-web-form.md).
 
-Ao inserir um elemento estático, a opção **[!UICONTROL Preload with Facebook]** permite inserir um botão em um formulário para pré-carregar campos usando informações de perfil do Facebook.
+Quando você insere um elemento estático, a opção **[!UICONTROL Preload with Facebook]** permite inserir um botão em um formulário para pré-carregar campos usando informações de perfil do Facebook.
 
 ![](assets/web_social_webapp_037.png)
 
-Quando um usuário clica no botão **[!UICONTROL Fill in automatically]**, a solicitação do Facebook para a janela de permissão é aberta.
+Quando um usuário clica no botão **[!UICONTROL Fill in automatically]**, a janela de solicitação de permissão do Facebook é aberta.
 
 ![](assets/web_social_webapp_029.png)
 
 >[!NOTE]
 >
->Você pode alterar a lista de direitos estendidos ao configurar a conta externa. Se nenhum direito estendido for configurado, o Facebook encaminhará as informações básicas do perfil por padrão.\
->Para visualizar a lista de direitos estendidos e sua sintaxe, [consulte a documentação do Facebook](https://developers.facebook.com/docs/reference/api/permissions).
+>É possível alterar a lista de direitos estendidos ao configurar a conta externa. Se nenhum direito estendido for configurado, o Facebook encaminhará as informações básicas do perfil por padrão.\
+>Para visualizar a lista de direitos estendidos e a respectiva sintaxe, [consulte a documentação do Facebook](https://developers.facebook.com/docs/reference/api/permissions).
 
 Se o usuário concordar em compartilhar suas informações, os campos do formulário serão pré-carregados.
 
