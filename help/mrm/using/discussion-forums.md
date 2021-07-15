@@ -7,9 +7,9 @@ content-type: reference
 topic-tags: tasks--resources-and-budgets
 exl-id: 222853c5-c754-4c0b-8ee4-a64b2f8677a4
 source-git-commit: 690f7c4e62203127da7a7055afa0ee8ad4a2bce4
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '728'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
@@ -64,7 +64,7 @@ Na caixa **[!UICONTROL Discussion forum]**:
 
 >[!NOTE]
 >
->Uma vez que a mensagem tenha sido postada no fórum, ela não poderá mais ser alterada ou excluída.
+>Assim que a mensagem for postada no fórum, ela não poderá mais ser alterada ou excluída.
 
 ## Postar no fórum pessoal de um operador {#posting-to-the-personal-forum-of-an-operator}
 
@@ -75,7 +75,7 @@ Para acessar o fórum de um operador:
 * Se você tiver os direitos necessários para acessar o nó do explorador **[!UICONTROL Administration > Access management > Operators]**, abra o painel do operador desejado e clique no link **[!UICONTROL Forum]** no canto superior direito.
 * Caso contrário, localize o nome do operador no Adobe Campaign (por meio de uma mensagem publicada no fórum por este operador, uma tarefa atribuída a ele) e clique nela para acessar seu painel. Você também poderá pedir ao administrador para criar uma visualização da pasta do operador.
 
-## Inscrever-se em um fórum {#subscribing-to-a-forum}
+## Assinar um fórum {#subscribing-to-a-forum}
 
 A inscrição de um fórum permite seguir as discussões. Inscritos receberão uma notificação por e-mail sempre que uma mensagem for postada no fórum. Este e-mail conterá o corpo da mensagem e quaisquer anexos. Para responder a uma mensagem, clique no corpo do e-mail e, em seguida, faça login na interface da Web do Adobe Campaign. Quando se inscrever em um fórum, essas informações ficam visíveis para todos.
 
