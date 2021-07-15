@@ -7,13 +7,13 @@ content-type: reference
 topic-tags: online-surveys
 exl-id: bd94c41a-813a-4ddb-a2bd-c3deab022482
 source-git-commit: 86963746d3de3396963d221ddbd1ef7d89733d2f
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '618'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
-# Caso de uso: criar um formulário de referência{#use-case-creating-a-refer-a-friend-form}
+# Caso de uso: criar um formulário de indicação{#use-case-creating-a-refer-a-friend-form}
 
 Neste exemplo, queremos oferecer uma competição aos recipients do banco de dados. O formulário Web terá uma seção para inserir respostas e outra para indicar um amigo inserindo seu endereço de email.
 
