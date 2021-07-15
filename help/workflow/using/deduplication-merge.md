@@ -1,5 +1,5 @@
 ---
-title: Uso da funcionalidade de mesclagem da atividade de desduplicação
+title: Utilização da funcionalidade de mesclagem da atividade de desduplicação
 description: Saiba como usar a funcionalidade de mesclagem da atividade de desduplicação
 page-status-flag: never-activated
 uuid: 8887574e-447b-48a5-afc6-95783ffa7fb3
@@ -14,13 +14,13 @@ internal: n
 snippet: y
 exl-id: a6b10585-7bf9-4fef-b886-db081b6d3acc
 source-git-commit: e3e2ac09de6a9e846e9f9262d522b9395a725648
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '550'
 ht-degree: 100%
 
 ---
 
-# Uso da funcionalidade de mesclagem da atividade de desduplicação {#deduplication-merge}
+# Utilização da funcionalidade de mesclagem da atividade de desduplicação {#deduplication-merge}
 
 ## Sobre este caso de uso {#about-this-use-case}
 
@@ -38,7 +38,7 @@ A atividade **[!UICONTROL Deduplication]** é usada para remover linhas duplicad
 
 Com a funcionalidade da atividade Desduplicação **[!UICONTROL Merge]**, é possível configurar um conjunto de regras para a desduplicação para definir um grupo de campos a serem mesclados em um único registro de dados resultante. Por exemplo, com um conjunto de registros duplicados, você pode optar por manter o número de telefone mais antigo ou o nome mais recente.
 
-## Ativar a funcionalidade Mesclar {#activating-merge}
+## Ativação da funcionalidade Mesclar {#activating-merge}
 
 
 Para habilitar a funcionalidade de mesclagem, primeiro é necessário configurar a atividade **[!UICONTROL Deduplication]**. Para fazer isso, siga estes passos:
