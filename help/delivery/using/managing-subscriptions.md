@@ -7,7 +7,7 @@ content-type: reference
 topic-tags: subscriptions-and-referrals
 exl-id: 16dddd4a-2e1a-4c78-8168-f656657bb9b8
 source-git-commit: a129f49d4f045433899fd7fdbd057fb16d0ed36a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1098'
 ht-degree: 100%
 
@@ -15,7 +15,7 @@ ht-degree: 100%
 
 # Gerenciamento de assinaturas{#managing-subscriptions}
 
-## Sobre os serviços de informações {#about-information-services}
+## Sobre os serviços de informação {#about-information-services}
 
 Um serviço de informação compreende:
 
@@ -84,9 +84,9 @@ Em ambos os casos, se um template de delivery para cancelamentos de subscrição
 
 Consulte [Mecanismos de subscrição e cancelamento de subscrição](#subscription-and-unsubscription-mechanisms)
 
-## Fazendo delivery aos assinantes de um serviço {#delivering-to-the-subscribers-of-a-service}
+## Entregar aos assinantes de um serviço {#delivering-to-the-subscribers-of-a-service}
 
-Para fazer delivery aos assinantes de um serviço de informação, é possível direcionar os assinantes ao serviço de informação relacionado, como no exemplo a seguir:
+Para entregar aos assinantes de um serviço de informação, é possível direcionar os assinantes ao serviço de informação relacionado, como no seguinte exemplo:
 
 ![](assets/s_ncs_user_wizard_target_is_a_service01.png)
 
@@ -119,7 +119,7 @@ Você pode configurar mecanismos de subscrição e unsubscription para automatiz
 
 ### Subscrever um recipient a um serviço {#subscribing-a-recipient-to-a-service}
 
-Para registrar recipients para um serviço de informação, é possível:
+Para registrar recipients para um serviço de informação, você pode:
 
 * Adicionar manualmente o serviço: para fazer isso, a partir da guia **[!UICONTROL Subscriptions]** do perfil, clique em **[!UICONTROL Add]** e selecione o serviço de informação desejado.
 
@@ -138,9 +138,9 @@ Para registrar recipients para um serviço de informação, é possível:
 
    ![](assets/s_ncs_user_subscribe_from_wf.png)
 
-   Workflows e como usá-los estão detalhados [nesta seção](../../workflow/using/about-workflows.md).
+   Os detalhes sobre fluxos de trabalho e como usá-los estão [nesta seção](../../workflow/using/about-workflows.md).
 
-### Cancelamento de subscrição de um recipient a um serviço {#unsubscribing-a-recipient-from-a-service}
+### Cancelamento de subscrição de um recipient em relação a um serviço {#unsubscribing-a-recipient-from-a-service}
 
 #### Cancelamento manual de subscrição {#manual-unsubscribing}
 
@@ -164,6 +164,6 @@ Você também pode configurar um workflow de cancelamento de subscrições para 
 
 ### Rastreamento do assinante {#subscriber-tracking}
 
-É possível rastrear as alterações nas subscrições dos serviços de informações por meio do uso do link **[!UICONTROL Reports]** no painel.
+É possível rastrear as alterações nas subscrições dos serviços de informações usando o link **[!UICONTROL Reports]** no painel.
 
 ![](assets/s_ncs_user_services_report.png)
