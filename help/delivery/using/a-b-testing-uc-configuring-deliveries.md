@@ -1,21 +1,21 @@
 ---
 product: campaign
-title: Configurar deliveries
+title: Configurar entregas
 description: Saiba como executar testes A/B por meio de um caso de uso dedicado
 audience: delivery
 content-type: reference
 topic-tags: a-b-testing
 exl-id: 809de30b-7d08-40de-bf3e-dc80d62eae80
 source-git-commit: 895aa2fd4fa9c7c71c0073e9be33c12d4e92c9fa
-workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+workflow-type: ht
+source-wordcount: '235'
+ht-degree: 100%
 
 ---
 
-# Configurar os deliveries no workflow {#step-4--configuring-the-deliveries-in-the-workflow}
+# Configurar as entregas no fluxo de trabalho {#step-4--configuring-the-deliveries-in-the-workflow}
 
-Depois que [populações forem criadas](a-b-testing-uc-population-samples.md), você poderá configurar os deliveries. Nesse caso de uso, os dois primeiros deliveries permitem enviar conteúdo diferente para a população A e B. A terceira delivery é a delivery de fallback: ele será enviado para os recipients que não pertencem a A nem B. Seu conteúdo será calculado por um script e será idêntico a A ou B, dependendo de qual deles obteve a maior taxa de abertura. Precisamos configurar um período de espera para o terceiro delivery, para descobrir o resultado dos deliveries A e B. É por isso que o terceiro delivery inclui uma atividade **[!UICONTROL Wait]**.
+Depois que [populações forem criadas](a-b-testing-uc-population-samples.md), você poderá configurar as entregas. Nesse caso de uso, as duas primeiras entregas permitem enviar conteúdo diferente às populações A e B. A terceira entrega é a de fallback: ela será enviada aos recipients que não pertencerem a A nem B. O conteúdo será calculado por um script e será idêntico a A ou B, dependendo de qual deles obteve a maior taxa de abertura. Precisamos configurar um período de espera para o terceiro delivery, para descobrir o resultado dos deliveries A e B. É por isso que o terceiro delivery inclui uma atividade **[!UICONTROL Wait]**.
 
 1. Vá para a atividade **[!UICONTROL Split]** e vincule a transição destinada à população A para uma das deliveries do e-mail já no workflow.
 
@@ -50,4 +50,4 @@ Depois que [populações forem criadas](a-b-testing-uc-population-samples.md), v
 
    ![](assets/use_case_abtesting_createdeliveries_008.png)
 
-Agora é possível criar o script. [Saiba mais](a-b-testing-uc-script.md).
+Agora você pode criar o script. [Saiba mais](a-b-testing-uc-script.md).
