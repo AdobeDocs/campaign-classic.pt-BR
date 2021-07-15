@@ -7,9 +7,9 @@ content-type: reference
 topic-tags: adobe-target
 exl-id: 6177f57b-534c-4d86-8f73-d96980c48a77
 source-git-commit: 515587695115c23d9b248ecb87a7ae89ea7c62a0
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '846'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -29,13 +29,13 @@ Neste e-mail, queremos que uma das imagens varie dinamicamente de acordo com as 
 
 Para que isso funcione, precisamos executar as seguintes etapas no Adobe Campaign e no Target:
 
-1. [Como inserir a oferta dinâmica em um email](../../integrations/using/inserting-a-dynamic-image.md#inserting-dynamic-offer)
+1. [Inserir a oferta dinâmica em um email](../../integrations/using/inserting-a-dynamic-image.md#inserting-dynamic-offer)
 1. [Criação de ofertas de redirecionamento](../../integrations/using/inserting-a-dynamic-image.md#create-redirect-offers)
-1. [Criação de públicos](../../integrations/using/inserting-a-dynamic-image.md#audiences-target)
+1. [Criação de públicos-alvo](../../integrations/using/inserting-a-dynamic-image.md#audiences-target)
 1. [Criação de uma atividade de direcionamento de experiência](../../integrations/using/inserting-a-dynamic-image.md#creating-targeting-activity)
 1. [Pré-visualização e envio de email](../../integrations/using/inserting-a-dynamic-image.md#preview-send-email)
 
-## Como inserir a oferta dinâmica em um email {#inserting-dynamic-offer}
+## Inserir a oferta dinâmica em um email {#inserting-dynamic-offer}
 
 No Adobe Campaign, depois de definir o destino e o conteúdo do seu e-mail, você pode inserir uma imagem dinâmica do Target.
 
@@ -51,7 +51,7 @@ No Adobe Campaign, há duas maneiras de inserir uma imagem dinâmica do Target e
 
    ![](assets/target_12.png)
 
-### Como definir os Parâmetros da Imagem {#defining-image-parameters}
+### Definição dos parâmetros de imagem {#defining-image-parameters}
 
 * O URL de **[!UICONTROL Default image]**: a imagem que será exibida quando nenhuma das condições for satisfeita. Você também pode selecionar uma imagem da biblioteca de recursos.
 * O **[!UICONTROL Target location]**: digite um nome para a localização da oferta dinâmica. Você terá que selecionar este local na atividade do público-alvo.
@@ -78,9 +78,9 @@ Em nosso caso, precisamos de duas ofertas de redirecionamento, a terceira (a pad
 
    ![](assets/target_6.png)
 
-1. Siga o mesmo procedimento para a oferta de redirecionamento restante. Para obter mais informações, consulte esta [página](https://experienceleague.adobe.com/docs/target/using/experiences/offers/offer-redirect.html).
+1. Siga o mesmo procedimento para a oferta de redirecionamento restante. Para obter mais informações, consulte esta [página](https://experienceleague.adobe.com/docs/target/using/experiences/offers/offer-redirect.html?lang=pt-BR).
 
-## Criação de públicos {#audiences-target}
+## Criação de públicos-alvo {#audiences-target}
 
 No Target , é necessário criar os dois públicos nos quais as pessoas que visitam a oferta são categorizadas para os diferentes conteúdos a serem entregues. Para cada público, adicione uma regra para definir quem poderá ver a oferta.
 
@@ -96,11 +96,11 @@ No Target , é necessário criar os dois públicos nos quais as pessoas que visi
 
 1. Siga o mesmo procedimento para os públicos restantes.
 
-## Como criar uma atividade de segmentação por experiência   {#creating-targeting-activity}
+## Criação de uma atividade de direcionamento de experiência {#creating-targeting-activity}
 
-No Target, é necessário criar uma atividade de Direcionamento por Experiência, definir as diferentes experiências e associá-las às ofertas correspondentes.
+No Target, é necessário criar uma atividade de direcionamento de experiência, definir as diferentes experiências e associá-las às ofertas correspondentes.
 
-### Definição do público {#defining-the-audience}
+### Definição do público-alvo {#defining-the-audience}
 
 1. Para criar uma atividade de Direcionamento de Experiência, na guia **[!UICONTROL Activities]**, clique em **[!UICONTROL Create Activity]** e em **[!UICONTROL Experience Targeting]**
 
@@ -118,7 +118,7 @@ No Target, é necessário criar uma atividade de Direcionamento por Experiência
 
 1. Crie outra experiência ao clicar em **[!UICONTROL Add Experience Targeting]**.
 
-### Como definir a localização e o conteúdo {#defining-location-content}
+### Definição da localização e do conteúdo {#defining-location-content}
 
 Adicione um conteúdo para cada público:
 
@@ -136,7 +136,7 @@ Adicione um conteúdo para cada público:
 
 1. Siga o mesmo procedimento para a segunda experiência.
 
-### Como definir a atividade {#defining-activity}
+### Definição da atividade {#defining-activity}
 
 A janela **[!UICONTROL Target]** resume a atividade. Se necessário, você pode adicionar outras experiências.
 
@@ -148,7 +148,7 @@ A seção **[!UICONTROL Reporting Settings]** permite selecionar uma ação e ed
 
 ![](assets/target_experience_2.png)
 
-## Pré-visualizar e enviar o email no Campaign Classic {#preview-send-email}
+## Pré-visualização e envio do email no Campaign Classic {#preview-send-email}
 
 No Adobe Campaign, agora você pode visualizar seu e-mail e testar sua renderização em diferentes recipients. Você notará que a imagem muda de acordo com as diferentes experiências criadas. Para saber mais sobre a criação de email, consulte esta [página](../../delivery/using/defining-the-email-content.md).
 
