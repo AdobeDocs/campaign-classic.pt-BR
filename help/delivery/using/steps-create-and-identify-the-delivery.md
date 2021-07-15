@@ -7,15 +7,15 @@ content-type: reference
 topic-tags: about-deliveries-and-channels
 exl-id: 6e37bc14-b1a9-42af-8c28-ae4b5bcaa055
 source-git-commit: a129f49d4f045433899fd7fdbd057fb16d0ed36a
-workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+workflow-type: ht
+source-wordcount: '271'
+ht-degree: 100%
 
 ---
 
 # Criação e identificação do delivery {#create-and-identify-the-delivery}
 
-## Criação de delivery {#creating-the-delivery}
+## Criação da entrega {#creating-the-delivery}
 
 Você poderá criar um delivery usando a visão geral ou o menu **[!UICONTROL Create > Delivery]**.
 
@@ -32,7 +32,7 @@ Um modelo padrão é fornecido para cada canal que você instalou: mala direta, 
 
 Você poderá criar novos modelos de delivery para pré-configurar parâmetros específicos de acordo com suas necessidades. Para obter mais informações, consulte [esta seção](about-templates.md).
 
-## Identificando o delivery {#identifying-the-delivery}
+## Identificação da entrega {#identifying-the-delivery}
 
 Você precisa concluir os parâmetros para identificar o delivery. Para fazer isso:
 
