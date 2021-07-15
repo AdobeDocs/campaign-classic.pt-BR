@@ -7,7 +7,7 @@ content-type: reference
 topic-tags: deliverability-management
 exl-id: a3294e70-ac96-4e51-865f-b969624528ce
 source-git-commit: a129f49d4f045433899fd7fdbd057fb16d0ed36a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '813'
 ht-degree: 100%
 
@@ -15,7 +15,7 @@ ht-degree: 100%
 
 # Renderização da caixa de entrada{#inbox-rendering}
 
-## Sobre a renderização da caixa de entrada {#about-inbox-rendering}
+## Sobre renderização da caixa de entrada {#about-inbox-rendering}
 
 Antes de clicar no botão **Enviar**, verifique se a sua mensagem será exibida aos recipients de forma eficaz em uma variedade de clientes Web, Webmails e dispositivos.
 
@@ -29,7 +29,7 @@ Os clientes de dispositivos móveis, mensagens e webmail disponíveis para a **R
 >
 >A renderização da caixa de entrada não é necessária para testar a personalização nos deliveries. A personalização pode ser verificada com as ferramentas do Adobe Campaign, como **[!UICONTROL Preview]** e [Proofs](steps-validating-the-delivery.md#sending-a-proof).
 
-## Ativação da renderização da Caixa de entrada {#activating-inbox-rendering}
+## Ativação da renderização da caixa de entrada {#activating-inbox-rendering}
 
 Para clientes hospedados e híbridos, a renderização da Caixa de entrada é configurada em sua instância pelo suporte técnico e consultores da Adobe. Para obter mais informações, entre em contato com o executivo da sua conta Adobe.
 
@@ -64,7 +64,7 @@ Para instalações no local, siga as etapas abaixo para configurar a renderizaç
 >
 >Talvez seja necessário fazer logout do console e login novamente para poder usar a renderização da Caixa de entrada.
 
-## Sobre os tokens Litmus {#about-litmus-tokens}
+## Sobre tokens Litmus {#about-litmus-tokens}
 
 Como Litmus é um serviço de terceiros, ele funciona em um modelo credit-per-usage. Cada vez que um usuário chamar a funcionalidade Litmus, o crédito será deduzido.
 
@@ -82,6 +82,7 @@ Cada vez que você usa o recurso **[!UICONTROL Inbox rendering]** em um delivery
 >
 >* Cada vez que o relatório de renderização da Caixa de Entrada é gerado, é deduzido um token por cliente da mensagem: um token para a renderização do Outlook 2000, um para a renderização do Outlook 2010, um para a renderização do Apple Mail 9 e assim por diante.
 >* Para o mesmo delivery, se você gerar a renderização da Caixa de Entrada novamente, o número de tokens disponíveis será reduzido novamente pelo número de renderizações geradas.
+
 >
 
 
