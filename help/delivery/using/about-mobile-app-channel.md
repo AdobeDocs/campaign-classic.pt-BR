@@ -57,7 +57,7 @@ O Adobe Campaign é compatível com APNs HTTP/2. Para obter mais informações s
 
 Para informações gerais sobre como criar um delivery, consulte [esta seção](steps-about-delivery-creation-steps.md).
 
-## Caminho dos dados {#data-path}
+## Caminho de dados {#data-path}
 
 Os schemas a seguir detalham as etapas que permitem que um aplicativo móvel troque dados com o Adobe Campaign. Esse processo envolve três entidades:
 
@@ -67,13 +67,13 @@ Os schemas a seguir detalham as etapas que permitem que um aplicativo móvel tro
 
 As três principais etapas do processo de notificação são: registro do aplicativo no Adobe Campaign (coleção de assinaturas), deliveries e rastreamento.
 
-### Etapa 1: Coleção de subscrição {#step-1--subscription-collection}
+### Etapa 1: coleção de subscrição {#step-1--subscription-collection}
 
 O aplicativo móvel é baixado pelo usuário da App Store ou do Google Play. Este aplicativo contém as configurações de conexão (certificado do iOS e chave do projeto para Android) e a chave de integração. Na primeira vez que o aplicativo é aberto, (dependendo da configuração), o usuário pode ser solicitado a inserir informações de registro (@userKey: email ou número de conta por exemplo). Ao mesmo tempo, o aplication solicita ao serviço de notificações para coletar um ID de notificação (ID de envio). Todas essas informações (configurações de conexão, chave de integração, identificador de notificação, userKey) são enviadas ao Adobe Campaign.
 
 ![](assets/nmac_register_view.png)
 
-### Etapa 2 - Delivery {#step-2--delivery}
+### Etapa 2: entrega {#step-2--delivery}
 
 Os profissionais de marketing miram os assinantes de aplicativos. O processo de delivery envia as configurações de conexão para o serviço de notificação (certificado iOS e chave do projeto para Android), a ID de notificação (ID de envio) e o conteúdo da notificação. O serviço de notificação envia notificações para os terminais de destino.
 
