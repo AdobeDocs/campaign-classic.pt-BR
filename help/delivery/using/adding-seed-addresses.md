@@ -7,7 +7,7 @@ content-type: reference
 topic-tags: using-seed-addresses
 exl-id: ae6eb4b0-b419-4661-9d63-e758f0242a0f
 source-git-commit: a129f49d4f045433899fd7fdbd057fb16d0ed36a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '327'
 ht-degree: 100%
 
@@ -15,7 +15,7 @@ ht-degree: 100%
 
 # Adicionar seed addresses{#adding-seed-addresses}
 
-## Seed addresses em um delivery {#seed-addresses-in-a-delivery}
+## Seed addresses em uma entrega {#seed-addresses-in-a-delivery}
 
 Para adicionar seed addresses específicos em um delivery, clique no link **[!UICONTROL To]** e selecione a guia **[!UICONTROL Seed addresses]** Seed addresses.
 
