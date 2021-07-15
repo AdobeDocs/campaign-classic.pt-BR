@@ -7,9 +7,9 @@ content-type: reference
 topic-tags: starting-with-adobe-campaign
 exl-id: c7688c2a-f0a7-4c51-a4cf-bf96fe8bf9b6
 source-git-commit: 0a80912aae4cab58b6f06918a673aaca3883fbdf
-workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+workflow-type: ht
+source-wordcount: '2415'
+ht-degree: 100%
 
 ---
 
@@ -23,7 +23,7 @@ A recusa pela venda de informações pessoais, específica para o CCPA, é expli
 
 <!--Installation procedures described in this document are applicable starting Campaign Classic 18.4 (build 8931+). If you are running on a previous version, refer to this [technote](https://helpx.adobe.com/campaign/kb/how-to-install-gdpr-package-on-legacy-versions.html).-->
 
-## Sobre as solicitações de privacidade {#about-privacy-requests}
+## Sobre solicitações de privacidade {#about-privacy-requests}
 
 Para facilitar a conformidade com a privacidade, o Adobe Campaign permite manipular solicitações de Acesso e Exclusão. O **direito de acesso** e o **direito ao esquecimento** (solicitação de exclusão) estão descritos [nesta seção](../../platform/using/privacy-management.md#right-access-forgotten).
 
@@ -75,7 +75,7 @@ Antes de criar solicitações de privacidade, é necessário definir o namespace
 
 Três namespaces estão disponíveis para pronta utilização: email, telefone fixo e celular. Se você precisar de um namespace diferente (um campo personalizado de recipient, por exemplo), poderá criar um novo em **[!UICONTROL Administration]** > **[!UICONTROL Platform]** > **[!UICONTROL Namespaces]**.
 
-## Criação de uma solicitação de acesso a dados pessoais {#create-privacy-request-ui}
+## Criação de uma solicitação de privacidade {#create-privacy-request-ui}
 
 A **interface do Adobe Campaign** permite criar solicitações de privacidade e acompanhar a evolução. Para criar uma nova solicitação de privacidade, siga estas instruções:
 
@@ -125,7 +125,7 @@ Se você criou tabelas personalizadas que tenham um link para a tabela do recipi
 >* A Adobe recomenda a criação de um workflow ETL que adicione as linhas que serão excluídas na tabela Acesso de privacidade e permita que o workflow **[!UICONTROL Delete privacy requests data]** execute a exclusão. Por motivos de desempenho, sugerimos que sejam limitadas a 200 perfis por dia.
 
 
-### Status de solicitação de acesso a dados pessoais {#privacy-request-statuses}
+### Status de solicitação de privacidade {#privacy-request-statuses}
 
 Estes são os diferentes status de solicitações de acesso a dados pessoais:
 
@@ -137,7 +137,7 @@ Estes são os diferentes status de solicitações de acesso a dados pessoais:
 * **[!UICONTROL Complete]**: o processamento da solicitação foi concluído sem erros.
 * **[!UICONTROL Error]**: o workflow encontrou um erro. O motivo aparece na lista de solicitações de privacidade na coluna **[!UICONTROL Request status]**. Por exemplo, **[!UICONTROL Error data not found]** significa que nenhum dado de recipient correspondente a **[!UICONTROL Reconciliation value]** do Titular dos dados foi encontrado no banco de dados.
 
-### Processo de duas etapas {#two-step-process}
+### Processo em duas etapas {#two-step-process}
 
 O **processo de duas etapas** é ativado por padrão. Ao criar uma nova solicitação de exclusão usando esse modo, o Adobe Campaign sempre executa uma solicitação de acesso primeiro. Isso permite que você verifique os dados antes de confirmar a exclusão.
 
@@ -209,7 +209,7 @@ Este é um trecho de código que você pode usar como exemplo na atividade **[!U
 
 Como o acesso ao arquivo de dados do titular de dados é restrito, o acesso anônimo à página da web deve ser desativado. Somente o operador com o direito nomeado **[!UICONTROL Privacy Data Right]** pode fazer logon na página e baixar os dados.
 
-## Processo automático de solicitação de acesso a dados pessoais {#automatic-privacy-request-api}
+## Processo automático de solicitação de privacidade {#automatic-privacy-request-api}
 
 O Adobe Campaign fornece uma **API** que permite configurar um processo automático de solicitação de acesso a dados pessoais.
 
