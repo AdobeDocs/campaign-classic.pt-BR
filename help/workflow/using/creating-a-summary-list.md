@@ -7,9 +7,9 @@ content-type: reference
 topic-tags: use-cases
 exl-id: 39cec42a-c7ac-41b1-8f61-799b559ce002
 source-git-commit: 895aa2fd4fa9c7c71c0073e9be33c12d4e92c9fa
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '974'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
@@ -37,7 +37,7 @@ Para criar uma lista de resumo, siga estas etapas:
 1. Enriquecimento dos dados &quot;Contatos&quot; com um cálculo agregado da tabela &quot;Compras&quot;
 1. Criação da lista de resumo
 
-## Etapa 1: Carregue o arquivo e reconcilie os dados importados {#step-1--loading-the-file-and-reconciling-the-imported-data}
+## Etapa 1: carregar o arquivo e reconciliar os dados importados {#step-1--loading-the-file-and-reconciling-the-imported-data}
 
 Os dados a serem carregados são dados relacionados com &quot;Comprar&quot; com o seguinte formato:
 
@@ -106,11 +106,11 @@ Agora que o link foi criado, vamos adicionar uma coluna à tabela de trabalho do
 
 ![](assets/uc2_enrich_enrich5.png)
 
-Os dados na tabela de trabalho do workflow após este enriquecimento serão como mostrado seguir:
+Os dados na tabela de trabalho do fluxo de trabalho após esse enriquecimento serão os seguintes:
 
 ![](assets/uc2_enrich_population1.png)
 
-## Etapa 2: Gravar dados enriquecidos na tabela &quot;Compras&quot; {#step-2--writing-enriched-data-to-the--purchases--table}
+## Etapa 2: gravar dados enriquecidos na tabela &#39;Purchases&#39; {#step-2--writing-enriched-data-to-the--purchases--table}
 
 Esta etapa detalha como gravar dados importados e enriquecidos na tabela &quot;Compras&quot;. Para fazer isso, precisamos usar uma atividade **Update data** .
 
@@ -134,7 +134,7 @@ Na atividade **Update data**, a seguinte configuração é necessária:
 
 ![](assets/uc2_enrich_miseajour.png)
 
-## Etapa 3: Enriquecer dados de &quot;Contato&quot; {#step-3--enriching--contact--data-}
+## Etapa 3: enriquecer dados de &#39;Contact&#39; {#step-3--enriching--contact--data-}
 
 O schema &quot;Contats&quot; está vinculado fisicamente ao esquema &quot;Purchases&quot;. Isso significa que é possível usar outra opção da opção &quot;Enrichment&quot;: adição de dados vinculados à dimensão do filtro.
 
@@ -170,7 +170,7 @@ Para preparar a lista de resumo, é necessário adicionar campos do campo &quot;
 
    ![](assets/uc2_enrich_enrich8.png)
 
-## Etapa 4: Criar e adicionar a uma lista de resumo {#step-4--creating-and-adding-to-a-summary-list}
+## Etapa 4: criar e adicionar a uma lista de resumo {#step-4--creating-and-adding-to-a-summary-list}
 
 A última etapa envolve gravar todos os dados enriquecidos em uma lista.
 
