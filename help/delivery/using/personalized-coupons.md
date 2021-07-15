@@ -7,7 +7,7 @@ content-type: reference
 topic-tags: personalizing-deliveries
 exl-id: 182939bb-7aff-4667-bda9-c5d48be3b946
 source-git-commit: a129f49d4f045433899fd7fdbd057fb16d0ed36a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '877'
 ht-degree: 100%
 
@@ -71,7 +71,7 @@ A guia Cupons está disponível apenas com cupons individuais. Depois que um cup
 
 Os valores de **[!UICONTROL status]**, **[!UICONTROL channel]** e **[!UICONTROL address]** são automaticamente preenchidos. No entanto, os valores de **[!UICONTROL redeemed on]** não são recuperados pelo Campaign. Eles podem ser concluídos ao importar um arquivo com os detalhes de resgate do cupom.
 
-## Inserir um cupom em um delivery de email {#inserting-a-coupon-into-an-email-delivery}
+## Inserir um cupom em uma entrega de email {#inserting-a-coupon-into-an-email-delivery}
 
 No exemplo abaixo, o delivery é criado a partir da Home page. Para obter instruções detalhadas sobre como criar um delivery, consulte [esta seção](about-email-channel.md). Você também pode adicionar um cupom a um delivery em um workflow.
 
