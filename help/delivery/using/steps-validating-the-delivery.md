@@ -7,7 +7,7 @@ content-type: reference
 topic-tags: about-deliveries-and-channels
 exl-id: c2f4d8d0-f0fe-4d1a-92fd-91edaf9729f3
 source-git-commit: 690f7c4e62203127da7a7055afa0ee8ad4a2bce4
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1663'
 ht-degree: 100%
 
@@ -29,7 +29,7 @@ Para fazer isso:
 >
 >As duas etapas acima DEVEM SER executadas após cada modificação no conteúdo da mensagem.
 
-## Analise o delivery {#analyzing-the-delivery}
+## Analisar a entrega {#analyzing-the-delivery}
 
 A análise é o estágio em que a população do target é calculada e o conteúdo de delivery é preparado. Uma vez concluído, o delivery estará pronto para ser enviado.
 
@@ -98,7 +98,7 @@ essa opção permite preparar os dados de personalização contidos no delivery 
 * **[!UICONTROL Log SQL queries generated during the analysis in the journal]**: essa opção adiciona os logs de consulta SQL ao journal de delivery durante a fase de análise.
 * **[!UICONTROL Ignore personalization scripts during sending]**: essa opção permite ignorar a interpretação das diretivas JavaScript encontradas no conteúdo HTML. Eles serão exibidos como nos conteúdos entregues. Essas diretivas são introduzidas com a tag **&lt;%=**.
 
-### Melhora no desempenho da análise do delivery {#improving-delivery-analysis}
+### Melhorar o desempenho da análise de entrega {#improving-delivery-analysis}
 
 Para acelerar o preparo do delivery, é possível marcar a opção **[!UICONTROL Prepare the delivery parts in the database]** antes de iniciar a análise.
 
@@ -134,6 +134,7 @@ Para detectar possíveis erros na configuração da mensagem, a Adobe recomenda 
 >
 >* Os modos de validação disponíveis estão detalhados em [Alterar o modo de aprovação](steps-validating-the-delivery.md#changing-the-approval-mode).
 >* A configuração do target de prova é explicada em [Definir um target de prova específico](steps-defining-the-target-population.md#defining-a-specific-proof-target).
+
 >
 
 
