@@ -7,15 +7,15 @@ content-type: reference
 topic-tags: content-management
 exl-id: 3b6e4974-4551-4da2-8eca-577c4f9cbd91
 source-git-commit: a129f49d4f045433899fd7fdbd057fb16d0ed36a
-workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+workflow-type: ht
+source-wordcount: '824'
+ht-degree: 100%
 
 ---
 
 # Templates de publicação{#publication-templates}
 
-## Sobre os templates de publicação {#about-publication-templates}
+## Sobre os modelos de publicação {#about-publication-templates}
 
 O template de publicação é o cartão de identidade do conteúdo a ser publicado. Ele referencia os recursos usados no processo de publicação, ou seja:
 
@@ -23,7 +23,7 @@ O template de publicação é o cartão de identidade do conteúdo a ser publica
 * o formulário de entrada,
 * os modelos de transformação para cada documento de saída.
 
-## Identificação de um template de publicação {#identification-of-a-publication-template}
+## Identificação de um modelo de publicação {#identification-of-a-publication-template}
 
 Um template de publicação é identificado por seu nome e namespace.
 
@@ -33,7 +33,7 @@ A chave de identificação de uma folha de estilos é uma cadeia de caracteres f
 >
 >Na prática, é recomendável usar a mesma chave para o schema, o formulário e o template de publicação.
 
-## Criação e configuração do template {#creating-and-configuring-the-template}
+## Criação e configuração do modelo {#creating-and-configuring-the-template}
 
 Os templates de publicação são armazenados por padrão no nó **[!UICONTROL Administration > Configuration > Publication templates]**. Para criar um novo modelo, clique no botão **[!UICONTROL New]** acima da lista de templates.
 
