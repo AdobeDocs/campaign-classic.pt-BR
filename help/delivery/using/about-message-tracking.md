@@ -7,9 +7,9 @@ content-type: reference
 topic-tags: tracking-messages
 exl-id: 43779505-9917-4e99-af25-b00a9d29a645
 source-git-commit: ee3d643e4ba607b3d7ca816eabf862b867d1f3f4
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '685'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -65,13 +65,13 @@ O fluxo de trabalho técnico de rastreamento recupera os dados de rastreamento d
 
 Antes de enviar as mensagens com o rastreamento, você pode testar o rastreamento na mirror page, em logs de email e em links. [Saiba mais](testing-tracking.md)
 
-## Rastreamento de aplicação web {#web-application-tracking}
+## Rastreamento de aplicativo web {#web-application-tracking}
 
 <img src="assets/do-not-localize/icon-web-app.svg" width="60px">
 
 **Rastreamento de uma aplicação web**
 
-Também é possível rastrear e medir visitas em páginas de aplicação web com tags de rastreamento. Essa funcionalidade pode ser usada para todos os tipos de aplicações web, como formulários e landing pages. [Saiba mais](../../web/using/tracking-a-web-application.md)
+Também é possível rastrear e medir visitas em páginas de aplicação web com tags de rastreamento. Essa funcionalidade pode ser usada para todos os tipos de aplicativo Web, como formulários e páginas de aterrissagem. [Saiba mais](../../web/using/tracking-a-web-application.md)
 
 **Recusar rastreamento da aplicação web**
 
