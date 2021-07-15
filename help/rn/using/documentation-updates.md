@@ -9,13 +9,13 @@ exl-id: 07c1f4a3-cf16-4a9b-b402-e13258799f91
 source-git-commit: 6c28e6cd78ce7a8ee5c0dc7e671de780787b9f57
 workflow-type: tm+mt
 source-wordcount: '4456'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
 # Atualizações da documentação{#documentation-updates}
 
-Esta página lista todos os novos recursos e atualizações de documentação por mês e versão do Campaign.
+Esta página lista todos os novos recursos e atualizações de documentação por mês e a versão do Campaign.
 
 Consulte as [Notas de versão do Adobe Campaign Classic](../../rn/using/latest-release.md) para ver as atualizações relacionadas à versão.
 
@@ -460,7 +460,7 @@ A documentação do Painel de controle do Campaign foi integrada ao novo conjunt
 
 O guia de introdução às práticas recomendadas de delivery foi atualizado. [Leia mais](../../delivery/using/delivery-best-practices.md)
 
-## de outubro de 2019 {#october-2019}
+## Outubro de 2019 {#october-2019}
 
 A lista de mensagens de erro para o Campaign foi atualizada. [Leia mais](https://experienceleague.adobe.com/developer/campaign-errors/error_codes.html)
 
