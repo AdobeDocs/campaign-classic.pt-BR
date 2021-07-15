@@ -1,19 +1,19 @@
 ---
 product: campaign
 title: Introdução ao gerenciamento de recursos de marketing
-description: Gerenciamento de recursos de marketing do Discover
+description: Sobre o gerenciamento de recursos de marketing
 audience: campaign
 content-type: reference
 topic-tags: tasks--resources-and-budgets
 exl-id: 8cf4d30d-f914-438d-8836-030202b6a449
 source-git-commit: 690f7c4e62203127da7a7055afa0ee8ad4a2bce4
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '375'
-ht-degree: 92%
+ht-degree: 100%
 
 ---
 
-# Introdução ao Gerenciamento de recursos de marketing{#about-marketing-resource-management}
+# Introdução ao gerenciamento de recursos de marketing{#about-marketing-resource-management}
 
 O módulo **Marketing Resource Management (MRM)** permite controlar ações de marketing em um modo colaborativo fornecendo gerenciamento completo e rastreamento em tempo real das tarefas, orçamentos e recursos de marketing envolvidos.
 
@@ -39,7 +39,7 @@ No contexto do Gerenciamento de recursos de marketing do Adobe Campaign, os segu
 
    O Adobe Campaign permite acompanhar o progresso de projetos de marketing colaborativo, como mídia de comunicação, planos de ação, boletins informativos etc. O ciclo de criação e aprovação desses recursos de marketing pode ser monitorado pelo painel de recursos até sua publicação.
 
-   Para obter mais informações, consulte [Gerenciar recursos de marketing](../../mrm/using/managing-marketing-resources.md).
+   Para obter mais informações, consulte [Gerenciamento de recursos de marketing](../../mrm/using/managing-marketing-resources.md).
 
 >[!NOTE]
 >
