@@ -7,9 +7,9 @@ content-type: reference
 topic-tags: starting-with-adobe-campaign
 exl-id: e612a4e7-f4ef-4db4-afab-5544b73430d3
 source-git-commit: 515587695115c23d9b248ecb87a7ae89ea7c62a0
-workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+workflow-type: ht
+source-wordcount: '394'
+ht-degree: 100%
 
 ---
 
@@ -21,7 +21,7 @@ Comece a usar o Adobe Campaign consultando nossos intuitivos guias passo a passo
 
 * [Edição de conteúdo de e-mail com o Adobe Experience Manager](https://helpx.adobe.com/br/campaign/kb/acc-aem.html): conheça as noções básicas para começar a usar a integração entre o Adobe Campaign Manager e o Experience Manager.
 * [Gestão de privacidade](https://helpx.adobe.com/br/campaign/kb/acc-privacy.html): descubra o que o Adobe Campaign Classic oferece para ajudá-lo com a conformidade de Privacidade ao usar nosso serviço.
-* [Integração de conteúdo dinâmico em um e-mail](https://experienceleague.adobe.com/docs/campaign-classic/using/integrating-with-adobe-experience-cloud/adobe-target/inserting-a-dynamic-image.html): descubra os conceitos básicos para começar a integração entre o Campaign Classic e o Target Standard.
+* [Integração de conteúdo dinâmico em um e-mail](https://experienceleague.adobe.com/docs/campaign-classic/using/integrating-with-adobe-experience-cloud/adobe-target/inserting-a-dynamic-image.html?lang=pt-BR): descubra os conceitos básicos para começar a integração entre o Campaign Classic e o Target Standard.
 * [Gestão da capacidade de entrega](../../delivery/using/about-deliverability.md): conheça os conceitos e as práticas recomendadas relacionadas à capacidade de entrega, bem como as ferramentas oferecidas pelo Adobe Campaign Classic para otimizar o envio de seus deliveries.
 * [Práticas recomendadas de delivery](../../delivery/using/delivery-best-practices.md): conheça as práticas recomendadas relacionadas ao planejamento de delivery e envio com o Adobe Campaign Classic.
 * [Execução de uma atualização de compilação](https://helpx.adobe.com/br/campaign/kb/acc-build-upgrade.html): este guia apresenta as principais etapas e práticas recomendadas para realizar uma atualização de compilação com o Campaign Classic.
@@ -49,4 +49,4 @@ Além desses vídeos curtos e detalhados, você pode encontrar [cursos de treina
 
 ### Cursos da Experience League
 
-Você também pode visitar os [Cursos recomendados](https://experienceleague.adobe.com/?lang=br#dashboard/learning) para o Adobe Campaign Classic: os cursos são coleções de lições especializadas que rapidamente ajudam a adquirir habilidades e conhecimento.
+Você também pode visitar os [Cursos recomendados](https://experienceleague.adobe.com/?lang=pt-BR#dashboard/learning) para o Adobe Campaign Classic: os cursos são coleções de lições especializadas que rapidamente ajudam a adquirir habilidades e conhecimento.
