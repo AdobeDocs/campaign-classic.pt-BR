@@ -1,19 +1,19 @@
 ---
 product: campaign
-title: Introdução ao monitoramento de delivery
+title: Introdução ao monitoramento de entrega
 description: Saiba mais sobre os recursos de monitoramento de delivery do Campaign Classic.
 audience: delivery
 content-type: reference
 topic-tags: monitoring-deliveries
 exl-id: 9ce11da0-e37b-459e-8ec7-d2bddf59bdf7
 source-git-commit: a129f49d4f045433899fd7fdbd057fb16d0ed36a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '288'
 ht-degree: 100%
 
 ---
 
-# Introdução ao monitoramento de delivery {#about-delivery-monitoring}
+# Introdução ao monitoramento de entrega {#about-delivery-monitoring}
 
 O monitoramento de deliveries após serem enviados é uma etapa essencial para garantir que as campanhas de marketing sejam eficientes e atinjam os clientes.
 
