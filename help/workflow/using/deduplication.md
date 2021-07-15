@@ -7,7 +7,7 @@ content-type: reference
 topic-tags: targeting-activities
 exl-id: 38add4fe-6238-45de-863e-895ebca189b7
 source-git-commit: e3e2ac09de6a9e846e9f9262d522b9395a725648
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1089'
 ht-degree: 100%
 
@@ -64,6 +64,7 @@ Para configurar uma desduplicação, insira o rótulo, o método e os critérios
    >[!NOTE]
    >
    >Se os dados externos estiverem sendo usados como entrada, por exemplo, de um arquivo externo, selecione a opção **[!UICONTROL Temporary schema]**.
+
    >
    >Na próxima etapa, a opção **[!UICONTROL Other]** permite selecionar o critério ou os critérios a serem usados:
 
@@ -107,7 +108,7 @@ Para configurar uma desduplicação, insira o rótulo, o método e os critérios
 
    ![](assets/s_user_segmentation_dedup_param9.png)
 
-## Exemplo: identificar as duplicatas antes de um delivery {#example--identify-the-duplicates-before-a-delivery}
+## Exemplo: identificar as duplicatas antes de uma entrega {#example--identify-the-duplicates-before-a-delivery}
 
 No exemplo a seguir, a desduplicação lida com a união entre três queries.
 
@@ -166,7 +167,7 @@ Para fazer isso, siga estes passos:
 
 Cada evento de entrada deve especificar um target definido por esses parâmetros.
 
-## Parâmetros de output {#output-parameters}
+## Parâmetros de saída {#output-parameters}
 
 * tableName
 * schema
