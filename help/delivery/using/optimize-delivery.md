@@ -1,12 +1,12 @@
 ---
 product: campaign
-title: Otimizar o delivery de mensagem
+title: Otimizar entrega de mensagens
 audience: delivery
 content-type: reference
 topic-tags: deliveries-best-practices
 exl-id: 24b2ee47-bec7-43ce-81b3-0b2d1a5cebae
 source-git-commit: a129f49d4f045433899fd7fdbd057fb16d0ed36a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '729'
 ht-degree: 100%
 
@@ -32,13 +32,13 @@ Vários fatores podem afetar diretamente o desempenho do servidor e retardar a p
 
 * Se elegível, você pode aproveitar os [recursos do Painel de controle do Campaign](https://experienceleague.adobe.com/docs/control-panel/using/discover-control-panel/key-features.html?lang=pt-BR) para monitorar sua plataforma usando as funcionalidades de [monitoramento de desempenho](https://experienceleague.adobe.com/docs/control-panel/using/performance-monitoring/about-performance-monitoring.html?lang=pt-BR).
 
-## Verificar a configuração da rede {#network-config}
+## Verificar configuração de rede {#network-config}
 
 Para otimizar o delivery ao manipular emails em grandes volumes e evitar ser confundido com um spammer, verifique se você tem uma configuração de rede legítima que não tenta ocultar a identidade do servidor.
 
 **Dica**: use um endereço de remetente transparente, correspondente ao site da sua marca. Por exemplo, a empresa TravelAgency gerencia a cadeia de hotéis Valentino. É proprietária do domínio valentino.com para o seu site. Para promover o hotel Valentino em Paris, ele usa o subdomínio paris.valentino.com. Portanto, um endereço de remetente relevante pode ser hotel@paris.valentino.com.
 
-## Gerenciamento de deliverability {#deliverability-management}
+## Gerenciamento de avaliação de entrega {#deliverability-management}
 
 Para alcançar a caixa de entrada de seus recipients sem ser rejeitado ou ser marcado como spam, você precisa melhorar a taxa de entrega de suas mensagens.
 
@@ -52,7 +52,7 @@ Para alcançar a caixa de entrada de seus recipients sem ser rejeitado ou ser ma
 
 * Entre em contato com seu representante da Adobe para obter assistência.
 
-## Gerenciamento de quarentenas {#quarantine-management}
+## Gerenciamento de quarentena {#quarantine-management}
 
 É de seu interesse manter bons processos de gerenciamento de quarentena.
 
@@ -69,9 +69,9 @@ Ao começar a enviar e-mails em uma nova plataforma, você pode usar uma lista d
 
 * Alguns provedores de acesso à Internet consideram automaticamente emails como spam se a taxa de endereços inválidos é muito alta. A quarentena, portanto, evita que você seja adicionado à lista de bloqueios por esses provedores.
 
-* Além disso, o gerenciamento de quarentenas ajuda a reduzir os custos de envio de SMS, excluindo números de telefone incorretos dos deliveries.
+* Além disso, o gerenciamento de quarentena ajuda a reduzir os custos de envio de SMS, excluindo números de telefone incorretos de entregas.
 
-## Mecanismo de aceitação de duplicação {#double-opt-in}
+## Mecanismo de dupla aceitação {#double-opt-in}
 
 Para evitar o envio de mensagens para endereços inválidos, limitar as comunicações inadequadas e melhorar a reputação do remetente, a Adobe recomenda a implementação de um mecanismo de aceitação de duplicação para confirmação pós-subscrição. Isso ajuda a garantir que um destinatário seja inscrito intencionalmente.
 
