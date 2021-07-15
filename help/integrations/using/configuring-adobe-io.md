@@ -9,9 +9,9 @@ internal: n
 snippet: y
 exl-id: ab30f697-3022-4a29-bbdb-14ca12ec9c3e
 source-git-commit: 934964b31c4f8f869253759eaf49961fa5589bff
-workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+workflow-type: ht
+source-wordcount: '673'
+ht-degree: 100%
 
 ---
 
@@ -19,7 +19,7 @@ ht-degree: 0%
 
 >[!CAUTION]
 >
->Se você estiver usando uma versão mais antiga da integração de acionadores por meio da autenticação oAuth, **será necessário mover para o Adobe I/O conforme descrito abaixo**. O modo de autenticação oAuth herdado com o Campaign será desativado em 30 de novembro de 2021. [Saiba mais](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-discussions/adobe-analytics-legacy-api-end-of-life-notice/td-p/385411)
+>Se você estiver usando uma versão mais antiga da integração de acionadores por meio da autenticação oAuth, **será necessário mudar para o Adobe I/O conforme descrito abaixo**. O modo de autenticação oAuth herdado com o Campaign será desativado em 30 de novembro de 2021. [Saiba mais](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-discussions/adobe-analytics-legacy-api-end-of-life-notice/td-p/385411)
 >
 >Observe que, durante a migração para o [!DNL Adobe I/O], alguns acionadores de entrada podem ser perdidos.
 
@@ -30,10 +30,10 @@ Essa integração se aplica somente a partir das **[!DNL Gold Standard]versões 
 Antes de iniciar esta implementação, verifique se você tem:
 
 * um **identificador de organização** valido: o identificador de organização do Identity Management System (IMS) é o identificador exclusivo da Adobe Experience Cloud, usado por exemplo para o serviço VisitorID e o IMS Single-Sign On (SSO). [Saiba mais](https://experienceleague.adobe.com/docs/core-services/interface/manage-users-and-products/organizations.html?lang=pt-BR)
-* um **Acesso de desenvolvedor** para sua organização. O administrador do sistema da IMS Org precisa seguir o **Adicionar desenvolvedores a um único perfil de produto**
-procedimento detalhado [nesta página](https://helpx.adobe.com/br/enterprise/admin-guide.html/enterprise/using/manage-developers.ug.html) para fornecer acesso de desenvolvedor ao `Analytics - {tenantID}` Perfil de produto do Adobe Analytics associado aos acionadores.
+* um **Acesso de desenvolvedor** para sua organização. O administrador do sistema da IMS Org precisa seguir o procedimento **Adicionar desenvolvedores a um único perfil de produto**
+detalhado [nesta página](https://helpx.adobe.com/br/enterprise/admin-guide.html/enterprise/using/manage-developers.ug.html) para fornecer acesso de desenvolvedor ao `Analytics - {tenantID}` Perfil de produto do Adobe Analytics associado aos acionadores.
 
-## Etapa 1: Criar/atualizar projeto do Adobe I/O {#creating-adobe-io-project}
+## Etapa 1: criar/atualizar projeto do Adobe I/O {#creating-adobe-io-project}
 
 1. Acesse [!DNL Adobe I/O] e faça logon com o acesso do desenvolvedor da Organização IMS.
 
@@ -41,13 +41,13 @@ procedimento detalhado [nesta página](https://helpx.adobe.com/br/enterprise/adm
    >
    > Verifique se você está conectado ao portal correto da organização.
 
-1. Extraia o identificador do cliente de integração existente (ID do cliente) do arquivo de configuração da instância ims/authIMSTAClientId. Atributo não existente ou vazio indica que o identificador de cliente não está configurado.
+1. Extraia o identificador do cliente (ID do cliente) de integração existente do arquivo de configuração da instância ims/authIMSTAClientId. Um atributo não existente ou vazio indica que o identificador do cliente não está configurado.
 
    >[!NOTE]
    >
    >Se o identificador do cliente estiver vazio, será possível **[!UICONTROL Create a New project]** diretamente no Adobe I/O.
 
-1. Identifique o projeto existente usando o identificador do cliente extraído. Procure projetos existentes com o mesmo identificador de cliente que o extraído na etapa anterior.
+1. Identifique o projeto existente usando o identificador do cliente extraído. Procure projetos existentes com o mesmo identificador do cliente que o extraído na etapa anterior.
 
    ![](assets/do-not-localize/adobe_io_8.png)
 
@@ -69,7 +69,7 @@ procedimento detalhado [nesta página](https://helpx.adobe.com/br/enterprise/adm
 
    >[!CAUTION]
    >
-   >Você deve salvar o arquivo config.zip quando o prompt de download for exibido, pois não será possível baixá-lo novamente.
+   >Você deverá salvar o arquivo config.zip quando o prompt de download for exibido, pois não será possível baixá-lo novamente.
 
    ![](assets/do-not-localize/adobe_io_4.png)
 
@@ -100,7 +100,7 @@ procedimento detalhado [nesta página](https://helpx.adobe.com/br/enterprise/adm
 
 >[!NOTE]
 >
->Esta etapa não é necessária se o identificador do cliente não estava vazio na [Etapa 1: Criar/atualizar projeto do Adobe I/O](#creating-adobe-io-project).
+>Esta etapa não será necessária se o identificador do cliente não estiver vazio na [Etapa 1: criar/atualizar projeto do Adobe I/O](#creating-adobe-io-project).
 
 A chave privada deve ser codificada no formato base64 UTF-8. Para fazer isso:
 
@@ -114,7 +114,7 @@ A chave privada deve ser codificada no formato base64 UTF-8. Para fazer isso:
 
 1. Copie o conteúdo do arquivo `private.key.base64`.
 
-1. Faça logon via SSH em cada container em que a instância do Adobe Campaign está instalada e adicione as credenciais do Projeto no Adobe Campaign executando o seguinte comando como usuário `neolane`. Isso inserirá as credenciais **[!UICONTROL Technical Account]** no arquivo de configuração da instância.
+1. Faça logon via SSH em cada container em que a instância do Adobe Campaign está instalada e adicione as credenciais do Projeto no Adobe Campaign executando o comando a seguir como usuário`neolane`. Isso inserirá as credenciais **[!UICONTROL Technical Account]** no arquivo de configuração da instância.
 
    ```
    nlserver config -instance:<instance name> -setimsjwtauth:Organization_Id/Client_Id/Technical_Account_ID/<Client_Secret>/<Base64_encoded_Private_Key>
@@ -124,7 +124,7 @@ A chave privada deve ser codificada no formato base64 UTF-8. Para fazer isso:
 
 >[!NOTE]
 >
->Esta etapa não é necessária se o identificador do cliente não estava vazio na [Etapa 1: Criar/atualizar projeto do Adobe I/O](#creating-adobe-io-project).
+>Essa etapa não será necessária se o identificador do cliente não estiver vazio na [Etapa 1: criar/atualizar projeto do Adobe I/O](#creating-adobe-io-project).
 
 Para atualizar a tag [!DNL pipelined], é necessário atualizar o tipo de autenticação para o projeto do Adobe I/O no arquivo de configuração **config-&lt; instance-name >.xml** da seguinte maneira:
 
