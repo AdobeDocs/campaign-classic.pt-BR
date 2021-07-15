@@ -7,21 +7,21 @@ content-type: reference
 topic-tags: content-management
 exl-id: e43dd68e-2e95-4367-9029-4622fbcb1759
 source-git-commit: a129f49d4f045433899fd7fdbd057fb16d0ed36a
-workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+workflow-type: ht
+source-wordcount: '427'
+ht-degree: 100%
 
 ---
 
 # Usando um template de conteúdo{#using-a-content-template}
 
-## Sobre templates de conteúdo {#about-content-templates}
+## Sobre modelos de conteúdo {#about-content-templates}
 
 Os templates de conteúdo podem ser referenciados e usados nas remessas diretamente. Consulte [Criação de um delivery via gestão de conteúdo](#creating-a-delivery-via-content-management)
 
 Eles também podem ser usados para criar instâncias de conteúdo. Depois de criadas, essas instâncias estão prontas para serem entregues (consulte [Delivery de uma instância de conteúdo](#delivering-a-content-instance)) ou exportadas (consulte [Criação de uma instância de conteúdo](#creating-a-content-instance)).
 
-## Criação de um delivery via gestão de conteúdo {#creating-a-delivery-via-content-management}
+## Criação de uma entrega via gerenciamento de conteúdo {#creating-a-delivery-via-content-management}
 
 É possível referenciar um template de conteúdo em um delivery tendo em conta o uso de campos de entrada para inserir conteúdo. Uma guia adicional é incluída no assistente do delivery para definir o conteúdo do delivery.
 
@@ -31,7 +31,7 @@ O layout será aplicado automaticamente com base nas configurações selecionada
 
 ![](assets/s_ncs_content_deliver_a_content_html.png)
 
-Para obter mais informações, consulte o exemplo de implementação completa: [Criação de conteúdo no assistente de delivery](use-case--creating-content-management.md#creating-content-in-the-delivery-wizard).
+Para obter mais informações, consulte o exemplo de implementação completa: [Criação de conteúdo no assistente de entrega](use-case--creating-content-management.md#creating-content-in-the-delivery-wizard).
 
 ## Criação de uma instância de conteúdo {#creating-a-content-instance}
 
@@ -73,7 +73,7 @@ Siga as etapas abaixo:
 
    O conteúdo HTML e texto é gerado por padrão na pasta da **publicação** da instância do Adobe Campaign. Você pode alterar a pasta da publicação graças à opção **NcmPublishingDir**.
 
-## Delivery de uma instância de conteúdo {#delivering-a-content-instance}
+## Entrega de uma instância de conteúdo {#delivering-a-content-instance}
 
 Para criar e entregar uma instância de conteúdo, um template do delivery precisa ser vinculado ao template de publicação usado para gerar esse conteúdo. Para obter mais informações, consulte [Delivery](publication-templates.md#delivery).
 
