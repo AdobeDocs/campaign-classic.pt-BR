@@ -7,7 +7,7 @@ content-type: reference
 topic-tags: configuring-channels
 exl-id: fded088a-11a2-4b87-a368-7b197334aca4
 source-git-commit: a129f49d4f045433899fd7fdbd057fb16d0ed36a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '8433'
 ht-degree: 100%
 
@@ -244,7 +244,7 @@ Há duas maneiras de enviar SMS longos:
 
 Consulte a descrição dos campos `esm_class`, `short_message` e `message_payload` do [SUBMIT_SM PDU](sms-protocol.md#information-pdu) para obter mais detalhes sobre o protocolo e os formatos.
 
-### Captura de rendimento e janela {#throughput-capping}
+### Limite e janelas de tráfego {#throughput-capping}
 
 A maioria dos provedores exige um limite de rendimento para cada conexão SMPP. Isso pode ser feito por meio da definição de um número de SMS na conta externa. Observe que a limitação de rendimento ocorre por conexão. O rendimento efetivo total é o limite por conexão multiplicado pelo número total de conexões. Isso é detalhado na seção [Conexões simultâneas](sms-protocol.md#connection-settings).
 
@@ -493,7 +493,7 @@ Eles são transmitidos como estão nos campos `source_addr_ton`, `source_addr_np
 
 Esse campo é transmitido como está no campo `service_type` de `SUBMIT_SM PDU`. Defina isso de acordo com as necessidades do provedor.
 
-### Tráfego e tempos limite {#throughput-timeouts}
+### Taxa de transferência e tempos limite {#throughput-timeouts}
 
 Essas configurações controlam todos os aspectos de tempo do canal SMPP. Alguns provedores exigem controle muito preciso da taxa de mensagens, da janela e dos tempos de novas tentativas. Essas configurações devem ser definidas com valores que correspondam à capacidade do provedor e às condições indicadas no contrato.
 
@@ -517,7 +517,7 @@ Como calcular a fórmula ideal da janela de envio:
 
 Exemplo: se você tiver 300 SMS/s definidos com rendimento máximo de MT e houver uma latência de 100 ms entre `SUBMIT_SM` e `SUBMIT_SM_RESP` em média, o valor ideal será `300×0.1 = 30`.
 
-#### Rendimento máximo de tráfego de MT {#max-mt-throughput}
+#### Taxa de transferência máxima de MT {#max-mt-throughput}
 
 Número máximo de MT por segundo e por conexão. Essa configuração é estritamente imposta. O MTA nunca encaminhará mensagens mais rapidamente do que esse limite. É útil para provedores que exigem limitação precisa.
 
@@ -531,7 +531,7 @@ Para saber o limite de rendimento total, multiplique esse número pelo número t
 
 Quando a conexão TCP for perdida, o conector aguardará esse número de segundos antes de tentar fazer uma conexão.
 
-#### Período de validade do MT {#expiration-period}
+#### Período de vigência do MT {#expiration-period}
 
 Tempo limite entre `SUBMIT_SM` e o `SUBMIT_SM_RESP` correspondente. Se `RESP` não for recebido a tempo, a mensagem será considerada como tendo sofrido falha, e a política global de novas tentativas do MTA será aplicada.
 
@@ -539,7 +539,7 @@ Tempo limite entre `SUBMIT_SM` e o `SUBMIT_SM_RESP` correspondente. Se `RESP` n�
 
 Tempo limite entre a tentativa de conexão TCP e a resposta `BIND_*_RESP`. Quando o tempo limite for atingido, a conexão será fechada pelo conector do Adobe Campaign e aguardará pelo tempo antes da reconexão antes de tentar novamente.
 
-#### Período inquire_link {#enquire-link-period}
+#### período enquire_link {#enquire-link-period}
 
 `enquire_link` é um tipo especial de PDU enviada para manter a conexão ativa. Esse período é em segundos. O conector do Campaign envia `enquire_link` somente quando a conexão está ociosa, para conservar a largura de banda. Se não for recebido nenhum RESP após o dobro desse período, a conexão será considerada inoperante, e um processo de reconexão será acionado.
 
@@ -638,7 +638,7 @@ Definir esse campo como 0 desativa o mecanismo no qual a **ID da Mensagem invál
 
 Definir esse campo como 1 faz com que o conector sempre responda &quot;OK&quot;, mesmo que a ID seja inválida. Isso deve ser definido como 1 somente sob supervisão, para solução de problemas e pelo período mínimo, por exemplo, para se recuperar de um problema do provedor.
 
-#### Registro do regex da ID no SR {#regex-extraction}
+#### Regex de extração da ID no SR {#regex-extraction}
 
 O formato SR não é estritamente aplicado pela especificação do protocolo SMPP. É apenas uma recomendação descrita no [Apêndice B](sms-protocol.md#sr-error-management) (página 167) da especificação. Alguns implementadores de SMPP formatam esse campo de forma diferente. Portanto, o Adobe Campaign precisa de uma maneira de extrair o campo correto.
 
@@ -734,9 +734,9 @@ A coluna **Ação adicional** fornece uma ação extra quando a **Palavra-chave*
 
 Todas as entradas na tabela são processadas na ordem especificada, até que uma regra seja correspondente. Se várias regras corresponderem a um MO, somente a regra mais alta será aplicada.
 
-## Parâmetros de template do delivery do SMS {#sms-delivery-template-parameters}
+## Parâmetros de modelo de entrega do SMS {#sms-delivery-template-parameters}
 
-Alguns parâmetros podem ser definidos por template do delivery.
+Alguns parâmetros podem ser definidos por modelo de entrega.
 
 ### Do campo {#from-field}
 
@@ -744,7 +744,7 @@ Este campo é opcional. Permite substituir o endereço do remetente (oADC). O co
 
 O campo é limitado a 21 caracteres pela especificação SMPP, mas alguns provedores podem permitir valores mais longos. Observe também que restrições muito rigorosas podem ser aplicadas em alguns países; por exemplo, comprimento, conteúdo, caracteres permitidos.
 
-### Parâmetros do delivery {#delivery-parameters}
+### Parâmetros de entrega {#delivery-parameters}
 
 #### Número máximo de SMS por mensagem {#maximum-sms}
 
@@ -784,7 +784,7 @@ Ao enviar partes do delivery, o MTA gera filhos de MTA. O número de processos f
 
 O processo SMS processa apenas o SR. Ele se conecta ao provedor e deixa a conexão aberta. O processo é reconectado a cada 10 minutos para recarregar novas configurações. Essa é uma operação normal.
 
-### Correspondência de MT, SR e entradas de catálogo {#matching-mt}
+### Correspondência de MT, SR e entradas de broadlog {#matching-mt}
 
 Uma tabela intermediária `nmsProviderMsgId` é usada para armazenar temporariamente dados MT e SR antes de ser enviada assincronamente ao catálogo.
 
@@ -854,7 +854,7 @@ Verifique se `BIND_* PDUs` foram enviados corretamente. O item mais importante a
 
 Verifique se não há muitos `BIND_* PDU`s. Se houver muitos deles, isso poderá indicar que a conexão é instável. Consulte a seção [Problemas com conexões instáveis](sms-protocol.md#issues-unstable-connection) para obter mais informações.
 
-#### INQUIRE_LINK {#enquire-link-pdus}
+#### ENQUIRE_LINK {#enquire-link-pdus}
 
 Verifique se os `ENQUIRE_LINK PDU`s são trocados regularmente quando a conexão está ociosa.
 
