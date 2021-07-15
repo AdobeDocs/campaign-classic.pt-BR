@@ -6,7 +6,7 @@ content-type: reference
 topic-tags: deliveries-best-practices
 exl-id: c0533148-b027-4158-9b95-8d2df769e963
 source-git-commit: a129f49d4f045433899fd7fdbd057fb16d0ed36a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '480'
 ht-degree: 100%
 
@@ -18,13 +18,13 @@ A segmentação de público-alvo é fundamental: crie suas listas cuidadosamente
 
 Saiba mais sobre as populações de públicos-alvos [nesta seção](steps-defining-the-target-population.md)
 
-## Direcionar o público-alvo correto {#target-the-right-audience}
+## Direcionar ao público-alvo correto {#target-the-right-audience}
 
 Quando seu conteúdo estiver pronto, será necessário definir com cuidado quem receberá sua mensagem.
 
 Para que seu delivery seja bem-sucedido, o conteúdo personalizado mais relevante deve ser enviado aos recipients corretos. O Adobe Campaign permite criar o público mais preciso: você pode selecionar os recipients de acordo com a idade, localização, o que compraram, se clicaram em um link em um delivery anterior, etc. Com o Adobe Campaign, também é possível definir perfis de teste, grupos de controle e endereços de seed para verificar se o público-alvo está correto.
 
-## Target mappings {#target-mappings}
+## Direcionar mapeamentos {#target-mappings}
 
 Por padrão, os modelos de delivery no Campaign Classic direcionam os **Recipients**. O Adobe Campaign oferece outros target mappings para seus deliveries, que podem ser modificados conforme suas necessidades.
 
@@ -38,12 +38,12 @@ Você também pode criar e usar um target mapping personalizado. Para obter mais
 
 Você pode enviar deliveries para destinatários armazenados em um arquivo externo em vez de salvos no banco de dados. Saiba mais [nesta seção](steps-defining-the-target-population.md#selecting-external-recipients).
 
-## Enviar para seus assinantes {#send-to-subscribers}
+## Enviar para os assinantes {#send-to-subscribers}
 
 Para enviar mensagens aos assinantes de um informativo, é possível direcionar diretamente os assinantes para o serviço de informação correspondente. Saiba mais [nesta seção](managing-subscriptions.md#delivering-to-the-subscribers-of-a-service).
 
 
-## Testar recipients e endereços de seed {#test-recipients-seed-addresses}
+## Testar recipients e seed addresses {#test-recipients-seed-addresses}
 
 Para testar seu delivery, use provas antes de enviar para o público-alvo principal.
 
