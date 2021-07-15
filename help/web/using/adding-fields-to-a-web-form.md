@@ -7,9 +7,9 @@ content-type: reference
 topic-tags: web-forms
 exl-id: 827b6575-7206-4dfc-b2c6-b95a6d5730b1
 source-git-commit: c7068c172c35e067d2dbed9233ec3b84633603fd
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2371'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -42,9 +42,9 @@ Especifique o modo de armazenamento de resposta: atualize um campo no banco de d
 >
 >Por padrão, o campo é inserido na parte inferior da árvore atual. Use as setas na barra de ferramentas para movê-lo para cima ou para baixo.
 
-## Assistente de criação do campo {#field-creation-wizard}
+## Assistente de criação de campo {#field-creation-wizard}
 
-Para cada página do formulário, é possível adicionar um campo ao usar o primeiro botão da barra de ferramentas. Para fazer isso, acesse o menu **[!UICONTROL Add using the wizard]**.
+Para cada página do formulário, é possível adicionar um campo usando o primeiro botão da barra de ferramentas. Para fazer isso, acesse o menu **[!UICONTROL Add using the wizard]**.
 
 ![](assets/s_ncs_admin_survey_add_field_menu.png)
 
@@ -118,7 +118,7 @@ O modo de armazenamento de resposta pode ser alterado por meio do link **[!UICON
 >
 >Os modos de armazenamento são detalhados em [Response storage fields](web-forms-answers.md#response-storage-fields)
 
-A guia **[!UICONTROL Advanced]** permite definir parâmetros de exibição para o campo (posição dos rótulos, alinhamento, etc.). Consulte [Definição do layout de formulários web](defining-web-forms-layout.md).
+A guia **[!UICONTROL Advanced]** permite definir parâmetros de exibição para o campo (posição dos rótulos, alinhamento, etc.). Consulte [Definição do layout de formulários Web](defining-web-forms-layout.md).
 
 ## Adição de listas suspensas {#adding-drop-down-lists}
 
@@ -150,7 +150,7 @@ Em seguida, clique no link **[!UICONTROL Load]** para recuperar os valores:
 
 >[!CAUTION]
 >
->Repita essa operação sempre que a lista for atualizada para renovar os valores na oferta.
+>Repita essa operação sempre que a lista for atualizada para atualizar os valores na oferta.
 
 ## Adição de caixas de seleção {#adding-checkboxes}
 
@@ -172,7 +172,7 @@ Se o campo de armazenamento (ou variável) for booliano, o valor a ser atribuíd
 
 ![](assets/s_ncs_admin_survey_check_box_enum.png)
 
-## Exemplo: atribuição de um valor a um campo se uma caixa estiver marcada {#example--assign-a-value-to-a-field-if-a-box-is-checked}
+## Exemplo: atribuição de um valor a um campo, se uma caixa estiver marcada {#example--assign-a-value-to-a-field-if-a-box-is-checked}
 
 Queremos inserir uma caixa de seleção em um formulário para enviar uma solicitação de manutenção, conforme mostrado abaixo:
 
@@ -216,8 +216,8 @@ Adicione a mesma quantidade de botões de opção que houver de rótulos. A vant
 
 >[!NOTE]
 >
->Não é possível ativar a seleção múltipla em uma aplicação Web.
->Entretanto, é possível inserir um campo do tipo **[!UICONTROL Multiple choice]** em uma aplicação web, mas isso não permitirá que o usuário selecione vários valores.
+>Não é possível ativar a seleção múltipla em um aplicativo Web.
+>No entanto, é possível inserir um campo do tipo **[!UICONTROL Multiple choice]** em um aplicativo Web, mas isso não permitirá que o usuário selecione vários valores.
 
 ## Adição de grades {#adding-grids}
 
@@ -295,7 +295,7 @@ Você pode adicionar um prefixo e/ou sufixo ao campo numérico por meio da guia 
 
 ![](assets/s_ncs_admin_survey_number_ex_conf.png)
 
-No formulário, a renderização será a seguinte:
+No formulário, a renderização será conforme a seguir:
 
 ![](assets/s_ncs_admin_survey_number_ex.png)
 
@@ -365,7 +365,7 @@ Você pode adicionar um campo de carregamento a uma página. Essa funcionalidade
 
 Para inserir um campo para fazer upload em uma página de formulário, selecione o menu **[!UICONTROL Advanced controls > File...]** na barra de ferramentas do editor de páginas.
 
-Por padrão, os arquivos carregados são armazenados em arquivos de recurso acessíveis por meio do menu **[!UICONTROL Resources > Online > Public resources]**. Você pode usar um script para alterar esse comportamento. Esse script pode usar as funções definidas na [documentação do Campaign JSAPI](https://docs.adobe.com/content/help/br/campaign-classic/technicalresources/api/index.html), incluindo as que se referem à manipulação de arquivos.
+Por padrão, os arquivos carregados são armazenados em arquivos de recurso acessíveis por meio do menu **[!UICONTROL Resources > Online > Public resources]**. Você pode usar um script para alterar esse comportamento. Esse script pode usar as funções definidas na [documentação do Campaign JSAPI](https://docs.adobe.com/content/help/en/campaign-classic/technicalresources/api/index.html), incluindo as que se referem à manipulação de arquivos.
 
 Você pode armazenar o link para esses arquivos em uma variável local ou em um campo de banco de dados. Por exemplo, você pode estender o schema de recipients para adicionar um link a recursos baseados em arquivo.
 
@@ -380,7 +380,7 @@ Você pode armazenar o link para esses arquivos em uma variável local ou em um 
 
 
 
-## Inserir uma constante oculta {#inserting-a-hidden-constant}
+## Inserção de uma constante oculta {#inserting-a-hidden-constant}
 
 Quando o usuário valida uma das páginas do formulário, é possível definir um valor específico para um campo desse perfil ou para uma variável.
 
