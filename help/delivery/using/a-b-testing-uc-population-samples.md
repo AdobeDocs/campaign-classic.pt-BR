@@ -7,15 +7,15 @@ content-type: reference
 topic-tags: a-b-testing
 exl-id: 1ca01cab-734a-4299-b112-04eec51222fb
 source-git-commit: 895aa2fd4fa9c7c71c0073e9be33c12d4e92c9fa
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '170'
-ht-degree: 90%
+ht-degree: 100%
 
 ---
 
 # Configurar amostras de população {#step-2--configuring-population-samples}
 
-## Configurar a atividade Query {#configuring-the-query-activity}
+## Configurar a atividade de consulta {#configuring-the-query-activity}
 
 * Clique duas vezes na atividade **[!UICONTROL Query]**.
 
@@ -29,7 +29,7 @@ ht-degree: 90%
 
    ![](assets/use_case_abtesting_createrecipients_003.png)
 
-## Configurar a atividade de Split {#configuring-the-split-activity}
+## Configurar a atividade de divisão {#configuring-the-split-activity}
 
 Esta atividade permite criar várias populações: a que recebe a delivery A, aquela que recebe a delivery B e a população restante. A utilização de seleção aleatória permite atingir apenas parte da população de cada delivery.
 
@@ -79,4 +79,4 @@ Esta atividade permite criar várias populações: a que recebe a delivery A, aq
 
       ![](assets/use_case_abtesting_createrecipients_013.png)
 
-Agora você pode criar os dois templates do delivery. [Saiba mais](a-b-testing-uc-delivery-templates.md)).
+Agora você pode criar os dois modelos de entrega. [Saiba mais](a-b-testing-uc-delivery-templates.md)).
