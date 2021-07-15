@@ -7,9 +7,9 @@ content-type: reference
 topic-tags: sending-push-notifications
 exl-id: 67eee1c5-a918-46b9-875d-7c3c71c00635
 source-git-commit: a129f49d4f045433899fd7fdbd057fb16d0ed36a
-workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+workflow-type: ht
+source-wordcount: '656'
+ht-degree: 100%
 
 ---
 
@@ -23,14 +23,14 @@ Depois que o pacote for instalado, você poderá definir as configurações do a
 
 As principais etapas são:
 
-1. [Configuração da conta externa para iOS](#configuring-external-account-ios)
+1. [Configurar a conta externa do iOS](#configuring-external-account-ios)
 1. [Configurar o serviço iOS](#configuring-ios-service)
 1. [Integrar o aplicativo móvel iOS no Campaign](#creating-ios-app)
 
 Você poderá [criar uma notificação por push para dispositivos iOS](create-notifications-ios.md).
 
 
-## Configurar conta externa do iOS {#configuring-external-account-ios}
+## Configurar a conta externa do iOS {#configuring-external-account-ios}
 
 Para iOS, o conector HTTP/2 do iOS envia notificações para o HTTP/2 APNS.
 
@@ -73,7 +73,7 @@ O conector iOS está configurado. Você pode começar a criar seu serviço.
 
 1. Crie seus aplicativos iOS de desenvolvimento e produção. Para obter mais informações, consulte esta [seção](configuring-the-mobile-application.md#creating-ios-app).
 
-## Criar aplicativo móvel iOS {#creating-ios-app}
+## Criar um aplicativo móvel iOS {#creating-ios-app}
 
 Depois de criar o serviço, crie o aplicativo iOS no Campaign. Siga as etapas abaixo:
 
