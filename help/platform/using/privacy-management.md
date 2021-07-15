@@ -7,7 +7,7 @@ content-type: reference
 topic-tags: starting-with-adobe-campaign
 exl-id: 23c873fd-9016-4d32-842c-772cfff0e23e
 source-git-commit: 515587695115c23d9b248ecb87a7ae89ea7c62a0
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '887'
 ht-degree: 100%
 
@@ -32,7 +32,7 @@ Para obter mais informações, consulte [Direito de acesso e direito de ser esqu
 
 It also contains information on important features to manage Privacy ([Consent, Retention and Roles](#consent-retention-roles)), as well as best practices to help you with your Privacy compliance when using Adobe Campaign.-->
 
-## Regulamentos sobre a gestão da privacidade {#privacy-management-regulations}
+## Regulamentos sobre o gerenciamento de privacidade {#privacy-management-regulations}
 
 Os recursos do Adobe Campaign ajudam você a cumprir os seguintes requisitos:
 
