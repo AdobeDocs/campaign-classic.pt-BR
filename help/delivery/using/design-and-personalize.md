@@ -6,9 +6,9 @@ content-type: reference
 topic-tags: deliveries-best-practices
 exl-id: 5bf727d2-83b1-4a99-be25-041eee8d234c
 source-git-commit: a129f49d4f045433899fd7fdbd057fb16d0ed36a
-workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+workflow-type: ht
+source-wordcount: '1278'
+ht-degree: 100%
 
 ---
 
@@ -124,7 +124,7 @@ O design responsivo garante que o email seja processado de maneira ideal para o 
 
 * O módulo do Editor de conteúdo digital (DCE) do Adobe Campaign Classic inclui alguns modelos formatados com design responsivo disponíveis em **[!UICONTROL Resources]** > **[!UICONTROL Templates]** > **[!UICONTROL Content templates]**. Saiba mais [neste artigo](https://theblog.adobe.com/responsive-email-design-101/)
 
-## Gestão de imagens {#manage-images}
+## Gerenciamento de imagens {#manage-images}
 
 Siga as diretrizes abaixo ao usar imagens.
 
@@ -154,7 +154,7 @@ Para serem acessadas de fora, as imagens usadas em emails e recursos públicos v
 
 ## Visualizar sua mensagem {#preview-msg}
 
-A Adobe recomenda visualizar a mensagem para verificar a personalização e como os recipients verão o delivery.
+A Adobe recomenda visualizar a mensagem para verificar a personalização e como os recipients verão a entrega.
 
 * No assistente do delivery, a subguia **[!UICONTROL Preview]** permite visualizar a renderização de cada conteúdo para um recipient. Os campos de personalização e os elementos condicionais do conteúdo são substituídos pelas informações correspondentes para o perfil selecionado. [Saiba mais](defining-the-email-content.md#message-content)
 
