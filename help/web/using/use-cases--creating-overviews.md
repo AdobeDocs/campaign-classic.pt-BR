@@ -7,7 +7,7 @@ content-type: reference
 topic-tags: web-applications
 exl-id: a1ac3aab-dc81-4533-9207-26d5dc5e1c88
 source-git-commit: 360fd1ed8970c17c0687eaca0a4c1960d6f5838c
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '948'
 ht-degree: 100%
 
@@ -25,7 +25,7 @@ No exemplo a seguir, criaremos aplicativos tipo visão geral para exibir todas a
 
 ![](assets/s_ncs_configuration_webapp_overview.png)
 
-## Criação de uma aplicação web de uma única página {#creating-a-single-page-web-application}
+## Criação de um aplicativo Web de uma única página {#creating-a-single-page-web-application}
 
 1. Crie uma aplicação web de uma única **[!UICONTROL Page]** e desative as transições de saída e faça a transição para a próxima página.
 
@@ -47,11 +47,11 @@ No exemplo a seguir, criaremos aplicativos tipo visão geral para exibir todas a
 
 1. Feche a janela de configuração da página e clique em **[!UICONTROL Preview]**.
 
-   A lista de aplicações web disponíveis no seu banco de dados é exibida.
+   A lista de aplicativos Web disponíveis em seu banco de dados é exibida.
 
    ![](assets/s_ncs_configuration_webapp_preview.png)
 
-## Adição de um filtro em uma pasta {#adding-a-filter-on-a-folder}
+## Adicionar um filtro a uma pasta {#adding-a-filter-on-a-folder}
 
 Em uma visão geral, você pode optar por acessar dados dependendo de sua localização na árvore do Adobe Campaign. Este é um filtro em uma pasta. Aplique o seguinte processo para adicioná-lo à sua visão geral.
 
@@ -80,7 +80,7 @@ Em uma visão geral, você pode optar por acessar dados dependendo de sua locali
    >
    >Nessa etapa, a aplicação web não está dentro do seu contexto de aplicação, portanto, o filtro não pode ser testado na pasta.
 
-## Adição de um botão para configurar uma nova aplicação web {#adding-a-button-to-configure-a-new-web-application}
+## Adicionar um botão para configurar um novo aplicativo Web {#adding-a-button-to-configure-a-new-web-application}
 
 1. Coloque o cursor no elemento **[!UICONTROL Page]** e adicione um link (**[!UICONTROL Static elements > Link]**).
 1. Modifique o rótulo do link já que ele aparecerá no botão da visão geral.
@@ -106,7 +106,7 @@ Em uma visão geral, você pode optar por acessar dados dependendo de sua locali
 
    ![](assets/s_ncs_configuration_webapp_link.png)
 
-## Adição de detalhes a uma lista {#adding-detail-to-a-list}
+## Adicionar detalhes a uma lista {#adding-detail-to-a-list}
 
 Ao configurar uma lista na sua visão geral, você pode optar por exibir detalhes adicionais para cada entrada na lista.
 
