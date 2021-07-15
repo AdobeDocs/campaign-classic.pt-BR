@@ -142,7 +142,7 @@ O Adobe Campaign Classic é compatível com todos os sistemas e ferramentas list
 <p>2016</p>
 <p>2014</p>
 <p>2012 - SP1 e SP2</p>
-<p>Aviso: o Microsoft SQL Server não é compatível como o banco de dados principal quando o servidor do Campaign estiver em execução no Linux.</p>
+<p>Aviso: o Microsoft SQL Server não é compatível como o banco de dados principal quando o servidor do Campaign está em execução no Linux.</p>
 </td>
 </tr>
 <tr>
