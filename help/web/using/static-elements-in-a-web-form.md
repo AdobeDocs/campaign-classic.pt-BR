@@ -7,15 +7,15 @@ content-type: reference
 topic-tags: web-forms
 exl-id: 364d90af-4b18-4104-8b6a-be80cfde3b0b
 source-git-commit: c7068c172c35e067d2dbed9233ec3b84633603fd
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1034'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
 # Elementos estáticos em um formulário web{#static-elements-in-a-web-form}
 
-É possível incluir elementos com os quais o usuário não tem nenhuma interação nas páginas do formulário; esses elementos são elementos estáticos, como imagens, conteúdo HTML, uma barra horizontal ou um link de hipertexto. Esses elementos são criados por meio do primeiro botão na barra de ferramentas, clicando em **[!UICONTROL Static elements]**.
+É possível incluir elementos com os quais o usuário não tem nenhuma interação nas páginas do formulário; trata-se de elementos estáticos, como imagens, conteúdo HTML, uma barra horizontal ou um link de hipertexto. Esses elementos são criados por meio do primeiro botão na barra de ferramentas, clicando em **[!UICONTROL Static elements]**.
 
 ![](assets/s_ncs_admin_survey_add_static_element.png)
 
@@ -28,7 +28,7 @@ Os seguintes tipos de campo estão disponíveis:
 
    >[!NOTE]
    >
-   >No lado do servidor, o script pode usar as funções definidas na [documentação do Campaign JSAPI](https://docs.adobe.com/content/help/br/campaign-classic/technicalresources/api/index.html).
+   >No lado do servidor, o script pode usar as funções definidas na [documentação do Campaign JSAPI](https://docs.adobe.com/content/help/en/campaign-classic/technicalresources/api/index.html).
 
 ## Inserir conteúdo HTML {#inserting-html-content}
 
@@ -50,7 +50,7 @@ Para inserir um campo de banco de dados, use o botão de personalização.
 
 ### Inserir um link {#inserting-a-link}
 
-Preencha os campos na janela de edição, como mostrado no exemplo a seguir:
+Preencha os campos na janela de edição, como mostrado no seguinte exemplo:
 
 Para adicionar um link de hipertexto, vá para **[!UICONTROL Static elements]** > **[!UICONTROL Link]**.
 
@@ -161,11 +161,11 @@ Por exemplo, você pode criar um campo **Contato** que permitirá exibir a cadei
 
    ![](assets/s_ncs_admin_survey_html_content_preview.png)
 
-Esse modo operacional permite que você defina o texto de formulários web e gerencie traduções usando a ferramenta de tradução integrada. Para obter mais informações, consulte [Tradução de um formulário web](translating-a-web-form.md).
+Esse modo operacional permite que você defina o texto de formulários web e gerencie traduções usando a ferramenta de tradução integrada. Para obter mais informações, consulte [Tradução de um formulário Web](translating-a-web-form.md).
 
 ## Inserir imagens {#inserting-images}
 
-Para que as imagens sejam incluídas em formulários, elas devem ser salvas em um servidor acessível de fora.
+Para que as imagens sejam incluídas em formulários, elas devem ser salvas em um servidor acessível externamente.
 
 Selecione o menu **[!UICONTROL Static elements]** > **[!UICONTROL Image]**
 
