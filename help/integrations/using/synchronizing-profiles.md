@@ -7,7 +7,7 @@ content-type: reference
 topic-tags: acs-connector
 exl-id: 27970a6f-fb22-4418-b29c-c687fd62a78e
 source-git-commit: 515587695115c23d9b248ecb87a7ae89ea7c62a0
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1195'
 ht-degree: 100%
 
@@ -59,7 +59,7 @@ As etapas abaixo para alterar um ponto único de dados oferecem um exemplo simpl
 
    ![](assets/acs_connect_profile_sync_03.png)
 
-1. Confirme se o nome do recipient foi atualizado no Campaign Standard. Para saber onde encontrar perfis no Campaign Standard, consulte [Noções básicas de navegação](https://experienceleague.adobe.com/docs/campaign-standard/using/getting-started/discovering-the-interface/interface-description.html).
+1. Confirme se o nome do recipient foi atualizado no Campaign Standard. Para saber onde encontrar perfis no Campaign Standard, consulte [Noções básicas de navegação](https://experienceleague.adobe.com/docs/campaign-standard/using/getting-started/discovering-the-interface/interface-description.html?lang=pt-BR).
 
    ![](assets/acs_connect_profile_sync_04.png)
 
@@ -85,7 +85,7 @@ Para obter mais informações e instruções completas sobre workflows do Campai
    * Arraste **[!UICONTROL Profiles]** para o espaço de trabalho. Use o menu suspenso do campo para escolher **[!UICONTROL Is external resource]** e encontrar perfis que foram replicados do Campaign v7.
    * Arraste outros parâmetros da consulta para direcionar ainda mais os perfis replicados.
 
-## Criação de um delivery. {#creating-a-delivery}
+## Criação de uma entrega {#creating-a-delivery}
 
 >[!NOTE]
 >
@@ -172,6 +172,6 @@ Siga as instruções em [Criar um workflow](#creating-a-workflow) e [Criar um de
 
    ![](assets/acs_connect_profile_sync_22.png)
 
-1. Vá para o Campaign Standard e abra os detalhes do perfil do recipient. Confirme se uma caixa de seleção aparece ao lado de **[!UICONTROL No longer contact (by any channel)]**. Para saber onde encontrar perfis no Campaign Standard, consulte [Noções básicas de navegação](https://experienceleague.adobe.com/docs/campaign-standard/using/getting-started/discovering-the-interface/interface-description.html).
+1. Vá para o Campaign Standard e abra os detalhes do perfil do recipient. Confirme se uma caixa de seleção aparece ao lado de **[!UICONTROL No longer contact (by any channel)]**. Para saber onde encontrar perfis no Campaign Standard, consulte [Noções básicas de navegação](https://experienceleague.adobe.com/docs/campaign-standard/using/getting-started/discovering-the-interface/interface-description.html?lang=pt-BR).
 
    ![](assets/acs_connect_profile_sync_23.png)
