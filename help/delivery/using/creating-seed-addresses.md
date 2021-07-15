@@ -7,7 +7,7 @@ content-type: reference
 topic-tags: using-seed-addresses
 exl-id: f7dc97f0-3423-4b6f-88e2-08180f9adf8a
 source-git-commit: a129f49d4f045433899fd7fdbd057fb16d0ed36a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '413'
 ht-degree: 100%
 
@@ -44,7 +44,7 @@ Para criar seed addresses, siga as etapas abaixo:
    >
    >Verifique se os dados adicionais do público-alvo foram definidos com um pseudônimo iniciado por &#39;@&#39; na atividade **[!UICONTROL Enrichment]**. Caso contrário, você não poderá usá-los corretamente com seus seeds addresses na atividade do delivery.
 
-## Criação de templates de seed address {#creating-seed-address-templates}
+## Criação de modelos de seed address {#creating-seed-address-templates}
 
 Para criar templates de endereço que serão importados e podem ser modificados para cada delivery, o processo é o mesmo que definir um novo seed address. A única diferença é que os templates de seed address devem ser armazenados em uma pasta do tipo &#39;template&#39;.
 
