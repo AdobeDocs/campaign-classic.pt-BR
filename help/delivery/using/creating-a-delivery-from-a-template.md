@@ -7,17 +7,17 @@ content-type: reference
 topic-tags: using-delivery-templates
 exl-id: 7ffb649e-801f-4568-a86b-7982448e3c30
 source-git-commit: a129f49d4f045433899fd7fdbd057fb16d0ed36a
-workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+workflow-type: ht
+source-wordcount: '175'
+ht-degree: 100%
 
 ---
 
 # Criação de um delivery a partir de um template{#creating-a-delivery-from-a-template}
 
-## Vincular o template ao delivery {#linking-the-template-to-a-delivery}
+## Vincular o modelo a uma entrega {#linking-the-template-to-a-delivery}
 
-Para criar um delivery com base em um template existente, selecione o template da lista de templates de delivery disponíveis.
+Para criar uma entrega com base em um modelo existente, selecione um modelo disponível na lista..
 
 ![](assets/s_ncs_user_wizard_select_template.png)
 
@@ -29,7 +29,7 @@ Selecione o diretório desejado no campo **[!UICONTROL Folder]** ou clique no í
 
 Selecione o template de delivery a ser usado e clique em **[!UICONTROL Ok]**.
 
-## Execução do template {#executing-the-template}
+## Execução do modelo {#executing-the-template}
 
 Você pode iniciar a execução de um template diretamente da lista de templates sem criar um delivery primeiro. Para fazer isso, selecione o template a ser executado e clique com o botão direito do mouse. Selecione **[!UICONTROL Actions>Execute the delivery template...]**.
 
