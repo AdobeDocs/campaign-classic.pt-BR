@@ -7,7 +7,7 @@ content-type: reference
 topic-tags: editing-html-content
 exl-id: 71c737c2-b0d6-4ae8-a5df-28a08dff82d7
 source-git-commit: 360fd1ed8970c17c0687eaca0a4c1960d6f5838c
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '724'
 ht-degree: 100%
 
@@ -15,7 +15,7 @@ ht-degree: 100%
 
 # Criação de uma landing page{#creating-a-landing-page}
 
-## Sobre a criação de páginas iniciais {#about-landing-pages-creation}
+## Sobre a criação de páginas de aterrissagem {#about-landing-pages-creation}
 
 Este caso de uso mostra o uso do Editor digital para criar uma Landing page no console do Adobe Campaign.
 
@@ -23,9 +23,9 @@ Antes de começar a configurar a Landing page no Adobe Campaign, verifique se vo
 
 O principal objetivo desse caso de uso é fazer com que os campos de formulário da Landing page correspondam aos campos internos no Adobe Campaign usando as funções no DCE.
 
-## Criação da landing page {#creating-the-landing-page}
+## Criação da página de aterrissagem {#creating-the-landing-page}
 
-Para criar uma nova aplicação web tipo Landing page, use as seguintes etapas:
+Para criar um novo aplicativo web tipo página de aterrissagem, siga estas etapas:
 
 1. Vá para a guia **[!UICONTROL Campaigns]**, clique no link **[!UICONTROL Web application]** e clique no botão **[!UICONTROL Create]**.
 1. Selecione o modelo **[!UICONTROL New landing page]**, insira um rótulo e clique em **[!UICONTROL Save]**.
@@ -49,7 +49,7 @@ Você obterá a seguinte sequência:
 >
 >Para obter mais informações sobre criação de aplicação web, consulte [esta seção](creating-a-new-web-application.md).
 
-## Etapa 1 - Seleção e carregamento de templates {#step-1---selecting-and-loading-templates}
+## Etapa 1 — seleção e carregamento de modelos {#step-1---selecting-and-loading-templates}
 
 Nesta seção, vamos examinar como **importar conteúdo HTML** para cada página da aplicação Web.
 
@@ -130,7 +130,7 @@ Você pode tornar um campo obrigatório: por exemplo, clique no campo **[!UICONT
 
 ### Criação de um link para a próxima página {#creating-a-link-to-the-next-page}
 
-Esta etapa é obrigatória porque permitirá que a aplicação web determine a sequência das próximas etapas: salvar os dados coletados no banco de dados e exibir a próxima página (página **Thank you**).
+Esta etapa é obrigatória porque permitirá que o aplicativo Web determine a sequência das próximas etapas: salvar os dados coletados no banco de dados e exibir a próxima página (página **Obrigado**).
 
 1. Selecione o botão **[!UICONTROL Send it!]** da página **[!UICONTROL Collection]**.
 1. Clique no menu suspenso **[!UICONTROL Action]**.
@@ -155,7 +155,7 @@ O campo de personalização tem um plano de fundo amarelo no editor.
 
 ## Etapa 3 - Publicação de conteúdo {#step-3---publishing-content}
 
-O conteúdo é publicado pelo painel da aplicação web. Clique no botão **[!UICONTROL Publish]** para executá-lo.
+O conteúdo é publicado pelo painel do aplicativo web. Clique no botão **[!UICONTROL Publish]** para executá-lo.
 
 ![](assets/dce_uc1_pub_dashboard.png)
 
