@@ -7,13 +7,13 @@ content-type: reference
 topic-tags: editing-html-content
 exl-id: e2679f12-459b-466d-9c82-60a28363b104
 source-git-commit: 360fd1ed8970c17c0687eaca0a4c1960d6f5838c
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '734'
 ht-degree: 100%
 
 ---
 
-# Caso de uso: criação de um delivery de email{#use-case-creating-an-email-delivery}
+# Caso de uso: criação de uma entrega de email{#use-case-creating-an-email-delivery}
 
 Nesse caso de uso, você aprenderá as etapas para projetar um delivery de email usando o Adobe Campaign Digital Content Editor (DCE).
 
@@ -30,13 +30,13 @@ Nosso objetivo final é criar um delivery com um template personalizado que cont
 >
 >No **[!UICONTROL Properties]** do delivery, verifique se **[!UICONTROL Content editing mode]** (na guia **[!UICONTROL Advanced]**) está definido como **[!UICONTROL DCE]**. Para garantir a operação ideal do editor, consulte [Práticas recomendadas de edição de conteúdo](content-editing-best-practices.md).
 
-## Etapa 1 - Criação de um delivery {#step-1---creating-a-delivery}
+## Etapa 1 - Criação de uma entrega {#step-1---creating-a-delivery}
 
 Para criar um novo delivery, coloque o cursor na guia **Campaigns** e clique em **Deliveries**. Clique no botão **Criar** acima da lista de deliveries existentes. Para obter mais informações sobre criação de deliveries, consulte [esta página](../../delivery/using/about-email-channel.md).
 
 ![](assets/delivery_step_1.png)
 
-## Etapa 2 - Seleção de um template {#step-2---selecting-a-template}
+## Etapa 2 - Seleção de um modelo {#step-2---selecting-a-template}
 
 Selecione um template do delivery e nomeie o delivery. Esse nome só será visível para os usuários do console do Adobe Campaign e não por seus recipients, no entanto, esse título será exibido na lista de deliveries. Clique em **[!UICONTROL Continue]**.
 
@@ -44,7 +44,7 @@ Selecione um template do delivery e nomeie o delivery. Esse nome só será visí
 
 ## Etapa 3 - Seleção de um conteúdo {#step-3---selecting-a-content}
 
-O Editor de conteúdo digital vem com vários templates prontos para uso com várias estruturas (colunas, áreas de texto, etc.).
+O Editor de conteúdo digital vem com vários modelos prontos para uso com várias estruturas (colunas, áreas de texto, etc.).
 
 Selecione o template de conteúdo que deseja usar e clique no botão **[!UICONTROL Start with the selected content]** para exibir o template no delivery criado.
 
@@ -60,7 +60,7 @@ Você pode salvar esse conteúdo como um template para uso futuro. Após criar u
 >
 >Se estiver usando a **interface da Web do Adobe Campaign**, você deve importar um arquivo .zip com o conteúdo HTML e imagens relacionadas.
 
-## Etapa 4 – Design da mensagem {#step-4---designing-the-message}
+## Etapa 4 — design da mensagem {#step-4---designing-the-message}
 
 * Exiba o nome e o sobrenome dos recipients
 
@@ -114,6 +114,6 @@ Você pode salvar esse conteúdo como um template para uso futuro. Após criar u
    >
    >Esta etapa exige que você salve pelo menos uma aplicação web anteriormente. Essas aplicações podem ser encontradas na guia **[!UICONTROL Campaigns > Web applications]** do console.
 
-## Etapa 5 - Salvamento do delivery {#step-5---saving-the-delivery}
+## Etapa 5 - Salvar a entrega {#step-5---saving-the-delivery}
 
-Quando o conteúdo for integrado, salve o delivery clicando em **Salvar**. Agora ele será exibido na lista de deliveries, encontrada na guia **[!UICONTROL Campaigns > Deliveries]**.
+Quando o conteúdo for integrado, salve a entrega clicando em **Salvar**. Agora ele será exibido na lista de deliveries, encontrada na guia **[!UICONTROL Campaigns > Deliveries]**.
