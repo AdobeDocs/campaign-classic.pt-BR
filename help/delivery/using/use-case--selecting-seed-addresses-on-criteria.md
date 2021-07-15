@@ -7,7 +7,7 @@ content-type: reference
 topic-tags: using-seed-addresses
 exl-id: 091648b8-bf2d-4595-8be3-287f1ac48edd
 source-git-commit: a129f49d4f045433899fd7fdbd057fb16d0ed36a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '838'
 ht-degree: 100%
 
@@ -28,7 +28,7 @@ Para usar a condição dinâmica, você deve ter:
 * um delivery pronto para ser enviado,
 * seed addresses com um valor comum. Esse valor pode ser um campo existente no Adobe Campaign. Neste exemplo, os seed addresses compartilham o valor &quot;Compra&quot; no campo &quot;Departamento&quot;, que não está presente no aplicativo por padrão.
 
-## Etapa 1 - Criação de um delivery {#step-1---creating-a-delivery}
+## Etapa 1 - Criação de uma entrega {#step-1---creating-a-delivery}
 
 As etapas para criar um delivery estão detalhadas na seção [Creating an email delivery](creating-an-email-delivery.md).
 
@@ -38,11 +38,11 @@ Neste exemplo, o gerenciador de delivery criou o boletim informativo e seleciono
 
 ## Etapa 2 - Criação de um valor comum {#step-2---creating-a-common-value}
 
-Para criar um valor comum como no nosso exemplo (departamento de compras), primeiro deve-se estender o **schema de dados** de seus seed addresses e editar o formulário de entrada associado.
+Para criar um valor comum como no nosso exemplo (departamento de compras), primeiro você deve estender o **esquema de dados** de seus seed addresses e editar o formulário de entrada associado.
 
-### Extensão do schema de dados {#extending-the-data-schema}
+### Extensão do esquema de dados {#extending-the-data-schema}
 
-Para obter mais detalhes sobre extensões de schema, consulte o [Guia de configuração](../../configuration/using/data-schemas.md).
+Para obter mais detalhes sobre extensões de esquema, consulte o [Manual de configuração](../../configuration/using/data-schemas.md).
 
 1. No nó **[!UICONTROL Administration > Configuration > Data schemas]**, clique no ícone **[!UICONTROL New]**.
 1. Na janela **[!UICONTROL Creation of a data schema]**, selecione a opção **[!UICONTROL Extension of a schema]** e clique em **[!UICONTROL Next]**.
@@ -95,9 +95,9 @@ Para obter mais detalhes sobre extensões de schema, consulte o [Guia de configu
 
 1. Desconecte e reconecte o Adobe Campaign. As alterações feitas no schema de dados do seed address agora estão em vigor. Para ficarem visíveis na tela do seed address, você deve atualizar o **[!UICONTROL Input form]** associado. Consulte a seção [Atualização do formulário de entrada](#updating-the-input-form).
 
-#### Extensão do schema de dados de uma tabela vinculada {#extending-the-data-schema-from-a-linked-table}
+#### Extensão do esquema de dados de uma tabela vinculada {#extending-the-data-schema-from-a-linked-table}
 
-O schema de dados de seed addresses pode usar valores de uma tabela vinculada ao schema de dados do recipient – Recipient (nms).
+O esquema de dados de seed addresses pode usar valores de uma tabela vinculada ao esquema de dados do recipient – Recipient (nms).
 
 Por exemplo, o usuário gostaria de integrar a **[!UICONTROL Internet Extension]** localizada na tabela **[!UICONTROL Country]**, que está vinculada ao schema de recipients.
 
