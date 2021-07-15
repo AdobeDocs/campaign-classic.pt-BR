@@ -7,7 +7,7 @@ content-type: reference
 topic-tags: web-forms
 exl-id: 723a6c47-5323-4914-a014-58be493852cc
 source-git-commit: 360fd1ed8970c17c0687eaca0a4c1960d6f5838c
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '987'
 ht-degree: 100%
 
@@ -15,9 +15,9 @@ ht-degree: 100%
 
 # Renderização do formulário{#form-rendering}
 
-## Seleção do template de renderização do formulário {#selecting-the-form-rendering-template}
+## Seleção do modelo de renderização do formulário {#selecting-the-form-rendering-template}
 
-As configurações de formulário permitem que você selecione o template usado para gerar as páginas. Para acessá-las, clique no botão **[!UICONTROL Settings]** na barra de ferramentas de detalhes do formulário e selecione a guia **[!UICONTROL Rendering]**. Há vários templates (folhas de estilos) disponíveis por padrão.
+As configurações de formulário permitem selecionar o modelo usado para gerar as páginas. Para acessá-las, clique no botão **[!UICONTROL Settings]** na barra de ferramentas de detalhes do formulário e selecione a guia **[!UICONTROL Rendering]**. Há vários templates (folhas de estilos) disponíveis por padrão.
 
 ![](assets/s_ncs_admin_survey_rendering_select.png)
 
@@ -55,9 +55,9 @@ Os campos **[!UICONTROL Position]** permitem definir a posição dos elementos n
 >[!NOTE]
 >
 >Os templates de renderização estão armazenados no nó **[!UICONTROL Administration > Configuration > Form rendering]**.\
->Para obter mais informações, consulte [Personalização a partir de renderização](#customizing-form-rendering).
+>Para obter mais informações, consulte [Personalização da renderização de formulários](#customizing-form-rendering).
 
-## Personalização da renderização do formulário {#customizing-form-rendering}
+## Personalização da renderização de formulários {#customizing-form-rendering}
 
 ### Alteração do layout dos elementos {#changing-the-layout-of-elements}
 
@@ -76,7 +76,7 @@ Ela permite que você defina as seguintes propriedades:
 * **[!UICONTROL Width]** da zona: pode ser expresso como uma porcentagem ou em ems, pontos ou pixels (valor padrão),
 * **[!UICONTROL Length]** máximo: número máximo de caracteres permitidos (para controles do tipo texto, número e senha),
 * **[!UICONTROL Lines]**: número de linhas para uma zona de tipo **[!UICONTROL Multi-line text]**,
-* **[!UICONTROL Style inline]**: permite que você sobrecarregue a folha de estilos CSS com configurações adicionais. Esses são separados usando os caracteres **;** como mostrado no exemplo abaixo:
+* **[!UICONTROL Style inline]**: permite que você sobrecarregue a folha de estilos CSS com configurações adicionais. Eles são separados usando os caracteres **;** como mostrado no exemplo abaixo:
 
    ![](assets/s_ncs_admin_survey_advanced_tab_inline.png)
 
