@@ -1,15 +1,15 @@
 ---
 product: campaign
 title: Criar uma pesquisa
-description: Saiba mais sobre as principais etapas para criar uma pesquisa
+description: Conheça as principais etapas para criar uma pesquisa
 audience: web
 content-type: reference
 topic-tags: online-surveys
 exl-id: 8d83dfd5-70ec-4656-965b-f6b5e6f9eec1
 source-git-commit: 86963746d3de3396963d221ddbd1ef7d89733d2f
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '782'
-ht-degree: 89%
+ht-degree: 100%
 
 ---
 
@@ -25,7 +25,7 @@ Selecione o modelo de pesquisa (**[!UICONTROL newSurvey]** por padrão).
 
 ![](assets/s_ncs_admin_survey_select_template.png)
 
-As páginas do formulário são criadas usando um editor especial que permite definir e configurar campos de entrada (texto), campos de seleção (listas, caixas de seleção, etc.) e elementos estáticos (imagens, conteúdo HTML, etc.). Elas podem ser coletadas em &quot;containers&quot; e dispostas de acordo com os requisitos. [Saiba mais](#adding-questions)).
+As páginas do formulário são criadas usando um editor especial que permite definir e configurar campos de entrada (texto), campos de seleção (listas, caixas de seleção etc.) e elementos estáticos (imagens, conteúdo HTML etc.). Elas podem ser coletadas em &quot;containers&quot; e dispostas de acordo com os requisitos. [Saiba mais](#adding-questions)).
 
 >[!NOTE]
 >
@@ -52,9 +52,9 @@ Ao adicionar um campo a uma pesquisa, você precisa selecionar seu tipo. As segu
 
    >[!NOTE]
    >
-   >Os modos de armazenamento e importações de campo são detalhados em [this section](../../surveys/using/managing-answers.md#storing-collected-answers).
+   >Os modos de armazenamento e importações de campo são detalhados [nesta seção](../../surveys/using/managing-answers.md#storing-collected-answers).
 
-A natureza do campo a ser adicionado (lista suspensa, campo de texto, caixas de seleção e etc.) se adapta ao modo de armazenamento selecionado. É possível alterá-lo por meio do campo **[!UICONTROL Type]** da guia **[!UICONTROL General]**, mas mantenha a consistência com o tipo de dados.
+A natureza do campo a ser adicionado (lista suspensa, campo de texto, caixas de seleção etc.) se adapta ao modo de armazenamento selecionado. É possível alterá-lo por meio do campo **[!UICONTROL Type]** da guia **[!UICONTROL General]**, mas mantenha a consistência com o tipo de dados.
 
 ![](assets/s_ncs_admin_survey_change_type.png)
 
@@ -62,7 +62,7 @@ Os vários tipos de campos disponíveis são detalhados [nesta seção](../../we
 
 ## Elementos específicos da pesquisa {#survey-specific-elements}
 
-Pesquisas online são baseadas em recursos de aplicações web. Os recursos específicos da pesquisa são detalhados abaixo.
+As pesquisas online têm como base os recursos de aplicativos Web. Os recursos específicos da pesquisa são detalhados abaixo.
 
 ### Múltipla escolha {#multiple-choice}
 
@@ -108,7 +108,7 @@ O rótulo da pergunta é inserido no campo de rótulo. Nesse caso, o estilo da f
 
 >[!NOTE]
 >
->Consulte [este documento](../../web/using/about-web-forms.md) para obter mais informações sobre o uso do editor de HTML.
+>Consulte [este documento](../../web/using/about-web-forms.md) para obter informações sobre como usar o editor de HTML.
 
 Por exemplo:
 
