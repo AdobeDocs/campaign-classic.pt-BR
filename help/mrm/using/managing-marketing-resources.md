@@ -7,9 +7,9 @@ content-type: reference
 topic-tags: tasks--resources-and-budgets
 exl-id: f661e1d1-de2f-4c6a-bbff-e3ffcd1831f0
 source-git-commit: 690f7c4e62203127da7a7055afa0ee8ad4a2bce4
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1386'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -19,7 +19,7 @@ O Adobe Campaign permite gerenciar e acompanhar os recursos de marketing envolvi
 
 Para cada recurso de marketing gerenciado pelo Adobe Campaign, é possível acompanhar o status e o histórico a qualquer momento e visualizar a versão atual.
 
-## Adicionar um recurso de marketing {#adding-a-marketing-resource}
+## Adição de um recurso de marketing {#adding-a-marketing-resource}
 
 Os recursos de marketing são acessados pela guia **[!UICONTROL Campaigns]**.
 
@@ -96,7 +96,7 @@ Se necessário, também é possível desbloqueá-lo manualmente no painel.
 
 Em cada recurso, a guia **[!UICONTROL Forum]** permite que os participantes troquem informações.
 
-[Fóruns de discussão](../../mrm/using/discussion-forums.md) explica como os fóruns de discussão operam no Adobe Campaign.
+[Fóruns de discussão](../../mrm/using/discussion-forums.md) explica como os fóruns de discussão funcionam no Adobe Campaign.
 
 ## Ciclo de vida de um recurso de marketing {#life-cycle-of-a-marketing-resource}
 
@@ -128,7 +128,7 @@ A guia **[!UICONTROL Tracking]** permite que todos os operadores acompanhem os v
 >
 >Além do revisor especificado para cada recurso de marketing, os operadores com direitos de administrador e o gerente de recursos estão autorizados a aprovar um recurso de marketing.
 
-### Publicar um recurso {#publishing-a-resource}
+### Publicação de um recurso {#publishing-a-resource}
 
 Quando aprovado, o recurso de marketing deve ser publicado. O processo de publicação deve estar sujeito à implementação específica de acordo com os requisitos da empresa. Isso significa que os recursos podem ser publicados em uma extranet ou em qualquer outro servidor, informações específicas podem ser enviadas para um provedor de serviços externo etc.
 
@@ -153,7 +153,7 @@ Se um fluxo de trabalho não for iniciado imediatamente (se ele for interrompido
 
 ## Vincular um recurso a uma campanha {#linking-a-resource-to-a-campaign}
 
-### Fazendo referência a um recurso de marketing {#referencing-a-marketing-resource}
+### Referência a um recurso de marketing {#referencing-a-marketing-resource}
 
 Os recursos de marketing podem ser associados a campanhas, desde que este recurso tenha sido selecionado no template de campanha.
 
@@ -175,7 +175,7 @@ O botão **[!UICONTROL Details]** permite editá-lo e visualizá-lo.
 
 Os recursos adicionados serão exibidos no painel. Eles também poderão ser editados lá.
 
-### Adicionando um recurso de marketing a um delivery outline {#adding-a-marketing-resource-to-a-delivery-outline}
+### Adição de um recurso de marketing a um delivery outline {#adding-a-marketing-resource-to-a-delivery-outline}
 
 Os recursos de marketing podem ser associados a deliveries por meio de delivery outlines.
 
