@@ -1,13 +1,13 @@
 ---
 product: campaign
-title: Práticas recomendadas de desempenho de delivery
+title: Práticas recomendadas de desempenho de entrega
 description: Saiba mais sobre o desempenho do delivery e as práticas recomendadas.
 audience: delivery
 content-type: reference
 topic-tags: monitoring-deliveries
 exl-id: cc793d7b-0a26-4a75-97ed-d79c87d9b3b8
 source-git-commit: a129f49d4f045433899fd7fdbd057fb16d0ed36a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '458'
 ht-degree: 100%
 
@@ -23,7 +23,7 @@ Recomendamos seguir as diretrizes abaixo para garantir que seus deliveries tenha
 * [Solução de problemas de entrega](delivery-troubleshooting.md)
 * [Sobre a capacidade de entrega](about-deliverability.md)
 
-## Práticas recomendadas para desempenho {#best-practices-performance}
+## Práticas recomendadas de desempenho {#best-practices-performance}
 
 * Não mantenha os deliveries em estado de falha na instância, pois tabelas temporárias serão mantidas e o desempenho será afetado.
 
