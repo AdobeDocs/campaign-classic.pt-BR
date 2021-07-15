@@ -55,7 +55,7 @@ O Adobe Campaign permite criar e organizar campanhas direcionadas e personalizad
 
 Atraia a atenção dos clientes e melhore as taxas de resposta com a personalização avançada do conteúdo de mensagens e os cabeçalhos com base em perfis e preferências do cliente. Para obter mais informações sobre a gestão de conteúdo de mensagens e personalização, consulte [esta página](../../delivery/using/about-personalization.md). A gestão colaborativa dos circuitos de conteúdo, notificação e aprovação está detalhada [nesta seção](../../mrm/using/about-marketing-resource-management.md).
 
-### Análise e geração de relatórios {#analysis-and-reporting}
+### Análise e relatórios {#analysis-and-reporting}
 
 O Adobe Campaign permite monitorar e interpretar o comportamento dos clientes por meio do aprimoramento gradual de seus dados e perfis. As ferramentas de análise e geração de relatórios permitem capitalizar cada nova campanha, melhorar o direcionamento das suas iniciativas de marketing e otimizar seu impacto e o retorno sobre o investimento. Consulte [esta página](../../reporting/using/delivery-reports.md) para obter mais informações.
 
