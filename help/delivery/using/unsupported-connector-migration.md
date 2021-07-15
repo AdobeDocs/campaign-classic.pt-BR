@@ -1,20 +1,20 @@
 ---
 product: campaign
 title: Migração de conector SMS não compatível
-description: Migrar conector SMS não compatível para o conector SMPP genérico estendido
+description: Migrar conector SMS incompatível para o conector SMPP genérico estendido
 audience: delivery
 content-type: reference
 topic-tags: sending-messages-on-mobiles
 hidefromtoc: true
 exl-id: 60acf80c-8506-410b-ab2c-4f67a5677b43
 source-git-commit: a129f49d4f045433899fd7fdbd057fb16d0ed36a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '453'
 ht-degree: 100%
 
 ---
 
-# Migrar conector SMS não compatível para o conector SMPP genérico estendido{#unsupported-connector-migration}
+# Migrar conector SMS incompatível para o conector SMPP genérico estendido{#unsupported-connector-migration}
 
 A partir da versão 20.2, os conectores herdados serão descontinuados. Este documento ajudará você a migrar conectores que ainda estão sendo executados no sistema antigo para o conector SMPP recomendado.
 
@@ -49,7 +49,7 @@ Primeiro, será necessário criar uma nova conta externa do **[!UICONTROL Extend
 
 Agora é necessário preencher os parâmetros da guia **[!UICONTROL Mobile]** da conta externa do **[!UICONTROL Extended Generic SMPP]** recém-criada de acordo com o conector anterior.
 
-### No conector Genérico {#from-generic-connector}
+### Do conector genérico {#from-generic-connector}
 
 Ao escolher o conector **[!UICONTROL Generic]**, você deve ter um conector JavaScript personalizado que se adapte a cada situação.
 
@@ -66,7 +66,7 @@ Na guia **[!UICONTROL Connection Settings]**:
 * **[!UICONTROL Server]**
 * **[!UICONTROL Port]**
 
-### No conector SMPP genérico {#from-generic-smpp-connector}
+### Do conector SMPP genérico {#from-generic-smpp-connector}
 
 No conector **[!UICONTROL Generic SMPP]**, é possível transpor para a conta do **[!UICONTROL Extended SMPP]** recém-criada:
 
@@ -97,7 +97,7 @@ Na guia **[!UICONTROL SMSC specificities]**:
 * **[!UICONTROL Coding when sending]** corresponde a **[!UICONTROL ID Format in MT acknowledgement]**
 * **[!UICONTROL Coding when receiving]** corresponde a **[!UICONTROL ID Format in the SR]**
 
-### No conector Sybase365 {#from-sybase}
+### Do conector Sybase365 {#from-sybase}
 
 No conector **[!UICONTROL Sybase365]**, é possível transpor para a conta do **[!UICONTROL Extended SMPP]** recém-criada:
 
@@ -111,7 +111,7 @@ Na guia **[!UICONTROL Connection Settings]**:
 * **[!UICONTROL Port]**
 * **[!UICONTROL System Type]**
 
-### No conector CLX {#from-clx}
+### Do conector CLX {#from-clx}
 
 No conector **[!UICONTROL CLX]**, é possível transpor para a conta do **[!UICONTROL Extended SMPP]** recém-criada:
 
@@ -134,7 +134,7 @@ Na guia **[!UICONTROL SMSC specificities]**:
 * **[!UICONTROL Coding when sending]** corresponde a **[!UICONTROL ID Format in MT acknowledgement]**
 * **[!UICONTROL Coding when receiving]** corresponde a **[!UICONTROL ID Format in the SR]**
 
-### No conector Tele2 {#from-tele2}
+### Do conector Tele2 {#from-tele2}
 
 No conector **[!UICONTROL Tele2]**, é possível transpor para a conta do **[!UICONTROL Extended SMPP]** recém-criada:
 
@@ -159,7 +159,7 @@ Na guia **[!UICONTROL Mapping of Encoding]**:
 
 * **[!UICONTROL Outbound SMS coding]**
 
-### No conector O2 {#from-O2}
+### Do conector O2 {#from-O2}
 
 No conector **[!UICONTROL O2]**, é possível transpor para a conta do **[!UICONTROL Extended SMPP]** recém-criada:
 
