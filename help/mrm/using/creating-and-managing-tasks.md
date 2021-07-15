@@ -7,9 +7,9 @@ content-type: reference
 topic-tags: tasks--resources-and-budgets
 exl-id: cc1200fa-f6d8-4f41-aed1-d1a7f229447a
 source-git-commit: 690f7c4e62203127da7a7055afa0ee8ad4a2bce4
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '3730'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -21,9 +21,9 @@ As tarefas podem ser criadas, exibidas e monitoradas a partir da lista de tarefa
 
 As tarefas são anexadas à campanha e podem ter dependências, ou seja, tarefas associadas. Cada tarefa tem um status, prioridade, carga estimada e custos relacionados.
 
-Todas as tarefas são agrupadas em uma lista acessível pela guia **Campanhas**. Para obter mais informações, consulte [Access tasks](#accessing-tasks).
+Todas as tarefas são agrupadas em uma lista acessível pela guia **Campanhas**. Para obter mais informações, consulte [Acessar tarefas](#accessing-tasks).
 
-Elas podem ser exibidas na agenda do programa ao qual pertencem.
+Elas podem ser exibidas na programação do programa ao qual pertencem.
 
 ![](assets/d_ncs_user_tasks_in_planning.png)
 
@@ -111,13 +111,13 @@ Para cada operador, você pode inserir uma carga de trabalho agendada e uma carg
 
 ![](assets/s_ncs_user_task_edit_resource_profile.png)
 
-O painel do operador permite verificar a carga de trabalho dele (outras tarefas em andamento).
+O painel do operador permite verificar a carga de trabalho (outras tarefas em andamento).
 
 ![](assets/s_ncs_user_task_edit_resource_planning.png)
 
 ### Revisores {#reviewers}
 
-Além dos participantes, você pode definir operadores que revisarão a tarefa uma vez que ela tenha sido fechada pela pessoa encarregada. Para fazer isso, clique na opção **[!UICONTROL Enable task approval]** na seção inferior esquerda da janela **[!UICONTROL Resources]**. Pode ser um operador individual, um grupo de operadores ou uma lista de operadores.
+Além dos participantes, você pode definir operadores que examinarão a tarefa assim que ela for encerrada pela pessoa encarregada. Para fazer isso, clique na opção **[!UICONTROL Enable task approval]** na seção inferior esquerda da janela **[!UICONTROL Resources]**. Pode ser um operador individual, um grupo de operadores ou uma lista de operadores.
 
 ![](assets/s_ncs_user_task_edit_resource_validation.png)
 
@@ -143,7 +143,7 @@ Os documentos referenciados aparecerão nas notificações enviadas aos operador
 
 ![](assets/s_ncs_user_task_notification_documents.png)
 
-### Cronograma de execução {#execution-schedule}
+### Programação de execução {#execution-schedule}
 
 O período de validade de uma tarefa é indicado nos campos **[!UICONTROL Start]** e **[!UICONTROL End]**. A carga agendada expressa a carga de trabalho a ser executada durante o período. É expresso em dias ou horas.
 
@@ -191,7 +191,7 @@ Um provedor de serviços externos pode ser envolvido no gerenciamento de uma tar
 
 Para fazer isso, edite as propriedades da tarefa e selecione o provedor de serviços. As classes de custo associadas ao provedor de serviços são listadas automaticamente na seção central da janela.
 
-Para obter mais informações, consulte [Criar um provedor de serviços e categorias de custo](../../campaign/using/providers--stocks-and-budgets.md#creating-a-service-provider-and-its-cost-categories).
+Para obter mais informações, consulte [Criar um provedor de serviços e suas categorias de custo](../../campaign/using/providers--stocks-and-budgets.md#creating-a-service-provider-and-its-cost-categories).
 
 Selecione as categorias de custo relacionadas à execução da tarefa. Para fazer isso, selecione o tipo de custo e, se necessário, adicione uma quantidade como sobretaxa.
 
@@ -201,7 +201,7 @@ Selecione as categorias de custo relacionadas à execução da tarefa. Para faze
 >
 >O método para gerenciar orçamentos e custos é apresentado em [Controlar custos](../../mrm/using/controlling-costs.md).
 
-Quando um provedor de serviços é selecionado, ele é exibido no painel de tarefas:
+Quando selecionado, o provedor de serviços é exibido no painel de tarefas:
 
 ![](assets/s_ncs_user_task_supplier_view.png)
 
@@ -245,7 +245,7 @@ Para criar uma tarefa vinculada diretamente a um programa:
 
 ### Disponibilidade do operador {#operator-availability}
 
-No painel de tarefas, um ícone ao lado do nome do operador indica que eles já estão trabalhando em outra tarefa ou evento durante o período coberto pela tarefa. (Tarefa que o operador está encarregado ou envolvido em: ele aparece no campo **[!UICONTROL Assigned to]** ou na caixa de tarefas **[!UICONTROL Resources]**).
+No painel de tarefas, um ícone ao lado do nome do operador indica que ele já está trabalhando em outra tarefa ou evento durante o período abrangido pela tarefa. (Tarefa que o operador está encarregado ou envolvido em: ele aparece no campo **[!UICONTROL Assigned to]** ou na caixa de tarefas **[!UICONTROL Resources]**).
 
 ![](assets/mrm_task_alert_operator_busy.png)
 
@@ -273,9 +273,9 @@ As seguintes tarefas podem ser agendadas:
 >[!NOTE]
 >
 >**[!UICONTROL Control task]** e tarefas **[!UICONTROL Grouping]** **só** podem ser criadas por meio do painel de campanha.\
->Elas são exibidas no mapa de tarefas do operador para as quais são atribuídas. Consulte [Acessar tarefas](#accessing-tasks).
+>Elas são exibidas no mapa de tarefas do operador ao qual estão atribuídas. Consulte [Acessar tarefas](#accessing-tasks).
 
-### Tarefas de controle {#control-tasks}
+### Controlar tarefas {#control-tasks}
 
 Uma **[!UICONTROL Control task]** é vinculada à aprovação de delivery: aprovação de direcionamento, conteúdo, arquivo de extração, orçamento ou prova.
 
@@ -312,7 +312,7 @@ A tarefa de criação de recursos de marketing interage com o recurso vinculado 
 
 #### Configurar uma tarefa de criação de recurso de marketing {#configuring-a-marketing-resource-creation-task}
 
-A pessoa que revisa a tarefa não é necessariamente a mesma pessoa que analisa o conteúdo definido no recurso. No entanto, se a opção **[!UICONTROL Publish the marketing resource]** estiver marcada (veja abaixo), o revisor da tarefa está autorizado a aprovar o conteúdo do recurso, já que a finalização da tarefa automaticamente aprova o recurso (ou, se nenhum revisor for definido, o gerente da tarefa).
+A pessoa que analisa a tarefa não é necessariamente a mesma pessoa que analisa o conteúdo definido no recurso. No entanto, se a opção **[!UICONTROL Publish the marketing resource]** estiver marcada (veja abaixo), o revisor da tarefa está autorizado a aprovar o conteúdo do recurso, já que a finalização da tarefa automaticamente aprova o recurso (ou, se nenhum revisor for definido, o gerente da tarefa).
 
 ![](assets/mrm_task_asset_creation.png)
 
@@ -323,7 +323,7 @@ No campo **[!UICONTROL Marketing resource]**, defina o recurso que deseja gerenc
 
 A opção **[!UICONTROL Publish the marketing resource]** permite automatizar a publicação de recursos: uma vez que a tarefa é **[!UICONTROL Finished]**, o status do recurso alterna automaticamente para **[!UICONTROL Published]**, mesmo que não tenha sido enviado para aprovação ou tenha sido aprovada, incluindo se o revisor que conclui a tarefa não é o revisor de conteúdo definido no recurso.
 
-O botão **[!UICONTROL Publish the resource]** é disponibilizado e o revisor de publicação de recursos recebe um email de notificação para que saiba que o recurso está pronto para ser publicado. Na guia **[!UICONTROL Edit > Tracking]**, a revisão e a publicação pelo revisor da tarefa ficam visíveis. Se um workflow de pós-processamento de recurso tiver sido definido, ele será executado agora.
+O botão **[!UICONTROL Publish the resource]** é disponibilizado e o revisor de publicação de recursos recebe um email de notificação para que saiba que o recurso está pronto para ser publicado. Na guia **[!UICONTROL Edit > Tracking]**, a revisão e a publicação pelo revisor da tarefa ficam visíveis. Se um fluxo de trabalho de pós-processamento de recurso tiver sido definido, ele será executado agora.
 
 ![](assets/mrm_resource_audit_tab.png)
 
@@ -380,7 +380,7 @@ Durante a criação, os seguintes elementos devem ser inseridos na tarefa:
 
 ### Links entre tarefas {#links-between-tasks}
 
-O botão **[!UICONTROL Properties]** em cada tarefa permite definir os vínculos entre tarefas em uma campanha. Pode-se dividir tarefas em subtarefas usando uma tarefa de agrupamento (consulte [Tarefas vinculadas](#linked-tasks)), ou definir dependências entre as tarefas (consulte [Tarefas de agrupamento](#grouping-tasks)).
+O botão **[!UICONTROL Properties]** em cada tarefa permite definir os vínculos entre tarefas em uma campanha. É possível dividir tarefas em subtarefas usando uma tarefa de agrupamento (consulte [Tarefas vinculadas](#linked-tasks)) ou definir dependências entre as tarefas (consulte [Agrupamento de tarefas](#grouping-tasks)).
 
 #### Tarefas vinculadas {#linked-tasks}
 
@@ -394,7 +394,7 @@ Cada subtarefa é uma tarefa padrão vinculada à tarefa principal.
 
 ![](assets/s_ncs_user_task_depends_on.png)
 
-#### Tarefas do grupo {#grouping-tasks}
+#### Agrupar tarefas {#grouping-tasks}
 
 Use o campo **[!UICONTROL Grouped to]** para fazer a execução de uma tarefa depender da execução de outra tarefa.
 
