@@ -7,7 +7,7 @@ content-type: reference
 topic-tags: sending-emails
 exl-id: db65e83e-276f-4163-98c3-3658a48acffc
 source-git-commit: a129f49d4f045433899fd7fdbd057fb16d0ed36a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '928'
 ht-degree: 100%
 
@@ -75,7 +75,7 @@ As seguintes opções estão disponíveis:
 * **O nome do arquivo é computado durante a análise de delivery (não pode depender do perfil do recipient)**
 * **O nome do arquivo é computado no momento do delivery para cada recipient (pode depender do recipient)**
 
-### Anexo de arquivo local {#attach-a-local-file}
+### Anexar um arquivo local {#attach-a-local-file}
 
 Se o anexo for um arquivo local, selecione a opção: **[!UICONTROL File name is specified when creating the delivery template]**. O arquivo é selecionado no local e carregado no servidor. Siga as etapas abaixo:
 
@@ -88,7 +88,7 @@ Se o anexo for um arquivo local, selecione a opção: **[!UICONTROL File name is
 
    ![](assets/s_ncs_user_wizard_email_calc_attachement_01.png)
 
-O arquivo está então disponível no servidor para ser anexado aos diferentes deliveries criados a partir desse template.
+O arquivo está então disponível no servidor para ser anexado às diferentes entregas criadas com base nesse modelo.
 
 ### Anexar uma mensagem personalizada {#attach-a-personalized-message}
 
