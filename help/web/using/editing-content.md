@@ -7,9 +7,9 @@ content-type: reference
 topic-tags: editing-html-content
 exl-id: 968430d6-b1dd-47f8-8b31-39aaa18bc05c
 source-git-commit: 360fd1ed8970c17c0687eaca0a4c1960d6f5838c
-workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+workflow-type: ht
+source-wordcount: '1214'
+ht-degree: 100%
 
 ---
 
@@ -17,7 +17,7 @@ ht-degree: 0%
 
 ## Definição de uma condição de visibilidade {#defining-a-visibility-condition}
 
-Você pode especificar uma condição de visibilidade em um elemento de página da web: esse elemento será visível somente se a condição for respeitada.
+É possível especificar uma condição de visibilidade em um elemento de página da Web: esse elemento será visível somente se a condição for respeitada.
 
 Para adicionar uma condição de visibilidade, selecione um bloco e insira a condição no campo **[!UICONTROL Visibility condition]** com o editor de expressão.
 
@@ -35,7 +35,7 @@ Essas condições adotam a sintaxe da expressão XTK (por exemplo, **ctx.recipie
 >
 >Blocos dinâmicos não visíveis, como menus suspensos, não podem ser editados.
 
-## Adição de uma borda e um plano de fundo {#adding-a-border-and-background}
+## Adição de uma borda e um fundo {#adding-a-border-and-background}
 
 Você pode adicionar uma **borda** a um bloco selecionado. As bordas são definidas usando três opções: estilo, tamanho e cor.
 
@@ -148,7 +148,7 @@ A opção **Vincular a uma URL externa** permite abrir qualquer URL do conteúdo
 
 Digite o endereço de link em questão no campo **URL.** O campo URL deve ser populado da seguinte maneira: **https://www.myURL.com**.
 
-### Vinculação a uma aplicação web {#link-to-a-web-application}
+### Vinculação a um aplicativo Web {#link-to-a-web-application}
 
 A opção **Link para uma aplicação web** permite acessar uma aplicação web do Adobe Campaign.
 
@@ -170,7 +170,7 @@ O **Link que define uma opção de ação** permite configurar uma ação ao cli
 
 ### Excluir um link {#delete-a-link}
 
-Quando um link é inserido, a barra de ferramentas oferece dois novos ícones: **Edit link** e **Break the link** que permite interagir com o link criado.
+Quando um link é inserido, a barra de ferramentas oferece dois novos ícones: **Editar link** e **Interromper o link** que permitem interagir com o link criado.
 
 * **[!UICONTROL Edit link]** permite exibir uma janela com todos os parâmetros do link.
 * **[!UICONTROL Break the link]** permite excluir o link, após confirmação, e todos os parâmetros relacionados.
@@ -214,7 +214,7 @@ O Editor de conteúdo digital permite trabalhar em **qualquer tipo de imagem** c
 >
 >Os arquivos externos não devem ser chamados em uma tag **script** da página HTML. Esses arquivos não serão importados para o servidor do Adobe Campaign.
 
-### Adição / exclusão / duplicação de uma imagem {#adding---deleting---duplicating-an-image}
+### Adição/exclusão/duplicação de uma imagem {#adding---deleting---duplicating-an-image}
 
 Para inserir uma imagem, selecione um bloco tipo Imagem e clique no ícone Imagem. ****
 
