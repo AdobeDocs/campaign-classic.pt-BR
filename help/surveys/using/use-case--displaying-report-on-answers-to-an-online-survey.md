@@ -7,7 +7,7 @@ content-type: reference
 topic-tags: designing-reports-with-cubes
 exl-id: 6be12518-86d1-4a13-bbc2-b2ec5141b505
 source-git-commit: ee3d643e4ba607b3d7ca816eabf862b867d1f3f4
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '475'
 ht-degree: 100%
 
@@ -31,7 +31,7 @@ Antes de começar neste caso de uso, é preciso ter acesso a uma pesquisa e um c
 >
 >Esse caso de uso só poderá ser implementado se tiver adquirido a opção **Survey Manager.** Verifique o contrato de licença.
 
-## Etapa 1 - Criação da coleta de dados e do workflow de armazenamento {#step-1---creating-the-data-collection-and-storage-workflow}
+## Etapa 1 — criação da coleção de dados e do fluxo de trabalho de armazenamento {#step-1---creating-the-data-collection-and-storage-workflow}
 
 Para coletar as respostas da pesquisa, siga as etapas abaixo:
 
@@ -63,7 +63,7 @@ Para coletar as respostas da pesquisa, siga as etapas abaixo:
 
    As atividades **[!UICONTROL List update]** e **[!UICONTROL Scheduler]** estão detalhadas em .
 
-## Etapa 2 - Criação do cubo, suas medidas e seus indicadores {#step-2---creating-the-cube--its-measures-and-its-indicators}
+## Etapa 2 — criação do cubo, suas medidas e seus indicadores {#step-2---creating-the-cube--its-measures-and-its-indicators}
 
 É possível então criar o cubo e configurar suas medidas: elas serão usados para criar os indicadores que serão mostrados no relatório. Para obter mais informações sobre a criação e configuração de cubos, consulte [Sobre os cubos](../../reporting/using/about-cubes.md).
 
@@ -77,7 +77,7 @@ Defina as dimensões e as medidas a serem exibidas no relatório. Aqui, queremos
 
 A guia **[!UICONTROL Preview]** permite controlar a renderização do relatório.
 
-## Etapa 3 - Criação do relatório e configuração do layout de dados dentro da tabela {#step-3---creating-the-report-and-configuring-the-data-layout-within-the-table}
+## Etapa 3 — criação do relatório e configuração do layout de dados na tabela {#step-3---creating-the-report-and-configuring-the-data-layout-within-the-table}
 
 Em seguida, é possível criar um relatório com base nesse cubo e processar os dados e informações.
 
