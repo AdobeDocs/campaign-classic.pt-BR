@@ -8,13 +8,13 @@ topic-tags: sending-push-notifications
 version: Classic v7
 exl-id: a5f6b82d-5561-4e56-b2ed-7fd6fd8c2b55
 source-git-commit: a129f49d4f045433899fd7fdbd057fb16d0ed36a
-workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+workflow-type: ht
+source-wordcount: '954'
+ht-degree: 100%
 
 ---
 
-# Integração do SDK do Campaign ao seu aplicativo {#integrating-campaign-sdk-into-the-mobile-application}
+# Integração do SDK do Campaign a seu aplicativo {#integrating-campaign-sdk-into-the-mobile-application}
 
 SDKs do Campaign para iOS e Android são um dos componentes do módulo do canal do aplicativo móvel.
 
@@ -54,7 +54,7 @@ Para saber mais sobre as diferentes versões do Android e do iOS compatíveis, c
    >
    >Para a versão 1.0.25 do SDK, as quatro arquiteturas estão disponíveis no arquivo **Neolane_SDK.h**.
 
-## Configuração de integração declarativa {#declaring-integration-settings}
+## Configurações de integração declarativa {#declaring-integration-settings}
 
 Para integrar o SDK do Campaign no aplicativo móvel, o administrador funcional deve fornecer as seguintes informações ao desenvolvedor:
 
@@ -290,7 +290,7 @@ A função de registro permite:
 
    >[!NOTE]
    >
-   >A partir da versão 7.0, depois que a função **application:didReceiveRemoteNotification:fetchCompletionHandler** é implementada, o sistema operacional só chama essa função. Logo, a função **application:didReceiveRemoteNotification** não é chamada.
+   >A partir da versão 7.0, uma vez implementada a função do **aplicativo:didReceiveRemoteNotification:fetchCompletionHandler**, o sistema operacional passa a chamar apenas essa função. Logo, a função **application:didReceiveRemoteNotification** não é chamada.
 
 ## Rastreamento de notificação silenciosa {#silent-notification-tracking}
 
@@ -576,7 +576,7 @@ As variáveis permitem definir o comportamento do aplicativo móvel após recebe
 >
 >A Adobe recomenda escolher nomes de variáveis curtos, pois o tamanho da notificação é limitado a 4kB para iOS e Android.
 
-## Extensão de Serviço de Notificação {#notification-service-extension}
+## Extensão de serviço de notificação {#notification-service-extension}
 
 **Para iOS**
 
