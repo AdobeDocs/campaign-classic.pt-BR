@@ -1,15 +1,15 @@
 ---
 product: campaign
-title: Caso de uso de teste AB
+title: Caso de uso de teste A/B
 description: Saiba como executar testes A/B por meio de um caso de uso dedicado.
 audience: delivery
 content-type: reference
 topic-tags: a-b-testing
 exl-id: 4eb139a0-5342-4084-9f6d-d736e05bf1c6
 source-git-commit: a129f49d4f045433899fd7fdbd057fb16d0ed36a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '244'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -38,5 +38,5 @@ As principais etapas para executar esse caso de uso são:
 
 **Tópicos relacionados:**
 
-* [Introdução ao teste AB](get-started-a-b-testing.md)
-* [Configurar teste AB](configuring-a-b-testing.md)
+* [Introdução ao teste A/B](get-started-a-b-testing.md)
+* [Configurar teste A/B](configuring-a-b-testing.md)
