@@ -7,9 +7,9 @@ content-type: reference
 topic-tags: tracking-messages
 exl-id: ed88e1d6-c0d5-4a85-9f3e-be670f4bcc10
 source-git-commit: 98bbbb36c9f8156cc34e826a024ff6e6e3f3fee3
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '582'
-ht-degree: 83%
+ht-degree: 100%
 
 ---
 
@@ -28,7 +28,7 @@ O rastreamento se aplica a mensagens, mas o rastreamento web permite monitorar c
 * Colchetes [ ]
 * Chaves { }
 
-Neste exemplo, o URL https://www.adobe.com é seguido por um ponto e vírgula. O ponto e vírgula pode ser interpretado pelos clientes de email do recipient como parte do URL. Como resultado, o link pode estar quebrado. Para evitar esse problema, é possível colocar o URL em delimitadores de uma destas maneiras:
+Neste exemplo, o URL https://www.adobe.com é seguido por um ponto e vírgula. O ponto e vírgula pode ser interpretado pelos clientes de email do recipient como parte do URL. Isso pode quebrar o link. Para evitar esse problema, é possível colocar o URL em delimitadores de uma destas maneiras:
 * (https://www.adobe.com);
 * [https://www.adobe.com];
 * {https://www.adobe.com};
