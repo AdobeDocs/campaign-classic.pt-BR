@@ -7,15 +7,15 @@ content-type: reference
 topic-tags: sending-messages-on-mobiles
 exl-id: 94aa4628-d973-433d-b963-b078e2d6672b
 source-git-commit: a129f49d4f045433899fd7fdbd057fb16d0ed36a
-workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+workflow-type: ht
+source-wordcount: '432'
+ht-degree: 100%
 
 ---
 
 # Criar uma entrega de SMS {#creating-a-sms-delivery}
 
-## Selecionar o canal de delivery {#selecting-the-delivery-channel}
+## Selecionar o canal de entrega {#selecting-the-delivery-channel}
 
 Para criar um novo delivery de SMS, siga as etapas abaixo:
 
@@ -31,7 +31,7 @@ Para criar um novo delivery de SMS, siga as etapas abaixo:
 1. Identifique o delivery com um rótulo, código e descrição. Para obter mais informações, consulte [esta seção](steps-create-and-identify-the-delivery.md#identifying-the-delivery).
 1. Clique em **[!UICONTROL Continue]** para confirmar essas informações e exibir a janela de configuração de mensagem.
 
-## Defina o conteúdo do SMS {#defining-the-sms-content}
+## Definir o conteúdo do SMS {#defining-the-sms-content}
 
 Para criar o conteúdo do SMS, siga as etapas abaixo:
 
@@ -63,7 +63,7 @@ Para criar o conteúdo do SMS, siga as etapas abaixo:
 
 1. Se você usar o conector NetSize ou um conector SMPP, é possível personalizar o nome do remetente do delivery. Para obter mais informações, consulte a seção [Advanced parameters](#advanced-parameters).
 
-## Selecionar a população do target {#selecting-the-target-population}
+## Selecionar o público-alvo {#selecting-the-target-population}
 
 O processo detalhado ao selecionar a população do target de um delivery é apresentado [nesta seção](steps-defining-the-target-population.md).
 
