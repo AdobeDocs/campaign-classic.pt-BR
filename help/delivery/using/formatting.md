@@ -7,23 +7,23 @@ content-type: reference
 topic-tags: content-management
 exl-id: d9688dc4-20c6-4a9a-990f-465f39b2faa2
 source-git-commit: a129f49d4f045433899fd7fdbd057fb16d0ed36a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1447'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
 # Formatação{#formatting}
 
-## Templates JavaScript {#javascript-templates}
+## Modelos JavaScript {#javascript-templates}
 
 Um template JavaScript é um documento HTML ou texto que inclui código JavaScript. Ele é criado da mesma forma que um conteúdo de email em uma ação de delivery.
 
-### Identificação de um template JavaScript {#identification-of-a-javascript-template}
+### Identificação de um modelo JavaScript {#identification-of-a-javascript-template}
 
 Um template JavaScript é identificado por seu nome e namespace como schemas e formulários. No entanto, é recomendável adicionar a opção **.js** ao nome do template.
 
-### Estrutura de um template JavaScript {#structure-of-a-javascript-template}
+### Estrutura de um modelo JavaScript {#structure-of-a-javascript-template}
 
 Exemplo de um template de formatação HTML de JavaScript baseado no schema &quot;cus:book&quot;:
 
@@ -155,7 +155,7 @@ Exemplos:
    <%= recipient.@lastName %>
    ```
 
-### Inclusão de um template JavaScript {#including-a-javascript-template}
+### Inclusão de um modelo JavaScript {#including-a-javascript-template}
 
 É possível constituir uma biblioteca de funções ou variáveis para uso posterior. Para fazer isso, importe o template JavaScript com a função **eval.** Isso permite enriquecer contextos com funções adicionais declaradas em outros templates JavaScript.
 
@@ -165,7 +165,7 @@ Exemplos:
 <% eval(xtk.javascript.get("cus:common.js").data);  %>
 ```
 
-### Edição de um template JavaScript {#editing-a-javascript-template}
+### Edição de um modelo JavaScript {#editing-a-javascript-template}
 
 A zona de edição permite que você preencha o conteúdo do template JavaScript:
 
@@ -183,7 +183,7 @@ Para gerar a pré-visualização do documento de saída a qualquer momento, sele
 >
 >Não é necessário salvar as alterações para visualizar o documento de saída.
 
-### Exemplo de como criar e usar um template JavaScript {#example-of-how-to-create-and-use-a-javascript-template}
+### Exemplo de como criar e usar um modelo JavaScript {#example-of-how-to-create-and-use-a-javascript-template}
 
 Abaixo você encontrará a configuração necessária para implementar a seguinte gestão de conteúdo usando um template JavaScript:
 
@@ -499,7 +499,7 @@ A diretiva **`<xsl:include>`** indica o nome da folha de estilos a ser incluída
 
 ### Edição de uma folha de estilos {#editing-a-stylesheet}
 
-A zona de edição permite que você preencha o conteúdo da folha de estilos:
+A zona de edição permite preencher o conteúdo da folha de estilos:
 
 ![](assets/d_ncs_content_form14.png)
 
@@ -511,7 +511,7 @@ Para gerar uma pré-visualização do documento de saída a qualquer momento, se
 >
 >Não há necessidade de salvar as alterações na folha de estilos para exibir a pré-visualização do documento de saída.
 
-## Gestão de imagens {#image-management}
+## Gerenciamento de imagens {#image-management}
 
 ### Referência de imagem {#image-referencing}
 
@@ -538,7 +538,7 @@ Exemplo de como usar a opção de colocação de imagem e seu uso com uma imagem
 >
 >Recomendamos declarar uma variável contendo a referência do servidor onde as imagens são armazenadas (&quot;resPath&quot; em nosso exemplo).
 
-### Uso de recursos públicos {#using-public-resources}
+### Utilização de recursos públicos {#using-public-resources}
 
 Também é possível usar **[!UICONTROL Public resources]** para declarar imagens e carregá-las no servidor, dependendo das configurações de instância inseridas no assistente de implantação.
 
@@ -564,9 +564,9 @@ No formulário, o campo para selecionar a imagem será adicionado através da se
 
 ## Exibição de data {#date-display}
 
-No documento de entrada XML, as datas são armazenadas no formato XML interno: **AAAA/MM/DD HH:MM:SS** (exemplo 2018/10/01 12:23:30).
+No documento de entrada XML, as datas são armazenadas no formato XML interno: **YYYY/MM/DD HH:MM:SS** (exemplo: 2018/10/01 12:23:30).
 
-O Adobe Campaign fornece funções de formatação de data para os templates JavaScript e folhas de estilos XSL detalhadas abaixo.
+O Adobe Campaign fornece funções de formatação de data para os modelos JavaScript e folhas de estilos XSL detalhadas abaixo.
 
 ### Formatação de data JavaScript {#javascript-date-formatting}
 
