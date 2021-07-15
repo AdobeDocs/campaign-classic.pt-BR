@@ -7,13 +7,13 @@ content-type: reference
 topic-tags: sending-messages-on-mobiles
 exl-id: 442672ee-5037-49b7-a06f-3a99920ce2b6
 source-git-commit: a129f49d4f045433899fd7fdbd057fb16d0ed36a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '958'
 ht-degree: 100%
 
 ---
 
-# Enviar, monitorar e rastrear deliveries de SMS{#sms-properties}
+# Enviar, monitorar e rastrear entregas de SMS{#sms-properties}
 
 ## Enviar mensagens SMS {#sending-sms-messages}
 
@@ -82,7 +82,7 @@ O módulo de **sms nlserver** consulta o roteador SMS em intervalos regulares. I
 
    Consulte a guia [Workflows](../../workflow/using/architecture.md) .
 
-## Schema InSMS {#insms-schema}
+## Esquema InSMS {#insms-schema}
 
 O schema InSMS contém informações relevantes para o SMS de entrada. Uma descrição desses campos está disponível por meio do atributo desc.
 
