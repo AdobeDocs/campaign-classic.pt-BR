@@ -10,7 +10,7 @@ exl-id: 5bd12f65-f468-41ab-bbae-e59a6592a803
 source-git-commit: 6c28e6cd78ce7a8ee5c0dc7e671de780787b9f57
 workflow-type: tm+mt
 source-wordcount: '1551'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -43,7 +43,7 @@ Os campos de ação para cada ferramenta são os seguintes:
    1. recupera e analisa segmentos,
    1. e dispara uma campanha de re-marketing.
 
-## Como configurar a integração {#setting-up-the-integration}
+## Configuração da integração {#setting-up-the-integration}
 
 Para configurar o Data Connector, você deve se conectar à instância do Adobe Campaign e executar as seguintes operações:
 
@@ -202,7 +202,7 @@ Para obter mais informações, consulte a página [Perfis de produto do Adobe An
 >
 >Se estiver usando várias ferramentas de medição de público, você pode selecionar **[!UICONTROL Other]** na lista suspensa **[!UICONTROL Partners]** ao criar a conta externa. Você só pode fazer referência a uma conta externa nas propriedades de entrega: será necessário adaptar a fórmula de URLs rastreadas adicionando os parâmetros esperados pela Adobe e todas as outras ferramentas de medição usadas.
 
-### Workflows técnicos de processos de análise da web {#technical-workflows-of-web-analytics-processes}
+### Fluxos de trabalho técnicos de processos de análise da Web {#technical-workflows-of-web-analytics-processes}
 
 A troca de dados entre o Adobe Campaign e o Adobe Analytics é feita por quatro workflows técnicos que são executados como uma tarefa no plano de fundo.
 
@@ -247,7 +247,7 @@ Eles estão disponíveis na árvore do Adobe Campaign, na pasta **[!UICONTROL Ad
 
 
 
-## Rastreamento de deliveries no Adobe Campaign {#tracking-deliveries-in-adobe-campaign}
+## Rastreamento de entregas no Adobe Campaign {#tracking-deliveries-in-adobe-campaign}
 
 Para que a Adobe Experience Cloud possa rastrear a atividade nos sites, depois que o Adobe Campaign enviou o delivery, é necessário fazer referência ao conector correspondente nas propriedades de delivery. Para fazer isso, siga as etapas abaixo:
 
@@ -260,9 +260,9 @@ Para que a Adobe Experience Cloud possa rastrear a atividade nos sites, depois q
 
    ![](assets/webanalytics_delivery_properties_002.png)
 
-1. Agora você pode enviar o delivery e acessar o relatório no Adobe Analytics.
+1. Agora você pode enviar a entrega e acessar o respectivo relatório no Adobe Analytics.
 
-## Criação de uma campanha de re-marketing {#creating-a-re-marketing-campaign}
+## Criação de uma campanha de remarketing {#creating-a-re-marketing-campaign}
 
 Para preparar sua campanha de re-marketing, basta criar templates do delivery para campanhas do tipo re-marketing. Em seguida, configure sua campanha de re-marketing e a vincule a um segmento. Cada segmento deve ter uma campanha de re-marketing diferente.
 
