@@ -6,15 +6,15 @@ audience: integrations
 content-type: reference
 exl-id: 2d214c36-8429-4b2b-b1f5-fe2730581bba
 source-git-commit: cf102a5e669ffe136e6ec2429343725ec6c3722e
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '914'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
 # Configuração de pipeline {#configuring-pipeline}
 
-Parâmetros de autenticação, como ID do cliente, chave privada e ponto de entrada de autenticação, são configurados nos arquivos de configuração da instância.
+Parâmetros de autenticação, como ID do cliente, chave privada e endpoint de autenticação, são configurados nos arquivos de configuração da instância.
 A lista de acionadores que serão processados é configurada em uma opção em formato JSON.
 Os acionadores são usados para segmentação por um workflow de campanha que envia emails. A campanha é configurada para que um cliente que tenha ambos os eventos de acionador receba um email.
 
@@ -26,7 +26,7 @@ Os acionadores são usados para segmentação por um workflow de campanha que en
 
 Antes de iniciar esta configuração, verifique se você está usando:
 
-* No mínimo, uma das seguintes criações do Adobe Campaign:
+* No mínimo, uma das seguintes builds do Adobe Campaign:
    * 19.1.8.9039
    * 19.1.4.9032.GS.11
    * 20.2.4.9187
@@ -110,7 +110,7 @@ O parâmetro **consumidor** identifica a instância como um desses consumidores.
 
 O serviço de pipeline rastreia as mensagens recuperadas por cada consumidor. Usar consumidores diferentes para instâncias diferentes permite que você se certifique de que cada mensagem seja enviada para cada instância.
 
-### Recomendações da opção pipeline {#pipeline-option-recommendation}
+### Recomendações da opção de pipeline {#pipeline-option-recommendation}
 
 Para configurar a opção Pipeline, siga estas recomendações:
 
