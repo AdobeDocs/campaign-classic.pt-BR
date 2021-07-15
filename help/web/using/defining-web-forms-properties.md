@@ -7,9 +7,9 @@ content-type: reference
 topic-tags: web-forms
 exl-id: 37aaaa03-0656-4a9b-bcae-74de33e3737b
 source-git-commit: 360fd1ed8970c17c0687eaca0a4c1960d6f5838c
-workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+workflow-type: ht
+source-wordcount: '1205'
+ht-degree: 100%
 
 ---
 
@@ -31,9 +31,9 @@ O template de formulário é escolhido durante a criação do formulário. Ele n
 
 ## Armazenamento de dados do formulário {#form-data-storage}
 
-Por padrão, os campos de formulários web são armazenados na tabela de recipients. Você pode alterar a tabela usada selecionando uma nova tabela no campo **[!UICONTROL Document type]**. O ícone **[!UICONTROL Zoom]** permite visualizar o conteúdo da tabela selecionada.
+Por padrão, os campos de formulários Web são armazenados na tabela de recipients. Você pode alterar a tabela usada selecionando uma nova tabela no campo **[!UICONTROL Document type]**. O ícone **[!UICONTROL Zoom]** permite visualizar o conteúdo da tabela selecionada.
 
-Por padrão, as respostas são armazenadas na tabela **Answer to a recipient form**.
+Por padrão, as respostas são armazenadas na tabela **Formulário de resposta de um recipient**.
 
 ## Configuração de uma página de erro {#setting-up-an-error-page}
 
@@ -53,7 +53,7 @@ O conteúdo das cadeias de caracteres exibidas é definido na guia **[!UICONTROL
 
 A guia **[!UICONTROL Localization]** permite selecionar os idiomas de design e exibição para o formulário web.
 
-Consulte [Tradução de um formulário web](translating-a-web-form.md).
+Consulte [Tradução de um formulário Web](translating-a-web-form.md).
 
 ## Navegação e renderização de formulários {#form-browsing-and-rendering}
 
@@ -119,7 +119,7 @@ A opção **[!UICONTROL Use a specific account]** permite limitar a permissão d
 
 ![](assets/s_ncs_admin_survey_access_op_select.png)
 
-## Parâmetros da URL do formulário {#form-url-parameters}
+## Parâmetros de URL do formulário {#form-url-parameters}
 
 É possível incluir parâmetros adicionais na URL de um formulário para personalizar seu conteúdo e inicializar um contexto (idioma, ID do recipient criptografada, empresa, fórmula calculada armazenada em uma variável, etc.). Isso permite que você dê acesso a um formulário por meio de várias URLs diferentes e personalize o conteúdo da página com base no valor do(s) parâmetro(s) indicado(s) na URL.
 
