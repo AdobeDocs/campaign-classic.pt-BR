@@ -7,7 +7,7 @@ content-type: reference
 topic-tags: web-forms
 exl-id: 72959141-ca18-4512-80c7-239efd31f711
 source-git-commit: 360fd1ed8970c17c0687eaca0a4c1960d6f5838c
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1565'
 ht-degree: 100%
 
@@ -29,7 +29,7 @@ O idioma padrão é o idioma em que a aplicação web será exibida se nenhuma c
 >
 >Por padrão, o idioma de edição e o idioma padrão são iguais ao idioma do console.
 
-## Escolhendo idiomas {#choosing-languages}
+## Escolha de idiomas {#choosing-languages}
 
 Para definir um ou mais idiomas de tradução, clique no botão **[!UICONTROL Properties]** do aplicativo web e, em seguida, na guia **[!UICONTROL Localization]**. Clique no botão **[!UICONTROL Add]** para definir um novo idioma de tradução para a aplicação web.
 
@@ -45,7 +45,7 @@ O Adobe Campaign inclui uma ferramenta para traduzir e gerenciar traduções em 
 
 ## Gerenciamento de traduções no editor {#managing-translations-in-the-editor}
 
-### Coleta das cadeias de caracteres de texto {#collecting-strings}
+### Coleta de cadeias de caracteres {#collecting-strings}
 
 A guia **[!UICONTROL Translations]** permite inserir traduções para as cadeias de caracteres que compõem a aplicação web.
 
@@ -67,7 +67,7 @@ Quando o processo de coleta detecta que uma tradução já existe, essa convers�
 
 Para cadeias de caracteres que nunca foram traduzidas, o campo **[!UICONTROL Text]** fica vazio e o status é **[!UICONTROL To translate]**.
 
-### Filtro das cadeias de caracteres {#filtering-strings}
+### Filtragem de cadeias de caracteres {#filtering-strings}
 
 Por padrão, cada idioma de tradução da aplicação Web é exibido. Há dois filtros padrão: idioma e status. Clique no botão **[!UICONTROL Filters]** e, em seguida, clique em **[!UICONTROL By language or status]** para exibir as caixas suspensas correspondentes. Você também pode criar um filtro avançado. Para obter mais informações, consulte [esta página](../../platform/using/creating-filters.md#creating-an-advanced-filter).
 
@@ -77,7 +77,7 @@ Vá para a caixa suspensa **[!UICONTROL Language]** para selecionar o idioma de 
 
 Para exibir somente strings não traduzidas, selecione **[!UICONTROL To translate]** na caixa suspensa **[!UICONTROL Status]**. Também é possível exibir somente cadeias de caracteres traduzidas ou aprovadas.
 
-### Tradução das cadeias de caracteres {#translating-strings}
+### Tradução de cadeias de caracteres {#translating-strings}
 
 1. Para traduzir uma palavra, clique duas vezes na sua linha na lista de cadeias de caracteres.
 
@@ -154,7 +154,7 @@ Uma vez concluída a conversão externa, você pode importar os arquivos traduzi
 >
 >As traduções externas sempre têm prioridade sobre as traduções internas. Em caso de conflitos, a conversão interna será substituída pela conversão externa.
 
-## Alteração do idioma de exibição dos formulários {#changing-forms-display-language}
+## Alteração de idioma de exibição de formulários {#changing-forms-display-language}
 
 Os formulários web são exibidos no idioma padrão especificado na guia **[!UICONTROL Localization]** das propriedades da aplicação web. Para alterar idiomas, você deve adicionar os seguintes caracteres ao final da URL (onde **xx** é o símbolo do idioma):
 
@@ -410,7 +410,7 @@ Os idiomas e os dicionários de tradução disponíveis como padrão estão list
 >
 >Para adicionar outros idiomas além daqueles oferecidos por padrão, consulte [Adicionar um idioma de tradução](#adding-a-translation-language)
 
-## Exemplo: exibição de uma aplicação web em vários idiomas {#example--displaying-a-web-application-in-several-languages}
+## Exemplo: exibição de um aplicativo Web em vários idiomas {#example--displaying-a-web-application-in-several-languages}
 
 O formulário web a seguir está disponível em quatro idiomas: inglês, francês, alemão e espanhol. As cadeias de caracteres foram traduzidas por meio da guia **[!UICONTROL Translation]** do formulário web. Como o idioma padrão é inglês, quando a pesquisa é publicada, use a URL padrão para exibi-la em inglês.
 
@@ -435,9 +435,9 @@ Você pode adicionar **?lang=es** ou **=lang=de** para exibi-la em espanhol ou a
 
 >[!CAUTION]
 >
->Essa operação é reservada apenas para usuários especialistas.
+>Essa seção é reservada apenas a usuários especialistas.
 
-### Tradução das cadeias de caracteres do sistema {#translating-the-system-strings}
+### Tradução de cadeias de caracteres do sistema {#translating-the-system-strings}
 
 As cadeias de caracteres do sistema são cadeias de caracteres prontas para uso, utilizadas por todas as aplicações web. Por exemplo: botoes **[!UICONTROL Next]**, **[!UICONTROL Previous]**, **[!UICONTROL Approve]**, mensagens **[!UICONTROL Loading]** etc. Por padrão, alguns idiomas contêm um dicionário com traduções para essas strings. A lista de idiomas é detalhada em [Alteração do idioma de exibição dos formulários](#changing-forms-display-language).
 
