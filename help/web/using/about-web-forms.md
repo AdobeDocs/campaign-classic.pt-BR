@@ -7,13 +7,13 @@ content-type: reference
 topic-tags: web-forms
 exl-id: 63602bed-ace6-4632-a735-5d268a7d72d0
 source-git-commit: 360fd1ed8970c17c0687eaca0a4c1960d6f5838c
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '497'
 ht-degree: 100%
 
 ---
 
-# Introdução aos formulários web{#about-web-forms}
+# Introdução aos formulários Web{#about-web-forms}
 
 O Adobe Campaign integra um módulo gráfico para definir e publicar formulários web a fim de criar páginas contendo campos de entrada e seleção e que possam incluir dados no banco de dados. Isso permite a criação e publicação de páginas da Web onde os usuários podem visualizar ou inserir informações.
 
@@ -63,7 +63,7 @@ Para definir a configuração e o conteúdo do formulário Web, siga as etapas a
 
    Esta etapa está detalhada em [Tradução de um formulário web](translating-a-web-form.md).
 
-## Sobre o design do formulários web {#about-web-forms-designing}
+## Sobre o design de formulários Web {#about-web-forms-designing}
 
 As páginas do formulário são criadas por meio de um editor específico que permite definir e configurar as zonas de entrada (texto), campos de seleção (listas, caixas de seleção, etc.) e elementos estáticos (imagens, conteúdo HTLM, etc.). Elas podem ser agrupadas em contêineres e o layout pode ser alterado para atender às suas necessidades (para obter mais informações, consulte).[](defining-web-forms-layout.md#creating-containers)
 
@@ -78,6 +78,7 @@ As seções a seguir detalham como definir o conteúdo e o layout nas telas do f
 >
 >* Durante o design da página, é possível exibir a renderização final na guia **[!UICONTROL Preview]**. Para visualizar as alterações, salve o formulário primeiro. Todos os erros são exibidos na guia **[!UICONTROL Log]**.
 >* Para garantir que a exibição da página e o armazenamento de informações ocorram na sequência apropriada, habilite o modo de depuração no formulário Web. Para fazer isso, vá para a subguia **[!UICONTROL Preview]** e marque a caixa **[!UICONTROL Enable debug mode]**: todas as informações coletadas e possíveis erros de execução são exibidos na parte inferior de cada página.
+
 >
 
 
