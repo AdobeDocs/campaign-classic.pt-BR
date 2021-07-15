@@ -1,13 +1,13 @@
 ---
 product: campaign
 title: Perguntas frequentes sobre relatórios
-description: Perguntas frequentes sobre o Adobe Campaign Classic
+description: Perguntas frequentes sobre o Campaign Classic
 audience: platform
 content-type: reference
 topic-tags: starting-with-adobe-campaign
 exl-id: b29340a0-954d-41e4-b0a3-9d356e4dc753
 source-git-commit: ee3d643e4ba607b3d7ca816eabf862b867d1f3f4
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '317'
 ht-degree: 100%
 
@@ -23,7 +23,7 @@ O Adobe Campaign não é uma ferramenta de relatório especializada: os relatór
 
 [Clique aqui para saber mais](../../reporting/using/about-adobe-campaign-reporting-tools.md) sobre os recursos de relatórios do Campaign.
 
-## Como posso criar e compartilhar relatórios de estatística em populações? {#how-can-i-design-and-share-statistic-reports-on-populations-}
+## Como posso criar e compartilhar relatórios de estatística sobre populações? {#how-can-i-design-and-share-statistic-reports-on-populations-}
 
 Os [relatórios de análise descritiva](../../reporting/using/about-descriptive-analysis.md) do Adobe Campaign permitem que você crie e compartilhe relatórios de estatísticas sobre as suas populações, [explore o público de um boletim informativo](../../reporting/using/use-cases.md#analyzing-a-population) ou [crie um relatório sobre a população de uma transição de fluxo de trabalho](../../reporting/using/use-cases.md#analyzing-a-transition-target-in-a-workflow). É possível também, por exemplo, [analisar a taxa de reatividade dos destinatários do boletim informativo](../../reporting/using/use-cases.md#analyzing-recipient-tracking-logs).
 
@@ -43,9 +43,9 @@ Depois que tiverem sido criados e configurados, os cubos serão usados em caixas
 
 Saiba como [explorar seus dados](../../reporting/using/using-cubes-to-explore-data.md) com cubos.
 
-## Posso criar um relatório de respostas a uma pesquisa on-line? {#can-i-create-a-report-from-answers-to-an-online-survey-}
+## Posso criar um relatório com base em respostas a uma pesquisa online? {#can-i-create-a-report-from-answers-to-an-online-survey-}
 
-Leia [este caso de uso](../../surveys/using/use-case--displaying-report-on-answers-to-an-online-survey.md) para saber como criar um relatório para exibir respostas a uma pesquisa on-line.
+Leia [este caso de uso](../../surveys/using/use-case--displaying-report-on-answers-to-an-online-survey.md) para saber como criar um relatório para exibir respostas a uma pesquisa online.
 
 ## Como posso compartilhar o acesso ao meu relatório na interface do Campaign? {#how-can-i-share-access-to-my-report}
 
