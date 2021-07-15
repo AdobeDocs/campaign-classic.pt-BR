@@ -7,7 +7,7 @@ content-type: reference
 topic-tags: about-deliveries-and-channels
 exl-id: d0ed7be7-3147-4cb8-9ce7-ea51602e9048
 source-git-commit: a129f49d4f045433899fd7fdbd057fb16d0ed36a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1599'
 ht-degree: 100%
 
@@ -24,7 +24,7 @@ Para cada delivery, você poderá definir vários tipos de populações do targe
 * **Seed addresses**: recipients que estão fora do target do delivery, mas receberão o delivery (somente no contexto de uma campanha de marketing). [Saiba mais](about-seed-addresses.md)
 * **Grupos de controle**: população que não receberá o delivery, usado para rastrear o comportamento e o impacto da campanha (somente no contexto de uma campanha de marketing). [Saiba mais](../../campaign/using/marketing-campaign-target.md#defining-a-control-group).
 
-## Selecionar os principais recipients do delivery {#selecting-the-main-target}
+## Seleção dos principais recipients da entrega {#selecting-the-main-target}
 
 Na maioria dos casos, o público-alvo principal é extraído do banco de dados do Adobe Campaign (modo padrão). No entanto, os recipients também podem ser armazenados em um arquivo externo. Saiba mais [nesta seção](steps-defining-the-target-population.md#selecting-external-recipients).
 
@@ -85,7 +85,7 @@ Para selecionar os recipients do delivery, siga as etapas abaixo:
 
    ![](assets/s_ncs_user_wizard_email02h.png)
 
-### Selecionando recipients externos {#selecting-external-recipients}
+### Seleção de recipients externos {#selecting-external-recipients}
 
 Você poderá iniciar um delivery nos recipients que não estão salvos no banco de dados, mas armazenados em um arquivo externo. Por exemplo, enviaremos aqui um delivery para os recipients importados de um arquivo de texto.
 
@@ -108,9 +108,9 @@ Para fazer isso:
 
 >[!CAUTION]
 >
->Ao definir o conteúdo da mensagem para delivery de email, não inclua o link para a página espelho; ele não poderá ser gerado nesse modo de delivery.
+>Ao definir o conteúdo da mensagem para entrega de email, não inclua o link para a mirror page; ele não poderá ser gerado nesse modo de entrega.
 
-### Definir configurações de exclusão {#customizing-exclusion-settings}
+### Definição de configurações de exclusão {#customizing-exclusion-settings}
 
 Os erros de endereço e as classificações de qualidade são fornecidos pelo provedor de serviços (IAP). Essas informações são atualizadas automaticamente no perfil do recipient após as ações de delivery e com arquivos retornados por provedores de serviços. Ele pode ser exibido no perfil somente como leitura.
 
@@ -156,11 +156,11 @@ As seguintes opções estão disponíveis:
 
 ### Redução do tamanho da população do target {#reducing-the-size-of-the-target-population}
 
-Você poderá reduzir o tamanho da população do target. Para fazer isso, especifique o número de recipients a serem exportados no campo **[!UICONTROL Requested quantity]**.
+É possível reduzir o tamanho da população do target. Para fazer isso, especifique o número de recipients a serem exportados no campo **[!UICONTROL Requested quantity]**.
 
 ![](assets/s_ncs_user_edit_del_exe_tab.png)
 
-## Selecionar os recipients das mensagens de prova {#selecting-the-proof-target}
+## Seleção dos recipients das mensagens de prova {#selecting-the-proof-target}
 
 A prova é uma mensagem especial que permite testar um delivery antes de enviá-lo para o target principal. Os recipients de prova são responsáveis pela aprovação do formulário e do conteúdo da mensagem.
 
@@ -187,7 +187,7 @@ Selecione essa opção para escolher os recipients usando o botão **[!UICONTROL
 
 Para saber mais sobre o envio de prova, consulte [esta seção](steps-validating-the-delivery.md#sending-a-proof).
 
-### Usar substituição de endereço na prova {#using-address-substitution-in-proof}
+### Utilização de substituição de endereço na prova {#using-address-substitution-in-proof}
 
 Em vez de selecionar recipients dedicados no banco de dados, você poderá usar a opção **[!UICONTROL Substitution of the address]**.
 
@@ -209,9 +209,9 @@ A configuração é executada da seguinte maneira:
 
    ![](assets/s_ncs_user_wizard_email_bat_substitute_select.png)
 
-   Você poderá definir quantos endereços de substituição forem necessários.
+   É possível definir quantos endereços de substituição forem necessários.
 
-## Utilizando seed addresses como prova {#using-seed-addresses-as-proof}
+## Utilização de seed addresses como prova {#using-seed-addresses-as-proof}
 
 Você poderá usar **[!UICONTROL Seed addresses]** como target das provas: essa opção permite usar ou importar uma lista de seed addresses existente.
 
