@@ -7,23 +7,23 @@ content-type: reference
 topic-tags: web-applications
 exl-id: dcdf6afc-321e-4027-a350-fff6bbf22e71
 source-git-commit: 360fd1ed8970c17c0687eaca0a4c1960d6f5838c
-workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+workflow-type: ht
+source-wordcount: '256'
+ht-degree: 100%
 
 ---
 
 # Criar um aplicativo web{#designing-a-web-application}
 
-As aplicações web são criadas e gerenciadas de acordo com o mesmo princípio de [formulários web](about-web-forms.md).
+Os aplicativos Web são criados e gerenciados de acordo com o mesmo princípio que [formulários Web](about-web-forms.md).
 
 >[!CAUTION]
 >
->Use a subguia **[!UICONTROL Preview]** para verificar erros durante o design do aplicativo Web.
+>Use a subguia **[!UICONTROL Preview]** para verificar erros durante a criação do aplicativo web.
 >
->Até que a aplicação web seja publicada, as alterações não serão expostas aos usuários finais.
+>Até que o aplicativo web seja publicado, as alterações não serão expostas aos usuários finais.
 
-## Inserção de gráficos em uma aplicação web {#inserting-charts-in-a-web-application}
+## Inserção de gráficos em um aplicativo web {#inserting-charts-in-a-web-application}
 
 Você pode incluir gráficos em aplicações web. Para fazer isso, use a lista suspensa de gráficos na barra de tarefas para selecionar o tipo de gráfico a ser inserido.
 
@@ -33,7 +33,7 @@ Você pode incluir gráficos em aplicações web. Para fazer isso, use a lista s
 
 ![](assets/s_ncs_admin_webapps_graph.png)
 
-## Inserção de tabelas em uma aplicação web {#inserting-tables-in-a-web-application}
+## Inserção de tabelas em um aplicativo web {#inserting-tables-in-a-web-application}
 
 Para adicionar uma tabela, use a lista suspensa de tabelas na barra de tarefas para selecionar o tipo de tabela a ser usada.
 
@@ -43,7 +43,7 @@ Você também pode selecionar o tipo de tabela no menu suspenso.
 
 ![](assets/s_ncs_admin_webapps_table.png)
 
-## Aplicações web tipo Visão geral {#overview-type-web-applications}
+## Aplicativos Web do tipo Visão geral {#overview-type-web-applications}
 
 A interface do Adobe Campaign usa muitas aplicações web para acessar, gerenciar e interagir com recipients, deliveries, campanhas, estoques, etc.
 
