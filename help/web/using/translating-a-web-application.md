@@ -7,7 +7,7 @@ content-type: reference
 topic-tags: web-applications
 exl-id: 82c5c610-8161-4686-aa79-1b690e763765
 source-git-commit: 360fd1ed8970c17c0687eaca0a4c1960d6f5838c
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '363'
 ht-degree: 100%
 
@@ -15,7 +15,7 @@ ht-degree: 100%
 
 # Tradução de uma aplicação web{#translating-a-web-application}
 
-É possível traduzir páginas de aplicações web criadas com o editor de conteúdo digital do Adobe Campaign (DCE).
+É possível traduzir páginas de aplicativos Web criados com o editor de conteúdo digital (DCE) do Adobe Campaign.
 
 Se você selecionar pelo menos um idioma adicional pela guia **[!UICONTROL Localization]** nas **[!UICONTROL Properties]** de uma aplicação web, uma nova opção ficará disponível ao adicionar um bloco de conteúdo HTML em uma página editada com o DCE.
 
