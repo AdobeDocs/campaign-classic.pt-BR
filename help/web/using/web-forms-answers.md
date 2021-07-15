@@ -7,7 +7,7 @@ content-type: reference
 topic-tags: web-forms
 exl-id: 5d48bb27-1884-47f1-acb7-dff5113565bc
 source-git-commit: 360fd1ed8970c17c0687eaca0a4c1960d6f5838c
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '860'
 ht-degree: 100%
 
@@ -15,7 +15,7 @@ ht-degree: 100%
 
 # Respostas dos formulários web{#web-forms-answers}
 
-## Campos de armazenamento de resposta {#response-storage-fields}
+## Campos de armazenamento de respostas {#response-storage-fields}
 
 As respostas a formulários podem ser salvas em um campo do banco de dados ou temporariamente em uma variável local. O modo de armazenamento para respostas é escolhido durante a criação do campo. Ele pode ser editado por meio do link **[!UICONTROL Edit storage...]**.
 
@@ -81,7 +81,7 @@ Isso significa que, se o usuário selecionar um veículo comercial, o formulári
 
 ![](assets/s_ncs_admin_survey_no_storage_condb.png)
 
-## Uso das informações coletadas {#using-collected-information}
+## Utilização das informações coletadas {#using-collected-information}
 
 Para cada formulário, as respostas fornecidas podem ser reutilizadas nos campos ou nos rótulos. As seguintes sintaxes devem ser usadas:
 
@@ -107,7 +107,7 @@ Para cada formulário, as respostas fornecidas podem ser reutilizadas nos campos
    >
    >Diferentemente dos outros campos para os quais os `<%=` caracteres são substituídos por caracteres de escape, o conteúdo HTML é salvo como está, usando a sintaxe `<%==`.
 
-## Salvamento das respostas dos formulários web {#saving-web-forms-answers}
+## Salvamento das respostas de formulários Web {#saving-web-forms-answers}
 
 Para salvar as informações coletadas nas páginas de um formulário, você precisa colocar uma caixa de armazenamento no diagrama.
 
