@@ -7,9 +7,9 @@ content-type: reference
 topic-tags: a-b-testing
 exl-id: 4143d1b7-0e2b-4672-ad57-e4d7f8fea028
 source-git-commit: 895aa2fd4fa9c7c71c0073e9be33c12d4e92c9fa
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '330'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -19,7 +19,7 @@ A escolha do conteúdo de delivery destinado à população restante é calculad
 
 ## Exemplo de um script {#example-of-a-script}
 
-O script a seguir pode ser usado no workflow para construção do target. Para obter mais informações, consulte [esta seção](#implementation).
+O script a seguir pode ser usado no fluxo de trabalho de direcionamento. Para obter mais informações, consulte [esta seção](#implementation).
 
 ```
  // query the database to find the winner (best open rate)
@@ -83,7 +83,7 @@ Para verificar uma explicação detalhada do script, consulte [esta seção](#de
    ![](assets/use_case_abtesting_configscript_003.png)
 
 1. Feche a atividade **[!UICONTROL JavaScript code]**.
-1. Salve seu workflow.
+1. Salve o fluxo de trabalho.
 
 ## Detalhes do script {#details-of-the-script}
 
@@ -168,4 +168,4 @@ O exemplo acima permite selecionar o conteúdo de uma delivery com base na taxa 
 * Taxa de cancelamento de subscrição mais baixa: `[indicators/@optOutRatio]`,
 * Valor da transação: `[indicators/@amount]`.
 
-Agora você pode definir o delivery final. [Saiba mais](a-b-testing-uc-final-delivery.md).
+Agora você pode definir a entrega final. [Saiba mais](a-b-testing-uc-final-delivery.md).
