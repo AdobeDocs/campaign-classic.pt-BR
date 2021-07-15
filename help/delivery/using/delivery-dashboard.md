@@ -7,9 +7,9 @@ content-type: reference
 topic-tags: monitoring-deliveries
 exl-id: 44ecc8c6-6584-43eb-96b4-7d8463053123
 source-git-commit: a129f49d4f045433899fd7fdbd057fb16d0ed36a
-workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+workflow-type: ht
+source-wordcount: '1173'
+ht-degree: 100%
 
 ---
 
@@ -21,10 +21,10 @@ Ele permite recuperar informações sobre um delivery e editá-las, se necessár
 
 Estas são as informações que você pode monitorar usando as várias guias disponíveis no painel:
 
-* [Resumo de delivery](#delivery-summary)
-* [Relatórios do delivery](#delivery-reports)
+* [Resumo da entrega](#delivery-summary)
+* [Relatórios de entrega](#delivery-reports)
 * [Logs do delivery, mirror pages, exclusões](#delivery-logs-and-history)
-* [Histórico e logs de rastreamento do delivery](#tracking-logs)
+* [Histórico e logs de rastreamento da entrega](#tracking-logs)
 * [Renderização de delivery](#delivery-rendering)
 * [Auditoria de delivery](#delivery-audit-)
 
@@ -37,11 +37,11 @@ Estas são as informações que você pode monitorar usando as várias guias dis
 * [Práticas recomendadas de delivery](delivery-best-practices.md)
 * [Gerenciamento da capacidade de delivery](about-deliverability.md)
 
-## Resumo de delivery {#delivery-summary}
+## Resumo da entrega {#delivery-summary}
 
-A guia **[!UICONTROL Summary]** contém as características do delivery: status do delivery, canal usado, informações sobre o remetente, assunto, informações relacionadas à execução.
+A guia **[!UICONTROL Summary]** contém as características da entrega: status da entrega, canal usado, informações sobre o remetente, assunto, informações relacionadas à execução.
 
-## Relatórios do delivery {#delivery-reports}
+## Relatórios de entrega {#delivery-reports}
 
 O link **[!UICONTROL Reports]**, acessível na guia **[!UICONTROL Summary]**, permite que você veja um conjunto de relatórios referentes à ação do delivery: relatório geral do delivery, relatório detalhado, relatório do delivery, distribuição de mensagens com falha, taxa de abertura, cliques e transações, etc.
 
@@ -49,7 +49,7 @@ O conteúdo dessa guia pode ser configurado de acordo com os requisitos. Para ob
 
 ![](assets/delivery-report.png)
 
-## Logs do delivery, histórico e exclusões {#delivery-logs-and-history}
+## Logs da entrega, histórico e exclusões {#delivery-logs-and-history}
 
 A guia **[!UICONTROL Delivery]** fornece um histórico das ocorrências neste delivery. Ela contém os logs de delivery, ou seja, a lista de mensagens enviadas e seus status, e as mensagens associadas.
 
@@ -67,7 +67,7 @@ A mirror page só está disponível para os deliveries para as quais o conteúdo
 
 ![](assets/s_ncs_user_wizard_miror_page_link.png)
 
-## Histórico e logs de rastreamento do delivery {#tracking-logs}
+## Histórico e logs de rastreamento da entrega {#tracking-logs}
 
 A guia **[!UICONTROL Tracking]** lista o histórico de rastreamento desse delivery. Esta guia exibe os dados de rastreamento das mensagens enviadas, ou seja, todas as URLs sujeitas ao rastreamento por meio do Adobe Campaign. Os dados de rastreamento são atualizados de hora em hora.
 
@@ -91,7 +91,7 @@ Para obter mais informações sobre renderização da Caixa de entrada, consulte
 
 ![](assets/s_tn_inbox_rendering_tokens.png)
 
-## Auditoria de delivery {#delivery-audit-}
+## Auditoria de entrega {#delivery-audit-}
 
 A guia **[!UICONTROL Audit]** contém o log de delivery e todas as mensagens relacionadas às provas.
 
@@ -105,7 +105,7 @@ A subguia **[!UICONTROL Proofs]** permite visualizar a lista de provas que foram
 
 Você pode modificar as informações exibidas nessa janela (e das guias **[!UICONTROL Delivery]** e **[!UICONTROL Tracking]**) selecionando as colunas a serem exibidas. Para fazer isso, clique no ícone **[!UICONTROL Configure list]** localizado no canto inferior direito. Para obter mais informações sobre a configuração de exibição de listas, consulte [esta seção](../../platform/using/adobe-campaign-workspace.md#configuring-lists).
 
-## Sincronização do painel de delivery {#delivery-dashboard-synchronization}
+## Sincronização do painel de entrega {#delivery-dashboard-synchronization}
 
 No painel de delivery, convêm verificar as mensagens processadas e os logs de deliveries para garantir que seu delivery foi enviado com êxito.
 
@@ -121,7 +121,7 @@ Alguns indicadores ou status podem estar incorretos ou não atualizados, isso po
 
 Você também pode rastrear seus deliveries com relatórios diferentes através do painel de delivery. Para obter mais informações, consulte esta [seção](../../reporting/using/delivery-reports.md).
 
-## Caso de uso: Adição de endereços IP dos remetentes aos logs {#use-case}
+## Caso de uso: adição de endereços IP dos remetentes aos logs {#use-case}
 
 Nesta seção, você verá como adicionar aos logs do delivery informações relacionadas ao endereço IP que enviou cada email em um delivery.
 
