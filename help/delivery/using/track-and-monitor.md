@@ -6,7 +6,7 @@ content-type: reference
 topic-tags: deliveries-best-practices
 exl-id: a039a288-2e7b-4f35-9885-ead3ed4347af
 source-git-commit: a129f49d4f045433899fd7fdbd057fb16d0ed36a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '430'
 ht-degree: 100%
 
@@ -16,7 +16,7 @@ ht-degree: 100%
 
 Você clicou no botão **Enviar**? Vamos ver o que acontece. Depois que o delivery é enviado, o Adobe Campaign permite acompanhar as mensagens enviadas e descobrir como os recipients reagem ao seu delivery. Isso o ajudará a melhorar o envio futuro e a otimizar as próximas campanhas.
 
-## Monitoramento de deliveries {#monitoring-deliveries}
+## Monitoramento de entregas {#monitoring-deliveries}
 
 Para controlar suas campanhas, você deve garantir que a mensagem tenha sido entregue aos recipients.
 
@@ -37,13 +37,13 @@ Dica: verifique a configuração do gerenciamento de tráfego (afinidade IP). Pa
 
 ## Rastreamento {#tracking-deliveries}
 
-Para conhecer melhor o comportamento dos recipients, você pode acompanhar como eles reagem a um delivery: recebimento, abertura, cliques em links, assinaturas canceladas, etc. No Campaign Classic, essas informações são exibidas na guia Rastreamento dos recipients direcionados pela entrega e na guia Rastreamento da entrega.
+Para conhecer melhor o comportamento dos recipients, você pode acompanhar como eles reagem a uma entrega: recebimento, abertura, cliques em links, assinaturas canceladas etc. No Campaign Classic, essas informações são exibidas na guia Rastreamento dos recipients direcionados pela entrega e na guia Rastreamento da entrega.
 
 **Dica**: o rastreamento de mensagens é habilitado por padrão. Para configurar URLs, selecione a opção Exibir URLs na seção inferior do assistente do delivery. Para cada URL da mensagem, você pode escolher se deseja ativar o rastreamento.
 
 Para obter mais informações, consulte a seção [Configuração de rastreamento](how-to-configure-tracked-links.md) e a descrição dos [Indicadores de rastreamento](../../reporting/using/delivery-reports.md#tracking-indicators).
 
-## Desempenho do delivery {#delivery-performances}
+## Desempenho da entrega {#delivery-performances}
 
 É possível controlar a taxa de transferência do delivery para medir a velocidade de delivery de cada mensagem. Os critérios são o número de mensagens enviadas por hora e o tamanho das mensagens (em bits por segundo). Para obter mais informações, consulte [Taxa de transferência de delivery](../../reporting/using/global-reports.md#delivery-throughput).
 
@@ -57,7 +57,7 @@ Para obter mais informações, consulte a seção [Configuração de rastreament
 
 ## Solução de problemas de entrega {#delivery-troubleshooting}
 
-Ações específicas podem ser executadas para a resolução de problemas com deliveries:
+Ações específicas podem ser executadas para a resolução de problemas de entregas:
 
 * [Problemas na capacidade de delivery](../../production/using/performance-and-throughput-issues.md#deliverability_issues)
 
