@@ -6,7 +6,7 @@ content-type: reference
 topic-tags: deliveries-best-practices
 exl-id: 50d326b0-3c23-4dbf-9df6-d32b48e30f69
 source-git-commit: a129f49d4f045433899fd7fdbd057fb16d0ed36a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '861'
 ht-degree: 100%
 
@@ -18,7 +18,7 @@ Quando a mensagem estiver pronta, certifique-se de que seu conteúdo está sendo
 
 Antes de enviar a mensagem, verifique também se os parâmetros e a configuração estão consistentes com o delivery.
 
-## Por que a validação é a chave {#validation-is-key}
+## Importância da validação {#validation-is-key}
 
 Antes de enviar um delivery, você precisa garantir que seus recipients receberão a mensagem que você realmente deseja enviar. Para fazer isso é necessário validar o conteúdo da mensagem e os parâmetros do delivery.
 
@@ -44,7 +44,7 @@ O envio de provas permite a verificação do link de opção de não participaç
 
 Saiba mais [nesta seção](steps-validating-the-delivery.md#sending-a-proof).
 
-## Configurar deliveries de teste A/B {#a-b-testing-deliveries}
+## Configurar entregas de teste A/B {#a-b-testing-deliveries}
 
 Se você tiver vários conteúdos para um delivery de email, poderá usar o teste A/B para descobrir qual versão terá o maior impacto na população direcionada.
 
@@ -56,7 +56,7 @@ Se você tiver vários conteúdos para um delivery de email, poderá usar o test
 
 Saiba mais [nesta seção](get-started-a-b-testing.md).
 
-## Verifique se a mensagem foi entregue {#make-sure-your-message-is-delivered}
+## Verificar se a mensagem foi entregue {#make-sure-your-message-is-delivered}
 
 Como etapa final, maximize suas chances e aproveite o potencial do Adobe Campaign Classic para garantir que sua mensagem seja de fato entregue aos recipients relevantes.
 
