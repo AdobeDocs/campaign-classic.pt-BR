@@ -7,7 +7,7 @@ content-type: reference
 topic-tags: using-delivery-templates
 exl-id: 40a03e04-56c7-48c0-95b8-aa7bf1121048
 source-git-commit: a129f49d4f045433899fd7fdbd057fb16d0ed36a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '378'
 ht-degree: 100%
 
@@ -17,9 +17,9 @@ ht-degree: 100%
 
 ![](assets/do-not-localize/how-to-video.png) [Descubra este recurso no vídeo](#delivery-template-video)
 
-## Conversão de um delivery existente para um template {#converting-an-existing-delivery-to-a-template}
+## Conversão de uma entrega existente em um modelo {#converting-an-existing-delivery-to-a-template}
 
-Um delivery pode ser convertido em um template para novas ações de delivery repetidas. Para converter um delivery em um template, selecione-o na lista de delivery, acessível por meio do nó **[!UICONTROL Campaign management]** da árvore.
+Uma entrega pode ser convertida em um modelo para novas ações de entrega repetidas. Para converter um delivery em um template, selecione-o na lista de delivery, acessível por meio do nó **[!UICONTROL Campaign management]** da árvore.
 
 Clique com o botão direito do mouse e selecione **[!UICONTROL Actions > Save as template...]**.
 
@@ -29,9 +29,9 @@ Essa ação cria um template de delivery a partir do delivery selecionado. Você
 
 ![](assets/s_ncs_user_campaign_save_as_scenario_a.png)
 
-Para obter mais informações sobre o modo de configuração, consulte [Vincular o template a um delivery](creating-a-delivery-from-a-template.md#linking-the-template-to-a-delivery).
+Para obter mais informações sobre o modo de configuração, consulte [Vincular o modelo a uma entrega](creating-a-delivery-from-a-template.md#linking-the-template-to-a-delivery).
 
-## Criação de um novo template {#creating-a-new-template}
+## Criação de um novo modelo {#creating-a-new-template}
 
 Para configurar um template de delivery, siga as seguintes etapas:
 
