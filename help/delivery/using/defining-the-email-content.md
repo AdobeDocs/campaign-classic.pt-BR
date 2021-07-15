@@ -7,7 +7,7 @@ content-type: reference
 topic-tags: sending-emails
 exl-id: 46212929-fd2d-44a2-897e-35f98e88af36
 source-git-commit: a129f49d4f045433899fd7fdbd057fb16d0ed36a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1990'
 ht-degree: 100%
 
@@ -133,15 +133,15 @@ Select the format of the email in the lower section of the window:
 
   The message is sent in text format. HTML format will not be sent, but used for the mirror page only when the recipient clicks on the message.-->
 
-## Definição do conteúdo interativo  {#amp-for-email-format}
+## Definição de conteúdo interativo {#amp-for-email-format}
 
 O Adobe Campaign possibilita experimentar o novo formato interativo [AMP for email](https://amp.dev/about/email/), que permite o envio de emails dinâmicos, sob determinadas condições.
 
 Para obter mais informações, consulte [esta seção](defining-interactive-content.md).
 
-## Uso da gestão de conteúdo {#using-content-management}
+## Utilização de gerenciamento de conteúdo {#using-content-management}
 
-O conteúdo do delivery pode ser definido nos formulários de gestão de conteúdo, diretamente no assistente do delivery. Para fazer isso, você deve consultar o template de publicação do gerenciamento de conteúdo que será usado na guia **[!UICONTROL Advanced]** das propriedades de delivery.
+O conteúdo da entrega pode ser definido por meio dos formulários de gerenciamento de conteúdo, diretamente no assistente de entrega. Para fazer isso, você deve consultar o template de publicação do gerenciamento de conteúdo que será usado na guia **[!UICONTROL Advanced]** das propriedades de delivery.
 
 ![](assets/s_ncs_content_in_delivery.png)
 
@@ -168,7 +168,7 @@ Para personalizar a lista de emoticons, consulte esta [página](customizing-emot
 
 ## Adição de imagens {#adding-images}
 
-Os deliveries de email do formato HTML podem conter imagens. No assistente do delivery, você pode importar uma página HTML contendo imagens ou inserir imagens diretamente usando o editor de HTML pelo ícone **[!UICONTROL Image]**.
+As entregas de email em formato HTML podem conter imagens. No assistente do delivery, você pode importar uma página HTML contendo imagens ou inserir imagens diretamente usando o editor de HTML pelo ícone **[!UICONTROL Image]**.
 
 As imagens podem ser:
 
@@ -257,7 +257,7 @@ Se você selecionar **[!UICONTROL Include the images in the email]**, será poss
 
 >[!NOTE]
 >
->Se as imagens locais estiverem incluídas na mensagem, você deve confirmar as alterações no código-fonte da mensagem.
+>Se imagens locais forem incluídas na mensagem, você deverá confirmar as alterações no código-fonte dela.
 
 ## Inserir código de barras em um email{#inserting-a-barcode-in-an-email}
 
