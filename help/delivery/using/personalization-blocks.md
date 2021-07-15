@@ -7,9 +7,9 @@ content-type: reference
 topic-tags: personalizing-deliveries
 exl-id: 8d155844-d18a-4165-9886-c3b144109f6e
 source-git-commit: a129f49d4f045433899fd7fdbd057fb16d0ed36a
-workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+workflow-type: ht
+source-wordcount: '857'
+ht-degree: 100%
 
 ---
 
@@ -83,7 +83,7 @@ Para fazer isso, precisamos inserir os seguintes blocos de personalização:
 
 1. Confirme se o conteúdo do bloco é exibido corretamente.
 
-## Blocos de personalização integrados {#out-of-the-box-personalization-blocks}
+## Blocos de personalização prontos para uso {#out-of-the-box-personalization-blocks}
 
 Uma lista de blocos de personalização está disponível por padrão para ajudar na personalização do conteúdo da sua mensagem.
 
@@ -118,7 +118,7 @@ Uma lista de blocos de personalização está disponível por padrão para ajuda
 * **[!UICONTROL Style of content emails]** e **[!UICONTROL Notification style]**: geram um código que formata um email com estilos HTML predefinidos. Esses blocos devem ser inseridos no código-fonte do delivery, na seção **[!UICONTROL ...]**, nos tags **`<style>...</style>`**.
 * **[!UICONTROL Offer acceptance URL in unitary mode]**: insere um URL que permite definir uma oferta de Interação para **[!UICONTROL Accepted]** (consulte [esta seção](../../interaction/using/offer-analysis-report.md)).
 
-## Definição de blocos de personalização customizados {#defining-custom-personalization-blocks}
+## Definição de blocos de personalização personalizados {#defining-custom-personalization-blocks}
 
 Você pode definir novos campos de personalização que serão inseridos no ícone do campo personalizado por meio do menu **[!UICONTROL Include...]**. Esses campos são definidos em blocos de personalização.
 
