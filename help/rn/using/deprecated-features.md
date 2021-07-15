@@ -9,7 +9,7 @@ exl-id: d60d67de-6618-4f3b-be4a-ad7633ab5645
 source-git-commit: 6c28e6cd78ce7a8ee5c0dc7e671de780787b9f57
 workflow-type: tm+mt
 source-wordcount: '1634'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -51,7 +51,7 @@ Os clientes são aconselhados a verificar se utilizam o recurso/funcionalidade e
     <tr>
   <td>Relatório de monitoramento técnico da avaliação do delivery<br></td>
    <td><p>A partir da versão do Campaign 21.1, o Relatório de monitoramento técnico da avaliação do delivery está obsoleto.</p>
-   <p>Se necessário, você pode receber esse relatório diariamente por email até a data de remoção do recurso. Para solicitá-lo, abra um <a href="https://helpx.adobe.com/br/enterprise/admin-guide.html">Caso de suporte</a> específico e indique o nome da instância e os endereços de email para os quais enviar o relatório.</p> 
+   <p>Se necessário, você pode receber esse relatório diariamente por email até a data de remoção do recurso. Para solicitá-lo, abra um <a href="https://helpx.adobe.com/br/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html">Caso de suporte</a> específico e indique o nome da instância e os endereços de email para os quais enviar o relatório.</p> 
    <p>A Adobe recomenda que você interaja com a Equipe de avaliação do delivery a fim de definir as melhores ferramentas para monitorar o desempenho da avaliação do delivery da instância.</p>
   <p><em>Data de remoção do target: fim de 2021</em></p>
   </td>
@@ -132,7 +132,7 @@ Esta seção lista os recursos e funcionalidades removidos do Campaign Classic.
 
 ## Compatibilidade obsoleta {#deprecated-compatibility}
 
-Os seguintes sistemas foram descontinuados para o Campaign Classic. Consulte a [Matriz de compatibilidade](../../rn/using/compatibility-matrix.md) para atualizar para uma versão mais recente ou mover para um novo sistema antes do fim da compatibilidade.
+Os seguintes sistemas foram descontinuados para o Campaign Classic. Consulte a [Matriz de compatibilidade](../../rn/using/compatibility-matrix.md) para atualizar para uma versão mais recente ou migrar para um novo sistema antes do fim da compatibilidade.
 
 ### Versão 20.2 do Adobe Campaign {#compat-20-2-release}
 
@@ -168,7 +168,7 @@ A partir da versão 19.1, o Adobe Campaign não será mais compatível com os se
 
 ### Servidores da Web {#web-server-eol}
 
-A partir da versão do primeiro trimestre 19.1, o Adobe Campaign não é mais compatível com o seguinte servidor da Web.
+A partir da versão 19.1, o Adobe Campaign não é mais compatível com o seguinte servidor da Web.
 
 * Apache 2.2. [Saiba mais](https://httpd.apache.org/)
 * Microsoft IIS 7. [Saiba mais](https://support.microsoft.com/pt-br/lifecycle/search/810)
@@ -229,7 +229,7 @@ A partir da versão 19.1, o Adobe Campaign não será mais compatível com os se
 * MySQL 5.1
 * DB2 UDB 9.7
 
-### Conector SMS {#sms-eol}
+### Conectores SMS {#sms-eol}
 
 O Adobe Campaign não é compatível com os seguintes conectores SMS:
 
