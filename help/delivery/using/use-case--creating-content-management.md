@@ -7,9 +7,9 @@ content-type: reference
 topic-tags: content-management
 exl-id: b0d1cf0e-656e-4d24-9a31-16fef4cd40d0
 source-git-commit: a129f49d4f045433899fd7fdbd057fb16d0ed36a
-workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+workflow-type: ht
+source-wordcount: '1173'
+ht-degree: 100%
 
 ---
 
@@ -50,7 +50,7 @@ Os vários elementos deste boletim são reunidos com base nas regras definidas e
 
 Esses elementos são criados por um schema dedicado que especifica os seguintes elementos para cada conteúdo: nome, rótulo, tipo, tamanho e quaisquer outras informações relevantes para o processamento no Adobe Campaign.
 
-## Etapa 2 – Criação do schema de dados {#step-2---creating-the-data-schema}
+## Etapa 2 – Criação do esquema de dados {#step-2---creating-the-data-schema}
 
 Um schema de dados é um documento XML associado ao conteúdo. Ele descreve a estrutura XML dos dados nesse conteúdo.
 
@@ -212,7 +212,7 @@ Para criar um formulário de entrada para gestão de conteúdo, siga as etapas a
 
 1. Clique em **[!UICONTROL Save]** para criar o formulário de entrada.
 
-## Etapa 4 – Criação do template de construção {#step-4---creating-the-construction-template}
+## Etapa 4 – Criação do modelo de construção {#step-4---creating-the-construction-template}
 
 A linguagem XSLT permite transformar um documento XML em outro documento de saída. Essa transformação é descrita em XML em um documento chamado folha de estilos.
 
@@ -347,7 +347,7 @@ Para usar um template JavaScript no Adobe Campaign, siga as etapas abaixo:
 
    ![](assets/contentmgt_jscode_perso_sample.png)
 
-## Etapa 5 – Criação do template de publicação {#step-5---creating-the-publication-template}
+## Etapa 5 — criação do modelo de publicação {#step-5---creating-the-publication-template}
 
 A próxima etapa envolve criar um template de publicação de conteúdo para vincular o schema, o formulário e o template de criação de conteúdo. Esse template de publicação pode ter vários formatos de saída.
 
@@ -381,9 +381,9 @@ Agora é possível criar conteúdo com base nesse template de publicação.
 >
 >Para obter mais informações sobre como criar conteúdo, consulte [Uso de um template de conteúdo](using-a-content-template.md).
 
-### Criação de conteúdo no assistente do delivery {#creating-content-in-the-delivery-wizard}
+### Criação de conteúdo no assistente de entrega {#creating-content-in-the-delivery-wizard}
 
-Para criar conteúdo diretamente nos deliveries, siga as etapas abaixo:
+Para criar conteúdo diretamente nas entregas, siga as etapas abaixo:
 
 1. Comece fazendo referência ao template de publicação por meio da guia **[!UICONTROL Advanced]** das propriedades do delivery.
 
