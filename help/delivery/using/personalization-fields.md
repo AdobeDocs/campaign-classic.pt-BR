@@ -7,7 +7,7 @@ content-type: reference
 topic-tags: personalizing-deliveries
 exl-id: 67fd9a67-cb05-46cd-acd5-e42fde6f4d4f
 source-git-commit: a129f49d4f045433899fd7fdbd057fb16d0ed36a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '880'
 ht-degree: 100%
 
@@ -25,7 +25,7 @@ Por exemplo, o campo de personalização com a sintaxe **&lt;%= recipient.LastNa
 >
 >O conteúdo dos campos de personalização é limitado a 1024 caracteres.
 
-## Fontes de Dados {#data-sources}
+## Fontes de dados {#data-sources}
 
 Os campos de personalização podem vir de dois tipos de fonte de dados, de acordo com o modo de delivery selecionado:
 
@@ -98,13 +98,13 @@ Depois que a análise é feita, os dados da personalização são armazenados em
 
 Este workflow não está visível na interface do Adobe Campaign. É para ser apenas um meio técnico para armazenar e manipular rapidamente os dados de personalização.
 
-Após a conclusão da análise, vá para as **[!UICONTROL Properties]** do workflow e selecione a guia **[!UICONTROL Variables]**. Você pode ver o nome da tabela temporária que pode ser usada para fazer uma chamada SQL para exibir os IDs que ela contém.
+Após a conclusão da análise, vá para as **[!UICONTROL Properties]** do workflow e selecione a guia **[!UICONTROL Variables]**. Você pode ver o nome da tabela temporária que pode ser usada para fazer uma chamada SQL para exibir as IDs que ela contém.
 
 ![](assets/perso_optimization_temp_table.png)
 
 ## Tempo limite da fase de personalização {#timing-out-personalization}
 
-Para melhorar a proteção do delivery, é possível definir um período de tempo limite para a fase de personalização.
+Para aumentar a proteção da entrega, é possível definir um período de tempo limite para a fase de personalização.
 
 Na guia **[!UICONTROL Delivery]** de **[!UICONTROL Delivery properties]**, selecione um valor máximo em segundos na opção **[!UICONTROL Maximum personalization run time]**.
 
