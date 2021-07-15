@@ -7,7 +7,7 @@ content-type: reference
 topic-tags: orchestrate-campaigns
 exl-id: c60c4f86-a957-4c44-a0fe-39b6e3f0e5d6
 source-git-commit: 690f7c4e62203127da7a7055afa0ee8ad4a2bce4
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1902'
 ht-degree: 100%
 
@@ -17,9 +17,9 @@ ht-degree: 100%
 
 O Adobe Campaign permite que você defina provedores de serviços que estarão envolvidos nas tarefas realizadas nas campanhas. As informações relacionadas aos provedores de serviços e as estruturas de custo relacionadas são definidas pelo administrador do Adobe Campaign a partir da visualização principal. O provedor de serviços é referenciado a partir do delivery e suas estruturas de custo permitem o cálculo de custos associados a esse delivery, bem como o gerenciamento do estoque.
 
-## Criar provedores de serviços e estruturas de custo {#creating-service-providers-and-their-cost-structures}
+## Criação de provedores de serviços e estruturas de custo {#creating-service-providers-and-their-cost-structures}
 
-Cada provedor de serviços é salvo em um arquivo com detalhes de contato, templates de serviço e tarefas relacionadas.
+Cada provedor de serviços é salvo em um arquivo com detalhes de contato, modelos de serviço e tarefas relacionadas.
 
 Os provedores de serviços são configurados no nó **[!UICONTROL Administration > Campaign management]** da árvore.
 
@@ -41,9 +41,9 @@ As tarefas realizadas durante as entregas são realizadas por provedores de serv
 
    Consulte [Associar um serviço a uma campanha](#associating-a-service-with-a-campaign).
 
-### Criar um provedor de serviços e categorias de custo {#creating-a-service-provider-and-its-cost-categories}
+### Criação de um provedor de serviços e categorias de custo {#creating-a-service-provider-and-its-cost-categories}
 
-#### Adicionar um provedor de serviços {#adding-a-service-provider}
+#### Adição de um provedor de serviços {#adding-a-service-provider}
 
 Você pode criar quantos provedores de serviços forem necessários para suas remessas. O procedimento para adicionar um provedor de serviços é o seguinte:
 
@@ -54,7 +54,7 @@ Você pode criar quantos provedores de serviços forem necessários para suas re
 
 1. Clique no botão **[!UICONTROL Save]** para adicionar o provedor de serviço à lista.
 
-#### Definir categorias de custo {#defining-cost-categories}
+#### Definição de categorias de custo {#defining-cost-categories}
 
 Você deve associar templates de serviço a cada provedor de serviços. Nesses templates, você deve primeiro identificar as categorias de custo e se necessário o estoque em questão. Em seguida, você deve criar as regras de cálculo de custo para cada categoria, por meio das estruturas de custo.
 
@@ -87,11 +87,11 @@ Para criar um template de serviço e definir seu conteúdo, aplique as seguintes
 
    ![](assets/s_ncs_user_supplier_cost_structure_defaut.png)
 
-   No nível de delivery, o valor será selecionado por padrão:
+   No nível de entrega, o valor será selecionado por padrão:
 
    ![](assets/s_ncs_user_supplier_default_cost.png)
 
-### Definir a estrutura de custos {#defining-the-cost-structure}
+### Definição da estrutura de custos {#defining-the-cost-structure}
 
 Para cada tipo de custo, uma estrutura de custos especifica as regras de cálculo a serem aplicadas.
 
@@ -133,11 +133,11 @@ Para adicionar um limite, clique no botão **[!UICONTROL Add]** à direita da li
 
 #### Estrutura constante por limite {#constant-structure-by-threshold}
 
-Finalmente, você pode configurar um cálculo de custo de acordo com o número total de mensagens. Para fazer isso, selecione uma estrutura de cálculo **[!UICONTROL Constant by threshold]**. Por exemplo, o custo será definido em uma quantidade fixa de 12,00 para 1 a 100 mensagens, de 100,00 para um delivery de 101 a 1.000 mensagens e de 500,00 para qualquer delivery acima de 1.000 mensagens, independentemente do número total.
+Por fim, você pode configurar um cálculo de custo de acordo com o número total de mensagens. Para fazer isso, selecione uma estrutura de cálculo **[!UICONTROL Constant by threshold]**. Por exemplo, o custo será definido em uma quantidade fixa de 12,00 para 1 a 100 mensagens, de 100,00 para uma entrega de 101 a 1.000 mensagens e de 500,00 para qualquer entrega acima de 1.000 mensagens, independentemente do número total.
 
 ![](assets/s_ncs_user_supplier_cost_structure_calc_04.png)
 
-### Configurando processos associados com um serviço {#configuring-processes-associated-with-a-service}
+### Configuração de processos associados a um serviço {#configuring-processes-associated-with-a-service}
 
 Você pode associar informações nos processos associados ao serviço através da guia **[!UICONTROL Processes]**.
 
@@ -155,7 +155,7 @@ Para fazer isso, clique na guia **[!UICONTROL Processes]** para configurar o env
 
 * A seção **[!UICONTROL Post-processing]** permite que você selecione o workflow a ser iniciado após a aprovação do delivery. Se um template de workflow for inserido, uma instância de workflow será criada automaticamente e será iniciada assim que a aprovação entrar em vigor. Esse workflow pode enviar o arquivo de extração para um provedor de serviços externos para processamento, por exemplo.
 
-### Associando um serviço a uma campanha {#associating-a-service-with-a-campaign}
+### Associação de um serviço a uma campanha {#associating-a-service-with-a-campaign}
 
 Os serviços estão associados a campanhas via entregas ou tarefas. Os provedores de serviço estão vinculados a templates de delivery para oferecer seus serviços nos deliveries criados por meio desse template.
 
@@ -204,13 +204,13 @@ O procedimento para configurar o estoque e o gerenciamento de pedidos no Adobe C
 
 ### Gerenciamento de estoque {#stock-management}
 
-O Adobe Campaign pode alertar um grupo de operadores se o estoque tiver executado ou atingir um limite mínimo. Os níveis de estoque podem ser acessados poe meio do link **[!UICONTROL Stocks]** da guia **[!UICONTROL Campaigns]** por meio do link **[!UICONTROL Other choices]** da área de navegação.
+O Adobe Campaign poderá alertar um grupo de operadores se o estoque tiver acabado ou atingido um limite mínimo. Os níveis de estoque podem ser acessados poe meio do link **[!UICONTROL Stocks]** da guia **[!UICONTROL Campaigns]** por meio do link **[!UICONTROL Other choices]** da área de navegação.
 
 ![](assets/s_ncs_user_stocks_view.png)
 
-#### Criar um estoque {#creating-a-stock}
+#### Criação de um estoque {#creating-a-stock}
 
-Aplique as seguintes etapas para criar um novo estoque:
+Execute as seguintes etapas para criar um novo estoque:
 
 1. Clique no botão **[!UICONTROL Create]** acima da lista de estoques.
 1. Insira o rótulo do estoque e selecione o provedor de serviços com o qual ele está associado na lista suspensa.
@@ -239,17 +239,17 @@ Clique no botão **[!UICONTROL Create]** para definir os parâmetros de estoque.
 
    ![](assets/s_ncs_user_stocks_create_line.png)
 
-* Indique o limite do qual os operadores devem ser avisados no estoque de pedidos no campo **[!UICONTROL Alert level]**. Quando o nível de alerta for atingido, uma mensagem de aviso será exibida na janela de aprovação de remessas usando esse estoque.
+* Indique o limite do qual os operadores devem ser avisados no estoque de pedidos no campo **[!UICONTROL Alert level]**. Quando o nível de alerta for atingido, uma mensagem de aviso será exibida na janela de aprovação de entregas usando esse estoque.
 
-#### Associar um estoque com categorias de custo {#associating-a-stock-with-cost-categories}
+#### Associação de um estoque com categorias de custo {#associating-a-stock-with-cost-categories}
 
-Para um determinado provedor de serviços, em um serviço, uma linha de estoque pode ser referenciada por uma das classes de custo, da seguinte maneira:
+Para determinado provedor de serviços, em um serviço, uma linha de estoque pode ser referenciada por uma das classes de custo, da seguinte maneira:
 
 ![](assets/s_ncs_user_stocks_select_from_supplier.png)
 
-### Controle de estoque {#stock-tracking}
+### Rastreamento de estoque {#stock-tracking}
 
-#### Operadores de alertas {#alerting-operators}
+#### Alerta a operadores {#alerting-operators}
 
 Um alerta é exibido quando um estoque referenciado em um delivery é insuficiente. Por exemplo, o alerta a seguir será exibido quando um arquivo de extração for aprovado:
 
@@ -275,7 +275,7 @@ A guia **[!UICONTROL Consumptions]** contém o volume consumido por campanha. As
 
 ![](assets/s_ncs_user_stocks_edit_from_board_consumed.png)
 
-## Calcular orçamentos {#calculating-budgets}
+## Cálculo de orçamentos {#calculating-budgets}
 
 ### Princípio {#principle}
 
