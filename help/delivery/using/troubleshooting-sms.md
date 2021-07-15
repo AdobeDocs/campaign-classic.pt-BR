@@ -7,7 +7,7 @@ content-type: reference
 topic-tags: configuring-channels
 exl-id: 841f0c2f-90ef-4db0-860a-75fc7c48804a
 source-git-commit: a129f49d4f045433899fd7fdbd057fb16d0ed36a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2744'
 ht-degree: 100%
 
@@ -145,7 +145,7 @@ Diminuição na quantidade de duplicatas quando há uma nova tentativa:
 
 * Diminua a janela de envio. A janela de envio deve ser grande o suficiente para abranger a latência `SUBMIT_SM_RESP`. Seu valor representa o número máximo de mensagens que poderão ser duplicadas se ocorrer um erro enquanto a janela estiver cheia.
 
-## Problema ao processar SR (recibos de delivery) {#issue-process-SR}
+## Problema ao processar SR (recibos de entrega) {#issue-process-SR}
 
 * Você precisará de rastreamentos SMPP ativados para realizar qualquer tipo de solução de problemas de SR.
 
@@ -177,7 +177,7 @@ Se você corrigiu tudo, mas alguns SR inválidos ainda estão nos buffers do pro
 
 * Se o `SUBMIT_SM MT PDU` que contém a resposta for encontrado nos rastreamentos, mas o SMS não chegar ao telefone celular, você terá que entrar em contato com o provedor para obter assistência na solução de problemas.
 
-## Problema durante a preparação do delivery sem a exclusão de recipient em quarentena (em quarentena pelo recurso de resposta automática) {#issue-delivery-preparation}
+## Problema durante a preparação de entrega sem a exclusão de recipient em quarentena (em quarentena pelo recurso de resposta automática) {#issue-delivery-preparation}
 
 * Verifique se o formato do número de telefone é exatamente o mesmo na tabela de quarentena e no log de delivery. Caso contrário, consulte esta [seção](sms-protocol.md#automatic-reply) se tiver problemas com o prefixo &quot;+&quot; do formato de número de telefone internacional.
 
