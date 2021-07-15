@@ -7,13 +7,13 @@ content-type: reference
 topic-tags: sending-messages-on-mobiles
 exl-id: 1baaabbd-9fd7-4d9b-b78e-d2a559d7dddb
 source-git-commit: a129f49d4f045433899fd7fdbd057fb16d0ed36a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1162'
 ht-degree: 100%
 
 ---
 
-# Criar deliveries LINE{#line-channel}
+# Criar entregas LINE{#line-channel}
 
 >[!NOTE]
 >
@@ -159,7 +159,7 @@ Uma entrega **[!UICONTROL Text message]** [!DNL LINE] é uma mensagem enviada ao
 
 A configuração desse tipo de mensagem é semelhante à configuração do **[!UICONTROL Text]** em um email. Para obter mais informações, consulte esta [página](defining-the-email-content.md#message-content).
 
-### Configuração de uma imagem e um delivery de link {#configuring-an-image-and-link-delivery}
+### Configuração de uma entrega de imagem e link {#configuring-an-image-and-link-delivery}
 
 Uma entrega **[!UICONTROL Image and link]**[!DNL LINE] é uma mensagem enviada aos recipients no formato de uma imagem que pode conter um ou vários URLs.
 
@@ -211,7 +211,7 @@ Observe que vídeos largos ou altos podem ser cortados quando reproduzidos em al
 
 ![](assets/line_message_06.png)
 
-## Acesso ao relatórios {#accessing-reports}
+## Acesso a relatórios {#accessing-reports}
 
 Após enviar a entrega, você poderá visualizar os [!DNL LINE] relatórios por meio do menu **[!UICONTROL Campaign Management]** > **[!UICONTROL Deliveries]** no **[!UICONTROL Explorer]**.
 
