@@ -26,9 +26,8 @@ Este capítulo detalha como criar e gerenciar **Pesquisas**, gerenciamento de ca
 >[!NOTE]
 >
 >* As etapas para criar um formulário Web padrão estão disponíveis, em detalhes, [neste documento](../../web/using/about-web-forms.md).
-   >
-   >
-* O gerenciamento de aplicativos Web é detalhado [neste documento](../../web/using/about-web-applications.md). Consulte este capítulo para obter mais informações.
+>
+>* O gerenciamento de aplicativos Web é detalhado [neste documento](../../web/using/about-web-applications.md). Consulte este capítulo para obter mais informações.
 
 
 ## Escopo do recurso {#campaign-surveys-scope}

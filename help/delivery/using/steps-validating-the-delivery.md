@@ -134,7 +134,6 @@ Para detectar possíveis erros na configuração da mensagem, a Adobe recomenda 
 >
 >* Os modos de validação disponíveis estão detalhados em [Alterar o modo de aprovação](steps-validating-the-delivery.md#changing-the-approval-mode).
 >* A configuração do target de prova é explicada em [Definir um target de prova específico](steps-defining-the-target-population.md#defining-a-specific-proof-target).
-
 >
 
 
