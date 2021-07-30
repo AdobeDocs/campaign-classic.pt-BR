@@ -4,7 +4,7 @@ title: 'Opções de ajuda e suporte para Campaign Classic '
 description: Precisa de suporte para o Campaign Classic? Você está no lugar certo.
 hidefromtoc: true
 exl-id: 3a84236f-89e5-4b8b-9a98-afdc006fd6e0
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 69f7b494c244fdf01a65ebe8d55c141d947a0980
 workflow-type: tm+mt
 source-wordcount: '799'
 ht-degree: 86%
@@ -51,11 +51,11 @@ Como atualizar para um novo build? como monitorar a execução do fluxo de traba
     <td valign="top">
         <ul>
         <li><a href="production/using/performance-and-throughput-issues.md">Problemas de desempenho e de taxa de transferência</a></li>
-        <li><a href="delivery/using/delivery-performances.md">Desempenho do delivery</a></li>
+        <li><a href="delivery/using/delivery-performances.md">Desempenho da entrega</a></li>
         <li><a href="workflow/using/workflow-best-practices.md">Otimizar o desempenho do fluxo de trabalho</a></li>
         <li><a href="workflow/using/monitoring-workflow-execution.md">Solução de problemas de execução de fluxo de trabalho</a></li>
         <li><a href="platform/using/sftp-server-usage.md">Uso do servidor SFTP</a></li>
-        <li><a href="delivery/using/understanding-delivery-failures.md">Entender as falhas de entrega</a></li>
+        <li><a href="delivery/using/understanding-delivery-failures.md">Entender as falhas de delivery</a></li>
         </ul>
     </td>
    <td valign="top">
@@ -67,7 +67,7 @@ Como atualizar para um novo build? como monitorar a execução do fluxo de traba
         <li><a href="platform/using/import-export-workflows.md">Importar dados com workflows</a></li>
         <li><a href="delivery/using/steps-sending-the-delivery.md">Enviar mensagens em várias ondas</a></li>
         <li><a href="delivery/using/defining-the-email-content.md">Conteúdo do email de design</a></li>
-        <li><a href="delivery/using/delivery-best-practices.md">Práticas recomendadas de delivery</a></li>
+        <li><a href="delivery/using/delivery-best-practices.md">Práticas recomendadas de entrega</a></li>
         </ul>
     </td>
     <td valign="top">
@@ -79,7 +79,7 @@ Como atualizar para um novo build? como monitorar a execução do fluxo de traba
         <li><a href="installation/using/get-started-security-privacy.md">Lista de verificação de segurança e privacidade</a></li>
         <li><a href="platform/using/privacy-management.md">Gestão do consentimento e da privacidade</a></li>
         <li><a href="platform/using/steps-to-create-a-query.md">Criar uma query</a></li>
-        <li><a href="workflow/using/querying-recipient-table.md">Amostras de queries</a></li>
+        <li><a href="workflow/using/querying-recipient-table.md">Amostras de consulta</a></li>
         <li><a href="workflow/using/building-a-workflow.md">Criar um fluxo de trabalho</a></li>
         </ul>
     </td>
@@ -99,7 +99,7 @@ O Painel de controle do Campaign ajuda a aumentar a eficiência do seu trabalho 
 >
 >O Painel de controle do Campaign é acessível a todos os usuários administradores. As etapas para conceder acesso de Administrador a um usuário estão detalhadas [nesta seção](https://experienceleague.adobe.com/docs/control-panel/using/discover-control-panel/managing-permissions.html?lang=pt-BR#discover-control-panel).
 >
->Observe que sua instância deve ser hospedada no AWS e atualizada com a compilação mais recente do [Gold Standard](rn/using/gs-overview.md) ou a compilação mais recente do GA (21.1)](rn/using/latest-release.md). [ Saiba como verificar a versão [nesta seção](platform/using/launching-adobe-campaign.md#getting-your-campaign-version). Para verificar se sua instância está hospedada no AWS, siga as etapas detalhadas [nesta página](https://experienceleague.adobe.com/docs/control-panel/using/faq.html?lang=pt-BR).
+>Observe que sua instância deve ser hospedada no AWS e atualizada com a compilação mais recente do [Gold Standard](rn/using/gs-overview.md) ou a compilação mais recente do GA (21.1.3)[. ](rn/using/latest-release.md) Saiba como verificar a versão [nesta seção](platform/using/launching-adobe-campaign.md#getting-your-campaign-version). Para verificar se sua instância está hospedada no AWS, siga as etapas detalhadas [nesta página](https://experienceleague.adobe.com/docs/control-panel/using/faq.html?lang=pt-BR).
 
 ### Como acessar o Painel de controle do Campaign?
 
