@@ -6,7 +6,7 @@ feature: Visão geral
 role: User
 level: Beginner
 exl-id: 7a05fdff-8f9d-4e8d-812e-0f1509db5499
-source-git-commit: 6c28e6cd78ce7a8ee5c0dc7e671de780787b9f57
+source-git-commit: 69f7b494c244fdf01a65ebe8d55c141d947a0980
 workflow-type: tm+mt
 source-wordcount: '413'
 ht-degree: 100%
@@ -27,7 +27,7 @@ Um status é associado a cada build. Você encontrará abaixo a lista de status 
 
 ![](assets/do-not-localize/green3.png) **Disponibilidade geral** (DG) - validada na produção e recomendada pela Adobe.
 
-As **últimas compilações do GA** são: [[!DNL Gold Standard]  versão 11](../../rn/using/gold-standard.md) e [versão 20.2.5 do Campaign](../../rn/using/release--20-2.md)
+As **últimas compilações do GA** são: [[!DNL Gold Standard]  versão 11](../../rn/using/gold-standard.md) e [versão 21.1.3 do Campaign](../../rn/using/latest-release.md#release-21-1-3-build-9330).
 
 ![](assets/do-not-localize/limited3.png) **Disponibilidade limitada** (DL) - somente instalação sob demanda.
 
