@@ -6,14 +6,14 @@ audience: production
 content-type: reference
 topic-tags: introduction
 exl-id: ca0c33c5-7350-462a-bc65-4cab51e529d9
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 69f7b494c244fdf01a65ebe8d55c141d947a0980
 workflow-type: tm+mt
 source-wordcount: '768'
 ht-degree: 27%
 
 ---
 
-# Orientações de monitoramento {#monitoring-guidelines}
+# Diretrizes de monitoramento {#monitoring-guidelines}
 
 ## Painel de monitoramento de instância {#instance-monitoring-dashboard}
 
@@ -36,7 +36,7 @@ Informações detalhadas estão disponíveis [aqui](../../production/using/monit
 
 Outras maneiras de monitorar os diferentes processos do Campaign estão disponíveis. Eles fornecem várias maneiras de monitorar suas instâncias para garantir que seu sistema esteja íntegro e, eventualmente, solucionar problemas que podem ocorrer ao configurar workflows, enviar deliveries etc.
 
-### Monitorar sua instância {#monitoring-instance}
+### Monitorar a instância {#monitoring-instance}
 
 <img src="assets/do-not-localize/icon_system.svg" width="60px">
 
@@ -56,7 +56,7 @@ O Painel de controle do Campaign permite gerenciar várias configurações da su
 >
 >O Painel de controle do Campaign é acessível a todos os usuários administradores. As etapas para conceder acesso de Administrador a um usuário estão detalhadas [nesta página](https://experienceleague.adobe.com/docs/control-panel/using/discover-control-panel/managing-permissions.html?lang=pt-BR#discover-control-panel).
 >
->Observe que sua instância deve ser hospedada no AWS e atualizada com a compilação mais recente do [Gold Standard](../../rn/using/gs-overview.md) ou a compilação mais recente do GA (21.1)](../../rn/using/latest-release.md). [ Saiba como verificar a versão [nesta seção](../../platform/using/launching-adobe-campaign.md#getting-your-campaign-version). Para verificar se sua instância está hospedada no AWS, siga as etapas detalhadas [nesta página](https://experienceleague.adobe.com/docs/control-panel/using/faq.html?lang=pt-BR).
+>Observe que sua instância deve ser hospedada no AWS e atualizada com a compilação mais recente do [Gold Standard](../../rn/using/gs-overview.md) ou a compilação mais recente do GA (21.1.3)[. ](../../rn/using/latest-release.md) Saiba como verificar a versão [nesta seção](../../platform/using/launching-adobe-campaign.md#getting-your-campaign-version). Para verificar se sua instância está hospedada no AWS, siga as etapas detalhadas [nesta página](https://experienceleague.adobe.com/docs/control-panel/using/faq.html?lang=pt-BR).
 
 ### Monitoramento de workflows {#monitoring-workflows}
 
@@ -82,9 +82,9 @@ Além do heatmap, é possível criar um workflow que permitirá monitorar o stat
 
 Seguir as diretrizes e práticas recomendadas ao usar workflows pode ajudar a melhorar o desempenho. Para obter mais informações, consulte esta seção.
 * [Práticas recomendadas para usar workflows](../../workflow/using/workflow-best-practices.md)
-* [Monitoramento da execução do workflow](../../workflow/using/monitoring-workflow-execution.md)
+* [Monitoramento da execução do fluxo de trabalho](../../workflow/using/monitoring-workflow-execution.md)
 
-### Monitoramento de deliveries {#monitoring-deliveries}
+### Monitoramento de entregas {#monitoring-deliveries}
 
 <img src="assets/do-not-localize/icon_send.svg" width="60px">
 
@@ -98,7 +98,7 @@ Os relatórios SMTP exibem estatísticas de delivery e erros SMTP por domínio. 
 
 **Solução de**
 problemas de deliveryAs ações específicas podem ser executadas ao encontrar problemas com os deliveries:
-* [Problemas com delivery](../../production/using/performance-and-throughput-issues.md#deliverability_issues)
+* [Problemas na capacidade de delivery](../../production/using/performance-and-throughput-issues.md#deliverability_issues)
 * [Problemas de exibição de imagem](../../production/using/image-display-issues.md)
 * [Problemas de desempenho do delivery](../../delivery/using/delivery-performances.md)
 * [Problemas com arquivos temporários](../../production/using/temporary-files.md)  - somente modelos  *de hospedagem locais*
