@@ -6,10 +6,10 @@ audience: migration
 content-type: reference
 topic-tags: migration-procedure
 exl-id: 228ee9e4-46a0-4d82-b8ba-b019bc0e7cac
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 571dd96d1f3bff5c3dab05dce5319f913f29a670
 workflow-type: tm+mt
-source-wordcount: '667'
-ht-degree: 2%
+source-wordcount: '701'
+ht-degree: 1%
 
 ---
 
@@ -156,7 +156,13 @@ As seguintes expressões são pesquisadas (diferencia maiúsculas de minúsculas
    <td> SQLDATA<br /> </td> 
    <td> PU-0006<br /> </td> 
    <td> Erro<br /> </td> 
-   <td> Esse tipo de erro gera uma falha de migração. Consulte <a href="../../migration/using/general-configurations.md#sqldata" target="_blank">SQLData</a>. Se você obtiver logs de erro de aplicação Web do tipo visão geral (migração da v6.02), consulte <a href="../../migration/using/specific-configurations-in-v6-02.md#web-applications" target="_blank">Aplicações Web</a>.<br /> </td> 
+   <td> Esse tipo de erro gera uma falha de migração. Consulte <a href="../../migration/using/general-configurations.md#sqldata" target="_blank">SQLData</a>. Se você obtiver logs de erro de aplicativos web do tipo visão geral (migração da v6.02), consulte <a href="../../migration/using/specific-configurations-in-v6-02.md#web-applications" target="_blank">Configurar Campanha</a>.<br /> </td> 
+  </tr>
+  <tr> 
+   <td> crmDeploymentType="onpremise"<br /> </td> 
+   <td> PU-0007<br /> </td> 
+   <td> Erro<br /> </td> 
+   <td> Esse tipo de implantação não é mais compatível. O Office 365 e o tipo de implantação do conector do Microsoft CRM no local agora foram descontinuados</a>. Para alterar para a implantação da API da Web, consulte <a href="../../platform/using/crm-ms-dynamics.md#configure-acc-for-microsoft" target="_blank">Aplicações Web</a>.<br /> </td>
   </tr> 
  </tbody> 
 </table>
