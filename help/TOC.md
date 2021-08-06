@@ -7,10 +7,10 @@ breadcrumb-url: /docs/campaign-classic/using/campaign-classic-home.html
 user-guide-description: Com o Adobe Campaign, é possível usar dados avançados do cliente para criar, coordenar e fornecer campanhas dinâmicas que os clientes realmente desejam, por meio de email, dispositivos móveis, canais offline e muito mais.
 sub-product: adobe campaign classic
 type: Documentation
-source-git-commit: ee3d643e4ba607b3d7ca816eabf862b867d1f3f4
-workflow-type: ht
-source-wordcount: '2518'
-ht-degree: 100%
+source-git-commit: a54a6f9b8afedf8a200b80b027f908163faebeaa
+workflow-type: tm+mt
+source-wordcount: '2525'
+ht-degree: 99%
 
 ---
 
@@ -38,7 +38,6 @@ ht-degree: 100%
    + [Recursos obsoletos](rn/using/deprecated-features.md)
    + [Matriz de compatibilidade](rn/using/compatibility-matrix.md)
    + [Notas técnicas](technotes/technote.md)
-   + [Perguntas frequentes sobre o Adobe Analytics Connector](technotes/aa-connector-migration.md)
    + [Atualização de certificado do iOS](technotes/ios-certificate-update.md)
    + [Atualizações de configuração do Campaign](technotes/acc-config-updates.md)
    + [Atualização de URLs rastreados](technotes/tracked-urls.md)
@@ -117,8 +116,10 @@ ht-degree: 100%
          + [Conecte-se com o Microsoft Dynamics 365](platform/using/crm-ms-dynamics.md)
          + [Conecte-se com o Salesforce.com](platform/using/crm-sfdc.md)
          + [Sincronizar dados com o CRM](platform/using/crm-data-sync.md)
-      + [Adobe Analytics Connector](platform/using/adobe-analytics-connector.md)
-      + [Conector de dados do Adobe Analytics](platform/using/adobe-analytics-data-connector-legacy.md)
+      + Adobe Analytics Connector{#analytics-connector}
+         + [Integração do Adobe Analytics Connector](platform/using/adobe-analytics-connector.md)
+         + [Como migrar para o Adobe Analytics Connector](technotes/aa-connector-migration.md)
+         + [Conector de dados do Adobe Analytics](platform/using/adobe-analytics-data-connector-legacy.md)
    + [Opções de ajuda e suporte](support.md)
 + Criar e enviar mensagens {#sending-messages}
    + [Introdução a mensagens](delivery/using/communication-channels.md)
