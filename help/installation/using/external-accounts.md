@@ -6,7 +6,7 @@ audience: platform
 content-type: reference
 topic-tags: administration-basics
 exl-id: 4a17d5e8-c73f-42e7-b641-0fee6a52c5c0
-source-git-commit: 94664ec56d269afef926663c52b84ccaaab02480
+source-git-commit: 7adde72f615e7c697fa2284235e180c29bc6d470
 workflow-type: tm+mt
 source-wordcount: '1636'
 ht-degree: 72%
@@ -92,7 +92,6 @@ Os seguintes canais podem ser configurados:
 * [Canal iOS](../../delivery/using/configuring-the-mobile-application.md)
 * [Canal Android](../../delivery/using/configuring-the-mobile-application-android.md)
 
-
 ### Instância de execução  {#execution-instance-external-account}
 
 Se você tiver uma arquitetura dividida, precisará especificar as instâncias de execução vinculadas à instância de controle e conectá-las. Os templates de mensagem transacional são implantados nas instâncias de execução
@@ -112,7 +111,6 @@ Se você tiver uma arquitetura dividida, precisará especificar as instâncias d
    A senha da conta conforme definido na pasta do operador.
 
 Para obter mais informações sobre essa configuração, consulte esta [página](../../message-center/using/configuring-instances.md#control-instance).
-
 
 ## Acesso a contas externas de sistemas externos
 
