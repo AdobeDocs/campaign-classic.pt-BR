@@ -6,10 +6,10 @@ audience: platform
 content-type: reference
 topic-tags: connectors
 exl-id: 26737940-b3ce-425c-9604-f4cefd19afaa
-source-git-commit: 9fb5b1a256a7c77e64a449aea9a4489de1f9123a
+source-git-commit: 7adde72f615e7c697fa2284235e180c29bc6d470
 workflow-type: tm+mt
-source-wordcount: '1049'
-ht-degree: 74%
+source-wordcount: '1097'
+ht-degree: 68%
 
 ---
 
@@ -27,7 +27,7 @@ Para conectar o Microsoft Dynamics 365 para trabalhar com o Adobe Campaign via *
 
 No Microsoft Dynamics CRM:
 1. Obter a ID do Cliente do Microsoft Dynamics
-1. Gerar Segredo do Cliente do Microsoft Dynamics
+1. Gerar o identificador de chave de certificado e a ID de chave do Microsoft Dynamics
 1. Configurar permissões
 1. Criar um usuário do aplicativo
 1. Codificar a chave privada
@@ -66,9 +66,9 @@ Depois de salvar, você obtém uma **ID da aplicação** que é o Identificador 
 
 Saiba mais [nesta página](https://docs.microsoft.com/en-us/powerapps/developer/common-data-service/walkthrough-register-app-azure-active-directory).
 
-### Gerar Segredo do Cliente do Microsoft Dynamics {#config-client-secret-microsoft}
+### Gerar o identificador de chave de certificado e a ID de chave do Microsoft Dynamics {#config-certificate-key-id}
 
-O segredo do cliente é a chave exclusiva da ID do cliente. Para obter o identificador da chave do certificado, siga as etapas abaixo:
+Para obter o **Identificador de chave de certificado (customKeyIdentifier)** e o **ID de chave (keyId)**, siga as etapas abaixo:
 
 1. Navegue até o **Azure Active Directory > Registros de aplicativo** e selecione o Aplicativo que foi criado anteriormente.
 1. Clique em **Certificados e Segredo**.
@@ -88,6 +88,8 @@ O segredo do cliente é a chave exclusiva da ID do cliente. Para obter o identif
 1. Em seguida, será necessário codificá-lo em base64. Para fazer isso, você pode usar a ajuda de um codificador Base64 ou usar a linha de comando `base64 -w0 private.key` para Linux.
 
 1. Clique no link **Manifest** para obter o **Identificador de chave de certificado (customKeyIdentifier)** e o **ID de chave (keyId)**.
+
+O **Identificador de chave de certificado (customKeyIdentifier)** e o **ID de chave (keyId)** serão necessários posteriormente para configurar a conta externa do Microsoft Dynamics CRM usando o Certificado **[!UICONTROL CRM O-Auth type]**.
 
 ### Configurar permissões {#config-permissions-microsoft}
 
@@ -192,6 +194,10 @@ Para conectar o Microsoft Dynamics 365 e o Campaign, é necessário criar e conf
    ![](assets/crm_connectors_msdynamics_06.png)
 
 O Campaign e o Microsoft Dynamics agora estão conectados. Você pode configurar a sincronização de dados entre os dois sistemas. Saiba mais na seção [Sincronização de dados](../../platform/using/crm-data-sync.md).
+
+>[!NOTE]
+>
+> Certifique-se de adicionar à lista de permissões dois URLs: o URL do servidor e `login.microsoftonline.com` na configuração do Servidor.
 
 ## Tipos de dados de campo suportados {#ms-dyn-supported-types}
 
