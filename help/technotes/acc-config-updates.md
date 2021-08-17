@@ -5,7 +5,7 @@ description: Nota técnica
 hide: true
 hidefromtoc: true
 exl-id: 7db02123-2e2a-40d9-8385-728ff69985e4
-source-git-commit: 037e56040bd63edfdfee5ab6bf73b45d3a138072
+source-git-commit: 6a5253c1aa35e904635919f6c863930d376b473f
 workflow-type: tm+mt
 source-wordcount: '1099'
 ht-degree: 17%
@@ -29,7 +29,7 @@ Por motivos de segurança, agora é necessário atualizar para uma das versões 
 
 ## Atualizações de segurança {#acc-security-updates}
 
-As versões mais recentes do Campaign vêm com uma correção de segurança que reforça a proteção contra problemas de SSRF (Server Side Request Forgery). Saiba mais [nesta página](https://helpx.adobe.com/security/products/campaign/apsb21-04.html).
+As versões mais recentes do Campaign vêm com uma correção de segurança que reforça a proteção contra problemas de SSRF (Server Side Request Forgery). Saiba mais [nesta página](https://helpx.adobe.com/br/security/products/campaign/apsb21-04.html).
 
 **Você será afetado?**
 
@@ -80,7 +80,7 @@ Se você estiver se conectando ao Campaign [por meio de um Adobe ID](../integrat
 
 * Gold Standard 11. [Saiba mais](../rn/using/gold-standard.md)
 * Campaign versão 21.1.1. [Saiba mais](../rn/using/latest-release.md)
-* Campaign versão 20.2.4. [Saiba mais](../rn/using/release--20-2.md)
+* Campaign versão 20.2.5. [Saiba mais](../rn/using/release--20-2.md)
 * Campaign versão 20.1.4. [Saiba mais](../rn/using/release--20-1.md)
 * Campaign versão 19.2.4. [Saiba mais](../rn/using/release--19-2.md)
 * Campaign versão 19.1.8. [Saiba mais](../rn/using/release--19-1.md)
