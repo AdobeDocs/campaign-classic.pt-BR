@@ -4,7 +4,7 @@ title: Atualize seu ambiente para se conectar ao Adobe Campaign com o IMS
 description: Campaign - Atualizações IMS
 hide: true
 hidefromtoc: true
-source-git-commit: 883ac681e0bf0e4ccf916c745924b7340a4d22f9
+source-git-commit: 6a5253c1aa35e904635919f6c863930d376b473f
 workflow-type: tm+mt
 source-wordcount: '588'
 ht-degree: 11%
@@ -39,7 +39,7 @@ Se você já atualizou, mas estiver usando uma versão antiga do Microsoft Inter
 
    * Gold Standard 11. [Saiba mais](../rn/using/gold-standard.md)
    * Campaign versão 21.1.3. [Saiba mais](../rn/using/latest-release.md)
-   * Campaign versão 20.2.4. [Saiba mais](../rn/using/release--20-2.md)
+   * Campaign versão 20.2.5. [Saiba mais](../rn/using/release--20-2.md)
    * Campaign versão 20.1.4. [Saiba mais](../rn/using/release--20-1.md)
    * Campaign versão 19.2.4. [Saiba mais](../rn/using/release--19-2.md)
    * Campaign versão 19.1.8. [Saiba mais](../rn/using/release--19-1.md)
