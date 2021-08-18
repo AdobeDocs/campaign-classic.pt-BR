@@ -5,7 +5,7 @@ description: Nota técnica
 hide: true
 hidefromtoc: true
 exl-id: 7db02123-2e2a-40d9-8385-728ff69985e4
-source-git-commit: 550c4afc5cc77867b56d17565bef3f18b1df12a2
+source-git-commit: 28d60a02e3c94264c5ee311cf6ea2d21fd89bd4b
 workflow-type: tm+mt
 source-wordcount: '1131'
 ht-degree: 17%
@@ -103,7 +103,7 @@ Depois que todas as instâncias forem atualizadas, o Console do cliente também 
 
 ## Integração com Experience Cloud Triggers {#acc-triggers-updates}
 
-O serviço de autenticação oAuth herdado chegou ao fim da vida útil. A autenticação da integração dos acionadores, originalmente baseada na configuração da autenticação oAUTH para acessar o pipeline, foi movida para o Adobe I/O. O modo de autenticação oAuth herdado com o Campaign [foi removido](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-discussions/adobe-analytics-legacy-api-end-of-life-notice/td-p/385411) em **18 de agosto de 2021**. Os ambientes hospedados se beneficiam de uma extensão até **30 de novembro de 2021**. Como cliente local ou híbrido, entre em contato com o Atendimento ao cliente da Adobe para estender o suporte até 30 de novembro de 2021. Você deve fornecer [o AppID do aplicativo OAuth](../../integrations/using/configuring-pipeline.md?lang=en#step-optional) para o Adobe.
+O serviço de autenticação oAuth herdado chegou ao fim da vida útil. A autenticação da integração dos acionadores, originalmente baseada na configuração da autenticação oAUTH para acessar o pipeline, foi movida para o Adobe I/O. O modo de autenticação oAuth herdado com o Campaign [foi removido](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-discussions/adobe-analytics-legacy-api-end-of-life-notice/td-p/385411) em **18 de agosto de 2021**. Os ambientes hospedados se beneficiam de uma extensão até **30 de novembro de 2021**. Como cliente local ou híbrido, entre em contato com o Atendimento ao cliente da Adobe para estender o suporte até 30 de novembro de 2021. Você deve fornecer [o AppID do aplicativo OAuth](../integrations/using/configuring-pipeline.md?lang=en#step-optional) para o Adobe.
 
 **Você será afetado?**
 
