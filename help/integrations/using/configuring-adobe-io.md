@@ -8,10 +8,10 @@ index: y
 internal: n
 snippet: y
 exl-id: ab30f697-3022-4a29-bbdb-14ca12ec9c3e
-source-git-commit: 601cc3883d7fa8abaa86161365c4230cbe30765c
+source-git-commit: 550c4afc5cc77867b56d17565bef3f18b1df12a2
 workflow-type: tm+mt
-source-wordcount: '682'
-ht-degree: 96%
+source-wordcount: '703'
+ht-degree: 93%
 
 ---
 
@@ -22,8 +22,7 @@ ht-degree: 96%
 >Se você estiver usando uma versão mais antiga da integração de acionadores por meio da autenticação oAuth, **será necessário mudar para o Adobe I/O conforme descrito abaixo**.
 >Observe que, durante a migração para o [!DNL Adobe I/O], alguns acionadores de entrada podem ser perdidos.
 >
->O modo de autenticação oAuth herdado com o Campaign será desativado em **18 de agosto de 2021** para ambientes híbridos e no local e em **30 de novembro de 2021** para ambientes hospedados. [Saiba mais](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-discussions/adobe-analytics-legacy-api-end-of-life-notice/td-p/385411)
-
+>O modo de autenticação oAuth herdado com o Campaign [foi removido](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-discussions/adobe-analytics-legacy-api-end-of-life-notice/td-p/385411) em **18 de agosto de 2021**. Os ambientes hospedados se beneficiam de uma extensão até **30 de novembro de 2021**. Como cliente local ou híbrido, entre em contato com o Atendimento ao cliente da Adobe para estender o suporte até 30 de novembro de 2021. Você deve fornecer [o AppID do aplicativo OAuth](../../integrations/using/configuring-pipeline.md?lang=en#step-optional) para o Adobe.
 
 ## Pré-requisitos {#adobe-io-prerequisites}
 
