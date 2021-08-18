@@ -6,10 +6,10 @@ feature: Visão geral
 role: User
 level: Beginner
 exl-id: e927b7fc-95cd-4e08-bab7-ceeb6e67c265
-source-git-commit: 601cc3883d7fa8abaa86161365c4230cbe30765c
+source-git-commit: 550c4afc5cc77867b56d17565bef3f18b1df12a2
 workflow-type: tm+mt
-source-wordcount: '1962'
-ht-degree: 97%
+source-wordcount: '1991'
+ht-degree: 96%
 
 ---
 
@@ -32,8 +32,8 @@ _27 de outubro de 2020_
 >[!CAUTION]
 >
 > * Esta versão é fornecida com um novo protocolo de conexão: se você estiver se conectando ao Campaign pelo Serviço de identidade da Adobe (IMS), a atualização será obrigatória para o servidor do Campaign e o console do cliente poderem se conectar ao Campaign após **30 de junho de 2021**. [Saiba mais](../../technotes/ims-updates.md)
-> * Esta versão vem com uma [correção de segurança](https://helpx.adobe.com/security/products/campaign/apsb21-04.html): a atualização é obrigatória para reforçar a segurança do ambiente.
-> * Se você estiver usando a integração dos acionadores da Experience Cloud por meio da autenticação oAuth, será necessário migrar para o Adobe I/O conforme descrito [nesta página](../../integrations/using/configuring-adobe-io.md). O modo de autenticação oAuth herdado com o Campaign será desativado em **18 de agosto de 2021** para ambientes híbridos e no local e em **30 de novembro de 2021** para ambientes hospedados.
+> * Esta versão vem com uma [correção de segurança](https://helpx.adobe.com/br/security/products/campaign/apsb21-04.html): a atualização é obrigatória para reforçar a segurança do ambiente.
+> * Se você estiver usando a integração dos acionadores da Experience Cloud por meio da autenticação oAuth, será necessário migrar para o Adobe I/O conforme descrito [nesta página](../../integrations/using/configuring-adobe-io.md). O modo de autenticação oAuth herdado com o Campaign [foi removido](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-discussions/adobe-analytics-legacy-api-end-of-life-notice/td-p/385411) em **18 de agosto de 2021**. Os ambientes hospedados se beneficiam de uma extensão até **30 de novembro de 2021**. Como cliente local ou híbrido, entre em contato com o Atendimento ao cliente da Adobe para estender o suporte até 30 de novembro de 2021. Você deve fornecer [o AppID do aplicativo OAuth](../../integrations/using/configuring-pipeline.md?lang=en#step-optional) para o Adobe.
 
 
 **Novidades**
