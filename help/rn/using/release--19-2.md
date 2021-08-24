@@ -2,11 +2,8 @@
 product: campaign
 title: Versão 19.2
 description: Notas de versão do Campaign 19.2
-feature: null
-role: null
-level: null
 exl-id: 3c529e4e-8787-41d2-b85d-3feaa5432196
-source-git-commit: 883ac681e0bf0e4ccf916c745924b7340a4d22f9
+source-git-commit: 2a92cfc705e27332cfdf8c7357a6a03c84dc6c9f
 workflow-type: tm+mt
 source-wordcount: '1542'
 ht-degree: 99%
@@ -15,7 +12,7 @@ ht-degree: 99%
 
 # Versão 19.2{#release-19-2}
 
-## ![](assets/do-not-localize/limited_2.png) Versão 19.2.4 – Compilação 9082 {#release-19-2-4-build-9082}
+## ![](assets/do-not-localize/limited_2.png) Versão 19.2.4 – Build 9082 {#release-19-2-4-build-9082}
 
 _15 de abril de 2021_
 
@@ -44,7 +41,7 @@ _23 de dezembro de 2020_
 > * Esta versão é fornecida com um novo protocolo de conexão: se você estiver se conectando ao Campaign pelo Serviço de identidade da Adobe (IMS), a atualização será obrigatória para o servidor do Campaign e o console do cliente poderem se conectar ao Campaign após **30 de junho de 2021**. [Saiba mais](../../technotes/ims-updates.md)
    >
    > 
-* Esta versão vem com uma [correção de segurança](https://helpx.adobe.com/security/products/campaign/apsb21-04.html): a atualização é obrigatória para reforçar a segurança do ambiente.
+* Esta versão vem com uma [correção de segurança](https://helpx.adobe.com/br/security/products/campaign/apsb21-04.html): a atualização é obrigatória para reforçar a segurança do ambiente.
 
 
 
@@ -54,7 +51,7 @@ _23 de dezembro de 2020_
 
 
 
-## ![](assets/do-not-localize/red_2.png) Versão 19.2.3 – Compilação 9081 {#release-19-2-3-build-9081}
+## ![](assets/do-not-localize/red_2.png) Versão 19.2.3 – Build 9081 {#release-19-2-3-build-9081}
 
 _7 de fevereiro de 2020_
 
@@ -63,7 +60,7 @@ _7 de fevereiro de 2020_
 * Correção de um problema de regressão devido à implementação da certificação SSL que causava a falha da conexão do usuário no servidor Windows. (NEO-20629)
 * Correção de um problema que exibia um número de tag de versão incorreto no menu **About**.
 
-## ![](assets/do-not-localize/red_2.png) Versão 19.2 – Compilação 9080 {#release-19-2-build-9080}
+## ![](assets/do-not-localize/red_2.png) Versão 19.2 – Build 9080 {#release-19-2-build-9080}
 
 _2 de dezembro de 2019_
 
