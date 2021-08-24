@@ -2,11 +2,8 @@
 product: campaign
 title: Notas de versão do Campaign 18.4
 description: Notas de versão do Campaign 18.4
-feature: null
-role: null
-level: null
 exl-id: bbad81ba-a09f-4d67-9309-628ea7a08c9b
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 2a92cfc705e27332cfdf8c7357a6a03c84dc6c9f
 workflow-type: tm+mt
 source-wordcount: '2267'
 ht-degree: 99%
@@ -15,7 +12,7 @@ ht-degree: 99%
 
 # Versão 18.4{#release-18-4}
 
-## Versão 18.4.5 - Build 8937{#release-18-4-5-build-8937}
+## Versão 18.4.5 – Build 8937{#release-18-4-5-build-8937}
 
 21 de novembro de 2018
 
@@ -42,7 +39,7 @@ ht-degree: 99%
 * Tempo de memória compartilhado aprimorado disponível durante o processamento de crianças menores (MTA).
 * Correção de um possível bloqueio no Apache (rastreamento).
 
-## Versão 18.4.4 - Build 8936{#release-18-4-4-build-8936}
+## Versão 18.4.4 – Build 8936{#release-18-4-4-build-8936}
 
 1 de agosto de 2018
 
@@ -59,7 +56,7 @@ ht-degree: 99%
 * Correção de um problema que exibia erros inúteis no log após a atualização quando uma atividade de workflow **[!UICONTROL Survey answers]** não estava totalmente configurada.
 * FDA Teradata: correção de um problema com campos incrementados automaticamente e índices em tabelas SQL.
 
-## Versão 18.4.3 - Build 8935{#release-18-4-3-build-8935}
+## Versão 18.4.3 – Build 8935{#release-18-4-3-build-8935}
 
 22 de junho de 2018
 
@@ -73,7 +70,7 @@ ht-degree: 99%
 * Correção de um problema ao sincronizar espaços de oferta da instância de marketing para a instância de interação. (NEO-11162)
 * Melhoria do gerenciamento de índices de nomes longos durante a pós atualização.
 
-## Versão 18.4.2 - Build 8932{#release-18-4-2-build-8932}
+## Versão 18.4.2 – Build 8932{#release-18-4-2-build-8932}
 
 22 de maio de 2018
 
@@ -84,7 +81,7 @@ ht-degree: 99%
 * Correção de um problema de desempenho que poderia ocorrer com o processo inMail ao usar um servidor de email de devolução. (NEO-10641)
 * Correção de um problema de atualização de banco de dados que pode ocorrer ao atualizar mais de 1000 schemas.
 
-## Versão 18.4 - Build 8931{#release-18-4-build-8931}
+## Versão 18.4 – Build 8931{#release-18-4-build-8931}
 
 24 de abril de 2018
 
