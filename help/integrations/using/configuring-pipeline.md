@@ -5,9 +5,9 @@ description: Saiba como configurar o pipeline
 audience: integrations
 content-type: reference
 exl-id: 2d214c36-8429-4b2b-b1f5-fe2730581bba
-source-git-commit: 6a5253c1aa35e904635919f6c863930d376b473f
+source-git-commit: b6aa797133e6f916bf085794aeb99d61a8f7bc40
 workflow-type: tm+mt
-source-wordcount: '915'
+source-wordcount: '902'
 ht-degree: 99%
 
 ---
@@ -17,10 +17,6 @@ ht-degree: 99%
 Parâmetros de autenticação, como ID do cliente, chave privada e endpoint de autenticação, são configurados nos arquivos de configuração da instância.
 A lista de acionadores que serão processados é configurada em uma opção em formato JSON.
 Os acionadores são usados para segmentação por um workflow de campanha que envia emails. A campanha é configurada para que um cliente que tenha ambos os eventos de acionador receba um email.
-
->[!CAUTION]
->
->No caso de implantação híbrida, verifique se o pipeline está configurado em uma instância intermediária.
 
 ## Pré-requisitos {#prerequisites}
 
