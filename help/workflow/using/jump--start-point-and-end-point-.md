@@ -6,14 +6,16 @@ audience: workflow
 content-type: reference
 topic-tags: flow-control-activities
 exl-id: 0d2d04e7-cb86-4456-b7cf-513c71210355
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
-workflow-type: ht
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+workflow-type: tm+mt
 source-wordcount: '116'
 ht-degree: 100%
 
 ---
 
 # Jump (ponto inicial e ponto final){#jump-start-point-and-end-point}
+
+![](../../assets/common.svg)
 
 Os objetos gráficos do tipo **[!UICONTROL Jump]** são usados para melhorar a leitura de um diagrama complexo, especialmente que contenha transições cruzadas.
 
@@ -29,4 +31,4 @@ Para cada transição de tipo &quot;ponto inicial&quot;, uma transição de tipo
 
 ![](assets/s_user_segmentation_jump_in.png)
 
-Para melhorar a legibilidade do diagrama, é possível alterar a imagem associada aos saltos para exibir o número relacionado. Consulte [Gerenciamento de imagens de atividades](../../workflow/using/managing-activity-images.md).
+Para melhorar a legibilidade do diagrama, é possível alterar a imagem associada aos saltos para exibir o número relacionado. Consulte [Gerenciamento de imagens de atividades](managing-activity-images.md).

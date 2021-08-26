@@ -1,24 +1,26 @@
 ---
 product: campaign
-title: Query
+title: Consulta
 description: Saiba mais sobre a atividade do workflow de query
 audience: workflow
 content-type: reference
 topic-tags: targeting-activities
 exl-id: 20d03627-cd56-46da-bc02-73b48a02a350
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
-workflow-type: ht
-source-wordcount: '1622'
-ht-degree: 100%
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+workflow-type: tm+mt
+source-wordcount: '1629'
+ht-degree: 98%
 
 ---
 
 # Consulta{#query}
 
-## Criação de query {#creating-a-query}
+![](../../assets/common.svg)
+
+## Criação de consulta {#creating-a-query}
 
 Um query permite selecionar um target de acordo com critérios. Você pode associar um código de segmento ao resultado do query e inserir dados adicionais nele.
-Para obter mais informações sobre amostras de query, consulte [esta seção](../../workflow/using/querying-recipient-table.md).
+Para obter mais informações sobre amostras de query, consulte [esta seção](querying-recipient-table.md).
 
 >[!NOTE]
 >
@@ -36,7 +38,7 @@ O link **[!UICONTROL Edit query...]** permite definir o tipo de direcionamento, 
 
    A dimensão do filtro permite coletar esses elementos, por exemplo, informações relacionadas à pessoa alvo (contratos, liquidações completas e finais etc.).
 
-   Para obter mais informações, consulte [Direcionamento e dimensões de filtragem](../../workflow/using/building-a-workflow.md#targeting-and-filtering-dimensions).
+   Para obter mais informações, consulte [Direcionamento e dimensões de filtragem](building-a-workflow.md#targeting-and-filtering-dimensions).
 
    ![](assets/s_user_segmentation_query_edit.png)
 
@@ -52,7 +54,7 @@ O link **[!UICONTROL Edit query...]** permite definir o tipo de direcionamento, 
 
 1. Se você selecionou **[!UICONTROL Filtering conditions]** na etapa 1 ou usou a opção **[!UICONTROL Filters]** > **[!UICONTROL Advanced filter...]**, será necessário adicionar manualmente os critérios de filtragem posteriormente.
 
-   Você também pode adicionar condições de agrupamento de dados marcando a caixa correspondente. Para fazer isso, a dimensão de filtro deve ser diferente do targeting dimension do query. Para obter mais informações sobre agrupamento, consulte esta [seção](../../workflow/using/querying-using-grouping-management.md).
+   Você também pode adicionar condições de agrupamento de dados marcando a caixa correspondente. Para fazer isso, a dimensão de filtro deve ser diferente do targeting dimension do query. Para obter mais informações sobre agrupamento, consulte esta [seção](querying-using-grouping-management.md).
 
    Você também pode adicionar mais critérios usando o Construtor de Expressões e combinando com as opções lógicas AND, OR e EXCEPT. Em seguida, é possível pré-visualizar o **[!UICONTROL Corresponding SQL query...]** para sua combinação de critérios. Para obter mais informações, consulte [esta seção](../../platform/using/defining-filter-conditions.md#building-expressions).
 
@@ -73,7 +75,7 @@ Comece selecionando o tipo de dado a ser adicionado:
 ![](assets/wf_add_data_1st_option.png)
 
 * Selecione **[!UICONTROL Data linked to the filtering dimension]** para selecionar os dados no banco de dados do Adobe Campaign.
-* Selecione **[!UICONTROL External data]** para adicionar dados de um banco de dados externo. Essa opção só estará disponível se você tiver adquirido a opção **Federated Data Access** . Para obter mais informações, consulte [Acesso a um banco de dados externo (FDA)](../../workflow/using/accessing-an-external-database--fda-.md).
+* Selecione **[!UICONTROL External data]** para adicionar dados de um banco de dados externo. Essa opção só estará disponível se você tiver adquirido a opção **Federated Data Access** . Para obter mais informações, consulte [Acesso a um banco de dados externo (FDA)](accessing-an-external-database--fda-.md).
 * Selecione a opção **[!UICONTROL An offer proposition]** para adicionar um conjunto de colunas que permitem armazenar a melhor apresentação gerada pelo mecanismo de oferta. Essa opção só estará disponível se você tiver adquirido o módulo **Interaction** .
 
 Se nenhum módulo opcional estiver instalado na plataforma, esse estágio não será exibido. Você será direcionado ao próximo estágio.
@@ -90,10 +92,10 @@ Para adicionar dados do banco de dados do Adobe Campaign:
 
    Você pode adicionar:
 
-   * Um campo calculado com base nos dados obtidos do público alvo ou em um agregado (número de compras pendentes no último mês, quantidade média de um recibo, etc.). Para obter um exemplo, acesse [Seleção de dados](../../workflow/using/targeting-data.md#selecting-data).
+   * Um campo calculado com base nos dados obtidos do público alvo ou em um agregado (número de compras pendentes no último mês, quantidade média de um recibo, etc.). Para obter um exemplo, acesse [Seleção de dados](targeting-data.md#selecting-data).
    * Um novo campo, criado por meio do botão **[!UICONTROL Add]** à direita da lista de colunas de output.
 
-      Você também pode adicionar uma coleção de informações, por exemplo, uma lista de contratos, os últimos 5 deliveries, etc. As coleções coincidem com os campos que podem ter múltiplos valores para o mesmo perfil (relação 1-N). Para obter mais informações, consulte [Edição de dados adicionais](../../workflow/using/targeting-data.md#editing-additional-data).
+      Você também pode adicionar uma coleção de informações, por exemplo, uma lista de contratos, os últimos 5 deliveries, etc. As coleções coincidem com os campos que podem ter múltiplos valores para o mesmo perfil (relação 1-N). Para obter mais informações, consulte [Edição de dados adicionais](targeting-data.md#editing-additional-data).
 
 Para adicionar uma coleção de informações vinculadas a um público alvo:
 
@@ -129,7 +131,7 @@ No exemplo a seguir, o query busca identificar homens que moram na França com i
 
 >[!NOTE]
 >
->Os exemplos de query são apresentados [nesta seção](../../workflow/using/querying-recipient-table.md).
+>Os exemplos de query são apresentados [nesta seção](querying-recipient-table.md).
 
 1. Nomeie o query e selecione o link **[!UICONTROL Edit query...]**.
 1. Selecione **[!UICONTROL Filtering conditions]** na lista de tipos de filtros disponíveis.
@@ -155,7 +157,7 @@ No exemplo a seguir, o query busca identificar homens que moram na França com i
 
    ![](assets/query_example_result.png)
 
-## Parâmetros de output {#output-parameters}
+## Parâmetros de saída {#output-parameters}
 
 * tableName
 * schema
@@ -184,7 +186,11 @@ A seção abaixo fornece as práticas recomendadas para otimizar as consultas ex
 
    Verifique se você sabe qual será o plano de execução da consulta. Evite varreduras completas de tabelas, especialmente para consultas em tempo real ou consultas quase em tempo real em execução a cada minuto.
 
-Para obter mais informações, consulte as [Práticas recomendadas do modelo de dados](https://helpx.adobe.com/br/campaign/kb/acc-data-model-best-practices.html) e as seções de [Mapeamento do banco de dados](../../configuration/using/database-mapping.md).
+   Para obter mais informações, dependendo da versão do Campaign, consulte estas seções:
+
+   ![](assets/do-not-localize/v7.jpeg)[  Documentação do Campaign v7](../../configuration/using/database-mapping.md)
+
+   ![](assets/do-not-localize/v8.png)[  Documentação do Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/architecture/shemas-forms/database-mapping.html)
 
 ### Funções {#functions}
 
@@ -211,7 +217,7 @@ O equivalente da dimensão do filtro no SQL é a associação interna:
 
 `select iRecipientId from nmsRecipient INNER JOIN nmsBroadLog ON (...)`
 
-Para saber mais sobre as dimensões do filtro, consulte [esta seção](../../workflow/using/building-a-workflow.md#targeting-and-filtering-dimensions).
+Para saber mais sobre as dimensões do filtro, consulte [esta seção](building-a-workflow.md#targeting-and-filtering-dimensions).
 
 ### Arquitetura {#architecture}
 

@@ -6,14 +6,16 @@ audience: campaign
 content-type: reference
 topic-tags: tasks--resources-and-budgets
 exl-id: f661e1d1-de2f-4c6a-bbff-e3ffcd1831f0
-source-git-commit: 690f7c4e62203127da7a7055afa0ee8ad4a2bce4
-workflow-type: ht
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+workflow-type: tm+mt
 source-wordcount: '1386'
 ht-degree: 100%
 
 ---
 
 # Gerenciar recursos de marketing{#managing-marketing-resources}
+
+![](../../assets/v7-only.svg)
 
 O Adobe Campaign permite gerenciar e acompanhar os recursos de marketing envolvidos no ciclo de vida da campanha. Esses recursos de marketing podem ser um folheto, um auxílio visual ou qualquer outro meio de comunicação que envolva vários operadores.
 

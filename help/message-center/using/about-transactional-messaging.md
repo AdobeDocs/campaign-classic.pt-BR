@@ -6,8 +6,8 @@ audience: message-center
 content-type: reference
 topic-tags: introduction
 exl-id: dc52e789-d0bf-4e8f-b448-9d69a2762cc1
-source-git-commit: e86350cf12db37e3f2c227563057b97922601729
-workflow-type: ht
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+workflow-type: tm+mt
 source-wordcount: '644'
 ht-degree: 100%
 
@@ -15,6 +15,8 @@ ht-degree: 100%
 
 
 # Introdução a mensagens transacionais {#about-transactional-messaging}
+
+![](../../assets/v7-only.svg)
 
 ## Visão geral {#overview}
 
@@ -60,7 +62,7 @@ As principais etapas para colocar isso em prática são detalhadas abaixo [nesta
 >
 >O Adobe Campaign prioriza o processamento das mensagens transacionais antes de qualquer outra entrega.
 
-## Principais etapas{#key-steps}
+## Principais etapas {#key-steps}
 
 As principais etapas ao criar e gerenciar mensagens transacionais personalizadas no Adobe Campaign estão resumidas abaixo.
 

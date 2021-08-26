@@ -6,14 +6,16 @@ audience: interaction
 content-type: reference
 topic-tags: case-study
 exl-id: 90afced3-465d-4370-8a33-51a7e4356135
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
-workflow-type: ht
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+workflow-type: tm+mt
 source-wordcount: '2088'
 ht-degree: 100%
 
 ---
 
 # Ofertas em um canal de entrada{#offers-on-an-inbound-channel}
+
+![](../../assets/v7-only.svg)
 
 ## Apresentação de uma oferta a um visitante anônimo {#presenting-an-offer-to-an-anonymous-visitor}
 
@@ -276,7 +278,7 @@ Agora vamos criar duas ofertas em cada uma das categorias criadas acima.
 
 1. Execute o ciclo de aprovação em cada oferta para ativá-las. Ao aprovar o conteúdo, ative o espaço de ofertas **Parceiro** ou **Melhor Oferta**, de acordo com a oferta.
 
-### Configuração dos espaços de oferta no ambiente identificado {#configure-the-offer-spaces-in-the-identified-environment}
+### Configure os espaços de oferta no ambiente identificado {#configure-the-offer-spaces-in-the-identified-environment}
 
 As ofertas que você vai apresentar no site são obtidas de duas categorias diferentes: **Best Offer** e **Partner**. Neste exemplo, queremos criar um espaço específico para cada delivery.
 

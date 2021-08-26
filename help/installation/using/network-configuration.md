@@ -6,7 +6,7 @@ audience: installation
 content-type: reference
 topic-tags: prerequisites-and-recommendations-
 exl-id: b86236ae-95e9-4406-b60f-6d90ad0d4a01
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '666'
 ht-degree: 3%
@@ -14,6 +14,8 @@ ht-degree: 3%
 ---
 
 # Configuração de rede{#network-configuration}
+
+![](../../assets/v7-only.svg)
 
 ## Comunicação entre processos {#communication-between-processes}
 
@@ -100,7 +102,7 @@ Para o servidor de aplicativos (**nlserver web**), as seguintes portas devem est
 
 Quando vários servidores de aplicativos de uma plataforma Adobe Campaign precisarem se comunicar, recomendamos usar a porta do servidor Apache Tomcat (por padrão: 8080) em vez da porta HTTP do servidor Web com o qual a integração do módulo de redirecionamento foi realizada. Isso significa que a porta precisa ser aberta entre esses servidores.
 
-### Status do delivery de SMS {#sms-delivery-status}
+### Status do delivery SMS {#sms-delivery-status}
 
 Para rastrear deliveries de SMS (**nlserver sms**), a seguinte porta deve estar aberta:
 

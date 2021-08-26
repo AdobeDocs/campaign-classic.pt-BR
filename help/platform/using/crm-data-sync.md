@@ -6,14 +6,16 @@ audience: platform
 content-type: reference
 topic-tags: connectors
 exl-id: 7f9eda15-76e8-40a1-8302-004cea085778
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
-workflow-type: ht
-source-wordcount: '1530'
-ht-degree: 100%
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+workflow-type: tm+mt
+source-wordcount: '1528'
+ht-degree: 97%
 
 ---
 
 # Sincronizar dados entre o Campaign e o CRM {#data-synchronization}
+
+![](../../assets/common.svg)
 
 A sincronização de dados entre o Adobe Campaign e o CRM é realizada por meio de uma atividade dedicada de fluxo de trabalho: [conector CRM](../../workflow/using/crm-connector.md).
 
@@ -251,4 +253,3 @@ A guia **[!UICONTROL Behavior]** permite habilitar o processamento de rejeiçõe
 >[!NOTE]
 >
 >Mesmo quando a opção **[!UICONTROL Process rejects]** está desabilitada, um aviso é gerado para cada coluna rejeitada.
-

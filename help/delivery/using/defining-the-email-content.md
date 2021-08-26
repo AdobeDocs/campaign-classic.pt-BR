@@ -6,7 +6,7 @@ audience: delivery
 content-type: reference
 topic-tags: sending-emails
 exl-id: 46212929-fd2d-44a2-897e-35f98e88af36
-source-git-commit: f2300b265fa97e5b208519ab2446927d14f5f91c
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '1992'
 ht-degree: 98%
@@ -14,6 +14,8 @@ ht-degree: 98%
 ---
 
 # Definição do conteúdo do email {#defining-the-email-content}
+
+![](../../assets/common.svg)
 
 ## Remetente {#sender}
 
@@ -187,9 +189,8 @@ Quando você abre conteúdo HTML com imagens incluídas no assistente do deliver
 >[!IMPORTANT]
 >
 >* Os caminhos de acesso à imagem são modificados durante o carregamento manual ou ao enviar as mensagens.
-   > 
-   >
-* Para evitar problemas de desempenho, ao incluir imagens baixadas de um URL personalizado como [attachment](attaching-files.md), cada tamanho de imagem não deve exceder 100.000 bytes por padrão. Esse limite recomendado pode ser configurado na [ lista das opções do Campaign Classic ](../../installation/using/configuring-campaign-options.md#delivery).
+> 
+>* Para evitar problemas de desempenho, ao incluir imagens baixadas de um URL personalizado como [attachment](attaching-files.md), cada tamanho de imagem não deve exceder 100.000 bytes por padrão. Esse limite recomendado pode ser configurado na [ lista das opções do Campaign Classic ](../../installation/using/configuring-campaign-options.md#delivery).
 
 
 **Caso de uso: enviar uma mensagem com imagens**

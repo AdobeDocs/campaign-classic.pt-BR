@@ -6,14 +6,16 @@ audience: workflow
 content-type: reference
 topic-tags: event-activities
 exl-id: 94a9d50b-4ead-4815-8d12-942fa78b4e8a
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
-workflow-type: ht
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+workflow-type: tm+mt
 source-wordcount: '106'
 ht-degree: 100%
 
 ---
 
 # SMS de entrada{#inbound-sms}
+
+![](../../assets/common.svg)
 
 A atividade de **SMS de Entrada** permite baixar e processar mensagens de texto de uma conta externa.
 
@@ -31,4 +33,4 @@ A primeira guia da atividade de **SMS de Entrada** permite inserir os parâmetro
 
 1. **[!UICONTROL Expiration]**
 
-As guias **[!UICONTROL Script]**, **[!UICONTROL Schedule]** e **[!UICONTROL Expiry]** são detalhadas em [Emails de entrada](../../workflow/using/inbound-emails.md).
+As guias **[!UICONTROL Script]**, **[!UICONTROL Schedule]** e **[!UICONTROL Expiry]** são detalhadas em [Emails de entrada](inbound-emails.md).

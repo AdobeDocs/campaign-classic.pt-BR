@@ -6,14 +6,16 @@ audience: workflow
 content-type: reference
 topic-tags: flow-control-activities
 exl-id: 7a38653b-c15d-4ed8-85dc-f7214409f42b
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
-workflow-type: ht
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+workflow-type: tm+mt
 source-wordcount: '196'
 ht-degree: 100%
 
 ---
 
 # Bifurcação{#fork}
+
+![](../../assets/common.svg)
 
 A atividade **[!UICONTROL Fork]** permite criar várias transições de saída para realizar várias atividades independentemente no mesmo fluxo de trabalho.
 
@@ -32,4 +34,4 @@ Para configurar a atividade **[!UICONTROL Fork]**, abra-a e defina o número e o
 
 ![](assets/s_user_segmentation_fork.png)
 
-Em seguida, você pode configurar cada transição de saída e associá-la usando uma atividade [AND-join](../../workflow/using/and-join.md), se necessário. Dessa forma, o restante do fluxo de trabalho será executado somente depois que as transições de saída da atividade **[!UICONTROL Fork]** forem concluídas.
+Em seguida, você pode configurar cada transição de saída e associá-la usando uma atividade [AND-join](and-join.md), se necessário. Dessa forma, o restante do fluxo de trabalho será executado somente depois que as transições de saída da atividade **[!UICONTROL Fork]** forem concluídas.

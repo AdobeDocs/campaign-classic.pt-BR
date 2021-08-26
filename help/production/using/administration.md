@@ -6,7 +6,7 @@ audience: production
 content-type: reference
 topic-tags: production-procedures
 exl-id: 12a255fe-66f9-40ce-b19e-c24322c2e009
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '411'
 ht-degree: 1%
@@ -14,6 +14,8 @@ ht-degree: 1%
 ---
 
 # Administração{#administration}
+
+![](../../assets/v7-only.svg)
 
 Inicialização automática dos módulos Adobe Campaign (**web**, **mta**, **wfserver**, etc.) é fornecido pelo servidor **nlserver**.
 
@@ -78,14 +80,15 @@ Esta é uma lista dos comandos de administração usuais acessíveis no Linux (c
    >* Em caso de emergência, use a opção **-immediate** para forçar uma interrupção imediata do processo (equivalente ao comando Unix **kill -9**).
    >* Use a opção **-noconsole** para garantir que o módulo iniciado não exiba nada no console. Seus registros serão gravados no disco por meio do módulo **syslogd**.
    >* Use a opção **-verbose** para exibir informações adicionais sobre as ações do processo.
-   >
-   >   Exemplo:
-   >
-   >   **nlserver restart web -verbose**
-   >
-   >   **nlserver start mta@myinstance -verbose**
-   >
-   >   Essa opção adiciona logs adicionais. Recomendamos iniciar os processos novamente sem a opção **-verbose** depois de encontrar as informações desejadas, para evitar sobrecarga de logs.
+
+      >
+      >   Exemplo:
+      >
+      >   **nlserver restart web -verbose**
+      >
+      >   **nlserver start mta@myinstance -verbose**
+      >
+      >   Essa opção adiciona logs adicionais. Recomendamos iniciar os processos novamente sem a opção **-verbose** depois de encontrar as informações desejadas, para evitar sobrecarga de logs.
 
 
 * Inicie todos os processos do Adobe Campaign (equivalente à inicialização do serviço **nlserver6**):

@@ -1,19 +1,21 @@
 ---
 product: campaign
 title: Perguntas frequentes sobre teste e envio
-description: Perguntas frequentes sobre o Adobe Campaign Classic
+description: Perguntas frequentes sobre o Campaign Classic
 audience: platform
 content-type: reference
 topic-tags: starting-with-adobe-campaign
 exl-id: 7fc24ef2-b021-440b-b1f2-8c77e2425328
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
-workflow-type: ht
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+workflow-type: tm+mt
 source-wordcount: '735'
 ht-degree: 100%
 
 ---
 
 # Validar, enviar e rastrear mensagens {#validate-send-track}
+
+![](../../assets/common.svg)
 
 ## Teste e validação {#test-and-validate-before-sending}
 
@@ -44,7 +46,7 @@ Temos assim os seguintes benefícios:
 
 ### Como posso configurar um processo de aprovação antes de enviar mensagens? {#how-can-i-set-up-an-approval-process-before-sending-messages-}
 
-Para detectar possíveis erros na configuração da mensagem, a Adobe recomenda configurar um ciclo de validação de entrega. Verifique se o conteúdo é aprovado com a frequência necessária enviando provas para testar os destinatários. Uma prova deve ser enviada toda vez que uma alteração for feita, para aprovar o conteúdo.
+Para detectar possíveis erros na configuração da mensagem, a Adobe recomenda configurar um ciclo de validação de delivery. Verifique se o conteúdo é aprovado com a frequência necessária enviando provas para testar os destinatários. Uma prova deve ser enviada toda vez que uma alteração for feita, para aprovar o conteúdo.
 
 [Clique aqui para saber mais](../../delivery/using/steps-validating-the-delivery.md#sending-a-proof).
 
@@ -52,7 +54,7 @@ Para detectar possíveis erros na configuração da mensagem, a Adobe recomenda 
 
 Para evitar conflitos entre campanhas, o Adobe Campaign pode testar várias combinações aplicando regras de restrição específicas. Isso garante que as mensagens enviadas atendam melhor às necessidades e expectativas dos clientes, de acordo com as políticas de comunicação da empresa.
 
-[Clique aqui para saber mais](../../campaign/using/about-campaign-typologies.md).
+[Clique aqui para saber mais](../../campaign-opt/using/about-campaign-typologies.md).
 
 ## Envie suas mensagens {#send-your-messages}
 

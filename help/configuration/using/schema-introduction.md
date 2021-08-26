@@ -6,14 +6,16 @@ audience: configuration
 content-type: reference
 topic-tags: schema-reference
 exl-id: 5745fc60-9df3-4ad0-bbeb-f6ae8c86a5aa
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '91'
 ht-degree: 27%
 
 ---
 
-# Referência de esquema {#schema-reference}
+# Referência do schema {#schema-reference}
+
+![](../../assets/v7-only.svg)
 
 Ao editar um schema, um sistema de aprovação com base no schema de origem (xtk:srcSchema) está disponível. Alguns erros também podem ser detectados ao atualizar o banco de dados usando a &quot;Atualização da estrutura do banco de dados...&quot; assistente.
 

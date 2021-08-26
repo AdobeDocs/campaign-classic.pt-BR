@@ -6,14 +6,16 @@ audience: workflow
 content-type: reference
 topic-tags: action-activities
 exl-id: 72fbdd1d-a105-4e9f-9e17-2e9d62d2bb80
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
-workflow-type: ht
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+workflow-type: tm+mt
 source-wordcount: '917'
 ht-degree: 100%
 
 ---
 
 # Entrega{#delivery}
+
+![](../../assets/common.svg)
 
 Uma atividade do tipo **Delivery** permite criar uma ação de delivery. Ele pode ser construído usando elementos de entrada.
 
@@ -81,7 +83,7 @@ Para configurá-lo, edite a atividade e insira as opções de delivery.
    * **[!UICONTROL Send a proof]**: esta opção permite enviar uma prova do delivery. Esta ação é equivalente ao clicar em **[!UICONTROL Send a proof]** na barra de ferramentas de um delivery com **Delivery**
    * **[!UICONTROL Prepare and start]**: esta opção inicia o processo de análise completa (cálculo de target e preparação de conteúdo) e envia o delivery. Esta ação é equivalente a clicar na opção **[!UICONTROL Deliver as soon as possible]**, **[!UICONTROL Analyze]** e **[!UICONTROL Confirm delivery]** ao enviar um delivery ao target principal com **Delivery**.
 
-   A atividade **[!UICONTROL Act on a delivery]** usada mais no workflow permite iniciar todas as etapas restantes necessárias para iniciar o delivery (cálculo de target, preparação de conteúdo, delivery). Para obter mais informações, consulte [Controle de delivery](../../workflow/using/delivery-control.md).
+   A atividade **[!UICONTROL Act on a delivery]** usada mais no workflow permite iniciar todas as etapas restantes necessárias para iniciar o delivery (cálculo de target, preparação de conteúdo, delivery). Para obter mais informações, consulte [Controle de delivery](delivery-control.md).
 
    As seguintes opções também estão disponíveis:
 
@@ -95,7 +97,7 @@ Para configurá-lo, edite a atividade e insira as opções de delivery.
 
    * **[!UICONTROL Processing errors]**
 
-      Consulte [Controle de delivery](../../workflow/using/delivery-control.md).
+      Consulte [Controle de delivery](delivery-control.md).
    A guia **Script** permite modificar os parâmetros de delivery.
 
    ![](assets/edit_diffusion_fil_script.png)
@@ -125,11 +127,11 @@ Abra a atividade de **Aprovação** e defina as propriedades da seguinte maneira
    Do you wish to approve delivery (<%= vars.recCount %> recipient(s))?
    ```
 
-   Esta é uma mensagem que inclui uma expressão escrita em JavaScript: **[!UICONTROL vars.recCount]** representa o número de recipients direcionados pelo delivery da tarefa anterior. Para obter mais informações sobre expressões JavaScript, consulte [Scripts e modelos do JavaScript](../../workflow/using/javascript-scripts-and-templates.md).
+   Esta é uma mensagem que inclui uma expressão escrita em JavaScript: **[!UICONTROL vars.recCount]** representa o número de recipients direcionados pelo delivery da tarefa anterior. Para obter mais informações sobre expressões JavaScript, consulte [Scripts e modelos do JavaScript](javascript-scripts-and-templates.md).
 
    ![](assets/new-workflow-param-validation.png)
 
-   A tarefa Approval é apresentada em [Approval](../../workflow/using/approval.md).
+   A tarefa Approval é apresentada em [Approval](approval.md).
 
 ## Parâmetros de entrada {#input-parameters}
 
@@ -153,7 +155,7 @@ Cada evento de entrada deve especificar um target definido por esses parâmetros
 
    Identificador de conteúdo se a opção **[!UICONTROL Specified by inbound events]** estiver selecionada na seção **[!UICONTROL Content]**.
 
-## Parâmetros de output {#output-parameters}
+## Parâmetros de saída {#output-parameters}
 
 * tableName
 * schema

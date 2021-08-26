@@ -6,14 +6,16 @@ audience: delivery
 content-type: reference
 topic-tags: deliverability-management
 exl-id: a3294e70-ac96-4e51-865f-b969624528ce
-source-git-commit: a129f49d4f045433899fd7fdbd057fb16d0ed36a
-workflow-type: ht
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+workflow-type: tm+mt
 source-wordcount: '813'
 ht-degree: 100%
 
 ---
 
 # Renderização da caixa de entrada{#inbox-rendering}
+
+![](../../assets/common.svg)
 
 ## Sobre renderização da caixa de entrada {#about-inbox-rendering}
 
@@ -82,8 +84,8 @@ Cada vez que você usa o recurso **[!UICONTROL Inbox rendering]** em um delivery
 >
 >* Cada vez que o relatório de renderização da Caixa de Entrada é gerado, é deduzido um token por cliente da mensagem: um token para a renderização do Outlook 2000, um para a renderização do Outlook 2010, um para a renderização do Apple Mail 9 e assim por diante.
 >* Para o mesmo delivery, se você gerar a renderização da Caixa de Entrada novamente, o número de tokens disponíveis será reduzido novamente pelo número de renderizações geradas.
->
 
+>
 
 
 O número de tokens disponíveis restantes é exibido no **[!UICONTROL General summary]** do [relatório de renderização da Caixa de entrada](#inbox-rendering-report)

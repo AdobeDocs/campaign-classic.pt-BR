@@ -6,8 +6,8 @@ audience: message-center
 content-type: reference
 topic-tags: use-case
 exl-id: 755d2364-f6c4-4943-97e8-3ed52a0f2665
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
-workflow-type: ht
+source-git-commit: 7f4bbf3e79d6cdaf17987b9307ebf12801abad22
+workflow-type: tm+mt
 source-wordcount: '625'
 ht-degree: 100%
 
@@ -15,9 +15,11 @@ ht-degree: 100%
 
 # Caso de uso: enviar emails transacionais com anexos {#transactional-email-with-attachments}
 
+![](../../assets/v7-only.svg)
+
 O objetivo deste caso de uso é adicionar anexos de email em tempo real a expedições de saída.
 
-## Principais etapas{#key-steps}
+## Principais etapas {#key-steps}
 
 Neste cenário, veremos como enviar emails transacionais com anexos individuais/personalizados. Os anexos não serão carregados previamente no servidor de mensagens transacionais, serão gerados em tempo real.
 
@@ -39,7 +41,7 @@ Nesse cenário, os anexos não são pré-criados, mas adicionados instantaneamen
 
 >[!NOTE]
 >
->Para evitar problemas de desempenho, se você incluir imagens baixadas online de um URL personalizado como anexo, cada tamanho de imagem não deverá exceder 100.000 bytes por padrão. Esse limite recomendado pode ser configurado na [lista de opções do Campaign Classic](../../installation/using/configuring-campaign-options.md#delivery).
+>Para evitar problemas de desempenho, se você incluir imagens baixadas online de um URL personalizado como anexo, cada tamanho de imagem não deverá exceder 100.000 bytes por padrão. Esse limite recomendado pode ser configurado na [ lista das opções do Campaign Classic ](../../installation/using/configuring-campaign-options.md#delivery).
 
 ## Recomendações {#important-notes}
 
@@ -75,7 +77,7 @@ Para adicionar um anexo de email rapidamente a uma mensagem transacional, siga a
 1. Na tela **[!UICONTROL Attachment definition]**, digite o parâmetro de anexo SOAP:
 
    ```
-   <%= rtEvent.ctx.attachementUrl %>
+   <%= rtEvent.ctx.attachmentUrl %>
    ```
 
 1. Quando a mensagem é processada, o sistema obtém o arquivo do local remoto (servidor de terceiros) e o anexa à mensagem individual.

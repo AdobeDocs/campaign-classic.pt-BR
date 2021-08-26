@@ -2,18 +2,20 @@
 product: campaign
 title: Criar e gerenciar grupos de operadores
 description: Saiba como conceder acesso a grupos de operadores
-feature: Gerenciamento de acesso
+feature: Access Management
 role: User, Admin
 level: Beginner
 exl-id: d5833d3d-e8ef-4f2b-8084-4ba825c79525
-source-git-commit: 6c28e6cd78ce7a8ee5c0dc7e671de780787b9f57
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
-source-wordcount: '500'
+source-wordcount: '498'
 ht-degree: 100%
 
 ---
 
 # Criar e gerenciar grupos de operadores {#operator-groups}
+
+![](../../assets/common.svg)
 
 Os grupos de operadores são criados por meio do nó **[!UICONTROL Administration > Access management > Operator groups]** na árvore.
 

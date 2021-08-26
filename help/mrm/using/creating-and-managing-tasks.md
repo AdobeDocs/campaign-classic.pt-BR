@@ -6,14 +6,16 @@ audience: campaign
 content-type: reference
 topic-tags: tasks--resources-and-budgets
 exl-id: cc1200fa-f6d8-4f41-aed1-d1a7f229447a
-source-git-commit: 690f7c4e62203127da7a7055afa0ee8ad4a2bce4
-workflow-type: ht
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+workflow-type: tm+mt
 source-wordcount: '3730'
 ht-degree: 100%
 
 ---
 
 # Criar e gerenciar tarefas{#creating-and-managing-tasks}
+
+![](../../assets/v7-only.svg)
 
 O Adobe Campaign permite criar tarefas e gerenciar seu ciclo de vida completo diretamente no aplicativo. A implementação de programas e campanhas pode ser dividida em tarefas atribuídas aos operadores do Adobe Campaign ou aos provedores de serviços externos. Esse modo de operação permite criar um ambiente de colaboração aberto que inclui todos os participantes do programa e participantes externos.
 
@@ -432,8 +434,8 @@ Uma tarefa pode ser: **[!UICONTROL Scheduled]**, **[!UICONTROL In progress]**, *
 >
 >* O status da tarefa é atualizado automaticamente.
 >* Mesmo que o período de validade seja concluído, as tarefas que não foram fechadas ainda aparecerão na lista de tarefas em andamento. Um aviso notifica os operadores que a tarefa está atrasada.
->
 
+>
 
 
 ### Status de progresso de uma tarefa {#progress-status-of-a-task}

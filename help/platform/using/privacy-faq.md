@@ -6,14 +6,16 @@ audience: platform
 content-type: reference
 topic-tags: starting-with-adobe-campaign
 exl-id: ce2c90cd-46d9-4365-8013-5c1273b6c176
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
-workflow-type: ht
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+workflow-type: tm+mt
 source-wordcount: '797'
 ht-degree: 100%
 
 ---
 
 # Perguntas frequentes sobre privacidade {#privacy-faq}
+
+![](../../assets/common.svg)
 
 Estas são algumas das perguntas frequentes sobre privacidade e consentimento ao usar o Adobe Campaign.
 
@@ -106,7 +108,7 @@ No Adobe Campaign, muitas vezes o registro é carregado a partir de uma fonte de
 
 Ao receber uma solicitação de exclusão, o controlador de dados precisará garantir que todos os dados necessários sobre o titular dos dados sejam excluídos de todos os sistemas.
 
-## Nova inclusão {#opt-in-again}
+## Aceitar novamente {#opt-in-again}
 
 ### Um titular de dados, cujos dados tenham sido apagados do Adobe Campaign, pode indicar o opt in depois?
 

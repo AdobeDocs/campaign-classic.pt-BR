@@ -6,14 +6,16 @@ audience: interaction
 content-type: reference
 topic-tags: managing-an-offer-catalog
 exl-id: c6dd2709-06e3-4227-bbec-99f3d80144fe
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
-workflow-type: ht
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+workflow-type: tm+mt
 source-wordcount: '803'
 ht-degree: 100%
 
 ---
 
 # Criação de uma oferta{#creating-an-offer}
+
+![](../../assets/v7-only.svg)
 
 ## Criação da oferta {#creating-the-offer}
 
@@ -181,6 +183,6 @@ Assim que o conteúdo da oferta for configurado, é possível pré-visualizar a 
 
 As hipóteses executadas em uma apresentação de oferta são referenciadas na guia **[!UICONTROL Measure]**.
 
-A criação de hipóteses é detalhada [nesta página](../../campaign/using/about-response-manager.md).
+A criação de hipóteses é detalhada [nesta página](../../response/using/about-response-manager.md).
 
 ![](assets/offer_hypothesis_001.png)

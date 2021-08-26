@@ -6,14 +6,16 @@ audience: delivery
 content-type: reference
 topic-tags: personalizing-deliveries
 exl-id: 12595ee4-6a52-4e06-b80d-85fe633a5a11
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
-workflow-type: ht
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+workflow-type: tm+mt
 source-wordcount: '478'
 ht-degree: 100%
 
 ---
 
 # Conteúdo condicional{#conditional-content}
+
+![](../../assets/common.svg)
 
 Ao configurar campos de conteúdo condicional, você pode criar personalização dinâmica com base no perfil do recipient, por exemplo. Blocos de texto e/ou imagens são substituídos quando uma determinada condição é atendida.
 
@@ -107,7 +109,7 @@ Você verá no exemplo abaixo como criar um email multilíngue. O conteúdo ser�
    >
    >Como nenhuma versão alternativa foi definida no conteúdo do email, filtre o público-alvo antes de enviar o email.
 
-## Vídeo tutorial {#conditionnal-content-video}
+## Tutorial em vídeo {#conditionnal-content-video}
 
 Saiba como adicionar conteúdo condicional a um delivery no exemplo de um informativo multilíngue.
 

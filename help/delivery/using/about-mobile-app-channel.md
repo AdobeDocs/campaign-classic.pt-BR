@@ -6,7 +6,7 @@ audience: delivery
 content-type: reference
 topic-tags: sending-push-notifications
 exl-id: c3b0406f-f652-42f4-ad0d-23fb719cd1b6
-source-git-commit: 1da8b954f1ed8b3e1433b920149e968cb89a97c5
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '673'
 ht-degree: 94%
@@ -14,6 +14,8 @@ ht-degree: 94%
 ---
 
 # Introdução ao canal de aplicativo móvel{#about-mobile-app-channel}
+
+![](../../assets/common.svg)
 
 O **Canal de aplicativo móvel** permite usar a plataforma do Adobe Campaign para enviar notificações personalizadas para terminais iOS e Android por meio de aplicativos
 

@@ -6,14 +6,16 @@ audience: workflow
 content-type: reference
 topic-tags: use-cases
 exl-id: f1016ddf-0c87-4611-a878-d01f3684935f
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
-workflow-type: ht
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+workflow-type: tm+mt
 source-wordcount: '1128'
 ht-degree: 100%
 
 ---
 
 # Workflow HeatMap {#workflow-heatmap}
+
+![](../../assets/common.svg)
 
 O Workflow HeatMap do Campaign consiste em uma representação gráfica colorida de todos os workflows que estão sendo executados no momento. Ele só está disponível para **Administradores do Campaign**.
 
@@ -29,14 +31,14 @@ Mais precisamente, ajuda os administradores de plataforma a:
 * Filtrar workflows por duração para ver quais workflows podem encontrar problemas
 * Filtrar atividades por duração para ver quais atividades podem encontrar problemas
 * Encontre facilmente workflows individuais e todas as atividades relacionadas (com sua duração)
-* Filtrar por tipo de fluxo de trabalho: [workflows técnicos](../../workflow/using/building-a-workflow.md#technical-workflows) ou [workflows da campanha](../../workflow/using/building-a-workflow.md#campaign-workflows)
+* Filtrar por tipo de fluxo de trabalho: [workflows técnicos](building-a-workflow.md#technical-workflows) ou [workflows da campanha](building-a-workflow.md#campaign-workflows)
 * Procure um workflow específico para analisar
 
 >[!NOTE]
 >
->Além do **Workflow Heatmap**, é possível criar um workflow que permitirá monitorar o status de um conjunto de workflows e enviar mensagens recorrentes aos supervisores. Para obter mais informações, consulte a [seção dedicada](../../workflow/using/supervising-workflows.md).
+>Além do **Workflow Heatmap**, é possível criar um workflow que permitirá monitorar o status de um conjunto de workflows e enviar mensagens recorrentes aos supervisores. Para obter mais informações, consulte a [seção dedicada](supervising-workflows.md).
 
-O uso do Workflow HeatMap requer uma boa compreensão dos seguintes conceitos: [workflows](../../workflow/using/about-workflows.md), [atividades](../../workflow/using/about-activities.md) e [práticas recomendadas de workflow](../../workflow/using/workflow-best-practices.md).
+O uso do Workflow HeatMap requer uma boa compreensão dos seguintes conceitos: [workflows](about-workflows.md), [atividades](about-activities.md) e [práticas recomendadas de workflow](workflow-best-practices.md).
 
 ## Personalizar o Workflow HeatMap {#using-the-heatmap}
 
@@ -75,8 +77,8 @@ O uso do Workflow HeatMap requer uma boa compreensão dos seguintes conceitos: [
 
 1. Também é possível filtrar no campo **[!UICONTROL Workflow type]**:
 
-   * **[!UICONTROL Technical]**: somente [workflows técnicos prontos](../../workflow/using/building-a-workflow.md#technical-workflows) e [workflows de gerenciamento de dados](../../workflow/using/targeting-data.md#data-management) são exibidos.
-   * **[!UICONTROL Marketing]**: somente os workflows vinculados a uma campanha de marketing, conhecidos como [workflows da campanha](../../workflow/using/building-a-workflow.md#campaign-workflows), são exibidos.
+   * **[!UICONTROL Technical]**: somente [workflows técnicos prontos](building-a-workflow.md#technical-workflows) e [workflows de gerenciamento de dados](targeting-data.md#data-management) são exibidos.
+   * **[!UICONTROL Marketing]**: somente os workflows vinculados a uma campanha de marketing, conhecidos como [workflows da campanha](building-a-workflow.md#campaign-workflows), são exibidos.
 
 1. Para pesquisar um workflow específico por nome, também é possível usar o campo **[!UICONTROL Workflow name filter]**.
 

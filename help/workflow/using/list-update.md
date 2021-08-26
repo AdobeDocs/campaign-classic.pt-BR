@@ -6,14 +6,16 @@ audience: workflow
 content-type: reference
 topic-tags: targeting-activities
 exl-id: fcc51131-15d0-4d39-95cb-371d7044373b
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
-workflow-type: ht
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+workflow-type: tm+mt
 source-wordcount: '465'
-ht-degree: 100%
+ht-degree: 99%
 
 ---
 
 # Atualizar lista{#list-update}
+
+![](../../assets/common.svg)
 
 Uma atividade **List update** armazena a população especificada na transição em uma lista de recipients.
 
@@ -41,7 +43,7 @@ No exemplo a seguir, a atividade de atualização da lista segue uma query direc
 
 1. Adicione um **[!UICONTROL list update activity]** diretamente após uma consulta, depois abra-a para editá-la.
 
-   Para obter mais informações sobre como criar uma consulta em um workflow, consulte [Query](../../workflow/using/query.md).
+   Para obter mais informações sobre como criar uma consulta em um workflow, consulte [Query](query.md).
 
 1. É possível selecionar um rótulo para a atividade.
 1. Selecione a opção **[!UICONTROL Create the list if necessary (Calculated name)]** para mostrar que a lista é criada quando o primeiro workflow é executado e, em seguida, atualizada com as execuções seguintes.
@@ -63,7 +65,7 @@ No exemplo a seguir, a atividade de atualização da lista segue uma query direc
 
 Identifica a população a ser salva no grupo.
 
-## Parâmetros de output {#output-parameters}
+## Parâmetros de saída {#output-parameters}
 
 * groupId: Identificador de grupo.
 

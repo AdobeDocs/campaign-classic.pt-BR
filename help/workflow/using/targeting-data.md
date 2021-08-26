@@ -6,24 +6,26 @@ audience: workflow
 content-type: reference
 topic-tags: -general-operation
 exl-id: 74b82019-bdab-4442-84cf-5ad18d0db788
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
-workflow-type: ht
-source-wordcount: '1904'
-ht-degree: 100%
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+workflow-type: tm+mt
+source-wordcount: '1924'
+ht-degree: 98%
 
 ---
 
 # Direcionamento de dados{#targeting-data}
 
+![](../../assets/common.svg)
+
 ## Criação de query {#creating-queries}
 
 ### Seleção de dados {#selecting-data}
 
-Uma atividade **[!UICONTROL Query]** permite que você selecione dados básicos para criar o público-alvo. Para obter mais informações, consulte [Criação de uma consulta](../../workflow/using/query.md#creating-a-query).
+Uma atividade **[!UICONTROL Query]** permite que você selecione dados básicos para criar o público-alvo. Para obter mais informações, consulte [Criação de uma consulta](query.md#creating-a-query).
 
-Também é possível usar as seguintes atividades para consultar e refinar dados do banco de dados: [Incremental query](../../workflow/using/incremental-query.md) e [Read list](../../workflow/using/read-list.md).
+Também é possível usar as seguintes atividades para consultar e refinar dados do banco de dados: [Incremental query](incremental-query.md) e [Read list](read-list.md).
 
-É possível coletar dados adicionais para serem encaminhados e processados durante o ciclo de vida do workflow. Para obter mais informações, consulte [Adicionar dados](../../workflow/using/query.md#adding-data) e [Editar dados adicionais](#editing-additional-data).
+É possível coletar dados adicionais para serem encaminhados e processados durante o ciclo de vida do workflow. Para obter mais informações, consulte [Adicionar dados](query.md#adding-data) e [Editar dados adicionais](#editing-additional-data).
 
 ### Edição de dados adicionais {#editing-additional-data}
 
@@ -125,7 +127,7 @@ A intersecção permite recuperar apenas as linhas compartilhadas pelos público
 
 Além disso, é possível manter apenas uma seleção de colunas ou apenas as colunas compartilhadas pelo público de entrada.
 
-A atividade de intersecção é detalhada na seção [Intersection](../../workflow/using/intersection.md).
+A atividade de intersecção é detalhada na seção [Intersection](intersection.md).
 
 ### Excluir um público (Exclusão) {#excluding-a-population--exclusion-}
 
@@ -157,7 +159,7 @@ Para configurá-lo, primeiro é necessário selecionar os critérios:
 
    ![](assets/split-subset-config-all-data.png)
 
-   Um exemplo de uso das condições de filtragem na atividade **[!UICONTROL Split]** para segmentar o target em diferentes públicos é descrito [nesta seção](../../workflow/using/cross-channel-delivery-workflow.md).
+   Um exemplo de uso das condições de filtragem na atividade **[!UICONTROL Split]** para segmentar o target em diferentes públicos é descrito [nesta seção](cross-channel-delivery-workflow.md).
 
    O campo **[!UICONTROL Label]** permite que você dê um nome ao subconjunto recém-criado, que corresponderá à transição de saída.
 
@@ -175,7 +177,11 @@ Para configurá-lo, primeiro é necessário selecionar os critérios:
 
    ![](assets/split-subset-config-add_external_data.png)
 
-   Para obter mais informações, consulte esta [seção](../../installation/using/about-fda.md).
+   Para obter mais informações, dependendo da versão do Campaign, consulte estas seções:
+
+   ![](assets/do-not-localize/v7.jpeg)[  Documentação do Campaign v7](../../installation/using/about-fda.md)
+
+   ![](assets/do-not-localize/v8.png)[  Documentação do Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/connect/fda.html?lang=en)
 
 Em seguida, precisamos adicionar novos subconjuntos:
 
@@ -193,7 +199,7 @@ Em seguida, precisamos adicionar novos subconjuntos:
 
    >[!NOTE]
    >
-   >Se você adquiriu a opção **Federated Data Access**, é possível criar subconjuntos com base nas informações em uma base externa. Para fazer isso, selecione o schema da tabela externa no campo **[!UICONTROL Targeting dimension]**. Para obter mais informações, consulte [Acesso a um banco de dados externo (FDA)](../../workflow/using/accessing-an-external-database--fda-.md).
+   >Se você adquiriu a opção **Federated Data Access**, é possível criar subconjuntos com base nas informações em uma base externa. Para fazer isso, selecione o schema da tabela externa no campo **[!UICONTROL Targeting dimension]**. Para obter mais informações, consulte [Acesso a um banco de dados externo (FDA)](accessing-an-external-database--fda-.md).
 
 Após a criação dos subconjuntos, por padrão, a atividade de split mostrará tantas transições de output quanto houver subconjuntos:
 
@@ -207,7 +213,7 @@ Por exemplo, você pode colocar uma única atividade de delivery e personalizar 
 
 ![](assets/wf_split_single_output.png)
 
-Subconjuntos também podem ser criados usando a atividade **[!UICONTROL Cells]**. Para obter mais informações, consulte a seção [Cells](../../workflow/using/cells.md).
+Subconjuntos também podem ser criados usando a atividade **[!UICONTROL Cells]**. Para obter mais informações, consulte a seção [Cells](cells.md).
 
 ### Uso de dados de target {#using-targeted-data}
 
@@ -215,15 +221,15 @@ Depois que os dados forem identificados e preparados, eles poderão ser usados n
 
 * Você pode atualizar os dados no banco de dados após a manipulação de dados nos vários estágios do workflow.
 
-   Para obter mais informações, consulte [Atualizar dados](../../workflow/using/update-data.md).
+   Para obter mais informações, consulte [Atualizar dados](update-data.md).
 
 * Você também pode atualizar o conteúdo de listas existentes.
 
-   Para obter mais informações, consulte [Atualizar lista](../../workflow/using/list-update.md).
+   Para obter mais informações, consulte [Atualizar lista](list-update.md).
 
 * Você pode preparar ou iniciar deliveries no workflow diretamente.
 
-   Para obter mais informações, consulte [Delivery](../../workflow/using/delivery.md), [Controle de delivery](../../workflow/using/delivery-control.md) e [Delivery contínuo](../../workflow/using/continuous-delivery.md).
+   Para obter mais informações, consulte [Delivery](delivery.md), [Controle de delivery](delivery-control.md) e [Delivery contínuo](continuous-delivery.md).
 
 ## Gerenciamento de dados {#data-management}
 
@@ -235,9 +241,9 @@ No Adobe Campaign, a Gestão de Dados combina um conjunto de atividades para res
 
 Para implementar essas operações, o Adobe Campaign oferece:
 
-* Atividades de coleção de dados: [File transfer](../../workflow/using/file-transfer.md), [Data loading (file)](../../workflow/using/data-loading--file-.md), [Data loading (RDBMS)](../../workflow/using/data-loading--rdbms-.md) e [Update data](../../workflow/using/update-data.md). Essa primeira etapa de coleta de dados prepara os dados para que ele seja processado em outras atividades. Vários parâmetros precisam ser monitorados para garantir que o workflow seja executado corretamente e forneça os resultados esperados. Por exemplo, ao importar os dados, a chave primária (Pkey) para esses dados deve ser única para cada registro.
-* As atividades de direcionamento foram aprimoradas com as opções de gerenciamento de dados: [Query](../../workflow/using/query.md), [Union](../../workflow/using/union.md), [Intersection](../../workflow/using/intersection.md) e [Split](../../workflow/using/split.md). Isso permite configurar uma união ou uma intersecção entre dados de diferentes targeting dimensions, desde que a reconciliação dos dados seja possível.
-* Atividades de transformação de dados: [Enrichment](../../workflow/using/enrichment.md) e [Change dimension](../../workflow/using/change-dimension.md).
+* Atividades de coleção de dados: [File transfer](file-transfer.md), [Data loading (file)](data-loading--file-.md), [Data loading (RDBMS)](data-loading--rdbms-.md) e [Update data](update-data.md). Essa primeira etapa de coleta de dados prepara os dados para que ele seja processado em outras atividades. Vários parâmetros precisam ser monitorados para garantir que o workflow seja executado corretamente e forneça os resultados esperados. Por exemplo, ao importar os dados, a chave primária (Pkey) para esses dados deve ser única para cada registro.
+* As atividades de direcionamento foram aprimoradas com as opções de gerenciamento de dados: [Query](query.md), [Union](union.md), [Intersection](intersection.md) e [Split](split.md). Isso permite configurar uma união ou uma intersecção entre dados de diferentes targeting dimensions, desde que a reconciliação dos dados seja possível.
+* Atividades de transformação de dados: [Enrichment](enrichment.md) e [Change dimension](change-dimension.md).
 
 >[!CAUTION]
 >
@@ -247,10 +253,10 @@ Para implementar essas operações, o Adobe Campaign oferece:
 
 ### Modificação e enriquecimento de dados {#enriching-and-modifying-data}
 
-Além do targeting dimension, a dimensão de filtro permite especificar a natureza dos dados coletados. Consulte [Direcionamento e dimensões de filtragem](../../workflow/using/building-a-workflow.md#targeting-and-filtering-dimensions).
+Além do targeting dimension, a dimensão de filtro permite especificar a natureza dos dados coletados. Consulte [Direcionamento e dimensões de filtragem](building-a-workflow.md#targeting-and-filtering-dimensions).
 
 Os dados identificados e coletados podem ser enriquecidos, agregados e manipulados para otimizar a construção de target. Para fazer isso, além das atividades de manipulação de dados detalhadas na seção [Segmenting data](#segmenting-data), use o seguinte:
 
-* A atividade **[!UICONTROL Enrichment]** permite adicionar colunas momentaneamente a um schema, bem como adicionar informações a determinados elementos. Ela é detalhada na seção [Enrichment](../../workflow/using/enrichment.md) do repositório de atividades.
-* A atividade **[!UICONTROL Edit schema]** permite modificar a estrutura de um schema. Ela é detalhada na seção [Edit schema](../../workflow/using/edit-schema.md) do repositório de atividades.
-* A atividade **[!UICONTROL Change dimension]** permite alterar o targeting dimension durante o ciclo de construção do target. Ela é detalhada na seção [Change dimension](../../workflow/using/change-dimension.md).
+* A atividade **[!UICONTROL Enrichment]** permite adicionar colunas momentaneamente a um schema, bem como adicionar informações a determinados elementos. Ela é detalhada na seção [Enrichment](enrichment.md) do repositório de atividades.
+* A atividade **[!UICONTROL Edit schema]** permite modificar a estrutura de um schema. Ela é detalhada na seção [Edit schema](edit-schema.md) do repositório de atividades.
+* A atividade **[!UICONTROL Change dimension]** permite alterar o targeting dimension durante o ciclo de construção do target. Ela é detalhada na seção [Change dimension](change-dimension.md).

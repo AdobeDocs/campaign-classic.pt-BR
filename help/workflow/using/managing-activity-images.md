@@ -6,14 +6,16 @@ audience: workflow
 content-type: reference
 topic-tags: advanced-management
 exl-id: cafdbc10-9c10-4d42-a485-c9880df8d371
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
-workflow-type: ht
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+workflow-type: tm+mt
 source-wordcount: '152'
 ht-degree: 100%
 
 ---
 
 # Gerenciamento de imagens de atividades{#managing-activity-images}
+
+![](../../assets/common.svg)
 
 As imagens usadas nos diagramas dos vários workflows podem ser alteradas. No entanto, elas devem estar em conformidade com determinadas restrições. Estes são os estágios de implementação:
 

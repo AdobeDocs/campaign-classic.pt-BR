@@ -6,7 +6,7 @@ audience: production
 content-type: reference
 topic-tags: introduction
 exl-id: c9e92fec-383e-46ba-bce1-183ac8f637de
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '82'
 ht-degree: 3%
@@ -14,6 +14,8 @@ ht-degree: 3%
 ---
 
 # Prefácio{#foreword}
+
+![](../../assets/v7-only.svg)
 
 Este documento detalha os procedimentos de produção do Adobe Campaign: configuração, monitoramento, processo de atualização, processamento de dados, procedimento de manutenção de banco de dados e recomendações. Uma seção de solução de problemas está disponível no final deste documento.
 

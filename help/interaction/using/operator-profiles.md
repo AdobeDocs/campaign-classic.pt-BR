@@ -6,14 +6,16 @@ audience: interaction
 content-type: reference
 topic-tags: managing-environments
 exl-id: e11fb28c-d530-45a2-862a-ff1c20975577
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
-workflow-type: ht
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+workflow-type: tm+mt
 source-wordcount: '386'
 ht-degree: 100%
 
 ---
 
 # Perfis de operador{#operator-profiles}
+
+![](../../assets/v7-only.svg)
 
 Existem dois tipos de operadores que usam o Interaction: gerentes de oferta e gerentes de delivery. Cada um deles tem direitos específicos que só dão acesso a algumas partes da árvore e da plataforma.
 

@@ -6,7 +6,7 @@ audience: production
 content-type: reference
 topic-tags: updating-adobe-campaign
 exl-id: c5a9c99a-4078-45d8-847b-6df9047a2fe2
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '2353'
 ht-degree: 4%
@@ -14,6 +14,8 @@ ht-degree: 4%
 ---
 
 # Atualização de uma build{#performing-a-build-upgrade}
+
+![](../../assets/v7-only.svg)
 
 Esta seção fornecerá uma apresentação detalhada sobre o processo de atualização e as etapas para identificar e resolver conflitos.
 
@@ -255,7 +257,6 @@ No contexto de um ambiente de mid-sourcing, é necessário executar essas etapas
 >
 >O servidor Mid-sourcing deve sempre executar a mesma versão (ou mais recente) dos servidores de marketing.
 
-
 ## Em caso de conflitos
 
 ### Identificar conflitos
@@ -343,7 +344,6 @@ Existem três opções para resolver conflitos: **Aceite a nova versão**, **Man
 >[!IMPORTANT]
 >É altamente recomendável resolver conflitos.
 
-
 ### Executar uma mesclagem{#perform-a-merge}
 
 Existem diferentes tipos de mesclagens:
@@ -407,10 +407,9 @@ Estas são as etapas para executar uma mesclagem complexa:
 >[!IMPORTANT]
 >Habilidades de desenvolvimento são necessárias para realizar mesclagens complexas.
 
-
 **Tópicos relacionados**
 
 * [Perguntas frequentes de atualização de build](../../platform/using/faq-build-upgrade.md)
-* [Notas de versão do Campaign Classic ](../../rn/using/rn-overview.md)
+* [Notas de versão do Campaign Classic](../../rn/using/rn-overview.md)
 * [Opções de ajuda e suporte para o Campaign Classic](../../support.md)
 * [Programa do [!DNL Gold Standard]](../../rn/using/gs-overview.md)

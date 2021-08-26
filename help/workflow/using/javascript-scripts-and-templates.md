@@ -6,14 +6,16 @@ audience: workflow
 content-type: reference
 topic-tags: advanced-management
 exl-id: 4a3647d1-cf8c-4867-871e-472287be7c6a
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
-workflow-type: ht
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+workflow-type: tm+mt
 source-wordcount: '1234'
 ht-degree: 100%
 
 ---
 
 # Modelos e scripts JavaScript{#javascript-scripts-and-templates}
+
+![](../../assets/common.svg)
 
 Os scripts permitem o cálculo de valores, a troca de dados entre tarefas diferentes em andamento e a execução de operações específicas usando chamadas SOAP.
 
@@ -79,17 +81,17 @@ As variáveis de evento (**[!UICONTROL vars.xxx]**) permitem a troca de dados en
 
 >[!CAUTION]
 >
->No caso de atividades de tipo [AND-join](../../workflow/using/and-join.md), as variáveis são mescladas, mas se uma mesma variável é definida duas vezes, há um conflito e o valor permanece indeterminado.
+>No caso de atividades de tipo [AND-join](and-join.md), as variáveis são mescladas, mas se uma mesma variável é definida duas vezes, há um conflito e o valor permanece indeterminado.
 
 Evento são as variáveis usadas com mais frequência. Devem ser usadas em detrimento de variáveis de instância.
 
-Certas variáveis de evento são modificadas ou lidas pelas várias atividades. Estas são todas as variáveis do tipo string. Por exemplo, uma exportação define a variável **[!UICONTROL vars.filename]** com o nome completo do arquivo que acabou de ser exportado. Todas essas variáveis lidas ou modificadas são documentadas em [Sobre atividades](../../workflow/using/about-activities.md), nas seções **Parâmetros de entrada** e **Parâmetros de saída** das atividades.
+Certas variáveis de evento são modificadas ou lidas pelas várias atividades. Estas são todas as variáveis do tipo string. Por exemplo, uma exportação define a variável **[!UICONTROL vars.filename]** com o nome completo do arquivo que acabou de ser exportado. Todas essas variáveis lidas ou modificadas são documentadas em [Sobre atividades](about-activities.md), nas seções **Parâmetros de entrada** e **Parâmetros de saída** das atividades.
 
 ### Casos de uso {#example}
 
 >[!NOTE]
 >
->Outros casos de uso de workflow estão disponíveis [nesta seção](../../workflow/using/about-workflow-use-cases.md).
+>Outros casos de uso de workflow estão disponíveis [nesta seção](about-workflow-use-cases.md).
 
 **Exemplo 1**
 

@@ -6,14 +6,16 @@ audience: installation
 content-type: reference
 topic-tags: installing-campaign-in-windows-
 exl-id: 7cc78214-92b8-4b1f-a307-96ec6af818d1
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '973'
 ht-degree: 5%
 
 ---
 
-# Instale e atualize o console do cliente do Campaign{#installing-the-client-console}
+# Instalar e atualizar o console do cliente do Campaign{#installing-the-client-console}
+
+![](../../assets/v7-only.svg)
 
 O Console do Cliente do Campaign é um cliente avançado que permite a conexão com o(s) servidor(es) de aplicativos do Campaign.
 
@@ -32,7 +34,7 @@ Revise os detalhes abaixo para entender o que é necessário para sua implementa
 >
 >O console do Campaign Client e o servidor de aplicativos do Campaign devem executar **na mesma versão do produto**. O Adobe também recomenda usar a **mesma build de produto**. Saiba como verificar as versões do Cliente e do Servidor do Campaign em [esta seção](../../platform/using/launching-adobe-campaign.md#getting-your-campaign-version).
 
-## Implementações hospedadas no Adobe {#hosted-customers}
+## Implementações Adobe hospedadas {#hosted-customers}
 
 Além de um cliente hospedado, você tem duas opções para instalar ou atualizar seu(s) console(s) do cliente:
 
@@ -81,7 +83,7 @@ Se **[!UICONTROL No longer ask this question]** tiver sido selecionado, você po
 >
 >Se você estiver aplicando um console atualizado a uma implementação existente, os usuários receberão automaticamente um prompt para atualizar seu console do cliente. Se você estiver implementando o Campaign pela primeira vez, os usuários precisarão baixar o console. Consulte abaixo para obter detalhes sobre ambas as opções
 
-### Atualize o console para a implementação existente{#update-the-client-console}
+### Atualizar o console para a implementação existente{#update-the-client-console}
 
 Quando o console estiver disponível na pasta Campaign server , os usuários serão solicitados a baixar a versão mais recente do console do cliente em uma janela pop-up.
 
@@ -154,7 +156,7 @@ Para fazer logon em uma instância existente, siga as etapas abaixo:
 * [Criação de uma instância e fazer logon](../../installation/using/creating-an-instance-and-logging-on.md).
 * [Matriz de compatibilidade](https://helpx.adobe.com/br/campaign/kb/compatibility-matrix.html)
 
-## Tutoriais em vídeo
+## Tutorial em vídeo
 
 Este vídeo mostra como instalar e configurar o Adobe Campaign Client.
 

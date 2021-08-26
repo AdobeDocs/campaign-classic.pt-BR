@@ -6,14 +6,16 @@ audience: workflow
 content-type: reference
 topic-tags: -general-operation
 exl-id: 366acc1e-d769-4053-9fa1-f47182627c07
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
-workflow-type: ht
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+workflow-type: tm+mt
 source-wordcount: '509'
 ht-degree: 100%
 
 ---
 
 # Ciclo de vida dos dados {#data-life-cycle}
+
+![](../../assets/common.svg)
 
 ## Tabela de trabalho {#work-table}
 
@@ -31,7 +33,7 @@ Para fazer isso, selecione o menu relevante:
 
    ![](assets/wf-right-click-display.png)
 
-   Para obter mais informações, consulte [Tabelas de trabalho e schema de workflow](../../workflow/using/monitoring-workflow-execution.md#worktables-and-workflow-schema).
+   Para obter mais informações, consulte [Tabelas de trabalho e schema de workflow](monitoring-workflow-execution.md#worktables-and-workflow-schema).
 
 * Análise do target
 
@@ -45,7 +47,7 @@ No entanto, recomendamos que você evite ativar essa opção quando a quantidade
 
 ![](assets/wf-purge-data-option.png)
 
-## Dados do target {#target-data}
+## Dados do Target {#target-data}
 
 Os dados armazenados na tabela de trabalho do workflow podem ser acessados nos campos de personalização.
 

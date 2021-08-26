@@ -1,19 +1,21 @@
 ---
 product: campaign
 title: Perguntas frequentes sobre workflows
-description: Perguntas frequentes sobre o Adobe Campaign Classic
+description: Perguntas frequentes sobre o Campaign Classic
 audience: platform
 content-type: reference
 topic-tags: starting-with-adobe-campaign
 exl-id: 7d1bb3c6-d056-4212-9500-75459a0046fa
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
-workflow-type: ht
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+workflow-type: tm+mt
 source-wordcount: '362'
 ht-degree: 100%
 
 ---
 
 # Perguntas frequentes sobre workflows {#workflows-faq}
+
+![](../../assets/common.svg)
 
 Saiba como organizar processos e tarefas com fluxos de trabalho do Adobe Campaign.
 

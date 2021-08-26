@@ -2,18 +2,20 @@
 product: campaign
 title: Atualizações da documentação do Adobe Campaign Classic
 description: Esta página lista todos os novos recursos e atualizações na documentação do Adobe Campaign Classic
-feature: Visão geral
+feature: Overview
 role: User
 level: Beginner
 exl-id: 07c1f4a3-cf16-4a9b-b402-e13258799f91
-source-git-commit: 69f7b494c244fdf01a65ebe8d55c141d947a0980
+source-git-commit: 34404fbe935e68f3cc11d937839209443ad4ca60
 workflow-type: tm+mt
-source-wordcount: '4465'
+source-wordcount: '4464'
 ht-degree: 100%
 
 ---
 
 # Atualizações da documentação{#documentation-updates}
+
+![](../../assets/v7-only.svg)
 
 Esta página lista todos os novos recursos e atualizações de documentação por mês e a versão do Campaign.
 
@@ -48,7 +50,7 @@ Os requisitos do console do cliente do Campaign foram atualizados na Matriz de c
 
 A instalação do Console do cliente do Campaign em etapas foi aprimorada e esclarecida. [Leia mais](../../installation/using/installing-the-client-console.md)
 
-Uma nova nota técnica foi criada sobre o problema de assinatura de URLs rastreados. [Leia mais](../../technotes/tracked-urls.md)
+Uma nova nota técnica foi criada sobre o problema de assinatura de URLs rastreados. [Leia mais](../../technotes/using/tracked-urls.md)
 
 ## Abril de 2021 {#april-2021}
 
@@ -210,7 +212,7 @@ Uma landing page de práticas recomendadas de deliverability foi aprimorada para
 
 Os vídeos do passo a passo estão disponíveis nos seguintes tópicos:
 
-* [Como configurar o gerenciamento de fadiga usando regras de tipologia e filtros predefinidos](../../campaign/using/about-campaign-typologies.md)
+* [Como configurar o gerenciamento de fadiga usando regras de tipologia e filtros predefinidos](../../campaign-opt/using/about-campaign-typologies.md)
 
 * [Como criar um email em uma campanha](../../campaign/using/marketing-campaign-deliveries.md)
 

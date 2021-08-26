@@ -6,8 +6,8 @@ audience: workflow
 content-type: reference
 topic-tags: targeting-activities
 exl-id: 4204350a-c2d2-4033-9bdf-87b49d8211b9
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
-workflow-type: ht
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+workflow-type: tm+mt
 source-wordcount: '1935'
 ht-degree: 100%
 
@@ -15,15 +15,17 @@ ht-degree: 100%
 
 # Divisão{#split}
 
+![](../../assets/common.svg)
+
 Uma atividade do tipo **Split** permite dividir um target em vários subconjuntos. O target é construído com todos os resultados recebidos: todas as atividades anteriores devem ter sido concluídas para que essa atividade seja executada.
 
 Essa atividade não aciona uma união de públicos de entrada. Se várias transições acabarem em uma atividade de Split, é recomendado inserir uma atividade de **[!UICONTROL Union]** na frente.
 
-Para obter um exemplo da atividade de split que está sendo usada, consulte [Criação de subconjuntos usando a atividade de Split](../../workflow/using/targeting-data.md#creating-subsets-using-the-split-activity)
+Para obter um exemplo da atividade de split que está sendo usada, consulte [Criação de subconjuntos usando a atividade de Split](targeting-data.md#creating-subsets-using-the-split-activity)
 
-Um exemplo ilustrando como usar a atividade de Split para segmentar o target em diferentes públicos usando condições de filtragem é descrito [nesta seção](../../workflow/using/cross-channel-delivery-workflow.md).
+Um exemplo ilustrando como usar a atividade de Split para segmentar o target em diferentes públicos usando condições de filtragem é descrito [nesta seção](cross-channel-delivery-workflow.md).
 
-Um exemplo mostrando como usar uma variável de instância em uma atividade de Split está disponível [nesta seção](../../workflow/using/javascript-scripts-and-templates.md).
+Um exemplo mostrando como usar uma variável de instância em uma atividade de Split está disponível [nesta seção](javascript-scripts-and-templates.md).
 
 Para configurar essa atividade, defina o conteúdo do subconjunto e o rótulo na guia **[!UICONTROL Subsets]** e escolha o targeting dimension na guia **[!UICONTROL General]**.
 
@@ -124,7 +126,7 @@ Por exemplo, se você selecionar o campo **[!UICONTROL Language]** como um campo
 
 Se os campos de agrupamento contiverem um número muito grande de valores ou se quiser evitar redefinir os valores para cada nova atividade dividida, o Adobe Campaign permitirá criar uma limitação por distribuição de dados. Ao selecionar valores de limitação de dados (para saber mais sobre esse assunto, veja a seção [Creating subsets](#creating-subsets)), selecione a opção **[!UICONTROL By data distribution]** e selecione um template no menu suspenso. A criação de um template de distribuição de dados é demonstrada abaixo.
 
-Para obter um exemplo da atividade **[!UICONTROL Local approval]** com um template de distribuição, consulte [Uso da atividade de aprovação local](../../workflow/using/using-the-local-approval-activity.md).
+Para obter um exemplo da atividade **[!UICONTROL Local approval]** com um template de distribuição, consulte [Uso da atividade de aprovação local](using-the-local-approval-activity.md).
 
 ![](assets/s_user_segmentation_partage_wz6.png)
 
@@ -148,12 +150,12 @@ O template de distribuição de dados permite limitar o número de registros de 
    * **[!UICONTROL Targeting dimension]**: digite a targeting dimension à qual a distribuição de dados será aplicada, **[!UICONTROL Recipient]** por exemplo. Esse schema deve sempre ser compatível com os dados usados no workflow para construção do target.
    * **[!UICONTROL Distribution field]**: selecione um campo por meio da targeting dimension. Por exemplo, se selecionar o campo **[!UICONTROL Email domain]**, a lista de recipients será dividida por domínio.
    * **[!UICONTROL Distribution type]**: selecione a forma como o valor de limitação do target será detalhado na guia **[!UICONTROL Distribution]**: **[!UICONTROL Percentage]** ou **[!UICONTROL Set]**.
-   * **[!UICONTROL Assignment type]**: selecione o tipo de atribuição de distribuição de dados. É possível escolher entre atribuição por grupo ou operador ou atribuição por entidade local. A atribuição por entidade local é usada no **Marketing distribuído**. Para obter mais informações, consulte esta [seção](../../campaign/using/about-distributed-marketing.md).
-   * **[!UICONTROL Approval storage]**: se usar uma atividade **[!UICONTROL Local approval]** no workflow para construção do target (consulte [Local approval](../../workflow/using/local-approval.md)), digite o schema no qual os resultados da aprovação serão armazenados. É necessário especificar um schema de armazenamento por schema de target. Se usar o schema de target **[!UICONTROL Recipients]**, insira o schema de armazenamento padrão **[!UICONTROL Local approval of recipients]**.
+   * **[!UICONTROL Assignment type]**: selecione o tipo de atribuição de distribuição de dados. É possível escolher entre atribuição por grupo ou operador ou atribuição por entidade local. A atribuição por entidade local é usada no **Marketing distribuído**. Para obter mais informações, consulte esta [seção](../../distributed/using/about-distributed-marketing.md).
+   * **[!UICONTROL Approval storage]**: se usar uma atividade **[!UICONTROL Local approval]** no workflow para construção do target (consulte [Local approval](local-approval.md)), digite o schema no qual os resultados da aprovação serão armazenados. É necessário especificar um schema de armazenamento por schema de target. Se usar o schema de target **[!UICONTROL Recipients]**, insira o schema de armazenamento padrão **[!UICONTROL Local approval of recipients]**.
 
       No caso de uma limitação simples por agrupamento de dados sem aprovação local, não é necessário inserir o campo **[!UICONTROL Approvals storage]**.
 
-1. Se estiver usando uma atividade **[!UICONTROL Local approval]** (consulte [Local approval](../../workflow/using/local-approval.md)), insira as **[!UICONTROL Advanced settings]** para o template de distribuição:
+1. Se estiver usando uma atividade **[!UICONTROL Local approval]** (consulte [Local approval](local-approval.md)), insira as **[!UICONTROL Advanced settings]** para o template de distribuição:
 
    ![](assets/local_validation_data_distribution_3.png)
 
@@ -189,7 +191,7 @@ O template de distribuição de dados permite limitar o número de registros de 
       Essa coluna é definida pelo campo **[!UICONTROL Distribution type]** dentro da guia **[!UICONTROL General]**.
 
    * **[!UICONTROL Label]**: digite o rótulo vinculado a cada valor.
-   * **[!UICONTROL Group or operator]**: se estiver usando uma atividade **[!UICONTROL Local approval]** (consulte [Local approval](../../workflow/using/local-approval.md)), selecione o operador ou grupo de operadores atribuídos a cada valor de distribuição.
+   * **[!UICONTROL Group or operator]**: se estiver usando uma atividade **[!UICONTROL Local approval]** (consulte [Local approval](local-approval.md)), selecione o operador ou grupo de operadores atribuídos a cada valor de distribuição.
 
       No caso de uma limitação simples por agrupamento de dados sem aprovação local, não é necessário inserir o campo **[!UICONTROL Group or operator]**.
 
@@ -197,7 +199,7 @@ O template de distribuição de dados permite limitar o número de registros de 
       >
       >Verifique se os operadores receberam os direitos apropriados.
 
-   * **[!UICONTROL Local entity]**: selecione a entidade local atribuída a cada valor de distribuição. As entidades locais são usadas em **Marketing distribuído**. Para obter mais informações, consulte esta [seção](../../campaign/using/about-distributed-marketing.md).
+   * **[!UICONTROL Local entity]**: selecione a entidade local atribuída a cada valor de distribuição. As entidades locais são usadas em **Marketing distribuído**. Para obter mais informações, consulte esta [seção](../../distributed/using/about-distributed-marketing.md).
 
 ## Filtro de parâmetros {#filtering-parameters}
 
@@ -227,7 +229,7 @@ A opção **[!UICONTROL Enable overlapping of output populations]** permite gere
 
 Cada evento de entrada deve especificar um target definido por esses parâmetros.
 
-## Parâmetros de output {#output-parameters}
+## Parâmetros de saída {#output-parameters}
 
 * tableName
 * schema

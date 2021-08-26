@@ -6,14 +6,16 @@ audience: configuration
 content-type: reference
 topic-tags: schema-reference
 exl-id: 3405efb8-a37c-4622-a271-63d7a4148751
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '1564'
 ht-degree: 12%
 
 ---
 
-# Estrutura de schema{#schema-structure}
+# Estrutura de esquema{#schema-structure}
+
+![](../../assets/v7-only.svg)
 
 A estrutura básica de um `<srcschema>` é a seguinte:
 
@@ -354,9 +356,9 @@ Para vincular um valor padrão a um campo, é possível usar o `<default>  or  <
 
 `<sqldefault>` : permite ter um valor adicionado ao criar um campo. Esse valor aparece como um resultado SQL. Durante uma atualização do schema, somente os novos registros serão afetados por esse valor.
 
-### Listas discriminadas {#enumerations}
+### Enumerações {#enumerations}
 
-#### Enumeração livre {#free-enumeration}
+#### Enumeração gratuita {#free-enumeration}
 
 A propriedade **userEnum** permite definir uma enumeração livre para memorizar e exibir os valores inseridos por meio desse campo. A sintaxe é a seguinte:
 
@@ -484,8 +486,8 @@ Os elementos são designados pelo nome e os atributos são designados pelo nome 
 >
 >* **location/@** city não é válido; use  **`[location/@city]`**
 >* **`[@email]`** e  **@** emailare equivalente
->
 
+>
 
 
 Também é possível definir expressões complexas, como as seguintes operações aritméticas:
@@ -505,7 +507,7 @@ Você pode acessar a lista de funções disponíveis por meio de qualquer editor
 * **Year(@created)**: retorna o ano da data contida no atributo &quot;criado&quot;.
 * **GetEmailDomain(@email)**: retorna o domínio do endereço de email.
 
-## Criação de uma cadeia de caracteres por meio da cadeia de caracteres de computação {#building-a-string-via-the-compute-string}
+## Criação de uma string por meio da string de computação {#building-a-string-via-the-compute-string}
 
 Um **Compute string** é uma expressão XPath usada para criar uma string representando um registro em uma tabela associada ao schema. **A** cadeia de caracteres de computação é usada principalmente na interface gráfica para exibir o rótulo de um registro selecionado.
 

@@ -6,14 +6,16 @@ audience: workflow
 content-type: reference
 topic-tags: action-activities
 exl-id: 2d9cbfc8-1f99-4b38-8460-77c7c986e9ca
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
-workflow-type: ht
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+workflow-type: tm+mt
 source-wordcount: '642'
 ht-degree: 100%
 
 ---
 
 # Aprovação local{#local-approval}
+
+![](../../assets/common.svg)
 
 Quando integrado em um workflow para construção do target, a atividade **[!UICONTROL Local approval]** permite configurar um processo de aprovação de recipient antes do envio do delivery.
 
@@ -23,7 +25,7 @@ Quando integrado em um workflow para construção do target, a atividade **[!UIC
 >
 >Para usar essa atividade, você precisa ter adquirido o módulo Marketing distribuído, que é uma opção do Campaign. Verifique o contrato de licença.
 
-Para obter um exemplo da atividade **[!UICONTROL Local approval]** com um template de distribuição, consulte [Uso da atividade de aprovação local](../../workflow/using/using-the-local-approval-activity.md).
+Para obter um exemplo da atividade **[!UICONTROL Local approval]** com um template de distribuição, consulte [Uso da atividade de aprovação local](using-the-local-approval-activity.md).
 
 Comece inserindo um rótulo para a atividade e o campo **[!UICONTROL Action to execute]**:
 
@@ -33,7 +35,7 @@ Comece inserindo um rótulo para a atividade e o campo **[!UICONTROL Action to e
 
    ![](assets/local_validation_intro_2.png)
 
-* **Query incremental**: permite executar um query e planejar sua execução. Consulte a seção [Query incremental](../../workflow/using/incremental-query.md).
+* **Query incremental**: permite executar um query e planejar sua execução. Consulte a seção [Query incremental](incremental-query.md).
 
    ![](assets/local_validation_intro_3.png)
 
@@ -49,7 +51,7 @@ Os campos a serem inseridos no caso de uma notificação para aprovação de tar
 
 * **[!UICONTROL Distribution context]**: selecione a opção **[!UICONTROL Specified in the transition]** se estiver usando uma atividade do tipo **[!UICONTROL Split]** para limitar o público-alvo. Nesse caso, o template de distribuição é inserido na atividade de Split. Se você não estiver limitando o público-alvo, selecione a opção **[!UICONTROL Explicit]** aqui e insira o template de distribuição no campo **[!UICONTROL Data distribution]**.
 
-   Para obter mais informações sobre como criar um template de distribuição de dados, consulte [Limitação do número de registros de subconjunto por distribuição de dados](../../workflow/using/split.md#limiting-the-number-of-subset-records-per-data-distribution).
+   Para obter mais informações sobre como criar um template de distribuição de dados, consulte [Limitação do número de registros de subconjunto por distribuição de dados](split.md#limiting-the-number-of-subset-records-per-data-distribution).
 
 * **[!UICONTROL Approval management]**
 
@@ -83,7 +85,7 @@ No caso de um relatório de feedback de delivery, os seguintes campos devem ser 
 
 ## Exemplo: Aprovação de um delivery de workflow {#example--approving-a-workflow-delivery}
 
-Este exemplo mostra como configurar um processo de aprovação para um delivery de workflow. Para obter mais informações sobre como criar workflows de delivery, consulte a seção [Exemplo: workflow de delivery](../../workflow/using/delivery.md#example--delivery-workflow).
+Este exemplo mostra como configurar um processo de aprovação para um delivery de workflow. Para obter mais informações sobre como criar workflows de delivery, consulte a seção [Exemplo: workflow de delivery](delivery.md#example--delivery-workflow).
 
 Um operador pode aprovar um delivery de duas formas: usando a página da Web vinculada na mensagem de email ou através do console.
 

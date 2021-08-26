@@ -6,20 +6,22 @@ audience: workflow
 content-type: reference
 topic-tags: -general-operation
 exl-id: 39c57f61-2629-4214-91e4-cb97dc039deb
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
-workflow-type: ht
-source-wordcount: '1609'
-ht-degree: 100%
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+workflow-type: tm+mt
+source-wordcount: '1612'
+ht-degree: 99%
 
 ---
 
-# Práticas recomendadas do fluxo de trabalho{#workflow-best-practices}
+# Práticas recomendadas de fluxo de trabalho{#workflow-best-practices}
+
+![](../../assets/common.svg)
 
 ## Execução e desempenho {#execution-and-performance}
 
 As diretrizes gerais sobre a otimização do desempenho do Campaign estão listadas abaixo, incluindo as práticas recomendadas para aplicar aos workflows.
 
-Diretrizes para solução de problemas relacionados à execução de workflows também estão disponíveis [nesta seção](../../production/using/workflow-execution.md).
+Diretrizes para solução de problemas relacionados à execução de workflows também estão disponíveis no [Campaign Classic v7 Production Guide](../../production/using/workflow-execution.md).
 
 ### Logs {#logs}
 
@@ -42,7 +44,7 @@ Duas soluções adicionais estão disponíveis para ajudar:
    Disponível na guia **[!UICONTROL Execution]** das propriedades do fluxo de trabalho, essa opção registrará todos as consultas SQL geradas pela ferramenta a partir das diferentes atividades. É uma boa forma de ver o que está realmente sendo executado pela plataforma. No entanto, essa opção só deve ser usada temporariamente durante o desenvolvimento e não ativada durante a produção.
 
 Limpe os registros quando não forem mais necessários. O histórico do workflow não é removido automaticamente: todas as mensagens são mantidas por padrão. O histórico pode ser eliminado por meio do menu **[!UICONTROL File > Actions]** ou clicando no botão Actions localizado na barra de ferramentas acima da lista. Selecione Purge history.
-Para saber como limpar seus registros, consulte esta [documentação](../../workflow/using/starting-a-workflow.md).
+Para saber como limpar seus registros, consulte esta [documentação](starting-a-workflow.md).
 
 ### Planejamento de workflow {#workflow-planning}
 
@@ -52,7 +54,7 @@ Para saber como limpar seus registros, consulte esta [documentação](../../work
 * Para reduzir os tempos de execução gerais, substitua atividades demoradas por atividades simplificadas e mais rápidas.
 * Evite executar mais de 20 workflows simultaneamente. Quando muitos workflows são executados ao mesmo tempo, o sistema pode ficar sem recursos e se tornar instável. Para obter mais informações sobre por que o workflow pode não estar sendo iniciado, consulte este [artigo](https://helpx.adobe.com/ie/campaign/kb/workflows-not-starting-in-a-campaign-technical-workflows.html).
 
-### Execução do workflow {#workflow-execution}
+### Execução do fluxo de trabalho {#workflow-execution}
 
 É recomendável não agendar um workflow para execução por mais de 15 minutos porque pode atrapalhar o desempenho geral do sistema e criar bloqueios no banco de dados.
 
@@ -74,7 +76,7 @@ Na janela **[!UICONTROL Workflow properties]**, nunca marque a opção **[!UICON
 
 ![](assets/wf-execute-in-engine.png)
 
-## Propriedades do workflow {#workflow-properties}
+## Propriedades do fluxo de trabalho {#workflow-properties}
 
 ### Pastas de workflow {#workflow-folders}
 
@@ -110,23 +112,23 @@ Essa opção tem impacto funcional somente nos workflows da campanha.
 
 Workflows da campanha (workflows criados como parte de uma campanha/operação) com uma severidade mais alta são executados com prioridade caso a campanha tenha muitos processos executados simultaneamente. Por padrão, apenas dez processos podem ser executados simultaneamente em uma campanha, de acordo com a opção NmsOperation_LimitConcurrency. Por exemplo, se uma campanha contêm 25 workflows, os workflows com uma severidade mais alta serão executados no primeiro pool de dez processos.
 
-### Monitoramento de workflow {#workflow-monitoring}
+### Monitoramento de fluxo de trabalho {#workflow-monitoring}
 
 Todos os workflows agendados executados em ambientes de produção devem ser monitorados para enviar alerta em caso de erro.
 
 Nas propriedades do fluxo de trabalho, selecione um grupo supervisor, seja o grupo **[!UICONTROL Workflow supervisors]** padrão ou um grupo personalizado. Certifique-se de que pelo menos um operador participe desse grupo, com um email definido.
 
-Antes de começar a construir um workflow, lembre-se de definir supervisores de workflow. Eles serão notificados por email em caso de erro. Para obter mais informações, consulte [Gerenciando erros](../../workflow/using/monitoring-workflow-execution.md#managing-errors).
+Antes de começar a construir um workflow, lembre-se de definir supervisores de workflow. Eles serão notificados por email em caso de erro. Para obter mais informações, consulte [Gerenciando erros](monitoring-workflow-execution.md#managing-errors).
 
-Verifique regularmente a guia **[!UICONTROL Monitoring]** para visualizar o status geral dos workflows ativos. Para obter mais informações, consulte [Supervisão de instância](../../workflow/using/monitoring-workflow-execution.md#instance-supervision).
+Verifique regularmente a guia **[!UICONTROL Monitoring]** para visualizar o status geral dos workflows ativos. Para obter mais informações, consulte [Supervisão de instância](monitoring-workflow-execution.md#instance-supervision).
 
-O Workflow HeatMap permite aos administradores da plataforma Adobe Campaign monitorarem a carga na instância e planejarem os workflows correspondentes. Para obter mais informações, consulte [Monitoramento de workflow](../../workflow/using/heatmap.md).
+O Workflow HeatMap permite aos administradores da plataforma Adobe Campaign monitorarem a carga na instância e planejarem os workflows correspondentes. Para obter mais informações, consulte [Monitoramento de workflow](heatmap.md).
 
 ## Uso das atividades {#using-activities}
 
 >[!CAUTION]
 >
->É possível copiar e colar atividades dentro de um mesmo workflow. No entanto, não recomendamos atividades de copiar e colar em workflows diferentes. Algumas configurações anexadas a atividades como Delivery e Scheduler podem gerar conflitos e erros ao executar o workflow de destino. Em vez disso, recomendamos usar **Duplicate** nos workflows. Para obter mais informações, consulte [Duplicação de workflows](../../workflow/using/building-a-workflow.md#duplicating-workflows).
+>É possível copiar e colar atividades dentro de um mesmo workflow. No entanto, não recomendamos atividades de copiar e colar em workflows diferentes. Algumas configurações anexadas a atividades como Delivery e Scheduler podem gerar conflitos e erros ao executar o workflow de destino. Em vez disso, recomendamos usar **Duplicate** nos workflows. Para obter mais informações, consulte [Duplicação de workflows](building-a-workflow.md#duplicating-workflows).
 
 ### Nome da atividade {#name-of-the-activity}
 
@@ -137,11 +139,11 @@ O nome da atividade pode ser encontrado na guia **[!UICONTROL Advanced]**. Não 
 ### Primeira e última atividades {#first-and-last-activities}
 
 * Sempre inicie o fluxo de trabalho com uma atividade **[!UICONTROL Start]** ou atividade **[!UICONTROL Scheduler]** . Quando pertinente, também é possível usar uma atividade **[!UICONTROL External signal]**.
-* Ao criar o fluxo de trabalho, use apenas uma atividade **[!UICONTROL Scheduler]** por ramificação. Se a mesma ramificação de um fluxo de trabalho tiver vários schedulers (vinculados uns aos outros), o número de tarefas a serem executadas será multiplicado exponencialmente, o que irá sobrecarregar consideravelmente o banco de dados. Essa regra também se aplica a todas as atividades com uma guia **[!UICONTROL Scheduling & History]**. Saiba mais em [Agendamento](../../workflow/using/scheduler.md).
+* Ao criar o fluxo de trabalho, use apenas uma atividade **[!UICONTROL Scheduler]** por ramificação. Se a mesma ramificação de um fluxo de trabalho tiver vários schedulers (vinculados uns aos outros), o número de tarefas a serem executadas será multiplicado exponencialmente, o que irá sobrecarregar consideravelmente o banco de dados. Essa regra também se aplica a todas as atividades com uma guia **[!UICONTROL Scheduling & History]**. Saiba mais em [Agendamento](scheduler.md).
 
    ![](assets/wf-scheduler.png)
 
-* Use atividades **[!UICONTROL End]** para cada fluxo de trabalho. Isso permite que o Adobe Campaign libere espaço temporário usado para cálculos dentro de workflows. Para obter mais informações, consulte [início e fim](../../workflow/using/start-and-end.md).
+* Use atividades **[!UICONTROL End]** para cada fluxo de trabalho. Isso permite que o Adobe Campaign libere espaço temporário usado para cálculos dentro de workflows. Para obter mais informações, consulte [início e fim](start-and-end.md).
 
 ### Javascript em uma atividade {#javascript-within-an-activity}
 

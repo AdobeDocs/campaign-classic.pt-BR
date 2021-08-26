@@ -6,14 +6,16 @@ audience: campaign
 content-type: reference
 topic-tags: tasks--resources-and-budgets
 exl-id: 6765e307-915a-44d2-a486-85c64e8ec52e
-source-git-commit: 690f7c4e62203127da7a7055afa0ee8ad4a2bce4
-workflow-type: ht
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+workflow-type: tm+mt
 source-wordcount: '2468'
 ht-degree: 100%
 
 ---
 
 # Controlar custos{#controlling-costs}
+
+![](../../assets/v7-only.svg)
 
 O Adobe Campaign permite controlar os custos de marketing programados, confirmados e faturados e separá-los por categorias usando o módulo Gerenciamento de Recursos de Marketing.
 

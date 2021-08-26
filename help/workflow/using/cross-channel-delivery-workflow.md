@@ -6,16 +6,18 @@ audience: workflow
 content-type: reference
 topic-tags: use-cases
 exl-id: dfd36d2c-44ff-49a9-80b4-09eaf3377072
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
-workflow-type: ht
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+workflow-type: tm+mt
 source-wordcount: '666'
 ht-degree: 100%
 
 ---
 
-# Workflow de delivery entre canais{#cross-channel-delivery-workflow}
+# Fluxo de trabalho de entrega entre canais{#cross-channel-delivery-workflow}
 
-Esse caso de uso apresenta um exemplo envolvendo um workflow de delivery entre canais. O conceito geral de deliveries entre canais é apresentado [nesta seção](../../workflow/using/cross-channel-deliveries.md).
+![](../../assets/common.svg)
+
+Esse caso de uso apresenta um exemplo envolvendo um workflow de delivery entre canais. O conceito geral de deliveries entre canais é apresentado [nesta seção](cross-channel-deliveries.md).
 
 O objetivo é segmentar um público dos recipients do banco de dados em diferentes grupos com o objetivo de enviar um e-mail para um grupo e uma mensagem SMS para outro grupo.
 
@@ -36,7 +38,7 @@ As principais etapas de implementação para este caso de uso são as seguintes:
 Para definir seu target, crie uma query para identificar os recipients.
 
 1. Crie uma campanha. Para obter mais informações, consulte [esta seção](../../campaign/using/setting-up-marketing-campaigns.md#creating-a-campaign).
-1. Na guia **[!UICONTROL Targeting and workflows]** da campanha, adicione uma atividade de **Query** ao workflow. Para obter mais informações sobre o uso dessa atividade, consulte [esta seção](../../workflow/using/query.md).
+1. Na guia **[!UICONTROL Targeting and workflows]** da campanha, adicione uma atividade de **Query** ao workflow. Para obter mais informações sobre o uso dessa atividade, consulte [esta seção](query.md).
 1. Defina os recipients que receberão suas deliveries. Por exemplo, selecione os membros &quot;Ouro&quot; como a target dimension.
 1. Adicione as condições do filtro à sua query. Neste exemplo, selecione recipients que tenham um endereço de e-mail e um número de celular.
 
@@ -69,7 +71,7 @@ Para definir seu target, crie uma query para identificar os recipients.
 
 Depois que seu target for identificado e seu primeiro fornecimento for criado, será necessário segmentar o target em diferentes populações usando condições de filtro.
 
-1. Adicione uma atividade **Split** ao workflow e abra-a. Para obter mais informações sobre o uso dessa atividade, consulte [esta seção](../../workflow/using/split.md).
+1. Adicione uma atividade **Split** ao workflow e abra-a. Para obter mais informações sobre o uso dessa atividade, consulte [esta seção](split.md).
 1. Crie três segmentos a partir da população upstream processado na query.
 
    ![](assets/wkf_cross-channel_6.png)

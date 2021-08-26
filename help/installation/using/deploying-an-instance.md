@@ -6,7 +6,7 @@ audience: installation
 content-type: reference
 topic-tags: initial-configuration
 exl-id: 8b07447c-9a86-4b56-8d29-e0b01357a6ec
-source-git-commit: ee3d643e4ba607b3d7ca816eabf862b867d1f3f4
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '3048'
 ht-degree: 3%
@@ -14,6 +14,8 @@ ht-degree: 3%
 ---
 
 # Implantação de uma instância{#deploying-an-instance}
+
+![](../../assets/v7-only.svg)
 
 >[!NOTE]
 >
@@ -94,7 +96,7 @@ Você pode definir aqui os caracteres autorizados (&#39;política de dados&#39;)
 
 Há duas listas disponíveis: **Apenas europeu** ou **Apenas EUA**. Outros caracteres podem ser adicionados, se necessário.
 
-### Parâmetros do delivery {#delivery-parameters}
+### Parâmetros de entrega {#delivery-parameters}
 
 Os **Parâmetros avançados...O link** permite acessar opções de entrega, parâmetros vinculados a tentativas e quarentenas.
 

@@ -6,14 +6,16 @@ audience: workflow
 content-type: reference
 topic-tags: flow-control-activities
 exl-id: 7ff5da71-ef82-48a2-a608-06a4ca188bb9
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
-workflow-type: ht
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+workflow-type: tm+mt
 source-wordcount: '546'
 ht-degree: 100%
 
 ---
 
 # Aprovação{#approval}
+
+![](../../assets/common.svg)
 
 Uma tarefa **Aprovação** necessita da participação de um operador. O operador é atribuído a uma tarefa e pode responder por e-mail, usando a página da Web vinculada na mensagem de e-mail ou através do console.
 
@@ -63,9 +65,9 @@ Clique no link **[!UICONTROL Advanced parameters...]** para selecionar o templat
 
 Esse template pode ser modificado para personalizar o layout de mensagens, mas é preferível fazer uma cópia. O mecanismo do target (arquivo externo, mapeamento do target) não deve ser modificado porque é necessário para que as notificações funcionem corretamente.
 
-Um exemplo de aprovação é exibido em [Defining approvals](../../workflow/using/defining-approvals.md)
+Um exemplo de aprovação é exibido em [Defining approvals](defining-approvals.md)
 
-## Parâmetros de output {#output-parameters}
+## Parâmetros de saída {#output-parameters}
 
 * **[!UICONTROL response]**
 

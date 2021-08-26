@@ -6,14 +6,16 @@ audience: migration
 content-type: reference
 topic-tags: migration-overview
 exl-id: 3050238d-6f77-4ffa-9aef-677ab8009388
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '153'
 ht-degree: 4%
 
 ---
 
-# Migrar para Campaign Classic{#about-migration}
+# Migração para o Campaign Classic{#about-migration}
+
+![](../../assets/v7-only.svg)
 
 Este documento detalha os pré-requisitos para uma migração, as etapas para uma migração para o Adobe Campaign Classic (v7), as configurações adicionais, necessárias e opcionais, dependendo de sua configuração.
 

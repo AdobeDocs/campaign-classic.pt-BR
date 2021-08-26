@@ -6,7 +6,7 @@ audience: installation
 content-type: reference
 topic-tags: deployment-types-
 exl-id: 8a4d7ef1-de5b-4aee-a527-1b74d987ba61
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '351'
 ht-degree: 2%
@@ -14,6 +14,8 @@ ht-degree: 2%
 ---
 
 # Implantação mid-sourcing{#mid-sourcing-deployment}
+
+![](../../assets/v7-only.svg)
 
 Essa configuração é uma solução intermediária ideal entre uma configuração hospedada (ASP) e a internalização. Os componentes de execução voltados para o exterior são executados em um servidor &quot;mid-sourcing&quot; hospedado na Adobe Campaign.
 
@@ -35,7 +37,7 @@ A comunicação geral entre servidores e processos é realizada de acordo com o 
 * Configuração simplificada do servidor: Não é necessário que o cliente configure módulos voltados para o exterior (mta e inMail).
 * Uso limitado da largura de banda: Como a execução é realizada pelo servidor mid-sourcing, somente é necessária largura de banda suficiente para enviar dados de personalização ao servidor mid-sourcing.
 * A alta disponibilidade não é mais um problema interno: O problema é transferido para o servidor mid-sourcing (redirecionamento, mirror pages, servidores de execução etc.).
-* O banco de dados não sai da empresa: Somente os dados necessários para montar as mensagens são enviados para o servidor mid-sourcing (HTTPS pode ser usado para isso).
+* O banco de dados não sai da empresa: Somente os dados necessários para montar as mensagens são enviados ao servidor mid-sourcing (HTTPS pode ser usado para isso).
 * Esse tipo de implantação pode ser uma solução para arquiteturas de alto volume (muitos recipients no banco de dados), com uma taxa de transferência de delivery significativa.
 
 ### Desvantagens {#disadvantages}
@@ -60,6 +62,6 @@ A comunicação geral entre servidores e processos é realizada de acordo com o 
 * Acesso a um servidor de banco de dados no servidor de aplicativos.
 * Firewall configurado para abrir portas HTTP (80) ou HTTPS (443) no servidor mid-sourcing.
 
-### Instalar e configurar (implantação de mid-sourcing) {#installing-and-configuring--mid-sourcing-deployment-}
+### Instalação e configuração (implantação de mid-sourcing) {#installing-and-configuring--mid-sourcing-deployment-}
 
 Consulte [Servidor Mid-sourcing](../../installation/using/mid-sourcing-server.md).

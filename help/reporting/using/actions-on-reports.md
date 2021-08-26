@@ -6,14 +6,16 @@ audience: reporting
 content-type: reference
 topic-tags: creating-new-reports
 exl-id: b30cdeaf-4ad6-473d-bdbc-91984755b609
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
-workflow-type: ht
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+workflow-type: tm+mt
 source-wordcount: '546'
 ht-degree: 100%
 
 ---
 
 # Ações em relatórios{#actions-on-reports}
+
+![](../../assets/common.svg)
 
 Quando estiver exibindo um relatório, a barra de ferramentas permite executar determinado número de ações. Veja os detalhes abaixo.
 

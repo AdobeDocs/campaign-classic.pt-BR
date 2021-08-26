@@ -6,14 +6,16 @@ audience: installation
 content-type: reference
 topic-tags: additional-configurations
 exl-id: 424faf25-2fd5-40d1-a2fc-c715fc0b8190
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: dccf72b200cad9ba160a496cdd13ba39c5599008
 workflow-type: tm+mt
-source-wordcount: '1304'
+source-wordcount: '1305'
 ht-degree: 3%
 
 ---
 
-# CCO de email {#email-archiving}
+# Configurar email Cco {#email-archiving}
+
+![](../../assets/v7-only.svg)
 
 Você pode configurar o Adobe Campaign para manter uma cópia dos emails enviados da sua plataforma.
 
@@ -121,7 +123,7 @@ No arquivo **config-`<instance name>.xml`**, use os seguintes parâmetros para d
 >
 >Além disso, o retransmissão atribui um status **[!UICONTROL Sent]** a todos os emails, incluindo aqueles que não são enviados. Portanto, todas as mensagens são arquivadas.
 
-## Migrar para o novo Cco de email {#updated-email-archiving-system--bcc-}
+## Migração para o novo Cco de email {#updated-email-archiving-system--bcc-}
 
 >[!IMPORTANT]
 >
@@ -135,7 +137,7 @@ Para fazer isso, faça as seguintes alterações no arquivo **`config-<instance>
 
 Após configurar o Cco do email, selecione a opção **[!UICONTROL Email BCC]** no template do delivery ou no delivery. Para obter mais informações, consulte [esta seção](../../delivery/using/sending-messages.md#archiving-emails).
 
-## Práticas recomendadas de Cco de email {#best-practices}
+## Práticas recomendadas de Cco de emails {#best-practices}
 
 * **Caixa de entrada** do endereço CCO: verifique se tem capacidade de recebimento suficiente para arquivar todos os emails enviados pelo MTA.
 * **mutualização** de MTA: o recurso de arquivamento do Cco funciona no nível do MTA. Ele permite duplicar cada email enviado pelo MTA. Como o MTA pode ser mutualizado em várias instâncias (desenvolvimento, teste ou produção por exemplo) ou até mesmo em vários clientes (em um ambiente de mid-sourcing), a configuração desse recurso afeta a segurança:
@@ -145,3 +147,31 @@ Após configurar o Cco do email, selecione a opção **[!UICONTROL Email BCC]** 
 
 * **Emails por conexão**: O arquivamento de emails CCO opera abrindo uma conexão e tentando enviar todos os emails por essa conexão. O Adobe recomenda verificar com seu contato técnico interno o número de emails aceitos em uma determinada conexão. O aumento desse número pode ter um grande impacto na taxa de transferência de Cco.
 * **IPs** de envio de Cco: atualmente, os emails do CCO não são enviados pelos proxies MTA normais. Em vez disso, uma conexão direta é aberta do servidor MTA para o servidor de email de destino. Isso significa que talvez seja necessário adicionar outros IPs à lista de permissões na rede, dependendo da configuração do servidor de email.
+
+<!--## Email BCC with Enhanced MTA {#email-bcc-with-enhanced-mta}
+
+For **hosted and hybrid architectures**, if you have the latest instance of Adobe Campaign, or if you have upgraded to the Enhanced MTA and using Adobe Campaign 19.2 or later, you can use Email BCC with Enhanced MTA, which is more reliable, efficient, and has lower latency.
+
+### Activating Email BCC with Enhanced MTA
+
+To activate this feature, you must contact your account executive to communicate the BCC email address to be used for archiving.
+
+>[!NOTE]
+>
+>If you were already using BCC email archiving, you can provide the same address as you were using before or use a new one. If you keep the same, you still have to contact your account executive to set it up for you.
+
+### Specificities and recommendations
+
+Email BCC with Enhanced MTA is not activated at the delivery level: once this feature is enabled, **all sent deliveries** are sent to the BCC email address. There is no need to select the **[!UICONTROL Email BCC]** option in the delivery template or in the delivery.
+
+If you were already using BCC and if you keep the same address, you could see a significant increase in the volumes sent to the BCC address.
+
+Consequently, make sure:
+* The BCC address has enough reception capacity to archive all the emails that are sent.
+* You have the required MTA infrastructure capacity to receive 100% of your email volume delivered to a single address.
+
+### Limitations
+
+* Email BCC with Enhanced MTA delivers to the BCC email address before delivering to the recipients, which can result in BCC messages being sent even though the original deliveries may have bounced. For more on bounces, see [Understanding delivery failures](../../delivery/using/understanding-delivery-failures.md).
+
+* There is no reporting available on the delivery status of the emails sent to the BCC email address.-->

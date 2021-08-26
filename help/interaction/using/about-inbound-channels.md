@@ -6,14 +6,16 @@ audience: interaction
 content-type: reference
 topic-tags: unitary-interactions
 exl-id: 33247728-b865-4dfd-814f-2900965a7187
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
-workflow-type: ht
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+workflow-type: tm+mt
 source-wordcount: '218'
 ht-degree: 100%
 
 ---
 
 # Sobre canais de entrada{#about-inbound-channels}
+
+![](../../assets/v7-only.svg)
 
 As ofertas podem ser apresentadas em vários espaços de ofertas usando um canal de entrada ou saída. Este capítulo detalha alguns recursos específicos para canais de entrada.
 

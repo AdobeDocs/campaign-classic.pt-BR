@@ -6,7 +6,7 @@ audience: configuration
 content-type: reference
 topic-tags: schema-reference
 exl-id: fc0fd23c-f9ea-4e30-b47b-a84143d882ca
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '2374'
 ht-degree: 1%
@@ -14,6 +14,8 @@ ht-degree: 1%
 ---
 
 # Descrição do modelo de dados da campanha{#data-model-description}
+
+![](../../assets/v7-only.svg)
 
 O Adobe Campaign vem com um modelo de dados predefinido. Esta seção fornece alguns detalhes sobre as tabelas integradas do modelo de dados do Adobe Campaign e sua interação.
 
@@ -25,7 +27,7 @@ Para acessar a descrição de cada tabela, vá para **[!UICONTROL Admin > Config
 >
 >A estrutura física e lógica dos dados transportados no aplicativo é descrita em XML. Ela obedece a uma gramática específica do Adobe Campaign, chamada de schema. Para obter mais informações sobre schemas Adobe Campaign, leia [esta seção](../../configuration/using/about-schema-reference.md).
 
-## Descrição das tabelas principais {#description-main-tables}
+## Descrição dos quadros principais {#description-main-tables}
 
 O Adobe Campaign depende de um banco de dados relacional contendo tabelas vinculadas.
 
@@ -129,7 +131,7 @@ Esse conjunto de tabelas está vinculado ao módulo **Marketing campanhas** , qu
 
 ## Consistência da comunicação {#communication-consistency}
 
-Esse conjunto de tabelas está vinculado ao módulo **Otimização de Campanha**, que permite controlar, filtrar e monitorar o envio de deliveries. Para obter mais informações, consulte [Sobre tipologias de campanha](../../campaign/using/about-campaign-typologies.md).
+Esse conjunto de tabelas está vinculado ao módulo **Otimização de Campanha**, que permite controlar, filtrar e monitorar o envio de deliveries. Para obter mais informações, consulte [Sobre tipologias de campanha](../../campaign-opt/using/about-campaign-typologies.md).
 
 ![](assets/data-model_typology.png)
 
@@ -141,7 +143,7 @@ Esse conjunto de tabelas está vinculado ao módulo **Otimização de Campanha**
 
 ## Gestor de resposta {#response-management}
 
-Esse conjunto de tabelas está vinculado ao módulo **Gestor de Resposta**, que permite medir o sucesso e a lucratividade das campanhas de marketing ou apresentações de ofertas para todos os canais de comunicação. Para obter mais informações, consulte [Sobre o gestor de resposta](../../campaign/using/about-response-manager.md).
+Esse conjunto de tabelas está vinculado ao módulo **Gestor de Resposta**, que permite medir o sucesso e a lucratividade das campanhas de marketing ou apresentações de ofertas para todos os canais de comunicação. Para obter mais informações, consulte [Sobre o gestor de resposta](../../response/using/about-response-manager.md).
 
 ![](assets/data-model_response.png)
 

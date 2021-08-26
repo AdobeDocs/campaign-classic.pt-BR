@@ -6,7 +6,7 @@ audience: installation
 content-type: reference
 topic-tags: additional-configurations
 exl-id: 0533cd50-3aa4-4160-9152-e916e149e77f
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '1008'
 ht-degree: 1%
@@ -15,7 +15,9 @@ ht-degree: 1%
 
 # Conexão por meio do LDAP{#connecting-through-ldap}
 
-## Configurando o Campaign e o LDAP {#configuring-campaign-and-ldap}
+![](../../assets/v7-only.svg)
+
+## Configuração do Campaign e LDAP {#configuring-campaign-and-ldap}
 
 >[!NOTE]
 >
@@ -92,7 +94,7 @@ Os sistemas compatíveis dependem do mecanismo de autenticação selecionado. Ve
  </tbody> 
 </table>
 
-## Cálculo de nome distinto {#distinguished-name-calculation}
+## Cálculo de Nome Distinto {#distinguished-name-calculation}
 
 Se quiser calcular os identificadores de Nome Distinto (DN), a próxima etapa do assistente de implantação permite configurar o modo de cálculo.
 
@@ -112,7 +114,7 @@ Se quiser calcular os identificadores de Nome Distinto (DN), a próxima etapa do
 
    Se você preencher esses dois campos, o Adobe Campaign se conectará ao servidor LDAP com seu próprio logon e senha. Se estiverem vazios, o Adobe Campaign se conectará ao servidor anonimamente.
 
-## Pesquisando identificadores {#searching-for-identifiers}
+## Pesquisar identificadores {#searching-for-identifiers}
 
 Se você optar por pesquisar um identificador, o assistente de implantação permitirá configurar a pesquisa.
 
@@ -137,7 +139,7 @@ Se você optar por pesquisar um identificador, o assistente de implantação per
 
 * O campo **[!UICONTROL Filter]** permite especificar um elemento para refinar o escopo da pesquisa.
 
-## Configurando autorizações LDAP {#configuring-ldap-authorizations}
+## Configuração de autorizações LDAP {#configuring-ldap-authorizations}
 
 Essa janela é exibida quando você seleciona a opção **[!UICONTROL Enable synchronization of user rights from authorizations and groups in the directory]**.
 
@@ -159,7 +161,7 @@ Você deve especificar vários parâmetros para localizar o grupo ou grupos aos 
 
 Clique em **[!UICONTROL Save]** para concluir a configuração da instância.
 
-## Gerenciar operadores {#managing-operators}
+## Gerenciamento de operadores {#managing-operators}
 
 Depois de confirmar a configuração, você deve definir quais operadores do Adobe Campaign são gerenciados por meio do diretório LDAP.
 

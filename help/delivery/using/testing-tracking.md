@@ -6,14 +6,16 @@ audience: delivery
 content-type: reference
 topic-tags: tracking-messages
 exl-id: 16ad36b7-c13e-4b77-86ca-41c9ef174172
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
-workflow-type: ht
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+workflow-type: tm+mt
 source-wordcount: '250'
 ht-degree: 100%
 
 ---
 
 # Testar o rastreamento{#testing-tracking}
+
+![](../../assets/common.svg)
 
 É possível testar o rastreamento em páginas de espelhamento, registros de email e links. Para fazer isso:
 

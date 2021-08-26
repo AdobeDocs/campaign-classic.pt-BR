@@ -6,14 +6,16 @@ audience: interaction
 content-type: reference
 topic-tags: managing-environments
 exl-id: bdda98f7-a083-4f3b-b691-c28ec79af780
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
-workflow-type: ht
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+workflow-type: tm+mt
 source-wordcount: '981'
 ht-degree: 100%
 
 ---
 
 # Criação de espaços de oferta{#creating-offer-spaces}
+
+![](../../assets/v7-only.svg)
 
 A criação de espaço de oferta só pode ser realizada por um **administrador técnico** com acesso às subpastas de espaço de oferta. Os espaços de oferta só podem ser criados no ambiente de design e são automaticamente duplicados no ambiente live durante a aprovação da oferta.
 

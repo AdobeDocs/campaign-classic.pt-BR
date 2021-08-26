@@ -6,20 +6,26 @@ audience: workflow
 content-type: reference
 topic-tags: flow-control-activities
 exl-id: 8549bf8c-ba23-44cb-95f2-c50f2d0f5479
-source-git-commit: 690f7c4e62203127da7a7055afa0ee8ad4a2bce4
-workflow-type: ht
-source-wordcount: '90'
-ht-degree: 100%
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+workflow-type: tm+mt
+source-wordcount: '103'
+ht-degree: 77%
 
 ---
 
 # Tarefa{#task}
 
+![](../../assets/common.svg)
+
+>[!AVAILABILITY]
+>
+>:warning: Esse recurso só está disponível no Campaign Classic v7. [Saiba mais](../../mrm/using/creating-and-managing-tasks.md)
+
 Em um workflow de campanha, a atividade **[!UICONTROL Task]** permite especificar dois cenários: o primeiro se a tarefa for concluída e um segundo se a tarefa não for concluída (se estiver marcada manualmente como incompleta ou se ela expirar).
 
 ![](assets/mrm_task_in_workflow.png)
 
-Como configurar e operar uma tarefa é detalhada nesta [seção](../../mrm/using/creating-and-managing-tasks.md).
+Como configurar e operar uma tarefa é detalhada na [documentação do Campaign Classic v7](../../mrm/using/creating-and-managing-tasks.md).
 
 ![](assets/wkf_task_activity.png)
 

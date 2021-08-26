@@ -6,7 +6,7 @@ audience: configuration
 content-type: reference
 topic-tags: editing-schemas
 exl-id: b7ee70e0-89c6-4cd3-8116-2f073d4a2f2f
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '664'
 ht-degree: 3%
@@ -14,6 +14,8 @@ ht-degree: 3%
 ---
 
 # Exemplos de edição de esquemas{#examples-of-schemas-edition}
+
+![](../../assets/v7-only.svg)
 
 ## Extensão de uma tabela {#extending-a-table}
 
@@ -147,7 +149,7 @@ INSERT INTO CusOrder (iOrderId) VALUES (0);
 >
 >O comando SQL INSERT INTO no final do script permite inserir um conjunto de registros identificador como 0 para simular associações externas.
 
-## Tabela de extensão {#extension-table}
+## Tabela de extensões {#extension-table}
 
 Uma tabela de extensão permite estender o conteúdo de uma tabela existente em uma tabela vinculada de cardinalidade 1-1.
 

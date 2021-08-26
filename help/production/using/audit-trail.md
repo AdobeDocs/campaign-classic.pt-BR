@@ -6,7 +6,7 @@ audience: production
 content-type: reference
 topic-tags: production-procedures
 exl-id: 8508d879-fb38-4b1f-9f55-0341bb8d0c67
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '453'
 ht-degree: 3%
@@ -14,6 +14,8 @@ ht-degree: 3%
 ---
 
 # Trilha de auditoria{#audit-trail}
+
+![](../../assets/v7-only.svg)
 
 No Adobe Campaign, o **[!UICONTROL Audit trail]** fornece acesso ao histórico completo das alterações feitas em sua instância.
 
@@ -80,7 +82,7 @@ Para acessar o **[!UICONTROL Audit trail]** da sua instância :
 >
 >Por padrão, o período de retenção é definido como 180 dias para **[!UICONTROL Audit logs]** . Para saber mais sobre como alterar o período de retenção, consulte esta [página](../../production/using/database-cleanup-workflow.md#deployment-wizard).
 
-## Ativar/desativar Trilha de auditoria {#enable-disable-audit-trail}
+## Ativar/desativar Trilha de Auditoria {#enable-disable-audit-trail}
 
 A trilha de auditoria pode ser facilmente ativada ou desativada para uma atividade específica se, por exemplo, você quiser salvar espaço no banco de dados.
 

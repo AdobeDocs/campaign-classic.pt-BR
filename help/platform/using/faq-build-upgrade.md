@@ -6,14 +6,16 @@ audience: platform
 content-type: reference
 topic-tags: starting-with-adobe-campaign
 exl-id: 85e2135d-a1a3-44f0-a4f9-de38db5c8726
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
-workflow-type: ht
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+workflow-type: tm+mt
 source-wordcount: '2024'
 ht-degree: 100%
 
 ---
 
 # Perguntas frequentes de atualização de build {#build-upgrade-faq}
+
+![](../../assets/common.svg)
 
 O Adobe Campaign é atualizado regularmente. Se você conhece as [Notas de versão](../../rn/using/rn-overview.md) publicadas, provavelmente sabe que a cada ano são lançadas em média 2/3 das versões secundárias, repletas de novos recursos, melhorias e correções. Além disso, periodicamente liberamos builds apenas com correções cumulativas. Essa frequência regular de atualizações tem como objetivo fazer com que você tenha disponível as atualizações melhores e mais recentes, além de manter seu ambiente totalmente protegido e de melhorar obviamente sua experiência com nosso produto.
 
@@ -102,7 +104,7 @@ Identifique tempos de tráfego baixos ou de baixo volume que seriam ideais para 
 
 Revise nossa [lista de verificação de atualização de build abaixo](#check-list) e seus planos de teste e verifique se os recursos que podem executar esses testes estão disponíveis dentro de 24 a 48 horas da conclusão de uma atualização.
 
-Para saber mais, [consulte este documento](https://helpx.adobe.com/br/campaign/kb/acc-build-upgrade.html).
+Para saber mais, [consulte este documento](https://helpx.adobe.com/campaign/kb/acc-build-upgrade.html).
 
 ## As atualizações de build podem ser realizadas à noite ou fora do horário comercial?
 

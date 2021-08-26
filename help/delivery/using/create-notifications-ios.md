@@ -6,14 +6,16 @@ audience: delivery
 content-type: reference
 topic-tags: sending-push-notifications
 exl-id: 13ccc5d6-4355-42ba-80dc-30a45d3b69a4
-source-git-commit: a129f49d4f045433899fd7fdbd057fb16d0ed36a
-workflow-type: ht
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+workflow-type: tm+mt
 source-wordcount: '783'
 ht-degree: 100%
 
 ---
 
 # Criar notificações para iOS{#create-notifications-ios}
+
+![](../../assets/common.svg)
 
 Esta seção detalha os elementos específicos para a entrega de notificações do iOS. Os conceitos globais sobre a criação de delivery são apresentados [nesta seção](steps-about-delivery-creation-steps.md).
 

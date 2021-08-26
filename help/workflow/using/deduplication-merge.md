@@ -13,8 +13,8 @@ index: y
 internal: n
 snippet: y
 exl-id: a6b10585-7bf9-4fef-b886-db081b6d3acc
-source-git-commit: e3e2ac09de6a9e846e9f9262d522b9395a725648
-workflow-type: ht
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+workflow-type: tm+mt
 source-wordcount: '550'
 ht-degree: 100%
 
@@ -22,11 +22,13 @@ ht-degree: 100%
 
 # Utilização da funcionalidade de mesclagem da atividade de desduplicação {#deduplication-merge}
 
+![](../../assets/common.svg)
+
 ## Sobre este caso de uso {#about-this-use-case}
 
 Este caso de uso descreve como usar a funcionalidade **[!UICONTROL Merge]** na atividade **[!UICONTROL Deduplication]**.
 
-Para obter mais informações sobre essa funcionalidade, consulte [esta seção](../../workflow/using/deduplication.md#merging-fields-into-single-record).
+Para obter mais informações sobre essa funcionalidade, consulte [esta seção](deduplication.md#merging-fields-into-single-record).
 
 A atividade **[!UICONTROL Deduplication]** é usada para remover linhas duplicadas de um conjunto de dados. Nesse caso de uso, os dados mostrados abaixo são duplicados com base no campo Email.
 

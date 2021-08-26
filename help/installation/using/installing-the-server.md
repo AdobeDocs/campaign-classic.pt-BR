@@ -6,7 +6,7 @@ audience: installation
 content-type: reference
 topic-tags: installing-campaign-in-windows-
 exl-id: c0cb4efa-cae9-4312-88fb-738857a89595
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '402'
 ht-degree: 3%
@@ -14,6 +14,8 @@ ht-degree: 3%
 ---
 
 # Instalação do servidor{#installing-the-server}
+
+![](../../assets/v7-only.svg)
 
 ## Execução do programa de instalação {#executing-the-installation-program}
 
@@ -62,7 +64,7 @@ As etapas de instalação do servidor Adobe Campaign são as seguintes:
 
    Quando a instalação estiver concluída, inicie o Adobe Campaign para criar os arquivos de configuração. Consulte [Primeira inicialização do servidor](#first-start-up-of-the-server).
 
-## Teste de instalação de resumo {#summary-installation-testing}
+## Teste de instalação do resumo {#summary-installation-testing}
 
 Você pode testar a instalação inicial usando o seguinte comando:
 
@@ -139,7 +141,7 @@ O servidor do Adobe Campaign define um logon técnico chamado **internal** que t
 
 Saiba mais [nesta seção](../../installation/using/configuring-campaign-server.md#internal-identifier).
 
-## Iniciando serviços do Adobe Campaign {#starting-adobe-campaign-services}
+## Iniciar serviços da Adobe Campaign {#starting-adobe-campaign-services}
 
 Para iniciar os serviços da Adobe Campaign, você pode usar o gerenciador de serviços ou inserir o seguinte na linha de comando (com os direitos apropriados):
 
@@ -153,7 +155,7 @@ Se precisar parar os processos do Adobe Campaign posteriormente, use o comando:
 net stop nlserver6
 ```
 
-## Instalando o LibreOffice {#installing-libreoffice}
+## Instalação do LibreOffice {#installing-libreoffice}
 
 Baixe o LibreOffice, por exemplo, em [https://www.libreoffice.org/download/libreoffice-fresh/](https://www.libreoffice.org/download/libreoffice-fresh/) e siga as etapas de instalação regulares.
 

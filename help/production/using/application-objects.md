@@ -6,7 +6,7 @@ audience: production
 content-type: reference
 topic-tags: database-maintenance
 exl-id: fb4798d7-0a2c-455b-86b6-3dcb5fd25c82
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '459'
 ht-degree: 4%
@@ -14,6 +14,8 @@ ht-degree: 4%
 ---
 
 # Objetos de aplicativo{#application-objects}
+
+![](../../assets/v7-only.svg)
 
 Os objetos incorporados devem ser monitorizados e é importante evitar que cresçam demasiado.
 
@@ -35,7 +37,7 @@ Deve haver menos de 1000 pastas em qualquer instância. Ter mais pastas do que i
 
 Esse método também destaca os usuários que criam muitos objetos.
 
-## Deliveries {#deliveries}
+## Entregas {#deliveries}
 
 Deve haver menos de 1000 deliveries na instância a qualquer momento. Ter muitos deliveries consome espaço no banco de dados e cria problemas. Uma instância que cria mais de 10 deliveries por dia deve ser verificada em relação às necessidades comerciais. Considere o uso de deliveries contínuos para criar menos deliveries. Para obter mais informações, consulte [esta seção](../../workflow/using/continuous-delivery.md).
 

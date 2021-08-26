@@ -6,7 +6,7 @@ audience: production
 content-type: reference
 topic-tags: troubleshooting
 exl-id: fe69efda-a052-4f67-9c13-665f011d0a2b
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '711'
 ht-degree: 11%
@@ -14,6 +14,8 @@ ht-degree: 11%
 ---
 
 # Problemas de desempenho e de taxa de transferência{#performance-and-throughput-issues}
+
+![](../../assets/v7-only.svg)
 
 Primeiro, você deve verificar se tem a build mais recente instalada. Isso garante que você tenha os recursos e as correções de erros mais recentes.
 
@@ -23,7 +25,7 @@ Consulte as [Notas de versão](../../rn/using/latest-release.md) para obter mais
 
 As diretrizes gerais para os requisitos de hardware do Campaign Classic local estão detalhadas neste [page](https://helpx.adobe.com/br/campaign/kb/hardware-sizing-guide.html).
 
-A equipe de consultoria pode fornecer aos clientes hospedados uma ferramenta que permite visualizar facilmente qual espaço é usado por vários tipos de tabelas no banco de dados, bem como o espaço usado no site SFTP. Além disso, fornece ferramentas que permitem limpar dados desnecessários. Entre em contato com o [Adobe Customer Care](https://helpx.adobe.com/br/enterprise/admin-guide.html/br/enterprise/using/support-for-experience-cloud.ug.html) se precisar que essa ferramenta seja implementada. Veja algumas coisas importantes a serem verificadas usando esta ferramenta:
+A equipe de consultoria pode fornecer aos clientes hospedados uma ferramenta que permite visualizar facilmente qual espaço é usado por vários tipos de tabelas no banco de dados, bem como o espaço usado no site SFTP. Além disso, fornece ferramentas que permitem limpar dados desnecessários. Entre em contato com o [Adobe Customer Care](https://helpx.adobe.com/br/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html) se precisar que essa ferramenta seja implementada. Veja algumas coisas importantes a serem verificadas usando esta ferramenta:
 
 * Se o tamanho do índice for maior que o tamanho da tabela, será necessário haver vácuo.
 * Verifique as tabelas com o máximo de borrão. Se estas tabelas forem frequentemente utilizadas, devem ser aspiradas.
@@ -31,7 +33,7 @@ A equipe de consultoria pode fornecer aos clientes hospedados uma ferramenta que
 
 O Adobe Campaign também fornece uma [ferramenta](../../production/using/monitoring-processes.md#manual-monitoring) para verificar o uso da CPU e da RAM. Use essa ferramenta e observe indicadores específicos como: **Memória**, **Trocar Memória**, **Disco**, **Processos Ativos**. Se os valores forem muito altos, tente reduzir o número de workflows ou agendar workflows para iniciar em momentos diferentes.
 
-## Verificação de banco de dados {#database-performances}
+## Verificação do banco de dados {#database-performances}
 
 Na maioria das vezes, os problemas de desempenho estão vinculados à manutenção do banco de dados. Estes são os itens principais a serem verificados:
 
@@ -52,7 +54,7 @@ Esta é uma lista de artigos relacionados às práticas recomendadas de configur
 * Configuração TLS: não é recomendado ativar o TLS globalmente porque ele pode reduzir a taxa de transferência. Em vez disso, as configurações de TLS por domínio, gerenciadas pela equipe de deliverability, devem ser ajustadas dependendo das necessidades. Consulte esta [página](../../installation/using/email-deliverability.md#mx-configuration) para obter mais informações.
 * DKIM: para garantir o nível de segurança do DKIM, o 1024b é o tamanho de criptografia recomendado pela prática recomendada. As chaves DKIM inferiores não serão consideradas válidas pela maioria dos provedores de acesso. Consulte [esta página](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/transition-process/infrastructure.html?lang=pt-BR#authentication).
 
-## Problemas com delivery {#deliverability-issues}
+## Problemas na capacidade de delivery {#deliverability-issues}
 
 Esta é uma lista de práticas recomendadas e artigos relacionados à capacidade de entrega:
 

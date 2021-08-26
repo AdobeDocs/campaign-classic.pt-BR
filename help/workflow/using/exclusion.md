@@ -6,14 +6,16 @@ audience: workflow
 content-type: reference
 topic-tags: targeting-activities
 exl-id: f4fe97d9-6571-4aa5-8022-b0af9d5a6a13
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
-workflow-type: ht
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+workflow-type: tm+mt
 source-wordcount: '349'
 ht-degree: 100%
 
 ---
 
 # Exclusão{#exclusion}
+
+![](../../assets/common.svg)
 
 Uma atividade do tipo **Exclusão** cria um target com base em um target principal do qual um ou mais target são extraídos.
 
@@ -23,7 +25,7 @@ Para configurar essa atividade, insira seu rótulo e selecione o conjunto princi
 
 >[!NOTE]
 >
->Para obter mais informações sobre como configurar e usar a atividade de exclusão, consulte [Excluir uma população (Exclusão)](../../workflow/using/targeting-data.md#excluding-a-population--exclusion-).
+>Para obter mais informações sobre como configurar e usar a atividade de exclusão, consulte [Excluir uma população (Exclusão)](targeting-data.md#excluding-a-population--exclusion-).
 
 Marque a opção **[!UICONTROL Generate complement]** se desejar explorar a população restante. O complemento conterá o público principal de entrada menos o público de saída. Uma transição de output adicional será adicionada à atividade, da seguinte maneira:
 
@@ -48,7 +50,7 @@ O exemplo a seguir busca compilar uma lista de recipients com idade entre 18 e 3
 
 Cada evento de entrada deve especificar um target definido por esses parâmetros.
 
-## Parâmetros de output {#output-parameters}
+## Parâmetros de saída {#output-parameters}
 
 * tableName
 * schema

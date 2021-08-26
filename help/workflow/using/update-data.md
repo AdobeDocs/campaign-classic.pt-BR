@@ -6,14 +6,16 @@ audience: workflow
 content-type: reference
 topic-tags: targeting-activities
 exl-id: 9f5735d2-73b8-469f-bc10-482c99cdd4a1
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
-workflow-type: ht
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+workflow-type: tm+mt
 source-wordcount: '849'
 ht-degree: 100%
 
 ---
 
 # Atualizar dados{#update-data}
+
+![](../../assets/common.svg)
 
 Uma atividade do tipo **Update data** realiza uma atualização em massa dos campos no banco de dados.
 
@@ -116,7 +118,7 @@ Os dados de registros secundários são associados ao registro principal se as r
 
 ## Exemplo: Atualizar os dados após um enriquecimento {#example--update-data-following-an-enrichment}
 
-A seção do caso de uso [Etapa 2: Gravação de dados enriquecidos na seção da tabela &#39;Purchases&#39;](../../workflow/using/creating-a-summary-list.md#step-2--writing-enriched-data-to-the--purchases--table) que detalha a criação de uma lista de recapitulação e oferece um exemplo de atualização de dados após uma atividade de enriquecimento.
+A seção do caso de uso [Etapa 2: Gravação de dados enriquecidos na seção da tabela &#39;Purchases&#39;](creating-a-summary-list.md#step-2--writing-enriched-data-to-the--purchases--table) que detalha a criação de uma lista de recapitulação e oferece um exemplo de atualização de dados após uma atividade de enriquecimento.
 
 ## Parâmetros de entrada {#input-parameters}
 

@@ -6,7 +6,7 @@ audience: configuration
 content-type: reference
 topic-tags: editing-schemas
 exl-id: 9e10b24e-c4de-4e76-bbed-0d05f62120b7
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '1004'
 ht-degree: 9%
@@ -15,13 +15,15 @@ ht-degree: 9%
 
 # Sobre a edição de esquema{#about-schema-edition}
 
+![](../../assets/v7-only.svg)
+
 A Adobe Campaign emprega os Esquemas de dados para:
 
 * Definir como os objetos de dados no aplicativo estão vinculados às tabelas de banco de dados subjacentes.
 * Definir links entre os diferentes objetos de dados no aplicativo Campaign.
 * Definir e descrever os campos individuais incluídos em cada objeto.
 
-Para obter uma melhor compreensão das tabelas integradas do Campaign e sua interação, consulte [esta seção](https://helpx.adobe.com/br/campaign/kb/acc-datamodel.html).
+Para obter uma melhor compreensão das tabelas integradas do Campaign e sua interação, consulte [esta seção](https://experienceleague.adobe.com/docs/campaign-classic/using/configuring-campaign-classic/data-model/about-data-model.html?lang=pt-BR).
 
 ## Extensão ou criação de schemas {#extending-or-creating-schemas}
 
@@ -33,7 +35,7 @@ Para adicionar um tipo de dados totalmente novo que não existe pronto para uso 
 
 Depois de estender ou criar um schema para funcionar, a prática recomendada é definir seus elementos de conteúdo XML na mesma ordem em que aparecem abaixo.
 
-## Listas discriminadas {#enumerations}
+## Enumerações {#enumerations}
 
 As enumerações são definidas primeiro, antes do elemento principal do schema. Eles permitem exibir valores em uma lista para restringir as opções que o usuário tem para um determinado campo.
 

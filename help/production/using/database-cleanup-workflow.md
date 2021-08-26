@@ -6,7 +6,7 @@ audience: production
 content-type: reference
 topic-tags: data-processing
 exl-id: 75d3a0af-9a14-4083-b1da-2c1b22f57cbe
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '2910'
 ht-degree: 1%
@@ -14,6 +14,8 @@ ht-degree: 1%
 ---
 
 # Fluxo de trabalho de limpeza do banco de dados{#database-cleanup-workflow}
+
+![](../../assets/v7-only.svg)
 
 ## Introdução {#introduction}
 
@@ -88,7 +90,7 @@ Na data e hora definidas no agendador do workflow (consulte [O agendador](#the-s
 >
 >As seções abaixo que descrevem as tarefas realizadas pelo workflow de limpeza do banco de dados são reservadas para administradores de banco de dados ou usuários familiarizados com a linguagem SQL.
 
-### Lista para excluir a limpeza {#lists-to-delete-cleanup}
+### Listas para excluir limpeza {#lists-to-delete-cleanup}
 
 A primeira tarefa executada pelo workflow **[!UICONTROL Database cleanup]** exclui todos os grupos com o **deleteStatus != 0** do atributo **NmsGroup**. Os registros vinculados a esses grupos e que existem em outras tabelas também são excluídos.
 
@@ -120,7 +122,7 @@ A primeira tarefa executada pelo workflow **[!UICONTROL Database cleanup]** excl
 
    onde **$(l)** é o identificador da lista
 
-### Limpeza de deliveries a serem excluídos ou reciclados {#cleanup-of-deliveries-to-be-deleted-or-recycled}
+### Limpeza de entregas a eliminar ou reciclar {#cleanup-of-deliveries-to-be-deleted-or-recycled}
 
 Essa tarefa limpa todos os deliveries a serem excluídos ou reciclados.
 
@@ -402,7 +404,7 @@ DELETE FROM NmsVisitor WHERE iVisitorId IN (SELECT iVisitorId FROM NmsVisitor WH
 
 onde **$(tsDate)** é a data atual do servidor, a partir da qual subtraímos o período definido para a opção **NmsCleanup_VisitorPurgeDelay**.
 
-### Limpeza de NPAI {#cleanup-of-npai}
+### Limpeza da NPAI {#cleanup-of-npai}
 
 Essa tarefa permite excluir registros que correspondem a endereços válidos da tabela **NmsAddress**. A consulta a seguir é usada para executar a exclusão em massa:
 
@@ -599,7 +601,7 @@ Se o valor da opção for 1, a atualização de estatísticas não será executa
 
 Se o valor da opção for 2, isso executará a análise de armazenamento no modo detalhado (ANALYZE VERBOSE) no PostgreSQL e atualizará as estatísticas em todos os outros bancos de dados. Para garantir que esse comando seja executado, verifique os logs PostgreSQL. O ANALYZE emitirá linhas no formato : `INFO: analyzing "public.nmsactivecontact"`.
 
-### Limpeza de assinatura (NMAC) {#subscription-cleanup--nmac-}
+### Limpeza de subscrição (NMAC) {#subscription-cleanup--nmac-}
 
 Essa tarefa exclui qualquer assinatura relacionada a serviços ou aplicativos móveis excluídos.
 

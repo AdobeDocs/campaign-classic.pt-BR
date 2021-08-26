@@ -6,7 +6,7 @@ audience: production
 content-type: reference
 topic-tags: troubleshooting
 exl-id: 33dcfd4b-51fd-44f4-98e0-23eafb79d7da
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '481'
 ht-degree: 8%
@@ -14,6 +14,8 @@ ht-degree: 8%
 ---
 
 # Desempenho do banco de dados{#database-performances}
+
+![](../../assets/v7-only.svg)
 
 A maioria dos problemas de desempenho está vinculada à manutenção do banco de dados. Estes são quatro leads principais que ajudam a encontrar a causa do desempenho lento:
 

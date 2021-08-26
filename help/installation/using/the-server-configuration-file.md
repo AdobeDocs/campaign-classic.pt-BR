@@ -6,7 +6,7 @@ audience: installation
 content-type: reference
 topic-tags: appendices
 exl-id: 70cd6a4b-c839-4bd9-b9a7-5a12e59c0cbf
-source-git-commit: 1312f7c319c96851bc83ae21501164e2688d0dff
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '7969'
 ht-degree: 7%
@@ -14,6 +14,8 @@ ht-degree: 7%
 ---
 
 # O arquivo de configuração do servidor{#the-server-configuration-file}
+
+![](../../assets/v7-only.svg)
 
 A configuração geral do Adobe Campaign é definida no arquivo **serverConf.xml**, localizado no diretório **conf** do diretório de instalação. Esta seção lista todos os nós e parâmetros diferentes do arquivo **serverConf.xml**.
 
@@ -1986,7 +1988,7 @@ Aqui estão os diferentes parâmetros do nó **nmac**. Essa é a configuração 
  </tbody> 
 </table>
 
-### retransmissão {#relay-1}
+### relé {#relay-1}
 
 Aqui estão os diferentes parâmetros do nó **nmac > relay**. Isso configura o uso de um relay para o delivery de mensagens (conector ios http2).
 
@@ -3028,7 +3030,7 @@ Estes são os diferentes parâmetros do nó **web > jssp**. Essa é a configura�
 
 O nó **web > jsp > classpath** contém a lista de todos os caminhos de classe a serem usados ao iniciar a JVM.
 
-### retransmissão {#relay-2}
+### relé {#relay-2}
 
 Estes são os diferentes parâmetros do nó **web > relay**. Essa é a configuração da retransmissão para solicitações HTTP entre duas zonas.
 

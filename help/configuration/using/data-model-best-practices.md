@@ -6,7 +6,7 @@ audience: configuration
 content-type: reference
 topic-tags: schema-reference
 exl-id: 9c59b89c-3542-4a17-a46f-3a1e58de0748
-source-git-commit: 4a41aea9edfe5e6ca0454049cbb2892449eec153
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '4013'
 ht-degree: 1%
@@ -14,6 +14,8 @@ ht-degree: 1%
 ---
 
 # Práticas recomendadas do modelo de dados{#data-model-best-practices}
+
+![](../../assets/v7-only.svg)
 
 Este documento descreve as principais recomendações ao projetar o modelo de dados do Adobe Campaign.
 
@@ -47,7 +49,7 @@ O modelo de dados padrão do Adobe Campaign é apresentado em [this document](..
 >
 >O Adobe Campaign Classic permite criar uma tabela de cliente personalizada. No entanto, na maioria dos casos, é recomendável aproveitar a tabela padrão [Recipient](../../configuration/using/about-data-model.md#default-recipient-table) que já tem tabelas e recursos adicionais pré-criados.
 
-### Dados para Adobe Campaign {#data-for-campaign}
+### Dados do Adobe Campaign {#data-for-campaign}
 
 Quais dados devem ser enviados para o Adobe Campaign? É importante determinar os dados necessários para suas atividades de marketing.
 
@@ -80,7 +82,7 @@ Um campo precisa ser armazenado em uma tabela se tiver uma finalidade de direcio
 
 Para instâncias híbridas e no local, o FDA (Federated Data Access, um recurso opcional que permite acessar dados externos) cobre a necessidade de adicionar um campo &quot;instantaneamente&quot; durante um processo de campanha. Você não precisa importar tudo se tiver FDA. Para obter mais informações, consulte [Sobre o Federated Data Access](../../installation/using/about-fda.md).
 
-### Escolha das chaves {#choice-of-keys}
+### Escolha de chaves {#choice-of-keys}
 
 Além do **autopk** definido por padrão na maioria das tabelas, você deve considerar adicionar algumas chaves lógicas ou comerciais (número de conta, número de cliente e assim por diante). Ele pode ser usado posteriormente para importações/reconciliação ou pacotes de dados. Para obter mais informações, consulte [Identificadores](#identifiers).
 
@@ -278,7 +280,7 @@ Para garantir melhor desempenho a qualquer momento, siga as práticas recomendad
 * Use uma ou várias tabelas de referência em vez de duplicar um campo em cada linha. Ao usar pares de chave/valor, é preferível escolher uma chave numérica.
 * Uma string curta permanece aceitável. Caso as tabelas de referências já estejam em vigor em um sistema externo, reutilizar a mesma facilitará a integração de dados com o Adobe Campaign.
 
-### Relações de um para muitos {#one-to-many-relationships}
+### Relações um para muitos {#one-to-many-relationships}
 
 * O design de dados afeta a usabilidade e a funcionalidade. Se você projetar seu modelo de dados com muitas relações um para muitos, torna mais difícil para os usuários construir uma lógica significativa no aplicativo. A lógica de filtro one-to-many pode ser difícil para profissionais de marketing não técnicos construírem e compreenderem corretamente.
 * É bom ter todos os campos essenciais em uma tabela, pois facilita a criação de consultas por parte dos usuários. Às vezes, também é bom que o desempenho duplique alguns campos nas tabelas se puder evitar uma junção.

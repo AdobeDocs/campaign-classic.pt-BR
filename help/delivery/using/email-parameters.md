@@ -6,14 +6,16 @@ audience: delivery
 content-type: reference
 topic-tags: sending-emails
 exl-id: 1bb36e71-9f1a-4553-b266-eca3f48688e2
-source-git-commit: a129f49d4f045433899fd7fdbd057fb16d0ed36a
-workflow-type: ht
-source-wordcount: '888'
-ht-degree: 100%
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+workflow-type: tm+mt
+source-wordcount: '905'
+ht-degree: 98%
 
 ---
 
 # Parâmetros de email {#email-parameters}
+
+![](../../assets/common.svg)
 
 Esta seção apresenta as opções e os parâmetros específicos da entrega de email.
 
@@ -30,6 +32,10 @@ Para obter mais informações sobre a configuração e práticas recomendadas de
 >A Cco de email é um recurso opcional. Verifique seu contrato de licença e entre em contato com o executivo da sua conta para ativá-la.
 
 Ao criar um novo delivery ou template do delivery, o Email Cc não é ativado por padrão. Você precisa ativá-lo manualmente no nível do delivery de email ou do template do delivery.
+
+>[!NOTE]
+>
+>Se estiver usando o Email Cco com MTA aprimorado, essa opção será ativada automaticamente para todos os deliveries.
 
 Para ativar o Email Cco para um template do delivery de email, siga as etapas abaixo:
 

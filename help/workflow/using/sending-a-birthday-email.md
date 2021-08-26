@@ -6,14 +6,16 @@ audience: workflow
 content-type: reference
 topic-tags: use-cases
 exl-id: 38006cca-e945-4b9d-8e2d-ed537b8541d9
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
-workflow-type: ht
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+workflow-type: tm+mt
 source-wordcount: '879'
 ht-degree: 100%
 
 ---
 
 # Envio de um email de aniversário{#sending-a-birthday-email}
+
+![](../../assets/common.svg)
 
 ## Introdução {#introduction}
 
@@ -202,7 +204,7 @@ Adicione uma atividade de **Recurring delivery** com base no template de e-mail 
 
 >[!CAUTION]
 >
->Para que os fluxos de trabalho sejam executados, os fluxos de trabalho técnicos relacionados ao pacote do Campaign devem ser iniciados. Para obter mais informações, consulte a seção [Lista de fluxos de trabalho técnicos](../../workflow/using/about-technical-workflows.md).
+>Para que os fluxos de trabalho sejam executados, os fluxos de trabalho técnicos relacionados ao pacote do Campaign devem ser iniciados. Para obter mais informações, consulte a seção [Lista de fluxos de trabalho técnicos](about-technical-workflows.md).
 >
 >Se as etapas de aprovação estiverem habilitadas para a campanha, as remessas serão enviadas apenas quando essas etapas tiverem sido confirmadas. Para obter mais informações, consulte a seção [Choosing the processes to be approved](../../campaign/using/marketing-campaign-approval.md#choosing-the-processes-to-be-approved) .
 

@@ -6,7 +6,7 @@ audience: installation
 content-type: reference
 topic-tags: deployment-types-
 exl-id: 38c14010-203a-47ab-b23d-6f431dab9a88
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '1221'
 ht-degree: 6%
@@ -14,6 +14,8 @@ ht-degree: 6%
 ---
 
 # Implantação empresarial{#enterprise-deployment}
+
+![](../../assets/v7-only.svg)
 
 Essa é a configuração mais completa. Ele se baseia na configuração padrão para oferecer maior segurança e disponibilidade:
 
@@ -69,7 +71,7 @@ Custos mais altos de hardware e administração.
 >
 >Para recuperar esses problemas, é necessário reiniciar o processo &#39;web@default&#39; na segunda instância em que ocorreu o erro.
 
-### Instalar e configurar o servidor de aplicativos 1 {#installing-and-configuring-the-application-server-1}
+### Instalação e configuração do servidor de aplicativos 1 {#installing-and-configuring-the-application-server-1}
 
 Nos exemplos a seguir, os parâmetros da instância são:
 
@@ -193,7 +195,7 @@ As etapas para instalar o primeiro servidor são:
 
    ![](assets/s_ncs_install_access_client.png)
 
-### Instalar e configurar o servidor de aplicativos 2 {#installing-and-configuring-the-application-server-2}
+### Instalação e configuração do servidor de aplicativos 2 {#installing-and-configuring-the-application-server-2}
 
 Siga as etapas abaixo:
 
@@ -248,7 +250,7 @@ Siga as etapas abaixo:
    * Para Linux: [Primeira inicialização do servidor](../../installation/using/installing-packages-with-linux.md#first-start-up-of-the-server)
    * Para Windows: [Primeira inicialização do servidor](../../installation/using/installing-the-server.md#first-start-up-of-the-server)
 
-### Instalar e configurar os servidores frontais {#installing-and-configuring-the-frontal-servers}
+### Instalação e configuração dos servidores frontais {#installing-and-configuring-the-frontal-servers}
 
 Os procedimentos de instalação e configuração são idênticos em ambos os computadores.
 

@@ -6,7 +6,7 @@ audience: configuration
 content-type: reference
 topic-tags: api
 exl-id: 04b0a0e5-d6df-447c-ac67-66adb1bdf717
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '1021'
 ht-degree: 1%
@@ -14,6 +14,8 @@ ht-degree: 1%
 ---
 
 # Adição de funções SQL extras{#adding-additional-sql-functions}
+
+![](../../assets/v7-only.svg)
 
 ## Introdução {#introduction}
 
@@ -37,7 +39,7 @@ Para instalá-lo no console, selecione as opções **Tools/Advanced/Import packa
 >
 >Aviso: mesmo que a lista de funções importadas seja exibida imediatamente no editor de funções, elas não poderão ser usadas até que o Adobe Campaign seja reiniciado.
 
-## Estrutura geral do pacote a ser importado {#general-structure-of-package-to-import}
+## Estrutura geral do pacote a importar {#general-structure-of-package-to-import}
 
 As funções a serem adicionadas podem ser encontradas no arquivo **&quot;package&quot;** no formato XML. Aqui está um exemplo:
 

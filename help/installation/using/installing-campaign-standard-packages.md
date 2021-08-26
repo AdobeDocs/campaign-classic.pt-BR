@@ -6,7 +6,7 @@ audience: installation
 content-type: reference
 topic-tags: initial-configuration
 exl-id: 2bc077c4-ed65-4157-bfc9-df5d0442f476
-source-git-commit: 86963746d3de3396963d221ddbd1ef7d89733d2f
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '1173'
 ht-degree: 16%
@@ -14,6 +14,8 @@ ht-degree: 16%
 ---
 
 # Instalação de pacotes integrados do Campaign Classic{#installing-campaign-standard-packages}
+
+![](../../assets/v7-only.svg)
 
 ## Sobre pacotes incorporados {#campaign-standard-packages}
 
@@ -149,7 +151,7 @@ A tabela a seguir lista todos os pacotes incorporados do Campaign.
   </tr> 
   <tr> 
    <td> Gestor de Resposta<br /> </td> 
-   <td> Mede o sucesso e a lucratividade das campanhas de marketing ou apresentações de ofertas para todos os canais de comunicação.  Opcional. <a href="../../campaign/using/about-response-manager.md">Saiba mais</a> <br /> </td> 
+   <td> Mede o sucesso e a lucratividade das campanhas de marketing ou apresentações de ofertas para todos os canais de comunicação.  Opcional. <a href="../../response/using/about-response-manager.md">Saiba mais</a> <br /> </td> 
    <td> Marketing<br /> </td> 
   </tr> 
   <tr> 
@@ -159,7 +161,7 @@ A tabela a seguir lista todos os pacotes incorporados do Campaign.
   </tr> 
   <tr> 
    <td> Otimização de campanha<br /> </td> 
-   <td> Controla, filtra e monitora o envio de deliveries para que as mensagens enviadas atendam melhor às necessidades e expectativas dos clientes, de acordo com as políticas de comunicação da empresa. Opcional. <a href="../../campaign/using/about-campaign-typologies.md">Saiba mais</a> <br /> </td> 
+   <td> Controla, filtra e monitora o envio de deliveries para que as mensagens enviadas atendam melhor às necessidades e expectativas dos clientes, de acordo com as políticas de comunicação da empresa. Opcional. <a href="../../campaign-opt/using/about-campaign-typologies.md">Saiba mais</a> <br /> </td> 
    <td> Marketing<br /> </td> 
   </tr> 
   <tr> 
@@ -179,7 +181,7 @@ A tabela a seguir lista todos os pacotes incorporados do Campaign.
   </tr> 
   <tr> 
    <td> Marketing central/local (Marketing distribuído)<br /> </td> 
-   <td> Implementa campanhas cooperativas entre entidades centrais (sede, departamentos de marketing etc.) e entidades locais (pontos de vendas, agências regionais, etc.). Opcional. <a href="../../campaign/using/about-distributed-marketing.md">Saiba mais</a><br /> </td> 
+   <td> Implementa campanhas cooperativas entre entidades centrais (sede, departamentos de marketing etc.) e entidades locais (pontos de vendas, agências regionais, etc.). Opcional. <a href="../../distributed/using/about-distributed-marketing.md">Saiba mais</a><br /> </td> 
    <td> Marketing </td> 
   </tr> 
   <tr> 
@@ -209,7 +211,7 @@ A tabela a seguir lista todos os pacotes incorporados do Campaign.
   </tr> 
   <tr> 
    <td> Regulamento de proteção de dados de privacidade<br /> </td> 
-   <td> Contém funcionalidade adicional para ajudar na conformidade com a privacidade no Campaign Classic. <a href="https://helpx.adobe.com/campaign/kb/acc-privacy.html">Saiba mais</a> <br /> </td> 
+   <td> Contém funcionalidade adicional para ajudar na conformidade com a privacidade no Campaign Classic. <a href="https://helpx.adobe.com/br/campaign/kb/acc-privacy.html">Saiba mais</a> <br /> </td> 
    <td> Todos</td> 
   </tr> 
   <tr> 

@@ -2,20 +2,22 @@
 product: campaign
 title: Notas de versão do Campaign 18.10
 description: Notas de versão do Campaign 18.10
-feature: Visão geral
+feature: Overview
 role: User
 level: Beginner
 exl-id: 57996f77-4ac2-402a-95db-b75d4bea4eeb
-source-git-commit: 6c28e6cd78ce7a8ee5c0dc7e671de780787b9f57
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
-source-wordcount: '2370'
+source-wordcount: '2369'
 ht-degree: 97%
 
 ---
 
 # Versão 18.10{#release-18-10}
 
-## Versão 18.10.6 - Build 8985{#release-18-10-6-build-8985}
+![](../../assets/v7-only.svg)
+
+## Versão 18.10.6 – Build 8985{#release-18-10-6-build-8985}
 
 12 de julho de 2019
 
@@ -27,7 +29,7 @@ ht-degree: 97%
 * Permissões aprimoradas para executar o pacote de zona de segurança ao usar a conta interna.
 * Correção de um problema que poderia causar erros nos logs mtachild. (NEO-8978)
 
-## Versão 18.10.5 - Build 8984{#release-18-10-5-build-8984}
+## Versão 18.10.5 – Build 8984{#release-18-10-5-build-8984}
 
 23 de abril de 2019
 
@@ -37,7 +39,7 @@ ht-degree: 97%
 * Remoção do limite de 10.000 registros no Mapa de Aquecimento do Fluxo de Trabalho para corrigir um problema de dados ausente. (NEO-12329)
 * Correção de um problema ao usar a opção &quot;Manter todos os dados adicionais do conjunto principal&quot; em uma atividade de workflow de enriquecimento. (NEO-13291)
 
-## Versão 18.10.4 - Build 8983{#release-18-10-4-build-8983}
+## Versão 18.10.4 – Build 8983{#release-18-10-4-build-8983}
 
 15 de abril de 2019
 
@@ -50,7 +52,7 @@ ht-degree: 97%
 * Na integração do Analytics, a recuperação de dados de segmento de AAM com caractere % agora é permitida. (NEO-12025)
 * Correção de um problema de falha do Tomcat ao enviar notificações por push usando HTTP2. (NEO-12701)
 
-## Versão 18.10.3 - Build 8981{#release-18-10-3-build-8981}
+## Versão 18.10.3 – Build 8981{#release-18-10-3-build-8981}
 
 29 de janeiro de 2019
 
@@ -74,7 +76,7 @@ ht-degree: 97%
 * Correção de um problema de pular caracteres ao enviar notificações via push em um aplicação móvel.
 * Correção de um problema que impedia a alternância do FDA para o método de sincronização SOAP em uma conta externa Mid-Sourcing.
 
-## Versão 18.10.2 - Build 8978{#release-18-10-2-build-8978}
+## Versão 18.10.2 – Build 8978{#release-18-10-2-build-8978}
 
 6 de dezembro de 2018
 
@@ -96,7 +98,7 @@ ht-degree: 97%
 * Correção de um problema com o cálculo das durações do workflow no Workflow HeatMap.
 
 
-## Versão 18.10 - Build 8977{#release-18-10-build-8977}
+## Versão 18.10 – Build 8977{#release-18-10-build-8977}
 
 5 de nov de 2018
 

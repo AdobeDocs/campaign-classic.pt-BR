@@ -6,7 +6,7 @@ audience: production
 content-type: reference
 topic-tags: database-maintenance
 exl-id: a586d70b-1b7f-47c2-a821-635098a70e45
-source-git-commit: 0e0912c68d132919eeac9b91b93960e70011153e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '1179'
 ht-degree: 3%
@@ -14,6 +14,8 @@ ht-degree: 3%
 ---
 
 # Recomendações específicas do RDBMS{#rdbms-specific-recommendations}
+
+![](../../assets/v7-only.svg)
 
 Para ajudar você a configurar planos de manutenção, esta seção lista algumas recomendações e práticas recomendadas adaptadas aos vários mecanismos RDBMS compatíveis com a Adobe Campaign. No entanto, estas são apenas recomendações. Cabe a você adaptá-los às suas necessidades, de acordo com o procedimento e as restrições internas. O administrador do banco de dados tem a responsabilidade de criar e executar esses planos.
 
@@ -153,7 +155,6 @@ REINDEX TABLE nmsmirrorpageinfo;
 >* Essa operação de manutenção pode ser implementada por um workflow do Adobe Campaign, usando uma atividade **[!UICONTROL SQL]** . Para obter mais informações, consulte [esta seção](../../workflow/using/architecture.md). Certifique-se de programar a manutenção para um tempo de baixa atividade que não colidir com a janela de backup.
 
 >
-
 
 
 ### Reconstrução de um banco de dados {#rebuilding-a-database}

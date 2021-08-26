@@ -6,7 +6,7 @@ audience: configuration
 content-type: reference
 topic-tags: input-forms
 exl-id: e61f2b63-06d3-4b8c-867f-1c729176d2da
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '2384'
 ht-degree: 4%
@@ -14,6 +14,8 @@ ht-degree: 4%
 ---
 
 # Estrutura do formulário{#form-structure}
+
+![](../../assets/v7-only.svg)
 
 A descrição de um formulário é um documento XML estruturado que está de acordo com a gramática do schema de formulários **xtk:form**.
 
@@ -132,7 +134,7 @@ A tag **`<static>`** com o tipo **separator** permite adicionar uma barra separa
 
 Um texto de ajuda foi adicionado usando a tag `<static>` com o tipo de ajuda. O conteúdo do texto é inserido no atributo **label**.
 
-## Containeres {#containers}
+## Containers {#containers}
 
 Os containeres permitem agrupar um conjunto de controles. Eles são representados pelo elemento **`<container>`** . Eles foram usados acima para formatar controles em várias colunas.
 
@@ -160,7 +162,7 @@ Exemplo com a adição de &quot;xpath&quot; ao elemento chamado &quot;location&q
 
 Os contêineres são usados para construir controles complexos usando um conjunto de campos formatados em páginas.
 
-#### Tabulação do contêiner {#tab-container}
+#### Contêiner de tabulação {#tab-container}
 
 Um contêiner de guia formata dados em páginas que são acessíveis a partir de guias.
 
@@ -235,7 +237,7 @@ Exemplos de sintaxe de condição:
 * **visibleIf=&quot;@gender >= 1 e @gender != 2&quot;**: em um valor numérico.
 * **visibleIf=&quot;@boolean1=true ou @boolean2=false&quot;**: teste em campos booleanos.
 
-#### Habilitar contêiner {#enabling-container}
+#### Ativação do contêiner {#enabling-container}
 
 Esse contêiner permite ativar ou desativar um conjunto de dados de uma condição dinâmica. Desativar um controle impede que ele seja editado. O exemplo a seguir ilustra a ativação de controles do valor do campo &quot;Gênero&quot;:
 
@@ -250,7 +252,7 @@ Esse contêiner permite ativar ou desativar um conjunto de dados de uma condiç�
 
 Um contêiner de ativação é definido pelo atributo **type=&quot;enabledGroup&quot;**. O atributo **enabledIf** contém a condição de ativação.
 
-## Editar um link {#editing-a-link}
+## Edição de um link {#editing-a-link}
 
 Lembre-se de que um link é declarado no schema de dados da seguinte maneira:
 
@@ -296,7 +298,7 @@ Também é possível classificar a lista com o elemento **`<orderby>`** :
 </input>
 ```
 
-### Propriedades de controle {#control-properties}
+### Propriedades do controle {#control-properties}
 
 * **noAutoComplete**: desativa o tipo forward (com o valor &quot;true&quot;)
 * **createMode**: cria o link dinamicamente, se ele não existir. Os valores possíveis são:
@@ -516,7 +518,7 @@ Uma caixa de seleção reflete um estado booleano (selecionado ou não). Por pad
 
 ![](assets/d_ncs_integration_form_exemple20.png)
 
-## Editar hierarquia de navegação {#navigation-hierarchy-edit}
+## Edição da hierarquia de navegação {#navigation-hierarchy-edit}
 
 Esse controle cria uma árvore em um conjunto de campos a serem editados.
 

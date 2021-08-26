@@ -6,14 +6,16 @@ audience: message-center
 content-type: reference
 topic-tags: message-templates
 exl-id: 1d55f42b-64bf-4b1f-a317-c1f7456aa5b3
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
-workflow-type: ht
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+workflow-type: tm+mt
 source-wordcount: '494'
 ht-degree: 100%
 
 ---
 
 # Publicar modelos de mensagem {#publishing-template-messages}
+
+![](../../assets/v7-only.svg)
 
 ## Publicação de modelo {#template-publication}
 
@@ -47,7 +49,7 @@ Depois que um modelo for publicado, se o evento correspondente for acionado, a i
 >
 >No entanto, se você adicionar um valor não vazio, o campo correspondente será atualizado como normal após a próxima publicação.
 
-## Cancelar a publicação do modelo {#template-unpublication}
+## Desfazer publicação de modelo {#template-unpublication}
 
 Depois que um modelo de mensagem é publicado nas instâncias de execução, você pode desfazer a publicação. Para obter mais informações sobre o processo de publicação do modelo, consulte [esta seção](#template-publication).
 

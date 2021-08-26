@@ -6,14 +6,16 @@ audience: interaction
 content-type: reference
 topic-tags: interaction-overview
 exl-id: 62b8fdcd-8423-496c-8407-ab89a3a70721
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
-workflow-type: ht
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+workflow-type: tm+mt
 source-wordcount: '286'
 ht-degree: 100%
 
 ---
 
 # Interação e gestão de ofertas{#interaction-and-offer-management}
+
+![](../../assets/v7-only.svg)
 
 A interação permite responder em tempo real durante uma interação com um determinado contato (um cliente ou target) uma única ou várias ofertas adaptadas. Por exemplo, essas podem ser mensagens de comunicação simples, ofertas especiais de um ou vários produtos ou um serviço.
 

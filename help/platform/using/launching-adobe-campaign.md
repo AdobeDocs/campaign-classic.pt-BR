@@ -6,17 +6,18 @@ audience: platform
 content-type: reference
 topic-tags: starting-with-adobe-campaign
 exl-id: 4d9c5b24-83a2-4495-a56c-5bc376d69703
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
-workflow-type: ht
-source-wordcount: '558'
-ht-degree: 100%
+source-git-commit: 91dec9adb177aedc4a82879011371b54886166be
+workflow-type: tm+mt
+source-wordcount: '532'
+ht-degree: 99%
 
 ---
 
 # Iniciar o Adobe Campaign{#launching-adobe-campaign}
 
-O console do Campaign Client é um cliente avançado que permite a conexão com seu(s) servidor(es) de aplicativos do Campaign. Saiba como baixar e configurar o console do cliente [nesta página](../../installation/using/installing-the-client-console.md).
+![](../../assets/v7-only.svg)
 
+O console do cliente do Campaign é
 
 >[!CAUTION]
 >

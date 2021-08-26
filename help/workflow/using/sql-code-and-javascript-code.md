@@ -6,14 +6,16 @@ audience: workflow
 content-type: reference
 topic-tags: action-activities
 exl-id: 729a2010-c2d8-481b-8c9e-780b9e5f97ef
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
-workflow-type: ht
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+workflow-type: tm+mt
 source-wordcount: '261'
 ht-degree: 100%
 
 ---
 
 # Código SQL e código JavaScript{#sql-code-and-javascript-code}
+
+![](../../assets/common.svg)
 
 ## Código SQL {#sql-code}
 
@@ -27,11 +29,11 @@ Uma atividade **[!UICONTROL SQL code]** executa um script SQL. O script é um te
 
 * **[!UICONTROL Processing errors]**
 
-   Consulte [Processamento de erros](../../workflow/using/monitoring-workflow-execution.md#processing-errors).
+   Consulte [Processamento de erros](monitoring-workflow-execution.md#processing-errors).
 
 ## Código JavaScript e código JavaScript avançado {#javascript-code}
 
-As atividades **[!UICONTROL JavaScript code]** e **[!UICONTROL Advanced JavaScript code]** executam um script JavaScript no contexto de um workflow. Para obter mais informações sobre scripts, consulte a seção [Modelos e scripts do JavaScript](../../workflow/using/javascript-scripts-and-templates.md)
+As atividades **[!UICONTROL JavaScript code]** e **[!UICONTROL Advanced JavaScript code]** executam um script JavaScript no contexto de um workflow. Para obter mais informações sobre scripts, consulte a seção [Modelos e scripts do JavaScript](javascript-scripts-and-templates.md)
 
 ### Atraso de execução {#exec-delay}
 
@@ -47,7 +49,7 @@ Para ignorar esse limite, é necessário definir o valor como **0**.
 
 * **[!UICONTROL Script]**: A área central do editor contém o script a ser executado.
 
-* **[!UICONTROL Process errors]**: Consulte [Processamento de erros](../../workflow/using/monitoring-workflow-execution.md#processing-errors).
+* **[!UICONTROL Process errors]**: Consulte [Processamento de erros](monitoring-workflow-execution.md#processing-errors).
 
 ### Código JavaScript avançado {#adv-js-code-desc}
 

@@ -6,14 +6,16 @@ audience: workflow
 content-type: reference
 topic-tags: flow-control-activities
 exl-id: da84d3ff-1e64-45ef-bef0-da4a24d93461
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
-workflow-type: ht
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+workflow-type: tm+mt
 source-wordcount: '168'
 ht-degree: 100%
 
 ---
 
 # Sinal externo{#external-signal}
+
+![](../../assets/common.svg)
 
 A atividade **External signal** permite acionar a execução de um conjunto de tarefas em um workflow para uma agenda.
 
@@ -25,9 +27,9 @@ Consulte a documentação online sobre chamadas SOAP para obter mais informaçõ
 
 ![](assets/edit_signal.png)
 
-A configuração das expirações é apresentada em [Expirations](../../workflow/using/defining-approvals.md).
+A configuração das expirações é apresentada em [Expirations](defining-approvals.md).
 
-O campo **Delay** permite especificar um atraso de expiração nas unidades de sua escolha. Consulte [Wait](../../workflow/using/wait.md).
+O campo **Delay** permite especificar um atraso de expiração nas unidades de sua escolha. Consulte [Wait](wait.md).
 
 Cada linha representa um tipo de expiração e coincides com uma transição.
 

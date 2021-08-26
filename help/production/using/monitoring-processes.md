@@ -6,7 +6,7 @@ audience: production
 content-type: reference
 topic-tags: production-procedures
 exl-id: 1f5d8c7e-6f9b-46cd-a9b4-a3b48afb1794
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '3606'
 ht-degree: 1%
@@ -14,6 +14,8 @@ ht-degree: 1%
 ---
 
 # Processos de monitoramento{#monitoring-processes}
+
+![](../../assets/v7-only.svg)
 
 O servidor de aplicativos e o servidor de redirecionamento (**tracking**) podem ser monitorados manual ou automaticamente.
 
@@ -259,7 +261,6 @@ Eles são agrupados em **Monitoring** > &#39;SMTP Monitoring&#39;.
 >
 
 
-
 ### Estatísticas de envio SMTP {#smtp-sending-statistics}
 
 O relatório **[!UICONTROL SMTP sending statistics]** permite controlar a atividade do servidor. Ele exibe uma síntese de cada mtachilds.
@@ -336,7 +337,7 @@ Clique em um identificador PublicId para exibir mais detalhes.
 >
 >Para obter mais informações sobre erros SMTP e gerenciá-los no Adobe Campaign, consulte [esta seção](../../installation/using/email-deliverability.md).
 
-## Relatório de cobrança {#billing-report}
+## Relatório de faturamento {#billing-report}
 
 O workflow técnico **[!UICONTROL Billing]** envia o relatório de atividade do sistema para o operador &#39;faturamento&#39; por email. É acionado por padrão no dia 25 de cada mês na instância de Marketing.
 
@@ -428,7 +429,7 @@ O operador e seu logon precisam ser configurados anteriormente no console do cli
 
 Este **jsp** representa o ponto de entrada das APIs de aplicativos do Adobe Campaign. Pode, por conseguinte, fornecer um acompanhamento detalhado do pedido. Também pode ser usada para monitorar os serviços da Web da Adobe Campaign. Ele é usado em nossos scripts de monitoramento, mas observe que é somente para usuários avançados.
 
-### Monitoramento baseado em tipos de implantação {#monitoring-based-on-deployment-types}
+### Monitoramento com base em tipos de implantação {#monitoring-based-on-deployment-types}
 
 O Adobe Campaign habilita várias configurações de implantação (para obter mais informações, consulte [esta seção](../../installation/using/hosting-models.md)). Esta seção detalha as várias técnicas de monitoramento automático a serem aplicadas dependendo do tipo de instalação.
 
@@ -483,7 +484,7 @@ O Adobe Campaign pode fornecer uma ferramenta de monitoramento de instância (ne
 >
 >Essa ferramenta pode ser usada para monitorar suas instâncias, mas não é compatível com o Adobe Campaign. Entre em contato com o administrador do Campaign para obter mais informações.
 
-### Elementos necessários {#required-elements}
+### Elementos obrigatórios {#required-elements}
 
 São necessárias as seguintes precauções de pré-instalação para a monitorização automática:
 
@@ -547,7 +548,7 @@ Este é um exemplo de configuração:
 >
 >Para que o operador **monitoring** funcione, a máquina em que o netreport é executado deve estar em uma zona de segurança que esteja no modo **sessionTokenOnly**. Se nenhuma máscara IP confiável tiver sido especificada para esse operador, a zona de segurança também deverá estar no modo **allowEmptyPassword** e **allowUserPassword**.
 
-#### Elemento &#39;Propriedades&#39; {#properties--element}
+#### Elemento &quot;Propriedades&quot; {#properties--element}
 
 Esse elemento é usado para preencher a configuração de emails, ou seja,
 

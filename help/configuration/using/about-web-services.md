@@ -6,7 +6,7 @@ audience: configuration
 content-type: reference
 topic-tags: api
 exl-id: 7aa2aef1-2eb6-48a6-82fa-4451bed66216
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '658'
 ht-degree: 5%
@@ -15,7 +15,9 @@ ht-degree: 5%
 
 # Sobre serviços da Web{#about-web-services}
 
-## Definição das APIs do Adobe Campaign {#definition-of-adobe-campaign-apis}
+![](../../assets/v7-only.svg)
+
+## Definição de APIs do Adobe Campaign {#definition-of-adobe-campaign-apis}
 
 O servidor de aplicativos Adobe Campaign foi projetado para oferecer abertura e integração fácil com sistemas de informações de empresas cada vez mais diversos e complexos.
 

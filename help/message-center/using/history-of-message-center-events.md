@@ -6,14 +6,16 @@ audience: message-center
 content-type: reference
 topic-tags: reports
 exl-id: 04d4791b-a1dd-4361-a469-6f5aff0f41b8
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
-workflow-type: ht
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+workflow-type: tm+mt
 source-wordcount: '140'
 ht-degree: 100%
 
 ---
 
 # Histórico dos eventos do Centro de mensagens {#history-of-message-center-events}
+
+![](../../assets/v7-only.svg)
 
 O relatório **[!UICONTROL History of Message Center events]** fornece uma visão geral da atividade do Centro de mensagens, ou seja, o número de eventos processados e entregues como mensagens transacionais.
 

@@ -6,7 +6,7 @@ audience: configuration
 content-type: reference
 topic-tags: use-a-custom-recipient-table
 exl-id: 9f50f258-845e-4895-b1ef-b73744dea326
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '303'
 ht-degree: 6%
@@ -14,6 +14,8 @@ ht-degree: 6%
 ---
 
 # Configuração da interface{#configuring-the-interface}
+
+![](../../assets/v7-only.svg)
 
 Para exibir e diálogo com a nova tabela de recipients na interface do Adobe Campaign, siga as etapas abaixo:
 
@@ -27,7 +29,7 @@ O Adobe Campaign usa uma variável global &quot;Nms_DefaultRcpSchema&quot; para 
 1. Altere o valor da variável **Nms_DefaultRcpSchema** com o nome do schema que corresponde à tabela de recipients externos (neste caso: cus:individual).
 1. Salve as alterações.
 
-## Criação de um novo de formulário{#creating-a-new-form-}
+## Criação de um novo de formulário {#creating-a-new-form-}
 
 A criação de um novo formulário permitirá exibir e editar os dados da tabela de destinatários externos.
 

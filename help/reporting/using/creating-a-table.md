@@ -6,14 +6,16 @@ audience: reporting
 content-type: reference
 topic-tags: creating-new-reports
 exl-id: 05f76bdf-6dcd-4360-9e72-0ba6a4dd0d5e
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
-workflow-type: ht
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+workflow-type: tm+mt
 source-wordcount: '2495'
 ht-degree: 100%
 
 ---
 
 # Criação de uma tabela{#creating-a-table}
+
+![](../../assets/common.svg)
 
 É possível adicionar uma tabela a um relatório para exibir dados. Pode ser uma tabela dinâmica criada com base em medições de cubo, uma lista com grupo ou uma tabela contendo uma análise de valores.
 

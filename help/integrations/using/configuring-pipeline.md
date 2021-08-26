@@ -5,7 +5,7 @@ description: Saiba como configurar o pipeline
 audience: integrations
 content-type: reference
 exl-id: 2d214c36-8429-4b2b-b1f5-fe2730581bba
-source-git-commit: b6aa797133e6f916bf085794aeb99d61a8f7bc40
+source-git-commit: 84312974b9b7372c8a46fd1c7ead1148690bcd83
 workflow-type: tm+mt
 source-wordcount: '902'
 ht-degree: 99%
@@ -13,6 +13,8 @@ ht-degree: 99%
 ---
 
 # Configuração de pipeline {#configuring-pipeline}
+
+![](../../assets/common.svg)
 
 Parâmetros de autenticação, como ID do cliente, chave privada e endpoint de autenticação, são configurados nos arquivos de configuração da instância.
 A lista de acionadores que serão processados é configurada em uma opção em formato JSON.

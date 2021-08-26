@@ -6,14 +6,16 @@ audience: production
 content-type: reference
 topic-tags: troubleshooting
 exl-id: b5aa5663-1902-4f50-9202-783e73a28838
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '633'
 ht-degree: 13%
 
 ---
 
-# Execução do workflow{#workflow-execution}
+# Execução do fluxo de trabalho{#workflow-execution}
+
+![](../../assets/v7-only.svg)
 
 A seção abaixo apresenta informações sobre problemas comuns relacionados à execução de workflows e como solucioná-los.
 
@@ -24,7 +26,7 @@ Para obter mais informações sobre fluxos de trabalho, consulte estas seções:
 * [Ciclo de vida do fluxo de trabalho](../../workflow/using/workflow-life-cycle.md)
 * [Práticas recomendadas para usar workflows](../../workflow/using/workflow-best-practices.md)
 
-## Inicie o mais rápido possível em campanhas {#start-as-soon-as-possible-in-campaigns}
+## Comece o mais rápido possível em campanhas {#start-as-soon-as-possible-in-campaigns}
 
 Em alguns casos, os workflows executados de uma campanha não são iniciados ao clicar no botão **[!UICONTROL Start]**. Em vez de começar, ele vai para um estado &quot;Iniciar o mais rápido possível&quot;.
 
@@ -77,7 +79,7 @@ Pode haver várias causas para esse problema, siga as etapas abaixo para resolv�
 
 Para obter mais informações sobre como monitorar o workflow, consulte [esta seção](../../workflow/using/monitoring-workflow-execution.md).
 
-## Iniciar em progresso {#start-in-progress}
+## Início em progresso {#start-in-progress}
 
 Se os workflows não estiverem em execução e seu status for **Start in progress**, isso pode significar que o módulo de workflow não é iniciado.
 
@@ -110,7 +112,7 @@ Para verificar isso e iniciar o módulo se necessário, siga as seguintes etapas
 
    Para obter mais informações sobre como reiniciar módulos, consulte [esta seção](../../production/using/usual-commands.md#module-launch-commands).
 
-## Falha no fluxo de trabalho {#failed-workflow}
+## Fluxo de trabalho com falha {#failed-workflow}
 
 Se um fluxo de trabalho falhar, siga as etapas abaixo:
 

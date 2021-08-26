@@ -6,14 +6,16 @@ audience: workflow
 content-type: reference
 topic-tags: event-activities
 exl-id: bbec389e-c2ba-4b23-847f-b01dca6b8d5a
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
-workflow-type: ht
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+workflow-type: tm+mt
 source-wordcount: '524'
 ht-degree: 100%
 
 ---
 
 # File collector{#file-collector}
+
+![](../../assets/common.svg)
 
 O **File collector** monitora a chegada de um ou mais arquivos em um diretório e ativa sua transição para cada arquivo recebido. Para cada evento, uma variável **[!UICONTROL filename]** contém o nome completo do arquivo recebido. Os arquivos coletados são movidos para outro diretório para fins de arquivamento e para garantir que eles sejam contados apenas uma vez.
 
@@ -23,7 +25,7 @@ Os arquivos devem estar no servidor no qual o módulo wfserver desse workflow é
 
 ## Propriedades {#properties}
 
-A primeira guia da atividade **[!UICONTROL File collector]** permite selecionar o diretório de origem e, se necessário, filtrar os arquivos coletados. As outras guias são detalhadas em [Inbound Emails](../../workflow/using/inbound-emails.md) (guias **[!UICONTROL Schedule]** e **[!UICONTROL Expiry]**).
+A primeira guia da atividade **[!UICONTROL File collector]** permite selecionar o diretório de origem e, se necessário, filtrar os arquivos coletados. As outras guias são detalhadas em [Inbound Emails](inbound-emails.md) (guias **[!UICONTROL Schedule]** e **[!UICONTROL Expiry]**).
 
 ![](assets/file_collect_edit.png)
 
@@ -67,7 +69,7 @@ A primeira guia da atividade **[!UICONTROL File collector]** permite selecionar 
 
 1. **Historização**
 
-   Consulte a etapa **[!UICONTROL File historization]** aqui: [Download da Web](../../workflow/using/web-download.md).
+   Consulte a etapa **[!UICONTROL File historization]** aqui: [Download da Web](web-download.md).
 
 A ordem de processamento do arquivo não pode ser determinada. Para processar um conjunto de arquivos sequencialmente, use a opção **[!UICONTROL Stop as soon as a file has been processed]** e crie um loop. Nesse caso, os arquivos serão processados em ordem alfabética. A opção **[!UICONTROL Process file nonexistence]** permite concluir a iteração.
 

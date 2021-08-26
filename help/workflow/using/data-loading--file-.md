@@ -6,14 +6,16 @@ audience: workflow
 content-type: reference
 topic-tags: action-activities
 exl-id: a380e486-a40c-4bf6-b7f4-7dcd76c34085
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
-workflow-type: ht
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+workflow-type: tm+mt
 source-wordcount: '1052'
 ht-degree: 100%
 
 ---
 
 # Carregamento de dados (arquivo){#data-loading-file}
+
+![](../../assets/common.svg)
 
 ## Uso {#use}
 
@@ -88,7 +90,7 @@ O exemplo a seguir permite coletar um arquivo no servidor todos os dias, carrega
 
    A guia **[!UICONTROL Directory]** contém informações sobre os arquivos a serem recuperados. Em nosso exemplo, todos os arquivos no formato de texto cujos nomes contêm a palavra &#39;clientes&#39; e que são armazenados no diretório tmp/Adobe/Data/files do servidor serão recuperados.
 
-   O uso de **[!UICONTROL File collector]** é detalhado na seção [File collector](../../workflow/using/file-collector.md).
+   O uso de **[!UICONTROL File collector]** é detalhado na seção [File collector](file-collector.md).
 
    ![](assets/s_advuser_load_file_sample_1.png)
 
@@ -100,7 +102,7 @@ O exemplo a seguir permite coletar um arquivo no servidor todos os dias, carrega
 
    Para fazer isso, clique no botão **[!UICONTROL Change...]** localizado na seção inferior direita da ferramenta de edição e configure a programação.
 
-   Para obter mais informações, consulte [Scheduler](../../workflow/using/scheduler.md).
+   Para obter mais informações, consulte [Scheduler](scheduler.md).
 
 1. Em seguida, configure a atividade de carregamento de dados (arquivo) para indicar como os arquivos coletados devem ser lidos. Para fazer isso, selecione um arquivo de exemplo com a mesma estrutura dos arquivos a serem carregados.
 
@@ -129,4 +131,4 @@ O exemplo a seguir permite coletar um arquivo no servidor todos os dias, carrega
 
 1. Então especifique os processos a serem executados para cada tipo de público. No nosso exemplo, vamos **[!UICONTROL Update the data]** no banco de dados. Para fazer isso, posicione uma atividade **[!UICONTROL Update data]** no final de cada transição de saída da atividade Split.
 
-   A atividade **[!UICONTROL Update data]** está detalhada na seção [Update data](../../workflow/using/update-data.md).
+   A atividade **[!UICONTROL Update data]** está detalhada na seção [Update data](update-data.md).

@@ -2,18 +2,20 @@
 product: campaign
 title: Modelos de hospedagem
 description: Modelos de hospedagem do Discover Campaign
-feature: Visão geral
+feature: Overview
 role: Architect
 level: Beginner
 exl-id: a06b1365-d487-4df1-8f4a-7268b871a427
-source-git-commit: 515587695115c23d9b248ecb87a7ae89ea7c62a0
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
-source-wordcount: '624'
+source-wordcount: '623'
 ht-degree: 2%
 
 ---
 
 # Modelos de hospedagem{#hosting-models}
+
+![](../../assets/v7-only.svg)
 
 A Adobe Campaign oferece uma escolha de três modelos de hospedagem, proporcionando flexibilidade e liberdade para escolher o melhor modelo ou modelos para atender às necessidades dos negócios.
 
@@ -48,7 +50,7 @@ Como cliente local, antes de começar a implantar o Campaign Classic, atenda aos
 * Saiba mais sobre as recomendações relacionadas aos mecanismos de banco de dados [nesta seção](../../installation/using/database.md).
 * Verifique se as camadas de acesso ao banco de dados necessárias estão instaladas no servidor e acessíveis na conta do Adobe Campaign. [Saiba mais](../../installation/using/application-server.md).
 * Configure suas redes, pois alguns processos precisam se comunicar com outras pessoas ou acessar a LAN e a Internet. Isso significa que algumas portas TCP precisam estar abertas para esses processos. [Saiba ](../../installation/using/network-configuration.md) mais sobre os requisitos de configuração de rede.
-* Leia [Lista de verificação de segurança e privacidade da campanha](https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/security-privacy/get-started-security-privacy.html?lang=pt-BR#installing-campaign-classic).
+* Leia [Lista de verificação de segurança e privacidade da campanha](https://helpx.adobe.com/br/campaign/kb/acc-security.html).
 * Verifique as diretrizes gerais para estimar os requisitos de hardware para a implantação no local [neste artigo](https://helpx.adobe.com/br/campaign/kb/hardware-sizing-guide.html).
 
 ## Híbrido

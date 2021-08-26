@@ -5,14 +5,16 @@ description: Criação de boletim informativo no Experience Manager
 audience: integrations
 content-type: reference
 exl-id: 9fa3ce08-3007-4c65-9841-bad339428b7c
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
-workflow-type: ht
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+workflow-type: tm+mt
 source-wordcount: '296'
 ht-degree: 100%
 
 ---
 
 # Criação de boletim informativo no Experience Manager{#creating-an-experience-manager-newsletter}
+
+![](../../assets/common.svg)
 
 Essa integração pode ser usada para criar um boletim informativo no Adobe Experience Manager que será usado no Adobe Campaign como parte de uma campanha de email.
 

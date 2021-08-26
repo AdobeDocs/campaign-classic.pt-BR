@@ -6,14 +6,16 @@ audience: workflow
 content-type: reference
 topic-tags: use-cases
 exl-id: 39cec42a-c7ac-41b1-8f61-799b559ce002
-source-git-commit: 895aa2fd4fa9c7c71c0073e9be33c12d4e92c9fa
-workflow-type: ht
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+workflow-type: tm+mt
 source-wordcount: '974'
 ht-degree: 100%
 
 ---
 
 # Criar uma lista de resumo{#creating-a-summary-list}
+
+![](../../assets/common.svg)
 
 Esse caso de uso detalha a criação de um workflow, que, após coletar arquivos e a passar por vários enriquecimentos, permite criar uma lista de resumo. O exemplo é baseado em uma lista de contatos que compraram em uma loja.
 
@@ -92,7 +94,7 @@ Adicione a atividade de Enrichment e a configure como a seguir:
 
    ![](assets/uc2_enrich_enrich3.png)
 
-Para obter mais informações sobre os vários tipos de links, consulte [Enriquecimento e modificação de dados](../../workflow/using/targeting-data.md#enriching-and-modifying-data).
+Para obter mais informações sobre os vários tipos de links, consulte [Enriquecimento e modificação de dados](targeting-data.md#enriching-and-modifying-data).
 
 Na janela a seguir, é preciso criar uma condição de associação selecionando o campo de origem (no conjunto principal) e o campo do alvo (pertencente ao schema &quot;Lojas&quot;) para configurar a reconciliação de dados.
 

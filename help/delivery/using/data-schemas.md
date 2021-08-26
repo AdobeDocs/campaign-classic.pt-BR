@@ -6,8 +6,8 @@ audience: delivery
 content-type: reference
 topic-tags: content-management
 exl-id: 3e28bfee-0321-40f4-9ef6-1bdb5b25041b
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
-workflow-type: ht
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+workflow-type: tm+mt
 source-wordcount: '546'
 ht-degree: 100%
 
@@ -15,11 +15,13 @@ ht-degree: 100%
 
 # Schemas de dados{#data-schemas}
 
+![](../../assets/common.svg)
+
 Abaixo estão alguns princípios gerais sobre o uso de schemas de dados no Adobe Campaign.
 
 Para saber mais sobre como criar e configurar schemas de dados no Adobe Campaign, consulte [esta seção](../../configuration/using/about-schema-edition.md).
 
-## Estrutura de schema {#schema-structure}
+## Estrutura de esquema {#schema-structure}
 
 O documento XML de um schema de dados deve conter o **`<srcschema>`** elemento raiz com os atributos **name** e **namespace** para preencher o nome e o namespace do schema.
 
@@ -165,7 +167,7 @@ Aqui está nosso schema de exemplo com seu **Cálculo de cadeia de caracteres**:
 </srcSchema>
 ```
 
-## Edição de schemas {#editing-schemas}
+## Edição de esquemas {#editing-schemas}
 
 O campo de edição permite a inserção do conteúdo XML do schema de origem:
 

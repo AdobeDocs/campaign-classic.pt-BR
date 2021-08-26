@@ -6,14 +6,16 @@ audience: message-center
 content-type: reference
 topic-tags: message-templates
 exl-id: a52bc140-072e-4f81-b6da-f1b38662bce5
-source-git-commit: e86350cf12db37e3f2c227563057b97922601729
-workflow-type: ht
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+workflow-type: tm+mt
 source-wordcount: '498'
 ht-degree: 100%
 
 ---
 
 # Criar modelos de mensagem transacional {#creating-the-message-template}
+
+![](../../assets/v7-only.svg)
 
 Para garantir que cada evento possa ser alterado em uma mensagem personalizada, você precisa criar um modelo de mensagem para corresponder a cada tipo de evento.
 

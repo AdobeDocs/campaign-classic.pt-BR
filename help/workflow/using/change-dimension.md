@@ -6,14 +6,16 @@ audience: workflow
 content-type: reference
 topic-tags: targeting-activities
 exl-id: c3de99f8-089f-4c7c-be11-f375a9463eaa
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
-workflow-type: ht
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+workflow-type: tm+mt
 source-wordcount: '370'
 ht-degree: 100%
 
 ---
 
 # Alterar dimensão{#change-dimension}
+
+![](../../assets/common.svg)
 
 A atividade Change dimension permite alterar o targeting dimension durante o ciclo de construção do target. O deslocamento do eixo depende do template de dados e da dimensão de entrada. Isso permite alternar da dimensão &quot;contratos&quot; para a dimensão &quot;clientes&quot;, por exemplo.
 
@@ -55,7 +57,7 @@ Para configurar a atividade de alteração de dimensão, aplique as seguintes et
 
       >[!NOTE]
       >
-      >Para obter mais informações sobre como criar e gerenciar colunas adicionais, consulte [Adição de dados](../../workflow/using/query.md#adding-data).
+      >Para obter mais informações sobre como criar e gerenciar colunas adicionais, consulte [Adição de dados](query.md#adding-data).
 
    * Selecione a dimensão do target anterior (antes da troca de eixo) e selecione **[!UICONTROL Zip Code]** na árvore secundária **[!UICONTROL Location]** do recipient e clique em **[!UICONTROL Edit expression]**.
 

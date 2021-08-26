@@ -6,14 +6,16 @@ audience: social
 content-type: reference
 topic-tags: annexes
 exl-id: 3b8c7db4-9c55-42f6-8e09-e5ab781efe8f
-source-git-commit: c7068c172c35e067d2dbed9233ec3b84633603fd
-workflow-type: ht
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+workflow-type: tm+mt
 source-wordcount: '2222'
 ht-degree: 100%
 
 ---
 
 # Exemplos de aplicativos do Facebook{#examples-of-facebook-apps}
+
+![](../../assets/v7-only.svg)
 
 Quando um usuário clica na guia de um aplicativo do Facebook, ela é exibida em um espaço com 810 pixels de largura. O Adobe Campaign usa um aplicativo web para permitir a definição e a personalização do conteúdo exibido no aplicativo do Facebook, facilitando a aquisição de perfis.
 

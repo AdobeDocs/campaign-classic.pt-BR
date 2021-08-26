@@ -6,14 +6,16 @@ audience: social
 content-type: reference
 topic-tags: publishing-on-facebook-twitter
 exl-id: 84d6cb2e-c7f9-43d7-a98c-22613d456193
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
-workflow-type: ht
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+workflow-type: tm+mt
 source-wordcount: '1148'
 ht-degree: 100%
 
 ---
 
 # Publicação no Facebook{#publishing-on-facebook}
+
+![](../../assets/v7-only.svg)
 
 Quando a configuração estiver concluída, o Social Marketing permitirá que você faça publicações nos murais das suas páginas do Facebook.
 
@@ -24,7 +26,7 @@ As limitações a seguir são inerentes ao Facebook.
 * As cadeias de caracteres não devem exceder 1.000 caracteres.
 * HTML não é aceito.
 
-## Criação de delivery {#creating-the-delivery}
+## Criação da entrega {#creating-the-delivery}
 
 Crie um novo delivery usando o template do delivery **[!UICONTROL Publish to a brand page]**.
 
@@ -60,7 +62,7 @@ A guia **[!UICONTROL Target of the proofs]** permite definir a página do Facebo
 >
 >Se você estiver usando a mesma página de teste do Facebook para todos os deliveries, é possível salvar o target de prova no nó **[!UICONTROL Publish to a brand page]**, que é acessado pelo nó **[!UICONTROL Resources > Templates > Delivery templates]**. O target de prova será inserido por padrão para cada novo delivery.
 
-## Definição do público {#defining-the-audience}
+## Definição do público-alvo {#defining-the-audience}
 
 Se você quiser usar segmentos locais para refinar o tipo de público autorizado a exibir a publicação, recomendamos que você crie uma página do Facebook por segmento (por exemplo: Adobe Campaign Paris, Adobe Campaign London, etc.).
 

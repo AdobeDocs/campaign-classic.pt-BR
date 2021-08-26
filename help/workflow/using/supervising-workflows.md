@@ -6,14 +6,16 @@ audience: workflow
 content-type: reference
 topic-tags: use-cases
 exl-id: ca6d4bf4-7b3a-4d36-9fc3-0b83531d0132
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
-workflow-type: ht
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+workflow-type: tm+mt
 source-wordcount: '646'
 ht-degree: 100%
 
 ---
 
 # Caso de uso: supervisionar seus workflows{#supervising-workflows}
+
+![](../../assets/common.svg)
 
 Esse caso de uso detalha a criação de um workflow que permite monitorar o status de um conjunto de workflows que são &quot;pausados&quot;, &quot;interrompido&quot; ou &quot;com erros&quot;.
 
@@ -31,9 +33,9 @@ Para monitorar o status de um conjunto de workflows, siga estas etapas:
 
 >[!NOTE]
 >
->Além do workflow, o **Workflow Heatmap** do Campaign permite analisar os detalhes dos workflows executados no momento. Para obter mais informações, consulte a [seção dedicada](../../workflow/using/heatmap.md).
+>Além do workflow, o **Workflow Heatmap** do Campaign permite analisar os detalhes dos workflows executados no momento. Para obter mais informações, consulte a [seção dedicada](heatmap.md).
 >
->Para obter mais informações sobre como **monitorar a execução dos workflows**, consulte [esta seção](../../workflow/using/monitoring-workflow-execution.md).
+>Para obter mais informações sobre como **monitorar a execução dos workflows**, consulte [esta seção](monitoring-workflow-execution.md).
 
 ## Etapa 1: Criação do workflow de monitoramento {#step-1--creating-the-monitoring-workflow}
 
@@ -115,7 +117,7 @@ vars.strWorkflowPaused = strPaused;
 vars.strWorkflowStop = strStop;
 ```
 
-## Etapa 3: Criação da atividade &quot;Test&quot;{#step-3--creating-the--test--activity}
+## Etapa 3: Criação da atividade &quot;Test&quot; {#step-3--creating-the--test--activity}
 
 A atividade &quot;Test&quot; permite determinar se um fornecimento precisa ser enviado ou se o workflow de monitoramento precisa executar outro ciclo com base na atividade &quot;Wait&quot;.
 

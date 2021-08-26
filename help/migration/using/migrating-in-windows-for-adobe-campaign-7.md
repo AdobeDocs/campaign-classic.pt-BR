@@ -6,7 +6,7 @@ audience: migration
 content-type: reference
 topic-tags: migrating-to-adobe-campaign-7
 exl-id: 3743d018-3316-4ce3-ae1c-25760aaf5785
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '1534'
 ht-degree: 1%
@@ -14,6 +14,8 @@ ht-degree: 1%
 ---
 
 # Migração para o Adobe Campaign 7 no Windows{#migrating-in-windows-for-adobe-campaign}
+
+![](../../assets/v7-only.svg)
 
 ## Procedimento geral {#general-procedure}
 
@@ -341,7 +343,7 @@ Inicie os serviços IIS e Adobe Campaign em cada um dos seguintes servidores:
 
 Antes de prosseguir para a próxima etapa, execute um teste completo da nova instalação, verifique se não há regressões e se tudo funciona seguindo todas as recomendações da seção [Configurações gerais](../../migration/using/general-configurations.md).
 
-## Exclusão e limpeza da versão anterior do Adobe Campaign {#deleting-and-cleansing-adobe-campaign-previous-version}
+## Como excluir e limpar a versão anterior do Adobe Campaign {#deleting-and-cleansing-adobe-campaign-previous-version}
 
 O procedimento depende da versão anterior do Adobe Campaign.
 

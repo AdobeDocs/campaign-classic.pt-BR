@@ -6,14 +6,16 @@ audience: workflow
 content-type: reference
 topic-tags: -general-operation
 exl-id: 8ba20ccd-b03f-4c4f-87c1-a21e80d8e4be
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
-workflow-type: ht
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+workflow-type: tm+mt
 source-wordcount: '1624'
 ht-degree: 100%
 
 ---
 
-# Criação de um workflow {#building-a-workflow}
+# Criação de um fluxo de trabalho {#building-a-workflow}
+
+![](../../assets/common.svg)
 
 Esta seção detalha os principais princípios e as práticas recomendadas para criação de workflow no Campaign.
 
@@ -55,10 +57,10 @@ Defina agora as várias atividades e as vincule no diagrama. Nessa fase de confi
 
 As atividades são agrupadas por categoria dentro das diferentes guias da paleta. As guias e atividades disponíveis podem variar dependendo do tipo de workflow (workflow técnicos, para construção do target ou da campanha).
 
-* A primeira guia contém atividades de targeting e de manipulação de dados. Essas atividades são detalhadas em [Atividades de direcionamento](../../workflow/using/about-targeting-activities.md).
-* A segunda guia contém as atividades de agendamento, que são usadas principalmente para coordenar outras atividades. Essas atividades são detalhadas em [Atividades de controle de fluxo](../../workflow/using/about-flow-control-activities.md).
-* A terceira guia contém ferramentas e ações que podem ser usadas no workflow. Essas atividades são detalhadas em [Atividades da ação](../../workflow/using/about-action-activities.md).
-* A quarta guia contém atividades que dependem de um determinado evento, como o recibo de um email ou a entrada de um arquivo em um servidor. Essas atividades são detalhadas em [Atividades de evento](../../workflow/using/about-event-activities.md).
+* A primeira guia contém atividades de targeting e de manipulação de dados. Essas atividades são detalhadas em [Atividades de direcionamento](about-targeting-activities.md).
+* A segunda guia contém as atividades de agendamento, que são usadas principalmente para coordenar outras atividades. Essas atividades são detalhadas em [Atividades de controle de fluxo](about-flow-control-activities.md).
+* A terceira guia contém ferramentas e ações que podem ser usadas no workflow. Essas atividades são detalhadas em [Atividades da ação](about-action-activities.md).
+* A quarta guia contém atividades que dependem de um determinado evento, como o recibo de um email ou a entrada de um arquivo em um servidor. Essas atividades são detalhadas em [Atividades de evento](about-event-activities.md).
 
 Criação do diagrama
 
@@ -104,7 +106,7 @@ Você pode alterar a exibição e o layout do gráfico usando os seguintes eleme
 
 * **Gestão de imagens**
 
-   Você pode personalizar a imagem do plano de fundo do diagrama, bem como aquelas relacionadas às várias atividades. Consulte [Gerenciamento de imagens de atividade](../../workflow/using/managing-activity-images.md).
+   Você pode personalizar a imagem do plano de fundo do diagrama, bem como aquelas relacionadas às várias atividades. Consulte [Gerenciamento de imagens de atividade](managing-activity-images.md).
 
 ## Configuração de atividades {#configuring-activities}
 
@@ -112,7 +114,7 @@ Clique duas vezes em uma atividade para configurá-la ou clique com o botão dir
 
 >[!NOTE]
 >
->As atividades de workflow da campanha são detalhadas [nesta seção](../../workflow/using/about-activities.md).
+>As atividades de workflow da campanha são detalhadas [nesta seção](about-activities.md).
 
 As primeiras guias contêm a configuração básica. A guia **[!UICONTROL Advanced]** contém os parâmetros adicionais, que são usados principalmente para definir o comportamento em caso de erro, especificando a duração da execução para uma atividade e para inserir um script de inicialização.
 
@@ -124,13 +126,13 @@ Para entender melhor as atividades e melhorar a legibilidade do workflow, você 
 
 Os workflows para construção do target permitem que você crie vários targets de delivery. Você pode criar queries, definir uniões ou exclusões com base em critérios específicos, adicionar agendamento, graças às atividades do workflow. O resultado desse target pode ser transferido automaticamente para uma lista que pode servir como target das ações de delivery
 
-Além dessas atividades, as opções de Gestão de Dados permitem manipular dados e acessar funções avançadas para solucionar problemas complexos de target. Para obter mais informações, consulte [Gerenciamento de dados](../../workflow/using/targeting-data.md#data-management).
+Além dessas atividades, as opções de Gestão de Dados permitem manipular dados e acessar funções avançadas para solucionar problemas complexos de target. Para obter mais informações, consulte [Gerenciamento de dados](targeting-data.md#data-management).
 
 Todas essas atividades podem ser encontradas na primeira guia do workflow.
 
 >[!NOTE]
 >
->As atividades de target são detalhadas [nesta seção](../../workflow/using/about-activities.md).
+>As atividades de target são detalhadas [nesta seção](about-activities.md).
 
 Os fluxos de trabalho para construção do target podem ser criados e editados por meio do nó **[!UICONTROL Profiles and Targets > Jobs > Targeting workflows]** da árvore do Adobe Campaign ou através do menu **[!UICONTROL Profiles and Targets > Targeting workflows]** da página inicial.
 
@@ -142,11 +144,11 @@ Os workflows para construção do target dentro da estrutura de uma campanha sã
 
 As etapas para a criação de um workflow para construção do target estão detalhadas nestas seções:
 
-1. **Identifique** dados no banco de dados – Consulte [Criação de queries](../../workflow/using/targeting-data.md#creating-queries)
-1. **Prepare** dados para atender às necessidades do delivery – Consulte [Enriquecendo e modificando dados](../../workflow/using/targeting-data.md#enriching-and-modifying-data)
-1. **Use** dados para executar atualizações ou dentro de um delivery – Consulte [Atualização do banco de dados](../../workflow/using/how-to-use-workflow-data.md#updating-the-database)
+1. **Identifique** dados no banco de dados – Consulte [Criação de queries](targeting-data.md#creating-queries)
+1. **Prepare** dados para atender às necessidades do delivery – Consulte [Enriquecendo e modificando dados](targeting-data.md#enriching-and-modifying-data)
+1. **Use** dados para executar atualizações ou dentro de um delivery – Consulte [Atualização do banco de dados](how-to-use-workflow-data.md#updating-the-database)
 
-Os resultados de todos os enriquecimentos e todos tratamentos realizados no target são armazenados e acessíveis em campos de personalização, principalmente para usar criação de mensagens personalizadas. Para obter mais informações, consulte [Dados do target](../../workflow/using/data-life-cycle.md#target-data)
+Os resultados de todos os enriquecimentos e todos tratamentos realizados no target são armazenados e acessíveis em campos de personalização, principalmente para usar criação de mensagens personalizadas. Para obter mais informações, consulte [Dados do target](data-life-cycle.md#target-data)
 
 ### Targeting dimension e dimensão do filtro {#targeting-and-filtering-dimensions}
 
@@ -182,7 +184,7 @@ Todos os workflows da campanha são centralizados no nó **[!UICONTROL Administr
 
 Os workflows da campanha e exemplos de implementação são detalhados [nesta página](../../campaign/using/marketing-campaign-deliveries.md#building-the-main-target-in-a-workflow).
 
-## Fluxos de trabalho técnicos {#technical-workflows}
+## Workflows técnicos {#technical-workflows}
 
 Os workflows técnicos são fornecidos com o Adobe Campaign, prontos para uso. Eles são operações ou tarefas agendadas para execução periódica no servidor. Eles permitem executar a manutenção no banco de dados, encaminhar as informações de rastreamento sobre os deliveries e configurar processos provisionais nos deliveries. Os workflows técnicos são configurados por meio do nó **[!UICONTROL Administration > Production > Technical workflows]**.
 
@@ -194,7 +196,7 @@ A subpasta **[!UICONTROL Campaign process]** centraliza os fluxos de trabalho ne
 
 >[!NOTE]
 >
->A lista de workflows técnicos instalados com cada módulo está disponível em uma [seção dedicada](../../workflow/using/about-technical-workflows.md).
+>A lista de workflows técnicos instalados com cada módulo está disponível em uma [seção dedicada](about-technical-workflows.md).
 
 Você pode criar outros workflows técnicos no nó **[!UICONTROL Administration > Production > Technical workflows]** da estrutura da árvore. No entanto, essa função é reservada para usuários avançados.
 
@@ -214,7 +216,7 @@ Além das propriedades usuais do workflow, as propriedades do template permitem 
 
 ![](assets/s_advuser_wf_template_properties.png)
 
-## Workflows duplicados {#duplicating-workflows}
+## Fluxos de trabalho duplicados {#duplicating-workflows}
 
 É possível duplicar diferentes tipos de workflows: Após a duplicação, as modificações do workflow não são transferidas para a cópia do workflow.
 

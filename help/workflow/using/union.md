@@ -6,8 +6,8 @@ audience: workflow
 content-type: reference
 topic-tags: targeting-activities
 exl-id: 1cda3146-c333-4743-a871-c44583b6e5b2
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
-workflow-type: ht
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+workflow-type: tm+mt
 source-wordcount: '305'
 ht-degree: 100%
 
@@ -15,13 +15,15 @@ ht-degree: 100%
 
 # União{#union}
 
+![](../../assets/common.svg)
+
 Uma união agrupa o resultado de várias atividades de entrada em um único target. O target é criado com todos os resultados recebidos: todas as atividades anteriores devem então ser concluídas para que a união seja executada.
 
 ![](assets/s_user_segmentation_union.png)
 
 >[!NOTE]
 >
->Para obter mais informações sobre como configurar e usar a atividade de união, consulte [Combinando vários targets (União)](../../workflow/using/targeting-data.md#combining-several-targets--union-).
+>Para obter mais informações sobre como configurar e usar a atividade de união, consulte [Combinando vários targets (União)](targeting-data.md#combining-several-targets--union-).
 
 ## Exemplo de união {#union-example}
 
@@ -35,7 +37,7 @@ No exemplo a seguir, os resultados de dois queries foram combinados para atualiz
 
    Especifique este número final inserindo o número máximo de recipients e selecionando o query cujo público terá prioridade.
 
-1. Aprove a atividade de união e configure a atividade de atualização da lista (consulte [Atualização de lista](../../workflow/using/list-update.md)).
+1. Aprove a atividade de união e configure a atividade de atualização da lista (consulte [Atualização de lista](list-update.md)).
 1. Inicie o workflow. O número de resultados é exibido e a lista definida na atividade de atualização da lista é criada ou atualizada. Esta lista contém o conjunto de recipients para queries ou, onde aplicável, o número definido na etapa anterior.
 
    ![](assets/union_example.png)
@@ -47,7 +49,7 @@ No exemplo a seguir, os resultados de dois queries foram combinados para atualiz
 
 Cada evento de entrada deve especificar um target definido por esses parâmetros.
 
-## Parâmetros de output {#output-parameters}
+## Parâmetros de saída {#output-parameters}
 
 * tableName
 * schema

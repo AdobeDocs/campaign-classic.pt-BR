@@ -6,14 +6,16 @@ audience: social
 content-type: reference
 topic-tags: configuration
 exl-id: 5c11bd0f-2df7-4c7f-b682-955fedf8e664
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
-workflow-type: ht
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+workflow-type: tm+mt
 source-wordcount: '983'
 ht-degree: 100%
 
 ---
 
 # Criação de um aplicativo do Facebook{#creating-a-facebook-application}
+
+![](../../assets/v7-only.svg)
 
 Graças aos aplicativos Web, o Social Marketing permite exibir um conteúdo personalizado nos seus aplicativos do Facebook, facilitando a aquisição de prospectos por meio dessa rede social. Para obter mais exemplos de aplicativos Web do tipo Facebook, consulte [Exemplos de aplicativos do Facebook](../../social/using/examples-of-facebook-apps.md).
 
@@ -90,7 +92,7 @@ Esta etapa requer o acesso ao console do Adobe Campaign e a um navegador da Inte
 
    ![](assets/social_webapp_fb_013.png)
 
-## Inserção dos links de Termos de serviço e Política de privacidade{#entering-the-terms-of-service-and-privacy-policy-links}
+## Inserção dos links de Termos de serviço e Política de privacidade {#entering-the-terms-of-service-and-privacy-policy-links}
 
 É altamente recomendável adicionar os links **[!UICONTROL Terms of service]** e **[!UICONTROL Privacy policy]** que devem ser exibidos na tela de solicitação de permissão do Facebook.
 
@@ -103,7 +105,7 @@ As etapas de configuração são as seguintes:
 
    ![](assets/social_fb_terms_of_services.png)
 
-## Criação de um aplicativo Web do tipo Facebook{#creating-a-facebook-type-web-application}
+## Criação de um aplicativo Web do tipo Facebook {#creating-a-facebook-type-web-application}
 
 O aplicativo do Facebook do Adobe Campaign permite exibir o conteúdo personalizado no seu aplicativo do Facebook. Para cada aplicativo do Facebook, é necessário criar um aplicativo Web no Adobe Campaign. Para criar um aplicativo Web do Facebook, proceda da seguinte maneira:
 
@@ -137,7 +139,7 @@ O aplicativo do Facebook do Adobe Campaign permite exibir o conteúdo personaliz
 
    ![](assets/social_webapp_004.png)
 
-## Configuração de guias do Facebook{#configuring-facebook-tabs}
+## Configuração de guias do Facebook {#configuring-facebook-tabs}
 
 É possível configurar os aplicativos do Facebook para serem exibidos como guias da sua página do Facebook. Para fazer isso, siga as etapas abaixo:
 

@@ -6,7 +6,7 @@ audience: configuration
 content-type: reference
 topic-tags: setting-up-web-tracking
 exl-id: 160df6e1-43e5-4eb9-ad2f-5db444e314ea
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '262'
 ht-degree: 4%
@@ -14,6 +14,8 @@ ht-degree: 4%
 ---
 
 # Criação de tags de rastreamento Web{#creating-web-tracking-tags}
+
+![](../../assets/v7-only.svg)
 
 Cada página do site que você deseja rastrear deve ser referenciada na plataforma Adobe Campaign. Essa referência pode ser executada de duas maneiras:
 
@@ -35,7 +37,7 @@ Para gerar o código HTML a ser inserido na página:
 
 Em seguida, copie o código gerado e o cole na página a ser rastreada.
 
-## Criação instantânea de URLs a serem rastreadas {#on-the-fly-creation-of-urls-to-be-tracked}
+## Criação instantânea de URLs a serem rastreados {#on-the-fly-creation-of-urls-to-be-tracked}
 
 Você pode criar URLs de rastreamento Web dinamicamente, adicionando informações ao valor do parâmetro **tagid**:
 

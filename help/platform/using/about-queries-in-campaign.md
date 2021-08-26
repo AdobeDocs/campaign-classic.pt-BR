@@ -2,18 +2,20 @@
 product: campaign
 title: Sobre query no Campaign
 description: Sobre query no Campaign
-feature: Editor de consultas
+feature: Query Editor
 role: User, Data Architect
 level: Beginner
 exl-id: 2db1034d-cad6-4fb0-8646-dd9099080ab0
-source-git-commit: 6c28e6cd78ce7a8ee5c0dc7e671de780787b9f57
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
-source-wordcount: '179'
+source-wordcount: '177'
 ht-degree: 100%
 
 ---
 
 # Introdução a consultas{#about-queries-in-campaign}
+
+![](../../assets/common.svg)
 
 A ferramenta de query do Adobe Campaign pode ser encontrada em vários níveis do software: para criar uma população do target, segmentação de clientes, logs de rastreamento de extração e filtragem, filtros de compilação etc.
 

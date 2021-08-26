@@ -6,14 +6,16 @@ audience: workflow
 content-type: reference
 topic-tags: event-activities
 exl-id: 8025d207-3bc0-400f-b6a4-a72765e5a9d2
-source-git-commit: 8c47027099559549320abf68016386cc85dcda5a
-workflow-type: ht
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+workflow-type: tm+mt
 source-wordcount: '549'
 ht-degree: 100%
 
 ---
 
 # Transferência de arquivos{#file-transfer}
+
+![](../../assets/common.svg)
 
 A atividade de **transferência de arquivos** permite receber ou enviar arquivos, testar a presença de arquivos ou listar arquivos em um servidor. O protocolo usado é Azure Blob Storage, Amazon Simple Storage Service (S3), FTP ou SFTP.
 Com S3, Azure Blob Storage ou conexão SFTP, você também pode importar dados de segmento para o Adobe Campaign com uma plataforma de dados do cliente em tempo real. Para obter mais informações, consulte esta [documentação](https://experienceleague.adobe.com/docs/experience-platform/destinations/catalog/email-marketing/adobe-campaign.html?lang=pt-BR).
@@ -71,7 +73,7 @@ A configuração depende da ação selecionada.
 Há duas opções possíveis para todas as opções de transferência de arquivos:
 
 * A opção **[!UICONTROL Process missing file]** adiciona uma transição que é ativada se nenhum arquivo for encontrado no diretório especificado.
-* A opção **[!UICONTROL Process errors]** é detalhada em [Processamento de erros](../../workflow/using/monitoring-workflow-execution.md#processing-errors).
+* A opção **[!UICONTROL Process errors]** é detalhada em [Processamento de erros](monitoring-workflow-execution.md#processing-errors).
 
 O link **[!UICONTROL Advanced parameters...]** permite acessar as seguintes opções:
 
@@ -93,7 +95,7 @@ O link **[!UICONTROL Advanced parameters...]** permite acessar as seguintes opç
 
    Permite especificar a porta de conexão que será usada para a transferência de dados.
 
-O link **[!UICONTROL File historization settings...]** permite o acesso a opções detalhadas em [Web download](../../workflow/using/web-download.md) (etapa **[!UICONTROL File historization]**).
+O link **[!UICONTROL File historization settings...]** permite o acesso a opções detalhadas em [Web download](web-download.md) (etapa **[!UICONTROL File historization]**).
 
 ## Parâmetros de entrada {#input-parameters}
 
@@ -101,7 +103,7 @@ O link **[!UICONTROL File historization settings...]** permite o acesso a opçõ
 
    Nome completo do arquivo enviado.
 
-## Parâmetros de output {#output-parameters}
+## Parâmetros de saída {#output-parameters}
 
 * filename
 

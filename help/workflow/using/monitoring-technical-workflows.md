@@ -6,14 +6,16 @@ audience: workflow
 content-type: reference
 topic-tags: use-cases
 exl-id: 5e77d196-5c71-438e-8dae-10c6a6e4f29c
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
-workflow-type: ht
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+workflow-type: tm+mt
 source-wordcount: '518'
 ht-degree: 100%
 
 ---
 
 # Monitoramento de workflows técnicos {#monitoring-technical-workflows}
+
+![](../../assets/common.svg)
 
 Os workflows técnicos precisam ser monitorados e ações precisam ser realizas quando falharem.
 
@@ -31,32 +33,32 @@ Em Indicadores do sistema e arquivos principais, verifique se nenhum indicador e
 * Verifique se nenhum dos processos é muito antigo,
 * Verifique se os arquivos de log de diferentes processos não contêm erros recorrentes e alarmantes.
 
-## Fluxos de trabalho técnicos {#technical-workflows}
+## Workflows técnicos {#technical-workflows}
 
 Os workflows técnicos estão disponíveis em **[!UICONTROL Administration]** > **[!UICONTROL Production]** > **[!UICONTROL Technical workflows]**.
 
 Dependendo do workflow técnico, siga as etapas detalhadas abaixo para garantir que tudo funcione conforme esperado.
 
-Para entender melhor o que cada workflow técnico deve realizar, consulte esta [seção](../../workflow/using/about-technical-workflows.md).
+Para entender melhor o que cada workflow técnico deve realizar, consulte esta [seção](about-technical-workflows.md).
 
 Para **[!UICONTROL Database Cleanup workflow (‘cleanup’)]**:
 
-1. Verifique se o workflow **[!UICONTROL Database Cleanup]** é executado e finalizado com êxito todos os dias. Para obter mais informações, consulte esta [página](../../workflow/using/delivery.md).
+1. Verifique se o workflow **[!UICONTROL Database Cleanup]** é executado e finalizado com êxito todos os dias. Para obter mais informações, consulte esta [página](delivery.md).
 1. Examine o journal para verificar se o tempo decorrido é relativamente constante ao longo do tempo e não interfere em outros workflows.
 1. Para obter mais informações, consulte esta [página](../../production/using/database-cleanup-workflow.md).
 
 Para **[!UICONTROL Tracking workflow (‘tracking’)]**:
 
-Verifique se o workflow de rastreamento é executado como agendado (a cada hora por padrão) e se o journal não realça erros recorrentes. Para obter mais informações, consulte esta [seção](../../workflow/using/delivery.md).
+Verifique se o workflow de rastreamento é executado como agendado (a cada hora por padrão) e se o journal não realça erros recorrentes. Para obter mais informações, consulte esta [seção](delivery.md).
 
 Para **[!UICONTROL Deliverability update (‘deliverabilityUpdate’)]**:
 
-1. Verifique se o workflow **[!UICONTROL Deliverability update]** é executado e finalizado com êxito todos os dias. Para obter mais informações, consulte esta [página](../../workflow/using/delivery.md).
+1. Verifique se o workflow **[!UICONTROL Deliverability update]** é executado e finalizado com êxito todos os dias. Para obter mais informações, consulte esta [página](delivery.md).
 1. Verifique no journal se as regras estão sendo atualizadas regularmente.
 
 Para **[!UICONTROL Campaign process ('operationMgt', 'deliveryMgt', ...)]**:
 
-1. Examine todos os workflows localizados na pasta **[!UICONTROL Campaign process]**. Para obter mais informações, consulte esta [página](../../workflow/using/about-technical-workflows.md).
+1. Examine todos os workflows localizados na pasta **[!UICONTROL Campaign process]**. Para obter mais informações, consulte esta [página](about-technical-workflows.md).
 1. Verifique se os workflows são executados como agendados e se o journal não realça erros recorrentes.
 
 ## Supervisão de workflow {#workflow-supervision}

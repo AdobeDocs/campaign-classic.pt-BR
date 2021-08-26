@@ -6,14 +6,16 @@ audience: workflow
 content-type: reference
 topic-tags: event-activities
 exl-id: b6005eae-5fbc-4e22-ab3a-c9b7ed6506f6
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
-workflow-type: ht
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+workflow-type: tm+mt
 source-wordcount: '405'
 ht-degree: 100%
 
 ---
 
 # Download da Web{#web-download}
+
+![](../../assets/common.svg)
 
 A atividade de **download da Web** inicia o download de um arquivo em uma URL explícita, uma conta externa ou uma instância do Adobe Campaign. O protocolo HTTP é usado. Isso pode ser um download GET ou POST.
 
@@ -61,8 +63,8 @@ A atividade de **download da Web** inicia o download de um arquivo em uma URL ex
 
    ![](assets/download_web_edit_advanced.png)
 
-   A opção **[!UICONTROL Process errors]** é detalhada em [Processamento de erros](../../workflow/using/monitoring-workflow-execution.md#processing-errors).
+   A opção **[!UICONTROL Process errors]** é detalhada em [Processamento de erros](monitoring-workflow-execution.md#processing-errors).
 
-## Parâmetros de output {#output-parameters}
+## Parâmetros de saída {#output-parameters}
 
 * filename: nome completo do arquivo baixado.

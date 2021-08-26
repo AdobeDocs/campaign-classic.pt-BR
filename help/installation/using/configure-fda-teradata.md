@@ -6,7 +6,7 @@ audience: platform
 content-type: reference
 topic-tags: connectors
 exl-id: 3a5856c3-b642-4722-97ff-6ae7107efdbe
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '1613'
 ht-degree: 83%
@@ -15,13 +15,15 @@ ht-degree: 83%
 
 # Configuração do acesso ao Teradata {#configure-access-to-teradata}
 
+![](../../assets/v7-only.svg)
+
 Use a opção Campaign [Federated Data Access](../../installation/using/about-fda.md) (FDA) para processar informações armazenadas em um banco de dados externo. Siga as etapas abaixo para configurar o acesso ao Teradata.
 
 1. Instale e configure [drivers de Teradata](#teradata-config)
 1. Configure o Teradata [external account](#teradata-external) no Campaign
 1. Configurar [configuração adicional](#teradata-additional-configurations) para Teradata e servidor do Campaign
 
-## Configuração de teradata {#teradata-config}
+## Configuração do teradata {#teradata-config}
 
 É necessário instalar drivers para o Teradata para que a conexão com o Campaign seja implementada.
 
@@ -67,7 +69,6 @@ Use a opção Campaign [Federated Data Access](../../installation/using/about-fd
 >[!NOTE]
 >
 >A conexão com um banco de dados externo de Teradata no FDA requer etapas de configurações adicionais no servidor do Adobe Campaign. [Saiba mais](#teradata-additional-configurations).
-
 
 ## Conta externa Teradata{#teradata-external}
 

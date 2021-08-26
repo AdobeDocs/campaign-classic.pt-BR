@@ -6,14 +6,16 @@ audience: workflow
 content-type: reference
 topic-tags: targeting-activities
 exl-id: 38add4fe-6238-45de-863e-895ebca189b7
-source-git-commit: e3e2ac09de6a9e846e9f9262d522b9395a725648
-workflow-type: ht
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+workflow-type: tm+mt
 source-wordcount: '1089'
 ht-degree: 100%
 
 ---
 
 # Desduplicação{#deduplication}
+
+![](../../assets/common.svg)
 
 A desduplicação exclui duplicatas dos resultados das atividades de entrada. A desduplicação pode ser executada no endereço de e-mail, número de telefone ou outro campo.
 
@@ -64,6 +66,7 @@ Para configurar uma desduplicação, insira o rótulo, o método e os critérios
    >[!NOTE]
    >
    >Se os dados externos estiverem sendo usados como entrada, por exemplo, de um arquivo externo, selecione a opção **[!UICONTROL Temporary schema]**.
+
    >
    >Na próxima etapa, a opção **[!UICONTROL Other]** permite selecionar o critério ou os critérios a serem usados:
 
@@ -139,7 +142,7 @@ A funcionalidade **[!UICONTROL Merge]** permite configurar um conjunto de regras
 
 Por exemplo, com um conjunto de registros duplicados, você pode optar por manter o número de telefone mais antigo ou o nome mais recente.
 
-Um caso de uso que utiliza esse recurso está disponível [nesta seção](../../workflow/using/deduplication-merge.md).
+Um caso de uso que utiliza esse recurso está disponível [nesta seção](deduplication-merge.md).
 
 Para fazer isso, siga estes passos:
 
@@ -155,7 +158,7 @@ Para fazer isso, siga estes passos:
 
 1. Depois de ativar a funcionalidade, uma guia **[!UICONTROL Merge]** é adicionada à atividade **[!UICONTROL Deduplication]**. Isso permite que você defina grupos de campos a serem mesclados e suas regras associadas.
 
-   Para obter mais informações, consulte o caso de uso detalhado disponível [nesta seção](../../workflow/using/deduplication-merge.md).
+   Para obter mais informações, consulte o caso de uso detalhado disponível [nesta seção](deduplication-merge.md).
 
    ![](assets/dedup3.png)
 

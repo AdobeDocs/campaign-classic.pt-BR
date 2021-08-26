@@ -6,14 +6,16 @@ audience: configuration
 content-type: reference
 topic-tags: schema-reference
 exl-id: 54538c3e-3232-4bf7-a09c-dacf0f072be5
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 34404fbe935e68f3cc11d937839209443ad4ca60
 workflow-type: tm+mt
 source-wordcount: '46'
 ht-degree: 21%
 
 ---
 
-# elemento de parâmetros {#parameters--element}
+# elemento parâmetros {#parameters--element}
+
+![](../../../assets/v7-only.svg)
 
 ## Modelo de conteúdo {#content-model-13}
 
@@ -27,7 +29,7 @@ nenhuma
 
 `<method>`
 
-## Filhos {#children-13}
+## Crianças {#children-13}
 
 `<param>`
 

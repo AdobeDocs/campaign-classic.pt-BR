@@ -2,18 +2,20 @@
 product: campaign
 title: Workspace do Adobe Campaign
 description: Saiba como usar e personalizar o workspace do Campaign
-feature: Visão geral
+feature: Overview
 role: Data Engineer
 level: Beginner
 exl-id: 5f689679-7148-4abd-a9bf-185854c64b13
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
-workflow-type: ht
-source-wordcount: '826'
-ht-degree: 100%
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+workflow-type: tm+mt
+source-wordcount: '825'
+ht-degree: 99%
 
 ---
 
 # Workspace do Adobe Campaign{#adobe-campaign-workspace}
+
+![](../../assets/common.svg)
 
 ## Explorar a interface do Adobe Campaign {#about-adobe-campaign-interface}
 
@@ -135,7 +137,7 @@ As principais diferenças entre inglês americano e inglês do Reino Unido são:
   </tr> 
   <tr> 
    <td> Data abreviada com hora<br /> </td> 
-   <td> <p>%2M/%2D/%4Y %I:%2N:%2S %P</p><p><strong>ex: 09/25/2018 10:47:25 PM</strong></p> </td> 
+   <td> <p>%2M/%2D/%4Y %I:%2N:%2S %P</p><p><strong>ex: 25/09/2018 10:47:25 PM</strong></p> </td> 
    <td> <p>%2D/%2M/%4Y %2H:%2N:%2S</p><p><strong>ex: 25/09/2018 22:47:25</strong></p> </td> 
   </tr> 
  </tbody> 

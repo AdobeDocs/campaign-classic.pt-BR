@@ -6,14 +6,16 @@ audience: workflow
 content-type: reference
 topic-tags: action-activities
 exl-id: 9c228cdb-331e-476e-a24c-3c7e23add3bf
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
-workflow-type: ht
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+workflow-type: tm+mt
 source-wordcount: '364'
 ht-degree: 100%
 
 ---
 
 # Delivery contínuo{#continuous-delivery}
+
+![](../../assets/common.svg)
 
 Uma ação do tipo **Delivery contínuo** permite adicionar novos recipients a um delivery existente. Esse tipo de delivery evita que você tenha que criar um novo delivery toda vez: este modo é frequentemente mais eficiente, em especial para alertas de baixo volume ou notificações enviadas quando necessário.
 
@@ -38,7 +40,7 @@ Cada evento de entrada deve especificar um target definido por esses parâmetros
 
 Apenas quando a opção **[!UICONTROL Specified by the inbound event]** está selecionada.
 
-## Parâmetros de output {#output-parameters}
+## Parâmetros de saída {#output-parameters}
 
 * tableName
 * schema
@@ -58,7 +60,7 @@ Um delivery contínuo criará um ÚNICO delivery. Logs do delivery (broadLog) e 
 
 ![Delivery contínuo](assets/delivery_continuous.jpg)
 
-## Vídeo tutorial {#continuous-delivery-video}
+## Tutorial em vídeo {#continuous-delivery-video}
 
 Este vídeo mostra como configurar um delivery contínuo com um query incremental.
 

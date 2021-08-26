@@ -6,14 +6,16 @@ audience: production
 content-type: reference
 topic-tags: updating-adobe-campaign
 exl-id: 4aaa6256-256a-441d-80c9-430f8e427875
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '1149'
-ht-degree: 3%
+ht-degree: 4%
 
 ---
 
 # Atualização para uma nova build (no local){#upgrading}
+
+![](../../assets/v7-only.svg)
 
 Antes de iniciar o processo de atualização, determine e confirme qual versão do Adobe Campaign deve ser atualizada para e consulte as [Notas de versão](../../rn/using/latest-release.md) .
 
@@ -21,9 +23,9 @@ Antes de iniciar o processo de atualização, determine e confirme qual versão 
 >
 >* O Adobe recomenda fazer um backup do banco de dados em cada instância antes da atualização. Para saber mais, consulte [esta seção](../../production/using/backup.md).
 >* Para executar uma atualização, verifique se você tem a capacidade e as permissões de acessar instâncias e logs.
->* Leia [esta seção](../../installation/using/general-architecture.md) e o capítulo [atualização de compilação](https://experienceleague.adobe.com/docs/campaign-classic/using/monitoring-campaign-classic/updating-adobe-campaign/build-upgrade.html?lang=pt-BR#monitoring-campaign-classic) antes de iniciar.
->
+>* Leia [esta seção](../../installation/using/general-architecture.md) e o capítulo [atualização de compilação](https://helpx.adobe.com/br/campaign/kb/acc-build-upgrade.html) antes de iniciar.
 
+>
 
 
 ## Windows {#in-windows}
@@ -37,7 +39,7 @@ Em um ambiente Windows, siga as etapas abaixo para atualizar o Adobe Campaign pa
 
 Para saber como atualizar o console do cliente, consulte [esta seção](../../installation/using/client-console-availability-for-windows.md).
 
-### Encerrar serviços {#shut-down-services}
+### Serviços de desligamento {#shut-down-services}
 
 Para substituir todos os arquivos pela nova versão, você precisa encerrar todas as instâncias do serviço nlserver.
 
@@ -48,7 +50,6 @@ Para substituir todos os arquivos pela nova versão, você precisa encerrar toda
       **iisreset /stop**
 
    * Serviço Adobe Campaign: **net stop nlserver6**
-
    >[!IMPORTANT]
    >
    >Você também precisa verificar se o servidor de redirecionamento (webmdl) está parado, para que o arquivo **nlsrvmod.dll** usado pelo IIS possa ser substituído pela nova versão.
@@ -63,13 +64,13 @@ Para substituir todos os arquivos pela nova versão, você precisa encerrar toda
 
    Você pode usar o Gerenciador de Tarefas do Windows para garantir que todos os processos sejam interrompidos.
 
-### Atualizar o aplicativo do servidor Adobe Campaign {#upgrade-the-adobe-campaign-server-application}
+### Atualizar o aplicativo do servidor do Adobe Campaign {#upgrade-the-adobe-campaign-server-application}
 
 Para executar o arquivo de atualização, siga as etapas abaixo:
 
 1. Execute **setup.exe**.
 
-   Para baixar esse arquivo, conecte-se ao [Portal de distribuição de software](https://experience.adobe.com/#/downloads/content/software-distribution/en/campaign.html) usando suas credenciais de usuário. Saiba mais sobre a Distribuição de software em [this page](https://experienceleague.adobe.com/docs/experience-cloud/software-distribution/home.html?lang=en).
+   Para baixar esse arquivo, conecte-se ao [Portal de distribuição de software](https://experience.adobe.com/#/downloads/content/software-distribution/en/campaign.html) usando suas credenciais de usuário. Saiba mais sobre a Distribuição de software em [this page](https://experienceleague.adobe.com/docs/experience-cloud/software-distribution/home.html?lang=pt-BR?lang=en).
 
 1. Selecione o modo de instalação: escolha **[!UICONTROL Update or repair]**
 1. Clique em **[!UICONTROL Next]** .
@@ -127,7 +128,7 @@ Comece recuperando ambos os pacotes atualizados do Adobe Campaign: conecte-se ao
 
 O arquivo é **nlserver6-v7-XXX.rpm**
 
-### Execute uma atualização {#perform-an-update}
+### Executar uma atualização {#perform-an-update}
 
 * Distribuição baseada em RPM (RedHat, SuSe)
 
@@ -157,7 +158,7 @@ O arquivo é **nlserver6-v7-XXX.rpm**
 >
 >Os procedimentos de instalação completos estão detalhados em [nesta seção](../../installation/using/installing-campaign-standard-packages.md). Os recursos são sincronizados automaticamente, no entanto, é necessário garantir que nenhum erro ocorreu. Para obter mais informações, consulte [Resolver conflitos de atualização](#resolving-upgrade-conflicts).
 
-### Reinicie o servidor Web {#reboot-the-web-server}
+### Reinicialize o servidor Web {#reboot-the-web-server}
 
 Você deve encerrar o Apache para que a nova biblioteca se torne aplicável.
 
@@ -171,8 +172,9 @@ Para fazer isso, execute o seguinte comando:
 >
 >* Seu script pode ser chamado de **httpd** em vez de **apache**.
 >* Você DEVE executar esse comando até obter a seguinte resposta:
->
->   Essa operação é necessária para que o Apache aplique a nova biblioteca.
+
+   >
+   >   Essa operação é necessária para que o Apache aplique a nova biblioteca.
 
 
 Em seguida, reinicie o Apache:
@@ -185,7 +187,7 @@ Em seguida, reinicie o Apache:
 
 Durante a sincronização de recursos, o comando **postupgrade** permite detectar se a sincronização gerou erros ou avisos.
 
-### Visualizar o resultado da sincronização {#view-the-synchronization-result}
+### Exibir o resultado da sincronização {#view-the-synchronization-result}
 
 Há duas maneiras de visualizar o resultado da sincronização:
 
@@ -240,7 +242,7 @@ Uma falha de atualização pode estar vinculada à configuração do banco de da
 
 Por exemplo, um banco de dados unicode não deve autorizar apenas o armazenamento de dados LATIN1, etc.
 
-## Avise os consoles do cliente da atualização disponível {#warn-the-client-consoles-of-the-available-update}
+## Avisar os consoles do cliente da atualização disponível {#warn-the-client-consoles-of-the-available-update}
 
 ### Windows {#in-windows-1}
 

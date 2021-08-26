@@ -6,7 +6,7 @@ audience: migration
 content-type: reference
 topic-tags: configuration
 exl-id: 978e1249-f79b-4f5f-9a94-3bb2510785de
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '1041'
 ht-degree: 4%
@@ -15,9 +15,11 @@ ht-degree: 4%
 
 # Configurações específicas na v5.11{#specific-configurations-in-v5-11}
 
+![](../../assets/v7-only.svg)
+
 Esta seção detalha a configuração adicional necessária ao migrar da v5.11. Você também deve definir as configurações detalhadas na seção [Configurações gerais](../../migration/using/general-configurations.md).
 
-## Aplicativos web {#web-applications}
+## Aplicações web {#web-applications}
 
 O seguinte aviso será exibido automaticamente durante a migração:
 
@@ -34,7 +36,7 @@ Durante a migração, você **deve** verificar o caminho do arquivo de log espec
 
 Independentemente de o arquivo estar vazio ou não, você deve verificar se essas IDs não são usadas para configuração em outro lugar (e adaptar a configuração se esse for o caso).
 
-## Workflows {#workflows}
+## Fluxos de trabalho {#workflows}
 
 Como o nome do diretório de instalação do Adobe Campaign foi alterado, alguns workflows podem não funcionar após a migração. Se um workflow fizer referência ao diretório nl5 em uma de suas atividades, ocorrerá um erro. Substitua esta referência por **build**. Você pode executar uma consulta SQL para identificar esses workflows (exemplo PostgreSQL):
 
@@ -104,7 +106,7 @@ Três modos estão disponíveis:
 >
 >Para obter mais informações sobre esses três modos, consulte [esta seção](../../configuration/using/about-web-tracking.md).
 
-## Estrutura de árvore do Adobe Campaign v7 {#campaign-vseven-tree-structure}
+## Estrutura em árvore do Adobe Campaign v7 {#campaign-vseven-tree-structure}
 
 Durante a migração, a estrutura em árvore é automaticamente reorganizada com base nos padrões do v7. As novas pastas são adicionadas, as pastas obsoletas são excluídas e seu conteúdo é colocado na pasta &quot;Para mover&quot;. Todos os itens nessa pasta devem ser verificados após a migração e o consultor deve decidir mantê-la ou excluir cada um. Os artigos a conservar devem ser transferidos para o local certo.
 
@@ -152,7 +154,7 @@ As pastas obsoletas a serem excluídas após a migração são as seguintes:
 | ncmForm | Formulário de entrada | Gerenciador de conteúdo instalado |
 | ncmImage | Imagens | Gerenciador de conteúdo instalado |
 | ncmJavascript | Códigos JavaScript | Gerenciador de conteúdo instalado |
-| ncmJst | Templates JavaScript | Gerenciador de conteúdo instalado |
+| ncmJst | Modelos JavaScript | Gerenciador de conteúdo instalado |
 | ncmParameters | Configuração | Gerenciador de conteúdo instalado |
 | ncmSrcSchema | Esquemas de dados | Gerenciador de conteúdo instalado |
 | ncmStylesheet | Arquivos de estilo XSL | Gerenciador de conteúdo instalado |

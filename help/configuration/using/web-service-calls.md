@@ -6,7 +6,7 @@ audience: configuration
 content-type: reference
 topic-tags: api
 exl-id: ce94e7e7-b8f8-4c82-937f-e87d15e50c34
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '939'
 ht-degree: 1%
@@ -14,6 +14,8 @@ ht-degree: 1%
 ---
 
 # Chamadas de serviço da Web{#web-service-calls}
+
+![](../../assets/v7-only.svg)
 
 ## Informações gerais {#general-information}
 
@@ -196,7 +198,7 @@ ou
 
 * **por meio do logon +** senha do Adobe Campaign, que cria um token de sessão. O token de sessão expira automaticamente após um período definido. Esse modo não é recomendado e requer a redução das configurações de segurança do aplicativo para algumas configurações de zona (allowUserPassword=&quot;true&quot; e sessionTokenOnly=&quot;true&quot;).
 
-### Características do token de sessão {#session-token-characteristics}
+### Características do token da sessão {#session-token-characteristics}
 
 O token de sessão tem as seguintes características:
 
@@ -236,7 +238,7 @@ Em uma chamada SOAP:
 
 * é adicionado aos cabeçalhos de chamada
 
-### Exemplos de chamada {#call-examples}
+### Exemplos de chamadas {#call-examples}
 
 * Usando **HttpSoapConnection/SoapService**:
 

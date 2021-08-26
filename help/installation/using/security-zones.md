@@ -6,7 +6,7 @@ audience: installation
 content-type: reference
 topic-tags: additional-configurations
 exl-id: 67dda58f-97d1-4df5-9648-5f8a1453b814
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '1462'
 ht-degree: 12%
@@ -15,6 +15,8 @@ ht-degree: 12%
 
 
 # Definir zonas de segurança (no local){#defining-security-zones}
+
+![](../../assets/v7-only.svg)
 
 Cada operador precisa ser vinculado a uma zona para fazer logon em uma instância e o IP do operador deve ser incluído nos endereços ou conjuntos de endereços definidos na zona de segurança. A configuração da zona de segurança é realizada no arquivo de configuração do servidor do Adobe Campaign.
 
@@ -27,7 +29,6 @@ Os operadores são vinculados a uma zona de segurança a partir do seu perfil no
 >Como cliente **hospedado**, se você puder acessar [Painel de controle do Campaign](https://experienceleague.adobe.com/docs/control-panel/using/control-panel-home.html?lang=pt-BR), poderá usar a interface de autoatendimento da Zona de segurança. [Saiba mais](https://experienceleague.adobe.com/docs/control-panel/using/instances-settings/ip-allow-listing-instance-access.html?lang=pt-BR)
 >
 >Outros clientes **híbridos/hospedados** precisam entrar em contato com a equipe de suporte do Adobe para adicionar IP à lista de permissões.
-
 
 ## Criar zonas de segurança {#creating-security-zones}
 
@@ -130,7 +131,7 @@ No arquivo **`config-<instance>.xml`**:
       <subNetwork id="cus1" mask="a.b.c.d/xx"/>
 ```
 
-## Sub-redes e proxies em uma zona de segurança {#sub-networks-and-proxies-in-a-security-zone}
+## Subredes e proxies numa zona de segurança {#sub-networks-and-proxies-in-a-security-zone}
 
 O parâmetro **proxy** pode ser usado em um elemento **subNetwork** para especificar o uso de proxy em uma zona de segurança.
 

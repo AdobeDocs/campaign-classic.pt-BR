@@ -6,7 +6,7 @@ audience: production
 content-type: reference
 topic-tags: data-processing
 exl-id: 2c933fc5-1c0a-4c2f-9ff2-90d09a79c55a
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '1289'
 ht-degree: 2%
@@ -14,6 +14,8 @@ ht-degree: 2%
 ---
 
 # Ambientes duplicados{#duplicating-environments}
+
+![](../../assets/v7-only.svg)
 
 ## Introdução {#introduction}
 
@@ -47,7 +49,7 @@ Para fazer isso, siga as etapas abaixo:
    >Um ambiente pode conter várias instâncias. Cada instância do Adobe Campaign está sujeita a um contrato de licença. Verifique seu contrato de licença para ver quantos ambientes você pode ter.\
    >O procedimento abaixo permite transferir um ambiente sem afetar o número de ambientes e instâncias instaladas.
 
-### Antes de iniciar {#before-you-start}
+### Antes de começar {#before-you-start}
 
 >[!IMPORTANT]
 >
@@ -67,8 +69,8 @@ As etapas a seguir devem ser executadas com muito cuidado: alguns processos aind
 >
 >* O procedimento a seguir é válido na linguagem PostgreSQL. Se a linguagem SQL for diferente (Oracle, por exemplo), as consultas SQL devem ser adaptadas.
 >* Os comandos abaixo se aplicam no contexto de uma instância **prod** e uma instância **dev** em PostgreSQL.
->
 
+>
 
 
 ### Etapa 1 - Faça um backup dos dados do ambiente de origem (prod) {#step-1---make-a-backup-of-the-source-environment--prod--data}
@@ -153,7 +155,7 @@ Para restaurar os bancos de dados de origem no ambiente de destino, use o seguin
 psql mydatabase < mydatabase.sql
 ```
 
-### Etapa 5 - Cauterizar o ambiente de destino (dev) {#step-5---cauterize-the-target-environment--dev-}
+### Etapa 5 - Causar o ambiente de destino (dev) {#step-5---cauterize-the-target-environment--dev-}
 
 Para evitar defeitos, os processos vinculados ao envio de delivery e à execução de workflow não devem ser executados automaticamente quando o ambiente de destino for ativado.
 
@@ -184,7 +186,7 @@ nlserver javascript nms:freezeInstance.js -instance:<dev> -arg:run
    SELECT iStatus, count(*) FROM neolane.xtkworkflow GROUP BY iStatus;
    ```
 
-### Etapa 7 - Reiniciar o processo Web do ambiente de destino (dev) {#step-7---restart-the-target-environment-web-process--dev-}
+### Etapa 7 - Reiniciar o processo Web (dev) do ambiente de destino {#step-7---restart-the-target-environment-web-process--dev-}
 
 No ambiente de destino, reinicie os processos do Adobe Campaign para todos os servidores.
 

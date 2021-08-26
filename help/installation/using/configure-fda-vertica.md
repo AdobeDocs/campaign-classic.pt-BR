@@ -6,7 +6,7 @@ description: Saiba como configurar o acesso à Vertica no FDA
 audience: platform
 content-type: reference
 topic-tags: connectors
-source-git-commit: a7c080fe4db72f659659c7cac8f2c02031822e04
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '361'
 ht-degree: 19%
@@ -15,6 +15,8 @@ ht-degree: 19%
 
 
 # Configuração do acesso à Vertica {#configure-fda-vertica}
+
+![](../../assets/v7-only.svg)
 
 Use a opção Campaign **Federated Data Access** (FDA) para processar informações armazenadas em um banco de dados externo. Siga as etapas abaixo para configurar o acesso a [!DNL Vertica].
 
@@ -82,7 +84,7 @@ Para configurar [!DNL Vertica] no CentOS, siga as etapas abaixo:
 
 1. No Adobe Campaign, você pode configurar a conta externa [!DNL Vertica]. Para obter mais informações sobre como configurar a conta externa, consulte [esta seção](#vertica-external).
 
-## Vertical no Windows {#vertica-windows}
+## Vertica no Windows {#vertica-windows}
 
 1. Instale o [driver ODBC para Windows](https://www.vertica.com/download/vertica/client-drivers/). Para instalar o driver para Windows, você precisará habilitar o .NET Framework 3.5 ou o assistente de instalação tentará habilitá-lo e baixá-lo automaticamente.
 
@@ -90,7 +92,7 @@ Para configurar [!DNL Vertica] no CentOS, siga as etapas abaixo:
 
 1. No Adobe Campaign, você pode configurar a conta externa [!DNL Vertica]. Para obter mais informações sobre como configurar a conta externa, consulte [esta seção](#vertical-external).
 
-## Vertica no Debian {#vertica-debian}
+## Vertica em Debian {#vertica-debian}
 
 1. Baixe os drivers ODBC para o [!DNL Vertica]. [Clique aqui](https://sfc-repo.snowflakecomputing.com/odbc/linux/latest/index.html) para iniciar o download.
 

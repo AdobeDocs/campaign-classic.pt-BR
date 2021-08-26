@@ -5,14 +5,16 @@ description: Saiba como configurar a integração do Campaign-AEM
 audience: integrations
 content-type: reference
 exl-id: 54ee88b2-e646-4fb9-abec-957f0096f15f
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
-workflow-type: ht
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+workflow-type: tm+mt
 source-wordcount: '563'
 ht-degree: 100%
 
 ---
 
 # Configuração da integração{#configuring-the-integration}
+
+![](../../assets/common.svg)
 
 ## Configuração no Adobe Campaign {#configuring-in-adobe-campaign}
 
@@ -26,7 +28,7 @@ Siga as etapas abaixo para iniciar a configuração no Adobe Campaign:
 
 Para configurações avançadas como gestão de campos e blocos de personalização. Consulte a [documentação](https://helpx.adobe.com/br/experience-manager/6-5/sites/administering/using/campaignonpremise.html) do Adobe Experience Manager.
 
-### Instale o pacote de integração do AEM no Adobe Campaign.{#install-the-aem-integration-package-in-adobe-campaign}
+### Instale o pacote de integração do AEM no Adobe Campaign. {#install-the-aem-integration-package-in-adobe-campaign}
 
 Primeiro, é preciso instalar o pacote **[!UICONTROL AEM integration]**.
 
@@ -59,7 +61,7 @@ Se a sua instância do Campaign for hospedada pela Adobe, entre em contato com a
 
    Isso permitirá que o Adobe Experience Manager se conecte ao Adobe Campaign pelo login/senha.
 
-### Configuração da conta externa {#configure-the-external-account}
+### Configurar a conta externa {#configure-the-external-account}
 
 O pacote **[!UICONTROL AEM integration]** criou a conta externa para o Adobe Experience Cloud. É necessário configurá-lo agora para se conectar com a sua instância do Adobe Experience Manager.
 
@@ -86,7 +88,7 @@ Para configurar a conta externa do AEM, siga as etapas abaixo:
 1. Marque a caixa **[!UICONTROL Enabled]**.
 1. Clique no botão **[!UICONTROL Save]**.
 
-### Configuração da filtragem de recursos do AEM {#configure-aem-resources-filtering}
+### Configurar a filtragem de recursos do AEM {#configure-aem-resources-filtering}
 
 A opção **AEMResourceTypeFilter** é usada para filtrar tipos de recursos do Experience Manager que podem ser usados no Adobe Campaign. Isso permite que o Adobe Campaign recupere o conteúdo do Experience Manager especificamente projetado para ser usado somente no Adobe Campaign.
 

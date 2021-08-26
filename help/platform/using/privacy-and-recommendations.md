@@ -6,14 +6,16 @@ audience: platform
 content-type: reference
 topic-tags: starting-with-adobe-campaign
 exl-id: d2451b62-bddf-4dee-8789-35aaae8348e1
-source-git-commit: 4a41aea9edfe5e6ca0454049cbb2892449eec153
-workflow-type: ht
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+workflow-type: tm+mt
 source-wordcount: '2038'
 ht-degree: 100%
 
 ---
 
 # Privacidade e consentimento{#privacy-and-recommendations}
+
+![](../../assets/common.svg)
 
 ## Recomendações gerais {#general-recommendations}
 
@@ -70,7 +72,7 @@ O Adobe Campaign faz parte das soluções da Adobe Experience Cloud. A maneira c
 
 Para obter mais detalhes sobre a privacidade da Adobe Experience Cloud, consulte [esta página](https://www.adobe.com/br/privacy/marketing-cloud.html).
 
-## Dados pessoais e Personalidades {#personal-data}
+## Dados pessoais e Personas {#personal-data}
 
 Ao gerenciar a privacidade, é importante definir quais dados devem ser tratados com cuidado e por quem.
 * **Dados pessoais** são informações que podem identificar direta ou indiretamente um indivíduo vivo.
@@ -176,7 +178,7 @@ O Adobe Campaign permite rastrear os emails enviados e o comportamento dos recip
 
 Para fazer isso, adicione [links rastreados](../../delivery/using/how-to-configure-tracked-links.md) às suas mensagens para medir o impacto do comportamento do delivery e do recipient na guia [Rastreamento](../../delivery/using/delivery-dashboard.md#tracking-logs) do painel do delivery. Os dados de rastreamento são interpretados no relatório de [Indicadores de rastreamento](../../reporting/using/delivery-reports.md#tracking-indicators).
 
-### Acompanhamento da Web {#web-tracking}
+### Rastreamento web {#web-tracking}
 
 O Adobe Campaign também permite monitorar como os recipients navegam em seu site: insira tag de rastreamento para coletar informações e medir visitas em páginas de aplicativos da Web. Para obter mais informações, consulte [Rastreamento de um aplicativo da web](../../web/using/tracking-a-web-application.md).
 

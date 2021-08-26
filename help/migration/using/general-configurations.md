@@ -6,14 +6,16 @@ audience: migration
 content-type: reference
 topic-tags: configuration
 exl-id: 7aad0e49-8d9c-40c7-9d6a-42fee0ae5870
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
-source-wordcount: '2786'
+source-wordcount: '2784'
 ht-degree: 0%
 
 ---
 
 # Configurações gerais{#general-configurations}
+
+![](../../assets/v7-only.svg)
 
 Esta seção detalha a configuração a ser executada no Adobe Campaign v7 se você estiver migrando de uma v5.11 ou v6.02.
 
@@ -112,7 +114,7 @@ nlserver config -internalpassword
 
 * O rastreamento não funciona mais se a senha estiver vazia. Se esse for o caso, uma mensagem de erro será exibida e solicitará que você a reconfigure.
 * As senhas de usuário não são mais armazenadas no schema **xtk:sessionInfo**.
-* As permissões de administração agora são necessárias para usar as funções **xtk:builder:EvaluateJavaScript** e **xtk:builder:EvaluateJavaScriptTemplate**.
+* As permissões de administração agora são necessárias para usar as funções **xtk:builder:AvaliarJavaScript** e **xtk:builder:AvaliarJavaScriptTemplate**.
 
 Determinados esquemas prontos para uso foram modificados e agora são acessíveis por padrão somente com acesso de gravação para operadores com a permissão **admin** :
 
@@ -147,7 +149,7 @@ Determinados esquemas prontos para uso foram modificados e agora são acessívei
 * xtk:strings
 * xtk:xslt
 
-### Parâmetro do token de sessão {#sessiontoken-parameter}
+### Parâmetro de sessiontoken {#sessiontoken-parameter}
 
 Na v5, o parâmetro **sessiontoken** funcionava em ambos os lados do cliente (lista de telas do tipo visão geral, editor de link etc.) do lado do servidor (aplicativos da Web, relatórios, jsp, jssp etc.). No v7, ele só funciona no lado do servidor. Se você quiser voltar à funcionalidade completa como no v5, deverá modificar os links usando esse parâmetro e passar pela página de conexão:
 
@@ -419,7 +421,7 @@ A migração é realizada por meio de uma pós-atualização e os conflitos pode
 
 Após a sincronização de recursos, o comando **postupgrade** permite detectar se a sincronização gera erros ou avisos.
 
-### Visualizar o resultado da sincronização {#view-the-synchronization-result}
+### Exibir o resultado da sincronização {#view-the-synchronization-result}
 
 O resultado da sincronização pode ser visualizado de duas maneiras:
 
@@ -454,8 +456,7 @@ Há três maneiras possíveis de resolver um conflito:
 * **[!UICONTROL Keep the current version]**: significa que a atualização é rejeitada.
 
    >[!IMPORTANT]
-   >
-   >Se selecionar esse modo de resolução, corre o risco de perder patches na nova versão. Portanto, é altamente recomendável que essa opção não seja usada ou reservada apenas para operadores especialistas.
+   Se selecionar esse modo de resolução, corre o risco de perder patches na nova versão. Portanto, é altamente recomendável que essa opção não seja usada ou reservada apenas para operadores especialistas.
 
 Se você optar por resolver manualmente o conflito, proceda da seguinte maneira:
 
@@ -501,14 +502,12 @@ $(XTK_INSTALL_DIR)/tomcat-8/lib/el-api.jar
 No v7, o conteúdo da oferta foi movido. Na v6.02, o conteúdo estava em cada schema de representação (**nms:emailOfferView**). No v7, o conteúdo agora está no schema de ofertas. Após a pós-atualização, o conteúdo não estará visível na interface. Após a pós-atualização, é necessário recriar o conteúdo da oferta ou desenvolver um script que mova automaticamente o conteúdo do schema de representação para o schema de oferta.
 
 >[!IMPORTANT]
->
->Se alguns deliveries usando ofertas configuradas forem enviados após a migração, você deverá excluir e recriar todos esses deliveries no v7. Se não for possível fazer isso, um &quot;modo de compatibilidade&quot; será oferecido. Esse modo não é recomendado porque você não se beneficiará de todos os novos recursos no Interaction v7. Este é um modo de transição que permite concluir campanhas em andamento antes da migração real do 6.1. Para obter mais informações sobre esse modo, entre em contato conosco.
+Se alguns deliveries usando ofertas configuradas forem enviados após a migração, você deverá excluir e recriar todos esses deliveries no v7. Se não for possível fazer isso, um &quot;modo de compatibilidade&quot; será oferecido. Esse modo não é recomendado porque você não se beneficiará de todos os novos recursos no Interaction v7. Este é um modo de transição que permite concluir campanhas em andamento antes da migração real do 6.1. Para obter mais informações sobre esse modo, entre em contato conosco.
 
 Um exemplo de script de movimento (**interactionTo610_full_XX.js**) está disponível na pasta **Migration** na pasta Adobe Campaign v7. Este arquivo mostra um exemplo de script para um cliente usando uma única representação de email por oferta (os campos **[!UICONTROL htmlSource]** e **[!UICONTROL textSource]**). O conteúdo que estava na tabela **NmsEmailOfferView** foi movido para a tabela de oferta.
 
 >[!NOTE]
->
->Usar esse script não permite que você se beneficie das opções de &quot;gestão de conteúdo&quot; e &quot;funções de renderização&quot;. Para se beneficiar dessas funções, você deve repensar as ofertas de catálogo, especialmente o conteúdo da oferta e os espaços de configuração.
+Usar esse script não permite que você se beneficie das opções de &quot;gestão de conteúdo&quot; e &quot;funções de renderização&quot;. Para se beneficiar dessas funções, você deve repensar as ofertas de catálogo, especialmente o conteúdo da oferta e os espaços de configuração.
 
 ```
 loadLibrary("/nl/core/shared/nl.js");
@@ -607,8 +606,7 @@ Este é o procedimento a ser seguido após mover o conteúdo da oferta se você 
 1. Faça testes abrangentes.
 
    >[!NOTE]
-   >
-   >Os nomes das categorias e ofertas online são modificados após a ativação. No canal de entrada, atualize todas as referências para ofertas e categorias.
+   Os nomes das categorias e ofertas online são modificados após a ativação. No canal de entrada, atualize todas as referências para ofertas e categorias.
 
 ## Relatórios {#reports}
 
@@ -624,20 +622,19 @@ Todos os relatórios padrão usam atualmente o mecanismo de renderização v6.x.
 -->
 Se quiser se beneficiar das novas funcionalidades do relatório, será necessário republicar os relatórios. Para fazer isso, edite o relatório **[!UICONTROL Properties]**, clique em **[!UICONTROL Rendering]** e selecione o mecanismo de renderização v.6.x. Nesse caso, verifique todos os scripts e altere-os, se necessário. Em relação à exportação de PDF, se você adicionou um script específico para o Open Office, isso não funcionará mais com o novo mecanismo de exportação de PDF (PhantomJS).
 
-## Aplicativos web {#web-applications}
+## Aplicações web {#web-applications}
 
 Há duas famílias de aplicações web:
 
 * aplicações web identificadas (vistas em conjunto, formulários de aprovação, desenvolvimentos internos extranet),
 * Aplicações web anônimas (formulários web ou de questionário).
 
-### Aplicações Web identificadas {#identified-web-applications}
+### Aplicações web identificadas {#identified-web-applications}
 
 Assim como para os relatórios ([saiba mais](#reports)), se tiver adicionado o JavaScript, você deve verificar e adaptar se necessário. Se você quiser se beneficiar do banner azul v7 (contendo as guias azuis), será necessário republicar o aplicativo web. Se o código JavaScript estiver funcionando, é possível selecionar o mecanismo de renderização v6.x. Se esse não for o caso, você poderá usar o mecanismo de renderização v6.0 durante a adaptação do código e, em seguida, usar o mecanismo de renderização v6.x.
 
 >[!NOTE]
->
->As etapas para selecionar o mecanismo de renderização são as mesmas que para selecionar relatórios. Consulte [Relatórios personalizados](#personalized-reports).
+As etapas para selecionar o mecanismo de renderização são as mesmas que para selecionar relatórios. Consulte [Relatórios personalizados](#personalized-reports).
 
 Os métodos de conexão da aplicação web foram alterados no v7. Se você encontrar problemas de conexão em suas aplicações Web identificadas, deverá ativar temporariamente as opções **allowUserPassword** e **sessionTokenOnly** no arquivo **serverConf.xml**. Após a pós-atualização, modifique esses valores de opção:
 
@@ -670,8 +667,7 @@ sessionTokenOnly="false"
 Se encontrar algum problema, republique a aplicação Web. Se o problema persistir, você poderá selecionar o mecanismo de renderização v6.0. Se você não tiver adicionado o JavaScript, é possível selecionar o mecanismo de renderização v6.x e se beneficiar dos novos recursos.
 
 >[!NOTE]
->
->As etapas para selecionar o mecanismo de renderização são as mesmas que para selecionar relatórios. Consulte [Relatórios personalizados](#personalized-reports).
+As etapas para selecionar o mecanismo de renderização são as mesmas que para selecionar relatórios. Consulte [Relatórios personalizados](#personalized-reports).
 
 ## Red-Hat {#red-hat}
 

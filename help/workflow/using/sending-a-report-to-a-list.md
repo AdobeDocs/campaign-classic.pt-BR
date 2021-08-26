@@ -6,14 +6,16 @@ audience: workflow
 content-type: reference
 topic-tags: use-cases
 exl-id: cb24aea5-f3c7-4b17-8899-1792ea18c235
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
-workflow-type: ht
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+workflow-type: tm+mt
 source-wordcount: '623'
 ht-degree: 100%
 
 ---
 
 # Envio de um relatório a uma lista{#sending-a-report-to-a-list}
+
+![](../../assets/common.svg)
 
 Esse caso de uso detalha como gerar um relatório mensal imediato **[!UICONTROL Tracking indicators]** em formato PDF e como enviá-lo para uma lista de recipients.
 
@@ -89,7 +91,7 @@ O seguinte workflow foi criado para este caso de uso. Ele tem três atividades:
 
    ![](assets/use_case_report_9.png)
 
-   Para obter mais informações sobre a configuração do scheduler, consulte [Scheduler](../../workflow/using/scheduler.md).
+   Para obter mais informações sobre a configuração do scheduler, consulte [Scheduler](scheduler.md).
 
 1. Em seguida, adicione uma atividade tipo **[!UICONTROL JavaScript code]**.
 

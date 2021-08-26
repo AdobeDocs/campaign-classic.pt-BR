@@ -6,14 +6,16 @@ audience: delivery
 content-type: reference
 topic-tags: sending-direct-mail
 exl-id: 6474cf2e-c4db-4430-b001-18bf4911b0ea
-source-git-commit: a129f49d4f045433899fd7fdbd057fb16d0ed36a
-workflow-type: ht
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+workflow-type: tm+mt
 source-wordcount: '130'
 ht-degree: 100%
 
 ---
 
 # Sobre o canal de mala direta{#about-direct-mail-channel}
+
+![](../../assets/common.svg)
 
 O Adobe Campaign permite produzir arquivos para fazer deliveries em massa de cartas personalizadas. Os perfis de recipients devem conter pelo menos seus nomes e endereços postais.
 

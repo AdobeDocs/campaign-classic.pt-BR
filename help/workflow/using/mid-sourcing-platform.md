@@ -5,8 +5,8 @@ description: Plataforma Mid-sourcing
 audience: workflow
 content-type: reference
 topic-tags: technical-workflows
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
-workflow-type: ht
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+workflow-type: tm+mt
 source-wordcount: '52'
 ht-degree: 100%
 
@@ -14,6 +14,8 @@ ht-degree: 100%
 
 
 # Plataforma Mid-sourcing{#mid-sourcing-platform}
+
+![](../../assets/common.svg)
 
 Os workflows detalhados abaixo são instalados com o módulo da **plataforma Mid-sourcing** por padrão. Para obter mais informações sobre esse módulo, consulte esta[seção](../../installation/using/mid-sourcing-deployment.md).
 

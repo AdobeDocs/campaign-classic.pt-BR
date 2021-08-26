@@ -6,14 +6,16 @@ audience: configuration
 content-type: reference
 topic-tags: schema-reference
 exl-id: 3d0ef574-27a3-40f2-91a0-70e9583d9980
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 34404fbe935e68f3cc11d937839209443ad4ca60
 workflow-type: tm+mt
 source-wordcount: '317'
 ht-degree: 2%
 
 ---
 
-# elemento chave {#key--element}
+# elemento principal {#key--element}
+
+![](../../../assets/v7-only.svg)
 
 ## Modelo de conteúdo {#content-model-8}
 
@@ -32,7 +34,7 @@ tecla:==keyfield
 
 `<element>`
 
-## Filhos {#children-8}
+## Crianças {#children-8}
 
 `<keyfield>`
 

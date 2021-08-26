@@ -6,14 +6,16 @@ audience: workflow
 content-type: reference
 topic-tags: event-activities
 exl-id: b2a05e07-a7d7-436b-b2c6-90ab55d031cd
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
-workflow-type: ht
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+workflow-type: tm+mt
 source-wordcount: '337'
 ht-degree: 100%
 
 ---
 
 # Emails de entrada{#inbound-emails}
+
+![](../../assets/common.svg)
 
 A atividade de **emails de entrada** permite baixar e processar mensagens de email de um servidor de email POP3.
 
@@ -68,7 +70,7 @@ A primeira guia da atividade de **Emails de Entrada** permite inserir os parâme
 
    Para definir uma agenda para a atividade, clique na guia **[!UICONTROL Scheduling]** e marque **[!UICONTROL Plan execution]**. Clique no botão **[!UICONTROL Change]** para configurar o cronograma.
 
-   A configuração do cronograma é igual à atividade de agendamento. Consulte [Scheduler](../../workflow/using/scheduler.md).
+   A configuração do cronograma é igual à atividade de agendamento. Consulte [Scheduler](scheduler.md).
 
 1. **[!UICONTROL Expiration]**
 
@@ -76,4 +78,4 @@ A primeira guia da atividade de **Emails de Entrada** permite inserir os parâme
 
    ![](assets/email_rec_edit_3.png)
 
-   A configuração é igual à atividade de agendamento. Consulte [Expirações](../../workflow/using/defining-approvals.md).
+   A configuração é igual à atividade de agendamento. Consulte [Expirações](defining-approvals.md).

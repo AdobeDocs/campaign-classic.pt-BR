@@ -6,7 +6,7 @@ audience: migration
 content-type: reference
 topic-tags: migration-procedure
 exl-id: ad71dead-c0ca-42d5-baa8-0f340979231a
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '940'
 ht-degree: 2%
@@ -14,6 +14,8 @@ ht-degree: 2%
 ---
 
 # Configuração da plataforma{#configuring-your-platform}
+
+![](../../assets/v7-only.svg)
 
 Determinadas alterações importantes no Adobe Campaign v7 exigem uma configuração para garantir sua operação efetiva. Esses parâmetros podem ser necessários antes ou depois da migração. As alterações relacionadas e seu modo de configuração são apresentados nesta seção.
 
@@ -113,7 +115,7 @@ Após executar **postupgrade**, os seguintes elementos devem ser considerados e 
 
    No Red Hat, é possível encontrar erros ao editar determinados esquemas. Para obter mais informações, consulte a seção [Red-Hat](../../migration/using/general-configurations.md#red-hat) .
 
-* Workflows
+* Fluxos de trabalho
 
    Ao migrar de uma plataforma v5.11, você deve controlar o diretório de tempo de execução dos workflows. Para obter mais informações, consulte a seção [Workflows](../../migration/using/specific-configurations-in-v5-11.md#workflows) .
 
@@ -121,7 +123,7 @@ Após executar **postupgrade**, os seguintes elementos devem ser considerados e 
 
    Ao migrar de uma plataforma v5.11, você deve configurar o modo de rastreamento. Para obter mais informações, consulte a seção [Tracking](../../migration/using/specific-configurations-in-v5-11.md#tracking) .
 
-* Página inicial
+* Home page
 
    Ao migrar de uma plataforma v6.02, você pode definir parâmetros adicionais para manter sua antiga página inicial da v6.02. Para obter mais informações, consulte [Facilidade do usuário: Página inicial e seção de navegação](../../migration/using/specific-configurations-in-v6-02.md#user-friendliness--home-page-and-navigation).
 

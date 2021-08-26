@@ -6,14 +6,16 @@ audience: workflow
 content-type: reference
 topic-tags: advanced-management
 exl-id: 6c90ac2f-0d2b-48b0-9245-3e5e3a3d027c
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
-workflow-type: ht
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+workflow-type: tm+mt
 source-wordcount: '488'
 ht-degree: 100%
 
 ---
 
 # Parâmetros avançados{#advanced-parameters}
+
+![](../../assets/common.svg)
 
 A janela das propriedades de uma atividade tem uma guia **[!UICONTROL Advanced]** que permite a definição de um comportamento no caso de erros, o período de execução da atividade e a inserção de um script de inicialização. Há duas versões dessa aba:
 
@@ -33,7 +35,7 @@ Este campo contém o nome interno da atividade.
 
 ## Imagem {#image}
 
-Este campo permite alterar a imagem vinculada a uma atividade. Para obter mais informações, consulte [Gerenciamento de imagens de atividades](../../workflow/using/managing-activity-images.md).
+Este campo permite alterar a imagem vinculada a uma atividade. Para obter mais informações, consulte [Gerenciamento de imagens de atividades](managing-activity-images.md).
 
 ## Execução {#execution}
 
@@ -65,7 +67,7 @@ Este campo permite que você defina o comportamento a ser aplicado para usar tar
 
 ## Fuso horário {#time-zone}
 
-Este campo permite selecionar o fuso horário da atividade. Para obter mais informações: [Gerenciar fusos horários](../../workflow/using/managing-time-zones.md).
+Este campo permite selecionar o fuso horário da atividade. Para obter mais informações: [Gerenciar fusos horários](managing-time-zones.md).
 
 ## No caso de erros {#in-case-of-errors}
 
@@ -76,7 +78,7 @@ Este campo permite que você defina a ação a ser executada quando a atividade 
 
 ## Script de inicialização {#initialization-script}
 
-Este campo permite inicializar variáveis ou modificar propriedades da atividade. Para obter mais informações, consulte [Modelos e scripts JavaScript](../../workflow/using/javascript-scripts-and-templates.md).
+Este campo permite inicializar variáveis ou modificar propriedades da atividade. Para obter mais informações, consulte [Modelos e scripts JavaScript](javascript-scripts-and-templates.md).
 
 ## Comentário {#comment}
 

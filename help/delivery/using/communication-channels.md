@@ -6,14 +6,16 @@ audience: delivery
 content-type: reference
 topic-tags: about-deliveries-and-channels
 exl-id: 92b5e013-b619-4f0b-b0b1-1fc2e653ceac
-source-git-commit: a129f49d4f045433899fd7fdbd057fb16d0ed36a
-workflow-type: ht
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+workflow-type: tm+mt
 source-wordcount: '1204'
 ht-degree: 100%
 
 ---
 
 # Canais de comunicação{#communication-channels}
+
+![](../../assets/common.svg)
 
 Com o Adobe Campaign, você pode enviar campanhas em vários canais, incluindo emails, SMS, mensagens pelo LINE, notificações por push e correspondência direta, e medir sua eficácia usando vários [relatórios](../../reporting/using/delivery-reports.md) exclusivos. Essas mensagens são projetadas e enviadas por deliveries, além disso podem ser personalizadas para cada recipient.
 

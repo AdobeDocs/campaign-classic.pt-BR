@@ -6,7 +6,7 @@ audience: installation
 content-type: reference
 topic-tags: installing-campaign-in-linux-
 exl-id: f41c7510-5ad7-44f3-9485-01f54994b6cb
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '1206'
 ht-degree: 2%
@@ -14,6 +14,8 @@ ht-degree: 2%
 ---
 
 # Instalação de pacotes com Linux{#installing-packages-with-linux}
+
+![](../../assets/v7-only.svg)
 
 Para uma plataforma Linux de 32 bits, instale o Adobe Campaign de 32 bits. Para uma plataforma Linux de 64 bits, instale o Adobe Campaign de 64 bits.
 
@@ -283,7 +285,7 @@ Ao usar o Oracle com Adobe Campaign, é necessário configurar as camadas de cli
 
 Se encontrar um problema, verifique se os pacotes listados na [documentação de instalação do Oracle](https://www.oracle.com/pls/db112/portal.portal_db?selected=11) estão instalados corretamente.
 
-## Verificações de instalação {#installation-checks}
+## Verificações da instalação {#installation-checks}
 
 Agora você pode executar um teste de instalação inicial usando os seguintes comandos:
 

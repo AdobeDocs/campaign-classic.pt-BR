@@ -5,8 +5,8 @@ description: Esta seção descreve o workflow técnico instalado com o pacote de
 audience: workflow
 content-type: reference
 topic-tags: technical-workflows
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
-workflow-type: ht
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+workflow-type: tm+mt
 source-wordcount: '73'
 ht-degree: 100%
 
@@ -14,6 +14,8 @@ ht-degree: 100%
 
 
 # Renderização da Caixa de entrada (IR){#inbox-rendering}
+
+![](../../assets/common.svg)
 
 O fluxo de trabalho detalhado abaixo é instalado com o módulo **Renderização da Caixa de entrada** por padrão. Para mais informações sobre renderização da Caixa de entrada, consulte esta [seção](../../delivery/using/inbox-rendering.md).
 

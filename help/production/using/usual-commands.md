@@ -6,14 +6,16 @@ audience: production
 content-type: reference
 topic-tags: production-procedures
 exl-id: 472ccc04-e68e-4ccb-90e9-7d626a4e794f
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
-source-wordcount: '408'
+source-wordcount: '407'
 ht-degree: 3%
 
 ---
 
 # Comandos usuais{#usual-commands}
+
+![](../../assets/v7-only.svg)
 
 Esta seção lista os comandos comuns no Adobe Campaign.
 
@@ -27,11 +29,11 @@ O parâmetro **`<command>`** corresponde ao módulo .
 >
 >* Em qualquer caso, você pode adicionar o argumento **-noconsole** para excluir comentários exibidos quando os módulos forem iniciados.
 >* Por outro lado, é possível adicionar o argumento **-verbose** para exibir mais informações.
+
 >
 
 
-
-## Monitorar comandos {#monitoring-commands-}
+## Monitoramento de comandos {#monitoring-commands-}
 
 >[!NOTE]
 >
@@ -89,7 +91,7 @@ nlserver stop <module>@<INSTANCE>
 >
 >**`<instance>`** corresponde ao nome da instância, conforme inserido nos arquivos de configuração, ou  **** default para módulos de mono-instância.
 
-## Encerrar serviços {#shut-down-services}
+## Serviços de desligamento {#shut-down-services}
 
 Para interromper os serviços do Adobe Campaign, use um dos seguintes comandos:
 
@@ -133,7 +135,7 @@ Da mesma forma, para reiniciar o Adobe Campaign, você pode usar um dos seguinte
 
 * Caso contrário, na conta do Adobe Campaign: **nlserver watchdog -svc -noconsole**
 
-## O comando de configuração {#the-config-command}
+## O comando config {#the-config-command}
 
 O comando **config** permite gerenciar a configuração do servidor, incluindo a reconfiguração da conexão do banco de dados.
 
@@ -162,4 +164,3 @@ Para alterar a senha **interna**: **nlserver config -internalpassword**
 >* No caso de um banco de dados do Oracle, você não deve especificar a conta. A sintaxe será a seguinte:
 >
 >  nlserver config -setdblogin:Oracle:test6@dbserver
-

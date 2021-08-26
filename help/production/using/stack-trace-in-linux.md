@@ -6,7 +6,7 @@ audience: production
 content-type: reference
 topic-tags: troubleshooting
 exl-id: 91662d6d-2177-4440-b31f-7b031bd953cb
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '119'
 ht-degree: 11%
@@ -15,14 +15,16 @@ ht-degree: 11%
 
 # Rastreamento em pilha no Linux{#stack-trace-in-linux}
 
+![](../../assets/v7-only.svg)
+
 Um **rastreamento de pilha** representa um rastreamento contido em um arquivo de tipo **core**. Esse arquivo é gerado no caso de um erro de computador. Ele pode identificar a origem do erro.
 
 >[!NOTE]
 >
 >* Um arquivo **core** é nomeado **core.`<num>`**.
 >* **gdb - O** Depurador GNU deve ser instalado no computador.
->
 
+>
 
 
 O suporte técnico da Adobe Campaign pode solicitar esse **rastreamento de pilha**. Para obtê-lo, insira os seguintes comandos no Linux:

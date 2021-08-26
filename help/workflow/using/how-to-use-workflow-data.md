@@ -6,14 +6,16 @@ audience: workflow
 content-type: reference
 topic-tags: -general-operation
 exl-id: 5354d608-2fea-45f9-a0aa-11c7e965ab04
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
-workflow-type: ht
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+workflow-type: tm+mt
 source-wordcount: '408'
 ht-degree: 100%
 
 ---
 
 # Como usar os dados de workflow{#how-to-use-workflow-data}
+
+![](../../assets/common.svg)
 
 ## Atualização do banco de dados {#updating-the-database}
 
@@ -29,21 +31,21 @@ Os dados do banco de dados do Adobe Campaign e as listas existentes podem ser at
 
    ![](assets/s_user_create_list.png)
 
-   Consulte [Atualização da lista](../../workflow/using/list-update.md).
+   Consulte [Atualização da lista](list-update.md).
 
 * A atividade **[!UICONTROL Update data]** realiza uma atualização em massa dos campos no banco de dados.
 
-   Para obter mais informações, consulte [Atualização de dados](../../workflow/using/update-data.md).
+   Para obter mais informações, consulte [Atualização de dados](update-data.md).
 
 ### Gestão de assinatura/unsubscription {#subscription-unsubscription-management}
 
-Para saber mais sobre subscrição e cancelamento de subscrição de recipients de um serviço de informações via workflow, consulte [Serviços de subscrição](../../workflow/using/subscription-services.md).
+Para saber mais sobre subscrição e cancelamento de subscrição de recipients de um serviço de informações via workflow, consulte [Serviços de subscrição](subscription-services.md).
 
 ## Envio por workflow {#sending-via-a-workflow}
 
 ### Atividade de delivery {#delivery-activity}
 
-A atividade de delivery é detalhada em [Delivery](../../workflow/using/delivery.md).
+A atividade de delivery é detalhada em [Delivery](delivery.md).
 
 ### Enriquecimento e target de deliveries {#enriching-and-targeting-deliveries}
 
@@ -57,7 +59,7 @@ Além dos campos de personalização habituais, você pode adicionar campos de p
 
 ![](assets/s_advuser_using_additional_data.png)
 
-Os dados contidos na tabela de workflow são identificados pelo seu nome: ele é sempre composto pelo link **targetData** . Para obter mais informações, consulte [Dados de target](../../workflow/using/data-life-cycle.md#target-data).
+Os dados contidos na tabela de workflow são identificados pelo seu nome: ele é sempre composto pelo link **targetData** . Para obter mais informações, consulte [Dados de target](data-life-cycle.md#target-data).
 
 Dentro da estrutura de delivery de email, os campos de personalização também podem usar dados da extensão do target executada nos estágios de workflows para construção do target, conforme mostrado no exemplo abaixo:
 

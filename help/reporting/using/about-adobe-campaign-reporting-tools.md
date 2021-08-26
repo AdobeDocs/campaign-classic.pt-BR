@@ -6,14 +6,16 @@ audience: reporting
 content-type: reference
 topic-tags: reporting-in-adobe-campaign
 exl-id: 1ef30004-e1b0-4dde-8104-0ee9e8aa9d8b
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
-workflow-type: ht
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+workflow-type: tm+mt
 source-wordcount: '334'
 ht-degree: 100%
 
 ---
 
 # Introdução aos relatórios {#about-adobe-campaign-reporting-tools}
+
+![](../../assets/common.svg)
 
 Além dos [relatórios internos](../../reporting/using/about-campaign-built-in-reports.md), o Adobe Campaign permite gerar relatórios em vários contextos para atender a diferentes necessidades. Os princípios de uso e dos modos de implementação são detalhados neste documento.
 

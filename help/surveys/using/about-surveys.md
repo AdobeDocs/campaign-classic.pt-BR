@@ -6,8 +6,8 @@ audience: web
 content-type: reference
 topic-tags: online-surveys
 exl-id: 7061a4f1-006f-4f19-8761-918d8930d885
-source-git-commit: 86963746d3de3396963d221ddbd1ef7d89733d2f
-workflow-type: ht
+source-git-commit: 91dec9adb177aedc4a82879011371b54886166be
+workflow-type: tm+mt
 source-wordcount: '522'
 ht-degree: 100%
 
@@ -15,13 +15,15 @@ ht-degree: 100%
 
 # Introdução às pesquisas{#about-surveys}
 
+![](../../assets/v7-only.svg)
+
 O Adobe Campaign inclui um módulo gráfico para definir e publicar aplicativos Web. Isso é usado para criar páginas, como um formulário de edição em uma extranet ou formulários de notificação, incluindo dados do banco de dados com tabelas, gráficos, formulários de entrada etc. Use esse recurso para criar e publicar páginas da Web nas quais os usuários possam pesquisar ou inserir informações.
 
 O add-on opcional de **Pesquisa** permite desenvolver um novo tipo de aplicativo Web para criar e gerenciar questionários online, como formulários para adicionar ou modificar informações de perfil, para assinar ou cancelar a inscrição de um serviço de informação ou um formulário de entrada em competição. Depois que as respostas forem coletadas, elas serão armazenadas no banco de dados ou em variáveis locais. O modelo de dados pode ser estendido dinamicamente através das respostas dos questionários. Você pode exibir os resultados em tempo real, filtrar as respostas e analisá-las usando gráficos dedicados.
 
 Este capítulo detalha como criar e gerenciar **Pesquisas**, gerenciamento de campos e páginas, modos de armazenamento e registros.
 
-[!DNL :bulb:] Saiba como criar sua primeira pesquisa [nesta página](getting-started-with-surveys.md).
+Saiba como criar sua primeira pesquisa [nesta página](getting-started-with-surveys.md).
 
 >[!NOTE]
 >

@@ -5,14 +5,16 @@ description: Introdução à implementação dos acionadores da Adobe Experience
 audience: integrations
 content-type: reference
 exl-id: 0e337620-a49f-4e14-8c67-9279d74736f1
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
-workflow-type: ht
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+workflow-type: tm+mt
 source-wordcount: '228'
 ht-degree: 100%
 
 ---
 
 # Introdução aos acionadores da Adobe Experience Cloud{#about-adobe-experience-triggers}
+
+![](../../assets/common.svg)
 
 [!DNL Triggers] é uma integração entre o Adobe Campaign e o Adobe Analytics usando o pipeline. O pipeline recupera as ações ou acionadores dos usuários do seu site. O abandono do carrinho é um exemplo de acionador. Os acionadores são processados no Adobe Campaign para enviar emails em tempo quase real.
 

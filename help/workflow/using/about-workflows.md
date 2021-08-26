@@ -6,14 +6,16 @@ audience: workflow
 content-type: reference
 topic-tags: introduction
 exl-id: 51be6b90-2a7a-4757-9754-d16c540a87ff
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
-workflow-type: ht
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+workflow-type: tm+mt
 source-wordcount: '650'
 ht-degree: 100%
 
 ---
 
 # Introdução a workflows{#gs-workflows}
+
+![](../../assets/common.svg)
 
 ## Sobre workflows{#about-workflows}
 
@@ -27,9 +29,9 @@ Os workflows ocorrem em vários contextos e estágios do processo de gestão de 
 
 O Adobe Campaign usa workflows para:
 
-* Executar campanhas de segregação. [Saiba mais](../../workflow/using/building-a-workflow.md#implementation-steps-)
-* Desenvolva campanhas: para cada campanha, a guia **[!UICONTROL Workflow]** permite desenvolver o público-alvo e criar deliveries. [Saiba mais](../../workflow/using/building-a-workflow.md#campaign-workflows)
-* Realizar processos técnicos: limpeza, coleta de informações de rastreamento ou cálculos provisionais. [Saiba mais](../../workflow/using/building-a-workflow.md#technical-workflows)
+* Executar campanhas de segregação. [Saiba mais](building-a-workflow.md#implementation-steps-)
+* Desenvolva campanhas: para cada campanha, a guia **[!UICONTROL Workflow]** permite desenvolver o público-alvo e criar deliveries. [Saiba mais](building-a-workflow.md#campaign-workflows)
+* Realizar processos técnicos: limpeza, coleta de informações de rastreamento ou cálculos provisionais. [Saiba mais](building-a-workflow.md#technical-workflows)
 
 Um workflow pode significar uma definição de processo (o modelo de workflow, que é uma representação do que deveria acontecer) e uma instância desse processo (uma instância de workflow, que é uma representação do que realmente está acontecendo).
 
@@ -45,7 +47,7 @@ Cada workflow contém:
 
    Em um diagrama de workflow, uma determinada atividade pode produzir várias tarefas, principalmente quando houver as ações de loop ou recorrentes (periódicas).
 
-   Todas as atividades do workflow são listadas [nesta seção](../../workflow/using/about-activities.md), incluindo casos de uso e exemplos.
+   Todas as atividades do workflow são listadas [nesta seção](about-activities.md), incluindo casos de uso e exemplos.
 
 * **[!UICONTROL Transitions]**
 
@@ -57,22 +59,22 @@ Cada workflow contém:
    >
    >Um workflow que contém transições não finalizadas ainda pode ser executado: uma mensagem de aviso será gerada e o workflow será pausado quando atingir a transição, mas não gerará um erro. Dessa forma, é possível iniciar um workflow sem que ele seja concluído e adicioná-lo durante o processo.
 
-   Para obter mais informações sobre como criar um workflow, consulte [esta seção](../../workflow/using/building-a-workflow.md).
+   Para obter mais informações sobre como criar um workflow, consulte [esta seção](building-a-workflow.md).
 
 * **[!UICONTROL Worktables]**
 
    O worktable contém todas as informações transportadas pela transição. Cada workflow usa várias tabelas de trabalho. Os dados transmitidos nessas tabelas podem ser acelerados e usados no ciclo de vida do workflow, desde que não sejam apagados. De fato, tabelas desnecessárias são removidas toda vez que o workflow se torna passivo e possivelmente durante a execução dos maiores workflows para evitar sobrecarga no servidor.
 
-   Saiba mais sobre dados e tabelas de workflows [nesta seção](../../workflow/using/how-to-use-workflow-data.md).
+   Saiba mais sobre dados e tabelas de workflows [nesta seção](how-to-use-workflow-data.md).
 
 ## Princípios fundamentais e práticas recomendadas{#principles-workflows}
 
 Consulte estas seções para obter orientação e práticas recomendadas para automatizar processos com workflows:
 
-* Saiba mais sobre atividades de workflow [nesta página](../../workflow/using/how-to-use-workflow-data.md).
-* Saiba como criar um workflow [nesta seção](../../workflow/using/building-a-workflow.md).
+* Saiba mais sobre atividades de workflow [nesta página](how-to-use-workflow-data.md).
+* Saiba como criar um workflow [nesta seção](building-a-workflow.md).
 * Descubra como usar workflows para importar dados no Campaign [nesta seção](../../platform/using/import-export-workflows.md).
-* As práticas recomendadas de workflow são detalhadas [nesta página](../../workflow/using/workflow-best-practices.md).
-* Encontre orientações sobre a execução do workflow [nesta seção](../../workflow/using/starting-a-workflow.md).
-* Saiba como monitorar workflows [nesta página](../../workflow/using/monitoring-workflow-execution.md).
-* Saiba como conceder acesso aos usuários para usar workflows [nesta página](../../workflow/using/managing-rights.md).
+* As práticas recomendadas de workflow são detalhadas [nesta página](workflow-best-practices.md).
+* Encontre orientações sobre a execução do workflow [nesta seção](starting-a-workflow.md).
+* Saiba como monitorar workflows [nesta página](monitoring-workflow-execution.md).
+* Saiba como conceder acesso aos usuários para usar workflows [nesta página](managing-rights.md).

@@ -6,7 +6,7 @@ audience: configuration
 content-type: reference
 topic-tags: schema-reference
 exl-id: f45e32ce-6534-4df2-ac7c-ba1134f0ffc8
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 34404fbe935e68f3cc11d937839209443ad4ca60
 workflow-type: tm+mt
 source-wordcount: '40'
 ht-degree: 22%
@@ -14,6 +14,8 @@ ht-degree: 22%
 ---
 
 # elemento de métodos {#methods--element}
+
+![](../../../assets/v7-only.svg)
 
 ## Modelo de conteúdo {#content-model-11}
 
@@ -27,7 +29,7 @@ nenhuma
 
 `<srcschema>`
 
-## Filhos {#children-11}
+## Crianças {#children-11}
 
 método
 

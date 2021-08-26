@@ -6,14 +6,16 @@ audience: configuration
 content-type: reference
 topic-tags: editing-schemas
 exl-id: 009bed25-cd35-437c-b789-5b58a6d2d7c6
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '411'
 ht-degree: 0%
 
 ---
 
-# Filtrar esquemas{#filtering-schemas}
+# Schemas de filtro{#filtering-schemas}
+
+![](../../assets/v7-only.svg)
 
 ## Filtros do sistema {#system-filters}
 
@@ -61,7 +63,7 @@ Esses filtros são inseridos no nível principal **element** dos schemas e, como
 >
 >Se nenhum filtro for especificado, todos os operadores terão permissões de leitura e gravação no schema.
 
-## Esquemas integrados do Protect {#protecting-built-in-schemas}
+## Schemas integrados do Protect {#protecting-built-in-schemas}
 
 Por padrão, os esquemas internos só podem ser acessados com permissões de GRAVAÇÃO para operadores com direitos de ADMINISTRATION:
 

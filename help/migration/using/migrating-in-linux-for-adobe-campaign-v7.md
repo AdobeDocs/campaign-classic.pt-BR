@@ -6,7 +6,7 @@ audience: migration
 content-type: reference
 topic-tags: migrating-to-adobe-campaign-7
 exl-id: 9dc0699c-0fbf-4f8e-81f7-8ca3d7e98798
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '1890'
 ht-degree: 1%
@@ -14,6 +14,8 @@ ht-degree: 1%
 ---
 
 # Migração para o Adobe Campaign v7 no Linux{#migrating-in-linux-for-adobe-campaign-v}
+
+![](../../assets/v7-only.svg)
 
 ## Procedimento geral {#general-procedure}
 
@@ -199,7 +201,7 @@ O procedimento depende da versão anterior do Adobe Campaign.
       rprm -ev nlserver5 nlthirdparty5
       ```
 
-### Desinstalação de pacotes Adobe Campaign v6 {#uninstalling-adobe-campaign-v6-packages}
+### Desinstalação de pacotes do Adobe Campaign v6 {#uninstalling-adobe-campaign-v6-packages}
 
 Esta seção mostra como desinstalar pacotes Adobe Campaign v6.02 ou v6.1.
 

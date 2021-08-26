@@ -2,26 +2,31 @@
 product: campaign
 title: Sobre o Adobe Campaign Classic
 description: Conheça os principais recursos, a interface do usuário e as diretrizes globais.
-feature: Visão geral
+feature: Overview
 role: User
 level: Beginner
 exl-id: 8febceb0-9694-4045-a630-a7ff2fd18943
-source-git-commit: 6c28e6cd78ce7a8ee5c0dc7e671de780787b9f57
+source-git-commit: 91dec9adb177aedc4a82879011371b54886166be
 workflow-type: tm+mt
-source-wordcount: '912'
-ht-degree: 100%
+source-wordcount: '923'
+ht-degree: 95%
 
 ---
 
 # Introdução ao Campaign Classic{#about-adobe-campaign-classic}
 
+![](../../assets/v7-only.svg)
+
 Para oferecer alto grau de envolvimento e ótimas experiências, as marcas devem criar jornadas de cliente consistentes em todos os pontos de contato. Agora, os profissionais de marketing podem projetar, planejar, executar, gerenciar e otimizar campanhas de marketing em vários canais que oferecem alto retorno sobre o investimento e estimulam a fidelização dos clientes.
 
 O Adobe Campaign permite coordenar a criação de campanhas de marketing conversacional. O Adobe Campaign tem recursos inovadores para modelar, simplificar e automatizar processos de marketing e de comunicação com os clientes.
 
->[!NOTE]
+>[!AVAILABILITY]
 >
->O Adobe Campaign Classic está disponível nas versões v6.11 e v7. Exceto quando mencionado, os materiais de ajuda aplicam-se a ambas as versões na [compilação mais recente](../../rn/using/latest-release.md). As capturas de tela refletem a interface do usuário do Campaign Classic v7.
+>* Os materiais de ajuda nesta coleção se aplicam ao Campaign Classic v7 em sua [build mais recente](../../rn/using/latest-release.md). Um selo específico está disponível quando uma seção também se aplica ao Campaign v8.
+>
+>* A documentação do Adobe Campaign v8 está disponível [aqui](https://experienceleague.adobe.com/docs/campaign/campaign-v8/campaign-home.html).
+
 
 ![](assets/do-not-localize/how-to-video.png) [Descubra as principais características e recursos no vídeo](#video)
 
@@ -79,8 +84,8 @@ Os recursos abaixo estão disponíveis. A disponibilidade desses recursos depend
 * [Aplicativos da Web](../../web/using/about-web-applications.md) - crie páginas e formulários Web;
 * [Gerenciador de pesquisas](../../surveys/using/about-surveys.md) - crie pesquisas e enquetes on-line;
 * [Gerenciador de conteúdo](../../delivery/using/about-content-management.md) - gerencie o conteúdo de e-mails;
-* [Marketing distribuído](../../campaign/using/about-distributed-marketing.md) - coordene campanhas para agências centrais e locais;
-* [Gestor de resposta](../../campaign/using/about-response-manager.md) - gerencie a resposta ao cliente;
+* [Marketing distribuído](../../distributed/using/about-distributed-marketing.md) - coordene campanhas para agências centrais e locais;
+* [Gestor de resposta](../../response/using/about-response-manager.md) - gerencie a resposta ao cliente;
 * [Conectores](../../platform/using/about-connectors.md) - use conectores para se comunicar com soluções externas e mecanismos de banco de dados;
 * [Serviços da Web](../../configuration/using/about-web-services.md) - use o Campaign com APIs/Serviços da Web;
 * [Relatórios](../../reporting/using/about-adobe-campaign-reporting-tools.md) - acesse relatórios internos, analise dados e projete seus próprios relatórios.

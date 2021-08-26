@@ -6,14 +6,16 @@ audience: integrations
 content-type: reference
 topic-tags: connecting-via-an-adobe-id
 exl-id: 8dad8fa9-674c-433c-af30-8c6d0aadf525
-source-git-commit: 883ac681e0bf0e4ccf916c745924b7340a4d22f9
-workflow-type: ht
+source-git-commit: 34404fbe935e68f3cc11d937839209443ad4ca60
+workflow-type: tm+mt
 source-wordcount: '194'
 ht-degree: 100%
 
 ---
 
 # Sobre a Adobe ID{#about-adobe-id}
+
+![](../../assets/common.svg)
 
 O Sistema de gerenciamento de identidades (IMS) da Adobe ajuda os administradores a criar e gerenciar o acesso do usuário a aplicativos e serviços. Para obter mais informações sobre tipos diferentes de Adobe IDs, consulte [esta página](https://helpx.adobe.com/br/enterprise/using/identity.html).
 
@@ -30,14 +32,14 @@ Usuários do Campaign pode se conectar ao Adobe Campaign usando sua Adobe ID. Es
 >Se você estiver se conectando ao Campaign pelo Serviço de identidade da Adobe (IMS), será necessário atualizar para a compilação mais recente para poder se conectar ao Campaign depois de **30 de junho de 2021**. Essa atualização é obrigatória para o servidor do Campaign e o console do cliente. Dependendo da sua versão atual, é necessário atualizar para uma das seguintes versões:
 >
 > * [Campaign [!DNL Gold Standard] 11](../../rn/using/gold-standard.md)
-* [Campaign 21.1.3](../../rn/using/latest-release.md)
-* [Campaign 20.2.5](../../rn/using/release--20-2.md)
-* [Campaign 20.1.4](../../rn/using/release--20-1.md)
-* [Campaign 19.2.4](../../rn/using/release--19-2.md)
-* [Campaign 19.1.8](../../rn/using/release--19-1.md)
+> * [Campaign 21.1.3](../../rn/using/latest-release.md)
+> * [Campaign 20.2.5](../../rn/using/release--20-2.md)
+> * [Campaign 20.1.4](../../rn/using/release--20-1.md)
+> * [Campaign 19.2.4](../../rn/using/release--19-2.md)
+> * [Campaign 19.1.8](../../rn/using/release--19-1.md)
 
-[!DNL :bulb:] [Saiba mais sobre atualizações de IMS](../../technotes/ims-updates.md)
-
+>
+> [!DNL :bulb:] [Saiba mais sobre atualizações de IMS](../../technotes/using/ims-updates.md)
 
 ## Mais recursos
 

@@ -6,14 +6,16 @@ audience: workflow
 content-type: reference
 topic-tags: use-cases
 exl-id: 12b173e9-5068-4d45-9e1e-2aecc9866e9c
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
-workflow-type: ht
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+workflow-type: tm+mt
 source-wordcount: '612'
 ht-degree: 100%
 
 ---
 
-# Uso de agregações{#using-aggregates}
+# Utilização de agregações{#using-aggregates}
+
+![](../../assets/common.svg)
 
 Esse caso de uso detalha como identificar automaticamente os últimos recipients adicionados ao banco de dados.
 
@@ -21,7 +23,7 @@ Usando o processo a seguir, a data de criação dos recipients no banco de dados
 
 Para executar um filtro de tipo **Creation date = max (Creation date)** nos recipients, execute um workflow para seguir estas etapas:
 
-1. Colete recipients do banco de dados usando uma query básica. Para obter mais informações, consulte [Criação de query](../../workflow/using/query.md#creating-a-query).
+1. Colete recipients do banco de dados usando uma query básica. Para obter mais informações, consulte [Criação de query](query.md#creating-a-query).
 1. Calcule a última data conhecida que um recipient foi criado usando o resultado gerado pela função de agregação **max (Creation date)**.
 1. Vincule cada recipient ao resultado da função de agregação no mesmo schema.
 1. Filtre recipients usando o agregado através do esquema editado.

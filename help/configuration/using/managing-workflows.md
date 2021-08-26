@@ -6,14 +6,16 @@ audience: configuration
 content-type: reference
 topic-tags: use-a-custom-recipient-table
 exl-id: 617b0050-6b04-4c68-9f63-511baae99f41
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '134'
 ht-degree: 11%
 
 ---
 
-# Gerenciamento de fluxos de trabalho{#managing-workflows}
+# Gerenciamento de workflows{#managing-workflows}
+
+![](../../assets/v7-only.svg)
 
 Por padrão, seus novos workflows são baseados em um template de workflow que foi pré-configurado e baseado em uma tabela de recipient (nms:recipient). Para que eles sejam baseados automaticamente na tabela personalizada de recipients referenciados na opção **Nms_DefaultRcpSchema** (consulte [Configuração da interface](../../configuration/using/configuring-the-interface.md) seção), você deve criar um novo modelo de workflow.
 

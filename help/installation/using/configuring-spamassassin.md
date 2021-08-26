@@ -6,14 +6,16 @@ audience: installation
 content-type: reference
 topic-tags: additional-configurations
 exl-id: 1f1004e2-dcd2-4ec5-98ec-720c205646d5
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '985'
-ht-degree: 1%
+ht-degree: 2%
 
 ---
 
 # Configuração do SpamAssassin{#configuring-spamassassin}
+
+![](../../assets/v7-only.svg)
 
 >[!NOTE]
 >
@@ -46,7 +48,7 @@ Para instalar e configurar o SpamAssassin no Windows para habilitar a integraç�
 
 ### Instalação do SpamAssassin {#installing-spamassassin}
 
-1. Conecte-se ao [Portal de distribuição de software](https://experience.adobe.com/#/downloads/content/software-distribution/en/campaign.html) usando suas credenciais de usuário. Saiba mais sobre a Distribuição de software em [this page](https://experienceleague.adobe.com/docs/experience-cloud/software-distribution/home.html?lang=en).
+1. Conecte-se ao [Portal de distribuição de software](https://experience.adobe.com/#/downloads/content/software-distribution/en/campaign.html) usando suas credenciais de usuário. Saiba mais sobre a Distribuição de software em [this page](https://experienceleague.adobe.com/docs/experience-cloud/software-distribution/home.html?lang=pt-BR?lang=en).
 1. Baixe o arquivo **Neolane Spam Assassin (Instalação do Windows) (2.0)** (neolane_spamassassin.2.0.zip).
 1. Copie esse arquivo no servidor do Adobe Campaign e descompacte-o.
 
@@ -95,7 +97,7 @@ Para instalar e configurar o SpamAssassin no Windows para habilitar a integraç�
 
       O conteúdo desse email de teste aciona uma pontuação de 1.000 pontos pelo SpamAssassin. Isso significa que ele foi detectado como indesejável e que a instalação foi bem-sucedida e está totalmente funcional.
 
-### Integração do SpamAssassin no Adobe Campaign {#integrating-spamassassin-into-adobe-campaign}
+### Integração do SpamAssassin ao Adobe Campaign {#integrating-spamassassin-into-adobe-campaign}
 
 1. Edite o arquivo **`[INSTALL]/conf/serverConf.xml`**. Todos os parâmetros disponíveis no **serverConf.xml** são listados nesta [seção](../../installation/using/the-server-configuration-file.md).
 1. Altere o valor do atributo **spamCheck** elements&#39; **command** no nó **Web**. Para fazer isso, execute o seguinte comando:
@@ -134,7 +136,7 @@ Para instalar e configurar o SpamAssassin no Windows para habilitar a integraç�
    sa-update --no-gpg
    ```
 
-## Instalar em uma máquina Linux {#installing-on-a-linux-machine}
+## Instalação em uma máquina Linux {#installing-on-a-linux-machine}
 
 ### Etapas de instalação no Debian {#installation-steps-in-debian}
 

@@ -6,14 +6,16 @@ audience: delivery
 content-type: reference
 topic-tags: monitoring-deliveries
 exl-id: 37b1d7fb-7ceb-4647-9aac-c8a80495c5bf
-source-git-commit: a129f49d4f045433899fd7fdbd057fb16d0ed36a
-workflow-type: ht
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+workflow-type: tm+mt
 source-wordcount: '789'
 ht-degree: 100%
 
 ---
 
 # Solução de problemas de envio de entrega {#delivery-troubleshooting}
+
+![](../../assets/common.svg)
 
 Esta seção lista problemas comuns que você pode encontrar ao enviar deliveries e como solucioná-los.
 

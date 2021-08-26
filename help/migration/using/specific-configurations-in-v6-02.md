@@ -6,7 +6,7 @@ audience: migration
 content-type: reference
 topic-tags: configuration
 exl-id: 7e8f8488-f3ef-4b64-9981-335d67caf372
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '424'
 ht-degree: 3%
@@ -15,9 +15,11 @@ ht-degree: 3%
 
 # Configurações específicas na v6.02{#specific-configurations-in-v6-02}
 
+![](../../assets/v7-only.svg)
+
 A seção a seguir detalha a configuração adicional necessária ao migrar da v6.02. Você também deve definir as configurações detalhadas na seção [Configurações gerais](../../migration/using/general-configurations.md).
 
-## Aplicativos web {#web-applications}
+## Aplicações web {#web-applications}
 
 Se você estiver migrando da v6.02, os registros de erros relacionados aos aplicativos do tipo visão geral da Web poderão ser exibidos. Exemplos de mensagem de erro:
 

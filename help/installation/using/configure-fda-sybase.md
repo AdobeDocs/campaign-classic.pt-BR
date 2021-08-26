@@ -6,7 +6,7 @@ audience: platform
 content-type: reference
 topic-tags: connectors
 exl-id: 0fdf8259-5cab-4a9d-adb3-6c55ec5c8851
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '319'
 ht-degree: 73%
@@ -15,12 +15,14 @@ ht-degree: 73%
 
 # Configuração do acesso ao Sybase IQ {#configure-access-to-sybase-iq}
 
+![](../../assets/v7-only.svg)
+
 Use a opção Campaign **Federated Data Access** (FDA) para processar informações armazenadas em um banco de dados externo. Siga as etapas abaixo para configurar o acesso ao Sybase IQ.
 
 1. Configurar [banco de dados de Sybase IQ](#configuring-sybase)
 1. Configure o Sybase IQ [external account](#sybase-external) no Campaign
 
-## Configuração de sybase IQ {#configuring-sybase}
+## Configuração do sybase IQ {#configuring-sybase}
 
 A conexão com um banco de dados externo Sybase IQ no FDA exige as seguintes configurações adicionais no servidor do Adobe Campaign.
 
@@ -64,7 +66,7 @@ A conexão com um banco de dados externo Sybase IQ no FDA exige as seguintes con
    * Se você estiver usando um arquivo customer.sh para declarar seu caminho: adicione o caminho /opt/sybase/IQ-16_0/lib64 para a variável LD_LIBRARY_PATH.
    * Caso contrário, use um comando Unix.
 
-## Conta externa de sybase IQ {#sybase-external}
+## Conta externa do sybase IQ {#sybase-external}
 
 A conta externa do Sybase IQ permite conectar a instância do Campaign ao banco de dados externo do Sybase IQ.
 

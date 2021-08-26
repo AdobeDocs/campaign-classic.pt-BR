@@ -2,18 +2,20 @@
 product: campaign
 title: Gerenciar acesso às pastas do Campaign
 description: Saiba como conceder acesso às pastas do Campaign e criar visualizações
-feature: Configurações do aplicativo
+feature: Application Settings
 role: User, Admin
 level: Beginner
 exl-id: 0ba8a3d0-36d7-42f3-b281-0255e49b5fa3
-source-git-commit: 6c28e6cd78ce7a8ee5c0dc7e671de780787b9f57
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
-source-wordcount: '753'
+source-wordcount: '751'
 ht-degree: 100%
 
 ---
 
 # Gerenciar o acesso a pastas{#folder-access-management}
+
+![](../../assets/common.svg)
 
 Cada pasta da árvore de navegação do Explorer tem direitos de acesso de leitura, gravação e exclusão atribuídos a ela. Para acessar um arquivo, um operador ou grupo de operadores deve ter pelo menos acesso de leitura a ele.
 

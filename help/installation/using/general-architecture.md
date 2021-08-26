@@ -6,7 +6,7 @@ audience: installation
 content-type: reference
 topic-tags: architecture-and-hosting-models
 exl-id: 04e6dc17-427b-4745-84cc-bf45c03dbf81
-source-git-commit: 4a41aea9edfe5e6ca0454049cbb2892449eec153
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '1340'
 ht-degree: 0%
@@ -14,6 +14,8 @@ ht-degree: 0%
 ---
 
 # Arquitetura geral{#general-architecture}
+
+![](../../assets/v7-only.svg)
 
 A implantação típica da solução Adobe Campaign consiste nos seguintes componentes:
 
@@ -49,7 +51,7 @@ O aplicativo pode ser acessado de diferentes maneiras, dependendo das necessidad
 * **Cliente** fino: Algumas partes do aplicativo podem ser acessadas por um navegador da Web simples usando uma interface de usuário HTML, incluindo o módulo de relatórios, estágios de aprovação de delivery, funcionalidades do módulo Marketing Distribuído (central/local), monitoramento de instância etc. Esse modo possibilita incluir as funcionalidades do Adobe Campaign em uma intranet ou uma extranet.
 * **Integração por meio das APIs**: Em certos casos, o sistema pode ser chamado de aplicativo externo usando as APIs de serviços da Web expostas por meio do protocolo SOAP.
 
-## Camada lógica do aplicativo {#logical-application-layer}
+## Camada de aplicativo lógico {#logical-application-layer}
 
 O Adobe Campaign é uma plataforma única com diferentes aplicativos que se combinam para criar uma arquitetura aberta e escalável. A plataforma Adobe Campaign é escrita em uma camada de aplicativo flexível e pode ser facilmente configurada para atender às necessidades comerciais de uma empresa. Isso acomoda as necessidades crescentes da empresa de uma perspectiva funcional e de uma perspectiva técnica. A arquitetura distribuída garante a escalabilidade linear do sistema, de milhares de mensagens a milhões de mensagens.
 

@@ -6,14 +6,16 @@ audience: installation
 content-type: reference
 topic-tags: prerequisites-and-recommendations-
 exl-id: fc0d3f16-5f62-473d-a1de-aab574eff734
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
-source-wordcount: '325'
+source-wordcount: '324'
 ht-degree: 4%
 
 ---
 
 # Configuração do servidor da web {#web-server-configuration}
+
+![](../../assets/v7-only.svg)
 
 Abaixo você encontrará algumas das principais práticas recomendadas relacionadas à configuração do servidor da Web (Apache/IIS).
 

@@ -6,8 +6,8 @@ audience: message-center
 content-type: reference
 topic-tags: instance-configuration
 exl-id: 23a384d1-27ce-46c2-98c3-0fb60a5c50ee
-source-git-commit: e86350cf12db37e3f2c227563057b97922601729
-workflow-type: ht
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+workflow-type: tm+mt
 source-wordcount: '1222'
 ht-degree: 100%
 
@@ -15,6 +15,8 @@ ht-degree: 100%
 
 
 # Configurar instâncias {#creating-a-shared-connection}
+
+![](../../assets/v7-only.svg)
 
 Para usar os recursos de mensagens transacionais, é necessário configurar as instâncias de controle e de execução. É possível usar:
 * [Uma instância de controle](#control-instance) associada a uma ou várias instâncias de execução
@@ -117,7 +119,7 @@ O identificador também pode ser **automaticamente** atribuído. Para fazer isso
 
 ![](assets/messagecenter_create_extaccount_006bis.png)
 
-## Configurar as instâncias de execução {#execution-instance}
+## Configurar as instâncias de execução  {#execution-instance}
 
 >[!NOTE]
 >

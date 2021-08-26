@@ -6,14 +6,16 @@ audience: workflow
 content-type: reference
 topic-tags: targeting-activities
 exl-id: 4c7bc0f3-5877-47dc-bd72-dc94fb7bd479
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
-workflow-type: ht
-source-wordcount: '1295'
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+workflow-type: tm+mt
+source-wordcount: '1291'
 ht-degree: 100%
 
 ---
 
 # Enriquecimento{#enrichment}
+
+![](../../assets/common.svg)
 
 A atividade **[!UICONTROL Enrichment]** permite adicionar informações a uma lista de perfis e a vincula a uma tabela existente (criar uma nova associação). Os critérios de reconciliação com perfis no banco de dados também podem ser definidos.
 
@@ -50,15 +52,15 @@ Existem quatro tipos de vinculações:
 
 Os casos de uso que detalham o funcionamento das atividades de Enriquecimento em seu contexto também estão disponíveis nas seguintes seções:
 
-* [Enriquecimento de email com campos de data personalizados](../../workflow/using/email-enrichment-with-custom-date-fields.md).
-* [Enriquecimento de dados](../../workflow/using/enriching-data.md)
-* [Criação da lista de resumo](../../workflow/using/creating-a-summary-list.md)
+* [Enriquecimento de email com campos de data personalizados](email-enrichment-with-custom-date-fields.md).
+* [Enriquecimento de dados](enriching-data.md)
+* [Criação da lista de resumo](creating-a-summary-list.md)
 
 ## Adição de informações {#adding-information}
 
 Use a atividade **[!UICONTROL Enrichment]** para adicionar colunas a uma tabela de trabalho: essa atividade pode ser usada como um complemento para uma atividade de query.
 
-A configuração de colunas adicionais é apresentada em [Adding data](../../workflow/using/query.md#adding-data).
+A configuração de colunas adicionais é apresentada em [Adding data](query.md#adding-data).
 
 O campo **[!UICONTROL Primary set]** permite selecionar a transição de entrada: os dados da tabela de trabalho dessa atividade serão enriquecidos.
 
@@ -151,13 +153,13 @@ Se várias condições de associação forem especificadas, TODAS elas deverão 
 
 A atividade de enriquecimento permite adicionar ofertas ou links para ofertas de recipients de delivery.
 
-Para obter mais informações sobre a atividade de enriquecimento, consulte esta [seção](../../workflow/using/enrichment.md).
+Para obter mais informações sobre a atividade de enriquecimento, consulte esta [seção](enrichment.md).
 
 Por exemplo, é possível enriquecer os dados de uma query de recipient antes de um delivery.
 
 ![](assets/int_enrichment_offer1.png)
 
-Após configurar sua query (consulte esta [seção](../../workflow/using/query.md)):
+Após configurar sua query (consulte esta [seção](query.md)):
 
 1. Adicione e abra uma atividade de enriquecimento.
 1. Na guia **[!UICONTROL Enrichment]**, selecione **[!UICONTROL Add data]**.
@@ -176,13 +178,13 @@ Após configurar sua query (consulte esta [seção](../../workflow/using/query.m
 
       ![](assets/int_enrichment_offer4.png)
 
-1. Em seguida, configure uma atividade de delivery que corresponda ao canal escolhido. Consulte [Deliveries entre canais](../../workflow/using/cross-channel-deliveries.md).
+1. Em seguida, configure uma atividade de delivery que corresponda ao canal escolhido. Consulte [Deliveries entre canais](cross-channel-deliveries.md).
 
    O número de propostas disponíveis para pré-visualizar depende da configuração executada na atividade de enriquecimento, ao invés de qualquer configuração possível executada diretamente no delivery.
 
 Para especificar propostas de oferta, também é possível optar por referenciar um link para uma oferta. Para obter mais informações, consulte a seguinte seção [Referência a um link para uma oferta](#referencing-a-link-to-an-offer).
 
-## Referência a um link para uma oferta {#referencing-a-link-to-an-offer}
+## Fazendo referência a um link para uma oferta {#referencing-a-link-to-an-offer}
 
 Também é possível referenciar um link para uma oferta em uma atividade de enriquecimento.
 
@@ -198,7 +200,7 @@ Para fazer isso:
 
    ![](assets/int_enrichment_link2.png)
 
-1. Em seguida, configure uma atividade de delivery que corresponda ao canal escolhido. Consulte [Deliveries entre canais](../../workflow/using/cross-channel-deliveries.md).
+1. Em seguida, configure uma atividade de delivery que corresponda ao canal escolhido. Consulte [Deliveries entre canais](cross-channel-deliveries.md).
 
    >[!NOTE]
    >
@@ -212,7 +214,7 @@ A atividade **[!UICONTROL Offer engine]** armazena essas informações por padr�
 
 No entanto, é possível armazenar essas informações da seguinte maneira:
 
-1. Crie uma chamada para o mecanismo de oferta em uma atividade de enriquecimento feita após uma query e antes de uma atividade de delivery. Consulte esta [seção](../../interaction/using/integrating-an-offer-via-a-workflow.md#specifying-an-offer-or-a-call-to-the-offer-engine).
+1. Crie uma chamada para o mecanismo de oferta em uma atividade de enriquecimento feita após uma query e antes de uma atividade de delivery.
 1. Na janela principal da atividade, selecione **[!UICONTROL Edit additional data...]**.
 
    ![](assets/ita_enrichment_rankweight_1.png)

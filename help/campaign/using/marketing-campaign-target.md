@@ -6,14 +6,16 @@ audience: campaign
 content-type: reference
 topic-tags: orchestrate-campaigns
 exl-id: 04daa67c-4057-42a7-b993-a6eddf2b883d
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
-workflow-type: ht
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+workflow-type: tm+mt
 source-wordcount: '1485'
 ht-degree: 100%
 
 ---
 
-# Selecionar a audiência de suas campanhas {#marketing-campaign-deliveries}
+# Selecionar o público das campanhas {#marketing-campaign-deliveries}
+
+![](../../assets/common.svg)
 
 Em uma campanha de marketing, para cada delivery, é possível definir:
 
@@ -236,7 +238,7 @@ Você pode definir uma nova população a ser usada como um grupo de controle. E
 >O editor de query do Adobe Campaign é apresentado [nesta seção](../../workflow/using/query.md).
 
 
-#### Vídeo de tutorial {#create-email-video}
+#### Tutorial em vídeo {#create-email-video}
 
 Este vídeo explica como criar uma campanha e um email no Adobe Campaign.
 

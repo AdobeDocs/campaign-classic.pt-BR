@@ -6,14 +6,16 @@ audience: social
 content-type: reference
 topic-tags: publishing-on-facebook-twitter
 exl-id: e030c029-d1ee-4749-94e3-6bdfc8d89a34
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
-workflow-type: ht
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+workflow-type: tm+mt
 source-wordcount: '941'
 ht-degree: 100%
 
 ---
 
 # Publicar no Twitter{#publishing-on-twitter}
+
+![](../../assets/v7-only.svg)
 
 ## Publicar em suas contas do Twitter {#publishing-on-your-twitter-accounts}
 
@@ -26,7 +28,7 @@ As limitações a seguir são restrições inerentes ao Twitter.
 * A mensagem não pode exceder 140 caracteres.
 * O formato HTML não é aceito.
 
-### Criação de delivery {#creating-the-delivery}
+### Criação da entrega {#creating-the-delivery}
 
 Crie um novo delivery com base no template de delivery **[!UICONTROL Tweet (twitter)]**.
 
@@ -150,7 +152,7 @@ As limitações a seguir são restrições inerentes ao Twitter.
 * HTML não é aceito.
 * Não é possível enviar mais de 250 mensagens diretas por dia. Para não exceder esse limite, é possível entregar em várias ondas. Os deliveries em ondas são configurados como deliveries por email. Para obter mais informações, consulte [esta seção](../../delivery/using/steps-sending-the-delivery.md#sending-using-multiple-waves).
 
-### Criação de delivery {#creating-the-delivery-}
+### Criação da entrega {#creating-the-delivery-}
 
 Crie um novo delivery com base no template de delivery **[!UICONTROL Tweet (Direct Message)]**.
 
@@ -182,7 +184,7 @@ Selecione os seguidores para os quais deseja enviar a mensagem direta.
 
       ![](assets/social_twitter_delivery_018.png)
 
-### Seleção do target da prova{#selecting-the-target-of-the-proof-1}
+### Seleção do target da prova {#selecting-the-target-of-the-proof-1}
 
 A guia **[!UICONTROL Target of the proofs]** permite selecionar o seguidor que receberá a prova da mensagem direta. O processo de seleção é o mesmo que para o target principal. Consulte [Seleção do target principal](#selecting-the-main-target).
 

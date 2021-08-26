@@ -6,14 +6,16 @@ audience: platform
 content-type: reference
 topic-tags: starting-with-adobe-campaign
 exl-id: 20552812-5c58-4d48-9636-d5135197685d
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
-workflow-type: ht
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+workflow-type: tm+mt
 source-wordcount: '526'
 ht-degree: 100%
 
 ---
 
 # Perguntas frequentes sobre desenvolvedores {#dev-faq}
+
+![](../../assets/common.svg)
 
 Como solução aberta, o Adobe Campaign está pronto para a personalização e o desenvolvimento avançado de aplicativos.
 

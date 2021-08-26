@@ -6,7 +6,7 @@ audience: production
 content-type: reference
 topic-tags: troubleshooting
 exl-id: c2470098-62f3-4fee-b1c5-800ed0e91f75
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '320'
 ht-degree: 1%
@@ -14,6 +14,8 @@ ht-degree: 1%
 ---
 
 # Precisão do log{#log-precision}
+
+![](../../assets/v7-only.svg)
 
 Você pode aplicar esse processo a todos os módulos Adobe Campaign para aumentar a precisão do log.
 
@@ -46,8 +48,8 @@ O Adobe Campaign pode operar com dois níveis de log:
    >[!NOTE]
    >
    >Se você usar **tracefilter:***, todos os tipos de log serão ativados: ncm, rdr, nms, jst, tempo, wdbc, ldap, soap, xtk, xtkquery, sessão, xtkwriter, rede, pop3, inmail\
-   >Os tipos de log mais úteis são: **wdbc** (exibe todas as consultas SQL), **soap** (exibe todas as chamadas SOAP), **ldap** (exibe todas as consultas LDAP após a autenticação), **xtkquery** (exibe a lista de todas as querydef).\
-   >Você pode usá-los individualmente (**tracefilter:soap,wdbc** por exemplo). Você também pode ativá-los e optar por excluir alguns outros: **-tracefilter:*,!soap**
+   Os tipos de log mais úteis são: **wdbc** (exibe todas as consultas SQL), **soap** (exibe todas as chamadas SOAP), **ldap** (exibe todas as consultas LDAP após a autenticação), **xtkquery** (exibe a lista de todas as querydef).\
+   Você pode usá-los individualmente (**tracefilter:soap,wdbc** por exemplo). Você também pode ativá-los e optar por excluir alguns outros: **-tracefilter:*,!soap**
 
    Verifique se o erro realmente ocorreu e reinicie o processo da maneira normal:
 
@@ -56,8 +58,7 @@ O Adobe Campaign pode operar com dois níveis de log:
    ```
 
 >[!IMPORTANT]
->
->Os registros desses comandos são armazenados no arquivo de log do módulo.
+Os registros desses comandos são armazenados no arquivo de log do módulo.
 
 Este é um exemplo específico para o módulo da Web. Os outros módulos funcionam como indicado acima.
 
@@ -80,13 +81,11 @@ nlserver stop mta@<INSTANCE_NAME>; nlserver mta -instance:<INSTANCE_NAME> -trace
 ```
 
 >[!NOTE]
->
->O modo **Tracefile** permite salvar os logs. Nos exemplos acima, os logs são salvos nos arquivos **var/`<instance-name>`/mta_debug.log** e **var/default/web_debug.log**.
+O modo **Tracefile** permite salvar os logs. Nos exemplos acima, os logs são salvos nos arquivos **var/`<instance-name>`/mta_debug.log** e **var/default/web_debug.log**.
 
 >[!IMPORTANT]
->
->No Windows, não adicione a opção LD_PRELOAD. O seguinte comando é suficiente:\
->nlserver web -tomcat -verbose -tracefilter:*
+No Windows, não adicione a opção LD_PRELOAD. O seguinte comando é suficiente:\
+nlserver web -tomcat -verbose -tracefilter:*
 
 Verifique se o problema ocorre novamente e reinicie o módulo:
 

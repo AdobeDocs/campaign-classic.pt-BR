@@ -6,7 +6,7 @@ audience: installation
 content-type: reference
 topic-tags: additional-configurations
 exl-id: 3e55d7f5-2858-4390-bba9-8fb5be0c3d98
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '999'
 ht-degree: 1%
@@ -14,6 +14,8 @@ ht-degree: 1%
 ---
 
 # Servidor Mid-sourcing{#mid-sourcing-server}
+
+![](../../assets/v7-only.svg)
 
 Esta seção detalha a instalação e a configuração de um servidor mid-sourcing, bem como a implantação de uma instância que permite que terceiros enviem mensagens no modo **mid-sourcing**.
 
@@ -70,7 +72,7 @@ No entanto, você deve aplicar o seguinte:
    >
    >O roteamento padrão de deliveries técnicos é automaticamente substituído pelo roteamento de email via Mid-sourcing.
 
-### Instalar e configurar o servidor mid-sourcing {#installing-and-configuring-the-mid-sourcing-server}
+### Instalação e configuração do servidor mid-sourcing {#installing-and-configuring-the-mid-sourcing-server}
 
 No console do cliente, localize o **E-mail routing usando a conta mid-sourcing** mid-sourcing (na pasta **/Administration/External accounts/**). Preencha as configurações **URL de servidor**, **account**, **password** e **Mirror page URL** com as informações fornecidas pelo provedor de servidor que hospeda o servidor mid-sourcing. Teste a conexão.
 
@@ -78,7 +80,7 @@ No console do cliente, localize o **E-mail routing usando a conta mid-sourcing**
 >
 >A opção **mid-sourcingEmitter** cria dois workflows **Mid-sourcing**. É um processo que é executado por padrão a cada 1 hora e 20 minutos e coleta informações de delivery no servidor mid-sourcing.
 
-## Implantação de um servidor mid-sourcing {#deploying-a-mid-sourcing-server}
+## Implantar um servidor mid-sourcing {#deploying-a-mid-sourcing-server}
 
 1. Instalando o servidor de aplicativos:
 

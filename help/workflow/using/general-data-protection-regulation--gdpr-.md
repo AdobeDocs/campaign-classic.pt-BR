@@ -5,15 +5,17 @@ description: Saiba mais sobre os workflows do Regulamento de proteção de dados
 audience: workflow
 content-type: reference
 topic-tags: technical-workflows
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
-workflow-type: ht
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+workflow-type: tm+mt
 source-wordcount: '107'
 ht-degree: 100%
 
 ---
 
 
-# Regulamento de proteção de dados de privacidade{#general-data-protection-regulation-gdpr}
+# Regulamento de Proteção de Dados de Privacidade{#general-data-protection-regulation-gdpr}
+
+![](../../assets/common.svg)
 
 Os workflows detalhados abaixo são instalados com o módulo de **Regulamento de proteção de dados de privacidade** por padrão. Para obter mais informações sobre esse módulo, consulte esta [seção](https://helpx.adobe.com/br/campaign/kb/acc-privacy.html).
 

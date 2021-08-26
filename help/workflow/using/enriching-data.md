@@ -6,8 +6,8 @@ audience: workflow
 content-type: reference
 topic-tags: use-cases
 exl-id: ab786cf1-74a4-4185-a63d-84e776a2f776
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
-workflow-type: ht
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+workflow-type: tm+mt
 source-wordcount: '747'
 ht-degree: 100%
 
@@ -15,11 +15,13 @@ ht-degree: 100%
 
 # Enriquecimento de dados{#enriching-data}
 
+![](../../assets/common.svg)
+
 ## Sobre enriquecimento de dados {#about-enriching-data}
 
-Este caso de uso detalha possíveis usos da atividade **[!UICONTROL Enrichment]** em um fluxo de trabalho de direcionamento. Para obter mais informações sobre como usar a atividade **[!UICONTROL Enrichment]**, consulte [Enriquecimento](../../workflow/using/enrichment.md).
+Este caso de uso detalha possíveis usos da atividade **[!UICONTROL Enrichment]** em um fluxo de trabalho de direcionamento. Para obter mais informações sobre como usar a atividade **[!UICONTROL Enrichment]**, consulte [Enriquecimento](enrichment.md).
 
-Um caso de uso sobre como enriquecer um delivery de email com datas personalizadas também está disponível [nesta seção](../../workflow/using/email-enrichment-with-custom-date-fields.md).
+Um caso de uso sobre como enriquecer um delivery de email com datas personalizadas também está disponível [nesta seção](email-enrichment-with-custom-date-fields.md).
 
 Os contatos do banco de dados de marketing recebem um convite para participar de uma competição por meio de um aplicativo Web. Os resultados da competição são recuperados na tabela **[!UICONTROL Competition results]**. Esta tabela está vinculada à tabela de contatos (**[!UICONTROL Recipients]**). A tabela **[!UICONTROL Competition results]** contém os seguintes campos:
 

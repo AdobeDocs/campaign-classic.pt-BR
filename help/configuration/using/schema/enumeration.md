@@ -6,7 +6,7 @@ audience: configuration
 content-type: reference
 topic-tags: schema-reference
 exl-id: 4cd67278-2623-4508-9a9f-9007c6a5f8ac
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 34404fbe935e68f3cc11d937839209443ad4ca60
 workflow-type: tm+mt
 source-wordcount: '196'
 ht-degree: 6%
@@ -14,6 +14,8 @@ ht-degree: 6%
 ---
 
 # elemento de enumeração {#enumeration--element}
+
+![](../../../assets/v7-only.svg)
 
 ## Modelo de conteúdo {#content-model-5}
 
@@ -32,7 +34,7 @@ enumeração:==(help| value)
 
 `<srcschema>`
 
-## Filhos {#children-5}
+## Crianças {#children-5}
 
 * `<help>`
 * `<value>`

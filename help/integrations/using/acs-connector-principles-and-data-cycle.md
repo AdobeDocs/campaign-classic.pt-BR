@@ -6,14 +6,16 @@ audience: integrations
 content-type: reference
 topic-tags: acs-connector
 exl-id: 689b6117-5143-4f85-8582-2c74cae72ca2
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
-workflow-type: ht
+source-git-commit: 91dec9adb177aedc4a82879011371b54886166be
+workflow-type: tm+mt
 source-wordcount: '1988'
 ht-degree: 100%
 
 ---
 
 # Princípios do conector ACS e ciclo de dados{#acs-connector-principles-and-data-cycle}
+
+![](../../assets/v7-only.svg)
 
 ## Introdução {#introduction}
 

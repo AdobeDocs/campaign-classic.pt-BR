@@ -6,7 +6,7 @@ audience: configuration
 content-type: reference
 topic-tags: schema-reference
 exl-id: 71e98d45-3660-4d86-a5ca-8e55ae5896eb
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 34404fbe935e68f3cc11d937839209443ad4ca60
 workflow-type: tm+mt
 source-wordcount: '93'
 ht-degree: 9%
@@ -14,6 +14,8 @@ ht-degree: 9%
 ---
 
 # elemento de condição {#condition--element}
+
+![](../../../assets/v7-only.svg)
 
 ## Modelo de conteúdo {#content-model-2}
 
@@ -29,7 +31,7 @@ condição:==EMPTY
 
 `<sysfilter>`
 
-## Filhos {#children-2}
+## Crianças {#children-2}
 
 nenhuma
 

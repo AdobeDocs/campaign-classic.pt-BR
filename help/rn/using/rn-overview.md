@@ -2,18 +2,20 @@
 product: campaign
 title: Introdução às atualizações
 description: Saiba mais sobre as atualizações do Campaign Classic
-feature: Visão geral
+feature: Overview
 role: User
 level: Beginner
 exl-id: 7a05fdff-8f9d-4e8d-812e-0f1509db5499
-source-git-commit: 69f7b494c244fdf01a65ebe8d55c141d947a0980
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
-source-wordcount: '413'
+source-wordcount: '412'
 ht-degree: 100%
 
 ---
 
 # Introdução a atualizações{#rn-overview}
+
+![](../../assets/v7-only.svg)
 
 O Adobe Campaign é atualizado regularmente. Duas ou três versões secundárias são lançadas em média a cada ano, com novos recursos, melhorias e correções. Além disso, periodicamente liberamos builds apenas com correções cumulativas.
 

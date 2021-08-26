@@ -6,7 +6,7 @@ audience: installation
 content-type: reference
 topic-tags: deployment-types-
 exl-id: 4df126fa-4a6e-46a7-af6e-1e2e97f0072e
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '832'
 ht-degree: 5%
@@ -14,6 +14,8 @@ ht-degree: 5%
 ---
 
 # Implantação padrão{#standard-deployment}
+
+![](../../assets/v7-only.svg)
 
 Para esta configuração, são necessários três computadores:
 
@@ -67,7 +69,7 @@ Nos exemplos a seguir, os parâmetros da instância são:
 * Idioma: Inglês
 * Banco de dados: **campanha:demo@dbsrv**
 
-### Instalar os dois servidores frontais {#installing-the-two-frontal-servers}
+### Instalação dos dois servidores frontais {#installing-the-two-frontal-servers}
 
 O procedimento de instalação e configuração é idêntico em ambos os computadores.
 

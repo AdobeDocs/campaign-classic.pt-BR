@@ -2,18 +2,20 @@
 product: campaign
 title: Usar direitos nomeados para configurar permissões
 description: Saiba como usar direitos nomeados para configurar permissões
-feature: Gerenciamento de acesso
+feature: Access Management
 role: User, Admin
 level: Beginner
 exl-id: 07470a91-d8d2-4c41-9555-05522c8068f0
-source-git-commit: 6c28e6cd78ce7a8ee5c0dc7e671de780787b9f57
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
-source-wordcount: '505'
+source-wordcount: '503'
 ht-degree: 100%
 
 ---
 
 # Usar direitos nomeados para configurar permissões{#named-rights}
+
+![](../../assets/common.svg)
 
 Por padrão, o Adobe Campaign propõe um conjunto de direitos nomeados que permitem definir as autorizações atribuídas aos operadores e grupos de operadores. Esses direitos podem ser editados no nó **[!UICONTROL Administration > Access management > Named rights]** da árvore.
 

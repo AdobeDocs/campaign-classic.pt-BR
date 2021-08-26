@@ -5,14 +5,16 @@ audience: delivery
 content-type: reference
 topic-tags: deliveries-best-practices
 exl-id: 50d326b0-3c23-4dbf-9df6-d32b48e30f69
-source-git-commit: a129f49d4f045433899fd7fdbd057fb16d0ed36a
-workflow-type: ht
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+workflow-type: tm+mt
 source-wordcount: '861'
 ht-degree: 100%
 
 ---
 
 # Executar todas as verificações antes de enviar {#perform-all-checks}
+
+![](../../assets/common.svg)
 
 Quando a mensagem estiver pronta, certifique-se de que seu conteúdo está sendo exibido corretamente, em todos os dispositivos, e de que não contém erros, como personalização incorreta ou links quebrados.
 
@@ -90,7 +92,7 @@ Você pode:
 
 * Informar os endereços IP que podem ser usados em cada elemento IPAffinity. [Saiba mais](../../installation/using/email-deliverability.md#list-of-ip-addresses-to-use)
 
-* Na [tipologia](../../campaign/using/about-campaign-typologies.md) de sua escolha, use o campo **[!UICONTROL Managing affinities with IP addresses]** para vincular deliveries ao servidor do delivery (MTA) que gerencia essa afinidade. [Saiba mais](../../campaign/using/applying-rules.md#control-outgoing-smtp-traffic).
+* Na [tipologia](../../campaign-opt/using/about-campaign-typologies.md) de sua escolha, use o campo **[!UICONTROL Managing affinities with IP addresses]** para vincular deliveries ao servidor do delivery (MTA) que gerencia essa afinidade. [Saiba mais](../../campaign-opt/using/applying-rules.md#control-outgoing-smtp-traffic).
 
 * Depois que o email for enviado, verifique o cabeçalho para saber a partir de qual endereço IP o delivery foi enviado. O administrador de email deve ajudar você a obter as informações do cabeçalho.
 
@@ -100,7 +102,7 @@ Você pode:
 
 ### Usar tipologias
 
-Você pode usar as regras de tipologia para excluir parte do público-alvo com base em critérios específicos. Isso garante que as mensagens enviadas atendam melhor às necessidades e expectativas dos clientes, de acordo com as políticas de comunicação da empresa. Por exemplo, você pode filtrar os recipients menores de idade do público-alvo do seu informativo. Saiba mais [neste exemplo](../../campaign/using/filtering-rules.md).
+Você pode usar as regras de tipologia para excluir parte do público-alvo com base em critérios específicos. Isso garante que as mensagens enviadas atendam melhor às necessidades e expectativas dos clientes, de acordo com as políticas de comunicação da empresa. Por exemplo, você pode filtrar os recipients menores de idade do público-alvo do seu informativo. Saiba mais [neste exemplo](../../campaign-opt/using/filtering-rules.md).
 
 ### Evitar anexos
 

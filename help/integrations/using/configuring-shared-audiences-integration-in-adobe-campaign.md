@@ -6,14 +6,16 @@ audience: integrations
 content-type: reference
 topic-tags: audience-sharing
 exl-id: a3e26cff-9609-4d91-8976-9213a30c3fd2
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
-workflow-type: ht
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+workflow-type: tm+mt
 source-wordcount: '482'
 ht-degree: 100%
 
 ---
 
 # Configuração da integração de públicos compartilhados no Adobe Campaign{#configuring-shared-audiences-integration-in-adobe-campaign}
+
+![](../../assets/common.svg)
 
 Depois do envio dessa solicitação, a Adobe continuará a provisionar a integração e irá entrar em contato para fornecer detalhes e informações para você finalizar a configuração:
 
@@ -65,7 +67,7 @@ Para saber mais sobre a região do AWS, consulte esta [página](https://aws.amaz
 
 Suas contas externas estão configuradas.
 
-## Etapa 2: configurar a Fonte de Dados {#step-2--configure-the-data-source}
+## Etapa 2: configurar a Fonte de dados {#step-2--configure-the-data-source}
 
 A **ID do Visitante – Recipient** é criada no Audience Manager. Esta é uma fonte de dados pronta para uso configurada por padrão para a ID do Visitante. Os segmentos criados a partir do Campaign farão parte dessa fonte de dados.
 

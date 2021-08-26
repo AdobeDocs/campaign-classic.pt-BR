@@ -6,16 +6,18 @@ audience: workflow
 content-type: reference
 topic-tags: -general-operation
 exl-id: d345ba62-c2fb-43df-a2a1-e9e4292d301a
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
-workflow-type: ht
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+workflow-type: tm+mt
 source-wordcount: '772'
 ht-degree: 100%
 
 ---
 
-# Iniciar um workflow  {#starting-a-workflow}
+# Iniciar um workflow {#starting-a-workflow}
 
-Um workflow é sempre iniciado manualmente. Ao ser iniciado, ele pode permanecer inativo dependendo das informações especificadas por meio de um scheduler (consulte [Scheduler](../../workflow/using/scheduler.md)) ou de um agendamento de atividade. 
+![](../../assets/common.svg)
+
+Um workflow é sempre iniciado manualmente. Ao ser iniciado, ele pode permanecer inativo dependendo das informações especificadas por meio de um scheduler (consulte [Scheduler](scheduler.md)) ou de um agendamento de atividade. 
 
 As ações relacionadas à execução do workflow para construção do target (iniciar, parar, pausar etc.) são processos **assíncronos**: a ordem é registrada e entrará em vigor assim que o servidor estiver disponível para aplicá-lo.
 
@@ -25,7 +27,7 @@ A lista de opções disponíveis no menu **[!UICONTROL Actions]** e no menu de c
 
 >[!IMPORTANT]
 >
->Saiba que, quando um operador executa uma ação em um workflow (iniciar, parar, pausar, etc.), a ação não é imediatamente executada, mas colocada em uma fila para ser processada pelo [módulo de workflow](../../workflow/using/architecture.md).
+>Saiba que, quando um operador executa uma ação em um workflow (iniciar, parar, pausar, etc.), a ação não é imediatamente executada, mas colocada em uma fila para ser processada pelo [módulo de workflow](architecture.md).
 
 ## Barra de ferramentas Ações {#actions-toolbar}
 
@@ -57,7 +59,7 @@ Os botões da barra de ferramentas são detalhados nesta [seção](../../campaig
 
 * **[!UICONTROL Purge history]**
 
-   Essa ação permite limpar o histórico do workflow. Para obter mais informações, consulte [Limpeza de logs](../../workflow/using/monitoring-workflow-execution.md#purging-the-logs).
+   Essa ação permite limpar o histórico do workflow. Para obter mais informações, consulte [Limpeza de logs](monitoring-workflow-execution.md#purging-the-logs).
 
 * **[!UICONTROL Start in simulation mode]**
 
@@ -91,7 +93,7 @@ As seguintes opções estão disponíveis no menu de contexto:
 
 **[!UICONTROL Open]**: esta opção permite acessar as propriedades da atividade.
 
-**[!UICONTROL Display logs:]** essa opção permite exibir o log de execução da tarefa para a atividade selecionada. Consulte [Exibir logs](../../workflow/using/monitoring-workflow-execution.md#displaying-logs).
+**[!UICONTROL Display logs:]** essa opção permite exibir o log de execução da tarefa para a atividade selecionada. Consulte [Exibir logs](monitoring-workflow-execution.md#displaying-logs).
 
 **[!UICONTROL Execute pending task(s) now:]** essa ação permite iniciar tarefas pendentes assim que possível.
 
@@ -101,7 +103,7 @@ As seguintes opções estão disponíveis no menu de contexto:
 
 **[!UICONTROL Copy as bitmap:]** essa opção permite capturar a tela de todas as atividades.
 
-**[!UICONTROL Normal execution / Enable but do not execute / Do not enable:]** essas opções também estão disponíveis na guia **[!UICONTROL Advanced]** das propriedades da atividade. Maiores detalhes em [Execution](../../workflow/using/advanced-parameters.md#execution).
+**[!UICONTROL Normal execution / Enable but do not execute / Do not enable:]** essas opções também estão disponíveis na guia **[!UICONTROL Advanced]** das propriedades da atividade. Maiores detalhes em [Execution](advanced-parameters.md#execution).
 
 **[!UICONTROL Save / Cancel:]** permite salvar ou cancelar as alterações feitas em um fluxo de trabalho.
 

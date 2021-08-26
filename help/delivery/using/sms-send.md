@@ -6,14 +6,16 @@ audience: delivery
 content-type: reference
 topic-tags: sending-messages-on-mobiles
 exl-id: 442672ee-5037-49b7-a06f-3a99920ce2b6
-source-git-commit: a129f49d4f045433899fd7fdbd057fb16d0ed36a
-workflow-type: ht
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+workflow-type: tm+mt
 source-wordcount: '958'
 ht-degree: 100%
 
 ---
 
 # Enviar, monitorar e rastrear entregas de SMS{#sms-properties}
+
+![](../../assets/common.svg)
 
 ## Enviar mensagens SMS {#sending-sms-messages}
 
@@ -167,4 +169,4 @@ O nome do remetente desse tipo de mensagem é um código curto geralmente usado 
 >
 >Esses tipos de mensagens automáticas não mantêm um histórico. Portanto, não aparecem no painel de delivery. [Saiba mais](delivery-dashboard.md).
 >
->Essas mensagens não são consideradas nas regras de pressão comercial. [Saiba mais](../../campaign/using/pressure-rules.md).
+>Essas mensagens não são consideradas nas regras de pressão comercial. [Saiba mais](../../campaign-opt/using/pressure-rules.md).

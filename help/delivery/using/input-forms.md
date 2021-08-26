@@ -6,14 +6,16 @@ audience: delivery
 content-type: reference
 topic-tags: content-management
 exl-id: 8ec52c96-44a2-4544-93b6-9ba251510682
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
-workflow-type: ht
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+workflow-type: tm+mt
 source-wordcount: '818'
 ht-degree: 100%
 
 ---
 
 # Formulários de entrada{#input-forms}
+
+![](../../assets/common.svg)
 
 Abaixo estão alguns princípios gerais sobre o uso de formulários de entrada no Adobe Campaign.
 

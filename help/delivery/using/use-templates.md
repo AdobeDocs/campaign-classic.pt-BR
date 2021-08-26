@@ -5,14 +5,16 @@ audience: delivery
 content-type: reference
 topic-tags: deliveries-best-practices
 exl-id: a5da3f29-5eab-428c-b7c3-d9e4243fe628
-source-git-commit: a129f49d4f045433899fd7fdbd057fb16d0ed36a
-workflow-type: ht
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+workflow-type: tm+mt
 source-wordcount: '577'
 ht-degree: 100%
 
 ---
 
 # Usar modelos {#use-templates}
+
+![](../../assets/common.svg)
 
 Os templates do delivery oferecem mais eficiência ao fornecer cenários prontos para os tipos mais comuns de atividades. Com modelos, os profissionais de marketing podem implantar novas campanhas com personalização mínima em um período de tempo menor.
 
@@ -66,4 +68,4 @@ Na guia **[!UICONTROL Typology]** das propriedades do template, altere a tipolog
 
 Por exemplo, para controlar melhor o tráfego de saída, você pode definir quais endereços IP podem ser usados, estabelecendo uma afinidade por subdomínio e criando uma tipologia por afinidade. As afinidades são definidas no arquivo de configuração da instância. Entre em contato com o administrador do Adobe Campaign.
 
-Para obter mais informações sobre tipologias, consulte [esta seção](../../campaign/using/about-campaign-typologies.md).
+Para obter mais informações sobre tipologias, consulte [esta seção](../../campaign-opt/using/about-campaign-typologies.md).

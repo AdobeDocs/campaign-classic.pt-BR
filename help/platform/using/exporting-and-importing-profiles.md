@@ -6,14 +6,16 @@ audience: platform
 content-type: reference
 topic-tags: profile-management
 exl-id: fd0f7b6e-84e1-442d-ae88-817fb6758d64
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
-workflow-type: ht
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+workflow-type: tm+mt
 source-wordcount: '145'
 ht-degree: 100%
 
 ---
 
 # Importar e exportar perfis{#exporting-and-importing-profiles}
+
+![](../../assets/common.svg)
 
 Você pode [usar workflows](#use-workflows) para importar ou exportar perfis de recipient para o banco de dados do Adobe Campaign, ou configurar [importações genéricas bem como exportar trabalhos](#create-jobs).
 
@@ -32,7 +34,7 @@ Para configurar e executar tarefas de importação e exportação de dados, vá 
 ![](assets/s_ncs_user_interface_import_link.png)
 
 
-## Vídeo tutorial {#import-profiles-video}
+## Tutorial em vídeo {#import-profiles-video}
 
 Este vídeo explica como importar perfis no Adobe Campaign para uma importação ocasional.
 

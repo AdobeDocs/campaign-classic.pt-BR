@@ -6,14 +6,16 @@ audience: workflow
 content-type: reference
 topic-tags: advanced-management
 exl-id: c7bff902-4f5d-4783-aec4-13561fa7d242
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
-workflow-type: ht
-source-wordcount: '547'
-ht-degree: 100%
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+workflow-type: tm+mt
+source-wordcount: '551'
+ht-degree: 98%
 
 ---
 
-# Propriedades do workflow{#workflow-properties}
+# Propriedades do fluxo de trabalho{#workflow-properties}
+
+![](../../assets/common.svg)
 
 ## Guia Execution {#execution-tab}
 
@@ -39,7 +41,7 @@ Esta seção só é exibida nos workflows da campanha.
 
    Se a sua instalação incluir vários servidores de workflow, utilize este campo para escolher a máquina em que o workflow será executado. Se o valor definido nesse campo não existir em nenhum servidor, o workflow permanecerá pendente.
 
-   Consulte esta [seção](../../installation/using/configuring-campaign-server.md#high-availability-workflows-and-affinities).
+   Consulte este [guia de instalação do Campaign Classic v7](../../installation/using/configuring-campaign-server.md#high-availability-workflows-and-affinities).
 
 * **[!UICONTROL History in days]**
 

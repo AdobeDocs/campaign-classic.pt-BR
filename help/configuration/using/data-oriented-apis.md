@@ -6,7 +6,7 @@ audience: configuration
 content-type: reference
 topic-tags: api
 exl-id: a392c55e-541a-40b1-a910-4a6dc79abd2d
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '1881'
 ht-degree: 0%
@@ -15,9 +15,11 @@ ht-degree: 0%
 
 # APIs orientadas por dados{#data-oriented-apis}
 
+![](../../assets/v7-only.svg)
+
 As APIs orientadas a dados permitem abordar todo o modelo de dados.
 
-## Visão geral do datamodel {#overview-of-the-datamodel}
+## Visão geral do modelo de dados {#overview-of-the-datamodel}
 
 A Adobe Campaign não oferece uma API de leitura dedicada por entidade (sem função getRecipient ou getDelivery etc.). Use os métodos de leitura e modificação de dados de QUERY &amp; WRITER para acessar os dados do modelo.
 
@@ -142,7 +144,7 @@ O tipo de operação desejado é inserido no atributo **operation** e contém um
 
 A sintaxe **XPath** é usada para localizar dados com base no schema de entrada. Para obter mais informações sobre XPletters, consulte [Data schemas](../../configuration/using/data-schemas.md).
 
-#### Exemplo com a operação &#39;get&#39; {#example-with-the--get--operation}
+#### Exemplo com a operação &quot;get&quot; {#example-with-the--get--operation}
 
 Recupera o sobrenome e o nome de um recipient (schema &quot;nms:recipient&quot;) com um filtro no email.
 
@@ -204,7 +206,7 @@ Para recuperar os próximos 100 registros, execute a mesma consulta novamente, a
 ...
 ```
 
-#### Exemplo com a operação &#39;count&#39; {#example-with-the--count--operation}
+#### Exemplo com a operação &quot;count&quot; {#example-with-the--count--operation}
 
 Para contar o número de registros em um query:
 
@@ -257,7 +259,7 @@ A consulta pode ser simplificada adicionando o atributo **groupBy** diretamente 
 >
 >Não é mais necessário preencher o elemento `<groupby>`.
 
-#### Compartilhamento em condições {#bracketing-in-conditions}
+#### Compactação em condições {#bracketing-in-conditions}
 
 Aqui estão dois exemplos de colchetes na mesma condição.
 
@@ -297,7 +299,7 @@ Aqui estão dois exemplos de colchetes na mesma condição.
 
 Essa sintaxe simplifica o query quando mais de dois dados são usados na condição.
 
-#### Exemplos em links {#examples-on-links}
+#### Exemplos de links {#examples-on-links}
 
 * Links 1-1 ou N1: quando a tabela tem a chave externa (o link começa na tabela), os campos da tabela vinculada podem ser filtrados ou recuperados diretamente.
 
@@ -547,7 +549,7 @@ A chave de reconciliação pode, portanto, ser forçada com o atributo **_key** 
 * **excluir**: exclui os registros,
 * **nenhum**: usado somente para reconciliação de link, sem atualização ou inserção.
 
-### Exemplo com o método &#39;Write&#39; {#example-with-the--write--method}
+### Exemplo com o método &quot;Write&quot; {#example-with-the--write--method}
 
 Atualização ou inserção de um recipient (operação implícita &quot;insertOrUpdate&quot;) com endereço de email, data de nascimento e cidade:
 

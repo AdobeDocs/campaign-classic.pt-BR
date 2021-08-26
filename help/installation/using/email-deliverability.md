@@ -6,7 +6,7 @@ audience: installation
 content-type: reference
 topic-tags: additional-configurations
 exl-id: 515adad2-6129-450a-bb9e-fc80127835af
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '3022'
 ht-degree: 20%
@@ -14,6 +14,8 @@ ht-degree: 20%
 ---
 
 # Configurações técnicas de email{#email-deliverability}
+
+![](../../assets/v7-only.svg)
 
 ## Visão geral {#overview}
 
@@ -40,7 +42,7 @@ A saída da mensagem precisa ser controlada para cada endereço IP usado pelos s
 * O servidor de estatísticas (**stat**) está vinculado a uma base do Adobe Campaign para carregar sua configuração.
 * Os servidores de delivery (**mta**) usam um UDP para contatar um servidor de estatísticas que nem sempre pertence à sua própria instância.
 
-### Servidores de entrega {#delivery-servers}
+### Servidores de delivery {#delivery-servers}
 
 O módulo **mta** distribui mensagens para seus módulos filho **mtachild**. Cada **mtachild** prepara mensagens antes de solicitar uma autorização do servidor de estatísticas e enviá-las.
 
@@ -67,7 +69,7 @@ Ao mesmo tempo, o módulo carrega uma lista de limitações para determinados se
 * Número máximo de mensagens por hora,
 * Número máximo de mensagens por conexão.
 
-### Gerenciar endereços IP {#managing-ip-addresses}
+### Gerenciamento de endereços IP {#managing-ip-addresses}
 
 O servidor de estatísticas pode combinar várias instâncias ou várias máquinas com o mesmo endereço IP público. Portanto, não está vinculado a uma instância específica, mas precisa entrar em contato com uma instância para recuperar limitações por domínio.
 
@@ -229,7 +231,7 @@ Para recarregar a configuração sem reiniciar o servidor de estatísticas, use 
 >
 >Esta linha de comando é preferível a **nlserver restart**. Ela evita que as estatísticas coletadas antes da reinicialização sejam perdidas e evita picos de uso, o que pode ir contra as cotas definidas nas regras MX.
 
-### Configurar regras MX {#configuring-mx-rules}
+### Configuração de regras MX {#configuring-mx-rules}
 
 O documento **[!UICONTROL MX management]** lista todos os domínios que estão vinculados a uma regra MX.
 
@@ -306,7 +308,7 @@ Exemplo de configuração:
 >
 >Para obter mais informações sobre como usar servidores MX com Adobe Campaign, consulte [esta seção](../../installation/using/using-mx-servers.md).
 
-### Gerenciamento de formatos de email {#managing-email-formats}
+### Gestão de formatos de email {#managing-email-formats}
 
 Você pode definir o formato das mensagens enviadas, de modo que o conteúdo exibido se adapte automaticamente de acordo com o domínio do endereço de cada recipient.
 
@@ -361,7 +363,7 @@ Para usar o servidor de estatísticas na mesma máquina, você deve inserir pelo
 >
 >Se esse campo não estiver preenchido, o **mta** não será iniciado.
 
-### Lista de endereços IP para usar {#list-of-ip-addresses-to-use}
+### Lista de endereços IP a serem usados {#list-of-ip-addresses-to-use}
 
 A configuração relativa ao gerenciamento de tráfego está localizada no elemento **mta/child/smtp** do arquivo de configuração.
 
@@ -408,7 +410,7 @@ Se, por exemplo, o primeiro endereço não puder ser usado em um determinado MX,
 
    ![](assets/s_ncs_install_mta_ips.png)
 
-## Otimização de envio de email {#email-sending-optimization}
+## Otimização do envio de email {#email-sending-optimization}
 
 A arquitetura interna do Adobe Campaign **mta** tem impacto na configuração para otimizar a entrega de email. Estas são algumas dicas para melhorar seus deliveries.
 

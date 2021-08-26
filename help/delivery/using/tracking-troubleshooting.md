@@ -6,14 +6,16 @@ audience: delivery
 content-type: reference
 topic-tags: tracking-messages
 exl-id: 62e67a39-1e5c-4716-a3f3-b0ca69693cd0
-source-git-commit: 4a41aea9edfe5e6ca0454049cbb2892449eec153
-workflow-type: ht
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+workflow-type: tm+mt
 source-wordcount: '759'
 ht-degree: 100%
 
 ---
 
-# Solução de problemas de rastreamento {#tracking-troubleshooting}
+# Solução de problemas do rastreamento {#tracking-troubleshooting}
+
+![](../../assets/common.svg)
 
 Nesta seção, você encontrará perguntas comuns relacionadas à configuração e à implementação do rastreamento no Adobe Campaign Classic.
 

@@ -6,7 +6,7 @@ audience: configuration
 content-type: reference
 topic-tags: schema-reference
 exl-id: bad7fb4b-43d9-4033-ae0d-cf191d89114b
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 34404fbe935e68f3cc11d937839209443ad4ca60
 workflow-type: tm+mt
 source-wordcount: '147'
 ht-degree: 5%
@@ -14,6 +14,8 @@ ht-degree: 5%
 ---
 
 # elemento de valor {#value--element}
+
+![](../../../assets/v7-only.svg)
 
 ## Modelo de conteúdo {#content-model-16}
 
@@ -33,7 +35,7 @@ valor:==help
 
 `<enumeration>`
 
-## Filhos {#children-16}
+## Crianças {#children-16}
 
 `<help>`
 
@@ -49,7 +51,7 @@ Esse elemento permite definir os valores armazenados em uma enumeração.
 * **img (string)**: imagem vinculada à enumeração no formulário &quot;namespace:image_name&quot;. A imagem deve ser importada para o servidor de aplicativos.
 * **label (string)**: do valor de enumeração.
 * **name (sequência de caracteres)**: nome interno do valor de enumeração.
-* **valor (string)**: valor do valor de enumeração. O tipo de valor é definido com base no tipo de enumeração. Se a enumeração for do tipo string de caracteres, ela só poderá conter valores do tipo string de caracteres.
+* **valor (string)**: valor do valor de enumeração. O tipo de valor é definido com base no tipo de enumeração. Se a enumeração for do tipo de string de caracteres, ela só poderá conter valores do tipo string de caracteres.
 
 ## Exemplos {#examples-13}
 

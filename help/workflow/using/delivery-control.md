@@ -6,22 +6,24 @@ audience: workflow
 content-type: reference
 topic-tags: action-activities
 exl-id: c7cface2-0837-4e6a-91dc-b8353010a7a4
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
-workflow-type: ht
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+workflow-type: tm+mt
 source-wordcount: '164'
 ht-degree: 100%
 
 ---
 
-# Controle de delivery{#delivery-control}
+# Controle de entrega{#delivery-control}
+
+![](../../assets/common.svg)
 
 Uma ação do tipo **Controle de delivery** permite iniciar, pausar ou parar um delivery.
 
-Isso pode ser o delivery especificado na transição, um delivery selecionado explicitamente ou um delivery calculado por um script. Para obter mais informações, consulte [Delivery](../../workflow/using/delivery.md).
+Isso pode ser o delivery especificado na transição, um delivery selecionado explicitamente ou um delivery calculado por um script. Para obter mais informações, consulte [Delivery](delivery.md).
 
 ![](assets/edit_diffusion_act.png)
 
-Se você selecionar **[!UICONTROL Start]**, a atividade executará todas as etapas necessárias para iniciar o delivery (cálculo de direcionamento, preparação de conteúdo, delivery). Se algumas dessas etapas já foram executadas por uma atividade anterior do workflow, elas não serão executadas novamente. Por exemplo, se a estimativa de direcionamento já foi executada por uma atividade do tipo **[!UICONTROL Delivery]** (consulte [Delivery](../../workflow/using/delivery.md)), a atividade **[!UICONTROL Act on the delivery]** iniciará as etapas restantes (preparação de conteúdo e delivery).
+Se você selecionar **[!UICONTROL Start]**, a atividade executará todas as etapas necessárias para iniciar o delivery (cálculo de direcionamento, preparação de conteúdo, delivery). Se algumas dessas etapas já foram executadas por uma atividade anterior do workflow, elas não serão executadas novamente. Por exemplo, se a estimativa de direcionamento já foi executada por uma atividade do tipo **[!UICONTROL Delivery]** (consulte [Delivery](delivery.md)), a atividade **[!UICONTROL Act on the delivery]** iniciará as etapas restantes (preparação de conteúdo e delivery).
 
 As seguintes opções estão disponíveis:
 
@@ -31,7 +33,7 @@ As seguintes opções estão disponíveis:
 
 * **[!UICONTROL Processing errors]**
 
-   Consulte [Processamento de erros](../../workflow/using/monitoring-workflow-execution.md#processing-errors).
+   Consulte [Processamento de erros](monitoring-workflow-execution.md#processing-errors).
 
 ## Parâmetros de entrada {#input-parameters}
 

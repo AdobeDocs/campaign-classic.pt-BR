@@ -6,14 +6,16 @@ audience: interaction
 content-type: reference
 topic-tags: managing-environments
 exl-id: 399e9468-bf70-425d-af0b-72c29636b513
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
-workflow-type: ht
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+workflow-type: tm+mt
 source-wordcount: '112'
 ht-degree: 100%
 
 ---
 
 # Criação de filtros predefinidos{#creating-predefined-filters}
+
+![](../../assets/v7-only.svg)
 
 Filtros predefinidos permitem criar regras de qualificação para a população de destino que podem ser facilmente reutilizados durante a criação da oferta. Eles são específicos para cada ambiente e consideram os parâmetros de oferta.
 

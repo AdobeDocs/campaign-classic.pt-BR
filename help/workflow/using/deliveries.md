@@ -5,8 +5,8 @@ description: Saiba mais sobre os workflows de delivery padrão
 audience: workflow
 content-type: reference
 topic-tags: technical-workflows
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
-workflow-type: ht
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+workflow-type: tm+mt
 source-wordcount: '438'
 ht-degree: 100%
 
@@ -14,6 +14,8 @@ ht-degree: 100%
 
 
 # Entregas{#deliveries}
+
+![](../../assets/common.svg)
 
 Os fluxos de trabalho detalhados abaixo são instalados com o módulo **Deliveries** por padrão.
 
@@ -57,7 +59,7 @@ Os fluxos de trabalho detalhados abaixo são instalados com o módulo **Deliveri
   <tr> 
    <td> <span class="uicontrol">Limpeza de fluxos de trabalho pausados</span> <br /> </td> 
    <td> <span class="uicontrol">cleanupPausedWorkflows</span> <br /> </td> 
-   <td> <p>Esse workflow analisa workflows pausados que têm a severidade definida como normal e emite avisos e notificações quando ficam pausados por muito tempo. Após um mês, os workflows técnicos pausados são interrompidos definitivamente. Por padrão, é acionado toda segunda-feira às 5:00 AM.</p> <p>Para obter mais informações, consulte <a href="../../workflow/using/monitoring-workflow-execution.md#handling-of-paused-workflows" target="_blank">Manuseio de fluxos de trabalho pausados</a>.</p></td> 
+   <td> <p>Esse workflow analisa workflows pausados que têm a severidade definida como normal e emite avisos e notificações quando ficam pausados por muito tempo. Após um mês, os workflows técnicos pausados são interrompidos definitivamente. Por padrão, é acionado toda segunda-feira às 5:00 AM.</p> <p>Para obter mais informações, consulte <a href="monitoring-workflow-execution.md#handling-of-paused-workflows" target="_blank">Manuseio de fluxos de trabalho pausados</a>.</p></td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">Notificação da oferta</span> <br /> </td> 

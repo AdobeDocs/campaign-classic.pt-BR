@@ -6,14 +6,16 @@ audience: platform
 content-type: reference
 topic-tags: importing-and-exporting-data
 exl-id: 4582b524-2b6d-484c-bace-29d2e69f60e9
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
-workflow-type: ht
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+workflow-type: tm+mt
 source-wordcount: '995'
 ht-degree: 100%
 
 ---
 
 # Modelos de importação genérica {#import-operations-samples}
+
+![](../../assets/common.svg)
 
 ## Importar de uma lista de destinatários {#example--import-from-a-list-of-recipients}
 
