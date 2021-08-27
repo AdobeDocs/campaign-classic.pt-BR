@@ -13,7 +13,7 @@ ht-degree: 100%
 
 ---
 
-#  Uso de um relatório de análise{#processing-a-report}
+# Uso de um relatório de análise{#processing-a-report}
 
 ![](../../assets/common.svg)
 

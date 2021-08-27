@@ -257,7 +257,6 @@ Eles são agrupados em **Monitoring** > &#39;SMTP Monitoring&#39;.
 >
 >* As informações relacionadas ao monitoramento SMTP só estarão disponíveis se o canal de email tiver sido ativado.
 >* O **[!UICONTROL SMTP sending statistics]** só será oferecido se o servidor de estatísticas for iniciado na instância.
-
 >
 
 
@@ -270,7 +269,7 @@ O relatório **[!UICONTROL SMTP sending statistics]** permite controlar a ativid
 A lista de indicadores para esse relatório é mostrada abaixo do gráfico.
 
 1. Número total de mensagens enviadas.
-1. 
+1. &#x200B;
    * Linha azul: mensagens prontas para envio que chegaram ao Shaper, ou seja, último estágio antes de enviar SMTP (coincide com os dados recebidos).
 
    * Linha verde: mensagens enviadas com êxito (coincide com os dados de saída).

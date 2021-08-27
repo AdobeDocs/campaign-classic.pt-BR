@@ -23,7 +23,6 @@ Um **rastreamento de pilha** representa um rastreamento contido em um arquivo de
 >
 >* Um arquivo **core** é nomeado **core.`<num>`**.
 >* **gdb - O** Depurador GNU deve ser instalado no computador.
-
 >
 
 
