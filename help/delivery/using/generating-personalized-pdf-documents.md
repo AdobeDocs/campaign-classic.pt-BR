@@ -6,10 +6,10 @@ audience: delivery
 content-type: reference
 topic-tags: personalizing-deliveries
 exl-id: e5239d99-256b-412b-be20-f64f822da9c3
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: 7fa8cea04fb4e25187c48ad19330815e9b522b37
 workflow-type: tm+mt
-source-wordcount: '442'
-ht-degree: 100%
+source-wordcount: '439'
+ht-degree: 96%
 
 ---
 
@@ -19,7 +19,7 @@ ht-degree: 100%
 
 ## Sobre documentos PDF variáveis {#about-variable-pdf-documents}
 
-O Adobe Campaign permite gerar documentos variáveis em PDF (para anexos de email, delivery de mala direta) de documentos do LibreOffice ou do Microsoft Word.
+O Adobe Campaign permite gerar documentos variáveis em PDF para anexos de email de documentos do LibreOffice ou do Microsoft Word.
 
 As seguintes extensões são suportadas: &quot;.docx&quot;, &quot;.doc&quot; e &quot;.odt&quot;.
 

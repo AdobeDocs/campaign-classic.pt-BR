@@ -6,10 +6,10 @@ feature: Overview
 role: User
 level: Beginner
 exl-id: d60d67de-6618-4f3b-be4a-ad7633ab5645
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: 7fa8cea04fb4e25187c48ad19330815e9b522b37
 workflow-type: tm+mt
-source-wordcount: '1645'
-ht-degree: 98%
+source-wordcount: '1664'
+ht-degree: 97%
 
 ---
 
@@ -80,12 +80,16 @@ Esta seção lista os recursos e funcionalidades removidos do Campaign Classic.
    <td><strong>Substituição</strong></td> 
   </tr>
   <tr>  
+   <td>Relatórios<br></td>
+   <td><p>Após Adobe Flash Player EOL, o relatório Gage e o mecanismo de renderização Chart não estão mais disponíveis. <a href="../../reporting/using/creating-a-new-report.md">Saiba mais</a></p>
+  </tr>
+  <tr>  
    <td>Canal de fax<br></td>
    <td><p>A partir da versão 21.1.3 do Campaign, o Canal de fax não estará mais disponível. <a href="../../delivery/using/steps-about-delivery-creation-steps.md">Saiba mais</a></p>
+  </tr>
   <tr>
   <td>Domínio demdex<br></td>
   <td><p> A partir da versão 21.1.3 do Campaign, o domínio demdex usado para importar e exportar públicos para a Adobe Experience Cloud se tornará obsoleto. <a href="../../integrations/using/configuring-shared-audiences-integration-in-adobe-campaign.md">Saiba mais</a></p> 
-  </td>
   </td>
   </tr>
    <tr> 

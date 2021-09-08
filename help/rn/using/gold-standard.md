@@ -6,10 +6,10 @@ feature: Overview
 role: User
 level: Beginner
 exl-id: 9e3a11b1-3070-4d90-91d5-7c559bdd500e
-source-git-commit: 2c548465a73bcd817c6d2b18853f4f074ed6adfa
+source-git-commit: a64cf63916c4e4f220ac00f3d44d0e5e747815f4
 workflow-type: tm+mt
-source-wordcount: '1160'
-ht-degree: 87%
+source-wordcount: '1191'
+ht-degree: 85%
 
 ---
 
@@ -20,6 +20,12 @@ ht-degree: 87%
 Esta página lista versões do [!DNL Gold Standard]. Saiba mais sobre o Campaign [!DNL Gold Standard] [nesta página](gs-overview.md).
 
 ## ![](assets/do-not-localize/limited_2.png) [!DNL Gold Standard] versão 12{#gs-12}
+
+_7 de setembro de 2021_
+
+A build 9032@554dbcd inclui a seguinte correção:
+
+* Correção de um problema que resultava em um erro 500 ao abrir o link para um aplicativo da Web em um delivery de linha com rastreamento ativado.
 
 _27 de agosto de 2021_
 

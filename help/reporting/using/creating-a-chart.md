@@ -6,10 +6,10 @@ audience: reporting
 content-type: reference
 topic-tags: creating-new-reports
 exl-id: d32b614f-82c1-4363-816c-4ebedaa5cfe9
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: 7fa8cea04fb4e25187c48ad19330815e9b522b37
 workflow-type: tm+mt
-source-wordcount: '730'
-ht-degree: 100%
+source-wordcount: '522'
+ht-degree: 97%
 
 ---
 
@@ -41,7 +41,7 @@ Para criar um gráfico em um relatório, siga as etapas abaixo:
 
       ![](assets/reporting_graph_add_filter.png)
 
-   * Para usar dados contextuais, selecione essa opção e clique no link **[!UICONTROL Advanced settings...]**. Selecione os dados que a estatística abordará.
+   * Para usar dados contextuais, selecione **[!UICONTROL Context data]** no menu suspenso **[!UICONTROL Source]** e clique no link **[!UICONTROL Advanced settings...]**. Selecione os dados que a estatística abordará.
 
       ![](assets/reporting_graph_from_context.png)
 
@@ -118,32 +118,6 @@ Se necessário, é possível inverter a sequência de exibição do valor. Para 
 ### Conversão: funil {#conversion--funnel}
 
 Esse tipo de gráfico permite rastrear a taxa de conversa de elementos medidos.
-
-### Progresso: medidor {#progress--gauge}
-
-Esse tipo de gráfico permite exibir o progresso de um valor em comparação com um objetivo definido. No exemplo abaixo, o mostrador preto mostra o número de deliveries enviados com êxito (76) de um objetivo de 100 deliveries. O medidor divide-se em três intervalos que correspondem a status específicos.
-
-![](assets/reporting_graph_type_gauge.png)
-
-Esses elementos são definidos ao configurar o gráfico.
-
-![](assets/reporting_graph_type_gauge1.png)
-
-* O campo **[!UICONTROL Value]** é representado por um mostrador preto no gráfico. Ele representa o elemento cujo progresso deseja calcular. O valor a ser representado deve já ter sido salvo para ser usado.
-* O campo **[!UICONTROL Goal]** representa o valor máximo a ser alcançado.
-* Usando o campo **[!UICONTROL Other mark]**, é possível adicionar um segundo indicador ao gráfico.
-* Os campos **[!UICONTROL Display range]** permitem especificar os valores entre os quais o relatório é calculado.
-* O campo **[!UICONTROL Value ranges]** permite atribuir status (None, Bad, Acceptable, Good) a um conjunto de valores para ilustrar melhor o progresso.
-
-Na seção **[!UICONTROL Display settings]**, o **[!UICONTROL Change appearance...]** permite configurar o modo como o gráfico é exibido.
-
-![](assets/reporting_graph_type_gauge2.png)
-
-A opção **[!UICONTROL Display the value below the gauge]** permite exibir o progresso do valor abaixo do gráfico.
-
-O campo **[!UICONTROL Aperture ratio]**, que deve estar entre 0 e 1, permite editar a abertura do relatório em um círculo mais ou menos completo. No exemplo acima, o valor 0,50 corresponde a um semicírculo.
-
-O campo **[!UICONTROL Width]** permite editar o tamanho do gráfico.
 
 ## Interação com o gráfico {#interaction-with-the-chart}
 
