@@ -3,10 +3,10 @@ keywords: Campaign Classic;página inicial;tópicos populares
 product: campaign
 title: Documentação do produto Adobe Campaign Classic v7
 exl-id: 6b3f1689-80de-49fd-b7ee-7a2a1931d157
-source-git-commit: a53ad78121c530469dc1fdc1aadd71d7d4426890
+source-git-commit: 12b191ffe3d407f1a69393278a7678a14e53d23e
 workflow-type: tm+mt
 source-wordcount: '257'
-ht-degree: 98%
+ht-degree: 89%
 
 ---
 
@@ -26,7 +26,7 @@ ht-degree: 98%
 
 * **[Proteja suas instâncias do Campaign](technotes/using/acc-config-updates.md)**<br/>Atualize para os builds mais recentes para proteger a plataforma do Campaign
 
-* **[Atualizar a integração dos acionadores da Adobe Experience Cloud](integrations/using/configuring-adobe-io.md)**<br/> O serviço de autenticação herdado oAuth chegou ao fim da vida útil. Saiba como migrar para o Adobe I/O.
+* **[Atualizar a ](integrations/using/configuring-adobe-io.md)**<br/> integração do Adobe Experience Cloud TriggersO serviço de autenticação herdado oAuth chegou ao fim da vida útil: é necessário migrar para o Adobe I/O.
 
 [Mais atualizações](/help/rn/using/documentation-updates.md)
 

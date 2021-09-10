@@ -6,7 +6,7 @@ feature: Overview
 role: User
 level: Beginner
 exl-id: d65869ca-a785-4327-8e8d-791c28e4696c
-source-git-commit: 66533711a67950626c1e6681f88f2aaaea1ebd95
+source-git-commit: 12b191ffe3d407f1a69393278a7678a14e53d23e
 workflow-type: tm+mt
 source-wordcount: '2403'
 ht-degree: 83%
@@ -55,7 +55,7 @@ _7 de setembro de 2021_
 * Correção de um problema que impedia o uso de variáveis em uma atividade de workflow de **Enriquecimento** quando a transição recebida era de uma fonte de dados FDA.
 * Correção de um problema que poderia resultar em URLs inválidos em mensagens de email.
 
-## ![](assets/do-not-localize/red_2.png) Versão 21.1.3 – Build 9330 {#release-21-1-3-build-9330}
+## ![](assets/do-not-localize/orange_2.png) Versão 21.1.3 – Build 9330 {#release-21-1-3-build-9330}
 
 _5 de junho de 2021_
 
