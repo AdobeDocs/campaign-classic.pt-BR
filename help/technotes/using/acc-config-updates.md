@@ -5,14 +5,14 @@ description: Nota técnica
 hide: true
 hidefromtoc: true
 exl-id: 7db02123-2e2a-40d9-8385-728ff69985e4
-source-git-commit: 53ac193211a1d98c45e97bf01ab0ad843b8f8f02
+source-git-commit: b458ac67733a2f0e508df729add37d9a78dbcbd8
 workflow-type: tm+mt
-source-wordcount: '1131'
+source-wordcount: '1130'
 ht-degree: 17%
 
 ---
 
-# Atualizações de configuração do Adobe Campaign - março de 2021 {#acc-config-updates}
+# Atualizações de configuração do Adobe Campaign em 2021 {#acc-config-updates}
 
 ![](../../assets/v7-only.svg)
 

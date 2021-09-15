@@ -6,7 +6,7 @@ audience: platform
 content-type: reference
 topic-tags: connectors
 exl-id: f3980859-2837-416b-a0ef-2b369d2d50bd
-source-git-commit: 1312f7c319c96851bc83ae21501164e2688d0dff
+source-git-commit: b458ac67733a2f0e508df729add37d9a78dbcbd8
 workflow-type: tm+mt
 source-wordcount: '409'
 ht-degree: 40%
@@ -14,6 +14,8 @@ ht-degree: 40%
 ---
 
 # Práticas recomendadas e limitações
+
+![](../../assets/v7-only.svg)
 
 ## Otimizar a personalização de email com dados externos {#optimizing-email-personalization-with-external-data}
 

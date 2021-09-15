@@ -8,10 +8,10 @@ index: y
 internal: n
 snippet: y
 exl-id: ab30f697-3022-4a29-bbdb-14ca12ec9c3e
-source-git-commit: 0399bca5b452533f171076aa87be8d1e8d9ad1ed
+source-git-commit: 5eea976f86b62987c38c0fcd893bf3532a2cf301
 workflow-type: tm+mt
-source-wordcount: '703'
-ht-degree: 93%
+source-wordcount: '707'
+ht-degree: 91%
 
 ---
 
@@ -28,7 +28,7 @@ ht-degree: 93%
 
 ## Pré-requisitos {#adobe-io-prerequisites}
 
-Essa integração se aplica somente a partir das **[!DNL Gold Standard]versões do Campaign Classic 20.3, 20.2.4, 19.1.8 e 11**.
+Essa integração só se aplica a partir de **Campaign Classic 20.2.4 e superior, versões 19.1.8 e Gold Standard 11**.
 
 Antes de iniciar esta implementação, verifique se você tem:
 
