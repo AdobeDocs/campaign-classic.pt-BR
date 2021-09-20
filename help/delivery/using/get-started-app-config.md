@@ -6,8 +6,8 @@ audience: delivery
 content-type: reference
 topic-tags: sending-push-notifications
 exl-id: 95bc07cc-8837-4511-81bc-05fad28191c9
-source-git-commit: a129f49d4f045433899fd7fdbd057fb16d0ed36a
-workflow-type: ht
+source-git-commit: 00b8a9b4a693920aa6b4be9e7c41f08c2e53a0c6
+workflow-type: tm+mt
 source-wordcount: '290'
 ht-degree: 100%
 
@@ -43,7 +43,7 @@ Como cliente local, você precisa instalar um pacote integrado.
 
 As etapas de instalação são:
 
-1. Acesse o assistente de importação do pacote do **[!UICONTROL Tools > Advanced > Package import...]** no console do cliente Adobe Campaign.
+1. Acesse o assistente de importação do pacote do **[!UICONTROL Tools > Advanced > Import package]** no console do cliente Adobe Campaign.
 
    ![](assets/package_ios.png)
 
