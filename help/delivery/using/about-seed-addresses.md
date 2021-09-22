@@ -6,10 +6,10 @@ audience: delivery
 content-type: reference
 topic-tags: using-seed-addresses
 exl-id: 1f55eda8-c393-4f86-9118-01bcd981c6df
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: 1113afb573bad958ec7cc2cf008f71c8e751e8f9
 workflow-type: tm+mt
-source-wordcount: '376'
-ht-degree: 100%
+source-wordcount: '377'
+ht-degree: 90%
 
 ---
 
@@ -21,7 +21,7 @@ Seed addresses são usados para direcionar destinatários que não correspondem 
 
 Uma vez que a principal razão para utilizá-los é **sua proteção da lista de endereçamento**. Inserir seed addresses na sua lista de endereçamento permite que você seja notado se estiver sendo usado por um terceiro, pois esses seeds addresses receberão os deliveries enviados à sua lista de endereçamento.
 
-Além disso, os seed addresses permitem **pré-visualizar e testar a personalização e renderização de deliveries** enviando provas (consulte [Usar seed addresses como prova](steps-defining-the-target-population.md#using-seed-addresses-as-proof).
+Além disso, os seed addresses permitem **pré-visualizar e testar a personalização e renderização de deliveries** enviando provas (consulte [Usar seed addresses como prova](steps-defining-the-target-population.md#using-seed-addresses-as-proof)).
 
 ![](assets/do-not-localize/how-to-video.png) [Descubra este recurso no vídeo](steps-defining-the-target-population.md#seeds-and-proofs-video)
 
@@ -37,7 +37,7 @@ Esses seed addresses são adicionados ao target por serem importados ou criados 
 >
 >Os seed addresses não pertencem a tabela de recipients, pois são criados em uma tabela separada. Se a tabela de recipients é estendida com novos dados, a tabela de seed addresses também deverá ser ampliada, assim como os mesmos dados. Caso contrário, os campos estendidos não são considerados para seed addresses.
 >
->Um exemplo de como estender a tabela de seed addresses é apresentado nesta seção: [Caso de uso: seleção de seed addresses em critérios](use-case--selecting-seed-addresses-on-criteria.md)
+>Um exemplo de como estender a tabela de seed addresses é apresentado nesta seção: [Caso de uso: seleção de seed addresses em critérios](use-case--selecting-seed-addresses-on-criteria.md).
 
 Para deliveries de mala direta, os seed addresses são adicionados durante a extração e combinados no documento de saída.
 

@@ -5,9 +5,9 @@ description: Saiba mais sobre os workflows de delivery padrão
 audience: workflow
 content-type: reference
 topic-tags: technical-workflows
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: 794be3d196ea8292699bbf29c8a7038177763e31
 workflow-type: tm+mt
-source-wordcount: '438'
+source-wordcount: '323'
 ht-degree: 100%
 
 ---
@@ -35,11 +35,6 @@ Os fluxos de trabalho detalhados abaixo são instalados com o módulo **Deliveri
    <td> <span class="uicontrol">Faturamento</span> <br /> </td> 
    <td> <span class="uicontrol">billing</span> <br /> </td> 
    <td> Esse workflow envia o relatório de atividades do sistema para o operador 'faturamento' por email. É disparado todo dia 25 de cada mês por padrão.<br /> </td> 
-  </tr> 
-  <tr> 
-   <td> <span class="uicontrol">Faturamento (perfis ativos)</span> <br /> </td> 
-   <td> <span class="uicontrol">billingActiveContactCount</span> <br /> </td> 
-   <td> <p>Esse workflow conta o número de perfis ativos. É acionado todas as noites às 1:00 AM por padrão.</p> <p>“<strong>Perfil</strong>” significa um registro de informações (por exemplo: um registro na tabela nmsRecipient ou uma tabela externa contendo uma ID de cookie, ID do cliente, identificador móvel ou outras informações relevantes para um canal específico) representando um cliente final, um prospecto ou um cliente potencial. Faturamento só afeta Perfis que estão "ativos". Um Perfil é considerado "ativo" quando ele for alvo ou recebe comunicação nos últimos 12 meses por meio de qualquer canal.</p> <p>Os canais Facebook e Twitter não são considerados.</p> <p>É possível ter uma visão geral do <span class="uicontrol">Number of active profiles</span> no menu <span class="uicontrol">Administration</span> &gt; <span class="uicontrol">Campaign Management</span> &gt; <span class="uicontrol">Customer metrics</span>.</p> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">Limpeza de alias</span> <br /> </td> 

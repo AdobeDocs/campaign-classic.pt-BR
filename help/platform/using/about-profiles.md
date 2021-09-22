@@ -6,10 +6,10 @@ feature: Profiles, Audiences
 role: User, Data Architect
 level: Beginner
 exl-id: 54f1ad6c-54b0-4448-8c38-806dd75c1dae
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: ed43a632a962747c9402ff8d5f0ce442c2cc6490
 workflow-type: tm+mt
-source-wordcount: '897'
-ht-degree: 100%
+source-wordcount: '836'
+ht-degree: 98%
 
 ---
 
@@ -93,13 +93,11 @@ Os perfis ativos são aqueles que são contados para fins de cobrança.
 
 A cobrança só afeta perfis que estão **ativos**. Um perfil é considerado ativo quando ele é visado ou recebe comunicação nos últimos 12 meses por meio de qualquer canal.
 
-Os perfis excluídos durante a preparação do delivery (regras de tipologia, quarentenas) não são levados em consideração. Um perfil que foi direcionado por vários deliveries será contado apenas uma vez.
+Um perfil que foi direcionado por vários deliveries é contado apenas uma vez.
 
 >[!NOTE]
 >
 >Os canais Facebook e Twitter não são considerados.
-
-No explorador do Campaign, navegue até **[!UICONTROL Administration > Campaign Management > Customer metrics]** para ter uma visão geral do número de perfis ativos. A contagem real é executada pelo fluxo de trabalho técnico **[!UICONTROL Number of active billing profiles]** ([!UICONTROL billingActiveContactCount]) [](../../workflow/using/about-technical-workflows.md). Esse fluxo de trabalho é executado todos os dias e adiciona os novos dados ao relatório existente para o período atual na pasta **[!UICONTROL Customer metrics]**.
 
 A contagem de perfis ativos está disponível somente para **Instâncias de marketing**. Não está disponível para Instâncias de execução, ou seja, instâncias de MID (mid-sourcing) e RT (Centro de mensagens/Mensagens em tempo real).
 

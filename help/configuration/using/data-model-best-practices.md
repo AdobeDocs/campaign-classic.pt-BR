@@ -6,9 +6,9 @@ audience: configuration
 content-type: reference
 topic-tags: schema-reference
 exl-id: 9c59b89c-3542-4a17-a46f-3a1e58de0748
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: 32f55d02920b0104198f809b1be0a91306a4d9e4
 workflow-type: tm+mt
-source-wordcount: '4013'
+source-wordcount: '4007'
 ht-degree: 1%
 
 ---
@@ -251,7 +251,7 @@ Por padrão, o delivery e os logs de rastreamento do Adobe Campaign têm uma dur
 * Se quiser manter os logs por mais tempo, essa decisão deve ser tomada cuidadosamente dependendo do tamanho do banco de dados e do volume de mensagens enviadas. Como lembrete, a sequência do Adobe Campaign é um inteiro de 32 bits.
 * Recomenda-se não ter mais de 1 bilhão de registros por vez nessas tabelas (cerca de 50% dos 2,14 bilhões de ids disponíveis) para limitar os riscos de consumo de todas as ids disponíveis. Isso exigirá que alguns clientes reduzam a duração da retenção para menos de 180 dias.
 
-Saiba mais sobre a retenção de dados em [Diretrizes de privacidade e segurança da campanha](https://helpx.adobe.com/br/campaign/kb/campaign-privacy-overview.html#consent).
+Saiba mais sobre a retenção de dados em [Diretrizes de privacidade e segurança da campanha](../../platform/using/privacy-and-recommendations.md).
 
 Saiba mais sobre o workflow de limpeza do Campaign Data base [nesta seção](../../production/using/database-cleanup-workflow.md).
 

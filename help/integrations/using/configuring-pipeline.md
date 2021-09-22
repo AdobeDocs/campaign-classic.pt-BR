@@ -5,7 +5,7 @@ description: Saiba como configurar o pipeline
 audience: integrations
 content-type: reference
 exl-id: 2d214c36-8429-4b2b-b1f5-fe2730581bba
-source-git-commit: 84312974b9b7372c8a46fd1c7ead1148690bcd83
+source-git-commit: 32f55d02920b0104198f809b1be0a91306a4d9e4
 workflow-type: tm+mt
 source-wordcount: '902'
 ht-degree: 99%
@@ -113,7 +113,7 @@ O serviço de pipeline rastreia as mensagens recuperadas por cada consumidor. Us
 Para configurar a opção Pipeline, siga estas recomendações:
 
 * Adicione ou edite acionadores em **[!UICONTROL Triggers]**. Você não deve editar o restante.
-* Verifique se o JSON é válido. Você pode usar um Validador de JSON, consulte este [site](http://jsonlint.com/) para obter um exemplo.
+* Verifique se o JSON é válido. Você pode usar um Validador de JSON, consulte este [site](https://jsonlint.com/) para obter um exemplo.
 * “name” corresponde à ID do acionador. Um curinga “*” capturará todos os acionadores.
 * “Consumidor” corresponde ao nome da instância chamadora ou do aplicativo.
 * Pipeline também aceita o tópico “aliases”.

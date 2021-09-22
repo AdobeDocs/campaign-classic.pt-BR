@@ -6,10 +6,10 @@ feature: Overview
 role: User
 level: Beginner
 exl-id: d60d67de-6618-4f3b-be4a-ad7633ab5645
-source-git-commit: 7fa8cea04fb4e25187c48ad19330815e9b522b37
+source-git-commit: 32f55d02920b0104198f809b1be0a91306a4d9e4
 workflow-type: tm+mt
-source-wordcount: '1664'
-ht-degree: 97%
+source-wordcount: '1657'
+ht-degree: 95%
 
 ---
 
@@ -114,7 +114,7 @@ Esta seção lista os recursos e funcionalidades removidos do Campaign Classic.
   </tr> 
   <tr> 
    <td>Aplicação da Web - Microsites</td>
-   <td>A partir da versão 18.10 do Campaign, os Microsites não estarão mais disponíveis. Você pode melhorar a segurança restringindo o acesso a domínios dedicados somente em arquivos de configuração do Adobe Campaign e usar URLs personalizados no Campaign usando aliases DNS. <a href="https://helpx.adobe.com/br/campaign/kb/domain-name-delegation.html">Saiba mais</a></td>
+   <td>A partir da versão 18.10 do Campaign, os Microsites não estarão mais disponíveis. Você pode melhorar a segurança restringindo o acesso a domínios dedicados somente em arquivos de configuração do Adobe Campaign e usar URLs personalizados no Campaign usando aliases DNS.</td>
   </tr> 
   <tr> 
    <td>Notificações por push - Conector binário iOS</td>
@@ -183,7 +183,7 @@ A partir da versão 19.1, o Adobe Campaign não é mais compatível com o seguin
 
 A partir da versão do primeiro trimestre 19.1, o Adobe Campaign não é mais compatível com as seguintes ferramentas.
 
-* Java JDK 7. [Saiba mais](http://www.oracle.com/technetwork/java/javase/eol-135779.html)
+* Java JDK 7. [Saiba mais](https://www.oracle.com/technetwork/java/javase/eol-135779.html)
 * Libre Office 3.5/4.3/5.x, exceto quando incorporado em outra ferramenta. [Saiba mais](https://wiki.documentfoundation.org/ReleasePlan/Archive#End-of-Life_Releases)
 
 ### Mecanismos de banco de dados {#dbe-eol}
@@ -201,14 +201,14 @@ A partir da versão 20.2, o Adobe Campaign não é mais compatível com o seguin
 A partir da versão do primeiro trimestre 19.1, o Adobe Campaign não é mais compatível com os seguintes servidores FDA:
 
 * PostgreSQL 9.3. [Saiba mais](https://www.postgresql.org/support/versioning)
-* MySQL 5.5. [Saiba mais](http://www.fromdual.com/support-for-mysql-from-oracle)
-* DB2 9.5. [Saiba mais](http://www-01.ibm.com/support/docview.wss?uid=swg21168270)
+* MySQL 5.5. [Saiba mais](https://www.fromdual.com/support-for-mysql-from-oracle)
+* DB2 9.5. [Saiba mais](https://www-01.ibm.com/support/docview.wss?uid=swg21168270)
 * Teradata 14 - 14.1. [Saiba mais](https://community.teradata.com/t5/Database/Teradata-Database-Product-Life-Cycle/td-p/35068)
 
 O Campaign Classic não é compatível com os seguintes servidores no FDA (Federated Data Access — Acesso Federado a Dados).
 
-* DB2 UDB 9.5, 9.7. A versão mais recente do DB2 é compatível com o Federated Data Access (FDA). [Saiba mais](http://www-01.ibm.com/support/docview.wss?uid=swg21168270)
-* Oracle 9i, 10G R2. Versões mais recentes do Oracle são compatíveis com o FDA (Federated Data Access — Acesso Federado a Dados). [Saiba mais](http://www.oracle.com/br/support/library/lifetime-support-technology-069183.pdf)
+* DB2 UDB 9.5, 9.7. A versão mais recente do DB2 é compatível com o Federated Data Access (FDA). [Saiba mais](https://www-01.ibm.com/support/docview.wss?uid=swg21168270)
+* Oracle 9i, 10G R2. Versões mais recentes do Oracle são compatíveis com o FDA (Federated Data Access — Acesso Federado a Dados). [Saiba mais](https://www.oracle.com/us/support/library/lifetime-support-technology-069183.pdf)
 * PostgreSQL 8.3, 8.4, 9.0, 9.1, 9.2. Versões mais recentes do PostgreSQL são compatíveis com o Federated Data Access (FDA). [Saiba mais](https://www.postgresql.org/support/versioning)
 * MSSQL 2000, 2005, 2008 R2. As versões mais recentes do SQL Server são compatíveis com o FDA (Federated Data Access — Acesso a Dados Federados). [Saiba mais](https://support.microsoft.com/pt-br/lifecycle/search/1044)
 * MySQL 5.1. Versões mais recentes do MySQL são compatíveis com o Federated Data Access (FDA). [Saiba mais](https://pt.wikipedia.org/wiki/InfiniDB)

@@ -3,9 +3,9 @@ product: campaign
 title: Versão 19.2
 description: Notas de versão do Campaign 19.2
 exl-id: 3c529e4e-8787-41d2-b85d-3feaa5432196
-source-git-commit: 84312974b9b7372c8a46fd1c7ead1148690bcd83
+source-git-commit: 32f55d02920b0104198f809b1be0a91306a4d9e4
 workflow-type: tm+mt
-source-wordcount: '1542'
+source-wordcount: '1537'
 ht-degree: 99%
 
 ---
@@ -153,7 +153,7 @@ _2 de dezembro de 2019_
 
 _Sistemas obsoletos_
 
-Os seguintes sistemas foram [descontinuados](https://helpx.adobe.com/br/campaign/kb/deprecated-and-removed-features.html) para implementações do Campaign Classic:
+Os seguintes sistemas foram [descontinuados](deprecated-features.md) para implementações do Campaign Classic:
 * Apache 2.2
 * Centos 6
 

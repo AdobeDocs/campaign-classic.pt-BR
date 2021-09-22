@@ -6,9 +6,9 @@ feature: Overview
 role: User
 level: Beginner
 exl-id: 07c1f4a3-cf16-4a9b-b402-e13258799f91
-source-git-commit: 877ac37102a09a40ea59ef073afa00b9d9bd7dde
+source-git-commit: 32f55d02920b0104198f809b1be0a91306a4d9e4
 workflow-type: tm+mt
-source-wordcount: '4542'
+source-wordcount: '4513'
 ht-degree: 98%
 
 ---
@@ -268,7 +268,7 @@ A seção Privacidade e consentimento foi aprimorada com informações mais deta
 
 A página de gerenciamento de privacidade no Campaign Classic foi atualizada com informações sobre o campo &quot;regulamento&quot;, que agora está disponível ao usar a API, permitindo a configuração do processo automático de solicitação de privacidade. [Leia mais](https://helpx.adobe.com/br/campaign/kb/acc-privacy.html#ManagingPrivacyRequests)
 
-A página Visão geral do gerenciamento de privacidade foi atualizada para incluir informações sobre a Lei de Proteção de Dados Pessoais (PDPA) da Tailândia e sobre a Lei Geral de Dados (LGPD) do Brasil. [Leia mais](https://helpx.adobe.com/br/campaign/kb/campaign-privacy-overview.html#whatisgdpr)
+A página Visão geral do gerenciamento de privacidade foi atualizada para incluir informações sobre a Lei de Proteção de Dados Pessoais (PDPA) da Tailândia e sobre a Lei Geral de Dados (LGPD) do Brasil. [Leia mais](../../platform/using/privacy-and-recommendations.md)
 
 As informações foram adicionadas nos registros de subworkflows e no comportamento em caso de erro. [Leia mais](../../workflow/using/sub-workflow.md)
 
@@ -520,9 +520,9 @@ Trilha de auditoria - [Leia mais](../../production/using/audit-trail.md)
 
 Foi criada uma atualização das perguntas frequentes sobre a nova build. [Leia mais](https://helpx.adobe.com/br/campaign/kb/build-upgrade-faq.html)
 
-A [Matriz de compatibilidade](https://helpx.adobe.com/campaign/kb/compatibility-matrix.html) foi atualizada. A lista de sistemas de banco de dados suportados foi atualizada, assim como as versões do Android/iOS e SDKs relacionados. A [Matriz de compatibilidade 19.0](https://helpx.adobe.com/br/campaign/kb/compatibility-matrix-19-0.html) foi arquivada.
+A [Matriz de compatibilidade](compatibility-matrix.md) foi atualizada. A lista de sistemas de banco de dados suportados foi atualizada, assim como as versões do Android/iOS e SDKs relacionados. A Matriz de compatibilidade 19.0 foi arquivada.
 
-A página &quot;Deprecated and Removed Features in Campaign Classic&quot; foi atualizada. [Leia mais](https://helpx.adobe.com/br/campaign/kb/deprecated-and-removed-features.html)
+A página &quot;Deprecated and Removed Features in Campaign Classic&quot; foi atualizada. [Leia mais](deprecated-features.md)
 
 A descrição do arquivo de configuração do servidor foi adicionada ao guia de instalação. [Leia mais](../../installation/using/the-server-configuration-file.md)
 
@@ -579,7 +579,7 @@ As seguintes notas técnicas foram atualizadas: [SMS connector protocol and sett
 
 A seção Technical workflows foi atualizada. [Leia mais](../../workflow/using/about-technical-workflows.md)
 
-O procedimento de Configuração do nome de domínio do Campaign foi aprimorado e atualizado. [Leia mais](https://helpx.adobe.com/br/campaign/kb/domain-name-delegation.html)
+O procedimento de Configuração do nome de domínio do Campaign foi aprimorado e atualizado.
 
 O procedimento de migração para aplicativos Android do Google Cloud Messaging (GCM) para o Firebase Cloud Messaging (FCM) foi atualizado. [Leia mais](https://helpx.adobe.com/br/campaign/kb/migrate-to-fcm.html)
 
