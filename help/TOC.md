@@ -7,13 +7,12 @@ breadcrumb-url: /docs/campaign-classic/using/campaign-classic-home.html
 user-guide-description: Com o Adobe Campaign, é possível usar dados avançados do cliente para criar, coordenar e fornecer campanhas dinâmicas que os clientes realmente desejam, por meio de email, dispositivos móveis, canais offline e muito mais.
 sub-product: adobe campaign classic
 type: Documentation
-source-git-commit: 1f6846f29c44719fdbd334327466619ed265452a
+source-git-commit: aac596caf559b25ba3fff94aca410a66ecc08b27
 workflow-type: tm+mt
-source-wordcount: '2535'
-ht-degree: 99%
+source-wordcount: '2546'
+ht-degree: 98%
 
 ---
-
 
 # Documentação do produto Adobe Campaign Classic v7 {#using}
 
@@ -850,3 +849,7 @@ ht-degree: 99%
       + [Configurações específicas na v6.02](migration/using/specific-configurations-in-v6-02.md)
       + [Configurações específicas na v6.10](migration/using/specific-configurations-in-v6-10.md)
    + [Procedimento de reversão](migration/using/about-rollback.md)
++ Notas técnicas {#technotes}
+   + Migração para o Adobe Managed Services{#dc-migration}
+      + [Migração para a Nuvem pública](technotes/using/dc-migration.md)
+      + [Perguntas frequentes](technotes/using/dc-migration-faq.md)
