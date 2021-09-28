@@ -3,9 +3,9 @@ product: campaign
 title: Migrar para o Adobe Analytics Connector
 description: Campaign - Perguntas frequentes sobre o conector do Analytics
 exl-id: 5bf61654-3d68-4560-a93f-7a768a2c5be4
-source-git-commit: 4b6fc31aefd12b3667501503fc5e10d5f1f0738f
+source-git-commit: 6d3e21fa00771a47d846d502e2d4d5971aa39b29
 workflow-type: tm+mt
-source-wordcount: '850'
+source-wordcount: '855'
 ht-degree: 5%
 
 ---
@@ -18,7 +18,7 @@ A partir da versão 21.1.3 do Campaign Classic v7, o Adobe Analytics Data Connec
 
 Em 1º de agosto de 2021, a Adobe Campaign Classic foi removida da interface do usuário herdada dos Data Connectors, no entanto, as integrações existentes do Campaign continuarão a coletar e a transmitir dados para o Adobe Analytics até 1º de março de 2022. Após essa data, a integração deixará de coletar e transmitir dados para o Adobe Analytics.
 
-Você deve migrar para a nova integração do Adobe Analytics Connector no Adobe Exchange, que substitui a integração herdada dos Data Connectors, conforme detalhado em [this page](../../platform/using/adobe-analytics-connector.md).
+Você **deve implementar** a nova integração do Adobe Analytics Connector no Adobe Exchange, que substitui a integração herdada dos Data Connectors. Para saber mais sobre o Adobe Analytics Connector, consulte [esta página](../../platform/using/adobe-analytics-connector.md).
 
 >[!NOTE]
 >
@@ -88,6 +88,6 @@ A solução é atualizar o **Perfil de produto** no Contexto de Usuário do Anal
 
 * [Atualizar seu ambiente](../../production/using/build-upgrade.md)
 * [Perguntas frequentes de atualização de build](../../platform/using/faq-build-upgrade.md)
-* [Baixar a build do Campaign Classic](https://experience.adobe.com/#/downloads/content/software-distribution/en/campaign.html)
+* [Baixar a build do Campaign Classic](https://experience.adobe.com/#/downloads/content/software-distribution/br/campaign.html)
 * [Disponibilizar o novo Console do cliente para os usuários](../../installation/using/client-console-availability-for-windows.md)
 * [Instalar o console do cliente do Campaign](../../installation/using/installing-the-client-console.md)
