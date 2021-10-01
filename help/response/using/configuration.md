@@ -1,19 +1,19 @@
 ---
 product: campaign
-title: Configurar o Gestor de Resposta do Campaign
-description: Saiba como configurar o Gestor de Resposta do Campaign
+title: Configurar o Gestor de respostas do Campaign
+description: Saiba como configurar o Gestor de respostas do Campaign
 audience: campaign
 content-type: reference
 topic-tags: response-manager
 exl-id: 1a115ca9-2532-4bd3-be77-814e43250c51
 source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '750'
-ht-degree: 89%
+ht-degree: 100%
 
 ---
 
-# Configurar o Gestor de Resposta do Campaign{#configuration}
+# Configurar o Gestor de respostas do Campaign{#configuration}
 
 ![](../../assets/v7-only.svg)
 
@@ -21,17 +21,17 @@ Esta seção destina-se às pessoas responsáveis pela configuração do gestor 
 
 Isso permite o entendimento de como adaptar o modelo de dados padrão à natureza específica de uma tabela de transações para o Adobe Campaign com a tabela de individuais. Esta tabela pode coincidir com a tabela de individuais disponíveis no Adobe Campaign ou com uma tabela diferente.
 
-A hipótese de medição é iniciada pelo workflow do processo de operação (**[!UICONTROL operationMgt]** ). Cada hipótese representa um processo separado que é executado de forma assíncrona com um status de execução (Editando, Pendente, Concluído, Falhou, etc.) e controlado por um programador que gerencia as limitações de prioridade, a restrição do número de processos simultâneos, a página de baixa atividade e a execução automática com frequência.
+A hipótese de medição é iniciada pelo workflow do processo de operação (**[!UICONTROL operationMgt]** ). Cada hipótese representa um processo separado que é executado de forma assíncrona com um status de execução (Editando, Pendente, Concluído, Com falha, etc.) e controlado por um programador que gerencia as limitações de prioridade, a restrição do número de processos simultâneos, a página de baixa atividade e a execução automática com frequência.
 
-## Configurar schemas {#configuring-schemas}
+## Configurar esquemas {#configuring-schemas}
 
 >[!CAUTION]
 >
->Não modifique os esquemas internos do aplicativo, mas use o mecanismo de extensão do schema. Caso contrário, os schemas modificados não serão considerados no momento das atualizações futuras do aplicativo. Isso pode resultar no mau funcionamento durante o uso do Adobe Campaign.
+>Os esquemas padrão do aplicativo não devem ser modificados, mas é possível usar o mecanismo de extensão de esquema. Caso contrário, os schemas modificados não serão considerados no momento das atualizações futuras do aplicativo. Isso pode resultar no mau funcionamento durante o uso do Adobe Campaign.
 
 É necessária a integração de aplicativos antes de usar o módulo de reação para definir as várias tabelas (transações, detalhes de transações) que devem ser mensuradas e suas relações com os envios, as ofertas e os individuais.
 
-### Schemas padrão {#standard-schemas}
+### Esquemas padrão {#standard-schemas}
 
 O schema pronto para uso **[!UICONTROL nms:remaMatch]** contém a tabela do log de reação, ou seja, a relação entre individuais, hipótese e tabela de transação. Esse schema deve ser usado como um schema de herança para a tabela de destino final dos logs de reação.
 
@@ -57,7 +57,7 @@ O schema a seguir mostra associações entre diferentes tabelas após a conclus�
 
 ### Gestor de resposta e recipients {#response-management-with-adobe-campaign-recipients}
 
-Neste exemplo, uma tabela de compras foi integrada ao módulo de gestor de respostas usando a tabela de recipients integrada do Adobe Campaign **[!UICONTROL nms:recipient]**.
+Neste exemplo, uma tabela de compras foi integrada ao módulo do gestor de respostas usando a tabela integrada de recipients do Adobe Campaign **[!UICONTROL nms:recipient]**.
 
 A tabela de logs de resposta em um recipient **[!UICONTROL nms:remaMatchRcp]** é estendida para adicionar um link ao schema da tabela de compras. No exemplo a seguir, a tabela de compra é chamada de **demo:purchase**.
 
@@ -76,7 +76,7 @@ A tabela de logs de resposta em um recipient **[!UICONTROL nms:remaMatchRcp]** �
 
    ![](assets/delivery_mapping3.png)
 
-O schema criado tem a seguinte aparência:
+O esquema criado tem a seguinte aparência:
 
 ```
 <srcSchema _cs="Reactions (Recipients) (cus)" entitySchema="xtk:srcSchema" extendedSchema="nms:remaMatchRcp" 
@@ -102,9 +102,9 @@ name="remaMatchRcp" namespace="cus">
 
 ### Gestor de respostas com uma tabela de recipient personalizada {#response-management-with-a-personalized-recipient-table}
 
-Neste exemplo, uma tabela de compra é integrada ao módulo de gestor de resposta com uma tabela de individuais que não é a tabela de recipient disponível no Adobe Campaign.
+Neste exemplo, uma tabela de compras é integrada ao módulo do gestor de respostas com uma tabela de indivíduos que não é a tabela de recipients disponível no Adobe Campaign.
 
-* Crie um novo schema de log de resposta derivado do schema **[!UICONTROL nms:remaMatch]** .
+* Crie um novo esquema de registro de resposta derivado do esquema **[!UICONTROL nms:remaMatch]**.
 
    Como a tabela de indivíduos é diferente da tabela de recipients do Adobe Campaign, é necessário criar um novo schema dos logs de resposta com base no schema **[!UICONTROL nms:remaMatch]**. Em seguida, insira os links para os logs do delivery e a tabela de compras.
 
@@ -127,7 +127,7 @@ Neste exemplo, uma tabela de compra é integrada ao módulo de gestor de respost
    </srcSchema>
    ```
 
-* Modifique o formulário de hipótese no schema **[!UICONTROL nms:remaHypothesis]**.
+* Modifique o formulário de hipótese no esquema **[!UICONTROL nms:remaHypothesis]**.
 
    Por padrão, a lista de logs de resposta é visível nos logs de recipient. Portanto, é possível modificar o formulário de hipótese para exibir os novos logs de resposta criados durante a etapa anterior.
 
