@@ -7,9 +7,9 @@ role: User
 level: Beginner
 exl-id: 8febceb0-9694-4045-a630-a7ff2fd18943
 source-git-commit: 91dec9adb177aedc4a82879011371b54886166be
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '923'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
@@ -25,7 +25,7 @@ O Adobe Campaign permite coordenar a criação de campanhas de marketing convers
 >
 >* Os materiais de ajuda nesta coleção se aplicam ao Campaign Classic v7 em sua [build mais recente](../../rn/using/latest-release.md). Um selo específico está disponível quando uma seção também se aplica ao Campaign v8.
 >
->* A documentação do Adobe Campaign v8 está disponível [aqui](https://experienceleague.adobe.com/docs/campaign/campaign-v8/campaign-home.html).
+>* A documentação do Adobe Campaign v8 está disponível [aqui](https://experienceleague.adobe.com/docs/campaign/campaign-v8/campaign-home.html?lang=pt-BR).
 
 
 ![](assets/do-not-localize/how-to-video.png) [Descubra as principais características e recursos no vídeo](#video)
