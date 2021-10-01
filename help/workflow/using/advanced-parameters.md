@@ -7,7 +7,7 @@ content-type: reference
 topic-tags: advanced-management
 exl-id: 6c90ac2f-0d2b-48b0-9245-3e5e3a3d027c
 source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '488'
 ht-degree: 100%
 
@@ -54,7 +54,7 @@ Geralmente, essas opções são selecionadas no carrinho clicando com o botão d
 A configuração de workflow de alta disponibilidade é detalhada nesta [seção](../../installation/using/configuring-campaign-server.md#high-availability-workflows-and-affinities).
 
 
-## Max. período de execução {#max--execution-period}
+## Limite do período de execução {#max--execution-period}
 
 Este campo permite que você defina um aviso para quando a tarefa demorar muito. Ele não afetará a operação do workflow. Se a tarefa não for concluída até o final do **[!UICONTROL Max. execution period]**, a página **[!UICONTROL Instance monitoring]** exibirá um aviso para esse workflow. Esta página é acessada pela guia **[!UICONTROL Monitoring]** da página inicial.
 
