@@ -7,7 +7,7 @@ content-type: reference
 topic-tags: managing-environments
 exl-id: bdda98f7-a083-4f3b-b691-c28ec79af780
 source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '981'
 ht-degree: 100%
 
@@ -98,7 +98,7 @@ Esses valores não são aplicados por padrão: eles precisam ser configurados.
 
 ### Configuração do status quando a proposta é criada {#configuring-the-status-when-the-proposition-is-created}
 
-Quando uma apresentação de oferta é criada pelo mecanismo do Interaction seu status é alterado, seja uma interação de entrada ou de saída. A escolha entre esses dois valores depende da maneira como os espaços de oferta foram configurados no ambiente **[!UICONTROL Design]**.
+Quando uma apresentação de oferta é criada pelo mecanismo do Interaction, o status é alterado, seja uma interação de entrada ou de saída. A escolha entre esses dois valores depende da maneira como os espaços de oferta foram configurados no ambiente **[!UICONTROL Design]**.
 
 Para cada espaço, é possível configurar o status que deseja aplicar quando uma proposta é criada, dependendo das informações que deseja exibir nos relatórios de ofertas.
 
