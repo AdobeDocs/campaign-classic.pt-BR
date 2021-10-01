@@ -7,7 +7,7 @@ content-type: reference
 topic-tags: delivering-an-offer
 exl-id: 64aea8b9-7f06-4db0-a3e6-6a0e17c3ddcb
 source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '803'
 ht-degree: 100%
 
@@ -22,7 +22,7 @@ Ao criar uma delivery, há dois métodos possíveis para integrar ofertas:
 * Chamar o mecanismo de oferta no corpo de uma delivery.
 * Fazer referência às ofertas por meio do delivery outline de uma campanha. Esse método geralmente é usado para campanhas em papel.
 
-## Fazendo uma delivery com uma chamada para o mecanismo de oferta {#delivering-with-a-call-to-the-offer-engine}
+## Fazer uma delivery com uma chamada para o mecanismo de oferta {#delivering-with-a-call-to-the-offer-engine}
 
 Para apresentar uma oferta durante uma campanha de marketing, basta criar uma ação de delivery clássica com base no canal escolhido. O mecanismo de oferta é chamado quando o conteúdo de delivery é definido, clicando no ícone **[!UICONTROL Offers]** disponível na barra de ferramentas.
 
@@ -30,7 +30,7 @@ Para apresentar uma oferta durante uma campanha de marketing, basta criar uma a�
 
 Saiba mais sobre deliveries de correspondência direta [nesta seção](../../delivery/using/about-direct-mail-channel.md). Saiba mais sobre campanhas de marketing [nesta seção](../../campaign/using/setting-up-marketing-campaigns.md).
 
-### Etapas principais para inserir uma oferta em uma delivery {#main-steps-for-inserting-an-offer-into-a-delivery}
+### Etapas principais para inserir uma oferta em um delivery {#main-steps-for-inserting-an-offer-into-a-delivery}
 
 Para inserir apresentações de oferta em um delivery, siga o seguinte processo:
 
@@ -68,7 +68,7 @@ Para inserir apresentações de oferta em um delivery, siga o seguinte processo:
 
    ![](assets/offer_delivery_010.png)
 
-### Parâmetros para chamada do motor de oferta {#parameters-for-calling-offer-engine}
+### Parâmetros para chamada do mecanismo de oferta {#parameters-for-calling-offer-engine}
 
 * **[!UICONTROL Space]**: espaço do ambiente de oferta que deve ser selecionado para ativar o mecanismo de oferta.
 * **[!UICONTROL Category]**: pasta específica na qual as ofertas são classificadas. Se nenhuma categoria for especificada, todas as ofertas contidas no ambiente serão consideradas pelo motor de oferta, a menos que um tema seja selecionado.
@@ -77,7 +77,7 @@ Para inserir apresentações de oferta em um delivery, siga o seguinte processo:
 * **[!UICONTROL Exclude non-eligible recipients]**: essa opção permite ativar ou desativar a exclusão de recipients para os quais não há ofertas elegíveis suficientes. O número de propostas elegíveis pode ser menor do que o número solicitado de apresentações. Se esta caixa estiver marcada, os recipients que não têm apresentações suficientes serão excluídos do delivery. Se você não selecionar essa opção, esses recipients não serão excluídos, mas não terão o número solicitado de apresentações.
 * **[!UICONTROL Do not display anything if no offer is selected]**: essa opção permite escolher como a mensagem será processada caso uma das proposições não exista. Quando esta caixa é marcada, a representação da proposta ausente não é exibida e nenhum conteúdo aparecerá na mensagem para essa apresentação. Se a caixa não estiver marcada, a mensagem propriamente dita será cancelada durante o envio e os recipients não receberão mais mensagens.
 
-### Inserção de uma apresentação de oferta em um delivery {#inserting-an-offer-proposition-into-a-delivery}
+### Inserção de uma proposta de oferta em um delivery {#inserting-an-offer-proposition-into-a-delivery}
 
 A representação de ofertas a serem apresentadas é inserida no corpo do delivery através dos campos de mesclagem. O número de apresentações é definido nos parâmetros da chamada do motor de oferta.
 
@@ -85,7 +85,7 @@ O delivery pode ser personalizado usando os campos da oferta ou, no caso de um e
 
 ![](assets/offer_delivery_011.png)
 
-## Delivery com delivery outline {#delivering-with-delivery-outlines}
+## Delivery com uso do delivery outline {#delivering-with-delivery-outlines}
 
 Também é possível apresentar ofertas em um delivery usando delivery outlines.
 
