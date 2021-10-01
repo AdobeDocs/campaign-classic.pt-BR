@@ -7,7 +7,7 @@ content-type: reference
 topic-tags: managing-an-offer-catalog
 exl-id: c6dd2709-06e3-4227-bbec-99f3d80144fe
 source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '803'
 ht-degree: 100%
 
@@ -43,7 +43,7 @@ Para criar uma oferta, aplique as seguintes etapas:
 
 ## Configuração da qualificação para a oferta {#configuring-offer-eligibility}
 
-Na guia **[!UICONTROL Eligibility]**, defina o período em que a oferta será válida e poderá ser apresentada, os filtros a serem aplicados no target e o peso da oferta.
+Na guia **[!UICONTROL Eligibility]**, defina o período em que a oferta será válida e poderá ser apresentada, os filtros a serem aplicados ao alvo e o peso da oferta.
 
 ### Definição do período de qualificação de uma oferta {#defining-the-eligibility-period-of-an-offer}
 
@@ -53,9 +53,9 @@ Para definir o período de qualificação da oferta, use as listas suspensas e s
 
 Fora dessas datas, a oferta não será selecionada pelo mecanismo do Interaction. Se também tiver configurado datas de qualificação para a categoria de oferta, o período mais restritivo será aplicado.
 
-### Filtros no target {#filters-on-the-target}
+### Filtros do alvo {#filters-on-the-target}
 
-É possível aplicar filtros ao target da oferta.
+É possível aplicar filtros ao alvo da oferta.
 
 Para fazer isso, clique no link **[!UICONTROL Edit query]** e selecione o filtro que deseja aplicar. (Consulte [esta seção](../../platform/using/steps-to-create-a-query.md#step-4---filter-data)).
 
