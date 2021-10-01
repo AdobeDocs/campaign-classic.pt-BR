@@ -7,7 +7,7 @@ content-type: reference
 topic-tags: administration-basics
 exl-id: 2ece058d-b493-4fea-b3db-322cf7ea7f4f
 source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '875'
 ht-degree: 100%
 
@@ -154,7 +154,7 @@ Para fazer isso, crie uma cópia do workflow **[!UICONTROL Alias cleansing]**, a
 * **-updateHits** para atualizar o número de ocorrências de alias,
 * **-updateHits:full** para recalcular todas as ocorrências de alias.
 
-#### Workflow alias cleansing {#alias-cleansing-workflow}
+#### Workflow de limpeza de alias {#alias-cleansing-workflow}
 
 O workflow **Alias cleansing** executa a limpeza do valor de enumerações. É executado diariamente por padrão.
 
