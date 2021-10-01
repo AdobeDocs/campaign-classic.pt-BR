@@ -7,7 +7,7 @@ content-type: reference
 topic-tags: unitary-interactions
 exl-id: a9842e59-120c-4a35-abdf-6540a0bbdd6d
 source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1140'
 ht-degree: 100%
 
@@ -309,7 +309,7 @@ O caso de uso a seguir detalha as configurações a serem feitas no Adobe Campai
    </propositions>
    ```
 
-### Uso de uma função de renderização {#using-a-rendering-function-}
+### Utilização de uma função de renderização {#using-a-rendering-function-}
 
 É possível usar uma função de renderização XML para criar uma apresentação de ofertas. Essa função modificará o nó XML retornado à página HTML durante a chamada para o mecanismo.
 
