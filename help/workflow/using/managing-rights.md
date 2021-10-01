@@ -7,7 +7,7 @@ content-type: reference
 topic-tags: advanced-management
 exl-id: 88995fb3-d336-4355-acd4-33118dd0e2b0
 source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '321'
 ht-degree: 100%
 
@@ -27,7 +27,7 @@ Para obter mais informações sobre gerenciamento de operadores e permissões, c
 
 ## Grupos de operadores {#operator-groups-wf}
 
-Os seguintes grupos de operadores estão associados ao workflow:
+Os seguintes grupos de operadores estão associados ao fluxo de trabalho:
 
 * O grupo **[!UICONTROL Workflow execution]** permite controlar a execução e a aprovação de workflows para construção de target: o direito nomeado WORKFLOW é mapeado para os operadores deste grupo. É necessário para todas as ações em workflows, além de direitos de acesso aos arquivos de dados. Por padrão, o grupo **[!UICONTROL Workflow execution]** tem acesso somente leitura de arquivos padrão de workflows para construção de target e templates de workflow. Os operadores neste grupo também têm acesso de leitura e gravação para o arquivo de aprovação pendente.
 * O grupo **[!UICONTROL Workflow supervisors]** permite que os operadores gerenciem aprovações de workflow.
@@ -37,7 +37,7 @@ Os seguintes grupos de operadores estão associados ao workflow:
 
 Somente o direito nomeado WORKFLOW é específico para workflows: permite criar, iniciar e parar workflows. Os direitos de leitura no arquivo de workflow são necessários para que o direito nomeado seja aplicável. Para workflows para construção do target, é necessário a leitura no arquivo **[!UICONTROL Profiles and Targets]**.
 
-## Conta de execução de workflow {#workflow-execution-account}
+## Conta de execução de fluxo de trabalho {#workflow-execution-account}
 
 Você pode configurar a conta de execução a ser usada no nível de template de workflow. A conta de execução permite mapear autorizações para o workflow diretamente, independentemente do operador do Adobe Campaign iniciando a execução. Por padrão, cada workflow é executado com os direitos do operador que o iniciou.
 
