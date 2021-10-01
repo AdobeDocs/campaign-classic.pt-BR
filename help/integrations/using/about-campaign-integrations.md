@@ -7,7 +7,7 @@ content-type: reference
 topic-tags: campaign-integrations
 exl-id: ceb584da-bc97-4b71-9499-59df5e6d10c3
 source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '757'
 ht-degree: 100%
 
@@ -29,7 +29,7 @@ A lista completa de soluções e serviços principais da Adobe que podem ser int
 >
 >A maioria dessas integrações exige a implementação do Sistema de gerenciamento de identidades (IMS) da Adobe para fazer logon via Adobe ID. [Saiba mais nesta página](../../integrations/using/about-adobe-id.md).
 
-## Vincular suas soluções {#working-with-experience-cloud-solutions}
+## Vincular soluções {#working-with-experience-cloud-solutions}
 
 Várias soluções podem ser vinculadas à Adobe Experience Cloud. Uma **organização** é a entidade-cliente que permite a um administrador configurar grupos e usuários e controlar o logon único (SSO) na Adobe Experience Cloud. A organização funciona como uma empresa de login que abrange todos os produtos e soluções da Experience Cloud. Na maioria das vezes, uma organização é o nome da sua empresa. No entanto, uma empresa pode ter muitas organizações.
 
