@@ -7,13 +7,13 @@ content-type: reference
 topic-tags: accessing-built-in-reports
 exl-id: dcbf280c-3040-4218-a453-1497662fef2e
 source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '213'
 ht-degree: 100%
 
 ---
 
-# Sobre relatórios de deliveries{#reports-on-deliveries}
+# Sobre relatórios de entregas{#reports-on-deliveries}
 
 ![](../../assets/common.svg)
 
@@ -27,7 +27,7 @@ Os seguintes tipos de relatório estão disponíveis:
 
 Você pode acessar relatórios na home page do console do cliente, do painel de relatórios ou da lista de delivery. O modo de exibição de um relatório depende de seu contexto. A lista de relatórios principais está disponível na home page e permite acessar os dados de delivery rapidamente. Essa lista pode ser alterada para atender às suas necessidades. Consulte [esta seção](../../reporting/using/about-reports-creation-in-campaign.md) para obter mais informações.
 
-## Uso de relatórios {#using-reports}
+## Utilização de relatórios {#using-reports}
 
 Um campo de pesquisa está disponível no painel do relatório para acesso rápido a um dos relatórios na lista.
 
