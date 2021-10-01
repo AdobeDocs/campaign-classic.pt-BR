@@ -7,7 +7,7 @@ content-type: reference
 topic-tags: designing-reports-with-cubes
 exl-id: 5f22fa2c-b648-4126-9a24-1798adfa8f34
 source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1491'
 ht-degree: 100%
 
@@ -51,7 +51,7 @@ No exemplo a seguir, os idiomas são agrupados em três categorias: inglês, ale
 
 Você pode usar uma máscara SQL para combinar vários valores em um filtro. Para fazer isso, marque **[!UICONTROL Yes]** na coluna **[!UICONTROL Use an SQL mask]** e insira o filtro SQL a ser aplicado na coluna **[!UICONTROL Value or expression]**.
 
-No exemplo abaixo, todos os domínios de email que começam com **yahoo** (yahoo.fr, yahoo.com, yahoo.be e etc.) ou com **ymail** (ymail.com, ymail.eu e etc.) serão agrupados no rótulo **YAHOO!**, assim como endereços com o domínio **rocketmail.com** .
+No exemplo abaixo, todos os domínios de email que começam com **yahoo** (yahoo.fr, yahoo.com, yahoo.be, etc.) ou com **ymail** (ymail.com, ymail.eu, etc.) serão agrupados no rótulo **YAHOO!**, assim como endereços com o domínio **rocketmail.com**.
 
 ![](assets/s_advuser_cube_class_03b.png)
 
