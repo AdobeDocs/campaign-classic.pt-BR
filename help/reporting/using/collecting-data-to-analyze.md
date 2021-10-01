@@ -7,7 +7,7 @@ content-type: reference
 topic-tags: creating-new-reports
 exl-id: cf621374-88f9-4def-8bea-87e0ea69ecd3
 source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '503'
 ht-degree: 100%
 
@@ -63,9 +63,9 @@ Clique no link **[!UICONTROL Edit query...]** e selecione os indicadores que des
 
 ![](assets/reporting_query_from_cube_edit_query.png)
 
-## Opções de filtro nas queries {#filtering-options-in-the-queries}
+## Opções de filtro em consultas {#filtering-options-in-the-queries}
 
-Para evitar a execução de queries no banco de dados inteiro, os dados precisam ser filtrados.
+Para evitar a execução de consultas em todo o banco de dados, os dados precisam ser filtrados.
 
 ### Filtro simplificado {#simplified-filter}
 
@@ -77,7 +77,7 @@ A opção **[!UICONTROL Filter with the folder]** permite especificar uma pasta 
 
 ### Limite da quantidade de dados coletados {#limiting-the-amount-of-data-collected}
 
-Configure o número de registros para extrair via query utilizando as opções de limite do resultado:
+Configurar o número de registros a serem extraídos de uma consulta utilizando as opções de limitação de resultados:
 
 * **[!UICONTROL Limit to first record]** para extrair um resultado,
 * **[!UICONTROL Size]** para extrair um número definido de registros.
