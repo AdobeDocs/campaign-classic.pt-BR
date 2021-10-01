@@ -7,7 +7,7 @@ content-type: reference
 topic-tags: -general-operation
 exl-id: 366acc1e-d769-4053-9fa1-f47182627c07
 source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '509'
 ht-degree: 100%
 
@@ -47,7 +47,7 @@ No entanto, recomendamos que você evite ativar essa opção quando a quantidade
 
 ![](assets/wf-purge-data-option.png)
 
-## Dados do Target {#target-data}
+## Dados do target {#target-data}
 
 Os dados armazenados na tabela de trabalho do workflow podem ser acessados nos campos de personalização.
 
