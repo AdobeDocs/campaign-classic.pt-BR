@@ -7,19 +7,19 @@ content-type: reference
 topic-tags: analyzing-populations
 exl-id: d133efec-33e1-4711-a90f-e40385059386
 source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '814'
 ht-degree: 100%
 
 ---
 
-# Uso de um relatório de análise{#processing-a-report}
+# Utilização de um relatório de análise{#processing-a-report}
 
 ![](../../assets/common.svg)
 
-## Salvamento de um relatório de análise {#saving-an-analysis-report}
+## Salvar um relatório de análise {#saving-an-analysis-report}
 
-Se tiver os direitos apropriados, poderá salvar um relatório de análise criado a partir de um template ou exportá-lo no formato Excel, PDF ou OpenOffice.
+Se tiver os direitos apropriados, poderá salvar um relatório de análise criado a partir de um modelo ou exportá-lo no formato Excel, PDF ou OpenOffice.
 
 Para salvar o relatório, clique em **[!UICONTROL Save]** e dê um rótulo a ele.
 
@@ -45,7 +45,7 @@ Essas opções são as mesmas dos relatórios padrão e são detalhadas [nesta p
 
 ## Configuração do layout de um relatório de análise descritiva {#configuring-the-layout-of-a-descriptive-analysis-report}
 
-É possível personalizar a visualização e layout dos dados nos gráficos e tabelas da análise descritiva. Todas as opções são acessadas através da árvore do Adobe Campaign, na guia **[!UICONTROL Edit]** de cada relatório.
+É possível personalizar a visualização e o layout dos dados nos gráficos e tabelas da análise descritiva. Todas as opções são acessadas através da árvore do Adobe Campaign, na guia **[!UICONTROL Edit]** de cada relatório.
 
 ### Modo de exibição do relatório de análise {#analysis-report-display-mode}
 
