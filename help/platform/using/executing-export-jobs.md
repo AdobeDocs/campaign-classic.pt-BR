@@ -7,7 +7,7 @@ content-type: reference
 topic-tags: importing-and-exporting-data
 exl-id: 94fc473a-dc49-41e8-b572-51c162b09996
 source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '926'
 ht-degree: 100%
 
@@ -25,7 +25,7 @@ O assistente de exportação permite configurar uma exportação, definir suas o
 
 O assistente de exportação é exibido após a criação de um novo trabalho de exportação (consulte [Criar trabalhos de importação e exportação](../../platform/using/creating-import-export-jobs.md).
 
-## Etapa 1 - Escolher o modelo de exportação {#step-1---choosing-the-export-template}
+## Etapa 1 - Escolher o template de exportação {#step-1---choosing-the-export-template}
 
 Ao iniciar o assistente de exportação, primeiro é necessário selecionar um template. Como exemplo, para configurar a exportação de destinatários que se registraram recentemente, siga as etapas abaixo:
 
@@ -97,7 +97,7 @@ Você pode adicionar condições de filtro para evitar a exportação de todos o
 
 ![](assets/s_ncs_user_export_wizard05_b.png)
 
-## Passo 7 - Formatação de dados {#step-7---data-formatting}
+## Etapa 7 - Formatação de dados {#step-7---data-formatting}
 
 Você pode modificar a ordem e o rótulo dos campos do arquivo de saída e aplicar transformações aos dados de origem.
 
@@ -117,7 +117,7 @@ Se você estiver exportando uma coleção de elementos (por exemplo, assinaturas
 
 ![](assets/s_ncs_user_export_wizard06_c.png)
 
-## Etapa 8 - Visualização de dados {#step-8---data-preview}
+## Etapa 8 - Pré-visualização de dados {#step-8---data-preview}
 
 Clique em **[!UICONTROL Start the preview of the data]** para pré-visualizar o resultado da exportação. Por padrão, as 200 primeiras linhas são exibidas. Para alterar esse valor, clique nas setas à direita do campo **[!UICONTROL Lines to display]**.
 
