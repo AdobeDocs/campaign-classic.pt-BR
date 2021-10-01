@@ -7,13 +7,13 @@ content-type: reference
 topic-tags: -general-operation
 exl-id: 8ba20ccd-b03f-4c4f-87c1-a21e80d8e4be
 source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1624'
 ht-degree: 100%
 
 ---
 
-# Criação de um fluxo de trabalho {#building-a-workflow}
+# Criação de um workflow {#building-a-workflow}
 
 ![](../../assets/common.svg)
 
@@ -43,7 +43,7 @@ Insira um rótulo e clique em **[!UICONTROL Save]**.
 
 >[!NOTE]
 >
->Quando você modifica o nome interno de uma atividade de workflow ou o próprio workflow, certifique-se de salvá-lo antes de fechá-lo para que o novo nome interno seja considerado corretamente.
+>Quando você modificar o nome interno de uma atividade de workflow ou o próprio workflow, certifique-se de salvá-lo antes de fechá-lo para que o novo nome interno seja considerado corretamente.
 
 ## Adição e vínculo de atividades {#adding-and-linking-activities}
 
@@ -118,11 +118,11 @@ Clique duas vezes em uma atividade para configurá-la ou clique com o botão dir
 
 As primeiras guias contêm a configuração básica. A guia **[!UICONTROL Advanced]** contém os parâmetros adicionais, que são usados principalmente para definir o comportamento em caso de erro, especificando a duração da execução para uma atividade e para inserir um script de inicialização.
 
-Para entender melhor as atividades e melhorar a legibilidade do workflow, você pode inserir comentários nas atividades: eles são exibidos automaticamente quando os operadores navegarem pela atividade.
+Para entender melhor as atividades e melhorar a legibilidade do fluxo de trabalho, você pode inserir comentários nas atividades: eles são exibidos automaticamente quando os operadores navegam pela atividade.
 
 ![](assets/example1-comment.png)
 
-## Workflows para construção do target {#targeting-workflows}
+## Fluxos de trabalho para construção do target {#targeting-workflows}
 
 Os workflows para construção do target permitem que você crie vários targets de delivery. Você pode criar queries, definir uniões ou exclusões com base em critérios específicos, adicionar agendamento, graças às atividades do workflow. O resultado desse target pode ser transferido automaticamente para uma lista que pode servir como target das ações de delivery
 
@@ -140,7 +140,7 @@ Os fluxos de trabalho para construção do target podem ser criados e editados p
 
 Os workflows para construção do target dentro da estrutura de uma campanha são armazenados com todos os workflows da campanha.
 
-### Etapas principais para criar um workflow para construção do target {#implementation-steps-}
+### Etapas principais para criar um fluxo de trabalho para construção do target {#implementation-steps-}
 
 As etapas para a criação de um workflow para construção do target estão detalhadas nestas seções:
 
@@ -150,7 +150,7 @@ As etapas para a criação de um workflow para construção do target estão det
 
 Os resultados de todos os enriquecimentos e todos tratamentos realizados no target são armazenados e acessíveis em campos de personalização, principalmente para usar criação de mensagens personalizadas. Para obter mais informações, consulte [Dados do target](data-life-cycle.md#target-data)
 
-### Targeting dimension e dimensão do filtro {#targeting-and-filtering-dimensions}
+### Dimensões de filtragem e direcionamento {#targeting-and-filtering-dimensions}
 
 Durante as operações de segmentação de dados, a chave de target é mapeada para uma dimensão de filtro. O targeting dimension permite definir o público alvo da operação: recipients, beneficiários de contrato, operadores, assinantes etc. A dimensão de filtro permite selecionar o público com base em determinados critérios: titulares de contratos, assinantes de boletins informativos, etc.
 
@@ -168,7 +168,7 @@ Enquanto para **Aplicações Web**, a lista conterá as seguintes dimensões de 
 
 ![](assets/query_filter_target_dimensions_2.png)
 
-## Workflows da campanha {#campaign-workflows}
+## Fluxos de trabalho da campanha {#campaign-workflows}
 
 Para cada campanha, você pode criar fluxos de trabalho que serão executados na guia **[!UICONTROL Targeting and workflows]**. Esses workflows são específicos da campanha.
 
@@ -202,7 +202,7 @@ Você pode criar outros workflows técnicos no nó **[!UICONTROL Administration 
 
 As atividades oferecidas são as mesmas para os workflows para construção do target. [Saiba mais](#implementation-steps-)
 
-## Templates de workflows {#workflow-templates}
+## Templates de workflow {#workflow-templates}
 
 Os templates de workflows possuem a configuração geral das propriedades e possivelmente uma série de atividades concatenadas em um diagrama. Essa configuração pode ser reutilizada para criar novos workflows com um determinado número de elementos pré-configurados
 
@@ -216,7 +216,7 @@ Além das propriedades usuais do workflow, as propriedades do template permitem 
 
 ![](assets/s_advuser_wf_template_properties.png)
 
-## Fluxos de trabalho duplicados {#duplicating-workflows}
+## Duplicação de workflows {#duplicating-workflows}
 
 É possível duplicar diferentes tipos de workflows: Após a duplicação, as modificações do workflow não são transferidas para a cópia do workflow.
 
