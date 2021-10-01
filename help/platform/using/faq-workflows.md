@@ -7,7 +7,7 @@ content-type: reference
 topic-tags: starting-with-adobe-campaign
 exl-id: 7d1bb3c6-d056-4212-9500-75459a0046fa
 source-git-commit: cfba72840f7a0d335516d38be24363865d83d18d
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '362'
 ht-degree: 100%
 
@@ -17,21 +17,21 @@ ht-degree: 100%
 
 ![](../../assets/v7-only.svg)
 
-Saiba como organizar processos e tarefas com fluxos de trabalho do Adobe Campaign.
+Saiba como organizar processos e tarefas com workflows do Adobe Campaign.
 
-## Quais são as principais etapas para criar um fluxo de trabalho? {#what-are-the-key-steps-to-create-a-workflow-}
+## Quais são as principais etapas para criar um workflow? {#what-are-the-key-steps-to-create-a-workflow-}
 
-[Clique aqui para saber como criar seu primeiro fluxo de trabalho](../../workflow/using/building-a-workflow.md): aprenda conceitos e práticas recomendadas para criar fluxos de trabalho no Campaign.
+[Clique aqui para saber como criar seu primeiro workflow](../../workflow/using/building-a-workflow.md): aprenda conceitos e práticas recomendadas para criar workflows no Campaign.
 
 ## Como posso importar dados no Campaign? {#how-can-i-import-data-in-campaign-}
 
 Saiba mais sobre as práticas recomendadas para importar dados [nesta seção](../../platform/using/import-export-best-practices.md).
 
-## Posso monitorar a execução do fluxo de trabalho? {#can-i-monitor-workflow-execution-}
+## Posso monitorar a execução do workflow? {#can-i-monitor-workflow-execution-}
 
-Entenda como monitorar a execução do fluxo de trabalho do Campaign [nesta página](../../workflow/using/starting-a-workflow.md).
+Entenda como monitorar a execução do workflow do Campaign [nesta página](../../workflow/using/starting-a-workflow.md).
 
-## Como posso atualizar dados do Campaign com um fluxo de trabalho? {#how-can-i-update-campaign-data-with-a-workflow-}
+## Como posso atualizar dados do Campaign com um workflow? {#how-can-i-update-campaign-data-with-a-workflow-}
 
 Você pode executar uma atualização em grande escala, mesclar e inserir dados no banco de dados.
 
@@ -51,16 +51,16 @@ No Adobe Campaign, você pode aproveitar um conjunto de atividades para resolver
 
 Leia [este caso de uso](../../workflow/using/enriching-data.md) para enviar mensagens personalizadas às pessoas de acordo com suas pontuações mais altas em uma competição.
 
-## Como dividir um público em subconjuntos com um fluxo de trabalho? {#how-can-i-split-an-audience-in-subsets-with-a-workflow-}
+## Como dividir um público em subconjuntos com um workflow? {#how-can-i-split-an-audience-in-subsets-with-a-workflow-}
 
 Saiba como dividir um destino em vários subconjuntos [nesta seção](../../workflow/using/split.md).
 
-## Como posso atualizar os dados do destinatário de um arquivo externo? {#how-can-i-update-recipient-data-from-an-external-file-}
+## Como posso atualizar os dados do recipient de um arquivo externo? {#how-can-i-update-recipient-data-from-an-external-file-}
 
 Você pode modificar determinados campos em uma tabela do Campaign com valores de um arquivo de texto externo.
 
 [Clique aqui para saber como](../../platform/using/import-operations-samples.md#example--enrich-the-values-with-those-of-an-external-file).
 
-## Como posso identificar e direcionar novos destinatários? {#how-can-i-identify-and-target-new-recipients-}
+## Como posso identificar e direcionar novos recipients? {#how-can-i-identify-and-target-new-recipients-}
 
-[Este caso de uso](../../workflow/using/using-aggregates.md) ensina como usar agregações para identificar automaticamente os últimos destinatários adicionados ao banco de dados e enviar a eles uma mensagem de boas-vindas.
+[Este caso de uso](../../workflow/using/using-aggregates.md) ensina como usar agregações para identificar automaticamente os últimos recipients adicionados ao banco de dados e enviar a eles uma mensagem de boas-vindas.
