@@ -7,7 +7,7 @@ content-type: reference
 topic-tags: accessing-built-in-reports
 exl-id: 69b810f3-aa8b-4ab5-95c1-831257d7fcb9
 source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '701'
 ht-degree: 100%
 
@@ -44,7 +44,7 @@ Os seguintes logs de rastreamento são retornados:
 
 Para ter uma ideia mais clara de como as pessoas e os recipients são contados, vamos analisar os logs de cada perfil.
 
-## Etapa 1 - John {#step-1--john}
+## Etapa 1: John {#step-1--john}
 
 **[!UICONTROL John Davis]** não abre o email (e, portanto, não clica em nenhum link).
 
@@ -59,7 +59,7 @@ Como John não abriu e nem clicou no email, ele não aparece nos logs.
 | John | - | - | - |
 | Total intermediário | 0 | 0 | 0 |
 
-## Etapa 2 - Marie {#step-2--marie}
+## Etapa 2: Marie {#step-2--marie}
 
 **[!UICONTROL Marie Stuart]** abre o email, mas não clica em nenhum link.
 
@@ -79,7 +79,7 @@ A abertura é atribuída a um destinatário: Marie. O Adobe Campaign, portanto, 
 | Marie | - | - | +1 |
 | Total intermediário | 0 | 0 | 1 |
 
-## Etapa 3 - Florian {#step-3--florian}
+## Etapa 3: Florian {#step-3--florian}
 
 **[!UICONTROL Florian David]** abre o email e clica nos links 9 vezes. Ele também encaminha o email a alguém que o abre e clica duas vezes.
 
@@ -124,7 +124,7 @@ Os seguintes logs correspondem à abertura e aos dois cliques realizados pela pe
 | Pessoa desconhecida | - | +1 | - |
 | Total intermediário | 1 | 2 | 2 |
 
-## Etapa 4 - Henry {#step-4--henry}
+## Etapa 4: Henry {#step-4--henry}
 
 **[!UICONTROL Henry Macdonald]** configurou o navegador da Internet para rejeitar os cookies. Ele abre o email e clica nos links 4 vezes.
 
