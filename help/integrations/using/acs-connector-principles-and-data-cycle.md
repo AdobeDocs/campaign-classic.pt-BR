@@ -7,7 +7,7 @@ content-type: reference
 topic-tags: acs-connector
 exl-id: 689b6117-5143-4f85-8582-2c74cae72ca2
 source-git-commit: 91dec9adb177aedc4a82879011371b54886166be
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1988'
 ht-degree: 100%
 
@@ -153,7 +153,7 @@ Os workflows de replicação a seguir estão disponíveis como modelos &quot;pro
 * **[!UICONTROL `[ACS] Profile delivery log replication`]** (newRcpDeliveryLogReplication): este workflow incremental replica IDs de delivery, registros abrangentes de e-mail e logs de rastreamento de e-mail do Campaign Standard para o Campaign v7. Somente leva em conta deliveries enviadas do Campaign Standard para perfis que fazem parte da tabela nms:recipients do Campaign v7.
 * **[!UICONTROL `[ACS] New delivery log replication`]** (newRcpDeliveryLogReplication): este workflow incremental replica IDs de delivery, registros abrangentes de e-mail e logs de rastreamento de e-mail do Campaign Standard para o Campaign v7. Somente leva em conta deliveries enviadas do Campaign Standard para perfis que fazem parte de uma tabela específica (para definir, diferente de nms:recipients) do Campaign v7.
 
-### Campos de recipients padrão {#default-recipient-fields}
+### Campos de recipient padrão {#default-recipient-fields}
 
 Se houverem campos adicionais ou tabelas personalizadas (tabela de transações, por exemplo), elas não serão replicadas por padrão. As necessidades de configuração avançadas devem ser executadas. Consulte [Implementação avançada](#advanced-implementation).
 
