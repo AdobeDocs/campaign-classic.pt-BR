@@ -7,7 +7,7 @@ content-type: reference
 topic-tags: importing-and-exporting-data
 exl-id: 266ecd49-7101-4ff1-941f-1f9b39b44955
 source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '261'
 ht-degree: 100%
 
@@ -21,7 +21,7 @@ ht-degree: 100%
 
 Os workflows podem ser uma maneira útil de automatizar alguns dos processos de importação. Se você importa dados de um arquivo local ou de um SFTP, você pode usar workflows para padronizar os procedimentos de gerenciamento de dados.
 
-### usar dados de uma lista: Lista de leitura {#using-data-from-a-list--read-list}
+### Usar dados de uma lista: Lista de leitura {#using-data-from-a-list--read-list}
 
 Os dados enviados em um fluxo de trabalho podem vir de listas em que os dados foram preparados e estruturados antecipadamente.
 
