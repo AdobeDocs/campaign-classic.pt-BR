@@ -7,7 +7,7 @@ content-type: reference
 topic-tags: creating-new-reports
 exl-id: efee50f7-d917-4c71-add2-116c4b8f7013
 source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '245'
 ht-degree: 100%
 
@@ -35,7 +35,7 @@ No exemplo a seguir, a condição de exibição depende do idioma:
 
 ![](assets/reporting_display_condition.png)
 
-## Condições de exibição da página {#conditioning-page-display}
+## Exibição da página de condição {#conditioning-page-display}
 
 No gráfico de um relatório, a atividade **[!UICONTROL Test]** permite alterar a sequência de páginas dependendo de uma ou mais condições.
 
