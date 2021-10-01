@@ -7,7 +7,7 @@ content-type: reference
 topic-tags: distributed-marketing
 exl-id: 2bef6b5e-887e-4c56-bb4b-3583472ca333
 source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1296'
 ht-degree: 100%
 
@@ -73,7 +73,7 @@ Neste exemplo, as seguintes APIs são usadas:
    var res = nms.localOrder.EvaluateContent(ctx.localOrder, ctx.@deliveryId, "html", resSeed.@id);
    ```
 
-## Criação de uma campanha colaborativa (por aprovação de target) {#creating-a-collaborative-campaign--by-target-approval-}
+## Criação de uma campanha de colaboração (por aprovação do target) {#creating-a-collaborative-campaign--by-target-approval-}
 
 ### Introdução {#introduction}
 
@@ -118,7 +118,7 @@ Depois que as verificações foram aprovadas, a campanha poderá iniciar automat
 
 ### Lado da entidade central {#central-entity-side}
 
-#### Criando uma atividade de distribuição de dados {#creating-a-data-distribution-activity}
+#### Criação de uma atividade de distribuição de dados {#creating-a-data-distribution-activity}
 
 1. Para configurar uma campanha colaborativa (por aprovação de target), primeiro você deve criar um **[!UICONTROL Data distribution activity]**. Clique no ícone **[!UICONTROL New]** no nó **[!UICONTROL Resources > Campaign management > Data distribution]**.
 
@@ -159,7 +159,7 @@ Depois que as verificações foram aprovadas, a campanha poderá iniciar automat
 
 1. Salve seu registro.
 
-#### Publicar a campanha {#publishing-the-campaign}
+#### Publicação da campanha {#publishing-the-campaign}
 
 Agora você pode adicionar um **pacote de campanha** na guia **[!UICONTROL Campaigns]**.
 
@@ -174,11 +174,11 @@ Agora você pode adicionar um **pacote de campanha** na guia **[!UICONTROL Campa
 
    ![](assets/mkg_dist_use_case_target_valid1.png)
 
-1. Aprove seu pacote de campanha e inicie o workflow para publicar o pacote e disponibilizá-lo à todas as entidades locais na lista de pacotes.
+1. Aprove seu pacote de campanha e inicie o fluxo de trabalho para publicar o pacote e disponibilizá-lo a todas as entidades locais na lista de pacotes.
 
    ![](assets/mkg_dist_use_case_target_valid2.png)
 
-## Criar uma campanha colaborativa (por formulário) {#creating-a-collaborative-campaign--by-form-}
+## Criação de uma campanha colaborativa (por formulário) {#creating-a-collaborative-campaign--by-form-}
 
 ### Introdução {#introduction-1}
 
@@ -228,7 +228,7 @@ As etapas são as seguintes:
 
 ### Lado da entidade central {#central-entity-side-1}
 
-1. Para implementar uma campanha colaborativa (por formulário), você deve criar uma campanha usando o template **Collaborative campaign (by form)**.
+1. Para implementar uma campanha colaborativa (por formulário), você deve criar uma campanha usando a template **Campanha colaborativa (por formulário)**.
 
    ![](assets/mkg_dist_use_case_form_1.png)
 
