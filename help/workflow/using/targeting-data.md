@@ -7,9 +7,9 @@ content-type: reference
 topic-tags: -general-operation
 exl-id: 74b82019-bdab-4442-84cf-5ad18d0db788
 source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1924'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -55,13 +55,13 @@ As coleções são mostradas na subguia **[!UICONTROL Collections]**. Você pode
 
 ### Refinamento do target usando dados adicionais {#refining-the-target-using-additional-data}
 
-Os dados adicionais coletados podem habilitar a filtragem de dados no banco de dados. Para fazer isso, clique no link **[!UICONTROL Refine the target using additional data...]**: isso permite filtrar os dados adicionados.
+Os dados adicionais coletados podem capacitá-lo a refinar a filtragem de dados no banco de dados. Para fazer isso, clique no link **[!UICONTROL Refine the target using additional data...]**: isso permite filtrar os dados adicionados.
 
 ![](assets/wf_add_data_use_additional_data.png)
 
 ### Uniformização de dados {#homogenizing-data}
 
-Em **[!UICONTROL Union]** ou **[!UICONTROL Intersection]** digite atividades, é possível escolher manter apenas os dados adicionais compartilhados para manter a consistência dos dados. Nesse caso, a mesa de trabalho temporária de output dessa atividade conterá apenas os dados adicionais encontrados em todos os conjuntos de entradas.
+Em **[!UICONTROL Union]** ou **[!UICONTROL Intersection]** digite atividades, é possível escolher manter apenas os dados adicionais compartilhados para manter a consistência dos dados. Nesse caso, a mesa de trabalho de saída temporária dessa atividade conterá apenas os dados adicionais encontrados em todos os conjuntos de entradas.
 
 ![](assets/option-common_additionnal_col_only.png)
 
@@ -129,7 +129,7 @@ Além disso, é possível manter apenas uma seleção de colunas ou apenas as co
 
 A atividade de intersecção é detalhada na seção [Intersection](intersection.md).
 
-### Excluir um público (Exclusão) {#excluding-a-population--exclusion-}
+### Excluir uma população (Exclusão) {#excluding-a-population--exclusion-}
 
 A atividade de exclusão permite excluir os elementos de um target de um público alvo diferente. O targeting dimension de output dessa atividade será do conjunto principal.
 
@@ -139,7 +139,7 @@ A reconciliação de dados é realizada por meio de um identificador, alterando 
 
 ![](assets/exclusion_edit_add_rule_01.png)
 
-### Criação de subconjuntos usando a atividade de Split {#creating-subsets-using-the-split-activity}
+### Criação de subconjuntos usando a atividade Divisão {#creating-subsets-using-the-split-activity}
 
 A atividade **[!UICONTROL Split]** é uma atividade padrão que permite criar os conjuntos necessários por meio de uma ou várias dimensões de filtro, bem como gerar uma transição de output por subconjunto ou uma transição exclusiva.
 
@@ -177,11 +177,11 @@ Para configurá-lo, primeiro é necessário selecionar os critérios:
 
    ![](assets/split-subset-config-add_external_data.png)
 
-   Para obter mais informações, dependendo da versão do Campaign, consulte estas seções:
+   Para mais informações, dependendo da versão do Campaign, consulte estas seções:
 
-   ![](assets/do-not-localize/v7.jpeg)[  Documentação do Campaign v7](../../installation/using/about-fda.md)
+   ![](assets/do-not-localize/v7.jpeg)[ Documentação do Campaign v7](../../installation/using/about-fda.md)
 
-   ![](assets/do-not-localize/v8.png)[  Documentação do Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/connect/fda.html?lang=en)
+   ![](assets/do-not-localize/v8.png)[ Documentação do Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/connect/fda.html?lang=pt-BR)
 
 Em seguida, precisamos adicionar novos subconjuntos:
 
