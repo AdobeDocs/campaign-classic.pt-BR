@@ -7,7 +7,7 @@ content-type: reference
 topic-tags: distributed-marketing
 exl-id: 17313fe5-ad42-45ca-a35a-1e7aa89380ef
 source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '912'
 ht-degree: 100%
 
@@ -41,7 +41,7 @@ Selecione a interface da web **By form**. Esse tipo de interface permite criar c
 
 Salve sua campanha. Agora você pode usá-lo na visualização **Pacotes do Campaign** na guia **Campaign** clicando no botão **[!UICONTROL Create]**.
 
-A visualização **[!UICONTROL Campaign Package]** permite que você use modelos de campanha locais (integrados ou duplicados), bem como campanhas de referência para campanhas colaborativas, com o objetivo de criar campanhas para suas diferentes entidades organizacionais.
+A visualização **[!UICONTROL Campaign Package]** permite que você use templates de campanha locais (prontos para utilização ou duplicados), bem como campanhas de referência para campanhas colaborativas, com o objetivo de criar campanhas para suas diferentes entidades organizacionais.
 
 ![](assets/mkg_dist_mutual_op_form1b.png)
 
@@ -103,9 +103,9 @@ A entidade local pode excluir determinados contatos com base no conteúdo da cam
 
 ### Simples {#simple}
 
-Para criar uma campanha colaborativa simples, o modelo **[!UICONTROL Collaborative campaign (simple)]** deve ser selecionado.
+Para criar uma campanha colaborativa simples, o template **[!UICONTROL Collaborative campaign (simple)]** deve ser selecionado.
 
-## Criar um pacote de campanha colaborativa {#creating-a-collaborative-campaign-package}
+## Criação de um pacote de campanha colaborativa {#creating-a-collaborative-campaign-package}
 
 Para disponibilizar uma campanha para entidades locais, a entidade central deve criar um pacote de campanha.
 
