@@ -7,13 +7,13 @@ content-type: reference
 topic-tags: -general-operation
 exl-id: 39c57f61-2629-4214-91e4-cb97dc039deb
 source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1612'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
-# Práticas recomendadas de fluxo de trabalho{#workflow-best-practices}
+# Práticas recomendadas de workflow{#workflow-best-practices}
 
 ![](../../assets/common.svg)
 
@@ -21,7 +21,7 @@ ht-degree: 99%
 
 As diretrizes gerais sobre a otimização do desempenho do Campaign estão listadas abaixo, incluindo as práticas recomendadas para aplicar aos workflows.
 
-Diretrizes para solução de problemas relacionados à execução de workflows também estão disponíveis no [Campaign Classic v7 Production Guide](../../production/using/workflow-execution.md).
+As diretrizes para solução de problemas relacionados à execução de workflows também estão disponíveis no [Guia de produção do Campaign Classic v7](../../production/using/workflow-execution.md).
 
 ### Logs {#logs}
 
@@ -54,7 +54,7 @@ Para saber como limpar seus registros, consulte esta [documentação](starting-a
 * Para reduzir os tempos de execução gerais, substitua atividades demoradas por atividades simplificadas e mais rápidas.
 * Evite executar mais de 20 workflows simultaneamente. Quando muitos workflows são executados ao mesmo tempo, o sistema pode ficar sem recursos e se tornar instável. Para obter mais informações sobre por que o workflow pode não estar sendo iniciado, consulte este [artigo](https://helpx.adobe.com/ie/campaign/kb/workflows-not-starting-in-a-campaign-technical-workflows.html).
 
-### Execução do fluxo de trabalho {#workflow-execution}
+### Execução do workflow {#workflow-execution}
 
 É recomendável não agendar um workflow para execução por mais de 15 minutos porque pode atrapalhar o desempenho geral do sistema e criar bloqueios no banco de dados.
 
@@ -70,13 +70,13 @@ Além disso, pare os workflows não utilizados. Os workflows que continuam em ex
 
 Use apenas parada incondicional nos casos mais raros. Não utilize esta ação regularmente. Não executar um encerramento limpo nas conexões geradas pelos workflows com o banco de dados afeta o desempenho.
 
-### Executar na opção do motor {#execute-in-the-engine-option}
+### Opção de Executar no mecanismo {#execute-in-the-engine-option}
 
-Na janela **[!UICONTROL Workflow properties]**, nunca marque a opção **[!UICONTROL Execute in the engine]**. Quando essa opção estiver habilitada, o workflow tem prioridade e todos os outros workflows são interrompidos pelo motor de workflow até que este seja concluído.
+Na janela **[!UICONTROL Workflow properties]**, nunca marque a opção **[!UICONTROL Execute in the engine]**. Quando essa opção está habilitada, o workflow tem prioridade e todos os outros workflows são interrompidos pelo mecanismo do workflow até que este seja concluído.
 
 ![](assets/wf-execute-in-engine.png)
 
-## Propriedades do fluxo de trabalho {#workflow-properties}
+## Propriedades do workflow {#workflow-properties}
 
 ### Pastas de workflow {#workflow-folders}
 
@@ -112,9 +112,9 @@ Essa opção tem impacto funcional somente nos workflows da campanha.
 
 Workflows da campanha (workflows criados como parte de uma campanha/operação) com uma severidade mais alta são executados com prioridade caso a campanha tenha muitos processos executados simultaneamente. Por padrão, apenas dez processos podem ser executados simultaneamente em uma campanha, de acordo com a opção NmsOperation_LimitConcurrency. Por exemplo, se uma campanha contêm 25 workflows, os workflows com uma severidade mais alta serão executados no primeiro pool de dez processos.
 
-### Monitoramento de fluxo de trabalho {#workflow-monitoring}
+### Monitoramento do workflow {#workflow-monitoring}
 
-Todos os workflows agendados executados em ambientes de produção devem ser monitorados para enviar alerta em caso de erro.
+Todos os workflows agendados que estão sendo executados em ambientes de produção devem ser monitorados para que um alerta seja enviado em caso de erro.
 
 Nas propriedades do fluxo de trabalho, selecione um grupo supervisor, seja o grupo **[!UICONTROL Workflow supervisors]** padrão ou um grupo personalizado. Certifique-se de que pelo menos um operador participe desse grupo, com um email definido.
 
@@ -134,7 +134,7 @@ O Workflow HeatMap permite aos administradores da plataforma Adobe Campaign moni
 
 Ao desenvolver seu workflow, todas as atividades terão um nome, como todos os objetos do Adobe Campaign. Embora o nome seja gerado pela ferramenta, recomendamos que você renomeie com um nome explícito ao configurá-lo. O risco de fazer isso depois é que pode interromper o workflow com atividades usando o nome de outra atividade anterior. Portanto, seria um trabalho difícil atualizar os nomes depois.
 
-O nome da atividade pode ser encontrado na guia **[!UICONTROL Advanced]**. Não use nomes como **[!UICONTROL query]**, **[!UICONTROL query1]**, **[!UICONTROL query11]**, mas sim nomes explícitos como **[!UICONTROL querySubscribedRecipients]**. Esse nome aparecerá no journal e, se aplicável, nos logs SQL, e isso ajudará a depurar o workflow ao configurá-lo.
+O nome da atividade pode ser encontrado na guia **[!UICONTROL Advanced]**. Não use nomes como **[!UICONTROL query]**, **[!UICONTROL query1]**, **[!UICONTROL query11]**, mas sim nomes explícitos como **[!UICONTROL querySubscribedRecipients]**. Esse nome aparecerá no diário e, se aplicável, nos logs SQL, e isso ajudará a depurar o fluxo de trabalho ao configurá-lo.
 
 ### Primeira e última atividades {#first-and-last-activities}
 
@@ -147,7 +147,7 @@ O nome da atividade pode ser encontrado na guia **[!UICONTROL Advanced]**. Não 
 
 ### Javascript em uma atividade {#javascript-within-an-activity}
 
-Você pode adicionar JavaScript ao inicializar uma atividade do workflow. Isso pode ser feito na guia **[!UICONTROL Advanced]** da atividade.
+Você pode adicionar JavaScript ao inicializar uma atividade do fluxo de trabalho. Isso pode ser feito na guia **[!UICONTROL Advanced]** da atividade.
 
 Para facilitar a identificação do fluxo de trabalho, recomendamos usar traços duplos no início e no fim do rótulo da atividade da seguinte maneira: -- Meu rótulo --.
 
@@ -157,7 +157,7 @@ Na maior parte do tempo, você não saberá de onde o sinal é chamado. Para evi
 
 ![](assets/workflow-signal-bp.png)
 
-## Atualização de workflow {#workflow-update}
+## Atualização de fluxo de trabalho {#workflow-update}
 
 Um workflow de produção não deve ser atualizado diretamente. A menos que o processo consista na criação de uma campanha com templates de workflows, os processos devem ser testados primeiro em um ambiente de desenvolvimento. Após essa validação, o workflow pode ser implantado e iniciado na produção.
 
