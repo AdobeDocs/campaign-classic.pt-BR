@@ -7,7 +7,7 @@ content-type: reference
 topic-tags: use-case
 exl-id: 755d2364-f6c4-4943-97e8-3ed52a0f2665
 source-git-commit: 7f4bbf3e79d6cdaf17987b9307ebf12801abad22
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '625'
 ht-degree: 100%
 
@@ -17,7 +17,7 @@ ht-degree: 100%
 
 ![](../../assets/v7-only.svg)
 
-O objetivo deste caso de uso é adicionar anexos de email em tempo real a expedições de saída.
+O objetivo deste caso de uso é adicionar anexos de email, em tempo real, a expedições de saída.
 
 ## Principais etapas {#key-steps}
 
