@@ -6,9 +6,9 @@ audience: workflow
 content-type: reference
 topic-tags: technical-workflows
 source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '229'
-ht-degree: 85%
+ht-degree: 100%
 
 ---
 
@@ -17,13 +17,13 @@ ht-degree: 85%
 
 ![](../../assets/common.svg)
 
-Os workflows detalhados abaixo são instalados com o complemento **Message Center - Execution** por padrão.
+Os workflows detalhados abaixo são instalados com o complemento **Centro de Mensagens – Execução** por padrão.
 
-Para obter mais informações, dependendo da versão do Campaign, consulte estas seções:
+Para mais informações, dependendo da versão do Campaign, consulte estas seções:
 
 ![](assets/do-not-localize/v7.jpeg)[  Documentação do Campaign v7](../../message-center/using/about-transactional-messaging.md)
 
-![](assets/do-not-localize/v8.png)[  Documentação do Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/transactional.html)
+![](assets/do-not-localize/v8.png)[  Documentação do Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/transactional.html?lang=pt-BR)
 
 <table> 
  <tbody> 
