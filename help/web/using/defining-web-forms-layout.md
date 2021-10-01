@@ -7,7 +7,7 @@ content-type: reference
 topic-tags: web-forms
 exl-id: 23ca17f8-de1a-4f9c-8357-3965dc3329b1
 source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '523'
 ht-degree: 100%
 
@@ -19,7 +19,7 @@ ht-degree: 100%
 
 ## Criação de containers {#creating-containers}
 
-Os containers permitem combinar os campos de uma página e configurar seu layout; para organizar os elementos na página.
+Os containers permitem combinar os campos de uma página e configurar seu layout para organizar os elementos na página.
 
 Para cada página do formulário, os são criados por meio do botão **[!UICONTROL Containers]** Containers da barra de ferramentas.
 
