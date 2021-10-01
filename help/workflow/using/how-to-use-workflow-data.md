@@ -7,7 +7,7 @@ content-type: reference
 topic-tags: -general-operation
 exl-id: 5354d608-2fea-45f9-a0aa-11c7e965ab04
 source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '408'
 ht-degree: 100%
 
@@ -35,11 +35,11 @@ Os dados do banco de dados do Adobe Campaign e as listas existentes podem ser at
 
 * A atividade **[!UICONTROL Update data]** realiza uma atualização em massa dos campos no banco de dados.
 
-   Para obter mais informações, consulte [Atualização de dados](update-data.md).
+   Para mais informações, consulte [Atualização de dados](update-data.md).
 
-### Gestão de assinatura/unsubscription {#subscription-unsubscription-management}
+### Gestão de assinatura/cancelamento de assinatura {#subscription-unsubscription-management}
 
-Para saber mais sobre subscrição e cancelamento de subscrição de recipients de um serviço de informações via workflow, consulte [Serviços de subscrição](subscription-services.md).
+Para saber mais sobre assinatura e cancelamento de assinatura de recipients em um serviço de informação por meio de um workflow, consulte [Serviços de assinatura](subscription-services.md).
 
 ## Envio por workflow {#sending-via-a-workflow}
 
@@ -47,7 +47,7 @@ Para saber mais sobre subscrição e cancelamento de subscrição de recipients 
 
 A atividade de delivery é detalhada em [Delivery](delivery.md).
 
-### Enriquecimento e target de deliveries {#enriching-and-targeting-deliveries}
+### Enriquecimento e direcionamento de deliveries {#enriching-and-targeting-deliveries}
 
 Os deliveries podem processar dados de workflows para personalizar o conteúdo ou dentro da estrutura de seleção do público alvo.
 
