@@ -7,7 +7,7 @@ content-type: reference
 topic-tags: editing-html-content
 exl-id: c1eccb48-59bf-412f-9c18-9cda2a022096
 source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '548'
 ht-degree: 100%
 
@@ -88,7 +88,7 @@ A seção superior do editor exibe mensagens relacionadas ao status do conteúdo
 * Há n área(s) de entrada ou botões para configurar.
 * Para habilitar a transição para a próxima página, você precisa vincular a ação &quot;Próxima página&quot; a um botão ou link na página atual.
 
-### Lista de mensagens ao editar um delivery {#list-of-messages-when-editing-a-delivery}
+### Lista de mensagens ao editar uma entrega {#list-of-messages-when-editing-a-delivery}
 
 * O conteúdo do delivery é funcional
 * Há n campos ou blocos de personalização para configurar.
