@@ -7,7 +7,7 @@ content-type: reference
 topic-tags: use-cases
 exl-id: 5e77d196-5c71-438e-8dae-10c6a6e4f29c
 source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '518'
 ht-degree: 100%
 
@@ -61,7 +61,7 @@ Para **[!UICONTROL Campaign process ('operationMgt', 'deliveryMgt', ...)]**:
 1. Examine todos os workflows localizados na pasta **[!UICONTROL Campaign process]**. Para obter mais informações, consulte esta [página](about-technical-workflows.md).
 1. Verifique se os workflows são executados como agendados e se o journal não realça erros recorrentes.
 
-## Supervisão de workflow {#workflow-supervision}
+## Supervisão de fluxo de trabalho {#workflow-supervision}
 
 O grupo **[!UICONTROL Workflow supervisors]** deve conter operadores que precisam ser informados sobre falhas e quem pode agir a tempo.
 
@@ -73,7 +73,7 @@ Verifique se cada operador tem um endereço de email válido.
 
 Qualquer workflow que deve ser executado para manter o funcionamento da plataforma, como importações diárias de dados, deve ser declarado como “Produção” (caixa de seleção) e aparecer em negrito.
 
-## Lista de manutenção de workflow {#workflow-maintenance-list}
+## Lista de manutenção de fluxo de trabalho {#workflow-maintenance-list}
 
 Todos os workflows técnicos personalizados devem ser documentados em uma planilha que contém:
 
