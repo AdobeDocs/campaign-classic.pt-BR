@@ -7,7 +7,7 @@ content-type: reference
 topic-tags: creating-new-reports
 exl-id: 4c2aad47-0e2d-4d0b-8898-b437f4a05e11
 source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '923'
 ht-degree: 100%
 
@@ -133,7 +133,7 @@ Os elementos estáticos permitem exibir informações no relatório, como elemen
 
 ![](assets/s_advuser_report_page_activity_03.png)
 
-### Filtro de informações em um relatório {#filtering-information-in-a-report}
+### Filtragem de informações em um relatório {#filtering-information-in-a-report}
 
 Os controles de entrada e seleção permitem filtrar as informações exibidas no relatório. Para obter mais informações sobre como implementar esse tipo de filtragem, consulte as opções de [Filtragem nas consultas](../../reporting/using/collecting-data-to-analyze.md#filtering-options-in-the-queries).
 
