@@ -7,7 +7,7 @@ content-type: reference
 topic-tags: distributed-marketing
 exl-id: 5534bd5b-6888-4bf6-8a39-109c6fc0f6c3
 source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '169'
 ht-degree: 100%
 
@@ -37,4 +37,4 @@ As entidades locais podem adaptar o conteúdo da campanha de acordo com suas nec
 
 ## Execução da campanha {#campaign-execution}
 
-Cada entidade local pode executar o workflow da campanha e executar as aprovações necessárias com base no processo definido no template da campanha.
+Cada entidade local pode executar o workflow da campanha e realizar as aprovações necessárias com base no processo definido no template da campanha.
