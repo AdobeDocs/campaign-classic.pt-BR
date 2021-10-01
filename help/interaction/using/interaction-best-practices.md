@@ -7,7 +7,7 @@ content-type: reference
 topic-tags: interaction-overview
 exl-id: 98413cde-50c9-416c-8316-85837f724c27
 source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1193'
 ht-degree: 100%
 
@@ -60,7 +60,7 @@ Abaixo estão listadas algumas práticas recomendadas relacionadas à tabela de 
 
 Esta seção contém recomendações mais detalhadas sobre como gerenciar ofertas e usar o módulo de interação no Adobe Campaign Classic.
 
-### Uso de vários espaços de ofertas em um delivery de email {#multiple-offer-spaces}
+### Utilização de vários espaços de oferta em uma entrega de email {#multiple-offer-spaces}
 
 Ao incluir ofertas em deliveries, elas são geralmente selecionadas em upstream no fluxo de trabalho do Campaign por meio de uma atividade de enriquecimento (ou outra atividade semelhante).
 
