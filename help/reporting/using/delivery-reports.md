@@ -7,7 +7,7 @@ content-type: reference
 topic-tags: accessing-built-in-reports
 exl-id: 74feb13f-0994-4a6a-ae4f-2538b07cc9c0
 source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1443'
 ht-degree: 100%
 
@@ -120,7 +120,7 @@ Essa seção mostra o número de mensagens compartilhadas em cada rede social. P
 
 ## Fluxos de clique e URLs {#urls-and-click-streams}
 
-Este relatório mostra a lista de páginas visitadas após um delivery.
+Este relatório mostra a lista de páginas visitadas após uma entrega.
 
 ![](assets/s_ncs_user_url_report.png)
 
@@ -150,7 +150,7 @@ Este gráfico mostra o detalhamento de cliques acumulados por dia.
 
 ## Resumo da entrega {#delivery-summary}
 
-Esse relatório fornece todas as informações principais sobre o delivery.
+Esse relatório fornece todas as informações principais sobre a entrega.
 
 ![](assets/s_ncs_user_synth_report.png)
 
