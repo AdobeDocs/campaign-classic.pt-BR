@@ -7,13 +7,13 @@ content-type: reference
 topic-tags: use-cases
 exl-id: dfd36d2c-44ff-49a9-80b4-09eaf3377072
 source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '666'
 ht-degree: 100%
 
 ---
 
-# Fluxo de trabalho de entrega entre canais{#cross-channel-delivery-workflow}
+# Workflow de delivery entre canais{#cross-channel-delivery-workflow}
 
 ![](../../assets/common.svg)
 
@@ -67,7 +67,7 @@ Para definir seu target, crie uma query para identificar os recipients.
 
    ![](assets/wkf_cross-channel_4.png)
 
-## Etapa 3: Direcionamento do público resultante {#step-3--segmenting-the-resulting-audience}
+## Etapa 3: Segmentação do público resultante {#step-3--segmenting-the-resulting-audience}
 
 Depois que seu target for identificado e seu primeiro fornecimento for criado, será necessário segmentar o target em diferentes populações usando condições de filtro.
 
