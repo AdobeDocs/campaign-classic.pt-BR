@@ -1,15 +1,15 @@
 ---
 product: campaign
 title: Rastrear hipótese
-description: Saiba como rastrear a hipótese no Campaign Response Manager
+description: Saiba como rastrear hipóteses no Gestor de resposta do Campaign
 audience: campaign
 content-type: reference
 topic-tags: response-manager
 exl-id: 1dc6d03b-698c-4750-9563-0676fcd185df
 source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '455'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -19,7 +19,7 @@ ht-degree: 97%
 
 O resultado dos cálculos da hipótese está disponível em vários níveis da plataforma Adobe Campaign: indicadores calculados pela hipótese e as reações da amostragem alvo são visíveis por meio da hipótese real, assim como nos relatórios disponíveis por campanhas e envios.
 
-## Resultados da Hipótese {#hypothesis-results}
+## Resultados da hipótese {#hypothesis-results}
 
 ### Indicadores {#indicators}
 
