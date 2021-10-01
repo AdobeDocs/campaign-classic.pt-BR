@@ -7,7 +7,7 @@ content-type: reference
 topic-tags: publishing-on-facebook-twitter
 exl-id: e030c029-d1ee-4749-94e3-6bdfc8d89a34
 source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '941'
 ht-degree: 100%
 
@@ -121,7 +121,7 @@ O delivery da prova é idêntico aos deliveries por email. Consulte [esta seçã
 
 ![](assets/social_facebook_delivery_016.png)
 
-## Enviar mensagens diretas aos assinantes {#sending-direct-messages-to-subscribers}
+## Envio de mensagens diretas aos assinantes {#sending-direct-messages-to-subscribers}
 
 ### Princípio operacional {#operating-principle}
 
@@ -154,7 +154,7 @@ As limitações a seguir são restrições inerentes ao Twitter.
 
 ### Criação da entrega {#creating-the-delivery-}
 
-Crie um novo delivery com base no template de delivery **[!UICONTROL Tweet (Direct Message)]**.
+Crie uma nova entrega com base no template do delivery **[!UICONTROL Tweet (Direct Message)]**.
 
 ![](assets/social_twitter_delivery_010.png)
 
@@ -192,7 +192,7 @@ A guia **[!UICONTROL Target of the proofs]** permite selecionar o seguidor que r
 
 >[!NOTE]
 >
->Se desejar enviar todas as provas de mensagem direta para o mesmo seguidor do Twitter, você pode salvar o público alvo de prova no template de delivery **[!UICONTROL Tweet (Direct Message)]**, acessível através do nó **[!UICONTROL Resources > Templates > Delivery templates]**. O target de prova será preenchido por padrão para cada novo delivery.
+>Se desejar enviar todas as provas de mensagem direta para o mesmo seguidor do Twitter, você pode salvar o público alvo de prova no template de delivery **[!UICONTROL Tweet (Direct Message)]**, acessível através do nó **[!UICONTROL Resources > Templates > Delivery templates]**. O target de prova será preenchido por padrão para cada nova entrega.
 
 ### Definição do conteúdo da mensagem {#defining-message-content-}
 
