@@ -7,7 +7,7 @@ content-type: reference
 topic-tags: targeting-activities
 exl-id: 9f5735d2-73b8-469f-bc10-482c99cdd4a1
 source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '849'
 ht-degree: 100%
 
@@ -17,7 +17,7 @@ ht-degree: 100%
 
 ![](../../assets/common.svg)
 
-Uma atividade do tipo **Update data** realiza uma atualização em massa dos campos no banco de dados.
+Uma atividade do tipo **Atualizar dados** realiza uma atualização em massa dos campos no banco de dados.
 
 ## Tipo de operação {#operation-type}
 
@@ -31,11 +31,11 @@ O campo **[!UICONTROL Operation type]** permite escolher o processo que deve ser
 
 ![](assets/s_advuser_update_data_1.png)
 
-O campo **[!UICONTROL Batch size]** permite selecionar o número de elementos de transição de entrada que serão atualizados. Por exemplo, se declarado 500, os primeiros 500 registros serão atualizados.
+O campo **[!UICONTROL Batch size]** permite selecionar o número de elementos de transição de entrada que serão atualizados. Por exemplo, se o número declarado for 500, os primeiros 500 registros serão atualizados.
 
 ## Identificação de registro {#record-identification}
 
-Especifica como identificar os registros no banco de dados:
+Especificar como identificar os registros no banco de dados:
 
 * Se as entradas de dados se relacionam a uma dimensão de direcionamento existente, selecione a opção **[!UICONTROL By directly using the targeting dimension]** e a selecione no campo **[!UICONTROL Updated dimension]**.
 
@@ -45,7 +45,7 @@ Especifica como identificar os registros no banco de dados:
 
 ![](assets/s_advuser_update_data_2.png)
 
-## Seleção dos campos a serem atualizados {#selecting-the-fields-to-be-updated}
+## Selecionar os campos a serem atualizados {#selecting-the-fields-to-be-updated}
 
 Use a opção **[!UICONTROL Automatically associate fields with the same name]** para que o Adobe Campaign identifique os campos que serão atualizados de forma automática.
 
@@ -84,7 +84,7 @@ Cria uma transição de saída que será ativada no final da execução. A atual
 
 Cria uma transição de saída contendo registros que não foram processados corretamente após a atualização (por exemplo, se houver uma duplicata). A atualização geralmente marca o final de um workflow para construção do target e, portanto, a opção não é ativada por padrão.
 
-## Atualização e mescla de coleções {#updating-and-merging-collections}
+## Atualizar e mesclar coleções {#updating-and-merging-collections}
 
 Atualizar dados e mesclar coleções permite atualizar os dados contidos em um registro usando dados de um ou vários registros secundários, com o objetivo de manter apenas um se desejar. Essas atualizações são gerenciadas por um conjunto de regras.
 
