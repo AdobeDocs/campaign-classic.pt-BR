@@ -7,7 +7,7 @@ content-type: reference
 topic-tags: profile-management
 exl-id: 0f3a5582-5c90-4393-bee8-d9e2f07e5982
 source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '471'
 ht-degree: 100%
 
@@ -85,7 +85,7 @@ Esta tela exibe os logs de entrega do perfil selecionado. Também é possível e
 
 ![](assets/s_ncs_user_profile_delivery_tab.png)
 
-## Guia Tracking {#tracking-tab}
+## Guia Rastreamento {#tracking-tab}
 
 Essa tela permite exibir os logs de rastreamento do perfil selecionado. Essas informações são usadas para rastrear o comportamento do perfil após as entregas.
 
