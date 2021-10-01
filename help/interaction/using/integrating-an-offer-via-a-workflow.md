@@ -7,7 +7,7 @@ content-type: reference
 topic-tags: delivering-an-offer
 exl-id: 33d318f3-1eb4-4c74-8c20-8b9f0442c7c3
 source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1043'
 ht-degree: 100%
 
@@ -64,7 +64,7 @@ Há dois métodos para especificar apresentações de oferta.
 * Especificação de oferta ou de chamada de motor de oferta.
 * Fazendo referência a um link para uma oferta.
 
-### Especificação de oferta ou de chamada para o motor de oferta {#specifying-an-offer-or-a-call-to-the-offer-engine}
+### Especificação de oferta ou de chamada para o mecanismo de oferta {#specifying-an-offer-or-a-call-to-the-offer-engine}
 
 Após configurar seu query (consulte o [Guia de workflows](../../workflow/using/query.md)):
 
@@ -91,7 +91,7 @@ Após configurar seu query (consulte o [Guia de workflows](../../workflow/using/
    >
    >O número de propostas disponíveis para pré-visualizar depende da configuração executada na atividade de enriquecimento, ao invés de qualquer configuração possível executada diretamente no delivery.
 
-### Fazendo referência a um link para uma oferta {#referencing-a-link-to-an-offer}
+### Referenciar um link para uma oferta {#referencing-a-link-to-an-offer}
 
 Também é possível referenciar um link para uma oferta em uma atividade de enriquecimento.
 
