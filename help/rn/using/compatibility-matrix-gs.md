@@ -7,7 +7,7 @@ role: User
 level: Beginner
 exl-id: 5c0ccaf6-7f82-4e4b-9247-261dbd0f127c
 source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '513'
 ht-degree: 100%
 
@@ -122,7 +122,7 @@ O Adobe Campaign Classic é compatível com todos os sistemas e ferramentas list
 <td>
 <p>18c</p>
 <p>12c</p>
-<p>11g R2</p>
+<p>11g  R2</p>
 </td>
 </tr>
 <tr>
@@ -370,7 +370,7 @@ Os seguintes navegadores são compatíveis com o Campaign for Web Access.
 <p>Microsoft Internet Explorer</p>
 </td>
 <td>
-<p>11º</p>
+<p>11</p>
 </td>
 </tr>
 </tbody>
