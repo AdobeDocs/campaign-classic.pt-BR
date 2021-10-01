@@ -7,7 +7,7 @@ content-type: reference
 topic-tags: tracking-messages
 exl-id: 9d3f5c74-377a-4e24-81e5-bb605f69cf8a
 source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '642'
 ht-degree: 100%
 
@@ -82,7 +82,7 @@ O objeto pode ser:
 * **[!DNL xpath]**: xpath do campo.
 * **[!DNL index]** (opcional): se **[!DNL object]** é uma matriz (para objetos de script extras), índice de item na matriz (começa em 0).
 
-### [!DNL delivery] objeto {#delivery-object}
+### Objeto de [!DNL delivery] {#delivery-object}
 
 Para personalização por email, o objeto de delivery pode ser acessado de duas formas:
 
