@@ -7,7 +7,7 @@ content-type: reference
 topic-tags: introduction
 exl-id: 0a059397-b037-405b-b9c1-94a4a072674d
 source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1092'
 ht-degree: 100%
 
@@ -77,7 +77,7 @@ O canal de email está disponível por padrão. Para enviar mensagens transacion
 >
 >A adição de um canal de entrega (canal móvel, canal de aplicativo móvel, etc.) deverá ser executada antes de instalar o pacote de mensagem transacional.
 
-### Adição de um canal de entrega {#adding-a-delivery-channel}
+### Adicionar um canal de entrega {#adding-a-delivery-channel}
 
 A Adobe recomenda **sempre adicione o pacote de canal de entrega antes de instalar o pacote de mensagem transacional**.
 
