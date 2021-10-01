@@ -7,9 +7,9 @@ role: Data Engineer
 level: Beginner
 exl-id: 5f689679-7148-4abd-a9bf-185854c64b13
 source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '825'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -33,7 +33,7 @@ Na seção central da home page, você pode usar links para acessar o portal de 
 >
 >Antes de instalar qualquer módulo ou add-on, você precisa verificar o contrato de licença ou entrar em contato com o executivo da conta da Adobe.
 
-### Acesso via Web e console {#console-and-web-access}
+### Acesso via web e console {#console-and-web-access}
 
 A plataforma Adobe Campaign pode ser acessada por meio de um console ou por meio de um navegador da Internet.
 
@@ -137,15 +137,15 @@ As principais diferenças entre inglês americano e inglês do Reino Unido são:
   </tr> 
   <tr> 
    <td> Data abreviada com hora<br /> </td> 
-   <td> <p>%2M/%2D/%4Y %I:%2N:%2S %P</p><p><strong>ex: 25/09/2018 10:47:25 PM</strong></p> </td> 
+   <td> <p>%2M/%2D/%4Y %I:%2N:%2S %P</p><p><strong>ex: 25/09/2018 22:47:25</strong></p> </td> 
    <td> <p>%2D/%2M/%4Y %2H:%2N:%2S</p><p><strong>ex: 25/09/2018 22:47:25</strong></p> </td> 
   </tr> 
  </tbody> 
 </table>
 
-### Adicionar valores em uma enumeração {#add-values-in-an-enumeration}
+### Adicionar valores em uma lista discriminada {#add-values-in-an-enumeration}
 
-Usando os campos de entrada com uma lista suspensa, você pode inserir um valor de enumeração, que pode ser armazenado e oferecido como uma opção na lista. Por exemplo, no campo **[!UICONTROL City]** da guia **[!UICONTROL General]** de um perfil de destinatário, você pode inserir Londres. Ao pressionar Enter para confirmar esse valor, uma mensagem pergunta se você deseja salvar esse valor para a enumeração associada ao campo.
+Usando os campos de entrada com uma lista suspensa, você pode inserir um valor de lista discriminada, que pode ser armazenado e oferecido como uma opção na lista suspensa. Por exemplo, no campo **[!UICONTROL City]** da guia **[!UICONTROL General]** de um perfil de destinatário, você pode inserir Londres. Ao pressionar Enter para confirmar esse valor, uma mensagem pergunta se você deseja salvar esse valor para a enumeração associada ao campo.
 
 ![](assets/s_ncs_user_wizard_email_bat_substitute_email.png)
 
@@ -157,7 +157,7 @@ Se você clicar em **[!UICONTROL Yes]**, esse valor estará disponível na caixa
 
 ### Unidades padrão {#default-units}
 
-Nos campos que expressam uma duração (por exemplo, período de validade dos recursos de uma remessa, prazo de aprovação para uma tarefa, etc.), o valor pode ser expresso nas seguintes **unidades**:
+Nos campos que expressam uma duração (por exemplo, período de validade dos recursos de um delivery, prazo de aprovação para uma tarefa, etc.), o valor pode ser expresso nas seguintes **unidades**:
 
 * **[!UICONTROL s]** para segundos,
 * **[!UICONTROL mn]** para minutos,
