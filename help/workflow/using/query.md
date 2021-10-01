@@ -7,9 +7,9 @@ content-type: reference
 topic-tags: targeting-activities
 exl-id: 20d03627-cd56-46da-bc02-73b48a02a350
 source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1629'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -19,7 +19,7 @@ ht-degree: 98%
 
 ## Criação de consulta {#creating-a-query}
 
-Um query permite selecionar um target de acordo com critérios. Você pode associar um código de segmento ao resultado do query e inserir dados adicionais nele.
+Uma consulta permite selecionar um target de acordo com critérios. Você pode associar um código de segmento ao resultado do query e inserir dados adicionais nele.
 Para obter mais informações sobre amostras de query, consulte [esta seção](querying-recipient-table.md).
 
 >[!NOTE]
@@ -167,9 +167,9 @@ Esse conjunto de três valores identifica o público alvo do query. **[!UICONTRO
 
 Este valor é o schema da tabela de trabalho. Esse parâmetro é válido para todas as transições com **[!UICONTROL tableName]** e **[!UICONTROL schema]**.
 
-## Otimização das consultas {#optimizing-queries}
+## Otimização das queries {#optimizing-queries}
 
-A seção abaixo fornece as práticas recomendadas para otimizar as consultas executadas no Adobe Campaign, a fim de limitar a carga de trabalho no banco de dados e melhorar a experiência do usuário.
+A seção abaixo fornece as práticas recomendadas para otimizar as queries executadas no Adobe Campaign, a fim de limitar a carga de trabalho no banco de dados e melhorar a experiência do usuário.
 
 ### Associações e índices {#joins-and-indexes}
 
@@ -186,11 +186,11 @@ A seção abaixo fornece as práticas recomendadas para otimizar as consultas ex
 
    Verifique se você sabe qual será o plano de execução da consulta. Evite varreduras completas de tabelas, especialmente para consultas em tempo real ou consultas quase em tempo real em execução a cada minuto.
 
-   Para obter mais informações, dependendo da versão do Campaign, consulte estas seções:
+   Para mais informações, dependendo da versão do Campaign, consulte estas seções:
 
    ![](assets/do-not-localize/v7.jpeg)[  Documentação do Campaign v7](../../configuration/using/database-mapping.md)
 
-   ![](assets/do-not-localize/v8.png)[  Documentação do Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/architecture/shemas-forms/database-mapping.html)
+   ![](assets/do-not-localize/v8.png)[  Documentação do Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/architecture/shemas-forms/database-mapping.html?lang=pt-BR)
 
 ### Funções {#functions}
 
@@ -199,7 +199,7 @@ A seção abaixo fornece as práticas recomendadas para otimizar as consultas ex
 
    Para saber mais sobre as funções, consulte [esta seção](../../platform/using/defining-filter-conditions.md#list-of-functions).
 
-### Filtrar dimensões {#filtering-dimensions}
+### Dimensões de filtro {#filtering-dimensions}
 
 Use a dimensão do filtro da consulta em vez de usar o operador &quot;exists such as&quot;.
 
