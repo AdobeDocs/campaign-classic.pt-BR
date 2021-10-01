@@ -7,7 +7,7 @@ content-type: reference
 topic-tags: use-cases
 exl-id: ab786cf1-74a4-4185-a63d-84e776a2f776
 source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '747'
 ht-degree: 100%
 
@@ -17,7 +17,7 @@ ht-degree: 100%
 
 ![](../../assets/common.svg)
 
-## Sobre enriquecimento de dados {#about-enriching-data}
+## Sobre o enriquecimento de dados {#about-enriching-data}
 
 Este caso de uso detalha possíveis usos da atividade **[!UICONTROL Enrichment]** em um fluxo de trabalho de direcionamento. Para obter mais informações sobre como usar a atividade **[!UICONTROL Enrichment]**, consulte [Enriquecimento](enrichment.md).
 
@@ -48,7 +48,7 @@ Para criar o workflow, aplique as seguintes etapas:
 1. A atividade do tipo **[!UICONTROL Split]** permite criar subconjuntos de recipients com base em pontuações.
 1. Para cada subconjunto, uma atividade tipo **[!UICONTROL Delivery]** é adicionada.
 
-## Etapa 1 - Direcionamento {#step-1--targeting}
+## Etapa 1: Direcionamento {#step-1--targeting}
 
 A primeira query nos permite selecionar recipients que foram adicionados ao banco de dados nos últimos seis meses.
 
@@ -60,7 +60,7 @@ A segunda query nos permite selecionar os recipients que faziam parte da última
 
 Em seguida, uma atividade tipo **[!UICONTROL Intersection]** é adicionada para direcionar os recipients incluídos no banco de dados nos últimos seis meses e que entraram na última competição.
 
-## Etapa 2 - Enriquecimento {#step-2--enrichment}
+## Etapa 2: Enriquecimento {#step-2--enrichment}
 
 Neste exemplo, queremos personalizar os deliveries de acordo com o campo **[!UICONTROL Score]** armazenado na tabela **[!UICONTROL Competition results]**. Esta tabela tem um relacionamento de tipo 1-n com a tabela de recipients. A atividade **[!UICONTROL Enrichment]** permite adicionar dados de uma tabela vinculada à dimensão do filtro à tabela de trabalho do fluxo de trabalho.
 
@@ -104,7 +104,7 @@ O schema correspondente também foi enriquecido.
 
 ![](assets/uc1_enrich_14.png)
 
-## Etapa 3: Split e delivery {#step-3--split-and-delivery}
+## Etapa 3: Divisão e entrega {#step-3--split-and-delivery}
 
 Para classificar os recipients com base em suas pontuações, uma atividade **[!UICONTROL Split]** é adicionada após o enriquecimento.
 
