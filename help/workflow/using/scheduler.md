@@ -7,7 +7,7 @@ content-type: reference
 topic-tags: flow-control-activities
 exl-id: 30a9bd2a-afb1-481c-ab5f-5acebd9cbb5a
 source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '332'
 ht-degree: 100%
 
@@ -33,7 +33,7 @@ A atividade **[!UICONTROL Scheduler]** deve ser considerada como um início agen
 
 * Observe que a transição pode ser ativada várias horas depois caso o workflow esteja executando uma tarefa de longo prazo, como uma importação, ou se o módulo wfserver for interrompido por um momento. Nesse caso, pode ser necessário restringir a execução da tarefa ativada pelo scheduler para um determinado intervalo de tempo.
 
-## Configurar atividade do Scheduler {#configuring-scheduler-activity}
+## Configuração de atividade do Scheduler {#configuring-scheduler-activity}
 
 O scheduler define o agendamento de ativação da transição. Para configurá-lo, clique duas vezes no objeto gráfico e clique em **[!UICONTROL Change...]**
 
