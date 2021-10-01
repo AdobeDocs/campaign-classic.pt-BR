@@ -7,7 +7,7 @@ content-type: reference
 topic-tags: use-cases
 exl-id: 38006cca-e945-4b9d-8e2d-ed537b8541d9
 source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '879'
 ht-degree: 100%
 
@@ -33,7 +33,7 @@ Para fazer isso, crie uma campanha e clique na guia **[!UICONTROL Targeting and 
 
 Siga estas etapas:
 
-## Agendamento do envio do {#configuring-the-scheduler}
+## Agendamento do envio {#configuring-the-scheduler}
 
 1. Primeiro, adicione um **Scheduler** para acionar o delivery todo dia. No exemplo abaixo, o delivery é criado todos os dias às 6 da manhã.
 
@@ -114,7 +114,7 @@ Para configurar esse caso de uso, criamos o seguinte workflow para construção 
 
 Se o ano atual **não for um ano bissexto** e o workflow for executado em 1º de março, precisamos selecionar todos os recipients que teriam seu aniversário no dia anterior (29 de fevereiro) e adicioná-los à lista de recipients. Em qualquer outro caso, nenhuma ação adicional é necessária.
 
-### Etapa 1: Seleção do template {#step-1--selecting-the-recipients}
+### Etapa 1: Seleção dos recipients {#step-1--selecting-the-recipients}
 
 Após configurar a atividade **[!UICONTROL Scheduler]** para que o workflow inicie todos os dias, identifique todos os recipients cujos aniversários são no dia atual.
 
@@ -126,7 +126,7 @@ Após configurar a atividade **[!UICONTROL Scheduler]** para que o workflow inic
 
 Selecionar destinatários cujo aniversário corresponde à data atual é apresentado na seção [Identifying recipients whose birthday it is](#identifying-recipients-whose-birthday-it-is).
 
-### Etapa 2: Selecione se é um ano bissexto ou não {#step-2--select-whether-or-not-it-is-a-leap-year}
+### Etapa 2: Selecionar se é um ano bissexto ou não {#step-2--select-whether-or-not-it-is-a-leap-year}
 
 A atividade **[!UICONTROL Test]** permite verificar se é um ano bissexto e se a data atual é 1º de março.
 
@@ -186,7 +186,7 @@ vars.currentIsALeapYear == 0 && vars.firstOfMarch == 1
 
 ![](assets/birthday-workflow_usecase_4.png)
 
-### Etapa 3: Selecione todos os recipients nascidos em 29 de fevereiro {#step-3--select-any-recipients-born-on-february-29th}
+### Etapa 3: Selecionar todos os recipients nascidos em 29 de fevereiro {#step-3--select-any-recipients-born-on-february-29th}
 
 Crie uma atividade **[!UICONTROL Fork]** e vincule uma das transições de saída a uma atividade **[!UICONTROL Query]**.
 
@@ -198,9 +198,9 @@ Combine os resultados com uma atividade **[!UICONTROL Union]**.
 
 Vincule os resultados das duas ramificações de atividade **[!UICONTROL Test]** a uma atividade **[!UICONTROL Email delivery]** para enviar um email para a lista de todos os seus recipients aniversariantes, até mesmo àqueles que nasceram em 29 de fevereiro durante um ano não bissexto.
 
-## Criação de Recurring delivery {#creating-a-recurring-delivery-in-a-targeting-workflow}
+## Criação de uma entrega recorrente {#creating-a-recurring-delivery-in-a-targeting-workflow}
 
-Adicione uma atividade de **Recurring delivery** com base no template de e-mail de aniversário que você deseja enviar.
+Adicione uma atividade de **Entrega recorrente** com base no modelo de email de aniversário que você deseja enviar.
 
 >[!CAUTION]
 >
