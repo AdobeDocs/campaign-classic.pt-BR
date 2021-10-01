@@ -7,7 +7,7 @@ content-type: reference
 topic-tags: campaign-optimization
 exl-id: 757328fa-4698-4f85-a5fa-074b5152ec45
 source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '759'
 ht-degree: 100%
 
@@ -23,7 +23,7 @@ O Adobe Campaign garante comunicações consistentes graças a um conjunto de re
 
 As regras de **Capacidade** podem evitar sobrecarga na plataforma relacionada ao delivery de mensagens. Como exemplo, as ofertas especiais que contêm um link de download não devem ser enviadas para muitas pessoas de uma só vez, para evitar a saturação do servidor; as campanhas por telefone não devem exceder a capacidade de processamento das centrais de atendimento etc. Para obter mais informações, consulte [Controle de capacidade](#controlling-capacity).
 
-## Controlando a capacidade {#controlling-capacity}
+## Controlar a capacidade {#controlling-capacity}
 
 Antes de enviar mensagens, você precisa garantir que sua organização tem a capacidade de processar o delivery (infraestrutura física), as respostas que o delivery pode gerar (mensagens de entrada) e o número de chamadas a serem feitas para entrar em contato com assinantes (capacidade de processamento da central de chamadas), por exemplo.
 
@@ -97,7 +97,7 @@ O fluxo de trabalho **[!UICONTROL Forecasting]** cria automaticamente todas as l
 >
 >Recomendamos a criação de linhas de disponibilidade por meio de importações de arquivo. Esta guia permite visualizar e verificar linhas de consumo.
 
-## Excluir mensagens quando o limite de capacidade é atingido {#exclude-messages-when-capacity-limit-reached}
+## Excluir mensagens quando o limite de capacidade for atingido {#exclude-messages-when-capacity-limit-reached}
 
 As linhas de disponibilidade são somente para fins de informação. Para excluir mensagens em excesso, marque a opção **[!UICONTROL Exclude from the target messages in excess of capacity]**. Isso evita que a capacidade seja excedida. Para a mesma população que no exemplo anterior, o consumo e a capacidade restantes não devem exceder a quantidade inicial:
 
