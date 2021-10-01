@@ -6,7 +6,7 @@ audience: integrations
 content-type: reference
 exl-id: 13717b3b-d34a-40bc-9c9e-dcf578fc516e
 source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1198'
 ht-degree: 100%
 
@@ -117,7 +117,7 @@ Esse ponteiro é específico para cada instância e para cada consumidor. Portan
 
 O parâmetro **consumidor** da opção de pipeline identifica a instância de chamada.
 
-Atualmente, não há como ter filas diferentes para ambientes separados, como &quot;preparo&quot; ou &quot;dev&quot;.
+Atualmente, não há como ter filas diferentes para ambientes separados, como &quot;staging&quot; ou &quot;dev&quot;.
 
 ### Registro e tratamento de erros {#logging-error-handling}
 
@@ -194,7 +194,7 @@ Para permitir um processamento mais rápido, vários threads desse script são e
 
 ### Schema do evento pipeline {#pipeline-event-schema}
 
-Eventos são armazenados em uma tabela de banco de dados. Ele é usado pelas campanhas de marketing para clientes do público-alvo e enriquece emails usando acionadores.
+Eventos são armazenados em uma tabela do banco de dados. Ele é usado pelas campanhas de marketing para clientes do público-alvo e enriquece emails usando acionadores.
 Embora cada acionador possa ter uma estrutura de dados distinta, todos os acionadores podem ser mantidos em uma única tabela.
 O campo triggerType identifica o acionador a partir do qual os dados são originados.
 
