@@ -7,9 +7,9 @@ content-type: reference
 topic-tags: connectors
 exl-id: 7f9eda15-76e8-40a1-8302-004cea085778
 source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1528'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -94,7 +94,7 @@ A data da última sincronização é armazenada em uma opção especificada na j
 >
 >Essa nota se aplica somente à atividade genérica **[!UICONTROL CRM Connector]**. Para outras atividades do CRM, o processo é automático.
 >
->Essa opção deve ser criada e preenchida manualmente em **[!UICONTROL Administration]** > **[!UICONTROL Platform]** > **[!UICONTROL Options]**. Deve ser uma opção de texto e seu valor precisa corresponder ao seguinte formato: **aaaa/MM/dd hh:mm:ss**.
+>Essa opção deve ser criada e preenchida manualmente em **[!UICONTROL Administration]** > **[!UICONTROL Platform]** > **[!UICONTROL Options]**. Deve ser uma opção de texto e seu valor deve corresponder ao seguinte formato: **aaaa/MM/dd hh:mm:ss**.
 > 
 >Você precisa atualizar essa opção manualmente para qualquer outra importação.
 
@@ -145,7 +145,7 @@ A ordem das colunas na lista é a ordem de classificação:
 
 ### Identificação de registro {#record-identification}
 
-Em vez de importar elementos incluídos (e possivelmente filtrados) no CRM, você pode usar uma população calculada anteriormente no workflow.
+Em vez de importar elementos incluídos (e possivelmente filtrados) no CRM, você pode usar uma população calculada previamente no workflow.
 
 Para fazer isso, selecione a opção **[!UICONTROL Use the population calculated upstream]** e especifique o campo que contém o identificador remoto.
 
