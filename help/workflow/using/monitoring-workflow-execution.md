@@ -7,9 +7,9 @@ content-type: reference
 topic-tags: use-cases
 exl-id: d589180b-8e1d-4149-9b16-3f541018a41f
 source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2016'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -21,9 +21,9 @@ Esta seção apresenta informações sobre como monitorar a execução de workfl
 
 Também está disponível [nesta sessão](supervising-workflows.md#supervising-workflows), um caso de uso que detalha a criação de workflows que permite monitorar o status de um conjunto de workflows &quot;pausados&quot;, &quot;interrompidos&quot; ou &quot;com erros&quot;.
 
-Além disso, os administradores da instância podem usar a **Trilha de auditoria** para verificar as atividades, as últimas modificações feitas e o status dos workflows. Para obter mais informações, consulte [Guia de produção do Campaign Classic v7](../../production/using/audit-trail.md).
+Além disso, os administradores da instância podem usar a **Trilha de auditoria** para verificar as atividades, as últimas modificações feitas e o status dos workflows. Para obter mais informações, consulte o [Manual de produção do Campaign Classic v7](../../production/using/audit-trail.md).
 
-Outras maneiras de monitorar os diferentes processos do Campaign são apresentadas no [Guia de Produção do Campaign Classic v7](../../production/using/monitoring-guidelines.md).
+Outras maneiras de monitorar os diferentes processos do Campaign são apresentadas no [Manual de produção do Campaign Classic v7](../../production/using/monitoring-guidelines.md).
 
 ## Exibição do progresso {#displaying-progress}
 
@@ -97,11 +97,11 @@ O log exibe a lista cronológica de mensagens de execução relacionadas às ati
 
 ## Remoção dos logs {#purging-the-logs}
 
-O histórico do workflow não é removido automaticamente: todas as mensagens são mantidas por padrão. O histórico pode ser eliminado por meio do menu **[!UICONTROL File > Actions]** ou clicando no botão **[!UICONTROL Actions]** localizado na barra de ferramentas acima da lista. Selecione **[!UICONTROL Purge history]**. As opções disponíveis no menu **[!UICONTROL Actions]** estão detalhadas na seção [Actions toolbar](starting-a-workflow.md)
+O histórico do fluxo de trabalho não é removido automaticamente: todas as mensagens são mantidas por padrão. O histórico pode ser eliminado por meio do menu **[!UICONTROL File > Actions]** ou clicando no botão **[!UICONTROL Actions]** localizado na barra de ferramentas acima da lista. Selecione **[!UICONTROL Purge history]**. As opções disponíveis no menu **[!UICONTROL Actions]** estão detalhadas na seção [Actions toolbar](starting-a-workflow.md)
 
 ![](assets/purge_historique.png)
 
-## Schema de workflow e tabela de trabalho {#worktables-and-workflow-schema}
+## Esquema de fluxo de trabalho e tabelas de trabalho {#worktables-and-workflow-schema}
 
 O workflow transmite tabelas de trabalho que podem ser manipuladas por determinadas atividades. O Adobe Campaign permite, por meio de atividades de Gestão de Dados, modificar, renomear e enriquecer as colunas das tabelas de trabalho do workflow, por exemplo, para alinhar com a nomenclatura dependendo das necessidades do cliente, para coletar informações adicionais sobre o cobeneficiários de um contrato etc.
 
@@ -111,7 +111,7 @@ As tabelas de trabalho do workflow é excluído automaticamente quando o workflo
 
 ## Gestão de erros {#managing-errors}
 
-Quando ocorre um erro, o workflow é pausado e a atividade está sendo executada quando a ocorrência do erro pisca em vermelho. Na visão geral do fluxo de trabalho, na guia **[!UICONTROL Monitoring]** - no link **[!UICONTROL Workflows]**, você pode exibir workflows apenas com erros, conforme mostrado abaixo.
+Quando ocorre um erro, o fluxo de trabalho é pausado e a atividade está sendo executada quando a ocorrência do erro pisca em vermelho. Na visão geral do fluxo de trabalho, na guia **[!UICONTROL Monitoring]** - no link **[!UICONTROL Workflows]**, você pode exibir workflows apenas com erros, conforme mostrado abaixo.
 
 ![](assets/wf-global-view_filter_only_errors.png)
 
@@ -143,7 +143,7 @@ Nesse caso, a tarefa com erro é anulada. Esse modo é particularmente adequado 
 >
 >Você pode aplicar essa configuração individualmente para cada atividade. Para fazer isso, edite as propriedades da atividade e selecione o modo de gerenciamento de erro na guia **[!UICONTROL Advanced]**.
 
-Para obter mais informações sobre a solução de problemas de execução de workflows, consulte [Campaign Classic v7 Production Guide](../../production/using/workflow-execution.md).
+Para obter mais informações sobre a solução de problemas de execução de fluxos de trabalho, consulte o [Manual de produção do Campaign Classic v7](../../production/using/workflow-execution.md).
 
 ## Processamento de erros {#processing-errors}
 
@@ -167,7 +167,7 @@ Se possível, recomendamos reiniciar completamente o workflow após realizar as 
 
 ## Supervisão de instância {#instance-supervision}
 
-A página **[!UICONTROL Instance supervision]** permite visualizar a atividade do servidor do Adobe Campaign e exibir a lista de workflows e deliveries com erros.
+A página **[!UICONTROL Instance supervision]** permite visualizar a atividade do servidor do Adobe Campaign e exibir a lista de fluxos de trabalho e entregas com erros.
 
 Para acessar essa página, acesse a guia **[!UICONTROL Monitoring]** e clique no link **[!UICONTROL General view]**.
 
@@ -236,9 +236,9 @@ Nesta seção é apresentado um caso de uso: [Coordenação de atualizações de
 
 Os workflows usam muitas tabelas de trabalho que consomem espaço e acabam reduzindo o desempenho da plataforma inteira se não houver manutenção. Para saber mais sobre a manutenção de banco de dados, consulte esta [seção](../../production/using/tables-to-maintain.md).
 
-O workflow de **limpeza do banco de dados** pode ser acessado por meio do nó **Administração > Produção > Workflows técnicos**, permite excluir dados obsoletos para evitar o crescimento exponencial do banco de dados. O workflow é acionado automaticamente sem a intervenção do usuário. Consulte [Guia de produção do Campaign Classic v7](../../production/using/database-cleanup-workflow.md).
+O workflow de **limpeza do banco de dados** pode ser acessado por meio do nó **Administração > Produção > Workflows técnicos**, permite excluir dados obsoletos para evitar o crescimento exponencial do banco de dados. O workflow é acionado automaticamente sem a intervenção do usuário. Consulte o [Manual de produção do Campaign Classic v7](../../production/using/database-cleanup-workflow.md).
 
-Você também pode criar workflows técnicos específicos para limpar o consumo de espaço desnecessário de dados. Consulte [Campaign Classic v7 Production Guide](../../production/using/application-objects.md) e esta [seção](#purging-the-logs).
+Você também pode criar workflows técnicos específicos para limpar o consumo de espaço desnecessário de dados. Consulte o [Manual de produção do Campaign Classic v7](../../production/using/application-objects.md) e esta [seção](#purging-the-logs).
 
 ## Manuseio de workflows pausados {#handling-of-paused-workflows}
 
@@ -252,16 +252,16 @@ Esses períodos podem ser configurados por meio da opção NmsServer_PausedWorkf
 
 Os supervisores de workflow são notificados. O criador e o último usuário que modificou o workflow também são notificados. Os administradores não recebem as notificações.
 
-## Filtrar os workflows de acordo com seu status{#filtering-workflows-status}
+## Filtragem de workflows de acordo com seu status{#filtering-workflows-status}
 
-A interface do Campaign Classic permite monitorar o status de execução de todos os workflows na instância usando **views** predefinidas. Para acessar essas exibições, abra o nó **[!UICONTROL Administration]** / **[!UICONTROL Audit]** / **[!UICONTROL Workflows Status]**.
+A interface do Campaign Classic permite monitorar o status de execução de todos os workflows na instância usando **visualizações** predefinidas. Para acessar essas exibições, abra o nó **[!UICONTROL Administration]** / **[!UICONTROL Audit]** / **[!UICONTROL Workflows Status]**.
 
 As seguintes visualizações estão disponíveis:
 
 * **[!UICONTROL Running]**: lista todos os workflows em execução.
 * **[!UICONTROL Paused]**: lista todos os workflows pausados.
 * **[!UICONTROL Failed]**: lista todos os workflows com falha.
-* **[!UICONTROL Start Pending]**: lista todos os workflows que estão esperando para serem iniciados pelo processo operationMgt. Essa visualização está disponível somente com o pacote **Marketing campanhas**. Saiba mais em [Guia de Instalação do Campaign Classic v7](../../installation/using/installing-campaign-standard-packages.md)).
+* **[!UICONTROL Start Pending]**: lista todos os workflows que estão esperando para serem iniciados pelo processo operationMgt. Essa visualização está disponível somente com o pacote **Campanhas de marketing**. Saiba mais no [Manual de instalação do Campaign Classic v7](../../installation/using/installing-campaign-standard-packages.md)).
 
 ![](assets/workflow-monitoring-views.png)
 
