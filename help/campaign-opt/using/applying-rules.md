@@ -7,7 +7,7 @@ content-type: reference
 topic-tags: campaign-optimization
 exl-id: 09ec0fc0-76ed-4c73-8bdf-c931e2103aa9
 source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '977'
 ht-degree: 100%
 
@@ -68,7 +68,7 @@ Para salvar os resultados além deste período, insira um valor maior do que 12 
 
 A opção **[!UICONTROL Re-apply the rule at the start of personalization]** permite a aplicação automática da regra durante a fase de personalização, incluindo se o período declarado no campo **[!UICONTROL Frequency]** ainda for válido.
 
-## Selecionar a fase da aplicação da regra {#selecting-the-rule-application-phase}
+## Selecionar a fase de aplicação da regra {#selecting-the-rule-application-phase}
 
 As regras de tipologia são aplicadas em uma sequência específica durante as fases de direcionamento, análise e personalização dos envios.
 
@@ -136,7 +136,7 @@ Como opção, é possível usar o campo **[!UICONTROL Managing affinities with I
 >O gerenciamento de afinidade não se aplica às tipologias de **[!UICONTROL Filtering]**.\
 >As afinidades são definidas no arquivo de configuração de instância, no servidor do Adobe Campaign. Para obter mais informações, consulte [esta seção](../../installation/using/about-initial-configuration.md).
 
-### Otimização de Campanha e Marketing Distribuído {#campaign-optimization-and-distributed-marketing}
+### Otimização de campanha e Marketing distribuído {#campaign-optimization-and-distributed-marketing}
 
 A guia **[!UICONTROL Distributed Marketing]** permite definir o remapeamento de tipologias e/ou regras que se aplicam quando uma campanha compartilhada é solicitada e/ou reservada. As tipologias/regras definidas para uma entidade local (vinculada àqueles definidos para a entidade central) substituem as regras/tipologias vinculadas à entidade central. O remapeamento permite adaptar regras da entidade central às entidades locais que solicitam a campanha.
 
