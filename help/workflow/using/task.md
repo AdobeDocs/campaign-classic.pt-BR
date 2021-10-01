@@ -7,9 +7,9 @@ content-type: reference
 topic-tags: flow-control-activities
 exl-id: 8549bf8c-ba23-44cb-95f2-c50f2d0f5479
 source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '103'
-ht-degree: 77%
+ht-degree: 100%
 
 ---
 
@@ -25,7 +25,7 @@ Em um workflow de campanha, a atividade **[!UICONTROL Task]** permite especifica
 
 ![](assets/mrm_task_in_workflow.png)
 
-Como configurar e operar uma tarefa é detalhada na [documentação do Campaign Classic v7](../../mrm/using/creating-and-managing-tasks.md).
+A configuração e operação de uma tarefa são detalhadas na [documentação do Campaign Classic v7](../../mrm/using/creating-and-managing-tasks.md).
 
 ![](assets/wkf_task_activity.png)
 
