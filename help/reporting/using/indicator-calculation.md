@@ -7,7 +7,7 @@ content-type: reference
 topic-tags: accessing-built-in-reports
 exl-id: 52ca1595-16b3-4323-9122-d1ac13c08147
 source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2972'
 ht-degree: 100%
 
@@ -52,7 +52,7 @@ ht-degree: 100%
 
 Este relatório é baseado na tabela **[!UICONTROL Consolidated tracking]** (nms:trackingStats). Essa tabela de agregação é usada por motivos de desempenho ao exibir relatórios em vez da tabela **[!UICONTROL Recipient tracking logs]** (nms:trackingLogRcp), e não é calculada em tempo real. A tabela é gerada alguns minutos após os logs de rastreamento serem recuperados. Se os indicadores estiverem atualizados, os resultados serão iguais aos indicadores do relatório **Indicadores de rastreamento.** O indicador @totalclicks expressa o número total de cliques em um período de 5 minutos.
 
-## Não entregues e rejeitados {#non-deliverables-and-bounces-1}
+## Não entregues e devolvidos {#non-deliverables-and-bounces-1}
 
 **Detalhamento por tipo de erro**
 
@@ -61,7 +61,7 @@ Este relatório é baseado na tabela **[!UICONTROL Delivery and tracking statist
 <table> 
  <thead> 
   <tr> 
-   <th> <strong>Rótulo</strong> <br /> </th> 
+   <th> <strong>Label</strong> <br /> </th> 
    <th> <strong>Nome do campo</strong> <br /> </th> 
    <th> <strong>Descrição do indicador</strong> <br /> </th> 
    <th> <strong>Fórmula do cálculo de indicador</strong> <br /> </th> 
@@ -144,7 +144,7 @@ Este relatório é baseado na tabela **[!UICONTROL Internet Browser Statistics]*
 <table> 
  <thead> 
   <tr> 
-   <th> <strong>Rótulo</strong> <br /> </th> 
+   <th> <strong>Label</strong> <br /> </th> 
    <th> <strong>Nome do campo</strong> <br /> </th> 
    <th> <strong>Descrição do indicador</strong> <br /> </th> 
    <th> <strong>Fórmula do cálculo de indicador</strong> <br /> </th> 
@@ -177,7 +177,7 @@ Este relatório é baseado na tabela **[!UICONTROL Internet Browser Statistics]*
 <table> 
  <thead> 
   <tr> 
-   <th> <strong>Rótulo</strong> <br /> </th> 
+   <th> <strong>Label</strong> <br /> </th> 
    <th> <strong>Nome do campo</strong> <br /> </th> 
    <th> <strong>Descrição do indicador</strong> <br /> </th> 
    <th> <strong>Fórmula do cálculo de indicador</strong> <br /> </th> 
@@ -212,7 +212,7 @@ Este relatório é baseado nas tabelas **[!UICONTROL Delivery]** (nms:delivery),
 <table> 
  <thead> 
   <tr> 
-   <th> <strong>Rótulo</strong> <br /> </th> 
+   <th> <strong>Label</strong> <br /> </th> 
    <th> <strong>Nome do campo</strong> <br /> </th> 
    <th> <strong>Descrição do indicador</strong> <br /> </th> 
    <th> <strong>Fórmula do cálculo de indicador</strong> <br /> </th> 
@@ -281,7 +281,7 @@ Este relatório é baseado nas tabelas **[!UICONTROL Delivery]** (nms:delivery),
 <table> 
  <thead> 
   <tr> 
-   <th> <strong>Rótulo</strong> <br /> </th> 
+   <th> <strong>Label</strong> <br /> </th> 
    <th> <strong>Nome do campo</strong> <br /> </th> 
    <th> <strong>Descrição do indicador</strong> <br /> </th> 
    <th> <strong>Fórmula do cálculo de indicador</strong> <br /> </th> 
@@ -314,7 +314,7 @@ Este relatório é baseado nas tabelas **[!UICONTROL Delivery]** (nms:delivery),
 <table> 
  <thead> 
   <tr> 
-   <th> <strong>Rótulo</strong> <br /> </th> 
+   <th> <strong>Label</strong> <br /> </th> 
    <th> <strong>Nome do campo</strong> <br /> </th> 
    <th> <strong>Descrição do indicador</strong> <br /> </th> 
    <th> <strong>Fórmula do cálculo de indicador</strong> <br /> </th> 
@@ -349,7 +349,7 @@ Este relatório é baseado nas tabelas **[!UICONTROL Delivery]** (nms:delivery),
 <table> 
  <thead> 
   <tr> 
-   <th> <strong>Rótulo</strong> <br /> </th> 
+   <th> <strong>Label</strong> <br /> </th> 
    <th> <strong>Nome do campo</strong> <br /> </th> 
    <th> <strong>Descrição do indicador</strong> <br /> </th> 
    <th> <strong>Fórmula do cálculo de indicador</strong> <br /> </th> 
@@ -386,7 +386,7 @@ Este relatório é baseado na tabela **[!UICONTROL Internet Browser Statistics]*
 <table> 
  <thead> 
   <tr> 
-   <th> <strong>Rótulo</strong> <br /> </th> 
+   <th> <strong>Label</strong> <br /> </th> 
    <th> <strong>Nome do campo</strong> <br /> </th> 
    <th> <strong>Descrição do indicador</strong> <br /> </th> 
    <th> <strong>Fórmula do cálculo de indicador</strong> <br /> </th> 
@@ -419,7 +419,7 @@ Este relatório é baseado na tabela **[!UICONTROL Internet Browser Statistics]*
 <table> 
  <thead> 
   <tr> 
-   <th> <strong>Rótulo</strong> <br /> </th> 
+   <th> <strong>Label</strong> <br /> </th> 
    <th> <strong>Nome do campo</strong> <br /> </th> 
    <th> <strong>Descrição do indicador</strong> <br /> </th> 
    <th> <strong>Fórmula do cálculo de indicador</strong> <br /> </th> 
@@ -447,14 +447,14 @@ Este relatório é baseado na tabela **[!UICONTROL Internet Browser Statistics]*
  </tbody> 
 </table>
 
-## Rastreamento de subscrição {#subscription-tracking-1}
+## Rastreamento de assinatura {#subscription-tracking-1}
 
 Este relatório é baseado na tabela **[!UICONTROL Services]** (nms:service).
 
 <table> 
  <thead> 
   <tr> 
-   <th> <strong>Rótulo</strong> <br /> </th> 
+   <th> <strong>Label</strong> <br /> </th> 
    <th> <strong>Nome do campo</strong> <br /> </th> 
    <th> <strong>Descrição do indicador</strong> <br /> </th> 
    <th> <strong>Fórmula do cálculo de indicador</strong> <br /> </th> 
@@ -501,7 +501,7 @@ Este relatório é baseado nas tabelas **[!UICONTROL Delivery and tracking stati
 <table> 
  <thead> 
   <tr> 
-   <th> <strong>Rótulo</strong> <br /> </th> 
+   <th> <strong>Label</strong> <br /> </th> 
    <th> <strong>Nome do campo</strong> <br /> </th> 
    <th> <strong>Descrição do indicador</strong> <br /> </th> 
    <th> <strong>Fórmula do cálculo de indicador</strong> <br /> </th> 
@@ -698,7 +698,7 @@ Este relatório é baseado na tabela **[!UICONTROL Delivery]** (nms:delivery).
 <table> 
  <thead> 
   <tr> 
-   <th> <strong>Rótulo</strong> <br /> </th> 
+   <th> <strong>Label</strong> <br /> </th> 
    <th> <strong>Nome do campo</strong> <br /> </th> 
    <th> <strong>Descrição do indicador</strong> <br /> </th> 
    <th> <strong>Fórmula do cálculo de indicador</strong> <br /> </th> 
@@ -745,7 +745,7 @@ Este relatório é baseado na tabela **[!UICONTROL Delivery]** (nms:delivery).
 <table> 
  <thead> 
   <tr> 
-   <th> <strong>Rótulo</strong> <br /> </th> 
+   <th> <strong>Label</strong> <br /> </th> 
    <th> <strong>Nome do campo</strong> <br /> </th> 
    <th> <strong>Descrição do indicador</strong> <br /> </th> 
    <th> <strong>Fórmula do cálculo de indicador</strong> <br /> </th> 
@@ -804,7 +804,7 @@ Este relatório é baseado na tabela **[!UICONTROL Delivery]** (nms:delivery).
 <table> 
  <thead> 
   <tr> 
-   <th> <strong>Rótulo</strong> <br /> </th> 
+   <th> <strong>Label</strong> <br /> </th> 
    <th> <strong>Nome do campo</strong> <br /> </th> 
    <th> <strong>Descrição do indicador</strong> <br /> </th> 
    <th> <strong>Fórmula do cálculo de indicador</strong> <br /> </th> 
@@ -832,14 +832,14 @@ Este relatório é baseado na tabela **[!UICONTROL Delivery]** (nms:delivery).
  </tbody> 
 </table>
 
-## Estatísticas de delivery {#delivery-statistics-1}
+## Estatísticas de entrega {#delivery-statistics-1}
 
 Este relatório é baseado na tabela **[!UICONTROL Delivery and tracking statistics]**(nms:deliveryLogStats).
 
 <table> 
  <thead> 
   <tr> 
-   <th> <strong>Rótulo</strong> <br /> </th> 
+   <th> <strong>Label</strong> <br /> </th> 
    <th> <strong>Nome do campo</strong> <br /> </th> 
    <th> <strong>Descrição do indicador</strong> <br /> </th> 
    <th> <strong>Fórmula do cálculo de indicador</strong> <br /> </th> 
@@ -898,7 +898,7 @@ Este relatório baseia-se nas tabelas de **Deliveries** (nms:delivery) e **Logs 
 <table> 
  <thead> 
   <tr> 
-   <th> <strong>Rótulo</strong> <br /> </th> 
+   <th> <strong>Label</strong> <br /> </th> 
    <th> <strong>Nome do campo</strong> <br /> </th> 
    <th> <strong>Descrição do indicador</strong> <br /> </th> 
    <th> <strong>Fórmula do cálculo de indicador</strong> <br /> </th> 
@@ -928,7 +928,7 @@ Se você enfrentar dessincronização ou inconsistência de determinados indicad
 
 Para que o Adobe Campaign detecte aberturas de mensagem, o recipient deve baixar as imagens no email. Os emails em HTML e Multipart/alternative incluem uma imagem de 0 pixel, que permite detectar mensagens que foram abertas. Como as mensagens em formato de texto não incluem imagens, é impossível detectar se foram abertas ou não. Os valores calculados com base na abertura de mensagem são sempre estimativas, devido à margem de erro vinculada à exibição de imagem.
 
-## Pessoas/recipients alvos {#targeted-persons---recipients}
+## Pessoas/recipients direcionados {#targeted-persons---recipients}
 
 Em alguns relatórios, o Adobe Campaign diferencia pessoas alvos e recipients alvos.
 
