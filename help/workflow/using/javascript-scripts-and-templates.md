@@ -7,7 +7,7 @@ content-type: reference
 topic-tags: advanced-management
 exl-id: 4a3647d1-cf8c-4867-871e-472287be7c6a
 source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1234'
 ht-degree: 100%
 
@@ -73,7 +73,7 @@ As variáveis de instância (**[!UICONTROL instance.vars.xxx]**) são comparáve
 
 ### Variáveis de tarefa {#task-variables}
 
-As variáveis de tarefa (**[!UICONTROL task.vars.xxx]**) são comparáveis às variáveis locais. São utilizadas somente pela tarefa atual. Essas variáveis são utilizadas por atividades persistentes para manter os dados e, às vezes, são utilizadas para trocar dados entre os diferentes scripts de uma mesma atividade.
+As variáveis de tarefa (**[!UICONTROL task.vars.xxx]**) são comparáveis às variáveis locais. São utilizadas somente pela tarefa atual. Essas variáveis são utilizadas por atividades persistentes para manter os dados e, às vezes, são utilizadas para troca de dados entre os diferentes scripts de uma mesma atividade.
 
 ### Variáveis do evento {#event-variables}
 
@@ -157,7 +157,7 @@ Neste exemplo, uma variável de instância é usada para calcular dinamicamente 
 
 Este exemplo mostra que a atividade após o **JavaScript Code** acessa as variáveis de instância e as variáveis de evento, mas as variáveis de tarefa não estão acessíveis a partir do exterior (&#39;undefined&#39;).
 
-### Chamada de uma variável de instância em uma query {#calling-an-instance-variable-in-a-query}
+### Chamada de uma variável de instância em uma consulta {#calling-an-instance-variable-in-a-query}
 
 Depois de especificar uma variável de instância em uma atividade, é possível reutilizá-la em uma query de workflow.
 
@@ -175,7 +175,7 @@ Por exemplo:
 
    Para fazer referência à variável da instância na coluna **[!UICONTROL Value]**, digite **$(instance/vars/@deliveryIN)**.
 
-   O workflow retornará os recipients da delivery DM42.
+   O fluxo de trabalho retornará os recipients da entrega DM42.
 
    ![](assets/wkf_var_in_query.png)
 
@@ -187,7 +187,7 @@ Além das funções JavaScript padrão, as funções especiais estão disponíve
 
 **[!UICONTROL logInfo(message)]** foi detalhado nos exemplos acima. Essa função adiciona uma mensagem de informação ao diário.
 
-**[!UICONTROL logError(message)]** adiciona uma mensagem de erro ao log. O script interrompe a execução e o workflow muda para o status de erro (por padrão, a instância será pausada).
+**[!UICONTROL logError(message)]** adiciona uma mensagem de erro ao log. O script interrompe a execução e o fluxo de trabalho muda para o status de erro (por padrão, a instância será pausada).
 
 ## Script de inicialização {#initialization-script}
 
