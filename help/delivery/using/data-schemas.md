@@ -7,7 +7,7 @@ content-type: reference
 topic-tags: content-management
 exl-id: 3e28bfee-0321-40f4-9ef6-1bdb5b25041b
 source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '546'
 ht-degree: 100%
 
@@ -53,7 +53,7 @@ Essas propriedades são descritas no schema **ncm:content**.
 
 ## Tipos de dados {#data-types}
 
-Este é um exemplo de schema de gestão de conteúdo com os tipos preenchidos:
+Este é um exemplo de um esquema de gerenciamento de conteúdo com os tipos preenchidos:
 
 ```
 <srcSchema name="book" namespace="cus">
