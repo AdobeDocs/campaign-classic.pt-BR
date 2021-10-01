@@ -7,7 +7,7 @@ content-type: reference
 topic-tags: use-cases
 exl-id: b699b064-1287-41c9-8d94-1c1aa2c145ab
 source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1241'
 ht-degree: 100%
 
@@ -17,7 +17,7 @@ ht-degree: 100%
 
 ![](../../assets/common.svg)
 
-## Número de cliques de uma delivery específica {#number-of-clicks-for-a-specific-delivery}
+## Número de cliques de uma entrega específica {#number-of-clicks-for-a-specific-delivery}
 
 Neste exemplo, estamos procurando coletar o número de cliques de uma delivery específica. Esses cliques são registrados graças aos logs de acompanhamento de recipients coletados por um determinado período. O recipient é identificado por meio de seu endereço de e-mail. Esta consulta usa a tabela **[!UICONTROL Recipient tracking logs]**.
 
@@ -116,7 +116,7 @@ Para executar esse exemplo, aplique as seguintes etapas:
 
    O número mais alto de logs para um usuário é de 6 para esta delivery. 5 usuários diferentes abriram o e-mail de delivery ou clicaram em um dos links no e-mail.
 
-## Recipientes que não abriram nenhuma delivery {#recipients-who-did-not-open-any-delivery}
+## Recipients que não abriram nenhuma entrega {#recipients-who-did-not-open-any-delivery}
 
 Neste exemplo, devemos filtrar recipients que não abriram um e-mail nos últimos 7 dias.
 
@@ -153,7 +153,7 @@ Se, caso contrário, quiser filtrar os recipients que abriram pelo menos um e-ma
 
 ![](assets/query_open_5.png)
 
-## Recipientes que abriram uma delivery {#recipients-who-have-opened-a-delivery}
+## Recipients que abriram uma entrega {#recipients-who-have-opened-a-delivery}
 
 O exemplo a seguir mostra como selecionar perfis que abriram uma delivery nas últimas 2 semanas:
 
@@ -179,7 +179,7 @@ O exemplo a seguir mostra como selecionar perfis que abriram uma delivery nas ú
 
    ![](assets/s_advuser_query_sample1.6.png)
 
-## Filtro de comportamento dos recipients seguindo uma delivery {#filtering-recipients--behavior-folllowing-a-delivery}
+## Filtragem do comportamento dos recipients após uma entrega {#filtering-recipients--behavior-folllowing-a-delivery}
 
 Em um workflow, as caixas **[!UICONTROL Query]** e **[!UICONTROL Split]** permitem selecionar um comportamento após um delivery. Essa seleção é realizada por meio do filtro **[!UICONTROL Delivery recipient]**.
 
