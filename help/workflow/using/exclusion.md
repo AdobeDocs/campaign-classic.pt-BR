@@ -7,7 +7,7 @@ content-type: reference
 topic-tags: targeting-activities
 exl-id: f4fe97d9-6571-4aa5-8022-b0af9d5a6a13
 source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '349'
 ht-degree: 100%
 
@@ -33,7 +33,7 @@ Marque a opção **[!UICONTROL Generate complement]** se desejar explorar a popu
 
 ## Exemplos de exclusão {#exclusion-examples}
 
-O exemplo a seguir busca compilar uma lista de recipients com idade entre 18 e 30 anos, enquanto exclui os moradores de Paris.
+O exemplo a seguir busca compilar uma lista de recipients com idade entre 18 e 30 anos e excluir os moradores de Paris.
 
 1. Insira e abra uma atividade do tipo **[!UICONTROL Exclusion]** seguida de dois queries. O primeiro query destina-se aos recipients que moram em Paris. O segundo query destina-se aos com idade de 18 a 30 anos.
 1. Insira o conjunto principal. Aqui, o conjunto principal é o query de **18-30 anos.** Os elementos pertencentes ao segundo conjunto serão excluídos do resultado final.
