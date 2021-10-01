@@ -7,9 +7,9 @@ content-type: reference
 topic-tags: managing-an-offer-catalog
 exl-id: 6158ffaa-cb08-4f77-82b8-b3e5e1bf7fd7
 source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '995'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -65,7 +65,7 @@ Os critérios de aplicação disponíveis na guia **[!UICONTROL General]** permi
 
 Na guia **[!UICONTROL Offer presentation]**, você deve especificar as mesmas dimensões para a regra de apresentação como aquelas configuradas no ambiente.
 
-O **[!UICONTROL Targeting dimension]** coincide com a tabela de recipients (por padrão: nms:recipients) que receberão as apresentações de oferta. O **[!UICONTROL Storage dimension]** coincide com a tabela que contém o histórico de apresentações vinculado ao targeting dimension (por padrão,:nms:propositionRcp).
+O **[!UICONTROL Targeting dimension]** coincide com a tabela de recipients (por padrão: nms:recipients) que receberão as apresentações de oferta. O **[!UICONTROL Storage dimension]** coincide com a tabela que contém o histórico de apresentações vinculado ao targeting dimension (por padrão:nms:propositionRcp).
 
 ![](assets/offer_typology_009.png)
 
@@ -96,7 +96,7 @@ Use as setas para modificar o número de apresentações de ofertas:
 
 ## Definição de apresentações e recipients {#defining-propositions-and-recipients}
 
-A seção **[!UICONTROL Propositions to count]** permite especificar os recipients e as apresentações que levarão à exclusão das ofertas definidas na guia **[!UICONTROL General]** se aparecerem um determinado número de vezes no histórico de apresentações.
+A seção **[!UICONTROL Propositions to count]** permite especificar os recipients e as apresentações que levarão à exclusão das ofertas definidas na guia **[!UICONTROL General]** se estas aparecerem um determinado número de vezes no histórico de apresentações.
 
 ### Filtragem de apresentações {#filtering-propositions}
 
