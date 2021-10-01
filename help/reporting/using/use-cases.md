@@ -7,7 +7,7 @@ content-type: reference
 topic-tags: analyzing-populations
 exl-id: e326e32e-7bb0-46ff-9ba5-94ccd1169af2
 source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1316'
 ht-degree: 100%
 
@@ -188,7 +188,7 @@ A última etapa do assistente exibe a tabela e o gráfico.
 
    O restante da configuração é o mesmo para todas as análises descritivas.
 
-### Recomendações de análise de target {#target-analyze-recommendations}
+### Recomendações de análise do target {#target-analyze-recommendations}
 
 A análise de uma população em um workflow requer que a população ainda esteja presente na transição. Se o workflow for iniciado, o resultado relacionado à população pode ser removido da transição. Para executar uma análise, é possível:
 
