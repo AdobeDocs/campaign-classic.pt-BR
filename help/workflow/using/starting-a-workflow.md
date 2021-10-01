@@ -7,13 +7,13 @@ content-type: reference
 topic-tags: -general-operation
 exl-id: d345ba62-c2fb-43df-a2a1-e9e4292d301a
 source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '772'
 ht-degree: 100%
 
 ---
 
-# Iniciar um workflow {#starting-a-workflow}
+# Iniciar um fluxo de trabalho {#starting-a-workflow}
 
 ![](../../assets/common.svg)
 
