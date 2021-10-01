@@ -7,7 +7,7 @@ content-type: reference
 topic-tags: targeting-activities
 exl-id: 4c7bc0f3-5877-47dc-bd72-dc94fb7bd479
 source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1291'
 ht-degree: 100%
 
@@ -139,7 +139,7 @@ Na saída desta atividade de enriquecimento, o schema temporário conterá o lin
 
 ## Reconciliação dos dados {#data-reconciliation}
 
-A atividade de enriquecimento pode ser usada para configurar a reconciliação de dados, incluindo quando os dados tenham sido carregados no banco de dados. Nesse caso, a guia **[!UICONTROL Reconciliation]** permite definir o link entre os dados no banco de dados do Adobe Campaign e os dados na tabela de trabalho.
+A atividade de enriquecimento pode ser usada para configurar a reconciliação de dados, incluindo quando os dados tiverem sido carregados no banco de dados. Nesse caso, a guia **[!UICONTROL Reconciliation]** permite definir o link entre os dados no banco de dados do Adobe Campaign e os dados na tabela de trabalho.
 
 Selecione a opção **[!UICONTROL Identify the targeting document based on work data]**, especifique o schema em que deseja criar um link e defina as condições de ligação: para fazer isto, selecione os campos a serem reconciliados nos dados de trabalho (**[!UICONTROL Source expression]**) e na targeting dimension (**[!UICONTROL Destination expression]**).
 
@@ -149,7 +149,7 @@ Selecione a opção **[!UICONTROL Identify the targeting document based on work 
 
 Se várias condições de associação forem especificadas, TODAS elas deverão ser verificadas para que os dados possam ser vinculados.
 
-## Inserção de uma apresentação de oferta {#inserting-an-offer-proposition}
+## Inserção de uma proposta de oferta {#inserting-an-offer-proposition}
 
 A atividade de enriquecimento permite adicionar ofertas ou links para ofertas de recipients de delivery.
 
@@ -184,7 +184,7 @@ Após configurar sua query (consulte esta [seção](query.md)):
 
 Para especificar propostas de oferta, também é possível optar por referenciar um link para uma oferta. Para obter mais informações, consulte a seguinte seção [Referência a um link para uma oferta](#referencing-a-link-to-an-offer).
 
-## Fazendo referência a um link para uma oferta {#referencing-a-link-to-an-offer}
+## Referenciar um link para uma oferta {#referencing-a-link-to-an-offer}
 
 Também é possível referenciar um link para uma oferta em uma atividade de enriquecimento.
 
