@@ -7,7 +7,7 @@ content-type: reference
 topic-tags: starting-with-adobe-campaign
 exl-id: 20552812-5c58-4d48-9636-d5135197685d
 source-git-commit: cfba72840f7a0d335516d38be24363865d83d18d
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '526'
 ht-degree: 100%
 
@@ -17,7 +17,7 @@ ht-degree: 100%
 
 ![](../../assets/v7-only.svg)
 
-Como solução aberta, o Adobe Campaign está pronto para a personalização e o desenvolvimento avançado de aplicativos.
+Por ser uma solução aberta, o Adobe Campaign está pronto para a personalização e o desenvolvimento avançado de aplicativos.
 
 ## Qual é o modelo de dados do Campaign? {#what-is-the-campaign-data-model}
 
@@ -37,9 +37,9 @@ No Adobe Campaign, os esquemas de dados são usados para:
 
 Leia os [Primeiros passos com tabelas e esquemas](../../configuration/using/about-schema-edition.md) para entender como trabalhar com esquemas de dados, bem como estender e personalizar o Campaign para atender às suas necessidades.
 
-## Como usar uma tabela de destinatários personalizada? {#how-to-use-a-custom-recipient-table-}
+## Como usar uma tabela de recipients personalizada? {#how-to-use-a-custom-recipient-table-}
 
-No Campaign, é possível criar e implementar uma tabela de destinatários não padrão para enviar suas mensagens.
+No Campaign, é possível criar e implementar uma tabela de recipients não padrão para enviar suas mensagens.
 
 [Clique aqui para saber mais](../../configuration/using/about-custom-recipient-table.md)
 
