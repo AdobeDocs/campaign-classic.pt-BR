@@ -7,7 +7,7 @@ content-type: reference
 topic-tags: content-management
 exl-id: bc6ebf5d-cc21-4750-9713-2bf259e7d6bf
 source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1185'
 ht-degree: 100%
 
@@ -19,7 +19,7 @@ ht-degree: 100%
 
 ## Atividade de gestão de conteúdo {#content-management-activity}
 
-Criar, editar e publicar conteúdo pode ser automatizado usando um workflow configurado através da interface do cliente do Adobe Campaign.
+A criação, edição e publicação de conteúdo pode ser automatizada usando um workflow configurado por meio da interface do cliente do Adobe Campaign.
 
 A atividade **Content management** é acessada pela barra de ferramentas **[!UICONTROL Tools]** do diagrama de workflow.
 
@@ -50,7 +50,7 @@ As propriedades da atividade são divididas em quatro etapas:
 
    Cria um novo conteúdo por meio de um template de publicação. A instância de conteúdo será salva na pasta &quot;cadeia de caracteres&quot; preenchida.
 
-### Atualização do conteúdo {#update-the-content}
+### Atualizar o conteúdo {#update-the-content}
 
 * **Assunto**
 
@@ -192,7 +192,7 @@ A atividade **Código JavaScript** recupera o nome completo de cada arquivo gera
 
 ![](assets/d_ncs_content_workflow9.png)
 
-### Criar o delivery e seu conteúdo {#creating-the-delivery-and-its-content}
+### Criar a entrega e seu conteúdo {#creating-the-delivery-and-its-content}
 
 Esse exemplo usa o mesmo conceito do primeiro exemplo, mas cria a ação de delivery na primeira etapa.
 
