@@ -7,7 +7,7 @@ content-type: reference
 topic-tags: acs-connector
 exl-id: 975bdc94-5da4-45ae-a3bd-e8674b447098
 source-git-commit: 91dec9adb177aedc4a82879011371b54886166be
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '790'
 ht-degree: 100%
 
@@ -29,7 +29,7 @@ Para isso, é necessário:
 * um serviço e uma aplicação Web criado e publicado no Campaign v7.
 * o aplicativo web deve conter uma atividade **[!UICONTROL Pre-loading]** usando o método de identificação **[!UICONTROL Adobe Campaign encryption]**.
 
-## Criação do serviço e aplicação Web {#creating-the-web-application-and-service}
+## Criação do serviço e aplicativo web {#creating-the-web-application-and-service}
 
 No Campaign v7, você pode criar aplicações Web que permitem aos recipients assinar um serviço. Os serviço e aplicação Web foram projetados e armazenados no Campaign v7 e você pode atualizar esse serviço por uma comunicação no Campaign Standard. Para obter mais informações sobre aplicações Web no Campaign v7, consulte [esta seção](../../web/using/adding-fields-to-a-web-form.md#subscription-checkboxes).
 
@@ -54,13 +54,13 @@ No Campaign v7, os seguintes objetos foram criados:
 
    ![](assets/acs_connect_lp_5.png)
 
-1. Acesse **[!UICONTROL Profiles and Targets > Recipient]** e selecione um recipient. Você pode ver que ele não assinou o serviço ainda.
+1. Acesse **[!UICONTROL Profiles and Targets > Recipient]** e selecione um recipient. É possível ver que ele não assinou o serviço ainda.
 
    ![](assets/acs_connect_lp_6.png)
 
 ## Replicação de dados {#replicating-the-data}
 
-Para replicar os dados necessários entre o Campaign v7 e o Campaign Standard, vários templates de workflow de replicação estão disponíveis. O workflow **[!UICONTROL Profiles replication]** replica automaticamente todos os recipients do Campaign v7 para o Campaign Standard. Consulte [Workflows técnicos e de replicação](../../integrations/using/acs-connector-principles-and-data-cycle.md#technical-and-replication-workflows). O workflow **[!UICONTROL Landing pages replication]** permite a replicação dos aplicativos web que queremos usar no Campaign Standard.
+Para replicar os dados necessários entre o Campaign v7 e o Campaign Standard, vários modelos de fluxo de trabalho de replicação estão disponíveis. O workflow **[!UICONTROL Profiles replication]** replica automaticamente todos os recipients do Campaign v7 para o Campaign Standard. Consulte [Workflows técnicos e de replicação](../../integrations/using/acs-connector-principles-and-data-cycle.md#technical-and-replication-workflows). O workflow **[!UICONTROL Landing pages replication]** permite a replicação dos aplicativos web que queremos usar no Campaign Standard.
 
 ![](assets/acs_connect_lp_1.png)
 
