@@ -7,7 +7,7 @@ content-type: reference
 topic-tags: creating-new-reports
 exl-id: a19e2843-d3f9-48c3-af72-cc1bc54f6360
 source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '485'
 ht-degree: 100%
 
@@ -17,7 +17,7 @@ ht-degree: 100%
 
 ![](../../assets/common.svg)
 
-Quando quiser representar dados na forma de **[!UICONTROL tables]** ou **[!UICONTROL charts]**, eles poderão ser obtidos a partir de duas fontes: uma nova query (consulte [Definição de um filtro direto em dados](#defining-a-direct-filter-on-data)) ou o contexto do relatório (consulte [Uso de dados de contexto](#using-context-data)).
+Quando quiser representar dados na forma de **[!UICONTROL tables]** ou **[!UICONTROL charts]**, eles poderão ser obtidos a partir de duas fontes: uma nova consulta (consulte [Definição de um filtro direto em dados](#defining-a-direct-filter-on-data)) ou o contexto do relatório (consulte [Uso de dados de contexto](#using-context-data)).
 
 ## Definição de um filtro direto em dados {#defining-a-direct-filter-on-data}
 
