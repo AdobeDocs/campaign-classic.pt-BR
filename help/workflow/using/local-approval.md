@@ -7,7 +7,7 @@ content-type: reference
 topic-tags: action-activities
 exl-id: 2d9cbfc8-1f99-4b38-8460-77c7c986e9ca
 source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '642'
 ht-degree: 100%
 
@@ -83,7 +83,7 @@ No caso de um relatório de feedback de delivery, os seguintes campos devem ser 
 * Selecione a opção **[!UICONTROL Specified in the transition]** se o delivery foi inserido durante uma atividade anterior. Selecione **[!UICONTROL Explicit]** para especificar o delivery na atividade de aprovação local.
 * Selecione o template de delivery e o objeto do email de notificação. Há um template padrão: **[!UICONTROL Local approval notification]**.
 
-## Exemplo: Aprovação de um delivery de workflow {#example--approving-a-workflow-delivery}
+## Exemplo: aprovação de um delivery de workflow {#example--approving-a-workflow-delivery}
 
 Este exemplo mostra como configurar um processo de aprovação para um delivery de workflow. Para obter mais informações sobre como criar workflows de delivery, consulte a seção [Exemplo: workflow de delivery](delivery.md#example--delivery-workflow).
 
