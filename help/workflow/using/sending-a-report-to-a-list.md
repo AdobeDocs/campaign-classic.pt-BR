@@ -7,7 +7,7 @@ content-type: reference
 topic-tags: use-cases
 exl-id: cb24aea5-f3c7-4b17-8899-1792ea18c235
 source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '623'
 ht-degree: 100%
 
@@ -27,7 +27,7 @@ As principais etapas de implementação para este caso de uso são:
 * Criar um template de delivery que permitirá gerar um novo delivery toda vez que o workflow for executado (consulte [Etapa 2 – Criação do template de delivery](#step-2--creating-the-delivery-template)).
 * Criar um workflow que permitirá gerar o relatório em formato PDF e enviá-lo à lista de recipients (consulte [Etapa 3 – Criação do workflow](#step-3--creating-the-workflow)).
 
-## Etapa 1 – Criação da lista de recipients {#step-1--creating-the-recipient-list}
+## Etapa 1: Criação da lista de recipients {#step-1--creating-the-recipient-list}
 
 Acesse a guia **[!UICONTROL Profiles and targets]**, clique no link **[!UICONTROL Lists]** e depois no botão **[!UICONTROL Create]**. Selecione **[!UICONTROL New list]** e crie uma nova lista de recipients para a qual o relatório será enviado.
 
@@ -35,7 +35,7 @@ Acesse a guia **[!UICONTROL Profiles and targets]**, clique no link **[!UICONTRO
 
 Para saber mais sobre criação de listas, consulte esta [seção](../../platform/using/creating-and-managing-lists.md).
 
-## Etapa 2 – Criação do template de delivery {#step-2--creating-the-delivery-template}
+## Etapa 2: Criação do template do delivery {#step-2--creating-the-delivery-template}
 
 1. Vá para o nó **[!UICONTROL Resources > Templates > Delivery templates]** do explorador do Adobe Campaign e duplique o template pronto para uso **[!UICONTROL Email delivery]**.
 
@@ -69,11 +69,11 @@ Para saber mais sobre criação de listas, consulte esta [seção](../../platfor
       >
       >O arquivo deve estar presente no servidor. Seu caminho e nome devem ser idênticos aos inseridos na atividade tipo **[!UICONTROL JavaScript code]** do workflow (consulte [Etapa 3 – Criação do workflow](#step-3--creating-the-workflow)).
 
-   * Selecione a guia **[!UICONTROL Advanced]** e marque **[!UICONTROL Script the name of the file name displayed in the mails sent]**. Vá para a zona de edição e insira o nome que deseja dar ao anexo na delivery final.
+   * Selecione a guia **[!UICONTROL Advanced]** e marque **[!UICONTROL Script the name of the file name displayed in the mails sent]**. Vá para a zona de edição e insira o nome que deseja dar ao anexo na entrega final.
 
       ![](assets/use_case_report_6bis.png)
 
-## Etapa 3 – Criação do workflow {#step-3--creating-the-workflow}
+## Etapa 3: Criação do fluxo de trabalho {#step-3--creating-the-workflow}
 
 O seguinte workflow foi criado para este caso de uso. Ele tem três atividades:
 
