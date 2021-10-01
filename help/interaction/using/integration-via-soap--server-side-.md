@@ -7,7 +7,7 @@ content-type: reference
 topic-tags: unitary-interactions
 exl-id: 3eaef689-44fa-41b3-ade8-9fe447e165ec
 source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '318'
 ht-degree: 100%
 
@@ -19,7 +19,7 @@ ht-degree: 100%
 
 Os serviços da Web SOAP fornecidos para o gerenciamento de ofertas são diferentes daqueles normalmente usados no Adobe Campaign. Eles podem ser acessados por meio da URL de interação descrita na seção anterior e permitem apresentar ou atualizar ofertas para um determinado contato.
 
-## Apresentação de oferta {#offer-proposition}
+## Apresentação da oferta {#offer-proposition}
 
 Para uma apresentação de oferta via SOAP, adicione o comando **nms:proposta#Propose** seguido pelos seguintes parâmetros:
 
@@ -41,7 +41,7 @@ Em resposta à query, o serviço SOAP retorna os seguintes parâmetros:
 * **interactionId**: ID da interação.
 * **propositions**: o elemento XML contém a lista de propostas, cada uma com sua própria identificação e representação HTML.
 
-## Atualização de oferta {#offer-update}
+## Atualização da oferta {#offer-update}
 
 Adicione o comando **nms:interação#UpdateStatus** à URL, seguido desses parâmetros:
 
