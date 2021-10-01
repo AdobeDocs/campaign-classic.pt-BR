@@ -7,9 +7,9 @@ content-type: reference
 topic-tags: creating-new-reports
 exl-id: d32b614f-82c1-4363-816c-4ebedaa5cfe9
 source-git-commit: 7fa8cea04fb4e25187c48ad19330815e9b522b37
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '522'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -99,7 +99,7 @@ Esse tipo de representação gráfica permite entender a evolução de uma ou ma
 
 ### Comparação: histogramas {#comparison--histograms}
 
-Os histogramas permitem comprar os valores de uma ou mais variáveis.
+Os histogramas permitem comparar os valores de uma ou mais variáveis.
 
 Para esses tipos de gráficos, as seguintes opções são oferecidas na janela **[!UICONTROL Variants]**:
 
@@ -129,7 +129,7 @@ Possíveis tipos de interação e suas configurações são detalhadas [nesta se
 
 ## Cálculo estatístico {#calculating-statistics}
 
-Os gráficos permitem exibir estatísticas nos dados coletados.
+Os gráficos permitem exibir estatísticas dos dados coletados.
 
 Essas estatísticas são definidas na seção **[!UICONTROL Series parameters]** da guia **[!UICONTROL Data]**.
 
