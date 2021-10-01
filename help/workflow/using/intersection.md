@@ -7,7 +7,7 @@ content-type: reference
 topic-tags: targeting-activities
 exl-id: f426bf02-9899-49eb-b699-728d51b57c64
 source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '398'
 ht-degree: 100%
 
@@ -31,7 +31,7 @@ Marque a opção **[!UICONTROL Generate complement]** se desejar processar o pú
 
 ## Exemplo de intersecção {#intersection-example}
 
-No exemplo a seguir, o objetivo da intersecção é calcular os recipients comuns aos três queries simples para criar uma lista.
+No exemplo a seguir, o objetivo da intersecção é calcular os recipients comuns em três consultas simples para criar uma lista.
 
 1. Após três queries simples, insira uma atividade do tipo **[!UICONTROL Intersection]**.
 
