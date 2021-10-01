@@ -7,9 +7,9 @@ content-type: reference
 topic-tags: sending-push-notifications
 exl-id: c3b0406f-f652-42f4-ad0d-23fb719cd1b6
 source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '673'
-ht-degree: 94%
+ht-degree: 100%
 
 ---
 
@@ -102,6 +102,6 @@ Para verificar se funciona corretamente, use os seguintes comandos:
    api.push.apple.com:443
    ```
 
-Com o conector HTTP/2 do iOS, o MTA e o servidor da Web devem ser capazes de contatar o APNs na porta 443.
+Se um conector HTTP/2 do iOS for usado, o MTA e o servidor da web deverão ser capazes de contatar APNs na porta 443.
 
 Se precisar usar o conector HTTP/2 do iOS por meio de um proxy, consulte esta [página](../../installation/using/file-res-management.md#proxy-connection-configuration).
