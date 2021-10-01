@@ -7,13 +7,13 @@ content-type: reference
 topic-tags: targeting-activities
 exl-id: 1b526d1c-4a33-45a1-98f4-dcb803c8d228
 source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '407'
 ht-degree: 100%
 
 ---
 
-# Serviços de subscrição{#subscription-services}
+# Serviços de assinatura{#subscription-services}
 
 ![](../../assets/common.svg)
 
@@ -33,7 +33,7 @@ Para configurá-la, edite a atividade e insira seu rótulo, então selecione a a
 
    O conteúdo dessa mensagem é definido no template de delivery associado ao serviço de assinatura. Para obter mais informações, consulte esta [seção](../../delivery/using/managing-subscriptions.md).
 
-## Exemplo: Assinar uma lista de destinatários a um boletim informativo {#example--subscribe-a-list-of-recipients-to-a-newsletter}
+## Exemplo: inscrever uma lista de recipients em um boletim informativo {#example--subscribe-a-list-of-recipients-to-a-newsletter}
 
 Em uma única operação, o workflow a seguir visa fazer uma lista de recipients qualificados para um boletim informativo, destinado a pessoas que trabalham em Paris, a fim de subscrevê-las.
 
