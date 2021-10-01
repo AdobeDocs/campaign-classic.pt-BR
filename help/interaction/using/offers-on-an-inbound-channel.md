@@ -7,7 +7,7 @@ content-type: reference
 topic-tags: case-study
 exl-id: 90afced3-465d-4370-8a33-51a7e4356135
 source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2088'
 ht-degree: 100%
 
@@ -129,7 +129,7 @@ Siga o procedimento detalhado em [Criar um ambiente de oferta](../../interaction
 1. Vá para a guia **[!UICONTROL Eligibility]** e aplique o mesmo peso da primeira oferta.
 1. Execute o ciclo de aprovação de cada oferta para criá-las, bem como seus espaços de ofertas aprovados, disponíveis no ambiente online.
 
-### Configuração do o espaço de ofertas Web no site {#configure-the-web-offer-space-on-the-website}
+### Configurar o espaço de ofertas no site {#configure-the-web-offer-space-on-the-website}
 
 Para que as ofertas recém-configuradas fiquem visíveis no site, insira um código JavaScript na página HTML do site para chamar o motor de interação (para mais informações, consulte [Sobre canais de entrada](../../interaction/using/about-inbound-channels.md)).
 
@@ -278,7 +278,7 @@ Agora vamos criar duas ofertas em cada uma das categorias criadas acima.
 
 1. Execute o ciclo de aprovação em cada oferta para ativá-las. Ao aprovar o conteúdo, ative o espaço de ofertas **Parceiro** ou **Melhor Oferta**, de acordo com a oferta.
 
-### Configure os espaços de oferta no ambiente identificado {#configure-the-offer-spaces-in-the-identified-environment}
+### Configurar os espaços de oferta no ambiente identificado {#configure-the-offer-spaces-in-the-identified-environment}
 
 As ofertas que você vai apresentar no site são obtidas de duas categorias diferentes: **Best Offer** e **Partner**. Neste exemplo, queremos criar um espaço específico para cada delivery.
 
@@ -321,7 +321,7 @@ Neste exemplo, a identificação de contato ocorre graças ao endereço de email
 
 ### Criação de categorias de ofertas em um ambiente identificado {#creating-offer-categories-in-an-identified-environment}
 
-Vamos criar duas categorias separadas: a categoria **Melhor Oferta** e a categoria **Parceiro**, cada uma com duas ofertas personalizadas.
+Vamos criar duas categorias separadas: a categoria **Melhor oferta** e a categoria **Parceiro**, cada uma com duas ofertas personalizadas.
 
 1. Vá para o nó **[!UICONTROL Offer catalogs]** no ambiente identificado.
 1. Como no ambiente anônimo, adicione duas pastas de **[!UICONTROL Offer category]** com **Best Offer** e **Partner** como rótulos.
