@@ -7,7 +7,7 @@ content-type: reference
 topic-tags: content-management
 exl-id: a4472a7c-a16b-4d10-a8ca-f74ca5f62de4
 source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '661'
 ht-degree: 100%
 
@@ -19,7 +19,7 @@ ht-degree: 100%
 
 Agregadores permitem enriquecer o conteúdo com dados externos. Esses dados vêm de queries genéricos ou tabelas vinculadas.
 
-## Queries genéricos {#generic-queries}
+## Consultas genéricas {#generic-queries}
 
 Os queries são configurados por meio do template de publicação na guia **[!UICONTROL Aggregator]**.
 
@@ -39,7 +39,7 @@ Exemplo de retorno de um query no schema do recipient (**nms:recipient**):
 
 O elemento **`<collection-recipient>`** representa o elemento de entrada do documento resultante de um query. Os dados recuperados são retornados sob este elemento; em nosso exemplo, uma lista de recipients.
 
-### Adição de um query {#adding-a-query}
+### Adição de uma consulta {#adding-a-query}
 
 Os parâmetros de query são editados por um assistente.
 
@@ -72,7 +72,7 @@ Existem dois tipos de dados vinculados:
 * Links de conteúdo: esse é o modo de gestão de conteúdo nativo. O conteúdo do link é automaticamente integrado no documento de saída XML.
 * Links para tabelas externas dão acesso a todas as outras tabelas do banco de dados com a restrição de recuperar os dados do link selecionado com um agregador.
 
-### Link para um schema de conteúdo {#link-to-a-content-schema}
+### Link para um esquema de conteúdo {#link-to-a-content-schema}
 
 Um link de conteúdo é declarado no schema de dados da seguinte maneira:
 
