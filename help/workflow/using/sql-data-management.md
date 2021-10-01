@@ -7,9 +7,9 @@ content-type: reference
 topic-tags: action-activities
 exl-id: cada78cb-658f-4b9e-8136-31c17cb1d82f
 source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '418'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
@@ -17,7 +17,7 @@ ht-degree: 95%
 
 ![](../../assets/common.svg)
 
-A atividade de **Gestão de Dados SQL** permite escrever seus próprios scripts SQL para criar e preencher tabelas de trabalho.
+A atividade de **Gestão de dados SQL** permite escrever seus próprios scripts SQL para criar e preencher tabelas de trabalho.
 
 ## Pré-requisitos {#prerequisites}
 
@@ -25,16 +25,16 @@ Antes de configurar a atividade, verifique se os pré-requisitos a seguir estão
 
 * A atividade está disponível somente para fontes de dados remotas. O pacote **[!UICONTROL FDA]** (Federated Data Access) deve, portanto, ser instalado em sua instância. [Saiba mais](../../installation/using/about-fda.md).
 
-   Para obter mais informações, dependendo da versão do Campaign, consulte estas seções:
+   Para mais informações, dependendo da versão do Campaign, consulte estas seções:
 
    ![](assets/do-not-localize/v7.jpeg)[  Documentação do Campaign v7](../../installation/using/about-fda.md)
 
-   ![](assets/do-not-localize/v8.png)[  Documentação do Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/connect/fda.html)
+   ![](assets/do-not-localize/v8.png)[  Documentação do Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/connect/fda.html?lang=pt-BR)
 
 * O esquema de saída deve existir no banco de dados e estar vinculado a um banco de dados do FDA.
 * O operador que executa o fluxo de trabalho deve ter o item **[!UICONTROL USE SQL DATA MANAGEMENT ACTIVITY (useSqlDmActivity)]** nomeado corretamente. [Saiba mais](../../platform/using/access-management-named-rights.md).
 
-## Configurando a atividade de gestão de dados SQL {#configuring-the-sql-data-management-activity}
+## Configurar a atividade de gestão de dados SQL {#configuring-the-sql-data-management-activity}
 
 1. Especifique a atividade **[!UICONTROL Label]**.
 1. Selecione a **[!UICONTROL External account]** a ser utilizada e selecione o **[!UICONTROL Outbound schema]** vinculado a esta conta externa.
