@@ -7,9 +7,9 @@ content-type: reference
 topic-tags: targeting-activities
 exl-id: fcc51131-15d0-4d39-95cb-371d7044373b
 source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '465'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -37,7 +37,7 @@ Geralmente, salvar um target em uma lista marca o final de um workflow. Por padr
 
 ![](assets/do-not-localize/how-to-video.png) [Descubra como criar uma lista de recipients pelo Explorer em vídeo](#video)
 
-## Exemplo: List update {#example--list-update}
+## Exemplo: atualização de lista {#example--list-update}
 
 No exemplo a seguir, a atividade de atualização da lista segue uma query direcionada a homens com mais de 30 anos vivendo na França. A lista será inicialmente criada a partir dos resultados da query. Ela será atualizada sempre que for iniciada a partir do workflow. Ela pode, por exemplo, ser usada regularmente para ofertas promocionais direcionadas em campanhas.
 
