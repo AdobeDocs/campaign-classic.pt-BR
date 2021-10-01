@@ -7,7 +7,7 @@ content-type: reference
 topic-tags: accessing-built-in-reports
 exl-id: 6839fd7e-ecf4-4504-90a8-0207bc3991e4
 source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2183'
 ht-degree: 100%
 
@@ -43,7 +43,7 @@ Para exibir relatórios, clique em seus nomes. Os seguintes relatórios estão d
 * **[!UICONTROL Delivery statistics]** : consulte [Estatísticas de delivery](#delivery-statistics).
 * **[!UICONTROL Breakdown of opens]** : consulte [Detalhamento das aberturas](#breakdown-of-opens).
 
-## Taxa de transferência da entrega {#delivery-throughput}
+## Taxa de transferência de delivery {#delivery-throughput}
 
 Este relatório contém informações sobre a taxa de transferência de delivery da plataforma inteira por um determinado período. Para medir a velocidade em que as mensagens são entregues, os critérios são o número de mensagens enviadas por hora e o tamanho das mensagens (em bits por segundo). No exemplo abaixo, o primeiro gráfico mostra as entregas bem-sucedidas em azul e o número de deliveires incorretos em laranja.
 
@@ -63,7 +63,7 @@ As seguintes opções estão disponíveis:
 * **[!UICONTROL Clicks]** : Número total de cliques nos links nos deliveries. Cliques em links de unsubscription e mirror pages não são considerados.
 * **[!UICONTROL Transactions]** : Número total de transações depois que uma mensagem é recebida. Para que uma transação seja considerada, uma tag do tipo de transação de rastreamento Web deve ser inserida na página da Web correspondente. A configuração de rastreamento Web é apresentada [nesta seção](../../configuration/using/about-web-tracking.md).
 
-## Não entregues e rejeitados {#non-deliverables-and-bounces}
+## Não entregues e devolvidos {#non-deliverables-and-bounces}
 
 Este relatório mostra o detalhamento de não entregues, bem como uma análise de devoluções por domínio de Internet.
 
@@ -246,7 +246,7 @@ A tabela de valores usa os seguintes indicadores:
 * **[!UICONTROL Global rate]** : essa taxa representa o detalhamento dos visitantes (por versão) em relação ao número total de visitantes em todos os sistemas operacionais.
 * **[!UICONTROL Relative rate]** : essa taxa representa o detalhamento dos visitantes (por versão) em relação ao número total de visitantes desse sistema operacional.
 
-## Rastreamento de subscrição {#subscription-tracking}
+## Rastreamento de assinatura {#subscription-tracking}
 
 Este relatório permite monitorar subscrições de serviços de informação. Ele mostra subscrições e unsubscriptions.
 
@@ -270,9 +270,9 @@ A tabela de valores usa os seguintes indicadores:
 
 **[!UICONTROL Subscription evolution curves]**
 
-Este gráfico mostra a evolução das subscrições e unsubscriptions para o período relacionado.
+Este gráfico mostra a evolução das assinaturas e dos cancelamentos de assinaturas no período relacionado.
 
-## Estatísticas de delivery {#delivery-statistics}
+## Estatísticas de entrega {#delivery-statistics}
 
 Este relatório mostra o detalhamento por domínio de Internet, de todas as mensagens processadas e enviadas, de devoluções permanentes e temporárias, aberturas, cliques e unsubscriptions.
 
