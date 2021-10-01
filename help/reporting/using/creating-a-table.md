@@ -7,7 +7,7 @@ content-type: reference
 topic-tags: creating-new-reports
 exl-id: 05f76bdf-6dcd-4360-9e72-0ba6a4dd0d5e
 source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2495'
 ht-degree: 100%
 
@@ -27,7 +27,7 @@ Uma tabela do tipo **[!UICONTROL List with group]** permite agrupar dados na tab
 
 >[!CAUTION]
 >
->A atividade **[!UICONTROL Page]** contendo a tabela deve ser precedida por uma atividade **[!UICONTROL Query]** ou **[!UICONTROL Script]** para coletar os dados a serem analisados no relatório. Para obter mais informações sobre essas atividades, consulte [Coleta de dados para analisar](../../reporting/using/collecting-data-to-analyze.md) e [atividade de script](../../reporting/using/advanced-functionalities.md#script-activity).
+>A atividade **[!UICONTROL Page]** contendo a tabela deve ser precedida por uma atividade **[!UICONTROL Query]** ou **[!UICONTROL Script]** para coletar os dados a serem analisados no relatório. Para mais informações sobre essas atividades, consulte [Coleta de dados para análise](../../reporting/using/collecting-data-to-analyze.md) e [Atividade de script](../../reporting/using/advanced-functionalities.md#script-activity).
 
 ### Princípio operacional {#operating-principle}
 
@@ -211,11 +211,11 @@ Crie um novo relatório que atenda ao schema da campanha, **[!UICONTROL Campaign
 
 Clique em **[!UICONTROL Save]** para criar o relatório.
 
-Vá para o gráfico e adicione os primeiros componentes a serem usados para criar o conteúdo do relatório: uma primeira query e uma primeira página.
+Acesse o gráfico e adicione os primeiros componentes a serem usados para criar o conteúdo do relatório: uma primeira consulta e uma primeira página.
 
 ![](assets/reporting_quick_start_diagram.png)
 
-### Etapa 2 – Criar a primeira query {#step-2---create-the-first-query}
+### Etapa 2 – Criar a primeira consulta {#step-2---create-the-first-query}
 
 A primeira query permite coletar os deliveries vinculados a cada campanha. O objetivo é exibir um relatório sobre os vários deliveries do banco de dados do Adobe Campaign vinculados a cada campanha.
 
@@ -259,7 +259,7 @@ Clique duas vezes na primeira query para editá-la e siga as etapas abaixo para 
 
 1. Clique em **[!UICONTROL Finish]** para salvar essas condições e em **[!UICONTROL Ok]** para fechar o editor da consulta.
 
-### Etapa 3: criação da primeira página {#step-3--create-the-first-page}
+### Etapa 3: criar a primeira página {#step-3--create-the-first-page}
 
 Nesta etapa, vamos configurar a primeira página do relatório. Para configurá-la, siga as etapas abaixo:
 
