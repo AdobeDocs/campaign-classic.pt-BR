@@ -7,7 +7,7 @@ content-type: reference
 topic-tags: profile-management
 exl-id: f7dfbc22-4ac3-4b61-927f-34ecc4e35154
 source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '705'
 ht-degree: 100%
 
@@ -17,7 +17,7 @@ ht-degree: 100%
 
 ![](../../assets/common.svg)
 
-Os dados vinculados ao perfil de um recipient podem ser atualizados manual ou automaticamente.
+Os dados vinculados ao perfil de um recipient podem ser atualizados manualmente ou automaticamente.
 
 ## Configurar uma atualização automática {#setting-up-an-automatic-update}
 
@@ -63,7 +63,7 @@ Feche esta janela e clique em **[!UICONTROL Next]** para exibir a segunda etapa 
 
 As informações relativas à execução da atualização são exibidas na seção superior do assistente.
 
-**[!UICONTROL Stop]** permite cancelar a atualização, mas alguns registros podem ter sido atualizados, por isso, parar o processo não cancela essas atualizações. A barra de progresso mostra o avanço da operação.
+**[!UICONTROL Stop]** permite cancelar a atualização, mas alguns registros podem ter sido atualizados, por isso, parar o processo não cancela essas atualizações. A barra de progresso mostra o quanto a operação avançou.
 
 ### Mesclar dados {#merge-data}
 
