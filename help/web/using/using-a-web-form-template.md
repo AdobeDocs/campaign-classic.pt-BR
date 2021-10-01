@@ -7,7 +7,7 @@ content-type: reference
 topic-tags: web-forms
 exl-id: 0cbb8e4c-8cb4-4dd7-ad09-b8b3165c19a8
 source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '211'
 ht-degree: 100%
 
@@ -19,17 +19,17 @@ ht-degree: 100%
 
 Os modelos são configurações reutilizáveis que permitem criar novos formulários. Por padrão, os modelos de formulário são armazenados com os modelos de aplicações web no nó **[!UICONTROL Resources > Templates > Web application templates]**.
 
-Aqui é possível criar novos modelos ou alterar um formulário existente em um modelo.
+Aqui é possível criar novos modelos ou converter um formulário existente em um modelo.
 
-## Conversão de um formulário existente em um modelo {#convert-an-existing-form-into-a-template}
+## Converter um formulário existente em um modelo {#convert-an-existing-form-into-a-template}
 
-Um formulário pode ser alterado para um template e sua configuração pode ser reutilizada. Para fazer isso, escolha o formulário, clique com o botão direito do mouse e selecione **[!UICONTROL Actions > Save as template...]**.
+Um formulário pode ser alterado para um modelo e sua configuração pode ser reutilizada. Para fazer isso, escolha o formulário, clique com o botão direito do mouse e selecione **[!UICONTROL Actions > Save as template...]**.
 
 ![](assets/s_ncs_admin_survey_saveastemplate.png)
 
 Essa ação abre a janela para a criação de aplicações Web. É possível inserir o nome e a descrição do template, além de selecionar a pasta onde será salvo.
 
-## Criação de um novo modelo de formulário {#create-a-new-form-template}
+## Criar um novo modelo de formulário {#create-a-new-form-template}
 
 Para criar um modelo de formulário Web, clique com o botão direito do mouse na lista de modelos de aplicações web e selecione **[!UICONTROL New]**. Também é possível usar o botão **[!UICONTROL New]** acima da lista de modelos.
 
