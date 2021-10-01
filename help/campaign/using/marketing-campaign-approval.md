@@ -7,7 +7,7 @@ content-type: reference
 topic-tags: orchestrate-campaigns
 exl-id: 8cbb2445-f5e4-4a25-ba7e-56e39ca9d3ce
 source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2434'
 ht-degree: 100%
 
@@ -75,7 +75,7 @@ Se nenhum revisor for especificado, o gerente da campanha será responsável pel
 
 ## Modos de aprovação {#approval-modes}
 
-### Aprovação através do painel {#approval-via-the-dashboard}
+### Aprovação por meio do painel {#approval-via-the-dashboard}
 
 Para aprovar uma tarefa através do console ou da interface da Web, clique no link apropriado no painel de campanha. As tarefas também podem ser aprovadas por meio do rastreamento de delivery ou pelo painel de delivery.
 
@@ -87,7 +87,7 @@ Verifique as informações a serem aprovadas, escolha aceitar ou rejeitar a apro
 >
 >Se um processo já tiver sido aprovado por outro operador, o link de aprovação não estará disponível.
 
-### Aprovação através de mensagens de notificação {#approval-via-notification-messages}
+### Aprovação por meio de mensagens de notificação {#approval-via-notification-messages}
 
 Clique no link disponível na mensagem de notificação (consulte [Notificações](#notifications)). Você precisa fazer logon, conforme mostrado abaixo:
 
@@ -101,7 +101,7 @@ Clique em **[!UICONTROL Validate]**.
 
 >[!NOTE]
 >
->Se os avisos forem gerados durante o processo, um aviso será exibido na notificação.
+>Se avisos forem gerados durante o processo, um aviso será exibido na notificação.
 
 ### Rastreamento de aprovação {#approval-tracking}
 
@@ -129,7 +129,7 @@ As informações estão disponíveis em vários lugares:
 
 ### Aprovação automática e manual {#automatic-and-manual-approval}
 
-Ao criar um workflow de definição de metas, se a aprovação for automática (modo padrão), o Adobe Campaign exibirá o link de aprovação ou envia uma notificação assim que uma aprovação é necessária.
+Ao criar um workflow de definição de metas, se a aprovação for automática (modo padrão), o Adobe Campaign exibe o link de aprovação ou envia uma notificação assim que uma aprovação é necessária.
 
 Para escolher o modo de aprovação (manual ou automático), clique na guia **[!UICONTROL Edit > Properties]** da campanha ou do template da campanha e em seguida em **[!UICONTROL Advanced campaign settings...]** e, por fim, na guia **[!UICONTROL Approvals]**.
 
@@ -229,7 +229,7 @@ Para cada delivery na campanha, você pode aprovar os seguintes processos:
 
    ![](assets/s_ncs_user_task_valid_associate.png)
 
-### Selecionar processos para aprovar {#choosing-the-processes-to-be-approved}
+### Selecionar aprovação de processos {#choosing-the-processes-to-be-approved}
 
 As fases de aprovação são definidas com o modelo associado à campanha. Você deve selecionar os elementos que serão aprovados do modelo e especificar os operadores do Adobe Campaign que serão responsáveis por essas aprovações. Para obter mais informações sobre templates de campanha, consulte [esta seção](../../campaign/using/marketing-campaign-templates.md#campaign-templates).
 
@@ -252,6 +252,7 @@ Para selecionar uma lista de operadores, clique no link **[!UICONTROL Edit...]**
 >* Se uma lista de revisores for definida, um trabalho será aprovado assim que um revisor aceitá-lo. O link de aprovação relevante não é mais oferecido no painel. Quando o envio de notificações estiver habilitado, se outro revisor clicar no link de aprovação na mensagem de notificação, será exibida uma notificação de que outro operador já aprovou a tarefa.
 >* Você pode definir um agendamento de aprovação para a campanha na seção inferior da janela de edição do revisor. Por padrão, os revisores têm três dias a partir da data de envio para aprovar um processo. É possível configurar um lembrete que é enviado automaticamente para os operadores relacionados antes do prazo de aprovação.
 >* Você pode adicionar lembretes desta seção.
+
 >
 
 
