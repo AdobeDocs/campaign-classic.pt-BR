@@ -7,7 +7,7 @@ content-type: reference
 topic-tags: creating-queries
 exl-id: cf914366-8bac-4d68-a0cc-2a43d102eef2
 source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '841'
 ht-degree: 100%
 
@@ -127,7 +127,7 @@ A coluna **[!UICONTROL Transformation]** possibilita alterar um rótulo de colun
 
 ![](assets/query_editor_nveau_42.png)
 
-## Etapa 6 - Visualizar dados {#step-6---preview-data}
+## Etapa 6 - Pré-visualizar dados {#step-6---preview-data}
 
 A janela **[!UICONTROL Data preview]** é a última etapa. Clique em **[!UICONTROL Start the preview of the data]** para obter o resultado da query. Ele está disponível em colunas ou no formato XML. Clique na guia **[!UICONTROL Generated SQL queries]** para exibir a query no formato SQL.
 
