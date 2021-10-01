@@ -7,9 +7,9 @@ content-type: reference
 topic-tags: sending-emails
 exl-id: 1bb36e71-9f1a-4553-b266-eca3f48688e2
 source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '905'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -35,7 +35,7 @@ Ao criar um novo delivery ou template do delivery, o Email Cc não é ativado po
 
 >[!NOTE]
 >
->Se estiver usando o Email Cco com MTA aprimorado, essa opção será ativada automaticamente para todos os deliveries.
+>Se estiver usando o Email Cco com MTA aprimorado, essa opção será ativada automaticamente para todas as entregas.
 
 Para ativar o Email Cco para um template do delivery de email, siga as etapas abaixo:
 
