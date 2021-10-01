@@ -6,9 +6,9 @@ audience: workflow
 content-type: reference
 topic-tags: technical-workflows
 source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '155'
-ht-degree: 87%
+ht-degree: 100%
 
 ---
 
@@ -17,14 +17,14 @@ ht-degree: 87%
 
 ![](../../assets/common.svg)
 
-O workflow detalhado abaixo é agendado para ser executado a cada hora. Ele é instalado com o módulo do **Centro de Mensagens – Controle** por padrão.
+O workflow detalhado abaixo é agendado para ser executado a cada hora. Ele é instalado por padrão com o módulo do **Centro de Mensagens – Controle**.
 
 
-Para obter mais informações, dependendo da versão do Campaign, consulte estas seções:
+Para mais informações, dependendo da versão do Campaign, consulte estas seções:
 
 ![](assets/do-not-localize/v7.jpeg)[  Documentação do Campaign v7](../../message-center/using/about-transactional-messaging.md)
 
-![](assets/do-not-localize/v8.png)[  Documentação do Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/transactional.html)
+![](assets/do-not-localize/v8.png)[  Documentação do Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/transactional.html?lang=pt-BR)
 
 
 <table> 
