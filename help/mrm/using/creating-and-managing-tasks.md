@@ -7,7 +7,7 @@ content-type: reference
 topic-tags: tasks--resources-and-budgets
 exl-id: cc1200fa-f6d8-4f41-aed1-d1a7f229447a
 source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '3730'
 ht-degree: 100%
 
@@ -434,6 +434,7 @@ Uma tarefa pode ser: **[!UICONTROL Scheduled]**, **[!UICONTROL In progress]**, *
 >
 >* O status da tarefa é atualizado automaticamente.
 >* Mesmo que o período de validade seja concluído, as tarefas que não foram fechadas ainda aparecerão na lista de tarefas em andamento. Um aviso notifica os operadores que a tarefa está atrasada.
+
 >
 
 
