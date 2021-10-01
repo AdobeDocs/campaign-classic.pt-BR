@@ -7,7 +7,7 @@ content-type: reference
 topic-tags: campaign-optimization
 exl-id: a4d12445-5680-4704-9c67-e43e0ea6631b
 source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '503'
 ht-degree: 100%
 
@@ -49,7 +49,7 @@ Quando essa regra for usada em um delivery, os assinantes menores de idade serã
 
 ## Condicionando uma regra de filtragem {#conditioning-a-filtering-rule}
 
-Você poderá restringir o campo da aplicação na regra de filtragem com base no delivery ou delivery outline vinculado.
+Você poderá restringir o campo da aplicação na regra de filtragem com base na entrega ou na estrutura de entrega vinculada.
 
 Para fazer isso, vá para a guia **[!UICONTROL General]** da regra de tipologia, selecione o tipo de restrição a ser aplicado e crie o filtro, conforme mostrado abaixo:
 
