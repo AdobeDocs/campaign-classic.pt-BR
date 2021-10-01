@@ -7,7 +7,7 @@ content-type: reference
 topic-tags: profile-management
 exl-id: e1d0556a-6f30-4863-9025-eb9c1b8b53d3
 source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '229'
 ht-degree: 100%
 
@@ -29,15 +29,15 @@ Cada nó coincide com uma pasta. Os dados de cada pasta devem ser considerados p
 >
 >Para exibir a lista de todos os destinatários no banco de dados, crie uma visualização. Saiba mais em [Pastas e exibições](../../platform/using/access-management-folders.md).
 
-## Mover recipients {#moving-recipients}
+## Mover destinatários {#moving-recipients}
 
 É possível selecionar um ou mais destinatários, arrastá-los da lista de destinatários e soltá-los na pasta desejada. Uma mensagem de aviso solicita que você confirme esta ação.
 
-## Copiar um recipient {#copying-a-recipient}
+## Copiar um destinatário {#copying-a-recipient}
 
-Para copiar um destinatário na mesma pasta, clique com o botão direito do mouse no recipient desejado e selecione **[!UICONTROL Copy]**.
+Para copiar um destinatário na mesma pasta, clique com o botão direito do mouse no destinatário desejado e selecione **[!UICONTROL Copy]**.
 
-## Excluir recipients {#deleting-recipients}
+## Excluir destinatários {#deleting-recipients}
 
 Para excluir recipients, mova-os para uma pasta específica e, em seguida, limpe o conteúdo dessa pasta. É **altamente recomendável não usar** a opção **[!UICONTROL Delete]** neste caso.
 
