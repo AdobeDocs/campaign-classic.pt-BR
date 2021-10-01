@@ -7,7 +7,7 @@ content-type: reference
 topic-tags: managing-an-offer-catalog
 exl-id: cf7649fe-f62a-4dfa-a19e-9c1ca545e3e3
 source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '622'
 ht-degree: 100%
 
@@ -51,7 +51,7 @@ Para aprovar o conteúdo da oferta, aplique as seguintes etapas:
 
    >[!NOTE]
    >
-   >A menção **[!UICONTROL Content approved]** não significa que todas as representações de oferta foram habilitadas e aprovadas. Indica que o processo de aprovação de conteúdo foi atingido, seja se todas as ofertas foram habilitadas/aprovadas ou não.
+   >A menção **[!UICONTROL Content approved]** não significa que todas as representações de oferta foram habilitadas e aprovadas. Indica se o processo de aprovação de conteúdo foi atingido, independentemente de todas as ofertas terem sido habilitadas/aprovadas ou não.
 
 ## Aprovação de qualificação para a oferta {#approving-offer-eligibility}
 
@@ -107,7 +107,7 @@ Depois que a aprovação for iniciada, ela poderá ser reiniciada. Para fazer is
 
 ## Publicação da oferta {#publishing-the-offer}
 
-Uma vez que o conteúdo e a qualificação de uma oferta tenham sido aprovados, a oferta é publicada por um workflow que é executado automaticamente para cada oferta cujo ciclo de aprovação foi concluído. O fluxo de trabalho **[!UICONTROL Offer notification]** também é executado a cada hora para sincronizar (se necessário) os espaços e categorias contidos no catálogo de ofertas do ambiente de design para o ambiente live.
+Uma vez que o conteúdo e a qualificação de uma oferta tenham sido aprovados, a oferta é publicada por um fluxo de trabalho que é executado automaticamente para cada oferta cujo ciclo de aprovação foi concluído. O fluxo de trabalho **[!UICONTROL Offer notification]** também é executado a cada hora para sincronizar (se necessário) os espaços e categorias contidos no catálogo de ofertas do ambiente de design para o ambiente live.
 
 O painel de controle disponível no ambiente de design contém informações sobre a publicação, incluindo o nome da oferta correspondente no ambiente live.
 
