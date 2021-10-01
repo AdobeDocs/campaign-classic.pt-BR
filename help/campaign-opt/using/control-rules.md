@@ -7,7 +7,7 @@ content-type: reference
 topic-tags: campaign-optimization
 exl-id: 5a5f26f6-38da-4488-aadb-81fcb5359331
 source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '353'
 ht-degree: 100%
 
@@ -32,7 +32,7 @@ Um conjunto de regras prontas permite que você faça as verificações normais.
 * **[!UICONTROL Wave scheduling check]** (email): verifica se a última onda de deliveries está agendada para iniciar antes do fim do período de validade, caso o delivery esteja distribuído em várias ondas.
 * **[!UICONTROL Unsubscription link approval]** (email): verifica a presença de pelo menos um URL de cancelamento de subscrição (opt-out) em cada conteúdo (HTML e Text).
 
-## Criando uma regra de controle {#creating-a-control-rule}
+## Criação de uma regra de controle {#creating-a-control-rule}
 
 É possível criar novas regras de controle para atender às suas necessidades. Para fazer isso, crie uma regra de tipologia **[!UICONTROL Control]** e insira a fórmula de controle em SQL na guia **[!UICONTROL Code]**.
 
