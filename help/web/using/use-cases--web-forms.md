@@ -7,7 +7,7 @@ content-type: reference
 topic-tags: web-forms
 exl-id: 7aa4646d-1325-47c2-b553-6fe375c48973
 source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '957'
 ht-degree: 100%
 
@@ -17,7 +17,7 @@ ht-degree: 100%
 
 ![](../../assets/common.svg)
 
-## Crie um formulário de subscrição com opt in duplo {#create-a-subscription--form-with-double-opt-in}
+## Criar um formulário de assinatura com aceitação dupla {#create-a-subscription--form-with-double-opt-in}
 
 Quando você oferece serviços de informação, os recipients precisam se subscrever para receber todas as comunicações vinculadas. Para evitar comunicações inadequadas e verificar se o recipient se subscreveu intencionalmente, recomendamos enviar uma solicitação de confirmação da subscrição para criar um opt in duplo. A subscrição só entrará em vigor depois que o usuário clicar no link incluído na mensagem de confirmação.
 
@@ -26,7 +26,7 @@ Este exemplo é baseado no seguinte cenário:
 1. Criação de um formulário de subscrição do boletim informativo em um site que contém uma caixa de seleção para subscrição de um serviço temporário. Esse serviço permitirá que você forneça mensagens de confirmação da subscrição.
 1. Criação do delivery de confirmação da subscrição com um template do delivery vinculado ao formulário web. Ele contém o link de confirmação que chama o formulário da subscrição do boletim informativo e exibe uma mensagem de aprovação de subscrição.
 
-### Etapa 1 - Criação dos serviços de informação {#step-1---creating-information-services}
+### Etapa 1 - Criação de serviços de informação {#step-1---creating-information-services}
 
 1. Crie a subscrição no serviço de boletim informativo a ser oferecido aos recipients. Para obter mais informações sobre como criar um boletim informativo, consulte [esta seção](../../delivery/using/about-services-and-subscriptions.md).
 
@@ -36,7 +36,7 @@ Este exemplo é baseado no seguinte cenário:
 
    ![](assets/s_ncs_admin_survey_double-opt-in_sample_1c.png)
 
-### Etapa 2 - Criação das mensagens de confirmação {#step-2---creating-confirmation-messages}
+### Etapa 2 - Criação de mensagens de confirmação {#step-2---creating-confirmation-messages}
 
 As mensagens de confirmação são enviadas por um template do delivery dedicado referenciado no nível de serviço temporário.
 
@@ -70,7 +70,7 @@ As mensagens de confirmação são enviadas por um template do delivery dedicado
 
    ![](assets/s_ncs_admin_survey_double-opt-in_sample_3c.png)
 
-### Etapa 3 – Criação do formulário de subscrição {#step-3---creating-the-subscription-form}
+### Etapa 3 – Criação do formulário de assinatura {#step-3---creating-the-subscription-form}
 
 O formulário web habilita a subscrição do recipient e a confirmação da subscrição.
 
