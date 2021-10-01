@@ -7,7 +7,7 @@ content-type: reference
 topic-tags: analyzing-populations
 exl-id: 848d67c7-d1dc-4eba-bcb8-672e76d8ce87
 source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1558'
 ht-degree: 100%
 
@@ -57,7 +57,7 @@ Abra o assistente de análise descritiva selecionando os itens e clicando com o 
 
    ![](assets/reporting_descriptive_from_deliveries.png)
 
-   Exemplos de análises descritivas para entregas são fornecidos aqui: [Analisando uma população](../../reporting/using/use-cases.md#analyzing-a-population) e aqui: [Analisando registros de rastreamento de destinatários](../../reporting/using/use-cases.md#analyzing-recipient-tracking-logs).
+   Exemplos de análises descritivas para entregas são fornecidos aqui: [Análise de uma população](../../reporting/using/use-cases.md#analyzing-a-population) e aqui: [Análise de registros de rastreamento de recipients](../../reporting/using/use-cases.md#analyzing-recipient-tracking-logs).
 
 ## Configuração do template de distribuição qualitativa {#configuring-the-qualitative-distribution-template}
 
