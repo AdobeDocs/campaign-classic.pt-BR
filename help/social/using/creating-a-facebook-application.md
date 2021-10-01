@@ -7,7 +7,7 @@ content-type: reference
 topic-tags: configuration
 exl-id: 5c11bd0f-2df7-4c7f-b682-955fedf8e664
 source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '983'
 ht-degree: 100%
 
@@ -105,7 +105,7 @@ As etapas de configuração são as seguintes:
 
    ![](assets/social_fb_terms_of_services.png)
 
-## Criação de um aplicativo Web do tipo Facebook {#creating-a-facebook-type-web-application}
+## Criação de um aplicativo web do tipo Facebook {#creating-a-facebook-type-web-application}
 
 O aplicativo do Facebook do Adobe Campaign permite exibir o conteúdo personalizado no seu aplicativo do Facebook. Para cada aplicativo do Facebook, é necessário criar um aplicativo Web no Adobe Campaign. Para criar um aplicativo Web do Facebook, proceda da seguinte maneira:
 
