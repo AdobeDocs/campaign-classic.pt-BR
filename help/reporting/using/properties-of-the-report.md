@@ -7,7 +7,7 @@ content-type: reference
 topic-tags: creating-new-reports
 exl-id: dfa9d329-1086-4f6d-9d03-df159cad5495
 source-git-commit: 7fa8cea04fb4e25187c48ad19330815e9b522b37
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '429'
 ht-degree: 100%
 
@@ -66,7 +66,7 @@ O idioma de edição é o idioma escrito. Quando adicionar um idioma, a subguia 
 >
 >Para obter mais informações sobre localização da página da web no Campaign, consulte [esta seção](../../web/using/translating-a-web-form.md).
 
-## Personalização da renderização HTML {#personalizing-html-rendering}
+## Personalização da renderização de HTML {#personalizing-html-rendering}
 
 Na guia **[!UICONTROL Rendering]**, é possível personalizar o modo de exibição de dados da página. É possível selecionar:
 
