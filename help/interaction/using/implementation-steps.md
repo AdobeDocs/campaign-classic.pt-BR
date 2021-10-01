@@ -7,7 +7,7 @@ content-type: reference
 topic-tags: general-operation
 exl-id: 82b88ab7-6a95-4bb3-b8b3-abea0fdd4ca0
 source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '284'
 ht-degree: 100%
 
@@ -40,7 +40,7 @@ ht-degree: 100%
    >
    >Quando um espaço é criado no canal de entrada da Web, também é necessária uma configuração no site em que a oferta será exibida.
 
-## Gerenciar o catálogo de ofertas {#managing-the-offer-catalog-}
+## Gerenciamento do catálogo de ofertas {#managing-the-offer-catalog-}
 
 >[!NOTE]
 >
