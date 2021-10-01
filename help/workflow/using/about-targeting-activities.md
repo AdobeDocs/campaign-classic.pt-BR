@@ -7,9 +7,9 @@ content-type: reference
 topic-tags: targeting-activities
 exl-id: 5028ad4c-e427-4e78-962d-c5ea54390db5
 source-git-commit: 7fa8cea04fb4e25187c48ad19330815e9b522b37
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '437'
-ht-degree: 93%
+ht-degree: 100%
 
 ---
 
@@ -39,4 +39,4 @@ Essas atividades permitem construir um ou mais targets definindo conjuntos e div
 * **Atualização de lista**: registra o resultado das atividades de entrada em uma lista. Consulte a seção [List update](../../workflow/using/list-update.md).
 * **Dados de atualização**: permite que você atualize os dados em grande escala no banco de dados. Consulte a seção [Update data](../../workflow/using/update-data.md).
 * **Conector do CRM**: permite configurar a sincronização entre o Adobe Campaign e um CRM. Consulte a seção [CRM Connector](../../workflow/using/crm-connector.md).
-* **[!UICONTROL Change data source]**: permite alterar a fonte de dados de um workflow  **[!UICONTROL Working table]**. Isso oferece mais flexibilidade para gerenciar dados em diferentes fontes de dados, como FDA, FDA e banco de dados local. Consulte a seção [CRM Connector](../../workflow/using/change-data-source.md).
+* **[!UICONTROL Change data source]**: permite alterar a fonte de dados de um workflow **[!UICONTROL Working table]**. Isso oferece mais flexibilidade para gerenciar dados em diferentes fontes de dados, como FDA, FFDA e o banco de dados local. Consulte a seção [CRM Connector](../../workflow/using/change-data-source.md).
