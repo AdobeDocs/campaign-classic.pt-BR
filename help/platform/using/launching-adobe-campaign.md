@@ -7,9 +7,9 @@ content-type: reference
 topic-tags: starting-with-adobe-campaign
 exl-id: 4d9c5b24-83a2-4495-a56c-5bc376d69703
 source-git-commit: 91dec9adb177aedc4a82879011371b54886166be
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '532'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -88,7 +88,7 @@ Para desconectar-se do Adobe Campaign, use o primeiro ícone na barra de ícones
 >
 >Você também pode fechar o aplicativo sem fazer logoff.
 
-## Conheça a sua versão do Adobe Campaign {#getting-your-campaign-version}
+## Obtenha a sua versão do Adobe Campaign {#getting-your-campaign-version}
 
 O menu **[!UICONTROL Help > About...]** permite acessar as seguintes informações:
 
