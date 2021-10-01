@@ -7,7 +7,7 @@ content-type: reference
 topic-tags: importing-and-exporting-data
 exl-id: 05909ea6-2c93-42ff-9142-1dd14fa6fdec
 source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2955'
 ht-degree: 100%
 
@@ -201,7 +201,7 @@ As seguintes opções estão disponíveis para cada campo na tabela em relação
 
 >[!NOTE]
 >
->A definição de uma chave de reconciliação é sempre **obrigatória**, exceto no caso de inserção sem correção de duplicidade.
+>A definição de uma chave de reconciliação é sempre **obrigatória**, exceto no caso de inserção sem desduplicação.
 
 ### Chaves de reconciliação {#reconciliation-keys}
 
@@ -273,7 +273,7 @@ Você pode gerar um arquivo contendo esses registros por meio do ícone **[!UICO
 
 ![](assets/s_ncs_user_import_errors_export.png)
 
-## Etapa 5 - Etapa adicional ao importar destinatários {#step-5---additional-step-when-importing-recipients}
+## Etapa 5 - Etapa adicional ao importar recipients {#step-5---additional-step-when-importing-recipients}
 
 A próxima etapa do assistente de importação permite selecionar ou criar a pasta na qual os dados serão importados, mapear automaticamente destinatários importados com uma lista (nova ou existente) e assinar destinatários a um serviço.
 
