@@ -7,7 +7,7 @@ content-type: reference
 topic-tags: advanced-parameters
 exl-id: 01adb584-5308-4d41-a6f1-223a97efa10f
 source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '717'
 ht-degree: 100%
 
@@ -76,7 +76,7 @@ interactionGlobalCtx = "<interaction navigationLanguage='"+myLanguage+"'/>";
 
 É necessário criar um workflow para criação de target para carregar dados adicionais na tabela de trabalho respeitando a mesma estrutura XML e os mesmos nomes internos que no schema **nms:interaction.** Consulte: [Configuração de dados adicionais](#additional-data-configuration).
 
-## Utilização de dados adicionais {#using-additional-data}
+## Uso de dados adicionais {#using-additional-data}
 
 ### Regras de elegibilidade {#eligibility-rules}
 
