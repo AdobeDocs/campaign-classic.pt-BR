@@ -7,7 +7,7 @@ content-type: reference
 topic-tags: targeting-activities
 exl-id: b4dee085-ccc4-43fd-850d-1501a99272aa
 source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '267'
 ht-degree: 100%
 
@@ -23,7 +23,7 @@ Para obter mais informações sobre delivery outlines no Adobe Campaign, consult
 
 Para configurar a atividade, basta marcar outline desejado e a data de contato planejada. É possível adicionar regras do filtro adicionando tipologias ou regras de tipologia.
 
-## Exemplo: Inserção de uma oferta por meio de um esboço de entrega. {#example--inserting-an-offer-via-a-delivery-outline}
+## Exemplo: Inserção de uma oferta por meio de um delivery outline {#example--inserting-an-offer-via-a-delivery-outline}
 
 A atividade de **delivery outline**, disponível nos workflows da campanha, permite apresentar ofertas mencionadas em um delivery outline na campanha atual em andamento.
 
