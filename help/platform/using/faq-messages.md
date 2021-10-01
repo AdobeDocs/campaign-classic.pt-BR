@@ -7,7 +7,7 @@ content-type: reference
 topic-tags: starting-with-adobe-campaign
 exl-id: 7fc24ef2-b021-440b-b1f2-8c77e2425328
 source-git-commit: cfba72840f7a0d335516d38be24363865d83d18d
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '735'
 ht-degree: 100%
 
@@ -27,7 +27,7 @@ A análise de entrega é a fase na qual a população de destino é calculada e 
 
 [Clique aqui para saber mais](../../delivery/using/steps-validating-the-delivery.md).
 
-### Por que devo criar testes? {#why-should-i-create-proofs-}
+### Por que devo criar provas? {#why-should-i-create-proofs-}
 
 A Adobe recomenda criar mensagens de prova para verificar seu delivery em um grupo de aprovadores antes de enviá-lo para o target principal. Em seguida, você pode validar o conteúdo da mensagem, a personalização e os parâmetros de entrega.
 
@@ -60,11 +60,11 @@ Para evitar conflitos entre campanhas, o Adobe Campaign pode testar várias comb
 
 Saiba como enviar mensagens em vários canais com o Adobe Campaign.
 
-### Como posso enviar e-mails em ondas? {#how-can-i-send-emails-in-waves-}
+### Como posso enviar emails em ondas? {#how-can-i-send-emails-in-waves-}
 
-Antes de enviar uma entrega para uma grande população, você pode [configurar ondas](../../delivery/using/steps-sending-the-delivery.md#sending-using-multiple-waves) para dividir as mensagens em vários lotes e equilibrar a carga.
+Antes de enviar uma entrega a uma grande população, você pode [configurar ondas](../../delivery/using/steps-sending-the-delivery.md#sending-using-multiple-waves) para dividir as mensagens em vários lotes e equilibrar a carga.
 
-### Quais são as principais etapas para criar um e-mail no Campaign? {#which-are-the-key-steps-to-create-an-email-in-campaign-}
+### Quais são as principais etapas para criar um email no Campaign? {#which-are-the-key-steps-to-create-an-email-in-campaign-}
 
 Depois que a entrega do e-mail é criada e validada, é possível enviá-la. Você pode decidir enviar o email para o target principal imediatamente ou agendar o delivery para uma data posterior. Se necessário, antes disso, você também pode estimar o público-alvo.
 
@@ -86,7 +86,7 @@ Com o Campaign Classic, você pode adicionar anexos personalizados aos seus emai
 
 Depois que as mensagens são enviadas, aprenda a controlar e medir seu impacto com o Adobe Campaign.
 
-### Como posso configurar links rastreados em uma entrega de e-mail? {#how-can-i-configure-tracked-links-in-an-email-delivery-}
+### Como posso configurar links rastreados em uma entrega de email? {#how-can-i-configure-tracked-links-in-an-email-delivery-}
 
 Para cada entrega, você pode rastrear a recepção das mensagens e a ativação dos links inseridos no conteúdo da mensagem. Isso permite rastrear o comportamento dos destinatários seguindo as ações de entrega que foram direcionadas.
 
@@ -96,7 +96,7 @@ Para cada URL de mensagem, você pode escolher se irá ativar o rastreamento, al
 
 ### Onde posso acessar logs de entrega e rastreamento? {#where-can-i-access-delivery-and-tracking-logs-}
 
-Saiba como controlar suas entregas e entender o comportamento dos destinatários [nesta página](../../delivery/using/delivery-dashboard.md).
+Saiba como controlar suas entregas e compreenda o comportamento dos recipients [nesta página](../../delivery/using/delivery-dashboard.md).
 
 ### Onde posso obter relatórios de entrega? {#where-can-i-get-delivery-reports-}
 
