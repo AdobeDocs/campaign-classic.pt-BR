@@ -7,7 +7,7 @@ content-type: reference
 topic-tags: subscriptions-and-referrals
 exl-id: 10fd561f-1b07-490e-9f66-d67e44a0def5
 source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '564'
 ht-degree: 100%
 
@@ -29,7 +29,7 @@ Isso permite que os recipients de delivery ou os visitantes do site compartilhem
 >
 >Para que os links adicionados funcionem corretamente, a página de espelho correspondente deve estar disponível. Para fazer isso, inclua o link para a página espelho no delivery.
 
-## Redes sociais: compartilhando um link {#social-networks--sharing-a-link}
+## Redes sociais: compartilhar um link {#social-networks--sharing-a-link}
 
 Para permitir que os recipients de entrega compartilhem o conteúdo das mensagens com membros de sua rede, você precisa incluir o bloco de personalização correspondente.
 
@@ -90,7 +90,7 @@ Aplique as seguintes etapas:
 
    O indicado é adicionado à pasta **Recipients** do banco de dados e é inscrito (por padrão) ao serviço de informação do **Boletim informativo**.
 
-## Rastreamento de compartilhamento em rede social {#tracking-social-network-sharing}
+## Rastreamento de compartilhamento em redes sociais {#tracking-social-network-sharing}
 
 O compartilhamento e o acesso a informações compartilhadas são rastreados. Essas informações coletadas pelo Adobe Campaign podem ser acessadas em dois lugares:
 
