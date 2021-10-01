@@ -7,7 +7,7 @@ content-type: reference
 topic-tags: creating-new-reports
 exl-id: 8b51d0fc-1692-41cd-9aa8-3bb8f4ee454e
 source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '621'
 ht-degree: 100%
 
@@ -31,7 +31,7 @@ Como usuário técnico, além das [propriedades gerais](../../reporting/using/pr
 
 ## Trabalhar com scripts {#adding-a-script}
 
-### Scripts externos de referência {#external-script}
+### Fazer referência a scripts externos {#external-script}
 
 Você pode referenciar códigos JavaScript que serão executados pelo cliente e/ou pelo servidor quando a página do relatório for chamada.
 
@@ -47,7 +47,7 @@ Para fazer isso:
 
 Para execução normal pelo cliente, os scripts referenciados devem ser escritos em JavaScript e precisam ser compatíveis com a maioria dos navegadores. Para obter mais informações, consulte [esta seção](../../web/using/web-forms-answers.md).
 
-### Adicionar uma atividade Script {#script-activity}
+### Adicionar uma atividade de Script {#script-activity}
 
 Ao [projetar seu relatório](../../reporting/using/creating-a-new-report.md#modelizing-the-chart), use a atividade **[!UICONTROL Script]** para processar dados e criar facilmente queries complexos que não habilitam o idioma SQL. Você pode inserir seu query diretamente na janela de script.
 
@@ -116,6 +116,6 @@ No exemplo do vídeo abaixo, você aprenderá a adicionar um parâmetro &quot;_t
 ![](assets/do-not-localize/how-to-video.png) [Descubra este recurso no vídeo](https://helpx.adobe.com/campaign/classic/how-to/add-url-parameter-in-acv6.html?playlist=/ccx/v1/collection/product/campaign/classic/segment/business-practitioners/explevel/intermediate/applaunch/how-to-4/collection.ccx.js&amp;ref=helpx.adobe.com)
 
 
-## Chamado de outro relatório {#calling-up-another-report}
+## Chamar outro relatório {#calling-up-another-report}
 
-Um **Jump** é como uma transição sem uma seta: permite ir de uma atividade para outra ou acessar outro relatório.
+A atividade de **Jump** é como uma transição sem uma seta: permite ir de uma atividade para outra ou acessar outro relatório.
