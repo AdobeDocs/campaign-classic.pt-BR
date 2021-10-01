@@ -7,7 +7,7 @@ content-type: reference
 topic-tags: use-cases
 exl-id: cc29eec9-9c97-4d1b-9567-2581154d7b3f
 source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1272'
 ht-degree: 100%
 
@@ -49,9 +49,9 @@ As principais etapas do ciclo de aprovação de conteúdo são:
 
    ![](assets/local_validation_intro_5.png)
 
-## Etapa 1: criação de template de distribuição de dados {#step-1--creating-the-data-distribution-template-}
+## Etapa 1: Criação do modelo de distribuição de dados {#step-1--creating-the-data-distribution-template-}
 
-O template de distribuição de dados permite limitar o público resultante do target com base no agrupamento de dados, permitindo atribuir cada valor a um supervisor local. Neste exemplo, definimos o campo **[!UICONTROL Email address domain]** como um campo de distribuição e atribuímos um domínio a cada supervisor local
+O modelo de distribuição de dados permite limitar o público resultante do direcionamento com base no agrupamento de dados, permitindo atribuir cada valor a um supervisor local. Neste exemplo, definimos o campo **[!UICONTROL Email address domain]** como um campo de distribuição e atribuímos um domínio a cada supervisor local
 
 Para obter mais informações sobre como criar um template de distribuição de dados, consulte [Limitação do número de registros de subconjunto por distribuição de dados](split.md#limiting-the-number-of-subset-records-per-data-distribution).
 
@@ -87,7 +87,7 @@ Para obter mais informações sobre como criar um template de distribuição de 
       >
       >Verifique se os operadores receberam os direitos apropriados.
 
-## Etapa 2: Criação de um workflow para construção do target {#step-2--creating-the-targeting-workflow}
+## Etapa 2: Criação de um fluxo de trabalho de direcionamento {#step-2--creating-the-targeting-workflow}
 
 Para configurar esse caso de uso, criamos o seguinte workflow para construção do target:
 
@@ -104,9 +104,9 @@ As seguintes atividades foram adicionadas:
 * Uma segunda atividade **[!UICONTROL Local approval]**,
 * Uma atividade **[!UICONTROL End]**.
 
-### Queries, Intersecção e Split {#queries--intersection-and-split}
+### Consultas, Intersecção e Split {#queries--intersection-and-split}
 
-O target de upstream é composto de dois queries, uma intersecção e um Split. O público resultante do direcionamento pode ser limitado por meio de uma atividade **[!UICONTROL Split]** usando um template de distribuição de dados.
+O direcionamento de upstream é composto de duas consultas, uma intersecção e um Split. O público resultante do direcionamento pode ser limitado por meio de uma atividade **[!UICONTROL Split]** usando um template de distribuição de dados.
 
 Para obter mais informações sobre como configurar uma atividade Split, consulte [Split](split.md). A criação de um template de distribuição de dados é detalhada em [Limitação do número de registros do subconjunto por distribuição de dados](split.md#limiting-the-number-of-subset-records-per-data-distribution).
 
@@ -128,7 +128,7 @@ Se não quiser limitar o público da query, não utilize as atividades **[!UICON
 
    ![](assets/local_validation_split_3.png)
 
-No template de distribuição, limitamos o público a 10% por valor de agrupamento, que coincide com os valores exibidos no workflow (340 como entrada e 34 como output).
+No template de distribuição, limitamos o público a 10% por valor de agrupamento, o que coincide com os valores exibidos no workflow (340 como entrada e 34 como saída).
 
 ![](assets/local_validation_intro_1.png)
 
@@ -156,7 +156,7 @@ O email de notificação enviado pela atividade **[!UICONTROL Local approval]** 
 
 ### Aguardar {#wait}
 
-A atividade de espera permite adiar o início da segunda atividade de aprovação local que enviará a notificação de feedback de entrega. No campo **[!UICONTROL Duration]**, inserimos o valor **[!UICONTROL 5d]** (5 dias). As ações executadas por recipients por cinco dias após o envio do delivery serão incluídas na notificação de feedback.
+A atividade de espera permite adiar o início da segunda atividade de aprovação local que enviará a notificação de feedback de entrega. No campo **[!UICONTROL Duration]**, inserimos o valor **[!UICONTROL 5d]** (5 dias). As ações executadas por recipients em um período de cinco dias após o envio do delivery serão incluídas na notificação de feedback.
 
 ![](assets/local_validation_workflow_3.png)
 
