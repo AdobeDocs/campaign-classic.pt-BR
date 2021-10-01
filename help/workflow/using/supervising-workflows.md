@@ -7,13 +7,13 @@ content-type: reference
 topic-tags: use-cases
 exl-id: ca6d4bf4-7b3a-4d36-9fc3-0b83531d0132
 source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '646'
 ht-degree: 100%
 
 ---
 
-# Caso de uso: supervisionar seus workflows{#supervising-workflows}
+# Caso de uso: supervisionar workflows{#supervising-workflows}
 
 ![](../../assets/common.svg)
 
@@ -129,7 +129,7 @@ A atividade &quot;Wait&quot; pode ser configurada para reiniciar o workflow de m
 
 ![](assets/uc_monitoring_workflow_attente.png)
 
-## Etapa 4 - Preparação do delivery {#step-4--preparing-the-delivery}
+## Etapa 4: Preparação do delivery {#step-4--preparing-the-delivery}
 
 A atividade &quot;Delivery&quot; baseia-se em um **template de delivery** armazenado no nó **Resources > Templates >Delivery templates**.
 
