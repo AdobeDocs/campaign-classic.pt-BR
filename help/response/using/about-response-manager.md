@@ -7,13 +7,13 @@ content-type: reference
 topic-tags: response-manager
 exl-id: b5c0e960-2afe-4a98-b82c-d47a74659703
 source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '406'
 ht-degree: 100%
 
 ---
 
-# Introdução ao gestor de resposta do Campaign{#about-response-manager}
+# Introdução ao Gestor de resposta do Campaign{#about-response-manager}
 
 ![](../../assets/v7-only.svg)
 
@@ -48,7 +48,7 @@ Para iniciar uma hipótese em um delivery ou oferta, defina o contexto em um tem
 Aplique o seguinte processo para definir e criar uma hipótese de medição:
 
 1. Defina um modelo de hipótese. [Saiba mais](hypothesis-templates.md#creating-a-hypothesis-model)
-1. Crie uma ou mais hipóteses em um delivery existente. [Saiba mais](creating-hypotheses.md#referencing-a-hypothesis-in-a-campaign-delivery)
+1. Crie uma ou mais hipóteses em uma entrega existente. [Saiba mais](creating-hypotheses.md#referencing-a-hypothesis-in-a-campaign-delivery)
 
    ou
 
