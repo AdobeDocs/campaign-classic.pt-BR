@@ -7,13 +7,13 @@ content-type: reference
 topic-tags: advanced-management
 exl-id: c7bff902-4f5d-4783-aec4-13561fa7d242
 source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '551'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
-# Propriedades do fluxo de trabalho{#workflow-properties}
+# Propriedades do workflow{#workflow-properties}
 
 ![](../../assets/common.svg)
 
