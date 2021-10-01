@@ -7,7 +7,7 @@ content-type: reference
 topic-tags: distributed-marketing
 exl-id: 17b5865a-5e04-4b3b-8b6a-12d5c1a9c1da
 source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1564'
 ht-degree: 100%
 
@@ -49,7 +49,7 @@ Na janela da campanha, clique na guia **[!UICONTROL Edit]** e clique no link **[
 
 ### Interface da Web {#web-interface}
 
-Na guia **Marketing distribuído**, você pode escolher o tipo de interface da Web e especificar os valores e parâmetros padrões a serem inseridos quando uma entidade local colocar um pedido.
+Na guia **Marketing distribuído**, você pode escolher o tipo de interface da Web e especificar os valores e parâmetros padrões a serem inseridos quando uma entidade local enviar um pedido.
 
 A interface da web corresponde a um formulário a ser preenchido pela entidade local ao solicitar a campanha.
 
@@ -157,7 +157,7 @@ Salve seu template de campanha. Agora você pode usá-lo na visualização **[!U
 
 >[!NOTE]
 >
->Os modelos de campanha e a configuração geral estão detalhados em [Campaign templates](../../campaign/using/marketing-campaign-templates.md#campaign-templates).
+>Os templates de campanha e suas configurações gerais estão detalhados em [Templates do Campaign](../../campaign/using/marketing-campaign-templates.md#campaign-templates).
 
 ## Criação do pacote de campanha {#creating-the-campaign-package}
 
@@ -192,7 +192,7 @@ Essas informações são encontradas na mensagem de notificação enviada para a
 
 ### Público-alvo {#audience}
 
-Para uma campanha local, a entidade central pode especificar as entidades locais envolvidas por meio da marcação da opção **[!UICONTROL Limit the package to a set of local entities]**.
+Para uma campanha local, a entidade central pode especificar as entidades locais envolvidas marcando a opção **[!UICONTROL Limit the package to a set of local entities]**.
 
 ![](assets/s_advuser_mkg_dist_create_mutual_entry3.png)
 
