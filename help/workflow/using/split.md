@@ -7,7 +7,7 @@ content-type: reference
 topic-tags: targeting-activities
 exl-id: 4204350a-c2d2-4033-9bdf-87b49d8211b9
 source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1935'
 ht-degree: 100%
 
@@ -66,7 +66,7 @@ Para criar um subconjunto:
 
    Se estiver concluído, o código do segmento de cada subconjunto será armazenado automaticamente em uma coluna adicional. Essa coluna estará acessível nos campos de personalização no nível de delivery.
 
-## Limite de número de registros do subconjunto {#limiting-the-number-of-subset-records}
+## Limitar o número de registros do subconjunto {#limiting-the-number-of-subset-records}
 
 Se não quiser usar toda a população contida em um subconjunto, é possível limitar o número de registros que ele conterá.
 
@@ -201,7 +201,7 @@ O template de distribuição de dados permite limitar o número de registros de 
 
    * **[!UICONTROL Local entity]**: selecione a entidade local atribuída a cada valor de distribuição. As entidades locais são usadas em **Marketing distribuído**. Para obter mais informações, consulte esta [seção](../../distributed/using/about-distributed-marketing.md).
 
-## Filtro de parâmetros {#filtering-parameters}
+## Filtragem de parâmetros {#filtering-parameters}
 
 Clique na guia **[!UICONTROL General]** para acessar o rótulo de atividade. Selecione o target e o filtro de dimensões para essa divisão. Se necessário, é possível alterar essas dimensões para um determinado subconjunto.
 
