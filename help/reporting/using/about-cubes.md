@@ -7,7 +7,7 @@ content-type: reference
 topic-tags: designing-reports-with-cubes
 exl-id: ade4c857-9233-4bc8-9ba1-2fec84b7c3e6
 source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '733'
 ht-degree: 100%
 
@@ -81,7 +81,7 @@ Ao trabalhar com cubos, os seguintes conceitos devem ser conhecidos:
 
    As medidas podem ser calculadas: por exemplo, a taxa de aceitação de uma oferta é a razão do número de vezes que foi apresentada em comparação ao número de vezes que foi aceita.
 
-## Workflow do cubo {#cube-workspace}
+## Espaço de trabalho do cubo {#cube-workspace}
 
 Os cubos são armazenados no nó **[!UICONTROL Administration > Configuration > Cubes]**.
 
