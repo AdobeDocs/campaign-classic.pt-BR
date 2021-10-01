@@ -7,7 +7,7 @@ content-type: reference
 topic-tags: orchestrate-campaigns
 exl-id: a8fce21f-ffe3-4819-87ca-ac0ad9f21e41
 source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1253'
 ht-degree: 100%
 
@@ -57,7 +57,7 @@ Para configurar a hierarquia de pastas para planos de marketing e programas:
 1. Clique com o botão direito do mouse no plano recém-criado e selecione **Create a new &#39;Program&#39; folder**.
 1. Repita as etapas acima para renomear a nova pasta do programa e seu nome interno.
 
-## Crie uma campanha {#creating-a-campaign}
+## Criar uma campanha {#creating-a-campaign}
 
 ### Adicionar uma campanha {#adding-a-campaign}
 
@@ -95,7 +95,7 @@ Para abrir e configurar uma campanha, selecione-a no cronograma e clique em **[!
 
 ![](assets/s_ncs_user_new_op_edit.png)
 
-Você será direcionado ao painel de campanha.
+Você será direcionado ao painel da campanha.
 
 ## Campanhas recorrentes e periódicas {#recurring-and-periodic-campaigns}
 
@@ -105,9 +105,9 @@ Uma campanha periódica é uma campanha criada automaticamente de acordo com o a
 
 ### Criar uma campanha recorrente {#creating-a-recurring-campaign}
 
-As campanhas recorrentes são criadas com base em um modelo específico que define o modelo do fluxo de trabalho que será executado e a programação de execução.
+As campanhas recorrentes são criadas com base em um template específico que define o template do fluxo de trabalho que será executado e a programação de execução.
 
-#### Criar um modelo para campanhas recorrentes {#creating-the-campaign-template}
+#### Criar um template para campanhas recorrentes {#creating-the-campaign-template}
 
 1. Crie um template de campanha **[!UICONTROL Recurring]**.
 
@@ -185,7 +185,7 @@ Para criar a campanha recorrente e executar os workflows de acordo com o agendam
 
 Uma campanha periódica é uma campanha baseada em um template específico que permite criar instâncias de campanha com base em um agendamento de execução. As instâncias de campanha são criadas automaticamente com base em um template de campanha periódico, dependendo da frequência definida no cronograma do template.
 
-#### Criar o template de campanha {#creating-the-campaign-template-1}
+#### Criar o template da campanha {#creating-the-campaign-template-1}
 
 1. Crie um template de campanha **[!UICONTROL Periodic]**, preferencialmente duplicando um template de campanha existente.
 
