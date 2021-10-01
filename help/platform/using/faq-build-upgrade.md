@@ -7,7 +7,7 @@ content-type: reference
 topic-tags: starting-with-adobe-campaign
 exl-id: 85e2135d-a1a3-44f0-a4f9-de38db5c8726
 source-git-commit: cfba72840f7a0d335516d38be24363865d83d18d
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2024'
 ht-degree: 100%
 
@@ -104,7 +104,7 @@ Identifique tempos de tráfego baixos ou de baixo volume que seriam ideais para 
 
 Revise nossa [lista de verificação de atualização de build abaixo](#check-list) e seus planos de teste e verifique se os recursos que podem executar esses testes estão disponíveis dentro de 24 a 48 horas da conclusão de uma atualização.
 
-Para saber mais, [consulte este documento](https://helpx.adobe.com/campaign/kb/acc-build-upgrade.html).
+Para saber mais, [consulte este documento](https://helpx.adobe.com/br/campaign/kb/acc-build-upgrade.html).
 
 ## As atualizações de build podem ser realizadas à noite ou fora do horário comercial?
 
