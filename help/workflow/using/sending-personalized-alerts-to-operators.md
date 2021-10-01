@@ -7,7 +7,7 @@ content-type: reference
 topic-tags: use-cases
 exl-id: 21c97eb3-60cd-4d19-bc0f-5ba9ec17e70a
 source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '343'
 ht-degree: 100%
 
@@ -63,11 +63,11 @@ Para recuperar essas informações, siga as etapas abaixo:
 
    ![](assets/uc_operator_5.png)
 
-1. A targeting dimension e nomes de campos da query são exibidos na lista.
+1. A targeting dimension e os nomes de campos da consulta são exibidos na lista.
 
    ![](assets/uc_operator_6.png)
 
-## Teste a contagem de população {#testing-the-population-count}
+## Teste da contagem de população {#testing-the-population-count}
 
 Adicione o código abaixo na atividade **[!UICONTROL Test]** para verificar se a população direcionada contém pelo menos 1 perfil.
 
@@ -77,7 +77,7 @@ var.recCount>0
 
 ![](assets/uc_operator_7.png)
 
-## Como configurar um alerta {#setting-up-the-alert}
+## Configuração de um alerta {#setting-up-the-alert}
 
 Agora que a população foi adicionada na variável da instância com os campos desejados, é possível adicionar essas informações na atividade **[!UICONTROL Alert]**.
 
