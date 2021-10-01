@@ -7,7 +7,7 @@ content-type: reference
 topic-tags: starting-with-adobe-campaign
 exl-id: 50bed489-2a0f-4123-a326-3d68c8295662
 source-git-commit: cfba72840f7a0d335516d38be24363865d83d18d
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '758'
 ht-degree: 100%
 
@@ -17,7 +17,7 @@ ht-degree: 100%
 
 ![](../../assets/v7-only.svg)
 
-Conheça as principais configurações para configurar o Campaign de acordo com as suas necessidades.
+Conheça as principais configurações para definir a instância do Campaign de acordo com as suas necessidades.
 
 ## Posso alterar o idioma da interface do Campaign? {#can-i-change-the-language-of-campaign-interface-}
 
@@ -39,7 +39,7 @@ Como um usuário especialista, você pode configurar recursos de rastreamento em
 
 [Clique aqui para saber mais](../../installation/using/deploying-an-instance.md#tracking-configuration).
 
-## Como configurar a capacidade de entrega de e-mails? {#how-to-configure-email-deliverability-}
+## Como configurar a capacidade de entrega de emails? {#how-to-configure-email-deliverability-}
 
 Além do [Manual de práticas recomendadas de delivery da Adobe](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/introduction.html?lang=pt-BR), leia as recomendações técnicas de capacidade de delivery para entender como configurar sua instância para maximizar os recursos de delivery do Campaign.
 
@@ -59,7 +59,7 @@ O Adobe Campaign oferece a opção Federated Data Access (FDA) para processar in
 
 ## A quais bancos de dados externos posso conectar o Campaign? {#which-external-databases-can-i-connect-campaign-to-}
 
-Os bancos de dados externos compatíveis com o Campaign por meio do Federated Data Access (FDA) estão listados na [matriz de Compatibilidade](../../rn/using/compatibility-matrix.md).
+Os bancos de dados externos compatíveis com o Campaign por meio do Federated Data Access (FDA) estão listados na [Matriz de compatibilidade](../../rn/using/compatibility-matrix.md).
 
 ## O Adobe Campaign pode ser integrado ao LDAP? {#can-adobe-campaign-integrate-with-ldap-}
 
