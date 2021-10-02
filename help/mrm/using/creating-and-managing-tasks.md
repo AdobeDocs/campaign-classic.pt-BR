@@ -6,10 +6,10 @@ audience: campaign
 content-type: reference
 topic-tags: tasks--resources-and-budgets
 exl-id: cc1200fa-f6d8-4f41-aed1-d1a7f229447a
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
-workflow-type: ht
-source-wordcount: '3730'
-ht-degree: 100%
+source-git-commit: 8b970705f0da6a9e09de9fadb3e1a8c5f4814f9f
+workflow-type: tm+mt
+source-wordcount: '3729'
+ht-degree: 99%
 
 ---
 
@@ -247,7 +247,7 @@ Para criar uma tarefa vinculada diretamente a um programa:
 
 ### Disponibilidade do operador {#operator-availability}
 
-No painel de tarefas, um ícone ao lado do nome do operador indica que ele já está trabalhando em outra tarefa ou evento durante o período abrangido pela tarefa. (Tarefa que o operador está encarregado ou envolvido em: ele aparece no campo **[!UICONTROL Assigned to]** ou na caixa de tarefas **[!UICONTROL Resources]**).
+No painel de tarefas, um ícone ao lado do nome do operador indica que ele já está trabalhando em outra tarefa ou evento durante o período abrangido pela tarefa. A tarefa que o operador está encarregado ou envolvido em aparece no campo **[!UICONTROL Assigned to]** ou na caixa de tarefas **[!UICONTROL Resources]**.
 
 ![](assets/mrm_task_alert_operator_busy.png)
 

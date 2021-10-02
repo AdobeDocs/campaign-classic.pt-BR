@@ -6,10 +6,10 @@ feature: Access Management
 role: User, Admin
 level: Beginner
 exl-id: 580282ce-ee30-422a-8724-9c328637cc39
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
-workflow-type: ht
-source-wordcount: '1146'
-ht-degree: 100%
+source-git-commit: 8b970705f0da6a9e09de9fadb3e1a8c5f4814f9f
+workflow-type: tm+mt
+source-wordcount: '1149'
+ht-degree: 96%
 
 ---
 
@@ -99,7 +99,7 @@ Use a guia **[!UICONTROL Access rights]** para atualizar os grupos e os direitos
 
 O link **[!UICONTROL Edit the access parameters...]** permite acessar as seguintes opções:
 
-* A opção **[!UICONTROL Disable account]** permite desabilitar a conta do operador: ele não acessará mais o Adobe Campaign.
+* A opção **[!UICONTROL Disable account]** permite desabilitar a conta do operador: esse usuário não acessará mais o Adobe Campaign.
 
    >[!NOTE]
    >
@@ -125,7 +125,7 @@ O link **[!UICONTROL Edit the access parameters...]** permite acessar as seguint
 
    >[!IMPORTANT]
    >
-   >Essa é uma restrição muito rígida e deve ser usada com cuidado. Um operador conectado com este tipo de direito pode ver SOMENTE o conteúdo da pasta especificada e não tem acesso a nenhum outro nó da árvore por meio do explorador. No entanto, dependendo das funcionalidades que ele tem acesso (por exemplo: workflows), é possível exibir dados que normalmente são armazenados em nós que não podem ser vistos.
+   >Essa é uma restrição muito rígida e deve ser usada com cuidado. Um operador conectado com este tipo de direito pode ver SOMENTE o conteúdo da pasta especificada e não tem acesso a nenhum outro nó da árvore por meio do explorador. No entanto, dependendo das funcionalidades, esse operador tem acesso a (por exemplo: workflows), o usuário pode exibir dados que normalmente são armazenados em nós que não estão acessíveis.
 
 ### Verificar configurações {#check-settings}
 

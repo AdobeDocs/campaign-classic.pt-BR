@@ -5,10 +5,10 @@ description: Saiba como assimilar públicos-alvo do Adobe Experience Platform no
 audience: integrations
 content-type: reference
 exl-id: 6db8a653-b649-402c-8814-24826edadba7
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
-workflow-type: ht
-source-wordcount: '302'
-ht-degree: 100%
+source-git-commit: 8b970705f0da6a9e09de9fadb3e1a8c5f4814f9f
+workflow-type: tm+mt
+source-wordcount: '303'
+ht-degree: 88%
 
 ---
 
@@ -16,7 +16,7 @@ ht-degree: 100%
 
 ![](../../assets/common.svg)
 
-Para assimilar dados da Adobe Experience Platform no Campaign e usá-los em seus workflows, primeiro é necessário conectar o Adobe Campaign como um **Destino** da Adobe Experience Platform e configurá-lo com o segmento a ser exportado.
+Para assimilar públicos do Adobe Experience Platform no Campaign e usá-los em seus fluxos de trabalho, primeiro é necessário conectar o Adobe Campaign como um Adobe Experience Platform **Destination** e configurá-lo com o segmento a ser exportado.
 
 Depois que o Destino for configurado, os dados serão exportados para o local de armazenamento e você precisará criar um fluxo de trabalho dedicado no Campaign Classic para assimilá-los.
 

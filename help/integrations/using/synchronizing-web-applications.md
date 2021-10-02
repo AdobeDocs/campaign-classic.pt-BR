@@ -6,10 +6,10 @@ audience: integrations
 content-type: reference
 topic-tags: acs-connector
 exl-id: 975bdc94-5da4-45ae-a3bd-e8674b447098
-source-git-commit: 91dec9adb177aedc4a82879011371b54886166be
-workflow-type: ht
-source-wordcount: '790'
-ht-degree: 100%
+source-git-commit: 8b970705f0da6a9e09de9fadb3e1a8c5f4814f9f
+workflow-type: tm+mt
+source-wordcount: '794'
+ht-degree: 92%
 
 ---
 
@@ -54,7 +54,7 @@ No Campaign v7, os seguintes objetos foram criados:
 
    ![](assets/acs_connect_lp_5.png)
 
-1. Acesse **[!UICONTROL Profiles and Targets > Recipient]** e selecione um recipient. É possível ver que ele não assinou o serviço ainda.
+1. Acesse **[!UICONTROL Profiles and Targets > Recipient]** e selecione um recipient. Você pode ver que esse perfil ainda não assinou o serviço.
 
    ![](assets/acs_connect_lp_6.png)
 
@@ -70,7 +70,7 @@ Para verificar se os dados foram replicados corretamente, siga essas etapas no C
 
    ![](assets/acs_connect_lp_7.png)
 
-1. Pesquise o recipient no Campaign v7 e verifique se ele aparece no Campaign Standard.
+1. Procure o recipient no Campaign v7 e verifique se esse recipient aparece no Campaign Standard.
 
    ![](assets/acs_connect_lp_8.png)
 
@@ -102,7 +102,7 @@ As etapas para criar, projetar e enviar o email são iguais de um email clássic
 
    ![](assets/acs_connect_lp_14.png)
 
-1. Ele adiciona um número de telefone e marca a caixa de seleção da assinatura do boletim informativo.
+1. Esse recipient adiciona um número de telefone e marca a caixa de seleção da assinatura do boletim informativo.
 
    ![](assets/acs_connect_lp_15.png)
 
@@ -118,7 +118,7 @@ Quando o recipient atualiza seus dados pela aplicação Web, o Adobe Campaign v7
 
    ![](assets/acs_connect_lp_17.png)
 
-1. Na guia **[!UICONTROL Subscriptions]**, também podemos ver que ele assinou o serviço de boletim informativo.
+1. Na guia **[!UICONTROL Subscriptions]**, também podemos ver que este recipient assinou o serviço de boletim informativo.
 
    ![](assets/acs_connect_lp_18.png)
 

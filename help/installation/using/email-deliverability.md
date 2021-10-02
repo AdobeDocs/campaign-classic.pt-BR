@@ -6,9 +6,9 @@ audience: installation
 content-type: reference
 topic-tags: additional-configurations
 exl-id: 515adad2-6129-450a-bb9e-fc80127835af
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: 8b970705f0da6a9e09de9fadb3e1a8c5f4814f9f
 workflow-type: tm+mt
-source-wordcount: '3022'
+source-wordcount: '3023'
 ht-degree: 20%
 
 ---
@@ -174,7 +174,7 @@ user:~ user$ host -t a mta5.am0.yahoodns.net
                 mta5.am0.yahoodns.net has address 98.138.112.35
 ```
 
-Para este registro, o usuário poderá contatar 8 endereços IP parceiros. Como ele tem 2 endereços IP públicos, isso dá a ele 8 * 2 = 16 combinações para acessar os servidores de email do yahoo.com. Cada uma dessas combinações é chamada de caminho.
+Para este registro, o usuário poderá contatar 8 endereços IP parceiros. Como o usuário tem 2 endereços IP públicos, isso oferece 8 * 2 = 16 combinações para acessar os servidores de email do yahoo.com. Cada uma dessas combinações é chamada de caminho.
 
 O segundo registro MX aparece como:
 

@@ -6,10 +6,10 @@ audience: interaction
 content-type: reference
 topic-tags: unitary-interactions
 exl-id: 33247728-b865-4dfd-814f-2900965a7187
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
-workflow-type: ht
-source-wordcount: '218'
-ht-degree: 100%
+source-git-commit: 8b970705f0da6a9e09de9fadb3e1a8c5f4814f9f
+workflow-type: tm+mt
+source-wordcount: '207'
+ht-degree: 88%
 
 ---
 
@@ -23,7 +23,7 @@ As ofertas podem ser apresentadas em vários espaços de ofertas usando um canal
 
 Para que uma oferta seja selecionada pelo mecanismo de oferta, ela deve ser aprovada e estar disponível em um ambiente em execução. Para saber mais sobre isso, consulte [Aprovação e ativação de uma oferta](../../interaction/using/approving-and-activating-an-offer.md).
 
-Quando um contato é de entrada, há dois resultados possíveis. O primeiro é o usuário não estar identificado pelo site que ele está navegando e o segundo é ele estar identificado. O mecanismo de oferta apresenta diferentes ofertas dependendo se o usuário é identificado ou não.
+Quando um contato é de entrada, há dois resultados possíveis: o usuário que está navegando nas páginas pode ser identificado pelo site ou não. O mecanismo de oferta apresenta diferentes ofertas dependendo se o usuário é identificado ou não.
 
 Antes de poder apresentar ofertas em um canal de entrada, é necessário configurar a chamada do mecanismo de oferta onde deseja que as ofertas sejam apresentadas. Na maioria dos casos para uma interação de entrada, esta é a página da Web.
 

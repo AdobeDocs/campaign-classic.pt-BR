@@ -6,10 +6,10 @@ audience: interaction
 content-type: reference
 topic-tags: managing-environments
 exl-id: e11fb28c-d530-45a2-862a-ff1c20975577
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
-workflow-type: ht
-source-wordcount: '386'
-ht-degree: 100%
+source-git-commit: 8b970705f0da6a9e09de9fadb3e1a8c5f4814f9f
+workflow-type: tm+mt
+source-wordcount: '385'
+ht-degree: 87%
 
 ---
 
@@ -52,15 +52,15 @@ Os direitos atribuídos ao gerente de ofertas permitem que eles executem as segu
 
    ![](assets/offer_operators_create_002.png)
 
-Os direitos atribuídos ao gerente de delivery habilitam ele a realizar as seguintes tarefas:
+Os direitos atribuídos aos gerentes de delivery permitem que eles executem as seguintes tarefas:
 
 * Exibir ambientes **[!UICONTROL Live]**.
 * Exibir e modificar categorias de ofertas.
-* Aprovar ofertas se for especificado como um de seus revisores.
+* Aprovar ofertas se esse gerenciador de delivery for especificado como um de seus revisores.
 
    >[!NOTE]
    >
-   >O gerente de delivery só pode aprovar uma oferta se ele tiver sido definido como um revisor durante a configuração da oferta.
+   >Os gerentes de delivery só podem aprovar uma oferta se tiverem sido definidos como um revisor durante a configuração da oferta.
 
 ## Resumo dos direitos de acordo com o operador {#recap-of-rights-according-to-operator}
 
