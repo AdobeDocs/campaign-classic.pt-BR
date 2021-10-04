@@ -4,10 +4,10 @@ title: 'Opções de ajuda e suporte para Campaign Classic '
 description: Precisa de suporte para o Campaign Classic? Você está no lugar certo.
 hidefromtoc: true
 exl-id: 3a84236f-89e5-4b8b-9a98-afdc006fd6e0
-source-git-commit: 32f55d02920b0104198f809b1be0a91306a4d9e4
+source-git-commit: e719c8c94f1c08c6601b3386ccd99d250c9e606b
 workflow-type: tm+mt
-source-wordcount: '801'
-ht-degree: 86%
+source-wordcount: '799'
+ht-degree: 84%
 
 ---
 
@@ -99,7 +99,7 @@ O Painel de controle do Campaign ajuda a aumentar a eficiência do seu trabalho 
 >
 >O Painel de controle do Campaign é acessível a todos os usuários administradores. As etapas para conceder acesso de Administrador a um usuário estão detalhadas [nesta seção](https://experienceleague.adobe.com/docs/control-panel/using/discover-control-panel/managing-permissions.html?lang=pt-BR#discover-control-panel).
 >
->Observe que sua instância deve ser hospedada no AWS e atualizada com a compilação mais recente do [Gold Standard](rn/using/gs-overview.md) ou a compilação mais recente do GA (21.1.4)[. ](rn/using/latest-release.md) Saiba como verificar a versão [nesta seção](platform/using/launching-adobe-campaign.md#getting-your-campaign-version). Para verificar se sua instância está hospedada no AWS, siga as etapas detalhadas [nesta página](https://experienceleague.adobe.com/docs/control-panel/using/faq.html?lang=pt-BR).
+>Observe que sua instância deve ser hospedada no AWS e atualizada com a compilação mais recente do [Gold Standard](rn/using/gs-overview.md) ou a [compilação mais recente do GA (21.1.4)](rn/using/latest-release.md). Saiba como verificar a versão [nesta seção](platform/using/launching-adobe-campaign.md#getting-your-campaign-version). Para verificar se sua instância está hospedada no AWS, siga as etapas detalhadas [nesta página](https://experienceleague.adobe.com/docs/control-panel/using/faq.html?lang=pt-BR).
 
 ### Como acessar o Painel de controle do Campaign?
 
@@ -123,7 +123,7 @@ Você pode monitorar os subdomínios e seus certificados. Saiba mais nestas pág
 ### Configurações de instância
 
 Saiba como gerenciar as configurações de instâncias do Campaign Classic no Painel de controle. Saiba mais nestas páginas:
-* [Adicione IPs na ](https://experienceleague.adobe.com/docs/control-panel/using/instances-settings/ip-allow-listing-instance-access.html?lang=pt-BR) lista de permissões para acessar suas instâncias do Campaign
+* [Adicione IPs na lista de ](https://experienceleague.adobe.com/docs/control-panel/using/instances-settings/ip-allow-listing-instance-access.html?lang=pt-BR) permissões para acessar suas instâncias do Campaign
 * [Gerenciar permissões de URL](https://experienceleague.adobe.com/docs/control-panel/using/instances-settings/url-permissions.html?lang=pt-BR)
 * [Detalhes da instância de acesso](https://experienceleague.adobe.com/docs/control-panel/using/instances-settings/instance-details.html?lang=pt-BR)
 * [Gerenciar chaves GPG para criptografia de dados](https://experienceleague.adobe.com/docs/control-panel/using/instances-settings/gpg-keys-management.html?lang=pt-BR)

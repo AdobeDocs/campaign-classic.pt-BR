@@ -2,11 +2,11 @@
 product: campaign
 title: Migração para a Nuvem pública
 description: Saiba mais sobre a migração do Campaign Classic para a Nuvem pública
-hidefromtoc: true
 feature: Overview
 role: User
 level: Beginner
-source-git-commit: a4e7fb474d83be821343babacc493fd43c02857d
+exl-id: 2b282221-d048-4f6e-b52e-f8e584af2c0e
+source-git-commit: 1a9e0f8bf374e10af938d15dcebe943819ae327b
 workflow-type: tm+mt
 source-wordcount: '1572'
 ht-degree: 68%
@@ -217,4 +217,3 @@ Normalmente, o domínio usado para enviar emails (parte à direita do sinal @ no
 * [Perguntas frequentes sobre migração para o Adobe Managed Services (Nuvem pública)](dc-migration-faq.md)
 * [Atualização do Gold Standard](../../rn/using/gs-overview.md)
 * [Perguntas frequentes de atualização de build](../../platform/using/faq-build-upgrade.md)
-

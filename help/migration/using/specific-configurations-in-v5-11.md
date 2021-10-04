@@ -6,7 +6,7 @@ audience: migration
 content-type: reference
 topic-tags: configuration
 exl-id: 978e1249-f79b-4f5f-9a94-3bb2510785de
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: e719c8c94f1c08c6601b3386ccd99d250c9e606b
 workflow-type: tm+mt
 source-wordcount: '1041'
 ht-degree: 4%
@@ -24,7 +24,7 @@ Esta seção detalha a configuração adicional necessária ao migrar da v5.11. 
 O seguinte aviso será exibido automaticamente durante a migração:
 
 ```
-The webApp ids have been modified during the migration process. Please make sure to check your scripts/css for broken compatibility (any client side javascript or css dealing directly with another element through its id is impacted). See file 'c:\svn\602\nl\build\ncs\var\upgrade/postupgrade/webAppsMigration_*************.txt' for details about the references that were automatically updated, if any.
+The webApp ids have been modified during the migration process. Please make sure to check your scripts/css for broken compatibility (any client side JavaScript or css dealing directly with another element through its id is impacted). See file 'c:\svn\602\nl\build\ncs\var\upgrade/postupgrade/webAppsMigration_*************.txt' for details about the references that were automatically updated, if any.
 ```
 
 Alguns componentes de aplicações Web, por exemplo, os vários campos de fórmula, têm atributos @id. Eles são usados no código XML de aplicações web e não são mais gerados da mesma maneira. Eles não estão visíveis na interface e você não deve usá-los normalmente. No entanto, em alguns casos, atributos @id podem ter sido usados para personalizar a renderização de aplicações Web, por exemplo, por meio de uma folha de estilos ou usando o código JavaScript.

@@ -7,12 +7,13 @@ breadcrumb-url: /docs/campaign-classic/using/campaign-classic-home.html
 user-guide-description: Com o Adobe Campaign, é possível usar dados avançados do cliente para criar, coordenar e fornecer campanhas dinâmicas que os clientes realmente desejam, por meio de email, dispositivos móveis, canais offline e muito mais.
 sub-product: adobe campaign classic
 type: Documentation
-source-git-commit: aac596caf559b25ba3fff94aca410a66ecc08b27
+source-git-commit: 77c7f1edc531509580c76f55dcb2809c18a04133
 workflow-type: tm+mt
-source-wordcount: '2546'
-ht-degree: 99%
+source-wordcount: '2569'
+ht-degree: 98%
 
 ---
+
 
 # Documentação do produto Adobe Campaign Classic v7 {#using}
 
@@ -36,12 +37,6 @@ ht-degree: 99%
       + [Versão 18.4](rn/using/release--18-4.md)
    + [Recursos obsoletos](rn/using/deprecated-features.md)
    + [Matriz de compatibilidade](rn/using/compatibility-matrix.md)
-   + [Notas técnicas](technotes/using/technote.md)
-   + [Atualização de certificado do iOS](technotes/using/ios-certificate-update.md)
-   + [Proteção de privacidade de email no Apple iOS](technotes/using/apple-mail-app-privacy-protection.md)
-   + [Atualizações de configuração do Campaign](technotes/using/acc-config-updates.md)
-   + [Atualização de URLs rastreados](technotes/using/tracked-urls.md)
-   + [Atualizações do IMS](technotes/using/ims-updates.md)
 + Introdução {#getting-started}
    + Primeiros passos com o Adobe Campaign {#starting-with-adobe-campaign}
       + [Introdução ao Adobe Campaign Classic](platform/using/about-adobe-campaign-classic.md)
@@ -850,6 +845,16 @@ ht-degree: 99%
       + [Configurações específicas na v6.10](migration/using/specific-configurations-in-v6-10.md)
    + [Procedimento de reversão](migration/using/about-rollback.md)
 + Notas técnicas {#technotes}
+   + [Recomendações para dimensionamento de hardware](technotes/using/hardware-sizing.md)
+   + Atualizações e migrações{#technote-migration}
+      + [Notas técnicas](technotes/using/technote.md)
+      + [Atualizações de configuração do Campaign](technotes/using/acc-config-updates.md)
+      + [Atualizações do IMS](technotes/using/ims-updates.md)
+   + Emails e notificações por push{#technotes-email}
+      + [Proteção de privacidade de email no Apple iOS](technotes/using/apple-mail-app-privacy-protection.md)
+      + [Perguntas frequentes sobre a proteção da privacidade do Apple Mail](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/additional-resources/technotes/apple-mail-privacy-faq.html)
+      + [Atualização de certificado do iOS](technotes/using/ios-certificate-update.md)
+      + [Atualização de URLs rastreados](technotes/using/tracked-urls.md)
    + Migração para o Adobe Managed Services{#dc-migration}
       + [Migração para a Nuvem pública](technotes/using/dc-migration.md)
       + [Perguntas frequentes](technotes/using/dc-migration-faq.md)

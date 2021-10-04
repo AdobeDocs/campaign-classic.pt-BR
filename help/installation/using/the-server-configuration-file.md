@@ -6,7 +6,7 @@ audience: installation
 content-type: reference
 topic-tags: appendices
 exl-id: 70cd6a4b-c839-4bd9-b9a7-5a12e59c0cbf
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: e719c8c94f1c08c6601b3386ccd99d250c9e606b
 workflow-type: tm+mt
 source-wordcount: '7969'
 ht-degree: 7%
@@ -602,7 +602,7 @@ Aqui estão os diferentes parâmetros do nó **htmlToPdf**. Essa é a configura�
   </tr> 
   <tr> 
    <td> maxProcessCount<br /> </td> 
-   <td> Max. número de processos de conversão permitidos de cada vez em uma máquina.<br /> </td> 
+   <td> Limite do número de processos de conversão permitidos de cada vez em uma máquina.<br /> </td> 
    <td> Longo<br /> </td> 
    <td> 5<br /> </td> 
   </tr> 
@@ -704,7 +704,7 @@ Estes são os diferentes parâmetros do nó **ims**. Essa é a configuração do
  </tbody> 
 </table>
 
-## javaScript {#javascript}
+## JavaScript {#javascript}
 
 Aqui estão os diferentes parâmetros do nó **javaScript**. Essa é a configuração do interpretador JavaScript.
 
@@ -1399,7 +1399,7 @@ Para obter mais informações, consulte [Interaction - Data buffer](../../instal
   </tr> 
   <tr> 
    <td> callDataSize<br /> </td> 
-   <td> Máx. número de caracteres armazenados na memória compartilhada para dados de chamada.<br /> </td> 
+   <td> Limite do número de caracteres armazenados na memória compartilhada para dados de chamada.<br /> </td> 
    <td> Longo<br /> </td> 
    <td> 0<br /> </td> 
   </tr> 
@@ -1423,7 +1423,7 @@ Para obter mais informações, consulte [Interaction - Data buffer](../../instal
   </tr> 
   <tr> 
    <td> maxSharedEntries<br /> </td> 
-   <td> Máx. número de eventos armazenados na memória compartilhada.<br /> </td> 
+   <td> Limite do número de eventos armazenados na memória compartilhada.<br /> </td> 
    <td> Longo<br /> </td> 
    <td> 25000<br /> </td> 
   </tr> 
@@ -1453,7 +1453,7 @@ Para obter mais informações, consulte [Interaction - Data buffer](../../instal
   </tr> 
   <tr> 
    <td> targetKeySize<br /> </td> 
-   <td> Máx. número de caracteres armazenados na memória compartilhada para identificar indivíduos.<br /> </td> 
+   <td> Limite do número de caracteres armazenados na memória compartilhada para identificar indivíduos.<br /> </td> 
    <td> Longo<br /> </td> 
    <td> 16<br /> </td> 
   </tr> 

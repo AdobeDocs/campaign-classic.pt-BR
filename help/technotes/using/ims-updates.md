@@ -2,12 +2,11 @@
 product: campaign
 title: Atualize seu ambiente para se conectar ao Adobe Campaign com o IMS
 description: Campaign - Atualizações IMS
-hide: true
-hidefromtoc: true
-source-git-commit: 53ac193211a1d98c45e97bf01ab0ad843b8f8f02
+exl-id: ecb5a258-a150-46a3-8b83-2b2c06d873ee
+source-git-commit: 1a9e0f8bf374e10af938d15dcebe943819ae327b
 workflow-type: tm+mt
 source-wordcount: '588'
-ht-degree: 11%
+ht-degree: 12%
 
 ---
 
@@ -94,4 +93,4 @@ Caso veja esse aviso, certifique-se de instalar as atualizações mais recentes 
 * [Disponibilizar o novo Console do cliente para os usuários](../../installation/using/client-console-availability-for-windows.md)
 * [Instalar o console do cliente do Campaign](../../installation/using/installing-the-client-console.md)
 * [Acesse a Distribuição de software Adobe](https://experienceleague.adobe.com/docs/experience-cloud/software-distribution/home.html?lang=en)
-* [Baixar a build do Campaign Classic](https://experience.adobe.com/#/downloads/content/software-distribution/en/campaign.html)
+* [Baixar a build do Campaign Classic](https://experience.adobe.com/#/downloads/content/software-distribution/br/campaign.html)

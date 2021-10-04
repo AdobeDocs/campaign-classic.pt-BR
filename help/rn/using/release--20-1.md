@@ -6,10 +6,10 @@ feature: Overview
 role: User
 level: Beginner
 exl-id: 7e4234c9-3d8f-4014-a870-75e91cfad725
-source-git-commit: 34404fbe935e68f3cc11d937839209443ad4ca60
+source-git-commit: e719c8c94f1c08c6601b3386ccd99d250c9e606b
 workflow-type: tm+mt
 source-wordcount: '1559'
-ht-degree: 99%
+ht-degree: 98%
 
 ---
 
@@ -27,7 +27,7 @@ _15 de abril de 2021_
 
 >[!NOTE]
 >
-> Conecte-se à [Distribuição de software da Adobe](https://experience.adobe.com/#/downloads/content/software-distribution/en/campaign.html) para baixar a nova versão. Saiba como propor a atualização do console para todos os usuários finais [nesta página](../../installation/using/client-console-availability-for-windows.md).
+> Conecte-se à [Distribuição de software da Adobe](https://experience.adobe.com/#/downloads/content/software-distribution/br/campaign.html) para baixar a nova versão. Saiba como propor a atualização do console para todos os usuários finais [nesta página](../../installation/using/client-console-availability-for-windows.md).
 
 _22 de março de 2021_
 
@@ -122,7 +122,7 @@ _17 de fevereiro de 2020_
 
 * Gerenciamento de quarentena e limpeza aprimorados das tabelas usadas pelo recurso de notificação por push (nms:address e nms:appSubscriptionRcp). No iOS (somente conector HTTP2), os tokens desativados agora são manipulados da mesma forma que no Android. O sinalizador disable agora está definido na tabela NmsAppSubscriptionRcp. [Leia mais](../../production/using/database-cleanup-workflow.md#subscription-cleanup--nmac-)
 
-* Uma nova opção foi adicionada ao **código JavaScript** e às atividades de workflow do **código JavaScript avançado** para definir um período de tempo limite. Isso impede que a fase de execução do javascript seja executada por muito tempo. Se o período limite expirar, o workflow será interrompido. O tempo limite padrão é de 1 hora. [Leia mais](../../workflow/using/sql-code-and-javascript-code.md)
+* Uma nova opção foi adicionada ao **código JavaScript** e às atividades de workflow do **código JavaScript avançado** para definir um período de tempo limite. Isso impede que a fase de execução do JavaScript seja executada por muito tempo. Se o período limite expirar, o workflow será interrompido. O tempo limite padrão é de 1 hora. [Leia mais](../../workflow/using/sql-code-and-javascript-code.md)
 
 * A análise do delivery agora é interrompida quando nenhuma afinidade correspondente é encontrada no servidor mid-sourcing, com a mensagem de erro correspondente sendo exibida.
 

@@ -5,10 +5,10 @@ description: Saiba como configurar eventos para implementação personalizada
 audience: integrations
 content-type: reference
 exl-id: 13717b3b-d34a-40bc-9c9e-dcf578fc516e
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
-workflow-type: ht
+source-git-commit: e719c8c94f1c08c6601b3386ccd99d250c9e606b
+workflow-type: tm+mt
 source-wordcount: '1198'
-ht-degree: 100%
+ht-degree: 99%
 
 ---
 
@@ -30,7 +30,7 @@ Como a edição do código JavaScript requer habilidades técnicas, não tente f
 
 O pipeline usa uma função JavaScript para processar cada mensagem. Essa função é definida pelo usuário.
 
-Está configurado na opção **[!UICONTROL NmsPipeline_Config]** sob o atributo &quot;JSConnector&quot;. Esse javascript é chamado toda vez que um evento é recebido. É executado pelo processo [!DNL pipelined].
+Está configurado na opção **[!UICONTROL NmsPipeline_Config]** sob o atributo &quot;JSConnector&quot;. Esse JavaScript é chamado sempre que um evento é recebido. É executado pelo processo [!DNL pipelined].
 
 O arquivo JavaScript de amostra é cus:triggers.js.
 

@@ -2,14 +2,14 @@
 product: campaign
 title: Perguntas frequentes sobre migração para o Adobe Managed Services (Nuvem pública)
 description: Perguntas frequentes sobre a migração do Campaign Classic para a Nuvem pública
-hidefromtoc: true
 feature: Overview
 role: User
 level: Beginner
-source-git-commit: a4e7fb474d83be821343babacc493fd43c02857d
+exl-id: a9cd08b0-55c2-4405-9fb8-f0c623cd4ccb
+source-git-commit: 1f050ada481a7307a59ea6c81290bb0b24a3bf6c
 workflow-type: tm+mt
-source-wordcount: '2273'
-ht-degree: 81%
+source-wordcount: '2243'
+ht-degree: 62%
 
 ---
 
@@ -19,7 +19,7 @@ ht-degree: 81%
 
 Como parte da [Iniciativa Gold Standard](../../rn/using/gold-standard.md), o Adobe desativa o data center herdado. As instâncias do Campaign Classic devem ser transferidas para os Serviços Web da Amazon da Nuvem Pública (AWS). [Saiba mais sobre esta iniciativa](dc-migration.md).
 
-Você encontrará abaixo um conjunto de perguntas comuns sobre esse projeto, o impacto nos ambientes do Campaign e outros recursos úteis.
+Abaixo está um conjunto de perguntas comuns sobre esse projeto, o impacto nos ambientes do Campaign e outros recursos úteis.
 
 Para qualquer outra pergunta, entre em contato com o [Atendimento ao cliente da Adobe](https://experienceleague.adobe.com/?support-solution=Campaign#support).
 
@@ -37,11 +37,11 @@ Os impactos globais no banco de dados e na infraestrutura estão listados abaixo
 
 * **Existe o risco de perda de dados?**
 
-   O banco de dados será descarregado do datacenter herdado e restaurado na Nuvem pública (AWS). Quando reiniciado no novo data center, o aplicativo será retomado do estado exato em que estava antes do desligamento. Os usuários não notarão diferença, exceto que algumas tarefas programadas terão sido adiadas.
+   O banco de dados será descarregado do datacenter herdado e restaurado na Nuvem pública (AWS). Quando reiniciado no novo data center, o aplicativo será retomado do estado exato em que estava antes da migração. Os usuários não notarão diferença, exceto que algumas tarefas programadas terão sido adiadas.
 
 * **Há diferenças no tamanho do pacote entre o data center herdado e a Nuvem pública?**
 
-   Estamos provisionando na Nuvem pública (AWS) com novas definições de pacote com base no tamanho atual do banco de dados, tamanho do disco, etc. Por exemplo, se um cliente tiver um servidor de aplicativos nos data centers herdados, poderá usar dois servidores de aplicativos na Nuvem pública (AWS) com base nas definições do pacote.
+   Estamos provisionando na Nuvem pública (AWS) com novas definições de pacote com base no tamanho atual do banco de dados, tamanho do disco, etc. Por exemplo, se um cliente tiver um servidor de aplicativos em data centers herdados, ele poderá ter dois servidores de aplicativos na Nuvem pública (AWS) com base nas definições do pacote.
 
 * **Haverá alteração no número de build ou na versão do Campaign?**
 
@@ -59,21 +59,21 @@ Os impactos globais no banco de dados e na infraestrutura estão listados abaixo
 
 Os impactos globais em IPs, listas de bloqueios, subdomínios e URLs estão listados abaixo.
 
-* **Como o IP na lista de permissões será tratado? Os clientes precisarão adicionar novos endereços IP à lista de permissões para o tráfego de entrada do Campaign?**
+* **Como o IP na lista de permissões será tratado? Os clientes precisarão adicionar novos endereços IP à lista de permissões para  o tráfego de entrada do Campaign?**
 
    O endereço IP dos servidores da Adobe será alterado. Portanto, os clientes podem precisar adicionar esses novos endereços IP na lista de permissões em seus sistemas.
 
-   [Clique aqui](#config) para obter mais detalhes sobre IP na lista de permissões.
+   [Clique ](#config) aqui para obter mais detalhes sobre IP na lista de permissões.
 
 * **Como lidaremos com a porta adicionada à lista de permissões para acesso SFTP/FTP?**
 
-   A configuração SFTP (chaves públicas + IP na lista de permissões) também será movida do data center herdado para a Nuvem pública (AWS). Nenhuma ação esperada do cliente.
+   A configuração SFTP (chaves públicas + IP na  de lista de permissões) também será movida do data center herdado para a Nuvem pública (AWS). Nenhuma ação esperada do cliente.
 
 * **Estamos alterando os IPs?**
 
-   O endereço IP dos servidores da Adobe será alterado. Portanto, os clientes podem precisar adicionar esses novos endereços IP à lista de permissões em seus sistemas.
+   O endereço IP dos servidores da Adobe será alterado. Portanto, os clientes podem precisar adicionar esses novos endereços IP à lista de permissões no sistema.
 
-   [Clique aqui](#config) para obter mais detalhes sobre IP na lista de permissões.
+   [Clique ](#config) aqui para obter mais detalhes sobre IP na lista de permissões.
 
 * **Como a delegação de subdomínios será tratada?**
 
@@ -99,15 +99,15 @@ Os impactos globais em IPs, listas de bloqueios, subdomínios e URLs estão list
 
    Quando a migração for concluída, a instância do Campaign terá IPs de envio totalmente diferentes. Como uma questão de garantir uma transição sem problemas, a Adobe implementará um aumento dos novos IPs de envio, alternando gradativamente o tráfego dos IPs antigos para os novos.
 
-* **Estamos transferindo o URL na lista de permissões?**
+* **Estamos mudando o URL na  lista de permissões?**
 
    Sim, isso é armazenado no arquivo de configuração do servidor que será copiado da origem para a nova instância.
 
 * **Qual deve ser o impacto no subdomínio delegado que usamos para marcar nossa comunicação?**
 
-   Os subdomínios usados para comunicação de marketing permanecerão os mesmos. No entanto, dependendo da implementação, poderão ser necessárias ações do lado do cliente:
-   * No caso de delegação de subdomínio para a Adobe (padrão), a Adobe cuidará de todas as alterações e garantirá uma transição contínua.
-   * No caso de configuração CNAME (exceção), o cliente será solicitado a implementar as alterações. Será necessária a coordenação com a Adobe.
+   Os subdomínios usados para comunicação de marketing permanecem os mesmos. No entanto, dependendo da implementação, as ações são necessárias no lado do cliente:
+   * No caso de delegação de subdomínio para o Adobe (padrão), o Adobe cuida de todas as alterações e garante uma transição contínua.
+   * No caso de configuração CNAME (exceção), o cliente é solicitado a implementar as alterações, em coordenação com o Adobe.
 
 ## Impactos na configuração e na conectividade
 
@@ -123,7 +123,7 @@ Vamos considerar os dois casos:
 
 * Tráfego de entrada: Todas as atividades de rede iniciadas de seus sistemas ou de terceiros para servidores da Adobe Campaign. A configuração será gerenciada pela Adobe e copiada da nuvem herdada para a pública durante a migração. Em seguida, a conectividade para o tráfego de entrada será preservada como ocorre após a migração e nenhuma ação é esperada do lado do Cliente
 
-* Tráfego de saída: Todas as atividades de rede iniciadas pelos servidores da Adobe Campaign para o seu Sistema de Informações ou qualquer outra empresa (por exemplo: Provedor de SMS). Dependendo das políticas de segurança em vigor em sua organização, as alterações de IPs podem exigir a operação da lista de permissões do seu Sistema de informações ou de terceiros.
+* Tráfego de saída: Todas as atividades de rede iniciadas pelos servidores da Adobe Campaign para o seu Sistema de Informações ou qualquer outra empresa (por exemplo: Provedor de SMS). Dependendo das políticas de segurança em vigor em sua organização, as alterações de IPs podem exigir lista de permissões operação do seu Sistema de Informações ou de terceiros
 
 ### Impactos globais
 
@@ -131,15 +131,15 @@ Os impactos globais na configuração, na conectividade com outros sistemas e pr
 
 * **A migração afetará a conectividade com contas externas?**
 
-   Sim. Integrações de terceiros, provedores de SMS, por exemplo, devem adicionar novos endereços IP de servidores de aplicativos Adobe Campaign à lista de permissões.
+   Sim. Integrações de terceiros, provedores de SMS, por exemplo, devem adicionar novos endereços IP de servidores de aplicativos Adobe Campaign à  de lista de permissões.
 
-* **A migração afetará a conectividade com o Adobe Analytics usando o conector Genesis? E quanto à adição de endereços IP do Campaign à lista de permissões da parte do Adobe Analytics?**
+* **A migração afetará a conectividade com o Adobe Analytics usando o conector Genesis? E quanto à adição de endereços IP do Campaign à lista de permissões no lado do Adobe Analytics?**
 
    Os endereços IP dos servidores de aplicativos do Adobe Campaign serão alterados. Essa etapa será realizada pelo Atendimento ao cliente da Adobe após a migração.
 
 * **A migração afetará a conectividade com outras soluções da Adobe (AEM, Target, etc.)?**
 
-   As integrações são uma combinação de endereços IP declarados na configuração da conta do lista de permissões e do serviço da Web. Isso será da responsabilidade do Atendimento ao cliente da Adobe e de sua propriedade.
+   As integrações são uma combinação de endereços IP declarados na configuração da conta de serviço da Web e da  de lista de permissões. Isso será da responsabilidade do Atendimento ao cliente da Adobe e de sua propriedade.
 
    Haverá endereços IP na lista de permissões que serão necessários na solução externa, pois o IP dos servidores de aplicativos será alterado. Essas informações serão fornecidas. Outras partes da integração são baseadas no IMS e devem funcionar como estão.
 
@@ -153,9 +153,9 @@ Os impactos globais na configuração, na conectividade com outros sistemas e pr
 
 * **A conectividade da API é afetada pela migração?**
 
-   O endereço IP dos servidores da Adobe será alterado. Portanto, os clientes podem precisar adicionar esses novos endereços IP à lista de permissões em seus sistemas.
+   O endereço IP dos servidores da Adobe será alterado. Portanto, os clientes podem precisar adicionar esses novos endereços IP à lista de permissões no sistema.
 
-   [Clique ](#config) aqui para obter mais detalhes sobre IP no lista de permissões.
+   [Clique ](#config) aqui para obter mais detalhes sobre IP lista de permissões.
 
 * **Asseguraremos que todos os parâmetros de configuração de memória JavaScript estejam definidos corretamente após a migração?**
 
@@ -178,7 +178,7 @@ Os impactos globais na configuração, na conectividade com outros sistemas e pr
 
 Com essa migração para a Nuvem pública (AWS), os ambientes do cliente serão mantidos atualizados com todos os requisitos de segurança necessários. Isso inclui :
 
-* Os patches mais recentes de sistema operação e segurança periodicamente
+* Os patches mais recentes de sistema operacional e segurança periodicamente
 * Isolamento da infraestrutura por cliente
 * A segurança gerenciada e as revisões de auditoria para oferecer suporte à infraestrutura em nuvem, como balanceadores de carga, regras de segurança de rede e criptografia de armazenamento.
 
@@ -198,11 +198,11 @@ Os impactos em permissões, certificados e acesso SFTP estão listados abaixo.
 
 * **Se a conexão SFTP não puder ser estabelecida, qual será a solução alternativa/plano para manter o cliente em operação?**
 
-   O único problema de conectividade que pode surgir está relacionado à lista de permissões da parte do cliente. O cliente deve adicionar esse teste em um ambiente que não seja de produção para garantir que funcione, antes de migrar para a produção.
+   O único problema de conectividade que pode surgir está relacionado à lista de permissões do lado do cliente. O cliente deve adicionar esse teste em um ambiente que não seja de produção para garantir que funcione, antes de migrar para a produção.
 
-* **Existe alguma configuração da lista de permissões específica do data center que precisa ser transferida?**
+* **Existem configurações de  de lista de permissões específicas do data center que precisam ser transferidas?**
 
-   Não, não há nenhuma configuração da lista de permissões específica do data center a ser gerenciada.
+   Não, não há nenhuma configuração de  de lista de permissões específica do data center para gerenciar.
 
 * **Estamos garantindo que scripts personalizados sejam executados com êxito no novo ambiente?**
 
@@ -223,7 +223,7 @@ Os impactos globais durante a migração estão listados abaixo.
 
 * **Precisamos planejar a interrupção da atividade de Marketing durante a migração?**
 
-   A Adobe recomenda desacelerar e, idealmente, pausar todas as execuções pouco antes do desligamento do aplicativo no data center herdado: entregas e fluxos de trabalho. Isso facilitará a reinicialização no Servidor na nuvem (AWS), pois os processos terão tempo para pausar &quot;normalmente&quot; e salvar qualquer estado de execução em andamento.
+   O Adobe recomenda o atraso e, idealmente, a pausa de todas as execuções antes do desligamento do aplicativo no data center herdado: deliveries e workflows. Isso facilitará a reinicialização no Servidor na nuvem (AWS), pois os processos terão tempo para pausar &quot;normalmente&quot; e salvar qualquer estado de execução em andamento.
 
 * **Esperamos tempo de inatividade do serviço do Adobe Campaign?**
 
@@ -266,21 +266,20 @@ Os impactos globais durante a migração estão listados abaixo.
 
    O plano de reversão é retornar o DNS e redefinir o banco de dados de origem como leitura e gravação de somente leitura. Eventualmente teremos automação para isso.
 
-* **Depois da migração, mantemos um acesso a instâncias antigas?**
+* **Após a migração, ainda podemos acessar instâncias antigas?**
 
    Quando a migração do aplicativo estiver concluída, não haverá plano para executar os processos novamente no data center herdado. Esperamos que todos os dados no data center herdado possam ser apagados, exceto para fins de backup temporário, até que os processos de backup programados sejam executados na Nuvem pública (AWS).
 
-* **Quanto tempo de teste será permitido para cada instância após a migração para a Nuvem pública?**
+* **Quanto tempo será permitido para testar cada instância após a migração para a Nuvem pública?**
 
    Dependendo da complexidade do cliente, será necessário um tempo de Bake de pelo menos uma semana entre as migrações do ambiente de Preparo e do ambiente de Produção.
 
 * **Quem lidará com a adição de novos IPs à lista de permissões?**
 
-   A equipe de Atendimento ao cliente da Adobe garantirá que o cliente e terceiros possam acessar o novo sistema ao adicionar os novos IPs à lista de permissões.
+   A equipe de Atendimento ao cliente do Adobe garantirá que o cliente e terceiros possam acessar o novo sistema, adicionando os novos IPs à lista de permissões.
 
 ## Suporte e outros links úteis{#support}
 
 * [Migração para o Adobe Managed Services (Nuvem pública)](dc-migration.md)
 * [Atualização do Gold Standard](../../rn/using/gs-overview.md)
 * [Perguntas frequentes de atualização de build](../../platform/using/faq-build-upgrade.md)
-

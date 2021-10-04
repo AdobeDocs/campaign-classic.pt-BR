@@ -6,10 +6,10 @@ audience: installation
 content-type: reference
 topic-tags: prerequisites-and-recommendations-
 exl-id: e1aff73a-54fb-444e-b183-df11c9b3df31
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: e719c8c94f1c08c6601b3386ccd99d250c9e606b
 workflow-type: tm+mt
-source-wordcount: '625'
-ht-degree: 43%
+source-wordcount: '621'
+ht-degree: 40%
 
 ---
 
@@ -50,7 +50,7 @@ Existem três modos de proteção de conexão:
 
 * **Bloqueio** : todos os URLs fora da lista de permissões são bloqueados, com uma mensagem de erro. Este é o modo padrão depois de um pós-upgrade.
 * **Permissivo** : todos os URLs fora da lista de permissões são permitidos.
-* **Aviso** : todos os URLs não na lista de permissões são permitidos, mas o interpretador JS emite um aviso, para que o administrador possa coletá-los. Esse modo adiciona mensagens de aviso JST-310027.
+* **Aviso** : todos os URLs que não estão na lista de permissões são permitidos, mas o interpretador JS emite um aviso, para que o administrador possa coletá-los. Esse modo adiciona mensagens de aviso JST-310027.
 
 ```
 <urlPermission action="warn" debugTrace="true">
@@ -60,7 +60,7 @@ Existem três modos de proteção de conexão:
 </urlPermission>
 ```
 
-Novos clientes usarão o modo de bloqueio. Se eles quiserem permitir um novo URL, precisam contatar o administrador para incluí-lo na lista de permissões.
+Novos clientes usarão o modo de bloqueio. Se eles quiserem permitir um novo URL, eles precisam entrar em contato com o administrador para adicioná-lo à  de lista de permissões.
 
 Os clientes existentes provenientes de uma migração podem usar o modo de aviso por algum tempo. Enquanto isso, eles precisam analisar o tráfego de saída antes de autorizar os URLS.
 

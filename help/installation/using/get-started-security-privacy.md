@@ -1,19 +1,19 @@
 ---
 product: campaign
-title: Introdução à segurança e privacidade
+title: Lista de verificação de segurança e privacidade
 description: Saiba mais sobre os principais elementos a serem verificados em relação à segurança e privacidade.
 audience: installation
 content-type: reference
 topic-tags: prerequisites-and-recommendations-
 exl-id: ec40498e-e673-4792-8dcf-8bb7e852b532
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: e719c8c94f1c08c6601b3386ccd99d250c9e606b
 workflow-type: tm+mt
-source-wordcount: '450'
-ht-degree: 32%
+source-wordcount: '487'
+ht-degree: 24%
 
 ---
 
-# Introdução à segurança e privacidade {#get-started-security-privacy}
+# Lista de verificação de segurança e privacidade{#get-started-security-privacy}
 
 ![](../../assets/v7-only.svg)
 
@@ -50,7 +50,7 @@ O gerenciamento de acesso é uma parte importante do fortalecimento da seguranç
 
 Ao desenvolver no Adobe Campaign (fluxos de trabalho, Javascript, JSSP etc.), sempre siga estas diretrizes:
 
-* **Scripting**: tente evitar instruções SQL. Use funções parametrizadas em vez de concatenação de strings e evite a injeção de SQL colocando as funções SQL a serem utilizadas na lista de permissões.
+* **Script**: tente evitar instruções SQL, use funções parametrizadas em vez de concatenação de strings e evite a injeção de SQL adicionando as funções SQL a serem usadas na  de lista de permissões.
 
 * **Proteger o modelo** de dados: use direitos nomeados para limitar as ações do operador, adicione filtros do sistema (sysFilter)
 
@@ -67,6 +67,10 @@ Uma coisa muito importante a se verificar ao implantar um tipo de arquitetura lo
 Também é fundamental seguir a segurança do mecanismo de banco de dados.
 
 [Leia mais](../../installation/using/network-database.md)
+
+>[!CAUTION]
+>
+>A partir de 14 de julho de 2021, todos os sistemas clientes que não tiverem suporte ao protocolo TLS 1.2 perderão o acesso a todos os produtos e serviços do Adobe. Certifique-se de que todos os sistemas de usuários e clientes sejam compatíveis com TLS 1.2 antes dessa data. [Saiba mais](https://helpx.adobe.com/in/x-productkb/multi/eol-tls-support.html)
 
 ## Configuração do servidor
 
