@@ -17,7 +17,7 @@ ht-degree: 100%
 
 ![](../../assets/common.svg)
 
-Depois do envio dessa solicitação, a Adobe continuará a provisionar a integração e irá entrar em contato para fornecer detalhes e informações para você finalizar a configuração:
+Depois do envio dessa solicitação, a Adobe continuará a provisionar a integração e entrará em contato para fornecer detalhes e informações para você finalizar a configuração:
 
 1. [Etapa 1: configurar ou verificar as contas externas no Adobe Campaign](#step-1--configure-or-check-the-external-accounts-in-adobe-campaign)
 1. [Etapa 2: configurar a Fonte de dados](#step-2--configure-the-data-source)
@@ -30,7 +30,7 @@ Depois do envio dessa solicitação, a Adobe continuará a provisionar a integra
 
 ## Etapa 1: configurar ou verificar as contas externas no Adobe Campaign {#step-1--configure-or-check-the-external-accounts-in-adobe-campaign}
 
-Primeiro, precisamos configurar ou verificar as contas externas no Adobe Campaign como descrito a seguir:
+Primeiro, precisamos configurar ou verificar as contas externas no Adobe Campaign, conforme descrito a seguir:
 
 1. Clique no ícone **[!UICONTROL Explorer]**.
 1. Vá para **[!UICONTROL Administration > Platform > External accounts]**. As contas SFTP mencionadas devem ter sido configuradas pela Adobe e as informações necessárias devem ter sido comunicadas a você.

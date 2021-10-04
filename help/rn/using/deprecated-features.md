@@ -9,7 +9,7 @@ exl-id: d60d67de-6618-4f3b-be4a-ad7633ab5645
 source-git-commit: 32f55d02920b0104198f809b1be0a91306a4d9e4
 workflow-type: tm+mt
 source-wordcount: '1657'
-ht-degree: 95%
+ht-degree: 98%
 
 ---
 
@@ -81,7 +81,7 @@ Esta seção lista os recursos e funcionalidades removidos do Campaign Classic.
   </tr>
   <tr>  
    <td>Relatórios<br></td>
-   <td><p>Após Adobe Flash Player EOL, o relatório Gage e o mecanismo de renderização Chart não estão mais disponíveis. <a href="../../reporting/using/creating-a-new-report.md">Saiba mais</a></p>
+   <td><p>Após o encerramento da vida útil do Adobe Flash Player, o relatório de medição e o mecanismo de renderização de gráfico não estarão mais disponíveis. <a href="../../reporting/using/creating-a-new-report.md">Saiba mais</a></p>
   </tr>
   <tr>  
    <td>Canal de fax<br></td>
@@ -109,7 +109,7 @@ Esta seção lista os recursos e funcionalidades removidos do Campaign Classic.
    <td>A partir da versão 19.1 do Campaign, as APIs do Campaign Classic estarão disponíveis em uma página dedicada. Se estiver usando o arquivo jsapi.chm legado, agora deverá consultar a <a href="https://docs.adobe.com/content/help/en/campaign-classic/technicalresources/api/index.html">nova versão online</a>.</td>
   </tr> 
   <tr> 
-   <td>Orquestração de campanha - Marketing preditivo</td>
+   <td>Orquestração de campanha  - Marketing preditivo</td>
    <td>A partir da versão 18.10 do Campaign, os recursos de marketing preditivo não estarão mais disponíveis.</td>
   </tr> 
   <tr> 
@@ -242,10 +242,10 @@ O Adobe Campaign não é compatível com os seguintes conectores SMS:
 
 ### Conectores CRM {#crm-connectors}
 
-A partir da versão 21.1 do Campaign, os seguintes conectores CRM não serão mais compatíveis com o Campaign:
+A partir da versão 21.1 do Campaign, os seguintes conectores de CRM não serão mais utilizados com o Campaign:
 
 * API Soap - no local: 2007, 2015, 2016
 * API Soap - online: 2015, 2016
-* API da Web - Microsoft Dynamics CRM 2016
-* API da Web - Microsoft Dynamics CRM 2016 Atualização 1
+* API da web – Microsoft Dynamics CRM 2016
+* API da web – Microsoft Dynamics CRM 2016 atualização 1
 * API Oracle por demanda

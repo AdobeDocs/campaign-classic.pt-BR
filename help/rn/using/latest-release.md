@@ -1,7 +1,7 @@
 ---
 product: campaign
 title: Versão mais recente
-description: Versão mais recente do Campaign Classic Observações
+description: Versão mais recente do Campaign Classic  Observações
 feature: Overview
 role: User
 level: Beginner
@@ -9,7 +9,7 @@ exl-id: d65869ca-a785-4327-8e8d-791c28e4696c
 source-git-commit: 12b191ffe3d407f1a69393278a7678a14e53d23e
 workflow-type: tm+mt
 source-wordcount: '2403'
-ht-degree: 83%
+ht-degree: 100%
 
 ---
 
@@ -17,9 +17,9 @@ ht-degree: 83%
 
 ![](../../assets/v7-only.svg)
 
-Esta página lista novos recursos, melhorias e correções que vêm com o **último Campaign Classic Release**.
+Esta página lista novos recursos, melhorias e correções que vêm com a **Versão mais recente do Campaign Classic**.
 
-Entenda os status de criação da campanha em [this page](rn-overview.md).
+Entenda os status da build do Campaign [nesta página](rn-overview.md).
 
 ## ![](assets/do-not-localize/green_2.png) Versão 21.1.4 – Build 9342 {#release-21-1-4-build-9342}
 
@@ -29,30 +29,30 @@ _7 de setembro de 2021_
 
 * Correção de um problema de segurança para reforçar a proteção contra ataques de travessia de diretórios. (NEO-28547)
 
-**Melhorias**
+**Aprimoramentos**
 
-* Após o fim da vida útil, o Flash foi removido de todos os recursos e componentes relacionados do Campaign e substituído pelo HTML5. O tipo de gráfico **Gage** foi removido. (NEO30330) [Leia mais](../../reporting/using/creating-a-chart.md)
+* Após o fim da vida útil, o Flash foi removido de todos os recursos e componentes relacionados do Campaign e substituído pelo HTML5. O tipo de gráfico **Medição** foi removido. (NEO-30330) [Leia mais](../../reporting/using/creating-a-chart.md)
 * Ao instalar o console do cliente no Windows, o instalador agora verifica se há um nó de registro pai e cria um se estiver ausente. Isso evita possíveis problemas ao iniciar o console. (NEO-34854)
-* O recurso de assinatura de rastreamento foi aprimorado para evitar erros vinculados às ferramentas de terceiros (clientes de email, navegadores de Internet etc.) manipule caracteres especiais. Os parâmetros de URL agora são codificados.
+* O recurso de assinatura de rastreamento foi aprimorado para evitar erros vinculados à forma como as ferramentas de terceiros (clientes de email, navegadores de Internet etc.) lidam com caracteres especiais. Os parâmetros de URL agora são codificados.
 
 **Outras alterações**
 
 * Os conectores do Microsoft CRM obsoletos anteriormente (implantações do Office 365 e no local) foram removidos da interface. [Leia mais](../../platform/using/crm-ms-dynamics.md#configure-acc-for-microsoft)
 * Após a migração para o Tomcat 8, o script de configuração do IIS foi atualizado para corrigir problemas de integração do IIS. (NEO-31019)
-* Uma garantia foi adicionada para permitir que o [workflow técnico de faturamento](../../production/using/monitoring-processes.md#billing-report) seja executado na instância de marketing.
-* A identificação da fonte de dados foi aprimorada nas guias de dados e schema da janela **View population** das transições do fluxo de trabalho.
+* Uma garantia foi adicionada para permitir que o [fluxo de trabalho técnico de faturamento](../../production/using/monitoring-processes.md#billing-report) seja executado na instância de marketing.
+* A identificação da fonte de dados foi aprimorada nas guias de dados e esquema da janela **Exibir população** das transições do fluxo de trabalho.
 * Os índices de banco de dados ausentes foram adicionados aos seguintes esquemas para evitar problemas de atualização do banco de dados: xtk:rights, nms:dlvExclusion, nms:seedMember, nms:trackingUrl
 
 **Correções**
 
-* Correção de um problema que impedia o funcionamento do relatório Hot clicks quando as ofertas eram vinculadas ao delivery. (NEO-26295)
+* Correção de um problema que impedia o funcionamento do relatório Hot clicks quando as ofertas eram vinculadas à entrega. (NEO-26295)
 * Correção de um problema com a atividade **Sub-workflow** quando sua execução não gerava uma tabela de saída. (NEO-36242)
 * Correção de vários problemas ao exportar o relatório de **Análise descritiva** para PDF. (NEO-25847)
-* Correção de um problema que poderia resultar em falha de delivery ao usar um delivery de email externo. (NEO-37435)
+* Correção de um problema que poderia resultar em falha de entrega ao usar uma entrega de email externa. (NEO-37435)
 * Correção de um erro ao se conectar ao Microsoft CRM usando a API da Web. A mensagem de erro foi removida, pois as funcionalidades não foram afetadas.
 * Correção de um problema de desduplicação de log de rastreamento quando o servidor mid era definido como uma retransmissão entre servidores de rastreamento e de marketing. (NEO-36285)
-* Correção de uma regressão que impedia o Vault de ser usado como um armazenamento de código específico.
-* Correção de um problema que impedia o uso de variáveis em uma atividade de workflow de **Enriquecimento** quando a transição recebida era de uma fonte de dados FDA.
+* Correção de uma regressão que impedia o Cofre de ser usado como um armazenamento de código específico.
+* Correção de um problema que impedia o uso de variáveis em uma atividade de fluxo de trabalho de **Enriquecimento** quando a transição recebida era de uma fonte de dados FDA.
 * Correção de um problema que poderia resultar em URLs inválidos em mensagens de email.
 
 ## ![](assets/do-not-localize/orange_2.png) Versão 21.1.3 – Build 9330 {#release-21-1-3-build-9330}
@@ -71,7 +71,7 @@ _5 de junho de 2021_
 <tbody>
 <tr>
 <td>
-<p>A nova atividade de fluxo de trabalho <b>Alterar fonte de dados</b> permite alterar a fonte de dados de uma tabela de trabalho do fluxo de trabalho. Isso proporciona flexibilidade aprimorada no gerenciamento de dados em diferentes fontes de dados (FDA e banco de dados local).</p>
+<p>A nova atividade de fluxo de trabalho <b>Alterar fonte de dados</b> permite alterar a fonte de dados de uma tabela de trabalho do fluxo de trabalho. Isso proporciona mais flexibilidade no gerenciamento de dados em diferentes fontes de dados (FDA e banco de dados local).</p>
 <p>Nos workflows do Adobe Campaign, os dados são gerenciados usando tabelas de trabalho (ou temporárias). Conforme o fluxo de trabalho é executado, as tabelas de trabalho compartilham dados entre atividades de fluxo de trabalho. Por padrão, as tabelas de trabalho são criadas no mesmo banco de dados da fonte de dados que consultamos.</p>
 <p>Para obter mais informações, consulte a <a href="../../workflow/using/change-data-source.md">documentação detalhada</a>.</p>
 </td>

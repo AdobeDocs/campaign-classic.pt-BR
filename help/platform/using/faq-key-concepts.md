@@ -116,7 +116,7 @@ Leia a [Lista de verificação de configuração de segurança](https://helpx.ad
 
 ## Como traduzir uma mensagem de erro? {#how-to-translate-an-error-message-}
 
-Há uma mensagem de erro exibida em outro idioma? Todas as mensagens de erro com suas devidas traduções estão listadas [nesta página](https://experienceleague.adobe.com/developer/campaign-errors/error_codes.html).
+Há uma mensagem de erro exibida em outro idioma? Todas as mensagens de erro com suas devidas traduções estão listadas [nesta página](https://experienceleague.adobe.com/developer/campaign-errors/error_codes.html?lang=pt-BR).
 
 ## Posso criar um formulário web e coletar respostas no Campaign? {#can-i-create-a-webform-and-collect-answers-in-campaign-}
 

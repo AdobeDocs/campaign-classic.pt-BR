@@ -319,7 +319,7 @@ Clique em **[!UICONTROL Next]** e em **[!UICONTROL Start]** para iniciar a impor
 
 ![](assets/ncs_datapackage_import_2.png)
 
-### Instalar um pacote incorporado {#installing-a-standard-package}
+### Instalar um pacote integrado {#installing-a-standard-package}
 
 Os pacotes padrão são pacotes incorporados quando o Adobe Campaign é configurado. Dependendo das suas permissões e do modelo de implantação, é possível importar novos pacotes padrão se adquirir novas opções ou add-ons ou se atualizar para uma nova oferta.
 
@@ -327,7 +327,7 @@ Consulte o contrato de licença para verificar quais pacotes você pode instalar
 
 Para obter mais informações sobre pacotes incorporados, consulte [esta página](../../installation/using/installing-campaign-standard-packages.md).
 
-## Práticas recomendadas para o Pacote de dados {#data-package-best-practices}
+## Práticas recomendadas para o pacote de dados {#data-package-best-practices}
 
 Esta seção descreve como organizar pacotes de dados de forma consistente durante a vida útil do projeto.
 
@@ -392,7 +392,7 @@ A primeira solução seria exportar todo o recurso novamente. Mas, para evitar q
 
 Uma atualização não pode ser apenas uma correção, mas também um novo elemento do seu pacote de entidade/recurso/campanha. Para evitar a implantação de todo o pacote, é possível exportar um pacote de atualização.
 
-### Como nomear convenções {#data-package-naming}
+### Nomeação de convenções {#data-package-naming}
 
 Agora que os tipos estão definidos, devemos especificar uma convenção de nomenclatura. O Adobe Campaign não permite criar subpastas para especificações de pacotes, o que significa que os números são a melhor solução para se manter organizado. Nomes de pacote de prefixos de números. Você pode usar a seguinte convenção:
 

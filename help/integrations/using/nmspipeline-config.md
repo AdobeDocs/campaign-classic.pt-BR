@@ -68,7 +68,7 @@ Este segundo exemplo captura todos os acionadores.
 >
 >O valor da UID [!DNL Trigger] para um nome de acionador específico na interface do Analytics pode ser encontrado como parte dos parâmetros de sequência de consulta de URL na interface dos acionadores. A UID triggerType é transmitida no fluxo de dados do pipeline e o código pode ser gravado no pipeline.JS para mapear a UID do acionador para um rótulo amigável ao usuário que pode ser armazenado em uma coluna Nome do acionador no schema pipelineEvents.
 
-## O parâmetro consumidor {#consumer-parameter}
+## O parâmetro do consumidor {#consumer-parameter}
 
 O pipeline funciona com um modelo de &quot;fornecedor e consumidor&quot;. Pode haver muitos consumidores na mesma fila. As mensagens são &quot;consumidas&quot; somente para um consumidor individual. Cada consumidor recebe sua própria &quot;cópia&quot; das mensagens.
 

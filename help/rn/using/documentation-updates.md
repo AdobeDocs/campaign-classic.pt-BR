@@ -9,7 +9,7 @@ exl-id: 07c1f4a3-cf16-4a9b-b402-e13258799f91
 source-git-commit: 32f55d02920b0104198f809b1be0a91306a4d9e4
 workflow-type: tm+mt
 source-wordcount: '4513'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -25,13 +25,13 @@ Consulte as [Notas de versão do Adobe Campaign Classic](../../rn/using/latest-r
 
 Adição de uma nova atividade de workflow: Alterar fonte de dados - [Saiba mais](../../workflow/using/change-data-source.md)
 
-Os emblemas de aplicabilidade foram adicionados às páginas de documentação: **Aplica-se somente a v7** para recursos do Campaign Classic v7 e **Aplica-se a v7 e v8** para recursos comuns.
+Os emblemas de aplicabilidade foram adicionados às páginas de documentação: **Aplica-se a v7**, somente para recursos do Campaign Classic v7 e **Aplica-se a v7 e v8**, para recursos comuns.
 
 Adição de uma observação sobre a integração entre o Campaign e o AEM Assets que foi descontinuada a partir do Adobe Experience Manager 6.4. [Saiba mais](../../integrations/using/configuring-access-to-assets.md)
 
-As capturas de tela e os parâmetros de relatórios e aplicativos Web foram atualizados após a remoção do Flash do Adobe.
+As capturas de tela e os parâmetros de relatórios e aplicativos Web foram atualizados após a remoção do Adobe Flash.
 
-O tipo de gráfico **Gage** foi removido.
+O tipo de gráfico **Gauge** foi removido.
 
 
 ## Julho de 2021 {#july-2021}
@@ -482,7 +482,7 @@ O guia de introdução às práticas recomendadas de delivery foi atualizado. [L
 
 ## Outubro de 2019 {#october-2019}
 
-A lista de mensagens de erro para o Campaign foi atualizada. [Leia mais](https://experienceleague.adobe.com/developer/campaign-errors/error_codes.html)
+A lista de mensagens de erro para o Campaign foi atualizada. [Leia mais](https://experienceleague.adobe.com/developer/campaign-errors/error_codes.html?lang=pt-BR)
 
 O guia de introdução ao GDPR foi melhorado e aprimorado. Agora se trata uma documentação de gerenciamento de privacidade, incluindo o GDPR e o CCPA. [Leia mais](https://helpx.adobe.com/content/help/br/campaign/kb/campaign-privacy.html)
 

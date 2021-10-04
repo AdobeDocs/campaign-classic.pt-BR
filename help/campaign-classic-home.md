@@ -6,7 +6,7 @@ exl-id: 6b3f1689-80de-49fd-b7ee-7a2a1931d157
 source-git-commit: acb2c4e90c4ce349ea9c1ad53d703c13195872e1
 workflow-type: tm+mt
 source-wordcount: '260'
-ht-degree: 80%
+ht-degree: 81%
 
 ---
 
@@ -16,7 +16,7 @@ ht-degree: 80%
 
 ## Novidades
 
-* **[Versão de setembro está ativa!](rn/using/latest-release.md)**<br/> Descubra novos recursos, melhorias e correções nas Notas de versão
+* **[A versão de setembro está disponível.](rn/using/latest-release.md)**<br/> Descubra novos recursos, melhorias e correções nas Notas de versão
 
 * **[Perguntas ](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/additional-resources/technotes/apple-mail-privacy-faq.html)** frequentes sobre a proteção da privacidade do Apple Mail e  **[](technotes/using/apple-mail-app-privacy-protection.md)**<br/> technoteEncontre orientações iniciais em resposta ao anúncio da Apple sobre o iOS 15
 
@@ -80,7 +80,7 @@ ht-degree: 80%
 
 | Páginas úteis | Recursos para desenvolvedores |
 |---|---|
-| [Notas de versão](rn/using/latest-release.md) | [Lista de mensagens de erro](https://experienceleague.adobe.com/developer/campaign-errors/error_codes.html) |
+| [Notas de versão](rn/using/latest-release.md) | [Lista de mensagens de erro](https://experienceleague.adobe.com/developer/campaign-errors/error_codes.html?lang=pt-BR) |
 | [Vídeos explicativos](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html?lang=pt-BR) | [Modelo de dados do Campaign](configuration/using/about-data-model.md) |
 | [Matriz de compatibilidade](rn/using/compatibility-matrix.md) | [JSAPI do Campaign](https://docs.adobe.com/content/help/en/campaign-classic/technicalresources/api/p-1.html) |
 | Atualização do [[!DNL Gold Standard] ](rn/using/gs-overview.md) | [Manual de rastreamento](https://helpx.adobe.com/br/campaign/kb/acc-tracking.html) |

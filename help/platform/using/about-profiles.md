@@ -33,7 +33,7 @@ Cada perfil corresponde a uma entrada do banco de dados. Eles contêm todas as i
 
 Os perfis podem ser identificados com base no espaço de armazenamento. Isso significa que um perfil pode corresponder a: um recipient, um visitante, um operador, um assinante, um prospecto, etc.
 
-## Perfis de destinatário {#recipient-profiles}
+## Perfis de recipient {#recipient-profiles}
 
 Os recipients do delivery são armazenados no banco de dados como perfis que contêm as informações vinculadas a eles: sobrenome, nome, endereço, assinaturas, deliveries, etc. Ao criar campanhas, é possível definir o direcionamento dos deliveries a uma seleção de perfis da base de acordo com critérios simples ou avançados.
 
@@ -49,7 +49,7 @@ Os principais métodos para criar perfis de destinatários são os seguintes:
 >
 >Para saber como arquivos e formulários web são importados, consulte [Importações e exportações genéricas](../../platform/using/get-started-data-import-export.md).
 
-## Profiles and targets {#profiles-and-targets}
+## Perfis e targets {#profiles-and-targets}
 
 O link **[!UICONTROL Profiles and targets]** permite exibir os recipients armazenados no banco de dados do Adobe Campaign. É possível criar um novo destinatário, editar um destinatário existente e acessar o perfil dele. Para obter mais informações, consulte [esta página](../../platform/using/editing-a-profile.md).
 
@@ -89,7 +89,7 @@ O layout geral do explorador do Adobe Campaign é apresentado [nesta página](..
 
 ## Perfis ativos {#active-profiles}
 
-Os perfis ativos são aqueles que são contados para fins de cobrança.
+Os perfis ativos são aqueles que são contados para fins de faturamento.
 
 A cobrança só afeta perfis que estão **ativos**. Um perfil é considerado ativo quando ele é visado ou recebe comunicação nos últimos 12 meses por meio de qualquer canal.
 

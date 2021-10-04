@@ -49,7 +49,7 @@ Para manter sua implementação atualizada, leia os [recursos obsoletos e removi
 
 ## Processo para atualização{#process-upgrade}
 
-Como cliente hospedado (Managed Service ou Hybrid), você precisa entrar em contato com a equipe de atendimento ao cliente para atualizar seu ambiente.
+Como cliente hospedado (Serviço gerenciado ou híbrido), você precisa entrar em contato com a equipe de atendimento ao cliente para atualizar seu ambiente.
 
 Como usuário local, você pode fazer a atualização. Para isso, [baixe a build estável mais recente](https://experience.adobe.com/#/downloads/content/software-distribution/en/campaign.html) e atualize todos os seus ambientes. Saiba mais sobre o [processo de atualização](../../production/using/build-upgrade.md) e consulte as [perguntas frequentes sobre atualização de build](../../platform/using/faq-build-upgrade.md).
 
