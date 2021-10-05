@@ -6,10 +6,10 @@ feature: Overview
 role: User
 level: Beginner
 exl-id: b8c1f287-06f4-4c34-8cca-b0c7676abbc2
-source-git-commit: 134f248fbcd456573365d5b32831b75dac4b73de
+source-git-commit: f6f1feffbd328f9756c9cd71c4186ba7cd674d76
 workflow-type: tm+mt
-source-wordcount: '599'
-ht-degree: 86%
+source-wordcount: '596'
+ht-degree: 85%
 
 ---
 
@@ -121,10 +121,6 @@ Para saber mais sobre itens obsoletos, visite [esta página](../../rn/using/depr
 
 ## Servidores RDBMS{#RDBMSservers}
 
->[!NOTE]
->
->O driver RDBMS deve corresponder à versão do servidor RDBMS.
-
 <table>
 <tbody>
 <tr>
@@ -137,7 +133,10 @@ Para saber mais sobre itens obsoletos, visite [esta página](../../rn/using/depr
 </td>
 </tr>
 <tr>
-<td>PostgreSQL</td>
+<td>
+<p>PostgreSQL</p>
+<p>Servidor de banco de dados padrão para ambientes hospedados</p>
+</td>
 <td>
 <p>13.x</p>
 <p>12.x</p>
@@ -165,7 +164,7 @@ Para saber mais sobre itens obsoletos, visite [esta página](../../rn/using/depr
 
 >[!NOTE]
 >
->O PostgreSQL é o servidor de banco de dados padrão para ambientes hospedados.
+>O driver RDBMS deve corresponder à versão do servidor RDBMS.
 
 ## Conectores CRM{#CRMconnectors}
 
@@ -315,7 +314,6 @@ Os seguintes sistemas operacionais e navegadores são **necessários** para usar
 
 ### Navegador
 
-[]
 <table>
 <tbody>
 <tr>
