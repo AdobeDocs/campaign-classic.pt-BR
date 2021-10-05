@@ -3,7 +3,7 @@ product: campaign
 title: Notas de versão do Campaign 18.4
 description: Notas de versão do Campaign 18.4
 exl-id: bbad81ba-a09f-4d67-9309-628ea7a08c9b
-source-git-commit: 84312974b9b7372c8a46fd1c7ead1148690bcd83
+source-git-commit: bd9f035db1cbad883e1f27fe901e34dfbc9c1229
 workflow-type: tm+mt
 source-wordcount: '2267'
 ht-degree: 99%
@@ -50,7 +50,7 @@ ht-degree: 99%
 * Os logs de arquivamento de emails foram aprimorados, o que facilita e agiliza a verificação de quais emails foram entregues com êxito ou falharam no arquivamento do Cco. (NEO-10675)
 * Correção de um problema que levou à exibição dos IPs do balanceador de carga em vez dos IPs do cliente no rastreamento de broadlogs. (NEO-11295)
 * Correção de um erro com codificação LATIN1 ao usar um FDA Connection para um banco de dados PostgreSQL. (NEO-11299)
-* Correção de um problema que ocorria ao usar a opção de delivery **[!UICONTROL Prepare the personalization data with a workflow]**. (NEO-11047, NEO-11301)
+* Correção de um problema que ocorria ao usar a opção de delivery **[!UICONTROL Prepare the personalization data with a workflow]** . (NEO-11047, NEO-11301)
 * Correção de um problema aleatório que fazia com que as propriedades de um delivery fossem substituídas incorretamente. (NEO-11015)
 * Correção de um problema ao usar campos calculados em uma atividade de workflow **[!UICONTROL Survey answers]**. (NEO-11382)
 * Correção de um problema ao usar dados armazenados em XML em uma atividade de workflow de **[!UICONTROL Survey answers]**. (NEO-10816)
@@ -171,7 +171,7 @@ Ela seria entregue implicitamente como (antes das alterações do 18.4):
    </select>
    <orderBy>
       <node expr="@logDate"/>
-      <node expr="@id"/> <!-- implicitely added before 18.4, you can add it manually on your query, if you relied on this implicit order clauses --!>
+      <node expr="@id"/> <!-- implicitly added before 18.4, you can add it manually on your query, if you relied on this implicit order clauses --!>
    </orderBy>
 </queryDef>
 ```

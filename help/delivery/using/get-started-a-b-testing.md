@@ -6,10 +6,10 @@ audience: delivery
 content-type: reference
 topic-tags: a-b-testing
 exl-id: ae046ef6-d850-4222-b82c-8ef5b3da7037
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
-workflow-type: ht
+source-git-commit: bd9f035db1cbad883e1f27fe901e34dfbc9c1229
+workflow-type: tm+mt
 source-wordcount: '350'
-ht-degree: 100%
+ht-degree: 94%
 
 ---
 
@@ -35,7 +35,7 @@ As principais etapas são:
    Por exemplo, você pode enviar uma versão de um delivery a uma pequena parte da população direcionada e outra versão à a população restante. Isso permite testar uma nova versão de um delivery em vez do delivery que geralmente é enviado a seus clientes. Você também pode dividir a população direcionada em três grupos para enviar a eles três versões diferentes de um delivery.
 
 1. **Crie várias versões** do delivery correspondentes a cada subconjunto. A variante a ser testada pode ser o assunto, o conteúdo da mensagem, o nome do remetente etc.
-1. Inicie o fluxo de trabalho e, em seguida, use **logs do delivery** para analisar o comportamento dos subconjuntos com cada variante.
+1. Inicie o workflow e use os **logs do delivery** para analisar o comportamento dos subconjuntos com cada variante.
 
 >[!NOTE]
 >

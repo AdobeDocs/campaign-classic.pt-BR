@@ -6,10 +6,10 @@ title: Manual do Campaign Classic v7
 user-guide-description: Com o Adobe Campaign, é possível usar dados avançados do cliente para criar, coordenar e fornecer campanhas dinâmicas que os clientes realmente desejam, por meio de email, dispositivos móveis, canais offline e muito mais.
 sub-product: adobe campaign classic
 type: Documentation
-source-git-commit: 089ade04a7324f8052738f18b34c09b429275c00
+source-git-commit: 23c5892189c59008f82ec453c97d24efe82fd2ae
 workflow-type: tm+mt
-source-wordcount: '2567'
-ht-degree: 98%
+source-wordcount: '2566'
+ht-degree: 97%
 
 ---
 
@@ -213,7 +213,6 @@ ht-degree: 98%
       + [Solução de problemas de entrega](delivery/using/delivery-troubleshooting.md)
       + [Status da entrega](delivery/using/delivery-statuses.md)
       + [Entender as falhas de entrega](delivery/using/understanding-delivery-failures.md)
-      + [Atualizar qualificação de rejeição após uma interrupção do ISP](delivery/using/update-bounce-qualification.md)
       + [Entender o gerenciamento de quarentenas](delivery/using/understanding-quarantine-management.md)
    + Rastrear mensagens {#tracking-messages}
       + [Sobre o rastreamento de mensagens](delivery/using/about-message-tracking.md)
@@ -852,6 +851,7 @@ ht-degree: 98%
    + Emails e notificações por push{#technotes-email}
       + [Proteção de privacidade de email no Apple iOS](technotes/using/apple-mail-app-privacy-protection.md)
       + [Perguntas frequentes sobre a proteção da privacidade do Apple Mail](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/additional-resources/technotes/apple-mail-privacy-faq.html)
+      + [Como atualizar devoluções permanentes incorretas](delivery/using/update-bounce-qualification.md)
       + [Atualização de certificado do iOS](technotes/using/ios-certificate-update.md)
       + [Atualização de URLs rastreados](technotes/using/tracked-urls.md)
    + Migração para o Adobe Managed Services{#dc-migration}

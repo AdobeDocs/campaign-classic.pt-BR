@@ -9,10 +9,10 @@ feature: Overview
 role: User
 level: Beginner
 exl-id: a849ce10-0972-4c42-b10e-67a81c79bc65
-source-git-commit: 32f55d02920b0104198f809b1be0a91306a4d9e4
+source-git-commit: c281d437907efb4d514bec7cacc698c383f3fe53
 workflow-type: tm+mt
 source-wordcount: '794'
-ht-degree: 97%
+ht-degree: 96%
 
 ---
 
@@ -54,7 +54,7 @@ ht-degree: 97%
 * Correção de um problema ao usar campos calculados em uma atividade de workflow **[!UICONTROL Survey answers]**. (NEO-11382)
 * O Tomcat foi atualizado para evitar a exploração de vulnerabilidades. (NEO-11503)
 * Correção de um erro com codificação LATIN1 ao usar um FDA Connection para um banco de dados PostgreSQL. (NEO-11299)
-* Correção de um problema que ocorria ao usar a opção de delivery **[!UICONTROL Prepare the personalization data with a workflow]**. (NEO-11047)
+* Correção de um problema que ocorria ao usar a opção de delivery **[!UICONTROL Prepare the personalization data with a workflow]** . (NEO-11047)
 * Correção de um problema postupgrade que impedia o envio de SMS ao usar um conector estendido.
 * Importação/exportação de pacotes aprimorada (log e região foram adicionados à interface).
 * Correção de um problema que exibia erros inúteis no log após a atualização quando uma atividade de workflow **[!UICONTROL Survey answers]** não estava totalmente configurada.

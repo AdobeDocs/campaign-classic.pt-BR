@@ -6,9 +6,9 @@ audience: migration
 content-type: reference
 topic-tags: configuration
 exl-id: 7aad0e49-8d9c-40c7-9d6a-42fee0ae5870
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: eef2a12738ce299686857720c3dc8456ffdd0c80
 workflow-type: tm+mt
-source-wordcount: '2784'
+source-wordcount: '2664'
 ht-degree: 0%
 
 ---
@@ -620,7 +620,7 @@ Todos os relatórios padrão usam atualmente o mecanismo de renderização v6.x.
 
 ![](assets/migration_reports_1.png)
 -->
-Se quiser se beneficiar das novas funcionalidades do relatório, será necessário republicar os relatórios. Para fazer isso, edite o relatório **[!UICONTROL Properties]**, clique em **[!UICONTROL Rendering]** e selecione o mecanismo de renderização v.6.x. Nesse caso, verifique todos os scripts e altere-os, se necessário. Em relação à exportação de PDF, se você adicionou um script específico para o Open Office, isso não funcionará mais com o novo mecanismo de exportação de PDF (PhantomJS).
+Se quiser se beneficiar das novas funcionalidades do relatório, será necessário republicar os relatórios. Nesse caso, verifique todos os scripts e altere-os, se necessário. Em relação à exportação de PDF, se você adicionou um script específico para o Open Office, isso não funcionará mais com o novo mecanismo de exportação de PDF (PhantomJS).
 
 ## Aplicações web {#web-applications}
 
@@ -631,10 +631,7 @@ Há duas famílias de aplicações web:
 
 ### Aplicações web identificadas {#identified-web-applications}
 
-Assim como para os relatórios ([saiba mais](#reports)), se tiver adicionado o JavaScript, você deve verificar e adaptar se necessário. Se você quiser se beneficiar do banner azul v7 (contendo as guias azuis), será necessário republicar o aplicativo web. Se o código JavaScript estiver funcionando, é possível selecionar o mecanismo de renderização v6.x. Se esse não for o caso, você poderá usar o mecanismo de renderização v6.0 durante a adaptação do código e, em seguida, usar o mecanismo de renderização v6.x.
-
->[!NOTE]
-As etapas para selecionar o mecanismo de renderização são as mesmas que para selecionar relatórios. Consulte [Relatórios personalizados](#personalized-reports).
+Assim como para os relatórios ([saiba mais](#reports)), se tiver adicionado o JavaScript, você deve verificar e adaptar se necessário. Se você quiser se beneficiar do banner azul v7 (contendo as guias azuis), será necessário republicar o aplicativo web.
 
 Os métodos de conexão da aplicação web foram alterados no v7. Se você encontrar problemas de conexão em suas aplicações Web identificadas, deverá ativar temporariamente as opções **allowUserPassword** e **sessionTokenOnly** no arquivo **serverConf.xml**. Após a pós-atualização, modifique esses valores de opção:
 
@@ -664,10 +661,7 @@ sessionTokenOnly="false"
 
 ### Aplicativos da Web anônimos {#anonymous-web-applications}
 
-Se encontrar algum problema, republique a aplicação Web. Se o problema persistir, você poderá selecionar o mecanismo de renderização v6.0. Se você não tiver adicionado o JavaScript, é possível selecionar o mecanismo de renderização v6.x e se beneficiar dos novos recursos.
-
->[!NOTE]
-As etapas para selecionar o mecanismo de renderização são as mesmas que para selecionar relatórios. Consulte [Relatórios personalizados](#personalized-reports).
+Se encontrar algum problema, republique a aplicação Web.
 
 ## Red-Hat {#red-hat}
 

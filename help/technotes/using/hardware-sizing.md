@@ -2,14 +2,14 @@
 product: campaign
 title: Recomendações para dimensionamento de hardware para o Campaign Classic v7
 description: Recomendações para dimensionamento de hardware para o Campaign Classic v7
-source-git-commit: 3912874210ab16a132e51d9bb71508c8d244fe22
+source-git-commit: 0deb18bb0376fc5e94d063145280426ff54db786
 workflow-type: tm+mt
-source-wordcount: '2513'
+source-wordcount: '2512'
 ht-degree: 1%
 
 ---
 
-# Recomendações para dimensionamento de hardware para o Campaign Classic v7 {#hardware-sizing-reco}
+# Recomendações para dimensionamento de hardware{#hardware-sizing-reco}
 
 ![](../../assets/v7-only.svg)
 
@@ -17,9 +17,9 @@ ht-degree: 1%
 
 >[!CAUTION]
 >
->Este guia é fornecido apenas como um guia de exemplo geral. Você deve se envolver com o Gerente de sucesso do cliente da Adobe Campaign para medir o dimensionamento exato da implantação antes de iniciar o projeto do Campaign. **Não** adquira nem implante nenhuma infraestrutura ou hardware até que isso seja feito.
+>Este artigo é fornecido apenas como um guia de exemplo geral. Você deve se envolver com o Gerente de sucesso do cliente da Adobe Campaign para medir o dimensionamento exato da implantação antes de iniciar o projeto do Campaign. **Não** adquira nem implante nenhuma infraestrutura ou hardware até que isso seja feito.
 
-Este documento fornece diretrizes gerais para a implantação do Adobe Campaign Classic v7 no seu data center local ou no ambiente de nuvem virtualizada. Esse tipo de implantação, chamada de **híbrido** ou **mid-sourcing**, coloca a instância de marketing do Campaign e o banco de dados de marketing sob seu controle operacional, enquanto usa os serviços de Adobe Cloud Messaging para enviar emails, mensagens SMS ou SMPP e coletar dados de rastreamento de email abertos, rejeição e cliques.
+Este documento fornece recomendações gerais para a implantação do Adobe Campaign Classic v7 no seu data center local ou no ambiente de nuvem virtualizada. Esse tipo de implantação, chamada de **híbrido** ou **mid-sourcing**, coloca a instância de marketing do Campaign e o banco de dados de marketing sob seu controle operacional, enquanto usa os serviços de Adobe Cloud Messaging para enviar emails, mensagens SMS ou SMPP e coletar dados de rastreamento de email abertos, rejeição e cliques.
 
 A instância de marketing é a parte da arquitetura do Adobe Campaign que direciona todas as atividades de marketing e armazena todos os dados e dados analíticos do recipient retornados pelas campanhas. A instância de marketing é um conjunto de servidores locais que executam serviços da Adobe Campaign e um banco de dados relacional.
 
@@ -258,5 +258,6 @@ O Adobe recomenda testes de desempenho para qualquer implantação virtualizada 
 ## Tópicos relacionados
 
 * [Processos de monitoramento de campanha](../../production/using/monitoring-processes.md)
+* [Arquitetura geral do Campaign](../../installation/using/general-architecture.md)
 * [Problemas de desempenho e de taxa de transferência](../../production/using/performance-and-throughput-issues.md)
 * [Lista de verificação de segurança e privacidade](../../installation/using/get-started-security-privacy.md)

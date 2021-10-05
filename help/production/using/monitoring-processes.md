@@ -6,7 +6,7 @@ audience: production
 content-type: reference
 topic-tags: production-procedures
 exl-id: 1f5d8c7e-6f9b-46cd-a9b4-a3b48afb1794
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: bd9f035db1cbad883e1f27fe901e34dfbc9c1229
 workflow-type: tm+mt
 source-wordcount: '3606'
 ht-degree: 1%
@@ -257,6 +257,7 @@ Eles são agrupados em **Monitoring** > &#39;SMTP Monitoring&#39;.
 >
 >* As informações relacionadas ao monitoramento SMTP só estarão disponíveis se o canal de email tiver sido ativado.
 >* O **[!UICONTROL SMTP sending statistics]** só será oferecido se o servidor de estatísticas for iniciado na instância.
+
 >
 
 
@@ -269,7 +270,7 @@ O relatório **[!UICONTROL SMTP sending statistics]** permite controlar a ativid
 A lista de indicadores para esse relatório é mostrada abaixo do gráfico.
 
 1. Número total de mensagens enviadas.
-1. &#x200B;
+1. 
    * Linha azul: mensagens prontas para envio que chegaram ao Shaper, ou seja, último estágio antes de enviar SMTP (coincide com os dados recebidos).
 
    * Linha verde: mensagens enviadas com êxito (coincide com os dados de saída).
@@ -344,7 +345,7 @@ O workflow técnico pode ser encontrado em uma subpasta do seguinte nó: **Admin
 
 ![](assets/billing.png)
 
-Quando o workflow for iniciado a cada 25 do mês, seu operador de faturamento receberá o seguinte relatório em sua caixa de entrada.
+Quando o fluxo de trabalho for iniciado a cada 25 dias do mês, o operador de faturamento receberá o seguinte relatório em sua caixa de entrada.
 
 ![](assets/billing_2.png)
 
@@ -604,7 +605,7 @@ Esse elemento configura o monitoramento de um determinado servidor no host, ou s
 
 * **tcp**: verifica se o servidor está ativo ou inativo. Você deve inserir um número de porta.
 * **http**: verifica se o servidor Web existe (o servidor de aplicativos é operacional).
-* **ncs**: verifica os processos na instância inserida no atributo &#39;instance&#39; (erros de workflow, uso de memória, etc.). O atributo **include** (obrigatório) oferece a opção de exibir processos inativos (&#39;true&#39; ou &#39;false&#39; valores).
+* **ncs**: verifica os processos na instância inserida no atributo &#39;instance&#39; (erros de workflow, uso de memória, etc.). O atributo **included** (obrigatório) oferece a opção de exibir processos inativos (valores &#39;true&#39; ou &#39;false&#39;).
 * **redirecionar**: verifica o rastreamento.
 
 Na maioria dos casos, somente os subelementos **ncs** e **redir** podem ser mantidos.

@@ -6,10 +6,10 @@ audience: workflow
 content-type: reference
 topic-tags: use-cases
 exl-id: b699b064-1287-41c9-8d94-1c1aa2c145ab
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
-workflow-type: ht
+source-git-commit: bd9f035db1cbad883e1f27fe901e34dfbc9c1229
+workflow-type: tm+mt
 source-wordcount: '1241'
-ht-degree: 100%
+ht-degree: 98%
 
 ---
 
@@ -179,7 +179,7 @@ O exemplo a seguir mostra como selecionar perfis que abriram uma delivery nas ú
 
    ![](assets/s_advuser_query_sample1.6.png)
 
-## Filtragem do comportamento dos recipients após uma entrega {#filtering-recipients--behavior-folllowing-a-delivery}
+## Filtro do comportamento dos recipients após um delivery {#filtering-recipients--behavior-folllowing-a-delivery}
 
 Em um workflow, as caixas **[!UICONTROL Query]** e **[!UICONTROL Split]** permitem selecionar um comportamento após um delivery. Essa seleção é realizada por meio do filtro **[!UICONTROL Delivery recipient]**.
 

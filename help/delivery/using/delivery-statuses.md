@@ -6,10 +6,10 @@ audience: delivery
 content-type: reference
 topic-tags: monitoring-deliveries
 exl-id: 0663257a-3a70-4e0c-bbeb-8242aaa0876d
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
-workflow-type: ht
-source-wordcount: '629'
-ht-degree: 100%
+source-git-commit: bd9f035db1cbad883e1f27fe901e34dfbc9c1229
+workflow-type: tm+mt
+source-wordcount: '630'
+ht-degree: 91%
 
 ---
 
@@ -21,7 +21,7 @@ ht-degree: 100%
 
 ajouter screenshot -->
 
-Depois que um delivery é enviado, o painel do delivery exibe um status que permite monitorar se o envio foi bem sucedido. Os possíveis status estão detalhados na seção abaixo.
+Depois que um delivery é enviado, o painel de delivery exibe um status que permite monitorar se o envio foi bem-sucedido. Os possíveis status estão detalhados na seção abaixo.
 
 ![](assets/delivery-status.png)
 
@@ -97,7 +97,7 @@ O status **[!UICONTROL Pending]** pode significar que o seu delivery foi agendad
 
 Se o delivery não estiver sendo enviado e o status permanecer **[!UICONTROL Pending]**, poderá ser devido a:
 
-* O MTA (Message Transfert Agent), que executa módulos e processos no servidor de delivery e que gerencia o envio de email, pode não ter sido iniciado ou precisa ser reiniciado.
+* O MTA (Message Transfer Agent), que executa módulos e processos no servidor de delivery e que gerencia o envio de email, pode não ter sido iniciado ou pode precisar ser reiniciado.
 
    Para verificar isso e iniciar o módulo se necessário, siga as seguintes etapas:
 

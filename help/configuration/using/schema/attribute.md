@@ -6,7 +6,7 @@ audience: configuration
 content-type: reference
 topic-tags: schema-reference
 exl-id: e4d34f56-b065-4dce-8974-11dc2767873a
-source-git-commit: 34404fbe935e68f3cc11d937839209443ad4ca60
+source-git-commit: bd9f035db1cbad883e1f27fe901e34dfbc9c1229
 workflow-type: tm+mt
 source-wordcount: '1553'
 ht-degree: 0%
@@ -123,7 +123,7 @@ A sequência na qual os elementos `<attribute>` são definidos em um `<srcschema
 * **sqlname (sequência de caracteres)**: do campo durante a criação da tabela. Se @sqlname não for especificado, o valor do atributo &quot;@name&quot; será usado por padrão. Quando o schema é gravado no banco de dados, os prefixos são adicionados automaticamente, dependendo do tipo de campo.
 * **template (string)**: esse atributo define uma referência a um  `<attribute>` elemento compartilhado por vários schemas. A definição é copiada automaticamente para o schema atual.
 * **translationDefault (cadeia de caracteres)**: se um atributo &quot;@default&quot; for encontrado, &quot;@translationDefault&quot; permitirá redefinir uma expressão para corresponder à definida em @default, a ser coletada pela ferramenta de tradução (uso interno).
-* **translationExpr (cadeia de caracteres)**: se um atributo &quot;@expr&quot; estiver presente, o atributo &quot;@translationExpr&quot; permitirá redefinir uma expressão que corresponda à definida em @expr, a ser coletada pela ferramenta de tradução (uso interno).
+* **translationExpr (cadeia de caracteres)**: se um atributo &quot;@expr&quot; estiver presente, o atributo &quot;@translationExpr&quot; permitirá que você redefina uma expressão para corresponder à definida em @expr, a ser coletada pela ferramenta de tradução (uso interno).
 * **tipo (MNTOKEN)**: tipo de campo.
 
    Os tipos de campo são genéricos. Dependendo do tipo de banco de dados instalado, o Adobe Campaign altera o tipo definido em um valor específico para o banco de dados instalado durante a atualização da estrutura.

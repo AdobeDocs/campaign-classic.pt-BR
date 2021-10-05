@@ -6,9 +6,9 @@ audience: installation
 content-type: reference
 topic-tags: prerequisites-and-recommendations-
 exl-id: ec40498e-e673-4792-8dcf-8bb7e852b532
-source-git-commit: e719c8c94f1c08c6601b3386ccd99d250c9e606b
+source-git-commit: 0c97efef21bfd3b8671847c3e1c27bb76cf167e4
 workflow-type: tm+mt
-source-wordcount: '487'
+source-wordcount: '486'
 ht-degree: 24%
 
 ---
@@ -70,7 +70,7 @@ Também é fundamental seguir a segurança do mecanismo de banco de dados.
 
 >[!CAUTION]
 >
->A partir de 14 de julho de 2021, todos os sistemas clientes que não tiverem suporte ao protocolo TLS 1.2 perderão o acesso a todos os produtos e serviços do Adobe. Certifique-se de que todos os sistemas de usuários e clientes sejam compatíveis com TLS 1.2 antes dessa data. [Saiba mais](https://helpx.adobe.com/in/x-productkb/multi/eol-tls-support.html)
+>A partir de 14 de julho de 2021, todos os sistemas clientes que não tiverem suporte ao protocolo TLS 1.2 perderão o acesso a todos os produtos e serviços do Adobe. Certifique-se de que todos os sistemas de usuários e clientes sejam compatíveis com TLS 1.2 antes dessa data. [Saiba mais](https://helpx.adobe.com/x-productkb/multi/eol-tls-support.html)
 
 ## Configuração do servidor
 

@@ -6,10 +6,10 @@ feature: Overview
 role: User
 level: Beginner
 exl-id: b8c1f287-06f4-4c34-8cca-b0c7676abbc2
-source-git-commit: 987434c2b6b92fbb6f24924f92795cb282b61cd4
-workflow-type: ht
-source-wordcount: '545'
-ht-degree: 100%
+source-git-commit: 134f248fbcd456573365d5b32831b75dac4b73de
+workflow-type: tm+mt
+source-wordcount: '599'
+ht-degree: 86%
 
 ---
 
@@ -169,6 +169,8 @@ Para saber mais sobre itens obsoletos, visite [esta página](../../rn/using/depr
 
 ## Conectores CRM{#CRMconnectors}
 
+Os sistemas de gerenciamento de relacionamento com o cliente (CRM) compatíveis com a Adobe Campaign estão listados abaixo. [Saiba ](../../platform/using/crm-connectors.md) mais sobre conectores do Campaign CRM.
+
 <table>
 <tbody>
 <tr>
@@ -187,6 +189,8 @@ Para saber mais sobre itens obsoletos, visite [esta página](../../rn/using/depr
 </table>
 
 ## Federated Data Access (FDA){#FederatedDataAccessFDA}
+
+Os bancos de dados externos compatíveis com o [módulo Federated Data Access](../../installation/using/about-fda.md) do Adobe Campaign estão listados abaixo.
 
 <table>
 <tbody>
@@ -286,7 +290,7 @@ Para saber mais sobre itens obsoletos, visite [esta página](../../rn/using/depr
 
 ## Console do cliente {#ClientConsoleoperatingsystems}
 
-:warning: os seguintes sistemas operacionais e navegadores são necessários para usar o Console do cliente do Campaign.
+Os seguintes sistemas operacionais e navegadores são **necessários** para usar [Console do Cliente do Campaign](../../installation/using/installing-the-client-console.md).
 
 ### Sistemas operacionais
 
@@ -311,6 +315,7 @@ Para saber mais sobre itens obsoletos, visite [esta página](../../rn/using/depr
 
 ### Navegador
 
+[]
 <table>
 <tbody>
 <tr>
@@ -318,7 +323,7 @@ Para saber mais sobre itens obsoletos, visite [esta página](../../rn/using/depr
 <p>Microsoft Internet Explorer</p>
 </td>
 <td>
-<p>11</p>
+<p>11º</p>
 </td>
 </tr>
 </tbody>
@@ -326,6 +331,8 @@ Para saber mais sobre itens obsoletos, visite [esta página](../../rn/using/depr
 
 
 ## SDK móvel{#MobileSDK}
+
+Você pode usar o Campaign para [enviar notificações por push](../../delivery/using/about-mobile-app-channel.md) nos sistemas operacionais listados abaixo, usando o [SDK móvel](../../delivery/using/integrating-campaign-sdk-into-the-mobile-application.md) associado.
 
 <table>
 <tbody>
@@ -348,7 +355,7 @@ Para saber mais sobre itens obsoletos, visite [esta página](../../rn/using/depr
 
 ## Navegadores{#Browsers}
 
-Os seguintes navegadores são compatíveis com o Campaign for Web Access.
+Os seguintes navegadores são compatíveis com o Campaign para [Web Access](../../campaign/using/accessing-marketing-campaigns.md#using-the-web-interface-).
 
 <table>
 <tbody>
@@ -389,7 +396,7 @@ Os seguintes navegadores são compatíveis com o Campaign for Web Access.
 <p>Microsoft Internet Explorer</p>
 </td>
 <td>
-<p>11</p>
+<p>11º</p>
 </td>
 </tr>
 </tbody>
@@ -399,6 +406,7 @@ Os seguintes navegadores são compatíveis com o Campaign for Web Access.
 ## Mais itens semelhantes{#Morelikethis}
 
 * [Notas de versão do Campaign Classic](../../rn/using/latest-release.md)
-* [Guia de instalação](../../installation/using/general-architecture.md)
+* [Arquitetura geral do Campaign](../../installation/using/general-architecture.md)
+* [Recomendações para dimensionamento de hardware](../../technotes/using/hardware-sizing.md)
 * [Recursos e sistemas obsoletos](../../rn/using/deprecated-features.md)
 * [Criar procedimento de atualização](../../production/using/build-upgrade.md)

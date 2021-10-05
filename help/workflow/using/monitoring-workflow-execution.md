@@ -6,10 +6,10 @@ audience: workflow
 content-type: reference
 topic-tags: use-cases
 exl-id: d589180b-8e1d-4149-9b16-3f541018a41f
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
-workflow-type: ht
+source-git-commit: bd9f035db1cbad883e1f27fe901e34dfbc9c1229
+workflow-type: tm+mt
 source-wordcount: '2016'
-ht-degree: 100%
+ht-degree: 97%
 
 ---
 
@@ -21,7 +21,7 @@ Esta seção apresenta informações sobre como monitorar a execução de workfl
 
 Também está disponível [nesta sessão](supervising-workflows.md#supervising-workflows), um caso de uso que detalha a criação de workflows que permite monitorar o status de um conjunto de workflows &quot;pausados&quot;, &quot;interrompidos&quot; ou &quot;com erros&quot;.
 
-Além disso, os administradores da instância podem usar a **Trilha de auditoria** para verificar as atividades, as últimas modificações feitas e o status dos workflows. Para obter mais informações, consulte o [Manual de produção do Campaign Classic v7](../../production/using/audit-trail.md).
+Além disso, os administradores da instância podem usar a **Trilha de auditoria** para verificar as atividades e as últimas modificações feitas nos workflows, o estado dos workflows. Para obter mais informações, consulte o [Manual de produção do Campaign Classic v7](../../production/using/audit-trail.md).
 
 Outras maneiras de monitorar os diferentes processos do Campaign são apresentadas no [Manual de produção do Campaign Classic v7](../../production/using/monitoring-guidelines.md).
 

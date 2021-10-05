@@ -8,7 +8,7 @@ index: y
 internal: n
 snippet: y
 exl-id: ab30f697-3022-4a29-bbdb-14ca12ec9c3e
-source-git-commit: 86eb9814fae42992b5ca0ce233f88ad90086007d
+source-git-commit: ca2349abce07c890e9d87d07e26dbca4f13d2fb6
 workflow-type: tm+mt
 source-wordcount: '707'
 ht-degree: 91%
@@ -24,7 +24,7 @@ ht-degree: 91%
 >Se você estiver usando uma versão mais antiga da integração de acionadores por meio da autenticação oAuth, **será necessário mudar para o Adobe I/O conforme descrito abaixo**.
 >Observe que, durante a migração para o [!DNL Adobe I/O], alguns acionadores de entrada podem ser perdidos.
 >
->O modo de autenticação oAuth herdado com o Campaign [foi removido](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-discussions/adobe-analytics-legacy-api-end-of-life-notice/td-p/385411) em **setembro de 2021**. Os ambientes hospedados se beneficiam de uma extensão até **23 de fevereiro de 2022**. Como cliente local ou híbrido, entre em contato com o Atendimento ao cliente do Adobe para estender o suporte até fevereiro de 2022. Você deve [fornecer o AppID do aplicativo OAuth](../../integrations/using/configuring-pipeline.md?lang=en#step-optional) para o Adobe.
+>O modo de autenticação oAuth herdado com o Campaign [foi removido](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-discussions/adobe-analytics-legacy-api-end-of-life-notice/td-p/385411) em **20 de outubro de 2021**. Os ambientes hospedados se beneficiam de uma extensão até **23 de fevereiro de 2022**. Como cliente local ou híbrido, entre em contato com o Atendimento ao cliente do Adobe para estender o suporte até fevereiro de 2022. Você deve [fornecer o AppID do aplicativo OAuth](../../integrations/using/configuring-pipeline.md?lang=en#step-optional) para o Adobe.
 
 ## Pré-requisitos {#adobe-io-prerequisites}
 

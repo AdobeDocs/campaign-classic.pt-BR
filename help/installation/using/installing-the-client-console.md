@@ -6,7 +6,7 @@ audience: installation
 content-type: reference
 topic-tags: installing-campaign-in-windows-
 exl-id: 7cc78214-92b8-4b1f-a307-96ec6af818d1
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: bd9f035db1cbad883e1f27fe901e34dfbc9c1229
 workflow-type: tm+mt
 source-wordcount: '973'
 ht-degree: 5%
@@ -40,7 +40,7 @@ Além de um cliente hospedado, você tem duas opções para instalar ou atualiza
 
 1. O Adobe pode implantar diretamente. Quando o console for atualizado, os usuários serão solicitados a baixar a versão mais recente do console do cliente em uma janela pop-up.
 
-1. Você pode fazer download para seu(s) console(s) de [Distribuição de software](https://experience.adobe.com/#/downloads/content/software-distribution/en/campaign.html)
+1. Você pode fazer download para seu(s) console(s) de [Distribuição de software](https://experience.adobe.com/#/downloads/content/software-distribution/br/campaign.html)
 
    **Os usuários precisarão de acesso de Administrador para concluir a atualização. Se os usuários não tiverem direitos de administrador, um administrador do sistema precisará implantar em todos os consoles do cliente**
 

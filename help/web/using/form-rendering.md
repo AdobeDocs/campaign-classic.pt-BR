@@ -6,8 +6,8 @@ audience: web
 content-type: reference
 topic-tags: web-forms
 exl-id: 723a6c47-5323-4914-a014-58be493852cc
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
-workflow-type: ht
+source-git-commit: 9b914099f6755d6ae83f98697a3a38f8cfa625e1
+workflow-type: tm+mt
 source-wordcount: '987'
 ht-degree: 100%
 
@@ -19,7 +19,7 @@ ht-degree: 100%
 
 ## Seleção do modelo de renderização do formulário {#selecting-the-form-rendering-template}
 
-As configurações de formulário permitem selecionar o modelo usado para gerar as páginas. Para acessá-las, clique no botão **[!UICONTROL Settings]** na barra de ferramentas de detalhes do formulário e selecione a guia **[!UICONTROL Rendering]**. Há vários templates (folhas de estilos) disponíveis por padrão.
+As configurações de formulário permitem selecionar o modelo usado para gerar as páginas. Para acessá-las, clique no botão **[!UICONTROL Properties]** na barra de ferramentas de detalhes do formulário e selecione a guia **[!UICONTROL Rendering]**. Há vários templates (folhas de estilos) disponíveis por padrão.
 
 ![](assets/s_ncs_admin_survey_rendering_select.png)
 

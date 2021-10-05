@@ -6,7 +6,7 @@ feature: Overview
 role: User
 level: Beginner
 exl-id: 57996f77-4ac2-402a-95db-b75d4bea4eeb
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: bd9f035db1cbad883e1f27fe901e34dfbc9c1229
 workflow-type: tm+mt
 source-wordcount: '2369'
 ht-degree: 97%
@@ -45,7 +45,7 @@ ht-degree: 97%
 
 **Aprimoramentos**
 
-* Correção de um problema com o processo de computação de indicadores de rastreamento para mensagens transacionais. (NEO-12529, NEO-12581)
+* Correção de um problema com o processo de cálculo de indicadores de rastreamento para mensagens transacionais. (NEO-12529, NEO-12581)
 * Correção de um problema com API HTTPRequest que não esperou o término de todos os retornos de chamada. (NEO-12628)
 * Os índices foram adicionados nas tabelas temporárias de cupom para otimizar o envio de delivery. (NEO-12437)
 * Correção de um problema ao analisar uma mensagem que tinha como target recipients para domínios japoneses (.JP). (NEO-12246)
@@ -91,7 +91,7 @@ ht-degree: 97%
 * Correção de um problema de esgotamento de ID ao usar seed addresses em um delivery. (NEO-11842)
 * Correção de um problema de congelamento do cliente que pode ocorrer ao usar workflows complexos. (NEO-11847)
 * Correção de um problema de exibição ao usar uma distribuição de valores com um link 1:N. (NEO-11820)
-* Corrigido um erro Oracle em Heatmap do workflow.
+* Correção de um erro de Oracle no Workflow Heatmap.
 * Correção de um problema certo ao adicionar uma apresentação de oferta em uma atividade de enriquecimento.
 * Correção de um problema de conexão de gestão de dados SQL.
 * Correção de um problema com a geração de nomes de tabela de workflow temporários em caso de IDs negativas.

@@ -6,10 +6,10 @@ audience: web
 content-type: reference
 topic-tags: web-forms
 exl-id: 37aaaa03-0656-4a9b-bcae-74de33e3737b
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
-workflow-type: ht
-source-wordcount: '1205'
-ht-degree: 100%
+source-git-commit: bd9f035db1cbad883e1f27fe901e34dfbc9c1229
+workflow-type: tm+mt
+source-wordcount: '1206'
+ht-degree: 99%
 
 ---
 
@@ -17,7 +17,7 @@ ht-degree: 100%
 
 ![](../../assets/common.svg)
 
-Os formulários web são completamente configuráveis e personalizáveis para atender aos seus requisitos. Os parâmetros devem ser inseridos na janela de propriedades.
+Você pode configurar e personalizar totalmente os formulários web para atender aos seus requisitos. Os parâmetros devem ser inseridos na janela de propriedades.
 
 A janela de propriedades é acessível por meio do botão **[!UICONTROL Properties]** na barra de ferramentas do formulário web. Essa janela permite que você acesse um intervalo de configurações específicas ao formulário web. Algumas configurações podem resultar da configuração do template.
 

@@ -1,15 +1,15 @@
 ---
 product: campaign
-title: Atualizações da documentação do Adobe Campaign Classic
+title: Atualizações de documentação do Adobe Campaign Classic v7
 description: Esta página lista todos os novos recursos e atualizações na documentação do Adobe Campaign Classic
 feature: Overview
 role: User
 level: Beginner
 exl-id: 07c1f4a3-cf16-4a9b-b402-e13258799f91
-source-git-commit: 32f55d02920b0104198f809b1be0a91306a4d9e4
+source-git-commit: cee019432c64eaaefac86a27b731355242fd1555
 workflow-type: tm+mt
-source-wordcount: '4513'
-ht-degree: 100%
+source-wordcount: '4560'
+ht-degree: 98%
 
 ---
 
@@ -21,6 +21,22 @@ Esta página lista todos os novos recursos e atualizações de documentação po
 
 Consulte as [Notas de versão do Adobe Campaign Classic](../../rn/using/latest-release.md) para ver as atualizações relacionadas à versão.
 
+## Outubro de 2021{#oct-2021}
+
+As notas técnicas existentes foram agrupadas na nova seção **Technote**.
+
+A página **Recomendações de dimensionamento de hardware** foi atualizada e adicionada à seção **Technotes**. [Leia mais](../../technotes/using/hardware-sizing.md)
+
+## Setembro de 2021{#sept-2021}
+
+**Atualizações da documentação que vêm com a versão 21.1.4**
+
+O tipo de gráfico **Gauge** foi removido.
+
+As capturas de tela e os parâmetros de relatórios e aplicativos Web foram atualizados após a remoção do Adobe Flash.
+
+A descrição [workflow técnico de faturamento](../../production/using/monitoring-processes.md#billing-report) foi atualizada com uma nova garantia.
+
 ## Agosto de 2021{#aug-2021}
 
 Adição de uma nova atividade de workflow: Alterar fonte de dados - [Saiba mais](../../workflow/using/change-data-source.md)
@@ -28,10 +44,6 @@ Adição de uma nova atividade de workflow: Alterar fonte de dados - [Saiba mais
 Os emblemas de aplicabilidade foram adicionados às páginas de documentação: **Aplica-se a v7**, somente para recursos do Campaign Classic v7 e **Aplica-se a v7 e v8**, para recursos comuns.
 
 Adição de uma observação sobre a integração entre o Campaign e o AEM Assets que foi descontinuada a partir do Adobe Experience Manager 6.4. [Saiba mais](../../integrations/using/configuring-access-to-assets.md)
-
-As capturas de tela e os parâmetros de relatórios e aplicativos Web foram atualizados após a remoção do Adobe Flash.
-
-O tipo de gráfico **Gauge** foi removido.
 
 
 ## Julho de 2021 {#july-2021}
@@ -270,7 +282,7 @@ A página de gerenciamento de privacidade no Campaign Classic foi atualizada com
 
 A página Visão geral do gerenciamento de privacidade foi atualizada para incluir informações sobre a Lei de Proteção de Dados Pessoais (PDPA) da Tailândia e sobre a Lei Geral de Dados (LGPD) do Brasil. [Leia mais](../../platform/using/privacy-and-recommendations.md)
 
-As informações foram adicionadas nos registros de subworkflows e no comportamento em caso de erro. [Leia mais](../../workflow/using/sub-workflow.md)
+Foram adicionadas informações sobre registros de sub-workflows e comportamento em caso de erro. [Leia mais](../../workflow/using/sub-workflow.md)
 
 As práticas recomendadas foram adicionadas na seção atividade de **[!UICONTROL Scheduler]**. [Leia mais](../../workflow/using/scheduler.md)
 
@@ -380,7 +392,7 @@ Aprimoramento do conector FDA do Hadoop - [Leia mais](../../installation/using/c
 
 Os guias de [instalação](../../installation/using/general-architecture.md), [produção](../../production/using/foreword.md) e [configuração](../../configuration/using/additional-parameters.md) foram atualizados com a nova unidade do sistema usada pela inicialização do serviço nlserver. Ainda é possível usar o /etc/init.d/nlserver6, mas a Adobe recomenda usar o comando systemctl agora para interagir com o serviço nlserver.
 
-O guia de instalação está atualizado e sincronizado com a versão mais recente da matriz de compatibilidade. Novos sistemas compatíveis foram adicionados. As ocorrências em sistemas obsoletos e sem suporte foram removidas. [Leia mais](../../installation/using/general-architecture.md)
+O guia de instalação foi atualizado e sincronizado com a versão mais recente da matriz de compatibilidade. Novos sistemas compatíveis foram adicionados. As ocorrências de sistemas obsoletos e não compatíveis foram removidas. [Leia mais](../../installation/using/general-architecture.md)
 
 A matriz de compatibilidade foi atualizada com os conectores do Hadoop 3.0 e Snowflake FDA. [Leia mais](https://helpx.adobe.com/campaign/kb/compatibility-matrix.html)
 

@@ -6,10 +6,10 @@ audience: integrations
 content-type: reference
 topic-tags: adobe-target
 exl-id: 2e29d090-b87b-4cff-a703-58e1da082f04
-source-git-commit: 32f55d02920b0104198f809b1be0a91306a4d9e4
+source-git-commit: 0996cc313be93300bce2f094c97e45a794cd459e
 workflow-type: tm+mt
-source-wordcount: '203'
-ht-degree: 91%
+source-wordcount: '171'
+ht-degree: 94%
 
 ---
 
@@ -21,7 +21,6 @@ A integração entre o Adobe Campaign e o Adobe Target (Classic e Standard) dent
 
 O princípio operacional é o seguinte: quando um recipient abre um email enviado pelo Adobe Campaign, uma chamada para o Adobe Target permite exibir uma versão dinâmica do conteúdo. Essa versão dinâmica é calculada, dependendo das regras especificadas anteriormente ao criar o email.
 
-Saiba mais sobre a integração do Adobe Campaign e do Adobe Target com [estas quatro dicas e truques](https://business.adobe.com/content/dam/dx/us/en/products/campaign/pdfs/Adobe_Campaign_for_Target_Tips_and_Tricks.pdf).
 >[!NOTE]
 >
 >A integração só oferece suporte a imagens estáticas. O restante do conteúdo não pode ser personalizado.

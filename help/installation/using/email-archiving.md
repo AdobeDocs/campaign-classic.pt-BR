@@ -6,7 +6,7 @@ audience: installation
 content-type: reference
 topic-tags: additional-configurations
 exl-id: 424faf25-2fd5-40d1-a2fc-c715fc0b8190
-source-git-commit: dccf72b200cad9ba160a496cdd13ba39c5599008
+source-git-commit: bd9f035db1cbad883e1f27fe901e34dfbc9c1229
 workflow-type: tm+mt
 source-wordcount: '1305'
 ht-degree: 3%
@@ -140,7 +140,7 @@ Após configurar o Cco do email, selecione a opção **[!UICONTROL Email BCC]** 
 ## Práticas recomendadas de Cco de emails {#best-practices}
 
 * **Caixa de entrada** do endereço CCO: verifique se tem capacidade de recebimento suficiente para arquivar todos os emails enviados pelo MTA.
-* **mutualização** de MTA: o recurso de arquivamento do Cco funciona no nível do MTA. Ele permite duplicar cada email enviado pelo MTA. Como o MTA pode ser mutualizado em várias instâncias (desenvolvimento, teste ou produção por exemplo) ou até mesmo em vários clientes (em um ambiente de mid-sourcing), a configuração desse recurso afeta a segurança:
+* **Pooling** de MTA: o recurso de arquivamento do Cco funciona no nível do MTA. Ele permite duplicar cada email enviado pelo MTA. Como o MTA pode ser agrupado em várias instâncias (desenvolvimento, teste ou produção, por exemplo) ou até mesmo em vários clientes (em um ambiente de mid-sourcing), a configuração desse recurso afeta a segurança:
 
    * Se você compartilhar um MTA com vários clientes e um deles tiver essa opção ativada, esse cliente acessará todos os emails dos outros clientes que compartilham o mesmo MTA. Para evitar essa situação, use um MTA diferente para cada cliente.
    * Se você usar o mesmo MTA em várias instâncias (desenvolvimento, teste, prod) para um único cliente, as mensagens enviadas de todas as três instâncias serão duplicadas pela opção dataLogPath .
