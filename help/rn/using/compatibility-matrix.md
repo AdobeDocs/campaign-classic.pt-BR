@@ -6,10 +6,10 @@ feature: Overview
 role: User
 level: Beginner
 exl-id: b8c1f287-06f4-4c34-8cca-b0c7676abbc2
-source-git-commit: f6f1feffbd328f9756c9cd71c4186ba7cd674d76
+source-git-commit: 235e8abcaed2659d745ebfeca24dc2f0278a6e5a
 workflow-type: tm+mt
-source-wordcount: '596'
-ht-degree: 85%
+source-wordcount: '600'
+ht-degree: 79%
 
 ---
 
@@ -119,7 +119,7 @@ Para saber mais sobre itens obsoletos, visite [esta página](../../rn/using/depr
 </tbody>
 </table>
 
-## Servidores RDBMS{#RDBMSservers}
+## RDBMS (Relation Database Management Systems){#RDBMSservers}
 
 <table>
 <tbody>
@@ -133,10 +133,7 @@ Para saber mais sobre itens obsoletos, visite [esta página](../../rn/using/depr
 </td>
 </tr>
 <tr>
-<td>
-<p>PostgreSQL</p>
-<p>Servidor de banco de dados padrão para ambientes hospedados</p>
-</td>
+<td>PostgreSQL</td>
 <td>
 <p>13.x</p>
 <p>12.x</p>
@@ -145,7 +142,7 @@ Para saber mais sobre itens obsoletos, visite [esta página](../../rn/using/depr
 <p>9.6.x</p>
 <p>9.5.x</p>
 <p>9.4.x</p>
-<p>Observação: você também pode usar o Amazon RDS para PostgreSQL com as versões especificadas acima.</p>
+<p><strong>Observação:</strong> você também pode usar o Amazon RDS para PostgreSQL com as versões especificadas acima.</p>
 </td>
 </tr>
 <tr>
@@ -156,7 +153,7 @@ Para saber mais sobre itens obsoletos, visite [esta página](../../rn/using/depr
 <p>2016</p>
 <p>2014</p>
 <p>2012 - SP1 e SP2</p>
-<p>Aviso: o Microsoft SQL Server não é compatível como o banco de dados principal quando o servidor do Campaign está em execução no Linux. [Saiba mais](../../installation/using/prerequisites-of-campaign-installation-in-linux.md#database-access-layers).</p>
+<p><strong>Importante:</strong> o Microsoft SQL Server não é compatível como o banco de dados principal quando o servidor do Campaign está em execução no Linux. [Saiba mais](../../installation/using/prerequisites-of-campaign-installation-in-linux.md#database-access-layers).</p>
 </td>
 </tr>
 </tbody>
@@ -164,7 +161,10 @@ Para saber mais sobre itens obsoletos, visite [esta página](../../rn/using/depr
 
 >[!NOTE]
 >
->O driver RDBMS deve corresponder à versão do servidor RDBMS.
+>* O driver RDBMS deve corresponder à versão do servidor RDBMS.
+>
+>* O PostgreSQL é o RDBMS para ambientes hospedados.
+
 
 ## Conectores CRM{#CRMconnectors}
 
