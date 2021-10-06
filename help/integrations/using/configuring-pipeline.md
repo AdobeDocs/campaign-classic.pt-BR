@@ -5,7 +5,7 @@ description: Saiba como configurar o pipeline
 audience: integrations
 content-type: reference
 exl-id: 2d214c36-8429-4b2b-b1f5-fe2730581bba
-source-git-commit: 32f55d02920b0104198f809b1be0a91306a4d9e4
+source-git-commit: b8f74c290106d57630c5d486c04b8424132e3297
 workflow-type: tm+mt
 source-wordcount: '902'
 ht-degree: 99%
@@ -127,7 +127,7 @@ A lista de parâmetros opcionais pode ser encontrada abaixo:
 
 | Opção | Descrição |
 |:-:|:-:|
-| appName(Herdado) | AppID do aplicativo OAuth registrado no aplicativo Legacy Oath em que a chave pública foi carregada. Para obter mais informações, consulte esta [página](https://www.adobe.io/authentication/auth-methods.html#!AdobeDocs/adobeio-auth/master/AuthenticationOverview/ServiceAccountIntegration.md.) |
+| appName(Herdado) | AppID do aplicativo OAuth registrado no aplicativo Legacy Oath em que a chave pública foi carregada. Para obter mais informações, consulte esta [página](https://www.adobe.io/authentication/auth-methods.html#!AdobeDocs/adobeio-auth/master/AuthenticationOverview/ServiceAccountIntegration.md) |
 | authGatewayEndpoint(Legacy) | URL para obter tokens de gateway. Padrão: ```https://api.omniture.com``` |
 | authPrivateKey(Legacy) | A chave privada, parte pública carregada no aplicativo Legacy Oath, AES criptografada com a opção XtkKey: ```cryptString("PRIVATE_KEY")``` |
 | disableAuth(Legacy) | A ação de desabilitar a autenticação, conectando sem tokens de gateway é aceita somente por alguns pontos de entrada do pipeline de desenvolvimento. |
