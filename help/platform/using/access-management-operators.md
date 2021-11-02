@@ -7,9 +7,9 @@ role: User, Admin
 level: Beginner
 exl-id: 580282ce-ee30-422a-8724-9c328637cc39
 source-git-commit: 8b970705f0da6a9e09de9fadb3e1a8c5f4814f9f
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1149'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -125,7 +125,7 @@ O link **[!UICONTROL Edit the access parameters...]** permite acessar as seguint
 
    >[!IMPORTANT]
    >
-   >Essa é uma restrição muito rígida e deve ser usada com cuidado. Um operador conectado com este tipo de direito pode ver SOMENTE o conteúdo da pasta especificada e não tem acesso a nenhum outro nó da árvore por meio do explorador. No entanto, dependendo das funcionalidades, esse operador tem acesso a (por exemplo: workflows), o usuário pode exibir dados que normalmente são armazenados em nós que não estão acessíveis.
+   >Essa é uma restrição muito rígida e deve ser usada com cuidado. Um operador conectado com este tipo de direito pode ver SOMENTE o conteúdo da pasta especificada e não tem acesso a nenhum outro nó da árvore por meio do explorador. No entanto, dependendo das funcionalidades as quais esse operador tem acesso (por exemplo: fluxos de trabalho), o usuário pode exibir dados que normalmente são armazenados em nós que não estão acessíveis.
 
 ### Verificar configurações {#check-settings}
 
