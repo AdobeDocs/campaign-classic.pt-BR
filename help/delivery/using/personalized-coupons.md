@@ -7,9 +7,9 @@ content-type: reference
 topic-tags: personalizing-deliveries
 exl-id: 182939bb-7aff-4667-bda9-c5d48be3b946
 source-git-commit: 0deb18bb0376fc5e94d063145280426ff54db786
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '879'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -151,7 +151,7 @@ Para confirmar que o delivery foi bem-sucedido:
 >
 >Por padrão, o módulo de gestão de cupom usa uma tabela **nms:recipient**. [Saiba mais](../../configuration/using/about-data-model.md#default-recipient-table).
 >
->Saiba como usar uma tabela de recipient personalizada [nesta página](../../configuration/using/about-custom-recipient-table.md).
+>Aprenda como usar uma tabela de recipient personalizada [nesta página](../../configuration/using/about-custom-recipient-table.md).
 
 ## Gestão de cupons insuficientes {#managing-insufficient-coupons}
 
