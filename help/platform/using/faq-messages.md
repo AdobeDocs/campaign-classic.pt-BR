@@ -7,9 +7,9 @@ content-type: reference
 topic-tags: starting-with-adobe-campaign
 exl-id: 7fc24ef2-b021-440b-b1f2-8c77e2425328
 source-git-commit: 6d53ba957fb567a9a921544418a73a9bde37c97b
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '735'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -96,7 +96,7 @@ Para cada URL de mensagem, você pode escolher se irá ativar o rastreamento, al
 
 ### Onde posso acessar logs de entrega e rastreamento? {#where-can-i-access-delivery-and-tracking-logs-}
 
-Saiba como controlar suas entregas e entender o comportamento dos destinatários [nesta página](../../delivery/using/delivery-dashboard.md).
+Saiba como rastrear seus deliveries e entender o comportamento dos recipients [nesta página](../../delivery/using/delivery-dashboard.md).
 
 ### Onde posso obter relatórios de entrega? {#where-can-i-get-delivery-reports-}
 
