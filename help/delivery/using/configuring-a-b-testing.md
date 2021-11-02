@@ -7,9 +7,9 @@ content-type: reference
 topic-tags: a-b-testing
 exl-id: 6adf2e75-63b1-44ad-8925-03beb3bc0bdd
 source-git-commit: bd9f035db1cbad883e1f27fe901e34dfbc9c1229
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '212'
-ht-degree: 84%
+ht-degree: 100%
 
 ---
 
@@ -37,6 +37,6 @@ Esta seção detalha como criar um fluxo de trabalho para executar um teste A/B.
 
    ![](assets/ab-testing-delivery.png)
 
-Agora, você pode iniciar o fluxo de trabalho. Depois que os deliveries forem enviados, você poderá rastrear o comportamento dos três subconjuntos nos logs de delivery para ver qual assunto foi o mais bem-sucedido.
+Agora, você pode iniciar o fluxo de trabalho. Depois que os deliveries forem enviados, você poderá rastrear o comportamento dos três subconjuntos nos logs do delivery para ver qual assunto foi o mais bem-sucedido.
 
 Os workflows também permitem que você automatize seus processos identificando automaticamente a variante do delivery que teve melhor desempenho e, em seguida, enviando-a à população restante. Para saber mais, consulte este [caso de uso](a-b-testing-use-case.md) dedicado.
