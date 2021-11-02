@@ -5,9 +5,9 @@ description: Configuração da integração
 audience: integrations
 content-type: reference
 source-git-commit: c6d5e597a02a1210507b0c6d84ab7d170e877eb1
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '372'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
@@ -77,7 +77,7 @@ O parâmetro &quot;consumidor&quot; identifica a instância como um desses consu
 ## Como configurar a opção Pipeline {#configure-pipeline-option}
 
 Adicione ou edite acionadores da Experience Cloud sob a matriz &quot;acionadores&quot;; não edite o resto.
-Certifique-se de que o JSON seja válido com a ajuda deste [site](https://jsonlint.com/).
+Verifique se o JSON é válido com a ajuda deste [site](https://jsonlint.com/).
 
 * “name” é a ID do acionador. Um curinga &quot;*&quot; captura todos os acionadores.
 * &quot;Consumidor&quot; é qualquer string única que identifique exclusivamente a instância nlserver. Normalmente, pode ser o próprio nome da instância. Para vários ambientes (dev/stage/prod), verifique se ela é exclusiva para cada um deles para que cada instância receba uma cópia da mensagem.
