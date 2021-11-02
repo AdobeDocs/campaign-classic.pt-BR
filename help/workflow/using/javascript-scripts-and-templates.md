@@ -7,9 +7,9 @@ content-type: reference
 topic-tags: advanced-management
 exl-id: 4a3647d1-cf8c-4867-871e-472287be7c6a
 source-git-commit: bd9f035db1cbad883e1f27fe901e34dfbc9c1229
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1234'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -91,7 +91,7 @@ Certas variáveis de evento são modificadas ou lidas pelas várias atividades. 
 
 >[!NOTE]
 >
->Outros casos de uso de workflow estão disponíveis em [this section](about-workflow-use-cases.md).
+>Outros casos de uso de fluxo de trabalho estão disponíveis [nesta seção](about-workflow-use-cases.md).
 
 **Exemplo 1**
 
