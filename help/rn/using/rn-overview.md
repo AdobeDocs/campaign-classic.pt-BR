@@ -7,9 +7,9 @@ role: User
 level: Beginner
 exl-id: 7a05fdff-8f9d-4e8d-812e-0f1509db5499
 source-git-commit: b3a3ec871bca9132f10b319ba1f93aeda80d6747
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '422'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
@@ -35,9 +35,9 @@ As **últimas compilações do GA** são: [[!DNL Gold Standard]  versão 11](../
 
 ![](assets/do-not-localize/blue3.png) **Versão candidata** (VC) - versão mais recente com novos recursos.
 
-![](assets/do-not-localize/orange3.png) **Não está mais disponível**  - Nenhuma implantação. Nenhuma correção de erro. Recomenda-se a atualização para uma build mais recente.
+![](assets/do-not-localize/orange3.png) **Não está mais disponível** - Nenhuma implantação. Nenhuma correção de erro. Recomenda-se a atualização para um build mais recente.
 
-![](assets/do-not-localize/red3.png) **Obsoleto** – nenhuma implantação. Nenhuma correção de erro. As implementações existentes devem ser atualizadas.
+![](assets/do-not-localize/red3.png) **Obsoleto** - Nenhuma implantação. Nenhuma correção de erro. As implementações atuais devem ser atualizadas.
 
 ## Recomendações{#recommendations}
 
