@@ -7,9 +7,9 @@ role: User
 level: Beginner
 exl-id: d65869ca-a785-4327-8e8d-791c28e4696c
 source-git-commit: ebd5b04c30c54142433056904a5d80f5a8744ded
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2459'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -28,9 +28,9 @@ _8 de outubro de 2021_
 
 **Correções**
 
-* Correção de um problema que poderia impedir o gerenciamento adequado de ofertas ao usar o módulo **Interaction** com a opção [Power Boster](../../installation/using/power-booster-and-power-cluster.md). (NEO-39263)
+* Correção de um problema que podia impedir o gerenciamento adequado de ofertas ao usar o módulo **Interaction** com a opção [Power Booster](../../installation/using/power-booster-and-power-cluster.md). (NEO-39263)
 
-* Correção de um erro &#39;The ipaffinity xxx is not found on mid server xxx&#39; que poderia ocorrer no envio do delivery ao usar mais de uma afinidade IP em uma instância multimid-sourcing. (NEO-37514)
+* Correção do erro “A afinidade de IP xxx não foi encontrada no mid server xxx” que podia ocorrer no envio de um delivery ao usar mais de uma afinidade de IP em uma instância de multi mid-sourcing. (NEO-37514)
 
 
 ## ![](assets/do-not-localize/orange_2.png) Versão 21.1.4 – Build 9342 {#release-21-1-4-build-9342}
