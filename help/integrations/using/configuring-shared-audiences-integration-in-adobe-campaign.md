@@ -7,7 +7,7 @@ content-type: reference
 topic-tags: audience-sharing
 exl-id: a3e26cff-9609-4d91-8976-9213a30c3fd2
 source-git-commit: 830c4146d72cd5a744d026a499cfe8613a255da7
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '484'
 ht-degree: 100%
 
@@ -87,6 +87,6 @@ Certifique-se de que o Servidor de Rastreamento do Campaign está registrado no 
 
 ## Etapa 4: configurar o Serviço de ID de visitante {#step-4--configure-the-visitor-id-service}
 
-Se o serviço de ID do visitante nunca foi configurado em suas propriedades da Web ou sites, consulte este [documento](https://experienceleague.adobe.com/docs/id-service/using/implementation/setup-aam-analytics.html?lang=pt-BR) para saber como configurar o serviço ou este [vídeo](https://helpx.adobe.com/marketing-cloud/how-to/email-marketing.html#step-two).
+Se o serviço de ID do visitante nunca tiver sido configurado em suas propriedades da web ou sites, consulte este [documento](https://experienceleague.adobe.com/docs/id-service/using/implementation/setup-aam-analytics.html?lang=pt-BR) para saber como configurar o serviço ou este [vídeo](https://helpx.adobe.com/marketing-cloud/how-to/email-marketing.html#step-two).
 
 Sua configuração e provisionamento estão finalizados, a integração agora pode ser usada para importar e exportar públicos ou segmentos.
