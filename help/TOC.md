@@ -7,9 +7,9 @@ user-guide-description: Com o Adobe Campaign, é possível usar dados avançados
 sub-product: adobe campaign classic
 type: Documentation
 source-git-commit: 23c5892189c59008f82ec453c97d24efe82fd2ae
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2566'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -111,7 +111,7 @@ ht-degree: 97%
          + [Conecte-se com o Salesforce.com](platform/using/crm-sfdc.md)
          + [Sincronizar dados com o CRM](platform/using/crm-data-sync.md)
       + Adobe Analytics Connector{#analytics-connector}
-         + [Provisionamento do conector Adobe Analytics](platform/using/adobe-analytics-provisioning.md)
+         + [Provisionamento do Adobe Analytics Connector](platform/using/adobe-analytics-provisioning.md)
          + [Integração do Adobe Analytics Connector](platform/using/adobe-analytics-connector.md)
          + [Como migrar para o Adobe Analytics Connector](technotes/using/aa-connector-migration.md)
          + [Conector de dados do Adobe Analytics](platform/using/adobe-analytics-data-connector-legacy.md)
@@ -849,9 +849,9 @@ ht-degree: 97%
       + [Atualizações de configuração do Campaign](technotes/using/acc-config-updates.md)
       + [Atualizações do IMS](technotes/using/ims-updates.md)
    + Emails e notificações por push{#technotes-email}
-      + [Proteção de privacidade de email no Apple iOS](technotes/using/apple-mail-app-privacy-protection.md)
-      + [Perguntas frequentes sobre a proteção da privacidade do Apple Mail](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/additional-resources/technotes/apple-mail-privacy-faq.html)
-      + [Como atualizar devoluções permanentes incorretas](delivery/using/update-bounce-qualification.md)
+      + [Proteção de privacidade do App Mail no Apple iOS](technotes/using/apple-mail-app-privacy-protection.md)
+      + [Perguntas frequentes sobre a proteção da privacidade do Apple Mail](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/additional-resources/technotes/apple-mail-privacy-faq.html?lang=pt-BR)
+      + [Como atualizar rejeições permanentes incorretas](delivery/using/update-bounce-qualification.md)
       + [Atualização de certificado do iOS](technotes/using/ios-certificate-update.md)
       + [Atualização de URLs rastreados](technotes/using/tracked-urls.md)
    + Migração para o Adobe Managed Services{#dc-migration}
