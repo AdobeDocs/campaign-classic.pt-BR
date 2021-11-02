@@ -7,9 +7,9 @@ content-type: reference
 topic-tags: tracking-messages
 exl-id: 62e67a39-1e5c-4716-a3f3-b0ca69693cd0
 source-git-commit: e719c8c94f1c08c6601b3386ccd99d250c9e606b
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '759'
-ht-degree: 93%
+ht-degree: 100%
 
 ---
 
@@ -132,7 +132,7 @@ Siga estas etapas ao atualizar a opção NmsTracking_Pointer:
 
 Você pode personalizar a fórmula de rastreamento de cliques e especificar uma fórmula de rastreamento do Adobe Analytics personalizada.
 
-Esse tipo de personalização precisa ser feito com cautela para evitar a adição de caracteres de avanço de linha. Todos os caracteres de alimentação de linha presentes fora da expressão JavaScript estarão presentes na fórmula final.
+Esse tipo de personalização precisa ser feito com cautela para evitar a adição de caracteres de avanço de linha. Todos os caracteres de avanço de linha presentes fora da expressão JavaScript estarão presentes na fórmula final.
 
 Esse tipo de caractere extra de avanço de linha no URL de rastreamento levará a problemas em algum WebMail (AOL, GMail etc.).
 
@@ -159,7 +159,7 @@ Esse tipo de caractere extra de avanço de linha no URL de rastreamento levará 
    %>&cid=<%= message.delivery.internalName %>&bid=<%= message.id.toString().toLowerCase() %><% } %>
    ```
 
-Para entender onde o feed de linha extra é possível substituir a expressão do JavaScript por uma STRING de string fixa.
+Para entender onde está o avanço de linha extra, é possível substituir a expressão JavaScript por uma STRING fixa.
 
 ```
 // Incorrect
@@ -195,7 +195,7 @@ STRING1&cid=STRING2&bid=STRING3
    %>
    ```
 
-Para entender onde o feed de linha extra é possível substituir a expressão do JavaScript por uma STRING de string fixa.
+Para entender onde está o avanço de linha extra, é possível substituir a expressão JavaScript por uma STRING fixa.
 
 ```
 // Incorrect
