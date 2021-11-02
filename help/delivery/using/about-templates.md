@@ -7,9 +7,9 @@ content-type: reference
 topic-tags: using-delivery-templates
 exl-id: d943898c-06fe-451d-aa28-8a95665f4112
 source-git-commit: 8b970705f0da6a9e09de9fadb3e1a8c5f4814f9f
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '274'
-ht-degree: 84%
+ht-degree: 100%
 
 ---
 
@@ -31,7 +31,7 @@ Há dois tipos de templates:
 
 1. Templates de delivery predefinidos
 
-   O administrador do Adobe Campaign pode criar novos templates de delivery. Eles podem ser reutilizados por operadores (aqueles com direitos de acesso adequados) ou automaticamente por processos de servidor. Por exemplo, você pode configurar um template do delivery de email e, quando os usuários criam um delivery usando esse template, eles precisam apenas inserir o texto ou o conteúdo HTML e depois entregá-lo; as outras opções já foram definidas pelo administrador.
+   O administrador do Adobe Campaign pode criar novos templates de delivery. Eles podem ser reutilizados por operadores (aqueles com direitos de acesso adequados) ou automaticamente por processos de servidor. Por exemplo, você pode configurar um modelo de delivery de email e, quando os usuários criarem um delivery usando esse modelo, bastará inserir o texto ou o conteúdo HTML e depois enviá-lo; as outras opções já terão sido definidas pelo administrador.
 
 >[!NOTE]
 >
