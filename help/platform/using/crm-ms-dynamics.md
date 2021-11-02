@@ -7,9 +7,9 @@ content-type: reference
 topic-tags: connectors
 exl-id: 26737940-b3ce-425c-9604-f4cefd19afaa
 source-git-commit: e719c8c94f1c08c6601b3386ccd99d250c9e606b
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1091'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -199,7 +199,7 @@ O Campaign e o Microsoft Dynamics agora estão conectados. Você pode configurar
 
 >[!NOTE]
 >
-> Certifique-se de adicionar à lista de permissões dois URLs: o URL do servidor e `login.microsoftonline.com` na configuração do Servidor.
+> Certifique-se de adicionar dois URLs à lista de permissões: o URL do servidor e `login.microsoftonline.com` na configuração do Servidor.
 
 ## Tipos de dados de campo compatíveis {#ms-dyn-supported-types}
 
