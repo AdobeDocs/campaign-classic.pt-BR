@@ -7,9 +7,9 @@ role: User
 level: Beginner
 exl-id: d60d67de-6618-4f3b-be4a-ad7633ab5645
 source-git-commit: 32f55d02920b0104198f809b1be0a91306a4d9e4
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1657'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -113,8 +113,8 @@ Esta seção lista os recursos e funcionalidades removidos do Campaign Classic.
    <td>A partir da versão 18.10 do Campaign, os recursos de marketing preditivo não estarão mais disponíveis.</td>
   </tr> 
   <tr> 
-   <td>Aplicação da Web - Microsites</td>
-   <td>A partir da versão 18.10 do Campaign, os Microsites não estarão mais disponíveis. Você pode melhorar a segurança restringindo o acesso a domínios dedicados somente em arquivos de configuração do Adobe Campaign e usar URLs personalizados no Campaign usando aliases DNS.</td>
+   <td>Aplicativos da web - Microsites</td>
+   <td>A partir da versão 18.10 do Campaign, os Microsites não estarão mais disponíveis. Você pode melhorar a segurança restringindo o acesso somente a domínios dedicados em arquivos de configuração do Adobe Campaign e usando URLs personalizados no Campaign por meio de aliases DNS.</td>
   </tr> 
   <tr> 
    <td>Notificações por push - Conector binário iOS</td>
@@ -177,7 +177,7 @@ A partir da versão 19.1, o Adobe Campaign não será mais compatível com os se
 A partir da versão 19.1, o Adobe Campaign não é mais compatível com o seguinte servidor da Web.
 
 * Apache 2.2. [Saiba mais](https://httpd.apache.org/)
-* Microsoft IIS 7. [Saiba mais](https://support.microsoft.com/pt-br/lifecycle/search/810)
+* Microsoft IIS 7. [Saiba mais](https://support.microsoft.com/en-us/lifecycle/search/810)
 
 ### Ferramentas {#tools-eol}
 
