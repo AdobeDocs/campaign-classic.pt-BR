@@ -7,9 +7,9 @@ content-type: reference
 topic-tags: managing-environments
 exl-id: 965c4a6a-6535-454d-bd37-e9c8312b4d13
 source-git-commit: 8b970705f0da6a9e09de9fadb3e1a8c5f4814f9f
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '447'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
@@ -60,7 +60,7 @@ Por padrão, o Interaction vem com um ambiente pré-configurado para direcionar 
 
    Essa opção permite ativar funções específicas de interação anônima, especialmente quando configurar espaços de oferta de ambiente. Também é possível configurar opções que permitem alternar de um ambiente &quot;identificado&quot; para um ambiente &quot;anônimo&quot;.
 
-   Por exemplo, é possível vincular um espaço de oferta de ambiente de recipient (contato identificado) com um espaço de oferta que corresponda a um ambiente de visitante (contato não identificado). Dessa forma, diferentes ofertas serão disponibilizadas para o contato, dependendo se esse contato for identificado ou não. Para obter mais informações, consulte [Criação de espaços de oferta](../../interaction/using/creating-offer-spaces.md).
+   Por exemplo, é possível vincular um espaço de oferta de ambiente de recipient (contato identificado) com um espaço de oferta que corresponda a um ambiente de visitante (contato não identificado). Dessa forma, as diferentes ofertas serão disponibilizadas para o contato, dependendo se ele for identificado ou não. Para obter mais informações, consulte [Criação de espaços de oferta](../../interaction/using/creating-offer-spaces.md).
 
    ![](assets/offer_env_anonymous_003.png)
 
