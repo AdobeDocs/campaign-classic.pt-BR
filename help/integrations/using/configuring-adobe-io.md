@@ -9,9 +9,9 @@ internal: n
 snippet: y
 exl-id: ab30f697-3022-4a29-bbdb-14ca12ec9c3e
 source-git-commit: bf063ec8f06c3e8e70011a5b5101f17e163a383c
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '701'
-ht-degree: 91%
+ht-degree: 100%
 
 ---
 
@@ -24,17 +24,16 @@ ht-degree: 91%
 >Se você estiver usando uma versão mais antiga da integração de acionadores por meio da autenticação oAuth, **será necessário mudar para o Adobe I/O conforme descrito abaixo**.
 >Observe que, durante a migração para o [!DNL Adobe I/O], alguns acionadores de entrada podem ser perdidos.
 >
->O modo de autenticação oAuth herdado com o Campaign será desativado em **20 de outubro de 2021**. Os ambientes hospedados se beneficiam de uma extensão até **23 de fevereiro de 2022**. Como cliente local ou híbrido, entre em contato com o Atendimento ao cliente do Adobe para estender o suporte até fevereiro de 2022. Você deve [fornecer o AppID do aplicativo OAuth](../../integrations/using/configuring-pipeline.md?lang=en#step-optional) para o Adobe.
+>O modo de autenticação oAuth herdado do Campaign será desativado em **20 de outubro de 2021**. Os ambientes hospedados se beneficiarão de uma extensão até **23 de fevereiro de 2022**. Como cliente no local ou híbrido, entre em contato com o Atendimento ao cliente da Adobe para estender o suporte até fevereiro de 2022. Você deve [fornecer o AppID do aplicativo OAuth](../../integrations/using/configuring-pipeline.md?lang=en#step-optional) para a Adobe.
 
 ## Pré-requisitos {#adobe-io-prerequisites}
 
-Essa integração só se aplica a partir de **Campaign Classic 20.2.4 e superior, versões 19.1.8 e Gold Standard 11**.
+Essa integração se aplica somente a partir das **versões 20.2.4 e posteriores do Campaign Classic, 19.1.8 e Gold Standard 11**.
 
 Antes de iniciar esta implementação, verifique se você tem:
 
 * um **identificador de organização** valido: o identificador de organização do Identity Management System (IMS) é o identificador exclusivo da Adobe Experience Cloud, usado por exemplo para o serviço VisitorID e o IMS Single-Sign On (SSO). [Saiba mais](https://experienceleague.adobe.com/docs/core-services/interface/manage-users-and-products/organizations.html?lang=pt-BR)
-* um **Acesso de desenvolvedor** para sua organização. O administrador do sistema da IMS Org precisa seguir o procedimento **Adicionar desenvolvedores a um único perfil de produto**
-detalhado [nesta página](https://helpx.adobe.com/br/enterprise/admin-guide.html/enterprise/using/manage-developers.ug.html) para fornecer acesso de desenvolvedor ao `Analytics - {tenantID}` Perfil de produto do Adobe Analytics associado aos acionadores.
+* um **Acesso de desenvolvedor** para sua organização. O administrador do sistema da organização IMS precisa seguir o procedimento **Adicionar desenvolvedores a um único perfil de produto** detalhado [nesta página](https://helpx.adobe.com/br/enterprise/admin-guide.html/enterprise/using/manage-developers.ug.html) para fornecer acesso de desenvolvedor ao `Analytics - {tenantID}` Perfil de produto do Adobe Analytics associado aos acionadores.
 
 ## Etapa 1: criar/atualizar projeto do Adobe I/O {#creating-adobe-io-project}
 
