@@ -7,9 +7,9 @@ content-type: reference
 topic-tags: asset-sharing
 exl-id: f3897a40-b080-47e5-9e31-4d861c1bacd5
 source-git-commit: bd9f035db1cbad883e1f27fe901e34dfbc9c1229
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '500'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -35,7 +35,7 @@ Esta seção detalha as etapas de configuração necessárias no Adobe Campaign 
 Para usar a integração entre o Adobe Campaign e o Experience Cloud Assets, você deve ter:
 
 * Uma organização da Adobe Experience Cloud
-* O modo de autenticação do Adobe IMS ativado
+* Ativação do modo de autenticação do Adobe IMS
 
 Para habilitar a conexão entre o Adobe Campaign e a Adobe Experience Cloud, configure a conexão via IMS (serviço de conexão Adobe ID). Essa configuração é detalhada no documento [Conexão pela Adobe ID. ](../../integrations/using/about-adobe-id.md) Ela inclui:
 
@@ -51,7 +51,7 @@ Para habilitar a conexão entre o Adobe Campaign e a Adobe Experience Cloud, con
 
 >[!CAUTION]
 >
->Esse recurso foi desativado, a partir do Adobe Experience Manager 6.4. [Saiba mais](https://experienceleague.adobe.com/docs/experience-manager-64/release-notes/deprecated-removed-features.html?lang=pt-BR#removed-features)
+>Esse recurso foi descontinuado a partir do Adobe Experience Manager 6.4. [Saiba mais](https://experienceleague.adobe.com/docs/experience-manager-64/release-notes/deprecated-removed-features.html?lang=pt-BR#removed-features)
 
 Para integrar o AEM Assets com o Adobe Campaign, você deve primeiro configurar a integração entre o Adobe Experience Manager e o Adobe Campaign. Esta configuração exige principalmente:
 
