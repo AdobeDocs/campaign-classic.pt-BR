@@ -7,9 +7,9 @@ content-type: reference
 topic-tags: technical-workflows
 exl-id: 9aed2665-cd4b-419c-b9f2-ea04fc1d8f01
 source-git-commit: f007dcbf63d7a69a6d532d0be99b0fa90f4f6d7a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1714'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
@@ -19,11 +19,11 @@ ht-degree: 95%
 
 ## Sobre workflows técnicos {#overview}
 
-Os workflows detalhados nesta seção são instalados com os diferentes pacotes integrados do Adobe Campaign. Esses pacotes e os workflows técnicos relacionados dependem do contrato de licença. Os pacotes integrados estão detalhados [nesta seção](../../installation/using/installing-campaign-standard-packages.md).
+Os fluxos de trabalho detalhados nesta seção são instalados com os diferentes pacotes integrados do Adobe Campaign. Esses pacotes e os fluxos de trabalho técnicos relacionados dependem do contrato de licença. Os pacotes integrados estão detalhados [nesta seção](../../installation/using/installing-campaign-standard-packages.md).
 
 Por padrão, os fluxos de trabalho técnicos estão disponíveis em uma subpasta do seguinte nó **[!UICONTROL Administration]** > **[!UICONTROL Production]** > **[!UICONTROL Technical workflows]**.
 
-Observe que os workflows técnicos só podem ser iniciados e modificados por operadores com direito de Administração. Para obter mais informações sobre permissões, consulte esta [seção](../../platform/using/access-management-groups.md#default-groups).
+Observe que os fluxos de trabalho técnicos só podem ser iniciados e modificados por operadores com direito de Administração. Para obter mais informações sobre permissões, consulte esta [seção](../../platform/using/access-management-groups.md#default-groups).
 
 >[!NOTE]
 >
@@ -80,4 +80,4 @@ Para obter mais informações sobre como monitorar workflows técnicos, consulte
 | **Notificação de tarefa** (taskMgt) | Recursos de marketing (MRM)  - somente Campaign v7 | Esse fluxo de trabalho permite enviar mensagens de notificação relacionadas às tarefas em campanhas de marketing. |
 | **Rastreamento** (tracking) | Delivery | Esse workflow realiza a recuperação e a consolidação de informações de rastreamento. Também garante o recálculo de rastreamento e estatísticas de delivery, principalmente aqueles usados pelos workflows de arquivamento do Centro de Mensagens. Por padrão, é acionado uma vez por hora. |
 | **Atualizar status do evento** (updateEventsStatus) | Execução de mensagens transacionais (Centro de Mensagens - Execução) | Esse fluxo de trabalho permite atribuir um status a um evento. Os status do evento são descritos a seguir:<ul><li>Pendente: o evento está em uma fila. Nenhum modelo de mensagem foi associado a ele.</li><li>Delivery pendente: o evento está em uma fila, um modelo de mensagem foi associado a ele e está sendo processado no momento pelo delivery.</li><li>Enviado: esse status é copiado dos logs do delivery. Significa que o delivery foi enviado.</li><li>Ignorado pelo delivery: esse status é copiado dos logs do delivery. Significa que o delivery foi ignorado.</li><li>Erro de delivery: esse status é copiado dos logs do delivery. Significa que o delivery falhou.</li><li>Evento não coberto: o evento falhou ao ser associado a um modelo de mensagem. O evento não será reprocessado.</li></ul> |
-| **Atualização para delivery** (deliverabilityUpdate) | Delivery | Quando o pacote Deliverability monitoring (Email Deliverability) estiver instalado, esse workflow será executado à noite e gerenciará as regras de qualificação de emails de devolução, bem como a lista de domínios e MXs. Isso requer que a porta HTTPS esteja aberta na plataforma. |
+| **Atualização para delivery** (deliverabilityUpdate) | Delivery | Depois que o pacote de monitoramento de capacidade de entrega (capacidade de entrega por email) é instalado, esse fluxo de trabalho é executado durante à noite e gerencia as regras de qualificação de emails rejeitados, bem como a lista de domínios e MXs. Isso requer que a porta HTTPS esteja aberta na plataforma. |
