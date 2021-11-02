@@ -7,9 +7,9 @@ content-type: reference
 topic-tags: starting-with-adobe-campaign
 exl-id: c7688c2a-f0a7-4c51-a4cf-bf96fe8bf9b6
 source-git-commit: 4661a65c83f3b9b7da9ea902f387155c5933e59f
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2413'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -384,7 +384,7 @@ A configuração e utilização dos pedidos de acesso e exclusão são comuns. a
 
 Além das ferramentas de [Gestão do consentimento](../../platform/using/privacy-management.md#consent-management) oferecidas pelo Adobe Campaign, você tem a possibilidade de monitorar a opção do cliente pela recusa da venda de informações pessoais.
 
-Os contatos podem decidir, por meio de seu sistema, que eles não permitem que suas informações pessoais sejam vendidas a terceiros. No Adobe Campaign é possível armazenar e rastrear essas informações.
+Os contatos podem decidir, por meio de seu sistema, que não permitem que suas informações pessoais sejam vendidas a terceiros. No Adobe Campaign é possível armazenar e rastrear essas informações.
 
 Para isso, é necessário estender a tabela Perfis e adicionar um campo **[!UICONTROL Opt-Out for CCPA]**.
 
