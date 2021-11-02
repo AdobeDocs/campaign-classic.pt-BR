@@ -7,9 +7,9 @@ content-type: reference
 topic-tags: tracking-messages
 exl-id: ed88e1d6-c0d5-4a85-9f3e-be670f4bcc10
 source-git-commit: bd9f035db1cbad883e1f27fe901e34dfbc9c1229
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '582'
-ht-degree: 94%
+ht-degree: 100%
 
 ---
 
@@ -49,7 +49,7 @@ O rastreamento de mensagens é habilitado por padrão. Para personalizar como UR
 
    >[!IMPORTANT]
    >
-   >Quando o URL do link é usado como um rótulo, é recomendável desativar o rastreamento para evitar riscos de rejeição devido ao phishing.
+   >Quando o URL do link é usado como um rótulo, é recomendado desativar o rastreamento para evitar riscos de rejeição devido ao phishing.
    >
    >Por exemplo, se o URL www.adobe.com é inserido na mensagem e o rastreamento está ativado, o conteúdo do link de hipertexto será modificado para https://nlt.adobe.net/r/?id=xxxxxx. Isso significa que ele pode ser considerado como fraudulento por clientes de mensagens destinatárias.
 
@@ -66,7 +66,7 @@ O rastreamento de mensagens é habilitado por padrão. Para personalizar como UR
    Para cada URL individual, é possível definir o modo de rastreamento para um destes valores:
 
    * **[!UICONTROL Enabled]**: ativa o rastreamento nesse URL.
-   * **[!UICONTROL Not tracked]** : O desativa o rastreamento nesse URL.
+   * **[!UICONTROL Not tracked]**: desativa o rastreamento nesse URL.
    * **[!UICONTROL Always enabled]**: sempre ativa o rastreamento desse URL. Essas informações são salvas para que na próxima vez, se o URL aparecer novamente em um conteúdo de mensagem futura, o rastreamento será ativado automaticamente.
    * **[!UICONTROL Never tracked]**: nunca ativa o rastreamento desse URL. Essas informações são salvas para que na próxima vez, se o URL aparecer novamente em um uma mensagem futura, o rastreamento será desativado automaticamente.
    * **[!UICONTROL Opt-out]**: considera esse URL como recusa ou cancelamento de subscrição.
