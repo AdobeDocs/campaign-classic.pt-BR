@@ -7,9 +7,9 @@ content-type: reference
 topic-tags: use-cases
 exl-id: b699b064-1287-41c9-8d94-1c1aa2c145ab
 source-git-commit: bd9f035db1cbad883e1f27fe901e34dfbc9c1229
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1241'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -149,7 +149,7 @@ Para criar este exemplo, aplique as seguintes etapas:
 
 A transição de saída contém recipients que não abriram um e-mail nos últimos 7 dias.
 
-Se, caso contrário, quiser filtrar os recipients que abriram pelo menos um e-mail a sua query deverá ser com mostrado a seguir. Observe que, nesse caso, **[!UICONTROL Filtering dimension]** deve ser definido como **[!UICONTROL Tracking logs (Recipients)]**.
+Se, caso contrário, quiser filtrar os recipients que abriram pelo menos um e-mail a sua query deverá ser com mostrado a seguir. Observe que, nesse caso, o **[!UICONTROL Filtering dimension]** deve ser definido como **[!UICONTROL Tracking logs (Recipients)]**.
 
 ![](assets/query_open_5.png)
 
@@ -179,7 +179,7 @@ O exemplo a seguir mostra como selecionar perfis que abriram uma delivery nas ú
 
    ![](assets/s_advuser_query_sample1.6.png)
 
-## Filtro do comportamento dos recipients após um delivery {#filtering-recipients--behavior-folllowing-a-delivery}
+## Filtragem do comportamento de recipients após um delivery {#filtering-recipients--behavior-folllowing-a-delivery}
 
 Em um workflow, as caixas **[!UICONTROL Query]** e **[!UICONTROL Split]** permitem selecionar um comportamento após um delivery. Essa seleção é realizada por meio do filtro **[!UICONTROL Delivery recipient]**.
 
