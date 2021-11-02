@@ -7,9 +7,9 @@ content-type: reference
 topic-tags: acs-connector
 exl-id: 975bdc94-5da4-45ae-a3bd-e8674b447098
 source-git-commit: 8b970705f0da6a9e09de9fadb3e1a8c5f4814f9f
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '794'
-ht-degree: 92%
+ht-degree: 100%
 
 ---
 
@@ -54,7 +54,7 @@ No Campaign v7, os seguintes objetos foram criados:
 
    ![](assets/acs_connect_lp_5.png)
 
-1. Acesse **[!UICONTROL Profiles and Targets > Recipient]** e selecione um recipient. Você pode ver que esse perfil ainda não assinou o serviço.
+1. Acesse **[!UICONTROL Profiles and Targets > Recipient]** e selecione um recipient. É possível ver que esse perfil ainda não assinou o serviço.
 
    ![](assets/acs_connect_lp_6.png)
 
@@ -70,7 +70,7 @@ Para verificar se os dados foram replicados corretamente, siga essas etapas no C
 
    ![](assets/acs_connect_lp_7.png)
 
-1. Procure o recipient no Campaign v7 e verifique se esse recipient aparece no Campaign Standard.
+1. Pesquise pelo recipient do Campaign v7 e verifique se ele aparece no Campaign Standard.
 
    ![](assets/acs_connect_lp_8.png)
 
@@ -118,7 +118,7 @@ Quando o recipient atualiza seus dados pela aplicação Web, o Adobe Campaign v7
 
    ![](assets/acs_connect_lp_17.png)
 
-1. Na guia **[!UICONTROL Subscriptions]**, também podemos ver que este recipient assinou o serviço de boletim informativo.
+1. Na guia **[!UICONTROL Subscriptions]**, também podemos ver que ele assinou o serviço de boletim informativo.
 
    ![](assets/acs_connect_lp_18.png)
 
