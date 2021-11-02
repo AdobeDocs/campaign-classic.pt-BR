@@ -7,9 +7,9 @@ content-type: reference
 topic-tags: acs-connector
 exl-id: 689b6117-5143-4f85-8582-2c74cae72ca2
 source-git-commit: f007dcbf63d7a69a6d532d0be99b0fa90f4f6d7a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1988'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -44,7 +44,7 @@ Este documento apresenta os recursos do ACS Connector. As seções abaixo fornec
 
 >[!NOTE]
 >
->O ACS Connector é incluído com o Campaign v7 sob o contrato de licença. Para usar o ACS Connector, verifique se você pode alternar entre o Campaign v7 e o Campaign Standard. Se você não tiver certeza da sua versão e seus recursos incluídos, entre em contato com o administrador.
+>O ACS Connector está incluído com o Campaign v7 sob o contrato de licença. Para usar o ACS Connector, verifique se você pode alternar entre o Campaign v7 e o Campaign Standard. Se você não tiver certeza da sua versão e seus recursos incluídos, entre em contato com o administrador.
 
 ## Processo {#process}
 
