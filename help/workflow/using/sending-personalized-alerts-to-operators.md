@@ -7,9 +7,9 @@ content-type: reference
 topic-tags: use-cases
 exl-id: 21c97eb3-60cd-4d19-bc0f-5ba9ec17e70a
 source-git-commit: bd9f035db1cbad883e1f27fe901e34dfbc9c1229
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '343'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -55,7 +55,7 @@ Verifique se o código Javascript corresponde às suas informações de workflow
 
 Para recuperar essas informações, siga as etapas abaixo:
 
-1. Clique com o botão direito do mouse na transição de saída da atividade **[!UICONTROL Query]** e selecione **[!UICONTROL Display the target]**.
+1. Clique com o botão direito do mouse na transição de saída da atividade de **[!UICONTROL Query]** e selecione **[!UICONTROL Display the target]**.
 
    ![](assets/uc_operator_4.png)
 
