@@ -7,9 +7,9 @@ role: User, Data Architect
 level: Beginner
 exl-id: 54f1ad6c-54b0-4448-8c38-806dd75c1dae
 source-git-commit: ed43a632a962747c9402ff8d5f0ce442c2cc6490
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '836'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -93,7 +93,7 @@ Os perfis ativos são aqueles que são contados para fins de faturamento.
 
 A cobrança só afeta perfis que estão **ativos**. Um perfil é considerado ativo quando ele é visado ou recebe comunicação nos últimos 12 meses por meio de qualquer canal.
 
-Um perfil que foi direcionado por vários deliveries é contado apenas uma vez.
+Um perfil que se tornou alvo de vários deliveries é contado apenas uma vez.
 
 >[!NOTE]
 >
