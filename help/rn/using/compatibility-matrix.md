@@ -7,9 +7,9 @@ role: User
 level: Beginner
 exl-id: b8c1f287-06f4-4c34-8cca-b0c7676abbc2
 source-git-commit: 235e8abcaed2659d745ebfeca24dc2f0278a6e5a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '600'
-ht-degree: 79%
+ht-degree: 100%
 
 ---
 
@@ -119,7 +119,7 @@ Para saber mais sobre itens obsoletos, visite [esta página](../../rn/using/depr
 </tbody>
 </table>
 
-## RDBMS (Relation Database Management Systems){#RDBMSservers}
+## Sistema de gerenciamento de banco de dados relacional (RDBMS){#RDBMSservers}
 
 <table>
 <tbody>
@@ -153,7 +153,7 @@ Para saber mais sobre itens obsoletos, visite [esta página](../../rn/using/depr
 <p>2016</p>
 <p>2014</p>
 <p>2012 - SP1 e SP2</p>
-<p><strong>Importante:</strong> o Microsoft SQL Server não é compatível como o banco de dados principal quando o servidor do Campaign está em execução no Linux. [Saiba mais](../../installation/using/prerequisites-of-campaign-installation-in-linux.md#database-access-layers).</p>
+<p><strong>Importante:</strong> o Microsoft SQL Server não é compatível como banco de dados principal quando o servidor do Campaign está em execução no Linux. [Saiba mais](../../installation/using/prerequisites-of-campaign-installation-in-linux.md#database-access-layers).</p>
 </td>
 </tr>
 </tbody>
@@ -161,14 +161,14 @@ Para saber mais sobre itens obsoletos, visite [esta página](../../rn/using/depr
 
 >[!NOTE]
 >
->* O driver RDBMS deve corresponder à versão do servidor RDBMS.
+>* O driver RDBMS deve ser igual à versão do servidor RDBMS.
 >
 >* O PostgreSQL é o RDBMS para ambientes hospedados.
 
 
 ## Conectores CRM{#CRMconnectors}
 
-Os sistemas de gerenciamento de relacionamento com o cliente (CRM) compatíveis com a Adobe Campaign estão listados abaixo. [Saiba ](../../platform/using/crm-connectors.md) mais sobre conectores do Campaign CRM.
+Os sistemas de gerenciamento de relacionamento com o cliente (CRM) compatíveis com o Adobe Campaign estão listados abaixo. [Saiba mais](../../platform/using/crm-connectors.md) sobre conectores CRM do Campaign.
 
 <table>
 <tbody>
@@ -289,7 +289,7 @@ Os bancos de dados externos compatíveis com o [módulo Federated Data Access](.
 
 ## Console do cliente {#ClientConsoleoperatingsystems}
 
-Os seguintes sistemas operacionais e navegadores são **necessários** para usar [Console do Cliente do Campaign](../../installation/using/installing-the-client-console.md).
+Os sistemas operacionais e navegadores a seguir são **necessários** para usar o [Console do cliente do Campaign](../../installation/using/installing-the-client-console.md).
 
 ### Sistemas operacionais
 
@@ -321,7 +321,7 @@ Os seguintes sistemas operacionais e navegadores são **necessários** para usar
 <p>Microsoft Internet Explorer</p>
 </td>
 <td>
-<p>11º</p>
+<p>11</p>
 </td>
 </tr>
 </tbody>
@@ -353,7 +353,7 @@ Você pode usar o Campaign para [enviar notificações por push](../../delivery/
 
 ## Navegadores{#Browsers}
 
-Os seguintes navegadores são compatíveis com o Campaign para [Web Access](../../campaign/using/accessing-marketing-campaigns.md#using-the-web-interface-).
+Os seguintes navegadores são compatíveis com o Campaign, para [Acesso via web](../../campaign/using/accessing-marketing-campaigns.md#using-the-web-interface-).
 
 <table>
 <tbody>
@@ -394,7 +394,7 @@ Os seguintes navegadores são compatíveis com o Campaign para [Web Access](../.
 <p>Microsoft Internet Explorer</p>
 </td>
 <td>
-<p>11º</p>
+<p>11</p>
 </td>
 </tr>
 </tbody>
