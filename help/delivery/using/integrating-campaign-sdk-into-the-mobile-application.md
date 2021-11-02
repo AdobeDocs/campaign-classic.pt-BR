@@ -8,9 +8,9 @@ topic-tags: sending-push-notifications
 version: Classic v7
 exl-id: a5f6b82d-5561-4e56-b2ed-7fd6fd8c2b55
 source-git-commit: bd9f035db1cbad883e1f27fe901e34dfbc9c1229
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '954'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
@@ -348,7 +348,7 @@ O protótipo **registerDeviceStatus** é:
 - (void) registerDeviceStatus: (ACCRegisterDeviceStatus) status:(NSString *) errorReason;
 ```
 
-**** Status permite saber se um registro foi bem-sucedido ou se ocorreu um erro.
+O **Status** permite saber se um registro foi bem-sucedido ou se ocorreu um erro.
 
 **ErrorReason** fornece mais informações sobre os erros que ocorreram. Para obter mais informações sobre erros disponíveis e suas descrições, consulte a tabela abaixo.
 
