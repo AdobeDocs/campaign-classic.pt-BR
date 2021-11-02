@@ -7,9 +7,9 @@ content-type: reference
 topic-tags: use-cases
 exl-id: d589180b-8e1d-4149-9b16-3f541018a41f
 source-git-commit: bd9f035db1cbad883e1f27fe901e34dfbc9c1229
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2016'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -21,7 +21,7 @@ Esta seção apresenta informações sobre como monitorar a execução de workfl
 
 Também está disponível [nesta sessão](supervising-workflows.md#supervising-workflows), um caso de uso que detalha a criação de workflows que permite monitorar o status de um conjunto de workflows &quot;pausados&quot;, &quot;interrompidos&quot; ou &quot;com erros&quot;.
 
-Além disso, os administradores da instância podem usar a **Trilha de auditoria** para verificar as atividades e as últimas modificações feitas nos workflows, o estado dos workflows. Para obter mais informações, consulte o [Manual de produção do Campaign Classic v7](../../production/using/audit-trail.md).
+Além disso, os administradores da instância podem usar a **Trilha de auditoria** para verificar as atividades, as últimas modificações feitas e o status dos fluxos de trabalho. Para obter mais informações, consulte o [Manual de produção do Campaign Classic v7](../../production/using/audit-trail.md).
 
 Outras maneiras de monitorar os diferentes processos do Campaign são apresentadas no [Manual de produção do Campaign Classic v7](../../production/using/monitoring-guidelines.md).
 
@@ -244,9 +244,9 @@ Você também pode criar workflows técnicos específicos para limpar o consumo 
 
 Por padrão, se um workflow estiver pausado, suas tabelas de trabalho nunca serão apagadas. A partir do build 8880, os workflows pausados por muito tempo são interrompidos automaticamente e suas tabelas de trabalho são removidas. Esse comportamento é acionado da seguinte maneira:
 
-* Os workflows pausados por mais de 7 dias aparecem como um aviso no painel de monitoramento (e na API de monitoramento) e uma notificação é enviada ao grupo supervisor.
-* O mesmo acontece toda semana, quando o workflow técnico **[!UICONTROL cleanupPausedWorkflows]** é acionado. Para obter mais informações sobre workflow, consulte [esta seção](delivery.md).
-* Após 4 notificações (ou seja, um mês no estado pausado por padrão), o workflow é interrompido incondicionalmente. Um log aparece no workflow após sua interrupção. As tabelas são removidas na próxima execução **[!UICONTROL cleanup]** do workflow
+* Os fluxos de trabalho pausados por mais de sete dias aparecem como um aviso no painel de monitoramento (e na API de monitoramento) e uma notificação é enviada ao grupo supervisor.
+* O mesmo acontece toda semana, quando o workflow técnico **[!UICONTROL cleanupPausedWorkflows]** é acionado. Para obter mais informações sobre o fluxo de trabalho, consulte [esta seção](delivery.md).
+* Após quatro notificações (ou seja, um mês no estado pausado por padrão), o fluxo de trabalho é interrompido incondicionalmente. Um log aparece no fluxo de trabalho após sua interrupção. As tabelas são removidas na próxima execução **[!UICONTROL cleanup]** do workflow
 
 Esses períodos podem ser configurados por meio da opção NmsServer_PausedWorkflowPeriod.
 
