@@ -7,7 +7,7 @@ role: User
 level: Beginner
 exl-id: b8c1f287-06f4-4c34-8cca-b0c7676abbc2
 source-git-commit: 235e8abcaed2659d745ebfeca24dc2f0278a6e5a
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '600'
 ht-degree: 100%
 
@@ -321,7 +321,7 @@ Os sistemas operacionais e navegadores a seguir são **necessários** para usar 
 <p>Microsoft Internet Explorer</p>
 </td>
 <td>
-<p>11</p>
+<p>11º</p>
 </td>
 </tr>
 </tbody>
@@ -394,7 +394,7 @@ Os seguintes navegadores são compatíveis com o Campaign, para [Acesso via web]
 <p>Microsoft Internet Explorer</p>
 </td>
 <td>
-<p>11</p>
+<p>11º</p>
 </td>
 </tr>
 </tbody>

@@ -9,7 +9,7 @@ exl-id: fcaab1aa-c8f9-4606-b0d8-eb481a38f588
 source-git-commit: 6d53ba957fb567a9a921544418a73a9bde37c97b
 workflow-type: tm+mt
 source-wordcount: '3007'
-ht-degree: 90%
+ht-degree: 91%
 
 ---
 
@@ -40,7 +40,7 @@ _31 de março de 2021_
 * Correção de um problema que fazia com que workflows em execução fossem interrompidos pela reinicialização diária do wfserver. (NEO-30047)
 * Correção de um problema de segurança usando chamadas de API feitas por usuários não administradores ao tentar sincronizar modelos do Adobe Experience Manager. (NEO-32389, NEO-23487)
 * Correção de um problema que resultava em falha do console ao fechar uma caixa de diálogo de delivery em um delivery criado com de um template. (NEO-31547)
-* Correção de um problema que ocorria ao criar e salvar um delivery dentro da guia **Targeting &amp; Workflow** de uma campanha: a pré-visualização falharia com o seguinte erro. (NEO29440)
+* Correção de um problema que ocorria ao criar e salvar um delivery no **Direcionamento e fluxo de trabalho** de uma campanha: a pré-visualização falharia com o seguinte erro. (NEO29440)
 * Correção de um problema em que o Tomcat 8.5 enviava respostas inválidas que causavam erros nos logs de mensagens transacionais. (NEO-30858)
 * Correção de um problema de regressão que causava corrupção da memória no gerenciamento de encadeamento externo e afetava o desempenho.
 * Correção de um problema que poderia causar falha no workflow Faturamento ao usar um target mapping personalizado. A chave primária do esquema personalizado é armazenada na coluna &quot;sourceId&quot; que permitia apenas valores inteiros. Agora permite números inteiros e valores de sequências. (NEO-25914, NEO-28146)
@@ -65,7 +65,7 @@ _22 de dezembro de 2020_
 >
 > * Esta versão é fornecida com um novo protocolo de conexão: se você estiver se conectando ao Campaign pelo Serviço de identidade da Adobe (IMS), a atualização será obrigatória para o servidor do Campaign e o console do cliente poderem se conectar ao Campaign após **30 de junho de 2021**.  [Saiba mais](../../technotes/using/ims-updates.md)
 > * Esta versão vem com uma [correção de segurança](https://helpx.adobe.com/br/security/products/campaign/apsb21-04.html): a atualização é obrigatória para reforçar a segurança do ambiente.
-> * Se você estiver usando a integração dos acionadores da Experience Cloud por meio da autenticação oAuth, será necessário migrar para o Adobe I/O conforme descrito [nesta página](../../integrations/using/configuring-adobe-io.md). O modo de autenticação oAuth herdado com o Campaign [foi removido](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-discussions/adobe-analytics-legacy-api-end-of-life-notice/td-p/385411) em **setembro de 2021**. Os ambientes hospedados se beneficiam de uma extensão até **23 de fevereiro de 2022**. Como cliente local ou híbrido, entre em contato com o Atendimento ao cliente do Adobe para estender o suporte até fevereiro de 2022. Você deve fornecer [o AppID do aplicativo OAuth](../../integrations/using/configuring-pipeline.md?lang=en#step-optional) para a Adobe.
+> * Se você estiver usando a integração dos acionadores da Experience Cloud por meio da autenticação oAuth, será necessário migrar para o Adobe I/O conforme descrito [nesta página](../../integrations/using/configuring-adobe-io.md). Modo de autenticação oAuth herdado com o Campaign [foi aposentado](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-discussions/adobe-analytics-legacy-api-end-of-life-notice/td-p/385411) on **Setembro de 2021**. Os ambientes hospedados se beneficiarão de uma extensão até **23 de fevereiro de 2022**. Como cliente no local ou híbrido, entre em contato com o Atendimento ao cliente da Adobe para estender o suporte até fevereiro de 2022. Você deve fornecer [o AppID do aplicativo OAuth](../../integrations/using/configuring-pipeline.md?lang=en#step-optional) para a Adobe.
 
 
 **Aprimoramentos**
@@ -115,7 +115,7 @@ _11 de setembro de 2020_
 
 
 
-* Correção de uma regressão no gerenciamento de modelos HTML que resultava na visibilidade de URLs de rastreamento devido a uma interpretação incorreta de guias. (NEO-25909)
+* Correção de uma regressão no gerenciamento de template de HTML que resultava na visibilidade de URLs de rastreamento devido a uma interpretação incorreta de guias. (NEO-25909)
 
 
 

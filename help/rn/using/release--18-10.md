@@ -58,7 +58,7 @@ ht-degree: 97%
 
 >[!CAUTION]
 >
->Esta configuração foi retomada. [atualize para a build mais recente](../../production/using/build-upgrade.md) ou entre em contato com [Atendimento ao Cliente do Adobe](https://helpx.adobe.com/br/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html).
+>Esta configuração foi retomada. Por favor [atualizar para a build mais recente](../../production/using/build-upgrade.md)  ou contato [Atendimento ao cliente do Adobe](https://helpx.adobe.com/br/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html).
 
 **Aprimoramentos**
 
@@ -82,7 +82,7 @@ ht-degree: 97%
 
 >[!CAUTION]
 >
->Esta configuração foi retomada. [atualize para a build mais recente](../../production/using/build-upgrade.md) ou entre em contato com [Atendimento ao Cliente do Adobe](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html).
+>Esta configuração foi retomada. Por favor [atualizar para a build mais recente](../../production/using/build-upgrade.md) ou contato [Atendimento ao cliente do Adobe](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html).
 
 **Aprimoramentos**
 
@@ -104,7 +104,7 @@ ht-degree: 97%
 
 >[!CAUTION]
 >
->Esta configuração foi retomada. [atualize para a build mais recente](../../production/using/build-upgrade.md) ou entre em contato com [Atendimento ao Cliente do Adobe](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html).
+>Esta configuração foi retomada. Por favor [atualizar para a build mais recente](../../production/using/build-upgrade.md) ou contato [Atendimento ao cliente do Adobe](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html).
 
 **Novidades**
 
@@ -140,7 +140,7 @@ ht-degree: 97%
 
 * Correção de um problema de segurança que poderia resultar em vulnerabilidades para ataques Server Side Request Forgery (SSRF) attacks and denial of service (DoS). (NEO-11453)
 * O conteúdo (redirecionamento de rastreamento, mirror pages, pesquisas etc.) agora será distribuído pelo Campaign com o cabeçalho X-Robots-Tag: nocache. Isso impede o indexação deste conteúdo por mecanismos de pesquisa da Internet. (NEO-11101)
-* Correção de um problema de injeção de XTK na API de assinatura (nms:subscription:Unsubscribe e nms:subscription:Subscribe).
+* Correção de um problema de injeção de XTK na API de assinatura (nms):subscription:Cancelar inscrição e nms:subscription:Assinar).
 * Correção de um problema de injeção de XTK em unsubscription da aplicação Web.
 * Senhas removidas que foram exibidas sem segurança em alguns logs SMS.
 
