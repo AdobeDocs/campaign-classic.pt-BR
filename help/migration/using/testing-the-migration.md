@@ -6,9 +6,9 @@ audience: migration
 content-type: reference
 topic-tags: migration-procedure
 exl-id: 228ee9e4-46a0-4d82-b8ba-b019bc0e7cac
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: 9ba2199eabf91381e87661f30c9af8aa0ce4cc26
 workflow-type: tm+mt
-source-wordcount: '701'
+source-wordcount: '729'
 ht-degree: 1%
 
 ---
@@ -27,7 +27,7 @@ Você deve ter um ambiente de teste/desenvolvimento para realizar testes de migr
 1. Faça um backup do banco de dados do ambiente de desenvolvimento.
 1. Pare todos os processos do Adobe Campaign na instância de desenvolvimento.
 1. Faça um backup do banco de dados do ambiente de produção e o restaure como um ambiente de desenvolvimento.
-1. Antes de iniciar os serviços do Adobe Campaign, execute o script de cauterização **freezeInstance.js** que permite limpar o banco de dados de quaisquer objetos que estavam sendo executados quando o backup foi iniciado.
+1. Antes de iniciar os serviços da Adobe Campaign, execute o **freezeInstance.js** script de cauterização que permite limpar o banco de dados de quaisquer objetos que estavam sendo executados quando o backup foi iniciado.
 
    ```
    nlserver javascript nms:freezeInstance.js -instance:<instance> -arg:<run|dry>
@@ -35,12 +35,12 @@ Você deve ter um ambiente de teste/desenvolvimento para realizar testes de migr
 
    >[!NOTE]
    >
-   >O comando é iniciado por padrão no modo **dry** e lista todas as solicitações que foram executadas por esse comando, sem iniciá-las. Para executar solicitações de cauterização, use **executar** no comando.
+   >O comando é iniciado por padrão em **seco** e lista todas as solicitações que foram executadas por esse comando, sem iniciá-las. Para executar solicitações de cauterização, use **executar** no comando.
 
 1. Certifique-se de que os backups estejam corretos tentando restaurá-los. Certifique-se de acessar o banco de dados, as tabelas, os dados etc.
 1. Teste o procedimento de migração no ambiente de desenvolvimento.
 
-   Os procedimentos completos estão detalhados na seção [Pré-requisitos para migração para o Adobe Campaign 7](../../migration/using/prerequisites-for-migration-to-adobe-campaign-7.md).
+   Os procedimentos completos estão detalhados na seção [Pré-requisitos da migração para o Adobe Campaign 7](../../migration/using/prerequisites-for-migration-to-adobe-campaign-7.md) seção.
 
 1. Se a migração do ambiente de desenvolvimento for bem-sucedida, você poderá migrar o ambiente de produção.
 
@@ -50,13 +50,13 @@ Você deve ter um ambiente de teste/desenvolvimento para realizar testes de migr
 
 >[!NOTE]
 >
->O comando Adobe Campaign update (**postupgrade**) permite sincronizar recursos e atualizar schemas e o banco de dados. Essa operação só pode ser executada uma vez e somente no servidor de aplicativos. Após sincronizar os recursos, o comando **postupgrade** permite detectar se a sincronização gera erros ou avisos.
+>O comando de atualização do Adobe Campaign (**pós-atualização**) permite sincronizar recursos e atualizar schemas e o banco de dados. Essa operação só pode ser executada uma vez e somente no servidor de aplicativos. Depois de sincronizar os recursos, a variável **pós-atualização** permite detectar se a sincronização gera erros ou avisos.
 
 ## Ferramentas de migração {#migration-tools}
 
 Várias opções permitem medir o impacto de uma migração e identificar os possíveis problemas. Essas opções devem ser executadas:
 
-* no comando **config**:
+* no **configuração** comando:
 
    ```
    nlserver.exe config <option> -instance:<instanceName>
@@ -70,11 +70,11 @@ Várias opções permitem medir o impacto de uma migração e identificar os pos
 
 >[!NOTE]
 >
->Você deve usar a opção **-instance:`<instanceame>`**. Não recomendamos usar a opção **-allinStatus**.
+>Você deve usar o **-instance:`<instanceame>`** opção. Não recomendamos usar o **-allinâncias** opção.
 
 ### -showCustomEntities e -showDeletedEntities opções {#showcustomentities-and--showdeletedentities-options}
 
-* A opção **-showCustomEntities** exibe a lista de todos os objetos não padrão:
+* O **-showCustomEntities** exibe a lista de todos os objetos não padrão:
 
    ```
    nlserver.exe config -showCustomEntities -instance:<instanceName>
@@ -86,7 +86,7 @@ Várias opções permitem medir o impacto de uma migração e identificar os pos
    xtk_migration:opsecurity2 xtk:entity
    ```
 
-* A opção **-showDeletedEntities** exibe a lista de todos os objetos padrão que estão ausentes no banco de dados ou no sistema de arquivos. Para cada objeto ausente, o caminho é especificado.
+* O **-showDeletedEntities** exibe a lista de todos os objetos padrão que estão ausentes no banco de dados ou no sistema de arquivos. Para cada objeto ausente, o caminho é especificado.
 
    ```
    nlserver.exe config -showDeletedEntities -instance:<instanceName>
@@ -140,13 +140,13 @@ As seguintes expressões são pesquisadas (diferencia maiúsculas de minúsculas
    <td> logon(<br /> </td> 
    <td> PU-0003<br /> </td> 
    <td> Aviso<br /> </td> 
-   <td> Este método de conexão não deve mais ser usado. Consulte <a href="../../migration/using/general-configurations.md#identified-web-applications" target="_blank">Aplicações Web identificadas</a>.<br /> </td> 
+   <td> Este método de conexão não deve mais ser usado. Consulte <a href="../../migration/using/general-configurations.md#identified-web-applications" target="_blank">Aplicações web identificadas</a>.<br /> </td> 
   </tr> 
   <tr> 
    <td> novo SoapMethodCall(<br /> </td> 
    <td> PU-0004<br /> </td> 
    <td> Aviso<br /> </td> 
-   <td> Essa função só é suportada quando usada no código JavaScript executado de uma zona de segurança que esteja no modo <strong>sessionTokenOnly</strong>.<br /> </td> 
+   <td> Essa função só é compatível quando usada no código JavaScript executado de uma zona de segurança que esteja em <strong>sessionTokenOnly</strong> modo.<br /> </td> 
   </tr> 
   <tr> 
    <td> sql=<br /> </td> 
@@ -164,7 +164,9 @@ As seguintes expressões são pesquisadas (diferencia maiúsculas de minúsculas
    <td> crmDeploymentType="onpremise"<br /> </td> 
    <td> PU-0007<br /> </td> 
    <td> Erro<br /> </td> 
-   <td> Esse tipo de implantação não é mais compatível. O Office 365 e o tipo de implantação do conector do Microsoft CRM no local agora foram descontinuados</a>. Para alterar para a implantação da API da Web, consulte <a href="../../platform/using/crm-ms-dynamics.md#configure-acc-for-microsoft" target="_blank">Aplicações Web</a>.<br /> </td>
+   <td> Esse tipo de implantação não é mais compatível. O Office 365 e o tipo de implantação do conector do Microsoft CRM no local foram descontinuados. 
+   </br>Se estiver usando um desses tipos de implantação obsoletos em uma conta externa, essa conta externa deverá ser excluída e você deverá executar a variável <b>pós-atualização</b> comando. 
+   </br>Para alterar para implantação da API da Web, consulte <a href="../../platform/using/crm-ms-dynamics.md#configure-acc-for-microsoft" target="_blank">Aplicações web</a>.<br /> </td>
   </tr> 
  </tbody> 
 </table>

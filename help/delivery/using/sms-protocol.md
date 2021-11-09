@@ -6,10 +6,10 @@ audience: delivery
 content-type: reference
 topic-tags: configuring-channels
 exl-id: fded088a-11a2-4b87-a368-7b197334aca4
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
-workflow-type: ht
-source-wordcount: '8433'
-ht-degree: 100%
+source-git-commit: 4d789ad0138f65134d3c1592ef5d5517d39fc0f7
+workflow-type: tm+mt
+source-wordcount: '8460'
+ht-degree: 99%
 
 ---
 
@@ -230,6 +230,10 @@ Os 60 segundos padrão devem corresponder à maioria das configurações definid
 Essa PDU reconhece que a conexão está ativa.
 
 ### SMS multiparte (SMS longo) {#multipart}
+
+>[!IMPORTANT]
+>
+> O Adobe Campaign só oferece suporte a SMS multipart ou a SMS long para envio. UDH e `message_payload` não são compatíveis com o SMS de entrada (MO), o que significa que o MO é limitado a 160 caracteres.
 
 O SMS multiparte, ou SMS longo, consiste em um SMS enviado em várias partes. Devido a limitações técnicas no protocolo de rede móvel, um SMS não pode ter mais de 140 bytes. Caso contrário, precisará ser dividido. Consulte a seção [codificação de texto SMS](sms-protocol.md#sms-text-encoding) para saber mais sobre o número de caracteres que um SMS pode conter.
 
@@ -855,7 +859,7 @@ Verifique se `BIND_* PDUs` foram enviados corretamente. O item mais importante a
 
 Verifique se não há muitos `BIND_* PDU`s. Se houver muitos deles, isso poderá indicar que a conexão é instável. Consulte a seção [Problemas com conexões instáveis](sms-protocol.md#issues-unstable-connection) para obter mais informações.
 
-#### ENQUIRE_LINK {#enquire-link-pdus}
+#### INQUIRE_LINK {#enquire-link-pdus}
 
 Verifique se os `ENQUIRE_LINK PDU`s são trocados regularmente quando a conexão está ociosa.
 

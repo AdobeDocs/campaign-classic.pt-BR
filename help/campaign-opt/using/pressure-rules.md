@@ -6,8 +6,8 @@ audience: campaign
 content-type: reference
 topic-tags: campaign-optimization
 exl-id: c23212f2-fdf8-4820-b389-546f7c84db27
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
-workflow-type: ht
+source-git-commit: 5806690f764d2e5dfb5651597ff68b33bb399b44
+workflow-type: tm+mt
 source-wordcount: '3253'
 ht-degree: 100%
 
@@ -15,7 +15,7 @@ ht-degree: 100%
 
 # Regras de pressão{#pressure-rules}
 
-![](../../assets/v7-only.svg)
+![](../../assets/common.svg)
 
 ## Sobre fadiga de marketing {#about-marketing-fatigue}
 
@@ -159,7 +159,7 @@ Por exemplo, uma regra de pressão que define um limite de 2 mensagens por seman
 >  ou
 >
 >* Digite **7d** no campo **[!UICONTROL Period considered]** E verifique a **[!UICONTROL Take the deliveries into account in the provisional calendar]**\
->: são considerados no cálculo os deliveries realizados até 7 dias antes da data de delivery e os programados até 7 dias após a data de delivery.
+   >: são considerados no cálculo os deliveries realizados até 7 dias antes da data de delivery e os programados até 7 dias após a data de delivery.
 >
 >A data de início do período depende de como o banco de dados está configurado.
 
