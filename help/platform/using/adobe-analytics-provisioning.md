@@ -8,9 +8,9 @@ role: User, Admin
 level: Beginner
 exl-id: 24e002aa-4e86-406b-92c7-74f242ee4b86
 source-git-commit: 671e29425e8962ced833c10303b6edce7afda462
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '547'
-ht-degree: 84%
+ht-degree: 100%
 
 ---
 
@@ -22,13 +22,13 @@ ht-degree: 84%
 >
 > Essas etapas só devem ser executadas por implementações híbridas e no local.
 >
->Para implementações hospedadas, entre em contato com a equipe de [Atendimento ao cliente da Adobe](https://helpx.adobe.com/br/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html).
+>Para implementações hospedadas, entre em contato com a equipe de [Atendimento ao cliente da Adobe](https://helpx.adobe.com/br/enterprise/using/support-for-experience-cloud.html).
 
 A integração entre a autenticação do Adobe Campaign Classic e do Adobe Analytics é compatível com o Adobe Identity Management Service (IMS):
 
-* Se estiver gerenciando uma conta externa migrada, você deve implementar o Adobe IMS e se conectar ao Adobe Campaign por meio de uma Adobe ID. O usuário conectado via Adobe ID IMS deve ser o proprietário do **Conector de dados** no Adobe Analytics e ter um conjunto de permissões para o **Perfil de produto** mencionados abaixo.
+* Se estiver gerenciando uma conta externa migrada, você deve implementar o Adobe IMS e se conectar ao Adobe Campaign por meio de uma Adobe ID. O usuário conectado por meio de uma Adobe ID do IMS deve ser o proprietário da conta do **Conector de dados** no Adobe Analytics e ter um conjunto de permissões para o **Perfil de produto** mencionado abaixo.
 
-* Se estiver implementando um novo conector, a implementação do Adobe IMS é opcional. Sem um usuário do Adobe ID, a Adobe Campaign usará um usuário técnico para sincronizar com o Adobe Analytics.
+* Se estiver implementando um novo conector, a implementação do Adobe IMS é opcional. Sem um usuário do Adobe ID, o Adobe Campaign usará um usuário técnico para sincronizar com o Adobe Analytics.
 
 Para que essa integração funcione, é necessário criar um perfil de produto do Adobe Analytics que será usado exclusivamente para o conector do Analytics. Em seguida, será necessário criar um projeto do Adobe I/O.
 
