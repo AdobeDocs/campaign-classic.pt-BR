@@ -7,7 +7,7 @@ content-type: reference
 topic-tags: campaign-optimization
 exl-id: c23212f2-fdf8-4820-b389-546f7c84db27
 source-git-commit: 5806690f764d2e5dfb5651597ff68b33bb399b44
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '3253'
 ht-degree: 100%
 
@@ -159,7 +159,7 @@ Por exemplo, uma regra de pressão que define um limite de 2 mensagens por seman
 >  ou
 >
 >* Digite **7d** no campo **[!UICONTROL Period considered]** E verifique a **[!UICONTROL Take the deliveries into account in the provisional calendar]**\
->: são considerados no cálculo os deliveries realizados até 7 dias antes da data de delivery e os programados até 7 dias após a data de delivery.
+   >: são considerados no cálculo os deliveries realizados até 7 dias antes da data de delivery e os programados até 7 dias após a data de delivery.
 >
 >A data de início do período depende de como o banco de dados está configurado.
 
