@@ -6,10 +6,10 @@ audience: platform
 content-type: reference
 topic-tags: starting-with-adobe-campaign
 exl-id: 20552812-5c58-4d48-9636-d5135197685d
-source-git-commit: cfba72840f7a0d335516d38be24363865d83d18d
-workflow-type: ht
-source-wordcount: '526'
-ht-degree: 100%
+source-git-commit: 5d9e2f7d7cea9e6d1243b0e3a790f3990772e603
+workflow-type: tm+mt
+source-wordcount: '523'
+ht-degree: 98%
 
 ---
 
@@ -65,4 +65,4 @@ O princípio de pacotes de dados é exportar uma configuração de dados e integ
 
 ## Onde posso encontrar a lista de APIs do Campaign Classic? {#where-can-i-find-the-list-of-campaign-classic-apis}
 
-Todas as APIs do Campaign, incluindo sua descrição completa, estão disponíveis nesta [documentação dedicada](https://docs.adobe.com/content/help/en/campaign-classic/technicalresources/api/index.html).
+Todas as APIs do Campaign, incluindo sua descrição completa, estão disponíveis nesta [documentação dedicada](https://experienceleague.adobe.com/developer/campaign-api/api/index.html).

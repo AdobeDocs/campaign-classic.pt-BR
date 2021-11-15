@@ -6,9 +6,9 @@ audience: installation
 content-type: reference
 topic-tags: initial-configuration
 exl-id: 2bc077c4-ed65-4157-bfc9-df5d0442f476
-source-git-commit: 00b8a9b4a693920aa6b4be9e7c41f08c2e53a0c6
+source-git-commit: 6c23dadb5b6523e17e242de43a908ca86ed7cc23
 workflow-type: tm+mt
-source-wordcount: '1173'
+source-wordcount: '1188'
 ht-degree: 16%
 
 ---
@@ -28,6 +28,8 @@ Os pacotes incorporados contêm um conjunto de recursos que podem ser instalados
 >A instalação de um novo pacote pode afetar toda a sua plataforma: deve ser testado e validado antes da implantação final.
 >
 >Depois que um pacote é instalado, não é possível desinstalá-lo.
+>
+>Como cliente hospedado ou híbrido, entre em contato com o Adobe para implantar um novo pacote integrado.
 
 Para instalar um pacote incorporado:
 
@@ -69,7 +71,7 @@ A tabela a seguir lista todos os pacotes incorporados do Campaign.
    <td> Marketing</td>
   </tr> 
   <tr> 
-   <td> Recursos de marketing (MRM)<br /> </td> 
+   <td> Recursos de marketing (MRM) <br /> </td> 
    <td> Controla ações de marketing em um modo colaborativo fornecendo gerenciamento e rastreamento das tarefas, orçamentos e recursos de marketing. <a href="../../mrm/using/about-marketing-resource-management.md">Saiba mais</a> <br /> </td> 
    <td> Marketing</td> 
   </tr> 
@@ -145,7 +147,7 @@ A tabela a seguir lista todos os pacotes incorporados do Campaign.
    <td> Marketing<br /> </td> 
   </tr> 
   <tr> 
-   <td> Marketing Analytics<br /> </td> 
+   <td> Análise de marketing<br /> </td> 
    <td> Permite analisar e medir dados, calcular estatísticas, simplificar e otimizar a criação e o cálculo do relatório. Além disso, você pode criar relatórios e populações do target. Opcional. <a href="../../reporting/using/about-cubes.md">Saiba mais</a><br /> </td> 
    <td> Marketing<br /> </td> 
   </tr> 
@@ -195,7 +197,7 @@ A tabela a seguir lista todos os pacotes incorporados do Campaign.
    <td> Marketing </td> 
   </tr> 
   <tr> 
-   <td> AEM integração<br /> </td> 
+   <td> Integração de AEM<br /> </td> 
    <td> Permite gerenciar o conteúdo de seus deliveries de email, bem como seus formulários diretamente no Adobe Experience Manager, para se beneficiar das funcionalidades de edição de conteúdo AEM e das capacidades de delivery da Adobe Campaign. <a href="../../integrations/using/about-adobe-experience-manager.md">Saiba mais</a> <br /> </td> 
    <td> Marketing</td> 
   </tr> 
@@ -215,7 +217,7 @@ A tabela a seguir lista todos os pacotes incorporados do Campaign.
    <td> Todos</td> 
   </tr> 
   <tr> 
-   <td> Transferir para mid-sourcing <br /> </td> 
+   <td> Transferência para mid-sourcing <br /> </td> 
    <td> Detalha a instalação e a configuração de um servidor mid-sourcing, bem como a implantação de uma instância que permite a terceiros enviar mensagens no modo mid-sourcing. Opcional. <a href="../../installation/using/mid-sourcing-server.md">Saiba mais</a> <br /> </td> 
    <td> Marketing </td> 
   </tr> 
@@ -241,14 +243,14 @@ A tabela a seguir lista todos os pacotes incorporados do Campaign.
 
 Você deve instalar canais de delivery (Email, canal móvel, canal de aplicativo móvel etc.) antes de instalar mensagens transacionais (pacote do centro de mensagens). Se você tiver iniciado um projeto do Centro de mensagens somente por email e precisar adicionar um novo canal posteriormente, siga estas etapas:
 
-1. Instale o novo canal, por exemplo, o **Canal móvel**, usando o assistente de importação de pacote ( **[!UICONTROL Tools > Advanced > Import package > Adobe Campaign package]**).
+1. Instale o novo canal, por exemplo, a variável **Canal móvel**, usando o assistente de importação de pacotes ( **[!UICONTROL Tools > Advanced > Import package > Adobe Campaign package]**).
 1. Importe o arquivo ( **[!UICONTROL Tools > Advanced > Import package > File]**) e selecione:
 
    ```
    \datakit\nms\[Your language]\package\messageCenter.xml
    ```
 
-1. No **[!UICONTROL XML data content to import]**, mantenha somente o modelo de delivery do Centro de Mensagens correspondente ao canal relacionado. Por exemplo, se você tiver adicionado o canal móvel **Mobile**, mantenha somente o elemento **entities** correspondente ao modelo **[!UICONTROL Mobile transactional message]** (smsTriggerMessage) . Se tiver adicionado o **Canal de Aplicativo Móvel**, mantenha somente os modelos **Mensagem transacional do iOS** (iosTriggerMessage) e **Mensagem transacional do Android** (androidTriggerMessage).
+1. No **[!UICONTROL XML data content to import]**, mantenha somente o template do delivery do Centro de mensagens correspondente ao canal relacionado. Por exemplo, se você tiver adicionado a variável **Canal móvel**, mantenha somente o **entities** elemento correspondente ao **[!UICONTROL Mobile transactional message]** Modelo (smsTriggerMessage). Se você tiver adicionado o **Canal de aplicativo móvel**, mantenha somente o **Mensagem transacional do iOS** templates (iosTriggerMessage) e **Mensagem transacional do Android** (androidTriggerMessage).
 
    ![](assets/messagecenter_install_channel.png)
 

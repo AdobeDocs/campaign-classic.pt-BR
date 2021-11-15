@@ -6,10 +6,10 @@ audience: installation
 content-type: reference
 topic-tags: prerequisites-and-recommendations-
 exl-id: 1f96c3df-0ef2-4f5f-9c36-988cbcc0769f
-source-git-commit: e719c8c94f1c08c6601b3386ccd99d250c9e606b
+source-git-commit: 5d9e2f7d7cea9e6d1243b0e3a790f3990772e603
 workflow-type: tm+mt
-source-wordcount: '754'
-ht-degree: 36%
+source-wordcount: '748'
+ht-degree: 34%
 
 ---
 
@@ -19,7 +19,7 @@ ht-degree: 36%
 
 ## Script
 
-Para obter mais detalhes, consulte a [documentação JSAPI do Campaign](https://docs.adobe.com/content/help/en/campaign-classic/technicalresources/api/index.html).
+Para obter mais detalhes, consulte [Documentação JSAPI do Campaign](https://experienceleague.adobe.com/developer/campaign-api/api/index.html).
 
 Se você criar scripts usando fluxo de trabalho, aplicações web, jssp, siga estas práticas recomendadas:
 
@@ -54,9 +54,9 @@ Para evitar injeções de SQL, as funções SQL devem ser adicionadas à  de lis
 
 >[!IMPORTANT]
 >
->Se você estiver usando uma build com mais de 8140, a opção **XtkPassUnknownSQLFunctionsToRDBMS** poderá ser definida como &#39;1&#39;. Se quiser proteger seu banco de dados, exclua essa opção (ou defina-a como &#39;0&#39;).
+>Se você estiver usando uma build anterior a 8140, a variável **XtkPassUnknownSQLFunctionsToRDBMS** pode ser definida como &#39;1&#39;. Se quiser proteger seu banco de dados, exclua essa opção (ou defina-a como &#39;0&#39;).
 
-Se você estiver usando a entrada do usuário para criar filtros em queries ou instruções SQL, sempre será necessário escapá-los (consulte a [documentação do Campaign JSAPI](https://docs.adobe.com/content/help/en/campaign-classic/technicalresources/api/index.html) - Proteção de dados: funções de escape). Essas funções são:
+Se estiver usando a entrada do usuário para criar filtros em queries ou instruções SQL, sempre será necessário escapá-los (consulte [Documentação JSAPI do Campaign](https://experienceleague.adobe.com/developer/campaign-api/api/index.html) - Proteção de dados: funções de escape). Essas funções são:
 
 * NL.XML.escape(data)
 * NL.SQL.escape(data)
@@ -110,13 +110,13 @@ A entidade completa é carregada pela tela, mas você também pode exibi-las na 
 
 É uma boa prática adicionar um captcha em páginas de páginas/assinaturas públicas. Infelizmente, adicionar um captcha nas páginas do DCE (Digital Content Editor) não é fácil. Mostraremos como adicionar um captcha v5 ou um reCAPTCHA do Google.
 
-A maneira geral de adicionar um captcha no DCE é criar um bloco de personalização para incluí-lo facilmente no conteúdo da página. Será necessário adicionar uma atividade **Script** e um **Test**.
+A maneira geral de adicionar um captcha no DCE é criar um bloco de personalização para incluí-lo facilmente no conteúdo da página. Será necessário adicionar um **Script** e uma **Teste**.
 
 ### Bloco de personalização
 
-1. Vá para **[!UICONTROL Resources]** > **[!UICONTROL Campaign Management]** > **[!UICONTROL Personalization blocks]** e crie um novo.
+1. Ir para **[!UICONTROL Resources]** > **[!UICONTROL Campaign Management]** > **[!UICONTROL Personalization blocks]** e criar um novo.
 
-1. Use o tipo de conteúdo **[!UICONTROL Web application]** e marque **[!UICONTROL Visible in the customization menus]**.
+1. Use o **[!UICONTROL Web application]** tipo de conteúdo e verificação **[!UICONTROL Visible in the customization menus]**.
 
    Para obter mais informações, consulte [esta página](../../delivery/using/personalization-blocks.md).
 
@@ -154,13 +154,13 @@ A maneira geral de adicionar um captcha no DCE é criar um bloco de personaliza�
 
    ![](assets/scripting-captcha.png)
 
-1. Entre a última página e a atividade **[!UICONTROL Storage]** , adicione um **[!UICONTROL Script]** e um **[!UICONTROL Test]**.
+1. Entre a última página e a **[!UICONTROL Storage]** atividade , adicione uma **[!UICONTROL Script]** e **[!UICONTROL Test]**.
 
-   Conecte a ramificação **[!UICONTROL True]** ao **[!UICONTROL Storage]** e a outra à página que terá o captcha.
+   Conecte a ramificação **[!UICONTROL True]** para **[!UICONTROL Storage]** e o outro na página que terá o captcha.
 
    ![](assets/scripting-captcha2.png)
 
-1. Edite a condição da ramificação True com `"[vars/captchaValid]"` igual a True.
+1. Edite a condição da ramificação Verdadeiro com `"[vars/captchaValid]"` é igual a Verdadeiro.
 
    ![](assets/scripting-captcha3.png)
 

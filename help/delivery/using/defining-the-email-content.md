@@ -1,19 +1,19 @@
 ---
 product: campaign
-title: Definição do conteúdo de email no Adobe Campaign Classic
+title: Definir o conteúdo do email no Adobe Campaign Classic
 description: Saiba como definir o conteúdo de email ao usar o Adobe Campaign Classic.
 audience: delivery
 content-type: reference
 topic-tags: sending-emails
 exl-id: 46212929-fd2d-44a2-897e-35f98e88af36
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
-workflow-type: ht
-source-wordcount: '1992'
-ht-degree: 100%
+source-git-commit: 3b8d685642fc74d918a0e312c66d5e4f7b424192
+workflow-type: tm+mt
+source-wordcount: '1990'
+ht-degree: 99%
 
 ---
 
-# Definição do conteúdo do email {#defining-the-email-content}
+# Definir o conteúdo do email {#defining-the-email-content}
 
 ![](../../assets/common.svg)
 
@@ -112,7 +112,7 @@ As mensagens são enviadas em formato de texto ou HTML por padrão, de acordo co
    ![](assets/s_ncs_user_wizard_email01_142.png)
 
 
-## Definição de conteúdo interativo {#amp-for-email-format}
+## Definir o conteúdo interativo {#amp-for-email-format}
 
 O Adobe Campaign possibilita experimentar o novo formato interativo [AMP for email](https://amp.dev/about/email/), que permite o envio de emails dinâmicos, sob determinadas condições.
 
@@ -237,7 +237,7 @@ Se você selecionar **[!UICONTROL Include the images in the email]**, será poss
 >
 >Se imagens locais forem incluídas na mensagem, você deverá confirmar as alterações no código-fonte dela.
 
-## Inserir código de barras em um email{#inserting-a-barcode-in-an-email}
+## Inserir um código de barras personalizado{#insert-a-barcode}
 
 O módulo de geração de código de barras permite criar vários tipos de códigos de barras que estão em conformidade com muitos padrões comuns, incluindo códigos de barras 2D.
 

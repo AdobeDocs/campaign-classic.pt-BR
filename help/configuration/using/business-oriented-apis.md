@@ -6,10 +6,10 @@ audience: configuration
 content-type: reference
 topic-tags: api
 exl-id: e6638870-3141-4f12-b904-db436127c0d1
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: 5d9e2f7d7cea9e6d1243b0e3a790f3990772e603
 workflow-type: tm+mt
-source-wordcount: '635'
-ht-degree: 3%
+source-wordcount: '632'
+ht-degree: 2%
 
 ---
 
@@ -21,7 +21,7 @@ As APIs de negócios são específicas para cada tipo de objeto. Eles têm efeit
 
 * Entregas:
 
-   * Ao criar uma ação de delivery, consulte [SubmitDelivery (nms:delivery)](#submitdelivery--nms-delivery-),
+   * Criação de uma ação de delivery, consulte [SubmitDelivery (nms:delivery)](#submitdelivery--nms-delivery-),
    * enviar uma campanha (iniciar, pausar, parar, enviar prova),
    * recuperando logs do delivery.
 
@@ -33,14 +33,14 @@ As APIs de negócios são específicas para cada tipo de objeto. Eles têm efeit
       Consulte [Métodos SOAP em JavaScript](../../configuration/using/soap-methods-in-javascript.md).
 
 * Gestão de conteúdo
-* Gerenciamento de subscrição, consulte [Subscribe (nms:subscription)](#subscribe--nms-subscription-) e [Unsubscribe (nms:subscription)](#unsubscribe--nms-subscription-).
+* Gerenciamento de subscrição, consulte [Assinar (nms:subscription)](#subscribe--nms-subscription-) e [Cancelar inscrição (nms:subscription)](#unsubscribe--nms-subscription-).
 * Processos de dados: importações, exportações.
 
 Esta seção detalha o uso dos serviços &quot;Subscribe&quot;, &quot;Unsubscribe&quot; e &quot;SubmitDelivery&quot;.
 
 >[!IMPORTANT]
 >
->[A ](https://docs.adobe.com/content/help/en/campaign-classic/technicalresources/api/index.html) documentação do Campaign JSAPI contém informações adicionais sobre chamadas SOAP e uso do Javascript no Adobe Campaign, bem como uma referência completa a todos os métodos e funções usados no aplicativo.
+>[Documentação JSAPI do Campaign](https://experienceleague.adobe.com/developer/campaign-api/api/index.html) contém informações adicionais sobre chamadas SOAP e uso de Javascript no Adobe Campaign, bem como uma referência completa a todos os métodos e funções usados no aplicativo.
 
 ## Assinar (nms:subscription) {#subscribe--nms-subscription-}
 
@@ -65,7 +65,7 @@ Descrição do método &quot;subscribe&quot; no schema &quot;nms:subscription&qu
 </method>
 ```
 
-A definição da chave de reconciliação deve ser inserida por meio do atributo _**key** no elemento `<recipient>` do documento XML. O conteúdo desse atributo é uma lista XPath separada por vírgulas.
+A definição da chave de reconciliação deve ser inserida por meio do _**key** no `<recipient>` elemento do documento XML. O conteúdo desse atributo é uma lista XPath separada por vírgulas.
 
 Essa chamada não retorna dados, exceto erros.
 
@@ -136,7 +136,7 @@ Descrição do método &quot;Unsubscribe&quot; no schema &quot;nms:subscription&
 </method>
 ```
 
-A definição da chave de reconciliação deve ser inserida por meio do atributo _key no elemento `<recipient>` do documento XML. O conteúdo desse atributo é uma lista XPath separada por vírgulas.
+A definição da chave de reconciliação deve ser inserida por meio do atributo _key na variável `<recipient>` elemento do documento XML. O conteúdo desse atributo é uma lista XPath separada por vírgulas.
 
 Se o recipient não estiver presente no banco de dados ou não estiver inscrito no serviço de informações relacionado, o serviço não executará nenhuma ação e não gerará um erro.
 
@@ -207,7 +207,7 @@ Essa chamada não retorna dados, exceto erros.
 
 ### Exemplo de documento XML {#xml-document-example}
 
-Este exemplo é baseado em um template de delivery personalizado de uma fonte de dados externa (um arquivo, neste caso). A configuração é totalmente descrita no template do delivery, portanto, tudo o que permanece para ser enviado quando a chamada ocorre é o conteúdo do arquivo do elemento `<externalsource>`.
+Este exemplo é baseado em um template de delivery personalizado de uma fonte de dados externa (um arquivo, neste caso). A configuração é totalmente descrita no template do delivery, portanto, tudo o que permanece para ser enviado quando a chamada ocorrer é o conteúdo do arquivo do `<externalsource>` elemento.
 
 ```
 <delivery>

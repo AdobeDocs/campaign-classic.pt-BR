@@ -6,10 +6,10 @@ audience: configuration
 content-type: reference
 topic-tags: api
 exl-id: 7aa2aef1-2eb6-48a6-82fa-4451bed66216
-source-git-commit: bd9f035db1cbad883e1f27fe901e34dfbc9c1229
+source-git-commit: 5d9e2f7d7cea9e6d1243b0e3a790f3990772e603
 workflow-type: tm+mt
-source-wordcount: '658'
-ht-degree: 5%
+source-wordcount: '655'
+ht-degree: 3%
 
 ---
 
@@ -21,12 +21,12 @@ ht-degree: 5%
 
 O servidor de aplicativos Adobe Campaign foi projetado para oferecer abertura e integração fácil com sistemas de informações de empresas cada vez mais diversos e complexos.
 
-As APIs do Adobe Campaign são usadas em JavaScript no aplicativo e em SOAP fora dele. Eles compõem uma biblioteca de funções genéricas que podem ser enriquecidas. Para obter mais informações, consulte [Implementando métodos SOAP](../../configuration/using/implementing-soap-methods.md).
+As APIs do Adobe Campaign são usadas em JavaScript no aplicativo e em SOAP fora dele. Eles compõem uma biblioteca de funções genéricas que podem ser enriquecidas. Para obter mais informações, consulte [Implementação de métodos SOAP](../../configuration/using/implementing-soap-methods.md).
 
 >[!IMPORTANT]
 >
 >O número de chamadas de mecanismo autorizadas por dia varia de acordo com seu contrato de licença. Para obter mais informações, consulte [esta página](https://helpx.adobe.com/br/legal/product-descriptions/adobe-campaign-classic---product-description.html).\
->Uma lista de todas as APIs, incluindo sua descrição completa, está disponível em [esta documentação dedicada](https://docs.adobe.com/content/help/en/campaign-classic/technicalresources/api/index.html).
+>Uma lista de todas as APIs, incluindo sua descrição completa, está disponível em [esta documentação dedicada](https://experienceleague.adobe.com/developer/campaign-api/api/index.html).
 
 ## Pré-requisitos {#prerequisites}
 
@@ -41,7 +41,7 @@ Antes de usar as APIs do Adobe Campaign, você precisa conhecer os seguintes tó
 O Adobe Campaign usa dois tipos de APIs:
 
 * APIs genéricas de acesso aos dados para consultar os dados do modelo de dados. Consulte [APIs orientadas a dados](../../configuration/using/data-oriented-apis.md).
-* APIs específicas de negócios que permitem agir em cada objeto: deliveries, workflows, subscrições etc. Consulte [APIs orientadas para negócios](../../configuration/using/business-oriented-apis.md).
+* APIs específicas de negócios que permitem agir em cada objeto: deliveries, workflows, subscrições etc. Consulte [APIs direcionadas para empresas](../../configuration/using/business-oriented-apis.md).
 
 Para desenvolver APIs e interagir com o Adobe Campaign, é necessário conhecer seu modelo de dados. O Adobe Campaign permite gerar uma descrição completa da base. Consulte [Descrição do modelo](../../configuration/using/data-oriented-apis.md#description-of-the-model).
 
@@ -92,13 +92,13 @@ Para obter mais informações, consulte [ExecuteQuery (xtk:queryDef)](../../conf
 </SOAP-ENV:Envelope>
 ```
 
-O elemento `<soap-env:envelope>` é o primeiro elemento da mensagem que representa o envelope SOAP.
+O `<soap-env:envelope>` é o primeiro elemento da mensagem que representa o envelope SOAP.
 
-O elemento `<soap-env:body>` é o primeiro elemento filho do envelope. Ele contém a descrição da mensagem, ou seja, o conteúdo da query ou da resposta.
+O `<soap-env:body>` é o primeiro elemento filho do envelope. Ele contém a descrição da mensagem, ou seja, o conteúdo da query ou da resposta.
 
-O método a ser chamado é inserido no elemento `<executequery>` do corpo da mensagem SOAP.
+O método a ser chamado é inserido na variável `<executequery>` elemento do corpo da mensagem SOAP.
 
-No SOAP, os parâmetros são reconhecidos por ordem de aparência. O primeiro parâmetro, `<__sessiontoken>`, pega a cadeia de autenticação, o segundo parâmetro é a descrição XML da consulta do elemento `<querydef>`.
+No SOAP, os parâmetros são reconhecidos por ordem de aparência. O primeiro parâmetro, `<__sessiontoken>`, pega a cadeia de autenticação, o segundo parâmetro é a descrição XML do query do `<querydef>` elemento.
 
 ### Resposta SOAP {#soap-response}
 
@@ -115,7 +115,7 @@ No SOAP, os parâmetros são reconhecidos por ordem de aparência. O primeiro pa
 </SOAP-ENV:Envelope>
 ```
 
-O resultado da query é inserido a partir do elemento `<pdomoutput>`.
+O resultado do query é inserido do `<pdomoutput>` elemento.
 
 ## Gerenciamento de erros {#error-management}
 
@@ -135,7 +135,7 @@ ODBC error: [Microsoft][ODBC SQL Server Driver][SQL Server]The statement has bee
 </SOAP-ENV:Envelope>
 ```
 
-O elemento `<soap-env:fault>` no corpo da mensagem SOAP é usado para transmitir os sinais de erro que surgem durante o processamento do serviço da Web. É composto pelos seguintes subelementos:
+O `<soap-env:fault>` O elemento no corpo da mensagem SOAP é usado para transmitir os sinais de erro que surgem durante o processamento do serviço da Web. É composto pelos seguintes subelementos:
 
 * `<faultcode>` : indica o tipo de erro. Os tipos de erro são:
 
@@ -147,7 +147,7 @@ O elemento `<soap-env:fault>` no corpo da mensagem SOAP é usado para transmitir
 * `<faultstring>` : mensagem descrevendo o erro
 * `<detail>` : mensagem de erro longa
 
-O sucesso ou a falha da invocação do serviço é identificada quando o elemento `<faultcode>` é verificado.
+O sucesso ou falha da invocação do serviço é identificado quando a variável `<faultcode>` é verificado.
 
 >[!IMPORTANT]
 >

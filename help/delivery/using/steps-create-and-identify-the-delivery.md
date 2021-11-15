@@ -6,8 +6,8 @@ audience: delivery
 content-type: reference
 topic-tags: about-deliveries-and-channels
 exl-id: 6e37bc14-b1a9-42af-8c28-ae4b5bcaa055
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
-workflow-type: ht
+source-git-commit: 3b8d685642fc74d918a0e312c66d5e4f7b424192
+workflow-type: tm+mt
 source-wordcount: '271'
 ht-degree: 100%
 
@@ -51,7 +51,7 @@ Você precisa concluir os parâmetros para identificar o delivery. Para fazer is
 
 O conteúdo do delivery está pronto para ser configurado. A definição do conteúdo do delivery é específica para cada canal. Para obter mais informações, consulte a seção dedicada:
 
-* [Definição do conteúdo do email](defining-the-email-content.md)
-* [Definição do conteúdo do SMS](sms-create.md#defining-the-sms-content)
+* [Definir o conteúdo do email](defining-the-email-content.md)
+* [Definir o conteúdo do SMS](sms-create.md#defining-the-sms-content)
 * [Definição do conteúdo da correspondência direta](defining-the-direct-mail-content.md)
 * [Notificações por push](about-mobile-app-channel.md)
