@@ -6,32 +6,28 @@ audience: integrations
 content-type: reference
 topic-tags: adobe-target
 exl-id: ae8c680f-52a6-4d00-91cd-44d1c3807546
-source-git-commit: b6e24c63ece12f25b7dafe3fede9e38b3aab2427
+source-git-commit: af40fe822c69979a478604595790d4deefd6d5b0
 workflow-type: tm+mt
-source-wordcount: '201'
-ht-degree: 73%
+source-wordcount: '192'
+ht-degree: 61%
 
 ---
 
-# Configuração da integração com o Adobe Target{#configuring-the-integration-with-adobe-target}
+# Configurar a integração com o Adobe Target{#configuring-the-integration-with-adobe-target}
 
-![](../../assets/common.svg)
+![](../../assets/v7-only.svg)
 
 
 >[!CAUTION]
 >
 > Como cliente hospedado ou híbrido, entre em contato com o representante do Adobe para configurar essa integração. As etapas abaixo se aplicam somente a clientes locais.
 
-## Pré-requisitos {#prerequisites}
-
-Para usar a integração entre o Adobe Campaign e o Adobe Target, você deve ter:
+Essa integração exige:
 
 * Organizações do Adobe Experience Cloud e Adobe Target
 * Um rawbox do Adobe Target especificado para estabelecer a conexão com o Adobe Campaign
 
-## Configuração do Adobe Campaign {#configuring-adobe-campaign}
-
-Para configurar o Adobe Campaign:
+Para configurar essa integração no Adobe Campaign, siga as etapas abaixo:
 
 1. Instale o **[!UICONTROL Integration with the Adobe Experience Cloud]** pacote integrado. [Saiba mais](../../platform/using/working-with-data-packages.md#importing-packages)
 

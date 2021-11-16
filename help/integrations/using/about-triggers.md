@@ -5,14 +5,14 @@ description: Introdução à implementação dos acionadores da Adobe Experience
 audience: integrations
 content-type: reference
 exl-id: 0e337620-a49f-4e14-8c67-9279d74736f1
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
-workflow-type: ht
+source-git-commit: af40fe822c69979a478604595790d4deefd6d5b0
+workflow-type: tm+mt
 source-wordcount: '228'
-ht-degree: 100%
+ht-degree: 96%
 
 ---
 
-# Introdução aos acionadores da Adobe Experience Cloud{#about-adobe-experience-triggers}
+# Trabalhar com acionadores do Campaign e do Experience Cloud{#about-adobe-experience-triggers}
 
 ![](../../assets/common.svg)
 
