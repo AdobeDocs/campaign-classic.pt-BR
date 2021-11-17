@@ -6,10 +6,10 @@ audience: workflow
 content-type: reference
 topic-tags: advanced-management
 exl-id: 4a3647d1-cf8c-4867-871e-472287be7c6a
-source-git-commit: bd9f035db1cbad883e1f27fe901e34dfbc9c1229
-workflow-type: ht
-source-wordcount: '1234'
-ht-degree: 100%
+source-git-commit: 8e6ebec9af0b7865616cf3904c8d400094567bdb
+workflow-type: tm+mt
+source-wordcount: '1242'
+ht-degree: 99%
 
 ---
 
@@ -196,3 +196,6 @@ Sob determinadas condições, é possível modificar uma propriedade de uma ativ
 A maioria das propriedades de atividades pode ser calculada dinamicamente, usando um template JavaScript ou porque as propriedades do workflow permitem explicitamente que o valor seja calculado por um script.
 
 No entanto, para outras propriedades, é necessário usar o script de inicialização. Este script é avaliado antes que a tarefa seja executada. A variável **[!UICONTROL activity]** faz referência à atividade correspondente à tarefa. As propriedades dessa atividade podem ser modificadas e afetarão somente essa tarefa.
+
+**Tópicos relacionados**
+[Exemplos de código JavaScript em workflows](javascript-in-workflows.md)

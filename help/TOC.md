@@ -6,9 +6,9 @@ title: Manual do Campaign Classic v7
 user-guide-description: Com o Adobe Campaign, é possível usar dados avançados do cliente para criar, coordenar e fornecer campanhas dinâmicas que os clientes realmente desejam, por meio de email, dispositivos móveis, canais offline e muito mais.
 sub-product: adobe campaign classic
 type: Documentation
-source-git-commit: af40fe822c69979a478604595790d4deefd6d5b0
+source-git-commit: 93fcb0b2b12b581dadbe4358e72bb883384fbbe6
 workflow-type: tm+mt
-source-wordcount: '2565'
+source-wordcount: '2571'
 ht-degree: 99%
 
 ---
@@ -510,6 +510,7 @@ ht-degree: 99%
       + [Propriedades do fluxo de trabalho](workflow/using/workflow-properties.md)
       + [Parâmetros avançados](workflow/using/advanced-parameters.md)
       + [Modelos e scripts JavaScript](workflow/using/javascript-scripts-and-templates.md)
+      + [Exemplos de código JavaScript em workflows](workflow/using/javascript-in-workflows.md)
       + [Acessar um banco de dados externo](workflow/using/accessing-an-external-database--fda-.md)
       + [Gerenciar permissões](workflow/using/managing-rights.md)
       + [Gerenciar imagens de atividade](workflow/using/managing-activity-images.md)
