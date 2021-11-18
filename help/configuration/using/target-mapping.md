@@ -6,7 +6,7 @@ audience: configuration
 content-type: reference
 topic-tags: use-a-custom-recipient-table
 exl-id: 38333669-5598-4811-a121-b677c1413f56
-source-git-commit: ed43a632a962747c9402ff8d5f0ce442c2cc6490
+source-git-commit: f000cb8bae164c22d1ede15db4e763cf50530674
 workflow-type: tm+mt
 source-wordcount: '507'
 ht-degree: 3%
@@ -83,34 +83,34 @@ Para fazer isso, siga as etapas abaixo:
    ```
 
 1. Clique no nó **[!UICONTROL Administration > Campaign management > Target mappings]**.
-1. Clique no botão **New** para abrir o assistente de criação de target mapping.
-1. Insira o campo **Label** e selecione o schema que acabou de criar no campo **Targeting dimension**.
+1. Clique no botão **Novo** para abrir o assistente de criação de target mapping.
+1. Insira o **Rótulo** e selecione o schema que acabou de criar no **Dimensão de direcionamento** campo.
 
    ![](assets/mapping_diffusion_wizard_1.png)
 
-1. Na janela **Edit address forms**, selecione os campos do schema que correspondem aos vários endereços de delivery. Aqui, podemos mapear os campos **@email** e **@mobile**.
+1. No **Editar formulários de endereço** selecione os campos do schema que correspondem aos vários endereços de delivery. Aqui, podemos mapear a variável **@email** e **@mobile** campos.
 
    ![](assets/mapping_diffusion_wizard_2.png)
 
-1. Na seguinte janela **Storage**, insira o **Suffix do campo extension schemas** para diferenciar os novos schemas dos esquemas prontos para uso fornecidos pelo Adobe Campaign.
+1. No seguinte **Armazenamento** digite o **Sufixo dos schemas de extensão** para diferenciar os novos schemas dos esquemas prontos para uso fornecidos pelo Adobe Campaign.
 
    Clique em **[!UICONTROL Define new additional fields]** para selecionar a dimensão que deseja direcionar no delivery.
 
    Por padrão, o gerenciamento de exclusão é armazenado na mesma tabela que as mensagens.
 
-   Marque a caixa **Generate a storage schema for tracking** se desejar configurar o armazenamento para o rastreamento vinculado ao target mapping.
+   Verifique a **Gerar um esquema de armazenamento para rastreamento** se desejar configurar o armazenamento para o rastreamento vinculado ao target mapping.
 
    ![](assets/mapping_diffusion_wizard_3.png)
 
    >[!IMPORTANT]
    >
-   >O Adobe Campaign não oferece suporte a vários esquemas de recipient, conhecidos como esquemas de direcionamento, vinculados aos mesmos esquemas de broadlog e/ou de trackinglog. Caso contrário, isso pode levar a anomalias na reconciliação de dados posteriormente. Para obter mais informações, consulte a página [Recomendação e limitações](../../configuration/using/about-custom-recipient-table.md).
+   >O Adobe Campaign não oferece suporte a vários esquemas de recipient, conhecidos como esquemas de direcionamento, vinculados aos mesmos esquemas de broadlog e/ou de trackinglog. Caso contrário, isso pode levar a anomalias na reconciliação de dados posteriormente. Para obter mais informações sobre isso, consulte o [Recomendação e limitações](../../configuration/using/about-custom-recipient-table.md) página.
 
-1. Na janela **Extensions**, selecione os schemas opcionais que deseja gerar (a lista de schemas disponíveis depende dos módulos instalados na plataforma Adobe Campaign).
+1. No **Extensões** selecione os schemas opcionais que deseja gerar (a lista de schemas disponíveis depende dos módulos instalados na plataforma Adobe Campaign).
 
    ![](assets/mapping_diffusion_wizard_4.png)
 
-1. Clique no botão **Save** para fechar o assistente.
+1. Clique no botão **Salvar** para fechar o assistente.
 
    O assistente usa o schema start para criar todos os outros schemas necessários para que o novo target mapping funcione.
 

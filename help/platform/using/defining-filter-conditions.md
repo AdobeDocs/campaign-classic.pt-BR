@@ -6,8 +6,8 @@ audience: platform
 content-type: reference
 topic-tags: creating-queries
 exl-id: b62e23e5-f1b7-44c4-82d9-95c6b3240352
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
-workflow-type: ht
+source-git-commit: f000cb8bae164c22d1ede15db4e763cf50530674
+workflow-type: tm+mt
 source-wordcount: '3229'
 ht-degree: 100%
 
@@ -945,7 +945,7 @@ Ele permite selecionar campos nas tabelas do banco de dados e adicionar funçõe
   <tr> 
    <td> <strong>GetEmailDomain</strong><br /> </td> 
    <td> Extrai o domínio de um endereço de email<br /> </td> 
-   <td> GetEmailDomain(&lt;value&gt;)<br /> </td>  
+   <td> GetEmailDomain(&lt;valor&gt;)<br /> </td>  
   </tr> 
   <tr> 
    <td> <strong>GetMirrorURL</strong><br /> </td> 

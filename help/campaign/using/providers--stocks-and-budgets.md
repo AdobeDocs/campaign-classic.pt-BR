@@ -6,10 +6,10 @@ audience: campaign
 content-type: reference
 topic-tags: orchestrate-campaigns
 exl-id: c60c4f86-a957-4c44-a0fe-39b6e3f0e5d6
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
-workflow-type: ht
+source-git-commit: f000cb8bae164c22d1ede15db4e763cf50530674
+workflow-type: tm+mt
 source-wordcount: '1902'
-ht-degree: 100%
+ht-degree: 97%
 
 ---
 
@@ -72,11 +72,11 @@ Para criar um template de serviço e definir seu conteúdo, aplique as seguintes
 
    ![](assets/s_ncs_user_supplier_node_create_template.png)
 
-1. Crie as categorias de custo para cada tipo de processo (delivery por mala direta/email/etc. ou tarefa). Para fazer isso, clique na guia **[!UICONTROL Cost categories]** e, em seguida, no botão **[!UICONTROL Add]** e insira os parâmetros de cada categoria de custo.
+1. Crie as categorias de custo para cada tipo de processo (delivery por mala direta/email/etc.) ou tarefa). Para fazer isso, clique na guia **[!UICONTROL Cost categories]** e, em seguida, no botão **[!UICONTROL Add]** e insira os parâmetros de cada categoria de custo.
 
    ![](assets/s_ncs_user_supplier_node_03.png)
 
-   * Insira um rótulo para esta categoria de custo e selecione o tipo de processo em questão: delivery por **[!UICONTROL Direct mail]**, **[!UICONTROL E-mail]**, **[!UICONTROL Mobile]**, **[!UICONTROL Telephone]** ou **[!UICONTROL Task]**.
+   * Insira um rótulo para esta categoria de custo e selecione o tipo de processo em questão: delivery por **[!UICONTROL Direct mail]**, **[!UICONTROL Email]**, **[!UICONTROL Mobile]**, **[!UICONTROL Telephone]** ou **[!UICONTROL Task]**.
    * Clique no botão **[!UICONTROL Add]** para definir os tipos de custo associados a esta categoria.
    * Se necessário, associada a uma linha de estoque com cada tipo de custo para que as quantidades usadas sejam relacionadas automaticamente aos estoques existentes.
 
@@ -151,7 +151,7 @@ Para fazer isso, clique na guia **[!UICONTROL Processes]** para configurar o env
 
    ![](assets/s_ncs_user_supplier_node_02a.png)
 
-* A seção **[!UICONTROL Notification e-mail]** permite especificar o modelo para notificar os provedores de serviço depois que os arquivos forem enviados. Selecione o template usado para criar a mensagem de alerta e o grupo de recipients.
+* A seção **[!UICONTROL Notification email]** permite especificar o modelo para notificar os provedores de serviço depois que os arquivos forem enviados. Selecione o template usado para criar a mensagem de alerta e o grupo de recipients.
 
    Por padrão, os modelos de delivery para mensagens de notificação são salvos no nó **[!UICONTROL Administration > Campaign management > Technical delivery templates]**, que é acessível na visualização geral.
 
@@ -161,11 +161,11 @@ Para fazer isso, clique na guia **[!UICONTROL Processes]** para configurar o env
 
 Os serviços estão associados a campanhas via entregas ou tarefas. Os provedores de serviço estão vinculados a templates de delivery para oferecer seus serviços nos deliveries criados por meio desse template.
 
-Quando um serviço é selecionado, as classes de custo correspondentes ao tipo de delivery (mala direta, e-mail etc.) são automaticamente indicadas na tabela central juntamente com as opções de processamento definidas.
+Quando um serviço é selecionado, as categorias de custo correspondentes ao tipo de delivery (mala direta, email, etc.) são automaticamente indicadas na tabela central, juntamente com as opções de processamento que foram definidas.
 
 >[!NOTE]
 >
->Se nenhuma categoria de custo for exibida quando um serviço for selecionado, significa que nenhuma categoria de custo foi definida para esse tipo de processo. Por exemplo, para um delivery de email, se nenhuma categoria de custo do tipo **[!UICONTROL E-mail]** tiver sido definida, nenhuma categoria será exibida, e a seleção do serviço não terá efeito.
+>Se nenhuma categoria de custo for exibida quando um serviço for selecionado, significa que nenhuma categoria de custo foi definida para esse tipo de processo. Por exemplo, para um delivery de email, se nenhuma categoria de custo do tipo **[!UICONTROL Email]** tiver sido definida, nenhuma categoria será exibida, e a seleção do serviço não terá efeito.
 
 * Para um delivery de mala direta, você pode selecionar o serviço na janela de configuração.
 

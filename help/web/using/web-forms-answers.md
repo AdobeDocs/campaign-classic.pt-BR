@@ -6,10 +6,10 @@ audience: web
 content-type: reference
 topic-tags: web-forms
 exl-id: 5d48bb27-1884-47f1-acb7-dff5113565bc
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
-workflow-type: ht
+source-git-commit: f000cb8bae164c22d1ede15db4e763cf50530674
+workflow-type: tm+mt
 source-wordcount: '860'
-ht-degree: 100%
+ht-degree: 93%
 
 ---
 
@@ -123,13 +123,13 @@ Há duas maneiras de usar essa caixa:
 
    >[!CAUTION]
    >
-   >Essa opção substitui os dados do usuário, incluindo o endereço de email, se houver um campo no qual ele será inserido. Ela não pode ser usada para criar novos perfis e requer o uso de uma caixa de pré-carregamento no formulário.
+   >Essa opção substitui os dados do usuário, incluindo o endereço de email, se houver um campo no qual ele deve ser inserido. Ela não pode ser usada para criar novos perfis e requer o uso de uma caixa de pré-carregamento no formulário.
 
 * Para enriquecer os dados dos recipients no banco de dados, edite a caixa de armazenamento e selecione a chave de reconciliação. Para uso interno (normalmente um sistema de intranet) ou para um formulário usado para criar novos perfis por exemplo, você pode selecionar o(s) campo(s) de reconciliação. A caixa oferece todos os campos do banco de dados usados nas várias páginas da aplicação web:
 
    ![](assets/s_ncs_admin_survey_save_box_edit.png)
 
-Por padrão, os dados são importados para o banco de dados por uma operação **[!UICONTROL Update or insertion]**: se existir no banco de dados, o elemento é atualizado (por exemplo, o boletim informativo selecionado ou o endereço de email inserido). Se não existir, as informações serão adicionadas.
+Por padrão, os dados são importados para o banco de dados por um **[!UICONTROL Update or insertion]** operação: se existir no banco de dados, o elemento será atualizado (por exemplo, o boletim informativo selecionado ou o endereço de email inserido). Se não existir, as informações serão adicionadas.
 
 Você pode, entretanto, alterar esse comportamento. Para fazer isso, selecione a raiz do elemento e selecione a operação a ser executada na lista suspensa:
 

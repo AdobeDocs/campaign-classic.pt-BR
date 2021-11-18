@@ -6,7 +6,7 @@ audience: installation
 content-type: reference
 topic-tags: prerequisites-and-recommendations-
 exl-id: b86236ae-95e9-4406-b60f-6d90ad0d4a01
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: f000cb8bae164c22d1ede15db4e763cf50530674
 workflow-type: tm+mt
 source-wordcount: '666'
 ht-degree: 3%
@@ -25,7 +25,7 @@ Use a porta Apache Tomcat incorporada como prioridade (8080 por padrão) para co
 
 ### Servidor de delivery {#delivery-server}
 
-Para o servidor de entrega (**nlserver mta**), as seguintes portas devem estar abertas:
+Para o servidor de delivery (**mta nlserver**), as seguintes portas devem estar abertas:
 
 <table> 
  <tbody> 
@@ -37,7 +37,7 @@ Para o servidor de entrega (**nlserver mta**), as seguintes portas devem estar a
   <tr> 
    <td> 25/tcp (smtp)<br /> </td> 
    <td> Em qualquer lugar<br /> </td> 
-   <td> Tráfego SMTP para transmissão de e-mail.<br /> </td> 
+   <td> Tráfego SMTP para transmissão de email.<br /> </td> 
   </tr> 
   <tr> 
    <td> 53/udp (domínio)<br /> </td> 
@@ -47,10 +47,10 @@ Para o servidor de entrega (**nlserver mta**), as seguintes portas devem estar a
   <tr> 
    <td> 38000/tcp (porta padrão)<br /> </td> 
    <td> Gateway SMS<br /> </td> 
-   <td> Usado para enviar tráfego de SMS para o roteador NetSize SMS [option].<br /> </td> 
+   <td> Usado para enviar tráfego de SMS para o roteador [opção] de SMS NetSize.<br /> </td> 
   </tr> 
   <tr> 
-   <td> 7777/udp<br /> </td> 
+   <td> 777/udp<br /> </td> 
    <td> Servidor de estatísticas<br /> </td> 
    <td> Acesso ao servidor de estatísticas.<br /> </td> 
   </tr> 
@@ -76,7 +76,7 @@ Para o processo de recuperação de email de entrada (**nlserver inMail**), as s
   <tr> 
    <td> 25/tcp (smtp)<br /> </td> 
    <td> Servidor de correio interno<br /> </td> 
-   <td> Tráfego SMTP para enviar mensagens de devolução restantes que não são processadas automaticamente pelas regras predefinidas.<br /> </td> 
+   <td> Tráfego SMTP para enviar mensagens de devolução restantes que não são automaticamente processadas pelas regras predefinidas.<br /> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -123,7 +123,7 @@ Para rastrear deliveries de SMS (**nlserver sms**), a seguinte porta deve estar 
 
 ### Cliente avançado {#rich-client}
 
-Para o cliente avançado Adobe Campaign (**nlclient**), as seguintes portas devem estar abertas:
+Para o cliente avançado do Adobe Campaign (**nlclient**), as seguintes portas devem estar abertas:
 
 <table> 
  <tbody> 
@@ -204,7 +204,7 @@ Esse servidor hospeda formulários da Web, mirror pages, etc. As seguintes porta
   </tr> 
   <tr> 
    <td><p> 80/tcp (http)</p><p> 443/tcp (https)</p><br /> </td> 
-   <td> Em qualquer lugar. Necessário quando formulários Web são gerenciados diretamente da plataforma Adobe Campaign ou quando mirror pages são usadas.<br /> </td> 
+   <td> Em qualquer lugar. Necessário quando formulários web são gerenciados diretamente da plataforma Adobe Campaign ou quando mirror pages são usadas.<br /> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -219,14 +219,14 @@ Esse servidor hospeda formulários da Web, mirror pages, etc. As seguintes porta
   </tr> 
   <tr> 
    <td><p> 80/tcp (http)</p><p> 443/tcp (https)</p><br /> </td> 
-   <td> Todos os computadores executando cliente thin ou cliente avançado.<br /> </td> 
+   <td> Todos os computadores executando o cliente thin ou cliente avançado.<br /> </td> 
   </tr> 
  </tbody> 
 </table>
 
 ## Integração com o Adobe Experience Manager {#integration-with-adobe-experience-manager}
 
-A integração entre o Adobe Campaign e o Adobe Experience Manager requer a abertura de várias portas se a instalação for &quot;no local&quot;. Para obter mais informações sobre como configurar essa integração, consulte a [documentação detalhada](../../integrations/using/about-adobe-experience-manager.md).
+A integração entre o Adobe Campaign e o Adobe Experience Manager requer a abertura de várias portas se a instalação for &quot;no local&quot;. Para obter mais informações sobre como configurar essa integração, consulte o [documentação detalhada](../../integrations/using/about-adobe-experience-manager.md).
 
 <table> 
  <tbody> 
@@ -235,8 +235,8 @@ A integração entre o Adobe Campaign e o Adobe Experience Manager requer a aber
    <td> Descrição<br /> </td> 
   </tr> 
   <tr> 
-   <td> 80<br /> </td> 
-   <td> AEM conexão com Adobe Campaign<br /> </td> 
+   <td> 80º<br /> </td> 
+   <td> AEM conexão com o Adobe Campaign<br /> </td> 
   </tr> 
   <tr> 
    <td><p> 4502</p><p> 4503</p><br /> </td> 
@@ -247,7 +247,7 @@ A integração entre o Adobe Campaign e o Adobe Experience Manager requer a aber
 
 ## Largura de banda {#bandwidth}
 
-Outro parâmetro principal da configuração de rede a ser levado em conta. É quase sempre de saída e muita demanda durante as transmissões de e-mail. Estes são alguns exemplos de configurações com base em nossa experiência:
+Outro parâmetro principal da configuração de rede a ser levado em conta. É quase sempre de saída e muita demanda durante as transmissões de email. Estes são alguns exemplos de configurações com base em nossa experiência:
 
 * 1 Mb/s para 10.000 emails por hora (tamanho médio de 30 Kb)
 * 8 a 10 Mb/s para 100.000 emails por hora (tamanho médio de 30 Kb)

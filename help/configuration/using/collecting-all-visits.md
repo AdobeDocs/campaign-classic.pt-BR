@@ -6,7 +6,7 @@ audience: configuration
 content-type: reference
 topic-tags: setting-up-web-tracking
 exl-id: cc554d0d-bbab-4f72-b870-5fef5a2fda9d
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: f000cb8bae164c22d1ede15db4e763cf50530674
 workflow-type: tm+mt
 source-wordcount: '297'
 ht-degree: 3%
@@ -29,11 +29,11 @@ Um usuário conhecido pela plataforma é um recipient que já foi direcionado po
 
 ## Configuração do servidor {#server-configuration}
 
-Os servidores são configurados sobrecarregando determinados elementos do arquivo **serverConf.xml**. Esses arquivos são salvos no subdiretório **conf** do diretório de instalação do Adobe Campaign.
+Os servidores são configurados ao sobrecarregar determinados elementos da variável **serverConf.xml** arquivo. Esses arquivos são salvos no **conf** subdiretório do diretório de instalação do Adobe Campaign.
 
 ### Redirecionar servidor {#redirection-server}
 
-Para o servidor de redirecionamento, defina o atributo **trackWebVisitors** do elemento **redirecionamento** para **true**.
+Para o servidor de redirecionamento, defina a variável **trackWebVisitors** do **redirecionamento** elemento para **true**.
 
 ```
 <redirection P3PCompactPolicy="CAO DSP COR CURa DEVa TAIa OUR BUS IND UNI COM NAV"
@@ -46,7 +46,7 @@ trackingPassword=""
 
 Para exibir informações de rastreamento por meio do console do cliente, é necessário:
 
-* Criar um **delivery fictício** (o mapeamento de delivery deve ser idêntico ao mapeamento do schema de destino),
-* Insira o **nome interno** deste delivery na opção **NmsTracking_WebTrackingDelivery**.
+* Crie um **entrega de testes** (o mapeamento do delivery deve ser idêntico ao mapeamento do schema do target),
+* Insira o **nome interno** do delivery no **NmsTracking_WebTrackingDelivery** opção.
 
 Todas as informações de rastreamento do site não diretamente subsequentes a um clique em um email podem ser visualizadas no delivery de teste criado.

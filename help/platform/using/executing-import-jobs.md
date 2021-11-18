@@ -6,10 +6,10 @@ audience: platform
 content-type: reference
 topic-tags: importing-and-exporting-data
 exl-id: 05909ea6-2c93-42ff-9142-1dd14fa6fdec
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
-workflow-type: ht
+source-git-commit: f000cb8bae164c22d1ede15db4e763cf50530674
+workflow-type: tm+mt
 source-wordcount: '2955'
-ht-degree: 100%
+ht-degree: 98%
 
 ---
 
@@ -207,7 +207,7 @@ As seguintes opções estão disponíveis para cada campo na tabela em relação
 
 Pelo menos uma chave de reconciliação deve ser preenchida para gerenciar a correção de duplicidade.
 
-Uma chave de reconciliação é um conjunto de campos usados para identificar um registro. Por exemplo, para importar destinatários, a chave de conciliação pode ser o número da conta, o campo &quot;email&quot; ou os campos &quot;Last name, First name, Company&quot; etc.
+Uma chave de reconciliação é um conjunto de campos usados para identificar um registro. Por exemplo, para importar recipients, a chave de reconciliação pode ser o número da conta, o campo &quot;email&quot; ou os campos &quot;Last name, First name, Company&quot; etc.
 
 Nesse caso, para descobrir se uma linha de um arquivo corresponde a um destinatário existente no banco de dados, o mecanismo de importação compara os valores do arquivo com aqueles do banco de dados para todos os campos da chave. Quando os campos são específicos de um registro, uma comparação entre os dados de origem e de destino pode ser executada, garantindo a integridade dos dados após a importação. Uma segunda chave de reconciliação pode ser preenchida para a mesma tabela; ela é usada para as linhas cuja primeira chave está vazia.
 

@@ -6,7 +6,7 @@ audience: configuration
 content-type: reference
 topic-tags: api
 exl-id: e6638870-3141-4f12-b904-db436127c0d1
-source-git-commit: 5d9e2f7d7cea9e6d1243b0e3a790f3990772e603
+source-git-commit: f000cb8bae164c22d1ede15db4e763cf50530674
 workflow-type: tm+mt
 source-wordcount: '632'
 ht-degree: 2%
@@ -71,7 +71,7 @@ Essa chamada não retorna dados, exceto erros.
 
 ### Exemplos {#examples}
 
-Assinatura com chave de reconciliação de recipient no endereço de email: o documento XML de entrada deve referenciar o endereço de email e a definição da chave nesse campo.
+Assinatura com a chave de reconciliação do recipient no endereço de email: o documento XML de entrada deve referenciar o endereço de email e a definição da chave nesse campo.
 
 ```
 <recipient _key="email" email= "john.doe@adobe.com"/>

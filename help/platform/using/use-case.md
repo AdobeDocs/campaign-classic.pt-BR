@@ -6,10 +6,10 @@ audience: platform
 content-type: reference
 topic-tags: filtering-data
 exl-id: 85ded096-7d27-41b3-8ef2-93f5ca8def82
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
-workflow-type: ht
+source-git-commit: f000cb8bae164c22d1ede15db4e763cf50530674
+workflow-type: tm+mt
 source-wordcount: '257'
-ht-degree: 100%
+ht-degree: 90%
 
 ---
 
@@ -51,7 +51,7 @@ Siga as etapas abaixo:
    ![](assets/s_ncs_user_filter_parameters.png)
 
 1. Clique em **[!UICONTROL Save]** para adicionar um filtro aos filtros predefinidos desse tipo de lista.
-1. Agora você pode usar esse filtro na guia **[!UICONTROL Subscriptions]** do perfil do recipient e também acessar o filtro &quot;Unknown e-mail format&quot; clicando no botão **[!UICONTROL Filters]**.
+1. Agora você pode usar esse filtro na **[!UICONTROL Subscriptions]** guia do perfil do recipient; você pode acessar o filtro &quot;Unknown email format&quot; clicando no link **[!UICONTROL Filters]** botão.
 
    ![](assets/s_ncs_user_filter_on_events.png)
 

@@ -6,10 +6,10 @@ audience: campaign
 content-type: reference
 topic-tags: orchestrate-campaigns
 exl-id: 8cbb2445-f5e4-4a25-ba7e-56e39ca9d3ce
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
-workflow-type: ht
+source-git-commit: f000cb8bae164c22d1ede15db4e763cf50530674
+workflow-type: tm+mt
 source-wordcount: '2434'
-ht-degree: 100%
+ht-degree: 99%
 
 ---
 
@@ -252,6 +252,7 @@ Para selecionar uma lista de operadores, clique no link **[!UICONTROL Edit...]**
 >* Se uma lista de revisores for definida, um trabalho será aprovado assim que um revisor aceitá-lo. O link de aprovação relevante não é mais oferecido no painel. Quando o envio de notificações estiver habilitado, se outro revisor clicar no link de aprovação na mensagem de notificação, será exibida uma notificação de que outro operador já aprovou a tarefa.
 >* Você pode definir um agendamento de aprovação para a campanha na seção inferior da janela de edição do revisor. Por padrão, os revisores têm três dias a partir da data de envio para aprovar um processo. É possível configurar um lembrete que é enviado automaticamente para os operadores relacionados antes do prazo de aprovação.
 >* Você pode adicionar lembretes desta seção.
+
 >
 
 
@@ -378,4 +379,4 @@ Na data da solicitação de extração, o arquivo de extração é criado, e o s
 
 Você pode visualizar o conteúdo do arquivo extraído (clicando no nome), aprová-lo ou, se necessário, alterar o formato e iniciar novamente a extração utilizando os links no painel.
 
-Depois que o arquivo for aprovado, você poderá enviar o e-mail de notificação para o roteador. Para obter mais informações, consulte [Iniciar um delivery offline](../../campaign/using/marketing-campaign-deliveries.md#starting-an-offline-delivery).
+Depois que o arquivo tiver sido aprovado, você poderá enviar o email de notificação para o roteador. Para obter mais informações, consulte [Iniciar um delivery offline](../../campaign/using/marketing-campaign-deliveries.md#starting-an-offline-delivery).

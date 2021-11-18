@@ -6,8 +6,8 @@ audience: platform
 content-type: reference
 topic-tags: importing-and-exporting-data
 exl-id: 4582b524-2b6d-484c-bace-29d2e69f60e9
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
-workflow-type: ht
+source-git-commit: f000cb8bae164c22d1ede15db4e763cf50530674
+workflow-type: tm+mt
 source-wordcount: '995'
 ht-degree: 100%
 
@@ -177,7 +177,7 @@ Siga as etapas abaixo:
    * Mantenha a opção **[!UICONTROL Management of duplicates]** no modo **[!UICONTROL Update]** de forma que registros existentes no banco de dados sejam modificados com dados do arquivo de texto.
    * Posicione o cursor no nó **[!UICONTROL Last name (@lastName)]** e selecione a opção **[!UICONTROL Update only if destination is empty]**.
    * Repita essa operação para o nó **[!UICONTROL Company (@company)]**.
-   * Atribua uma chave de reconciliação aos campos **[!UICONTROL Birth date]**, **[!UICONTROL E-mail]** e **[!UICONTROL First name]**.
+   * Atribua uma chave de reconciliação aos campos **[!UICONTROL Birth date]**, **[!UICONTROL Email]** e **[!UICONTROL First name]**.
 
       ![](assets/s_ncs_user_import_example04_03.png)
 
@@ -225,7 +225,7 @@ Neste exemplo, você verá que determinados campos no arquivo de texto têm um v
    * Selecione a opção **[!UICONTROL Reject entity]** para o campo **[!UICONTROL Management of doubles]**.
    * Deixe a opção **[!UICONTROL Management of duplicates]** no modo **[!UICONTROL Update]** para os registros existentes no banco de dados a serem modificados com dados do arquivo de texto.
    * Posicione o cursor no nó **[!UICONTROL Account number (@account)]** e selecione a opção **[!UICONTROL Take empty values into account]**.
-   * Selecione os campos **[!UICONTROL Birth date]**, **[!UICONTROL E-mail]** e **[!UICONTROL First name]** e atribua a eles uma chave de reconciliação.
+   * Selecione os campos **[!UICONTROL Birth date]**, **[!UICONTROL Email]** e **[!UICONTROL First name]** e atribua a eles uma chave de reconciliação.
 
       ![](assets/s_ncs_user_import_example04_04.png)
 

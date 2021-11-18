@@ -6,7 +6,7 @@ audience: installation
 content-type: reference
 topic-tags: initial-configuration
 exl-id: 8b07447c-9a86-4b56-8d29-e0b01357a6ec
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: f000cb8bae164c22d1ede15db4e763cf50530674
 workflow-type: tm+mt
 source-wordcount: '3048'
 ht-degree: 3%
@@ -19,13 +19,13 @@ ht-degree: 3%
 
 >[!NOTE]
 >
->As configurações do lado do servidor só podem ser executadas pelo Adobe para implantações hospedadas pelo Adobe. Para saber mais sobre as diferentes implantações, consulte a seção [Modelos de hospedagem](../../installation/using/hosting-models.md) ou [esta página](../../installation/using/capability-matrix.md).
+>As configurações do lado do servidor só podem ser executadas pelo Adobe para implantações hospedadas pelo Adobe. Para saber mais sobre as diferentes implantações, consulte [Modelos de hospedagem](../../installation/using/hosting-models.md) seção ou [esta página](../../installation/using/capability-matrix.md).
 
 ## Assistente de implantação {#deployment-wizard}
 
 Um assistente gráfico, disponível no console do cliente Adobe Campaign, permite definir os parâmetros da instância à qual você se conectará.
 
-Para iniciar o assistente de implantação, selecione **Tools > Advanced > Deployment wizard**.
+Para iniciar o assistente de implantação, selecione **Ferramentas > Avançado > Assistente de implantação**.
 
 ![](assets/s_ncs_install_deployment_wiz_01.png)
 
@@ -53,7 +53,7 @@ A seção inferior da janela permite selecionar as opções a serem ativadas.
 
 * **[!UICONTROL Customer identifier used in billing]** : pode ser o nome da instância e o número da versão.
 * **[!UICONTROL Common name of the customer]** : Insira uma sequência de caracteres com o nome da empresa. Essas informações podem ser usadas nos links de unsubscription.
-* **[!UICONTROL Namespace]** : Insira um identificador curto em minúsculas. O objetivo é distinguir entre sua configuração específica e a configuração de fábrica no caso de uma atualização. O namespace padrão é **cus** - para cliente.
+* **[!UICONTROL Namespace]** : Insira um identificador curto em minúsculas. O objetivo é distinguir entre sua configuração específica e a configuração de fábrica no caso de uma atualização. O namespace padrão é **cus** - para clientes.
 
 ### Opções técnicas {#technical-options}
 
@@ -61,9 +61,9 @@ A seção inferior da janela permite selecionar as opções a serem ativadas.
 
 As seguintes opções estão disponíveis:
 
-* **[!UICONTROL Email channel]** : para ativar o delivery de email. Consulte [Parâmetros do canal de email](#email-channel-parameters).
+* **[!UICONTROL Email channel]** : para ativar o delivery de email. Consulte [Parâmetros de canal de email](#email-channel-parameters).
 * **[!UICONTROL Tracking]** : Para ativar o rastreamento da população do target (aberturas e cliques). Consulte [Configuração de rastreamento](#tracking-configuration).
-* **[!UICONTROL Managing bounced emails]** : Para definir a conta POP usada para coletar emails recebidos. Consulte [Gerenciamento de emails devolvidos](#managing-bounced-emails).
+* **[!UICONTROL Managing bounced emails]** : Para definir a conta POP usada para coletar o email de entrada. Consulte [Gestão de emails devolvidos](#managing-bounced-emails).
 * **[!UICONTROL LDAP integration]** : Para configurar a autenticação do usuário por meio de um diretório LDAP. Consulte [Conexão por meio do LDAP](../../installation/using/connecting-through-ldap.md).
 
 ## Parâmetros de canal de email {#email-channel-parameters}
@@ -80,25 +80,25 @@ Indique os seguintes parâmetros:
 
 * **[!UICONTROL Sender name]** : Nome do remetente,
 * **[!UICONTROL Sender address]** : O endereço do remetente,
-* **[!UICONTROL Reply address text]** : O nome, que é personalizável, que será usado quando o recipient clicar no  **[!UICONTROL Reply]** botão em seu software cliente de email,
-* **[!UICONTROL Reply address]** : O endereço de email a ser usado quando o recipient clicar no  **[!UICONTROL Reply]** botão em seu software de cliente de email,
+* **[!UICONTROL Reply address text]** : O nome, que é personalizável, que será usado quando o recipient clicar no botão **[!UICONTROL Reply]** no software cliente de email,
+* **[!UICONTROL Reply address]** : O endereço de email a ser usado quando o recipient clicar no **[!UICONTROL Reply]** no software cliente de email,
 * **[!UICONTROL Error address]** : Endereço de email de mensagens com erros. Esse é o endereço técnico usado para lidar com emails de devolução, incluindo emails recebidos pelo servidor do Adobe Campaign devido a endereços de destino inexistentes.
 
-Além disso, você pode especificar as **máscaras** autorizadas para o endereço do remetente e o endereço de erro. Se necessário, essas máscaras podem ser separadas usando vírgulas. Essa configuração é opcional. Quando os campos são inseridos, o Adobe Campaign verifica no momento do delivery (durante a análise, se o endereço não inclui nenhuma variável) se os endereços são válidos. Esse modo operacional garante que não sejam usados endereços que possam causar problemas de delivery. Os endereços de delivery devem ser configurados no servidor de delivery.
+Além disso, você pode especificar a variável **máscaras** autorizado para o endereço do remetente e o endereço de erro. Se necessário, essas máscaras podem ser separadas usando vírgulas. Essa configuração é opcional. Quando os campos são inseridos, o Adobe Campaign verifica no momento do delivery (durante a análise, se o endereço não inclui nenhuma variável) se os endereços são válidos. Esse modo operacional garante que não sejam usados endereços que possam causar problemas de delivery. Os endereços de delivery devem ser configurados no servidor de delivery.
 
 ### Caracteres autorizados em endereços {#characters-authorized-in-addresses}
 
 <!--This window enables you to define, for all email campaigns, the delivery and address-quality management options.-->
 
-No banco de dados do Adobe Campaign, todos os endereços de email devem ser criados da seguinte maneira: `x@y.z`. Os caracteres **x**, **y** e **z** não devem estar vazios e não devem incluir caracteres não autorizados.
+No banco de dados do Adobe Campaign, todos os endereços de email devem ser criados da seguinte maneira: `x@y.z`. O **x**, **y** e **z** Os caracteres não devem estar vazios e não devem incluir caracteres não autorizados.
 
 Você pode definir aqui os caracteres autorizados (&#39;política de dados&#39;) no campo de email do banco de dados. Os caracteres não incluídos na lista serão proibidos e, portanto, recusados ao inserir informações no banco de dados por meio da interface, por meio de um formulário web e também ao importar dados.
 
-Há duas listas disponíveis: **Apenas europeu** ou **Apenas EUA**. Outros caracteres podem ser adicionados, se necessário.
+Há duas listas disponíveis: **Somente europeu** ou **Somente EUA**. Outros caracteres podem ser adicionados, se necessário.
 
 ### Parâmetros de entrega {#delivery-parameters}
 
-Os **Parâmetros avançados...O link** permite acessar opções de entrega, parâmetros vinculados a tentativas e quarentenas.
+O **Parâmetros avançados...** O link permite acessar opções de entrega, parâmetros vinculados a tentativas e quarentenas.
 
 ![](assets/s_ncs_install_deployment_wiz_05.png)
 
@@ -113,7 +113,7 @@ As seguintes opções estão disponíveis:
 
 ### Parâmetros de nova tentativa {#retry-parameters}
 
-As informações sobre as recuperações são fornecidas nos campos **Recuperação de períodos** e **Número de recuperações**: quando um recipient está inacessível, por exemplo, se sua caixa de entrada estiver cheia, por padrão, o programa tentará entrar em contato com ele 5 vezes, com um intervalo de uma hora entre cada tentativa (durante o tempo máximo de delivery). Esses valores podem ser alterados para atender às suas necessidades.
+As informações sobre as recuperações são fornecidas no **Períodos de recuperação** e **Número de recuperações** campos: quando um recipient está inacessível, por exemplo, se sua caixa de entrada estiver cheia, por padrão, o programa tentará entrar em contato com ele 5 vezes, com um intervalo de uma hora entre cada tentativa (durante o tempo máximo de delivery). Esses valores podem ser alterados para atender às suas necessidades.
 
 ### Parâmetros de quarentena {#quarantine-parameters}
 
@@ -126,7 +126,7 @@ As opções de configuração para quarentenas são as seguintes:
 
 O email de devolução é extremamente importante para qualificar erros de delivery. Esses erros são categorizados no NP@I depois que as regras determinarem sua causa.
 
-Esta etapa só estará disponível se as opções de gerenciamento **Email channel** e **Bounce mail** estiverem selecionadas na primeira etapa do assistente de implantação. Consulte [Parâmetros gerais](#general-parameters).
+Essa etapa só estará disponível se a variável **Canal de email** e **Email de devolução** as opções de gerenciamento são selecionadas na primeira etapa do assistente de implantação. Consulte [Parâmetros gerais](#general-parameters).
 
 Esse estágio permite definir configurações para gerenciar emails de devolução.
 
@@ -138,16 +138,16 @@ Indique os parâmetros a serem conectados à conta para recuperar emails recebid
 
 * **[!UICONTROL Label]** : Nome que inclui todos os parâmetros fornecidos a seguir,
 * **[!UICONTROL Server]** : Servidor usado para recuperar email de devolução (email de entrada),
-* **[!UICONTROL Security]** : Se necessário, selecione  **[!UICONTROL SSL]** na lista suspensa ,
+* **[!UICONTROL Security]** : Se necessário, selecione **[!UICONTROL SSL]** na lista suspensa,
 * **[!UICONTROL Port]** : porta do servidor (geralmente 110),
 * **[!UICONTROL Account]** : Nome da conta usada para emails de devolução,
 * **[!UICONTROL Password]** : Senha associada à conta.
 
-Depois que as configurações de POP forem especificadas, clique em **Test** para verificar se estão corretas.
+Depois que as configurações de POP forem especificadas, clique em **Teste** para ter certeza de que estão corretas.
 
 ### Emails de devolução não processados {#unprocessed-bounce-mails}
 
-As rejeições são feitas automaticamente pelo Adobe Campaign, aplicando as regras listadas no nó **Administration > Campaign Management > Non deliverables Management > Delivery log qualification** . Para obter mais informações, consulte [Bounce mail management](../../delivery/using/understanding-delivery-failures.md#bounce-mail-management).
+As rejeições são feitas automaticamente pela Adobe Campaign, aplicando as regras listadas na **Administração > Gerenciamento de campanhas > Gerenciamento de não entregáveis > Qualificação do log de delivery** nó . Para obter mais informações, consulte [Gestão de emails de devolução](../../delivery/using/understanding-delivery-failures.md#bounce-mail-management).
 
 As rejeições não processadas não são exibidas na interface do Adobe Campaign. Eles são excluídos automaticamente, a menos que sejam transferidos para uma caixa de entrada de terceiros usando os seguintes campos:
 
@@ -157,15 +157,15 @@ As rejeições não processadas não são exibidas na interface do Adobe Campaig
 
 >[!IMPORTANT]
 >
->Para encaminhar emails de devolução não processados, o Adobe recomenda preencher apenas o campo **[!UICONTROL Address for errors]**. No entanto, verifique se o endereço usado é verificado regularmente, pois isso pode colocar uma carga pesada em seu servidor de email. Entre em contato com o executivo da sua conta para obter mais informações.
+>Para encaminhar emails de devolução não processados, o Adobe recomenda preencher apenas o **[!UICONTROL Address for errors]** campo. No entanto, verifique se o endereço usado é verificado regularmente, pois isso pode colocar uma carga pesada em seu servidor de email. Entre em contato com o executivo da sua conta para obter mais informações.
 
 ## Configuração de rastreamento {#tracking-configuration}
 
 A próxima etapa permite configurar o rastreamento para a instância. A instância deve ser declarada e registrada com os servidores de rastreamento.
 
-Esta etapa só é oferecida quando as opções **Email channel** e **Tracking** são selecionadas na primeira página do assistente de implantação. Consulte [Parâmetros gerais](#general-parameters).
+Essa etapa só é oferecida quando a variável **Canal de email** e **Rastreamento** são selecionadas na primeira página do assistente de implantação. Consulte [Parâmetros gerais](#general-parameters).
 
-Para obter informações mais detalhadas sobre o rastreamento Web (modo de rastreamento, criação e inserção de tags...), consulte [este documento](../../configuration/using/about-web-tracking.md).
+Para obter informações mais detalhadas sobre o rastreamento web (modo de rastreamento, criação e inserção de tags...), consulte [este documento](../../configuration/using/about-web-tracking.md).
 
 ### Princípio operacional {#operating-principle}
 
@@ -173,7 +173,7 @@ Ao ativar o rastreamento em uma instância, os URLs nos deliveries são alterado
 
 * As informações sobre URLs externas (seguras ou não) inseridas nesta página do assistente de implantação são usadas para criar o novo URL. Além dessas informações, o link modificado contém: os identificadores do delivery, o recipient e o URL.
 
-   As informações de rastreamento são coletadas pela Adobe Campaign no(s) servidor(es) de rastreamento para enriquecer os perfis do recipient e os dados vinculados ao delivery (guias **[!UICONTROL Tracking]** ).
+   As informações de rastreamento são coletadas pela Adobe Campaign no(s) servidor(es) de rastreamento para enriquecer os perfis do recipient e os dados vinculados ao delivery ( **[!UICONTROL Tracking]** guias).
 
    As informações sobre URLs internos são usadas somente pelo servidor de aplicativos do Adobe Campaign para entrar em contato com o(s) servidor(es) de rastreamento.
 
@@ -181,7 +181,7 @@ Ao ativar o rastreamento em uma instância, os URLs nos deliveries são alterado
 
 * Depois que os URLs forem configurados, é necessário ativar o rastreamento. Para fazer isso, a instância deve ser registrada no(s) servidor(es) de rastreamento.
 
-   Para obter mais informações, consulte [Salvar rastreamento](#saving-tracking).
+   Para obter mais informações, consulte [Salvar o rastreamento](#saving-tracking).
 
 ### Servidor de rastreamento {#tracking-server}
 
@@ -190,7 +190,7 @@ Ao ativar o rastreamento em uma instância, os URLs nos deliveries são alterado
 Para garantir a eficiência do rastreamento nessa instância, as seguintes informações devem ser exibidas:
 <!--With Mid-sourcing architecture, you can externalize tracking management. To do this:-->
 
-* **[!UICONTROL External URL]** e/ou  **[!UICONTROL Secure external URL]** : Insira a URL de redirecionamento a ser usada no email a ser enviado.
+* **[!UICONTROL External URL]** e/ou **[!UICONTROL Secure external URL]** : Insira a URL de redirecionamento a ser usada no email a ser enviado.
 * **[!UICONTROL Internal URL(s)]** : Os URLs usados somente pelo servidor do Adobe Campaign para entrar em contato com os servidores de rastreamento para coletar logs e fazer upload dos URLs. Não é necessário associá-lo à instância.
 
    Se você não especificar um URL, o URL de rastreamento será usado por padrão.
@@ -198,7 +198,7 @@ Para garantir a eficiência do rastreamento nessa instância, as seguintes infor
 Com a arquitetura Mid-sourcing, você pode externalizar o gerenciamento de rastreamento. Para fazer isso:
 
 1. Selecione a opção **[!UICONTROL Externalize tracking management]** : isso permite usar um servidor mid-sourcing como um servidor de rastreamento.
-1. Preencha os campos **[!UICONTROL External account]** e **[!UICONTROL Instance name]** para se conectar ao servidor mid-sourcing.
+1. Preencha o **[!UICONTROL External account]** e **[!UICONTROL Instance name]** campos para se conectar ao servidor mid-sourcing.
 
    Para obter mais informações, consulte [Servidor Mid-sourcing](../../installation/using/mid-sourcing-server.md).
 
@@ -210,7 +210,7 @@ Com a arquitetura Mid-sourcing, você pode externalizar o gerenciamento de rastr
 
 Depois que os URLs forem preenchidos, você deverá registrar o servidor de rastreamento.
 
-Clique no link **Registration on the tracking server(s)** e selecione uma das opções disponíveis.
+Clique no link **Registro no(s) servidor(es) de rastreamento** e selecione uma das opções disponíveis.
 
 ![](assets/s_ncs_install_deployment_wiz_09.png)
 
@@ -222,7 +222,7 @@ Há três tipos possíveis de arquitetura para implementar o rastreamento:
 
    ![](assets/s_ncs_install_deployment_wiz_11.png)
 
-   Insira a senha da conta **internal** no(s) servidor(es) de redirecionamento para configurar a instância de rastreamento.
+   Digite a senha do **interno** conta no(s) servidor(es) de redirecionamento para configurar a instância de rastreamento.
 
    >[!NOTE]
    >
@@ -236,7 +236,7 @@ Há três tipos possíveis de arquitetura para implementar o rastreamento:
 
    ![](assets/s_ncs_install_deployment_wiz_10.png)
 
-   Insira a senha da conta **internal** no(s) servidor(es) de redirecionamento para configurar a instância de rastreamento.
+   Digite a senha do **interno** conta no(s) servidor(es) de redirecionamento para configurar a instância de rastreamento.
 
    >[!NOTE]
    >
@@ -246,7 +246,7 @@ Há três tipos possíveis de arquitetura para implementar o rastreamento:
 
 1. **Validar uma instância de rastreamento já pré-configurada para você**
 
-   Essa opção é usada quando você não tem a senha para a conta **internal** ; Nesse caso, uma conta de rastreamento é pré-configurada para você no(s) servidor(es) de rastreamento. Insira a senha da conta de rastreamento do(s) servidor(es) de redirecionamento para validar a instância de rastreamento.
+   Essa opção é usada quando você não tem a senha do **interno** Conta; Nesse caso, uma conta de rastreamento é pré-configurada para você no(s) servidor(es) de rastreamento. Insira a senha da conta de rastreamento do(s) servidor(es) de redirecionamento para validar a instância de rastreamento.
 
    ![](assets/s_ncs_install_deployment_wiz_17.png)
 
@@ -258,7 +258,7 @@ De volta à janela anterior, uma mensagem confirma o registro no nível do servi
 
 ![](assets/s_ncs_install_deployment_wiz_tracking_ok.png)
 
-Os parâmetros vinculados às pesquisas de URL **não devem ser modificados** para uma instalação padrão. Para todos os outros parâmetros, entre em contato com o Adobe.
+Os parâmetros vinculados às pesquisas de URL **não deve ser modificado** para uma instalação padrão. Para todos os outros parâmetros, entre em contato com o Adobe.
 
 ## Parâmetros de canal móvel {#mobile-channel-parameters}
 
@@ -275,19 +275,19 @@ A próxima etapa permite definir configurações padrão para deliveries a dispo
 Insira a seguinte informação:
 
 * **[!UICONTROL Label]** : Insira um nome para esta conta de push de SMS/Wap. Por exemplo, você pode desejar usar o nome do roteador.
-* Para os campos **[!UICONTROL Server]**, **[!UICONTROL Port]**, **[!UICONTROL Account]**, **[!UICONTROL Password]**, **[!UICONTROL Connector]**, **[!UICONTROL Send Endpoint]**, **[!UICONTROL Reception Endpoint]**, **[!UICONTROL Notification Endpoint]**: Entre em contato com seu provedor de serviços para obter as configurações necessárias.
+* Para o **[!UICONTROL Server]**, **[!UICONTROL Port]**, **[!UICONTROL Account]**, **[!UICONTROL Password]**, **[!UICONTROL Connector]**, **[!UICONTROL Send Endpoint]**, **[!UICONTROL Reception Endpoint]**, **[!UICONTROL Notification Endpoint]** campos: Entre em contato com seu provedor de serviços para obter as configurações necessárias.
 
 ### Parâmetros do SMS enviado {#parameters-of-sms-sent}
 
-Na lista suspensa **Priority**: Selecione &quot;Normal&quot;, &quot;Alto&quot; ou &quot;Urgente&quot; para aplicá-lo às mensagens a serem enviadas.
+No **Prioridade** lista suspensa: Selecione &quot;Normal&quot;, &quot;Alto&quot; ou &quot;Urgente&quot; para aplicá-lo às mensagens a serem enviadas.
 
 ### Parâmetros avançados {#advanced-parameters}
 
-Os **Parâmetros avançados...O link** permite acessar as opções de nova tentativa e quarentena.
+O **Parâmetros avançados...** permite acessar as opções de nova tentativa e quarentena.
 
 ![](assets/s_ncs_install_deployment_wiz_13.png)
 
-As informações sobre tentativas estão disponíveis nos campos **Period of retries** e **Number of retries**: Quando um dispositivo móvel está inacessível, por padrão, o programa tentará novamente 5 vezes em intervalos de pelo menos 15 minutos (para o período máximo de entrega). Esses valores podem ser adaptados às suas necessidades.
+As informações sobre tentativas estão disponíveis no **Período de tentativas** e **Número de tentativas** campos: Quando um dispositivo móvel está inacessível, por padrão, o programa tentará novamente 5 vezes em intervalos de pelo menos 15 minutos (para o período máximo de entrega). Esses valores podem ser adaptados às suas necessidades.
 
 As opções de configuração para quarentenas são as seguintes:
 
@@ -301,7 +301,7 @@ Esse estágio permite incluir as preferências da política de dados.
 ![](assets/s_ncs_install_deployment_wiz_14.png)
 
 * **[!UICONTROL Consider all phone numbers as international ones]** : Quando essa opção é selecionada, o aplicativo aplica o formato internacional a números de telefone (o prefixo do país é obrigatório, pois o número de dígitos não será verificado antes de aplicar a formatação). Se esta opção não estiver selecionada, você deve colocar o prefixo do número de telefone internacional com &quot;+&quot; ou &quot;00&quot; sozinho.
-* **[!UICONTROL Store all phone numbers using the international format]** : Essa opção só diz respeito aos números de  **** telefones domésticos que são importados ou editados. Defina se deseja usar um formato interno (como 425 555 0150) ou o formato internacional (por exemplo, +1 425 555 0150)
+* **[!UICONTROL Store all phone numbers using the international format]** : Esta opção só diz respeito **interno** números de telefone importados ou editados. Defina se deseja usar um formato interno (como 425 555 0150) ou o formato internacional (por exemplo, +1 425 555 0150)
 
 ## Acesso através da Internet {#access-from-the-internet}
 
@@ -323,7 +323,7 @@ Use esta página para preencher os URLs do servidor para:
 1. Acesse o servidor de aplicativos para obter recursos não expostos na Web: formulários, intranet, páginas de confirmação.
 1. Acesse as mirror pages dos deliveries.
 
-   Uma mirror page é uma página dinâmica que exibe o conteúdo do email. Ele é acessado por um link inserido na mensagem enviada ao recipient e pode conter elementos personalizados. A mirror page dá ao recipient a possibilidade de ler a mensagem em um navegador de Internet em vez do software de email, independentemente do formato de delivery (texto ou HTML). No entanto, as mirror pages só são geradas para um determinado delivery se o conteúdo HTML necessário tiver sido definido.
+   Uma mirror page é uma página dinâmica que exibe o conteúdo do email. Ele é acessado por um link inserido na mensagem enviada ao recipient e pode conter elementos personalizados. A mirror page oferece ao recipient a possibilidade de ler a mensagem em um navegador de Internet em vez do software de email, independentemente do formato de delivery (texto ou HTML). No entanto, as mirror pages só são geradas para um determinado delivery se o conteúdo de HTML necessário tiver sido definido.
 
 O Adobe Campaign permite diferenciar esses três URLs para espalhar a carga em várias plataformas.
 
@@ -339,11 +339,11 @@ Para serem vistas de fora, as imagens usadas em e-mails e recursos públicos vin
 
 Para esta etapa, você precisa inserir:
 
-1. O novo URL de recurso público. Para obter mais informações, consulte a seção [URL de recursos públicos](#public-resources-url) .
-1. O modo de detecção de imagem em um delivery. Para obter mais informações, consulte a seção [Detecção de imagem de delivery](#delivery-image-detection) .
-1. Opções de publicação. Para obter mais informações, consulte a seção [Publication modes](#publication-modes) .
+1. O novo URL de recurso público. Para obter mais informações, consulte [URL de recursos públicos](#public-resources-url) seção.
+1. O modo de detecção de imagem em um delivery. Para obter mais informações, consulte [Detecção de imagem de delivery](#delivery-image-detection) seção.
+1. Opções de publicação. Para obter mais informações, consulte [Modos de publicação](#publication-modes) seção.
 
-Os recursos públicos podem ser acessados por meio do nó **Administration > Resources > Online > Public resources** da árvore do Adobe Campaign. Eles são coletados em uma biblioteca e podem ser incluídos em e-mails, mas também usados em campanhas ou tarefas, e na gestão de conteúdo.
+Os recursos públicos podem ser acessados por meio do **Administração > Recursos > Online > Recursos públicos** nó da árvore do Adobe Campaign. Eles são coletados em uma biblioteca e podem ser incluídos em e-mails, mas também usados em campanhas ou tarefas, e na gestão de conteúdo.
 
 ![](assets/install_pub_resources_view.png)
 
@@ -353,23 +353,23 @@ O primeiro campo permite especificar o início do URL usado para os recursos ap�
 
 Em um delivery, você pode usar imagens armazenadas na biblioteca de recursos públicos ou qualquer outra imagem ou imagem local armazenada em um servidor.
 
-* Para imagens de email, o URL **https://** server **/res/img**.
+* Para imagens de email, a variável **https://** server **/res/img** URL.
 
    Esse valor pode ser substituído para cada delivery.
 
-* Para recursos públicos, o URL **https://** server **/res/** instance ****onde **instance**é o nome da instância de rastreamento.
+* Para recursos públicos, o URL **https://** server **/res/** instância ****em que **instância**é o nome da instância de rastreamento.
 
 ### Detecção de imagem de delivery {#delivery-image-detection}
 
 Em um delivery, você pode usar imagens armazenadas na biblioteca de recursos públicos ou qualquer outra imagem ou imagem local armazenada em um servidor.
 
-O campo **URL masks** permite especificar a lista de máscaras de URL a serem ignoradas ao carregar imagens automaticamente. Por exemplo, se você usar imagens armazenadas em um site acessível externamente, principalmente em um site da Internet, poderá inserir o URL do site nesse campo.
+O campo **Máscaras de URL** permite especificar a lista de máscaras de URL a serem ignoradas ao carregar imagens automaticamente. Por exemplo, se você usar imagens armazenadas em um site acessível externamente, principalmente em um site da Internet, poderá inserir o URL do site nesse campo.
 
 ![](assets/s_ncs_install_deployment_wiz_img_mask.png)
 
 Você pode especificar várias máscaras de URL usando uma vírgula para separar cada uma delas.
 
-* Para obter informações sobre o uso e o gerenciamento de imagens em emails, consulte [esta seção](../../delivery/using/defining-the-email-content.md#adding-images).
+* Para obter informações sobre como usar e gerenciar imagens em emails, consulte [esta seção](../../delivery/using/defining-the-email-content.md#adding-images).
 * No assistente do delivery, as imagens chamadas desses URLs terão o status &quot;Ignorado&quot;.
 
 ### Modos de publicação {#publication-modes}
@@ -394,7 +394,7 @@ Os seguintes modos de publicação estão disponíveis:
 
    Em seguida, digite a senha.
 
-   Os parâmetros do(s) servidor(es) dedicado(s) são fornecidos nos campos **[!UICONTROL Media URL(s)]**, **[!UICONTROL Password]** e **[!UICONTROL Instance name]**.
+   Os parâmetros do(s) servidor(es) dedicado(s) são fornecidos no **[!UICONTROL Media URL(s)]**, **[!UICONTROL Password]** e **[!UICONTROL Instance name]** campos.
 
    ![](assets/s_ncs_install_images_upload_b.png)
 
@@ -411,19 +411,19 @@ Os seguintes modos de publicação estão disponíveis:
       [INSTALL]/copyToFrontal.vbs "$(XTK_INSTALL_DIR)\var\<instance>\upload\" "img1,img2,img3"
       ```
 
-      onde `[INSTALL]` é o caminho de acesso para a pasta de instalação do Adobe Campaign.
+      em que `[INSTALL]` é o caminho de acesso para a pasta de instalação do Adobe Campaign.
 
    * No Unix, verifique se o script é executável.
 
-Para imagens, ele deve copiá-las da pasta &quot;images&quot; especificada por meio da opção **NmsDelivery_ImageSubDirectory** para um ou mais servidores frontais. Esses servidores armazenarão as imagens para torná-las acessíveis por meio do novo URL configurado.
+Para imagens, ele deve copiá-las da pasta &quot;imagens&quot; especificada por meio do **NmsDelivery_ImageSubDirectory** para um ou mais servidores frontais. Esses servidores armazenarão as imagens para torná-las acessíveis por meio do novo URL configurado.
 
 No caso de publicação em um servidor Adobe Campaign sem um script de publicação manual, por padrão, as imagens de um delivery são armazenadas no `$(XTK_INSTALL_DIR)/var/res/img/ directory`. O URL correspondente é o seguinte: **`https://server/res/img`**.
 
-`XTK_INSTALL_DIR)/var/res/$(INSTANCE_NAME)`. O URL correspondente é o seguinte: **`https://server/res/instance`** onde instância é o nome da instância de rastreamento.
+`XTK_INSTALL_DIR)/var/res/$(INSTANCE_NAME)`. O URL correspondente é o seguinte: **`https://server/res/instance`** where instance é o nome da instância de rastreamento.
 
 >[!NOTE]
 >
->É possível alterar o diretório de armazenamento de recursos públicos. Para obter mais informações, consulte [Gerenciamento de recursos públicos](#managing-public-resources).
+>É possível alterar o diretório de armazenamento de recursos públicos. Para obter mais informações, consulte [Gestão dos recursos públicos](#managing-public-resources).
 
 ### Sincronização de recursos públicos {#synchronizing-public-resources}
 
@@ -431,7 +431,7 @@ Essa funcionalidade permite **sincronizar recursos públicos** em vários servid
 
 Se um recurso público não estiver presente no servidor de rastreamento ou se o recurso retornar um erro 404, o servidor de rastreamento tentará localizar o recurso em um dos servidores sobressalentes.
 
-A declaração e a configuração de servidores sobressalentes devem ser feitas no arquivo **serverConf.xml** do servidor de marketing. Todos os parâmetros disponíveis no **serverConf.xml** são listados nesta [seção](../../installation/using/the-server-configuration-file.md).
+A declaração e a configuração de servidores sobressalentes devem ser feitas no **serverConf.xml** arquivo. Todos os parâmetros disponíveis no **serverConf.xml** estão listadas neste [seção](../../installation/using/the-server-configuration-file.md).
 
 **Declaração**
 
@@ -443,7 +443,7 @@ A declaração e a configuração de servidores sobressalentes devem ser feitas 
 
 **Configuração**
 
-Para cada recurso público que deve ser sincronizado, é necessário adicionar um atributo de status ao elemento `<url>` na parte `<relay>`:
+Para cada recurso público que deve ser sincronizado, é necessário adicionar um atributo de status à variável `<url>` no `<relay>` parte:
 
 O atributo de status pode ser um dos três valores:
 
@@ -451,7 +451,7 @@ O atributo de status pode ser um dos três valores:
 
 * normal: Comportamento existente (sem sincronização)
 
-* blacklist: O URL é adicionado à  de lista de bloqueios se retornar um erro 404. A duração (em segundos) do URL que está na  de lista de bloqueios é definida por um atributo **timeout** cujo valor padrão é 60s.
+* blacklist: O URL é adicionado à  de lista de bloqueios se retornar um erro 404. A duração (em segundos) do URL que está sendo  é definida por um **timeout** atributo cujo valor padrão é 60s.
 
 A configuração pronta para uso da sincronização é:
 
@@ -493,4 +493,4 @@ A última etapa do assistente de implantação permite configurar a limpeza auto
 
 ![](assets/s_ncs_install_deployment_wiz_16.png)
 
-Os dados são excluídos automaticamente por meio do workflow de limpeza do banco de dados . Para obter mais informações sobre como configurar e operar esse workflow e detalhes sobre os itens excluídos, consulte este [documento](../../production/using/database-cleanup-workflow.md).
+Os dados são excluídos automaticamente por meio do workflow de limpeza do banco de dados . Para obter mais informações sobre como configurar e operar esse workflow e detalhes sobre os itens excluídos, consulte esta seção [documento](../../production/using/database-cleanup-workflow.md).
