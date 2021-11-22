@@ -27,9 +27,9 @@ Para obter uma melhor compreensão das tabelas integradas do Campaign e sua inte
 
 ## Extensão ou criação de schemas {#extending-or-creating-schemas}
 
-Para adicionar um campo, índice ou outro elemento a um dos esquemas de dados principais no Campaign, como a tabela de recipients (nms:recipient), é necessário estender esse schema. Para obter mais informações, consulte a seção [Extensão de um schema](../../configuration/using/extending-a-schema.md) .
+Para adicionar um campo, índice ou outro elemento a um dos esquemas de dados principais no Campaign, como a tabela de recipients (nms:recipient), é necessário estender esse schema. Para obter mais informações, consulte [Extensão de um schema](../../configuration/using/extending-a-schema.md) seção.
 
-Para adicionar um tipo de dados totalmente novo que não existe pronto para uso no Adobe Campaign (uma tabela de contratos, por exemplo), é possível criar um schema personalizado diretamente. Para obter mais informações, consulte a seção [Data schemas](../../configuration/using/data-schemas.md) .
+Para adicionar um tipo de dados totalmente novo que não existe pronto para uso no Adobe Campaign (uma tabela de contratos, por exemplo), é possível criar um schema personalizado diretamente. Para obter mais informações, consulte [Schemas de dados](../../configuration/using/data-schemas.md) seção.
 
 ![](assets/schemaextension_getting_started_1.png)
 
@@ -58,9 +58,9 @@ type="string" enum="exTransactionTypeEnum"/>
 
 >[!NOTE]
 >
->Você também pode empregar enumerações gerenciadas pelo usuário (normalmente em **[!UICONTROL Administration]** > **[!UICONTROL Platform]** ) para especificar os valores para um determinado campo. Essas são enumerações globais efetivamente e uma melhor opção se a enumeração puder ser usada fora do schema específico em que você está trabalhando.
+>Também é possível empregar enumerações gerenciadas pelo usuário (normalmente em **[!UICONTROL Administration]** > **[!UICONTROL Platform]** ) para especificar os valores de um determinado campo. Essas são enumerações globais efetivamente e uma melhor opção se a enumeração puder ser usada fora do schema específico em que você está trabalhando.
 
-Para saber mais sobre enumerações, consulte as seções [Enumerations](../../configuration/using/schema-structure.md#enumerations) e [`<enumeration>` element](../../configuration/using/schema/enumeration.md) .
+Para saber mais sobre enumerações, consulte a [Enumerações](../../configuration/using/schema-structure.md#enumerations) e [`<enumeration>` elemento](../../configuration/using/schema/enumeration.md) seções.
 
 ## Índice {#index}
 
@@ -83,19 +83,19 @@ Exemplos:
 </dbindex>
 ```
 
-O atributo **xpath** aponta para o campo no esquema que você deseja indexar.
+O **xpath** O atributo aponta para o campo no schema que você deseja indexar.
 
 >[!IMPORTANT]
 >
 >É importante lembrar que os ganhos de desempenho de leitura da consulta SQL fornecidos por índices também vêm com uma ocorrência de desempenho em registros de gravação. Por conseguinte, os índices devem ser utilizados com precaução.
 
-Para obter mais informações sobre índices, consulte a seção [Campos indexados](../../configuration/using/database-mapping.md#indexed-fields) .
+Para obter mais informações sobre os índices, consulte [Campos indexados](../../configuration/using/database-mapping.md#indexed-fields) seção.
 
 ## Teclas {#keys}
 
-Cada tabela deve ter pelo menos uma chave, e geralmente é automaticamente estabelecida no elemento principal do schema usando o atributo **@autopk=true** definido como &quot;true&quot;.
+Cada tabela deve ter pelo menos uma chave e geralmente é automaticamente estabelecida no elemento principal do schema usando o **@autopk=true** atributo definido como &quot;true&quot;.
 
-A chave primária também pode ser definida usando o atributo **internal** .
+A chave primária também pode ser definida usando o **interno** atributo.
 
 Exemplo:
 
@@ -105,21 +105,21 @@ Exemplo:
 </key>
 ```
 
-Neste exemplo, em vez de permitir que o atributo **@autopk** crie uma chave primária padrão chamada &quot;id&quot;, estamos especificando nossa própria chave primária &quot;householdId&quot;.
+Neste exemplo, em vez de deixar a variável **@autopk** criar uma chave primária padrão chamada &quot;id&quot; estamos especificando nossa própria chave primária &quot;householdId&quot;.
 
 >[!IMPORTANT]
 >
 >Ao criar um novo schema ou durante uma extensão de schema, você precisa manter o mesmo valor de sequência da chave primária (@pkSequence) para todo o schema.
 
-Para saber mais sobre chaves, consulte a seção [Gerenciamento de chaves](../../configuration/using/database-mapping.md#management-of-keys) .
+Para saber mais sobre as chaves, consulte [Gestão de chaves](../../configuration/using/database-mapping.md#management-of-keys) seção.
 
 ## Atributos (Campos) {#attributes--fields-}
 
-Os atributos permitem definir os campos que compõem o objeto de dados. Você pode usar o botão **[!UICONTROL Insert]** na barra de ferramentas da edição do schema para soltar modelos de atributos vazios em seu XML, onde o cursor está. Para obter mais informações, consulte a seção [Data schemas](../../configuration/using/data-schemas.md) .
+Os atributos permitem definir os campos que compõem o objeto de dados. Você pode usar o **[!UICONTROL Insert]** na barra de ferramentas da edição do schema para soltar modelos de atributos vazios em seu XML, onde está o cursor. Para obter mais informações, consulte [Schemas de dados](../../configuration/using/data-schemas.md) seção.
 
 ![](assets/schemaextension_getting_started_2.png)
 
-A lista completa de atributos está disponível na seção [`<attribute>` element](../../configuration/using/schema/attribute.md). Estes são alguns dos atributos mais usados:
+A lista completa de atributos está disponível na seção [`<attribute>` elemento](../../configuration/using/schema/attribute.md) seção. Estes são alguns dos atributos mais usados:
 
 * **@advanced**
 * **@dataPolicy**
@@ -136,9 +136,9 @@ A lista completa de atributos está disponível na seção [`<attribute>` elemen
 * **@xml**
 * **@type**
 
-   Para exibir uma tabela listando os mapeamentos dos tipos de dados gerados pelo Adobe Campaign para os diferentes sistemas de gerenciamento de banco de dados, consulte a seção [Mapping the types of Adobe Campaign/DBMS data](../../configuration/using/schema-structure.md#mapping-the-types-of-adobe-campaign-dbms-data) .
+   Para exibir uma tabela listando os mapeamentos dos tipos de dados gerados pelo Adobe Campaign para os diferentes sistemas de gerenciamento de banco de dados, consulte [Mapeamento dos tipos de dados do Adobe Campaign/DBMS](../../configuration/using/schema-structure.md#mapping-the-types-of-adobe-campaign-dbms-data) seção.
 
-Para obter mais informações sobre cada atributo, consulte a seção [Attribute description](../../configuration/using/schema/attribute.md).
+Para obter mais informações sobre cada atributo, consulte [Descrição do atributo](../../configuration/using/schema/attribute.md) seção.
 
 ### Exemplos {#examples}
 
@@ -154,13 +154,13 @@ Exemplo de uso de um atributo comum como modelo para um campo também marcado co
 <attribute name="mobile" label="Mobile" template="nms:common:phone" required="true" />
 ```
 
-Exemplo de um campo calculado que está oculto usando o atributo **@advanced**:
+Exemplo de um campo calculado que está oculto usando o **@advanced** atributo:
 
 ```
 <attribute name="domain" label="Email domain" desc="Domain of recipient email address" expr="GetEmailDomain([@email])" advanced="true" />
 ```
 
-Exemplo de um campo XML também armazenado em um campo SQL e que tem um atributo **@dataPolicy**.
+Exemplo de um campo XML também armazenado em um campo SQL e que tem um **@dataPolicy** atributo.
 
 ```
 <attribute name="secondaryEmail" label="Secondary email address" length="100" xml="true" sql="true" dataPolicy="email" />
@@ -176,7 +176,7 @@ Exemplo de um campo XML também armazenado em um campo SQL e que tem um atributo
 
 Os links são alguns dos últimos elementos no elemento principal do schema. Eles definem como todos os diferentes esquemas em sua instância estão relacionados uns com os outros.
 
-Os links são declarados no schema que contém a **chave estrangeira** da tabela à qual estão vinculados.
+Os links são declarados no schema que contém a variável **chave externa** da tabela à qual está vinculada.
 
 Existem três tipos de cardinalidade: 1-1, 1-N e N-N. É o tipo 1-N usado por padrão.
 
@@ -224,4 +224,4 @@ Para obter mais informações, consulte a seção [Atualização da estrutura do
 
 >[!NOTE]
 >
->Quando as modificações não afetam a estrutura do banco de dados, basta gerar os schemas novamente. Para fazer isso, selecione os esquemas a serem atualizados, clique com o botão direito do mouse e escolha **[!UICONTROL Actions > Regenerate selected schemas...]** . Para obter mais informações, consulte a seção [Regenerating schemas](../../configuration/using/regenerating-schemas.md) .
+>Quando as modificações não afetam a estrutura do banco de dados, basta gerar os schemas novamente. Para fazer isso, selecione os esquemas a serem atualizados, clique com o botão direito do mouse e escolha **[!UICONTROL Actions > Regenerate selected schemas...]** . Para obter mais informações, consulte [Regeneração de schemas](../../configuration/using/regenerating-schemas.md) seção.

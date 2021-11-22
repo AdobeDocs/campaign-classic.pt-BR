@@ -21,10 +21,10 @@ Esta seção contém procedimentos de solução de problemas relacionados a prob
 
 ## Problemas comuns e gerais {#common-and-general-issues}
 
-* Este [page](../../production/using/modules-and-frequent-issues.md) apresenta os problemas mais frequentes encontrados para os módulos listados.
-* Essa [página](../../production/using/workflow-execution.md) lista os procedimentos comuns de solução de problemas que você deve seguir ao enfrentar problemas com a execução do workflow.
-* Esta [página](../../production/using/lost-password.md) detalha como alterar ou recuperar uma senha perdida.
-* Essa [página](../../production/using/console-update.md) detalha como reativar a solicitação de atualização do console se você desativar a opção correspondente.
+* Essa [página](../../production/using/modules-and-frequent-issues.md) apresenta os problemas mais frequentes encontrados para os módulos listados.
+* Essa [página](../../production/using/workflow-execution.md) lista os procedimentos comuns de solução de problemas que devem ser seguidos ao enfrentar problemas com a execução do workflow.
+* Essa [página](../../production/using/lost-password.md) detalha como alterar ou recuperar uma senha perdida.
+* Essa [página](../../production/using/console-update.md) detalha como reativar a solicitação de atualização do console se você tiver desativado a opção correspondente.
 
 ## Solução de problemas de entrega {#delivery-troubleshooting}
 
@@ -32,7 +32,7 @@ Ações específicas podem ser executadas quando houver problemas com deliveries
 * [Problemas na capacidade de delivery](../../production/using/performance-and-throughput-issues.md#deliverability_issues)
 * [Problemas de exibição de imagem](../../production/using/image-display-issues.md)
 * [Imagem ausente](../../production/using/images-missing.md)
-* [Problemas com arquivos temporários](../../production/using/temporary-files.md)  (somente *modelos de hospedagem local*)
+* [Problemas de arquivos temporários](../../production/using/temporary-files.md) (*apenas modelos de hospedagem local*)
 
 **Tópicos relacionados**:
 

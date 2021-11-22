@@ -19,7 +19,7 @@ ht-degree: 5%
 
 ## Método simples {#simple-method}
 
-Esse método consiste em enviar uma chamada HTTP para o servidor de redirecionamento, inserindo uma tag **`<img>`** HTML no código-fonte HTML da página da Web que você deseja rastrear.
+Esse método consiste em enviar uma chamada HTTP para o servidor de redirecionamento ao inserir um **`<img>`** Tag HTML no código-fonte do HTML da página da Web que você deseja rastrear.
 
 >[!IMPORTANT]
 >
@@ -128,7 +128,7 @@ Quando as páginas da Web são geradas dinamicamente, é possível adicionar a t
 
 Se você quiser controlar as informações enviadas para o servidor de redirecionamento, a maneira mais confiável é executar a consulta HTTP de forma síncrona usando um idioma de geração de página.
 
-O URL que você constrói deve obedecer às regras de sintaxe definidas na tag [Web tracking : definition](../../configuration/using/web-tracking-tag--definition.md).
+O URL que você constrói deve obedecer às regras de sintaxe definidas em [Tag de rastreamento Web: definição](../../configuration/using/web-tracking-tag--definition.md).
 
 ![](assets/d_ncs_integration_webtracking_structure3.png)
 

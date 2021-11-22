@@ -31,7 +31,7 @@ Cada modo tem características específicas. O modo de rastreamento web &quot;pe
 >
 >A qualquer momento, o modo padrão pode ser alterado no assistente de implantação da instância.
 
-Observe que, se estiver usando o modo de rastreamento **permanente da Web** ou **anônimo**, você deverá adicionar um índice à coluna &quot;sourceID&quot; (uuid230) nas tabelas de rastreamento (trackingLogXXX):
+Observe que, se você estiver usando a variável **web permanente** ou **anonymous** no modo de rastreamento, você deve adicionar um índice à coluna &quot;sourceID&quot; (uuid230) nas tabelas de rastreamento (trackingLogXXX):
 
 1. Identifique as tabelas de rastreamento relacionadas ao rastreamento permanente.
 1. Estenda os esquemas que correspondem a essas tabelas adicionando as seguintes linhas:
@@ -42,11 +42,11 @@ Observe que, se estiver usando o modo de rastreamento **permanente da Web** ou *
 </dbindex>
 ```
 
-**** Os modos de rastreamento Web permanente e  **** anônimo incluem duas opções:  **Entrega forçada** e  **Última entrega**.
+**Permanente** e **Anônimo** Os modos de rastreamento web incluem duas opções: **Entrega forçada** e **Última entrega**.
 
-A opção **Forced delivery** permite especificar o identificador do delivery (@jobid) durante o rastreamento.
+O **Entrega forçada** permite especificar o identificador do delivery (@jobid) durante o rastreamento.
 
-A opção **Last delivery** permite vincular o log de rastreamento atual ao último delivery rastreado.
+O **Última entrega** permite vincular o log de rastreamento atual ao último delivery rastreado.
 
 **Características do rastreamento Web da sessão:**
 
@@ -81,7 +81,7 @@ Esse modo é o mais dispendioso em termos de cálculo e volume.
 
 >[!NOTE]
 >
->Se o pacote **[!UICONTROL Leads]** estiver instalado, você precisará fazer o mesmo para a tabela de atividades (**crm:incomingLead**)
+>Se a variável **[!UICONTROL Leads]** estiver instalado, você precisa fazer o mesmo para a tabela de atividades (**crm:incomingLead**)
 
 O schema a seguir resume as funcionalidades de todos os três modos de rastreamento Web:
 

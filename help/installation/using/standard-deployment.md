@@ -64,8 +64,8 @@ Como o computador não é um servidor de rastreamento, não considere a integra�
 
 Nos exemplos a seguir, os parâmetros da instância são:
 
-* Nome da instância: **demo**
-* Máscara de DNS: **console.campaign.net*** (somente para conexões de console do cliente e para relatórios)
+* Nome da instância: **demonstração**
+* Máscara de DNS: **console.campaign.net*** (somente para conexões com o console do cliente e para relatórios)
 * Idioma: Inglês
 * Banco de dados: **campanha:demo@dbsrv**
 
@@ -84,13 +84,13 @@ As etapas são as seguintes:
    * Para Linux: [Integração em um servidor Web para Linux](../../installation/using/integration-into-a-web-server-for-linux.md)
    * Para Windows: [Integração em um servidor Web para Windows](../../installation/using/integration-into-a-web-server-for-windows.md)
 
-1. Crie a instância **demo**. Há duas maneiras de fazer isso:
+1. Crie o **demonstração** instância. Há duas maneiras de fazer isso:
 
    * Crie a instância por meio do console:
 
       ![](assets/install_create_new_connexion.png)
 
-      Para obter mais informações, consulte [Criação de uma instância e logon](../../installation/using/creating-an-instance-and-logging-on.md).
+      Para obter mais informações, consulte [Criação de uma instância e fazer logon](../../installation/using/creating-an-instance-and-logging-on.md).
 
       ou
 
@@ -103,9 +103,9 @@ As etapas são as seguintes:
       Para obter mais informações, consulte [Criação de uma instância](../../installation/using/command-lines.md#creating-an-instance).
    O nome da instância é igual ao do servidor de aplicativos.
 
-   A conexão com o servidor com o módulo **nlserver web** (mirror pages, unsubscription) será feita a partir do URL do balanceador de carga (tracking.campaign.net).
+   A conexão com o servidor com o **nlserver web** módulo (mirror pages, unsubscription) será feito a partir do URL do balanceador de carga (tracking.campaign.net).
 
-1. Altere o **internal** para o mesmo que o servidor de aplicativos.
+1. Altere o **interno** como o servidor de aplicativos.
 
    Para obter mais informações, consulte [esta seção](../../installation/using/configuring-campaign-server.md#internal-identifier).
 
@@ -115,11 +115,11 @@ As etapas são as seguintes:
    nlserver config -setdblogin:PostgreSQL:campaign:demo@dbsrv -instance:demo
    ```
 
-1. Nos arquivos **config-default.xml** e **config-demo.xml**, ative os módulos **web**, **trackinglogd** e **mta**.
+1. No **config-default.xml** e **config-demo.xml** , habilite o **web**, **trackinglogd** e **mta** módulos.
 
    Para obter mais informações, consulte [esta seção](../../installation/using/configuring-campaign-server.md#enabling-processes).
 
-1. Edite o arquivo **serverConf.xml** e preencha:
+1. Edite o **serverConf.xml** e preencher:
 
    * a configuração DNS do módulo MTA:
 
@@ -129,7 +129,7 @@ As etapas são as seguintes:
 
       >[!NOTE]
       >
-      >O parâmetro **nameServers** é usado somente no Windows.
+      >O **nameServers** é usado somente no Windows.
 
       Para obter mais informações, consulte [Configurações de delivery](configure-delivery-settings.md).
 
@@ -162,7 +162,7 @@ As etapas são as seguintes:
    * Para Windows: [Iniciar o servidor Web e testar a configuração](../../installation/using/integration-into-a-web-server-for-windows.md#launching-the-web-server-and-testing-the-configuration)
 
 1. Inicie o servidor do Adobe Campaign.
-1. No console do Adobe Campaign, conecte-se usando o logon **admin** sem uma senha e inicie o assistente de implantação.
+1. No console do Adobe Campaign, conecte-se usando o **administrador** fazer logon sem uma senha e iniciar o assistente de implantação.
 
    Para obter mais informações, consulte [Implantação de uma instância](../../installation/using/deploying-an-instance.md).
 
@@ -176,4 +176,4 @@ As etapas são as seguintes:
 
    >[!NOTE]
    >
-   >Usamos a instância existente dos dois servidores de rastreamento criados anteriormente e o logon **interno** é usado.
+   >Usamos a instância existente dos dois servidores de rastreamento criados anteriormente e o **interno** fazer logon.

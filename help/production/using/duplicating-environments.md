@@ -35,13 +35,13 @@ Para fazer isso, siga as etapas abaixo:
 
 1. Crie uma cópia dos bancos de dados em todas as instâncias no ambiente de origem,
 1. Restaure essas cópias em todas as instâncias do ambiente de destino,
-1. Execute o script de cauterização **nms:freezeInstance.js** no ambiente de destino antes de iniciá-lo.
+1. Execute o **nms:freezeInstance.js** script de cauterização no ambiente de destino antes de iniciá-lo.
 
    Esse processo não afeta os servidores e sua configuração.
 
    >[!NOTE]
    >
-   >No contexto do Adobe Campaign, uma **cauterization** combina ações que permitem interromper todos os processos que interagem com o exterior: logs, rastreamento, deliveries, workflows da campanha etc.\
+   >No contexto do Adobe Campaign, uma **cauterização** O combina ações que permitem interromper todos os processos que interagem com o exterior: logs, rastreamento, deliveries, workflows da campanha etc.\
    >Essa etapa é necessária para evitar o delivery de mensagens várias vezes (uma vez do ambiente nominal e outra do ambiente duplicado).
 
    >[!IMPORTANT]
@@ -61,14 +61,15 @@ Para que esse processo funcione, os ambientes de origem e de destino devem ter o
 
 ### Procedimento de transferência {#transfer-procedure}
 
-Esta seção ajudará você a entender as etapas necessárias para transferir um ambiente de origem para um ambiente de destino por meio de um estudo de caso: nosso objetivo aqui é restaurar um ambiente de produção (instância **prod**) em um ambiente de desenvolvimento (instância **dev**) para funcionar em um contexto que esteja o mais próximo possível da plataforma &#39;live&#39;.
+Esta seção ajudará você a entender as etapas necessárias para transferir um ambiente de origem para um ambiente de destino por meio de um estudo de caso: nosso objetivo aqui é restaurar um ambiente de produção (**prod** em um ambiente de desenvolvimento (**dev** instância) para trabalhar em um contexto o mais próximo possível da plataforma &quot;ativa&quot;.
 
 As etapas a seguir devem ser executadas com muito cuidado: alguns processos ainda podem estar em andamento quando os bancos de dados do ambiente de origem são copiados. A cauterização (etapa 3 abaixo) impede que as mensagens sejam enviadas duas vezes e mantém a consistência dos dados.
 
 >[!IMPORTANT]
 >
 >* O procedimento a seguir é válido na linguagem PostgreSQL. Se a linguagem SQL for diferente (Oracle, por exemplo), as consultas SQL devem ser adaptadas.
->* Os comandos abaixo se aplicam no contexto de uma instância **prod** e uma instância **dev** em PostgreSQL.
+>* Os comandos abaixo se aplicam no contexto de um **prod** e uma **dev** em PostgreSQL.
+
 >
 
 
@@ -94,8 +95,8 @@ Essa exportação permite manter a configuração de desenvolvimento e atualizar
 
 Para fazer isso, execute uma exportação de pacote para os dois elementos a seguir:
 
-* Exporte a tabela **xtk:option** para um arquivo &#39;options_dev.xml&#39;, sem os registros com os seguintes nomes internos: &#39;WdbcTimeZone&#39;, &#39;NmsServer_LastPostUpgrade&#39; e &#39;NmsBroadcast_RegexRules&#39;.
-* Em um arquivo &#39;extaccount_dev.xml&#39;, exporte a tabela **nms:extAccount** para todos os registros cuja ID não seja 0 (@id &lt;> 0).
+* Exporte o **xtk:option** em um arquivo &#39;options_dev.xml&#39;, sem os registros com os seguintes nomes internos: &#39;WdbcTimeZone&#39;, &#39;NmsServer_LastPostUpgrade&#39; e &#39;NmsBroadcast_RegexRules&#39;.
+* Em um arquivo &#39;extaccount_dev.xml&#39;, exporte a variável **nms:extAccount** tabela para todos os registros cuja ID não é 0 (@id &lt;> 0).
 
 Verifique se o número de opções/contas exportadas é igual ao número de linhas a serem exportadas em cada arquivo.
 
@@ -103,7 +104,7 @@ Verifique se o número de opções/contas exportadas é igual ao número de linh
 >
 >O número de linhas para exportar em uma exportação de pacote é de 1000 linhas. Se o número de opções ou contas externas for superior a 1000, você deverá realizar várias exportações.
 > 
->Para saber mais, consulte [esta seção](../../platform/using/working-with-data-packages.md#exporting-packages).
+>Para obter mais informações, consulte [esta seção](../../platform/using/working-with-data-packages.md#exporting-packages).
 
 >[!NOTE]
 >
@@ -137,14 +138,14 @@ nlserver pdump
 
 >[!NOTE]
 >
->No Windows, o processo **webmdl** ainda pode estar ativo sem afetar outras operações.
+>No Windows, a variável **webmdl** O processo ainda pode estar ativo sem afetar outras operações.
 
 Você também pode verificar se nenhum processo do sistema ainda está em execução.
 
 Para fazer isso, realize o seguinte processo:
 
 * No Windows: abra o **Gerenciador de tarefas** e verifique se não há **nlserver.exe** processos.
-* No Linux: execute o **ps aux | comando grep nlserver** e verifique se não há processos **nlserver**.
+* No Linux: execute o **ps aux | grep nlserver** e verifique se não há **nlserver** processos.
 
 ### Etapa 4 - Restaurar os bancos de dados no ambiente de destino (dev) {#step-4---restore-the-databases-in-the-target-environment--dev-}
 
@@ -191,9 +192,9 @@ No ambiente de destino, reinicie os processos do Adobe Campaign para todos os se
 
 >[!NOTE]
 >
->Antes de reiniciar o Adobe Campaign no ambiente **dev**, você pode aplicar um procedimento de segurança adicional: inicie o módulo **web** somente.
+>Antes de reiniciar o Adobe Campaign na **dev** no ambiente, você pode aplicar um procedimento de segurança adicional: inicie o **web** somente módulo.
 >  
->Para fazer isso, edite o arquivo de configuração da sua instância (**config-dev.xml**) e adicione o caractere &quot;_&quot; antes das opções autoStart=&quot;true&quot; para cada módulo (mta, stat, etc.).
+>Para fazer isso, edite o arquivo de configuração da sua instância (**config-dev.xml**), em seguida, adicione o caractere &quot;_&quot; antes das opções autoStart=&quot;true&quot; para cada módulo (mta, stat, etc.).
 
 Execute o seguinte comando para iniciar o processo da Web:
 
@@ -222,11 +223,11 @@ Para importar a configuração do banco de dados do ambiente de destino (dev):
 1. Abra o console de administração do banco de dados e expurgue as contas externas (tabela nms:extAccount) cuja ID não é 0 (@id &lt;> 0).
 1. No console do Adobe Campaign, importe o pacote options_dev.xml criado anteriormente por meio da funcionalidade de pacote de importação.
 
-   Verifique se as opções foram atualizadas no nó **[!UICONTROL Administration > Platform > Options]**.
+   Verifique se as opções foram atualizadas no **[!UICONTROL Administration > Platform > Options]** nó .
 
 1. No console do Adobe Campaign, importe o extaccount_dev.xml criado anteriormente através da funcionalidade do pacote de importação
 
-   Verifique se os bancos de dados externos foram importados no **[!UICONTROL Administration > Platform > External accounts]** .
+   Verifique se bancos de dados externos foram realmente importados na **[!UICONTROL Administration > Platform > External accounts]** .
 
 ### Etapa 9 - Reiniciar todos os processos e alterar usuários (dev) {#step-9---restart-all-processes-and-change-users--dev-}
 

@@ -23,6 +23,6 @@ Esses filtros estarão disponíveis na janela de seleção de destino com as mes
 
 1. Vá para o nó **[!UICONTROL Administration > Configuration > Predefined filters]**
 1. Crie um novo filtro.
-1. Insira o **[!UICONTROL Label]** do filtro e selecione o schema que corresponde à tabela do recipient externo no campo **[!UICONTROL Document type]**.
+1. Insira o **[!UICONTROL Label]** do filtro, selecione o schema que corresponde à tabela de recipients externos no **[!UICONTROL Document type]** campo.
 1. Crie seu **[!UICONTROL filtering conditions]** com base nos campos do esquema.
 1. Salve o filtro.

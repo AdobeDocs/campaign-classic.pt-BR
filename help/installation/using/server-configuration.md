@@ -44,7 +44,7 @@ Se você estiver usando nomes de host diferentes (um público e um para operador
 
 ## Proteção de conexão de saída
 
-A lista padrão de URLs que podem ser chamados por códigos JavaScript (workflows, etc.) é limitada. Para permitir uma nova URL, o administrador precisa referenciá-la no arquivo [serverConf.xml](../../installation/using/the-server-configuration-file.md).
+A lista padrão de URLs que podem ser chamados por códigos JavaScript (workflows, etc.) é limitada. Para permitir um novo URL, o administrador precisa referenciá-lo no [arquivo serverConf.xml](../../installation/using/the-server-configuration-file.md).
 
 Existem três modos de proteção de conexão:
 
@@ -66,7 +66,7 @@ Os clientes existentes provenientes de uma migração podem usar o modo de aviso
 
 ## Restrição de comando (lado do servidor)
 
-Vários comandos estão incluídos na lista negra e não podem ser executados usando a função execCommand. Uma segurança extra é fornecida por um usuário Unix dedicado para executar comandos externos. Para instalações hospedadas, essa restrição é aplicada automaticamente. Para instalações locais, você pode configurar manualmente essa restrição seguindo as instruções de [this page](../../installation/using/configuring-campaign-server.md#restricting-authorized-external-commands). Além disso, as atividades de workflow **[!UICONTROL Script]** e **[!UICONTROL External task]** não estão disponíveis (instâncias recém-instaladas).
+Vários comandos estão incluídos na lista negra e não podem ser executados usando a função execCommand. Uma segurança extra é fornecida por um usuário Unix dedicado para executar comandos externos. Para instalações hospedadas, essa restrição é aplicada automaticamente. Para instalações no local, você pode configurar manualmente essa restrição seguindo as instruções de [esta página](../../installation/using/configuring-campaign-server.md#restricting-authorized-external-commands). Além disso, **[!UICONTROL Script]** e **[!UICONTROL External task]** as atividades do workflow não estão disponíveis (instâncias recém-instaladas).
 
 ## Outras configurações
 
@@ -79,10 +79,10 @@ Você pode adicionar cabeçalhos HTTP extras para todas as páginas (para obter 
    >
    >O Adobe Campaign pode ser interrompido adicionando determinados cabeçalhos.
 
-O Adobe Campaign permite definir uma senha simples no elemento `<dbcnx .../>` . Não use esse recurso.
+O Adobe Campaign permite que você defina uma senha simples no `<dbcnx .../>` elemento. Não use esse recurso.
 
-Por padrão, o Adobe Campaign não coloca uma sessão em um IP específico, mas você pode ativá-lo para impedir que a sessão seja roubada. Para fazer isso, no arquivo [serverConf.xml](../../installation/using/the-server-configuration-file.md), defina o atributo checkIPConsistent como **true** no nó `<authentication>`.
+Por padrão, o Adobe Campaign não coloca uma sessão em um IP específico, mas você pode ativá-lo para impedir que a sessão seja roubada. Para fazer isso, no [arquivo serverConf.xml](../../installation/using/the-server-configuration-file.md), defina o atributo checkIPConsistent como **true** no `<authentication>` nó .
 
-Por padrão, o MTA do Adobe Campaign não usa uma conexão segura para enviar conteúdo ao servidor SMTP. Esse recurso deve ser habilitado (pode reduzir a velocidade de entrega). Para fazer isso, defina **enableTLS** para **true** no nó `<smtp ...>`.
+Por padrão, o MTA do Adobe Campaign não usa uma conexão segura para enviar conteúdo ao servidor SMTP. Esse recurso deve ser habilitado (pode reduzir a velocidade de entrega). Para fazer isso, defina **enableTLS** para **true** no `<smtp ...>` nó .
 
 Você pode reduzir a duração de uma sessão no nó de autenticação (atributo sessionTimeOutSec).

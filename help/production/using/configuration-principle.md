@@ -21,25 +21,25 @@ A plataforma Adobe Campaign é baseada no conceito de instâncias, semelhante ao
 
 Para um determinado servidor, há dois elementos comuns a todas as instâncias do Adobe Campaign:
 
-* A senha **interna**: esta é a senha do administrador geral. É comum a todas as instâncias de um servidor de aplicativos específico.
+* O **interno** senha: esta é a senha do administrador geral. É comum a todas as instâncias de um servidor de aplicativos específico.
 
    >[!IMPORTANT]
    >
-   >Para fazer logon com o identificador **Interno**, é necessário ter definido uma senha antecipadamente. Para obter mais informações, consulte [esta seção](../../installation/using/configuring-campaign-server.md#internal-identifier).
+   >Para fazer logon com a **Interno** , é necessário ter definido uma senha com antecedência. Para obter mais informações, consulte [esta seção](../../installation/using/configuring-campaign-server.md#internal-identifier).
 
 * Várias configurações técnicas do servidor: essas configurações podem ser sobrecarregadas na configuração específica de uma instância.
 
-Os arquivos de configuração são salvos no diretório **conf** do diretório de instalação. A configuração é dividida em três arquivos:
+Os arquivos de configuração são salvos na variável **conf** diretório do diretório de instalação. A configuração é dividida em três arquivos:
 
 * **serverConf.xml**: configuração geral para todas as instâncias.
-* **config-**`<instance>`**.xml**  (onde  **`<instance>`** é o nome da instância): configuração específica de uma instância.
+* **config-**`<instance>`**.xml** em que **`<instance>`** é o nome da instância): configuração específica de uma instância.
 * **serverConf.xml.diff**: delta entre a configuração inicial e a configuração atual. Esse arquivo é gerado automaticamente pelo aplicativo e não deve ser modificado manualmente. Ele é usado para propagar automaticamente as modificações do usuário ao atualizar uma versão de build.
 
 Uma configuração de instância é carregada da seguinte maneira:
 
-* O módulo carrega o arquivo **serverConf.xml** para obter os parâmetros compartilhados por todas as instâncias.
-* Em seguida, ele carrega o arquivo **config-**`<instance>`**.xml**. Os valores encontrados neste arquivo têm prioridade sobre os valores contidos em **serverConf.xml**.
+* O módulo carrega o **serverConf.xml** para obter os parâmetros compartilhados por todas as instâncias.
+* Em seguida, carrega o **config-**`<instance>`**.xml** arquivo. Os valores encontrados neste arquivo têm prioridade sobre os valores contidos em **serverConf.xml**.
 
-   Esses dois arquivos têm o mesmo formato. Qualquer valor em **serverConf.xml** pode ser sobrecarregado para uma determinada instância no arquivo **config-`<instance>`.xml**.
+   Esses dois arquivos têm o mesmo formato. Qualquer valor em **serverConf.xml** pode ser sobrecarregado para uma determinada instância no **config-`<instance>`.xml** arquivo.
 
 Esse modo operacional oferece grande flexibilidade para configurações.

@@ -39,9 +39,9 @@ _operation (cadeia de caracteres), advanced (boolean), applicableIf (cadeia de c
 
 ## Uso e contexto de uso {#use-and-context-of-use}
 
-`<attribute>` Os elementos devem ser declarados em um  `<element>` elemento.
+`<attribute>` devem ser declarados em um `<element>` elemento.
 
-A sequência na qual os elementos `<attribute>` são definidos em um `<srcschema>` não afeta a sequência de criação de campos no banco de dados. A sequência de criação será alfabética.
+A sequência em que `<attribute>` são definidos em um `<srcschema>` não afeta a sequência de criação de campos no banco de dados. A sequência de criação será alfabética.
 
 ## Descrição do atributo {#attribute-description}
 
@@ -58,10 +58,10 @@ A sequência na qual os elementos `<attribute>` são definidos em um `<srcschema
    * &quot;delete&quot;: exclusão. Isso significa que o Adobe Campaign recuperará e excluirá elementos.
 
 * **avançado (booleano)**: quando essa opção é ativada (@advanced=&quot;true&quot;), ela permite ocultar o atributo na lista de campos disponíveis acessíveis para configurar uma lista em um formulário.
-* **applicableIf (cadeia de caracteres)**: esse atributo permite tornar os campos opcionais. O elemento `<attribute>` será considerado ao atualizar o banco de dados quando a restrição for cumprida. &quot;applicableIf&quot; recebe uma expressão XTK.
+* **applicableIf (cadeia de caracteres)**: esse atributo permite tornar os campos opcionais. O `<attribute>` será considerado ao atualizar o banco de dados quando a restrição for cumprida. &quot;applicableIf&quot; recebe uma expressão XTK.
 * **autoIncrement (booleano)**: se essa opção estiver ativada, o campo se tornará um contador. Isso permite incrementar um valor (em sua maioria, IDs). (uso externo)
-* **pertenceTo (cadeia de caracteres)**: pega o nome e o namespace da tabela que compartilha o campo e preenche o schema em que o atributo é declarado. (usado somente em um `<schema>`).
-* **dataPolicy (string)**: permite especificar restrições de aprovação em valores permitidos no campo SQL ou XML. Os valores para este atributo são:
+* **insertTo (cadeia de caracteres)**: pega o nome e o namespace da tabela que compartilha o campo e preenche o schema em que o atributo é declarado. (usado somente em um `<schema>`).
+* **dataPolicy (cadeia de caracteres)**: permite especificar restrições de aprovação em valores permitidos no campo SQL ou XML. Os valores para este atributo são:
 
    * &quot;nenhum&quot;: sem valor
    * &quot;smartCase&quot;: maiúsculas das primeiras letras
@@ -72,11 +72,11 @@ A sequência na qual os elementos `<attribute>` são definidos em um `<srcschema
    * &quot;identificador&quot;: nome do identificador
    * &quot;resIdentifier&quot;: nome do arquivo
 
-* **dbEnum (cadeia de caracteres)**: recebe o nome interno de uma enumeração &quot;fechada&quot;. Os valores de enumeração devem ser definidos no `<srcschema>`.
+* **dbEnum (cadeia de caracteres)**: recebe o nome interno de uma enumeração &quot;fechada&quot;. Os valores de enumeração devem ser definidos na variável `<srcschema>`.
 * **defOnDuplicate (booleano)**: se esse atributo estiver ativado, quando um registro for duplicado, o valor padrão (definido em @default) será automaticamente reaplicado ao registro.
 * **padrão (string)**: permite definir o valor do campo padrão (chamada para uma função, valor padrão). Esse atributo recebe uma expressão XTK.
-* **desc (string)**: permite inserir uma descrição do atributo. Essa descrição é exibida na barra de status da interface.
-* **editar (sequência de caracteres)**: esse atributo especifica o tipo de entrada que será usado no formulário vinculado ao schema.
+* **desc (cadeia de caracteres)**: permite inserir uma descrição do atributo. Essa descrição é exibida na barra de status da interface.
+* **edit (string)**: esse atributo especifica o tipo de entrada que será usado no formulário vinculado ao schema.
 * **enum (string)**: recebe o nome da enumeração vinculada ao campo . A enumeração pode ser inserida no mesmo schema ou em um schema remoto.
 * **expr (string)**: define uma expressão de pré-cálculo de campo. Esse atributo recebe um Xpath ou uma expressão XTK.
 * **recurso (string)**: define um campo de características: Esses campos são usados para estender os dados em uma tabela existente, mas com armazenamento em uma tabela em anexo. Os valores aceitos são:
@@ -98,7 +98,7 @@ A sequência na qual os elementos `<attribute>` são definidos em um `<srcschema
 * **label (string)**: rótulo vinculado ao campo, destinado principalmente ao usuário na interface. Isso permite evitar restrições de nomenclatura.
 * **length (string)**: máx. número de caracteres para um valor do campo SQL tipo &quot;string&quot;. Se o atributo &quot;@length&quot; não for especificado, o Adobe Campaign criará automaticamente um campo para 255 caracteres.
 * **localizável (booleano)**: se estiver ativado, esse atributo informará a ferramenta de coleta para recuperar o valor do atributo &quot;@label&quot; para tradução (uso interno).
-* **nome (MNTOKEN)**: nome do atributo que corresponderá ao nome do campo na tabela. O valor do atributo &quot;@name&quot; deve ser curto, preferencialmente em inglês, e estar em conformidade com as restrições de nomenclatura XML.
+* **name (MNTOKEN)**: nome do atributo que corresponderá ao nome do campo na tabela. O valor do atributo &quot;@name&quot; deve ser curto, preferencialmente em inglês, e estar em conformidade com as restrições de nomenclatura XML.
 
    Quando o schema é gravado no banco de dados, os prefixos são adicionados automaticamente ao nome do campo pelo Adobe Campaign:
 
@@ -116,12 +116,12 @@ A sequência na qual os elementos `<attribute>` são definidos em um `<srcschema
    * &quot;never&quot;: nunca presente
    * &quot;padrão (ou nada)&quot;: o valor é exportado, exceto se for o valor padrão ou se não for um campo interno que não seria compatível com outras instâncias.
 
-* **ref (string)**: esse atributo define uma referência a um  `<attribute>` elemento compartilhado por vários schemas (fator de definição). A definição não é copiada para o schema atual.
+* **ref (string)**: esse atributo define uma referência a um `<attribute>` elemento compartilhado por vários schemas (fator de definição). A definição não é copiada para o schema atual.
 * **obrigatório (booleano)**: se este atributo for ativado (@required=&quot;true&quot;), o campo será realçado na interface. O rótulo do campo será vermelho nos formulários.
 * **sql (booleano)**: se este atributo for ativado (@sql=&quot;true&quot;), ele forçará o armazenamento do atributo SQL, mesmo quando o elemento que contém o atributo tiver a propriedade xml=&quot;true&quot;.
 * **sqlDefault (cadeia de caracteres)**: esse atributo permite definir o valor padrão levado em conta para atualizar o banco de dados se o atributo @notNull for ativado. Se esse atributo for adicionado após a criação do atributo, o comportamento do schema não será alterado mesmo para os novos registros. Para alterar o schema e atualizar o valor de novos registros, é necessário excluir e criar novamente o atributo.
-* **sqlname (sequência de caracteres)**: do campo durante a criação da tabela. Se @sqlname não for especificado, o valor do atributo &quot;@name&quot; será usado por padrão. Quando o schema é gravado no banco de dados, os prefixos são adicionados automaticamente, dependendo do tipo de campo.
-* **template (string)**: esse atributo define uma referência a um  `<attribute>` elemento compartilhado por vários schemas. A definição é copiada automaticamente para o schema atual.
+* **sqlname (cadeia de caracteres)**: do campo durante a criação da tabela. Se @sqlname não for especificado, o valor do atributo &quot;@name&quot; será usado por padrão. Quando o schema é gravado no banco de dados, os prefixos são adicionados automaticamente, dependendo do tipo de campo.
+* **template (string)**: esse atributo define uma referência a um `<attribute>` elemento compartilhado por vários schemas. A definição é copiada automaticamente para o schema atual.
 * **translationDefault (cadeia de caracteres)**: se um atributo &quot;@default&quot; for encontrado, &quot;@translationDefault&quot; permitirá redefinir uma expressão para corresponder à definida em @default, a ser coletada pela ferramenta de tradução (uso interno).
 * **translationExpr (cadeia de caracteres)**: se um atributo &quot;@expr&quot; estiver presente, o atributo &quot;@translationExpr&quot; permitirá que você redefina uma expressão para corresponder à definida em @expr, a ser coletada pela ferramenta de tradução (uso interno).
 * **tipo (MNTOKEN)**: tipo de campo.
@@ -161,7 +161,7 @@ A sequência na qual os elementos `<attribute>` são definidos em um `<srcschema
 
    Se o campo for do tipo STRING e o nome do campo não for especificado pela presença do atributo &quot;@sqlname&quot;, o nome do campo no banco de dados será automaticamente precedido por um &quot;s&quot;. Esse modo operacional será semelhante aos campos dos tipos INTEGER (i), DOUBLE (d) e DATES (ts) .
 
-* **userEnum (sequência de caracteres)**: recebe o nome interno de uma enumeração &quot;open&quot;. Os valores da enumeração podem ser definidos pelo usuário na interface.
+* **userEnum (cadeia de caracteres)**: recebe o nome interno de uma enumeração &quot;open&quot;. Os valores da enumeração podem ser definidos pelo usuário na interface.
 * **visibleIf (cadeia de caracteres)**: define uma condição no formato de uma expressão XTK para mostrar ou ocultar o atributo.
 
    >[!IMPORTANT]

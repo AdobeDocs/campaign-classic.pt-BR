@@ -20,7 +20,7 @@ ht-degree: 2%
 Ao criar um banco de dados, o Adobe Campaign fornece duas opções diferentes:
 
 1. Criação ou reciclagem de um banco de dados: escolha essas opções se quiser criar um novo banco de dados ou reutilizar um existente. Consulte [Caso 1: Criação/reciclagem de um banco de dados](#case-1--creating-recycling-a-database).
-1. Usando um banco de dados existente: escolha essa opção se um banco de dados vazio já tiver sido criado pelo administrador e desejar usá-lo; ou para estender a estrutura de um banco de dados existente. Consulte [Caso 2: Usando um banco de dados existente](#case-2--using-an-existing-database).
+1. Usando um banco de dados existente: escolha essa opção se um banco de dados vazio já tiver sido criado pelo administrador e desejar usá-lo; ou para estender a estrutura de um banco de dados existente. Consulte [Caso 2: Uso de um banco de dados existente](#case-2--using-an-existing-database).
 
 As etapas de configuração são detalhadas abaixo.
 
@@ -28,7 +28,7 @@ As etapas de configuração são detalhadas abaixo.
 >
 >Os nomes de bancos de dados, usuários e esquemas não devem começar com um número ou incluir caracteres especiais.
 >
->Somente o identificador **interno** pode realizar essas operações. Para obter mais informações, consulte [esta seção](../../installation/using/configuring-campaign-server.md#internal-identifier).
+>Somente a variável **interno** O identificador pode realizar essas operações. Para obter mais informações, consulte [esta seção](../../installation/using/configuring-campaign-server.md#internal-identifier).
 
 ## Caso 1: Criação/reciclagem de um banco de dados {#case-1--creating-recycling-a-database}
 
@@ -36,11 +36,11 @@ As etapas para criar um banco de dados ou reciclar uma base existente são apres
 
 As seguintes etapas estão envolvidas:
 
-* [Etapa 1 - Seleção do mecanismo](#step-1---selecting-the-database-engine) de banco de dados,
+* [Etapa 1 - Seleção do mecanismo de banco de dados](#step-1---selecting-the-database-engine),
 * [Etapa 2 - Conexão com o servidor](#step-2---connecting-to-the-server),
 * [Etapa 3 - Conexão e características do banco de dados](#step-3---connection-and-characteristics-of-the-database),
 * [Etapa 4 - Pacotes para instalar](#step-4---packages-to-install),
-* [Etapa 5 - Etapas](#step-5---creation-steps) de criação,
+* [Etapa 5 - Etapas de criação](#step-5---creation-steps),
 * [Etapa 6 - Criação do banco de dados](#step-6---creating-the-database).
 
 ### Etapa 1 - Seleção do mecanismo de banco de dados {#step-1---selecting-the-database-engine}
@@ -49,7 +49,7 @@ Selecione o mecanismo de banco de dados entre aqueles na lista suspensa.
 
 ![](assets/s_ncs_install_db_select_engine.png)
 
-Os bancos de dados compatíveis são listados no Campaign [Matriz de compatibilidade](../../rn/using/compatibility-matrix.md).
+Bancos de dados compatíveis são listados no Campaign [Matriz de compatibilidade](../../rn/using/compatibility-matrix.md).
 
 Identifique o servidor e escolha o tipo de operação a ser executada. Nesse caso, **[!UICONTROL Create or recycle a database]**.
 
@@ -57,9 +57,9 @@ Identifique o servidor e escolha o tipo de operação a ser executada. Nesse cas
 
 Dependendo do mecanismo de banco de dados selecionado, as informações de identificação do servidor podem variar.
 
-* Para um mecanismo **Oracle**, preencha o **nome TNS** definido para o servidor de aplicativos.
-* Para um mecanismo **PostgreSQL** ou **DB2**, você deve especificar o nome DNS (ou endereço IP) definido no servidor de aplicativos para acessar o servidor de banco de dados.
-* Para um mecanismo **Microsoft SQL Server**, você deve definir: o nome DNS (ou endereço IP) definido no servidor de aplicativos para acessar o servidor de banco de dados: **DNS** ou **DNS`\<instance>`** (modo de instância),
+* Para um **Oracle** , preencha o **Nome TNS** definido para o servidor de aplicativos.
+* Para um **PostgreSQL** ou **DB2** , você deve especificar o nome DNS (ou endereço IP) definido no servidor de aplicativos para acessar o servidor de banco de dados.
+* Para um **Microsoft SQL Server** você deve definir: o nome DNS (ou endereço IP) definido no servidor de aplicativos para acessar o servidor de banco de dados: **DNS** ou **DNS`\<instance>`** (modo de instância),
 
    >[!CAUTION]
    >
@@ -69,15 +69,15 @@ Dependendo do mecanismo de banco de dados selecionado, as informações de ident
 
 ### Etapa 2 - Conexão com o servidor {#step-2---connecting-to-the-server}
 
-Na janela **[!UICONTROL Server access]**, defina o acesso do servidor do banco de dados.
+No **[!UICONTROL Server access]** , defina o acesso ao servidor de banco de dados.
 
 ![](assets/s_ncs_install_db_oracle_creation02.png)
 
-Para fazer isso, insira o nome e a senha de uma **Administration system account** que tem permissão para acessar os bancos de dados, ou seja:
+Para fazer isso, digite o nome e a senha de um **Conta do sistema de administração** que tenha permissão para aceder às bases de dados, ou seja:
 
-* **** para um banco de dados do Oracle,
-* **** para um banco de dados do Microsoft SQL Server,
-* **** postgresfor a um banco de dados PostgreSQL,
+* **sistema** para um banco de dados do Oracle,
+* **sa** para um banco de dados Microsoft SQL Server,
+* **pôsteres** para um banco de dados PostgreSQL,
 * **db2inst1** para um banco de dados DB2.
 
 ### Etapa 3 - Conexão e características do banco de dados {#step-3---connection-and-characteristics-of-the-database}
@@ -97,11 +97,11 @@ Você precisa definir as seguintes configurações:
 * Insira a senha da conta vinculada a este banco de dados.
 * Indique se o banco de dados deve estar ou não em Unicode.
 
-   A opção **[!UICONTROL Unicode database]** permite armazenar todos os tipos de caracteres em Unicode, independentemente do idioma.
+   O **[!UICONTROL Unicode database]** permite armazenar todos os tipos de caracteres em Unicode, independentemente do idioma.
 
    >[!NOTE]
    >
-   >Com um banco de dados do Oracle, a opção **[!UICONTROL Unicode storage]** permite usar os campos do tipo **NCLOB** e **NVARCHAR**.
+   >Com um banco de dados do Oracle, a variável **[!UICONTROL Unicode storage]** permite usar **NCLOB** e **NVARCHAR** digite campos.
    > 
    >Se você não selecionar essa opção, o conjunto de caracteres (charset) do banco de dados do Oracle deverá habilitar o armazenamento de dados em todos os idiomas (AL32UTF8 é recomendado).
 
@@ -119,21 +119,21 @@ Consulte o contrato de licença para verificar quais soluções e opções você
 
 ### Etapa 5 - Etapas de criação {#step-5---creation-steps}
 
-A janela **[!UICONTROL Creation steps]** permite exibir e editar o script SQL usado para criar as tabelas.
+O **[!UICONTROL Creation steps]** permite exibir e editar o script SQL usado para criar as tabelas.
 
 ![](assets/s_ncs_install_db_oracle_creation04.png)
 
-* Para um Oracle, Microsoft SQL Server ou banco de dados PostgreSQL, o administrador também pode definir os **parâmetros de armazenamento** a serem usados ao criar objetos de banco de dados.
+* Para um Oracle, Microsoft SQL Server ou banco de dados PostgreSQL, o administrador também pode definir a variável **parâmetros de armazenamento** a ser usado ao criar objetos de banco de dados.
 
-   Esses parâmetros recebem os nomes exatos do tablespace (aviso: diferencia maiúsculas de minúsculas). Eles são armazenados respectivamente no nó **[!UICONTROL Administration > Platform > Options]** nas seguintes opções (consulte [esta seção](../../installation/using/configuring-campaign-options.md#database)):
+   Esses parâmetros recebem os nomes exatos do tablespace (aviso: diferencia maiúsculas de minúsculas). Eles são armazenados no **[!UICONTROL Administration > Platform > Options]** nas seguintes opções (consulte [esta seção](../../installation/using/configuring-campaign-options.md#database)):
 
    * **WdbcOptions_TableSpaceUser**: tabelas de usuários com base em um schema
    * **WdbcOptions_TableSpaceIndex**: índice de tabelas de usuários com base em um schema
    * **WdbcOptions_TableSpaceWork**: tabelas de trabalho sem schema
    * **WdbcOptions_TableSpaceWorkIndex**: índice de tabelas de trabalho sem schema
 
-* Para um banco de dados do Oracle, o usuário do Adobe Campaign deve ter acesso às bibliotecas do Oracle, normalmente como membro do grupo **oinstall**.
-* A opção **[!UICONTROL Set or change the administrator password]** permite inserir a senha vinculada ao operador do Adobe Campaign com direitos de administrador.
+* Para um banco de dados do Oracle, o usuário do Adobe Campaign deve ter acesso às bibliotecas do Oracle, normalmente como membro do **oinstall** grupo.
+* O **[!UICONTROL Set or change the administrator password]** permite inserir a senha vinculada ao operador do Adobe Campaign com direitos de administrador.
 
    Recomendamos definir uma senha de administrador de conta do Adobe Campaign para fins de segurança.
 
@@ -163,10 +163,10 @@ Por exemplo, para um banco de dados do Oracle, os direitos mínimos necessários
 
 Para usar um banco de dados existente, as etapas de configuração são as seguintes:
 
-* [Etapa 1 - Escolha do mecanismo](#step-1---choosing-the-database-engine) de banco de dados,
-* [Etapa 2 - Configurações](#step-2---database-connection-settings) de conexão do banco de dados,
+* [Etapa 1 - Escolha do mecanismo de banco de dados](#step-1---choosing-the-database-engine),
+* [Etapa 2 - Configurações de conexão do banco de dados](#step-2---database-connection-settings),
 * [Etapa 3 - Pacotes para instalar](#step-3---packages-to-install),
-* [Etapa 4 - Etapas](#step-4---creation-steps) de criação,
+* [Etapa 4 - Etapas de criação](#step-4---creation-steps),
 * [Etapa 5 - Criação do banco de dados](#step-5---creating-the-database).
 
 ### Etapa 1 - Escolha do mecanismo de banco de dados {#step-1---choosing-the-database-engine}
@@ -181,9 +181,9 @@ Identifique o servidor e escolha o tipo de operação que deseja realizar. Nesse
 
 Dependendo do mecanismo de banco de dados selecionado, as informações de identificação do servidor podem variar.
 
-* Para um mecanismo **Oracle**, preencha o **nome TNS** definido para o servidor de aplicativos.
-* Para um mecanismo **PostgreSQL** ou **DB2**, você deve especificar o nome DNS (ou endereço IP) definido no servidor de aplicativos para acessar o servidor de banco de dados.
-* Para um mecanismo **Microsoft SQL Server**, você deve definir:
+* Para um **Oracle** , preencha o **Nome TNS** definido para o servidor de aplicativos.
+* Para um **PostgreSQL** ou **DB2** , você deve especificar o nome DNS (ou endereço IP) definido no servidor de aplicativos para acessar o servidor de banco de dados.
+* Para um **Microsoft SQL Server** você deve definir:
 
    1. o nome DNS (ou endereço IP) definido no servidor de aplicativos para acessar o servidor de banco de dados,
    1. o método de segurança usado para acessar o Microsoft SQL Server: **[!UICONTROL SQL Server authentication]** ou **[!UICONTROL Windows NT authentication]**.
@@ -192,7 +192,7 @@ Dependendo do mecanismo de banco de dados selecionado, as informações de ident
 
 ### Etapa 2 - Configurações de conexão do banco de dados {#step-2---database-connection-settings}
 
-Na janela **[!UICONTROL Database]**, defina as configurações de conexão do banco de dados.
+No **[!UICONTROL Database]** , defina as configurações de conexão do banco de dados.
 
 ![](assets/s_ncs_install_db_oracle_exists_02.png)
 
@@ -218,13 +218,13 @@ Consulte o contrato de licença para verificar quais soluções e opções você
 
 ### Etapa 4 - Etapas de criação {#step-4---creation-steps}
 
-A janela **[!UICONTROL Creation steps]** permite exibir e editar o script SQL usado para criar as tabelas.
+O **[!UICONTROL Creation steps]** permite exibir e editar o script SQL usado para criar as tabelas.
 
 ![](assets/s_ncs_install_db_oracle_creation04.png)
 
-* Para bancos de dados Oracle, Microsoft SQL Server ou PostgreSQL, o administrador pode definir os **parâmetros de armazenamento** a serem usados ao criar objetos de banco de dados.
-* Para um banco de dados do Oracle, o usuário do Adobe Campaign deve ter acesso às bibliotecas do Oracle, normalmente como membro do grupo **oinstall**.
-* A opção **[!UICONTROL Set or change the administrator password]** permite inserir a senha vinculada ao operador do Adobe Campaign com direitos de administrador.
+* Para bancos de dados Oracle, Microsoft SQL Server ou PostgreSQL, o administrador pode definir a variável **parâmetros de armazenamento** a ser usado ao criar objetos de banco de dados.
+* Para um banco de dados do Oracle, o usuário do Adobe Campaign deve ter acesso às bibliotecas do Oracle, normalmente como membro do **oinstall** grupo.
+* O **[!UICONTROL Set or change the administrator password]** permite inserir a senha vinculada ao operador do Adobe Campaign com direitos de administrador.
 
    Recomendamos definir uma senha de administrador de conta do Adobe Campaign para fins de segurança.
 

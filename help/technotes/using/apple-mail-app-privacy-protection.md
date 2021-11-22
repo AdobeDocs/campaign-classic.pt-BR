@@ -1,22 +1,22 @@
 ---
 product: campaign
-title: Proteção da privacidade de email no aplicativo de email da Apple
-description: Saiba como suas campanhas podem ser afetadas pelo recurso de Proteção de privacidade de email da Apple
+title: Proteção da privacidade de email no aplicativo de email do Apple
+description: Saiba como suas campanhas podem ser afetadas pelo recurso Apple Mail Privacy Protection
 exl-id: e044b35a-b49f-408a-900d-2afe8ff10212
 source-git-commit: 1a9e0f8bf374e10af938d15dcebe943819ae327b
 workflow-type: tm+mt
 source-wordcount: '2100'
-ht-degree: 1%
+ht-degree: 2%
 
 ---
 
-# Proteção da privacidade de email no aplicativo de email da Apple
+# Proteção da privacidade de email no aplicativo de email do Apple
 
 ![Aplica-se a v7 e v8](../../assets/common.svg)
 
 ## O que mudou?
 
-Em 2021, a Apple apresentou novos recursos de proteção de privacidade para seu aplicativo de email nativo. Esse aplicativo agora inclui o recurso de Proteção da Privacidade de email da Apple. Basicamente, os remetentes não podem mais usar pixels de rastreamento para coletar informações sobre os recipients que optaram por ativar o recurso de Proteção de privacidade de email da Apple. [Leia mais](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/additional-resources/technotes/apple-mail-privacy-faq.html){target=&quot;_blank&quot;}.
+Em 2021, a Apple apresentou novos recursos de proteção de privacidade para seu aplicativo de email nativo. Este aplicativo agora inclui o recurso Apple Mail Privacy Protection. Basicamente, os remetentes não podem mais usar pixels de rastreamento para coletar informações sobre os recipients que optaram por ativar o recurso de Proteção de privacidade de email do Apple. [Leia mais](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/additional-resources/technotes/apple-mail-privacy-faq.html?lang=pt-BR){target=&quot;_blank&quot;}.
 
 ## Como minhas campanhas são afetadas?
 
@@ -24,15 +24,15 @@ O Adobe Campaign fornece a capacidade de usar pixels de rastreamento para rastre
 
 ## Que ações devo tomar?
 
-O novo recurso da Apple é a forma das coisas que virão no setor em termos de proteção à privacidade de e-mails. Recomendamos que você siga as recomendações do Adobe.
+O novo recurso do Apple é a forma das coisas que virão no setor em termos de proteção da privacidade de e-mail. Recomendamos que você siga as recomendações do Adobe.
 
 ### Avalie o impacto nos acionadores da campanha
 
-Avalie como essas alterações afetam seus acionadores de campanha atuais. Identifique os workflows nos quais o email é aberto são usados como um critério para segmentação, direcionamento ou redirecionamento. Leia as [dicas e truques](#find-email-open-tracking).
+Avalie como essas alterações afetam seus acionadores de campanha atuais. Identifique os workflows nos quais o email é aberto são usados como um critério para segmentação, direcionamento ou redirecionamento. Leia o [dicas e truques](#find-email-open-tracking).
 
 ### Preservar seus dados
 
-Preservar seus dados e consolidar seu conhecimento atual nos dispositivos. Você pode basear os principais indicadores de desempenho (KPIs) no agente do usuário. Por exemplo, você pode criar KPIs em torno de perfis de pessoas que usam o aplicativo de email iOS e da Apple. Leia as [dicas e truques](#preserve-tracking-data).
+Preservar seus dados e consolidar seu conhecimento atual nos dispositivos. Você pode basear os principais indicadores de desempenho (KPIs) no agente do usuário. Por exemplo, você pode criar KPIs em torno de perfis de pessoas que usam o iOS e o aplicativo Apple Mail. Leia o [dicas e truques](#preserve-tracking-data).
 
 ### Arquive seus logs de rastreamento além do período de retenção
 
@@ -44,8 +44,8 @@ Arquive seus logs de rastreamento além do período de retenção do Adobe Campa
 
 ### Avaliar a tendência atual das taxas abertas
 
-Determine qual proporção do seu público-alvo usa o aplicativo Mail da Apple em um dispositivo iOS.
-Com essa avaliação, você pode identificar possíveis falhas anômalas e sua causa. Você pode determinar se uma lacuna se deve a problemas de desempenho da campanha ou à funcionalidade de proteção de privacidade da Apple. Leia as [dicas e truques](#measure-ios-footprint).
+Determine qual proporção do seu público-alvo usa o aplicativo Apple Mail em um dispositivo iOS.
+Com essa avaliação, você pode identificar possíveis falhas anômalas e sua causa. Você pode determinar se uma lacuna se deve a problemas de desempenho da campanha ou à funcionalidade de proteção de privacidade da Apple. Leia o [dicas e truques](#measure-ios-footprint).
 
 ### Reavalie sua estratégia de campanha e as métricas de desempenho
 
@@ -55,7 +55,7 @@ Recomendamos que você explore os dados atualmente disponíveis e avalie a corre
 
 ## Dicas e truques
 
-### Meça a área de ocupação geral do iOS {#measure-ios-footprint}
+### Meça o espaço total do iOS {#measure-ios-footprint}
 
 Para coletar insights dos dados do Adobe Campaign, você pode usar relatórios prontos para uso:
 
@@ -81,7 +81,7 @@ Para coletar insights dos dados do Adobe Campaign, você pode usar relatórios p
 
 Você pode identificar os workflows nos quais as aberturas de email são usadas como um critério para segmentação, direcionamento e redirecionamento.
 
-Para fazer isso, você pode usar o atributo **[!UICONTROL type]** do URL do link rastreado (**[!UICONTROL url/@type]**). Para aberturas de email, esse atributo é definido como **[!UICONTROL Open]**. Esse atributo está disponível no editor de consultas, na atividade **[!UICONTROL Query]** em um workflow e em filtros predefinidos. Você pode usar esse atributo como um critério de direcionamento para campanhas de marketing.
+Para fazer isso, você pode usar a variável **[!UICONTROL type]** atributo do URL de link rastreado (**[!UICONTROL url/@type]**). Para aberturas de email, esse atributo é definido como **[!UICONTROL Open]**. Esse atributo está disponível no Editor de consultas, o **[!UICONTROL Query]** em um workflow e filtros predefinidos. Você pode usar esse atributo como um critério de direcionamento para campanhas de marketing.
 
 ![](assets/identify-email-open-tracking-1.png)
 
@@ -105,7 +105,7 @@ Neste exemplo, um comerciante deseja enviar uma oferta de recompensa aos recipie
    >
    >Em um workflow, não é possível exibir os critérios de direcionamento de um filtro predefinido.
 
-Para recuperar a lista de workflows em que o email é aberto é usado como um critério de direcionamento, você deve consultar o schema `xtk:workflow` . O conteúdo do workflow é armazenado no campo **[!UICONTROL XML memo (data)]** no formato XML.
+Para recuperar a lista de workflows em que as aberturas de email são usadas como um critério de direcionamento, você deve consultar o `xtk:workflow` esquema. O conteúdo do workflow é armazenado na variável **[!UICONTROL XML memo (data)]** no formato XML.
 
 ![](assets/identify-email-open-tracking-5.png)
 
@@ -138,7 +138,7 @@ Este exemplo mostra uma implementação personalizada em um único workflow téc
 >
 >É altamente recomendável testar e validar esse pacote em um ambiente de não produção.
 
-Baixe o [pacote de amostra](assets/PKG_Search_workflows_using_Opens_in_queries_V1.xml) e instale-o. [Saiba mais](../../platform/using/working-with-data-packages.md#importing-packages).
+Baixe o [pacote de amostras](assets/PKG_Search_workflows_using_Opens_in_queries_V1.xml) e instale-o. [Saiba mais](../../platform/using/working-with-data-packages.md#importing-packages).
 
 Depois de instalar o pacote, você pode acessar o workflow da pasta que contém os workflows técnicos prontos em sua instância:
 
@@ -158,7 +158,7 @@ O workflow compreende estas etapas principais:
 
 O workflow compreende estas etapas detalhadas:
 
-1. A atividade inicial é uma atividade de query no schema `xtk:workflow` . Essa atividade é usada para localizar, na instância de acordo, as consultas explícitas de workflow que incluem emails são abertas como um critério de direcionamento.
+1. A atividade inicial é uma atividade de query no `xtk:workflow` esquema. Essa atividade é usada para localizar, na instância de acordo, as consultas explícitas de workflow que incluem emails são abertas como um critério de direcionamento.
 
    ![](assets/identify-email-open-tracking-9.png)
 
@@ -328,8 +328,8 @@ Recomendamos que você preserve esses dados por vários motivos:
 
    Verifique a configuração da sua instância. [Leia mais](../../platform/using/privacy-management.md#data-retention).
 
-* Além das alterações recentes da Apple, você pode usar os dados de rastreamento para adicionar um valor imenso para impulsionar o envolvimento de seu público-alvo.
-* A Apple pode trazer mais alterações para seu aplicativo de email nativo e seu recurso de Proteção de privacidade de email.
+* Além das alterações recentes da Apple, você pode usar os dados de rastreamento para adicionar um valor imenso para impulsionar o envolvimento do público-alvo.
+* A Apple pode trazer mais alterações para o aplicativo de email nativo e para o recurso de Proteção da privacidade de email.
 
 Por todos esses motivos, recomendamos que você exporte esses dados o mais rápido possível. Caso contrário, os dados de rastreamento de parte do público-alvo podem ser afetados negativamente.
 
@@ -339,11 +339,11 @@ Para preservar os dados de rastreamento, é necessário exportá-los do Adobe Ca
 
 >[!IMPORTANT]
 >
->O exemplo a seguir foca no schema pronto para uso `nms:Recipient`, que é o schema de perfil padrão. Se você usar outros mapeamentos de público-alvo personalizados anexados a perfis personalizados, recomendamos estender essa estratégia de exportação para todas as tabelas de logs personalizados. [Leia mais](../../configuration/using/target-mapping.md).
+>O exemplo a seguir foca no pronto para uso `nms:Recipient` schema , que é o schema de perfil padrão. Se você usar outros mapeamentos de público-alvo personalizados anexados a perfis personalizados, recomendamos estender essa estratégia de exportação para todas as tabelas de logs personalizados. [Leia mais](../../configuration/using/target-mapping.md).
 
 ##### Princípio
 
-Por padrão, o schema `nms:Recipient` é vinculado a três schemas que você deve exportar:
+Por padrão, a variável `nms:Recipient` O schema está vinculado a três schemas que você deve exportar:
 
 | Schema | Conteúdo |
 | --- | --- |
@@ -381,11 +381,11 @@ Este exemplo mostra como exportar dados de rastreamento do Adobe Campaign.
    A query inicial é usada para recuperar os logs de rastreamento dos últimos três meses.
 Você pode usar um query incremental para extrair apenas os registros que ainda não exportou.
 
-   Adicione todas as informações necessárias do nó **[!UICONTROL Additional data]**.
+   Adicione todas as informações necessárias da **[!UICONTROL Additional data]** nó .
 
    ![](assets/export-tracking-data-2.png)
 
-1. Adicione uma atividade **[!UICONTROL Data extraction (file)]** . Mapeie todos os dados da consulta para um formato de arquivo de extração.
+1. Adicione um **[!UICONTROL Data extraction (file)]** atividade . Mapeie todos os dados da consulta para um formato de arquivo de extração.
 
    ![](assets/export-tracking-data-3.png)
 
@@ -399,14 +399,14 @@ Você pode usar um query incremental para extrair apenas os registros que ainda 
 
 ##### Implementação avançada: detalhamento por dispositivo iOS
 
-Você pode usar fluxos de trabalho para determinar se um destinatário usa o aplicativo Mail da Apple. Você pode dividir os logs de rastreamento por dispositivo. Por exemplo, você pode usar filtros de consulta para analisar registros por dispositivo iOS:
+Você pode usar fluxos de trabalho para determinar se um recipient usa o aplicativo Apple Mail. Você pode dividir os logs de rastreamento por dispositivo. Por exemplo, você pode usar filtros de consulta para analisar registros por dispositivo iOS:
 
 | aplicação | Sistema operacional ou dispositivo  | Filtro Query |
 | --- | --- | --- |
 | Apple Mail | iOS 15 | `operating System (Browser) contains 'iOS 15' and browser (Browser) contains 'ApplewebKit'` |
 | Apple Mail | iOS 14 ou iOS 13 | `browser contains 'AppleWebKit' and operating System of browser contains 'iOS 14' or operating System of browser contains 'iOS 13'` |
 | Apple Mail | Dispositivos móveis iOS: iPad, iPod e iPhone | `device (Browser) contains iPhone or device (Browser) equal to iPod or device (Browser) equal to iPad and browser (Browser) equal to 'AppleWebKit'` |
-| Apple Mail | iPhone, iPad ou iPod | `browser (Browser) equal to 'AppleWebKit' and device (Browser) equal to iPhone or device (Browser) equal to iPod or device (Browser) equal to iPad` |
+| Apple Mail | iPhone , iPad ou iPod | `browser (Browser) equal to 'AppleWebKit' and device (Browser) equal to iPhone or device (Browser) equal to iPod or device (Browser) equal to iPad` |
 | Apple Mail | Mac | `browser (Browser) equal to 'AppleWebKit' and operating System (Browser) contains 'Mac'` |
 | Safari | macOS | `browser (Browser) equal to 'Safari' and device (Browser) equal to PC and operating System (Browser) contains 'Mac'` |
 | Safari | Dispositivos móveis | `browser (Browser) equal to 'Safari' and device (Browser) equal to iPad or device (Browser) equal to iPod or device (Browser) equal to iPhone` |
@@ -424,14 +424,14 @@ Estes exemplos mostram como você pode usar workflows para analisar registros po
 
 * O primeiro workflow de exemplo inclui estas atividades:
 
-   1. A atividade inicial **[!UICONTROL Query]** é usada para selecionar todas as aberturas de email nos últimos três meses.
-   1. Uma atividade **[!UICONTROL Split]** é usada para dividir a seleção por aplicativo de email, navegador, sistema operacional e dispositivo.
+   1. A **[!UICONTROL Query]** é usada para selecionar todas as aberturas de email nos últimos três meses.
+   1. A **[!UICONTROL Split]** é usada para dividir a seleção por aplicativo de email, navegador, sistema operacional e dispositivo.
 
-   1. Uma atividade **[!UICONTROL Deduplication]** segue cada atividade **[!UICONTROL Split]**. A atividade **[!UICONTROL Deduplication]** é usada para remover endereços de email duplicados.
+   1. A **[!UICONTROL Deduplication]** atividade segue cada **[!UICONTROL Split]** atividade . O **[!UICONTROL Deduplication]** é usada para remover endereços de email duplicados.
 
-      A atividade **[!UICONTROL Deduplication]** é posicionada após a atividade **[!UICONTROL Split]** para evitar a perda de informações sobre recipients que usam vários dispositivos.
+      O **[!UICONTROL Deduplication]** A atividade é posicionada após a variável **[!UICONTROL Split]** para evitar a perda de informações sobre recipients que usam vários dispositivos.
 
-   1. Uma atividade **[!UICONTROL End]** segue cada atividade **[!UICONTROL Deduplication]**.
+   1. Um **[!UICONTROL End]** atividade segue cada **[!UICONTROL Deduplication]** atividade .
 
    Esse tipo de workflow é útil se você armazenar recipients somente na tabela de recipients prontos para uso para direcionamento.
 
@@ -439,13 +439,13 @@ Estes exemplos mostram como você pode usar workflows para analisar registros po
 
 * O segundo exemplo de workflow inclui estas atividades:
 
-   1. A atividade inicial **[!UICONTROL Query]** é usada para selecionar todas as aberturas de email nos últimos três meses.
-   1. Uma atividade **[!UICONTROL Deduplication]** é usada para remover endereços de email duplicados.
-   1. Uma atividade **[!UICONTROL Fork]** é usada:
+   1. A **[!UICONTROL Query]** é usada para selecionar todas as aberturas de email nos últimos três meses.
+   1. A **[!UICONTROL Deduplication]** é usada para remover endereços de email duplicados.
+   1. A **[!UICONTROL Fork]** atividade é usada:
 
-      * Em uma transição, a atividade **[!UICONTROL Change dimension]** é usada para encontrar os recipients aos quais o log de rastreamento se refere.
-      * Na outra transição, a atividade **[!UICONTROL Split]** é usada para dividir a seleção por aplicativo de email, navegador, sistema operacional e dispositivo.
-   1. Uma atividade **[!UICONTROL End]** segue cada transição após a atividade **[!UICONTROL Split]** .
+      * Em uma transição, a variável **[!UICONTROL Change dimension]** é usada para encontrar os recipients aos quais o log de rastreamento se refere.
+      * Na outra transição, a variável **[!UICONTROL Split]** é usada para dividir a seleção por aplicativo de email, navegador, sistema operacional e dispositivo.
+   1. Um **[!UICONTROL End]** A atividade segue cada transição após **[!UICONTROL Split]** atividade .
 
    Esse tipo de workflow é útil se você armazenar recipients em uma tabela diferente da tabela de recipients prontos para uso.
 

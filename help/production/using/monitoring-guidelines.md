@@ -19,7 +19,7 @@ ht-degree: 27%
 
 ## Painel de monitoramento de instância {#instance-monitoring-dashboard}
 
-A guia **[!UICONTROL Monitoring]**, que é acessível na página inicial do Campaign Classic, é o ponto de entrada principal que ajuda a monitorar sua instância.
+O **[!UICONTROL Monitoring]** A guia , que é acessível na página inicial do Campaign Classic, é o ponto de entrada principal que ajuda a monitorar sua instância.
 
 Ele fornece um painel do que está ocorrendo em sua instância: seu status (versão de compilação, pacotes instalados etc.), indicadores do sistema, logs, workflows que estão sendo executados no momento, estado dos últimos deliveries enviados, etc.
 
@@ -96,14 +96,14 @@ Os relatórios SMTP exibem estatísticas de delivery e erros SMTP por domínio. 
 
 **Práticas recomendadas**
 
-[As práticas recomendadas para envio e ](../../delivery/using/delivery-best-practices.md) design de entrega podem ajudar você a melhorar seu desempenho.
+[Práticas recomendadas para envio e criação de delivery](../../delivery/using/delivery-best-practices.md) O pode ajudá-lo a melhorar o desempenho.
 
-**Solução de**
-problemas de deliveryAs ações específicas podem ser executadas ao encontrar problemas com os deliveries:
+**Solução de problemas de delivery**
+Ações específicas podem ser executadas ao encontrar problemas com deliveries:
 * [Problemas na capacidade de delivery](../../production/using/performance-and-throughput-issues.md#deliverability_issues)
 * [Problemas de exibição de imagem](../../production/using/image-display-issues.md)
 * [Problemas de desempenho do delivery](../../delivery/using/delivery-performances.md)
-* [Problemas com arquivos temporários](../../production/using/temporary-files.md)  - somente modelos  *de hospedagem locais*
+* [Problemas de arquivos temporários](../../production/using/temporary-files.md) - *somente em modelos de hospedagem local*
 
 ### Monitoramento do banco de dados {#monitoring-database}
 
@@ -127,7 +127,7 @@ Recomendamos que você faça a manutenção do banco de dados regularmente para 
 
 *apenas modelos de hospedagem local e híbrida*
 
-O backup é essencial para evitar a perda de dados em caso de problema (físico ou relacionado ao sistema) em uma máquina. [Clique aqui](../../production/using/backup.md) para obter mais informações. O procedimento de restauração é descrito em [this section](../../production/using/restoration.md).
+O backup é essencial para evitar a perda de dados em caso de problema (físico ou relacionado ao sistema) em uma máquina. [Clique aqui](../../production/using/backup.md) para obter mais informações. O procedimento de restauração é descrito em [esta seção](../../production/using/restoration.md).
 
 ## Princípios técnicos do Campaign Classic {#campaign-classic-technical-principles}
 

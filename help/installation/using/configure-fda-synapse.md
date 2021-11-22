@@ -17,10 +17,10 @@ ht-degree: 79%
 
 ![](../../assets/v7-only.svg)
 
-Use a opção Campaign [Federated Data Access](../../installation/using/about-fda.md) (FDA) para processar informações armazenadas em um banco de dados externo. Siga as etapas abaixo para configurar o acesso ao Microsoft Azure synapse Analytics.
+Usar Campanha [Federated Data Access](../../installation/using/about-fda.md) (FDA) opção para processar informações armazenadas em um banco de dados externo. Siga as etapas abaixo para configurar o acesso ao Microsoft Azure synapse Analytics.
 
 1. Configurar o Azure synapse em [CentOS](#azure-centos), [Windows](#azure-windows) ou [Debian](#azure-debian)
-1. Configure o Azure synapse [external account](#azure-external) no Campaign
+1. Configurar o Azure synapse [conta externa](#azure-external) no Campaign
 
 ## Azure Synapse no CentOS {#azure-centos}
 
@@ -87,7 +87,7 @@ Para configurar o Azure synapse no CentOS, siga as etapas abaixo:
    /opt/mssql-tools/bin/sqlcmd -S yourServer -U yourUserName -P yourPassword -q "your query" # for example -q "select 1"
    ```
 
-1. No Campaign, você pode configurar a conta externa [!DNL Azure Synapse]. Para obter mais informações sobre como configurar a conta externa, consulte [esta seção](#azure-external).
+1. No Campaign, você pode configurar o [!DNL Azure Synapse] conta externa. Para obter mais informações sobre como configurar a conta externa, consulte [esta seção](#azure-external).
 
 1. Como o Azure Synapse Analytics se comunica por meio da porta TCP 1433, é necessário abrir essa porta no firewall. Use o seguinte comando:
 
@@ -114,7 +114,7 @@ Para configurar o Azure synapse no CentOS, siga as etapas abaixo:
 
 Para configurar o Azure Synapse no Windows:
 
-1. Primeiro, instale o driver ODBC da Microsoft. Você pode encontrá-lo em [this page](https://www.microsoft.com/en-us/download/details.aspx?id=50420).
+1. Primeiro, instale o driver ODBC da Microsoft. Você pode encontrá-lo em [esta página](https://www.microsoft.com/en-us/download/details.aspx?id=50420).
 
 1. Escolha os seguintes arquivos para instalar:
 
@@ -196,9 +196,9 @@ Para configurar o Azure Synapse no Debian:
 
 A conta externa do [!DNL Azure Synapse] permite conectar a instância do Campaign ao banco de dados externo do Azure Synapse.
 
-Para criar sua conta externa [!DNL Azure Synapse] siga as etapas abaixo:
+Para criar [!DNL Azure Synapse] a conta externa siga as etapas abaixo:
 
-1. Em Campanha **[!UICONTROL Explorer]**, clique em **[!UICONTROL Administration]** &#39;>&#39; **[!UICONTROL Platform]** &#39;>&#39; **[!UICONTROL External accounts]**.
+1. Da campanha **[!UICONTROL Explorer]**, clique em **[!UICONTROL Administration]** &#39;>&#39; **[!UICONTROL Platform]** &#39;>&#39; **[!UICONTROL External accounts]**.
 
 1. Clique em **[!UICONTROL New]**.
 

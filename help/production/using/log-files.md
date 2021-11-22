@@ -21,11 +21,11 @@ Os arquivos de log são organizados da seguinte maneira:
 
 ![](assets/d_ncs_directory.png)
 
-Cada módulo **nlserver** gera um arquivo de log salvo no seguinte diretório: **`<installation directory>`/var/`<instance>`/log/`<module>`.log**.
+Cada **nlserver** O módulo gera um arquivo de log salvo no seguinte diretório: **`<installation directory>`/var/`<instance>`/log/`<module>`.log**.
 
-O módulo **nlserver syslogd** salva os logs no disco. Esse módulo é semelhante ao Unix **syslog daemon**, mas foi adaptado para compatibilidade entre Unix e Windows. Os outros módulos Adobe Campaign não salvam seus registros no disco; eles delegam essa tarefa ao módulo **syslogd** enviando pacotes UDP a ele.
+O **nlserver syslogd** O módulo salva os logs no disco. Esse módulo é semelhante ao Unix **daemon do syslog**, mas foi adaptado para compatibilidade entre Unix e Windows. Os outros módulos Adobe Campaign não salvam seus registros no disco; eles delegam essa tarefa à **syslogd** enviando pacotes UDP para ele.
 
-Por padrão, a plataforma Adobe Campaign tem o módulo **syslogd** instalado nela, mas é possível usar outro **syslog daemon**. Esse módulo cria os arquivos de log no diretório **log**.
+Por padrão, a plataforma do Adobe Campaign tem a variável **syslogd** instalado nele, mas é possível usar outro **daemon do syslog**. Esse módulo cria os arquivos de log no **log** diretório.
 
 Os registros de módulos de várias instâncias são armazenados no seguinte diretório: **`<installation directory>`/var/default/log/**. O mesmo arquivo de log é compartilhado por todas as instâncias (por exemplo, **web.log**).
 
@@ -53,14 +53,14 @@ Os arquivos de log de mono-instance são listados na seguinte tabela:
 
 >[!IMPORTANT]
 >
->O diretório **redir** existe apenas em servidores de redirecionamento. O subdiretório **url** contém as correspondências dos URLs a serem redirecionados e o subdiretório **log** contém os logs de rastreamento. Para gerar logs de rastreamento, o módulo **trackinglogd** deve estar em execução.
+>O **retro** O diretório existe apenas em servidores de redirecionamento. O **url** O subdiretório contém as correspondências dos URLs a serem redirecionados e o subdiretório **log** contém os logs de rastreamento. Para gerar logs de rastreamento, a variável **trackinglogd** deve estar em execução.
 
 Para otimização de desempenho e armazenamento, o arquivo logins.log é dividido em vários arquivos, um a cada dia (logins.yy-mm-dd.log) com no máximo 365 arquivos retidos. O número de dias pode ser alterado no serverConf.xml, em syslogd (**maxNumberOfLoginsFiles** ). Consulte a documentação no [arquivo de configuração do servidor](../../installation/using/the-server-configuration-file.md#syslogd).
 
 Por padrão, os logs são limitados a dois arquivos de 10 MB por módulo e por instância. O segundo arquivo é chamado: **`<modulename>`_2.log**. O tamanho dos logs, portanto, é limitado a 2*10MB por módulo e por instância.
 
-No entanto, você pode manter arquivos maiores. Para habilitar isso, altere o valor da configuração **maxFileSizeMb=&quot;10&quot;** no nó **syslogd** do arquivo **conf/serverConf.xml**. Este valor representa o tamanho máximo em MB de um arquivo de log.
+No entanto, você pode manter arquivos maiores. Para habilitar isso, altere o valor da variável **maxFileSizeMb=&quot;10&quot;** na configuração do **syslogd** nó do **conf/serverConf.xml** arquivo. Este valor representa o tamanho máximo em MB de um arquivo de log.
 
-Se quiser manter mais níveis de detalhes nos logs, poderá iniciar os módulos Adobe Campaign com o parâmetro **-verbose**:
+Se quiser manter mais níveis de detalhes nos logs, você poderá iniciar os módulos Adobe Campaign com a variável **-verbose** parâmetro:
 
-**nlserver start  `<MODULE>`@`<INSTANCE>` -verbose**
+**nlserver start `<MODULE>`@`<INSTANCE>` -verbose**

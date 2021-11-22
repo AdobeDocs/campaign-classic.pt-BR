@@ -17,7 +17,7 @@ ht-degree: 62%
 
 ![](../../assets/v7-only.svg)
 
-Como parte da [Iniciativa Gold Standard](../../rn/using/gold-standard.md), o Adobe desativa o data center herdado. As instâncias do Campaign Classic devem ser transferidas para os Serviços Web da Amazon da Nuvem Pública (AWS). [Saiba mais sobre esta iniciativa](dc-migration.md).
+Como parte do [Iniciativa Gold Standard](../../rn/using/gold-standard.md), o Adobe desativa o data center herdado. As instâncias do Campaign Classic devem ser transferidas para a Nuvem pública Amazon Web Services (AWS). [Saiba mais sobre esta iniciativa](dc-migration.md).
 
 Abaixo está um conjunto de perguntas comuns sobre esse projeto, o impacto nos ambientes do Campaign e outros recursos úteis.
 
@@ -47,11 +47,11 @@ Os impactos globais no banco de dados e na infraestrutura estão listados abaixo
 
    Como primeiro passo, manteremos o mesmo build do Campaign Classic com a migração.
 
-   Em outra etapa, continuaremos a atualizar para a build mais recente do Campaign Classic GA. Para obter mais informações, consulte as [Perguntas frequentes sobre atualização de build](../../platform/using/faq-build-upgrade.md) e [Notas de versão do Campaign Gold Standard](../../rn/using/gold-standard.md).
+   Em outra etapa, continuaremos a atualizar para a build mais recente do Campaign Classic GA. Para obter mais informações, consulte [Perguntas frequentes sobre a atualização de build](../../platform/using/faq-build-upgrade.md) e [Notas de versão do Campaign Gold Standard](../../rn/using/gold-standard.md).
 
 * **Qual é o plano para solucionar problemas após a migração?**
 
-   Testes abrangentes serão realizados antes da migração dos sistemas de produção. No entanto, em caso de problemas, [Adobe Customer Care](https://experienceleague.adobe.com/?support-solution=Campaign#support) continuará sendo o principal ponto de contato. A Adobe criou uma equipe de especialistas para fornecer suporte avançado, se necessário.
+   Testes abrangentes serão realizados antes da migração dos sistemas de produção. No entanto, em caso de problemas, [Atendimento ao cliente do Adobe](https://experienceleague.adobe.com/?support-solution=Campaign#support) permanecerá o principal ponto de contato. A Adobe criou uma equipe de especialistas para fornecer suporte avançado, se necessário.
 
 ## Impactos na capacidade de entrega
 
@@ -63,17 +63,17 @@ Os impactos globais em IPs, listas de bloqueios, subdomínios e URLs estão list
 
    O endereço IP dos servidores da Adobe será alterado. Portanto, os clientes podem precisar adicionar esses novos endereços IP na lista de permissões em seus sistemas.
 
-   [Clique ](#config) aqui para obter mais detalhes sobre IP na lista de permissões.
+   [Clique aqui](#config) para obter mais detalhes sobre IP na  de lista de permissões.
 
 * **Como lidaremos com a porta adicionada à lista de permissões para acesso SFTP/FTP?**
 
-   A configuração SFTP (chaves públicas + IP na  de lista de permissões) também será movida do data center herdado para a Nuvem pública (AWS). Nenhuma ação esperada do cliente.
+   A configuração SFTP (chaves públicas + IP na  da lista de permissões) também será movida do data center herdado para a Nuvem pública (AWS). Nenhuma ação esperada do cliente.
 
 * **Estamos alterando os IPs?**
 
    O endereço IP dos servidores da Adobe será alterado. Portanto, os clientes podem precisar adicionar esses novos endereços IP à lista de permissões no sistema.
 
-   [Clique ](#config) aqui para obter mais detalhes sobre IP na lista de permissões.
+   [Clique aqui](#config) para obter mais detalhes sobre IP na  de lista de permissões.
 
 * **Como a delegação de subdomínios será tratada?**
 
@@ -87,7 +87,7 @@ Os impactos globais em IPs, listas de bloqueios, subdomínios e URLs estão list
 
 * **Haverá uma alteração no subdomínio de Neolane.net para campaign.adobe.com?**
 
-   Ambos `neolane.net` e `campaign.adobe.com` estarão em vigor após a migração. Para simplificar: redirecionaremos o neolane.net para novas instâncias na Nuvem pública (AWS), de modo que nenhuma alteração seja necessária para o cliente.
+   Ambos `neolane.net` e `campaign.adobe.com` estará em vigor após a migração. Para simplificar: redirecionaremos o neolane.net para novas instâncias na Nuvem pública (AWS), de modo que nenhuma alteração seja necessária para o cliente.
 
 * **Qual é o plano para o aquecimento de IP?**
 
@@ -155,7 +155,7 @@ Os impactos globais na configuração, na conectividade com outros sistemas e pr
 
    O endereço IP dos servidores da Adobe será alterado. Portanto, os clientes podem precisar adicionar esses novos endereços IP à lista de permissões no sistema.
 
-   [Clique ](#config) aqui para obter mais detalhes sobre IP lista de permissões.
+   [Clique aqui](#config) para obter mais detalhes sobre IP na lista de permissões.
 
 * **Asseguraremos que todos os parâmetros de configuração de memória JavaScript estejam definidos corretamente após a migração?**
 
@@ -163,13 +163,13 @@ Os impactos globais na configuração, na conectividade com outros sistemas e pr
 
 * **Existe algum risco de acesso a determinadas extensões de arquivo?**
 
-   O cliente pode querer permitir que os arquivos de fonte sejam carregados na pasta de recursos públicos. Essa configuração é feita no arquivo `config-<instance>.xml` atual. Ela será copiada com os arquivos de configuração.
+   O cliente pode querer permitir que os arquivos de fonte sejam carregados na pasta de recursos públicos. Essa configuração é feita no atual `config-<instance>.xml` arquivo. Ela será copiada com os arquivos de configuração.
 
 * **O fuso horário está mudando no novo servidor? O cliente poderá manter seu fuso horário atual?**
 
    Pode mudar de acordo com a localização dos novos servidores. No entanto, o cliente poderá manter o fuso horário atual.
 
-   [Clique ](../../workflow/using/managing-time-zones.md) aqui para obter mais detalhes sobre o gerenciamento de fuso horário no Adobe Campaign Classic v7.
+   [Clique aqui](../../workflow/using/managing-time-zones.md) para obter mais detalhes sobre o gerenciamento de fuso horário no Adobe Campaign Classic v7.
 
 
 ## Segurança e permissões

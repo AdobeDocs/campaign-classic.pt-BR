@@ -19,13 +19,13 @@ ht-degree: 1%
 
 ## Alterando a porta de escuta do syslogd {#changing-the-syslogd-listening-port}
 
-Por padrão, a porta de escuta **syslogd** é 666 (udp). Você pode alterá-la usando uma variável de ambiente, se necessário.
+Por padrão, a variável **syslogd** a porta de escuta é 666 (udp). Você pode alterá-la usando uma variável de ambiente, se necessário.
 
 Depois de configurada, essa variável é considerada por todos os módulos Adobe Campaign.
 
 ### No Linux {#in-linux}
 
-Edite o arquivo **customer.sh** e adicione a seguinte linha:
+Edite o **customer.sh** e adicione a seguinte linha:
 
 ```
 export TRACE_ADDR=localhost:<listening port>
@@ -33,7 +33,7 @@ export TRACE_ADDR=localhost:<listening port>
 
 ### No Windows {#in-windows}
 
-É necessário criar a variável de ambiente **TRACE_ADDR** com o valor **localhost**: **`<listening port="" />`**.
+É necessário criar o **TRACE_ADDR** variável de ambiente com a variável **localhost** valor: **`<listening port="" />`**.
 
 >[!IMPORTANT]
 >
@@ -41,8 +41,8 @@ export TRACE_ADDR=localhost:<listening port>
 
 ## Configuração de zonas de segurança {#configuring-security-zones}
 
-Cada operador precisa ser vinculado a uma zona para fazer logon em uma instância e o IP do operador deve ser incluído nos endereços ou conjuntos de endereços definidos na zona de segurança. A configuração da zona técnica é realizada no arquivo de configuração do servidor do Adobe Campaign. A vinculação de um operador a uma zona de segurança deve ser definida no console (nó **[!UICONTROL Administration > Access management > Operators]** ).
+Cada operador precisa ser vinculado a uma zona para fazer logon em uma instância e o IP do operador deve ser incluído nos endereços ou conjuntos de endereços definidos na zona de segurança. A configuração da zona técnica é realizada no arquivo de configuração do servidor do Adobe Campaign. A vinculação de um operador a uma zona de segurança deve ser definida no console ( **[!UICONTROL Administration > Access management > Operators]** nó ).
 
 >[!NOTE]
 >
->Para obter mais informações sobre como configurar zonas de segurança, consulte [esta seção](../../installation/using/security-zones.md).
+>Para obter mais informações sobre a configuração de zonas de segurança, consulte [esta seção](../../installation/using/security-zones.md).

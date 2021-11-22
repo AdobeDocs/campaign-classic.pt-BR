@@ -17,7 +17,7 @@ ht-degree: 4%
 
 ![](../../assets/v7-only.svg)
 
-Esta seção detalha a configuração adicional necessária ao migrar da v5.11. Você também deve definir as configurações detalhadas na seção [Configurações gerais](../../migration/using/general-configurations.md).
+Esta seção detalha a configuração adicional necessária ao migrar da v5.11. Você também deve definir as configurações detalhadas no [Configurações gerais](../../migration/using/general-configurations.md) seção.
 
 ## Aplicações web {#web-applications}
 
@@ -29,7 +29,7 @@ The webApp ids have been modified during the migration process. Please make sure
 
 Alguns componentes de aplicações Web, por exemplo, os vários campos de fórmula, têm atributos @id. Eles são usados no código XML de aplicações web e não são mais gerados da mesma maneira. Eles não estão visíveis na interface e você não deve usá-los normalmente. No entanto, em alguns casos, atributos @id podem ter sido usados para personalizar a renderização de aplicações Web, por exemplo, por meio de uma folha de estilos ou usando o código JavaScript.
 
-Durante a migração, você **deve** verificar o caminho do arquivo de log especificado no aviso:
+Durante a migração, você **must** verifique o caminho do arquivo de log especificado no aviso:
 
 * **O arquivo não está vazio**: contém avisos relativos a inconsistências registradas antes da migração e que ainda existem. Pode ser um código JavaScript em um aplicativo da Web que faz referência a uma ID inexistente. Cada erro deve ser verificado e corrigido.
 * **O arquivo está vazio**: isso significa que o Adobe Campaign não detectou nenhum problema.
@@ -66,19 +66,19 @@ mysql_tzinfo_to_sql /usr/share/zoneinfo | mysql -u root mysql
 
 >[!NOTE]
 >
->Para obter mais informações, consulte a página [https://dev.mysql.com/doc/refman/8.0/en/time-zone-support.html](https://dev.mysql.com/doc/refman/8.0/en/time-zone-support.html).
+>Para obter mais informações, consulte [https://dev.mysql.com/doc/refman/8.0/en/time-zone-support.html](https://dev.mysql.com/doc/refman/8.0/en/time-zone-support.html) página.
 
-Se modificações tiverem sido feitas na estrutura do banco de dados, durante a configuração, por exemplo (criação de índices específicos, criação de visualizações SQL, etc.), determinadas precauções devem ser tomadas ao migrar. Com efeito, certas modificações podem ser geradas a partir de incompatibilidades com o procedimento de migração. Por exemplo, a criação de exibições SQL contendo campos **Timestamp** não é compatível com a opção **usetimestamptz**. Portanto, recomendamos que você siga as recomendações abaixo:
+Se modificações tiverem sido feitas na estrutura do banco de dados, durante a configuração, por exemplo (criação de índices específicos, criação de visualizações SQL, etc.), determinadas precauções devem ser tomadas ao migrar. Com efeito, certas modificações podem ser geradas a partir de incompatibilidades com o procedimento de migração. Por exemplo, criação de exibições SQL contendo **Carimbo de data e hora** os campos não são compatíveis com a variável **usetimestamptz** opção. Portanto, recomendamos que você siga as recomendações abaixo:
 
 1. Antes de iniciar a migração, faça backup do banco de dados.
 1. Excluir alterações no SQL.
-1. Execute o postupgrade de acordo com o procedimento detalhado na seção [Pré-requisitos para migração para o Adobe Campaign 7](../../migration/using/prerequisites-for-migration-to-adobe-campaign-7.md).
+1. Execute a pós-atualização de acordo com o procedimento detalhado no  [Pré-requisitos da migração para o Adobe Campaign 7](../../migration/using/prerequisites-for-migration-to-adobe-campaign-7.md) seção.
    >[!NOTE]
    >
-   >É fundamental seguir as etapas de migração apresentadas na seção [Pré-requisitos para migração para o Adobe Campaign 7](../../migration/using/prerequisites-for-migration-to-adobe-campaign-7.md) .
+   >É fundamental seguir as etapas de migração apresentadas na seção [Pré-requisitos da migração para o Adobe Campaign 7](../../migration/using/prerequisites-for-migration-to-adobe-campaign-7.md) seção.
 1. Reintegrar alterações de SQL.
 
-Neste exemplo, uma visualização **NmcTrackingLogMessages** foi criada e tem um campo **Timestamp** chamado **tslog**. Nesse caso, o procedimento de migração falha e a seguinte mensagem de erro é exibida:
+Neste exemplo, um **NmcTrackingLogMessages** foi criada e isso tem uma **Carimbo de data e hora** nome do campo **tslog**. Nesse caso, o procedimento de migração falha e a seguinte mensagem de erro é exibida:
 
 ```
 2011-10-04 11:57:51.804Z B67B28C0 1 info log Updating table 'NmcTrackingLogMessages'
@@ -90,7 +90,7 @@ Para garantir que a pós-atualização funcione, é necessário excluir a exibi�
 
 ## Rastreamento {#tracking}
 
-A fórmula de rastreamento foi modificada. Ao migrar, a fórmula antiga (v5) é substituída pela nova (v7). Se você usar uma fórmula personalizada no Adobe Campaign v5, essa configuração deverá ser adaptada no Adobe Campaign v7 (opções **NmsTracking_ClickFormula** e **NmsTracking_OpenFormula** ).
+A fórmula de rastreamento foi modificada. Ao migrar, a fórmula antiga (v5) é substituída pela nova (v7). Se você usar uma fórmula personalizada no Adobe Campaign v5, essa configuração deverá ser adaptada no Adobe Campaign v7 (**NmsTracking_ClickFormula** e **NmsTracking_OpenFormula** opções).
 
 A gestão de rastreamento Web também foi modificada. Depois que a migração para o v7 for realizada, você deverá iniciar o assistente de implantação para concluir a configuração do rastreamento Web.
 
@@ -98,9 +98,9 @@ A gestão de rastreamento Web também foi modificada. Depois que a migração pa
 
 Três modos estão disponíveis:
 
-* **Rastreamento** Web da sessão: Se o  **[!UICONTROL Leads]** pacote não tiver sido instalado, essa opção será selecionada por padrão. Essa opção é a mais ideal em termos de desempenho e permite limitar o tamanho dos logs de rastreamento.
+* **Acompanhamento da Web da sessão**: Se a variável **[!UICONTROL Leads]** não tiver sido instalado, essa opção será selecionada por padrão. Essa opção é a mais ideal em termos de desempenho e permite limitar o tamanho dos logs de rastreamento.
 * **Acompanhamento permanente da Web**
-* **Rastreamento** Anônimo da Web: Se o  **[!UICONTROL Leads]** pacote estiver instalado, essa opção será selecionada por padrão. É a opção que consome mais recursos. Como acima, a coluna **sSourceId** deve ser indexada (na tabela de rastreamento e na tabela **CrmIncomingLead**).
+* **Rastreamento Web anônimo**: Se a variável **[!UICONTROL Leads]** estiver instalado, essa opção será selecionada por padrão. É a opção que consome mais recursos. Como acima, a variável **sSourceId** deve ser indexada (na tabela de rastreamento e no **CrmIncomingLead** tabela).
 
 >[!NOTE]
 >
@@ -110,7 +110,7 @@ Três modos estão disponíveis:
 
 Durante a migração, a estrutura em árvore é automaticamente reorganizada com base nos padrões do v7. As novas pastas são adicionadas, as pastas obsoletas são excluídas e seu conteúdo é colocado na pasta &quot;Para mover&quot;. Todos os itens nessa pasta devem ser verificados após a migração e o consultor deve decidir mantê-la ou excluir cada um. Os artigos a conservar devem ser transferidos para o local certo.
 
-Uma opção foi adicionada para desativar a migração automática da árvore de navegação. Esta operação agora é manual. As pastas obsoletas não são excluídas e as novas pastas não são adicionadas. Essa opção só deve ser usada se a árvore de navegação v5 predefinida tiver sofrido muitas alterações. Adicione a opção ao console, antes de migrar, no nó **[!UICONTROL Administration > Options]** :
+Uma opção foi adicionada para desativar a migração automática da árvore de navegação. Esta operação agora é manual. As pastas obsoletas não são excluídas e as novas pastas não são adicionadas. Essa opção só deve ser usada se a árvore de navegação v5 predefinida tiver sofrido muitas alterações. Adicione a opção ao console, antes de migrar, na **[!UICONTROL Administration > Options]** nó:
 
 * Nome interno: NlMigration_KeepFolderStructure
 * Tipo de dados: Número inteiro
@@ -138,7 +138,7 @@ As seguintes pastas precisam ser adicionadas após a migração:
 | nmsMRM | MRM | MRM instalado |
 | nmsOperations | Campanhas | Campanha instalada |
 
-**Lista de pastas** obsoletas:
+**Lista de pastas obsoletas**:
 
 As pastas obsoletas a serem excluídas após a migração são as seguintes:
 

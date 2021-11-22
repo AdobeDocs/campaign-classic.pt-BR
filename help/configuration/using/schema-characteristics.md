@@ -29,16 +29,16 @@ As características de um schema que faz referência a uma tabela existente são
 
 ## O atributo de exibição {#the-view-attribute}
 
-Os esquemas de origem aceitam o atributo **view** para o elemento raiz **srcSchema**. Ele deve ser usado quando o Adobe Campaign é manipulado em tabelas personalizadas. O atributo **view=&quot;true&quot;** informa ao assistente de atualização da estrutura de banco de dados para ignorar esse schema. Portanto, o aplicativo é proibido de sincronizar a tabela, suas colunas e seus índices com o schema correspondente.
+Os esquemas de origem aceitam o **exibir** para o **srcSchema** elemento raiz. Ele deve ser usado quando o Adobe Campaign é manipulado em tabelas personalizadas. O **view=&quot;true&quot;** informa ao assistente de atualização da estrutura do banco de dados para ignorar esse esquema. Portanto, o aplicativo é proibido de sincronizar a tabela, suas colunas e seus índices com o schema correspondente.
 
-Quando esse atributo é definido como **true**, o schema é usado apenas para gerar consultas SQL para acessar os dados desta tabela.
+Quando este atributo é definido como **true**, o schema é usado apenas para gerar consultas SQL para acessar os dados desta tabela.
 
 ## Nomes de tabelas e colunas {#names-of-tables-and-columns}
 
 Quando tabelas são criadas pelo assistente de atualização de tabela, os nomes das tabelas e colunas são gerados automaticamente com base nos nomes dos esquemas e atributos respectivos. No entanto, é possível forçar os nomes SQL a serem usados inserindo os seguintes atributos:
 
-* **** sqltable no elemento principal do schema, para especificar a tabela,
-* **** sqlname em cada atributo, para especificar as colunas.
+* **sqltable** no elemento principal do schema , para especificar a tabela,
+* **sqlname** em cada atributo, para especificar as colunas.
 
 **Exemplo**:
 
@@ -55,7 +55,7 @@ Quando tabelas são criadas pelo assistente de atualização de tabela, os nomes
 </element>
 ```
 
-Neste exemplo, se os nomes das tabelas e colunas não tivessem sido especificados explicitamente, o aplicativo teria usado **CusIndividual** para a tabela, **lastName** e **firstName** para as colunas.
+Neste exemplo, se os nomes das tabelas e colunas não tivessem sido explicitamente especificados, o aplicativo teria usado **CusIndividual** para o quadro, **lastName** e **firstName** para as colunas.
 
 Em um schema, é possível preencher apenas parte das colunas de uma tabela existente. Colunas não preenchidas não serão acessíveis ao usuário.
 
@@ -77,7 +77,7 @@ Em um schema, um índice é definido da seguinte maneira:
 
 É por isso que é importante declarar índices existentes da tabela personalizada no schema correspondente.
 
-Um índice é declarado implicitamente para cada declaração de chave e link do schema de origem. A declaração de índice pode ser impedida especificando o atributo **noDbIndex=&quot;true&quot;**:
+Um índice é declarado implicitamente para cada declaração de chave e link do schema de origem. A declaração de índice pode ser impedida pela especificação do **noDbIndex=&quot;true&quot;** atributo:
 
 **Exemplo**:
 

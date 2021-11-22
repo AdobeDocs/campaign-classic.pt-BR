@@ -21,11 +21,11 @@ Se a tabela do recipient for uma tabela personalizada, configurações adicionai
 
 ![](assets/s_ncs_user_seedlist_new_tab.png)
 
-Para obter mais informações sobre o uso de seed addresses, consulte [esta seção](../../delivery/using/about-seed-addresses.md).
+Para obter mais informações sobre como usar seed addresses, consulte [esta seção](../../delivery/using/about-seed-addresses.md).
 
 ## Implementação {#implementation}
 
-O schema **nms:seedMember** e o formulário vinculado que sai pronto para uso devem ser estendidos para a configuração do cliente, para fazer referência a todos os campos necessários. A definição do schema contém comentários detalhando seu modo de configuração.
+O **nms:seedMember** O schema e o formulário vinculado pronto para uso devem ser estendidos para a configuração do cliente, para fazer referência a todos os campos necessários. A definição do schema contém comentários detalhando seu modo de configuração.
 
 Definição do schema estendido da tabela de recipients:
 
@@ -44,14 +44,14 @@ Definição do schema estendido da tabela de recipients:
 
 Siga as etapas abaixo:
 
-1. Crie uma extensão do schema **nms:seedMember**. Para obter mais informações, consulte [Extensão de um schema](../../configuration/using/extending-a-schema.md).
+1. Crie uma extensão do **nms:seedMember** esquema. Para obter mais informações, consulte [Extensão de um schema](../../configuration/using/extending-a-schema.md).
 1. Nesta nova extensão, adicione um novo elemento na raiz de **[!UICONTROL seedMember]** com os seguintes parâmetros:
 
    ```
    name="custom_customNamespace_customSchema"
    ```
 
-   Esse elemento deve conter os campos necessários para exportar as campanhas. Esses campos devem ter o mesmo nome dos campos correspondentes no schema externo. Por exemplo, se o schema for **[!UICONTROL cus:person]** , o schema **[!UICONTROL nms:seedMember]** deverá ser estendido da seguinte maneira:
+   Esse elemento deve conter os campos necessários para exportar as campanhas. Esses campos devem ter o mesmo nome dos campos correspondentes no schema externo. Por exemplo, se o schema for **[!UICONTROL cus:person]** , o **[!UICONTROL nms:seedMember]** schema deve ser estendido da seguinte maneira:
 
    ```
      <srcSchema extendedSchema="nms:seedMember" label="Seed addresses" labelSingular="Seed address" name="seedMember" namespace="cus">
@@ -70,19 +70,19 @@ Siga as etapas abaixo:
 
    >[!NOTE]
    >
-   >A extensão do schema **nms:seedMember** deve estar em conformidade com as estruturas de uma campanha e um delivery no Adobe Campaign.
+   >A extensão do **nms:seedMember** deve estar em conformidade com as estruturas de uma campanha e um delivery no Adobe Campaign.
 
    >[!IMPORTANT]
    >
    >
    >    
    >    
-   >    * Durante a extensão, você deve especificar um **nome SQL (@sqlname)** para o campo &#39;email&#39;. O nome SQL deve ser diferente do &#39;sEmail&#39; reservado para o schema do recipient.
+   >    * Durante a extensão, você deve especificar um **Nome SQL (@sqlname)** para o campo &quot;email&quot;. O nome SQL deve ser diferente do &#39;sEmail&#39; reservado para o schema do recipient.
    >    * Você deve atualizar a estrutura do banco de dados com o schema criado ao estender **nms:seedMember**.
-   >    * Na extensão **nms:seedMember**, o campo que contém o endereço de email deve ter **name=&quot;email&quot;** como um atributo. O nome SQL deve ser diferente de &#39;sEmail&#39;, que já está sendo usado para o schema do recipient. Esse atributo deve ser declarado imediatamente no elemento **`<element name="custom_cus_person" />`** .
+   >    * No **nms:seedMember** , o campo que contém o endereço de email deve ter **name=&quot;email&quot;** como um atributo. O nome SQL deve ser diferente de &#39;sEmail&#39;, que já está sendo usado para o schema do recipient. Esse atributo deve ser declarado imediatamente no **`<element name="custom_cus_person" />`** elemento.
 
 
-1. Modifique o formulário **[!UICONTROL seedMember]** de acordo para definir uma nova guia &quot;Internal recipient&quot; na janela **[!UICONTROL Seed addresses]**. Para obter mais informações, consulte [Estrutura do formulário](../../configuration/using/form-structure.md).
+1. Modifique o **[!UICONTROL seedMember]** para definir uma nova guia &quot;Internal recipient&quot; no formulário **[!UICONTROL Seed addresses]** janela. Para obter mais informações, consulte [Estrutura do formulário](../../configuration/using/form-structure.md).
 
    ```
    <container colcount="2" label="Internal recipient" name="internal"

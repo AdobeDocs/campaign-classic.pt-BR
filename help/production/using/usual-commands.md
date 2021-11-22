@@ -27,8 +27,9 @@ O parâmetro **`<command>`** corresponde ao módulo .
 
 >[!NOTE]
 >
->* Em qualquer caso, você pode adicionar o argumento **-noconsole** para excluir comentários exibidos quando os módulos forem iniciados.
+>* Em qualquer caso, é possível adicionar a variável **-noconsole** argumento para excluir comentários exibidos quando os módulos forem iniciados.
 >* Por outro lado, é possível adicionar o argumento **-verbose** para exibir mais informações.
+
 >
 
 
@@ -36,7 +37,7 @@ O parâmetro **`<command>`** corresponde ao módulo .
 
 >[!NOTE]
 >
->Para listar todos os módulos, você precisa usar o comando **nlserver pdump**.
+>Para listar todos os módulos, é necessário usar o **pdump nlserver** comando.
 
 Você pode adicionar o parâmetro **-who** para listar as conexões em andamento (banco de dados e aplicativo).
 
@@ -60,7 +61,7 @@ Datasource Server Provider Login
 default xxxxx myserver myprovider test400
 ```
 
-Outro comando útil é **nlserver monitor**. Ele lista o arquivo XML de monitoramento (obtido no cliente Adobe Campaign ou por meio da página da Web **monitor.jsp**).
+Outro comando útil é **monitor nlserver**. Ele lista o arquivo XML de monitoramento (obtido no cliente Adobe Campaign ou por meio da variável **monitor.jsp** página da Web).
 
 Você pode adicionar o parâmetro **-missing** para listar os módulos ausentes (erro em módulos, módulos desligados etc.)
 
@@ -88,7 +89,7 @@ nlserver stop <module>@<INSTANCE>
 
 >[!NOTE]
 >
->**`<instance>`** corresponde ao nome da instância, conforme inserido nos arquivos de configuração, ou  **** default para módulos de mono-instância.
+>**`<instance>`** corresponde ao nome da instância, conforme inserido nos arquivos de configuração, ou **default** para módulos mono-instance.
 
 ## Serviços de desligamento {#shut-down-services}
 
@@ -104,7 +105,7 @@ Para interromper os serviços do Adobe Campaign, use um dos seguintes comandos:
 
       >[!NOTE]
       >
-      >A partir da versão 20.1, recomendamos usar o seguinte comando (para Linux): **systemctl parar nlserver**
+      >A partir da versão 20.1, recomendamos usar o seguinte comando (para Linux): **systemctl stop nlserver**
 
    * No Windows:
 
@@ -136,9 +137,9 @@ Da mesma forma, para reiniciar o Adobe Campaign, você pode usar um dos seguinte
 
 ## O comando config {#the-config-command}
 
-O comando **config** permite gerenciar a configuração do servidor, incluindo a reconfiguração da conexão do banco de dados.
+O **configuração** permite gerenciar a configuração do servidor, incluindo a reconfiguração da conexão de banco de dados.
 
-Use o comando **config** do arquivo executável **nlserver** com o parâmetro **-setdblogin**.
+Use o **configuração** do **nlserver** arquivo executável com o **-setdblogin** parâmetro.
 
 ```
 nlserver config -setdblogin:<[dbms:]account[:database][/password]@server>
@@ -150,16 +151,16 @@ nlserver config -setdblogin:PostgreSQL:<accountName>:test6@dbserver
 
 Digite a senha.
 
-Para alterar a senha **interna**: **nlserver config -internalpassword**
+Para alterar o **interno** senha: **nlserver config -internalpassword**
 
 >[!IMPORTANT]
 >
->Para fazer logon com o identificador **Interno**, é necessário ter definido uma senha antecipadamente. Para obter mais informações, consulte [esta seção](../../installation/using/configuring-campaign-server.md#internal-identifier).
+>Para fazer logon com a **Interno** , é necessário ter definido uma senha com antecedência. Para obter mais informações, consulte [esta seção](../../installation/using/configuring-campaign-server.md#internal-identifier).
 
 >[!NOTE]
 >
->* Em geral, em vez de modificar os arquivos de configuração manualmente, você pode usar o comando **config**
->* Para obter a lista de parâmetros, use o **-?** parâmetro:  **configuração nlserver -?**
+>* Em geral, em vez de modificar os arquivos de configuração manualmente, você pode usar o **configuração** comando
+>* Para obter a lista de parâmetros, use o **-?** parâmetro: **configuração nlserver -?**
 >* No caso de um banco de dados do Oracle, você não deve especificar a conta. A sintaxe será a seguinte:
 >
 >  nlserver config -setdblogin:Oracle:test6@dbserver

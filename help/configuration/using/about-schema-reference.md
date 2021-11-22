@@ -19,7 +19,7 @@ ht-degree: 8%
 
 Este capítulo descreve como configurar schemas de extensão para estender o modelo de dados conceituais do banco de dados do Adobe Campaign.
 
-Para obter uma melhor compreensão das tabelas integradas do Campaign e sua interação, consulte o [Campaign Classic data model](https://experienceleague.adobe.com/docs/campaign-classic/using/configuring-campaign-classic/data-model/about-data-model.html?lang=pt-BR).
+Para obter uma melhor compreensão das tabelas integradas do Campaign e sua interação, consulte [Modelo de dados Campaign Classic](https://experienceleague.adobe.com/docs/campaign-classic/using/configuring-campaign-classic/data-model/about-data-model.html?lang=pt-BR).
 
 A estrutura física e lógica dos dados transportados no aplicativo é descrita em XML. Ela obedece a uma gramática específica do Adobe Campaign, chamada de **schema**.
 
@@ -46,9 +46,9 @@ A ilustração a seguir mostra a localização dos schemas no sistema de dados d
 
 ## Sintaxe de schemas {#syntax-of-schemas}
 
-O elemento raiz do schema é **`<srcschema>`**. Ele contém os subelementos **`<element>`** e **`<attribute>`**.
+O elemento raiz do schema é **`<srcschema>`**. Ele contém a variável **`<element>`** e **`<attribute>`** subelementos.
 
-O primeiro subelemento **`<element>`** coincide com a raiz da entidade.
+O primeiro **`<element>`** O subelemento coincide com a raiz da entidade.
 
 ```
 <srcSchema name="recipient" namespace="cus">
@@ -68,13 +68,13 @@ O primeiro subelemento **`<element>`** coincide com a raiz da entidade.
 
 ![](assets/s_ncs_configuration_schema_and_entity.png)
 
-As tags **`<element>`** definem os nomes dos elementos da entidade. **`<attribute>`** as tags do schema definem os nomes dos atributos nas  **`<element>`** tags às quais foram vinculadas.
+O **`<element>`** as tags definem os nomes dos elementos da entidade. **`<attribute>`** as tags do schema definem os nomes dos atributos no **`<element>`** tags às quais foram vinculadas.
 
 ## Identificação de um schema {#identification-of-a-schema}
 
 Um schema de dados é identificado por seu nome e namespace.
 
-Um namespace permite agrupar um conjunto de schemas por área de interesse. Por exemplo, o namespace **cus** é usado para configuração específica do cliente (**customers**).
+Um namespace permite agrupar um conjunto de schemas por área de interesse. Por exemplo, a variável **cus** o namespace é usado para configuração específica do cliente (**clientes**).
 
 A chave de identificação de um schema é uma cadeia de caracteres criada usando o namespace e o nome separados por dois pontos; por exemplo: **cus:recipient**.
 
@@ -84,5 +84,5 @@ A chave de identificação de um schema é uma cadeia de caracteres criada usand
 >
 >Os identificadores não devem começar com caracteres numéricos.
 >
->Os seguintes namespaces são reservados para descrições das entidades do sistema necessárias para a operação do aplicativo Adobe Campaign e não devem ser usados: **xtk**, **nl**, **nms**, **ncm**, **temp**, **ncl**, **crm&lt;a1 3/>,** xxl **.**
+>Os seguintes namespaces são reservados para descrições das entidades do sistema necessárias para a operação do aplicativo Adobe Campaign e não devem ser usados: **xtk**, **nl**, **nms**, **ncm**, **temp**, **ncl**, **crm**, **xxl**.
 

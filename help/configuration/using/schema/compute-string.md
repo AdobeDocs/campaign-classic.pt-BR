@@ -35,11 +35,11 @@ nenhuma
 
 ## Descrição {#description-1}
 
-O elemento `<compute-string>` permite gerar uma string com base em uma expressão XTK para exibir um rótulo &quot;construído&quot; na interface com base em vários valores.
+O `<compute-string>` O elemento permite gerar uma string com base em uma expressão XTK para exibir um rótulo &quot;construído&quot; na interface com base em vários valores.
 
 ## Uso e contexto de uso {#use-and-context-of-use-1}
 
-Quando nenhum `<compute-string>` é definido, um elemento `<compute-string>` é inserido por padrão com os valores da chave primária no schema.
+Quando não `<compute-string>` estiver definido, uma `<compute-string>` é inserido por padrão com os valores da chave primária no schema .
 
 ## Descrição do atributo {#attribute-description-1}
 

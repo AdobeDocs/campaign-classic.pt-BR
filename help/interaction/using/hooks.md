@@ -7,17 +7,17 @@ content-type: reference
 topic-tags: advanced-parameters
 exl-id: e1d7d7c2-61e7-40d6-a8ce-69bc976f8c73
 source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '509'
 ht-degree: 100%
 
 ---
 
-# Ganchos{#hooks}
+# Ganchos {#hooks}
 
 ![](../../assets/v7-only.svg)
 
-Ganchos  em Interações permitem modificar o **comportamento do mecanismo padrão**.
+Ganchos em Interações permitem modificar o **comportamento do mecanismo padrão**.
 
 Os ganchos **[!UICONTROL Target loading]** e **[!UICONTROL Proposition post-processing]** são configurados no espaço de ofertas do Adobe Campaign:
 

@@ -5,7 +5,8 @@ description: Saiba como configurar permissões de URL
 audience: installation
 content-type: reference
 topic-tags: additional-configurations
-source-git-commit: e719c8c94f1c08c6601b3386ccd99d250c9e606b
+exl-id: 6fe8da3b-57b9-4a69-8602-a03993630b27
+source-git-commit: 4fd69aa28c2e9325f4738ec571a6632c42ec26b8
 workflow-type: tm+mt
 source-wordcount: '337'
 ht-degree: 34%
@@ -22,13 +23,13 @@ Por padrão, as instâncias não têm permissão para se conectar a URLs externo
 
 >[!NOTE]
 >
->Este procedimento está restrito a **implantações locais**.
+>Este procedimento restringe-se a **no local** implantações.
 >
->Como cliente **hospedado**, se você puder acessar [Painel de controle do Campaign](https://experienceleague.adobe.com/docs/control-panel/using/control-panel-home.html?lang=pt-BR), poderá usar a interface de autoatendimento de permissões de URL. [Saiba mais](https://experienceleague.adobe.com/docs/control-panel/using/instances-settings/url-permissions.html?lang=pt-BR)
+>Como um **hospedado** cliente, se você puder acessar [Painel de controle do Campaign](https://experienceleague.adobe.com/docs/control-panel/using/control-panel-home.html?lang=pt-BR), você pode usar a interface de autoatendimento de permissões de URL. [Saiba mais](https://experienceleague.adobe.com/docs/control-panel/using/instances-settings/url-permissions.html?lang=pt-BR)
 >
->Outros clientes **híbridos/hospedados** precisam entrar em contato com a equipe de suporte do Adobe para adicionar IP à.
+>Outras **híbrido/hospedado** Os clientes precisam entrar em contato com a equipe de suporte do Adobe para adicionar IP à.
 
-Para implantações **Hybrid** e **No local**, o administrador precisa fazer referência a um novo **urlPermission** no arquivo **serverConf.xml**.
+Para **Híbrido** e **No local** implantações, o administrador precisa fazer referência a um novo **urlPermission** no **serverConf.xml** arquivo.
 
 
 Três modos de proteção de conexão estão disponíveis:
@@ -47,9 +48,9 @@ Três modos de proteção de conexão estão disponíveis:
 
 >[!IMPORTANT]
 >
->Por padrão, novas implementações usam o modo **Bloqueio**.
+>Por padrão, as novas implementações usam o **Bloqueio** modo.
 >
->Como um cliente existente proveniente de uma migração, você pode usar temporariamente o modo **Aviso**. Analise o tráfego de saída antes de permitir os URLs. Após definir a lista de URLs permitidos, é possível adicionar os URLs à lista de permissões e ativar o modo **Bloqueio**.
+>Como um cliente existente proveniente de uma migração, você pode usar temporariamente o **Aviso** modo. Analise o tráfego de saída antes de permitir os URLs. Após definir a lista de URLs permitidos, é possível adicionar os URLs à lista de permissões e ativar o **Bloqueio** modo.
 
 Para obter mais informações, consulte esta seção.
 

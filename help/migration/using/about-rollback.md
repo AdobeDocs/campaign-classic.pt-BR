@@ -26,7 +26,7 @@ O procedimento de reversão depende da sua versão inicial do Campaign.
 Este é o procedimento para restaurar uma v6.1 de um v7.
 
 1. Recupere o backup do banco de dados e o restaure.
-1. Recupere a pasta **Adobe Campaign v6.back** (**nl6.back** no Linux), renomeie-a para **Adobe Campaign v6** (**nl6** no Linux) e restaure-a no seu local original.
+1. Recupere a **Adobe Campaign v6.back** pasta (**nl6.back** no Linux), renomeie-o para **Adobe Campaign v6** (**nl6** no Linux) e restaurá-lo ao seu local original.
 1. Reconfigure o IIS atribuindo novamente as portas de escuta para restabelecer a integração do Adobe Campaign v6.1 no nível do Site do IIS.
 1. Pare o serviço Adobe Campaign v7.
 1. Reinicie o IIS.
@@ -37,7 +37,7 @@ Este é o procedimento para restaurar uma v6.1 de um v7.
 Este é o procedimento para restaurar uma v6.02 de um v7.
 
 1. Recupere o backup do banco de dados e o restaure.
-1. Recupere a pasta **Neolane v6.back** (**nl6.back** no Linux), renomeie-a para **Neolane v6** (**nl6** no Linux) e restaure-a para seu local original.
+1. Recupere a **Neolane v6.back** pasta (**nl6.back** no Linux), renomeie-o para **Neolane v6** (**nl6** no Linux) e restaurá-lo ao seu local original.
 1. Reconfigure o IIS atribuindo novamente as portas de escuta para restabelecer a integração do Adobe Campaign v6.02 no nível do Site do IIS.
 1. Pare o serviço Adobe Campaign v6.1.
 1. Reinicie o IIS.
@@ -48,7 +48,7 @@ Este é o procedimento para restaurar uma v6.02 de um v7.
 Este é o procedimento para restaurar um v5.11 de um v7.
 
 1. Recupere o backup do banco de dados e o restaure.
-1. Recupere a pasta **Neolane v5.back** (**nl5.back** no Linux), renomeie-a para **Neolane v5** (**nl5** no Linux) e restaure-a para seu local original.
+1. Recupere a **Neolane v5.back** pasta (**nl5.back** no Linux), renomeie-o para **Neolane v5** (**nl5** no Linux) e restaurá-lo ao seu local original.
 1. Reconfigure o IIS atribuindo novamente as portas de escuta para restabelecer a integração do Neolane v5 no nível do Site do IIS.
 1. Pare o serviço Adobe Campaign v7.
 1. Reinicie o IIS.

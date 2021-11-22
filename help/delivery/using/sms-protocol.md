@@ -7,7 +7,7 @@ content-type: reference
 topic-tags: configuring-channels
 exl-id: fded088a-11a2-4b87-a368-7b197334aca4
 source-git-commit: 4d789ad0138f65134d3c1592ef5d5517d39fc0f7
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '8460'
 ht-degree: 100%
 
@@ -859,7 +859,7 @@ Verifique se `BIND_* PDUs` foram enviados corretamente. O item mais importante a
 
 Verifique se não há muitos `BIND_* PDU`s. Se houver muitos deles, isso poderá indicar que a conexão é instável. Consulte a seção [Problemas com conexões instáveis](sms-protocol.md#issues-unstable-connection) para obter mais informações.
 
-#### ENQUIRE_LINK {#enquire-link-pdus}
+#### INQUIRE_LINK {#enquire-link-pdus}
 
 Verifique se os `ENQUIRE_LINK PDU`s são trocados regularmente quando a conexão está ociosa.
 

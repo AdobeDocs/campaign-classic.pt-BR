@@ -64,14 +64,14 @@ As opções Power Booster e Power Cluster podem ser usadas pelos seguintes aplic
   <tr> 
    <td> Disponibilidade<br /> </td> 
    <td> A do banco de dados principal<br /> </td> 
-   <td> 24/7 exceto janelas de manutenção e tempos de inatividade para a instância de execução<br /> </td> 
+   <td> 24 horas por dia, 7 dias por semana, exceto janelas de manutenção e tempos de inatividade para a instância de execução<br /> </td> 
    <td> Serviço 24/7/365 possível<br /> </td> 
   </tr> 
   <tr> 
    <td> Segurança<br /> </td> 
-   <td> O Data mart é potencialmente acessível a partir da Internet pública<br /> </td> 
-   <td> O Data Smart é isolado de componentes frontais e voltados para a Internet<br /> </td> 
-   <td> O Data Smart é isolado de componentes frontais e voltados para a Internet<br /> </td> 
+   <td> O Data mart é potencialmente acessível através da Internet pública<br /> </td> 
+   <td> O Data Smart é isolado de componentes frontais voltados para a Internet<br /> </td> 
+   <td> O Data Smart é isolado de componentes frontais voltados para a Internet<br /> </td> 
   </tr> 
   <tr> 
    <td> Modelo de implantação<br /> </td> 
@@ -84,6 +84,6 @@ As opções Power Booster e Power Cluster podem ser usadas pelos seguintes aplic
 
 ## Recomendações {#recommendations}
 
-* Uma instância de execução deve ser dedicada a um serviço. Não é possível instalar um pacote para um serviço ao qual você não se inscreveu. Por exemplo, se assinar a opção **Power Boster** para o serviço **Message Center**, você só poderá instalar o pacote **[!UICONTROL Execution of transactional messages]** na instância de execução dedicada. Verifique o contrato de licença.
+* Uma instância de execução deve ser dedicada a um serviço. Não é possível instalar um pacote para um serviço ao qual você não se inscreveu. Por exemplo, se você assinar o **Power Boster** para a **Centro de mensagens** você só poderá instalar o **[!UICONTROL Execution of transactional messages]** na instância de execução dedicada. Verifique o contrato de licença.
 * Como as instâncias dedicadas (ou clusters) são instâncias do Adobe Campaign, as recomendações são as mesmas de uma instância principal. Para obter mais informações, consulte [este documento](../../production/using/foreword.md).
 * Para configurar adequadamente a instância do ponto de vista de um banco de dados/componentes de hardware, entre em contato com o Adobe Campaign Professional Services.

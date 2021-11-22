@@ -17,7 +17,7 @@ ht-degree: 7%
 
 ![](../../assets/v7-only.svg)
 
-Para uma instância **prod** existente no Linux/PostgreSQL, as etapas para alternar para unicode são as seguintes:
+Para um **prod** no Linux/PostgreSQL, as etapas para alternar para unicode são as seguintes:
 
 1. Pare os processos de gravação no banco de dados:
 
@@ -60,7 +60,7 @@ Para uma instância **prod** existente no Linux/PostgreSQL, as etapas para alter
    vi config-prod.xml
    ```
 
-   Adicione o caractere **u** na frente do valor relacionado ao identificador do banco de dados (**databaseId**):
+   Adicione o **u** na frente do valor relativo ao identificador do banco de dados (**databaseId**):
 
    ```
    <web>

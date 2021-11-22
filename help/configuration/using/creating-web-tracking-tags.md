@@ -24,22 +24,22 @@ Cada página do site que você deseja rastrear deve ser referenciada na platafor
 
 ## Definição dos URLs a serem rastreados no aplicativo {#defining-the-urls-to-be-tracked-in-the-application}
 
-Esse método permite definir manualmente as páginas que serão rastreadas e gerar um exemplo da tag de rastreamento Web associada. Essa operação é definida no nó **[!UICONTROL Campaign execution>Resources>Web tracking tags]** do console do cliente.
+Esse método permite definir manualmente as páginas que serão rastreadas e gerar um exemplo da tag de rastreamento Web associada. Essa operação é definida na variável **[!UICONTROL Campaign execution>Resources>Web tracking tags]** do console do cliente.
 
 ![](assets/d_ncs_integration_webtracking_screen.png)
 
-Para gerar o código HTML a ser inserido na página:
+Para gerar o código de HTML a ser inserido na página:
 
 * Insira o rótulo da tag: será exibido nos logs de rastreamento,
 * Indique o URL de origem: esse campo é para fins de informação e permite indicar a página rastreada (opcional),
 * Se necessário, insira um período de validade,
-* Clique em **[!UICONTROL Generate]** código HTML.
+* Clique em **[!UICONTROL Generate]** Código HTML.
 
 Em seguida, copie o código gerado e o cole na página a ser rastreada.
 
 ## Criação instantânea de URLs a serem rastreados {#on-the-fly-creation-of-urls-to-be-tracked}
 
-Você pode criar URLs de rastreamento Web dinamicamente, adicionando informações ao valor do parâmetro **tagid**:
+Você pode criar URLs de rastreamento Web dinamicamente, adicionando informações ao valor da variável **tagid** parâmetro:
 
 * Tipo de página rastreada: &#39;w&#39; para WEB ou &#39;t&#39; para TRANSAÇÃO,
 * O nome interno da pasta onde o URL deve ser criado.
@@ -52,7 +52,7 @@ tagid=<identifier>|<type>|<foldername>
 
 >[!IMPORTANT]
 >
->Lembre-se de codificar o valor do parâmetro **tagid** quando ele for usado como um parâmetro de URL.
+>Lembre-se de codificar o valor da variável **tagid** quando é usado como parâmetro de URL.
 
 **Exemplo**: criação de um URL de rastreamento Web do tipo transação.
 

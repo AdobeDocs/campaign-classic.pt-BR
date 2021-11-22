@@ -4,7 +4,8 @@ title: Nota técnica
 description: Nota técnica
 hide: true
 hidefromtoc: true
-source-git-commit: 53ac193211a1d98c45e97bf01ab0ad843b8f8f02
+exl-id: e7d4331b-7149-4768-8e46-2e2911319074
+source-git-commit: ed9e76495efb0cb49e248a7d38417642c5094a11
 workflow-type: tm+mt
 source-wordcount: '355'
 ht-degree: 36%
@@ -23,7 +24,7 @@ Observe que os links de unsubscription podem falhar como qualquer outro link, a 
 
 **Você será afetado?**
 
-Para melhorar a segurança, o mecanismo de assinatura para rastrear links em emails foi introduzido no [Campaign Gold Standard 8](../../rn/using/gold-standard.md#gs8) - abril de 2020 - e é ativado por padrão para todos os clientes que iniciam a Build 19.1.4 (9032@3a9dc9c) e o Campaign 20.2.
+Para melhorar a segurança, o mecanismo de assinatura para rastrear links em emails foi introduzido em [Campaign Gold Standard 8](../../rn/using/gold-standard.md#gs8) - abril de 2020 - e está ativado por padrão para todos os clientes a partir da Build 19.1.4 (9032@3a9dc9c) e do Campaign 20.2.
 
 Se seu ambiente estiver em execução em uma das versões listadas abaixo, você poderá ser afetado:
 
@@ -39,13 +40,13 @@ Saiba como verificar sua versão [nesta seção](../../platform/using/launching-
 
 **Como atualizar?**
 
-Como **cliente hospedado**, o Adobe trabalhará com você para atualizar sua configuração em breve.
+Como um **cliente hospedado**, o Adobe estará trabalhando com você para atualizar sua configuração em breve.
 
-Como um **cliente local/híbrido**, você precisa atualizar sua configuração.
+Como um **cliente local/híbrido**, é necessário atualizar a configuração do .
 
 Siga a etapa abaixo:
 
-1. No [arquivo de configuração do servidor](../../installation/using/the-server-configuration-file.md) (serverConf.xml), altere **signEmailLinks** para **false**.
+1. No [arquivo de configuração do servidor](../../installation/using/the-server-configuration-file.md) (serverConf.xml), alterar **signEmailLinks** para **false**.
 1. Reinicie o serviço **nlserver**.
 1. No servidor de rastreamento, reinicie o servidor da Web (apache2 em Debian, httpd em CentOS/RedHat, IIS no Windows).
 
@@ -55,7 +56,7 @@ Siga a etapa abaixo:
 
 >[!NOTE]
 >
->O arquivo **config-`<instance>`.xml** substitui as configurações **serverConf.xml**. Se **signEmailLinks** estiver presente no **config-`<instance>`.xml** (onde **instance** é o nome da sua instância), também deverá ser definido como **false**.
+>O **config-`<instance>`.xml** O arquivo substitui o **serverConf.xml** configurações. Se a variável **signEmailLinks** está presente no  **config-`<instance>`.xml** em que **instância** é o nome da sua instância), também deve ser definido como **false**.
 
 **Qual é o impacto?**
 
@@ -65,4 +66,4 @@ Quando a atualização estiver concluída, todos os links funcionarão conforme 
 
 >[!NOTE]
 >
->Em caso de dúvidas sobre essas alterações, entre em contato com o [Atendimento ao cliente da Adobe](https://helpx.adobe.com/br/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html).
+>Em caso de dúvidas sobre essas alterações, entre em contato com o [Atendimento ao cliente da Adobe](https://helpx.adobe.com/br/enterprise/using/support-for-experience-cloud.html).

@@ -45,7 +45,7 @@ Esse elemento permite definir um índice vinculado a uma tabela.
 
 É possível definir vários índices. Um índice pode fazer referência a um ou mais campos da tabela. A declaração Index geralmente segue a definição do elemento schema principal.
 
-A ordem dos elementos `<keyfield>` definidos em um `<dbindex>` é muito importante. O primeiro `<keyfield>` deve ser o critério de indexação no qual as consultas se baseiam principalmente.
+A ordem dos `<keyfield>` elementos definidos em um `<dbindex>` é muito importante. O primeiro `<keyfield>` deve ser o critério de indexação no qual os queries se baseiam principalmente.
 
 O nome do índice no banco de dados é calculado concatenando o nome da tabela e o nome do índice. Por exemplo: Nome da tabela &quot;Amostra&quot;, Namespace &quot;Cus&quot;, nome do índice &quot;MyIndex&quot;-> nome do campo de índice durante a consulta de criação de índice: &quot;CusSample_myIndex&quot;.
 
@@ -65,12 +65,12 @@ O nome do índice no banco de dados é calculado concatenando o nome da tabela e
 
 * **applicableIf (cadeia de caracteres)**: condição para considerar o índice - recebe uma expressão XTK.
 * **label (string)**: rótulo do índice.
-* **nome (MNTOKEN)**: nome de índice exclusivo.
+* **name (MNTOKEN)**: nome de índice exclusivo.
 * **exclusivo (booleano)**: se essa opção estiver ativada (@unique=&quot;true&quot;), o atributo garantirá a exclusividade do índice em seus campos.
 
 ## Exemplos {#examples-3}
 
-Criação de um índice no campo &quot;id&quot;. (o atributo &quot;@unique&quot; no elemento `<dbindex>` aciona a adição da palavra-chave SQL &quot;UNIQUE&quot; quando o índice é criado no banco de dados (query).
+Criação de um índice no campo &quot;id&quot;. (o atributo &quot;@unique&quot; no `<dbindex>` O elemento aciona a adição da palavra-chave SQL &quot;EXCLUSIVA&quot; quando o índice é criado no banco de dados (query).
 
 ```
 <element label="Sample" name="Sample">

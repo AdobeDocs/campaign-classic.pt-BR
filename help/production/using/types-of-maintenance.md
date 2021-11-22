@@ -72,7 +72,7 @@ Várias estratégias estão disponíveis:
   <tr> 
    <td> Despejar e restaurar<br /> </td> 
    <td> Despeje a tabela para um arquivo, exclua a tabela no banco de dados e restaure do despejo.<br /> </td> 
-   <td> Essa é a maneira mais fácil de desfragmentar uma tabela. Além disso, a única solução quando o banco de dados estiver quase cheio.<br /> </td> 
+   <td> Essa é a maneira mais fácil de desfragmentar uma tabela. Também é a única solução quando o banco de dados está quase cheio.<br /> </td> 
    <td> Como a tabela é excluída e recriada, o aplicativo não pode ser deixado online, mesmo no modo somente leitura (a tabela não está disponível durante a fase de restauração).<br /> </td> 
   </tr> 
   <tr> 

@@ -89,8 +89,8 @@ A assinatura da função deve incluir um argumento para cada parâmetro &quot;in
 
 Casos específicos:
 
-* **métodos** não estáticos: a função deve incluir um argumento adicional primeiro, coincidindo com a entidade XML transmitida no formato de um objeto do tipo &#39;xml&#39; (E4X).
-* **Métodos** do tipo &quot;somente chave&quot;: a função deve incluir um argumento adicional primeiro, coincidindo com a chave transmitida no formato das cadeias de caracteres.
+* **métodos não estáticos**: a função deve incluir um argumento adicional primeiro, coincidindo com a entidade XML transmitida no formato de um objeto do tipo &#39;xml&#39; (E4X).
+* **Métodos do tipo &quot;somente chave&quot;**: a função deve incluir um argumento adicional primeiro, coincidindo com a chave transmitida no formato das cadeias de caracteres.
 
 **3. Valores retornados**
 

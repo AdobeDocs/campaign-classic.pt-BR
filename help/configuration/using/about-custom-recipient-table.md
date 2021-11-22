@@ -34,7 +34,7 @@ Essa funcionalidade permite que o Adobe Campaign processe dados de um banco de d
 * A tabela de recipients padrão é inútil se você não precisar da maioria dos campos da tabela ou se o template do banco de dados não estiver centralizado nos recipients.
 * Para ser eficiente, uma tabela com alguns campos é necessária se você tiver um número significativo de perfis. A tabela de recipients padrão tem muitos campos para esse caso específico.
 
-Esta seção descreve os pontos principais que permitem mapear tabelas existentes no Adobe Campaign e a configuração a ser aplicada para executar deliveries com base em qualquer tabela. Por fim, ele descreve como fornecer aos usuários interfaces de consulta tão práticas quanto aquelas disponíveis na tabela de recipients padrão. Para entender o material apresentado nesta seção, é necessário um bom conhecimento dos princípios de projeto de tela e esquema.
+Esta seção descreve os pontos principais que permitem mapear tabelas existentes no Adobe Campaign e a configuração a ser aplicada para executar deliveries com base em qualquer tabela. Por fim, ele descreve como fornecer aos usuários interfaces de consulta tão práticas quanto aquelas disponíveis na tabela de recipients padrão. Para entender o material apresentado nesta seção, é necessário um bom conhecimento dos princípios de projeto de tela e de esquema.
 
 ## Recommendations e limitações {#recommendations-and-limitations}
 
@@ -47,33 +47,33 @@ O uso de uma tabela externa de recipient tem as seguintes limitações:
 
    Recomendamos:
 
-   * Dedicação dos esquemas **[!UICONTROL nms:BroadLogRcp]** e **[!UICONTROL nms:TrackingLogRcp]** ao **[!UICONTROL nms:Recipientschema]** pronto para uso. Essas duas tabelas de log não devem ser vinculadas a nenhuma tabela de recipient personalizada adicional.
-   * Definir esquemas personalizados de broadlog e trackinglog dedicados para cada novo esquema de recipient personalizado. Isso pode ser feito automaticamente ao configurar o target mapping, consulte [Target mapping](../../configuration/using/target-mapping.md).
+   * Dedicação da **[!UICONTROL nms:BroadLogRcp]** e **[!UICONTROL nms:TrackingLogRcp]** esquemas para pronto para uso **[!UICONTROL nms:Recipientschema]**. Essas duas tabelas de log não devem ser vinculadas a nenhuma tabela de recipient personalizada adicional.
+   * Definir esquemas personalizados de broadlog e trackinglog dedicados para cada novo esquema de recipient personalizado. Isso pode ser feito automaticamente ao configurar o target mapping; consulte [Target mapping](../../configuration/using/target-mapping.md).
 
-* Não é possível usar o **[!UICONTROL Services and Subscriptions]** padrão oferecido no produto.
+* Não é possível usar o padrão **[!UICONTROL Services and Subscriptions]** oferecido no produto.
 
-   Isso significa que a operação geral detalhada em [this section](../../delivery/using/managing-subscriptions.md) não é aplicável.
+   Isso significa que a operação geral é detalhada no [esta seção](../../delivery/using/managing-subscriptions.md) não é aplicável.
 
-* O link com a tabela **[!UICONTROL visitor]** não funciona.
+* O link com a variável **[!UICONTROL visitor]** tabela não funciona.
 
-   Assim, para usar o módulo **[!UICONTROL Social Marketing]**, você deve configurar a etapa de armazenamento para fazer referência à tabela correta.
+   Assim, para usar o **[!UICONTROL Social Marketing]** é necessário configurar a etapa de armazenamento para fazer referência à tabela correta.
 
    Da mesma forma, ao utilizar funções de referência, o modelo padrão de transferência inicial de mensagens deve ser adaptado.
 
 * Não é possível adicionar perfis manualmente em uma lista.
 
-   Portanto, o procedimento detalhado em [this section](../../platform/using/creating-and-managing-lists.md) não é aplicável sem uma configuração adicional.
+   Por conseguinte, o procedimento descrito no [esta seção](../../platform/using/creating-and-managing-lists.md) não é aplicável sem uma configuração adicional.
 
    >[!NOTE]
    >
-   >Ainda é possível criar listas de recipients usando workflows. Para obter mais informações, consulte [Criação de uma lista de perfis com um workflow](../../configuration/using/creating-a-profile-list-with-a-workflow.md).
+   >Ainda é possível criar listas de recipients usando workflows. Para obter mais informações, consulte [Criação de uma lista de perfis com base em um workflow](../../configuration/using/creating-a-profile-list-with-a-workflow.md).
 
 Também recomendamos verificar os valores padrão usados nas diferentes configurações predefinidas: em função das funcionalidades utilizadas, devem ser efetuadas várias adaptações.
 
 Por exemplo:
 
-* Determinados relatórios padrão, especialmente aqueles oferecidos pelo **Interaction** e pelo **Mobile Applications**, devem ser redesenvolvidos. Consulte a seção [Gerenciamento de relatórios](../../configuration/using/managing-reports.md) .
-* As configurações padrão para determinadas atividades de workflow fazem referência à tabela de recipients padrão (**[!UICONTROL nms:recipient]**): essas configurações devem ser alteradas quando usadas para uma tabela de recipients externos. Consulte a seção [Gerenciamento de workflows](../../configuration/using/managing-workflows.md) .
-* O bloco de personalização **[!UICONTROL Unsubscription link]** padrão deve ser adaptado.
+* Certos relatórios padrão, em especial os oferecidos por **Interação** e **Aplicativos móveis** tem de ser redesenvolvido. Consulte a [Gerenciamento de relatórios](../../configuration/using/managing-reports.md) seção.
+* As configurações padrão para determinadas atividades de workflow fazem referência à tabela de recipients padrão (**[!UICONTROL nms:recipient]**): essas configurações devem ser alteradas quando usadas para uma tabela de recipients externos. Consulte a [Gerenciamento de fluxos de trabalho](../../configuration/using/managing-workflows.md) seção.
+* O padrão **[!UICONTROL Unsubscription link]** o bloco de personalização deve ser adaptado.
 * O target mapping dos templates de delivery padrão deve ser modificado.
 * Os formulários V4 não são compatíveis para uso com uma tabela de recipients externos: você deve usar as aplicações web.

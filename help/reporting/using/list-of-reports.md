@@ -7,7 +7,7 @@ content-type: reference
 topic-tags: accessing-built-in-reports
 exl-id: c01f4850-ab17-44ac-a5e0-ff082ec206b3
 source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '1007'
 ht-degree: 100%
 
@@ -227,7 +227,7 @@ Para obter mais informações sobre o conteúdo desses relatórios, consulte [es
   <tr> 
    <td> <strong>Rótulo e nome interno</strong><br /> </td> 
    <td> <strong>Descrição</strong><br /> </td> 
-   <td> <strong>Schema</strong><br /> </td> 
+   <td> <strong>Esquema</strong><br /> </td> 
   </tr> 
   <tr> 
    <td> Custos vinculados ao(s) programa(s) (budgetProgramCost)<br /> </td> 
@@ -347,7 +347,7 @@ Os relatórios a seguir também são fornecidos internamente. Para obter mais in
   <tr> 
    <td> <strong>Rótulo e nome interno</strong><br /> </td> 
    <td> <strong>Descrição</strong><br /> </td> 
-   <td> <strong>Schema</strong><br /> </td> 
+   <td> <strong>Esquema</strong><br /> </td> 
   </tr> 
   <tr> 
    <td> Análise de oferta (offerAnalysis)<br /> </td> 

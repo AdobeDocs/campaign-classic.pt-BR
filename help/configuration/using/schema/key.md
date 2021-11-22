@@ -48,7 +48,7 @@ Uma tabela deve ter pelo menos uma chave.
 
 Como regra, as chaves são declaradas após o elemento principal do schema e os índices.
 
-Uma chave é conhecida como composta se incluir vários campos (ou seja, vários `<keyfield>` filhos). Não use uma chave composta para definir uma chave primária.
+Uma chave é conhecida como composta se incluir vários campos (ou seja, vários `<keyfield>` crianças). Não use uma chave composta para definir uma chave primária.
 
 Se o elemento principal do schema contiver o atributo &quot;@autopk=true&quot;, a chave primária será exclusiva. Só podemos ter uma chave primária por esquema.
 
@@ -60,7 +60,7 @@ Os primeiros 1000 identificadores são reservados, portanto, se uma faixa de val
 * **applicableIf (cadeia de caracteres)**: esse atributo permite tornar a chave opcional. Ela define a condição de acordo com a qual a definição de chave será aplicada. Esse atributo recebe uma expressão XTK.
 * **interno (booleano)**: se estiver ativado, esse atributo informará o Adobe Campaign que a chave é primária.
 * **label (string)**: da chave.
-* **nome (MNTOKEN)**: nome interno da chave.
+* **name (MNTOKEN)**: nome interno da chave.
 * **noDbIndex (booleano)**: se estiver ativado (noDbIndex=&quot;true&quot;), o campo correspondente à chave não será indexado.
 
 ## Exemplos {#examples-------}
@@ -74,7 +74,7 @@ Declaração de uma chave composta que autoriza o campo &quot;@expr&quot; ou &qu
  </key>
 ```
 
-Declaração de uma chave primária no campo &quot;Nome&quot; do tipo STRING em um `<srcschema>` e a consulta SQL correspondente:
+Declaração de uma chave primária no campo &quot;Nome&quot; do tipo STRING em um `<srcschema>`  e a consulta SQL correspondente:
 
 ```
  

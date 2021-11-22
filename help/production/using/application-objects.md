@@ -25,7 +25,7 @@ O Adobe Campaign usa uma sequência de ID que deve ser consumida adequadamente: 
 
 Quando a sequência atinge mais de 2 bilhões (2.147.483.648 é o número exato), volta a zero. Deve ser evitado e cria questões, razão pela qual esta sequência deve ser monitorizada.
 
-Para evitar isso com tabelas grandes, considere usar uma sequência específica. Isso pode ser feito com o atributo **pkSequence** no schema.
+Para evitar isso com tabelas grandes, considere usar uma sequência específica. Isso pode ser feito com o **pkSequence** no schema.
 
 Os workflows de alta frequência que criam muitos logs consumirão muitas IDs. Portanto, é altamente recomendável evitar muitos logs e altas frequências em workflows.
 
@@ -47,7 +47,7 @@ Os deliveries com mais de dois anos devem ser removidos da instância.
 
 O número de arquivos no disco do servidor de aplicativos não deve aumentar indefinidamente.
 
-Os workflows de importação criam arquivos e, portanto, causam expansão de disco. Isso pode ser evitado usando a atividade padrão [File collector](../../workflow/using/file-collector.md) . O coletor de arquivos move os arquivos para uma pasta temporária e os limpa automaticamente.
+Os workflows de importação criam arquivos e, portanto, causam expansão de disco. Isso pode ser evitado usando o padrão [File collector](../../workflow/using/file-collector.md) atividade . O coletor de arquivos move os arquivos para uma pasta temporária e os limpa automaticamente.
 
 Se um workflow importar arquivos e não fizer uso dos recursos padrão, ele precisará ser removido para manter o espaço em disco mínimo.
 

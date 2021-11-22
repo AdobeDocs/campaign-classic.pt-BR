@@ -23,13 +23,13 @@ Para criar um schema em um banco de dados externo:
 
    ![](assets/wf_new_schema_fda.png)
 
-1. Insira um **[!UICONTROL Namespace]** e **[!UICONTROL Name]** para o schema e selecione o **[!UICONTROL External account]** que habilitará a conexão com o banco de dados. Isso permite o acesso à lista de tabelas disponíveis na base externa.
+1. Insira um **[!UICONTROL Namespace]** e  **[!UICONTROL Name]** para o schema e selecione o **[!UICONTROL External account]** que habilitará a conexão com o banco de dados. Isso permite o acesso à lista de tabelas disponíveis na base externa.
 
    ![](assets/wf_new_schema_select_table_fda.png)
 
-1. No campo **[!UICONTROL Table name]** , escolha a tabela que contém os dados a serem coletados.
+1. No **[!UICONTROL Table name]** escolha a tabela que contém os dados a serem coletados.
 
-   Com o Snowflake, você pode selecionar aqui suas exibições se o usuário do banco de dados tiver recebido os privilégios corretos. Observe que, ao usar exibições, o Adobe Campaign não poderá gerar automaticamente o esquema XML, você terá que criá-lo sozinho. Para obter mais informações sobre exibições, consulte a [documentação do Snowflake](https://docs.snowflake.com/en/user-guide/views-introduction.html).
+   Com o Snowflake, você pode selecionar aqui suas exibições se o usuário do banco de dados tiver recebido os privilégios corretos. Observe que, ao usar exibições, o Adobe Campaign não poderá gerar automaticamente o esquema XML, você terá que criá-lo sozinho. Para obter mais informações sobre visualizações, consulte [Documentação do Snowflake](https://docs.snowflake.com/en/user-guide/views-introduction.html).
 
    ![](assets/wf_new_schema_select_table_fda.png)
 

@@ -31,7 +31,7 @@ _15 de abril de 2021_
 
 _31 de março de 2021_
 
-**Aprimoramentos**
+**Aprimoramentos** 
 
 * Foi feito um aprimoramento para evitar falhas em chamadas soap inválidas. Isso pode fazer com que a instância pare de funcionar ao tentar executar consultas complexas específicas. (NEO-28796, NEO-30553)
 * Correção de uma regressão que impedia o envio de deliveries de SMS com TLS devido à verificação do nome de host. (NEO-29581)

@@ -7,7 +7,7 @@ content-type: reference
 topic-tags: targeting-activities
 exl-id: 20d03627-cd56-46da-bc02-73b48a02a350
 source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '1629'
 ht-degree: 100%
 
@@ -188,7 +188,7 @@ A seção abaixo fornece as práticas recomendadas para otimizar as queries exec
 
    Para mais informações, dependendo da versão do Campaign, consulte estas seções:
 
-   ![](assets/do-not-localize/v7.jpeg)[  Documentação do Campaign v7](../../configuration/using/database-mapping.md)
+   ![](assets/do-not-localize/v7.jpeg)[ Documentação do Campaign v7](../../configuration/using/database-mapping.md)
 
    ![](assets/do-not-localize/v8.png)[  Documentação do Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/architecture/shemas-forms/database-mapping.html?lang=pt-BR)
 

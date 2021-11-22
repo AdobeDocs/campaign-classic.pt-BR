@@ -58,7 +58,7 @@ A &quot;@library&quot; é necessária para declarar um novo método (não nativo
 * **const (booleano)**: se estiver ativado, esse atributo significa que o método declarado alterará a entidade
 * **label (string)**: rótulo do método.
 * **biblioteca (string)**: esse método não é nativo do aplicativo. Esse atributo usa o valor da biblioteca de métodos, onde a definição do método é encontrada (nms:mylibrary.js).
-* **nome (MNTOKEN)**: nome exclusivo do método.
+* **name (MNTOKEN)**: nome exclusivo do método.
 * **estático (booleano)**: se este atributo estiver ativado, o método é considerado autônomo, todos os parâmetros devem ser especificados para o método quando for chamado.
 
 ## Exemplos {#examples-7}

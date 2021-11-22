@@ -21,13 +21,13 @@ Para que os usuários do Adobe Campaign possam fazer logon na instância criada 
 
 ## Disponibilizar o console do cliente
 
-Quando o computador usado para iniciar um servidor de aplicativos do Adobe Campaign (**nlserver web**) recebe conexões de usuário do console do cliente, você pode configurá-lo para disponibilizar o programa de configuração para o cliente avançado do Adobe Campaign por meio de uma interface HTML. Sempre que uma nova versão do console do cliente estiver disponível, os usuários serão convidados a baixá-la ao iniciar o console do cliente.
+Quando o computador iniciava um servidor de aplicativos Adobe Campaign (**nlserver web**) recebe conexões de usuário do console do cliente, você pode configurá-lo para disponibilizar o programa de configuração do cliente avançado do Adobe Campaign por meio de uma interface de HTML. Sempre que uma nova versão do console do cliente estiver disponível, os usuários serão convidados a baixá-la ao iniciar o console do cliente.
 
 Para fazer isso, você deve:
 
 1. Selecione o pacote que contém o programa de instalação do console.
 
-   Esse arquivo é chamado `setup-client-7.X.XXXX.exe` para v7 ou `setup-client-6.X.XXXX.exe` para v6.1, onde `X` é a subversão do Adobe Campaign e `XXXX` é o número da compilação.
+   Este arquivo é chamado de `setup-client-7.X.XXXX.exe` para v7 ou `setup-client-6.X.XXXX.exe` para v6.1, em que `X` é a subversão do Adobe Campaign e `XXXX` é o número da build.
 
 1. Copie e cole este pacote na pasta de instalação do Adobe Campaign (no servidor de marketing para instalações híbridas), em **/datakit/nl/eng/jsp**.
 1. Inicie o servidor Adobe Campaign.
@@ -44,17 +44,17 @@ Saiba como instalar o console [nesta seção](../../installation/using/installin
 
 ## Propor aos usuários finais que atualizem seu console do cliente
 
-Quando o console estiver disponível na pasta do servidor do Campaign, os usuários serão convidados a baixar a versão mais recente do console do cliente em uma janela dedicada do prompt. O Adobe recomenda deixar a opção **[!UICONTROL No longer ask this question]** desmarcada para garantir que todos os usuários sejam alertados quando uma nova versão do console estiver disponível.
+Quando o console estiver disponível na pasta do servidor do Campaign, os usuários serão convidados a baixar a versão mais recente do console do cliente em uma janela dedicada do prompt. O Adobe recomenda deixar a opção **[!UICONTROL No longer ask this question]** não selecionado para garantir que todos os usuários sejam alertados quando uma nova versão do console estiver disponível.
 
 Se você selecionar essa opção e optar por não baixar a versão mais recente, nenhum outro usuário será informado sobre novas versões disponíveis.
 
 Caso a opção tenha sido selecionada, é possível redefinir esse prompt. Somente administradores de sistema familiarizados com a edição do Registro do Windows devem fazer estas alterações:
 
-1. Abra o Editor do Registro usando o comando **regedit** do menu **[!UICONTROL Start > Run]**.
+1. Abra o Editor do Registro usando o **regedit** do **[!UICONTROL Start > Run]** menu.
 1. Procure o nó e expanda-o.
 
    ```
    \HKEY_CURRENT_USER\Software\Neolane\NL_6\nlclient
    ```
 
-1. Exclua a entrada **confAdvisedUpgrade** e feche o Editor do Registro.
+1. Exclua o **confAdvisedUpgrade** entre e feche o Editor do Registro.

@@ -35,7 +35,7 @@ Ao adicionar links personalizados ao seu conteúdo, sempre evite qualquer person
 
 ### Recomendações
 
-Para validar e garantir que você não está usando acima, execute uma query na tabela de rastreamento de URL por meio do [Editor de Consulta Genérico de Campanha](../../platform/using/steps-to-create-a-query.md) ou crie um workflow com critérios de filtro na [atividade de query](../../workflow/using/query.md).
+Para validar e garantir que você não está usando o acima, execute um query na tabela de rastreamento de URL por meio de [Editor de Consulta Genérico da Campanha](../../platform/using/steps-to-create-a-query.md) ou criar um workflow com critérios de filtro na [atividade de query](../../workflow/using/query.md).
 
 Exemplo:
 
@@ -57,11 +57,11 @@ Para melhorar a segurança, um mecanismo de assinatura para rastrear links em em
 >
 >Quando um URL assinado mal formado é clicado, esse erro é retornado: &quot;O URL solicitado &#39;...&#39; não foi encontrado.&quot;
 
-Além disso, desde a Campanha 20.2 e a versão [!DNL Gold Standard], você pode usar um aprimoramento para desativar URLs gerados em compilações anteriores. Esse recurso é desativado por padrão. É possível entrar em contato com o [Atendimento ao cliente](https://helpx.adobe.com/br/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html) para ativar esse recurso.
+Além disso, desde a Campanha 20.2 e o [!DNL Gold Standard] , você pode usar um aprimoramento para desativar URLs gerados em compilações anteriores. Esse recurso é desativado por padrão. Você pode entrar em contato com o [Atendimento ao cliente](https://helpx.adobe.com/br/enterprise/using/support-for-experience-cloud.html) para ativar este recurso.
 
-Se estiver executando [!DNL Gold Standard] 19.1.4, poderá enfrentar problemas com os deliveries de notificação por push usando links de rastreamento ou deliveries usando tags de âncora. Nesse caso, recomendamos que você desative a assinatura do URL.
+Se você estiver executando [!DNL Gold Standard] 19.1.4, você pode enfrentar problemas com deliveries de notificação por push usando links de rastreamento ou deliveries usando tags de âncora. Nesse caso, recomendamos que você desative a assinatura do URL.
 
-Se você estiver executando o Campaign nas instalações ou em uma arquitetura híbrida, entre em contato com [Atendimento ao cliente](https://helpx.adobe.com/br/enterprise/using/support-for-experience-cloud.html) para desativar a assinatura de URL.
+Se você estiver executando o Campaign nas instalações ou em uma arquitetura híbrida, entre em contato com o [Atendimento ao cliente](https://helpx.adobe.com/br/enterprise/using/support-for-experience-cloud.html) para desabilitar a assinatura do URL.
 
 Se você estiver executando o Campaign em uma arquitetura híbrida, antes de ativar a assinatura de URL, verifique se a instância mid-sourcing hospedada foi atualizada da seguinte maneira:
 * Antes da instância de marketing no local
@@ -89,13 +89,13 @@ Você precisa ter certeza que as senhas criptografadas não estarão acessíveis
 
 Esta restrição permite que você remova os campos de senhas, mas deixe a conta externa acessível a partir da interface para todos os usuários. Consulte [esta página](../../configuration/using/restricting-pii-view.md).
 
-1. Vá em **[!UICONTROL Administration]** > **[!UICONTROL Configuration]** > **[!UICONTROL Data schemas]**.
+1. Entrar **[!UICONTROL Administration]** > **[!UICONTROL Configuration]** > **[!UICONTROL Data schemas]**.
 
 1. Crie um novo **[!UICONTROL Extension of a schema]**.
 
    ![](assets/privacy-data-restriction.png)
 
-1. Escolha **[!UICONTROL External Account]** (extAccount).
+1. Choose **[!UICONTROL External Account]** (extAccount).
 
 1. Na última tela do assistente, você pode editar seu novo srcSchema para restringir o acesso a todos os campos de senha:
 
@@ -152,7 +152,7 @@ Esta restrição permite que você remova os campos de senhas, mas deixe a conta
 
    >[!NOTE]
    >
-   >Você pode substituir `$(loginId) = 0 or $(login) = 'admin'` por `hasNamedRight('admin')` para permitir que todos os usuários com direitos de administrador vejam essas senhas.
+   >Você pode substituir `$(loginId) = 0 or $(login) = 'admin'` com `hasNamedRight('admin')` para permitir que todos os usuários com direitos de administrador vejam essas senhas.
 
 ## Proteção de páginas contendo PII
 
@@ -178,8 +178,8 @@ Para proteger suas páginas, siga estas etapas:
 
    Para o Apache, você pode colocar o arquivo em **/var/www/robots.txt** (Debian).
 
-1. Às vezes, adicionar um arquivo **robots.txt** não é suficiente em termos de segurança. Por exemplo, se outro site contiver um link para sua página, ele poderá aparecer em um resultado de pesquisa.
+1. Às vezes, adicionar um **robots.txt** O ficheiro não é suficiente em termos de segurança. Por exemplo, se outro site contiver um link para sua página, ele poderá aparecer em um resultado de pesquisa.
 
-Além do arquivo **robots.txt**, é recomendável adicionar um cabeçalho **X-Robots-Tag**. Você pode fazer isso no Apache ou IIS e no arquivo de configuração **serverConf.xml**.
+Além do **robots.txt** é recomendável adicionar um **X-Robots-Tag** cabeçalho. Você pode fazer isso no Apache ou IIS e no **serverConf.xml** arquivo de configuração.
 
 Para obter mais informações, consulte [este artigo](https://developers.google.com/search/reference/robots_meta_tag).

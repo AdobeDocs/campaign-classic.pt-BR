@@ -23,7 +23,7 @@ Ao modificar um schema e salvar as modificações, o schema estendido é gerado 
 1. Clique com o botão direito do mouse e escolha **[!UICONTROL Actions > Regenerate selected schemas...]** .
 1. Clique em **[!UICONTROL OK]** para confirmar e iniciar o processo.
 
-Em seguida, você pode verificar a estrutura do schema gerado nas guias Preview e Documentation . Para obter mais informações, consulte a seção [Principles](../../configuration/using/data-schemas.md#principles) .
+Em seguida, você pode verificar a estrutura do schema gerado nas guias Preview e Documentation . Para obter mais informações, consulte [Princípios](../../configuration/using/data-schemas.md#principles) seção.
 
 >[!NOTE]
 >

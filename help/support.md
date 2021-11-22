@@ -55,7 +55,7 @@ Como atualizar para um novo build? como monitorar a execução do fluxo de traba
         <li><a href="workflow/using/workflow-best-practices.md">Otimizar o desempenho do fluxo de trabalho</a></li>
         <li><a href="workflow/using/monitoring-workflow-execution.md">Solução de problemas de execução de fluxo de trabalho</a></li>
         <li><a href="platform/using/sftp-server-usage.md">Uso do servidor SFTP</a></li>
-        <li><a href="delivery/using/understanding-delivery-failures.md">Entender as falhas de delivery</a></li>
+        <li><a href="delivery/using/understanding-delivery-failures.md">Entender as falhas de entrega</a></li>
         </ul>
     </td>
    <td valign="top">
@@ -123,7 +123,7 @@ Você pode monitorar os subdomínios e seus certificados. Saiba mais nestas pág
 ### Configurações de instância
 
 Saiba como gerenciar as configurações de instâncias do Campaign Classic no Painel de controle. Saiba mais nestas páginas:
-* [Adicione IPs na lista de ](https://experienceleague.adobe.com/docs/control-panel/using/instances-settings/ip-allow-listing-instance-access.html?lang=pt-BR) permissões para acessar suas instâncias do Campaign
+* [Adicionar IPs na lista de permissões](https://experienceleague.adobe.com/docs/control-panel/using/instances-settings/ip-allow-listing-instance-access.html?lang=pt-BR) para acessar a(s) instância(s) do Campaign
 * [Gerenciar permissões de URL](https://experienceleague.adobe.com/docs/control-panel/using/instances-settings/url-permissions.html?lang=pt-BR)
 * [Detalhes da instância de acesso](https://experienceleague.adobe.com/docs/control-panel/using/instances-settings/instance-details.html?lang=pt-BR)
 * [Gerenciar chaves GPG para criptografia de dados](https://experienceleague.adobe.com/docs/control-panel/using/instances-settings/gpg-keys-management.html?lang=pt-BR)
@@ -132,7 +132,7 @@ Saiba como gerenciar as configurações de instâncias do Campaign Classic no Pa
 
 <img src="platform/using/assets/do-not-localize/icon-support.svg" width="60px">
 
-O novo sistema de emissão de bilhetes foi iniciado através de [Adobe Admin Console](https://adminconsole.adobe.com/overview). O novo sistema exige novas contas individuais para cada usuário, com as permissões corretas. Se você não conseguir fazer logon com sua Adobe ID, solicite acesso por meio da Experience League, e a equipe de Atendimento ao cliente resolverá o problema o mais rápido possível. [Saiba mais](https://helpx.adobe.com/br/enterprise/using/support-for-experience-cloud.html)
+O novo sistema de emissão de bilhetes foi lançado [Adobe Admin Console](https://adminconsole.adobe.com/overview). O novo sistema exige novas contas individuais para cada usuário, com as permissões corretas. Se você não conseguir fazer logon com sua Adobe ID, solicite acesso por meio da Experience League, e a equipe de Atendimento ao cliente resolverá o problema o mais rápido possível. [Saiba mais](https://helpx.adobe.com/br/enterprise/using/support-for-experience-cloud.html)
 
 ### Pergunte aos especialistas.
 

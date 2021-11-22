@@ -19,7 +19,7 @@ ht-degree: 2%
 
 ## Princípios {#principles}
 
-Para editar, criar e configurar os esquemas, clique no nó **[!UICONTROL Administration > Configuration > Data schemas]** do console do cliente Adobe Campaign.
+Para editar, criar e configurar os esquemas, clique no botão **[!UICONTROL Administration > Configuration > Data schemas]** do console do cliente do Adobe Campaign.
 
 >[!NOTE]
 >
@@ -43,16 +43,16 @@ A pré-visualização gera automaticamente o schema estendido:
 >
 >Quando o schema de origem é salvo, a geração do schema estendido é iniciada automaticamente.
 
-Se precisar verificar a estrutura completa de um schema, use a guia preview . Se o schema tiver sido estendido, você poderá visualizar todas as suas extensões. Como complemento, a guia Documentation exibe todos os atributos e elementos do schema e suas propriedades (Campo SQL, tipo/comprimento, rótulo, descrição). A guia Documentação se aplica somente aos esquemas gerados. Para obter mais informações, consulte a seção [Regenerating schemas](../../configuration/using/regenerating-schemas.md) .
+Se precisar verificar a estrutura completa de um schema, use a guia preview . Se o schema tiver sido estendido, você poderá visualizar todas as suas extensões. Como complemento, a guia Documentation exibe todos os atributos e elementos do schema e suas propriedades (Campo SQL, tipo/comprimento, rótulo, descrição). A guia Documentação se aplica somente aos esquemas gerados. Para obter mais informações, consulte [Regeneração de schemas](../../configuration/using/regenerating-schemas.md) seção.
 
 ## Exemplo: criar uma tabela de contrato {#example--creating-a-contract-table}
 
-No exemplo a seguir, queremos criar uma nova tabela para **Contracts** no modelo de banco de dados do banco de dados do Adobe Campaign. Essa tabela permite armazenar nomes e sobrenomes e endereços de email de titulares e cotitulares, para cada contrato.
+No exemplo a seguir, queremos criar uma nova tabela para **contratos** no modelo de banco de dados do banco de dados do Adobe Campaign. Essa tabela permite armazenar nomes e sobrenomes e endereços de email de titulares e cotitulares, para cada contrato.
 
 Para fazer isso, é necessário criar o schema da tabela e atualizar a estrutura do banco de dados para gerar a tabela correspondente. Aplique as seguintes etapas:
 
-1. Edite o nó **[!UICONTROL Administration > Configuration > Data schemas]** da árvore do Adobe Campaign e clique em **[!UICONTROL New]** .
-1. Escolha a opção **[!UICONTROL Create a new table in the data model]** e clique em **[!UICONTROL Next]** .
+1. Edite o **[!UICONTROL Administration > Configuration > Data schemas]** nó da árvore do Adobe Campaign e clique em **[!UICONTROL New]** .
+1. Escolha a **[!UICONTROL Create a new table in the data model]** e clique em **[!UICONTROL Next]** .
 
    ![](assets/s_ncs_configuration_create_new_schema.png)
 
@@ -62,7 +62,7 @@ Para fazer isso, é necessário criar o schema da tabela e atualizar a estrutura
 
    >[!NOTE]
    >
-   >Por padrão, os esquemas criados pelos usuários são armazenados no namespace &#39;cus&#39;. Para obter mais informações, consulte [Identification of a schema](../../configuration/using/about-schema-reference.md#identification-of-a-schema).
+   >Por padrão, os esquemas criados pelos usuários são armazenados no namespace &#39;cus&#39;. Para obter mais informações, consulte [Identificação de um schema](../../configuration/using/about-schema-reference.md#identification-of-a-schema).
 
 1. Crie o conteúdo da tabela. Recomendamos o uso do assistente de entrada para garantir que nenhuma configuração esteja ausente. Para fazer isso, clique no botão **[!UICONTROL Insert]** e escolha o tipo de configuração a ser adicionada.
 

@@ -23,17 +23,17 @@ Há muitos módulos Adobe Campaign. Alguns operam continuamente, enquanto outros
 
 Existem três tipos de módulos Adobe Campaign:
 
-* Módulos de várias instâncias: um único processo é executado para todas as instâncias. Isso se aplica aos seguintes módulos: **web**, **syslogd**, **trackinglogd** e **watchdog** (atividades do arquivo **config-default.xml**).
-* Módulos de instância única: um processo é executado por instância. Isso se aplica aos seguintes módulos: **mta**, **wfserver**, **inMail**, **sms** e **stat** (atividades do arquivo **config-`<instance>`.xml**) .
-* Módulos do utilitário: esses são módulos que são executados ocasionalmente para executar operações ocasionais ou recorrentes (**cleanup**, **config**, download de logs de rastreamento etc.).
+* Módulos de várias instâncias: um único processo é executado para todas as instâncias. Isso se aplica aos seguintes módulos: **web**, **syslogd**, **trackinglogd** e **vigia** (atividades da **config-default.xml** arquivo ).
+* Módulos de instância única: um processo é executado por instância. Isso se aplica aos seguintes módulos: **mta**, **wfserver**, **inMail**, **sms** e **stat** (atividades da **config-`<instance>`.xml** arquivo ).
+* Módulos do utilitário: são módulos executados ocasionalmente para executar operações ocasionais ou recorrentes (**cleanup**, **configuração**, download de logs de rastreamento etc.).
 
-A administração do módulo é executada usando a ferramenta de linha de comando **nlserver** instalada no diretório **bin** da pasta de instalação.
+A administração do módulo é executada usando a ferramenta de linha de comando **nlserver** instalado no **compartimento** diretório da pasta de instalação.
 
-A sintaxe geral da ferramenta **nlserver** é a seguinte:
+A sintaxe geral da variável **nlserver** A ferramenta é a seguinte:
 
-**nlserver  `<command>``<command arguments>`**
+**nlserver `<command>``<command arguments>`**
 
-Para obter a lista de módulos disponíveis, use o comando **nlserver**.
+Para obter a lista de módulos disponíveis, use o **nlserver** comando.
 
 Os módulos disponíveis são detalhados na tabela a seguir:
 

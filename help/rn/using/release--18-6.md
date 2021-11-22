@@ -26,7 +26,7 @@ ht-degree: 96%
 
 >[!CAUTION]
 >
->Esta configuração foi retomada. Por favor [atualizar para a build mais recente](../../production/using/build-upgrade.md) ou contato [Atendimento ao cliente do Adobe](https://helpx.adobe.com/br/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html).
+>Esta configuração foi retomada. Por favor [atualizar para a build mais recente](../../production/using/build-upgrade.md) ou contato [Atendimento ao cliente do Adobe](https://helpx.adobe.com/br/enterprise/using/support-for-experience-cloud.html).
 
 **Novidades**
 

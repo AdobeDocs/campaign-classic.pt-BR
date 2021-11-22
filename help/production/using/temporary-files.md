@@ -23,7 +23,7 @@ Mensagens de erro como as seguintes podem ser exibidas (principalmente em logs d
 
 A causa é a seguinte:
 
-O Adobe Campaign gera arquivos temporários em **/tmp** e os renomeia para movê-los para **/usr/local/neolane/nl6/var**. Esse erro ocorre quando ambas as pastas (**/tmp** e **/usr/local/neolane/nl6/var**, que é de fato um link simbólico para **/var/nl6**) correspondem a dispositivos diferentes. O comando **df** é usado para verificação.
+O Adobe Campaign gera arquivos temporários em **/tmp** e renomeia-os para movê-los para **/usr/local/neolane/nl6/var**. Esse erro ocorre quando ambas as pastas (**/tmp** e **/usr/local/neolane/nl6/var**, que é, de fato, um link simbólico para **/var/nl6**) correspondem a dispositivos diferentes. O **df** é usado para verificação.
 
 Para corrigir esse problema, os arquivos temporários devem ser gerados no mesmo dispositivo que o destino.
 

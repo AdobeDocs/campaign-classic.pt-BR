@@ -30,11 +30,11 @@ Verifique se a configuração inicial da plataforma Adobe Campaign ainda é vál
 
 >[!NOTE]
 >
->Você pode consultar o [Guia de dimensionamento de hardware do Adobe Campaign](https://helpx.adobe.com/br/campaign/kb/hardware-sizing-guide.html) para obter insights.
+>Você pode se referir a [Guia de dimensionamento de hardware do Adobe Campaign](https://helpx.adobe.com/br/campaign/kb/hardware-sizing-guide.html) para obter insights.
 
 ## Configuração da plataforma {#platform-configuration}
 
-A configuração inadequada pode afetar o desempenho da plataforma. Recomendamos que você verifique a configuração da rede, as opções de capacidade de entrega da plataforma e a configuração de MTA no arquivo **serverConf.xml**.
+A configuração inadequada pode afetar o desempenho da plataforma. Recomendamos que você verifique a configuração da rede, as opções de capacidade de entrega da plataforma e a configuração de MTA no **serverConf.xml** arquivo.
 
 ## Manutenção do banco de dados {#database-maintenance}
 
@@ -62,7 +62,7 @@ Verifique o número e o tamanho das tabelas de trabalho. Quando elas excedem um 
 
 * Parar ou excluir deliveries com os seguintes status: **[!UICONTROL Failed]**, **[!UICONTROL In progress]**, **[!UICONTROL Ready for delivery]** ou **[!UICONTROL Paused]**.
 * Parar ou excluir workflows que estão pausados devido a um erro.
-* Pare todos os workflows usados para testes que não contêm uma atividade **[!UICONTROL End]** e cujo status, portanto, permanece **[!UICONTROL Paused]**.
+* Interrompa todos os workflows usados para testes que não contêm um **[!UICONTROL End]** atividade e cujo status assim permanece **[!UICONTROL Paused]**.
 
 >[!IMPORTANT]
 >
@@ -73,7 +73,7 @@ Verifique o número e o tamanho das tabelas de trabalho. Quando elas excedem um 
 Dependendo das configurações de instalação do Adobe Campaign, duas ferramentas podem ser usadas para monitoramento da plataforma:
 
 * A página de produção da instância. Para obter mais informações, consulte [Monitoramento manual](../../production/using/monitoring-processes.md#manual-monitoring).
-* O script *netreport*. Para obter mais informações, consulte [Monitoramento automático por meio de scripts Adobe Campaign](../../production/using/monitoring-processes.md#automatic-monitoring-via-adobe-campaign-scripts).
+* O *netreport* script. Para obter mais informações, consulte [Monitoramento automático por meio de scripts Adobe Campaign](../../production/using/monitoring-processes.md#automatic-monitoring-via-adobe-campaign-scripts).
 
 ## Especificações {#specifics}
 

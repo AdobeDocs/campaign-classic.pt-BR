@@ -17,7 +17,7 @@ ht-degree: 16%
 
 ![](../../assets/v7-only.svg)
 
-Se determinados trabalhos **jsp** não forem executados com êxito, você deverá forçá-los a recompilar.
+Se certos **jsp** As tarefas não são executadas com êxito, é necessário forçá-las a recompilar.
 
 Para isso, insira os seguintes comandos:
 
@@ -28,4 +28,4 @@ rm -r work/
 nlserver start web
 ```
 
-As tarefas **jsp** são geradas novamente na próxima vez que você se conectar.
+O **jsp** As tarefas são regeneradas na próxima vez que você se conectar.

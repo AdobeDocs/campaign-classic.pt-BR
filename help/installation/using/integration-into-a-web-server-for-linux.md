@@ -52,13 +52,13 @@ Siga as etapas abaixo:
    a2dismod auth_basic authn_file authz_default authz_user autoindex cgi dir env negotiation userdir
    ```
 
-   Certifique-se de que os módulos **alias**, **authz_host** e **mime** ainda estejam ativados. Para fazer isso, use o seguinte comando:
+   Certifique-se de que **alias**, **authz_host** e **mime** os módulos ainda estão ativados. Para fazer isso, use o seguinte comando:
 
    ```
    a2enmod  alias authz_host mime
    ```
 
-1. Crie o arquivo **nlsrv.load** em **/etc/apache2/mods-available** e insira o seguinte conteúdo:
+1. Criar o arquivo **nlsrv.load** em **/etc/apache2/mods-available** e inserir o seguinte conteúdo:
 
    Em Debian 8:
 
@@ -66,7 +66,7 @@ Siga as etapas abaixo:
    LoadModule requesthandler24_module /usr/local/[INSTALL]/nl6/lib/libnlsrvmod.so
    ```
 
-1. Crie o arquivo **nlsrv.conf** em **/etc/apache2/mods-available** usando o seguinte comando:
+1. Criar o arquivo **nlsrv.conf** em **/etc/apache2/mods-available** usando o seguinte comando:
 
    ```
    ln -s /usr/local/[INSTALL]/nl6/conf/apache_neolane.conf /etc/apache2/mods-available/nlsrv.conf
@@ -78,13 +78,13 @@ Siga as etapas abaixo:
     a2enmod nlsrv
    ```
 
-   Se estiver usando o módulo **mod_rewrite** para páginas do Adobe Campaign, será necessário renomear os arquivos **nlsrv.load** e **nlsrv.conf** para **zz-nlsrv.load** e **zz-nlsrv.v conf**. Para ativar o módulo, execute o seguinte comando:
+   Se estiver usando o **mod_rewrite** para páginas do Adobe Campaign, é necessário renomear o **nlsrv.load** e **nlsrv.conf** arquivos para **zz-nlsrv.load** e **zz-nlsrv.conf**. Para ativar o módulo, execute o seguinte comando:
 
    ```
    a2enmod zz-nlsrv
    ```
 
-1. Edite o arquivo **/etc/apache2/envvars** e adicione as seguintes linhas:
+1. Edite o **/etc/apache2/vars** , adicione as seguintes linhas:
 
    ```
    # Added Neolane
@@ -113,7 +113,7 @@ Esse procedimento se aplica se você tiver instalado e protegido o Apache em um 
 
 Siga as etapas abaixo:
 
-1. No arquivo `httpd.conf`, ative os seguintes módulos Apache:
+1. No `httpd.conf` , ative os seguintes módulos Apache :
 
    ```
    alias
@@ -152,7 +152,7 @@ Siga as etapas abaixo:
    ForceLanguagePriority
    ```
 
-1. Crie um arquivo de configuração específico do Adobe Campaign na pasta `/etc/httpd/conf.d/` . Por exemplo `CampaignApache.conf`
+1. Crie um arquivo de configuração específico do Adobe Campaign na `/etc/httpd/conf.d/` pasta. Por exemplo `CampaignApache.conf`
 
 1. Para **RHEL7**, adicione as seguintes instruções no arquivo :
 
@@ -163,7 +163,7 @@ Siga as etapas abaixo:
 
 1. Para **RHEL7**:
 
-   Adicione o arquivo `/etc/systemd/system/httpd.service` com o seguinte conteúdo:
+   Adicione o `/etc/systemd/system/httpd.service` arquivo com o seguinte conteúdo:
 
    ```
    .include /usr/lib/systemd/system/httpd.service

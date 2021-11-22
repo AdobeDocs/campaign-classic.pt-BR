@@ -17,9 +17,9 @@ ht-degree: 11%
 
 ![](../../assets/v7-only.svg)
 
-Por padrão, seus novos workflows são baseados em um template de workflow que foi pré-configurado e baseado em uma tabela de recipient (nms:recipient). Para que eles sejam baseados automaticamente na tabela personalizada de recipients referenciados na opção **Nms_DefaultRcpSchema** (consulte [Configuração da interface](../../configuration/using/configuring-the-interface.md) seção), você deve criar um novo modelo de workflow.
+Por padrão, seus novos workflows são baseados em um template de workflow que foi pré-configurado e baseado em uma tabela de recipient (nms:recipient). Para que sejam baseados automaticamente na tabela personalizada de recipients referenciados no **Nms_DefaultRcpSchema** (consulte [Configuração da interface](../../configuration/using/configuring-the-interface.md) , você deve criar um novo template de workflow.
 
-Crie um novo template através do nó **[!UICONTROL Resources > Templates > Workflow templates]** . Nas propriedades do modelo, as dimensões fornecidas correspondem à tabela de recipients externos.
+Crie um novo modelo através da **[!UICONTROL Resources > Templates > Workflow templates]** nó . Nas propriedades do modelo, as dimensões fornecidas correspondem à tabela de recipients externos.
 
 Ao basear seus novos fluxos de trabalho em um modelo criado recentemente, a tabela personalizada será selecionada por padrão para as dimensões de filtragem e direcionamento global do fluxo de trabalho.
 

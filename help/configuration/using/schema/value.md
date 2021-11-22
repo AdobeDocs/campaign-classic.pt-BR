@@ -46,11 +46,11 @@ Esse elemento permite definir os valores armazenados em uma enumeração.
 ## Descrição do atributo {#attribute-description-16}
 
 * **applicableIf (cadeia de caracteres)**: esse atributo permite tornar um valor de enumeração opcional. Ele recebe uma expressão XTK.
-* **desc (string)**: descrição do valor de enumeração.
-* **enabledIf (sequência de caracteres)**: para ativar o valor de enumeração.
+* **desc (cadeia de caracteres)**: descrição do valor de enumeração.
+* **enabledIf (cadeia de caracteres)**: para ativar o valor de enumeração.
 * **img (string)**: imagem vinculada à enumeração no formulário &quot;namespace:image_name&quot;. A imagem deve ser importada para o servidor de aplicativos.
 * **label (string)**: do valor de enumeração.
-* **name (sequência de caracteres)**: nome interno do valor de enumeração.
+* **name (string)**: nome interno do valor de enumeração.
 * **valor (string)**: valor do valor de enumeração. O tipo de valor é definido com base no tipo de enumeração. Se a enumeração for do tipo de string de caracteres, ela só poderá conter valores do tipo string de caracteres.
 
 ## Exemplos {#examples-13}

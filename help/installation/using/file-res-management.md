@@ -19,15 +19,15 @@ ht-degree: 0%
 
 ## Limitar o formato de arquivo de upload {#limiting-uploadable-files}
 
-Use o atributo **uploadWhiteList** para restringir os tipos de arquivo disponíveis para upload no servidor Adobe Campaign.
+Use o **uploadWhiteList** para restringir os tipos de arquivo disponíveis para upload no servidor do Adobe Campaign.
 
-Esse atributo está disponível no elemento **dataStore** do arquivo **serverConf.xml**. Todos os parâmetros disponíveis no **serverConf.xml** são listados nesta [seção](../../installation/using/the-server-configuration-file.md).
+Esse atributo está disponível no **dataStore** do **serverConf.xml** arquivo. Todos os parâmetros disponíveis no **serverConf.xml** estão listadas neste [seção](../../installation/using/the-server-configuration-file.md).
 
 O valor padrão deste atributo é **.+** e permite carregar qualquer tipo de arquivo.
 
 Para limitar os formatos possíveis, substitua o valor do atributo por uma expressão Java regular válida. É possível inserir vários valores separando-os por vírgula.
 
-Por exemplo: **uploadWhiteList=&quot;.*.png,*.jpg&quot;** permitirá carregar os formatos PNG e JPG no servidor. Nenhum outro formato será aceito.
+Por exemplo: **uploadWhiteList=&quot;.*.png,*.jpg&quot;** O permitirá carregar os formatos PNG e JPG no servidor. Nenhum outro formato será aceito.
 
 >[!NOTE]
 >
@@ -37,9 +37,9 @@ Você também pode impedir que arquivos importantes sejam carregados configurand
 
 ## Configuração da conexão proxy {#proxy-connection-configuration}
 
-Você pode conectar o servidor do Campaign a um sistema externo por meio de um proxy, usando uma atividade de workflow de **Transferência de arquivo** por exemplo. Para isso, é necessário configurar a seção **proxyConfig** do arquivo **serverConf.xml** por meio de um comando específico. Todos os parâmetros disponíveis no **serverConf.xml** são listados nesta [seção](../../installation/using/the-server-configuration-file.md).
+Você pode conectar o servidor do Campaign a um sistema externo por meio de um proxy, usando um **Transferência de arquivos** atividade do workflow, por exemplo. Para isso, é necessário configurar o **proxyConfig** da seção **serverConf.xml** por meio de um comando específico. Todos os parâmetros disponíveis na **serverConf.xml** estão listadas neste [seção](../../installation/using/the-server-configuration-file.md).
 
-As seguintes conexões de proxy são possíveis: HTTP, HTTPS, FTP, SFTP. Observe que, a partir da versão 20.2 do Campaign, os parâmetros do protocolo HTTP e HTTPS são **não estão mais disponíveis**. Esses parâmetros ainda são mencionados abaixo, pois permanecem disponíveis em builds anteriores - incluindo 9032.
+As seguintes conexões de proxy são possíveis: HTTP, HTTPS, FTP, SFTP. Observe que, a partir da versão 20.2 do Campaign, os parâmetros do protocolo HTTP e HTTPS são **não está mais disponível**. Esses parâmetros ainda são mencionados abaixo, pois permanecem disponíveis em builds anteriores - incluindo 9032.
 
 >[!CAUTION]
 >
@@ -109,23 +109,23 @@ Se você precisar usar o conector HTTP/2 do iOS por meio de um proxy, os seguint
 * HTTP sem autenticação
 * Autenticação básica HTTP
 
-Para ativar o modo proxy, a seguinte alteração deve ser feita no arquivo `serverconf.xml`:
+Para ativar o modo proxy, a seguinte alteração deve ser feita no `serverconf.xml` arquivo:
 
 ```
 <nmac useHTTPProxy="true">
 ```
 
-Para obter mais informações sobre esse conector HTTP/2 do iOS, consulte esta [page](../../delivery/using/about-mobile-app-channel.md).
+Para obter mais informações sobre esse conector HTTP/2 do iOS, consulte esta seção [página](../../delivery/using/about-mobile-app-channel.md).
 
 ## Gerenciar recursos públicos {#managing-public-resources}
 
 Para estarem disponíveis publicamente, as imagens usadas em emails e recursos públicos vinculados a campanhas devem estar presentes em um servidor acessível externamente. Eles podem então estar disponíveis para recipients ou operadores externos. [Saiba mais](../../installation/using/deploying-an-instance.md#managing-public-resources).
 
-Os recursos públicos são armazenados no diretório **/var/res/instance** do diretório de instalação do Adobe Campaign.
+Os recursos públicos são armazenados no **/var/res/instance** diretório do diretório de instalação do Adobe Campaign.
 
-O URL correspondente é: **http://server/res/instance** onde **instance** é o nome da instância de rastreamento.
+O URL correspondente é: **http://server/res/instance** em que **instância** é o nome da instância de rastreamento.
 
-Você pode especificar outro diretório adicionando um nó ao arquivo **conf-`<instance>`.xml** para configurar o armazenamento no servidor. Isso significa adicionar as seguintes linhas:
+Você pode especificar outro diretório adicionando um nó à variável **conf-`<instance>`.xml** para configurar o armazenamento no servidor. Isso significa adicionar as seguintes linhas:
 
 ```
 <serverconf>

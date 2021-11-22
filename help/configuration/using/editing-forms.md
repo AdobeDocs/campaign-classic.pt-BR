@@ -17,7 +17,7 @@ ht-degree: 41%
 
 ![](../../assets/v7-only.svg)
 
-A tela de configuração e criação do formulário de entrada é acessível na pasta **[!UICONTROL Administration]> [!UICONTROL Configuration] >[!UICONTROL Input forms]** do console do cliente Adobe Campaign:
+A tela de configuração e criação do formulário de entrada é acessível na **[!UICONTROL Administration]> [!UICONTROL Configuration] >[!UICONTROL Input forms]** pasta do console do cliente Adobe Campaign:
 
 ![](assets/d_ncs_integration_form_arbo.png)
 

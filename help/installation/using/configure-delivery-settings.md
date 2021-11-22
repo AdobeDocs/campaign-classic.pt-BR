@@ -17,19 +17,19 @@ ht-degree: 5%
 
 ![](../../assets/v7-only.svg)
 
-Os parâmetros de delivery devem ser configurados na pasta **serverConf.xml**.
+Os parâmetros de delivery devem ser configurados no **serverConf.xml** pasta.
 
-* **Configuração** DNS: especifique o domínio de delivery e os endereços IP (ou host) dos servidores DNS usados para responder a consultas DNS do tipo MX feitas pelo módulo MTA a partir de  **`<dnsconfig>`** agora.
+* **Configuração DNS**: especifique o domínio de delivery e os endereços IP (ou host) dos servidores DNS usados para responder a consultas DNS do tipo MX feitas pelo módulo MTA da **`<dnsconfig>`** em diante.
 
    >[!NOTE]
    >
-   >O parâmetro **nameServers** é essencial para uma instalação no Windows. Para uma instalação no Linux, ela deve ficar vazia.
+   >O **nameServers** é essencial para uma instalação no Windows. Para uma instalação no Linux, ela deve ficar vazia.
 
    ```
    <dnsConfig localDomain="domain.com" nameServers="192.0.0.1,192.0.0.2"/>
    ```
 
-Você também pode executar as seguintes configurações, dependendo das suas necessidades e configurações: configure um [retransmissão SMTP](#smtp-relay), adapte o número de [processos filho MTA](#mta-child-processes), [Gerenciar tráfego SMTP de saída](#managing-outbound-smtp-traffic-with-affinities).
+Você também pode executar as seguintes configurações, dependendo das suas necessidades e configurações: configure um [Retransmissão SMTP](#smtp-relay), adaptar o número de [Processos filho MTA](#mta-child-processes), [Gerenciar tráfego SMTP de saída](#managing-outbound-smtp-traffic-with-affinities).
 
 ## Retransmissão SMTP {#smtp-relay}
 
@@ -37,7 +37,7 @@ O módulo MTA atua como um agente de transferência de email nativo para transmi
 
 No entanto, é possível substituí-lo por um servidor de retransmissão se a política de segurança o exigir. Nesse caso, a taxa de transferência global será a de retransmissão (desde que a taxa de transferência do servidor de retransmissão seja inferior à da Adobe Campaign).
 
-Nesse caso, esses parâmetros são definidos configurando o servidor SMTP na seção **`<relay>`**. Você deve especificar o endereço IP (ou host) do servidor SMTP usado para transferir emails e sua porta associada (25 por padrão).
+Nesse caso, esses parâmetros são definidos configurando o servidor SMTP no **`<relay>`** seção. Você deve especificar o endereço IP (ou host) do servidor SMTP usado para transferir emails e sua porta associada (25 por padrão).
 
 ```
 <relay address="192.0.0.3" port="25"/>
@@ -49,7 +49,7 @@ Nesse caso, esses parâmetros são definidos configurando o servidor SMTP na se�
 
 ## Processos filho MTA {#mta-child-processes}
 
-É possível controlar o número de processos secundários (maxSpareServers por padrão 2) para otimizar o desempenho da transmissão de acordo com a potência da CPU dos servidores e os recursos de rede disponíveis. Essa configuração deve ser feita na seção **`<master>`** da configuração MTA em cada computador individual.
+É possível controlar o número de processos secundários (maxSpareServers por padrão 2) para otimizar o desempenho da transmissão de acordo com a potência da CPU dos servidores e os recursos de rede disponíveis. Essa configuração deve ser feita na variável **`<master>`** seção da configuração MTA em cada computador individual.
 
 ```
 <master dataBasePoolPeriodSec="30" dataBaseRetryDelaySec="60" maxSpareServers="2" minSpareServers="0" startSpareServers="0">
@@ -67,9 +67,9 @@ Você pode melhorar o tráfego SMTP de saída por meio de afinidades com endere�
 
 Para fazer isso, siga as etapas abaixo:
 
-1. Insira as afinidades na seção **`<ipaffinity>`** do arquivo **serverConf.xml**.
+1. Insira as afinidades no **`<ipaffinity>`** da seção **serverConf.xml** arquivo.
 
-   Uma afinidade pode ter vários nomes diferentes: para separá-los, use o caractere **;**.
+   Uma afinidade pode ter vários nomes diferentes: para separá-los, use a variável **;** caractere.
 
    Exemplo:
 
@@ -78,15 +78,15 @@ Para fazer isso, siga as etapas abaixo:
              <IP address="XX.XXX.XX.XX" heloHost="myserver.us.campaign.net" publicId="123" excludeDomains="neo.*" weight="5"/
    ```
 
-   Para visualizar os parâmetros relevantes, consulte o arquivo **serverConf.xml**.
+   Para visualizar os parâmetros relevantes, consulte **serverConf.xml** arquivo.
 
-1. Para ativar a seleção de afinidade nas listas suspensas, é necessário adicionar os nomes de afinidade na enumeração **IPAffinity**.
+1. Para ativar a seleção de afinidade nas listas suspensas, é necessário adicionar os nomes de afinidade na **IPAffinity** lista discriminada.
 
    ![](assets/ipaffinity_enum.png)
 
    >[!NOTE]
    >
-   >As enumerações são detalhadas em [this document](../../platform/using/managing-enumerations.md).
+   >As enumerações são detalhadas em [este documento](../../platform/using/managing-enumerations.md).
 
    Você pode selecionar a afinidade a ser usada, conforme mostrado abaixo para tipologias:
 
@@ -94,7 +94,7 @@ Para fazer isso, siga as etapas abaixo:
 
    >[!NOTE]
    >
-   >Você também pode consultar [Configuração do servidor de delivery](../../installation/using/email-deliverability.md#delivery-server-configuration).
+   >Também é possível fazer referência a [Configuração do servidor de delivery](../../installation/using/email-deliverability.md#delivery-server-configuration).
 
 **Tópicos relacionados**
 * [Configurações técnicas de email](email-deliverability.md)

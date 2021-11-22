@@ -48,7 +48,7 @@ No protocolo de conexão, as regras devem ser respeitadas para evitar o spamming
 
 O endereço de erro processará rejeições enviadas de volta pelos ISPs. O processo analisará diferentes códigos de erro SMTP e aplicará a ação correta de acordo com o padrão RegEx.
 
-Por exemplo, um endereço de email tem um feedback &quot;550 Usuário desconhecido&quot; enviado por um ISP. Esse código de erro é processado pelo endereço de erro do Adobe Campaign (endereço returnpath). Esse erro é então comparado ao padrão RegEx e a regra correta será aplicada. O email é considerado um *Hard bounce* (correspondendo ao tipo) e então *User Unknown* (correspondendo ao motivo) e enviado em quarentena após o primeiro loop para o sistema.
+Por exemplo, um endereço de email tem um feedback &quot;550 Usuário desconhecido&quot; enviado por um ISP. Esse código de erro é processado pelo endereço de erro do Adobe Campaign (endereço returnpath). Esse erro é então comparado ao padrão RegEx e a regra correta será aplicada. O email é considerado um *Rejeição permanente* (correspondendo ao tipo ) e *Usuário desconhecido* (correspondência do motivo) e enviado em quarentena após o primeiro loop para o sistema.
 
 ### Como a Adobe Campaign a gerencia?
 
@@ -62,7 +62,7 @@ O Adobe Campaign gerencia esse processo com uma correspondência entre um tipo d
 
 >[!NOTE]
 >
->Para saber mais sobre tipos e motivos de falha de delivery, consulte esta [seção](../../delivery/using/understanding-delivery-failures.md#delivery-failure-types-and-reasons).
+>Para saber mais sobre tipos e motivos de falha de delivery, consulte esta seção [seção](../../delivery/using/understanding-delivery-failures.md#delivery-failure-types-and-reasons).
 
 ## Instância de entregabilidade
 
@@ -78,12 +78,12 @@ O modo Personalizado é para clientes avançados que desejam definir suas própr
 
 ## Exemplos de rejeição
 
-* **Usuário desconhecido**  (devolução permanente): 550 5.1.1 ... O usuário é desconhecido {mx003}
-* **Caixa de entrada cheia**  (rejeição temporária): 550 5.2.2 Cota de usuário excedida
-* **Caixa de entrada inativa**  (rejeição temporária): 550 5.7.1 : Endereço do destinatário rejeitado: Caixa de Correio Inativa, não publicada por mais de 6 meses
-* **Domínio inválido**  (devolução temporária): Falha na consulta DNS para &#39;ourdan.com&#39;
-* **Recusado**  (devolução temporária): Rejeição do email de entrada (a regra &#39;Feedback_loop_Hotmail&#39; correspondeu a essa rejeição)
-* **Inacessível**  (devolução temporária): 421 4.16.55  [TS01] Mensagens de x.x.x.x temporariamente adiadas devido a reclamações excessivas do usuário
+* **Usuário desconhecido** (devolução permanente): 550 5.1.1 ... O usuário é desconhecido {mx003}
+* **Caixa de entrada cheia** (rejeição temporária): 550 5.2.2 Cota de usuário excedida
+* **Caixa de Correio Inativa** (rejeição temporária): 550 5.7.1 : Endereço do destinatário rejeitado: Caixa de Correio Inativa, não publicada por mais de 6 meses
+* **Domínio inválido** (rejeição temporária): Falha na consulta DNS para &#39;ourdan.com&#39;
+* **Recusado** (rejeição temporária): Rejeição do email de entrada (a regra &#39;Feedback_loop_Hotmail&#39; correspondeu a essa rejeição)
+* **Inacessível** (rejeição temporária): 421 4.16.55 [TS01] Mensagens de x.x.x.x temporariamente adiadas devido a reclamações excessivas do usuário
 
 **Tópicos relacionados:**
 * [Configuração MX](../../installation/using/email-deliverability.md#mx-configuration)

@@ -26,47 +26,47 @@ Abaixo você encontrará algumas das principais práticas recomendadas relaciona
    **No Apache**, edite /etc/apache2/mods-available/ssl.conf. Aqui está um exemplo:
 
    * SSLProtocol all -SSLv2 -SSLv3 -TLSv1
-   * SSLCipherSuite HIGH:MEDIUM:!aNULL:!MD5:!SSLv3:!SSLv2:!TLSv1
+   * SSLCipherSuite ALTO:MEDIUM:!aNULL:!MD5:!SSLv3:!SSLv2:!TLSv1
 
-   **No IIS**  (consulte a  [documentação](https://support.microsoft.com/en-us/kb/245030)), execute a seguinte configuração:
+   **No IIS** (consulte o [documentação](https://support.microsoft.com/en-us/kb/245030)), execute a seguinte configuração:
 
    * Adicionar subchave de registro em HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\SecurityProviders\SCHANNEL
-   * Para permitir que o sistema use os protocolos que não serão negociados por padrão (como TLS 1.2), altere os dados do valor DWORD do valor DisabledByDefault para 0x0 nas seguintes chaves do Registro na chave **Protocolos**:
+   * Para habilitar o sistema a usar os protocolos que não serão negociados por padrão (como TLS 1.2), altere os dados do valor DWORD do valor DisabledByDefault para 0x0 nas seguintes chaves do Registro nas **Protocolos** chave:
 
-      SCHANNEL\Protocols\TLS 1.2\Client
+      SCHANNEL\Protocolos\TLS 1.2\Cliente
 
-      SCHANNEL\Protocols\TLS 1.2\Server
+      SCHANNEL\Protocolos\TLS 1.2\Servidor
    **Desativar SSL x.0**
 
-   SCHANNEL\Protocols\SSL 3.0\Client: DisabledByDefault: DWORD (32 bits) Valor para 1
+   SCHANNEL\Protocolos\SSL 3.0\Cliente: DisabledByDefault: DWORD (32 bits) Valor para 1
 
-   SCHANNEL\Protocols\SSL 3.0\Server: Ativado: DWORD (32 bits) Valor para 0
+   SCHANNEL\Protocolos\SSL 3.0\Servidor: Ativado: DWORD (32 bits) Valor para 0
 
-* Remova o método **TRACE**:
+* Remova o **TRACE** método :
 
-   **No Apache**, edite em /etc/apache2/conf.d/security: TraceEnable  **Off**
+   **No Apache**, edite em /etc/apache2/conf.d/security: TraceEnable **Desligado**
 
-   **No IIS**  (consulte a  [documentação](https://www.iis.net/configreference/system.webserver/security/requestfiltering/verbs)), execute a seguinte configuração:
+   **No IIS** (consulte o [documentação](https://www.iis.net/configreference/system.webserver/security/requestfiltering/verbs)), execute a seguinte configuração:
 
-   * Certifique-se de que o serviço ou recurso de função **Filtragem de Solicitação** está instalado.
-   * No painel **Filtragem de solicitação**, clique na guia verbos HTTP e, em seguida, clique em Negar verbo. No painel Ações, digite TRACE na caixa de diálogo aberta.
+   * Certifique-se de que **Solicitar Filtragem** o serviço ou recurso de função está instalado.
+   * No **Solicitar Filtragem** , clique na guia verbos HTTP e, em seguida, clique em Negar verbo. No painel Ações, digite TRACE na caixa de diálogo aberta.
 
 * Remova o banner:
 
    **No Apache**, edite /etc/apache2/conf.d/security:
 
-   * ServerSignature **Off**
+   * ServerSignature **Desligado**
    * ServerTokens **Prod**
 
    **No IIS**, execute a seguinte configuração:
 
-   * Instale **URLScan**.
-   * Edite o arquivo **Urlscan.ini** para ter **RemoveServerHeader=1**
+   * Instalar **URLScan**.
+   * Edite o **Urlscan.ini** arquivo a ter **RemoveServerHeader=1**
 
 
 * Limite o tamanho da consulta para impedir que arquivos importantes sejam carregados:
 
-   **No Apache**, adicione a diretiva  **** LimitRequestBodypolicy (tamanho em bytes) no diretório / .
+   **No Apache**, adicione o **LimitRequestBody** diretiva (tamanho em bytes) no / diretório.
 
    ```
    <Directory />
@@ -76,9 +76,9 @@ Abaixo você encontrará algumas das principais práticas recomendadas relaciona
    </Directory>
    ```
 
-   **No IIS**  (consulte a  [documentação](https://www.iis.net/configreference/system.webserver/security/requestfiltering/requestlimits)), defina o  **maxAllowedContentLength**  (comprimento máximo permitido do conteúdo) nas opções de filtragem de conteúdo.
+   **No IIS** (consulte o [documentação](https://www.iis.net/configreference/system.webserver/security/requestfiltering/requestlimits)), defina a variável **maxAllowedContentLength** (comprimento máximo permitido do conteúdo) nas opções de filtragem de conteúdo.
 
 Tópicos relacionados:
 
-* [Visão geral](https://experienceleague.adobe.com/docs/core-services/assets/Adobe-Marketing-Cloud-Privacy-and-Security-Overview.pdf)  da conformidade com o Adobe Marketing Cloud (PDF)
-* [Visão geral](https://wwwimages.adobe.com/content/dam/acom/en/marketing-cloud/campaign/pdfs/54658.en.campaign.wp.adb-security.pdf)  da Segurança do Adobe Campaign (PDF)
+* [Visão geral da conformidade com o Adobe Marketing Cloud](https://experienceleague.adobe.com/docs/core-services/assets/Adobe-Marketing-Cloud-Privacy-and-Security-Overview.pdf) (PDF)
+* [Visão geral da segurança no Adobe Campaign](https://wwwimages.adobe.com/content/dam/acom/en/marketing-cloud/campaign/pdfs/54658.en.campaign.wp.adb-security.pdf) (PDF)

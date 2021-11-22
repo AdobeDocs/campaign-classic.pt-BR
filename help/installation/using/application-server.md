@@ -23,11 +23,11 @@ As camadas de acesso ao banco de dados necessárias devem ser instaladas no serv
 
 O gerador dinâmico de página da Web usa a tecnologia JSP 1.2. Para isso, um mecanismo Tomcat (do Apache) é incluído no aplicativo. Ele requer um Java Development Kit (JDK), instalado em todos os servidores nos quais o aplicativo Adobe Campaign está instalado.
 
-Primeiro, você deve instalar um JDK nos computadores em que deseja executar o servidor de aplicativos do Adobe Campaign (**nlserver web** process) porque ele incorpora um contêiner de servlet, o Apache Tomcat, usado para gerar páginas da Web dinâmicas (relatórios, formulários da Web etc).
+Primeiro, você deve instalar um JDK nos computadores em que deseja executar o servidor de aplicativos do Adobe Campaign (**nlserver web** processo) porque incorpora um contêiner de servlet, o Apache Tomcat, usado para gerar páginas da Web dinâmicas (relatórios, formulários da Web etc.).
 
 O aplicativo foi aprovado para o Java Development Kit (JDK) desenvolvido pelo Oracle e para **OpenJDK**.
 
-As versões compatíveis são detalhadas em Campaign [Matriz de compatibilidade](../../rn/using/compatibility-matrix.md).
+As versões compatíveis são detalhadas no Campaign [Matriz de compatibilidade](../../rn/using/compatibility-matrix.md).
 
 >[!NOTE]
 >
@@ -35,7 +35,7 @@ As versões compatíveis são detalhadas em Campaign [Matriz de compatibilidade]
 >  
 >Ao instalar o, você não é obrigado a executar a integração com os navegadores da Web.
 >
->Em uma máquina que executa apenas agentes de delivery (processo **nlserver mta**) ou o servidor de workflow (processo **nlserver wfserver**), a instalação de um JDK não é necessária.
+>Em uma máquina que executa apenas agentes de delivery (**mta nlserver** processo) ou o servidor de workflow (**nlserver wfserver** processo), a instalação de um JDK não é necessária.
 
 Para baixar o Java JDK, conecte-se a: [https://www.oracle.com/technetwork/java/javase/downloads/index.html](https://www.oracle.com/technetwork/java/javase/downloads/index.html).
 
@@ -65,7 +65,7 @@ No Linux, o OpenSSL deve ser instalado. As versões compatíveis com o Adobe Cam
 
 ## Exportação de relatórios {#exporting-reports}
 
-O Adobe Campaign permite exportar relatórios da plataforma no formato Microsoft Excel e Adobe PDF. Para o formato do Microsoft Excel, o Adobe Campaign usa **LibreOffice**. Para o formato Adobe PDF, o Adobe Campaign usa o conversor **PhantomJS**. O PhantomJs está incluído no pacote de fábrica e o LibreOffice deve ser instalado na(s) máquina(s) na(s) qual(is) o servidor de aplicativos do Adobe Campaign é executado(s) (**nlserver web** processo).
+O Adobe Campaign permite exportar relatórios da plataforma no formato Microsoft Excel e Adobe PDF. No formato Excel para Microsoft, o Adobe Campaign usa **LibreOffice**. No formato Adobe PDF, o Adobe Campaign usa a variável **PhantomJS** conversor. O PhantomJs está incluído no pacote de fábrica e o LibreOffice deve ser instalado na(s) máquina(s) em que o servidor de aplicativos Adobe Campaign é executado (**nlserver web** processo).
 
 >[!NOTE]
 >
@@ -77,7 +77,7 @@ O SpamAssassin permite atribuir uma pontuação a emails para determinar se uma 
 
 A qualificação de emails como indesejáveis pelo SpamAssassin é baseada inteiramente em regras de filtragem e pontuação. Essas regras devem, portanto, ser atualizadas pelo menos uma vez por dia para que a instalação do SpamAssassin e sua integração no Adobe Campaign sejam totalmente funcionais e garantam a relevância das pontuações atribuídas aos seus deliveries antes de enviá-los. Esta atualização é da responsabilidade do administrador do servidor que hospeda o SpamAssassin.
 
-A versão mínima compatível é: **3.4**
+A versão mínima compatível é: **3,4**
 
 O SpamAssassin requer um acesso HTTP à Internet (tcp/80).
 

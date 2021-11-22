@@ -83,10 +83,10 @@ As enumerações são definidas no início de um schema (antes do elemento princ
    * uuid
 
 * **padrão (string)**: Valor padrão. O valor padrão também pode ser um dos valores definidos na enumeração.
-* **desc (string)**: descrição da enumeração.
+* **desc (cadeia de caracteres)**: descrição da enumeração.
 * **label (string)**: rótulo da enumeração.
-* **name (sequência de caracteres)**: nome interno da enumeração.
-* **template (string)**: esse atributo define uma referência a um  `<enumeration>` elemento compartilhado por vários schemas. A definição é copiada automaticamente para o schema atual.
+* **name (string)**: nome interno da enumeração.
+* **template (string)**: esse atributo define uma referência a um `<enumeration>` elemento compartilhado por vários schemas. A definição é copiada automaticamente para o schema atual.
 
 ## Exemplos {#examples-4}
 

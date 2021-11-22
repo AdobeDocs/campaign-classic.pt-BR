@@ -19,25 +19,25 @@ ht-degree: 68%
 
 ## Contexto
 
-Como um cliente importante do Adobe Campaign Classic, temos o compromisso de fornecer a você a melhor experiência e valor. Ao longo dos anos, percebemos o valor e a confiabilidade de hospedar nossos clientes na nuvem.  Como parte da nossa [Iniciativa Gold Standard](../../rn/using/gold-standard.md), estamos mudando todos os nossos clientes para o Adobe Managed Services (Nuvem pública na AWS) para fornecer serviços melhores e mais confiáveis.
+Como um cliente importante do Adobe Campaign Classic, temos o compromisso de fornecer a você a melhor experiência e valor. Ao longo dos anos, percebemos o valor e a confiabilidade de hospedar nossos clientes na nuvem.  Como parte da nossa [Iniciativa Gold Standard](../../rn/using/gold-standard.md), estamos mudando todos os clientes para o Adobe Managed Services (Nuvem pública no AWS) para fornecer serviços melhores e mais confiáveis.
 
 Este programa tem três objetivos principais:
 
 * Solucionar as vulnerabilidades de segurança identificadas ao mover a infraestrutura para um ambiente seguro e moderno (AWS).
-* Elimine processos de dimensionamento possivelmente complicados, forneça acesso a nossos [MTAs aprimorados](../../delivery/using//sending-with-enhanced-mta.md) e melhore todos os níveis de serviço de manutenção.
+* Eliminar processos de dimensionamento possivelmente complicados, fornecer acesso a nossos [MTAs aprimorados](../../delivery/using//sending-with-enhanced-mta.md) e melhorar todos os níveis de serviço de manutenção.
 * Prepare sua instância para o futuro do Adobe Campaign Classic, incluindo atualizações mais automatizadas e regulares que não exigirão tantos recursos nem tanto tempo.
 
 ### Glossário
 
-* **Atualização de build**  - quando o software Adobe Campaign Classic é atualizado para o número de build seguro mais recente, ele permanece no mesmo nível de build principal/secundário. Por exemplo: Campaign v7 20.2.3 build 9182 para Campaign v7 21.2.5 build 9188. [Saiba mais](../../platform/using/faq-build-upgrade.md).
-* **MID/RT**  - servidores de execução de mensagens hospedados na Adobe Cloud (MID para campanhas em lote e RT para mensagens unitárias em tempo real)
-* **Atualização do Gold Standard**  - esse programa oferece segurança aprimorada, suporte aprimorado, manutenção e estabilidade aprimoradas. Também facilita as atualizações futuras e dá acesso a novos recursos no Campaign.  [Saiba mais](../../rn/using/gs-overview.md).
-* **AWS**  - Serviços Web da Amazon (Amazon Nuvem pública)
-* **SFTP**  - Protocolo de transferência segura de arquivo. [Saiba mais](../../platform/using/sftp-server-usage.md).
+* **Atualização da build** - Quando o software Adobe Campaign Classic é atualizado para o número de build seguro mais recente, ele permanece no mesmo nível de build principal/secundário. Por exemplo: Campaign v7 20.2.3 build 9182 para Campaign v7 21.2.5 build 9188. [Saiba mais](../../platform/using/faq-build-upgrade.md).
+* **MID/RT** - Servidores de execução de mensagens hospedados na Adobe Cloud (MID para campanhas em lote e RT para mensagens unitárias em tempo real)
+* **Atualização do Gold Standard** - este programa proporciona uma melhor segurança, um melhor apoio, uma manutenção e estabilidade reforçadas. Também facilita as atualizações futuras e dá acesso a novos recursos no Campaign.  [Saiba mais](../../rn/using/gs-overview.md).
+* **AWS** - Amazon Web Services (Amazon Public Cloud)
+* **SFTP** - Protocolo de transferência segura de arquivo. [Saiba mais](../../platform/using/sftp-server-usage.md).
 
 
 >[!NOTE]
->A migração do Campaign Classic v7 para a Nuvem pública afeta os clientes que usam somente **Adobe Managed Services**.
+>A migração do Campaign Classic v7 para a Nuvem pública afeta os clientes que usam o **Serviços gerenciados da Adobe** somente.
 
 
 ## Benefícios
@@ -80,7 +80,7 @@ A migração para o Adobe Managed Services (Nuvem pública) ocorrerá em 2020/20
 
 Para começar essa iniciativa, as contas que exigem essa migração receberão uma comunicação por email da Adobe fornecendo uma linha do tempo e acesso à documentação. Essa será a sua notificação de que sua conta está programada para ser migrada.
 
-Uma migração pode ser iniciada abrindo um novo tíquete de suporte do Atendimento ao cliente](https://experienceleague.adobe.com/?support-solution=Campaign#support). [ Use a linha de assunto “Migrar para AWS”.
+Uma migração pode ser iniciada por [abrir um novo tíquete de suporte do Atendimento ao cliente](https://experienceleague.adobe.com/?support-solution=Campaign#support). Use a linha de assunto “Migrar para AWS”.
 
 ### Essa migração é obrigatória?
 
@@ -97,7 +97,7 @@ Além disso, essa migração agora é um **pré-requisito para qualquer atualiza
 A Adobe está comprometida em proteger seus dados e colocar você no caminho certo para o futuro do Adobe Campaign. Precisamos da sua parceria para torná-la um sucesso conjunto.
 
 
-**Organizamos uma** equipe de representantes dedicados do Atendimento ao cliente, Gerentes de sucesso do cliente, Gerentes de produtos, Engenheiros, Especialistas em TechOps e Consultores de produtos para auxiliar e garantir que a experiência seja perfeita e contínua. Estamos empenhados em garantir que você tenha as informações relevantes do projeto e de contato.
+**Organizamos uma equipe** de representantes dedicados do Atendimento ao cliente, Gerentes de sucesso do cliente, Gerentes de produtos, Engenheiros, Especialistas em TechOps e Consultores de produtos para auxiliar e garantir que a experiência seja perfeita e contínua. Estamos empenhados em garantir que você tenha as informações relevantes do projeto e de contato.
 
 Investimos um grande esforço no desenvolvimento de tecnologias que tornarão essa migração rápida, contínua e segura.
 
@@ -107,7 +107,7 @@ Investimos um grande esforço no desenvolvimento de tecnologias que tornarão es
 * Alteração de IP para integrações de dados.
 * Aumento da entregabilidade de novos IPs de envio. No entanto, o plano é tornar essa operação transparente para a empresa, diferentemente do aumento inicial realizado durante a ativação.
 
-Saiba mais na migração do Campaign para [Perguntas frequentes da Nuvem pública](dc-migration-faq.md).
+Saiba mais sobre a migração do Campaign para [Perguntas frequentes sobre a Nuvem pública](dc-migration-faq.md).
 
 
 ## Jornada para a Certificação Gold Standard

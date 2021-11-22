@@ -17,11 +17,11 @@ ht-degree: 4%
 
 ![](../../assets/v7-only.svg)
 
-Os relatórios baseados em um schema específico para os recipients padrão do Adobe Campaign (nm:recipient ou schema vinculado) devem ser redesenvolvidos para considerar os dados da tabela personalizada e suas tabelas vinculadas por meio do target mapping (consulte a seção [Target mapping](../../configuration/using/target-mapping.md)).
+Os relatórios baseados em um schema específico para os recipients padrão do Adobe Campaign (nm:recipient ou schema linked) devem ser redesenvolvidos para considerar os dados da tabela personalizada e suas tabelas vinculadas por meio do target mapping (consulte o [Target mapping](../../configuration/using/target-mapping.md) seção).
 
 Para criar novos relatórios, consulte [esta seção](../../reporting/using/about-reports-creation-in-campaign.md).
 
-Em alguns casos, você também deve colocar novos cubos específicos para essas tabelas em vigor. Os cubos são detalhados em [nesta seção](../../reporting/using/about-cubes.md).
+Em alguns casos, você também deve colocar novos cubos específicos para essas tabelas em vigor. Os cubos são detalhados em [esta seção](../../reporting/using/about-cubes.md).
 
 Os seguintes relatórios estão relacionados:
 

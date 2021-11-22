@@ -25,7 +25,7 @@ A opção FDA permite estender o template de dados em um banco de dados de terce
 
 Para usar esse recurso, os pré-requisitos estão listados abaixo:
 
-* **Configuração**: exceto para o Snowflake, é necessário um modelo  **no** local ou de hospedagem  **** híbrida para configurar o Federated Data Access. [Saiba mais](../../installation/using/hosting-models.md)
-* **Versão** do banco de dados externo: é necessário ter um banco de dados externo compatível com o módulo FDA do Adobe Campaign. A lista de sistemas de banco de dados e versões compatíveis está detalhada no Campaign [Matriz de compatibilidade](../../rn/using/compatibility-matrix.md#FederatedDataAccessFDA).
-* **Permissões**: Os usuários do também devem ter as permissões  [ ](../../installation/using/remote-database-access-rights.md) necessárias no Adobe Campaign e no banco de dados externo.
+* **Configuração**: exceto para o Snowflake, você precisa de um **no local** ou **híbrido** modelo de hospedagem para configurar o Federated Data Access. [Saiba mais](../../installation/using/hosting-models.md)
+* **Versão do banco de dados externo**: é necessário ter um banco de dados externo compatível com o módulo FDA do Adobe Campaign. A lista de sistemas de banco de dados e versões compatíveis está detalhada no Campaign [Matriz de compatibilidade](../../rn/using/compatibility-matrix.md#FederatedDataAccessFDA).
+* **Permissões**: os usuários também devem ter a [permissões necessárias](../../installation/using/remote-database-access-rights.md) no Adobe Campaign e no banco de dados externo.
 

@@ -21,7 +21,7 @@ ht-degree: 1%
 
 Esta seção detalha as etapas preliminares necessárias antes da instalação do Adobe Campaign.
 
-A configuração técnica e de software necessária para instalar o Adobe Campaign está detalhada no [Matriz de Compatibilidade](../../rn/using/compatibility-matrix.md).
+A configuração técnica e de software necessária para a instalação do Adobe Campaign está detalhada no relatório de [Matriz de compatibilidade](../../rn/using/compatibility-matrix.md).
 
 Como lembrete, os seguintes componentes precisam ser instalados e configurados corretamente:
 
@@ -29,7 +29,7 @@ Como lembrete, os seguintes componentes precisam ser instalados e configurados c
 * Java JDK e OpenJDK, consulte [Java Development Kit - JDK](../../installation/using/application-server.md#java-development-kit---jdk),
 * Bibliotecas, consulte [Bibliotecas](#libraries),
 * Camadas de acesso ao banco de dados, consulte [Camadas de acesso ao banco de dados](#database-access-layers),
-* LibreOffice, consulte [Instalando o LibreOffice para Debian](#installing-libreoffice-for-debian) e [Instalando o LibreOffice para CentOS](#installing-libreoffice-for-centos),
+* LibreOffice, consulte [Instalação do LibreOffice para Debian](#installing-libreoffice-for-debian) e [Instalação do LibreOffice para CentOS](#installing-libreoffice-for-centos),
 * Fontes, consulte [Fontes para estatísticas MTA](#fonts-for-mta-statistics) e [Fontes para instâncias japonesas](#fonts-for-japanese-instances).
 
 >[!NOTE]
@@ -42,17 +42,17 @@ Para instalar o Adobe Campaign no Linux, verifique se você tem as bibliotecas n
 
 * A Biblioteca C deve ser capaz de suportar o modo TLS (Thread Local Storage). Esse modo está ativo na maioria dos casos, exceto em alguns kernels para os quais o suporte ao Xen foi desativado.
 
-   Para verificar isso, você pode usar o **uname -a | grep xen** por exemplo.
+   Para verificar isso, você pode usar a variável **uname -a | grep xen** por exemplo.
 
    Se o comando não retornar nada (linha vazia), significa que a configuração está correta.
 
-* Você deve ter **versão 0.9.8** ou **1.0** de OpenSSL.
+* Você deve ter **versão 0.9.8** ou **1,0** de OpenSSL.
 
    Para distribuições RHEL 7, é necessária a versão 1.0 do OpenSSL.
 
-* Para usar o Adobe Campaign, você precisa ter a biblioteca **libicu** instalada.
+* Para usar o Adobe Campaign, você precisa ter a variável **libicu** biblioteca instalada.
 
-   As seguintes versões de **libicu** são compatíveis (32 bits ou 64 bits):
+   As seguintes versões do **libicu** são compatíveis (32 bits ou 64 bits):
 
    * RHEL 7, CentOS 7: libicu50
    * Debian 8: libicu52
@@ -80,7 +80,7 @@ Para fazer isso, faça logon como root e insira o seguinte comando:
 echo 0 >/selinux/enforce
 ```
 
-Além disso, no arquivo **/etc/sysconfig/httpd**, a linha a seguir foi adicionada para fazer referência ao script de configuração de ambiente do Adobe Campaign:
+Além disso, no **/etc/sysconfig/httpd** , a linha a seguir foi adicionada para fazer referência ao script de configuração do ambiente Adobe Campaign:
 
 ```
 . ~neolane/nl6/env.sh
@@ -90,7 +90,7 @@ No RHEL e no CentOS, foram observados problemas de compatibilidade com as camada
 
 **Aplique o seguinte processo:**
 
-* Edite o arquivo **/etc/selinux/config**
+* Editar o arquivo **/etc/selinux/config**
 
 * Modifique a linha SELINUX da seguinte maneira:
 
@@ -166,15 +166,15 @@ As seguintes configurações são necessárias com o CentOS:
 
 As camadas de acesso do mecanismo de banco de dados que você está usando devem ser instaladas no servidor e acessíveis pela conta do Adobe Campaign. As versões e os modos de instalação podem variar dependendo do mecanismo de banco de dados usado.
 
-A versão piloto suportada está detalhada na [Matriz de Compatibilidade](../../rn/using/compatibility-matrix.md).
+A versão piloto suportada está detalhada no relatório de [Matriz de compatibilidade](../../rn/using/compatibility-matrix.md).
 
-Verifique também a seção geral [Database](../../installation/using/database.md).
+Verifique também o [Banco de dados](../../installation/using/database.md) seção.
 
 ### PostgreSQL {#postgresql}
 
 O Adobe Campaign suporta todas as versões das bibliotecas de clientes PostgreSQL da versão 7.2: (**libpq.so.5**, **libpq.so.4**, **libpq.so.3.2** e **libpq.so.3.1**).
 
-O uso do PostgreSQL com Adobe Campaign também requer a instalação das bibliotecas **pgcrypto** correspondentes.
+O uso do PostgreSQL com Adobe Campaign também requer a instalação do **pgcrypto** bibliotecas.
 
 ### Oracle {#oracle}
 
@@ -184,7 +184,7 @@ Você pode obter um pacote RPM de Linux da Rede de tecnologia de Oracle.
 
 >[!NOTE]
 >
->Se você já tiver instalado o cliente Oracle, mas o ambiente global (por exemplo: /etc/profile) não estiver configurado corretamente, você pode adicionar informações ausentes ao script **nl6/customer.sh** Para obter mais informações, consulte [Variáveis de ambiente](../../installation/using/installing-packages-with-linux.md#environment-variables).
+>Se você já tiver instalado o cliente Oracle, mas o ambiente global (por exemplo: /etc/profile) não estiver configurado corretamente, você pode adicionar informações ausentes ao **nl6/customer.sh** script Para obter mais informações, consulte [Variáveis de ambiente](../../installation/using/installing-packages-with-linux.md#environment-variables).
 
 **Resolução de problemas e práticas recomendadas**
 
@@ -196,7 +196,7 @@ Se você observar no console do cliente que há atrasos inesperados (uma ou mais
 
    Vários problemas foram identificados ao usar a versão do Oracle Instant Client. Além disso, é impossível alterar o arquivo de Fuso horário no cliente instantâneo.
 
-1. Certifique-se de que a **versão do cliente** e a **versão do servidor de banco de dados** sejam as **mesmas**.
+1. Certifique-se de que a variável **versão do cliente** e **versão do servidor de banco de dados** são **same**.
 
    A mistura de versões, apesar da matriz de compatibilidade do Oracle e da recomendação para alinhar as versões do cliente e do servidor, é conhecida por causar problemas.
 
@@ -210,11 +210,11 @@ A versão da biblioteca compatível é **libdb2.so**.
 
 ## Etapas de implementação {#implementation-steps}
 
-As instalações Adobe Campaign para Linux devem ser executadas na seguinte sequência: instalação do servidor seguida pela configuração da instância.
+As instalações Adobe Campaign para Linux devem ser realizadas na seguinte sequência: instalação do servidor seguida pela configuração da instância.
 
 O processo de instalação é descrito neste capítulo. As etapas de instalação são as seguintes:
 
-* Etapa 1: Instalando o servidor de aplicativos, consulte [Instalação de pacotes com Linux](../../installation/using/installing-packages-with-linux.md).
+* Etapa 1: Instalação do servidor de aplicativos, consulte [Instalação de pacotes com Linux](../../installation/using/installing-packages-with-linux.md).
 * Etapa 2: Integração com um servidor da Web (opcional, dependendo dos componentes implantados).
 
 Depois que as etapas de instalação forem concluídas, será necessário configurar as instâncias, o banco de dados e o servidor. Para obter mais informações, consulte [Sobre a configuração inicial](../../installation/using/about-initial-configuration.md).

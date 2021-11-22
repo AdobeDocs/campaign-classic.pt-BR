@@ -5,7 +5,8 @@ description: Saiba como configurar zonas de segurança
 audience: installation
 content-type: reference
 topic-tags: additional-configurations
-source-git-commit: e719c8c94f1c08c6601b3386ccd99d250c9e606b
+exl-id: 67dda58f-97d1-4df5-9648-5f8a1453b814
+source-git-commit: 4fd69aa28c2e9325f4738ec571a6632c42ec26b8
 workflow-type: tm+mt
 source-wordcount: '1460'
 ht-degree: 10%
@@ -18,15 +19,15 @@ ht-degree: 10%
 
 Cada operador precisa ser vinculado a uma zona para fazer logon em uma instância e o IP do operador deve ser incluído nos endereços ou conjuntos de endereços definidos na zona de segurança. A configuração da zona de segurança é realizada no arquivo de configuração do servidor do Adobe Campaign.
 
-Os operadores são vinculados a uma zona de segurança a partir do seu perfil no console, acessível no nó **[!UICONTROL Administration > Access management > Operators]**. [Saiba mais](#linking-a-security-zone-to-an-operator).
+Operators are linked to a security zone from its profile in the console, accessible in the **[!UICONTROL Administration > Access management > Operators]** node. [Saiba mais](#linking-a-security-zone-to-an-operator).
 
 >[!NOTE]
 >
->Este procedimento está restrito a **implantações locais**.
+>Este procedimento restringe-se a **no local** implantações.
 >
->Como cliente **hospedado**, se você puder acessar [Painel de controle do Campaign](https://experienceleague.adobe.com/docs/control-panel/using/control-panel-home.html?lang=pt-BR), poderá usar a interface de autoatendimento da Zona de segurança. [Saiba mais](https://experienceleague.adobe.com/docs/control-panel/using/instances-settings/ip-allow-listing-instance-access.html?lang=pt-BR)
+>Como um **hospedado** cliente, se você puder acessar [Painel de controle do Campaign](https://experienceleague.adobe.com/docs/control-panel/using/control-panel-home.html?lang=pt-BR), você pode usar a interface de autoatendimento da Zona de segurança. [Saiba mais](https://experienceleague.adobe.com/docs/control-panel/using/instances-settings/ip-allow-listing-instance-access.html?lang=pt-BR)
 >
->Outros clientes **híbridos/hospedados** precisam entrar em contato com a equipe de suporte do Adobe para adicionar IP à.
+>Outras **híbrido/hospedado** Os clientes precisam entrar em contato com a equipe de suporte do Adobe para adicionar IP à.
 
 ## Criar zonas de segurança {#creating-security-zones}
 
@@ -37,7 +38,7 @@ Uma zona é definida por:
 
 As zonas de segurança são interbloqueadas, o que significa que definir uma nova zona dentro de outra reduz o número de operadores que podem fazer logon nela, enquanto aumenta os direitos atribuídos a cada operador.
 
-As zonas devem ser definidas durante a configuração do servidor, no arquivo **serverConf.xml**. Todos os parâmetros disponíveis em **serverConf.xml** são listados em [esta seção](../../installation/using/the-server-configuration-file.md).
+As zonas devem ser definidas durante a configuração do servidor, na variável **serverConf.xml** arquivo. Todos os parâmetros disponíveis no **serverConf.xml** estão listadas em [esta seção](../../installation/using/the-server-configuration-file.md).
 
 Cada zona define direitos, como:
 
@@ -50,15 +51,15 @@ Cada zona define direitos, como:
 >[!NOTE]
 >
 >**Cada operador deve estar vinculado a uma zona**. Se o endereço IP do operador pertencer ao intervalo definido pela zona, o operador poderá fazer logon na instância.\
->O endereço IP do operador pode ser definido em várias zonas. Nesse caso, o operador recebe o **set** de direitos disponíveis para cada zona.
+>O endereço IP do operador pode ser definido em várias zonas. Nesse caso, o operador recebe a variável **set** dos direitos disponíveis para cada zona.
 
-O arquivo pronto para uso **serverConf.xml** inclui três zonas: **public, VPN e LAN**.
+O pronto para uso **serverConf.xml** O arquivo inclui três zonas: **público, VPN e LAN**.
 
 >[!NOTE]
 >
->**A configuração pronta para uso é segura**. No entanto, antes de migrar de uma versão anterior do Adobe Campaign, pode ser necessário reduzir temporariamente a segurança para migrar e aprovar as novas regras.
+>**The out-of-the-box configuration is secure**. However, before migrating from an earlier version of Adobe Campaign, it may be necessary to temporarily reduce security in order to migrate and approve the new rules.
 
-Exemplo de como definir uma zona no arquivo **serverConf.xml**:
+Exemplo de como definir uma zona no **serverConf.xml** arquivo:
 
 ```
 <securityZone allowDebug="false" allowHTTP="false" label="Public Network" name="public">
@@ -82,7 +83,7 @@ Exemplo de como definir uma zona no arquivo **serverConf.xml**:
 </securityZone>
 ```
 
-Todos os direitos que definem uma zona são os seguintes:
+All of the rights defining a zone are as follows:
 
 * **allowDebug**: permite que um webApp seja executado no modo &quot;debug&quot;
 * **allowEmptyPassword**: autoriza uma conexão com uma instância sem uma senha
@@ -93,13 +94,13 @@ Todos os direitos que definem uma zona são os seguintes:
 
 >[!IMPORTANT]
 >
->Em uma definição de zona, cada atributo com o valor **true** reduz a segurança.
+>Em uma definição de zona, cada atributo com a variável **true** reduz a segurança.
 
-Ao usar o Centro de Mensagens, se houver várias instâncias de execução, será necessário criar uma zona de segurança adicional com o atributo **sessionTokenOnly** definido como **true**, onde apenas os endereços IP necessários serão adicionados. Para obter mais informações sobre como configurar instâncias, consulte [este documento](../../message-center/using/configuring-instances.md).
+Ao usar o Message Center, se houver várias instâncias de execução, será necessário criar uma zona de segurança adicional com a variável **sessionTokenOnly** atributo definido como **true**, onde apenas os endereços IP necessários devem ser adicionados. Para obter mais informações sobre configuração de instâncias, consulte [este documento](../../message-center/using/configuring-instances.md).
 
 ## Práticas recomendadas para zonas de segurança {#best-practices-for-security-zones}
 
-Na definição da zona de segurança **lan**, é possível adicionar uma máscara de endereço IP definindo o acesso técnico. Essa adição habilitará o acesso a todas as instâncias hospedadas no servidor.
+Na definição do **lan** zona de segurança, é possível adicionar uma máscara de endereço IP definindo o acesso técnico. Essa adição habilitará o acesso a todas as instâncias hospedadas no servidor.
 
 ```
 <securityZone allowDebug="true" allowEmptyPassword="false" allowHTTP="true"
@@ -120,7 +121,7 @@ Na definição da zona de segurança **lan**, é possível adicionar uma máscar
 
 Recomendamos definir intervalos de endereço IP diretamente no arquivo de configuração dedicado à instância para operadores que acessam apenas uma instância específica.
 
-No arquivo **`config-<instance>.xml`**:
+In the **`config-<instance>.xml`** file:
 
 ```
   <securityZone name="public">
@@ -131,7 +132,7 @@ No arquivo **`config-<instance>.xml`**:
 
 ## Subredes e proxies numa zona de segurança {#sub-networks-and-proxies-in-a-security-zone}
 
-O parâmetro **proxy** pode ser usado em um elemento **subNetwork** para especificar o uso de proxy em uma zona de segurança.
+O **proxy** pode ser usado em um **subNetwork** elemento para especificar o uso de proxy em uma zona de segurança.
 
 Quando um proxy é referenciado e uma conexão é inserida por meio desse proxy (visível por meio do cabeçalho HTTP X-Forwarded-For), a zona verificada é a dos clientes do proxy e não a do proxy.
 
@@ -157,7 +158,7 @@ Vários casos podem ocorrer:
 
    ![](assets/8101_proxy3.png)
 
-Os endereços IP dos proxies que provavelmente acessarão o servidor do Adobe Campaign devem ser inseridos tanto no **`<subnetwork>`** relacionado quanto na sub-rede de primeiro nível **`<subnetwork name="all"/>`**. Por exemplo, aqui para um proxy cujo endereço IP é 10.131.146.102:
+Os endereços IP dos proxies que provavelmente acessarão o servidor do Adobe Campaign devem ser inseridos em **`<subnetwork>`** e a sub-rede de primeiro nível **`<subnetwork name="all"/>`**. Por exemplo, aqui para um proxy cujo endereço IP é 10.131.146.102:
 
 ```
 <securityZone allowDebug="false" allowHTTP="false" label="Public Network" 
@@ -186,31 +187,31 @@ Depois que as zonas forem definidas, cada operador deve estar vinculado a uma de
 
 A configuração técnica das zonas é realizada no arquivo de configuração do Servidor do Campaign: **serverConf.xml**.
 
-Antes disso, você deve começar configurando a enumeração predefinida **[!UICONTROL Security zone]** para vincular um rótulo ao nome interno da zona definida no arquivo **serverConf.xml**.
+Prior to this, you must start by configuring the out-of-the-box **[!UICONTROL Security zone]** enumeration to link a label to the internal name of the zone defined in the **serverConf.xml** file.
 
 Essa configuração é feita no explorador do Campaign:
 
 1. Clique no nó **[!UICONTROL Administration > Platform > Enumerations]**.
-1. Selecione a enumeração do sistema **[!UICONTROL Security zone (securityZone)]**.
+1. Selecione o **[!UICONTROL Security zone (securityZone)]** enumeração do sistema.
 
    ![](assets/enum_securityzone.png)
 
-1. Para cada zona de segurança definida no arquivo de configuração do servidor, clique no botão **[!UICONTROL Add]**.
-1. No campo **[!UICONTROL Internal name]**, digite o nome da zona definida no arquivo **serverConf.xml**. Corresponde ao atributo **@name** do elemento `<securityzone>`. Insira o rótulo vinculado ao nome interno no campo **Label**.
+1. Para cada zona de segurança definida no arquivo de configuração do servidor, clique no botão **[!UICONTROL Add]** botão.
+1. No **[!UICONTROL Internal name]** , digite o nome da zona definida no campo **serverConf.xml** arquivo. It corresponds to the **@name** attribute of the `<securityzone>`  element. Insira o rótulo vinculado ao nome interno na  **Rótulo** campo.
 
    ![](assets/enum_addsecurityvalue.png)
 
 1. Clique em OK e salve as modificações.
 
-Depois que as zonas forem definidas e a enumeração **[!UICONTROL Security zone]** for configurada, será necessário vincular cada operador a uma zona de segurança:
+Depois que as zonas forem definidas e a variável **[!UICONTROL Security zone]** for configurada, será necessário vincular cada operador a uma zona de segurança:
 
 1. Clique no nó **[!UICONTROL Administration > Access management > Operators]**.
-1. Selecione o operador ao qual deseja vincular uma zona de segurança e clique na guia **[!UICONTROL Edit]**.
+1. Select the operator whom you want to link a security zone to, and click the **[!UICONTROL Edit]** tab.
 1. Acesse a guia **[!UICONTROL Access rights]** e clique no link **[!UICONTROL Edit access parameters...]**.
 
    ![](assets/zone_operator.png)
 
-1. Selecione uma zona na lista suspensa **[!UICONTROL Authorized connection zone]**
+1. Selecione uma zona no **[!UICONTROL Authorized connection zone]** lista suspensa
 
    ![](assets/zone_operator_selection.png)
 
@@ -220,13 +221,13 @@ Depois que as zonas forem definidas e a enumeração **[!UICONTROL Security zone
 
 ## Recomendações
 
-* Certifique-se de que seu proxy reverso não seja permitido na sub-rede. Se for o caso, o tráfego **all** será detectado como proveniente deste IP local, então será confiável.
+* Certifique-se de que seu proxy reverso não seja permitido na sub-rede. Se for esse o caso, **all** o tráfego será detectado como proveniente deste IP local, então será confiável.
 
 * Minimize o uso de sessionTokenOnly=&quot;true&quot;:
 
-   * Aviso: Se este atributo for definido como true, o operador poderá ser exposto a um **ataque CRSF**.
+   * Aviso: Se este atributo for definido como true, o operador poderá ser exposto a um **Ataque CRSF**.
    * Além disso, o cookie sessionToken não é definido com um sinalizador httpOnly, portanto, algum código JavaScript do lado do cliente pode lê-lo.
-   * No entanto, o Centro de Mensagens em várias células de execução precisa de sessionTokenOnly: crie uma nova zona de segurança com sessionTokenOnly definido como &quot;true&quot; e adicione **somente o(s) IP(s) necessário(s)** nessa zona.
+   * No entanto, o Centro de Mensagens em várias células de execução precisa de sessionTokenOnly: crie uma nova zona de segurança com sessionTokenOnly definido como &quot;true&quot; e adicione **somente o(s) IP(s) necessário(s)** nesta zona.
 
 * Quando possível, defina todos allowHTTP, showErrors como false (não para localhost) e verifique-os.
 
@@ -237,13 +238,13 @@ Depois que as zonas forem definidas e a enumeração **[!UICONTROL Security zone
 
 * Nunca defina allowEmptyPassword, allowUserPassword, allowSQLInjection como true. Estes atributos estão aqui apenas para permitir uma fácil migração das versões 5 e 6.0:
 
-   * **** Os operadores allowEmptyPasswordlets têm uma senha vazia. Se este for o seu caso, notifique todos os seus operadores para eles definirem uma senha com um prazo. Depois que esse prazo expirar, altere esse atributo para false.
+   * **allowEmptyPassword** permite que os operadores tenham uma senha vazia. Se este for o seu caso, notifique todos os seus operadores para eles definirem uma senha com um prazo. Once this deadline has passed, change this attribute to false.
 
-   * **** Os operadores allowUserPasswordlets enviam suas credenciais como parâmetros (para que sejam registrados por apache/IIS/proxy). Esse recurso foi usado anteriormente para simplificar o uso da API. Você pode verificar em seu guia (ou na especificação) se alguns aplicativos de terceiros usam isso. Em caso positivo, é necessário notificá-los para alterar a maneira como eles usam nossa API e, assim que possível, remover esse recurso.
+   * **allowUserPassword** lets operators send their credentials as parameters (so they will be logged by apache/IIS/proxy). Esse recurso foi usado anteriormente para simplificar o uso da API. Você pode verificar em seu guia (ou na especificação) se alguns aplicativos de terceiros usam isso. If so, you have to notify them to change the way they use our API and as soon as possible remove this feature.
 
-   * **** allowSQLInjection permite que o usuário realize injeções de SQL usando uma sintaxe antiga. Assim que possível, execute as correções descritas em [this page](../../migration/using/general-configurations.md) para poder definir este atributo como false. É possível usar /nl/jsp/ping.jsp?zones=true para verificar a configuração de sua zona de segurança. Esta página exibe o status ativo das medidas de segurança (calculadas com esses sinalizadores de segurança) para o IP atual.
+   * **allowSQLInjection** permite que o usuário execute injeções de SQL usando uma sintaxe antiga. As soon as possible carry out the corrections described in [this page](../../migration/using/general-configurations.md) to be able to set this attribute to false. É possível usar /nl/jsp/ping.jsp?zones=true para verificar a configuração de sua zona de segurança. Esta página exibe o status ativo das medidas de segurança (calculadas com esses sinalizadores de segurança) para o IP atual.
 
-* HttpOnly cookie/useSecurityToken: consulte o sinalizador **sessionTokenOnly** .
+* HttpOnly cookie/useSecurityToken: consulte **sessionTokenOnly** sinalizador.
 
 * Minimize os IPs adicionados à lista de permissões: Imediatamente, em zonas de segurança, adicionamos os 3 intervalos para redes privadas. É improvável usar todos esses endereços IP. Então mantenha apenas os que você precisa.
 

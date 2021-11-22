@@ -17,7 +17,7 @@ ht-degree: 1%
 
 ![](../../assets/v7-only.svg)
 
-A tela para criar e configurar os documentos de configuração da hierarquia de navegação é acessível por meio do nó **[!UICONTROL Administration > Configuration > Navigation hierarchies]**:
+A tela para criar e configurar os documentos de configuração da hierarquia de navegação é acessível por meio da variável **[!UICONTROL Administration > Configuration > Navigation hierarchies]** nó:
 
 ![](assets/d_ncs_integration_navigation_arbo.png)
 
@@ -29,7 +29,7 @@ O campo de edição fornece o conteúdo do documento XML:
 
 >[!NOTE]
 >
->O controle de edição &quot;Name&quot; permite inserir a chave do documento que consiste no nome e no namespace. Os atributos &quot;name&quot; e &quot;namespace&quot; do elemento **`<navtree>`** são atualizados automaticamente no campo de edição XML do esquema.
+>O controle de edição &quot;Name&quot; permite inserir a chave do documento que consiste no nome e no namespace. Os atributos &quot;name&quot; e &quot;namespace&quot; da variável **`<navtree>`** são atualizados automaticamente no campo de edição XML do esquema.
 
 A visualização gera automaticamente o documento mesclado contendo a configuração completa:
 

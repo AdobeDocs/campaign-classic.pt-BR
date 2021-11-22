@@ -17,10 +17,10 @@ ht-degree: 79%
 
 ![](../../assets/v7-only.svg)
 
-Use a opção Campaign **Federated Data Access** (FDA) para processar informações armazenadas em um banco de dados externo. Siga as etapas abaixo para configurar o acesso ao Hadoop.
+Usar Campanha **Federated Data Access** (FDA) opção para processar informações armazenadas em um banco de dados externo. Siga as etapas abaixo para configurar o acesso ao Hadoop.
 
-1. Configurar [banco de dados do Hadoop](#configuring-hadoop)
-1. Configure o Hadoop [external account](#hadoop-external) no Campaign
+1. Configurar [banco de dados Hadoop](#configuring-hadoop)
+1. Configurar o Hadoop [conta externa](#hadoop-external) no Campaign
 
 ## Configuração do Hadoop 3.0 {#configuring-hadoop}
 
@@ -100,7 +100,7 @@ Se precisar se conectar ao Hadoop 2.1, siga as etapas descritas abaixo para [Win
    User/Password: admin/<your password here>
    ```
 
-1. Crie a conta externa do Hadoop, conforme detalhado em [this section](#hadoop-external).
+1. Crie a conta externa do Hadoop, conforme detalhado em [esta seção](#hadoop-external).
 
 ### Hadoop 2.1 para Linux {#for-linux}
 
@@ -187,4 +187,4 @@ Se precisar se conectar ao Hadoop 2.1, siga as etapas descritas abaixo para [Win
    isql vorac -v
    ```
 
-1. Crie a conta externa do Hadoop, conforme detalhado em [this section](#hadoop-external).
+1. Crie a conta externa do Hadoop, conforme detalhado em [esta seção](#hadoop-external).

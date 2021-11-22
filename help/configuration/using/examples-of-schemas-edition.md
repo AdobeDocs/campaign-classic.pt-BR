@@ -19,9 +19,9 @@ ht-degree: 3%
 
 ## Extensão de uma tabela {#extending-a-table}
 
-Para estender a tabela de recipient do schema **nms:recipient**, aplique o seguinte procedimento:
+Para estender o **nms:recipient** tabela de recipients do schema, aplique o seguinte procedimento:
 
-1. Crie o schema de extensão (**cus:extension**) usando os seguintes dados:
+1. Criar o esquema de extensão (**cus:extension**) usando os seguintes dados:
 
    ```
    <srcSchema mappingType="sql" name="extension" namespace="cus" xtkschema="xtk:srcSchema" extendedSchema="nms:recipient">  
@@ -42,13 +42,13 @@ Para estender a tabela de recipient do schema **nms:recipient**, aplique o segui
    </srcSchema>
    ```
 
-   Neste exemplo, um campo indexado (**fidelity**) é adicionado e o elemento **location** (que já existia no schema **nms:recipient**) é complementado com um campo enumerado (**area**).
+   Neste exemplo, um campo indexado (**fidelidade**) é adicionado e a variável **localização** elemento (que já existia no **nms:recipient** schema ) é complementado com um campo enumerado (**area**).
 
    >[!IMPORTANT]
    >
-   >Lembre-se de adicionar o atributo **ExtendedSchema** para fazer referência ao schema de extensão.
+   >Lembre-se de adicionar o **extendedSchema** para fazer referência ao schema de extensão.
 
-1. Verifique se o schema estendido é o schema **nms:recipient** e se os dados adicionais estão presentes:
+1. Verifique se o schema estendido é o **nms:recipient** e que os dados adicionais estão presentes:
 
    ```
    <schema dependingSchemas="cus:extension" mappingType="sql" name="recipient" namespace="nms" xtkschema="xtk:schema">
@@ -237,7 +237,7 @@ CREATE UNIQUE INDEX CusOverflow2_id ON CusOverflow2(iRecipientId);
 
 Uma tabela de relacionamento permite vincular duas tabelas com cardinalidade N-N. Esta tabela contém apenas as chaves estrangeiras das tabelas a serem vinculadas.
 
-Exemplo de tabela de relacionamento entre grupos (**nms:group**) e recipients (**nms:recipient**).
+Exemplo de uma tabela de relacionamento entre grupos (**nms:group**) e recipients (**nms:recipient**).
 
 Schema de origem da tabela de relação:
 
@@ -321,7 +321,7 @@ xtkschema="xtk:srcSchema">
 </srcSchema>
 ```
 
-Em qualquer tabela que use essa tabela de referência, defina um link e adicione o atributo **displayAsField=&quot;true&quot;**.
+Em qualquer tabela que use essa tabela de referência, defina um link e adicione o **displayAsField=&quot;true&quot;** atributo.
 
 ```
 <element displayAsField="true" label="Bank" name="bank" target="cus:bank" type="link" noDbIndex="true"/>
@@ -333,7 +333,7 @@ A interface do usuário não exibirá um link, mas um campo. Quando os usuários
 
 * Para completar automaticamente, você deve definir uma cadeia de caracteres de computação na tabela de referência.
 
-* Adicione o atributo **noDbIndex=&quot;true&quot;** na definição do link para impedir que o Adobe Campaign crie um índice nos valores armazenados na tabela de origem do link.
+* Adicione o **noDbIndex=&quot;true&quot;** na definição do link para impedir que o Adobe Campaign crie um índice nos valores armazenados na tabela de origem do link.
 
 ## Tópicos relacionados
 

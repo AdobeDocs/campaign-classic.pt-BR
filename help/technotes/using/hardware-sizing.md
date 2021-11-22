@@ -2,7 +2,8 @@
 product: campaign
 title: Recomendações para dimensionamento de hardware para o Campaign Classic v7
 description: Recomendações para dimensionamento de hardware para o Campaign Classic v7
-source-git-commit: 0deb18bb0376fc5e94d063145280426ff54db786
+exl-id: c47e73a0-dbd8-43f5-a363-7e6783dc7685
+source-git-commit: ee296e0ce25570d1fe62238e505f978df17c1f24
 workflow-type: tm+mt
 source-wordcount: '2512'
 ht-degree: 1%
@@ -17,9 +18,9 @@ ht-degree: 1%
 
 >[!CAUTION]
 >
->Este artigo é fornecido apenas como um guia de exemplo geral. Você deve se envolver com o Gerente de sucesso do cliente da Adobe Campaign para medir o dimensionamento exato da implantação antes de iniciar o projeto do Campaign. **Não** adquira nem implante nenhuma infraestrutura ou hardware até que isso seja feito.
+>Este artigo é fornecido apenas como um guia de exemplo geral. Você deve se envolver com o Gerente de sucesso do cliente da Adobe Campaign para medir o dimensionamento exato da implantação antes de iniciar o projeto do Campaign. **Não** adquirir ou implantar qualquer infraestrutura ou hardware até que isso seja feito.
 
-Este documento fornece recomendações gerais para a implantação do Adobe Campaign Classic v7 no seu data center local ou no ambiente de nuvem virtualizada. Esse tipo de implantação, chamada de **híbrido** ou **mid-sourcing**, coloca a instância de marketing do Campaign e o banco de dados de marketing sob seu controle operacional, enquanto usa os serviços de Adobe Cloud Messaging para enviar emails, mensagens SMS ou SMPP e coletar dados de rastreamento de email abertos, rejeição e cliques.
+Este documento fornece recomendações gerais para a implantação do Adobe Campaign Classic v7 no seu data center local ou no ambiente de nuvem virtualizada. Esse tipo de implantação, chamada de **híbrido** ou **mid-sourcing**, coloca a instância de marketing do Campaign e o banco de dados de marketing sob seu controle operacional, enquanto usa os serviços da Adobe Cloud Messaging para enviar emails, mensagens SMS ou SMPP e coletar dados de rastreamento de cliques, rejeição e abertura de email.
 
 A instância de marketing é a parte da arquitetura do Adobe Campaign que direciona todas as atividades de marketing e armazena todos os dados e dados analíticos do recipient retornados pelas campanhas. A instância de marketing é um conjunto de servidores locais que executam serviços da Adobe Campaign e um banco de dados relacional.
 
@@ -27,16 +28,16 @@ A instância de marketing é a parte da arquitetura do Adobe Campaign que direci
 >
 >As informações neste documento não se aplicam se você estiver usando uma instância do Adobe Campaign totalmente hospedada (implantada em Adobe Cloud Services).
 
-A compatibilidade de software é detalhada no [Matriz de Compatibilidade](../../rn/using/compatibility-matrix.md).
+A compatibilidade de software é detalhada no [Matriz de compatibilidade](../../rn/using/compatibility-matrix.md).
 
 
 ### Cenários
 
 Os diagramas de implantação e as recomendações de dimensionamento de hardware são fornecidos para três cenários representativos:
 
-1. [Tamanho moderado](#scenario-1)  - 5 milhões de recipients ativos no sistema
-1. [Large-Size](#scenario-2)  - 20 milhões de recipients ativos no sistema
-1. [Enterprise](#scenario-3)  - 50 milhões de recipients ativos, com mensagens transacionais
+1. [Tamanho moderado](#scenario-1) - 5 milhões de destinatários ativos no sistema
+1. [Tamanho Grande](#scenario-2) - 20 milhões de beneficiários ativos no sistema
+1. [Empresa](#scenario-3) - 50 milhões de destinatários ativos, com mensagens transacionais
 
 ### Pressupostos
 
@@ -212,31 +213,31 @@ Estima-se que o espaço em disco necessário no banco de dados para armazenar to
 
 As suposições feitas para esses cenários têm um impacto significativo nas recomendações de hardware e na arquitetura de implantação. Esta seção discute as diretrizes sobre diferentes suposições. Entre em contato com a equipe de consultoria da Adobe Campaign para obter recomendações específicas para atender aos seus requisitos.
 
-* **Número de**
-RecipientsOs recipients ativos exigem espaço de armazenamento e espaço de buffer de banco de dados, de modo que mais recipients geralmente exigem mais memória e capacidade da CPU no servidor de banco de dados. Os aumentos de armazenamento são relativamente pequenos para os próprios recipients, mas podem ser significativos para os dados de rastreamento de eventos mantidos para campanhas de email.
+* **Número de Recipients**
+Os recipients ativos exigem espaço de armazenamento e espaço de buffer de banco de dados, de modo que, em geral, mais recipients exigem mais memória e capacidade da CPU no servidor de banco de dados. Os aumentos de armazenamento são relativamente pequenos para os próprios recipients, mas podem ser significativos para os dados de rastreamento de eventos mantidos para campanhas de email.
 
-* **Email Campaign**
-SizeA frequência de inicializações da campanha afeta os requisitos de CPU do servidor de banco de dados. Combinadas com mala direta, interações de entrada e outros fluxos de trabalho, as operações de segmentação para campanhas de email colocam uma carga significativa no servidor de banco de dados.
+* **Tamanho da campanha por email**
+A frequência de inicializações de campanha afeta os requisitos de CPU do servidor de banco de dados. Combinadas com mala direta, interações de entrada e outros fluxos de trabalho, as operações de segmentação para campanhas de email colocam uma carga significativa no servidor de banco de dados.
 
-* ****
-Frequência de correspondência diretaA frequência de malas diretas pode afetar os requisitos de CPU do servidor de banco de dados. Combinadas com inicializações de campanha e outros workflows, as operações de segmentação de mala direta colocavam uma carga significativa no servidor de banco de dados.
+* **Frequência de correspondência direta**
+A frequência de malas diretas pode afetar os requisitos da CPU do servidor de banco de dados. Combinadas com inicializações de campanha e outros workflows, as operações de segmentação de mala direta colocavam uma carga significativa no servidor de banco de dados.
 
-* **O tamanho da campanha de email**
-VolumeLike da mensagem SMS não coloca grandes cargas nos servidores do Campaign localizados no local; a carga é principalmente nos servidores do Adobe Cloud Messaging na nuvem. A segmentação para campanhas de SMS, como email e mala direta, pode colocar uma carga significativa no banco de dados de marketing. Portanto, a frequência de lançamentos de campanha de SMS e a complexidade da segmentação são mais relevantes do que o volume de mensagens SMS.
+* **Volume de mensagens SMS**
+Assim como o tamanho da campanha por email, o volume de mensagens SMS não coloca grandes cargas nos servidores do Campaign localizados no local; a carga é principalmente nos servidores do Adobe Cloud Messaging na nuvem. A segmentação para campanhas de SMS, como email e mala direta, pode colocar uma carga significativa no banco de dados de marketing. Portanto, a frequência de lançamentos de campanha de SMS e a complexidade da segmentação são mais relevantes do que o volume de mensagens SMS.
 
-* **Complexidade do esquema de banco de dados**
+* **Complexidade do esquema do banco de dados**
 A quantidade de dados para cada recipient ativo requer espaço de armazenamento e espaço de buffer de banco de dados, de modo que mais recipients geralmente exigem mais memória e CPU no servidor de banco de dados. Esquemas complexos também exigem mais tabelas para serem unidas para segmentação, de modo que as operações de segmentação podem ser executadas muito mais lentamente e exigem mais CPU e memória do banco de dados quando os dados são distribuídos em várias tabelas.
 
    A memória do servidor de banco de dados é estimada garantindo que o pool de buffer do banco de dados possa ser grande o suficiente para conter todos os dados do recipient, além de tabelas temporárias para executar workflows, além de uma margem para outras operações do banco de dados.
 
-* **Interação de Saída**
-UsageRules para Interação em modo de lote são avaliadas em workflows que entregam toda a complexidade de cálculo ao banco de dados. O principal fator de esforço no banco de dados é o número total de ofertas elegíveis computadas durante uma chamada de mecanismo (tamanho do target X número médio de ofertas por recipient antes de manter as N melhores ofertas). A velocidade da CPU do servidor de banco de dados é o primeiro fator de desempenho.
+* **Uso de interação de saída**
+As regras de Interação no modo de lote são avaliadas em workflows que entregam toda a complexidade de cálculo ao banco de dados. O principal fator de esforço no banco de dados é o número total de ofertas elegíveis computadas durante uma chamada de mecanismo (tamanho do target X número médio de ofertas por recipient antes de manter as N melhores ofertas). A velocidade da CPU do servidor de banco de dados é o primeiro fator de desempenho.
 
-* **Interações de entrada ou**
-Uso de API SOAP As regras e ofertas de interação de entrada são avaliadas no banco de dados de marketing, exigindo recursos significativos do servidor de banco de dados, especialmente a CPU. O uso intenso de Interações de entrada ou APIs SOAP requer servidores da Web separados para separar a carga de trabalho da execução de workflows do Campaign.
+* **Interações de entrada ou uso de API SOAP**
+As regras e ofertas de interação de entrada são avaliadas no banco de dados de marketing, exigindo recursos significativos do servidor de banco de dados, especialmente a CPU. O uso intenso de Interações de entrada ou APIs SOAP requer servidores da Web separados para separar a carga de trabalho da execução de workflows do Campaign.
 
-* **Rastreamento de**
-período da retenção de dadosAumentar a retenção de dados de rastreamento além de 90 dias requer mais armazenamento de banco de dados e pode retardar o sistema, pois a inserção de novos dados de rastreamento entra em tabelas grandes. O rastreamento de dados não é útil para a segmentação da campanha após 90 dias, portanto, o período de retenção mais curto é recomendado.
+* **Período de retenção de dados de rastreamento**
+Aumentar a retenção de dados de rastreamento além de 90 dias requer mais armazenamento de banco de dados e pode retardar o sistema porque a inserção de novos dados de rastreamento vai para tabelas grandes. O rastreamento de dados não é útil para a segmentação da campanha após 90 dias, portanto, o período de retenção mais curto é recomendado.
 
    Os dados de rastreamento devem ser movidos para o Adobe Analytics ou outro sistema de análise se você precisar de uma análise de longo prazo da experiência de marketing do recipient.
 
@@ -244,14 +245,14 @@ período da retenção de dadosAumentar a retenção de dados de rastreamento al
 
 Todos os servidores do Campaign são bons candidatos à virtualização. Vários problemas devem ser abordados para garantir disponibilidade e desempenho adequados.
 
-* **Os servidores**
-Configuration Clustered com falha, por exemplo, os servidores de aplicativos redundantes em um proxy com balanceamento de carga, devem ser implantados em hardware separado para garantir que ambas as VMs não fiquem inativas em caso de falha de hardware.
+* **Configuração de failover**
+Os servidores em cluster, por exemplo, servidores de aplicativos redundantes em um proxy com balanceamento de carga, devem ser implantados em hardware separado para garantir que ambas as VMs não desçam caso haja falha de hardware.
 
-* ****
-Configuração de E/SQualquer configuração de RAID recomendada deve ser mantida para segurança do banco de dados, para garantir que a perda de um dispositivo de armazenamento não cause perda de dados.
+* **Configuração de E/S**
+Qualquer configuração RAID recomendada deve ser mantida para segurança do banco de dados, para garantir que a perda de um dispositivo de armazenamento não cause perda de dados.
 
-* ****
-Desempenho de E/SA classificação de IOPS recomendada para armazenamento de banco de dados deve ser respeitada. Serviços em nuvem como o Amazon EC2 podem não fornecer o desempenho necessário e devem ser cuidadosamente avaliados. Por exemplo, os volumes de SSD provisionados pelo Amazon EC2 são classificados atualmente em 20.000 IOPS cada. Saiba mais na [documentação do Amazon](http://docs.aws.amazon.com/AWSEC2/latest/UserGuide/EBSVolumeTypes.html), portanto, uma configuração RAID de 4 volumes seria classificada em 80.000 IOPS, o que pode não ser suficiente.
+* **Desempenho de E/S**
+A classificação de IOPS recomendada para armazenamento de banco de dados deve ser respeitada. Serviços em nuvem como o Amazon EC2 podem não fornecer o desempenho necessário e devem ser cuidadosamente avaliados. Por exemplo, os volumes de SSD provisionados pelo Amazon EC2 são classificados atualmente em 20.000 IOPS cada. Saiba mais em [Documentação do Amazon](http://docs.aws.amazon.com/AWSEC2/latest/UserGuide/EBSVolumeTypes.html)Portanto, uma configuração RAID de 4 volumes seria classificada em 80.000 IOPS, o que pode não ser suficiente.
 
 O Adobe recomenda testes de desempenho para qualquer implantação virtualizada do Adobe Campaign antes de colocar o sistema em produção.
 

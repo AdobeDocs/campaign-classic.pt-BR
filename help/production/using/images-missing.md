@@ -23,7 +23,7 @@ Para clientes hospedados, não há impacto. Para instalações locais, leia o se
 
 **Usuários do Apache:**
 
-Não há impacto para os usuários do Apache se eles usarem o **apache_neolane.conf** fornecido.
+Não haverá impacto para os usuários do Apache se eles usarem o **apache_neolane.conf**.
 
 **Usuários do IIS:**
 

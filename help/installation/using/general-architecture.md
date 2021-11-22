@@ -41,14 +41,14 @@ A Adobe Campaign é baseada em uma SOA (Service Oriented Architecture, arquitetu
 
 >[!CAUTION]
 >
->Caso contrário, a instalação, as atualizações e a manutenção em todos os componentes de uma plataforma Adobe Campaign são da responsabilidade do(s) administrador(es) da máquina que os hospeda. Isso inclui a implementação dos pré-requisitos para aplicativos do Adobe Campaign, bem como a conformidade com a [Matriz de compatibilidade](../../rn/using/compatibility-matrix.md) entre componentes do Campaign.
+>Caso contrário, a instalação, as atualizações e a manutenção em todos os componentes de uma plataforma Adobe Campaign são da responsabilidade do(s) administrador(es) da máquina que os hospeda. Isso inclui a implementação dos pré-requisitos para aplicativos do Adobe Campaign e o cumprimento do Campaign [Matriz de compatibilidade](../../rn/using/compatibility-matrix.md) entre componentes.
 
 ## Camada de apresentação {#presentation-layer}
 
 O aplicativo pode ser acessado de diferentes maneiras, dependendo das necessidades dos usuários: Integração avançada de cliente, cliente thin ou API.
 
-* **Cliente** avançado: A principal interface de usuário do aplicativo é um cliente avançado, em outras palavras, um aplicativo nativo (Windows) que se comunica com o servidor de aplicativos Adobe Campaign exclusivamente com protocolos padrão de Internet (SOAP, HTTP etc.). Esse console oferece excelente facilidade de uso para produtividade, usa pouca largura de banda (por meio do uso de um cache local) e foi projetado para facilitar a implantação. Esse console pode ser implantado a partir de um navegador da Internet, pode ser atualizado automaticamente e não requer nenhuma configuração de rede específica porque gera apenas tráfego HTTP(S).
-* **Cliente** fino: Algumas partes do aplicativo podem ser acessadas por um navegador da Web simples usando uma interface de usuário HTML, incluindo o módulo de relatórios, estágios de aprovação de delivery, funcionalidades do módulo Marketing Distribuído (central/local), monitoramento de instância etc. Esse modo possibilita incluir as funcionalidades do Adobe Campaign em uma intranet ou uma extranet.
+* **Cliente avançado**: A principal interface de usuário do aplicativo é um cliente avançado, em outras palavras, um aplicativo nativo (Windows) que se comunica com o servidor de aplicativos Adobe Campaign exclusivamente com protocolos padrão de Internet (SOAP, HTTP etc.). Esse console oferece excelente facilidade de uso para produtividade, usa pouca largura de banda (por meio do uso de um cache local) e foi projetado para facilitar a implantação. Esse console pode ser implantado a partir de um navegador da Internet, pode ser atualizado automaticamente e não requer nenhuma configuração de rede específica porque gera apenas tráfego HTTP(S).
+* **Cliente fino**: Certas partes do aplicativo podem ser acessadas por um navegador da Web simples usando uma interface de usuário do HTML, incluindo o módulo de relatórios, estágios de aprovação de delivery, funcionalidades do módulo Marketing Distribuído (central/local), monitoramento de instância etc. Esse modo possibilita incluir as funcionalidades do Adobe Campaign em uma intranet ou uma extranet.
 * **Integração por meio das APIs**: Em certos casos, o sistema pode ser chamado de aplicativo externo usando as APIs de serviços da Web expostas por meio do protocolo SOAP.
 
 ## Camada de aplicativo lógico {#logical-application-layer}
@@ -59,11 +59,11 @@ O Adobe Campaign depende de um conjunto de processos do lado do servidor que fun
 
 Os principais processos são:
 
-**Servidor de aplicativos**  (nlserver web)
+**Servidor de aplicativos** (nlserver web)
 
 Esse processo expõe toda a gama de funcionalidades do Adobe Campaign por meio de APIs de Serviços da Web (SOAP - HTTP + XML). Além disso, ele pode gerar dinamicamente as páginas da Web usadas para acesso baseado em HTML (relatórios, formulários Web etc.). Para isso, esse processo inclui um servidor JSP Apache Tomcat. Esse é o processo ao qual o console se conecta.
 
-**Mecanismo de fluxo de trabalho**  (nlserver wfserver)
+**Mecanismo de workflow** (nlserver wfserver)
 
 Ele executa os processos de workflow definidos no aplicativo.
 
@@ -73,13 +73,13 @@ Também lida com workflows técnicos executados periodicamente, incluindo:
 * Limpeza: Limpeza do banco de dados. Usado para limpar registros antigos e evitar o crescimento exponencial do banco de dados.
 * Faturamento: Envio automático de um relatório de atividade para a plataforma (tamanho do banco de dados, número de ações de marketing, número de perfis ativos etc.).
 
-**Servidor de entrega**  (nlserver mta)
+**Servidor de entrega** (mta nlserver)
 
 A Adobe Campaign tem funcionalidade nativa de transmissão de email. Esse processo funciona como um agente de transferência de email SMTP (MTA). Ele executa a personalização &quot;um para um&quot; de mensagens e manipula sua entrega física. Funciona usando tarefas de delivery e lida com tentativas automáticas. Além disso, quando o rastreamento é ativado, ele substitui automaticamente os URLs para que apontem para o servidor de redirecionamento.
 
 Esse processo pode lidar com a personalização e o envio automático para um roteador de terceiros para SMS, fax e mala direta.
 
-**Servidor de redirecionamento**  (nlserver webmdl)
+**Redirecionar servidor** (nlserver webmdl)
 
 Para email, o Adobe Campaign trata automaticamente o rastreamento de cliques e aberturas (o rastreamento transacional no nível do site é uma outra possibilidade). Para isso, os URLs incorporados nas mensagens de email são reescritos para apontar para esse módulo, que registra a passagem do usuário da Internet antes de redirecioná-los para o URL necessário.
 
@@ -87,39 +87,39 @@ Para garantir a maior disponibilidade, esse processo é totalmente independente 
 
 Outros processos mais técnicos também estão disponíveis:
 
-**Gestão de emails de devolução**  (nlserver inMail)
+**Gestão de emails de devolução** (nlserver inMail)
 
 Esse processo permite que você selecione automaticamente emails de caixas de correio configuradas para receber mensagens devolvidas em caso de falha de delivery. Essas mensagens passam por um processamento com base em regras para determinar os motivos para não entrega (recipient desconhecido, cota excedida, etc.) e para atualizar o status do delivery no banco de dados.
 
 Todas essas operações são totalmente automáticas e pré-configuradas.
 
-**Status do delivery de SMS**  (nlserver sms)
+**Status do delivery SMS** (nlserver sms)
 
 Esse processo pesquisa o roteador SMS para coletar o status de progresso e atualizar o banco de dados.
 
-**Gravando mensagens de log**  (nlserver syslogd)
+**Gravando mensagens de log** (nlserver syslogd)
 
 Esse processo técnico captura mensagens de log e rastreamentos gerados pelos outros processos e as grava no disco rígido. Isso disponibiliza amplas informações para diagnóstico em caso de problemas.
 
-**Gravação de logs de rastreamento**  (nlserver trackinglogd)
+**Gravação de logs de rastreamento** (nlserver trackinglogd)
 
 Esse processo salva em disco os logs de rastreamento gerados pelo processo de redirecionamento.
 
-**Gravação de eventos de entrada**  (nlserver interactiond)
+**Gravação de eventos de entrada** (nlserver interactiond)
 
 Esse processo garante o registro no disco de eventos de entrada, dentro da estrutura de Interação.
 
-**Supervisão de módulos**  (nlserver watchdog)
+**Supervisão de módulos** (nlserver watchdog)
 
 Este processo técnico funciona como um processo principal que cria os outros. Ele também os monitora e reinicializa automaticamente em caso de incidentes, mantendo assim o tempo máximo de atividade do sistema.
 
-**Servidor**  de Estatísticas (nlserver stat)
+**Servidor de estatísticas** (nlserver stat)
 
 Esse processo mantém estatísticas sobre o número de conexões, as mensagens enviadas para cada servidor de email para o qual as mensagens são enviadas, bem como suas limitações (o maior número de conexões simultâneas, mensagens por hora/e ou conexão). Também permite federar várias instâncias ou máquinas se elas compartilharem os mesmos endereços IP públicos.
 
 >[!NOTE]
 >
->A lista completa de módulos Adobe Campaign está disponível em [this document](../../production/using/operating-principle.md).
+>A lista completa de módulos Adobe Campaign está disponível em [este documento](../../production/using/operating-principle.md).
 
 ## Camada de persistência {#persistence-layer}
 

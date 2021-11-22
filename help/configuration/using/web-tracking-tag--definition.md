@@ -79,8 +79,7 @@ A tabela a seguir fornece uma lista de parâmetros especiais compatíveis com o 
                               <p>Parâmetro de URL</p> 
                            </td>
                            <td>
-                              <p>Identificador de delivery a ser usado se não houver cookie de sessão. Esse valor deve ser
-                                 expresso em hexadecimal.
+                              <p>Identificador de delivery a ser usado se não houver cookie de sessão. Esse valor deve ser expresso em hexadecimal.
                               </p> 
                            </td> 
                         </tr>
@@ -92,9 +91,7 @@ A tabela a seguir fornece uma lista de parâmetros especiais compatíveis com o 
                               <p>Parâmetro de URL</p> 
                            </td>
                            <td>
-                              <p>Parâmetro usado para identificar o usuário da Internet. O formato desse parâmetro é "name=value",
-                                 onde o nome é um campo do schema do recipient. Esse parâmetro tem prioridade sobre
-                                 o identificador contido no cookie da sessão.
+                              <p>Parâmetro usado para identificar o usuário da Internet. O formato desse parâmetro é "name=value", onde o nome é um campo do schema do recipient. Esse parâmetro tem prioridade sobre o identificador contido no cookie da sessão.
                               </p> 
                            </td> 
                         </tr> 
@@ -131,5 +128,5 @@ A tabela a seguir fornece uma lista de parâmetros especiais compatíveis com o 
 
 Os seguintes métodos são possíveis:
 
-* Inserir o URL no atributo **&quot;src&quot;** de uma tag HTML **`<img>`** incorporada na página da Web que você deseja rastrear.
+* Inserir o URL no **&quot;src&quot;** atributo de um HTML **`<img>`** tag incorporada na página da Web que você deseja rastrear.
 * Chamada direta para o servidor de redirecionamento quando a página da Web que você deseja rastrear for gerada.

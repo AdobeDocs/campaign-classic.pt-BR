@@ -34,7 +34,7 @@ Os arquivos são divididos em várias categorias:
 
    Isso permite reconfigurar o Adobe Campaign muito rapidamente.
 
-* Arquivos de redirecionamento ** nl6/var/`<instancename>`/redir**
+* Arquivos de redirecionamento ** nl6/var/`<instancename>`/redirer**
 
    Eles estão nos servidores de rastreamento (geralmente chamados de &quot;frontais&quot;) e incluem todos os redirecionamentos de campanha anteriores. Elas ainda são usadas por campanhas anteriores.
 

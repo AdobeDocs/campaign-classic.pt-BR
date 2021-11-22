@@ -27,7 +27,7 @@ Ela envolve reiniciar os processos com um nível mais alto de logs.
 
 O Adobe Campaign pode operar com dois níveis de log:
 
-1. O modo **Verbose** é o primeiro nível após o nível padrão. O comando a seguir o ativa:
+1. O **Verbose** é o primeiro nível após o nível padrão. O comando a seguir o ativa:
 
    ```
    nlserver restart <MODULE_NAME> -verbose 
@@ -39,7 +39,7 @@ O Adobe Campaign pode operar com dois níveis de log:
    nlserver restart <MODULE_NAME> -noconsole
    ```
 
-1. O modo **TraceFilter**, que permite salvar o maior número de logs. Ela é ativada pelo seguinte comando:
+1. O **TraceFilter** , que permite salvar o maior número de logs. Ela é ativada pelo seguinte comando:
 
    ```
    nlserver stop <MODULE_NAME>; nlserver <MODULE_NAME> -verbose -tracefilter:*
@@ -47,9 +47,9 @@ O Adobe Campaign pode operar com dois níveis de log:
 
    >[!NOTE]
    >
-   >Se você usar **tracefilter:***, todos os tipos de log serão ativados: ncm, rdr, nms, jst, tempo, wdbc, ldap, soap, xtk, xtkquery, sessão, xtkwriter, rede, pop3, inmail\
-   >Os tipos de log mais úteis são: **wdbc** (exibe todas as consultas SQL), **soap** (exibe todas as chamadas SOAP), **ldap** (exibe todas as consultas LDAP após a autenticação), **xtkquery** (exibe a lista de todas as querydef).\
-   >Você pode usá-los individualmente (**tracefilter:soap,wdbc** por exemplo). Você também pode ativá-los e optar por excluir alguns outros: **-tracefilter:*,!soap**
+   >Se você usar **tracefilter:***, todos os tipos de log são ativados: ncm, rdr, nms, jst, tempo, wdbc, ldap, soap, xtk, xtkquery, sessão, xtkwriter, rede, pop3, inmail\
+   Os tipos de log mais úteis são: **wdbc** (exibe todas as consultas SQL), **sabão** (exibe todas as chamadas SOAP), **ldap** (exibe todas as consultas LDAP após a autenticação), **xtkquery** (exibe a lista de todos os querydef).\
+   Você pode usá-los individualmente (**tracefilter:soap,wdbc** por exemplo). Você também pode ativá-los e optar por excluir alguns outros: **-tracefilter:*,!soap**
 
    Verifique se o erro realmente ocorreu e reinicie o processo da maneira normal:
 
@@ -58,8 +58,7 @@ O Adobe Campaign pode operar com dois níveis de log:
    ```
 
 >[!IMPORTANT]
->
->Os registros desses comandos são armazenados no arquivo de log do módulo.
+Os registros desses comandos são armazenados no arquivo de log do módulo.
 
 Este é um exemplo específico para o módulo da Web. Os outros módulos funcionam como indicado acima.
 
@@ -69,7 +68,7 @@ Antes de enviar este comando, verifique se nenhuma tarefa em andamento será afe
 nlserver pdump -who
 ```
 
-Em seguida, desligue e reinicie o módulo no modo **TraceFilter**:
+Em seguida, desligue e reinicie o módulo em **TraceFilter** modo:
 
 ```
 nlserver stop web; LD_PRELOAD=libjsig.so nlserver web -tomcat -verbose -tracefilter:* -tracefile:web_debug@default
@@ -82,13 +81,11 @@ nlserver stop mta@<INSTANCE_NAME>; nlserver mta -instance:<INSTANCE_NAME> -trace
 ```
 
 >[!NOTE]
->
->O modo **Tracefile** permite salvar os logs. Nos exemplos acima, os logs são salvos nos arquivos **var/`<instance-name>`/mta_debug.log** e **var/default/web_debug.log**.
+O **Tracefile** permite salvar os logs. Nos exemplos acima, os logs são salvos no **var/`<instance-name>`/mta_debug.log** e **var/default/web_debug.log** arquivos.
 
 >[!IMPORTANT]
->
->No Windows, não adicione a opção LD_PRELOAD. O seguinte comando é suficiente:\
->nlserver web -tomcat -verbose -tracefilter:*
+No Windows, não adicione a opção LD_PRELOAD. O seguinte comando é suficiente:\
+nlserver web -tomcat -verbose -tracefilter:*
 
 Verifique se o problema ocorre novamente e reinicie o módulo:
 
