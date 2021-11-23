@@ -137,7 +137,6 @@ Blocos de personalização e campos só podem ser inseridos em blocos de tipo de
 >* Nova janela (_blank)
 >* Janela atual (_self)
 >* Comportamento do navegador padrão
-
 >
 
 
