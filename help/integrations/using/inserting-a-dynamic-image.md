@@ -8,8 +8,8 @@ topic-tags: adobe-target
 exl-id: 6177f57b-534c-4d86-8f73-d96980c48a77
 source-git-commit: b6e24c63ece12f25b7dafe3fede9e38b3aab2427
 workflow-type: tm+mt
-source-wordcount: '825'
-ht-degree: 84%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -17,9 +17,9 @@ ht-degree: 84%
 
 ![](../../assets/common.svg)
 
-Nesta página, saiba como integrar uma oferta dinâmica do Adobe Target a um email no Adobe Campaign.
+Nesta página, aprenda a integrar uma oferta dinâmica do Adobe Target em um email no Adobe Campaign.
 
-O objetivo é criar um delivery com um bloco de imagem que muda dinamicamente de acordo com o país do recipient: os dados são enviados com cada solicitação de mbox e dependem do endereço IP do recipient.
+O objetivo é criar um delivery com um bloco de imagem que muda dinamicamente de acordo com o país do recipient: os dados são enviados a cada solicitação de mbox e dependem do endereço IP do recipient.
 
 Nesta mensagem, as imagens podem variar dinamicamente de acordo com as seguintes experiências do usuário:
 
@@ -31,13 +31,13 @@ Nesta mensagem, as imagens podem variar dinamicamente de acordo com as seguintes
 
 Para fazer isso, siga as etapas abaixo:
 
-1. [Insira a oferta dinâmica em um email](../../integrations/using/inserting-a-dynamic-image.md#inserting-dynamic-offer)
+1. [Inserir a oferta dinâmica em um email](../../integrations/using/inserting-a-dynamic-image.md#inserting-dynamic-offer)
 1. [Criar ofertas de redirecionamento](../../integrations/using/inserting-a-dynamic-image.md#create-redirect-offers)
 1. [Criar públicos](../../integrations/using/inserting-a-dynamic-image.md#audiences-target)
 1. [Criar uma atividade de direcionamento de experiência](../../integrations/using/inserting-a-dynamic-image.md#creating-targeting-activity)
-1. [Visualizar e enviar o email](../../integrations/using/inserting-a-dynamic-image.md#preview-send-email)
+1. [Pré-visualizar e enviar o email](../../integrations/using/inserting-a-dynamic-image.md#preview-send-email)
 
-## Insira a oferta dinâmica em um email {#inserting-dynamic-offer}
+## Inserir a oferta dinâmica em um email {#inserting-dynamic-offer}
 
 No Adobe Campaign, depois de definir o destino e o conteúdo do seu e-mail, você pode inserir uma imagem dinâmica do Target.
 
@@ -53,7 +53,7 @@ No Adobe Campaign, há duas maneiras de inserir uma imagem dinâmica do Target e
 
    ![](assets/target_12.png)
 
-### Definir os parâmetros da imagem {#defining-image-parameters}
+### Definir os parâmetros de imagem {#defining-image-parameters}
 
 * O URL de **[!UICONTROL Default image]**: a imagem que será exibida quando nenhuma das condições for satisfeita. Você também pode selecionar uma imagem da biblioteca de recursos.
 * O **[!UICONTROL Target location]**: digite um nome para a localização da oferta dinâmica. Você terá que selecionar este local na atividade do público-alvo.
@@ -102,7 +102,7 @@ No Target , é necessário criar os dois públicos nos quais as pessoas que visi
 
 No Target, é necessário criar uma atividade de direcionamento de experiência, definir as diferentes experiências e associá-las às ofertas correspondentes.
 
-### Definir o público-alvo {#defining-the-audience}
+### Definir o público {#defining-the-audience}
 
 1. Para criar uma atividade de Direcionamento de Experiência, na guia **[!UICONTROL Activities]**, clique em **[!UICONTROL Create Activity]** e em **[!UICONTROL Experience Targeting]**
 
@@ -120,7 +120,7 @@ No Target, é necessário criar uma atividade de direcionamento de experiência,
 
 1. Crie outra experiência ao clicar em **[!UICONTROL Add Experience Targeting]**.
 
-### Definir o local e o conteúdo {#defining-location-content}
+### Definir a localização e o conteúdo {#defining-location-content}
 
 Adicione um conteúdo para cada público:
 
@@ -150,7 +150,7 @@ A seção **[!UICONTROL Reporting Settings]** permite selecionar uma ação e ed
 
 ![](assets/target_experience_2.png)
 
-## Visualizar e enviar o email {#preview-send-email}
+## Pré-visualizar e enviar o email {#preview-send-email}
 
 No Adobe Campaign, agora você pode visualizar seu e-mail e testar sua renderização em diferentes recipients. Você notará que a imagem muda de acordo com as diferentes experiências criadas. Para saber mais sobre a criação de email, consulte esta [página](../../delivery/using/defining-the-email-content.md).
 

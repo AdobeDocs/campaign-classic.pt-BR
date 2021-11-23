@@ -1,15 +1,15 @@
 ---
 product: campaign
-title: Trabalhar com a Adobe Campaign e a Adobe Target
-description: Saiba como integrar o Adobe Campaign com o Adobe Target
+title: Trabalhar com o Adobe Campaign e o Adobe Target
+description: Saiba como integrar o Adobe Campaign ao Adobe Target
 audience: integrations
 content-type: reference
 topic-tags: adobe-target
 exl-id: 2e29d090-b87b-4cff-a703-58e1da082f04
 source-git-commit: af40fe822c69979a478604595790d4deefd6d5b0
 workflow-type: tm+mt
-source-wordcount: '198'
-ht-degree: 32%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -17,11 +17,11 @@ ht-degree: 32%
 
 ![](../../assets/common.svg)
 
-Use o Adobe Campaign com Adobe Target para otimizar o conteúdo de email.
+Use o Adobe Campaign com o Adobe Target para otimizar o conteúdo de email.
 
-Para otimizar seu conteúdo de email, você pode criar uma oferta de redirecionamento no Adobe Target e, em seguida, usar o Adobe Campaign para gerenciar as ofertas de email. Por exemplo, você pode exibir diferentes ofertas para recipients do sexo masculino e feminino.
+Para otimizar seu conteúdo de email, é possível criar uma oferta de redirecionamento no Adobe Target e, em seguida, usar o Adobe Campaign para gerenciar as ofertas de email. Por exemplo, é possível exibir diferentes ofertas para recipients do sexo masculino e feminino.
 
-A integração ocorre quando o email é aberto. Quando o cliente abre o email, é feita uma chamada para o Target e é exibida uma versão dinâmica do conteúdo. O conteúdo consiste em uma imagem estática compatível com todos os navegadores. O Target rastreia a reação à oferta no nível do público-alvo ou da sessão e esses dados estão disponíveis nos relatórios do Target. [Saiba mais na documentação do Adobe Target](https://experienceleague.adobe.com/docs/target/using/integrate/campaign-and-target.html?lang=pt-BR).
+A integração ocorre quando o email é aberto. Quando o cliente abre o email, é feita uma chamada para o Target e uma versão dinâmica do conteúdo é exibida. O conteúdo consiste em uma imagem estática compatível com todos os navegadores. O Target rastreia a reação à oferta no nível do público ou da sessão e esses dados ficam disponíveis nos relatórios do Target. [Saiba mais na documentação do Adobe Target](https://experienceleague.adobe.com/docs/target/using/integrate/campaign-and-target.html?lang=pt-BR).
 
 
 >[!NOTE]

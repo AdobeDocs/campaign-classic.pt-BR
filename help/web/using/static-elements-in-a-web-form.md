@@ -8,8 +8,8 @@ topic-tags: web-forms
 exl-id: 364d90af-4b18-4104-8b6a-be80cfde3b0b
 source-git-commit: 5d9e2f7d7cea9e6d1243b0e3a790f3990772e603
 workflow-type: tm+mt
-source-wordcount: '1031'
-ht-degree: 99%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -30,7 +30,7 @@ Os seguintes tipos de campo estão disponíveis:
 
    >[!NOTE]
    >
-   >No lado do servidor, o script pode usar as funções definidas na [documentação do Campaign JSAPI](https://experienceleague.adobe.com/developer/campaign-api/api/index.html).
+   >No lado do servidor, o script pode usar as funções definidas na [documentação do Campaign JSAPI](https://experienceleague.adobe.com/developer/campaign-api/api/index.html?lang=pt-BR).
 
 ## Inserir conteúdo HTML {#inserting-html-content}
 

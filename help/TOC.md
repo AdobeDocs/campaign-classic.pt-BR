@@ -8,8 +8,8 @@ sub-product: adobe campaign classic
 type: Documentation
 source-git-commit: 93fcb0b2b12b581dadbe4358e72bb883384fbbe6
 workflow-type: tm+mt
-source-wordcount: '2571'
-ht-degree: 99%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -166,7 +166,7 @@ ht-degree: 99%
    + Enviar correspondência direta {#sending-direct-mail}
       + [Sobre o canal de correspondência direta](delivery/using/about-direct-mail-channel.md)
       + [Criar uma entrega de correspondência direta](delivery/using/creating-a-direct-mail-delivery.md)
-      + [Definição do conteúdo da correspondência direta](delivery/using/defining-the-direct-mail-content.md)
+      + [Definir o conteúdo da correspondência direta](delivery/using/defining-the-direct-mail-content.md)
       + [Validar](delivery/using/validating.md)
    + Usar modelos de entrega {#using-delivery-templates}
       + [Sobre modelos](delivery/using/about-templates.md)
@@ -373,11 +373,11 @@ ht-degree: 99%
       + [Configurar acesso ao [!DNL Assets]](integrations/using/configuring-access-to-assets.md)
       + [Inserir um ativo compartilhado](integrations/using/inserting-a-shared-asset.md)
    + Adobe Experience Manager {#adobe-experience-manager}
-      + [Trabalhar com [!DNL Adobe Experience Manager]](integrations/using/about-adobe-experience-manager.md)
+      + [Trabalhar com o  [!DNL Adobe Experience Manager]](integrations/using/about-adobe-experience-manager.md)
       + [Configurar a integração](integrations/using/configuring-the-integration.md)
       + [Criar um informativo do [!DNL Experience Manager] ](integrations/using/creating-an-experience-manager-newsletter.md)
    + Adobe Target {#adobe-target}
-      + [Trabalhar com [!DNL Adobe Target]](integrations/using/integrating-with-adobe-target.md)
+      + [Trabalhar com o  [!DNL Adobe Target]](integrations/using/integrating-with-adobe-target.md)
       + [Configurar a integração com o [!DNL Adobe Target]](integrations/using/configuring-the-integration-with-adobe-target.md)
       + [Inserir uma imagem dinâmica](integrations/using/inserting-a-dynamic-image.md)
    + Conector ACS {#acs-connector}
@@ -387,7 +387,7 @@ ht-degree: 99%
       + [Sincronizar aplicativos web](integrations/using/synchronizing-web-applications.md)
       + [Solucionar problemas do [!DNL ACS Connector]](integrations/using/troubleshooting-the-acs-connector.md)
    + Acionadores da Adobe Experience Cloud {#experience-triggers}
-      + [Trabalhar com [!DNL Experience Cloud Triggers]](integrations/using/about-triggers.md)
+      + [Trabalhar com o  [!DNL Experience Cloud Triggers]](integrations/using/about-triggers.md)
       + [Configurar pipeline](integrations/using/configuring-pipeline.md)
       + [Configurar o Adobe I/O para [!DNL Experience Cloud Triggers]](integrations/using/configuring-adobe-io.md)
       + [Configurar eventos para implementação personalizada](integrations/using/events.md)

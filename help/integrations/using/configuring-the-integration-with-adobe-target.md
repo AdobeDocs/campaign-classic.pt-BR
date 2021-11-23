@@ -8,8 +8,8 @@ topic-tags: adobe-target
 exl-id: ae8c680f-52a6-4d00-91cd-44d1c3807546
 source-git-commit: af40fe822c69979a478604595790d4deefd6d5b0
 workflow-type: tm+mt
-source-wordcount: '192'
-ht-degree: 61%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -20,7 +20,7 @@ ht-degree: 61%
 
 >[!CAUTION]
 >
-> Como cliente hospedado ou híbrido, entre em contato com o representante do Adobe para configurar essa integração. As etapas abaixo se aplicam somente a clientes locais.
+> Como cliente hospedado ou híbrido, entre em contato com o seu representante da Adobe para configurar essa integração. As etapas abaixo se aplicam somente a clientes no local.
 
 Essa integração exige:
 
@@ -29,12 +29,12 @@ Essa integração exige:
 
 Para configurar essa integração no Adobe Campaign, siga as etapas abaixo:
 
-1. Instale o **[!UICONTROL Integration with the Adobe Experience Cloud]** pacote integrado. [Saiba mais](../../platform/using/working-with-data-packages.md#importing-packages)
+1. Instale o pacote integrado **[!UICONTROL Integration with the Adobe Experience Cloud]**. [Saiba mais](../../platform/using/working-with-data-packages.md#importing-packages)
 
-   Esse pacote fornece acesso aos ativos compartilhados por meio do Digital Asset Manager.
+   Com este pacote, você tem acesso aos ativos compartilhados por meio do Digital Asset Manager.
 
 1. Ative a conexão pelo IMS (serviço de conexão da Adobe ID) para usar imagens compartilhadas pela Adobe Experience Cloud em seus emails. [Saiba mais](../../integrations/using/about-adobe-id.md)
-1. Navegue até **[!UICONTROL Administration > Platform > Options]** para configurar as opções do servidor e da organização (locatário) para o Adobe Target:
+1. Navegue até **[!UICONTROL Administration > Platform > Options]** para configurar as opções de servidor e organização (Locatário) do Adobe Target: 
 
    ![](assets/tar_options.png)
 

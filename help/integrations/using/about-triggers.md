@@ -7,12 +7,12 @@ content-type: reference
 exl-id: 0e337620-a49f-4e14-8c67-9279d74736f1
 source-git-commit: af40fe822c69979a478604595790d4deefd6d5b0
 workflow-type: tm+mt
-source-wordcount: '228'
-ht-degree: 96%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
-# Trabalhar com acionadores do Campaign e do Experience Cloud{#about-adobe-experience-triggers}
+# Trabalhar com acionadores do Campaign e da Experience Cloud{#about-adobe-experience-triggers}
 
 ![](../../assets/common.svg)
 
