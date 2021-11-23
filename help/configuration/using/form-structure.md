@@ -6,30 +6,30 @@ audience: configuration
 content-type: reference
 topic-tags: input-forms
 exl-id: e61f2b63-06d3-4b8c-867f-1c729176d2da
-source-git-commit: f000cb8bae164c22d1ede15db4e763cf50530674
+source-git-commit: 898353f80a93052cd25088098c9570c2b44ceac4
 workflow-type: tm+mt
-source-wordcount: '2384'
+source-wordcount: '2385'
 ht-degree: 4%
 
 ---
 
 # Estrutura do formulário{#form-structure}
 
-![](../../assets/v7-only.svg)
+![](../../assets/common.svg)
 
 A descrição de um formulário é um documento XML estruturado que está de acordo com a gramática do schema do formulário **xtk:form**.
 
-O documento XML do formulário de entrada deve conter a variável `<form>` elemento raiz com o  **name** e  **namespace** atributos para preencher o nome e o namespace do formulário.
+O documento XML do formulário de entrada deve conter a variável `<form>` elemento raiz com o **name** e **namespace** atributos para preencher o nome e o namespace do formulário.
 
-```
+```xml
 <form name="form_name" namespace="name_space">
-...
+…
 </form>
 ```
 
 Por padrão, um formulário é associado ao schema de dados com o mesmo nome e namespace. Para associar um formulário a um nome diferente, defina a variável **entity-schema** do `<form>` elemento para o nome da chave do schema. Para ilustrar a estrutura de um formulário de entrada, vamos descrever uma interface usando o schema de exemplo &quot;cus:recipient&quot;:
 
-```
+```xml
 <srcSchema name="recipient" namespace="cus">
   <enumeration name="gender" basetype="byte">    
     <value name="unknown" label="Not specified" value="0"/>    
@@ -49,7 +49,7 @@ O formulário de entrada com base no schema de exemplo:
 
 ![](assets/d_ncs_integration_form_exemple1.png)
 
-```
+```xml
 <form name="recipient" namespace="cus">
   <input xpath="@gender"/>
   <input xpath="@birthDate"/>
@@ -76,7 +76,7 @@ Para exibir os controles do exemplo acima em duas colunas:
 
 ![](assets/d_ncs_integration_form_exemple2.png)
 
-```
+```xml
 <form name="recipient" namespace="cus">
   <container colcount="2">
     <input xpath="@gender"/>
@@ -92,7 +92,7 @@ O **colspan** em um controle estende o controle pelo número de colunas inserida
 
 ![](assets/d_ncs_integration_form_exemple3.png)
 
-```
+```xml
 <form name="recipient" namespace="cus">
   <container colcount="2">
     <input xpath="@gender"/>
@@ -106,7 +106,7 @@ Ao preencher a variável **type=&quot;frame&quot;** , o contêiner adiciona um q
 
 ![](assets/d_ncs_integration_form_exemple4.png)
 
-```
+```xml
 <form name="recipient" namespace="cus">
   <container colcount="2" type="frame" label="General">
     <input xpath="@gender"/>
@@ -120,7 +120,7 @@ A **`<static>`** pode ser usado para formatar o formulário de entrada:
 
 ![](assets/d_ncs_integration_form_exemple5.png)
 
-```
+```xml
 <form name="recipient" namespace="cus">
   <static type="separator" colspan="2" label="General"/>
   <input xpath="@gender"/>
@@ -138,11 +138,11 @@ Um texto de ajuda foi adicionado usando o `<static>` com o tipo de ajuda. O cont
 
 Os containeres permitem agrupar um conjunto de controles. Eles são representados pela **`<container>`** elemento. Eles foram usados acima para formatar controles em várias colunas.
 
-O **xpath** em um `<container>` permite simplificar a referência de controles secundários. A referência de controles é então relativa ao pai `<container>` pai.
+O **xpath** em um `<container>` permite simplificar a referência de controles secundários. A referência de controles é então relativa ao pai `<container>` elemento.
 
 Exemplo de um contêiner sem &quot;xpath&quot;:
 
-```
+```xml
 <container colcount="2">
   <input xpath="location/@zipCode"/>
   <input xpath="location/@city"/>
@@ -151,7 +151,7 @@ Exemplo de um contêiner sem &quot;xpath&quot;:
 
 Exemplo com a adição de &quot;xpath&quot; ao elemento chamado &quot;location&quot;:
 
-```
+```xml
 <container colcount="2" xpath="location">
   <input xpath="@zipCode"/>
   <input xpath="@city"/>
@@ -168,7 +168,7 @@ Um contêiner de guia formata dados em páginas que são acessíveis a partir de
 
 ![](assets/d_ncs_integration_form_exemple6.png)
 
-```
+```xml
 <container type="notebook">
   <container colcount="2" label="General">
     <input xpath="@gender"/>
@@ -176,18 +176,19 @@ Um contêiner de guia formata dados em páginas que são acessíveis a partir de
     <input xpath="@email" colspan="2"/>
   </container>
   <container colcount="2" label="Location">
-    ...
+    …
   </container>
 </container>
 ```
 
 O contêiner principal é definido pela variável **type=&quot;notebook&quot;** atributo. As guias são declaradas nos containers secundários e o rótulo das guias é preenchido da variável **label** atributo.
 
+![](assets/d_ncs_integration_form_exemple7.png)
+
 >[!NOTE]
 >
 >A **style=&quot;down|up**(por padrão)**&quot;** força o posicionamento vertical de rótulos de tabulação abaixo ou acima do controle. Este recurso é opcional.
->![](assets/d_ncs_integration_form_exemple7.png)
->`<container style="down" type="notebook">  ... </container>`
+>`<container style="down" type="notebook">  … </container>`
 
 #### Lista de ícones {#icon-list}
 
@@ -195,7 +196,7 @@ Esse contêiner exibe uma barra de ícones vertical que permite selecionar as p�
 
 ![](assets/d_ncs_integration_form_exemple8.png)
 
-```
+```xml
 <container type="iconbox">
   <container colcount="2" label="General" img="xtk:properties.png">
     <input xpath="@gender"/>
@@ -203,7 +204,7 @@ Esse contêiner exibe uma barra de ícones vertical que permite selecionar as p�
     <input xpath="@email" colspan="2"/>
   </container>
   <container colcount="2" label="Location" img="nms:msgfolder.png">
-    ...
+    …
   </container>
 </container>
 ```
@@ -220,12 +221,12 @@ As imagens estão disponíveis no **[!UICONTROL Administration > Configuration >
 
 Este exemplo ilustra a visibilidade dos controles no valor do campo &quot;Gênero&quot;:
 
-```
+```xml
 <container type="visibleGroup" visibleIf="@gender=1">
-  ...
+  …
 </container>
 <container type="visibleGroup" visibleIf="@gender=2">
-  ...
+  …
 </container>
 ```
 
@@ -241,12 +242,12 @@ Exemplos de sintaxe de condição:
 
 Esse contêiner permite ativar ou desativar um conjunto de dados de uma condição dinâmica. Desativar um controle impede que ele seja editado. O exemplo a seguir ilustra a ativação de controles do valor do campo &quot;Gênero&quot;:
 
-```
+```xml
 <container type="enabledGroup" enabledIf="@gender=1">
-  ...
+  …
 </container>
 <container type="enabledGroup" enabledIf="@gender=2">
-  ...
+  …
 </container>
 ```
 
@@ -256,7 +257,7 @@ Um contêiner de ativação é definido pela variável **type=&quot;enabledGroup
 
 Lembre-se de que um link é declarado no schema de dados da seguinte maneira:
 
-```
+```xml
 <element label="Company" name="company" target="cus:company" type="link"/>
 ```
 
@@ -264,7 +265,7 @@ O controle de edição do link em seu formulário de entrada é o seguinte:
 
 ![](assets/d_ncs_integration_form_exemple9.png)
 
-```
+```xml
 <input xpath="company"/>
 ```
 
@@ -280,7 +281,7 @@ O **[!UICONTROL Edit link]** Ícone (lente de aumento) inicia o formulário de e
 
 Você pode restringir a escolha de elementos target adicionando a variável **`<sysfilter>`** elemento da definição do link no formulário de entrada:
 
-```
+```xml
 <input xpath="company">
   <sysFilter>
     <condition expr="[location/@city] =  'Newton"/>
@@ -290,7 +291,7 @@ Você pode restringir a escolha de elementos target adicionando a variável **`<
 
 Também é possível classificar a lista com a variável **`<orderby>`** elemento:
 
-```
+```xml
 <input xpath="company">
   <orderBy>
     <node expr="[location/@zipCode]"/>
@@ -318,9 +319,9 @@ O princípio consiste em exibir a lista de elementos vinculados com carregamento
 
 Exemplo de um link de coleção em um schema:
 
-```
+```xml
 <element label="Events" name="rcpEvent" target="cus:event" type="link" unbound="true">
-...
+…
 </element>
 ```
 
@@ -328,7 +329,7 @@ A lista em seu formulário de entrada:
 
 ![](assets/d_ncs_integration_form_exemple11.png)
 
-```
+```xml
  <input xpath="rcpEvent" type="linklist">
   <input xpath="@label"/>
   <input xpath="@date"/>
@@ -349,7 +350,7 @@ O **[!UICONTROL Detail]** é adicionado automaticamente quando a função **zoom
 
 A filtragem e a classificação podem ser aplicadas quando a lista está sendo carregada:
 
-```
+```xml
  <input xpath="rcpEvent" type="linklist">
   <input xpath="@label"/>
   <input xpath="@date"/>
@@ -370,7 +371,7 @@ A adição de um elemento à lista deve, portanto, permitir que você complete u
 
 Exemplo de uma tabela de relacionamento em um schema:
 
-```
+```xml
 <srcSchema name="subscription" namespace="cus">
   <element name="recipient" type="link" target="cus:recipient" label="Recipient"/>
   <element name="service" type="link" target="cus:service" label="Subscription service"/>
@@ -381,7 +382,7 @@ Para nosso exemplo, começamos com o formulário de entrada do schema &quot;cus:
 
 ![](assets/d_ncs_integration_form_exemple12.png)
 
-```
+```xml
 <input type="linklist" xpath="subscription" xpathChoiceTarget="service" xpathEditTarget="service" zoom="true">
   <input xpath="recipient"/>
   <input xpath="service"/>
@@ -417,7 +418,7 @@ Este controle exibe uma lista de colunas editável com uma barra de ferramentas 
 
 ![](assets/d_ncs_integration_form_exemple13.png)
 
-```
+```xml
 <input xpath="rcpEvent" type="list">
   <input xpath="@label"/>
   <input xpath="@date"/>
@@ -436,7 +437,7 @@ Os botões da barra de ferramentas podem ser alinhados horizontalmente:
 
 ![](assets/d_ncs_integration_form_exemple14.png)
 
-```
+```xml
 <input nolabel="true" toolbarCaption="List of events" type="list" xpath="rcpEvent" zoom="true">
   <input xpath="@label"/>
   <input xpath="@date"/>
@@ -451,7 +452,7 @@ A inserção e a edição dos dados em uma lista podem ser inseridas em um formu
 
 ![](assets/d_ncs_integration_form_exemple15.png)
 
-```
+```xml
 <input nolabel="true" toolbarCaption="List of events" type="list" xpath="rcpEvent" zoom="true" zoomOnAdd="true">
   <input xpath="@label"/>
   <input xpath="@date"/>
@@ -463,7 +464,7 @@ A inserção e a edição dos dados em uma lista podem ser inseridas em um formu
 </input>
 ```
 
-O formulário de edição é preenchido no `<form>`  sob definição de lista. Sua estrutura é idêntica à de um formulário de entrada. O **[!UICONTROL Detail]** é adicionado automaticamente quando a função **zoom=&quot;true&quot;** é concluído na **`<input>`** da lista. Esse atributo permite iniciar o formulário de edição da linha selecionada.
+O formulário de edição é preenchido no `<form>` sob definição de lista. Sua estrutura é idêntica à de um formulário de entrada. O **[!UICONTROL Detail]** é adicionado automaticamente quando a função **zoom=&quot;true&quot;** é concluído na **`<input>`** da lista. Esse atributo permite iniciar o formulário de edição da linha selecionada.
 
 >[!NOTE]
 >
@@ -488,7 +489,7 @@ Exemplo no campo &quot;Gênero&quot;:
 
 ![](assets/d_ncs_integration_form_exemple16.png)
 
-```
+```xml
 <value value="@gender"/>
 <input xpath="@gender" readOnly="true"/>
 ```
@@ -499,7 +500,7 @@ Um botão de opção permite escolher entre várias opções. O **`<input>`** as
 
 Exemplo no campo &quot;Gênero&quot;:
 
-```
+```xml
 <input type="RadioButton" xpath="@gender" checkedValue="0" label="Choice 1"/>
 <input type="RadioButton" xpath="@gender" checkedValue="1" label="Choice 2"/>
 <input type="RadioButton" xpath="@gender" checkedValue="2" label="Choice 3"/>
@@ -511,12 +512,16 @@ Exemplo no campo &quot;Gênero&quot;:
 
 Uma caixa de seleção reflete um estado booleano (selecionado ou não). Por padrão, esse controle é usado por campos &quot;Boolean&quot; (true/false). Uma variável com um valor padrão de 0 ou 1 pode ser associada a esse botão. Esse valor pode ser sobrecarregado por meio da variável **checkValue** atributos.
 
-```
+```xml
 <input xpath="@boolean1"/>
 <input xpath="@field1" type="checkbox" checkedValue="Y"/>
 ```
 
 ![](assets/d_ncs_integration_form_exemple20.png)
+
+## Lista discriminada {#enumeration}
+
+<!-- to be completed -->
 
 ## Edição da hierarquia de navegação {#navigation-hierarchy-edit}
 
@@ -524,7 +529,7 @@ Esse controle cria uma árvore em um conjunto de campos a serem editados.
 
 Os controles a serem editados são agrupados em um **`<container>`** inseridos no **`<input>`** tag do controle de árvore:
 
-```
+```xml
 <input nolabel="true" type="treeEdit">
   <container label="Text fields">
     <input xpath="@text1"/>
@@ -541,9 +546,9 @@ Os controles a serem editados são agrupados em um **`<container>`** inseridos n
 
 ## Campo de expressão {#expression-field}
 
-Um campo de expressão atualiza um campo dinamicamente de uma expressão; o **`<input>`** é usada com uma **xpath** para inserir o caminho do campo a ser atualizado e uma **expr** que contém a expressão de atualização.
+Um campo de expressão atualiza um campo dinamicamente de uma expressão; o **`<input>`** é usada com uma **xpath** para inserir o caminho do campo a ser atualizado e uma **expo** que contém a expressão de atualização.
 
-```
+```xml
 <!-- Example: updating the boolean1 field from the value contained in the field with path /tmp/@flag -->
 <input expr="Iif([/tmp/@flag]=='On', true, false)" type="expr" xpath="@boolean1"/>
 <input expr="[/ignored/@action] == 'FCP'" type="expr" xpath="@launchFCP"/>
@@ -566,21 +571,21 @@ Exemplos de utilização da variável `<set>` tag:
 
 O contexto do formulário pode ser atualizado ao inicializar e fechar o formulário por meio do **`<enter>`** e **`<leave>`** tags.
 
-```
+```xml
 <form name="recipient" namespace="cus">
   <enter>
-    <set...
+    <set…
   </enter>
-  ...
+  …
   <leave>
-    <set...
+    <set…
   </leave>
 </form>
 ```
 
 >[!NOTE]
 >
->O `<enter>`  e  `<leave>`   as tags podem ser usadas na `<container>` de páginas (tipos &quot;bloco de anotações&quot; e &quot;caixa de ícones&quot;).
+>O `<enter>` e `<leave>` as tags podem ser usadas na `<container>` de páginas (tipos &quot;bloco de anotações&quot; e &quot;caixa de ícones&quot;).
 
 ### Idioma da expressão {#expression-language-}
 
@@ -588,7 +593,7 @@ Um idioma macro pode ser usado na definição do formulário para executar teste
 
 O **`<if expr="<expression>" />`** A tag executa as instruções especificadas na tag se a expressão for verificada:
 
-```
+```xml
 <if expr="([/tmp/@test] == 'Test' or @lastName != 'Doe') and @boolean2 == true">
   <set xpath="@boolean1" expr="true"/>
 </if>
@@ -596,7 +601,7 @@ O **`<if expr="<expression>" />`** A tag executa as instruções especificadas n
 
 O **`<check expr="<condition>" />`** combinada com a **`<error>`** impede a validação do formulário e exibe uma mensagem de erro se a condição não for atendida:
 
-```
+```xml
 <leave>
   <check expr="/tmp/@test != ''">
     <error>You must populate the 'Test' field!</error> 
@@ -604,22 +609,24 @@ O **`<check expr="<condition>" />`** combinada com a **`<error>`** impede a vali
 </leave>
 ```
 
+<!-- changer exemple par un exemple plus parlant. cf. vidéo validation 02:27. noter aussi l'attribut required dans l'exemple de la vidéo. -->
+
 ## Assistentes {#wizards}
 
 Um assistente o orienta por um conjunto de etapas de entrada de dados no formulário de páginas. Os dados inseridos são salvos ao validar o formulário.
 
 Um assistente tem a seguinte estrutura:
 
-```
+```xml
 <form type="wizard" name="example" namespace="cus" img="nms:rcpgroup32.png" label="Wizard example" entity-schema="nms:recipient">
   <container title="Title of page 1" desc="Long description of page 1">
     <input xpath="@lastName"/>
     <input xpath="comment"/>
   </container>
   <container title="Title of page 2" desc="Long description of page 2">
-    ...
+    …
   </container>
-  ...
+  …
 </form>
 ```
 
@@ -635,10 +642,10 @@ A execução do método SOAP pode ser iniciada a partir de um método preenchido
 
 O **`<soapcall>`** contém a chamada para o método com os seguintes parâmetros de entrada:
 
-```
+```xml
 <soapCall name="<name>" service="<schema>">
-  <param type="<type>" exprIn="<xpath>"/>  
-  ...
+  <param  type="<type>" exprIn="<xpath>"/>  
+  …
 </soapCall>
 ```
 
@@ -661,12 +668,12 @@ O **exprIn** contém o local dos dados a serem transmitidos como parâmetro.
 
 **Exemplo**:
 
-```
+```xml
 <leave>
   <soapCall name="RegisterGroup" service="nms:recipient">         
-    <param type="DOMElement" exprIn="/tmp/entityList"/>         
-    <param type="DOMElement" exprIn="/tmp/choiceList"/>         
-    <param type="boolean"    exprIn="true"/>       
+    <param  type="DOMElement"    exprIn="/tmp/entityList"/>         
+    <param  type="DOMElement"    exprIn="/tmp/choiceList"/>         
+    <param  type="boolean"       exprIn="true"/>       
   </soapCall>
 </leave>
 ```

@@ -6,10 +6,10 @@ title: Manual do Campaign Classic v7
 user-guide-description: Com o Adobe Campaign, é possível usar dados avançados do cliente para criar, coordenar e fornecer campanhas dinâmicas que os clientes realmente desejam, por meio de email, dispositivos móveis, canais offline e muito mais.
 sub-product: adobe campaign classic
 type: Documentation
-source-git-commit: 93fcb0b2b12b581dadbe4358e72bb883384fbbe6
+source-git-commit: cf4e316e9c9bce467e2bd2bd04097f55b3dbb9c7
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '2571'
+ht-degree: 99%
 
 ---
 
@@ -790,8 +790,8 @@ ht-degree: 0%
       + [Regeneração de esquemas](configuration/using/regenerating-schemas.md)
       + [Exemplos de edição de esquemas](configuration/using/examples-of-schemas-edition.md)
    + Formulários de entrada {#input-forms}
-      + [Identificação de um formulário](configuration/using/identifying-a-form.md)
-      + [Edição de formulários](configuration/using/editing-forms.md)
+      + [Identificar um formulário](configuration/using/identifying-a-form.md)
+      + [Editar formulários](configuration/using/editing-forms.md)
       + [Estrutura do formulário](configuration/using/form-structure.md)
    + API {#api}
       + [Sobre serviços da Web](configuration/using/about-web-services.md)

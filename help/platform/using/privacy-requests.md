@@ -6,10 +6,10 @@ audience: platform
 content-type: reference
 topic-tags: starting-with-adobe-campaign
 exl-id: c7688c2a-f0a7-4c51-a4cf-bf96fe8bf9b6
-source-git-commit: 5d9e2f7d7cea9e6d1243b0e3a790f3990772e603
+source-git-commit: d750e13d3770d3b36b5f4376233d4da458730ed7
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '2420'
+ht-degree: 99%
 
 ---
 
@@ -76,6 +76,10 @@ Em **[!UICONTROL Administration]** > **[!UICONTROL Access Management]** > **[!UI
 Antes de criar solicitações de privacidade, é necessário definir o namespace que será usado. Este é o campo que será usado para identificar o Titular de dados no banco de dados do Adobe Campaign.
 
 Três namespaces estão disponíveis para pronta utilização: email, telefone fixo e celular. Se você precisar de um namespace diferente (um campo personalizado de recipient, por exemplo), poderá criar um novo em **[!UICONTROL Administration]** > **[!UICONTROL Platform]** > **[!UICONTROL Namespaces]**.
+
+>[!NOTE]
+>
+>Para um desempenho ideal, é recomendável usar namespaces prontos para uso.
 
 ## Criação de uma solicitação de privacidade {#create-privacy-request-ui}
 
