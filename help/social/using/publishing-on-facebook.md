@@ -1,19 +1,19 @@
 ---
 product: campaign
-title: Publicação no Facebook
-description: Publicação no Facebook
+title: Publicar no Facebook
+description: Saiba como publicar no Facebook
 audience: social
 content-type: reference
 topic-tags: publishing-on-facebook-twitter
 exl-id: 84d6cb2e-c7f9-43d7-a98c-22613d456193
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: d11c918213e72fe4bf6adb464e516fac19b63d54
 workflow-type: tm+mt
-source-wordcount: '1148'
-ht-degree: 100%
+source-wordcount: '1138'
+ht-degree: 92%
 
 ---
 
-# Publicação no Facebook{#publishing-on-facebook}
+# Publicar no Facebook{#publishing-on-facebook}
 
 ![](../../assets/v7-only.svg)
 
@@ -26,13 +26,13 @@ As limitações a seguir são inerentes ao Facebook.
 * As cadeias de caracteres não devem exceder 1.000 caracteres.
 * HTML não é aceito.
 
-## Criação da entrega {#creating-the-delivery}
+## Criar o delivery {#creating-the-delivery}
 
 Crie um novo delivery usando o template do delivery **[!UICONTROL Publish to a brand page]**.
 
 ![](assets/social_facebook_delivery_001.png)
 
-## Seleção do target principal {#selecting-the-main-target}
+## Selecione o target principal {#selecting-the-main-target}
 
 É necessário selecionar as páginas nas quais você deseja fazer sua publicação.
 
@@ -52,9 +52,9 @@ Crie um novo delivery usando o template do delivery **[!UICONTROL Publish to a b
 
    ![](assets/social_facebook_delivery_013.png)
 
-## Seleção do target da prova {#selecting-the-proof-target}
+## Selecione o target da prova {#selecting-the-proof-target}
 
-A guia **[!UICONTROL Target of the proofs]** permite definir a página do Facebook que você deseja usar para testar as entregas antes de enviá-las. Recomendamos a criação de uma página privada dedicada do Facebook para esse fim. Para obter mais informações sobre como criar uma página privada do Facebook, consulte [Criação de uma página de teste do Facebook](../../social/using/publishing-on-facebook-walls.md#creating-a-test-facebook-page). Para selecionar o target de prova, aplique as mesmas etapas do target principal: [Seleção do target principal](#selecting-the-main-target).
+A guia **[!UICONTROL Target of the proofs]** permite definir a página do Facebook que você deseja usar para testar as entregas antes de enviá-las. Recomendamos a criação de uma página privada dedicada do Facebook para esse fim. Para obter mais informações sobre como criar uma página privada do Facebook, consulte [esta página](../../social/using/publishing-on-facebook-walls.md#creating-a-test-facebook-page). Para selecionar o target de prova, aplique as mesmas etapas do target principal. [Saiba mais](#selecting-the-main-target)
 
 ![](assets/social_facebook_delivery_004.png)
 
@@ -62,7 +62,7 @@ A guia **[!UICONTROL Target of the proofs]** permite definir a página do Facebo
 >
 >Se você estiver usando a mesma página de teste do Facebook para todos os deliveries, é possível salvar o target de prova no nó **[!UICONTROL Publish to a brand page]**, que é acessado pelo nó **[!UICONTROL Resources > Templates > Delivery templates]**. O target de prova será inserido por padrão para cada novo delivery.
 
-## Definição do público-alvo {#defining-the-audience}
+## Definir o público {#defining-the-audience}
 
 Se você quiser usar segmentos locais para refinar o tipo de público autorizado a exibir a publicação, recomendamos que você crie uma página do Facebook por segmento (por exemplo: Adobe Campaign Paris, Adobe Campaign London, etc.).
 
@@ -73,13 +73,13 @@ No entanto, também é possível usar os filtros de público usados pelo Faceboo
 * **[!UICONTROL Cities]**
 * **[!UICONTROL Languages]**
 
->[!IMPORTANT]
+>[!CAUTION]
 >
 >Use essa função com cuidado. Nos relatórios do delivery, o indicador **[!UICONTROL Number of fans]** não levará em conta esses filtros do Facebook.
 >
 >O Facebook pode alterar a lista de filtros de público, bem como seus valores.
 
-## Definição do conteúdo da mensagem {#defining-message-content}
+## Definir o conteúdo da mensagem {#defining-message-content}
 
 Selecione o tipo de publicação usando o menu suspenso **[!UICONTROL Content type]**.
 
@@ -102,7 +102,7 @@ Insira o status da publicação na zona de entrada.
 
 ![](assets/social_facebook_delivery_015.png)
 
-### Publicação de um status com um link {#publishing-a-status-with-a-link}
+### Publicar um status com um link {#publishing-a-status-with-a-link}
 
 Um delivery do tipo de status com um link pode conter texto, imagens e um link. A seção a seguir detalha a simetria entre os campos da tela de edição do delivery e a publicação final no Facebook:
 
@@ -110,7 +110,7 @@ Um delivery do tipo de status com um link pode conter texto, imagens e um link. 
 
 Insira os vários campos:
 
->[!IMPORTANT]
+>[!CAUTION]
 >
 >Todos os URLs devem começar com **&quot;http://&quot;** ou **&quot;https://&quot;**.
 
@@ -131,7 +131,7 @@ Insira os vários campos:
 
 1. No campo **[!UICONTROL Image]**, insira o URL da imagem que será exibida à esquerda da publicação.
 
-   >[!IMPORTANT]
+   >[!CAUTION]
    >
    >A imagem deve ser hospedada em um site público da internet para que o Facebook possa carregá-la.
 
@@ -148,7 +148,7 @@ Esse tipo de conteúdo permite que você publique um link em um vídeo do YouTub
 
 Insira os vários campos:
 
->[!IMPORTANT]
+>[!CAUTION]
 >
 >Todos os URLs devem começar com **&quot;http://&quot;** ou **&quot;https://&quot;**.
 
@@ -175,7 +175,7 @@ Insira os vários campos:
 
 ![](assets/social_facebook_delivery_photos.png)
 
-## Visualização {#previewing}
+## Pré-visualizar {#previewing}
 
 A guia **[!UICONTROL Preview]** permite visualizar a renderização da publicação.
 
@@ -188,9 +188,9 @@ A guia **[!UICONTROL Preview]** permite visualizar a renderização da publicaç
 
 >[!NOTE]
 >
->A visualização pode diferir ligeiramente da publicação final do Facebook. Recomendamos enviar uma prova antes do delivery final para uma renderização exata da publicação. Consulte [Sending the proof](#sending-the-proof).
+>A visualização pode diferir ligeiramente da publicação final do Facebook. Recomendamos enviar uma prova antes do delivery final para uma renderização exata da publicação. [Saiba mais](#sending-the-proof).
 
-## Configuração do rastreamento {#configuring-tracking}
+## Configurar rastreamento {#configuring-tracking}
 
 O rastreamento pode ser exibido nos relatórios do delivery e na guia **[!UICONTROL Edit > Tracking]** do delivery e do serviço.
 
@@ -202,13 +202,13 @@ A configuração de rastreamento é a mesma de um delivery de email. Para obter 
 >
 >No template de delivery **[!UICONTROL Publish to a brand page]**, o rastreamento é ativado por padrão.
 
-## Envio de uma prova {#sending-the-proof}
+## Enviar a prova {#sending-the-proof}
 
-Recomendamos enviar uma prova de sua publicação antes do delivery final para exibir a renderização exata da publicação em uma página de teste privada do Facebook. Para obter mais informações sobre como criar uma página de teste privada do Facebook, consulte [Criação de uma página de teste do Facebook](../../social/using/publishing-on-facebook-walls.md#creating-a-test-facebook-page). As etapas para selecionar a prova do target são detalhadas em [Seleção do target da prova](#selecting-the-proof-target).
+Recomendamos enviar uma prova de sua publicação antes do delivery final para exibir a renderização exata da publicação em uma página de teste privada do Facebook. Para obter mais informações sobre como criar uma página de teste privada do Facebook, consulte [esta página](../../social/using/publishing-on-facebook-walls.md#creating-a-test-facebook-page). As etapas para selecionar a prova do target são detalhadas em [esta seção](#selecting-the-proof-target).
 
 O delivery da prova é idêntico aos deliveries por email. Consulte [esta seção](../../delivery/using/steps-validating-the-delivery.md#sending-a-proof).
 
-## Envio da mensagem {#sending-the-message}
+## Envie a mensagem {#sending-the-message}
 
 1. Depois que o conteúdo for aprovado, clique no botão **[!UICONTROL Send]**.
 1. Selecione **[!UICONTROL Deliver as soon as possible]** e clique no botão **[!UICONTROL Analyze]**.

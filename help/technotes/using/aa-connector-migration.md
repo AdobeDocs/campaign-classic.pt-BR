@@ -3,7 +3,7 @@ product: campaign
 title: Migrar para o Adobe Analytics Connector
 description: Campaign - Perguntas frequentes sobre o conector do Analytics
 exl-id: 5bf61654-3d68-4560-a93f-7a768a2c5be4
-source-git-commit: 18b31ae504e1f1d13980bdf38925b38279b3be8c
+source-git-commit: d11c918213e72fe4bf6adb464e516fac19b63d54
 workflow-type: tm+mt
 source-wordcount: '855'
 ht-degree: 6%
@@ -16,7 +16,7 @@ ht-degree: 6%
 
 A partir da versão 21.1.3 do Campaign Classic v7, o Adobe Analytics Data Connector será descontinuado. [Saiba mais](https://experienceleague.adobe.com/docs/analytics/import/dataconnectors/data-connectors-eol.html)
 
-Em 1º de agosto de 2021, a Adobe Campaign Classic foi removida da interface do usuário herdada dos Data Connectors, no entanto, as integrações existentes do Campaign continuarão a coletar e transmitir dados para o Adobe Analytics até agosto de 2022. Após essa data, a integração deixará de coletar e transmitir dados para o Adobe Analytics.
+Em 1º de agosto de 2021, a Adobe Campaign Classic foi removida da interface do usuário herdada dos Data Connectors, no entanto, as integrações existentes do Campaign continuarão a coletar e transmitir dados para o Adobe Analytics até 17 de agosto de 2022. Após essa data, a integração deixará de coletar e transmitir dados para o Adobe Analytics.
 
 Você **deve implementar** a nova integração do Adobe Analytics Connector no Adobe Exchange, que substitui a integração herdada dos Data Connectors. Para saber mais sobre o Adobe Analytics Connector, consulte [esta página](../../platform/using/adobe-analytics-connector.md).
 
@@ -48,7 +48,7 @@ Saiba como verificar sua versão [nesta seção](../../platform/using/launching-
 
 ## Como atualizar?
 
-Você precisa atualizar para o Campaign 21.1.3 (ou mais) **antes de agosto de 2022**.
+Você precisa atualizar para o Campaign 21.1.3 (ou mais) **antes de 17 de agosto de 2022**.
 
 Como cliente hospedado, o Adobe trabalhará com você para atualizar suas instâncias para a versão mais recente. Você poderá usar [Conector Adobe Analytics](../../platform/using/adobe-analytics-connector.md).
 

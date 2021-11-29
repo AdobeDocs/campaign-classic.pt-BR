@@ -1,19 +1,19 @@
 ---
 product: campaign
-title: Publicação nos murais do Facebook
-description: Publicação nos murais do Facebook
+title: Publicar nos murais do Facebook
+description: Publicar nos murais do Facebook
 audience: social
 content-type: reference
 topic-tags: configuration
 exl-id: 2135a836-245f-406e-b351-c27d38e0f9fd
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: d11c918213e72fe4bf6adb464e516fac19b63d54
 workflow-type: tm+mt
-source-wordcount: '937'
-ht-degree: 100%
+source-wordcount: '903'
+ht-degree: 92%
 
 ---
 
-# Publicação nos murais do Facebook{#publishing-on-facebook-walls}
+# Publicar nos murais do Facebook{#publishing-on-facebook-walls}
 
 ![](../../assets/v7-only.svg)
 
@@ -35,9 +35,9 @@ Comece criando uma conta do Facebook e várias páginas: eles serão utilizados 
 
    ![](assets/social_diagram_fb_external_account.png)
 
-## Criação de uma página de teste do Facebook {#creating-a-test-facebook-page}
+## Criar uma página de teste do Facebook {#creating-a-test-facebook-page}
 
-Recomendamos criar uma página privada do Facebook para fornecer provas de publicação (para obter mais informações, consulte [Envio de prova](../../social/using/publishing-on-facebook.md#sending-the-proof).
+Recomendamos criar uma página privada do Facebook para fornecer provas de publicação (para obter mais informações, consulte [esta seção](../../social/using/publishing-on-facebook.md#sending-the-proof).
 
 1. Faça logon na conta do Facebook utilizada para administrar suas páginas.
 1. Crie uma nova página do Facebook.
@@ -47,14 +47,14 @@ Recomendamos criar uma página privada do Facebook para fornecer provas de publi
 
 ![](assets/social_facebook_test_page.png)
 
-## Criação de um aplicativo do Facebook {#creating-a-facebook-application}
+## Criar um aplicativo do Facebook {#creating-a-facebook-application}
 
 Para que o Adobe Campaign possa publicar nos murais de suas páginas, é necessário criar um aplicativo do Facebook. Para fazer isso, siga as etapas abaixo:
 
 1. Faça logon na conta do Facebook usada para administrar páginas.
 1. Digite o seguinte endereço no navegador: [https://developers.facebook.com/apps](https://developers.facebook.com/apps).
 
-   >[!IMPORTANT]
+   >[!CAUTION]
    >
    >Dependendo do tipo de conta que você tiver, uma ou mais autorizações podem ser necessárias.
    >
@@ -76,13 +76,13 @@ Para que o Adobe Campaign possa publicar nos murais de suas páginas, é necess�
 
    ![](assets/social_create_facebook_app_004.png)
 
-## Delegação de acesso de gravação ao Adobe Campaign {#delegating-write-access-to-adobe-campaign}
+## Delegar acesso de gravação ao Adobe Campaign {#delegating-write-access-to-adobe-campaign}
 
 Para delegar o acesso de gravação ao Adobe Campaign para publicação nos murais de suas páginas, é necessário inserir os parâmetros do aplicativo do Facebook criado anteriormente.
 
 Esta etapa requer o acesso ao console do Adobe Campaign e a um navegador da Internet conectado à conta do Facebook usada na administração da página:
 
->[!IMPORTANT]
+>[!CAUTION]
 >
 >O operador do Adobe Campaign deve ter direitos administrativos para executar essa configuração.
 
@@ -102,7 +102,7 @@ Esta etapa requer o acesso ao console do Adobe Campaign e a um navegador da Inte
 
    ![](assets/social_facebook_external_account_006.png)
 
-   >[!IMPORTANT]
+   >[!CAUTION]
    >
    >Evite o uso do URL inseguro nas circunstância.
 
@@ -121,7 +121,7 @@ Esta etapa requer o acesso ao console do Adobe Campaign e a um navegador da Inte
    >
    >O campo **[!UICONTROL Marketing URL]** é opcional.
 
-1. No console do Adobe Campaign, clique em **[!UICONTROL Request the authorization from the application]**, na parte inferior da guia **[!UICONTROL Connector]**. O fluxo de trabalho **[!UICONTROL Synchronize Facebook pages]** é acionado automaticamente e coleta todas as páginas do Facebook gerenciadas pelo administrador. Para obter mais informações, consulte [Sincronização de páginas do Facebook](#synchronizing-facebook-pages).
+1. No console do Adobe Campaign, clique em **[!UICONTROL Request the authorization from the application]**, na parte inferior da guia **[!UICONTROL Connector]**. O fluxo de trabalho **[!UICONTROL Synchronize Facebook pages]** é acionado automaticamente e coleta todas as páginas do Facebook gerenciadas pelo administrador. [Saiba mais](#synchronizing-facebook-pages).
 
    ![](assets/social_facebook_external_account_004.png)
 
@@ -143,14 +143,16 @@ Esta etapa requer o acesso ao console do Adobe Campaign e a um navegador da Inte
 >
 >Se a conta do Facebook administra várias páginas, basta configurar uma conta externa para publicar em qualquer página da conta do Facebook. Para cada nova conta do Facebook, será necessário criar uma nova conta externa do tipo **[!UICONTROL Routing]**.
 
-O fluxo de trabalho **[!UICONTROL Synchronization of Facebook pages]** sincroniza todas as páginas administradas pela conta do Facebook, para permitir publicar em seu mural diretamente pelo Adobe Campaign. Para obter mais informações, consulte [Sincronização de páginas do Facebook](#synchronizing-facebook-pages).
+O fluxo de trabalho **[!UICONTROL Synchronization of Facebook pages]** sincroniza todas as páginas administradas pela conta do Facebook, para permitir publicar em seu mural diretamente pelo Adobe Campaign. [Saiba mais](#synchronizing-facebook-pages).
 
 ## Sincronização de páginas do Facebook {#synchronizing-facebook-pages}
 
-O fluxo de trabalho **[!UICONTROL Synchronization of Facebook pages]**, que é acessado por meio do nó **[!UICONTROL Administration > Production > Technical workflows > Managing social networks]**, permite sincronizar (no Adobe Campaign) as páginas da conta do Facebook configuradas anteriormente. Por padrão, esse fluxo de trabalho é configurado para ser executado uma vez por dia ou sempre que um administrador clicar em **[!UICONTROL Request an authorization from the application]** na tela de configuração do serviço (consulte [Delegar acesso de gravação ao Adobe Campaign](#delegating-write-access-to-adobe-campaign)).
+O fluxo de trabalho **[!UICONTROL Synchronization of Facebook pages]**, que é acessado por meio do nó **[!UICONTROL Administration > Production > Technical workflows > Managing social networks]**, permite sincronizar (no Adobe Campaign) as páginas da conta do Facebook configuradas anteriormente. Por padrão, esse workflow é configurado para ser executado uma vez por dia ou sempre que um administrador clicar no botão **[!UICONTROL Request an authorization from the application]** na tela de configuração do serviço. [Saiba mais](#delegating-write-access-to-adobe-campaign).
 
-Quando a sincronização estiver concluída, as páginas coletadas aparecerão na pasta de serviço inserida na conta externa (consulte [Delegar acesso de gravação ao Adobe Campaign](#delegating-write-access-to-adobe-campaign)). Por padrão, as páginas são adicionadas à raiz da pasta de serviço do **[!UICONTROL Facebook]** que está disponível por meio do menu **[!UICONTROL Profiles and Targets > Services and subscriptions]**.
+Quando a sincronização estiver concluída, as páginas coletadas aparecerão na pasta de serviço inserida na conta externa. [Saiba mais](#delegating-write-access-to-adobe-campaign)).
+
+Por padrão, as páginas são adicionadas à raiz da pasta de serviço do **[!UICONTROL Facebook]** que está disponível por meio do menu **[!UICONTROL Profiles and Targets > Services and subscriptions]**.
 
 ![](assets/social_facebook_service_002.png)
 
-Agora, é possível publicar nos murais de suas páginas do Facebook diretamente pelo Adobe Campaign. Para obter mais informações, consulte [Publicação no Facebook](#publishing-on-facebook-walls).
+Agora, é possível publicar nos murais de suas páginas do Facebook diretamente pelo Adobe Campaign. [Saiba mais](#publishing-on-facebook-walls).
