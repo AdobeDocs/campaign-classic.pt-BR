@@ -6,10 +6,10 @@ audience: social
 content-type: reference
 topic-tags: configuration
 exl-id: 2135a836-245f-406e-b351-c27d38e0f9fd
-source-git-commit: d11c918213e72fe4bf6adb464e516fac19b63d54
+source-git-commit: b5334de18eca8fc1147ae0c42fe23a6932bf71d2
 workflow-type: tm+mt
 source-wordcount: '903'
-ht-degree: 92%
+ht-degree: 91%
 
 ---
 
@@ -145,7 +145,7 @@ Esta etapa requer o acesso ao console do Adobe Campaign e a um navegador da Inte
 
 O fluxo de trabalho **[!UICONTROL Synchronization of Facebook pages]** sincroniza todas as páginas administradas pela conta do Facebook, para permitir publicar em seu mural diretamente pelo Adobe Campaign. [Saiba mais](#synchronizing-facebook-pages).
 
-## Sincronização de páginas do Facebook {#synchronizing-facebook-pages}
+## Sincronizar páginas do Facebook {#synchronizing-facebook-pages}
 
 O fluxo de trabalho **[!UICONTROL Synchronization of Facebook pages]**, que é acessado por meio do nó **[!UICONTROL Administration > Production > Technical workflows > Managing social networks]**, permite sincronizar (no Adobe Campaign) as páginas da conta do Facebook configuradas anteriormente. Por padrão, esse workflow é configurado para ser executado uma vez por dia ou sempre que um administrador clicar no botão **[!UICONTROL Request an authorization from the application]** na tela de configuração do serviço. [Saiba mais](#delegating-write-access-to-adobe-campaign).
 
