@@ -6,10 +6,10 @@ feature: Overview
 role: User
 level: Beginner
 exl-id: d60d67de-6618-4f3b-be4a-ad7633ab5645
-source-git-commit: 5d9e2f7d7cea9e6d1243b0e3a790f3990772e603
+source-git-commit: f7c4603e389b19c057ee72bb50ed30d03b60f4bc
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '1700'
+ht-degree: 97%
 
 ---
 
@@ -43,6 +43,13 @@ Os clientes são aconselhados a verificar se utilizam o recurso/funcionalidade e
    <td><strong>Recurso</strong></td>
    <td><strong>Substituição</strong></td>
   </tr>
+  <tr>
+  <td>CentOs 8.x (64 bits)<br></td>
+   <td><p>O CentOS Linux 8 atingirá o fim da vida útil (EOL) em 31 de dezembro de 2021. <a href="https://www.centos.org/centos-linux-eol/">Saiba mais</a></p>
+   <p>Se você estiver usando esse sistema operacional, precisará adaptar sua implementação adequadamente. CentOS 7.x (64 bits) e RHEL 8.x/7.x (64 bits) ainda são compatíveis.</p>
+  <p><em>Data de remoção do Target: 31 de dezembro de 2021.</em></p>
+  </td>
+ </tr>
     <tr>
   <td>Conector de dados do Adobe Analytics<br></td>
    <td><p>A partir da versão 21.1.3 do Campaign, o Conector de dados do Adobe Analytics não será mais utilizado.</p>
