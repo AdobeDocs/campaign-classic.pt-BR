@@ -7,9 +7,9 @@ content-type: reference
 topic-tags: orchestrate-campaigns
 exl-id: 1dd3c080-444d-45f8-9562-d2d01a9d2860
 source-git-commit: f000cb8bae164c22d1ede15db4e763cf50530674
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1487'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -69,7 +69,7 @@ Para obter mais informações, consulte [Aprovação de um arquivo de extração
 
 **Etapa 2 - Aprovação da mensagem para o provedor de serviços**
 
-* Depois que o arquivo de extração for aprovado, você poderá gerar a prova do email de notificação do roteador. Essa mensagem de email é construída com base em um template de delivery. Deve ser aprovado.
+* Depois que o arquivo de extração for aprovado, é possível gerar a prova do email de notificação do roteador. Esta mensagem de email é construída com base em um template de delivery. Deve ser aprovado.
 
    >[!NOTE]
    >
