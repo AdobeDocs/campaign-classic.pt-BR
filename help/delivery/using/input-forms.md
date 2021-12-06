@@ -7,9 +7,9 @@ content-type: reference
 topic-tags: content-management
 exl-id: 8ec52c96-44a2-4544-93b6-9ba251510682
 source-git-commit: cf4e316e9c9bce467e2bd2bd04097f55b3dbb9c7
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '826'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -198,4 +198,4 @@ A guia **[!UICONTROL Preview]** permite exibir o formulário de entrada:
 
 ![](assets/d_ncs_content_form13.png)
 
-Leia mais sobre [edição de formulários](../../configuration/using/editing-forms.md) e [estrutura do formulário](../../configuration/using/form-structure.md).
+Leia mais sobre [edição de formulários](../../configuration/using/editing-forms.md) e [estrutura de formulário](../../configuration/using/form-structure.md).
