@@ -7,9 +7,9 @@ content-type: reference
 topic-tags: tasks--resources-and-budgets
 exl-id: 6765e307-915a-44d2-a486-85c64e8ec52e
 source-git-commit: f000cb8bae164c22d1ede15db4e763cf50530674
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2468'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -337,7 +337,7 @@ Quando a aprovação é ativada, um link especial permite aprovar o orçamento d
 
 ![](assets/s_user_cost_mgmt_sample_19.png)
 
-Você pode clicar no link para conceder ou rejeitar a aprovação ou usar o link no e-mail de notificação se a notificação tiver sido ativada para esta campanha.
+É possível clicar no link para conceder ou rejeitar a aprovação, ou usar o link no email de notificação, se a notificação tiver sido ativada para esta campanha.
 
 Quando o orçamento tiver sido aprovado e o delivery for concluído, os custos serão automaticamente carregados por meio de um workflow técnico especial.
 
