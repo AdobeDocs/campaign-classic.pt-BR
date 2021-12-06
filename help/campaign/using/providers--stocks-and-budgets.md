@@ -7,9 +7,9 @@ content-type: reference
 topic-tags: orchestrate-campaigns
 exl-id: c60c4f86-a957-4c44-a0fe-39b6e3f0e5d6
 source-git-commit: f000cb8bae164c22d1ede15db4e763cf50530674
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1902'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -72,7 +72,7 @@ Para criar um template de serviço e definir seu conteúdo, aplique as seguintes
 
    ![](assets/s_ncs_user_supplier_node_create_template.png)
 
-1. Crie as categorias de custo para cada tipo de processo (delivery por mala direta/email/etc.) ou tarefa). Para fazer isso, clique na guia **[!UICONTROL Cost categories]** e, em seguida, no botão **[!UICONTROL Add]** e insira os parâmetros de cada categoria de custo.
+1. Crie as categorias de custo para cada tipo de processo (tarefa ou delivery por mala direta/email/etc.). Para fazer isso, clique na guia **[!UICONTROL Cost categories]** e, em seguida, no botão **[!UICONTROL Add]** e insira os parâmetros de cada categoria de custo.
 
    ![](assets/s_ncs_user_supplier_node_03.png)
 
@@ -161,11 +161,11 @@ Para fazer isso, clique na guia **[!UICONTROL Processes]** para configurar o env
 
 Os serviços estão associados a campanhas via entregas ou tarefas. Os provedores de serviço estão vinculados a templates de delivery para oferecer seus serviços nos deliveries criados por meio desse template.
 
-Quando um serviço é selecionado, as categorias de custo correspondentes ao tipo de delivery (mala direta, email, etc.) são automaticamente indicadas na tabela central, juntamente com as opções de processamento que foram definidas.
+Quando um serviço é selecionado, as categorias de custo correspondentes ao tipo de delivery (mala direta, email, etc.) são automaticamente indicadas na tabela central juntamente com as opções de processamento definidas.
 
 >[!NOTE]
 >
->Se nenhuma categoria de custo for exibida quando um serviço for selecionado, significa que nenhuma categoria de custo foi definida para esse tipo de processo. Por exemplo, para um delivery de email, se nenhuma categoria de custo do tipo **[!UICONTROL Email]** tiver sido definida, nenhuma categoria será exibida, e a seleção do serviço não terá efeito.
+>Se nenhuma categoria de custo for exibida quando um serviço for selecionado, isso significa que nenhuma categoria de custo foi definida para esse tipo de processo. Por exemplo, para um delivery de email, se nenhuma categoria de custo do tipo **[!UICONTROL Email]** tiver sido definida, nenhuma categoria será exibida, e a seleção do serviço não terá efeito.
 
 * Para um delivery de mala direta, você pode selecionar o serviço na janela de configuração.
 
