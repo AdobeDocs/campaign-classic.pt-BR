@@ -7,9 +7,9 @@ content-type: reference
 topic-tags: orchestrate-campaigns
 exl-id: 8cbb2445-f5e4-4a25-ba7e-56e39ca9d3ce
 source-git-commit: f000cb8bae164c22d1ede15db4e763cf50530674
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2434'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -171,7 +171,7 @@ O Adobe Campaign permite configurar processos de aprovação para os principais 
 
 Para remessas diretas de mala direta, os operadores do Adobe Campaign podem exibir o arquivo de extração antes que ele seja enviado ao roteador e, se necessário, podem alterar o formato e reenviar a extração. Consulte [Aprovar um arquivo de extração](#approving-an-extraction-file).
 
-Para cada campanha, você pode aprovar o target, o conteúdo (consulte [Aprovar conteúdo](#approving-content)) e os custos do delivery. Os operadores do Adobe Campaign responsáveis pela aprovação podem ser notificados por email, podendo aceitar ou rejeitar a aprovação por meio do console ou por meio de uma conexão com a web. Consulte [Etapas para aprovar um delivery](#approving-processes).
+Para cada campanha, você pode aprovar o target, o conteúdo (consulte [Aprovar conteúdo](#approving-content)) e os custos do delivery. Os operadores do Adobe Campaign responsáveis pela aprovação podem ser notificados por email, podendo aceitar ou rejeitar a aprovação por meio do console ou por meio de uma conexão com a Web. Consulte [Etapas para aprovar um delivery](#approving-processes).
 
 Quando essas fases de validação estiverem concluídas, o delivery poderá ser iniciado. [Saiba mais](../../campaign/using/marketing-campaign-deliveries.md#starting-a-delivery).
 
@@ -377,6 +377,6 @@ Na data da solicitação de extração, o arquivo de extração é criado, e o s
 
 ![](assets/s_ncs_user_file_extract_to_valid.png)
 
-Você pode visualizar o conteúdo do arquivo extraído (clicando no nome), aprová-lo ou, se necessário, alterar o formato e iniciar novamente a extração utilizando os links no painel.
+É possível visualizar o conteúdo do arquivo extraído (clicando no nome), aprová-lo ou, se necessário, alterar o formato e iniciar novamente a extração utilizando os links no painel.
 
-Depois que o arquivo tiver sido aprovado, você poderá enviar o email de notificação para o roteador. Para obter mais informações, consulte [Iniciar um delivery offline](../../campaign/using/marketing-campaign-deliveries.md#starting-an-offline-delivery).
+Depois que o arquivo for aprovado, você poderá enviar o email de notificação para o roteador. Para obter mais informações, consulte [Iniciar um delivery offline](../../campaign/using/marketing-campaign-deliveries.md#starting-an-offline-delivery).
