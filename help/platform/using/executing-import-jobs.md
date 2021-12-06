@@ -7,9 +7,9 @@ content-type: reference
 topic-tags: importing-and-exporting-data
 exl-id: 05909ea6-2c93-42ff-9142-1dd14fa6fdec
 source-git-commit: f000cb8bae164c22d1ede15db4e763cf50530674
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2955'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -207,7 +207,7 @@ As seguintes opções estão disponíveis para cada campo na tabela em relação
 
 Pelo menos uma chave de reconciliação deve ser preenchida para gerenciar a correção de duplicidade.
 
-Uma chave de reconciliação é um conjunto de campos usados para identificar um registro. Por exemplo, para importar recipients, a chave de reconciliação pode ser o número da conta, o campo &quot;email&quot; ou os campos &quot;Last name, First name, Company&quot; etc.
+Uma chave de reconciliação é um conjunto de campos usados para identificar um registro. Por exemplo, ao importar recipients, a chave de reconciliação pode ser o número da conta, o campo “email” ou os campos “Sobrenome, Nome, Empresa”, etc.
 
 Nesse caso, para descobrir se uma linha de um arquivo corresponde a um destinatário existente no banco de dados, o mecanismo de importação compara os valores do arquivo com aqueles do banco de dados para todos os campos da chave. Quando os campos são específicos de um registro, uma comparação entre os dados de origem e de destino pode ser executada, garantindo a integridade dos dados após a importação. Uma segunda chave de reconciliação pode ser preenchida para a mesma tabela; ela é usada para as linhas cuja primeira chave está vazia.
 
@@ -246,7 +246,7 @@ As opções **[!UICONTROL Reject]** e **[!UICONTROL Ignore]** operam como aprese
 
 ### Em caso de erro {#behavior-in-the-event-of-an-error}
 
-A maioria das operações de transferência de dados gera vários tipos de erros (formato de linha incoerente, endereço de email inválido etc.). Todos os erros e avisos gerados pelo mecanismo de importação são armazenados e vinculados à instância de importação.
+A maioria das operações de transferência de dados gera vários tipos de erros (formato de linha incoerente, endereço de email inválido, etc.). Todos os erros e alertas gerados pelo mecanismo de importação são armazenados e vinculados à instância de importação.
 
 ![](assets/s_ncs_user_import_general_tab.png)
 
