@@ -7,9 +7,9 @@ content-type: reference
 topic-tags: use-cases
 exl-id: 5e77d196-5c71-438e-8dae-10c6a6e4f29c
 source-git-commit: f000cb8bae164c22d1ede15db4e763cf50530674
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '518'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
@@ -93,7 +93,7 @@ A definição de workflows em pastas chamadas por recorrência e classificadas p
 
 A automação do monitoramento reduz a sobrecarga dos recursos e garante que as tarefas sejam agendadas na frequência apropriada.
 
-Você pode criar um workflow de monitoramento para enviar um email sempre que determinadas tarefas falharem ou quando uma tabela crítica for muito grande.
+É possível criar um workflow de monitoramento para enviar um email sempre que determinadas tarefas falharem ou quando uma tabela crítica tornar-se muito grande.
 
 Você pode criar uma exibição para que todos os workflows entre uma área funcional ou todo o sistema sejam monitorados.
 
