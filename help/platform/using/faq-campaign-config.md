@@ -7,9 +7,9 @@ content-type: reference
 topic-tags: starting-with-adobe-campaign
 exl-id: 50bed489-2a0f-4123-a326-3d68c8295662
 source-git-commit: f000cb8bae164c22d1ede15db4e763cf50530674
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '758'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -47,9 +47,9 @@ Além do [Manual de práticas recomendadas de delivery da Adobe](https://experie
 
 ## Como posso implementar a aprovação de conteúdo? {#how-can-i-implement-content-approval-}
 
-O Campaign permite configurar processos de aprovação para as principais etapas da campanha de marketing, em modo colaborativo. Para cada campanha você pode aprovar o target, o conteúdo e os custos do delivery. Os operadores do Adobe Campaign responsáveis pela aprovação podem ser notificados por e-mail e podem aceitar ou rejeitar a aprovação por meio do console ou por meio de uma conexão com a Web.
+O Campaign permite configurar processos de aprovação para as principais etapas da campanha de marketing, em modo colaborativo. Para cada campanha você pode aprovar o target, o conteúdo e os custos do delivery. Os operadores do Adobe Campaign responsáveis pela aprovação podem ser notificados por email, podendo aceitar ou rejeitar a aprovação por meio do console ou de uma conexão com a Web.
 
-[Clique aqui para saber mais](../../campaign/using/marketing-campaign-approval.md#checking-and-approving-deliveries) e descobrir etapas para implementar sua aprovação de entrega de conteúdo no Campaign.
+[Clique aqui para saber mais](../../campaign/using/marketing-campaign-approval.md#checking-and-approving-deliveries) e descobrir as etapas para implementar a aprovação de conteúdo de delivery no Campaign.
 
 ## Como posso acessar dados armazenados em um banco de dados externo? {#how-can-i-access-data-stored-in-an-external-database-}
 
