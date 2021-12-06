@@ -7,9 +7,9 @@ content-type: reference
 topic-tags: web-applications
 exl-id: df58221f-f71b-49d5-a6a1-c81ddff27fdb
 source-git-commit: f000cb8bae164c22d1ede15db4e763cf50530674
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '689'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -46,8 +46,8 @@ Os aplicativos Web no Adobe Campaign oferecem acesso às seguintes funcionalidad
 * Exibição condicional de campos de pesquisa de acordo com as respostas. Para obter mais informações, consulte esta [página](form-rendering.md#defining-fields-conditional-display).
 * Exibição aleatória de perguntas. Para obter mais informações, consulte esta [página](../../surveys/using/building-a-survey.md#adding-questions).
 * Exibição de página condicional. Para obter mais informações, consulte esta [página](defining-web-forms-page-sequencing.md#conditional-page-display).
-* Verificação de informações antes da validação, dependendo do tipo de dados esperado (número, endereço de email, data, etc.) e dos campos obrigatórios. Para obter mais informações, consulte esta [página](form-rendering.md#defining-control-settings).
-* Notificações ou convites por email. Para obter mais informações, consulte esta [página](publishing-a-web-form.md#delivering-a-form-via-email).
+* A verificação de informações antes da validação, dependendo do tipo de dados esperado (número, endereço de email, data, etc.) e dos campos obrigatórios. Para obter mais informações, consulte esta [página](form-rendering.md#defining-control-settings).
+* Convites ou notificações por email. Para obter mais informações, consulte esta [página](publishing-a-web-form.md#delivering-a-form-via-email).
 * Personalização de mensagens de erros e mensagens finais. Para obter mais informações, consulte esta [página](defining-web-forms-properties.md#setting-up-an-error-page).
 * Uso de imagens, vídeos, links de hipertexto, captcha, etc. Para obter mais informações, consulte esta [página](editing-content.md).
 * Monitoramento de respostas em tempo real. Para obter mais informações, consulte esta [página](../../surveys/using/publish--track-and-use-collected-data.md#response-tracking).
