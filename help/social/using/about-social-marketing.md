@@ -1,13 +1,13 @@
 ---
 product: campaign
 title: Sobre marketing social
-description: Saiba como usar o Campaign para interagir com os clientes pelo Facebook e pelo Twitter
+description: Saiba como usar o Campaign para interagir com clientes pelo Facebook e pelo Twitter
 audience: social
 content-type: reference
 topic-tags: introduction
 exl-id: c8fd5f75-9386-42dd-bfb6-8086a86aa324
 source-git-commit: d11c918213e72fe4bf6adb464e516fac19b63d54
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '166'
 ht-degree: 100%
 
