@@ -7,9 +7,9 @@ content-type: reference
 topic-tags: publishing-on-facebook-twitter
 exl-id: 84d6cb2e-c7f9-43d7-a98c-22613d456193
 source-git-commit: b5334de18eca8fc1147ae0c42fe23a6932bf71d2
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1138'
-ht-degree: 91%
+ht-degree: 100%
 
 ---
 
@@ -28,11 +28,11 @@ As limitações a seguir são inerentes ao Facebook.
 
 ## Criar o delivery {#creating-the-delivery}
 
-Crie um novo delivery usando o template do delivery **[!UICONTROL Publish to a brand page]**.
+Crie um novo delivery usando o template de delivery **[!UICONTROL Publish to a brand page]**.
 
 ![](assets/social_facebook_delivery_001.png)
 
-## Selecione o target principal {#selecting-the-main-target}
+## Seleção do público alvo principal {#selecting-the-main-target}
 
 É necessário selecionar as páginas nas quais você deseja fazer sua publicação.
 
@@ -52,9 +52,9 @@ Crie um novo delivery usando o template do delivery **[!UICONTROL Publish to a b
 
    ![](assets/social_facebook_delivery_013.png)
 
-## Selecione o target da prova {#selecting-the-proof-target}
+## Seleção do público alvo da prova {#selecting-the-proof-target}
 
-A guia **[!UICONTROL Target of the proofs]** permite definir a página do Facebook que você deseja usar para testar as entregas antes de enviá-las. Recomendamos a criação de uma página privada dedicada do Facebook para esse fim. Para obter mais informações sobre como criar uma página privada do Facebook, consulte [esta página](../../social/using/publishing-on-facebook-walls.md#creating-a-test-facebook-page). Para selecionar o target de prova, aplique as mesmas etapas do target principal. [Saiba mais](#selecting-the-main-target)
+A guia **[!UICONTROL Target of the proofs]** permite definir a página do Facebook que você deseja usar para testar as entregas antes de enviá-las. Recomendamos a criação de uma página privada dedicada do Facebook para esse fim. Para obter mais informações sobre como criar uma página privada do Facebook, consulte [esta página](../../social/using/publishing-on-facebook-walls.md#creating-a-test-facebook-page). Para selecionar o público alvo da prova, aplique as mesmas etapas do público alvo principal. [Saiba mais](#selecting-the-main-target)
 
 ![](assets/social_facebook_delivery_004.png)
 
@@ -62,7 +62,7 @@ A guia **[!UICONTROL Target of the proofs]** permite definir a página do Facebo
 >
 >Se você estiver usando a mesma página de teste do Facebook para todos os deliveries, é possível salvar o target de prova no nó **[!UICONTROL Publish to a brand page]**, que é acessado pelo nó **[!UICONTROL Resources > Templates > Delivery templates]**. O target de prova será inserido por padrão para cada novo delivery.
 
-## Definir o público {#defining-the-audience}
+## Definir a audiência {#defining-the-audience}
 
 Se você quiser usar segmentos locais para refinar o tipo de público autorizado a exibir a publicação, recomendamos que você crie uma página do Facebook por segmento (por exemplo: Adobe Campaign Paris, Adobe Campaign London, etc.).
 
@@ -102,7 +102,7 @@ Insira o status da publicação na zona de entrada.
 
 ![](assets/social_facebook_delivery_015.png)
 
-### Publicar um status com um link {#publishing-a-status-with-a-link}
+### Publicação de um status com um link {#publishing-a-status-with-a-link}
 
 Um delivery do tipo de status com um link pode conter texto, imagens e um link. A seção a seguir detalha a simetria entre os campos da tela de edição do delivery e a publicação final no Facebook:
 
@@ -175,7 +175,7 @@ Insira os vários campos:
 
 ![](assets/social_facebook_delivery_photos.png)
 
-## Pré-visualizar {#previewing}
+## Pré-visualização {#previewing}
 
 A guia **[!UICONTROL Preview]** permite visualizar a renderização da publicação.
 
@@ -204,7 +204,7 @@ A configuração de rastreamento é a mesma de um delivery de email. Para obter 
 
 ## Enviar a prova {#sending-the-proof}
 
-Recomendamos enviar uma prova de sua publicação antes do delivery final para exibir a renderização exata da publicação em uma página de teste privada do Facebook. Para obter mais informações sobre como criar uma página de teste privada do Facebook, consulte [esta página](../../social/using/publishing-on-facebook-walls.md#creating-a-test-facebook-page). As etapas para selecionar a prova do target são detalhadas em [esta seção](#selecting-the-proof-target).
+Recomendamos enviar uma prova de sua publicação antes da entrega final para exibir a renderização exata da publicação em uma página de teste privada do Facebook. Para obter mais informações sobre como criar uma página de teste privada do Facebook, consulte [esta página](../../social/using/publishing-on-facebook-walls.md#creating-a-test-facebook-page). As etapas para selecionar a prova do público alvo são detalhadas [nesta seção](#selecting-the-proof-target).
 
 O delivery da prova é idêntico aos deliveries por email. Consulte [esta seção](../../delivery/using/steps-validating-the-delivery.md#sending-a-proof).
 
