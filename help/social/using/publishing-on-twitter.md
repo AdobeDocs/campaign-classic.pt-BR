@@ -7,9 +7,9 @@ content-type: reference
 topic-tags: publishing-on-facebook-twitter
 exl-id: e030c029-d1ee-4749-94e3-6bdfc8d89a34
 source-git-commit: d11c918213e72fe4bf6adb464e516fac19b63d54
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '923'
-ht-degree: 88%
+ht-degree: 100%
 
 ---
 
@@ -34,7 +34,7 @@ Crie um novo delivery com base no template de delivery **[!UICONTROL Tweet (twit
 
 ![](assets/social_twitter_delivery_001.png)
 
-### Selecione o target principal {#selecting-the-main-target}
+### Seleção do público alvo principal {#selecting-the-main-target}
 
 Selecione as contas para as quais deseja enviar tweets.
 
@@ -54,9 +54,9 @@ Selecione as contas para as quais deseja enviar tweets.
 
    ![](assets/social_twitter_delivery_011.png)
 
-### Selecionar o target da prova {#selecting-the-target-of-the-proof}
+### Selecionar o público alvo da prova {#selecting-the-target-of-the-proof}
 
-A guia **[!UICONTROL Target of the proofs]** permite definir a conta do Twitter a ser usada para deliveries de teste antes do delivery final. Portanto, recomendamos que você crie uma conta privada do Twitter dedicada ao envio de provas. Para obter mais informações sobre como criar uma conta privada do Twitter, consulte [esta seção](../../social/using/configuring-publishing-on-twitter.md#creating-a-test-account-on-twitter). As etapas para selecionar o target de prova são as mesmas que para selecionar o target principal. Consulte [esta seção](../../social/using/configuring-publishing-on-twitter.md#creating-a-test-account-on-twitter).
+A guia **[!UICONTROL Target of the proofs]** permite definir a conta do Twitter a ser usada para deliveries de teste antes do delivery final. Portanto, recomendamos que você crie uma conta privada do Twitter dedicada para enviar provas. Para obter mais informações sobre como criar uma conta privada do Twitter, consulte [esta seção](../../social/using/configuring-publishing-on-twitter.md#creating-a-test-account-on-twitter). As etapas para selecionar o público alvo da prova são as mesmas para selecionar o público alvo principal. Consulte [esta seção](../../social/using/configuring-publishing-on-twitter.md#creating-a-test-account-on-twitter).
 
 ![](assets/social_twitter_delivery_004.png)
 
@@ -70,7 +70,7 @@ Digite o conteúdo do tweet na guia **[!UICONTROL Content]**.
 
 ![](assets/social_twitter_delivery_005.png)
 
-### Visualizar a mensagem {#viewing-the-preview}
+### Pré-visualizar a mensagem {#viewing-the-preview}
 
 A guia **[!UICONTROL Preview]** permite visualizar a renderização do tweet.
 
@@ -85,7 +85,7 @@ A guia **[!UICONTROL Preview]** permite visualizar a renderização do tweet.
 >
 >A visualização pode diferir levemente do tweet final. É recomendado enviar uma prova antes do delivery final para visualizar uma renderização exata do tweet. Consulte [esta seção](#sending-the-proof).
 
-### Configurar rastreamento {#configuring-tracking}
+### Configurar o rastreamento {#configuring-tracking}
 
 O rastreamento pode ser exibido nos relatórios do delivery e na guia **[!UICONTROL Edit > Tracking]** do delivery e do serviço.
 
@@ -101,11 +101,11 @@ A configuração de rastreamento é a mesma de um delivery de email. Para obter 
 
 ### Enviar a prova {#sending-the-proof}
 
-Recomendamos enviar uma prova da sua publicação antes do delivery final para obter uma renderização exata da publicação em uma página de teste privada do Twitter. Para obter mais informações sobre como criar uma conta privada do Twitter, consulte [esta seção](../../social/using/configuring-publishing-on-twitter.md#creating-a-test-account-on-twitter). As etapas para selecionar o target da prova são detalhadas em [esta seção](#selecting-the-target-of-the-proof).
+Recomendamos enviar uma prova da sua publicação antes da entrega final para obter uma renderização exata da publicação em uma página de teste privada do Twitter. Para obter mais informações sobre como criar uma conta privada no Twitter, consulte [esta seção](../../social/using/configuring-publishing-on-twitter.md#creating-a-test-account-on-twitter). As etapas para selecionar o público alvo da prova são detalhadas [nesta seção](#selecting-the-target-of-the-proof).
 
 O delivery da prova é idêntico aos deliveries por email. Consulte [esta seção](../../delivery/using/steps-validating-the-delivery.md#sending-a-proof).
 
-### Envie a mensagem {#sending-the-message}
+### Enviar a mensagem {#sending-the-message}
 
 1. Depois que o conteúdo for aprovado, clique no botão **[!UICONTROL Send]**.
 1. Selecione **[!UICONTROL Deliver as soon as possible]** e clique no botão **[!UICONTROL Analyze]**.
@@ -121,11 +121,11 @@ O delivery da prova é idêntico aos deliveries por email. Consulte [esta seçã
 
 ![](assets/social_facebook_delivery_016.png)
 
-## Enviar mensagens diretas aos assinantes {#sending-direct-messages-to-subscribers}
+## Enviar mensagens diretas aos inscritos {#sending-direct-messages-to-subscribers}
 
 ### Princípio operacional {#operating-principle}
 
-O **[!UICONTROL Synchronize Twitter accounts]** workflow (consulte [Saiba mais](../../social/using/configuring-publishing-on-twitter.md#synchronizing-twitter-accounts)) recupera a lista de assinantes do Twitter para que você possa enviar mensagens diretas a eles. Os seguidores recuperados são armazenados em uma tabela específica: a tabela de visitantes. Para exibir a lista de seguidores do Twitter, vá para o nó **[!UICONTROL Profiles and Targets > Visitors]**.
+O fluxo de trabalho **[!UICONTROL Synchronize Twitter accounts]** (consulte [Saiba mais](../../social/using/configuring-publishing-on-twitter.md#synchronizing-twitter-accounts)) recupera a lista de assinantes do Twitter para que você possa enviar mensagens diretas. Os seguidores recuperados são armazenados em uma tabela específica: a tabela de visitantes. Para exibir a lista de seguidores do Twitter, vá para o nó **[!UICONTROL Profiles and Targets > Visitors]**.
 
 ![](assets/social_twitter_visitors_001.png)
 
@@ -158,7 +158,7 @@ Crie um novo delivery com base no template de delivery **[!UICONTROL Tweet (Dire
 
 ![](assets/social_twitter_delivery_010.png)
 
-### Selecione o target principal {#selecting-the-main-target-1}
+### Seleção do público alvo principal {#selecting-the-main-target-1}
 
 Selecione os seguidores para os quais deseja enviar a mensagem direta.
 
@@ -184,7 +184,7 @@ Selecione os seguidores para os quais deseja enviar a mensagem direta.
 
       ![](assets/social_twitter_delivery_018.png)
 
-### Selecionar o target da prova {#selecting-the-target-of-the-proof-1}
+### Selecionar o público alvo da prova {#selecting-the-target-of-the-proof-1}
 
 A guia **[!UICONTROL Target of the proofs]** permite selecionar o seguidor que receberá a prova da mensagem direta. O processo de seleção é o mesmo que para o target principal. Consulte [Seleção do target principal](#selecting-the-main-target).
 
