@@ -7,9 +7,9 @@ content-type: reference
 topic-tags: configuration
 exl-id: 2d2a6e32-587d-4a7b-ba1c-d9140da53f64
 source-git-commit: d11c918213e72fe4bf6adb464e516fac19b63d54
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '706'
-ht-degree: 63%
+ht-degree: 100%
 
 ---
 
@@ -37,8 +37,8 @@ Para criar uma conta do Twitter, acesse [https://twitter.com](https://twitter.co
 Criar uma conta privada do Twitter que pode ser usada para enviar [provas de tweet](../../social/using/publishing-on-twitter.md#sending-the-proof). Para criar uma conta privada do Twitter, siga as etapas abaixo:
 
 1. Crie uma nova conta do Twitter.
-1. Acessar a conta  **[!UICONTROL Settings]**.
-1. Navegue até **[!UICONTROL Privacy & Safety]** e **[!UICONTROL Audience and Tagging]** e verifique a **[!UICONTROL Protect your Tweets]** opção. Seus tweets e outras informações de conta são visíveis apenas para as pessoas que seguem você.
+1. Acesse as **[!UICONTROL Settings]** da conta.
+1. Navegue até **[!UICONTROL Privacy & Safety]** e **[!UICONTROL Audience and Tagging]** e marque a opção **[!UICONTROL Protect your Tweets]**. Seus tweets e outras informações da conta são visíveis apenas para as pessoas que seguem você.
 
 ![](assets/social_twitter_test_page.png)
 
@@ -47,7 +47,7 @@ Criar uma conta privada do Twitter que pode ser usada para enviar [provas de twe
 Para que o Adobe Campaign possa enviar tweets para suas contas do Twitter, é necessário criar um aplicativo do Twitter por conta do Twitter. Para fazer isso, siga as etapas abaixo:
 
 1. Faça logon em sua conta do Twitter.
-1. Digite o seguinte endereço no navegador da Internet: [https://developer.twitter.com/en/apps](https://developer.twitter.com/en/apps).
+1. Digite o seguinte endereço no seu navegador de internet: [https://developer.twitter.com/en/apps](https://developer.twitter.com/en/apps).
 1. Em seguida, clique no botão **[!UICONTROL Create an App]** à direita.
 
    ![](assets/social_create_twitter_app_001.png)
@@ -58,19 +58,19 @@ Para que o Adobe Campaign possa enviar tweets para suas contas do Twitter, é ne
 
    ![](assets/social_create_twitter_app_002.png)
 
-## Delegar acesso de gravação ao Adobe Campaign {#delegating-write-access-to-adobe-campaign}
+## Delegação de acesso de gravação ao Adobe Campaign {#delegating-write-access-to-adobe-campaign}
 
 Para cada aplicativo do , é necessário criar um serviço tipo **[!UICONTROL Twitter]** Twitter diferente que incluirá as configurações do aplicativo.
 
 Esta etapa requer acesso simultâneo ao console do Adobe Campaign e um navegador da Internet conectado à sua conta do Twitter:
 
-* em **Twitter**: from [esta página](https://developer.twitter.com/en/portal/projects-and-apps), selecione o aplicativo criado anteriormente e edite o **Permissões do aplicativo**.
+* No **Twitter**: nesta [página](https://developer.twitter.com/en/portal/projects-and-apps), selecione o aplicativo criado anteriormente e edite as **Permissões do aplicativo**.
 
    ![](assets/social_twitter_service_002.png)
 
-   Edite o **Chaves e tokens** para acessar os detalhes do aplicativo.
+   Edite a guia **Chaves e tokens** para acessar os detalhes do aplicativo.
 
-* em **Adobe Campaign**: vá para a **[!UICONTROL Profiles and targets]** clique no botão **[!UICONTROL Services and Subscriptions]** e clique no link **[!UICONTROL Create]** botão.
+* No **Adobe Campaign**: acesse a guia **[!UICONTROL Profiles and targets]**, clique no link **[!UICONTROL Services and Subscriptions]** e no botão **[!UICONTROL Create]**.
 
    ![](assets/social_twitter_service_007.png)
 
@@ -91,21 +91,21 @@ Esta etapa requer acesso simultâneo ao console do Adobe Campaign e um navegador
    >O **[!UICONTROL Internal name]** do serviço deve ser idêntico ao nome da conta do Twitter. Para garantir que não haja erros de entrada, execute as etapas a seguir.
 
    * Clique no botão **[!UICONTROL Save]**.
-   * Na visão geral dos serviços, clique no serviço Twitter que acabou de criar.
+   * Na visão geral dos serviços, clique no serviço do Twitter que você acabou de criar.
 
    <!-- * Select the **[!UICONTROL Twitter page]** tab. The Twitter account should be displayed. 
     
       ![](assets/social_twitter_service_010.png)-->
 
-1. No **[!UICONTROL Visitor folder]** selecione a pasta na qual os seguidores serão criados. Para obter mais informações, consulte [esta seção](../../social/using/publishing-on-twitter.md#operating-principle). Por padrão, os seguidores são salvos no **[!UICONTROL Visitors]** pasta.
+1. No campo **[!UICONTROL Visitor folder]**, selecione a pasta na qual os seguidores serão criados. Para obter mais informações, consulte [esta seção](../../social/using/publishing-on-twitter.md#operating-principle). Por padrão, os seguidores são salvos na pasta **[!UICONTROL Visitors]**.
 
    ![](assets/social_twitter_service_010_b.png)
 
-1. No Twitter, copie o conteúdo da variável **[!UICONTROL Consumer Key (API Key)]** e **[!UICONTROL Consumer Secret (API Secret)]** e cole-os no **[!UICONTROL Consumer key]** e **[!UICONTROL Consumer secret]** campos do console do cliente do Campaign.
+1. No Twitter, copie o conteúdo dos campos **[!UICONTROL Consumer Key (API Key)]** e **[!UICONTROL Consumer Secret (API Secret)]** e cole-o nos campos **[!UICONTROL Consumer key]** e **[!UICONTROL Consumer secret]** do console do cliente do Campaign.
 
    ![](assets/social_twitter_service_012.png)
 
-1. No Twitter, copie o conteúdo da variável **[!UICONTROL Access Token]** e **[!UICONTROL Access Token Secret]** e cole-os no **[!UICONTROL Access token]** e **[!UICONTROL Access token secret]** campos do console do cliente do Campaign.
+1. No Twitter, copie o conteúdo dos campos **[!UICONTROL Access Token]** e **[!UICONTROL Access Token Secret]** e cole-o nos campos **[!UICONTROL Access token]** e **[!UICONTROL Access token secret]** do console do cliente do Campaign.
 
    ![](assets/social_twitter_service_013.png)
 
@@ -115,20 +115,20 @@ Esta etapa requer acesso simultâneo ao console do Adobe Campaign e um navegador
 
 >[!NOTE]
 >
->Você deve criar um **[!UICONTROL Twitter]** serviço por aplicativo Twitter.
+>É necessário criar um serviço do **[!UICONTROL Twitter]** por aplicativo do Twitter.
 
-O workflow **[!UICONTROL Twitter account Synchronization]** sincroniza as contas do Twitter no Adobe Campaign. Para obter mais informações, consulte [esta página](../../social/using/publishing-on-facebook-walls.md#synchronizing-facebook-pages).
+O fluxo de trabalho **[!UICONTROL Twitter account Synchronization]** sincroniza as contas do Twitter no Adobe Campaign. Para obter mais informações, consulte [esta página](../../social/using/publishing-on-facebook-walls.md#synchronizing-facebook-pages).
 
 ## Sincronizar contas do Twitter {#synchronizing-twitter-accounts}
 
 >[!IMPORTANT]
 >
->Para que o workflow recupere a lista de inscritos do Twitter, a caixa **[!UICONTROL Twitter account synchronization]** deve ser marcada na seção de edição do serviço vinculado à conta. Para obter mais informações, consulte [esta seção](#delegating-write-access-to-adobe-campaign).
+>Para que o fluxo de trabalho recupere a lista de inscritos do Twitter, a caixa **[!UICONTROL Twitter account synchronization]** deve ser marcada na seção de edição do serviço vinculado à conta. Para obter mais informações, consulte [esta seção](#delegating-write-access-to-adobe-campaign).
 
-O workflow **[!UICONTROL Twitter account synchronization]**, acessado pelo nó **[!UICONTROL Administration > Production > Technical workflows > Managing social networks]**, permite sincronizar as contas do Twitter configuradas anteriormente com o Adobe Campaign. Por padrão, esse workflow é acionado todas as quintas-feiras às 7:30 am.
+O workflow **[!UICONTROL Twitter account synchronization]**, acessado pelo nó **[!UICONTROL Administration > Production > Technical workflows > Managing social networks]**, permite sincronizar as contas do Twitter configuradas anteriormente com o Adobe Campaign. Por padrão, esse fluxo de trabalho é acionado todas as quintas-feiras às 7h30.
 
 >[!NOTE]
 >
->Você pode iniciar o workflow a qualquer momento executando o processamento antecipado da tarefa. Também é possível editar o scheduler para alterar a frequência de acionamento do workflow. Para saber mais sobre o scheduler, consulte [esta seção](../../workflow/using/scheduler.md).
+>Você pode iniciar o fluxo de trabalho a qualquer momento executando o processamento antecipado da tarefa. Também é possível editar o scheduler para alterar a frequência de acionamento do workflow. Para saber mais sobre o scheduler, consulte [esta seção](../../workflow/using/scheduler.md).
 
 Agora é possível enviar tweets para suas contas do Twitter e mensagens diretas para seus seguidores. Para obter mais informações, consulte [esta página](../../social/using/publishing-on-twitter.md).
