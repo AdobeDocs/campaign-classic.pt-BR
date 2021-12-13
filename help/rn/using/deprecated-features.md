@@ -7,9 +7,9 @@ role: User
 level: Beginner
 exl-id: d60d67de-6618-4f3b-be4a-ad7633ab5645
 source-git-commit: f7c4603e389b19c057ee72bb50ed30d03b60f4bc
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1700'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -46,7 +46,7 @@ Os clientes são aconselhados a verificar se utilizam o recurso/funcionalidade e
   <tr>
   <td>CentOs 8.x (64 bits)<br></td>
    <td><p>O CentOS Linux 8 atingirá o fim da vida útil (EOL) em 31 de dezembro de 2021. <a href="https://www.centos.org/centos-linux-eol/">Saiba mais</a></p>
-   <p>Se você estiver usando esse sistema operacional, precisará adaptar sua implementação adequadamente. CentOS 7.x (64 bits) e RHEL 8.x/7.x (64 bits) ainda são compatíveis.</p>
+   <p>Se estiver usando este sistema operacional, precisará adaptar sua implementação adequadamente. O CentOS 7.x (64 bits) e o RHEL 8.x/7.x (64 bits) ainda são compatíveis.</p>
   <p><em>Data de remoção do Target: 31 de dezembro de 2021.</em></p>
   </td>
  </tr>
