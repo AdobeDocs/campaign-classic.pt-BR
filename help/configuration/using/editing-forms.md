@@ -6,9 +6,9 @@ audience: configuration
 content-type: reference
 topic-tags: input-forms
 exl-id: 24604dc9-f675-4e37-a848-f1911be84f3e
-source-git-commit: 49a98ec82b1d62f3af19260888da8eb24e460938
+source-git-commit: 42717f3ef3bcda4108dad6a4c0ece752ada579a2
 workflow-type: tm+mt
-source-wordcount: '1646'
+source-wordcount: '1647'
 ht-degree: 2%
 
 ---
@@ -322,7 +322,7 @@ Para alterar o tipo de formulário existente para `iconbox`siga estas etapas:
       ```
    Como alternativa, remova o `type="frame"` do atributo existente `<container>` elementos.
 
-### Crie um `notebook` formulário
+### Criar um formulário de bloco de notas
 
 Use o `notebook` tipo de formulário para mostrar guias na parte superior do formulário, que levam os usuários para páginas diferentes.
 
