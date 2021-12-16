@@ -6,9 +6,9 @@ audience: configuration
 content-type: reference
 topic-tags: input-forms
 exl-id: 24604dc9-f675-4e37-a848-f1911be84f3e
-source-git-commit: 0d132f56e7888ad810e309b97b9337ec56fe1ee0
+source-git-commit: c08a4b3540da6370584e32e13723bee352402914
 workflow-type: tm+mt
-source-wordcount: '1143'
+source-wordcount: '1118'
 ht-degree: 2%
 
 ---
@@ -407,12 +407,5 @@ Como resultado, a variável **Geral** a página do formulário externo mostra a 
 ## Modificar um formulário de entrada de fábrica {#modify-factory-form}
 
 Para modificar um formulário de fábrica, siga estas etapas:
-
-1. Como opção, estenda o schema de dados relacionado:
-
-   1. No menu , escolha **[!UICONTROL Administration]** > **[!UICONTROL Configuration]** > **[!UICONTROL Data schemas]**.
-   1. Selecione um schema de dados e estenda-o. Por exemplo, é possível adicionar campos. [Leia mais](extending-a-schema.md).
-
-
 
 
