@@ -6,10 +6,10 @@ audience: configuration
 content-type: reference
 topic-tags: input-forms
 exl-id: 24604dc9-f675-4e37-a848-f1911be84f3e
-source-git-commit: f35988634f732591abdbed9edc123924c4583f5a
+source-git-commit: 1dfc1b8e9d0e4405b6a2bb6f1a90a04abb4173e5
 workflow-type: tm+mt
-source-wordcount: '1105'
-ht-degree: 2%
+source-wordcount: '945'
+ht-degree: 3%
 
 ---
 
@@ -360,49 +360,6 @@ Para alterar o tipo de formulário existente para `notebook`siga estas etapas:
    ```
 
    Como alternativa, remova o `type="frame"` do atributo existente `<container>` elementos.
-
-### Aninhar formulários {#nest-forms}
-
-É possível aninhar formulários em outros formulários. Por exemplo, é possível aninhar formulários de notebook em formulários de caixa de ícones.
-
-O nível de aninhamento controla a navegação. Os usuários podem detalhar os subformulários.
-
-Para aninhar um formulário em outro formulário, insira um `<container>` e defina o `type` para o tipo de formulário. Para o formulário de nível superior, é possível definir o tipo de formulário em um contêiner externo ou no `<form>` elemento.
-
-### Exemplo
-
-Este exemplo mostra um formulário complexo:
-
-* O formulário de nível superior é um formulário iconbox. Este formulário consiste em dois contêineres rotulados **Geral** e **Detalhes**.
-
-   Como resultado, o formulário externo mostra a variável **Geral** e **Detalhes** páginas no nível superior. Para acessar essas páginas, os usuários clicam nos ícones à esquerda do formulário.
-
-* O subformulário é um formulário de bloco de aninhado dentro do **Geral** contêiner. O subformulário consiste em dois contêineres rotulados **Nome** e **Contato**.
-
-```xml
-<form _cs="Profile (nms)" entitySchema="xtk:form" img="xtk:form.png" label="Profile" name="profile" namespace="nms" xtkschema="xtk:form">
-  <container type="iconbox">
-    <container img="ncm:general.png" label="General">
-      <container type="notebook">
-        <container label="Name">
-          <input xpath="@firstName"/>
-          <input xpath="@lastName"/>
-        </container>
-        <container label="Contact">
-          <input xpath="@email"/>
-        </container>
-      </container>
-    </container>
-    <container img="ncm:detail.png" label="Details">
-      <input xpath="@birthDate"/>
-    </container>
-  </container>
-</form>
-```
-
-Como resultado, a variável **Geral** a página do formulário externo mostra a variável **Nome** e **Contato** guias.
-
-![](assets/nested_forms_preview.png)
 
 
 
