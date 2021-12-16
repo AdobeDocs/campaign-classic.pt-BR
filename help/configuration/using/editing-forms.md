@@ -6,9 +6,9 @@ audience: configuration
 content-type: reference
 topic-tags: input-forms
 exl-id: 24604dc9-f675-4e37-a848-f1911be84f3e
-source-git-commit: 214f6874f87fce5518651f6ff818e99d5edea7e0
+source-git-commit: daecbdecde0b80b47c113acc80618aee314c5434
 workflow-type: tm+mt
-source-wordcount: '1105'
+source-wordcount: '1698'
 ht-degree: 2%
 
 ---
@@ -403,3 +403,150 @@ Este exemplo mostra um formulário complexo:
 Como resultado, a variável **Geral** a página do formulário externo mostra a variável **Nome** e **Contato** guias.
 
 ![](assets/nested_forms_preview.png)
+
+Para aninhar um formulário em outro formulário, insira um `<container>` e defina o `type` para o tipo de formulário. Para o formulário de nível superior, é possível definir o tipo de formulário em um contêiner externo ou no `<form>` elemento.
+
+### Exemplo
+
+Este exemplo mostra um formulário complexo:
+
+* O formulário de nível superior é um formulário iconbox. Este formulário consiste em dois contêineres rotulados **Geral** e **Detalhes**.
+
+   Como resultado, o formulário externo mostra a variável **Geral** e **Detalhes** páginas no nível superior. Para acessar essas páginas, os usuários clicam nos ícones à esquerda do formulário.
+
+* O subformulário é um formulário de bloco de aninhado dentro do **Geral** contêiner. O subformulário consiste em dois contêineres rotulados **Nome** e **Contato**.
+
+```xml
+<form _cs="Profile (nms)" entitySchema="xtk:form" img="xtk:form.png" label="Profile" name="profile" namespace="nms" xtkschema="xtk:form">
+  <container type="iconbox">
+    <container img="ncm:general.png" label="General">
+      <container type="notebook">
+        <container label="Name">
+          <input xpath="@firstName"/>
+          <input xpath="@lastName"/>
+        </container>
+        <container label="Contact">
+          <input xpath="@email"/>
+        </container>
+      </container>
+    </container>
+    <container img="ncm:detail.png" label="Details">
+      <input xpath="@birthDate"/>
+    </container>
+  </container>
+</form>
+```
+
+Como resultado, a variável **Geral** a página do formulário externo mostra a variável **Nome** e **Contato** guias.
+
+![](assets/nested_forms_preview.png)
+
+
+
+## Modificar um formulário de entrada de fábrica {#modify-factory-form}
+
+Para modificar um formulário de fábrica, siga estas etapas:
+
+1. Modifique o formulário de entrada de fábrica:
+
+   1. No menu , escolha **[!UICONTROL Administration]** > **[!UICONTROL Configuration]** > **[!UICONTROL Input forms]**.
+   1. Selecione um formulário de entrada e o modifique.
+
+   Você pode estender esquemas de dados de fábrica, mas não pode estender formulários de entrada de fábrica. Recomendamos que você modifique os formulários de entrada de fábrica diretamente sem recriá-los. Durante as atualizações de software, suas modificações nos formulários de entrada de fábrica são combinadas com as atualizações. Se a mesclagem automática falhar, você poderá resolver os conflitos. [Leia mais](../../production/using/upgrading.md#resolving-conflicts).
+
+   Por exemplo, se você estender um schema de fábrica com um campo adicional, poderá adicionar esse campo ao formulário de fábrica relacionado.
+
+## Validar formulários {#validate-forms}
+
+É possível incluir controles de validação em formulários.
+
+### Conceder acesso somente leitura a campos
+
+Para conceder acesso somente leitura a um campo, use o `readOnly="true"` atributo. Por exemplo, talvez você queira mostrar a chave primária de um registro, mas com acesso somente leitura. [Leia mais](form-structure.md#non-editable-fields).
+
+Neste exemplo, a chave primária (`iRecipientId`do `nms:recipient` O schema é exibido no acesso somente leitura:
+
+```xml
+<value xpath="@iRecipientId" readOnly="true"/>
+```
+
+### Verificar campos obrigatórios
+
+Você pode verificar as informações obrigatórias:
+
+* Use o `required="true"` para os campos obrigatórios.
+* Use o `<leave>` para verificar esses campos e mostrar mensagens de erro.
+
+Neste exemplo, o endereço de email é obrigatório e uma mensagem de erro é exibida se o usuário não tiver fornecido essas informações:
+
+```xml
+<input xpath="@email" required="true"/>
+<leave>
+  <check expr="@email!=''">
+    <error>The email address is required.</error>
+  </check>
+</leave>
+```
+
+Leia mais sobre [campos de expressão](form-structure.md#expression-field) e [contexto do formulário](form-structure.md#context-of-forms).
+
+### Validar valores
+
+Você pode usar chamadas SOAP JavaScript para validar dados de formulário no Console. Use essas chamadas para validação complexa, por exemplo, para verificar um valor em relação a uma lista de valores autorizados. [Leia mais](form-structure.md#soap-methods).
+
+1. Crie uma função de validação em um arquivo JS.
+
+   Exemplo:
+
+   ```js
+   function nms_recipient_checkValue(value)
+   {
+     logInfo("checking value " + value)
+     if (…)
+     {
+       logError("Value " + value + " is not valid")
+     }
+     return 1
+   }
+   ```
+
+   Neste exemplo, a função é nomeada `checkValue`. Essa função é usada para verificar a variável `recipient` tipo de dados na `nms` namespace. O valor que está sendo verificado é registrado. Se o valor não for válido, uma mensagem de erro será registrada. Se o valor for válido, então o valor 1 será retornado.
+
+   Você pode usar o valor retornado para modificar o formulário.
+
+1. No formulário, adicione o `<soapCall>` para `<leave>` elemento.
+
+   Neste exemplo, uma chamada SOAP é usada para validar o `@valueToCheck` sequência de caracteres:
+
+   ```xml
+   <form name="recipient" (…)>
+   (…)
+     <leave>
+       <soapCall name="checkValue" service="nms:recipient">
+         <param exprIn="@valueToCheck" type="string"/>
+       </soapCall>
+     </leave>
+   </form>
+   ```
+
+   Neste exemplo, a variável `checkValue` e o método `nms:recipient` são usados:
+
+   * O serviço é o namespace e o tipo de dados.
+   * O método é o nome da função. O nome diferencia maiúsculas de minúsculas.
+
+   A chamada é executada de forma síncrona.
+
+   Todas as exceções são exibidas. Se você usar a variável `<leave>` , os usuários não poderão salvar o formulário até que as informações inseridas sejam validadas.
+
+Este exemplo mostra como você pode fazer chamadas de serviço a partir dos formulários:
+
+```xml
+<enter>
+  <soapCall name="client" service="c4:ybClient">
+    <param exprIn="@id" type="string"/>
+    <param type="boolean" xpathOut="/tmp/@count"/>
+  </soapCall>
+</enter>
+```
+
+Neste exemplo, a entrada é uma ID, que é uma chave primária. Quando os usuários preenchem o formulário dessa ID, uma chamada SOAP é feita com essa ID como parâmetro de entrada. A saída é um booleano gravado neste campo: `/tmp/@count`. Você pode usar esse booleano dentro do formulário. Leia mais sobre [contexto do formulário](form-structure.md#context-of-forms).
