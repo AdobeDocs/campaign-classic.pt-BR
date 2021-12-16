@@ -6,10 +6,10 @@ audience: configuration
 content-type: reference
 topic-tags: input-forms
 exl-id: 24604dc9-f675-4e37-a848-f1911be84f3e
-source-git-commit: a6549ad4d94b93d65752df66aeec39b90e4c3ec5
+source-git-commit: f4b9ac3300094a527b5ec1b932d204f0e8e5ee86
 workflow-type: tm+mt
-source-wordcount: '250'
-ht-degree: 5%
+source-wordcount: '488'
+ht-degree: 4%
 
 ---
 
@@ -83,3 +83,91 @@ Para visualizar um formulário, clique no botão **[!UICONTROL Preview]** guia :
 
    Este formulário mostra uma lista de itens.
 
+## Containers
+
+Nos formulários, é possível usar contêineres para vários fins:
+
+* Organizar o conteúdo nos formulários
+* Definir o acesso aos campos de entrada
+* Aninhar formulários em outros formulários
+
+[Leia mais](form-structure.md#containers).
+
+### Organizar o conteúdo
+
+Use contêineres para organizar o conteúdo em formulários:
+
+* É possível agrupar campos em seções.
+* É possível adicionar páginas a formulários de várias páginas.
+
+Para inserir um contêiner, use o `<container>` elemento. [Leia mais](form-structure.md#containers).
+
+#### Campos de grupo
+
+Use contêineres para agrupar campos de entrada em seções organizadas.
+
+Para inserir uma seção em um formulário, use este elemento: `<container type="frame">`. Como opção, para adicionar um título de seção, use a variável `label` atributo.
+
+Sintaxe: `<container type="frame" label="`*section_title*`"> […] </container>`
+
+Neste exemplo, um contêiner define a variável **Criação** , que compreende a **[!UICONTROL Created by]** e **[!UICONTROL Name]** campos de entrada:
+
+```xml
+<form _cs="Coupons (nms)" entitySchema="xtk:form" img="xtk:form.png" label="Coupons"
+      name="coupon" namespace="nms" type="default" xtkschema="xtk:form">
+  <input xpath="@code"/>
+  <input xpath="@type"/>
+  <container label="Creation" type="frame">
+    <input xpath="createdBy"/>
+    <input xpath="createdBy/@name"/>
+  </container>
+</form>
+```
+
+![](assets/console_screen_form.png)
+
+#### Adicionar páginas a formulários de várias páginas
+
+Para formulários multipáginas, use um contêiner para criar uma página de formulário.
+
+Este exemplo mostra contêineres para a variável **Geral** e **Detalhes** páginas de um formulário:
+
+```xml
+<container img="ncm:book.png" label="General">
+[…]
+</container>
+<container img="ncm:detail.png" label="Details">
+[…]
+</container>
+```
+
+### Definir acesso aos campos
+
+Use containers para definir o que é visível e definir o acesso aos campos. Você pode ativar ou desativar grupos de campos.
+
+### Aninhar formulários
+
+Use contêineres para aninhar formulários em outros formulários. [Leia mais](#add-pages-to-multipage-forms).
+
+## Referências a imagens
+
+Para localizar imagens, escolha **[!UICONTROL Administration]** > **[!UICONTROL Configuration]** > **[!UICONTROL Images]** no menu .
+
+Para associar uma imagem a um elemento no formulário, por exemplo, um ícone, é possível adicionar uma referência a uma imagem. Use o `img` , por exemplo, no `<container>` elemento.
+
+Sintaxe: `img="`*`namespace`*`:`*`filename`*`.`*`extension`*`"`
+
+Este exemplo mostra referências ao `book.png` e `detail.png` imagens da `ncm` namespace:
+
+```xml
+<container img="ncm:book.png" label="General">
+[…]
+</container>
+<container img="ncm:detail.png" label="Details">
+[…]
+</container>
+```
+
+Essas imagens são usadas para ícones em que os usuários clicam para navegar em um formulário de várias páginas:
+
+![](assets/nested_forms_preview.png)
