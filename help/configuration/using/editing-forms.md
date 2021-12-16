@@ -6,10 +6,10 @@ audience: configuration
 content-type: reference
 topic-tags: input-forms
 exl-id: 24604dc9-f675-4e37-a848-f1911be84f3e
-source-git-commit: d8cd7910798f62cbab8aa0d7cfcc31010ed02297
+source-git-commit: 2b7341bb7fd5ecd93ccc9abd27789a013fda37fa
 workflow-type: tm+mt
-source-wordcount: '945'
-ht-degree: 3%
+source-wordcount: '976'
+ht-degree: 2%
 
 ---
 
@@ -360,3 +360,9 @@ Para alterar o tipo de formulário existente para `notebook`siga estas etapas:
    ```
 
    Como alternativa, remova o `type="frame"` do atributo existente `<container>` elementos.
+
+### Aninhar formulários {#nest-forms}
+
+É possível aninhar formulários em outros formulários. Por exemplo, é possível aninhar formulários de notebook em formulários de caixa de ícones.
+
+O nível de aninhamento controla a navegação. Os usuários podem detalhar os subformulários.
