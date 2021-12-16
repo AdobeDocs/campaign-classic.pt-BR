@@ -6,9 +6,9 @@ audience: configuration
 content-type: reference
 topic-tags: input-forms
 exl-id: 24604dc9-f675-4e37-a848-f1911be84f3e
-source-git-commit: e712298a07ecfe345c0b53a4f07f6bc4c19106f7
+source-git-commit: 0d132f56e7888ad810e309b97b9337ec56fe1ee0
 workflow-type: tm+mt
-source-wordcount: '1196'
+source-wordcount: '1143'
 ht-degree: 2%
 
 ---
@@ -413,7 +413,6 @@ Para modificar um formulário de fábrica, siga estas etapas:
    1. No menu , escolha **[!UICONTROL Administration]** > **[!UICONTROL Configuration]** > **[!UICONTROL Data schemas]**.
    1. Selecione um schema de dados e estenda-o. Por exemplo, é possível adicionar campos. [Leia mais](extending-a-schema.md).
 
-      >[!CAUTION]
-      > Não modifique os dados originais em um namespace de fábrica, mas, em vez disso, estenda-os em um namespace personalizado. O motivo é que, durante as atualizações de software, todos os dados nos namespaces de fábrica são substituídos. Por exemplo, os dados na variável `xtk`, `ncm`e `nms` os namespaces de fábrica são substituídos. Os dados em seus namespaces personalizados não são modificados.
+
 
 
