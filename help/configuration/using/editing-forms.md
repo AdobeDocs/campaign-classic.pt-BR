@@ -6,10 +6,10 @@ audience: configuration
 content-type: reference
 topic-tags: input-forms
 exl-id: 24604dc9-f675-4e37-a848-f1911be84f3e
-source-git-commit: 1dfc1b8e9d0e4405b6a2bb6f1a90a04abb4173e5
+source-git-commit: dcfa6d1e5623792c852d164d636ebe19a7aaa614
 workflow-type: tm+mt
-source-wordcount: '945'
-ht-degree: 3%
+source-wordcount: '1089'
+ht-degree: 2%
 
 ---
 
@@ -361,6 +361,23 @@ Para alterar o tipo de formulário existente para `notebook`siga estas etapas:
 
    Como alternativa, remova o `type="frame"` do atributo existente `<container>` elementos.
 
+## Aninhar formulários {#nest-forms}
+
+É possível aninhar formulários em outros formulários. Por exemplo, é possível aninhar formulários de notebook em formulários de caixa de ícones.
+
+O nível de aninhamento controla a navegação. Os usuários podem detalhar os subformulários.
+
+Para aninhar um formulário em outro formulário, insira um `<container>` e defina o `type` para o tipo de formulário. Para o formulário de nível superior, é possível definir o tipo de formulário em um contêiner externo ou no `<form>` elemento.
+
+### Exemplo
+
+Este exemplo mostra um formulário complexo:
+
+* O formulário de nível superior é um formulário iconbox. Este formulário consiste em dois contêineres rotulados **Geral** e **Detalhes**.
+
+   Como resultado, o formulário externo mostra a variável **Geral** e **Detalhes** páginas no nível superior. Para acessar essas páginas, os usuários clicam nos ícones à esquerda do formulário.
+
+* O subformulário é um formulário de bloco de aninhado dentro do **Geral** contêiner. O subformulário consiste em dois contêineres rotulados **Nome** e **Contato**.
 
 
 
