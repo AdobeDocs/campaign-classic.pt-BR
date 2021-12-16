@@ -6,9 +6,9 @@ audience: configuration
 content-type: reference
 topic-tags: input-forms
 exl-id: 24604dc9-f675-4e37-a848-f1911be84f3e
-source-git-commit: 1ab984d12c9beb0ba3378bbfb49d1d7d07e870f6
+source-git-commit: e712298a07ecfe345c0b53a4f07f6bc4c19106f7
 workflow-type: tm+mt
-source-wordcount: '1286'
+source-wordcount: '1196'
 ht-degree: 2%
 
 ---
@@ -416,11 +416,4 @@ Para modificar um formulário de fábrica, siga estas etapas:
       >[!CAUTION]
       > Não modifique os dados originais em um namespace de fábrica, mas, em vez disso, estenda-os em um namespace personalizado. O motivo é que, durante as atualizações de software, todos os dados nos namespaces de fábrica são substituídos. Por exemplo, os dados na variável `xtk`, `ncm`e `nms` os namespaces de fábrica são substituídos. Os dados em seus namespaces personalizados não são modificados.
 
-1. Modifique o formulário de entrada de fábrica:
 
-   1. No menu , escolha **[!UICONTROL Administration]** > **[!UICONTROL Configuration]** > **[!UICONTROL Input forms]**.
-   1. Selecione um formulário de entrada e o modifique.
-
-   Você pode estender esquemas de dados de fábrica, mas não pode estender formulários de entrada de fábrica. Recomendamos que você modifique os formulários de entrada de fábrica diretamente sem recriá-los. Durante as atualizações de software, suas modificações nos formulários de entrada de fábrica são combinadas com as atualizações. Se a mesclagem automática falhar, você poderá resolver os conflitos. [Leia mais](../../production/using/upgrading.md#resolving-conflicts).
-
-   Por exemplo, se você estender um schema de fábrica com um campo adicional, poderá adicionar esse campo ao formulário de fábrica relacionado.
