@@ -6,10 +6,10 @@ feature: Overview
 role: User
 level: Beginner
 exl-id: d65869ca-a785-4327-8e8d-791c28e4696c
-source-git-commit: ebd5b04c30c54142433056904a5d80f5a8744ded
+source-git-commit: 5261021bde11bc9450a429f26aa493ca2398dbc7
 workflow-type: tm+mt
-source-wordcount: '2459'
-ht-degree: 100%
+source-wordcount: '2531'
+ht-degree: 97%
 
 ---
 
@@ -28,10 +28,11 @@ _8 de outubro de 2021_
 
 **Correções**
 
+* Correção do workflow de faturamento disponível na build 9342, que requer uma reinicialização manual do workflow para a correção a ser aplicada. Agora, a pós-atualização reinicia automaticamente o workflow.
+
 * Correção de um problema que podia impedir o gerenciamento adequado de ofertas ao usar o módulo **Interaction** com a opção [Power Booster](../../installation/using/power-booster-and-power-cluster.md). (NEO-39263)
 
 * Correção do erro “A afinidade de IP xxx não foi encontrada no mid server xxx” que podia ocorrer no envio de um delivery ao usar mais de uma afinidade de IP em uma instância de multi mid-sourcing. (NEO-37514)
-
 
 ## ![](assets/do-not-localize/orange_2.png) Versão 21.1.4 – Build 9342 {#release-21-1-4-build-9342}
 
@@ -49,9 +50,9 @@ _7 de setembro de 2021_
 
 **Outras alterações**
 
+* Correção de uma regressão introduzida na versão 21.1.3 com a nova garantia do workflow de cobrança. O fluxo de trabalho de faturamento foi executado em instâncias erradas e falhou ao tentar enviar o relatório de faturamento que não foi gerado. É necessário reiniciar manualmente o workflow para que a correção seja aplicada.
 * Os conectores do Microsoft CRM obsoletos anteriormente (implantações do Office 365 e no local) foram removidos da interface. [Leia mais](../../platform/using/crm-ms-dynamics.md#configure-acc-for-microsoft)
 * Após a migração para o Tomcat 8, o script de configuração do IIS foi atualizado para corrigir problemas de integração do IIS. (NEO-31019)
-* Uma garantia foi adicionada para permitir que o [fluxo de trabalho técnico de faturamento](../../production/using/monitoring-processes.md#billing-report) seja executado na instância de marketing.
 * A identificação da fonte de dados foi aprimorada nas guias de dados e esquema da janela **Exibir população** das transições do fluxo de trabalho.
 * Os índices de banco de dados ausentes foram adicionados aos seguintes esquemas para evitar problemas de atualização do banco de dados: xtk:rights, nms:dlvExclusion, nms:seedMember, nms:trackingUrl
 
@@ -193,6 +194,7 @@ Saiba mais na [página sobre recursos obsoletos e removidos](../../rn/using/depr
 
 **Outras alterações**
 
+* Uma garantia foi adicionada para permitir que o [fluxo de trabalho técnico de faturamento](../../production/using/monitoring-processes.md#billing-report) seja executado na instância de marketing.
 * O terceiro openssl para Windows foi atualizado para a versão 1.1.1h.
 * Na descrição do pacote Debian, nlserver foi alterado para servidor do Adobe Campaign Classic.
 
