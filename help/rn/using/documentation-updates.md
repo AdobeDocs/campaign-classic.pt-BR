@@ -6,10 +6,10 @@ feature: Overview
 role: User
 level: Beginner
 exl-id: 07c1f4a3-cf16-4a9b-b402-e13258799f91
-source-git-commit: eb0e572f0bb6196a58a7dab4999df784d5c4851f
+source-git-commit: f2cb3323bc5df3aae16a4ae4cf80c30bf53b006e
 workflow-type: tm+mt
-source-wordcount: '4560'
-ht-degree: 100%
+source-wordcount: '4705'
+ht-degree: 97%
 
 ---
 
@@ -20,6 +20,31 @@ ht-degree: 100%
 Esta página lista todos os novos recursos e atualizações de documentação por mês e a versão do Campaign.
 
 Consulte as [Notas de versão do Adobe Campaign Classic](../../rn/using/latest-release.md) para ver as atualizações relacionadas à versão.
+
+## Dezembro de 2021{#dec-2021}
+
+Notas de versão do Campaign Classic v7 foram reorganizadas para simplificar a navegação. [Leia mais](rn-overview.md)
+
+A documentação sobre a Edição do formulário no Campaign foi atualizada e aprimorada. [Leia mais](../../configuration/using/editing-forms.md)
+
+O CentOs 8 chegou ao fim da vida útil e agora está obsoleto no Adobe Campaign Classic. [Leia mais](deprecated-features.md)
+
+## Novembro de 2021{#nov-2021}
+
+Adição de uma limitação sobre o SMS de Entrada (MO). [Leia mais](../../delivery/using/sms-protocol.md#multipart)
+
+Atualização dos detalhes dos logs do processo de migração para a implantação do conector do CRM. [Leia mais](../../migration/using/testing-the-migration.md#verification-process)
+
+Adição de requisitos sobre permissões IMS para implementar a integração Adobe Campaign-Adobe Analytics. [Leia mais](../../platform/using/adobe-analytics-provisioning.md)
+
+Data de término da vida útil do conector de dados do Adobe Analytics de 1 de março de 2022 a 17 de agosto de 2022. [Leia mais](deprecated-features.md)
+
+Adição de um link para a documentação do SDK móvel do Adobe Experience Platform para saber como configurar a extensão do Campaign no Adobe Launch. [Leia mais](../../delivery/using/integrating-campaign-sdk-into-the-mobile-application.md)
+
+Adição de uma seção sobre como usar o JavaScript para calcular valores, trocar dados e executar operações específicas usando chamadas SOAP.[Leia mais](../../workflow/using/javascript-scripts-and-templates.md)
+
+Adição de amostras da implementação de códigos JavaScript em workflows. [Leia mais](../../workflow/using/javascript-in-workflows.md)
+
 
 ## Outubro de 2021{#oct-2021}
 

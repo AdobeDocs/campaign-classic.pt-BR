@@ -6,10 +6,10 @@ feature: Overview
 role: User
 level: Beginner
 exl-id: d60d67de-6618-4f3b-be4a-ad7633ab5645
-source-git-commit: eb0e572f0bb6196a58a7dab4999df784d5c4851f
+source-git-commit: f2cb3323bc5df3aae16a4ae4cf80c30bf53b006e
 workflow-type: tm+mt
 source-wordcount: '1737'
-ht-degree: 98%
+ht-degree: 97%
 
 ---
 
@@ -54,7 +54,7 @@ Os clientes são aconselhados a verificar se utilizam o recurso/funcionalidade e
   <td>Conector de dados do Adobe Analytics<br></td>
    <td><p>A partir da versão 21.1.3 do Campaign, o Conector de dados do Adobe Analytics não será mais utilizado.</p>
    <p>Se estiver usando este conector, precisará adaptar sua implementação adequadamente. <a href="../../platform/using/adobe-analytics-connector.md">Saiba mais</a></p>
-  <p><em>Data de remoção do Target: agosto de 2022</em></p>
+  <p><em>Data de remoção do Target: 17 de agosto de 2022</em></p>
   </td>
  </tr>
     <tr>
