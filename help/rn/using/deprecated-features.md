@@ -6,10 +6,10 @@ feature: Overview
 role: User
 level: Beginner
 exl-id: d60d67de-6618-4f3b-be4a-ad7633ab5645
-source-git-commit: f7c4603e389b19c057ee72bb50ed30d03b60f4bc
-workflow-type: ht
-source-wordcount: '1700'
-ht-degree: 100%
+source-git-commit: eb0e572f0bb6196a58a7dab4999df784d5c4851f
+workflow-type: tm+mt
+source-wordcount: '1737'
+ht-degree: 98%
 
 ---
 
@@ -85,6 +85,12 @@ Esta seção lista os recursos e funcionalidades removidos do Campaign Classic.
   <tr> 
    <td><strong>Área - Recurso</strong></td>
    <td><strong>Substituição</strong></td> 
+  </tr>
+ <tr>  
+   <td>Conectores CRM atividades<br></td>
+   <td><p> As atividades de ação Microsoft CRM, Salesforce e Oracle CRM On Demand não estão mais disponíveis.</p>
+   <p>Para configurar a sincronização de dados entre o Adobe Campaign e um sistema CRM, você pode usar a atividade CRM connector .</p>
+   <p><a href="../../workflow/using/crm-connector.md">Saiba mais</a></p>
   </tr>
   <tr>  
    <td>Relatórios<br></td>

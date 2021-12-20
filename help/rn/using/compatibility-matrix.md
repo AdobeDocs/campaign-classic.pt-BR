@@ -6,10 +6,10 @@ feature: Overview
 role: User
 level: Beginner
 exl-id: b8c1f287-06f4-4c34-8cca-b0c7676abbc2
-source-git-commit: f7c4603e389b19c057ee72bb50ed30d03b60f4bc
-workflow-type: ht
-source-wordcount: '652'
-ht-degree: 100%
+source-git-commit: eb0e572f0bb6196a58a7dab4999df784d5c4851f
+workflow-type: tm+mt
+source-wordcount: '727'
+ht-degree: 89%
 
 ---
 
@@ -48,6 +48,7 @@ Para saber mais sobre itens obsoletos, visite [esta página](../../rn/using/depr
 <tr>
 <td>Debian</td>
 <td>
+<p>11 (64 bits)</p>
 <p>10 (64 bits)</p>
 <p>9 (64 bits)</p>
 </td>
@@ -63,6 +64,7 @@ Para saber mais sobre itens obsoletos, visite [esta página](../../rn/using/depr
 <tr>
 <td>Windows Server</td>
 <td>
+<p>2019</p>
 <p>2016</p>
 <p>2012 R2</p>
 <p>2012</p>
@@ -141,8 +143,6 @@ Para saber mais sobre itens obsoletos, visite [esta página](../../rn/using/depr
 <p>11.x</p>
 <p>10.x</p>
 <p>9.6.x</p>
-<p>9.5.x</p>
-<p>9.4.x</p>
 <p><strong>Observação:</strong> você também pode usar o Amazon RDS para PostgreSQL com as versões especificadas acima.</p>
 </td>
 </tr>
@@ -191,24 +191,41 @@ Os sistemas de gerenciamento de relacionamento com o cliente (CRM) compatíveis 
 ## Federated Data Access (FDA){#FederatedDataAccessFDA}
 
 Os bancos de dados externos compatíveis com o [módulo Federated Data Access](../../installation/using/about-fda.md) do Adobe Campaign estão listados abaixo.
-
 <table>
 <tbody>
+<td><strong>Conector</strong></td>
+<td><strong>Compatibilidade da versão</strong></td>
+<td><strong>Compatibilidade do modelo de hospedagem</strong></td>
+<td><strong>Compatibilidade de build</strong></td>
 <tr>
+<tr>
+<td>Snowflake</td>
+<td> </td>
+<td>Managed Services, Híbrido e no local</td>
+<td>21.1.5 mínimo</td>
+</tr>
 <td>Vertica</td>
 <td> </td>
+<td>Somente híbrido e no local</td>
+<td>19.1.4 mínimo</td>
 </tr>
 <tr>
 <td>Google Big Query</td>
 <td> </td>
+<td>Managed Services, Híbrido e no local</td>
+<td>21.1.5 mínimo</td>
 </tr>
 <tr>
 <td>Análise do Microsoft Azure Synapse</td>
 <td> </td>
+<td>Híbrido e no local</td>
+<td>19.1.4 mínimo</td>
 </tr>
 <tr>
 <td>Amazon Redshift</td>
 <td><p> </p>
+<td>Managed Services, Híbrido e no local</td>
+<td>19.1.4 mínimo</td>
 </td>
 </tr>
 <tr>
@@ -217,8 +234,10 @@ Os bancos de dados externos compatíveis com o [módulo Federated Data Access](.
 <p>19c</p>
 <p>18c</p>
 <p>12c</p>
-<p>11g</p>
+<p>11g </p>
 </td>
+<td>Somente híbrido e no local</td>
+<td>V6.11 mínimo</td>
 </tr>
 <tr>
 <td>PostgreSQL</td>
@@ -231,6 +250,8 @@ Os bancos de dados externos compatíveis com o [módulo Federated Data Access](.
 <p>9.5.x</p>
 <p>9.4.x</p>
 </td>
+<td>Managed Services, Híbrido e no local</td>
+<td>19.1.4 mínimo</td>
 </tr>
 <tr><td>SQL Server</td>
 <td>
@@ -240,11 +261,15 @@ Os bancos de dados externos compatíveis com o [módulo Federated Data Access](.
 <p>2014</p>
 <p>2012 SP1 e SP2</p>
 </td>
+<td>Somente híbrido e no local</td>
+<td>V6.11 mínimo</td>
 </tr>
 <tr><td>MySQL</td>
 <td>
 <p>5.7</p>
 </td>
+<td>Somente híbrido e no local</td>
+<td>V6.11 mínimo</td>
 </tr>
 <tr>
 <td>Teradata</td>
@@ -254,12 +279,16 @@ Os bancos de dados externos compatíveis com o [módulo Federated Data Access](.
 <p>15.10</p>
 <p>15.0</p>
 </td>
+<td>Somente híbrido e no local</td>
+<td>V6.11 mínimo</td>
 </tr>
 <tr>
 <td>Netezza</td>
 <td>
 <p>7.2</p>
 </td>
+<td>Somente híbrido e no local</td>
+<td>V6.11 mínimo</td>
 </tr>
 <tr>
 <td>Sybase</td>
@@ -267,12 +296,16 @@ Os bancos de dados externos compatíveis com o [módulo Federated Data Access](.
 <p>IQ 16</p>
 <p>ASE 15.7</p>
 </td>
+<td>Somente híbrido e no local</td>
+<td>V6.11 mínimo</td>
 </tr>
 <tr>
 <td>SAP HANA</td>
 <td>
 <p>versão 1 SPS 12</p>
 </td>
+<td>Somente híbrido e no local</td>
+<td>V6.11 mínimo</td>
 </tr>
 <tr><td>Hadoop via HiveSQL</td>
 <td>
@@ -280,13 +313,12 @@ Os bancos de dados externos compatíveis com o [módulo Federated Data Access](.
 <p>HDInsight 3.4 (HDP 2.4), 3.5 (HDP 2.5), 3.6 (HDP 2.6))</p>
 <p>Cloudera CDH6.x</p>
 </td>
-</tr>
-<tr>
-<td>Snowflake</td>
-<td> </td>
+<td>Somente híbrido e no local</td>
+<td>V6.11 mínimo</td>
 </tr>
 </tbody>
 </table>
+
 
 ## Console do cliente {#ClientConsoleoperatingsystems}
 
@@ -322,7 +354,7 @@ Os sistemas operacionais e navegadores a seguir são **necessários** para usar 
 <p>Microsoft Internet Explorer</p>
 </td>
 <td>
-<p>11</p>
+<p>11º</p>
 </td>
 </tr>
 </tbody>
@@ -395,7 +427,7 @@ Os seguintes navegadores são compatíveis com o Campaign, para [Acesso via web]
 <p>Microsoft Internet Explorer</p>
 </td>
 <td>
-<p>11</p>
+<p>11º</p>
 </td>
 </tr>
 </tbody>

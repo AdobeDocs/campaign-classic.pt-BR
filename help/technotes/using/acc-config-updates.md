@@ -3,7 +3,7 @@ product: campaign
 title: Technote - Atualizações de configuração do Adobe Campaign
 description: Atualizações de configuração do Adobe Campaign
 exl-id: 7db02123-2e2a-40d9-8385-728ff69985e4
-source-git-commit: 0c97efef21bfd3b8671847c3e1c27bb76cf167e4
+source-git-commit: eb0e572f0bb6196a58a7dab4999df784d5c4851f
 workflow-type: tm+mt
 source-wordcount: '1137'
 ht-degree: 20%
@@ -24,7 +24,7 @@ Por motivos de segurança, agora é necessário atualizar para uma das versões 
 
 >[!NOTE]
 >
->Em caso de dúvidas sobre essas alterações, entre em contato com o [Atendimento ao cliente da Adobe](https://helpx.adobe.com/br/enterprise/using/support-for-experience-cloud.html).
+>Em caso de dúvidas sobre essas alterações, entre em contato com o [Atendimento ao cliente da Adobe](https://helpx.adobe.com/br/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html).
 
 ## Atualizações de segurança {#acc-security-updates}
 
@@ -36,10 +36,10 @@ Se o ambiente estiver em uma build inferior à listada abaixo, você será afeta
 
 * Gold Standard 11. [Saiba mais](../../rn/using/gold-standard.md)
 * Campaign versão 21.1.1. [Saiba mais](../../rn/using/latest-release.md)
-* Campaign versão 20.2.4. [Saiba mais](../../rn/using/release--20-2.md)
-* Campaign versão 20.1.4. [Saiba mais](../../rn/using/release--20-1.md)
-* Campaign versão 19.2.4. [Saiba mais](../../rn/using/release--19-2.md)
-* Campaign versão 19.1.8. [Saiba mais](../../rn/using/release--19-1.md)
+* Campaign versão 20.2.5. [Saiba mais](../../rn/using/release--2020.md#release-20-2-5-build-9188)
+* Campaign versão 20.1.4. [Saiba mais](../../rn/using/release--2020.md#release-20-1-4-build-9126)
+* Campaign versão 19.2.4. [Saiba mais](../../rn/using/release--2019.md#release-19-2-4-build-9082)
+* Campaign versão 19.1.8. [Saiba mais](../../rn/using/release--2019.md#release-19-1-8-build-9039)
 
 Saiba como verificar sua versão [nesta seção](../../platform/using/launching-adobe-campaign.md#getting-your-campaign-version).
 
@@ -62,9 +62,9 @@ Você precisa atualizar para uma das builds mais recentes listadas acima.
 O **disponível** as versões do console abaixo devem ser instaladas para resolver uma regressão identificada recentemente. Essa regressão impedia o uso de alguns componentes do Console do cliente, como o seletor de datas e o gerenciamento de imagens nos deliveries. **Atualização do console** é obrigatório.
 
 * Versão mais recente do Gold Standard 11 9032@10c2709. [Saiba mais](../../rn/using/gold-standard.md)
-* Campaign versão 20.1.4. [Saiba mais](../../rn/using/release--20-1.md)
-* Campaign versão 19.2.4. [Saiba mais](../../rn/using/release--19-2.md)
-* Campaign versão 19.1.8. [Saiba mais](../../rn/using/release--19-1.md)
+* Campaign versão 20.1.4. [Saiba mais](../../rn/using/release--2020.md#release-20-1-4-build-9126)
+* Campaign versão 19.2.4. [Saiba mais](../../rn/using/release--2019.md#release-19-2-4-build-9082)
+* Campaign versão 19.1.8. [Saiba mais](../../rn/using/release--2019.md#release-19-1-8-build-9039)
 
 ## Atualização do sistema Adobe Identity Management (IMS)
 
@@ -78,10 +78,10 @@ Se você estiver se conectando ao Campaign [por meio de uma Adobe ID](../../inte
 
 * Gold Standard 11. [Saiba mais](../../rn/using/gold-standard.md)
 * Campaign versão 21.1.1. [Saiba mais](../../rn/using/latest-release.md)
-* Campaign versão 20.2.5. [Saiba mais](../../rn/using/release--20-2.md)
-* Campaign versão 20.1.4. [Saiba mais](../../rn/using/release--20-1.md)
-* Campaign versão 19.2.4. [Saiba mais](../../rn/using/release--19-2.md)
-* Campaign versão 19.1.8. [Saiba mais](../../rn/using/release--19-1.md)
+* Campaign versão 20.2.5. [Saiba mais](../../rn/using/release--2020.md#release-20-2-5-build-9188)
+* Campaign versão 20.1.4. [Saiba mais](../../rn/using/release--2020.md#release-20-1-4-build-9126)
+* Campaign versão 19.2.4. [Saiba mais](../../rn/using/release--2019.md#release-19-2-4-build-9082)
+* Campaign versão 19.1.8. [Saiba mais](../../rn/using/release--2019.md#release-19-1-8-build-9039)
 
 Essas versões são fornecidas com um novo protocolo de conexão: a atualização é obrigatória para o servidor do Campaign e o Console do cliente poderem se conectar ao Campaign após **30 de junho de 2021**.
 
@@ -111,8 +111,8 @@ A atualização para uma das novas versões listadas abaixo é obrigatória:
 
 * Gold Standard 11. [Saiba mais](../../rn/using/gold-standard.md)
 * Campaign versão 21.1.1. [Saiba mais](../../rn/using/latest-release.md)
-* Campaign versão 20.2.5. [Saiba mais](../../rn/using/release--20-2.md)
-* Campaign versão 19.1.8. [Saiba mais](../../rn/using/release--19-1.md)
+* Campaign versão 20.2.5. [Saiba mais](../../rn/using/release--2020.md#release-20-2-5-build-9188)
+* Campaign versão 19.1.8. [Saiba mais](../../rn/using/release--2019.md#release-19-1-8-build-9039)
 
 Saiba como verificar sua versão [nesta seção](../../platform/using/launching-adobe-campaign.md#getting-your-campaign-version).
 

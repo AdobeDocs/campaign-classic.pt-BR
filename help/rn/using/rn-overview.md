@@ -6,10 +6,10 @@ feature: Overview
 role: User
 level: Beginner
 exl-id: 7a05fdff-8f9d-4e8d-812e-0f1509db5499
-source-git-commit: b3a3ec871bca9132f10b319ba1f93aeda80d6747
+source-git-commit: eb0e572f0bb6196a58a7dab4999df784d5c4851f
 workflow-type: tm+mt
-source-wordcount: '422'
-ht-degree: 100%
+source-wordcount: '408'
+ht-degree: 77%
 
 ---
 
@@ -17,19 +17,17 @@ ht-degree: 100%
 
 ![](../../assets/v7-only.svg)
 
-O Adobe Campaign é atualizado regularmente. Duas ou três versões secundárias são lançadas em média a cada ano, com novos recursos, melhorias e correções. Além disso, periodicamente liberamos builds apenas com correções cumulativas.
+O Adobe Campaign é atualizado regularmente. Uma ou duas versões secundárias são lançadas a cada ano com novos recursos, melhorias e correções. Além disso, periodicamente liberamos builds apenas com correções cumulativas.
 
 Essa frequência regular atualizações tem como objetivo fazer com que você tenha disponível as mais recentes e melhores atualizações, além de manter seu ambiente protegido e melhorar sua experiência com nosso produto.
 
-É por isso que acreditamos que é essencial executar a versão mais recente do Adobe Campaign. Ela também garantirá que você obtenha uma melhor experiência de suporte, já que geralmente é bem mais rápido identificar, reproduzir e corrigir um problema em uma versão recente. Além disso, muitos problemas que você pode encontrar já foram corrigidos nas compilações mais recentes.
+Essa é a razão pela qual acreditamos que é fundamental que você **executar a versão mais recente** do Adobe Campaign. Ela também garantirá que você obtenha uma melhor experiência de suporte, já que geralmente é bem mais rápido identificar, reproduzir e corrigir um problema em uma versão recente. Além disso, muitos problemas que você pode encontrar já foram corrigidos nas compilações mais recentes.
 
 ## Status da versão{#rn-statuses}
 
-Um status é associado a cada build. Você encontrará abaixo a lista de status e como interpretá-los.
+Cada nova build vem com um status que é materializado por uma cor.
 
 ![](assets/do-not-localize/green3.png) **Disponibilidade geral** (DG) - validada na produção e recomendada pela Adobe.
-
-As **últimas compilações do GA** são: [[!DNL Gold Standard]  versão 11](../../rn/using/gold-standard.md#gs-11) e [versão 21.1.4 do Campaign](../../rn/using/latest-release.md#release-21-1-4-build-9340).
 
 ![](assets/do-not-localize/limited3.png) **Disponibilidade limitada** (DL) - somente instalação sob demanda.
 
@@ -41,7 +39,7 @@ As **últimas compilações do GA** são: [[!DNL Gold Standard]  versão 11](../
 
 ## Recomendações{#recommendations}
 
-Para garantir uma configuração estável, recomendamos instalar a mesma build estável em todos os servidores que estão sendo executados na mesma configuração de cliente.
+Para garantir uma configuração estável, recomendamos instalar **mesma build estável** em todos os servidores que estão sendo executados na mesma configuração de cliente.
 
 Além disso, o console do cliente deve estar na mesma build que a instância do servidor.
 
@@ -62,6 +60,7 @@ Como usuário convidado do [!DNL Gold Standard], você se beneficiará automatic
 
 ## Suporte e outros links úteis{#support}
 
+* [Encontre sua versão do Campaign](../../platform/using/launching-adobe-campaign.md#getting-your-campaign-version).
 * [Ajuda e suporte](../../support.md)
 * [Versões do Painel de controle do Campaign](https://experienceleague.adobe.com/docs/control-panel/using/release-notes.html?lang=pt-BR)
 * [Atualizações mais recentes da documentação](../../rn/using/documentation-updates.md)
