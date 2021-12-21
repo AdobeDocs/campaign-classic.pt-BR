@@ -9,7 +9,7 @@ exl-id: d65869ca-a785-4327-8e8d-791c28e4696c
 source-git-commit: cbafd70f5b5e964256edad0ce2965f3ed4650500
 workflow-type: tm+mt
 source-wordcount: '2556'
-ht-degree: 88%
+ht-degree: 91%
 
 ---
 
@@ -30,7 +30,7 @@ _8 de outubro de 2021_
 
 **Correções**
 
-* Correção do workflow de faturamento disponível na build 9342, que requer uma reinicialização manual do workflow para a correção a ser aplicada. Agora, a pós-atualização reinicia automaticamente o workflow.
+* Correção do fluxo de trabalho de faturamento disponível na build 9342, que requer uma reinicialização manual do fluxo de trabalho para que a correção seja aplicada. Agora, a pós-atualização reinicia automaticamente o fluxo de trabalho.
 
 * Correção de um problema que podia impedir o gerenciamento adequado de ofertas ao usar o módulo **Interaction** com a opção [Power Booster](../../installation/using/power-booster-and-power-cluster.md). (NEO-39263)
 
@@ -52,7 +52,7 @@ _7 de setembro de 2021_
 
 **Outras alterações**
 
-* Correção de uma regressão introduzida na versão 21.1.3 com a nova garantia do workflow de cobrança. O fluxo de trabalho de faturamento foi executado em instâncias erradas e falhou ao tentar enviar o relatório de faturamento que não foi gerado. É necessário reiniciar manualmente o workflow para que a correção seja aplicada.
+* Correção de uma regressão introduzida na versão 21.1.3 com a nova garantia do fluxo de trabalho de faturamento. O fluxo de trabalho de faturamento foi executado em instâncias erradas e falhou ao tentar enviar o relatório de faturamento, que não foi gerado. É necessário reiniciar manualmente o fluxo de trabalho para que a correção seja aplicada.
 * Os conectores do Microsoft CRM obsoletos anteriormente (implantações do Office 365 e no local) foram removidos da interface. [Leia mais](../../platform/using/crm-ms-dynamics.md#configure-acc-for-microsoft)
 * Após a migração para o Tomcat 8, o script de configuração do IIS foi atualizado para corrigir problemas de integração do IIS. (NEO-31019)
 * A identificação da fonte de dados foi aprimorada nas guias de dados e esquema da janela **Exibir população** das transições do fluxo de trabalho.
@@ -196,7 +196,7 @@ Saiba mais na [matriz de compatibilidade do Campaign](../../rn/using/compatibili
 
 **Outras alterações**
 
-* Uma garantia foi adicionada para permitir que o [fluxo de trabalho técnico de faturamento](../../production/using/monitoring-processes.md#billing-report) seja executado na instância de marketing.
+* Uma garantia foi adicionada para permitir que apenas o [fluxo de trabalho técnico de faturamento](../../production/using/monitoring-processes.md#billing-report) seja executado na instância de marketing.
 * O terceiro openssl para Windows foi atualizado para a versão 1.1.1h.
 * Na descrição do pacote Debian, nlserver foi alterado para servidor do Adobe Campaign Classic.
 
