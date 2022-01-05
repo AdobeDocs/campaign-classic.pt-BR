@@ -6,10 +6,10 @@ audience: workflow
 content-type: reference
 topic-tags: -general-operation
 exl-id: 8ba20ccd-b03f-4c4f-87c1-a21e80d8e4be
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: 638b259462d3e01d744567e56d67a120359dc34a
 workflow-type: tm+mt
-source-wordcount: '1624'
-ht-degree: 100%
+source-wordcount: '1625'
+ht-degree: 99%
 
 ---
 
@@ -96,7 +96,10 @@ Você pode alterar a exibição e o layout do gráfico usando os seguintes eleme
 
    ![](assets/s_user_segmentation_toolbar.png)
 
-   Os ícones relacionados ao rastreamento e ao lançamento de um workflow avançado para construção do target são detalhados nesta [seção](../../campaign/using/marketing-campaign-deliveries.md#creating-a-targeting-workflow).
+   Os ícones relacionados ao progresso e à exibição de logs são detalhados nestas seções:
+
+   * [Exibição do progresso](../../workflow/using/monitoring-workflow-execution.md#displaying-progress)
+   * [Exibição de logs](../../workflow/using/monitoring-workflow-execution.md#displaying-logs)
 
 * **Alinhamento de objeto**
 

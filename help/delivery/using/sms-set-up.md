@@ -6,10 +6,10 @@ audience: delivery
 content-type: reference
 topic-tags: sending-messages-on-mobiles
 exl-id: a2783a5e-6d38-41a1-b5c6-24ab489116f8
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: b174b8283d77a1b5eb535c0c46ba4a428bd66eef
 workflow-type: tm+mt
-source-wordcount: '1677'
-ht-degree: 100%
+source-wordcount: '1697'
+ht-degree: 98%
 
 ---
 
@@ -24,6 +24,10 @@ Para enviar para um celular, você precisa:
    Observe que os conectores herdados agora estão obsoletos. Embora os recursos obsoletos ainda estejam disponíveis, eles não serão aprimorados nem terão suporte. Saiba mais [nesta página](../../rn/using/deprecated-features.md).
 
 1. Um template do delivery no qual essa conta externa é referenciada.
+
+>[!NOTE]
+>
+> Para deliveries de SMS, a tipologia deve estar usando uma afinidade de SMS específica criada em **one** contêiner dedicado do servidor de aplicativos. [Saiba mais](../../installation/using/configure-delivery-settings.md#managing-outbound-smtp-traffic-with-affinities)
 
 ## Criar uma conta externa SMPP {#creating-an-smpp-external-account}
 
