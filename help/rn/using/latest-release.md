@@ -6,10 +6,10 @@ feature: Overview
 role: User
 level: Beginner
 exl-id: d65869ca-a785-4327-8e8d-791c28e4696c
-source-git-commit: cbafd70f5b5e964256edad0ce2965f3ed4650500
+source-git-commit: 0a7cdd53640bb3d96ff9bc2de4aa4c1849e32c83
 workflow-type: tm+mt
-source-wordcount: '2556'
-ht-degree: 91%
+source-wordcount: '2580'
+ht-degree: 97%
 
 ---
 
@@ -181,18 +181,18 @@ Saiba mais na [matriz de compatibilidade do Campaign](../../rn/using/compatibili
 
 **Recursos obsoletos**
 
-* Os drivers ODBC agora são instalados diretamente com terceiros da Adobe Campaign. As etapas manuais não são mais necessárias para instalar os drivers.
-* O Google Big Query agora está disponível para implantações hospedadas.
+* A partir da versão 21.1 do Campaign, o Conector de dados do Adobe Analytics não será mais utilizado. Se você estiver usando esse conector, precisará adaptar sua implementação adequadamente com o novo Adobe Analytics Connector.
+Para obter mais informações consulte a [documentação detalhada](../../technotes/using/aa-connector-migration.md).
+* O suporte para Debian 8 foi descontinuado.
+* Após a desativação do Oracle CRM na versão 20.3, a conta externa relacionada foi removida da interface.
 
-[Leia mais](../../installation/using/configure-fda.md)
+Saiba mais na [página sobre recursos obsoletos e removidos](../../rn/using/deprecated-features.md).
 
-**Aprimoramentos** 
+**Aprimoramentos**
 
-* Correções críticas foram aplicadas em relação à API da Web do Microsoft Dynamics Connector:
-   * Correção de um problema que resultava em falha ou não funcionamento da importação de dados do Microsoft CRM se a condição de filtro contivesse campos de pesquisa.
-   * Correção de um problema durante uma importação acionada por um workflow, que fazia com que os valores nulos de campos do tipo string fossem salvos como Nulo em vez de valores vazios.
-   * Correção de um problema que resultava no seguinte erro para importação ou exportação de dados usando chamadas de API da Web: &quot;URI inválido: O esquema URI é muito longo&quot;.
-   * Correção de um problema durante uma importação do Microsoft Dynamics 365, que impedia a importação de dados de campos de pesquisa.
+* Foram adicionadas verificações adicionais ao salvar um fluxo de trabalho para garantir que os nomes das atividades sejam únicos e que as transições sejam sempre seguidas por uma atividade.
+* O fluxo de trabalho técnico **Faturamento (faturamento)** agora inclui as tarefas originalmente executadas pelo fluxo de trabalho **Número de perfis de faturamento ativos** (billingActiveContactCount), que foi removido. O relatório de email enviado mensalmente pelo fluxo de trabalho agora fornecerá informações sobre o número de perfis ativos na instância. [Leia mais](../../workflow/using/about-technical-workflows.md).
+* O novo atributo **_keyOnMData** foi adicionado para poder usar uma chave para operações em dados de memorando.
 
 **Outras alterações**
 
