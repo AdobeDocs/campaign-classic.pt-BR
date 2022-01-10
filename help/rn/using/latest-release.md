@@ -6,9 +6,9 @@ feature: Overview
 role: User
 level: Beginner
 exl-id: d65869ca-a785-4327-8e8d-791c28e4696c
-source-git-commit: e4dfdd32c07753ee9e202ab4e4bf815485e47d8b
+source-git-commit: 630a62c5e5c9782c5c55fdebd651493a2d68fc54
 workflow-type: tm+mt
-source-wordcount: '1032'
+source-wordcount: '1056'
 ht-degree: 30%
 
 ---
@@ -30,7 +30,7 @@ Várias melhorias de segurança foram realizadas nas contas da FDA:
 * Os drivers ODBC agora são instalados diretamente com terceiros da Adobe Campaign. As etapas manuais não são mais necessárias para instalar esses drivers.
 * Ao configurar sua conta externa FDA, agora é possível fazer logon em sua conta do Snowflake usando a autenticação do par de chaves para segurança de autenticação aprimorada. [Leia mais](../../installation/using/configure-fda-snowflake.md)
 * Ao configurar sua conta externa FDA, agora é possível fazer logon em sua conta do Azure synapse Analytics usando a identidade gerenciada atribuída pelo sistema. [Leia mais](../../installation/using/configure-fda-synapse.md#azure-external)
-
+* Todas as referências à biblioteca log4j foram removidas do Campaign para garantir a segurança ideal.
 
 **Aprimoramentos** 
 
@@ -55,6 +55,7 @@ Várias melhorias de segurança foram realizadas nas contas da FDA:
 * Uma nova opção foi adicionada na **Gerenciamento de erros** propriedades de atividades de workflow: O **Abortar no erro** a opção interromperá automaticamente o fluxo de trabalho. Não será possível reiniciá-lo posteriormente (NEO29661). [Leia mais](../../workflow/using/advanced-parameters.md#in-case-of-errors)
 * Uma sequência dedicada agora é usada para gerar as chaves primárias para a tabela nmsGroup, que é usada para criar grupos estatísticos de recipients. Anteriormente, a sequência xtknownId era usada. (NEO-30832)
 * Adição de suporte para operações de atualização em lote usando a atividade do conector CRM.
+* Desempenho aprimorado para o tempo de processamento de mensagens transacionais. (NEO-40370)
 
 **Correções**
 
