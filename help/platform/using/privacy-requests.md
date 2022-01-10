@@ -6,10 +6,10 @@ audience: platform
 content-type: reference
 topic-tags: starting-with-adobe-campaign
 exl-id: c7688c2a-f0a7-4c51-a4cf-bf96fe8bf9b6
-source-git-commit: d750e13d3770d3b36b5f4376233d4da458730ed7
-workflow-type: ht
-source-wordcount: '2420'
-ht-degree: 100%
+source-git-commit: 71a5433db3ce2af5a25e5f861bd6f1dfb9aa8934
+workflow-type: tm+mt
+source-wordcount: '2425'
+ht-degree: 98%
 
 ---
 
@@ -281,7 +281,7 @@ Em seguida, chame a API de privacidade:
 
    * Você pode usar uma **queryDef** no esquema **nms:gdprRequest** para verificar o status da solicitação de acesso.
    * Você pode usar uma **queryDef** no esquema **nms:gdprRequestData** para obter o resultado da solicitação de acesso.
-   * Para baixar o arquivo XML a partir de **&quot;$(serverUrl)&#39;/nms/gdpr.jssp?id=&#39;@id&quot;**, você precisa estar conectado e acessá-lo a partir de um IP da lista de permissões. Para fazer isso, crie um aplicativo da web que permita acessar o arquivo gerado pelo JSSP.
+   * Para baixar o arquivo XML de **&quot;$(serverUrl)&#39;/nms/gdpr.jssp?id=&#39;@id&quot;**, você deve estar conectado e acessá-lo a partir de um IP incluído na  de lista de permissões. Para fazer isso, crie um aplicativo da web que permita acessar o arquivo gerado pelo JSSP.
 
 ### Chamar a API a partir de um JS {#invoking-api-from-js}
 

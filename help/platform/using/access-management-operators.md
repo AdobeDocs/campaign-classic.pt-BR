@@ -6,10 +6,10 @@ feature: Access Management
 role: User, Admin
 level: Beginner
 exl-id: 580282ce-ee30-422a-8724-9c328637cc39
-source-git-commit: 8b970705f0da6a9e09de9fadb3e1a8c5f4814f9f
+source-git-commit: 98380c18b915cfebc980e68f9840f9d8919eaca4
 workflow-type: tm+mt
 source-wordcount: '1149'
-ht-degree: 100%
+ht-degree: 96%
 
 ---
 
@@ -103,7 +103,7 @@ O link **[!UICONTROL Edit the access parameters...]** permite acessar as seguint
 
    >[!NOTE]
    >
-   >Mesmo que a conta esteja desativada, o operador ainda poderá receber alertas ou notificações do Campaign. Para interromper o envio de notificações do Campaign a esse operador, a Adobe recomenda que você remova o endereço de email do perfil.
+   >Mesmo que sua conta esteja desativada, o operador ainda poderá receber alertas ou notificações do Campaign. Para parar de enviar notificações do Campaign para esse operador, o Adobe recomenda remover o endereço de email do perfil.
 
 * A opção **[!UICONTROL Forbid access from the rich client]** permite restringir o uso do Adobe Campaign para [acesso à Web](../../platform/using/adobe-campaign-workspace.md#console-and-web-access) ou por meio de APIs: o acesso ao console do cliente Adobe Campaign não está mais disponível.
 * É possível vincular uma zona de segurança ao operador. Para obter mais informações, consulte [esta página](../../installation/using/security-zones.md).

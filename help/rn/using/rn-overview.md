@@ -6,22 +6,16 @@ feature: Overview
 role: User
 level: Beginner
 exl-id: 7a05fdff-8f9d-4e8d-812e-0f1509db5499
-source-git-commit: eb0e572f0bb6196a58a7dab4999df784d5c4851f
+source-git-commit: 87067a0cca1a4a7f8ea1137ece6d513d58fcdb42
 workflow-type: tm+mt
-source-wordcount: '408'
-ht-degree: 77%
+source-wordcount: '913'
+ht-degree: 87%
 
 ---
 
 # Introdução a atualizações{#rn-overview}
 
 ![](../../assets/v7-only.svg)
-
-O Adobe Campaign é atualizado regularmente. Uma ou duas versões secundárias são lançadas a cada ano com novos recursos, melhorias e correções. Além disso, periodicamente liberamos builds apenas com correções cumulativas.
-
-Essa frequência regular atualizações tem como objetivo fazer com que você tenha disponível as mais recentes e melhores atualizações, além de manter seu ambiente protegido e melhorar sua experiência com nosso produto.
-
-Essa é a razão pela qual acreditamos que é fundamental que você **executar a versão mais recente** do Adobe Campaign. Ela também garantirá que você obtenha uma melhor experiência de suporte, já que geralmente é bem mais rápido identificar, reproduzir e corrigir um problema em uma versão recente. Além disso, muitos problemas que você pode encontrar já foram corrigidos nas compilações mais recentes.
 
 ## Status da versão{#rn-statuses}
 
@@ -37,9 +31,17 @@ Cada nova build vem com um status que é materializado por uma cor.
 
 ![](assets/do-not-localize/red3.png) **Obsoleto** - Nenhuma implantação. Nenhuma correção de erro. As implementações atuais devem ser atualizadas.
 
+## Ciclo de lançamento
+
+O Adobe Campaign é atualizado regularmente. Essa frequência regular atualizações tem como objetivo fazer com que você tenha disponível as mais recentes e melhores atualizações, além de manter seu ambiente protegido e melhorar sua experiência com nosso produto.
+
+Essa é a razão pela qual acreditamos que é fundamental que você **executar a versão estável mais recente** do Adobe Campaign. Ela também garantirá que você obtenha uma melhor experiência de suporte, já que geralmente é bem mais rápido identificar, reproduzir e corrigir um problema em uma versão recente. Além disso, muitos problemas que você pode encontrar já foram corrigidos nas compilações mais recentes.
+
+Como cliente hospedado, você se beneficia automaticamente da atualização com a versão estável mais recente sem ter de tomar nenhuma ação. Saiba mais na [Seção Atualização anual](#yearly-upgrade). Se você migrar de uma build antiga, o Adobe recomenda atualizar para essa versão primeiro.
+
 ## Recomendações{#recommendations}
 
-Para garantir uma configuração estável, recomendamos instalar **mesma build estável** em todos os servidores que estão sendo executados na mesma configuração de cliente.
+Para garantir uma configuração estável, recomendamos instalar **a mesma build estável** em todos os servidores que estão sendo executados na mesma configuração de cliente.
 
 Além disso, o console do cliente deve estar na mesma build que a instância do servidor.
 
@@ -51,19 +53,94 @@ Como cliente hospedado (Serviço gerenciado ou híbrido), você precisa entrar e
 
 Como usuário local, você pode fazer a atualização. Para isso, [baixe a build estável mais recente](https://experience.adobe.com/#/downloads/content/software-distribution/en/campaign.html) e atualize todos os seus ambientes. Saiba mais sobre o [processo de atualização](../../production/using/build-upgrade.md) e consulte as [perguntas frequentes sobre atualização de build](../../platform/using/faq-build-upgrade.md).
 
-### [!DNL Gold Standard]{#upgrade-for-gold-standard-users}
+## Atualização anual {#yearly-upgrade}
 
-Como usuário convidado do [!DNL Gold Standard], você se beneficiará automaticamente da atualização para o [!DNL Gold Standard] com a compilação [mais recente [!DNL Gold Standard] do GA](../../rn/using/gold-standard.md#gs-12) sem realizar nenhuma ação. [Saiba mais](../../rn/using/gs-overview.md).
+A Adobe e o Adobe Campaign têm o compromisso de fornecer a você a melhor experiência e valor por meio de nossas soluções de software. A organização está comprometida em garantir que você tenha acesso às versões mais recentes da tecnologia que nossas soluções utilizam para executar suas tarefas.
 
->[!NOTE]
->A matriz de compatibilidade do [!DNL Gold Standard] está disponível na [Matriz de compatibilidade de GA](../../rn/using/compatibility-matrix-gs.md).
+O Adobe Campaign Classic, especificamente, usa uma variedade de tecnologias para fornecer valor. Essa combinação de tecnologias exige que você atualize regularmente suas instâncias do Campaign Classic para garantir que as versões mais atualizadas estejam sendo usadas para oferecer segurança, estabilidade e desempenho superiores.
 
-## Suporte e outros links úteis{#support}
+Como usuário hospedado, você se beneficiará automaticamente da atualização com a build estável mais recente sem ter de tomar nenhuma ação. Saiba mais nas perguntas frequentes abaixo.
+
+### Por que minha empresa precisa dessa atualização?
+
+Como um cliente hospedado, se sua conta precisar atualizar uma ou mais das tecnologias relacionadas ao Campaign Classic, bem como atualizar a compilação e/ou versão atual, você será notificado diretamente pela Adobe.
+
+Como cliente local ou híbrido em execução em uma versão mais antiga, o Adobe incentiva a mudança para a build estável mais recente.
+
+Dessa forma, sua conta ficará protegida contra vulnerabilidades, além de aproveitar a tecnologia de desempenho atualizada. Você também poderá fazer atualizações regulares e com mais facilidade na sua conta, que exigirão menos trabalho e intervenção manual.
+
+### Qual é o processo e o cronograma dessa atualização?
+
+A Adobe orientará sua organização durante o processo.
+
+Organizamos uma equipe específica de representantes para o atendimento ao cliente, gerentes de produtos, engenheiros e especialistas em TechOps, e consultores de produtos para auxiliar e garantir uma experiência descomplicada.
+
+Estamos empenhados em garantir que você tenha as informações relevantes do projeto e de contato.
+
+### Benefícios
+
+<tr>
+  <td>
+      <img alt="Segurança" src="assets/do-not-localize/security.png"/>
+    <div>
+    <strong>Segurança avançada</strong>
+    </div>
+    <ul>
+    <li>Uma combinação de tecnologias usadas para potencializar o Adobe Campaign Classic trabalha em conjunto para agregar valor.</li>
+    <li>Todas as instâncias devem ser atualizadas para garantir a segurança.</li>
+    <li>A segurança precisa de foco constante e manutenção proativa.</li>
+    <li>Os riscos de segurança estão presentes e não podem ser ignorados: cada atualização do Campaign Classic melhora a segurança.</li>
+    </ul>
+  </td>
+
+<td>
+      <img alt="Suporte" src="assets/do-not-localize/support.png" />
+    <div>
+    <strong>Suporte avançado</strong>
+    </div>
+    <ul>
+    <li>A maioria dos problemas críticos é resolvida com atualizações e pode ser evitada.</li>
+    <li>As atualizações regulares ajudam a superar os desafios enfrentados e a aumentar a eficiência.</li>
+    <li>O número de chamados ao atendimentos ao cliente será reduzido, permitindo resoluções mais rápidas e mais atenção aos problemas não relacionados às atualizações.</li>
+    </ul>
+  </td>
+</tr>
+
+<tr>
+  <td>
+      <img alt="Manutenção" src="assets/do-not-localize/maintenance.png"/>
+    <div>
+    <strong>Manutenção e estabilidade reforçadas</strong>
+    </div>
+    <ul>
+    <li>Com o tempo, a equipe do Adobe Campaign identifica maneiras de melhorar a estabilidade e o desempenho do produto, bem como de corrigir problemas conhecidos.</li>
+    <li>A atualização permite que sua instância esteja sempre alinhada a essas melhorias, eliminando desafios comuns enfrentados por organizações que estão enfrentando um rápido crescimento e/ou complexidade em suas instâncias do Campaign Classic.</li>
+    <li>As equipes de marketing e TI da sua organização perceberão melhorias na tecnologia de armazenamento de dados do Campaign Classic.</li>
+    </ul>
+  </td>
+
+<td>
+      <img alt="Atualização da compilação" src="assets/do-not-localize/upgrades.png" />
+    <div>
+    <strong>Atualizações mais fáceis</strong>
+    </a>
+    </div>
+    <ul>
+    <li>O esforço e a complexidade para atualizar a instância do Campaign Classic aumentam com a distância entre duas versões (v5 --&gt; v7).</li>
+    <li>Quanto mais sua organização esperar, mais complexa será a atualização (e maior será a exposição às vulnerabilidades).</li>
+    <li>Atualizações regulares reduzirão o tempo de inatividade da atualização e reduzirão o risco de regressão.</li>
+    </ul>
+  </td>
+</tr>
+</table>
+
+## Recursos adicionais{#support}
 
 * [Encontre sua versão do Campaign](../../platform/using/launching-adobe-campaign.md#getting-your-campaign-version).
 * [Ajuda e suporte](../../support.md)
 * [Versões do Painel de controle do Campaign](https://experienceleague.adobe.com/docs/control-panel/using/release-notes.html?lang=pt-BR)
 * [Atualizações mais recentes da documentação](../../rn/using/documentation-updates.md)
 * [Recursos descontinuados e removidos](../../rn/using/deprecated-features.md)
+* [Perguntas frequentes de atualização de build](../../platform/using/faq-build-upgrade.md)
 
 Para ser informado sobre novos lançamentos de solução da Experience Cloud, inscreva-se na [Atualização prioritária de produto da Adobe](https://www.adobe.com/br/subscription/priority-product-update.html).

@@ -6,10 +6,10 @@ audience: workflow
 content-type: reference
 topic-tags: advanced-management
 exl-id: 6c90ac2f-0d2b-48b0-9245-3e5e3a3d027c
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: 7a1b8a1cd3ad434dac5c324056113d7ec15ddd8a
 workflow-type: tm+mt
-source-wordcount: '488'
-ht-degree: 100%
+source-wordcount: '501'
+ht-degree: 98%
 
 ---
 
@@ -73,8 +73,9 @@ Este campo permite selecionar o fuso horário da atividade. Para obter mais info
 
 Este campo permite que você defina a ação a ser executada quando a atividade tiver erros. Há duas opções possíveis:
 
-* **[!UICONTROL Stop the process]**: o workflow é interrompido automaticamente. Seu status muda para **[!UICONTROL Failed]**. Depois que o problema for resolvido, reinicie o workflow.
+* **[!UICONTROL Suspend the process]**: o workflow é interrompido automaticamente. Seu status muda para **[!UICONTROL Failed]**. Depois que o problema for resolvido, reinicie o workflow.
 * **[!UICONTROL Ignore]**: esta tarefa e todas as tarefas a seguir (na mesma ramificação) não serão executadas. Pode ser útil para tarefas recorrentes. Se a ramificação tiver um programador a montante, ele será iniciado como de costume na próxima data de execução.
+* **[!UICONTROL Abort on error]**: o workflow é interrompido automaticamente e não pode ser reiniciado. Seu status muda para **[!UICONTROL Failed]**.
 
 ## Script de inicialização {#initialization-script}
 

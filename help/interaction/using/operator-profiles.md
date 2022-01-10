@@ -6,10 +6,10 @@ audience: interaction
 content-type: reference
 topic-tags: managing-environments
 exl-id: e11fb28c-d530-45a2-862a-ff1c20975577
-source-git-commit: 8b970705f0da6a9e09de9fadb3e1a8c5f4814f9f
+source-git-commit: 98380c18b915cfebc980e68f9840f9d8919eaca4
 workflow-type: tm+mt
-source-wordcount: '385'
-ht-degree: 100%
+source-wordcount: '384'
+ht-degree: 88%
 
 ---
 
@@ -43,7 +43,7 @@ Os direitos atribuídos ao gerente de ofertas permitem que eles executem as segu
 
    >[!NOTE]
    >
-   >O gerente de ofertas só pode aprovar uma oferta em dois casos específicos. O primeiro se ninguém tiver sido especificado como o revisor, e o segundo se o operador encarregado de criar modelos (com o direito para atribuir revisores) especificou ele/ela como revisor no modelo de oferta em que a oferta foi baseada.
+   >O gerente de ofertas só pode aprovar uma oferta em dois casos específicos. O primeiro se ninguém tiver sido especificado como o revisor, e o segundo se o operador encarregado de criar modelos (com o direito para atribuir revisores) especificou eles como o revisor no template de oferta em que a oferta foi baseada.
 
 ## Gerente de delivery {#delivery-manager}
 

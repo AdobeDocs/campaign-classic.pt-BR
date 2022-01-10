@@ -6,7 +6,7 @@ audience: configuration
 content-type: reference
 topic-tags: schema-reference
 exl-id: 655b5928-b005-442f-b026-2f1b0c1abb99
-source-git-commit: bd9f035db1cbad883e1f27fe901e34dfbc9c1229
+source-git-commit: fb4b4c42b907e86813ea570f912312fccf893bfe
 workflow-type: tm+mt
 source-wordcount: '980'
 ht-degree: 6%
@@ -83,7 +83,7 @@ Para obter mais informações sobre como configurar schemas de extensão para es
 
 ## Uso de uma tabela personalizada de recipient {#custom-recipient-table}
 
-Ao projetar seu modelo de dados do Adobe Campaign, você pode usar a variável [tabela Recipient pronta para uso](#default-recipient-table)ou decidir criar um [tabela de recipient personalizada](../../configuration/using/about-custom-recipient-table.md) para armazenar seus perfis de marketing.
+Ao projetar seu modelo de dados do Adobe Campaign, você pode usar a variável [tabela de recipient integrada](#default-recipient-table)ou decidir criar um [tabela de recipient personalizada](../../configuration/using/about-custom-recipient-table.md) para armazenar seus perfis de marketing.
 
 Na verdade, se o modelo de dados não se ajustar à estrutura centrada no recipient, é possível configurar outras tabelas como o targeting dimension no Adobe Campaign. Por exemplo, isso pode ser relevante quando você precisa direcionar as famílias, as contas (como telefones celulares) e as empresas/sites, em vez de simplesmente os recipients.
 
@@ -95,11 +95,11 @@ Todos os princípios e etapas necessários ao usar uma tabela de recipient perso
 
 Os benefícios de usar uma tabela de Recipient personalizada são os seguintes:
 
-* **Modelo de dados flexível** - A tabela Recipient pronta para uso é inútil se você não precisar da maioria dos campos da tabela Recipient ou se o modelo de dados não for centrado no recipient.
+* **Modelo de dados flexível** - A tabela de recipient integrada é inútil se você não precisar da maioria dos campos da tabela de Recipient ou se o modelo de dados não for centrado no recipient.
 
-* **Escalabilidade** - Grandes volumes exigem uma tabela simplificada com poucos campos para um design eficiente. A tabela de Recipient pronta para uso teria muitos campos inúteis, o que poderia afetar o desempenho e faltar eficiência.
+* **Escalabilidade** - Grandes volumes exigem uma tabela simplificada com poucos campos para um design eficiente. A tabela de recipients integrada teria muitos campos inúteis, o que poderia afetar o desempenho e faltar eficiência.
 
-* **Local dos dados** - Se os dados residirem em um banco de dados de marketing existente externo, talvez seja necessário muito esforço para usar a tabela Recipient pronta para uso. Criar um novo com base em uma estrutura existente é mais simples.
+* **Local dos dados** - Se os dados residirem em um banco de dados de marketing existente externo, talvez seja necessário muito esforço para usar a tabela de recipients integrada. Criar um novo com base em uma estrutura existente é mais simples.
 
 * **Fácil migração** - Nenhuma manutenção é necessária para verificar se todas as extensões ainda são válidas na atualização.
 

@@ -6,10 +6,10 @@ audience: web
 content-type: reference
 topic-tags: web-applications
 exl-id: 4bff6b55-3335-433e-a2ff-5d8c83e8f0d3
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: 98380c18b915cfebc980e68f9840f9d8919eaca4
 workflow-type: tm+mt
 source-wordcount: '670'
-ht-degree: 100%
+ht-degree: 98%
 
 ---
 
@@ -86,7 +86,7 @@ As APIs disponíveis no lado do cliente para personalizar o banner são:
 
    bannerDomElt {DOMElement} o elemento DOM raiz do banner de cookie que precisa ser removido
 
-* **NL.ClientWebTracking.hasUserPrefs()**: retorna verdadeiro se o usuário tiver escolhido suas preferências para o rastreamento web.
+* **NL.ClientWebTracking.hasUserPrefs()**: Retorna true se o usuário tiver escolhido suas preferências para o rastreamento web.
 * **NL.ClientWebTracking.getUserPrefs()**: retorna o valor de cookie de opt out que define as preferências do usuário.
 
 Se você precisar gravar uma JSSP, as APIs do lado do servidor estarão disponíveis:

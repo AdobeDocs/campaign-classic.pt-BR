@@ -6,24 +6,22 @@ audience: configuration
 content-type: reference
 topic-tags: use-a-custom-recipient-table
 exl-id: d8cea496-b3f3-420a-bf6e-b7cbb321b30d
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: fb4b4c42b907e86813ea570f912312fccf893bfe
 workflow-type: tm+mt
-source-wordcount: '666'
+source-wordcount: '667'
 ht-degree: 2%
 
 ---
 
 # Usar tabela de recipient personalizada{#about-custom-recipient-table}
 
-![](../../assets/v7-only.svg)
+![](../../assets/common.svg)
 
-Esta seção detalha os princípios para usar uma tabela de recipients não padrão.
+Esta seção detalha os princípios do uso de uma tabela de recipient personalizada (ou externa).
 
-Por padrão, o Adobe Campaign oferece uma tabela de recipients padrão à qual as funções e processos prontos para uso são vinculadas. A tabela de recipients padrão tem vários campos e tabelas predefinidos que podem ser facilmente estendidos usando uma tabela de extensão.
+Por padrão, o Adobe Campaign oferece uma tabela de recipients integrada à qual as funções e processos prontos para uso são vinculadas. A tabela de recipient integrada tem vários campos e tabelas predefinidos que podem ser facilmente estendidos usando uma tabela de extensão.
 
 Se esse método de extensão oferecer boa flexibilidade para estender uma tabela, ele não permitirá a redução do número de campos ou links nela. Usar uma tabela não padrão ou &quot;tabela externa de destinatários&quot; permite maior flexibilidade, mas requer determinadas precauções ao implementá-la.
-
-## Precisões {#precisions}
 
 Essa funcionalidade permite que o Adobe Campaign processe dados de um banco de dados externo: esses dados serão usados como um conjunto de perfis para deliveries. A implementação desse processo envolve várias precisões que podem ser relevantes de acordo com as necessidades do cliente. Tal como:
 
@@ -31,14 +29,14 @@ Essa funcionalidade permite que o Adobe Campaign processe dados de um banco de d
 * Não há alterações nos processos que operam no banco de dados existente.
 * Uso de um banco de dados de perfil com uma estrutura não padrão: possibilidade de delivery em perfis salvos em várias tabelas com várias estruturas, usando uma única instância.
 * Nenhuma alteração ou manutenção necessária ao atualizar o banco de dados do Adobe Campaign.
-* A tabela de recipients padrão é inútil se você não precisar da maioria dos campos da tabela ou se o template do banco de dados não estiver centralizado nos recipients.
-* Para ser eficiente, uma tabela com alguns campos é necessária se você tiver um número significativo de perfis. A tabela de recipients padrão tem muitos campos para esse caso específico.
+* A tabela de recipients integrada é inútil se você não precisar da maioria dos campos da tabela ou se o template do banco de dados não estiver centralizado nos recipients.
+* Para ser eficiente, uma tabela com alguns campos é necessária se você tiver um número significativo de perfis. A tabela de recipients integrada tem muitos campos para esse caso específico.
 
-Esta seção descreve os pontos principais que permitem mapear tabelas existentes no Adobe Campaign e a configuração a ser aplicada para executar deliveries com base em qualquer tabela. Por fim, ele descreve como fornecer aos usuários interfaces de consulta tão práticas quanto aquelas disponíveis na tabela de recipients padrão. Para entender o material apresentado nesta seção, é necessário um bom conhecimento dos princípios de projeto de tela e de esquema.
+Esta seção descreve os pontos principais que permitem mapear tabelas existentes no Adobe Campaign e a configuração a ser aplicada para executar deliveries com base em qualquer tabela. Por fim, ele descreve como fornecer aos usuários interfaces de consulta tão práticas quanto aquelas disponíveis com a tabela de recipients integrada. Para entender o material apresentado nesta seção, é necessário um bom conhecimento dos princípios de projeto de tela e de esquema.
 
 ## Recommendations e limitações {#recommendations-and-limitations}
 
-O uso de uma tabela externa de recipient tem as seguintes limitações:
+O uso de uma tabela de recipient personalizada tem as seguintes limitações:
 
 * O Adobe Campaign não oferece suporte a vários esquemas de recipient, conhecidos como esquemas de direcionamento, vinculados aos mesmos esquemas de broadlog e/ou de trackinglog. Caso contrário, isso pode levar a anomalias na reconciliação de dados posteriormente.
 

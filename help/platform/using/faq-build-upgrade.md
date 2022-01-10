@@ -6,10 +6,10 @@ audience: platform
 content-type: reference
 topic-tags: starting-with-adobe-campaign
 exl-id: 85e2135d-a1a3-44f0-a4f9-de38db5c8726
-source-git-commit: cfba72840f7a0d335516d38be24363865d83d18d
+source-git-commit: 1d32161d60f6b382188012b104c642f504e28645
 workflow-type: tm+mt
-source-wordcount: '2024'
-ht-degree: 100%
+source-wordcount: '2023'
+ht-degree: 98%
 
 ---
 
@@ -21,7 +21,7 @@ O Adobe Campaign é atualizado regularmente. Se você conhece as [Notas de vers�
 
 É imprescindível que nossos clientes executem a versão mais recente do Adobe Campaign. Isso também nos permite ajudar com muito mais eficiência em caso de problemas. Identificar, reproduzir e corrigir um problema em uma build antiga geralmente leva mais tempo, sem mencionar que alguns problemas que você pode encontrar podem muito bem já terem sido corrigidos em uma nova versão da build.
 
-O [!DNL Gold Standard] é a versão de suporte em longo prazo do Campaign Classic. Como usuário convidado do [!DNL Gold Standard], você se beneficia automaticamente da atualização do [!DNL Gold Standard] com a última versão estável sem realizar nenhuma ação. Os clientes no local e híbridos também podem se beneficiar das versões do [!DNL Gold Standard]. Se você migrar de uma compilação antiga, recomendamos atualizar primeiro para essa versão. [Saiba mais](../../rn/using/gs-overview.md).
+Como usuário hospedado, você se beneficia automaticamente da atualização anual do Campaign com a versão estável mais recente, sem ter de tomar nenhuma ação. Os clientes locais e híbridos também podem se beneficiar desta versão. Se você migrar de uma compilação antiga, recomendamos atualizar primeiro para essa versão. [Saiba mais](../../rn/using/rn-overview.md).
 
 ## O que é uma atualização de build?
 
@@ -208,4 +208,4 @@ todo o conteúdo é exibido e está presente.
 * [Atualização de uma build](../../production/using/build-upgrade.md)
 * [Notas de versão do Campaign Classic](../../rn/using/rn-overview.md)
 * [Opções de ajuda e suporte para o Campaign Classic](../../support.md)
-* [Programa do [!DNL Gold Standard]](../../rn/using/gs-overview.md)
+* [Programa de atualização anual](../../rn/using/rn-overview.md#yearly-upgrade)

@@ -6,10 +6,10 @@ audience: installation
 content-type: reference
 topic-tags: prerequisites-and-recommendations-
 exl-id: e1aff73a-54fb-444e-b183-df11c9b3df31
-source-git-commit: 4661a65c83f3b9b7da9ea902f387155c5933e59f
+source-git-commit: e55fff99fd5dec8da998310dc7026c1a506abadc
 workflow-type: tm+mt
-source-wordcount: '621'
-ht-degree: 40%
+source-wordcount: '624'
+ht-degree: 38%
 
 ---
 
@@ -66,7 +66,7 @@ Os clientes existentes provenientes de uma migração podem usar o modo de aviso
 
 ## Restrição de comando (lado do servidor)
 
-Vários comandos estão incluídos na lista negra e não podem ser executados usando a função execCommand. Uma segurança extra é fornecida por um usuário Unix dedicado para executar comandos externos. Para instalações hospedadas, essa restrição é aplicada automaticamente. Para instalações no local, você pode configurar manualmente essa restrição seguindo as instruções de [esta página](../../installation/using/configuring-campaign-server.md#restricting-authorized-external-commands). Além disso, **[!UICONTROL Script]** e **[!UICONTROL External task]** as atividades do workflow não estão disponíveis (instâncias recém-instaladas).
+Vários comandos estão incluídos na  de lista de bloqueios e não podem ser executados usando a função execCommand. Uma segurança extra é fornecida por um usuário Unix dedicado para executar comandos externos. Para instalações hospedadas, essa restrição é aplicada automaticamente. Para instalações no local, você pode configurar manualmente essa restrição seguindo as instruções de [esta página](../../installation/using/configuring-campaign-server.md#restricting-authorized-external-commands). Além disso, **[!UICONTROL Script]** e **[!UICONTROL External task]** as atividades do workflow não estão disponíveis (instâncias recém-instaladas).
 
 ## Outras configurações
 

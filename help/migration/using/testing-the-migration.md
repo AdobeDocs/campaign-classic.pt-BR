@@ -6,14 +6,14 @@ audience: migration
 content-type: reference
 topic-tags: migration-procedure
 exl-id: 228ee9e4-46a0-4d82-b8ba-b019bc0e7cac
-source-git-commit: 9ba2199eabf91381e87661f30c9af8aa0ce4cc26
+source-git-commit: 59a2bc62b4c03ef0702cb57bd9dc808e7d0b444b
 workflow-type: tm+mt
-source-wordcount: '729'
-ht-degree: 1%
+source-wordcount: '755'
+ht-degree: 3%
 
 ---
 
-# Teste da migração{#testing-the-migration}
+# Testes de migração{#testing-the-migration}
 
 ![](../../assets/v7-only.svg)
 
@@ -21,7 +21,7 @@ ht-degree: 1%
 
 Dependendo da sua configuração, há várias maneiras de realizar testes de migração.
 
-Você deve ter um ambiente de teste/desenvolvimento para realizar testes de migração. Os ambientes de desenvolvimento estão sujeitos a licença: verifique seu contrato de licença ou entre em contato com o serviço de vendas da Adobe Campaign.
+Você deve ter um ambiente de teste/desenvolvimento para realizar testes de migração. Os ambientes Adobe Campaign estão sujeitos a licença: verifique seu contrato de licença ou entre em contato com seu representante de Adobe.
 
 1. Pare todos os desenvolvimentos em andamento e transfira-os para o ambiente de produção.
 1. Faça um backup do banco de dados do ambiente de desenvolvimento.
@@ -39,18 +39,12 @@ Você deve ter um ambiente de teste/desenvolvimento para realizar testes de migr
 
 1. Certifique-se de que os backups estejam corretos tentando restaurá-los. Certifique-se de acessar o banco de dados, as tabelas, os dados etc.
 1. Teste o procedimento de migração no ambiente de desenvolvimento.
-
-   Os procedimentos completos estão detalhados na seção [Pré-requisitos da migração para o Adobe Campaign 7](../../migration/using/prerequisites-for-migration-to-adobe-campaign-7.md) seção.
-
 1. Se a migração do ambiente de desenvolvimento for bem-sucedida, você poderá migrar o ambiente de produção.
 
->[!IMPORTANT]
+>[!CAUTION]
 >
 >Devido a alterações feitas na estrutura de dados, a importação e exportação de pacotes de dados não é possível entre uma plataforma v5 e uma plataforma v7.
 
->[!NOTE]
->
->O comando de atualização do Adobe Campaign (**pós-atualização**) permite sincronizar recursos e atualizar schemas e o banco de dados. Essa operação só pode ser executada uma vez e somente no servidor de aplicativos. Depois de sincronizar os recursos, a variável **pós-atualização** permite detectar se a sincronização gera erros ou avisos.
 
 ## Ferramentas de migração {#migration-tools}
 
@@ -70,9 +64,11 @@ Várias opções permitem medir o impacto de uma migração e identificar os pos
 
 >[!NOTE]
 >
->Você deve usar o **-instance:`<instanceame>`** opção. Não recomendamos usar o **-allinâncias** opção.
+>* Você deve usar o **-instance:`<instanceame>`** opção. Não recomendamos usar o **-allinâncias** opção.
+>* O comando de atualização do Adobe Campaign (**pós-atualização**) permite sincronizar recursos e atualizar schemas e o banco de dados. Essa operação só pode ser executada uma vez e somente no servidor de aplicativos. Depois de sincronizar os recursos, a variável **pós-atualização** permite detectar se a sincronização gera erros ou avisos.
 
-### -showCustomEntities e -showDeletedEntities opções {#showcustomentities-and--showdeletedentities-options}
+
+### Objetos não padrão ou ausentes
 
 * O **-showCustomEntities** exibe a lista de todos os objetos não padrão:
 
@@ -110,7 +106,7 @@ nlserver.exe config -postupgrade -check -instance:<instanceName>
 
 >[!NOTE]
 >
->Ignore todos os avisos e erros que têm o código JST-310040.
+>Você pode ignorar todos os avisos e erros com o código JST-310040.
 
 As seguintes expressões são pesquisadas (diferencia maiúsculas de minúsculas):
 
@@ -158,7 +154,7 @@ As seguintes expressões são pesquisadas (diferencia maiúsculas de minúsculas
    <td> SQLDATA<br /> </td> 
    <td> PU-0006<br /> </td> 
    <td> Erro<br /> </td> 
-   <td> Esse tipo de erro gera uma falha de migração. Consulte <a href="../../migration/using/general-configurations.md#sqldata" target="_blank">SQLData</a>. Se você obtiver logs de erro de aplicativos web do tipo visão geral (migração da v6.02), consulte <a href="../../migration/using/specific-configurations-in-v6-02.md#web-applications" target="_blank">Configurar Campanha</a>.<br /> </td> 
+   <td> Esse tipo de erro gera uma falha de migração. Consulte <a href="../../migration/using/general-configurations.md#sqldata" target="_blank">SQLData</a>. Se você obtiver logs de erro de aplicativos web do tipo visão geral (migração da v6.02), consulte <a href="../../migration/using/configuring-your-platform.md#specific-configurations-in-v5-11" target="_blank">Configurar Campanha</a>.<br /> </td> 
   </tr>
   <tr> 
    <td> crmDeploymentType="onpremise"<br /> </td> 
@@ -167,6 +163,12 @@ As seguintes expressões são pesquisadas (diferencia maiúsculas de minúsculas
    <td> Esse tipo de implantação não é mais compatível. O Office 365 e o tipo de implantação do conector do Microsoft CRM no local foram descontinuados. 
    </br>Se estiver usando um desses tipos de implantação obsoletos em uma conta externa, essa conta externa deverá ser excluída e você deverá executar a variável <b>pós-atualização</b> comando. 
    </br>Para alterar para implantação da API da Web, consulte <a href="../../platform/using/crm-ms-dynamics.md#configure-acc-for-microsoft" target="_blank">Aplicações web</a>.<br /> </td>
+  </tr> 
+  <tr> 
+   <td> CRM v1(mscrmWorkflow/sfdcWorkflow)<br /> </td> 
+   <td> PU-0008<br /> </td> 
+   <td> Erro<br /> </td> 
+   <td> As atividades de ação do Microsoft CRM, Salesforce e Oracle CRM On Demand não estão mais disponíveis. Para configurar a sincronização de dados entre o Adobe Campaign e um sistema CRM, é necessário usar o <a href="../../workflow/using/crm-connector.md" target="_blank">Conector CRM</a> atividade de direcionamento.<br /> </td>
   </tr> 
  </tbody> 
 </table>
@@ -185,6 +187,6 @@ nlserver.exe config -postupgrade -restoreFactory:<backupfolder> -instance:<insta
 >
 >É altamente recomendável usar caminhos de pasta absolutos e manter a estrutura de árvore de pastas. Por exemplo: backupFolder\nms\srcSchema\billing.xml.
 
-### Resumo da migração {#resuming-migration}
+### Retomar a migração {#resuming-migration}
 
 Se você reiniciar o pós-atualização após uma falha de migração, ele será retomado do mesmo local em que foi interrompido.

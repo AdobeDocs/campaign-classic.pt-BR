@@ -6,7 +6,7 @@ audience: installation
 content-type: reference
 topic-tags: appendices
 exl-id: a979cd99-afa7-4ce6-ba0f-9495089cba08
-source-git-commit: 4661a65c83f3b9b7da9ea902f387155c5933e59f
+source-git-commit: 8610d29a3df1080f1622a2cb3685c0961fb40092
 workflow-type: tm+mt
 source-wordcount: '3991'
 ht-degree: 3%
@@ -58,15 +58,15 @@ O **[!UICONTROL Administration / Platform / Options]** permite configurar as op�
    <td> Endereço de email CCO para o qual o MTA aprimorado enviará uma cópia bruta dos emails enviados. <br /> </td> 
   </tr>
   <tr> 
-   <td> <span class="uicontrol">NMS_ActivateOwnerConfirmation</span> <br /> </td> 
-   <td><p> Permite que o operador encarregado do delivery confirme o delivery, se um operador ou grupo de operadores específico for designado para iniciar um delivery nas propriedades do delivery.</p><p> Para fazer isso, ative a opção inserindo "1" como o valor. To deactivate this option, enter "0".</p><p> O processo de confirmação de delivery funcionará como padrão: somente o operador ou grupo de operadores designado ao delivery nas propriedades de delivery (ou um administrador) poderá confirmar e realizar o delivery. Consulte <a href="../../campaign/using/marketing-campaign-deliveries.md#starting-an-online-delivery">esta seção</a>.</p> </td> 
+   <td> <span class="uicontrol">NMS_AtivateOwnerConfirmation</span> <br /> </td> 
+   <td><p> Permite que o operador encarregado do delivery confirme o delivery, se um operador ou grupo de operadores específico for designado para iniciar um delivery nas propriedades do delivery.</p><p> Para fazer isso, ative a opção inserindo "1" como o valor. Para desativar essa opção, digite "0".</p><p> O processo de confirmação de delivery funcionará como padrão: somente o operador ou grupo de operadores designado ao delivery nas propriedades de delivery (ou um administrador) poderá confirmar e realizar o delivery. Consulte <a href="../../campaign/using/marketing-campaign-deliveries.md#starting-an-online-delivery">esta seção</a>.</p> </td> 
    <tr> 
    <td> <span class="uicontrol">Nms_DefaultRcpSchema</span> <br /> </td> 
    <td> O Adobe Campaign usa uma variável global "Nms_DefaultRcpSchema" para diálogo com o banco de dados do recipient padrão (nms:recipient).<br /> O valor da opção deve corresponder ao nome do schema que corresponde à tabela externa do recipient.<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">NmsBilling_MainActionThreshold</span> <br /> </td> 
-   <td> Minimum number of recipients in order for a delivery to be considered as the main one in the billing report.<br /> </td> 
+   <td> Número mínimo de recipients para que um delivery seja considerado como o principal no relatório de faturamento.<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">NmsBroadcast_DefaultProvider</span> <br /> </td> 
@@ -166,7 +166,7 @@ O **[!UICONTROL Administration / Platform / Options]** permite configurar as op�
   </tr> 
   <tr> 
    <td> <span class="uicontrol">NmsEmail_RetryPeriod</span> <br /> </td> 
-   <td> Period of retries for email messages.<br /> </td> 
+   <td> Período de tentativas para mensagens de email.<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">NmsForecast_MsgWeightFormula</span> <br /> </td> 
@@ -174,7 +174,7 @@ O **[!UICONTROL Administration / Platform / Options]** permite configurar as op�
   </tr> 
   <tr> 
    <td> <span class="uicontrol">NmsInmail_AllowlistEmails</span> <br /> </td> 
-   <td> List of authorized forwarding email addresses (from the inbound mail processing module). Os endereços devem ser separados por vírgulas (ou * para permitir tudo). E.g. xyz@abc.com,pqr@abc.com.<br /> </td> 
+   <td> Lista de endereços de email de encaminhamento autorizados (do módulo de processamento de email de entrada). Os endereços devem ser separados por vírgulas (ou * para permitir tudo). Por exemplo, xyz@abc.com, pqr@abc.com.<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">NmsLine_AESKey</span> <br /> </td> 
@@ -301,7 +301,7 @@ O **[!UICONTROL Administration / Platform / Options]** permite configurar as op�
   </tr> 
   <tr> 
    <td> <span class="uicontrol">NmsDelivery_ImagePublishing</span> </td> 
-   <td> Configuração do upload de imagem. The values can be none / tracking / script / list (can be overridden by operator's optional settings). </td> 
+   <td> Configuração do upload de imagem. Os valores podem ser none / tracking / script / list (podem ser substituídos pelas configurações opcionais do operador). </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">NmsDelivery_ImageSubDirectory</span> <br /> </td> 
@@ -443,7 +443,7 @@ O **[!UICONTROL Administration / Platform / Options]** permite configurar as op�
   </tr> 
   <tr> 
    <td> <span class="uicontrol">XtkTraceDeleteLogin</span> <br /> </td> 
-   <td> Enter the "1" value to trace the deletion of elements with Audit trail information in the mData, through the modification of its "modified by" field before the deletion of the record.<br /> </td> 
+   <td> Insira o valor "1" para rastrear a exclusão de elementos com as informações da Trilha de auditoria no mData, por meio da modificação do campo "modificado por" antes da exclusão do registro.<br /> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -556,7 +556,7 @@ O **[!UICONTROL Administration / Platform / Options]** permite configurar as op�
   </tr> 
   <tr> 
    <td> <span class="uicontrol">MC_LastRtEventStat</span> <br /> </td> 
-   <td> Update pointer of RtEvent status (last date until when the data was retrieved).<br /> </td> 
+   <td> Atualizar ponteiro do status RtEvent (última data até quando os dados foram recuperados).<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">NmsLine_MessageCenterURL</span> <br /> </td> 
@@ -645,7 +645,7 @@ O **[!UICONTROL Administration / Platform / Options]** permite configurar as op�
   </tr> 
   <tr> 
    <td> <span class="uicontrol">WdbcOptions_TableSpaceIndex</span> <br /> </td> 
-   <td> Nome do tablespace destinado a conter os índices das tabelas ootb do Adobe Campaign.<br />See <a href="../../installation/using/creating-and-configuring-the-database.md">Creating and configuring the database</a>.</td> 
+   <td> Nome do tablespace destinado a conter os índices das tabelas ootb do Adobe Campaign.<br />Consulte <a href="../../installation/using/creating-and-configuring-the-database.md">Criação e configuração do banco de dados</a>.</td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">WdbcOptions_TableSpaceWork</span> <br /> </td> 
@@ -697,7 +697,7 @@ O **[!UICONTROL Administration / Platform / Options]** permite configurar as op�
     <ul> 
      <li> <p> <span class="uicontrol">Tipo de dados:</span> Número inteiro</p> </li> 
      <li> <p> <span class="uicontrol">Valor (texto)</span> : 1 </p> </li> 
-    </ul> Essa opção só deve ser usada se a árvore de navegação predefinida tiver sofrido muitas alterações.<br /> Para obter mais informações, consulte <a href="../../migration/using/specific-configurations-in-v5-11.md#campaign-vseven-tree-structure">esta seção</a>.<br /> </td> 
+    </ul> Essa opção só deve ser usada se a árvore de navegação predefinida tiver sofrido muitas alterações.<br /> Para obter mais informações, consulte <a href="../../migration/using/configuring-your-platform.md#specific-configurations-in-v5-11">esta seção</a>.<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">NmsLastErrorStatCoalesce</span> <br /> </td> 

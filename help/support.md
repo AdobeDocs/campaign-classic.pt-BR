@@ -4,10 +4,10 @@ title: 'Opções de ajuda e suporte para Campaign Classic '
 description: Precisa de suporte para o Campaign Classic? Você está no lugar certo.
 hidefromtoc: true
 exl-id: 3a84236f-89e5-4b8b-9a98-afdc006fd6e0
-source-git-commit: e719c8c94f1c08c6601b3386ccd99d250c9e606b
+source-git-commit: 1d32161d60f6b382188012b104c642f504e28645
 workflow-type: tm+mt
-source-wordcount: '799'
-ht-degree: 84%
+source-wordcount: '793'
+ht-degree: 82%
 
 ---
 
@@ -99,7 +99,7 @@ O Painel de controle do Campaign ajuda a aumentar a eficiência do seu trabalho 
 >
 >O Painel de controle do Campaign é acessível a todos os usuários administradores. As etapas para conceder acesso de Administrador a um usuário estão detalhadas [nesta seção](https://experienceleague.adobe.com/docs/control-panel/using/discover-control-panel/managing-permissions.html?lang=pt-BR#discover-control-panel).
 >
->Observe que sua instância deve ser hospedada no AWS e atualizada com a compilação mais recente do [Gold Standard](rn/using/gs-overview.md) ou a [compilação mais recente do GA (21.1.4)](rn/using/latest-release.md). Saiba como verificar a versão [nesta seção](platform/using/launching-adobe-campaign.md#getting-your-campaign-version). Para verificar se sua instância está hospedada no AWS, siga as etapas detalhadas [nesta página](https://experienceleague.adobe.com/docs/control-panel/using/faq.html?lang=pt-BR).
+>Observe que sua instância deve ser hospedada no AWS e atualizada com a [Build do GA](rn/using/rn-overview.md). Saiba como verificar a versão [nesta seção](platform/using/launching-adobe-campaign.md#getting-your-campaign-version). Para verificar se sua instância está hospedada no AWS, siga as etapas detalhadas [nesta página](https://experienceleague.adobe.com/docs/control-panel/using/faq.html?lang=pt-BR).
 
 ### Como acessar o Painel de controle do Campaign?
 

@@ -6,10 +6,10 @@ feature: Overview
 role: Data Engineer
 level: Beginner
 exl-id: 5f689679-7148-4abd-a9bf-185854c64b13
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: 1d32161d60f6b382188012b104c642f504e28645
 workflow-type: tm+mt
-source-wordcount: '825'
-ht-degree: 100%
+source-wordcount: '909'
+ht-degree: 85%
 
 ---
 
@@ -35,17 +35,17 @@ Na seção central da home page, você pode usar links para acessar o portal de 
 
 ### Acesso via web e console {#console-and-web-access}
 
-A plataforma Adobe Campaign pode ser acessada por meio de um console ou por meio de um navegador da Internet.
+A plataforma Adobe Campaign pode ser acessada por meio de um console ou por meio de um navegador da Internet. Consulte os navegadores compatíveis na seção [matriz de compatibilidade](../../rn/using/compatibility-matrix.md#Browsers).
 
-O acesso via Web fornece uma interface semelhante ao console, mas com um conjunto reduzido de funcionalidades.
+A interface de acesso à Web é semelhante à interface do console. Em um navegador, você pode usar os mesmos recursos de navegação e exibição do console, mas pode executar apenas um conjunto reduzido de ações em campanhas. Por exemplo, você pode visualizar e cancelar campanhas, mas não pode modificar campanhas. Para um determinado operador, uma campanha será exibida com as seguintes opções no console:
 
-Por exemplo, para um determinado operador, uma campanha será exibida com as seguintes opções no console:
+![No painel de uma campanha, o operador pode exibir e cancelar uma campanha, mas também modificá-la e adicionar deliveries, documentos e tarefas a ela.](assets/operation_from_console.png)
 
-![](assets/operation_from_console.png)
+Considerando o acesso via Web, as opções permitirão principalmente a visualização:
 
-Considerando o acesso via Web, as opções permitirão principalmente a visualização dos seguintes elementos:
+![Em um navegador, o mesmo operador só pode exibir e cancelar a campanha.](assets/operation_from_web.png)
 
-![](assets/operation_from_web.png)
+Saiba mais sobre [usando a interface da Web](../../campaign/using/accessing-marketing-campaigns.md#using-the-web-interface-).
 
 ### Idiomas {#languages}
 

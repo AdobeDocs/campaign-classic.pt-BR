@@ -6,9 +6,9 @@ audience: production
 content-type: reference
 topic-tags: updating-adobe-campaign
 exl-id: c5a9c99a-4078-45d8-847b-6df9047a2fe2
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: 1d32161d60f6b382188012b104c642f504e28645
 workflow-type: tm+mt
-source-wordcount: '2353'
+source-wordcount: '2356'
 ht-degree: 4%
 
 ---
@@ -19,7 +19,7 @@ ht-degree: 4%
 
 Esta seção fornecerá uma apresentação detalhada sobre o processo de atualização e as etapas para identificar e resolver conflitos.
 
-A atualização da build deve ser realizada com cuidado, seus impactos devem ser totalmente considerados previamente e o procedimento deve ser concluído com um alto nível de disciplina. Para garantir uma atualização bem-sucedida, verifique se apenas usuários especialistas executam as etapas descritas abaixo. Além disso, é altamente recomendável entrar em contato com o [Atendimento ao cliente do Adobe](https://helpx.adobe.com/br/enterprise/using/support-for-experience-cloud.html) antes de iniciar qualquer atualização.
+A atualização da build deve ser realizada com cuidado, seus impactos devem ser totalmente considerados previamente e o procedimento deve ser concluído com um alto nível de disciplina. Para garantir uma atualização bem-sucedida, verifique se apenas usuários especialistas executam as etapas descritas abaixo. Além disso, é altamente recomendável entrar em contato com o [Atendimento ao cliente do Adobe](https://helpx.adobe.com/br/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html) antes de iniciar qualquer atualização.
 
 Os seguintes pré-requisitos são necessários:
 
@@ -412,4 +412,4 @@ Estas são as etapas para executar uma mesclagem complexa:
 * [Perguntas frequentes de atualização de build](../../platform/using/faq-build-upgrade.md)
 * [Notas de versão do Campaign Classic](../../rn/using/rn-overview.md)
 * [Opções de ajuda e suporte para o Campaign Classic](../../support.md)
-* [Programa do [!DNL Gold Standard]](../../rn/using/gs-overview.md)
+* [Programa de atualização anual do Campaign](../../rn/using/rn-overview.md)

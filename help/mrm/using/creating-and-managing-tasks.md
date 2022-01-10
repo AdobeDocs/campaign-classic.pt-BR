@@ -6,10 +6,10 @@ audience: campaign
 content-type: reference
 topic-tags: tasks--resources-and-budgets
 exl-id: cc1200fa-f6d8-4f41-aed1-d1a7f229447a
-source-git-commit: 8b970705f0da6a9e09de9fadb3e1a8c5f4814f9f
+source-git-commit: 98380c18b915cfebc980e68f9840f9d8919eaca4
 workflow-type: tm+mt
 source-wordcount: '3729'
-ht-degree: 100%
+ht-degree: 97%
 
 ---
 
@@ -103,7 +103,7 @@ Eles são selecionados usando o ícone **[!UICONTROL Resources]** na barra de fe
 
 Clique em **[!UICONTROL Ok]** e então insira a taxa de uso: isso representa a carga atribuída ao operador durante a execução da tarefa. Essa taxa é apenas uma indicação e expressa como uma porcentagem.
 
-Por exemplo, para uma tarefa cuja programação de execução é definida em 10 dias, um operador cuja taxa de utilização é 50% estará mobilizado nessa tarefa pelo metade do tempo de trabalho por 10 dias.
+Por exemplo, para uma tarefa cujo cronograma de execução é definido em 10 dias, um operador cuja taxa de uso é 50% estará mobilizado nessa tarefa pelo metade do tempo de trabalho por 10 dias.
 
 Para cada operador, você pode inserir uma carga de trabalho agendada e uma carga de trabalho real. Essas durações também são somente para fins de informação.
 
@@ -325,7 +325,7 @@ No campo **[!UICONTROL Marketing resource]**, defina o recurso que deseja gerenc
 
 A opção **[!UICONTROL Publish the marketing resource]** permite automatizar a publicação de recursos: uma vez que a tarefa é **[!UICONTROL Finished]**, o status do recurso alterna automaticamente para **[!UICONTROL Published]**, mesmo que não tenha sido enviado para aprovação ou tenha sido aprovada, incluindo se o revisor que conclui a tarefa não é o revisor de conteúdo definido no recurso.
 
-O botão **[!UICONTROL Publish the resource]** é disponibilizado e o revisor de publicação de recursos recebe um email de notificação para que saiba que o recurso está pronto para ser publicado. Na guia **[!UICONTROL Edit > Tracking]**, a revisão e a publicação pelo revisor da tarefa ficam visíveis. Se um fluxo de trabalho de pós-processamento de recurso tiver sido definido, ele será executado agora.
+O **[!UICONTROL Publish the resource]** O botão é disponibilizado e o revisor de publicação de recursos recebe um email de notificação para que saiba que o recurso está pronto para ser publicado. Na guia **[!UICONTROL Edit > Tracking]**, a revisão e a publicação pelo revisor da tarefa ficam visíveis. Se um fluxo de trabalho de pós-processamento de recurso tiver sido definido, ele será executado agora.
 
 ![](assets/mrm_resource_audit_tab.png)
 
@@ -434,6 +434,7 @@ Uma tarefa pode ser: **[!UICONTROL Scheduled]**, **[!UICONTROL In progress]**, *
 >
 >* O status da tarefa é atualizado automaticamente.
 >* Mesmo que o período de validade seja concluído, as tarefas que não foram fechadas ainda aparecerão na lista de tarefas em andamento. Um aviso notifica os operadores que a tarefa está atrasada.
+
 >
 
 

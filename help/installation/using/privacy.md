@@ -6,9 +6,9 @@ audience: installation
 content-type: reference
 topic-tags: prerequisites-and-recommendations-
 exl-id: 0a3473bf-0528-486d-a799-8db86fece522
-source-git-commit: bd9f035db1cbad883e1f27fe901e34dfbc9c1229
+source-git-commit: 1d32161d60f6b382188012b104c642f504e28645
 workflow-type: tm+mt
-source-wordcount: '890'
+source-wordcount: '892'
 ht-degree: 21%
 
 ---
@@ -57,9 +57,9 @@ Para melhorar a segurança, um mecanismo de assinatura para rastrear links em em
 >
 >Quando um URL assinado mal formado é clicado, esse erro é retornado: &quot;O URL solicitado &#39;...&#39; não foi encontrado.&quot;
 
-Além disso, desde a Campanha 20.2 e o [!DNL Gold Standard] , você pode usar um aprimoramento para desativar URLs gerados em compilações anteriores. Esse recurso é desativado por padrão. Você pode entrar em contato com o [Atendimento ao cliente](https://helpx.adobe.com/br/enterprise/using/support-for-experience-cloud.html) para ativar este recurso.
+Além disso, desde a Campanha 20.2 e o [!DNL Gold Standard] , você pode usar um aprimoramento para desativar URLs gerados em compilações anteriores. Esse recurso é desativado por padrão. Você pode entrar em contato com o [Atendimento ao cliente](https://helpx.adobe.com/br/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html) para ativar este recurso.
 
-Se você estiver executando [!DNL Gold Standard] 19.1.4, você pode enfrentar problemas com deliveries de notificação por push usando links de rastreamento ou deliveries usando tags de âncora. Nesse caso, recomendamos que você desative a assinatura do URL.
+Se estiver executando na build 19.1.4, poderá enfrentar problemas com os deliveries de notificação por push usando links de rastreamento ou deliveries usando tags de âncora. Nesse caso, recomendamos que você desative a assinatura do URL.
 
 Se você estiver executando o Campaign nas instalações ou em uma arquitetura híbrida, entre em contato com o [Atendimento ao cliente](https://helpx.adobe.com/br/enterprise/using/support-for-experience-cloud.html) para desabilitar a assinatura do URL.
 

@@ -6,48 +6,26 @@ audience: migration
 content-type: reference
 topic-tags: migration-procedure
 exl-id: d666bc0b-596a-4908-9364-7df5bb8d68d0
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: 8610d29a3df1080f1622a2cb3685c0961fb40092
 workflow-type: tm+mt
-source-wordcount: '523'
+source-wordcount: '322'
 ht-degree: 2%
 
 ---
 
-# Antes de iniciar a migração{#before-starting-migration}
+# Pré-requisitos{#before-starting-migration}
 
 ![](../../assets/v7-only.svg)
 
+Esta página lista etapas específicas a serem executadas antes de iniciar o processo de migração. Você também deve se referir a [esta página](about-migration.md) para obter mais orientações.
+
 >[!NOTE]
 >
->Neste documento, comandos vinculados ao banco de dados são fornecidos como exemplo. Elas podem variar dependendo de sua configuração. Entre em contato com o administrador do banco de dados.
+>Neste documento, os comandos são fornecidos como amostras. Elas podem variar dependendo da sua configuração.
 
-## Avisos {#warnings}
-
-* O processo de migração deve ser executado somente por usuários especialistas. Você deve ser assistido por pelo menos um especialista em banco de dados, um administrador de sistema e um desenvolvedor de aplicativos da Adobe Campaign.
-* Antes de iniciar a migração, verifique se os sistemas e componentes do sistema usados são compatíveis com o v7. Consulte o [matriz de compatibilidade](../../rn/using/compatibility-matrix.md).
-* Se você usar o Adobe Campaign Cloud Messaging (mid-sourcing), entre em contato com o Adobe antes de iniciar todo o procedimento de migração.
-* Antes de iniciar um processo de migração, você **must** faça backup dos seus dados.
-* O processo de migração pode levar vários dias para ser concluído.
-* O Adobe Campaign v7 é mais rigoroso que as versões 5.11 e 6.02 em termos de configuração. Isso é principalmente para evitar problemas como corrupção de dados e preservar a integridade dos dados no banco de dados. Consequentemente, certas funções oferecidas na v5.11 e v6.02 podem não funcionar mais no v7 e podem, portanto, precisar ser adaptadas após a migração. Antes de colocar em produção qualquer item, sugerimos que você teste sistematicamente todas as configurações, especialmente os workflows necessários para usar o Adobe Campaign.
-
-### Versão instalada {#installed-version}
-
-Antes de migrar, você deve instalar a build mais recente da versão atual que você está usando.
-
-Verifique a versão no seu servidor acessando o **[!UICONTROL Help> About]** no console do cliente usando o **pdump nlserver** comando.
-
-### Backup de dados {#data-backup}
-
-Antes de iniciar um processo de migração, você **must** faça backup dos seus dados.
-
-### Ambiente {#environment}
-
-* Não é possível alterar o tipo de mecanismo de banco de dados (DBMS). Por exemplo, não é possível alternar de um mecanismo PostgreSQL para um mecanismo de Oracle. No entanto, é possível alternar de um mecanismo de Oracle 8 para um mecanismo de Oracle 10.
-* Não é possível ir de um banco de dados não Unicode para um banco de dados Unicode.
-
-### Recomendações {#recommendation}
-
-Como o procedimento de migração é delicado, recomendamos ler este documento completamente antes de iniciar o procedimento.
+1. Verifique a versão do Adobe Campaign: antes de migrar, instale a build mais recente da versão atual que você está usando.
+1. Faça backup dos dados.
+1. Verifique seu ambiente: não é possível alterar o sistema de mecanismo de banco de dados (DBMS). Por exemplo, não é possível alternar de um mecanismo PostgreSQL para um mecanismo de Oracle. No entanto, você pode alternar para a versão mais recente do mecanismo de banco de dados. Observe que não é possível ir de um banco de dados não Unicode para um banco de dados Unicode.
 
 ## Etapas de migração {#migration-steps}
 
@@ -75,6 +53,6 @@ Na v7, **interno** e **administrador** a conexão do operador deve ser protegida
 nlserver config -internalpassword
 ```
 
->[!IMPORTANT]
+>[!CAUTION]
 >
 >O **interno** a senha deve ser idêntica para todos os servidores de rastreamento. Para obter mais informações, consulte [Identificador interno](../../installation/using/configuring-campaign-server.md#internal-identifier) e [Permissões](../../platform/using/access-management.md) seções.

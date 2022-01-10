@@ -6,10 +6,10 @@ audience: campaign
 content-type: reference
 topic-tags: campaign-optimization
 exl-id: c23212f2-fdf8-4820-b389-546f7c84db27
-source-git-commit: 5806690f764d2e5dfb5651597ff68b33bb399b44
+source-git-commit: 52aa7b268d5eb83354c3a4d8687ced95300538e2
 workflow-type: tm+mt
-source-wordcount: '3253'
-ht-degree: 100%
+source-wordcount: '3285'
+ht-degree: 98%
 
 ---
 
@@ -64,6 +64,8 @@ Para criar e configurar uma regra de tipologia **[!UICONTROL Pressure]**, siga e
    >[!NOTE]
    >
    >Os deliveries agendados só serão levados em conta se a opção **[!UICONTROL Take the deliveries into account in the provisional calendar]** for selecionada. Para obter mais informações, consulte [Definição do período](#setting-the-period).
+   >
+   >Essa opção não está disponível no Campaign v8.
 
 1. Defina o método para calcular o número mais alto de mensagens.
 
@@ -149,28 +151,29 @@ O tipo de agrupamento permite estender o campo **[!UICONTROL Period considered]*
 
 Por exemplo, uma regra de pressão que define um limite de 2 mensagens por semana, com um agrupamento para cada mês, impedirá o delivery de mais de 2 mensagens na mesma semana E no mesmo mês. Aviso, se o período se sobrepõe dois meses, o limite de cálculo leva em consideração os deliveries desses dois meses e, portanto, poderá impedir todos os novos deliveries durante o segundo mês.
 
->[!NOTE]
->
->Por padrão, somente os deliveries já enviados são considerados ao calcular o limite. Marque a opção **[!UICONTROL Take the deliveries into account in the provisional calendar]** se também desejar considerar os deliveries agendados para o período em questão. Nesse caso, o período considerado é dobrado para permitir a integração de deliveries futuros, bem como os anteriores.\
->Para restringir os envios realizados em um período de duas semanas, é possível:
->
->* Insira **15d** no campo **[!UICONTROL Concerned period]**: no cálculo são considerados os deliveries realizados em até duas semanas antes da data do delivery no qual a regra é aplicada,
->
->  ou
->
->* Digite **7d** no campo **[!UICONTROL Period considered]** E verifique a **[!UICONTROL Take the deliveries into account in the provisional calendar]**\
->: são considerados no cálculo os deliveries realizados até 7 dias antes da data de delivery e os programados até 7 dias após a data de delivery.
->
->A data de início do período depende de como o banco de dados está configurado.
+Observe que, por padrão, somente os deliveries já enviados são considerados ao calcular o limite. No Campaign Classic v7, verifique o **[!UICONTROL Take the deliveries into account in the provisional calendar]** se também desejar considerar os deliveries agendados para o período relacionado. Nesse caso, o período considerado é dobrado para permitir a integração de deliveries futuros, bem como os anteriores.
+
+Para restringir os envios realizados em um período de duas semanas, é possível:
+
+1. Insira **15d** no campo **[!UICONTROL Concerned period]**: no cálculo são considerados os deliveries realizados em até duas semanas antes da data do delivery no qual a regra é aplicada,
+
+ou
+
+1. Digite **7d** no campo **[!UICONTROL Period considered]** E verifique a **[!UICONTROL Take the deliveries into account in the provisional calendar]** : são considerados no cálculo os deliveries realizados até 7 dias antes da data de delivery e os programados até 7 dias após a data de delivery.
+
+   >[!AVAILABILITY]
+   >Este método não está disponível no Campaign v8.
+
+A data de início do período depende de como o banco de dados está configurado.
 
 Por exemplo, ao aplicar uma regra de pressão de 15 dias sem agrupar a um delivery com data 11/12, serão considerados os deliveries entre 27/11 e 12/12. Se a regra de pressão considerar os envios do calendário provisional, todas as programações entre 27/11 e 27/12 são consideradas. Por fim, ao configurar na regra um agrupamento por mês, todos os envios em novembro e dezembro são considerados para calcular o limite (de 01/11 a 31/12).
 
->[!CAUTION]
->
->**Casos frequentes**
->Para garantir que os deliveries da semana atual do calendário não sejam levados em conta, assim como também não correr o risco de considerar a semana anterior no limite de cálculo, especifique o **[!UICONTROL Period considered]** como &quot;0&quot; e selecione &quot;Grouping per calendar week&quot; como o **[!UICONTROL Period type]**.
-> 
->Quando um período é maior que 0 (1 por exemplo), o limite de cálculo pode considerar os envios do dia anterior. Portanto, se o dia anterior corresponde à semana do calendário anterior e o tipo de período selecionado é o &#39;Agrupamento por semana do calendário&#39;, então toda a semana anterior é considerada para o limite de cálculo.
+
+**Casos frequentes**
+
+Para garantir que os deliveries da semana atual do calendário não sejam levados em conta, assim como também não correr o risco de considerar a semana anterior no limite de cálculo, especifique o **[!UICONTROL Period considered]** como &quot;0&quot; e selecione &quot;Grouping per calendar week&quot; como o **[!UICONTROL Period type]**.
+
+Quando um período é maior que 0 (1 por exemplo), o limite de cálculo pode considerar os envios do dia anterior. Portanto, se o dia anterior corresponde à semana do calendário anterior e o tipo de período selecionado é o &#39;Agrupamento por semana do calendário&#39;, então toda a semana anterior é considerada para o limite de cálculo.
 
 **Exemplo:**
 
@@ -333,6 +336,9 @@ Primeiro, configure a regra de pressão.
    ![](assets/campaign_opt_pressure_example_1.png)
 
    São consideradas no cálculo os deliveries realizados até 7 dias antes da data de delivery e os programadas até 7 dias após a data de delivery. Para obter mais informações, consulte [Definição do período](#setting-the-period).
+
+   >[!AVAILABILITY]
+   >Os deliveries agendados não podem ser considerados no Campaign v8.
 
 1. Na guia **[!UICONTROL Typologies]**, vincule a regra a uma tipologia de campanha.
 1. Salve as alterações.

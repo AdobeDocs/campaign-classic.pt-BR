@@ -6,7 +6,7 @@ audience: interaction
 content-type: reference
 topic-tags: advanced-parameters
 exl-id: d4acf99b-cef4-48f7-b4cd-c032ec12592f
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: 07a5742c6f142c786ad8ba2f8774e7e90e8cd191
 workflow-type: tm+mt
 source-wordcount: '153'
 ht-degree: 100%
@@ -15,7 +15,7 @@ ht-degree: 100%
 
 # Exemplo de extensão{#extension-example}
 
-![](../../assets/v7-only.svg)
+![](../../assets/common.svg)
 
 No caso de um contato de entrada (call center ou site da Web), as ofertas mais relevantes são sugeridas para um determinado contato usando um conjunto de regras de qualificação. Para enriquecer os critérios de qualificação de suas ofertas, estenda o schema **nms:interação**.
 

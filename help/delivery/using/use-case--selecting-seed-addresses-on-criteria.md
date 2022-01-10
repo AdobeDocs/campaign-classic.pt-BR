@@ -6,10 +6,10 @@ audience: delivery
 content-type: reference
 topic-tags: using-seed-addresses
 exl-id: 091648b8-bf2d-4595-8be3-287f1ac48edd
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: 98380c18b915cfebc980e68f9840f9d8919eaca4
 workflow-type: tm+mt
 source-wordcount: '838'
-ht-degree: 100%
+ht-degree: 96%
 
 ---
 
@@ -23,7 +23,7 @@ Nesse caso de uso, o site **Minha biblioteca online** gostaria de personalizar s
 
 Em conjunto com o departamento de compras, o usuário responsável pelos deliveries criou um boletim informativo para assinantes que compraram romances policiais.
 
-Para compartilhar o resultado final de sua colaboração com eles, o gerenciador de delivery decide adicionar seus colegas do departamento de compras ao delivery como seed addresses. A utilização de uma condição dinâmica permite economizar tempo na configuração e na atualização de endereços.
+Para compartilhar o resultado final de sua colaboração com eles, o gerente de delivery decide adicionar seus colegas do departamento de compras ao delivery como seed addresses. A utilização de uma condição dinâmica permite economizar tempo na configuração e na atualização de endereços.
 
 Para usar a condição dinâmica, você deve ter:
 

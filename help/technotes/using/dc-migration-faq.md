@@ -6,7 +6,7 @@ feature: Overview
 role: User
 level: Beginner
 exl-id: a9cd08b0-55c2-4405-9fb8-f0c623cd4ccb
-source-git-commit: 1f050ada481a7307a59ea6c81290bb0b24a3bf6c
+source-git-commit: 1d32161d60f6b382188012b104c642f504e28645
 workflow-type: tm+mt
 source-wordcount: '2243'
 ht-degree: 62%
@@ -281,5 +281,5 @@ Os impactos globais durante a migração estão listados abaixo.
 ## Suporte e outros links úteis{#support}
 
 * [Migração para o Adobe Managed Services (Nuvem pública)](dc-migration.md)
-* [Atualização do Gold Standard](../../rn/using/gs-overview.md)
+* [Atualização anual da campanha](../../rn/using/rn-overview.md#yeary-upgrade)
 * [Perguntas frequentes de atualização de build](../../platform/using/faq-build-upgrade.md)
