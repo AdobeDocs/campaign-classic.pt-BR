@@ -7,9 +7,9 @@ content-type: reference
 topic-tags: sending-messages-on-mobiles
 exl-id: a2783a5e-6d38-41a1-b5c6-24ab489116f8
 source-git-commit: b174b8283d77a1b5eb535c0c46ba4a428bd66eef
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1697'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -27,7 +27,7 @@ Para enviar para um celular, você precisa:
 
 >[!NOTE]
 >
-> Para deliveries de SMS, a tipologia deve estar usando uma afinidade de SMS específica criada em **one** contêiner dedicado do servidor de aplicativos. [Saiba mais](../../installation/using/configure-delivery-settings.md#managing-outbound-smtp-traffic-with-affinities)
+> Para envio de SMS, a tipologia deve estar usando uma afinidade de SMS específica criada em **um** container dedicado do servidor de aplicativos. [Saiba mais](../../installation/using/configure-delivery-settings.md#managing-outbound-smtp-traffic-with-affinities)
 
 ## Criar uma conta externa SMPP {#creating-an-smpp-external-account}
 
