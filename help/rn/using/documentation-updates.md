@@ -47,7 +47,7 @@ Adição da opção de atualização em lote na atividade do conector CRM. [Leia
 
 ### Dezembro de 2021{#dec-2021}
 
-Notas de versão do Campaign Classic v7 foram reorganizadas para simplificar a navegação. [Leia mais](rn-overview.md)
+As notas de versão do Campaign Classic v7 foram reorganizadas para simplificar a navegação. [Leia mais](rn-overview.md)
 
 A documentação sobre Edição de formulários no Campaign foi atualizada e aprimorada. [Leia mais](../../configuration/using/editing-forms.md)
 
@@ -63,7 +63,7 @@ Adição de requisitos sobre permissões de IMS para implementar a integração 
 
 Atualização da data de término da vida útil do conector de dados do Adobe Analytics de 1 de março de 2022 para 17 de agosto de 2022. [Leia mais](deprecated-features.md)
 
-Adição de um link para a documentação do SDK móvel do Adobe Experience Platform para saber como configurar a extensão do Campaign no Adobe Launch. [Leia mais](../../delivery/using/integrating-campaign-sdk-into-the-mobile-application.md)
+Adição de um link para a documentação do SDK móvel da Adobe Experience Platform para saber como configurar a extensão do Campaign no Adobe Launch. [Leia mais](../../delivery/using/integrating-campaign-sdk-into-the-mobile-application.md)
 
 Adição de uma seção sobre como usar o JavaScript para calcular valores, trocar dados e executar operações específicas usando chamadas SOAP.[Leia mais](../../workflow/using/javascript-scripts-and-templates.md)
 

@@ -27,7 +27,7 @@ _10 de janeiro de 2022_
 
 Várias melhorias de segurança foram realizadas nas contas da FDA:
 
-* Os drivers ODBC agora são instalados diretamente com terceiros da Adobe Campaign. As etapas manuais não são mais necessárias para instalar esses drivers.
+* Os drivers ODBC agora são instalados diretamente com terceiros do Adobe Campaign. As etapas manuais não são mais necessárias para instalar esses drivers.
 * Ao configurar sua conta externa FDA, agora é possível fazer logon em sua conta do Snowflake usando a autenticação do par de chaves para segurança de autenticação aprimorada. [Leia mais](../../installation/using/configure-fda-snowflake.md)
 * Ao configurar sua conta externa FDA, agora é possível fazer logon em sua conta do Azure synapse Analytics usando a identidade gerenciada atribuída pelo sistema. [Leia mais](../../installation/using/configure-fda-synapse.md#azure-external)
 * Todas as referências à biblioteca log4j foram removidas do Campaign para garantir a segurança ideal.
@@ -39,7 +39,7 @@ Várias melhorias de segurança foram realizadas nas contas da FDA:
    Correções críticas foram aplicadas em relação à API da Web do Microsoft Dynamics Connector:
 
    * Correção de um problema durante uma importação acionada por um workflow, que fazia com que os valores nulos de campos do tipo string fossem salvos como Null em vez de valores vazios.
-   * Correção de um problema que resultava no seguinte erro para importação ou exportação de dados usando chamadas de API da Web: &quot;URI inválido: o esquema de URI é muito longo&quot;.
+   * Correção de um problema que resultava no seguinte erro para importação ou exportação de dados usando chamadas de API da Web: “URI inválido: o esquema de URI é muito longo”.
    * Correção de vários problemas ao importar, a partir do Microsoft Dynamics 365, dados contendo campos de pesquisa.
 
 * Conector FDA do Google BigQuery
@@ -49,7 +49,7 @@ Várias melhorias de segurança foram realizadas nas contas da FDA:
 
 **Outras alterações**
 
-* Após a desativação, as atividades de ação Microsoft CRM, Salesforce e Oracle CRM On Demand foram removidas da interface. Para configurar a sincronização de dados entre o Adobe Campaign e um sistema CRM, você pode usar a atividade CRM connector . [Leia mais](../../workflow/using/crm-connector.md)
+* Após a desativação, as atividades de ação Microsoft CRM, Salesforce e Oracle CRM On Demand foram removidas da interface. Para configurar a sincronização de dados entre o Adobe Campaign e um sistema CRM, você pode usar a atividade do conector CRM. [Leia mais](../../workflow/using/crm-connector.md)
 * O **[!UICONTROL Encrypted identifier]** foi adicionado ao esquema do visitante (nms:visitor). Esse campo é calculado e deve ser usado para aplicativos web. Isso se aplica quando o canal Line é configurado na instância mid-sourcing.
 * As fontes de dados do CRM agora podem ser usadas com o **Alterar fonte de dados** atividade .
 * Uma nova opção foi adicionada na **Gerenciamento de erros** propriedades de atividades de workflow: O **Abortar no erro** a opção interromperá automaticamente o fluxo de trabalho. Não será possível reiniciá-lo posteriormente (NEO29661). [Leia mais](../../workflow/using/advanced-parameters.md#in-case-of-errors)

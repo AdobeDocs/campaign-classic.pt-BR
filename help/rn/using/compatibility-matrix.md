@@ -40,7 +40,7 @@ Para saber mais sobre itens obsoletos, visite [esta página](../../rn/using/depr
 <tr> 
 <td>CentOs</td>
 <td>
-<p>8.x (64 bits) </br><strong>Importante:</strong> o CentOS Linux 8 atingirá o fim da vida útil (EOL) em 31 de dezembro de 2021. Para obter mais informações, consulte a página <a href="../../rn/using/deprecated-features.md">Recursos obsoletos</a>.</p>
+<p>8.x (64 bits)  </br><strong>Importante:</strong> o CentOS Linux 8 atingirá o fim da vida útil (EOL) em 31 de dezembro de 2021. Para obter mais informações, consulte a página <a href="../../rn/using/deprecated-features.md">Recursos obsoletos</a>.</p>
 <p>7.x (64 bits)</p>
 <p><strong>Importante:</strong> se você estiver usando o RHEL, deve desativar o SELinux ou fazer com que seus arquitetos gravem regras personalizadas de SELinux para verificar se um SELinux habilitado não está causando problemas nas operações do Campaign.</p>
 </td>
@@ -130,7 +130,7 @@ Para saber mais sobre itens obsoletos, visite [esta página](../../rn/using/depr
 <p>19c</p>
 <p>18c</p>
 <p>12c</p>
-<p>11g  R2</p>
+<p>11g   R2</p>
 </td>
 </tr>
 <tr>
@@ -253,7 +253,7 @@ Além disso, **Híbrido** e **No local** Os ambientes também podem conectar o C
 <p>19c</p>
 <p>18c</p>
 <p>12c</p>
-<p>11g </p>
+<p>11g  </p>
 </td>
 <td>v7.0 mínimo</td>
 </tr>

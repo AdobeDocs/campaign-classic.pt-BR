@@ -9,7 +9,7 @@ exl-id: d60d67de-6618-4f3b-be4a-ad7633ab5645
 source-git-commit: 0a7cdd53640bb3d96ff9bc2de4aa4c1849e32c83
 workflow-type: tm+mt
 source-wordcount: '1707'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -62,7 +62,7 @@ Os clientes são aconselhados a verificar se utilizam o recurso/funcionalidade e
    <td><p>A partir da versão do Campaign 21.1, o Relatório de monitoramento técnico da avaliação do delivery está obsoleto.</p>
    <p>Se necessário, você pode receber esse relatório diariamente por email até a data de remoção do recurso. Para solicitá-lo, abra um <a href="https://helpx.adobe.com/br/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html">Caso de suporte</a> específico e indique o nome da instância e os endereços de email para os quais enviar o relatório.</p> 
    <p>A Adobe recomenda que você interaja com a Equipe de avaliação do delivery a fim de definir as melhores ferramentas para monitorar o desempenho da avaliação do delivery da instância.</p>
-  <p><em>Data de remoção do Target: Início de 2022</em></p>
+  <p><em>Data de remoção do Target: começo de 2022</em></p>
   </td>
  </tr>
   <tr>
@@ -115,7 +115,7 @@ Esta seção lista os recursos e funcionalidades removidos do Campaign Classic.
    <td>A partir da versão 19.1 do Campaign, as APIs do Campaign Classic estarão disponíveis em uma página dedicada. Se estiver usando o arquivo jsapi.chm legado, agora deverá consultar a <a href="https://experienceleague.adobe.com/developer/campaign-api/api/index.html?lang=pt-BR">nova versão online</a>.</td>
   </tr> 
   <tr> 
-   <td>Orquestração de campanha  - Marketing preditivo</td>
+   <td>Orquestração de campanha   - Marketing preditivo</td>
    <td>A partir da versão 18.10 do Campaign, os recursos de marketing preditivo não estarão mais disponíveis.</td>
   </tr> 
   <tr> 
