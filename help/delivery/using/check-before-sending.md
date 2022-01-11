@@ -6,9 +6,9 @@ content-type: reference
 topic-tags: deliveries-best-practices
 exl-id: 50d326b0-3c23-4dbf-9df6-d32b48e30f69
 source-git-commit: b174b8283d77a1b5eb535c0c46ba4a428bd66eef
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '882'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -96,7 +96,7 @@ Você pode:
 
 * Depois que o email for enviado, verifique o cabeçalho para saber a partir de qual endereço IP o delivery foi enviado. O administrador de email deve ajudar você a obter as informações do cabeçalho.
 
-* Para deliveries de SMS, verifique se o canal SMS tem uma afinidade dedicada limitada a **one** contêiner do servidor de aplicativos. [Saiba mais](../../installation/using/configure-delivery-settings.md#managing-outbound-smtp-traffic-with-affinities)
+* Para deliveries de SMS, verifique se o canal SMS tem uma afinidade dedicada limitada a **um** container do servidor de aplicativos. [Saiba mais](../../installation/using/configure-delivery-settings.md#managing-outbound-smtp-traffic-with-affinities)
 
 >[!NOTE]
 >
