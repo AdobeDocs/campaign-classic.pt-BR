@@ -7,9 +7,9 @@ content-type: reference
 topic-tags: interaction-overview
 exl-id: 9e199b7c-9307-4797-bf86-7940388555bc
 source-git-commit: 98380c18b915cfebc980e68f9840f9d8919eaca4
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1094'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -64,7 +64,7 @@ Abaixo está a definição dos elementos principais de interação.
 * **Modo Unitário**: um único contato é processado de cada vez. Esse modo geralmente é usado para interações de entrada e mensagens transacionais.
 * **Modo de identificação**: refere-se ao status de um contato.
 
-   * **[!UICONTROL explicit]** : o contato é identificado após entrar na interface do canal.
+   * **[!UICONTROL explicit]** : o contato é identificado após fazer logon na interface do canal.
    * **[!UICONTROL implicit]** : o contato foi identificado por um cookie (permanente ou de sessão). Ele pode ser processado como um contato anônimo ou identificado.
    * **[!UICONTROL anonymous]** : o contato não pode ser identificado.
 
