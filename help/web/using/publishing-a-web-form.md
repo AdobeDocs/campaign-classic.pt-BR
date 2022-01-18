@@ -7,9 +7,9 @@ content-type: reference
 topic-tags: web-forms
 exl-id: 1c66b8e8-7590-4767-9b2f-a9a509df4508
 source-git-commit: 98380c18b915cfebc980e68f9840f9d8919eaca4
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '963'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -69,7 +69,7 @@ A opção **[!UICONTROL Auto-load data referenced in the form]** permite pré-ca
 
 A opção **[!UICONTROL Load additional data]** permite adicionar informações que não são usadas nas páginas do formulário, mas ainda serão pré-carregadas.
 
-Você pode, por exemplo, pré-carregar o gênero do recipient e direcioná-lo automaticamente para a página apropriada por meio de uma caixa de teste.
+É possível, por exemplo, pré-carregar o gênero do recipient e direcionar automaticamente para a página adequada através de uma caixa de teste.
 
 ![](assets/s_ncs_admin_survey_preload_ex.png)
 
