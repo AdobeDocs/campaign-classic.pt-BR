@@ -7,9 +7,9 @@ content-type: reference
 topic-tags: monitoring-deliveries
 exl-id: cfd8f5c9-f368-4a31-a1e2-1d77ceae5ced
 source-git-commit: 98380c18b915cfebc980e68f9840f9d8919eaca4
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2614'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -37,13 +37,13 @@ Além disso, a quarentena ajuda a reduzir os custos de envio do SMS, excluindo n
 
 A **quarentena** se aplica somente a um endereço, não ao próprio perfil. Isso significa que, se dois perfis tiverem o mesmo endereço de email, eles serão afetados se o endereço estiver em quarentena.
 
-Da mesma forma, um perfil cujo endereço de email está em quarentena poderia atualizar seu perfil e inserir um novo endereço e poderia ser alvo de ações de delivery novamente.
+Da mesma forma, um perfil cujo endereço de email está em quarentena poderia atualizar seu perfil e inserir um novo endereço, podendo então ser alvo de ações de delivery novamente.
 
-Por outro lado, com a inclusão na **lista de bloqueios**, o perfil não será mais direcionado por qualquer delivery, por exemplo, depois do cancelamento de inscrição (recusa).
+Por outro lado, com a inclusão na **lista de bloqueios**, o perfil não será mais alvo de nenhum delivery como, por exemplo, depois do cancelamento de inscrição (recusa).
 
 >[!NOTE]
 >
->Quando um usuário responde a uma mensagem SMS com uma palavra-chave, como &quot;PARAR&quot;, para recusar os deliveries de SMS, seu perfil não é adicionado à lista de bloqueios, como no processo de recusa de email. O número de telefone do perfil é enviado para quarentena, para que o usuário continue recebendo mensagens de email.
+>Quando um usuário responde a uma mensagem SMS com uma palavra-chave, como “PARAR” para recusar deliveries de SMS, seu perfil não é incluído na lista de bloqueios como no processo de recusa de email. O número de telefone do perfil é enviado para quarentena, para que o usuário continue recebendo mensagens de email.
 
 ## Identificação de endereços em quarentena {#identifying-quarantined-addresses}
 
