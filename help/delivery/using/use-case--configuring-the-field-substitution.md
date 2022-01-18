@@ -7,9 +7,9 @@ content-type: reference
 topic-tags: using-seed-addresses
 exl-id: 3f567b2d-6f98-4831-af84-7db17fd12c6e
 source-git-commit: 98380c18b915cfebc980e68f9840f9d8919eaca4
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '448'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -23,9 +23,9 @@ Essa substituição permite economizar tempo ao criar o delivery: em vez de adic
 
 ## Contexto {#context}
 
-Nesse caso de uso, o site **Minha biblioteca online** gostaria de enviar um desconto aos seus clientes, com base em seu gênero literário favorito.
+Nesse caso de uso, o site **Minha biblioteca online** gostaria de enviar um desconto aos seus clientes, com base no gênero literário favorito deles.
 
-O gerenciador de delivery integrou um campo de personalização vinculado ao gênero favorito em seu email. O objetivo é usar alguns seed addresses: esses seed addresses têm o campo de personalização em sua tabela, mas sem nenhum valor salvo nele.
+O gerente de delivery integrou um campo de personalização vinculado ao gênero favorito no email. O objetivo é usar alguns seed addresses: esses seed addresses têm o campo de personalização em sua tabela, mas sem nenhum valor salvo nele.
 
 Para usar a substituição de campo aleatório, você deve ter:
 
