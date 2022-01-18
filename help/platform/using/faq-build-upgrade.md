@@ -1,19 +1,19 @@
 ---
 product: campaign
-title: Perguntas frequentes de atualização de build
+title: Perguntas frequentes sobre atualização de build
 description: Perguntas frequentes sobre atualizações de build do Campaign
 audience: platform
 content-type: reference
 topic-tags: starting-with-adobe-campaign
 exl-id: 85e2135d-a1a3-44f0-a4f9-de38db5c8726
 source-git-commit: 1d32161d60f6b382188012b104c642f504e28645
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2023'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
-# Perguntas frequentes de atualização de build {#build-upgrade-faq}
+# Perguntas frequentes sobre atualização de build {#build-upgrade-faq}
 
 ![](../../assets/v7-only.svg)
 
@@ -21,7 +21,7 @@ O Adobe Campaign é atualizado regularmente. Se você conhece as [Notas de vers�
 
 É imprescindível que nossos clientes executem a versão mais recente do Adobe Campaign. Isso também nos permite ajudar com muito mais eficiência em caso de problemas. Identificar, reproduzir e corrigir um problema em uma build antiga geralmente leva mais tempo, sem mencionar que alguns problemas que você pode encontrar podem muito bem já terem sido corrigidos em uma nova versão da build.
 
-Como usuário hospedado, você se beneficia automaticamente da atualização anual do Campaign com a versão estável mais recente, sem ter de tomar nenhuma ação. Os clientes locais e híbridos também podem se beneficiar desta versão. Se você migrar de uma compilação antiga, recomendamos atualizar primeiro para essa versão. [Saiba mais](../../rn/using/rn-overview.md).
+Como usuário hospedado, você se beneficia automaticamente da atualização anual do Campaign com a versão estável mais recente, sem precisar de nenhuma ação. Clientes locais e híbridos também podem se beneficiar dessa versão. Se você migrar de uma compilação antiga, recomendamos atualizar primeiro para essa versão. [Saiba mais](../../rn/using/rn-overview.md).
 
 ## O que é uma atualização de build?
 
@@ -104,7 +104,7 @@ Identifique tempos de tráfego baixos ou de baixo volume que seriam ideais para 
 
 Revise nossa [lista de verificação de atualização de build abaixo](#check-list) e seus planos de teste e verifique se os recursos que podem executar esses testes estão disponíveis dentro de 24 a 48 horas da conclusão de uma atualização.
 
-Para saber mais, [consulte este documento](https://helpx.adobe.com/campaign/kb/acc-build-upgrade.html).
+Para saber mais, [consulte este documento](https://helpx.adobe.com/br/campaign/kb/acc-build-upgrade.html).
 
 ## As atualizações de build podem ser realizadas à noite ou fora do horário comercial?
 
