@@ -7,9 +7,9 @@ role: User
 level: Beginner
 exl-id: 07c1f4a3-cf16-4a9b-b402-e13258799f91
 source-git-commit: 87067a0cca1a4a7f8ea1137ece6d513d58fcdb42
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '4796'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -23,25 +23,25 @@ Consulte as [Notas de versão do Adobe Campaign Classic](../../rn/using/latest-r
 
 ## 2022
 
-### Janeiro de
+### Janeiro
 
-**Atualizações da documentação que vêm com a versão 7.2.1**
+**Atualizações da documentação que acompanha a versão 7.2.1**
 
-Matriz de compatibilidade atualizada. [Leia mais](compatibility-matrix.md)
+Atualização da matriz de compatibilidade. [Leia mais](compatibility-matrix.md)
 
-Atualização da seção Notas de versão . [Leia mais](rn-overview.md)
+Atualização da seção Notas de versão. [Leia mais](rn-overview.md)
 
 Atualização da configuração da conta externa FDA para o Snowflake. [Leia mais](../../installation/using/configure-fda-snowflake.md)
 
-Atualização da configuração da conta externa FDA para o Azure synapse Analytics. [Leia mais](../../installation/using/configure-fda-synapse.md#azure-external)
+Atualização da configuração da conta externa FDA para o Azure Synapse Analytics. [Leia mais](../../installation/using/configure-fda-synapse.md#azure-external)
 
-Atualização do Google BigQuery FDA Connector. [Leia mais](../../installation/using/configure-fda-google-big-query.md)
+Atualização do conector FDA do Google BigQuery. [Leia mais](../../installation/using/configure-fda-google-big-query.md)
 
-Após a desativação, as atividades de ação Microsoft CRM, Salesforce e Oracle CRM On Demand foram removidas da documentação.
+Após serem descontinuados, o Microsoft CRM, o Salesforce e o Oracle CRM tiveram suas atividades de ações por demanda removidas da documentação.
 
-Nova opção **Abortar no erro** adicionado à seção Gerenciamento de erros do fluxo de trabalho . [Leia mais](../../workflow/using/advanced-parameters.md#in-case-of-errors)
+Nova opção **Abort on error** adicionada à seção Error Management do fluxo de trabalho. [Leia mais](../../workflow/using/advanced-parameters.md#in-case-of-errors)
 
-Adição da opção de atualização em lote na atividade do conector CRM. [Leia mais](../../workflow/using/crm-connector.md)
+Adicionada a opção de atualização em lote na atividade do conector CRM. [Leia mais](../../workflow/using/crm-connector.md)
 
 ## 2021
 
@@ -252,7 +252,7 @@ A matriz de Compatibilidade foi atualizada. [Leia mais](../../rn/using/compatibi
 
 A página de recursos obsoletos e removidos foi atualizada. [Leia mais](../../rn/using/deprecated-features.md)
 
-Notas de versão e matriz de compatibilidade para [!DNL Gold Standard] Agora estão disponíveis em uma página dedicada.
+As Notas de versão e a Matriz de compatibilidade da versão [!DNL Gold Standard] agora estão disponíveis em uma página dedicada.
 [Leia mais](../../rn/using/gold-standard.md).
 
 A integração dos acionadores originalmente baseada na configuração da autenticação oAUTH para acessar o pipeline, agora foi alterada e movida para o Adobe I/O. [Saiba mais](../../integrations/using/configuring-adobe-io.md)
@@ -450,7 +450,7 @@ Os guias de [instalação](../../installation/using/general-architecture.md), [p
 
 O guia de instalação foi atualizado e sincronizado com a versão mais recente da matriz de compatibilidade. Novos sistemas compatíveis foram adicionados. As ocorrências em sistemas obsoletos e sem suporte foram removidas. [Leia mais](../../installation/using/general-architecture.md)
 
-A matriz de compatibilidade foi atualizada com os conectores do Hadoop 3.0 e Snowflake FDA. [Leia mais](https://helpx.adobe.com/campaign/kb/compatibility-matrix.html)
+A matriz de compatibilidade foi atualizada com os conectores do Hadoop 3.0 e Snowflake FDA. [Leia mais](https://helpx.adobe.com/br/campaign/kb/compatibility-matrix.html)
 
 Uma prática recomendada na afinidade IP foi adicionada ao guia de instalação. [Leia mais](../../installation/using/email-deliverability.md#list-of-ip-addresses-to-use)
 
@@ -468,7 +468,7 @@ O novo parâmetro para a configuração do relatório de URLs está documentado 
 
 A página **Matriz de recursos no local e hospedada do Campaign Classic** foi atualizada com os novos conectores do FDA. [Leia mais](../../installation/using/capability-matrix.md).
 
-A página **Matriz de recursos do Campaign Classic** foi atualizada. [Leia mais](https://helpx.adobe.com/campaign/kb/compatibility-matrix.html)
+A página **Matriz de recursos do Campaign Classic** foi atualizada. [Leia mais](https://helpx.adobe.com/br/campaign/kb/compatibility-matrix.html)
 
 O novo **[!UICONTROL Cleanup of Nmsaddress]** workflow está documentado [aqui](../../production/using/database-cleanup-workflow.md#cleanup-of-nmsaddress).
 
@@ -520,7 +520,7 @@ Sistema de Mensagens Seguras de SMS (TLS) - [Leia mais](https://helpx.adobe.com/
 
 **Outras atualizações de documentação que vêm com a versão**
 
-A documentação MTA aprimorada do Adobe Campaign está disponível. [Leia mais](https://helpx.adobe.com/campaign/kb/acc-campaign-enhanced-mta.html)
+A documentação MTA aprimorada do Adobe Campaign está disponível. [Leia mais](https://helpx.adobe.com/br/campaign/kb/acc-campaign-enhanced-mta.html)
 
 Uma nova seção foi adicionada sobre como solucionar problemas de um workflow que permanece no estado &quot;Start as soon as possible&quot; em uma campanha. [Leia mais](../../production/using/workflow-execution.md#start-as-soon-as-possible-in-campaigns)
 
@@ -582,7 +582,7 @@ As práticas recomendadas para aprimoramentos de desempenho de workflows e deliv
 
 **Novos recursos incluídos na versão 19.1**
 
-Painel de controle - [Leia mais](https://experienceleague.adobe.com/docs/control-panel/using/control-panel-home.html)
+Painel de controle - [Leia mais](https://experienceleague.adobe.com/docs/control-panel/using/control-panel-home.html?lang=pt-BR)
 
 Trilha de auditoria - [Leia mais](../../production/using/audit-trail.md)
 
@@ -606,7 +606,7 @@ A descrição da opção de fluxo de trabalho de pré-processo foi atualizada pa
 
 A nota técnica Experience Cloud Triggers foi atualizada. [Leia mais](../../integrations/using/about-triggers.md)
 
-A lista de mensagens de erro foi atualizada. [Leia mais](https://experienceleague.adobe.com/developer/campaign-errors/error_codes.html)
+A lista de mensagens de erro foi atualizada. [Leia mais](https://experienceleague.adobe.com/developer/campaign-errors/error_codes.html?lang=pt-BR)
 
 Foram adicionadas mais informações sobre métodos de autenticação SOAP para mensagens transacionais. [Leia mais](../../message-center/using/event-description.md)
 
@@ -645,7 +645,7 @@ Foram adicionadas informações sobre o relatório de faturamento.
 Atualização da documentação sobre a integração de públicos-alvo compartilhados.
 [Leia mais](../../integrations/using/configuring-shared-audiences-integration-in-adobe-campaign.md)
 
-As seguintes notas técnicas foram atualizadas: [SMS connector protocol and settings](https://helpx.adobe.com/campaign/kb/sms-connector-protocol-and-settings.html) e [Sequence auto generation](https://helpx.adobe.com/br/campaign/kb/sequence_auto_generation.html#Switchtoadedicatedsequence).
+As seguintes notas técnicas foram atualizadas: [SMS connector protocol and settings](https://helpx.adobe.com/br/campaign/kb/sms-connector-protocol-and-settings.html) e [Sequence auto generation](https://helpx.adobe.com/br/campaign/kb/sequence_auto_generation.html#Switchtoadedicatedsequence).
 
 A seção Technical workflows foi atualizada. [Leia mais](../../workflow/using/about-technical-workflows.md)
 
