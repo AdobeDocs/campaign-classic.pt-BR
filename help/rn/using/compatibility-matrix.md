@@ -7,9 +7,9 @@ role: User
 level: Beginner
 exl-id: b8c1f287-06f4-4c34-8cca-b0c7676abbc2
 source-git-commit: 8610d29a3df1080f1622a2cb3685c0961fb40092
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '720'
-ht-degree: 90%
+ht-degree: 100%
 
 ---
 
@@ -190,7 +190,7 @@ Os sistemas de gerenciamento de relacionamento com o cliente (CRM) compatíveis 
 
 Os bancos de dados externos compatíveis com o [módulo Federated Data Access](../../installation/using/about-fda.md) do Adobe Campaign estão listados abaixo. A compatibilidade depende do seu [modelo de hospedagem](../../installation/using/hosting-models.md).
 
-**Managed Services** (hospedado), **Híbrido** e **No local** Os ambientes podem conectar o Campaign aos seguintes sistemas de banco de dados externos:
+Os ambientes **Managed Services** (hospedado), **Híbrido** e **No local** podem conectar o Campaign aos seguintes sistemas de banco de dados externos:
 
 <table>
 <tbody>
@@ -201,17 +201,17 @@ Os bancos de dados externos compatíveis com o [módulo Federated Data Access](.
 <tr>
 <td>Snowflake</td>
 <td> </td>
-<td>7.2.1 mínimo</td>
+<td>No mínimo 7.2.1</td>
 </tr>
 <tr>
 <td>Google BigQuery</td>
 <td> </td>
-<td>7.2.1 mínimo</td>
+<td>No mínimo 7.2.1</td>
 </tr>
 <tr>
 <td>Amazon Redshift</td>
 <td><p> </p>
-<td>Versão 7.0 mínima 19.1.4</td>
+<td>No mínimo v7.0 19.1.4 </td>
 </td>
 </tr>
 <tr>
@@ -225,12 +225,12 @@ Os bancos de dados externos compatíveis com o [módulo Federated Data Access](.
 <p>9.5.x</p>
 <p>9.4.x</p>
 </td>
-<td>v7.0 19.1.4 mínimo</td>
+<td>No mínimo v7.0 19.1.4</td>
 </tr>
 </tbody>
 </table>
 
-Além disso, **Híbrido** e **No local** Os ambientes também podem conectar o Campaign com:
+Além disso, os ambientes **Híbrido** e **No local** também podem conectar o Campaign com:
 
 <table>
 <tbody>
@@ -240,12 +240,12 @@ Além disso, **Híbrido** e **No local** Os ambientes também podem conectar o C
 <tr>
 <td>Vertica</td>
 <td> </td>
-<td>v7.0 19.1.4 mínimo</td>
+<td>No mínimo v7.0 19.1.4</td>
 </tr>
 <tr>
 <td>Análise do Microsoft Azure Synapse</td>
 <td> </td>
-<td>v7.0 19.1.4 mínimo</td>
+<td>No mínimo v7.0 19.1.4</td>
 </tr>
 <tr>
 <td>Oracle</td>
@@ -255,7 +255,7 @@ Além disso, **Híbrido** e **No local** Os ambientes também podem conectar o C
 <p>12c</p>
 <p>11g  </p>
 </td>
-<td>v7.0 mínimo</td>
+<td>No mínimo v7.0</td>
 </tr>
 <tr><td>SQL Server</td>
 <td>
@@ -265,13 +265,13 @@ Além disso, **Híbrido** e **No local** Os ambientes também podem conectar o C
 <p>2014</p>
 <p>2012 SP1 e SP2</p>
 </td>
-<td>v7.0 mínimo</td>
+<td>No mínimo v7.0</td>
 </tr>
 <tr><td>MySQL</td>
 <td>
 <p>5.7</p>
 </td>
-<td>v7.0 mínimo</td>
+<td>No mínimo v7.0</td>
 </tr>
 <tr>
 <td>Teradata</td>
@@ -281,14 +281,14 @@ Além disso, **Híbrido** e **No local** Os ambientes também podem conectar o C
 <p>15.10</p>
 <p>15.0</p>
 </td>
-<td>v7.0 mínimo</td>
+<td>No mínimo v7.0</td>
 </tr>
 <tr>
 <td>Netezza</td>
 <td>
 <p>7.2</p>
 </td>
-<td>v7.0 mínimo</td>
+<td>No mínimo v7.0</td>
 </tr>
 <tr>
 <td>Sybase</td>
@@ -296,14 +296,14 @@ Além disso, **Híbrido** e **No local** Os ambientes também podem conectar o C
 <p>IQ 16</p>
 <p>ASE 15.7</p>
 </td>
-<td>v7.0 mínimo</td>
+<td>No mínimo v7.0</td>
 </tr>
 <tr>
 <td>SAP HANA</td>
 <td>
 <p>versão 1 SPS 12</p>
 </td>
-<td>v7.0 mínimo</td>
+<td>No mínimo v7.0</td>
 </tr>
 <tr><td>Hadoop via HiveSQL</td>
 <td>
@@ -311,7 +311,7 @@ Além disso, **Híbrido** e **No local** Os ambientes também podem conectar o C
 <p>HDInsight 3.4 (HDP 2.4), 3.5 (HDP 2.5), 3.6 (HDP 2.6))</p>
 <p>Cloudera CDH6.x</p>
 </td>
-<td>v7.0 mínimo</td>
+<td>No mínimo v7.0</td>
 </tr>
 </tbody>
 </table>
@@ -354,7 +354,7 @@ Os sistemas operacionais e navegadores a seguir são **necessários** para usar 
 <p>Microsoft Internet Explorer</p>
 </td>
 <td>
-<p>11º</p>
+<p>11</p>
 </td>
 </tr>
 </tbody>
@@ -427,7 +427,7 @@ Os seguintes navegadores são compatíveis com o Campaign, para [Acesso via web]
 <p>Microsoft Internet Explorer</p>
 </td>
 <td>
-<p>11º</p>
+<p>11</p>
 </td>
 </tr>
 </tbody>
