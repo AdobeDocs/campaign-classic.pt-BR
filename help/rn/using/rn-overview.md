@@ -7,9 +7,9 @@ role: User
 level: Beginner
 exl-id: 7a05fdff-8f9d-4e8d-812e-0f1509db5499
 source-git-commit: 87067a0cca1a4a7f8ea1137ece6d513d58fcdb42
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '913'
-ht-degree: 87%
+ht-degree: 100%
 
 ---
 
@@ -31,13 +31,13 @@ Cada nova build vem com um status que é materializado por uma cor.
 
 ![](assets/do-not-localize/red3.png) **Obsoleto** - Nenhuma implantação. Nenhuma correção de erro. As implementações atuais devem ser atualizadas.
 
-## Ciclo de lançamento
+## Ciclo da versão
 
-O Adobe Campaign é atualizado regularmente. Essa frequência regular atualizações tem como objetivo fazer com que você tenha disponível as mais recentes e melhores atualizações, além de manter seu ambiente protegido e melhorar sua experiência com nosso produto.
+O Adobe Campaign é atualizado regularmente. Essa frequência regular de atualizações tem como objetivo disponibilizar a você as mais recentes e melhores atualizações, além de manter seu ambiente protegido e melhorar sua experiência com nosso produto.
 
-Essa é a razão pela qual acreditamos que é fundamental que você **executar a versão estável mais recente** do Adobe Campaign. Ela também garantirá que você obtenha uma melhor experiência de suporte, já que geralmente é bem mais rápido identificar, reproduzir e corrigir um problema em uma versão recente. Além disso, muitos problemas que você pode encontrar já foram corrigidos nas compilações mais recentes.
+É por isso que acreditamos ser essencial **executar a versão estável mais recente** do Adobe Campaign. Ela também garantirá que você obtenha uma melhor experiência de suporte, já que geralmente é bem mais rápido identificar, reproduzir e corrigir um problema em uma versão recente. Além disso, muitos problemas que você pode encontrar já foram corrigidos nas compilações mais recentes.
 
-Como cliente hospedado, você se beneficia automaticamente da atualização com a versão estável mais recente sem ter de tomar nenhuma ação. Saiba mais na [Seção Atualização anual](#yearly-upgrade). Se você migrar de uma build antiga, o Adobe recomenda atualizar para essa versão primeiro.
+Como usuário hospedado, você se beneficia automaticamente da atualização com a última versão estável, sem realizar nenhuma ação. Saiba mais na [seção de Atualização anual](#yearly-upgrade). Ao migrar de um build antigo, a Adobe recomenda atualizar primeiro para essa versão.
 
 ## Recomendações{#recommendations}
 
@@ -59,13 +59,13 @@ A Adobe e o Adobe Campaign têm o compromisso de fornecer a você a melhor exper
 
 O Adobe Campaign Classic, especificamente, usa uma variedade de tecnologias para fornecer valor. Essa combinação de tecnologias exige que você atualize regularmente suas instâncias do Campaign Classic para garantir que as versões mais atualizadas estejam sendo usadas para oferecer segurança, estabilidade e desempenho superiores.
 
-Como usuário hospedado, você se beneficiará automaticamente da atualização com a build estável mais recente sem ter de tomar nenhuma ação. Saiba mais nas perguntas frequentes abaixo.
+Como usuário hospedado, você se beneficia automaticamente da atualização com o build estável mais recente, sem realizar nenhuma ação. Saiba mais nas perguntas frequentes abaixo.
 
 ### Por que minha empresa precisa dessa atualização?
 
 Como um cliente hospedado, se sua conta precisar atualizar uma ou mais das tecnologias relacionadas ao Campaign Classic, bem como atualizar a compilação e/ou versão atual, você será notificado diretamente pela Adobe.
 
-Como cliente local ou híbrido em execução em uma versão mais antiga, o Adobe incentiva a mudança para a build estável mais recente.
+Como um cliente local ou híbrido em uma versão mais antiga, a Adobe incentiva a transição para o build estável mais recente.
 
 Dessa forma, sua conta ficará protegida contra vulnerabilidades, além de aproveitar a tecnologia de desempenho atualizada. Você também poderá fazer atualizações regulares e com mais facilidade na sua conta, que exigirão menos trabalho e intervenção manual.
 
@@ -141,6 +141,6 @@ Estamos empenhados em garantir que você tenha as informações relevantes do pr
 * [Versões do Painel de controle do Campaign](https://experienceleague.adobe.com/docs/control-panel/using/release-notes.html?lang=pt-BR)
 * [Atualizações mais recentes da documentação](../../rn/using/documentation-updates.md)
 * [Recursos descontinuados e removidos](../../rn/using/deprecated-features.md)
-* [Perguntas frequentes de atualização de build](../../platform/using/faq-build-upgrade.md)
+* [Perguntas frequentes sobre atualização de build](../../platform/using/faq-build-upgrade.md)
 
-Para ser informado sobre novos lançamentos de solução da Experience Cloud, inscreva-se na [Atualização prioritária de produto da Adobe](https://www.adobe.com/br/subscription/priority-product-update.html).
+Para ser informado sobre novos lançamentos de soluções da Experience Cloud, inscreva-se na [Atualização prioritária de produtos da Adobe](https://www.adobe.com/br/subscription/priority-product-update.html).
