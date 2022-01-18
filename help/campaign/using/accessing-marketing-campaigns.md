@@ -7,9 +7,9 @@ content-type: reference
 topic-tags: about-marketing-campaigns
 exl-id: 1278bda1-f83c-4d38-8042-e6611755cf36
 source-git-commit: 89c007775d4df7c6d50951283efe764c3c424d91
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1271'
-ht-degree: 83%
+ht-degree: 100%
 
 ---
 
@@ -162,32 +162,32 @@ Você pode acessar as telas do console do Adobe Campaign por meio de um navegado
 
    ![](assets/s_ncs_user_interface_web_campaign_01.png)
 
-Além de navegar entre campanhas e exibi-las, você pode executar esses tipos de tarefas:
+Além de navegar entre campanhas e visualizá-las, é possível executar esses tipos de tarefas:
 
 * Monitorar atividade em uma instância
-* Participar de processos de validação, por exemplo, aprovar ou rejeitar um conteúdo de delivery
-* Executar outras ações rápidas, por exemplo, pausar um fluxo de trabalho
+* Participar de processos de validação como, por exemplo, aprovar ou rejeitar o conteúdo de um delivery
+* Executar outras ações rápidas como, por exemplo, pausar um fluxo de trabalho
 * Acessar todos os recursos de relatório
-* Participar nos debates do fórum
+* Participar das discussões do fórum
 
-Esta tabela resume as ações que você pode realizar nas campanhas de um navegador:
+Esta tabela resume as ações que você pode realizar nas campanhas a partir de um navegador:
 
 | Página  | Ação |
 | --- | --- |
-| Lista de campanhas, remessas, ofertas etc. | Excluir um item de lista |
-| Campaign | Cancelar uma campanha |
-| Entrega | Aprovar o conteúdo e o público-alvo do delivery<br/>Enviar o conteúdo do delivery<br/>Confirmar um delivery<br/>Pausar e parar um delivery |
-| aplicação web | Criar uma aplicação web<br/>Editar o conteúdo e as propriedades do aplicativo<br/>Salvar o conteúdo do aplicativo como modelo<br/>Publicar o aplicativo |
-| Oferta | Aprovar o conteúdo e a qualificação da oferta<br/>Desativar uma oferta online |
+| Lista de campanhas, deliveries, ofertas, etc. | Excluir um item da lista |
+| Campanha | Cancelar uma campanha |
+| Delivery | Aprovar o conteúdo e o target do delivery<br/>Enviar o conteúdo do delivery<br/>Confirmar um delivery<br/>Pausar e parar um delivery |
+| Aplicativo web | Criar um aplicativo web<br/>Editar o conteúdo e as propriedades do aplicativo<br/>Salvar o conteúdo do aplicativo como um modelo<br/>Publicar o aplicativo |
+| Oferta | Aprovar o conteúdo e a elegibilidade da oferta<br/>Desativar uma oferta online |
 | Tarefa | Concluir uma tarefa<br/>Cancelar uma tarefa |
 | Recursos de marketing | Aprovar um recurso<br/>Bloquear e desbloquear um recurso |
-| Pacote de campanha | Enviar um pacote para aprovação<br/>Aprovar ou rejeitar um pacote<br/>Cancelamento de um pacote |
-| Ordem da campanha | Criar um pedido<br/>Aceitar ou rejeitar um pedido <!-- Je n'ai pas pu créer de campaign order pour vérifier cela. Peut-on accéder à ces fonctionnalités depuis l'accès web ? --> |
-| Estoque | Excluir uma linha de estoque |
+| Pacotes da campanha | Enviar um pacote para aprovação<br/>Aprovar ou rejeitar um pacote<br/>Cancelar um pacote |
+| Pedidos da campanha | Criar um pedido<br/>Aceitar ou rejeitar um pedido <!-- Je n'ai pas pu créer de campaign order pour vérifier cela. Peut-on accéder à ces fonctionnalités depuis l'accès web ? --> |
+| Estoque | Excluir uma linha do estoque |
 | Simulação de oferta | Iniciar e parar uma simulação |
 | Fluxo de trabalho de direcionamento | Iniciar, pausar e parar um fluxo de trabalho |
-| Relatórios | Salvar os dados atuais no histórico de relatórios |
-| Fórum | Adicionar uma discussão<br/>Responder a uma mensagem em uma discussão<br/>Siga uma discussão e cancele a assinatura dela |
+| Relatórios | Salvar os dados atuais no histórico do relatório |
+| Fórum | Adicionar uma discussão<br/>Responder a uma mensagem em uma discussão<br/>Seguir uma discussão e cancelar a inscrição nela |
 
 ### Aprovações
 
