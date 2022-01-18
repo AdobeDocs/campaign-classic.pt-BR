@@ -7,9 +7,9 @@ content-type: reference
 topic-tags: campaign-optimization
 exl-id: c23212f2-fdf8-4820-b389-546f7c84db27
 source-git-commit: 52aa7b268d5eb83354c3a4d8687ced95300538e2
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '3285'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -151,7 +151,7 @@ O tipo de agrupamento permite estender o campo **[!UICONTROL Period considered]*
 
 Por exemplo, uma regra de pressão que define um limite de 2 mensagens por semana, com um agrupamento para cada mês, impedirá o delivery de mais de 2 mensagens na mesma semana E no mesmo mês. Aviso, se o período se sobrepõe dois meses, o limite de cálculo leva em consideração os deliveries desses dois meses e, portanto, poderá impedir todos os novos deliveries durante o segundo mês.
 
-Observe que, por padrão, somente os deliveries já enviados são considerados ao calcular o limite. No Campaign Classic v7, verifique o **[!UICONTROL Take the deliveries into account in the provisional calendar]** se também desejar considerar os deliveries agendados para o período relacionado. Nesse caso, o período considerado é dobrado para permitir a integração de deliveries futuros, bem como os anteriores.
+Observe que, por padrão, somente os deliveries já enviados são considerados ao calcular o limite. No Campaign Classic v7, marque a opção **[!UICONTROL Take the deliveries into account in the provisional calendar]** se desejar considerar também os deliveries programados para o período em questão. Nesse caso, o período considerado é dobrado para permitir a integração de deliveries futuros, bem como os anteriores.
 
 Para restringir os envios realizados em um período de duas semanas, é possível:
 
@@ -159,10 +159,10 @@ Para restringir os envios realizados em um período de duas semanas, é possíve
 
 ou
 
-1. Digite **7d** no campo **[!UICONTROL Period considered]** E verifique a **[!UICONTROL Take the deliveries into account in the provisional calendar]** : são considerados no cálculo os deliveries realizados até 7 dias antes da data de delivery e os programados até 7 dias após a data de delivery.
+1. Digite **7d** no campo **[!UICONTROL Period considered]** E verifique a **[!UICONTROL Take the deliveries into account in the provisional calendar]** opção: são considerados no cálculo os deliveries realizados até 7 dias antes da data de delivery e os programados até 7 dias após a data de delivery nos quais a regra seja aplicada.
 
    >[!AVAILABILITY]
-   >Este método não está disponível no Campaign v8.
+   >Esse método não está disponível no Campaign v8.
 
 A data de início do período depende de como o banco de dados está configurado.
 
