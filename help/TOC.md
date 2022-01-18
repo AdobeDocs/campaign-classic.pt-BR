@@ -7,9 +7,9 @@ user-guide-description: Com o Adobe Campaign, é possível usar dados avançados
 sub-product: adobe campaign classic
 type: Documentation
 source-git-commit: 8610d29a3df1080f1622a2cb3685c0961fb40092
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2556'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -443,8 +443,8 @@ ht-degree: 98%
       + [Tarefa](workflow/using/task.md)
    + Atividades de ação {#action-activities}
       + [Sobre atividades de ação](workflow/using/about-action-activities.md)
-      + [Entrega](workflow/using/delivery.md)
-      + [Controle de entrega](workflow/using/delivery-control.md)
+      + [Delivery](workflow/using/delivery.md)
+      + [Controle de Delivery](workflow/using/delivery-control.md)
       + [Entrega contínua](workflow/using/continuous-delivery.md)
       + [Entrega recorrente](workflow/using/recurring-delivery.md)
       + [Entregas entre canais](workflow/using/cross-channel-deliveries.md)
@@ -818,14 +818,14 @@ ht-degree: 98%
       + [Coleta de todas as visitas](configuration/using/collecting-all-visits.md)
       + [Tracking anônimo](configuration/using/anonymous-tracking.md)
 + Guia de migração {#migrating-to-a-new-version}
-   + [Migrar para o Adobe Campaign v7](migration/using/about-migration.md)
+   + [Migração para o Adobe Campaign v7](migration/using/about-migration.md)
    + Procedimento de migração {#migration-procedure}
       + [Pré-requisitos](migration/using/before-starting-migration.md)
       + [Sobre testes de migração](migration/using/testing-the-migration.md)
-      + [Adapte sua configuração](migration/using/configuring-your-platform.md)
+      + [Adaptar sua configuração](migration/using/configuring-your-platform.md)
    + Iniciar a migração {#migrating-to-adobe-campaign-7}
       + [Migrar uma plataforma do Microsoft Windows](migration/using/migrating-in-windows-for-adobe-campaign-7.md)
-      + [Migrar uma plataforma Linux](migration/using/migrating-in-linux-for-adobe-campaign-v7.md)
+      + [Migrar uma plataforma do Linux](migration/using/migrating-in-linux-for-adobe-campaign-v7.md)
       + [Configurar sua plataforma](migration/using/general-configurations.md)
    + [Procedimento de reversão](migration/using/about-rollback.md)
 + Notas técnicas {#technotes}
