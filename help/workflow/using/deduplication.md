@@ -7,9 +7,9 @@ content-type: reference
 topic-tags: targeting-activities
 exl-id: 38add4fe-6238-45de-863e-895ebca189b7
 source-git-commit: def4f7fb46c838e9fe620820cf387dd3e2b8a55b
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1089'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -33,7 +33,7 @@ A atividade **[!UICONTROL Deduplication]** tem a capacidade de manter uma linha 
 -----|----------|------------|-------|--------------|------
 | 03/02/2020 | Bob | Tisner | bob@mycompany.com | 444-444-4444 | 888-888-8888 |
 
-O registro principal selecionado encaminhará os dados sem qualquer união de dados de campo com outros dados relevantes nas linhas duplicadas.
+O registro principal selecionado transportará os dados sem mesclar os dados de campo com outros dados relevantes nas linhas duplicadas.
 
 Complemento:
 
