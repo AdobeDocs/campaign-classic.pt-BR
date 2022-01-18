@@ -7,7 +7,7 @@ content-type: reference
 topic-tags: starting-with-adobe-campaign
 exl-id: 23c873fd-9016-4d32-842c-772cfff0e23e
 source-git-commit: 98380c18b915cfebc980e68f9840f9d8919eaca4
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '886'
 ht-degree: 100%
 
@@ -59,7 +59,7 @@ Para facilitar a conformidade com a privacidade, o Adobe Campaign permite manipu
 
 * Também conhecido como Eliminação de dados, o **Direito ao esquecimento** (solicitação de exclusão) permite que o Titular de dados tenha seus dados pessoais apagados pelo Controlador de dados, interrompendo a divulgação e, possivelmente, o processamento desses dados por parte de terceiros.
 
-Para saber como criar solicitações de **Acesso** e **Exclusão** e como o Adobe Campaign as processa, consulte os [passos de implementação](../../platform/using/privacy-requests.md).
+Para saber como criar solicitações de **Acesso** e **Exclusão** e como o Adobe Campaign as processa, consulte as [etapas de implementação](../../platform/using/privacy-requests.md).
 
 <!--Tutorials on Privacy management in Campaign Standard are also available [here](https://experienceleague.adobe.com/docs/campaign-standard-learn/tutorials/privacy/privacy-overview.html).
 https://experienceleague.adobe.com/docs/campaign-standard-learn/tutorials/privacy/privacy-overview.html?lang=en-->
