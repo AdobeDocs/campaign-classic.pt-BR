@@ -7,9 +7,9 @@ content-type: reference
 topic-tags: advanced-management
 exl-id: 6c90ac2f-0d2b-48b0-9245-3e5e3a3d027c
 source-git-commit: 7a1b8a1cd3ad434dac5c324056113d7ec15ddd8a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '501'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -75,7 +75,7 @@ Este campo permite que você defina a ação a ser executada quando a atividade 
 
 * **[!UICONTROL Suspend the process]**: o workflow é interrompido automaticamente. Seu status muda para **[!UICONTROL Failed]**. Depois que o problema for resolvido, reinicie o workflow.
 * **[!UICONTROL Ignore]**: esta tarefa e todas as tarefas a seguir (na mesma ramificação) não serão executadas. Pode ser útil para tarefas recorrentes. Se a ramificação tiver um programador a montante, ele será iniciado como de costume na próxima data de execução.
-* **[!UICONTROL Abort on error]**: o workflow é interrompido automaticamente e não pode ser reiniciado. Seu status muda para **[!UICONTROL Failed]**.
+* **[!UICONTROL Abort on error]**: o fluxo de trabalho é interrompido automaticamente e não pode ser reiniciado. Seu status muda para **[!UICONTROL Failed]**.
 
 ## Script de inicialização {#initialization-script}
 
