@@ -7,9 +7,9 @@ content-type: reference
 topic-tags: online-surveys
 exl-id: 0b5dc602-e16f-4bf1-bd8f-352e0bc78996
 source-git-commit: 98380c18b915cfebc980e68f9840f9d8919eaca4
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '839'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -45,7 +45,7 @@ Para adicionar uma restrição, selecione-a na lista suspensa. Há dois tipos de
 
 Se esse campo for usado em uma lista, os valores da enumeração poderão ser recuperados automaticamente na tabela de valores usando o link **[!UICONTROL Initialize the list of values from the database]**, acima da lista de valores.
 
-Por exemplo, você pode criar uma lista suspensa para o usuário selecionar seu idioma nativo. O campo arquivado correspondente pode ser associado à enumeração de **idioma** que contém uma lista de idiomas:
+Por exemplo, é possível criar uma lista suspensa para o usuário selecionar seu idioma nativo. O campo arquivado correspondente pode ser associado à enumeração de **idioma** que contém uma lista de idiomas:
 
 ![](assets/s_ncs_admin_survey_database_values_2b.png)
 
