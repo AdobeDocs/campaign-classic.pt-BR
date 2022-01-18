@@ -7,9 +7,9 @@ content-type: reference
 topic-tags: starting-with-adobe-campaign
 exl-id: 20552812-5c58-4d48-9636-d5135197685d
 source-git-commit: a5f6478d3c0780464974053e389923614abba582
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '523'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -39,7 +39,7 @@ Leia os [Primeiros passos com tabelas e esquemas](../../configuration/using/abou
 
 ## Como usar uma tabela de recipients personalizada? {#how-to-use-a-custom-recipient-table-}
 
-Você pode criar e implementar uma tabela de recipients não integrada no Campaign para enviar suas mensagens.
+No Campaign, é possível criar e implementar uma tabela de recipients diferente da integrada para enviar suas mensagens.
 
 [Clique aqui para saber mais](../../configuration/using/about-custom-recipient-table.md)
 
