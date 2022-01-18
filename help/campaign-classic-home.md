@@ -4,9 +4,9 @@ product: campaign
 title: Documentação do produto Adobe Campaign Classic v7
 exl-id: 6b3f1689-80de-49fd-b7ee-7a2a1931d157
 source-git-commit: 1d32161d60f6b382188012b104c642f504e28645
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '259'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -16,7 +16,7 @@ ht-degree: 98%
 
 ## Novidades
 
-* **[Versão de janeiro está ativa!](rn/using/latest-release.md)**<br/> Descubra novos recursos, melhorias e correções nas Notas de versão
+* **[A versão de janeiro está disponível.](rn/using/latest-release.md)**<br/> Descubra novos recursos, melhorias e correções nas Notas de versão
 
 * **[Perguntas frequentes e**[ nota técnica](technotes/using/apple-mail-app-privacy-protection.md)**<br/> sobre a Proteção de privacidade do Apple Mail](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/additional-resources/technotes/apple-mail-privacy-faq.html?lang=pt-BR)**Encontre orientações em resposta ao anúncio da Apple sobre o iOS 15
 
