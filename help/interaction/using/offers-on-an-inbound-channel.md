@@ -7,9 +7,9 @@ content-type: reference
 topic-tags: case-study
 exl-id: 90afced3-465d-4370-8a33-51a7e4356135
 source-git-commit: 98380c18b915cfebc980e68f9840f9d8919eaca4
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2088'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -163,7 +163,7 @@ Esse estudo de caso se baseia no seguinte cenário:
 
    ![](assets/offer_inbound_fallback_example_051.png)
 
-1. O usuário, um cliente Neobank, faz logon com suas credenciais.
+1. O usuário, um cliente do Neobank, faz logon com suas credenciais.
 
    ![](assets/offer_inbound_fallback_example_052.png)
 
