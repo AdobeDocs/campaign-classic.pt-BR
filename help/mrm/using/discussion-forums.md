@@ -7,9 +7,9 @@ content-type: reference
 topic-tags: tasks--resources-and-budgets
 exl-id: 222853c5-c754-4c0b-8ee4-a64b2f8677a4
 source-git-commit: 98380c18b915cfebc980e68f9840f9d8919eaca4
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '728'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
@@ -75,7 +75,7 @@ Você poderá postar uma mensagem no fórum de um operador se, por exemplo, sua 
 Para acessar o fórum de um operador:
 
 * Se você tiver os direitos necessários para acessar o nó do explorador **[!UICONTROL Administration > Access management > Operators]**, abra o painel do operador desejado e clique no link **[!UICONTROL Forum]** no canto superior direito.
-* Caso contrário, encontre o nome do operador no Adobe Campaign (por meio de uma mensagem postada no fórum por esse operador, uma tarefa sendo atribuída a ele) e clique nele para acessar seu painel. Você também poderá pedir ao administrador para criar uma visualização da pasta do operador.
+* Caso contrário, localize o nome do operador no Adobe Campaign (por meio de uma mensagem publicada no fórum por este operador ou uma tarefa atribuída a ele) e clique nele para acessar seu painel. Também é possível pedir ao administrador para criar uma visualização da pasta do operador.
 
 ## Assinar um fórum {#subscribing-to-a-forum}
 
