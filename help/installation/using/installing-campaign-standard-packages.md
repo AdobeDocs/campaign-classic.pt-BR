@@ -6,10 +6,10 @@ audience: installation
 content-type: reference
 topic-tags: initial-configuration
 exl-id: 2bc077c4-ed65-4157-bfc9-df5d0442f476
-source-git-commit: 6c23dadb5b6523e17e242de43a908ca86ed7cc23
+source-git-commit: 035297523c25061f28751c28df86d562f40f45ea
 workflow-type: tm+mt
-source-wordcount: '1188'
-ht-degree: 16%
+source-wordcount: '1254'
+ht-degree: 15%
 
 ---
 
@@ -241,7 +241,7 @@ A tabela a seguir lista todos os pacotes incorporados do Campaign.
 
 ### Pacote do Centro de mensagens {#message-center-package}
 
-Você deve instalar canais de delivery (Email, canal móvel, canal de aplicativo móvel etc.) antes de instalar mensagens transacionais (pacote do centro de mensagens). Se você tiver iniciado um projeto do Centro de mensagens somente por email e precisar adicionar um novo canal posteriormente, siga estas etapas:
+Você deve instalar canais de delivery (Email, canal móvel, canal de aplicativo móvel, LINE, etc.) antes de instalar mensagens transacionais (pacote do centro de mensagens). Se você tiver iniciado um projeto do Centro de mensagens somente por email e precisar adicionar um novo canal posteriormente, siga estas etapas:
 
 1. Instale o novo canal, por exemplo, a variável **Canal móvel**, usando o assistente de importação de pacotes ( **[!UICONTROL Tools > Advanced > Import package > Adobe Campaign package]**).
 1. Importe o arquivo ( **[!UICONTROL Tools > Advanced > Import package > File]**) e selecione:
@@ -254,6 +254,19 @@ Você deve instalar canais de delivery (Email, canal móvel, canal de aplicativo
 
    ![](assets/messagecenter_install_channel.png)
 
+
+### [!DNL LINE] configuração de canal{#line-package}
+
+Para configurar o [!DNL LINE] , primeiro instale o [!DNL LINE] pacote.
+
+No contexto de uma configuração mid-sourcing, é necessário:
+
+* Instale o [!DNL LINE] pacote na instância Marketing e MID
+
+* Configure o [!DNL LINE] conta externa na instância do mkt para apontar para a instância mid alterando o modo de delivery. [Saiba mais](../../delivery/using/line-channel.md#configure-line-external)
+
+* Configure o [!DNL LINE] credenciais na conta externa na instância MID.
+
 >[!CAUTION]
 >
->Os templates de delivery do Centro de mensagens para LINE não estarão disponíveis se os pacotes do Centro de mensagens estiverem instalados antes do LINE
+>Os templates do delivery do Centro de mensagens para [!DNL LINE] O canal não estará disponível se os pacotes do Centro de Mensagens estiverem instalados antes [!DNL LINE].
