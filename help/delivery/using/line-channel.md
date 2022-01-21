@@ -6,9 +6,9 @@ audience: delivery
 content-type: reference
 topic-tags: sending-messages-on-mobiles
 exl-id: 1baaabbd-9fd7-4d9b-b78e-d2a559d7dddb
-source-git-commit: 035297523c25061f28751c28df86d562f40f45ea
+source-git-commit: ad75b8050133b331f6fbfa5042a444a874ba3cb4
 workflow-type: tm+mt
-source-wordcount: '1157'
+source-wordcount: '1148'
 ht-degree: 99%
 
 ---
@@ -16,10 +16,6 @@ ht-degree: 99%
 # Criar entregas LINE{#line-channel}
 
 ![](../../assets/common.svg)
-
->[!NOTE]
->
->O [!DNL LINE] só está disponível para instalações de serviços no local ou gerenciados.
 
 O [!DNL LINE] é um aplicativo para mensagens instantâneas, chamadas de voz e vídeo gratuitos, disponível em todos os SOs móveis e no PC.
 
