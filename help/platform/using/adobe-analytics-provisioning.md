@@ -7,10 +7,10 @@ feature: Overview
 role: User, Admin
 level: Beginner
 exl-id: 24e002aa-4e86-406b-92c7-74f242ee4b86
-source-git-commit: 671e29425e8962ced833c10303b6edce7afda462
+source-git-commit: 9ee95f6d60500b18e242c6d648488615f47a4459
 workflow-type: tm+mt
-source-wordcount: '547'
-ht-degree: 100%
+source-wordcount: '646'
+ht-degree: 95%
 
 ---
 
@@ -141,10 +141,21 @@ O perfil de produto está agora configurado. Em seguida, é necessário criar o 
 
    ![](assets/do-not-localize/triggers_12.png)
 
-1. Cole essas credenciais da conta de serviço no nlserver usando o seguinte comando:
+1. Use a chave privada gerada na etapa 6.
+
+   Se você já configurou Acionadores usando essas credenciais, sua chave privada deve ser a mesma para essa configuração de conector.
+
+1. Codifique a chave privada usando o seguinte comando: `base64 ./private.key > private.key.base64`. Isso salvará o conteúdo base64 em um novo arquivo `private.key.base64`.
+
+   >[!NOTE]
+   >
+   >Às vezes, uma linha extra pode ser adicionada automaticamente ao copiar/colar a chave privada. Lembre-se de removê-la antes de codificar sua chave privada.
+
+1. Copie o conteúdo do arquivo `private.key.base64`.
+
+1. Faça logon via SSH em cada container em que a instância do Adobe Campaign está instalada e adicione as credenciais do Projeto no Adobe Campaign executando o comando a seguir como usuário`neolane`. Isso inserirá as credenciais **[!UICONTROL Technical Account]** no arquivo de configuração da instância.
 
    ```
-   nlserver config -instance:<instanceName> -setimsjwtauth::<ImsOrgId>/<ClientId>/<TechnicalAccountId>/<ClientSecret>/<$(base64 -w0 /path/to/private.key)>
+   nlserver config -instance:<instance name> -setimsjwtauth:Organization_Id/Client_Id/Technical_Account_ID/<Client_Secret>/<Base64_encoded_Private_Key>
    ```
-
 Agora é possível começar a usar o conector do Analytics e rastrear os comportamentos do cliente.
