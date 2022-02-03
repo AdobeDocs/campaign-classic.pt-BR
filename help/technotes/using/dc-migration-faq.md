@@ -6,10 +6,10 @@ feature: Overview
 role: User
 level: Beginner
 exl-id: a9cd08b0-55c2-4405-9fb8-f0c623cd4ccb
-source-git-commit: 1d32161d60f6b382188012b104c642f504e28645
+source-git-commit: 60fc0fd2a10f05abb77843ef0cb69e44f35a9648
 workflow-type: tm+mt
-source-wordcount: '2243'
-ht-degree: 62%
+source-wordcount: '2216'
+ht-degree: 63%
 
 ---
 
@@ -17,7 +17,7 @@ ht-degree: 62%
 
 ![](../../assets/v7-only.svg)
 
-Como parte do [Iniciativa Gold Standard](../../rn/using/gold-standard.md), o Adobe desativa o data center herdado. As instâncias do Campaign Classic devem ser transferidas para a Nuvem pública Amazon Web Services (AWS). [Saiba mais sobre esta iniciativa](dc-migration.md).
+O Adobe desativa o data center herdado: As instâncias do Campaign Classic devem ser transferidas para a Nuvem pública Amazon Web Services (AWS). [Saiba mais sobre esta iniciativa](dc-migration.md).
 
 Abaixo está um conjunto de perguntas comuns sobre esse projeto, o impacto nos ambientes do Campaign e outros recursos úteis.
 
@@ -47,7 +47,7 @@ Os impactos globais no banco de dados e na infraestrutura estão listados abaixo
 
    Como primeiro passo, manteremos o mesmo build do Campaign Classic com a migração.
 
-   Em outra etapa, continuaremos a atualizar para a build mais recente do Campaign Classic GA. Para obter mais informações, consulte [Perguntas frequentes sobre a atualização de build](../../platform/using/faq-build-upgrade.md) e [Notas de versão do Campaign Gold Standard](../../rn/using/gold-standard.md).
+   Em outra etapa, continuaremos a atualizar para a build mais recente do Campaign Classic GA. Para obter mais informações, consulte [esta página](../../rn/using/rn-overview.md).
 
 * **Qual é o plano para solucionar problemas após a migração?**
 
@@ -63,7 +63,7 @@ Os impactos globais em IPs, listas de bloqueios, subdomínios e URLs estão list
 
    O endereço IP dos servidores da Adobe será alterado. Portanto, os clientes podem precisar adicionar esses novos endereços IP na lista de permissões em seus sistemas.
 
-   [Clique aqui](#config) para obter mais detalhes sobre IP na  de lista de permissões.
+   [Saiba mais](#config) sobre IP na  de lista de permissões.
 
 * **Como lidaremos com a porta adicionada à lista de permissões para acesso SFTP/FTP?**
 
@@ -73,7 +73,7 @@ Os impactos globais em IPs, listas de bloqueios, subdomínios e URLs estão list
 
    O endereço IP dos servidores da Adobe será alterado. Portanto, os clientes podem precisar adicionar esses novos endereços IP à lista de permissões no sistema.
 
-   [Clique aqui](#config) para obter mais detalhes sobre IP na  de lista de permissões.
+   [Saiba mais](#config) sobre IP na  de lista de permissões.
 
 * **Como a delegação de subdomínios será tratada?**
 
@@ -155,7 +155,7 @@ Os impactos globais na configuração, na conectividade com outros sistemas e pr
 
    O endereço IP dos servidores da Adobe será alterado. Portanto, os clientes podem precisar adicionar esses novos endereços IP à lista de permissões no sistema.
 
-   [Clique aqui](#config) para obter mais detalhes sobre IP na lista de permissões.
+   [Saiba mais](#config) sobre IP na lista de permissões.
 
 * **Asseguraremos que todos os parâmetros de configuração de memória JavaScript estejam definidos corretamente após a migração?**
 
@@ -169,7 +169,7 @@ Os impactos globais na configuração, na conectividade com outros sistemas e pr
 
    Pode mudar de acordo com a localização dos novos servidores. No entanto, o cliente poderá manter o fuso horário atual.
 
-   [Clique aqui](../../workflow/using/managing-time-zones.md) para obter mais detalhes sobre o gerenciamento de fuso horário no Adobe Campaign Classic v7.
+   [Saiba mais](../../workflow/using/managing-time-zones.md) sobre o gerenciamento de fuso horário no Adobe Campaign Classic v7.
 
 
 ## Segurança e permissões
@@ -282,4 +282,4 @@ Os impactos globais durante a migração estão listados abaixo.
 
 * [Migração para o Adobe Managed Services (Nuvem pública)](dc-migration.md)
 * [Atualização anual da campanha](../../rn/using/rn-overview.md#yeary-upgrade)
-* [Perguntas frequentes de atualização de build](../../platform/using/faq-build-upgrade.md)
+* [Perguntas frequentes sobre atualização de build](../../platform/using/faq-build-upgrade.md)
