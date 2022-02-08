@@ -8,9 +8,9 @@ role: User, Admin
 level: Beginner
 exl-id: 24e002aa-4e86-406b-92c7-74f242ee4b86
 source-git-commit: 9ee95f6d60500b18e242c6d648488615f47a4459
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '646'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
@@ -143,7 +143,7 @@ O perfil de produto está agora configurado. Em seguida, é necessário criar o 
 
 1. Use a chave privada gerada na etapa 6.
 
-   Se você já configurou Acionadores usando essas credenciais, sua chave privada deve ser a mesma para essa configuração de conector.
+   Se você já configurou acionadores usando essas credenciais, sua chave privada deve ser a mesma para essa configuração de conector.
 
 1. Codifique a chave privada usando o seguinte comando: `base64 ./private.key > private.key.base64`. Isso salvará o conteúdo base64 em um novo arquivo `private.key.base64`.
 
