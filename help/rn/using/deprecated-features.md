@@ -7,9 +7,9 @@ role: User
 level: Beginner
 exl-id: d60d67de-6618-4f3b-be4a-ad7633ab5645
 source-git-commit: 966da123b30278817ca465ac5dfe1f733c4d6c5c
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1707'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -70,7 +70,7 @@ Os clientes são aconselhados a verificar se utilizam o recurso/funcionalidade e
   <td><p> A partir da versão 20.3 do Campaign, a autenticação de integração de acionadores originalmente com base na configuração de autenticação oAUTH para acesso ao pipeline agora foi alterada e movida para o Adobe I/O. <p>
   <p>Se você estiver usando acionadores de integração, precisará adaptar sua implementação adequadamente. <a href="../../integrations/using/configuring-adobe-io.md">Saiba mais</a></p> 
   <p>Para obter mais informações sobre a depreciação da Autenticação OAuth, consulte esta <a href="https://github.com/AdobeDocs/analytics-1.4-apis/blob/master/docs/APIEOL.md">página</a></p> 
-  <p><em>Data de remoção do Target: 20 de outubro de 2021. Os ambientes hospedados se beneficiam de uma extensão até 25 de maio de 2022. </em></p>
+  <p><em>Data de remoção do Target: 20 de outubro de 2021. Os ambientes hospedados se beneficiarão de uma extensão até 25 de maio de 2022. </em></p>
   </td>
   </tr>
  </tbody> 
