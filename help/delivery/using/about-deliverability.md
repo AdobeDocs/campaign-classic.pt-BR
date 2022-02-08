@@ -1,15 +1,13 @@
 ---
 product: campaign
-title: Sobre a capacidade de delivery no Campaign
+title: Introdução à capacidade de entrega no Campaign
 description: Saiba mais sobre as práticas recomendadas de delivery
-audience: delivery
-content-type: reference
-topic-tags: deliverability-management
+feature: Deliverability
 exl-id: f301b34c-244c-4279-b23f-8224ea8eedbe
-source-git-commit: f000cb8bae164c22d1ede15db4e763cf50530674
-workflow-type: ht
-source-wordcount: '716'
-ht-degree: 100%
+source-git-commit: 56459b188ee966cdb578c415fcdfa485dcbed355
+workflow-type: tm+mt
+source-wordcount: '724'
+ht-degree: 96%
 
 ---
 
@@ -33,7 +31,7 @@ Os problemas de capacidade de delivery estão geralmente ligados às medidas de 
 
 >[!NOTE]
 >
->Como os ISPs são obrigados a desenvolver continuamente novas técnicas sofisticadas de filtragem para proteger seus clientes contra remetentes de spam, a capacidade de delivery de email é caracterizada por critérios e regras em constante mudança. Consulte o [Manual de práticas recomendadas de capacidade de delivery da Adobe](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/introduction.html?lang=pt-BR), que é atualizado regularmente.
+>Como os ISPs são obrigados a desenvolver continuamente novas técnicas sofisticadas de filtragem para proteger seus clientes contra remetentes de spam, a capacidade de delivery de email é caracterizada por critérios e regras em constante mudança. Consulte o [Manual de práticas recomendadas de capacidade de delivery da Adobe](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/introduction.html), que é atualizado regularmente.
 
 ### Taxa da capacidade de delivery
 
@@ -46,7 +44,7 @@ Com o Adobe Campaign, a taxa da capacidade de delivery depende de vários fatore
 * Reputação do endereço IP: consulte [Estratégia de IP](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/transition-process/infrastructure.html?lang=pt-BR#ip-strategy).
 * Qualidade dos endereços direcionados: consulte [Gerenciamento de quarentena](optimize-delivery.md#quarantine-management).
 * Baixas taxas de [reclamação](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/metrics-for-deliverability/complaints.html?lang=pt-BR) e [rejeição permanente](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/metrics-for-deliverability/bounces.html?lang=pt-BR#hard-bounces).
-* O conteúdo da mensagem: consulte [Controle de conteúdo de email](control-message-content.md).
+* O conteúdo da mensagem: see [Controle o conteúdo do email](control-message-content.md).
 * Autenticação de mensagem (SPF, DKIM, DMARC): consulte [esta seção](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/transition-process/infrastructure.html?lang=pt-BR#authentication).
 * Reputação do remetente: para saber como os principais ISPs avaliam a reputação de um remetente, consulte [esta seção](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/internet-service-provider-specifics/overview.html?lang=pt-BR).
 
@@ -60,7 +58,7 @@ O Adobe Campaign fornece várias ferramentas para acompanhar e melhorar o desemp
 Ao configurar, projetar e testar sua mensagem, siga as práticas recomendadas mencionadas nas seções listadas abaixo. Aproveitar todos os recursos fornecidos pelo Adobe Campaign ajuda a melhorar a capacidade de delivery.
 
 * [Práticas recomendadas de entrega](delivery-best-practices.md)
-* [Controle de conteúdo de email](control-message-content.md)
+* [Controle o conteúdo do email](control-message-content.md)
 * [Renderização da caixa de entrada](inbox-rendering.md)
 * [Envio de uma prova](steps-validating-the-delivery.md#sending-a-proof)
 
@@ -82,8 +80,8 @@ Alguns provedores de acesso à Internet consideram automaticamente emails como s
 
 Para obter mais informações, consulte estas seções:
 
-* [Compreensão de falhas de entrega](understanding-delivery-failures.md)
-* [Compreensão do gerenciamento de quarentena](understanding-quarantine-management.md)
+* [Entender as falhas de entrega](understanding-delivery-failures.md)
+* [Entender o gerenciamento de quarentenas](understanding-quarantine-management.md)
 * [Quarentena × lista de bloqueios](understanding-quarantine-management.md#quarantine-vs-denylist)
 
 ### Usar ferramentas de monitoramento e relatórios
@@ -94,25 +92,6 @@ O Adobe Campaign permite verificar o desempenho de seus deliveries por meio de u
 
 Para obter mais informações, consulte estas seções:
 
-* [Monitoramento da capacidade de entrega](monitoring-deliverability.md)
-* [Sobre o monitoramento de entrega](about-delivery-monitoring.md)
-* [Sobre relatórios integrados do Campaign](../../reporting/using/about-campaign-built-in-reports.md)
-
-<!--TO REMOVE
-## Background {#background}
-
-Email deliverability presents a major challenge to marketers - whether they're sending a few thousand messages or several billion. One in five messages never reach the inbox, or their intended recipient.
-
-Once relegated as a "technical issue" for the IT department, email deliverability continues to move higher on the marketing agenda. That's because savvy marketers recognize that although many of its elements are technical in nature, deliverability is ultimately a business issue with significant revenue implications.
-
-Consider the email marketing funnel. Deliverability determines the number of messages received, which in turn impacts each subsequent stage of the funnel. Fewer emails received results in fewer opens, fewer clicks, and fewer conversions. **For companies with a large database, the difference between average and great deliverability could literally mean hundreds of thousands to millions of dollars in revenues.**
-
-![](assets/deliverability_overview_1.png)
-
-By settling for average (80%) deliverability, marketers are leaving significant conversions - and dollars - on the table.
-
-What exactly is email deliverability? And how can marketers improve deliverability rates to widen the mouth of the funnel and squeeze more results from their email campaigns?
-
-Email deliverability refers to the set of characteristics that determine a message's ability to reach its destination, via a personal email address, within a short time, and with the expected quality in terms of content and format. These characteristics fall into four main categories: data quality, message and content, sending infrastructure, and reputation. Together, they form the foundation of a successful email deliverability program. This overview outlines the four fundamentals of email deliverability success and offers best practices for reaching the inbox and driving greater revenues from email marketing programs.
-
-![](assets/deliverability_overview_2.png)-->
+* [Monitorar a capacidade de entrega](monitoring-deliverability.md)
+* [Introdução ao monitoramento de entrega](about-delivery-monitoring.md)
+* [Introdução aos relatórios internos do Campaign](../../reporting/using/about-campaign-built-in-reports.md)

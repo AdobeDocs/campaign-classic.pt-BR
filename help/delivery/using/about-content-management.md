@@ -1,19 +1,16 @@
 ---
 product: campaign
-title: Sobre a gestão de conteúdo
-description: Sobre a gestão de conteúdo
-audience: delivery
-content-type: reference
-topic-tags: content-management
+title: Sobre gerenciamento de conteúdo
+description: Introdução ao módulo Campaign Content Manager
 exl-id: 87434cc2-1636-4558-ab60-255b7f873c0c
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: 90c52ec144a6a3c1b534a80507e38fa3ed64fc83
 workflow-type: tm+mt
-source-wordcount: '245'
-ht-degree: 100%
+source-wordcount: '249'
+ht-degree: 97%
 
 ---
 
-# Sobre a gestão de conteúdo{#about-content-management}
+# Sobre gerenciamento de conteúdo{#about-content-management}
 
 ![](../../assets/common.svg)
 

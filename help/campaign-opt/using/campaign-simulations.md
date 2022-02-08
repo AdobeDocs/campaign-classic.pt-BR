@@ -1,15 +1,12 @@
 ---
 product: campaign
 title: Simulações de campanha
-description: Simulações de campanha
-audience: campaign
-content-type: reference
-topic-tags: campaign-optimization
+description: Introdução às simulações do Campaign
 exl-id: 709c64a8-34bf-43fa-a820-238295fb26b8
-source-git-commit: 5806690f764d2e5dfb5651597ff68b33bb399b44
+source-git-commit: 90c52ec144a6a3c1b534a80507e38fa3ed64fc83
 workflow-type: tm+mt
-source-wordcount: '1242'
-ht-degree: 100%
+source-wordcount: '1245'
+ht-degree: 98%
 
 ---
 
@@ -97,9 +94,9 @@ A guia **[!UICONTROL General]** da simulação permite inserir configurações d
 * **[!UICONTROL Priority]** é o nível aplicado à simulação para atrasar o acionamento.
 * **[!UICONTROL Save SQL queries in the log]**. Os logs em SQL permitem diagnosticar uma simulação se ela terminar com erros. Eles também podem ajudá-lo a descobrir por que uma simulação está muito lenta. Essas mensagens estarão visíveis após a simulação na subguia **[!UICONTROL SQL logs]** da guia **[!UICONTROL Audit]**.
 
-## Executando uma simulação {#executing-a-simulation}
+## Executar uma simulação {#executing-a-simulation}
 
-### Iniciando uma simulação {#starting-a-simulation}
+### Iniciar uma simulação {#starting-a-simulation}
 
 Depois que o escopo da simulação for definido, você poderá executá-la.
 
@@ -129,7 +126,7 @@ Uma vez concluída a execução, abra a simulação e clique na guia **[!UICONTR
 
    Para um exemplo de criação de tabela de análise, consulte o fim da opção [Exploring results](#exploring-results).
 
-### Visualizando resultados {#viewing-results}
+### Exibir resultados {#viewing-results}
 
 #### Auditoria {#audit}
 
@@ -137,7 +134,7 @@ A guia **[!UICONTROL Audit]** permite monitorar a execução da simulação. A s
 
 ![](assets/simu_campaign_opti_11.png)
 
-#### Explorando resultados {#exploring-results}
+#### Explorar resultados {#exploring-results}
 
 A subguia **[!UICONTROL Exploration of the exclusions]** permite analisar os dados resultantes de uma simulação.
 
@@ -167,7 +164,7 @@ Para acessar os relatórios, clique no link **[!UICONTROL Reports]** da simulaç
 
 Também é possível editar os relatórios ao usar o link **[!UICONTROL Reports]** acessível no painel de simulação.
 
-### Comparação de simulações {#comparing-simulations-}
+### Comparar simulações {#comparing-simulations-}
 
 Sempre que uma simulação é executada, resultados anteriores são substituídos: não é possível exibir e comparar resultados de uma execução para outra.
 

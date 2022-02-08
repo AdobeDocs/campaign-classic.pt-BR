@@ -1,19 +1,16 @@
 ---
 product: campaign
-title: Criação de filtros
-description: Criação de filtros
-audience: configuration
-content-type: reference
-topic-tags: use-a-custom-recipient-table
+title: Criar filtros
+description: Saiba como criar filtros para uma tabela personalizada
 exl-id: 6fad3dac-9af0-4796-adcf-d1de4b255aca
-source-git-commit: fb4b4c42b907e86813ea570f912312fccf893bfe
+source-git-commit: 3997412f14666fa61bf71d0f0a0653f5cc042e19
 workflow-type: tm+mt
-source-wordcount: '89'
-ht-degree: 11%
+source-wordcount: '96'
+ht-degree: 8%
 
 ---
 
-# Criação de filtros{#creating-filters}
+# Criar filtros{#creating-filters}
 
 ![](../../assets/common.svg)
 

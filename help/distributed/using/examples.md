@@ -1,29 +1,27 @@
 ---
 product: campaign
-title: Exemplos
-description: Exemplos
-audience: campaign
-content-type: reference
-topic-tags: distributed-marketing
+title: Amostras de marketing distribuído
+description: Amostras de marketing distribuído
+feature: Distributed Marketing
 exl-id: 2bef6b5e-887e-4c56-bb4b-3583472ca333
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: 1e11b7419388698f5de366cbeddf2be88ef12873
 workflow-type: tm+mt
-source-wordcount: '1296'
-ht-degree: 100%
+source-wordcount: '1293'
+ht-degree: 96%
 
 ---
 
-# Exemplos{#examples}
+# Amostras de marketing distribuído{#distributed-marketing-samples}
 
 ![](../../assets/v7-only.svg)
 
-## Criação de uma campanha local (por formulário) {#creating-a-local-campaign--by-form-}
+## Criar uma campanha local (por formulário) {#creating-a-local-campaign--by-form-}
 
 A interface web tipo **By form** envolve o uso de um **aplicativo web**. Dependendo da configuração, essa aplicação web pode conter qualquer tipo de elementos personalizados definidos. Por exemplo, você pode sugerir links para avaliar o target, o orçamento, o conteúdo etc. por meio de APIs dedicadas.
 
 >[!NOTE]
 >
->As APIs são detalhadas em um documento dedicado, acesso ao qual depende do seu contrato. Consulte a [API](../../configuration/using/about-web-services.md).
+>As APIs são detalhadas em um documento dedicado. [Saiba mais](../../configuration/using/about-web-services.md).
 >
 >A aplicação Web usada neste exemplo não é fornecida com o Adobe Campaign. Para usar um formulário em uma campanha, você deve criar o aplicativo web dedicado.
 
@@ -73,7 +71,7 @@ Neste exemplo, as seguintes APIs são usadas:
    var res = nms.localOrder.EvaluateContent(ctx.localOrder, ctx.@deliveryId, "html", resSeed.@id);
    ```
 
-## Criação de uma campanha de colaboração (por aprovação do target) {#creating-a-collaborative-campaign--by-target-approval-}
+## Criar uma campanha colaborativa (por aprovação de target) {#creating-a-collaborative-campaign--by-target-approval-}
 
 ### Introdução {#introduction}
 
@@ -118,7 +116,7 @@ Depois que as verificações foram aprovadas, a campanha poderá iniciar automat
 
 ### Lado da entidade central {#central-entity-side}
 
-#### Criação de uma atividade de distribuição de dados {#creating-a-data-distribution-activity}
+#### Criar uma atividade de distribuição de dados {#creating-a-data-distribution-activity}
 
 1. Para configurar uma campanha colaborativa (por aprovação de target), primeiro você deve criar um **[!UICONTROL Data distribution activity]**. Clique no ícone **[!UICONTROL New]** no nó **[!UICONTROL Resources > Campaign management > Data distribution]**.
 
@@ -159,7 +157,7 @@ Depois que as verificações foram aprovadas, a campanha poderá iniciar automat
 
 1. Salve seu registro.
 
-#### Publicação da campanha {#publishing-the-campaign}
+#### Publique a campanha {#publishing-the-campaign}
 
 Agora você pode adicionar um **pacote de campanha** na guia **[!UICONTROL Campaigns]**.
 
@@ -178,7 +176,7 @@ Agora você pode adicionar um **pacote de campanha** na guia **[!UICONTROL Campa
 
    ![](assets/mkg_dist_use_case_target_valid2.png)
 
-## Criação de uma campanha colaborativa (por formulário) {#creating-a-collaborative-campaign--by-form-}
+## Criar uma campanha colaborativa (por formulário) {#creating-a-collaborative-campaign--by-form-}
 
 ### Introdução {#introduction-1}
 

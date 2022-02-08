@@ -1,32 +1,29 @@
 ---
 product: campaign
-title: '"Caso de uso: criação de gestão de conteúdo"'
-description: '"Caso de uso: criação de gestão de conteúdo"'
-audience: delivery
-content-type: reference
-topic-tags: content-management
+title: '"Caso de uso: criar gestão de conteúdo"'
+description: '"Caso de uso: criar gestão de conteúdo"'
 exl-id: b0d1cf0e-656e-4d24-9a31-16fef4cd40d0
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: 1e11b7419388698f5de366cbeddf2be88ef12873
 workflow-type: tm+mt
 source-wordcount: '1173'
-ht-degree: 100%
+ht-degree: 91%
 
 ---
 
-# Caso de uso: criação de gerenciamento de conteúdo{#use-case-creating-content-management}
+# Caso de uso: criar gestão de conteúdo{#use-case-creating-content-management}
 
 ![](../../assets/common.svg)
 
 Para criar a gestão de conteúdo no Adobe Campaign, as seguintes etapas são necessárias:
 
-* [Etapa 1 – Análise do conteúdo a ser produzido](#step-1---analyzing-the-content-to-be-produced),
-* [Etapa 2 – Criação do schema de dados](#step-2---creating-the-data-schema),
-* [Etapa 3 – Criação do formulário de entrada](#step-3---creating-the-input-form),
-* [Etapa 4 – Criação do template de construção](#step-4---creating-the-construction-template),
-* [Etapa 5 – Criação do template de publicação](#step-5---creating-the-publication-template),
-* [Etapa 6 - Criação de conteúdo](#step-6---creating-contents).
+* [Etapa 1 - Analisar o conteúdo a ser produzido](#step-1---analyzing-the-content-to-be-produced),
+* [Etapa 2 - Criar o schema de dados](#step-2---creating-the-data-schema),
+* [Etapa 3 - Criar o formulário de entrada](#step-3---creating-the-input-form),
+* [Etapa 4 - Criar o template de construção](#step-4---creating-the-construction-template),
+* [Etapa 5 - Criar o template de publicação](#step-5---creating-the-publication-template),
+* [Etapa 6 - Criar conteúdo](#step-6---creating-contents).
 
-## Etapa 1 – Análise do conteúdo a ser produzido {#step-1---analyzing-the-content-to-be-produced}
+## Etapa 1 - Analisar o conteúdo a ser produzido {#step-1---analyzing-the-content-to-be-produced}
 
 Antes de começar, é preciso realizar uma análise precisa do conteúdo a ser produzido: identificar os elementos a serem exibidos, estudar as restrições vinculadas a eles, definir um tipo para cada elemento etc. Também é preciso diferenciar elementos estáticos e variáveis.
 
@@ -52,7 +49,7 @@ Os vários elementos deste boletim são reunidos com base nas regras definidas e
 
 Esses elementos são criados por um schema dedicado que especifica os seguintes elementos para cada conteúdo: nome, rótulo, tipo, tamanho e quaisquer outras informações relevantes para o processamento no Adobe Campaign.
 
-## Etapa 2 – Criação do esquema de dados {#step-2---creating-the-data-schema}
+## Etapa 2 - Criar o schema de dados {#step-2---creating-the-data-schema}
 
 Um schema de dados é um documento XML associado ao conteúdo. Ele descreve a estrutura XML dos dados nesse conteúdo.
 
@@ -162,7 +159,7 @@ O schema conterá as seguintes informações:
 
 1. Clique em **[!UICONTROL Save]** para criar o schema de dados.
 
-## Etapa 3 – Criação do formulário de entrada {#step-3---creating-the-input-form}
+## Etapa 3 - Criar o formulário de entrada {#step-3---creating-the-input-form}
 
 O formulário de entrada permite editar uma instância de conteúdo por meio de uma interface de entrada do console do cliente do Adobe Campaign.
 
@@ -214,7 +211,7 @@ Para criar um formulário de entrada para gestão de conteúdo, siga as etapas a
 
 1. Clique em **[!UICONTROL Save]** para criar o formulário de entrada.
 
-## Etapa 4 – Criação do modelo de construção {#step-4---creating-the-construction-template}
+## Etapa 4 - Criar o template de construção {#step-4---creating-the-construction-template}
 
 A linguagem XSLT permite transformar um documento XML em outro documento de saída. Essa transformação é descrita em XML em um documento chamado folha de estilos.
 
@@ -326,7 +323,7 @@ Para usar um template JavaScript no Adobe Campaign, siga as etapas abaixo:
    </html>
    ```
 
-   A chamada de uma função no início de um template permite configurar uma chamada para dados de personalização obtidos do banco de dados do Adobe Campaign (nesse caso: recipient.firstName e recipient.lastName), para que possa ser interpretado quando usado em um delivery. Para obter mais informações, consulte [Inclusão de um template JavaScript](formatting.md#including-a-javascript-template).
+   A chamada de uma função no início de um template permite configurar uma chamada para dados de personalização obtidos do banco de dados do Adobe Campaign (nesse caso: recipient.firstName e recipient.lastName), para que possa ser interpretado quando usado em um delivery. Para obter mais informações, consulte [Incluir um template JavaScript](formatting.md#including-a-javascript-template).
 
    Neste exemplo, a função conterá o seguinte código:
 
@@ -349,7 +346,7 @@ Para usar um template JavaScript no Adobe Campaign, siga as etapas abaixo:
 
    ![](assets/contentmgt_jscode_perso_sample.png)
 
-## Etapa 5 — criação do modelo de publicação {#step-5---creating-the-publication-template}
+## Etapa 5 - Criar o template de publicação {#step-5---creating-the-publication-template}
 
 A próxima etapa envolve criar um template de publicação de conteúdo para vincular o schema, o formulário e o template de criação de conteúdo. Esse template de publicação pode ter vários formatos de saída.
 
@@ -375,15 +372,15 @@ Neste exemplo, as etapas são as seguintes:
 
 1. Clique em **[!UICONTROL Save]** para criar o template de publicação.
 
-## Etapa 6 - Criação de conteúdo {#step-6---creating-contents}
+## Etapa 6 - Criar conteúdo {#step-6---creating-contents}
 
 Agora é possível criar conteúdo com base nesse template de publicação.
 
 >[!NOTE]
 >
->Para obter mais informações sobre como criar conteúdo, consulte [Uso de um template de conteúdo](using-a-content-template.md).
+>Para obter mais informações sobre criação de conteúdo, consulte [Usar um modelo de conteúdo](using-a-content-template.md).
 
-### Criação de conteúdo no assistente de entrega {#creating-content-in-the-delivery-wizard}
+### Criar conteúdo no assistente do delivery {#creating-content-in-the-delivery-wizard}
 
 Para criar conteúdo diretamente nas entregas, siga as etapas abaixo:
 

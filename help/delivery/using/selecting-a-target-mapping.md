@@ -1,19 +1,16 @@
 ---
 product: campaign
-title: Seleção de target mapping
-description: Seleção de target mapping
-audience: delivery
-content-type: reference
-topic-tags: using-delivery-templates
+title: Selecionar um target mapping
+description: Saiba como direcionar mapeamento
 exl-id: b5514fa3-1e65-45dc-8e40-d1ba3b673e7a
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: 1e11b7419388698f5de366cbeddf2be88ef12873
 workflow-type: tm+mt
 source-wordcount: '180'
-ht-degree: 100%
+ht-degree: 97%
 
 ---
 
-# Seleção de target mapping{#selecting-a-target-mapping}
+# Selecionar um target mapping{#selecting-a-target-mapping}
 
 ![](../../assets/common.svg)
 
@@ -35,4 +32,4 @@ Esses mappings são os seguintes:
 
 >[!NOTE]
 >
->Você também pode criar novos target mapping. Essa operação é reservada para usuários avançados. Para obter mais informações, consulte o [Guia de Configuração](../../configuration/using/target-mapping.md).
+>Você também pode criar novos target mapping. Essa operação é reservada para usuários avançados. Para obter mais informações, consulte [esta seção](../../configuration/using/target-mapping.md).

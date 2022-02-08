@@ -1,19 +1,16 @@
 ---
 product: campaign
-title: Regeneração de esquemas
-description: Regeneração de esquemas
-audience: configuration
-content-type: reference
-topic-tags: editing-schemas
+title: Regenerar schemas
+description: Saiba como regenerar esquemas do Campaign
 exl-id: 6c48cfea-6d20-4462-a485-71e1575a08a7
-source-git-commit: bd9f035db1cbad883e1f27fe901e34dfbc9c1229
+source-git-commit: 56459b188ee966cdb578c415fcdfa485dcbed355
 workflow-type: tm+mt
-source-wordcount: '128'
-ht-degree: 7%
+source-wordcount: '132'
+ht-degree: 2%
 
 ---
 
-# Regeneração de esquemas{#regenerating-schemas}
+# Regenerar schemas{#regenerating-schemas}
 
 ![](../../assets/v7-only.svg)
 

@@ -1,19 +1,16 @@
 ---
 product: campaign
-title: Configuração das opções de rastreamento de URL
-description: Configuração das opções de rastreamento de URL
-audience: delivery
-content-type: reference
-topic-tags: tracking-messages
+title: Configurar opções de rastreamento de URL
+description: Saiba como configurar opções de rastreamento de URL
 exl-id: 3277726a-fd92-4720-8871-3d0422c7db70
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: 1e11b7419388698f5de366cbeddf2be88ef12873
 workflow-type: tm+mt
-source-wordcount: '164'
-ht-degree: 100%
+source-wordcount: '167'
+ht-degree: 94%
 
 ---
 
-# Configuração das opções de rastreamento de URL{#personalizing-url-tracking}
+# Configurar opções de rastreamento de URL{#personalizing-url-tracking}
 
 ![](../../assets/common.svg)
 
@@ -21,7 +18,7 @@ As configurações avançadas de rastreamento de mensagem são acessíveis por m
 
 >[!NOTE]
 >
->A gestão de imagens em emails também é configurada nessa janela. Consulte [Adição de imagens](defining-the-email-content.md#adding-images).
+>A gestão de imagens em emails também é configurada nessa janela. Consulte [Adicionar imagens](defining-the-email-content.md#adding-images).
 
 ![](assets/s_ncs_user_email_del_tracking_ico.png)
 

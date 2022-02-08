@@ -2,14 +2,11 @@
 product: campaign
 title: Configuração
 description: Configuração
-audience: configuration
-content-type: reference
-topic-tags: navigation-hierarchy
 exl-id: c7ae7240-0c12-4420-bbb3-4268c9ade3e7
-source-git-commit: 5d9e2f7d7cea9e6d1243b0e3a790f3990772e603
+source-git-commit: 8fa50d17a9ff36ccc310860ac93771590cfd76fd
 workflow-type: tm+mt
 source-wordcount: '1185'
-ht-degree: 0%
+ht-degree: 1%
 
 ---
 
@@ -95,7 +92,7 @@ Os comandos são exibidos na mesma ordem em que são declarados no documento XML
 
 Um separador de comando permite exibir uma barra de separação entre comandos. É identificado pela variável **&#39;-&#39;** valor contido no rótulo do comando.
 
-A presença opcional do **`<soapcall>`** com seus parâmetros de entrada define a chamada de um método SOAP a ser executado. Para obter mais informações sobre a API SOAP, consulte [Documentação JSAPI do Campaign](https://experienceleague.adobe.com/developer/campaign-api/api/index.html).
+A presença opcional do **`<soapcall>`** com seus parâmetros de entrada define a chamada de um método SOAP a ser executado. Para obter mais informações sobre a API SOAP, consulte [Documentação JSAPI do Campaign](https://experienceleague.adobe.com/developer/campaign-api/api/index.html?lang=pt-BR).
 
 O contexto do formulário pode ser atualizado na inicialização do **`<enter>`** . Para obter mais informações sobre essa tag, consulte a documentação sobre formulários de entrada.
 

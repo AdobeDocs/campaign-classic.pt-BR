@@ -1,23 +1,20 @@
 ---
 product: campaign
-title: Criação de um delivery a partir de um template
-description: Criação de um delivery a partir de um template
-audience: delivery
-content-type: reference
-topic-tags: using-delivery-templates
+title: Criar uma entrega de um modelo
+description: Saiba como criar um delivery a partir de um template
 exl-id: 7ffb649e-801f-4568-a86b-7982448e3c30
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: 56459b188ee966cdb578c415fcdfa485dcbed355
 workflow-type: tm+mt
-source-wordcount: '175'
-ht-degree: 100%
+source-wordcount: '178'
+ht-degree: 83%
 
 ---
 
-# Criação de um delivery a partir de um template{#creating-a-delivery-from-a-template}
+# Criar uma entrega de um modelo{#creating-a-delivery-from-a-template}
 
 ![](../../assets/common.svg)
 
-## Vincular o modelo a uma entrega {#linking-the-template-to-a-delivery}
+## Vincular o modelo a um delivery {#linking-the-template-to-a-delivery}
 
 Para criar uma entrega com base em um modelo existente, selecione um modelo disponível na lista..
 
@@ -31,7 +28,7 @@ Selecione o diretório desejado no campo **[!UICONTROL Folder]** ou clique no í
 
 Selecione o template de delivery a ser usado e clique em **[!UICONTROL Ok]**.
 
-## Execução do modelo {#executing-the-template}
+## Executar o modelo {#executing-the-template}
 
 Você pode iniciar a execução de um template diretamente da lista de templates sem criar um delivery primeiro. Para fazer isso, selecione o template a ser executado e clique com o botão direito do mouse. Selecione **[!UICONTROL Actions>Execute the delivery template...]**.
 
@@ -45,4 +42,4 @@ Essa ação gera um delivery na pasta anexada ao template. O nome desse delivery
 
 >[!NOTE]
 >
->Para obter mais informações sobre como configurar um delivery, consulte [Definição do conteúdo do email](defining-the-email-content.md).
+>Para obter mais informações sobre como configurar um delivery, consulte [Definir o conteúdo do email](defining-the-email-content.md).

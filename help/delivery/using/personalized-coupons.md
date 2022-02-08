@@ -1,15 +1,13 @@
 ---
 product: campaign
 title: Cupons personalizados
-description: Cupons personalizados
-audience: delivery
-content-type: reference
-topic-tags: personalizing-deliveries
+description: Saiba como criar e inserir cupons personalizados
+feature: Personalization
 exl-id: 182939bb-7aff-4667-bda9-c5d48be3b946
-source-git-commit: 0deb18bb0376fc5e94d063145280426ff54db786
+source-git-commit: 1e11b7419388698f5de366cbeddf2be88ef12873
 workflow-type: tm+mt
-source-wordcount: '879'
-ht-degree: 100%
+source-wordcount: '885'
+ht-degree: 94%
 
 ---
 
@@ -25,7 +23,7 @@ A adição de cupons aos seus deliveries pode oferecer aos recipients valor apri
 >
 >Os dados de cupom podem ser importados e exportados usando formatos CSV e XML. Para obter detalhes sobre a importação e exportação, consulte [esta seção](../../platform/using/get-started-data-import-export.md).
 
-## Criação de um cupom {#creating-a-coupon}
+## Criar um cupom {#creating-a-coupon}
 
 O módulo de cupom oferece duas opções ao criar cupons:
 
@@ -54,13 +52,13 @@ Antes de seguir as etapas abaixo, verifique se você sabe o tipo de cupom que de
    1. Insira um código exclusivo para o cupom individual quando solicitado pela janela pop-up.
    1. Clique em **[!UICONTROL Save]** para gerar o cupom.
 
-   Para obter mais detalhes sobre a guia Coupons, consulte [Configuração de cupons individuais](#configuring-individual-coupons).
+   Para obter mais detalhes sobre a guia Cupons, consulte [Configurar cupons individuais](#configuring-individual-coupons).
 
    >[!NOTE]
    >
    >Os cupons individuais podem ser importados em massa. Para obter detalhes sobre a importação e exportação, consulte [esta seção](../../platform/using/get-started-data-import-export.md).
 
-### Configuração de cupons individuais {#configuring-individual-coupons}
+### Configurar cupons individuais {#configuring-individual-coupons}
 
 ![](assets/deliv_coup_03.png)
 
@@ -73,7 +71,7 @@ A guia Cupons está disponível apenas com cupons individuais. Depois que um cup
 
 Os valores de **[!UICONTROL status]**, **[!UICONTROL channel]** e **[!UICONTROL address]** são automaticamente preenchidos. No entanto, os valores de **[!UICONTROL redeemed on]** não são recuperados pelo Campaign. Eles podem ser concluídos ao importar um arquivo com os detalhes de resgate do cupom.
 
-## Inserir um cupom em uma entrega de email {#inserting-a-coupon-into-an-email-delivery}
+## Inserir um cupom em um delivery de email {#inserting-a-coupon-into-an-email-delivery}
 
 No exemplo abaixo, o delivery é criado a partir da Home page. Para obter instruções detalhadas sobre como criar um delivery, consulte [esta seção](about-email-channel.md). Você também pode adicionar um cupom a um delivery em um workflow.
 
@@ -136,7 +134,7 @@ No exemplo abaixo, o delivery é criado a partir da Home page. Para obter instru
 
 >[!NOTE]
 >
->Para obter as instruções sobre como gerenciar os cupons insuficientes de um delivery, consulte [Managing insufficient coupons](#managing-insufficient-coupons)
+>Para obter instruções sobre como gerenciar cupons insuficientes para um delivery, consulte [Gerenciar cupons insuficientes](#managing-insufficient-coupons)
 
 Para confirmar que o delivery foi bem-sucedido:
 
@@ -153,7 +151,7 @@ Para confirmar que o delivery foi bem-sucedido:
 >
 >Aprenda como usar uma tabela de recipient personalizada [nesta página](../../configuration/using/about-custom-recipient-table.md).
 
-## Gestão de cupons insuficientes {#managing-insufficient-coupons}
+## Gerenciar cupons insuficientes {#managing-insufficient-coupons}
 
 A análise do delivery para se o número de cupons for menor que de mensagens. Nesse caso, você pode importar mais cupons ou restringir o número de mensagens. Siga as instruções abaixo se desejar limitar o número de mensagens.
 

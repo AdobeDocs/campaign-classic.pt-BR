@@ -1,19 +1,17 @@
 ---
 product: campaign
-title: Regras de filtragem
-description: Regras de filtragem
-audience: campaign
-content-type: reference
-topic-tags: campaign-optimization
+title: Regras de filtro
+description: Saiba como usar as regras de filtragem
+feature: Typology Rules
 exl-id: a4d12445-5680-4704-9c67-e43e0ea6631b
-source-git-commit: 5806690f764d2e5dfb5651597ff68b33bb399b44
+source-git-commit: 90c52ec144a6a3c1b534a80507e38fa3ed64fc83
 workflow-type: tm+mt
-source-wordcount: '503'
-ht-degree: 100%
+source-wordcount: '507'
+ht-degree: 96%
 
 ---
 
-# Regras de filtragem{#filtering-rules}
+# Regras de filtro{#filtering-rules}
 
 ![](../../assets/common.svg)
 
@@ -21,7 +19,7 @@ Regras de filtragem permitem definir as mensagens a serem excluídas com base no
 
 As regras de filtragem podem estar vinculadas a outros tipos de regras (controle, pressão etc.) em tipologias ou agrupadas em uma tipologia **Filtragem** dedicada. Para obter mais informações, consulte [Criação e uso de uma tipologia de filtragem](#creating-and-using-a-filtering-typology).
 
-## Criando uma regra de filtragem {#creating-a-filtering-rule}
+## Criar uma regra de filtragem {#creating-a-filtering-rule}
 
 Por exemplo, você pode filtrar os assinantes do boletim informativo para evitar que as comunicações sejam enviadas a recipients menores de idade.
 
@@ -47,7 +45,7 @@ Quando essa regra for usada em um delivery, os assinantes menores de idade serã
 
 ![](assets/campaign_opt_create_filter_05.png)
 
-## Condicionando uma regra de filtragem {#conditioning-a-filtering-rule}
+## Condição de uma regra de filtragem {#conditioning-a-filtering-rule}
 
 Você poderá restringir o campo da aplicação na regra de filtragem com base na entrega ou na estrutura de entrega vinculada.
 
@@ -61,7 +59,7 @@ Nesse caso, mesmo que a regra esteja vinculada a todos os deliveries, ela só se
 >
 >As regras de filtragem e tipologia podem ser usadas em um fluxo de trabalho, na atividade **[!UICONTROL Delivery outline]**. Para obter mais informações, consulte [esta seção](../../workflow/using/delivery-outline.md).
 
-## Como criar e usar uma tipologia de filtragem {#creating-and-using-a-filtering-typology}
+## Criar e usar uma tipologia de filtragem {#creating-and-using-a-filtering-typology}
 
 É possível criar tipologias **[!UICONTROL Filtering]**: elas contêm apenas regras de filtragem.
 

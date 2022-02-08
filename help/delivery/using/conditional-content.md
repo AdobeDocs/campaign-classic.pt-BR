@@ -1,15 +1,13 @@
 ---
 product: campaign
 title: Conteúdo condicional
-description: Conteúdo condicional
-audience: delivery
-content-type: reference
-topic-tags: personalizing-deliveries
+description: Saiba como adicionar conteúdo condicional
+feature: Personalization
 exl-id: 12595ee4-6a52-4e06-b80d-85fe633a5a11
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: 1e11b7419388698f5de366cbeddf2be88ef12873
 workflow-type: tm+mt
-source-wordcount: '478'
-ht-degree: 100%
+source-wordcount: '482'
+ht-degree: 97%
 
 ---
 
@@ -22,7 +20,7 @@ Ao configurar campos de conteúdo condicional, você pode criar personalização
 ![](assets/do-not-localize/how-to-video.png) [Descubra este recurso no vídeo](#conditionnal-content-video)
 
 
-## Uso das condições em um email {#using-conditions-in-an-email}
+## Condições de uso em um email {#using-conditions-in-an-email}
 
 No exemplo abaixo, você aprenderá a criar uma mensagem, personalizada dinamicamente no sexo e interesses do recipient.
 
@@ -77,7 +75,7 @@ Clique em **[!UICONTROL Preview]** e selecione um recipient para exibir o conte�
 
 ![](assets/s_ncs_user_conditional_content08.png)
 
-## Criação de email multilíngue {#creating-multilingual-email}
+## Criar email multilíngue {#creating-multilingual-email}
 
 Você verá no exemplo abaixo como criar um email multilíngue. O conteúdo será exibido em um idioma ou em outro, dependendo da preferência de idioma do recipient.
 

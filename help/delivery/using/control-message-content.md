@@ -1,19 +1,17 @@
 ---
 product: campaign
 title: Sobre a deliverability do Adobe Campaign Classic
-description: Saiba mais sobre como gerenciar a deliverability no Adobe Campaign Classic.
-audience: delivery
-content-type: reference
-topic-tags: deliverability-management
+description: Saiba mais sobre como gerenciar a deliverability no Adobe Campaign
+feature: Deliverability
 exl-id: dcd3a9f9-5fe9-4c28-a4a5-5aed67b036ab
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: 56459b188ee966cdb578c415fcdfa485dcbed355
 workflow-type: tm+mt
-source-wordcount: '762'
-ht-degree: 100%
+source-wordcount: '760'
+ht-degree: 97%
 
 ---
 
-# Controle do conteúdo da sua mensagem{#control-message-content}
+# Controle o conteúdo da mensagem{#control-message-content}
 
 ![](../../assets/common.svg)
 
@@ -31,7 +29,7 @@ Para obter dicas adicionais para otimizar a capacidade de delivery ao projetar c
 
 >[!NOTE]
 >
->Para obter mais informações sobre edição de conteúdo de email, consulte [Definição do conteúdo do email](defining-the-email-content.md) e [Criar conteúdo personalizado](design-and-personalize.md).
+>Para obter mais informações sobre edição de conteúdo de email, consulte [Definir o conteúdo do email](defining-the-email-content.md) e [Criar conteúdo personalizado](design-and-personalize.md).
 
 ## Endereço do remetente {#sender-address}
 
@@ -39,7 +37,7 @@ Determinados ISPs verificam a validade do endereço do remetente (**[!UICONTROL 
 
 Verifique se um endereço correto é fornecido no nível da instância (menu **[!UICONTROL Tools > Advanced > Deployment wizard...]**) ou nos cenários usados com mais frequência.
 
-Para obter mais informações, consulte [Definição do remetente](defining-the-email-content.md).
+Para obter mais informações, consulte [esta página](defining-the-email-content.md).
 
 ## Personalização {#personalization}
 

@@ -2,18 +2,15 @@
 product: campaign
 title: Aplicar regras
 description: Aplicar regras
-audience: campaign
-content-type: reference
-topic-tags: campaign-optimization
 exl-id: 09ec0fc0-76ed-4c73-8bdf-c931e2103aa9
-source-git-commit: 5806690f764d2e5dfb5651597ff68b33bb399b44
+source-git-commit: 90c52ec144a6a3c1b534a80507e38fa3ed64fc83
 workflow-type: tm+mt
-source-wordcount: '977'
-ht-degree: 100%
+source-wordcount: '978'
+ht-degree: 98%
 
 ---
 
-# Aplicar regras{#applying-rules}
+# Aplicar regras de tipologia{#applying-rules}
 
 ![](../../assets/common.svg)
 
@@ -40,7 +37,7 @@ Para aplicar as regras de tipologia criadas, é necessário associá-las a uma t
    >
    >A tipologia poderá ser definida no template de delivery para ser aplicada automaticamente a todos os deliveries criados usando esse template.
 
-## Definindo as condições de aplicação {#defining-application-conditions}
+## Definir condições de aplicação {#defining-application-conditions}
 
 Você poderá restringir o campo de aplicação de uma regra de acordo com suas necessidades (exceto para regras de controle).
 

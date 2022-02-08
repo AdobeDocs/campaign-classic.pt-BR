@@ -2,14 +2,11 @@
 product: campaign
 title: Regras de consistência
 description: Regras de consistência
-audience: campaign
-content-type: reference
-topic-tags: campaign-optimization
 exl-id: 757328fa-4698-4f85-a5fa-074b5152ec45
-source-git-commit: 5806690f764d2e5dfb5651597ff68b33bb399b44
+source-git-commit: 90c52ec144a6a3c1b534a80507e38fa3ed64fc83
 workflow-type: tm+mt
 source-wordcount: '759'
-ht-degree: 100%
+ht-degree: 93%
 
 ---
 
@@ -21,9 +18,9 @@ ht-degree: 100%
 
 O Adobe Campaign garante comunicações consistentes graças a um conjunto de regras contidas nas tipologias de campanha. Seu objetivo é controlar os deliveries enviados aos recipients, como volume, natureza, relevância etc.
 
-As regras de **Capacidade** podem evitar sobrecarga na plataforma relacionada ao delivery de mensagens. Como exemplo, as ofertas especiais que contêm um link de download não devem ser enviadas para muitas pessoas de uma só vez, para evitar a saturação do servidor; as campanhas por telefone não devem exceder a capacidade de processamento das centrais de atendimento etc. Para obter mais informações, consulte [Controle de capacidade](#controlling-capacity).
+As regras de **Capacidade** podem evitar sobrecarga na plataforma relacionada ao delivery de mensagens. Como exemplo, as ofertas especiais que contêm um link de download não devem ser enviadas para muitas pessoas de uma só vez, para evitar a saturação do servidor; as campanhas por telefone não devem exceder a capacidade de processamento das centrais de atendimento etc. Para obter mais informações, consulte [Capacidade de controle](#controlling-capacity).
 
-## Controlar a capacidade {#controlling-capacity}
+## Capacidade de controle {#controlling-capacity}
 
 Antes de enviar mensagens, você precisa garantir que sua organização tem a capacidade de processar o delivery (infraestrutura física), as respostas que o delivery pode gerar (mensagens de entrada) e o número de chamadas a serem feitas para entrar em contato com assinantes (capacidade de processamento da central de chamadas), por exemplo.
 
@@ -55,11 +52,11 @@ Para projetar uma nova regra de capacidade, siga as etapas abaixo:
 
    Para obter mais informações, consulte [esta seção](#monitoring-consumption).
 
-## Definindo a carga máxima {#defining-the-maximum-load}
+## Definir a carga máxima {#defining-the-maximum-load}
 
-Para definir a carga máxima, você precisa definir linhas de disponibilidade. Para fazer isso, duas opções estão disponíveis: você pode criar manualmente uma ou mais linhas de disponibilidade (consulte [Adicionar linhas de disponibilidade uma por uma](#adding-availability-lines-one-by-one)) ou criar intervalos de disponibilidade. A frequência desses períodos pode ser automatizada (consulte [Adicionar um conjunto de linhas de disponibilidade](#add-a-set-of-availability-lines)).
+Para definir a carga máxima, você precisa definir linhas de disponibilidade. Para fazer isso, duas opções estão disponíveis: é possível criar manualmente uma ou mais linhas de disponibilidade (consulte [Adicionar linhas de disponibilidade uma por uma](#adding-availability-lines-one-by-one)) ou criar intervalos de disponibilidade. A frequência desses períodos pode ser automatizada (consulte [Adicionar um conjunto de linhas de disponibilidade](#add-a-set-of-availability-lines)).
 
-### Adicionando linhas de disponibilidade uma por uma {#adding-availability-lines-one-by-one}
+### Adicionar linhas de disponibilidade uma por uma {#adding-availability-lines-one-by-one}
 
 Para criar uma linha de disponibilidade, clique no botão **[!UICONTROL Add]** e selecione **[!UICONTROL Add an availability line]**. Insira o período de disponibilidade e a carga disponível.
 
@@ -113,7 +110,7 @@ O número de mensagens a serem processadas é dividido uniformemente no interval
 
 ![](assets/campaign_opt_create_capacity_06.png)
 
-## Monitorando o consumo {#monitoring-consumption}
+## Consumo de monitor {#monitoring-consumption}
 
 Por padrão, as regras de capacidade são somente para fins de indicação. Selecione a opção **[!UICONTROL Exclude messages in excess of capacity from the target]** para impedir que a carga definida seja excedida. Nesse caso, as mensagens em excesso serão excluídas automaticamente dos deliveries usando essa regra de tipologia.
 

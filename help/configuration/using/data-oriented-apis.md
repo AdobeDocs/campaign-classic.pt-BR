@@ -2,14 +2,12 @@
 product: campaign
 title: APIs orientadas por dados
 description: APIs orientadas por dados
-audience: configuration
-content-type: reference
-topic-tags: api
+feature: API
 exl-id: a392c55e-541a-40b1-a910-4a6dc79abd2d
-source-git-commit: f000cb8bae164c22d1ede15db4e763cf50530674
+source-git-commit: 3997412f14666fa61bf71d0f0a0653f5cc042e19
 workflow-type: tm+mt
 source-wordcount: '1881'
-ht-degree: 0%
+ht-degree: 1%
 
 ---
 
@@ -53,7 +51,7 @@ Para obter mais informações, consulte [Exemplo no método &#39;ExecuteQuery&#3
 
 O **ExecuteQuery** é apresentado em [ExecuteQuery (xtk:queryDef)](#executequery--xtk-querydef-).
 
-### Gravar {#write}
+### Write {#write}
 
 Os comandos de gravação permitem escrever documentos simples ou complexos, com entradas em uma ou mais tabelas da base.
 

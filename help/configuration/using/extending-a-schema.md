@@ -1,19 +1,17 @@
 ---
 product: campaign
-title: Extensão de um esquema
+title: Estender um esquema
 description: Saiba como estender um schema
-audience: configuration
-content-type: reference
-topic-tags: editing-schemas
+feature: Schema Extension
 exl-id: 6e3e666d-6ab3-4346-93ca-fb0155a4660d
-source-git-commit: bd9f035db1cbad883e1f27fe901e34dfbc9c1229
+source-git-commit: 56459b188ee966cdb578c415fcdfa485dcbed355
 workflow-type: tm+mt
-source-wordcount: '333'
-ht-degree: 10%
+source-wordcount: '327'
+ht-degree: 9%
 
 ---
 
-# Extensão de um esquema{#extending-a-schema}
+# Estender um esquema{#extending-a-schema}
 
 ![](../../assets/v7-only.svg)
 
@@ -63,5 +61,5 @@ Há dois métodos para estender um schema existente:
 
 >[!IMPORTANT]
 >
->Para que as modificações sejam levadas em conta, é necessário regenerar schemas. Para obter mais informações, consulte [Regeneração de schemas](../../configuration/using/regenerating-schemas.md) seção.\
->Se as modificações afetarem a estrutura do banco de dados, será necessário executar uma atualização. Para obter mais informações, consulte a seção [Atualização da estrutura do banco de dados](../../configuration/using/updating-the-database-structure.md).
+>Para que as modificações sejam levadas em conta, é necessário regenerar schemas. Para obter mais informações, consulte [esta página](../../configuration/using/regenerating-schemas.md).\
+>Se as modificações afetarem a estrutura do banco de dados, será necessário executar uma atualização. Para obter mais informações, consulte [esta página](../../configuration/using/updating-the-database-structure.md).

@@ -2,14 +2,11 @@
 product: campaign
 title: Templates de publicação
 description: Templates de publicação
-audience: delivery
-content-type: reference
-topic-tags: content-management
 exl-id: 3b6e4974-4551-4da2-8eca-577c4f9cbd91
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: 1e11b7419388698f5de366cbeddf2be88ef12873
 workflow-type: tm+mt
 source-wordcount: '824'
-ht-degree: 100%
+ht-degree: 96%
 
 ---
 
@@ -35,7 +32,7 @@ A chave de identificação de uma folha de estilos é uma cadeia de caracteres f
 >
 >Na prática, é recomendável usar a mesma chave para o schema, o formulário e o template de publicação.
 
-## Criação e configuração do modelo {#creating-and-configuring-the-template}
+## Criar e configurar o modelo {#creating-and-configuring-the-template}
 
 Os templates de publicação são armazenados por padrão no nó **[!UICONTROL Administration > Configuration > Publication templates]**. Para criar um novo modelo, clique no botão **[!UICONTROL New]** acima da lista de templates.
 
@@ -87,7 +84,7 @@ As seguintes opções de publicação estão disponíveis:
 
    >[!NOTE]
    >
-   >Para obter mais informações sobre a geração de conteúdo, consulte [Criação de uma instância de conteúdo](using-a-content-template.md#creating-a-content-instance).
+   >Para obter mais informações sobre a geração de conteúdo, consulte [Criar uma instância de conteúdo](using-a-content-template.md#creating-a-content-instance).
 
 ### Entrega {#delivery}
 
@@ -97,7 +94,7 @@ Essa guia permite selecionar um cenário para iniciar um delivery diretamente no
 
 >[!NOTE]
 >
->Para obter um exemplo de criação de delivery com base em um conteúdo, consulte [Delivery de uma Instância de Conteúdo](using-a-content-template.md#delivering-a-content-instance).
+>Para obter um exemplo de criação de delivery com base em um conteúdo, consulte [Delivery de uma instância de conteúdo](using-a-content-template.md#delivering-a-content-instance).
 
 ### Agregador {#aggregator}
 

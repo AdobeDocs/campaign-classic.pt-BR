@@ -2,14 +2,12 @@
 product: campaign
 title: APIs direcionadas por empresas
 description: APIs direcionadas por empresas
-audience: configuration
-content-type: reference
-topic-tags: api
+feature: API
 exl-id: e6638870-3141-4f12-b904-db436127c0d1
-source-git-commit: f000cb8bae164c22d1ede15db4e763cf50530674
+source-git-commit: 8fa50d17a9ff36ccc310860ac93771590cfd76fd
 workflow-type: tm+mt
 source-wordcount: '632'
-ht-degree: 2%
+ht-degree: 3%
 
 ---
 
@@ -40,7 +38,7 @@ Esta seção detalha o uso dos serviços &quot;Subscribe&quot;, &quot;Unsubscrib
 
 >[!IMPORTANT]
 >
->[Documentação JSAPI do Campaign](https://experienceleague.adobe.com/developer/campaign-api/api/index.html) contém informações adicionais sobre chamadas SOAP e uso de Javascript no Adobe Campaign, bem como uma referência completa a todos os métodos e funções usados no aplicativo.
+>[Documentação JSAPI do Campaign](https://experienceleague.adobe.com/developer/campaign-api/api/index.html?lang=pt-BR) contém informações adicionais sobre chamadas SOAP e uso de Javascript no Adobe Campaign, bem como uma referência completa a todos os métodos e funções usados no aplicativo.
 
 ## Assinar (nms:subscription) {#subscribe--nms-subscription-}
 

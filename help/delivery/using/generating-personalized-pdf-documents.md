@@ -1,19 +1,17 @@
 ---
 product: campaign
-title: Geração de documentos personalizados em PDF
-description: Geração de documentos personalizados em PDF
-audience: delivery
-content-type: reference
-topic-tags: personalizing-deliveries
+title: Gerar documentos personalizados em PDF
+description: Saiba como gerar documentos personalizados do PDF
+feature: Personalization
 exl-id: e5239d99-256b-412b-be20-f64f822da9c3
-source-git-commit: 7fa8cea04fb4e25187c48ad19330815e9b522b37
+source-git-commit: 1e11b7419388698f5de366cbeddf2be88ef12873
 workflow-type: tm+mt
-source-wordcount: '439'
-ht-degree: 100%
+source-wordcount: '442'
+ht-degree: 91%
 
 ---
 
-# Geração de documentos personalizados em PDF{#generating-personalized-pdf-documents}
+# Gerar documentos personalizados em PDF{#generating-personalized-pdf-documents}
 
 ![](../../assets/common.svg)
 
@@ -25,7 +23,7 @@ As seguintes extensões são suportadas: &quot;.docx&quot;, &quot;.doc&quot; e &
 
 Para personalizar seus documentos, as mesmas funcionalidades JavaScript de personalização de email estão disponíveis.
 
-É necessário ativar a opção **[!UICONTROL "The content of the file is personalized and converted to PDF during the delivery of each message"]**. Essa opção é acessível quando você anexa o arquivo ao email de delivery. Para obter mais informações sobre como anexar um arquivo calculado, consulte a seção [Anexando arquivos](attaching-files.md).
+É necessário ativar a opção **[!UICONTROL "The content of the file is personalized and converted to PDF during the delivery of each message"]**. Essa opção é acessível quando você anexa o arquivo ao email de delivery. Para obter mais informações sobre como anexar um arquivo calculado, consulte [Anexar arquivos](attaching-files.md) seção.
 
 Exemplo de personalização de cabeçalho de fatura:
 
@@ -33,7 +31,7 @@ Exemplo de personalização de cabeçalho de fatura:
 
 Para gerar tabelas dinâmicas ou incluir imagens via URL, você precisa seguir um processo específico.
 
-## Geração de tabelas dinâmicas {#generating-dynamic-tables}
+## Gerar tabelas dinâmicas {#generating-dynamic-tables}
 
 O procedimento para gerar tabelas dinâmicas é da seguinte maneira:
 

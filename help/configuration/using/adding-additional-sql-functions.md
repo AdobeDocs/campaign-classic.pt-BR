@@ -1,23 +1,18 @@
 ---
 product: campaign
 title: Adição de funções SQL extras
-description: Adição de funções SQL extras
-audience: configuration
-content-type: reference
-topic-tags: api
+description: Saiba como definir funções SQL adicionais
 exl-id: 04b0a0e5-d6df-447c-ac67-66adb1bdf717
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: 3997412f14666fa61bf71d0f0a0653f5cc042e19
 workflow-type: tm+mt
-source-wordcount: '1021'
-ht-degree: 1%
+source-wordcount: '1023'
+ht-degree: 0%
 
 ---
 
-# Adição de funções SQL extras{#adding-additional-sql-functions}
+# Definir funções SQL adicionais{#adding-additional-sql-functions}
 
 ![](../../assets/v7-only.svg)
-
-## Introdução {#introduction}
 
 O Adobe Campaign permite que o usuário defina **suas próprias funções** que podem acessar funções SQL, tanto as oferecidas pelo banco de dados quanto aquelas que ainda não estão disponíveis no console. Isso é útil para funções agregadas (média, máximo, soma), por exemplo, que só podem ser calculadas no servidor ou quando o banco de dados fornece uma maneira mais fácil de implementar determinadas funções, em vez de gravar a expressão &quot;manualmente&quot; no console (por exemplo, gerenciamento de datas).
 

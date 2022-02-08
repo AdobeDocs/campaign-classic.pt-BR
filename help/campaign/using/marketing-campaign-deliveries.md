@@ -2,12 +2,12 @@
 product: campaign
 title: Deliveries de campanha de marketing
 description: Saiba mais sobre deliveries de campanha de marketing
-audience: campaign
+feature: Resource Management, Cross Channel Orchestration
 exl-id: 1dd3c080-444d-45f8-9562-d2d01a9d2860
-source-git-commit: d3f5c56078ddac7597925191fd347bdcab61714d
+source-git-commit: 90c52ec144a6a3c1b534a80507e38fa3ed64fc83
 workflow-type: tm+mt
 source-wordcount: '1487'
-ht-degree: 100%
+ht-degree: 98%
 
 ---
 
@@ -21,7 +21,7 @@ Quando criados a partir de uma campanha, os deliveries serão vinculados a essa 
 
 ![](assets/do-not-localize/how-to-video.png)[ Descubra este recurso no vídeo](#create-email-video)
 
-## Criação de entregas {#creating-deliveries}
+## Criar entregas {#creating-deliveries}
 
 Para criar uma entrega vinculada a uma campanha, clique no link **[!UICONTROL Add a delivery]** no painel da campanha.
 
@@ -29,11 +29,11 @@ Para criar uma entrega vinculada a uma campanha, clique no link **[!UICONTROL Ad
 
 As configurações sugeridas são adequadas aos diferentes tipos de delivery: correspondência direta, email, canais móveis. [Saiba mais](../../delivery/using/steps-about-delivery-creation-steps.md).
 
-## Iniciar uma entrega {#starting-a-delivery}
+## Iniciar um delivery {#starting-a-delivery}
 
 Depois que todas as aprovações tiverem sido concedidas, o delivery estará pronto para ser iniciado. O procedimento de delivery depende do tipo de delivery. Para deliveries de email ou canais móveis, consulte [Iniciar um delivery online](#starting-an-online-delivery) e para deliveries por correspondência direta, consulte [Iniciar um delivery offline](#starting-an-offline-delivery).
 
-### Iniciar uma entrega online {#starting-an-online-delivery}
+### Iniciar um delivery online {#starting-an-online-delivery}
 
 Depois que todas as solicitações de aprovação tiverem sido concedidas, o status do delivery será alterado para **[!UICONTROL Pending confirmation]** e ele poderá ser iniciado por um operador. Quando apropriado, o operador (ou grupo de operadores) do Adobe Campaign designado como revisor para iniciar o delivery é notificado de que um delivery está pronto para ser iniciado.
 
@@ -51,7 +51,7 @@ As informações também aparecem no painel de campanha. O link **[!UICONTROL Co
 
 Uma mensagem de confirmação permite que você proteja esta ação.
 
-### Iniciar uma entrega offline {#starting-an-offline-delivery}
+### Iniciar um delivery off-line {#starting-an-offline-delivery}
 
 Após todas as aprovações serem concedidas, o status do delivery será alterado para **[!UICONTROL Pending extraction]**. Os arquivos de extração são criados por um workflow especial, que em uma configuração padrão, inicia automaticamente quando um delivery de mala direta está com extração pendente. Quando um processo está em andamento, ele é exibido no painel e pode ser editado através do link.
 
@@ -63,7 +63,7 @@ Após todas as aprovações serem concedidas, o status do delivery será alterad
 
 Após executar o workflow de extração com sucesso, o arquivo de extração deve ser aprovado (fornecido de forma que a aprovação do arquivo de extração tenha sido selecionada nas configurações do delivery).
 
-Para obter mais informações, consulte [Aprovação de um arquivo de extração](../../campaign/using/marketing-campaign-approval.md#approving-an-extraction-file).
+Para obter mais informações, consulte [Aprovar um arquivo de extração](../../campaign/using/marketing-campaign-approval.md#approving-an-extraction-file).
 
 **Etapa 2 - Aprovação da mensagem para o provedor de serviços**
 
@@ -128,7 +128,7 @@ Em uma campanha que você também pode consultar outros itens, como cupons promo
 >
 >Se você estiver usando o MRM, também poderá gerenciar uma biblioteca de recursos de marketing disponíveis para vários participantes de trabalho colaborativo. Consulte [Gerenciar recursos de marketing](../../mrm/using/managing-marketing-resources.md).
 
-### Adição de documentos {#adding-documents}
+### Adicionar documentos {#adding-documents}
 
 Os documentos podem ser associados no nível da campanha (documentos contextuais) ou no nível do programa (documentos gerais).
 
@@ -155,7 +155,7 @@ No painel, os documentos associados à campanha são agrupados na seção **[!UI
 
 Eles também podem ser editados e modificados nessa visualização.
 
-### Associação e estruturação de recursos vinculados por meio de um delivery outline {#associating-and-structuring-resources-linked-via-a-delivery-outline}
+### Associar e estruturar recursos vinculados por meio de um delivery outline {#associating-and-structuring-resources-linked-via-a-delivery-outline}
 
 >[!NOTE]
 >
@@ -167,7 +167,7 @@ Esses elementos são agrupados em delivery outlines e um delivery outline espec�
 
 Para uma campanha, delivery outlines permitem que você estruture elementos externos a serem associados ao delivery de acordo com determinados critérios: a unidade relacionada, a oferta promocional concedida, o convite para um evento local etc.
 
-#### Criação de uma estrutura {#creating-an-outline}
+#### Criar um outline {#creating-an-outline}
 
 Para criar um outline, clique na guia **[!UICONTROL Delivery outlines]** da campanha relacionada e depois clique na subguia **[!UICONTROL Edit > Documents]**.
 
@@ -205,7 +205,7 @@ Uma estrutura pode conter itens e campos de personalização, recursos e ofertas
    >
    >Para obter mais informações sobre recursos de marketing, consulte [Gerenciamento de recursos de marketing](../../mrm/using/managing-marketing-resources.md).
 
-#### Seleção de uma estrutura {#selecting-an-outline}
+#### Selecionar um outline {#selecting-an-outline}
 
 Para cada delivery, você pode selecionar o outline para associar na seção reservada para o outline da extração, como no exemplo a seguir:
 

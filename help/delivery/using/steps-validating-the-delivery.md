@@ -1,15 +1,12 @@
 ---
 product: campaign
-title: Validação do delivery
-description: Validação do delivery
-audience: delivery
-content-type: reference
-topic-tags: about-deliveries-and-channels
+title: Validar a entrega
+description: Saiba como validar um delivery
 exl-id: c2f4d8d0-f0fe-4d1a-92fd-91edaf9729f3
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: 1e11b7419388698f5de366cbeddf2be88ef12873
 workflow-type: tm+mt
-source-wordcount: '1663'
-ht-degree: 100%
+source-wordcount: '1666'
+ht-degree: 98%
 
 ---
 
@@ -23,7 +20,7 @@ Para fazer isso:
 
 1. **Analisar o delivery**: esta etapa permite preparar as mensagens para a entrega. [Saiba mais](#analyzing-the-delivery).
 
-   As regras aplicadas durante a análise são apresentadas [nesta seção](#validation-process-with-typologies). Os modos de validação disponíveis estão detalhados na seção [Alteração do modo de aprovação](#changing-the-approval-mode).
+   As regras aplicadas durante a análise são apresentadas [nesta seção](#validation-process-with-typologies). Os modos de validação disponíveis são detalhados na variável [Alterar o modo de aprovação](#changing-the-approval-mode) seção.
 
 1. **Enviar provas**: esta etapa permite controlar o conteúdo, os URLs, a personalização etc. Saiba mais em [Enviar uma prova](steps-validating-the-delivery.md#sending-a-proof) e [Definir um target de prova específico](steps-defining-the-target-population.md#defining-a-specific-proof-target).
 

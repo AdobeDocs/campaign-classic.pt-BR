@@ -2,29 +2,27 @@
 product: campaign
 title: Monitoramento da capacidade de entrega do Adobe Campaign Classic
 description: Saiba mais sobre as ferramentas e as diretrizes sobre o monitoramento da capacidade de entrega no Adobe Campaign Classic.
-audience: delivery
-content-type: reference
-topic-tags: deliverability-management
+feature: Deliverability
 exl-id: e4caa316-242f-46cd-a20b-a5eee5a0c456
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: 56459b188ee966cdb578c415fcdfa485dcbed355
 workflow-type: tm+mt
-source-wordcount: '531'
-ht-degree: 100%
+source-wordcount: '533'
+ht-degree: 96%
 
 ---
 
-# Monitoramento da capacidade de entrega{#monitoring-deliverability}
+# Monitorar a capacidade de entrega{#monitoring-deliverability}
 
 ![](../../assets/common.svg)
 
 Abaixo você encontrará detalhes sobre as diferentes ferramentas de monitoramento fornecidas pelo Adobe Campaign, bem como algumas diretrizes adicionais sobre como aproveitar os recursos oferecidos pelo Adobe Campaign para monitorar a capacidade de entrega de sua plataforma.
 
-## Monitoramento da capacidade de entrega {#configuration}
+## Sobre o monitoramento da capacidade de entrega {#about-deliverability-monitoring}
 
 Esse recurso está disponível por meio de um pacote dedicado no Adobe Campaign. Para usá-lo, esse pacote deve ser instalado. Depois de concluído, reinicie o servidor para que o pacote seja considerado.
 * Para clientes hospedados e híbridos, a opção **Deliverability monitoring** é configurada em sua instância pelo suporte técnico e consultores da Adobe. Para obter mais informações, entre em contato com o executivo da sua conta Adobe.
 
-* Para instalações no local, você deve instalar o pacote **[!UICONTROL Deliverability monitoring (Email Deliverability)]** por meio do menu **[!UICONTROL Tools]** > **[!UICONTROL Advanced]** > **[!UICONTROL Import package]**. Para obter mais informações, consulte [Instalação de pacotes padrão do Campaign Classic](../../installation/using/installing-campaign-standard-packages.md).
+* Para instalações no local, você deve instalar o pacote **[!UICONTROL Deliverability monitoring (Email Deliverability)]** por meio do menu **[!UICONTROL Tools]** > **[!UICONTROL Advanced]** > **[!UICONTROL Import package]**. Para obter mais informações, consulte [Instalar pacotes padrão do Campaign Classic](../../installation/using/installing-campaign-standard-packages.md).
 
 No Adobe Campaign Classic, o **Monitoramento da capacidade de entrega** é gerenciado pelo workflow **[!UICONTROL Refresh for deliverability]**. Ele é instalado por padrão em todas as instâncias e permite inicializar a lista de regras de qualificação de email de devolução, a lista de domínios e a lista de MXs. Quando o pacote **[!UICONTROL Deliverability monitoring (Email Deliverability)]** estiver instalado, esse workflow será executado durante a noite para atualizar regularmente a lista de regras e permitir que você gerencie ativamente a capacidade de entrega da plataforma.
 
@@ -59,7 +57,3 @@ Estas são algumas diretrizes adicionais sobre o monitoramento da capacidade de 
 * Ao usar as [ondas](steps-sending-the-delivery.md#sending-using-multiple-waves), verifique se cada onda tem tempo suficiente para terminar antes que a próxima seja acionada.
 * Verifique se o número de erros e as novas [quarentenas](understanding-quarantine-management.md) estão consistentes com outros deliveries.
 * Consulte detalhadamente os [logs do delivery](delivery-dashboard.md#delivery-logs-and-history) para verificar o tipo de erro destacado (lista de bloqueios, problemas de DNS, regras anti-spam, etc.).
-
-<!--### Delivery Reports - Broadcast Statistics {#broadcast-statistics}
-
-Each delivery will generate a broadcast statistics report when you open a delivery in the “Deliveries List”, which includes some reputation metrics that may impact your deliverability.-->

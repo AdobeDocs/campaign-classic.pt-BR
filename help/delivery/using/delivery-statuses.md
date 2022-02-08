@@ -1,15 +1,13 @@
 ---
 product: campaign
-title: Status de delivery
-description: Saiba mais sobre os status disponíveis no painel do delivery.
-audience: delivery
-content-type: reference
-topic-tags: monitoring-deliveries
+title: Status de entrega
+description: Saiba mais sobre os status disponíveis no painel do delivery
+feature: Monitoring
 exl-id: 0663257a-3a70-4e0c-bbeb-8242aaa0876d
-source-git-commit: 98380c18b915cfebc980e68f9840f9d8919eaca4
-workflow-type: ht
-source-wordcount: '630'
-ht-degree: 100%
+source-git-commit: 56459b188ee966cdb578c415fcdfa485dcbed355
+workflow-type: tm+mt
+source-wordcount: '632'
+ht-degree: 99%
 
 ---
 
@@ -31,7 +29,7 @@ Para obter mais detalhes sobre as diferentes falhas de delivery que podem ser en
 
 * [Painel de entrega](delivery-dashboard.md)
 * [Solução de problemas de entrega](delivery-troubleshooting.md)
-* [Sobre a capacidade de entrega](about-deliverability.md)
+* [Introdução à capacidade de entrega](about-deliverability.md)
 
 ## Lista de status de entrega {#list-delivery-statuses}
 

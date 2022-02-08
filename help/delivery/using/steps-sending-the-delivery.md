@@ -1,19 +1,16 @@
 ---
 product: campaign
-title: Configuração e envio do delivery
-description: Configuração e envio do delivery
-audience: delivery
-content-type: reference
-topic-tags: about-deliveries-and-channels
+title: Configurar e enviar o delivery
+description: Saiba como configurar e enviar o delivery
 exl-id: 0411686e-4f13-401e-9333-e14b05ebe9cd
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: 1e11b7419388698f5de366cbeddf2be88ef12873
 workflow-type: tm+mt
-source-wordcount: '1521'
-ht-degree: 100%
+source-wordcount: '1526'
+ht-degree: 95%
 
 ---
 
-# Configuração e envio do delivery {#configuring-and-sending-the-delivery}
+# Configurar e enviar o delivery {#configuring-and-sending-the-delivery}
 
 ![](../../assets/common.svg)
 
@@ -35,7 +32,7 @@ Antes de enviar o delivery, você poderá definir os parâmetros de envio nas pr
    >
    >Quando o delivery é duplicado, o parâmetro é redefinido.
 
-* **[!UICONTROL Send using multiple waves]**: para obter mais informações, consulte [Enviar usando várias ondas](#sending-using-multiple-waves).
+* **[!UICONTROL Send using multiple waves]**: Para obter mais informações, consulte [Enviar usando várias ondas](#sending-using-multiple-waves).
 
 * **[!UICONTROL Test SMTP delivery]**: essa opção permite testar o envio de um delivery via SMTP. O delivery é processado para conexão com o servidor SMTP, mas não é enviado.
 
@@ -45,7 +42,7 @@ Antes de enviar o delivery, você poderá definir os parâmetros de envio nas pr
 
 * **[!UICONTROL Email BCC]**: essa opção permite armazenar emails em um sistema externo por meio do CCO simplesmente adicionando um endereço de email de CCO ao target da sua mensagem. Para obter mais informações, consulte [esta seção](sending-messages.md#archiving-emails).
 
-## Confirmação da entrega {#confirming-delivery}
+## Confirme a delivery {#confirming-delivery}
 
 Depois que o delivery estiver configurado e pronto para ser enviado, certifique-se de executar a análise do delivery.
 
@@ -59,11 +56,11 @@ Você poderá fechar o assistente do delivery e controlar a execução do delive
 
 Após enviar as mensagens, você pode monitorar e rastrear seus deliveries. Para obter mais informações, consulte essas seções.
 
-* [Monitoramento de uma entrega](about-delivery-monitoring.md)
-* [Compreensão de falhas de entrega](understanding-delivery-failures.md)
+* [Monitorar um delivery](about-delivery-monitoring.md)
+* [Entender as falhas de delivery](understanding-delivery-failures.md)
 * [Sobre o rastreamento de mensagens](about-message-tracking.md)
 
-## Agendar o envio da entrega {#scheduling-the-delivery-sending}
+## Programar o envio do delivery {#scheduling-the-delivery-sending}
 
 É possível adiar a entrega de mensagens para agendar a entrega ou gerenciar as regras de pressão e evitar o excesso de solicitações em relação a uma população.
 
@@ -167,7 +164,7 @@ Os dois exemplos abaixo são os casos de uso mais comuns para usar várias ondas
 
    ![](assets/s_ncs_user_wizard_waves_call_center.png)
 
-## Configuração de tentativas {#configuring-retries}
+## Configurar novas tentativas {#configuring-retries}
 
 As mensagens temporariamente não entregues devido a um erro **Suave** ou **Ignorado** estão sujeitas a uma repetição automática. Os tipos de falha de delivery são apresentados nesta [seção](understanding-delivery-failures.md#delivery-failure-types-and-reasons).
 
@@ -179,9 +176,9 @@ Para instalações no local e instalações hospedadas/híbridas usando o MTA he
 
 ![](assets/s_ncs_user_wizard_retry_param.png)
 
-Por padrão, cinco tentativas são agendadas para o primeiro dia do delivery com um intervalo mínimo de uma hora distribuída pelas 24 horas do dia. Uma nova tentativa por dia é programada depois disso e até o prazo do delivery, que é definido na guia **[!UICONTROL Validity]** (consulte [Definir período de validade](#defining-validity-period)).
+Por padrão, cinco tentativas são agendadas para o primeiro dia do delivery com um intervalo mínimo de uma hora distribuída pelas 24 horas do dia. Uma nova tentativa por dia é programada depois disso e até o prazo do delivery, que é definido em **[!UICONTROL Validity]** guia . Consulte [Definir o período de validade](#defining-validity-period).
 
-## Definição do período de validade {#defining-validity-period}
+## Definir o período de validade {#defining-validity-period}
 
 Quando a entrega for iniciada, as mensagens (e todas as tentativas) poderão ser enviadas até o prazo da entrega. Isso é indicado nas propriedades de delivery, por meio da guia **[!UICONTROL Validity]**.
 

@@ -1,19 +1,16 @@
 ---
 product: campaign
 title: Envio de emails em celulares japoneses com o Adobe Campaign Classic
-description: Saiba como configurar, projetar e enviar emails que serão lidos em um dispositivo móvel japonês.
-audience: delivery
-content-type: reference
-topic-tags: sending-emails
+description: Saiba como configurar, projetar e enviar emails que serão lidos em um dispositivo móvel japonês
 exl-id: 44634227-2340-49c4-b330-740c739ea551
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: 1e11b7419388698f5de366cbeddf2be88ef12873
 workflow-type: tm+mt
 source-wordcount: '759'
-ht-degree: 100%
+ht-degree: 96%
 
 ---
 
-# Envio de emails em celulares japoneses {#sending-emails-on-japanese-mobiles}
+# Enviar emails em celulares japoneses {#sending-emails-on-japanese-mobiles}
 
 ![](../../assets/common.svg)
 
@@ -50,9 +47,9 @@ Portanto, você deve:
 >* Para Softbank, consulte [esta página](https://www.support.softbankmobile.co.jp/partner/home_tech3/index.cfm).
 
 
-## Teste do conteúdo do email {#testing-the-email-content}
+## Testar o conteúdo do email {#testing-the-email-content}
 
-### Pré-visualização da mensagem {#previewing-the-message}
+### Pré-visualizar a mensagem {#previewing-the-message}
 
 O Adobe Campaign permite verificar se o formato da mensagem é compatível com um celular japonês.
 
@@ -66,7 +63,7 @@ Na guia **[!UICONTROL Preview]** da janela de edição de conteúdo, ao clicar e
 
    ![](assets/deco-mail_06.png)
 
-### Execução da regra de tipologia {#running-typology-rule}
+### Executar regra de tipologia {#running-typology-rule}
 
 Além do diagnóstico de pré-visualização, uma segunda verificação é realizada ao enviar uma prova ou um delivery: uma regra de tipologia específica, **[!UICONTROL Deco-mail check]**, é iniciada durante a análise.
 
@@ -76,7 +73,7 @@ Além do diagnóstico de pré-visualização, uma segunda verificação é reali
 
 Essa regra de tipologia permite verificar se o delivery respeita as [restrições de formato](#limitations-and-recommendations) definidas pelos operadores japoneses, especialmente em relação ao tamanho total do email, ao tamanho das seções HTML e de texto, ao número de imagens nas mensagens e às tags no conteúdo HTML.
 
-### Envio de provas {#sending-proofs}
+### Enviar provas {#sending-proofs}
 
 Você pode enviar provas para testar seu delivery. Quando você envia a prova, se estiver usando endereços de substituição, digite os endereços que correspondem ao formato do email do perfil usado.
 
@@ -84,14 +81,14 @@ Por exemplo, você pode substituir o endereço de um perfil por test@softbank.ne
 
 ![](assets/deco-mail_05.png)
 
-## Envio de mensagens {#sending-messages}
+## Enviar mensagens {#sending-messages}
 
 Para enviar um email para recipients com formatos de email japoneses com o Campaign, há duas opções:
 
 * Criar dois deliveries: um somente para recipients japoneses e outro para outros recipients. Consulte [esta seção](#designing-a-specific-delivery-for-japanese-formats).
 * Criar um único delivery e o Adobe Campaign detectará automaticamente o formato a ser usado. Consulte [esta seção](#designing-a-delivery-for-all-formats).
 
-### Criação de delivery específico para formatos japoneses {#designing-a-specific-delivery-for-japanese-formats}
+### Criar um delivery específico para formatos japoneses {#designing-a-specific-delivery-for-japanese-formats}
 
 Você pode criar um workflow que contenha dois deliveries: um para ser lido em um celular japonês e outro para recipients com formato do email padrão.
 
@@ -101,7 +98,7 @@ Para fazer isso, use a atividade **[!UICONTROL Split]** no workflow e defina os 
 
 ![](assets/deco-mail_07.png)
 
-### Criação de delivery para todos os formatos {#designing-a-delivery-for-all-formats}
+### Criar um delivery para todos os formatos {#designing-a-delivery-for-all-formats}
 
 Quando o Adobe Campaign gerencia dinamicamente os formatos de acordo com o domínio (perfis com formatos de email definidos como **[!UICONTROL Unknown]**, **[!UICONTROL HTML]** ou **[!UICONTROL Text]**), você pode enviar o mesmo delivery a todos os recipients.
 

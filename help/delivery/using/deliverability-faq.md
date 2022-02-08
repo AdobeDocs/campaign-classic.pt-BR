@@ -2,11 +2,9 @@
 product: campaign
 title: Pontos principais ao gerenciar a capacidade de delivery no Adobe Campaign Classic
 description: Quais são os principais pontos a serem verificados ao gerenciar a capacidade de delivery no Adobe Campaign Classic?
-audience: delivery
-content-type: reference
-topic-tags: deliverability-management
+feature: Deliverability
 exl-id: f94897c1-b44c-4100-ac50-a89b13fa6f2f
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: 56459b188ee966cdb578c415fcdfa485dcbed355
 workflow-type: tm+mt
 source-wordcount: '657'
 ht-degree: 100%

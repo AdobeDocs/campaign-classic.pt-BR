@@ -2,14 +2,12 @@
 product: campaign
 title: Seed addresses
 description: Seed addresses
-audience: configuration
-content-type: reference
-topic-tags: use-a-custom-recipient-table
+feature: Seed Address
 exl-id: a16103bf-0498-4f59-ad96-8bfdeea26577
-source-git-commit: fb4b4c42b907e86813ea570f912312fccf893bfe
+source-git-commit: 56459b188ee966cdb578c415fcdfa485dcbed355
 workflow-type: tm+mt
-source-wordcount: '323'
-ht-degree: 4%
+source-wordcount: '322'
+ht-degree: 9%
 
 ---
 
@@ -44,7 +42,7 @@ Definição do schema estendido da tabela de recipients:
 
 Siga as etapas abaixo:
 
-1. Crie uma extensão do **nms:seedMember** esquema. Para obter mais informações, consulte [Extensão de um schema](../../configuration/using/extending-a-schema.md).
+1. Crie uma extensão do **nms:seedMember** esquema. Para obter mais informações, consulte [esta seção](../../configuration/using/extending-a-schema.md).
 1. Nesta nova extensão, adicione um novo elemento na raiz de **[!UICONTROL seedMember]** com os seguintes parâmetros:
 
    ```
@@ -82,7 +80,7 @@ Siga as etapas abaixo:
    >    * No **nms:seedMember** , o campo que contém o endereço de email deve ter **name=&quot;email&quot;** como um atributo. O nome SQL deve ser diferente de &#39;sEmail&#39;, que já está sendo usado para o schema do recipient. Esse atributo deve ser declarado imediatamente no **`<element name="custom_cus_person" />`** elemento.
 
 
-1. Modifique o **[!UICONTROL seedMember]** para definir uma nova guia &quot;Internal recipient&quot; no formulário **[!UICONTROL Seed addresses]** janela. Para obter mais informações, consulte [Estrutura do formulário](../../configuration/using/form-structure.md).
+1. Modifique o **[!UICONTROL seedMember]** para definir uma nova guia &quot;Internal recipient&quot; no formulário **[!UICONTROL Seed addresses]** janela. Para obter mais informações, consulte [esta página](../../configuration/using/form-structure.md).
 
    ```
    <container colcount="2" label="Internal recipient" name="internal"

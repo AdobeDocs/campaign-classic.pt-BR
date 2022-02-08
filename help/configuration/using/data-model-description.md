@@ -1,12 +1,10 @@
 ---
 product: campaign
 title: Descrição do modelo de dados do Adobe Campaign Classic
-description: Este documento descreve o modelo de dados Adobe Campaign.
-audience: configuration
-content-type: reference
-topic-tags: schema-reference
+description: Este documento descreve o modelo de dados Adobe Campaign
+feature: Data Model
 exl-id: fc0fd23c-f9ea-4e30-b47b-a84143d882ca
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: 3997412f14666fa61bf71d0f0a0653f5cc042e19
 workflow-type: tm+mt
 source-wordcount: '2374'
 ht-degree: 1%
@@ -211,12 +209,12 @@ Esse conjunto de tabelas está vinculado à variável **Simulação** , que perm
 * **NmsDlvSimulationRel**: Essa tabela corresponde ao **nms:dlvSimulationRel** esquema. Ele contém a lista de deliveries considerados na simulação. O escopo da simulação é armazenado em XML.
 * **NmsOfferSimulationRel**: Essa tabela corresponde ao **nms:offerSimulationRel** esquema. Ela permite vincular uma simulação a uma oferta.
 
-## Interaction Module {#interaction-module}
+## Módulo de interação {#interaction-module}
 
-Esse conjunto de tabelas está vinculado à variável **Interação** , que permite responder em tempo real durante uma interação com um determinado contato, tornando-o uma única ou várias ofertas adaptadas. For more on this, see [Interaction and offer management](../../interaction/using/interaction-and-offer-management.md).
+Esse conjunto de tabelas está vinculado à variável **Interação** , que permite responder em tempo real durante uma interação com um determinado contato, tornando-o uma única ou várias ofertas adaptadas. Para obter mais informações, consulte [Interação e gestão de ofertas](../../interaction/using/interaction-and-offer-management.md).
 
 * **NmsOffer**: Essa tabela corresponde ao **nms:offer** esquema. Ele contém a definição de cada oferta de marketing.
-* **NmsPropositionRcp**: Essa tabela corresponde ao **nms:propositionRcp** esquema. It contains the cross-channel log of marketing propositions sent to each individual. O registro é criado quando uma proposta é preparada ou efetivamente feita a um indivíduo.
+* **NmsPropositionRcp**: Essa tabela corresponde ao **nms:propositionRcp** esquema. Ele contém o log entre canais das apresentações de marketing enviadas para cada indivíduo. O registro é criado quando uma proposta é preparada ou efetivamente feita a um indivíduo.
 * **NmsOfferSpace**: Essa tabela corresponde ao **nms:offerSpace** esquema. Ele contém a definição de locais em que as apresentações são feitas.
 * **NmsOfferContext**: Essa tabela corresponde ao **nms:offerContext** esquema. Contém critérios adicionais sobre a aplicabilidade da proposta, bem como sobre a definição da fórmula de cálculo do peso.
 * **NmsOfferView**: Essa tabela corresponde ao **nms:offerView**. Ele contém as representações de oferta.

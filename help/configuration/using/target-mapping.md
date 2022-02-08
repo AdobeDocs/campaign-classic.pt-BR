@@ -2,14 +2,11 @@
 product: campaign
 title: Target mapping
 description: Saiba como criar um target mapping
-audience: configuration
-content-type: reference
-topic-tags: use-a-custom-recipient-table
 exl-id: 38333669-5598-4811-a121-b677c1413f56
-source-git-commit: 468a986d7cfb8a4c51229cf81b6656ca2d101f40
+source-git-commit: 56459b188ee966cdb578c415fcdfa485dcbed355
 workflow-type: tm+mt
-source-wordcount: '507'
-ht-degree: 3%
+source-wordcount: '490'
+ht-degree: 2%
 
 ---
 
@@ -124,7 +121,3 @@ Há duas maneiras de usar o novo schema como target de um delivery:
 * Selecione o mapeamento diretamente durante a seleção de target ao criar um delivery, conforme mostrado abaixo:
 
 ![](assets/mapping_selection_ciblage.png)
-
-**Tópicos relacionados**
-
-* [Responder rapidamente às solicitações do cliente para acessar seus dados](https://helpx.adobe.com/campaign/kb/simplifying-campaign-management-acc.html#Quicklyrespondtocustomerrequeststoaccesstheirdata)

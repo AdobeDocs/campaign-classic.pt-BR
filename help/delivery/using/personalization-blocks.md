@@ -1,15 +1,13 @@
 ---
 product: campaign
 title: Blocos de personalização
-description: Blocos de personalização
-audience: delivery
-content-type: reference
-topic-tags: personalizing-deliveries
+description: Saiba como usar blocos de personalização
+feature: Personalization
 exl-id: 8d155844-d18a-4165-9886-c3b144109f6e
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: 1e11b7419388698f5de366cbeddf2be88ef12873
 workflow-type: tm+mt
-source-wordcount: '857'
-ht-degree: 100%
+source-wordcount: '861'
+ht-degree: 91%
 
 ---
 
@@ -17,13 +15,13 @@ ht-degree: 100%
 
 ![](../../assets/common.svg)
 
-Os blocos de personalização são dinâmicos, personalizados e contêm uma renderização específica que pode ser inserida em seus deliveries. Por exemplo, você pode adicionar um logotipo, uma mensagem de saudação ou um link para uma mirror page. Consulte [Inserção de blocos de personalização](#inserting-personalization-blocks).
+Os blocos de personalização são dinâmicos, personalizados e contêm uma renderização específica que pode ser inserida em seus deliveries. Por exemplo, você pode adicionar um logotipo, uma mensagem de saudação ou um link para uma mirror page. Consulte [Inserir blocos de personalização](#inserting-personalization-blocks).
 
 ![](assets/do-not-localize/how-to-video.png) Descubra este recurso [no vídeo](#personalization-blocks-video)
 
 Os blocos de personalização são acessados por meio do nó **[!UICONTROL Resources > Campaign Management > Personalization blocks]** do explorador do Adobe Campaign. Vários blocos estão disponíveis por padrão (consulte [Blocos de personalização prontos para uso](#out-of-the-box-personalization-blocks)).
 
-Você pode definir novos blocos que permitem otimizar a personalização dos deliveries. Para saber mais, consulte [Definição de blocos de personalização customizado](#defining-custom-personalization-blocks).
+Você pode definir novos blocos que permitem otimizar a personalização dos deliveries. Para obter mais informações, consulte [Definir blocos de personalização personalizados](#defining-custom-personalization-blocks).
 
 >[!NOTE]
 >
@@ -38,7 +36,7 @@ Para inserir um bloco de personalização em uma mensagem, siga as etapas abaixo
 
    ![](assets/s_ncs_user_personalized_block01.png)
 
-1. O menu **[!UICONTROL Other...]** permite o acesso a todos os blocos de personalização prontos para uso e customizados (consulte [Blocos de personalização prontos para uso](#out-of-the-box-personalization-blocks) e [Definição de blocos de personalização customizados](#defining-custom-personalization-blocks)).
+1. O **[!UICONTROL Other...]** dá acesso a todos os blocos de personalização prontos para uso e personalizados (consulte [Blocos de personalização integrados](#out-of-the-box-personalization-blocks) e [Definir blocos de personalização personalizados](#defining-custom-personalization-blocks)).
 
    ![](assets/s_ncs_user_personalized_block02.png)
 
@@ -70,7 +68,7 @@ Para fazer isso, precisamos inserir os seguintes blocos de personalização:
 
 >[!NOTE]
 >
->Para saber mais sobre a geração da mirror page, consulte [Geração da mirror page](sending-messages.md#generating-the-mirror-page).
+>Para obter mais informações sobre a geração da mirror page, consulte [Gerar a mirror page](sending-messages.md#generating-the-mirror-page).
 
 1. Criar um novo delivery ou abrir um tipo de delivery de email existente.
 1. No assistente de delivery, clique em **[!UICONTROL Subject]** para editar e inserir o assunto da mensagem.
@@ -102,7 +100,7 @@ Uma lista de blocos de personalização está disponível por padrão para ajuda
 
    >[!NOTE]
    >
-   >Para saber mais sobre a geração da mirror page, consulte [Geração da mirror page](sending-messages.md#generating-the-mirror-page).
+   >Para obter mais informações sobre a geração da mirror page, consulte [Gerar a mirror page](sending-messages.md#generating-the-mirror-page).
 
 * **[!UICONTROL Link to mirror page]**: insere um link para a mirror page (“Se você não conseguir visualizar esta mensagem corretamente, clique aqui”).
 * **[!UICONTROL Unsubscription link]**: insere um link que permite cancelar a inscrição de todos os deliveries (lista de bloqueios).
@@ -120,7 +118,7 @@ Uma lista de blocos de personalização está disponível por padrão para ajuda
 * **[!UICONTROL Style of content emails]** e **[!UICONTROL Notification style]**: geram um código que formata um email com estilos HTML predefinidos. Esses blocos devem ser inseridos no código-fonte do delivery, na seção **[!UICONTROL ...]**, nos tags **`<style>...</style>`**.
 * **[!UICONTROL Offer acceptance URL in unitary mode]**: insere um URL que permite definir uma oferta de Interação para **[!UICONTROL Accepted]** (consulte [esta seção](../../interaction/using/offer-analysis-report.md)).
 
-## Definição de blocos de personalização personalizados {#defining-custom-personalization-blocks}
+## Definir blocos de personalização personalizados {#defining-custom-personalization-blocks}
 
 Você pode definir novos campos de personalização que serão inseridos no ícone do campo personalizado por meio do menu **[!UICONTROL Include...]**. Esses campos são definidos em blocos de personalização.
 

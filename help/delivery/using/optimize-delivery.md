@@ -1,14 +1,13 @@
 ---
 product: campaign
 title: Otimizar entrega de mensagens
-audience: delivery
-content-type: reference
-topic-tags: deliveries-best-practices
+description: Saiba como otimizar o delivery de mensagens
+feature: Deliverability
 exl-id: 24b2ee47-bec7-43ce-81b3-0b2d1a5cebae
-source-git-commit: bd9f035db1cbad883e1f27fe901e34dfbc9c1229
+source-git-commit: 1e11b7419388698f5de366cbeddf2be88ef12873
 workflow-type: tm+mt
-source-wordcount: '729'
-ht-degree: 100%
+source-wordcount: '736'
+ht-degree: 99%
 
 ---
 
@@ -34,7 +33,7 @@ Vários fatores podem afetar diretamente o desempenho do servidor e retardar a p
 
 * Caso seja elegível, você poderá aproveitar os [recursos do Painel de controle do Campaign](https://experienceleague.adobe.com/docs/control-panel/using/discover-control-panel/key-features.html?lang=pt-BR) para monitorar sua plataforma usando as funcionalidades de [monitoramento de desempenho](https://experienceleague.adobe.com/docs/control-panel/using/performance-monitoring/about-performance-monitoring.html?lang=pt-BR).
 
-## Verificar configuração de rede {#network-config}
+## Verificar a configuração da rede {#network-config}
 
 Para otimizar o delivery ao manipular emails em grandes volumes e evitar ser confundido com um spammer, verifique se você tem uma configuração de rede legítima que não tenta ocultar a identidade do servidor.
 

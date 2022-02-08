@@ -1,18 +1,17 @@
 ---
 product: campaign
-title: Definir o público-alvo correto
-audience: delivery
-content-type: reference
-topic-tags: deliveries-best-practices
+title: Definir o público correto
+description: Saiba mais sobre as práticas recomendadas ao selecionar seu público-alvo
+feature: Audiences
 exl-id: c0533148-b027-4158-9b95-8d2df769e963
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: 56459b188ee966cdb578c415fcdfa485dcbed355
 workflow-type: tm+mt
-source-wordcount: '480'
-ht-degree: 100%
+source-wordcount: '487'
+ht-degree: 98%
 
 ---
 
-# Definir o público-alvo correto {#define-the-right-audience}
+# Definir o público correto {#define-the-right-audience}
 
 ![](../../assets/common.svg)
 

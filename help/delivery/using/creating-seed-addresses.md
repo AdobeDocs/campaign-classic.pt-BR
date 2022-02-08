@@ -2,28 +2,26 @@
 product: campaign
 title: Criação de seed addresses
 description: Saiba como criar e usar seeds addresses
-audience: delivery
-content-type: reference
-topic-tags: using-seed-addresses
+feature: Seed Address
 exl-id: f7dc97f0-3423-4b6f-88e2-08180f9adf8a
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: 56459b188ee966cdb578c415fcdfa485dcbed355
 workflow-type: tm+mt
 source-wordcount: '413'
-ht-degree: 100%
+ht-degree: 89%
 
 ---
 
-# Criação de seed addresses{#creating-seed-addresses}
+# Criar seed addresses{#creating-seed-addresses}
 
 ![](../../assets/common.svg)
 
 Os seed addresses não são gerenciados por meio de perfis e públicos-alvo padrão, mas em um nó dedicado da hierarquia do Adobe Campaign **[!UICONTROL Resources > Campaign management > Seed addresses]**.
 
-Você pode criar subpastas para organizar os seed addresses. Para fazer isso, clique com o botão direito do mouse no nó **[!UICONTROL Seed addresses]** e selecione **[!UICONTROL Create a new 'Seed addresses' folder]**. Nomeie a subpasta e pressione **[!UICONTROL Enter]** para validar. Agora você pode criar ou copiar seed addresses para esta subpasta. Para obter mais informações, consulte [Definindo addresses](#defining-addresses).
+Você pode criar subpastas para organizar os seed addresses. Para fazer isso, clique com o botão direito do mouse no nó **[!UICONTROL Seed addresses]** e selecione **[!UICONTROL Create a new 'Seed addresses' folder]**. Nomeie a subpasta e pressione **[!UICONTROL Enter]** para validar. Agora você pode criar ou copiar seed addresses para esta subpasta. Para obter mais informações, consulte [Definir endereços](#defining-addresses).
 
-O Adobe Campaign também permite criar templates de seed addresses que são importados para deliveries ou campanhas e adaptados com base nas necessidades específicas dos deliveries e campanhas relacionadas. Consulte [Criação de templates de seed address](#creating-seed-address-templates).
+O Adobe Campaign também permite criar templates de seed addresses que são importados para deliveries ou campanhas e adaptados com base nas necessidades específicas dos deliveries e campanhas relacionadas. Consulte [Criar templates de seed address](#creating-seed-address-templates).
 
-## Definição de endereços {#defining-addresses}
+## Definir endereços {#defining-addresses}
 
 Para criar seed addresses, siga as etapas abaixo:
 
@@ -60,4 +58,4 @@ Para definir uma pasta de template, siga o seguinte processo:
 
    ![](assets/s_ncs_user_seedlist_folder_is_model.png)
 
-   Os endereços armazenados nesta pasta agora podem ser usados como templates de endereço. Você pode importá-los para deliveries ou campanhas e adaptá-los com base nas necessidades específicas de deliveries e campanhas relacionadas (consulte[Adição de seed addresses](adding-seed-addresses.md)).
+   Os endereços armazenados nesta pasta agora podem ser usados como templates de endereço. Você pode importá-los para deliveries ou campanhas e adaptá-los com base nas necessidades específicas de deliveries e campanhas relacionadas (consulte [Adicionar seed addresses](adding-seed-addresses.md)).
