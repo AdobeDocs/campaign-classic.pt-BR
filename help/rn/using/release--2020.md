@@ -1,14 +1,15 @@
 ---
 product: campaign
 title: Versões de 2020
-description: Saiba mais sobre as versões do Campaign Classic 2020
+description: Saiba mais sobre as atualizações do Campaign Classic 2020
 feature: Overview
 role: User
 level: Beginner
-source-git-commit: eb0e572f0bb6196a58a7dab4999df784d5c4851f
+exl-id: e2eb7e04-faaa-4df0-913d-471c291eeb03
+source-git-commit: 0f31ee570ba6e763f48902e91c5d823ac297fc24
 workflow-type: tm+mt
 source-wordcount: '6569'
-ht-degree: 95%
+ht-degree: 94%
 
 ---
 
@@ -19,7 +20,7 @@ ht-degree: 95%
 
 ## Versão 20.3{#release-20-3}
 
-### ![](assets/do-not-localize/red_2.png) Versão 20.3.3 – Build 9234 {#release-20-3-3-build-9234}
+### ![](assets/do-not-localize/red_2.png) Versão 20.3.3 - Build 9234 {#release-20-3-3-build-9234}
 
 _11 de janeiro de 2021_
 
@@ -29,7 +30,7 @@ _11 de janeiro de 2021_
 
 * Correção de um problema de regressão relacionado ao processo de geração de banda larga que pode causar o travamento do processo de MTA.
 
-### ![](assets/do-not-localize/red_2.png) Versão 20.3.1 – Build 9228 {#release-20-3-1-build-9228}
+### ![](assets/do-not-localize/red_2.png) Versão 20.3.1 - Build 9228 {#release-20-3-1-build-9228}
 
 _27 de outubro de 2020_
 
@@ -37,7 +38,7 @@ _27 de outubro de 2020_
 >
 > * Esta versão é fornecida com um novo protocolo de conexão: se você estiver se conectando ao Campaign pelo Serviço de identidade da Adobe (IMS), a atualização será obrigatória para o servidor do Campaign e o console do cliente poderem se conectar ao Campaign após **30 de junho de 2021**. [Saiba mais](../../technotes/using/ims-updates.md)
 > * Esta versão vem com uma [correção de segurança](https://helpx.adobe.com/br/security/products/campaign/apsb21-04.html): a atualização é obrigatória para reforçar a segurança do ambiente.
-> * Se você estiver usando a integração dos acionadores da Experience Cloud por meio da autenticação oAuth, será necessário migrar para o Adobe I/O conforme descrito [nesta página](../../integrations/using/configuring-adobe-io.md). Modo de autenticação oAuth herdado com o Campaign [foi aposentado](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-discussions/adobe-analytics-legacy-api-end-of-life-notice/td-p/385411) on **Setembro de 2021**. Os ambientes hospedados se beneficiarão de uma extensão até **23 de fevereiro de 2022**. Como cliente no local ou híbrido, entre em contato com o Atendimento ao cliente da Adobe para estender o suporte até fevereiro de 2022. Você deve fornecer [o AppID do aplicativo OAuth](../../integrations/using/configuring-pipeline.md?lang=en#step-optional) para a Adobe.
+> * Se você estiver usando a integração dos acionadores da Experience Cloud por meio da autenticação oAuth, será necessário migrar para o Adobe I/O conforme descrito [nesta página](../../integrations/using/configuring-adobe-io.md). O modo de autenticação oAuth herdado do Campaign [foi removido](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-discussions/adobe-analytics-legacy-api-end-of-life-notice/td-p/385411) em **setembro de 2021**. Os ambientes hospedados se beneficiam de uma extensão até  **23 de fevereiro de 2022**. Como cliente local ou híbrido, entre em contato com o Atendimento ao cliente do Adobe para estender o suporte até fevereiro de 2022. Você deve fornecer [o AppID do aplicativo OAuth](../../integrations/using/configuring-pipeline.md?lang=en#step-optional) para a Adobe.
 
 
 **Novidades**
@@ -274,7 +275,7 @@ No linux, _apache_neolane.conf_ agora está instalado no diretório `conf`.
 
 ## Versão 20.2{#release-20-2}
 
-### ![](assets/do-not-localize/limited_2.png) Versão 20.2.5 – Build 9188 {#release-20-2-5-build-9188}
+### ![](assets/do-not-localize/limited_2.png) Versão 20.2.5 - Build 9188 {#release-20-2-5-build-9188}
 
 _15 de abril de 2021_
 
@@ -288,7 +289,7 @@ _15 de abril de 2021_
 
 _31 de março de 2021_
 
-**Aprimoramentos** 
+**Aprimoramentos**
 
 * Foi feito um aprimoramento para evitar falhas em chamadas soap inválidas. Isso pode fazer com que a instância pare de funcionar ao tentar executar consultas complexas específicas. (NEO-28796, NEO-30553)
 * Correção de uma regressão que impedia o envio de deliveries de SMS com TLS devido à verificação do nome de host. (NEO-29581)
@@ -303,7 +304,7 @@ _31 de março de 2021_
 * Correção de um problema que poderia causar falha no workflow Faturamento ao usar um target mapping personalizado. A chave primária do esquema personalizado é armazenada na coluna &quot;sourceId&quot; que permitia apenas valores inteiros. Agora permite números inteiros e valores de sequências. (NEO-25914, NEO-28146)
 * Correção de uma regressão que impedia o uso de alguns componentes do console, como o seletor de datas e o gerenciamento de imagens nos deliveries. (NEO-31453)
 
-### ![](assets/do-not-localize/red_2.png) Versão 20.2.4 – Build 9187 {#release-20-2-4-build-9187}
+### ![](assets/do-not-localize/red_2.png) Versão 20.2.4 - Build 9187 {#release-20-2-4-build-9187}
 
 _15 de abril de 2021_
 
@@ -322,7 +323,7 @@ _22 de dezembro de 2020_
 >
 > * Esta versão é fornecida com um novo protocolo de conexão: se você estiver se conectando ao Campaign pelo Serviço de identidade da Adobe (IMS), a atualização será obrigatória para o servidor do Campaign e o console do cliente poderem se conectar ao Campaign após **30 de junho de 2021**.  [Saiba mais](../../technotes/using/ims-updates.md)
 > * Esta versão vem com uma [correção de segurança](https://helpx.adobe.com/security/products/campaign/apsb21-04.html): a atualização é obrigatória para reforçar a segurança do ambiente.
-> * Se você estiver usando a integração dos acionadores da Experience Cloud por meio da autenticação oAuth, será necessário migrar para o Adobe I/O conforme descrito [nesta página](../../integrations/using/configuring-adobe-io.md). Modo de autenticação oAuth herdado com o Campaign [foi aposentado](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-discussions/adobe-analytics-legacy-api-end-of-life-notice/td-p/385411) on **Setembro de 2021**. Os ambientes hospedados se beneficiarão de uma extensão até **23 de fevereiro de 2022**. Como cliente no local ou híbrido, entre em contato com o Atendimento ao cliente da Adobe para estender o suporte até fevereiro de 2022. Você deve fornecer [o AppID do aplicativo OAuth](../../integrations/using/configuring-pipeline.md?lang=en#step-optional) para a Adobe.
+> * Se você estiver usando a integração dos acionadores da Experience Cloud por meio da autenticação oAuth, será necessário migrar para o Adobe I/O conforme descrito [nesta página](../../integrations/using/configuring-adobe-io.md). O modo de autenticação oAuth herdado do Campaign [foi removido](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-discussions/adobe-analytics-legacy-api-end-of-life-notice/td-p/385411) em **setembro de 2021**. Os ambientes hospedados se beneficiam de uma extensão até  **23 de fevereiro de 2022**. Como cliente local ou híbrido, entre em contato com o Atendimento ao cliente do Adobe para estender o suporte até fevereiro de 2022. Você deve fornecer [o AppID do aplicativo OAuth](../../integrations/using/configuring-pipeline.md?lang=en#step-optional) para a Adobe.
 
 
 **Aprimoramentos**
@@ -360,7 +361,7 @@ _22 de dezembro de 2020_
 
 ![](assets/do-not-localize/cp-icon.png) **Nova versão de outubro do Painel de controle do Campaign** com configuração de domínio usando CNAMEs e novos recursos de monitoramento de banco de dados. [Saiba mais](https://experienceleague.adobe.com/docs/control-panel/using/release-notes.html?lang=pt-BR).
 
-### ![](assets/do-not-localize/red_2.png) Versão 20.2.3 – Build 9182 {#release-20-2-3-build-9182}
+### ![](assets/do-not-localize/red_2.png) Versão 20.2.3 - Build 9182 {#release-20-2-3-build-9182}
 
 _11 de setembro de 2020_
 
@@ -385,7 +386,7 @@ _11 de setembro de 2020_
 * Correção de uma regressão durante a pós-atualização, causando um início incorreto do nlserver (logs de erros).
 * O gerenciamento de atualizações da memória compartilhada foi aprimorado. As etapas adicionais necessárias na versão 20.2 não são mais necessárias.
 
-### ![](assets/do-not-localize/red_2.png) Versão 20.2.2 – Build 9180 {#release-20-2-2-build-9180}
+### ![](assets/do-not-localize/red_2.png) Versão 20.2.2 - Build 9180 {#release-20-2-2-build-9180}
 
 _22 de julho de 2020_
 
@@ -414,7 +415,7 @@ _22 de julho de 2020_
 
 ![](assets/do-not-localize/cp-icon.png) **Nova versão de junho do Painel de controle do Campaign** com monitoramento de perfis ativos, auditoria de entregabilidade de subdomínio e gerenciamento de chaves GPG. [Saiba mais](https://experienceleague.adobe.com/docs/control-panel/using/release-notes.html).
 
-### ![](assets/do-not-localize/red_2.png) Versão 20.2.1 – Build 9178 {#release-20-2-1-build-9178}
+### ![](assets/do-not-localize/red_2.png) Versão 20.2.1 - Build 9178 {#release-20-2-1-build-9178}
 
 _8 de junho de 2020_
 
@@ -627,7 +628,7 @@ Um exemplo para Linux está disponível nesta [página](../../configuration/usin
 
 ## Versão 20.1{#release-20-1}
 
-### ![](assets/do-not-localize/limited_2.png) Versão 20.1.4 – Build 9126 {#release-20-1-4-build-9126}
+### ![](assets/do-not-localize/limited_2.png) Versão 20.1.4 - Build 9126 {#release-20-1-4-build-9126}
 
 _15 de abril de 2021_
 
@@ -664,19 +665,19 @@ _23 de dezembro de 2020_
 
 
 
-### ![](assets/do-not-localize/red_2.png) Versão 20.1.3 – Build 9124{#release-20-1-3-build-9124}
+### ![](assets/do-not-localize/red_2.png) Versão 20.1.3 - Build 9124{#release-20-1-3-build-9124}
 
 _6 de maio de 2020_
 
 * Correção de um problema com a atividade **Transferência de Arquivo**, que impedia que a autenticação com a chave SFTP funcionasse no Debian 9. (NEO23183)
 
-### ![](assets/do-not-localize/red_2.png) Versão 20.1.2 – Build 9123{#release-20-1-2-build-9123}
+### ![](assets/do-not-localize/red_2.png) Versão 20.1.2 - Build 9123{#release-20-1-2-build-9123}
 
 _13 de março de 2020_
 
 * Correção de um problema que impedia a implantação da versão em servidores Red Hat 7. (NEO-23332)
 
-### ![](assets/do-not-localize/red_2.png) Versão 20.1 – Build 9122{#release-20-1-build-9122}
+### ![](assets/do-not-localize/red_2.png) Versão 20.1 - Build 9122{#release-20-1-build-9122}
 
 _17 de fevereiro de 2020_
 

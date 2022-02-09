@@ -1,14 +1,14 @@
 ---
 product: campaign
-title: Versões de Campaign Classic 2019
-description: Saiba mais sobre as versões do Campaign Classic 2019
-source-git-commit: eb0e572f0bb6196a58a7dab4999df784d5c4851f
+title: Versões do Campaign Classic 2019
+description: Saiba mais sobre as atualizações do Campaign Classic 2019
+exl-id: 8a36a542-e095-4208-b624-e59845592863
+source-git-commit: 0f31ee570ba6e763f48902e91c5d823ac297fc24
 workflow-type: tm+mt
 source-wordcount: '4843'
 ht-degree: 98%
 
 ---
-
 
 # Versões de 2019{#release-2019}
 
@@ -16,7 +16,7 @@ ht-degree: 98%
 
 ## Versão 19.2{#release-19-2}
 
-### ![](assets/do-not-localize/limited_2.png) Versão 19.2.4 – Build 9082 {#release-19-2-4-build-9082}
+### ![](assets/do-not-localize/limited_2.png) Versão 19.2.4 - Build 9082 {#release-19-2-4-build-9082}
 
 _15 de abril de 2021_
 
@@ -54,7 +54,7 @@ _23 de dezembro de 2020_
 
 
 
-### ![](assets/do-not-localize/red_2.png) Versão 19.2.3 – Build 9081 {#release-19-2-3-build-9081}
+### ![](assets/do-not-localize/red_2.png) Versão 19.2.3 - Build 9081 {#release-19-2-3-build-9081}
 
 _7 de fevereiro de 2020_
 
@@ -64,7 +64,7 @@ _7 de fevereiro de 2020_
 * Correção de um problema que exibia um número de tag de versão incorreto no menu **About**.
 
 
-### ![](assets/do-not-localize/red_2.png) Versão 19.2 – Build 9080 {#release-19-2-build-9080}
+### ![](assets/do-not-localize/red_2.png) Versão 19.2 - Build 9080 {#release-19-2-build-9080}
 
 _2 de dezembro de 2019_
 
@@ -204,7 +204,7 @@ A build 1.0.26 do SDK do iOS está disponível. Nesta nova build, adicionamos o 
 
 ## Versão 19.1{#release-19-1}
 
-### ![](assets/do-not-localize/limited_2.png) Versão 19.1.8 – Build 9039 {#release-19-1-8-build-9039}
+### ![](assets/do-not-localize/limited_2.png) Versão 19.1.8 - Build 9039 {#release-19-1-8-build-9039}
 
 _15 de abril de 2021_
 
@@ -233,7 +233,7 @@ _16 de dezembro de 2020_
 >
 > * Esta versão é fornecida com um novo protocolo de conexão: se você estiver se conectando ao Campaign pelo Serviço de identidade da Adobe (IMS), a atualização será obrigatória para o servidor do Campaign e o console do cliente poderem se conectar ao Campaign após **30 de junho de 2021**. [Saiba mais](../../technotes/using/ims-updates.md)
 > * Esta versão vem com uma [correção de segurança](https://helpx.adobe.com/security/products/campaign/apsb21-04.html): a atualização é obrigatória para reforçar a segurança do ambiente.
-> * Se você estiver usando a integração dos acionadores da Experience Cloud por meio da autenticação oAuth, será necessário migrar para o Adobe I/O conforme descrito [nesta página](../../integrations/using/configuring-adobe-io.md). Modo de autenticação oAuth herdado com o Campaign [foi aposentado](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-discussions/adobe-analytics-legacy-api-end-of-life-notice/td-p/385411) on **Setembro de 2021**. Os ambientes hospedados se beneficiarão de uma extensão até **23 de fevereiro de 2022**. Como cliente no local ou híbrido, entre em contato com o Atendimento ao cliente da Adobe para estender o suporte até fevereiro de 2022. Você deve fornecer [o AppID do aplicativo OAuth](../../integrations/using/configuring-pipeline.md?lang=en#step-optional) para a Adobe.
+> * Se você estiver usando a integração dos acionadores da Experience Cloud por meio da autenticação oAuth, será necessário migrar para o Adobe I/O conforme descrito [nesta página](../../integrations/using/configuring-adobe-io.md). O modo de autenticação oAuth herdado do Campaign [foi removido](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-discussions/adobe-analytics-legacy-api-end-of-life-notice/td-p/385411) em **setembro de 2021**. Os ambientes hospedados se beneficiam de uma extensão até  **23 de fevereiro de 2022**. Como cliente local ou híbrido, entre em contato com o Atendimento ao cliente do Adobe para estender o suporte até fevereiro de 2022. Você deve fornecer [o AppID do aplicativo OAuth](../../integrations/using/configuring-pipeline.md?lang=en#step-optional) para a Adobe.
 
 
 
@@ -280,7 +280,7 @@ O Tomcat foi atualizado da versão 7 (7.0.103) para a versão 8 (8.5.57). O dire
 No Linux, a inicialização do serviço nlserver agora usa uma unidade sistêmica em vez do script /etc/init.d/nlserver6. A migração para o novo esquema de inicialização é executada automaticamente ao instalar o pacote 19.1.8. O /etc/init.d/nlserver6 ainda é fornecido, mas para interagir com o serviço nlserver (start, reinicialização, interrupção etc.), recomendamos que você use o comando systemctl diretamente.
 
 
-### ![](assets/do-not-localize/red_2.png) Versão 19.1.7 – Build 9036 {#release-19-1-7-build-9036}
+### ![](assets/do-not-localize/red_2.png) Versão 19.1.7 - Build 9036 {#release-19-1-7-build-9036}
 
 _15 de setembro de 2020_
 
@@ -323,7 +323,7 @@ _15 de setembro de 2020_
 * Correção de uma regressão que resultava na escolha incorreta de um fuso horário na configuração de horário em uma atividade de workflow de **Scheduler**.
 
 
-### ![](assets/do-not-localize/red_2.png) Versão 19.1.6 – Build 9035 {#release-19-1-6-build-9035}
+### ![](assets/do-not-localize/red_2.png) Versão 19.1.6 - Build 9035 {#release-19-1-6-build-9035}
 
 >[!CAUTION]
 >
@@ -339,7 +339,7 @@ _3 de outubro de 2019_
 * Correção de um problema que resultava no não processamento de determinadas mensagens pelo servidor de Mid-Sourcing. (NEO12395)
 * Correção de um problema que impedia o uso total da atividade do SQL Data Management (o direito nomeado do &quot;SQL Data Management&quot; estava ausente).
 
-### ![](assets/do-not-localize/red_2.png) Versão 19.1.5 – Build 9033{#release-19-1-5-build-9033}
+### ![](assets/do-not-localize/red_2.png) Versão 19.1.5 - Build 9033{#release-19-1-5-build-9033}
 
 _13 de agosto de 2019_
 
@@ -365,7 +365,7 @@ _13 de agosto de 2019_
 >19.1.4 [!DNL Gold Standard] as versões estão listadas neste [página](../../rn/using/gold-standard.md).
 
 
-### ![](assets/do-not-localize/red_2.png) Versão 19.1.2 – Build 9029{#release-19-1-2-build-9029}
+### ![](assets/do-not-localize/red_2.png) Versão 19.1.2 - Build 9029{#release-19-1-2-build-9029}
 
 _21 de junho de 2019_
 
@@ -382,7 +382,7 @@ _21 de junho de 2019_
 * Permissões aprimoradas para executar o pacote de zona de segurança ao usar a conta interna.
 
 
-### ![](assets/do-not-localize/red_2.png) Versão 19.1 – Build 9026{#release-19-1-build-9026}
+### ![](assets/do-not-localize/red_2.png) Versão 19.1 - Build 9026{#release-19-1-build-9026}
 
 _30 de maio de 2019_
 
