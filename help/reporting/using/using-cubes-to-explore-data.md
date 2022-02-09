@@ -1,41 +1,38 @@
 ---
 product: campaign
-title: Uso de cubos para exploração de dados
-description: Uso de cubos para exploração de dados
-audience: reporting
-content-type: reference
-topic-tags: designing-reports-with-cubes
+title: Usar cubos para explorar dados
+description: Usar cubos para explorar dados
 exl-id: 32696bbf-1415-4214-837f-5437fdb8b4d4
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: 81716a30a57d3ed8542b329d5fb9b0443fd4bf31
 workflow-type: tm+mt
 source-wordcount: '956'
-ht-degree: 100%
+ht-degree: 89%
 
 ---
 
-# Uso de cubos para exploração de dados{#using-cubes-to-explore-data}
+# Usar cubos para explorar dados{#using-cubes-to-explore-data}
 
 ![](../../assets/common.svg)
 
 O Marketing Analytics facilita a criação de relatórios e a identificação e seleção de dados do banco de dados por meio dos cubos. Isso permite:
 
-* Criar relatórios com base em cubos. O processo é detalhado em: [Explorar os dados em um relatório](#exploring-the-data-in-a-report).
-* Coletar os dados no banco de dados e agrupá-los em listas, por exemplo, para identificar e criar targets e deliveries. Para obter mais informações, consulte [Criação de uma população do target](#building-a-target-population).
+* Criar relatórios com base em cubos. O processo é detalhado aqui: [Explorar os dados em um relatório](#exploring-the-data-in-a-report).
+* Coletar os dados no banco de dados e agrupá-los em listas, por exemplo, para identificar e criar targets e deliveries. Para obter mais informações, consulte [Criar uma população do target](#building-a-target-population).
 * Insira uma tabela dinâmica em um relatório, faça referência a um cubo existente nele. Para obter mais informações, consulte [Inserir uma tabela dinâmica em um relatório](#inserting-a-pivot-table-into-a-report).
 
 >[!NOTE]
 >
 >O Marketing Analytics é necessário para criar ou modificar cubos. Para obter mais informações, consulte [Sobre cubos](../../reporting/using/about-cubes.md).
 
-## Exploração de dados em um relatório {#exploring-the-data-in-a-report}
+## Explorar os dados em um relatório {#exploring-the-data-in-a-report}
 
-### Etapa 1 - Criação de um relatório baseado em um cubo {#step-1---creating-a-report-based-on-a-cube}
+### Etapa 1 - Criar um relatório com base em um cubo {#step-1---creating-a-report-based-on-a-cube}
 
 Para criar um relatório com base em um cubo, clique no botão **[!UICONTROL Create]** na guia **[!UICONTROL Reports]** e selecione o cubo que deseja usar.
 
-O processo é detalhado em: [Criação de um relatório com base em um cubo](../../reporting/using/creating-indicators.md#creating-a-report-based-on-a-cube).
+O processo é detalhado aqui: [Criar um relatório com base em um cubo](../../reporting/using/creating-indicators.md#creating-a-report-based-on-a-cube).
 
-### Etapa 2 - Seleção de linhas e colunas {#step-2---selecting-lines-and-columns}
+### Etapa 2 - Selecionar linhas e colunas {#step-2---selecting-lines-and-columns}
 
 A exibição padrão mostra as duas primeiras dimensões do cubo (idade e cidade, neste caso).
 
@@ -54,7 +51,7 @@ Os botões **[!UICONTROL Add]** em cada eixo permitem adicionar dimensões.
 
    Os parâmetros dependem do tipo de dados da dimensão selecionada.
 
-   Por exemplo, para datas, vários níveis podem estar disponíveis. Para obter mais informações, consulte [Exibição de medidas](../../reporting/using/concepts-and-methodology.md#displaying-measures).
+   Por exemplo, para datas, vários níveis podem estar disponíveis. Para obter mais informações, consulte [Exibir medidas](../../reporting/using/concepts-and-methodology.md#displaying-measures).
 
    As seguintes opções estão disponíveis nesse caso:
 
@@ -74,7 +71,7 @@ Os botões **[!UICONTROL Add]** em cada eixo permitem adicionar dimensões.
 
    ![](assets/s_advuser_cube_in_report_04c.png)
 
-### Etapa 3 - Configuração das medidas para exibir {#step-3---configuring-the-measures-to-display}
+### Etapa 3 - Configurar as medidas para exibir {#step-3---configuring-the-measures-to-display}
 
 Depois que as linhas e as colunas forem implementadas, indique as medidas que deseja exibir, bem como o modo de exibição.
 
@@ -96,7 +93,7 @@ Por padrão, apenas uma medida é exibida. Para adicionar ou configurar medidas:
 
    ![](assets/s_advuser_cube_in_report_config_02.png)
 
-   Você pode então escolher se exibe ou não os rótulos de medida. Para obter mais informações, consulte [Configuração da exibição](../../reporting/using/concepts-and-methodology.md#configuring-the-display).
+   Você pode então escolher se exibe ou não os rótulos de medida. Para obter mais informações, consulte [Configurar a exibição](../../reporting/using/concepts-and-methodology.md#configuring-the-display).
 
 1. É possível criar novas medidas usando as existentes. Para fazer isso, clique **[!UICONTROL Create a measure]** e configure-a.
 
@@ -120,7 +117,7 @@ Por padrão, apenas uma medida é exibida. Para adicionar ou configurar medidas:
 
    Em seguida, clique em **[!UICONTROL Edit the dynamic measure]** para acessar o menu de configurações.
 
-## Criação de uma população do target {#building-a-target-population}
+## Criar uma população do target {#building-a-target-population}
 
 A criação de relatórios usando cubos permitem coletar dados da tabela e salvá-los em uma lista.
 
@@ -156,7 +153,7 @@ Para agrupar uma população em uma lista, siga as etapas abaixo:
 
    ![](assets/s_advuser_cube_in_report_config_02g.png)
 
-## Inserção de uma tabela dinâmica em um relatório {#inserting-a-pivot-table-into-a-report}
+## Inserir uma tabela dinâmica em um relatório {#inserting-a-pivot-table-into-a-report}
 
 Para criar uma tabela e explorar os dados em um cubo, siga as etapas abaixo:
 

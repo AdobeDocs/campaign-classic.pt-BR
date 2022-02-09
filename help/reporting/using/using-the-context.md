@@ -1,25 +1,22 @@
 ---
 product: campaign
-title: Uso do contexto
-description: Uso do contexto
-audience: reporting
-content-type: reference
-topic-tags: creating-new-reports
+title: Usar o contexto em seus relatórios
+description: Saiba como usar o contexto em seus relatórios
 exl-id: a19e2843-d3f9-48c3-af72-cc1bc54f6360
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: 81716a30a57d3ed8542b329d5fb9b0443fd4bf31
 workflow-type: tm+mt
-source-wordcount: '485'
-ht-degree: 100%
+source-wordcount: '497'
+ht-degree: 83%
 
 ---
 
-# Uso do contexto{#using-the-context}
+# Usar o contexto em seus relatórios{#using-the-context}
 
 ![](../../assets/common.svg)
 
-Quando quiser representar dados na forma de **[!UICONTROL tables]** ou **[!UICONTROL charts]**, eles poderão ser obtidos a partir de duas fontes: uma nova consulta (consulte [Definição de um filtro direto em dados](#defining-a-direct-filter-on-data)) ou o contexto do relatório (consulte [Uso de dados de contexto](#using-context-data)).
+Quando quiser representar dados na forma de **[!UICONTROL tables]** ou **[!UICONTROL charts]**, pode ser obtido de duas fontes: uma nova query (consulte [Definir um filtro direto nos dados](#defining-a-direct-filter-on-data)) ou o contexto do relatório (consulte [Usar dados de contexto](#using-context-data)).
 
-## Definição de um filtro direto em dados {#defining-a-direct-filter-on-data}
+## Definir um filtro direto nos dados {#defining-a-direct-filter-on-data}
 
 ### Filtrar dados {#filtering-data}
 
@@ -64,7 +61,7 @@ Somente os recipients que atenderem aos critérios de filtragem aparecerão no r
 
 ![](assets/s_ncs_advuser_report_display_04.png)
 
-## Uso de dados de contexto {#using-context-data}
+## Usar dados de contexto {#using-context-data}
 
 Para representar dados no formulário de um **[!UICONTROL table]** ou um **[!UICONTROL chart]**, os dados podem vir do contexto do relatório.
 
@@ -72,7 +69,7 @@ Na página que contém a tabela ou o gráfico, a guia **[!UICONTROL Data]** perm
 
 ![](assets/s_ncs_advuser_report_datasource_3.png)
 
-* A opção **[!UICONTROL New query]** permite criar uma consulta para coletar dados. Para obter mais informações, consulte [Definição de um filtro direto nos dados](#defining-a-direct-filter-on-data).
+* A opção **[!UICONTROL New query]** permite criar uma consulta para coletar dados. Para obter mais informações, consulte [Definir um filtro direto nos dados](#defining-a-direct-filter-on-data).
 * A opção **[!UICONTROL Context data]** permite usar os dados de entrada: o contexto do relatório coincide com as informações contidas na transição de entrada da página que contém o gráfico ou a tabela. Esse contexto pode, por exemplo, conter dados coletados por uma atividade **[!UICONTROL Query]** colocada antes da atividade **[!UICONTROL Page]** e para a qual é necessário especificar a tabela e os campos que o relatório aborda.
 
 Por exemplo, em uma caixa de query, crie a seguinte query para os recipients:

@@ -1,19 +1,16 @@
 ---
 product: campaign
-title: Criação de indicadores
-description: Criação de indicadores
-audience: reporting
-content-type: reference
-topic-tags: designing-reports-with-cubes
+title: Criar indicadores
+description: Criar indicadores
 exl-id: e4806bb8-de9d-47e4-8b37-d6c0565b7f5a
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: 81716a30a57d3ed8542b329d5fb9b0443fd4bf31
 workflow-type: tm+mt
-source-wordcount: '718'
-ht-degree: 100%
+source-wordcount: '715'
+ht-degree: 93%
 
 ---
 
-# Criação de indicadores{#creating-indicators}
+# Criar indicadores{#creating-indicators}
 
 ![](../../assets/common.svg)
 
@@ -21,16 +18,16 @@ Para tornar um cubo funcional, você precisa identificar as dimensões e medidas
 
 Para criar um Cubo, siga as etapas abaixo:
 
-1. Selecione a tabela de trabalho. Consulte [Seleção da tabela de trabalho](#selecting-the-work-table).
-1. Defina as dimensões. Consulte [Definição de dimensões](#defining-dimensions).
-1. Defina medidas. Consulte [Criação de indicadores](#building-indicators).
-1. Crie agregados (opcional). Consulte [Cálculo e uso de agregados](../../reporting/using/concepts-and-methodology.md#calculating-and-using-aggregates).
+1. Selecione a tabela de trabalho. Consulte [Selecionar a tabela de trabalho](#selecting-the-work-table).
+1. Defina as dimensões. Consulte [Definir dimensões](#defining-dimensions).
+1. Defina medidas. Consulte [Criar indicadores](#building-indicators).
+1. Crie agregados (opcional). Consulte [Calcular e usar agregações](../../reporting/using/concepts-and-methodology.md#calculating-and-using-aggregates).
 
 Este exemplo mostra como criar rapidamente um cubo simples em um relatório para exportar suas medidas.
 
 As etapas de implementação são detalhadas abaixo. As opções e descrições completas estão disponíveis nas outras seções deste capítulo.
 
-## Seleção da tabela de trabalho {#selecting-the-work-table}
+## Selecione a tabela de trabalho {#selecting-the-work-table}
 
 Para criar um cubo, clique no botão **[!UICONTROL New]** acima da lista de cubos.
 
@@ -46,7 +43,7 @@ Clique no link **[!UICONTROL Filter the source data...]** para aplicar os cálcu
 
 ![](assets/s_advuser_cube_wz_03.png)
 
-## Definição de dimensões {#defining-dimensions}
+## Defina as dimensões {#defining-dimensions}
 
 As dimensões coincidem com os eixos de análise definidos para cada Cubo com base em seu schema de fato relacionado. Essas são as dimensões exploradas na análise, como tempo (ano, mês, data...), uma classificação de produtos ou contratos (família, referência, etc.), um segmento de população (por cidade, faixa etária, status, etc.).
 
@@ -92,7 +89,7 @@ Clique no botão **[!UICONTROL Add]** para criar uma nova dimensão, em seguida,
 
    Para obter mais informações, consulte [Gestão dinâmica de compartimentos](../../reporting/using/concepts-and-methodology.md#dynamically-managing-bins).
 
-## Criação de indicadores {#building-indicators}
+## Criar indicadores {#building-indicators}
 
 Depois que as dimensões forem definidas, é necessário especificar um modo de cálculo para os valores a serem exibidos nas células. Para fazer isso, crie os indicadores correspondentes na guia **[!UICONTROL Measures]**: crie quantas medidas enquanto houver colunas para exibir no relatório que usará o cubo.
 
@@ -105,7 +102,7 @@ Para fazer isso, siga as etapas abaixo:
 
    ![](assets/s_advuser_cube_wz_11.png)
 
-   O link **[!UICONTROL Filter the measure data...]** permite selecionar apenas mulheres. Para obter mais informações sobre definição de medidas e as opções disponíveis, consulte [Definição de medidas](../../reporting/using/concepts-and-methodology.md#defining-measures).
+   O link **[!UICONTROL Filter the measure data...]** permite selecionar apenas mulheres. Para obter mais informações sobre definição de medidas e as opções disponíveis, consulte [Definir medidas](../../reporting/using/concepts-and-methodology.md#defining-measures).
 
    ![](assets/s_advuser_cube_wz_12.png)
 
@@ -115,7 +112,7 @@ Para fazer isso, siga as etapas abaixo:
 
 1. Salve o cubo.
 
-## Criação de um relatório baseado em um cubo {#creating-a-report-based-on-a-cube}
+## Criar um relatório com base em um cubo {#creating-a-report-based-on-a-cube}
 
 Depois que o cubo é configurado, ele pode ser usado como um template para criar um novo relatório.
 
@@ -131,7 +128,7 @@ Para fazer isso:
 
    ![](assets/s_advuser_cube_wz_15.png)
 
-1. É possível alternar os eixos da dimensão, excluí-los, adicionar novas medidas etc. As possíveis operações são detalhadas aqui: [Uso de cubos para explorar dados](../../reporting/using/using-cubes-to-explore-data.md).
+1. É possível alternar os eixos da dimensão, excluí-los, adicionar novas medidas etc. As possíveis operações são detalhadas em [esta página](../../reporting/using/using-cubes-to-explore-data.md).
 
    Para fazer isso, use os ícones apropriados:
 

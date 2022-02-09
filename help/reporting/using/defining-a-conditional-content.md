@@ -1,19 +1,16 @@
 ---
 product: campaign
-title: Definição do conteúdo condicional
-description: Definição do conteúdo condicional
-audience: reporting
-content-type: reference
-topic-tags: creating-new-reports
+title: Definir um conteúdo condicional
+description: Definir um conteúdo condicional
 exl-id: efee50f7-d917-4c71-add2-116c4b8f7013
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: 81716a30a57d3ed8542b329d5fb9b0443fd4bf31
 workflow-type: tm+mt
 source-wordcount: '245'
-ht-degree: 100%
+ht-degree: 91%
 
 ---
 
-# Definição do conteúdo condicional{#defining-a-conditional-content}
+# Definir um conteúdo condicional{#defining-a-conditional-content}
 
 ![](../../assets/common.svg)
 
@@ -21,7 +18,7 @@ ht-degree: 100%
 
 Para tornar itens específicos condicionais, adapte suas configurações de visibilidade. Para obter mais informações, consulte [Exibição do item de condição](#conditioning-item-display).
 
-Para exibir uma ou mais páginas condicionais, use uma atividade do tipo **[!UICONTROL Test]**. Para obter mais informações, consulte [Condições para exibição de página](#conditioning-page-display).
+Para exibir uma ou mais páginas condicionais, use uma atividade do tipo **[!UICONTROL Test]**. Para obter mais informações, consulte [Exibição da página de condição](#conditioning-page-display).
 
 ## Exibição do item de condição {#conditioning-item-display}
 
@@ -35,7 +32,7 @@ No exemplo a seguir, a condição de exibição depende do idioma:
 
 ![](assets/reporting_display_condition.png)
 
-## Exibição da página de condição {#conditioning-page-display}
+## Exibição de página condicional {#conditioning-page-display}
 
 No gráfico de um relatório, a atividade **[!UICONTROL Test]** permite alterar a sequência de páginas dependendo de uma ou mais condições.
 

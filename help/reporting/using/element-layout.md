@@ -2,14 +2,11 @@
 product: campaign
 title: Layout do elemento
 description: Layout do elemento
-audience: reporting
-content-type: reference
-topic-tags: creating-new-reports
 exl-id: 79d5c901-905b-4a0e-adb9-91fd6acb186f
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: 81716a30a57d3ed8542b329d5fb9b0443fd4bf31
 workflow-type: tm+mt
-source-wordcount: '419'
-ht-degree: 100%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -17,13 +14,13 @@ ht-degree: 100%
 
 ![](../../assets/common.svg)
 
-Além dos diversos gráficos detalhados aqui: [Tipos e variantes de gráfico](../../reporting/using/creating-a-chart.md#chart-types-and-variants), você pode adaptar a exibição e adicionar elementos às páginas do relatório.
+Além dos diversos gráficos detalhados [here](../../reporting/using/creating-a-chart.md#chart-types-and-variants), é possível adaptar a exibição e adicionar elementos às páginas do relatório.
 
 É possível usar containers: eles permitem vincular vários elementos de uma página e configurar o layout em colunas e/ou células. Como usá-los está detalhado [nesta seção](../../web/using/defining-web-forms-layout.md#creating-containers).
 
 É possível configurar o layout de relatório na raiz da árvore e sobrescrevê-lo em cada container. As páginas são classificadas em colunas. Os containers também são classificados em colunas. Somente os itens estáticos e gráficos são classificados em células.
 
-## Definição das opções de cada página {#defining-the-options-for-each-page}
+## Definir as opções de cada página {#defining-the-options-for-each-page}
 
 É possível usar as opções em cada página do relatório.
 
@@ -37,7 +34,7 @@ As opções em **[!UICONTROL Display settings]** permitem selecionar a posição
 
 Selecione as várias opções na seção **[!UICONTROL Browse]** para autorizar a navegação de uma página de relatório para outra. Se as opções **[!UICONTROL Disable next page]** ou **[!UICONTROL Disable previous page]** forem selecionadas, os botões **[!UICONTROL Next]** e **[!UICONTROL Previous]** desaparecem da página do relatório.
 
-## Adição de um cabeçalho e um rodapé {#adding-a-header-and-a-footer}
+## Adicionar um cabeçalho e um rodapé {#adding-a-header-and-a-footer}
 
 A janela de propriedades do relatório também permite definir os elementos de layout, como: o título da janela, o conteúdo HTML dos cabeçalhos e rodapés.
 

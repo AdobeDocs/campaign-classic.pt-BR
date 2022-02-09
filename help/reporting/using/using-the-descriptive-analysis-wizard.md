@@ -1,25 +1,22 @@
 ---
 product: campaign
-title: Uso do assistente de análise descritiva
-description: Uso do assistente de análise descritiva
-audience: reporting
-content-type: reference
-topic-tags: analyzing-populations
+title: Usar o assistente de análise descritiva
+description: Usar o assistente de análise descritiva
 exl-id: 848d67c7-d1dc-4eba-bcb8-672e76d8ce87
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: 81716a30a57d3ed8542b329d5fb9b0443fd4bf31
 workflow-type: tm+mt
 source-wordcount: '1558'
-ht-degree: 100%
+ht-degree: 93%
 
 ---
 
-# Uso do assistente de análise descritiva{#using-the-descriptive-analysis-wizard}
+# Usar o assistente de análise descritiva{#using-the-descriptive-analysis-wizard}
 
 ![](../../assets/common.svg)
 
 Para criar um relatório de análise descritiva, use o assistente dedicado. A configuração depende dos dados a serem analisados e da renderização desejada.
 
-## Análise de dados no banco de dados {#analyzing-data-in-the-database}
+## Analisar dados no banco de dados {#analyzing-data-in-the-database}
 
 O assistente de análise descritiva pode ser iniciado por meio do menu **[!UICONTROL Tools > Descriptive analysis]**: nesse caso, a análise inclui os recipients por padrão (**nms:recipient**). Aplica-se a todos os dados do banco de dados do Adobe Campaign.
 
@@ -35,7 +32,7 @@ Se quiser produzir estatísticas sobre parte dos dados, é possível definir um 
 
 A análise só abordará os recipients do banco de dados com 16 anos de idade ou mais e que moram em Londres.
 
-## Análise de um conjunto de dados {#analyzing-a-set-of-data}
+## Analisar um conjunto de dados {#analyzing-a-set-of-data}
 
 É possível usar o assistente de análise descritiva por meio de um contexto diferente: uma lista, uma transição de workflow, um ou mais deliveries, uma seleção de recipients, etc.
 
@@ -57,13 +54,13 @@ Abra o assistente de análise descritiva selecionando os itens e clicando com o 
 
    ![](assets/reporting_descriptive_from_deliveries.png)
 
-   Exemplos de análises descritivas para entregas são fornecidos aqui: [Análise de uma população](../../reporting/using/use-cases.md#analyzing-a-population) e aqui: [Análise de registros de rastreamento de recipients](../../reporting/using/use-cases.md#analyzing-recipient-tracking-logs).
+   Exemplos de análises descritivas para deliveries são fornecidos aqui: [Analisar uma população](../../reporting/using/use-cases.md#analyzing-a-population) e aqui: [Analisar logs de rastreamento do recipient](../../reporting/using/use-cases.md#analyzing-recipient-tracking-logs).
 
-## Configuração do template de distribuição qualitativa {#configuring-the-qualitative-distribution-template}
+## Configurar o template de distribuição qualitativa {#configuring-the-qualitative-distribution-template}
 
 O template **[!UICONTROL Qualitative distribution]** permite criar estatísticas em todos os tipos de dados (ex: nome da empresa, domínio de email).
 
-As opções de configuração disponíveis para um relatório criado por meio do template **[!UICONTROL Qualitative distribution]** são detalhadas em [Exibição de dados na tabela](#displaying-data-in-the-table). Um exemplo completo é detalhado em [Análise de uma população](../../reporting/using/use-cases.md#analyzing-a-population).
+Opções de configuração disponíveis para um relatório criado por meio da **[!UICONTROL Qualitative distribution]** são detalhados em [Exibir dados na tabela](#displaying-data-in-the-table). Um exemplo completo é detalhado em [Analisar uma população](../../reporting/using/use-cases.md#analyzing-a-population).
 
 Ao utilizar o assistente de análise descritiva para analisar seus dados, as opções disponíveis dependem das configurações escolhidas. Veja os detalhes abaixo.
 
@@ -108,7 +105,7 @@ As opções serão diferentes dependendo do conteúdo do campo:
 
    ![](assets/reporting_descriptive_initialize_modulo_result.png)
 
-### Exibição de dados na tabela {#displaying-data-in-the-table}
+### Exibir dados na tabela {#displaying-data-in-the-table}
 
 Use a barra de ferramentas para personalizar a exibição das variáveis na tabela: exclua uma coluna, exiba dados em linhas em vez de colunas, mova uma coluna para a esquerda ou direita, exiba ou altere o cálculo de valores.
 
@@ -118,7 +115,7 @@ A seção superior da janela permite selecionar as configurações de exibição
 
 É possível exibir ou ocultar o nome das estatísticas e subtotais e escolher a orientação das estatísticas. Para obter mais informações, consulte [Configurações da exibição de relatório de análise](../../reporting/using/processing-a-report.md#analysis-report-display-settings).
 
-### Exibição de dados no gráfico {#displaying-data-in-the-chart}
+### Exibir dados no gráfico {#displaying-data-in-the-chart}
 
 Na primeira etapa do assistente de análise descritiva, é possível optar por exibir os dados no formulário do gráfico somente sem uma tabela. Nesse caso, a seleção variável deve ser feita ao configurar o gráfico. Primeiro, é necessário selecionar o número de variáveis a serem exibidas e selecionar os campos do banco de dados relevante.
 
@@ -182,7 +179,7 @@ As seguintes operações são possíveis:
 
       ![](assets/report_compute_data_sample4.png)
 
-### Exibição do relatório {#displaying-the-report}
+### Exibir o relatório {#displaying-the-report}
 
 A última etapa do assistente permite exibir o relatório, ou seja, a tabela ou o gráfico como foram configurados.
 
@@ -198,7 +195,7 @@ Quando o relatório inclui um gráfico, os rótulos da legenda permitem filtrar 
 
 ![](assets/report_display_data_in_graph.png)
 
-## Configuração do template de distribuição quantitativa {#configuring-the-quantitative-distribution-template}
+## Configurar o template de distribuição quantitativa {#configuring-the-quantitative-distribution-template}
 
 Para gerar uma análise descritiva por conta própria, selecione a opção **New descriptive analysis from a template** se não estiver definida por padrão.
 
@@ -234,4 +231,4 @@ As seguintes operações são possíveis:
 
    ![](assets/reporting_descriptive_view_report.png)
 
-   Para fazer alterações no relatório, consulte [Processamento de um relatório](../../reporting/using/processing-a-report.md).
+   Para fazer alterações no relatório, consulte [Processar um relatório](../../reporting/using/processing-a-report.md).

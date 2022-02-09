@@ -1,19 +1,16 @@
 ---
 product: campaign
-title: Criação de um gráfico
-description: Criação de um gráfico
-audience: reporting
-content-type: reference
-topic-tags: creating-new-reports
+title: Criar um gráfico
+description: Saiba como criar um gráfico
 exl-id: d32b614f-82c1-4363-816c-4ebedaa5cfe9
-source-git-commit: 7fa8cea04fb4e25187c48ad19330815e9b522b37
+source-git-commit: 81716a30a57d3ed8542b329d5fb9b0443fd4bf31
 workflow-type: tm+mt
-source-wordcount: '522'
-ht-degree: 100%
+source-wordcount: '525'
+ht-degree: 98%
 
 ---
 
-# Criação de um gráfico{#creating-a-chart}
+# Criar um gráfico{#creating-a-chart}
 
 ![](../../assets/common.svg)
 
@@ -127,7 +124,7 @@ Possíveis tipos de interação e suas configurações são detalhadas [nesta se
 
 ![](assets/s_ncs_advuser_report_wizard_017.png)
 
-## Cálculo estatístico {#calculating-statistics}
+## Computar estatísticas {#calculating-statistics}
 
 Os gráficos permitem exibir estatísticas dos dados coletados.
 

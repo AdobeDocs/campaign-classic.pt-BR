@@ -1,12 +1,10 @@
 ---
 product: campaign
-title: '"Caso de uso: exibição do relatório sobre as respostas de uma pesquisa on-line"'
-description: '"Caso de uso: exibição do relatório sobre as respostas de uma pesquisa on-line"'
-audience: reporting
-content-type: reference
-topic-tags: designing-reports-with-cubes
+title: '"Caso de uso: exibir relatório sobre as respostas a uma pesquisa online"'
+description: '"Caso de uso: exibir relatório sobre as respostas a uma pesquisa online"'
+feature: Reporting, Surveys
 exl-id: 6be12518-86d1-4a13-bbc2-b2ec5141b505
-source-git-commit: 32f55d02920b0104198f809b1be0a91306a4d9e4
+source-git-commit: 81716a30a57d3ed8542b329d5fb9b0443fd4bf31
 workflow-type: tm+mt
 source-wordcount: '475'
 ht-degree: 100%

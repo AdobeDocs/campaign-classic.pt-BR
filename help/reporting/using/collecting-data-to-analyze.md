@@ -1,19 +1,16 @@
 ---
 product: campaign
-title: Coleta de dados para analisar
-description: Coleta de dados para analisar
-audience: reporting
-content-type: reference
-topic-tags: creating-new-reports
+title: Coletar dados para analisar
+description: Coletar dados para analisar
 exl-id: cf621374-88f9-4def-8bea-87e0ea69ecd3
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: 81716a30a57d3ed8542b329d5fb9b0443fd4bf31
 workflow-type: tm+mt
-source-wordcount: '503'
-ht-degree: 100%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
-# Coleta de dados para analisar{#collecting-data-to-analyze}
+# Coletar dados para analisar{#collecting-data-to-analyze}
 
 ![](../../assets/common.svg)
 
@@ -33,7 +30,7 @@ Em todos os casos, os dados são coletados por meio de uma atividade tipo **[!UI
 
 Esse modo de seleção de dados é relevante quando os dados do relatório precisam ser coletados ou criados usando dados no banco de dados. Em alguns casos, também é possível selecionar os dados diretamente dos elementos usados no relatório. Por exemplo, ao inserir um gráfico, é possível selecionar os dados fonte diretamente. Para obter mais informações, consulte [Uso do contexto](../../reporting/using/using-the-context.md).
 
-## Uso dos dados de um schema {#using-the-data-from-a-schema}
+## Usar os dados de um schema {#using-the-data-from-a-schema}
 
 Para usar dados vinculados a um schema de banco de dados, selecione a opção apropriada no editor de query e configure a query a ser aplicada.
 
@@ -41,7 +38,7 @@ O exemplo a seguir permite coletar o número de recipients para cada país, entr
 
 ![](assets/reporting_query_from_schema.png)
 
-## Uso de uma lista importada {#using-an-imported-list}
+## Usar uma lista importada {#using-an-imported-list}
 
 Para criar um relatório, é possível usar dados de uma lista de dados importados.
 
@@ -51,7 +48,7 @@ Para fazer isso, selecione a opção **[!UICONTROL Use an imported list]** na ca
 
 Clique no link **[!UICONTROL Edit query...]** para definir os dados que serão coletados entre os elementos desta lista para criar o relatório.
 
-## Uso de um cubo {#using-a-cube}
+## Usar um cubo {#using-a-cube}
 
 É possível selecionar um cubo para definir a query.
 
@@ -75,7 +72,7 @@ A opção **[!UICONTROL Filter with the folder]** permite especificar uma pasta 
 
 ![](assets/reporting_control_folder.png)
 
-### Limite da quantidade de dados coletados {#limiting-the-amount-of-data-collected}
+### Limite a quantidade de dados coletados {#limiting-the-amount-of-data-collected}
 
 Configurar o número de registros a serem extraídos de uma consulta utilizando as opções de limitação de resultados:
 

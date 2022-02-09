@@ -1,19 +1,16 @@
 ---
 product: campaign
-title: Processamento de um relatório
-description: Processamento de um relatório
-audience: reporting
-content-type: reference
-topic-tags: analyzing-populations
+title: Usar um relatório de análise
+description: Usar um relatório de análise
 exl-id: d133efec-33e1-4711-a90f-e40385059386
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: 81716a30a57d3ed8542b329d5fb9b0443fd4bf31
 workflow-type: tm+mt
-source-wordcount: '814'
-ht-degree: 100%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
-# Utilização de um relatório de análise{#processing-a-report}
+# Usar um relatório de análise{#processing-a-report}
 
 ![](../../assets/common.svg)
 
@@ -23,7 +20,7 @@ Se tiver os direitos apropriados, poderá salvar um relatório de análise criad
 
 Para salvar o relatório, clique em **[!UICONTROL Save]** e dê um rótulo a ele.
 
-Selecione **[!UICONTROL Also save data]** se desejar criar um histórico do relatório e ver os valores do relatório no momento da gravação. Para obter mais informações, consulte [Arquivamento de relatórios de análise](#archiving-analysis-reports).
+Selecione **[!UICONTROL Also save data]** se desejar criar um histórico do relatório e ver os valores do relatório no momento da gravação. Para obter mais informações, consulte [Arquivar relatórios de análise](#archiving-analysis-reports).
 
 A opção **[!UICONTROL Share this report]** permite que outros operadores acessem o relatório.
 
@@ -33,7 +30,7 @@ Depois de salvo, esse relatório pode ser reutilizado para gerar outros relatór
 
 ![](assets/s_ncs_user_report_wizard_08a.png)
 
-Para fazer alterações nesse relatório, edite o nó **[!UICONTROL Administration > Configuration > Adobe Campaign tree reports]** da árvore do Adobe Campaign (ou a primeira pasta do tipo &quot;Relatórios&quot; para a qual o operador tem direitos de edição). Para obter mais informações, consulte [Configuração do layout de um relatório de análise descritiva](#configuring-the-layout-of-a-descriptive-analysis-report).
+Para fazer alterações nesse relatório, edite o nó **[!UICONTROL Administration > Configuration > Adobe Campaign tree reports]** da árvore do Adobe Campaign (ou a primeira pasta do tipo &quot;Relatórios&quot; para a qual o operador tem direitos de edição). Para obter mais informações, consulte [Configurar o layout de um relatório de análise descritiva](#configuring-the-layout-of-a-descriptive-analysis-report).
 
 ## Configurações adicionais do relatório de análise {#analysis-report-additional-settings}
 
@@ -43,7 +40,7 @@ Após salvar um relatório de análise descritiva, é possível editar suas prop
 
 Essas opções são as mesmas dos relatórios padrão e são detalhadas [nesta página](../../reporting/using/properties-of-the-report.md).
 
-## Configuração do layout de um relatório de análise descritiva {#configuring-the-layout-of-a-descriptive-analysis-report}
+## Configurar o layout de um relatório de análise descritiva {#configuring-the-layout-of-a-descriptive-analysis-report}
 
 É possível personalizar a visualização e o layout dos dados nos gráficos e tabelas da análise descritiva. Todas as opções são acessadas através da árvore do Adobe Campaign, na guia **[!UICONTROL Edit]** de cada relatório.
 
@@ -117,7 +114,7 @@ As seguintes opções estão disponíveis:
 
    ![](assets/s_ncs_advuser_report_wizard_3d.png)
 
-## Exportação de um relatório de análise {#exporting-an-analysis-report}
+## Exportar um relatório de análise {#exporting-an-analysis-report}
 
 Para exportar dados de um relatório de análise, clique na lista suspensa e selecione o formato de saída desejado.
 
@@ -125,7 +122,7 @@ Para exportar dados de um relatório de análise, clique na lista suspensa e sel
 
 Para obter mais informações, consulte [esta página](../../reporting/using/actions-on-reports.md).
 
-## Reutilização de relatórios e análises existentes {#re-using-existing-reports-and-analyses}
+## Reutilizar relatórios e análises existentes {#re-using-existing-reports-and-analyses}
 
 É possível criar relatórios de análise descritiva em dados usando relatórios existentes já armazenados no Adobe Campaign. Esse modo é possível quando as análises foram salvas ou quando os relatórios foram criados e configurados para serem acessados via assistente de análise descritiva.
 
@@ -138,7 +135,7 @@ Para criar relatórios de análise descritiva, o assistente de análise descriti
 
    ![](assets/s_ncs_user_report_wizard_01.png)
 
-## Arquivamento de relatórios de análise {#archiving-analysis-reports}
+## Arquivar relatórios de análise {#archiving-analysis-reports}
 
 Ao criar uma análise descritiva baseada em uma análise existente, é possível criar arquivos para armazenar dados e comparar os resultados do relatório.
 

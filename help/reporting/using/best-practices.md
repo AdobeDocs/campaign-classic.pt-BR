@@ -2,14 +2,12 @@
 product: campaign
 title: Práticas recomendadas para relatórios
 description: Práticas recomendadas para relatórios do Campaign
-audience: reporting
-content-type: reference
-topic-tags: reporting-in-adobe-campaign
+feature: Reporting
 exl-id: 0c7f00f3-b16d-41c5-a7b1-f5a59201bf8c
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: 81716a30a57d3ed8542b329d5fb9b0443fd4bf31
 workflow-type: tm+mt
-source-wordcount: '839'
-ht-degree: 100%
+source-wordcount: '841'
+ht-degree: 98%
 
 ---
 
@@ -17,7 +15,7 @@ ht-degree: 100%
 
 ![](../../assets/common.svg)
 
-## Análise de necessidades{#analyzing-needs}
+## Analise suas necessidades{#analyzing-needs}
 
 A utilização de uma ferramenta de relatório depende do volume de dados a serem manipulados, da complexidade e do tipo de relatório a ser configurado.
 
@@ -62,7 +60,7 @@ Para otimizar a criação, o uso e a durabilidade de um relatório, é preciso o
 
    Os problemas vinculados aos volumes de dados e atualizações precisam ser pesquisados cuidadosamente para evitar problemas de exibição de relatórios, especialmente em termos de tempo. Portanto, recomendamos a criação de agregados para pré-calcular alguns dados fora do relatório. As tabelas com os logs do delivery e de rastreamento podem incluir milhões de registros: isso significa que os dados precisam ser agregados por meio de um workflow para ser usado em um relatório.
 
-## Otimização da criação de relatórios{#optimizing-report-creation}
+## Otimizar o design do relatório{#optimizing-report-creation}
 
 ### Volume de dados {#data-volume}
 
@@ -112,6 +110,6 @@ Além disso, o Adobe Campaign recomenda as seguintes melhorias:
 
    Para obter mais informações sobre limpeza e retenção de dados, consulte [esta seção](../../configuration/using/data-model-best-practices.md#data-retention).
 
-### Exportação de relatórios {#exporting-reports}
+### Exportar seus relatórios {#exporting-reports}
 
 As recomendações específicas para exportar relatórios são detalhadas [nesta seção](../../reporting/using/actions-on-reports.md#exporting-a-report).

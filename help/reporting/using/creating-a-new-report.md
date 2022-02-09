@@ -2,14 +2,11 @@
 product: campaign
 title: Criação de um novo relatório
 description: Conheça as principais etapas para criar um novo relatório
-audience: reporting
-content-type: reference
-topic-tags: creating-new-reports
 exl-id: 4c2aad47-0e2d-4d0b-8898-b437f4a05e11
-source-git-commit: bd9f035db1cbad883e1f27fe901e34dfbc9c1229
+source-git-commit: 81716a30a57d3ed8542b329d5fb9b0443fd4bf31
 workflow-type: tm+mt
 source-wordcount: '923'
-ht-degree: 100%
+ht-degree: 95%
 
 ---
 
@@ -39,7 +36,7 @@ Para criar um relatório, siga as etapas abaixo:
 
 1. Salve este relatório.
 
-## Modelagem do gráfico {#modelizing-the-chart}
+## Modelo do gráfico {#modelizing-the-chart}
 
 Depois de salvar o relatório, isso deve ser exibido. Agora é possível criar o gráfico do relatório.
 
@@ -61,7 +58,7 @@ Para criar um relatório, dependendo da natureza e do contexto, é preciso ident
 
 1. Adicione uma ou mais atividades **[!UICONTROL Query]** para coletar dados úteis para a criação do relatório. Os dados podem ser coletados diretamente por uma query em um schema do banco de dados ou através de uma lista importada ou de um Cubo existente.
 
-   Para obter mais informações, consulte [Coleta de dados a serem analisados](../../reporting/using/collecting-data-to-analyze.md).
+   Para obter mais informações, consulte [Coletar dados para analisar](../../reporting/using/collecting-data-to-analyze.md).
 
    Esses dados serão exibidos (ou não) no relatório dependendo da configuração da página.
 
@@ -89,9 +86,9 @@ No entanto, é possível colocar várias ramificações. Somente uma delas será
 
 ![](assets/reporting_graph_sample_ok.png)
 
-## Criação de uma página {#creating-a-page}
+## Criar uma página {#creating-a-page}
 
-O conteúdo é configurado através das atividades colocadas no gráfico. Para obter mais informações, consulte [Modelagem do gráfico](#modelizing-the-chart).
+O conteúdo é configurado através das atividades colocadas no gráfico. Para obter mais informações, consulte [Modelar o gráfico](#modelizing-the-chart).
 
 Para configurar uma atividade, clique duas vezes em seu ícone.
 
@@ -109,7 +106,7 @@ Também é possível clicar com o botão direito do mouse no nó onde deseja adi
 
 >[!CAUTION]
 >
->Se o relatório for destinado a ser exportado no formato do Excel, recomendamos não usar formatação HTML complexa. Para obter mais informações, consulte [Exportação de um relatório](../../reporting/using/actions-on-reports.md#exporting-a-report).
+>Se o relatório for destinado a ser exportado no formato do Excel, recomendamos não usar formatação HTML complexa. Para obter mais informações, consulte [Exportar um relatório](../../reporting/using/actions-on-reports.md#exporting-a-report).
 
 Um **[!UICONTROL Page]** pode incluir os seguintes elementos:
 
@@ -133,7 +130,7 @@ Os elementos estáticos permitem exibir informações no relatório, como elemen
 
 ![](assets/s_advuser_report_page_activity_03.png)
 
-### Filtragem de informações em um relatório {#filtering-information-in-a-report}
+### Filtrar informações em um relatório {#filtering-information-in-a-report}
 
 Os controles de entrada e seleção permitem filtrar as informações exibidas no relatório. Para obter mais informações sobre como implementar esse tipo de filtragem, consulte as opções de [Filtragem nas consultas](../../reporting/using/collecting-data-to-analyze.md#filtering-options-in-the-queries).
 

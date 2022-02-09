@@ -1,19 +1,16 @@
 ---
 product: campaign
-title: Criação de uma tabela
-description: Criação de uma tabela
-audience: reporting
-content-type: reference
-topic-tags: creating-new-reports
+title: Criar uma tabela
+description: Criar uma tabela
 exl-id: 05f76bdf-6dcd-4360-9e72-0ba6a4dd0d5e
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: 81716a30a57d3ed8542b329d5fb9b0443fd4bf31
 workflow-type: tm+mt
-source-wordcount: '2495'
-ht-degree: 100%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
-# Criação de uma tabela{#creating-a-table}
+# Criar uma tabela{#creating-a-table}
 
 ![](../../assets/common.svg)
 
@@ -21,13 +18,13 @@ ht-degree: 100%
 
 ![](assets/s_advuser_report_page_activity_05.png)
 
-## Criação de uma lista com grupo {#creating-a-list-with-group}
+## Criar uma lista com um grupo {#creating-a-list-with-group}
 
 Uma tabela do tipo **[!UICONTROL List with group]** permite agrupar dados na tabela e produzir estatísticas. Por exemplo, é possível criar totais e subtotais para os dados. Cada grupo tem sua própria linha de cabeçalho, detalhe e rodapé.
 
 >[!CAUTION]
 >
->A atividade **[!UICONTROL Page]** contendo a tabela deve ser precedida por uma atividade **[!UICONTROL Query]** ou **[!UICONTROL Script]** para coletar os dados a serem analisados no relatório. Para mais informações sobre essas atividades, consulte [Coleta de dados para análise](../../reporting/using/collecting-data-to-analyze.md) e [Atividade de script](../../reporting/using/advanced-functionalities.md#script-activity).
+>A atividade **[!UICONTROL Page]** contendo a tabela deve ser precedida por uma atividade **[!UICONTROL Query]** ou **[!UICONTROL Script]** para coletar os dados a serem analisados no relatório. Para obter mais informações sobre essas atividades, consulte [Coletar dados para analisar](../../reporting/using/collecting-data-to-analyze.md) e [Atividade script](../../reporting/using/advanced-functionalities.md#script-activity).
 
 ### Princípio operacional {#operating-principle}
 
@@ -45,7 +42,7 @@ Um exemplo completo de implementação é fornecido aqui: [Caso de uso: crie um 
 
 Observe as seguintes etapas para criar uma tabela do tipo &quot;Lista com grupo&quot;:
 
-1. Ir para o gráfico de relatório e inserir uma atividade **[!UICONTROL Query]**. Consulte [Coleta de dados para analisar](../../reporting/using/collecting-data-to-analyze.md).
+1. Ir para o gráfico de relatório e inserir uma atividade **[!UICONTROL Query]**. Consulte [Coletar dados para analisar](../../reporting/using/collecting-data-to-analyze.md).
 1. Preencha a tabela de origem e selecione os campos da tabela que as estatísticas abordarão.
 1. Coloque uma atividade **[!UICONTROL Page]** no gráfico. Para obter mais informações, consulte [Elementos estáticos](../../reporting/using/creating-a-new-report.md#static-elements).
 1. Insira uma tabela do tipo **[!UICONTROL List with group]** na página.
@@ -54,9 +51,9 @@ Observe as seguintes etapas para criar uma tabela do tipo &quot;Lista com grupo&
    Essa etapa é obrigatória se desejar recuperar os campos na tabela de origem posteriormente e inseri-los nas células da tabela.
 
 1. Criação da tabela e seu conteúdo
-1. Exiba o relatório finalizado na guia **[!UICONTROL Preview]**. É possível então publicar o relatório e exportá-lo em um formato diferente se necessário. Para obter mais informações, consulte [Exportação de um relatório](../../reporting/using/actions-on-reports.md#exporting-a-report).
+1. Exiba o relatório finalizado na guia **[!UICONTROL Preview]**. É possível então publicar o relatório e exportá-lo em um formato diferente se necessário. Para obter mais informações, consulte [Exportar um relatório](../../reporting/using/actions-on-reports.md#exporting-a-report).
 
-### Adição de linhas e colunas {#adding-lines-and-columns}
+### Adicionar linhas e colunas {#adding-lines-and-columns}
 
 Por padrão, uma tabela do tipo **[!UICONTROL List with group]** inclui uma linha de cabeçalho, detalhe e rodapé.
 
@@ -94,7 +91,7 @@ A largura das colunas pode ser modificada por meio do item **[!UICONTROL Column 
 
 ![](assets/s_advuser_ergo_listgroup_007.png)
 
-### Definição do conteúdo da célula {#defining-cell-content}
+### Definir conteúdo da célula {#defining-cell-content}
 
 Para editar uma célula da tabela e definir seu conteúdo e formato, vá para a célula e use o menu do botão direito do mouse.
 
@@ -118,7 +115,7 @@ Use a entrada do menu **[!UICONTROL Expression]** para selecionar os valores a s
 
    ![](assets/s_advuser_ergo_listgroup_008.png)
 
-### Definição do formato de célula {#defining-cell-format}
+### Definir formato de célula {#defining-cell-format}
 
 ![](assets/s_advuser_ergo_listgroup_017.png)
 
@@ -126,7 +123,7 @@ Para definir o formato da célula, o menu **[!UICONTROL Cell format...]** permit
 
 Essas opções permitem personalizar a renderização final do relatório e facilitar a leitura das informações.
 
-Use o campo **[!UICONTROL Carriage return]** ao exportar dados para o Excel: selecione o valor **[!UICONTROL Yes]** para forçar o retorno. Esse valor será mantido ao exportar. Para obter mais informações, consulte [Exportação de um relatório](../../reporting/using/actions-on-reports.md#exporting-a-report).
+Use o campo **[!UICONTROL Carriage return]** ao exportar dados para o Excel: selecione o valor **[!UICONTROL Yes]** para forçar o retorno. Esse valor será mantido ao exportar. Para obter mais informações, consulte [Exportar um relatório](../../reporting/using/actions-on-reports.md#exporting-a-report).
 
 A janela **[!UICONTROL Cell format]** permite acessar a seguinte guia:
 
@@ -448,7 +445,7 @@ Queremos adicionar uma segunda query e uma segunda página para exibir o detalhe
 
    A página está configurada agora.
 
-### Etapa 6 - Exibição do relatório {#step-6---viewing-the-report}
+### Etapa 6 - Visualizar o relatório {#step-6---viewing-the-report}
 
 Para exibir o resultado dessa configuração, clique na guia **[!UICONTROL Preview]** e selecione a opção **[!UICONTROL Global]**.
 
@@ -460,7 +457,7 @@ Se clicar no link de um desses deliveries, ele mostrará o gráfico com a análi
 
 ![](assets/s_advuser_report_listgroup_022.png)
 
-## Criação de uma análise ou tabela dinâmica {#creating-a-breakdown-or-pivot-table}
+## Criar um detalhamento ou tabela dinâmica {#creating-a-breakdown-or-pivot-table}
 
 Esse tipo de tabela permite exibir estatísticas calculadas dos dados do banco de dados.
 

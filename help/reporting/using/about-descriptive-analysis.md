@@ -1,19 +1,17 @@
 ---
 product: campaign
-title: Sobre análise descritiva
-description: Sobre análise descritiva
-audience: reporting
-content-type: reference
-topic-tags: analyzing-populations
+title: Introdução à análise descritiva
+description: Introdução à análise descritiva
+feature: Reporting
 exl-id: 19920058-e8e8-4e17-9cc3-24ddf9f96d04
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: 81716a30a57d3ed8542b329d5fb9b0443fd4bf31
 workflow-type: tm+mt
-source-wordcount: '195'
-ht-degree: 100%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
-# Sobre análise descritiva{#about-descriptive-analysis}
+# Introdução à análise descritiva{#about-descriptive-analysis}
 
 ![](../../assets/common.svg)
 

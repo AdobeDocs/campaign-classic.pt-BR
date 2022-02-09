@@ -2,14 +2,11 @@
 product: campaign
 title: Ações em relatórios
 description: Ações em relatórios
-audience: reporting
-content-type: reference
-topic-tags: creating-new-reports
 exl-id: b30cdeaf-4ad6-473d-bdbc-91984755b609
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: 81716a30a57d3ed8542b329d5fb9b0443fd4bf31
 workflow-type: tm+mt
-source-wordcount: '546'
-ht-degree: 100%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -25,7 +22,7 @@ A barra de ferramentas permite exportar, imprimir, arquivar ou exibir o relatór
 
 ![](assets/s_ncs_advuser_report_wizard_04.png)
 
-## Exportação de um relatório {#exporting-a-report}
+## Exportar um relatório {#exporting-a-report}
 
 Selecione o formato que deseja usar para exportar a partir da lista suspensa. (.xls, .pdf ou .ods).
 
@@ -41,7 +38,7 @@ Altere as configurações de **[!UICONTROL Paper]** e **[!UICONTROL Margins]** p
 
 ![](assets/s_ncs_advuser_report_wizard_021.png)
 
-### Exportação para o Microsoft Excel {#exporting-into-microsoft-excel}
+### Exportar para o Microsoft Excel {#exporting-into-microsoft-excel}
 
 Para relatórios do tipo **[!UICONTROL List with group]** destinados a serem exportados para o Excel, as seguintes recomendações e limitações se aplicam:
 
@@ -56,7 +53,7 @@ Para relatórios do tipo **[!UICONTROL List with group]** destinados a serem exp
 * Os relatórios não precisam usar formatação específica definida no nível da célula. É preferível usar **[!UICONTROL Form rendering]** para definir o formato das células na tabela. O **[!UICONTROL Form rendering]** pode ser acessado via **[!UICONTROL Administration > Configuration > Form rendering]**.
 * Não é recomendável inserir conteúdo HTML.
 * Se um relatório contiver vários elementos de tabela, gráfico, etc., eles serão exportados um abaixo do outro.
-* É possível forçar a quebra de linhas nas células: essa configuração será mantida no Excel. Para obter mais informações, consulte [Definição de formato da célula](../../reporting/using/creating-a-table.md#defining-cell-format).
+* É possível forçar a quebra de linhas nas células: essa configuração será mantida no Excel. Para obter mais informações, consulte [esta seção](../../reporting/using/creating-a-table.md#defining-cell-format).
 
 ### Adiar a exportação {#postpone-the-export}
 
@@ -84,7 +81,7 @@ Para saber mais sobre o arquivo **serverConf.xml**, consulte [esta seção](../.
 
 Para saber mais sobre o serviço **nlserver**, consulte [esta seção](../../production/using/administration.md).
 
-## Impressão de um relatório {#printing-a-report}
+## Imprimir um relatório {#printing-a-report}
 
 É possível imprimir seu relatório: para fazer isso, clique no ícone da impressora: isso abre a caixa de diálogo.
 
@@ -92,7 +89,7 @@ Para obter um resultado melhor, edite as opções de impressão do Internet Expl
 
 ![](assets/s_ncs_advuser_report_print_options.png)
 
-## Criação de arquivos de relatórios {#creating-report-archives}
+## Criar arquivos de relatórios {#creating-report-archives}
 
 O arquivamento de um relatório permite criar um modo de exibição do relatório em vários períodos, por exemplo, para mostrar as estatísticas de determinado período.
 

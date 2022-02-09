@@ -1,15 +1,12 @@
 ---
 product: campaign
-title: Conceitos e metodologia
-description: Conceitos e metodologia
-audience: reporting
-content-type: reference
-topic-tags: designing-reports-with-cubes
+title: Práticas recomendadas para cubos
+description: Práticas recomendadas para cubos
 exl-id: 5f22fa2c-b648-4126-9a24-1798adfa8f34
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: 81716a30a57d3ed8542b329d5fb9b0443fd4bf31
 workflow-type: tm+mt
-source-wordcount: '1491'
-ht-degree: 100%
+source-wordcount: '1493'
+ht-degree: 96%
 
 ---
 
@@ -35,7 +32,7 @@ Você pode criar compartimentos manualmente ou vinculá-los a uma enumeração e
 
 O Adobe Campaign também fornece um assistente para compartimentalização automática: os valores podem ser divididos em N grupos ou agrupados de acordo com os valores mais frequentes no banco de dados.
 
-### Definição de cada compartimento {#defining-each-bin}
+### Definir cada compartimento {#defining-each-bin}
 
 Para criar cada compartimento individualmente, selecione a opção **[!UICONTROL Define each bin]** e use a tabela para criar os diversos compartimentos.
 
@@ -68,7 +65,7 @@ Para criar esse tipo de compartimentalização de valor, siga as etapas abaixo:
 
    Sempre que os valores de enumeração forem atualizados, os compartimentos correspondentes serão adaptados automaticamente.
 
-### Criação de intervalos de valor {#creating-value-ranges}
+### Criar intervalos de valor {#creating-value-ranges}
 
 Você pode agrupar os valores em intervalos com base em um intervalo desejado.
 
@@ -78,7 +75,7 @@ Para fazer isso, clique em **[!UICONTROL Add]** e selecione **[!UICONTROL Define
 
 Em seguida, especifique os limites inferiores e superiores e clique em **[!UICONTROL Ok]** para confirmar.
 
-### Criação automática de compartimentos {#generating-bins-automatically}
+### Gerar compartimentos automaticamente {#generating-bins-automatically}
 
 Também é possível gerar compartimentos automaticamente. Para fazer isso, clique em **[!UICONTROL Generate bins...]**.
 
@@ -122,7 +119,7 @@ A lista discriminada **[!UICONTROL Domains]** é usada para gerar relatórios in
 
 Você pode criar outras enumerações reservadas para compartimentalização e usá-las em outros Cubos: todos os valores de alias serão reagrupados nas posições especificadas na primeira guia de enumeração.
 
-## Cálculo e uso de agregações {#calculating-and-using-aggregates}
+## Calcular e usar agregações {#calculating-and-using-aggregates}
 
 Os maiores volumes de dados podem ser calculados em agregações.
 
@@ -158,7 +155,7 @@ Para criar uma nova agregação, siga as etapas abaixo:
 
       ![](assets/s_advuser_cube_agregate_05.png)
 
-## Definição de medidas {#defining-measures}
+## Defina medidas {#defining-measures}
 
 Os tipos de medidas são definidos na guia **[!UICONTROL Measures]** do cubo. É possível calcular somas, médias, desvios, etc.
 
@@ -182,13 +179,13 @@ Para definir uma nova medida, siga as etapas abaixo:
 
 1. Insira o rótulo da medida e adicione uma descrição, em seguida, clique em **[!UICONTROL Finish]** para criar.
 
-## Exibição de medidas {#displaying-measures}
+## Exibir medidas {#displaying-measures}
 
 É possível configurar a exibição de medidas na tabela dependendo das necessidades:
 
 * a sequência de exibição de medidas (consulte [Sequência de exibição](#display-sequence)),
-* as informações para mostrar/ocultar no relatório (consulte [Configuração de exibição](#configuring-the-display)),
-* medidas para exibir: porcentagem, total, número de decimais, etc. (consulte [Alteração do tipo de medida exibida](#changing-the-type-of-measure-displayed)).
+* as informações para mostrar/ocultar no relatório (consulte [Configurar a exibição](#configuring-the-display))
+* medidas para exibir: porcentagem, total, número de decimais, etc. (consulte [Alterar o tipo de medida exibida](#changing-the-type-of-measure-displayed)).
 
 ### Sequência de exibição {#display-sequence}
 
@@ -198,7 +195,7 @@ Mova as linhas para alterar a sequência de exibição. No exemplo a seguir, o d
 
 ![](assets/s_advuser_cube_in_report_config_04.png)
 
-### Configuração da visualização {#configuring-the-display}
+### Configurar a exibição {#configuring-the-display}
 
 A configuração de medidas, linhas e colunas pode ser executada individualmente para cada medida ou no geral. Um ícone específico permite acessar a janela de seleção do modo de exibição.
 
@@ -212,13 +209,13 @@ As opções de cor permitem realçar valores importantes para facilitar a leitur
 
 ![](assets/s_advuser_cube_in_report_config_06.png)
 
-### Alteração do tipo de medida exibida {#changing-the-type-of-measure-displayed}
+### Alterar o tipo de medida exibida {#changing-the-type-of-measure-displayed}
 
 Em cada medida, é possível definir a unidade e a formatação a serem aplicadas.
 
 ![](assets/s_advuser_cube_in_report_config_07.png)
 
-## Compartilhamento de um relatório {#sharing-a-report}
+## Compartilhar seu relatório {#sharing-a-report}
 
 Após configurar o relatório, é possível salvá-lo e compartilhá-lo com outros operadores.
 
@@ -232,7 +229,7 @@ Para confirmar essas alterações, é preciso salvar o relatório.
 
 ![](assets/cube_share_confirm.png)
 
-## Criação de filtros {#creating-filters}
+## Criar filtros {#creating-filters}
 
 É possível criar filtros para visualizar uma seção dos dados.
 

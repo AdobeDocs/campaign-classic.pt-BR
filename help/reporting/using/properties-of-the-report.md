@@ -2,14 +2,11 @@
 product: campaign
 title: Propriedades do relatório
 description: Saiba mais sobre as configurações de propriedades do relatório
-audience: reporting
-content-type: reference
-topic-tags: creating-new-reports
 exl-id: dfa9d329-1086-4f6d-9d03-df159cad5495
-source-git-commit: 7fa8cea04fb4e25187c48ad19330815e9b522b37
+source-git-commit: 81716a30a57d3ed8542b329d5fb9b0443fd4bf31
 workflow-type: tm+mt
 source-wordcount: '429'
-ht-degree: 100%
+ht-degree: 97%
 
 ---
 
@@ -37,7 +34,7 @@ Na guia **[!UICONTROL General]** das propriedades do relatório, é possível ed
 
 * Os parâmetros do **Controle de acesso**. Essas configurações estão descritas abaixo.
 
-## Controle de acesso ao relatório {#report-accessibility}
+## Controle o acesso ao relatório {#report-accessibility}
 
 Um relatório pode ser acessado no console do Adobe Campaign ou com um navegador da web. Nesse caso, pode ser necessário configurar o controle de acesso do relatório conforme mostrado abaixo.
 
@@ -52,7 +49,7 @@ As opções possíveis são:
 * **[!UICONTROL Access control]**: esta opção permite que os operadores do Adobe Campaign acessem o relatório quando estiverem conectados.
 * **[!UICONTROL Specific account]**: a opção permite executar o relatório com os direitos do operador, selecionados no campo **[!UICONTROL Operator]**.
 
-## Gerenciamento da localização do relatório {#managing-report-localization}
+## Traduza seu relatório {#report-localization}
 
 É possível configurar os idiomas para os quais deseja que o relatório seja traduzido. Para fazer isso, clique na guia **[!UICONTROL Localization]**.
 
@@ -66,7 +63,7 @@ O idioma de edição é o idioma escrito. Quando adicionar um idioma, a subguia 
 >
 >Para obter mais informações sobre localização da página da web no Campaign, consulte [esta seção](../../web/using/translating-a-web-form.md).
 
-## Personalização da renderização de HTML {#personalizing-html-rendering}
+## Personalizar renderização do HTML {#personalizing-html-rendering}
 
 Na guia **[!UICONTROL Rendering]**, é possível personalizar o modo de exibição de dados da página. É possível selecionar:
 

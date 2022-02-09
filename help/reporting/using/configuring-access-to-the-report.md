@@ -1,19 +1,16 @@
 ---
 product: campaign
-title: Configuração do acesso ao relatório
-description: Configuração do acesso ao relatório
-audience: reporting
-content-type: reference
-topic-tags: creating-new-reports
+title: Configurar acesso ao relatório
+description: Configurar acesso ao relatório
 exl-id: 1e5ab922-481c-4dce-a05e-a58408002e24
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: 81716a30a57d3ed8542b329d5fb9b0443fd4bf31
 workflow-type: tm+mt
-source-wordcount: '754'
-ht-degree: 100%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
-# Configuração do acesso ao relatório{#configuring-access-to-the-report}
+# Configurar acesso ao relatório{#configuring-access-to-the-report}
 
 ![](../../assets/common.svg)
 
@@ -61,7 +58,7 @@ O relatório também pode ser compartilhado com operadores ou grupos de operador
 
 ![](assets/s_ncs_advuser_report_visibility_8.png)
 
-### Definição das opções de filtro {#defining-the-filtering-options}
+### Definir as opções de filtragem {#defining-the-filtering-options}
 
 A guia **[!UICONTROL Reports]** exibe todos os relatórios disponíveis na plataforma e para os quais o operador conectado tem direito de acesso.
 
@@ -77,7 +74,7 @@ Para definir a categoria de um relatório, selecione-o por meio da guia **[!UICO
 
 É possível inserir uma nova categoria aqui e adicioná-la à lista de categorias disponíveis. A numeração correspondente é atualizada automaticamente.
 
-## Criação de um link para um relatório {#creating-a-link-to-a-report-}
+## Criar um link para um relatório {#creating-a-link-to-a-report-}
 
 É possível tornar um relatório acessível por meio de um nó específico da árvore, como uma lista, um recipient, um delivery, etc. Para fazer isso, basta criar um link para o relatório em questão e especificar a entidade onde deseja torná-lo disponível.
 
@@ -123,7 +120,7 @@ As configurações específicas permitem controlar erros. A configuração **_uu
 
 Para saber mais sobre essas configurações, consulte a seção **Definição das propriedades dos formulários web** do capítulo de [Formulários web](../../web/using/about-web-forms.md).
 
-## Publicação do relatório {#publishing-the-report}
+## Publicar o relatório {#publishing-the-report}
 
 A publicação do relatório é obrigatória para compartilhá-lo com outros operadores e exibi-lo na lista de relatórios disponíveis (também consulte [Contexto de exibição do relatório](#report-display-context)). Essa operação deve ser executada novamente cada vez que o relatório for alterado.
 
