@@ -158,4 +158,5 @@ O perfil de produto está agora configurado. Em seguida, é necessário criar o 
    ```
    nlserver config -instance:<instance name> -setimsjwtauth:Organization_Id/Client_Id/Technical_Account_ID/<Client_Secret>/<Base64_encoded_Private_Key>
    ```
+
 Agora é possível começar a usar o conector do Analytics e rastrear os comportamentos do cliente.
