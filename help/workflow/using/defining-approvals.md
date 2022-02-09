@@ -1,23 +1,21 @@
 ---
 product: campaign
-title: Definição de aprovações
+title: Definir aprovações
 description: As aprovações permitem que os operadores tomem decisões que regem um workflow ou confirmem sua execução contínua
-audience: workflow
-content-type: reference
-topic-tags: -general-operation
+feature: Approvals
 exl-id: 4d413d51-ae5d-4e5e-bfaf-4160a6075281
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: 3af4f259b80b3e03c81ee278b470ef6ffe3fe4d0
 workflow-type: tm+mt
-source-wordcount: '840'
-ht-degree: 100%
+source-wordcount: '841'
+ht-degree: 98%
 
 ---
 
-# Definição de aprovações {#defining-approvals}
+# Definir aprovações {#defining-approvals}
 
 ![](../../assets/common.svg)
 
-As aprovações permitem que os operadores tomem decisões que regem um fluxo de trabalho ou confirmem sua execução contínua.
+As aprovações permitem que os operadores tomem decisões que regem um workflow ou confirmem sua execução contínua.
 
 Uma mensagem é enviada a um grupo de operadores e o workflow aguarda uma resposta antes de continuar. O workflow não é interrompido e outras operações podem ocorrer. Por exemplo, pode haver várias aprovações simultâneas pendentes.
 
@@ -29,7 +27,7 @@ Em operações, todos os estágios que exigem aprovação se baseiam no mesmo pr
 
 ![](assets/validation-1-in-op.png)
 
-Exemplos de aprovação podem ser encontrados nesta [seção](../../campaign/using/marketing-campaign-approval.md#checking-and-approving-deliveries).
+Exemplos de aprovação podem ser encontrados em [esta seção](../../campaign/using/marketing-campaign-approval.md#checking-and-approving-deliveries).
 
 Um operador pode responder de uma das duas formas seguintes: validação usando a página da Web vinculada na mensagem de email ou através do console.
 
@@ -37,7 +35,7 @@ Um operador pode responder de uma das duas formas seguintes: validação usando 
 >
 >Após salvar a resposta, ela não poderá ser modificada.
 
-## Envio de emails {#sending-emails}
+## Aprovações por email {#sending-emails}
 
 É possível receber uma mensagem de aprovação contendo um link para uma página da Web pela qual é possível responder. Para que o operador de target receba um email de aprovação, o endereço de email do operador deve ser completo. Se esse não for o caso, o operador deve usar o console para responder
 
@@ -47,7 +45,7 @@ Emails de aprovação são enviados continuamente. O template do delivery padrã
 
 Os deliveries criados por meio desse template são armazenados na pasta **[!UICONTROL Administration > Production > Objects created automatically > Technical deliveries > Workflow notifications]**.
 
-## Aprovação através do console {#approval-via-the-console}
+## Aprovações por meio do console {#approval-via-the-console}
 
 Em operações, os elementos a serem aprovados são exibidos no painel da campanha.
 

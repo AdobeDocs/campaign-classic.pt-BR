@@ -2,24 +2,22 @@
 product: campaign
 title: Direcionamento de dados
 description: Saiba mais sobre como direcionar dados em um workflow
-audience: workflow
-content-type: reference
-topic-tags: -general-operation
+feature: Query Editor, Data Management
 exl-id: 74b82019-bdab-4442-84cf-5ad18d0db788
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: f05eefc9945c4ead89eb448b6e28c3523559e055
 workflow-type: tm+mt
 source-wordcount: '1924'
-ht-degree: 100%
+ht-degree: 97%
 
 ---
 
-# Direcionamento de dados{#targeting-data}
+# Dados do target{#targeting-data}
 
 ![](../../assets/common.svg)
 
-## Criação de query {#creating-queries}
+## Criar consultas {#creating-queries}
 
-### Seleção de dados {#selecting-data}
+### Selecionar dados {#selecting-data}
 
 Uma atividade **[!UICONTROL Query]** permite que você selecione dados básicos para criar o público-alvo. Para obter mais informações, consulte [Criação de uma consulta](query.md#creating-a-query).
 
@@ -27,7 +25,7 @@ Também é possível usar as seguintes atividades para consultar e refinar dados
 
 É possível coletar dados adicionais para serem encaminhados e processados durante o ciclo de vida do workflow. Para obter mais informações, consulte [Adicionar dados](query.md#adding-data) e [Editar dados adicionais](#editing-additional-data).
 
-### Edição de dados adicionais {#editing-additional-data}
+### Editar dados adicionais {#editing-additional-data}
 
 Após adicionar os dados adicionais, você pode editá-los ou utilizá-los para refinar o target definido na atividade de query.
 
@@ -53,13 +51,13 @@ As coleções são mostradas na subguia **[!UICONTROL Collections]**. Você pode
 
 ![](assets/query_add_columns_collection.png)
 
-### Refinamento do target usando dados adicionais {#refining-the-target-using-additional-data}
+### Refine o target usando dados adicionais {#refining-the-target-using-additional-data}
 
 Os dados adicionais coletados podem capacitá-lo a refinar a filtragem de dados no banco de dados. Para fazer isso, clique no link **[!UICONTROL Refine the target using additional data...]**: isso permite filtrar os dados adicionados.
 
 ![](assets/wf_add_data_use_additional_data.png)
 
-### Uniformização de dados {#homogenizing-data}
+### Uniformizar dados {#homogenizing-data}
 
 Em **[!UICONTROL Union]** ou **[!UICONTROL Intersection]** digite atividades, é possível escolher manter apenas os dados adicionais compartilhados para manter a consistência dos dados. Nesse caso, a mesa de trabalho de saída temporária dessa atividade conterá apenas os dados adicionais encontrados em todos os conjuntos de entradas.
 
@@ -71,7 +69,7 @@ Durante as fases de reconciliação de dados (**[!UICONTROL Union]**, **[!UICONT
 
 ![](assets/select-column-and-join.png)
 
-### Criação de subconjuntos {#creating-subsets}
+### Criar subconjuntos {#creating-subsets}
 
 A atividade **[!UICONTROL Split]** permite criar subconjuntos em critérios definidos por consultas de extração. Para cada subconjunto, ao editar uma condição de filtro no público, você acessará a atividade de query padrão que permite definir as condições de segmentação de target.
 
@@ -79,9 +77,9 @@ Você pode dividir um target em vários subconjuntos usando apenas dados adicion
 
 Para obter mais informações, consulte [Criação de subconjuntos usando a atividade Split](#creating-subsets-using-the-split-activity).
 
-## Segmentação de dados {#segmenting-data}
+## Dados do segmento {#segmenting-data}
 
-### Combinação de vários targets (União) {#combining-several-targets--union-}
+### Combinar vários targets (União) {#combining-several-targets--union-}
 
 A atividade de união permite combinar o resultado de várias atividades em uma transição. Os conjuntos não precisam ser necessariamente homogêneos.
 
@@ -119,7 +117,7 @@ As seguintes opções de reconciliação de dados estão disponíveis:
 
    ![](assets/join_limit_nb_priority.png)
 
-### Extração de dados da junção (Intersecção) {#extracting-joint-data--intersection-}
+### Extrair dados da junção (Interseção) {#extracting-joint-data--intersection-}
 
 ![](assets/traitements.png)
 
@@ -129,7 +127,7 @@ Além disso, é possível manter apenas uma seleção de colunas ou apenas as co
 
 A atividade de intersecção é detalhada na seção [Intersection](intersection.md).
 
-### Excluir uma população (Exclusão) {#excluding-a-population--exclusion-}
+### Excluir um público (Exclusão) {#excluding-a-population--exclusion-}
 
 A atividade de exclusão permite excluir os elementos de um target de um público alvo diferente. O targeting dimension de output dessa atividade será do conjunto principal.
 
@@ -139,7 +137,7 @@ A reconciliação de dados é realizada por meio de um identificador, alterando 
 
 ![](assets/exclusion_edit_add_rule_01.png)
 
-### Criação de subconjuntos usando a atividade Divisão {#creating-subsets-using-the-split-activity}
+### Criar subconjuntos usando a atividade de Split {#creating-subsets-using-the-split-activity}
 
 A atividade **[!UICONTROL Split]** é uma atividade padrão que permite criar os conjuntos necessários por meio de uma ou várias dimensões de filtro, bem como gerar uma transição de output por subconjunto ou uma transição exclusiva.
 
@@ -215,7 +213,7 @@ Por exemplo, você pode colocar uma única atividade de delivery e personalizar 
 
 Subconjuntos também podem ser criados usando a atividade **[!UICONTROL Cells]**. Para obter mais informações, consulte a seção [Cells](cells.md).
 
-### Uso de dados de target {#using-targeted-data}
+### Usar dados direcionados {#using-targeted-data}
 
 Depois que os dados forem identificados e preparados, eles poderão ser usados nos seguintes contextos:
 
@@ -251,7 +249,7 @@ Para implementar essas operações, o Adobe Campaign oferece:
 >  
 >Por exemplo, excluir um recipient por meio de um workflow não resultará na exclusão de todo o histórico de delivery. No entanto, excluir um recipient diretamente na pasta &#39;Recipients&#39; resultará na exclusão de todos os dados vinculados a este recipient.
 
-### Modificação e enriquecimento de dados {#enriching-and-modifying-data}
+### Enriquecer e modificar dados {#enriching-and-modifying-data}
 
 Além do targeting dimension, a dimensão de filtro permite especificar a natureza dos dados coletados. Consulte [Direcionamento e dimensões de filtragem](building-a-workflow.md#targeting-and-filtering-dimensions).
 

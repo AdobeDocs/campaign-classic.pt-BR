@@ -1,19 +1,17 @@
 ---
 product: campaign
-title: Sobre os modelos
-description: Sobre os modelos
-audience: delivery
-content-type: reference
-topic-tags: using-delivery-templates
+title: Sobre modelos
+description: Introdução a modelos de entrega
+feature: Delivery Templates
 exl-id: d943898c-06fe-451d-aa28-8a95665f4112
-source-git-commit: 8b970705f0da6a9e09de9fadb3e1a8c5f4814f9f
+source-git-commit: f05eefc9945c4ead89eb448b6e28c3523559e055
 workflow-type: tm+mt
-source-wordcount: '274'
-ht-degree: 100%
+source-wordcount: '276'
+ht-degree: 94%
 
 ---
 
-# Sobre os modelos{#about-templates}
+# Sobre modelos{#about-templates}
 
 ![](../../assets/common.svg)
 
@@ -35,4 +33,4 @@ Há dois tipos de templates:
 
 >[!NOTE]
 >
->Os templates disponíveis dependem dos direitos de acesso, da sua configuração de instância e do contexto. Por exemplo, ao criar um serviço de informações, é possível vincular um template de delivery para mensagens de confirmação: você pode então acessar apenas os modelos cujo target mapping é o mapeamento de subscrição. Para obter mais informações, consulte [Selecionar um target mapping](selecting-a-target-mapping.md) e [Sobre serviços e assinaturas](about-services-and-subscriptions.md).
+>Os templates disponíveis dependem dos direitos de acesso, da sua configuração de instância e do contexto. Por exemplo, ao criar um serviço de informações, é possível vincular um template de delivery para mensagens de confirmação: você pode então acessar apenas os modelos cujo target mapping é o mapeamento de subscrição. Para obter mais informações, consulte [Selecionar target mapping](selecting-a-target-mapping.md) e [Serviços e assinaturas](about-services-and-subscriptions.md).

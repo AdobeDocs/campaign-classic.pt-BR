@@ -1,19 +1,16 @@
 ---
 product: campaign
-title: Acesso a um banco de dados externo
-description: Acesso a um banco de dados externo
-audience: platform
-content-type: reference
-topic-tags: connectors
+title: Definir mapeamento de dados externos
+description: Saiba como mapear dados em um banco de dados externo
 exl-id: a7253ca7-47e5-4def-849d-3ce1c9b948fb
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: 3af4f259b80b3e03c81ee278b470ef6ffe3fe4d0
 workflow-type: tm+mt
-source-wordcount: '188'
-ht-degree: 100%
+source-wordcount: '194'
+ht-degree: 91%
 
 ---
 
-# Definição do mapeamento de dados {#defining-data-mapping}
+# Definir mapeamento de dados externos {#defining-data-mapping}
 
 ![](../../assets/v7-only.svg)
 
