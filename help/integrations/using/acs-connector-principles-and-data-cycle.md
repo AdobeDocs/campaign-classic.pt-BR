@@ -1,23 +1,19 @@
 ---
 product: campaign
-title: Princípios do conector ACS e ciclo de dados
+title: Introdução ao ACS Connector
 description: Princípios do conector ACS e ciclo de dados
-audience: integrations
-content-type: reference
-topic-tags: acs-connector
+feature: ACS Connector
 exl-id: 689b6117-5143-4f85-8582-2c74cae72ca2
-source-git-commit: f007dcbf63d7a69a6d532d0be99b0fa90f4f6d7a
+source-git-commit: c54102b2ec32fbea89ce41dd3c9fedb98e612996
 workflow-type: tm+mt
-source-wordcount: '1988'
-ht-degree: 100%
+source-wordcount: '1985'
+ht-degree: 96%
 
 ---
 
-# Princípios do conector ACS e ciclo de dados{#acs-connector-principles-and-data-cycle}
+# Introdução ao ACS Connector{#acs-connector-gs}
 
 ![](../../assets/v7-only.svg)
-
-## Introdução {#introduction}
 
 O ACS Connector conecta o Adobe Campaign v7 e o Adobe Campaign Standard. É um recurso integrado no Campaign v7 que replica automaticamente os dados no Campaign Standard, unindo o melhor das duas aplicações. O Campaign v7 tem ferramentas avançadas para gerenciar o banco de dados de marketing principal. A replicação de dados do Campaign v7 permite que o Campaign Standard potencialize os dados avançados em um ambiente simples.
 
@@ -37,9 +33,9 @@ Este documento apresenta os recursos do ACS Connector. As seções abaixo fornec
 
 * [Process](#process): visão geral do ACS Connector e como a replicação de dados é gerenciada.
 * [Implementation](#implementation): visão geral de como começar a usar o ACS Connector, bem como instruções sobre como replicar dados básicos e avançados.
-* [Synchronizing profiles](../../integrations/using/synchronizing-profiles.md): instruções sobre como replicar perfis e como criar deliveries com eles.
-* [Synchronizing audiences](../../integrations/using/synchronizing-audiences.md): instruções sobre como direcionar uma lista de recipients no Campaign v7 e, em seguida, replicar a lista para o Campaign Standard como um público.
-* [Synchronizing web applications](../../integrations/using/synchronizing-web-applications.md): instruções sobre como vincular aplicações web do Campaign v7 ao Campaign Standard.
+* [Sincronizar perfis](../../integrations/using/synchronizing-profiles.md): Instruções sobre como replicar perfis e como criar deliveries com eles.
+* [Sincronizar públicos](../../integrations/using/synchronizing-audiences.md): Instruções sobre como direcionar uma lista de recipients no Campaign v7 e depois replicar a lista para o Campaign Standard como um público.
+* [Sincronizar aplicações Web](../../integrations/using/synchronizing-web-applications.md): Instruções sobre como vincular aplicações Web do Campaign v7 ao Campaign Standard.
 * [Troubleshooting the ACS Connector](../../integrations/using/troubleshooting-the-acs-connector.md): analise as respostas para problemas comuns.
 
 >[!NOTE]
@@ -87,7 +83,7 @@ O ACS Connector sincroniza quarentenas entre o Campaign v7 e o Campaign Standard
 
 Por exemplo, um perfil que foi replicado do Campaign v7 para o Campaign Standard inclui um endereço de email. Se o endereço de email for colocado em quarentena pelo Campaign Standard, os dados serão passados para o Campaign v7 durante a próxima sincronização. Para obter mais informações sobre quarentenas, consulte a [Gestão de quarentena](../../delivery/using/understanding-quarantine-management.md) e [Quarentenas do Campaign Standard](https://experienceleague.adobe.com/docs/campaign-standard/using/testing-and-sending/monitoring-messages/understanding-quarantine-management.html?lang=pt-BR).
 
-### Uso de perfis replicados {#using-replicated-profiles}
+### Usar perfis replicados {#using-replicated-profiles}
 
 Os perfis replicados podem ser usados pelo Campaign Standard e o Campaign v7 para workflows para construção do target em campanhas de marketing.
 
@@ -101,7 +97,7 @@ Os perfis replicados estão prontamente disponíveis para deliveries, mas têm d
 * **Perfis criados no Campaign Standard**: o Conector ACS replica os dados do recipient em uma direção, do Campaign v7 para o Campaign Standard. Portanto, os perfis originados no Campaign Standard não são replicados para o Campaign v7.
 * **Dados básicos do recipient para o Campaign Standard**: o Conector ACS replica dados do recipient adequados para o Campaign Standard. Ele inclui nomes de recipients, endereços, endereços de email, números de celular, números de telefone fixo e outras informações de contato pertinentes. Se campos de recipients adicionais e tabelas de target personalizadas disponíveis no Campaign v7 forem decisivos para o seu workflow, entre em contato com seu consultor.
 * **Importação de perfis em quarentena**: listas de perfis que não desejam ser contatados podem ser importadas para o Campaign v7 ou para o Campaign Standard como perfis em quarentena. O status dos perfis está incluído na sincronização de quarentena entre aplicações e eles não serão usados nos deliveries.
-* **Cancelar a assinatura de um serviço no Campaign Standard**: a opção de cancelar a assinatura de um delivery não é sincronizada do Campaign Standard para o Campaign v7. No entanto, você pode configurar um delivery no Campaign Standard para direcionar seu link de unsubscription para o Campaign v7. O perfil de um recipient que clica no link de unsubscription é atualizado no Campaign v7 e os dados são replicados para o Campaign Standard. Consulte [Alteração do link de cancelamento de subscrição](../../integrations/using/synchronizing-profiles.md#changing-the-unsubscription-link).
+* **Cancelar a assinatura de um serviço no Campaign Standard**: a opção de cancelar a assinatura de um delivery não é sincronizada do Campaign Standard para o Campaign v7. No entanto, você pode configurar um delivery no Campaign Standard para direcionar seu link de unsubscription para o Campaign v7. O perfil de um recipient que clica no link de unsubscription é atualizado no Campaign v7 e os dados são replicados para o Campaign Standard. Consulte [Alterar o link de cancelamento de subscrição](../../integrations/using/synchronizing-profiles.md#changing-the-unsubscription-link).
 * Somente os broadlogs de e-mail e os logs de rastreamento são replicados do Campaign Standard para o Campaign v7.
 
 ### Faturamento {#billing}
@@ -122,7 +118,7 @@ A **implementação básica** permite replicar recipients (campos prontos para u
 
 A **implementação avançada** permitirá executar casos de uso mais complexos, por exemplo, se tiver campos de recipients adicionais ou tabelas de recipients personalizados (tabela de transações por exemplo). Consulte [Implementação avançada](#advanced-implementation).
 
-### Instalação do pacote {#installing-the-package}
+### Instalar o pacote {#installing-the-package}
 
 Para usar o recurso, o pacote **[!UICONTROL ACS Connector]** precisa ser instalado. Isso é sempre realizado pelo administrador técnico ou consultor da Adobe.
 

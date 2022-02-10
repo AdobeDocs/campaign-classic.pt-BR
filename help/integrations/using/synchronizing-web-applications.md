@@ -1,19 +1,17 @@
 ---
 product: campaign
-title: Sincronização de aplicações Web
-description: Sincronização de aplicações Web
-audience: integrations
-content-type: reference
-topic-tags: acs-connector
+title: Sincronizar aplicativos web
+description: Saiba como sincronizar aplicativos Web com o ACS Connector
+feature: ACS Connector
 exl-id: 975bdc94-5da4-45ae-a3bd-e8674b447098
-source-git-commit: 8b970705f0da6a9e09de9fadb3e1a8c5f4814f9f
+source-git-commit: c54102b2ec32fbea89ce41dd3c9fedb98e612996
 workflow-type: tm+mt
-source-wordcount: '794'
-ht-degree: 100%
+source-wordcount: '801'
+ht-degree: 96%
 
 ---
 
-# Sincronização de aplicações Web{#synchronizing-web-applications}
+# Sincronizar aplicativos web{#synchronizing-web-applications}
 
 ![](../../assets/v7-only.svg)
 
@@ -25,11 +23,11 @@ Se você tiver muitos serviços e aplicações Web no Campaign v7, talvez opte p
 
 Para isso, é necessário:
 
-* Os recipients armazenados no banco de dados do Campaign v7 e sincronizados com o Campaign Standard. Consulte a seção [Sincronia de perfis](../../integrations/using/synchronizing-profiles.md).
+* Os recipients armazenados no banco de dados do Campaign v7 e sincronizados com o Campaign Standard. Consulte a [Sincronizar perfis](../../integrations/using/synchronizing-profiles.md) seção.
 * um serviço e uma aplicação Web criado e publicado no Campaign v7.
 * o aplicativo web deve conter uma atividade **[!UICONTROL Pre-loading]** usando o método de identificação **[!UICONTROL Adobe Campaign encryption]**.
 
-## Criação do serviço e aplicativo web {#creating-the-web-application-and-service}
+## Criar a aplicação web e o serviço {#creating-the-web-application-and-service}
 
 No Campaign v7, você pode criar aplicações Web que permitem aos recipients assinar um serviço. Os serviço e aplicação Web foram projetados e armazenados no Campaign v7 e você pode atualizar esse serviço por uma comunicação no Campaign Standard. Para obter mais informações sobre aplicações Web no Campaign v7, consulte [esta seção](../../web/using/adding-fields-to-a-web-form.md#subscription-checkboxes).
 
@@ -58,7 +56,7 @@ No Campaign v7, os seguintes objetos foram criados:
 
    ![](assets/acs_connect_lp_6.png)
 
-## Replicação de dados {#replicating-the-data}
+## Replicar os dados {#replicating-the-data}
 
 Para replicar os dados necessários entre o Campaign v7 e o Campaign Standard, vários modelos de fluxo de trabalho de replicação estão disponíveis. O workflow **[!UICONTROL Profiles replication]** replica automaticamente todos os recipients do Campaign v7 para o Campaign Standard. Consulte [Workflows técnicos e de replicação](../../integrations/using/acs-connector-principles-and-data-cycle.md#technical-and-replication-workflows). O workflow **[!UICONTROL Landing pages replication]** permite a replicação dos aplicativos web que queremos usar no Campaign Standard.
 
@@ -82,11 +80,11 @@ Para verificar se os dados foram replicados corretamente, siga essas etapas no C
 
    ![](assets/acs_connect_lp_10.png)
 
-## Design e envio de email {#designing-and-sending-the-email}
+## Projetar e enviar o email {#designing-and-sending-the-email}
 
 Nessa parte, veremos como incluir um link, em um email do Campaign Standard, na landing page replicada de uma aplicação Web do Campaign v7.
 
-As etapas para criar, projetar e enviar o email são iguais de um email clássico. Consulte a documentação do [Adobe Campaign Standard](https://helpx.adobe.com/br/support/campaign/standard.html) .
+As etapas para criar, projetar e enviar o email são iguais de um email clássico. Consulte a documentação do [Adobe Campaign Standard](https://experienceleague.adobe.com/docs/campaign-standard/using/campaign-standard-home.html?lang=pt-BR) .
 
 1. Crie um novo email e escolha um ou mais perfis replicados como o público.
 1. Editar seu conteúdo e inserir um **[!UICONTROL Link to a landing page]**.
