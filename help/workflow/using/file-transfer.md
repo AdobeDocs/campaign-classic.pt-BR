@@ -6,10 +6,10 @@ audience: workflow
 content-type: reference
 topic-tags: event-activities
 exl-id: 8025d207-3bc0-400f-b6a4-a72765e5a9d2
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: 47cc5bc2f16ea87b6a12f6bf500c1e8d1f406876
 workflow-type: tm+mt
-source-wordcount: '549'
-ht-degree: 100%
+source-wordcount: '570'
+ht-degree: 96%
 
 ---
 
@@ -81,7 +81,7 @@ O link **[!UICONTROL Advanced parameters...]** permite acessar as seguintes opç
 
 * **[!UICONTROL Delete the source files after transfer]**
 
-   Apaga os arquivos no servidor remoto.
+   Apaga os arquivos no servidor remoto. Se deixar essa opção desmarcada, monitore manualmente o tamanho do conteúdo arquivado no diretório SFTP.
 
 * **[!UICONTROL Use SSL]**
 

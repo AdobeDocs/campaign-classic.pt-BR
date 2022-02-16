@@ -3,9 +3,9 @@ product: campaign
 title: Migrar para o Adobe Analytics Connector
 description: Campaign - Perguntas frequentes sobre o conector do Analytics
 exl-id: 5bf61654-3d68-4560-a93f-7a768a2c5be4
-source-git-commit: d11c918213e72fe4bf6adb464e516fac19b63d54
+source-git-commit: c072cb5b2d33f93ff395e4670507744b0d20c9bc
 workflow-type: tm+mt
-source-wordcount: '855'
+source-wordcount: '814'
 ht-degree: 6%
 
 ---
@@ -27,8 +27,6 @@ Você **deve implementar** a nova integração do Adobe Analytics Connector no A
 ## O que mudou?
 
 Uma nova integração entre o Campaign Classic v7 e o Adobe Analytics está disponível. As alterações importantes estão listadas abaixo.
-
-* A integração entre a autenticação Adobe Campaign Classic e Adobe Analytics foi movida de usuário/senha para Adobe Identity Management Service (IMS). Como consequência, você deve implementar o Adobe IMS e se conectar ao Campaign [por meio de uma Adobe ID](../../integrations/using/about-adobe-id.md), antes de iniciar a implementação do Analytics Connector.
 
 * O **Data de contato** A classificação, que costumava ser do tipo data, foi descontinuada pelo Adobe Analytics. Para integrações migradas, elas ainda permanecerão do mesmo tipo. Para qualquer **Data de contato** criado pelo Campaign, o tipo será **String**.
 
@@ -87,7 +85,7 @@ A solução é atualizar a variável **Perfil de produto** no Contexto de usuár
 ## Links úteis
 
 * [Atualizar seu ambiente](../../production/using/build-upgrade.md)
-* [Perguntas frequentes de atualização de build](../../platform/using/faq-build-upgrade.md)
+* [Perguntas frequentes sobre atualização de build](../../platform/using/faq-build-upgrade.md)
 * [Baixar a build do Campaign Classic](https://experience.adobe.com/#/downloads/content/software-distribution/br/campaign.html)
 * [Disponibilizar o novo Console do cliente para os usuários](../../installation/using/client-console-availability-for-windows.md)
 * [Instalar o console do cliente do Campaign](../../installation/using/installing-the-client-console.md)

@@ -3,10 +3,10 @@ product: campaign
 title: Envio com o MTA aprimorado no Adobe Campaign Classic
 description: Saiba mais sobre o escopo e as especificidades do envio de emails com o MTA aprimorado do Adobe Campaign
 exl-id: 58cc23f4-9ab0-45c7-9aa2-b08487ec7e91
-source-git-commit: 1e11b7419388698f5de366cbeddf2be88ef12873
+source-git-commit: 8ac6cddad04d1142b84a735ab8083e732c17714b
 workflow-type: tm+mt
-source-wordcount: '1921'
-ht-degree: 100%
+source-wordcount: '1946'
+ht-degree: 98%
 
 ---
 
@@ -135,6 +135,10 @@ Para obter mais informações sobre qualificação de rejeição, consulte [esta
 O gráfico de taxa de transferência de delivery do Campaign não exibirá mais a taxa de transferência para os recipients de email. Ele mostrará a velocidade da taxa de transferência da transmissão de suas mensagens do Campaign para o MTA aprimorado.
 
 Para obter mais informações sobre a taxa de transferência do delivery, consulte [esta seção](../../reporting/using/global-reports.md#delivery-throughput).
+
+>[!NOTE]
+>
+>Com o [Serviço de feedback de email](#email-feedback-service) (EFS) (atualmente disponível como beta), o gráfico de taxa de transferência de Delivery de campanha ainda mostra a taxa de transferência para seus destinatários de email.
 
 ### Período de validade
 

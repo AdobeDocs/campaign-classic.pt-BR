@@ -6,9 +6,9 @@ audience: workflow
 content-type: reference
 topic-tags: use-cases
 exl-id: 5e77d196-5c71-438e-8dae-10c6a6e4f29c
-source-git-commit: f000cb8bae164c22d1ede15db4e763cf50530674
-workflow-type: ht
-source-wordcount: '518'
+source-git-commit: 1a4fd75a90667e57149772497a7b1bd14b251db3
+workflow-type: tm+mt
+source-wordcount: '504'
 ht-degree: 100%
 
 ---
@@ -43,9 +43,8 @@ Para entender melhor o que cada workflow técnico deve realizar, consulte esta [
 
 Para **[!UICONTROL Database Cleanup workflow (‘cleanup’)]**:
 
-1. Verifique se o workflow **[!UICONTROL Database Cleanup]** é executado e finalizado com êxito todos os dias. Para obter mais informações, consulte esta [página](delivery.md).
+1. Verifique se o workflow **[!UICONTROL Database Cleanup]** é executado e finalizado com êxito todos os dias. Para obter mais informações, consulte esta [página](../../production/using/database-cleanup-workflow.md)..
 1. Examine o journal para verificar se o tempo decorrido é relativamente constante ao longo do tempo e não interfere em outros workflows.
-1. Para obter mais informações, consulte esta [página](../../production/using/database-cleanup-workflow.md).
 
 Para **[!UICONTROL Tracking workflow (‘tracking’)]**:
 
@@ -53,7 +52,7 @@ Verifique se o workflow de rastreamento é executado como agendado (a cada hora 
 
 Para **[!UICONTROL Deliverability update (‘deliverabilityUpdate’)]**:
 
-1. Verifique se o workflow **[!UICONTROL Deliverability update]** é executado e finalizado com êxito todos os dias. Para obter mais informações, consulte esta [página](delivery.md).
+1. Verifique se o workflow **[!UICONTROL Deliverability update]** é executado e finalizado com êxito todos os dias.
 1. Verifique no journal se as regras estão sendo atualizadas regularmente.
 
 Para **[!UICONTROL Campaign process ('operationMgt', 'deliveryMgt', ...)]**:
