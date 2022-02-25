@@ -5,7 +5,7 @@ description: Saiba mais sobre o conector SMS e como configurá-lo
 feature: SMS
 exl-id: fded088a-11a2-4b87-a368-7b197334aca4
 source-git-commit: 1e11b7419388698f5de366cbeddf2be88ef12873
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '8460'
 ht-degree: 100%
 
@@ -857,7 +857,7 @@ Verifique se `BIND_* PDUs` foram enviados corretamente. O item mais importante a
 
 Verifique se não há muitos `BIND_* PDU`s. Se houver muitos deles, isso poderá indicar que a conexão é instável. Consulte a seção [Problemas com conexões instáveis](sms-protocol.md#issues-unstable-connection) para obter mais informações.
 
-#### INQUIRE_LINK {#enquire-link-pdus}
+#### ENQUIRE_LINK {#enquire-link-pdus}
 
 Verifique se os `ENQUIRE_LINK PDU`s são trocados regularmente quando a conexão está ociosa.
 
