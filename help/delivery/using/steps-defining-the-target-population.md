@@ -1,17 +1,17 @@
 ---
 product: campaign
-title: Definir o público-alvo
-description: Saiba como definir a população do target
+title: Definir a população alvo
+description: Saiba como definir a população alvo
 feature: Audiences, Proofs
 exl-id: d0ed7be7-3147-4cb8-9ce7-ea51602e9048
 source-git-commit: f05eefc9945c4ead89eb448b6e28c3523559e055
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1598'
-ht-degree: 94%
+ht-degree: 100%
 
 ---
 
-# Definir o público-alvo {#defining-the-target-population}
+# Definir a população alvo {#defining-the-target-population}
 
 ![](../../assets/common.svg)
 
@@ -22,7 +22,7 @@ Para cada delivery, você poderá definir vários tipos de populações do targe
 * **Seed addresses**: recipients que estão fora do target do delivery, mas receberão o delivery (somente no contexto de uma campanha de marketing). [Saiba mais](about-seed-addresses.md)
 * **Grupos de controle**: população que não receberá o delivery, usado para rastrear o comportamento e o impacto da campanha (somente no contexto de uma campanha de marketing). [Saiba mais](../../campaign/using/marketing-campaign-target.md#defining-a-control-group).
 
-## Selecione os principais recipients do delivery {#selecting-the-main-target}
+## Selecionar os principais recipients do delivery {#selecting-the-main-target}
 
 Na maioria dos casos, o público-alvo principal é extraído do banco de dados do Adobe Campaign (modo padrão). No entanto, os recipients também podem ser armazenados em um arquivo externo. Saiba mais [nesta seção](steps-defining-the-target-population.md#selecting-external-recipients).
 
@@ -35,7 +35,7 @@ Para selecionar os recipients do delivery, siga as etapas abaixo:
 
 1. Selecione o target mapping na lista suspensa **[!UICONTROL Target mapping]**. O target mapping padrão do Adobe Campaign é **[!UICONTROL Recipients]**, com base no schema **nms:recipient**.
 
-   Outros target mappings estão disponíveis e alguns podem ser relacionados à sua configuração específica. Para obter mais informações sobre target mappings, consulte [Selecionar target mapping](selecting-a-target-mapping.md).
+   Outros target mappings estão disponíveis e alguns podem ser relacionados à sua configuração específica. Para obter mais informações sobre target mappings, consulte [Selecionar um target mapping](selecting-a-target-mapping.md).
 
 1. Clique no botão **[!UICONTROL Add]** para definir os filtros de restrição.
 
@@ -83,7 +83,7 @@ Para selecionar os recipients do delivery, siga as etapas abaixo:
 
    ![](assets/s_ncs_user_wizard_email02h.png)
 
-### Selecionar destinatários externos {#selecting-external-recipients}
+### Selecionar recipients externos {#selecting-external-recipients}
 
 Você poderá iniciar um delivery nos recipients que não estão salvos no banco de dados, mas armazenados em um arquivo externo. Por exemplo, enviaremos aqui um delivery para os recipients importados de um arquivo de texto.
 
@@ -94,7 +94,7 @@ Para fazer isso:
 
    ![](assets/s_ncs_user_wizard_external_recipients.png)
 
-1. Por padrão, os recipients são importados do banco de dados. Você deverá selecionar o **[!UICONTROL Target mapping]**. Para obter mais informações sobre target mappings, consulte [Selecionar target mapping](selecting-a-target-mapping.md)
+1. Por padrão, os recipients são importados do banco de dados. Você deverá selecionar o **[!UICONTROL Target mapping]**. Para obter mais informações sobre target mappings, consulte [Selecionar um target mapping](selecting-a-target-mapping.md)
 
    Você também pode escolher **[!UICONTROL Do not import the recipients into the database]**.
 
@@ -152,7 +152,7 @@ As seguintes opções estão disponíveis:
 
 * **[!UICONTROL Limit delivery]** para um determinado número de mensagens. Essa opção permite que você insira o número máximo de mensagens a serem enviadas. Se o conteúdo do target exceder o número de mensagens indicadas, uma seleção aleatória será aplicada ao target.
 
-### Reduza o tamanho da população do target {#reducing-the-size-of-the-target-population}
+### Reduzir o tamanho da população alvo {#reducing-the-size-of-the-target-population}
 
 É possível reduzir o tamanho da população do target. Para fazer isso, especifique o número de recipients a serem exportados no campo **[!UICONTROL Requested quantity]**.
 
@@ -175,11 +175,11 @@ Para selecionar o target das provas, siga as etapas abaixo:
 >
 >Normalmente, o target da prova poderá ser adicionado ao target principal. Para fazer isso, selecione a opção apropriada na seção inferior da guia **[!UICONTROL Main target]**.
 
-## Definir um target de prova específico {#defining-a-specific-proof-target}
+## Definir público alvo específico da prova {#defining-a-specific-proof-target}
 
 Ao selecionar o target da prova, a opção **[!UICONTROL Definition of a specific proof target]** permite selecionar os recipients da prova nos perfis do banco de dados.
 
-Selecione essa opção para escolher os recipients usando o botão **[!UICONTROL Add]**, como no caso de definição do target principal. Consulte [Selecione o target principal](steps-defining-the-target-population.md#selecting-the-main-target).
+Selecione essa opção para escolher os recipients usando o botão **[!UICONTROL Add]**, como no caso de definição do target principal. Consulte [Selecionar público alvo principal](steps-defining-the-target-population.md#selecting-the-main-target).
 
 ![](assets/s_ncs_user_wizard_email01_143.png)
 
@@ -223,9 +223,9 @@ Você poderá combinar a definição de um target de prova específico e o uso d
 
 Consulte também:
 
-* [Seleção do público alvo da prova](#selecting-the-proof-target)
+* [Selecionar o público alvo da prova](#selecting-the-proof-target)
 * [Sobre seed addresses](about-seed-addresses.md)
-* [Caso de uso: selecionar seed addresses de acordo com os critérios](use-case--selecting-seed-addresses-on-criteria.md)
+* [Caso de uso: selecionar seed addresses de acordo com critérios](use-case--selecting-seed-addresses-on-criteria.md)
 
 ## Tutorial em vídeo {#seeds-and-proofs-video}
 
