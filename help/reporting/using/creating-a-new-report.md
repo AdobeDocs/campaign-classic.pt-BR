@@ -4,9 +4,9 @@ title: Criação de um novo relatório
 description: Conheça as principais etapas para criar um novo relatório
 exl-id: 4c2aad47-0e2d-4d0b-8898-b437f4a05e11
 source-git-commit: 81716a30a57d3ed8542b329d5fb9b0443fd4bf31
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '923'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
@@ -36,7 +36,7 @@ Para criar um relatório, siga as etapas abaixo:
 
 1. Salve este relatório.
 
-## Modelo do gráfico {#modelizing-the-chart}
+## Modelar o gráfico {#modelizing-the-chart}
 
 Depois de salvar o relatório, isso deve ser exibido. Agora é possível criar o gráfico do relatório.
 
@@ -56,11 +56,11 @@ Para criar um relatório, dependendo da natureza e do contexto, é preciso ident
 
    Isso é obrigatório se o gráfico incluir um loop.
 
-1. Adicione uma ou mais atividades **[!UICONTROL Query]** para coletar dados úteis para a criação do relatório. Os dados podem ser coletados diretamente por uma query em um schema do banco de dados ou através de uma lista importada ou de um Cubo existente.
+1. Adicione uma ou mais atividades **[!UICONTROL Query]** para coletar dados úteis para a criação do relatório. Os dados podem ser coletados diretamente por uma consulta em um esquema do banco de dados ou por uma lista importada ou de um Cubo existente.
 
    Para obter mais informações, consulte [Coletar dados para analisar](../../reporting/using/collecting-data-to-analyze.md).
 
-   Esses dados serão exibidos (ou não) no relatório dependendo da configuração da página.
+   Esses dados serão exibidos (ou não) no relatório, dependendo da configuração da página.
 
 1. Coloque uma ou mais atividades **[!UICONTROL Page]** para definir a representação gráfica dos dados coletados. É possível inserir tabelas, gráficos, campos de entrada e condição de uma ou mais páginas ou elementos da página. O conteúdo exibido é totalmente configurável.
 
@@ -88,7 +88,7 @@ No entanto, é possível colocar várias ramificações. Somente uma delas será
 
 ## Criar uma página {#creating-a-page}
 
-O conteúdo é configurado através das atividades colocadas no gráfico. Para obter mais informações, consulte [Modelar o gráfico](#modelizing-the-chart).
+O conteúdo é configurado por meio das atividades colocadas no gráfico. Para obter mais informações, consulte [Modelar o gráfico](#modelizing-the-chart).
 
 Para configurar uma atividade, clique duas vezes em seu ícone.
 
