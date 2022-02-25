@@ -4,7 +4,7 @@ title: Como configurar links rastreados
 description: Como configurar links rastreados
 exl-id: ed88e1d6-c0d5-4a85-9f3e-be670f4bcc10
 source-git-commit: 56459b188ee966cdb578c415fcdfa485dcbed355
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '582'
 ht-degree: 100%
 
