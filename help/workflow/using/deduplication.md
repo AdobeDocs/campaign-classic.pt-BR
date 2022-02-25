@@ -5,7 +5,7 @@ description: Saiba mais sobre a atividade de workflow de desduplicação
 feature: Workflows, Data Management
 exl-id: 38add4fe-6238-45de-863e-895ebca189b7
 source-git-commit: f05eefc9945c4ead89eb448b6e28c3523559e055
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1089'
 ht-degree: 100%
 
