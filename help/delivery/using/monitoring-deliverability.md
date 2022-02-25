@@ -5,19 +5,19 @@ description: Saiba mais sobre as ferramentas e as diretrizes sobre o monitoramen
 feature: Deliverability
 exl-id: e4caa316-242f-46cd-a20b-a5eee5a0c456
 source-git-commit: 56459b188ee966cdb578c415fcdfa485dcbed355
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '533'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
-# Monitorar a capacidade de entrega{#monitoring-deliverability}
+# Monitorar a capacidade de delivery{#monitoring-deliverability}
 
 ![](../../assets/common.svg)
 
-Abaixo você encontrará detalhes sobre as diferentes ferramentas de monitoramento fornecidas pelo Adobe Campaign, bem como algumas diretrizes adicionais sobre como aproveitar os recursos oferecidos pelo Adobe Campaign para monitorar a capacidade de entrega de sua plataforma.
+Abaixo você encontrará detalhes sobre as diferentes ferramentas de monitoramento fornecidas pelo Adobe Campaign, bem como algumas diretrizes adicionais sobre como aproveitar os recursos oferecidos pelo Adobe Campaign para monitorar a capacidade de delivery da sua plataforma.
 
-## Sobre o monitoramento da capacidade de entrega {#about-deliverability-monitoring}
+## Sobre o monitoramento da capacidade de delivery {#about-deliverability-monitoring}
 
 Esse recurso está disponível por meio de um pacote dedicado no Adobe Campaign. Para usá-lo, esse pacote deve ser instalado. Depois de concluído, reinicie o servidor para que o pacote seja considerado.
 * Para clientes hospedados e híbridos, a opção **Deliverability monitoring** é configurada em sua instância pelo suporte técnico e consultores da Adobe. Para obter mais informações, entre em contato com o executivo da sua conta Adobe.
