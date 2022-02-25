@@ -1,12 +1,12 @@
 ---
 product: campaign
 title: Automatizar via workflows
-description: Saiba como automatizar o gerenciamento de conteúdo por meio de fluxos de trabalho
+description: Saiba como automatizar o gerenciamento de conteúdo por meio de workflows
 exl-id: bc6ebf5d-cc21-4750-9713-2bf259e7d6bf
 source-git-commit: f05eefc9945c4ead89eb448b6e28c3523559e055
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1190'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
