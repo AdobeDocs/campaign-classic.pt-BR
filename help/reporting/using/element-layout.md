@@ -4,9 +4,9 @@ title: Layout do elemento
 description: Layout do elemento
 exl-id: 79d5c901-905b-4a0e-adb9-91fd6acb186f
 source-git-commit: 81716a30a57d3ed8542b329d5fb9b0443fd4bf31
-workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+workflow-type: ht
+source-wordcount: '415'
+ht-degree: 100%
 
 ---
 
@@ -14,7 +14,7 @@ ht-degree: 0%
 
 ![](../../assets/common.svg)
 
-Além dos diversos gráficos detalhados [here](../../reporting/using/creating-a-chart.md#chart-types-and-variants), é possível adaptar a exibição e adicionar elementos às páginas do relatório.
+Além dos diversos gráficos detalhados [aqui](../../reporting/using/creating-a-chart.md#chart-types-and-variants), é possível adaptar a exibição e adicionar elementos à(s) página(s) do relatório.
 
 É possível usar containers: eles permitem vincular vários elementos de uma página e configurar o layout em colunas e/ou células. Como usá-los está detalhado [nesta seção](../../web/using/defining-web-forms-layout.md#creating-containers).
 
