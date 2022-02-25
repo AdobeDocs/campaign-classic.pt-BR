@@ -1,16 +1,16 @@
 ---
 product: campaign
 title: Envio de emails em celulares japoneses com o Adobe Campaign Classic
-description: Saiba como configurar, projetar e enviar emails que serão lidos em um dispositivo móvel japonês
+description: Saiba como configurar, criar e enviar emails que serão lidos em um dispositivo móvel japonês
 exl-id: 44634227-2340-49c4-b330-740c739ea551
 source-git-commit: 1e11b7419388698f5de366cbeddf2be88ef12873
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '759'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
-# Enviar emails em celulares japoneses {#sending-emails-on-japanese-mobiles}
+# Enviar emails em dispositivos móveis japoneses {#sending-emails-on-japanese-mobiles}
 
 ![](../../assets/common.svg)
 
