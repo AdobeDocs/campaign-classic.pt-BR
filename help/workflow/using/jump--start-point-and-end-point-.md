@@ -7,9 +7,9 @@ content-type: reference
 topic-tags: flow-control-activities
 exl-id: 0d2d04e7-cb86-4456-b7cf-513c71210355
 source-git-commit: 3b523e53440ba6ae107b597c7ebf226195126bde
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '116'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -31,4 +31,4 @@ Para cada transição de tipo &quot;ponto inicial&quot;, uma transição de tipo
 
 ![](assets/s_user_segmentation_jump_in.png)
 
-Para melhorar a legibilidade do diagrama, é possível alterar a imagem associada aos saltos para exibir o número relacionado. Consulte [Alterar imagens de atividade](managing-activity-images.md).
+Para melhorar a legibilidade do diagrama, é possível alterar a imagem associada aos saltos para exibir o número relacionado. Consulte [Alterar imagens de atividades](managing-activity-images.md).
