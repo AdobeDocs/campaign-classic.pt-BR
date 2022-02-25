@@ -5,9 +5,9 @@ description: Saiba mais sobre deliveries de campanha de marketing
 feature: Resource Management, Cross Channel Orchestration
 exl-id: 1dd3c080-444d-45f8-9562-d2d01a9d2860
 source-git-commit: 90c52ec144a6a3c1b534a80507e38fa3ed64fc83
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1487'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -51,7 +51,7 @@ As informações também aparecem no painel de campanha. O link **[!UICONTROL Co
 
 Uma mensagem de confirmação permite que você proteja esta ação.
 
-### Iniciar um delivery off-line {#starting-an-offline-delivery}
+### Iniciar um delivery offline {#starting-an-offline-delivery}
 
 Após todas as aprovações serem concedidas, o status do delivery será alterado para **[!UICONTROL Pending extraction]**. Os arquivos de extração são criados por um workflow especial, que em uma configuração padrão, inicia automaticamente quando um delivery de mala direta está com extração pendente. Quando um processo está em andamento, ele é exibido no painel e pode ser editado através do link.
 
@@ -63,7 +63,7 @@ Após todas as aprovações serem concedidas, o status do delivery será alterad
 
 Após executar o workflow de extração com sucesso, o arquivo de extração deve ser aprovado (fornecido de forma que a aprovação do arquivo de extração tenha sido selecionada nas configurações do delivery).
 
-Para obter mais informações, consulte [Aprovar um arquivo de extração](../../campaign/using/marketing-campaign-approval.md#approving-an-extraction-file).
+Para obter mais informações, consulte [Aprovação de um arquivo de extração](../../campaign/using/marketing-campaign-approval.md#approving-an-extraction-file).
 
 **Etapa 2 - Aprovação da mensagem para o provedor de serviços**
 
