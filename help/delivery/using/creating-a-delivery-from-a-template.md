@@ -1,16 +1,16 @@
 ---
 product: campaign
-title: Criar uma entrega de um modelo
-description: Saiba como criar um delivery a partir de um template
+title: Criar um delivery a partir de um modelo
+description: Saiba como criar um delivery a partir de um modelo
 exl-id: 7ffb649e-801f-4568-a86b-7982448e3c30
 source-git-commit: 56459b188ee966cdb578c415fcdfa485dcbed355
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '178'
-ht-degree: 83%
+ht-degree: 100%
 
 ---
 
-# Criar uma entrega de um modelo{#creating-a-delivery-from-a-template}
+# Criar um delivery a partir de um modelo{#creating-a-delivery-from-a-template}
 
 ![](../../assets/common.svg)
 
