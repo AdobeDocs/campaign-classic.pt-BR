@@ -5,9 +5,9 @@ description: Saiba como adicionar conteúdo condicional
 feature: Personalization, Multilingual Messages
 exl-id: 12595ee4-6a52-4e06-b80d-85fe633a5a11
 source-git-commit: f05eefc9945c4ead89eb448b6e28c3523559e055
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '482'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -20,7 +20,7 @@ Ao configurar campos de conteúdo condicional, você pode criar personalização
 ![](assets/do-not-localize/how-to-video.png) [Descubra este recurso no vídeo](#conditionnal-content-video)
 
 
-## Condições de uso em um email {#using-conditions-in-an-email}
+## Usar condições em um email {#using-conditions-in-an-email}
 
 No exemplo abaixo, você aprenderá a criar uma mensagem, personalizada dinamicamente no sexo e interesses do recipient.
 
