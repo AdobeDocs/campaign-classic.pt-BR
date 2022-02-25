@@ -1,16 +1,16 @@
 ---
 product: campaign
-title: Criar uma entrega de email
-description: Saiba como criar um delivery de email
+title: Criar um delivery por email
+description: Saiba como criar um delivery por email
 exl-id: 7f44e732-4257-4d2a-800c-bde847e20f52
 source-git-commit: 56459b188ee966cdb578c415fcdfa485dcbed355
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '98'
-ht-degree: 92%
+ht-degree: 100%
 
 ---
 
-# Criar uma entrega de email{#creating-an-email-delivery}
+# Criar um delivery por email{#creating-an-email-delivery}
 
 ![](../../assets/common.svg)
 
