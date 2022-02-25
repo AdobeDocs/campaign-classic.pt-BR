@@ -5,9 +5,9 @@ description: Saiba como usar blocos de personalização
 feature: Personalization
 exl-id: 8d155844-d18a-4165-9886-c3b144109f6e
 source-git-commit: 1e11b7419388698f5de366cbeddf2be88ef12873
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '861'
-ht-degree: 91%
+ht-degree: 100%
 
 ---
 
@@ -21,7 +21,7 @@ Os blocos de personalização são dinâmicos, personalizados e contêm uma rend
 
 Os blocos de personalização são acessados por meio do nó **[!UICONTROL Resources > Campaign Management > Personalization blocks]** do explorador do Adobe Campaign. Vários blocos estão disponíveis por padrão (consulte [Blocos de personalização prontos para uso](#out-of-the-box-personalization-blocks)).
 
-Você pode definir novos blocos que permitem otimizar a personalização dos deliveries. Para obter mais informações, consulte [Definir blocos de personalização personalizados](#defining-custom-personalization-blocks).
+Você pode definir novos blocos que permitem otimizar a personalização dos deliveries. Para saber mais, consulte [Definir blocos de personalização customizados](#defining-custom-personalization-blocks).
 
 >[!NOTE]
 >
@@ -36,7 +36,7 @@ Para inserir um bloco de personalização em uma mensagem, siga as etapas abaixo
 
    ![](assets/s_ncs_user_personalized_block01.png)
 
-1. O **[!UICONTROL Other...]** dá acesso a todos os blocos de personalização prontos para uso e personalizados (consulte [Blocos de personalização integrados](#out-of-the-box-personalization-blocks) e [Definir blocos de personalização personalizados](#defining-custom-personalization-blocks)).
+1. O menu **[!UICONTROL Other...]** permite o acesso a todos os blocos de personalização prontos para uso e customizados (consulte [Blocos de personalização prontos para uso](#out-of-the-box-personalization-blocks) e [Definir blocos de personalização customizados](#defining-custom-personalization-blocks)).
 
    ![](assets/s_ncs_user_personalized_block02.png)
 
@@ -68,7 +68,7 @@ Para fazer isso, precisamos inserir os seguintes blocos de personalização:
 
 >[!NOTE]
 >
->Para obter mais informações sobre a geração da mirror page, consulte [Gerar a mirror page](sending-messages.md#generating-the-mirror-page).
+>Para saber mais sobre a geração da mirror page, consulte [Gerar a mirror page](sending-messages.md#generating-the-mirror-page).
 
 1. Criar um novo delivery ou abrir um tipo de delivery de email existente.
 1. No assistente de delivery, clique em **[!UICONTROL Subject]** para editar e inserir o assunto da mensagem.
@@ -100,7 +100,7 @@ Uma lista de blocos de personalização está disponível por padrão para ajuda
 
    >[!NOTE]
    >
-   >Para obter mais informações sobre a geração da mirror page, consulte [Gerar a mirror page](sending-messages.md#generating-the-mirror-page).
+   >Para saber mais sobre a geração da mirror page, consulte [Gerar a mirror page](sending-messages.md#generating-the-mirror-page).
 
 * **[!UICONTROL Link to mirror page]**: insere um link para a mirror page (“Se você não conseguir visualizar esta mensagem corretamente, clique aqui”).
 * **[!UICONTROL Unsubscription link]**: insere um link que permite cancelar a inscrição de todos os deliveries (lista de bloqueios).
