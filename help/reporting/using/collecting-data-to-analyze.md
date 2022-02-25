@@ -4,9 +4,9 @@ title: Coletar dados para analisar
 description: Coletar dados para analisar
 exl-id: cf621374-88f9-4def-8bea-87e0ea69ecd3
 source-git-commit: 81716a30a57d3ed8542b329d5fb9b0443fd4bf31
-workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+workflow-type: ht
+source-wordcount: '503'
+ht-degree: 100%
 
 ---
 
@@ -30,7 +30,7 @@ Em todos os casos, os dados são coletados por meio de uma atividade tipo **[!UI
 
 Esse modo de seleção de dados é relevante quando os dados do relatório precisam ser coletados ou criados usando dados no banco de dados. Em alguns casos, também é possível selecionar os dados diretamente dos elementos usados no relatório. Por exemplo, ao inserir um gráfico, é possível selecionar os dados fonte diretamente. Para obter mais informações, consulte [Uso do contexto](../../reporting/using/using-the-context.md).
 
-## Usar os dados de um schema {#using-the-data-from-a-schema}
+## Usar os dados de um esquema {#using-the-data-from-a-schema}
 
 Para usar dados vinculados a um schema de banco de dados, selecione a opção apropriada no editor de query e configure a query a ser aplicada.
 
@@ -72,7 +72,7 @@ A opção **[!UICONTROL Filter with the folder]** permite especificar uma pasta 
 
 ![](assets/reporting_control_folder.png)
 
-### Limite a quantidade de dados coletados {#limiting-the-amount-of-data-collected}
+### Limitar a quantidade de dados coletados {#limiting-the-amount-of-data-collected}
 
 Configurar o número de registros a serem extraídos de uma consulta utilizando as opções de limitação de resultados:
 
