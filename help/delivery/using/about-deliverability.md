@@ -1,13 +1,13 @@
 ---
 product: campaign
-title: Introdução à capacidade de entrega no Campaign
-description: Saiba mais sobre as práticas recomendadas de delivery
+title: Introdução à capacidade de delivery no Campaign
+description: Saiba mais sobre as práticas recomendadas de capacidade de delivery
 feature: Deliverability
 exl-id: f301b34c-244c-4279-b23f-8224ea8eedbe
 source-git-commit: 56459b188ee966cdb578c415fcdfa485dcbed355
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '724'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -31,7 +31,7 @@ Os problemas de capacidade de delivery estão geralmente ligados às medidas de 
 
 >[!NOTE]
 >
->Como os ISPs são obrigados a desenvolver continuamente novas técnicas sofisticadas de filtragem para proteger seus clientes contra remetentes de spam, a capacidade de delivery de email é caracterizada por critérios e regras em constante mudança. Consulte o [Manual de práticas recomendadas de capacidade de delivery da Adobe](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/introduction.html), que é atualizado regularmente.
+>Como os ISPs são obrigados a desenvolver continuamente novas técnicas sofisticadas de filtragem para proteger seus clientes contra remetentes de spam, a capacidade de delivery de email é caracterizada por critérios e regras em constante mudança. Consulte o [Manual de práticas recomendadas de capacidade de delivery da Adobe](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/introduction.html?lang=pt-BR), que é atualizado regularmente.
 
 ### Taxa da capacidade de delivery
 
@@ -44,7 +44,7 @@ Com o Adobe Campaign, a taxa da capacidade de delivery depende de vários fatore
 * Reputação do endereço IP: consulte [Estratégia de IP](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/transition-process/infrastructure.html?lang=pt-BR#ip-strategy).
 * Qualidade dos endereços direcionados: consulte [Gerenciamento de quarentena](optimize-delivery.md#quarantine-management).
 * Baixas taxas de [reclamação](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/metrics-for-deliverability/complaints.html?lang=pt-BR) e [rejeição permanente](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/metrics-for-deliverability/bounces.html?lang=pt-BR#hard-bounces).
-* O conteúdo da mensagem: see [Controle o conteúdo do email](control-message-content.md).
+* Conteúdo da mensagem: consulte [Controlar o conteúdo do email](control-message-content.md).
 * Autenticação de mensagem (SPF, DKIM, DMARC): consulte [esta seção](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/transition-process/infrastructure.html?lang=pt-BR#authentication).
 * Reputação do remetente: para saber como os principais ISPs avaliam a reputação de um remetente, consulte [esta seção](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/internet-service-provider-specifics/overview.html?lang=pt-BR).
 
@@ -58,7 +58,7 @@ O Adobe Campaign fornece várias ferramentas para acompanhar e melhorar o desemp
 Ao configurar, projetar e testar sua mensagem, siga as práticas recomendadas mencionadas nas seções listadas abaixo. Aproveitar todos os recursos fornecidos pelo Adobe Campaign ajuda a melhorar a capacidade de delivery.
 
 * [Práticas recomendadas de entrega](delivery-best-practices.md)
-* [Controle o conteúdo do email](control-message-content.md)
+* [Controlar o conteúdo do email](control-message-content.md)
 * [Renderização da caixa de entrada](inbox-rendering.md)
 * [Envio de uma prova](steps-validating-the-delivery.md#sending-a-proof)
 
@@ -80,8 +80,8 @@ Alguns provedores de acesso à Internet consideram automaticamente emails como s
 
 Para obter mais informações, consulte estas seções:
 
-* [Entender as falhas de entrega](understanding-delivery-failures.md)
-* [Entender o gerenciamento de quarentenas](understanding-quarantine-management.md)
+* [Entender as falhas de delivery](understanding-delivery-failures.md)
+* [Entender o gerenciamento de quarentena](understanding-quarantine-management.md)
 * [Quarentena × lista de bloqueios](understanding-quarantine-management.md#quarantine-vs-denylist)
 
 ### Usar ferramentas de monitoramento e relatórios
@@ -92,6 +92,6 @@ O Adobe Campaign permite verificar o desempenho de seus deliveries por meio de u
 
 Para obter mais informações, consulte estas seções:
 
-* [Monitorar a capacidade de entrega](monitoring-deliverability.md)
-* [Introdução ao monitoramento de entrega](about-delivery-monitoring.md)
-* [Introdução aos relatórios internos do Campaign](../../reporting/using/about-campaign-built-in-reports.md)
+* [Monitorar a capacidade de delivery](monitoring-deliverability.md)
+* [Introdução ao monitoramento de delivery](about-delivery-monitoring.md)
+* [Introdução aos relatórios integrados do Campaign](../../reporting/using/about-campaign-built-in-reports.md)
