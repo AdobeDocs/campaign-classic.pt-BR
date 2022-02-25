@@ -7,9 +7,9 @@ content-type: reference
 topic-tags: targeting-activities
 exl-id: 0d3e7046-313a-42a6-9155-3365e8d60bac
 source-git-commit: 3b523e53440ba6ae107b597c7ebf226195126bde
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '274'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
@@ -24,7 +24,7 @@ Como essas campanhas são iniciadas no início de cada temporada para oferecer a
 ![](assets/incremental_query_example.png)
 
 1. Adicione um query incremental, bem como uma atividade de atualização da lista em um novo workflow.
-1. Configure o **[!UICONTROL Incremental query]** da atividade, conforme especificado em [Criar um query](query.md#creating-a-query).
+1. Configure a guia **[!UICONTROL Incremental query]** da atividade, conforme especificado em [Criar uma consulta](query.md#creating-a-query).
 1. Selecione a guia **[!UICONTROL Scheduling & History]** e especifique um histórico de 270 dias. Um recipient que já foi direcionado não será direcionado novamente por um período de 270 dias ou aproximadamente 9 meses.
 
    Clique no botão **[!UICONTROL Change...]**
