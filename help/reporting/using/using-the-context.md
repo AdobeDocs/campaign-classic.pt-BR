@@ -4,9 +4,9 @@ title: Usar o contexto em seus relatórios
 description: Saiba como usar o contexto em seus relatórios
 exl-id: a19e2843-d3f9-48c3-af72-cc1bc54f6360
 source-git-commit: 81716a30a57d3ed8542b329d5fb9b0443fd4bf31
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '497'
-ht-degree: 83%
+ht-degree: 100%
 
 ---
 
@@ -14,9 +14,9 @@ ht-degree: 83%
 
 ![](../../assets/common.svg)
 
-Quando quiser representar dados na forma de **[!UICONTROL tables]** ou **[!UICONTROL charts]**, pode ser obtido de duas fontes: uma nova query (consulte [Definir um filtro direto nos dados](#defining-a-direct-filter-on-data)) ou o contexto do relatório (consulte [Usar dados de contexto](#using-context-data)).
+Quando quiser representar dados na forma de **[!UICONTROL tables]** ou **[!UICONTROL charts]**, eles poderão ser obtidos a partir de duas fontes: uma nova consulta (consulte [Definir um filtro direto sobre os dados](#defining-a-direct-filter-on-data)) ou o contexto do relatório (consulte [Usar dados de contexto](#using-context-data)).
 
-## Definir um filtro direto nos dados {#defining-a-direct-filter-on-data}
+## Definir um filtro direto sobre os dados {#defining-a-direct-filter-on-data}
 
 ### Filtrar dados {#filtering-data}
 
@@ -69,7 +69,7 @@ Na página que contém a tabela ou o gráfico, a guia **[!UICONTROL Data]** perm
 
 ![](assets/s_ncs_advuser_report_datasource_3.png)
 
-* A opção **[!UICONTROL New query]** permite criar uma consulta para coletar dados. Para obter mais informações, consulte [Definir um filtro direto nos dados](#defining-a-direct-filter-on-data).
+* A opção **[!UICONTROL New query]** permite criar uma consulta para coletar dados. Para obter mais informações, consulte [Definir um filtro direto sobre os dados](#defining-a-direct-filter-on-data).
 * A opção **[!UICONTROL Context data]** permite usar os dados de entrada: o contexto do relatório coincide com as informações contidas na transição de entrada da página que contém o gráfico ou a tabela. Esse contexto pode, por exemplo, conter dados coletados por uma atividade **[!UICONTROL Query]** colocada antes da atividade **[!UICONTROL Page]** e para a qual é necessário especificar a tabela e os campos que o relatório aborda.
 
 Por exemplo, em uma caixa de query, crie a seguinte query para os recipients:
