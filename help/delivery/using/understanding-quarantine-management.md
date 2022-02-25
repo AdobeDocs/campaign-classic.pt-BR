@@ -7,11 +7,11 @@ exl-id: cfd8f5c9-f368-4a31-a1e2-1d77ceae5ced
 source-git-commit: afe4329fd230f30e48bfbf5ac2073ca95a6fd04e
 workflow-type: tm+mt
 source-wordcount: '2837'
-ht-degree: 80%
+ht-degree: 82%
 
 ---
 
-# Entender o gerenciamento de quarentenas{#understanding-quarantine-management}
+# Entender o gerenciamento de quarentena{#understanding-quarantine-management}
 
 ![](../../assets/common.svg)
 
@@ -49,11 +49,11 @@ A quarentena e a lista de bloqueios não se aplicam ao mesmo objeto:
 
 ## Identificar endereços em quarentena {#identifying-quarantined-addresses}
 
-Os endereços em quarentena podem ser listados para uma entrega específica ou para a plataforma inteira.
+Os endereços em quarentena podem ser listados para um delivery específico ou para toda a plataforma.
 
 ### Identificar endereços em quarentena para um delivery {#identifying-quarantined-addresses-for-a-delivery}
 
-Os endereços em quarentena para uma entrega específica são listados durante a fase de preparação da entrega, nos logs da entrega do painel de entrega (consulte [Histórico e logs de entrega](delivery-dashboard.md#delivery-logs-and-history)).
+Os endereços em quarentena para um delivery específico são listados durante a fase de preparação do delivery, nos logs do delivery do painel de delivery (consulte [Histórico e logs do delivery](delivery-dashboard.md#delivery-logs-and-history)).
 
 ### Identificar endereços em quarentena para toda a plataforma {#identifying-quarantined-addresses-for-the-entire-platform}
 
@@ -74,7 +74,7 @@ As seguintes informações estão disponíveis para cada endereço:
 >Fim do Ano 1: (1*0.33)/(1+0.5)=22%.
 Fim do Ano 2: ((1.22*0.33)+0.33)/(1.5+0.75)=32.5%.
 
-### Identificar endereços em quarentena nos relatórios de delivery {#identifying-quarantined-addresses-in-delivery-reports}
+### Identificar endereços em quarentena nos relatórios do delivery {#identifying-quarantined-addresses-in-delivery-reports}
 
 Os seguintes relatórios fornecem informações sobre os endereços em quarentena:
 
