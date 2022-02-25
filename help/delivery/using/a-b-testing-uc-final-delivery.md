@@ -4,7 +4,7 @@ title: Definição do delivery final
 description: Saiba como executar testes A/B por meio de um caso de uso dedicado
 exl-id: bc23a444-a872-48fb-8bba-64b301541089
 source-git-commit: 90c52ec144a6a3c1b534a80507e38fa3ed64fc83
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '108'
 ht-degree: 100%
 
