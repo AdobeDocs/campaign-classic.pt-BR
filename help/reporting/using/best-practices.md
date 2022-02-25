@@ -5,9 +5,9 @@ description: Práticas recomendadas para relatórios do Campaign
 feature: Reporting
 exl-id: 0c7f00f3-b16d-41c5-a7b1-f5a59201bf8c
 source-git-commit: 81716a30a57d3ed8542b329d5fb9b0443fd4bf31
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '841'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -15,7 +15,7 @@ ht-degree: 98%
 
 ![](../../assets/common.svg)
 
-## Analise suas necessidades{#analyzing-needs}
+## Analisar suas necessidades{#analyzing-needs}
 
 A utilização de uma ferramenta de relatório depende do volume de dados a serem manipulados, da complexidade e do tipo de relatório a ser configurado.
 
@@ -112,4 +112,4 @@ Além disso, o Adobe Campaign recomenda as seguintes melhorias:
 
 ### Exportar seus relatórios {#exporting-reports}
 
-As recomendações específicas para exportar relatórios são detalhadas [nesta seção](../../reporting/using/actions-on-reports.md#exporting-a-report).
+As recomendações específicas para exportar relatórios estão detalhadas [nesta seção](../../reporting/using/actions-on-reports.md#exporting-a-report).
