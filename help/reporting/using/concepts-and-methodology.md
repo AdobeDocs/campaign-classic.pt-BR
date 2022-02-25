@@ -4,9 +4,9 @@ title: Práticas recomendadas para cubos
 description: Práticas recomendadas para cubos
 exl-id: 5f22fa2c-b648-4126-9a24-1798adfa8f34
 source-git-commit: 81716a30a57d3ed8542b329d5fb9b0443fd4bf31
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1493'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -119,7 +119,7 @@ A lista discriminada **[!UICONTROL Domains]** é usada para gerar relatórios in
 
 Você pode criar outras enumerações reservadas para compartimentalização e usá-las em outros Cubos: todos os valores de alias serão reagrupados nas posições especificadas na primeira guia de enumeração.
 
-## Calcular e usar agregações {#calculating-and-using-aggregates}
+## Calcular e usar agregados {#calculating-and-using-aggregates}
 
 Os maiores volumes de dados podem ser calculados em agregações.
 
@@ -155,7 +155,7 @@ Para criar uma nova agregação, siga as etapas abaixo:
 
       ![](assets/s_advuser_cube_agregate_05.png)
 
-## Defina medidas {#defining-measures}
+## Definir medidas {#defining-measures}
 
 Os tipos de medidas são definidos na guia **[!UICONTROL Measures]** do cubo. É possível calcular somas, médias, desvios, etc.
 
@@ -184,8 +184,8 @@ Para definir uma nova medida, siga as etapas abaixo:
 É possível configurar a exibição de medidas na tabela dependendo das necessidades:
 
 * a sequência de exibição de medidas (consulte [Sequência de exibição](#display-sequence)),
-* as informações para mostrar/ocultar no relatório (consulte [Configurar a exibição](#configuring-the-display))
-* medidas para exibir: porcentagem, total, número de decimais, etc. (consulte [Alterar o tipo de medida exibida](#changing-the-type-of-measure-displayed)).
+* as informações mostradas/ocultadas no relatório (consulte [Configuração de exibição](#configuring-the-display)) 
+* e as medidas a serem exibidas: porcentagem, total, número de decimais, etc. (consulte [Alterar o tipo de medida exibida](#changing-the-type-of-measure-displayed)).
 
 ### Sequência de exibição {#display-sequence}
 
