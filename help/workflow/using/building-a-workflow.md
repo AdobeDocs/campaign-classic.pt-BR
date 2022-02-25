@@ -1,13 +1,13 @@
 ---
 product: campaign
-title: Criar um fluxo de trabalho
-description: Saiba como construir um workflow
+title: Criar um workflow
+description: Saiba como criar um fluxo de trabalho
 feature: Workflows
 exl-id: 8ba20ccd-b03f-4c4f-87c1-a21e80d8e4be
 source-git-commit: 3b523e53440ba6ae107b597c7ebf226195126bde
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1623'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
@@ -25,7 +25,7 @@ Esta seção detalha os principais princípios e as práticas recomendadas para 
 * Para acessar e criar workflows técnicos, consulte [Workflows técnicos](#technical-workflows)
 * Para usar templates para criar workflows, consulte [Templates de workflow](#workflow-templates)
 
-## Criar um novo workflow {#creating-a-new-workflow}
+## Criar um novo fluxo de trabalho {#creating-a-new-workflow}
 
 No **[!UICONTROL Explorer]**, acesse uma pasta de fluxo de trabalho. Por padrão, é possível usar **[!UICONTROL Profiles and Targets]** > **[!UICONTROL Jobs]** > **[!UICONTROL Targeting workflows]**.
 
@@ -80,7 +80,7 @@ Criação do diagrama
 
 >[!CAUTION]
 >
->É possível copiar e colar atividades dentro de um mesmo workflow. No entanto, não recomendamos atividades de copiar e colar em workflows diferentes. Algumas configurações anexadas a atividades como Delivery e Scheduler podem gerar conflitos e erros ao executar o workflow de destino. Em vez disso, recomendamos usar **Duplicate** nos workflows. Para obter mais informações, consulte [Workflows duplicados](#duplicating-workflows).
+>É possível copiar e colar atividades dentro de um mesmo workflow. No entanto, não recomendamos atividades de copiar e colar em workflows diferentes. Algumas configurações anexadas a atividades como Delivery e Scheduler podem gerar conflitos e erros ao executar o workflow de destino. Em vez disso, recomendamos usar **Duplicate** nos workflows. Para obter mais informações, consulte [Duplicar workflows](#duplicating-workflows).
 
 Você pode alterar a exibição e o layout do gráfico usando os seguintes elementos:
 
@@ -143,11 +143,11 @@ Os workflows para construção do target dentro da estrutura de uma campanha sã
 
 ### Etapas principais para criar um fluxo de trabalho para construção do target {#implementation-steps-}
 
-As etapas para a criação de um workflow para construção do target estão detalhadas nestas seções:
+As etapas para a criação de um fluxo de trabalho de direcionamento estão detalhadas nestas seções:
 
-1. **Identificar** dados no banco de dados - Consulte [Criar consultas](targeting-data.md#creating-queries)
-1. **Preparar** dados para atender às necessidades do delivery - Consulte [Enriquecer e modificar dados](targeting-data.md#enriching-and-modifying-data)
-1. **Use** dados para executar atualizações ou dentro de um delivery - Consulte [Atualizar o banco de dados](how-to-use-workflow-data.md#updating-the-database)
+1. **Identificar** dados no banco de dados – Consulte [Criar consultas](targeting-data.md#creating-queries)
+1. **Preparar** dados para atender às necessidades do delivery – Consulte [Enriquecer e modificar dados](targeting-data.md#enriching-and-modifying-data)
+1. **Usar** dados para executar atualizações ou dentro de um delivery – Consulte [Atualizar o banco de dados](how-to-use-workflow-data.md#updating-the-database)
 
 Os resultados de todos os enriquecimentos e todos tratamentos realizados no target são armazenados e acessíveis em campos de personalização, principalmente para usar criação de mensagens personalizadas. Para obter mais informações, consulte [Dados do target](data-life-cycle.md#target-data)
 
@@ -237,7 +237,7 @@ O recurso de duplicação não está diretamente disponível na visualização d
 
 No entanto, é possível criar uma visualização para exibir todos os workflows na sua instância. Nesta visualização, é possível duplicar workflows usando **Duplicate to**.
 
-**Criar uma exibição**
+**Criar uma visualização**
 
 1. No **Explorer**, vá para a pasta na qual você precisa criar sua visualização.
 1. Clique com o botão direito do mouse, vá para **Add a new folder** > **Process** e selecione **Workflows**.
@@ -253,7 +253,7 @@ A nova pasta **Workflows** é criada.
 
 A pasta agora é preenchida com todos os workflows da sua instância.
 
-**Duplicar um workflow de campanha**
+**Duplicar um fluxo de trabalho de campanha**
 
 1. Selecione um workflow de campanha na visualização do workflow.
 1. Clique com o botão direito do mouse em **Duplicate to**.
