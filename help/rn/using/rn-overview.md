@@ -7,9 +7,9 @@ role: User
 level: Beginner
 exl-id: 7a05fdff-8f9d-4e8d-812e-0f1509db5499
 source-git-commit: 9d8eae6b9c31d98d5e7e14b61f3abcf46311304d
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '917'
-ht-degree: 91%
+ht-degree: 100%
 
 ---
 
@@ -21,7 +21,7 @@ ht-degree: 91%
 
 Cada nova build vem com um status que é materializado por uma cor.
 
-![](assets/do-not-localize/green3.png) **Disponibilidade geral** (GA) - Build estável mais recente, validada na produção e recomendada pelo Adobe.
+![](assets/do-not-localize/green3.png) **Disponibilidade geral** (GA) - Build estável mais recente, validada na produção e recomendada pela Adobe.
 
 ![](assets/do-not-localize/limited3.png) **Disponibilidade limitada** (DL) - somente instalação sob demanda.
 
@@ -41,7 +41,7 @@ Como usuário hospedado, você se beneficia automaticamente da atualização com
 
 ## Recomendações{#recommendations}
 
-Para garantir uma configuração estável, recomendamos instalar **mesma build** em todos os servidores que estão sendo executados na mesma configuração de cliente.
+Para garantir uma configuração estável, recomendamos instalar **a mesma build** em todos os servidores que estão sendo executados na mesma configuração de cliente.
 
 Além disso, o console do cliente deve estar na mesma build que a instância do servidor.
 
@@ -51,7 +51,7 @@ Para manter sua implementação atualizada, leia os [recursos obsoletos e removi
 
 Como cliente hospedado (Serviço gerenciado ou híbrido), você precisa entrar em contato com a equipe de atendimento ao cliente para atualizar seu ambiente.
 
-Como usuário local, você pode fazer a atualização. Para fazer isso, você precisa [baixe a build estável mais recente (GA)](https://experience.adobe.com/#/downloads/content/software-distribution/en/campaign.html) e atualize todos os seus ambientes. Saiba mais sobre o [processo de atualização](../../production/using/build-upgrade.md) e consulte as [perguntas frequentes sobre atualização de build](../../platform/using/faq-build-upgrade.md).
+Como usuário local, você pode fazer a atualização. Para isso, [baixe a build estável mais recente (GA)](https://experience.adobe.com/#/downloads/content/software-distribution/en/campaign.html) e atualize todos os seus ambientes. Saiba mais sobre o [processo de atualização](../../production/using/build-upgrade.md) e consulte as [perguntas frequentes sobre atualização de build](../../platform/using/faq-build-upgrade.md).
 
 ## Atualização anual {#yearly-upgrade}
 
@@ -59,13 +59,13 @@ A Adobe e o Adobe Campaign têm o compromisso de fornecer a você a melhor exper
 
 O Adobe Campaign Classic, especificamente, usa uma variedade de tecnologias para fornecer valor. Essa combinação de tecnologias exige que você atualize regularmente suas instâncias do Campaign Classic para garantir que as versões mais atualizadas estejam sendo usadas para oferecer segurança, estabilidade e desempenho superiores.
 
-Como usuário convidado do , você se beneficiará automaticamente da atualização para o  com a compilação mais recentedo GA sem realizar nenhuma ação. Saiba mais nas perguntas frequentes abaixo.
+Como usuário convidado, você se beneficiará automaticamente da atualização com a compilação GA mais recente sem realizar qualquer ação. Saiba mais nas perguntas frequentes abaixo.
 
 ### Por que minha empresa precisa dessa atualização?
 
 Como um cliente hospedado, se sua conta precisar atualizar uma ou mais das tecnologias relacionadas ao Campaign Classic, bem como atualizar a compilação e/ou versão atual, você será notificado diretamente pela Adobe.
 
-Como cliente local ou híbrido em execução em uma versão mais antiga, o Adobe incentiva você a migrar para a build estável (GA) mais recente.
+Como um cliente local ou híbrido em uma versão mais antiga, a Adobe incentiva a transição para a build estável mais recente (GA).
 
 Dessa forma, sua conta ficará protegida contra vulnerabilidades, além de aproveitar a tecnologia de desempenho atualizada. Você também poderá fazer atualizações regulares e com mais facilidade na sua conta, que exigirão menos trabalho e intervenção manual.
 
