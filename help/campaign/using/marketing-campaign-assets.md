@@ -5,7 +5,7 @@ description: Saiba mais sobre documentos de campanha de marketing e delivery out
 feature: Campaigns
 exl-id: 891252b0-4700-4a2a-a632-63aad5ce75d7
 source-git-commit: d3f5c56078ddac7597925191fd347bdcab61714d
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '755'
 ht-degree: 100%
 
