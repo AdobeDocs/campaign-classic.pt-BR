@@ -4,9 +4,9 @@ title: Formulários de entrada
 description: Saiba como usar formulários de entrada no Campaign
 exl-id: 8ec52c96-44a2-4544-93b6-9ba251510682
 source-git-commit: 56459b188ee966cdb578c415fcdfa485dcbed355
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '832'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
