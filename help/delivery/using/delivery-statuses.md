@@ -1,17 +1,17 @@
 ---
 product: campaign
-title: Status de entrega
+title: Status de delivery
 description: Saiba mais sobre os status disponíveis no painel do delivery
 feature: Monitoring
 exl-id: 0663257a-3a70-4e0c-bbeb-8242aaa0876d
 source-git-commit: 56459b188ee966cdb578c415fcdfa485dcbed355
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '632'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
-# Status de entrega {#delivery-statuses}
+# Status de delivery {#delivery-statuses}
 
 ![](../../assets/common.svg)
 
@@ -29,7 +29,7 @@ Para obter mais detalhes sobre as diferentes falhas de delivery que podem ser en
 
 * [Painel de entrega](delivery-dashboard.md)
 * [Solução de problemas de entrega](delivery-troubleshooting.md)
-* [Introdução à capacidade de entrega](about-deliverability.md)
+* [Introdução à capacidade de delivery](about-deliverability.md)
 
 ## Lista de status de entrega {#list-delivery-statuses}
 
