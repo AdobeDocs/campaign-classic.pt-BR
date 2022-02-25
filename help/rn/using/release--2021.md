@@ -7,9 +7,9 @@ role: User
 level: Beginner
 exl-id: 0cd6bf20-da72-4cf0-9f5d-d4e8acdd324d
 source-git-commit: 81716a30a57d3ed8542b329d5fb9b0443fd4bf31
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2543'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -277,7 +277,7 @@ Se você estiver interessado em participar deste beta privado, preencha este [fo
 * Correção de um problema que fazia com que alguns caracteres no código fonte fossem alterados ao ser reaberta uma aplicação web criada e salva anteriormente. (NEO-27597)
 * Correção de um problema que ocorria ao atualizar para uma compilação, incluindo o novo mecanismo de assinatura para links de rastreamento (da Compilação 19.1.4 e Campaign 20.2): quando vários modelos eram associados a um evento, a atualização podia fazer com que o modelo errado fosse selecionado ao ser enviada a mensagem transacional. (NEO-28326)
 * Correção de um problema que fazia com que o MTA ficasse sem resposta e não conseguisse processar deliveries, a menos que fosse reiniciado. (NEO-27455)
-* Correção de um problema no banco de dados MSSQL relacionado ao gerenciamento de fuso horário durante operações de carregamento em massa de uma coluna do tipo datetime. (NEO-27375)
+* Correção de um problema no banco de dados MSSQL relacionado ao gerenciamento de fuso horário durante operações de carregamento em massa para uma coluna de tipo datetime. (NEO-27375)
 * Correção de um problema de query de fluxo de trabalho ao usar funções Redshift xtk. Os SubDays, SubSeconds, SubMinutes e SubHours agora aceitam os tipos de data e hora do Redshift (NEO-24962).
 * Correção de um problema que exibia uma mensagem de erro de script ao tentar a pré-visualização de um relatório com acesso Anônimo. (NEO-27081)
 * Correção de um problema que podia reduzir o uso de memória no servidor durante a execução da análise do delivery.
