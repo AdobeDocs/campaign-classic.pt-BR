@@ -4,9 +4,9 @@ title: Criar uma tabela
 description: Criar uma tabela
 exl-id: 05f76bdf-6dcd-4360-9e72-0ba6a4dd0d5e
 source-git-commit: 81716a30a57d3ed8542b329d5fb9b0443fd4bf31
-workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+workflow-type: ht
+source-wordcount: '2495'
+ht-degree: 100%
 
 ---
 
@@ -18,13 +18,13 @@ ht-degree: 0%
 
 ![](assets/s_advuser_report_page_activity_05.png)
 
-## Criar uma lista com um grupo {#creating-a-list-with-group}
+## Criar uma lista com grupo {#creating-a-list-with-group}
 
 Uma tabela do tipo **[!UICONTROL List with group]** permite agrupar dados na tabela e produzir estatísticas. Por exemplo, é possível criar totais e subtotais para os dados. Cada grupo tem sua própria linha de cabeçalho, detalhe e rodapé.
 
 >[!CAUTION]
 >
->A atividade **[!UICONTROL Page]** contendo a tabela deve ser precedida por uma atividade **[!UICONTROL Query]** ou **[!UICONTROL Script]** para coletar os dados a serem analisados no relatório. Para obter mais informações sobre essas atividades, consulte [Coletar dados para analisar](../../reporting/using/collecting-data-to-analyze.md) e [Atividade script](../../reporting/using/advanced-functionalities.md#script-activity).
+>A atividade **[!UICONTROL Page]** contendo a tabela deve ser precedida por uma atividade **[!UICONTROL Query]** ou **[!UICONTROL Script]** para coletar os dados a serem analisados no relatório. Para obter mais informações sobre essas atividades, consulte [Coletar dados para analisar](../../reporting/using/collecting-data-to-analyze.md) e [atividade de script](../../reporting/using/advanced-functionalities.md#script-activity).
 
 ### Princípio operacional {#operating-principle}
 
@@ -445,7 +445,7 @@ Queremos adicionar uma segunda query e uma segunda página para exibir o detalhe
 
    A página está configurada agora.
 
-### Etapa 6 - Visualizar o relatório {#step-6---viewing-the-report}
+### Etapa 6 - Exibir o relatório {#step-6---viewing-the-report}
 
 Para exibir o resultado dessa configuração, clique na guia **[!UICONTROL Preview]** e selecione a opção **[!UICONTROL Global]**.
 
