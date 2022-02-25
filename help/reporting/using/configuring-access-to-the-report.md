@@ -4,9 +4,9 @@ title: Configurar acesso ao relatório
 description: Configurar acesso ao relatório
 exl-id: 1e5ab922-481c-4dce-a05e-a58408002e24
 source-git-commit: 81716a30a57d3ed8542b329d5fb9b0443fd4bf31
-workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+workflow-type: ht
+source-wordcount: '754'
+ht-degree: 100%
 
 ---
 
@@ -58,7 +58,7 @@ O relatório também pode ser compartilhado com operadores ou grupos de operador
 
 ![](assets/s_ncs_advuser_report_visibility_8.png)
 
-### Definir as opções de filtragem {#defining-the-filtering-options}
+### Definição das opções de filtro {#defining-the-filtering-options}
 
 A guia **[!UICONTROL Reports]** exibe todos os relatórios disponíveis na plataforma e para os quais o operador conectado tem direito de acesso.
 
