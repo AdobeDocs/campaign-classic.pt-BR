@@ -1,10 +1,10 @@
 ---
 product: campaign
 title: Enviar um relatório a uma lista
-description: Saiba como enviar um relatório para uma lista com um workflow
+description: Saiba como enviar um relatório para uma lista com um fluxo de trabalho
 exl-id: cb24aea5-f3c7-4b17-8899-1792ea18c235
 source-git-commit: f05eefc9945c4ead89eb448b6e28c3523559e055
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '623'
 ht-degree: 100%
 
