@@ -4,7 +4,7 @@ title: Configuração do aplicativo móvel iOS no Adobe Campaign
 description: Saiba como configurar seu aplicativo móvel para iOS
 exl-id: 67eee1c5-a918-46b9-875d-7c3c71c00635
 source-git-commit: 56459b188ee966cdb578c415fcdfa485dcbed355
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '652'
 ht-degree: 100%
 
