@@ -1,17 +1,17 @@
 ---
 product: campaign
-title: Entender as falhas de entrega
+title: Entender as falhas de delivery
 description: Entenda as falhas de delivery
 feature: Monitoring
 exl-id: 86c7169a-2c71-4c43-8a1a-f39871b29856
 source-git-commit: 56459b188ee966cdb578c415fcdfa485dcbed355
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2614'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
-# Entender as falhas de entrega{#understanding-delivery-failures}
+# Entender as falhas de delivery{#understanding-delivery-failures}
 
 ![](../../assets/common.svg)
 
@@ -85,31 +85,31 @@ Os possíveis motivos para uma falha de delivery são:
   </tr> 
   <tr> 
    <td> Endereço de controle </td> 
-   <td> Ignorado </td> 
+   <td> Ignored </td> 
    <td> 127 </td> 
    <td> O endereço do recipient faz parte do grupo de controle.<br /> </td> 
   </tr> 
   <tr> 
    <td> Duplo </td> 
-   <td> Ignorado </td> 
+   <td> Ignored </td> 
    <td> 10 </td> 
    <td> O endereço do recipient já estava nesse delivery.<br /> </td> 
   </tr> 
   <tr> 
    <td> Erro ignorado </td> 
-   <td> Ignorado </td> 
+   <td> Ignored </td> 
    <td> 25 </td> 
    <td> O endereço está na lista de permissões. O erro é então ignorado e um email será enviado.<br /> </td> 
   </tr> 
   <tr> 
    <td> Excluído após arbitragem </td> 
-   <td> Ignorado </td> 
+   <td> Ignored </td> 
    <td> 12 </td> 
    <td> O recipient foi excluído por uma regra de tipologia de 'arbitragem' de campanha.<br /> </td> 
   </tr> 
   <tr> 
    <td> Excluído por uma regra SQL </td> 
-   <td> Ignorado </td> 
+   <td> Ignored </td> 
    <td> 11 </td> 
    <td> O recipient foi excluído por uma regra de tipologia de campanha do tipo "SQL".<br /> </td> 
   </tr> 
@@ -127,7 +127,7 @@ Os possíveis motivos para uma falha de delivery são:
   </tr> 
   <tr> 
    <td> Não conectado </td> 
-   <td> Ignorado </td> 
+   <td> Ignored </td> 
    <td> 6 </td> 
    <td> O telefone celular do recipient está desligado ou não conectado à rede quando a mensagem é enviada.<br /> </td> 
   </tr> 
@@ -139,7 +139,7 @@ Os possíveis motivos para uma falha de delivery são:
   </tr> 
   <tr> 
    <td> Não se qualifica para as ofertas </td> 
-   <td> Ignorado </td> 
+   <td> Ignored </td> 
    <td> 16 </td> 
    <td> O recipient não foi qualificado para as ofertas no delivery.<br /> </td> 
   </tr> 
@@ -151,13 +151,13 @@ Os possíveis motivos para uma falha de delivery são:
   </tr> 
   <tr> 
    <td> Target limitado em tamanho </td> 
-   <td> Ignorado </td> 
+   <td> Ignored </td> 
    <td> 17 </td> 
    <td> O tamanho máximo de delivery foi atingido para o recipient.<br /> </td> 
   </tr> 
   <tr> 
    <td> Endereço não qualificado </td> 
-   <td> Ignorado </td> 
+   <td> Ignored </td> 
    <td> 15 </td> 
    <td> O endereço postal não foi qualificado.<br /> </td> 
   </tr> 
@@ -190,7 +190,7 @@ Se uma mensagem falhar devido a um erro **suave** ou **grave** que é temporári
 
 Para instalações no local e instalações hospedadas/híbridas usando o MTA herdado do Campaign, para modificar a duração de um delivery, vá para os parâmetros avançados do delivery ou template do delivery e especifique a duração desejada no campo correspondente. Consulte [Definição do período de validade](steps-sending-the-delivery.md#defining-validity-period).
 
-A configuração padrão permite cinco tentativas em intervalos de uma hora, seguidas por uma nova tentativa por dia, por quatro dias. O número de tentativas pode ser alterado globalmente (entre em contato com o administrador técnico do Adobe) ou para cada delivery ou template de delivery. Consulte [Configurar novas tentativas](steps-sending-the-delivery.md#configuring-retries).
+A configuração padrão permite cinco tentativas em intervalos de uma hora, seguidas por uma nova tentativa por dia, por quatro dias. O número de tentativas pode ser alterado globalmente (entre em contato com o administrador técnico da Adobe) ou para cada delivery ou modelo do delivery. Consulte [Configurar novas tentativas](steps-sending-the-delivery.md#configuring-retries).
 
 ## Erros síncronos e assíncronos {#synchronous-and-asynchronous-errors}
 
