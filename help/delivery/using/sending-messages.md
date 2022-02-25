@@ -1,12 +1,12 @@
 ---
 product: campaign
 title: Etapas principais para enviar um email
-description: Saiba como confirmar o delivery de um email e descubra as especificidades de entrega de mensagens de email
+description: Saiba como confirmar o delivery de um email e descubra as especificidades da entrega de mensagens de email
 exl-id: c75a5ea2-8d62-4f98-bccd-7116a4d404fd
 source-git-commit: 1e11b7419388698f5de366cbeddf2be88ef12873
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '214'
-ht-degree: 78%
+ht-degree: 100%
 
 ---
 
@@ -33,5 +33,5 @@ As seguintes seções detalham as configurações específicas para a entrega de
 <!--* [Generating the mirror page](generating-mirror-page.md)
 * [Email BCC](email-bcc.md)-->
 * [Parâmetros de email](email-parameters.md)
-* [Enviar emails com o MTA aprimorado](sending-with-enhanced-mta.md)
-* [Enviar emails em celulares japoneses](sending-emails-on-japanese-mobiles.md)
+* [Envio de emails com o MTA aprimorado](sending-with-enhanced-mta.md)
+* [Enviar emails em dispositivos móveis japoneses](sending-emails-on-japanese-mobiles.md)
