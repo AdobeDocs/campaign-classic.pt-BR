@@ -4,9 +4,9 @@ title: Configurar opções de rastreamento de URL
 description: Saiba como configurar opções de rastreamento de URL
 exl-id: 3277726a-fd92-4720-8871-3d0422c7db70
 source-git-commit: 1e11b7419388698f5de366cbeddf2be88ef12873
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '167'
-ht-degree: 94%
+ht-degree: 100%
 
 ---
 
