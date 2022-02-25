@@ -4,9 +4,9 @@ title: Definir um conteúdo condicional
 description: Definir um conteúdo condicional
 exl-id: efee50f7-d917-4c71-add2-116c4b8f7013
 source-git-commit: 81716a30a57d3ed8542b329d5fb9b0443fd4bf31
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '245'
-ht-degree: 91%
+ht-degree: 100%
 
 ---
 
@@ -32,7 +32,7 @@ No exemplo a seguir, a condição de exibição depende do idioma:
 
 ![](assets/reporting_display_condition.png)
 
-## Exibição de página condicional {#conditioning-page-display}
+## Exibição de página de condição {#conditioning-page-display}
 
 No gráfico de um relatório, a atividade **[!UICONTROL Test]** permite alterar a sequência de páginas dependendo de uma ou mais condições.
 
