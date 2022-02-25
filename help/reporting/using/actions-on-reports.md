@@ -4,9 +4,9 @@ title: Ações em relatórios
 description: Ações em relatórios
 exl-id: b30cdeaf-4ad6-473d-bdbc-91984755b609
 source-git-commit: 81716a30a57d3ed8542b329d5fb9b0443fd4bf31
-workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+workflow-type: ht
+source-wordcount: '544'
+ht-degree: 100%
 
 ---
 
