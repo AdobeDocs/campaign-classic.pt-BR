@@ -4,9 +4,9 @@ title: SpamAssassin
 description: Saiba como configurar a detecção de spam por email com o SpamAssassin
 exl-id: 8be6836d-f7dc-4199-b2b2-b6a9cac9d162
 source-git-commit: 1e11b7419388698f5de366cbeddf2be88ef12873
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '255'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
