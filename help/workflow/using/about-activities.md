@@ -5,13 +5,13 @@ description: Sobre atividades
 feature: Workflows, Data Management
 exl-id: 900dd30e-d4fb-452a-af3f-ae00758b0077
 source-git-commit: f05eefc9945c4ead89eb448b6e28c3523559e055
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '94'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
-# Atividades de workflow{#wf-activities}
+# Atividades de fluxos de trabalho{#wf-activities}
 
 ![](../../assets/common.svg)
 
