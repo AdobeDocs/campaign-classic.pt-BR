@@ -1,13 +1,13 @@
 ---
 product: campaign
 title: Gerar documentos personalizados em PDF
-description: Saiba como gerar documentos personalizados do PDF
+description: Saiba como gerar documentos personalizados em PDF
 feature: Personalization
 exl-id: e5239d99-256b-412b-be20-f64f822da9c3
 source-git-commit: 1e11b7419388698f5de366cbeddf2be88ef12873
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '442'
-ht-degree: 91%
+ht-degree: 100%
 
 ---
 
@@ -15,7 +15,7 @@ ht-degree: 91%
 
 ![](../../assets/common.svg)
 
-## Sobre documentos PDF variáveis {#about-variable-pdf-documents}
+## Sobre documentos em PDF variáveis {#about-variable-pdf-documents}
 
 O Adobe Campaign permite gerar documentos variáveis em PDF para anexos de email de documentos do LibreOffice ou do Microsoft Word.
 
@@ -23,7 +23,7 @@ As seguintes extensões são suportadas: &quot;.docx&quot;, &quot;.doc&quot; e &
 
 Para personalizar seus documentos, as mesmas funcionalidades JavaScript de personalização de email estão disponíveis.
 
-É necessário ativar a opção **[!UICONTROL "The content of the file is personalized and converted to PDF during the delivery of each message"]**. Essa opção é acessível quando você anexa o arquivo ao email de delivery. Para obter mais informações sobre como anexar um arquivo calculado, consulte [Anexar arquivos](attaching-files.md) seção.
+É necessário ativar a opção **[!UICONTROL "The content of the file is personalized and converted to PDF during the delivery of each message"]**. Essa opção é acessível quando você anexa o arquivo ao email de delivery. Para obter mais informações sobre como anexar um arquivo calculado, consulte a seção [Anexar arquivos](attaching-files.md).
 
 Exemplo de personalização de cabeçalho de fatura:
 
