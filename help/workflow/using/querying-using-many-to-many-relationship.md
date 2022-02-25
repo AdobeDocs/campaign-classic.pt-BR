@@ -5,13 +5,13 @@ description: Saiba como executar consultas usando uma relação muitos para muit
 feature: Query Editor
 exl-id: e1d40ba1-2493-45c1-bd54-af9cb332028d
 source-git-commit: f05eefc9945c4ead89eb448b6e28c3523559e055
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '385'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
-# Consulta usando uma relação muitos para muitos {#querying-using-a-many-to-many-relationship}
+# Consultar usando uma relação muitos-para-muitos {#querying-using-a-many-to-many-relationship}
 
 ![](../../assets/common.svg)
 
