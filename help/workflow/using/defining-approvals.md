@@ -1,13 +1,13 @@
 ---
 product: campaign
 title: Definir aprovações
-description: As aprovações permitem que os operadores tomem decisões que regem um workflow ou confirmem sua execução contínua
+description: As aprovações permitem que os operadores tomem decisões que regem um fluxo de trabalho ou confirmem sua execução contínua
 feature: Approvals
 exl-id: 4d413d51-ae5d-4e5e-bfaf-4160a6075281
 source-git-commit: 3af4f259b80b3e03c81ee278b470ef6ffe3fe4d0
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '841'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -27,7 +27,7 @@ Em operações, todos os estágios que exigem aprovação se baseiam no mesmo pr
 
 ![](assets/validation-1-in-op.png)
 
-Exemplos de aprovação podem ser encontrados em [esta seção](../../campaign/using/marketing-campaign-approval.md#checking-and-approving-deliveries).
+Exemplos de aprovação podem ser encontrados [nesta seção](../../campaign/using/marketing-campaign-approval.md#checking-and-approving-deliveries).
 
 Um operador pode responder de uma das duas formas seguintes: validação usando a página da Web vinculada na mensagem de email ou através do console.
 
@@ -45,7 +45,7 @@ Emails de aprovação são enviados continuamente. O template do delivery padrã
 
 Os deliveries criados por meio desse template são armazenados na pasta **[!UICONTROL Administration > Production > Objects created automatically > Technical deliveries > Workflow notifications]**.
 
-## Aprovações por meio do console {#approval-via-the-console}
+## Aprovações pelo console {#approval-via-the-console}
 
 Em operações, os elementos a serem aprovados são exibidos no painel da campanha.
 
