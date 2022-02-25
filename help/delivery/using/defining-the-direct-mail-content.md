@@ -4,9 +4,9 @@ title: Definir o conteúdo da correspondência direta
 description: Saiba como definir o conteúdo da correspondência direta
 exl-id: 585b2017-9408-4953-8505-2f6d9db8032f
 source-git-commit: 56459b188ee966cdb578c415fcdfa485dcbed355
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '167'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
