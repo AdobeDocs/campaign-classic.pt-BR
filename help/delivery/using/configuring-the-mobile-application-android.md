@@ -1,12 +1,12 @@
 ---
 product: campaign
-title: Configurar o aplicativo Android para dispositivos móveis no Adobe Campaign
+title: Configurar o aplicativo para dispositivos móveis para o Android no Adobe Campaign
 description: Saiba como configurar seu aplicativo móvel para Android
 exl-id: 32c35e61-d0a3-478f-b73b-396e2becf7f9
 source-git-commit: 56459b188ee966cdb578c415fcdfa485dcbed355
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '963'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
