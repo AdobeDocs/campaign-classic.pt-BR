@@ -5,9 +5,9 @@ description: Amostras de marketing distribuído
 feature: Distributed Marketing
 exl-id: 2bef6b5e-887e-4c56-bb4b-3583472ca333
 source-git-commit: 1e11b7419388698f5de366cbeddf2be88ef12873
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1293'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -17,13 +17,13 @@ ht-degree: 96%
 
 ## Criar uma campanha local (por formulário) {#creating-a-local-campaign--by-form-}
 
-A interface web tipo **By form** envolve o uso de um **aplicativo web**. Dependendo da configuração, essa aplicação web pode conter qualquer tipo de elementos personalizados definidos. Por exemplo, você pode sugerir links para avaliar o target, o orçamento, o conteúdo etc. por meio de APIs dedicadas.
+A interface web tipo **By form** envolve o uso de um **aplicativo web**. Dependendo da configuração, essa aplicação web pode conter qualquer tipo de elementos personalizados definidos. Por exemplo, você pode sugerir links para avaliar o target, o orçamento, o conteúdo, etc. por meio de APIs dedicadas.
 
 >[!NOTE]
 >
 >As APIs são detalhadas em um documento dedicado. [Saiba mais](../../configuration/using/about-web-services.md).
 >
->A aplicação Web usada neste exemplo não é fornecida com o Adobe Campaign. Para usar um formulário em uma campanha, você deve criar o aplicativo web dedicado.
+>O aplicativo web usado neste exemplo não é fornecido com o Adobe Campaign. Para usar um formulário em uma campanha, você deve criar o aplicativo web dedicado.
 
 Ao criar o template de campanha, clique no ícone **[!UICONTROL Zoom]** dentro da opção **[!UICONTROL Web interface]** do link **[!UICONTROL Advanced campaign settings...]** para acessar os detalhes do aplicativo web.
 
@@ -157,7 +157,7 @@ Depois que as verificações foram aprovadas, a campanha poderá iniciar automat
 
 1. Salve seu registro.
 
-#### Publique a campanha {#publishing-the-campaign}
+#### Publicar a campanha {#publishing-the-campaign}
 
 Agora você pode adicionar um **pacote de campanha** na guia **[!UICONTROL Campaigns]**.
 
