@@ -1,12 +1,12 @@
 ---
 product: campaign
 title: Rastrear uma campanha
-description: Saiba como rastrear uma campanha com o Campaign Distributed Marketing
+description: Saiba como rastrear uma campanha com o Marketing distribuído do Campaign
 exl-id: 87d1909c-d2eb-47ce-a860-0e78a64d2914
 source-git-commit: 1e11b7419388698f5de366cbeddf2be88ef12873
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '416'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
