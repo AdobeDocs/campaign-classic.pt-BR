@@ -5,13 +5,13 @@ description: '"Caso de uso: seleção de seed addresses com critérios"'
 feature: Seed Address
 exl-id: 091648b8-bf2d-4595-8be3-287f1ac48edd
 source-git-commit: 1e11b7419388698f5de366cbeddf2be88ef12873
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '837'
-ht-degree: 91%
+ht-degree: 100%
 
 ---
 
-# Caso de uso: selecionar seed addresses de acordo com os critérios{#use-case-selecting-seed-addresses-on-criteria}
+# Caso de uso: selecionar seed addresses de acordo com critérios{#use-case-selecting-seed-addresses-on-criteria}
 
 ![](../../assets/common.svg)
 
@@ -28,9 +28,9 @@ Para usar a condição dinâmica, você deve ter:
 * um delivery pronto para ser enviado,
 * seed addresses com um valor comum. Esse valor pode ser um campo existente no Adobe Campaign. Neste exemplo, os seed addresses compartilham o valor &quot;Compra&quot; no campo &quot;Departamento&quot;, que não está presente no aplicativo por padrão.
 
-## Etapa 1 - Criar um delivery {#step-1---creating-a-delivery}
+## Etapa 1 - Criar um delivery  {#step-1---creating-a-delivery}
 
-As etapas para criar um delivery são detalhadas na variável [Criar um delivery de email](creating-an-email-delivery.md) seção.
+As etapas para criar um delivery estão detalhadas na seção [Criar um delivery por email](creating-an-email-delivery.md).
 
 Neste exemplo, o gerenciador de delivery criou o boletim informativo e selecionou os recipients.
 
@@ -40,9 +40,9 @@ Neste exemplo, o gerenciador de delivery criou o boletim informativo e seleciono
 
 Para criar um valor comum como no nosso exemplo (departamento de compras), primeiro você deve estender o **esquema de dados** de seus seed addresses e editar o formulário de entrada associado.
 
-### Estender o schema de dados {#extending-the-data-schema}
+### Estender o esquema de dados {#extending-the-data-schema}
 
-Para obter mais detalhes sobre extensões de schema, consulte [esta seção](../../configuration/using/data-schemas.md).
+Para obter mais detalhes sobre extensões de esquema, consulte [esta seção](../../configuration/using/data-schemas.md).
 
 1. No nó **[!UICONTROL Administration > Configuration > Data schemas]**, clique no ícone **[!UICONTROL New]**.
 1. Na janela **[!UICONTROL Creation of a data schema]**, selecione a opção **[!UICONTROL Extension of a schema]** e clique em **[!UICONTROL Next]**.
@@ -93,9 +93,9 @@ Para obter mais detalhes sobre extensões de schema, consulte [esta seção](../
 
    Você pode fechar o assistente após o término da atualização.
 
-1. Desconecte e reconecte o Adobe Campaign. As alterações feitas no schema de dados do seed address agora estão em vigor. Para ficarem visíveis na tela do seed address, você deve atualizar o **[!UICONTROL Input form]** associado. Consulte a [Atualizar o formulário de entrada](#updating-the-input-form) seção.
+1. Desconecte e reconecte o Adobe Campaign. As alterações feitas no schema de dados do seed address agora estão em vigor. Para ficarem visíveis na tela do seed address, você deve atualizar o **[!UICONTROL Input form]** associado. Consulte a seção [Atualizar o formulário de entrada](#updating-the-input-form).
 
-#### Estender o schema de dados de uma tabela vinculada {#extending-the-data-schema-from-a-linked-table}
+#### Estender o esquema de dados de uma tabela vinculada {#extending-the-data-schema-from-a-linked-table}
 
 O esquema de dados de seed addresses pode usar valores de uma tabela vinculada ao esquema de dados do recipient – Recipient (nms).
 
@@ -129,7 +129,7 @@ Eles indicam:
 
 O usuário pode então seguir a partir da **etapa 5** da seção e atualizar o **[!UICONTROL Input form]** dos seed addresses.
 
-Consulte a [Atualizar o formulário de entrada](#updating-the-input-form) seção.
+Consulte a seção [Atualizar o formulário de entrada](#updating-the-input-form).
 
 #### Atualizar o formulário de entrada {#updating-the-input-form}
 
@@ -152,7 +152,7 @@ Consulte a [Atualizar o formulário de entrada](#updating-the-input-form) seçã
 
 1. Edite os seed addresses que deseja utilizar para o delivery e insira **Compras** como o valor no campo **[!UICONTROL Department]**.
 
-## Etapa 3 - Definir a condição {#step-3---defining-the-condition}
+## Etapa 3 – Definir a condição {#step-3---defining-the-condition}
 
 Agora você pode especificar a condição dinâmica dos seed addresses para o delivery. Para fazer isso:
 
