@@ -1,12 +1,12 @@
 ---
 product: campaign
 title: Parâmetro de email
-description: Saiba mais sobre as opções e configurações específicas do delivery de email
+description: Saiba mais sobre as opções e configurações específicas do delivery por email
 exl-id: 1bb36e71-9f1a-4553-b266-eca3f48688e2
 source-git-commit: 56459b188ee966cdb578c415fcdfa485dcbed355
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '900'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
