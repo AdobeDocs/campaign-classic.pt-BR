@@ -4,9 +4,9 @@ title: Usar cubos para explorar dados
 description: Usar cubos para explorar dados
 exl-id: 32696bbf-1415-4214-837f-5437fdb8b4d4
 source-git-commit: 81716a30a57d3ed8542b329d5fb9b0443fd4bf31
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '956'
-ht-degree: 89%
+ht-degree: 100%
 
 ---
 
@@ -16,8 +16,8 @@ ht-degree: 89%
 
 O Marketing Analytics facilita a criação de relatórios e a identificação e seleção de dados do banco de dados por meio dos cubos. Isso permite:
 
-* Criar relatórios com base em cubos. O processo é detalhado aqui: [Explorar os dados em um relatório](#exploring-the-data-in-a-report).
-* Coletar os dados no banco de dados e agrupá-los em listas, por exemplo, para identificar e criar targets e deliveries. Para obter mais informações, consulte [Criar uma população do target](#building-a-target-population).
+* Criar relatórios com base em cubos. O processo é detalhado em: [Explorar os dados em um relatório](#exploring-the-data-in-a-report).
+* Coletar os dados no banco de dados e agrupá-los em listas, por exemplo, para identificar e criar públicos alvos e deliveries. Para obter mais informações, consulte [Criar uma população alvo](#building-a-target-population).
 * Insira uma tabela dinâmica em um relatório, faça referência a um cubo existente nele. Para obter mais informações, consulte [Inserir uma tabela dinâmica em um relatório](#inserting-a-pivot-table-into-a-report).
 
 >[!NOTE]
@@ -30,7 +30,7 @@ O Marketing Analytics facilita a criação de relatórios e a identificação e 
 
 Para criar um relatório com base em um cubo, clique no botão **[!UICONTROL Create]** na guia **[!UICONTROL Reports]** e selecione o cubo que deseja usar.
 
-O processo é detalhado aqui: [Criar um relatório com base em um cubo](../../reporting/using/creating-indicators.md#creating-a-report-based-on-a-cube).
+O processo é detalhado em: [Criar um relatório com base em um cubo](../../reporting/using/creating-indicators.md#creating-a-report-based-on-a-cube).
 
 ### Etapa 2 - Selecionar linhas e colunas {#step-2---selecting-lines-and-columns}
 
@@ -117,7 +117,7 @@ Por padrão, apenas uma medida é exibida. Para adicionar ou configurar medidas:
 
    Em seguida, clique em **[!UICONTROL Edit the dynamic measure]** para acessar o menu de configurações.
 
-## Criar uma população do target {#building-a-target-population}
+## Criar uma população alvo {#building-a-target-population}
 
 A criação de relatórios usando cubos permitem coletar dados da tabela e salvá-los em uma lista.
 
