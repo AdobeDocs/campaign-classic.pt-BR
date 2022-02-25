@@ -5,9 +5,9 @@ description: Saiba mais sobre a atividade do workflow de query
 feature: Query Editor
 exl-id: 20d03627-cd56-46da-bc02-73b48a02a350
 source-git-commit: 3b523e53440ba6ae107b597c7ebf226195126bde
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1629'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -15,7 +15,7 @@ ht-degree: 97%
 
 ![](../../assets/common.svg)
 
-## Criar um query {#creating-a-query}
+## Criar uma consulta {#creating-a-query}
 
 Uma consulta permite selecionar um target de acordo com critérios. Você pode associar um código de segmento ao resultado do query e inserir dados adicionais nele.
 Para obter mais informações sobre amostras de query, consulte [esta seção](querying-recipient-table.md).
@@ -26,7 +26,7 @@ Para obter mais informações sobre amostras de query, consulte [esta seção](q
 
 ![](assets/s_user_segmentation_wizard_9.png)
 
-Para obter mais informações sobre como usar e gerenciar dados adicionais, consulte [Adicionar dados](#adding-data).
+Para mais informações sobre como usar e gerenciar dados adicionais, consulte [Adicionar dados](#adding-data).
 
 O link **[!UICONTROL Edit query...]** permite definir o tipo de direcionamento, as restrições e os critérios de seleção do público da seguinte maneira:
 
@@ -73,7 +73,7 @@ Comece selecionando o tipo de dado a ser adicionado:
 ![](assets/wf_add_data_1st_option.png)
 
 * Selecione **[!UICONTROL Data linked to the filtering dimension]** para selecionar os dados no banco de dados do Adobe Campaign.
-* Selecione **[!UICONTROL External data]** para adicionar dados de um banco de dados externo. Essa opção só estará disponível se você tiver adquirido a opção **Federated Data Access** . Para obter mais informações, consulte [Acessar um banco de dados externo (FDA)](accessing-an-external-database--fda-.md).
+* Selecione **[!UICONTROL External data]** para adicionar dados de um banco de dados externo. Essa opção só estará disponível se você tiver adquirido a opção **Federated Data Access**. Para obter mais informações, consulte [Acessar um banco de dados externo (FDA)](accessing-an-external-database--fda-.md).
 * Selecione a opção **[!UICONTROL An offer proposition]** para adicionar um conjunto de colunas que permitem armazenar a melhor apresentação gerada pelo mecanismo de oferta. Essa opção só estará disponível se você tiver adquirido o módulo **Interaction** .
 
 Se nenhum módulo opcional estiver instalado na plataforma, esse estágio não será exibido. Você será direcionado ao próximo estágio.
@@ -93,9 +93,9 @@ Para adicionar dados do banco de dados do Adobe Campaign:
    * Um campo calculado com base nos dados obtidos do público alvo ou em um agregado (número de compras pendentes no último mês, quantidade média de um recibo, etc.). Para obter um exemplo, acesse [Selecionar dados](targeting-data.md#selecting-data).
    * Um novo campo, criado por meio do botão **[!UICONTROL Add]** à direita da lista de colunas de output.
 
-      Você também pode adicionar uma coleção de informações, por exemplo, uma lista de contratos, os últimos 5 deliveries, etc. As coleções coincidem com os campos que podem ter múltiplos valores para o mesmo perfil (relação 1-N). Para obter mais informações, consulte [Editar dados adicionais](targeting-data.md#editing-additional-data).
+      Também é possível adicionar uma coleção de informações, por exemplo, uma lista de contratos, os últimos 5 deliveries etc. As coleções coincidem com os campos que podem ter múltiplos valores para o mesmo perfil (relação 1-N). Para obter mais informações, consulte [Editar dados adicionais](targeting-data.md#editing-additional-data).
 
-Para adicionar uma coleção de informações vinculadas a um público alvo:
+Para adicionar uma coleção de informações vinculadas a uma população direcionada:
 
 1. Na primeira etapa do assistente, selecione a opção **[!UICONTROL Data linked to the filtering dimension]**:
 1. Selecione a tabela que contém as informações que você deseja coletar e clique em **[!UICONTROL Next]**.
