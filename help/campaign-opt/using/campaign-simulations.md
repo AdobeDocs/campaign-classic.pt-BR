@@ -1,12 +1,12 @@
 ---
 product: campaign
 title: Simulações de campanha
-description: Introdução às simulações do Campaign
+description: Introdução às simulações de campanha
 exl-id: 709c64a8-34bf-43fa-a820-238295fb26b8
 source-git-commit: 90c52ec144a6a3c1b534a80507e38fa3ed64fc83
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1245'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
