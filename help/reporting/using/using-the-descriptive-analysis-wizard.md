@@ -4,9 +4,9 @@ title: Usar o assistente de análise descritiva
 description: Usar o assistente de análise descritiva
 exl-id: 848d67c7-d1dc-4eba-bcb8-672e76d8ce87
 source-git-commit: 81716a30a57d3ed8542b329d5fb9b0443fd4bf31
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1558'
-ht-degree: 93%
+ht-degree: 100%
 
 ---
 
@@ -48,19 +48,19 @@ Abra o assistente de análise descritiva selecionando os itens e clicando com o 
 
    Para obter um exemplo da análise descritiva dos recipients, consulte [Análise qualitativa de dados](../../reporting/using/use-cases.md#qualitative-data-analysis).
 
-* No contexto de um **workflow**, coloque o cursor em uma transição que aponta para a tabela de recipients, clique com o botão direito do mouse e selecione **[!UICONTROL Analyze target]**. Para obter mais informações, consulte o exemplo em [Analisar um target de transição em um workflow](../../reporting/using/use-cases.md#analyzing-a-transition-target-in-a-workflow).
+* No contexto de um **workflow**, coloque o cursor em uma transição que aponta para a tabela de recipients, clique com o botão direito do mouse e selecione **[!UICONTROL Analyze target]**. Para obter mais informações, consulte o exemplo em [Analisar um público alvo de transição em um fluxo de trabalho](../../reporting/using/use-cases.md#analyzing-a-transition-target-in-a-workflow).
 * Para **listas**, selecione uma ou mais listas e aplique o mesmo processo dos recipients.
 * No contexto de um **delivery**, selecione os deliveries cujo target deseja analisar, clique com o botão direito do mouse e selecione **[!UICONTROL Actions > Explore the target]**, conforme mostrado abaixo:
 
    ![](assets/reporting_descriptive_from_deliveries.png)
 
-   Exemplos de análises descritivas para deliveries são fornecidos aqui: [Analisar uma população](../../reporting/using/use-cases.md#analyzing-a-population) e aqui: [Analisar logs de rastreamento do recipient](../../reporting/using/use-cases.md#analyzing-recipient-tracking-logs).
+   Exemplos de análises descritivas para entregas são fornecidos aqui: [Analisar uma população](../../reporting/using/use-cases.md#analyzing-a-population), e aqui: [Analisar registros de rastreamento de recipients](../../reporting/using/use-cases.md#analyzing-recipient-tracking-logs).
 
-## Configurar o template de distribuição qualitativa {#configuring-the-qualitative-distribution-template}
+## Configurar o modelo de distribuição qualitativa {#configuring-the-qualitative-distribution-template}
 
-O template **[!UICONTROL Qualitative distribution]** permite criar estatísticas em todos os tipos de dados (ex: nome da empresa, domínio de email).
+O modelo **[!UICONTROL Qualitative distribution]** permite criar estatísticas em todos os tipos de dados (por exemplo: nome da empresa, domínio de email).
 
-Opções de configuração disponíveis para um relatório criado por meio da **[!UICONTROL Qualitative distribution]** são detalhados em [Exibir dados na tabela](#displaying-data-in-the-table). Um exemplo completo é detalhado em [Analisar uma população](../../reporting/using/use-cases.md#analyzing-a-population).
+As opções de configuração disponíveis para um relatório criado por meio do modelo **[!UICONTROL Qualitative distribution]** são detalhadas em [Exibir dados na tabela](#displaying-data-in-the-table). Um exemplo completo é detalhado em [Analisar uma população](../../reporting/using/use-cases.md#analyzing-a-population).
 
 Ao utilizar o assistente de análise descritiva para analisar seus dados, as opções disponíveis dependem das configurações escolhidas. Veja os detalhes abaixo.
 
@@ -195,7 +195,7 @@ Quando o relatório inclui um gráfico, os rótulos da legenda permitem filtrar 
 
 ![](assets/report_display_data_in_graph.png)
 
-## Configurar o template de distribuição quantitativa {#configuring-the-quantitative-distribution-template}
+## Configurar o modelo de distribuição quantitativa {#configuring-the-quantitative-distribution-template}
 
 Para gerar uma análise descritiva por conta própria, selecione a opção **New descriptive analysis from a template** se não estiver definida por padrão.
 
