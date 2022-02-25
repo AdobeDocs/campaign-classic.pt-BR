@@ -4,9 +4,9 @@ title: Criar um gráfico
 description: Saiba como criar um gráfico
 exl-id: d32b614f-82c1-4363-816c-4ebedaa5cfe9
 source-git-commit: 81716a30a57d3ed8542b329d5fb9b0443fd4bf31
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '525'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -124,7 +124,7 @@ Possíveis tipos de interação e suas configurações são detalhadas [nesta se
 
 ![](assets/s_ncs_advuser_report_wizard_017.png)
 
-## Computar estatísticas {#calculating-statistics}
+## Calcular estatísticas {#calculating-statistics}
 
 Os gráficos permitem exibir estatísticas dos dados coletados.
 
