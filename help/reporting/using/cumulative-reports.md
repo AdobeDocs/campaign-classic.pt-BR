@@ -4,9 +4,9 @@ title: Relatórios cumulativos
 description: Relatórios cumulativos
 exl-id: e67748dd-fa50-4992-b85f-474389e876cf
 source-git-commit: 81716a30a57d3ed8542b329d5fb9b0443fd4bf31
-workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+workflow-type: ht
+source-wordcount: '69'
+ht-degree: 100%
 
 ---
 
