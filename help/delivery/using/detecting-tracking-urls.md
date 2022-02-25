@@ -4,7 +4,7 @@ title: Detectar URLs de rastreamento
 description: Saiba mais sobre o padrão recomendado para rastrear URLs
 exl-id: 7611d6a1-6c55-4ba3-b905-58426c944991
 source-git-commit: 56459b188ee966cdb578c415fcdfa485dcbed355
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '297'
 ht-degree: 100%
 
