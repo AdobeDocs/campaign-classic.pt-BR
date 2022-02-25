@@ -5,9 +5,9 @@ description: Introdução aos cubos
 feature: Reporting
 exl-id: ade4c857-9233-4bc8-9ba1-2fec84b7c3e6
 source-git-commit: 81716a30a57d3ed8542b329d5fb9b0443fd4bf31
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '728'
-ht-degree: 68%
+ht-degree: 100%
 
 ---
 
@@ -27,41 +27,41 @@ Depois que tiverem sido criados e configurados, os cubos serão usados em caixas
 >
 >O **Marketing Analytics** é um módulo do Adobe Campaign. Ele precisa ser instalado na sua instância de forma que você possa utilizar os recursos descritos abaixo.
 
-Use o módulo Campaign Marketing Analytics para:
+Use o módulo Marketing Analytics do Campaign para:
 
-1. Criar cubos
+1. Criar cubos, 
 
-   * agregar e armazenar dados em uma tabela de trabalho para pré-calcular indicadores com base nas necessidades do usuário,
-   * reduzir o volume de dados envolvidos nos vários cálculos usados para relatórios e queries, otimizando significativamente os tempos de cálculo do indicador,
-   * simplificar o acesso aos dados, permitir que os usuários manipulem dados (sejam pré-agregados ou não) dependendo de várias dimensões.
+   * agregar e armazenar dados em uma tabela de trabalho para pré-calcular indicadores com base nas necessidades do usuário, 
+   * reduzir o volume de dados envolvidos nos vários cálculos usados para relatórios e consultas, otimizando significativamente os tempos de cálculo do indicador, 
+   * simplificar o acesso aos dados e permitir que os usuários manipulem dados (sejam pré-agregados ou não) que dependem de várias dimensões.
 
    Para obter mais informações, consulte [Criar indicadores](../../reporting/using/creating-indicators.md).
 
-1. Criar tabelas dinâmicas
+1. Criar tabelas dinâmicas, 
 
-   * explorar dados calculados, medidas configuradas,
-   * selecione os dados a serem exibidos, bem como seu modo de exibição,
-   * personalizar as medidas e os indicadores usados,
-   * oferecem ferramentas de análise interativa para usuários sem conhecimento técnico.
+   * explorar dados calculados e medidas configuradas, 
+   * selecionar os dados a serem exibidos, bem como o seu modo de exibição, 
+   * personalizar as medidas e os indicadores usados, 
+   * e oferecer ferramentas de análise interativa a usuários sem conhecimento técnico.
 
-   Para obter mais informações, consulte [Usar cubos para explorar dados](../../reporting/using/using-cubes-to-explore-data.md).
+   Para saber mais, consulte [Usar cubos para explorar dados](../../reporting/using/using-cubes-to-explore-data.md).
 
 1. Criar um query usando dados calculados e agregados em um cubo.
 1. Identificar populações e referenciá-las em listas.
 
 ## Terminologia {#terminology}
 
-Termos específicos ao trabalhar com cubos estão listados abaixo.
+Os termos específicos do trabalho com cubos estão listados abaixo.
 
-* **Cubo** - Um cubo é uma representação de informações multidimensionais: ele fornece aos usuários finais estruturas projetadas para análise interativa de dados.
+* **Cubo** - Um cubo é uma representação de informações multidimensionais: ele fornece estruturas projetadas para análise interativa de dados aos usuários finais.
 
-* **Tabela/schema de fatos** - A tabela de fatos (ou schema de fatos) contém os dados brutos ou primários nos quais as análises serão baseadas. Trata-se principalmente de tabelas de grandes volumes (possivelmente com tabelas vinculadas) com cálculos potencialmente longos. Por exemplo, uma tabela de fatos pode ser: a tabela de broadlog, a tabela de compras, etc.
+* **Tabela/esquema de fato** - A tabela de fatos (ou esquema de fatos) contém os dados brutos ou primários nos quais as análises serão baseadas. Trata-se principalmente de tabelas de grandes volumes (possivelmente com tabelas vinculadas) com cálculos potencialmente longos. Por exemplo, uma tabela de fatos pode ser: a tabela de broadlog, a tabela de compras, etc.
 
-* **Dimension** - O Dimension permite segmentar dados em grupos: depois de criadas, as dimensões atuam como eixos de análise. Na maioria dos casos, para determinada dimensão, vários níveis serão definidos. Por exemplo, para uma dimensão temporal, os níveis serão meses, dias, horas, minutos e etc. Esse conjunto de níveis representa a hierarquia de dimensão e permite vários níveis de análise de dados.
+* **Dimensão** - As dimensões permitem segmentar dados em grupos: uma vez criadas, as dimensões atuam como eixos de análise. Na maioria dos casos, para determinada dimensão, vários níveis serão definidos. Por exemplo, para uma dimensão temporal, os níveis serão meses, dias, horas, minutos e etc. Esse conjunto de níveis representa a hierarquia de dimensão e permite vários níveis de análise de dados.
 
-* **Início** - Para alguns campos, você pode definir compartimentalização para agrupar valores e facilitar a leitura das informações. A compartimentalização é aplicada aos níveis. Recomendamos que você defina a compartimentalização quando houver a possibilidade de muitos valores diferentes.
+* **Compartimentalização** - Em alguns campos, é possível definir a compartimentalização para agrupar valores e facilitar a leitura das informações. A compartimentalização é aplicada aos níveis. Recomendamos que você defina a compartimentalização quando houver a possibilidade de muitos valores diferentes.
 
-* **Medição** - As medidas mais frequentes são soma, média, máxima, mínimo, desvio-padrão, etc. As medidas podem ser calculadas: por exemplo, a taxa de aceitação de uma oferta é a razão do número de vezes que foi apresentada em comparação ao número de vezes que foi aceita.
+* **Medida** - As medidas mais frequentes são: soma, média, máximo, mínimo, desvio padrão, etc. As medidas podem ser calculadas: por exemplo, a taxa de aceitação de uma oferta é a razão do número de vezes que foi apresentada em comparação ao número de vezes que foi aceita.
 
 ## Espaço de trabalho do cubo {#cube-workspace}
 
@@ -91,4 +91,4 @@ Os principais contextos de uso para cubos são:
 
    ![](assets/s_advuser_cube_in_report.png)
 
-   Para obter mais informações, consulte [Explorar os dados em um relatório](../../reporting/using/using-cubes-to-explore-data.md#exploring-the-data-in-a-report).
+   Para saber mais, consulte [Explorar os dados em um relatório](../../reporting/using/using-cubes-to-explore-data.md#exploring-the-data-in-a-report).
