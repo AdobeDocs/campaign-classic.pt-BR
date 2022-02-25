@@ -5,9 +5,9 @@ description: Regras de pressão
 feature: Fatigue Management, Typology Rules
 exl-id: c23212f2-fdf8-4820-b389-546f7c84db27
 source-git-commit: 90c52ec144a6a3c1b534a80507e38fa3ed64fc83
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '3285'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -287,7 +287,7 @@ Durante a análise de delivery, os recipients do delivery são excluídos, se ap
 
    ![](assets/campaign_opt_pressure_sample_1_10.png)
 
-### Calcule o peso do delivery com base em comportamento {#calculating-the-delivery-weight-based-on-behavior}
+### Calcular o peso do delivery com base no comportamento {#calculating-the-delivery-weight-based-on-behavior}
 
 Você pode definir regras de pressão com base no comportamento do recipient: assim, o peso de um delivery pode se adaptar a critérios que variam de um recipient a outro. Você pode decidir enviar uma mensagem dependendo se um recipient visitou o seu site de Internet, clicou em uma seção específica do último boletim informativo, se inscreveu em um serviço de informação ou até mesmo com base nas respostas de uma pesquisa, um jogo online etc.
 
@@ -313,7 +313,7 @@ Aplique as seguintes etapas de configuração:
 1. Clique em **[!UICONTROL Finish]** para salvar essa regra.
 1. Vincule a regra a uma tipologia de campanha e faça referência a essa tipologia em uma entrega para aprová-la.
 
-### Enviar apenas as mensagens com maior peso {#sending-only-the-highest-weighted-messages}
+### Enviar somente as mensagens com maior peso {#sending-only-the-highest-weighted-messages}
 
 Você deseja enviar não mais do que 2 mensagens na mesma semana, com um limite de 2 mensagens por dia a cada um dos recipients, e você deseja que apenas as mensagens com pesos maiores sejam entregues.
 
@@ -333,7 +333,7 @@ Primeiro, configure a regra de pressão.
 
    ![](assets/campaign_opt_pressure_example_1.png)
 
-   São consideradas no cálculo os deliveries realizados até 7 dias antes da data de delivery e os programadas até 7 dias após a data de delivery. Para obter mais informações, consulte [Definir o período](#setting-the-period).
+   São considerados no cálculo os deliveries realizados até 7 dias antes da data de delivery e os programados até 7 dias após a data de delivery. Para obter mais informações, consulte [Definir o período](#setting-the-period).
 
    >[!AVAILABILITY]
    >Os deliveries agendados não podem ser considerados no Campaign v8.
