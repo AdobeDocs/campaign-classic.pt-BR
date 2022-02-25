@@ -1,13 +1,13 @@
 ---
 product: campaign
 title: Sincronizar aplicativos web
-description: Saiba como sincronizar aplicativos Web com o ACS Connector
+description: Saiba como sincronizar aplicativos web com o ACS Connector
 feature: ACS Connector
 exl-id: 975bdc94-5da4-45ae-a3bd-e8674b447098
 source-git-commit: c54102b2ec32fbea89ce41dd3c9fedb98e612996
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '801'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -23,11 +23,11 @@ Se você tiver muitos serviços e aplicações Web no Campaign v7, talvez opte p
 
 Para isso, é necessário:
 
-* Os recipients armazenados no banco de dados do Campaign v7 e sincronizados com o Campaign Standard. Consulte a [Sincronizar perfis](../../integrations/using/synchronizing-profiles.md) seção.
-* um serviço e uma aplicação Web criado e publicado no Campaign v7.
+* Os recipients armazenados no banco de dados do Campaign v7 e sincronizados com o Campaign Standard. Consulte a seção [Sincronizar perfis](../../integrations/using/synchronizing-profiles.md).
+* um serviço e um aplicativo web criado e publicado no Campaign v7.
 * o aplicativo web deve conter uma atividade **[!UICONTROL Pre-loading]** usando o método de identificação **[!UICONTROL Adobe Campaign encryption]**.
 
-## Criar a aplicação web e o serviço {#creating-the-web-application-and-service}
+## Criar o serviço e aplicativo web {#creating-the-web-application-and-service}
 
 No Campaign v7, você pode criar aplicações Web que permitem aos recipients assinar um serviço. Os serviço e aplicação Web foram projetados e armazenados no Campaign v7 e você pode atualizar esse serviço por uma comunicação no Campaign Standard. Para obter mais informações sobre aplicações Web no Campaign v7, consulte [esta seção](../../web/using/adding-fields-to-a-web-form.md#subscription-checkboxes).
 
@@ -80,7 +80,7 @@ Para verificar se os dados foram replicados corretamente, siga essas etapas no C
 
    ![](assets/acs_connect_lp_10.png)
 
-## Projetar e enviar o email {#designing-and-sending-the-email}
+## Criar e enviar o email {#designing-and-sending-the-email}
 
 Nessa parte, veremos como incluir um link, em um email do Campaign Standard, na landing page replicada de uma aplicação Web do Campaign v7.
 
