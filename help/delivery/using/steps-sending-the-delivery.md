@@ -4,9 +4,9 @@ title: Configurar e enviar o delivery
 description: Saiba como configurar e enviar o delivery
 exl-id: 0411686e-4f13-401e-9333-e14b05ebe9cd
 source-git-commit: 1e11b7419388698f5de366cbeddf2be88ef12873
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1526'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
@@ -32,7 +32,7 @@ Antes de enviar o delivery, você poderá definir os parâmetros de envio nas pr
    >
    >Quando o delivery é duplicado, o parâmetro é redefinido.
 
-* **[!UICONTROL Send using multiple waves]**: Para obter mais informações, consulte [Enviar usando várias ondas](#sending-using-multiple-waves).
+* **[!UICONTROL Send using multiple waves]**: para obter mais informações, consulte [Enviar usando várias ondas](#sending-using-multiple-waves).
 
 * **[!UICONTROL Test SMTP delivery]**: essa opção permite testar o envio de um delivery via SMTP. O delivery é processado para conexão com o servidor SMTP, mas não é enviado.
 
@@ -42,7 +42,7 @@ Antes de enviar o delivery, você poderá definir os parâmetros de envio nas pr
 
 * **[!UICONTROL Email BCC]**: essa opção permite armazenar emails em um sistema externo por meio do CCO simplesmente adicionando um endereço de email de CCO ao target da sua mensagem. Para obter mais informações, consulte [esta seção](sending-messages.md#archiving-emails).
 
-## Confirme a delivery {#confirming-delivery}
+## Confirmar o delivery {#confirming-delivery}
 
 Depois que o delivery estiver configurado e pronto para ser enviado, certifique-se de executar a análise do delivery.
 
@@ -60,7 +60,7 @@ Após enviar as mensagens, você pode monitorar e rastrear seus deliveries. Para
 * [Entender as falhas de delivery](understanding-delivery-failures.md)
 * [Sobre o rastreamento de mensagens](about-message-tracking.md)
 
-## Programar o envio do delivery {#scheduling-the-delivery-sending}
+## Agendar o envio do delivery {#scheduling-the-delivery-sending}
 
 É possível adiar a entrega de mensagens para agendar a entrega ou gerenciar as regras de pressão e evitar o excesso de solicitações em relação a uma população.
 
@@ -176,7 +176,7 @@ Para instalações no local e instalações hospedadas/híbridas usando o MTA he
 
 ![](assets/s_ncs_user_wizard_retry_param.png)
 
-Por padrão, cinco tentativas são agendadas para o primeiro dia do delivery com um intervalo mínimo de uma hora distribuída pelas 24 horas do dia. Uma nova tentativa por dia é programada depois disso e até o prazo do delivery, que é definido em **[!UICONTROL Validity]** guia . Consulte [Definir o período de validade](#defining-validity-period).
+Por padrão, cinco tentativas são agendadas para o primeiro dia do delivery, com um intervalo mínimo de uma hora distribuído pelas 24 horas do dia. Uma nova tentativa por dia é programada depois disso e até o prazo do delivery, que é definido na guia **[!UICONTROL Validity]**. Consulte [Definir o período de validade](#defining-validity-period).
 
 ## Definir o período de validade {#defining-validity-period}
 
