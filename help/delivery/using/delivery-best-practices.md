@@ -5,13 +5,13 @@ description: Saiba mais sobre as práticas recomendadas ao projetar e enviar um 
 feature: Deliverability
 exl-id: eb5ad5a4-f640-4b26-b04f-b5567761d996
 source-git-commit: 90c52ec144a6a3c1b534a80507e38fa3ed64fc83
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '103'
-ht-degree: 91%
+ht-degree: 100%
 
 ---
 
-# Práticas recomendadas de entrega {#delivery-best-practices}
+# Práticas recomendadas de delivery {#delivery-best-practices}
 
 ![](../../assets/common.svg)
 
