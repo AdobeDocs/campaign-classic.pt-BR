@@ -5,13 +5,13 @@ description: Saiba mais sobre como direcionar dados em um workflow
 feature: Query Editor, Data Management
 exl-id: 74b82019-bdab-4442-84cf-5ad18d0db788
 source-git-commit: f05eefc9945c4ead89eb448b6e28c3523559e055
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1924'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
-# Dados do target{#targeting-data}
+# Dados do público alvo{#targeting-data}
 
 ![](../../assets/common.svg)
 
@@ -51,7 +51,7 @@ As coleções são mostradas na subguia **[!UICONTROL Collections]**. Você pode
 
 ![](assets/query_add_columns_collection.png)
 
-### Refine o target usando dados adicionais {#refining-the-target-using-additional-data}
+### Refinar o público alvo usando dados adicionais {#refining-the-target-using-additional-data}
 
 Os dados adicionais coletados podem capacitá-lo a refinar a filtragem de dados no banco de dados. Para fazer isso, clique no link **[!UICONTROL Refine the target using additional data...]**: isso permite filtrar os dados adicionados.
 
@@ -77,9 +77,9 @@ Você pode dividir um target em vários subconjuntos usando apenas dados adicion
 
 Para obter mais informações, consulte [Criação de subconjuntos usando a atividade Split](#creating-subsets-using-the-split-activity).
 
-## Dados do segmento {#segmenting-data}
+## Segmentar dados {#segmenting-data}
 
-### Combinar vários targets (União) {#combining-several-targets--union-}
+### Combinar vários públicos alvos (União) {#combining-several-targets--union-}
 
 A atividade de união permite combinar o resultado de várias atividades em uma transição. Os conjuntos não precisam ser necessariamente homogêneos.
 
@@ -117,7 +117,7 @@ As seguintes opções de reconciliação de dados estão disponíveis:
 
    ![](assets/join_limit_nb_priority.png)
 
-### Extrair dados da junção (Interseção) {#extracting-joint-data--intersection-}
+### Extrair dados conjuntos (Intersecção) {#extracting-joint-data--intersection-}
 
 ![](assets/traitements.png)
 
@@ -127,7 +127,7 @@ Além disso, é possível manter apenas uma seleção de colunas ou apenas as co
 
 A atividade de intersecção é detalhada na seção [Intersection](intersection.md).
 
-### Excluir um público (Exclusão) {#excluding-a-population--exclusion-}
+### Excluir uma população (Exclusão) {#excluding-a-population--exclusion-}
 
 A atividade de exclusão permite excluir os elementos de um target de um público alvo diferente. O targeting dimension de output dessa atividade será do conjunto principal.
 
