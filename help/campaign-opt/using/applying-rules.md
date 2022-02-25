@@ -4,9 +4,9 @@ title: Aplicar regras de tipologia
 description: Saiba como aplicar regras de tipologia
 exl-id: 09ec0fc0-76ed-4c73-8bdf-c931e2103aa9
 source-git-commit: 808f459a0b77b1787fc017c031247ab268b5aafa
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '983'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
