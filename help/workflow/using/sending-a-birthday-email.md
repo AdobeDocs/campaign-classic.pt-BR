@@ -1,11 +1,11 @@
 ---
 product: campaign
 title: Enviar email de aniversário
-description: Saiba como enviar um email de aniversário com um workflow
+description: Saiba como enviar um email de aniversário com um fluxo de trabalho
 feature: Workflows
 exl-id: 38006cca-e945-4b9d-8e2d-ed537b8541d9
 source-git-commit: f05eefc9945c4ead89eb448b6e28c3523559e055
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '879'
 ht-degree: 100%
 
