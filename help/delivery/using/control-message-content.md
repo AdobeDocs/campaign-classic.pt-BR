@@ -1,17 +1,17 @@
 ---
 product: campaign
-title: Sobre a deliverability do Adobe Campaign Classic
-description: Saiba mais sobre como gerenciar a deliverability no Adobe Campaign
+title: Sobre a capacidade de delivery do Adobe Campaign Classic
+description: Saiba mais sobre como gerenciar a capacidade de delivery no Adobe Campaign
 feature: Deliverability
 exl-id: dcd3a9f9-5fe9-4c28-a4a5-5aed67b036ab
 source-git-commit: 56459b188ee966cdb578c415fcdfa485dcbed355
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '760'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
-# Controle o conteúdo da mensagem{#control-message-content}
+# Controlar conteúdo da mensagem{#control-message-content}
 
 ![](../../assets/common.svg)
 
