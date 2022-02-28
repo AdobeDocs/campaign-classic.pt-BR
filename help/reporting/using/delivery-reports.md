@@ -4,10 +4,10 @@ title: Relatórios de delivery
 description: Relatórios de delivery
 feature: Reporting
 exl-id: 74feb13f-0994-4a6a-ae4f-2538b07cc9c0
-source-git-commit: 81716a30a57d3ed8542b329d5fb9b0443fd4bf31
-workflow-type: ht
-source-wordcount: '1443'
-ht-degree: 100%
+source-git-commit: 64d97c7879320296a5f8efc5bb5bc2bea8663c08
+workflow-type: tm+mt
+source-wordcount: '1451'
+ht-degree: 98%
 
 ---
 
@@ -63,7 +63,7 @@ Este relatório combina os indicadores principais para rastrear o comportamento 
 >
 >As porcentagens relacionadas são calculadas com base no número de mensagens encaminhadas com êxito.
 
-* **[!UICONTROL Distinct opens for the population reached]** : Estimativa do número de recipients alvos que abriram uma mensagem pelo menos uma vez. Cliques em links de unsubscription e mirror pages são considerados.
+* **[!UICONTROL Distinct opens for the population reached]** : Estimativa do número de recipients alvos que abriram uma mensagem pelo menos uma vez. Cliques em URLs rastreados são considerados, pois os emails precisam ser abertos para clicar em um link.
 * **[!UICONTROL Sum of opens for the population reached]** : Estimativa do número total de aberturas por recipients alvos.
 * **[!UICONTROL Clicks on opt-out link]** : Número de cliques no link unsubscription.
 * **[!UICONTROL Clicks on the mirror page link]** : Número de cliques no link para a mirror page. Para ser considerado, o link deve ser definido como tal no assistente do delivery (URLs rastreadas). Consulte esta [página](../../delivery/using/about-delivery-monitoring.md).

@@ -5,10 +5,10 @@ description: Introdução à implementação dos acionadores da Adobe Experience
 audience: integrations
 content-type: reference
 exl-id: 0e337620-a49f-4e14-8c67-9279d74736f1
-source-git-commit: af40fe822c69979a478604595790d4deefd6d5b0
+source-git-commit: 0a59b0dbdbe70cf8993ce7153b8f3c049c1f1108
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '235'
+ht-degree: 88%
 
 ---
 
@@ -20,7 +20,7 @@ ht-degree: 0%
 
 >[!CAUTION]
 >
->Esse recurso não está disponível para uso imediato como parte do produto. A implementação exige o engajamento da Adobe Consulting. Entre em contato com seu representante da Adobe para obter mais detalhes
+>Esse recurso não está disponível para uso imediato como parte do produto. Para esta implementação, primeiro você precisa abrir um tíquete com Suporte ao Adobe. Você poderá seguir as etapas detalhadas neste [página](../../integrations/using/configuring-pipeline.md#prerequisites).
 
 O [!DNL Triggers] executa ações de marketing em um curto intervalo de tempo após a ação de um usuário. O tempo médio de resposta é de menos de uma hora.
 
