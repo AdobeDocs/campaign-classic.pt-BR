@@ -5,9 +5,9 @@ description: Noções básicas sobre gestão de quarentena
 feature: Monitoring
 exl-id: cfd8f5c9-f368-4a31-a1e2-1d77ceae5ced
 source-git-commit: afe4329fd230f30e48bfbf5ac2073ca95a6fd04e
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2837'
-ht-degree: 82%
+ht-degree: 100%
 
 ---
 
@@ -31,21 +31,21 @@ Além disso, a quarentena ajuda a reduzir os custos de envio de SMS, excluindo n
 
 Para obter mais informações sobre as práticas recomendadas para proteger e otimizar seus deliveries, consulte [esta página](delivery-best-practices.md).
 
-### Quarentena × lista de bloqueios {#quarantine-vs-denylist}
+### Quarentena versus Lista de bloqueios {#quarantine-vs-denylist}
 
 A quarentena e a lista de bloqueios não se aplicam ao mesmo objeto:
 
-* **Quarentena** se aplica somente a um **endereço** (ou número de telefone, etc.), não no próprio perfil. Por exemplo, um perfil cujo endereço de email está em quarentena pode atualizar seu perfil e inserir um novo endereço e pode ser alvo de ações de delivery novamente. Da mesma forma, se dois perfis tiverem o mesmo número de telefone, eles serão afetados se o número estiver em quarentena.
+* A **quarentena** se aplica somente a um **endereço** (ou número de telefone etc.), não ao próprio perfil. Por exemplo, um perfil cujo endereço de email esteja em quarentena pode atualizar seu perfil e inserir um novo endereço, podendo então ser direcionado em ações de delivery novamente. Da mesma forma, se dois perfis tiverem o mesmo número de telefone, ambos serão afetados se o número estiver em quarentena.
 
-   Os endereços em quarentena ou os números de telefone são exibidos na variável [logs de exclusão](#identifying-quarantined-addresses-for-a-delivery) (para um delivery) ou na variável [lista de quarentena](#identifying-quarantined-addresses-for-the-entire-platform) (para toda a plataforma).
+   Os endereços em quarentena ou os números de telefone são exibidos nos [logs de exclusão](#identifying-quarantined-addresses-for-a-delivery) (para um delivery) ou na [lista de quarentena](#identifying-quarantined-addresses-for-the-entire-platform) (para toda a plataforma).
 
-* Estando no **lista de bloqueios**, por outro lado, resultará em **perfil** O não está mais sendo direcionado pelo delivery, como após um cancelamento de subscrição (opt-out), para um determinado canal. Por exemplo, se um perfil na  lista de bloqueios para o canal de email tiver dois endereços de email, ambos os endereços serão excluídos do delivery.
+* Por outro lado, com a inclusão na **lista de bloqueios**, o **perfil** não será mais direcionado pelo delivery, por exemplo, depois de um cancelamento de inscrição (recusa de participação) de um determinado canal. Por exemplo, se um perfil na lista de bloqueios para o canal de email tiver dois endereços de email, ambos os endereços serão excluídos do delivery.
 
-   Você pode verificar se um perfil está na lista de bloqueios para um ou mais canais na **[!UICONTROL No longer contact]** da seção do perfil **[!UICONTROL General]** guia . Consulte [esta seção](../../platform/using/editing-a-profile.md#general-tab).
+   Você pode verificar se um perfil está na lista de bloqueios para um ou mais canais na seção **[!UICONTROL No longer contact]** da guia **[!UICONTROL General]** do perfil. Consulte [esta seção](../../platform/using/editing-a-profile.md#general-tab).
 
 >[!NOTE]
 >
->A quarentena inclui uma **[!UICONTROL Denylisted]** , que se aplica quando os recipients relatam sua mensagem como spam ou respondem a uma mensagem SMS com uma palavra-chave como &quot;PARAR&quot;. Nesse caso, o endereço envolvido do perfil ou o número de telefone é enviado para quarentena com o **[!UICONTROL Denylisted]** status. Para obter mais informações sobre como gerenciar mensagens SMS STOP, consulte [esta seção](../../delivery/using/sms-send.md#processing-inbound-messages).
+>A quarentena inclui um status **[!UICONTROL Denylisted]**, que se aplica quando os recipients marcam sua mensagem como spam ou respondem a uma mensagem SMS com uma palavra-chave como &quot;PARAR&quot;. Nesse caso, o endereço envolvido do perfil ou o número de telefone é enviado para quarentena com o status **[!UICONTROL Denylisted]**. Para obter mais informações sobre como gerenciar mensagens SMS PARAR, consulte [esta seção](../../delivery/using/sms-send.md#processing-inbound-messages).
 
 ## Identificar endereços em quarentena {#identifying-quarantined-addresses}
 
@@ -96,12 +96,12 @@ Você pode consultar o status do endereço de email de qualquer recipient. Para 
 
 ### Remover um endereço em quarentena {#removing-a-quarantined-address}
 
-Caso necessário, você pode remover manualmente um endereço da lista da quarentena. Além disso, os endereços que correspondem a condições específicas são automaticamente excluídos da lista de quarentena pelo [Limpeza do banco de dados](../../production/using/database-cleanup-workflow.md) fluxo de trabalho.
+Caso necessário, você pode remover manualmente um endereço da lista da quarentena. Além disso, os endereços que correspondem a condições específicas são automaticamente excluídos da lista de quarentena pelo fluxo de trabalho [Limpeza do banco de dados](../../production/using/database-cleanup-workflow.md). 
 
 Para remover manualmente um endereço da lista da quarentena, execute uma das ações abaixo.
 
 >[!IMPORTANT]
-Excluir manualmente um endereço de email da quarentena significa que você reiniciará o delivery para esse endereço. Consequentemente, isso pode ter graves impactos na capacidade de entrega e reputação do IP, o que pode eventualmente levar ao bloqueio do seu endereço IP ou domínio de envio. Continue com muito cuidado ao considerar a remoção de qualquer endereço da quarentena. Em caso de dúvida, entre em contato com um especialista em deliverability.
+Excluir manualmente um endereço de email da quarentena significa que você reiniciará o delivery para esse endereço. Consequentemente, isso pode ter graves impactos na sua capacidade de entrega e reputação de IP, o que pode eventualmente levar ao bloqueio do seu endereço IP ou domínio de envio. Continue com muito cuidado ao considerar a remoção de qualquer endereço da quarentena. Em caso de dúvidas, entre em contato com um especialista em capacidade de delivery.
 
 * É possível alterar seu status para **[!UICONTROL Valid]** a partir do nó **[!UICONTROL Administration > Campaign Management > Non deliverables Management > Non deliverables and addresses]**.
 
@@ -120,24 +120,24 @@ O status muda então para **[!UICONTROL Valid]**.
 >[!IMPORTANT]
 Os recipients com um endereço em um status **[!UICONTROL Quarantine]** ou **[!UICONTROL Denylisted]** nunca serão removidos, mesmo se receberem um email.
 
-Para instalações hospedadas ou híbridas, se você tiver atualizado para a variável [MTA aprimorado](sending-with-enhanced-mta.md), o número máximo de tentativas a efetuar em caso de **[!UICONTROL Erroneous]** O status e o atraso mínimo entre tentativas agora se baseiam no desempenho histórico e atual de um IP em um determinado domínio.
+Para instalações hospedadas ou híbridas, se você tiver atualizado para o [MTA aprimorado](sending-with-enhanced-mta.md), o número máximo de tentativas a efetuar em caso de status **[!UICONTROL Erroneous]**, e o atraso mínimo entre tentativas agora se baseiam no desempenho histórico e atual de um IP em um determinado domínio.
 
-Para instalações no local e instalações hospedadas/híbridas usando o MTA herdado do Campaign, você pode modificar o número de erros e o período entre dois erros. Para fazer isso, altere as configurações correspondentes na [assistente de implantação](../../installation/using/deploying-an-instance.md) (**[!UICONTROL Email channel]** > **[!UICONTROL Advanced parameters]**) ou [no nível do delivery](../../delivery/using/steps-sending-the-delivery.md#configuring-retries).
+Para instalações no local e instalações hospedadas/híbridas usando o MTA herdado do Campaign, você pode modificar o número de erros e o período entre dois erros. Para fazer isso, altere as configurações correspondentes no [assistente de implantação](../../installation/using/deploying-an-instance.md) (**[!UICONTROL Email channel]** > **[!UICONTROL Advanced parameters]**) ou [no nível do delivery](../../delivery/using/steps-sending-the-delivery.md#configuring-retries).
 
 ## Condições para enviar um endereço para quarentena {#conditions-for-sending-an-address-to-quarantine}
 
-O Adobe Campaign gerencia a quarentena de acordo com o tipo de falha do delivery e o motivo atribuído durante a qualificação das mensagens de erro (consulte [Qualificação de email de devolução](understanding-delivery-failures.md#bounce-mail-qualification) e [Tipos e motivos de falha de delivery](understanding-delivery-failures.md#delivery-failure-types-and-reasons)).
+O Adobe Campaign gerencia a quarentena de acordo com o tipo de falha do delivery e o motivo atribuído durante a qualificação de mensagens de erro (consulte [Qualificação de emails de devolução](understanding-delivery-failures.md#bounce-mail-qualification) e os [tipos e motivos de falha de delivery](understanding-delivery-failures.md#delivery-failure-types-and-reasons)).
 
 * **Erro ignorado**: os erros ignorados não enviam um endereço para quarentena.
 * **Erro grave**: o endereço de email correspondente é enviado imediatamente para quarentena.
 * **Erro suave**: erros suaves não enviam um endereço imediatamente para quarentena, mas incrementam um contador de erros. Para obter mais informações, consulte [Gerenciamento de erros leves](#soft-error-management).
 
-Se um usuário qualificar um email como spam ([loop de feedback](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/transition-process/infrastructure.html?lang=pt-BR#feedback-loops)), a mensagem será automaticamente redirecionada para uma caixa de entrada técnica gerenciada pela Adobe. Em seguida, o endereço de email do usuário será enviado automaticamente para quarentena com o status **[!UICONTROL Denylisted]**. Esse status se refere somente ao endereço, o perfil não está na lista de bloqueios, portanto, o usuário continua recebendo mensagens SMS e notificações por push.
+Se um usuário qualificar um email como spam ([loop de feedback](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/transition-process/infrastructure.html?lang=pt-BR#feedback-loops)), a mensagem será automaticamente redirecionada para uma caixa de entrada técnica gerenciada pela Adobe. Em seguida, o endereço de email do usuário será enviado automaticamente para quarentena com o status **[!UICONTROL Denylisted]**. Esse status se refere apenas ao endereço. O perfil não é incluído na lista de bloqueio para que o usuário continue recebendo mensagens SMS e notificações por push.
 
 >[!NOTE]
 A quarentena no Adobe Campaign diferencia maiúsculas de minúsculas. Certifique-se de importar endereços de email em letras minúsculas, para que não sejam redirecionados posteriormente.
 
-Na lista de endereços em quarentena (consulte [Identificação de endereços em quarentena para toda a plataforma](#identifying-quarantined-addresses-for-the-entire-platform)), **[!UICONTROL Error reason]** indica por que o endereço selecionado foi colocado em quarentena.
+Na lista de endereços em quarentena (consulte [Identificação de endereços em quarentena para toda a plataforma](#identifying-quarantined-addresses-for-the-entire-platform)), o campo **[!UICONTROL Error reason]** indica por que o endereço selecionado foi colocado em quarentena.
 
 ![](assets/tech_quarant_error_reasons.png)
 
@@ -145,7 +145,7 @@ Na lista de endereços em quarentena (consulte [Identificação de endereços em
 
 Ao contrário de erros graves, os erros recuperáveis não enviam um endereço imediatamente para quarentena, mas incrementam um contador de erros.
 
-As tentativas serão executadas durante a [duração do delivery](../../delivery/using/steps-sending-the-delivery.md#defining-validity-period). Quando o contador de erros atinge o limite da cota, o endereço vai para a quarentena. Para obter mais informações, consulte [Tentativas após uma falha temporária de delivery](understanding-delivery-failures.md#retries-after-a-delivery-temporary-failure).
+As tentativas serão executadas no decorrer da [duração do delivery](../../delivery/using/steps-sending-the-delivery.md#defining-validity-period). Quando o contador de erros atinge o limite da cota, o endereço vai para a quarentena. Para obter mais informações, consulte [Tentativas após uma falha temporária de delivery](understanding-delivery-failures.md#retries-after-a-delivery-temporary-failure).
 
 O contador de erros será reinicializado se o último erro significativo ocorrer há mais de 10 dias. O status do endereço é alterado para **Válido** e excluído da lista de quarentenas pelo workflow de [limpeza do banco de dados](../../production/using/database-cleanup-workflow.md).
 
