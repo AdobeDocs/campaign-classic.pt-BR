@@ -1,19 +1,17 @@
 ---
 product: campaign
-title: Caso de uso – criação de um delivery de email
-description: Criação de um caso de uso de delivery de email
-audience: web
-content-type: reference
-topic-tags: editing-html-content
+title: Caso de uso - criar um delivery de email
+description: Caso de uso - criar um delivery de email
+feature: Web Apps, Web Forms, Landing Pages
 exl-id: e2679f12-459b-466d-9c82-60a28363b104
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: b6f1556cf49492cefaf61c29a058584b0ccee16a
 workflow-type: tm+mt
 source-wordcount: '734'
-ht-degree: 100%
+ht-degree: 98%
 
 ---
 
-# Caso de uso: criação de uma entrega de email{#use-case-creating-an-email-delivery}
+# Caso de uso: criar uma entrega de email{#use-case-creating-an-email-delivery}
 
 ![](../../assets/common.svg)
 

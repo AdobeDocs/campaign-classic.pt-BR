@@ -2,11 +2,9 @@
 product: campaign
 title: Publicar, rastrear e usar dados coletados
 description: Saiba como publicar, rastrear e usar dados coletados em uma pesquisa
-audience: web
-content-type: reference
-topic-tags: online-surveys
+feature: Surveys
 exl-id: 3cf3c486-6640-4d67-95cf-50d5767deb60
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: 36e546a34d8c2345fefed5d459095a76c6224a38
 workflow-type: tm+mt
 source-wordcount: '831'
 ht-degree: 100%

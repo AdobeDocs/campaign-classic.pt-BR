@@ -1,12 +1,10 @@
 ---
 product: campaign
-title: Criação de uma aplicação web
-description: Criação de uma aplicação web
-audience: web
-content-type: reference
-topic-tags: web-applications
+title: Criar um aplicativo web
+description: Criar um aplicativo web
+feature: Web Apps
 exl-id: dcdf6afc-321e-4027-a350-fff6bbf22e71
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: b6f1556cf49492cefaf61c29a058584b0ccee16a
 workflow-type: tm+mt
 source-wordcount: '256'
 ht-degree: 100%

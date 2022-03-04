@@ -1,11 +1,11 @@
 ---
 product: campaign
-title: Criação da lista de resumo
-description: Criação da lista de resumo
-feature: Workflows
+title: Criar uma lista de resumo
+description: Criar uma lista de resumo
+feature: Workflows, Data Management
 exl-id: 39cec42a-c7ac-41b1-8f61-799b559ce002
-source-git-commit: f05eefc9945c4ead89eb448b6e28c3523559e055
-workflow-type: ht
+source-git-commit: b94c4bfd478b4a8fbcefe6341608dd6a14bb31d3
+workflow-type: tm+mt
 source-wordcount: '974'
 ht-degree: 100%
 

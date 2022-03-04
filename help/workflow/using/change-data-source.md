@@ -1,11 +1,9 @@
 ---
 title: Alterar fonte de dados
 description: Saiba mais sobre a atividade de Alteração da fonte de dados
-audience: workflow
-content-type: reference
-topic-tags: targeting-activities
+feature: Workflows, Data Management, Federated Data Access
 exl-id: d7bf9d62-6f9e-415f-8160-446210f6392e
-source-git-commit: 31483bdd2e0a2dd0676ef391c5484e4b778317c1
+source-git-commit: b94c4bfd478b4a8fbcefe6341608dd6a14bb31d3
 workflow-type: tm+mt
 source-wordcount: '267'
 ht-degree: 100%

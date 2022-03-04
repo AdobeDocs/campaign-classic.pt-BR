@@ -1,19 +1,17 @@
 ---
 product: campaign
-title: Carregamento de conteúdo de delivery
-description: Carregamento de conteúdo de delivery
-audience: workflow
-content-type: reference
-topic-tags: use-cases
+title: Carregar conteúdo de entrega
+description: Carregamento de conteúdo de entrega
+feature: Workflows
 exl-id: a52baffd-402b-4b33-ab72-ac954e4dee85
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: b94c4bfd478b4a8fbcefe6341608dd6a14bb31d3
 workflow-type: tm+mt
 source-wordcount: '317'
 ht-degree: 100%
 
 ---
 
-# Carregamento de conteúdo de delivery{#loading-delivery-content}
+# Carregar conteúdo de entrega{#loading-delivery-content}
 
 ![](../../assets/common.svg)
 

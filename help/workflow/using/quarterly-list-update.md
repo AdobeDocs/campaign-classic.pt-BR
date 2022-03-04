@@ -2,12 +2,10 @@
 product: campaign
 title: Atualização da lista trimestral usando um query incremental
 description: Neste caso de uso, um query incremental é usado para atualizar automaticamente uma lista de recipients.
-audience: workflow
-content-type: reference
-topic-tags: targeting-activities
+feature: Workflows
 exl-id: 0d3e7046-313a-42a6-9155-3365e8d60bac
-source-git-commit: 3b523e53440ba6ae107b597c7ebf226195126bde
-workflow-type: ht
+source-git-commit: b94c4bfd478b4a8fbcefe6341608dd6a14bb31d3
+workflow-type: tm+mt
 source-wordcount: '274'
 ht-degree: 100%
 

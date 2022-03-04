@@ -1,10 +1,11 @@
 ---
 product: campaign
-title: Início do fluxo de trabalho
+title: Iniciar o fluxo de trabalho
 description: Saiba como executar testes A/B por meio de um caso de uso dedicado
+feature: A/B Testing
 exl-id: 9528b67a-8ba7-45d6-a2c0-06ac117d5324
-source-git-commit: 90c52ec144a6a3c1b534a80507e38fa3ed64fc83
-workflow-type: ht
+source-git-commit: 9839dbacda475c2a586811e3c4f686b1b1baab05
+workflow-type: tm+mt
 source-wordcount: '85'
 ht-degree: 100%
 

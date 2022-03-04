@@ -1,12 +1,10 @@
 ---
 product: campaign
-title: Criação de uma nova aplicação web
-description: Criação de uma nova aplicação web
-audience: web
-content-type: reference
-topic-tags: web-applications
+title: Criar um novo aplicativo Web
+description: Criar um novo aplicativo Web
+feature: Web Apps
 exl-id: 5ccf5a21-48aa-4c0d-8cc8-457eb07d9f74
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: b6f1556cf49492cefaf61c29a058584b0ccee16a
 workflow-type: tm+mt
 source-wordcount: '361'
 ht-degree: 100%
@@ -25,7 +23,7 @@ Vá para a guia **Campaigns** e selecione o menu **[!UICONTROL Web Applications]
 
 >[!NOTE]
 >
->Sempre proteja as páginas que podem conter informações pessoais. Consulte a [lista de verificação de segurança e privacidade.](https://helpx.adobe.com/br/campaign/kb/acc-security.html#privacy)
+>Sempre proteja as páginas que podem conter informações pessoais. Consulte a [lista de verificação de segurança e privacidade.](https://helpx.adobe.com/br/campaign/kb/acc-security.html)
 
 Esse template determina o tipo de aplicação web. É possível criar:
 

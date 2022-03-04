@@ -1,19 +1,17 @@
 ---
 product: campaign
-title: Acesso a um banco de dados externo (FDA)
-description: Acesso a um banco de dados externo (FDA)
-audience: workflow
-content-type: reference
-topic-tags: advanced-management
+title: Acessar um banco de dados externo (FDA)
+description: Acessar um banco de dados externo (FDA)
+feature: Workflows, Data Management, Federated Data Access
 exl-id: 9500a7ba-263d-425b-8cc3-b111c6b9108f
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: b94c4bfd478b4a8fbcefe6341608dd6a14bb31d3
 workflow-type: tm+mt
 source-wordcount: '97'
-ht-degree: 100%
+ht-degree: 84%
 
 ---
 
-# Acesso a um banco de dados externo (FDA){#accessing-an-external-database-fda}
+# Acessar um banco de dados externo (FDA){#accessing-an-external-database-fda}
 
 ![](../../assets/common.svg)
 

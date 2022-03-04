@@ -1,12 +1,13 @@
 ---
 product: campaign
-title: Iniciar um workflow
+title: Iniciar um fluxo de trabalho
 description: Saiba como iniciar e descobrir as ações de workflow na barra de ferramentas e clique com o botão direito do mouse no menu
+feature: Workflows
 exl-id: d345ba62-c2fb-43df-a2a1-e9e4292d301a
-source-git-commit: 3b523e53440ba6ae107b597c7ebf226195126bde
-workflow-type: ht
-source-wordcount: '772'
-ht-degree: 100%
+source-git-commit: 9126e2cc088ef0e5761cc20bd19980d323f3a3ea
+workflow-type: tm+mt
+source-wordcount: '797'
+ht-degree: 94%
 
 ---
 
@@ -46,7 +47,9 @@ Os botões da barra de ferramentas são detalhados nesta [seção](../../campaig
 
    Esta ação interrompe um workflow sendo executado no momento. O status da instância é definido como **Concluído**. Se possível, as operações em andamento são interrompidas. Importações e queries SQL são canceladas imediatamente.
 
-   A interrupção é um processo assíncrono. A solicitação é registrada, então o servidor de workflow ou servidores cancelam as operações em andamento. A interrupção de uma instância de workflow pode demorar, especialmente se o workflow estiver em execução em vários servidores, cada um deles deve assumir o controle para cancelar as tarefas em andamento.
+   >[!IMPORTANT]
+   >
+   >A interrupção de um fluxo de trabalho é um processo assíncrono: A solicitação é registrada, então o servidor de workflow ou servidores cancelam as operações em andamento. A interrupção de uma instância de workflow pode demorar, especialmente se o workflow estiver em execução em vários servidores, cada um deles deve assumir o controle para cancelar as tarefas em andamento. Para evitar qualquer problema, aguarde a conclusão da operação de interrupção e não execute várias solicitações de interrupção no mesmo workflow.
 
 * **[!UICONTROL Restart]**
 

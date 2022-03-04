@@ -2,14 +2,12 @@
 product: campaign
 title: Práticas recomendadas do fluxo de trabalho
 description: Conheça as práticas recomendadas do workflow do Campaign
-audience: workflow
-content-type: reference
-topic-tags: -general-operation
+feature: Workflows
 exl-id: 39c57f61-2629-4214-91e4-cb97dc039deb
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: 9126e2cc088ef0e5761cc20bd19980d323f3a3ea
 workflow-type: tm+mt
-source-wordcount: '1612'
-ht-degree: 100%
+source-wordcount: '1687'
+ht-degree: 94%
 
 ---
 
@@ -56,9 +54,9 @@ Para saber como limpar seus registros, consulte esta [documentação](starting-a
 
 ### Execução do workflow {#workflow-execution}
 
-É recomendável não agendar um workflow para execução por mais de 15 minutos porque pode atrapalhar o desempenho geral do sistema e criar bloqueios no banco de dados.
+**Não agendar um workflow para execução por mais de 15 minutos** porque pode impedir o desempenho geral do sistema e criar blocos no banco de dados.
 
-Evite deixar os workflows no estado pausado. Se criar um fluxo de trabalho temporário, certifique-se de que ele será concluído corretamente e não permanecerá no estado **[!UICONTROL paused]**. Se estiver pausado, isso significa que é preciso manter as tabelas temporárias e, portanto, aumentar o tamanho do banco de dados. Atribua supervisores de workflow nas propriedades do workflow para enviar um alerta quando um workflow falhar ou for pausado pelo sistema.
+**Evite deixar seus workflows no estado pausado**. Se criar um fluxo de trabalho temporário, certifique-se de que ele será concluído corretamente e não permanecerá no estado **[!UICONTROL paused]**. Se estiver pausado, isso significa que é preciso manter as tabelas temporárias e, portanto, aumentar o tamanho do banco de dados. Atribua supervisores de workflow nas propriedades do workflow para enviar um alerta quando um workflow falhar ou for pausado pelo sistema.
 
 Para evitar workflows no estado pausado:
 
@@ -66,9 +64,11 @@ Para evitar workflows no estado pausado:
 * Mantenha seus workflows o mais simples possível, por exemplo, dividindo grandes workflows em vários workflows diferentes. É possível usar as atividades **[!UICONTROL External signal]** para acionar a execução com base na execução de outros fluxos de trabalho.
 * Evite desabilitar atividades com fluxos nos fluxos de trabalho, deixando threads abertos e levando a muitas tabelas temporárias que podem consumir muito espaço. Não mantenha as atividades nos estados **[!UICONTROL Do not enable]** ou **[!UICONTROL Enable but do not execute]** em seus fluxos de trabalho.
 
-Além disso, pare os workflows não utilizados. Os workflows que continuam em execução mantêm conexões com o banco de dados.
+**Parar workflows não utilizados**. Os workflows que continuam em execução mantêm conexões com o banco de dados.
 
-Use apenas parada incondicional nos casos mais raros. Não utilize esta ação regularmente. Não executar um encerramento limpo nas conexões geradas pelos workflows com o banco de dados afeta o desempenho.
+**Use apenas parada incondicional nos casos mais raros**. Não utilize esta ação regularmente. Não executar um encerramento limpo nas conexões geradas pelos workflows com o banco de dados afeta o desempenho.
+
+**Não executar várias solicitações de parada no mesmo fluxo de trabalho**. A interrupção de um fluxo de trabalho é um processo assíncrono: A solicitação é registrada, então o servidor de workflow ou servidores cancelam as operações em andamento. A interrupção de uma instância de workflow pode demorar, especialmente se o workflow estiver em execução em vários servidores, cada um deles deve assumir o controle para cancelar as tarefas em andamento. Para evitar qualquer problema, aguarde a conclusão da operação de interrupção e evite a interrupção de um workflow várias vezes.
 
 ### Opção de Executar no mecanismo {#execute-in-the-engine-option}
 

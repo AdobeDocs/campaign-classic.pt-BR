@@ -1,19 +1,17 @@
 ---
 product: campaign
-title: Criação de uma landing page
-description: Criação de uma landing page
-audience: web
-content-type: reference
-topic-tags: editing-html-content
+title: Criar uma página de aterrissagem
+description: Criar uma página de aterrissagem
+feature: Landing Pages
 exl-id: 71c737c2-b0d6-4ae8-a5df-28a08dff82d7
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: b6f1556cf49492cefaf61c29a058584b0ccee16a
 workflow-type: tm+mt
 source-wordcount: '724'
 ht-degree: 100%
 
 ---
 
-# Criação de uma landing page{#creating-a-landing-page}
+# Criar uma página de aterrissagem{#creating-a-landing-page}
 
 ![](../../assets/common.svg)
 

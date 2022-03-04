@@ -2,8 +2,9 @@
 product: campaign
 title: Inserir código de barras em um email
 description: Inserir código de barras em um email
-source-git-commit: 1e11b7419388698f5de366cbeddf2be88ef12873
-workflow-type: ht
+feature: Email Design
+source-git-commit: 9839dbacda475c2a586811e3c4f686b1b1baab05
+workflow-type: tm+mt
 source-wordcount: '513'
 ht-degree: 100%
 
