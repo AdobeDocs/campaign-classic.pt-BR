@@ -4,10 +4,10 @@ title: Delivery recorrente
 description: Saiba mais sobre a atividade de workflow de delivery recorrente
 feature: Workflows
 exl-id: efd2cdfb-2e5f-4672-8be8-a424481b11ed
-source-git-commit: b94c4bfd478b4a8fbcefe6341608dd6a14bb31d3
+source-git-commit: 6f0479cfe6c6801eb44fcc7a35bdac1241ec3be6
 workflow-type: tm+mt
-source-wordcount: '221'
-ht-degree: 100%
+source-wordcount: '271'
+ht-degree: 81%
 
 ---
 
@@ -39,9 +39,12 @@ Um **delivery recorrente** criará uma nova instância de delivery toda vez que 
 
 ![Delivery recorrente](assets/delivery_recurring.jpg)
 
+Se quiser impedir a execução de um delivery recorrente, cancele completamente a campanha ou interrompa a execução do workflow. Parar o delivery do painel Campaign só interromperá a ocorrência do delivery: as próximas instâncias do delivery recorrente continuarão sendo criadas em cada execução de workflow.
+
 >[!NOTE]
 >
->Não é possível enviar uma prova de uma atividade do tipo **[!UICONTROL Recurring delivery]**.\
+>Não é possível enviar uma prova de uma atividade do tipo **[!UICONTROL Recurring delivery]**.
+> 
 >Para criar um delivery diretamente por meio de um workflow da campanha, use as atividades específicas predefinidas do canal (por exemplo **[!UICONTROL Email delivery]**).
 
 ## Vídeo tutorial (#recurring-delivery-video)
