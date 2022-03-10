@@ -5,7 +5,7 @@ description: Saiba como rastrear uma campanha com o Marketing distribuído do Ca
 feature: Distributed Marketing
 exl-id: 87d1909c-d2eb-47ce-a860-0e78a64d2914
 source-git-commit: 36e546a34d8c2345fefed5d459095a76c6224a38
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '416'
 ht-degree: 100%
 
