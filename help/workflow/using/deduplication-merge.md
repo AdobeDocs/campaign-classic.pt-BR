@@ -1,16 +1,16 @@
 ---
-title: Use a funcionalidade de mesclagem da atividade de Desduplicação
+title: Usar a funcionalidade de mesclagem da atividade de desduplicação
 description: Saiba como usar a funcionalidade de mesclagem da atividade de desduplicação
 feature: Workflows, Data Management
 exl-id: a6b10585-7bf9-4fef-b886-db081b6d3acc
 source-git-commit: b94c4bfd478b4a8fbcefe6341608dd6a14bb31d3
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '550'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
-# Use a funcionalidade de mesclagem da atividade de Desduplicação {#deduplication-merge}
+# Usar a funcionalidade de mesclagem da atividade de desduplicação {#deduplication-merge}
 
 ![](../../assets/common.svg)
 
