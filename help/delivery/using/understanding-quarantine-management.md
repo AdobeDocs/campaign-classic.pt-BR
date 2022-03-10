@@ -5,7 +5,7 @@ description: Entender o gerenciamento de quarentena
 feature: Monitoring, Deliverability
 exl-id: cfd8f5c9-f368-4a31-a1e2-1d77ceae5ced
 source-git-commit: 9839dbacda475c2a586811e3c4f686b1b1baab05
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2837'
 ht-degree: 100%
 
@@ -72,7 +72,7 @@ As seguintes informações estão disponíveis para cada endereço:
 >O aumento no número em quarentena é um efeito normal, relacionado ao &quot;desgaste&quot; do banco de dados. Por exemplo, se o tempo de vida de um endereço de email for considerado três anos e a tabela de recipients aumentar em 50% todo ano, o aumento da quarentena poderá ser calculado da seguinte maneira:
 >
 >Fim do Ano 1: (1*0.33)/(1+0.5)=22%.
->Fim do Ano 2: ((1.22*0.33)+0.33)/(1.5+0.75)=32.5%.
+Fim do Ano 2: ((1.22*0.33)+0.33)/(1.5+0.75)=32.5%.
 
 ### Identificar endereços em quarentena nos relatórios do delivery {#identifying-quarantined-addresses-in-delivery-reports}
 
@@ -101,7 +101,7 @@ Caso necessário, você pode remover manualmente um endereço da lista da quaren
 Para remover manualmente um endereço da lista da quarentena, execute uma das ações abaixo.
 
 >[!IMPORTANT]
->Excluir manualmente um endereço de email da quarentena significa que você reiniciará o delivery para esse endereço. Consequentemente, isso pode ter graves impactos na sua capacidade de entrega e reputação de IP, o que pode eventualmente levar ao bloqueio do seu endereço IP ou domínio de envio. Continue com muito cuidado ao considerar a remoção de qualquer endereço da quarentena. Em caso de dúvidas, entre em contato com um especialista em capacidade de delivery.
+Excluir manualmente um endereço de email da quarentena significa que você reiniciará o delivery para esse endereço. Consequentemente, isso pode ter graves impactos na sua capacidade de entrega e reputação de IP, o que pode eventualmente levar ao bloqueio do seu endereço IP ou domínio de envio. Continue com muito cuidado ao considerar a remoção de qualquer endereço da quarentena. Em caso de dúvidas, entre em contato com um especialista em capacidade de delivery.
 
 * É possível alterar seu status para **[!UICONTROL Valid]** a partir do nó **[!UICONTROL Administration > Campaign Management > Non deliverables Management > Non deliverables and addresses]**.
 
@@ -118,7 +118,7 @@ Os endereços são removidos automaticamente da lista de quarentena nos seguinte
 O status muda então para **[!UICONTROL Valid]**.
 
 >[!IMPORTANT]
->Os recipients com um endereço em um status **[!UICONTROL Quarantine]** ou **[!UICONTROL Denylisted]** nunca serão removidos, mesmo se receberem um email.
+Os recipients com um endereço em um status **[!UICONTROL Quarantine]** ou **[!UICONTROL Denylisted]** nunca serão removidos, mesmo se receberem um email.
 
 Para instalações hospedadas ou híbridas, se você tiver atualizado para o [MTA aprimorado](sending-with-enhanced-mta.md), o número máximo de tentativas a efetuar em caso de status **[!UICONTROL Erroneous]**, e o atraso mínimo entre tentativas agora se baseiam no desempenho histórico e atual de um IP em um determinado domínio.
 
@@ -135,7 +135,7 @@ O Adobe Campaign gerencia a quarentena de acordo com o tipo de falha do delivery
 Se um usuário qualificar um email como spam ([loop de feedback](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/transition-process/infrastructure.html?lang=pt-BR#feedback-loops)), a mensagem será automaticamente redirecionada para uma caixa de entrada técnica gerenciada pela Adobe. Em seguida, o endereço de email do usuário será enviado automaticamente para quarentena com o status **[!UICONTROL Denylisted]**. Esse status se refere apenas ao endereço. O perfil não é incluído na lista de bloqueio para que o usuário continue recebendo mensagens SMS e notificações por push.
 
 >[!NOTE]
->A quarentena no Adobe Campaign diferencia maiúsculas de minúsculas. Certifique-se de importar endereços de email em letras minúsculas, para que não sejam redirecionados posteriormente.
+A quarentena no Adobe Campaign diferencia maiúsculas de minúsculas. Certifique-se de importar endereços de email em letras minúsculas, para que não sejam redirecionados posteriormente.
 
 Na lista de endereços em quarentena (consulte [Identificação de endereços em quarentena para toda a plataforma](#identifying-quarantined-addresses-for-the-entire-platform)), o campo **[!UICONTROL Error reason]** indica por que o endereço selecionado foi colocado em quarentena.
 
@@ -261,11 +261,12 @@ O workflow **[!UICONTROL mobileAppOptOutMgt]** é executado a cada 6 horas para 
 Durante a análise de delivery, todos os dispositivos excluídos do target são automaticamente adicionados à tabela **excludeLogAppSubRcp** .
 
 >[!NOTE]
->Para clientes que usam o conector Baidu, aqui estão os diferentes tipos de erros:
->* Problema de conexão no início do delivery: falha do tipo **[!UICONTROL Undefined]**, razão da falha **[!UICONTROL Unreachable]**, a tentativa é executada.
->* Perda de conexão durante um delivery: erro leve, razão da falha **[!UICONTROL Refused]**, a tentativa é executada.
->* Erro síncrono retornado pelo Baidu durante o envio: erro grave, motivo da falha **[!UICONTROL Refused]**, não haverá nova tentativa.
->O Adobe Campaign contata o servidor Baidu a cada 10 minutos para recuperar o status da mensagem enviada e atualiza os broadlogs. Se uma mensagem for declarada como enviada, o status da mensagem nos broadlogs será definido como **[!UICONTROL Received]**. Se o Baidu declarar um erro, o status será definido como **[!UICONTROL Failed]**.
+Para clientes que usam o conector Baidu, aqui estão os diferentes tipos de erros:
+* Problema de conexão no início do delivery: falha do tipo **[!UICONTROL Undefined]**, razão da falha **[!UICONTROL Unreachable]**, a tentativa é executada.
+* Perda de conexão durante um delivery: erro leve, razão da falha **[!UICONTROL Refused]**, a tentativa é executada.
+* Erro síncrono retornado pelo Baidu durante o envio: erro grave, motivo da falha **[!UICONTROL Refused]**, não haverá nova tentativa.
+>
+O Adobe Campaign contata o servidor Baidu a cada 10 minutos para recuperar o status da mensagem enviada e atualiza os broadlogs. Se uma mensagem for declarada como enviada, o status da mensagem nos broadlogs será definido como **[!UICONTROL Received]**. Se o Baidu declarar um erro, o status será definido como **[!UICONTROL Failed]**.
 
 **Para Android V2**
 
@@ -483,7 +484,7 @@ O mecanismo de quarentena do Android V2 usa o mesmo processo que o Android V1, o
 O mecanismo de quarentena para mensagens SMS é globalmente igual ao processo geral. Consulte [Sobre quarentenas](#about-quarantines). As especificidades para SMS estão listadas abaixo.
 
 >[!NOTE]
->A tabela **[!UICONTROL Delivery log qualification]** não se aplica ao conector **SMPP genérico estendido**.
+A tabela **[!UICONTROL Delivery log qualification]** não se aplica ao conector **SMPP genérico estendido**.
 
 <table> 
  <tbody> 
@@ -541,8 +542,8 @@ O conector SMPP recupera dados da mensagem SR (Relatório do Status) que é reto
 Antes de um novo tipo de erro ser qualificado, o motivo da falha é sempre definido como **Refused** por padrão.
 
 >[!NOTE]
->Os tipos de falha e os motivos para falha são os mesmos dos emails. Consulte [Tipos e motivos de falha de delivery](understanding-delivery-failures.md#delivery-failure-types-and-reasons).
->Peça ao seu provedor uma lista de códigos e status de erros para definir os tipos apropriados de falhas e os motivos para falha na tabela de qualificação de log de delivery.
+Os tipos de falha e os motivos para falha são os mesmos dos emails. Consulte [Tipos e motivos de falha de delivery](understanding-delivery-failures.md#delivery-failure-types-and-reasons).
+Peça ao seu provedor uma lista de códigos e status de erros para definir os tipos apropriados de falhas e os motivos para falha na tabela de qualificação de log de delivery.
 
 Exemplo de uma mensagem gerada:
 
