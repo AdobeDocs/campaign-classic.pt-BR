@@ -5,13 +5,13 @@ description: Gerenciar fusos horários
 feature: Workflows
 exl-id: c2f6033c-30cd-4eb4-adf1-ab2de7510220
 source-git-commit: b94c4bfd478b4a8fbcefe6341608dd6a14bb31d3
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '282'
 ht-degree: 100%
 
 ---
 
-# Gerenciar fusos horários{#managing-time-zones}
+# Gerenciamento de fusos horários{#managing-time-zones}
 
 ![](../../assets/common.svg)
 
