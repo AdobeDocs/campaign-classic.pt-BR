@@ -1,11 +1,11 @@
 ---
 product: campaign
-title: Criar os modelos de entrega
+title: Criar os modelos do delivery
 description: Saiba como executar testes A/B por meio de um caso de uso dedicado
 feature: A/B Testing
 exl-id: 77b3a906-b76e-49e1-b524-b6f1ae537259
 source-git-commit: 9839dbacda475c2a586811e3c4f686b1b1baab05
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '86'
 ht-degree: 100%
 
