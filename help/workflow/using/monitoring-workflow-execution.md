@@ -5,7 +5,7 @@ description: Monitorar a execução do fluxo de trabalho
 feature: Workflows
 exl-id: d589180b-8e1d-4149-9b16-3f541018a41f
 source-git-commit: b94c4bfd478b4a8fbcefe6341608dd6a14bb31d3
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2016'
 ht-degree: 100%
 
