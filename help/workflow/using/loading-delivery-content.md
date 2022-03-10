@@ -1,17 +1,17 @@
 ---
 product: campaign
-title: Carregar conteúdo de entrega
-description: Carregamento de conteúdo de entrega
+title: Carregar conteúdo do delivery
+description: Carregamento de conteúdo do delivery
 feature: Workflows
 exl-id: a52baffd-402b-4b33-ab72-ac954e4dee85
 source-git-commit: b94c4bfd478b4a8fbcefe6341608dd6a14bb31d3
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '317'
 ht-degree: 100%
 
 ---
 
-# Carregar conteúdo de entrega{#loading-delivery-content}
+# Carregar conteúdo do delivery{#loading-delivery-content}
 
 ![](../../assets/common.svg)
 
