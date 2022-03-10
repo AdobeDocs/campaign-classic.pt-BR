@@ -1,17 +1,17 @@
 ---
 product: campaign
-title: Monitorar workflows técnicos
-description: Monitorar workflows técnicos
+title: Monitorar fluxos de trabalho técnicos
+description: Monitorar fluxos de trabalho técnicos
 feature: Workflows
 exl-id: 5e77d196-5c71-438e-8dae-10c6a6e4f29c
 source-git-commit: b94c4bfd478b4a8fbcefe6341608dd6a14bb31d3
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '504'
 ht-degree: 100%
 
 ---
 
-# Monitorar workflows técnicos {#monitoring-technical-workflows}
+# Monitorar fluxos de trabalho técnicos {#monitoring-technical-workflows}
 
 ![](../../assets/common.svg)
 
