@@ -1,13 +1,13 @@
 ---
 product: campaign
-title: Monitorar a capacidade de entrega no Adobe Campaign Classic
-description: Saiba mais sobre as ferramentas e as diretrizes sobre o monitoramento da capacidade de entrega no Adobe Campaign Classic.
+title: Monitorar a capacidade de delivery no Adobe Campaign Classic
+description: Saiba mais sobre as ferramentas e as diretrizes sobre o monitoramento da capacidade de delivery no Adobe Campaign Classic.
 feature: Deliverability
 exl-id: e4caa316-242f-46cd-a20b-a5eee5a0c456
 source-git-commit: 9839dbacda475c2a586811e3c4f686b1b1baab05
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '533'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
