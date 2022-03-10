@@ -5,9 +5,9 @@ description: Saiba mais sobre o escopo e as especificidades do envio de emails c
 feature: Email
 exl-id: 58cc23f4-9ab0-45c7-9aa2-b08487ec7e91
 source-git-commit: 9839dbacda475c2a586811e3c4f686b1b1baab05
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1946'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
