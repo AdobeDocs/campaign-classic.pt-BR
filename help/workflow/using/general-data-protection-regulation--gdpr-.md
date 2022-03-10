@@ -4,7 +4,7 @@ title: Workflows de Regulamento de proteção de dados de privacidade
 description: Saiba mais sobre os workflows do Regulamento de proteção de dados de privacidade
 feature: Workflows, Privacy
 source-git-commit: b94c4bfd478b4a8fbcefe6341608dd6a14bb31d3
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '107'
 ht-degree: 100%
 
