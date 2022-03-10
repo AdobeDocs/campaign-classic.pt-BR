@@ -9,7 +9,7 @@ exl-id: d65869ca-a785-4327-8e8d-791c28e4696c
 source-git-commit: e4cd327d1495987e7d32bd1b903c8fe5de2813f2
 workflow-type: tm+mt
 source-wordcount: '1273'
-ht-degree: 83%
+ht-degree: 99%
 
 ---
 
@@ -21,20 +21,20 @@ Esta página lista novos recursos, melhorias e correções que vêm com a **vers
 
 ## ![](assets/do-not-localize/green_2.png) Versão 7.2.2 - Build 9349 {#release-7-2-2}
 
-_1° de março de 2022_
+_1º de março de 2022_
 
 **Correções**
 
-* Correção de um problema ao configurar o **Web Analytics** conta externa, o que fazia com que o status de integração sempre mostrasse &quot;Integração bem-sucedida&quot; mesmo quando erros ocorriam. (NEO-36672)
-* Correção de vários erros pós-atualização relacionados ao mecanismo de ID de sequência ao ter IDs negativas. (43205, NEO-, NEO-42846, NEO-42845)
-* Correção de um problema ao usar o **Web Analytics** conta externa com entregas recorrentes e contínuas, o que causou a perda parcial de dados da conta externa. (NEO-38548)
-* Correção de um problema que atrasava o pós-atualização ao atualizar a tabela NmsActiveContact . (NEO-43206)
-* Correção de um problema de falha pós-atualização que ocorria se as pastas prontas para uso fossem movidas do **Administração** para qualquer outro local. (NEO-42875)
-* Correção de um problema ao usar um **Atualizar dados** atividade de workflow que podia impedir que o schema do recipient fosse atualizado com dados do recipient de um banco de dados externo da Google Cloud. (NEO-42343)
+* Correção de um problema ao configurar a conta externa do **Web Analytics**, o que fazia com que o status de integração sempre mostrasse &quot;Integração bem-sucedida&quot; mesmo quando ocorriam erros. (NEO-36672)
+* Correção de vários erros pós-atualização relacionados ao mecanismo de ID de sequência ao ter IDs negativas. (NEO-43205, NEO-42846, NEO-42845)
+* Correção de um problema ao usar a conta externa do **Web Analytics** com entregas recorrentes e contínuas, o que causava a perda parcial de dados da conta externa. (NEO-38548)
+* Correção de um problema que atrasava a pós-atualização ao atualizar a tabela NmsActiveContact . (NEO-43206)
+* Correção de um problema de falha pós-atualização que ocorria se as pastas prontas para uso fossem movidas do nó **Administração** para qualquer outro local. (NEO-42875)
+* Correção de um problema ao usar uma atividade de fluxo de trabalho **Atualizar dados**, que poderia impedir que o esquema do recipient fosse atualizado com dados do recipient de um banco de dados externo da Google Cloud. (NEO-42343)
 * Correção de um problema durante a pós-atualização relacionado ao conector do Adobe Analytics. (NEO-43318, NEO-38136)
-* Correção de um problema substituído de CUID por &#39;VALUE_TO_CHANGE&#39; durante a pós-atualização. (NEO-43267)
+* Correção de um problema que substituía o CUID por &#39;VALUE_TO_CHANGE&#39; durante a pós-atualização. (NEO-43267)
 * Correção de um problema que resultava em erros ao sincronizar as instâncias de mid-sourcing e de marketing em uma configuração multimid. (NEO-10432)
-* Correção de um problema que resultava em erro ao atualizar o workflow de deliverability ao ter mais de 1000 broadlogs ao mesmo tempo. (NEO-40276)
+* Correção de um problema que resultava em erro ao atualizar o fluxo de trabalho da capacidade de delivery ao ter mais de 1.000 broadlogs ao mesmo tempo. (NEO-40276)
 * Correção de um problema que impedia que os indicadores de delivery de taxa de abertura e de taxa de cliques fossem atualizados automaticamente. (NEO-43253)
 
 ## ![](assets/do-not-localize/limited_2.png) Versão 7.2.1 - Build 9346 {#release-7-2-1}

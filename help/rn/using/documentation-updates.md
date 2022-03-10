@@ -31,7 +31,7 @@ A seção Quarentena versus Lista de bloqueios foi esclarecida. [Saiba mais](../
 
 As seções sobre como enviar um endereço para quarentena e como remover endereços da lista de quarentena foram atualizadas. [Saiba mais](../../delivery/using/understanding-quarantine-management.md#removing-a-quarantined-address)
 
-Adição de uma prática recomendada do fluxo de trabalho para recomendar que não sejam realizadas várias solicitações de parada no mesmo fluxo de trabalho. [Saiba mais](../../workflow/using/workflow-best-practices.md)
+Adição de uma prática recomendada do fluxo de trabalho que orienta a não realizar várias solicitações de interrupção no mesmo fluxo de trabalho. [Saiba mais](../../workflow/using/workflow-best-practices.md)
 
 Foram adicionadas informações sobre como impedir a execução de um delivery recorrente em uma campanha. [Saiba mais](../../workflow/using/recurring-delivery.md)
 
