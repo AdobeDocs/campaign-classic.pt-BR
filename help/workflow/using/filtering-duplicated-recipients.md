@@ -1,11 +1,11 @@
 ---
 product: campaign
 title: Filtrar recipients duplicados
-description: Saiba como filtrar destinatários duplicados
+description: Saiba como filtrar recipients duplicados
 feature: Workflows
 exl-id: 7cbabbae-375f-4336-9afa-6356f37a79d0
 source-git-commit: b94c4bfd478b4a8fbcefe6341608dd6a14bb31d3
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '147'
 ht-degree: 100%
 
