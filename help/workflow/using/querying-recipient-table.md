@@ -1,11 +1,11 @@
 ---
 product: campaign
 title: Consultar a tabela de recipients
-description: Saiba como consultar a tabela de destinatários
+description: Saiba como consultar a tabela de recipients
 feature: Query Editor
 exl-id: 5b037798-b092-4c98-9f6a-4af7fc7941c6
 source-git-commit: b94c4bfd478b4a8fbcefe6341608dd6a14bb31d3
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '392'
 ht-degree: 100%
 
