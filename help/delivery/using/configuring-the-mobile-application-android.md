@@ -5,7 +5,7 @@ description: Saiba como configurar seu aplicativo móvel para Android
 feature: Push
 exl-id: 32c35e61-d0a3-478f-b73b-396e2becf7f9
 source-git-commit: 9839dbacda475c2a586811e3c4f686b1b1baab05
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '963'
 ht-degree: 100%
 
