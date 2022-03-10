@@ -1,11 +1,11 @@
 ---
 product: campaign
 title: Enriquecer dados
-description: Saiba mais sobre a atividade do workflow de enriquecimento
+description: Saiba mais sobre a atividade do fluxo de trabalho de enriquecimento
 feature: Workflows, Enrichment Activity
 exl-id: ab786cf1-74a4-4185-a63d-84e776a2f776
 source-git-commit: b94c4bfd478b4a8fbcefe6341608dd6a14bb31d3
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '747'
 ht-degree: 100%
 
