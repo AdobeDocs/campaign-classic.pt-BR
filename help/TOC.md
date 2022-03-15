@@ -6,10 +6,10 @@ title: Manual do Campaign Classic v7
 user-guide-description: Com o Adobe Campaign, é possível usar dados avançados do cliente para criar, coordenar e fornecer campanhas dinâmicas que os clientes realmente desejam, por meio de email, dispositivos móveis, canais offline e muito mais.
 sub-product: adobe campaign classic
 type: Documentation
-source-git-commit: c54102b2ec32fbea89ce41dd3c9fedb98e612996
-workflow-type: ht
-source-wordcount: '2555'
-ht-degree: 100%
+source-git-commit: d891a235002d465f3b00fafa375d87d42ebafaa6
+workflow-type: tm+mt
+source-wordcount: '2548'
+ht-degree: 99%
 
 ---
 
@@ -205,8 +205,8 @@ ht-degree: 100%
       + [Práticas recomendadas de desempenho de entrega](delivery/using/delivery-performances.md)
       + [Solução de problemas de entrega](delivery/using/delivery-troubleshooting.md)
       + [Status da entrega](delivery/using/delivery-statuses.md)
-      + [Entender as falhas de entrega](delivery/using/understanding-delivery-failures.md)
-      + [Entender o gerenciamento de quarentenas](delivery/using/understanding-quarantine-management.md)
+      + [Entender as falhas de delivery](delivery/using/understanding-delivery-failures.md)
+      + [Entender o gerenciamento de quarentena](delivery/using/understanding-quarantine-management.md)
    + Rastrear mensagens {#tracking-messages}
       + [Sobre o rastreamento de mensagens](delivery/using/about-message-tracking.md)
       + [Como configurar links rastreados](delivery/using/how-to-configure-tracked-links.md)
@@ -585,14 +585,12 @@ ht-degree: 100%
    + [Sobre marketing social](social/using/about-social-marketing.md)
    + Configuração {#configuration}
       + [Iniciar workflows](social/using/starting-workflows.md)
-      + [Publicar nos murais do Facebook](social/using/publishing-on-facebook-walls.md)
       + [Criar um aplicativo do Facebook](social/using/creating-a-facebook-application.md)
       + [Configurar publicação no Twitter](social/using/configuring-publishing-on-twitter.md)
-   + Publicar em redes sociais {#publishing-on-facebook-twitter}
-      + [Introdução às redes sociais](social/using/overview.md)
-      + [Publicar no Facebook](social/using/publishing-on-facebook.md)
+   + Publicar no Twitter {#publishing-on-facebook-twitter}
+      + [Introdução ao Twitter](social/using/overview.md)
       + [Publicar no Twitter](social/using/publishing-on-twitter.md)
-   + Anexos {#annexes}
+   + Adquirir contatos do Facebook {#annexes}
       + [Exemplos de aplicativos do Facebook](social/using/examples-of-facebook-apps.md)
       + [Rastreamento](social/using/tracking.md)
 + Guia de instalação e configuração {#installing-campaign-classic}
