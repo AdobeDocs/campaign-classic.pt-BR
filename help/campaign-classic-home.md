@@ -3,10 +3,10 @@ keywords: Campaign Classic;página inicial;tópicos populares
 product: campaign
 title: Documentação do produto Adobe Campaign Classic v7
 exl-id: 6b3f1689-80de-49fd-b7ee-7a2a1931d157
-source-git-commit: 72bcb973d0259217c043da1d21307ff97f195f1b
+source-git-commit: 62f19239ac3b3ea909e26d6424338213b4d91479
 workflow-type: tm+mt
-source-wordcount: '238'
-ht-degree: 98%
+source-wordcount: '243'
+ht-degree: 78%
 
 ---
 
@@ -26,7 +26,7 @@ ht-degree: 98%
 
 * **[Proteja suas instâncias do Campaign](technotes/using/acc-config-updates.md)**<br/> Atualize para os builds mais recentes para proteger a plataforma do Campaign
 
-* **[Atualizar a integração do Adobe Experience Cloud Triggers](integrations/using/configuring-adobe-io.md)**<br/> O serviço de autenticação oAuth herdado chegou ao fim da vida útil: é necessário migrar para o Adobe I/O.
+* **[Atualizar a integração do Adobe Experience Cloud Triggers](integrations/using/configuring-adobe-io.md)**<br/> O serviço de autenticação oAuth herdado chegou ao fim da vida útil: você deve migrar para o Adobe I/O
 
 [Mais atualizações](rn/using/documentation-updates.md)
 
@@ -83,6 +83,6 @@ ht-degree: 98%
 | [Notas de versão](rn/using/latest-release.md) | [Lista de mensagens de erro](https://experienceleague.adobe.com/developer/campaign-errors/error_codes.html?lang=pt-BR) |
 | [Vídeos explicativos](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html?lang=pt-BR) | [Modelo de dados do Campaign](configuration/using/about-data-model.md) |
 | [Matriz de compatibilidade](rn/using/compatibility-matrix.md) | [JSAPI do Campaign](https://experienceleague.adobe.com/developer/campaign-api/api/p-1.html?lang=pt-BR) |
-| [Introdução às atualizações](rn/using/rn-overview.md) | [Manual de rastreamento](https://helpx.adobe.com/br/campaign/kb/acc-tracking.html) |
-| [Recursos obsoletos](rn/using/deprecated-features.md) | [Lista de verificação de segurança e privacidade](https://helpx.adobe.com/br/campaign/kb/acc-security.html) |
+| [Introdução às atualizações](rn/using/rn-overview.md) | [Manual de rastreamento](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/tracking-messages/about-message-tracking.html) |
+| [Recursos obsoletos](rn/using/deprecated-features.md) | [Lista de verificação de segurança e privacidade](https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/security-privacy/get-started-security-privacy.html) |
 | [Painel de controle do Campaign](https://experienceleague.adobe.com/docs/control-panel/using/control-panel-home.html?lang=pt-BR) | [Orientações de monitoramento](production/using/monitoring-guidelines.md) |
