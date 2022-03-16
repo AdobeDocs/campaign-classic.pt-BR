@@ -1,11 +1,11 @@
 ---
 product: campaign
-title: Elementos e atributos do schema
+title: Elementos e atributos do schema - elemento parameters
 description: elemento parâmetros
 exl-id: 54538c3e-3232-4bf7-a09c-dacf0f072be5
-source-git-commit: 56459b188ee966cdb578c415fcdfa485dcbed355
+source-git-commit: 40da5774c8a6a228992c4aa400e2d9924215611e
 workflow-type: tm+mt
-source-wordcount: '46'
+source-wordcount: '48'
 ht-degree: 8%
 
 ---
