@@ -3,10 +3,10 @@ keywords: Campaign Classic;página inicial;tópicos populares
 product: campaign
 title: Documentação do produto Adobe Campaign Classic v7
 exl-id: 6b3f1689-80de-49fd-b7ee-7a2a1931d157
-source-git-commit: 60fc0fd2a10f05abb77843ef0cb69e44f35a9648
-workflow-type: ht
-source-wordcount: '270'
-ht-degree: 100%
+source-git-commit: 72bcb973d0259217c043da1d21307ff97f195f1b
+workflow-type: tm+mt
+source-wordcount: '238'
+ht-degree: 98%
 
 ---
 
@@ -18,11 +18,9 @@ ht-degree: 100%
 
 * **[Programa de lançamento 2022](technotes/using/dc-migration.md)**<br/> Atualize seu ambiente e melhore a segurança, a infraestrutura e o desempenho
 
-* **[A versão de janeiro está disponível.](rn/using/latest-release.md)**<br/> Descubra novos recursos, melhorias e correções nas Notas de versão
+* **[Versão de março está ativa!](rn/using/latest-release.md)**<br/> Descubra novos recursos, melhorias e correções nas Notas de versão
 
 * **[Perguntas frequentes e**[ nota técnica](technotes/using/apple-mail-app-privacy-protection.md)**<br/> sobre a Proteção de privacidade do Apple Mail](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/additional-resources/technotes/apple-mail-privacy-faq.html?lang=pt-BR)**Encontre orientações em resposta ao anúncio da Apple sobre o iOS 15
-
-* **[Conexão pelo IMS/Adobe ID? Atualize para os builds mais recentes](technotes/using/ims-updates.md)**<br/> Se estiver usando o IMS para se conectar ao Campaign, você deverá fazer upgrade para poder se conectar ao Campaign após** 30 de junho de 2021 **
 
 * **[Remover rejeições permanentes incorretas](delivery/using/update-bounce-qualification.md)**<br/> Saiba como atualizar rejeições permanentes incorretas após a interrupção da Apple
 
