@@ -5,9 +5,9 @@ description: Saiba mais sobre a atividade de workflow de delivery recorrente
 feature: Workflows
 exl-id: efd2cdfb-2e5f-4672-8be8-a424481b11ed
 source-git-commit: 6f0479cfe6c6801eb44fcc7a35bdac1241ec3be6
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '271'
-ht-degree: 81%
+ht-degree: 100%
 
 ---
 
@@ -39,7 +39,7 @@ Um **delivery recorrente** criará uma nova instância de delivery toda vez que 
 
 ![Delivery recorrente](assets/delivery_recurring.jpg)
 
-Se quiser impedir a execução de um delivery recorrente, cancele completamente a campanha ou interrompa a execução do workflow. Parar o delivery do painel Campaign só interromperá a ocorrência do delivery: as próximas instâncias do delivery recorrente continuarão sendo criadas em cada execução de workflow.
+Se desejar impedir a execução de um delivery recorrente, cancele completamente a campanha ou interrompa a execução do fluxo de trabalho. Parar o delivery no painel do Campaign só interromperá a ocorrência do delivery: as próximas instâncias do delivery recorrente continuarão sendo criadas em cada execução de fluxo de trabalho.
 
 >[!NOTE]
 >
