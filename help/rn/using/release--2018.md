@@ -1,8 +1,9 @@
 ---
 product: campaign
-title: Versões de Campaign Classic 2018
-description: Saiba mais sobre as versões do Campaign Classic 2018
-source-git-commit: eb0e572f0bb6196a58a7dab4999df784d5c4851f
+title: Versões do Campaign Classic 2018
+description: Saiba mais sobre as atualizações do Campaign Classic 2018
+exl-id: f70fceba-4bbf-4f33-8746-e4405a1cdae6
+source-git-commit: 96f2ae67a5b47b80533e759713cf5b36baa8cf36
 workflow-type: tm+mt
 source-wordcount: '5414'
 ht-degree: 97%
@@ -15,7 +16,7 @@ ht-degree: 97%
 
 ## Versão 18.10
 
-### Versão 18.10.6 – Build 8985{#release-18-10-6-build-8985}
+### Versão 18.10.6 - Build 8985{#release-18-10-6-build-8985}
 
 12 de julho de 2019
 
@@ -27,7 +28,7 @@ ht-degree: 97%
 * Permissões aprimoradas para executar o pacote de zona de segurança ao usar a conta interna.
 * Correção de um problema que poderia causar erros nos logs mtachild. (NEO-8978)
 
-### Versão 18.10.5 – Build 8984{#release-18-10-5-build-8984}
+### Versão 18.10.5 - Build 8984{#release-18-10-5-build-8984}
 
 23 de abril de 2019
 
@@ -37,7 +38,7 @@ ht-degree: 97%
 * Remoção do limite de 10.000 registros no Mapa de Aquecimento do Fluxo de Trabalho para corrigir um problema de dados ausente. (NEO-12329)
 * Correção de um problema ao usar a opção &quot;Manter todos os dados adicionais do conjunto principal&quot; em uma atividade de workflow de enriquecimento. (NEO-13291)
 
-### Versão 18.10.4 – Build 8983{#release-18-10-4-build-8983}
+### Versão 18.10.4 - Build 8983{#release-18-10-4-build-8983}
 
 15 de abril de 2019
 
@@ -50,7 +51,7 @@ ht-degree: 97%
 * Na integração do Analytics, a recuperação de dados de segmento de AAM com caractere % agora é permitida. (NEO-12025)
 * Correção de um problema de falha do Tomcat ao enviar notificações por push usando HTTP2. (NEO-12701)
 
-### Versão 18.10.3 – Build 8981{#release-18-10-3-build-8981}
+### Versão 18.10.3 - Build 8981{#release-18-10-3-build-8981}
 
 29 de janeiro de 2019
 
@@ -74,7 +75,7 @@ ht-degree: 97%
 * Correção de um problema de pular caracteres ao enviar notificações via push em um aplicação móvel.
 * Correção de um problema que impedia a alternância do FDA para o método de sincronização SOAP em uma conta externa Mid-Sourcing.
 
-### Versão 18.10.2 – Build 8978{#release-18-10-2-build-8978}
+### Versão 18.10.2 - Build 8978{#release-18-10-2-build-8978}
 
 6 de dezembro de 2018
 
@@ -96,7 +97,7 @@ ht-degree: 97%
 * Correção de um problema com o cálculo das durações do workflow no Workflow HeatMap.
 
 
-### Versão 18.10.1 – Build 8977{#release-18-10-build-8977}
+### Versão 18.10.1 - Build 8977{#release-18-10-build-8977}
 
 5 de nov de 2018
 
@@ -241,7 +242,7 @@ Essas alterações de índice podem levar a um aumento do tempo necessário para
 
 ## Versão 18.6
 
-### Versão 18.6.2 – Build 8949{#release-18-6-3-build-8949}
+### Versão 18.6.2 - Build 8949{#release-18-6-3-build-8949}
 
 22 de agosto de 2018
 
@@ -297,7 +298,7 @@ Para obter mais informações sobre faixa de query, consulte esses artigos:
 * [https://docs.teradata.com/reader/cY5B~oeEUFWjgN2kBnH3Vw/a5G1iz~ve68yTMa24kVjVw](https://docs.teradata.com/reader/cY5B%7EoeEUFWjgN2kBnH3Vw/a5G1iz%7Eve68yTMa24kVjVw)
 * [https://docs.teradata.com/reader/rgAb27O_xRmMVc_aQq2VGw/qVNfdszBssrZ7ttrE7AtmQ](https://docs.teradata.com/reader/rgAb27O_xRmMVc_aQq2VGw/qVNfdszBssrZ7ttrE7AtmQ)
 
-### Versão 18.6.1 – Build 8947{#release-18-6-build-8947}
+### Versão 18.6.1 - Build 8947{#release-18-6-build-8947}
 
 25 de junho de 2018
 
@@ -352,7 +353,7 @@ Para clientes existentes, as APIs de arquivo não podem mais acessar a pasta **c
 
 ## Versão 18.4
 
-### Versão 18.4.5 – Build 8937{#release-18-4-5-build-8937}
+### Versão 18.4.5 - Build 8937{#release-18-4-5-build-8937}
 
 21 de novembro de 2018
 
@@ -380,7 +381,7 @@ Para clientes existentes, as APIs de arquivo não podem mais acessar a pasta **c
 * Correção de um possível bloqueio no Apache (rastreamento).
 
 
-### Versão 18.4.4 – Build 8936{#release-18-4-4-build-8936}
+### Versão 18.4.4 - Build 8936{#release-18-4-4-build-8936}
 
 1 de agosto de 2018
 
@@ -397,7 +398,7 @@ Para clientes existentes, as APIs de arquivo não podem mais acessar a pasta **c
 * Correção de um problema que exibia erros inúteis no log após a atualização quando uma atividade de workflow **[!UICONTROL Survey answers]** não estava totalmente configurada.
 * FDA Teradata: correção de um problema com campos incrementados automaticamente e índices em tabelas SQL.
 
-### Versão 18.4.3 – Build 8935{#release-18-4-3-build-8935}
+### Versão 18.4.3 - Build 8935{#release-18-4-3-build-8935}
 
 22 de junho de 2018
 
@@ -411,7 +412,7 @@ Para clientes existentes, as APIs de arquivo não podem mais acessar a pasta **c
 * Correção de um problema ao sincronizar espaços de oferta da instância de marketing para a instância de interação. (NEO-11162)
 * Melhoria do gerenciamento de índices de nomes longos durante a pós atualização.
 
-### Versão 18.4.2 – Build 8932{#release-18-4-2-build-8932}
+### Versão 18.4.2 - Build 8932{#release-18-4-2-build-8932}
 
 22 de maio de 2018
 
@@ -422,7 +423,7 @@ Para clientes existentes, as APIs de arquivo não podem mais acessar a pasta **c
 * Correção de um problema de desempenho que poderia ocorrer com o processo inMail ao usar um servidor de email de devolução. (NEO-10641)
 * Correção de um problema de atualização de banco de dados que pode ocorrer ao atualizar mais de 1000 schemas.
 
-### Versão 18.4.1 – Build 8931{#release-18-4-build-8931}
+### Versão 18.4.1 - Build 8931{#release-18-4-build-8931}
 
 24 de abril de 2018
 
