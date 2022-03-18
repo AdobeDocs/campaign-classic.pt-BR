@@ -6,10 +6,10 @@ feature: Overview
 role: User
 level: Beginner
 exl-id: 07c1f4a3-cf16-4a9b-b402-e13258799f91
-source-git-commit: dfee069240c590846f7dda3134c07ad3ec514a26
+source-git-commit: 4fe661cf6a0fef8126fd24a68b1021760a5d0bfd
 workflow-type: tm+mt
-source-wordcount: '4938'
-ht-degree: 99%
+source-wordcount: '4932'
+ht-degree: 97%
 
 ---
 
@@ -28,7 +28,7 @@ Consulte as [Notas de versão do Adobe Campaign Classic](../../rn/using/latest-r
 
 Adição de uma descrição detalhada para a variável **[!UICONTROL Test SMTP delivery]** opção. [Saiba mais](../../delivery/using/steps-sending-the-delivery.md#delivery-additiona-parameters)
 
-A seção de visão geral das Notas de versão foi atualizada para esclarecer as diretrizes de atualização do Console do Campaign. [Saiba mais](../../rn/using/rn-overview.md)
+A página Introdução às atualizações foi atualizada para esclarecer as diretrizes de atualização do Console da campanha. [Saiba mais](../../rn/using/rn-overview.md)
 
 A nova build do Campaign v7.2.2 está disponível. [Saiba mais](../../rn/using/latest-release.md)
 
@@ -69,7 +69,7 @@ Adicionada a opção de atualização em lote na atividade do conector CRM. [Lei
 
 ### Dezembro de 2021{#dec-2021}
 
-As notas de versão do Campaign Classic v7 foram reorganizadas para simplificar a navegação. [Leia mais](rn-overview.md)
+As Notas de versão do Campaign Classic v7 foram reorganizadas para simplificar a navegação. [Leia mais](rn-overview.md)
 
 A documentação sobre Edição de formulários no Campaign foi atualizada e aprimorada. [Leia mais](../../configuration/using/editing-forms.md)
 
@@ -124,7 +124,7 @@ A [versão 21.1.3 do Campaign](../../rn/using/latest-release.md#release-21-1-3-b
 
 ### Junho de 2021 {#june-2021}
 
-A seção **Mensagens transacionais** foi reorganizada e esclarecida com uma nova seção Introdução, incluindo um [esquema aprimorado](../../message-center/using/about-transactional-messaging.md#transactional-messaging-operating-principle) para compreender melhor o processo. [Leia mais](../../message-center/using/about-transactional-messaging.md)
+O **Mensagens transacionais** foi reorganizada e esclarecida com uma nova seção Introdução , incluindo uma [schema aprimorado](../../message-center/using/about-transactional-messaging.md#transactional-messaging-operating-principle) para uma melhor compreensão do processo. [Leia mais](../../message-center/using/about-transactional-messaging.md)
 
 **Atualizações da documentação que vêm com a versão 21.1.3**
 
@@ -156,7 +156,7 @@ Uma nova nota técnica foi criada para saber como atualizar a qualificação de 
 
 ### Março de 2021 {#march-2021}
 
-A [seção Introdução ao SMS](../../delivery/using/sms-channel.md) foi reorganizada e aprimorada. Agora você pode aprender a [configurar o canal de SMS](../../delivery/using/sms-set-up.md), [criar um SMS](../../delivery/using/sms-create.md), [enviar e rastrear SMS](../../delivery/using/sms-send.md) em seções dedicadas.
+A [seção Introdução ao SMS](../../delivery/using/sms-channel.md) foi reorganizada e aprimorada. Agora você pode aprender a [configurar o canal SMS](../../delivery/using/sms-set-up.md), [criar um SMS](../../delivery/using/sms-create.md), [enviar e rastrear SMS](../../delivery/using/sms-send.md) em seções dedicadas.
 
 A página &quot;Opções de ajuda e suporte&quot; do Campaign Classic foi integrada à documentação principal. [Leia mais](../../support.md)
 
@@ -285,7 +285,7 @@ As páginas de documentação foram atualizadas para refletir a atualização do
 
 Detalhes foram adicionados na descrição da caixa “Sobre” na seção “Obtendo sua versão do Adobe Campaign”. [Leia mais](../../platform/using/launching-adobe-campaign.md#getting-your-campaign-version)
 
-Diretrizes para executar uma atualização de build foram adicionadas à seção “Atualização do Adobe Campaign Classic”. Saiba mais [Saiba mais](../../production/using/build-upgrade.md)
+Diretrizes para executar uma atualização de build foram adicionadas à seção “Atualização do Adobe Campaign Classic”. [Saiba mais](../../production/using/build-upgrade.md)
 
 As perguntas frequentes sobre a atualização da build do Campaign foram adicionadas às perguntas mais frequentes do Campaign. Saiba mais [Saiba mais](../../platform/using/faq-build-upgrade.md)
 
@@ -344,7 +344,7 @@ Novos casos de uso são mencionados na lista de [casos de uso de workflow](../..
 * Chamada de uma variável de instância em uma query
 * Aplicar uma porcentagem dividida em uma população
 
-A seção atividade de **[!UICONTROL AND-join]** foi aprimorada com informações adicionais sobre sua utilização, bem como uma observação sobre o uso de variáveis. [Leia mais](../../workflow/using/and-join.md)
+O **[!UICONTROL AND-join]** A seção atividade de foi aprimorada com informações adicionais sobre sua utilização e uma observação sobre o uso de variáveis. [Saiba mais](../../workflow/using/and-join.md)
 
 ### Julho de 2020 {#july-2020}
 
@@ -612,7 +612,7 @@ Trilha de auditoria - [Leia mais](../../production/using/audit-trail.md)
 
 Foi criada uma atualização das perguntas frequentes sobre a nova build. [Leia mais](https://helpx.adobe.com/br/campaign/kb/build-upgrade-faq.html)
 
-A [Matriz de compatibilidade](compatibility-matrix.md) foi atualizada. A lista de sistemas de banco de dados suportados foi atualizada, assim como as versões do Android/iOS e SDKs relacionados. A Matriz de compatibilidade 19.0 foi arquivada.
+A [Matriz de compatibilidade](compatibility-matrix.md) foi atualizada. A lista de sistemas de banco de dados suportados foi atualizada, as versões do Android/iOS e os SDKs relacionados. A Matriz de compatibilidade 19.0 foi arquivada.
 
 A página &quot;Deprecated and Removed Features in Campaign Classic&quot; foi atualizada. [Leia mais](deprecated-features.md)
 
