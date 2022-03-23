@@ -5,9 +5,9 @@ description: Saiba como configurar e enviar o delivery
 feature: Channel Configuration
 exl-id: 0411686e-4f13-401e-9333-e14b05ebe9cd
 source-git-commit: dfee069240c590846f7dda3134c07ad3ec514a26
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1556'
-ht-degree: 94%
+ht-degree: 100%
 
 ---
 
@@ -33,15 +33,15 @@ Antes de enviar o delivery, você poderá definir os parâmetros de envio nas pr
    >
    >Quando o delivery é duplicado, o parâmetro é redefinido.
 
-* **[!UICONTROL Send using multiple waves]**: Use essa opção para enviar suas mensagens em ondas, em vez de para todo o público-alvo. Configure o número de lotes e sua proporção. [Saiba mais](#sending-using-multiple-waves).
+* **[!UICONTROL Send using multiple waves]**: use essa opção para enviar suas mensagens em ondas, em vez de enviá-las para todo o público-alvo. Configure o número de lotes e proporção e a proporção deles. [Saiba mais](#sending-using-multiple-waves).
 
-* **[!UICONTROL Test SMTP delivery]**: Use essa opção para testar o envio via SMTP. O delivery é processado para conexão com o servidor SMTP, mas não é enviado: para cada recipient do delivery, o Campaign se conecta ao servidor do provedor SMTP, executa o comando SMTP RCPT TO e fecha a conexão antes do comando SMTP DATA.
+* **[!UICONTROL Test SMTP delivery]**: use essa opção para testar o envio via SMTP. A entrega é processada até a conexão com o servidor SMTP, mas não é enviada: para cada recipient da entrega, o Campaign se conecta ao servidor do provedor SMTP, executa o comando SMTP RCPT TO e fecha a conexão antes do comando SMTP DATA.
 
    >[!NOTE]
    >
    >* Essa opção não é recomendada no mid-sourcing.
    >
-   >* Saiba mais sobre a configuração do servidor SMTP, em [esta seção](../../installation/using/configure-delivery-settings.md).
+   >* Saiba mais sobre a configuração do servidor SMTP [nesta seção](../../installation/using/configure-delivery-settings.md).
 
 
 * **[!UICONTROL Email BCC]**: essa opção permite armazenar emails em um sistema externo por meio do CCO simplesmente adicionando um endereço de email de CCO ao target da sua mensagem. Para obter mais informações, consulte [esta seção](sending-messages.md#archiving-emails).
