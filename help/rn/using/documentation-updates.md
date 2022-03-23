@@ -7,9 +7,9 @@ role: User
 level: Beginner
 exl-id: 07c1f4a3-cf16-4a9b-b402-e13258799f91
 source-git-commit: 4fe661cf6a0fef8126fd24a68b1021760a5d0bfd
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '4932'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -26,11 +26,11 @@ Consulte as [Notas de versão do Adobe Campaign Classic](../../rn/using/latest-r
 
 ### Março de 2022 {#mar-2022}
 
-Adição de uma descrição detalhada para a variável **[!UICONTROL Test SMTP delivery]** opção. [Saiba mais](../../delivery/using/steps-sending-the-delivery.md#delivery-additiona-parameters)
+Adição de uma descrição detalhada para a opção **[!UICONTROL Test SMTP delivery]**. [Saiba mais](../../delivery/using/steps-sending-the-delivery.md#delivery-additiona-parameters)
 
-A página Introdução às atualizações foi atualizada para esclarecer as diretrizes de atualização do Console da campanha. [Saiba mais](../../rn/using/rn-overview.md)
+A página Introdução às atualizações foi atualizada para esclarecer as diretrizes de atualização do Console do Campaign. [Leia mais](../../rn/using/rn-overview.md)
 
-A nova build do Campaign v7.2.2 está disponível. [Saiba mais](../../rn/using/latest-release.md)
+O novo build do Campaign v7.2.2 está disponível. [Leia mais](../../rn/using/latest-release.md)
 
 
 ### Fevereiro de 2022 {#february-2022}
@@ -69,7 +69,7 @@ Adicionada a opção de atualização em lote na atividade do conector CRM. [Lei
 
 ### Dezembro de 2021{#dec-2021}
 
-As Notas de versão do Campaign Classic v7 foram reorganizadas para simplificar a navegação. [Leia mais](rn-overview.md)
+As notas de versão do Campaign Classic v7 foram reorganizadas para simplificar a navegação. [Leia mais](rn-overview.md)
 
 A documentação sobre Edição de formulários no Campaign foi atualizada e aprimorada. [Leia mais](../../configuration/using/editing-forms.md)
 
@@ -124,7 +124,7 @@ A [versão 21.1.3 do Campaign](../../rn/using/latest-release.md#release-21-1-3-b
 
 ### Junho de 2021 {#june-2021}
 
-O **Mensagens transacionais** foi reorganizada e esclarecida com uma nova seção Introdução , incluindo uma [schema aprimorado](../../message-center/using/about-transactional-messaging.md#transactional-messaging-operating-principle) para uma melhor compreensão do processo. [Leia mais](../../message-center/using/about-transactional-messaging.md)
+A seção **Mensagens transacionais** foi reorganizada e esclarecida com uma nova seção de Introdução, incluindo um [esquema aprimorado](../../message-center/using/about-transactional-messaging.md#transactional-messaging-operating-principle) para compreender melhor o processo. [Leia mais](../../message-center/using/about-transactional-messaging.md)
 
 **Atualizações da documentação que vêm com a versão 21.1.3**
 
@@ -156,7 +156,7 @@ Uma nova nota técnica foi criada para saber como atualizar a qualificação de 
 
 ### Março de 2021 {#march-2021}
 
-A [seção Introdução ao SMS](../../delivery/using/sms-channel.md) foi reorganizada e aprimorada. Agora você pode aprender a [configurar o canal SMS](../../delivery/using/sms-set-up.md), [criar um SMS](../../delivery/using/sms-create.md), [enviar e rastrear SMS](../../delivery/using/sms-send.md) em seções dedicadas.
+A [seção Introdução ao SMS](../../delivery/using/sms-channel.md) foi reorganizada e aprimorada. Agora você pode aprender a [configurar o canal de SMS](../../delivery/using/sms-set-up.md), [criar um SMS](../../delivery/using/sms-create.md), [enviar e rastrear SMS](../../delivery/using/sms-send.md) em seções dedicadas.
 
 A página &quot;Opções de ajuda e suporte&quot; do Campaign Classic foi integrada à documentação principal. [Leia mais](../../support.md)
 
@@ -285,7 +285,7 @@ As páginas de documentação foram atualizadas para refletir a atualização do
 
 Detalhes foram adicionados na descrição da caixa “Sobre” na seção “Obtendo sua versão do Adobe Campaign”. [Leia mais](../../platform/using/launching-adobe-campaign.md#getting-your-campaign-version)
 
-Diretrizes para executar uma atualização de build foram adicionadas à seção “Atualização do Adobe Campaign Classic”. [Saiba mais](../../production/using/build-upgrade.md)
+Diretrizes para executar uma atualização de build foram adicionadas à seção “Atualização do Adobe Campaign Classic”. [Leia mais](../../production/using/build-upgrade.md)
 
 As perguntas frequentes sobre a atualização da build do Campaign foram adicionadas às perguntas mais frequentes do Campaign. Saiba mais [Saiba mais](../../platform/using/faq-build-upgrade.md)
 
@@ -344,7 +344,7 @@ Novos casos de uso são mencionados na lista de [casos de uso de workflow](../..
 * Chamada de uma variável de instância em uma query
 * Aplicar uma porcentagem dividida em uma população
 
-O **[!UICONTROL AND-join]** A seção atividade de foi aprimorada com informações adicionais sobre sua utilização e uma observação sobre o uso de variáveis. [Saiba mais](../../workflow/using/and-join.md)
+A seção de atividade de **[!UICONTROL AND-join]** foi aprimorada com informações adicionais sobre sua utilização, bem como uma observação sobre o uso de variáveis. [Leia mais](../../workflow/using/and-join.md)
 
 ### Julho de 2020 {#july-2020}
 
@@ -472,7 +472,7 @@ Os guias de [instalação](../../installation/using/general-architecture.md), [p
 
 O guia de instalação foi atualizado e sincronizado com a versão mais recente da matriz de compatibilidade. Novos sistemas compatíveis foram adicionados. As ocorrências em sistemas obsoletos e sem suporte foram removidas. [Leia mais](../../installation/using/general-architecture.md)
 
-A matriz de compatibilidade foi atualizada com os conectores do Hadoop 3.0 e Snowflake FDA. [Leia mais](https://helpx.adobe.com/campaign/kb/compatibility-matrix.html)
+A matriz de compatibilidade foi atualizada com os conectores do Hadoop 3.0 e Snowflake FDA. [Leia mais](https://helpx.adobe.com/br/campaign/kb/compatibility-matrix.html)
 
 Uma prática recomendada na afinidade IP foi adicionada ao guia de instalação. [Leia mais](../../installation/using/email-deliverability.md#list-of-ip-addresses-to-use)
 
@@ -490,7 +490,7 @@ O novo parâmetro para a configuração do relatório de URLs está documentado 
 
 A página **Matriz de recursos no local e hospedada do Campaign Classic** foi atualizada com os novos conectores do FDA. [Leia mais](../../installation/using/capability-matrix.md).
 
-A página **Matriz de recursos do Campaign Classic** foi atualizada. [Leia mais](https://helpx.adobe.com/campaign/kb/compatibility-matrix.html)
+A página **Matriz de recursos do Campaign Classic** foi atualizada. [Leia mais](https://helpx.adobe.com/br/campaign/kb/compatibility-matrix.html)
 
 O novo **[!UICONTROL Cleanup of Nmsaddress]** workflow está documentado [aqui](../../production/using/database-cleanup-workflow.md#cleanup-of-nmsaddress).
 
@@ -542,7 +542,7 @@ Sistema de Mensagens Seguras de SMS (TLS) - [Leia mais](https://helpx.adobe.com/
 
 **Outras atualizações de documentação que vêm com a versão**
 
-A documentação MTA aprimorada do Adobe Campaign está disponível. [Leia mais](https://helpx.adobe.com/campaign/kb/acc-campaign-enhanced-mta.html)
+A documentação MTA aprimorada do Adobe Campaign está disponível. [Leia mais](https://helpx.adobe.com/br/campaign/kb/acc-campaign-enhanced-mta.html)
 
 Uma nova seção foi adicionada sobre como solucionar problemas de um workflow que permanece no estado &quot;Start as soon as possible&quot; em uma campanha. [Leia mais](../../production/using/workflow-execution.md#start-as-soon-as-possible-in-campaigns)
 
@@ -604,7 +604,7 @@ As práticas recomendadas para aprimoramentos de desempenho de workflows e deliv
 
 **Novos recursos incluídos na versão 19.1**
 
-Painel de controle - [Leia mais](https://experienceleague.adobe.com/docs/control-panel/using/control-panel-home.html)
+Painel de controle - [Leia mais](https://experienceleague.adobe.com/docs/control-panel/using/control-panel-home.html?lang=pt-BR)
 
 Trilha de auditoria - [Leia mais](../../production/using/audit-trail.md)
 
@@ -612,7 +612,7 @@ Trilha de auditoria - [Leia mais](../../production/using/audit-trail.md)
 
 Foi criada uma atualização das perguntas frequentes sobre a nova build. [Leia mais](https://helpx.adobe.com/br/campaign/kb/build-upgrade-faq.html)
 
-A [Matriz de compatibilidade](compatibility-matrix.md) foi atualizada. A lista de sistemas de banco de dados suportados foi atualizada, as versões do Android/iOS e os SDKs relacionados. A Matriz de compatibilidade 19.0 foi arquivada.
+A [Matriz de compatibilidade](compatibility-matrix.md) foi atualizada. A lista de sistemas de banco de dados permitidos foi atualizada, assim como as versões do Android/iOS e SDKs relacionados. A Matriz de compatibilidade 19.0 foi arquivada.
 
 A página &quot;Deprecated and Removed Features in Campaign Classic&quot; foi atualizada. [Leia mais](deprecated-features.md)
 
@@ -626,9 +626,9 @@ Os guias de introdução de [segurança](https://helpx.adobe.com/br/campaign/kb/
 
 A descrição da opção de fluxo de trabalho de pré-processo foi atualizada para refletir as alterações no produto. [Leia mais](../../workflow/using/data-loading--file-.md)
 
-A nota técnica Experience Cloud Triggers foi atualizada. [Leia mais](../../integrations/using/about-triggers.md)
+A nota técnica de Acionadores da Experience Cloud foi atualizada. [Leia mais](../../integrations/using/about-triggers.md)
 
-A lista de mensagens de erro foi atualizada. [Leia mais](https://experienceleague.adobe.com/developer/campaign-errors/error_codes.html)
+A lista de mensagens de erro foi atualizada. [Leia mais](https://experienceleague.adobe.com/developer/campaign-errors/error_codes.html?lang=pt-BR)
 
 Foram adicionadas mais informações sobre métodos de autenticação SOAP para mensagens transacionais. [Leia mais](../../message-center/using/event-description.md)
 
@@ -667,7 +667,7 @@ Foram adicionadas informações sobre o relatório de faturamento.
 Atualização da documentação sobre a integração de públicos-alvo compartilhados.
 [Leia mais](../../integrations/using/configuring-shared-audiences-integration-in-adobe-campaign.md)
 
-As seguintes notas técnicas foram atualizadas: [SMS connector protocol and settings](https://helpx.adobe.com/campaign/kb/sms-connector-protocol-and-settings.html) e [Sequence auto generation](https://helpx.adobe.com/br/campaign/kb/sequence_auto_generation.html#Switchtoadedicatedsequence).
+As seguintes notas técnicas foram atualizadas: [SMS connector protocol and settings](https://helpx.adobe.com/br/campaign/kb/sms-connector-protocol-and-settings.html) e [Sequence auto generation](https://helpx.adobe.com/br/campaign/kb/sequence_auto_generation.html#Switchtoadedicatedsequence).
 
 A seção Technical workflows foi atualizada. [Leia mais](../../workflow/using/about-technical-workflows.md)
 
@@ -681,7 +681,7 @@ Foram adicionadas informações sobre a Faixa de consulta para a conta externa d
 
 ### Janeiro de 2019{#release-doc-16-01-2019}
 
-A nota técnica Experience Cloud Triggers foi atualizada. [Leia mais](../../integrations/using/about-triggers.md)
+A nota técnica de Acionadores da Experience Cloud foi atualizada. [Leia mais](../../integrations/using/about-triggers.md)
 
 Uma nota foi adicionada na seção de aprovação da oferta para especificar que a menção &quot;Content approved&quot; indica que o processo de aprovação do conteúdo foi realizado, se todas as ofertas foram habilitadas/aprovadas ou não. [Leia mais](../../interaction/using/offer-catalog-overview.md)
 
