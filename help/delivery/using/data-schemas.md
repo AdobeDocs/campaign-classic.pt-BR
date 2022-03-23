@@ -1,17 +1,17 @@
 ---
 product: campaign
-title: Usar esquemas de dados no Campaign
-description: Saiba como usar schemas de dados no Campaign
+title: Uso de esquemas de dados no Campaign
+description: Saiba como usar esquemas de dados no Campaign
 feature: Data Model
 exl-id: 3e28bfee-0321-40f4-9ef6-1bdb5b25041b
 source-git-commit: 40da5774c8a6a228992c4aa400e2d9924215611e
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '558'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
-# Usar esquemas de dados no Campaign{#data-schemas}
+# Uso de esquemas de dados no Campaign{#data-schemas}
 
 ![](../../assets/common.svg)
 
