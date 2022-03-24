@@ -4,20 +4,20 @@ title: Componentes da Web do Campaign e versão 100 nos navegadores Chrome Firef
 description: Componentes da Web do Campaign e versão 100 em navegadores Chrome, Firefox e Edge
 hide: true
 hidefromtoc: true
-source-git-commit: 48c9aab4f7e5f1f204a003a4d53f8d975247b867
+source-git-commit: 8b790141342f85769aa6c9663c2e9a34b504e2c5
 workflow-type: tm+mt
-source-wordcount: '637'
+source-wordcount: '635'
 ht-degree: 0%
 
 ---
 
 # A versão de 3 dígitos do navegador afeta os componentes da Web do Campaign {#version-100}
 
-Google, Mozilla estão alertando que o Chrome e o Firefox podem quebrar alguns sites devido às próximas versões de 3 dígitos.
+O Google e o Mozilla estão alertando que o Chrome e o Firefox podem quebrar alguns sites devido às próximas versões de 3 dígitos.
 
 O Chrome v100 está definido para lançamento em **29 de março de 2022** e Firefox v100 em **3 de maio de 2022**.
 
-Observe que o Microsoft Edge lançou sua versão 100 em março de 2022.
+A Microsoft lançou o Edge v100 anteriormente em março de 2022.
 
 A alteração no número da versão de 2 para 3 dígitos pode causar alguns problemas ao visitar sites que não estão preparados para essa alteração. Algumas páginas da Web podem parar de exibir corretamente nessas novas versões do navegador.
 
