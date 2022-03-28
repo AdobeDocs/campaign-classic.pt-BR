@@ -4,8 +4,8 @@ title: Definir o conteúdo de email no Adobe Campaign Classic
 description: Saiba como definir o conteúdo de email ao usar o Adobe Campaign Classic.
 feature: Email Design
 exl-id: 46212929-fd2d-44a2-897e-35f98e88af36
-source-git-commit: 56459b188ee966cdb578c415fcdfa485dcbed355
-workflow-type: ht
+source-git-commit: f5bd8c1806440b47225130070e166d90d99dcc75
+workflow-type: tm+mt
 source-wordcount: '1990'
 ht-degree: 100%
 
@@ -65,7 +65,7 @@ Também é possível inserir emoticons na linha do assunto com a janela pop-up *
 
 O conteúdo da mensagem é definido na seção inferior da janela de configuração de delivery.
 
-As mensagens são enviadas em formato de texto ou HTML por padrão, de acordo com a preferência do recipient. Recomendamos a criação de conteúdo nos dois formatos para garantir que as mensagens possam ser exibidas corretamente em qualquer sistema de email. Para obter mais informações, consulte [Seleção de formatos de mensagem](#selecting-message-formats).
+As mensagens são enviadas em formato de texto ou HTML por padrão, de acordo com a preferência do recipient. Recomendamos a criação de conteúdo nos dois formatos para garantir que as mensagens possam ser exibidas corretamente em qualquer sistema de email. Para obter mais informações, consulte [Seleção de formatos de mensagem](email-parameters.md#selecting-message-formats).
 
 * Para importar um conteúdo HTML, clique no botão **[!UICONTROL Open]**. Também é possível colar o código-fonte diretamente na subguia **[!UICONTROL Source]**.
 
