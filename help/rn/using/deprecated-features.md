@@ -6,10 +6,10 @@ feature: Overview
 role: User
 level: Beginner
 exl-id: d60d67de-6618-4f3b-be4a-ad7633ab5645
-source-git-commit: 966da123b30278817ca465ac5dfe1f733c4d6c5c
+source-git-commit: 1bb1365ce5a4eb89447c5d736a42cd470c7f3bba
 workflow-type: tm+mt
-source-wordcount: '1707'
-ht-degree: 100%
+source-wordcount: '1730'
+ht-degree: 98%
 
 ---
 
@@ -215,7 +215,7 @@ O Campaign Classic não é compatível com os seguintes servidores no FDA (Feder
 
 * DB2 UDB 9.5, 9.7. A versão mais recente do DB2 é compatível com o Federated Data Access (FDA). [Saiba mais](https://www-01.ibm.com/support/docview.wss?uid=swg21168270)
 * Oracle 9i, 10G R2. Versões mais recentes do Oracle são compatíveis com o FDA (Federated Data Access — Acesso Federado a Dados). [Saiba mais](https://www.oracle.com/us/support/library/lifetime-support-technology-069183.pdf)
-* PostgreSQL 8.3, 8.4, 9.0, 9.1, 9.2. Versões mais recentes do PostgreSQL são compatíveis com o Federated Data Access (FDA). [Saiba mais](https://www.postgresql.org/support/versioning)
+* As versões do PostgreSQL até 9.6 chegaram ao fim da vida útil. Versões mais recentes do PostgreSQL são compatíveis com o FDA (Federated Data Access — Acesso a Dados Federados). [Saiba mais](https://www.postgresql.org/support/versioning)
 * MSSQL 2000, 2005, 2008 R2. As versões mais recentes do SQL Server são compatíveis com o FDA (Federated Data Access — Acesso a Dados Federados). [Saiba mais](https://support.microsoft.com/pt-br/lifecycle/search/1044)
 * MySQL 5.1. Versões mais recentes do MySQL são compatíveis com o Federated Data Access (FDA). [Saiba mais](https://pt.wikipedia.org/wiki/InfiniDB)
 * O InfiniDB chegou ao fim da vida útil. [Saiba mais](https://www.mysql.com/support)
@@ -234,6 +234,8 @@ A partir da versão 19.1, o Adobe Campaign não será mais compatível com os se
 * SQL Server 2005
 * MySQL 5.1
 * DB2 UDB 9.7
+
+As versões do PostgreSQL até 9.6 chegaram ao fim da vida útil. Portanto, não são compatíveis com o Adobe Campaign.
 
 ### Conectores SMS {#sms-eol}
 

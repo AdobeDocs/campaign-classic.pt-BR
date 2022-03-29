@@ -6,9 +6,9 @@ audience: configuration
 content-type: reference
 topic-tags: schema-reference
 exl-id: 3405efb8-a37c-4622-a271-63d7a4148751
-source-git-commit: f000cb8bae164c22d1ede15db4e763cf50530674
+source-git-commit: 1bb1365ce5a4eb89447c5d736a42cd470c7f3bba
 workflow-type: tm+mt
-source-wordcount: '1564'
+source-wordcount: '1562'
 ht-degree: 12%
 
 ---
@@ -175,12 +175,10 @@ A tabela abaixo lista os mapeamentos para os tipos de dados gerados pelo Adobe C
 <table> 
  <tbody> 
   <tr> 
-   <td> <strong>Adobe Campaign</strong><br /> </td> 
    <td> <strong>PosgreSQL</strong><br /> </td> 
    <td> <strong>Oracle</strong><br /> </td> 
-   <td> <strong>Teradata</strong><br /> </td> 
-   <td> <strong>DB2</strong><br /> </td> 
    <td> <strong>MS SQL</strong><br /> </td> 
+   <td> <strong>Adobe Campaign</strong><br /> </td> 
   </tr> 
   <tr> 
    <td> Cadeia de caracteres<br /> </td> 
@@ -248,10 +246,10 @@ A tabela abaixo lista os mapeamentos para os tipos de dados gerados pelo Adobe C
   </tr> 
   <tr> 
    <td> Hora<br /> </td> 
-   <td> TEMPO<br /> </td> 
+   <td> HORA<br /> </td> 
    <td> FLUTUAÇÃO<br /> </td> 
-   <td> TEMPO<br /> </td> 
-   <td> TEMPO<br /> </td> 
+   <td> HORA<br /> </td> 
+   <td> HORA<br /> </td> 
    <td> FLUTUAÇÃO<br /> </td> 
   </tr> 
   <tr> 
@@ -486,7 +484,6 @@ Os elementos são designados pelo nome e os atributos são designados pelo nome 
 >
 >* **location/@city** não é válido; use **`[location/@city]`**
 >* **`[@email]`** e **@email** são equivalentes
-
 >
 
 
