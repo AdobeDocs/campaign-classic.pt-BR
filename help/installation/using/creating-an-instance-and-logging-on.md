@@ -6,9 +6,9 @@ audience: installation
 content-type: reference
 topic-tags: initial-configuration
 exl-id: a025026e-688e-4ec1-abc4-40ee040d2b3b
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: f4513834cf721f6d962c7c02c6c64b2171059352
 workflow-type: tm+mt
-source-wordcount: '589'
+source-wordcount: '587'
 ht-degree: 5%
 
 ---
@@ -41,7 +41,7 @@ Para criar uma nova instância, siga as etapas abaixo:
 
 1. Especifique uma conexão com o servidor de aplicativos do Adobe Campaign por meio de um URL. Use um DNS ou um alias da máquina ou seu endereço IP.
 
-   Por exemplo, você pode usar a variável [`https://<machine>.<domain>.com`](https://myserver.adobe.com) digite URL.
+   Por exemplo, você pode usar a variável `https://<machine>.<domain>.com` digite URL.
 
    >[!CAUTION]
    >
@@ -61,7 +61,7 @@ Para criar uma nova instância, siga as etapas abaixo:
 
    É possível definir uma lista de valores separados por vírgulas.
 
-   Os ? e * caracteres podem ser usados como curingas para substituir um ou vários caracteres (DNS, porta etc.). Por exemplo, a variável **demonstração*** O valor funcionará com &quot;https://demo&quot;, como funcionará com &quot;https://demo:8080&quot; e até mesmo com &quot;https://demo2&quot;.
+   Os ? e &#42; caracteres podem ser usados como curingas para substituir um ou vários caracteres (DNS, porta etc.). Por exemplo, a variável **demonstração&#42;** O valor funcionará com &quot;https://demo&quot;, como funcionará com &quot;https://demo:8080&quot; e até mesmo com &quot;https://demo2&quot;.
 
    Os nomes usados devem ser definidos no DNS. Você também pode informar a correspondência entre um nome DNS e um endereço IP no **c:/windows/system32/drivers/etc/hosts** no Windows e no **/etc/hosts** no Linux. Portanto, você deve modificar as configurações de conexão para usar esse nome DNS para se conectar à instância escolhida.
 

@@ -6,9 +6,9 @@ audience: interaction
 content-type: reference
 topic-tags: case-study
 exl-id: f9dd9ad6-48da-4a80-9405-109a433a1ed5
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: f4513834cf721f6d962c7c02c6c64b2171059352
 workflow-type: tm+mt
-source-wordcount: '463'
+source-wordcount: '448'
 ht-degree: 100%
 
 ---
@@ -110,7 +110,3 @@ Queremos enviar uma apresentação de oferta que pertence à categoria Canadá. 
    Podemos ver que nenhuma oferta para o Canadá é escolhida.
 
    ![](assets/offer_typology_example_019.png)
-
-**Tópicos relacionados**
-
-* [Gerencie ofertas e controle a redundância em canais](https://helpx.adobe.com/br/campaign/kb/simplifying-campaign-management-acc.html#Manageoffersandcontrolredundancyacrosschannels)

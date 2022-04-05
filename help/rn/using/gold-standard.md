@@ -6,10 +6,10 @@ feature: Overview
 role: User
 level: Beginner
 exl-id: 9e3a11b1-3070-4d90-91d5-7c559bdd500e
-source-git-commit: 2fd845ba5e9ced87cef7fd101579ffa4f177f367
+source-git-commit: f4513834cf721f6d962c7c02c6c64b2171059352
 workflow-type: tm+mt
-source-wordcount: '1676'
-ht-degree: 100%
+source-wordcount: '1670'
+ht-degree: 99%
 
 ---
 
@@ -54,7 +54,7 @@ A compilação 9032@d030c36 inclui a seguinte correção:
 > * Esta versão vem com uma [correção de segurança](https://helpx.adobe.com/br/security/products/campaign/apsb21-04.html): a atualização é obrigatória para reforçar a segurança do ambiente.
 > * Se você estiver usando a integração dos acionadores da Experience Cloud por meio da autenticação oAuth, será necessário migrar para o Adobe I/O conforme descrito [nesta página](../../integrations/using/configuring-adobe-io.md). O modo de autenticação oAuth herdado do Campaign [foi removido](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-discussions/adobe-analytics-legacy-api-end-of-life-notice/td-p/385411) em **setembro de 2021**. Os ambientes hospedados se beneficiarão de uma extensão até **23 de fevereiro de 2022**. Como cliente no local ou híbrido, entre em contato com o Atendimento ao cliente da Adobe para estender o suporte até fevereiro de 2022. Você deve fornecer [o AppID do aplicativo OAuth](../../integrations/using/configuring-pipeline.md?lang=en#step-optional) para a Adobe.
 >
->Saiba mais nas perguntas frequentes de atualização do [[!DNL Gold Standard] 11](https://helpx.adobe.com/br/campaign/kb/gold-standard-upgrade.html)
+>Saiba mais na [[!DNL Gold Standard] seção](../../rn/using/gold-standard.md)
 
 _2 de março de 2021_
 

@@ -3,9 +3,9 @@ product: campaign
 title: Versões do Campaign Classic 2018
 description: Saiba mais sobre as atualizações do Campaign Classic 2018
 exl-id: f70fceba-4bbf-4f33-8746-e4405a1cdae6
-source-git-commit: 96f2ae67a5b47b80533e759713cf5b36baa8cf36
+source-git-commit: f4513834cf721f6d962c7c02c6c64b2171059352
 workflow-type: tm+mt
-source-wordcount: '5414'
+source-wordcount: '5385'
 ht-degree: 97%
 
 ---
@@ -122,7 +122,7 @@ ht-degree: 97%
      <li> <p>Rastrear notificações silenciosas no iOS </p> </li> 
      <li> <p>Implementar feedback sobre chamadas de registro no iOS</p> </li> 
      <li> <p>Melhorar a velocidade da preparação de delivery no iOS</p> </li> 
-    </ul> <p>Como parte da depreciação do GCM pelo Google, o conector Android V2 agora permite conexões somente ao servidor FCM.</p><p>Para obter mais informações, consulte a <a href="../../delivery/using/integrating-campaign-sdk-into-the-mobile-application.md">documentação detalhada</a>. A atualização manual para o FCM é detalhado neste <a href="https://helpx.adobe.com/br/campaign/kb/migrate-to-fcm.html">artigo</a>. </p> </td> 
+    </ul> <p>Como parte da depreciação do GCM pelo Google, o conector Android V2 agora permite conexões somente ao servidor FCM.</p><p>Para obter mais informações, consulte a <a href="../../delivery/using/integrating-campaign-sdk-into-the-mobile-application.md">documentação detalhada</a>.</p> </td> 
   </tr> 
   <tr> 
    <td> Gestão de Dados SQL<br /> </td> 
@@ -466,7 +466,7 @@ Para clientes existentes, as APIs de arquivo não podem mais acessar a pasta **c
 **Aprimoramentos**
 
 * **LINE channel - architecture enhancement**: Como acontece com todos os outros canais do Adobe Campaign, o canal LINE agora é suportado em todos os tipos de implantação: hospedada, híbrida e no local.
-* **Sequence auto-generation**: O mecanismo de geração de ID foi aprimorado para aumentar a vida útil das instâncias do Campaign com grande volume de objetos. Para obter mais informações, consulte esta [technote](https://helpx.adobe.com/br/campaign/kb/sequence_auto_generation.html).
+* **Sequence auto-generation**: O mecanismo de geração de ID foi aprimorado para aumentar a vida útil das instâncias do Campaign com grande volume de objetos.
 
 **Outras alterações**
 

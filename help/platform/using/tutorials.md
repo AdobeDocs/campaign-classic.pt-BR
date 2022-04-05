@@ -6,9 +6,9 @@ audience: platform
 content-type: reference
 topic-tags: starting-with-adobe-campaign
 exl-id: e612a4e7-f4ef-4db4-afab-5544b73430d3
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: f4513834cf721f6d962c7c02c6c64b2171059352
 workflow-type: tm+mt
-source-wordcount: '394'
+source-wordcount: '366'
 ht-degree: 100%
 
 ---
@@ -21,7 +21,6 @@ ht-degree: 100%
 
 Comece a usar o Adobe Campaign consultando nossos intuitivos guias passo a passo.
 
-* [Edição de conteúdo de e-mail com o Adobe Experience Manager](https://helpx.adobe.com/br/campaign/kb/acc-aem.html): conheça as noções básicas para começar a usar a integração entre o Adobe Campaign Manager e o Experience Manager.
 * [Gestão de privacidade](https://helpx.adobe.com/br/campaign/kb/acc-privacy.html): descubra o que o Adobe Campaign Classic oferece para ajudá-lo com a conformidade de Privacidade ao usar nosso serviço.
 * [Integração de conteúdo dinâmico em um e-mail](https://experienceleague.adobe.com/docs/campaign-classic/using/integrating-with-adobe-experience-cloud/adobe-target/inserting-a-dynamic-image.html?lang=pt-BR): descubra os conceitos básicos para começar a integração entre o Campaign Classic e o Target Standard.
 * [Gestão da capacidade de entrega](../../delivery/using/about-deliverability.md): conheça os conceitos e as práticas recomendadas relacionadas à capacidade de entrega, bem como as ferramentas oferecidas pelo Adobe Campaign Classic para otimizar o envio de seus deliveries.

@@ -6,10 +6,10 @@ audience: installation
 content-type: reference
 topic-tags: appendices
 exl-id: 70cd6a4b-c839-4bd9-b9a7-5a12e59c0cbf
-source-git-commit: 6b7ec6b39a79e9b1e6e2bba3d5193765094cf4fd
+source-git-commit: f4513834cf721f6d962c7c02c6c64b2171059352
 workflow-type: tm+mt
-source-wordcount: '7969'
-ht-degree: 7%
+source-wordcount: '7961'
+ht-degree: 8%
 
 ---
 
@@ -530,7 +530,7 @@ Para obter mais informações, consulte [seção](../../installation/using/confi
    <td> 4<br /> </td> 
   </tr> 
   <tr> 
-   <td> timeout<br /> </td> 
+   <td> tempo limite<br /> </td> 
    <td> Tempo limite em milissegundos para uma consulta DNS.<br /> </td> 
    <td> Longo<br /> </td> 
    <td> 5000<br /> </td> 
@@ -613,7 +613,7 @@ Estes são os diferentes parâmetros da variável **htmlToPdf** nó . Essa é a 
    <td> "phantomjs" <br /> </td> 
   </tr> 
   <tr> 
-   <td> timeout<br /> </td> 
+   <td> tempo limite<br /> </td> 
    <td> Tempo limite para uma conversão: tempo máximo de conversão em segundos. Além desse limite, o processo de conversão é interrompido e um erro é gerado.<br /> </td> 
    <td> Longo<br /> </td> 
    <td> 120º<br /> </td> 
@@ -708,7 +708,7 @@ Estes são os diferentes parâmetros da variável **ims** nó . Esta é a config
 
 Estes são os diferentes parâmetros da variável **javaScript** nó . Essa é a configuração do interpretador JavaScript.
 
-Para obter mais informações, consulte [Documentação de relatórios](../../reporting/using/actions-on-reports.md#memory-allocation) e isto [nota técnica](https://helpx.adobe.com/campaign/kb/out-of-memory-error-in-js-code-activity-in-workflows.html).
+Para obter mais informações, consulte [Documentação de relatórios](../../reporting/using/actions-on-reports.md#memory-allocation).
 
 <table> 
  <thead> 
@@ -1028,11 +1028,11 @@ Se um registro satisfizer **dnsSuffix** mas não **urlRegEx**, é examinado o se
 
 Por exemplo, para autorizar o acesso a todas as URLs do domínio business.com, podemos definir dois registros:
 
-dnsSuffix=&quot;business.com&quot; urlRegEx=&quot;http://.*&quot;
+dnsSuffix=&quot;business.com&quot; urlRegEx=&quot;http://.&#42;&quot;
 
 e
 
-dnsSuffix=&quot;business.com&quot; urlRegEx=&quot;https://.*&quot;
+dnsSuffix=&quot;business.com&quot; urlRegEx=&quot;https://.&#42;&quot;
 
 Esta é a configuração padrão:
 
@@ -2423,7 +2423,7 @@ Estes são os diferentes parâmetros da variável **sms** nó . Essa é a config
    <td> 600<br /> </td> 
   </tr> 
   <tr> 
-   <td> timeout<br /> </td> 
+   <td> tempo limite<br /> </td> 
    <td> Tempo limite de comunicação com o gateway SMS.<br /> </td> 
    <td> Longo<br /> </td> 
    <td> 300<br /> </td> 
@@ -3082,7 +3082,7 @@ Para obter mais informações, consulte [seção](../../installation/using/deplo
    <td> true<br /> </td> 
   </tr> 
   <tr> 
-   <td> timeout<br /> </td> 
+   <td> tempo limite<br /> </td> 
    <td> Tempo de espera antes de excluir o url banido.<br /> </td> 
    <td> Cadeia de caracteres<br /> </td> 
    <td> "60"<br /> </td> 
@@ -3153,7 +3153,7 @@ Para obter mais informações, consulte [Segurança de página dinâmica e retra
    <td> <br /> </td> 
   </tr> 
   <tr> 
-   <td> timeout<br /> </td> 
+   <td> tempo limite<br /> </td> 
    <td> Tempo máximo de execução (em segundos) da solicitação que está sendo retransmitida.<br /> </td> 
    <td> Longo<br /> </td> 
    <td> <br /> </td> 

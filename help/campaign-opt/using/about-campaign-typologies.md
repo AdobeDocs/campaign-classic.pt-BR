@@ -4,9 +4,9 @@ title: Sobre tipologias de campanha
 description: Sobre tipologias de campanha
 feature: Typology Rules
 exl-id: 6d5b8584-4aa1-4d9a-89d9-d41da75dd323
-source-git-commit: 36e546a34d8c2345fefed5d459095a76c6224a38
-workflow-type: ht
-source-wordcount: '483'
+source-git-commit: f4513834cf721f6d962c7c02c6c64b2171059352
+workflow-type: tm+mt
+source-wordcount: '468'
 ht-degree: 100%
 
 ---
@@ -79,8 +79,6 @@ Este vídeo ensina a implementar o gerenciamento de fadiga no Adobe Campaign Cla
 Vídeos explicativos extras sobre o Campaign estão disponíveis [aqui](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html?lang=pt-BR).
 
 **Tópicos relacionados**
-
-* [Aplicar regras de negócios automáticas a deliveries em qualquer canal](https://helpx.adobe.com/br/campaign/kb/simplifying-campaign-management-acc.html#Applyautomaticbusinessrulestodeliveriesonanychannel)
 
 * [Introdução a tipologias e gerenciamento de fadiga](pressure-rules.md)
 
