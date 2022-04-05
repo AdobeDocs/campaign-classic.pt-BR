@@ -6,7 +6,7 @@ audience: installation
 content-type: reference
 topic-tags: additional-configurations
 exl-id: 46c8ed46-0947-47fb-abda-6541b12b6f0c
-source-git-commit: bd9f035db1cbad883e1f27fe901e34dfbc9c1229
+source-git-commit: 294309239bc476669e9e017c27bd1b51a0bdaf8c
 workflow-type: tm+mt
 source-wordcount: '1578'
 ht-degree: 3%
@@ -23,7 +23,7 @@ Este capítulo detalha as configurações do lado do servidor que podem ser exec
 
 Estes procedimentos limitam-se a: **no local**/**híbrido** implantações e requer permissões de administração.
 
-Para **hospedado** implantações, configurações do lado do servidor podem ser configuradas somente pelo Adobe. No entanto, algumas configurações podem ser configuradas no  [Painel de controle do Campaign](https://experienceleague.adobe.com/docs/control-panel/using/discover-control-panel/key-features.html?lang=pt-BR), como gerenciamento de lista de permissões de IP ou permissões de URL. [Saiba mais](https://experienceleague.adobe.com/docs/control-panel/using/instances-settings/ip-allow-listing-instance-access.html?lang=pt-BR).
+Para **hospedado** implantações, configurações do lado do servidor podem ser configuradas somente pelo Adobe. No entanto, algumas configurações podem ser configuradas no [Painel de controle do Campaign](https://experienceleague.adobe.com/docs/control-panel/using/discover-control-panel/key-features.html?lang=pt-BR), como gerenciamento de lista de permissões de IP ou permissões de URL. [Saiba mais](https://experienceleague.adobe.com/docs/control-panel/using/instances-settings/ip-allow-listing-instance-access.html?lang=pt-BR).
 
 Para obter mais informações, consulte esta seção.
 
@@ -159,7 +159,7 @@ O Adobe Campaign usa as seguintes páginas JSP:
 * /nl/jsp/**logon.jsp**: Acesso baseado na Web a relatórios e à implantação do console do cliente,
 * /nl/jsp/**s.jsp** : Utilização de marketing viral (patrocínio e redes sociais).
 
-Os JSSPs usados para o Canal de aplicativo móvel são os seguintes:
+Os JSSPs usados para o canal do aplicativo Mobile são os seguintes:
 
 * nms/mobile/1/registerIOS.jssp
 * nms/mobile/1/registerAndroid.jssp

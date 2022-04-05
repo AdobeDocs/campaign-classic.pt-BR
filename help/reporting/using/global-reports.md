@@ -4,10 +4,10 @@ title: Relatórios globais
 description: Relatórios globais
 feature: Reporting, Monitoring
 exl-id: 6839fd7e-ecf4-4504-90a8-0207bc3991e4
-source-git-commit: 81716a30a57d3ed8542b329d5fb9b0443fd4bf31
-workflow-type: ht
-source-wordcount: '2183'
-ht-degree: 100%
+source-git-commit: 294309239bc476669e9e017c27bd1b51a0bdaf8c
+workflow-type: tm+mt
+source-wordcount: '2295'
+ht-degree: 98%
 
 ---
 
@@ -48,6 +48,14 @@ Este relatório contém informações sobre a taxa de transferência de delivery
 ![](assets/s_ncs_user_report_toolbar.png)
 
 Você pode configurar os valores exibidos alterando a escala de tempo: visualização de 1 hora, 3 horas, 24 horas, etc. Clique em **[!UICONTROL Refresh]** para confirmar a seleção.
+
+>[!NOTE]
+>
+>Se sua instância estiver hospedada no AWS, você também poderá monitorar o número de deliveries enviados por hora usando o Campaign Classic [Painel de controle do Campaign](https://experienceleague.adobe.com/docs/control-panel/using/sftp-management/sftp-storage-management.html?lang=pt-BR). Para verificar se sua instância está hospedada no AWS, siga as etapas detalhadas [nesta página](https://experienceleague.adobe.com/docs/control-panel/using/faq.html?lang=pt-BR).
+>
+>O Painel de controle do Campaign é acessível a todos os usuários administradores. As etapas para conceder acesso de Administrador a um usuário estão detalhadas [nesta página](https://experienceleague.adobe.com/docs/control-panel/using/discover-control-panel/managing-permissions.html?lang=pt-BR#discover-control-panel).
+>
+>Observe que sua instância deve ser atualizada com a build mais recente do [Gold Standard](../../rn/using/gold-standard.md) ou a build mais recente do GA (21.1.3)[. ](../../rn/using/latest-release.md) Saiba como verificar sua versão [nesta seção](../../platform/using/launching-adobe-campaign.md#getting-your-campaign-version).
 
 ## Atividades do usuário {#user-activities}
 
