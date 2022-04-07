@@ -7,9 +7,9 @@ content-type: reference
 topic-tags: acs-connector
 exl-id: 4693dca1-ee55-43f0-b3dc-62a5b67a8058
 source-git-commit: 1bb1365ce5a4eb89447c5d736a42cd470c7f3bba
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '870'
-ht-degree: 90%
+ht-degree: 100%
 
 ---
 
@@ -113,10 +113,10 @@ Dependendo da sua implementação, você pode enfrentar vários problemas comuns
 
    Os recursos sincronizados do Campaign v7 estão no modo somente leitura no Campaign Standard para garantir a consistência dos dados. Se você precisar editar um desses elementos, poderá fazer isso no Campaign v7 e depois replicar a alteração no Campaign Standard.
 
-* **Os erros ocorrem na [ACS] Fluxo de trabalho de replicação do log de entrega do perfil. O que devo fazer?**
+* **Erros ocorrem no fluxo de trabalho de replicação do log de entrega do perfil do [ACS]. O que devo fazer?**
 
-   Caso as instâncias Campaign Classic e Campaign Standard sejam usadas para enviar emails com URLs rastreadas, um problema com tagIds de URL duplicadas pode ocorrer durante a sincronização. Nesse caso, a variável **[ACS] Replicação de log de delivery de perfil** O workflow (newRcpDeliveryLogReplication) ainda falhará com o seguinte erro:
+   Caso ambas as instâncias do Campaign Classic e do Campaign Standard sejam usadas para enviar emails com URLs rastreadas, um problema com tagIds de URL duplicadas pode ocorrer durante a sincronização. Nesse caso, o fluxo de trabalho de replicação do log de entrega do perfil do **[ACS]** (newRcpDeliveryLogReplication) falhará com o seguinte erro:
 
    ```PGS-220000 PostgreSQL error: ERROR: duplicate key value violates unique constraint "nmstrackingurl_tagid" DETAIL: Key (stagid) = (1c7bdec2) already exists.```
 
-   Para resolver o problema e evitar que ele ocorra novamente, atualize o **Atualizar URLs de rastreamento** (writerTrackingUrls) no workflow e adicione o prefixo &quot;ACS&quot; à expressão de origem @tagId.
+   Para resolver o problema e evitar que ele ocorra novamente, atualize a atividade **Atualizar URLs de rastreamento** (writerTrackingUrls) no fluxo de trabalho e adicione o prefixo “ACS” à expressão de origem @tagId.
