@@ -1,15 +1,15 @@
 ---
 product: campaign
-title: Provisionamento do conector Adobe Analytics
-description: Saiba mais sobre o provisionamento do conector Adobe Analytics
+title: Provisionamento do conector do Adobe Analytics
+description: Saiba mais sobre o provisionamento do conector do Adobe Analytics
 feature: Overview
 role: User, Admin
 level: Beginner
 exl-id: 24e002aa-4e86-406b-92c7-74f242ee4b86
 source-git-commit: cb434747d2bee5d24dcaa1141100c269eea313ad
-workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+workflow-type: ht
+source-wordcount: '647'
+ht-degree: 100%
 
 ---
 
