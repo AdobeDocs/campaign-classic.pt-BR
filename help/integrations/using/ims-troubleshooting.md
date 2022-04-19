@@ -7,9 +7,9 @@ content-type: reference
 topic-tags: connecting-via-an-adobe-id
 exl-id: 1ce89c3a-1fe6-4ed6-9547-2eb9713a0ec3
 source-git-commit: f4513834cf721f6d962c7c02c6c64b2171059352
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '407'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -38,7 +38,7 @@ Por exemplo, se o **Contexto do Produto** não aparecer, o contexto padrão do p
 
 **[!UICONTROL IMS Server URL]**
 
-Na campanha **Adobe Marketing Cloud** conta externa, verifique se a variável **[!UICONTROL IMS Server URL]** é `adobeid-na1.services.adobe.com` ou `ims-na1.adobelogin.com`. Verifique se as instâncias de estágio e de produção apontam para o mesmo ponto final de produção IMS.
+Na conta externa da **Adobe Marketing Cloud** do Campaign, verifique se o **[!UICONTROL IMS Server URL]** está definido como `adobeid-na1.services.adobe.com` ou `ims-na1.adobelogin.com`. Verifique se as instâncias de estágio e de produção apontam para o mesmo ponto final de produção IMS.
 
 **Association mask**
 
