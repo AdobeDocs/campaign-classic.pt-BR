@@ -7,9 +7,9 @@ role: User
 level: Beginner
 exl-id: 9e3a11b1-3070-4d90-91d5-7c559bdd500e
 source-git-commit: f4513834cf721f6d962c7c02c6c64b2171059352
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1670'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -54,7 +54,7 @@ A compilação 9032@d030c36 inclui a seguinte correção:
 > * Esta versão vem com uma [correção de segurança](https://helpx.adobe.com/br/security/products/campaign/apsb21-04.html): a atualização é obrigatória para reforçar a segurança do ambiente.
 > * Se você estiver usando a integração dos acionadores da Experience Cloud por meio da autenticação oAuth, será necessário migrar para o Adobe I/O conforme descrito [nesta página](../../integrations/using/configuring-adobe-io.md). O modo de autenticação oAuth herdado do Campaign [foi removido](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-discussions/adobe-analytics-legacy-api-end-of-life-notice/td-p/385411) em **setembro de 2021**. Os ambientes hospedados se beneficiarão de uma extensão até **23 de fevereiro de 2022**. Como cliente no local ou híbrido, entre em contato com o Atendimento ao cliente da Adobe para estender o suporte até fevereiro de 2022. Você deve fornecer [o AppID do aplicativo OAuth](../../integrations/using/configuring-pipeline.md?lang=en#step-optional) para a Adobe.
 >
->Saiba mais na [[!DNL Gold Standard] seção](../../rn/using/gold-standard.md)
+>Saiba mais na seção [[!DNL Gold Standard] ](../../rn/using/gold-standard.md)
 
 _2 de março de 2021_
 
@@ -123,11 +123,11 @@ _29 de abril de 2020_
 
 A build 9032@3a9dc9c inclui as seguintes correções:
 
-* A segurança no rastreamento de links no email foi aprimorada. Ela é ativada por padrão para todos os clientes. Um recurso de segurança adicional e aprimorado está disponível e pode ser ativado ao acessar o Atendimento ao cliente. Mais detalhes sobre o recurso e as etapas para clientes não hospedados para habilitá-lo podem ser encontrados na [lista de verificação de Segurança e Privacidade](https://helpx.adobe.com/campaign/kb/acc-security.html#signature-mechanism).
+* A segurança no rastreamento de links no email foi aprimorada. Ela é ativada por padrão para todos os clientes. Um recurso de segurança adicional e aprimorado está disponível e pode ser ativado ao acessar o Atendimento ao cliente. Mais detalhes sobre o recurso e as etapas para clientes não hospedados para habilitá-lo podem ser encontrados na [lista de verificação de Segurança e Privacidade](https://helpx.adobe.com/br/campaign/kb/acc-security.html#signature-mechanism).
 
 >[!CAUTION]
 >
->Se tiver problemas com notificações por push usando links de rastreamento ou delivery usando tags de âncora, recomendamos desativar o novo mecanismo de assinatura para links de rastreamento. O procedimento está detalhado [nesta página](https://helpx.adobe.com/campaign/kb/acc-security.html#signature-mechanism)
+>Se tiver problemas com notificações por push usando links de rastreamento ou delivery usando tags de âncora, recomendamos desativar o novo mecanismo de assinatura para links de rastreamento. O procedimento está detalhado [nesta página](https://helpx.adobe.com/br/campaign/kb/acc-security.html#signature-mechanism)
 
 * Correção de um problema que impedia a exibição de imagens na entrega de linha. (NEO-23207)
 * Correção de um problema com a atividade **Transferência de Arquivo**, que impedia que a autenticação com a chave SFTP funcionasse no Debian 9. (NEO-23183)
@@ -552,7 +552,7 @@ Os seguintes navegadores são compatíveis com o Campaign for Web Access.
 <p>Microsoft Internet Explorer</p>
 </td>
 <td>
-<p>11º</p>
+<p>11</p>
 </td>
 </tr>
 </tbody>
