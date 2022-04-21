@@ -6,16 +6,16 @@ feature: Profiles, Audiences
 role: User, Data Architect
 level: Beginner
 exl-id: 54f1ad6c-54b0-4448-8c38-806dd75c1dae
-source-git-commit: ed43a632a962747c9402ff8d5f0ce442c2cc6490
+source-git-commit: fdb840a9e6349f074378899e07f794b62fb5b054
 workflow-type: tm+mt
-source-wordcount: '836'
-ht-degree: 100%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
 # Introdução a perfis{#about-profiles}
 
-![](../../assets/common.svg)
+![](../../assets/v7-only.svg)
 
 Os perfis são centralizados no banco de dados do Adobe Campaign. Há vários mecanismos possíveis para obter perfis e criar esse banco de dados: coleta online via formulários Web, importação manual ou automática de arquivos de texto, replicação com bancos de dados corporativos ou outros sistemas de informações. Com o Adobe Campaign, você pode incorporar o histórico de marketing, informações de compras, preferências, dados de CRM e quaisquer dados de PI relevantes em uma exibição consolidada para analisar e tomar decisões.
 

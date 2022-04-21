@@ -6,16 +6,16 @@ feature: Overview
 role: Data Engineer
 level: Beginner
 exl-id: 5f689679-7148-4abd-a9bf-185854c64b13
-source-git-commit: 1d32161d60f6b382188012b104c642f504e28645
-workflow-type: ht
-source-wordcount: '909'
-ht-degree: 100%
+source-git-commit: fdb840a9e6349f074378899e07f794b62fb5b054
+workflow-type: tm+mt
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
 # Workspace do Adobe Campaign{#adobe-campaign-workspace}
 
-![](../../assets/common.svg)
+![](../../assets/v7-only.svg)
 
 ## Explorar a interface do Adobe Campaign {#about-adobe-campaign-interface}
 

@@ -4,16 +4,16 @@ title: Gerenciar e personalizar listas
 description: Saiba como procurar e configurar listas
 feature: Audiences, Data Management
 exl-id: 21656cc2-15a1-4156-8897-ea4fe3e9b97f
-source-git-commit: f05eefc9945c4ead89eb448b6e28c3523559e055
-workflow-type: ht
-source-wordcount: '1151'
-ht-degree: 100%
+source-git-commit: fdb840a9e6349f074378899e07f794b62fb5b054
+workflow-type: tm+mt
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
 # Gerenciar e personalizar listas{#manage-and-customize-lists}
 
-![](../../assets/common.svg)
+![](../../assets/v7-only.svg)
 
 Você pode acessar as listas de registros no banco de dados do Campaign usando o Explorer. Você pode filtrar essas listas, executar pesquisas, adicionar informações, filtrar e classificar dados.
 
