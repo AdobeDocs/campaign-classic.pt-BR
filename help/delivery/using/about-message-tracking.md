@@ -5,9 +5,9 @@ description: Saiba mais sobre as diretrizes gerais para rastreamento no Adobe Ca
 feature: Monitoring, Email
 exl-id: 43779505-9917-4e99-af25-b00a9d29a645
 source-git-commit: 29fae1305a6d2b8debbc2aa705c047eaf3730457
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '684'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -15,7 +15,7 @@ ht-degree: 96%
 
 ![](../../assets/common.svg)
 
-Graças às suas funcionalidades de rastreamento, o Adobe Campaign permite rastrear as mensagens enviadas e verificar o comportamento dos recipients: abrir, clicar em links, cancelar assinatura etc.
+Graças às funcionalidades de rastreamento, o Adobe Campaign permite que você rastreie as mensagens enviadas e verifique o comportamento dos recipientes: abrir, clicar em links, cancelamento de subscrição, etc.
 
 Essas informações são recuperadas na guia **[!UICONTROL Tracking]** do perfil de cada recipient do delivery. Esta guia apresenta todos os links de URL rastreados e clicados pelo recipient selecionado na lista. Esse é o acúmulo de todos os URLs rastreados nas remessas que ainda estão na tela de envio. A lista pode ser configurada e normalmente contém: o URL clicado, a data e a hora do clique e o documento no qual o URL foi localizado. Para obter mais informações, consulte [esta seção](../../platform/using/editing-a-profile.md#tracking-tab).
 
