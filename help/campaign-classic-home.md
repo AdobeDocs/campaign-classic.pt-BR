@@ -4,9 +4,9 @@ product: campaign
 title: Documentação do produto Adobe Campaign Classic v7
 exl-id: 6b3f1689-80de-49fd-b7ee-7a2a1931d157
 source-git-commit: 29fae1305a6d2b8debbc2aa705c047eaf3730457
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '235'
-ht-degree: 81%
+ht-degree: 100%
 
 ---
 
@@ -18,15 +18,15 @@ ht-degree: 81%
 
 * **[Programa de lançamento 2022](technotes/using/dc-migration.md)**<br/> Atualize seu ambiente e melhore a segurança, a infraestrutura e o desempenho
 
-* **[Versão de março está ativa!](rn/using/latest-release.md)**<br/> Descubra novos recursos, melhorias e correções nas Notas de versão
+* **[A versão de março está disponível.](rn/using/latest-release.md)**<br/> Descubra novos recursos, melhorias e correções nas Notas de versão
 
-* **[Perguntas frequentes e**[ nota técnica](technotes/using/apple-mail-app-privacy-protection.md)**<br/> sobre a Proteção de privacidade do Apple Mail](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/additional-resources/technotes/apple-mail-privacy-faq.html?lang=pt-BR)**Encontre orientações em resposta ao anúncio da Apple sobre o iOS 15
+* **[Perguntas frequentes sobre a Proteção de privacidade do Apple Mail e**[ nota técnica](technotes/using/apple-mail-app-privacy-protection.md)**<br/> ](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/additional-resources/technotes/apple-mail-privacy-faq.html?lang=pt-BR)**Encontre orientações em resposta ao anúncio da Apple sobre o iOS 15
 
 * **[Remover rejeições permanentes incorretas](delivery/using/update-bounce-qualification.md)**<br/> Saiba como atualizar rejeições permanentes incorretas após a interrupção da Apple
 
 * **[Proteja suas instâncias do Campaign](technotes/using/acc-config-updates.md)**<br/> Atualize para os builds mais recentes para proteger a plataforma do Campaign
 
-* **[Atualizar a integração do Adobe Experience Cloud Triggers](integrations/using/configuring-adobe-io.md)**<br/> O serviço de autenticação oAuth herdado chegou ao fim da vida útil: você deve migrar para o Adobe I/O
+* **[Atualizarção da integração dos Acionadores da Adobe Experience Cloud](integrations/using/configuring-adobe-io.md)**<br/> O serviço de autenticação oAuth herdado chegou ao fim da vida útil: é necessário migrar para o Adobe I/O
 
 [Mais atualizações](rn/using/documentation-updates.md)
 
@@ -84,5 +84,5 @@ ht-degree: 81%
 | [Vídeos explicativos](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html?lang=pt-BR) | [Modelo de dados do Campaign](configuration/using/about-data-model.md) |
 | [Matriz de compatibilidade](rn/using/compatibility-matrix.md) | [JSAPI do Campaign](https://experienceleague.adobe.com/developer/campaign-api/api/p-1.html?lang=pt-BR) |
 | [Introdução às atualizações](rn/using/rn-overview.md) | [Manual de rastreamento](delivery/using/about-message-tracking.md) |
-| [Recursos obsoletos](rn/using/deprecated-features.md) | [Lista de verificação de segurança e privacidade](https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/security-privacy/get-started-security-privacy.html) |
+| [Recursos obsoletos](rn/using/deprecated-features.md) | [Lista de verificação de segurança e privacidade](https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/security-privacy/get-started-security-privacy.html?lang=pt-BR) |
 | [Painel de controle do Campaign](https://experienceleague.adobe.com/docs/control-panel/using/control-panel-home.html?lang=pt-BR) | [Orientações de monitoramento](production/using/monitoring-guidelines.md) |
