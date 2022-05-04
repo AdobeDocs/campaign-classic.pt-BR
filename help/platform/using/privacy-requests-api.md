@@ -1,14 +1,15 @@
 ---
 product: campaign
 title: Processo automático de solicitação de privacidade
-description: Saiba como configurar um processo automático de solicitação de acesso a dados pessoais
+description: Saiba como configurar um processo automático de solicitação de privacidade
 audience: platform
 content-type: reference
 topic-tags: starting-with-adobe-campaign
-source-git-commit: a8044037e889f59d4288a0746001e84d319f6bcf
-workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+exl-id: a93bac61-f615-4178-bc12-0f056e48687d
+source-git-commit: 42b420d7dae7d38e9f4df442146d3b484c25e831
+workflow-type: ht
+source-wordcount: '652'
+ht-degree: 100%
 
 ---
 
