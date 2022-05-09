@@ -6,10 +6,10 @@ feature: Overview
 role: User, Admin
 level: Beginner
 exl-id: 24e002aa-4e86-406b-92c7-74f242ee4b86
-source-git-commit: cb434747d2bee5d24dcaa1141100c269eea313ad
+source-git-commit: 02eebe83de49ee97e573b0c47ca1fddb2195b991
 workflow-type: tm+mt
-source-wordcount: '647'
-ht-degree: 100%
+source-wordcount: '646'
+ht-degree: 97%
 
 ---
 
@@ -95,7 +95,7 @@ O perfil de produto está agora configurado. Em seguida, é necessário criar o 
 
 ## Criar projeto do Adobe I/O {#create-adobe-io}
 
-1. Acesse o Adobe I/O e faça logon como **Administrador de sistema** da organização IMS.
+1. Acesse o Adobe I/O e faça logon como **Administrador do sistema** da sua organização.
 
    Para obter mais informações sobre papéis de Administrador, consulte esta [página](https://helpx.adobe.com/br/enterprise/using/admin-roles.html).
 
@@ -157,5 +157,4 @@ O perfil de produto está agora configurado. Em seguida, é necessário criar o 
    ```
    nlserver config -instance:<instance name> -setimsjwtauth:Organization_Id/Client_Id/Technical_Account_ID/<Client_Secret>/<Base64_encoded_Private_Key>
    ```
-
 Agora é possível começar a usar o conector do Analytics e rastrear os comportamentos do cliente.

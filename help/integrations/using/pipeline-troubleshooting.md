@@ -5,10 +5,10 @@ description: 'Solução de problemas de pipeline '
 audience: integrations
 content-type: reference
 exl-id: 76645a6f-9536-49d6-b12a-fdd6113d31fa
-source-git-commit: 36b10a49fe92853f98beeb9e7d2fea3f59b10b6f
+source-git-commit: 02eebe83de49ee97e573b0c47ca1fddb2195b991
 workflow-type: tm+mt
-source-wordcount: '691'
-ht-degree: 100%
+source-wordcount: '705'
+ht-degree: 92%
 
 ---
 
@@ -30,11 +30,11 @@ Defina a configuração JSON na opção **NmsPipeline_Config**. Consulte &quot;O
 
 **Falha no pipeline com &quot;o assunto deve ser uma organização ou cliente válido&quot;**
 
-A configuração do identificador da organização não é válida.
+A configuração da ID da organização não é válida.
 
-1. Verifique se IMSOrgId está definido no serverConf.xml.
-1. Procure um IMSOrgId vazio no arquivo de configuração da instância que possa substituir o padrão. Em caso afirmativo, remova-o.
-1. Verifique se o IMSOrgId corresponde ao do cliente na Experience Cloud.
+1. Verifique se a ID da organização (ImsOrgId) está definida no serverConf.xml.
+1. Verifique se uma ID de organização vazia no arquivo de configuração da instância pode substituir a padrão. Em caso afirmativo, remova-o.
+1. Verifique se a ID da organização está correta. Para encontrar a ID da organização, consulte [esta página](https://experienceleague.adobe.com/docs/core-services/interface/administration/organizations.html?lang=pt-BR){_blank}
 
 **Falha no pipeline com &quot;chave inválida&quot;**
 

@@ -6,10 +6,10 @@ audience: installation
 content-type: reference
 topic-tags: appendices
 exl-id: 70cd6a4b-c839-4bd9-b9a7-5a12e59c0cbf
-source-git-commit: f4513834cf721f6d962c7c02c6c64b2171059352
+source-git-commit: 02eebe83de49ee97e573b0c47ca1fddb2195b991
 workflow-type: tm+mt
-source-wordcount: '7961'
-ht-degree: 8%
+source-wordcount: '7957'
+ht-degree: 10%
 
 ---
 
@@ -655,7 +655,7 @@ Estes são os diferentes parâmetros da variável **ims** nó . Esta é a config
  <tbody> 
   <tr> 
    <td> authIMSClientId<br /> </td> 
-   <td> ID do cliente<br /> </td> 
+   <td> ID de cliente<br /> </td> 
    <td> Cadeia de caracteres<br /> </td> 
    <td> <br /> </td> 
   </tr> 
@@ -3282,7 +3282,7 @@ Para obter mais informações, consulte [seção](../../installation/using/deplo
  <tbody> 
   <tr> 
    <td> IMSOrgId<br /> </td> 
-   <td> Identificador da organização do Identity Management System (IMS): identificador exclusivo da organização na Adobe Experience Cloud, usado em particular para o serviço VisitorID e o IMS SSO. <br /> </td> 
+   <td> ID da organização: identificador exclusivo da organização na Adobe Experience Cloud, usado em particular para o serviço VisitorID e o IMS SSO. <br /> </td> 
    <td> Cadeia de caracteres<br /> </td> 
    <td> <br /> </td> 
   </tr> 

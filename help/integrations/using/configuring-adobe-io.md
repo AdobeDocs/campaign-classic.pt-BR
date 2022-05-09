@@ -8,10 +8,10 @@ index: y
 internal: n
 snippet: y
 exl-id: ab30f697-3022-4a29-bbdb-14ca12ec9c3e
-source-git-commit: 966da123b30278817ca465ac5dfe1f733c4d6c5c
-workflow-type: ht
-source-wordcount: '701'
-ht-degree: 100%
+source-git-commit: 02eebe83de49ee97e573b0c47ca1fddb2195b991
+workflow-type: tm+mt
+source-wordcount: '693'
+ht-degree: 88%
 
 ---
 
@@ -32,12 +32,12 @@ Essa integração se aplica somente a partir das **versões 20.2.4 e posteriores
 
 Antes de iniciar esta implementação, verifique se você tem:
 
-* um **identificador de organização** valido: o identificador de organização do Identity Management System (IMS) é o identificador exclusivo da Adobe Experience Cloud, usado por exemplo para o serviço VisitorID e o IMS Single-Sign On (SSO). [Saiba mais](https://experienceleague.adobe.com/docs/core-services/interface/manage-users-and-products/organizations.html?lang=pt-BR)
-* um **Acesso de desenvolvedor** para sua organização. O administrador do sistema da organização IMS precisa seguir o procedimento **Adicionar desenvolvedores a um único perfil de produto** detalhado [nesta página](https://helpx.adobe.com/br/enterprise/admin-guide.html/enterprise/using/manage-developers.ug.html) para fornecer acesso de desenvolvedor ao `Analytics - {tenantID}` Perfil de produto do Adobe Analytics associado aos acionadores.
+* um **Identificador da organização**: a ID da organização é o identificador exclusivo da Adobe Experience Cloud, usado por exemplo para o serviço VisitorID e o IMS Single-Sign On (SSO). [Saiba mais](https://experienceleague.adobe.com/docs/core-services/interface/administration/organizations.html?lang=pt-BR)
+* um **Acesso de desenvolvedor** para sua organização. O administrador de sistema da organização precisa seguir o **Adicionar desenvolvedores a um único perfil de produto** detalhes do procedimento [nesta página](https://helpx.adobe.com/enterprise/using/manage-developers.html) para fornecer ao desenvolvedor acesso para a `Analytics - {tenantID}` Perfil de produto do produto Adobe Analytics associado aos acionadores.
 
 ## Etapa 1: criar/atualizar projeto do Adobe I/O {#creating-adobe-io-project}
 
-1. Acesse [!DNL Adobe I/O] e faça logon com o acesso do desenvolvedor da Organização IMS.
+1. Acesso [!DNL Adobe I/O] e faça logon com o acesso do desenvolvedor de sua organização.
 
    >[!NOTE]
    >

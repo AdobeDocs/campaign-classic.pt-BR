@@ -6,10 +6,10 @@ feature: Overview
 role: User
 level: Beginner
 exl-id: a9cd08b0-55c2-4405-9fb8-f0c623cd4ccb
-source-git-commit: 60fc0fd2a10f05abb77843ef0cb69e44f35a9648
+source-git-commit: 02eebe83de49ee97e573b0c47ca1fddb2195b991
 workflow-type: tm+mt
-source-wordcount: '2216'
-ht-degree: 63%
+source-wordcount: '2215'
+ht-degree: 62%
 
 ---
 
@@ -143,9 +143,9 @@ Os impactos globais na configuração, na conectividade com outros sistemas e pr
 
    Haverá endereços IP na lista de permissões que serão necessários na solução externa, pois o IP dos servidores de aplicativos será alterado. Essas informações serão fornecidas. Outras partes da integração são baseadas no IMS e devem funcionar como estão.
 
-* **E quanto ao cliente que não está atribuído à ID da organização para integração do IMS?**
+* **E quanto ao cliente que não está anexado à ID da organização para integração do IMS?**
 
-   Os clientes que não possuem IMS receberão um: uma ID da organização IMS será atribuída à instância.
+   Os clientes que não têm IMS receberão um: uma ID da organização será anexada à instância.
 
 * **As configurações de várias marcas são afetadas pela migração?**
 
