@@ -6,9 +6,9 @@ audience: integrations
 content-type: reference
 exl-id: 2d214c36-8429-4b2b-b1f5-fe2730581bba
 source-git-commit: 02eebe83de49ee97e573b0c47ca1fddb2195b991
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '907'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -16,9 +16,9 @@ ht-degree: 98%
 
 ![](../../assets/common.svg)
 
-Parâmetros de autenticação, como ID do cliente, chave privada e endpoint de autenticação, são configurados nos arquivos de configuração da instância.
+Parâmetros de autenticação, como ID do cliente, chave privada e ponto de acesso de autenticação, são configurados nos arquivos de configuração da instância.
 A lista de acionadores que serão processados é configurada em uma opção em formato JSON.
-Os acionadores são usados para segmentação por um workflow de campanha que envia emails. A campanha é configurada para que um cliente que tenha ambos os eventos de acionador receba um email.
+Os acionadores são usados para direcionamento por um fluxo de trabalho de campanha que envia emails. A campanha é configurada para que um cliente que tenha ambos os eventos de acionador receba um email.
 
 ## Pré-requisitos {#prerequisites}
 
@@ -31,10 +31,10 @@ Antes de iniciar esta configuração, verifique se você está usando:
    * 20.3.1
 * Versão do Adobe Analytics Standard
 
-Você também precisa:
+Você também precisará de:
 
 * Autenticação de projeto do Adobe I/O
-* uma ID de organização válida - para encontrar a ID de organização, consulte [esta página](https://experienceleague.adobe.com/docs/core-services/interface/administration/organizations.html?lang=pt-BR){_blank}
+* um ID de organização válido - Para encontrar seu ID de organização, consulte [esta página](https://experienceleague.adobe.com/docs/core-services/interface/administration/organizations.html?lang=pt-BR){_blank}
 * um Acesso de desenvolvedor para sua organização
 * configuração de acionadores efetuada no Adobe Analytics
 
@@ -46,9 +46,9 @@ A autenticação é compatível com a Marketing Cloud por meio do Projeto do Ado
 
 ## Etapa 1: Criar/atualizar projeto do Adobe I/O {#creating-adobe-io-project}
 
-Para clientes hospedados, você pode criar um tíquete de atendimento ao cliente para habilitar sua organização com tokens de conta técnica do Adobe I/O para a integração de acionadores.
+Para clientes hospedados, você pode criar um tíquete de atendimento ao cliente para habilitar sua organização com tokens de conta técnica do Adobe I/O para a integração do Triggers.
 
-Para clientes locais, consulte a página [Configuração do Adobe I/O para acionadores da Adobe Experience Cloud](../../integrations/using/configuring-adobe-io.md). Observe que é necessário selecionar **[!UICONTROL Adobe Analytics]** ao adicionar a API à credencial do Adobe I/O.
+Para clientes locais, consulte a página [Configuração do Adobe I/O para o Adobe Experience Cloud Triggers](../../integrations/using/configuring-adobe-io.md). Observe que é necessário selecionar **[!UICONTROL Adobe Analytics]** ao adicionar a API à credencial do Adobe I/O.
 
 ## Etapa 2: configurar a opção de pipeline NmsPipeline_Config {#configuring-nmspipeline}
 
@@ -130,8 +130,8 @@ A lista de parâmetros opcionais pode ser encontrada abaixo:
 | appName(Herdado) | AppID do aplicativo OAuth registrado no aplicativo Legacy Oath em que a chave pública foi carregada. Para obter mais informações, consulte esta [página](https://www.adobe.io/authentication/auth-methods.html#!AdobeDocs/adobeio-auth/master/AuthenticationOverview/ServiceAccountIntegration.md) |
 | authGatewayEndpoint(Legacy) | URL para obter tokens de gateway. Padrão: ```https://api.omniture.com``` |
 | authPrivateKey(Legacy) | A chave privada, parte pública carregada no aplicativo Legacy Oath, AES criptografada com a opção XtkKey: ```cryptString("PRIVATE_KEY")``` |
-| disableAuth(Legacy) | A ação de desabilitar a autenticação, conectando sem tokens de gateway é aceita somente por alguns pontos de entrada do pipeline de desenvolvimento. |
-| discoverPipelineEndpoint | URL para descobrir o ponto de entrada de serviços de pipeline que será usado para este locatário. Padrão: ```https://producer-pipeline-pnw.adobe.net``` |
+| disableAuth(Legacy) | A ação de desabilitar a autenticação, conectando sem tokens de gateway é aceita somente por alguns pontos de acesso do pipeline de desenvolvimento. |
+| discoverPipelineEndpoint | URL para descobrir o ponto de acesso dos serviços de pipeline que serão usados para este locatário. Padrão: ```https://producer-pipeline-pnw.adobe.net``` |
 | dumpStatePeriodSec | O período entre dois despejos do processo de estado interno no estado interno ```var/INSTANCE/pipelined.json.``` <br> também está acessível sob demanda aqui: ```http://INSTANCE:7781/pipelined/status``` |
 | forcedPipelineEndpoint | Desative a detecção do PipelineServicesEndpoint e force-a |
 | monitorServerPort | O processo de pipeline ouvirá nesta porta para fornecer o processo de estado interno aqui: ```http://INSTANCE:PORT/pipelined/status```. <br>O padrão é 7781 |
