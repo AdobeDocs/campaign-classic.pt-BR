@@ -6,7 +6,7 @@ feature: Overview
 role: User, Admin
 level: Beginner
 exl-id: 24e002aa-4e86-406b-92c7-74f242ee4b86
-source-git-commit: 02eebe83de49ee97e573b0c47ca1fddb2195b991
+source-git-commit: bb806da3d865e0d05e7823b2609227ea8effd875
 workflow-type: tm+mt
 source-wordcount: '646'
 ht-degree: 97%
@@ -157,4 +157,5 @@ O perfil de produto está agora configurado. Em seguida, é necessário criar o 
    ```
    nlserver config -instance:<instance name> -setimsjwtauth:Organization_Id/Client_Id/Technical_Account_ID/<Client_Secret>/<Base64_encoded_Private_Key>
    ```
+
 Agora é possível começar a usar o conector do Analytics e rastrear os comportamentos do cliente.
