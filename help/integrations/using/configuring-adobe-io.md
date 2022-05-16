@@ -1,7 +1,7 @@
 ---
 product: campaign
-title: Configuração do Adobe I/O para acionadores da Adobe Experience Cloud
-description: Saiba como configurar a Adobe I/O para acionadores da Adobe Experience Cloud
+title: Configuração do Adobe I/O para o Adobe Experience Cloud Triggers
+description: Saiba como configurar o Adobe I/O para o Adobe Experience Cloud Triggers
 audience: integrations
 content-type: reference
 index: y
@@ -9,19 +9,19 @@ internal: n
 snippet: y
 exl-id: ab30f697-3022-4a29-bbdb-14ca12ec9c3e
 source-git-commit: 02eebe83de49ee97e573b0c47ca1fddb2195b991
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '693'
-ht-degree: 88%
+ht-degree: 100%
 
 ---
 
-# Configuração do Adobe I/O para acionadores da Adobe Experience Cloud {#configuring-adobe-io}
+# Configuração do Adobe I/O para o Adobe Experience Cloud Triggers {#configuring-adobe-io}
 
 ![](../../assets/v7-only.svg)
 
 >[!CAUTION]
 >
->Se você estiver usando uma versão mais antiga da integração de acionadores por meio da autenticação oAuth, **será necessário mudar para o Adobe I/O conforme descrito abaixo**.
+>Se você estiver usando uma versão mais antiga da integração do Triggers por meio da autenticação oAuth, **será necessário mudar para o Adobe I/O conforme descrito abaixo**.
 >Observe que, durante a migração para o [!DNL Adobe I/O], alguns acionadores de entrada podem ser perdidos.
 >
 >O modo de autenticação oAuth herdado com o Campaign foi removido em **20 de agosto de 2021**. Os ambientes hospedados se beneficiarão de uma extensão até **25 de maio de 2022**. Como cliente no local ou híbrido, entre em contato com o Atendimento ao cliente da Adobe para estender o suporte até **maio de 2022**. Você deve [fornecer o AppID do aplicativo OAuth](../../integrations/using/configuring-pipeline.md?lang=en#step-optional) para a Adobe.
@@ -32,12 +32,12 @@ Essa integração se aplica somente a partir das **versões 20.2.4 e posteriores
 
 Antes de iniciar esta implementação, verifique se você tem:
 
-* um **Identificador da organização**: a ID da organização é o identificador exclusivo da Adobe Experience Cloud, usado por exemplo para o serviço VisitorID e o IMS Single-Sign On (SSO). [Saiba mais](https://experienceleague.adobe.com/docs/core-services/interface/administration/organizations.html?lang=pt-BR)
-* um **Acesso de desenvolvedor** para sua organização. O administrador de sistema da organização precisa seguir o **Adicionar desenvolvedores a um único perfil de produto** detalhes do procedimento [nesta página](https://helpx.adobe.com/enterprise/using/manage-developers.html) para fornecer ao desenvolvedor acesso para a `Analytics - {tenantID}` Perfil de produto do produto Adobe Analytics associado aos acionadores.
+* um **identificador de organização** válido: o ID da organização é o identificador exclusivo da Adobe Experience Cloud, que é usado, por exemplo, para o serviço de VisitorID e para o Logon único (SSO) no IMS. [Saiba mais](https://experienceleague.adobe.com/docs/core-services/interface/administration/organizations.html?lang=pt-BR)
+* um **Acesso de desenvolvedor** para sua organização. O administrador de sistema da organização precisa seguir o procedimento **Adicionar desenvolvedores a um único perfil de produto** detalhado [nesta página](https://helpx.adobe.com/br/enterprise/using/manage-developers.html) para fornecer acesso de desenvolvedor ao `Analytics - {tenantID}` do Perfil do produto do Adobe Analytics que está associado ao Triggers.
 
 ## Etapa 1: criar/atualizar projeto do Adobe I/O {#creating-adobe-io-project}
 
-1. Acesso [!DNL Adobe I/O] e faça logon com o acesso do desenvolvedor de sua organização.
+1. Acesse o [!DNL Adobe I/O] e faça logon com o acesso de desenvolvedor da sua organização.
 
    >[!NOTE]
    >
