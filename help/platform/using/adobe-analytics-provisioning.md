@@ -9,7 +9,7 @@ exl-id: 24e002aa-4e86-406b-92c7-74f242ee4b86
 source-git-commit: bb806da3d865e0d05e7823b2609227ea8effd875
 workflow-type: tm+mt
 source-wordcount: '646'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -95,7 +95,7 @@ O perfil de produto está agora configurado. Em seguida, é necessário criar o 
 
 ## Criar projeto do Adobe I/O {#create-adobe-io}
 
-1. Acesse o Adobe I/O e faça logon como **Administrador do sistema** da sua organização.
+1. Acesse o Adobe I/O e faça logon como **Administrador de sistema** da organização.
 
    Para obter mais informações sobre papéis de Administrador, consulte esta [página](https://helpx.adobe.com/br/enterprise/using/admin-roles.html).
 
@@ -142,7 +142,7 @@ O perfil de produto está agora configurado. Em seguida, é necessário criar o 
 
 1. Use a chave privada gerada na etapa 6.
 
-   Se você já configurou acionadores usando essas credenciais, sua chave privada deve ser a mesma para essa configuração de conector.
+   Se você já configurou o Triggers usando essas credenciais, sua chave privada deve ser a mesma para essa configuração de conector.
 
 1. Codifique a chave privada usando o seguinte comando: `base64 ./private.key > private.key.base64`. Isso salvará o conteúdo base64 em um novo arquivo `private.key.base64`.
 
