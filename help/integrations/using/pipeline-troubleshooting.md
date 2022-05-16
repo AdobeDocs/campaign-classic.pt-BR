@@ -6,9 +6,9 @@ audience: integrations
 content-type: reference
 exl-id: 76645a6f-9536-49d6-b12a-fdd6113d31fa
 source-git-commit: 02eebe83de49ee97e573b0c47ca1fddb2195b991
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '705'
-ht-degree: 92%
+ht-degree: 100%
 
 ---
 
@@ -30,11 +30,11 @@ Defina a configuração JSON na opção **NmsPipeline_Config**. Consulte &quot;O
 
 **Falha no pipeline com &quot;o assunto deve ser uma organização ou cliente válido&quot;**
 
-A configuração da ID da organização não é válida.
+A configuração do ID da organização não é válida.
 
-1. Verifique se a ID da organização (ImsOrgId) está definida no serverConf.xml.
-1. Verifique se uma ID de organização vazia no arquivo de configuração da instância pode substituir a padrão. Em caso afirmativo, remova-o.
-1. Verifique se a ID da organização está correta. Para encontrar a ID da organização, consulte [esta página](https://experienceleague.adobe.com/docs/core-services/interface/administration/organizations.html?lang=pt-BR){_blank}
+1. Verifique se o ID da organização (ImsOrgId) está definido no arquivo serverConf.xml.
+1. Verifique se um ID de organização vazio no arquivo de configuração da instância pode substituir o padrão. Em caso afirmativo, remova-o.
+1. Verifique se o ID da organização está correto. Para encontrar o ID da organização, consulte [esta página](https://experienceleague.adobe.com/docs/core-services/interface/administration/organizations.html?lang=pt-BR){_blank}
 
 **Falha no pipeline com &quot;chave inválida&quot;**
 
@@ -44,7 +44,7 @@ O parâmetro @authPrivateKey do arquivo de configuração da instância está in
 1. Verifique se a authPrivateKey: inicia com @, termina com = e tem cerca de 4000 caracteres.
 1. Procure a chave original e verifique se ela tem formato RSA e 4096 bits de comprimento e se inicia com `-----BEGIN RSA PRIVATE KEY-----`.
    <br> Se necessário, recrie a chave e registre-a no Adobe Analytics.
-1. Verifique se a chave foi codificada na mesma instância como [!DNL pipelined]. <br>Se necessário, refaça a codificação usando a amostra de JavaScript ou workflow.
+1. Verifique se a chave foi codificada na mesma instância como [!DNL pipelined]. <br>Se necessário, refaça a codificação usando a amostra de JavaScript ou o fluxo de trabalho.
 
 **Falha no pipeline com &quot;não é possível ler o token durante a autenticação&quot;**
 
@@ -67,7 +67,7 @@ Os logs devem ser os seguintes:
 2021-05-31T08:43:09.160Z        66462   66501   1       error   log     Error while authenticating: '{"error":"This client: df73c224e5-triggers-test is no longer allowed to get access token."}' (iRc=16384)
 ```
 
-Esta mensagem de erro significa que a autenticação é configurada usando o OAuth base herdado do Omniture. Consulte a documentação [Configuração do Adobe I/O para Acionadores da Adobe Experience Cloud](../../integrations/using/configuring-adobe-io.md) para atualizar sua autenticação.
+Esta mensagem de erro significa que a autenticação é configurada usando o OAuth base herdado do Omniture. Consulte a documentação [Configuração do Adobe I/O para o Adobe Experience Cloud Triggers](../../integrations/using/configuring-adobe-io.md) para atualizar sua autenticação.
 
 **Nenhum acionador foi recuperado**
 
@@ -84,16 +84,16 @@ Quando o processo [!DNL pipelined] estiver em execução e nenhum acionador for 
 
 Quando alguns eventos não estão vinculados a um cliente:
 
-1. Caso seja aplicável, verifique se o workflow de reconciliação está em execução.
+1. Caso seja aplicável, verifique se o fluxo de trabalho de reconciliação está em execução.
 1. Verifique se o evento contém uma ID do cliente.
-1. Faça um query na tabela do cliente usando a ID do cliente.
-1. Verifique a frequência de importação do cliente. Novos clientes são importados para o Adobe Campaign com um workflow.
+1. Realize uma consulta na tabela do cliente usando a ID do cliente.
+1. Verifique a frequência de importação do cliente. Novos clientes são importados para o Adobe Campaign com um fluxo de trabalho.
 
 **Latência no processamento de eventos**
 
 Quando o carimbo de data e hora do Analytics for muito mais antigo do que a data de criação do evento no Campaign.
 
-Geralmente, um acionador pode levar de 15 a 90 minutos para iniciar uma campanha de marketing. O tempo varia conforme a implementação da coleta de dados, o carregamento no pipeline, a configuração personalizada do acionador definido e o workflow no Adobe Campaign.
+Geralmente, um acionador pode levar de 15 a 90 minutos para iniciar uma campanha de marketing. O tempo varia conforme a implementação da coleta de dados, o carregamento no pipeline, a configuração personalizada do acionador definido e o fluxo de trabalho no Adobe Campaign.
 
 1. Verifique se o processo [!DNL pipelined] está em execução.
 1. Em pipelined.log, procure erros que possam causar novas tentativas. Caso seja aplicável, corrija os erros.
