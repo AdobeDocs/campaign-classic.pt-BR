@@ -5,7 +5,7 @@ description: Adobe Campaign - Atualização de segurança da versão do Apache
 hide: true
 hidefromtoc: true
 exl-id: 3d2f5d1d-4b31-4cc6-b6fb-13589856e00c
-source-git-commit: 7ee1cc501342aa59d1752259bf7228ea47a8cccb
+source-git-commit: a3eae4e253f66f5a651ffe0458f60b1f8bdf2258
 workflow-type: tm+mt
 source-wordcount: '541'
 ht-degree: 3%
@@ -15,7 +15,7 @@ ht-degree: 3%
 # Adobe Campaign - Atualização de segurança da versão do Apache {#apache-update}
 
 >[!CAUTION]
->Este artigo aplica-se a: Clientes do Campaign Classic v7 Managed Services, clientes do Campaign v8 e clientes do Campaign Standard.
+>Este artigo aplica-se a: **Campaign Classic v7 Managed Services** clientes, **Campanha v8** clientes e **Campaign Standard** clientes.
 
 O Adobe Campaign trabalha com ferramentas de terceiros e a compatibilidade é atualizada regularmente, a fim de implementar somente as versões compatíveis e se beneficiar das correções e melhorias mais recentes.
 
@@ -25,7 +25,7 @@ A equipe da Adobe Campaign realizará a atividade de atualização de segurança
 
 Essa atualização deve ser executada automaticamente fora do horário comercial normal para que você continue usando o serviço do Campaign sem interrupções.
 
-Suas instâncias que não sejam de produção serão atualizadas pelas equipes primeiro antes de atualizarmos suas instâncias de produção. Como esse é um processo de atualização automático de propriedade do Adobe, não há necessidade de ação de seu lado. No entanto, se tiver problemas, entre em contato com [Atendimento ao cliente do Adobe](https://experienceleague.adobe.com/?support-solution=Campaign#support).
+As instâncias que não são de produção serão atualizadas pelo Adobe primeiro, e as instâncias de produção serão atualizadas. Como esse é um processo de atualização automático de propriedade do Adobe, não há necessidade de ação de seu lado. No entanto, se tiver problemas, entre em contato com [Atendimento ao cliente do Adobe](https://experienceleague.adobe.com/?support-solution=Campaign#support).
 
 
 >[!NOTE]
@@ -55,7 +55,7 @@ Suas instâncias que não sejam de produção serão atualizadas pelas equipes p
 
 * **Quais validações precisam ser executadas pelos clientes?**
 
-   Não é necessário nenhum teste específico para esta atualização de segurança. Caso algum problema seja observado, entre em contato com o [Atendimento ao cliente do Adobe](https://experienceleague.adobe.com/?support-solution=Campaign#support)
+   Não é necessário nenhum teste específico para esta atualização de segurança. Caso algum problema seja observado, entre em contato com o [Atendimento ao cliente do Adobe](https://experienceleague.adobe.com/?support-solution=Campaign#support).
 
 
 * **Posso solicitar uma alteração em Data/Hora para o slot de atualização de segurança agendado?**
