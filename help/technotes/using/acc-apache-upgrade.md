@@ -5,10 +5,10 @@ description: Adobe Campaign - Atualização de segurança da versão do Apache
 hide: true
 hidefromtoc: true
 exl-id: 3d2f5d1d-4b31-4cc6-b6fb-13589856e00c
-source-git-commit: ef34decdb33cdfd095c437abd5d1eb029f8a0648
+source-git-commit: 7ee1cc501342aa59d1752259bf7228ea47a8cccb
 workflow-type: tm+mt
-source-wordcount: '476'
-ht-degree: 4%
+source-wordcount: '541'
+ht-degree: 3%
 
 ---
 
@@ -37,7 +37,6 @@ Suas instâncias que não sejam de produção serão atualizadas pelas equipes p
 
    A versão atual do Apache é vulnerável e tem uma possível ameaça à segurança. É importante que sua(s) instância(s) do Campaign seja(m) atualizada(s) para a versão mais recente do Apache aplicável para lidar com o risco de segurança.
 
-
 * **Quais clientes são direcionados para atualizações de segurança?**
 
    Todos os clientes que usam ambientes do Campaign implementados em versões mais antigas do Apache são atualizados para a versão mais recente aplicável do Apache.
@@ -49,6 +48,10 @@ Suas instâncias que não sejam de produção serão atualizadas pelas equipes p
 * **Há alguma ação necessária do cliente para essa atualização de segurança?**
 
    Nenhuma ação é necessária, pois a atualização de segurança será executada automaticamente.
+
+* **Qual é o impacto nas campanhas/workflows em execução durante a janela de manutenção?**
+
+   Durante a janela de manutenção, o workflow e os serviços de email serão interrompidos e as atividades agendadas não serão executadas. Todas as atividades em andamento ou processos em execução serão interrompidas durante o tempo de inatividade até que o servidor seja reiniciado. Quando a atividade for concluída e o servidor for reiniciado, todos os serviços serão retomados.
 
 * **Quais validações precisam ser executadas pelos clientes?**
 
