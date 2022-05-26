@@ -5,9 +5,9 @@ description: Criar um aplicativo web
 feature: Web Apps
 exl-id: dcdf6afc-321e-4027-a350-fff6bbf22e71
 source-git-commit: 0ad183ae68faf41ac0b14bb37639a4b1da9d8776
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '277'
-ht-degree: 92%
+ht-degree: 100%
 
 ---
 
@@ -19,7 +19,7 @@ Os aplicativos Web são criados e gerenciados de acordo com o mesmo princípio q
 
 >[!CAUTION]
 >
->Use a subguia **[!UICONTROL Preview]** para verificar erros durante a criação do aplicativo web. Observe que o teste de perfil usado para visualizar seu aplicativo Web precisa estar em uma pasta com **[!UICONTROL Access rights]** para **[!UICONTROL Web application agent]** operador. </br>Até que o aplicativo web seja publicado, as alterações não serão expostas aos usuários finais.
+>Use a subguia **[!UICONTROL Preview]** para verificar erros durante a criação do aplicativo web. Observe que o perfil de teste usado para visualizar seu aplicativo web precisa estar em uma pasta com **[!UICONTROL Access rights]** para o operador **[!UICONTROL Web application agent]**. </br>Até que o aplicativo web seja publicado, as alterações não serão expostas aos usuários finais.
 
 ## Inserção de gráficos em um aplicativo web {#inserting-charts-in-a-web-application}
 
