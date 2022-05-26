@@ -7,9 +7,9 @@ role: User
 level: Beginner
 exl-id: b8c1f287-06f4-4c34-8cca-b0c7676abbc2
 source-git-commit: 5ce8e765866d84781b1000511e9aea4636ebd91d
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '733'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -227,7 +227,7 @@ Os ambientes **Managed Services** (hospedado), **Híbrido** e **No local** podem
 </tbody>
 </table>
 
-Além disso, **Híbrido** e **No local** Os ambientes também podem conectar o Campaign aos seguintes sistemas de banco de dados externos. Esses sistemas são **incompatível** com o Campaign **Managed Services** Ambientes (hospedados).
+Além disso, os ambientes **Híbrido** e **No local** também podem conectar o Campaign aos seguintes sistemas de banco de dados externos: Esses sistemas são **incompatíveis** com ambientes (hospedados) do Campaign **Managed Services**.
 
 <table>
 <tbody>
@@ -352,7 +352,7 @@ Os sistemas operacionais e navegadores a seguir são **necessários** para usar 
 <p>Microsoft Internet Explorer</p>
 </td>
 <td>
-<p>11º</p>
+<p>11</p>
 </td>
 </tr>
 </tbody>
