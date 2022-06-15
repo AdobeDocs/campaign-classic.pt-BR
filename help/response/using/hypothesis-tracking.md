@@ -6,16 +6,16 @@ audience: campaign
 content-type: reference
 topic-tags: response-manager
 exl-id: 1dc6d03b-698c-4750-9563-0676fcd185df
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: d36e1881726af6238c4e0caecb7b299b594691f2
 workflow-type: tm+mt
 source-wordcount: '455'
-ht-degree: 100%
+ht-degree: 97%
 
 ---
 
 # Rastreamento de hipótese{#hypothesis-tracking}
 
-![](../../assets/v7-only.svg)
+![](../../assets/common.svg)
 
 O resultado dos cálculos da hipótese está disponível em vários níveis da plataforma Adobe Campaign: indicadores calculados pela hipótese e as reações da amostragem alvo são visíveis por meio da hipótese real, assim como nos relatórios disponíveis por campanhas e envios.
 
@@ -49,7 +49,7 @@ Os indicadores fornecem as seguintes informações:
 * **Total margin of control group**: margem total sobre o grupo de controle.
 * **Average margin per contact**: margem total / contatado.
 * **Average margin of control groups**: margens totais / grupo de controle.
-* **Receita adicional**: (receita média do contato - receita média do grupo de controle)*Número de contatos
+* **Receita adicional**: (Receita média do contato - Receita média do grupo de controle)&#42;Número de contatos
 * **Margem adicional**: (margem média do contato - margem média do grupo de controle) / número de contatos
 * **Average cost per contact**: custo de delivery calculado/Número de contatos.
 * **ROI**: custo de delivery calculado/margem total por contato
