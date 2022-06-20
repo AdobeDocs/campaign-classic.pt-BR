@@ -4,8 +4,8 @@ title: Sobre o gestor de resposta
 description: Sobre o gestor de resposta
 exl-id: b5c0e960-2afe-4a98-b82c-d47a74659703
 source-git-commit: d36e1881726af6238c4e0caecb7b299b594691f2
-workflow-type: tm+mt
-source-wordcount: '406'
+workflow-type: ht
+source-wordcount: '0'
 ht-degree: 100%
 
 ---
