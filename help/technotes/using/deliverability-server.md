@@ -4,7 +4,7 @@ title: Migrar para o novo servidor de deliverability
 description: Saiba como implementar o servidor de capacidade de entrega do Campaign
 hide: true
 hidefromtoc: true
-source-git-commit: cd2fa2450f6e8389e9c47c412da8943a5c8bb7f3
+source-git-commit: 65ab862ec568647dd06c1f7b7b83e5b921353cc7
 workflow-type: tm+mt
 source-wordcount: '908'
 ht-degree: 32%
@@ -73,7 +73,7 @@ Como parte da nova integração do servidor de deliverability, o Campaign precis
    >Você deverá salvar o arquivo config.zip quando o prompt de download for exibido, pois não será possível baixá-lo novamente.
 
 1. Clique em **[!UICONTROL Next]**.
-1. Escolha qualquer **[!UICONTROL Product profile]** existente ou crie um novo, se necessário. Nenhuma permissão é necessária para este **[!UICONTROL Product profile]**. Para obter mais informações sobre [!DNL Analytics] **[!UICONTROL Product Profiles]**, consulte [esta gaiola](https://helpx.adobe.com/br/enterprise/using/manage-developers.html).
+1. Escolha qualquer **[!UICONTROL Product profile]** existente ou crie um novo, se necessário. Nenhuma permissão é necessária para este **[!UICONTROL Product profile]**. Para obter mais informações sobre [!DNL Analytics] **[!UICONTROL Product Profiles]**, consulte [esta página](https://helpx.adobe.com/br/enterprise/using/manage-developers.html).
 
    Em seguida, clique em **[!UICONTROL Save configured API]**.
 
