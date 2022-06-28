@@ -4,7 +4,7 @@ title: Migrar para o novo servidor de deliverability
 description: Saiba como implementar o servidor de capacidade de entrega do Campaign
 hide: true
 hidefromtoc: true
-source-git-commit: a2590a6d8df1e73d77bbdef7b8cf3b2d6efe207f
+source-git-commit: cd2fa2450f6e8389e9c47c412da8943a5c8bb7f3
 workflow-type: tm+mt
 source-wordcount: '908'
 ht-degree: 32%
@@ -30,7 +30,7 @@ Esse novo servidor garante uma &#x200B; de alta disponibilidade (9.9) e fornece 
 
 ## Você será afetado?{#acc-deliverability-impacts}
 
-Se estiver usando o servidor de capacidade de entrega existente do Adobe Campaign e o ambiente tiver sido implementado em uma build inferior ao Campaign 21.1.1, você será afetado. Você precisa atualizar para o Campaign 21.1 (ou mais).
+Se estiver usando o servidor de capacidade de entrega antigo da Adobe Campaign e o ambiente tiver sido implementado em uma build inferior ao Campaign 21.1.1, você será afetado. Você precisa atualizar para o Campaign 21.1 (ou mais).
 
 Saiba como verificar sua versão [nesta seção](../../platform/using/launching-adobe-campaign.md#getting-your-campaign-version).
 
