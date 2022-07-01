@@ -6,10 +6,10 @@ audience: platform
 content-type: reference
 topic-tags: connectors
 exl-id: 8b2a9c73-807a-4936-9fd6-9d26c805a31f
-source-git-commit: 0cfe8439007b56014eba497c511904c4f11b39ce
+source-git-commit: 26ae7ff1f0837a9a50057d97b00422a288b9dc7a
 workflow-type: tm+mt
-source-wordcount: '361'
-ht-degree: 19%
+source-wordcount: '399'
+ht-degree: 27%
 
 ---
 
@@ -21,7 +21,6 @@ Usar Campanha **Federated Data Access** (FDA) para processar informações armaz
 
 1. Configurar [!DNL Vertica] on [CentOS](#vertica-centos), [Windows](#vertica-windows) ou [Debian](#vertica-debian)
 1. Configure o [!DNL Vertica] [conta externa](#vertica-external) no Campaign
-
 
 >[!NOTE]
 >
@@ -166,4 +165,12 @@ Você precisa criar um [!DNL Vertica] conta externa para conectar a instância d
    * **[!UICONTROL Password]**: Senha da conta do usuário
 
    * **[!UICONTROL Database]**: Nome do banco de dados
+
    ![](assets/vertica.png)
+
+O conector é compatível com as seguintes opções:
+
+| Opção | Descrição |
+|---|---|
+| TimeZoneName | É vazio por padrão, o que significa que o fuso horário do sistema do servidor de aplicativos Campaign Classic é usado. A opção pode ser usada para forçar o parâmetro da sessão TIMEZONE. |
+

@@ -6,9 +6,9 @@ audience: configuration
 content-type: reference
 topic-tags: schema-reference
 exl-id: 3405efb8-a37c-4622-a271-63d7a4148751
-source-git-commit: 1bb1365ce5a4eb89447c5d736a42cd470c7f3bba
+source-git-commit: 26ae7ff1f0837a9a50057d97b00422a288b9dc7a
 workflow-type: tm+mt
-source-wordcount: '1562'
+source-wordcount: '1520'
 ht-degree: 12%
 
 ---
@@ -175,33 +175,27 @@ A tabela abaixo lista os mapeamentos para os tipos de dados gerados pelo Adobe C
 <table> 
  <tbody> 
   <tr> 
+   <td> <strong>Adobe Campaign</strong><br /> </td> 
    <td> <strong>PosgreSQL</strong><br /> </td> 
    <td> <strong>Oracle</strong><br /> </td> 
    <td> <strong>MS SQL</strong><br /> </td> 
-   <td> <strong>Adobe Campaign</strong><br /> </td> 
   </tr> 
   <tr> 
    <td> Cadeia de caracteres<br /> </td> 
    <td> VARCHAR(255)<br /> </td> 
    <td> VARCHAR2 (NVARCHAR2 se unicode)<br /> </td> 
-   <td> VARCHAR (CÓDIGO UNIDO DO CONJUNTO DE CARACTERES DE VARCHAR, se Unicode)<br /> </td> 
-   <td> VARCHAR<br /> </td> 
    <td> VARCHAR (NVARCHAR se unicode)<br /> </td> 
   </tr> 
   <tr> 
    <td> Booleano<br /> </td> 
    <td> PEQUENO<br /> </td> 
    <td> NÚMERO(3)<br /> </td> 
-   <td> NUMÉRICO(3)<br /> </td> 
-   <td> PEQUENO<br /> </td> 
    <td> TINYINT<br /> </td> 
   </tr> 
   <tr> 
    <td> Byte<br /> </td> 
    <td> PEQUENO<br /> </td> 
    <td> NÚMERO(3)<br /> </td> 
-   <td> NUMÉRICO(3)<br /> </td> 
-   <td> PEQUENO<br /> </td> 
    <td> TINYINT<br /> </td> 
   </tr> 
   <tr> 
@@ -209,38 +203,28 @@ A tabela abaixo lista os mapeamentos para os tipos de dados gerados pelo Adobe C
    <td> PEQUENO<br /> </td> 
    <td> NÚMERO(5)<br /> </td> 
    <td> PEQUENO<br /> </td> 
-   <td> PEQUENO<br /> </td> 
-   <td> PEQUENO<br /> </td> 
   </tr> 
   <tr> 
    <td> Duplo<br /> </td> 
    <td> DUPLA PRECISÃO<br /> </td> 
    <td> FLUTUAÇÃO<br /> </td> 
    <td> FLUTUAÇÃO<br /> </td> 
-   <td> DUPLO<br /> </td> 
-   <td> FLUTUAÇÃO<br /> </td> 
   </tr> 
   <tr> 
    <td> Longo<br /> </td> 
    <td> INTEIRO<br /> </td> 
    <td> NÚMERO(10)<br /> </td> 
-   <td> INTEIRO<br /> </td> 
-   <td> INTEIRO<br /> </td> 
    <td> INT<br /> </td> 
   </tr> 
   <tr> 
    <td> Int64<br /> </td> 
    <td> BIGINT<br /> </td> 
    <td> NÚMERO(20)<br /> </td> 
-   <td> NUMÉRICO(20)<br /> </td> 
-   <td> BIGINT<br /> </td> 
    <td> BIGINT<br /> </td> 
   </tr> 
   <tr> 
    <td> Data<br /> </td> 
    <td> DATA<br /> </td> 
-   <td> DATA<br /> </td> 
-   <td> CARIMBO DE DATA E HORA<br /> </td> 
    <td> DATA<br /> </td> 
    <td> DATETIME<br /> </td> 
   </tr> 
@@ -248,24 +232,18 @@ A tabela abaixo lista os mapeamentos para os tipos de dados gerados pelo Adobe C
    <td> Hora<br /> </td> 
    <td> HORA<br /> </td> 
    <td> FLUTUAÇÃO<br /> </td> 
-   <td> HORA<br /> </td> 
-   <td> HORA<br /> </td> 
    <td> FLUTUAÇÃO<br /> </td> 
   </tr> 
   <tr> 
    <td> Data e hora<br /> </td> 
    <td> TIMESTAMPZ<br /> </td> 
    <td> DATA<br /> </td> 
-   <td> CARIMBO DE DATA E HORA<br /> </td> 
-   <td> CARIMBO DE DATA E HORA<br /> </td> 
    <td> MS SQL &lt; 2008: DATETIME<br /> MS SQL &gt;= 2012: DATETIMEOFFSET<br /> </td> 
   </tr> 
   <tr> 
    <td> Datetimenotz<br /> </td> 
    <td> TIMESTAMPZ<br /> </td> 
    <td> DATA<br /> </td> 
-   <td> CARIMBO DE DATA E HORA<br /> </td> 
-   <td> CARIMBO DE DATA E HORA<br /> </td> 
    <td> MS SQL &lt; 2008: DATETIME<br /> MS SQL &gt;= 2012: DATETIME2<br /> </td> 
   </tr> 
   <tr> 
@@ -273,23 +251,17 @@ A tabela abaixo lista os mapeamentos para os tipos de dados gerados pelo Adobe C
    <td> DUPLA PRECISÃO<br /> </td> 
    <td> FLUTUAÇÃO<br /> </td> 
    <td> FLUTUAÇÃO<br /> </td> 
-   <td> DUPLO<br /> </td> 
-   <td> FLUTUAÇÃO<br /> </td> 
   </tr> 
   <tr> 
    <td> Memorando<br /> </td> 
    <td> TEXTO<br /> </td> 
    <td> CLOB (NCLOB se Unicode)<br /> </td> 
-   <td> CLOB (CLOB CHARACTER SET UNICODE se Unicode)<br /> </td> 
-   <td> CLOB(6M)<br /> </td> 
    <td> TEXTO (NTEXT se Unicode)<br /> </td> 
   </tr> 
   <tr> 
    <td> Blob<br /> </td> 
    <td> BLOB<br /> </td> 
    <td> BLOB<br /> </td> 
-   <td> BLOB<br /> </td> 
-   <td> BLOB(4M)<br /> </td> 
    <td> IMAGEM<br /> </td> 
   </tr> 
  </tbody> 

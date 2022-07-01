@@ -6,10 +6,10 @@ audience: platform
 content-type: reference
 topic-tags: connectors
 exl-id: bdb5e422-ecfe-42eb-bd15-39fe5ec0ff1d
-source-git-commit: 6cecc81135afd067712e51ec9c1ad3239170702e
+source-git-commit: 26ae7ff1f0837a9a50057d97b00422a288b9dc7a
 workflow-type: tm+mt
-source-wordcount: '411'
-ht-degree: 47%
+source-wordcount: '512'
+ht-degree: 38%
 
 ---
 
@@ -123,3 +123,6 @@ O conector é compatível com as seguintes opções:
 | TimeZoneName | É vazio por padrão, o que significa que o fuso horário do sistema do servidor de aplicativos Campaign Classic é usado. A opção pode ser usada para forçar o parâmetro da sessão TIMEZONE. <br>[Para obter mais informações, consulte esta página](https://docs.snowflake.net/manuals/sql-reference/parameters.html#timezone). |
 | WeekStart | Parâmetro de sessão WEEK_START. Por padrão, defina como 0. <br>[Para obter mais informações, consulte esta página](https://docs.snowflake.com/br/sql-reference/parameters.html#week-start). |
 | UseCachedResult | Parâmetro de sessão USE_CACHED_RESULTS. Por padrão, defina como TRUE. Esta opção pode ser usada para desativar os resultados em cache do Snowflake. <br>Para obter mais informações, consulte esta [página](https://docs.snowflake.net/manuals/user-guide/querying-persisted-results.html). |
+| bulkThreads | O número de threads a serem usados para o carregador em massa de Snowflake, mais threads significam um melhor desempenho para cargas maiores em massa. Por padrão, defina como 1. O número pode ser ajustado, dependendo da contagem de thread do computador. |
+| chunkSize | Determina o tamanho do arquivo do bloco do carregador em massa. Por padrão, defina para 128 MB. Pode ser modificado para obter um desempenho mais ideal, quando usado com o bulkThreads. Threads mais ativos simultaneamente significam um melhor desempenho. <br>Para obter mais informações, consulte [Documentação do Snowflake](https://docs.snowflake.net/manuals/sql-reference/sql/put.html). |
+| StageName | Nome do estágio interno pré-provisionado. Ele será usado em carregamento em massa em vez de criar um novo estágio temporário. |

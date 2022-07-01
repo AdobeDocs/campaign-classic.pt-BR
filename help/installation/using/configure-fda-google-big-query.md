@@ -6,9 +6,9 @@ audience: platform
 content-type: reference
 topic-tags: connectors
 exl-id: ebaad59f-0607-4090-92d0-e457fbf9a348
-source-git-commit: 5d2ec0836fe5f106e0c56e5abbe7bab9332d7e18
+source-git-commit: 26ae7ff1f0837a9a50057d97b00422a288b9dc7a
 workflow-type: tm+mt
-source-wordcount: '786'
+source-wordcount: '779'
 ht-degree: 9%
 
 ---
@@ -193,11 +193,11 @@ Você precisa criar um [!DNL Google BigQuery] conta externa para conectar sua in
 
 O conector é compatível com as seguintes opções:
 
-| Opção | Valor | Descrição |
-|:-:|:-:|:-:|
-| ProxyType | string | Tipo de proxy usado para se conectar ao BigQuery por meio de conectores ODBC e SDK. </br>HTTP (padrão), http_no_túnel, socks4 e socks5 são suportados atualmente. |
-| ProxyHost | string | Nome do host ou endereço IP onde o proxy pode ser atingido. |
-| ProxyPort | número | Número da porta em que o proxy está sendo executado, por exemplo, 8080 |
-| ProxyUid | string | Nome de usuário usado para o proxy autenticado |
-| ProxyPwd | string | Senha ProxyUid |
-| bqpath | string | Observe que isso se aplica somente à ferramenta de carregamento em massa (Cloud SDK). </br> Para evitar o uso da variável PATH ou se o diretório google-cloud-sdk tiver que ser movido para outro local, você pode especificar com essa opção o caminho exato para o diretório do compartimento do sdk da nuvem no servidor. |
+| Opção | Descrição |
+|:-:|:-:|
+| ProxyType | Tipo de proxy usado para se conectar ao BigQuery por meio de conectores ODBC e SDK. </br>HTTP (padrão), http_no_túnel, socks4 e socks5 são suportados atualmente. |
+| ProxyHost | Nome do host ou endereço IP onde o proxy pode ser atingido. |
+| ProxyPort | Número da porta em que o proxy está sendo executado, por exemplo, 8080 |
+| ProxyUid | Nome de usuário usado para o proxy autenticado |
+| ProxyPwd | Senha ProxyUid |
+| bqpath | Observe que isso se aplica somente à ferramenta de carregamento em massa (Cloud SDK). </br> Para evitar o uso da variável PATH ou se o diretório google-cloud-sdk tiver que ser movido para outro local, você pode especificar com essa opção o caminho exato para o diretório do compartimento do sdk da nuvem no servidor. |

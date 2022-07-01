@@ -6,10 +6,10 @@ audience: platform
 content-type: reference
 topic-tags: administration-basics
 exl-id: 4a17d5e8-c73f-42e7-b641-0fee6a52c5c0
-source-git-commit: 02eebe83de49ee97e573b0c47ca1fddb2195b991
+source-git-commit: 26ae7ff1f0837a9a50057d97b00422a288b9dc7a
 workflow-type: tm+mt
-source-wordcount: '1627'
-ht-degree: 74%
+source-wordcount: '1817'
+ht-degree: 67%
 
 ---
 
@@ -75,6 +75,34 @@ Para configurar a conta externa do **[!UICONTROL Bounce mails (defaultPopAccount
 * **[!UICONTROL Encryption]**
 
    Tipo de criptografia escolhida entre **[!UICONTROL By default]**, **[!UICONTROL POP3 + STARTTLS]**, **[!UICONTROL POP3]** ou **[!UICONTROL POP3S]**.
+
+* **[!UICONTROL Function]**
+
+   E-mail de entrada ou roteador SOAP
+
+>[!IMPORTANT]
+>
+>Antes de configurar sua conta externa POP3 usando o Microsoft OAuth 2.0, primeiro é necessário registrar seu aplicativo no portal do Azure. Para obter mais informações, consulte [esta página](https://docs.microsoft.com/en-us/azure/active-directory/develop/quickstart-register-app).
+
+Para configurar um POP3 externo usando **Microsoft OAuth 2.0**, marque a opção **[!UICONTROL Microsoft OAuth 2.0]** e preencha os seguintes campos:
+
+* **[!UICONTROL Azure tenant]**
+
+   A ID do Azure (ou a ID do diretório (locatário) pode ser encontrada no **Fundamentos** lista suspensa da visão geral do aplicativo no portal do Azure.
+
+* **[!UICONTROL Azure Client ID]**
+
+   A ID do cliente (ou a ID do aplicativo (cliente)) pode ser encontrada no **Fundamentos** lista suspensa da visão geral do aplicativo no portal do Azure.
+
+* **[!UICONTROL Azure Client secret]**
+
+   A ID secreta do cliente pode ser encontrada no **Segredo do cliente** da coluna **Certificados e segredos** do seu aplicativo no portal do Azure.
+
+* **[!UICONTROL Azure Redirect URL]**
+
+   O URL de redirecionamento pode ser encontrado no **Autenticação** do seu aplicativo no portal do Azure. Ela deve terminar com a seguinte sintaxe `nl/jsp/oauth.jsp`, por exemplo `https://redirect.adobe.net/nl/jsp/oauth.jsp`.
+
+Depois de inserir suas diferentes credenciais, clique em **[!UICONTROL Setup the connection]** para concluir a configuração da conta externa.
 
 ### Roteamento{#routing-external-account}
 
@@ -166,6 +194,14 @@ A conta externa SFTP permite configurar e testar o acesso a um servidor fora do 
 * **[!UICONTROL Password]**
 
    Senha usada para conectar ao servidor SFTP.
+
+Para adicionar chaves SSH no Windows:
+
+1. Crie o **HOME** variável de ambiente com valor definido como o diretório de instalação.
+
+2. Adicione sua chave privada ao `/$HOME/.ssh/id_rsa` pasta.
+
+3. Reinicie os serviços da Adobe Campaign.
 
 ### Banco de dados externo (FDA) {#external-database-external-account}
 

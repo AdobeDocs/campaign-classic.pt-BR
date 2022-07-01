@@ -6,10 +6,10 @@ audience: platform
 content-type: reference
 topic-tags: connectors
 exl-id: 3a5856c3-b642-4722-97ff-6ae7107efdbe
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: 26ae7ff1f0837a9a50057d97b00422a288b9dc7a
 workflow-type: tm+mt
-source-wordcount: '1613'
-ht-degree: 83%
+source-wordcount: '1798'
+ht-degree: 76%
 
 ---
 
@@ -95,6 +95,27 @@ A conta externa do Teradata permite conectar sua instância do Campaign ao banco
    * **[!UICONTROL Options]**: Opções a serem passadas pelo Teradata. Use o seguinte formato: &#39;parameter=value&#39;. Use uma semicoluna como separador entre valores.
 
    * **[!UICONTROL Timezone]**: Fuso horário definido no Teradata. [Saiba mais](#timezone)
+
+O conector é compatível com as seguintes opções:
+
+| Opção | Descrição |
+|---|---|
+| TD_MAX_SESSIONS | Especifica o número máximo de sessões de logon que o Transportador Paralelo do Teradata pode adquirir para um trabalho de operador. <br>[Para obter mais informações, consulte esta página](https://documentation.sas.com/doc/en/pgmsascdc/9.4_3.5/ds2ref/p1naft0um1kn3vn1ubgkrjdf7c3a.html). |
+| TimeZoneName | Nome do fuso horário do servidor. |
+| CharacterSet | Usado para configurar o conjunto de caracteres do Teradata. <br>[Para obter mais informações, consulte esta página](https://docs.teradata.com/r/ODBC-Driver-for-Teradata-User-Guide/May-2017/Configuration-of-odbc.ini-in-UNIX/Linux-and-Apple-OS-X/Teradata-DSN-Options#rub1478609534082__table_N102D3_N102B6_N102B3_N10001). |
+| IANAAppCodePage | página de código do aplicativo ODBC. <br>[Para obter mais informações, consulte esta página](https://docs.teradata.com/r/ODBC-Driver-for-Teradata-User-Guide/May-2017/ODBC-Driver-for-Teradata-Application-Development/International-Character-Set-Support/Application-Code-Page) |
+
+### Adicionar contas externas ODBC adicionais {#add-external}
+
+>[!NOTE]
+>
+> Essa opção não está disponível para builds anteriores à versão 7.3.1.
+
+O driver de Teradata fornece sua própria biblioteca ODBC, mas essa biblioteca pode não ser compatível com outras contas externas ODBC.
+
+Se quiser configurar outra conta externa que também usa ODBC, por exemplo, o Snowflake, será necessário adicionar um conjunto de opções ODBCLib ao caminho da biblioteca ODBC padrão (`/usr/lib/x86_64-linux-gnu/libodbc.so` em Debian e `/usr/lib64/libodbc.so` em RHEL/CentOS).
+
+![](assets/ext_account_24.png)
 
 ### Faixas de query
 

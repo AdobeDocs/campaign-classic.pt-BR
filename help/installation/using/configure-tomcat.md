@@ -6,10 +6,10 @@ audience: installation
 content-type: reference
 topic-tags: initial-configuration
 exl-id: a2126458-2ae5-47c6-ad13-925f0e067ecf
-source-git-commit: ed9e76495efb0cb49e248a7d38417642c5094a11
+source-git-commit: 26ae7ff1f0837a9a50057d97b00422a288b9dc7a
 workflow-type: tm+mt
-source-wordcount: '214'
-ht-degree: 0%
+source-wordcount: '271'
+ht-degree: 1%
 
 ---
 
@@ -49,3 +49,15 @@ Esse arquivo conterá o seguinte tipo de informação:
 ```
 
 Se necessário, essa operação pode ser reproduzida no lado do servidor.
+
+## Ocultar o relatório de erro do Tomcat {#hide-tomcat-error-report}
+
+Por motivos de segurança, recomendamos que você oculte o relatório de erro do Tomcat. Estas são as etapas.
+
+1. Abra o **server.xml** localizada na **/tomcat-8/conf** diretório da pasta de instalação do Adobe Campaign:  `/usr/local/neolane/nl6/tomcat-8/conf`
+1. Adicione o seguinte elemento na parte inferior após todos os elementos de contexto existentes:
+
+   ```
+   <Valve className="org.apache.catalina.valves.ErrorReportValve" showReport="false" showServerInfo="false"/>
+   ```
+1. Reinicie os servidores da Web nlserver e Apache.
