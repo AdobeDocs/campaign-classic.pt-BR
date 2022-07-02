@@ -6,10 +6,10 @@ audience: installation
 content-type: reference
 topic-tags: initial-configuration
 exl-id: 236afdfe-fb23-4ebb-b000-76e14bf01d9e
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: 4ff86349d6b8966273585bf2a1ea0d785a7e87cb
 workflow-type: tm+mt
-source-wordcount: '612'
-ht-degree: 0%
+source-wordcount: '598'
+ht-degree: 1%
 
 ---
 
@@ -27,11 +27,7 @@ O valor padrão deste atributo é **.+** e permite carregar qualquer tipo de arq
 
 Para limitar os formatos possíveis, substitua o valor do atributo por uma expressão Java regular válida. É possível inserir vários valores separando-os por vírgula.
 
-Por exemplo: **uploadWhiteList=&quot;.*.png,*.jpg&quot;** O permitirá carregar os formatos PNG e JPG no servidor. Nenhum outro formato será aceito.
-
->[!NOTE]
->
->No Internet Explorer, o caminho de arquivo completo deve ser verificado pela expressão regular.
+Por exemplo: **uploadWhiteList=&quot;.&#42;.png.&#42;.jpg&quot;** O permitirá carregar os formatos PNG e JPG no servidor. Nenhum outro formato será aceito.
 
 Você também pode impedir que arquivos importantes sejam carregados configurando o Servidor Web. [Saiba mais](web-server-configuration.md)
 

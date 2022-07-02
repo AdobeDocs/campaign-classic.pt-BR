@@ -4,9 +4,9 @@ title: Ações em relatórios
 description: Ações em relatórios
 feature: Reporting
 exl-id: b30cdeaf-4ad6-473d-bdbc-91984755b609
-source-git-commit: 36e546a34d8c2345fefed5d459095a76c6224a38
-workflow-type: ht
-source-wordcount: '544'
+source-git-commit: 4ff86349d6b8966273585bf2a1ea0d785a7e87cb
+workflow-type: tm+mt
+source-wordcount: '543'
 ht-degree: 100%
 
 ---
@@ -86,7 +86,7 @@ Para saber mais sobre o serviço **nlserver**, consulte [esta seção](../../pro
 
 É possível imprimir seu relatório: para fazer isso, clique no ícone da impressora: isso abre a caixa de diálogo.
 
-Para obter um resultado melhor, edite as opções de impressão do Internet Explorer e selecione **[!UICONTROL Print background colors and images]**.
+Para obter um resultado melhor, edite as opções de impressão do Explorer e selecione **[!UICONTROL Print background colors and images]**.
 
 ![](assets/s_ncs_advuser_report_print_options.png)
 

@@ -4,10 +4,10 @@ title: Criar uma página de aterrissagem
 description: Criar uma página de aterrissagem
 feature: Landing Pages
 exl-id: 71c737c2-b0d6-4ae8-a5df-28a08dff82d7
-source-git-commit: b6f1556cf49492cefaf61c29a058584b0ccee16a
-workflow-type: ht
-source-wordcount: '724'
-ht-degree: 100%
+source-git-commit: 4ff86349d6b8966273585bf2a1ea0d785a7e87cb
+workflow-type: tm+mt
+source-wordcount: '721'
+ht-degree: 96%
 
 ---
 
@@ -88,7 +88,7 @@ Aplique essas etapas para cada página inserida na aplicação web.
 
 >[!CAUTION]
 >
->**O DCE executa o código JavaScript para a página HTML carregada.** Erros JavaScript no template HTML que podem aparecer na interface do Adobe Campaign. Esses erros não estão relacionados ao editor. Para verificar se não há erros nos arquivos importados, recomenda-se testar em um navegador (Internet Explorer / Firefox / Chrome) antes de importar os arquivos no DCE.
+>**O DCE executa o código JavaScript para a página HTML carregada.** Erros JavaScript no template HTML que podem aparecer na interface do Adobe Campaign. Esses erros não estão relacionados ao editor. Para verificar se não há erros nos arquivos importados, é recomendável testá-los em um navegador da Web antes de importar os arquivos para o DCE.
 
 ## Etapa 2 - Configuração do conteúdo {#step-2---configuring-the-content}
 
