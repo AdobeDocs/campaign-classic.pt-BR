@@ -5,10 +5,10 @@ description: Saiba como implementar o servidor de capacidade de entrega do Campa
 hide: true
 hidefromtoc: true
 exl-id: bc62ddb9-beff-4861-91ab-dcd0fa1ed199
-source-git-commit: a007e4d5dd73f01657f1642be6f0b1a92f39e9bf
+source-git-commit: 2e4d699aef0bea4f12d1bd2d715493c4a94a74dd
 workflow-type: tm+mt
-source-wordcount: '923'
-ht-degree: 30%
+source-wordcount: '927'
+ht-degree: 29%
 
 ---
 
@@ -16,7 +16,7 @@ ht-degree: 30%
 
 A partir da versão 21.1 do Campaign Classic v7, a Adobe Campaign propõe um novo servidor de deliverability que oferece alta disponibilidade e aborda problemas de conformidade com a segurança. O Campaign Classic agora sincroniza as regras de entrega, os broadlogs e o endereço de supressão de e para o novo servidor de entrega.
 
-Como cliente do Campaign Classic, você deve implementar o novo servidor de deliverability
+Como cliente do Campaign Classic, você deve implementar o novo servidor de deliverability.
 
 >[!NOTE]
 >
@@ -27,7 +27,6 @@ Como cliente do Campaign Classic, você deve implementar o novo servidor de deli
 O Adobe está descontinuando data centers mais antigos devido a motivos de conformidade com a segurança. Os clientes do Adobe Campaign Classic precisam migrar para o novo serviço de deliverability, hospedado no Amazon Web Service (AWS).
 
 Esse novo servidor garante uma &#x200B; de alta disponibilidade (9.9) e fornece endpoints seguros e autenticados para permitir que os servidores de campanha busquem os dados necessários: em vez de se conectar ao banco de dados para cada solicitação, o novo servidor de deliverability armazena os dados em cache para atender às solicitações, sempre que possível. Esse mecanismo melhora o tempo de resposta. &#x200B;
-
 
 ## Você será afetado?{#acc-deliverability-impacts}
 
@@ -43,6 +42,9 @@ Como um **cliente local/híbrido**, é necessário atualizar para uma das versõ
 
 ## Etapas de implementação (clientes híbridos e no local) {#implementation-steps}
 
+Como parte da nova integração do servidor de deliverability, o Campaign precisa se comunicar com o Adobe Shared Services por meio de uma autenticação baseada no Identity Management Service (IMS). A maneira preferida é usar o Token de gateway baseado em Adobe Developer (também chamado de Token de conta técnica ou JWT de Adobe IO).
+
+
 >[!WARNING]
 >
 >Essas etapas só devem ser executadas por implementações híbridas e no local.
@@ -51,11 +53,18 @@ Como um **cliente local/híbrido**, é necessário atualizar para uma das versõ
 
 ### Pré-requisitos{#prerequisites}
 
-Como parte da nova integração do servidor de deliverability, o Campaign precisa se comunicar com o Adobe Shared Services por meio de uma autenticação baseada no Identity Management Service (IMS). A maneira preferida é usar o Token de gateway baseado em Adobe Developer (também chamado de Token de conta técnica ou JWT de Adobe IO).
+Antes de iniciar a implementação, verifique a configuração da instância.
+
+1. Abra o console do cliente do Campaign e faça logon no Adobe Campaign como um Administrador.
+1. Navegue até **Administração > Plataforma > Opções**.
+1. Verifique a `DmRendering_cuid` o valor da opção é preenchido.
+
+   * Se a opção estiver preenchida, você poderá iniciar a implementação.
+   * Se nenhum valor for preenchido, entre em contato com [Atendimento ao cliente do Adobe](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html) para obter seu CUID.
+
+      Essa opção deve ser preenchida em todas as instâncias do Campaign (MKT, MID, RT, EXEC) com o mesmo valor.
 
 ### Etapa 1: Criar/atualizar seu projeto do Adobe Developer {#adobe-io-project}
-
-
 
 1. Acesso [Console do Adobe Developer](https://developer.adobe.com/console/home) e faça logon com o acesso do desenvolvedor de sua organização.
 
@@ -126,15 +135,7 @@ Para fazer isso:
 
 1. Você deve interromper e reiniciar o servidor para que a modificação seja levada em conta. Também é possível executar um `config -reload` comando.
 
-### Etapa 3: Verificar a configuração
-
-Quando as configurações estiverem concluídas, você poderá verificar a configuração da instância. Siga as etapas abaixo:
-
-1. Abra o console do cliente e faça logon no Adobe Campaign as a Administrator.
-1. Navegue até **Administração > Plataforma > Opções**.
-1. Verifique a `DmRendering_cuid` o valor da opção é preenchido. Ele deve ser preenchido em todas as instâncias do Campaign (MKT, MID, RT, EXEC). Se nenhum valor for preenchido, entre em contato com [Atendimento ao cliente do Adobe](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html) para obter seu CUID.
-
-### Etapa 4: Ativar o novo servidor de capacidade de entrega
+### Etapa 3: Ativar o novo servidor de capacidade de entrega
 
 Agora você pode habilitar o novo servidor de deliverability. Para executar isso:
 
@@ -142,7 +143,7 @@ Agora você pode habilitar o novo servidor de deliverability. Para executar isso
 1. Navegue até **Administração > Plataforma > Opções**.
 1. Acesse o `NewDeliverabilityServer_FeatureFlag` e defina o valor como `1`. Essa configuração deve ser executada em todas as instâncias do Campaign (MKT, MID, RT, EXEC).
 
-### Etapa 5: Validar sua configuração
+### Etapa 4: Validar sua configuração
 
 Para verificar se a integração é bem-sucedida, siga as etapas abaixo:
 
