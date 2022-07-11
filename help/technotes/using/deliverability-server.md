@@ -5,9 +5,9 @@ description: Saiba como implementar o servidor de capacidade de entrega do Campa
 hide: true
 hidefromtoc: true
 exl-id: bc62ddb9-beff-4861-91ab-dcd0fa1ed199
-source-git-commit: 2e4d699aef0bea4f12d1bd2d715493c4a94a74dd
+source-git-commit: 2c70b5a4434b9fb22490eb3c1705f4e5c803643e
 workflow-type: tm+mt
-source-wordcount: '927'
+source-wordcount: '909'
 ht-degree: 29%
 
 ---
@@ -40,7 +40,7 @@ Como um **cliente hospedado**, o Adobe trabalhará com você para atualizar suas
 
 Como um **cliente local/híbrido**, é necessário atualizar para uma das versões mais recentes para se beneficiar do novo servidor de deliverability. Depois que todas as instâncias forem atualizadas, você poderá [implementar a nova integração](#implementation-steps) para o servidor de capacidade de entrega do Adobe e garanta uma transição contínua.
 
-## Etapas de implementação (clientes híbridos e no local) {#implementation-steps}
+## Etapas de implementação {#implementation-steps}
 
 Como parte da nova integração do servidor de deliverability, o Campaign precisa se comunicar com o Adobe Shared Services por meio de uma autenticação baseada no Identity Management Service (IMS). A maneira preferida é usar o Token de gateway baseado em Adobe Developer (também chamado de Token de conta técnica ou JWT de Adobe IO).
 
@@ -48,8 +48,6 @@ Como parte da nova integração do servidor de deliverability, o Campaign precis
 >[!WARNING]
 >
 >Essas etapas só devem ser executadas por implementações híbridas e no local.
->
->Para implementações hospedadas, entre em contato com [Atendimento ao cliente do Adobe](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html).
 
 ### Pré-requisitos{#prerequisites}
 
