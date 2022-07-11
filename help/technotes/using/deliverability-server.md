@@ -5,16 +5,16 @@ description: Saiba como implementar o servidor de capacidade de entrega do Campa
 hide: true
 hidefromtoc: true
 exl-id: bc62ddb9-beff-4861-91ab-dcd0fa1ed199
-source-git-commit: c3b1ffcb580c7510a64115e0abbf16cb766146c5
+source-git-commit: 5e0cf925ab4915c8a1d2c9d50daf77190023710f
 workflow-type: tm+mt
-source-wordcount: '1067'
+source-wordcount: '1065'
 ht-degree: 24%
 
 ---
 
 # Servidor de capacidade de entrega do Campaign {#acc-deliverability}
 
-A partir da versão 21.1 do Campaign Classic v7, a Adobe Campaign propõe um novo servidor de deliverability que oferece alta disponibilidade e aborda problemas de conformidade com a segurança. O Campaign Classic agora sincroniza as regras de entrega, os broadlogs e o endereço de supressão de e para o novo servidor de entrega.
+Início [versão v7.2.1](../../rn/using/latest-release.md#release-7-2-2), a Adobe Campaign propõe um novo servidor de deliverability que oferece alta disponibilidade e aborda problemas de conformidade de segurança. O Campaign Classic agora sincroniza as regras de entrega, os broadlogs e o endereço de supressão de e para o novo servidor de entrega.
 
 Como cliente do Campaign Classic, você deve implementar o novo servidor de deliverability **antes de 31 de agosto de 2022**.
 
