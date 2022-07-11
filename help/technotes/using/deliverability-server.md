@@ -5,7 +5,7 @@ description: Saiba como implementar o servidor de capacidade de entrega do Campa
 hide: true
 hidefromtoc: true
 exl-id: bc62ddb9-beff-4861-91ab-dcd0fa1ed199
-source-git-commit: 4ad6f1e3a3d23383d17f947430c32fecefb3a8e1
+source-git-commit: c3b1ffcb580c7510a64115e0abbf16cb766146c5
 workflow-type: tm+mt
 source-wordcount: '1067'
 ht-degree: 24%
@@ -82,7 +82,6 @@ Antes de iniciar a implementação, verifique a configuração da instância.
    ![](assets/Add-API.png)
 1. Na janela **[!UICONTROL Add an API]**, selecione **[!UICONTROL Adobe Campaign]**.
    ![](assets/AC-API.png)
-<!--1. Choose **[!UICONTROL Service Account (JWT)]** as the authentication type.-->
 1. Se a ID do cliente estiver vazia, selecione **[!UICONTROL Generate a key pair]** para criar um par de chaves público e privado.
    ![](assets/Generate-a-key-pair.png)
 
