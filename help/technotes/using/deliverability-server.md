@@ -5,10 +5,10 @@ description: Saiba como implementar o servidor de capacidade de entrega do Campa
 hide: true
 hidefromtoc: true
 exl-id: bc62ddb9-beff-4861-91ab-dcd0fa1ed199
-source-git-commit: 2c70b5a4434b9fb22490eb3c1705f4e5c803643e
+source-git-commit: 6740b5eed33612bd7a3b217a8f53b07518f879fb
 workflow-type: tm+mt
-source-wordcount: '909'
-ht-degree: 29%
+source-wordcount: '1067'
+ht-degree: 24%
 
 ---
 
@@ -16,11 +16,11 @@ ht-degree: 29%
 
 A partir da versão 21.1 do Campaign Classic v7, a Adobe Campaign propõe um novo servidor de deliverability que oferece alta disponibilidade e aborda problemas de conformidade com a segurança. O Campaign Classic agora sincroniza as regras de entrega, os broadlogs e o endereço de supressão de e para o novo servidor de entrega.
 
-Como cliente do Campaign Classic, você deve implementar o novo servidor de deliverability.
+Como cliente do Campaign Classic, você deve implementar o novo servidor de deliverability **antes de 31 de agosto de 2022**.
 
 >[!NOTE]
 >
->Em caso de dúvidas sobre essas alterações, entre em contato com o [Atendimento ao cliente da Adobe](https://helpx.adobe.com/br/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html).
+>Para dúvidas sobre essas alterações, consulte a seção [Perguntas frequentes](#faq)ou entre em contato [Atendimento ao cliente do Adobe](https://helpx.adobe.com/br/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html).
 
 ## O que mudou?{#acc-deliverability-changes}
 
@@ -30,7 +30,7 @@ Esse novo servidor garante uma &#x200B; de alta disponibilidade (9.9) e fornece 
 
 ## Você será afetado?{#acc-deliverability-impacts}
 
-Se estiver usando o servidor de capacidade de entrega antigo da Adobe Campaign e o ambiente tiver sido implementado em uma build inferior ao Campaign 21.1.1, você será afetado. Você precisa atualizar para o Campaign 21.1 (ou mais).
+Se o ambiente foi implementado em uma build inferior a [Campaign v7.2.1](../../rn/using/latest-release.md#release-7-2-2), você será afetado. Você precisa atualizar para o Campaign v7.2.1 (ou mais).
 
 Saiba como verificar sua versão [nesta seção](../../platform/using/launching-adobe-campaign.md#getting-your-campaign-version).
 
@@ -150,5 +150,22 @@ Para verificar se a integração é bem-sucedida, siga as etapas abaixo:
 1. Navegue até **Administração > Produção > Workflows técnicos**.
 1. Reinicie o **Atualização para entregabilidade** (deliverabilityUpdate) . Isso deve ser executado em todas as instâncias do Campaign (MKT, MID, RT, EXEC).
 1. Logs de verificação: o workflow deve ser executado sem erros.
+
+
+## Perguntas frequentes {#faq}
+
+### O que acontece se eu não atualizar meu ambiente?
+
+Qualquer instância do Campaign não atualizada até 31 de agosto não poderá mais se conectar ao servidor de capacidade de entrega do Campaign. Como consequência, a variável **Atualização para entregabilidade** O workflow (deliverabilityUpdate) falhará. Esse workflow gerencia a atualização diária das regras MX e regras de entrada.
+
+Se você não atualizar seu ambiente, as configurações de email deixarão de ser sincronizadas (regras de Gerenciamento MX, regras de Email de entrada, regras de Gerenciamento de domínio e regras de qualificação de devolução). Isso pode afetar sua capacidade de entrega ao longo do tempo. Se se fizer uma alteração significativa nestas regras, estas terão de ser aplicadas manualmente a partir deste ponto.
+
+Somente para instâncias MKT [Lista de Supressões Globais](../../campaign-opt/using/filtering-rules.md#default-deliverability-exclusion-rules) for afetada.
+
+### Não posso atualizar agora. Qual é a orientação?
+
+Se não for possível atualizar sua instância antes de 31 de agosto, é necessário desativar temporariamente o **Atualização para entregabilidade** Fluxo de trabalho (deliverabilityUpdate) até que a atualização seja concluída para que não tente sincronizar com o servidor de deliverability antigo.
+
+
 
 Para obter mais orientações, entre em contato com o [Atendimento ao cliente do Adobe](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html).
