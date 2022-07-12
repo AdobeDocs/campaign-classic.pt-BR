@@ -3,8 +3,8 @@ product: campaign
 title: Deliveries
 description: Saiba mais sobre os workflows de delivery padrão
 feature: Workflows
-source-git-commit: b94c4bfd478b4a8fbcefe6341608dd6a14bb31d3
-workflow-type: ht
+source-git-commit: 25e8acdc449c7002e467db17e7c70e3dc017dded
+workflow-type: tm+mt
 source-wordcount: '323'
 ht-degree: 100%
 
@@ -40,7 +40,7 @@ Os fluxos de trabalho detalhados abaixo são instalados com o módulo **Deliveri
    <td> Esse workflow padroniza os valores de enumeração. É acionado todos os dias às 3:00 AM por padrão.<br /> </td> 
   </tr> 
   <tr> 
-   <td> <span class="uicontrol">Atualização para entregabilidade</span><br /> </td> 
+   <td> <span class="uicontrol">Atualizar para entregabilidade</span> <br /> </td> 
    <td> <span class="uicontrol">deliverabilityUpdate</span> <br /> </td> 
    <td> Esse workflow permite criar a lista de regras de qualificação de email de devolução, bem como a lista de domínios e MXs na plataforma. Este workflow funciona somente se a porta HTTPS estiver aberta. Essas listas não são atualizadas a menos que o módulo Deliverability esteja instalado.<br /> </td> 
   </tr> 

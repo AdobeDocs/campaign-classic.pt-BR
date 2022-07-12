@@ -4,10 +4,10 @@ title: 'Workflows técnicos '
 description: Saiba mais sobre os fluxos de trabalho técnicos disponíveis com os pacotes do Campaign Classic.
 feature: Workflows
 exl-id: 9aed2665-cd4b-419c-b9f2-ea04fc1d8f01
-source-git-commit: f05eefc9945c4ead89eb448b6e28c3523559e055
-workflow-type: ht
+source-git-commit: 25e8acdc449c7002e467db17e7c70e3dc017dded
+workflow-type: tm+mt
 source-wordcount: '1714'
-ht-degree: 100%
+ht-degree: 99%
 
 ---
 
@@ -78,4 +78,4 @@ Para obter mais informações sobre como monitorar workflows técnicos, consulte
 | **Notificação de tarefa** (taskMgt) | Recursos de marketing (MRM)  - somente Campaign v7 | Esse fluxo de trabalho permite enviar mensagens de notificação relacionadas às tarefas em campanhas de marketing. |
 | **Rastreamento** (tracking) | Delivery | Esse workflow realiza a recuperação e a consolidação de informações de rastreamento. Também garante o recálculo de rastreamento e estatísticas de delivery, principalmente aqueles usados pelos workflows de arquivamento do Centro de Mensagens. Por padrão, é acionado uma vez por hora. |
 | **Atualizar status do evento** (updateEventsStatus) | Execução de mensagens transacionais (Centro de Mensagens - Execução) | Esse fluxo de trabalho permite atribuir um status a um evento. Os status do evento são descritos a seguir:<ul><li>Pendente: o evento está em uma fila. Nenhum modelo de mensagem foi associado a ele.</li><li>Delivery pendente: o evento está em uma fila, um modelo de mensagem foi associado a ele e está sendo processado no momento pelo delivery.</li><li>Enviado: esse status é copiado dos logs do delivery. Significa que o delivery foi enviado.</li><li>Ignorado pelo delivery: esse status é copiado dos logs do delivery. Significa que o delivery foi ignorado.</li><li>Erro de delivery: esse status é copiado dos logs do delivery. Significa que o delivery falhou.</li><li>Evento não coberto: o evento falhou ao ser associado a um modelo de mensagem. O evento não será reprocessado.</li></ul> |
-| **Atualização para delivery** (deliverabilityUpdate) | Delivery | Depois que o pacote de monitoramento de capacidade de entrega (capacidade de entrega por email) é instalado, esse fluxo de trabalho é executado durante à noite e gerencia as regras de qualificação de emails rejeitados, bem como a lista de domínios e MXs. Isso requer que a porta HTTPS esteja aberta na plataforma. |
+| **Atualizar para entregabilidade** (deliverabilityUpdate) | Delivery | Depois que o pacote de monitoramento de capacidade de entrega (capacidade de entrega por email) é instalado, esse fluxo de trabalho é executado durante à noite e gerencia as regras de qualificação de emails rejeitados, bem como a lista de domínios e MXs. Isso requer que a porta HTTPS esteja aberta na plataforma. |

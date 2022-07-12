@@ -4,8 +4,8 @@ title: Monitorar fluxos de trabalho técnicos
 description: Monitorar fluxos de trabalho técnicos
 feature: Workflows
 exl-id: 5e77d196-5c71-438e-8dae-10c6a6e4f29c
-source-git-commit: b94c4bfd478b4a8fbcefe6341608dd6a14bb31d3
-workflow-type: ht
+source-git-commit: 25e8acdc449c7002e467db17e7c70e3dc017dded
+workflow-type: tm+mt
 source-wordcount: '504'
 ht-degree: 100%
 
@@ -48,9 +48,9 @@ Para **[!UICONTROL Tracking workflow (‘tracking’)]**:
 
 Verifique se o workflow de rastreamento é executado como agendado (a cada hora por padrão) e se o journal não realça erros recorrentes. Para obter mais informações, consulte esta [seção](delivery.md).
 
-Para **[!UICONTROL Deliverability update (‘deliverabilityUpdate’)]**:
+Para **[!UICONTROL Refresh for Deliverability (deliverabilityUpdate)]**:
 
-1. Verifique se o workflow **[!UICONTROL Deliverability update]** é executado e finalizado com êxito todos os dias.
+1. Verifique se o workflow **[!UICONTROL Refresh for Deliverability]** é executado e finalizado com êxito todos os dias.
 1. Verifique no journal se as regras estão sendo atualizadas regularmente.
 
 Para **[!UICONTROL Campaign process ('operationMgt', 'deliveryMgt', ...)]**:
