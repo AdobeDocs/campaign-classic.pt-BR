@@ -5,9 +5,9 @@ description: Saiba como implementar o servidor de capacidade de entrega do Campa
 hide: true
 hidefromtoc: true
 exl-id: bc62ddb9-beff-4861-91ab-dcd0fa1ed199
-source-git-commit: bec525c52cb30dfae9530265bc3fdc2395879539
+source-git-commit: dfa28fc10bcfddcf35e8ddfa0af1fba718400350
 workflow-type: tm+mt
-source-wordcount: '1125'
+source-wordcount: '1105'
 ht-degree: 23%
 
 ---
@@ -30,15 +30,13 @@ Esse novo servidor garante uma &#x200B; de alta disponibilidade (9.9) e fornece 
 
 ## Você será afetado?{#acc-deliverability-impacts}
 
-Se o ambiente foi implementado em uma build inferior a [Campaign v7.2.1](../../rn/using/latest-release.md#release-7-2-2), você será afetado. Você precisa atualizar para o Campaign v7.2.1 (ou mais).
-
-Saiba como verificar sua versão [nesta seção](../../platform/using/launching-adobe-campaign.md#getting-your-campaign-version).
+Todos os clientes precisam atualizar para [Campaign v7.2.1](../../rn/using/latest-release.md#release-7-2-2) e implementar seu ambiente para se beneficiar do novo servidor de deliverability.
 
 ## Como atualizar?{#acc-deliverability-update}
 
 Como um **cliente hospedado**, o Adobe trabalhará com você para atualizar suas instâncias para a versão mais recente e criar o projeto no Adobe Developer Console.
 
-Como um **cliente local/híbrido**, é necessário atualizar para uma das versões mais recentes para se beneficiar do novo servidor de deliverability. Depois que todas as instâncias forem atualizadas, você poderá [implementar a nova integração](#implementation-steps) para o servidor de capacidade de entrega do Adobe e garanta uma transição contínua.
+Como um **cliente local/híbrido**, é necessário atualizar para [Campaign v7.2.1](../../rn/using/latest-release.md#release-7-2-2) para se beneficiar do novo servidor de deliverability. Depois que todas as instâncias forem atualizadas, será necessário [implementar a nova integração](#implementation-steps) para o servidor de capacidade de entrega do Adobe e garanta uma transição contínua.
 
 ## Etapas de implementação {#implementation-steps}
 
@@ -47,7 +45,7 @@ Como parte da nova integração do servidor de deliverability, o Campaign precis
 
 >[!WARNING]
 >
->Essas etapas só devem ser executadas por implementações híbridas e no local.
+>Essas etapas só devem ser executadas para implementações híbridas e no local.
 
 ### Pré-requisitos{#prerequisites}
 
