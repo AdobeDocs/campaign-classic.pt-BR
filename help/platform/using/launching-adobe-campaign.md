@@ -6,9 +6,9 @@ audience: platform
 content-type: reference
 topic-tags: starting-with-adobe-campaign
 exl-id: 4d9c5b24-83a2-4495-a56c-5bc376d69703
-source-git-commit: 1d32161d60f6b382188012b104c642f504e28645
-workflow-type: ht
-source-wordcount: '487'
+source-git-commit: 7f24c8be599d6dece41de848d64feb8079b10ff3
+workflow-type: tm+mt
+source-wordcount: '513'
 ht-degree: 100%
 
 ---
@@ -17,7 +17,7 @@ ht-degree: 100%
 
 ![](../../assets/v7-only.svg)
 
-O console do cliente do Campaign é
+O console do Campaign Client é um cliente avançado que permite a conexão com seu(s) servidor(es) de aplicativos do Campaign. Saiba como baixar e configurar o console do cliente [nesta página](../../installation/using/installing-the-client-console.md).
 
 >[!CAUTION]
 >
