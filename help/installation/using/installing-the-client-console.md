@@ -6,7 +6,7 @@ audience: installation
 content-type: reference
 topic-tags: installing-campaign-in-windows-
 exl-id: 7cc78214-92b8-4b1f-a307-96ec6af818d1
-source-git-commit: f4513834cf721f6d962c7c02c6c64b2171059352
+source-git-commit: 0f63636e9cc22ac97e634a4f11dc585cb39b05c0
 workflow-type: tm+mt
 source-wordcount: '968'
 ht-degree: 5%
@@ -36,7 +36,7 @@ Revise os detalhes abaixo para entender o que é necessário para sua implementa
 
 ## Implementações Adobe hospedadas {#hosted-customers}
 
-Além de um cliente hospedado, você tem duas opções para instalar ou atualizar seu(s) console(s) do cliente:
+Como cliente hospedado, você tem duas opções para instalar ou atualizar seu(s) console(s) do cliente:
 
 1. O Adobe pode implantar diretamente. Quando o console for atualizado, os usuários serão solicitados a baixar a versão mais recente do console do cliente em uma janela pop-up.
 
