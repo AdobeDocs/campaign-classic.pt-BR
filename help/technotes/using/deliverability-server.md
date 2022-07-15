@@ -5,10 +5,10 @@ description: Saiba como implementar o servidor de capacidade de entrega do Campa
 hide: true
 hidefromtoc: true
 exl-id: bc62ddb9-beff-4861-91ab-dcd0fa1ed199
-source-git-commit: 5d6ff45605980e5fe21933c5d8fb6c48e02f1628
+source-git-commit: 6f6c329808e78a56a61997aba83c55520030afc7
 workflow-type: tm+mt
-source-wordcount: '1121'
-ht-degree: 23%
+source-wordcount: '1116'
+ht-degree: 22%
 
 ---
 
@@ -20,7 +20,7 @@ Como cliente do Campaign Classic, você deve implementar o novo servidor de deli
 
 >[!NOTE]
 >
->Para dúvidas sobre essas alterações, consulte a seção [Perguntas frequentes](#faq)ou entre em contato [Atendimento ao cliente do Adobe](https://helpx.adobe.com/br/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html).
+>Para obter mais informações sobre essas alterações, consulte [Perguntas frequentes](#faq)ou entre em contato [Atendimento ao cliente do Adobe](https://helpx.adobe.com/br/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html){_blank}.
 
 ## O que mudou?{#acc-deliverability-changes}
 
@@ -56,7 +56,7 @@ Antes de iniciar a implementação, verifique a configuração da instância.
 1. Verifique a `DmRendering_cuid` o valor da opção é preenchido.
 
    * Se a opção estiver preenchida, você poderá iniciar a implementação.
-   * Se nenhum valor for preenchido, entre em contato com [Atendimento ao cliente do Adobe](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html) para obter seu CUID.
+   * Se nenhum valor for preenchido, entre em contato com [Atendimento ao cliente do Adobe](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html){_blank} para obter seu CUID.
 
       Essa opção deve ser preenchida em todas as instâncias do Campaign (MKT, MID, RT, EXEC) com o mesmo valor. Como um cliente híbrido, entre em contato com o Adobe para definir a opção nas instâncias MID, RT e EXEC.
 
@@ -91,7 +91,7 @@ Antes de iniciar a implementação, verifique a configuração da instância.
    >Você deve salvar o `config.zip` quando o prompt de download aparecer, pois não será possível baixá-lo novamente.
 
 1. Clique em **[!UICONTROL Next]**.
-1. Escolha qualquer **[!UICONTROL Product profile]** existente ou crie um novo, se necessário. Nenhuma permissão é necessária para este **[!UICONTROL Product profile]**. Para obter mais informações sobre **[!UICONTROL Product Profiles]**, consulte [esta página](https://helpx.adobe.com/br/enterprise/using/manage-developers.html).
+1. Escolha qualquer **[!UICONTROL Product profile]** existente ou crie um novo, se necessário. Nenhuma permissão é necessária para este **[!UICONTROL Product profile]**. Para obter mais informações sobre **[!UICONTROL Product Profiles]**, consulte [esta página](https://helpx.adobe.com/br/enterprise/using/manage-developers.html){_blank}.
    ![](assets/Product-Profile-API.png)
 
    Em seguida, clique em **[!UICONTROL Save configured API]**.
@@ -152,18 +152,17 @@ Para verificar se a integração é bem-sucedida, siga as etapas abaixo:
 
 ## Perguntas frequentes {#faq}
 
+### Qual é a linha do tempo da atualização?
+
+A transição para o novo servidor de deliverability, permitindo a adição desses recursos aprimorados e reforçando a segurança, terá início em 22 de julho para clientes hospedados (Campaign Managed Services). Todos os clientes hospedados serão atualizados até o final de agosto.
+
+Os clientes locais e híbridos devem fazer a transição durante o mesmo período de tempo.
+
 ### O que acontece se eu não atualizar meu ambiente?
 
-Qualquer instância do Campaign não atualizada até 31 de agosto não poderá mais se conectar ao servidor de capacidade de entrega do Campaign. Como consequência, a variável **Atualizar para entregabilidade** O workflow (deliverabilityUpdate) falhará. Esse workflow gerencia a atualização diária das regras MX e regras de entrada.
+Qualquer instância do Campaign não atualizada até 31 de agosto não poderá mais se conectar ao servidor de capacidade de entrega do Campaign. Como consequência, a variável **Atualizar para entregabilidade** O workflow (deliverabilityUpdate) falhará e isso afetará sua capacidade de delivery.
 
 Se você não atualizar seu ambiente, as configurações de email deixarão de ser sincronizadas (regras de Gerenciamento MX, regras de Email de entrada, regras de Gerenciamento de domínio e regras de qualificação de devolução). Isso pode afetar sua capacidade de entrega ao longo do tempo. Se se fizer uma alteração significativa nestas regras, estas terão de ser aplicadas manualmente a partir deste ponto.
 
 Somente para instâncias MKT [Lista de Supressões Globais](../../campaign-opt/using/filtering-rules.md#default-deliverability-exclusion-rules) for afetada.
 
-### Não posso atualizar agora. Qual é a orientação?
-
-Se não for possível atualizar sua instância antes de 31 de agosto, é necessário desativar temporariamente o **Atualizar para entregabilidade** Fluxo de trabalho (deliverabilityUpdate) até que a atualização seja concluída para que não tente sincronizar com o servidor de deliverability antigo.
-
-
-
-Para obter mais orientações, entre em contato com o [Atendimento ao cliente do Adobe](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html).
