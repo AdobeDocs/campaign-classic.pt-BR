@@ -5,8 +5,8 @@ description: Monitorar fluxos de trabalho técnicos
 feature: Workflows
 exl-id: 5e77d196-5c71-438e-8dae-10c6a6e4f29c
 source-git-commit: 25e8acdc449c7002e467db17e7c70e3dc017dded
-workflow-type: tm+mt
-source-wordcount: '504'
+workflow-type: ht
+source-wordcount: '0'
 ht-degree: 100%
 
 ---
