@@ -8,8 +8,8 @@ level: Beginner
 exl-id: d65869ca-a785-4327-8e8d-791c28e4696c
 source-git-commit: 7f24c8be599d6dece41de848d64feb8079b10ff3
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '1958'
+ht-degree: 98%
 
 ---
 
@@ -21,7 +21,7 @@ Esta página lista novos recursos, melhorias e correções que vêm com a **vers
 
 ## ![](assets/do-not-localize/limited_2.png) Versão 7.3.1 - Build 9352 {#release-7-3-1}
 
-_1° de julho de 2022_
+_1 de julho de 2022_
 
 **Novidades**
 
@@ -34,7 +34,7 @@ _1° de julho de 2022_
 <tbody> 
 <tr> 
 <td> <p>Com o iOS 15, a Apple adicionou uma noção de notificação relevante, que dá controle ao desenvolvedor do aplicativo para ignorar o modo de Foco quando uma notificação é considerada relevante e precisa ser entregue ao usuário em tempo real.</p>
-<p>Saiba como criar uma notificação confidencial no <a href="../../delivery/using/create-notifications-ios.md">documentação detalhada</a>.</p>
+<p>Saiba como criar uma notificação confidencial na <a href="../../delivery/using/create-notifications-ios.md">documentação detalhada</a>.</p>
 </td> 
 </tr> 
 </tbody> 
@@ -42,7 +42,7 @@ _1° de julho de 2022_
 
 **Atualizações de compatibilidade**
 
-* O Adobe Campaign SDK agora é compatível com Android 12 e iOS 15 para notificações por push.
+* O SDK do Adobe Campaign agora é compatível com notificações por push no Android 12 e iOS 15.
 * O Adobe Campaign agora é compatível com o MySQL 8.
 * O Adobe Campaign agora é compatível com o Windows 11.
 * O Adobe Campaign agora é compatível com o Debian 11.
@@ -51,39 +51,39 @@ Consulte a [Matriz de compatibilidade do Campaign](../../rn/using/compatibility-
 
 **Aprimoramentos**
 
-* Após o fim da vida útil do Internet Explorer 11, o mecanismo de renderização de HTML para Adobe Services no console agora está usando o Edge Chromium. Além disso, a instalação do tempo de execução do Microsoft Edge Webview 2 agora é necessária para qualquer instalação do console do cliente (da versão de build do Campaign Classic 7.3). [Leia mais](../../installation/using/installing-the-client-console.md)
+* Após o fim da vida útil do Internet Explorer 11, o mecanismo de renderização de HTML da Adobe Services no console passou a usar o Edge Chromium. Além disso, a instalação do tempo de execução do Microsoft Edge Webview 2 agora é necessária para qualquer instalação do console do cliente (da versão de build do Campaign Classic 7.3). [Leia mais](../../installation/using/installing-the-client-console.md)
 * O gerenciamento de conexão de banco de dados no Adobe Campaign foi aprimorado para otimizar a estabilidade.
 * A autenticação OAuth 2.0 do Microsoft Exchange Online para POP3 agora é compatível com o Campaign. [Leia mais](../../installation/using/external-accounts.md#bounce-mails-external-account)
-* Correção de vários problemas ao usar uma atividade de workflow de enriquecimento com dados externos. (NEO-38069)
-* O conector SAP Hana FDA foi atualizado para funcionar com a versão mais recente do banco de dados SAP Hana (2.x).
+* Correção de vários problemas ao usar uma atividade de fluxo de trabalho de enriquecimento com dados externos. (NEO-38069)
+* O conector FDA do SAP HANA foi atualizado para funcionar com a versão mais recente do banco de dados SAP HANA (2.x).
 * O conector FDA do Teradata foi atualizado para funcionar com a versão mais recente do Teradata (17).
-* Na versão 20.2, o suporte da autenticação baseada em token para deliveries do iOS foi introduzido para novos deliveries e templates do delivery. No 7.2, um patch foi adicionado ao pós-atualização para aplicar o suporte de autenticação baseado em token a um máximo de 10.000 deliveries criados anteriormente e templates do delivery. No ponto 7.3, o sistema transdérmico foi melhorado e o limite foi removido.
+* Na versão 20.2, foi introduzida a compatibilidade com autenticação baseada em token para novos deliveries e modelos de delivery do iOS. Na versão 7.2, uma correção foi adicionada à pós-atualização para aplicar a compatibilidade com a autenticação baseada em token a um máximo de 10.000 deliveries e modelos de delivery criados anteriormente. Na versão 7.3, a correção foi melhorada e o limite foi removido.
 
 **Correções**
 
-* Correção de um erro da build anterior que impedia os usuários de redimensionar a página de logon IMS.
+* Correção de um erro da build anterior que impedia os usuários de redimensionar a página de logon do IMS.
 * Correção de um erro que ocorria ao instalar o pacote do gerenciador de conteúdo em uma instância existente.
-* Correção de um problema no **Campanhas** menu em que a mensagem &quot;operação em andamento&quot; era exibida continuamente.
-* Com o Adobe Analytics ativado, foi corrigido um problema que removia a BID (Broadlog ID) e a CID (Campaign ID) do URL ao enviar um email com um URL sem salvar o delivery.
-* Correção de um problema ao carregar uma imagem na pasta Public resources em uma instância com configuração específica do Centro de Mensagens. A seguinte mensagem de erro seria exibida: &quot;Não é possível carregar as imagens nos servidores de rastreamento&quot;.
+* Correção de um problema no menu **Campanhas** em que a mensagem “operação em andamento” era exibida continuamente.
+* Com o Adobe Analytics ativado, foi corrigido um problema que removia a BID (Broadlog ID) e a CID (ID da campanha) do URL ao enviar um email com um URL sem salvar a entrega.
+* Correção de um problema que ocorria ao carregar uma imagem para a pasta Recursos públicos em uma instância com configuração específica do Centro de mensagens. A seguinte mensagem de erro era exibida: “Não foi possível carregar as imagens para os servidores de rastreamento”.
 * Correção de um problema que fazia com que o sistema falhasse ao regenerar uma configuração, no caso de arquivos mal configurados.
-* Correção de um problema que poderia resultar na atualização incorreta dos indicadores de delivery. (NEO-44827)
+* Correção de um problema que poderia resultar na atualização incorreta dos indicadores de entrega. (NEO-44827)
 * Correção de um problema que poderia levar a um erro pós-atualização ao usar consultas complexas. (NEO-43648)
 * Correção de um problema que impedia o funcionamento da visualização de webApps. (NEO-43242)
-* Correção de um problema que resultava em falha na preparação do delivery ao usar um arquivo de target mapping externo em um workflow com uma atividade Data loading (file) . (NEO-43691)
+* Correção de um problema que resultava na falha da preparação da entrega ao usar um arquivo de target mapping externo em um fluxo de trabalho com uma atividade de carregamento de dados (arquivo). (NEO-43691)
 * Correção de um problema que poderia causar falhas e exigir uma reinicialização completa da instância. (NEO-44645)
 * Correção de um problema que impedia o Workflow Heatmap de carregar qualquer resultado. (NEO-43360)
 * Correção de um problema que poderia levar a problemas de conexão ao usar o conector externo FDA. (NEO-42722)
 * Correção de um problema com provas ao usar substituição de endereço e exclusão de grupo de controle. (NEO-39695)
-* Correção de um problema que poderia resultar em falhas de workflow devido a um problema no conector Snowflake. (NEO-46299)
+* Correção de um problema que poderia resultar em falhas de fluxo de trabalho devido a um problema no conector Snowflake. (NEO-46299)
 * Correção de um problema que poderia congelar o console do cliente devido a um caractere inválido em um bloco de personalização. (NEO-45761)
 * Correção de um problema que poderia levar a problemas de conexão ao criar uma conta externa para o Snowflake como um banco de dados externo. (NEO-45744)
 * Correção de um problema que poderia resultar na exibição de informações de tabela protegidas por um atributo visibleIf. (NEO-37865)
-* Correção de um problema que poderia exibir a mensagem de erro &quot;$ is not defined&quot; durante a fase de análise de delivery. (NEO-32940)
+* Correção de um problema que poderia exibir a mensagem de erro “$ não está definido” durante a fase de análise da entrega. (NEO-32940)
 * Correção de um problema que fazia com que os deliveries fossem associados a um eventType incorreto. (NEO-45743)
-* Correção de um problema que poderia resultar em falhas devido a despejos intermitentes de núcleo (NEO30549)
-* Correção de um problema que resultava em falhas ao usar um código de HTML incorreto em um delivery. (NEO-40385)
-* Correção de um problema que poderia impedir que usuários não administradores acessassem a variável **Análise** nas propriedades do delivery. (NEO-34025)
+* Correção de um problema que poderia resultar em falhas devido a descartes de núcleo intermitentes (NEO-30549)
+* Correção de um problema que poderia resultar em falhas ao usar um código HTML incorreto em uma entrega. (NEO-40385)
+* Correção de um problema que poderia impedir que usuários não administradores acessassem a guia **Análise** nas propriedades da entrega. (NEO-34025)
 
 ## ![](assets/do-not-localize/green_2.png) Versão 7.2.2 - Build 9349 {#release-7-2-2}
 
@@ -91,7 +91,7 @@ _1º de março de 2022_
 
 >[!NOTE]
 >
-> Esta build é compatível com o Console do Cliente v7.2.1.
+> Esta build é compatível com o Console do cliente v7.2.1.
 
 **Correções**
 

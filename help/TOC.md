@@ -9,7 +9,7 @@ type: Documentation
 source-git-commit: 8221afc3b73e1ddce4143394a1d77eab3995d892
 workflow-type: tm+mt
 source-wordcount: '2585'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -678,7 +678,7 @@ ht-degree: 99%
             + [Configurar Teradata](installation/using/configure-fda-teradata.md)
             + [Configurar SAP HANA](installation/using/configure-fda-sap-hana.md)
             + [Configurar o Microsoft SQL Server](installation/using/configure-fda-sql.md)
-            + [Configuração do PostgreSQL](installation/using/configure-fda-postgresql.md)
+            + [Configurar o PostgreSQL](installation/using/configure-fda-postgresql.md)
          + [Direitos de acesso remoto](installation/using/remote-database-access-rights.md)
          + [Conectar ao banco de dados](installation/using/connecting-to-database.md)
          + [Criar o esquema de dados](installation/using/creating-data-schema.md)
@@ -837,7 +837,7 @@ ht-degree: 99%
    + [Recomendações para dimensionamento de hardware](technotes/using/hardware-sizing.md)
    + Atualizações e compatibilidade{#technote-migration}
       + [Notas técnicas](technotes/using/technote.md)
-      + [Atualizar para o novo servidor Deliverability](technotes/using/deliverability-server.md)
+      + [Atualizar para o novo servidor de avaliação do delivery](technotes/using/deliverability-server.md)
       + [Atualização de segurança do Apache](technotes/using/acc-apache-upgrade.md)
       + [Atualizações de configuração do Campaign](technotes/using/acc-config-updates.md)
       + [Atualizações do IMS](technotes/using/ims-updates.md)

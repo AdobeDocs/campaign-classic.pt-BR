@@ -9,7 +9,7 @@ exl-id: b8c1f287-06f4-4c34-8cca-b0c7676abbc2
 source-git-commit: 7f24c8be599d6dece41de848d64feb8079b10ff3
 workflow-type: tm+mt
 source-wordcount: '768'
-ht-degree: 96%
+ht-degree: 97%
 
 ---
 
@@ -341,7 +341,7 @@ Os sistemas operacionais e navegadores a seguir são **necessários** para usar 
 <tr>
 <td>Microsoft Windows</td>
 <td>
-<p>11 (iniciando o Campaign v7.3)</p>
+<p>11 (a partir do Campaign v7.3)</p>
 <p>10 (recomendado para instâncias em japonês)</p>
 <p>8</p>
 </td>
