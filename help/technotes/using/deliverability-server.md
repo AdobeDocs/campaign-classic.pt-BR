@@ -5,7 +5,7 @@ description: Saiba como implementar o servidor de capacidade de entrega do Campa
 hide: true
 hidefromtoc: true
 exl-id: bc62ddb9-beff-4861-91ab-dcd0fa1ed199
-source-git-commit: 6f6c329808e78a56a61997aba83c55520030afc7
+source-git-commit: 64813905b360be1f2df7883f018e42bd154c2f9c
 workflow-type: tm+mt
 source-wordcount: '1116'
 ht-degree: 22%
@@ -58,7 +58,7 @@ Antes de iniciar a implementação, verifique a configuração da instância.
    * Se a opção estiver preenchida, você poderá iniciar a implementação.
    * Se nenhum valor for preenchido, entre em contato com [Atendimento ao cliente do Adobe](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html){_blank} para obter seu CUID.
 
-      Essa opção deve ser preenchida em todas as instâncias do Campaign (MKT, MID, RT, EXEC) com o mesmo valor. Como um cliente híbrido, entre em contato com o Adobe para definir a opção nas instâncias MID, RT e EXEC.
+   Essa opção deve ser preenchida em todas as instâncias do Campaign (MKT, MID, RT, EXEC) com o valor correto. Como um cliente híbrido, entre em contato com o Adobe para definir a opção nas instâncias MID, RT e EXEC.
 
 ### Etapa 1: Criar/atualizar seu projeto do Adobe Developer {#adobe-io-project}
 
