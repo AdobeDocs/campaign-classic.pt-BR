@@ -4,16 +4,16 @@ title: Criar uma campanha colaborativa
 description: Saiba como criar uma campanha colaborativa
 feature: Distributed Marketing
 exl-id: 17313fe5-ad42-45ca-a35a-1e7aa89380ef
-source-git-commit: d36e1881726af6238c4e0caecb7b299b594691f2
-workflow-type: ht
-source-wordcount: '0'
+source-git-commit: 381538fac319dfa075cac3db2252a9cc80b31e0f
+workflow-type: tm+mt
+source-wordcount: '915'
 ht-degree: 100%
 
 ---
 
 # Criar uma campanha colaborativa{#creating-a-collaborative-campaign-intro}
 
-![](../../assets/common.svg)
+![](../../assets/v7-only.svg)
 
 A entidade central cria campanhas colaborativas de templates de campanha de **Marketing distribuído** . Consulte [esta página](about-distributed-marketing.md#collaborative-campaign).
 

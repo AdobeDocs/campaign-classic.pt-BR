@@ -4,8 +4,8 @@ title: Aguardar
 description: Saiba mais sobre a atividade de workflow Aguardar
 feature: Workflows
 exl-id: 4872f756-14d7-4e37-a9cf-b929c77e34ca
-source-git-commit: b94c4bfd478b4a8fbcefe6341608dd6a14bb31d3
-workflow-type: ht
+source-git-commit: 381538fac319dfa075cac3db2252a9cc80b31e0f
+workflow-type: tm+mt
 source-wordcount: '192'
 ht-degree: 100%
 
@@ -13,7 +13,7 @@ ht-degree: 100%
 
 # Aguardar{#wait}
 
-![](../../assets/common.svg)
+![](../../assets/v7-only.svg)
 
 Uma atividade **Wait** ativa sua transição após um atraso de tempo de qualquer valor entre alguns segundos até vários meses. Uma tarefa de espera não bloqueia a execução de outras tarefas; o workflow pode executar tarefas em paralelo enquanto esta tarefa está pendente.
 

@@ -4,8 +4,8 @@ title: Consultar usando gerenciamento de agrupamento
 description: Saiba como executar consultas usando o gerenciamento de agrupamento
 feature: Query Editor
 exl-id: 23bccb48-60ab-46c9-be26-2fa35243d61e
-source-git-commit: b94c4bfd478b4a8fbcefe6341608dd6a14bb31d3
-workflow-type: ht
+source-git-commit: 381538fac319dfa075cac3db2252a9cc80b31e0f
+workflow-type: tm+mt
 source-wordcount: '251'
 ht-degree: 100%
 
@@ -13,7 +13,7 @@ ht-degree: 100%
 
 # Consultar usando gerenciamento de agrupamento {#querying-using-grouping-management}
 
-![](../../assets/common.svg)
+![](../../assets/v7-only.svg)
 
 Neste exemplo, devemos executar uma query para localizar todos os domínios de e-mail selecionados mais de 30 vezes durante as deliveries anteriores.
 

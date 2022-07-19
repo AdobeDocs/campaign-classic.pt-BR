@@ -4,8 +4,8 @@ title: Enriquecimento
 description: Saiba mais sobre a atividade do workflow de enriquecimento
 feature: Workflows, Enrichment Activity, Targeting Activity
 exl-id: 4c7bc0f3-5877-47dc-bd72-dc94fb7bd479
-source-git-commit: b94c4bfd478b4a8fbcefe6341608dd6a14bb31d3
-workflow-type: ht
+source-git-commit: 381538fac319dfa075cac3db2252a9cc80b31e0f
+workflow-type: tm+mt
 source-wordcount: '1291'
 ht-degree: 100%
 
@@ -13,7 +13,7 @@ ht-degree: 100%
 
 # Enriquecimento{#enrichment}
 
-![](../../assets/common.svg)
+![](../../assets/v7-only.svg)
 
 A atividade **[!UICONTROL Enrichment]** permite adicionar informações a uma lista de perfis e a vincula a uma tabela existente (criar uma nova associação). Os critérios de reconciliação com perfis no banco de dados também podem ser definidos.
 

@@ -4,16 +4,16 @@ title: Criar uma lista de resumo
 description: Criar uma lista de resumo
 feature: Workflows, Data Management
 exl-id: 39cec42a-c7ac-41b1-8f61-799b559ce002
-source-git-commit: b94c4bfd478b4a8fbcefe6341608dd6a14bb31d3
-workflow-type: ht
+source-git-commit: 381538fac319dfa075cac3db2252a9cc80b31e0f
+workflow-type: tm+mt
 source-wordcount: '974'
-ht-degree: 100%
+ht-degree: 98%
 
 ---
 
 # Criar uma lista de resumo{#creating-a-summary-list}
 
-![](../../assets/common.svg)
+![](../../assets/v7-only.svg)
 
 Esse caso de uso detalha a criação de um workflow, que, após coletar arquivos e a passar por vários enriquecimentos, permite criar uma lista de resumo. O exemplo é baseado em uma lista de contatos que compraram em uma loja.
 
@@ -61,7 +61,7 @@ Esses dados estão contidos em um arquivo de texto &quot;Purchases.txt&quot;.
 
    Para obter mais informações sobre essa atividade, consulte [Carregar dados de um arquivo](../../platform/using/import-export-workflows.md#loading-data-from-a-file).
 
-1. Configure a atividade **File collector** para coletar arquivos de tipo de texto (*.txt) do diretório selecionado.
+1. Configure o **File collector** atividade para coletar texto (&#42;.txt) digite arquivos do diretório selecionado.
 
    ![](assets/uc2_enrich_collecteur.png)
 

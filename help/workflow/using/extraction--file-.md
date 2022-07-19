@@ -4,8 +4,8 @@ title: Extração de dados (arquivo)
 description: Saiba mais sobre a atividade de workflow de extração de dados (arquivo)
 feature: Workflows, Data Management Activity
 exl-id: 06eafedd-6386-498f-a80d-7f57ddcccad6
-source-git-commit: b94c4bfd478b4a8fbcefe6341608dd6a14bb31d3
-workflow-type: ht
+source-git-commit: 381538fac319dfa075cac3db2252a9cc80b31e0f
+workflow-type: tm+mt
 source-wordcount: '324'
 ht-degree: 100%
 
@@ -13,7 +13,7 @@ ht-degree: 100%
 
 # Extração de dados (arquivo){#extraction-file}
 
-![](../../assets/common.svg)
+![](../../assets/v7-only.svg)
 
 Você pode extrair dados de uma tabela de workflow em um arquivo externo usando a atividade **[!UICONTROL Data extraction (file)]**.
 

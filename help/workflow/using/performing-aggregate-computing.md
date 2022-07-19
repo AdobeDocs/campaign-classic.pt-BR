@@ -4,8 +4,8 @@ title: Execução de computação agregada
 description: Saiba como executar a computação agregada em consultas
 feature: Workflows
 exl-id: 5b05788f-498b-4a84-bdde-2852900f0129
-source-git-commit: b94c4bfd478b4a8fbcefe6341608dd6a14bb31d3
-workflow-type: ht
+source-git-commit: 381538fac319dfa075cac3db2252a9cc80b31e0f
+workflow-type: tm+mt
 source-wordcount: '225'
 ht-degree: 100%
 
@@ -13,7 +13,7 @@ ht-degree: 100%
 
 # Execução de computação agregada {#performing-aggregate-computing}
 
-![](../../assets/common.svg)
+![](../../assets/v7-only.svg)
 
 Neste exemplo, devemos contar o número de recipients que vivem em Londres, de acordo com o sexo.
 

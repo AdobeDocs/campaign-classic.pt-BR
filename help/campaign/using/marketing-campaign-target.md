@@ -4,8 +4,8 @@ title: Audiência da campanha de marketing
 description: Saiba como definir a audiência das campanhas de marketing
 feature: Campaigns, Audiences
 exl-id: 04daa67c-4057-42a7-b993-a6eddf2b883d
-source-git-commit: d3f5c56078ddac7597925191fd347bdcab61714d
-workflow-type: ht
+source-git-commit: 381538fac319dfa075cac3db2252a9cc80b31e0f
+workflow-type: tm+mt
 source-wordcount: '1485'
 ht-degree: 100%
 
@@ -13,7 +13,7 @@ ht-degree: 100%
 
 # Selecionar o público das campanhas {#marketing-campaign-deliveries}
 
-![](../../assets/common.svg)
+![](../../assets/v7-only.svg)
 
 Em uma campanha de marketing, para cada delivery, é possível definir:
 

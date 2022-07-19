@@ -4,8 +4,8 @@ title: Usar agregações
 description: Saiba como usar agregações
 feature: Workflows
 exl-id: 12b173e9-5068-4d45-9e1e-2aecc9866e9c
-source-git-commit: b94c4bfd478b4a8fbcefe6341608dd6a14bb31d3
-workflow-type: ht
+source-git-commit: 381538fac319dfa075cac3db2252a9cc80b31e0f
+workflow-type: tm+mt
 source-wordcount: '612'
 ht-degree: 100%
 
@@ -13,7 +13,7 @@ ht-degree: 100%
 
 # Usar agregações{#using-aggregates}
 
-![](../../assets/common.svg)
+![](../../assets/v7-only.svg)
 
 Esse caso de uso detalha como identificar automaticamente os últimos recipients adicionados ao banco de dados.
 

@@ -4,8 +4,8 @@ title: SMS de entrada
 description: Saiba mais sobre a atividade de workflow de SMS de entrada
 feature: Workflows, Channels Activity
 exl-id: 94a9d50b-4ead-4815-8d12-942fa78b4e8a
-source-git-commit: b94c4bfd478b4a8fbcefe6341608dd6a14bb31d3
-workflow-type: ht
+source-git-commit: 381538fac319dfa075cac3db2252a9cc80b31e0f
+workflow-type: tm+mt
 source-wordcount: '106'
 ht-degree: 100%
 
@@ -13,7 +13,7 @@ ht-degree: 100%
 
 # SMS de entrada{#inbound-sms}
 
-![](../../assets/common.svg)
+![](../../assets/v7-only.svg)
 
 A atividade de **SMS de Entrada** permite baixar e processar mensagens de texto de uma conta externa.
 

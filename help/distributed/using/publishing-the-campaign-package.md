@@ -4,8 +4,8 @@ title: Publicar o pacote da campanha
 description: Publicar o pacote da campanha
 feature: Distributed Marketing
 exl-id: e96add16-cbc8-43af-acff-06a95d5b7749
-source-git-commit: d36e1881726af6238c4e0caecb7b299b594691f2
-workflow-type: ht
+source-git-commit: 381538fac319dfa075cac3db2252a9cc80b31e0f
+workflow-type: tm+mt
 source-wordcount: '456'
 ht-degree: 100%
 
@@ -13,7 +13,7 @@ ht-degree: 100%
 
 # Publicar o pacote da campanha{#publishing-the-campaign-package}
 
-![](../../assets/common.svg)
+![](../../assets/v7-only.svg)
 
 Operadores de entidades centrais publicam campanhas que desejam oferecer às entidades locais na **[!UICONTROL list of campaign packages]**.
 

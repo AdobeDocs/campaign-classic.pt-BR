@@ -4,8 +4,8 @@ title: Exclusão
 description: Saiba mais sobre a atividade de workflow de exclusão
 feature: Workflows, Targeting Activity
 exl-id: f4fe97d9-6571-4aa5-8022-b0af9d5a6a13
-source-git-commit: b94c4bfd478b4a8fbcefe6341608dd6a14bb31d3
-workflow-type: ht
+source-git-commit: 381538fac319dfa075cac3db2252a9cc80b31e0f
+workflow-type: tm+mt
 source-wordcount: '349'
 ht-degree: 100%
 
@@ -13,7 +13,7 @@ ht-degree: 100%
 
 # Exclusão{#exclusion}
 
-![](../../assets/common.svg)
+![](../../assets/v7-only.svg)
 
 Uma atividade do tipo **Exclusão** cria um target com base em um target principal do qual um ou mais target são extraídos.
 

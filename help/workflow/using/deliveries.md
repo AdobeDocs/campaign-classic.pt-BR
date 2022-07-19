@@ -3,7 +3,7 @@ product: campaign
 title: Deliveries
 description: Saiba mais sobre os workflows de delivery padrão
 feature: Workflows
-source-git-commit: 25e8acdc449c7002e467db17e7c70e3dc017dded
+source-git-commit: 381538fac319dfa075cac3db2252a9cc80b31e0f
 workflow-type: tm+mt
 source-wordcount: '323'
 ht-degree: 100%
@@ -13,7 +13,7 @@ ht-degree: 100%
 
 # Entregas{#deliveries}
 
-![](../../assets/common.svg)
+![](../../assets/v7-only.svg)
 
 Os fluxos de trabalho detalhados abaixo são instalados com o módulo **Deliveries** por padrão.
 

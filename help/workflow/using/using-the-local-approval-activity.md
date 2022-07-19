@@ -4,8 +4,8 @@ title: Usar a atividade de aprovação local
 description: Saiba como usar a atividade de aprovação local
 feature: Workflows
 exl-id: cc29eec9-9c97-4d1b-9567-2581154d7b3f
-source-git-commit: b94c4bfd478b4a8fbcefe6341608dd6a14bb31d3
-workflow-type: ht
+source-git-commit: 381538fac319dfa075cac3db2252a9cc80b31e0f
+workflow-type: tm+mt
 source-wordcount: '1272'
 ht-degree: 100%
 
@@ -13,7 +13,7 @@ ht-degree: 100%
 
 # Usar a atividade de aprovação local{#using-the-local-approval-activity}
 
-![](../../assets/common.svg)
+![](../../assets/v7-only.svg)
 
 A atividade **[!UICONTROL Local approval]** integrada em um workflow de direcionamento permite a configuração de um processo de aprovação do recipient antes que o delivery seja enviado.
 

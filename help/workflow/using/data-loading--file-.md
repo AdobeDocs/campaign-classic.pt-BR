@@ -4,8 +4,8 @@ title: Carregamento de dados (arquivo)
 description: Saiba mais sobre a atividade de workflow de carregamento de dados (arquivo)
 feature: Workflows, Data Management Activity
 exl-id: a380e486-a40c-4bf6-b7f4-7dcd76c34085
-source-git-commit: b94c4bfd478b4a8fbcefe6341608dd6a14bb31d3
-workflow-type: ht
+source-git-commit: 381538fac319dfa075cac3db2252a9cc80b31e0f
+workflow-type: tm+mt
 source-wordcount: '1052'
 ht-degree: 100%
 
@@ -13,7 +13,7 @@ ht-degree: 100%
 
 # Carregamento de dados (arquivo){#data-loading-file}
 
-![](../../assets/common.svg)
+![](../../assets/v7-only.svg)
 
 ## Uso {#use}
 

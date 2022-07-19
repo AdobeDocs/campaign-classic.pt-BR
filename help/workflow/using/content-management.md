@@ -4,8 +4,8 @@ title: Gestão de conteúdo
 description: Gestão de conteúdo
 feature: Workflows, Data Management
 exl-id: eb92a7c7-edfa-4062-b473-6d8b50d35e5f
-source-git-commit: b94c4bfd478b4a8fbcefe6341608dd6a14bb31d3
-workflow-type: ht
+source-git-commit: 381538fac319dfa075cac3db2252a9cc80b31e0f
+workflow-type: tm+mt
 source-wordcount: '417'
 ht-degree: 100%
 
@@ -13,7 +13,7 @@ ht-degree: 100%
 
 # Gestão de conteúdo{#content-management}
 
-![](../../assets/common.svg)
+![](../../assets/v7-only.svg)
 
 Uma atividade de **Gestão de conteúdo** permite criar e manipular um conteúdo e gerar arquivos com base nesse conteúdo. Esse conteúdo pode ser entregue por meio de uma atividade de &#39;Delivery&#39;.
 

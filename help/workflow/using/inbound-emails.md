@@ -4,8 +4,8 @@ title: Emails de entrada
 description: Saiba mais sobre a atividade de workflow de emails de entrada
 feature: Workflows, Channels Activity
 exl-id: b2a05e07-a7d7-436b-b2c6-90ab55d031cd
-source-git-commit: b94c4bfd478b4a8fbcefe6341608dd6a14bb31d3
-workflow-type: ht
+source-git-commit: 381538fac319dfa075cac3db2252a9cc80b31e0f
+workflow-type: tm+mt
 source-wordcount: '337'
 ht-degree: 100%
 
@@ -13,7 +13,7 @@ ht-degree: 100%
 
 # Emails de entrada{#inbound-emails}
 
-![](../../assets/common.svg)
+![](../../assets/v7-only.svg)
 
 A atividade de **emails de entrada** permite baixar e processar mensagens de email de um servidor de email POP3.
 

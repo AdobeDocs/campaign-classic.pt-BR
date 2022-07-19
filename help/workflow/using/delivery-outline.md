@@ -4,8 +4,8 @@ title: Delivery outline
 description: Saiba mais sobre a atividade do workflow do Delivery outline
 feature: Workflows, Targeting Activity
 exl-id: b4dee085-ccc4-43fd-850d-1501a99272aa
-source-git-commit: b94c4bfd478b4a8fbcefe6341608dd6a14bb31d3
-workflow-type: ht
+source-git-commit: 381538fac319dfa075cac3db2252a9cc80b31e0f
+workflow-type: tm+mt
 source-wordcount: '267'
 ht-degree: 100%
 
@@ -13,7 +13,7 @@ ht-degree: 100%
 
 # Delivery outline{#delivery-outline}
 
-![](../../assets/common.svg)
+![](../../assets/v7-only.svg)
 
 O **delivery outline** permite usar um outline em um workflow de campanha. O outline deve ter sido criado antecipadamente na campanha.
 

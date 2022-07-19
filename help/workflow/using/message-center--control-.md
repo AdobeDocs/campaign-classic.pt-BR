@@ -3,8 +3,8 @@ product: campaign
 title: Centro de Mensagens (Controle)
 description: Centro de Mensagens (Controle)
 feature: Workflows
-source-git-commit: b94c4bfd478b4a8fbcefe6341608dd6a14bb31d3
-workflow-type: ht
+source-git-commit: 381538fac319dfa075cac3db2252a9cc80b31e0f
+workflow-type: tm+mt
 source-wordcount: '155'
 ht-degree: 100%
 
@@ -13,7 +13,7 @@ ht-degree: 100%
 
 # Centro de Mensagens (Controle){#message-center-control}
 
-![](../../assets/common.svg)
+![](../../assets/v7-only.svg)
 
 O workflow detalhado abaixo é agendado para ser executado a cada hora. Ele é instalado por padrão com o módulo do **Centro de Mensagens – Controle**.
 

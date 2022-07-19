@@ -4,8 +4,8 @@ title: Configurar uma importação recorrente
 description: Saiba como configurar um modelo de fluxo de trabalho para importações recorrentes.
 feature: Workflows, Data Management
 exl-id: e6e140cb-8de0-4ab9-bddc-95abe04124c6
-source-git-commit: b94c4bfd478b4a8fbcefe6341608dd6a14bb31d3
-workflow-type: ht
+source-git-commit: 381538fac319dfa075cac3db2252a9cc80b31e0f
+workflow-type: tm+mt
 source-wordcount: '1020'
 ht-degree: 100%
 
@@ -13,7 +13,7 @@ ht-degree: 100%
 
 # Configurar um fluxo de trabalho de importação recorrente {#setting-up-a-recurring-import}
 
-![](../../assets/common.svg)
+![](../../assets/v7-only.svg)
 
 Usar um modelo de fluxo de trabalho é uma prática recomendada se você precisar importar arquivos regularmente com a mesma estrutura.
 

@@ -4,16 +4,16 @@ title: Projetar e executar campanhas de marketing
 description: Definir, otimizar, executar e analisar campanhas de marketing
 feature: Campaigns
 exl-id: 4e0df18f-3623-4dfb-a2f8-ad293dbc4dd5
-source-git-commit: d3f5c56078ddac7597925191fd347bdcab61714d
+source-git-commit: 381538fac319dfa075cac3db2252a9cc80b31e0f
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '443'
+ht-degree: 100%
 
 ---
 
 # Projetar e executar campanhas de marketing{#designing-marketing-campaigns}
 
-![](../../assets/common.svg)
+![](../../assets/v7-only.svg)
 
 O Adobe Campaign permite que você defina, otimize, execute e analise campanhas de comunicação e marketing. O Adobe Campaign atua como uma central de execução e pedido unificada para estratégias de marketing. Para obter mais informações, consulte [Acessar campanhas](../../distributed/using/accessing-campaigns.md) e [Criar campanhas de marketing](../../campaign/using/setting-up-marketing-campaigns.md).
 

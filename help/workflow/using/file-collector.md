@@ -4,16 +4,16 @@ title: File collector
 description: Saiba mais sobre a atividade de workflow de file collector
 feature: Workflows, Data Management
 exl-id: bbec389e-c2ba-4b23-847f-b01dca6b8d5a
-source-git-commit: b94c4bfd478b4a8fbcefe6341608dd6a14bb31d3
-workflow-type: ht
+source-git-commit: 381538fac319dfa075cac3db2252a9cc80b31e0f
+workflow-type: tm+mt
 source-wordcount: '524'
-ht-degree: 100%
+ht-degree: 99%
 
 ---
 
 # File collector{#file-collector}
 
-![](../../assets/common.svg)
+![](../../assets/v7-only.svg)
 
 O **File collector** monitora a chegada de um ou mais arquivos em um diretório e ativa sua transição para cada arquivo recebido. Para cada evento, uma variável **[!UICONTROL filename]** contém o nome completo do arquivo recebido. Os arquivos coletados são movidos para outro diretório para fins de arquivamento e para garantir que eles sejam contados apenas uma vez.
 
@@ -35,7 +35,7 @@ A primeira guia da atividade **[!UICONTROL File collector]** permite selecionar 
 
    * **[!UICONTROL Filter]**
 
-      Somente os arquivos correspondentes a este filtro são considerados. Os outros arquivos no diretório são ignorados. Se o filtro estiver vazio, todos os arquivos no diretório serão considerados. Exemplos de filtro: ***.zip**, **import-*.txt**.
+      Somente os arquivos correspondentes a este filtro são considerados. Os outros arquivos no diretório são ignorados. Se o filtro estiver vazio, todos os arquivos no diretório serão considerados. Exemplos de filtro: **&#42;.zip**, **import-&#42;.txt**.
 
    * **[!UICONTROL Stop as soon as a file has been processed]**
 

@@ -4,7 +4,7 @@ title: Delivery recorrente
 description: Saiba mais sobre a atividade de workflow de delivery recorrente
 feature: Workflows
 exl-id: efd2cdfb-2e5f-4672-8be8-a424481b11ed
-source-git-commit: 6f0479cfe6c6801eb44fcc7a35bdac1241ec3be6
+source-git-commit: 381538fac319dfa075cac3db2252a9cc80b31e0f
 workflow-type: tm+mt
 source-wordcount: '271'
 ht-degree: 100%
@@ -13,7 +13,7 @@ ht-degree: 100%
 
 # Entrega recorrente{#recurring-delivery}
 
-![](../../assets/common.svg)
+![](../../assets/v7-only.svg)
 
 Uma atividade **[!UICONTROL Recurring delivery]** permite configurar uma ocorrência de template de delivery específico para uma campanha.
 

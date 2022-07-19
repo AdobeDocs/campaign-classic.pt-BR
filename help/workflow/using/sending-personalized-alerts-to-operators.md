@@ -4,8 +4,8 @@ title: Enviar alertas personalizados aos operadores
 description: Saiba como enviar alertas personalizados aos operadores
 feature: Workflows
 exl-id: 21c97eb3-60cd-4d19-bc0f-5ba9ec17e70a
-source-git-commit: b94c4bfd478b4a8fbcefe6341608dd6a14bb31d3
-workflow-type: ht
+source-git-commit: 381538fac319dfa075cac3db2252a9cc80b31e0f
+workflow-type: tm+mt
 source-wordcount: '343'
 ht-degree: 100%
 
@@ -13,7 +13,7 @@ ht-degree: 100%
 
 # Enviar alertas personalizados aos operadores{#sending-personalized-alerts-to-operators}
 
-![](../../assets/common.svg)
+![](../../assets/v7-only.svg)
 
 Neste exemplo, queremos enviar um alerta para um operador que conterá os nomes dos perfis que abriram um boletim informativo, mas não clicaram no link que ele continha.
 

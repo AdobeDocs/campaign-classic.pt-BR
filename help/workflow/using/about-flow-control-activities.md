@@ -4,8 +4,8 @@ title: Sobre as atividades de controle de fluxo
 description: Sobre as atividades de controle de fluxo
 feature: Workflows
 exl-id: 3810cbd0-159c-4161-b568-1f61dcea0300
-source-git-commit: f05eefc9945c4ead89eb448b6e28c3523559e055
-workflow-type: ht
+source-git-commit: 381538fac319dfa075cac3db2252a9cc80b31e0f
+workflow-type: tm+mt
 source-wordcount: '234'
 ht-degree: 100%
 
@@ -13,7 +13,7 @@ ht-degree: 100%
 
 # Atividades de controle de fluxo em workflows{#about-flow-control-activities}
 
-![](../../assets/common.svg)
+![](../../assets/v7-only.svg)
 
 As seguintes atividades são atividades de banco de dados: a sua principal tarefa é coordenar as outras atividades.
 

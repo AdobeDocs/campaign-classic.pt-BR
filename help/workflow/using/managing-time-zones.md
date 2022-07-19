@@ -4,8 +4,8 @@ title: Gerenciar fusos horários
 description: Gerenciar fusos horários
 feature: Workflows
 exl-id: c2f6033c-30cd-4eb4-adf1-ab2de7510220
-source-git-commit: b94c4bfd478b4a8fbcefe6341608dd6a14bb31d3
-workflow-type: ht
+source-git-commit: 381538fac319dfa075cac3db2252a9cc80b31e0f
+workflow-type: tm+mt
 source-wordcount: '282'
 ht-degree: 100%
 
@@ -13,7 +13,7 @@ ht-degree: 100%
 
 # Gerenciamento de fusos horários{#managing-time-zones}
 
-![](../../assets/common.svg)
+![](../../assets/v7-only.svg)
 
 O Adobe Campaign permite a gestão do intervalo entre vários países relacionados à mesma instância. A configuração aplicada é aplicada durante a criação da instância.
 

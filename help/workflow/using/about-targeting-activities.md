@@ -4,8 +4,8 @@ title: Sobre as atividades de direcionamento
 description: Sobre as atividades de direcionamento
 feature: Workflows, Audiences, Targeting Activity
 exl-id: 5028ad4c-e427-4e78-962d-c5ea54390db5
-source-git-commit: b94c4bfd478b4a8fbcefe6341608dd6a14bb31d3
-workflow-type: ht
+source-git-commit: 381538fac319dfa075cac3db2252a9cc80b31e0f
+workflow-type: tm+mt
 source-wordcount: '438'
 ht-degree: 100%
 
@@ -13,7 +13,7 @@ ht-degree: 100%
 
 # Atividades de direcionamento em workflows{#about-targeting-activities}
 
-![](../../assets/common.svg)
+![](../../assets/v7-only.svg)
 
 Essas atividades permitem construir um ou mais targets definindo conjuntos e dividindo ou combinando esses conjuntos usando operações de intersecção, união ou exclusão.
 

@@ -6,7 +6,7 @@ audience: campaign
 content-type: reference
 topic-tags: response-manager
 exl-id: 1dc6d03b-698c-4750-9563-0676fcd185df
-source-git-commit: d36e1881726af6238c4e0caecb7b299b594691f2
+source-git-commit: 381538fac319dfa075cac3db2252a9cc80b31e0f
 workflow-type: tm+mt
 source-wordcount: '455'
 ht-degree: 97%
@@ -15,7 +15,7 @@ ht-degree: 97%
 
 # Rastreamento de hipótese{#hypothesis-tracking}
 
-![](../../assets/common.svg)
+![](../../assets/v7-only.svg)
 
 O resultado dos cálculos da hipótese está disponível em vários níveis da plataforma Adobe Campaign: indicadores calculados pela hipótese e as reações da amostragem alvo são visíveis por meio da hipótese real, assim como nos relatórios disponíveis por campanhas e envios.
 

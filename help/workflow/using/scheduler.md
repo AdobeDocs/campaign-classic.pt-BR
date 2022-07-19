@@ -4,8 +4,8 @@ title: 'Scheduler '
 description: Saiba mais sobre a atividade de workflow do Scheduler
 feature: Workflows
 exl-id: 30a9bd2a-afb1-481c-ab5f-5acebd9cbb5a
-source-git-commit: b94c4bfd478b4a8fbcefe6341608dd6a14bb31d3
-workflow-type: ht
+source-git-commit: 381538fac319dfa075cac3db2252a9cc80b31e0f
+workflow-type: tm+mt
 source-wordcount: '332'
 ht-degree: 100%
 
@@ -13,7 +13,7 @@ ht-degree: 100%
 
 # Scheduler {#scheduler}
 
-![](../../assets/common.svg)
+![](../../assets/v7-only.svg)
 
 O **Scheduler** é uma tarefa persistente que ativa a transição nos momentos especificados por seu cronograma.
 

@@ -4,8 +4,8 @@ title: Workflow de delivery entre canais
 description: Saiba mais sobre os workflows de delivery entre canais
 feature: Workflows, Channels Activity
 exl-id: dfd36d2c-44ff-49a9-80b4-09eaf3377072
-source-git-commit: e454cc29038b4eab9fad1dcb46813fc8e1a83db1
-workflow-type: ht
+source-git-commit: 381538fac319dfa075cac3db2252a9cc80b31e0f
+workflow-type: tm+mt
 source-wordcount: '666'
 ht-degree: 100%
 
@@ -13,7 +13,7 @@ ht-degree: 100%
 
 # Workflow de delivery entre canais{#cross-channel-delivery-workflow}
 
-![](../../assets/common.svg)
+![](../../assets/v7-only.svg)
 
 Esse caso de uso apresenta um exemplo envolvendo um workflow de delivery entre canais. O conceito geral de deliveries entre canais é apresentado [nesta seção](cross-channel-deliveries.md).
 
