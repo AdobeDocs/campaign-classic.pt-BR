@@ -6,9 +6,9 @@ feature: Overview
 role: User
 level: Beginner
 exl-id: d65869ca-a785-4327-8e8d-791c28e4696c
-source-git-commit: 7f24c8be599d6dece41de848d64feb8079b10ff3
+source-git-commit: 8d6f5a3596c2c919e597e0b6ce3d711276c8df12
 workflow-type: tm+mt
-source-wordcount: '1958'
+source-wordcount: '1965'
 ht-degree: 98%
 
 ---
@@ -61,12 +61,12 @@ Consulte a [Matriz de compatibilidade do Campaign](../../rn/using/compatibility-
 
 **Correções**
 
-* Correção de um erro da build anterior que impedia os usuários de redimensionar a página de logon do IMS.
-* Correção de um erro que ocorria ao instalar o pacote do gerenciador de conteúdo em uma instância existente.
-* Correção de um problema no menu **Campanhas** em que a mensagem “operação em andamento” era exibida continuamente.
-* Com o Adobe Analytics ativado, foi corrigido um problema que removia a BID (Broadlog ID) e a CID (ID da campanha) do URL ao enviar um email com um URL sem salvar a entrega.
-* Correção de um problema que ocorria ao carregar uma imagem para a pasta Recursos públicos em uma instância com configuração específica do Centro de mensagens. A seguinte mensagem de erro era exibida: “Não foi possível carregar as imagens para os servidores de rastreamento”.
-* Correção de um problema que fazia com que o sistema falhasse ao regenerar uma configuração, no caso de arquivos mal configurados.
+* Correção de um erro da build anterior que impedia os usuários de redimensionar a página de logon do IMS. (NEO-30085)
+* Correção de um erro que ocorria ao instalar o pacote do gerenciador de conteúdo em uma instância existente. (NEO-32349)
+* Correção de um problema no menu **Campanhas** em que a mensagem “operação em andamento” era exibida continuamente. (NEO-44904)
+* Com o Adobe Analytics ativado, foi corrigido um problema que removia a BID (Broadlog ID) e a CID (ID da campanha) do URL ao enviar um email com um URL sem salvar a entrega. (NEO-38678)
+* Correção de um problema que ocorria ao carregar uma imagem para a pasta Recursos públicos em uma instância com configuração específica do Centro de mensagens. A seguinte mensagem de erro era exibida: “Não foi possível carregar as imagens para os servidores de rastreamento”. (NEO-38546, NEO-45572)
+* Correção de um problema que fazia com que o sistema falhasse ao regenerar uma configuração, no caso de arquivos mal configurados. (NEO-38752)
 * Correção de um problema que poderia resultar na atualização incorreta dos indicadores de entrega. (NEO-44827)
 * Correção de um problema que poderia levar a um erro pós-atualização ao usar consultas complexas. (NEO-43648)
 * Correção de um problema que impedia o funcionamento da visualização de webApps. (NEO-43242)
