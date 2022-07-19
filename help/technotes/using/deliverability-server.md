@@ -3,14 +3,14 @@ product: campaign
 title: Atualizar para o novo servidor de deliverability
 description: Saiba como atualizar para o novo servidor de capacidade de entrega do Campaign
 exl-id: bc62ddb9-beff-4861-91ab-dcd0fa1ed199
-source-git-commit: de3a2bf1ab6851184c75bc302ff0c42db186e7f0
+source-git-commit: a45e18e460c11f474dc1b5663b9f4a3277fac12c
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '1122'
+ht-degree: 22%
 
 ---
 
-# Atualizar para o novo servidor de capacidade de entrega {#acc-deliverability}
+# Atualizar para o novo servidor de deliverability {#acc-deliverability}
 
 Início [versão v7.2.1](../../rn/using/latest-release.md#release-7-2-2), o Adobe Campaign depende de um novo servidor de deliverability que oferece alta disponibilidade e soluciona problemas de conformidade com a segurança. O Campaign Classic agora sincroniza as regras de entrega, os broadlogs e o endereço de supressão de e para o novo servidor de entrega. O servidor de capacidade de entrega antigo será descontinuado em 31 de agosto de 2022.
 
