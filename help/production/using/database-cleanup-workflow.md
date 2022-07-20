@@ -6,7 +6,7 @@ audience: production
 content-type: reference
 topic-tags: data-processing
 exl-id: 75d3a0af-9a14-4083-b1da-2c1b22f57cbe
-source-git-commit: 56e9fcc4240649f53239b12f1390dea041602e79
+source-git-commit: b472178316f97f08e9c87f8aebd707709f320e5f
 workflow-type: tm+mt
 source-wordcount: '2823'
 ht-degree: 1%
@@ -247,7 +247,7 @@ Essa tarefa exclui os recursos da Web (mirror pages) usados pelos deliveries.
 1. Primeiro, a lista de deliveries a serem removidos é recuperada usando a seguinte query:
 
    ```sql
-   SELECT iDeliveryId, iNeedMirrorPage FROM NmsDelivery WHERE iWebResPurged = 0 AND tsWebValidity IS NOT NULL AND tsWebValidity < $(curdate)"
+   SELECT iDeliveryId, iNeedMirrorPage FROM NmsDelivery WHERE iWebResPurged = 0 AND tsWebValidity IS NOT NULL AND tsWebValidity < $(curdate)
    ```
 
    em que `$(curDate)` é a data atual do servidor.
@@ -255,11 +255,11 @@ Essa tarefa exclui os recursos da Web (mirror pages) usados pelos deliveries.
 1. O **NmsMirrorPageInfo** é então removida, se necessário usando o identificador do delivery recuperado anteriormente. A exclusão em massa é usada para gerar as seguintes consultas:
 
    ```sql
-   DELETE FROM NmsMirrorPageInfo WHERE iMirrorPageInfoId IN (SELECT iMirrorPageInfoId FROM NmsMirrorPageInfo WHERE iDeliveryId = $(dl)) LIMIT 5000)
+   DELETE FROM NmsMirrorPageInfo WHERE iMirrorPageInfoId IN (SELECT iMirrorPageInfoId FROM NmsMirrorPageInfo WHERE iDeliveryId = $(dl)) LIMIT 5000
    ```
 
    ```sql
-   DELETE FROM NmsMirrorPageSearch WHERE iMessageId IN (SELECT iMessageId FROM NmsMirrorPageSearch WHERE iDeliveryId = $(dl)) LIMIT 5000)
+   DELETE FROM NmsMirrorPageSearch WHERE iMessageId IN (SELECT iMessageId FROM NmsMirrorPageSearch WHERE iDeliveryId = $(dl)) LIMIT 5000
    ```
 
    em que `$(dl)` é o identificador do delivery.
@@ -304,7 +304,7 @@ Esta etapa permite excluir registros para os quais todos os dados não foram pro
 1. A exclusão em massa é realizada no **XtkReject** com a seguinte query:
 
    ```sql
-   DELETE FROM XtkReject WHERE iRejectId IN (SELECT iRejectId FROM XtkReject WHERE tsLog < $(curDate)) LIMIT $(l))
+   DELETE FROM XtkReject WHERE iRejectId IN (SELECT iRejectId FROM XtkReject WHERE tsLog < $(curDate)) LIMIT $(l)
    ```
 
    em que `$(curDate)` é a data atual do servidor a partir da qual subtraímos o período definido para a variável **NmsCleanup_RejectsPurgeDelay** (consulte [Assistente de implantação](#deployment-wizard)) e `$(l)` é o número máximo de registros a eliminar em massa.
