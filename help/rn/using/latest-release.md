@@ -6,10 +6,10 @@ feature: Overview
 role: User
 level: Beginner
 exl-id: d65869ca-a785-4327-8e8d-791c28e4696c
-source-git-commit: 8d6f5a3596c2c919e597e0b6ce3d711276c8df12
+source-git-commit: 0d0c97213cf8b95bbadd06f4c5666213b6c6c8f1
 workflow-type: tm+mt
-source-wordcount: '1965'
-ht-degree: 98%
+source-wordcount: '1987'
+ht-degree: 97%
 
 ---
 
@@ -84,6 +84,7 @@ Consulte a [Matriz de compatibilidade do Campaign](../../rn/using/compatibility-
 * Correção de um problema que poderia resultar em falhas devido a descartes de núcleo intermitentes (NEO-30549)
 * Correção de um problema que poderia resultar em falhas ao usar um código HTML incorreto em uma entrega. (NEO-40385)
 * Correção de um problema que poderia impedir que usuários não administradores acessassem a guia **Análise** nas propriedades da entrega. (NEO-34025)
+* Correção de um problema que impedia o upload de uma imagem no modo de partes de um servidor externo durante a preparação da mensagem. (NEO-40307)
 
 ## ![](assets/do-not-localize/green_2.png) Versão 7.2.2 - Build 9349 {#release-7-2-2}
 
