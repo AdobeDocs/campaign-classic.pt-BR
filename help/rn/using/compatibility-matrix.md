@@ -7,9 +7,9 @@ role: User
 level: Beginner
 exl-id: b8c1f287-06f4-4c34-8cca-b0c7676abbc2
 source-git-commit: 7f24c8be599d6dece41de848d64feb8079b10ff3
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '768'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -161,7 +161,7 @@ Para saber mais sobre itens obsoletos, visite [esta página](../../rn/using/depr
 
 >[!NOTE]
 >
->* O driver RDBMS deve ser igual à versão do servidor RDBMS.
+>* O driver RDBMS deve corresponder à versão do servidor RDBMS.
 >
 >* O PostgreSQL é o RDBMS para ambientes hospedados.
 
@@ -358,26 +358,26 @@ Os sistemas operacionais e navegadores a seguir são **necessários** para usar 
 <p>Microsoft Internet Explorer</p>
 </td>
 <td>
-<p>11º</p>
+<p>11</p>
 </td>
 </tr>
 </tbody>
 </table>
 
-### Tempo de execução do Microsoft WebView2
+### Microsoft WebView2 Runtime
 
 <table>
 <tbody>
 <tr>
 <td>
-<p>Tempo de execução do Microsoft Edge WebView2
+<p>WebView2 Runtime do Microsoft Edge
 </p>
 </td>
 <td>
 <p>Versão mais recente</p>
 </td>
 <td>
-<p><a href="http://www.adobe.com/go/acc-ms-webview2-runtime-download">Download do site do desenvolvedor do Microsoft</a></p>
+<p><a href="http://www.adobe.com/go/acc-ms-webview2-runtime-download_br">Baixar do site Desenvolvedor Microsoft</a></p>
 </td>
 </tr>
 </tbody>
