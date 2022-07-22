@@ -5,8 +5,8 @@ description: Neste caso de uso, um query incremental é usado para atualizar aut
 feature: Workflows
 exl-id: 0d3e7046-313a-42a6-9155-3365e8d60bac
 source-git-commit: 381538fac319dfa075cac3db2252a9cc80b31e0f
-workflow-type: tm+mt
-source-wordcount: '274'
+workflow-type: ht
+source-wordcount: '0'
 ht-degree: 100%
 
 ---
