@@ -5,8 +5,8 @@ description: Saiba mais sobre como direcionar dados em um workflow
 feature: Query Editor, Data Management
 exl-id: 74b82019-bdab-4442-84cf-5ad18d0db788
 source-git-commit: 381538fac319dfa075cac3db2252a9cc80b31e0f
-workflow-type: tm+mt
-source-wordcount: '1924'
+workflow-type: ht
+source-wordcount: '0'
 ht-degree: 100%
 
 ---
