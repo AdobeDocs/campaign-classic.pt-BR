@@ -5,8 +5,8 @@ description: Saiba mais sobre a atividade de workflow de desduplicação
 feature: Workflows, Targeting Activity
 exl-id: 38add4fe-6238-45de-863e-895ebca189b7
 source-git-commit: 381538fac319dfa075cac3db2252a9cc80b31e0f
-workflow-type: tm+mt
-source-wordcount: '1089'
+workflow-type: ht
+source-wordcount: '0'
 ht-degree: 100%
 
 ---
