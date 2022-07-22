@@ -5,9 +5,9 @@ description: Saiba como configurar e enviar o delivery
 feature: Channel Configuration
 exl-id: 0411686e-4f13-401e-9333-e14b05ebe9cd
 source-git-commit: d59e9f55275bac303a5ed1450bb28ef7fa0f84cd
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1502'
-ht-degree: 88%
+ht-degree: 100%
 
 ---
 
@@ -17,25 +17,25 @@ ht-degree: 88%
 
 ## Permissões{#delivery-permissions}
 
-Somente o proprietário da entrega pode iniciar uma entrega. Para que outros operadores (ou grupo de operadores) possam iniciar um delivery, adicione-os como revisores na **[!UICONTROL Delivery start:]** campo. [Saiba mais](../../campaign/using/marketing-campaign-approval.md#selecting-reviewers).
+Somente o proprietário do delivery pode iniciar um delivery. Para que outros operadores (ou grupo de operadores) possam iniciar um delivery, é necessário adicioná-los como revisores no campo **[!UICONTROL Delivery start:]**. [Saiba mais](../../campaign/using/marketing-campaign-approval.md#selecting-reviewers).
 
 ## Parâmetros adicionais de entrega {#delivery-additiona-parameters}
 
-Antes de enviar o delivery, você poderá definir os parâmetros de envio nas propriedades de delivery, por meio da guia **[!UICONTROL Delivery]** Delivery.
+Antes de enviar o delivery, você poderá definir os parâmetros de envio nas propriedades de delivery, por meio da guia **[!UICONTROL Delivery]**.
 
 ![](assets/s_ncs_user_wizard_delivery.png)
 
-* **[!UICONTROL Delivery priority]**: use essa opção para alterar a ordem de envio dos deliveries definindo o nível de prioridade: normal, alto ou baixo.
+* **[!UICONTROL Delivery priority]**: use essa opção para alterar a ordem de envio dos deliveries, definindo o nível de prioridade (normal, alto ou baixo).
 
-* **[!UICONTROL Message batch quantity]**: use essa opção para definir o número de mensagens agrupadas no mesmo pacote do delivery XML. Se o parâmetro for definido como 0, as mensagens serão automaticamente agrupadas. O tamanho do pacote é definido pelo cálculo `<delivery size>/1024`, com no mínimo 8 e no máximo 256 mensagens por pacote.
+* **[!UICONTROL Message batch quantity]**: use essa opção para definir o número de mensagens agrupadas no mesmo pacote de distribuição XML. Se o parâmetro for definido como 0, as mensagens serão automaticamente agrupadas. O tamanho do pacote é definido pelo cálculo `<delivery size>/1024`, com no mínimo 8 e no máximo 256 mensagens por pacote.
 
    >[!IMPORTANT]
    >
    >Quando o delivery é criado duplicando um existente, esse parâmetro é redefinido.
 
-* **[!UICONTROL Send using multiple waves]**: use essa opção para enviar suas mensagens em lotes, em vez de para todo o público-alvo ao mesmo tempo. [Saiba mais](#sending-using-multiple-waves).
+* **[!UICONTROL Send using multiple waves]**: use essa opção para enviar suas mensagens em lotes, em vez de enviá-las para todo o público-alvo de uma só vez. [Saiba mais](#sending-using-multiple-waves).
 
-* **[!UICONTROL Test SMTP delivery]**: use essa opção para testar o envio via SMTP. A entrega é processada até a conexão com o servidor SMTP, mas não é enviada: para cada recipient da entrega, o Campaign se conecta ao servidor do provedor SMTP, executa o comando SMTP RCPT TO e fecha a conexão antes do comando SMTP DATA.
+* **[!UICONTROL Test SMTP delivery]**: use essa opção para testar o envio via SMTP. A entrega é processada até a conexão com o servidor SMTP, mas não é enviada: para cada destinatário do delivery, o Campaign se conecta ao servidor do provedor SMTP, executa o comando SMTP RCPT TO e encerra a conexão antes do comando SMTP DATA.
 
    >[!NOTE]
    >
@@ -44,7 +44,7 @@ Antes de enviar o delivery, você poderá definir os parâmetros de envio nas pr
    >* Saiba mais sobre a configuração do servidor SMTP [nesta seção](../../installation/using/configure-delivery-settings.md).
 
 
-* **[!UICONTROL Email BCC]**: use essa opção para armazenar emails em um sistema externo por meio do CCO simplesmente adicionando um endereço de email de CCO ao target da sua mensagem. [Saiba mais](sending-messages.md#archiving-emails).
+* **[!UICONTROL Email BCC]**: essa opção permite armazenar emails em um sistema externo por meio do CCO. Para isso, basta adicionar um endereço de email de CCO ao destinatário da mensagem. [Saiba mais](sending-messages.md#archiving-emails).
 
 ## Confirmar o delivery {#confirming-delivery}
 
@@ -78,7 +78,7 @@ Você pode adiar o envio da mensagem agendando o delivery.
 
 >[!IMPORTANT]
 >
->Depois de iniciar a análise, a data de contato que você definiu será corrigida. Se modificar essa data, será necessário reiniciar a análise para que suas modificações sejam levadas em conta.
+>Depois de iniciar a análise, a data de contato que você definiu será corrigida. Se você modificar essa data, será necessário reiniciar a análise para que suas modificações sejam consideradas.
 
 ![](assets/s_ncs_user_email_del_start_delayed.png)
 
@@ -98,7 +98,7 @@ Isso permite adiar o delivery para uma data posterior ou salvar o delivery no ca
 
 * A opção **[!UICONTROL Schedule delivery (automatic execution on planned date)]** permite especificar a data do delivery.
 
-   Clique em **[!UICONTROL Send]** e selecione **[!UICONTROL Postpone delivery]**, depois inicie a análise e confirme o delivery. Quando a análise estiver concluída, o target do delivery estará pronto e as mensagens serão automaticamente enviadas na data especificada.
+   Clique em **[!UICONTROL Send]** e selecione **[!UICONTROL Postpone delivery]**, depois inicie a análise e confirme o delivery. Quando a análise for concluída, o destinatário do delivery estará pronto e as mensagens serão automaticamente enviadas na data especificada.
 
 Datas e horas são expressas no fuso horário do operador atual. A lista suspensa **[!UICONTROL Time zone]** localizada abaixo do campo de entrada de data do contato permite converter automaticamente a data e a hora inseridas para o fuso horário selecionado.
 
