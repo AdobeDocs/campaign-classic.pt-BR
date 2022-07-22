@@ -5,8 +5,8 @@ description: Saiba mais sobre casos de uso que você pode executar usando workfl
 feature: Workflows, Data Management
 exl-id: 7c093b34-6b0e-4403-9d9d-fba9ba39ea41
 source-git-commit: 381538fac319dfa075cac3db2252a9cc80b31e0f
-workflow-type: tm+mt
-source-wordcount: '206'
+workflow-type: ht
+source-wordcount: '0'
 ht-degree: 100%
 
 ---
@@ -66,5 +66,5 @@ Eles ajudarão você a descobrir os diferentes contextos nos quais os workflows 
 * [Adição de um campo calculado do tipo lista discriminada](adding-enumeration-type-calculated-field.md)
 * [Criação de um filtro](creating-a-filter.md)
 * [Filtro de recipients duplicados](filtering-duplicated-recipients.md)
-* [Chamada de uma variável de instância em uma query](javascript-scripts-and-templates.md#calling-an-instance-variable-in-a-query)
-* [Aplicar uma porcentagem dividida em uma população](javascript-scripts-and-templates.md#example)
+* [Chamada de uma variável de instância em uma consulta](javascript-scripts-and-templates.md#calling-an-instance-variable-in-a-query)
+* [Aplicar uma divisão de porcentagem em uma população](javascript-scripts-and-templates.md#example)
