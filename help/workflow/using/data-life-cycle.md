@@ -5,8 +5,8 @@ description: Saiba mais sobre o ciclo de vida dos dados em workflows
 feature: Workflows, Data Management
 exl-id: 366acc1e-d769-4053-9fa1-f47182627c07
 source-git-commit: 381538fac319dfa075cac3db2252a9cc80b31e0f
-workflow-type: tm+mt
-source-wordcount: '509'
+workflow-type: ht
+source-wordcount: '0'
 ht-degree: 100%
 
 ---
