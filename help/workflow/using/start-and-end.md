@@ -5,8 +5,8 @@ description: Saiba mais sobre atividades de workflow de início e término
 feature: Workflows
 exl-id: 56dfbaf3-93de-4ade-b4ad-9b54d239c7a5
 source-git-commit: 381538fac319dfa075cac3db2252a9cc80b31e0f
-workflow-type: tm+mt
-source-wordcount: '133'
+workflow-type: ht
+source-wordcount: '0'
 ht-degree: 100%
 
 ---
