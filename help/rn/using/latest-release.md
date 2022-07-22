@@ -9,7 +9,7 @@ exl-id: d65869ca-a785-4327-8e8d-791c28e4696c
 source-git-commit: 0d0c97213cf8b95bbadd06f4c5666213b6c6c8f1
 workflow-type: tm+mt
 source-wordcount: '1987'
-ht-degree: 97%
+ht-degree: 98%
 
 ---
 
@@ -51,7 +51,7 @@ Consulte a [Matriz de compatibilidade do Campaign](../../rn/using/compatibility-
 
 **Aprimoramentos**
 
-* Após o fim da vida útil do Internet Explorer 11, o mecanismo de renderização de HTML da Adobe Services no console passou a usar o Edge Chromium. Além disso, a instalação do tempo de execução do Microsoft Edge Webview 2 agora é necessária para qualquer instalação do console do cliente (da versão de build do Campaign Classic 7.3). [Leia mais](../../installation/using/installing-the-client-console.md)
+* Após o fim da vida útil do Internet Explorer 11, o mecanismo de renderização de HTML da Adobe Services no console passou a usar o Edge Chromium. Além disso, a instalação do Webview 2 Runtime do Microsoft Edge agora é necessária para qualquer instalação do console do cliente (a partir da versão de build 7.3 do Campaign Classic). [Leia mais](../../installation/using/installing-the-client-console.md)
 * O gerenciamento de conexão de banco de dados no Adobe Campaign foi aprimorado para otimizar a estabilidade.
 * A autenticação OAuth 2.0 do Microsoft Exchange Online para POP3 agora é compatível com o Campaign. [Leia mais](../../installation/using/external-accounts.md#bounce-mails-external-account)
 * Correção de vários problemas ao usar uma atividade de fluxo de trabalho de enriquecimento com dados externos. (NEO-38069)
@@ -70,7 +70,7 @@ Consulte a [Matriz de compatibilidade do Campaign](../../rn/using/compatibility-
 * Correção de um problema que poderia resultar na atualização incorreta dos indicadores de entrega. (NEO-44827)
 * Correção de um problema que poderia levar a um erro pós-atualização ao usar consultas complexas. (NEO-43648)
 * Correção de um problema que impedia o funcionamento da visualização de webApps. (NEO-43242)
-* Correção de um problema que resultava na falha da preparação da entrega ao usar um arquivo de target mapping externo em um fluxo de trabalho com uma atividade de carregamento de dados (arquivo). (NEO-43691)
+* Correção de um problema que resultava na falha da preparação do delivery ao usar um arquivo de target mapping externo em um fluxo de trabalho com uma atividade de carregamento de dados (arquivo). (NEO-43691)
 * Correção de um problema que poderia causar falhas e exigir uma reinicialização completa da instância. (NEO-44645)
 * Correção de um problema que impedia o Workflow Heatmap de carregar qualquer resultado. (NEO-43360)
 * Correção de um problema que poderia levar a problemas de conexão ao usar o conector externo FDA. (NEO-42722)

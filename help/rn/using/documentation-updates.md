@@ -292,7 +292,7 @@ A página de recursos obsoletos e removidos foi atualizada. [Leia mais](../../rn
 As Notas de versão e a Matriz de compatibilidade da versão [!DNL Gold Standard] agora estão disponíveis em uma página dedicada.
 [Leia mais](../../rn/using/gold-standard.md).
 
-A integração dos acionadores originalmente baseada na configuração da autenticação oAUTH para acessar o pipeline, agora foi alterada e movida para o Adobe I/O. [Saiba mais](../../integrations/using/configuring-adobe-io.md)
+A integração do Triggers, originalmente baseada na configuração da autenticação oAuth para acessar o pipeline, agora foi alterada e movida para o Adobe I/O. [Saiba mais](../../integrations/using/configuring-adobe-io.md)
 
 **Outras atualizações**
 
@@ -324,7 +324,7 @@ Adição de uma observação sobre o uso de dados adicionais com seeds addresses
 
 Conheça as práticas recomendadas relacionadas ao design do delivery e ao envio com o Campaign em uma seção dedicada. [Leia mais](../../delivery/using/delivery-best-practices.md)
 
-Uma landing page de práticas recomendadas de deliverability foi aprimorada para facilitar o acesso às subseções. [Leia mais](../../delivery/using/about-deliverability.md)
+A página de aterrissagem de práticas recomendadas de capacidade de entrega foi aprimorada para facilitar o acesso às subseções. [Leia mais](../../delivery/using/about-deliverability.md)
 
 Os vídeos do passo a passo estão disponíveis nos seguintes tópicos:
 
@@ -354,14 +354,14 @@ Novos casos de uso são mencionados na lista de [casos de uso de workflow](../..
 
 * Automação de criação, edição e publicação de conteúdo
 * Configuração de um processo de aprovação de recipient antes do envio de um delivery
-* Chamada de uma variável de instância em uma query
-* Aplicar uma porcentagem dividida em uma população
+* Chamada de uma variável de instância em uma consulta
+* Aplicar uma divisão de porcentagem em uma população
 
 A seção de atividade de **[!UICONTROL AND-join]** foi aprimorada com informações adicionais sobre sua utilização, bem como uma observação sobre o uso de variáveis. [Leia mais](../../workflow/using/and-join.md)
 
 ### Julho de 2020 {#july-2020}
 
-Um caso de uso sobre como atualizar automaticamente uma lista usando um query incremental foi adicionado aos casos de uso do workflow. [Leia mais](../../workflow/using/about-workflow-use-cases.md)
+Um caso de uso sobre como atualizar automaticamente uma lista usando uma consulta incremental foi adicionado aos casos de uso de fluxo de trabalho. [Leia mais](../../workflow/using/about-workflow-use-cases.md)
 
 As [Notas de versão](../../rn/using/latest-release.md) foram reorganizadas: uma [página de visão geral](../../rn/using/latest-release.md) foi adicionada com informações sobre status de criação, processo de atualização, recomendações e links importantes. Uma página dedicada às versões do [[!DNL Gold Standard] também foi ](../../rn/using/gold-standard.md) adicionada e a [Matriz de compatibilidade](../../rn/using/compatibility-matrix.md) foi integrada.
 
@@ -383,7 +383,7 @@ A seção Remoção de um endereço em quarentena foi atualizada. Ela esclarece 
 
 Casos de uso foram adicionados em como [criptografar](../../platform/using/zip-encrypt.md) e [descriptografar](../../platform/using/unzip-decrypt.md) dados usando o Painel de controle do Campaign e workflows do Campaign.
 
-Os acionadores da Experience Cloud e a página de integração do Adobe Campaign Classic foram movidos [para cá](../../integrations/using/about-triggers.md).
+A página de integração do Experience Cloud Triggers e Adobe Campaign Classic foi movida [para cá](../../integrations/using/about-triggers.md).
 
 ### Julho de 2020 {#release-20-2}
 
@@ -411,7 +411,7 @@ A matriz de Compatibilidade foi atualizada. [Leia mais](https://helpx.adobe.com/
 
 A seção fluxo de trabalho de limpeza foi atualizada. [Saiba mais](../../production/using/database-cleanup-workflow.md)
 
-Os endpoints de rede do Campaign foram movidos para esta [seção](../../installation/using/campaign-network-endpoints.md).
+Os pontos de acesso de rede do Campaign foram movidos para esta [seção](../../installation/using/campaign-network-endpoints.md).
 
 A seção de instalação do Spam Assassin foi atualizada com o novo nome de arquivo de instalação. [Saiba mais](../../installation/using/configuring-spamassassin.md#installing-spamassassin)
 
@@ -461,7 +461,7 @@ As diretrizes Gerenciamento de acesso foram atualizadas com mais informações s
 
 ### Fevereiro de 2020 {#february-2020}
 
-Uma nova seção que descreve as práticas recomendadas e as principais recomendações ao projetar o template de dados do Adobe Campaign está disponível. [Leia mais](../../configuration/using/data-model-best-practices.md)
+Está disponível uma nova seção que descreve as práticas recomendadas e as principais recomendações ao criar um modelo de dados do Adobe Campaign. [Leia mais](../../configuration/using/data-model-best-practices.md)
 
 Uma nova seção está disponível sobre as Configurações de email técnico. [Leia mais](../../installation/using/email-deliverability.md)
 
@@ -507,7 +507,7 @@ A página **Matriz de recursos do Campaign Classic** foi atualizada. [Leia mais]
 
 O novo **[!UICONTROL Cleanup of Nmsaddress]** workflow está documentado [aqui](../../production/using/database-cleanup-workflow.md#cleanup-of-nmsaddress).
 
-Adicionamos uma limitação ao usar uma atividade de query em um workflow. [Leia mais](../../workflow/using/query.md).
+Uma limitação foi adicionada ao usar uma atividade de consulta em um fluxo de trabalho. [Leia mais](../../workflow/using/query.md).
 
 Adicionamos uma nova seção para detalhar as regras aprimoradas de validação de endereço de email para enviá-lo para a quarentena em caso de erro de software. [Leia mais](../../delivery/using/understanding-quarantine-management.md#soft-error-management)
 
@@ -539,7 +539,7 @@ A opção &quot;WdbcOptions_TempDbName&quot; foi adicionada à lista de opções
 
 A página da matriz FDA foi movida para [este local](../../installation/using/remote-database-access-rights.md).
 
-A página da matriz de direitos de acesso foi movida [aqui](https://experienceleague.adobe.com/docs/campaign-classic/assets/access-rights-matrix.pdf?lang=en).
+A página da matriz de direitos de acesso foi movida [aqui](https://experienceleague.adobe.com/docs/campaign-classic/assets/access-rights-matrix.pdf?lang=pt-BR).
 
 A seção que descreve como definir conteúdo interativo com AMP foi movida. [Leia mais](../../delivery/using/defining-interactive-content.md)
 
@@ -639,7 +639,7 @@ Os guias de introdução de [segurança](https://helpx.adobe.com/br/campaign/kb/
 
 A descrição da opção de fluxo de trabalho de pré-processo foi atualizada para refletir as alterações no produto. [Leia mais](../../workflow/using/data-loading--file-.md)
 
-A nota técnica de Acionadores da Experience Cloud foi atualizada. [Leia mais](../../integrations/using/about-triggers.md)
+A nota técnica do Experience Cloud Triggers foi atualizada. [Leia mais](../../integrations/using/about-triggers.md)
 
 A lista de mensagens de erro foi atualizada. [Leia mais](https://experienceleague.adobe.com/developer/campaign-errors/error_codes.html)
 
@@ -647,7 +647,7 @@ Foram adicionadas mais informações sobre métodos de autenticação SOAP para 
 
 As etapas de configuração do Apache foram atualizadas. [Leia mais](../../installation/using/integration-into-a-web-server-for-linux.md)
 
-Uma nova página foi adicionada, incluindo a lista de terminais para o Classic. [Leia mais](../../installation/using/campaign-network-endpoints.md)
+Uma nova página foi adicionada, incluindo a lista de pontos de acesso do Classic. [Leia mais](../../installation/using/campaign-network-endpoints.md)
 
 O artigo de práticas recomendadas do pacote de dados foi atualizado. [Leia mais](../../configuration/using/data-model-best-practices.md)
 
@@ -688,11 +688,11 @@ O procedimento de Configuração do nome de domínio do Campaign foi aprimorado 
 
 O Guia de dimensionamento de hardware do Campaign foi atualizado. [Leia mais](https://helpx.adobe.com/br/campaign/kb/hardware-sizing-guide.html)
 
-Foram adicionadas informações sobre a Faixa de consulta para a conta externa de teradados. [Leia mais](../../installation/using/external-accounts.md)
+Foram adicionadas informações sobre o query banding da conta externa do Teradata. [Leia mais](../../installation/using/external-accounts.md)
 
 ### Janeiro de 2019{#release-doc-16-01-2019}
 
-A nota técnica de Acionadores da Experience Cloud foi atualizada. [Leia mais](../../integrations/using/about-triggers.md)
+A nota técnica do Experience Cloud Triggers foi atualizada. [Leia mais](../../integrations/using/about-triggers.md)
 
 Uma nota foi adicionada na seção de aprovação da oferta para especificar que a menção &quot;Content approved&quot; indica que o processo de aprovação do conteúdo foi realizado, se todas as ofertas foram habilitadas/aprovadas ou não. [Leia mais](../../interaction/using/offer-catalog-overview.md)
 
