@@ -5,8 +5,8 @@ description: Saiba como enriquecer emails com campos de data personalizados
 feature: Workflows
 exl-id: 85e0ec2a-b7cb-4d0b-a281-9ad72594403a
 source-git-commit: 381538fac319dfa075cac3db2252a9cc80b31e0f
-workflow-type: tm+mt
-source-wordcount: '538'
+workflow-type: ht
+source-wordcount: '0'
 ht-degree: 100%
 
 ---
