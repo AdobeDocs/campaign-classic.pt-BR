@@ -5,8 +5,8 @@ description: Saiba mais sobre a atividade do workflow de query
 feature: Workflows, Targeting Activity, Query Editor
 exl-id: 20d03627-cd56-46da-bc02-73b48a02a350
 source-git-commit: 381538fac319dfa075cac3db2252a9cc80b31e0f
-workflow-type: tm+mt
-source-wordcount: '1629'
+workflow-type: ht
+source-wordcount: '0'
 ht-degree: 100%
 
 ---
