@@ -4,9 +4,9 @@ product: campaign
 title: Documentação do produto Adobe Campaign Classic v7
 exl-id: 6b3f1689-80de-49fd-b7ee-7a2a1931d157
 source-git-commit: 7f24c8be599d6dece41de848d64feb8079b10ff3
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '235'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -18,7 +18,7 @@ ht-degree: 98%
 
 * **[Programa de lançamento 2022](technotes/using/dc-migration.md)**<br/> Atualize seu ambiente e melhore a segurança, a infraestrutura e o desempenho
 
-* **[Versão de julho está ativa!](rn/using/latest-release.md)**<br/> Descubra novos recursos, melhorias e correções nas Notas de versão
+* **[A versão de julho está disponível.](rn/using/latest-release.md)**<br/> Descubra novos recursos, melhorias e correções nas Notas de versão
 
 * **[Perguntas frequentes sobre a Proteção de privacidade do Apple Mail e**[ nota técnica](technotes/using/apple-mail-app-privacy-protection.md)**<br/> ](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/additional-resources/technotes/apple-mail-privacy-faq.html?lang=pt-BR)**Encontre orientações em resposta ao anúncio da Apple sobre o iOS 15
 
@@ -26,7 +26,7 @@ ht-degree: 98%
 
 * **[Proteja suas instâncias do Campaign](technotes/using/acc-config-updates.md)**<br/> Atualize para os builds mais recentes para proteger a plataforma do Campaign
 
-* **[Atualizarção da integração dos Acionadores da Adobe Experience Cloud](integrations/using/configuring-adobe-io.md)**<br/> O serviço de autenticação oAuth herdado chegou ao fim da vida útil: é necessário migrar para o Adobe I/O
+* **[Atualize a integração do Adobe Experience Cloud Triggers](integrations/using/configuring-adobe-io.md)**<br/> O serviço de autenticação oAuth herdado chegou ao fim da vida útil: é necessário migrar para o Adobe I/O
 
 [Mais atualizações](rn/using/documentation-updates.md)
 
