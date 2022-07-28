@@ -5,9 +5,9 @@ description: Interseção
 feature: Workflows, Targeting Activity
 exl-id: f426bf02-9899-49eb-b699-728d51b57c64
 source-git-commit: 381538fac319dfa075cac3db2252a9cc80b31e0f
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '436'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -16,13 +16,13 @@ ht-degree: 96%
 >[!CONTEXTUALHELP]
 >id="ac_workflow_intersection"
 >title="Interseção Atividade de "
->abstract="Uma atividade do tipo Intersection cria um target a partir da interseção dos targets recebidos. Uma intersecção permite extrair somente o público que é comum a todos os resultados da atividade de entrada."
+>abstract="Uma atividade do tipo intersecção cria um público alvo a partir da intersecção dos públicos alvos recebidos. Uma intersecção permite extrair somente o público que é comum a todos os resultados da atividade de entrada."
 >additional-url="https://video.tv.adobe.com/v/329373" text="Assista ao vídeo de demonstração"
 
 
 ![](../../assets/v7-only.svg)
 
-Uma atividade do tipo **intersecção** cria um target a partir da intersecção dos targets recebidos.
+Uma atividade do tipo **intersecção** cria um público alvo a partir da intersecção dos targets recebidos.
 
 Uma intersecção permite extrair somente o público que é comum a todos os resultados da atividade de entrada. O target é criado com todos os resultados recebidos: todas as atividades anteriores devem então ser concluídas antes que a intersecção possa ser executada. Para configurar essa atividade, você precisa inserir um rótulo para ela, bem como as opções referentes ao resultado.
 
