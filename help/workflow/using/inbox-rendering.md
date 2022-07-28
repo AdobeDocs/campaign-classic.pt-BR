@@ -4,9 +4,9 @@ title: Workflow técnico de renderização da caixa de entrada
 description: Esta seção descreve o workflow técnico instalado com o pacote de renderização da caixa de entrada
 feature: Workflows, Inbox Rendering
 source-git-commit: 381538fac319dfa075cac3db2252a9cc80b31e0f
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '75'
-ht-degree: 70%
+ht-degree: 100%
 
 ---
 
@@ -27,7 +27,7 @@ O fluxo de trabalho detalhado abaixo é instalado com o módulo **Renderização
   <tr> 
    <td> <strong>Atualizar rede seed para Renderização da Caixa de entrada</strong><br /> </td> 
    <td> <span class="uicontrol">updateRenderingSeeds</span> <br /> </td> 
-   <td> Esse workflow atualiza endereços de email usados para a renderização da Caixa de entrada e funciona somente se a porta HTTPS estiver aberta para <strong>https://deliverability-app.neolane.net/deliverability</strong>.<br /> </td> 
+   <td> Esse fluxo de trabalho atualiza endereços de email usados para a renderização da Caixa de entrada e funciona somente se a porta HTTPS estiver aberta para <strong>https://deliverability-app.neolane.net/deliverability</strong>.<br /> </td> 
   </tr> 
  </tbody> 
 </table>
