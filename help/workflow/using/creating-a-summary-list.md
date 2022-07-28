@@ -5,9 +5,9 @@ description: Criar uma lista de resumo
 feature: Workflows, Data Management
 exl-id: 39cec42a-c7ac-41b1-8f61-799b559ce002
 source-git-commit: 381538fac319dfa075cac3db2252a9cc80b31e0f
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '974'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -61,7 +61,7 @@ Esses dados estão contidos em um arquivo de texto &quot;Purchases.txt&quot;.
 
    Para obter mais informações sobre essa atividade, consulte [Carregar dados de um arquivo](../../platform/using/import-export-workflows.md#loading-data-from-a-file).
 
-1. Configure o **File collector** atividade para coletar texto (&#42;.txt) digite arquivos do diretório selecionado.
+1. Configure a atividade **File collector** para coletar arquivos de texto (*&#42;txt) do diretório selecionado.
 
    ![](assets/uc2_enrich_collecteur.png)
 
