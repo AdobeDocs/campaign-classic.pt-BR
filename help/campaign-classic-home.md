@@ -4,7 +4,7 @@ product: campaign
 title: Documentação do produto Adobe Campaign Classic v7
 exl-id: 6b3f1689-80de-49fd-b7ee-7a2a1931d157
 source-git-commit: 7f24c8be599d6dece41de848d64feb8079b10ff3
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '235'
 ht-degree: 100%
 
@@ -20,7 +20,7 @@ ht-degree: 100%
 
 * **[A versão de julho está disponível.](rn/using/latest-release.md)**<br/> Descubra novos recursos, melhorias e correções nas Notas de versão
 
-* **[Perguntas frequentes sobre a Proteção de privacidade do Apple Mail e**[ nota técnica](technotes/using/apple-mail-app-privacy-protection.md)**<br/> ](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/additional-resources/technotes/apple-mail-privacy-faq.html?lang=pt-BR)**Encontre orientações em resposta ao anúncio da Apple sobre o iOS 15
+* **[Perguntas frequentes sobre a Proteção de privacidade do Apple Mail](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/additional-resources/technotes/apple-mail-privacy-faq.html?lang=pt-BR)** e **[nota técnica](technotes/using/apple-mail-app-privacy-protection.md)**<br/> Encontre orientações em resposta ao anúncio da Apple sobre o iOS 15
 
 * **[Remover rejeições permanentes incorretas](delivery/using/update-bounce-qualification.md)**<br/> Saiba como atualizar rejeições permanentes incorretas após a interrupção da Apple
 
