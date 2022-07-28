@@ -7,9 +7,9 @@ user-guide-description: Com o Adobe Campaign, é possível usar dados avançados
 sub-product: adobe campaign classic
 type: Documentation
 source-git-commit: a45e18e460c11f474dc1b5663b9f4a3277fac12c
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2582'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
