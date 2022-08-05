@@ -3,7 +3,7 @@ product: campaign
 title: Atualizar para o novo servidor de deliverability
 description: Saiba como atualizar para o novo servidor de capacidade de entrega do Campaign
 exl-id: bc62ddb9-beff-4861-91ab-dcd0fa1ed199
-source-git-commit: 8b8935b181b615c0a243799b14d01f778b84b715
+source-git-commit: ca9df95442355a0cd18c7c9ef048c2d77e84188e
 workflow-type: tm+mt
 source-wordcount: '1144'
 ht-degree: 22%
@@ -12,7 +12,7 @@ ht-degree: 22%
 
 # Atualizar para o novo servidor de deliverability {#acc-deliverability}
 
-Início [versão v7.2.1](../../rn/using/latest-release.md#release-7-2-2), o Adobe Campaign depende de um novo servidor de deliverability que oferece alta disponibilidade e soluciona problemas de conformidade com a segurança. O Campaign Classic agora sincroniza as regras de entrega, os broadlogs e o endereço de supressão de e para o novo servidor de entrega. O servidor de capacidade de entrega antigo será descontinuado em 31 de agosto de 2022.
+Início [versão v7.2.2](../../rn/using/latest-release.md#release-7-2-2), o Adobe Campaign depende de um novo servidor de deliverability que oferece alta disponibilidade e soluciona problemas de conformidade com a segurança. O Campaign Classic agora sincroniza as regras de entrega, os broadlogs e o endereço de supressão de e para o novo servidor de entrega. O servidor de capacidade de entrega antigo será descontinuado em 31 de agosto de 2022.
 
 Como cliente do Campaign Classic, você deve implementar o novo servidor de deliverability **antes de 31 de agosto de 2022**.
 
@@ -28,13 +28,13 @@ Esse novo servidor garante uma &#x200B; de alta disponibilidade (9.9) e fornece 
 
 ## Você será afetado?{#acc-deliverability-impacts}
 
-Todos os clientes são afetados e devem atualizar para [Campaign v7.2.1](../../rn/using/latest-release.md#release-7-2-2) (ou mais) e implemente seu ambiente para se beneficiar do novo servidor de deliverability.
+Todos os clientes são afetados e devem atualizar para [Campaign v7.2.2](../../rn/using/latest-release.md#release-7-2-2) (ou mais) e implemente seu ambiente para se beneficiar do novo servidor de deliverability.
 
 ## Como atualizar?{#acc-deliverability-update}
 
 Como um **cliente hospedado**, o Adobe trabalhará com você para atualizar suas instâncias para a versão mais recente e criar o projeto no Adobe Developer Console.
 
-Como um **cliente local/híbrido**, é necessário atualizar para [Campaign v7.2.1](../../rn/using/latest-release.md#release-7-2-2) (ou mais) para se beneficiar do novo servidor de deliverability. Depois que todas as instâncias forem atualizadas, será necessário [implementar a nova integração](#implementation-steps) para o servidor de capacidade de entrega do Adobe e garanta uma transição contínua.
+Como um **cliente local/híbrido**, é necessário atualizar para [Campaign v7.2.2](../../rn/using/latest-release.md#release-7-2-2) (ou mais) para se beneficiar do novo servidor de deliverability. Depois que todas as instâncias forem atualizadas, será necessário [implementar a nova integração](#implementation-steps) para o servidor de capacidade de entrega do Adobe e garanta uma transição contínua.
 
 ## Etapas de implementação {#implementation-steps}
 
