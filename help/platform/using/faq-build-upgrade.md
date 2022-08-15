@@ -7,9 +7,9 @@ content-type: reference
 topic-tags: starting-with-adobe-campaign
 exl-id: 85e2135d-a1a3-44f0-a4f9-de38db5c8726
 source-git-commit: 56ff1f02e614a91200a8f2ca106dcc76e82f122d
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2031'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -104,7 +104,7 @@ Identifique tempos de tráfego baixos ou de baixo volume que seriam ideais para 
 
 Revise nossa [lista de verificação de atualização de build abaixo](#check-list) e seus planos de teste e verifique se os recursos que podem executar esses testes estão disponíveis dentro de 24 a 48 horas da conclusão de uma atualização.
 
-Para saber mais, [consulte este documento](https://helpx.adobe.com/campaign/kb/acc-build-upgrade.html).
+Para saber mais, [consulte este documento](https://helpx.adobe.com/br/campaign/kb/acc-build-upgrade.html).
 
 ## As atualizações de build podem ser realizadas à noite ou fora do horário comercial?
 
@@ -128,7 +128,7 @@ Não. Durante a atualização da build, o fluxo de trabalho e os serviços de em
 
 ## Meus links de rastreamento ainda funcionam durante a atualização?
 
-O rastreamento de links em emails que já foram enviados não funcionará durante a atualização porque todos os servidores foram interrompidos. Eles estarão operacionais novamente após a conclusão da atualização e a reinicialização dos servidores.
+O rastreamento de links em emails que já foram enviados não funcionará durante a atualização porque todos os servidores serão interrompidos. Eles estarão operacionais novamente após a conclusão da atualização e a reinicialização dos servidores.
 
 ## Eu preciso estar disponível durante o processo de atualização de build?
 
