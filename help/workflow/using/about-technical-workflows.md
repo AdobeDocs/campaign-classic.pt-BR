@@ -5,9 +5,9 @@ description: Saiba mais sobre os fluxos de trabalho técnicos disponíveis com o
 feature: Workflows
 exl-id: 9aed2665-cd4b-419c-b9f2-ea04fc1d8f01
 source-git-commit: 5bfd755ae8278a221e0f0e6f4121bfb072ebda12
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1705'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -78,4 +78,4 @@ Para obter mais informações sobre como monitorar workflows técnicos, consulte
 | **Notificação de tarefa** (taskMgt) | Recursos de marketing (MRM)  - somente Campaign v7 | Esse fluxo de trabalho permite enviar mensagens de notificação relacionadas às tarefas em campanhas de marketing. |
 | **Rastreamento** (tracking)) | Delivery | Esse workflow realiza a recuperação e a consolidação de informações de rastreamento. Também garante o recálculo de rastreamento e estatísticas de delivery, principalmente aqueles usados pelos workflows de arquivamento do Centro de Mensagens. Por padrão, é acionado uma vez por hora. |
 | **Atualizar status do evento** (updateEventsStatus) | Execução de mensagens transacionais (Centro de Mensagens - Execução) | Esse fluxo de trabalho permite atribuir um status a um evento. Os status do evento são descritos a seguir:<ul><li>Pendente: o evento está em uma fila. Nenhum modelo de mensagem foi associado a ele.</li><li>Delivery pendente: o evento está em uma fila, um modelo de mensagem foi associado a ele e está sendo processado no momento pelo delivery.</li><li>Enviado: esse status é copiado dos logs do delivery. Significa que o delivery foi enviado.</li><li>Ignorado pelo delivery: esse status é copiado dos logs do delivery. Significa que o delivery foi ignorado.</li><li>Erro de delivery: esse status é copiado dos logs do delivery. Significa que o delivery falhou.</li><li>Evento não coberto: o evento falhou ao ser associado a um modelo de mensagem. O evento não será reprocessado.</li></ul> |
-| **Atualizar para capacidade de entrega** (deliverabilityUpdate) | Delivery | Esse workflow é executado à noite e gerencia as regras de qualificação de emails de devolução, bem como a lista de domínios e MXs. Isso requer que a porta HTTPS esteja aberta na plataforma. |
+| **Atualizar para capacidade de entrega** (deliverabilityUpdate) | Delivery | Esse fluxo de trabalho é executado à noite e gerencia as regras de qualificação de emails rejeitados, bem como a lista de domínios e MXs. Isso requer que a porta HTTPS esteja aberta na plataforma. |
