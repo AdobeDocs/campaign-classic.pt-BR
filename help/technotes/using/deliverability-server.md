@@ -3,10 +3,10 @@ product: campaign
 title: Atualizar para o novo servidor de deliverability
 description: Saiba como atualizar para o novo servidor de capacidade de entrega do Campaign
 exl-id: bc62ddb9-beff-4861-91ab-dcd0fa1ed199
-source-git-commit: ca9df95442355a0cd18c7c9ef048c2d77e84188e
+source-git-commit: 38f5cb9fdeb9deceab812c6ebc158e2ab37e3155
 workflow-type: tm+mt
-source-wordcount: '1144'
-ht-degree: 22%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -51,16 +51,26 @@ Antes de iniciar a implementação, verifique a configuração da instância.
 
 1. Abra o console do cliente do Campaign e faça logon no Adobe Campaign como um Administrador.
 1. Navegue até **Administração > Plataforma > Opções**.
-1. Verifique a `DmRendering_cuid` o valor da opção é preenchido.
+1. Verifique se a variável `DmRendering_cuid` o valor da opção é preenchido.
 
    * Se a opção estiver preenchida, você poderá iniciar a implementação.
    * Se nenhum valor for preenchido, entre em contato com [Atendimento ao cliente do Adobe](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html){_blank} para obter seu CUID.
 
    Essa opção deve ser preenchida em todas as instâncias do Campaign (MKT, MID, RT, EXEC) com o valor correto. Como um cliente híbrido, entre em contato com o Adobe para definir a opção nas instâncias MID, RT e EXEC.
 
+Como cliente local, você também deve verificar se uma Campanha **[!UICONTROL Product profile]** O está disponível para sua organização. Para fazer isso, siga as etapas abaixo:
+
+1. Como Administrador, conecte-se a [Adobe Admin Console](https://adminconsole.adobe.com/){_blank}.
+1. Acesse o **Produtos e serviços** seção e verificação **Adobe Campaign** está listado.
+Se não conseguir ver **Adobe Campaign** contato [Atendimento ao cliente do Adobe](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html){_blank} para adicioná-lo.
+1. Clique em **Adobe Campaign** e selecione sua Organização.
+1. Verifique se uma **[!UICONTROL Product profile]** existe. Caso contrário, crie-a. Nenhuma permissão é necessária para este **[!UICONTROL Product profile]**.
+
+
 >[!CAUTION]
 >
 >Como cliente local, se um firewall for implementado em seu lado, você deverá adicionar este url `https://deliverability-service.adobe.io` à sua  lista de permissões. [Saiba mais](../../installation/using/url-permissions.md).
+
 
 ### Etapa 1: Criar/atualizar seu projeto do Adobe Developer {#adobe-io-project}
 
@@ -123,7 +133,7 @@ Para fazer isso:
 1. Copie o conteúdo do arquivo `private.key.base64`.
 1. Faça logon via SSH em cada container em que a instância do Adobe Campaign está instalada e adicione as credenciais do Projeto no Adobe Campaign executando o comando a seguir como usuário`neolane`. Isso inserirá as credenciais **[!UICONTROL Technical Account]** no arquivo de configuração da instância.
 
-   ```
+   ```sql
    nlserver config -instance:<instance name> -setimsjwtauth:Organization_Id/Client_Id/Technical_Account_ID/<Client_Secret>/<Base64_encoded_Private_Key>
    ```
 
