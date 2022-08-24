@@ -4,10 +4,10 @@ title: 'Opções de ajuda e suporte para Campaign Classic '
 description: Precisa de suporte para o Campaign Classic? Você está no lugar certo.
 hidefromtoc: true
 exl-id: 3a84236f-89e5-4b8b-9a98-afdc006fd6e0
-source-git-commit: 1d32161d60f6b382188012b104c642f504e28645
+source-git-commit: 9667bb436ffc591b05945dadd683e5f590ae43e5
 workflow-type: tm+mt
-source-wordcount: '793'
-ht-degree: 82%
+source-wordcount: '798'
+ht-degree: 77%
 
 ---
 
@@ -55,7 +55,7 @@ Como atualizar para um novo build? como monitorar a execução do fluxo de traba
         <li><a href="workflow/using/workflow-best-practices.md">Otimizar o desempenho do fluxo de trabalho</a></li>
         <li><a href="workflow/using/monitoring-workflow-execution.md">Solução de problemas de execução de fluxo de trabalho</a></li>
         <li><a href="platform/using/sftp-server-usage.md">Uso do servidor SFTP</a></li>
-        <li><a href="delivery/using/understanding-delivery-failures.md">Entender as falhas de entrega</a></li>
+        <li><a href="delivery/using/understanding-delivery-failures.md">Entender as falhas de delivery</a></li>
         </ul>
     </td>
    <td valign="top">
@@ -67,20 +67,20 @@ Como atualizar para um novo build? como monitorar a execução do fluxo de traba
         <li><a href="platform/using/import-export-workflows.md">Importar dados com workflows</a></li>
         <li><a href="delivery/using/steps-sending-the-delivery.md">Enviar mensagens em várias ondas</a></li>
         <li><a href="delivery/using/defining-the-email-content.md">Conteúdo do email de design</a></li>
-        <li><a href="delivery/using/delivery-best-practices.md">Práticas recomendadas de entrega</a></li>
+        <li><a href="delivery/using/delivery-best-practices.md">Práticas recomendadas de delivery</a></li>
         </ul>
     </td>
     <td valign="top">
         <ul>
         <li><a href="production/using/build-upgrade.md">Atualizar para a build mais recente</a></li>
-        <li><a href="platform/using/faq-build-upgrade.md">Perguntas frequentes de atualização de build</a></li>
+        <li><a href="platform/using/faq-build-upgrade.md">Perguntas frequentes sobre atualização de build</a></li>
         <li><a href="delivery/using/about-delivery-monitoring.md">Monitorar um delivery</a></li>
         <li><a href="delivery/using/understanding-quarantine-management.md">Entender o gerenciamento de quarentenas</a></li>
         <li><a href="installation/using/get-started-security-privacy.md">Lista de verificação de segurança e privacidade</a></li>
         <li><a href="platform/using/privacy-management.md">Gestão do consentimento e da privacidade</a></li>
         <li><a href="platform/using/steps-to-create-a-query.md">Criar uma query</a></li>
         <li><a href="workflow/using/querying-recipient-table.md">Amostras de consulta</a></li>
-        <li><a href="workflow/using/building-a-workflow.md">Criar um fluxo de trabalho</a></li>
+        <li><a href="workflow/using/building-a-workflow.md">Criar um workflow</a></li>
         </ul>
     </td>
     </tr>
@@ -132,19 +132,19 @@ Saiba como gerenciar as configurações de instâncias do Campaign Classic no Pa
 
 <img src="platform/using/assets/do-not-localize/icon-support.svg" width="60px">
 
-O novo sistema de emissão de bilhetes foi lançado [Adobe Admin Console](https://adminconsole.adobe.com/overview). O novo sistema exige novas contas individuais para cada usuário, com as permissões corretas. Se você não conseguir fazer logon com sua Adobe ID, solicite acesso por meio da Experience League, e a equipe de Atendimento ao cliente resolverá o problema o mais rápido possível. [Saiba mais](https://helpx.adobe.com/br/enterprise/using/support-for-experience-cloud.html)
+O novo sistema de emissão de bilhetes foi lançado [Adobe Admin Console](https://adminconsole.adobe.com/overview){_blank}. O novo sistema exige novas contas individuais para cada usuário, com as permissões corretas. Se você não conseguir fazer logon com sua Adobe ID, solicite acesso por meio da Experience League, e a equipe de Atendimento ao cliente resolverá o problema o mais rápido possível. [Saiba mais](https://helpx.adobe.com/br/enterprise/using/support-for-experience-cloud.html)
 
 ### Pergunte aos especialistas.
 
-Associe-se à Comunidade do Campaign Classic: procure respostas em perguntas existentes ou faça sua pergunta à comunidade. [Participe da conversa](https://experienceleaguecommunities.adobe.com/t5/adobe-campaign-classic/ct-p/adobe-campaign-classic-community)
+Associe-se à Comunidade do Campaign Classic: procure respostas em perguntas existentes ou faça sua pergunta à comunidade. [Participe da conversa](https://experienceleaguecommunities.adobe.com/t5/adobe-campaign-classic/ct-p/adobe-campaign-classic-community){_blank}.
 
 ### Acessar o Centro de download do Campaign
 
 A partir de junho de 2020, a solução da Experience Cloud, Software Distribution, substituirá o Neolane Download Center herdado e fornecerá uma experiência mais eficiente para encontrar e baixar softwares, pacotes e ferramentas. [Clique aqui](https://experience.adobe.com/#/downloads/content/software-distribution/en/campaign.html) para acessar a Distribuição de software da Experience Cloud.
-Saiba mais sobre o novo Centro de download [nesta página](https://experienceleague.adobe.com/docs/experience-cloud/software-distribution/home.html?lang=pt-BR).
+Saiba mais sobre o novo Centro de download [nesta página](https://experienceleague.adobe.com/docs/experience-cloud/software-distribution/home.html?lang=pt-BR){_blank}.
 
 ### Criar um tíquete ou iniciar um chat
 
 A criação de um caso permite que você entre em contato com a Equipe de suporte ao cliente da Adobe sobre qualquer problema que você tiver com produtos da Adobe. Para ajudar a resolver ou solucionar problemas, o Adobe Admin Console permitirá que você fale com o Suporte ao cliente da Adobe.
 
-Para registrar um problema ou iniciar uma sessão de chat nesse novo sistema, conecte-se ao [Adobe Admin Console](https://adminconsole.adobe.com/overview). Siga o procedimento detalhado descrito [nesta página](https://helpx.adobe.com/enterprise/using/support-for-experience-cloud.html).
+Para registrar um problema ou iniciar uma sessão de chat nesse novo sistema, conecte-se ao [Adobe Admin Console](https://adminconsole.adobe.com/overview){_blank}. Siga o procedimento detalhado descrito em [esta página](https://helpx.adobe.com/enterprise/using/support-for-experience-cloud.html){_blank}.
