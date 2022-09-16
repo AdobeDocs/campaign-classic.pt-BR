@@ -3,10 +3,10 @@ product: campaign
 title: Atualizar para o novo servidor de deliverability
 description: Saiba como atualizar para o novo servidor de capacidade de entrega do Campaign
 exl-id: bc62ddb9-beff-4861-91ab-dcd0fa1ed199
-source-git-commit: 38f5cb9fdeb9deceab812c6ebc158e2ab37e3155
+source-git-commit: 7385617d69c823850083a94b561d02c9152803e1
 workflow-type: tm+mt
-source-wordcount: '1235'
-ht-degree: 22%
+source-wordcount: '1317'
+ht-degree: 20%
 
 ---
 
@@ -40,7 +40,6 @@ Como um **cliente local/híbrido**, é necessário atualizar para [Campaign v7.2
 
 Como parte da nova integração do servidor de deliverability, o Campaign precisa se comunicar com o Adobe Shared Services por meio de uma autenticação baseada no Identity Management Service (IMS). A maneira preferida é usar o Token de gateway baseado em Adobe Developer (também chamado de Token de conta técnica ou JWT de Adobe IO).
 
-
 >[!WARNING]
 >
 >Essas etapas só devem ser executadas para implementações híbridas e no local.
@@ -64,6 +63,11 @@ Como cliente local, você também deve verificar se uma Campanha **[!UICONTROL P
 1. Acesse o **Produtos e serviços** seção e verificação **Adobe Campaign** está listado.
 Se não conseguir ver **Adobe Campaign** contato [Atendimento ao cliente do Adobe](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html){_blank} para adicioná-lo.
 1. Clique em **Adobe Campaign** e selecione sua Organização.
+
+   >[!CAUTION]
+   >
+   >Se você tiver mais de uma organização, selecione a correta. Saiba mais sobre Organizações [nesta página](https://experienceleague.adobe.com/docs/control-panel/using/faq.html#ims-org-id){_blank}.
+
 1. Verifique se uma **[!UICONTROL Product profile]** existe. Caso contrário, crie-a. Nenhuma permissão é necessária para este **[!UICONTROL Product profile]**.
 
 
@@ -76,9 +80,12 @@ Se não conseguir ver **Adobe Campaign** contato [Atendimento ao cliente do Adob
 
 1. Acesso [Console do Adobe Developer](https://developer.adobe.com/console/home) e faça logon com o acesso do desenvolvedor de sua organização. Verifique se você está conectado ao portal correto da organização.
 
+   >[!CAUTION]
+   >
+   >Se você tiver mais de uma organização, selecione a correta. Saiba mais sobre Organizações [nesta página](https://experienceleague.adobe.com/docs/control-panel/using/faq.html#ims-org-id){_blank}.
+
 1. Selecione **[!UICONTROL Create new project]**.
    ![](assets/New-Project.png)
-
 
    >[!CAUTION]
    >
@@ -151,12 +158,14 @@ Agora você pode habilitar o novo servidor de deliverability. Para executar isso
 
 Para verificar se a integração é bem-sucedida, siga as etapas abaixo:
 
-
 1. Abra o console do cliente e faça logon no Adobe Campaign.
 1. Navegue até **Administração > Produção > Workflows técnicos**.
 1. Reinicie o **Atualizar para entregabilidade** (deliverabilityUpdate) . Isso deve ser executado em todas as instâncias do Campaign (MKT, MID, RT, EXEC). Como um cliente híbrido, entre em contato com o Adobe para reiniciar o fluxo de trabalho nas instâncias MID, RT e EXEC.
 1. Logs de verificação: o workflow deve ser executado sem erros.
 
+>[!CAUTION]
+>
+>Após a atualização, a variável **Atualizar rede seed para Renderização da Caixa de Entrada (updateRenderingSeeds)** O workflow deve ser interrompido, pois não será mais aplicado e falhará.
 
 ## Perguntas frequentes {#faq}
 
@@ -173,4 +182,3 @@ Qualquer instância do Campaign não atualizada até 31 de agosto não poderá m
 Se você não atualizar seu ambiente, as configurações de email deixarão de ser sincronizadas (regras de Gerenciamento MX, regras de Email de entrada, regras de Gerenciamento de domínio e regras de qualificação de devolução). Isso pode afetar sua capacidade de entrega ao longo do tempo. Se se fizer uma alteração significativa nestas regras, estas terão de ser aplicadas manualmente a partir deste ponto.
 
 Somente para instâncias MKT [Lista de Supressões Globais](../../campaign-opt/using/filtering-rules.md#default-deliverability-exclusion-rules) for afetada.
-
