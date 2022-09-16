@@ -3,9 +3,9 @@ product: campaign
 title: Atualizar para o novo servidor de deliverability
 description: Saiba como atualizar para o novo servidor de capacidade de entrega do Campaign
 exl-id: bc62ddb9-beff-4861-91ab-dcd0fa1ed199
-source-git-commit: 7385617d69c823850083a94b561d02c9152803e1
+source-git-commit: 9583763eb1d4403b32a1b77a9542f476c314d167
 workflow-type: tm+mt
-source-wordcount: '1317'
+source-wordcount: '1319'
 ht-degree: 20%
 
 ---
@@ -62,11 +62,7 @@ Como cliente local, você também deve verificar se uma Campanha **[!UICONTROL P
 1. Como Administrador, conecte-se a [Adobe Admin Console](https://adminconsole.adobe.com/){_blank}.
 1. Acesse o **Produtos e serviços** seção e verificação **Adobe Campaign** está listado.
 Se não conseguir ver **Adobe Campaign** contato [Atendimento ao cliente do Adobe](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html){_blank} para adicioná-lo.
-1. Clique em **Adobe Campaign** e selecione sua Organização.
-
-   >[!CAUTION]
-   >
-   >Se você tiver mais de uma organização, selecione a correta. Saiba mais sobre Organizações [nesta página](https://experienceleague.adobe.com/docs/control-panel/using/faq.html#ims-org-id){_blank}.
+1. Clique em **Adobe Campaign** e selecione sua Organização. **Cuidado**: Se você tiver mais de uma organização, selecione a correta. Saiba mais sobre Organizações [nesta página](https://experienceleague.adobe.com/docs/control-panel/using/faq.html#ims-org-id){_blank}.
 
 1. Verifique se uma **[!UICONTROL Product profile]** existe. Caso contrário, crie-a. Nenhuma permissão é necessária para este **[!UICONTROL Product profile]**.
 
@@ -79,11 +75,7 @@ Se não conseguir ver **Adobe Campaign** contato [Atendimento ao cliente do Adob
 ### Etapa 1: Criar/atualizar seu projeto do Adobe Developer {#adobe-io-project}
 
 1. Acesso [Console do Adobe Developer](https://developer.adobe.com/console/home) e faça logon com o acesso do desenvolvedor de sua organização. Verifique se você está conectado ao portal correto da organização.
-
-   >[!CAUTION]
-   >
-   >Se você tiver mais de uma organização, selecione a correta. Saiba mais sobre Organizações [nesta página](https://experienceleague.adobe.com/docs/control-panel/using/faq.html#ims-org-id){_blank}.
-
+   **Cuidado**: Se você tiver mais de uma organização, selecione a correta. Saiba mais sobre Organizações [nesta página](https://experienceleague.adobe.com/docs/control-panel/using/faq.html#ims-org-id){_blank}.
 1. Selecione **[!UICONTROL Create new project]**.
    ![](assets/New-Project.png)
 
