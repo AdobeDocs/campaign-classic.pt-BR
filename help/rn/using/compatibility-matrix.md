@@ -6,10 +6,10 @@ feature: Overview
 role: User
 level: Beginner
 exl-id: b8c1f287-06f4-4c34-8cca-b0c7676abbc2
-source-git-commit: fad7770e26bf06d13f7e2bcf136cc5386a394f50
-workflow-type: ht
+source-git-commit: ae235d39c4a78e0a2507f6baaebbdc9986dbf995
+workflow-type: tm+mt
 source-wordcount: '763'
-ht-degree: 100%
+ht-degree: 99%
 
 ---
 
@@ -199,21 +199,15 @@ Os ambientes **Managed Services** (hospedado), **Híbrido** e **No local** podem
 <td><strong>Versão do banco de dados</strong></td>
 <td><strong>Versão do Campaign</strong></td>
 <tr>
-<tr>
-<td>Snowflake</td>
-<td> </td>
-<td>No mínimo 7.2.1</td>
+<td>Amazon Redshift</td>
+<td><p> </p>
+<td>No mínimo v7.0 19.1.4 </td>
+</td>
 </tr>
 <tr>
 <td>Google BigQuery</td>
 <td> </td>
 <td>No mínimo 7.2.1</td>
-</tr>
-<tr>
-<td>Amazon Redshift</td>
-<td><p> </p>
-<td>No mínimo v7.0 19.1.4 </td>
-</td>
 </tr>
 <tr>
 <td>PostgreSQL</td>
@@ -223,6 +217,16 @@ Os ambientes **Managed Services** (hospedado), **Híbrido** e **No local** podem
 <p>11.x</p>
 <p>10.x</p>
 </td>
+<td>No mínimo v7.0 19.1.4</td>
+</tr>
+<tr>
+<td>Snowflake</td>
+<td> </td>
+<td>No mínimo 7.2.1</td>
+</tr>
+<tr>
+<td>verticas analytics</td>
+<td> </td>
 <td>No mínimo v7.0 19.1.4</td>
 </tr>
 </tbody>
@@ -236,14 +240,26 @@ Além disso, os ambientes **Híbrido** e **No local** também podem conectar o C
 <td><strong>Versão do banco de dados</strong></td>
 <td><strong>Versão do Campaign</strong></td>
 <tr>
-<td>Vertica</td>
-<td> </td>
-<td>No mínimo v7.0 19.1.4</td>
-</tr>
-<tr>
 <td>Análise do Microsoft Azure Synapse</td>
 <td> </td>
 <td>No mínimo v7.0 19.1.4</td>
+</tr>
+<tr><td>MySQL</td>
+<td>
+<p>8</p>
+<p>5.7</p>
+</td>
+<td>
+<p>No mínimo v7.3 </p>
+<p>No mínimo v7.0</p>
+</td>
+</tr>
+<tr>
+<td>Netezza</td>
+<td>
+<p>7.2</p>
+</td>
+<td>No mínimo v7.0</td>
 </tr>
 <tr>
 <td>Oracle</td>
@@ -252,6 +268,13 @@ Além disso, os ambientes **Híbrido** e **No local** também podem conectar o C
 <p>18c</p>
 <p>12c</p>
 <p>11g  </p>
+</td>
+<td>No mínimo v7.0</td>
+</tr>
+<tr>
+<td>SAP HANA</td>
+<td>
+<p>versão 1 SPS 12</p>
 </td>
 <td>No mínimo v7.0</td>
 </tr>
@@ -265,33 +288,6 @@ Além disso, os ambientes **Híbrido** e **No local** também podem conectar o C
 </td>
 <td>No mínimo v7.0</td>
 </tr>
-<tr><td>MySQL</td>
-<td>
-<p>8</p>
-<p>5.7</p>
-</td>
-<td>
-<p>No mínimo v7.3 </p>
-<p>No mínimo v7.0</p>
-</td>
-</tr>
-<tr>
-<td>Teradata</td>
-<td>
-<p>16.20</p>
-<p>16</p>
-<p>15.10</p>
-<p>15.0</p>
-</td>
-<td>No mínimo v7.0</td>
-</tr>
-<tr>
-<td>Netezza</td>
-<td>
-<p>7.2</p>
-</td>
-<td>No mínimo v7.0</td>
-</tr>
 <tr>
 <td>Sybase</td>
 <td>
@@ -301,9 +297,12 @@ Além disso, os ambientes **Híbrido** e **No local** também podem conectar o C
 <td>No mínimo v7.0</td>
 </tr>
 <tr>
-<td>SAP HANA</td>
+<td>Teradata</td>
 <td>
-<p>versão 1 SPS 12</p>
+<p>16.20</p>
+<p>16</p>
+<p>15.10</p>
+<p>15.0</p>
 </td>
 <td>No mínimo v7.0</td>
 </tr>
@@ -330,6 +329,15 @@ Os sistemas operacionais e navegadores a seguir são **necessários** para usar 
 
 <table>
 <tbody>
+</tr>
+<tr>
+<td>Microsoft Windows</td>
+<td>
+<p>11 (a partir da versão 7.3)</p>
+<p>10 (recomendado para instâncias em japonês)</p>
+<p>8</p>
+</td>
+</tr>
 <tr>
 <td>Microsoft Windows Server</td>
 <td>
@@ -337,15 +345,6 @@ Os sistemas operacionais e navegadores a seguir são **necessários** para usar 
 <p>2016</p>
 <p>2012</p>
 </td>
-</tr>
-<tr>
-<td>Microsoft Windows</td>
-<td>
-<p>11 (a partir do Campaign v7.3)</p>
-<p>10 (recomendado para instâncias em japonês)</p>
-<p>8</p>
-</td>
-</tr>
 </tbody>
 </table>
 
