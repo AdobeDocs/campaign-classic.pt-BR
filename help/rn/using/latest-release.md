@@ -6,10 +6,10 @@ feature: Overview
 role: User
 level: Beginner
 exl-id: d65869ca-a785-4327-8e8d-791c28e4696c
-source-git-commit: 0d0c97213cf8b95bbadd06f4c5666213b6c6c8f1
+source-git-commit: 52e9925932e9b802a92f317b0950a1e933499b56
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '2008'
+ht-degree: 97%
 
 ---
 
@@ -51,7 +51,7 @@ Consulte a [Matriz de compatibilidade do Campaign](../../rn/using/compatibility-
 
 **Aprimoramentos**
 
-* Após o fim da vida útil do Internet Explorer 11, o mecanismo de renderização de HTML da Adobe Services no console passou a usar o Edge Chromium. Além disso, a instalação do Webview 2 Runtime do Microsoft Edge agora é necessária para qualquer instalação do console do cliente (a partir da versão de build 7.3 do Campaign Classic). [Leia mais](../../installation/using/installing-the-client-console.md)
+* Após o fim da vida útil do Microsoft Internet Explorer 11, o mecanismo de renderização de HTML para Adobe Services (página de logon) no console do cliente agora está usando o Edge Chromium. Observe que o Microsoft Internet Explorer 11 ainda é o mecanismo de renderização de HTML para painéis no console do cliente.  Além disso, a instalação do Webview 2 Runtime do Microsoft Edge agora é necessária para qualquer instalação do console do cliente (a partir da versão de build 7.3 do Campaign Classic). [Leia mais](../../installation/using/installing-the-client-console.md)
 * O gerenciamento de conexão de banco de dados no Adobe Campaign foi aprimorado para otimizar a estabilidade.
 * A autenticação OAuth 2.0 do Microsoft Exchange Online para POP3 agora é compatível com o Campaign. [Leia mais](../../installation/using/external-accounts.md#bounce-mails-external-account)
 * Correção de vários problemas ao usar uma atividade de fluxo de trabalho de enriquecimento com dados externos. (NEO-38069)
