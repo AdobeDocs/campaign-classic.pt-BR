@@ -6,7 +6,7 @@ feature: Overview
 role: User
 level: Beginner
 exl-id: 0cd6bf20-da72-4cf0-9f5d-d4e8acdd324d
-source-git-commit: ae235d39c4a78e0a2507f6baaebbdc9986dbf995
+source-git-commit: a06623611ff3f8d9dfb5d498e01686e12a924923
 workflow-type: tm+mt
 source-wordcount: '2545'
 ht-degree: 99%
@@ -131,7 +131,7 @@ _5 de junho de 2021_
 <table> 
 <thead>
 <tr> 
-<th> <strong>Conector FDA VertiVertica Analytics</strong><br/> </th> 
+<th> <strong>Conector FDA do Vertica analytics</strong><br/> </th> 
 </tr> 
 </thead> 
 <tbody> 
@@ -170,7 +170,7 @@ _5 de junho de 2021_
 
 Os seguintes sistemas agora são compatíveis com o Campaign:
 * Conector FDA do Google BigQuery
-* Conector FDA VertiVertica Analytics
+* Conector FDA do Vertica analytics
 * PostgreSQL 13
 
 Saiba mais na [matriz de compatibilidade do Campaign](../../rn/using/compatibility-matrix.md).
