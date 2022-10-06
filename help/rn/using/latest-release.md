@@ -7,9 +7,9 @@ role: User
 level: Beginner
 exl-id: d65869ca-a785-4327-8e8d-791c28e4696c
 source-git-commit: 52e9925932e9b802a92f317b0950a1e933499b56
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2008'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -51,13 +51,13 @@ Consulte a [Matriz de compatibilidade do Campaign](../../rn/using/compatibility-
 
 **Aprimoramentos**
 
-* Após o fim da vida útil do Microsoft Internet Explorer 11, o mecanismo de renderização de HTML para Adobe Services (página de logon) no console do cliente agora está usando o Edge Chromium. Observe que o Microsoft Internet Explorer 11 ainda é o mecanismo de renderização de HTML para painéis no console do cliente.  Além disso, a instalação do Webview 2 Runtime do Microsoft Edge agora é necessária para qualquer instalação do console do cliente (a partir da versão de build 7.3 do Campaign Classic). [Leia mais](../../installation/using/installing-the-client-console.md)
+* Após o fim da vida útil do Microsoft Internet Explorer 11, o mecanismo de renderização de HTML dos serviços da Adobe (página de logon) no console do cliente passou a usar o Edge Chromium. Observe que o Microsoft Internet Explorer 11 ainda é o mecanismo de renderização de HTML dos painéis no console do cliente.  Além disso, a instalação do Webview 2 Runtime do Microsoft Edge agora é necessária para qualquer instalação do console do cliente (a partir da versão de build 7.3 do Campaign Classic). [Leia mais](../../installation/using/installing-the-client-console.md)
 * O gerenciamento de conexão de banco de dados no Adobe Campaign foi aprimorado para otimizar a estabilidade.
 * A autenticação OAuth 2.0 do Microsoft Exchange Online para POP3 agora é compatível com o Campaign. [Leia mais](../../installation/using/external-accounts.md#bounce-mails-external-account)
 * Correção de vários problemas ao usar uma atividade de fluxo de trabalho de enriquecimento com dados externos. (NEO-38069)
 * O conector FDA do SAP HANA foi atualizado para funcionar com a versão mais recente do banco de dados SAP HANA (2.x).
 * O conector FDA do Teradata foi atualizado para funcionar com a versão mais recente do Teradata (17).
-* Na versão 20.2, foi introduzida a compatibilidade com autenticação baseada em token para novos deliveries e modelos de delivery do iOS. Na versão 7.2, uma correção foi adicionada à pós-atualização para aplicar a compatibilidade com a autenticação baseada em token a um máximo de 10.000 deliveries e modelos de delivery criados anteriormente. Na versão 7.3, a correção foi melhorada e o limite foi removido.
+* Na versão 20.2, foi introduzida a compatibilidade com autenticação baseada em token para novas entregas e modelos de entrega do iOS. Na versão 7.2, uma correção foi adicionada à pós-atualização para aplicar a compatibilidade com a autenticação baseada em token a um máximo de 10.000 entregas e modelos de entrega criados anteriormente. Na versão 7.3, a correção foi melhorada e o limite foi removido.
 
 **Correções**
 
@@ -70,7 +70,7 @@ Consulte a [Matriz de compatibilidade do Campaign](../../rn/using/compatibility-
 * Correção de um problema que poderia resultar na atualização incorreta dos indicadores de entrega. (NEO-44827)
 * Correção de um problema que poderia levar a um erro pós-atualização ao usar consultas complexas. (NEO-43648)
 * Correção de um problema que impedia o funcionamento da visualização de webApps. (NEO-43242)
-* Correção de um problema que resultava na falha da preparação do delivery ao usar um arquivo de target mapping externo em um fluxo de trabalho com uma atividade de carregamento de dados (arquivo). (NEO-43691)
+* Correção de um problema que resultava na falha da preparação da entrega ao usar um arquivo de target mapping externo em um fluxo de trabalho com uma atividade de carregamento de dados (arquivo). (NEO-43691)
 * Correção de um problema que poderia causar falhas e exigir uma reinicialização completa da instância. (NEO-44645)
 * Correção de um problema que impedia o Workflow Heatmap de carregar qualquer resultado. (NEO-43360)
 * Correção de um problema que poderia levar a problemas de conexão ao usar o conector externo FDA. (NEO-42722)
@@ -106,7 +106,7 @@ _1º de março de 2022_
 * Correção de um problema que substituía o CUID por &#39;VALUE_TO_CHANGE&#39; durante a pós-atualização. (NEO-43267)
 * Correção de um problema que resultava em erros ao sincronizar as instâncias de mid-sourcing e de marketing em uma configuração multimid. (NEO-10432)
 * Correção de um problema que resultava em erro ao atualizar o fluxo de trabalho da capacidade de delivery ao ter mais de 1.000 broadlogs ao mesmo tempo. (NEO-40276)
-* Correção de um problema que impedia que os indicadores de delivery de taxa de abertura e de taxa de cliques fossem atualizados automaticamente. (NEO-43253)
+* Correção de um problema que impedia que os indicadores de entrega de taxa de abertura e de taxa de cliques fossem atualizados automaticamente. (NEO-43253)
 
 ## ![](assets/do-not-localize/limited_2.png) Versão 7.2.1 - Build 9346 {#release-7-2-1}
 
@@ -151,16 +151,16 @@ O Adobe Campaign agora é compatível com o Windows Server 2019. Consulte a [Mat
 
 **Correções**
 
-* Correção de um problema ao criar um delivery que resultava em erro na guia **Images** da janela **Tracking &amp; images**. Isso ocorria ao usar uma configuração de proxy automático. (NEO-33260)
+* Correção de um problema ao criar uma entrega que resultava em erro na guia **Images** da janela **Imagens e rastreamento**. Isso ocorria ao usar uma configuração de proxy automático. (NEO-33260)
 * Correção de um problema que impedia o upload de arquivos em um servidor Debian 10 (HTTPS) no modo síncrono.
 * Correção de um problema que poderia impedir que registros da tabela de estatísticas de deliveries (`nmsDeliveryLogStats`) fossem removidos da instância mid-sourcing durante a limpeza do banco de dados, após a exclusão dos deliveries relacionados. (NEO-31034)
 * Correção de um problema que impedia o envio de notificações de aplicativos móveis no iOS ao usar a autenticação por token (NEO-38640).
 * Correção de um problema que poderia exibir mensagens de erro de script ao tentar criar e configurar relatórios (NEO-38393).
-* Correção de um problema que causava falha no fluxo de trabalho de rastreamento do Oracle devido a grandes volumes de indicadores de delivery sendo atualizados simultaneamente (NEO-39653).
-* Correção de um problema que impedia o envio de um delivery devido a um erro ao executar uma tipologia de controle (NEO-39833).
-* Correção de um problema nas páginas de aterrissagem que impedia que caracteres especiais fossem exibidos corretamente nas páginas HTML das respostas de pesquisas online (NEO-39438).
+* Correção de um problema que causava falha no fluxo de trabalho de rastreamento do Oracle devido a grandes volumes de indicadores de entrega sendo atualizados simultaneamente (NEO-39653).
+* Correção de um problema que impedia o envio de uma entrega devido a um erro ao executar uma tipologia de controle (NEO-39833).
+* Correção de um problema nas páginas de destino que impedia que caracteres especiais fossem exibidos corretamente nas páginas HTML das respostas de pesquisas online (NEO-39438).
 * Correção de um problema que impedia o funcionamento do console do Campaign Classic ao clicar com o botão direito do mouse em qualquer uma das pastas da guia Explorer (NEO-38884).
-* Correção de um erro ao usar um template de delivery criado anteriormente e vinculado a uma conta do Web Analytics em um novo delivery, no qual a configuração do Web Analytics ficava ausente. (NEO-28666)
+* Correção de um erro ao usar um modelo de entrega criado anteriormente e vinculado a uma conta do Web Analytics em uma nova entrega, no qual a configuração do Web Analytics ficava ausente. (NEO-28666)
 * Correção de um problema que podia impedir a pré-visualização de deliveries de dispositivos móveis que foram anexados a um fluxo de trabalho.
 * Correção de um erro que impedia que URLs de rastreamento personalizadas fossem redirecionadas quando o mecanismo de assinatura da URL para links de rastreamento era ativado.
 * Correção de um problema que poderia causar falhas após a atualização devido a um problema de gerenciamento de índice.
@@ -172,9 +172,9 @@ O Adobe Campaign agora é compatível com o Windows Server 2019. Consulte a [Mat
 * Correção de um problema que retornava resultados incorretos ao executar as funções HoursDiff e MinutesDiff do Amazon Redshift para tentar extrair o componente de tempo.(NEO-31673)
 * Correção de um problema que impedia o carregamento do relatório **Hot Clicks** em deliveries desde o build 9182. (NEO-28900)
 * Correção de um erro que substituía o símbolo &amp; em um URL pela entidade de caractere de referência (`&amp;`), impedindo usuários de acessarem o URL vinculado a um código QR. (NEO-28621)
-* Correção de um problema que criava uma nova conta externa sempre que um usuário criava um novo fluxo de trabalho de campanha e uma atividade de delivery vinculada a uma conta do Web Analytics. Isso era causado por uma ID ausente no objeto de delivery webAnalyticsAccount. (NEO-39691)
+* Correção de um problema que criava uma nova conta externa sempre que um usuário criava um novo fluxo de trabalho de campanha e uma atividade de entrega vinculada a uma conta do Web Analytics. Isso era causado por uma ID ausente no objeto de entrega webAnalyticsAccount. (NEO-39691)
 * Correção de um problema que podia impedir o funcionamento da atividade de fluxo de trabalho **Lista de leitura** quando a lista era identificada com uma ID negativa na base de dados. (NEO-39607)
-* Correção de um problema que poderia resultar na falha do fluxo de trabalho **Mid-sourcing (logs de delivery)**. (NEO-39662)
+* Correção de um problema que poderia resultar na falha do fluxo de trabalho **Mid-sourcing (logs de entrega)**. (NEO-39662)
 * Correção de um problema que podia impedir a pré-visualização de deliveries de email que foram anexados a um fluxo de trabalho. (NEO-37840)
 * Correção de um problema que fazia com que tabelas válidas que contivessem valores de lista fossem excluídas pelo fluxo de trabalho de limpeza do banco de dados. (NEO-34911)
 * Correção de um problema que podia fazer com que o fluxo de trabalho de faturamento falhasse em instâncias de marketing.
