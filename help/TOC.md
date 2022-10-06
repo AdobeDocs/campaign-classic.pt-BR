@@ -7,9 +7,9 @@ user-guide-description: Com o Adobe Campaign, é possível usar dados avançados
 sub-product: adobe campaign classic
 type: Documentation
 source-git-commit: f580b9b2508c279e03bd2698854aaf3de501200b
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2583'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -72,10 +72,10 @@ ht-degree: 99%
       + Criar importações e exportações genéricas {#generic-imports-exports}
          + [Introdução às importações e exportações genéricas](platform/using/about-generic-imports-exports.md)
          + [Criar modelos de importação e exportação](platform/using/creating-import-export-templates.md)
-         + [Criar trabalhos de importação e exportação](platform/using/creating-import-export-jobs.md)
-         + [Configurar trabalhos de importação](platform/using/executing-import-jobs.md)
-         + [Configurar trabalhos de exportação](platform/using/executing-export-jobs.md)
-         + [Monitorar execução de trabalhos](platform/using/monitoring-jobs-execution.md)
+         + [Criar processos de importação e exportação](platform/using/creating-import-export-jobs.md)
+         + [Configurar processos de importação](platform/using/executing-import-jobs.md)
+         + [Configurar processos de exportação](platform/using/executing-export-jobs.md)
+         + [Monitorar a execução de processos](platform/using/monitoring-jobs-execution.md)
          + [Modelos de importação genérica](platform/using/import-operations-samples.md)
       + Gerenciar a criptografia e a compactação de dados {#managing-data-encryption-compression}
          + [Descompactar ou descriptografar um arquivo antes do processamento](platform/using/unzip-decrypt.md)
@@ -167,7 +167,7 @@ ht-degree: 99%
       + [Validar](delivery/using/validating.md)
    + Usar modelos de entrega {#using-delivery-templates}
       + [Sobre modelos](delivery/using/about-templates.md)
-      + [Criar um template do delivery](delivery/using/creating-a-delivery-template.md)
+      + [Criar um modelo de entrega](delivery/using/creating-a-delivery-template.md)
       + [Selecionar um target mapping](delivery/using/selecting-a-target-mapping.md)
       + [Criar uma entrega de um modelo](delivery/using/creating-a-delivery-from-a-template.md)
    + Personalizar entregas {#personalizing-deliveries}
@@ -209,7 +209,7 @@ ht-degree: 99%
       + [Práticas recomendadas de desempenho de entrega](delivery/using/delivery-performances.md)
       + [Solução de problemas de entrega](delivery/using/delivery-troubleshooting.md)
       + [Status da entrega](delivery/using/delivery-statuses.md)
-      + [Entender as falhas de delivery](delivery/using/understanding-delivery-failures.md)
+      + [Entender as falhas de entrega](delivery/using/understanding-delivery-failures.md)
       + [Entender o gerenciamento de quarentena](delivery/using/understanding-quarantine-management.md)
    + Rastrear mensagens {#tracking-messages}
       + [Sobre o rastreamento de mensagens](delivery/using/about-message-tracking.md)
@@ -249,7 +249,7 @@ ht-degree: 99%
       + [Criar e configurar modelos](campaign/using/marketing-campaign-templates.md)
       + [Adicionar entregas](campaign/using/marketing-campaign-deliveries.md)
       + [Selecionar o público](campaign/using/marketing-campaign-target.md)
-      + [Gerenciar documentos e assets](campaign/using/marketing-campaign-assets.md)
+      + [Gerenciar documentos e ativos](campaign/using/marketing-campaign-assets.md)
       + [Configurar e gerenciar aprovações](campaign/using/marketing-campaign-approval.md)
       + [Monitorar suas campanhas](campaign/using/marketing-campaign-monitoring.md)
       + [Provedores, estoques e orçamentos](campaign/using/providers--stocks-and-budgets.md)
@@ -333,7 +333,7 @@ ht-degree: 99%
       + [Interface do editor de conteúdo](web/using/content-editor-interface.md)
       + [Editar conteúdo](web/using/editing-content.md)
       + [Práticas recomendadas de edição de conteúdo](web/using/content-editing-best-practices.md)
-      + [Criar uma página de aterrissagem](web/using/creating-a-landing-page.md)
+      + [Criar uma página de destino](web/using/creating-a-landing-page.md)
       + [Caso de uso: criar uma entrega de email](web/using/use-case--creating-an-email-delivery.md)
    + Formulários web {#web-forms}
       + [Introdução aos formulários web](web/using/about-web-forms.md)
@@ -366,7 +366,7 @@ ht-degree: 99%
       + [Solução de problemas](integrations/using/troubleshooting.md)
       + [Importar e exportar públicos](integrations/using/importing-and-exporting-audiences.md)
    + Compartilhamento de ativos {#asset-sharing}
-      + [Compartilhar assets com a [!DNL Adobe Experience Cloud]](integrations/using/sharing-assets-with-adobe-experience-cloud.md)
+      + [Compartilhar ativos com a [!DNL Adobe Experience Cloud]](integrations/using/sharing-assets-with-adobe-experience-cloud.md)
       + [Configurar acesso ao [!DNL Assets]](integrations/using/configuring-access-to-assets.md)
       + [Inserir um ativo compartilhado](integrations/using/inserting-a-shared-asset.md)
    + Adobe Experience Manager {#adobe-experience-manager}
@@ -383,7 +383,7 @@ ht-degree: 99%
       + [Sincronizar públicos](integrations/using/synchronizing-audiences.md)
       + [Sincronizar aplicativos web](integrations/using/synchronizing-web-applications.md)
       + [Solucionar problemas do [!DNL ACS Connector]](integrations/using/troubleshooting-the-acs-connector.md)
-   + Acionadores da Adobe Experience Cloud {#experience-triggers}
+   + Adobe Experience Cloud Triggers {#experience-triggers}
       + [Trabalhar com o  [!DNL Experience Cloud Triggers]](integrations/using/about-triggers.md)
       + [Configurar pipeline](integrations/using/configuring-pipeline.md)
       + [Configurar o Adobe I/O para [!DNL Experience Cloud Triggers]](integrations/using/configuring-adobe-io.md)
@@ -399,7 +399,7 @@ ht-degree: 99%
       + [Sobre workflows](workflow/using/about-workflows.md)
       + [Sobre atividades](workflow/using/about-activities.md)
       + [Criar um fluxo de trabalho](workflow/using/building-a-workflow.md)
-      + [Dados do Target](workflow/using/targeting-data.md)
+      + [Dados do público alvo](workflow/using/targeting-data.md)
       + [Usar dados de fluxo de trabalho](workflow/using/how-to-use-workflow-data.md)
       + [Práticas recomendadas de fluxo de trabalho](workflow/using/workflow-best-practices.md)
    + Executar um fluxo de trabalho {#executing-a-workflow}
@@ -411,7 +411,7 @@ ht-degree: 99%
    + Atividades de direcionamento {#targeting-activities}
       + [Sobre atividades de direcionamento](workflow/using/about-targeting-activities.md)
       + [Consulta](workflow/using/query.md)
-      + [Query incremental](workflow/using/incremental-query.md)
+      + [Consulta incremental](workflow/using/incremental-query.md)
       + [Lista de leitura](workflow/using/read-list.md)
       + [União](workflow/using/union.md)
       + [Intersecção](workflow/using/intersection.md)
@@ -419,7 +419,7 @@ ht-degree: 99%
       + [Divisão](workflow/using/split.md)
       + [Células](workflow/using/cells.md)
       + [Ofertas por célula](workflow/using/offers-by-cell.md)
-      + [Delivery outline](workflow/using/delivery-outline.md)
+      + [Outline de entrega](workflow/using/delivery-outline.md)
       + [Enriquecimento](workflow/using/enrichment.md)
       + [Editar esquema](workflow/using/edit-schema.md)
       + [Mecanismo de oferta](workflow/using/offer-engine.md)
@@ -489,7 +489,7 @@ ht-degree: 99%
          + [Usar a funcionalidade de mesclagem da atividade de desduplicação](workflow/using/deduplication-merge.md)
          + [Configurar um fluxo de trabalho de importação recorrente](workflow/using/recurring-import-workflow.md)
       + Criar consultas {#designing-queries}
-         + [Atualização da lista trimestral usando um query incremental](workflow/using/quarterly-list-update.md)
+         + [Atualização da lista trimestral usando uma consulta incremental](workflow/using/quarterly-list-update.md)
       + Consulta e filtro {#designing-queries}
          + [Consultar a tabela de recipients](workflow/using/querying-recipient-table.md)
          + [Consultar informações da entrega](workflow/using/querying-delivery-information.md)
@@ -678,14 +678,14 @@ ht-degree: 99%
             + [Configurar Snowflake](installation/using/configure-fda-snowflake.md)
             + [Configurar Sybase IQ](installation/using/configure-fda-sybase.md)
             + [Configurar Teradata](installation/using/configure-fda-teradata.md)
-            + [Configurar Verticas analytics](installation/using/configure-fda-vertica.md)
+            + [Configurar Vertica Analytics](installation/using/configure-fda-vertica.md)
          + [Direitos de acesso remoto](installation/using/remote-database-access-rights.md)
          + [Conectar ao banco de dados](installation/using/connecting-to-database.md)
          + [Criar o esquema de dados](installation/using/creating-data-schema.md)
          + [Definir mapeamento de dados](installation/using/defining-data-mapping.md)
    + Apêndices {#appendices}
       + [Arquivo de configuração do servidor](installation/using/the-server-configuration-file.md)
-      + [Endpoints de rede do Campaign](installation/using/campaign-network-endpoints.md)
+      + [Pontos de acesso de rede do Campaign](installation/using/campaign-network-endpoints.md)
       + [Linhas de comando](installation/using/command-lines.md)
       + [Criar novas instâncias](installation/using/creating-new-instances.md)
       + [Lista de opções do Campaign](installation/using/configuring-campaign-options.md)
