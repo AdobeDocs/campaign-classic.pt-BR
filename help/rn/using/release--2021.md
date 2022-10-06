@@ -28,9 +28,9 @@ _8 de outubro de 2021_
 
 * Correção do fluxo de trabalho de faturamento disponível na build 9342, que requer uma reinicialização manual do fluxo de trabalho para que a correção seja aplicada. Agora, a pós-atualização reinicia automaticamente o fluxo de trabalho.
 
-* Correção de um problema que podia impedir o gerenciamento adequado de ofertas ao usar o módulo **Interaction** com a opção [Power Booster](../../installation/using/power-booster-and-power-cluster.md). (NEO-39263)
+* Correção de um problema que podia impedir a gestão adequada de ofertas ao usar o módulo de **Interação** com a opção [Power Booster](../../installation/using/power-booster-and-power-cluster.md). (NEO-39263)
 
-* Correção do erro “A afinidade de IP xxx não foi encontrada no mid server xxx” que podia ocorrer no envio de um delivery ao usar mais de uma afinidade de IP em uma instância de multi mid-sourcing. (NEO-37514)
+* Correção do erro “A afinidade de IP xxx não foi encontrada no mid server xxx” que podia ocorrer no envio de uma entrega ao usar mais de uma afinidade de IP em uma instância de multi mid-sourcing. (NEO-37514)
 
 ### ![](assets/do-not-localize/limited_2.png) Versão 21.1.4 – Build 9342 {#release-21-1-4-build-9342}
 
@@ -202,7 +202,7 @@ Saiba mais na [página sobre recursos obsoletos e removidos](../../rn/using/depr
 * Correção de um problema em que as entregas eram exibidas somente como leitura, mas ainda podiam ser editadas nas propriedades de entregas.
 * Correção de um erro que fazia com que a barra de ferramentas de edição desaparecesse ao projetar um aplicativo web.
 * Correção de um erro que exibia a versão de texto de um email com cabeçalhos do Adobe Campaign Classic ao adicionar um link a um email. (NEO-29211
-* Ao usar FDA em conexão HTTPs, o fluxo de trabalho **Mid-sourcing (logs do delivery)** (defaultMidSourcingLog) estava preso no período definido pela opção **NmsMidSourcing_LogsPeriodHour**. Isso evitaria que registros fossem atualizados com dados que ocorressem após esse período definido. (NEO-30833)
+* Ao usar FDA em conexão HTTPs, o fluxo de trabalho **Mid-sourcing (logs de entrega)** (defaultMidSourcingLog) estava preso no período definido pela opção **NmsMidSourcing_LogsPeriodHour**. Isso evitaria que registros fossem atualizados com dados que ocorressem após esse período definido. (NEO-30833)
 * Correção de um problema que ocorria após a execução do fluxo de trabalho de sincronização do centro de mensagens. Toda vez que uma pasta de objetos de entrega era movida para uma pasta personalizada, o fluxo de trabalho movia as entregas de volta para a pasta genérica **Histórico de mensagem transacional**. (NEO-27445)
 * Correção de um problema que exibia uma mensagem de erro ao tentar exibir os relatórios **Estatísticas de transmissão**, **Indicadores de rastreamento** e **Estatísticas de atividades de compartilhamento**.
 * A atividade de fluxo de trabalho **Oracle por demanda** foi removida da interface após a desativação do conector Oracle CRM.
@@ -220,7 +220,7 @@ Saiba mais na [página sobre recursos obsoletos e removidos](../../rn/using/depr
 * Correção de um problema que poderia causar problemas de desempenho ao pesquisar dados de proposta vinculados a ofertas. (NEO-27554)
 * Correção de um problema que resultava na não resposta do processo da Web quando o serviço IMS era ativado, mas não respondia.
 * Correção de um problema que impedia o envio de uma entrega com um grupo de provas devido a um mecanismo de associação específico que falhava na personalização da entrega. (NEO-14391)
-* Correção de um problema em que não era enviado um alerta com a atividade de alerta se uma consulta e uma atividade de enriquecimento tivessem como alvo a tabela de entrega. (NEO-25157)
+* Correção de um problema em que não era enviado um alerta com a atividade de alerta se uma consulta e uma atividade de enriquecimento tivessem direcionando a tabela de entrega. (NEO-25157)
 
 ### ![](assets/do-not-localize/red_2.png) Versão 21.1.2 – Build 9282 {#release-21-1-2-build-9282}
 
@@ -246,7 +246,7 @@ Os seguintes sistemas agora são compatíveis com o Campaign:
 
 **Recursos obsoletos**
 
-O relatório de **monitoramento técnico da avaliação do delivery** agora está obsoleto.
+O relatório de **monitoramento técnico da avaliação de entrega** agora está obsoleto.
 
 Saiba mais na [página sobre recursos obsoletos e removidos](../../rn/using/deprecated-features.md).
 
@@ -278,19 +278,19 @@ Se você estiver interessado em participar deste beta privado, preencha este [fo
 * Correção de um problema que ocorria ao atualizar para uma compilação, incluindo o novo mecanismo de assinatura para links de rastreamento (da Compilação 19.1.4 e Campaign 20.2): quando vários modelos eram associados a um evento, a atualização podia fazer com que o modelo errado fosse selecionado ao ser enviada a mensagem transacional. (NEO-28326)
 * Correção de um problema que fazia com que o MTA ficasse sem resposta e não conseguisse processar deliveries, a menos que fosse reiniciado. (NEO-27455)
 * Correção de um problema no banco de dados MSSQL relacionado ao gerenciamento de fuso horário durante operações de carregamento em massa para uma coluna de tipo datetime. (NEO-27375)
-* Correção de um problema de query de fluxo de trabalho ao usar funções Redshift xtk. Os SubDays, SubSeconds, SubMinutes e SubHours agora aceitam os tipos de data e hora do Redshift (NEO-24962).
+* Correção de um problema de consulta de fluxo de trabalho ao usar funções Redshift xtk. Os SubDays, SubSeconds, SubMinutes e SubHours agora aceitam os tipos de data e hora do Redshift (NEO-24962).
 * Correção de um problema que exibia uma mensagem de erro de script ao tentar a pré-visualização de um relatório com acesso Anônimo. (NEO-27081)
-* Correção de um problema que podia reduzir o uso de memória no servidor durante a execução da análise do delivery.
+* Correção de um problema que podia reduzir o uso de memória no servidor durante a execução de uma análise de entrega.
 * Correção de um problema que impedia que a instância funcionasse durante a tentativa de executar consultas complexas específicas.
 * Correção de um problema que impedia a execução do fluxo de trabalho técnico **Sincronizar páginas do Twitter**. (NEO-28634)
-* Correção de um problema que podia exibir uma mensagem de erro relacionada à função decryptPassword durante a tentativa de publicar no Twitter usando o template do delivery **Tweet (twitter)**. (NEO-28216)
+* Correção de um problema que podia exibir uma mensagem de erro relacionada à função decryptPassword durante a tentativa de publicar no Twitter usando o modelo de entrega **Tweet (twitter)**. (NEO-28216)
 * Correção de um problema que ocorria ao usar uma atividade **JavaScript** para fazer uma solicitação HTTP em um fluxo de trabalho. Após a definição do número da porta no nome do Host, a chamada falhará com o seguinte erro (NEO-29146):
 
 ```
 IOB-090020 Error in SSL library: 'IOB-090013 error:14090086:SSL routines:ssl3_get_server_certificate:certificate verify failed (code 336134278)'
 ```
 
-* Correção de um problema que impedia o envio de novos deliveries com personalização de dados de target (NEO-30323).
+* Correção de um problema que impedia o envio de novas entregas com personalização de dados de público alvo (NEO-30323).
 * Correção de um problema em que várias falhas ocorriam na instância de marketing que causava os arquivos principais.
 * Correção de um problema que resultava em falha do fluxo de trabalho **Rastreamento** com o seguinte erro (NEO-25206):
 
@@ -298,7 +298,7 @@ IOB-090020 Error in SSL library: 'IOB-090013 error:14090086:SSL routines:ssl3_ge
 There is no index on the sourceId field of the 'NmsTrackingLogRcp' table required for the current Web tracking mode. Please add this index.
 ```
 
-* Correção de um problema que ocorria ao criar e salvar um delivery na guia **Direcionamento &amp; Fluxo de trabalho** de uma campanha: a pré-visualização falhava com o seguinte erro (NEO-29440):
+* Correção de um problema que ocorria ao criar e salvar uma entrega na guia **Direcionamento &amp; Fluxo de trabalho** de uma campanha: a pré-visualização falhava com o seguinte erro (NEO-29440):
 
 ```
 XTK-170024 The temporary 'temp:deliveryEmail-all' schema is not defined in the current context
@@ -310,4 +310,4 @@ XTK-170024 The temporary 'temp:deliveryEmail-all' schema is not defined in the c
 The maximum number of connections has been reached (50) by connections pool 'nms:extAccount:acsDefaultRelayAccount XXX'. The server is overloaded. Please try again later.
 ```
 
-* Correção de um erro no SMS quando ocorriam problemas de conexão entre o servidor e o provedor. A conexão era então automaticamente desativada pelo filho do MTA. O Adobe Campaign Classic não tentava se conectar a essa conexão com falha, desde que um novo filho não tivesse sido iniciado.
+* Correção de um erro no SMS quando ocorriam problemas de conexão entre o servidor e o provedor. A conexão era então automaticamente desativada pelo MTA derivado. O Adobe Campaign Classic não tentava se conectar a essa conexão com falha, desde que um novo derivado não tivesse sido iniciado.
