@@ -4,10 +4,10 @@ title: Renderização da caixa de entrada   no Campaign
 description: Saiba como capturar renderizações de email e disponibilizá-las em um relatório dedicado
 feature: Inbox Rendering, Monitoring, Email Rendering
 exl-id: a3294e70-ac96-4e51-865f-b969624528ce
-source-git-commit: f05eefc9945c4ead89eb448b6e28c3523559e055
-workflow-type: ht
-source-wordcount: '813'
-ht-degree: 100%
+source-git-commit: 048189f49623cf00f4c3f1f34ff4b795d80391ef
+workflow-type: tm+mt
+source-wordcount: '821'
+ht-degree: 99%
 
 ---
 
@@ -20,6 +20,9 @@ ht-degree: 100%
 Antes de clicar no botão **Enviar**, verifique se a sua mensagem será exibida aos recipients de forma eficaz em uma variedade de clientes Web, Webmails e dispositivos.
 
 Para permitir isso, o Adobe Campaign aproveita a solução de teste de email baseada na Web [Litmus](https://litmus.com/email-testing) para capturar a renderização e disponibilizá-la em um relatório específico. Isso permite que você visualize a mensagem enviada nos diferentes contextos em que ela pode ser recebida e verificar a compatibilidade nos principais desktops e aplicativos.
+
+>[!CAUTION]
+>A renderização da caixa de entrada não é compatível com [deliveries recorrentes](communication-channels.md#recurring-delivery).
 
 O Litmus é um aplicativo de validação e visualização de email com recursos completos. Ele permite que criadores de conteúdo de email visualizem o conteúdo de sua mensagem em mais de 70 renderizadores de email, como a caixa de entrada do Gmail ou o cliente Apple Mail.
 
