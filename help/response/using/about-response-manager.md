@@ -5,7 +5,7 @@ description: Sobre o gestor de resposta
 exl-id: b5c0e960-2afe-4a98-b82c-d47a74659703
 source-git-commit: 878ba2b532d5cb59af77b6450b12ae5d2ff149b2
 workflow-type: ht
-source-wordcount: '406'
+source-wordcount: '0'
 ht-degree: 100%
 
 ---
