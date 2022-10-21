@@ -6,10 +6,10 @@ role: User, Data Architect
 level: Beginner
 hide: true
 hidefromtoc: true
-source-git-commit: d42389add06db74c54cb3a21813e9a832a2a288a
+source-git-commit: ecd82fe432d44f14b48b162224dd88bb0f6e6f64
 workflow-type: tm+mt
-source-wordcount: '317'
-ht-degree: 6%
+source-wordcount: '560'
+ht-degree: 16%
 
 ---
 
@@ -41,6 +41,43 @@ Uma atividade é um item da paleta adicionado a um fluxo de trabalho para defini
 Saiba mais sobre [Atividades de workflow](../../workflow/using/about-activities.md).
 +++
 
++++**Conector ACS**
+
+O ACS Connector (Prime Offering) faz a ponte entre o Adobe Campaign v7 e o Adobe Campaign Standard. É um recurso integrado no Campaign v7 que replica automaticamente os dados no Campaign Standard, unindo o melhor das duas aplicações. O Campaign v7 tem ferramentas avançadas para gerenciar o banco de dados de marketing principal. A replicação de dados do Campaign v7 permite que o Campaign Standard potencialize os dados avançados em um ambiente simples.
+
+Saiba mais sobre [ACS Connector](../../integrations/using/acs-connector-principles-and-data-cycle.md).
++++
+
++++**Perfil ativo**
+
+Os perfis são considerados ativos se tiverem sido direcionados ou comunicados nos últimos 12 meses por meio de qualquer canal. De acordo com seu contrato, cada uma das instâncias do Campaign é provisionada com um número específico de perfis ativos que são contados para fins de faturamento.
+
+Saiba mais sobre [Perfis ativos](about-profiles.md#active-profiles).
++++
+
+
++++**Atividade de workflow de aprovação**
+
+*Contexto: Marketing distribuído da campanha*
+
+A atividade Local Approval é uma atividade de workflow usada para configurar um processo de aprovação de delivery antes que as mensagens sejam enviadas.
+
+Saiba mais sobre o [Atividade de aprovação local](../../workflow/using/local-approval.md).
++++
+
++++**Audience**
+
+Um público-alvo é o conjunto resultante de perfis que atendem aos critérios de uma definição de filtro, com base em regras e atributos.
+
+Saiba mais sobre [Públicos-alvo](../../campaign/using/marketing-campaign-target.md).
++++
+
++++**Trilha de auditoria**
+
+A trilha de auditoria captura, em tempo real, uma lista abrangente de ações e eventos que ocorrem em sua instância do Adobe Campaign. Ele inclui uma maneira de autoatendimento para acessar um histórico de dados que ajudam a responder perguntas como: o que aconteceu com seus fluxos de trabalho e quem os atualizou pela última vez ou o que seus usuários fizeram na instância .
+
+Saiba mais sobre [Trilha de auditoria](../../production/using/audit-trail.md).
++++
 
 ## E - H {#sec-2}
 
