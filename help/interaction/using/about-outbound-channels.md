@@ -3,8 +3,8 @@ product: campaign
 title: Sobre canais de saída
 description: Sobre canais de saída
 exl-id: 6e32dadc-097f-4380-b931-88468f3cb3b1
-source-git-commit: f05eefc9945c4ead89eb448b6e28c3523559e055
-workflow-type: ht
+source-git-commit: d42389add06db74c54cb3a21813e9a832a2a288a
+workflow-type: tm+mt
 source-wordcount: '169'
 ht-degree: 100%
 
@@ -20,6 +20,6 @@ As ofertas podem ser apresentadas em vários espaços usando canais de entrada o
 
 Para que uma oferta seja selecionada pelo mecanismo de oferta, ela deve ter sido aprovada e estar disponível em um ambiente ativo. Para obter mais informações, consulte [Aprovação e ativação de uma oferta](../../interaction/using/approving-and-activating-an-offer.md).
 
-A apresentação de uma oferta por meio de um canal de comunicação de saída é realizada através campanhas de correspondência direta, email, SMS, etc., geralmente em lote (consulte o [Glossário](../../interaction/using/glossary.md)). Também é possível usar o modo unitário, especialmente com o Message Center (para saber mais sobre isso, consulte o guia do [Message Center](../../message-center/using/about-transactional-messaging.md)).
+A apresentação de uma oferta por meio de um canal de comunicação de saída é realizada através campanhas de correspondência direta, email, SMS, etc., geralmente em lote (consulte o [Glossário](../../interaction/using/i-glossary.md)). Também é possível usar o modo unitário, especialmente com o Message Center (para saber mais sobre isso, consulte o guia do [Message Center](../../message-center/using/about-transactional-messaging.md)).
 
 Várias opções estão disponíveis para apresentar uma oferta. Por exemplo, por meio de uma delivery, uma campanha, delivery outlines ou até mesmo por meio de atividades de workflow.
