@@ -6,16 +6,16 @@ role: User, Data Architect
 level: Beginner
 hide: true
 hidefromtoc: true
-source-git-commit: ecd82fe432d44f14b48b162224dd88bb0f6e6f64
+source-git-commit: d898a43b7a3f826a63a754f9fcb76953a696f3fb
 workflow-type: tm+mt
-source-wordcount: '560'
+source-wordcount: '572'
 ht-degree: 16%
 
 ---
 
 # Glossário do Adobe Campaign{#ac-glossary}
 
-Abaixo está a definição dos principais termos e conceitos no Adobe Campaign
+Abaixo está a definição dos termos e conceitos principais no Adobe Campaign, com links para a documentação relacionada. Clique em um termo para exibir sua definição.
 
 ## A - D{#sec-1}
 
