@@ -6,10 +6,10 @@ role: User, Data Architect
 level: Beginner
 hide: true
 hidefromtoc: true
-source-git-commit: db414b3e8532d27d0cd60a0fa82efc28a1ce57ba
+source-git-commit: 8aa45f4e9d41b7dc4faf89dad988703b63cea77c
 workflow-type: tm+mt
-source-wordcount: '4246'
-ht-degree: 10%
+source-wordcount: '6454'
+ht-degree: 12%
 
 ---
 
@@ -676,6 +676,386 @@ O peso da oferta é baseado em fórmulas que definem precisamente a relevância 
 Saiba mais sobre [Peso da oferta](../../interaction/using/creating-an-offer.md#offer-weight).
 +++
 
++++**Grupos de operadores**
+
+Os grupos de operadores permitem gerenciar funções para operadores do Campaign. Você define grupos de operadores aos quais atribui direitos e associa os operadores a um ou mais grupos. Isso permite que você reutilize os direitos e torne os perfis de operadores mais consistentes. Também facilita o gerenciamento e a manutenção de perfis.
+
+Saiba mais sobre [Grupos de operadores](../../platform/using/access-management-groups.md).
++++
+
++++**Operador**
+
+Um operador é um usuário do Adobe Campaign que tem permissões para fazer o login e executar ações. Os operadores são associados a grupos de operadores e herdam os direitos e privilégios desses grupos. Também é possível atribuir direitos nomeados diretamente aos operadores.
+
+Saiba mais sobre [Operadores](../../platform/using/access-management-operators.md).
++++
+
++++**Options**
+
+As opções são variáveis de nível de plataforma usadas para definir configurações da instância do Campaign. As opções podem definir cronogramas (como para workflow de limpeza de banco de dados) ou outras definições globais no nível da plataforma.
+
+Saiba mais sobre [Opções](../../installation/using/configuring-campaign-options.md).
++++
+
++++**Interação de saída**
+
+*Contexto: Interação de campanha*
+
+Uma interação de saída é uma chamada para o motor de interação de uma lista de contatos (usada para delivery de emails, mala direta etc.). As mesmas regras e processos são aplicados a cada contato. Esse tipo de interação geralmente é processado em modo de lote.
+
+Saiba mais sobre [Interação de saída](../../interaction/using/about-outbound-channels.md).
++++
+
++++**Exportação/importação de pacotes**
+
+Uma exportação de pacote é uma operação que consiste na geração de um arquivo XML que contém definições de objetos. Os pacotes são usados para migrar a funcionalidade e as definições de uma instância para outra. Eles também são usados para adicionar definições essenciais de produtos aos sistemas de backup e controle de origem.
+
+Saiba mais sobre [Exportação/importação de pacotes](../../platform/using/working-with-data-packages.md).
++++
+
++++**Paleta**
+
+A paleta fluxo de trabalho exibe as atividades disponíveis que podem ser adicionadas a um fluxo de trabalho. Esse componente é mostrado em um formato de tabulação com atividades de workflow agrupadas logicamente pelo seu uso. As atividades disponíveis na paleta são determinadas pelos complementos que foram instalados na instância do Campaign e pelo contexto que exibe o workflow.
+
+Saiba mais sobre [Paleta](../../workflow/using/building-a-workflow.md#adding-and-linking-activities).
++++
+
++++**Monitoramento de desempenho**
+
+As informações de monitoramento de desempenho são exibidas na guia Monitoramento. Ele mostra métricas para o sistema subjacente, como uso de memória e CPU, estatísticas do servidor SMTP, processos do servidor e outras informações relevantes.
+
+Saiba mais sobre [Monitoramento de desempenho](../../production/using/monitoring-processes.md).
++++
+
++++**Blocos de personalização**
+
+O Adobe Campaign oferece blocos de personalização integrados que podem ser inseridos nos seus deliveries. Eles são dinâmicos, personalizados e contêm uma renderização específica. Por exemplo, você pode adicionar um logotipo, uma mensagem de saudação ou um link para uma mirror page. Vários blocos de personalização estão disponíveis por padrão. Você também pode definir blocos de personalização personalizados que permitirão otimizar a personalização do delivery. Os dados reais são inseridos em cada mensagem gerada durante a fase de análise do delivery.
+
+Saiba mais sobre [Blocos de personalização](../../delivery/using/personalization-blocks.md).
++++
+
++++**Campo de personalização**
+
+Um campo de personalização é uma única referência de campo de dados usada ao personalizar um delivery para um recipient específico. O valor de dados real é inserido durante a fase de análise de delivery.
+
+Saiba mais sobre [Campos de personalização](../../delivery/using/personalization-fields.md).
++++
+
++++**Variáveis de personalização**
+
+As variáveis de personalização são pedaços de código em um delivery que podem exibir texto diferente para recipients diferentes com base nas informações do recipient. Esses campos podem ser implementados como um campo ou bloco de personalização.
+
+Saiba mais sobre [Variáveis de personalização](../../delivery/using/about-personalization.md).
++++
+
++++**Plano**
+
+Um plano é um tipo de pasta usado para organizar atividades de marketing com base no calendário. As pastas de plano na visualização do Explorer definem unidades baseadas em tempo, como um ano, trimestre ou mês. As pastas de plano podem ser aninhadas e podem conter outras pastas de Plano, pastas de programa ou Campanhas.
+
+Saiba mais sobre [Planos](../../campaign/using/setting-up-marketing-campaigns.md).
++++
+
++++**Filtros predefinidos**
+
+Filtros predefinidos são queries que foram salvas para reutilização. O uso de filtros predefinidos aumenta a produtividade (porque são criados apenas uma vez), ajuda a criar consistência (porque todos os profissionais de marketing podem usá-los) e diminui as habilidades necessárias para o profissional de marketing, pois eles podem usar código ou lógica que talvez não consigam criar a si mesmos.
+
+Saiba mais sobre [Filtros predefinidos](../../platforrm/using/creating-filters.md).
++++
+
+<!--
++++**Predictive Engagement Scoring**
+
+Predictive engagement scoring predicts the probability of a recipient engaging with a message and the probability of opting out (unsubscribing) within the next seven days after the next email send. The probabilities are further divided into buckets according to the specific risk of disengagement, medium, or low. The model also provides the risk percentile rank for the customers to understand where the rank of a certain customer in relation to others. 
+
+Learn more about [Predictive Engagement Scoring](../../platforrm/using/creating-filters.md).
++++
+-->
+
++++**Chave primária**
+
+A chave primária é o identificador exclusivo para cada registro em uma tabela de banco de dados. Uma tabela deve ter pelo menos uma chave. Como regra, as chaves são declaradas após o elemento principal do schema e os índices. As chaves primárias não podem ser compostas (incluir vários campos).
+
+Saiba mais sobre [Chave primária](../../configuration/using/key.md).
++++
+
++++**Perfil**
+
+Um perfil é um registro de informações que representam um cliente final, um prospecto ou um cliente potencial. Cada perfil corresponde a um registro na tabela nmsRecipient ou uma tabela externa contendo a ID do cookie, a ID do cliente, o identificador móvel ou outras informações relevantes para um canal específico.
+
+Saiba mais sobre [Perfis](../../platforrm/using/about-profiles.md).
++++
+
++++**Programa**
+
+Programas e pastas de subprogramas organizam atividades de marketing em torno de um objetivo comercial, como fidelidade, aquisição ou venda cruzada. Eles também podem representar períodos fiscais ou táticas de campanha, como eventos ou boletins informativos. Cada programa contém campanhas vinculadas a um calendário, que fornece uma visualização geral.
+
+Saiba mais sobre [Programas](../../campaign/using/setting-up-marketing-campaigns.md).
++++
+
++++**Recursos públicos**
+
+A pasta Public resources, no Adobe Campaign, armazena imagens hospedadas pelo servidor de aplicativos. As imagens nos deliveries devem ser publicadas no servidor de aplicativos (ou em um servidor de hospedagem de imagem, se o Campaign estiver configurado dessa forma) para serem exibidas nos deliveries, como emails.
+
+Saiba mais sobre [Recursos públicos](../../installation/using/deploying-an-instance.md#managing-public-resources).
++++
+
++++**Push**
+
+As notificações por push são mensagens recebidas pelos aplicativos móveis. As notificações por push são configuradas para funcionar com o Adobe Campaign, incluindo o código SDK do Experience Platform no aplicativo móvel. Para Push, dois canais de delivery estão disponíveis: iOS e Android.
+
+Saiba mais sobre [Empurrar](../../delivery/using/about-mobile-app-channel.md).
++++
+
 ## Q - T {#sec-5}
 
++++**Recipient**
+
+No Adobe Campaign, os recipients são os perfis padrão direcionados para envio de deliveries (emails, SMS etc.) aos seus clientes. Os dados do destinatário armazenados no banco de dados permitem filtrar o target e adicionar dados de personalização. Normalmente, são informações pessoais, de contato, demográficas e transacionais, mas podem ser qualquer tipo de informação que seja compatível com marketing e análise.
+
+Saiba mais sobre [Recipient](../../configuration/using/about-data-model.md).
++++
+
++++**Função de renderização**
+
+*Contexto: Interação de campanha*
+
+A função de renderização é definida em um espaço de oferta. É usado para construir sua representação de oferta com base nos atributos definidos na oferta. Há três modos diferentes de função de renderização: HTML, XML e texto.
+
+Saiba mais sobre [Função de renderização](../../interaction/using/creating-offer-spaces.md).
++++
+
++++**Campanhas de redirecionamento**
+
+Campanhas que direcionam novamente os recipients de um delivery ou deliveries anteriores.
++++
+
++++**Extensão de esquema**
+
+A extensão de esquema permite personalizar os esquemas prontos para uso para melhor adequar seus casos de uso da empresa. Por exemplo, é possível adicionar o campo &quot;Fidelidade&quot; à tabela Recipient .
+
+Saiba mais sobre [Extensão de esquema](../../configuration/using/extending-a-schema.md).
++++
+
++++**Schema**
+
+Um esquema é um documento XML que define um tipo de dados específico. Os esquemas são implementados como tabelas de banco de dados no banco de dados do produto.  Os operadores manipulam esquemas no Campaign e o produto traduz suas ações no SQL necessário, que é executado no banco de dados. Observe que esses termos (Esquema/Tabela) são frequentemente usados alternadamente pelos Operadores, mas são elementos diferentes da arquitetura do produto.
+
+Saiba mais sobre [Esquemas](../../configuration/using/about-schema-reference.md).
++++
+
++++**Seed addresses**
+
+Seed addresses são usados para direcionar destinatários que não correspondem aos critérios de destino definidos. Dessa forma, os recipients que estiverem fora do escopo de delivery podem recebê-lo, como qualquer outro recipient target receberia.
+
+Saiba mais sobre [Seed addresses](../../delivery/using/about-seed-addresses.md).
++++
+
+<!--
++++**Send-time optimization**
+
+To improve the open rate of your messages, you can manually define a sending time per recipient. Each profile will receive the message at the specified date and time, whenever possible. Defining a sending time can be done at the delivery level or using a workflow.
+
+Learn more about [Send-time optimization](../../delivery/using/about-seed-addresses.md:).
++++
+-->
+
++++**Serviço**
+
+O Adobe Campaign permite criar e administrar serviços de informações, como boletins informativos ou atualizações de produtos, e gerenciar as assinaturas desses serviços. Vários serviços podem ser definidos em paralelo.
+
+Saiba mais sobre [Serviços](../../delivery/using/about-services-and-subscriptions.md).
++++
+
++++**Gerenciamento SFTP**
+
+No Painel de controle do Campaign, é possível interagir com todos os servidores SFTP conectados às instâncias do Campaign às quais você tem acesso. O Painel de controle do Campaign permite executar ações em seus servidores SFTP, como Monitorar a capacidade de armazenamento, Gerenciar endereços IP para permitir listagens e gerenciar chaves SSH públicas.
+
+Saiba mais sobre [Gerenciamento SFTP](https://experienceleague.adobe.com/docs/control-panel/using/sftp-management/about-sftp-management.html?lang=en).
++++
+
++++**Atividade dos serviços de assinatura**
+
+Essa atividade de workflow permite criar ou excluir uma subscrição de um serviço de informações para a população especificada na transição.
+
+Saiba mais sobre [Atividade dos serviços de assinatura](../../workflow/using/subscription-services.md).
++++
+
++++**Aprovação do target**
+
+*Contexto: Marketing distribuído da campanha*
+
+Target approval é o processo de ter um Operador ou grupo de Operadores separado que aprova o target final de um delivery (após a fase de análise ter gerado o target) antes que o delivery possa ser enviado.
+
+Saiba mais sobre [Aprovação do target](../../workflow/using/local-approval.md).
++++
+
++++**Dados do Target**
+
+Os dados do Target são os dados armazenados na tabela de trabalho (transição) de um workflow. Esses dados estão disponíveis no delivery para personalização do conteúdo do delivery ou para definir a lógica de elementos dinâmicos do delivery.
+
+Saiba mais sobre [Dados do Target](../../workflow/using/data-life-cycle.md#target-data).
++++
+
++++**Mapa do Target**
+
+Esse é o mapeamento de canais de delivery para um tipo de dados específico. O Adobe Campaign não envia para endereços de email ou números de telefone propriamente ditos, mas para tipos de dados. Os mapas do Target (às vezes chamados de Mapas de entrega) definem como diferentes canais de entrega se vinculam aos campos de dados de um esquema. Ele define como o Campaign envia para esse tipo de dados usando um campo ou expressão específica.
+
+Saiba mais sobre [Dados do Target](../../workflow/using/define-the-right-audience.md#target-mappings).
++++
+
++++**Atividades de direcionamento**
+
+Essas são atividades de workflow específicas para direcionar, manipular dados de população e filtrar atividades. Eles permitem que os Operadores criem um ou mais targets definindo conjuntos e dividindo ou combinando esses conjuntos usando operações de interseção, união ou exclusão.
+
+Saiba mais sobre [Atividades de direcionamento](../../workflow/using/about-targeting-activities.md).
++++
+
++++**Dimensão de direcionamento**
+
+O tipo de dados produzido (retornado) por um query ou outras atividades de workflow. Observe que o Adobe Campaign retorna somente a Chave primária das linhas de banco de dados do entrevistado, independentemente da consulta usada para obtê-las.
+
+Saiba mais sobre [Dimensão de direcionamento](../../workflow/using/targeting-data.md).
++++
+
++++**Atividade da tarefa**
+
+*Contexto: Gestão dos Recursos de Marketing (MRM)*
+
+A atividade de workflow Tarefa incorpora a ação humana à lógica de um workflow. Você pode especificar dois cenários: o primeiro se a tarefa for concluída e um segundo se a tarefa não for concluída (se estiver marcada manualmente como incompleta ou se ela expirar).
+
+Casos de uso típicos são para incorporação de ações offline em uma campanha ou para ações personalizadas, como aprovações.
+
+Em um workflow de campanha, a atividade Task
+
+
+
+Saiba mais sobre [Atividade da tarefa](../../workflow/using/task.md).
++++
+
+<!--
++++**Task**
+
+One iteration of the defined functionality of a workflow activity. Each execution of a task has a unique task identifier.   
+
+Learn more about [Tasks](../../workflow/using/about-workflows.md).
++++
+-->
+
++++**Template**
+
+Um modelo é um elemento de design usado para criar um objeto. Ele contém configurações de objeto e, opcionalmente, o conteúdo do objeto. O sistema de templates é usado para criar deliveries, campanhas, workflows e muitos outros elementos do Adobe Campaign. Os templates de fábrica disponíveis são definidos pelos pacotes instalados. Os modelos podem ser duplicados e personalizados, conforme necessário, pelos Operadores de campanha.
++++
+
+<!--
++++**Test profiles**
+
+Allows targeting of additional recipients who do not match the defined targeting criteria. They are added to a message’s audience to detect any fraudulent use of your recipient database or to ensure delivery. Seen as the Seed type in the Campaign interface.
+
+Learn more about [Test profiles](../../workflow/using/about-workflows.md).
++++
+-->
+
+<!--
++++**Total database storage**
+
+The aggregate size of the production and non-production instance(s) database storage managed by Adobe. 
+
+Learn more about [Total database storage](../../workflow/using/about-workflows.md).
++++
+-->
+
++++**Logs de rastreamento**
+
+O fluxo de trabalho técnico de rastreamento recupera os dados de rastreamento depois que o delivery é enviado e o rastreamento ativado. Esses dados podem ser encontrados na guia Rastreamento do seu delivery. Você pode encontrar informações para aberturas e cliques em um email ou outras interações com uma mensagem recebida pelo recipient.
+
+Saiba mais sobre [Logs de rastreamento](../../delivery/using/accessing-the-tracking-logs.md).
++++
+
++++**Mensagens transacionais**
+
+As mensagens transacionais são um módulo do Campaign projetado para gerenciar notificações de acionador personalizadas geradas por eventos enviados por um sistema de informações externo. Uma mensagem transacional é uma comunicação individual e única enviada em tempo real a um usuário por um provedor, como um site. É particularmente esperado, pois contém informações importantes que o recipient deseja verificar ou confirmar.
+
+Saiba mais sobre [Mensagens transacionais](../../message-center/using/about-transactional-messaging.md).
++++
+
++++**Campanhas acionadas**
+
+Campanhas acionadas são campanhas que são executadas quando uma solicitação de API é recebida em um workflow. As chamadas de API são consumidas por uma atividade Signal no workflow que inicia a execução do workflow.
+
+Saiba mais sobre [Campanhas acionadas](../../workflow/using/external-signal.md).
++++
+
+<!--
++++**Triggers**
+
+Signals that initiate execution of a workflow, delivery or other action. Typically an API call. 
+
+Learn more about [Triggers](../../workflow/using/about-workflows.md).
++++
+-->
+
++++**Regra de tipologia**
+
+*Contexto: Otimização de campanha*
+
+As regras de tipologia são regras de negócios que são implementadas como parte da fase de análise do delivery. As regras de tipologia são verificações do conteúdo do delivery (Regras de controle) ou do target do delivery (Regras de filtragem) ou de outra lógica (Regras de pressão) que impõem requisitos comerciais. As regras são elementos granulares que podem ser incluídos em uma ou mais Tipologias.
+
+Saiba mais sobre [Tipologias](../../campaign/using/about-campaign-typologies.md#typology-rules).
++++
+
++++**Tipologia**
+
+*Contexto: Otimização de campanha*
+
+Uma tipologia é um agrupamento das Regras de tipologia aplicadas à fase de análise de um delivery. Uma tipologia de campanha pode conter várias regras de tipologia, mas uma entrega só pode fazer referência a uma tipologia.
+
+Saiba mais sobre [Tipologias](../../campaign/using/about-campaign-typologies.md#typologies).
++++
+
 ## U - Z {#sec-6}
+
++++**Modo Unitário**
+
+*Contexto: Interação de campanha, mensagens transacionais*
+
+No modo unitário são, um único contato é processado pelo mecanismo de oferta no tempo de execução. Esse modo geralmente é usado para interações de entrada e mensagens transacionais.
+
+Saiba mais sobre [Modo Unitário](../../interaction/using/about-inbound-channels.md).
++++
+
+<!--
++++**Universes**
+
+Application pages hosted by the Campaign instance. Used for approval forms, landing pages, opt-out forms, preference pages or to implement other business requirements.  
+
+Learn more about [Universes](../../workflow/using/about-workflows.md).
++++
+-->
+
++++**Aplicativos web**
+
+Os aplicativos web são páginas de aplicativos dinâmicos e interativos hospedadas pela instância do Campaign. Ele contém dados do banco de dados e conteúdo adaptado aos direitos do usuário conectado. Por exemplo, é possível criar um formulário de edição em uma extranet ou formulários de notificação, incluindo dados do banco de dados com tabelas, gráficos, formulários de entrada etc. Essa funcionalidade permite criar e publicar páginas da Web em que os usuários podem pesquisar ou inserir informações.
+
+Saiba mais sobre [Aplicações web](../../web/using/about-web-applications.md).
++++
+
++++**Diário de Fluxo de Trabalho**
+
+O journal de workflow é o log de execução passo a passo de um workflow. Ele contém todo o histórico ou trilha de auditoria do workflow. Ele é usado para fins de desenvolvimento, solução de problemas ou depuração.
+
+Saiba mais sobre [Diário de Fluxo de Trabalho](../../workflow/using/monitoring-workflow-execution.md).
++++
+
++++**Workflow**
+
+Um workflow é uma representação visual do fluxo de execução da campanha. Ele permite orquestrar a gama completa de processos e tarefas em diferentes módulos do servidor de aplicativos. Esse ambiente gráfico abrangente permite criar processos, inclusive segmentação, execução de campanha, processamento de arquivos, participação humana, etc. O mecanismo de workflow executa e rastreia esses processos.
+
+Saiba mais sobre [Fluxos de trabalho](../../workflow/using/about-workflows.md).
++++
+
++++**Worktable**
+
+A tabela de trabalho contém todas as informações transportadas por transições de workflow. Cada workflow usa várias tabelas de trabalho. Os dados transmitidos nessas tabelas podem ser acelerados e usados no ciclo de vida do workflow, desde que não sejam apagados. De fato, tabelas desnecessárias são removidas toda vez que o workflow se torna passivo e possivelmente durante a execução dos maiores workflows para evitar sobrecarga no servidor.
+
+Saiba mais sobre [Worktables](../../workflow/using/about-workflows.md).
++++
