@@ -6,7 +6,7 @@ role: User, Data Architect
 level: Beginner
 hide: true
 hidefromtoc: true
-source-git-commit: 8aa45f4e9d41b7dc4faf89dad988703b63cea77c
+source-git-commit: 891418c4120793cf296a65f7aed86e71925a0d66
 workflow-type: tm+mt
 source-wordcount: '6454'
 ht-degree: 12%
@@ -51,7 +51,7 @@ Saiba mais sobre [Atividades de workflow](../../workflow/using/about-activities.
 
 Os perfis são considerados ativos se tiverem sido direcionados ou comunicados nos últimos 12 meses por meio de qualquer canal. De acordo com seu contrato, cada uma das instâncias do Campaign é provisionada com um número específico de perfis ativos que são contados para fins de faturamento.
 
-Saiba mais sobre [Perfis ativos](about-profiles.md#active-profiles).
+Saiba mais sobre [Perfis ativos](../../platform/using/about-profiles.md#active-profiles).
 +++
 
 +++**Atividade de workflow de aprovação**
@@ -759,7 +759,7 @@ Saiba mais sobre [Planos](../../campaign/using/setting-up-marketing-campaigns.md
 
 Filtros predefinidos são queries que foram salvas para reutilização. O uso de filtros predefinidos aumenta a produtividade (porque são criados apenas uma vez), ajuda a criar consistência (porque todos os profissionais de marketing podem usá-los) e diminui as habilidades necessárias para o profissional de marketing, pois eles podem usar código ou lógica que talvez não consigam criar a si mesmos.
 
-Saiba mais sobre [Filtros predefinidos](../../platforrm/using/creating-filters.md).
+Saiba mais sobre [Filtros predefinidos](../../configuration/using/creating-filters.md).
 +++
 
 <!--
@@ -775,7 +775,7 @@ Learn more about [Predictive Engagement Scoring](../../platforrm/using/creating-
 
 A chave primária é o identificador exclusivo para cada registro em uma tabela de banco de dados. Uma tabela deve ter pelo menos uma chave. Como regra, as chaves são declaradas após o elemento principal do schema e os índices. As chaves primárias não podem ser compostas (incluir vários campos).
 
-Saiba mais sobre [Chave primária](../../configuration/using/key.md).
+Saiba mais sobre [Chave primária](../../configuration/using/schema/key.md).
 +++
 
 +++**Perfil**
@@ -900,7 +900,7 @@ Saiba mais sobre [Dados do Target](../../workflow/using/data-life-cycle.md#targe
 
 Esse é o mapeamento de canais de delivery para um tipo de dados específico. O Adobe Campaign não envia para endereços de email ou números de telefone propriamente ditos, mas para tipos de dados. Os mapas do Target (às vezes chamados de Mapas de entrega) definem como diferentes canais de entrega se vinculam aos campos de dados de um esquema. Ele define como o Campaign envia para esse tipo de dados usando um campo ou expressão específica.
 
-Saiba mais sobre [Dados do Target](../../workflow/using/define-the-right-audience.md#target-mappings).
+Saiba mais sobre [Dados do Target](../../delivery/using/define-the-right-audience.md#target-mappings).
 +++
 
 +++**Atividades de direcionamento**
@@ -1000,7 +1000,7 @@ Learn more about [Triggers](../../workflow/using/about-workflows.md).
 
 As regras de tipologia são regras de negócios que são implementadas como parte da fase de análise do delivery. As regras de tipologia são verificações do conteúdo do delivery (Regras de controle) ou do target do delivery (Regras de filtragem) ou de outra lógica (Regras de pressão) que impõem requisitos comerciais. As regras são elementos granulares que podem ser incluídos em uma ou mais Tipologias.
 
-Saiba mais sobre [Tipologias](../../campaign/using/about-campaign-typologies.md#typology-rules).
+Saiba mais sobre [Tipologias](../../campaign-opt/using/about-campaign-typologies.md#typology-rules).
 +++
 
 +++**Tipologia**
@@ -1009,7 +1009,7 @@ Saiba mais sobre [Tipologias](../../campaign/using/about-campaign-typologies.md#
 
 Uma tipologia é um agrupamento das Regras de tipologia aplicadas à fase de análise de um delivery. Uma tipologia de campanha pode conter várias regras de tipologia, mas uma entrega só pode fazer referência a uma tipologia.
 
-Saiba mais sobre [Tipologias](../../campaign/using/about-campaign-typologies.md#typologies).
+Saiba mais sobre [Tipologias](../../campaign-opt/using/about-campaign-typologies.md#typologies).
 +++
 
 ## U - Z {#sec-6}
