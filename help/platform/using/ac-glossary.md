@@ -6,9 +6,9 @@ role: User, Data Architect
 level: Beginner
 hide: true
 hidefromtoc: true
-source-git-commit: c4d7c87e769a270b18c57267e134bfbe9a2e0cdf
+source-git-commit: dea815b07f0b91ed550060fa00cf0501ae6594f7
 workflow-type: tm+mt
-source-wordcount: '6260'
+source-wordcount: '6087'
 ht-degree: 12%
 
 ---
@@ -77,12 +77,15 @@ A trilha de auditoria captura, em tempo real, uma lista abrangente de ações e 
 Saiba mais sobre [Trilha de auditoria](../../production/using/audit-trail.md).
 +++
 
-+++**Campanhas automatizadas**
+<!--
+----DUPLICATE WITH THE "CAMPAIGN" ENTRY?---
++++**Automated campaigns**
 
-Campanhas executadas de acordo com uma programação, como para direcionar recipients que fazem aniversário ou aniversário. Também pode ser usado para executar a lógica de olhar para frente e de olhar para trás, como quem comprou ontem ou quem tem um pagamento devido amanhã.
+Campaigns that run on a schedule, such as for targeting recipients who have a birthday or an anniversary. Can also be used to execute look-ahead and look-back logic, such as who purchased yesterday or who has a payment due tomorrow.
 
-Saiba mais sobre [Campanhas](../../campaign/using/designing-marketing-campaigns.md).
+Learn more about [Campaigns](../../campaign/using/designing-marketing-campaigns.md).
 +++
+-->
 
 +++**Modo de lote**
 
@@ -101,7 +104,7 @@ Saiba mais sobre [Campanhas](../../campaign/using/designing-marketing-campaigns.
 +++
 
 <!--
------UNCLEAR-----
+-----NOT USEFUL HERE?-----
 +++**Changeover process**
 
 *Context: Campaign Interaction*
@@ -193,7 +196,7 @@ Learn more about [Transactional Messaging](../../message-center/using/about-tran
 
 *Contexto: Entregabilidade por email*
 
-Uma métrica que permite que os Operadores meçam o sucesso de uma campanha ao alcançar a caixa de entrada dos recipients sem rejeição ou serem marcados como spam.
+A capacidade de delivery permite medir o sucesso das campanhas em chegar à caixa de entrada dos recipients sem rejeição ou sem serem marcadas como spam. Mais precisamente, a capacidade de fornecimento de email refere-se ao conjunto de características que determinam a capacidade de uma mensagem de alcançar seu destino por meio de um endereço de email pessoal, dentro de um curto período e com a qualidade esperada em termos de conteúdo e formato.
 
 Saiba mais sobre [Capacidade de entrega](../../delivery/using/about-deliverability.md).
 +++
@@ -219,14 +222,17 @@ Os logs do delivery contêm informações geradas ao enviar uma mensagem. Esses 
 Saiba mais sobre [Logs do delivery](../../delivery/using/delivery-dashboard.md#delivery-logs-and-history).
 +++
 
-+++**Fundamentos da entrega**
+<!--
+----STRANGE IN DOCS?----
++++**Delivery fundamentals**
 
-*Contexto: Entregabilidade por email*
+*Context: Email Deliverability*
 
-O Serviço de consultoria de princípios básicos de capacidade de entrega de e-mails da Adobe Campaign fornece consultoria de capacidade de fornecimento de e-mails e gerenciamento de reputação para oferecer suporte aos clientes que usam os deliveries do Adobe Campaign.
+Adobe Campaign Deliverability Fundamentals Consulting Service provides email deliverability consultation and reputation management to support customers using Adobe Campaign deliveries.
 
-Saiba mais sobre [Capacidade de entrega](../../delivery/using/about-deliverability.md).
+Learn more about [Deliverability](../../delivery/using/about-deliverability.md).
 +++
+-->
 
 +++**Delivery outline**
 
@@ -310,15 +316,21 @@ O recurso Cco de email envia uma cópia exata no formato EML de um email entregu
 Saiba mais sobre [Email Cco](../../delivery/using/email-parameters.md#email-bcc).
 +++
 
-+++**Compromisso de volume de email**
+<!--
+-----STRANGE FOR DOCS?----
++++**Email volume commitment**
 
-Os emails antecipados enviados por ano conforme estabelecido na Ordem de Venda. Esse é o compromisso total anual de volume de email, incluindo emails enviados, mas não entregues, devido a erros de delivery, como: não entrega de uma mensagem incluindo, mas não limitado a, erros de endereço de email, devoluções permanentes, devoluções temporárias, filtros de email de clientes de email e listas negras de email.
+The anticipated emails sent per year as set forth in the Sales Order. This is the total annual email volume commitment, including emails sent but not delivered due to delivery errors such as: non-delivery of a message including but not limited to email address errors, hard bounces, soft bounces, email filters of mail clients, and email blacklists. 
 +++
+-->
 
-+++**Chamada do mecanismo**
+<!--
+-----USEFUL FOR DOCS?----
++++**Engine call**
 
-Uma chamada de mecanismo é uma chamada de servidor que inicia o processamento em tempo real no lado do servidor para a extração de dados, como dados relacionados a pesquisas, WebApps, JSSP, APIs, registros de aplicativos móveis etc. As chamadas do mecanismo devem ser licenciadas em pacotes de 5.000 chamadas do mecanismo por dia.
+An engine call is a server call that starts real-time processing on server side for the extraction of data, such as data relating to surveys, WebApps, JSSP, APIs, mobile app registrations, etc. Engine calls must be licensed in packs of 5,000 Engine Calls per day.
 +++
+-->
 
 +++**Atividade de enriquecimento**
 
@@ -401,12 +413,15 @@ A Forms define a representação da interface para um tipo de schema específico
 Saiba mais sobre [Forms](../../configuration/using/identifying-a-form.md).
 +++
 
-+++**Consulta SQL gerada**
+<!--
+-----USEFUL HERE?-----
++++**Generated SQL query**
 
-O código SQL gerado para o banco de dados subjacente quando um operador manipula um esquema. Os esquemas definem os tipos de dados que são implementados usando tabelas e colunas do banco de dados. O SQL gerado para manipulação de esquema (como em uma query) é baseado no tipo de banco de dados instalado. Assim, o banco de dados pode ser trocado para um tipo diferente e as consultas no Campaign permanecem inalteradas. O Adobe refere-se a essa funcionalidade como sendo independente de banco de dados.
+The SQL code generated for the underlying database when an operator manipulates a schema. Schemas define the data types that are then implemented using database tables and columns. The SQL generated for schema manipulation (such as in a query) is based on the installed database type. Thus, the database can be swapped to a different type and the queries in Campaign remain unchanged. Adobe refers to this functionality as being database-agnostic.
 
-Saiba mais sobre [Consultas SQL geradas](../../platform/using/steps-to-create-a-query.md#step-6---preview-data).
+Learn more about [Generated SQL queries](../../platform/using/steps-to-create-a-query.md#step-6---preview-data).
 +++
+-->
 
 +++**Heatmap**
 
@@ -425,11 +440,12 @@ Saiba mais sobre [Implantação híbrida](../../installation/using/hosting-model
 
 ## I - L {#sec-3}
 
+<!-- added more details but maybe still not clear/useful here? -->
 +++**Modo de identificação**
 
 *Contexto: Interação de campanha*
 
-Refere-se ao status de um Contato. Pode ser explícito, implícito ou anônimo.
+O modo de identificação Refere-se ao status de um Contato. Pode ser explícito, implícito ou anônimo.
 
 * **explicit**: o contato é identificado após entrar na interface do canal.
 * **implicit**: o contato foi identificado por um cookie (permanente ou de sessão). Ele pode ser processado como um contato anônimo ou identificado.
@@ -439,7 +455,7 @@ Saiba mais sobre [Interação](../../interaction/using/interaction-and-offer-man
 +++
 
 <!--
-----UNCLEAR----
+----NOT USEFUL HERE?----
 +++**Image serving**
 
 The functionality that supplies the images embedded in emails to the delivery’s recipients. The insertion of the images based on an emails system’s “download images” functionality is what generates an “open” entry in Campaign’s tracking logs.
@@ -472,7 +488,7 @@ Saiba mais sobre [Configurações de instância](../../installation/using/about-
 
 +++
 
-+++**Trabalhos (importar e exportar)**
++++**Empregos (importação e exportação)**
 
 Os trabalhos são gerenciados por um sistema de assistente que simplifica a importação e exportação de dados para dentro e para fora do produto. As tarefas usam o sistema de modelos para simplicidade e consistência e podem ser definidas para execução de acordo com uma programação.
 
@@ -488,7 +504,7 @@ Saiba mais sobre [Listas](../../platform/using/creating-and-managing-lists.md).
 
 +++**Cache local**
 
-Informações armazenadas localmente no computador do operador. As informações em cache são usadas pelo console para reduzir o tráfego necessário para o servidor e melhorar o desempenho. A limpeza periódica do cache local (no menu Arquivo ) atualiza as informações armazenadas e melhora o desempenho e a estabilidade.
+O cache local são as informações armazenadas localmente no computador do operador. As informações em cache são usadas pelo console para reduzir o tráfego necessário para o servidor e melhorar o desempenho. A limpeza periódica do cache local (no menu Arquivo ) atualiza as informações armazenadas e melhora o desempenho e a estabilidade.
 
 Saiba mais sobre [Cache local](../../platform/using/faq-campaign-config.md#perform-soft-cache-clear).
 +++
@@ -521,21 +537,21 @@ Saiba mais sobre [Direitos nomeados](../../platform/using/access-management-name
 
 +++**Namespace**
 
-Uma partição que separa os tipos de dados do cliente dos tipos de dados nativos da Adobe Campaign no modelo de dados. Também é usado para facilitar a migração das definições de uma instância para outra, como mover um schema ou template da instância de desenvolvimento para a instância de produção.
+O namespace é uma partição que separa os tipos de dados do cliente dos tipos de dados nativos da Adobe Campaign no modelo de dados. Também é usado para facilitar a migração das definições de uma instância para outra, como mover um schema ou template da instância de desenvolvimento para a instância de produção.
 
 Saiba mais sobre [Namespace](../../configuration/using/about-schema-reference.md#identification-of-a-schema).
 +++
 
 +++**Barra de navegação**
 
-O elemento de navegação que está sendo executado na parte superior da interface. A barra de navegação reagrupa os vários recursos principais da plataforma. Clique em um link da barra de navegação para exibir o conjunto de funcionalidades relacionadas a esse recurso. A lista de recursos principais que você pode acessar depende dos pacotes e dos complementos instalados e dos seus direitos de acesso. O objetivo da barra de navegação é simplificar o gerenciamento de tela e aumentar a produtividade.
+A barra de navegação é o elemento de navegação que está sendo executado na parte superior da interface. A barra de navegação reagrupa os vários recursos principais da plataforma. Clique em um link da barra de navegação para exibir o conjunto de funcionalidades relacionadas a esse recurso. A lista de recursos principais que você pode acessar depende dos pacotes e dos complementos instalados e dos seus direitos de acesso. O objetivo da barra de navegação é simplificar o gerenciamento de tela e aumentar a produtividade.
 
 Saiba mais sobre [Barra de navegação](../../platform/using/adobe-campaign-workspace.md#browsing-pages).
 +++
 
 +++**Árvore de navegação**
 
-A navegação principal na visualização do Explorer do Adobe Campaign. A árvore de navegação funciona como um navegador de arquivos (por exemplo, Windows Explorer). As pastas podem conter subpastas. Selecionar um nó exibe a visualização correspondente ao nó. A visualização exibida é uma lista associada a um esquema e um formulário de entrada para editar a linha selecionada. Você pode personalizar a árvore de navegação e definir permissões em pastas.
+A árvore de navegação é a navegação principal na visualização Explorer do Adobe Campaign. A árvore de navegação funciona como um navegador de arquivos (por exemplo, Windows Explorer). As pastas podem conter subpastas. Selecionar um nó exibe a visualização correspondente ao nó. A visualização exibida é uma lista associada a um esquema e um formulário de entrada para editar a linha selecionada. Você pode personalizar a árvore de navegação e definir permissões em pastas.
 
 Saiba mais sobre [Árvore de navegação](../../platform/using/adobe-campaign-explorer.md#about-navigation-hierarch).
 +++
@@ -553,7 +569,7 @@ Saiba mais sobre [Objetivos](../../mrm/using/creating-and-managing-tasks.md#expe
 
 *Contexto: Interação de campanha*
 
-Conjunto de ofertas definido no Adobe Campaign que pode ser selecionado durante uma interação. O catálogo é organizado hierarquicamente com cada nó correspondente a uma categoria.
+Um catálogo de ofertas é um conjunto de ofertas definido no Adobe Campaign que pode ser selecionado durante uma interação. O catálogo é organizado hierarquicamente com cada nó correspondente a uma categoria.
 
 Saiba mais sobre [Catálogo de ofertas](../../interaction/using/offer-catalog-overview.md).
 +++
@@ -562,7 +578,7 @@ Saiba mais sobre [Catálogo de ofertas](../../interaction/using/offer-catalog-ov
 
 *Contexto: Interação de campanha*
 
-Um contato de uma interação de entrada. Durante o processamento de chamadas do mecanismo, o contato é associado a um targeting dimension. Contatos anônimos e não identificados são atribuídos ao targeting dimension do visitante. Há dois tipos de contatos, identificados e anônimos:
+Um contato de oferta é um contato de uma interação de entrada. Durante o processamento de chamadas do mecanismo, o contato é associado a um targeting dimension. Contatos anônimos e não identificados são atribuídos ao targeting dimension do visitante. Há dois tipos de contatos, identificados e anônimos:
 
 * **Identified contact**: um contato que foi identificado voluntariamente no canal. Em interações de saída, o contato é identificado automaticamente.
 * **Anonymous contact**: um contato que não tenha assinado voluntariamente por meio do canal, mas pode ser identificado implicitamente por meio de um cookie. Essa terminologia é usada apenas para interações de entrada.
@@ -583,7 +599,7 @@ Saiba mais sobre [Ambientes de design](../../interaction/using/fundamental-princ
 
 *Contexto: Interação de campanha*
 
-Selecionar ofertas que serão exibidas em um ambiente (ofertas elegíveis). O princípio de arbitragem classifica as ofertas por prioridade de acordo com os critérios definidos nas categorias e ofertas.
+O mecanismo de oferta seleciona as ofertas que serão exibidas em um ambiente (ofertas elegíveis). O princípio de arbitragem classifica as ofertas por prioridade de acordo com os critérios definidos nas categorias e ofertas.
 
 Saiba mais sobre [Interação](../../interaction/using/interaction-and-offer-management.md).
 +++
@@ -592,7 +608,7 @@ Saiba mais sobre [Interação](../../interaction/using/interaction-and-offer-man
 
 *Contexto: Interação de campanha*
 
-O processo de exclusão de ofertas que não estão qualificadas para seleção. Executado antes da etapa de arbitragem do mecanismo de oferta.
+A remoção do mecanismo de oferta é o processo de exclusão de ofertas que não estão qualificadas para seleção. Executado antes da etapa de arbitragem do mecanismo de oferta.
 
 Saiba mais sobre [Interação](../../interaction/using/interaction-and-offer-management.md).
 +++
@@ -601,7 +617,7 @@ Saiba mais sobre [Interação](../../interaction/using/interaction-and-offer-man
 
 *Contexto: Interação de campanha*
 
-A pasta raiz que define um catálogo de ofertas, seus espaços disponíveis e os filtros predefinidos do ambiente. Os operadores precisam criar um ambiente para cada targeting dimension. Há dois tipos de ambientes Offer : Design e Live.
+O ambiente de oferta é a pasta raiz que define um catálogo de ofertas, seus espaços disponíveis e os filtros predefinidos do ambiente. Os operadores precisam criar um ambiente para cada targeting dimension. Há dois tipos de ambientes Offer : Design e Live.
 
 Saiba mais sobre [Ambientes](../../interaction/using/fundamental-principles.md).
 +++
@@ -610,27 +626,27 @@ Saiba mais sobre [Ambientes](../../interaction/using/fundamental-principles.md).
 
 *Contexto: Interação de campanha*
 
-Ambiente vinculado a uma campanha **Ambiente de design**. Ele contém ofertas de somente leitura cujo conteúdo e elegibilidade foram aprovados por meio do **Design environment**. Eles podem ser selecionados para apresentação em um site ou para serem inseridos em uma mensagem de saída.
+O ambiente Offer Live está vinculado a uma Campanha **Ambiente de design**. Ele contém ofertas de somente leitura cujo conteúdo e elegibilidade foram aprovados por meio do **Design environment**. Eles podem ser selecionados para apresentação em um site ou para serem inseridos em uma mensagem de saída.
 
 Saiba mais sobre [Ambientes Live](../../interaction/using/fundamental-principles.md).
-+++
-
-+++**Visualização da oferta**
-
-*Contexto: Interação de campanha*
-
-Pré-visualização da oferta como ela é exibida em sua pasta. Também é acessível a partir da guia de pré-visualização da oferta ou do perfil de contato.
-
-Saiba mais sobre [Visualização da oferta](../../interaction/using/creating-an-offer.md#previewing-the-offer).
 +++
 
 +++**Regras de apresentação da oferta**
 
 *Contexto: Interação de campanha*
 
-Regras de tipologia mencionadas no ambiente de oferta, que permitem aos Operadores excluir ofertas específicas levando em conta o histórico de apresentações do recipient.
+As regras de apresentação de ofertas são regras de tipologia mencionadas no ambiente de oferta, que permitem que os Operadores excluam ofertas específicas levando em conta o histórico de apresentações do recipient.
 
 Saiba mais sobre [Regras de apresentação da oferta](../../interaction/using/managing-offer-presentation.md#presentation-rules-overview).
++++
+
++++**Visualização da oferta**
+
+*Contexto: Interação de campanha*
+
+Esta é a pré-visualização da oferta como ela é exibida em sua pasta. Também é acessível a partir da guia de pré-visualização da oferta ou do perfil de contato.
+
+Saiba mais sobre [Visualização da oferta](../../interaction/using/creating-an-offer.md#previewing-the-offer).
 +++
 
 +++**Apresentação da oferta**
@@ -687,18 +703,18 @@ O peso da oferta é baseado em fórmulas que definem precisamente a relevância 
 Saiba mais sobre [Peso da oferta](../../interaction/using/creating-an-offer.md#offer-weight).
 +++
 
-+++**Grupos de operadores**
-
-Os grupos de operadores permitem gerenciar funções para operadores do Campaign. Você define grupos de operadores aos quais atribui direitos e associa os operadores a um ou mais grupos. Isso permite que você reutilize os direitos e torne os perfis de operadores mais consistentes. Também facilita o gerenciamento e a manutenção de perfis.
-
-Saiba mais sobre [Grupos de operadores](../../platform/using/access-management-groups.md).
-+++
-
 +++**Operador**
 
 Um operador é um usuário do Adobe Campaign que tem permissões para fazer o login e executar ações. Os operadores são associados a grupos de operadores e herdam os direitos e privilégios desses grupos. Também é possível atribuir direitos nomeados diretamente aos operadores.
 
 Saiba mais sobre [Operadores](../../platform/using/access-management-operators.md).
++++
+
++++**Grupos de operadores**
+
+Os grupos de operadores permitem gerenciar funções para operadores do Campaign. Você define grupos de operadores aos quais atribui direitos e associa os operadores a um ou mais grupos. Isso permite que você reutilize os direitos e torne os perfis de operadores mais consistentes. Também facilita o gerenciamento e a manutenção de perfis.
+
+Saiba mais sobre [Grupos de operadores](../../platform/using/access-management-groups.md).
 +++
 
 +++**Options**
@@ -774,7 +790,7 @@ Saiba mais sobre [Filtros predefinidos](../../platform/using/creating-filters.md
 +++
 
 <!--
-----DEPREACTED----
+----DEPRECATED----
 +++**Predictive Engagement Scoring**
 
 Predictive engagement scoring predicts the probability of a recipient engaging with a message and the probability of opting out (unsubscribing) within the next seven days after the next email send. The probabilities are further divided into buckets according to the specific risk of disengagement, medium, or low. The model also provides the risk percentile rank for the customers to understand where the rank of a certain customer in relation to others. 
@@ -839,25 +855,25 @@ Saiba mais sobre [Função de renderização](../../interaction/using/creating-o
 +++
 
 <!--
------DID NOT FIND IN DOCS----
+-----DID NOT FIND IN ACC DOCS, ACS?----
 +++**Retargeting campaigns**
 
 Campaigns that re-target the recipients of a previous delivery or deliveries.
 +++
 -->
 
-+++**Extensão de esquema**
-
-A extensão de esquema permite personalizar os esquemas prontos para uso para melhor adequar seus casos de uso da empresa. Por exemplo, é possível adicionar o campo &quot;Fidelidade&quot; à tabela Recipient .
-
-Saiba mais sobre [Extensão de esquema](../../configuration/using/extending-a-schema.md).
-+++
-
 +++**Schema**
 
 Um schema é um documento XML associado a uma tabela de banco de dados. Ele define a estrutura de dados e descreve a definição SQL da tabela. Os operadores manipulam esquemas no Campaign e o produto traduz suas ações no SQL necessário, que é executado no banco de dados.
 
 Saiba mais sobre [Esquemas](../../configuration/using/about-schema-reference.md).
++++
+
++++**Extensão de esquema**
+
+A extensão de esquema permite personalizar os esquemas prontos para uso para melhor atender aos casos de uso da empresa. Por exemplo, é possível adicionar o campo &quot;Fidelidade&quot; à tabela Recipient .
+
+Saiba mais sobre [Extensão de esquema](../../configuration/using/extending-a-schema.md).
 +++
 
 +++**Seed addresses**
@@ -868,6 +884,7 @@ Saiba mais sobre [Seed addresses](../../delivery/using/about-seed-addresses.md).
 +++
 
 <!--
+-------ACS?-----
 +++**Send-time optimization**
 
 To improve the open rate of your messages, you can manually define a sending time per recipient. Each profile will receive the message at the specified date and time, whenever possible. Defining a sending time can be done at the delivery level or using a workflow.
@@ -913,9 +930,9 @@ Os dados do Target são os dados armazenados na tabela de trabalho (transição)
 Saiba mais sobre [Dados do Target](../../workflow/using/data-life-cycle.md#target-data).
 +++
 
-+++**Mapeamento de metas**
++++**Target mapping**
 
-Target Mapping é o mapeamento de canais de delivery para um tipo de dados específico. Os target mappings definem como diferentes canais de delivery se vinculam aos campos de dados de um schema. Ele define como o Campaign envia para esse tipo de dados usando um campo ou expressão específica.
+Target mapping é o mapeamento de canais de delivery para um tipo de dados específico. Os target mappings definem como diferentes canais de delivery se vinculam aos campos de dados de um schema. Ele define como o Campaign envia para esse tipo de dados usando um campo ou expressão específica.
 
 Saiba mais sobre [Mapeamento de metas](../../delivery/using/selecting-a-target-mapping.md).
 +++
@@ -944,7 +961,7 @@ Saiba mais sobre [Atividade da tarefa](../../workflow/using/task.md).
 +++
 
 <!--
------NOT USEFUL-----
+-----NOT USEFUL, detail-----
 +++**Task**
 
 One iteration of the defined functionality of a workflow activity. Each execution of a task has a unique task identifier.   
@@ -960,7 +977,6 @@ Um modelo é um elemento de design usado para criar um objeto. Ele contém confi
 
 <!--
 -----ACS -> SEEDS IN ACC-----
-
 +++**Test profiles**
 
 Allows targeting of additional recipients who do not match the defined targeting criteria. They are added to a message’s audience to detect any fraudulent use of your recipient database or to ensure delivery. Seen as the Seed type in the Campaign interface.
@@ -970,7 +986,7 @@ Learn more about [Test profiles](../../workflow/using/about-workflows.md).
 -->
 
 <!--
------NOT USEFUL?-----
+-----NOT FOR DOCS?-----
 +++**Total database storage**
 
 The aggregate size of the production and non-production instance(s) database storage managed by Adobe. 
@@ -993,6 +1009,7 @@ As mensagens transacionais são um módulo do Campaign projetado para gerenciar 
 Saiba mais sobre [Mensagens transacionais](../../message-center/using/about-transactional-messaging.md).
 +++
 
+<!------- USEFUL HERE??----->
 +++**Campanhas acionadas**
 
 Campanhas acionadas são campanhas que são executadas quando uma solicitação de API é recebida em um workflow. As chamadas de API são consumidas por uma atividade Signal no workflow que inicia a execução do workflow.
@@ -1010,22 +1027,22 @@ Learn more about [Triggers](../../workflow/using/about-workflows.md).
 +++
 -->
 
-+++**Regra de tipologia**
-
-*Contexto: Otimização de campanha*
-
-As regras de tipologia são regras de negócios que são implementadas como parte da fase de análise do delivery. As regras de tipologia são verificações do conteúdo do delivery (Regras de controle) ou do target do delivery (Regras de filtragem) ou de outra lógica (Regras de pressão) que impõem requisitos comerciais. As regras são elementos granulares que podem ser incluídos em uma ou mais Tipologias.
-
-Saiba mais sobre [Regras de tipologia](../../campaign-opt/using/about-campaign-typologies.md#typology-rules).
-+++
-
 +++**Tipologia**
 
 *Contexto: Otimização de campanha*
 
-Uma tipologia é um agrupamento das Regras de tipologia aplicadas à fase de análise de um delivery. Uma tipologia de campanha pode conter várias regras de tipologia, mas uma entrega só pode fazer referência a uma tipologia.
+Uma tipologia é um agrupamento de regras de tipologia aplicadas à fase de análise de um delivery. Uma tipologia de campanha pode conter várias regras de tipologia, mas uma entrega só pode fazer referência a uma tipologia.
 
 Saiba mais sobre [Tipologias](../../campaign-opt/using/about-campaign-typologies.md#typologies).
++++
+
++++**Regra de tipologia**
+
+*Contexto: Otimização de campanha*
+
+As regras de tipologia são regras de negócios que são implementadas como parte da fase de análise do delivery. As regras de tipologia são verificações do conteúdo do delivery (regras de controle) ou do target do delivery (regras de filtragem) ou de outra lógica (regras de pressão) que impõem requisitos comerciais. As regras são elementos granulares que podem ser incluídos em uma ou mais tipologias.
+
+Saiba mais sobre [Regras de tipologia](../../campaign-opt/using/about-campaign-typologies.md#typology-rules).
 +++
 
 ## U - Z {#sec-6}
@@ -1056,18 +1073,18 @@ Os aplicativos web são páginas de aplicativos dinâmicos e interativos hospeda
 Saiba mais sobre [Aplicações web](../../web/using/about-web-applications.md).
 +++
 
-+++**Diário de Fluxo de Trabalho**
-
-O journal de workflow é o log de execução passo a passo de um workflow. Ele contém todo o histórico ou trilha de auditoria do workflow. Ele é usado para fins de desenvolvimento, solução de problemas ou depuração.
-
-Saiba mais sobre [Diário de Fluxo de Trabalho](../../workflow/using/monitoring-workflow-execution.md).
-+++
-
 +++**Workflow**
 
 Um workflow é uma representação visual do fluxo de execução da campanha. Ele permite orquestrar a gama completa de processos e tarefas em diferentes módulos do servidor de aplicativos. Esse ambiente gráfico abrangente permite criar processos, inclusive segmentação, execução de campanha, processamento de arquivos, participação humana, etc. O mecanismo de workflow executa e rastreia esses processos.
 
 Saiba mais sobre [Fluxos de trabalho](../../workflow/using/about-workflows.md).
++++
+
++++**Diário de Fluxo de Trabalho**
+
+O journal de workflow é o log de execução passo a passo de um workflow. Ele contém todo o histórico ou trilha de auditoria do workflow. Ele é usado para fins de desenvolvimento, solução de problemas ou depuração.
+
+Saiba mais sobre [Diário de Fluxo de Trabalho](../../workflow/using/monitoring-workflow-execution.md).
 +++
 
 +++**Worktable**
