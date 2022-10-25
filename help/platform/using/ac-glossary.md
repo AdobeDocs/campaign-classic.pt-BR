@@ -6,9 +6,9 @@ role: User, Data Architect
 level: Beginner
 hide: true
 hidefromtoc: true
-source-git-commit: 891418c4120793cf296a65f7aed86e71925a0d66
+source-git-commit: cd26bf082d891e55bce489256dd9d43a1e3f243c
 workflow-type: tm+mt
-source-wordcount: '6454'
+source-wordcount: '6453'
 ht-degree: 12%
 
 ---
@@ -782,7 +782,7 @@ Saiba mais sobre [Chave primária](../../configuration/using/schema/key.md).
 
 Um perfil é um registro de informações que representam um cliente final, um prospecto ou um cliente potencial. Cada perfil corresponde a um registro na tabela nmsRecipient ou uma tabela externa contendo a ID do cookie, a ID do cliente, o identificador móvel ou outras informações relevantes para um canal específico.
 
-Saiba mais sobre [Perfis](../../platforrm/using/about-profiles.md).
+Saiba mais sobre [Perfis](../../platform/using/about-profiles.md).
 +++
 
 +++**Programa**
@@ -1018,7 +1018,7 @@ Saiba mais sobre [Tipologias](../../campaign-opt/using/about-campaign-typologies
 
 *Contexto: Interação de campanha, mensagens transacionais*
 
-No modo unitário são, um único contato é processado pelo mecanismo de oferta no tempo de execução. Esse modo geralmente é usado para interações de entrada e mensagens transacionais.
+No modo unitário, um único contato é processado pelo mecanismo de oferta no tempo de execução. Esse modo geralmente é usado para interações de entrada e mensagens transacionais.
 
 Saiba mais sobre [Modo Unitário](../../interaction/using/about-inbound-channels.md).
 +++
