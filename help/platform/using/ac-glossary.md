@@ -6,9 +6,9 @@ role: User, Data Architect
 level: Beginner
 hide: true
 hidefromtoc: true
-source-git-commit: dea815b07f0b91ed550060fa00cf0501ae6594f7
+source-git-commit: 9900fb627dfb310e8f34735a502997ef8e24e769
 workflow-type: tm+mt
-source-wordcount: '6087'
+source-wordcount: '5993'
 ht-degree: 12%
 
 ---
@@ -140,14 +140,14 @@ Saiba mais sobre [Aprovação de conteúdo](../../campaign/using/marketing-campa
 
 Use grupos de controle para medir o impacto de suas campanhas excluindo parte de seus públicos. Os operadores podem comparar o comportamento da população do target que recebeu a mensagem com o comportamento dos contatos que não foram direcionados. Com base nos logs de envio, os Operadores também podem direcionar um grupo de controle em campanhas futuras.
 
-Saiba mais sobre [Aprovação de conteúdo](../../campaign/using/marketing-campaign-target.md#defining-a-control-group).
+Saiba mais sobre [Grupos de conteúdo](../../campaign/using/marketing-campaign-target.md#defining-a-control-group).
 +++
 
 +++**Painel de controle do Campaign**
 
-O Painel de controle do Campaign ajuda a aumentar a eficiência do seu trabalho como administrador de produtos do Adobe Campaign, permitindo gerenciar configurações e rastrear o uso de cada uma de suas instâncias. Sua interface intuitiva permite monitorar facilmente o uso dos principais ativos, além de realizar tarefas administrativas, como adicionar lista de permissão de endereços IP, monitoramento de armazenamentos SFTP, gerenciamento de chaves e muito mais.
+O Painel de controle do Campaign ajuda os administradores de produtos da Adobe Campaign a aumentar a eficiência em seu trabalho, permitindo que eles gerenciem configurações e rastreiem o uso de cada uma de suas instâncias. Sua interface intuitiva permite monitorar facilmente o uso dos principais ativos, além de realizar tarefas administrativas, como adição de lista de permissões de endereços IP, monitoramento de armazenamento SFTP, gerenciamento de chaves e muito mais.
 
-Saiba mais sobre [Aprovação de conteúdo](https://experienceleague.adobe.com/docs/control-panel/using/discover-control-panel/key-features.html?lang=pt-BR).
+Saiba mais sobre [Painel Conteúdo](https://experienceleague.adobe.com/docs/control-panel/using/discover-control-panel/key-features.html?lang=pt-BR).
 +++
 
 +++**Cubos**
@@ -170,7 +170,7 @@ Saiba mais sobre [Recursos personalizados](../../configuration/using/about-schem
 
 O modelo de dados da campanha é um conjunto de schemas que definem os tipos de dados e seus relacionamentos (links). O modelo de dados é uma definição abstrata que é implementada fisicamente com um banco de dados que contém os dados reais.
 
-Saiba mais sobre [Recursos personalizados](../../configuration/using/about-data-model.md).
+Saiba mais sobre [Modelo de dados](../../configuration/using/about-data-model.md).
 +++
 
 +++**Workflow de limpeza do banco de dados**
@@ -261,7 +261,7 @@ Saiba mais sobre [Análise descritiva](../../reporting/using/about-descriptive-a
 
 *Contexto: Marketing distribuído*
 
-O complemento Marketing distribuído oferece aos operadores do Campaign um espaço de trabalho colaborativo para implementar campanhas entre entidades centrais (sede, departamentos de marketing etc.) e entidades locais (pontos de vendas, agências regionais etc.). Essa cooperação é baseada em um espaço de trabalho compartilhado conhecido como **lista de pacotes do Campaign**, em que templates de campanha e instâncias criadas centralmente são oferecidos a entidades locais.
+O complemento Marketing distribuído oferece aos Operadores de campanha um espaço de trabalho colaborativo para implementar campanhas entre entidades centrais (sede, departamentos de marketing etc.) e entidades locais (pontos de vendas, agências regionais etc.). Essa cooperação é baseada em um espaço de trabalho compartilhado conhecido como **lista de pacotes do Campaign**, em que templates de campanha e instâncias criadas centralmente são oferecidos a entidades locais.
 
 Saiba mais sobre [Marketing distribuído](../../distributed/using/about-distributed-marketing.md)
 +++
@@ -270,7 +270,7 @@ Saiba mais sobre [Marketing distribuído](../../distributed/using/about-distribu
 
 A Distribution of values é uma ferramenta que mostra a distribuição dos valores de um atributo de schema que existe atualmente no banco de dados. Isso ajuda a determinar quais valores estão disponíveis, suas contagens e porcentagens e evitar problemas com capitalização e ortografia de valores ao criar uma consulta ou expressão.
 
-Saiba mais sobre [Marketing distribuído](../../platform/using/defining-filter-conditions.md#selecting-data-to-extract)
+Saiba mais sobre [Distribuição de valores](../../platform/using/defining-filter-conditions.md#selecting-data-to-extract)
 +++
 
 +++**Delegação de domínio**
@@ -492,7 +492,7 @@ Saiba mais sobre [Configurações de instância](../../installation/using/about-
 
 Os trabalhos são gerenciados por um sistema de assistente que simplifica a importação e exportação de dados para dentro e para fora do produto. As tarefas usam o sistema de modelos para simplicidade e consistência e podem ser definidas para execução de acordo com uma programação.
 
-Saiba mais sobre [Importar e exportar trabalhos](../../platform/using/get-started-data-import-export.md).
+Saiba mais sobre [importar e exportar trabalhos](../../platform/using/get-started-data-import-export.md).
 +++
 
 +++**Listas**
@@ -542,12 +542,15 @@ O namespace é uma partição que separa os tipos de dados do cliente dos tipos 
 Saiba mais sobre [Namespace](../../configuration/using/about-schema-reference.md#identification-of-a-schema).
 +++
 
-+++**Barra de navegação**
+<!--
+----generic, not specific to campaign----
++++**Navigation bar**
 
-A barra de navegação é o elemento de navegação que está sendo executado na parte superior da interface. A barra de navegação reagrupa os vários recursos principais da plataforma. Clique em um link da barra de navegação para exibir o conjunto de funcionalidades relacionadas a esse recurso. A lista de recursos principais que você pode acessar depende dos pacotes e dos complementos instalados e dos seus direitos de acesso. O objetivo da barra de navegação é simplificar o gerenciamento de tela e aumentar a produtividade.
+The navigation bar is the navigation element running across the top of the interface. The navigation bar regroups the various core capabilities of the platform. Click a navigation bar link to display the set of functionalities related to this capability. The list of core capabilities you can access depends on the packages and add-ons you have installed and on your access rights. The purpose of the Navigation bar is to simplify screen management and increase productivity.
 
-Saiba mais sobre [Barra de navegação](../../platform/using/adobe-campaign-workspace.md#browsing-pages).
+Learn more about [Navigation Bar](../../platform/using/adobe-campaign-workspace.md#browsing-pages).
 +++
+-->
 
 +++**Árvore de navegação**
 
@@ -592,7 +595,7 @@ Saiba mais sobre [Interação](../../interaction/using/interaction-and-offer-man
 
 A oferta **Ambiente de design** é o ambiente no qual os operadores criam ofertas, definem regras de tipologia e selecionam o schema que será direcionado pelas ofertas. A tabela para armazenar apresentações de oferta geradas também é definida pelo ambiente . Por padrão, o complemento Interaction vem com uma **Design** ambiente e **Ao vivo** ambiente vinculado a ele. Ambos os ambientes são pré-configurados para ter como alvo a tabela de recipients integrada.
 
-Saiba mais sobre [Ambientes de design](../../interaction/using/fundamental-principles.md).
+Saiba mais sobre [Ambientes de Design da oferta](../../interaction/using/fundamental-principles.md).
 +++
 
 +++**Arbitragem do mecanismo de oferta**
@@ -619,7 +622,7 @@ Saiba mais sobre [Interação](../../interaction/using/interaction-and-offer-man
 
 O ambiente de oferta é a pasta raiz que define um catálogo de ofertas, seus espaços disponíveis e os filtros predefinidos do ambiente. Os operadores precisam criar um ambiente para cada targeting dimension. Há dois tipos de ambientes Offer : Design e Live.
 
-Saiba mais sobre [Ambientes](../../interaction/using/fundamental-principles.md).
+Saiba mais sobre [Ambientes de oferta](../../interaction/using/fundamental-principles.md).
 +++
 
 +++**Ambiente Offer Live**
@@ -628,7 +631,7 @@ Saiba mais sobre [Ambientes](../../interaction/using/fundamental-principles.md).
 
 O ambiente Offer Live está vinculado a uma Campanha **Ambiente de design**. Ele contém ofertas de somente leitura cujo conteúdo e elegibilidade foram aprovados por meio do **Design environment**. Eles podem ser selecionados para apresentação em um site ou para serem inseridos em uma mensagem de saída.
 
-Saiba mais sobre [Ambientes Live](../../interaction/using/fundamental-principles.md).
+Saiba mais sobre [Oferecer ambientes Live](../../interaction/using/fundamental-principles.md).
 +++
 
 +++**Regras de apresentação da oferta**
@@ -662,7 +665,7 @@ Saiba mais sobre [Apresentações da oferta](../../interaction/using/creating-of
 
 *Contexto: Interação de campanha*
 
-Uma apresentação de oferta é o resultado da ação que consiste em apresentar uma oferta a um contato em um determinado espaço de oferta, por exemplo, o banner em um site, um conteúdo de email ou SMS. Esse resultado é armazenado na tabela de propostas de oferta que define a oferta, o recipient e o carimbo de data e hora, fornecendo um registro de todas as ofertas que um recipient recebeu.
+Uma representação da oferta é a informação usada pelo canal para exibir a oferta. A representação da oferta pode ser construída a partir da função de renderização do espaço em que a oferta é representada ou inserida diretamente na interface (por exemplo, no bloco HTML). Uma oferta pode ser representada por um espaço.
 
 Saiba mais sobre [Interação](../../interaction/using/interaction-and-offer-management.md).
 +++
@@ -682,7 +685,7 @@ Saiba mais sobre [Simulações de oferta](../../interaction/using/about-offers-s
 
 Um espaço de oferta é uma pasta que define o local onde a oferta é exposta. A definição de um espaço permite especificar o canal usado, criar o conteúdo da oferta e especificar as ofertas apresentadas. O espaço de oferta é a interface entre o canal e o mecanismo de oferta.
 
-Saiba mais sobre [Simulações de oferta](../../interaction/using/creating-offer-spaces.md).
+Saiba mais sobre [Espaço de ofertas](../../interaction/using/creating-offer-spaces.md).
 +++
 
 +++**Temas da oferta**
@@ -927,14 +930,14 @@ Saiba mais sobre [Aprovação do target](../../workflow/using/local-approval.md)
 
 Os dados do Target são os dados armazenados na tabela de trabalho (transição) de um workflow. Esses dados estão disponíveis no delivery para personalização do conteúdo do delivery ou para definir a lógica de elementos dinâmicos do delivery.
 
-Saiba mais sobre [Dados do Target](../../workflow/using/data-life-cycle.md#target-data).
+Saiba mais sobre [Dados do target](../../workflow/using/data-life-cycle.md#target-data).
 +++
 
 +++**Target mapping**
 
 Target mapping é o mapeamento de canais de delivery para um tipo de dados específico. Os target mappings definem como diferentes canais de delivery se vinculam aos campos de dados de um schema. Ele define como o Campaign envia para esse tipo de dados usando um campo ou expressão específica.
 
-Saiba mais sobre [Mapeamento de metas](../../delivery/using/selecting-a-target-mapping.md).
+Saiba mais sobre [Target mapping](../../delivery/using/selecting-a-target-mapping.md).
 +++
 
 +++**Atividades de direcionamento**
