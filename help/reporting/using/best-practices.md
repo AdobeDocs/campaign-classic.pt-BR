@@ -4,8 +4,8 @@ title: Práticas recomendadas para relatórios
 description: Práticas recomendadas para relatórios do Campaign
 feature: Reporting
 exl-id: 0c7f00f3-b16d-41c5-a7b1-f5a59201bf8c
-source-git-commit: 81716a30a57d3ed8542b329d5fb9b0443fd4bf31
-workflow-type: ht
+source-git-commit: 1635366b9e1302acd3d8997312bf07d5c1a68982
+workflow-type: tm+mt
 source-wordcount: '841'
 ht-degree: 100%
 
@@ -29,13 +29,13 @@ Para otimizar a criação, o uso e a durabilidade de um relatório, é preciso o
 
    Por exemplo, é possível:
 
-   * Explore os dados no banco de dados e defina medidas. Saiba mais [nesta seção](../../reporting/using/about-cubes.md)
+   * Explore os dados no banco de dados e defina medidas. Saiba mais [nesta seção](../../reporting/using/ac-cubes.md)
    * Adicionar indicadores a um relatório existente. Saiba mais [nesta seção](../../reporting/using/about-reports-creation-in-campaign.md)
    * Visualização dos dados no banco de dados. Saiba mais [nesta seção](../../reporting/using/about-descriptive-analysis.md)
    * Criação de novo relatório do delivery. Saiba mais [nesta seção](../../reporting/using/about-reports-creation-in-campaign.md)),
    * Exportar dados do banco de dados do Adobe Campaign (por meio de um workflow, consulte [esta seção](../../workflow/using/about-workflows.md)
    * Crie uma tabela dinâmica. Saiba mais [nesta seção](../../reporting/using/creating-a-table.md#creating-a-breakdown-or-pivot-table)
-   * Explore dados agregados. Saiba mais [nesta seção](../../reporting/using/about-cubes.md)
+   * Explore dados agregados. Saiba mais [nesta seção](../../reporting/using/ac-cubes.md)
    * Use um assistente para analisar dados. Saiba mais [nesta seção](../../reporting/using/about-descriptive-analysis.md)
    * Analise grandes volumes de dados. Saiba mais [nesta seção](../../reporting/using/about-reports-creation-in-campaign.md)
 

@@ -1,11 +1,11 @@
 ---
 product: campaign
-title: '"Caso de uso: exibir relatório sobre as respostas a uma pesquisa online"'
-description: '"Caso de uso: exibir relatório sobre as respostas a uma pesquisa online"'
+title: "Caso de uso: exibir relatório sobre as respostas a uma pesquisa online"
+description: "Caso de uso: exibir relatório sobre as respostas a uma pesquisa online"
 feature: Reporting, Surveys
 exl-id: 6be12518-86d1-4a13-bbc2-b2ec5141b505
-source-git-commit: 81716a30a57d3ed8542b329d5fb9b0443fd4bf31
-workflow-type: ht
+source-git-commit: 1635366b9e1302acd3d8997312bf07d5c1a68982
+workflow-type: tm+mt
 source-wordcount: '475'
 ht-degree: 100%
 
@@ -65,7 +65,7 @@ Para coletar as respostas da pesquisa, siga as etapas abaixo:
 
 ## Etapa 2 — criação do cubo, suas medidas e seus indicadores {#step-2---creating-the-cube--its-measures-and-its-indicators}
 
-É possível então criar o cubo e configurar suas medidas: elas serão usados para criar os indicadores que serão mostrados no relatório. Para obter mais informações sobre a criação e configuração de cubos, consulte [Sobre os cubos](../../reporting/using/about-cubes.md).
+É possível então criar o cubo e configurar suas medidas: elas serão usados para criar os indicadores que serão mostrados no relatório. Para obter mais informações sobre a criação e configuração de cubos, consulte [Sobre os cubos](../../reporting/using/ac-cubes.md).
 
 Neste exemplo, o cubo se baseia nos dados da lista alimentados pelo workflow criado anteriormente.
 

@@ -4,7 +4,7 @@ title: Glossário do Adobe Campaign
 description: Glossário do Adobe Campaign
 role: User, Data Architect
 level: Beginner
-source-git-commit: 3a540b59640d4cf128417f751d0076fd97310768
+source-git-commit: 1635366b9e1302acd3d8997312bf07d5c1a68982
 workflow-type: tm+mt
 source-wordcount: '6041'
 ht-degree: 12%
@@ -154,7 +154,7 @@ Saiba mais sobre [Painel de controle do Campaign](https://experienceleague.adobe
 
 Cubo é uma ferramenta de exploração de dados intuitiva da Adobe Campaign que ajuda os usuários a criar e compartilhar relatórios dinâmicos.
 
-Saiba mais sobre [Cubos](../../reporting/using/about-cubes.md).
+Saiba mais sobre [Cubos](../../reporting/using/ac-cubes.md).
 +++
 
 +++**Recursos personalizados**

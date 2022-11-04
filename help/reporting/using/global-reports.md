@@ -4,8 +4,8 @@ title: Relatórios globais
 description: Relatórios globais
 feature: Reporting, Monitoring
 exl-id: 6839fd7e-ecf4-4504-90a8-0207bc3991e4
-source-git-commit: 294309239bc476669e9e017c27bd1b51a0bdaf8c
-workflow-type: ht
+source-git-commit: 1635366b9e1302acd3d8997312bf07d5c1a68982
+workflow-type: tm+mt
 source-wordcount: '2295'
 ht-degree: 100%
 
@@ -125,7 +125,7 @@ Você pode abrir cada linha da tabela de valores clicando no símbolo [[+]]. Par
 
 >[!NOTE]
 >
->Os nomes de domínio exibidos nesse relatório são definidos em nível de cubo. Para alterar esses valores, edite o cubo **[!UICONTROL Delivery logs (broadlogrcp)]**. Para obter mais informações, consulte [esta seção](../../reporting/using/about-cubes.md). A categoria **[!UICONTROL Others]** inclui nomes de domínio que não pertencem a uma classe específica.
+>Os nomes de domínio exibidos nesse relatório são definidos em nível de cubo. Para alterar esses valores, edite o cubo **[!UICONTROL Delivery logs (broadlogrcp)]**. Para obter mais informações, consulte [esta seção](../../reporting/using/ac-cubes.md). A categoria **[!UICONTROL Others]** inclui nomes de domínio que não pertencem a uma classe específica.
 
 ## Navegadores {#browsers}
 

@@ -3,10 +3,10 @@ product: campaign
 title: Instale os pacotes integrados do Campaign Classic
 description: Saiba como instalar pacotes incorporados do Campaign
 exl-id: 2bc077c4-ed65-4157-bfc9-df5d0442f476
-source-git-commit: c54102b2ec32fbea89ce41dd3c9fedb98e612996
+source-git-commit: 1635366b9e1302acd3d8997312bf07d5c1a68982
 workflow-type: tm+mt
 source-wordcount: '1254'
-ht-degree: 14%
+ht-degree: 22%
 
 ---
 
@@ -145,7 +145,7 @@ A tabela a seguir lista todos os pacotes incorporados do Campaign.
   </tr> 
   <tr> 
    <td> Análise de marketing<br /> </td> 
-   <td> Permite analisar e medir dados, calcular estatísticas, simplificar e otimizar a criação e o cálculo do relatório. Além disso, você pode criar relatórios e populações do target. Opcional. <a href="../../reporting/using/about-cubes.md">Saiba mais</a><br /> </td> 
+   <td> Permite analisar e medir dados, calcular estatísticas, simplificar e otimizar a criação e o cálculo do relatório. Além disso, você pode criar relatórios e populações do target. Opcional. <a href="../../reporting/using/ac-cubes.md">Saiba mais</a><br /> </td> 
    <td> Marketing<br /> </td> 
   </tr> 
   <tr> 
@@ -180,7 +180,7 @@ A tabela a seguir lista todos os pacotes incorporados do Campaign.
   </tr> 
   <tr> 
    <td> Marketing central/local (Marketing distribuído)<br /> </td> 
-   <td> Implementa campanhas cooperativas entre entidades centrais (sede, departamentos de marketing etc.) e entidades locais (pontos de vendas, agências regionais, etc.). Opcional. <a href="../../distributed/using/about-distributed-marketing.md">Saiba mais</a><br /> </td> 
+   <td> Implementa campanhas cooperativas entre entidades centrais (sede, departamentos de marketing etc.) e entidades locais (pontos de vendas, agências regionais etc.). Opcional. <a href="../../distributed/using/about-distributed-marketing.md">Saiba mais</a><br /> </td> 
    <td> Marketing </td> 
   </tr> 
   <tr> 

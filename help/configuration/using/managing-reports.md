@@ -3,7 +3,7 @@ product: campaign
 title: Gerenciar relatórios
 description: Gerenciar relatórios
 exl-id: 68908664-3cf6-4a6c-a327-c7f059c27aa3
-source-git-commit: 3997412f14666fa61bf71d0f0a0653f5cc042e19
+source-git-commit: 1635366b9e1302acd3d8997312bf07d5c1a68982
 workflow-type: tm+mt
 source-wordcount: '144'
 ht-degree: 4%
@@ -18,7 +18,7 @@ Os relatórios baseados em um schema específico para os recipients padrão do A
 
 Para criar novos relatórios, consulte [esta seção](../../reporting/using/about-reports-creation-in-campaign.md).
 
-Em alguns casos, você também deve colocar novos cubos específicos para essas tabelas em vigor. Os cubos são detalhados em [esta seção](../../reporting/using/about-cubes.md).
+Em alguns casos, você também deve colocar novos cubos específicos para essas tabelas em vigor. Os cubos são detalhados em [esta seção](../../reporting/using/ac-cubes.md).
 
 Os seguintes relatórios estão relacionados:
 

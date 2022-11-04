@@ -4,8 +4,8 @@ title: Criar uma tabela
 description: Criar uma tabela
 feature: Reporting
 exl-id: 05f76bdf-6dcd-4360-9e72-0ba6a4dd0d5e
-source-git-commit: 36e546a34d8c2345fefed5d459095a76c6224a38
-workflow-type: ht
+source-git-commit: 1635366b9e1302acd3d8997312bf07d5c1a68982
+workflow-type: tm+mt
 source-wordcount: '2495'
 ht-degree: 100%
 
@@ -464,4 +464,4 @@ Esse tipo de tabela permite exibir estatísticas calculadas dos dados do banco d
 
 A configuração desses tipos de relatórios é semelhante à utilizada para o assistente de análise descritiva. Para obter mais informações, consulte [esta página](../../reporting/using/using-the-descriptive-analysis-wizard.md#configuring-the-quantitative-distribution-template).
 
-Para obter mais informações sobre criação de uma tabela dinâmica, consulte [esta seção](../../reporting/using/using-cubes-to-explore-data.md).
+Para obter mais informações sobre criação de uma tabela dinâmica, consulte [esta seção](../../reporting/using/ac-cubes.md).
