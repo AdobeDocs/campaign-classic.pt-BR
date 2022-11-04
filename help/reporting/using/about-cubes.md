@@ -1,12 +1,14 @@
 ---
 product: campaign
-title: Introdução aos cubos
+title: Sobre cubos
 description: Introdução aos cubos
 feature: Reporting
+hide: true
+hidefromtoc: true
 exl-id: ade4c857-9233-4bc8-9ba1-2fec84b7c3e6
-source-git-commit: 81716a30a57d3ed8542b329d5fb9b0443fd4bf31
-workflow-type: ht
-source-wordcount: '728'
+source-git-commit: 2665ea2ba67a0ca2a4beb0b076543b3245acbebb
+workflow-type: tm+mt
+source-wordcount: '397'
 ht-degree: 100%
 
 ---
@@ -14,40 +16,6 @@ ht-degree: 100%
 # Introdução aos cubos{#about-cubes}
 
 ![](../../assets/common.svg)
-
-A exploração de dados no banco de dados é oferecida pelo módulo **Marketing Analytics.** Ele permite analisar e medir dados, calcular estatísticas, simplificar e otimizar a criação e o cálculo do relatório. Além disso, o Marketing Analytics permite criar relatórios e populações do target. Uma vez identificados, eles são armazenados em listas que podem ser usadas no Adobe Campaign (targeting, segmentação, etc.).
-
-Os cubos são usados para gerar determinados relatórios internos, incluindo relatórios do delivery (rastreamento de delivery, cliques, aberturas, etc.). Os relatórios baseados em cubos só podem ser usados como padrão para volumes de dados em 5 milhões de linhas de fatos.
-
-É possível ampliar o recursos de exploração e análise do banco de dados e, ao mesmo tempo, facilitar para os usuários finais a configuração de relatórios e tabelas: basta selecionar um cubo existente (totalmente configurado) ao criar os relatórios ou as tabelas para processar cálculos, medidas e estatísticas.
-
-Depois que tiverem sido criados e configurados, os cubos serão usados em caixas de query de relatório e aplicação web. Eles podem ser utilizados e manipulados dentro de tabelas dinâmicas.
-
->[!CAUTION]
->
->O **Marketing Analytics** é um módulo do Adobe Campaign. Ele precisa ser instalado na sua instância de forma que você possa utilizar os recursos descritos abaixo.
-
-Use o módulo Marketing Analytics do Campaign para:
-
-1. Criar cubos, 
-
-   * agregar e armazenar dados em uma tabela de trabalho para pré-calcular indicadores com base nas necessidades do usuário, 
-   * reduzir o volume de dados envolvidos nos vários cálculos usados para relatórios e consultas, otimizando significativamente os tempos de cálculo do indicador, 
-   * simplificar o acesso aos dados e permitir que os usuários manipulem dados (sejam pré-agregados ou não) que dependem de várias dimensões.
-
-   Para obter mais informações, consulte [Criar indicadores](../../reporting/using/creating-indicators.md).
-
-1. Criar tabelas dinâmicas, 
-
-   * explorar dados calculados e medidas configuradas, 
-   * selecionar os dados a serem exibidos, bem como o seu modo de exibição, 
-   * personalizar as medidas e os indicadores usados, 
-   * e oferecer ferramentas de análise interativa a usuários sem conhecimento técnico.
-
-   Para saber mais, consulte [Usar cubos para explorar dados](../../reporting/using/using-cubes-to-explore-data.md).
-
-1. Criar um query usando dados calculados e agregados em um cubo.
-1. Identificar populações e referenciá-las em listas.
 
 ## Terminologia {#terminology}
 
