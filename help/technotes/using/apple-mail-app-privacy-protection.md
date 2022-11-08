@@ -3,10 +3,10 @@ product: campaign
 title: Proteção da privacidade de email no aplicativo de email do Apple
 description: Saiba como suas campanhas podem ser afetadas pelo recurso Apple Mail Privacy Protection
 exl-id: e044b35a-b49f-408a-900d-2afe8ff10212
-source-git-commit: 1a9e0f8bf374e10af938d15dcebe943819ae327b
+source-git-commit: 43d9eac2ed161465ca00ee4f511e4c020b4c44a2
 workflow-type: tm+mt
-source-wordcount: '2100'
-ht-degree: 2%
+source-wordcount: '2068'
+ht-degree: 1%
 
 ---
 
@@ -20,7 +20,7 @@ Em 2021, a Apple apresentou novos recursos de proteção de privacidade para seu
 
 ## Como minhas campanhas são afetadas?
 
-O Adobe Campaign fornece a capacidade de usar pixels de rastreamento para rastrear aberturas de email. Você pode usar esse recurso não apenas para campanhas e definição de metas, mas também para métricas. Por exemplo, você pode usar taxas de abertura de email para medir a eficácia da campanha e o envolvimento do usuário. Resumindo, a segmentação, o direcionamento e as métricas podem ser afetados em suas campanhas. [Leia mais](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/additional-resources/technotes/apple-mail-privacy-faq.html#in-addition-to-measuring-opens%2C-what-else-is-impacted%3F){target=&quot;_blank&quot;}.
+O Adobe Campaign fornece a capacidade de usar pixels de rastreamento para rastrear aberturas de email. Você pode usar esse recurso não apenas para campanhas e definição de metas, mas também para métricas. Por exemplo, você pode usar taxas de abertura de email para medir a eficácia da campanha e o envolvimento do usuário. Resumindo, a segmentação, o direcionamento e as métricas podem ser afetados em suas campanhas.
 
 ## Que ações devo tomar?
 
@@ -450,7 +450,3 @@ Estes exemplos mostram como você pode usar workflows para analisar registros po
    Esse tipo de workflow é útil se você armazenar recipients em uma tabela diferente da tabela de recipients prontos para uso.
 
    ![](assets/export-tracking-data-wkf-2.png)
-
-## Links úteis
-
-[Perguntas frequentes sobre a proteção da privacidade do Apple Mail](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/additional-resources/technotes/apple-mail-privacy-faq.html){target=&quot;_blank&quot;}
