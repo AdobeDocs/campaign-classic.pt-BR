@@ -7,9 +7,9 @@ content-type: reference
 topic-tags: general-operation
 exl-id: b13ecfc9-1723-42b2-ab30-d5637cc3d0dd
 source-git-commit: c929557ee9f5467f9c3b8eb1ed25fae5399820ba
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '338'
-ht-degree: 93%
+ht-degree: 100%
 
 ---
 
@@ -35,7 +35,7 @@ Uma oferta só é implantada nos espaços de oferta selecionados durante o proce
 
 ## Tipos de interação e métodos de contato {#interaction-types-and-contact-methods}
 
-Há dois tipos possíveis de interações: interações de entrada (iniciadas por um contato) e interações de saída (iniciadas pelo designer de ofertas).
+Há dois tipos possíveis de interações: interações de entrada (iniciadas por um contato) e interações de saída (iniciadas pelo designer da oferta).
 
 Esses dois tipos de interações podem ser realizadas no modo unitário (a oferta é calculada para um único contato), ou em modo de lote (a oferta é calculada para um conjunto de contatos). Geralmente, as interações de entrada são realizadas no modo unitário e as interações de saída são executadas em modo de lote. No entanto, pode haver certas exceções, como mensagens transacionais, por exemplo, pois a interação de saída é executada no modo unitário (consulte [esta seção](../../message-center/using/about-transactional-messaging.md)).
 
