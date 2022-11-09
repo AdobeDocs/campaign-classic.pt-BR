@@ -5,8 +5,8 @@ description: Práticas recomendadas para relatórios do Campaign
 feature: Reporting
 exl-id: 0c7f00f3-b16d-41c5-a7b1-f5a59201bf8c
 source-git-commit: 1635366b9e1302acd3d8997312bf07d5c1a68982
-workflow-type: tm+mt
-source-wordcount: '841'
+workflow-type: ht
+source-wordcount: '0'
 ht-degree: 100%
 
 ---
