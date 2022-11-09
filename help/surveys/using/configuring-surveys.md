@@ -4,8 +4,8 @@ title: Configurar pesquisas online
 description: Saiba como configurar pesquisas online
 feature: Surveys
 exl-id: 387bc362-4064-4181-9385-8e0c3423ba3e
-source-git-commit: 36e546a34d8c2345fefed5d459095a76c6224a38
-workflow-type: ht
+source-git-commit: 1f80c9967f4859f26dd2890d657f95ada6cf2087
+workflow-type: tm+mt
 source-wordcount: '118'
 ht-degree: 100%
 
@@ -13,7 +13,7 @@ ht-degree: 100%
 
 # Configurar pesquisas online{#configuring-surveys}
 
-![](../../assets/v7-only.svg)
+![](../../assets/common.svg)
 
 ## Propriedades da pesquisa {#survey-properties}
 
