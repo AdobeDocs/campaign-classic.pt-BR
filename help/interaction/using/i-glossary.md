@@ -7,9 +7,9 @@ content-type: reference
 topic-tags: interaction-overview
 exl-id: 9e199b7c-9307-4797-bf86-7940388555bc
 source-git-commit: d42389add06db74c54cb3a21813e9a832a2a288a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1103'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -21,7 +21,7 @@ Abaixo está a definição dos elementos principais de interação.
 
 * **Ambiente**: conjunto que inclui um catálogo de oferta e ganchos (espaços de ofertas). Você precisa criar um ambiente por targeting dimension. Há dois tipos de ambientes:
 
-   * **Ambiente de design**: o ambiente no qual as ofertas são criadas e/ou regras de tipologia são definidas (regras que determinarão as ofertas para apresentar ou não a uma pessoa alvo). A tabela de indivíduos que serão alvos das ofertas e a tabela para armazenar todas as propostas de oferta também são definidas aqui. O nó **[!UICONTROL Design environment]** contém subpastas de espaço de ofertas, filtros predefinidos e categorias de ofertas. Para cada **[!UICONTROL Design environment]** existe um **[!UICONTROL Live environment]** somente leitura correspondente, gerado a partir desse mesmo **[!UICONTROL Design environment]**.
+   * **Ambiente de design**: o ambiente no qual as ofertas são criadas e/ou regras de tipologia são definidas (regras que determinarão as ofertas para apresentar ou não a uma pessoa alvo). A tabela de pessoas físicas que serão alvos das ofertas e a tabela para armazenar todas as propostas de oferta também são definidas aqui. O nó **[!UICONTROL Design environment]** contém subpastas de espaço de ofertas, filtros predefinidos e categorias de ofertas. Para cada **[!UICONTROL Design environment]** existe um **[!UICONTROL Live environment]** somente leitura correspondente, gerado a partir desse mesmo **[!UICONTROL Design environment]**.
    * **Ambiente dinâmico**: ambiente vinculado a um **[!UICONTROL Design environment]**. Ele contém ofertas somente leitura cujo conteúdo e elegibilidade foram aprovados por meio do **[!UICONTROL Design environment]**. Eles devem ser marcados para serem apresentados em um site ou inseridos em uma mensagem.
 
 * **Espaço de ofertas**: pasta que define o local onde a oferta é exposta. A definição de um espaço permite especificar o canal usado, especificar se ele pode ser usado no modo unitário (por padrão: apenas no modo de lote), criar o conteúdo da oferta usando funções de renderização e especificar a oferta dentre as ofertas apresentadas. Um espaço é uma interface entre o canal e o motor de oferta.
@@ -38,15 +38,15 @@ Abaixo está a definição dos elementos principais de interação.
 
    >[!NOTE]
    >
-   >As categorias secundárias herdam os temas identificados na categoria principal.
+   >As categorias derivadas herdam os temas identificados na categoria principal.
 
-* **Regras de elegibilidade**: restrições aplicadas a um ambiente, categoria ou oferta sobre o período de validade, target e peso. Eles permitem garantir que uma oferta esteja alinhada com o contato alvo.
+* **Regras de elegibilidade**: restrições aplicadas a um ambiente, categoria ou oferta sobre o período de validade, público-alvo e peso. Eles permitem garantir que uma oferta esteja alinhada com o contato alvo.
 
-   Nos ambientes, as regras de elegibilidade incluem regras de apresentação aplicadas às ofertas e às pessoas a serem alvos.
+   Nos ambientes, as regras de elegibilidade incluem regras de apresentação aplicadas às ofertas e às pessoas a serem públicos-alvo.
 
-   Nas categorias, as regras de elegibilidade permitem limitar a validade da categoria no tempo, definir temas de aplicação e determinar as pessoas a serem alvos. Eles também podem receber um peso multiplicador por determinado período. Isso permite compartilhar as regras para ofertas em outras categorias e simplifica sua administração.
+   Nas categorias, as regras de elegibilidade permitem limitar a validade da categoria no tempo, definir temas de aplicação e determinar as pessoas a serem públicos-alvo. Eles também podem receber um peso multiplicador por determinado período. Isso permite compartilhar as regras para ofertas em outras categorias e simplifica sua administração.
 
-   Nas ofertas, as regras de elegibilidade permitem limitar a validade de ofertas no tempo e determinar as pessoas a serem alvos.
+   Nas ofertas, as regras de elegibilidade permitem limitar a validade de ofertas no tempo e determinar as pessoas a serem públicos-alvo.
 
 * **Arbitragem**: selecionar ofertas que serão exibidas em um ambiente (ofertas elegíveis). As classificações do princípio de arbitragem organiza as ofertas pela prioridade de acordo com os critérios definidos nas categorias, ofertas e ofertas de contexto.
 * **Contato**: um contato de uma interação de entrada. Durante o processamento de chamadas do motor, o contato é associado a um targeting dimension. Há dois tipos de contatos:
@@ -68,7 +68,7 @@ Abaixo está a definição dos elementos principais de interação.
    * **[!UICONTROL implicit]** : o contato foi identificado por um cookie (permanente ou de sessão). Ele pode ser processado como um contato anônimo ou identificado.
    * **[!UICONTROL anonymous]** : o contato não pode ser identificado.
 
-* **Oferta elegível**: a oferta se encontra com as restrições definidas upstream que podem ser oferecidas de forma consistente a um target.
+* **Oferta elegível**: a oferta se encontra com as restrições definidas upstream que podem ser oferecidas de forma consistente a um público-alvo.
 * **Regras de apresentação**: regras de tipologia mencionadas no ambiente de oferta, que permitem excluir algumas ofertas levando em conta o histórico de apresentações.
 * **Peso**: fórmulas que permitem calcular precisamente a relevância de uma oferta para selecionar a mais relevante. Os pesos são definidos nas ofertas. Ofertas elegíveis são consideradas em ordem decrescente de peso.
 * **Função de renderização**: função definida no espaço de ofertaa para construir sua representação de oferta com base nos atributos definidos na oferta. Há três modos diferentes de função de renderização: HTML, XML e texto.
