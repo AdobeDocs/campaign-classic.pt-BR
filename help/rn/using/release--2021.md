@@ -7,9 +7,9 @@ role: User
 level: Beginner
 exl-id: 0cd6bf20-da72-4cf0-9f5d-d4e8acdd324d
 source-git-commit: a06623611ff3f8d9dfb5d498e01686e12a924923
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2545'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -57,7 +57,7 @@ _7 de setembro de 2021_
 **Correções**
 
 * Correção de um problema que impedia o funcionamento do relatório Hot clicks quando as ofertas eram vinculadas à entrega. (NEO-26295)
-* Correção de um problema com a atividade **Sub-workflow** quando sua execução não gerava uma tabela de saída. (NEO-36242)
+* Correção de um problema com a atividade **Subfluxo de trabalho** quando sua execução não gerava uma tabela de saída. (NEO-36242)
 * Correção de vários problemas ao exportar o relatório de **Análise descritiva** para PDF. (NEO-25847)
 * Correção de um problema que poderia resultar em falha de entrega ao usar uma entrega de email externa. (NEO-37435)
 * Correção de um erro ao se conectar ao Microsoft CRM usando a API da Web. A mensagem de erro foi removida, pois as funcionalidades não foram afetadas.
@@ -131,7 +131,7 @@ _5 de junho de 2021_
 <table> 
 <thead>
 <tr> 
-<th> <strong>Conector FDA do Vertica analytics</strong><br/> </th> 
+<th> <strong>Conector FDA Vertica Analytics</strong><br/> </th> 
 </tr> 
 </thead> 
 <tbody> 
@@ -170,7 +170,7 @@ _5 de junho de 2021_
 
 Os seguintes sistemas agora são compatíveis com o Campaign:
 * Conector FDA do Google BigQuery
-* Conector FDA do Vertica analytics
+* Conector FDA Vertica Analytics
 * PostgreSQL 13
 
 Saiba mais na [matriz de compatibilidade do Campaign](../../rn/using/compatibility-matrix.md).
@@ -220,7 +220,7 @@ Saiba mais na [página sobre recursos obsoletos e removidos](../../rn/using/depr
 * Correção de um problema que poderia causar problemas de desempenho ao pesquisar dados de proposta vinculados a ofertas. (NEO-27554)
 * Correção de um problema que resultava na não resposta do processo da Web quando o serviço IMS era ativado, mas não respondia.
 * Correção de um problema que impedia o envio de uma entrega com um grupo de provas devido a um mecanismo de associação específico que falhava na personalização da entrega. (NEO-14391)
-* Correção de um problema em que não era enviado um alerta com a atividade de alerta se uma consulta e uma atividade de enriquecimento tivessem direcionando a tabela de entrega. (NEO-25157)
+* Correção de um problema de falha ao enviar um alerta com a atividade de alerta se uma consulta e uma atividade de enriquecimento tivessem direcionando a tabela de entrega. (NEO-25157)
 
 ### ![](assets/do-not-localize/red_2.png) Versão 21.1.2 – Build 9282 {#release-21-1-2-build-9282}
 
@@ -273,7 +273,7 @@ Se você estiver interessado em participar deste beta privado, preencha este [fo
 
 * Correção de um problema que impedia que os atalhos do teclado Tab, Enter e Escape funcionassem na nova tela de logon.
 * Correção de um problema de atualização que fazia com que o nome de um fluxo de trabalho recém-criado fosse substituído pelo valor padrão após o salvamento (NEO-26106).
-* Correção de um problema que ocorria ao executar workflows em que um novo campo era adicionado como parte de uma atividade **Enriquecimento** antes de uma atividade **Delivery** usando um target mapping de **Arquivo externo**: campos indesejados eram adicionados ao target mapping do **Arquivo externo**. (NEO-27687)
+* Correção de um problema que ocorria ao executar workflows em que um novo campo era adicionado como parte de uma atividade **Enriquecimento** antes de uma atividade de **Entrega** usando um target mapping de **Arquivo externo**: campos indesejados eram adicionados ao target mapping do **Arquivo externo**. (NEO-27687)
 * Correção de um problema que fazia com que alguns caracteres no código fonte fossem alterados ao ser reaberta uma aplicação web criada e salva anteriormente. (NEO-27597)
 * Correção de um problema que ocorria ao atualizar para uma compilação, incluindo o novo mecanismo de assinatura para links de rastreamento (da Compilação 19.1.4 e Campaign 20.2): quando vários modelos eram associados a um evento, a atualização podia fazer com que o modelo errado fosse selecionado ao ser enviada a mensagem transacional. (NEO-28326)
 * Correção de um problema que fazia com que o MTA ficasse sem resposta e não conseguisse processar deliveries, a menos que fosse reiniciado. (NEO-27455)
