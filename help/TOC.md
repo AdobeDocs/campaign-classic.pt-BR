@@ -436,7 +436,7 @@ ht-degree: 100%
       + [Teste](workflow/using/test.md)
       + [Aguardar](workflow/using/wait.md)
       + [Restrição de tempo](workflow/using/time-constraint.md)
-      + [Sub-workflow](workflow/using/sub-workflow.md)
+      + [Subfluxo de trabalho](workflow/using/sub-workflow.md)
       + [Jump (ponto inicial e ponto final)](workflow/using/jump--start-point-and-end-point-.md)
       + [Sinal externo](workflow/using/external-signal.md)
       + [Aprovação](workflow/using/approval.md)
@@ -444,8 +444,8 @@ ht-degree: 100%
       + [Tarefa](workflow/using/task.md)
    + Atividades de ação {#action-activities}
       + [Sobre atividades de ação](workflow/using/about-action-activities.md)
-      + [Delivery](workflow/using/delivery.md)
-      + [Controle de Delivery](workflow/using/delivery-control.md)
+      + [Entrega](workflow/using/delivery.md)
+      + [Controle de entrega](workflow/using/delivery-control.md)
       + [Entrega contínua](workflow/using/continuous-delivery.md)
       + [Entrega recorrente](workflow/using/recurring-delivery.md)
       + [Entregas entre canais](workflow/using/cross-channel-deliveries.md)
@@ -499,7 +499,7 @@ ht-degree: 100%
    + Monitorar workflows {#monitoring-workflows}
       + [Monitorar a execução do fluxo de trabalho](workflow/using/monitoring-workflow-execution.md)
       + [Monitorar workflows técnicos](workflow/using/monitoring-technical-workflows.md)
-      + [Workflow HeatMap](workflow/using/heatmap.md)
+      + [HeatMap de fluxo de trabalho](workflow/using/heatmap.md)
    + Gerenciamento avançado {#advanced-management}
       + [Propriedades do fluxo de trabalho](workflow/using/workflow-properties.md)
       + [Parâmetros avançados](workflow/using/advanced-parameters.md)
