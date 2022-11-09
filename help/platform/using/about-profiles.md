@@ -7,9 +7,9 @@ role: User, Data Architect
 level: Beginner
 exl-id: 54f1ad6c-54b0-4448-8c38-806dd75c1dae
 source-git-commit: d42389add06db74c54cb3a21813e9a832a2a288a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '842'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -21,7 +21,7 @@ Os perfis são centralizados no banco de dados do Adobe Campaign. Há vários me
 
 “**Perfil**” significa um registro de informações (por exemplo: um registro na tabela nmsRecipient ou uma tabela externa contendo uma ID de cookie, uma ID do cliente, um identificador móvel ou outras informações relevantes para um canal específico) representando um cliente final, um prospecto ou um cliente potencial.
 
-No Adobe Campaign, os recipients são os perfis padrão direcionados para envio de deliveries (emails, SMS etc.). Os dados do recipient armazenados no banco de dados permitem filtrar o target que receberá qualquer delivery e adicionar dados de personalização ao conteúdo de delivery. Existem outros tipos de perfis no banco de dados. Esses perfis foram projetados para diferentes usos. Por exemplo, perfis iniciais são feitos para testar seus deliveries antes que sejam enviados ao público-alvo final.
+No Adobe Campaign, os recipients são os perfis padrão direcionados para envio de deliveries (emails, SMS etc.). Os dados do recipient armazenados no banco de dados permitem filtrar o público-alvo que receberá qualquer entrega e adicionar dados de personalização ao conteúdo de entrega. Existem outros tipos de perfis no banco de dados. Esses perfis foram projetados para diferentes usos. Por exemplo, perfis iniciais são feitos para testar seus deliveries antes que sejam enviados ao público-alvo final.
 
 ![](assets/do-not-localize/how-to-video.png) [Compreender o conceito de perfis em vídeo](#create-profiles-video)
 
@@ -35,9 +35,9 @@ Os perfis podem ser identificados com base no espaço de armazenamento. Isso sig
 
 ## Perfis de recipient {#recipient-profiles}
 
-Os recipients do delivery são armazenados no banco de dados como perfis que contêm as informações vinculadas a eles: sobrenome, nome, endereço, assinaturas, deliveries, etc. Ao criar campanhas, é possível definir o direcionamento dos deliveries a uma seleção de perfis da base de acordo com critérios simples ou avançados.
+Os recipients da entrega são armazenados no banco de dados como perfis que contêm as informações vinculadas a eles: sobrenome, nome, endereço, assinaturas, entregas etc. Ao criar campanhas, é possível definir o direcionamento das entregas a uma seleção de perfis da base de acordo com critérios simples ou avançados.
 
-Também é possível criar campanhas direcionadas a destinatários cujos perfis estão armazenados em arquivos, em vez de em banco de dados. Elas são conhecidas como deliveries “externos”. Para obter mais informações sobre esse tipo de delivery, consulte [esta página](../../delivery/using/steps-defining-the-target-population.md#selecting-external-recipients).
+Também é possível criar campanhas direcionadas a destinatários cujos perfis estão armazenados em arquivos, em vez de em banco de dados. Elas são conhecidas como deliveries “externos”. Para obter mais informações sobre esse tipo de entrega, consulte [esta página](../../delivery/using/steps-defining-the-target-population.md#selecting-external-recipients).
 
 Os principais métodos para criar perfis de destinatários são os seguintes:
 
@@ -60,8 +60,8 @@ Ele também dá acesso a:
 * listas - [Saiba mais](../../platform/using/creating-and-managing-lists.md)
 * serviços de assinatura - [Saiba mais](../../delivery/using/managing-subscriptions.md)
 * aplicativos Web - [Saiba mais](../../web/using/about-web-applications.md)
-* importações e exportações (tarefas) - [Saiba mais](../../platform/using/about-generic-imports-exports.md)
-* workflows para construção do target - [Saiba mais](../../workflow/using/building-a-workflow.md#implementation-steps-)
+* importações e exportações (processos) - [Saiba mais](../../platform/using/about-generic-imports-exports.md)
+* workflows para direcionamento - [Saiba mais](../../workflow/using/building-a-workflow.md#implementation-steps-)
 
 A página de destinatários permite executar operações frequentes em perfis: edições, atualizações, adições, exclusões e classificações.
 
@@ -119,7 +119,7 @@ Vídeos extras sobre procedimentos do Campaign Classic estão disponíveis [aqui
 
 * [Gerenciamento da privacidade no Campaign](https://helpx.adobe.com/br/campaign/kb/acc-privacy.html)
 
-* [Definir a população do target](../../delivery/using/define-the-right-audience.md)
+* [Definir a população do público-alvo](../../delivery/using/define-the-right-audience.md)
 
 * [Criar queries e dados de segmento em workflows](../../workflow/using/targeting-data.md)
 
