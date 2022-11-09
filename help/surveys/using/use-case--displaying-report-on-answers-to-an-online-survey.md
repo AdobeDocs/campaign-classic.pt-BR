@@ -5,8 +5,8 @@ description: "Caso de uso: exibição do relatório sobre as respostas de uma pe
 feature: Surveys
 exl-id: 6be12518-86d1-4a13-bbc2-b2ec5141b505
 source-git-commit: 1f80c9967f4859f26dd2890d657f95ada6cf2087
-workflow-type: tm+mt
-source-wordcount: '475'
+workflow-type: ht
+source-wordcount: '0'
 ht-degree: 100%
 
 ---
