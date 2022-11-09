@@ -4,7 +4,7 @@ title: Privacidade
 description: Saiba mais sobre as práticas recomendadas relacionadas à privacidade
 feature: URL Personalization, Privacy
 exl-id: 0a3473bf-0528-486d-a799-8db86fece522
-source-git-commit: f05eefc9945c4ead89eb448b6e28c3523559e055
+source-git-commit: fcbaacccaf3f1771570e42e7a83847ed3fd998ef
 workflow-type: tm+mt
 source-wordcount: '892'
 ht-degree: 21%
@@ -77,7 +77,7 @@ Para desativar URLs que foram gerados em compilações anteriores, siga estas et
 
 Para ativar a assinatura do URL, siga estas etapas em todos os servidores do Campaign ao mesmo tempo:
 
-1. No arquivo de configuração do servidor (serverConf.xml), altere **signEmailLinks** para **false**.
+1. No arquivo de configuração do servidor (serverConf.xml), altere **signEmailLinks** para **true**.
 1. Reinicie o serviço **nlserver**.
 1. No servidor de rastreamento, reinicie o servidor da Web (apache2 em Debian, httpd em CentOS/RedHat, IIS no Windows).
 
