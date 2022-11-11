@@ -5,7 +5,7 @@ description: Saiba como publicar, rastrear e usar dados coletados em uma pesquis
 feature: Surveys
 exl-id: 3cf3c486-6640-4d67-95cf-50d5767deb60
 source-git-commit: 1f80c9967f4859f26dd2890d657f95ada6cf2087
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '831'
 ht-degree: 100%
 
