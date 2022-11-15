@@ -3,9 +3,9 @@ product: campaign
 title: Proteção da privacidade de email no aplicativo de email do Apple
 description: Saiba como suas campanhas podem ser afetadas pelo recurso Apple Mail Privacy Protection
 exl-id: e044b35a-b49f-408a-900d-2afe8ff10212
-source-git-commit: 43d9eac2ed161465ca00ee4f511e4c020b4c44a2
+source-git-commit: 83fe7eb4f857306ac1c8bb3a93a9393b76ae1e3c
 workflow-type: tm+mt
-source-wordcount: '2068'
+source-wordcount: '2056'
 ht-degree: 1%
 
 ---
@@ -16,7 +16,7 @@ ht-degree: 1%
 
 ## O que mudou?
 
-Em 2021, a Apple apresentou novos recursos de proteção de privacidade para seu aplicativo de email nativo. Este aplicativo agora inclui o recurso Apple Mail Privacy Protection. Basicamente, os remetentes não podem mais usar pixels de rastreamento para coletar informações sobre os recipients que optaram por ativar o recurso de Proteção de privacidade de email do Apple. [Leia mais](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/additional-resources/technotes/apple-mail-privacy-faq.html?lang=pt-BR){target=&quot;_blank&quot;}.
+Em 2021, a Apple apresentou novos recursos de proteção de privacidade para seu aplicativo de email nativo. Este aplicativo agora inclui o recurso Apple Mail Privacy Protection. Basicamente, os remetentes não podem mais usar pixels de rastreamento para coletar informações sobre os recipients que optaram por ativar o recurso de Proteção de privacidade de email do Apple.
 
 ## Como minhas campanhas são afetadas?
 
