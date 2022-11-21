@@ -6,10 +6,10 @@ feature: Overview
 role: User
 level: Beginner
 exl-id: d60d67de-6618-4f3b-be4a-ad7633ab5645
-source-git-commit: 45c5ef3315e4208184e9c0ab5f20678646fe2d0b
-workflow-type: ht
-source-wordcount: '1624'
-ht-degree: 100%
+source-git-commit: 0ecf9c69cc4b444feda1e42701a3a27f2b2e7eeb
+workflow-type: tm+mt
+source-wordcount: '1684'
+ht-degree: 97%
 
 ---
 
@@ -41,11 +41,20 @@ Os clientes são aconselhados a verificar se utilizam o recurso/funcionalidade e
  <tbody> 
    <tr>
    <td><strong>Recurso</strong></td>
-   <td><strong>Substituição</strong></td>
+   <td><strong>Detalhes</strong></td>
   </tr>
 <tr>
- <td>N/D</td>
- <td>N/D</td>
+ <td>Marketing social com o Facebook</td>
+ <td>O Social Marketing com Facebook agora está obsoleto. Você pode usar a integração do Twitter para postar em redes sociais ou trabalhar com o Adobe para criar um canal personalizado.
+ <p></p>
+  <p>Data de remoção do target: fim de 2023</p>
+  </td>
+</tr>
+<tr>
+ <td>ACS Connector</td>
+ <td>ACS Connector (Oferta principal) agora está obsoleta. Você pode usar os recursos de exportação/importação do Campaign para extrair e injetar dados em ambos os produtos.<p></p>
+  <p>Data de remoção do target: fim de 2023</p>
+  </td>
 </tr>
  </tbody> 
 </table>

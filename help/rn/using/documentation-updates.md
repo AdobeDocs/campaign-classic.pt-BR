@@ -6,9 +6,9 @@ feature: Overview
 role: User
 level: Beginner
 exl-id: 07c1f4a3-cf16-4a9b-b402-e13258799f91
-source-git-commit: 7f41e3209450421262acf8a753bddd3eae1fe35f
+source-git-commit: 5792ad762befb97888ad32406d3bcb7f97df3fa7
 workflow-type: tm+mt
-source-wordcount: '5004'
+source-wordcount: '4994'
 ht-degree: 98%
 
 ---
@@ -55,9 +55,9 @@ Adição de uma descrição detalhada para a opção **[!UICONTROL Test SMTP del
 
 A página Introdução às atualizações foi atualizada para esclarecer as diretrizes de atualização do Console do Campaign. [Leia mais](../../rn/using/rn-overview.md)
 
-O novo build do Campaign v7.2.2 está disponível. [Leia mais](../../rn/using/latest-release.md)
+O novo build do Campaign v7.2.2 está disponível. [Saiba mais](../../rn/using/latest-release.md)
 
-Adição de informações de solução de problemas relacionadas ao conector ACS. [Saiba mais](../../integrations/using/troubleshooting-the-acs-connector.md)
+<!--Added troubleshooting information related to the ACS connector. [Read more](../../integrations/using/troubleshooting-the-acs-connector.md)-->
 
 As versões herdadas do PostgreSQL que atingiram o fim de vida útil foram adicionadas à página [Recursos obsoletos e removidos](../../rn/using/deprecated-features.md#dbe-eol).
 

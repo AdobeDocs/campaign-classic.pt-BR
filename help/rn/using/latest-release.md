@@ -6,10 +6,10 @@ feature: Overview
 role: User
 level: Beginner
 exl-id: d65869ca-a785-4327-8e8d-791c28e4696c
-source-git-commit: f94d7e2cddd75d50cb21973a62ec223f2344edf1
+source-git-commit: ca2f50a501c63cc8b2d4de5d9a41b655a6b6d6cf
 workflow-type: tm+mt
-source-wordcount: '2654'
-ht-degree: 77%
+source-wordcount: '2713'
+ht-degree: 75%
 
 ---
 
@@ -27,22 +27,19 @@ _21 de novembro de 2022_
 
 * Após o fim da vida útil do Microsoft Internet Explorer 11, o mecanismo de renderização de HTML para painéis no console do cliente agora está usando o Edge Chromium. (NEO-20741)
 
-<!--
-**Deprecated features**
-
-* Social Marketing with Facebook is now deprecated. You can still use Twitter integration to post on social media, or work with Adobe to create a custom channel.
-
-* ACS Connector (prime offering) is now deprecated. You can use Campaign export/import capabilities to extract and inject data in both products.
-
-Learn more in the [Deprecated and removed features page](deprecated-features.md).
-
--->
-
 **Aprimoramentos**
 
 * O conector BigQuery do Google agora oferece suporte total a campos booleanos. (NEO-49181)
 * Agora você pode configurar a duração da validade dos cookies IMS no `Configuration for the redirection service` seção do arquivo serverConf.xml. Isso se aplica aos seguintes cookies: `uuid230`, `nllastdelid` e `AMCV_` (NEO42541)
 * O IP agora pode ser oculto na solicitação &quot;/r/test&quot; ao configurar `showSourceIP` como falso no nó de redirecionamento do arquivo serverConf.xml. [Leia mais](../../installation/using/the-server-configuration-file.md#redirection-redirection)(NEO46656)
+
+**Recursos obsoletos**
+
+* O Social Marketing com Facebook agora está obsoleto. Você pode usar a integração do Twitter para postar em redes sociais ou trabalhar com o Adobe para criar um canal personalizado.
+
+* O ACS Connector (Prime offer) agora está obsoleto. Você pode usar os recursos de exportação/importação do Campaign para extrair e injetar dados em ambos os produtos.
+
+Saiba mais na [página sobre recursos obsoletos e removidos](deprecated-features.md).
 
 **Outras alterações**
 

@@ -1,15 +1,15 @@
 ---
 product: campaign
 title: Sobre marketing social
-description: Saiba como usar o Campaign para interagir com clientes pelo Facebook e pelo Twitter
+description: Saiba como usar o Campaign para interagir com os clientes por meio do Twitter
 audience: social
 content-type: reference
 topic-tags: introduction
 exl-id: c8fd5f75-9386-42dd-bfb6-8086a86aa324
-source-git-commit: d891a235002d465f3b00fafa375d87d42ebafaa6
+source-git-commit: c4a545ee3cffa16e72a7ba1ca3010fffd43e61c2
 workflow-type: tm+mt
-source-wordcount: '126'
-ht-degree: 79%
+source-wordcount: '90'
+ht-degree: 6%
 
 ---
 
@@ -17,14 +17,10 @@ ht-degree: 79%
 
 ![](../../assets/v7-only.svg)
 
-O aplicativo (Marketing social) **Managing social networks** projetado para gerenciar redes sociais permite interagir com clientes e clientes potenciais via Facebook e Twitter.
+O **Gerenciamento de redes sociais** O aplicativo (Social Marketing) criado para gerenciar redes sociais permite interagir com clientes e clientes potenciais via Twitter.
 
-**Adquirir novos contatos**
+Saiba mais sobre as principais etapas para integrar o Campaign e o Twitter no [Documentação do Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/connect/ac-tw.html)
 
-O Adobe Campaign Social Marketing facilita a aquisição de novos contatos via Facebook: entre em contato com os usuários e pergunte se eles desejam compartilhar suas informações de perfil. Se eles aceitarem, o Adobe Campaign recuperará automaticamente os dados, o que permite realizar campanhas de direcionamento e, quando possível, implementar estratégias entre canais.
+Como cliente local ou híbrido, sua conta externa do Twitter deve ser configurada e ativada. Para configurações híbridas, a variável **Mid-sourcing** também deve ser definida com uma conexão ativa com a plataforma mid-sourcing.
 
->[!IMPORTANT]
->
->O Facebook e o Twitter fazem mudanças regulares em suas telas e processos. Este documento será atualizado adequadamente.
->
->O Adobe Campaign solicita a aceitação dos termos de serviço do Facebook e do Twitter.
+![](assets/tw-external-account.png)

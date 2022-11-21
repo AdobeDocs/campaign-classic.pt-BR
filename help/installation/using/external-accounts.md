@@ -6,10 +6,10 @@ audience: platform
 content-type: reference
 topic-tags: administration-basics
 exl-id: 4a17d5e8-c73f-42e7-b641-0fee6a52c5c0
-source-git-commit: ae235d39c4a78e0a2507f6baaebbdc9986dbf995
+source-git-commit: 31a475c98b09bbeca6a16c6fd98698af10016033
 workflow-type: tm+mt
-source-wordcount: '1818'
-ht-degree: 67%
+source-wordcount: '1714'
+ht-degree: 65%
 
 ---
 
@@ -117,7 +117,7 @@ Os seguintes canais podem ser configurados:
 * [Telefone](../../delivery/using/steps-about-delivery-creation-steps.md#other-channels)
 * [Correspondência direta](../../delivery/using/about-direct-mail-channel.md)
 * [Agência](../../delivery/using/steps-about-delivery-creation-steps.md#other-channels)
-* [Twitter](../../social/using/configuring-publishing-on-twitter.md)
+* [Twitter](../../social/using/about-social-marketing.md)
 * [Canal iOS](../../delivery/using/configuring-the-mobile-application.md)
 * [Canal Android](../../delivery/using/configuring-the-mobile-application-android.md)
 
@@ -225,29 +225,6 @@ As configurações da conta externa dependem do mecanismo de banco de dados. Sai
 * Configure o acesso ao [sybase IQ](../../installation/using/configure-fda-sybase.md)
 * Configure o acesso ao [Teradata](../../installation/using/configure-fda-teradata.md)
 
-### Conexão facebook {#facebook-connect-external-account}
-
-A conta externa **[!UICONTROL Facebook Connect]** permite exibir conteúdo personalizado em seus aplicativos do Facebook, facilitando a aquisição de prospects por meio desta rede social.
-
-Para cada aplicativo do Facebook, é necessário criar uma conta externa do tipo **[!UICONTROL Facebook Connect]**. Para obter mais informações, consulte esta [página](../../social/using/creating-a-facebook-application.md#configuring-external-accounts).
-
-![](assets/ext_account_12.png)
-
-* **[!UICONTROL Hosting mode]**
-
-   Modo de hospedagem do aplicativo entre **[!UICONTROL hosted by a partner]** ou **[!UICONTROL hosted by this instance]**.
-
-* **[!UICONTROL Application ID]**
-
-   ID do aplicativo do seu aplicativo do Facebook.
-
-* **[!UICONTROL Application secret]**
-
-   Segredo do aplicativo do seu aplicativo do Facebook.
-
-Se você escolheu o modo hospedado por este modo de instância, o Secure Canvas URL precisa ser colado no campo **jogos do Facebook Web (https)** no Facebook.
-
-Para saber onde localizar essas credenciais, consulte esta [página](https://developers.facebook.com/docs/facebook-login/access-tokens).
 
 ## Contas externas de integração de solução Adobe
 
