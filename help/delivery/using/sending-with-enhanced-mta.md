@@ -4,10 +4,10 @@ title: S com o MTA aprimorado no Adobe Campaign Classic
 description: Saiba mais sobre o escopo e as especificidades do envio de emails com o MTA aprimorado do Adobe Campaign
 feature: Email
 exl-id: 58cc23f4-9ab0-45c7-9aa2-b08487ec7e91
-source-git-commit: 9839dbacda475c2a586811e3c4f686b1b1baab05
-workflow-type: ht
-source-wordcount: '1946'
-ht-degree: 100%
+source-git-commit: 2d5166c355ee090639dcc52866252bae6beb81f6
+workflow-type: tm+mt
+source-wordcount: '1999'
+ht-degree: 93%
 
 ---
 
@@ -37,9 +37,9 @@ A implementação do MTA aprimorado pode afetar algumas das funcionalidades exis
 
 **O que é o MTA aprimorado?**
 
-O Adobe Campaign agora pode ser atualizado para usar um novo MTA (Mail Transfer Agent, agente de transferência de correspondência) que executa o MTA de email comercial do SparkPost chamado **Momentum**.
+O Adobe Campaign agora pode ser atualizado para usar um novo MTA (Mail Transfer Agent) que executa o MTA de email comercial do SparkPost chamado **Momento**.
 
-O Momentum representa uma tecnologia MTA inovadora e de alto desempenho, que inclui um tratamento mais inteligente de rejeição e um recurso automatizado de otimização de entrega que ajuda os remetentes a alcançarem e manterem as taxas ideais de delivery da caixa de entrada. <!--More than 37% of the world’s business email is sent using SparkPost’s MTA technology.-->
+O Momentum representa uma tecnologia MTA inovadora e de alto desempenho, que inclui um tratamento mais inteligente de rejeição e um recurso automatizado de otimização de entrega que ajuda os remetentes a alcançarem e manterem as taxas ideais de delivery da caixa de entrada. <!--More than 37% of the world's business email is sent using SparkPost's MTA technology.-->
 
 **Quais são os benefícios?**
 
@@ -59,7 +59,7 @@ No, there is no extra fee associated with the upgrade process to enable the use 
 
 * If you are new to Adobe Campaign Classic, you are already using the Enhanced MTA.
 
-* For Adobe Campaign Classic existing customers, we’ve implemented a phased rollout that covers all hosted or partially hosted (hybrid) instances. If you’re not already using it, we’ll be contacting you in the near future with the dates and details for upgrading your Adobe Campaign Classic instances to the Enhanced MTA.
+* For Adobe Campaign Classic existing customers, we've implemented a phased rollout that covers all hosted or partially hosted (hybrid) instances. If you're not already using it, we'll be contacting you in the near future with the dates and details for upgrading your Adobe Campaign Classic instances to the Enhanced MTA.
 -->
 
 ### Atualização para o MTA aprimorado
@@ -117,7 +117,7 @@ Para obter mais informações sobre topologias, consulte[esta seção](../../cam
 
 ### Novas regras de MX
 
-As regras de taxa de transferência de delivery de gerenciamento de MX não são mais usadas. O MTA aprimorado tem suas próprias regras de MX, que permitem personalizar a taxa de transferência por domínio com base em sua própria reputação de email histórica e no feedback em tempo real proveniente dos domínios para os quais você está enviando emails.
+As regras de taxa de transferência de delivery de gerenciamento de MX não são mais usadas. O MTA aprimorado tem suas próprias regras MX que permitem personalizar a taxa de transferência por domínio com base na sua própria reputação histórica de email e no feedback em tempo real proveniente dos domínios em que você está enviando emails.
 
 Para obter mais informações sobre configurações de MX, consulte [esta seção](../../installation/using/email-deliverability.md#mx-configuration).
 
@@ -140,6 +140,12 @@ Para obter mais informações sobre a taxa de transferência do delivery, consul
 >[!NOTE]
 >
 >Com o recurso [Serviço de feedback de email](#email-feedback-service) (EFS) (atualmente disponível na versão beta), o gráfico da taxa de transferência de delivery do Campaign ainda mostra a taxa de transferência para seus destinatários de email.
+
+### Tentativas
+
+As configurações de nova tentativa no delivery não são mais usadas pelo Campaign. As tentativas de rejeição em modo suave e o tempo entre elas são determinados pelo MTA aprimorado com base no tipo e na gravidade das respostas de rejeição provenientes do domínio de email da mensagem.
+
+Para obter mais informações sobre tentativas, consulte [esta seção](steps-sending-the-delivery.md#configuring-retries).
 
 ### Período de validade
 
@@ -182,7 +188,7 @@ Com o recurso Serviço de feedback por email (EFS), o status de cada email é re
 >
 >O Serviço de feedback por email está disponível no momento como um recurso beta.
 >
->Se você estiver interessado em participar desse programa beta, preencha [este formulário](https://forms.office.com/Pages/ResponsePage.aspx?id=Wht7-jR7h0OUrtLBeN7O4Rol2vQGupxItW9_BerXV6VUQTJPN1Q5WUI4OFNTWkYzQjg3WllUSDAxWi4u) e entraremos em contato com você.
+>Se você estiver interessado em participar deste programa beta, preencha [este formulário](https://forms.office.com/Pages/ResponsePage.aspx?id=Wht7-jR7h0OUrtLBeN7O4Rol2vQGupxItW9_BerXV6VUQTJPN1Q5WUI4OFNTWkYzQjg3WllUSDAxWi4u) e vamos voltar para você.
 
 Depois que o delivery é iniciado, não há alteração na porcentagem de **[!UICONTROL Success]** quando a mensagem é transmitida com êxito do Campaign para o MTA aprimorado.
 

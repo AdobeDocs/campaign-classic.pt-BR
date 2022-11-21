@@ -6,9 +6,9 @@ audience: installation
 content-type: reference
 topic-tags: additional-configurations
 exl-id: 67dda58f-97d1-4df5-9648-5f8a1453b814
-source-git-commit: 4fd69aa28c2e9325f4738ec571a6632c42ec26b8
+source-git-commit: 2594e4943ba24ae65d1fc005da589dc674aa2b0f
 workflow-type: tm+mt
-source-wordcount: '1460'
+source-wordcount: '1464'
 ht-degree: 10%
 
 ---
@@ -19,7 +19,7 @@ ht-degree: 10%
 
 Cada operador precisa ser vinculado a uma zona para fazer logon em uma instância e o IP do operador deve ser incluído nos endereços ou conjuntos de endereços definidos na zona de segurança. A configuração da zona de segurança é realizada no arquivo de configuração do servidor do Adobe Campaign.
 
-Operators are linked to a security zone from its profile in the console, accessible in the **[!UICONTROL Administration > Access management > Operators]** node. [Saiba mais](#linking-a-security-zone-to-an-operator).
+Os operadores são vinculados a uma zona de segurança a partir do seu perfil no console, acessível na **[!UICONTROL Administration > Access management > Operators]** nó . [Saiba mais](#linking-a-security-zone-to-an-operator).
 
 >[!NOTE]
 >
@@ -57,7 +57,7 @@ O pronto para uso **serverConf.xml** O arquivo inclui três zonas: **público, V
 
 >[!NOTE]
 >
->**The out-of-the-box configuration is secure**. However, before migrating from an earlier version of Adobe Campaign, it may be necessary to temporarily reduce security in order to migrate and approve the new rules.
+>**A configuração pronta para uso é segura**. No entanto, antes de migrar de uma versão anterior do Adobe Campaign, pode ser necessário reduzir temporariamente a segurança para migrar e aprovar as novas regras.
 
 Exemplo de como definir uma zona no **serverConf.xml** arquivo:
 
@@ -83,7 +83,7 @@ Exemplo de como definir uma zona no **serverConf.xml** arquivo:
 </securityZone>
 ```
 
-All of the rights defining a zone are as follows:
+Todos os direitos que definem uma zona são os seguintes:
 
 * **allowDebug**: permite que um webApp seja executado no modo &quot;debug&quot;
 * **allowEmptyPassword**: autoriza uma conexão com uma instância sem uma senha
@@ -121,7 +121,7 @@ Na definição do **lan** zona de segurança, é possível adicionar uma máscar
 
 Recomendamos definir intervalos de endereço IP diretamente no arquivo de configuração dedicado à instância para operadores que acessam apenas uma instância específica.
 
-In the **`config-<instance>.xml`** file:
+No **`config-<instance>.xml`** arquivo:
 
 ```
   <securityZone name="public">
@@ -187,7 +187,7 @@ Depois que as zonas forem definidas, cada operador deve estar vinculado a uma de
 
 A configuração técnica das zonas é realizada no arquivo de configuração do Servidor do Campaign: **serverConf.xml**.
 
-Prior to this, you must start by configuring the out-of-the-box **[!UICONTROL Security zone]** enumeration to link a label to the internal name of the zone defined in the **serverConf.xml** file.
+Antes disso, você deve começar configurando o **[!UICONTROL Security zone]** enumeração para vincular um rótulo ao nome interno da zona definida no **serverConf.xml** arquivo.
 
 Essa configuração é feita no explorador do Campaign:
 
@@ -197,7 +197,7 @@ Essa configuração é feita no explorador do Campaign:
    ![](assets/enum_securityzone.png)
 
 1. Para cada zona de segurança definida no arquivo de configuração do servidor, clique no botão **[!UICONTROL Add]** botão.
-1. No **[!UICONTROL Internal name]** , digite o nome da zona definida no campo **serverConf.xml** arquivo. It corresponds to the **@name** attribute of the `<securityzone>`  element. Insira o rótulo vinculado ao nome interno na  **Rótulo** campo.
+1. No **[!UICONTROL Internal name]** , digite o nome da zona definida no campo **serverConf.xml** arquivo. Corresponde à variável **@name** do `<securityzone>`  elemento. Insira o rótulo vinculado ao nome interno na  **Rótulo** campo.
 
    ![](assets/enum_addsecurityvalue.png)
 
@@ -206,7 +206,7 @@ Essa configuração é feita no explorador do Campaign:
 Depois que as zonas forem definidas e a variável **[!UICONTROL Security zone]** for configurada, será necessário vincular cada operador a uma zona de segurança:
 
 1. Clique no nó **[!UICONTROL Administration > Access management > Operators]**.
-1. Select the operator whom you want to link a security zone to, and click the **[!UICONTROL Edit]** tab.
+1. Selecione o operador ao qual deseja vincular uma zona de segurança e clique no botão **[!UICONTROL Edit]** guia .
 1. Acesse a guia **[!UICONTROL Access rights]** e clique no link **[!UICONTROL Edit access parameters...]**.
 
    ![](assets/zone_operator.png)
@@ -236,13 +236,25 @@ Depois que as zonas forem definidas e a variável **[!UICONTROL Security zone]**
 
 * Defina allowDebug como true somente nos IPs usados pelos usuários/administradores de marketing que precisam criar pesquisas (na pré-visualização, na verdade), aplicativos da Web e relatórios. Esse sinalizador permite que esses IPs obtenham regras de retransmissão exibidas e os executa.
 
+   * Quando allowDebug é definido como false, a saída é:
+
+      ```
+      <redir status='OK' date='...' sourceIP='...'/>
+      ```
+
+   * Quando allowDebug é definido como true, a saída é:
+
+      ```
+      <redir status='OK' date='...' build='...' OR version='...' sha1='...' instance='...' sourceIP='...' host='...' localHost='...'/>
+      ```
+
 * Nunca defina allowEmptyPassword, allowUserPassword, allowSQLInjection como true. Estes atributos estão aqui apenas para permitir uma fácil migração das versões 5 e 6.0:
 
-   * **allowEmptyPassword** permite que os operadores tenham uma senha vazia. Se este for o seu caso, notifique todos os seus operadores para eles definirem uma senha com um prazo. Once this deadline has passed, change this attribute to false.
+   * **allowEmptyPassword** permite que os operadores tenham uma senha vazia. Se este for o seu caso, notifique todos os seus operadores para eles definirem uma senha com um prazo. Depois que esse prazo expirar, altere esse atributo para false.
 
-   * **allowUserPassword** lets operators send their credentials as parameters (so they will be logged by apache/IIS/proxy). Esse recurso foi usado anteriormente para simplificar o uso da API. Você pode verificar em seu guia (ou na especificação) se alguns aplicativos de terceiros usam isso. If so, you have to notify them to change the way they use our API and as soon as possible remove this feature.
+   * **allowUserPassword** permite que os operadores enviem suas credenciais como parâmetros (para que sejam registrados por apache/IIS/proxy). Esse recurso foi usado anteriormente para simplificar o uso da API. Você pode verificar em seu guia (ou na especificação) se alguns aplicativos de terceiros usam isso. Em caso positivo, é necessário notificá-los para alterar a maneira como eles usam nossa API e, assim que possível, remover esse recurso.
 
-   * **allowSQLInjection** permite que o usuário execute injeções de SQL usando uma sintaxe antiga. As soon as possible carry out the corrections described in [this page](../../migration/using/general-configurations.md) to be able to set this attribute to false. É possível usar /nl/jsp/ping.jsp?zones=true para verificar a configuração de sua zona de segurança. Esta página exibe o status ativo das medidas de segurança (calculadas com esses sinalizadores de segurança) para o IP atual.
+   * **allowSQLInjection** permite que o usuário execute injeções de SQL usando uma sintaxe antiga. Esse atributo deve ser definido como false. É possível usar /nl/jsp/ping.jsp?zones=true para verificar a configuração de sua zona de segurança. Esta página exibe o status ativo das medidas de segurança (calculadas com esses sinalizadores de segurança) para o IP atual.
 
 * HttpOnly cookie/useSecurityToken: consulte **sessionTokenOnly** sinalizador.
 

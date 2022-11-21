@@ -6,10 +6,10 @@ audience: installation
 content-type: reference
 topic-tags: appendices
 exl-id: 70cd6a4b-c839-4bd9-b9a7-5a12e59c0cbf
-source-git-commit: acbb2144906841a6da59314b84b3faf5863cf9d6
+source-git-commit: 2594e4943ba24ae65d1fc005da589dc674aa2b0f
 workflow-type: tm+mt
-source-wordcount: '7957'
-ht-degree: 10%
+source-wordcount: '7979'
+ht-degree: 20%
 
 ---
 
@@ -513,7 +513,7 @@ Para obter mais informações, consulte [seção](../../installation/using/confi
  <tbody> 
   <tr> 
    <td> localDomain<br /> </td> 
-   <td> Nome do domínio: nome de domínio padrão. Usado pelo comando SMTP HELO. Por padrão, usa os parâmetros de rede da primeira interface de rede declarada no Windows; ou analisa o file/etc/resolv.conf no Linux (domínio ou entrada de pesquisa). <br /> </td> 
+   <td> Nome do domínio: nome de domínio padrão. Usado pelo comando SMTP HELO. Por padrão, usa os parâmetros de rede da primeira interface de rede declarada no Windows, ou analisa o arquivo file/etc/resolv.conf no Linux (entrada de domínio ou pesquisa). <br /> </td> 
    <td> Cadeia de caracteres<br /> </td> 
    <td> <br /> </td> 
   </tr> 
@@ -1104,7 +1104,7 @@ Para obter mais informações, consulte [Ativação do arquivamento de email (no
   </tr> 
   <tr> 
    <td> args<br /> </td> 
-   <td> Parâmetros de arranque<br /> </td> 
+   <td> Parâmetros de inicialização<br /> </td> 
    <td> Cadeia de caracteres<br /> </td> 
    <td> <br /> </td> 
   </tr> 
@@ -1134,7 +1134,7 @@ Para obter mais informações, consulte [Ativação do arquivamento de email (no
   </tr> 
   <tr> 
    <td> initScript<br /> </td> 
-   <td> ID do JavaScript a ser executado ao iniciar o processo.<br /> </td> 
+   <td> ID do JavaScript a ser executada ao iniciar o processo.<br /> </td> 
    <td> Cadeia de caracteres<br /> </td> 
    <td> <br /> </td> 
   </tr> 
@@ -1170,7 +1170,7 @@ Para obter mais informações, consulte [Ativação do arquivamento de email (no
   </tr> 
   <tr> 
    <td> runLevel<br /> </td> 
-   <td> Prioridade no início. Os módulos de baixa prioridade são iniciados pela primeira vez e interrompidos pela última vez. O módulo syslogd deve, portanto, ter a prioridade 0.<br /> </td> 
+   <td> Prioridade ao iniciar. Os módulos de baixa prioridade são os primeiros a serem iniciados e os últimos a serem interrompidos. O módulo syslogd deve, portanto, ter a prioridade 0.<br /> </td> 
    <td> Curto<br /> </td> 
    <td> 10º<br /> </td> 
   </tr> 
@@ -1223,7 +1223,7 @@ Estes são os diferentes parâmetros da variável **inMail** nó . Essa é a con
  <tbody> 
   <tr> 
    <td> args<br /> </td> 
-   <td> Parâmetros de arranque<br /> </td> 
+   <td> Parâmetros de inicialização<br /> </td> 
    <td> Cadeia de caracteres<br /> </td> 
    <td> <br /> </td> 
   </tr> 
@@ -1265,7 +1265,7 @@ Estes são os diferentes parâmetros da variável **inMail** nó . Essa é a con
   </tr> 
   <tr> 
    <td> initScript<br /> </td> 
-   <td> ID do JavaScript a ser executado ao iniciar o processo.<br /> </td> 
+   <td> ID do JavaScript a ser executada ao iniciar o processo.<br /> </td> 
    <td> Cadeia de caracteres<br /> </td> 
    <td> <br /> </td> 
   </tr> 
@@ -1331,7 +1331,7 @@ Estes são os diferentes parâmetros da variável **inMail** nó . Essa é a con
   </tr> 
   <tr> 
    <td> runLevel<br /> </td> 
-   <td> Prioridade no início. Os módulos de baixa prioridade são iniciados pela primeira vez e interrompidos pela última vez. O módulo syslogd deve, portanto, ter a prioridade 0.<br /> </td> 
+   <td> Prioridade ao iniciar. Os módulos de baixa prioridade são os primeiros a serem iniciados e os últimos a serem interrompidos. O módulo syslogd deve, portanto, ter a prioridade 0.<br /> </td> 
    <td> Curto<br /> </td> 
    <td> 10º<br /> </td> 
   </tr> 
@@ -1385,7 +1385,7 @@ Para obter mais informações, consulte [Interação - buffer de dados](../../in
  <tbody> 
   <tr> 
    <td> args<br /> </td> 
-   <td> Parâmetros de arranque<br /> </td> 
+   <td> Parâmetros de inicialização<br /> </td> 
    <td> Cadeia de caracteres<br /> </td> 
    <td> <br /> </td> 
   </tr> 
@@ -1403,7 +1403,7 @@ Para obter mais informações, consulte [Interação - buffer de dados](../../in
   </tr> 
   <tr> 
    <td> initScript<br /> </td> 
-   <td> ID do JavaScript a ser executado ao iniciar o processo<br /> </td> 
+   <td> ID do JavaScript a ser executada ao iniciar o processo<br /> </td> 
    <td> Cadeia de caracteres<br /> </td> 
    <td> <br /> </td> 
   </tr> 
@@ -1439,7 +1439,7 @@ Para obter mais informações, consulte [Interação - buffer de dados](../../in
   </tr> 
   <tr> 
    <td> runLevel<br /> </td> 
-   <td> Prioridade no início. Os módulos de baixa prioridade são iniciados pela primeira vez e interrompidos pela última vez. O módulo syslogd deve, portanto, ter a prioridade 0.<br /> </td> 
+   <td> Prioridade ao iniciar. Os módulos de baixa prioridade são os primeiros a serem iniciados e os últimos a serem interrompidos. O módulo syslogd deve, portanto, ter a prioridade 0.<br /> </td> 
    <td> Curto<br /> </td> 
    <td> 10º<br /> </td> 
   </tr> 
@@ -1474,7 +1474,7 @@ Estes são os diferentes parâmetros da variável **mta** nó . Essa é a config
  <tbody> 
   <tr> 
    <td> args<br /> </td> 
-   <td> Parâmetros de arranque<br /> </td> 
+   <td> Parâmetros de inicialização<br /> </td> 
    <td> Cadeia de caracteres<br /> </td> 
    <td> '-tracefilter:nlmta' <br /> </td> 
   </tr> 
@@ -1510,7 +1510,7 @@ Estes são os diferentes parâmetros da variável **mta** nó . Essa é a config
   </tr> 
   <tr> 
    <td> initScript<br /> </td> 
-   <td> ID do JavaScript a ser executado ao iniciar o processo.<br /> </td> 
+   <td> ID do JavaScript a ser executada ao iniciar o processo.<br /> </td> 
    <td> Cadeia de caracteres<br /> </td> 
    <td> <br /> </td> 
   </tr> 
@@ -1588,7 +1588,7 @@ Estes são os diferentes parâmetros da variável **mta** nó . Essa é a config
   </tr> 
   <tr> 
    <td> runLevel<br /> </td> 
-   <td> Prioridade no início. Os módulos de baixa prioridade são iniciados pela primeira vez e interrompidos pela última vez. O módulo syslogd deve, portanto, ter a prioridade 0.<br /> </td> 
+   <td> Prioridade ao iniciar. Os módulos de baixa prioridade são os primeiros a serem iniciados e os últimos a serem interrompidos. O módulo syslogd deve, portanto, ter a prioridade 0.<br /> </td> 
    <td> Curto<br /> </td> 
    <td> 10º<br /> </td> 
   </tr> 
@@ -1736,7 +1736,7 @@ Para obter mais informações, consulte [seção](../../installation/using/confi
  <tbody> 
   <tr> 
    <td> dataBasePoolPeriodSec<br /> </td> 
-   <td> Frequência de sondagem do banco de dados dos trabalhos a serem entregues. Esse valor indica a frequência de polling do banco de dados (em segundos). Para obter a lista de tarefas aguardando entrega, o MTA pesquisa o banco de dados regularmente. Quando não há trabalho em espera, o período de pesquisa é definido por esse valor. Caso contrário, se um trabalho tiver sido transferido para um servidor filho, essa duração da pesquisa será automaticamente reduzida para um segundo para que um novo trabalho possa ser processado novamente o mais rápido possível, ou seja, assim que um servidor filho estiver disponível novamente. Isso não significa que a consulta do banco de dados será feita a cada segundo até que um servidor filho esteja disponível novamente. Na verdade, o acesso a um banco de dados só é feito quando pelo menos um servidor filho estiver disponível.<br /> </td> 
+   <td> Frequência de sondagem do banco de dados dos processos a serem entregues. Esse valor indica a frequência de sondagem do banco de dados (em segundos). Para obter a lista de processos que aguardam entrega, o MTA consulta o banco de dados regularmente. Quando não há processos aguardando, o período de sondagem é definido por esse valor. Caso contrário, se um processo tiver sido transferido para um servidor secundário, essa duração de sondagem será reduzida automaticamente para um segundo, de modo que um novo processo possa ser executado novamente o mais rápido possível, ou seja, assim que um servidor secundário estiver disponível novamente. Isso não significa que a consulta do banco de dados será feita a cada segundo até que um servidor secundário esteja disponível novamente. Na verdade, o acesso ao banco de dados só é feito quando pelo menos um servidor secundário se torna disponível.<br /> </td> 
    <td> Longo<br /> </td> 
    <td> 30º<br /> </td> 
   </tr> 
@@ -1754,7 +1754,7 @@ Para obter mais informações, consulte [seção](../../installation/using/confi
   </tr> 
   <tr> 
    <td> maxSpareServers<br /> </td> 
-   <td> Número máximo de servidores filhos. Representa o número máximo de servidores em execução. É recomendável limitar esse número a um nível ideal compatível com os recursos de memória do servidor. Isso pode ser verificado durante um delivery. A memória usada não deve exceder um terço de uma memória física disponível, caso contrário a troca será usada. Consulte <a href="../../installation/using/configuring-campaign-server.md#mta-child-processes" target="_blank">Processos filho MTA</a>.<br /> </td> 
+   <td> Número máximo de servidores filhos. Representa o número máximo de servidores em execução. É recomendável limitar esse número a um nível ideal compatível com os recursos de memória do servidor. Isso pode ser verificado durante uma entrega. A memória usada não deve exceder um terço da memória física disponível, caso contrário, a memória virtual será usada. Consulte <a href="../../installation/using/configuring-campaign-server.md#mta-child-processes" target="_blank">Processos filho MTA</a>.<br /> </td> 
    <td> Longo<br /> </td> 
    <td> 2<br /> </td> 
   </tr> 
@@ -1833,7 +1833,7 @@ Para obter mais informações, consulte [Otimização do envio de email](../../i
   </tr> 
   <tr> 
    <td> soapConnectorTimeoutSec<br /> </td> 
-   <td> Tempo limite (em segundos) após o qual uma conexão SOAP para um conector de delivery é abandonada.<br /> </td> 
+   <td> Tempo limite (em segundos) após o qual uma conexão SOAP de um conector de entrega é abandonada.<br /> </td> 
    <td> Longo<br /> </td> 
    <td> 600<br /> </td> 
   </tr> 
@@ -1866,7 +1866,7 @@ No **mta > filho > smtp** , configure os seguintes parâmetros. Esta é a config
  <tbody> 
   <tr> 
    <td> enableTLS<br /> </td> 
-   <td> Ativa a entrega de emails no modo de segurança (STARTTLS/SMTPS) quando suportado pelo servidor remoto.<br /> </td> 
+   <td> Ativa a entrega de emails no modo de segurança (STARTTLS/SMTPS) quando permitido pelo servidor remoto.<br /> </td> 
    <td> Booleano<br /> </td> 
    <td> false<br /> </td> 
   </tr> 
@@ -1884,7 +1884,7 @@ No **mta > filho > smtp** , configure os seguintes parâmetros. Esta é a config
   </tr> 
   <tr> 
    <td> maxSessionsPerChild<br /> </td> 
-   <td> Número máximo de sessões SMTP por servidor filho. Para enviar uma mensagem, o MTA inicializa uma conexão SMTP com o MTA do recipient. O número máximo de sessões SMTP simultâneas e ativas para um determinado servidor filho é limitado por esse valor. Se você multiplicar esse valor por maxSpareServers, obterá o número máximo de mensagens que podem ser processadas simultaneamente por um determinado servidor filho.<br /> </td> 
+   <td> Número máximo de sessões SMTP por servidor filho. Para entregar uma mensagem, o MTA inicializa uma conexão SMTP com o MTA do destinatário. O número máximo de sessões SMTP simultâneas e ativas para um determinado servidor secundário é limitado por esse valor. Se você multiplicar esse valor por maxSpareServers, obterá o número máximo de mensagens que podem ser processadas simultaneamente por um determinado servidor secundário.<br /> </td> 
    <td> Longo<br /> </td> 
    <td> 1000<br /> </td> 
   </tr> 
@@ -2043,7 +2043,7 @@ Estes são os diferentes parâmetros da variável **pipeline** nó . Esta é a c
   </tr> 
   <tr> 
    <td> args<br /> </td> 
-   <td> Parâmetros de arranque<br /> </td> 
+   <td> Parâmetros de inicialização<br /> </td> 
    <td> Cadeia de caracteres<br /> </td> 
    <td> <br /> </td> 
   </tr> 
@@ -2091,7 +2091,7 @@ Estes são os diferentes parâmetros da variável **pipeline** nó . Esta é a c
   </tr> 
   <tr> 
    <td> initScript<br /> </td> 
-   <td> ID do JavaScript a ser executado ao iniciar o processo.<br /> </td> 
+   <td> ID do JavaScript a ser executada ao iniciar o processo.<br /> </td> 
    <td> Cadeia de caracteres<br /> </td> 
    <td> <br /> </td> 
   </tr> 
@@ -2157,7 +2157,7 @@ Estes são os diferentes parâmetros da variável **pipeline** nó . Esta é a c
   </tr> 
   <tr> 
    <td> runLevel<br /> </td> 
-   <td> Prioridade no início. Os módulos de baixa prioridade são iniciados pela primeira vez e interrompidos pela última vez. O módulo syslogd deve, portanto, ter a prioridade 0.<br /> </td> 
+   <td> Prioridade ao iniciar. Os módulos de baixa prioridade são os primeiros a serem iniciados e os últimos a serem interrompidos. O módulo syslogd deve, portanto, ter a prioridade 0.<br /> </td> 
    <td> Curto<br /> </td> 
    <td> 10º<br /> </td> 
   </tr> 
@@ -2344,7 +2344,7 @@ Estes são os diferentes parâmetros da variável **sms** nó . Essa é a config
  <tbody> 
   <tr> 
    <td> args<br /> </td> 
-   <td> Parâmetros de arranque<br /> </td> 
+   <td> Parâmetros de inicialização<br /> </td> 
    <td> Cadeia de caracteres<br /> </td> 
    <td> <br /> </td> 
   </tr> 
@@ -2368,7 +2368,7 @@ Estes são os diferentes parâmetros da variável **sms** nó . Essa é a config
   </tr> 
   <tr> 
    <td> initScript<br /> </td> 
-   <td> ID do JavaScript a ser executado ao iniciar o processo.<br /> </td> 
+   <td> ID do JavaScript a ser executada ao iniciar o processo.<br /> </td> 
    <td> Cadeia de caracteres<br /> </td> 
    <td> <br /> </td> 
   </tr> 
@@ -2410,7 +2410,7 @@ Estes são os diferentes parâmetros da variável **sms** nó . Essa é a config
   </tr> 
   <tr> 
    <td> runLevel<br /> </td> 
-   <td> Prioridade no início. Os módulos de baixa prioridade são iniciados pela primeira vez e interrompidos pela última vez. O módulo syslogd deve, portanto, ter a prioridade 0.<br /> </td> 
+   <td> Prioridade ao iniciar. Os módulos de baixa prioridade são os primeiros a serem iniciados e os últimos a serem interrompidos. O módulo syslogd deve, portanto, ter a prioridade 0.<br /> </td> 
    <td> Curto<br /> </td> 
    <td> 10º<br /> </td> 
   </tr> 
@@ -2468,7 +2468,7 @@ Estes são os diferentes parâmetros da variável **stat** nó . Esta é a confi
  <tbody> 
   <tr> 
    <td> args<br /> </td> 
-   <td> Parâmetros de arranque<br /> </td> 
+   <td> Parâmetros de inicialização<br /> </td> 
    <td> Cadeia de caracteres<br /> </td> 
    <td> <br /> </td> 
   </tr> 
@@ -2480,7 +2480,7 @@ Estes são os diferentes parâmetros da variável **stat** nó . Esta é a confi
   </tr> 
   <tr> 
    <td> initScript<br /> </td> 
-   <td> ID do JavaScript a ser executado ao iniciar o processo.<br /> </td> 
+   <td> ID do JavaScript a ser executada ao iniciar o processo.<br /> </td> 
    <td> Cadeia de caracteres<br /> </td> 
    <td> <br /> </td> 
   </tr> 
@@ -2510,7 +2510,7 @@ Estes são os diferentes parâmetros da variável **stat** nó . Esta é a confi
   </tr> 
   <tr> 
    <td> runLevel<br /> </td> 
-   <td> Prioridade no início. Os módulos de baixa prioridade são iniciados pela primeira vez e interrompidos pela última vez. O módulo syslogd deve, portanto, ter a prioridade 0.<br /> </td> 
+   <td> Prioridade ao iniciar. Os módulos de baixa prioridade são os primeiros a serem iniciados e os últimos a serem interrompidos. O módulo syslogd deve, portanto, ter a prioridade 0.<br /> </td> 
    <td> Curto<br /> </td> 
    <td> 10º<br /> </td> 
   </tr> 
@@ -2533,7 +2533,7 @@ Estes são os diferentes parâmetros da variável **syslogd** nó . Esta é a co
  <tbody> 
   <tr> 
    <td> args<br /> </td> 
-   <td> Parâmetros de arranque<br /> </td> 
+   <td> Parâmetros de inicialização<br /> </td> 
    <td> Cadeia de caracteres<br /> </td> 
    <td> <br /> </td> 
   </tr> 
@@ -2545,7 +2545,7 @@ Estes são os diferentes parâmetros da variável **syslogd** nó . Esta é a co
   </tr> 
   <tr> 
    <td> initScript<br /> </td> 
-   <td> ID do JavaScript a ser executado ao iniciar o processo.<br /> </td> 
+   <td> ID do JavaScript a ser executada ao iniciar o processo.<br /> </td> 
    <td> Cadeia de caracteres<br /> </td> 
    <td> <br /> </td> 
   </tr> 
@@ -2581,7 +2581,7 @@ Estes são os diferentes parâmetros da variável **syslogd** nó . Esta é a co
   </tr> 
   <tr> 
    <td> runLevel<br /> </td> 
-   <td> Prioridade no início. Os módulos de baixa prioridade são iniciados pela primeira vez e interrompidos pela última vez. O módulo syslogd deve, portanto, ter a prioridade 0.<br /> </td> 
+   <td> Prioridade ao iniciar. Os módulos de baixa prioridade são os primeiros a serem iniciados e os últimos a serem interrompidos. O módulo syslogd deve, portanto, ter a prioridade 0.<br /> </td> 
    <td> Curto<br /> </td> 
    <td> 10º<br /> </td> 
   </tr> 
@@ -2604,7 +2604,7 @@ Estes são os diferentes parâmetros da variável **tracking** nó . Essa é a c
  <tbody> 
   <tr> 
    <td> args<br /> </td> 
-   <td> Parâmetros de arranque<br /> </td> 
+   <td> Parâmetros de inicialização<br /> </td> 
    <td> Cadeia de caracteres<br /> </td> 
    <td> <br /> </td> 
   </tr> 
@@ -2652,7 +2652,7 @@ Estes são os diferentes parâmetros da variável **tracking** nó . Essa é a c
   </tr> 
   <tr> 
    <td> initScript<br /> </td> 
-   <td> ID do JavaScript a ser executado ao iniciar o processo <br /> </td> 
+   <td> ID do JavaScript a ser executada ao iniciar o processo <br /> </td> 
    <td> Cadeia de caracteres<br /> </td> 
    <td> <br /> </td> 
   </tr> 
@@ -2694,7 +2694,7 @@ Estes são os diferentes parâmetros da variável **tracking** nó . Essa é a c
   </tr> 
   <tr> 
    <td> runLevel<br /> </td> 
-   <td> Prioridade no início. Os módulos de baixa prioridade são iniciados pela primeira vez e interrompidos pela última vez. O módulo syslogd deve, portanto, ter a prioridade 0.<br /> </td> 
+   <td> Prioridade ao iniciar. Os módulos de baixa prioridade são os primeiros a serem iniciados e os últimos a serem interrompidos. O módulo syslogd deve, portanto, ter a prioridade 0.<br /> </td> 
    <td> Curto<br /> </td> 
    <td> 10º<br /> </td> 
   </tr> 
@@ -2735,7 +2735,7 @@ Estes são os diferentes parâmetros da variável **trackinglogd** nó . Esta é
  <tbody> 
   <tr> 
    <td> args<br /> </td> 
-   <td> Parâmetros de arranque<br /> </td> 
+   <td> Parâmetros de inicialização<br /> </td> 
    <td> Cadeia de caracteres<br /> </td> 
    <td> <br /> </td> 
   </tr> 
@@ -2747,7 +2747,7 @@ Estes são os diferentes parâmetros da variável **trackinglogd** nó . Esta é
   </tr> 
   <tr> 
    <td> initScript<br /> </td> 
-   <td> ID do JavaScript a ser executado ao iniciar o processo <br /> </td> 
+   <td> ID do JavaScript a ser executada ao iniciar o processo <br /> </td> 
    <td> Cadeia de caracteres<br /> </td> 
    <td> <br /> </td> 
   </tr> 
@@ -2795,7 +2795,7 @@ Estes são os diferentes parâmetros da variável **trackinglogd** nó . Esta é
   </tr> 
   <tr> 
    <td> runLevel<br /> </td> 
-   <td> Prioridade no início. Os módulos de baixa prioridade são iniciados pela primeira vez e interrompidos pela última vez. O módulo syslogd deve, portanto, ter a prioridade 0.<br /> </td> 
+   <td> Prioridade ao iniciar. Os módulos de baixa prioridade são os primeiros a serem iniciados e os últimos a serem interrompidos. O módulo syslogd deve, portanto, ter a prioridade 0.<br /> </td> 
    <td> Curto<br /> </td> 
    <td> 10º<br /> </td> 
   </tr> 
@@ -2844,7 +2844,7 @@ Para obter mais informações, consulte [seção](configuring-campaign-server.md
   </tr> 
   <tr> 
    <td> args<br /> </td> 
-   <td> Parâmetros de arranque<br /> </td> 
+   <td> Parâmetros de inicialização<br /> </td> 
    <td> Cadeia de caracteres<br /> </td> 
    <td> <br /> </td> 
   </tr> 
@@ -2868,7 +2868,7 @@ Para obter mais informações, consulte [seção](configuring-campaign-server.md
   </tr> 
   <tr> 
    <td> initScript<br /> </td> 
-   <td> ID do JavaScript a ser executado ao iniciar o processo.<br /> </td> 
+   <td> ID do JavaScript a ser executada ao iniciar o processo.<br /> </td> 
    <td> Cadeia de caracteres<br /> </td> 
    <td> <br /> </td> 
   </tr> 
@@ -2904,7 +2904,7 @@ Para obter mais informações, consulte [seção](configuring-campaign-server.md
   </tr> 
   <tr> 
    <td> runLevel<br /> </td> 
-   <td> Prioridade no início. Os módulos de baixa prioridade são iniciados pela primeira vez e interrompidos pela última vez. O módulo syslogd deve, portanto, ter a prioridade 0.<br /> </td> 
+   <td> Prioridade ao iniciar. Os módulos de baixa prioridade são os primeiros a serem iniciados e os últimos a serem interrompidos. O módulo syslogd deve, portanto, ter a prioridade 0.<br /> </td> 
    <td> Curto<br /> </td> 
    <td> 10º<br /> </td> 
   </tr> 
@@ -3321,6 +3321,12 @@ Para obter mais informações, consulte [seção](../../installation/using/deplo
    <td> 100<br /> </td> 
   </tr> 
   <tr> 
+   <td> showSourceIP<br /> </td> 
+   <td> Quando definido como false, o valor de sourceIP na resposta retornada por r/test é uma string vazia. <br /> </td> 
+   <td> Booleano<br /> </td> 
+   <td> true<br /> </td> 
+  </tr> 
+  <tr> 
    <td> startRedirect<br /> </td> 
    <td> Inicie o serviço de redirecionamento.<br /> </td> 
    <td> Booleano<br /> </td> 
@@ -3429,7 +3435,7 @@ Para obter mais informações, consulte [Fluxos de trabalho e afinidades de alta
   </tr> 
   <tr> 
    <td> args<br /> </td> 
-   <td> Parâmetros de arranque<br /> </td> 
+   <td> Parâmetros de inicialização<br /> </td> 
    <td> Cadeia de caracteres<br /> </td> 
    <td> <br /> </td> 
   </tr> 
@@ -3447,7 +3453,7 @@ Para obter mais informações, consulte [Fluxos de trabalho e afinidades de alta
   </tr> 
   <tr> 
    <td> initScript<br /> </td> 
-   <td> ID do JavaScript a ser executado ao iniciar o processo.<br /> </td> 
+   <td> ID do JavaScript a ser executada ao iniciar o processo.<br /> </td> 
    <td> Cadeia de caracteres<br /> </td> 
    <td> <br /> </td> 
   </tr> 
@@ -3477,7 +3483,7 @@ Para obter mais informações, consulte [Fluxos de trabalho e afinidades de alta
   </tr> 
   <tr> 
    <td> runLevel<br /> </td> 
-   <td> Prioridade no início. Os módulos de baixa prioridade são iniciados pela primeira vez e interrompidos pela última vez. O módulo syslogd deve, portanto, ter a prioridade 0.<br /> </td> 
+   <td> Prioridade ao iniciar. Os módulos de baixa prioridade são os primeiros a serem iniciados e os últimos a serem interrompidos. O módulo syslogd deve, portanto, ter a prioridade 0.<br /> </td> 
    <td> Curto<br /> </td> 
    <td> 10º<br /> </td> 
   </tr> 

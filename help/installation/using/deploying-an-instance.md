@@ -6,10 +6,10 @@ audience: installation
 content-type: reference
 topic-tags: initial-configuration
 exl-id: 8b07447c-9a86-4b56-8d29-e0b01357a6ec
-source-git-commit: f000cb8bae164c22d1ede15db4e763cf50530674
+source-git-commit: 11e175c737d9c6cbb9432ec7835f35ee0e00a5c0
 workflow-type: tm+mt
-source-wordcount: '3048'
-ht-degree: 3%
+source-wordcount: '3140'
+ht-degree: 4%
 
 ---
 
@@ -78,10 +78,10 @@ Esses parâmetros podem ser sobrecarregados nos templates do delivery e individu
 
 Indique os seguintes parâmetros:
 
-* **[!UICONTROL Sender name]** : Nome do remetente,
-* **[!UICONTROL Sender address]** : O endereço do remetente,
-* **[!UICONTROL Reply address text]** : O nome, que é personalizável, que será usado quando o recipient clicar no botão **[!UICONTROL Reply]** no software cliente de email,
-* **[!UICONTROL Reply address]** : O endereço de email a ser usado quando o recipient clicar no **[!UICONTROL Reply]** no software cliente de email,
+* **[!UICONTROL Sender name]** : Nome do remetente
+* **[!UICONTROL Sender address]** : Endereço do remetente
+* **[!UICONTROL Reply address text]** : O nome, que é personalizável, que será usado quando o recipient clicar no botão **[!UICONTROL Reply]** botão no software cliente de email
+* **[!UICONTROL Reply address]** : O endereço de email a ser usado quando o recipient clicar no **[!UICONTROL Reply]** botão no software cliente de email
 * **[!UICONTROL Error address]** : Endereço de email de mensagens com erros. Esse é o endereço técnico usado para lidar com emails de devolução, incluindo emails recebidos pelo servidor do Adobe Campaign devido a endereços de destino inexistentes.
 
 Além disso, você pode especificar a variável **máscaras** autorizado para o endereço do remetente e o endereço de erro. Se necessário, essas máscaras podem ser separadas usando vírgulas. Essa configuração é opcional. Quando os campos são inseridos, o Adobe Campaign verifica no momento do delivery (durante a análise, se o endereço não inclui nenhuma variável) se os endereços são válidos. Esse modo operacional garante que não sejam usados endereços que possam causar problemas de delivery. Os endereços de delivery devem ser configurados no servidor de delivery.
@@ -106,14 +106,22 @@ Essa janela permite definir, para todas as campanhas de email, as opções de ge
 
 As seguintes opções estão disponíveis:
 
-* **[!UICONTROL Delivery duration of messages]** : Além desse tempo, o delivery é interrompido (por padrão, 5 dias),
-* **[!UICONTROL Online resources validity duration]** : Tempo para o qual as informações do perfil do recipient são mantidas para gerar mirror pages,
-* **[!UICONTROL Exclude recipients who no longer wish to be contacted]** : Quando essa opção é selecionada, os recipients lista de bloqueios não serão contatados,
+* **[!UICONTROL Delivery duration of messages]** : Além desse tempo, o delivery é interrompido (por padrão, 5 dias).
+* **[!UICONTROL Online resources validity duration]** : Tempo para o qual as informações do perfil do recipient são mantidas para gerar mirror pages.
+* **[!UICONTROL Exclude recipients who no longer wish to be contacted]** : Quando essa opção é selecionada, os recipients lista de bloqueios não serão contatados.
 * **[!UICONTROL Automatically ignore doubles]** : Quando essa opção é selecionada, o delivery não será feito para duplicar endereços.
+
+>[!NOTE]
+>
+>Para instalações hospedadas ou híbridas, se você tiver atualizado para a variável [MTA aprimorado](../../delivery/using/sending-with-enhanced-mta.md), o **[!UICONTROL Delivery duration of the messages]** será usada somente se definida como **3,5 dias ou menos**. Se você definir um valor superior a 3,5 dias, ele não será levado em consideração.
 
 ### Parâmetros de nova tentativa {#retry-parameters}
 
 As informações sobre as recuperações são fornecidas no **Períodos de recuperação** e **Número de recuperações** campos: quando um recipient está inacessível, por exemplo, se sua caixa de entrada estiver cheia, por padrão, o programa tentará entrar em contato com ele 5 vezes, com um intervalo de uma hora entre cada tentativa (durante o tempo máximo de delivery). Esses valores podem ser alterados para atender às suas necessidades.
+
+>[!NOTE]
+>
+>Para instalações hospedadas ou híbridas, se você tiver atualizado para a variável [MTA aprimorado](../../delivery/using/sending-with-enhanced-mta.md), os parâmetros de nova tentativa do Campaign não são mais usados. As tentativas de rejeição em modo suave e o tempo entre elas são determinados pelo MTA aprimorado com base no tipo e na gravidade das respostas de rejeição provenientes do domínio de email da mensagem.
 
 ### Parâmetros de quarentena {#quarantine-parameters}
 
@@ -147,7 +155,7 @@ Depois que as configurações de POP forem especificadas, clique em **Teste** pa
 
 ### Emails de devolução não processados {#unprocessed-bounce-mails}
 
-As rejeições são feitas automaticamente pela Adobe Campaign, aplicando as regras listadas na **Administração > Gerenciamento de campanhas > Gerenciamento de não entregáveis > Qualificação do log de delivery** nó . Para obter mais informações, consulte [Gestão de emails de devolução](../../delivery/using/understanding-delivery-failures.md#bounce-mail-management).
+As rejeições são feitas automaticamente pela Adobe Campaign, aplicando as regras listadas na **Administração > Campaign Management > Gerenciamento de não entregáveis > Qualificação do log de delivery** nó . Para obter mais informações, consulte [Gestão de emails de devolução](../../delivery/using/understanding-delivery-failures.md#bounce-mail-management).
 
 As rejeições não processadas não são exibidas na interface do Adobe Campaign. Eles são excluídos automaticamente, a menos que sejam transferidos para uma caixa de entrada de terceiros usando os seguintes campos:
 
@@ -270,7 +278,7 @@ A próxima etapa permite definir configurações padrão para deliveries a dispo
 
 ![](assets/s_ncs_install_deployment_wiz_12.png)
 
-### Conta padrão para delivery de SMS {#default-account-for-sms-delivery}
+### Conta padrão para entrega por SMS {#default-account-for-sms-delivery}
 
 Insira a seguinte informação:
 

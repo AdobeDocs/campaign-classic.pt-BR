@@ -6,10 +6,10 @@ audience: migration
 content-type: reference
 topic-tags: migration-procedure
 exl-id: 228ee9e4-46a0-4d82-b8ba-b019bc0e7cac
-source-git-commit: 59a2bc62b4c03ef0702cb57bd9dc808e7d0b444b
+source-git-commit: 2594e4943ba24ae65d1fc005da589dc674aa2b0f
 workflow-type: tm+mt
-source-wordcount: '755'
-ht-degree: 3%
+source-wordcount: '706'
+ht-degree: 4%
 
 ---
 
@@ -124,7 +124,7 @@ As seguintes expressões são pesquisadas (diferencia maiúsculas de minúsculas
    <td> .@<br /> </td> 
    <td> PU-0001<br /> </td> 
    <td> Aviso<br /> </td> 
-   <td> Esse tipo de sintaxe não é mais compatível na personalização de delivery. Consulte <a href="../../migration/using/general-configurations.md#javascript" target="_blank">JavaScript</a>. Caso contrário, verifique se o tipo de valor está correto.<br /> </td> 
+   <td> Esse tipo de sintaxe não é mais compatível na personalização de delivery. <br /> </td> 
   </tr> 
   <tr> 
    <td> common.js<br /> </td> 
@@ -136,7 +136,7 @@ As seguintes expressões são pesquisadas (diferencia maiúsculas de minúsculas
    <td> logon(<br /> </td> 
    <td> PU-0003<br /> </td> 
    <td> Aviso<br /> </td> 
-   <td> Este método de conexão não deve mais ser usado. Consulte <a href="../../migration/using/general-configurations.md#identified-web-applications" target="_blank">Aplicações web identificadas</a>.<br /> </td> 
+   <td> Este método de conexão não deve mais ser usado.<br /> </td> 
   </tr> 
   <tr> 
    <td> novo SoapMethodCall(<br /> </td> 
@@ -148,14 +148,8 @@ As seguintes expressões são pesquisadas (diferencia maiúsculas de minúsculas
    <td> sql=<br /> </td> 
    <td> PU-0005<br /> </td> 
    <td> Erro<br /> </td> 
-   <td> Esse tipo de erro gera uma falha de migração. Consulte <a href="../../migration/using/general-configurations.md#sqldata" target="_blank">SQLData</a>.<br /> </td> 
+   <td> Esse tipo de erro gera uma falha de migração.<br /> </td> 
   </tr> 
-  <tr> 
-   <td> SQLDATA<br /> </td> 
-   <td> PU-0006<br /> </td> 
-   <td> Erro<br /> </td> 
-   <td> Esse tipo de erro gera uma falha de migração. Consulte <a href="../../migration/using/general-configurations.md#sqldata" target="_blank">SQLData</a>. Se você obtiver logs de erro de aplicativos web do tipo visão geral (migração da v6.02), consulte <a href="../../migration/using/configuring-your-platform.md#specific-configurations-in-v5-11" target="_blank">Configurar Campanha</a>.<br /> </td> 
-  </tr>
   <tr> 
    <td> crmDeploymentType="onpremise"<br /> </td> 
    <td> PU-0007<br /> </td> 

@@ -6,10 +6,10 @@ audience: installation
 content-type: reference
 topic-tags: initial-configuration
 exl-id: 236afdfe-fb23-4ebb-b000-76e14bf01d9e
-source-git-commit: 4ff86349d6b8966273585bf2a1ea0d785a7e87cb
+source-git-commit: 2594e4943ba24ae65d1fc005da589dc674aa2b0f
 workflow-type: tm+mt
-source-wordcount: '598'
-ht-degree: 1%
+source-wordcount: '638'
+ht-degree: 0%
 
 ---
 
@@ -30,6 +30,10 @@ Para limitar os formatos possíveis, substitua o valor do atributo por uma expre
 Por exemplo: **uploadWhiteList=&quot;.&#42;.png.&#42;.jpg&quot;** O permitirá carregar os formatos PNG e JPG no servidor. Nenhum outro formato será aceito.
 
 Você também pode impedir que arquivos importantes sejam carregados configurando o Servidor Web. [Saiba mais](web-server-configuration.md)
+
+>[!NOTE]
+>
+>O **uploadWhiteList** restringe os tipos de arquivo disponíveis para upload no servidor do Adobe Campaign. No entanto, quando o modo de publicação for **Servidor(es) de rastreamento** ou **Outros servidores Adobe Campaign**, o **uploadWhitelist** também deve ser atualizado nesses servidores.
 
 ## Configuração da conexão proxy {#proxy-connection-configuration}
 

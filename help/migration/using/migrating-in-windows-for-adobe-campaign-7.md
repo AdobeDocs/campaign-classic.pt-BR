@@ -6,9 +6,9 @@ audience: migration
 content-type: reference
 topic-tags: migrating-to-adobe-campaign-7
 exl-id: 3743d018-3316-4ce3-ae1c-25760aaf5785
-source-git-commit: 63aca25a8d1ae24ef83849b35a44d1b37cfa5e96
+source-git-commit: 2594e4943ba24ae65d1fc005da589dc674aa2b0f
 workflow-type: tm+mt
-source-wordcount: '1504'
+source-wordcount: '1092'
 ht-degree: 0%
 
 ---
@@ -49,11 +49,15 @@ Primeiro, pare todos os processos com acesso ao banco de dados em todas as máqu
    net stop nlserver6
    ```
 
-   Se você estiver migrando da v5.11, execute o seguinte comando:
+<!--
+
+   If you are migrating from v5.11, run the following command:
 
    ```
    net stop nlserver5
    ```
+
+-->
 
 1. Para cada servidor, verifique se os serviços da Adobe Campaign foram interrompidos corretamente. Faça logon com direitos de administrador e execute o seguinte comando:
 
@@ -83,12 +87,14 @@ Primeiro, pare todos os processos com acesso ao banco de dados em todas as máqu
 
 ## Faça o backup do banco de dados do Campaign {#back-up-the-database}
 
-O procedimento depende da versão anterior do Adobe Campaign.
+Este é o procedimento para fazer backup do Adobe Campaign v6.1.
 
-### Para Adobe Campaign v5.11 {#migrating-from-adobe-campaign-v5-11}
+<!--
 
-1. Faça um backup do banco de dados do Adobe Campaign.
-1. Faça um backup do **Neolane v5** diretório usando o seguinte comando:
+### For Adobe Campaign v5.11 {#migrating-from-adobe-campaign-v5-11}
+
+1. Make a backup of the Adobe Campaign database.
+1. Make a backup of the **Neolane v5** directory using the following command:
 
    ```
    ren "Neolane v5" "Neolane v5.back"
@@ -96,15 +102,15 @@ O procedimento depende da versão anterior do Adobe Campaign.
 
    >[!IMPORTANT]
    >
-   >Como precaução, recomendamos que você compacte a variável **Neolane v5.back** e salvá-lo em outro local seguro que não seja o servidor.
+   >As a precaution, we recommend that you zip the **Neolane v5.back** folder and save it elsewhere in a safe location other than the server.
 
-1. No console de gerenciamento do serviço do Windows, desative a inicialização automática do serviço do servidor de aplicativos 5.11. Você também pode usar o seguinte comando:
+1. In the windows service management console, disable the automatic startup of the 5.11 application server service. You can also use the following command:
 
    ```
    sc config nlserver5 start= disabled
    ```
 
-1. Edite o **config-`<instance name>`.xml** na **Neolane v5. back** para evitar que a variável **mta**, **wfserver**, **stat**, etc. de iniciar automaticamente. Por exemplo, substitua **autoStart** com **_autoStart**.
+1. Edit the **config-`<instance name>`.xml** (in the **Neolane v5. back** folder) to prevent the **mta**, **wfserver**, **stat**, etc. services from starting automatically. For instance, replace **autoStart** with **_autoStart**.
 
    ```
    <?xml version='1.0'?>
@@ -125,10 +131,13 @@ O procedimento depende da versão anterior do Adobe Campaign.
    </serverconf>
    ```
 
-### Para Adobe Campaign v6.02 {#migrating-from-adobe-campaign-v6-02}
+-->
 
-1. Faça um backup do banco de dados do Adobe Campaign.
-1. Faça um backup do **Neolane v6** diretório usando o seguinte comando:
+<!--
+### For Adobe Campaign v6.02 {#migrating-from-adobe-campaign-v6-02}
+
+1. Make a backup of the Adobe Campaign database.
+1. Make a backup of the **Neolane v6** directory using the following command:
 
    ```
    ren "Neolane v6" "Neolane v6.back"
@@ -136,15 +145,15 @@ O procedimento depende da versão anterior do Adobe Campaign.
 
    >[!IMPORTANT]
    >
-   >Como precaução, recomendamos que você compacte a variável **Neolane v6.back** e salvá-lo em outro local seguro que não seja o servidor.
+   >As a precaution, we recommend that you zip the **Neolane v6.back** folder and save it elsewhere in a safe location other than the server.
 
-1. No gerenciador de serviços do Windows, desative a inicialização automática do servidor de aplicativos 6.02. Você também pode usar o seguinte comando:
+1. In the Windows service manager, deactivate the 6.02 application server automatic startup. You can also use the following command:
 
    ```
    sc config nlserver6 start= disabled
    ```
 
-1. Edite o **config-`<instance name>`.xml** na **Neolane v6. back** para evitar que a variável **mta**, **wfserver**, **stat**, etc. de iniciar automaticamente. Por exemplo, substitua **autoStart** com **_autoStart**.
+1. Edit the **config-`<instance name>`.xml** (in the **Neolane v6. back** folder) to prevent the **mta**, **wfserver**, **stat**, etc. services from starting automatically. For instance, replace **autoStart** with **_autoStart**.
 
    ```
    <?xml version='1.0'?>
@@ -165,7 +174,7 @@ O procedimento depende da versão anterior do Adobe Campaign.
    </serverconf>
    ```
 
-### Para Adobe Campaign v6.1 {#migrating-from-adobe-campaign-v6-1}
+-->
 
 1. Faça um backup do banco de dados do Adobe Campaign.
 1. Faça um backup do **Adobe Campaign v6** diretório usando o seguinte comando:
@@ -327,9 +336,11 @@ Nesse estágio, o servidor IIS deve ser interrompido. Consulte [Parada de servi�
       >
       >As etapas de configuração do IIS a seguir estão detalhadas em [esta seção](../../installation/using/integration-into-a-web-server-for-windows.md#configuring-the-iis-web-server).
 
-## Zonas de segurança {#security-zones}
+<!--
+## Security zones {#security-zones}
 
-Se estiver migrando da v6.02 ou anterior, você deve configurar as zonas de segurança antes de iniciar os serviços. [Saiba mais](../../migration/using/general-configurations.md#security)
+If you are migrating from v6.02 or earlier, you must configure your security zones before starting services. [Learn more](../../migration/using/general-configurations.md#security)
+-->
 
 ## Reiniciar serviços {#re-starting-the-services}
 
@@ -339,49 +350,51 @@ Inicie os serviços IIS e Adobe Campaign em cada um dos seguintes servidores:
 1. Servidor Mid-sourcing.
 1. Servidor de marketing.
 
-Antes de prosseguir para a próxima etapa, execute um teste completo da nova instalação, verifique se não há regressões e se tudo funciona seguindo todas as recomendações em [esta página](../../migration/using/general-configurations.md).
+Antes de prosseguir para a próxima etapa, execute um teste completo da nova instalação, verifique se não há regressões e se tudo funciona.
 
 ## Excluir a versão anterior {#deleting-and-cleansing-adobe-campaign-previous-version}
 
-O procedimento depende da versão anterior do Adobe Campaign.
+Este é o procedimento para excluir o Adobe Campaign v6.1.
 
-### Para Adobe Campaign v5 {#adobe-campaign-v5}
+<!--
 
-Antes de excluir e limpar a instalação do Adobe Campaign v5, você deve aplicar as seguintes recomendações:
+### For Adobe Campaign v5 {#adobe-campaign-v5}
 
-* Obtenha as equipes funcionais para executar uma verificação completa da nova instalação.
-* Desinstale o Adobe Campaign v5 somente depois de ter certeza de que nenhuma reversão será necessária.
+Before you delete and cleanse the Adobe Campaign v5 installation, you must apply the following recommendations:
 
-1. No IIS, exclua o **Neolane v5** e depois o **Neolane v5** pool de aplicativos.
-1. Renomeie o **Neolane v5.back** pasta como **Neolane v5**.
-1. Desinstale o Adobe Campaign v5 usando o assistente Adicionar/remover componentes .
+* Get the functional teams to run a full check of the new installation.
+* Only uninstall Adobe Campaign v5 once you are certain that no rollback is necessary.
+
+1. In IIS, delete the **Neolane v5** website, then the **Neolane v5** application pool. 
+1. Rename the **Neolane v5.back** folder as **Neolane v5**.
+1. Uninstall Adobe Campaign v5 using the Add/remove components wizard. 
 
    ![](assets/migration_wizard_2.png)
 
-1. Exclua o **nlserver5** Serviço Windows usando o seguinte comando:
+1. Delete the **nlserver5** Windows service using the following command:
 
    ```
    sc delete nlserver5
    ```
 
-1. Reinicie o servidor.
+1. Re-start the server.
 
-### Para Adobe Campaign v6.02 {#adobe-campaign-v6-02}
+### For Adobe Campaign v6.02 {#adobe-campaign-v6-02}
 
-Antes de excluir e limpar a instalação do Adobe Campaign v6.02, você deve aplicar as seguintes recomendações:
+Before you delete and cleanse the Adobe Campaign v6.02 installation, you must apply the following recommendations:
 
-* Obtenha as equipes funcionais para executar uma verificação completa da nova instalação.
-* Desinstale o Adobe Campaign v6.02 somente quando tiver certeza de que nenhuma reversão será necessária.
+* Get the functional teams to run a full check of the new installation.
+* Only uninstall Adobe Campaign v6.02 once you are certain that no rollback is necessary.
 
-1. No IIS, exclua o **Neolane v6** e depois o **Neolane v6** pool de aplicativos.
-1. Renomeie o **Neolane v6.back** pasta como **Neolane v6**.
-1. Desinstale o Adobe Campaign v6.02 usando o assistente Adicionar/remover componentes .
+1. In IIS, delete the **Neolane v6** website, then the **Neolane v6** application pool. 
+1. Rename the **Neolane v6.back** folder as **Neolane v6**.
+1. Uninstall Adobe Campaign v6.02 using the Add/remove components wizard. 
 
    ![](assets/migration_wizard_2.png)
 
-1. Reinicie o servidor.
+1. Re-start the server.
 
-### Para Adobe Campaign v6.1 {#adobe-campaign-v6-1}
+-->
 
 Antes de excluir e limpar a instalação do Adobe Campaign v6, você deve aplicar as seguintes recomendações:
 
