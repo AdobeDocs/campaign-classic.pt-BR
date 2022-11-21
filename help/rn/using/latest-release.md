@@ -6,7 +6,7 @@ feature: Overview
 role: User
 level: Beginner
 exl-id: d65869ca-a785-4327-8e8d-791c28e4696c
-source-git-commit: 95c4a83037bcd2e22a03ac80d1ec4a7896a94ce3
+source-git-commit: d592902157b499423283307402eb74452d4827bc
 workflow-type: tm+mt
 source-wordcount: '2709'
 ht-degree: 75%
@@ -36,7 +36,6 @@ _21 de novembro de 2022_
 **Recursos obsoletos**
 
 * O Social Marketing com Facebook agora está obsoleto. Você pode usar a integração do Twitter para postar em redes sociais ou trabalhar com o Adobe para criar um canal personalizado.
-
 * O ACS Connector (Prime offer) agora está obsoleto. Você pode usar os recursos de exportação/importação do Campaign para extrair e injetar dados em ambos os produtos.
 
 Saiba mais na [página sobre recursos obsoletos e removidos](deprecated-features.md).
