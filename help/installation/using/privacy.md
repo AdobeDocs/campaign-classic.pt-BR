@@ -4,22 +4,17 @@ title: Privacidade
 description: Saiba mais sobre as práticas recomendadas relacionadas à privacidade
 feature: URL Personalization, Privacy
 exl-id: 0a3473bf-0528-486d-a799-8db86fece522
-source-git-commit: 197ac1322cb8f4f34d2670a29d622a21f407c90c
+source-git-commit: 0e57ffba9b8c7fd05843c3353d2c0d64cbc83b8b
 workflow-type: tm+mt
-source-wordcount: '861'
-ht-degree: 15%
+source-wordcount: '845'
+ht-degree: 14%
 
 ---
 
-# Privacidade {#privacy}
+# Personalização e privacidade {#privacy}
 
 ![](../../assets/v7-only.svg)
 
-## Solicitações de Privacidade
-
-O Adobe Campaign oferece um conjunto de ferramentas que ajuda na Conformidade da Privacidade para o GDPR e CCPA.
-
-Consulte [esta página](../../platform/using/privacy-management.md) para obter informações gerais sobre o que é o Gerenciamento de privacidade e as etapas de implementação no Adobe Campaign. Além disso, você encontrará as práticas recomendadas e uma visão geral do processo de usuários e personas.
 
 ## Personalização de URL {#url-personalization}
 
@@ -187,3 +182,8 @@ Para proteger suas páginas, siga estas etapas:
    Além do **robots.txt** é recomendável adicionar um **X-Robots-Tag** cabeçalho. Você pode fazer isso no Apache ou IIS e no **serverConf.xml** arquivo de configuração.
 
    Para obter mais informações, consulte [este artigo](https://developers.google.com/search/reference/robots_meta_tag).
+
+
+## Solicitações de Privacidade
+
+Consulte [esta página](../../platform/using/privacy-management.md) para obter informações gerais sobre o que é o Gerenciamento de privacidade e as etapas de implementação no Adobe Campaign. Além disso, você encontrará as práticas recomendadas e uma visão geral do processo de usuários e personas.
