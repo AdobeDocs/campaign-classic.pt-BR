@@ -4,7 +4,8 @@ title: Nota técnica - Atualizações do sistema Adobe Campaign
 description: Atualização do sistema Adobe Campaign
 hide: true
 hidefromtoc: true
-source-git-commit: b877625c568cc9b1119a76812e92dffdab1f4bb1
+exl-id: 78949d94-60b3-44f1-8e5a-d61b5b723e87
+source-git-commit: 1b7b216c22d48159a1590603de220714c1d7cf32
 workflow-type: tm+mt
 source-wordcount: '502'
 ht-degree: 8%
@@ -29,7 +30,7 @@ Por motivos de segurança, é necessário [instale a build mais recente do Campa
 
 **Você será afetado?**
 
-Se você for afetado pela variável [atualização do sistema operacional](#os-upgrade) e/ou a [atualização do sistema de banco de dados](#pg-upgrade) detalhado abaixo, você deve atualizar seus ambientes do Campaign para a versão 7.3.2 mais recente, que é compatível com esses sistemas.
+Se você for afetado pela variável [atualização do sistema operacional](#os-upgrade) e/ou a [atualização do sistema de banco de dados](#pg-upgrade) detalhado abaixo, é necessário atualizar os ambientes do Campaign para [a versão mais recente do 7.3.2](../../rn/using/latest-release.m#release-7-3-2), que é compatível com esses sistemas.
 
 **Como atualizar?**
 
