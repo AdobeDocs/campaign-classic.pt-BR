@@ -5,10 +5,10 @@ description: Atualização do sistema Adobe Campaign
 hide: true
 hidefromtoc: true
 exl-id: 78949d94-60b3-44f1-8e5a-d61b5b723e87
-source-git-commit: 7d7185e9d8c376d1390dc7e5f6a8724c3cbcfd40
+source-git-commit: bffad77458ab0b4d40490a52c64c99a0fe882d22
 workflow-type: tm+mt
-source-wordcount: '510'
-ht-degree: 8%
+source-wordcount: '499'
+ht-degree: 9%
 
 ---
 
@@ -18,7 +18,7 @@ A infraestrutura do Campaign depende de sistemas de terceiros, que devem ser atu
 
 Como um **Cliente Cloud Services hospedado ou gerenciado**, o Adobe informa você sobre essas atualizações quando elas são necessárias. Você precisará atualizar seus ambientes de acordo com as recomendações para garantir a conformidade.
 
-Como um **Cliente local ou híbrido**, o Adobe recomenda que você atualize as versões do sistema e do Campaign de acordo com o mesmo calendário.
+Como um **Cliente local ou híbrido**, o Adobe recomenda que você atualize suas versões do sistema e do Campaign de acordo com o mesmo calendário.
 
 Por motivos de segurança, é necessário [instale a build mais recente do Campaign](#ac-upgrade)e, em seguida, atualize seu [sistema operacional](#os-upgrade) e/ou seu [Sistema de Gestão de Bases de Dados de Relação (RDBMS)](#pg-upgrade).
 
@@ -43,7 +43,7 @@ Se você for afetado pela variável [atualização do sistema operacional](#os-u
 
 **Você será afetado?**
 
-Se você estiver executando o Campaign em um sistema operacional Debian, para se beneficiar das atualizações de segurança mais recentes do Debian, será necessário mover sua infraestrutura do Campaign para o **Debian 11**. Observe que Debian 9 chegou ao fim da vida útil em 30 de junho de 2022 e não fornece mais correções de segurança. O Adobe oferece suporte de segurança para Debian 9 até 30 de junho de 2023.
+Se você estiver executando o Campaign em um sistema operacional Debian, para se beneficiar das atualizações de segurança mais recentes do Debian, será necessário mover sua infraestrutura do Campaign para o **Debian 11**. Observe que o suporte de segurança para Debian 9 estará disponível até 30 de junho de 2023.
 
 **Como atualizar?**
 
@@ -55,7 +55,7 @@ Se você estiver executando o Campaign em um sistema operacional Debian, para se
 
 **Você será afetado?**
 
-Se o sistema de banco de dados para o Campaign for PostgreSQL, para se beneficiar das mais recentes inovações e atualizações de segurança do PostgreSQL, será necessário atualizar para **PostgreSQL 14**. Observe que o PostreSQL 11 chegará ao fim da vida útil em 9 de novembro de 2023.
+Se o sistema de banco de dados para o Campaign for PostgreSQL, para se beneficiar das mais recentes inovações e atualizações de segurança do PostgreSQL, será necessário atualizar para **PostgreSQL 14**. Observe que o PostgreSQL 11 chegará ao fim da vida útil em 9 de novembro de 2023.
 
 **Como atualizar?**
 
