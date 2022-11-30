@@ -9,7 +9,7 @@ exl-id: d60d67de-6618-4f3b-be4a-ad7633ab5645
 source-git-commit: 0ecf9c69cc4b444feda1e42701a3a27f2b2e7eeb
 workflow-type: tm+mt
 source-wordcount: '1684'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -45,15 +45,15 @@ Os clientes são aconselhados a verificar se utilizam o recurso/funcionalidade e
   </tr>
 <tr>
  <td>Marketing social com o Facebook</td>
- <td>O Social Marketing com Facebook agora está obsoleto. Você pode usar a integração do Twitter para postar em redes sociais ou trabalhar com o Adobe para criar um canal personalizado.
+ <td>O marketing social do Facebook agora está obsoleto. Você pode usar a integração do Twitter para publicar em redes sociais ou trabalhar com a Adobe para criar um canal personalizado.
  <p></p>
-  <p>Data de remoção do target: fim de 2023</p>
+  <p>Data de remoção do público alvo: fim de 2023</p>
   </td>
 </tr>
 <tr>
  <td>ACS Connector</td>
- <td>ACS Connector (Oferta principal) agora está obsoleta. Você pode usar os recursos de exportação/importação do Campaign para extrair e injetar dados em ambos os produtos.<p></p>
-  <p>Data de remoção do target: fim de 2023</p>
+ <td>O conector ACS (oferta do Prime) agora está obsoleto. Você pode usar os recursos de exportação/importação do Campaign para extrair e inserir dados em ambos os produtos.<p></p>
+  <p>Data de remoção do público alvo: fim de 2023</p>
   </td>
 </tr>
  </tbody> 

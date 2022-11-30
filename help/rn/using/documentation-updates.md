@@ -9,7 +9,7 @@ exl-id: 07c1f4a3-cf16-4a9b-b402-e13258799f91
 source-git-commit: 5792ad762befb97888ad32406d3bcb7f97df3fa7
 workflow-type: tm+mt
 source-wordcount: '4994'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -25,13 +25,13 @@ Consulte as [Notas de versão do Adobe Campaign Classic](../../rn/using/latest-r
 
 ### Novembro de 2022 {#nov-2022}
 
-Atualização da seção Notas de versão com melhorias e patches 7.3.2. [Leia mais](latest-release.md)
+Atualização da seção Notas de versão com as melhorias e correções da versão 7.3.2. [Leia mais](latest-release.md)
 
-Atualização da Matriz de Compatibilidade com o suporte ao Teradata 17. [Leia mais](compatibility-matrix.md)
+Atualização da matriz de compatibilidade com a adição do suporte ao Teradata 17. [Leia mais](compatibility-matrix.md)
 
-A seção Gerenciamento de arquivos e recursos foi atualizada com informações adicionais sobre o **uploadWhiteList** atributo. [Leia mais](../../installation/using/file-res-management.md)
+A seção Gerenciamento de recursos e arquivos foi atualizada com informações adicionais sobre o atributo **uploadWhiteList**. [Leia mais](../../installation/using/file-res-management.md)
 
-A documentação sobre zonas de segurança foi atualizada com informações adicionais sobre a **allowDebug** atributo. [Leia mais](../../installation/using/security-zones.md#recommendations)
+A documentação sobre zonas de segurança foi atualizada com informações adicionais sobre o atributo **allowDebug**. [Leia mais](../../installation/using/security-zones.md#recommendations)
 
 O guia de migração foi atualizado. As referências a versões não compatíveis do Adobe Campaign foram removidas. [Leia mais](../../migration/using/about-migration.md)
 
