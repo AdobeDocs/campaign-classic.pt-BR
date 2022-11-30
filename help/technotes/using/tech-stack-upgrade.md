@@ -5,9 +5,9 @@ description: Atualização do sistema Adobe Campaign
 hide: true
 hidefromtoc: true
 exl-id: 78949d94-60b3-44f1-8e5a-d61b5b723e87
-source-git-commit: 7948f6423b80788adf26a53afcd380953c8b8463
+source-git-commit: 7d7185e9d8c376d1390dc7e5f6a8724c3cbcfd40
 workflow-type: tm+mt
-source-wordcount: '502'
+source-wordcount: '510'
 ht-degree: 8%
 
 ---
@@ -43,7 +43,7 @@ Se você for afetado pela variável [atualização do sistema operacional](#os-u
 
 **Você será afetado?**
 
-Se você estiver executando o Campaign em um sistema operacional Debian, para se beneficiar das atualizações de segurança mais recentes do Debian, será necessário mover sua infraestrutura do Campaign para o **Debian 11**. Observe que Debian 9 chegou ao fim da vida útil em 30 de junho de 2022 e não fornece mais correções de segurança.
+Se você estiver executando o Campaign em um sistema operacional Debian, para se beneficiar das atualizações de segurança mais recentes do Debian, será necessário mover sua infraestrutura do Campaign para o **Debian 11**. Observe que Debian 9 chegou ao fim da vida útil em 30 de junho de 2022 e não fornece mais correções de segurança. O Adobe oferece suporte de segurança para Debian 9 até 30 de junho de 2023.
 
 **Como atualizar?**
 
