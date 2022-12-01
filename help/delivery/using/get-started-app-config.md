@@ -1,11 +1,11 @@
 ---
 product: campaign
-title: 'Configurar o aplicativo para dispositivos móveis no Adobe Campaign '
+title: Configurar o aplicativo para dispositivos móveis no Adobe Campaign
 description: Saiba como iniciar a configuração do aplicativo móvel
 feature: Push
 exl-id: 95bc07cc-8837-4511-81bc-05fad28191c9
 source-git-commit: 9839dbacda475c2a586811e3c4f686b1b1baab05
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '290'
 ht-degree: 100%
 

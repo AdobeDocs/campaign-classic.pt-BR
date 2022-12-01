@@ -5,7 +5,7 @@ description: Saiba mais sobre o uso do painel de delivery para monitoramento de 
 feature: Monitoring
 exl-id: 44ecc8c6-6584-43eb-96b4-7d8463053123
 source-git-commit: 56459b188ee966cdb578c415fcdfa485dcbed355
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '1174'
 ht-degree: 100%
 

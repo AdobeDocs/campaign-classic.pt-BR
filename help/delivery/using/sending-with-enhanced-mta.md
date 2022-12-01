@@ -7,7 +7,7 @@ exl-id: 58cc23f4-9ab0-45c7-9aa2-b08487ec7e91
 source-git-commit: 2d5166c355ee090639dcc52866252bae6beb81f6
 workflow-type: tm+mt
 source-wordcount: '1999'
-ht-degree: 93%
+ht-degree: 100%
 
 ---
 
@@ -37,7 +37,7 @@ A implementação do MTA aprimorado pode afetar algumas das funcionalidades exis
 
 **O que é o MTA aprimorado?**
 
-O Adobe Campaign agora pode ser atualizado para usar um novo MTA (Mail Transfer Agent) que executa o MTA de email comercial do SparkPost chamado **Momento**.
+O Adobe Campaign agora pode ser atualizado para usar um novo MTA (agente de transferência de email) que executa o MTA do email comercial do SparkPost, chamado **Momentum**.
 
 O Momentum representa uma tecnologia MTA inovadora e de alto desempenho, que inclui um tratamento mais inteligente de rejeição e um recurso automatizado de otimização de entrega que ajuda os remetentes a alcançarem e manterem as taxas ideais de delivery da caixa de entrada. <!--More than 37% of the world's business email is sent using SparkPost's MTA technology.-->
 
@@ -117,7 +117,7 @@ Para obter mais informações sobre topologias, consulte[esta seção](../../cam
 
 ### Novas regras de MX
 
-As regras de taxa de transferência de delivery de gerenciamento de MX não são mais usadas. O MTA aprimorado tem suas próprias regras MX que permitem personalizar a taxa de transferência por domínio com base na sua própria reputação histórica de email e no feedback em tempo real proveniente dos domínios em que você está enviando emails.
+As regras de taxa de transferência de delivery de gerenciamento de MX não são mais usadas. O MTA aprimorado tem suas próprias regras de MX, que permitem personalizar a taxa de transferência por domínio com base em seu próprio histórico de reputação de email e no feedback em tempo real proveniente dos domínios para os quais você está enviando emails.
 
 Para obter mais informações sobre configurações de MX, consulte [esta seção](../../installation/using/email-deliverability.md#mx-configuration).
 
@@ -143,7 +143,7 @@ Para obter mais informações sobre a taxa de transferência do delivery, consul
 
 ### Tentativas
 
-As configurações de nova tentativa no delivery não são mais usadas pelo Campaign. As tentativas de rejeição em modo suave e o tempo entre elas são determinados pelo MTA aprimorado com base no tipo e na gravidade das respostas de rejeição provenientes do domínio de email da mensagem.
+As configurações de nova tentativa da entrega não são mais usadas pelo Campaign. As tentativas de rejeição temporária e o intervalo de tempo entre elas são determinados pelo MTA aprimorado com base no tipo e na gravidade das respostas de rejeição que retornam do domínio de email da mensagem.
 
 Para obter mais informações sobre tentativas, consulte [esta seção](steps-sending-the-delivery.md#configuring-retries).
 
@@ -188,7 +188,7 @@ Com o recurso Serviço de feedback por email (EFS), o status de cada email é re
 >
 >O Serviço de feedback por email está disponível no momento como um recurso beta.
 >
->Se você estiver interessado em participar deste programa beta, preencha [este formulário](https://forms.office.com/Pages/ResponsePage.aspx?id=Wht7-jR7h0OUrtLBeN7O4Rol2vQGupxItW9_BerXV6VUQTJPN1Q5WUI4OFNTWkYzQjg3WllUSDAxWi4u) e vamos voltar para você.
+>Se estiver interessado em participar desse programa beta, preencha [este formulário](https://forms.office.com/Pages/ResponsePage.aspx?id=Wht7-jR7h0OUrtLBeN7O4Rol2vQGupxItW9_BerXV6VUQTJPN1Q5WUI4OFNTWkYzQjg3WllUSDAxWi4u) e entraremos em contato com você.
 
 Depois que o delivery é iniciado, não há alteração na porcentagem de **[!UICONTROL Success]** quando a mensagem é transmitida com êxito do Campaign para o MTA aprimorado.
 

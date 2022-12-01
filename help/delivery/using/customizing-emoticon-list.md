@@ -5,7 +5,7 @@ description: Saiba como personalizar a lista de emoticons ao usar o Adobe Campai
 feature: Email, Push
 exl-id: b8642df3-1960-4f2c-8273-c3988a3e85f0
 source-git-commit: 9839dbacda475c2a586811e3c4f686b1b1baab05
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '443'
 ht-degree: 100%
 
