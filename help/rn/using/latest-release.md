@@ -6,10 +6,10 @@ feature: Overview
 role: User
 level: Beginner
 exl-id: d65869ca-a785-4327-8e8d-791c28e4696c
-source-git-commit: f37f6c080bc6fb70cbd3f853db4ad8685ae8ebf8
-workflow-type: ht
-source-wordcount: '2737'
-ht-degree: 100%
+source-git-commit: 1c0aeecd72a35fc6e2e72f4b042df2ff39e5cb6f
+workflow-type: tm+mt
+source-wordcount: '2771'
+ht-degree: 99%
 
 ---
 
@@ -29,7 +29,8 @@ _21 de novembro de 2022_
 
 **Atualizações de compatibilidade**
 
-* O Adobe Campaign agora é compatível com o PostgreSQL 14.
+* O Adobe Campaign agora é compatível com o PostgreSQL 14. Para obter mais informações, consulte esta [technote](../../technotes/using/tech-stack-upgrade.md).
+
 * Após o fim da vida útil do Microsoft Internet Explorer 11, o mecanismo de renderização HTML para painéis no console do cliente começou a utilizar o Edge Chromium. (NEO-20741)
 
 Consulte a [Matriz de compatibilidade do Campaign](../../rn/using/compatibility-matrix.md#RDBMSservers).
@@ -108,7 +109,7 @@ _1 de julho de 2022_
 * O SDK do Adobe Campaign agora é compatível com notificações por push no Android 12 e iOS 15.
 * O Adobe Campaign agora é compatível com o MySQL 8.
 * O Adobe Campaign agora é compatível com o Windows 11.
-* O Adobe Campaign agora é compatível com o Debian 11.
+* O Adobe Campaign agora é compatível com o Debian 11. Para obter mais informações, consulte esta [technote](../../technotes/using/tech-stack-upgrade.md).
 
 Consulte a [Matriz de compatibilidade do Campaign](../../rn/using/compatibility-matrix.md#OperatingSystems).
 
@@ -241,3 +242,4 @@ O Adobe Campaign agora é compatível com o Windows Server 2019. Consulte a [Mat
 * Correção de um problema que podia impedir a pré-visualização de deliveries de email que foram anexados a um fluxo de trabalho. (NEO-37840)
 * Correção de um problema que fazia com que tabelas válidas que contivessem valores de lista fossem excluídas pelo fluxo de trabalho de limpeza do banco de dados. (NEO-34911)
 * Correção de um problema que podia fazer com que o fluxo de trabalho de faturamento falhasse em instâncias de marketing.
+* Correção de um problema que poderia resultar no envio do delivery para um número maior de recipients do que o esperado. (NEO-45108)
