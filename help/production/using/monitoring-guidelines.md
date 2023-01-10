@@ -107,7 +107,7 @@ Ações específicas podem ser executadas ao encontrar problemas com deliveries:
 
 <img src="assets/do-not-localize/icon_database.svg" width="60px">
 
-**Workflow de limpeza do banco de dados**
+**Fluxo de trabalho de limpeza do banco de dados**
 
 O fluxo de trabalho Database cleanup permite excluir dados obsoletos do banco de dados. É recomendável evitar o crescimento exponencial do banco de dados. [Clique aqui](../../production/using/database-cleanup-workflow.md) para obter mais informações.
 
