@@ -3,9 +3,9 @@ product: campaign
 title: Migrar para o Adobe Analytics Connector
 description: Campaign - Perguntas frequentes sobre o conector do Analytics
 exl-id: 5bf61654-3d68-4560-a93f-7a768a2c5be4
-source-git-commit: 9667bb436ffc591b05945dadd683e5f590ae43e5
+source-git-commit: 62ccc9e52de1bc416284e5b1bf48d69dc603923a
 workflow-type: tm+mt
-source-wordcount: '815'
+source-wordcount: '858'
 ht-degree: 6%
 
 ---
@@ -20,9 +20,11 @@ Em 1º de agosto de 2021, a Adobe Campaign Classic foi removida da interface do 
 
 Você **deve implementar** a nova integração do Adobe Analytics Connector no Adobe Exchange que substitui a integração herdada do Data Connectors. Para saber mais sobre o Adobe Analytics Connector, consulte [esta página](../../platform/using/adobe-analytics-connector.md).
 
+Para dúvidas sobre essas alterações, leia a [Perguntas frequentes](#faq-aa). Para obter mais informações, entre em contato com o [Atendimento ao cliente do Adobe](https://helpx.adobe.com/br/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html).
+
 >[!NOTE]
 >
->Para dúvidas sobre essas alterações, leia a [Perguntas frequentes](#faq-aa). Para obter mais informações, entre em contato com o [Atendimento ao cliente do Adobe](https://helpx.adobe.com/br/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html).
+>Se você estiver migrando de um Adobe Analytics Data Connector existente (anteriormente conhecido como Genesis integration) e usando a Nova arquitetura de classificação no Adobe Analytics, precisará de versões de compilação a partir da 7.3.1 ou 8.4.1 para migrar para o novo Adobe Analytics Connector.
 
 ## O que mudou?
 
@@ -34,7 +36,7 @@ Uma nova integração entre o Campaign Classic v7 e o Adobe Analytics está disp
 
 * Os workflows técnicos integrados e seu comportamento permanecem os mesmos. Somente as APIs de back-end usadas pelos workflows para enviar/receber dados de/para o Adobe Analytics foram alteradas.
 
-* Observe que a variável `nlserver` O processo deve ser configurado com o IMS Technical Account User (Usuário da conta técnica IMS) para que o novo conector funcione. Essa mudança deve ser feita por Adobe. Para implementar isso, entre em contato com o [Atendimento ao cliente do Adobe](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html).
+* Observe que a variável `nlserver` O processo deve ser configurado com o IMS Technical Account User (Usuário da conta técnica IMS) para que o novo conector funcione. Essa mudança deve ser feita por Adobe. Para implementar isso, entre em contato com o [Atendimento ao cliente do Adobe](https://helpx.adobe.com/br/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html).
 
 * Se você era APIs do Adobe Genesis em fluxos de trabalho personalizados para obter e enviar os dados do Adobe Analytics, agora é necessário usar as novas APIs do Adobe Analytics 1.4/2.0. [Saiba mais](https://adobeexchangeec.zendesk.com/hc/en-us/articles/360047148832-Replacements-for-Data-Connector-API-calls)
 
@@ -80,7 +82,7 @@ A integração depende de dados no Token de conta técnica para a operação di�
 
 Se estamos lendo os detalhes de um componente do Analytics (como métricas/dimensões/segmentos/conjuntos de relatórios), a API não retornará esses componentes no resultado (que pode parecer que algo foi excluído do lado do Analytics ou não está presente). A API do Analytics rejeitará essas solicitações e rejeitará o erro.
 
-A solução é atualizar a variável **Perfil de produto** no Contexto de usuário do Analytics do Token de usuário técnico com os componentes recém-criados/ausentes, adicionando esses componentes em [Adobe Admin Console](https://adminconsole.adobe.com/){_blank}. Para obter mais orientações, entre em contato com o [Atendimento ao cliente do Adobe](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html).
+A solução é atualizar a variável **Perfil de produto** no Contexto de usuário do Analytics do Token de usuário técnico com os componentes recém-criados/ausentes, adicionando esses componentes em [Adobe Admin Console](https://adminconsole.adobe.com/){_blank}. Para obter mais orientações, entre em contato com o [Atendimento ao cliente do Adobe](https://helpx.adobe.com/br/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html).
 
 ## Links úteis
 

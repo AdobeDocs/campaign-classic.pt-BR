@@ -6,10 +6,10 @@ feature: Overview
 role: User, Admin
 level: Beginner
 exl-id: 0dc6ce98-dc3e-4242-953e-e7cec55289ff
-source-git-commit: 1f6846f29c44719fdbd334327466619ed265452a
+source-git-commit: 62ccc9e52de1bc416284e5b1bf48d69dc603923a
 workflow-type: tm+mt
-source-wordcount: '1515'
-ht-degree: 100%
+source-wordcount: '1508'
+ht-degree: 97%
 
 ---
 
@@ -19,7 +19,7 @@ ht-degree: 100%
 
 ## Sobre a integração do Adobe Analytics Connector {#about-analytics-connector-integration}
 
-O Adobe Analytics Connector permite que o Adobe Campaign e o Adobe Analytics interajam por meio de pacote **[!UICONTROL Web Analytics connectors]**. Ele encaminha dados para o Adobe Campaign na forma de segmentos relativos ao comportamento do usuário após uma campanha de email. Por outro lado, ele envia indicadores e atributos de campanhas de email entregues pelo Adobe Campaign ao Adobe Analytics.
+O Adobe Analytics Connector permite que o Adobe Campaign e o Adobe Analytics interajam por meio de pacote **[!UICONTROL Web Analytics connectors]**. Ele encaminha dados para o Adobe Campaign na forma de segmentos relativos ao comportamento do usuário após uma campanha. Por outro lado, ele envia indicadores e atributos de campanhas de entregues pelo Adobe Campaign ao Adobe Analytics.
 
 >[!CAUTION]
 >
@@ -34,8 +34,8 @@ Os campos de ação para cada ferramenta são os seguintes:
 
 * Função do Web Analytics:
 
-   1. marca as campanhas de e-mail iniciadas com o Adobe Campaign,
-   1. salva o comportamento do recipient, no site navegado depois de clicar no e-mail da campanha, no formato de segmentos. Os segmentos dizem respeito a produtos abandonados (visualizados, mas não adicionados ao carrinho ou comprados), compras ou abandonos de carrinho.
+   1. marca as campanhas de iniciadas com o Adobe Campaign,
+   1. salva o comportamento do recipient, no site navegado depois de clicar na campanha, no formato de segmentos. Os segmentos dizem respeito a produtos abandonados (visualizados, mas não adicionados ao carrinho ou comprados), compras ou abandonos de carrinho.
 
 * Função do Adobe Campaign:
 
@@ -98,7 +98,7 @@ Você precisa configurar suas **[!UICONTROL Conversion variables]** e **[!UICONT
 
    ![](assets/analytics_connnector_5.png)
 
-1. Clique em **[!UICONTROL Add new]** para criar os identificadores necessários para medir o impacto da campanha de email, ou seja, o nome da campanha interna (cid) e o ID da tabela iNmsBroadlog (lance).
+1. Clique em **[!UICONTROL Add new]** para criar os identificadores necessários para medir o impacto da campanha de , ou seja, o nome da campanha interna (cid) e o ID da tabela iNmsBroadlog (lance).
 
    Para saber como editar as **[!UICONTROL Conversion variables]**, consulte esta [seção](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/conversion-variables/t-conversion-variables-admin.html?lang=pt-BR#admin-tools).
 
@@ -202,7 +202,7 @@ Para obter mais informações, consulte a página [Perfis de produto do Adobe An
 
    >[!IMPORTANT]
    >
-   >Esse modo de configuração está reservado para usuários especialistas: qualquer erro nessa fórmula pode resultar na interrupção das entregas de email.
+   >Esse modo de configuração está reservado para usuários especialistas: qualquer erro nessa fórmula pode resultar na interrupção das entregas de 
 
 1. A guia **[!UICONTROL Advanced]** permite configurar ou modificar mais configurações técnicas.
 
@@ -224,7 +224,7 @@ Eles estão disponíveis na árvore do Adobe Campaign, na pasta **[!UICONTROL Ad
 * **[!UICONTROL Recovering of web events]**: a cada hora, esse workflow baixa segmentos sobre o comportamento dos usuários em determinado site, os inclui no banco de dados do Adobe Campaign e inicia o workflow de re-marketing.
 * **[!UICONTROL Event purge]**: esse workflow permite que você exclua todos os eventos do banco de dados, dependendo do período configurado no campo **[!UICONTROL Lifespan]**. Para obter mais informações, consulte [Configurar a conta externa no Adobe Campaign Classic](#external-account-classic).
 * **[!UICONTROL Identification of converted contacts]**: diretório dos visitantes que fizeram uma compra após uma campanha re-marketing. Os dados coletados por esse workflow podem ser acessados no relatório **[!UICONTROL Re-marketing efficiency]**, consulte esta [página](#creating-a-re-marketing-campaign).
-* **[!UICONTROL Sending of indicators and campaign attributes]**: permite enviar indicadores de campanha por email por meio do Adobe Campaign para a Adobe Experience Cloud usando o Adobe Analytics Connector. Esse workflow é acionado às 4:00 AM todos os dias e pode levar 24 horas para que os dados sejam enviados ao Analytics.
+* **[!UICONTROL Sending of indicators and campaign attributes]**: permite enviar indicadores de campanha por por meio do Adobe Campaign para a Adobe Experience Cloud usando o Adobe Analytics Connector. Esse workflow é acionado às 4:00 AM todos os dias e pode levar 24 horas para que os dados sejam enviados ao Analytics.
 
    Observe que esse workflow não deve ser reiniciado ou todos os dados anteriores podem distorcer os resultados do Analytics.
 
