@@ -3,7 +3,7 @@ product: campaign
 title: Editar formulários
 description: Editar formulários
 exl-id: 24604dc9-f675-4e37-a848-f1911be84f3e
-source-git-commit: 3997412f14666fa61bf71d0f0a0653f5cc042e19
+source-git-commit: 4af44f38d495d31dec4b9b7a142dbed0c2450d56
 workflow-type: tm+mt
 source-wordcount: '1698'
 ht-degree: 2%
@@ -249,7 +249,7 @@ Para criar um formulário, siga estas etapas:
 
    | Elemento | Atributo | Descrição |
    | --- | --- | --- |
-   | `<input>` | `read-only:"true"` | Fornece acesso somente leitura a um campo |
+   | `<input>` | `read-only="true"` | Fornece acesso somente leitura a um campo |
    | `<container>` | `type="visibleGroup" visibleIf="`*edit-expr*`"` | Exibe condicionalmente um grupo de campos |
    | `<container>` | `type="enabledGroup" enabledIf="`*edit-expr*`"` | Habilita condicionalmente um grupo de campos |
 
