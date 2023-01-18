@@ -4,10 +4,10 @@ title: Sobre as atividades de direcionamento
 description: Sobre as atividades de direcionamento
 feature: Workflows, Audiences, Targeting Activity
 exl-id: 5028ad4c-e427-4e78-962d-c5ea54390db5
-source-git-commit: 381538fac319dfa075cac3db2252a9cc80b31e0f
-workflow-type: ht
+source-git-commit: 743baa49e5d62ed1c2f7f635f6bf120a67646e63
+workflow-type: tm+mt
 source-wordcount: '438'
-ht-degree: 100%
+ht-degree: 98%
 
 ---
 
@@ -22,7 +22,7 @@ Essas atividades permitem construir um ou mais targets definindo conjuntos e div
 * **Lista de leitura**: permite usar dados contidos em uma lista. Consulte a seção [Using data from a list: Read list](../../platform/using/import-export-workflows.md#using-data-from-a-list--read-list).
 * **União**: permite agrupar o resultado de várias atividades em um único target. Consulte a seção [Union](union.md).
 * **Intersecção**: permite extrair apenas o público com os mesmos resultados de atividade de entrada. Consulte a seção [Intersectio](intersection.md).
-* **Exclusão**: permite criar um target com base em um target principal do qual um ou mais targets são extraídos. Consulte a seção [Intersectio](intersection.md).
+* **Exclusão**: permite criar um target com base em um target principal do qual um ou mais targets são extraídos. Consulte a [Exclusão](exclusion.md) seção.
 * **Split**: permite dividir um target em vários subconjuntos. Consulte a seção [Split](split.md).
 * **Células**: fornece um modo de exibição dos vários subconjuntos de colunas de dados e facilita a manipulação desses subconjuntos quando há muitos deles. Para obter mais informações, consulte a seção [Cells](cells.md).
 * **Ofertas por célula**: permite vincular diferentes ofertas a cada subconjunto de um público. Consulte a seção [Offers by cell](offers-by-cell.md).
