@@ -4,7 +4,7 @@ title: Práticas recomendadas do modelo de dados
 description: Saiba como trabalhar com o modelo de dados Campaign Classic
 feature: Data Model
 exl-id: 9c59b89c-3542-4a17-a46f-3a1e58de0748
-source-git-commit: f4513834cf721f6d962c7c02c6c64b2171059352
+source-git-commit: 65e80f16a6beaee89b51636017c42766589e179e
 workflow-type: tm+mt
 source-wordcount: '3988'
 ht-degree: 1%
@@ -45,7 +45,7 @@ O modelo de dados padrão do Adobe Campaign é apresentado em [este documento](.
 
 >[!NOTE]
 >
->O Adobe Campaign Classic permite criar uma tabela de cliente personalizada. No entanto, na maioria dos casos, é recomendável aproveitar o padrão [Tabela de recipients](../../configuration/using/about-data-model.md#default-recipient-table) que já tem tabelas e recursos adicionais pré-criados.
+>O Adobe Campaign Classic permite criar uma tabela de cliente personalizada. No entanto, na maioria dos casos, é recomendável utilizar o padrão [Tabela de recipients](../../configuration/using/about-data-model.md#default-recipient-table) que já tem tabelas e recursos adicionais pré-criados.
 
 ### Dados do Adobe Campaign {#data-for-campaign}
 
@@ -105,7 +105,7 @@ A tabela a seguir descreve esses identificadores e sua finalidade.
 | Identifier | Descrição | Práticas recomendadas |
 |--- |--- |--- |
 | ID | <ul><li>A id é a chave primária física de uma tabela do Adobe Campaign. Para tabelas prontas para uso, é um número gerado de 32 bits de uma sequência</li><li>Normalmente, esse identificador é exclusivo de uma instância específica do Adobe Campaign. </li><li>Uma id gerada automaticamente pode ser visível em uma definição de esquema. Pesquise no *autopk=&quot;true&quot;* atributo.</li></ul> | <ul><li>Os identificadores gerados automaticamente não devem ser usados como referência em um workflow ou em uma definição de pacote.</li><li>Não se deve partir do princípio de que o auxílio será sempre um número crescente.</li><li>A id em uma tabela pronta para uso é um número de 32 bits e esse tipo não deve ser alterado. Esse número é retirado de uma &quot;sequência&quot; coberta na seção com o mesmo nome.</li></ul> |
-| Nome (ou nome interno) | <ul><li>Essas informações são um identificador exclusivo de um registro em uma tabela. Esse valor pode ser atualizado manualmente, geralmente com um nome gerado.</li><li>Esse identificador mantém seu valor quando implantado em uma instância diferente do Adobe Campaign e não deve estar vazio.</li></ul> | <ul><li>Renomeie o nome do registro gerado pelo Adobe Campaign se o objeto for implantado de um ambiente para outro.</li><li>Quando um objeto tem um atributo de namespace (*schema* por exemplo), esse namespace comum será aproveitado em todos os objetos personalizados criados. Alguns namespaces reservados não devem ser usados: *nms*, *xtk*, *nl*, *ncl*, *crm*, *xxl*.</li><li>Quando um objeto não tem namespace (*workflow* ou *delivery* por exemplo), essa noção de namespace seria adicionada como um prefixo de um objeto de nome interno: *namespaceMyObjectName*.</li><li>Não use caracteres especiais, como espaço &quot;&quot;, semircoluna &quot;:&quot; ou hífen &quot;-&quot;. Todos esses caracteres seriam substituídos por um sublinhado &quot;_&quot; (caractere permitido). Por exemplo, &quot;abc-def&quot; e &quot;abc:def&quot; seriam armazenadas como &quot;abc_def&quot; e se substituiriam.</li></ul> |
+| Nome (ou nome interno) | <ul><li>Essas informações são um identificador exclusivo de um registro em uma tabela. Esse valor pode ser atualizado manualmente, geralmente com um nome gerado.</li><li>Esse identificador mantém seu valor quando implantado em uma instância diferente do Adobe Campaign e não deve estar vazio.</li></ul> | <ul><li>Renomeie o nome do registro gerado pelo Adobe Campaign se o objeto for implantado de um ambiente para outro.</li><li>Quando um objeto tem um atributo de namespace (*schema* por exemplo), esse namespace comum será aproveitado em todos os objetos personalizados criados. Alguns namespaces reservados não devem ser usados: *nms*, *xtk*, *nl*, *ncl*, *crm*, *xxl*.</li><li>Quando um objeto não tem namespace (*workflow* ou *delivery* por exemplo), essa noção de namespace seria adicionada como um prefixo de um objeto de nome interno: *namespaceMyObjectName*.</li><li>Não use caracteres especiais, como espaço &quot;&quot;, ponto e vírgula &quot;:&quot; ou hífen &quot;-&quot;. Todos esses caracteres seriam substituídos por um sublinhado &quot;_&quot; (caractere permitido). Por exemplo, &quot;abc-def&quot; e &quot;abc:def&quot; seriam armazenadas como &quot;abc_def&quot; e se substituiriam.</li></ul> |
 | Rótulo | <ul><li>O rótulo é o identificador comercial de um objeto ou registro no Adobe Campaign.</li><li>Esse objeto permite espaços e caracteres especiais.</li><li>Não garante a singularidade de um registro.</li></ul> | <ul><li>É recomendável determinar uma estrutura para seus rótulos de objetos.</li><li>Essa é a solução mais fácil de usar para identificar um registro ou objeto para um usuário do Adobe Campaign.</li></ul> |
 
 ## Chaves internas personalizadas {#custom-internal-keys}

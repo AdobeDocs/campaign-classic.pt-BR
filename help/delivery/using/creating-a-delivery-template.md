@@ -4,10 +4,10 @@ title: Criar um modelo do delivery
 description: Criar um modelo do delivery
 feature: Delivery Templates
 exl-id: 40a03e04-56c7-48c0-95b8-aa7bf1121048
-source-git-commit: 9839dbacda475c2a586811e3c4f686b1b1baab05
+source-git-commit: 65e80f16a6beaee89b51636017c42766589e179e
 workflow-type: tm+mt
-source-wordcount: '378'
-ht-degree: 100%
+source-wordcount: '383'
+ht-degree: 90%
 
 ---
 
@@ -33,6 +33,10 @@ Para obter mais informações sobre o modo de configuração, consulte [Vincular
 
 ## Criação de um novo modelo {#creating-a-new-template}
 
+>[!NOTE]
+>
+>Para evitar erros de configuração, o Adobe recomenda que você duplique um template nativo e personalize suas configurações em vez de criar um novo template.
+
 Para configurar um template de delivery, siga as seguintes etapas:
 
 1. Abra o Campaign Explorer.
@@ -40,7 +44,7 @@ Para configurar um template de delivery, siga as seguintes etapas:
 
    ![](assets/delivery_template_1.png)
 
-1. Clique em **New** na barra de ferramentas para criar um novo template de delivery.
+1. Clique em **Novo** na barra de ferramentas para criar um novo template de delivery, ou **Duplicar** um template existente.
 
    ![](assets/delivery_template_2.png)
 
@@ -62,9 +66,6 @@ Para configurar um template de delivery, siga as seguintes etapas:
 
 1. Clique em **Save**. Seu template está pronto para ser usado em um delivery.
 
->[!NOTE]
->
->Para evitar erros de configuração, recomendamos que você duplique um modelo nativo e altere suas propriedades em vez de criar um novo template.
 
 ## Tutoriais em vídeo {#delivery-template-video}
 
