@@ -8,10 +8,10 @@ level: Beginner
 exl-id: 5bd12f65-f468-41ab-bbae-e59a6592a803
 hidefromtoc: true
 hide: true
-source-git-commit: 32f55d02920b0104198f809b1be0a91306a4d9e4
+source-git-commit: 1dd0fe6734785b593302ed90db1d150cf6aee00c
 workflow-type: tm+mt
-source-wordcount: '1658'
-ht-degree: 100%
+source-wordcount: '1659'
+ht-degree: 98%
 
 ---
 
@@ -149,7 +149,7 @@ A integração do Adobe Campaign nas plataformas do Analytics é realizada usand
 1. A guia **[!UICONTROL Advanced]** permite configurar ou modificar mais configurações técnicas.
 
    * **[!UICONTROL Lifespan]**: permite especificar o atraso (em dias_ após os eventos da Web recuperados no Adobe Campaign por workflows técnicos. Padrão: 180 dias.
-   * **[!UICONTROL Persistence]**: permite o período durante o qual todos os eventos da Web (uma compra, por exemplo) podem ser atribuídos a uma campanha de re-marketing. Padrão: 7 dias.
+   * **[!UICONTROL Persistence]**: permite definir o período durante o qual todos os eventos da Web (uma compra, por exemplo) podem ser atribuídos a uma campanha de re-marketing. Padrão: 7 dias.
 
 >[!NOTE]
 >

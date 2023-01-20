@@ -6,10 +6,10 @@ feature: Overview
 role: User, Admin
 level: Beginner
 exl-id: 0dc6ce98-dc3e-4242-953e-e7cec55289ff
-source-git-commit: 62ccc9e52de1bc416284e5b1bf48d69dc603923a
+source-git-commit: 1dd0fe6734785b593302ed90db1d150cf6aee00c
 workflow-type: tm+mt
-source-wordcount: '1508'
-ht-degree: 97%
+source-wordcount: '1509'
+ht-degree: 96%
 
 ---
 
@@ -207,7 +207,7 @@ Para obter mais informações, consulte a página [Perfis de produto do Adobe An
 1. A guia **[!UICONTROL Advanced]** permite configurar ou modificar mais configurações técnicas.
 
    * **[!UICONTROL Lifespan]**: permite especificar o atraso (em dias_ após os eventos da Web recuperados no Adobe Campaign por workflows técnicos. Padrão: 180 dias.
-   * **[!UICONTROL Persistence]**: permite o período durante o qual todos os eventos da Web (uma compra, por exemplo) podem ser atribuídos a uma campanha de re-marketing. Padrão: 7 dias.
+   * **[!UICONTROL Persistence]**: permite definir o período durante o qual todos os eventos da Web (uma compra, por exemplo) podem ser atribuídos a uma campanha de re-marketing. Padrão: 7 dias.
 
 >[!NOTE]
 >
