@@ -7,9 +7,9 @@ role: User
 level: Beginner
 exl-id: d65869ca-a785-4327-8e8d-791c28e4696c
 source-git-commit: 8391df5046d56edfb33de5eb9f2afb4738108791
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2771'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -149,7 +149,7 @@ Consulte a [Matriz de compatibilidade do Campaign](../../rn/using/compatibility-
 * Correção de um problema que poderia resultar em falhas ao usar um código HTML incorreto em uma entrega. (NEO-40385)
 * Correção de um problema que poderia impedir que usuários não administradores acessassem a guia **Análise** nas propriedades da entrega. (NEO-34025)
 * Correção de um problema que impedia o upload de uma imagem no modo de bloco de um servidor externo durante a preparação da mensagem. (NEO-40307)
-* Correção de um problema que poderia resultar no envio do delivery para um número maior de recipients do que o esperado. (NEO-45108)
+* Correção de um problema que poderia resultar no envio das entregas para um número maior de destinatários do que o esperado. (NEO-45108)
 
 ## ![](assets/do-not-localize/green_2.png) Versão 7.2.2 - Build 9349 {#release-7-2-2}
 
