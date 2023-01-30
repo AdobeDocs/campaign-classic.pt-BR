@@ -9,9 +9,9 @@ exl-id: 5bd12f65-f468-41ab-bbae-e59a6592a803
 hidefromtoc: true
 hide: true
 source-git-commit: 1dd0fe6734785b593302ed90db1d150cf6aee00c
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1659'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -149,7 +149,7 @@ A integração do Adobe Campaign nas plataformas do Analytics é realizada usand
 1. A guia **[!UICONTROL Advanced]** permite configurar ou modificar mais configurações técnicas.
 
    * **[!UICONTROL Lifespan]**: permite especificar o atraso (em dias_ após os eventos da Web recuperados no Adobe Campaign por workflows técnicos. Padrão: 180 dias.
-   * **[!UICONTROL Persistence]**: permite definir o período durante o qual todos os eventos da Web (uma compra, por exemplo) podem ser atribuídos a uma campanha de re-marketing. Padrão: 7 dias.
+   * **[!UICONTROL Persistence]**: permite definir o período durante o qual todos os eventos da Web (compras, por exemplo) podem ser atribuídos a uma campanha de remarketing. Padrão: 7 dias.
 
 >[!NOTE]
 >
@@ -236,13 +236,13 @@ Eles estão disponíveis na árvore do Adobe Campaign, na pasta **[!UICONTROL Ad
 
 ## Rastreamento de entregas no Adobe Campaign {#tracking-deliveries-in-adobe-campaign}
 
-Para que a Adobe Experience Cloud possa rastrear a atividade nos sites, depois que o Adobe Campaign enviou o delivery, é necessário fazer referência ao conector correspondente nas propriedades de delivery. Para fazer isso, siga as etapas abaixo:
+Para que a Adobe Experience Cloud possa rastrear a atividade nos sites, depois que o Adobe Campaign enviou a entrega, é necessário fazer referência ao conector correspondente nas propriedades de entrega. Para fazer isso, siga as etapas abaixo:
 
-1. Abra o delivery da campanha a ser rastreado.
+1. Abra a entrega da campanha a ser rastreada.
 
    ![](assets/webanalytics_delivery_properties_003.png)
 
-1. Abra as propriedades de delivery.
+1. Abra as propriedades da entrega.
 1. Acesse a guia **[!UICONTROL Web Analytics]** e selecione a conta externa criada anteriormente. Consulte a [Etapa 2: Criar a conta externa no Campaign](#step-2--create-the-external-account-in-campaign).
 
    ![](assets/webanalytics_delivery_properties_002.png)
@@ -251,11 +251,11 @@ Para que a Adobe Experience Cloud possa rastrear a atividade nos sites, depois q
 
 ## Criação de uma campanha de remarketing {#creating-a-re-marketing-campaign}
 
-Para preparar sua campanha de re-marketing, basta criar templates do delivery para campanhas do tipo re-marketing. Em seguida, configure sua campanha de re-marketing e a vincule a um segmento. Cada segmento deve ter uma campanha de re-marketing diferente.
+Para preparar sua campanha de re-marketing, basta criar templates de entrega para campanhas do tipo re-marketing. Em seguida, configure sua campanha de re-marketing e a vincule a um segmento. Cada segmento deve ter uma campanha de re-marketing diferente.
 
-As campanhas re-marketing são iniciadas automaticamente quando o Adobe Campaign conclui a recuperação dos segmentos que analisam o comportamento das pessoas direcionadas pela campanha inicial. No caso de abandono do carrinho ou visualização do produto sem uma compra, um delivery é enviado para os recipients relacionados para que o site navegue para o fim da compra.
+As campanhas re-marketing são iniciadas automaticamente quando o Adobe Campaign conclui a recuperação dos segmentos que analisam o comportamento das pessoas direcionadas pela campanha inicial. No caso de abandono do carrinho ou visualização do produto sem uma compra, uma entrega é enviada para os recipients relacionados para que o site navegue para o fim da compra.
 
-O Adobe Campaign fornece templates do delivery personalizados que você pode usar ou o banco de dados para preparar campanhas.
+O Adobe Campaign fornece templates de entrega personalizados que você pode usar ou o banco de dados para preparar campanhas.
 
 1. No **[!UICONTROL Explorer]**, vá para a pasta **[!UICONTROL Resources > Templates > Delivery templates]** da árvore do Adobe Campaign.
 1. Duplique o template **[!UICONTROL Email delivery (re-marketing)]** ou os exemplos de template de re-marketing oferecidos pelo Adobe Campaign.
@@ -267,7 +267,7 @@ O Adobe Campaign fornece templates do delivery personalizados que você pode usa
 
    ![](assets/webanalytics_remarketing_campaign_002.png)
 
-1. Clique no link **[!UICONTROL Configure...]** para especificar o segmento e o template do delivery vinculados à campanha.
+1. Clique no link **[!UICONTROL Configure...]** para especificar o segmento e o template de entrega vinculados à campanha.
 1. Selecione a conta externa configurada anteriormente.
 
    ![](assets/webanalytics_remarketing_campaign_003.png)
@@ -276,7 +276,7 @@ O Adobe Campaign fornece templates do delivery personalizados que você pode usa
 
    ![](assets/webanalytics_remarketing_campaign_005.png)
 
-1. Selecione o template do delivery a ser usado para essa campanha de re-marketing e clique em **[!UICONTROL Finish]** para fechar a janela.
+1. Selecione o template de entrega a ser usado para essa campanha de re-marketing e clique em **[!UICONTROL Finish]** para fechar a janela.
 
    ![](assets/webanalytics_remarketing_campaign_006.png)
 
