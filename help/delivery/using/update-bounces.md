@@ -5,9 +5,9 @@ description: Saiba como atualizar a qualificação de rejeição após uma inter
 feature: Deliverability
 hide: true
 hidefromtoc: true
-source-git-commit: 13f730d428861124060146efa26238ceca38bed6
+source-git-commit: f320c905f50c69a40678729b009a4c238a462e3c
 workflow-type: tm+mt
-source-wordcount: '519'
+source-wordcount: '520'
 ht-degree: 36%
 
 ---
@@ -34,7 +34,7 @@ Observe que se o diferimento for rejeitado com a mensagem &quot;452 ação solic
 >
 >Você pode verificar o Painel de status do Google Workspace em [esta página](https://www.google.com/appsstatus#hl=en&amp;v=status){_blank}.
 
-## Sintomas{#update-bounce-symptoms}
+## Impacto{#update-bounce-impact}
 
 No caso de uma interrupção de um ISP, os emails enviados por meio do Campaign não podem ser entregues com êxito ao recipient: esses emails serão marcados incorretamente como rejeições.
 
@@ -57,7 +57,10 @@ Com base no período do incidente e no ISP, abaixo estão as diretrizes recomend
 
 * Para instâncias do Campaign Classic v7 com informações de resposta de rejeição SMTP no **[!UICONTROL Error text]** campo da lista de quarentena:
 
-   * **Texto de erro (texto em quarentena)** contém &quot;550-5.1.1&quot; AND **Texto de erro (texto em quarentena)** contém &quot;support.ISP.com&quot; &quot;support.ISP.com&quot; pode ser: &quot;support.apple.com&quot; ou &quot;support.google.com&quot;, por exemplo
+   * **Texto de erro (texto em quarentena)** contém &quot;550-5.1.1&quot; AND **Texto de erro (texto em quarentena)** contém &quot;support.ISP.com&quot;
+
+      onde &quot;support.ISP.com&quot; pode ser: &quot;support.apple.com&quot; ou &quot;support.google.com&quot;, por exemplo
+
    * **Atualizar status (@lastModified)** em ou após MM/DD/AAAA HH:MM:SS AM
    * **Atualizar status (@lastModified)** em ou antes de MM/DD/AAAA HH:MM:PM SS
 
