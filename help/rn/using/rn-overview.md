@@ -6,10 +6,10 @@ feature: Overview
 role: User
 level: Beginner
 exl-id: 7a05fdff-8f9d-4e8d-812e-0f1509db5499
-source-git-commit: 9cdd4da153e5e5d1c7203d193067843fe832f38e
+source-git-commit: 1cc1568fe77cc5bbde88092b0e9108792e10fd71
 workflow-type: tm+mt
-source-wordcount: '921'
-ht-degree: 90%
+source-wordcount: '934'
+ht-degree: 85%
 
 ---
 
@@ -67,7 +67,7 @@ Como usuário convidado, você se beneficiará automaticamente da atualização 
 
 ### Por que minha empresa precisa dessa atualização?
 
-Como cliente hospedado, se sua conta tiver sido identificada com a necessidade de atualizar uma ou mais das tecnologias relacionadas ao Campaign Classic e atualizar o build e/ou a versão atual, a Adobe notificará você diretamente.
+Como cliente hospedado, se sua conta tiver sido identificada como necessitando atualizar uma ou mais tecnologias relacionadas ao Campaign Classic e atualizar sua infraestrutura para a build atual (por exemplo, da v7.2.1 para v7.3.3) e/ou versão (da v7 para v8), o Adobe notifica você diretamente.
 
 Como cliente local ou híbrido em execução em uma build mais antiga, o Adobe incentiva a mudança para a build estável (GA) mais recente.
 
