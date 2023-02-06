@@ -6,10 +6,10 @@ feature: Overview
 role: User
 level: Beginner
 exl-id: 7a05fdff-8f9d-4e8d-812e-0f1509db5499
-source-git-commit: d59e9f55275bac303a5ed1450bb28ef7fa0f84cd
+source-git-commit: 9cdd4da153e5e5d1c7203d193067843fe832f38e
 workflow-type: tm+mt
 source-wordcount: '921'
-ht-degree: 100%
+ht-degree: 90%
 
 ---
 
@@ -17,7 +17,7 @@ ht-degree: 100%
 
 ![](../../assets/v7-only.svg)
 
-O Adobe Campaign Classic lança periodicamente atualizações de produtos que trazem novos recursos, correções de erros e melhorias de desempenho, segurança e usabilidade. Essas atualizações são lançadas como builds de produtos. Informações detalhadas sobre cada nova build estão disponíveis nas [Notas de versão](latest-release.md).
+O Adobe Campaign Classic lança periodicamente atualizações de produtos que trazem novos recursos, correções de erros e melhorias de desempenho, segurança e usabilidade. Essas atualizações são lançadas como **criações de produtos**. Informações detalhadas sobre cada nova build estão disponíveis nas [Notas de versão](latest-release.md).
 
 ## Status da versão{#rn-statuses}
 
@@ -27,7 +27,7 @@ Cada nova build vem com um status identificado por uma cor nas [Notas de versão
 
 ![](assets/do-not-localize/limited3.png) **Disponibilidade limitada** (DL) - somente instalação sob demanda.
 
-![](assets/do-not-localize/blue3.png) **Versão candidata** (VC) - versão mais recente com novos recursos.
+![](assets/do-not-localize/blue3.png) **Candidato a lançamento** (RC) - Versão mais recente com novos recursos.
 
 ![](assets/do-not-localize/orange3.png) **Não está mais disponível** - Nenhuma implantação. Nenhuma correção de erro. Recomenda-se a atualização para um build mais recente.
 
@@ -37,9 +37,9 @@ Cada nova build vem com um status identificado por uma cor nas [Notas de versão
 
 O Adobe Campaign é atualizado regularmente. Essa frequência regular de atualizações tem como objetivo disponibilizar a você as mais recentes e melhores atualizações, além de manter seu ambiente protegido e melhorar sua experiência com nosso produto.
 
-É por isso que acreditamos ser essencial **executar a versão estável mais recente** do Adobe Campaign. Ela também garantirá que você obtenha uma melhor experiência de suporte, já que geralmente é bem mais rápido identificar, reproduzir e corrigir um problema em um build recente. Além disso, muitos problemas que você pode encontrar já foram corrigidos nos builds mais recentes.
+Essa é a razão pela qual é fundamental que você **executar a build estável mais recente** do Adobe Campaign. Ela também garantirá que você obtenha uma melhor experiência de suporte, já que geralmente é bem mais rápido identificar, reproduzir e corrigir um problema em um build recente. Além disso, muitos problemas que você pode encontrar já foram corrigidos nos builds mais recentes.
 
-Como usuário hospedado, você se beneficia automaticamente da atualização com a última versão estável, sem realizar nenhuma ação. Saiba mais na [seção de Atualização anual](#yearly-upgrade). Ao migrar de um build antigo, a Adobe recomenda atualizar primeiro para essa versão.
+Como cliente hospedado, você se beneficia automaticamente da atualização com a build estável mais recente sem ter de tomar nenhuma ação. Saiba mais na [seção de Atualização anual](#yearly-upgrade). Se você migrar de uma build antiga, o Adobe recomenda atualizar para essa build primeiro.
 
 ## Recomendações{#recommendations}
 
@@ -69,7 +69,7 @@ Como usuário convidado, você se beneficiará automaticamente da atualização 
 
 Como cliente hospedado, se sua conta tiver sido identificada com a necessidade de atualizar uma ou mais das tecnologias relacionadas ao Campaign Classic e atualizar o build e/ou a versão atual, a Adobe notificará você diretamente.
 
-Como um cliente local ou híbrido em uma versão mais antiga, a Adobe incentiva a transição para o build estável mais recente (GA).
+Como cliente local ou híbrido em execução em uma build mais antiga, o Adobe incentiva a mudança para a build estável (GA) mais recente.
 
 Dessa forma, sua conta ficará protegida contra vulnerabilidades, além de contar com a tecnologia de desempenho atualizada. Você também poderá fazer atualizações regulares e com mais facilidade na sua conta, que exigirão menos trabalho e intervenção manual.
 

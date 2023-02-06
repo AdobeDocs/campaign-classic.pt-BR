@@ -4,10 +4,10 @@ title: Entender o gerenciamento de quarentena
 description: Entender o gerenciamento de quarentena
 feature: Monitoring, Deliverability
 exl-id: cfd8f5c9-f368-4a31-a1e2-1d77ceae5ced
-source-git-commit: f7813764e55986efa3216b50e5ebf4387bd70e5e
+source-git-commit: c84f48ebdd66524e8dd6c39c88ae29565d11c9b2
 workflow-type: tm+mt
-source-wordcount: '2983'
-ht-degree: 89%
+source-wordcount: '2997'
+ht-degree: 88%
 
 ---
 
@@ -128,7 +128,9 @@ Para instalações hospedadas ou híbridas, se você tiver atualizado para o [MT
 Para instalações no local e instalações hospedadas/híbridas usando o MTA herdado do Campaign, você pode modificar o número de erros e o período entre dois erros. Para fazer isso, altere as configurações correspondentes no [assistente de implantação](../../installation/using/deploying-an-instance.md) (**[!UICONTROL Email channel]** > **[!UICONTROL Advanced parameters]**) ou [no nível do delivery](../../delivery/using/steps-sending-the-delivery.md#configuring-retries).
 
 
-## Remover um endereço em quarentena {#removing-a-quarantined-address}
+## Remover um endereço da quarentena {#removing-a-quarantined-address}
+
+### Atualizações automáticas {#unquarantine-auto}
 
 Os endereços que correspondem a condições específicas são automaticamente excluídos da lista de quarentena pelo [Limpeza do banco de dados](../../production/using/database-cleanup-workflow.md) fluxo de trabalho.
 
@@ -144,17 +146,21 @@ O status muda então para **[!UICONTROL Valid]**.
 >
 >Recipients com um endereço em um **[!UICONTROL Quarantine]** ou **[!UICONTROL Denylisted]** status nunca são removidos, mesmo que recebam um email.
 
+### Atualizações manuais {#unquarantine-manual}
+
 Também é possível cancelar a quarentena de um endereço manualmente. Para remover manualmente um endereço da lista da quarentena, altere seu status para **[!UICONTROL Valid]** do **[!UICONTROL Administration > Campaign Management > Non deliverables Management > Non deliverables and addresses]** nó .
 
 ![](assets/tech_quarant_error_status.png)
 
-Talvez seja necessário executar atualizações em massa na lista de quarentena, por exemplo, no caso de uma interrupção de ISP durante a qual os emails são marcados incorretamente como rejeições porque não podem ser entregues com êxito ao recipient.
+### Atualizações em massa {#unquarantine-bulk}
 
-Para executar isso, crie um workflow e adicione uma query à tabela de quarentena para filtrar todos os recipients afetados, para que possam ser removidos da lista de quarentena e incluídos em deliveries de email futuros do Campaign.
+Talvez seja necessário executar atualizações em massa na lista de quarentena, por exemplo, no caso de uma interrupção de ISP. Nesse caso, os emails são marcados incorretamente como rejeições porque não podem ser entregues com êxito ao recipient. Esses endereços devem ser removidos da lista de quarentena.
+
+Para fazer isso, crie um workflow e adicione um **[!UICONTROL Query]** atividade na tabela de quarentena para filtrar todos os recipients afetados. Uma vez identificados, eles podem ser removidos da lista de quarentena e incluídos em deliveries de email futuros do Campaign.
 
 Abaixo estão as diretrizes recomendadas para esta consulta:
 
-* Para ambientes do Campaign v8 e Campaign Classic v7 com informações de regra de email de entrada no **[!UICONTROL Error text]** campo da lista de quarentena:
+* Para ambientes Campaign Classic v7 com informações de regra de Email de entrada no **[!UICONTROL Error text]** campo da lista de quarentena:
 
    * **O texto de erro (texto de quarentena)** contém &quot;Momen_Code10_InvalidRecipient&quot;
    * **Domínio de email (@domain)** igual a domain1.com OR **Domínio de email (@domain)** igual a domain2.com OR **Domínio de email (@domain)** igual a domain3.com
@@ -171,11 +177,11 @@ Abaixo estão as diretrizes recomendadas para esta consulta:
    * **Atualizar status (@lastModified)** em ou antes de MM/DD/AAAA HH:MM:PM SS
 
 
-Depois de ter a lista de recipients afetados, adicione um **[!UICONTROL Update data]** atividade para definir seu status como **[!UICONTROL Valid]** assim, eles serão removidos da lista de quarentena pelo **[!UICONTROL Database cleanup]** fluxo de trabalho, Também é possível excluí-los da tabela de quarentena.
+Depois de ter a lista de recipients afetados, adicione um **[!UICONTROL Update data]** atividade para definir seu status de endereço de email como **[!UICONTROL Valid]** assim, eles serão removidos da lista de quarentena pelo **[!UICONTROL Database cleanup]** fluxo de trabalho. Também é possível excluí-los da tabela de quarentena.
 
 ## Quarentenas de notificação por push {#push-notification-quarantines}
 
-O mecanismo de quarentena para notificações por push é globalmente igual ao processo geral. Consulte [Sobre quarentenas](#about-quarantines). No entanto, certos erros são gerenciados de forma diferente para notificações por push. Por exemplo, para determinados erros suaves, nenhuma tentativa é executada no mesmo delivery. As especificidades para notificação por push estão listadas abaixo. O mecanismo de tentativa (número de tentativas, frequência) é igual ao dos emails.
+O mecanismo de quarentena para notificações por push é globalmente igual ao processo geral. No entanto, certos erros são gerenciados de forma diferente para notificações por push. Por exemplo, para determinados erros suaves, nenhuma tentativa é executada no mesmo delivery. As especificidades para notificação por push estão listadas abaixo. O mecanismo de tentativa (número de tentativas, frequência) é igual ao dos emails.
 
 Os itens colocados em quarentena são tokens de dispositivo.
 

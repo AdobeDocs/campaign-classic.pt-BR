@@ -5,9 +5,9 @@ description: Saiba como atualizar a qualificação de rejeição após uma inter
 feature: Deliverability
 hide: true
 hidefromtoc: true
-source-git-commit: f320c905f50c69a40678729b009a4c238a462e3c
+source-git-commit: 9cdd4da153e5e5d1c7203d193067843fe832f38e
 workflow-type: tm+mt
-source-wordcount: '520'
+source-wordcount: '513'
 ht-degree: 36%
 
 ---
@@ -48,14 +48,14 @@ Você precisa executar um query na tabela de quarentena para filtrar todos os re
 
 Com base no período do incidente e no ISP, abaixo estão as diretrizes recomendadas para esta consulta.
 
-* Para ambientes do Campaign v8 e Campaign Classic v7 com informações de regra de email de entrada no **[!UICONTROL Error text]** campo da lista de quarentena:
+* Para ambientes do Campaign com informações de regra de email de entrada no **[!UICONTROL Error text]** campo da lista de quarentena:
 
    * **O texto de erro (texto de quarentena)** contém &quot;Momen_Code10_InvalidRecipient&quot;
    * **Domínio de email (@domain)** igual a domain1.com OR **Domínio de email (@domain)** igual a domain2.com OR **Domínio de email (@domain)** igual a domain3.com
    * **Atualizar status (@lastModified)** em ou após MM/DD/AAAA HH:MM:SS AM
    * **Atualizar status (@lastModified)** em ou antes de MM/DD/AAAA HH:MM:PM SS
 
-* Para instâncias do Campaign Classic v7 com informações de resposta de rejeição SMTP no **[!UICONTROL Error text]** campo da lista de quarentena:
+* Para ambientes do Campaign com informações de resposta de rejeição SMTP no **[!UICONTROL Error text]** campo da lista de quarentena:
 
    * **Texto de erro (texto em quarentena)** contém &quot;550-5.1.1&quot; AND **Texto de erro (texto em quarentena)** contém &quot;support.ISP.com&quot;
 
