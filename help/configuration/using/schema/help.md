@@ -1,12 +1,12 @@
 ---
 product: campaign
-title: 'Elementos e atributos do schema - elemento de ajuda '
+title: Elementos e atributos do schema - elemento de ajuda
 description: elemento de ajuda
 exl-id: 8207868c-25ff-4ca9-afdd-41b324c7ac0d
 source-git-commit: 40da5774c8a6a228992c4aa400e2d9924215611e
 workflow-type: tm+mt
 source-wordcount: '49'
-ht-degree: 8%
+ht-degree: 12%
 
 ---
 
@@ -26,7 +26,7 @@ nenhuma
 
 `<srcschema>`  ,  `<element>`   ,   `<attribute>`    ,    `<enumeration>`     ,     `<value>`      ,     `<param />`,      `<method />`
 
-## Crianças {#children-6}
+## Filhos {#children-6}
 
 nenhuma
 

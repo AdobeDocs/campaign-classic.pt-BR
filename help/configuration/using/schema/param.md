@@ -6,7 +6,7 @@ exl-id: d8960a2e-6900-4346-9f06-e7dd9d7b5139
 source-git-commit: 40da5774c8a6a228992c4aa400e2d9924215611e
 workflow-type: tm+mt
 source-wordcount: '177'
-ht-degree: 3%
+ht-degree: 7%
 
 ---
 
@@ -34,7 +34,7 @@ param:==help
 
 `<parameters>`
 
-## Crianças {#children-12}
+## Filhos {#children-12}
 
 `<help>`
 
@@ -53,7 +53,7 @@ Esse elemento permite definir um parâmetro para chamar um método SOAP.
 
    Lista de tipos disponíveis:
 
-   * ANY
+   * QUALQUER UMA
    * compartimento
    * blob
    * booleano
@@ -62,7 +62,7 @@ Esse elemento permite definir um parâmetro para chamar um método SOAP.
    * datetime
    * datetimetz
    * datetimenotz
-   * data
+   * date
    * DOMDocument
    * DOMElement
    * double
@@ -70,14 +70,14 @@ Esse elemento permite definir um parâmetro para chamar um método SOAP.
    * float
    * html
    * int64
-   * link
+   * Link 
    * long
    * memorando
    * MNTOKEN
    * percent
    * chave primária
    * short
-   * string
+   * sequência de caracteres
    * tempo
    * timespan
    * uuid

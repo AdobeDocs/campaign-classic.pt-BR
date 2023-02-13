@@ -9,7 +9,7 @@ exl-id: 8b07447c-9a86-4b56-8d29-e0b01357a6ec
 source-git-commit: 11e175c737d9c6cbb9432ec7835f35ee0e00a5c0
 workflow-type: tm+mt
 source-wordcount: '3140'
-ht-degree: 4%
+ht-degree: 6%
 
 ---
 
@@ -121,7 +121,7 @@ As informações sobre as recuperações são fornecidas no **Períodos de recup
 
 >[!NOTE]
 >
->Para instalações hospedadas ou híbridas, se você tiver atualizado para a variável [MTA aprimorado](../../delivery/using/sending-with-enhanced-mta.md), os parâmetros de nova tentativa do Campaign não são mais usados. As tentativas de rejeição em modo suave e o tempo entre elas são determinados pelo MTA aprimorado com base no tipo e na gravidade das respostas de rejeição provenientes do domínio de email da mensagem.
+>Para instalações hospedadas ou híbridas, se você tiver atualizado para a variável [MTA aprimorado](../../delivery/using/sending-with-enhanced-mta.md), os parâmetros de nova tentativa do Campaign não são mais usados. As tentativas de rejeição temporária e o intervalo de tempo entre elas são determinados pelo MTA aprimorado com base no tipo e na gravidade das respostas de rejeição que retornam do domínio de email da mensagem.
 
 ### Parâmetros de quarentena {#quarantine-parameters}
 
@@ -285,7 +285,7 @@ Insira a seguinte informação:
 * **[!UICONTROL Label]** : Insira um nome para esta conta de push de SMS/Wap. Por exemplo, você pode desejar usar o nome do roteador.
 * Para o **[!UICONTROL Server]**, **[!UICONTROL Port]**, **[!UICONTROL Account]**, **[!UICONTROL Password]**, **[!UICONTROL Connector]**, **[!UICONTROL Send Endpoint]**, **[!UICONTROL Reception Endpoint]**, **[!UICONTROL Notification Endpoint]** campos: Entre em contato com seu provedor de serviços para obter as configurações necessárias.
 
-### Parâmetros do SMS enviado {#parameters-of-sms-sent}
+### Parâmetros de SMS enviados {#parameters-of-sms-sent}
 
 No **Prioridade** lista suspensa: Selecione &quot;Normal&quot;, &quot;Alto&quot; ou &quot;Urgente&quot; para aplicá-lo às mensagens a serem enviadas.
 

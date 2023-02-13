@@ -5,8 +5,8 @@ description: Saiba mais sobre a atividade de fluxo de trabalho Atualizar agregad
 feature: Workflows
 exl-id: d2b26af0-30a1-4852-acd5-996795f198a1
 source-git-commit: 1635366b9e1302acd3d8997312bf07d5c1a68982
-workflow-type: ht
-source-wordcount: '0'
+workflow-type: tm+mt
+source-wordcount: '123'
 ht-degree: 100%
 
 ---

@@ -1,7 +1,7 @@
 ---
 product: campaign
-title: Endpoints de rede do Campaign
-description: Endpoints de rede do Campaign
+title: Pontos de acesso de rede do Campaign
+description: Pontos de acesso de rede do Campaign
 exl-id: 027ed2b6-365f-434f-9a18-2140512168e9
 source-git-commit: 378788764e244dcad12018d6d703048707d4c3e6
 workflow-type: tm+mt
@@ -10,7 +10,7 @@ ht-degree: 22%
 
 ---
 
-# Endpoints de rede do Campaign {#campaign-standard-network-endpoints}
+# Pontos de acesso de rede do Campaign {#campaign-standard-network-endpoints}
 
 ![](../../assets/v7-only.svg)
 

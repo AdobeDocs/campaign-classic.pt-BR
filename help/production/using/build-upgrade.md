@@ -163,7 +163,7 @@ Para substituir todos os arquivos pela nova versão, é necessário que todas as
 
 ### Atualizar o aplicativo do servidor do Adobe Campaign
 
-1. Execute o **Setup.exe** arquivo. Se precisar baixar esse arquivo, acesse [Centro de download](https://experience.adobe.com/#/downloads/content/software-distribution/en/campaign.html).
+1. Execute o **Setup.exe** arquivo. Se precisar baixar esse arquivo, acesse [Centro de download](https://experience.adobe.com/#/downloads/content/software-distribution/br/campaign.html).
 
 1. Selecione o modo de instalação: **Atualizar** ou **Reparar**.
 
@@ -246,7 +246,7 @@ Quando o Transactional Messaging (Message Center) é ativado na instância do Ca
 
 No contexto de um ambiente de mid-sourcing, é necessário executar essas etapas adicionais para atualizar:
 
-1. Contato [Atendimento ao cliente do Adobe](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html) coordenar a atualização do servidor Mid-sourcing.
+1. Contato [Atendimento ao cliente do Adobe](https://helpx.adobe.com/br/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html) coordenar a atualização do servidor Mid-sourcing.
 1. Valide se a versão foi atualizada executando um link de teste. Por exemplo:
 
    ```
@@ -363,8 +363,8 @@ Existem diferentes tipos de mesclagens:
 #### Onde encontrar o código?
 
 1. O código incorporado é armazenado em arquivos XML na pasta do datakit. Encontre o arquivo XML que corresponde ao objeto conflitante. Exemplo: installationDirectory\datakit\nms\fra\form\recipient.xml
-1. Recuperar a versão original: através da [Centro de download](https://experience.adobe.com/#/downloads/content/software-distribution/en/campaign.html) ou outra instalação não atualizada do produto.
-1. Recupere a nova versão: através da [Centro de download](https://experience.adobe.com/#/downloads/content/software-distribution/en/campaign.html) ou os arquivos instalados do cliente.
+1. Recuperar a versão original: através da [Centro de download](https://experience.adobe.com/#/downloads/content/software-distribution/br/campaign.html) ou outra instalação não atualizada do produto.
+1. Recupere a nova versão: através da [Centro de download](https://experience.adobe.com/#/downloads/content/software-distribution/br/campaign.html) ou os arquivos instalados do cliente.
 1. Recuperar a versão personalizada: recupere o código-fonte do objeto no cliente do Campaign.
 
 ### Como fazer um diff?
@@ -409,7 +409,7 @@ Estas são as etapas para executar uma mesclagem complexa:
 
 **Tópicos relacionados**
 
-* [Perguntas frequentes de atualização de build](../../platform/using/faq-build-upgrade.md)
+* [Perguntas frequentes sobre atualização de build](../../platform/using/faq-build-upgrade.md)
 * [Notas de versão do Campaign Classic](../../rn/using/rn-overview.md)
 * [Opções de ajuda e suporte para o Campaign Classic](../../support.md)
 * [Programa de atualização anual do Campaign](../../rn/using/rn-overview.md)

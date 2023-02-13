@@ -265,7 +265,7 @@ Os comandos são exibidos na mesma ordem em que são declarados no documento XML
 
 Um separador de comando permite exibir uma barra de separação entre comandos. É identificado pela variável **&#39;-&#39;** valor contido no rótulo do comando.
 
-A presença opcional do **`<soapcall>`** com seus parâmetros de entrada define a chamada de um método SOAP a ser executado. Para obter mais informações sobre APIs SOAP, consulte [Documentação JSAPI do Campaign](https://experienceleague.adobe.com/developer/campaign-api/api/index.html).
+A presença opcional do **`<soapcall>`** com seus parâmetros de entrada define a chamada de um método SOAP a ser executado. Para obter mais informações sobre APIs SOAP, consulte [Documentação JSAPI do Campaign](https://experienceleague.adobe.com/developer/campaign-api/api/index.html?lang=pt-BR).
 
 O contexto do formulário pode ser atualizado na inicialização por meio do **`<enter>`** . Para obter mais informações sobre essa tag, consulte a documentação do formulário de entrada.
 

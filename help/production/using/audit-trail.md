@@ -7,7 +7,7 @@ exl-id: 8508d879-fb38-4b1f-9f55-0341bb8d0c67
 source-git-commit: c54102b2ec32fbea89ce41dd3c9fedb98e612996
 workflow-type: tm+mt
 source-wordcount: '461'
-ht-degree: 3%
+ht-degree: 11%
 
 ---
 
@@ -17,7 +17,7 @@ ht-degree: 3%
 
 No Adobe Campaign, a variável **[!UICONTROL Audit trail]** O fornece acesso ao histórico completo das alterações feitas na instância.
 
-**[!UICONTROL Audit trail]** A captura, em tempo real, uma lista abrangente de ações e eventos que ocorrem em sua instância do Adobe Campaign. Ele inclui uma maneira de autoatendimento para acessar um histórico de dados que ajudam a responder perguntas como: o que aconteceu com seus fluxos de trabalho e quem os atualizou pela última vez ou o que seus usuários fizeram na instância .
+**[!UICONTROL Audit trail]** A captura, em tempo real, uma lista abrangente de ações e eventos que ocorrem em sua instância do Adobe Campaign. Ele inclui uma maneira de autoatendimento para acessar um histórico de dados que ajudam a responder perguntas como: o que aconteceu com seus workflows e quem os atualizou por último ou o que seus usuários fizeram na instância .
 
 >[!NOTE]
 >

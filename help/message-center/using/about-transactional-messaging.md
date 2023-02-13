@@ -1,11 +1,11 @@
 ---
 product: campaign
 title: Introdução a mensagens transacionais
-description: 'Saiba mais sobre o princípio operacional de mensagens transacionais do Adobe Campaign Classic e as principais etapas. '
+description: Saiba mais sobre o princípio operacional de mensagens transacionais do Adobe Campaign Classic e as principais etapas.
 feature: Transactional Messaging
 exl-id: dc52e789-d0bf-4e8f-b448-9d69a2762cc1
 source-git-commit: f05eefc9945c4ead89eb448b6e28c3523559e055
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '644'
 ht-degree: 100%
 

@@ -85,31 +85,31 @@ Os possíveis motivos para uma falha de delivery são:
   </tr> 
   <tr> 
    <td> Endereço de controle </td> 
-   <td> Ignorado </td> 
+   <td> Ignored </td> 
    <td> 127 </td> 
    <td> O endereço do recipient faz parte do grupo de controle.<br /> </td> 
   </tr> 
   <tr> 
    <td> Duplo </td> 
-   <td> Ignorado </td> 
+   <td> Ignored </td> 
    <td> 10 </td> 
    <td> O endereço do recipient já estava nesse delivery.<br /> </td> 
   </tr> 
   <tr> 
    <td> Erro ignorado </td> 
-   <td> Ignorado </td> 
+   <td> Ignored </td> 
    <td> 25 </td> 
    <td> O endereço está na lista de permissões. O erro é então ignorado e um email será enviado.<br /> </td> 
   </tr> 
   <tr> 
    <td> Excluído após arbitragem </td> 
-   <td> Ignorado </td> 
+   <td> Ignored </td> 
    <td> 12 </td> 
    <td> O recipient foi excluído por uma regra de tipologia de 'arbitragem' de campanha.<br /> </td> 
   </tr> 
   <tr> 
    <td> Excluído por uma regra SQL </td> 
-   <td> Ignorado </td> 
+   <td> Ignored </td> 
    <td> 11 </td> 
    <td> O recipient foi excluído por uma regra de tipologia de campanha do tipo "SQL".<br /> </td> 
   </tr> 
@@ -127,7 +127,7 @@ Os possíveis motivos para uma falha de delivery são:
   </tr> 
   <tr> 
    <td> Não conectado </td> 
-   <td> Ignorado </td> 
+   <td> Ignored </td> 
    <td> 6 </td> 
    <td> O telefone celular do recipient está desligado ou não conectado à rede quando a mensagem é enviada.<br /> </td> 
   </tr> 
@@ -139,7 +139,7 @@ Os possíveis motivos para uma falha de delivery são:
   </tr> 
   <tr> 
    <td> Não se qualifica para as ofertas </td> 
-   <td> Ignorado </td> 
+   <td> Ignored </td> 
    <td> 16 </td> 
    <td> O recipient não foi qualificado para as ofertas no delivery.<br /> </td> 
   </tr> 
@@ -151,13 +151,13 @@ Os possíveis motivos para uma falha de delivery são:
   </tr> 
   <tr> 
    <td> Target limitado em tamanho </td> 
-   <td> Ignorado </td> 
+   <td> Ignored </td> 
    <td> 17 </td> 
    <td> O tamanho máximo de delivery foi atingido para o recipient.<br /> </td> 
   </tr> 
   <tr> 
    <td> Endereço não qualificado </td> 
-   <td> Ignorado </td> 
+   <td> Ignored </td> 
    <td> 15 </td> 
    <td> O endereço postal não foi qualificado.<br /> </td> 
   </tr> 

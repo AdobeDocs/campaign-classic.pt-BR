@@ -5,8 +5,8 @@ description: Estes exemplos mostram como é possível usar o código JavaScript 
 feature: Workflows
 exl-id: 7213ea64-3dec-4b16-9d93-4ae941ddfaa7
 source-git-commit: 381538fac319dfa075cac3db2252a9cc80b31e0f
-workflow-type: ht
-source-wordcount: '0'
+workflow-type: tm+mt
+source-wordcount: '1764'
 ht-degree: 100%
 
 ---
@@ -52,7 +52,7 @@ Para gravar no banco de dados, é possível usar o método estático `Write` no 
    1. Chame o método `Write` no schema `xtk:session`.
 
       >[!IMPORTANT]
-      > Se estiver usando o Adobe Campaign v8, recomendamos o uso do mecanismo de preparo com as APIs de **Assimilação** e **Atualização/exclusão de dados** para o método `Write` em uma tabela Snowflake. [Leia mais](https://experienceleague.adobe.com/docs/campaign/campaign-v8/architecture/api/new-apis.html?lang=pt-BR){target=&quot;_blank&quot;}.
+      > Se estiver usando o Adobe Campaign v8, recomendamos o uso do mecanismo de preparo com as APIs de **Assimilação** e **Atualização/exclusão de dados** para o método `Write` em uma tabela Snowflake. [Leia mais](https://experienceleague.adobe.com/docs/campaign/campaign-v8/architecture/api/new-apis.html?lang=pt-BR){target="_blank"}.
 
    1. Transmita o código XML como argumento para a solicitação de gravação.
 
@@ -562,7 +562,7 @@ for each (var w in res.recipient)
 * A operação `delete` 
 
 >[!IMPORTANT]
-> Caso utilize o Adobe Campaign v8, recomendamos utilizar o mecanismo de preparo com as APIs de **Assimilação** e **Atualização/exclusão de dados** para o método `Write` em uma tabela Snowflake. [Leia mais](https://experienceleague.adobe.com/docs/campaign/campaign-v8/architecture/api/new-apis.html?lang=pt-BR){target=&quot;_blank&quot;}.
+> Caso utilize o Adobe Campaign v8, recomendamos utilizar o mecanismo de preparo com as APIs de **Assimilação** e **Atualização/exclusão de dados** para o método `Write` em uma tabela Snowflake. [Leia mais](https://experienceleague.adobe.com/docs/campaign/campaign-v8/architecture/api/new-apis.html?lang=pt-BR){target="_blank"}.
 
 #### Exemplo 1: inserir ou atualizar um registro
 

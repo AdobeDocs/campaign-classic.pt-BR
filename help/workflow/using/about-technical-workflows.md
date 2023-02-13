@@ -5,7 +5,7 @@ description: Saiba mais sobre os fluxos de trabalho técnicos disponíveis com o
 feature: Workflows
 exl-id: 9aed2665-cd4b-419c-b9f2-ea04fc1d8f01
 source-git-commit: 1635366b9e1302acd3d8997312bf07d5c1a68982
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '1705'
 ht-degree: 100%
 

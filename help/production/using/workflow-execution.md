@@ -117,5 +117,5 @@ Para verificar isso e iniciar o módulo se necessário, siga as seguintes etapas
 Se um fluxo de trabalho falhar, siga as etapas abaixo:
 
 1. Verifique o diário do workflow. Para obter mais informações, consulte [Monitoramento da execução do workflow](../../workflow/using/monitoring-workflow-execution.md) e [Logs de exibição](../../workflow/using/monitoring-workflow-execution.md#displaying-logs) seções.
-1. Monitorar workflows técnicos. Para obter mais informações, consulte [esta seção](../../workflow/using/monitoring-technical-workflows.md).
+1. Monitorar fluxos de trabalho técnicos. Para obter mais informações, consulte [esta seção](../../workflow/using/monitoring-technical-workflows.md).
 1. Procure falhas em atividades de workflow individuais.

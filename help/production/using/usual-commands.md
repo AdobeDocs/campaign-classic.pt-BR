@@ -9,7 +9,7 @@ exl-id: 472ccc04-e68e-4ccb-90e9-7d626a4e794f
 source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '407'
-ht-degree: 3%
+ht-degree: 4%
 
 ---
 
@@ -29,7 +29,6 @@ O parâmetro **`<command>`** corresponde ao módulo .
 >
 >* Em qualquer caso, é possível adicionar a variável **-noconsole** argumento para excluir comentários exibidos quando os módulos forem iniciados.
 >* Por outro lado, é possível adicionar o argumento **-verbose** para exibir mais informações.
-
 >
 
 

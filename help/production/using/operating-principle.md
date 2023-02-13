@@ -9,7 +9,7 @@ exl-id: 1c032ef9-af11-4947-90c6-76cb9434ae85
 source-git-commit: 30f2451849dec0f640915e81c36d0a9c5f466d6c
 workflow-type: tm+mt
 source-wordcount: '495'
-ht-degree: 1%
+ht-degree: 2%
 
 ---
 
@@ -67,7 +67,7 @@ Os módulos disponíveis são detalhados na tabela a seguir:
 | stop | Desligamento parcial do sistema |
 | submitda | Envio de uma ação de delivery |
 | syslogd | Servidor de registro e gravação de rastreamento |
-| tracking | Consolidação e recuperação de logs de rastreamento |
+| rastreamento | Consolidação e recuperação de logs de rastreamento |
 | trackinglogd | Servidor de gravação e limpeza do log de rastreamento |
 | vigia | Inicialização e instância de monitoramento |
 | web | Servidor de aplicativos (HTTP e SOAP) |

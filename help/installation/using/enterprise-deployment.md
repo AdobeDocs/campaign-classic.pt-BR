@@ -76,7 +76,7 @@ Custos mais altos de hardware e administração.
 Nos exemplos a seguir, os parâmetros da instância são:
 
 * Nome da instância: demonstração
-* Máscara de DNS: tracking.campaign.net*, console.campaign.net* (o servidor de aplicativos trata os URLs das conexões e relatórios do console do cliente e das mirror pages e unsubscription pages)
+* Máscara de DNS: tracking.campaign.net&#42;, console.campaign.net&#42; (o servidor de aplicativos manipula os URLs para conexões e relatórios do console do cliente e para mirror pages e unsubscription de páginas)
 * Idioma: Inglês
 * Banco de dados: campanha:demo@dbsrv
 

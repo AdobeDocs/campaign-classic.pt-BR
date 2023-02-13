@@ -28,7 +28,7 @@ _operation (cadeia de caracteres), avançado (booleano), agregado (cadeia de car
 
 `<element>`
 
-## Crianças {#children-4}
+## Filhos {#children-4}
 
 * `<attribute>`
 * `<compute-string>`
@@ -174,7 +174,7 @@ Existem quatro tipos de `<element>`  elementos no Adobe Campaign:
 
    Lista de tipos disponíveis:
 
-   * ANY
+   * QUALQUER UMA
    * compartimento
    * blob
    * booleano
@@ -183,20 +183,20 @@ Existem quatro tipos de `<element>`  elementos no Adobe Campaign:
    * datetime
    * datetimetz
    * datetimenotz
-   * data
+   * date
    * double
    * enum
    * float
    * html
    * int64
-   * link
+   * Link 
    * long
    * memorando
    * MNTOKEN
    * percent
    * chave primária
    * short
-   * string
+   * sequência de caracteres
    * tempo
    * timespan
    * uuid

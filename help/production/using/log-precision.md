@@ -47,9 +47,9 @@ O Adobe Campaign pode operar com dois níveis de log:
 
    >[!NOTE]
    >
-   >Se você usar **tracefilter:***, todos os tipos de log são ativados: ncm, rdr, nms, jst, tempo, wdbc, ldap, soap, xtk, xtkquery, sessão, xtkwriter, rede, pop3, inmail\
-   Os tipos de log mais úteis são: **wdbc** (exibe todas as consultas SQL), **sabão** (exibe todas as chamadas SOAP), **ldap** (exibe todas as consultas LDAP após a autenticação), **xtkquery** (exibe a lista de todos os querydef).\
-   Você pode usá-los individualmente (**tracefilter:soap,wdbc** por exemplo). Você também pode ativá-los e optar por excluir alguns outros: **-tracefilter:*,!soap**
+   >Se você usar **trefilter:&#42;**, todos os tipos de log são ativados: ncm, rdr, nms, jst, tempo, wdbc, ldap, soap, xtk, xtkquery, sessão, xtkwriter, rede, pop3, inmail\
+   >Os tipos de log mais úteis são: **wdbc** (exibe todas as consultas SQL), **sabão** (exibe todas as chamadas SOAP), **ldap** (exibe todas as consultas LDAP após a autenticação), **xtkquery** (exibe a lista de todos os querydef).\
+   >Você pode usá-los individualmente (**tracefilter:soap,wdbc** por exemplo). Você também pode ativá-los e optar por excluir alguns outros: **-tracefilter:&#42;,!soap**
 
    Verifique se o erro realmente ocorreu e reinicie o processo da maneira normal:
 
@@ -58,7 +58,8 @@ O Adobe Campaign pode operar com dois níveis de log:
    ```
 
 >[!IMPORTANT]
-Os registros desses comandos são armazenados no arquivo de log do módulo.
+>
+>Os registros desses comandos são armazenados no arquivo de log do módulo.
 
 Este é um exemplo específico para o módulo da Web. Os outros módulos funcionam como indicado acima.
 
@@ -81,11 +82,13 @@ nlserver stop mta@<INSTANCE_NAME>; nlserver mta -instance:<INSTANCE_NAME> -trace
 ```
 
 >[!NOTE]
-O **Tracefile** permite salvar os logs. Nos exemplos acima, os logs são salvos no **var/`<instance-name>`/mta_debug.log** e **var/default/web_debug.log** arquivos.
+>
+>O **Tracefile** permite salvar os logs. Nos exemplos acima, os logs são salvos no **var/`<instance-name>`/mta_debug.log** e **var/default/web_debug.log** arquivos.
 
 >[!IMPORTANT]
-No Windows, não adicione a opção LD_PRELOAD. O seguinte comando é suficiente:\
-nlserver web -tomcat -verbose -tracefilter:*
+>
+>No Windows, não adicione a opção LD_PRELOAD. O seguinte comando é suficiente:\
+>nlserver web -tomcat -verbose -tracefilter:&#42;
 
 Verifique se o problema ocorre novamente e reinicie o módulo:
 

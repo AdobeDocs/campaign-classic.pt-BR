@@ -7,7 +7,7 @@ exl-id: f36a1b01-a002-4a21-9255-ea78b5f173fe
 source-git-commit: 8fa50d17a9ff36ccc310860ac93771590cfd76fd
 workflow-type: tm+mt
 source-wordcount: '381'
-ht-degree: 8%
+ht-degree: 11%
 
 ---
 
@@ -21,7 +21,7 @@ Para obter uma melhor compreensão das tabelas integradas do Campaign e sua inte
 
 A estrutura física e lógica dos dados transportados no aplicativo é descrita em XML. Ela obedece a uma gramática específica do Adobe Campaign, chamada de **schema**.
 
-Um schema é um documento XML associado a uma tabela de banco de dados. Ele define a estrutura de dados e descreve a definição SQL da tabela:
+Um esquema é um documento XML associado a uma tabela de banco de dados. Ele define a estrutura de dados e descreve a definição SQL da tabela:
 
 * O nome da tabela
 * Campos

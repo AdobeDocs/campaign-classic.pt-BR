@@ -444,7 +444,7 @@ Um alias permite modificar a localização dos dados no documento de saída. O *
 </queryDef>
 ```
 
-Retorna:
+Devoluções:
 
 ```
 <recipient My_folder="Recipients" First name ="John" lastName="Doe"/>

@@ -9,7 +9,7 @@ exl-id: dbd50178-0a16-46ed-bfad-47beb3c2a420
 source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '255'
-ht-degree: 5%
+ht-degree: 6%
 
 ---
 
@@ -59,7 +59,7 @@ Esta é uma lista de módulos afetados por problemas frequentes:
    <td> Se alguns logs estiverem ausentes nos arquivos de log, verifique se o módulo está usando a porta 666. Consulte <a href="../../production/using/general-architecture.md#list-of-open-ports" target="_blank">Lista de portas abertas</a>.<br /> </td> 
   </tr> 
   <tr> 
-   <td> tracking </td> 
+   <td> rastreamento </td> 
    <td> Consolidação e recuperação de logs de rastreamento<br /> </td> 
    <td> Verifique esse módulo se os logs de rastreamento não forem mais encaminhados.<br /> </td> 
   </tr> 

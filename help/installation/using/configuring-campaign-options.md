@@ -9,7 +9,7 @@ exl-id: a979cd99-afa7-4ce6-ba0f-9495089cba08
 source-git-commit: 8610d29a3df1080f1622a2cb3685c0961fb40092
 workflow-type: tm+mt
 source-wordcount: '3991'
-ht-degree: 3%
+ht-degree: 9%
 
 ---
 
@@ -301,11 +301,11 @@ O **[!UICONTROL Administration / Platform / Options]** permite configurar as op�
   </tr> 
   <tr> 
    <td> <span class="uicontrol">NmsDelivery_ImagePublishing</span> </td> 
-   <td> Configuração do upload de imagem. Os valores podem ser none / tracking / script / list (podem ser substituídos pelas configurações opcionais do operador). </td> 
+   <td> Configuração de upload de imagem. Os valores podem ser none / tracking / script / list (podem ser substituídos pelas configurações opcionais do operador). </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">NmsDelivery_ImageSubDirectory</span> <br /> </td> 
-   <td> Pasta na qual as imagens no servidor devem ser armazenadas.<br /> </td> 
+   <td> Pasta na qual as imagens do servidor devem ser armazenadas.<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">NmsServer_LogoPath</span> <br /> </td> 
@@ -448,7 +448,7 @@ O **[!UICONTROL Administration / Platform / Options]** permite configurar as op�
  </tbody> 
 </table>
 
-## Centro de mensagens {#message-center}
+## Central de mensagens {#message-center}
 
 <table> 
  <thead> 
@@ -488,7 +488,7 @@ O **[!UICONTROL Administration / Platform / Options]** permite configurar as op�
   </tr> 
   <tr> 
    <td> <span class="uicontrol">MC_RtEventAvgProcessTimeAlert</span> <br /> </td> 
-   <td> Limite de alertas para o tempo médio de processamento de eventos em tempo real.<br /> </td> 
+   <td> Limite de alerta para o tempo médio de processamento de eventos em tempo real.<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">MC_RtEventAvgProcessTimeWarning</span> <br /> </td> 
@@ -496,7 +496,7 @@ O **[!UICONTROL Administration / Platform / Options]** permite configurar as op�
   </tr> 
   <tr> 
    <td> <span class="uicontrol">MC_RtEventAvgQueueAlert</span> <br /> </td> 
-   <td> Limite de alertas para o número médio de eventos em tempo real enfileirados.<br /> </td> 
+   <td> Limite de alerta para o número médio de eventos em tempo real enfileirados.<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">MC_RtEventAvgQueueTimeAlert</span> <br /> </td> 
@@ -512,7 +512,7 @@ O **[!UICONTROL Administration / Platform / Options]** permite configurar as op�
   </tr> 
   <tr> 
    <td> <span class="uicontrol">MC_RtEventErrorAlert</span> <br /> </td> 
-   <td> Limite de alertas para erros de processamento de eventos em tempo real.<br /> </td> 
+   <td> Limite de alerta para o processamento de erros de eventos em tempo real.<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">MC_RtEventErrorWarning</span> <br /> </td> 
@@ -536,19 +536,19 @@ O **[!UICONTROL Administration / Platform / Options]** permite configurar as op�
   </tr> 
   <tr> 
    <td> <span class="uicontrol">MC_RtEventQueueAlert</span> <br /> </td> 
-   <td> Limite antes da condição crítica para a fila de eventos em tempo real pendentes.<br /> </td> 
+   <td> Limite antes de atingir a condição crítica da fila de eventos em tempo real pendentes.<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">MC_RtEventQueueWarning</span> <br /> </td> 
-   <td> Limite antes de avisar para a fila de eventos em tempo real pendentes.<br /> </td> 
+   <td> Valor limite antes da exibição do aviso sobre a fila de eventos em tempo real pendentes.<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">MC_RtEventThroughputAlert</span> <br /> </td> 
-   <td> Limite de alertas para throughput de eventos em tempo real.<br /> </td> 
+   <td> Limite de alerta para a taxa de transferência de eventos em tempo real.<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">MC_RtEventThroughputWarning</span> <br /> </td> 
-   <td> Limite de aviso para throughput do evento em tempo real.<br /> </td> 
+   <td> Limite de aviso para a taxa de transferência de eventos em tempo real.<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">NmsMessageCenter_RoutingBatchSize</span> <br /> </td> 
@@ -816,11 +816,11 @@ O **[!UICONTROL Administration / Platform / Options]** permite configurar as op�
  <tbody> 
   <tr> 
    <td> <span class="uicontrol">NmsExecutionInstanceId</span> <br /> </td> 
-   <td> Identificador da instância de execução.<br /> </td> 
+   <td> Identificador de instância de execução.<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">NmsServer_CustomerId</span> <br /> </td> 
-   <td> Identificador do cliente usado ao enviar o relatório de faturamento.<br /> </td> 
+   <td> Identificador de cliente usado ao enviar o relatório de faturamento.<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">NmsServer_IntranetURL</span> <br /> </td> 
@@ -873,7 +873,7 @@ O **[!UICONTROL Administration / Platform / Options]** permite configurar as op�
   </tr> 
   <tr> 
    <td> <span class="uicontrol">NmsTracking_OpenFormula</span> <br /> </td> 
-   <td> Abra o script de cálculo do URL.<br /> </td> 
+   <td> Abrir script de cálculo de URL.<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">NmsTracking_Password</span> <br /> </td> 
@@ -987,7 +987,7 @@ O **[!UICONTROL Administration / Platform / Options]** permite configurar as op�
   </tr> 
   <tr> 
    <td> <span class="uicontrol">XtkLdap_DNSearchScope</span> <br /> </td> 
-   <td> Escopo de pesquisa.<br /> </td> 
+   <td> Escopo da pesquisa.<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">XtkLdap_Engine</span> <br /> </td> 
@@ -1015,7 +1015,7 @@ O **[!UICONTROL Administration / Platform / Options]** permite configurar as op�
   </tr> 
   <tr> 
    <td> <span class="uicontrol">XtkLdap_RightsScope</span> <br /> </td> 
-   <td> Escopo de pesquisa.<br /> </td> 
+   <td> Escopo da pesquisa.<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">XtkLdap_Server</span> <br /> </td> 
@@ -1048,7 +1048,7 @@ O **[!UICONTROL Administration / Platform / Options]** permite configurar as op�
   </tr> 
   <tr> 
    <td> <span class="uicontrol">XtkWebForm_ServersMode</span> <br /> </td> 
-   <td> Opção que permite especificar o modo de invalidação de formulários web: local por padrão, usa servidores de rastreamento se a opção for 'tracking' e usa uma lista personalizada com a opção 'other server(s)'.<br /> </td> 
+   <td> Opção que permite especificar o modo de invalidação de formulários web: local por padrão; usa servidores de rastreamento se a opção for “rastreamento”; usa uma lista personalizada se a opção for “outro(s) servidor(es)”.<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">XtkWebForm_ServersURLs</span> <br /> </td> 

@@ -37,7 +37,7 @@ _22 de março de 2021_
 
 >[!NOTE]
 >
-> Conecte-se à [Distribuição de software da Adobe](https://experience.adobe.com/#/downloads/content/software-distribution/en/campaign.html) para baixar a nova versão. Saiba como propor a atualização do console para todos os usuários finais [nesta página](../../installation/using/client-console-availability-for-windows.md).
+> Conecte-se à [Distribuição de software da Adobe](https://experience.adobe.com/#/downloads/content/software-distribution/br/campaign.html) para baixar a nova versão. Saiba como propor a atualização do console para todos os usuários finais [nesta página](../../installation/using/client-console-availability-for-windows.md).
 
 _23 de dezembro de 2020_
 
@@ -209,31 +209,31 @@ A build 1.0.26 do SDK do iOS está disponível. Nesta nova build, adicionamos o 
 
 _15 de abril de 2021_
 
-* Correção de uma regressão do console do cliente que causava mensagens de erro persistentes na tela de conexão IMS. (NEO34821)
+* Correção de uma regressão do console do cliente que causava mensagens de erro persistentes na tela de conexão IMS. (NEO-34821)
 * Correção de uma regressão que poderia bloquear a exportação de dados do workflow para um banco de dados FDA (Teradata, Snowflake).
 
 **Somente a atualização do console é obrigatória. Não é necessária nenhuma atualização do servidor.**
 
 >[!NOTE]
 >
-> Conecte-se à [Distribuição de software da Adobe](https://experience.adobe.com/#/downloads/content/software-distribution/en/campaign.html) para baixar a nova versão. Saiba como propor a atualização do console para todos os usuários finais [nesta página](../../installation/using/client-console-availability-for-windows.md).
+> Conecte-se à [Distribuição de software da Adobe](https://experience.adobe.com/#/downloads/content/software-distribution/br/campaign.html) para baixar a nova versão. Saiba como propor a atualização do console para todos os usuários finais [nesta página](../../installation/using/client-console-availability-for-windows.md).
 
 _22 de março de 2021_
 
-* Correção de uma regressão que impedia o uso de alguns componentes do console, como o seletor de datas e o gerenciamento de imagens nos deliveries. (NEO31453, NEO31454)
+* Correção de uma regressão que impedia o uso de alguns componentes do console, como o seletor de datas e o gerenciamento de imagens nos deliveries. (NEO-31453, NEO-31454)
 
 **Somente a atualização do console é obrigatória. Não é necessária nenhuma atualização do servidor.**
 
 >[!NOTE]
 >
-> Conecte-se à [Distribuição de software da Adobe](https://experience.adobe.com/#/downloads/content/software-distribution/en/campaign.html) para baixar a nova versão. Saiba como propor a atualização do console para todos os usuários finais [nesta página](../../installation/using/client-console-availability-for-windows.md).
+> Conecte-se à [Distribuição de software da Adobe](https://experience.adobe.com/#/downloads/content/software-distribution/br/campaign.html) para baixar a nova versão. Saiba como propor a atualização do console para todos os usuários finais [nesta página](../../installation/using/client-console-availability-for-windows.md).
 
 _16 de dezembro de 2020_
 
 >[!CAUTION]
 >
 > * Esta versão é fornecida com um novo protocolo de conexão: se você estiver se conectando ao Campaign pelo Serviço de identidade da Adobe (IMS), a atualização será obrigatória para o servidor do Campaign e o console do cliente poderem se conectar ao Campaign após **30 de junho de 2021**. [Saiba mais](../../technotes/using/ims-updates.md)
-> * Esta versão vem com uma [correção de segurança](https://helpx.adobe.com/security/products/campaign/apsb21-04.html): a atualização é obrigatória para reforçar a segurança do ambiente.
+> * Esta versão vem com uma [correção de segurança](https://helpx.adobe.com/br/security/products/campaign/apsb21-04.html): a atualização é obrigatória para reforçar a segurança do ambiente.
 > * Se você estiver usando a integração do Experience Cloud Triggers por meio da autenticação oAuth, será necessário migrar para o Adobe I/O de acordo com as instruções [nesta página](../../integrations/using/configuring-adobe-io.md). O modo de autenticação oAuth herdado do Campaign [foi removido](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-discussions/adobe-analytics-legacy-api-end-of-life-notice/td-p/385411) em **setembro de 2021**. Os ambientes hospedados se beneficiarão de uma extensão até **23 de fevereiro de 2022**. Como cliente local ou híbrido, entre em contato com o Atendimento ao cliente do Adobe para estender o suporte até fevereiro de 2022. Você deve fornecer [o AppID do aplicativo OAuth](../../integrations/using/configuring-pipeline.md?lang=en#step-optional) para a Adobe.
 
 
@@ -249,7 +249,7 @@ _16 de dezembro de 2020_
 
 * Correção de um problema que resultava na desativação do conector SMPP após um erro de conexão, impedindo o envio de outros deliveries SMS e causando problemas de desempenho.
 * Correção de um problema que exibe porcentagens incorretas ao gerar um relatório descritivo por meio de uma atividade de workflow. (NEO-14314)
-* Correção de um problema de preparação de delivery quando a opção **Excluir endereço duplicado durante delivery** não está selecionada. (NEO13240)
+* Correção de um problema de preparação de delivery quando a opção **Excluir endereço duplicado durante delivery** não está selecionada. (NEO-13240)
 * Correção de um problema que resultava em falha em fluxos de trabalho ao executar uma atividade de **Enriquecimento**. (NEO-17338)
 * Correção de um problema em workflows ao buscar registros de um banco de dados externo e inseri-los no banco de dados do Campaign. (NEO-26359)
 
@@ -312,7 +312,7 @@ _15 de setembro de 2020_
 * Correção de um problema que impedia o envio de emails quando um código Javascript estivesse fora da tag de conteúdo HTML. (NEO-18628)
 * Correção de um problema que impede a atualização dos indicadores de rastreamento de mensagens transacionais pelo workflow Tracking. (NEO-17770)
 * O desempenho do assistente de atualização de banco de dados foi aprimorado para realizar menos declarações SQL a fim de otimizar o tempo de resposta.
-* Correção de um problema de travamento do console que poderia ocorrer ao desmarcar URLs rastreados em um email, na guia **Conteúdo de texto** devido a uma variável não inicializada. (NEO13545)
+* Correção de um problema de travamento do console que poderia ocorrer ao desmarcar URLs rastreados em um email, na guia **Conteúdo de texto** devido a uma variável não inicializada. (NEO-13545)
 * Correção de um problema que impedia o upload de arquivos em uma atividade de transferência de arquivos usando uma conta externa do Armazenamento Blob do Azure devido a uma variável não inicializada (m_pCurlReader). (NEO-13717)
 
 
@@ -334,10 +334,10 @@ _3 de outubro de 2019_
 
 **Aprimoramentos**
 
-* Correção de um problema ao usar o Conector CRM para Salesforce. (NEO17712)
+* Correção de um problema ao usar o Conector CRM para Salesforce. (NEO-17712)
 * Correção de um problema de índice que causava problemas de desempenho ao enviar mensagens transacionais.
-* Correção de um problema de desempenho ao enviar mensagens. (NEO17558)
-* Correção de um problema que resultava no não processamento de determinadas mensagens pelo servidor de Mid-Sourcing. (NEO12395)
+* Correção de um problema de desempenho ao enviar mensagens. (NEO-17558)
+* Correção de um problema que resultava no não processamento de determinadas mensagens pelo servidor de Mid-Sourcing. (NEO-12395)
 * Correção de um problema que impedia o uso total da atividade do SQL Data Management (o direito nomeado do &quot;SQL Data Management&quot; estava ausente).
 
 ### ![](assets/do-not-localize/red_2.png) Versão 19.1.5 - Build 9033{#release-19-1-5-build-9033}
@@ -348,7 +348,7 @@ _13 de agosto de 2019_
 
 * Correção de um problema com a declaração &#39;SELECT COUNT&#39; do SQL, que foi executada no banco de dados padrão em vez de no banco de dados FDA durante a extração de dados na atividade do Gerenciamento de dados.
 * Para aprimora os recursos de infraestrutura do cliente, uma declaração de proxy SFTP agora está disponível no arquivo de configuração do servidor.
-* Correção de um problema de falha quando o campo **Adicionar tabela vinculada** ficava vazio na atividade de workflow **Carregamento de dados (RDBMS)**. (NEO12213)
+* Correção de um problema de falha quando o campo **Adicionar tabela vinculada** ficava vazio na atividade de workflow **Carregamento de dados (RDBMS)**. (NEO-12213)
 * Correção de um problema com a instalação do pacote midEmitter por meio da linha de comando.
 * Adição de uma nova opção de autenticação para oferecer suporte às credenciais do OAuth no conector AC com o Microsoft Dynamics.(NEO-11982)
 * Correção de um problema com o gerenciamento UUID (identificador universal exclusivo) que resultava em falha das atividades do workflow de carregamento de query e dados com o FDA Hive.
@@ -411,7 +411,7 @@ _30 de maio de 2019_
   </tr> 
   <tr> 
    <td> Atualização da Matriz de Compatibilidade<br /> </td> 
-   <td> Com essa nova versão, o Adobe Campaign agora oferece suporte aos seguintes sistemas de banco de dados. Consulte a <a href="https://helpx.adobe.com/campaign/kb/compatibility-matrix.html">Matriz de Compatibilidade</a>.<br /> 
+   <td> Com essa nova versão, o Adobe Campaign agora oferece suporte aos seguintes sistemas de banco de dados. Consulte a <a href="https://helpx.adobe.com/br/campaign/kb/compatibility-matrix.html">Matriz de Compatibilidade</a>.<br /> 
     <ul> 
      <li> <p>Oracle 18c</p> </li> 
      <li> <p>MySQL 5.7 (FDA)</p> </li> 
@@ -449,7 +449,7 @@ _30 de maio de 2019_
 * Tamanho do banco de dados - XtkJobLog: um mecanismo de limpeza foi adicionado a essa tabela. Isso tem um impacto positivo no tamanho do banco de dados.
 * Arquivamento do Cco: os parâmetros padrão para arquivamento do Cco foram alterados para aumentar a velocidade do arquivamento. [Leia mais](../../installation/using/email-archiving.md#parameters)
 * Atualização da estrutura do banco de dados: as solicitações SQL geradas pelo Assistente de atualização da estrutura do banco de dados foram aprimoradas para execução mais rápida.
-* Grades de proteção para ações do operador: várias grades de proteção foram implementadas para impedir que os operadores executem ações que poderiam afetar a integridade da plataforma. Os esquemas internos não podem mais ser excluídos pela interface. Além disso, o XML de origem do workflow não pode mais ser editado por usuários não administradores.
+* Medidas de proteção para ações do operador: várias medidas de proteção foram implementadas para impedir que os operadores executem ações que poderiam afetar a integridade da plataforma. Os esquemas internos não podem mais ser excluídos pela interface. Além disso, o XML de origem do workflow não pode mais ser editado por usuários não administradores.
 * Duas novas opções foram disponibilizadas: **XtkSecurity_Restrict_EditXML** (permite desabilitar a edição do código XML dos deliveries) e **NmsOperation_OperationMgtDebug** (permite monitorar a execução do workflow técnico operationMgt). [Leia mais](../../installation/using/configuring-campaign-options.md)
 
 **Outras alterações**
@@ -504,7 +504,7 @@ _30 de maio de 2019_
 * Correção de um problema de compatibilidade com phantomjs e Debian 9.
 * Correção de um erro ao aprovar o conteúdo de uma prova. (NEO-12725)
 * Correção de um problema com o recurso de workflow &quot;Excluir este subconjunto de público&quot;. (NEO-12441)
-* Correção de um problema com a API HTTPRequest-wait que não esperava pelo término de todos os retornos de chamada. (NEO12628)
+* Correção de um problema com a API HTTPRequest-wait que não esperava pelo término de todos os retornos de chamada. (NEO-12628)
 * Correção de um problema na tarefa &quot;Atualizar Audience Compartilhado&quot; em uma atividade de Split. (NEO-11562)
 * Correção de um problema de falha no servidor Web. (NEO-12904)
 * Correção de um problema com o parâmetro Nature em modelos transacionais. (NEO-12334)

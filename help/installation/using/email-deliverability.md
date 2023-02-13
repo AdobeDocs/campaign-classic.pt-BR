@@ -239,7 +239,7 @@ Essas regras são aplicadas em sequência: a primeira regra cuja máscara MX é 
 
 Os seguintes parâmetros disponíveis para cada regra são:
 
-* **[!UICONTROL MX mask]**: domínio no qual a regra é aplicada. Cada regra define uma máscara de endereço para o MX. Qualquer MX cujo nome corresponda a essa máscara é, portanto, elegível. A máscara pode conter &quot;*&quot; e &quot;?&quot; caracteres genéricos.
+* **[!UICONTROL MX mask]**: domínio no qual a regra é aplicada. Cada regra define uma máscara de endereço para o MX. Qualquer MX cujo nome corresponda a essa máscara é, portanto, elegível. A máscara pode conter &quot;&#42;&quot; e &quot;?&quot; caracteres genéricos.
 
    Por exemplo, os seguintes endereços:
 
@@ -249,7 +249,7 @@ Os seguintes parâmetros disponíveis para cada regra são:
 
    são compatíveis com as seguintes máscaras:
 
-   * *.yahoo.com
+   * &#42;.yahoo.com
    * ?.mx.yahoo.com
 
    Por exemplo, para o endereço de email foobar@gmail.com, o domínio é gmail.com e o registro MX é:
@@ -402,9 +402,9 @@ Se, por exemplo, o primeiro endereço não puder ser usado em um determinado MX,
     * &quot;2&quot;: 5 / (5+1) = 83%
     * &quot;3&quot;: 1 / (5+1) = 17%
 
-* **includeDomains**: permite reservar esse endereço IP para emails pertencentes a um domínio específico. Esta é uma lista de máscaras que podem conter um ou mais curingas (&#39;*&#39;). Se o atributo não for especificado, todos os domínios poderão usar esse endereço IP.
+* **includeDomains**: permite reservar esse endereço IP para emails pertencentes a um domínio específico. Esta é uma lista de máscaras que podem conter um ou mais curingas (&#39;&#42;&quot;). Se o atributo não for especificado, todos os domínios poderão usar esse endereço IP.
 
-   Exemplo: **includeDomains=&quot;wanadoo.com,orange.com,yahoo*&quot;**
+   Exemplo: **includeDomains=&quot;wanadoo.com,orange.com,yahoo.&#42;&quot;**
 
 * **excludeDomains**: exclui uma lista de domínios para este endereço IP. Esse filtro é aplicado após a variável **includeDomains** filtro.
 

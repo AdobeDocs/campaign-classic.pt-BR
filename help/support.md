@@ -1,13 +1,13 @@
 ---
 product: campaign
-title: 'Opções de ajuda e suporte para Campaign Classic '
+title: Opções de ajuda e suporte para Campaign Classic
 description: Precisa de suporte para o Campaign Classic? Você está no lugar certo.
 hidefromtoc: true
 exl-id: 3a84236f-89e5-4b8b-9a98-afdc006fd6e0
 source-git-commit: 9667bb436ffc591b05945dadd683e5f590ae43e5
 workflow-type: tm+mt
 source-wordcount: '798'
-ht-degree: 77%
+ht-degree: 78%
 
 ---
 
@@ -55,7 +55,7 @@ Como atualizar para um novo build? como monitorar a execução do fluxo de traba
         <li><a href="workflow/using/workflow-best-practices.md">Otimizar o desempenho do fluxo de trabalho</a></li>
         <li><a href="workflow/using/monitoring-workflow-execution.md">Solução de problemas de execução de fluxo de trabalho</a></li>
         <li><a href="platform/using/sftp-server-usage.md">Uso do servidor SFTP</a></li>
-        <li><a href="delivery/using/understanding-delivery-failures.md">Entender as falhas de delivery</a></li>
+        <li><a href="delivery/using/understanding-delivery-failures.md">Entender as falhas de entrega</a></li>
         </ul>
     </td>
    <td valign="top">
@@ -107,11 +107,11 @@ O Painel de controle do Campaign está disponível diretamente na Adobe Experien
 
 ### Perguntas frequentes sobre o Painel de controle do Campaign
 
-[Clique aqui](https://experienceleague.adobe.com/docs/control-panel/using/faq.html) para acessar as Perguntas frequentes sobre o Painel de controle do Campaign.
+[Clique aqui](https://experienceleague.adobe.com/docs/control-panel/using/faq.html?lang=pt-BR) para acessar as Perguntas frequentes sobre o Painel de controle do Campaign.
 
 ### Gerenciamento de SFTP
 
-No Painel de controle do Campaign, é possível interagir com todos os servidores SFTP conectados às instâncias do Campaign às quais você tem acesso. Você pode monitorar a capacidade de armazenamento, gerenciar endereços IP na lista de permissões e chaves SSH públicas. [Clique aqui](https://experienceleague.adobe.com/docs/control-panel/using/sftp-management/about-sftp-management.html) para obter mais informações.
+No Painel de controle do Campaign, é possível interagir com todos os servidores SFTP conectados às instâncias do Campaign às quais você tem acesso. Você pode monitorar a capacidade de armazenamento, gerenciar endereços IP na lista de permissões e chaves SSH públicas. [Clique aqui](https://experienceleague.adobe.com/docs/control-panel/using/sftp-management/about-sftp-management.html?lang=pt-BR) para obter mais informações.
 
 ### Subdomínios e certificados
 
@@ -136,7 +136,7 @@ O novo sistema de emissão de bilhetes foi lançado [Adobe Admin Console](https:
 
 ### Pergunte aos especialistas.
 
-Associe-se à Comunidade do Campaign Classic: procure respostas em perguntas existentes ou faça sua pergunta à comunidade. [Participe da conversa](https://experienceleaguecommunities.adobe.com/t5/adobe-campaign-classic/ct-p/adobe-campaign-classic-community){_blank}.
+Associe-se à Comunidade do Campaign Classic: procure respostas em perguntas existentes ou faça sua pergunta à comunidade. [Participe da conversa](https://experienceleaguecommunities.adobe.com/t5/adobe-campaign-classic/ct-p/adobe-campaign-classic-community){_em branco}.
 
 ### Acessar o Centro de download do Campaign
 
@@ -147,4 +147,4 @@ Saiba mais sobre o novo Centro de download [nesta página](https://experiencelea
 
 A criação de um caso permite que você entre em contato com a Equipe de suporte ao cliente da Adobe sobre qualquer problema que você tiver com produtos da Adobe. Para ajudar a resolver ou solucionar problemas, o Adobe Admin Console permitirá que você fale com o Suporte ao cliente da Adobe.
 
-Para registrar um problema ou iniciar uma sessão de chat nesse novo sistema, conecte-se ao [Adobe Admin Console](https://adminconsole.adobe.com/overview){_blank}. Siga o procedimento detalhado descrito em [esta página](https://helpx.adobe.com/enterprise/using/support-for-experience-cloud.html){_blank}.
+Para registrar um problema ou iniciar uma sessão de chat nesse novo sistema, conecte-se ao [Adobe Admin Console](https://adminconsole.adobe.com/overview){_blank}. Siga o procedimento detalhado descrito em [esta página](https://helpx.adobe.com/br/enterprise/using/support-for-experience-cloud.html){_blank}.

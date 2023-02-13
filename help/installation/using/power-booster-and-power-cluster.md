@@ -9,7 +9,7 @@ exl-id: 59364cfc-9917-4057-ad5f-fbca7e261b07
 source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '396'
-ht-degree: 6%
+ht-degree: 7%
 
 ---
 
@@ -37,7 +37,7 @@ As opções Power Booster e Power Cluster podem ser usadas pelos seguintes aplic
 
 * Campaign
 * Entrega
-* Centro de mensagens
+* Central de mensagens
 
 ## Matriz de recomendações arquitetônicas {#matrix-of-architectural-recommendations}
 

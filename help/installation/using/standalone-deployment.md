@@ -75,7 +75,7 @@ Esse tipo de configuração pode ser executado ao gerenciar listas de menos de 1
 Nos exemplos a seguir, os parâmetros da instância são:
 
 * Nome da instância: **demonstração**
-* Máscara de DNS: **console.campaign.net*** (somente para conexões com o console do cliente e para relatórios)
+* Máscara de DNS: **console.campaign.net&#42;** (somente para conexões com o console do cliente e para relatórios)
 * Banco de dados: **campanha:demo@dbsrv**
 
 ### Instalação e configuração (máquina única) {#installing-and-configuring--single-machine-}

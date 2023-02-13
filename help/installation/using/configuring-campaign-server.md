@@ -159,7 +159,7 @@ O Adobe Campaign usa as seguintes páginas JSP:
 * /nl/jsp/**logon.jsp**: Acesso baseado na Web a relatórios e à implantação do console do cliente,
 * /nl/jsp/**s.jsp** : Utilização de marketing viral (patrocínio e redes sociais).
 
-Os JSSPs usados para o canal do aplicativo Mobile são os seguintes:
+Os JSSPs usados para o Canal de aplicativo móvel são os seguintes:
 
 * nms/mobile/1/registerIOS.jssp
 * nms/mobile/1/registerAndroid.jssp

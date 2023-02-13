@@ -23,7 +23,6 @@ A **rastreamento de pilha** representa um rastreamento contido em um **núcleo**
 >
 >* A **núcleo** arquivo é nomeado **núcleo.`<num>`**.
 >* **gdb - O depurador GNU** deve ser instalado no computador.
-
 >
 
 

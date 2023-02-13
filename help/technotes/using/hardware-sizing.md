@@ -82,12 +82,12 @@ A arquitetura geral é quase idêntica independentemente dos volumes. Os requisi
 
 Volume estimado:
 
-| Canal  | Volume |
+| Canal | Volume |
 | ----------------------- | ----------------- |
 | Destinatários ativos | 5 milhões |
 | Email | 4,2 milhões/mês |
 | Correspondência direta | 1 milhão/mês |
-| SMS Mobile | 100.000/mês |
+| SMS móvel | 100.000/mês |
 | Volume de email diário de pico | 500 |
 
 Para esses volumes, um par de sistemas de servidor de aplicativos Adobe Campaign fornece toda a funcionalidade para usuários do Adobe Campaign Client e execução de workflow. Para 5 milhões de recipients ativos e esse volume de email, as cargas de trabalho do servidor de aplicativos não são intensivas de CPU ou E/S; a maior parte do estresse está no banco de dados.
@@ -131,13 +131,13 @@ Considere também que, devido ao volume de informações processadas diariamente
 
 Volume estimado:
 
-| Canal  | Volume |
+| Canal | Volume |
 | ----------------------- | ----------------- |
 | Destinatários ativos | 20 milhões |
 | Email | 42 milhões/mês |
 | Correspondência direta | 10 milhões/mês |
-| SMS Mobile | 1.000.000/mês |
-| Volume de email diário de pico | 5.000.000 |
+| SMS móvel | 1.000.000/mês |
+| Volume de email diário de pico | 5,000,000 |
 
 ### Servidores da Web e de aplicativos
 
@@ -167,12 +167,12 @@ Estima-se que o espaço em disco necessário no banco de dados para armazenar to
 
 Volume estimado:
 
-| Canal  | Volume |
+| Canal | Volume |
 | ----------------------- | ----------------- |
 | Destinatários ativos | 50 milhões |
 | Email | 108 milhões/mês |
 | Correspondência direta | 25 milhões/mês |
-| SMS Mobile | 2,5 milhões/mês |
+| SMS móvel | 2,5 milhões/mês |
 | Mensagens transacionais | 2,5 milhões/mês |
 | Volume de email diário de pico | 2,5 milhões |
 

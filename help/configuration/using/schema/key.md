@@ -6,7 +6,7 @@ exl-id: 3d0ef574-27a3-40f2-91a0-70e9583d9980
 source-git-commit: 40da5774c8a6a228992c4aa400e2d9924215611e
 workflow-type: tm+mt
 source-wordcount: '319'
-ht-degree: 0%
+ht-degree: 8%
 
 ---
 
@@ -31,7 +31,7 @@ tecla:==keyfield
 
 `<element>`
 
-## Crianças {#children-8}
+## Filhos {#children-8}
 
 `<keyfield>`
 
@@ -43,7 +43,7 @@ Uma tabela deve ter pelo menos uma chave.
 
 ## Uso e contexto de uso {#use-and-context-of-use-6}
 
-Como regra, as chaves são declaradas após o elemento principal do schema e os índices.
+Como regra, as chaves são declaradas após o elemento principal do esquema e os índices.
 
 Uma chave é conhecida como composta se incluir vários campos (ou seja, vários `<keyfield>` crianças). Não use uma chave composta para definir uma chave primária.
 

@@ -5,8 +5,8 @@ description: Crie sua primeira pesquisa com o Campaign
 feature: Surveys
 exl-id: 22e14b24-59ba-4a92-8ffb-f5336793d64f
 source-git-commit: 1f80c9967f4859f26dd2890d657f95ada6cf2087
-workflow-type: ht
-source-wordcount: '0'
+workflow-type: tm+mt
+source-wordcount: '916'
 ht-degree: 100%
 
 ---

@@ -1,7 +1,7 @@
 ---
 product: campaign
-title: 'Problema de assinatura de URLs rastreados '
-description: 'Problema de assinatura de URLs rastreados '
+title: Problema de assinatura de URLs rastreados
+description: Problema de assinatura de URLs rastreados
 hide: true
 hidefromtoc: true
 exl-id: e7d4331b-7149-4768-8e46-2e2911319074

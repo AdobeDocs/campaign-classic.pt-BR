@@ -5,7 +5,7 @@ description: Saiba mais sobre a atividade de workflow de extração de dados (ar
 feature: Workflows, Data Management Activity
 exl-id: 06eafedd-6386-498f-a80d-7f57ddcccad6
 source-git-commit: 381538fac319dfa075cac3db2252a9cc80b31e0f
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '324'
 ht-degree: 100%
 

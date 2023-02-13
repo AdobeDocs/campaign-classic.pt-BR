@@ -6,7 +6,7 @@ exl-id: 4cd67278-2623-4508-9a9f-9007c6a5f8ac
 source-git-commit: 40da5774c8a6a228992c4aa400e2d9924215611e
 workflow-type: tm+mt
 source-wordcount: '198'
-ht-degree: 3%
+ht-degree: 6%
 
 ---
 
@@ -31,7 +31,7 @@ enumeração:==(help| value)
 
 `<srcschema>`
 
-## Crianças {#children-5}
+## Filhos {#children-5}
 
 * `<help>`
 * `<value>`
@@ -50,7 +50,7 @@ As enumerações são definidas no início de um schema (antes do elemento princ
 
    Lista de tipos disponíveis:
 
-   * ANY
+   * QUALQUER UMA
    * compartimento
    * blob
    * booleano
@@ -59,7 +59,7 @@ As enumerações são definidas no início de um schema (antes do elemento princ
    * datetime
    * datetimetz
    * datetimenotz
-   * data
+   * date
    * DOMDocument
    * DOMElement
    * double
@@ -67,14 +67,14 @@ As enumerações são definidas no início de um schema (antes do elemento princ
    * float
    * html
    * int64
-   * link
+   * Link 
    * long
    * memorando
    * MNTOKEN
    * percent
    * chave primária
    * short
-   * string
+   * sequência de caracteres
    * tempo
    * timespan
    * uuid

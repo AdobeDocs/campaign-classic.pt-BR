@@ -56,7 +56,7 @@ Nesse caso de uso, criaremos um fluxo de trabalho para importar dados que foram 
 
 As etapas para executar esse caso de uso são as seguintes:
 
-1. Use o Painel de controle do Campaign para gerar um par de chaves (público/privado). As etapas detalhadas estão disponíveis na [documentação do Painel de controle do Campaign](https://experienceleague.adobe.com/docs/control-panel/using/instances-settings/gpg-keys-management.html#decrypting-data).
+1. Use o Painel de controle do Campaign para gerar um par de chaves (público/privado). As etapas detalhadas estão disponíveis na [documentação do Painel de controle do Campaign](https://experienceleague.adobe.com/docs/control-panel/using/instances-settings/gpg-keys-management.html?lang=pt-BR#decrypting-data).
 
    * A chave pública será compartilhada com o sistema externo, que a usará para criptografar os dados que serão enviados para o Campaign.
    * A chave privada será usada pelo Campaign Classic para descriptografar os dados criptografados recebidos.

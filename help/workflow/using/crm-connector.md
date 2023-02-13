@@ -4,8 +4,8 @@ description: Saiba mais sobre o Conector CRM e configure a sincronização de da
 feature: Workflows, Data Management
 exl-id: 41966f31-9f37-4ab7-919a-d4624f9d1178
 source-git-commit: 381538fac319dfa075cac3db2252a9cc80b31e0f
-workflow-type: ht
-source-wordcount: '0'
+workflow-type: tm+mt
+source-wordcount: '113'
 ht-degree: 100%
 
 ---

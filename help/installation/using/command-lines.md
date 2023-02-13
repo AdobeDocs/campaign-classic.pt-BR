@@ -29,7 +29,7 @@ nlserver config -addinstance:instance/masques DNS[/lang]
 
 em que **eng** e **fra** são valores possíveis para a variável `[lang]` parameter)
 
-O comando **nlserver config -addinstance:instance1/demo*/eng** permite criar uma instância chamada **instance1** em inglês com a demonstração da máscara DNS*.
+O comando **nlserver config -addinstance:instance1/demo&#42;/eng** permite criar uma instância chamada **instance1** em inglês com a demonstração da máscara DNS&#42;.
 
 ## Declarar um banco de dados {#declaring-a-database}
 

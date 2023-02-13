@@ -9,7 +9,7 @@ exl-id: 7cc78214-92b8-4b1f-a307-96ec6af818d1
 source-git-commit: 7f24c8be599d6dece41de848d64feb8079b10ff3
 workflow-type: tm+mt
 source-wordcount: '1118'
-ht-degree: 4%
+ht-degree: 5%
 
 ---
 
@@ -39,7 +39,7 @@ Revise os detalhes abaixo para entender o que é necessário para sua implementa
 
 A partir da versão de build do Campaign Classic 7.3, a instalação do tempo de execução do Microsoft Edge Webview 2 é necessária para qualquer instalação do console.
 
-O Web View é instalado por padrão como parte do sistema operacional Windows 11. Se ele ainda não estiver presente em seu sistema, o Campaign Classic Console Installer solicitará que você o baixe de [Site do desenvolvedor do Microsoft](http://www.adobe.com/go/acc-ms-webview2-runtime-download). Observe que o link de download não funciona no navegador Internet Explorer 11, pois o Microsoft substituiu o suporte. Use um navegador diferente para acessar o link.
+O Web View é instalado por padrão como parte do sistema operacional Windows 11. Se ele ainda não estiver presente em seu sistema, o Campaign Classic Console Installer solicitará que você o baixe de [Site do desenvolvedor do Microsoft](http://www.adobe.com/go/acc-ms-webview2-runtime-download_br). Observe que o link de download não funciona no navegador Internet Explorer 11, pois o Microsoft substituiu o suporte. Use um navegador diferente para acessar o link.
 
 ## Implementações Adobe hospedadas {#hosted-customers}
 

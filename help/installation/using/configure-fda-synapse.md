@@ -114,7 +114,7 @@ Para configurar o Azure synapse no CentOS, siga as etapas abaixo:
 
 Para configurar o Azure Synapse no Windows:
 
-1. Primeiro, instale o driver ODBC da Microsoft. Você pode encontrá-lo em [esta página](https://www.microsoft.com/en-us/download/details.aspx?id=50420).
+1. Primeiro, instale o driver ODBC da Microsoft. Você pode encontrá-lo em [esta página](https://www.microsoft.com/pt-BR/download/details.aspx?id=50420).
 
 1. Escolha os seguintes arquivos para instalar:
 
@@ -189,7 +189,7 @@ Para configurar o Azure Synapse no Debian:
 
    >[!NOTE]
    >
-   >Para permitir a comunicação com o Azure Synapse Analytics, será necessário adicionar seu IP público à lista de permissões. Para fazer isso, consulte a [documentação do Azure](https://docs.microsoft.com/en-us/azure/sql-database/sql-database-firewall-configure#use-the-azure-portal-to-manage-server-level-ip-firewall-rules).
+   >Para permitir a comunicação com o Azure Synapse Analytics, será necessário adicionar seu IP público à lista de permissões. Para fazer isso, consulte a [documentação do Azure](https://docs.microsoft.com/pt-BR/azure/sql-database/sql-database-firewall-configure#use-the-azure-portal-to-manage-server-level-ip-firewall-rules).
 
 ## Conta externa do Azure synapse {#azure-external}
 

@@ -110,7 +110,7 @@ Se precisar se conectar ao Hadoop 2.1, siga as etapas descritas abaixo para [Win
    apt-get install unixodbc
    ```
 
-1. Baixe e instale os drivers ODBC para Apache Hive a partir do HortonWorks: [https://www.cloudera.com/downloads.html](https://www.cloudera.com/downloads.html).
+1. Baixe e instale os drivers ODBC para Apache Hive a partir do HortonWorks: [https://www.cloudera.com/downloads.html](https://www.cloudera.com/br/downloads.html).
 
    ```
    dpkg -i hive-odbc-native_2.1.10.1014-2_amd64.deb

@@ -69,7 +69,6 @@ As etapas a seguir devem ser executadas com muito cuidado: alguns processos aind
 >
 >* O procedimento a seguir é válido na linguagem PostgreSQL. Se a linguagem SQL for diferente (Oracle, por exemplo), as consultas SQL devem ser adaptadas.
 >* Os comandos abaixo se aplicam no contexto de um **prod** e uma **dev** em PostgreSQL.
-
 >
 
 

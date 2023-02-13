@@ -361,7 +361,7 @@ Use esses relacionamentos para criar um único query de exportação.
 
 Você pode enriquecer esses dados com informações úteis de schemas vinculados:
 
-| Esquema | Conteúdo |
+| Schema | Conteúdo |
 | --- | --- |
 | nms:Recipient | Detalhes relacionados a perfis |
 | nms:Delivery | Informações sobre a mensagem com a qual o usuário reagiu |

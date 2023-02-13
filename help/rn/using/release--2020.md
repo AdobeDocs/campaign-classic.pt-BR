@@ -309,21 +309,21 @@ _31 de março de 2021_
 
 _15 de abril de 2021_
 
-* Correção de uma regressão do console do cliente que causava mensagens de erro persistentes na tela de conexão IMS. (NEO34821)
+* Correção de uma regressão do console do cliente que causava mensagens de erro persistentes na tela de conexão IMS. (NEO-34821)
 * Correção de uma regressão que impedia o uso de alguns componentes do console, como o seletor de datas e o gerenciamento de imagens nos deliveries. (NEO-31453, NEO-31454)
 
 **Somente a atualização do console é obrigatória. Não é necessária nenhuma atualização do servidor.**
 
 >[!NOTE]
 >
-> Conecte-se à [Distribuição de software da Adobe](https://experience.adobe.com/#/downloads/content/software-distribution/en/campaign.html) para baixar a nova versão. Saiba como propor a atualização do console para todos os usuários finais [nesta página](../../installation/using/client-console-availability-for-windows.md).
+> Conecte-se à [Distribuição de software da Adobe](https://experience.adobe.com/#/downloads/content/software-distribution/br/campaign.html) para baixar a nova versão. Saiba como propor a atualização do console para todos os usuários finais [nesta página](../../installation/using/client-console-availability-for-windows.md).
 
 _22 de dezembro de 2020_
 
 >[!CAUTION]
 >
 > * Esta versão é fornecida com um novo protocolo de conexão: se você estiver se conectando ao Campaign pelo Serviço de identidade da Adobe (IMS), a atualização será obrigatória para o servidor do Campaign e o console do cliente poderem se conectar ao Campaign após **30 de junho de 2021**.  [Saiba mais](../../technotes/using/ims-updates.md)
-> * Esta versão vem com uma [correção de segurança](https://helpx.adobe.com/security/products/campaign/apsb21-04.html): a atualização é obrigatória para reforçar a segurança do ambiente.
+> * Esta versão vem com uma [correção de segurança](https://helpx.adobe.com/br/security/products/campaign/apsb21-04.html): a atualização é obrigatória para reforçar a segurança do ambiente.
 > * Se você estiver usando a integração do Experience Cloud Triggers por meio da autenticação oAuth, será necessário migrar para o Adobe I/O de acordo com as instruções [nesta página](../../integrations/using/configuring-adobe-io.md). O modo de autenticação oAuth herdado do Campaign [foi removido](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-discussions/adobe-analytics-legacy-api-end-of-life-notice/td-p/385411) em **setembro de 2021**. Os ambientes hospedados se beneficiarão de uma extensão até **23 de fevereiro de 2022**. Como cliente local ou híbrido, entre em contato com o Atendimento ao cliente do Adobe para estender o suporte até fevereiro de 2022. Você deve fornecer [o AppID do aplicativo OAuth](../../integrations/using/configuring-pipeline.md?lang=en#step-optional) para a Adobe.
 
 
@@ -414,7 +414,7 @@ _22 de julho de 2020_
 * Após a mudança para o novo mecanismo de ID de sequência, todos os aplicativos da web que estão atualizando a tabela do recipient são republicados durante a pós-atualização.
 * Correção de uma possível vulnerabilidade XSS no conteúdo do delivery. (NEO-17987, NEO-26073)
 
-![](assets/do-not-localize/cp-icon.png) **Nova versão de junho do Painel de controle do Campaign** com monitoramento de perfis ativos, auditoria de entregabilidade de subdomínio e gerenciamento de chaves GPG. [Saiba mais](https://experienceleague.adobe.com/docs/control-panel/using/release-notes.html).
+![](assets/do-not-localize/cp-icon.png) **Nova versão de junho do Painel de controle do Campaign** com monitoramento de perfis ativos, auditoria de entregabilidade de subdomínio e gerenciamento de chaves GPG. [Saiba mais](https://experienceleague.adobe.com/docs/control-panel/using/release-notes.html?lang=pt-BR).
 
 ### ![](assets/do-not-localize/red_2.png) Versão 20.2.1 - Build 9178 {#release-20-2-1-build-9178}
 
@@ -497,7 +497,7 @@ Saiba mais na [matriz de compatibilidade do Campaign](https://helpx.adobe.com/br
 
 * As mensagens transacionais foram aprimoradas para melhorar a experiência do usuário. Agora é possível desfazer a publicação de um template de mensagem transacional, o que o exclui das instâncias de execução. [Saiba mais](../../message-center/using/publishing-message-templates.md#template-unpublication).
 
-* Há novas opções disponíveis para definir limitações ao enviar emails com imagens ou anexos. Essas grades de proteção podem evitar problemas de desempenho, o que é particularmente útil com mensagens transacionais. [Leia mais](../../installation/using/configuring-campaign-options.md#delivery)
+* Há novas opções disponíveis para definir limitações ao enviar emails com imagens ou anexos. Essas medidas de proteção podem evitar problemas de desempenho, o que é particularmente útil com mensagens transacionais. [Leia mais](../../installation/using/configuring-campaign-options.md#delivery)
 
 * A nova opção **Preparar as partes do delivery no banco de dados** possibilita executar a preparação do delivery diretamente no banco de dados, o que pode acelerar bastante a análise. Essa opção só está disponível para configurações específicas. [Saiba mais](../../delivery/using/steps-validating-the-delivery.md#improving-delivery-analysis). (NEO-23886)
 
@@ -633,23 +633,23 @@ Um exemplo para Linux está disponível nesta [página](../../configuration/usin
 
 _15 de abril de 2021_
 
-* Correção de uma regressão do console do cliente que causava mensagens de erro persistentes na tela de conexão IMS. (NEO34821)
+* Correção de uma regressão do console do cliente que causava mensagens de erro persistentes na tela de conexão IMS. (NEO-34821)
 
 **Somente a atualização do console é obrigatória. Não é necessária nenhuma atualização do servidor.**
 
 >[!NOTE]
 >
-> Conecte-se à [Distribuição de software da Adobe](https://experience.adobe.com/#/downloads/content/software-distribution/en/campaign.html) para baixar a nova versão. Saiba como propor a atualização do console para todos os usuários finais [nesta página](../../installation/using/client-console-availability-for-windows.md).
+> Conecte-se à [Distribuição de software da Adobe](https://experience.adobe.com/#/downloads/content/software-distribution/br/campaign.html) para baixar a nova versão. Saiba como propor a atualização do console para todos os usuários finais [nesta página](../../installation/using/client-console-availability-for-windows.md).
 
 _22 de março de 2021_
 
-* Correção de uma regressão que impedia o uso de alguns componentes do console, como o seletor de datas e o gerenciamento de imagens nos deliveries. (NEO31453, NEO31454)
+* Correção de uma regressão que impedia o uso de alguns componentes do console, como o seletor de datas e o gerenciamento de imagens nos deliveries. (NEO-31453, NEO-31454)
 
 **Somente a atualização do console é obrigatória. Não é necessária nenhuma atualização do servidor.**
 
 >[!NOTE]
 >
-> Conecte-se à [Distribuição de software da Adobe](https://experience.adobe.com/#/downloads/content/software-distribution/en/campaign.html) para baixar a nova versão. Saiba como propor a atualização do console para todos os usuários finais [nesta página](../../installation/using/client-console-availability-for-windows.md).
+> Conecte-se à [Distribuição de software da Adobe](https://experience.adobe.com/#/downloads/content/software-distribution/br/campaign.html) para baixar a nova versão. Saiba como propor a atualização do console para todos os usuários finais [nesta página](../../installation/using/client-console-availability-for-windows.md).
 
 _23 de dezembro de 2020_
 
@@ -657,7 +657,7 @@ _23 de dezembro de 2020_
 >
 > * Esta versão é fornecida com um novo protocolo de conexão: se você estiver se conectando ao Campaign pelo Serviço de identidade da Adobe (IMS), a atualização será obrigatória para o servidor do Campaign e o console do cliente poderem se conectar ao Campaign após **30 de junho de 2021**. [Saiba mais](../../technotes/using/ims-updates.md)
 >
-> * Esta versão vem com uma [correção de segurança](https://helpx.adobe.com/security/products/campaign/apsb21-04.html): a atualização é obrigatória para reforçar a segurança do ambiente.
+> * Esta versão vem com uma [correção de segurança](https://helpx.adobe.com/br/security/products/campaign/apsb21-04.html): a atualização é obrigatória para reforçar a segurança do ambiente.
 
 
 * O protocolo de conexão foi atualizado para seguir o novo mecanismo de autenticação IMS.
@@ -670,7 +670,7 @@ _23 de dezembro de 2020_
 
 _6 de maio de 2020_
 
-* Correção de um problema com a atividade **Transferência de Arquivo**, que impedia que a autenticação com a chave SFTP funcionasse no Debian 9. (NEO23183)
+* Correção de um problema com a atividade **Transferência de Arquivo**, que impedia que a autenticação com a chave SFTP funcionasse no Debian 9. (NEO-23183)
 
 ### ![](assets/do-not-localize/red_2.png) Versão 20.1.2 - Build 9123{#release-20-1-2-build-9123}
 
@@ -822,7 +822,7 @@ _17 de fevereiro de 2020_
 
 * Correção de um problema que impede o envio do delivery ao usar os modelos importados do Experience Manager. (NEO-17540)
 
-* Correção de um problema que ocorre após a atualização para a build 9032 e impede a instância de se conectar ao servidor FTP pelo protocolo SSL. (NEO20498)
+* Correção de um problema que ocorre após a atualização para a build 9032 e impede a instância de se conectar ao servidor FTP pelo protocolo SSL. (NEO-20498)
 
 * Correção de um problema que ocorre ao excluir, inserir ou atualizar uma grande quantidade de dados com a atividade **Update data** em um workflow que usa um schema FDA como dimensão de direcionamento. (NEO-13280)
 

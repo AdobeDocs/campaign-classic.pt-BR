@@ -29,7 +29,7 @@ criado (datetime), createdBy-id (long), desc (string), entitySchema (string), ex
 
 nenhuma
 
-## Crianças {#children-14}
+## Filhos {#children-14}
 
 * `<attribute>`
 * `<createdby>`

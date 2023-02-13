@@ -5,10 +5,11 @@ description: Fim da vida útil do suporte para TLS 1.0 e 1.1
 audience: delivery
 content-type: reference
 topic-tags: tracking-messages
-source-git-commit: 70240d5f62fd3d7b755389b5ad8c4b499c94657d
+exl-id: e18d43b6-2a77-4881-85e7-ca36248d4634
+source-git-commit: ee7c85f94fc03f6cfca8da11ddea5ebd32d0b2b4
 workflow-type: tm+mt
 source-wordcount: '842'
-ht-degree: 1%
+ht-degree: 4%
 
 ---
 
@@ -92,5 +93,5 @@ Seu sistema operacional e estruturas de aplicativo também devem ser compatívei
    O TLS 1.2 é ativado no Internet Explorer 11 por padrão, mas se estiver desativado, você pode ativá-lo. Nesse caso, ative o TLS 1.2 na caixa de diálogo de configurações avançadas, em vez de usar outras opções. Outros erros, como os seguintes, também podem ocorrer:
 
    * Não é possível ligar ao serviço
-   * Serviço não disponível
+   * Serviço indisponível
    * Erro na conexão

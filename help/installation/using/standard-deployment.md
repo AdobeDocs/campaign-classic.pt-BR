@@ -65,7 +65,7 @@ Como o computador não é um servidor de rastreamento, não considere a integra�
 Nos exemplos a seguir, os parâmetros da instância são:
 
 * Nome da instância: **demonstração**
-* Máscara de DNS: **console.campaign.net*** (somente para conexões com o console do cliente e para relatórios)
+* Máscara de DNS: **console.campaign.net&#42;** (somente para conexões com o console do cliente e para relatórios)
 * Idioma: Inglês
 * Banco de dados: **campanha:demo@dbsrv**
 

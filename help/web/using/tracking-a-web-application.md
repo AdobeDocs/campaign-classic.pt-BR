@@ -5,7 +5,7 @@ description: Rastrear visitas em um aplicativo Web
 feature: Web Apps
 exl-id: 07bd36ce-c701-4998-974f-81fd4fac22a0
 source-git-commit: b6f1556cf49492cefaf61c29a058584b0ccee16a
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '401'
 ht-degree: 100%
 

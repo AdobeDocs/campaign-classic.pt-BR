@@ -19,7 +19,7 @@ ht-degree: 1%
 
 ## Introdução {#introduction}
 
-O **[!UICONTROL Database cleanup]** acessível por meio do **[!UICONTROL Administration > Production > Technical workflows]** , permite excluir dados obsoletos para evitar o crescimento exponencial do banco de dados. O workflow é acionado automaticamente sem a intervenção do usuário.
+O **[!UICONTROL Database cleanup]** acessível por meio do **[!UICONTROL Administration > Production > Technical workflows]** , permite excluir dados obsoletos para evitar o crescimento exponencial do banco de dados. O fluxo de trabalho é acionado automaticamente sem a intervenção do usuário.
 
 ![cleanup](assets/ncs_cleanup_workflow.png)
 

@@ -123,11 +123,11 @@ _29 de abril de 2020_
 
 A build 9032@3a9dc9c inclui as seguintes correções:
 
-* A segurança no rastreamento de links no email foi aprimorada. Ela é ativada por padrão para todos os clientes. Um recurso de segurança adicional e aprimorado está disponível e pode ser ativado ao acessar o Atendimento ao cliente. Mais detalhes sobre o recurso e as etapas para clientes não hospedados para habilitá-lo podem ser encontrados na [lista de verificação de Segurança e Privacidade](https://helpx.adobe.com/campaign/kb/acc-security.html#signature-mechanism).
+* A segurança no rastreamento de links no email foi aprimorada. Ela é ativada por padrão para todos os clientes. Um recurso de segurança adicional e aprimorado está disponível e pode ser ativado ao acessar o Atendimento ao cliente. Mais detalhes sobre o recurso e as etapas para clientes não hospedados para habilitá-lo podem ser encontrados na [lista de verificação de Segurança e Privacidade](https://helpx.adobe.com/br/campaign/kb/acc-security.html#signature-mechanism).
 
 >[!CAUTION]
 >
->Se tiver problemas com notificações por push usando links de rastreamento ou delivery usando tags de âncora, recomendamos desativar o novo mecanismo de assinatura para links de rastreamento. O procedimento está detalhado [nesta página](https://helpx.adobe.com/campaign/kb/acc-security.html#signature-mechanism)
+>Se tiver problemas com notificações por push usando links de rastreamento ou delivery usando tags de âncora, recomendamos desativar o novo mecanismo de assinatura para links de rastreamento. O procedimento está detalhado [nesta página](https://helpx.adobe.com/br/campaign/kb/acc-security.html#signature-mechanism)
 
 * Correção de um problema que impedia a exibição de imagens na entrega de linha. (NEO-23207)
 * Correção de um problema com a atividade **Transferência de Arquivo**, que impedia que a autenticação com a chave SFTP funcionasse no Debian 9. (NEO-23183)
@@ -551,7 +551,7 @@ Os seguintes navegadores são compatíveis com o Campaign for Web Access.
 <p>Microsoft Internet Explorer</p>
 </td>
 <td>
-<p>11º</p>
+<p>11</p>
 </td>
 </tr>
 </tbody>

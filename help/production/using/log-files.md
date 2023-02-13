@@ -57,7 +57,7 @@ Os arquivos de log de mono-instance são listados na seguinte tabela:
 
 Para otimização de desempenho e armazenamento, o arquivo logins.log é dividido em vários arquivos, um a cada dia (logins.yy-mm-dd.log) com no máximo 365 arquivos retidos. O número de dias pode ser alterado no serverConf.xml, em syslogd (**maxNumberOfLoginsFiles** ). Consulte a documentação no [arquivo de configuração do servidor](../../installation/using/the-server-configuration-file.md#syslogd).
 
-Por padrão, os logs são limitados a dois arquivos de 10 MB por módulo e por instância. O segundo arquivo é chamado: **`<modulename>`_2.log**. O tamanho dos logs, portanto, é limitado a 2*10MB por módulo e por instância.
+Por padrão, os logs são limitados a dois arquivos de 10 MB por módulo e por instância. O segundo arquivo é chamado: **`<modulename>`_2.log**. O tamanho dos logs é, portanto, limitado a 2&#42;10MB por módulo e por instância.
 
 No entanto, você pode manter arquivos maiores. Para habilitar isso, altere o valor da variável **maxFileSizeMb=&quot;10&quot;** na configuração do **syslogd** nó do **conf/serverConf.xml** arquivo. Este valor representa o tamanho máximo em MB de um arquivo de log.
 

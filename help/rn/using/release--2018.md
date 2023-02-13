@@ -82,7 +82,7 @@ ht-degree: 97%
 
 >[!CAUTION]
 >
->Esta configuração foi retomada. Por favor [atualizar para a build mais recente](../../production/using/build-upgrade.md) ou contato [Atendimento ao cliente do Adobe](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html).
+>Esta configuração foi retomada. Por favor [atualizar para a build mais recente](../../production/using/build-upgrade.md) ou contato [Atendimento ao cliente do Adobe](https://helpx.adobe.com/br/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html).
 
 **Aprimoramentos**
 
@@ -104,7 +104,7 @@ ht-degree: 97%
 
 >[!CAUTION]
 >
->Esta configuração foi retomada. Por favor [atualizar para a build mais recente](../../production/using/build-upgrade.md) ou contato [Atendimento ao cliente do Adobe](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html).
+>Esta configuração foi retomada. Por favor [atualizar para a build mais recente](../../production/using/build-upgrade.md) ou contato [Atendimento ao cliente do Adobe](https://helpx.adobe.com/br/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html).
 
 **Novidades**
 
@@ -217,7 +217,7 @@ Essas alterações de índice podem levar a um aumento do tempo necessário para
 * Correção de um problema que ocorria ao configurar uma conta externa do canal móvel usando o conector SMPP genérico estendido: se você especificou usando parâmetros diferentes para o receptor, o transmissor usaria esses parâmetros incorretamente em vez de seus próprios parâmetros.
 * Correção de um problema que resultava em falha nos deliveries programados ao definir uma frequência para a regra de pressão, porque os deliveries eram constantemente recalculados após a primeira arbitragem. (NEO-10016)
 * Correção de um problema que resultava em falha no servidor Web IIS durante o processo de reciclagem do Pool de Aplicativos (na biblioteca nlsrvmod.dll). (NEO-10862)
-* Correção de um problema que poderia impedir a pesquisa de um recipient na tela **Perfis e Target.** (NEO8228)
+* Correção de um problema que poderia impedir a pesquisa de um recipient na tela **Perfis e Target.** (NEO-8228)
 * Correção de um problema que poderia resultar em erro de tempo limite ao acessar a pasta Histórico de Eventos no caso de um número alto de registros. (NEO-11738)
 * Correção de um problema que poderia resultar em recipients de delivery LINE retornados incorretamente como &quot;Inacessível&quot;. (NEO-10833)
 * Correção de um problema ao executar um query de workflow com uma coluna adicional no Oracle. (NEO-11615)
@@ -249,7 +249,7 @@ Essas alterações de índice podem levar a um aumento do tempo necessário para
 
 >[!CAUTION]
 >
->Esta configuração foi retomada. Por favor [atualizar para a build mais recente](../../production/using/build-upgrade.md) ou contato [Atendimento ao cliente do Adobe](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html).
+>Esta configuração foi retomada. Por favor [atualizar para a build mais recente](../../production/using/build-upgrade.md) ou contato [Atendimento ao cliente do Adobe](https://helpx.adobe.com/br/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html).
 
 **Novidades**
 
@@ -273,7 +273,7 @@ Essas alterações de índice podem levar a um aumento do tempo necessário para
 * Os logs de arquivamento de emails foram aprimorados, o que facilita e agiliza a verificação de quais emails foram entregues com êxito ou falharam no arquivamento do Cco. (NEO-10675)
 * Correção de um problema que levou à exibição dos IPs do balanceador de carga em vez dos IPs do cliente no rastreamento de broadlogs. (NEO-11295)
 * Correção de um problema aleatório que fazia com que as propriedades de um delivery fossem substituídas incorretamente. (NEO-11015)
-* Correção de um erro de sintaxe ao classificar resultados da atividade de enriquecimento. (NEO11394)
+* Correção de um erro de sintaxe ao classificar resultados da atividade de enriquecimento. (NEO-11394)
 * Correção de um problema ao usar campos calculados em uma atividade de workflow **[!UICONTROL Survey answers]**. (NEO-11382)
 * O Tomcat foi atualizado para evitar a exploração de vulnerabilidades. (NEO-11503)
 * Correção de um erro com codificação LATIN1 ao usar um FDA Connection para um banco de dados PostgreSQL. (NEO-11299)
@@ -305,7 +305,7 @@ Para obter mais informações sobre faixa de query, consulte esses artigos:
 
 >[!CAUTION]
 >
->Esta configuração foi retomada. [Atualize para a configuração mais recente](../../production/using/build-upgrade.md) ou entre em contato com o [suporte técnico](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html).
+>Esta configuração foi retomada. [Atualize para a configuração mais recente](../../production/using/build-upgrade.md) ou entre em contato com o [suporte técnico](https://helpx.adobe.com/br/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html).
 
 **Novidades**
 
@@ -323,7 +323,7 @@ Para obter mais informações sobre faixa de query, consulte esses artigos:
   </tr> 
   <tr> 
    <td> Suporte do Windows Server 2016<br /> </td> 
-   <td> O Adobe Campaign agora é compatível com o Windows Server 2016. Consulte <a href="https://helpx.adobe.com/campaign/kb/compatibility-matrix.html">Matriz de compatibilidade do Campaign Classic</a>.<br /> </td> 
+   <td> O Adobe Campaign agora é compatível com o Windows Server 2016. Consulte <a href="https://helpx.adobe.com/br/campaign/kb/compatibility-matrix.html">Matriz de compatibilidade do Campaign Classic</a>.<br /> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -340,7 +340,7 @@ Para clientes existentes, o comportamento dessa função não é alterado, mas r
 
 decryptPassword
 
-A função **decryptPassword** foi adicionada. Permite descriptografar uma senha armazenada em uma conta externa. Consulte a documentação [JSAPI](https://helpx.adobe.com/campaign/kb/compatibility-matrix.html) para obter mais informações.
+A função **decryptPassword** foi adicionada. Permite descriptografar uma senha armazenada em uma conta externa. Consulte a documentação [JSAPI](https://helpx.adobe.com/br/campaign/kb/compatibility-matrix.html) para obter mais informações.
 
 APIs de Arquivo
 
@@ -360,21 +360,21 @@ Para clientes existentes, as APIs de arquivo não podem mais acessar a pasta **c
 
 **Aprimoramentos**
 
-* Corrigidos vários problemas ao executar workflows usando MySQL na FDA. (NEO11652)
-* Correção de um problema que fazia com que uma parte da população de delivery permanecer no estado pendente, em casos específicos. (NEO11336)
+* Corrigidos vários problemas ao executar workflows usando MySQL na FDA. (NEO-11652)
+* Correção de um problema que fazia com que uma parte da população de delivery permanecer no estado pendente, em casos específicos. (NEO-11336)
 * Correção de um problema intermitente com a resposta automática do SMS. (NEO-11811)
-* Correção de um problema de esgotamento de ID ao usar seed addresses em um delivery. (NEO11842)
-* Correção de um erro de sintaxe ao executar uma classificação em uma atividade do workflow de enriquecimento. (NEO11394)
-* Correção de um problema que poderia causar falha no servidor Web ao reiniciar o IIS. (NEO10862)
+* Correção de um problema de esgotamento de ID ao usar seed addresses em um delivery. (NEO-11842)
+* Correção de um erro de sintaxe ao executar uma classificação em uma atividade do workflow de enriquecimento. (NEO-11394)
+* Correção de um problema que poderia causar falha no servidor Web ao reiniciar o IIS. (NEO-10862)
 * Correção de um problema que poderia causar falha no workflow de rastreamento após uma atualização de compilação (FDA - SQL). (NEO-11635)
-* Correção de um problema que poderia causar perda de dados da lista de workflows. (NEO11696)
-* Correção de um problema de desempenho ao enviar notificações por push. (NEO11787)
+* Correção de um problema que poderia causar perda de dados da lista de workflows. (NEO-11696)
+* Correção de um problema de desempenho ao enviar notificações por push. (NEO-11787)
 * Correção de um problema que impedia que o rastreamento Web funcionasse para domínios &quot;com.au&quot; (NEO-4385).
-* Correção de um problema de congelamento do cliente que pode ocorrer ao usar workflows complexos. (NEO11847)
+* Correção de um problema de congelamento do cliente que pode ocorrer ao usar workflows complexos. (NEO-11847)
 * Correção de um erro Oracle ao salvar um novo delivery após selecionar um elemento de um schema específico (NEO-11682).
 * Correção de um problema ao realizar query em um campo contendo caracteres com acentos (FDA/Teradata). A conta externa agora permite alterar a codificação utilizada para se comunicar com o driver Teradata. (NEO-11818).
 * Correção de um problema de rastreamento ao transmitir URLs em variáveis adicionais em uma notificação por push que poderia resultar em dados mal formatados ou incorretos recebidos pelo aplicativo móvel. (NEO-11468, NEO-11960)
-* Correção de um problema que causava um problema de exibição ao usar uma distribuição de valores com um link 1:N. (NEO11820)
+* Correção de um problema que causava um problema de exibição ao usar uma distribuição de valores com um link 1:N. (NEO-11820)
 * Correção de um problema que impedia o funcionamento de carregamento em massa no Teradata 16.
 * Aumento do tamanho do buffer para carimbo de data/hora no Teradata para evitar problemas de encadernação com driver 15.10.
 * Melhorou o gerenciamento de índices de nomes longos que podem causar problemas após a atualização.
@@ -388,12 +388,12 @@ Para clientes existentes, as APIs de arquivo não podem mais acessar a pasta **c
 
 **Aprimoramentos**
 
-* Os logs de arquivamento de emails foram aprimorados, o que facilita e agiliza a verificação de quais emails foram entregues com êxito ou falharam no arquivamento do Cco. (NEO10675)
-* Correção de um problema que levou à exibição dos IPs do balanceador de carga em vez dos IPs do cliente no rastreamento de broadlogs. (NEO11295)
-* Correção de um erro com codificação LATIN1 ao usar um FDA Connection para um banco de dados PostgreSQL. (NEO11299)
+* Os logs de arquivamento de emails foram aprimorados, o que facilita e agiliza a verificação de quais emails foram entregues com êxito ou falharam no arquivamento do Cco. (NEO-10675)
+* Correção de um problema que levou à exibição dos IPs do balanceador de carga em vez dos IPs do cliente no rastreamento de broadlogs. (NEO-11295)
+* Correção de um erro com codificação LATIN1 ao usar um FDA Connection para um banco de dados PostgreSQL. (NEO-11299)
 * Correção de um problema que ocorria ao usar o **[!UICONTROL Prepare the personalization data with a workflow]** opção de delivery. (NEO-11047, NEO-11301)
-* Correção de um problema aleatório que fazia com que as propriedades de um delivery fossem substituídas incorretamente. (NEO11015)
-* Correção de um problema ao usar campos calculados em uma atividade de workflow **[!UICONTROL Survey answers]**. (NEO11382)
+* Correção de um problema aleatório que fazia com que as propriedades de um delivery fossem substituídas incorretamente. (NEO-11015)
+* Correção de um problema ao usar campos calculados em uma atividade de workflow **[!UICONTROL Survey answers]**. (NEO-11382)
 * Correção de um problema ao usar dados armazenados em XML em uma atividade de workflow de **[!UICONTROL Survey answers]**. (NEO-10816)
 * Correção de um problema ao executar a atualização do servidor com o build 8935.
 * Correção de um problema que exibia erros inúteis no log após a atualização quando uma atividade de workflow **[!UICONTROL Survey answers]** não estava totalmente configurada.
@@ -420,7 +420,7 @@ Para clientes existentes, as APIs de arquivo não podem mais acessar a pasta **c
 **Aprimoramentos**
 
 * Correção de um problema que impedia o funcionamento da atualização do Windows Server.
-* Correção de um problema na atividade **[!UICONTROL Survey Result]** ao usar dados armazenados em XML. O relatório foi exibido incorretamente. (NEO10816)
+* Correção de um problema na atividade **[!UICONTROL Survey Result]** ao usar dados armazenados em XML. O relatório foi exibido incorretamente. (NEO-10816)
 * Correção de um problema de desempenho que poderia ocorrer com o processo inMail ao usar um servidor de email de devolução. (NEO-10641)
 * Correção de um problema de atualização de banco de dados que pode ocorrer ao atualizar mais de 1000 schemas.
 

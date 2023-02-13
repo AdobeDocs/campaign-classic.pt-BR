@@ -210,4 +210,4 @@ Normalmente, o domínio usado para enviar emails (parte à direita do sinal @ no
 
 * [Perguntas frequentes sobre migração para o Adobe Managed Services (Nuvem pública)](dc-migration-faq.md)
 * [Atualizações anuais do Campaign](../../rn/using/rn-overview.md)
-* [Perguntas frequentes de atualização de build](../../platform/using/faq-build-upgrade.md)
+* [Perguntas frequentes sobre atualização de build](../../platform/using/faq-build-upgrade.md)

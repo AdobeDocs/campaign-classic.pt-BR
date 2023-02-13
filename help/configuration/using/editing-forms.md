@@ -60,7 +60,7 @@ Para visualizar um formulário, clique no botão **[!UICONTROL Preview]** guia :
 
    Esse formulário inclui várias telas flutuantes ordenadas em sequências específicas. Os usuários navegam de uma tela para outra. [Leia mais](form-structure.md#wizards).
 
-* Iconbox
+* Caixa de ícones
 
    Esse formulário inclui várias páginas. Para navegar no formulário, os usuários selecionam ícones à esquerda do formulário.
 

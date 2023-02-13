@@ -19,7 +19,7 @@ ht-degree: 4%
 
 Os motivos para um problema de conexão podem ser múltiplos e dependem de vários contextos.
 
-Você pode tentar os testes a seguir e, se a falha de conexão persistir, entre em contato com o [Atendimento ao cliente do Adobe](https://helpx.adobe.com/br/enterprise/using/support-for-experience-cloud.html).
+Você pode tentar os testes a seguir e, se a falha de conexão persistir, entre em contato com o [Atendimento ao cliente do Adobe](https://helpx.adobe.com/br/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html).
 
 
 
@@ -27,7 +27,7 @@ Você pode tentar os testes a seguir e, se a falha de conexão persistir, entre 
 <thead> 
 <tr> 
 <th>Controlos<br /> </th> 
-<th>Solução<br /> </th> 
+<th>Resolução<br /> </th> 
 </tr> 
 </thead> 
 <tbody> 

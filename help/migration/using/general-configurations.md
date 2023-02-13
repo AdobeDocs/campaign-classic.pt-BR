@@ -9,7 +9,7 @@ exl-id: 7aad0e49-8d9c-40c7-9d6a-42fee0ae5870
 source-git-commit: 8610d29a3df1080f1622a2cb3685c0961fb40092
 workflow-type: tm+mt
 source-wordcount: '2625'
-ht-degree: 0%
+ht-degree: 1%
 
 ---
 
@@ -354,7 +354,7 @@ Função agregada (coleção)
    >
    >As juntas são executadas automaticamente para as funções agregadas. Não é mais necessário especificar a condição WHERE O0.iOperationId=iOperationId.
    >
-   >Não é mais possível usar a função &quot;count(*)&quot;. Você deve usar &quot;countall()&quot;.
+   >Não é mais possível usar o &quot;count(&#42;)&quot;. Você deve usar &quot;countall()&quot;.
 
 * Sintaxe anterior:
 
@@ -456,7 +456,8 @@ Há três maneiras possíveis de resolver um conflito:
 * **[!UICONTROL Keep the current version]**: significa que a atualização é rejeitada.
 
    >[!IMPORTANT]
-   Se selecionar esse modo de resolução, corre o risco de perder patches na nova versão. Portanto, é altamente recomendável que essa opção não seja usada ou reservada apenas para operadores especialistas.
+   >
+   >Se selecionar esse modo de resolução, corre o risco de perder patches na nova versão. Portanto, é altamente recomendável que essa opção não seja usada ou reservada apenas para operadores especialistas.
 
 Se você optar por resolver manualmente o conflito, proceda da seguinte maneira:
 
@@ -502,12 +503,14 @@ $(XTK_INSTALL_DIR)/tomcat-8/lib/el-api.jar
 No v7, o conteúdo da oferta foi movido. Na v6.02, o conteúdo estava em cada schema de representação (**nms:emailOfferView**). No v7, o conteúdo agora está no schema de ofertas. Após a pós-atualização, o conteúdo não estará visível na interface. Após a pós-atualização, é necessário recriar o conteúdo da oferta ou desenvolver um script que mova automaticamente o conteúdo do schema de representação para o schema de oferta.
 
 >[!IMPORTANT]
-Se alguns deliveries usando ofertas configuradas forem enviados após a migração, você deverá excluir e recriar todos esses deliveries no v7. Se não for possível fazer isso, um &quot;modo de compatibilidade&quot; será oferecido. Esse modo não é recomendado porque você não se beneficiará de todos os novos recursos no Interaction v7. Este é um modo de transição que permite concluir campanhas em andamento antes da migração real do 6.1. Para obter mais informações sobre esse modo, entre em contato conosco.
+>
+>Se alguns deliveries usando ofertas configuradas forem enviados após a migração, você deverá excluir e recriar todos esses deliveries no v7. Se não for possível fazer isso, um &quot;modo de compatibilidade&quot; será oferecido. Esse modo não é recomendado porque você não se beneficiará de todos os novos recursos no Interaction v7. Este é um modo de transição que permite concluir campanhas em andamento antes da migração real do 6.1. Para obter mais informações sobre esse modo, entre em contato conosco.
 
 Um exemplo de script de movimento (**interactionTo610_full_XX.js**) está disponível no **Migração** na pasta Adobe Campaign v7. Esse arquivo mostra um exemplo de script para um cliente usando uma única representação de email por oferta (a variável **[!UICONTROL htmlSource]** e **[!UICONTROL textSource]** campos). O conteúdo que estava no **NmsEmailOfferView** foi movida para a tabela de ofertas.
 
 >[!NOTE]
-Usar esse script não permite que você se beneficie das opções de &quot;gestão de conteúdo&quot; e &quot;funções de renderização&quot;. Para se beneficiar dessas funções, você deve repensar as ofertas de catálogo, especialmente o conteúdo da oferta e os espaços de configuração.
+>
+>Usar esse script não permite que você se beneficie das opções de &quot;gestão de conteúdo&quot; e &quot;funções de renderização&quot;. Para se beneficiar dessas funções, você deve repensar as ofertas de catálogo, especialmente o conteúdo da oferta e os espaços de configuração.
 
 ```
 loadLibrary("/nl/core/shared/nl.js");
@@ -606,7 +609,8 @@ Este é o procedimento a ser seguido após mover o conteúdo da oferta se você 
 1. Faça testes abrangentes.
 
    >[!NOTE]
-   Os nomes das categorias e ofertas online são modificados após a ativação. No canal de entrada, atualize todas as referências para ofertas e categorias.
+   >
+   >Os nomes das categorias e ofertas online são modificados após a ativação. No canal de entrada, atualize todas as referências para ofertas e categorias.
 
 ## Relatórios {#reports}
 

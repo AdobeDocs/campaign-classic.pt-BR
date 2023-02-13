@@ -88,7 +88,7 @@ Se você não atualizou a versão do Internet Explorer, verá a seguinte mensage
 ## Links úteis
 
 * [Atualizar seu ambiente](../../production/using/build-upgrade.md)
-* [Perguntas frequentes de atualização de build](../../platform/using/faq-build-upgrade.md)
+* [Perguntas frequentes sobre atualização de build](../../platform/using/faq-build-upgrade.md)
 * [Disponibilizar o novo Console do cliente para os usuários](../../installation/using/client-console-availability-for-windows.md)
 * [Instalar o console do cliente do Campaign](../../installation/using/installing-the-client-console.md)
 * [Acesse a Distribuição de software Adobe](https://experienceleague.adobe.com/docs/experience-cloud/software-distribution/home.html?lang=en)

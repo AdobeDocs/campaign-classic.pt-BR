@@ -7,7 +7,7 @@ exl-id: fc0fd23c-f9ea-4e30-b47b-a84143d882ca
 source-git-commit: 3997412f14666fa61bf71d0f0a0653f5cc042e19
 workflow-type: tm+mt
 source-wordcount: '2374'
-ht-degree: 1%
+ht-degree: 2%
 
 ---
 
@@ -180,7 +180,7 @@ Os seguintes indicadores são atualizados automaticamente durante a execução d
 * Taxa de resposta do grupo de controle: **dProofReactedRate**. Taxa de resposta do grupo de controle da hipótese.
 * Receita total da população contactada: **dContactReactedTotalAmount**. Receita total dos contatos direcionados na hipótese.
 * Receita média do grupo de controle: **dContactReactedAvgAmount**. Receita média dos contatos do grupo de controle direcionado na hipótese.
-* Receitas totais do grupo de controlo: **dProofReactedTotalAmount**. Receita total do grupo de controle da hipótese.
+* Receitas totais do grupo de controlo: **dProofReactedTotalAmount**. Receita total do grupo de controle de hipóteses.
 * Receita média do grupo de controle: **dProofReactedAvgAmount**. Receita média do grupo de controle da hipótese.
 * Margem total por contato: **dContactReactedTotalMargin**. Margem total por contato direcionado na hipótese.
 * Margem média por contato: **dContactReactedAvgMargin**. Margem média por contato direcionado na hipótese.

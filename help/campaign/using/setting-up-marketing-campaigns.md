@@ -5,7 +5,7 @@ description: Saiba como criar e executar campanhas de marketing
 feature: Campaigns, Cross Channel Orchestration, Programs
 exl-id: a8fce21f-ffe3-4819-87ca-ac0ad9f21e41
 source-git-commit: 381538fac319dfa075cac3db2252a9cc80b31e0f
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '1253'
 ht-degree: 100%
 
@@ -15,7 +15,7 @@ ht-degree: 100%
 
 ![](../../assets/v7-only.svg)
 
-As campanhas incluem ações (deliveries) e processos (importação ou extração de arquivos), além de recursos (documentos de marketing e delivery outlines). Eles são usados em campanhas de marketing. As campanhas são parte de um programa, e os programas estão incluídos em um plano de campanha.
+As campanhas incluem ações (entregas) e processos (importação ou extração de arquivos), além de recursos (documentos de marketing e outlines de entrega). Eles são usados em campanhas de marketing. As campanhas são parte de um programa, e os programas estão incluídos em um plano de campanha.
 
 ![](assets/do-not-localize/how-to-video.png) Descubra como criar um plano de marketing, programas e campanhas [em vídeo](#video)
 

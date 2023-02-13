@@ -9,7 +9,7 @@ exl-id: e4d34f56-b065-4dce-8974-11dc2767873a
 source-git-commit: 40da5774c8a6a228992c4aa400e2d9924215611e
 workflow-type: tm+mt
 source-wordcount: '1555'
-ht-degree: 0%
+ht-degree: 1%
 
 ---
 
@@ -29,7 +29,7 @@ _operation (cadeia de caracteres), advanced (boolean), applicableIf (cadeia de c
 
 `<element>`
 
-## Crianças {#children}
+## Filhos {#children}
 
 `<help>`
 
@@ -130,7 +130,7 @@ A sequência em que `<attribute>` são definidos em um `<srcschema>` não afeta 
 
    Lista de tipos disponíveis:
 
-   * ANY
+   * QUALQUER UMA
    * compartimento
    * blob
    * booleano
@@ -139,20 +139,20 @@ A sequência em que `<attribute>` são definidos em um `<srcschema>` não afeta 
    * datetime
    * datetimetz
    * datetimenotz
-   * data
+   * date
    * double
    * enum
    * float
    * html
    * int64
-   * link
+   * Link 
    * long
    * memorando
    * MNTOKEN
    * percent
    * chave primária
    * short
-   * string
+   * sequência de caracteres
    * tempo
    * timespan
    * uuid

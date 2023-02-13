@@ -53,7 +53,7 @@ Antes de iniciar a implementação, verifique a configuração da instância.
 1. Verifique se a variável `DmRendering_cuid` o valor da opção é preenchido.
 
    * Se a opção estiver preenchida, você poderá iniciar a implementação.
-   * Se nenhum valor for preenchido, entre em contato com [Atendimento ao cliente do Adobe](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html){_blank} para obter seu CUID.
+   * Se nenhum valor for preenchido, entre em contato com [Atendimento ao cliente do Adobe](https://helpx.adobe.com/br/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html){_blank} para obter seu CUID.
 
    Essa opção deve ser preenchida em todas as instâncias do Campaign (MKT, MID, RT, EXEC) com o valor correto. Como um cliente híbrido, entre em contato com o Adobe para definir a opção nas instâncias MID, RT e EXEC.
 
@@ -61,7 +61,7 @@ Como cliente local, você também deve verificar se uma Campanha **[!UICONTROL P
 
 1. Como Administrador, conecte-se a [Adobe Admin Console](https://adminconsole.adobe.com/){_blank}.
 1. Acesse o **Produtos e serviços** seção e verificação **Adobe Campaign** está listado.
-Se não conseguir ver **Adobe Campaign** contato [Atendimento ao cliente do Adobe](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html){_blank} para adicioná-lo.
+Se não conseguir ver **Adobe Campaign** contato [Atendimento ao cliente do Adobe](https://helpx.adobe.com/br/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html){_blank} para adicioná-lo.
 1. Clique em **Adobe Campaign** e selecione sua Organização.
    **Cuidado**: Se você tiver mais de uma organização, selecione a correta. Saiba mais sobre Organizações [nesta página](https://experienceleague.adobe.com/docs/control-panel/using/faq.html#ims-org-id){_blank}.
 
