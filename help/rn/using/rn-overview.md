@@ -7,9 +7,9 @@ role: User
 level: Beginner
 exl-id: 7a05fdff-8f9d-4e8d-812e-0f1509db5499
 source-git-commit: 1cc1568fe77cc5bbde88092b0e9108792e10fd71
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '934'
-ht-degree: 85%
+ht-degree: 100%
 
 ---
 
@@ -17,7 +17,7 @@ ht-degree: 85%
 
 ![](../../assets/v7-only.svg)
 
-O Adobe Campaign Classic lança periodicamente atualizações de produtos que trazem novos recursos, correções de erros e melhorias de desempenho, segurança e usabilidade. Essas atualizações são lançadas como **criações de produtos**. Informações detalhadas sobre cada nova build estão disponíveis nas [Notas de versão](latest-release.md).
+O Adobe Campaign Classic lança periodicamente atualizações de produtos que trazem novos recursos, correções de erros e melhorias de desempenho, segurança e usabilidade. Essas atualizações são lançadas como **builds de produto**. Informações detalhadas sobre cada nova build estão disponíveis nas [Notas de versão](latest-release.md).
 
 ## Status da versão{#rn-statuses}
 
@@ -27,7 +27,7 @@ Cada nova build vem com um status identificado por uma cor nas [Notas de versão
 
 ![](assets/do-not-localize/limited3.png) **Disponibilidade limitada** (DL) - somente instalação sob demanda.
 
-![](assets/do-not-localize/blue3.png) **Candidato a lançamento** (RC) - Versão mais recente com novos recursos.
+![](assets/do-not-localize/blue3.png) **Versão candidata** (VC): build mais recente com novos recursos.
 
 ![](assets/do-not-localize/orange3.png) **Não está mais disponível** - Nenhuma implantação. Nenhuma correção de erro. Recomenda-se a atualização para um build mais recente.
 
@@ -37,9 +37,9 @@ Cada nova build vem com um status identificado por uma cor nas [Notas de versão
 
 O Adobe Campaign é atualizado regularmente. Essa frequência regular de atualizações tem como objetivo disponibilizar a você as mais recentes e melhores atualizações, além de manter seu ambiente protegido e melhorar sua experiência com nosso produto.
 
-Essa é a razão pela qual é fundamental que você **executar a build estável mais recente** do Adobe Campaign. Ela também garantirá que você obtenha uma melhor experiência de suporte, já que geralmente é bem mais rápido identificar, reproduzir e corrigir um problema em um build recente. Além disso, muitos problemas que você pode encontrar já foram corrigidos nos builds mais recentes.
+É por isso que acreditamos ser essencial **executar a build estável mais recente** do Adobe Campaign. Ela também garantirá que você obtenha uma melhor experiência de suporte, já que geralmente é bem mais rápido identificar, reproduzir e corrigir um problema em um build recente. Além disso, muitos problemas que você pode encontrar já foram corrigidos nos builds mais recentes.
 
-Como cliente hospedado, você se beneficia automaticamente da atualização com a build estável mais recente sem ter de tomar nenhuma ação. Saiba mais na [seção de Atualização anual](#yearly-upgrade). Se você migrar de uma build antiga, o Adobe recomenda atualizar para essa build primeiro.
+Como cliente hospedado, você se beneficia automaticamente da atualização com a última build estável, sem realizar nenhuma ação. Saiba mais na [seção de Atualização anual](#yearly-upgrade). Ao migrar de uma build antiga, a Adobe recomenda atualizar primeiro para essa build.
 
 ## Recomendações{#recommendations}
 
@@ -67,9 +67,9 @@ Como usuário convidado, você se beneficiará automaticamente da atualização 
 
 ### Por que minha empresa precisa dessa atualização?
 
-Como cliente hospedado, se sua conta tiver sido identificada como necessitando atualizar uma ou mais tecnologias relacionadas ao Campaign Classic e atualizar sua infraestrutura para a build atual (por exemplo, da v7.2.1 para v7.3.3) e/ou versão (da v7 para v8), o Adobe notifica você diretamente.
+Como cliente hospedado, se sua conta for identificada como precisando atualizar uma ou mais das tecnologias relacionadas ao Campaign Classic e atualizar sua infraestrutura para a build atual (por exemplo, de v7.2.1 para v7.3.3) e/ou versão (de v7 a v8), a Adobe notifica você diretamente.
 
-Como cliente local ou híbrido em execução em uma build mais antiga, o Adobe incentiva a mudança para a build estável (GA) mais recente.
+Como um cliente no local ou híbrido executando em uma build mais antiga, a Adobe incentiva você a migrar para a build estável (GA) mais recente.
 
 Dessa forma, sua conta ficará protegida contra vulnerabilidades, além de contar com a tecnologia de desempenho atualizada. Você também poderá fazer atualizações regulares e com mais facilidade na sua conta, que exigirão menos trabalho e intervenção manual.
 
