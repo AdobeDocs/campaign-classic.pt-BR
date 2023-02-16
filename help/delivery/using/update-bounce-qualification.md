@@ -1,13 +1,13 @@
 ---
 product: campaign
-title: Atualizar qualificação de devolução após a interrupção do Apple 2021
-description: Saiba como atualizar a qualificação de devolução após a interrupção do Apple 2021
+title: Atualizar qualificação de rejeição após a interrupção da Apple em 2021
+description: Saiba como atualizar a qualificação de rejeição após a interrupção da Apple em 2021
 feature: Deliverability
 exl-id: 34be23f7-17fa-475e-9663-2e353d76b172
 source-git-commit: c84f48ebdd66524e8dd6c39c88ae29565d11c9b2
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '425'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
