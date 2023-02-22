@@ -74,7 +74,7 @@ No entanto, você deve aplicar o seguinte:
 
 ### Instalação e configuração do servidor mid-sourcing {#installing-and-configuring-the-mid-sourcing-server}
 
-No console do cliente, localize a variável **Roteamento de email usando mid-sourcing** conta mid-sourcing (na **/Administração/Contas externas/** pasta). Preencha o **URL do servidor**, **account**, **senha** e **Mirror page URL** configurações com as informações fornecidas pelo provedor de servidor que hospeda o servidor mid-sourcing. Teste a conexão.
+No console do cliente, localize a variável **Roteamento de email usando mid-sourcing** conta mid-sourcing (na **/Administração/Contas externas/** pasta). Preencha o **URL do servidor**, **account**, **senha** e **Mirror page URL** configurações com as informações fornecidas pelo provedor de servidor que hospeda o servidor mid-sourcing. Testa a conexão.
 
 >[!NOTE]
 >

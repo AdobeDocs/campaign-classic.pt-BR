@@ -134,7 +134,7 @@ O tipo de gráfico **Gauge** foi removido.
 
 As capturas de tela e os parâmetros de relatórios e aplicativos da web foram atualizados após a remoção do Adobe Flash.
 
-A descrição do [fluxo de trabalho técnico de faturamento](../../production/using/monitoring-processes.md#billing-report) foi atualizada com uma nova garantia.
+A descrição do [fluxo de trabalho técnico de faturamento](../../production/using/monitoring-processes.md#billing-report) foi atualizada com uma nova medida de proteção.
 
 ### Agosto de 2021{#aug-2021}
 

@@ -48,7 +48,7 @@ _7 de setembro de 2021_
 
 **Outras alterações**
 
-* Correção de uma regressão introduzida na versão 21.1.3 com a nova garantia do fluxo de trabalho de faturamento. O fluxo de trabalho de faturamento foi executado em instâncias erradas e falhou ao tentar enviar o relatório de faturamento, que não foi gerado. É necessário reiniciar manualmente o fluxo de trabalho para que a correção seja aplicada.
+* Correção de uma regressão introduzida na versão 21.1.3 com a nova medida de proteção do fluxo de trabalho de faturamento. O fluxo de trabalho de faturamento foi executado em instâncias erradas e falhou ao tentar enviar o relatório de faturamento, que não foi gerado. É necessário reiniciar manualmente o fluxo de trabalho para que a correção seja aplicada.
 * Os conectores do Microsoft CRM obsoletos anteriormente (implantações do Office 365 e no local) foram removidos da interface. [Leia mais](../../platform/using/crm-ms-dynamics.md#configure-acc-for-microsoft)
 * Após a migração para o Tomcat 8, o script de configuração do IIS foi atualizado para corrigir problemas de integração do IIS. (NEO-31019)
 * A identificação da fonte de dados foi aprimorada nas guias de dados e esquema da janela **Exibir população** das transições do fluxo de trabalho.
@@ -192,7 +192,7 @@ Saiba mais na [página sobre recursos obsoletos e removidos](../../rn/using/depr
 
 **Outras alterações**
 
-* Uma garantia foi adicionada para permitir que apenas o [fluxo de trabalho técnico de faturamento](../../production/using/monitoring-processes.md#billing-report) seja executado na instância de marketing.
+* Foi adicionada uma medida de proteção para permitir que apenas o [fluxo de trabalho técnico de faturamento](../../production/using/monitoring-processes.md#billing-report) seja executado na instância de marketing.
 * O terceiro openssl para Windows foi atualizado para a versão 1.1.1h.
 * Na descrição do pacote Debian, nlserver foi alterado para servidor do Adobe Campaign Classic.
 

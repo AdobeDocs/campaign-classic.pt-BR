@@ -143,7 +143,7 @@ _2 de dezembro de 2019_
 * Para otimização de desempenho e armazenamento, a manipulação do arquivo **logins.log** foi aprimorada. O arquivo agora é dividido em vários arquivos, um a cada dia com um máximo de 365 arquivos retidos. [Leia mais](../../production/using/log-files.md)
 * A conta externa do Microsoft Dynamics CRM agora pode ser configurada usando credenciais de senha (senha + nome de usuário) ou certificado (chave privada). [Leia mais](../../installation/using/external-accounts.md#microsoft-dynamics-crm-external-account)
 * Alguns aprimoramentos foram adicionados ao conector Hadoop FDA para melhorar a confiabilidade
-* Uma garantia específica foi adicionada para verificar o espaço em disco antes de permitir o upload de recursos públicos no servidor.
+* Foi adicionada uma medida de proteção específica para verificar o espaço em disco antes de permitir o upload de recursos públicos no servidor.
 * Novas [Opções de campanha](../../installation/using/configuring-campaign-options.md) foram adicionadas:
    * A opção de configuração **WdbcKillSessionPolicy** permite que você afete o comportamento de **Unconditional Stop** em todos os workflows e consultas de banco de dados PostgreSQL.
    * A opção **NmsOperation_DeliveryPreparationWindow** permite definir o número de dias nos quais os deliveries com status inconsistente serão excluídos da contagem de entregas em execução.
@@ -153,7 +153,7 @@ _2 de dezembro de 2019_
 * Uma nova opção **Maximum personalization run time** nas propriedades de delivery permite definir um período de tempo limite para o tempo de execução de personalização, a fim de evitar que a fase de personalização seja executada por muito tempo. [Leia mais](../../delivery/using/personalization-fields.md#timing-out-personalization)
 * A opção **ftp protocol** foi adicionada para permitir que você use uma configuração proxy para conexões SFTP. [Leia mais](../../installation/using/file-res-management.md)
 * Novo suporte de acesso proxy a um servidor externo SFTP para ambientes locais.
-* Uma garantia específica foi adicionada para impedir a instalação de pacotes que não são compatíveis com a instância do Campaign. [Leia mais](../../installation/using/installing-campaign-standard-packages.md)
+* Foi adicionada uma medida de proteção específica para impedir a instalação de pacotes que não são compatíveis com a instância do Campaign. [Leia mais](../../installation/using/installing-campaign-standard-packages.md)
 
 _Sistemas obsoletos_
 
@@ -406,8 +406,8 @@ _30 de maio de 2019_
    <td> <p>Como administrador, aumente a produtividade monitorando e gerenciando alterações feitas na instância do Adobe Campaign Classic. A Trilha de Auditoria registrará ações feitas nos Schemas de origem, Workflows e Opções. Você pode ver rapidamente se um elemento foi criado, modificado ou excluído.</p><p>Para obter mais informações, consulte a <a href="../../production/using/audit-trail.md">documentação detalhada</a> e o <a href="https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/monitoring/audit-trail.html">vídeo de instruções</a>.</p></td> 
   </tr> 
   <tr> 
-   <td> Grade de Proteção, Robustez e Escalabilidade<br /> </td> 
-   <td> Uma série de melhorias foi adicionada ao Campaign Classic. As melhorias de grade de proteção, robustez e escalabilidade estão listadas abaixo.<br /> </td> 
+   <td> Medidas de proteção, robustez e escalabilidade<br /> </td> 
+   <td> Uma série de melhorias foi adicionada ao Campaign Classic. As melhorias em medidas de proteção, robustez e escalabilidade estão listadas abaixo.<br /> </td> 
   </tr> 
   <tr> 
    <td> Atualização da Matriz de Compatibilidade<br /> </td> 
@@ -439,7 +439,7 @@ _30 de maio de 2019_
 * Uma nova opção XtkSecurity_Disable_GetSetEnv foi adicionada para bloquear o uso de funções setEnv e getEnv.
 * Informações confidenciais agora estão ocultas no rastreamento da pilha do aplicativo.
 
-**Aprimoramentos de grade de Proteção, robustez e escalabilidade**
+**Melhorias em medidas de proteção, robustez e escalabilidade**
 
 * Otimização do uso da sequência Lifespan - XtkNewId: as tabelas mais antigas foram movidas da sequência xtkNewId para sequências dedicadas.
 * FDA sobre HTTP v2: FDA sobre protocolo HTTP é amplamente usado em implantações híbridas, especialmente para recuperação de broadLog e preparação de delivery. Robustez foi aprimorada para evitar problemas de rede e possíveis erros como recuperação e envio de dados. Isso requer que as builds nas duas extremidades da conexão estejam atualizados, caso contrário, o protocolo antigo ainda será usado.
