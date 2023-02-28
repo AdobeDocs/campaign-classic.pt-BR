@@ -6,10 +6,10 @@ feature: Overview
 role: User
 level: Beginner
 exl-id: b8c1f287-06f4-4c34-8cca-b0c7676abbc2
-source-git-commit: 31aa32e4fb7171a49bbea6907f50608eddb2802e
+source-git-commit: 76218abd198f677541338c7f854d047d2c644013
 workflow-type: tm+mt
-source-wordcount: '785'
-ht-degree: 98%
+source-wordcount: '775'
+ht-degree: 94%
 
 ---
 
@@ -40,9 +40,9 @@ Para saber mais sobre itens obsoletos, visite [esta página](../../rn/using/depr
 <tr> 
 <td>CentOs</td>
 <td>
-<p>8.x (64 bits)  </br><strong>Importante:</strong> o CentOS Linux 8 atingirá o fim da vida útil (EOL) em 31 de dezembro de 2021. Para obter mais informações, consulte a página <a href="../../rn/using/deprecated-features.md">Recursos obsoletos</a>.</p>
-<p>7.x (64 bits)</p>
+<p>7.x</p>
 <p><strong>Importante:</strong> se você estiver usando o RHEL, deve desativar o SELinux ou fazer com que seus arquitetos gravem regras personalizadas de SELinux para verificar se um SELinux habilitado não está causando problemas nas operações do Campaign.</p>
+<p>8.x</br><strong>Importante:</strong> O CentOS Linux 8 atingirá o fim da vida útil (EOL) em 31 de dezembro de 2021. Para obter mais informações, consulte a página <a href="../../rn/using/deprecated-features.md">Recursos obsoletos</a>.</p>
 </td>
 </tr>
 <tr>
@@ -88,7 +88,7 @@ Para saber mais sobre itens obsoletos, visite [esta página](../../rn/using/depr
 <tr>
 <td>Apache</td>
 <td>
-<p>2.4 para RHEL7 - CentOS 7, Debian 8/9, Windows (64 bits)</p>
+<p>2.4 para RHEL7 - CentOS 7, Debian 8/9, Windows</p>
 </td>
 </tr>
 </tbody>
@@ -104,7 +104,7 @@ Para saber mais sobre itens obsoletos, visite [esta página](../../rn/using/depr
 <p>11</p>
 <p>9</p>
 <p>8</p>
-<p>O aplicativo foi aprovado para o Java Development Kit (JDK) desenvolvido pela Oracle e para OpenJDK.</p>
+<p>O Campaign é compatível com o Java Development Kit (JDK) desenvolvido pelo Oracle e com o OpenJDK.</p>
 </td>
 </tr>
 <tr>
@@ -202,7 +202,7 @@ Os ambientes **Managed Services** (hospedado), **Híbrido** e **No local** podem
 <tr>
 <td>Amazon Redshift</td>
 <td><p> </p>
-<td>No mínimo v7.0 19.1.4 </td>
+<td>No mínimo v7.0 19.1.4</td>
 </td>
 </tr>
 <tr>
