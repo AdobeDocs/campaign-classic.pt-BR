@@ -4,7 +4,7 @@ title: Editar conteúdo
 description: Editar conteúdo
 feature: Web Apps, Web Forms, Landing Pages
 exl-id: 968430d6-b1dd-47f8-8b31-39aaa18bc05c
-source-git-commit: b6f1556cf49492cefaf61c29a058584b0ccee16a
+source-git-commit: 7f5770c5181b4f2e966d8ecfe6b1d4b9c764e5fa
 workflow-type: tm+mt
 source-wordcount: '1214'
 ht-degree: 100%
@@ -221,9 +221,9 @@ Selecione um arquivo de imagem salvo localmente.
 
 ![](assets/dce_popup_imgupload.png)
 
-O ícone **Delete** exclui a tag ![]() contendo a imagem.
+O ícone **Delete** exclui a tag  contendo a imagem.
 
-O ícone **Duplicate** duplica a tag ![]()e seu conteúdo.
+O ícone **Duplicate** duplica a tag e seu conteúdo.
 
 >[!CAUTION]
 >
