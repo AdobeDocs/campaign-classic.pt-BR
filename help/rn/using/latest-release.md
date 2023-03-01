@@ -6,9 +6,9 @@ feature: Overview
 role: User
 level: Beginner
 exl-id: d65869ca-a785-4327-8e8d-791c28e4696c
-source-git-commit: 8391df5046d56edfb33de5eb9f2afb4738108791
+source-git-commit: 2654157b02b549d4184ed6a5a93acad47e452713
 workflow-type: tm+mt
-source-wordcount: '2771'
+source-wordcount: '2772'
 ht-degree: 100%
 
 ---
@@ -33,7 +33,7 @@ _21 de novembro de 2022_
 
 * Após o fim da vida útil do Microsoft Internet Explorer 11, o mecanismo de renderização HTML para painéis no console do cliente começou a utilizar o Edge Chromium. (NEO-20741)
 
-Consulte a [Matriz de compatibilidade do Campaign](../../rn/using/compatibility-matrix.md#RDBMSservers).
+Saiba mais na [matriz de compatibilidade do Campaign](../../rn/using/compatibility-matrix.md#RDBMSservers).
 
 **Aprimoramentos**
 
