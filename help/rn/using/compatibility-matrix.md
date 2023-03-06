@@ -6,9 +6,9 @@ feature: Overview
 role: User
 level: Beginner
 exl-id: b8c1f287-06f4-4c34-8cca-b0c7676abbc2
-source-git-commit: 84c6dacb96bd0853be9eaef0dfa7e36116f8a46a
+source-git-commit: c7c6c6a2fe6beb17bfb203e8895661c2f3084cc2
 workflow-type: tm+mt
-source-wordcount: '779'
+source-wordcount: '781'
 ht-degree: 90%
 
 ---
@@ -104,7 +104,7 @@ Para saber mais sobre itens obsoletos, visite [esta página](../../rn/using/depr
 <p>11</p>
 <p>9</p>
 <p>8</p>
-<p>O Campaign é compatível com o Java Development Kit (JDK) desenvolvido pelo Oracle e com o OpenJDK.</p>
+<p>O Campaign é compatível com o Java Development Kit (JDK) desenvolvido pelo Oracle e OpenJDK.</p>
 </td>
 </tr>
 <tr>
@@ -248,7 +248,7 @@ Além disso, os ambientes **Híbrido** e **No local** também podem conectar o C
 </tr>
 <tr><td>MySQL</td>
 <td>
-<p>8 (a partir do Campaign v7.3)</p>
+<p>8</p>
 <p>5.7</p>
 </td>
 <td>
@@ -271,7 +271,12 @@ Além disso, os ambientes **Híbrido** e **No local** também podem conectar o C
 <p>12c</p>
 <p>11g  </p>
 </td>
-<td>No mínimo v7.0</td>
+<td>
+<p>No mínimo v7.0</p>
+<p></p>
+<p></p>
+<p></p>
+</td>
 </tr>
 <tr>
 <td>SAP HANA</td>
@@ -330,28 +335,38 @@ Os sistemas operacionais e navegadores a seguir são **necessários** para usar 
 
 <table>
 <tbody>
-</tr>
+<td><strong>Sistema</strong></td>
+<td><strong>Versão do sistema operacional</strong></td>
+<td><strong>Versão do Campaign</strong></td>
 <tr>
 <td>Microsoft Windows</td>
 <td>
-<p>11 (a partir do Campaign v7.3)</p>
+<p>11</p>
 <p>10</p>
 <p>8</p>
 </td>
+<td>
+<p>No mínimo v7.3 </p>
+<p></p>
+<p></p>
 </tr>
 <tr>
 <td>Microsoft Windows Server</td>
 <td>
-<p>2019 (a partir do Campaign v7.2.1)</p>
+<p>2019</p>
 <p>2016</p>
 <p>2012</p>
 </td>
+<td>
+<p>No mínimo v7.2.1 </p>
+<p></p>
+<p></p>
 </tbody>
 </table>
 
 ### Microsoft WebView2 Runtime
 
-WebView2 Runtime do Microsoft Edge a versão mais recente é obrigatória para o console do cliente Campaign.
+WebView2 Runtime do Microsoft Edge a versão mais recente é obrigatória para o console do cliente do Campaign.
 
 Baixe o Microsoft Edge WebView2 em [Site do desenvolvedor do Microsoft](http://www.adobe.com/go/acc-ms-webview2-runtime-download_br).
 
