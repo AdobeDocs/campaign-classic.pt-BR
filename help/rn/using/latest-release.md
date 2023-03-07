@@ -7,7 +7,7 @@ role: User
 level: Beginner
 exl-id: d65869ca-a785-4327-8e8d-791c28e4696c
 source-git-commit: 2654157b02b549d4184ed6a5a93acad47e452713
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2772'
 ht-degree: 100%
 
@@ -144,7 +144,7 @@ Consulte a [Matriz de compatibilidade do Campaign](../../rn/using/compatibility-
 * Correção de um problema que poderia levar a problemas de conexão ao criar uma conta externa para o Snowflake como um banco de dados externo. (NEO-45744)
 * Correção de um problema que poderia resultar na exibição de informações de tabela protegidas por um atributo visibleIf. (NEO-37865)
 * Correção de um problema que poderia exibir a mensagem de erro “$ não está definido” durante a fase de análise da entrega. (NEO-32940)
-* Correção de um problema que fazia com que os deliveries fossem associados a um eventType incorreto. (NEO-45743)
+* Correção de um problema que fazia com que as entregas fossem associadas a um eventType incorreto. (NEO-45743)
 * Correção de um problema que poderia resultar em falhas devido a descartes de núcleo intermitentes (NEO-30549)
 * Correção de um problema que poderia resultar em falhas ao usar um código HTML incorreto em uma entrega. (NEO-40385)
 * Correção de um problema que poderia impedir que usuários não administradores acessassem a guia **Análise** nas propriedades da entrega. (NEO-34025)
@@ -218,7 +218,7 @@ O Adobe Campaign agora é compatível com o Windows Server 2019. Consulte a [Mat
 
 * Correção de um problema ao criar uma entrega que resultava em erro na guia **Images** da janela **Imagens e rastreamento**. Isso ocorria ao usar uma configuração de proxy automático. (NEO-33260)
 * Correção de um problema que impedia o upload de arquivos em um servidor Debian 10 (HTTPS) no modo síncrono.
-* Correção de um problema que poderia impedir que registros da tabela de estatísticas de deliveries (`nmsDeliveryLogStats`) fossem removidos da instância mid-sourcing durante a limpeza do banco de dados, após a exclusão dos deliveries relacionados. (NEO-31034)
+* Correção de um problema que poderia impedir que registros da tabela de estatísticas de entregas (`nmsDeliveryLogStats`) fossem removidos da instância mid-sourcing durante a limpeza do banco de dados, após a exclusão das entregas relacionadas. (NEO-31034)
 * Correção de um problema que impedia o envio de notificações de aplicativos móveis no iOS ao usar a autenticação por token (NEO-38640).
 * Correção de um problema que poderia exibir mensagens de erro de script ao tentar criar e configurar relatórios (NEO-38393).
 * Correção de um problema que causava falha no fluxo de trabalho de rastreamento do Oracle devido a grandes volumes de indicadores de entrega sendo atualizados simultaneamente (NEO-39653).
@@ -226,7 +226,7 @@ O Adobe Campaign agora é compatível com o Windows Server 2019. Consulte a [Mat
 * Correção de um problema nas páginas de destino que impedia que caracteres especiais fossem exibidos corretamente nas páginas HTML das respostas de pesquisas online (NEO-39438).
 * Correção de um problema que impedia o funcionamento do console do Campaign Classic ao clicar com o botão direito do mouse em qualquer uma das pastas da guia Explorer (NEO-38884).
 * Correção de um erro ao usar um modelo de entrega criado anteriormente e vinculado a uma conta do Web Analytics em uma nova entrega, no qual a configuração do Web Analytics ficava ausente. (NEO-28666)
-* Correção de um problema que podia impedir a pré-visualização de deliveries de dispositivos móveis que foram anexados a um fluxo de trabalho.
+* Correção de um problema que podia impedir a pré-visualização de entregas de dispositivos móveis que foram anexados a um fluxo de trabalho.
 * Correção de um erro que impedia que URLs de rastreamento personalizadas fossem redirecionadas quando o mecanismo de assinatura da URL para links de rastreamento era ativado.
 * Correção de um problema que poderia causar falhas após a atualização devido a um problema de gerenciamento de índice.
 * Correção de um erro que ocorria ao usar tipos de dados de campo de pesquisa com o Microsoft Dynamics CRM em atividades de fluxo de trabalho de **Importação** ou **Exportação**.
@@ -235,11 +235,11 @@ O Adobe Campaign agora é compatível com o Windows Server 2019. Consulte a [Mat
 * Correção de um problema que resultava em um erro de solicitação incorreta ao usar campos de dados XML com a conta do Microsoft Dynamics CRM se o XML em questão contivesse aspas duplas.
 * Correção de um problema que ocasionava o registro incorreto de problemas de tempo limite de rede como interrupções de script, em vez de erros de rede. Esse problema ocorria no caso de solicitações HTTP que eram incluídas em atividades JavaScript. (NEO-38079)
 * Correção de um problema que retornava resultados incorretos ao executar as funções HoursDiff e MinutesDiff do Amazon Redshift para tentar extrair o componente de tempo.(NEO-31673)
-* Correção de um problema que impedia o carregamento do relatório **Hot Clicks** em deliveries desde o build 9182. (NEO-28900)
+* Correção de um problema que impedia o carregamento do relatório **Hot Clicks** em entregas desde o build 9182. (NEO-28900)
 * Correção de um erro que substituía o símbolo &amp; em um URL pela entidade de caractere de referência (`&amp;`), impedindo usuários de acessarem o URL vinculado a um código QR. (NEO-28621)
 * Correção de um problema que criava uma nova conta externa sempre que um usuário criava um novo fluxo de trabalho de campanha e uma atividade de entrega vinculada a uma conta do Web Analytics. Isso era causado por uma ID ausente no objeto de entrega webAnalyticsAccount. (NEO-39691)
 * Correção de um problema que podia impedir o funcionamento da atividade de fluxo de trabalho **Lista de leitura** quando a lista era identificada com uma ID negativa na base de dados. (NEO-39607)
 * Correção de um problema que poderia resultar na falha do fluxo de trabalho **Mid-sourcing (logs de entrega)**. (NEO-39662)
-* Correção de um problema que podia impedir a pré-visualização de deliveries de email que foram anexados a um fluxo de trabalho. (NEO-37840)
+* Correção de um problema que podia impedir a pré-visualização de entregas de email que foram anexadas a um fluxo de trabalho. (NEO-37840)
 * Correção de um problema que fazia com que tabelas válidas que contivessem valores de lista fossem excluídas pelo fluxo de trabalho de limpeza do banco de dados. (NEO-34911)
 * Correção de um problema que podia fazer com que o fluxo de trabalho de faturamento falhasse em instâncias de marketing.
