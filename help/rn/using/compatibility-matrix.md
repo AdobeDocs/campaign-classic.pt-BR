@@ -9,7 +9,7 @@ exl-id: b8c1f287-06f4-4c34-8cca-b0c7676abbc2
 source-git-commit: c7c6c6a2fe6beb17bfb203e8895661c2f3084cc2
 workflow-type: tm+mt
 source-wordcount: '781'
-ht-degree: 90%
+ht-degree: 99%
 
 ---
 
@@ -41,8 +41,8 @@ Para saber mais sobre itens obsoletos, visite [esta página](../../rn/using/depr
 <td>CentOs</td>
 <td>
 <p>7.x</p>
-<p><strong>Importante:</strong> se você estiver usando o RHEL, deve desativar o SELinux ou fazer com que seus arquitetos gravem regras personalizadas de SELinux para verificar se um SELinux habilitado não está causando problemas nas operações do Campaign.</p>
-<p>8.x</br><strong>Importante:</strong> O CentOS Linux 8 atingirá o fim da vida útil (EOL) em 31 de dezembro de 2021. Para obter mais informações, consulte a página <a href="../../rn/using/deprecated-features.md">Recursos obsoletos</a>.</p>
+<p><strong>Importante:</strong> se estiver usando o RHEL, desative o SELinux ou faça com que seus arquitetos criem regras personalizadas de SELinux para verificar se um SELinux habilitado não está causando problemas nas operações do Campaign.</p>
+<p>8.x</br><strong>Importante:</strong> o CentOS Linux 8 atingirá o fim da vida útil (EOL) em 31 de dezembro de 2021. Para obter mais informações, consulte a página <a href="../../rn/using/deprecated-features.md">Recursos obsoletos</a>.</p>
 </td>
 </tr>
 <tr>
@@ -58,7 +58,7 @@ Para saber mais sobre itens obsoletos, visite [esta página](../../rn/using/depr
 <td>
 <p>8.x</p>
 <p>7.x</p>
-<p><strong>Importante:</strong> se você estiver usando o RHEL, deve desativar o SELinux ou fazer com que seus arquitetos gravem regras personalizadas de SELinux para verificar se um SELinux habilitado não está causando problemas nas operações do Campaign.</p>
+<p><strong>Importante:</strong> se estiver usando o RHEL, desative o SELinux ou faça com que seus arquitetos criem regras personalizadas de SELinux para verificar se um SELinux habilitado não está causando problemas nas operações do Campaign.</p>
 </td>
 </tr>
 <tr>
@@ -104,7 +104,7 @@ Para saber mais sobre itens obsoletos, visite [esta página](../../rn/using/depr
 <p>11</p>
 <p>9</p>
 <p>8</p>
-<p>O Campaign é compatível com o Java Development Kit (JDK) desenvolvido pelo Oracle e OpenJDK.</p>
+<p>O Campaign é compatível com o Java Development Kit (JDK) desenvolvido pela Oracle e com o OpenJDK.</p>
 </td>
 </tr>
 <tr>
@@ -154,7 +154,7 @@ Para saber mais sobre itens obsoletos, visite [esta página](../../rn/using/depr
 <p>2016</p>
 <p>2014</p>
 <p>2012 - SP1 e SP2</p>
-<p><strong>Importante:</strong> o Microsoft SQL Server não é compatível como banco de dados principal quando o servidor do Campaign está em execução no Linux. <a href="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/install-campaign-on-prem/installing-campaign-in-linux-/prerequisites-of-campaign-installation-in-linux.html#database-access-layers">Saiba mais</a>.</p>
+<p><strong>Importante:</strong> o Microsoft SQL Server não é compatível como banco de dados principal quando o servidor do Campaign está em execução no Linux. <a href="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/install-campaign-on-prem/installing-campaign-in-linux-/prerequisites-of-campaign-installation-in-linux.html?lang=pt-BR#database-access-layers">Saiba mais</a>.</p>
 </td>
 </tr>
 </tbody>
@@ -368,7 +368,7 @@ Os sistemas operacionais e navegadores a seguir são **necessários** para usar 
 
 WebView2 Runtime do Microsoft Edge a versão mais recente é obrigatória para o console do cliente do Campaign.
 
-Baixe o Microsoft Edge WebView2 em [Site do desenvolvedor do Microsoft](http://www.adobe.com/go/acc-ms-webview2-runtime-download_br).
+Baixe o Microsoft Edge WebView2 no [Site do desenvolvedor Microsoft](http://www.adobe.com/go/acc-ms-webview2-runtime-download_br).
 
 
 ## SDK móvel{#MobileSDK}
@@ -396,7 +396,7 @@ Você pode usar o Campaign para [enviar notificações por push](../../delivery/
 
 ## Navegadores{#Browsers}
 
-Os seguintes navegadores, em sua versão mais recente, são compatíveis com o Campaign para [Acesso à Web](../../campaign/using/accessing-marketing-campaigns.md#using-the-web-interface-).
+Os seguintes navegadores, em suas versões mais recentes, são compatíveis com o Campaign para [Acesso da web](../../campaign/using/accessing-marketing-campaigns.md#using-the-web-interface-).
 
 * Google Chrome
 * Microsoft Edge
