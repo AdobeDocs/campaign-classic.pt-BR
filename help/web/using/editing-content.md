@@ -5,7 +5,7 @@ description: Editar conteúdo
 feature: Web Apps, Web Forms, Landing Pages
 exl-id: 968430d6-b1dd-47f8-8b31-39aaa18bc05c
 source-git-commit: 7f5770c5181b4f2e966d8ecfe6b1d4b9c764e5fa
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1214'
 ht-degree: 100%
 
@@ -221,13 +221,13 @@ Selecione um arquivo de imagem salvo localmente.
 
 ![](assets/dce_popup_imgupload.png)
 
-O ícone **Delete** exclui a tag  contendo a imagem.
+O ícone **Excluir** exclui a tag contendo a imagem.
 
-O ícone **Duplicate** duplica a tag e seu conteúdo.
+O ícone **Duplicar** duplica a tag e seu conteúdo.
 
 >[!CAUTION]
 >
->Quando você duplica uma imagem, os identificadores relacionados à nova imagem são excluídos.
+>Ao duplicar uma imagem, os identificadores relacionados à nova imagem são excluídos.
 
 ### Edição de propriedades da imagem {#editing-image-properties}
 
@@ -248,7 +248,7 @@ A opção **Campo de personalização** do ícone de inserção permite adiciona
 
 Por padrão, os campos oferecidos são da tabela **[!UICONTROL Recipient]**. Quando necessário, edite as propriedades da aplicação web para selecionar outra tabela.
 
-O nome do campo aparece no editor, destacado em amarelo. Ele será substituído pelo perfil do recipient de destino quando a personalização for gerada (por exemplo, ao pré-visualizar uma landing page).
+O nome do campo aparece no editor, destacado em amarelo. Ele será substituído pelo perfil do recipient de destino quando a personalização for gerada (por exemplo, ao pré-visualizar uma página de destino).
 
 Um exemplo é apresentado na seção [Inserting a personalization field](creating-a-landing-page.md#inserting-a-personalization-field).
 
