@@ -7,9 +7,9 @@ role: User
 level: Beginner
 exl-id: 7a05fdff-8f9d-4e8d-812e-0f1509db5499
 source-git-commit: f797aafac99d6b9c2bdb409a1d0883c889fd3b0e
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '935'
-ht-degree: 88%
+ht-degree: 100%
 
 ---
 
@@ -51,9 +51,9 @@ Para manter sua implementação atualizada, leia os [recursos obsoletos e removi
 
 ## Processo para atualização{#process-upgrade}
 
-Como cliente hospedado, Managed Services ou híbrido, entre em contato com o Atendimento ao cliente da Adobe para atualizar seu ambiente.
+Como cliente hospedado do Managed Services ou híbrido, entre em contato com o atendimento ao cliente da Adobe para atualizar seu ambiente.
 
-Como cliente local, você pode fazer a atualização. Para fazer isso, [baixe o build estável mais recente (GA)](https://experience.adobe.com/#/downloads/content/software-distribution/br/campaign.html) e atualize todos os seus ambientes.
+Como cliente no local, você pode fazer a atualização. Para fazer isso, [baixe o build estável mais recente (GA)](https://experience.adobe.com/#/downloads/content/software-distribution/br/campaign.html) e atualize todos os seus ambientes.
 
 Saiba mais sobre o [processo de atualização](../../production/using/build-upgrade.md) e consulte as [perguntas frequentes sobre atualização de build](../../platform/using/faq-build-upgrade.md).
 
@@ -67,7 +67,7 @@ Como usuário convidado, você se beneficiará automaticamente da atualização 
 
 ### Por que minha empresa precisa dessa atualização?
 
-Como cliente hospedado, se sua conta precisar atualizar uma ou mais tecnologias relacionadas ao Campaign Classic e atualizar sua infraestrutura para a build atual (por exemplo, da v7.2.1 para v7.3.3) e/ou versão (por exemplo, da v7 para v8), o Adobe notificará você diretamente.
+Como cliente hospedado, a Adobe notificará você diretamente caso identifique que sua conta precise atualizar uma ou mais tecnologias relacionadas ao Campaign Classic e atualizar sua infraestrutura para a build atual (por exemplo, da v7.2.1 para a v7.3.3) e/ou versão (da v7 para a v8).
 
 Como um cliente no local ou híbrido executando em uma build mais antiga, a Adobe incentiva você a migrar para a build estável (GA) mais recente.
 
@@ -77,7 +77,7 @@ Dessa forma, sua conta ficará protegida contra vulnerabilidades, além de conta
 
 A equipe da Adobe está aqui para conduzir e orientar sua organização nessa jornada.
 
-Uma equipe dedicada de representantes do Atendimento ao cliente, gerentes de produtos, engenheiros e especialistas em TechOps e consultores de produtos está aqui para ajudar e garantir que a experiência seja tranquila.
+Uma equipe dedicada de representantes de atendimento ao cliente, gerentes de produto, engenheiros e especialistas em TechOps e consultores de produto está aqui para ajudar e garantir que a experiência seja tranquila.
 
 ### Benefícios
 
