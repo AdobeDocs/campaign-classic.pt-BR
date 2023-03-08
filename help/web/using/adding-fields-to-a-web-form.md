@@ -33,7 +33,7 @@ Os seguintes tipos de campo estão disponíveis:
 * Números e datas. Consulte [Adição de datas e números](#adding-dates-and-numbers).
 * Subscrição/cancelamento de subscrição de um serviço de informação. Consulte [Caixas de seleção de subscrição](#subscription-checkboxes).
 * Validação de captcha. Consulte [Inserir um captcha](#inserting-a-captcha).
-* Botão Download. [Carregamento de um arquivo](#uploading-a-file).
+* Botão Download. [Upload de arquivo](#uploading-a-file).
 * Constante oculta. Consulte [Inserir uma constante oculta](#inserting-a-hidden-constant).
 
 Especifique o modo de armazenamento de resposta: atualize um campo no banco de dados (armazena somente o último valor salvo) ou armazene em uma variável (a resposta não é armazenada). Para obter mais informações, consulte [Campos de armazenamento de resposta](web-forms-answers.md#response-storage-fields).
@@ -357,7 +357,7 @@ Você pode criar uma mensagem de erro para exibir. Para fazer isso, use o link *
 >
 >Os Captchas têm sempre 8 caracteres. Você não pode modificar esse valor.
 
-## Carregamento de um arquivo {#uploading-a-file}
+## Fazer upload de arquivo {#uploading-a-file}
 
 Você pode adicionar um campo de carregamento a uma página. Essa funcionalidade pode ser útil para o compartilhamento de arquivos da intranet, por exemplo.
 

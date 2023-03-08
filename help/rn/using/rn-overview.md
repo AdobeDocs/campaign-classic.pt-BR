@@ -7,7 +7,7 @@ role: User
 level: Beginner
 exl-id: 7a05fdff-8f9d-4e8d-812e-0f1509db5499
 source-git-commit: f797aafac99d6b9c2bdb409a1d0883c889fd3b0e
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '935'
 ht-degree: 100%
 
@@ -140,7 +140,7 @@ Uma equipe dedicada de representantes de atendimento ao cliente, gerentes de pro
 
 * [Encontre sua versão do Campaign](../../platform/using/launching-adobe-campaign.md#getting-your-campaign-version).
 * [Ajuda e suporte](../../support.md)
-* [Versões do Painel de controle do Campaign](https://experienceleague.adobe.com/docs/control-panel/using/release-notes.html?lang=pt-BR)
+* [Versões do Painel de controle](https://experienceleague.adobe.com/docs/control-panel/using/release-notes.html?lang=pt-BR)
 * [Atualizações mais recentes da documentação](../../rn/using/documentation-updates.md)
 * [Recursos descontinuados e removidos](../../rn/using/deprecated-features.md)
 * [Perguntas frequentes sobre atualização de build](../../platform/using/faq-build-upgrade.md)

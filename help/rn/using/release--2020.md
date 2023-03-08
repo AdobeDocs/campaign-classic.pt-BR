@@ -38,7 +38,7 @@ _27 de outubro de 2020_
 >
 > * Esta versão é fornecida com um novo protocolo de conexão: se você estiver se conectando ao Campaign pelo Serviço de identidade da Adobe (IMS), a atualização será obrigatória para o servidor do Campaign e o console do cliente poderem se conectar ao Campaign após **30 de junho de 2021**. [Saiba mais](../../technotes/using/ims-updates.md)
 > * Esta versão vem com uma [correção de segurança](https://helpx.adobe.com/br/security/products/campaign/apsb21-04.html): a atualização é obrigatória para reforçar a segurança do ambiente.
-> * Se você estiver usando a integração do Experience Cloud Triggers por meio da autenticação oAuth, será necessário migrar para o Adobe I/O de acordo com as instruções [nesta página](../../integrations/using/configuring-adobe-io.md). O modo de autenticação oAuth herdado do Campaign [foi removido](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-discussions/adobe-analytics-legacy-api-end-of-life-notice/td-p/385411) em **setembro de 2021**. Os ambientes hospedados se beneficiarão de uma extensão até **23 de fevereiro de 2022**. Como cliente local ou híbrido, entre em contato com o Atendimento ao cliente do Adobe para estender o suporte até fevereiro de 2022. Você deve fornecer [o AppID do aplicativo OAuth](../../integrations/using/configuring-pipeline.md?lang=en#step-optional) para a Adobe.
+> * Se você estiver usando a integração do Experience Cloud Triggers por meio da autenticação oAuth, será necessário migrar para o Adobe I/O de acordo com as instruções [nesta página](../../integrations/using/configuring-adobe-io.md). O modo de autenticação oAuth herdado do Campaign [foi removido](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-discussions/adobe-analytics-legacy-api-end-of-life-notice/td-p/385411) em **setembro de 2021**. Os ambientes hospedados se beneficiarão de uma extensão até **23 de fevereiro de 2022**. Como cliente no local ou híbrido, entre em contato com o Atendimento ao cliente da Adobe para estender o suporte até fevereiro de 2022. Você deve fornecer [o AppID do aplicativo OAuth](../../integrations/using/configuring-pipeline.md?lang=en#step-optional) para a Adobe.
 
 
 **Novidades**
@@ -143,7 +143,7 @@ Saiba mais sobre cookies [nesta seção](../../platform/using/privacy-and-recomm
 * A mensagem de erro exibida ao inserir uma imagem do Adobe Target foi aprimorada e o nome do locatário estava vazio na conta externa.
 * Nas propriedades do delivery, a opção **[!UICONTROL Archive emails]** foi renomeada **[!UICONTROL Email BCC]**.
 * Para melhorar a robustez, selectAll queries com nós inválidos agora são rejeitados. Se precisar desativar a verificação e voltar ao comportamento anterior, você pode definir XtkSecurity_Disable_QueryCheck como 0.
-* O suporte ao intervalo de ID negativo foi adicionado para a sequência nmsBroadlogId . Esta compilação ajusta o min_value da sequência nmsBroadlogId para incluir o intervalo negativo. Caso tenha um caso de uso estrito que não permita IDs negativas, reverta o min_value da sequência para 1.
+* O suporte ao intervalo de ID negativo foi adicionado para a sequência nmsBroadlogId. Esta compilação ajusta o min_value da sequência nmsBroadlogId para incluir o intervalo negativo. Caso você tenha um caso de uso estrito que não permita IDs negativas, reverta o min_value da sequência para 1.
 
 **Evoluções técnicas**
 
@@ -293,16 +293,16 @@ _31 de março de 2021_
 **Aprimoramentos**
 
 * Foi feito um aprimoramento para evitar falhas em chamadas soap inválidas. Isso pode fazer com que a instância pare de funcionar ao tentar executar consultas complexas específicas. (NEO-28796, NEO-30553)
-* Correção de uma regressão que impedia o envio de deliveries de SMS com TLS devido à verificação do nome de host. (NEO-29581)
+* Correção de uma regressão que impedia o envio de deliveries de SMS com TLS devido à verificação do nome do host. (NEO-29581)
 * Correção de um problema que impedia que links de rastreamento assinados funcionassem em alguns clientes de email. (NEO-28414, NEO-29615)
-* Correção de uma sequência de ID de rastreamento ao usar tags de rastreamento do webApp que poderia causar conflitos com IDs duplicadas. (NEO-27931)
-* Correção de um problema que fazia com que workflows em execução fossem interrompidos pela reinicialização diária do wfserver. (NEO-30047)
+* Correção de uma sequência de ID de rastreamento ao usar tags de rastreamento webApp que poderiam causar conflitos com IDs duplicadas. (NEO-27931)
+* Correção de um problema que fazia com que os workflows em execução fossem interrompidos pela reinicialização diária do wfserver. (NEO-30047)
 * Correção de um problema de segurança usando chamadas de API feitas por usuários não administradores ao tentar sincronizar modelos do Adobe Experience Manager. (NEO-32389, NEO-23487)
-* Correção de um problema que resultava em falha do console ao fechar uma caixa de diálogo de delivery em um delivery criado com de um template. (NEO-31547)
-* Correção de um problema que ocorria ao criar e salvar um delivery no **Direcionamento e fluxo de trabalho** de uma campanha: a pré-visualização falharia com o seguinte erro. (NEO29440)
-* Correção de um problema em que o Tomcat 8.5 enviava respostas inválidas que causavam erros nos logs de mensagens transacionais. (NEO-30858)
-* Correção de um problema de regressão que causava corrupção da memória no gerenciamento de encadeamento externo e afetava o desempenho.
-* Correção de um problema que poderia causar falha no workflow Faturamento ao usar um target mapping personalizado. A chave primária do esquema personalizado é armazenada na coluna &quot;sourceId&quot; que permitia apenas valores inteiros. Agora permite números inteiros e valores de sequências. (NEO-25914, NEO-28146)
+* Correção de um problema que resultava em falha do console ao fechar uma caixa de diálogo de entrega em uma entrega criada com o a partir de um modelo. (NEO-31547)
+* Correção de um problema que ocorria ao criar e salvar um delivery dentro do **Direcionamento e fluxo de trabalho** guia de uma campanha: a pré-visualização falharia com o seguinte erro. (NEO29440)
+* Correção de um problema com o Tomcat 8.5 enviando respostas inválidas que causavam erros nos logs de mensagens transacionais. (NEO-30858)
+* Correção de um problema de regressão que causava corrupção de memória no gerenciamento de thread externo e afetava o desempenho.
+* Correção de um problema que causava falha do fluxo de trabalho de Faturamento ao usar um target mapping personalizado. A chave primária do esquema personalizado é armazenada na coluna &quot;sourceId&quot; que permite apenas valores inteiros. Agora, ela permite valores inteiros e de sequência. (NEO-25914, NEO-28146)
 * Correção de uma regressão que impedia o uso de alguns componentes do console, como o seletor de datas e o gerenciamento de imagens nos deliveries. (NEO-31453)
 
 ### ![](assets/do-not-localize/red_2.png) Versão 20.2.4 - Build 9187 {#release-20-2-4-build-9187}
@@ -324,7 +324,7 @@ _22 de dezembro de 2020_
 >
 > * Esta versão é fornecida com um novo protocolo de conexão: se você estiver se conectando ao Campaign pelo Serviço de identidade da Adobe (IMS), a atualização será obrigatória para o servidor do Campaign e o console do cliente poderem se conectar ao Campaign após **30 de junho de 2021**.  [Saiba mais](../../technotes/using/ims-updates.md)
 > * Esta versão vem com uma [correção de segurança](https://helpx.adobe.com/br/security/products/campaign/apsb21-04.html): a atualização é obrigatória para reforçar a segurança do ambiente.
-> * Se você estiver usando a integração do Experience Cloud Triggers por meio da autenticação oAuth, será necessário migrar para o Adobe I/O de acordo com as instruções [nesta página](../../integrations/using/configuring-adobe-io.md). O modo de autenticação oAuth herdado do Campaign [foi removido](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-discussions/adobe-analytics-legacy-api-end-of-life-notice/td-p/385411) em **setembro de 2021**. Os ambientes hospedados se beneficiarão de uma extensão até **23 de fevereiro de 2022**. Como cliente local ou híbrido, entre em contato com o Atendimento ao cliente do Adobe para estender o suporte até fevereiro de 2022. Você deve fornecer [o AppID do aplicativo OAuth](../../integrations/using/configuring-pipeline.md?lang=en#step-optional) para a Adobe.
+> * Se você estiver usando a integração do Experience Cloud Triggers por meio da autenticação oAuth, será necessário migrar para o Adobe I/O de acordo com as instruções [nesta página](../../integrations/using/configuring-adobe-io.md). O modo de autenticação oAuth herdado do Campaign [foi removido](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-discussions/adobe-analytics-legacy-api-end-of-life-notice/td-p/385411) em **setembro de 2021**. Os ambientes hospedados se beneficiarão de uma extensão até **23 de fevereiro de 2022**. Como cliente no local ou híbrido, entre em contato com o Atendimento ao cliente da Adobe para estender o suporte até fevereiro de 2022. Você deve fornecer [o AppID do aplicativo OAuth](../../integrations/using/configuring-pipeline.md?lang=en#step-optional) para a Adobe.
 
 
 **Aprimoramentos**
@@ -360,7 +360,7 @@ _22 de dezembro de 2020_
 
 
 
-![](assets/do-not-localize/cp-icon.png) **Nova versão de outubro do Painel de controle do Campaign** com configuração de domínio usando CNAMEs e novos recursos de monitoramento de banco de dados. [Saiba mais](https://experienceleague.adobe.com/docs/control-panel/using/release-notes.html?lang=pt-BR).
+![](assets/do-not-localize/cp-icon.png) **Nova versão de outubro do Painel de controle** com configuração de domínio usando CNAMEs e novos recursos de monitoramento de banco de dados. [Saiba mais](https://experienceleague.adobe.com/docs/control-panel/using/release-notes.html?lang=pt-BR).
 
 ### ![](assets/do-not-localize/red_2.png) Versão 20.2.3 - Build 9182 {#release-20-2-3-build-9182}
 
@@ -374,7 +374,7 @@ _11 de setembro de 2020_
 
 
 
-* Correção de uma regressão no gerenciamento de template de HTML que resultava na visibilidade de URLs de rastreamento devido a uma interpretação incorreta de guias. (NEO-25909)
+* Correção de uma regressão no gerenciamento de modelo de HTML que resultava na visibilidade de URLs de rastreamento devido a uma interpretação incorreta das guias. (NEO-25909)
 
 
 
@@ -414,7 +414,7 @@ _22 de julho de 2020_
 * Após a mudança para o novo mecanismo de ID de sequência, todos os aplicativos da web que estão atualizando a tabela do recipient são republicados durante a pós-atualização.
 * Correção de uma possível vulnerabilidade XSS no conteúdo do delivery. (NEO-17987, NEO-26073)
 
-![](assets/do-not-localize/cp-icon.png) **Nova versão de junho do Painel de controle do Campaign** com monitoramento de perfis ativos, auditoria de entregabilidade de subdomínio e gerenciamento de chaves GPG. [Saiba mais](https://experienceleague.adobe.com/docs/control-panel/using/release-notes.html?lang=pt-BR).
+![](assets/do-not-localize/cp-icon.png) **Nova versão de junho do Painel de controle** com monitoramento de perfis ativos, auditoria de entregabilidade de subdomínio e gerenciamento de chaves GPG. [Saiba mais](https://experienceleague.adobe.com/docs/control-panel/using/release-notes.html?lang=pt-BR).
 
 ### ![](assets/do-not-localize/red_2.png) Versão 20.2.1 - Build 9178 {#release-20-2-1-build-9178}
 

@@ -7,7 +7,7 @@ role: User
 level: Beginner
 exl-id: d65869ca-a785-4327-8e8d-791c28e4696c
 source-git-commit: 2654157b02b549d4184ed6a5a93acad47e452713
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '2772'
 ht-degree: 100%
 
@@ -129,7 +129,7 @@ Consulte a [Matriz de compatibilidade do Campaign](../../rn/using/compatibility-
 * Correção de um erro que ocorria ao instalar o pacote do gerenciador de conteúdo em uma instância existente. (NEO-32349)
 * Correção de um problema no menu **Campanhas** em que a mensagem “operação em andamento” era exibida continuamente. (NEO-44904)
 * Com o Adobe Analytics ativado, foi corrigido um problema que removia a BID (Broadlog ID) e a CID (ID da campanha) do URL ao enviar um email com um URL sem salvar a entrega. (NEO-38678)
-* Correção de um problema que ocorria ao carregar uma imagem para a pasta Recursos públicos em uma instância com configuração específica do Centro de mensagens. A seguinte mensagem de erro era exibida: “Não foi possível carregar as imagens para os servidores de rastreamento”. (NEO-38546, NEO-45572)
+* Correção de um problema que ocorria ao fazer upload de uma imagem para a pasta Recursos públicos em uma instância com configuração específica do Centro de mensagens. A seguinte mensagem de erro era exibida: “Não foi possível carregar as imagens para os servidores de rastreamento”. (NEO-38546, NEO-45572)
 * Correção de um problema que fazia com que o sistema falhasse ao regenerar uma configuração, no caso de arquivos mal configurados. (NEO-38752)
 * Correção de um problema que poderia resultar na atualização incorreta dos indicadores de entrega. (NEO-44827)
 * Correção de um problema que poderia levar a um erro pós-atualização ao usar consultas complexas. (NEO-43648)
