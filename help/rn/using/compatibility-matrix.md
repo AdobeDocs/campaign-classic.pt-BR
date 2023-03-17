@@ -6,10 +6,10 @@ feature: Overview
 role: User
 level: Beginner
 exl-id: b8c1f287-06f4-4c34-8cca-b0c7676abbc2
-source-git-commit: c7c6c6a2fe6beb17bfb203e8895661c2f3084cc2
+source-git-commit: 2ba04c785f6587741fdf421116781306e74f0168
 workflow-type: tm+mt
-source-wordcount: '781'
-ht-degree: 99%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -336,7 +336,7 @@ Os sistemas operacionais e navegadores a seguir são **necessários** para usar 
 <table>
 <tbody>
 <td><strong>Sistema</strong></td>
-<td><strong>Versão do sistema operacional</strong></td>
+<td><strong>Versão do SO</strong></td>
 <td><strong>Versão do Campaign</strong></td>
 <tr>
 <td>Microsoft Windows</td>
@@ -374,6 +374,9 @@ Baixe o Microsoft Edge WebView2 no [Site do desenvolvedor Microsoft](http://www.
 ## SDK móvel{#MobileSDK}
 
 Você pode usar o Campaign para [enviar notificações por push](../../delivery/using/about-mobile-app-channel.md) nos sistemas operacionais listados abaixo, usando o [SDK móvel](../../delivery/using/integrating-campaign-sdk-into-the-mobile-application.md) associado.
+
+Você também pode usar o Adobe Experience Platform Mobile SDK configurando a extensão Adobe Campaign na interface do usuário da coleta de dados.
+
 
 <table>
 <tbody>
