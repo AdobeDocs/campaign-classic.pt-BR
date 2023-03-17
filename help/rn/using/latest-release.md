@@ -9,7 +9,7 @@ exl-id: d65869ca-a785-4327-8e8d-791c28e4696c
 source-git-commit: 02ab5f4520179fcce8eedbe3dcc7b08cb9cfe0d2
 workflow-type: tm+mt
 source-wordcount: '2989'
-ht-degree: 93%
+ht-degree: 94%
 
 ---
 
@@ -23,33 +23,33 @@ Esta página lista novos recursos, melhorias e correções que vêm com a **vers
 
 >[!CAUTION]
 >
-> Esta versão está disponível somente para usuários do Managed Cloud Services por enquanto e estará em breve disponível para implantações locais e híbridas.
+> Esta versão está disponível somente para usuários do Managed Cloud Services por enquanto e estará disponível em breve para implantações locais e híbridas.
 >
 >A atualização do Console do Cliente é obrigatória. Saiba como atualizar seu console do cliente nesta [página](../../installation/using/installing-the-client-console.md).
 
 >[!NOTE]
 >
->Esta versão está disponível somente para usuários do Managed Cloud Services.
+>Esta versão é GA somente para usuários do Managed Cloud Services.
 
 _9 de março de 2023_
 
 **Aprimoramento de segurança**
 
-* Para otimizar a segurança, o Tomcat foi atualizado da versão 8.5.81 para 8.5.85. (NEO-56936)
+* Para otimizar a segurança, o Tomcat foi atualizado da versão 8.5.81 para a 8.5.85. (NEO-56936)
 
 **Aprimoramentos**
 
-* O fluxo de trabalho de faturamento foi aprimorado para otimizar o desempenho. (NEO-47658)
+* O fluxo de trabalho Faturamento foi aprimorado para otimizar o desempenho. (NEO-47658)
 * O workflow de rastreamento foi aprimorado para otimizar o desempenho em caso de alto tamanho de delivery. (NEO-45064)
-* A gestão de rastreamento foi aprimorada para corrigir possíveis problemas com parâmetros dinâmicos em URLs. O gerenciamento de rastreamento v3 agora lida com URLs do tipo ajax (com parâmetros após um &#39;#&#39;) e impede que ferramentas de terceiros modifiquem URLs de rastreamento. Para aplicar essa alteração, entre em contato com o Adobe. (NEO-46535)
+* O gerenciamento de rastreamento foi aprimorado para corrigir possíveis problemas com parâmetros dinâmicos em URLs. O gerenciamento de rastreamento v3 agora lida com URLs do tipo ajax (com parâmetros após um &#39;#&#39;) e impede que ferramentas de terceiros modifiquem URLs de rastreamento. Para aplicar essa alteração, você precisa entrar em contato com o Adobe. (NEO-46535)
 
 <!--To apply this change, the marketing, tracking and mid servers need to be updated to 7.3.3. To enable the new tracking management mode, set the `emailLinksVersion` parameter to '3' in the configuration file of the marketing server. (NEO-46535)-->
 
 **Correções**
 
-* Correção de um problema que poderia impedir que notificações por push de prova do iOS fossem enviadas da instância de controle (contexto de Mensagens transacionais). (NEO-54713)
-* Correção de um problema que impedia a rolagem na variável **Editar** do Editor de conteúdo digital (DCE). (NEO-54474)
-* Correção de um problema que ocorria quando duas atividades de enriquecimento usavam o mesmo identificador de nome na vinculação, o que resultava na segunda atividade de enriquecimento usar os links da primeira. (NEO-48851)
+* Correção de um problema que impedia o envio de notificações por push de prova do iOS da instância de controle (contexto de Mensagens transacionais). (NEO-54713)
+* Correção de um problema que impedia a rolagem na guia **Editar** do editor de conteúdo digital (DCE). (NEO-54474)
+* Correção de um problema em que duas atividades de enriquecimento usavam o mesmo identificador de nome em sua vinculação, o que levava a segunda atividade de enriquecimento a usar os links da primeira. (NEO-48851)
 
 ## ![](assets/do-not-localize/green.png) Versão 7.3.2 - Build 9356 {#release-7-3-2}
 
@@ -61,7 +61,7 @@ _21 de novembro de 2022_
 
 >[!NOTE]
 >
->Esta versão está disponível no mercado somente para implantações locais e híbridas.
+>Esta versão é GA somente para implantações locais e híbridas.
 
 **Atualizações de compatibilidade**
 
@@ -259,7 +259,7 @@ O Adobe Campaign agora é compatível com o Windows Server 2019. Consulte a [Mat
 * Correção de um problema que poderia exibir mensagens de erro de script ao tentar criar e configurar relatórios (NEO-38393).
 * Correção de um problema que causava falha no fluxo de trabalho de rastreamento do Oracle devido a grandes volumes de indicadores de entrega sendo atualizados simultaneamente (NEO-39653).
 * Correção de um problema que impedia o envio de uma entrega devido a um erro ao executar uma tipologia de controle (NEO-39833).
-* Correção de um problema nas páginas de destino que impedia que caracteres especiais fossem exibidos corretamente nas páginas HTML das respostas de pesquisas online (NEO-39438).
+* Correção de um problema nas landing pages que impedia que caracteres especiais fossem exibidos corretamente nas páginas HTML das respostas de pesquisas online (NEO-39438).
 * Correção de um problema que impedia o funcionamento do console do Campaign Classic ao clicar com o botão direito do mouse em qualquer uma das pastas da guia Explorer (NEO-38884).
 * Correção de um erro ao usar um modelo de entrega criado anteriormente e vinculado a uma conta do Web Analytics em uma nova entrega, no qual a configuração do Web Analytics ficava ausente. (NEO-28666)
 * Correção de um problema que podia impedir a pré-visualização de entregas de dispositivos móveis que foram anexados a um fluxo de trabalho.

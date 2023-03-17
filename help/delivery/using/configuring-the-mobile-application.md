@@ -4,9 +4,9 @@ title: Configurar o aplicativo móvel para iOS no Adobe Campaign
 description: Saiba como configurar seu aplicativo móvel para iOS
 feature: Push
 exl-id: 67eee1c5-a918-46b9-875d-7c3c71c00635
-source-git-commit: 9839dbacda475c2a586811e3c4f686b1b1baab05
+source-git-commit: fd19a2f11773e9e4c841f685a3491a763493e572
 workflow-type: tm+mt
-source-wordcount: '652'
+source-wordcount: '651'
 ht-degree: 100%
 
 ---
@@ -50,7 +50,7 @@ O conector iOS está configurado. Você pode começar a criar seu serviço.
 
 >[!CAUTION]
 >
->O aplicativo deve ter sido configurado para ações Push ANTES de qualquer integração ao Adobe Campaign SDK.
+>O aplicativo deve ter sido configurado para ações Push ANTES de qualquer integração ao Adobe SDK.
 >
 >Se esse não for o caso, consulte [esta página](https://developer.apple.com/documentation/usernotifications).
 
