@@ -6,10 +6,10 @@ feature: Overview
 role: User
 level: Beginner
 exl-id: d65869ca-a785-4327-8e8d-791c28e4696c
-source-git-commit: 02ab5f4520179fcce8eedbe3dcc7b08cb9cfe0d2
+source-git-commit: 143fe21447f91120e63df4409597472849bb6d47
 workflow-type: tm+mt
-source-wordcount: '2989'
-ht-degree: 94%
+source-wordcount: '2947'
+ht-degree: 95%
 
 ---
 
@@ -23,15 +23,9 @@ Esta página lista novos recursos, melhorias e correções que vêm com a **vers
 
 >[!CAUTION]
 >
-> Esta versão está disponível somente para usuários do Managed Cloud Services por enquanto e estará disponível em breve para implantações locais e híbridas.
->
 >A atualização do Console do Cliente é obrigatória. Saiba como atualizar seu console do cliente nesta [página](../../installation/using/installing-the-client-console.md).
 
->[!NOTE]
->
->Esta versão é GA somente para usuários do Managed Cloud Services.
-
-_9 de março de 2023_
+_20 de março de 2023_
 
 **Aprimoramento de segurança**
 
@@ -51,17 +45,13 @@ _9 de março de 2023_
 * Correção de um problema que impedia a rolagem na guia **Editar** do editor de conteúdo digital (DCE). (NEO-54474)
 * Correção de um problema em que duas atividades de enriquecimento usavam o mesmo identificador de nome em sua vinculação, o que levava a segunda atividade de enriquecimento a usar os links da primeira. (NEO-48851)
 
-## ![](assets/do-not-localize/green.png) Versão 7.3.2 - Build 9356 {#release-7-3-2}
+## ![](assets/do-not-localize/orange_2.png) Versão 7.3.2 - Build 9356 {#release-7-3-2}
 
 _21 de novembro de 2022_
 
 >[!CAUTION]
 >
 >A atualização do Console do Cliente é obrigatória. Saiba como atualizar seu console do cliente nesta [página](../../installation/using/installing-the-client-console.md).
-
->[!NOTE]
->
->Esta versão é GA somente para implantações locais e híbridas.
 
 **Atualizações de compatibilidade**
 
