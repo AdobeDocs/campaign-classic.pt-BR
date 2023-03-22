@@ -9,7 +9,7 @@ exl-id: d65869ca-a785-4327-8e8d-791c28e4696c
 source-git-commit: 143fe21447f91120e63df4409597472849bb6d47
 workflow-type: tm+mt
 source-wordcount: '2947'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
@@ -29,21 +29,21 @@ _20 de março de 2023_
 
 **Aprimoramento de segurança**
 
-* Para otimizar a segurança, o Tomcat foi atualizado da versão 8.5.81 para a 8.5.85. (NEO-56936)
+* Para melhorar a segurança, o Tomcat foi atualizado da versão 8.5.81 para a 8.5.85. (NEO-56936)
 
 **Aprimoramentos**
 
-* O fluxo de trabalho Faturamento foi aprimorado para otimizar o desempenho. (NEO-47658)
-* O workflow de rastreamento foi aprimorado para otimizar o desempenho em caso de alto tamanho de delivery. (NEO-45064)
-* O gerenciamento de rastreamento foi aprimorado para corrigir possíveis problemas com parâmetros dinâmicos em URLs. O gerenciamento de rastreamento v3 agora lida com URLs do tipo ajax (com parâmetros após um &#39;#&#39;) e impede que ferramentas de terceiros modifiquem URLs de rastreamento. Para aplicar essa alteração, você precisa entrar em contato com o Adobe. (NEO-46535)
+* O fluxo de trabalho de faturamento foi aprimorado para otimizar o desempenho. (NEO-47658)
+* O fluxo de trabalho de rastreamento foi aprimorado para otimizar o desempenho no caso de uma entrega grande. (NEO-45064)
+* O gerenciamento de rastreamento foi aprimorado para corrigir possíveis problemas com parâmetros dinâmicos em URLs. O gerenciamento de rastreamento v3 agora aceita URLs do tipo ajax (com parâmetros após um “#”) e impede que ferramentas de terceiros modifiquem URLs de rastreamento. Para aplicar essa alteração, você precisa entrar em contato com a Adobe. (NEO-46535)
 
 <!--To apply this change, the marketing, tracking and mid servers need to be updated to 7.3.3. To enable the new tracking management mode, set the `emailLinksVersion` parameter to '3' in the configuration file of the marketing server. (NEO-46535)-->
 
 **Correções**
 
-* Correção de um problema que impedia o envio de notificações por push de prova do iOS da instância de controle (contexto de Mensagens transacionais). (NEO-54713)
+* Correção de um problema que poderia impedir o envio de notificações por push de prova do iOS da instância de controle (contexto de Mensagens transacionais). (NEO-54713)
 * Correção de um problema que impedia a rolagem na guia **Editar** do editor de conteúdo digital (DCE). (NEO-54474)
-* Correção de um problema em que duas atividades de enriquecimento usavam o mesmo identificador de nome em sua vinculação, o que levava a segunda atividade de enriquecimento a usar os links da primeira. (NEO-48851)
+* Correção de um problema em que, se duas atividades de enriquecimento usassem o mesmo identificador de nome em sua vinculação, a segunda atividade usaria os links da primeira. (NEO-48851)
 
 ## ![](assets/do-not-localize/orange_2.png) Versão 7.3.2 - Build 9356 {#release-7-3-2}
 
