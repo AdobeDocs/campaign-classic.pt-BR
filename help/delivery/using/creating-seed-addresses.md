@@ -4,10 +4,10 @@ title: Criar seed addresses
 description: Saiba como criar e usar seed addresses
 feature: Seed Address
 exl-id: f7dc97f0-3423-4b6f-88e2-08180f9adf8a
-source-git-commit: 9839dbacda475c2a586811e3c4f686b1b1baab05
+source-git-commit: 0065a25250d73c71e7569768a38b5836cccab992
 workflow-type: tm+mt
 source-wordcount: '413'
-ht-degree: 100%
+ht-degree: 93%
 
 ---
 
@@ -32,11 +32,11 @@ Para criar seed addresses, siga as etapas abaixo:
    >
    >O rótulo do endereço é preenchido automaticamente com o sobrenome e o nome que você definiu.
    >
-   >Não é necessário inserir todos os campos de cada guia ao criar um seed address. Todos os elementos de personalização ausentes são inseridos aleatoriamente durante o delivery.
+   >Não é necessário inserir todos os campos de cada guia ao criar um seed address. Os elementos de personalização ausentes são inseridos aleatoriamente durante a análise de delivery.
 
    ![](assets/s_ncs_user_seedlist_new_address.png)
 
-1. Na guia **[!UICONTROL Seed fields]**, insira os valores que serão inseridos nos logs de delivery durante a fase de análise (na tabela **[!UICONTROL nms:broadLog]**).
+1. Na guia **[!UICONTROL Address fields]**, insira os valores que serão inseridos nos logs de delivery durante a fase de análise (na tabela **[!UICONTROL nms:broadLog]**).
 
 1. Na guia **[!UICONTROL Additional data]**, insira os dados de personalização usados para os deliveries criados nos workflows de gestão de dados, aos quais você deseja atribuir um valor específico.
 
