@@ -4,10 +4,10 @@ title: Nota técnica - Ativação do Microsoft Edge Chromium no ambiente Campaig
 description: Campanha - Chromium da borda
 hide: true
 hidefromtoc: true
-source-git-commit: d9f57d4e5b6f880907040344ece40546456a2321
+source-git-commit: 17ef8f92ab5dbecadf20140c3faff735d92c8223
 workflow-type: tm+mt
-source-wordcount: '228'
-ht-degree: 14%
+source-wordcount: '246'
+ht-degree: 13%
 
 ---
 
@@ -19,7 +19,7 @@ ht-degree: 14%
 
 ## O que mudou?
 
-Após o fim da vida útil do Microsoft Internet Explorer 11, o mecanismo de renderização de HTML para Adobe Services (página de logon) no console do cliente agora usa o Microsoft Edge Chromium, a partir do Campaign Classic v7.3.
+Após o fim da vida útil do Microsoft Internet Explorer 11, o mecanismo de renderização de HTML para painéis no console do cliente está usando o Edge Chromium, iniciando no Campaign Classic v7.3.
 
 Além da instalação do tempo de execução do Microsoft Edge Webview 2, que agora está [necessário para qualquer instalação do console do cliente](../../installation/using/installing-the-client-console.md#webview), o Microsoft Edge Chromium deve ser ativado na(s) instância(s).
 
@@ -29,7 +29,7 @@ Se seu ambiente tiver sido atualizado para o Campaign Classic v7.3 (ou posterior
 
 ## Como atualizar?
 
-* Como um **hospedado** cliente, o Adobe já ativou o Microsoft Edge Chromium em sua instância(s).
+* Como um **hospedado** cliente, o Adobe já ativou o Microsoft Edge Chromium em sua instância(s). Nenhuma ação adicional é necessária.
 
 * Como um **no local/híbrido** cliente, é necessário ativar o Microsoft Edge Chromium em sua instância.
 
@@ -39,19 +39,19 @@ Se seu ambiente tiver sido atualizado para o Campaign Classic v7.3 (ou posterior
 
    1. Edite o arquivo de configuração do servidor do Campaign (`serverConf.xml`)
    1. No `<web>` módulo, conjunto `webView2Mode = "1"`
-   1. Recarregar a configuração do servidor
+   1. Execute o seguinte comando para recarregar a configuração do servidor:
 
       ```
       nlserver config -reload
       ```
 
-   1. Reiniciar o servidor Web
+   1. Execute o seguinte comando para reiniciar o servidor da Web:
 
       ```
       nlserver restart web
       ```
 
-   1. Se o ambiente for executado no Apache, reinicie o Apache
+   1. Se o seu ambiente usar o Apache as a web server, execute o seguinte comando para reiniciar o Apache:
 
       ```
       /etc/init.d/apache2 restart
