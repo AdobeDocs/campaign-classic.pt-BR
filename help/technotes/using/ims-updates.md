@@ -3,7 +3,7 @@ product: campaign
 title: Nota técnica - Atualize seu ambiente para se conectar ao Adobe Campaign com o IMS
 description: Campaign - Atualizações IMS
 exl-id: ecb5a258-a150-46a3-8b83-2b2c06d873ee
-source-git-commit: 70240d5f62fd3d7b755389b5ad8c4b499c94657d
+source-git-commit: bdccc4ee7cbb8c765d488879f99677b2302d32e7
 workflow-type: tm+mt
 source-wordcount: '587'
 ht-degree: 11%

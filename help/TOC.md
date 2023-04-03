@@ -6,10 +6,10 @@ title: Manual do Campaign Classic v7
 user-guide-description: Com o Adobe Campaign, é possível usar dados avançados do cliente para criar, coordenar e fornecer campanhas dinâmicas que os clientes realmente desejam, por meio de email, dispositivos móveis, canais offline e muito mais.
 sub-product: adobe campaign classic
 type: Documentation
-source-git-commit: 985c0f170b8a56d7cdf76779ed9581832da301b1
+source-git-commit: bdccc4ee7cbb8c765d488879f99677b2302d32e7
 workflow-type: tm+mt
-source-wordcount: '2532'
-ht-degree: 100%
+source-wordcount: '2536'
+ht-degree: 99%
 
 ---
 
@@ -330,7 +330,7 @@ ht-degree: 100%
       + [Interface do editor de conteúdo](web/using/content-editor-interface.md)
       + [Editar conteúdo](web/using/editing-content.md)
       + [Práticas recomendadas de edição de conteúdo](web/using/content-editing-best-practices.md)
-      + [Criar uma página de destino](web/using/creating-a-landing-page.md)
+      + [Criar uma landing page](web/using/creating-a-landing-page.md)
       + [Caso de uso: criar uma entrega de email](web/using/use-case--creating-an-email-delivery.md)
    + Formulários web {#web-forms}
       + [Introdução aos formulários web](web/using/about-web-forms.md)
@@ -746,7 +746,7 @@ ht-degree: 100%
       + Elementos e atributos {#elements-attributes}
          + [Introdução](configuration/using/schema-introduction.md)
          + [Atributo](configuration/using/schema/attribute.md)
-         + [Cálculo de cadeia de caracteres](configuration/using/schema/compute-string.md)
+         + [Cálculo de string](configuration/using/schema/compute-string.md)
          + [Condição](configuration/using/schema/condition.md)
          + [Índice DB](configuration/using/schema/db-index.md)
          + [Elemento](configuration/using/schema/element.md)
@@ -823,6 +823,7 @@ ht-degree: 100%
    + [Recomendações para dimensionamento de hardware](technotes/using/hardware-sizing.md)
    + Atualizações e compatibilidade{#technote-migration}
       + [Notas técnicas](technotes/using/technote.md)
+      + [Ativar o Microsoft Edge Chromium](technotes/using/edge-chromium.md)
       + [Novo servidor de capacidade de entrega](technotes/using/deliverability-server.md)
       + [Atualização de segurança do Apache](technotes/using/acc-apache-upgrade.md)
       + [Atualizações de sistema de 2023](technotes/using/tech-stack-upgrade.md)
