@@ -5,9 +5,9 @@ description: Saiba como integrar o SDK do Campaign ao seu aplicativo móvel
 feature: Mobile SDK Integration, Push
 exl-id: a5f6b82d-5561-4e56-b2ed-7fd6fd8c2b55
 source-git-commit: 1ead0b1afc8c924cb4f8d36c608cd570e5fe7a44
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '995'
-ht-degree: 92%
+ht-degree: 100%
 
 ---
 
@@ -17,13 +17,13 @@ ht-degree: 92%
 
 >[!CAUTION]
 >
->O Adobe recomenda usar o Adobe Experience Platform Mobile SDK ao configurar a extensão do Adobe Campaign na interface do usuário da coleta de dados. O SDK do Adobe Experience Platform Mobile ajuda a potencializar as soluções e os serviços do Experience Cloud em seus aplicativos móveis. A configuração dos SDKs é gerenciada por meio da interface do usuário da coleta de dados para obter configuração flexível e integrações extensíveis e baseadas em regras. [Saiba mais na documentação do Adobe Developer](https://developer.adobe.com/client-sdks/documentation/adobe-campaign-classic){target="_blank"}.
+>A Adobe recomenda fortemente o uso do SDK móvel da Adobe Experience Platform através da configuração da extensão do Adobe Campaign na interface da coleção de dados. O SDK móvel da Adobe Experience Platform ajuda a potencializar as soluções e os serviços da Adobe Experience Cloud em seus aplicativos móveis. A configuração dos SDKs é realizada por meio da interface da coleção de dados para oferecer uma configuração flexível e integrações extensíveis baseadas em regras. [Saiba mais na documentação do Adobe Developer](https://developer.adobe.com/client-sdks/documentation/adobe-campaign-classic){target="_blank"}
 
 Para obter o SDK do Campaign (antes conhecido como Neolane SDK), entre em contato com o [Atendimento ao cliente da Adobe](https://helpx.adobe.com/br/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html){target="_blank"}.
 
-Para saber mais sobre as diferentes versões do Android e do iOS compatíveis, consulte a [Matriz de compatibilidade](../../rn/using/compatibility-matrix.md#MobileSDK).
+Para saber mais sobre as diferentes versões compatíveis com Android e iOS, consulte a [Matriz de compatibilidade](../../rn/using/compatibility-matrix.md#MobileSDK).
 
-Você pode encontrar abaixo as etapas de integração para o SDK do Campaign.
+Você encontrará abaixo as etapas para a integração do SDK do Campaign.
 
 +++**Carregamento do SDK do Campaign**
 
@@ -341,7 +341,7 @@ Para rastrear a notificação silenciosa, siga o exemplo abaixo:
 
 +++
 
-+++**delegado RegisterDeviceStatus**
++++**RegisterDeviceStatus delegado**
 
 >[!NOTE]
 >
@@ -541,7 +541,7 @@ Para implementar o delegado **registerDeviceStatus**, siga estas etapas:
 
 +++**Variáveis**
 
-As variáveis permitem definir o comportamento do aplicativo móvel após receber uma notificação. Essas variáveis devem ser definidas no código do aplicativo para dispositivos móveis e no console do Adobe Campaign, na guia **[!UICONTROL Variables]** no serviço de aplicativo para dispositivos móveis dedicado (consulte [Configuração de um aplicativo para dispositivos móveis no Adobe Campaign](configuring-the-mobile-application.md)). Veja um exemplo de um código que permite que um aplicativo móvel colete quaisquer variáveis adicionadas em uma notificação. No nosso exemplo, estamos usando a variável &quot;VAR&quot;.
+As variáveis permitem definir o comportamento do aplicativo móvel após receber uma notificação. Essas variáveis devem ser definidas no código do aplicativo para dispositivos móveis e no console do Adobe Campaign, na guia **[!UICONTROL Variables]** no serviço de aplicativos para dispositivos móveis dedicado (consulte [Configuração de um aplicativo para dispositivos móveis no Adobe Campaign](configuring-the-mobile-application.md)). Veja um exemplo de um código que permite que um aplicativo móvel colete quaisquer variáveis adicionadas em uma notificação. No nosso exemplo, estamos usando a variável &quot;VAR&quot;.
 
 * **No Android**:
 
@@ -589,7 +589,7 @@ As variáveis permitem definir o comportamento do aplicativo móvel após recebe
 
 +++
 
-+++**Extensão de Serviço de Notificação**
++++**Extensão do serviço de notificação**
 
 **Para iOS**
 
