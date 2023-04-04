@@ -5,7 +5,7 @@ description: Saiba como configurar seu aplicativo móvel para iOS
 feature: Push
 exl-id: 67eee1c5-a918-46b9-875d-7c3c71c00635
 source-git-commit: fd19a2f11773e9e4c841f685a3491a763493e572
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '651'
 ht-degree: 100%
 
@@ -19,7 +19,7 @@ Depois que o pacote for instalado, você poderá definir as configurações do a
 
 >[!NOTE]
 >
->Para saber como configurar seu aplicativo para Android e criar um delivery para Android, consulte esta [seção](configuring-the-mobile-application-android.md).
+>Para saber como configurar seu aplicativo para Android e criar uma entrega para Android, consulte esta [seção](configuring-the-mobile-application-android.md).
 
 As principais etapas são:
 
@@ -50,7 +50,7 @@ O conector iOS está configurado. Você pode começar a criar seu serviço.
 
 >[!CAUTION]
 >
->O aplicativo deve ter sido configurado para ações Push ANTES de qualquer integração ao Adobe SDK.
+>O aplicativo deve ter sido configurado para ações de push ANTES de qualquer integração ao SDK da Adobe.
 >
 >Se esse não for o caso, consulte [esta página](https://developer.apple.com/documentation/usernotifications).
 
@@ -85,7 +85,7 @@ Depois de criar o serviço, crie o aplicativo iOS no Campaign. Siga as etapas ab
 
    ![](assets/nmac_ios_2.png)
 
-1. Como opção, você pode enriquecer um conteúdo de mensagem de push com alguns **[!UICONTROL Application variables]** se necessário. Eles são totalmente personalizáveis e uma parte da carga da mensagem é enviada para o dispositivo móvel.
+1. Como opção, você pode enriquecer um conteúdo de mensagem de push com alguns **[!UICONTROL Application variables]** se necessário. Eles são totalmente personalizáveis e uma parte do conteúdo da mensagem é enviada para o dispositivo móvel.
 No exemplo a seguir, adicionamos **mediaURl** e **mediaExt** para criar notificações por push avançadas e, em seguida, fornecemos ao aplicativo a imagem que será exibida na notificação.
 
    ![](assets/nmac_ios_3.png)
