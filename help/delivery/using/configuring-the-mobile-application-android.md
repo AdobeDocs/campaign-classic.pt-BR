@@ -4,7 +4,7 @@ title: Configurar o aplicativo para dispositivos móveis para o Android no Adobe
 description: Saiba como configurar seu aplicativo móvel para Android
 feature: Push
 exl-id: 32c35e61-d0a3-478f-b73b-396e2becf7f9
-source-git-commit: 9839dbacda475c2a586811e3c4f686b1b1baab05
+source-git-commit: 8d635722b8961b3edac9cc98f00f17b86f4ee523
 workflow-type: tm+mt
 source-wordcount: '963'
 ht-degree: 100%
@@ -12,6 +12,8 @@ ht-degree: 100%
 ---
 
 # Etapas de configuração para Android
+
+![](../../assets/v7-only.svg)
 
 Depois que o pacote for instalado, você poderá definir as configurações do aplicativo Android no Adobe Campaign Classic.
 

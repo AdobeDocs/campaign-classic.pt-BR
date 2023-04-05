@@ -4,8 +4,8 @@ title: Configurar o aplicativo móvel para iOS no Adobe Campaign
 description: Saiba como configurar seu aplicativo móvel para iOS
 feature: Push
 exl-id: 67eee1c5-a918-46b9-875d-7c3c71c00635
-source-git-commit: fd19a2f11773e9e4c841f685a3491a763493e572
-workflow-type: ht
+source-git-commit: 8d635722b8961b3edac9cc98f00f17b86f4ee523
+workflow-type: tm+mt
 source-wordcount: '651'
 ht-degree: 100%
 
@@ -13,7 +13,7 @@ ht-degree: 100%
 
 # Etapas de configuração para iOS {#configuring-the-mobile-application-in-adobe-campaign-ios}
 
-![](../../assets/common.svg)
+![](../../assets/v7-only.svg)
 
 Depois que o pacote for instalado, você poderá definir as configurações do aplicativo iOS no Adobe Campaign Classic.
 
