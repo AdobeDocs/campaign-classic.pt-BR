@@ -7,9 +7,9 @@ role: User
 level: Beginner
 exl-id: 07c1f4a3-cf16-4a9b-b402-e13258799f91
 source-git-commit: a4a5e014d8055cf29bdbf7debb72eb20388c9b19
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '3577'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -25,7 +25,7 @@ Consulte as [Notas de versão do Adobe Campaign Classic](../../rn/using/latest-r
 
 ### Abril de 2023
 
-Uma nota técnica foi adicionada sobre como ativar o Microsoft Edge Chromium em ambientes locais/híbridos. [Leia mais](../../technotes/using/edge-chromium.md)
+Adição de uma nota técnica sobre como habilitar o Microsoft Edge Chromium em ambientes locais/híbridos. [Leia mais](../../technotes/using/edge-chromium.md)
 
 ### Março de 2023
 
@@ -344,7 +344,7 @@ Uma observação foi adicionada para especificar que a contagem de perfis ativos
 
 Uma nova amostra sobre a edição de esquema foi adicionada para vincular um campo a uma tabela de referência existente. [Leia mais](../../configuration/using/examples-of-schemas-edition.md#uc-link)
 
-Adição de uma observação sobre o uso de dados adicionais com seeds addresses em deliveries. [Leia mais](../../delivery/using/creating-seed-addresses.md#defining-addresses)
+Adição de uma observação sobre o uso de dados adicionais com seeds addresses em entregas. [Leia mais](../../delivery/using/creating-seed-addresses.md#defining-addresses)
 
 ## Agosto de 2020 {#aug-2020}
 
