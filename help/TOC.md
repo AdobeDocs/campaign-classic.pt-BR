@@ -7,9 +7,9 @@ user-guide-description: Com o Adobe Campaign, é possível usar dados avançados
 sub-product: adobe campaign classic
 type: Documentation
 source-git-commit: bdccc4ee7cbb8c765d488879f99677b2302d32e7
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2536'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -203,9 +203,9 @@ ht-degree: 99%
       + [Sobre serviços e subscrições](delivery/using/about-services-and-subscriptions.md)
       + [Gerenciar subscrições](delivery/using/managing-subscriptions.md)
       + [Marketing viral e social](delivery/using/viral-and-social-marketing.md)
-   + Monitorar deliveries {#monitoring-deliveries}
+   + Monitorar entregas {#monitoring-deliveries}
       + [Introdução ao monitoramento de entrega](delivery/using/about-delivery-monitoring.md)
-      + [Acessar a lista de deliveries](delivery/using/list-of-deliveries.md)
+      + [Acessar a lista de entregas](delivery/using/list-of-deliveries.md)
       + [Painel de entrega](delivery/using/delivery-dashboard.md)
       + [Práticas recomendadas de desempenho de entrega](delivery/using/delivery-performances.md)
       + [Solução de problemas de entrega](delivery/using/delivery-troubleshooting.md)
@@ -289,8 +289,8 @@ ht-degree: 99%
    + Acessar relatórios integrados {#accessing-built-in-reports}
       + [Sobre relatórios integrados](reporting/using/about-campaign-built-in-reports.md)
       + [Lista de relatórios](reporting/using/list-of-reports.md)
-   + Relatórios sobre deliveries{#reports-on-deliveries}
-      + [Sobre relatórios de deliveries](reporting/using/reports-on-deliveries.md)
+   + Relatórios sobre entregas{#reports-on-deliveries}
+      + [Sobre relatórios de entregas](reporting/using/reports-on-deliveries.md)
       + [Relatórios globais](reporting/using/global-reports.md)
       + [Relatórios de entrega](reporting/using/delivery-reports.md)
       + [Relatórios cumulativos](reporting/using/cumulative-reports.md)
@@ -823,7 +823,7 @@ ht-degree: 99%
    + [Recomendações para dimensionamento de hardware](technotes/using/hardware-sizing.md)
    + Atualizações e compatibilidade{#technote-migration}
       + [Notas técnicas](technotes/using/technote.md)
-      + [Ativar o Microsoft Edge Chromium](technotes/using/edge-chromium.md)
+      + [Habilitar o Microsoft Edge Chromium](technotes/using/edge-chromium.md)
       + [Novo servidor de capacidade de entrega](technotes/using/deliverability-server.md)
       + [Atualização de segurança do Apache](technotes/using/acc-apache-upgrade.md)
       + [Atualizações de sistema de 2023](technotes/using/tech-stack-upgrade.md)
