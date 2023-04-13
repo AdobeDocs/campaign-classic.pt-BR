@@ -19,7 +19,7 @@ Depois que o pacote for instalado, você poderá definir as configurações do a
 
 >[!NOTE]
 >
->Para saber como configurar seu aplicativo para iOS e como criar um delivery para iOS, consulte esta [seção](configuring-the-mobile-application.md).
+>Para saber como configurar seu aplicativo para iOS e como criar uma entrega para iOS, consulte esta [seção](configuring-the-mobile-application.md).
 
 As principais etapas são:
 
