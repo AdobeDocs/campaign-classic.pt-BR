@@ -15,15 +15,15 @@ ht-degree: 100%
 
 ![](../../assets/v7-only.svg)
 
-Esta seção detalha os elementos específicos para a entrega de notificações do iOS. Os conceitos globais sobre a criação de delivery são apresentados [nesta seção](steps-about-delivery-creation-steps.md).
+Esta seção detalha os elementos específicos para a entrega de notificações do iOS. Os conceitos globais sobre a criação de entregas são apresentados [nesta seção](steps-about-delivery-creation-steps.md).
 
-Comece criando um novo delivery.
+Comece criando uma nova entrega.
 
 ![](assets/nmac_delivery_1.png)
 
 Para criar uma notificação por push para dispositivos iOS, siga as etapas abaixo:
 
-1. Selecione o modelo de delivery **[!UICONTROL Deliver on iOS]**.
+1. Selecione o modelo de entrega **[!UICONTROL Deliver on iOS]**.
 
    ![](assets/nmac_delivery_ios_1.png)
 
@@ -33,7 +33,7 @@ Para criar uma notificação por push para dispositivos iOS, siga as etapas abai
 
    >[!NOTE]
    >
-   >O processo detalhado ao selecionar a população do target de um delivery é apresentado [nesta seção](steps-defining-the-target-population.md).
+   >O processo detalhado ao selecionar a população do target de uma entrega é apresentado [nesta seção](steps-defining-the-target-population.md).
    >
    >Para obter mais informações sobre o uso de campos de personalização, consulte [esta seção](about-personalization.md).
    >
@@ -125,7 +125,7 @@ Para criar uma notificação por push para dispositivos iOS, siga as etapas abai
 
 Para enviar uma prova e a entrega final, use o mesmo processo que as entregas de email. [Saiba mais](steps-validating-the-delivery.md)
 
-Após enviar as mensagens, você pode monitorar e rastrear seus deliveries. Para obter mais informações, consulte essas seções.
+Após enviar as mensagens, você pode monitorar e rastrear suas entregas. Para obter mais informações, consulte essas seções.
 
 * [Quarentenas de notificação por push](understanding-quarantine-management.md#push-notification-quarantines)
 * [Monitoramento de uma entrega](about-delivery-monitoring.md)
@@ -135,7 +135,7 @@ Após enviar as mensagens, você pode monitorar e rastrear seus deliveries. Para
 
 Com o iOS 10 ou superior, é possível gerar notificações ricas. O Adobe Campaign pode enviar notificações usando variáveis que permitirão ao dispositivo exibir uma notificação rica.
 
-Em seguida, é necessário criar um novo delivery e vinculá-lo ao aplicativo para dispositivos móveis criado.
+Em seguida, é necessário criar uma nova entrega e vinculá-la ao aplicativo para dispositivos móveis criado.
 
 1. Vá até **[!UICONTROL Campaign management]** > **[!UICONTROL Deliveries]**.
 
@@ -143,7 +143,7 @@ Em seguida, é necessário criar um novo delivery e vinculá-lo ao aplicativo pa
 
    ![](assets/nmac_android_3.png)
 
-1. Selecione **[!UICONTROL Deliver on iOS (ios)]** na lista suspensa **[!UICONTROL Delivery template]**. Adicione um **[!UICONTROL Label]** ao delivery.
+1. Selecione **[!UICONTROL Deliver on iOS (ios)]** na lista suspensa **[!UICONTROL Delivery template]**. Adicione um **[!UICONTROL Label]** à entrega.
 
 1. Clique em **[!UICONTROL To]** para definir a população como target. Por padrão, o target mapping **[!UICONTROL Subscriber application]** é aplicado. Clique em **[!UICONTROL Add]** para selecionar o serviço criado anteriormente.
 
@@ -169,7 +169,7 @@ Em seguida, é necessário criar um novo delivery e vinculá-lo ao aplicativo pa
 
 1. Na guia **[!UICONTROL Advanced]**, marque a caixa **[!UICONTROL Mutable content]** para permitir que o aplicativo móvel baixe conteúdo de mídia.
 
-1. Clique em **[!UICONTROL Save]** e envie o delivery.
+1. Clique em **[!UICONTROL Save]** e envie a entrega.
 
 A imagem e a página da Web devem ser exibidas na notificação por push quando recebida nos dispositivos iOS móveis dos inscritos.
 
