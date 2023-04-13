@@ -15,9 +15,9 @@ ht-degree: 100%
 
 ![](../../assets/v7-only.svg)
 
-Use o Adobe Campaign para enviar notificações por push em dispositivos Android. Os conceitos globais sobre a criação de delivery são apresentados [nesta seção](steps-about-delivery-creation-steps.md).
+Use o Adobe Campaign para enviar notificações por push em dispositivos Android. Os conceitos globais sobre a criação de entregas são apresentados [nesta seção](steps-about-delivery-creation-steps.md).
 
-Comece criando um novo delivery.
+Comece criando uma nova entrega.
 
 ![](assets/nmac_delivery_1.png)
 
@@ -39,7 +39,7 @@ Para obter mais informações sobre os tipos de mensagens da Firebase Cloud Mess
 
    ![](assets/nmac_android_3.png)
 
-1. Selecione **[!UICONTROL Deliver on Android (android)]** na lista suspensa **[!UICONTROL Delivery template]**. Adicione um **[!UICONTROL Label]** ao delivery.
+1. Selecione **[!UICONTROL Deliver on Android (android)]** na lista suspensa **[!UICONTROL Delivery template]**. Adicione um **[!UICONTROL Label]** à entrega.
 
 1. Clique em **[!UICONTROL To]** para definir a população como target. Por padrão, o target mapping **[!UICONTROL Subscriber application]** é aplicado. Clique em **[!UICONTROL Add]** para selecionar seu serviço.
 
@@ -60,7 +60,7 @@ Os **[!UICONTROL Application variables]** são adicionados automaticamente, depe
 
 1. Você pode adicionar informações em sua **[!UICONTROL Application variables]** configurada anteriormente, caso necessário. **[!UICONTROL Application variables]** precisa ser configurado no serviço Android e faz parte do payload da mensagem enviada para o dispositivo móvel.
 
-1. Clique em **[!UICONTROL Save]** e envie o delivery.
+1. Clique em **[!UICONTROL Save]** e envie a entrega.
 
 A imagem e a página da web devem ser exibidas na notificação por push quando recebida nos dispositivos Android móveis dos subscritos.
 
@@ -80,7 +80,7 @@ A imagem e a página da web devem ser exibidas na notificação por push quando 
 
    ![](assets/nmac_android_3.png)
 
-1. Selecione **[!UICONTROL Deliver on Android (android)]** na lista suspensa **[!UICONTROL Delivery template]**. Adicione um **[!UICONTROL Label]** ao delivery.
+1. Selecione **[!UICONTROL Deliver on Android (android)]** na lista suspensa **[!UICONTROL Delivery template]**. Adicione um **[!UICONTROL Label]** à entrega.
 
 1. Clique em **[!UICONTROL To]** para definir a população como target. Por padrão, o target mapping **[!UICONTROL Subscriber application]** é aplicado. Clique em **[!UICONTROL Add]** para selecionar seu serviço.
 
@@ -122,6 +122,6 @@ A imagem e a página da web devem ser exibidas na notificação por push quando 
 
 1. Você pode adicionar informações em sua **[!UICONTROL Application variables]** configurada anteriormente, caso necessário. **[!UICONTROL Application variables]** precisa ser configurado no serviço Android e faz parte do payload da mensagem enviada para o dispositivo móvel.
 
-1. Clique em **[!UICONTROL Save]** e envie o delivery.
+1. Clique em **[!UICONTROL Save]** e envie a entrega.
 
 A imagem e a página da web devem ser exibidas na notificação por push quando recebida nos dispositivos Android móveis dos subscritos.
