@@ -2,13 +2,13 @@
 product: campaign
 title: Nota técnica - Ativação do Microsoft Edge Chromium no ambiente Campaign
 description: Campanha - Chromium da borda
-source-git-commit: a4a5e014d8055cf29bdbf7debb72eb20388c9b19
+exl-id: 22f4cbaf-ca37-47b9-b7dd-1ee73d5b348d
+source-git-commit: 095919608e08a0bf8ad1487fa5ec0a1ddb443c7b
 workflow-type: tm+mt
 source-wordcount: '246'
 ht-degree: 13%
 
 ---
-
 
 # Como ativar o Microsoft Edge Chromium em seu ambiente {#edge-conf}
 
@@ -65,4 +65,3 @@ Se seu ambiente tiver sido atualizado para o Campaign Classic v7.3 (ou posterior
 * [Atualizar seu ambiente](../../production/using/build-upgrade.md)
 * [Perguntas frequentes sobre atualização de build](../../platform/using/faq-build-upgrade.md)
 * [Instalar o console do cliente do Campaign](../../installation/using/installing-the-client-console.md)
-
