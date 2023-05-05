@@ -84,6 +84,7 @@ Nas instâncias de controle:
       grant SELECT ON nmspropositionrcp, nmsoffer, nmsofferspace, xtkoption, xtkfolder TO user;
       grant DELETE, INSERT, UPDATE ON nmspropositionrcp TO user;
       ```
+
    >[!NOTE]
    >
    >O endereço IP da instância de controle deve ser autorizado nas instâncias de execução.
