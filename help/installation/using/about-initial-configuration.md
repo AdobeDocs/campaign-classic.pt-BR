@@ -2,11 +2,13 @@
 product: campaign
 title: Sobre a configuração inicial
 description: Sobre a configuração inicial
+badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
+badge-v7-prem: label="on-premise & hybrid" type="Caution" url="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/architecture-and-hosting-models/hosting-models-lp/hosting-models.html?lang=en" tooltip="Applies to on-premise and hybrid deployments only"
 audience: installation
 content-type: reference
 topic-tags: initial-configuration
 exl-id: f77ba178-0dfb-4a2e-b33b-971765d42298
-source-git-commit: f000cb8bae164c22d1ede15db4e763cf50530674
+source-git-commit: a5762cd21a1a6d5a5f3a10f53a5d1f43542d99d4
 workflow-type: tm+mt
 source-wordcount: '167'
 ht-degree: 8%
@@ -15,7 +17,7 @@ ht-degree: 8%
 
 # Etapas principais para configurar e implantar sua instância{#about-initial-configuration}
 
-![](../../assets/v7-only.svg)
+
 
 Quando a instalação do Adobe Campaign for concluída, será necessário configurá-la para garantir que ela funcione com eficiência com suas restrições e arquitetura técnica. As etapas para configurar uma instância do Adobe Campaign são detalhadas neste capítulo, na seguinte sequência:
 

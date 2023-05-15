@@ -2,11 +2,13 @@
 product: campaign
 title: Instalar um servidor mid-sourcing no Campaign
 description: Esta seção detalha a instalação e a configuração de um servidor mid-sourcing no Campaign
+badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
+badge-v7-prem: label="on-premise & hybrid" type="Caution" url="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/architecture-and-hosting-models/hosting-models-lp/hosting-models.html?lang=en" tooltip="Applies to on-premise and hybrid deployments only"
 audience: installation
 content-type: reference
 topic-tags: additional-configurations
 exl-id: 3e55d7f5-2858-4390-bba9-8fb5be0c3d98
-source-git-commit: f4513834cf721f6d962c7c02c6c64b2171059352
+source-git-commit: a5762cd21a1a6d5a5f3a10f53a5d1f43542d99d4
 workflow-type: tm+mt
 source-wordcount: '995'
 ht-degree: 1%
@@ -15,7 +17,7 @@ ht-degree: 1%
 
 # Servidor Mid-sourcing{#mid-sourcing-server}
 
-![](../../assets/v7-only.svg)
+
 
 Esta seção detalha a instalação e a configuração de um servidor mid-sourcing, bem como a implantação de uma instância que permite a terceiros enviar mensagens em **mid-sourcing** modo.
 

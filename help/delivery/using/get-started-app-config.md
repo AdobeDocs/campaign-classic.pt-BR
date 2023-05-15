@@ -2,18 +2,19 @@
 product: campaign
 title: Configurar o aplicativo para dispositivos móveis no Adobe Campaign
 description: Saiba como iniciar a configuração do aplicativo móvel
+badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
 feature: Push
 exl-id: 95bc07cc-8837-4511-81bc-05fad28191c9
-source-git-commit: 8d635722b8961b3edac9cc98f00f17b86f4ee523
-workflow-type: ht
-source-wordcount: '290'
-ht-degree: 100%
+source-git-commit: e011333411af79b985166a4e73592a1860749cf1
+workflow-type: tm+mt
+source-wordcount: '308'
+ht-degree: 97%
 
 ---
 
 # Introdução à configuração do aplicativo
 
-![](../../assets/v7-only.svg)
+
 
 Encontre abaixo a amostra da configuração com base em uma empresa que vende pacotes de viagem online. Seu aplicativo móvel (Neotrips) está disponível para os clientes em duas versões: Neotrips para Android e Neotrips para iOS.
 
@@ -30,6 +31,8 @@ Para enviar notificações por push no Adobe Campaign, é necessário:
 >Acesse a guia **[!UICONTROL Subscriptions]** do serviço para exibir a lista de assinantes do serviço, ou seja, todas as pessoas que instalaram o aplicativo nos próprios celulares e concordaram em receber as notificações.
 
 ## Instalar o pacote {#installing-package-ios}
+
+[!BADGE No local e híbrido]{type=Caution url="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/architecture-and-hosting-models/hosting-models-lp/hosting-models.html?lang=pt-BR" tooltip="Aplica-se somente a implantações locais e híbridas"}
 
 ![](assets/do-not-localize/how-to-video.png) [Saiba como instalar o pacote de aplicativo para dispositivos móveis em vídeo](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/sending-messages/push-channel/installing-the-mobile-app-channel.html?lang=pt-BR#sending-messages)
 

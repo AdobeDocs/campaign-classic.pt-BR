@@ -2,18 +2,20 @@
 product: campaign
 title: Renderização da caixa de entrada   no Campaign
 description: Saiba como capturar renderizações de email e disponibilizá-las em um relatório dedicado
+badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
+badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
 feature: Inbox Rendering, Monitoring, Email Rendering
 exl-id: a3294e70-ac96-4e51-865f-b969624528ce
-source-git-commit: 048189f49623cf00f4c3f1f34ff4b795d80391ef
+source-git-commit: e011333411af79b985166a4e73592a1860749cf1
 workflow-type: tm+mt
-source-wordcount: '821'
-ht-degree: 100%
+source-wordcount: '839'
+ht-degree: 98%
 
 ---
 
 # Renderização da caixa de entrada{#inbox-rendering}
 
-![](../../assets/common.svg)
+
 
 ## Sobre renderização da caixa de entrada {#about-inbox-rendering}
 
@@ -33,6 +35,8 @@ Os clientes de dispositivos móveis, mensagens e webmail disponíveis para a **R
 >A renderização da caixa de entrada não é necessária para testar a personalização nos deliveries. A personalização pode ser verificada com as ferramentas do Adobe Campaign, como **[!UICONTROL Preview]** e [Provas](steps-validating-the-delivery.md#sending-a-proof).
 
 ## Ativação da renderização da caixa de entrada {#activating-inbox-rendering}
+
+[!BADGE No local e híbrido]{type=Caution url="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/architecture-and-hosting-models/hosting-models-lp/hosting-models.html?lang=pt-BR" tooltip="Aplica-se somente a implantações locais e híbridas"}
 
 Para clientes hospedados e híbridos, a renderização da Caixa de entrada é configurada em sua instância pelo suporte técnico e consultores da Adobe. Para obter mais informações, entre em contato com o executivo da sua conta Adobe.
 

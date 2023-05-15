@@ -2,11 +2,13 @@
 product: campaign
 title: Criação e configuração do banco de dados
 description: Criação e configuração do banco de dados
+badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
+badge-v7-prem: label="on-premise & hybrid" type="Caution" url="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/architecture-and-hosting-models/hosting-models-lp/hosting-models.html?lang=en" tooltip="Applies to on-premise and hybrid deployments only"
 audience: installation
 content-type: reference
 topic-tags: initial-configuration
 exl-id: f40bab8c-5064-40d9-beed-101a9f22c094
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: e011333411af79b985166a4e73592a1860749cf1
 workflow-type: tm+mt
 source-wordcount: '1296'
 ht-degree: 2%
@@ -14,8 +16,6 @@ ht-degree: 2%
 ---
 
 # Criação e configuração do banco de dados{#creating-and-configuring-the-database}
-
-![](../../assets/v7-only.svg)
 
 Ao criar um banco de dados, o Adobe Campaign fornece duas opções diferentes:
 
