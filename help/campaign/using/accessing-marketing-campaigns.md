@@ -2,18 +2,17 @@
 product: campaign
 title: Acessar campanhas de marketing
 description: Acessar campanhas de marketing
+badge: label="v7" type="Informative" tooltip="Aplica-se ao Campaign Classic v7"
 feature: Campaigns, Cross Channel Orchestration
 exl-id: 1278bda1-f83c-4d38-8042-e6611755cf36
-source-git-commit: 381538fac319dfa075cac3db2252a9cc80b31e0f
+source-git-commit: 517a343011ff313d016638c586867673e406fd88
 workflow-type: tm+mt
-source-wordcount: '1247'
-ht-degree: 100%
+source-wordcount: '1257'
+ht-degree: 99%
 
 ---
 
 # Acesso às campanhas de marketing{#accessing-marketing-campaigns}
-
-![](../../assets/v7-only.svg)
 
 O Adobe Campaign permite criar, configurar, executar e analisar campanhas de marketing. Todas as campanhas de marketing podem ser gerenciadas a partir de um centro de controle unificado.
 
@@ -34,7 +33,7 @@ O bloco **[!UICONTROL Browsing]** da guia **[!UICONTROL Campaigns]** oferece vá
 * **Calendário da campanha**: calendário de planos, programas de marketing, remessas e campanhas. Consulte [Calendário da campanha](#campaign-calendar).
 * **Campanhas**: acesso às campanhas contidas em todos os programas de marketing.
 * **Remessas**: acesso às remessas vinculadas às campanhas.
-* **Aplicativos Web**: acesso a aplicativos Web (formulários, páginas de aterrissagem etc.).
+* **Aplicativos Web**: acesso a aplicativos Web (formulários, landing pages etc.).
 
 >[!NOTE]
 >
